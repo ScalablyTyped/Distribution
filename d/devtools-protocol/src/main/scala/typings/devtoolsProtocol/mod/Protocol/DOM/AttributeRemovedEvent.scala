@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeRemovedEvent extends StObject {
   
   /**
     * A ttribute name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Id of the node that has changed.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object AttributeRemovedEvent {
   

@@ -10,9 +10,9 @@ Typings are for version 3.0.6
 | ------------------ | :-------------: |
 | Full name          | mini-store |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 45 |
-| # downloads        | 16766044 |
+| # releases         | 8 |
+| # dependents       | 49 |
+| # downloads        | 21562377 |
 | # stars            | 0 |
 
 ## Links

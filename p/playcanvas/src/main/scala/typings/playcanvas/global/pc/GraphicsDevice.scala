@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.GraphicsDevice")
 @js.native
 class GraphicsDevice protected ()
-  extends typings.playcanvas.pc.GraphicsDevice {
+  extends StObject
+     with typings.playcanvas.pc.GraphicsDevice {
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: js.Any) = this()
 }

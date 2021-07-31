@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlannerCategoryDescriptions extends StObject {
   
   // The label associated with Category 1
-  var category1: js.UndefOr[NullableOption[String]] = js.native
+  var category1: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The label associated with Category 2
-  var category2: js.UndefOr[NullableOption[String]] = js.native
+  var category2: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The label associated with Category 3
-  var category3: js.UndefOr[NullableOption[String]] = js.native
+  var category3: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The label associated with Category 4
-  var category4: js.UndefOr[NullableOption[String]] = js.native
+  var category4: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The label associated with Category 5
-  var category5: js.UndefOr[NullableOption[String]] = js.native
+  var category5: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The label associated with Category 6
-  var category6: js.UndefOr[NullableOption[String]] = js.native
+  var category6: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PlannerCategoryDescriptions {
   

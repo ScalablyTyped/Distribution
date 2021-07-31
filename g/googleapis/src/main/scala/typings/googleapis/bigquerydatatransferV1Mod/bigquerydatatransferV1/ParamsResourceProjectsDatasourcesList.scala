@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsDatasourcesList extends StandardParameters {
+trait ParamsResourceProjectsDatasourcesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Page size. The default page size is the maximum value of 1000 results.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Pagination token, which can be used to request a specific page of
@@ -28,13 +28,13 @@ trait ParamsResourceProjectsDatasourcesList extends StandardParameters {
     * `ListDataSourcesResponse` outputs a `next_page` token, which can be used
     * as the `page_token` value to request the next page of list results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The BigQuery project id for which data sources should be returned. Must
     * be in the form: `projects/{project_id}`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsDatasourcesList {
   

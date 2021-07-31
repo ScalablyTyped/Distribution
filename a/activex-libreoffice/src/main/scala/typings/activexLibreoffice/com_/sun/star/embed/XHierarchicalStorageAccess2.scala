@@ -4,12 +4,12 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface extends {@link XHierarchicalStorageAccess} interface. */
-@js.native
-trait XHierarchicalStorageAccess2 extends XHierarchicalStorageAccess {
+trait XHierarchicalStorageAccess2
+  extends StObject
+     with XHierarchicalStorageAccess {
   
   /**
     * allows to get access to a child encrypted stream with encryption data using hierarchical path.
@@ -27,7 +27,7 @@ trait XHierarchicalStorageAccess2 extends XHierarchicalStorageAccess {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openEncryptedStreamByHierarchicalName(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XExtendedStorageStream = js.native
+  def openEncryptedStreamByHierarchicalName(sStreamName: String, nOpenMode: Double, aEncryptionData: SeqEquiv[NamedValue]): XExtendedStorageStream
 }
 object XHierarchicalStorageAccess2 {
   

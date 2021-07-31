@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -106,5 +105,5 @@ trait ConditionalFormatRuleBuilder extends StObject {
   
   def whenTextStartsWith(text: String): ConditionalFormatRuleBuilder = js.native
   
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[_]): ConditionalFormatRuleBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Any]): ConditionalFormatRuleBuilder = js.native
 }

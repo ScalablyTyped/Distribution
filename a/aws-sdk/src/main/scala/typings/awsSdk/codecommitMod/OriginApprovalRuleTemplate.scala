@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginApprovalRuleTemplate extends StObject {
   
   /**
     * The ID of the template that created the approval rule.
     */
-  var approvalRuleTemplateId: js.UndefOr[ApprovalRuleTemplateId] = js.native
+  var approvalRuleTemplateId: js.UndefOr[ApprovalRuleTemplateId] = js.undefined
   
   /**
     * The name of the template that created the approval rule.
     */
-  var approvalRuleTemplateName: js.UndefOr[ApprovalRuleTemplateName] = js.native
+  var approvalRuleTemplateName: js.UndefOr[ApprovalRuleTemplateName] = js.undefined
 }
 object OriginApprovalRuleTemplate {
   

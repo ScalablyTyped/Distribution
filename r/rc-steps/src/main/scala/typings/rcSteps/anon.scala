@@ -4,33 +4,31 @@ import typings.rcSteps.interfaceMod.Status
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var direction: String = js.native
+    var direction: String
     
-    var iconPrefix: String = js.native
+    var iconPrefix: String
     
-    var initial: Double = js.native
+    var initial: Double
     
-    var labelPlacement: String = js.native
+    var labelPlacement: String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var progressDot: Boolean = js.native
+    var progressDot: Boolean
     
-    var size: String = js.native
+    var size: String
     
-    var status: String = js.native
+    var status: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Current {
     
@@ -87,18 +85,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: ReactNode = js.native
+    var description: ReactNode
     
-    var index: Double = js.native
+    var index: Double
     
-    var node: ReactNode = js.native
+    var node: ReactNode
     
-    var status: Status = js.native
+    var status: Status
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object Description {
     
@@ -137,16 +134,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var description: ReactNode = js.native
+    var description: ReactNode
     
-    var index: Double = js.native
+    var index: Double
     
-    var status: Status = js.native
+    var status: Status
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object Index {
     

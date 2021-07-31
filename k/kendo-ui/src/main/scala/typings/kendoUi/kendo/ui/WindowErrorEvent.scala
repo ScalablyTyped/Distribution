@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowErrorEvent extends WindowEvent {
+trait WindowErrorEvent
+  extends StObject
+     with WindowEvent {
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var xhr: js.UndefOr[JQueryXHR] = js.native
+  var xhr: js.UndefOr[JQueryXHR] = js.undefined
 }
 object WindowErrorEvent {
   

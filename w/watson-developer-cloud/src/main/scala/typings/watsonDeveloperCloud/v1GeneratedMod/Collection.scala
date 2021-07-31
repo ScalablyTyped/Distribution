@@ -2,46 +2,44 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection for storing documents. */
-@js.native
 trait Collection extends StObject {
   
   /** The unique identifier of the collection. */
-  var collection_id: js.UndefOr[String] = js.native
+  var collection_id: js.UndefOr[String] = js.undefined
   
   /** The unique identifier of the collection's configuration. */
-  var configuration_id: js.UndefOr[String] = js.native
+  var configuration_id: js.UndefOr[String] = js.undefined
   
   /** The creation date of the collection in the format yyyy-MM-dd'T'HH:mmcon:ss.SSS'Z'. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The description of the collection. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Summary of the disk usage statistics for this collection. */
-  var disk_usage: js.UndefOr[CollectionDiskUsage] = js.native
+  var disk_usage: js.UndefOr[CollectionDiskUsage] = js.undefined
   
-  var document_counts: js.UndefOr[DocumentCounts] = js.native
+  var document_counts: js.UndefOr[DocumentCounts] = js.undefined
   
   /** The language of the documents stored in the collection. Permitted values include `en` (English), `de` (German), and `es` (Spanish). */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The name of the collection. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Object containing source crawl status information. */
-  var source_crawl: js.UndefOr[SourceStatus] = js.native
+  var source_crawl: js.UndefOr[SourceStatus] = js.undefined
   
   /** The status of the collection. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var training_status: js.UndefOr[TrainingStatus] = js.native
+  var training_status: js.UndefOr[TrainingStatus] = js.undefined
   
   /** The timestamp of when the collection was last updated in the format yyyy-MM-dd'T'HH:mm:ss.SSS'Z'. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Collection {
   

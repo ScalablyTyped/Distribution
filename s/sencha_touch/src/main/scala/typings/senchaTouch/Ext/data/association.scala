@@ -3,126 +3,126 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object association {
   
-  @js.native
-  trait IAssociation extends IBase {
+  trait IAssociation
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String) */
-    var associatedModel: js.UndefOr[String] = js.native
+    var associatedModel: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var associatedName: js.UndefOr[String] = js.native
+    var associatedName: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var associationKey: js.UndefOr[String] = js.native
+    var associationKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of associatedModel
       * @returns String
       */
-    var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.native
+    var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of associatedName
       * @returns String
       */
-    var getAssociatedName: js.UndefOr[js.Function0[String]] = js.native
+    var getAssociatedName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of associationKey
       * @returns String
       */
-    var getAssociationKey: js.UndefOr[js.Function0[String]] = js.native
+    var getAssociationKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns Object
       */
-    var getName: js.UndefOr[js.Function0[_]] = js.native
+    var getName: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of ownerModel
       * @returns Ext.data.Model/String
       */
-    var getOwnerModel: js.UndefOr[js.Function0[_]] = js.native
+    var getOwnerModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of ownerName
       * @returns String
       */
-    var getOwnerName: js.UndefOr[js.Function0[String]] = js.native
+    var getOwnerName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of primaryKey
       * @returns String
       */
-    var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.native
+    var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of reader
       * @returns Ext.data.reader.Reader
       */
-    var getReader: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.reader.IReader]] = js.native
+    var getReader: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.reader.IReader]] = js.undefined
     
     /** [Method] Returns the value of type
       * @returns String
       */
-    var getType: js.UndefOr[js.Function0[String]] = js.native
+    var getType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (Ext.data.Model/String) */
-    var ownerModel: js.UndefOr[js.Any] = js.native
+    var ownerModel: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Ext.data.reader.Reader) */
-    var reader: js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] = js.native
+    var reader: js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] = js.undefined
     
     /** [Method] Sets the value of associatedModel
       * @param associatedModel String The new value.
       */
-    var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.native
+    var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of associatedName
       * @param associatedName String The new value.
       */
-    var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.native
+    var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of associationKey
       * @param associationKey String The new value.
       */
-    var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.native
+    var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name Object The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of ownerModel
       * @param ownerModel Ext.data.Model/String The new value.
       */
-    var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.native
+    var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of ownerName
       * @param ownerName String The new value.
       */
-    var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.native
+    var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of primaryKey
       * @param primaryKey String The new value.
       */
-    var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.native
+    var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of reader
       * @param reader Ext.data.reader.Reader The new value.
       */
     var setReader: js.UndefOr[
         js.Function1[/* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of type
       * @param type String The new value.
       */
-    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.native
+    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IAssociation {
     
@@ -172,13 +172,13 @@ object association {
       def setGetAssociationKeyUndefined: Self = StObject.set(x, "getAssociationKey", js.undefined)
       
       @scala.inline
-      def setGetName(value: () => _): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
       @scala.inline
-      def setGetOwnerModel(value: () => _): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
+      def setGetOwnerModel(value: () => js.Any): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOwnerModelUndefined: Self = StObject.set(x, "getOwnerModel", js.undefined)
@@ -287,58 +287,58 @@ object association {
     }
   }
   
-  @js.native
   trait IBelongsTo
-    extends typings.senchaTouch.Ext.data.association.IAssociation {
+    extends StObject
+       with typings.senchaTouch.Ext.data.association.IAssociation {
     
     /** [Config Option] (String) */
-    var foreignKey: js.UndefOr[String] = js.native
+    var foreignKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of foreignKey
       * @returns String
       */
-    var getForeignKey: js.UndefOr[js.Function0[String]] = js.native
+    var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of getterName
       * @returns String
       */
-    var getGetterName: js.UndefOr[js.Function0[String]] = js.native
+    var getGetterName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of instanceName
       * @returns Object
       */
-    var getInstanceName: js.UndefOr[js.Function0[_]] = js.native
+    var getInstanceName: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of setterName
       * @returns String
       */
-    var getSetterName: js.UndefOr[js.Function0[String]] = js.native
+    var getSetterName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var getterName: js.UndefOr[String] = js.native
+    var getterName: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of foreignKey
       * @param foreignKey String The new value.
       */
-    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.native
+    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of getterName
       * @param getterName String The new value.
       */
-    var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.native
+    var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of instanceName
       * @param instanceName Object The new value.
       */
-    var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.native
+    var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of setterName
       * @param setterName String The new value.
       */
-    var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.native
+    var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var setterName: js.UndefOr[String] = js.native
+    var setterName: js.UndefOr[String] = js.undefined
   }
   object IBelongsTo {
     
@@ -370,7 +370,7 @@ object association {
       def setGetGetterNameUndefined: Self = StObject.set(x, "getGetterName", js.undefined)
       
       @scala.inline
-      def setGetInstanceName(value: () => _): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
+      def setGetInstanceName(value: () => js.Any): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetInstanceNameUndefined: Self = StObject.set(x, "getInstanceName", js.undefined)
@@ -419,93 +419,93 @@ object association {
     }
   }
   
-  @js.native
   trait IHasMany
-    extends typings.senchaTouch.Ext.data.association.IAssociation {
+    extends StObject
+       with typings.senchaTouch.Ext.data.association.IAssociation {
     
     /** [Config Option] (Boolean) */
-    var autoLoad: js.UndefOr[Boolean] = js.native
+    var autoLoad: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoSync: js.UndefOr[Boolean] = js.native
+    var autoSync: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var filterProperty: js.UndefOr[String] = js.native
+    var filterProperty: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var foreignKey: js.UndefOr[String] = js.native
+    var foreignKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of autoLoad
       * @returns Boolean
       */
-    var getAutoLoad: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of autoSync
       * @returns Boolean
       */
-    var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoSync: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of filterProperty
       * @returns String
       */
-    var getFilterProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getFilterProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of foreignKey
       * @returns String
       */
-    var getForeignKey: js.UndefOr[js.Function0[String]] = js.native
+    var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of store
       * @returns Object
       */
-    var getStore: js.UndefOr[js.Function0[_]] = js.native
+    var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of storeName
       * @returns String
       */
-    var getStoreName: js.UndefOr[js.Function0[String]] = js.native
+    var getStoreName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of autoLoad
       * @param autoLoad Boolean The new value.
       */
-    var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoLoad: js.UndefOr[js.Function1[/* autoLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of autoSync
       * @param autoSync Boolean The new value.
       */
-    var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoSync: js.UndefOr[js.Function1[/* autoSync */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of filterProperty
       * @param filterProperty String The new value.
       */
-    var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.native
+    var setFilterProperty: js.UndefOr[js.Function1[/* filterProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of foreignKey
       * @param foreignKey String The new value.
       */
-    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.native
+    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of store
       * @param store Object The new value.
       */
-    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.native
+    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of storeName
       * @param storeName String The new value.
       */
-    var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.native
+    var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var store: js.UndefOr[js.Any] = js.native
+    var store: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var storeConfig: js.UndefOr[js.Any] = js.native
+    var storeConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var storeName: js.UndefOr[String] = js.native
+    var storeName: js.UndefOr[String] = js.undefined
   }
   object IHasMany {
     
@@ -567,7 +567,7 @@ object association {
       def setGetForeignKeyUndefined: Self = StObject.set(x, "getForeignKey", js.undefined)
       
       @scala.inline
-      def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+      def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
@@ -640,58 +640,58 @@ object association {
     }
   }
   
-  @js.native
   trait IHasOne
-    extends typings.senchaTouch.Ext.data.association.IAssociation {
+    extends StObject
+       with typings.senchaTouch.Ext.data.association.IAssociation {
     
     /** [Config Option] (String) */
-    var foreignKey: js.UndefOr[String] = js.native
+    var foreignKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of foreignKey
       * @returns String
       */
-    var getForeignKey: js.UndefOr[js.Function0[String]] = js.native
+    var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of getterName
       * @returns String
       */
-    var getGetterName: js.UndefOr[js.Function0[String]] = js.native
+    var getGetterName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of instanceName
       * @returns Object
       */
-    var getInstanceName: js.UndefOr[js.Function0[_]] = js.native
+    var getInstanceName: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of setterName
       * @returns String
       */
-    var getSetterName: js.UndefOr[js.Function0[String]] = js.native
+    var getSetterName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var getterName: js.UndefOr[String] = js.native
+    var getterName: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of foreignKey
       * @param foreignKey String The new value.
       */
-    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.native
+    var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of getterName
       * @param getterName String The new value.
       */
-    var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.native
+    var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of instanceName
       * @param instanceName Object The new value.
       */
-    var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.native
+    var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of setterName
       * @param setterName String The new value.
       */
-    var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.native
+    var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var setterName: js.UndefOr[String] = js.native
+    var setterName: js.UndefOr[String] = js.undefined
   }
   object IHasOne {
     
@@ -723,7 +723,7 @@ object association {
       def setGetGetterNameUndefined: Self = StObject.set(x, "getGetterName", js.undefined)
       
       @scala.inline
-      def setGetInstanceName(value: () => _): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
+      def setGetInstanceName(value: () => js.Any): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetInstanceNameUndefined: Self = StObject.set(x, "getInstanceName", js.undefined)

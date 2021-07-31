@@ -4,17 +4,15 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonConnectionOptions extends StObject {
   
   /**
     * An array of strings or a Buffer naming possible ALPN protocols.
     * (Protocols should be ordered by their priority.)
     */
-  var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.native
+  var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.undefined
   
   /**
     * SNICallback(servername, cb) <Function> A function that will be
@@ -31,14 +29,14 @@ trait CommonConnectionOptions extends StObject {
       /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When enabled, TLS packet trace information is written to `stderr`. This can be
     * used to debug TLS connection problems.
     * @default false
     */
-  var enableTrace: js.UndefOr[Boolean] = js.native
+  var enableTrace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true the server will reject any connection which is not
@@ -46,19 +44,19 @@ trait CommonConnectionOptions extends StObject {
     * effect if requestCert is true.
     * @default true
     */
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true the server will request a certificate from clients that
     * connect and attempt to verify that certificate. Defaults to
     * false.
     */
-  var requestCert: js.UndefOr[Boolean] = js.native
+  var requestCert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional TLS context object from tls.createSecureContext()
     */
-  var secureContext: js.UndefOr[SecureContext] = js.native
+  var secureContext: js.UndefOr[SecureContext] = js.undefined
 }
 object CommonConnectionOptions {
   

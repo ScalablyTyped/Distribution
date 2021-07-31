@@ -2,21 +2,19 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICreateSubscriptionOptions extends StObject {
   
-  var DefaultMessageTimeToLive: String = js.native
+  var DefaultMessageTimeToLive: String
   
-  var EnableDeadLetteringOnFilterEvaluationExceptions: Boolean = js.native
+  var EnableDeadLetteringOnFilterEvaluationExceptions: Boolean
   
-  var EnableDeadLetteringOnMessageExpiration: Boolean = js.native
+  var EnableDeadLetteringOnMessageExpiration: Boolean
   
-  var LockDuration: String = js.native
+  var LockDuration: String
   
-  var RequiresSession: Boolean = js.native
+  var RequiresSession: Boolean
 }
 object ICreateSubscriptionOptions {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationMod {
@@ -121,6 +120,10 @@ object integrationMod {
   /* static members */
   object Integration {
     
+    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Integration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -130,116 +133,110 @@ object integrationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Integration = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Integration = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationState): Integration = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationState, opts: CustomResourceOptions): Integration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Integration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Integration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Integration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Integration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationState): Integration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Integration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationState, opts: CustomResourceOptions): Integration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Integration]
     
     /**
       * Returns true if the given object is an instance of Integration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/integration", "Integration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integration.Integration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integration.Integration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/integration.Integration */ Boolean]
   }
   
-  @js.native
   trait IntegrationArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The ID of the VPC link for a private integration. Supported only for HTTP APIs. Must be between 1 and 1024 characters in length.
       */
-    val connectionId: js.UndefOr[Input[String]] = js.native
+    val connectionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the network connection to the integration endpoint. Valid values: `INTERNET`, `VPC_LINK`. Default is `INTERNET`.
       */
-    val connectionType: js.UndefOr[Input[String]] = js.native
+    val connectionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`. Supported only for WebSocket APIs.
       */
-    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
+    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The credentials required for the integration, if any.
       */
-    val credentialsArn: js.UndefOr[Input[String]] = js.native
+    val credentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the integration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The integration's HTTP method. Must be specified if `integrationType` is not `MOCK`.
       */
-    val integrationMethod: js.UndefOr[Input[String]] = js.native
+    val integrationMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the AWS service action to invoke. Supported only for HTTP APIs when `integrationType` is `AWS_PROXY`. See the [AWS service integration reference](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-aws-services-reference.html) documentation for supported values. Must be between 1 and 128 characters in length.
       */
-    val integrationSubtype: js.UndefOr[Input[String]] = js.native
+    val integrationSubtype: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The integration type of an integration.
       * Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
       */
-    val integrationType: Input[String] = js.native
+    val integrationType: Input[String]
     
     /**
       * The URI of the Lambda function for a Lambda proxy integration, when `integrationType` is `AWS_PROXY`.
       * For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
       */
-    val integrationUri: js.UndefOr[Input[String]] = js.native
+    val integrationUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the `requestTemplates` attribute.
       * Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO_MATCH`. Supported only for WebSocket APIs.
       */
-    val passthroughBehavior: js.UndefOr[Input[String]] = js.native
+    val passthroughBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [format of the payload](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html#http-api-develop-integrations-lambda.proxy-format) sent to an integration. Valid values: `1.0`, `2.0`. Default is `1.0`.
       */
-    val payloadFormatVersion: js.UndefOr[Input[String]] = js.native
+    val payloadFormatVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key-value map specifying request parameters that are passed from the method request to the backend.
       * Supported only for WebSocket APIs.
       */
-    val requestParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. Supported only for WebSocket APIs.
       */
-    val requestTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration.
       */
-    val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val templateSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
-    val timeoutMilliseconds: js.UndefOr[Input[Double]] = js.native
+    val timeoutMilliseconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The TLS configuration for a private integration. Supported only for HTTP APIs.
       */
-    val tlsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.IntegrationTlsConfig]] = js.native
+    val tlsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.IntegrationTlsConfig]] = js.undefined
   }
   object IntegrationArgs {
     
@@ -350,99 +347,98 @@ object integrationMod {
     }
   }
   
-  @js.native
   trait IntegrationState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC link for a private integration. Supported only for HTTP APIs. Must be between 1 and 1024 characters in length.
       */
-    val connectionId: js.UndefOr[Input[String]] = js.native
+    val connectionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the network connection to the integration endpoint. Valid values: `INTERNET`, `VPC_LINK`. Default is `INTERNET`.
       */
-    val connectionType: js.UndefOr[Input[String]] = js.native
+    val connectionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`. Supported only for WebSocket APIs.
       */
-    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
+    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The credentials required for the integration, if any.
       */
-    val credentialsArn: js.UndefOr[Input[String]] = js.native
+    val credentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the integration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The integration's HTTP method. Must be specified if `integrationType` is not `MOCK`.
       */
-    val integrationMethod: js.UndefOr[Input[String]] = js.native
+    val integrationMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [integration response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-integration-response-selection-expressions) for the integration.
       */
-    val integrationResponseSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val integrationResponseSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the AWS service action to invoke. Supported only for HTTP APIs when `integrationType` is `AWS_PROXY`. See the [AWS service integration reference](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-aws-services-reference.html) documentation for supported values. Must be between 1 and 128 characters in length.
       */
-    val integrationSubtype: js.UndefOr[Input[String]] = js.native
+    val integrationSubtype: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The integration type of an integration.
       * Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
       */
-    val integrationType: js.UndefOr[Input[String]] = js.native
+    val integrationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URI of the Lambda function for a Lambda proxy integration, when `integrationType` is `AWS_PROXY`.
       * For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
       */
-    val integrationUri: js.UndefOr[Input[String]] = js.native
+    val integrationUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the `requestTemplates` attribute.
       * Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO_MATCH`. Supported only for WebSocket APIs.
       */
-    val passthroughBehavior: js.UndefOr[Input[String]] = js.native
+    val passthroughBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [format of the payload](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html#http-api-develop-integrations-lambda.proxy-format) sent to an integration. Valid values: `1.0`, `2.0`. Default is `1.0`.
       */
-    val payloadFormatVersion: js.UndefOr[Input[String]] = js.native
+    val payloadFormatVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A key-value map specifying request parameters that are passed from the method request to the backend.
       * Supported only for WebSocket APIs.
       */
-    val requestParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. Supported only for WebSocket APIs.
       */
-    val requestTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration.
       */
-    val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val templateSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
-    val timeoutMilliseconds: js.UndefOr[Input[Double]] = js.native
+    val timeoutMilliseconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The TLS configuration for a private integration. Supported only for HTTP APIs.
       */
-    val tlsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.IntegrationTlsConfig]] = js.native
+    val tlsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.IntegrationTlsConfig]] = js.undefined
   }
   object IntegrationState {
     

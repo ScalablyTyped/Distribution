@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMarketplacedealsList extends StandardParameters {
+trait ParamsResourceMarketplacedealsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Query string to retrieve specific deals.
     */
-  var pqlQuery: js.UndefOr[String] = js.native
+  var pqlQuery: js.UndefOr[String] = js.undefined
   
   /**
     * The proposalId to get deals for. To search across all proposals specify
     * order_id = '-' as part of the URL.
     */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMarketplacedealsList {
   

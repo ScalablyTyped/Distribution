@@ -3,17 +3,15 @@ package typings.xterm
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cols extends StObject {
     
-    var cols: Double = js.native
+    var cols: Double
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object Cols {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DomEvent extends StObject {
     
-    var domEvent: KeyboardEvent = js.native
+    var domEvent: KeyboardEvent
     
-    var key: String = js.native
+    var key: String
   }
   object DomEvent {
     
@@ -60,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     

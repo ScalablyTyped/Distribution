@@ -5,12 +5,14 @@ import typings.formatjsEcma402Abstract.typesPluralRulesMod.LDMLPluralRule
 import typings.std.Intl.PluralRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluralRulesResolvePluralMod {
   
-  @JSImport("@formatjs/ecma402-abstract/PluralRules/ResolvePlural", "ResolvePlural")
+  @JSImport("@formatjs/ecma402-abstract/PluralRules/ResolvePlural", JSImport.Namespace)
   @js.native
-  def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: PluralRuleSelect): LDMLPluralRule = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: PluralRuleSelect): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolvePlural")(pl.asInstanceOf[js.Any], n.asInstanceOf[js.Any], hasGetInternalSlotsPluralRuleSelect.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
 }

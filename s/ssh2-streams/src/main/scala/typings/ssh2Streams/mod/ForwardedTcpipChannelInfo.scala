@@ -3,34 +3,28 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`forwarded-tcpip`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForwardedTcpipChannelInfo extends ChannelOpenInfo {
+trait ForwardedTcpipChannelInfo
+  extends StObject
+     with ChannelOpenInfo {
   
-  var data: TcpipChannelData = js.native
+  var data: TcpipChannelData
   
-  var packetSize: Double = js.native
+  var packetSize: Double
   
-  var sender: Double = js.native
+  var sender: Double
   
-  var `type`: `forwarded-tcpip` = js.native
+  var `type`: `forwarded-tcpip`
   
-  var window: Double = js.native
+  var window: Double
 }
 object ForwardedTcpipChannelInfo {
   
   @scala.inline
-  def apply(
-    data: TcpipChannelData,
-    packetSize: Double,
-    sender: Double,
-    `type`: `forwarded-tcpip`,
-    window: Double
-  ): ForwardedTcpipChannelInfo = {
+  def apply(data: TcpipChannelData, packetSize: Double, sender: Double, window: Double): ForwardedTcpipChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("forwarded-tcpip")
     __obj.asInstanceOf[ForwardedTcpipChannelInfo]
   }
   

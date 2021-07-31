@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HttpRule, each specifying the mapping of an RPC method to one or more HTTP
   * REST API methods.
   */
-@js.native
 trait SchemaHttp extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait SchemaHttp extends StObject {
     * &quot;%2F&quot; will be left encoded.  The default behavior is to not
     * decode RFC 6570 reserved characters in multi segment matches.
     */
-  var fullyDecodeReservedExpansion: js.UndefOr[Boolean] = js.native
+  var fullyDecodeReservedExpansion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of HTTP configuration rules that apply to individual API methods.
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaHttpRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaHttpRule]] = js.undefined
 }
 object SchemaHttp {
   

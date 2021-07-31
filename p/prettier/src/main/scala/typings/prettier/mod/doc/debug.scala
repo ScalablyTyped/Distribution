@@ -3,12 +3,14 @@ package typings.prettier.mod.doc
 import typings.prettier.mod.Doc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debug {
   
-  @JSImport("prettier", "doc.debug.printDocToDebug")
+  @JSImport("prettier", "doc.debug")
   @js.native
-  def printDocToDebug(doc: Doc_): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def printDocToDebug(doc: Doc_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printDocToDebug")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
 }

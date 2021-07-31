@@ -2,24 +2,22 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotaryJournal extends StObject {
   
   /**
     * The creation date of the account in UTC timedate format.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
-  var documentName: js.UndefOr[String] = js.native
+  var documentName: js.UndefOr[String] = js.undefined
   
-  var jurisdiction: js.UndefOr[Jurisdiction] = js.native
+  var jurisdiction: js.UndefOr[Jurisdiction] = js.undefined
   
-  var notaryJournalId: js.UndefOr[String] = js.native
+  var notaryJournalId: js.UndefOr[String] = js.undefined
   
-  var notaryJournalMetaData: js.UndefOr[NotaryJournalMetaData] = js.native
+  var notaryJournalMetaData: js.UndefOr[NotaryJournalMetaData] = js.undefined
   
   /**
     * The in-person signer's full legal name.
@@ -30,7 +28,7 @@ trait NotaryJournal extends StObject {
     * Maximum Length: 100 characters.
     *
     */
-  var signerName: js.UndefOr[String] = js.native
+  var signerName: js.UndefOr[String] = js.undefined
 }
 object NotaryJournal {
   

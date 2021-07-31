@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityProvidersRequest extends StObject {
   
   /**
     * The maximum number of identity providers to return.
     */
-  var MaxResults: js.UndefOr[ListProvidersLimitType] = js.native
+  var MaxResults: js.UndefOr[ListProvidersLimitType] = js.undefined
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKeyType] = js.native
+  var NextToken: js.UndefOr[PaginationKeyType] = js.undefined
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object ListIdentityProvidersRequest {
   

@@ -6,7 +6,6 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait WorkbookRangeAreas extends ClientObject {
+trait WorkbookRangeAreas
+  extends StObject
+     with ClientObject {
   
   /**
     *

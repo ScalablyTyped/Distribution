@@ -2,15 +2,13 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RUBArray extends StObject {
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var RUB: js.Array[String] = js.native
+  var RUB: js.Array[String]
 }
 object RUBArray {
   

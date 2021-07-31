@@ -12,7 +12,7 @@ Sexy, fast, and themable FPS meter.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 125036 |
+| # downloads        | 103467 |
 | # stars            | 0 |
 
 ## Links

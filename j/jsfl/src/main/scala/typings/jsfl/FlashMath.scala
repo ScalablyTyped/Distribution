@@ -2,20 +2,18 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashMath extends StObject {
   
   /** Method; performs a matrix concatenation and returns the result. */
-  def concatMatrix(mat1: FlashMatrix, mat2: FlashMatrix): FlashMatrix = js.native
+  def concatMatrix(mat1: FlashMatrix, mat2: FlashMatrix): FlashMatrix
   
   /** A Matrix object that is the inverse of the original matrix. */
-  def invertMatrix(mat: FlashMatrix): FlashMatrix = js.native
+  def invertMatrix(mat: FlashMatrix): FlashMatrix
   
   /** A floating-point value that represents the distance between the points. */
-  def pointDistance(pt1: FlashPoint, pt2: FlashPoint): Double = js.native
+  def pointDistance(pt1: FlashPoint, pt2: FlashPoint): Double
 }
 object FlashMath {
   

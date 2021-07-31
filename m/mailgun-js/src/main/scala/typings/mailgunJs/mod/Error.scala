@@ -2,15 +2,13 @@ package typings.mailgunJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object Error {
   

@@ -4,32 +4,30 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Dimen
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.SortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breakdown extends StObject {
   
   /** The list of dimensions the report should include. */
-  var breakdown: js.UndefOr[js.Array[SortedDimension]] = js.native
+  var breakdown: js.UndefOr[js.Array[SortedDimension]] = js.undefined
   
   /** The date range this report should be run for. */
-  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.native
+  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.undefined
   
   /** The dimension option. */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /** The list of filters on which dimensions are filtered. */
-  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** The list of names of metrics the report should include. */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of names of overlap metrics the report should include. */
-  var overlapMetricNames: js.UndefOr[js.Array[String]] = js.native
+  var overlapMetricNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the report is pivoted or not. Defaults to true. */
-  var pivoted: js.UndefOr[Boolean] = js.native
+  var pivoted: js.UndefOr[Boolean] = js.undefined
 }
 object Breakdown {
   

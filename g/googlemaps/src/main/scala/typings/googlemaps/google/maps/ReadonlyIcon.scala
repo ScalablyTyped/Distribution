@@ -2,30 +2,28 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link Icon} */
-@js.native
 trait ReadonlyIcon extends StObject {
   
   /** @see {@link Icon#anchor} */
-  val anchor: js.UndefOr[Point] = js.native
+  val anchor: js.UndefOr[Point] = js.undefined
   
   /** @see {@link Icon#labelOrigin} */
-  val labelOrigin: js.UndefOr[Point] = js.native
+  val labelOrigin: js.UndefOr[Point] = js.undefined
   
   /** @see {@link Icon#origin} */
-  val origin: js.UndefOr[Point] = js.native
+  val origin: js.UndefOr[Point] = js.undefined
   
   /** @see {@link Icon#scaledSize} */
-  val scaledSize: js.UndefOr[Size] = js.native
+  val scaledSize: js.UndefOr[Size] = js.undefined
   
   /** @see {@link Icon#size} */
-  val size: js.UndefOr[Size] = js.native
+  val size: js.UndefOr[Size] = js.undefined
   
   /** @see {@link Icon#url} */
-  val url: String = js.native
+  val url: String
 }
 object ReadonlyIcon {
   

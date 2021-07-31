@@ -5,26 +5,26 @@ import typings.vegaLite.srcTimeunitMod.TimeUnit
 import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeUnitTransform extends Transform {
+trait TimeUnitTransform
+  extends StObject
+     with Transform {
   
   /**
     * The output field to write the timeUnit value.
     */
-  var as: FieldName = js.native
+  var as: FieldName
   
   /**
     * The data field to apply time unit.
     */
-  var field: FieldName = js.native
+  var field: FieldName
   
   /**
     * The timeUnit.
     */
-  var timeUnit: TimeUnit | TimeUnitParams = js.native
+  var timeUnit: TimeUnit | TimeUnitParams
 }
 object TimeUnitTransform {
   

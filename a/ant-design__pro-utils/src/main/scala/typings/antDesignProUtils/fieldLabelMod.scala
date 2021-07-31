@@ -7,7 +7,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldLabelMod extends Shortcut {
@@ -16,34 +15,33 @@ object fieldLabelMod extends Shortcut {
   @js.native
   val default: FC[FieldLabelProps] = js.native
   
-  @js.native
   trait FieldLabelProps extends StObject {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var ellipsis: js.UndefOr[Boolean] = js.native
+    var ellipsis: js.UndefOr[Boolean] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object FieldLabelProps {
     

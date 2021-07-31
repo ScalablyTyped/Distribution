@@ -5,21 +5,22 @@ import typings.react.mod.RefObject
 import typings.reactNavigationNative.anon.Animated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useScrollToTopMod {
   
-  @JSImport("@react-navigation/native/lib/typescript/src/useScrollToTop", JSImport.Default)
+  @JSImport("@react-navigation/native/lib/typescript/src/useScrollToTop", JSImport.Namespace)
   @js.native
-  def default(ref: RefObject[ScrollableWrapper]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(ref: RefObject[ScrollableWrapper]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ScrollOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScrollOptions {
     
@@ -52,7 +53,9 @@ object useScrollToTopMod {
     - typings.reactNavigationNative.anon.ScrollToOffset
     - typings.reactNavigationNative.anon.ScrollResponderScrollTo
   */
-  trait ScrollableView extends ScrollableWrapper
+  trait ScrollableView
+    extends StObject
+       with ScrollableWrapper
   object ScrollableView {
     
     @scala.inline

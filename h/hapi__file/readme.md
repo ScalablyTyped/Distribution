@@ -10,9 +10,9 @@ General purpose file utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/file |
 | Keywords           | utilities, file |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 9956850 |
+| # downloads        | 13355129 |
 | # stars            | 0 |
 
 ## Links

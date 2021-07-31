@@ -2,13 +2,11 @@ package typings.nodeZendesk.mod.Tickets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagsPayload extends StObject {
   
-  val tags: js.Array[String] = js.native
+  val tags: js.Array[String]
 }
 object TagsPayload {
   

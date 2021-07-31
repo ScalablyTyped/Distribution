@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsProcessingConfiguration extends StObject {
   
   /**
     * The Lambda function configuration. See Lambda below for more details.
     */
-  var lambda: AnalyticsApplicationInputsProcessingConfigurationLambda = js.native
+  var lambda: AnalyticsApplicationInputsProcessingConfigurationLambda
 }
 object AnalyticsApplicationInputsProcessingConfiguration {
   

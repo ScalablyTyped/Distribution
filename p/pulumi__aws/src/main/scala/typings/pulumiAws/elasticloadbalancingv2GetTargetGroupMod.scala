@@ -6,38 +6,36 @@ import typings.pulumiAws.outputMod.elasticloadbalancingv2.GetTargetGroupStickine
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancingv2GetTargetGroupMod {
   
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getTargetGroup", "getTargetGroup")
+  @JSImport("@pulumi/aws/elasticloadbalancingv2/getTargetGroup", JSImport.Namespace)
   @js.native
-  def getTargetGroup(): js.Promise[GetTargetGroupResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getTargetGroup", "getTargetGroup")
-  @js.native
-  def getTargetGroup(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getTargetGroup", "getTargetGroup")
-  @js.native
-  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = js.native
-  @JSImport("@pulumi/aws/elasticloadbalancingv2/getTargetGroup", "getTargetGroup")
-  @js.native
-  def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTargetGroup(): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")().asInstanceOf[js.Promise[GetTargetGroupResult]]
+  @scala.inline
+  def getTargetGroup(args: Unit, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  @scala.inline
+  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  @scala.inline
+  def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  
   trait GetTargetGroupArgs extends StObject {
     
     /**
       * The full ARN of the target group.
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * The unique name of the target group.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetTargetGroupArgs {
     
@@ -70,43 +68,42 @@ object elasticloadbalancingv2GetTargetGroupMod {
     }
   }
   
-  @js.native
   trait GetTargetGroupResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val arnSuffix: String = js.native
+    val arnSuffix: String
     
-    val deregistrationDelay: Double = js.native
+    val deregistrationDelay: Double
     
-    val healthCheck: GetTargetGroupHealthCheck = js.native
+    val healthCheck: GetTargetGroupHealthCheck
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val lambdaMultiValueHeadersEnabled: Boolean = js.native
+    val lambdaMultiValueHeadersEnabled: Boolean
     
-    val loadBalancingAlgorithmType: String = js.native
+    val loadBalancingAlgorithmType: String
     
-    val name: String = js.native
+    val name: String
     
-    val port: Double = js.native
+    val port: Double
     
-    val protocol: String = js.native
+    val protocol: String
     
-    val proxyProtocolV2: Boolean = js.native
+    val proxyProtocolV2: Boolean
     
-    val slowStart: Double = js.native
+    val slowStart: Double
     
-    val stickiness: GetTargetGroupStickiness = js.native
+    val stickiness: GetTargetGroupStickiness
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val targetType: String = js.native
+    val targetType: String
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetTargetGroupResult {
     

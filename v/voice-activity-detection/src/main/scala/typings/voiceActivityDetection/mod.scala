@@ -4,44 +4,44 @@ import typings.std.AudioContext
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("voice-activity-detection", JSImport.Namespace)
-  @js.native
-  def apply(audioContext: AudioContext, stream: MediaStream): Unit = js.native
-  @JSImport("voice-activity-detection", JSImport.Namespace)
-  @js.native
-  def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Unit = js.native
+  @scala.inline
+  def apply(audioContext: AudioContext, stream: MediaStream): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("voice-activity-detection", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait VoiceActivityDetectionOptions extends StObject {
     
-    var avgNoiseMultiplier: js.UndefOr[Double] = js.native
+    var avgNoiseMultiplier: js.UndefOr[Double] = js.undefined
     
-    var bufferLen: js.UndefOr[Double] = js.native
+    var bufferLen: js.UndefOr[Double] = js.undefined
     
-    var fftSize: js.UndefOr[Double] = js.native
+    var fftSize: js.UndefOr[Double] = js.undefined
     
-    var maxCaptureFreq: js.UndefOr[Double] = js.native
+    var maxCaptureFreq: js.UndefOr[Double] = js.undefined
     
-    var maxNoiseLevel: js.UndefOr[Double] = js.native
+    var maxNoiseLevel: js.UndefOr[Double] = js.undefined
     
-    var minCaptureFreq: js.UndefOr[Double] = js.native
+    var minCaptureFreq: js.UndefOr[Double] = js.undefined
     
-    var minNoiseLevel: js.UndefOr[Double] = js.native
+    var minNoiseLevel: js.UndefOr[Double] = js.undefined
     
-    var noiseCaptureDuration: js.UndefOr[Double] = js.native
+    var noiseCaptureDuration: js.UndefOr[Double] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* val */ Double, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* val */ Double, Unit]] = js.undefined
     
-    var onVoiceStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onVoiceStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onVoiceStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onVoiceStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var smoothingTimeConstant: js.UndefOr[Double] = js.native
+    var smoothingTimeConstant: js.UndefOr[Double] = js.undefined
   }
   object VoiceActivityDetectionOptions {
     

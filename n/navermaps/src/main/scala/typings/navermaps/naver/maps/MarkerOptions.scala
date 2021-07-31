@@ -2,33 +2,31 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerOptions extends StObject {
   
-  var animation: js.UndefOr[js.Any] = js.native
+  var animation: js.UndefOr[js.Any] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[js.Any] = js.native
+  var icon: js.UndefOr[js.Any] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
-  var shape: js.UndefOr[js.Any] = js.native
+  var shape: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MarkerOptions {
   

@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaStreamEventInit extends EventInit {
+trait MediaStreamEventInit
+  extends StObject
+     with EventInit {
   
-  var stream: js.UndefOr[MediaStream] = js.native
+  var stream: js.UndefOr[MediaStream] = js.undefined
 }
 object MediaStreamEventInit {
   

@@ -17,7 +17,6 @@ import typings.three.anon.RoughnessMap
 import typings.three.anon.SpecularMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniformsLibMod {
@@ -119,10 +118,9 @@ object uniformsLibMod {
     def specularmap_=(x: SpecularMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specularmap")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IUniform extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object IUniform {
     

@@ -11,7 +11,6 @@ import typings.std.EventTarget
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -41,26 +40,25 @@ object anon {
     var value: String = js.native
   }
   
-  @js.native
   trait CellPrefixCls[DateType] extends StObject {
     
-    var cellPrefixCls: String = js.native
+    var cellPrefixCls: String
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType] = js.native
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
     
-    var hoverRangedValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var hoverRangedValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    def isInView(date: DateType): Boolean = js.native
+    def isInView(date: DateType): Boolean
     
-    def isSameCell(current: NullableDateType[DateType], target: NullableDateType[DateType]): Boolean = js.native
+    def isSameCell(current: NullableDateType[DateType], target: NullableDateType[DateType]): Boolean
     
-    def offsetCell(date: DateType, offset: Double): DateType = js.native
+    def offsetCell(date: DateType, offset: Double): DateType
     
-    var rangedValue: js.UndefOr[RangeValue[DateType]] = js.native
+    var rangedValue: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var today: js.UndefOr[NullableDateType[DateType]] = js.native
+    var today: js.UndefOr[NullableDateType[DateType]] = js.undefined
     
-    var value: js.UndefOr[NullableDateType[DateType]] = js.native
+    var value: js.UndefOr[NullableDateType[DateType]] = js.undefined
   }
   object CellPrefixCls {
     
@@ -77,7 +75,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CellPrefixClsMutableBuilder[Self <: CellPrefixCls[_], DateType] (val x: Self with CellPrefixCls[DateType]) extends AnyVal {
+    implicit class CellPrefixClsMutableBuilder[Self <: CellPrefixCls[?], DateType] (val x: Self & CellPrefixCls[DateType]) extends AnyVal {
       
       @scala.inline
       def setCellPrefixCls(value: String): Self = StObject.set(x, "cellPrefixCls", value.asInstanceOf[js.Any])
@@ -132,27 +130,26 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultDates[DateType] extends StObject {
     
-    var defaultDates: js.UndefOr[RangeValue[DateType]] = js.native
+    var defaultDates: js.UndefOr[RangeValue[DateType]] = js.undefined
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType] = js.native
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
     
-    var picker: PickerMode = js.native
+    var picker: PickerMode
     
-    var values: RangeValue[DateType] = js.native
+    var values: RangeValue[DateType]
   }
   object DefaultDates {
     
     @scala.inline
     def apply[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], picker: PickerMode): DefaultDates[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], values = null)
       __obj.asInstanceOf[DefaultDates[DateType]]
     }
     
     @scala.inline
-    implicit class DefaultDatesMutableBuilder[Self <: DefaultDates[_], DateType] (val x: Self with DefaultDates[DateType]) extends AnyVal {
+    implicit class DefaultDatesMutableBuilder[Self <: DefaultDates[?], DateType] (val x: Self & DefaultDates[DateType]) extends AnyVal {
       
       @scala.inline
       def setDefaultDates(value: RangeValue[DateType]): Self = StObject.set(x, "defaultDates", value.asInstanceOf[js.Any])
@@ -177,20 +174,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled[DateType] extends StObject {
     
-    var disabled: js.Tuple2[Boolean, Boolean] = js.native
+    var disabled: js.Tuple2[Boolean, Boolean]
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType] = js.native
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var picker: PickerMode = js.native
+    var picker: PickerMode
     
-    var selectedValue: RangeValue[DateType] = js.native
+    var selectedValue: RangeValue[DateType]
   }
   object Disabled {
     
@@ -201,12 +197,12 @@ object anon {
       locale: Locale,
       picker: PickerMode
     ): Disabled[DateType] = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], selectedValue = null)
       __obj.asInstanceOf[Disabled[DateType]]
     }
     
     @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled[_], DateType] (val x: Self with Disabled[DateType]) extends AnyVal {
+    implicit class DisabledMutableBuilder[Self <: Disabled[?], DateType] (val x: Self & Disabled[DateType]) extends AnyVal {
       
       @scala.inline
       def setDisabled(value: js.Tuple2[Boolean, Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
@@ -234,12 +230,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Focused extends StObject {
     
-    var focused: Boolean = js.native
+    var focused: Boolean
     
-    var typing: Boolean = js.native
+    var typing: Boolean
   }
   object Focused {
     
@@ -260,23 +255,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Format[DateType] extends StObject {
     
-    def format(locale: String, date: DateType, format: String): String = js.native
+    def format(locale: String, date: DateType, format: String): String
     
     /** A proxy for getting locale with moment or other locale library */
-    var getShortMonths: js.UndefOr[js.Function1[/* locale */ String, js.Array[String]]] = js.native
+    var getShortMonths: js.UndefOr[js.Function1[/* locale */ String, js.Array[String]]] = js.undefined
     
     /** A proxy for getting locale with moment or other locale library */
-    var getShortWeekDays: js.UndefOr[js.Function1[/* locale */ String, js.Array[String]]] = js.native
+    var getShortWeekDays: js.UndefOr[js.Function1[/* locale */ String, js.Array[String]]] = js.undefined
     
-    def getWeek(locale: String, value: DateType): Double = js.native
+    def getWeek(locale: String, value: DateType): Double
     
-    def getWeekFirstDay(locale: String): Double = js.native
+    def getWeekFirstDay(locale: String): Double
     
     /** Should only return validate date instance */
-    def parse(locale: String, text: String, formats: js.Array[String]): DateType | Null = js.native
+    def parse(locale: String, text: String, formats: js.Array[String]): DateType | Null
   }
   object Format {
     
@@ -292,7 +286,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format[_], DateType] (val x: Self with Format[DateType]) extends AnyVal {
+    implicit class FormatMutableBuilder[Self <: Format[?], DateType] (val x: Self & Format[DateType]) extends AnyVal {
       
       @scala.inline
       def setFormat(value: (String, DateType, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
@@ -320,14 +314,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FormatList[DateType] extends StObject {
     
-    var formatList: js.Array[String | CustomFormat[DateType]] = js.native
+    var formatList: js.Array[String | CustomFormat[DateType]]
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType] = js.native
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
   }
   object FormatList {
     
@@ -342,7 +335,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FormatListMutableBuilder[Self <: FormatList[_], DateType] (val x: Self with FormatList[DateType]) extends AnyVal {
+    implicit class FormatListMutableBuilder[Self <: FormatList[?], DateType] (val x: Self & FormatList[DateType]) extends AnyVal {
       
       @scala.inline
       def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
@@ -358,14 +351,13 @@ object anon {
     }
   }
   
-  @js.native
   trait GenerateConfig[DateType] extends StObject {
     
-    var format: String | CustomFormat[DateType] = js.native
+    var format: String | CustomFormat[DateType]
     
-    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType] = js.native
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
   }
   object GenerateConfig {
     
@@ -380,7 +372,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[_], DateType] (val x: Self with GenerateConfig[DateType]) extends AnyVal {
+    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
       
       @scala.inline
       def setFormat(value: String | CustomFormat[DateType]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
@@ -396,16 +388,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    def onMouseEnter(): Unit = js.native
+    def onMouseEnter(): Unit
     
-    def onMouseLeave(): Unit = js.native
+    def onMouseLeave(): Unit
   }
   object Label {
     
@@ -432,13 +423,12 @@ object anon {
     }
   }
   
-  @js.native
   trait OnTextChange extends StObject {
     
-    def onTextChange(text: String): Unit = js.native
+    def onTextChange(text: String): Unit
     
     /** Must useMemo, to assume that `valueTexts` only match on the first change */
-    var valueTexts: js.Array[String] = js.native
+    var valueTexts: js.Array[String]
   }
   object OnTextChange {
     

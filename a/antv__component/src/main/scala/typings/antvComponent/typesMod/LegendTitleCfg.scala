@@ -3,23 +3,21 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendTitleCfg extends StObject {
   
   /**
     * 标题同图例项的间距
     * @type {number}
     */
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
   /**
     * 文本配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object LegendTitleCfg {
   

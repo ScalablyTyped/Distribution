@@ -7,10 +7,13 @@ import typings.node.httpMod.RequestOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("@hapi/hawk/lib/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object limits {
     
@@ -26,91 +29,70 @@ object utilsMod {
     def maxMatchLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxMatchLength")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@hapi/hawk/lib/utils", "now")
-  @js.native
-  def now(localtimeOffsetMsec: Double): Double = js.native
+  @scala.inline
+  def now(localtimeOffsetMsec: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(localtimeOffsetMsec.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@hapi/hawk/lib/utils", "nowSecs")
-  @js.native
-  def nowSecs(localtimeOffsetMsec: Double): Double = js.native
+  @scala.inline
+  def nowSecs(localtimeOffsetMsec: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowSecs")(localtimeOffsetMsec.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@hapi/hawk/lib/utils", "parseAuthorizationHeader")
-  @js.native
-  def parseAuthorizationHeader(header: String): Record[String, String] = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseAuthorizationHeader")
-  @js.native
-  def parseAuthorizationHeader(header: String, keys: js.Array[String]): Record[String, String] = js.native
+  @scala.inline
+  def parseAuthorizationHeader(header: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAuthorizationHeader")(header.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def parseAuthorizationHeader(header: String, keys: js.Array[String]): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAuthorizationHeader")(header.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
-  @JSImport("@hapi/hawk/lib/utils", "parseContentType")
-  @js.native
-  def parseContentType(): String = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseContentType")
-  @js.native
-  def parseContentType(header: String): String = js.native
+  @scala.inline
+  def parseContentType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseContentType")().asInstanceOf[String]
+  @scala.inline
+  def parseContentType(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseContentType")(header.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/utils", "parseHost")
-  @js.native
-  def parseHost(req: RequestOptions): Host | Null = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseHost")
-  @js.native
-  def parseHost(req: RequestOptions, hostHeaderName: String): Host | Null = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseHost")
-  @js.native
-  def parseHost(req: typings.node.httpsMod.RequestOptions): Host | Null = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseHost")
-  @js.native
-  def parseHost(req: typings.node.httpsMod.RequestOptions, hostHeaderName: String): Host | Null = js.native
+  @scala.inline
+  def parseHost(req: RequestOptions): Host | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(req.asInstanceOf[js.Any]).asInstanceOf[Host | Null]
+  @scala.inline
+  def parseHost(req: RequestOptions, hostHeaderName: String): Host | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(req.asInstanceOf[js.Any], hostHeaderName.asInstanceOf[js.Any])).asInstanceOf[Host | Null]
+  @scala.inline
+  def parseHost(req: typings.node.httpsMod.RequestOptions): Host | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(req.asInstanceOf[js.Any]).asInstanceOf[Host | Null]
+  @scala.inline
+  def parseHost(req: typings.node.httpsMod.RequestOptions, hostHeaderName: String): Host | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(req.asInstanceOf[js.Any], hostHeaderName.asInstanceOf[js.Any])).asInstanceOf[Host | Null]
   
-  @JSImport("@hapi/hawk/lib/utils", "parseRequest")
-  @js.native
-  def parseRequest(req: RequestOptions): CustomRequest = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseRequest")
-  @js.native
-  def parseRequest(req: RequestOptions, options: ParseRequestOptions): CustomRequest = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseRequest")
-  @js.native
-  def parseRequest(req: typings.node.httpsMod.RequestOptions): CustomRequest = js.native
-  @JSImport("@hapi/hawk/lib/utils", "parseRequest")
-  @js.native
-  def parseRequest(req: typings.node.httpsMod.RequestOptions, options: ParseRequestOptions): CustomRequest = js.native
+  @scala.inline
+  def parseRequest(req: RequestOptions): CustomRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any]).asInstanceOf[CustomRequest]
+  @scala.inline
+  def parseRequest(req: RequestOptions, options: ParseRequestOptions): CustomRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CustomRequest]
+  @scala.inline
+  def parseRequest(req: typings.node.httpsMod.RequestOptions): CustomRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any]).asInstanceOf[CustomRequest]
+  @scala.inline
+  def parseRequest(req: typings.node.httpsMod.RequestOptions, options: ParseRequestOptions): CustomRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CustomRequest]
   
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(): Boom[_] with MissingAuth = js.native
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(message: js.UndefOr[scala.Nothing], attributes: String): Boom[_] with MissingAuth = js.native
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(message: js.UndefOr[scala.Nothing], attributes: Attributes): Boom[_] with MissingAuth = js.native
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(message: String): Boom[_] with MissingAuth = js.native
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(message: String, attributes: String): Boom[_] with MissingAuth = js.native
-  @JSImport("@hapi/hawk/lib/utils", "unauthorized")
-  @js.native
-  def unauthorized(message: String, attributes: Attributes): Boom[_] with MissingAuth = js.native
+  @scala.inline
+  def unauthorized(): Boom[js.Any] & MissingAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")().asInstanceOf[Boom[js.Any] & MissingAuth]
+  @scala.inline
+  def unauthorized(message: String): Boom[js.Any] & MissingAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[js.Any] & MissingAuth]
+  @scala.inline
+  def unauthorized(message: String, attributes: String): Boom[js.Any] & MissingAuth = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[js.Any] & MissingAuth]
+  @scala.inline
+  def unauthorized(message: String, attributes: Attributes): Boom[js.Any] & MissingAuth = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[js.Any] & MissingAuth]
+  @scala.inline
+  def unauthorized(message: Unit, attributes: String): Boom[js.Any] & MissingAuth = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[js.Any] & MissingAuth]
+  @scala.inline
+  def unauthorized(message: Unit, attributes: Attributes): Boom[js.Any] & MissingAuth = (^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boom[js.Any] & MissingAuth]
   
   @JSImport("@hapi/hawk/lib/utils", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait CustomRequest extends StObject {
     
-    var authorization: String = js.native
+    var authorization: String
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var host: String = js.native
+    var host: String
     
-    var method: String = js.native
+    var method: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var url: String = js.native
+    var url: String
   }
   object CustomRequest {
     
@@ -150,12 +132,11 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Host {
     
@@ -176,16 +157,15 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait ParseRequestOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostHeaderName: js.UndefOr[String] = js.native
+    var hostHeaderName: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object ParseRequestOptions {
     

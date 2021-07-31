@@ -3,15 +3,13 @@ package typings.jestWorker
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PostMessage extends StObject {
     
-    def postMessage(message: js.Any): Unit = js.native
+    def postMessage(message: js.Any): Unit
   }
   object PostMessage {
     

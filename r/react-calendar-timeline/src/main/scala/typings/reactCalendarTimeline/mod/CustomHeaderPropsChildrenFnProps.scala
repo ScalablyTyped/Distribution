@@ -5,7 +5,6 @@ import typings.reactCalendarTimeline.anon.RequiredGetIntervalPropsk
 import typings.reactCalendarTimeline.anon.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

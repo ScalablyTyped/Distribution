@@ -11,8 +11,8 @@ Simple Checkstyle data formatter
 | Full name          | checkstyle-formatter |
 | Keywords           | checkstyle, lint, format, formatter |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 715488 |
+| # dependents       | 14 |
+| # downloads        | 818509 |
 | # stars            | 0 |
 
 ## Links

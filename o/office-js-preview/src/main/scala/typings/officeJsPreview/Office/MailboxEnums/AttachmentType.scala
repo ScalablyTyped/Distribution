@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,17 +26,23 @@ object AttachmentType extends StObject {
     * contains a URL to the file in Compose mode.
     */
   @js.native
-  sealed trait Cloud extends AttachmentType
+  sealed trait Cloud
+    extends StObject
+       with AttachmentType
   
   /**
     * The attachment is a file.
     */
   @js.native
-  sealed trait File extends AttachmentType
+  sealed trait File
+    extends StObject
+       with AttachmentType
   
   /**
     * The attachment is an Exchange item.
     */
   @js.native
-  sealed trait Item extends AttachmentType
+  sealed trait Item
+    extends StObject
+       with AttachmentType
 }

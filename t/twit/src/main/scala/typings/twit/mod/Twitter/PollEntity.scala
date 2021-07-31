@@ -2,17 +2,15 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollEntity extends StObject {
   
-  var duration_minutes: String = js.native
+  var duration_minutes: String
   
-  var end_datetime: String = js.native
+  var end_datetime: String
   
-  var options: js.Array[PollOptions] = js.native
+  var options: js.Array[PollOptions]
 }
 object PollEntity {
   

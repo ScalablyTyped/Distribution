@@ -8,10 +8,13 @@ import typings.logger.loggerStrings.info
 import typings.logger.loggerStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("logger", "Logger")
   @js.native
@@ -51,14 +54,16 @@ object mod {
     val levels: js.Tuple5[fatal, error, warn, info, debug] = js.native
   }
   
-  @JSImport("logger", "createLogger")
-  @js.native
-  def createLogger(): Logger = js.native
-  @JSImport("logger", "createLogger")
-  @js.native
-  def createLogger(logFilePath: String): Logger = js.native
+  @scala.inline
+  def createLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Logger]
+  @scala.inline
+  def createLogger(logFilePath: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(logFilePath.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  type Args = js.Function1[/* repeated */ String, String | `false`]
+  @js.native
+  trait Args extends StObject {
+    
+    def apply(args: String*): String | `false` = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.logger.loggerStrings.fatal

@@ -5,30 +5,31 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionInterfaceMod {
   
   object default {
     
-    @JSImport("relay-runtime/lib/handlers/connection/ConnectionInterface", "default.get")
+    @JSImport("relay-runtime/lib/handlers/connection/ConnectionInterface", JSImport.Default)
     @js.native
-    def get(): CLIENTMUTATIONID = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: unknown} */ @js.native
-  trait EdgeRecord extends StObject {
+  - Dropped {[ P in string ]: unknown} */ trait EdgeRecord extends StObject {
     
-    var cursor: js.Any = js.native
+    var cursor: js.Any
     
-    var node: Record[DataID, _] = js.native
+    var node: Record[DataID, js.Any]
   }
   object EdgeRecord {
     
     @scala.inline
-    def apply(cursor: js.Any, node: Record[DataID, _]): EdgeRecord = {
+    def apply(cursor: js.Any, node: Record[DataID, js.Any]): EdgeRecord = {
       val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeRecord]
     }
@@ -40,20 +41,19 @@ object connectionInterfaceMod {
       def setCursor(value: js.Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNode(value: Record[DataID, _]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      def setNode(value: Record[DataID, js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PageInfo extends StObject {
     
-    var endCursor: js.UndefOr[String | Null] = js.native
+    var endCursor: js.UndefOr[String | Null] = js.undefined
     
-    var hasNextPage: Boolean = js.native
+    var hasNextPage: Boolean
     
-    var hasPreviousPage: Boolean = js.native
+    var hasPreviousPage: Boolean
     
-    var startCursor: js.UndefOr[String | Null] = js.native
+    var startCursor: js.UndefOr[String | Null] = js.undefined
   }
   object PageInfo {
     

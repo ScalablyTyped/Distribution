@@ -2,10 +2,8 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ParserOptions extends StObject {
     *
     *  **Default:** `true`
     */
-  var scriptingEnabled: js.UndefOr[Boolean] = js.native
+  var scriptingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables source code location information. When enabled, each node (except the root node)
@@ -26,14 +24,14 @@ trait ParserOptions extends StObject {
     *
     * **Default:** `false`
     */
-  var sourceCodeLocationInfo: js.UndefOr[Boolean] = js.native
+  var sourceCodeLocationInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the resulting tree format.
     *
     * **Default:** `treeAdapters.default`
     */
-  var treeAdapter: js.UndefOr[TreeAdapter] = js.native
+  var treeAdapter: js.UndefOr[TreeAdapter] = js.undefined
 }
 object ParserOptions {
   

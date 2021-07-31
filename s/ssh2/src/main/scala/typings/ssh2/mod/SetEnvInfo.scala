@@ -2,17 +2,15 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetEnvInfo extends StObject {
   
   /** The environment variable's name. */
-  var key: String = js.native
+  var key: String
   
   /** The environment variable's value. */
-  var value: String = js.native
+  var value: String
 }
 object SetEnvInfo {
   

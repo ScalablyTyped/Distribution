@@ -12,16 +12,15 @@ import typings.winrtUwp.winrtUwpStrings.dialdeviceselected
 import typings.winrtUwp.winrtUwpStrings.disconnectbuttonclicked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a picker flyout that contains a list of remote devices for the user to choose from. */
 @js.native
 trait DialDevicePicker extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_dialdevicepickerdismissed(`type`: dialdevicepickerdismissed, listener: TypedEventHandler[DialDevicePicker, _]): Unit = js.native
+  def addEventListener_dialdevicepickerdismissed(`type`: dialdevicepickerdismissed, listener: TypedEventHandler[DialDevicePicker, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dialdeviceselected(
     `type`: dialdeviceselected,
@@ -43,19 +42,19 @@ trait DialDevicePicker extends StObject {
   def hide(): Unit = js.native
   
   /** Indicates that the device picker was light dismissed, which means that the user clicked or touched anywhere other than the picker UI, and so the picker will be closed. */
-  def ondialdevicepickerdismissed(ev: js.Any with WinRTEvent[DialDevicePicker]): Unit = js.native
+  def ondialdevicepickerdismissed(ev: js.Any & WinRTEvent[DialDevicePicker]): Unit = js.native
   /** Indicates that the device picker was light dismissed, which means that the user clicked or touched anywhere other than the picker UI, and so the picker will be closed. */
   @JSName("ondialdevicepickerdismissed")
-  var ondialdevicepickerdismissed_Original: TypedEventHandler[DialDevicePicker, _] = js.native
+  var ondialdevicepickerdismissed_Original: TypedEventHandler[DialDevicePicker, js.Any] = js.native
   
   /** Indicates that the user selected a device from the picker. */
-  def ondialdeviceselected(ev: DialDeviceSelectedEventArgs with WinRTEvent[DialDevicePicker]): Unit = js.native
+  def ondialdeviceselected(ev: DialDeviceSelectedEventArgs & WinRTEvent[DialDevicePicker]): Unit = js.native
   /** Indicates that the user selected a device from the picker. */
   @JSName("ondialdeviceselected")
   var ondialdeviceselected_Original: TypedEventHandler[DialDevicePicker, DialDeviceSelectedEventArgs] = js.native
   
   /** Indicates that the user clicked on the disconnect button in the picker. */
-  def ondisconnectbuttonclicked(ev: DialDisconnectButtonClickedEventArgs with WinRTEvent[DialDevicePicker]): Unit = js.native
+  def ondisconnectbuttonclicked(ev: DialDisconnectButtonClickedEventArgs & WinRTEvent[DialDevicePicker]): Unit = js.native
   /** Indicates that the user clicked on the disconnect button in the picker. */
   @JSName("ondisconnectbuttonclicked")
   var ondisconnectbuttonclicked_Original: TypedEventHandler[DialDevicePicker, DialDisconnectButtonClickedEventArgs] = js.native
@@ -74,9 +73,9 @@ trait DialDevicePicker extends StObject {
     */
   def pickSingleDialDeviceAsync(selection: Rect, preferredPlacement: Placement): IPromiseWithIAsyncOperation[DialDevice] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_dialdevicepickerdismissed(`type`: dialdevicepickerdismissed, listener: TypedEventHandler[DialDevicePicker, _]): Unit = js.native
+  def removeEventListener_dialdevicepickerdismissed(`type`: dialdevicepickerdismissed, listener: TypedEventHandler[DialDevicePicker, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dialdeviceselected(
     `type`: dialdeviceselected,

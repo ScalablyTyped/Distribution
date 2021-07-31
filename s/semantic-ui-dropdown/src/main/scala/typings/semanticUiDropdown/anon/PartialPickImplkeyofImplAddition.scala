@@ -2,38 +2,36 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.SelectorSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.SelectorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplAddition extends StObject {
   
-  var addition: js.UndefOr[String] = js.native
+  var addition: js.UndefOr[String] = js.undefined
   
-  var dropdown: js.UndefOr[String] = js.native
+  var dropdown: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var menu: js.UndefOr[String] = js.native
+  var menu: js.UndefOr[String] = js.undefined
   
-  var menuIcon: js.UndefOr[String] = js.native
+  var menuIcon: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var remove: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var siblingLabel: js.UndefOr[String] = js.native
+  var siblingLabel: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplAddition {
   

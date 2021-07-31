@@ -2,29 +2,27 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gRPC config to access the SDS server.
   */
-@js.native
 trait SchemaGrpcServiceConfig extends StObject {
   
   /**
     * The call credentials to access the SDS server.
     */
-  var callCredentials: js.UndefOr[SchemaCallCredentials] = js.native
+  var callCredentials: js.UndefOr[SchemaCallCredentials] = js.undefined
   
   /**
     * The channel credentials to access the SDS server.
     */
-  var channelCredentials: js.UndefOr[SchemaChannelCredentials] = js.native
+  var channelCredentials: js.UndefOr[SchemaChannelCredentials] = js.undefined
   
   /**
     * The target URI of the SDS server.
     */
-  var targetUri: js.UndefOr[String] = js.native
+  var targetUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGrpcServiceConfig {
   

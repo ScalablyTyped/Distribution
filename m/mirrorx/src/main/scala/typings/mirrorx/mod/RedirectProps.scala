@@ -4,23 +4,21 @@ import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectProps extends StObject {
   
-  var exact: js.UndefOr[Boolean] = js.native
+  var exact: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var push: js.UndefOr[Boolean] = js.native
+  var push: js.UndefOr[Boolean] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var to: LocationDescriptor[LocationState] = js.native
+  var to: LocationDescriptor[LocationState]
 }
 object RedirectProps {
   

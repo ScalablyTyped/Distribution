@@ -2,41 +2,39 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceMapping extends StObject {
   
   /**
     * Uri of the associated definition
     */
-  var definitionUri: String = js.native
+  var definitionUri: String
   
   /**
     * Depth of this mapping
     */
-  var depth: Double = js.native
+  var depth: Double
   
   /**
     * local location of the definition
     */
-  var localItem: String = js.native
+  var localItem: String
   
   /**
     * type of workspace mapping
     */
-  var mappingType: WorkspaceMappingType = js.native
+  var mappingType: WorkspaceMappingType
   
   /**
     * Server location of the definition
     */
-  var serverItem: String = js.native
+  var serverItem: String
   
   /**
     * Id of the workspace
     */
-  var workspaceId: Double = js.native
+  var workspaceId: Double
 }
 object WorkspaceMapping {
   

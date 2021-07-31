@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AWSSessionCredentials extends StObject {
   
   /**
     * The access key for the session.
     */
-  var accessKeyId: AccessKeyId = js.native
+  var accessKeyId: AccessKeyId
   
   /**
     * The secret access key for the session.
     */
-  var secretAccessKey: SecretAccessKey = js.native
+  var secretAccessKey: SecretAccessKey
   
   /**
     * The token for the session.
     */
-  var sessionToken: SessionToken = js.native
+  var sessionToken: SessionToken
 }
 object AWSSessionCredentials {
   

@@ -2,34 +2,32 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGradientOptions extends StObject {
   
   /**
     * Color stops object eg. {0:string; 1:string;
     */
-  var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.native
+  var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.undefined
   
-  var coords: js.UndefOr[IGradientOptionsCoords] = js.native
+  var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
   
-  var gradientTransform: js.UndefOr[js.Any] = js.native
+  var gradientTransform: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
     * @type Number
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical offset for aligning gradients coming from SVG when outside pathgroups
     * @type Number
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IGradientOptions {
   

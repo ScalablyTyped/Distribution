@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterParameterGroupStatus extends StObject {
   
   /**
     * The list of parameter statuses.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
-  var ClusterParameterStatusList: js.UndefOr[typings.awsSdk.redshiftMod.ClusterParameterStatusList] = js.native
+  var ClusterParameterStatusList: js.UndefOr[typings.awsSdk.redshiftMod.ClusterParameterStatusList] = js.undefined
   
   /**
     * The status of parameter updates.
     */
-  var ParameterApplyStatus: js.UndefOr[String] = js.native
+  var ParameterApplyStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the cluster parameter group.
     */
-  var ParameterGroupName: js.UndefOr[String] = js.native
+  var ParameterGroupName: js.UndefOr[String] = js.undefined
 }
 object ClusterParameterGroupStatus {
   

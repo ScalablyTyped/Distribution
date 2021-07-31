@@ -6,13 +6,14 @@ import typings.std.Iterator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait BaseQuad extends _Term {
+  trait BaseQuad
+    extends StObject
+       with _Term {
     
     /**
       * @param other The term to compare with.
@@ -58,7 +59,8 @@ object mod {
   
   @js.native
   trait BlankNode
-    extends _QuadGraph
+    extends StObject
+       with _QuadGraph
        with _QuadObject
        with _QuadSubject
        with _Term {
@@ -153,7 +155,9 @@ object mod {
   }
   
   @js.native
-  trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends DatasetCore[OutQuad, InQuad] {
+  trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */]
+    extends StObject
+       with DatasetCore[OutQuad, InQuad] {
     
     def addAll(quads: js.Array[InQuad]): this.type = js.native
     /**
@@ -184,10 +188,21 @@ object mod {
       * @param graph     The optional exact graph to match.
       */
     def deleteMatches(): this.type = js.native
-    def deleteMatches(subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: js.UndefOr[Term], graph: Term): this.type = js.native
-    def deleteMatches(subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: Term): this.type = js.native
-    def deleteMatches(subject: js.UndefOr[Term], predicate: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Unit, `object`: Unit, graph: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Unit, `object`: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Unit, `object`: Term, graph: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Term, `object`: Unit, graph: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Term, `object`: Term): this.type = js.native
+    def deleteMatches(subject: Unit, predicate: Term, `object`: Term, graph: Term): this.type = js.native
     def deleteMatches(subject: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Unit, `object`: Unit, graph: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Unit, `object`: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Unit, `object`: Term, graph: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Term, `object`: Unit, graph: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Term, `object`: Term): this.type = js.native
+    def deleteMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): this.type = js.native
     
     /**
       * Returns a new dataset that contains all quads from the current dataset, not included in the given dataset.
@@ -317,7 +332,7 @@ object mod {
     def has(quad: InQuad): Boolean = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[OutQuad, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[OutQuad, js.Any, Unit]] = js.native
     
     /**
       * Returns a new dataset that is comprised of all quads in the current instance matching the given arguments.
@@ -358,14 +373,17 @@ object mod {
   }
   
   @js.native
-  trait DatasetFactory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */, D /* <: Dataset[OutQuad, InQuad] */] extends DatasetCoreFactory[OutQuad, InQuad, D] {
+  trait DatasetFactory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */, D /* <: Dataset[OutQuad, InQuad] */]
+    extends StObject
+       with DatasetCoreFactory[OutQuad, InQuad, D] {
     
     def dataset(quads: Dataset[InQuad, InQuad]): D = js.native
   }
   
   @js.native
   trait DefaultGraph
-    extends _QuadGraph
+    extends StObject
+       with _QuadGraph
        with _Term {
     
     /**
@@ -388,7 +406,8 @@ object mod {
   
   @js.native
   trait Literal
-    extends _QuadObject
+    extends StObject
+       with _QuadObject
        with _Term {
     
     /**
@@ -445,7 +464,8 @@ object mod {
   
   @js.native
   trait Quad
-    extends BaseQuad
+    extends StObject
+       with BaseQuad
        with _QuadObject
        with _QuadSubject {
     
@@ -478,13 +498,12 @@ object mod {
     var subject_Quad: QuadSubject = js.native
   }
   
-  @js.native
   trait QuadFilterIteratee[Q /* <: BaseQuad */] extends StObject {
     
     /**
       * A callable function that returns `true` if the input quad passes the test this function implements.
       */
-    def test(quad: Q, dataset: Dataset[Q, Q]): Boolean = js.native
+    def test(quad: Q, dataset: Dataset[Q, Q]): Boolean
   }
   object QuadFilterIteratee {
     
@@ -495,7 +514,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class QuadFilterIterateeMutableBuilder[Self <: QuadFilterIteratee[_], Q /* <: BaseQuad */] (val x: Self with QuadFilterIteratee[Q]) extends AnyVal {
+    implicit class QuadFilterIterateeMutableBuilder[Self <: QuadFilterIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadFilterIteratee[Q]) extends AnyVal {
       
       @scala.inline
       def setTest(value: (Q, Dataset[Q, Q]) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
@@ -510,7 +529,6 @@ object mod {
   */
   type QuadGraph = _QuadGraph | NamedNode[String]
   
-  @js.native
   trait QuadMapIteratee[Q /* <: BaseQuad */] extends StObject {
     
     /**
@@ -518,7 +536,7 @@ object mod {
       *
       * The returned quad can be the given quad or a new one.
       */
-    def map(quad: Q, dataset: Dataset[Q, Q]): Q = js.native
+    def map(quad: Q, dataset: Dataset[Q, Q]): Q
   }
   object QuadMapIteratee {
     
@@ -529,7 +547,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class QuadMapIterateeMutableBuilder[Self <: QuadMapIteratee[_], Q /* <: BaseQuad */] (val x: Self with QuadMapIteratee[Q]) extends AnyVal {
+    implicit class QuadMapIterateeMutableBuilder[Self <: QuadMapIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadMapIteratee[Q]) extends AnyVal {
       
       @scala.inline
       def setMap(value: (Q, Dataset[Q, Q]) => Q): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
@@ -547,13 +565,12 @@ object mod {
   
   type QuadPredicate = NamedNode[String] | Variable
   
-  @js.native
   trait QuadReduceIteratee[A, Q /* <: BaseQuad */] extends StObject {
     
     /**
       * A callable function that can be executed on an accumulator and quad and returns a new accumulator.
       */
-    def run(accumulator: A, quad: Q, dataset: Dataset[Q, Q]): A = js.native
+    def run(accumulator: A, quad: Q, dataset: Dataset[Q, Q]): A
   }
   object QuadReduceIteratee {
     
@@ -564,20 +581,19 @@ object mod {
     }
     
     @scala.inline
-    implicit class QuadReduceIterateeMutableBuilder[Self <: QuadReduceIteratee[_, _], A, Q /* <: BaseQuad */] (val x: Self with (QuadReduceIteratee[A, Q])) extends AnyVal {
+    implicit class QuadReduceIterateeMutableBuilder[Self <: QuadReduceIteratee[?, ?], A, Q /* <: BaseQuad */] (val x: Self & (QuadReduceIteratee[A, Q])) extends AnyVal {
       
       @scala.inline
       def setRun(value: (A, Q, Dataset[Q, Q]) => A): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
   }
   
-  @js.native
   trait QuadRunIteratee[Q /* <: BaseQuad */] extends StObject {
     
     /**
       * A callable function that can be executed on a quad.
       */
-    def run(quad: Q, dataset: Dataset[Q, Q]): Unit = js.native
+    def run(quad: Q, dataset: Dataset[Q, Q]): Unit
   }
   object QuadRunIteratee {
     
@@ -588,7 +604,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class QuadRunIterateeMutableBuilder[Self <: QuadRunIteratee[_], Q /* <: BaseQuad */] (val x: Self with QuadRunIteratee[Q]) extends AnyVal {
+    implicit class QuadRunIterateeMutableBuilder[Self <: QuadRunIteratee[?], Q /* <: BaseQuad */] (val x: Self & QuadRunIteratee[Q]) extends AnyVal {
       
       @scala.inline
       def setRun(value: (Q, Dataset[Q, Q]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
@@ -603,7 +619,6 @@ object mod {
   */
   type QuadSubject = _QuadSubject | NamedNode[String]
   
-  @js.native
   trait Sink[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] extends StObject {
     
     /**
@@ -616,7 +631,7 @@ object mod {
       * @param stream The stream that will be consumed.
       * @return The resulting event emitter.
       */
-    def `import`(stream: InputStream): OutputStream = js.native
+    def `import`(stream: InputStream): OutputStream
   }
   object Sink {
     
@@ -628,14 +643,13 @@ object mod {
     }
     
     @scala.inline
-    implicit class SinkMutableBuilder[Self <: Sink[_, _], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self with (Sink[InputStream, OutputStream])) extends AnyVal {
+    implicit class SinkMutableBuilder[Self <: Sink[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (Sink[InputStream, OutputStream])) extends AnyVal {
       
       @scala.inline
       def setImport(value: InputStream => OutputStream): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Source[Q /* <: BaseQuad */] extends StObject {
     
     /**
@@ -652,7 +666,7 @@ object mod {
       predicate: js.UndefOr[Term | RegExp],
       `object`: js.UndefOr[Term | RegExp],
       graph: js.UndefOr[Term | RegExp]
-    ): Stream[Q] = js.native
+    ): Stream[Q]
   }
   object Source {
     
@@ -666,7 +680,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source[_], Q /* <: BaseQuad */] (val x: Self with Source[Q]) extends AnyVal {
+    implicit class SourceMutableBuilder[Self <: Source[?], Q /* <: BaseQuad */] (val x: Self & Source[Q]) extends AnyVal {
       
       @scala.inline
       def setMatch(
@@ -677,7 +691,8 @@ object mod {
   
   @js.native
   trait Store[Q /* <: BaseQuad */]
-    extends Source[Q]
+    extends StObject
+       with Source[Q]
        with Sink[Stream[Q], EventEmitter] {
     
     def deleteGraph(graph: String): EventEmitter = js.native
@@ -748,7 +763,8 @@ object mod {
   
   @js.native
   trait Variable
-    extends _QuadGraph
+    extends StObject
+       with _QuadGraph
        with _QuadObject
        with _QuadSubject
        with _Term {

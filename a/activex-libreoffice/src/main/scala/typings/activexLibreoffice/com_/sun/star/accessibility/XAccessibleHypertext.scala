@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,14 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleHyperlink, XAccessibleText
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleHypertext extends XAccessibleText {
+trait XAccessibleHypertext
+  extends StObject
+     with XAccessibleText {
   
   /**
     * Returns the number of links and link groups contained within this hypertext document.
     * @returns The number of links and link groups within this hypertext document. Returns 0 if there is no link.
     */
-  val HyperLinkCount: Double = js.native
+  val HyperLinkCount: Double
   
   /**
     * Return the specified link.
@@ -36,13 +36,13 @@ trait XAccessibleHypertext extends XAccessibleText {
     * @param nLinkIndex This index specifies the hyperlink to return.
     * @returns If the given index is valid, i.e. lies in the interval from 0 to the number of links minus one, a reference to the specified hyperlink object is
     */
-  def getHyperLink(nLinkIndex: Double): XAccessibleHyperlink = js.native
+  def getHyperLink(nLinkIndex: Double): XAccessibleHyperlink
   
   /**
     * Returns the number of links and link groups contained within this hypertext document.
     * @returns The number of links and link groups within this hypertext document. Returns 0 if there is no link.
     */
-  def getHyperLinkCount(): Double = js.native
+  def getHyperLinkCount(): Double
   
   /**
     * Returns the index of the hyperlink that is associated with this character index.
@@ -52,7 +52,7 @@ trait XAccessibleHypertext extends XAccessibleText {
     * @returns Returns the index of the hyperlink that is associated with this character index, or throws an exception if there is no hyperlink associated with
     * @see XAccessibleText.
     */
-  def getHyperLinkIndex(nCharIndex: Double): Double = js.native
+  def getHyperLinkIndex(nCharIndex: Double): Double
 }
 object XAccessibleHypertext {
   

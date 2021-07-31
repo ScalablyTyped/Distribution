@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ////////////////////
 object socket {
   
-  @js.native
   trait AcceptInfo extends StObject {
     
-    var resultCode: Double = js.native
+    var resultCode: Double
     
-    var socketId: js.UndefOr[Double] = js.native
+    var socketId: js.UndefOr[Double] = js.undefined
   }
   object AcceptInfo {
     
@@ -40,10 +38,9 @@ object socket {
     }
   }
   
-  @js.native
   trait CreateInfo extends StObject {
     
-    var socketId: Double = js.native
+    var socketId: Double
   }
   object CreateInfo {
     
@@ -61,12 +58,11 @@ object socket {
     }
   }
   
-  @js.native
   trait NetworkInterface extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var name: String = js.native
+    var name: String
   }
   object NetworkInterface {
     
@@ -87,12 +83,11 @@ object socket {
     }
   }
   
-  @js.native
   trait ReadInfo extends StObject {
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
-    var resultCode: Double = js.native
+    var resultCode: Double
   }
   object ReadInfo {
     
@@ -113,16 +108,15 @@ object socket {
     }
   }
   
-  @js.native
   trait RecvFromInfo extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
-    var port: Double = js.native
+    var port: Double
     
-    var resultCode: Double = js.native
+    var resultCode: Double
   }
   object RecvFromInfo {
     
@@ -149,20 +143,19 @@ object socket {
     }
   }
   
-  @js.native
   trait SocketInfo extends StObject {
     
-    var connected: Boolean = js.native
+    var connected: Boolean
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var localPort: js.UndefOr[Double] = js.native
+    var localPort: js.UndefOr[Double] = js.undefined
     
-    var peerAddress: js.UndefOr[String] = js.native
+    var peerAddress: js.UndefOr[String] = js.undefined
     
-    var peerPort: js.UndefOr[Double] = js.native
+    var peerPort: js.UndefOr[Double] = js.undefined
     
-    var socketType: String = js.native
+    var socketType: String
   }
   object SocketInfo {
     
@@ -207,10 +200,9 @@ object socket {
     }
   }
   
-  @js.native
   trait WriteInfo extends StObject {
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object WriteInfo {
     

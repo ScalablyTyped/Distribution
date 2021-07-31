@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maintenanceWindowMod {
@@ -84,6 +83,10 @@ object maintenanceWindowMod {
   /* static members */
   object MaintenanceWindow {
     
+    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MaintenanceWindow resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -93,85 +96,79 @@ object maintenanceWindowMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MaintenanceWindow = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MaintenanceWindow = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowState): MaintenanceWindow = js.native
-    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MaintenanceWindowState, opts: CustomResourceOptions): MaintenanceWindow = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowState): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MaintenanceWindowState, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindow.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean]
   }
   
-  @js.native
   trait MaintenanceWindowArgs extends StObject {
     
     /**
       * Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.
       */
-    val allowUnassociatedTargets: js.UndefOr[Input[Boolean]] = js.native
+    val allowUnassociatedTargets: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
       */
-    val cutoff: Input[Double] = js.native
+    val cutoff: Input[Double]
     
     /**
       * A description for the maintenance window.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The duration of the Maintenance Window in hours.
       */
-    val duration: Input[Double] = js.native
+    val duration: Input[Double]
     
     /**
       * Whether the maintenance window is enabled. Default: `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to no longer run the maintenance window.
       */
-    val endDate: js.UndefOr[Input[String]] = js.native
+    val endDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the maintenance window.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html) or rate expression.
       */
-    val schedule: Input[String] = js.native
+    val schedule: Input[String]
     
     /**
       * Timezone for schedule in [Internet Assigned Numbers Authority (IANA) Time Zone Database format](https://www.iana.org/time-zones). For example: `America/Los_Angeles`, `etc/UTC`, or `Asia/Seoul`.
       */
-    val scheduleTimezone: js.UndefOr[Input[String]] = js.native
+    val scheduleTimezone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to begin the maintenance window.
       */
-    val startDate: js.UndefOr[Input[String]] = js.native
+    val startDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object MaintenanceWindowArgs {
     
@@ -243,63 +240,62 @@ object maintenanceWindowMod {
     }
   }
   
-  @js.native
   trait MaintenanceWindowState extends StObject {
     
     /**
       * Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.
       */
-    val allowUnassociatedTargets: js.UndefOr[Input[Boolean]] = js.native
+    val allowUnassociatedTargets: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
       */
-    val cutoff: js.UndefOr[Input[Double]] = js.native
+    val cutoff: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A description for the maintenance window.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The duration of the Maintenance Window in hours.
       */
-    val duration: js.UndefOr[Input[Double]] = js.native
+    val duration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether the maintenance window is enabled. Default: `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to no longer run the maintenance window.
       */
-    val endDate: js.UndefOr[Input[String]] = js.native
+    val endDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the maintenance window.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html) or rate expression.
       */
-    val schedule: js.UndefOr[Input[String]] = js.native
+    val schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Timezone for schedule in [Internet Assigned Numbers Authority (IANA) Time Zone Database format](https://www.iana.org/time-zones). For example: `America/Los_Angeles`, `etc/UTC`, or `Asia/Seoul`.
       */
-    val scheduleTimezone: js.UndefOr[Input[String]] = js.native
+    val scheduleTimezone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to begin the maintenance window.
       */
-    val startDate: js.UndefOr[Input[String]] = js.native
+    val startDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object MaintenanceWindowState {
     

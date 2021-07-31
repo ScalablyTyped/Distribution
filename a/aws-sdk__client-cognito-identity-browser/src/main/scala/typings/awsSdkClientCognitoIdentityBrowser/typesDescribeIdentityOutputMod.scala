@@ -5,39 +5,39 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribeIdentityOutputMod {
   
-  @js.native
-  trait DescribeIdentityOutput extends OutputTypesUnion {
+  trait DescribeIdentityOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Date on which the identity was created.</p>
       */
-    var CreationDate: js.UndefOr[Date] = js.native
+    var CreationDate: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Date on which the identity was last modified.</p>
       */
-    var LastModifiedDate: js.UndefOr[Date] = js.native
+    var LastModifiedDate: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens.</p>
       */
-    var Logins: js.UndefOr[js.Array[String]] = js.native
+    var Logins: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DescribeIdentityOutput {
     

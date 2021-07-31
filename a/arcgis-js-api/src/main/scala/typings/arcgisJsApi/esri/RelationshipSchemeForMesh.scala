@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationshipSchemeForMesh
-  extends Object
+  extends StObject
+     with Object
      with RelationshipScheme {
   
   /**
@@ -17,42 +16,42 @@ trait RelationshipSchemeForMesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var colorsForClassBreaks: js.Array[RelationshipSchemeForMeshColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[RelationshipSchemeForMeshColorsForClassBreaks]
   
   /**
     * The ID uniquely identifying the color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The color of the fill symbol used to indicate features with no data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The opacity of the fill symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForMesh)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object RelationshipSchemeForMesh {
   

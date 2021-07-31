@@ -3,15 +3,13 @@ package typings.storybookComponents.anon
 import typings.storybookComponents.storyMod.StoryError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: js.UndefOr[StoryError] = js.native
+  var error: js.UndefOr[StoryError] = js.undefined
   
-  var `inline`: Boolean = js.native
+  var `inline`: Boolean
 }
 object Error {
   

@@ -10,9 +10,9 @@ Bare minimum fetch polyfill in 500 bytes
 | ------------------ | :-------------: |
 | Full name          | unfetch |
 | Keywords           | fetch, polyfill, xhr, ajax |
-| # releases         | 5 |
-| # dependents       | 247 |
-| # downloads        | 86323908 |
+| # releases         | 3 |
+| # dependents       | 266 |
+| # downloads        | 115784912 |
 | # stars            | 12 |
 
 ## Links

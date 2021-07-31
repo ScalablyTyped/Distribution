@@ -2,21 +2,19 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMerchantId extends StObject {
   
-  var authorization: js.UndefOr[String] = js.native
+  var authorization: js.UndefOr[String] = js.undefined
   
-  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.native
+  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.undefined
   
-  var googleMerchantId: js.UndefOr[String] = js.native
+  var googleMerchantId: js.UndefOr[String] = js.undefined
   
-  var googlePayVersion: js.UndefOr[Double] = js.native
+  var googlePayVersion: js.UndefOr[Double] = js.undefined
   
-  var useDeferredClient: js.UndefOr[Boolean] = js.native
+  var useDeferredClient: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleMerchantId {
   

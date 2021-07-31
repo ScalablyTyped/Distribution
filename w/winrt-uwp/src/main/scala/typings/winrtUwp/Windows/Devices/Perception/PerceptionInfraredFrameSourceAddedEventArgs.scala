@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for infrared frame source added events. */
-@js.native
 trait PerceptionInfraredFrameSourceAddedEventArgs extends StObject {
   
   /** Gets the infrared frame source that was added. */
-  var frameSource: PerceptionInfraredFrameSource = js.native
+  var frameSource: PerceptionInfraredFrameSource
 }
 object PerceptionInfraredFrameSourceAddedEventArgs {
   

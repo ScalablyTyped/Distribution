@@ -4,23 +4,24 @@ import typings.angularCompiler.mod.PropertyWrite
 import typings.angularCore.ngComponentTemplateMod.ResolvedTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyzeTemplateMod {
   
-  @JSImport("@angular/core/schematics/migrations/template-var-assignment/analyze_template", "analyzeResolvedTemplate")
+  @JSImport("@angular/core/schematics/migrations/template-var-assignment/analyze_template", JSImport.Namespace)
   @js.native
-  def analyzeResolvedTemplate(template: ResolvedTemplate): js.Array[TemplateVariableAssignment] | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def analyzeResolvedTemplate(template: ResolvedTemplate): js.Array[TemplateVariableAssignment] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyzeResolvedTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[js.Array[TemplateVariableAssignment] | Null]
+  
   trait TemplateVariableAssignment extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var node: PropertyWrite = js.native
+    var node: PropertyWrite
     
-    var start: Double = js.native
+    var start: Double
   }
   object TemplateVariableAssignment {
     

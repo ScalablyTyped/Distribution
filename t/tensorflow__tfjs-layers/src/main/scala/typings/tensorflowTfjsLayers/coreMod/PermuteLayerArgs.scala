@@ -3,11 +3,11 @@ package typings.tensorflowTfjsLayers.coreMod
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PermuteLayerArgs extends LayerArgs {
+trait PermuteLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * Array of integers. Permutation pattern. Does not include the
@@ -15,7 +15,7 @@ trait PermuteLayerArgs extends LayerArgs {
     * For instance, `[2, 1]` permutes the first and second dimensions
     * of the input.
     */
-  var dims: js.Array[Double] = js.native
+  var dims: js.Array[Double]
 }
 object PermuteLayerArgs {
   

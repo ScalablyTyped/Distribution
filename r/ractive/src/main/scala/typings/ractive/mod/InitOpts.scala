@@ -3,30 +3,30 @@ package typings.ractive.mod
 import typings.ractive.ractiveBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InitOpts[T /* <: Ractive[T] */] extends BaseInitOpts[T] {
+trait InitOpts[T /* <: Ractive[T] */]
+  extends StObject
+     with BaseInitOpts[T] {
   
   /** If true, this instance can occupy the target element with other existing instances rather than cause them to unrender. Cannot be used with enhance. */
   @JSName("append")
-  var append_InitOpts: js.UndefOr[`true`] = js.native
+  var append_InitOpts: js.UndefOr[`true`] = js.undefined
   
   /** Initiial data for this instance. */
-  var data: js.UndefOr[Data | DataFn[T]] = js.native
+  var data: js.UndefOr[Data | DataFn[T]] = js.undefined
   
   /** The target element into which to render this instance. */
-  var el: js.UndefOr[Target] = js.native
+  var el: js.UndefOr[Target] = js.undefined
   
   /** If true, this instance will try to reuse DOM nodes found in its target rather than discarding and replacing them. Cannot be used with append. */
-  var enhance: js.UndefOr[`true`] = js.native
+  var enhance: js.UndefOr[`true`] = js.undefined
   
   /** The target element into which to render this instance. */
-  var target: js.UndefOr[Target] = js.native
+  var target: js.UndefOr[Target] = js.undefined
   
   /** An array of plugins to apply to the instance. */
-  var use: js.UndefOr[js.Array[PluginInstance]] = js.native
+  var use: js.UndefOr[js.Array[PluginInstance]] = js.undefined
 }
 object InitOpts {
   
@@ -37,7 +37,7 @@ object InitOpts {
   }
   
   @scala.inline
-  implicit class InitOptsMutableBuilder[Self <: InitOpts[_], T /* <: Ractive[T] */] (val x: Self with InitOpts[T]) extends AnyVal {
+  implicit class InitOptsMutableBuilder[Self <: InitOpts[?], T /* <: Ractive[T] */] (val x: Self & InitOpts[T]) extends AnyVal {
     
     @scala.inline
     def setAppend(value: `true`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])

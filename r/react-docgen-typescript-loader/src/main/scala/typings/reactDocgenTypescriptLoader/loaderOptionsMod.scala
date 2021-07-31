@@ -10,21 +10,19 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderOptionsMod {
   
-  @js.native
   trait LoaderOptions extends StObject {
     
     /** Specify TypeScript compiler options. Can not be used with tsconfigPath. */
-    var compilerOptions: js.UndefOr[CompilerOptions] = js.native
+    var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
     
     /**
       * If a string is returned, then the component will use that name. Else it will fallback to the default logic of parser.
       */
-    var componentNameResolver: js.UndefOr[ComponentNameResolver] = js.native
+    var componentNameResolver: js.UndefOr[ComponentNameResolver] = js.undefined
     
     /**
       * Specify the docgen collection name to use. All docgen information will
@@ -33,19 +31,19 @@ object loaderOptionsMod {
       * @default STORYBOOK_REACT_CLASSES
       * @see https://github.com/gongreg/react-storybook-addon-docgen
       **/
-    var docgenCollectionName: js.UndefOr[String | Null] = js.native
+    var docgenCollectionName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Specify function to filter props.
       * If either skipPropsWithName or skipPropsWithoutDoc will be specified this will not be used.
       */
-    var propFilter: js.UndefOr[PropFilter] = js.native
+    var propFilter: js.UndefOr[PropFilter] = js.undefined
     
     /**
       * If set to true, defaultValue to props will be string.
       * @see https://github.com/styleguidist/react-docgen-typescript#parseroptions
       * */
-    var savePropValueAsString: js.UndefOr[Boolean] = js.native
+    var savePropValueAsString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically set the component's display name. If you want to set display
@@ -62,33 +60,33 @@ object loaderOptionsMod {
       *
       * @default true
       */
-    var setDisplayName: js.UndefOr[Boolean] = js.native
+    var setDisplayName: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, string enums and unions will be converted to docgen enum format.
       * Useful if you use Storybook and want to generate knobs automatically using [addon-smart-knobs](https://github.com/storybookjs/addon-smart-knobs).
       * @see https://github.com/styleguidist/react-docgen-typescript#parseroptions
       * */
-    var shouldExtractLiteralValuesFromEnum: js.UndefOr[Boolean] = js.native
+    var shouldExtractLiteralValuesFromEnum: js.UndefOr[Boolean] = js.undefined
     
     /** Avoid including docgen information for the prop or props specified. */
-    var skipPropsWithName: js.UndefOr[js.Array[String] | String] = js.native
+    var skipPropsWithName: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** Avoid including docgen information for props without documentation. */
-    var skipPropsWithoutDoc: js.UndefOr[Boolean] = js.native
+    var skipPropsWithoutDoc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the location of the tsconfig.json to use. Can not be used with
       * compilerOptions.
       **/
-    var tsconfigPath: js.UndefOr[String] = js.native
+    var tsconfigPath: js.UndefOr[String] = js.undefined
     
     /**
       * Specifiy the name of the property for docgen info prop type.
       *
       * @default "type"
       */
-    var typePropName: js.UndefOr[String] = js.native
+    var typePropName: js.UndefOr[String] = js.undefined
   }
   object LoaderOptions {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1FaceSegment extends StObject {
   
   /** Video segment where a face was detected. */
-  var segment: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1VideoSegment] = js.native
+  var segment: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1VideoSegment] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1FaceSegment {
   

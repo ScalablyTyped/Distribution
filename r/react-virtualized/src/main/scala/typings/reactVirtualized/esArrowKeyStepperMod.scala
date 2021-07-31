@@ -9,7 +9,6 @@ import typings.reactVirtualized.reactVirtualizedStrings.cells
 import typings.reactVirtualized.reactVirtualizedStrings.edges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esArrowKeyStepperMod {
@@ -39,9 +38,9 @@ object esArrowKeyStepperMod {
     def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ArrowKeyStepperProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -50,25 +49,25 @@ object esArrowKeyStepperMod {
     */
   /* key */ StringDictionary[js.Any] {
     
-    def children(props: ChildProps): ReactNode = js.native
+    def children(props: ChildProps): ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columnCount: Double = js.native
+    var columnCount: Double
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isControlled: js.UndefOr[Boolean] = js.native
+    var isControlled: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[edges | cells] = js.native
+    var mode: js.UndefOr[edges | cells] = js.undefined
     
-    var onScrollToChange: js.UndefOr[js.Function1[/* params */ ScrollIndices, Unit]] = js.native
+    var onScrollToChange: js.UndefOr[js.Function1[/* params */ ScrollIndices, Unit]] = js.undefined
     
-    var rowCount: Double = js.native
+    var rowCount: Double
     
-    var scrollToColumn: js.UndefOr[Double] = js.native
+    var scrollToColumn: js.UndefOr[Double] = js.undefined
     
-    var scrollToRow: js.UndefOr[Double] = js.native
+    var scrollToRow: js.UndefOr[Double] = js.undefined
   }
   object ArrowKeyStepperProps {
     
@@ -134,14 +133,13 @@ object esArrowKeyStepperMod {
     }
   }
   
-  @js.native
   trait ChildProps extends StObject {
     
-    def onSectionRendered(params: RenderedSection): Unit = js.native
+    def onSectionRendered(params: RenderedSection): Unit
     
-    var scrollToColumn: Double = js.native
+    var scrollToColumn: Double
     
-    var scrollToRow: Double = js.native
+    var scrollToRow: Double
   }
   object ChildProps {
     
@@ -169,12 +167,11 @@ object esArrowKeyStepperMod {
   
   type ScrollIndexes = ScrollIndices
   
-  @js.native
   trait ScrollIndices extends StObject {
     
-    var scrollToColumn: Double = js.native
+    var scrollToColumn: Double
     
-    var scrollToRow: Double = js.native
+    var scrollToRow: Double
   }
   object ScrollIndices {
     

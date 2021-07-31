@@ -4,15 +4,13 @@ import typings.jwplayer.jwplayerNumbers.`0`
 import typings.jwplayer.jwplayerNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadyParam extends StObject {
   
-  var setupTime: Double = js.native
+  var setupTime: Double
   
-  var viewable: `0` | `1` = js.native
+  var viewable: `0` | `1`
 }
 object ReadyParam {
   

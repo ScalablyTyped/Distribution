@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * ConfigurationSetName
     */
-  var ConfigurationSetName: _String = js.native
+  var ConfigurationSetName: _String
   
   /**
     * EventDestinationName
     */
-  var EventDestinationName: _String = js.native
+  var EventDestinationName: _String
 }
 object DeleteConfigurationSetEventDestinationRequest {
   

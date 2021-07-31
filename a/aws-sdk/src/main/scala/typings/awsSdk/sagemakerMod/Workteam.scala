@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workteam extends StObject {
   
   /**
     * The date and time that the work team was created (timestamp).
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the work team.
     */
-  var Description: String200 = js.native
+  var Description: String200
   
   /**
     * The date and time that the work team was last updated (timestamp).
     */
-  var LastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A list of MemberDefinition objects that contains objects that identify the workers that make up the work team.  Workforces can be created using Amazon Cognito or your own OIDC Identity Provider (IdP). For private workforces created using Amazon Cognito use CognitoMemberDefinition. For workforces created using your own OIDC identity provider (IdP) use OidcMemberDefinition.
     */
-  var MemberDefinitions: typings.awsSdk.sagemakerMod.MemberDefinitions = js.native
+  var MemberDefinitions: typings.awsSdk.sagemakerMod.MemberDefinitions
   
   /**
     * Configures SNS notifications of available or expiring work items for work teams.
     */
-  var NotificationConfiguration: js.UndefOr[typings.awsSdk.sagemakerMod.NotificationConfiguration] = js.native
+  var NotificationConfiguration: js.UndefOr[typings.awsSdk.sagemakerMod.NotificationConfiguration] = js.undefined
   
   /**
     * The Amazon Marketplace identifier for a vendor's work team.
     */
-  var ProductListingIds: js.UndefOr[ProductListings] = js.native
+  var ProductListingIds: js.UndefOr[ProductListings] = js.undefined
   
   /**
     * The URI of the labeling job's user interface. Workers open this URI to start labeling your data objects.
     */
-  var SubDomain: js.UndefOr[String] = js.native
+  var SubDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the workforce.
     */
-  var WorkforceArn: js.UndefOr[typings.awsSdk.sagemakerMod.WorkforceArn] = js.native
+  var WorkforceArn: js.UndefOr[typings.awsSdk.sagemakerMod.WorkforceArn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that identifies the work team.
     */
-  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn = js.native
+  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
   
   /**
     * The name of the work team.
     */
-  var WorkteamName: typings.awsSdk.sagemakerMod.WorkteamName = js.native
+  var WorkteamName: typings.awsSdk.sagemakerMod.WorkteamName
 }
 object Workteam {
   

@@ -2,15 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph2dShadedOption extends StObject {
   
-  var groupid: js.UndefOr[IdType] = js.native
+  var groupid: js.UndefOr[IdType] = js.undefined
   
-  var orientation: js.UndefOr[TopBottomEnumType] = js.native
+  var orientation: js.UndefOr[TopBottomEnumType] = js.undefined
 }
 object Graph2dShadedOption {
   

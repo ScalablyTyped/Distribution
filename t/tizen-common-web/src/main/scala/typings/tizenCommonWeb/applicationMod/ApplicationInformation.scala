@@ -4,10 +4,8 @@ import typings.std.Date
 import typings.tizenCommonWeb.packageMod.PackageId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationInformation extends StObject {
   
   /**
@@ -15,42 +13,42 @@ trait ApplicationInformation extends StObject {
     *
     * @since 2.0
     */
-  val categories: js.Array[String] = js.native
+  val categories: js.Array[String]
   
   /**
     * An attribute to store the icon path of an application.
     */
-  val iconPath: String = js.native
+  val iconPath: String
   
   /**
     * An attribute to store the identifier of an application for application management.
     */
-  val id: ApplicationId = js.native
+  val id: ApplicationId
   
   /**
     * An attribute to store the application install/update time.
     *
     * @since 2.0
     */
-  val installDate: Date = js.native
+  val installDate: Date
   
   /**
     * An attribute to store the name of an application.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * An attribute to store the package ID of an application.
     *
     * @since 2.1
     */
-  val packageId: PackageId = js.native
+  val packageId: PackageId
   
   /**
     * An attribute that determines whether the application information should
     * be shown (such as in menus).
     */
-  val show: Boolean = js.native
+  val show: Boolean
   
   /**
     * An attribute to store the application size (installed space).
@@ -62,12 +60,12 @@ trait ApplicationInformation extends StObject {
     *
     * @throw WebAPIException SecurityError
     */
-  val size: Double = js.native
+  val size: Double
   
   /**
     * An attribute to store the version of an application.
     */
-  val version: String = js.native
+  val version: String
 }
 object ApplicationInformation {
   

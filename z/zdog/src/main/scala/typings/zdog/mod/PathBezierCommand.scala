@@ -2,14 +2,14 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathBezierCommand extends PathCommand {
+trait PathBezierCommand
+  extends StObject
+     with PathCommand {
   
   /** @see {@link https://zzz.dog/shapes#shape-bezier Zdog Shape API} */
-  var bezier: js.Tuple3[VectorOptions, VectorOptions, VectorOptions] = js.native
+  var bezier: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]
 }
 object PathBezierCommand {
   

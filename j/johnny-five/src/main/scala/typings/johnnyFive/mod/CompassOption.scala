@@ -2,15 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompassOption extends StObject {
   
-  var controller: String = js.native
+  var controller: String
   
-  var gauss: js.UndefOr[Double] = js.native
+  var gauss: js.UndefOr[Double] = js.undefined
 }
 object CompassOption {
   

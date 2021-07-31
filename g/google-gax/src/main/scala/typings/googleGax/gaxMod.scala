@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.bundleExecutorMod.BundleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaxMod {
+  
+  @JSImport("google-gax/build/src/gax", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("google-gax/build/src/gax", "CallSettings")
   @js.native
@@ -78,46 +81,40 @@ object gaxMod {
     var retryCodes: js.Array[Double] = js.native
   }
   
-  @JSImport("google-gax/build/src/gax", "constructSettings")
-  @js.native
+  @scala.inline
   def constructSettings(
     serviceName: String,
     clientConfig: ClientConfig,
     configOverrides: ClientConfig,
     retryNames: js.Object
-  ): js.Any = js.native
-  @JSImport("google-gax/build/src/gax", "constructSettings")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def constructSettings(
     serviceName: String,
     clientConfig: ClientConfig,
     configOverrides: ClientConfig,
     retryNames: js.Object,
     otherArgs: js.Object
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
-  def createBackoffSettings(initialRetryDelayMillis: Double, retryDelayMultiplier: Double, maxRetryDelayMillis: Double): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  @scala.inline
+  def createBackoffSettings(initialRetryDelayMillis: Double, retryDelayMultiplier: Double, maxRetryDelayMillis: Double): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
     maxRetryDelayMillis: Double,
     initialRpcTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
     maxRetryDelayMillis: Double,
     initialRpcTimeoutMillis: Double,
     rpcTimeoutMultiplier: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -125,9 +122,8 @@ object gaxMod {
     initialRpcTimeoutMillis: Double,
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -136,9 +132,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Double,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -147,9 +142,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Null,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -157,9 +151,8 @@ object gaxMod {
     initialRpcTimeoutMillis: Double,
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -168,9 +161,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Double,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -179,18 +171,16 @@ object gaxMod {
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Null,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
     maxRetryDelayMillis: Double,
     initialRpcTimeoutMillis: Null,
     rpcTimeoutMultiplier: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -198,9 +188,8 @@ object gaxMod {
     initialRpcTimeoutMillis: Null,
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -209,9 +198,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Double,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -220,9 +208,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Null,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -230,9 +217,8 @@ object gaxMod {
     initialRpcTimeoutMillis: Null,
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -241,9 +227,8 @@ object gaxMod {
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Double,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
-  @JSImport("google-gax/build/src/gax", "createBackoffSettings")
-  @js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
+  @scala.inline
   def createBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -252,18 +237,15 @@ object gaxMod {
     rpcTimeoutMultiplier: Null,
     maxRpcTimeoutMillis: Null,
     totalTimeoutMillis: Double
-  ): BackoffSettings = js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
   
-  @JSImport("google-gax/build/src/gax", "createBundleOptions")
-  @js.native
-  def createBundleOptions(options: BundlingConfig): BundleOptions = js.native
+  @scala.inline
+  def createBundleOptions(options: BundlingConfig): BundleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleOptions")(options.asInstanceOf[js.Any]).asInstanceOf[BundleOptions]
   
-  @JSImport("google-gax/build/src/gax", "createDefaultBackoffSettings")
-  @js.native
-  def createDefaultBackoffSettings(): BackoffSettings = js.native
+  @scala.inline
+  def createDefaultBackoffSettings(): BackoffSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultBackoffSettings")().asInstanceOf[BackoffSettings]
   
-  @JSImport("google-gax/build/src/gax", "createMaxRetriesBackoffSettings")
-  @js.native
+  @scala.inline
   def createMaxRetriesBackoffSettings(
     initialRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
@@ -272,30 +254,28 @@ object gaxMod {
     rpcTimeoutMultiplier: Double,
     maxRpcTimeoutMillis: Double,
     maxRetries: Double
-  ): BackoffSettings = js.native
+  ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaxRetriesBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
   
-  @JSImport("google-gax/build/src/gax", "createRetryOptions")
-  @js.native
-  def createRetryOptions(retryCodes: js.Array[Double], backoffSettings: BackoffSettings): RetryOptions = js.native
+  @scala.inline
+  def createRetryOptions(retryCodes: js.Array[Double], backoffSettings: BackoffSettings): RetryOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createRetryOptions")(retryCodes.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[RetryOptions]
   
-  @js.native
   trait BackoffSettings extends StObject {
     
-    var initialRetryDelayMillis: Double = js.native
+    var initialRetryDelayMillis: Double
     
-    var initialRpcTimeoutMillis: js.UndefOr[Double | Null] = js.native
+    var initialRpcTimeoutMillis: js.UndefOr[Double | Null] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var maxRetryDelayMillis: Double = js.native
+    var maxRetryDelayMillis: Double
     
-    var maxRpcTimeoutMillis: js.UndefOr[Double | Null] = js.native
+    var maxRpcTimeoutMillis: js.UndefOr[Double | Null] = js.undefined
     
-    var retryDelayMultiplier: Double = js.native
+    var retryDelayMultiplier: Double
     
-    var rpcTimeoutMultiplier: js.UndefOr[Double | Null] = js.native
+    var rpcTimeoutMultiplier: js.UndefOr[Double | Null] = js.undefined
     
-    var totalTimeoutMillis: js.UndefOr[Double | Null] = js.native
+    var totalTimeoutMillis: js.UndefOr[Double | Null] = js.undefined
   }
   object BackoffSettings {
     
@@ -361,18 +341,17 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait BundlingConfig extends StObject {
     
-    var delay_threshold_millis: js.UndefOr[Double] = js.native
+    var delay_threshold_millis: js.UndefOr[Double] = js.undefined
     
-    var element_count_limit: Double = js.native
+    var element_count_limit: Double
     
-    var element_count_threshold: Double = js.native
+    var element_count_threshold: Double
     
-    var request_byte_limit: js.UndefOr[Double] = js.native
+    var request_byte_limit: js.UndefOr[Double] = js.undefined
     
-    var request_byte_threshold: js.UndefOr[Double] = js.native
+    var request_byte_threshold: js.UndefOr[Double] = js.undefined
   }
   object BundlingConfig {
     
@@ -411,34 +390,33 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait CallOptions extends StObject {
     
-    var apiName: js.UndefOr[String] = js.native
+    var apiName: js.UndefOr[String] = js.undefined
     
-    var autoPaginate: js.UndefOr[Boolean] = js.native
+    var autoPaginate: js.UndefOr[Boolean] = js.undefined
     
-    var bundleOptions: js.UndefOr[BundleOptions | Null] = js.native
+    var bundleOptions: js.UndefOr[BundleOptions | Null] = js.undefined
     
-    var isBundling: js.UndefOr[Boolean] = js.native
+    var isBundling: js.UndefOr[Boolean] = js.undefined
     
-    var longrunning: js.UndefOr[BackoffSettings] = js.native
+    var longrunning: js.UndefOr[BackoffSettings] = js.undefined
     
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var otherArgs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var otherArgs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var pageToken: js.UndefOr[String] = js.native
+    var pageToken: js.UndefOr[String] = js.undefined
     
-    var retry: js.UndefOr[RetryOptions | Null] = js.native
+    var retry: js.UndefOr[RetryOptions | Null] = js.undefined
     
-    var retryRequestOptions: js.UndefOr[RetryRequestOptions] = js.native
+    var retryRequestOptions: js.UndefOr[RetryRequestOptions] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object CallOptions {
     
@@ -537,10 +515,9 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait ClientConfig extends StObject {
     
-    var interfaces: js.UndefOr[StringDictionary[ServiceConfig]] = js.native
+    var interfaces: js.UndefOr[StringDictionary[ServiceConfig]] = js.undefined
   }
   object ClientConfig {
     
@@ -561,16 +538,15 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait MethodConfig extends StObject {
     
-    var bundling: js.UndefOr[BundlingConfig | Null] = js.native
+    var bundling: js.UndefOr[BundlingConfig | Null] = js.undefined
     
-    var retry_codes_name: js.UndefOr[String] = js.native
+    var retry_codes_name: js.UndefOr[String] = js.undefined
     
-    var retry_params_name: js.UndefOr[String] = js.native
+    var retry_params_name: js.UndefOr[String] = js.undefined
     
-    var timeout_millis: js.UndefOr[Double] = js.native
+    var timeout_millis: js.UndefOr[Double] = js.undefined
   }
   object MethodConfig {
     
@@ -612,22 +588,21 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait RetryParamsConfig extends StObject {
     
-    var initial_retry_delay_millis: Double = js.native
+    var initial_retry_delay_millis: Double
     
-    var initial_rpc_timeout_millis: Double = js.native
+    var initial_rpc_timeout_millis: Double
     
-    var max_retry_delay_millis: Double = js.native
+    var max_retry_delay_millis: Double
     
-    var max_rpc_timeout_millis: Double = js.native
+    var max_rpc_timeout_millis: Double
     
-    var retry_delay_multiplier: Double = js.native
+    var retry_delay_multiplier: Double
     
-    var rpc_timeout_multiplier: Double = js.native
+    var rpc_timeout_multiplier: Double
     
-    var total_timeout_millis: Double = js.native
+    var total_timeout_millis: Double
   }
   object RetryParamsConfig {
     
@@ -671,20 +646,19 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait RetryRequestOptions extends StObject {
     
-    var currentRetryAttempt: js.UndefOr[Double] = js.native
+    var currentRetryAttempt: js.UndefOr[Double] = js.undefined
     
-    var noResponseRetries: js.UndefOr[Double] = js.native
+    var noResponseRetries: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var shouldRetryFn: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldRetryFn: js.UndefOr[js.Function0[Boolean]] = js.undefined
   }
   object RetryRequestOptions {
     
@@ -735,14 +709,13 @@ object gaxMod {
     }
   }
   
-  @js.native
   trait ServiceConfig extends StObject {
     
-    var methods: StringDictionary[MethodConfig | Null] = js.native
+    var methods: StringDictionary[MethodConfig | Null]
     
-    var retry_codes: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var retry_codes: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var retry_params: js.UndefOr[StringDictionary[RetryParamsConfig]] = js.native
+    var retry_params: js.UndefOr[StringDictionary[RetryParamsConfig]] = js.undefined
   }
   object ServiceConfig {
     

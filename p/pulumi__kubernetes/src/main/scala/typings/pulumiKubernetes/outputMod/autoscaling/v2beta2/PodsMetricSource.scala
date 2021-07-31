@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.
   */
-@js.native
 trait PodsMetricSource extends StObject {
   
   /**
     * metric identifies the target metric by name and selector
     */
-  var metric: MetricIdentifier = js.native
+  var metric: MetricIdentifier
   
   /**
     * target specifies the target value for the given metric
     */
-  var target: MetricTarget = js.native
+  var target: MetricTarget
 }
 object PodsMetricSource {
   

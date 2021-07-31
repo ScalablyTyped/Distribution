@@ -6,7 +6,6 @@ import typings.googleAppsScript.GoogleAppsScript.Lock.Lock
 import typings.googleAppsScript.GoogleAppsScript.Properties.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GoogleAppsScriptOAuth2 {
@@ -21,13 +20,17 @@ object GoogleAppsScriptOAuth2 {
       * Form URL-encoded, for example `access_token=...`.
       */
     @js.native
-    sealed trait FORM_URL_ENCODED extends TokenFormat
+    sealed trait FORM_URL_ENCODED
+      extends StObject
+         with TokenFormat
     
     /**
       * JSON format, for example `{"access_token": "..."}`.
       */
     @js.native
-    sealed trait JSON extends TokenFormat
+    sealed trait JSON
+      extends StObject
+         with TokenFormat
   }
   
   @js.native
@@ -297,18 +300,17 @@ object GoogleAppsScriptOAuth2 {
     def setValue(key: String, value: js.Any): Unit = js.native
   }
   
-  @js.native
   trait TokenPayload extends StObject {
     
-    var client_id: String = js.native
+    var client_id: String
     
-    var client_secret: String = js.native
+    var client_secret: String
     
-    var code: String = js.native
+    var code: String
     
-    var grant_type: String = js.native
+    var grant_type: String
     
-    var redirect_uri: String = js.native
+    var redirect_uri: String
   }
   object TokenPayload {
     

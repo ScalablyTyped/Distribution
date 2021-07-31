@@ -8,7 +8,6 @@ import typings.yaml.utilMod.Type.MAP
 import typings.yaml.utilMod.Type.SEQ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Collection")
@@ -22,7 +21,7 @@ class Collection () extends Node {
     */
   def add(value: js.Any): Unit = js.native
   
-  def addIn(path: Iterable[_], value: js.Any): Unit = js.native
+  def addIn(path: Iterable[js.Any], value: js.Any): Unit = js.native
   
   /**
     * Removes a value from the collection.
@@ -30,7 +29,7 @@ class Collection () extends Node {
     */
   def delete(key: js.Any): Boolean = js.native
   
-  def deleteIn(path: Iterable[_]): Boolean = js.native
+  def deleteIn(path: Iterable[js.Any]): Boolean = js.native
   
   /**
     * Returns item at `key`, or `undefined` if not found. By default unwraps
@@ -40,17 +39,17 @@ class Collection () extends Node {
   def get(key: js.Any): js.Any = js.native
   def get(key: js.Any, keepScalar: Boolean): js.Any = js.native
   
-  def getIn(path: Iterable[_]): js.Any = js.native
-  def getIn(path: Iterable[_], keepScalar: Boolean): js.Any = js.native
+  def getIn(path: Iterable[js.Any]): js.Any = js.native
+  def getIn(path: Iterable[js.Any], keepScalar: Boolean): js.Any = js.native
   
   /**
     * Checks if the collection includes a value with the key `key`.
     */
   def has(key: js.Any): Boolean = js.native
   
-  def hasIn(path: Iterable[_]): Boolean = js.native
+  def hasIn(path: Iterable[js.Any]): Boolean = js.native
   
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any] = js.native
   
   var schema: js.UndefOr[Schema] = js.native
   
@@ -60,7 +59,7 @@ class Collection () extends Node {
     */
   def set(key: js.Any, value: js.Any): Unit = js.native
   
-  def setIn(path: Iterable[_], value: js.Any): Unit = js.native
+  def setIn(path: Iterable[js.Any], value: js.Any): Unit = js.native
   
   @JSName("type")
   var type_Collection: js.UndefOr[MAP | FLOW_MAP | SEQ | FLOW_SEQ | DOCUMENT] = js.native

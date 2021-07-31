@@ -4,15 +4,13 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseResponse extends StObject {
   
-  var _embedded: js.UndefOr[Record[String, js.Array[_]]] = js.native
+  var _embedded: js.UndefOr[Record[String, js.Array[js.Any]]] = js.undefined
   
-  var _links: Record[String, js.Array[Dictk]] = js.native
+  var _links: Record[String, js.Array[Dictk]]
 }
 object BaseResponse {
   
@@ -26,7 +24,7 @@ object BaseResponse {
   implicit class BaseResponseMutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def set_embedded(value: Record[String, js.Array[_]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)

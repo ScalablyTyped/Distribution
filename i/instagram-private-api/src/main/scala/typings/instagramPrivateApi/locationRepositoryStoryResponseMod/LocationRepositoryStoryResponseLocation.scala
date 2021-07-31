@@ -2,37 +2,35 @@ package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRepositoryStoryResponseLocation extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var external_source: js.UndefOr[String] = js.native
+  var external_source: js.UndefOr[String] = js.undefined
   
-  var facebook_places_id: js.UndefOr[Double] = js.native
+  var facebook_places_id: js.UndefOr[Double] = js.undefined
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: String | Double = js.native
+  var lng: String | Double
   
-  var location_dict: js.UndefOr[LocationRepositoryStoryResponseLocationDict] = js.native
+  var location_dict: js.UndefOr[LocationRepositoryStoryResponseLocationDict] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_url: js.UndefOr[String] = js.native
+  var profile_pic_url: js.UndefOr[String] = js.undefined
   
-  var profile_pic_username: js.UndefOr[String] = js.native
+  var profile_pic_username: js.UndefOr[String] = js.undefined
   
-  var short_name: String = js.native
+  var short_name: String
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object LocationRepositoryStoryResponseLocation {
   

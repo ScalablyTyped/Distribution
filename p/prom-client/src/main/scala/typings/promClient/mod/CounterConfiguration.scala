@@ -2,21 +2,19 @@ package typings.promClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterConfiguration[T /* <: String */] extends StObject {
   
-  var aggregator: js.UndefOr[Aggregator] = js.native
+  var aggregator: js.UndefOr[Aggregator] = js.undefined
   
-  var help: String = js.native
+  var help: String
   
-  var labelNames: js.UndefOr[js.Array[T]] = js.native
+  var labelNames: js.UndefOr[js.Array[T]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var registers: js.UndefOr[js.Array[Registry]] = js.native
+  var registers: js.UndefOr[js.Array[Registry]] = js.undefined
 }
 object CounterConfiguration {
   
@@ -27,7 +25,7 @@ object CounterConfiguration {
   }
   
   @scala.inline
-  implicit class CounterConfigurationMutableBuilder[Self <: CounterConfiguration[_], T /* <: String */] (val x: Self with CounterConfiguration[T]) extends AnyVal {
+  implicit class CounterConfigurationMutableBuilder[Self <: CounterConfiguration[?], T /* <: String */] (val x: Self & CounterConfiguration[T]) extends AnyVal {
     
     @scala.inline
     def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])

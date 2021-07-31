@@ -6,22 +6,20 @@ import typings.superagent.superagentStrings.basic
 import typings.superagent.superagentStrings.bearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `type`: bearer = js.native
+    var `type`: bearer
   }
   object `0` {
     
     @scala.inline
-    def apply(`type`: bearer): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("bearer")
       __obj.asInstanceOf[`0`]
     }
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object ContentType {
     
@@ -65,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Deadline extends StObject {
     
-    var deadline: js.UndefOr[Double] = js.native
+    var deadline: js.UndefOr[Double] = js.undefined
     
-    var response: js.UndefOr[Double] = js.native
+    var response: js.UndefOr[Double] = js.undefined
   }
   object Deadline {
     
@@ -97,12 +93,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Passphrase extends StObject {
     
-    var passphrase: String = js.native
+    var passphrase: String
     
-    var pfx: String | Buffer = js.native
+    var pfx: String | Buffer
   }
   object Passphrase {
     
@@ -123,10 +118,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: basic | auto = js.native
+    var `type`: basic | auto
   }
   object Type {
     

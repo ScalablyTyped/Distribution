@@ -2,15 +2,13 @@ package typings.elasticlunr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Tf extends StObject {
     
-    var tf: js.UndefOr[Double] = js.native
+    var tf: js.UndefOr[Double] = js.undefined
   }
   object Tf {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDescribeMergeConflictsOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
     */
-  var baseCommitId: js.UndefOr[ObjectId] = js.native
+  var baseCommitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * A list of conflicts for each file, including the conflict metadata and the hunks of the differences between the files.
     */
-  var conflicts: Conflicts = js.native
+  var conflicts: Conflicts
   
   /**
     * The commit ID of the destination commit specifier that was used in the merge evaluation.
     */
-  var destinationCommitId: ObjectId = js.native
+  var destinationCommitId: ObjectId
   
   /**
     * A list of any errors returned while describing the merge conflicts for each file.
     */
-  var errors: js.UndefOr[BatchDescribeMergeConflictsErrors] = js.native
+  var errors: js.UndefOr[BatchDescribeMergeConflictsErrors] = js.undefined
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The commit ID of the source commit specifier that was used in the merge evaluation.
     */
-  var sourceCommitId: ObjectId = js.native
+  var sourceCommitId: ObjectId
 }
 object BatchDescribeMergeConflictsOutput {
   

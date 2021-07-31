@@ -2,7 +2,6 @@ package typings.akuminaCore.mod.Digispace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.PageContext")
@@ -22,9 +21,8 @@ object PageContext {
   def EditMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EditMode")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.PageContext.MapPageUrl")
-  @js.native
-  def MapPageUrl(pageUrl: String): String = js.native
+  @scala.inline
+  def MapPageUrl(pageUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MapPageUrl")(pageUrl.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.PageContext.PageId")

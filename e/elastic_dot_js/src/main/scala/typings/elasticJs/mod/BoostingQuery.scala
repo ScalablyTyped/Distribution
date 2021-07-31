@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "BoostingQuery")
 @js.native
-class BoostingQuery protected () extends Query {
+class BoostingQuery protected ()
+  extends StObject
+     with Query {
   /*
     Constructs a query that can demote search results.  A negative boost.
     */

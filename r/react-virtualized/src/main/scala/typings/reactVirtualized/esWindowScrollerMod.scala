@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esWindowScrollerMod {
@@ -68,9 +67,9 @@ object esWindowScrollerMod {
     var width: Double = js.native
   }
   
-  @js.native
   trait WindowScrollerProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -84,27 +83,27 @@ object esWindowScrollerMod {
       * This function should implement the following signature:
       * ({ height, isScrolling, scrollLeft, scrollTop, width, onChildScroll }) => PropTypes.element
       */
-    def children(params: WindowScrollerChildProps): ReactNode = js.native
+    def children(params: WindowScrollerChildProps): ReactNode
     
     /** Callback to be invoked on-resize: ({ height, width }) */
-    var onResize: js.UndefOr[js.Function1[/* params */ Height, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* params */ Height, Unit]] = js.undefined
     
     /** Callback to be invoked on-scroll: ({ scrollLeft, scrollTop }) */
-    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollLeft, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollLeft, Unit]] = js.undefined
     
     /** Element to attach scroll event listeners. Defaults to window. */
-    var scrollElement: js.UndefOr[(Window with (/* globalThis */ js.Any)) | Element] = js.native
+    var scrollElement: js.UndefOr[(Window & (/* globalThis */ js.Any)) | Element] = js.undefined
     
     /**
       * Wait this amount of time after the last scroll event before resetting child `pointer-events`.
       */
-    var scrollingResetTimeInterval: js.UndefOr[Double] = js.native
+    var scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined
     
     /** Height used for server-side rendering */
-    var serverHeight: js.UndefOr[Double] = js.native
+    var serverHeight: js.UndefOr[Double] = js.undefined
     
     /** Width used for server-side rendering */
-    var serverWidth: js.UndefOr[Double] = js.native
+    var serverWidth: js.UndefOr[Double] = js.undefined
   }
   object WindowScrollerProps {
     
@@ -133,7 +132,7 @@ object esWindowScrollerMod {
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setScrollElement(value: (Window with (/* globalThis */ js.Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
+      def setScrollElement(value: (Window & (/* globalThis */ js.Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
@@ -158,18 +157,17 @@ object esWindowScrollerMod {
     }
   }
   
-  @js.native
   trait WindowScrollerState extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object WindowScrollerState {
     

@@ -3,13 +3,11 @@ package typings.aliApp.anon
 import typings.aliApp.my.ContactsDic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactsDicArray extends StObject {
   
-  var contactsDicArray: js.Array[ContactsDic] = js.native
+  var contactsDicArray: js.Array[ContactsDic]
 }
 object ContactsDicArray {
   

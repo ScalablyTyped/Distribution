@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelMembershipRequest extends StObject {
   
   /**
     * The ARN of the channel to which you're adding users.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The ARN of the member you want to add to the channel.
     */
-  var MemberArn: ChimeArn = js.native
+  var MemberArn: ChimeArn
   
   /**
     * The membership type of a user, DEFAULT or HIDDEN. Default members are always returned as part of ListChannelMemberships. Hidden members are only returned if the type filter in ListChannelMemberships equals HIDDEN. Otherwise hidden members are not returned. This is only supported by moderators.
     */
-  var Type: ChannelMembershipType = js.native
+  var Type: ChannelMembershipType
 }
 object CreateChannelMembershipRequest {
   

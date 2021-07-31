@@ -10,9 +10,9 @@ Javascript library for Amplitude Analytics
 | ------------------ | :-------------: |
 | Full name          | amplitude-js |
 | Keywords           | analytics, amplitude |
-| # releases         | 43 |
-| # dependents       | 29 |
-| # downloads        | 3794207 |
+| # releases         | 44 |
+| # dependents       | 35 |
+| # downloads        | 5397467 |
 | # stars            | 0 |
 
 ## Links

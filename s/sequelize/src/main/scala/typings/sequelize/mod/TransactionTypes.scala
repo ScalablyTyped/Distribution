@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Default to `DEFERRED` but you can override the default isolation level by passing
   * `options.transactionType` in `new Sequelize`.
   */
-@js.native
 trait TransactionTypes extends StObject {
   
-  var DEFERRED: TransactionTypeDeferred = js.native
+  var DEFERRED: TransactionTypeDeferred
   
   // 'IMMEDIATE'
-  var EXCLUSIVE: TransactionTypeExclusive = js.native
+  var EXCLUSIVE: TransactionTypeExclusive
   
   // 'DEFERRED'
-  var IMMEDIATE: TransactionTypeImmediate = js.native
+  var IMMEDIATE: TransactionTypeImmediate
 }
 object TransactionTypes {
   

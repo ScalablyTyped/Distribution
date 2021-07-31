@@ -5,14 +5,15 @@ import typings.resourceLoader.resourceLoaderBooleans.`false`
 import typings.resourceLoader.resourceLoaderBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mini-signals", JSImport.Default)
   @js.native
-  class default[CbType] () extends MiniSignal[CbType]
+  class default[CbType] ()
+    extends StObject
+       with MiniSignal[CbType]
   
   @js.native
   trait MiniSignal[CbType] extends StObject {
@@ -39,10 +40,9 @@ object mod {
   }
   object MiniSignal {
     
-    @js.native
     trait MiniSignalBinding extends StObject {
       
-      def detach(): Boolean = js.native
+      def detach(): Boolean
     }
     object MiniSignalBinding {
       

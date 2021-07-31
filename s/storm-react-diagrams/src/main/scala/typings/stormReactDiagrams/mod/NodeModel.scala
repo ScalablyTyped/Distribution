@@ -2,7 +2,6 @@ package typings.stormReactDiagrams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "NodeModel")
@@ -10,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NodeModel ()
   extends typings.stormReactDiagrams.nodeModelMod.NodeModel {
   def this(nodeType: String) = this()
-  def this(nodeType: js.UndefOr[scala.Nothing], id: String) = this()
   def this(nodeType: String, id: String) = this()
+  def this(nodeType: Unit, id: String) = this()
 }

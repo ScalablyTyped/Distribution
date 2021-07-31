@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLanguageModelsRequest extends StObject {
   
   /**
     * The maximum number of language models to return in the response. If there are fewer results in the list, the response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
     * When specified, the custom language model names returned contain the substring you've specified.
     */
-  var NameContains: js.UndefOr[ModelName] = js.native
+  var NameContains: js.UndefOr[ModelName] = js.undefined
   
   /**
     * When included, fetches the next set of jobs if the result of the previous request was truncated.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * When specified, returns only custom language models with the specified status. Language models are ordered by creation date, with the newest models first. If you don't specify a status, Amazon Transcribe returns all custom language models ordered by date.
     */
-  var StatusEquals: js.UndefOr[ModelStatus] = js.native
+  var StatusEquals: js.UndefOr[ModelStatus] = js.undefined
 }
 object ListLanguageModelsRequest {
   

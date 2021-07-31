@@ -5,34 +5,34 @@ import typings.awsSdkClientKmsNode.typesAliasListEntryMod.UnmarshalledAliasListE
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListAliasesOutputMod {
   
-  @js.native
-  trait ListAliasesOutput extends OutputTypesUnion {
+  trait ListAliasesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of aliases.</p>
       */
-    var Aliases: js.UndefOr[js.Array[UnmarshalledAliasListEntry]] = js.native
+    var Aliases: js.UndefOr[js.Array[UnmarshalledAliasListEntry]] = js.undefined
     
     /**
       * <p>When <code>Truncated</code> is true, this element is present and contains the value to use for the <code>Marker</code> parameter in a subsequent request.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A flag that indicates whether there are more items in the list. When this value is true, the list in this response is truncated. To get more items, pass the value of the <code>NextMarker</code> element in this response to the <code>Marker</code> parameter in a subsequent request.</p>
       */
-    var Truncated: js.UndefOr[Boolean] = js.native
+    var Truncated: js.UndefOr[Boolean] = js.undefined
   }
   object ListAliasesOutput {
     

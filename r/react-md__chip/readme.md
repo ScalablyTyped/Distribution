@@ -10,9 +10,9 @@ Create a compact actionable element that can be used to represent an input, attr
 | ------------------ | :-------------: |
 | Full name          | @react-md/chip |
 | Keywords           | accessibility, a11y, react-md, material design, react, chip, component, components |
-| # releases         | 26 |
+| # releases         | 33 |
 | # dependents       | 1 |
-| # downloads        | 5584 |
+| # downloads        | 17111 |
 | # stars            | 0 |
 
 ## Links

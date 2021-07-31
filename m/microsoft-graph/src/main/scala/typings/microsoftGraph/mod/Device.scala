@@ -2,113 +2,113 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Device extends DirectoryObject {
+trait Device
+  extends StObject
+     with DirectoryObject {
   
   // true if the account is enabled; otherwise, false. Required.
-  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // For internal use only. Not nullable.
-  var alternativeSecurityIds: js.UndefOr[js.Array[AlternativeSecurityId]] = js.native
+  var alternativeSecurityIds: js.UndefOr[js.Array[AlternativeSecurityId]] = js.undefined
   
   /**
     * The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     */
-  var approximateLastSignInDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var approximateLastSignInDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information
     * using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'. Read-only.
     */
-  var complianceExpirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var complianceExpirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique identifier set by Azure Device Registration Service at the time of registration.
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only. Set to null.
-  var deviceMetadata: js.UndefOr[NullableOption[String]] = js.native
+  var deviceMetadata: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only.
-  var deviceVersion: js.UndefOr[NullableOption[Double]] = js.native
+  var deviceVersion: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The display name for the device. Required.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of open extensions defined for the device. Read-only. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   /**
     * true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be
     * updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
     */
-  var isCompliant: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isCompliant: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by
     * Intune for any device OS type or by an approved MDM app for Windows OS devices.
     */
-  var isManaged: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isManaged: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Application identifier used to register device into MDM. Read-only. Supports $filter.
-  var mdmAppId: js.UndefOr[NullableOption[String]] = js.native
+  var mdmAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and
     * time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look
     * like this: '2014-01-01T00:00:00Z' Read-only.
     */
-  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * true if this object is synced from an on-premises directory; false if this object was originally synced from an
     * on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory
     * (default). Read-only.
     */
-  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The type of operating system on the device. Required.
-  var operatingSystem: js.UndefOr[NullableOption[String]] = js.native
+  var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The version of the operating system on the device. Required.
-  var operatingSystemVersion: js.UndefOr[NullableOption[String]] = js.native
+  var operatingSystemVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only. Not nullable.
-  var physicalIds: js.UndefOr[js.Array[String]] = js.native
+  var physicalIds: js.UndefOr[js.Array[String]] = js.undefined
   
   // The profile type of the device. Possible values:RegisteredDevice (default)SecureVMPrinterSharedIoT
-  var profileType: js.UndefOr[NullableOption[String]] = js.native
+  var profileType: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The user that cloud joined the device or registered their personal device. The registered owner is set at the time of
     * registration. Currently, there can be only one owner. Read-only. Nullable.
     */
-  var registeredOwners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var registeredOwners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Collection of registered users of the device. For cloud joined devices and registered personal devices, registered
     * users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
     */
-  var registeredUsers: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var registeredUsers: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // List of labels applied to the device by the system.
-  var systemLabels: js.UndefOr[js.Array[String]] = js.native
+  var systemLabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Type of trust for the joined device. Read-only. Possible values: Workplace - indicates bring your own personal
     * devicesAzureAd - Cloud only joined devicesServerAd - on-premises domain joined devices joined to Azure AD. For more
     * details, see Introduction to device management in Azure Active Directory
     */
-  var trustType: js.UndefOr[NullableOption[String]] = js.native
+  var trustType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Device {
   

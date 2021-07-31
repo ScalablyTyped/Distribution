@@ -5,15 +5,13 @@ import typings.typeorm.typeormStrings.or
 import typings.typeorm.typeormStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
-  var condition: String = js.native
+  var condition: String
   
-  var `type`: simple | and | or = js.native
+  var `type`: simple | and | or
 }
 object Condition {
   

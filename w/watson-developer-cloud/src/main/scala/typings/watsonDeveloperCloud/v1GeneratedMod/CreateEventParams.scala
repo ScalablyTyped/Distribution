@@ -3,22 +3,20 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createEvent` operation. */
-@js.native
 trait CreateEventParams extends StObject {
   
   /** Query event data object. */
-  var data: EventData = js.native
+  var data: EventData
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The event type to be created. */
-  var `type`: Type | String = js.native
+  var `type`: Type | String
 }
 object CreateEventParams {
   

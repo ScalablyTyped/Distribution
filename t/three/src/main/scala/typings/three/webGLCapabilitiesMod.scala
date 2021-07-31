@@ -3,7 +3,6 @@ package typings.three
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLCapabilitiesMod {
@@ -46,12 +45,11 @@ object webGLCapabilitiesMod {
     var vertexTextures: Boolean = js.native
   }
   
-  @js.native
   trait WebGLCapabilitiesParameters extends StObject {
     
-    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.native
+    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var precision: js.UndefOr[String] = js.native
+    var precision: js.UndefOr[String] = js.undefined
   }
   object WebGLCapabilitiesParameters {
     

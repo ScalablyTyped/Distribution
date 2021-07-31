@@ -2,13 +2,11 @@ package typings.nodeZendesk.mod.Users
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateManyPayload extends StObject {
   
-  var users: js.Array[UpdateModel] = js.native
+  var users: js.Array[UpdateModel]
 }
 object UpdateManyPayload {
   

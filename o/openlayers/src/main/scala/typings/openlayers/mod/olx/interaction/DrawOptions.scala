@@ -13,43 +13,41 @@ import typings.openlayers.mod.source.Vector
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawOptions extends StObject {
   
-  var clickTolerance: js.UndefOr[Double] = js.native
+  var clickTolerance: js.UndefOr[Double] = js.undefined
   
-  var condition: js.UndefOr[EventsConditionType] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var features: js.UndefOr[Collection[Feature]] = js.native
+  var features: js.UndefOr[Collection[Feature]] = js.undefined
   
-  var finishCondition: js.UndefOr[EventsConditionType] = js.native
+  var finishCondition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var freehand: js.UndefOr[Boolean] = js.native
+  var freehand: js.UndefOr[Boolean] = js.undefined
   
-  var freehandCondition: js.UndefOr[EventsConditionType] = js.native
+  var freehandCondition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var geometryFunction: js.UndefOr[DrawGeometryFunctionType] = js.native
+  var geometryFunction: js.UndefOr[DrawGeometryFunctionType] = js.undefined
   
-  var geometryName: js.UndefOr[String] = js.native
+  var geometryName: js.UndefOr[String] = js.undefined
   
-  var maxPoints: js.UndefOr[Double] = js.native
+  var maxPoints: js.UndefOr[Double] = js.undefined
   
-  var minPoints: js.UndefOr[Double] = js.native
+  var minPoints: js.UndefOr[Double] = js.undefined
   
-  var snapTolerance: js.UndefOr[Double] = js.native
+  var snapTolerance: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[Vector] = js.native
+  var source: js.UndefOr[Vector] = js.undefined
   
-  var stopClick: js.UndefOr[Boolean] = js.native
+  var stopClick: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
   
-  var `type`: GeometryType = js.native
+  var `type`: GeometryType
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object DrawOptions {
   

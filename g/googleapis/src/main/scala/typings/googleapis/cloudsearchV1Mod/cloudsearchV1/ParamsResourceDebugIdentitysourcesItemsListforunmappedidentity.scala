@@ -6,49 +6,49 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDebugIdentitysourcesItemsListforunmappedidentity extends StandardParameters {
+trait ParamsResourceDebugIdentitysourcesItemsListforunmappedidentity
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
     * turn on this field, if asked by Google to help with debugging.
     */
   @JSName("debugOptions.enableDebugging")
-  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     */
-  var groupResourceName: js.UndefOr[String] = js.native
+  var groupResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of items to fetch in a request. Defaults to 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The next_page_token value returned from a previous List request, if any.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the identity source, in the following format:
     * identitysources/{source_id}}
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var userResourceName: js.UndefOr[String] = js.native
+  var userResourceName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceDebugIdentitysourcesItemsListforunmappedidentity {
   

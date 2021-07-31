@@ -2,32 +2,30 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSponsorSnippet extends StObject {
   
   /**
     * The id of the channel being sponsored.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The cumulative time a user has been a sponsor in months.
     */
-  var cumulativeDurationMonths: js.UndefOr[Double] = js.native
+  var cumulativeDurationMonths: js.UndefOr[Double] = js.undefined
   
   /**
     * Details about the sponsor.
     */
-  var sponsorDetails: js.UndefOr[SchemaChannelProfileDetails] = js.native
+  var sponsorDetails: js.UndefOr[SchemaChannelProfileDetails] = js.undefined
   
   /**
     * The date and time when the user became a sponsor. The value is specified
     * in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var sponsorSince: js.UndefOr[String] = js.native
+  var sponsorSince: js.UndefOr[String] = js.undefined
 }
 object SchemaSponsorSnippet {
   

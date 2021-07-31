@@ -10,9 +10,9 @@ Get image property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-image |
 | Keywords           | image, metascraper |
-| # releases         | 90 |
-| # dependents       | 16 |
-| # downloads        | 692607 |
+| # releases         | 103 |
+| # dependents       | 18 |
+| # downloads        | 883557 |
 | # stars            | 0 |
 
 ## Links

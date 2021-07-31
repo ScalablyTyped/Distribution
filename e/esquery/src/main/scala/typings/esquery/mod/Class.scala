@@ -8,25 +8,24 @@ import typings.esquery.esqueryStrings.pattern
 import typings.esquery.esqueryStrings.statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Class
-  extends Atom
+  extends StObject
+     with Atom
      with Selector {
   
-  var name: declaration | expression | function | pattern | statement = js.native
+  var name: declaration | expression | function | pattern | statement
   
   @JSName("type")
-  var type_Class: `class` = js.native
+  var type_Class: `class`
 }
 object Class {
   
   @scala.inline
-  def apply(name: declaration | expression | function | pattern | statement, `type`: `class`): Class = {
+  def apply(name: declaration | expression | function | pattern | statement): Class = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("class")
     __obj.asInstanceOf[Class]
   }
   

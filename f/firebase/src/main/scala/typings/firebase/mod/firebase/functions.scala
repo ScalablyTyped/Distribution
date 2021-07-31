@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functions {
@@ -119,10 +118,9 @@ object functions {
   
   type HttpsCallable = js.Function1[/* data */ js.UndefOr[js.Any], js.Promise[HttpsCallableResult]]
   
-  @js.native
   trait HttpsCallableOptions extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object HttpsCallableOptions {
     
@@ -143,10 +141,9 @@ object functions {
     }
   }
   
-  @js.native
   trait HttpsCallableResult extends StObject {
     
-    val data: js.Any = js.native
+    val data: js.Any
   }
   object HttpsCallableResult {
     
@@ -164,19 +161,20 @@ object functions {
     }
   }
   
-  @js.native
-  trait HttpsError extends Error {
+  trait HttpsError
+    extends StObject
+       with Error {
     
     /**
       * A standard error code that will be returned to the client. This also
       * determines the HTTP status code of the response, as defined in code.proto.
       */
-    val code: FunctionsErrorCode = js.native
+    val code: FunctionsErrorCode
     
     /**
       * Extra data to be converted to JSON and included in the error response.
       */
-    val details: js.UndefOr[js.Any] = js.native
+    val details: js.UndefOr[js.Any] = js.undefined
   }
   object HttpsError {
     

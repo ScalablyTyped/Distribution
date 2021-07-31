@@ -5,17 +5,15 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RVNearestXData[T /* <: AbstractSeriesPoint */] extends StObject {
   
-  var event: MouseEvent[HTMLElement, NativeMouseEvent] = js.native
+  var event: MouseEvent[HTMLElement, NativeMouseEvent]
   
-  var index: Double = js.native
+  var index: Double
   
-  var innerX: /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any = js.native
+  var innerX: /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any
 }
 object RVNearestXData {
   
@@ -30,7 +28,7 @@ object RVNearestXData {
   }
   
   @scala.inline
-  implicit class RVNearestXDataMutableBuilder[Self <: RVNearestXData[_], T /* <: AbstractSeriesPoint */] (val x: Self with RVNearestXData[T]) extends AnyVal {
+  implicit class RVNearestXDataMutableBuilder[Self <: RVNearestXData[?], T /* <: AbstractSeriesPoint */] (val x: Self & RVNearestXData[T]) extends AnyVal {
     
     @scala.inline
     def setEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])

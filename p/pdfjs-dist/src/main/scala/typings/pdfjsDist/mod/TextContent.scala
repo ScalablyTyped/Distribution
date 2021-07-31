@@ -2,15 +2,13 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextContent extends StObject {
   
-  var items: js.Array[TextContentItem] = js.native
+  var items: js.Array[TextContentItem]
   
-  var styles: js.Any = js.native
+  var styles: js.Any
 }
 object TextContent {
   

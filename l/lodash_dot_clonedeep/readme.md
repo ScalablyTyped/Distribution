@@ -11,8 +11,8 @@ The lodash method `_.cloneDeep` exported as a module.
 | Full name          | lodash.clonedeep |
 | Keywords           | lodash-modularized, clonedeep |
 | # releases         | 0 |
-| # dependents       | 1565 |
-| # downloads        | 255659960 |
+| # dependents       | 1770 |
+| # downloads        | 292410426 |
 | # stars            | 3 |
 
 ## Links

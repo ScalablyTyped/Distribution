@@ -6,57 +6,57 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAdvertisersList extends StandardParameters {
+trait ParamsResourceAdvertisersList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only advertisers with these advertiser group IDs.
     */
-  var advertiserGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var advertiserGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only advertisers with these floodlight configuration IDs.
     */
-  var floodlightConfigurationIds: js.UndefOr[js.Array[String]] = js.native
+  var floodlightConfigurationIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only advertisers with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only advertisers which do not belong to any advertiser group.
     */
-  var includeAdvertisersWithoutGroupsOnly: js.UndefOr[Boolean] = js.native
+  var includeAdvertisersWithoutGroupsOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only advertisers which use another advertiser's floodlight
     * configuration.
     */
-  var onlyParent: js.UndefOr[Boolean] = js.native
+  var onlyParent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -67,27 +67,27 @@ trait ParamsResourceAdvertisersList extends StandardParameters {
     * "advertiser" will match objects with name "my advertiser", "advertiser
     * 2015", or simply "advertiser".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only advertisers with the specified status.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Select only advertisers with these subaccount IDs.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAdvertisersList {
   

@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientComposer.anon.Key
 import typings.maximMazurokGapiClientComposer.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

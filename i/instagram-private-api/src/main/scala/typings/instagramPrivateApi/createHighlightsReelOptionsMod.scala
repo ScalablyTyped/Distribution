@@ -3,21 +3,19 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createHighlightsReelOptionsMod {
   
-  @js.native
   trait CreateHighlightsReelOptions extends StObject {
     
-    var coverId: js.UndefOr[String] = js.native
+    var coverId: js.UndefOr[String] = js.undefined
     
-    var mediaIds: js.Array[String] = js.native
+    var mediaIds: js.Array[String]
     
-    var source: js.UndefOr[IgAppModule] = js.native
+    var source: js.UndefOr[IgAppModule] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object CreateHighlightsReelOptions {
     

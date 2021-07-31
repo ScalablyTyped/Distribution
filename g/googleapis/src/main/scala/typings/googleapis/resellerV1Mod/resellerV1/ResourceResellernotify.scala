@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/reseller/v1", "reseller_v1.Resource$Resellernotify")
@@ -29,7 +28,7 @@ class ResourceResellernotify protected () extends StObject {
     */
   def getwatchdetails(): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(callback: BodyResponseCallback[SchemaResellernotifyGetwatchdetailsResponse]): Unit = js.native
-  def getwatchdetails(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
+  def getwatchdetails(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(params: ParamsResourceResellernotifyGetwatchdetails): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(
     params: ParamsResourceResellernotifyGetwatchdetails,
@@ -61,7 +60,7 @@ class ResourceResellernotify protected () extends StObject {
     */
   def register(): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(callback: BodyResponseCallback[SchemaResellernotifyResource]): Unit = js.native
-  def register(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
+  def register(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(params: ParamsResourceResellernotifyRegister): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(
     params: ParamsResourceResellernotifyRegister,
@@ -93,7 +92,7 @@ class ResourceResellernotify protected () extends StObject {
     */
   def unregister(): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(callback: BodyResponseCallback[SchemaResellernotifyResource]): Unit = js.native
-  def unregister(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
+  def unregister(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(params: ParamsResourceResellernotifyUnregister): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(
     params: ParamsResourceResellernotifyUnregister,

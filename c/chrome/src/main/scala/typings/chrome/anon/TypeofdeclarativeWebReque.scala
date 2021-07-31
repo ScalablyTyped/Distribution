@@ -3,13 +3,11 @@ package typings.chrome.anon
 import typings.chrome.chrome.declarativeWebRequest.RequestedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdeclarativeWebReque extends StObject {
   
-  var onRequest: RequestedEvent = js.native
+  var onRequest: RequestedEvent
 }
 object TypeofdeclarativeWebReque {
   

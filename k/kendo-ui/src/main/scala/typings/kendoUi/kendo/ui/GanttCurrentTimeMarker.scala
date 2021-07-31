@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttCurrentTimeMarker extends StObject {
   
-  var updateInterval: js.UndefOr[Double] = js.native
+  var updateInterval: js.UndefOr[Double] = js.undefined
 }
 object GanttCurrentTimeMarker {
   

@@ -5,29 +5,27 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSharedType[RecordType] extends StObject {
   
-  var align: js.UndefOr[AlignType] = js.native
+  var align: js.UndefOr[AlignType] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var ellipsis: js.UndefOr[CellEllipsisType] = js.native
+  var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
   
-  var fixed: js.UndefOr[FixedType] = js.native
+  var fixed: js.UndefOr[FixedType] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
   var onHeaderCell: js.UndefOr[
     GetComponentProps[
       /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
 }
 object ColumnSharedType {
   
@@ -38,7 +36,7 @@ object ColumnSharedType {
   }
   
   @scala.inline
-  implicit class ColumnSharedTypeMutableBuilder[Self <: ColumnSharedType[_], RecordType] (val x: Self with ColumnSharedType[RecordType]) extends AnyVal {
+  implicit class ColumnSharedTypeMutableBuilder[Self <: ColumnSharedType[?], RecordType] (val x: Self & ColumnSharedType[RecordType]) extends AnyVal {
     
     @scala.inline
     def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

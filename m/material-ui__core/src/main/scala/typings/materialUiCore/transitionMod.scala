@@ -3,7 +3,6 @@ package typings.materialUiCore
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionMod {
@@ -39,20 +38,19 @@ object transitionMod {
   }
   
   /* Inlined std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerKeys> */
-  @js.native
   trait TransitionHandlerProps extends StObject {
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
   }
   object TransitionHandlerProps {
     
@@ -155,10 +153,9 @@ object transitionMod {
   
   /* Inlined parent react-transition-group.react-transition-group/Transition.TransitionActions */
   /* Inlined parent std.Partial<std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionKeys>> */
-  @js.native
   trait TransitionProps extends StObject {
     
-    var addEndListener: js.UndefOr[js.Any] = js.native
+    var addEndListener: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Normally a component is not transitioned if it is shown when the
@@ -167,39 +164,39 @@ object transitionMod {
       * as the `<Transition>` mounts. Note: there are no specific "appear" states.
       * appear only adds an additional enter transition.
       */
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable enter transitions.
       */
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable exit transitions.
       */
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.native
+    var in: js.UndefOr[js.Any] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.native
+    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var timeout: js.UndefOr[js.Any] = js.native
+    var timeout: js.UndefOr[js.Any] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.native
+    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
   }
   object TransitionProps {
     

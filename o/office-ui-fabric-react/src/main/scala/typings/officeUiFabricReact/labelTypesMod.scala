@@ -12,48 +12,47 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelTypesMod {
   
-  @js.native
   trait ILabel extends StObject
   
-  @js.native
-  trait ILabelProps extends LabelHTMLAttributes[HTMLLabelElement] {
+  trait ILabelProps
+    extends StObject
+       with LabelHTMLAttributes[HTMLLabelElement] {
     
     /**
       * Render the root element as another type.
       */
-    var as: js.UndefOr[IComponentAs[AllHTMLAttributes[HTMLElement]]] = js.native
+    var as: js.UndefOr[IComponentAs[AllHTMLAttributes[HTMLElement]]] = js.undefined
     
     /**
       * Optional callback to access the ILabel interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ILabel]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ILabel]] = js.undefined
     
     /**
       * Renders the label as disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the associated form field is required or not
       * @defaultvalue false
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Styles for the label.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ILabelStyleProps, ILabelStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ILabelStyleProps, ILabelStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ILabelProps {
     
@@ -110,19 +109,18 @@ object labelTypesMod {
     }
   }
   
-  @js.native
   trait ILabelStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ILabelStyleProps {
     
@@ -158,13 +156,12 @@ object labelTypesMod {
     }
   }
   
-  @js.native
   trait ILabelStyles extends StObject {
     
     /**
       * Styles for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ILabelStyles {
     

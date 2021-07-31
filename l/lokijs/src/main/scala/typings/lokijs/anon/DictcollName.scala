@@ -6,18 +6,17 @@ import typings.lokijs.lokijsStrings.normal
 import typings.lokijs.lokijsStrings.pretty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictcollName
-  extends /* collName */ StringDictionary[js.Any | Inflate] {
+  extends StObject
+     with /* collName */ StringDictionary[js.Any | Inflate] {
   
-  var retainDirtyFlags: js.UndefOr[Boolean] = js.native
+  var retainDirtyFlags: js.UndefOr[Boolean] = js.undefined
   
-  var serializationMethod: js.UndefOr[normal | pretty | destructured | Null] = js.native
+  var serializationMethod: js.UndefOr[normal | pretty | destructured | Null] = js.undefined
   
-  var throttledSaves: js.UndefOr[Boolean] = js.native
+  var throttledSaves: js.UndefOr[Boolean] = js.undefined
 }
 object DictcollName {
   

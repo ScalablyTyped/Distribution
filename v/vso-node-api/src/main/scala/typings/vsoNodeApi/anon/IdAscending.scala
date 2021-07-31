@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdAscending extends StObject {
   
-  var idAscending: scala.Double = js.native
+  var idAscending: scala.Double
   
-  var idDescending: scala.Double = js.native
+  var idDescending: scala.Double
   
-  var nameAscending: scala.Double = js.native
+  var nameAscending: scala.Double
   
-  var nameDescending: scala.Double = js.native
+  var nameDescending: scala.Double
 }
 object IdAscending {
   

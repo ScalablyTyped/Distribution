@@ -11,53 +11,51 @@ import typings.reactNativeSvgCharts.anon.PartialPathProps
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartProps[T] extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var contentInset: js.UndefOr[Bottom] = js.native
+  var contentInset: js.UndefOr[Bottom] = js.undefined
   
-  var curve: js.UndefOr[CurveFactory] = js.native
+  var curve: js.UndefOr[CurveFactory] = js.undefined
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
-  var gridMax: js.UndefOr[Double] = js.native
+  var gridMax: js.UndefOr[Double] = js.undefined
   
-  var gridMin: js.UndefOr[Double] = js.native
+  var gridMin: js.UndefOr[Double] = js.undefined
   
-  var gridProps: js.UndefOr[GridProps[_]] = js.native
+  var gridProps: js.UndefOr[GridProps[js.Any]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var numberOfTicks: js.UndefOr[Double] = js.native
+  var numberOfTicks: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var svg: js.UndefOr[PartialPathProps] = js.native
+  var svg: js.UndefOr[PartialPathProps] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.native
+  var xAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.undefined
   
-  var xMax: js.UndefOr[Double] = js.native
+  var xMax: js.UndefOr[Double] = js.undefined
   
-  var xMin: js.UndefOr[Double] = js.native
+  var xMin: js.UndefOr[Double] = js.undefined
   
-  var xScale: js.UndefOr[ScaleFunction] = js.native
+  var xScale: js.UndefOr[ScaleFunction] = js.undefined
   
-  var yAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.native
+  var yAccessor: js.UndefOr[AccessorFunction[T, Double]] = js.undefined
   
-  var yMax: js.UndefOr[Double] = js.native
+  var yMax: js.UndefOr[Double] = js.undefined
   
-  var yMin: js.UndefOr[Double] = js.native
+  var yMin: js.UndefOr[Double] = js.undefined
   
-  var yScale: js.UndefOr[ScaleFunction] = js.native
+  var yScale: js.UndefOr[ScaleFunction] = js.undefined
 }
 object ChartProps {
   
@@ -68,7 +66,7 @@ object ChartProps {
   }
   
   @scala.inline
-  implicit class ChartPropsMutableBuilder[Self <: ChartProps[_], T] (val x: Self with ChartProps[T]) extends AnyVal {
+  implicit class ChartPropsMutableBuilder[Self <: ChartProps[?], T] (val x: Self & ChartProps[T]) extends AnyVal {
     
     @scala.inline
     def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
@@ -113,7 +111,7 @@ object ChartProps {
     def setGridMinUndefined: Self = StObject.set(x, "gridMin", js.undefined)
     
     @scala.inline
-    def setGridProps(value: GridProps[_]): Self = StObject.set(x, "gridProps", value.asInstanceOf[js.Any])
+    def setGridProps(value: GridProps[js.Any]): Self = StObject.set(x, "gridProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGridPropsUndefined: Self = StObject.set(x, "gridProps", js.undefined)

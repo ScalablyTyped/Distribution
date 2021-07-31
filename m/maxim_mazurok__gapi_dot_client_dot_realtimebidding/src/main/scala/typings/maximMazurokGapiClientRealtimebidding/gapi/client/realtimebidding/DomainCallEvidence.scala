@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainCallEvidence extends StObject {
   
   /** Breakdown of the most frequent domains called via HTTP by the creative. */
-  var topHttpCallDomains: js.UndefOr[js.Array[DomainCalls]] = js.native
+  var topHttpCallDomains: js.UndefOr[js.Array[DomainCalls]] = js.undefined
   
   /** The total number of HTTP calls made by the creative, including but not limited to the number of calls in the top_http_call_domains. */
-  var totalHttpCallCount: js.UndefOr[Double] = js.native
+  var totalHttpCallCount: js.UndefOr[Double] = js.undefined
 }
 object DomainCallEvidence {
   

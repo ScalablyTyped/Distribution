@@ -4,26 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.localizedCountries.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("localized-countries", JSImport.Namespace)
-  @js.native
-  def apply(locale: String): LocalizedCountries = js.native
-  @JSImport("localized-countries", JSImport.Namespace)
-  @js.native
-  def apply(locale: js.Object): LocalizedCountries = js.native
+  @scala.inline
+  def apply(locale: String): LocalizedCountries = ^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any]).asInstanceOf[LocalizedCountries]
+  @scala.inline
+  def apply(locale: js.Object): LocalizedCountries = ^.asInstanceOf[js.Dynamic].apply(locale.asInstanceOf[js.Any]).asInstanceOf[LocalizedCountries]
   
+  @JSImport("localized-countries", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait LocalizedCountries extends StObject {
     
-    def array(): js.Array[Code] = js.native
+    def array(): js.Array[Code]
     
-    def get(code: String): String = js.native
+    def get(code: String): String
     
-    def `object`(): StringDictionary[String] = js.native
+    def `object`(): StringDictionary[String]
   }
   object LocalizedCountries {
     

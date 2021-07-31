@@ -11,8 +11,8 @@ Returns true if a filepath is a windows UNC file path.
 | Full name          | is-unc-path |
 | Keywords           | absolute, expression, file, filepath, is, match, matching, path, regex, regexp, regular, unc, win, windows |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 136935377 |
+| # dependents       | 20 |
+| # downloads        | 163972412 |
 | # stars            | 0 |
 
 ## Links

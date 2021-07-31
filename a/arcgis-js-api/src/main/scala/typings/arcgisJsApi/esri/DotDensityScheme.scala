@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DotDensityScheme extends Object {
+trait DotDensityScheme
+  extends StObject
+     with Object {
   
   /**
     * The dot color for each attribute.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensityScheme)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The unique name of the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensityScheme)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The opacity of the symbol (0 - 1).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensityScheme)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensityScheme)
     */
-  var outline: DotDensitySchemeOutline = js.native
+  var outline: DotDensitySchemeOutline
   
   /**
     * Tags associated with the scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensityScheme)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object DotDensityScheme {
   

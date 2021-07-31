@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Video extends StObject {
   
   /**
     * The Amazon S3 bucket name and file name for the video.
     */
-  var S3Object: js.UndefOr[typings.awsSdk.rekognitionMod.S3Object] = js.native
+  var S3Object: js.UndefOr[typings.awsSdk.rekognitionMod.S3Object] = js.undefined
 }
 object Video {
   

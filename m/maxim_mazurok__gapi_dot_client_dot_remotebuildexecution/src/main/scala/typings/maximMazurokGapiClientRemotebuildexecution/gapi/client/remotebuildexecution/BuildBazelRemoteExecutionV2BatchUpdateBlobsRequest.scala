@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends StObject {
   
   /** The individual upload requests. */
-  var requests: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]] = js.native
+  var requests: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]] = js.undefined
 }
 object BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest {
   

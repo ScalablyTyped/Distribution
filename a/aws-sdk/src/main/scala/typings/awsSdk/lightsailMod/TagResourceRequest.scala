@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource to which you want to add a tag.
     */
-  var resourceArn: js.UndefOr[ResourceArn] = js.native
+  var resourceArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The name of the resource to which you are adding tags.
     */
-  var resourceName: ResourceName = js.native
+  var resourceName: ResourceName
   
   /**
     * The tag key and optional value.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object TagResourceRequest {
   

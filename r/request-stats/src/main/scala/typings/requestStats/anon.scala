@@ -6,43 +6,41 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bytes extends StObject {
     
     /**
       * Number of bytes sent by the client
       */
-    var bytes: Double = js.native
+    var bytes: Double
     
     /**
       * The headers sent by the client
       */
-    var headers: IncomingHttpHeaders = js.native
+    var headers: IncomingHttpHeaders
     
     /**
       * The remote ip
       */
-    var ip: String = js.native
+    var ip: String
     
     /**
       * The HTTP method used by the client
       */
-    var method: String = js.native
+    var method: String
     
     /**
       * The path part of the request URL
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The original `http.IncomingMessage` object
       */
-    var raw: IncomingMessage = js.native
+    var raw: IncomingMessage
   }
   object Bytes {
     
@@ -82,33 +80,32 @@ object anon {
     }
   }
   
-  @js.native
   trait BytesDelta extends StObject {
     
     /**
       * Total bytes received
       */
-    var bytes: Double = js.native
+    var bytes: Double
     
     /**
       * Bytes received since previous call to `.progress()`
       */
-    var bytesDelta: Double = js.native
+    var bytesDelta: Double
     
     /**
       * If the request contains a Content-Size header
       */
-    var bytesLeft: Double = js.native
+    var bytesLeft: Double
     
     /**
       * Bytes per second calculated since previous call to `.progress()`
       */
-    var speed: Double = js.native
+    var speed: Double
     
     /**
       * If the request contains a Content-Size header
       */
-    var timeLeft: Double = js.native
+    var timeLeft: Double
   }
   object BytesDelta {
     
@@ -138,28 +135,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
     /**
       * Number of bytes sent back to the client
       */
-    var bytes: Double = js.native
+    var bytes: Double
     
     /**
       * The headers sent back to the client
       */
-    var headers: OutgoingHttpHeaders = js.native
+    var headers: OutgoingHttpHeaders
     
     /**
       * The original `http.ServerResponse` object
       */
-    var raw: ServerResponse = js.native
+    var raw: ServerResponse
     
     /**
       * The HTTP status code returned to the client
       */
-    var status: Double = js.native
+    var status: Double
   }
   object Headers {
     
@@ -186,23 +182,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Speed extends StObject {
     
     /**
       * Total bytes send back to the client
       */
-    var bytes: Double = js.native
+    var bytes: Double
     
     /**
       * Bytes sent back to the client since previous call to `.progress()`
       */
-    var bytesDelta: Double = js.native
+    var bytesDelta: Double
     
     /**
       * Bytes per second calculated since previous call to `.progress()`
       */
-    var speed: Double = js.native
+    var speed: Double
   }
   object Speed {
     

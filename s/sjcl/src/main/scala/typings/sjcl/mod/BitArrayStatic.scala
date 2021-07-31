@@ -2,7 +2,6 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,9 +9,9 @@ trait BitArrayStatic extends StObject {
   
   /// Shift an array right.
   def _shiftRight(a: BitArray_, shift: Double): BitArray_ = js.native
-  def _shiftRight(a: BitArray_, shift: Double, carry: js.UndefOr[scala.Nothing], out: BitArray_): BitArray_ = js.native
   def _shiftRight(a: BitArray_, shift: Double, carry: Double): BitArray_ = js.native
   def _shiftRight(a: BitArray_, shift: Double, carry: Double, out: BitArray_): BitArray_ = js.native
+  def _shiftRight(a: BitArray_, shift: Double, carry: Unit, out: BitArray_): BitArray_ = js.native
   
   /// xor a block of 4 words together.
   def _xor4(x: js.Array[Double], y: js.Array[Double]): js.Array[Double] = js.native

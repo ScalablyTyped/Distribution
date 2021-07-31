@@ -4,17 +4,17 @@ import typings.screeps.EVENT_TRANSFER
 import typings.screeps.EventItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventEVENTTRANSFER extends EventItem {
+trait EventEVENTTRANSFER
+  extends StObject
+     with EventItem {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_TRANSFER] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_TRANSFER] */ js.Any
   
-  var event: EVENT_TRANSFER = js.native
+  var event: EVENT_TRANSFER
   
-  var objectId: String = js.native
+  var objectId: String
 }
 object EventEVENTTRANSFER {
   

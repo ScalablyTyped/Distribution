@@ -2,7 +2,6 @@ package typings.markdownIt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rulerMod {
@@ -26,15 +25,16 @@ object rulerMod {
     */
   @JSImport("markdown-it/lib/ruler", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Ruler[T]
+  class ^[T] ()
+    extends StObject
+       with Ruler[T]
   
-  @js.native
   trait RuleOptions extends StObject {
     
     /**
       * array with names of "alternate" chains.
       */
-    var alt: js.Array[String] = js.native
+    var alt: js.Array[String]
   }
   object RuleOptions {
     

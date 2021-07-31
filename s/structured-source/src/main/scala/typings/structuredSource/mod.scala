@@ -2,26 +2,38 @@ package typings.structuredSource
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("structured-source", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StructuredSource {
+  class ^ protected ()
+    extends StObject
+       with StructuredSource {
     /**
       * @param source - source code text.
       */
     def this(source: String) = this()
+    
+    /* CompleteClass */
+    override def indexToPosition(index: Double): SourcePosition = js.native
+    
+    /* CompleteClass */
+    override def locationToRange(loc: SourceLocation): js.Tuple2[Double, Double] = js.native
+    
+    /* CompleteClass */
+    override def positionToIndex(pos: SourcePosition): Double = js.native
+    
+    /* CompleteClass */
+    override def rangeToLocation(range: js.Tuple2[Double, Double]): SourceLocation = js.native
   }
   
-  @js.native
   trait SourceLocation extends StObject {
     
-    var end: SourcePosition = js.native
+    var end: SourcePosition
     
-    var start: SourcePosition = js.native
+    var start: SourcePosition
   }
   object SourceLocation {
     
@@ -42,14 +54,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SourcePosition extends StObject {
     
     // Column number starts with 0.
-    var column: Double = js.native
+    var column: Double
     
     // Line number starts with 1.
-    var line: Double = js.native
+    var line: Double
   }
   object SourcePosition {
     
@@ -70,16 +81,15 @@ object mod {
     }
   }
   
-  @js.native
   trait StructuredSource extends StObject {
     
-    def indexToPosition(index: Double): SourcePosition = js.native
+    def indexToPosition(index: Double): SourcePosition
     
-    def locationToRange(loc: SourceLocation): js.Tuple2[Double, Double] = js.native
+    def locationToRange(loc: SourceLocation): js.Tuple2[Double, Double]
     
-    def positionToIndex(pos: SourcePosition): Double = js.native
+    def positionToIndex(pos: SourcePosition): Double
     
-    def rangeToLocation(range: js.Tuple2[Double, Double]): SourceLocation = js.native
+    def rangeToLocation(range: js.Tuple2[Double, Double]): SourceLocation
   }
   object StructuredSource {
     

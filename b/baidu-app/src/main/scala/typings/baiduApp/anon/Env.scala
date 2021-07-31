@@ -2,13 +2,11 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Env extends StObject {
   
-  var env: String = js.native
+  var env: String
 }
 object Env {
   

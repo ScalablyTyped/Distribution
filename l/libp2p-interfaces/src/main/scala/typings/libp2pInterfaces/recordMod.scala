@@ -3,7 +3,6 @@ package typings.libp2pInterfaces
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recordMod {
@@ -13,35 +12,55 @@ object recordMod {
     */
   @JSImport("libp2p-interfaces/src/record", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Record {
+  class ^ protected ()
+    extends StObject
+       with Record {
     /**
       * @constructor
       * @param {String} domain signature domain
       * @param {Uint8Array} codec identifier of the type of record
       */
     def this(domain: String, codec: Uint8Array) = this()
-  }
-  
-  /**
-    * Record is the base implementation of a record that can be used as the payload of a libp2p envelope.
-    */
-  @js.native
-  trait Record extends StObject {
     
+    /* CompleteClass */
     var codec: Uint8Array = js.native
     
+    /* CompleteClass */
     var domain: String = js.native
     
     /**
       * Verifies if the other provided Record is identical to this one.
       * @param {Record} other
       */
-    def equals(other: Record): Unit = js.native
+    /* CompleteClass */
+    override def equals(other: Record): Unit = js.native
     
     /**
       * Marshal a record to be used in an envelope.
       */
-    def marshal(): Unit = js.native
+    /* CompleteClass */
+    override def marshal(): Unit = js.native
+  }
+  
+  /**
+    * Record is the base implementation of a record that can be used as the payload of a libp2p envelope.
+    */
+  trait Record extends StObject {
+    
+    var codec: Uint8Array
+    
+    var domain: String
+    
+    /**
+      * Verifies if the other provided Record is identical to this one.
+      * @param {Record} other
+      */
+    def equals(other: Record): Unit
+    
+    /**
+      * Marshal a record to be used in an envelope.
+      */
+    def marshal(): Unit
   }
   object Record {
     

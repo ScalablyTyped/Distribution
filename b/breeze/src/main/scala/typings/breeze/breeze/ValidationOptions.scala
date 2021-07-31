@@ -2,36 +2,35 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOptions extends StObject {
   
-  def setAsDefault(): ValidationOptions = js.native
+  def setAsDefault(): ValidationOptions
   
-  def using(config: ValidationOptionsConfiguration): ValidationOptions = js.native
+  def `using`(config: ValidationOptionsConfiguration): ValidationOptions
   
-  var validateOnAttach: Boolean = js.native
+  var validateOnAttach: Boolean
   
-  var validateOnPropertyChange: Boolean = js.native
+  var validateOnPropertyChange: Boolean
   
-  var validateOnQuery: Boolean = js.native
+  var validateOnQuery: Boolean
   
-  var validateOnSave: Boolean = js.native
+  var validateOnSave: Boolean
 }
 object ValidationOptions {
   
   @scala.inline
   def apply(
     setAsDefault: () => ValidationOptions,
-    using: ValidationOptionsConfiguration => ValidationOptions,
+    `using`: ValidationOptionsConfiguration => ValidationOptions,
     validateOnAttach: Boolean,
     validateOnPropertyChange: Boolean,
     validateOnQuery: Boolean,
     validateOnSave: Boolean
   ): ValidationOptions = {
-    val __obj = js.Dynamic.literal(setAsDefault = js.Any.fromFunction0(setAsDefault), using = js.Any.fromFunction1(using), validateOnAttach = validateOnAttach.asInstanceOf[js.Any], validateOnPropertyChange = validateOnPropertyChange.asInstanceOf[js.Any], validateOnQuery = validateOnQuery.asInstanceOf[js.Any], validateOnSave = validateOnSave.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(setAsDefault = js.Any.fromFunction0(setAsDefault), validateOnAttach = validateOnAttach.asInstanceOf[js.Any], validateOnPropertyChange = validateOnPropertyChange.asInstanceOf[js.Any], validateOnQuery = validateOnQuery.asInstanceOf[js.Any], validateOnSave = validateOnSave.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[ValidationOptions]
   }
   

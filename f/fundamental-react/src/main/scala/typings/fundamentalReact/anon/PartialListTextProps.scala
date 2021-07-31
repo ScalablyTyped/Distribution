@@ -2,18 +2,16 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/List/List.ListTextProps> */
-@js.native
 trait PartialListTextProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var noWrap: js.UndefOr[Boolean] = js.native
+  var noWrap: js.UndefOr[Boolean] = js.undefined
   
-  var secondary: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.undefined
 }
 object PartialListTextProps {
   

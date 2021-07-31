@@ -2,7 +2,6 @@ package typings.guacamoleClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -17,7 +16,7 @@ object parserMod {
       * @param opcode The Guacamole instruction opcode.
       * @param parameters The parameters provided for the instruction, if any.
       */
-    var oninstruction: Null | (js.Function2[/* opcode */ String, /* params */ js.Array[_], Unit]) = js.native
+    var oninstruction: Null | (js.Function2[/* opcode */ String, /* params */ js.Array[js.Any], Unit]) = js.native
     
     /**
       * Appends the given instruction data packet to the internal buffer of

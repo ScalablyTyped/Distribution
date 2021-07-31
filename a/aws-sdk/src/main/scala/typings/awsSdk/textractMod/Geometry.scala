@@ -2,21 +2,19 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
   /**
     * An axis-aligned coarse representation of the location of the recognized item on the document page.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.textractMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.textractMod.BoundingBox] = js.undefined
   
   /**
     * Within the bounding box, a fine-grained polygon around the recognized item.
     */
-  var Polygon: js.UndefOr[typings.awsSdk.textractMod.Polygon] = js.native
+  var Polygon: js.UndefOr[typings.awsSdk.textractMod.Polygon] = js.undefined
 }
 object Geometry {
   

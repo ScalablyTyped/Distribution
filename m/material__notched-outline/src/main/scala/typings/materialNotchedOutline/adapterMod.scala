@@ -2,33 +2,31 @@ package typings.materialNotchedOutline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCNotchedOutlineAdapter extends StObject {
     
     /**
       * Adds a class to the root element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Removes a class from the root element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Removes the width style property from the notch element.
       */
-    def removeNotchWidthProperty(): Unit = js.native
+    def removeNotchWidthProperty(): Unit
     
     /**
       * Sets the width style property of the notch element.
       */
-    def setNotchWidthProperty(width: Double): Unit = js.native
+    def setNotchWidthProperty(width: Double): Unit
   }
   object MDCNotchedOutlineAdapter {
     

@@ -6,7 +6,6 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsMod {
@@ -20,9 +19,8 @@ object fsMod {
     @JSImport("maxmind/lib/fs", "default.existsSync")
     @js.native
     def existsSync: js.Function1[/* path */ PathLike, Boolean] = js.native
-    @JSImport("maxmind/lib/fs", "default.existsSync")
-    @js.native
-    def existsSync(path: PathLike): Boolean = js.native
+    @scala.inline
+    def existsSync(path: PathLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     @scala.inline
     def existsSync_=(x: js.Function1[/* path */ PathLike, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("existsSync")(x.asInstanceOf[js.Any])
     
@@ -37,23 +35,20 @@ object fsMod {
     @JSImport("maxmind/lib/fs", "default.watchFile")
     @js.native
     def watchFile: FnCall = js.native
-    @JSImport("maxmind/lib/fs", "default.watchFile")
-    @js.native
-    def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
-    @JSImport("maxmind/lib/fs", "default.watchFile")
-    @js.native
+    @scala.inline
+    def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def watchFile(
       filename: PathLike,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-    ): Unit = js.native
-    @JSImport("maxmind/lib/fs", "default.watchFile")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def watchFile(
       filename: PathLike,
       options: Interval,
       listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def watchFile_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watchFile")(x.asInstanceOf[js.Any])
   }

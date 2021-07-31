@@ -6,9 +6,10 @@ import typings.servicenow.servicenow.GlideServletRequest
 import typings.servicenow.servicenow.GlideServletResponse
 import typings.servicenow.servicenow.GlideSystem
 import typings.servicenow.servicenow.RestHTTPMethods
+import typings.servicenow.servicenow.SOAPResponseV2
+import typings.servicenow.servicenow.XMLNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global_ {
@@ -16,7 +17,8 @@ object global_ {
   @JSGlobal("GlideDateTime")
   @js.native
   class GlideDateTime ()
-    extends typings.servicenow.GlideDateTime {
+    extends StObject
+       with typings.servicenow.GlideDateTime {
     def this(value: String) = this()
     def this(value: typings.servicenow.GlideDateTime) = this()
   }
@@ -24,58 +26,113 @@ object global_ {
   @JSGlobal("GlideDuration")
   @js.native
   class GlideDuration ()
-    extends typings.servicenow.GlideDuration {
+    extends StObject
+       with typings.servicenow.GlideDuration {
     def this(value: String) = this()
     def this(value: Double) = this()
     def this(value: typings.servicenow.GlideDuration) = this()
+    
+    /* CompleteClass */
+    override def add(value: typings.servicenow.GlideDuration): typings.servicenow.GlideDuration = js.native
+    
+    /* CompleteClass */
+    override def getByFormat(format: String): String = js.native
+    
+    /* CompleteClass */
+    override def getDayPart(): Double = js.native
+    
+    /* CompleteClass */
+    override def getDisplayValue(): String = js.native
+    
+    /* CompleteClass */
+    override def getDurationValue(): String = js.native
+    
+    /* CompleteClass */
+    override def getNumericValue(): Double = js.native
+    
+    /* CompleteClass */
+    override def getRoundedDayPart(): Double = js.native
+    
+    /* CompleteClass */
+    override def getValue(): String = js.native
+    
+    /* CompleteClass */
+    override def setDisplayValue(asDisplayed: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setValue(o: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def subtract(value: typings.servicenow.GlideDuration): typings.servicenow.GlideDuration = js.native
   }
   
   @JSGlobal("GlideEvaluator")
   @js.native
   class GlideEvaluator ()
-    extends typings.servicenow.GlideEvaluator
+    extends StObject
+       with typings.servicenow.GlideEvaluator
   
   object GlideFilter {
     
-    @JSGlobal("GlideFilter.checkRecord")
+    @JSGlobal("GlideFilter")
     @js.native
-    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String): Boolean = js.native
-    @JSGlobal("GlideFilter.checkRecord")
-    @js.native
-    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String, matchAll: js.Object): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String, matchAll: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], matchAll.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object GlideGuid {
     
-    @JSGlobal("GlideGuid.generate")
+    @JSGlobal("GlideGuid")
     @js.native
-    def generate(): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
   }
   
   @JSGlobal("GlideLocale")
   @js.native
   class GlideLocale ()
-    extends typings.servicenow.GlideLocale
+    extends StObject
+       with typings.servicenow.GlideLocale {
+    
+    /* CompleteClass */
+    override def getDecimalSeparator(): String = js.native
+    
+    /* CompleteClass */
+    override def getGroupingSeparator(): String = js.native
+  }
   object GlideLocale {
     
-    /* static member */
-    @JSGlobal("GlideLocale.get")
+    @JSGlobal("GlideLocale")
     @js.native
-    def get(): typings.servicenow.GlideLocale = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def get(): typings.servicenow.GlideLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.servicenow.GlideLocale]
   }
   
   object GlidePluginManager {
     
-    @JSGlobal("GlidePluginManager.isActive")
+    @JSGlobal("GlidePluginManager")
     @js.native
-    def isActive(pluginId: String): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isActive(pluginId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pluginId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("GlideRecord")
   @js.native
   class GlideRecord protected ()
-    extends typings.servicenow.servicenow.GlideRecord {
+    extends StObject
+       with typings.servicenow.servicenow.GlideRecord {
     def this(`type`: String) = this()
   }
   @JSGlobal("GlideRecord")
@@ -86,7 +143,8 @@ object global_ {
   @JSGlobal("GlideRecordSecure")
   @js.native
   class GlideRecordSecure protected ()
-    extends typings.servicenow.servicenow.GlideRecord {
+    extends StObject
+       with typings.servicenow.servicenow.GlideRecord {
     def this(`type`: String) = this()
   }
   @JSGlobal("GlideRecordSecure")
@@ -96,80 +154,193 @@ object global_ {
   @JSGlobal("GlideSchedule")
   @js.native
   class GlideSchedule ()
-    extends typings.servicenow.GlideSchedule {
+    extends StObject
+       with typings.servicenow.GlideSchedule {
     def this(sysId: String, timeZone: String) = this()
+    
+    /* CompleteClass */
+    override def add(startDate: typings.servicenow.GlideDateTime, offset: typings.servicenow.GlideDuration): typings.servicenow.GlideDateTime = js.native
+    
+    /* CompleteClass */
+    override def duration(startDate: typings.servicenow.GlideDateTime, endDate: typings.servicenow.GlideDateTime): typings.servicenow.GlideDuration = js.native
+    
+    /* CompleteClass */
+    override def getName(): String = js.native
+    
+    /* CompleteClass */
+    override def isInSchedule(time: typings.servicenow.GlideDateTime): String = js.native
+    
+    /* CompleteClass */
+    override def isValid(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def load(sysId: String, timeZone: String, excludeSpanId: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setTimeZone(tz: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def whenNext(time: typings.servicenow.GlideDateTime, timeZone: String): Double = js.native
   }
   
   object GlideSecureRandomUtil {
     
-    @JSGlobal("GlideSecureRandomUtil.getSecureRandomInt")
+    @JSGlobal("GlideSecureRandomUtil")
     @js.native
-    def getSecureRandomInt(): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("GlideSecureRandomUtil.getSecureRandomIntBound")
-    @js.native
-    def getSecureRandomIntBound(bound: Double): Double = js.native
+    @scala.inline
+    def getSecureRandomInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomInt")().asInstanceOf[Double]
     
-    @JSGlobal("GlideSecureRandomUtil.getSecureRandomLong")
-    @js.native
-    def getSecureRandomLong(): Double = js.native
+    @scala.inline
+    def getSecureRandomIntBound(bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomIntBound")(bound.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("GlideSecureRandomUtil.getSecureRandomString")
-    @js.native
-    def getSecureRandomString(length: Double): String = js.native
+    @scala.inline
+    def getSecureRandomLong(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomLong")().asInstanceOf[Double]
+    
+    @scala.inline
+    def getSecureRandomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("GlideSysAttachment")
   @js.native
   class GlideSysAttachment ()
-    extends typings.servicenow.GlideSysAttachment
+    extends StObject
+       with typings.servicenow.GlideSysAttachment {
+    
+    /* CompleteClass */
+    override def copy(sourceTable: String, sourceSysId: String, destinationTable: String, destinationSysId: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def deleteAttachment(sysId: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def getContent(record: typings.servicenow.servicenow.GlideRecord): js.Any = js.native
+    
+    /* CompleteClass */
+    override def getContentBase64(record: typings.servicenow.servicenow.GlideRecord): String = js.native
+    
+    /* CompleteClass */
+    override def getContentStream(sysId: String): js.Object = js.native
+    
+    /* CompleteClass */
+    override def write(
+      record: typings.servicenow.servicenow.GlideRecord,
+      fileName: String,
+      contentType: String,
+      data: js.Any
+    ): String = js.native
+    
+    /* CompleteClass */
+    override def writeBase64(
+      record: typings.servicenow.servicenow.GlideRecord,
+      fileName: String,
+      contentType: String,
+      base64Content: String
+    ): String = js.native
+    
+    /* CompleteClass */
+    override def writeContentStream(
+      record: typings.servicenow.servicenow.GlideRecord,
+      fileName: String,
+      contentType: String,
+      inputStream: js.Object
+    ): String = js.native
+  }
   
   @JSGlobal("GlideTime")
   @js.native
   class GlideTime protected ()
-    extends typings.servicenow.GlideTime {
+    extends StObject
+       with typings.servicenow.GlideTime {
     def this(milliseconds: Double) = this()
+    
+    /* CompleteClass */
+    override def getByFormat(format: String): String = js.native
+    
+    /* CompleteClass */
+    override def getDisplayValue(): String = js.native
+    
+    /* CompleteClass */
+    override def getDisplayValueinternal(): String = js.native
+    
+    /* CompleteClass */
+    override def getValue(): String = js.native
+    
+    /* CompleteClass */
+    override def setDisplayValue(asDisplayed: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setValue(o: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def subtract(start: typings.servicenow.GlideTime, end: typings.servicenow.GlideTime): typings.servicenow.GlideDuration = js.native
   }
   
   object RP {
     
-    @JSGlobal("RP.getParameterValue")
+    @JSGlobal("RP")
     @js.native
-    def getParameterValue(value: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("RP.getParameters")
-    @js.native
-    def getParameters(): js.Array[String] = js.native
+    @scala.inline
+    def getParameterValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("RP.getReferringURL")
-    @js.native
-    def getReferringURL(): String = js.native
+    @scala.inline
+    def getParameters(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameters")().asInstanceOf[js.Array[String]]
     
-    @JSGlobal("RP.getViewID")
-    @js.native
-    def getViewID(): String = js.native
+    @scala.inline
+    def getReferringURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferringURL")().asInstanceOf[String]
     
-    @JSGlobal("RP.isDialog")
-    @js.native
-    def isDialog(): Boolean = js.native
+    @scala.inline
+    def getViewID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewID")().asInstanceOf[String]
     
-    @JSGlobal("RP.isHomePage")
-    @js.native
-    def isHomePage(): Boolean = js.native
+    @scala.inline
+    def isDialog(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDialog")().asInstanceOf[Boolean]
     
-    @JSGlobal("RP.isMobile")
-    @js.native
-    def isMobile(): Boolean = js.native
+    @scala.inline
+    def isHomePage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHomePage")().asInstanceOf[Boolean]
     
-    @JSGlobal("RP.isPrint")
-    @js.native
-    def isPrint(): Boolean = js.native
+    @scala.inline
+    def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isPrint(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrint")().asInstanceOf[Boolean]
   }
   
   @JSGlobal("XMLDocument2")
   @js.native
   class XMLDocument2 ()
-    extends typings.servicenow.XMLDocument2
+    extends StObject
+       with typings.servicenow.XMLDocument2 {
+    
+    /* CompleteClass */
+    override def createElement(name: String): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def createElementWithTextValue(name: String, value: String): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def getDocumentElement(): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def getFirstNode(xpath: String): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def getNextNode(prev: js.Object): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def getNode(xpath: String): XMLNode = js.native
+    
+    /* CompleteClass */
+    override def getNodeText(xpath: String): String = js.native
+    
+    /* CompleteClass */
+    override def parseXML(xmlDoc: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setCurrentElement(element: XMLNode): Unit = js.native
+  }
   
   @JSGlobal("email")
   @js.native
@@ -191,34 +362,38 @@ object global_ {
     
     object Class {
       
-      @JSGlobal("global.Class.create")
+      @JSGlobal("global.Class")
       @js.native
-      def create(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
     }
     
     object GlideStringUtil {
       
-      @JSGlobal("global.GlideStringUtil.base64Decode")
+      @JSGlobal("global.GlideStringUtil")
       @js.native
-      def base64Decode(value: String): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("global.GlideStringUtil.base64DecodeAsBytes")
-      @js.native
-      def base64DecodeAsBytes(value: String): js.Any = js.native
+      @scala.inline
+      def base64Decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("global.GlideStringUtil.escapeHTML")
-      @js.native
-      def escapeHTML(value: String): String = js.native
+      @scala.inline
+      def base64DecodeAsBytes(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base64DecodeAsBytes")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @JSGlobal("global.GlideStringUtil.getStringFromStream")
-      @js.native
-      def getStringFromStream(stream: js.Object): String = js.native
+      @scala.inline
+      def escapeHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      @scala.inline
+      def getStringFromStream(stream: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSGlobal("global.Workflow")
     @js.native
     class Workflow ()
-      extends typings.servicenow.global.Workflow
+      extends StObject
+         with typings.servicenow.global.Workflow
   }
   
   @JSGlobal("gs")
@@ -230,15 +405,74 @@ object global_ {
     @JSGlobal("sn_ws.RESTMessageV2")
     @js.native
     class RESTMessageV2 ()
-      extends typings.servicenow.snWs.RESTMessageV2 {
+      extends StObject
+         with typings.servicenow.snWs.RESTMessageV2 {
       def this(name: String, methodName: RestHTTPMethods) = this()
     }
     
     @JSGlobal("sn_ws.SOAPMessageV2")
     @js.native
     class SOAPMessageV2 ()
-      extends typings.servicenow.snWs.SOAPMessageV2 {
+      extends StObject
+         with typings.servicenow.snWs.SOAPMessageV2 {
       def this(soapMessage: String, soapFunction: String) = this()
+      
+      /* CompleteClass */
+      override def execute(): SOAPResponseV2 = js.native
+      
+      /* CompleteClass */
+      override def executeAsync(): SOAPResponseV2 = js.native
+      
+      /* CompleteClass */
+      override def getEndpoint(): String = js.native
+      
+      /* CompleteClass */
+      override def getRequestBody(): String = js.native
+      
+      /* CompleteClass */
+      override def getRequestHeader(headerName: String): String = js.native
+      
+      /* CompleteClass */
+      override def getRequestHeaders(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def setBasicAuth(userName: String, userPass: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setEccCorrelator(correlator: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setEccParameter(name: String, value: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setEndpoint(endpoint: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setHttpMethod(method: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setHttpTimeout(timeoutMs: Double): Unit = js.native
+      
+      /* CompleteClass */
+      override def setMIDServer(midServer: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setMutualAuth(profileName: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setRequestBody(body: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setRequestHeader(name: String, value: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setStringParameter(name: String, value: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setStringParameterNoEscape(name: String, value: String): Unit = js.native
+      
+      /* CompleteClass */
+      override def setWSSecurity(keystoreId: String, keystoreAlias: String, keystorePassword: String, certificateId: String): Unit = js.native
     }
   }
 }

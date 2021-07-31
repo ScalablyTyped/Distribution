@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickListMod {
@@ -23,50 +22,49 @@ object pickListMod {
     def this(props: PickListProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PickListProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var metaKeySelection: js.UndefOr[Boolean] = js.native
+    var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Source, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Source, Unit]] = js.undefined
     
-    var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onMoveToSource: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onMoveToSource: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onMoveToTarget: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onMoveToTarget: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onSourceSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onSourceSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onTargetSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onTargetSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var showSourceControls: js.UndefOr[Boolean] = js.native
+    var showSourceControls: js.UndefOr[Boolean] = js.undefined
     
-    var showTargetControls: js.UndefOr[Boolean] = js.native
+    var showTargetControls: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[js.Array[_]] = js.native
+    var source: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var sourceHeader: js.UndefOr[js.Any] = js.native
+    var sourceHeader: js.UndefOr[js.Any] = js.undefined
     
-    var sourceStyle: js.UndefOr[js.Object] = js.native
+    var sourceStyle: js.UndefOr[js.Object] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[js.Array[_]] = js.native
+    var target: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var targetHeader: js.UndefOr[js.Any] = js.native
+    var targetHeader: js.UndefOr[js.Any] = js.undefined
     
-    var targetStyle: js.UndefOr[js.Object] = js.native
+    var targetStyle: js.UndefOr[js.Object] = js.undefined
   }
   object PickListProps {
     
@@ -158,7 +156,7 @@ object pickListMod {
       def setShowTargetControlsUndefined: Self = StObject.set(x, "showTargetControls", js.undefined)
       
       @scala.inline
-      def setSource(value: js.Array[_]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSourceHeader(value: js.Any): Self = StObject.set(x, "sourceHeader", value.asInstanceOf[js.Any])
@@ -191,7 +189,7 @@ object pickListMod {
       def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
       @scala.inline
-      def setTarget(value: js.Array[_]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      def setTarget(value: js.Array[js.Any]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTargetHeader(value: js.Any): Self = StObject.set(x, "targetHeader", value.asInstanceOf[js.Any])

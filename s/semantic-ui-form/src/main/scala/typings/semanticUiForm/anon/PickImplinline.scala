@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, 'inline'> */
-@js.native
 trait PickImplinline extends StObject {
   
-  var `inline`: Boolean = js.native
+  var `inline`: Boolean
 }
 object PickImplinline {
   

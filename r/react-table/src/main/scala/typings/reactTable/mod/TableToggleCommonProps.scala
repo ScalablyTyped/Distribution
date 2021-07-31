@@ -2,19 +2,19 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableToggleCommonProps extends TableCommonProps {
+trait TableToggleCommonProps
+  extends StObject
+     with TableCommonProps {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TableToggleCommonProps {
   

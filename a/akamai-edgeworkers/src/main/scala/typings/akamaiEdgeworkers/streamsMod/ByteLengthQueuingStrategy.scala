@@ -3,17 +3,17 @@ package typings.akamaiEdgeworkers.streamsMod
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ByteLengthQueuingStrategy extends QueuingStrategy[ArrayBufferView] {
+trait ByteLengthQueuingStrategy
+  extends StObject
+     with QueuingStrategy[ArrayBufferView] {
   
   @JSName("highWaterMark")
-  var highWaterMark_ByteLengthQueuingStrategy: Double = js.native
+  var highWaterMark_ByteLengthQueuingStrategy: Double
   
   @JSName("size")
-  def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): Double = js.native
+  def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): Double
 }
 object ByteLengthQueuingStrategy {
   

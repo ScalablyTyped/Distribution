@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyBinaryHeaders extends StObject {
   
-  var body: Binary = js.native
+  var body: Binary
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Binary = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Binary
 }
 object BodyBinaryHeaders {
   
   @scala.inline
-  def apply(body: Binary, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Binary): BodyBinaryHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Binary, id: String): BodyBinaryHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Binary")
     __obj.asInstanceOf[BodyBinaryHeaders]
   }
   

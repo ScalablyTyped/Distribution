@@ -4,15 +4,13 @@ import typings.gapiCalendar.gapi.client.calendar.ReminderMethod
 import typings.gapiCalendar.gapi.client.calendar.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Method extends StObject {
   
-  var method: ReminderMethod = js.native
+  var method: ReminderMethod
   
-  var minutes: integer = js.native
+  var minutes: integer
 }
 object Method {
   

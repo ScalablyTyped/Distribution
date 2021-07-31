@@ -2,26 +2,24 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDetectorRequest extends StObject {
   
   /**
     * The detector ID.
     */
-  var detectorId: identifier = js.native
+  var detectorId: identifier
   
   /**
     * The maximum number of results to return for the request.
     */
-  var maxResults: js.UndefOr[DetectorVersionMaxResults] = js.native
+  var maxResults: js.UndefOr[DetectorVersionMaxResults] = js.undefined
   
   /**
     * The next token from the previous response.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeDetectorRequest {
   

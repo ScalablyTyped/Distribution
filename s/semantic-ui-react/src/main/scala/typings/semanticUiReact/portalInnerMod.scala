@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalInnerMod {
@@ -18,9 +17,9 @@ object portalInnerMod {
   
   type PortalInner = Component[PortalInnerProps, js.Object, js.Any]
   
-  @js.native
   trait PortalInnerProps
-    extends StrictPortalInnerProps
+    extends StObject
+       with StrictPortalInnerProps
        with /* key */ StringDictionary[js.Any]
   object PortalInnerProps {
     
@@ -31,17 +30,16 @@ object portalInnerMod {
     }
   }
   
-  @js.native
   trait StrictPortalInnerProps extends StObject {
     
     /** Primary content. */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /** Called with a ref to the inner node. */
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
     /** The node where the portal should mount. */
-    var mountNode: js.UndefOr[js.Any] = js.native
+    var mountNode: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Called when the PortalInner is mounted on the DOM.
@@ -49,7 +47,7 @@ object portalInnerMod {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.native
+    var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.undefined
     
     /**
       * Called when the PortalInner is unmounted from the DOM.
@@ -57,7 +55,7 @@ object portalInnerMod {
       * @param {null}
       * @param {object} data - All props.
       */
-    var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.native
+    var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.undefined
   }
   object StrictPortalInnerProps {
     
@@ -77,10 +75,10 @@ object portalInnerMod {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

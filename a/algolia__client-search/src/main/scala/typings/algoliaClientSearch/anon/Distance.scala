@@ -2,17 +2,15 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
-  val distance: Double = js.native
+  val distance: Double
   
-  val lat: Double = js.native
+  val lat: Double
   
-  val lng: Double = js.native
+  val lng: Double
 }
 object Distance {
   

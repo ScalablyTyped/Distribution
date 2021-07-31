@@ -10,7 +10,6 @@ import typings.ol.pixelMod.Pixel
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragBoxMod {
@@ -87,20 +86,19 @@ object dragBoxMod {
     Boolean
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var boxEndCondition: js.UndefOr[EndCondition] = js.native
+    var boxEndCondition: js.UndefOr[EndCondition] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var minArea: js.UndefOr[Double] = js.native
+    var minArea: js.UndefOr[Double] = js.undefined
     
     var onBoxEnd: js.UndefOr[
         js.ThisFunction1[/* this */ DragBox, /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

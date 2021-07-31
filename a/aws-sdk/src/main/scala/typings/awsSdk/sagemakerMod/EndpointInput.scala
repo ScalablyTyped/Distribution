@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointInput extends StObject {
   
   /**
     * An endpoint in customer's account which has enabled DataCaptureConfig enabled.
     */
-  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName = js.native
+  var EndpointName: typings.awsSdk.sagemakerMod.EndpointName
   
   /**
     * Path to the filesystem where the endpoint data is available to the container.
     */
-  var LocalPath: ProcessingLocalPath = js.native
+  var LocalPath: ProcessingLocalPath
   
   /**
     * Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key. Defauts to FullyReplicated 
     */
-  var S3DataDistributionType: js.UndefOr[ProcessingS3DataDistributionType] = js.native
+  var S3DataDistributionType: js.UndefOr[ProcessingS3DataDistributionType] = js.undefined
   
   /**
     * Whether the Pipe or File is used as the input mode for transfering data for the monitoring job. Pipe mode is recommended for large datasets. File mode is useful for small files that fit in memory. Defaults to File.
     */
-  var S3InputMode: js.UndefOr[ProcessingS3InputMode] = js.native
+  var S3InputMode: js.UndefOr[ProcessingS3InputMode] = js.undefined
 }
 object EndpointInput {
   

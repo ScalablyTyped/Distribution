@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mocked {
@@ -24,22 +23,28 @@ object mocked {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.MockInstance<ReturnType<T>, ArgumentsOf<T>> * / any */ @js.native
-  trait MockWithArgs[T /* <: MockableFunction */] extends Instantiable1[/* args */ ConstructorArgumentsOf[T], T] {
+  trait MockWithArgs[T /* <: MockableFunction */]
+    extends StObject
+       with Instantiable1[/* args */ ConstructorArgumentsOf[T], T] {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgumentsOf<T> is not an array type */ args: ArgumentsOf[T]
     ): ReturnType[T] = js.native
   }
   
-  type MockableFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait MockableFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
-  type MockedFunction[T /* <: MockableFunction */] = MockWithArgs[T] with typings.heftJest.heftJestStrings.MockedFunction with TopLevel[T]
+  type MockedFunction[T /* <: MockableFunction */] = MockWithArgs[T] & typings.heftJest.heftJestStrings.MockedFunction & TopLevel[T]
   
-  type MockedFunctionDeep[T /* <: MockableFunction */] = MockWithArgs[T] with MockedObjectDeep[T]
+  type MockedFunctionDeep[T /* <: MockableFunction */] = MockWithArgs[T] & MockedObjectDeep[T]
   
-  type MockedObject[T] = MaybeMockedConstructor[T] with typings.heftJest.heftJestStrings.MockedObject with TopLevel[js.Any] with TopLevel[T]
+  type MockedObject[T] = MaybeMockedConstructor[T] & typings.heftJest.heftJestStrings.MockedObject & TopLevel[js.Any] & TopLevel[T]
   
-  type MockedObjectDeep[T] = MaybeMockedConstructor[T] with typings.heftJest.heftJestStrings.MockedObjectDeep with TopLevel[js.Any] with TopLevel[T]
+  type MockedObjectDeep[T] = MaybeMockedConstructor[T] & typings.heftJest.heftJestStrings.MockedObjectDeep & TopLevel[js.Any] & TopLevel[T]
   
   type PropertyKeysOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends heft-jest.mocked.MockableFunction? never : K}[keyof T] */ js.Any
 }

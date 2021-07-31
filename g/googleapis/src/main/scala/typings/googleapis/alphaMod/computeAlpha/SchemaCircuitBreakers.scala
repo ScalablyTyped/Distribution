@@ -2,37 +2,35 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Settings controlling the volume of connections to a backend service.
   */
-@js.native
 trait SchemaCircuitBreakers extends StObject {
   
   /**
     * The timeout for new network connections to hosts.
     */
-  var connectTimeout: js.UndefOr[SchemaDuration] = js.native
+  var connectTimeout: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
     * The maximum number of connections to the backend cluster. If not
     * specified, the default is 1024.
     */
-  var maxConnections: js.UndefOr[Double] = js.native
+  var maxConnections: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of pending requests allowed to the backend cluster. If
     * not specified, the default is 1024.
     */
-  var maxPendingRequests: js.UndefOr[Double] = js.native
+  var maxPendingRequests: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of parallel requests that allowed to the backend
     * cluster. If not specified, the default is 1024.
     */
-  var maxRequests: js.UndefOr[Double] = js.native
+  var maxRequests: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum requests for a single backend connection. This parameter is
@@ -40,13 +38,13 @@ trait SchemaCircuitBreakers extends StObject {
     * specified, there is no limit. Setting this parameter to 1 will
     * effectively disable keep alive.
     */
-  var maxRequestsPerConnection: js.UndefOr[Double] = js.native
+  var maxRequestsPerConnection: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of parallel retries allowed to the backend cluster. If
     * not specified, the default is 3.
     */
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
 }
 object SchemaCircuitBreakers {
   

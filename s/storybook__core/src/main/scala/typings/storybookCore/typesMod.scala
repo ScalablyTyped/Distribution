@@ -3,7 +3,6 @@ package typings.storybookCore
 import typings.storybookClientApi.typesMod.RenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -12,12 +11,11 @@ object typesMod {
   
   type LoaderFunction = js.Function0[Unit | js.Array[js.Any]]
   
-  @js.native
   trait PreviewError extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object PreviewError {
     

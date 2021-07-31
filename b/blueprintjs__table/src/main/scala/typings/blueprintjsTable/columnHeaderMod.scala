@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnHeaderMod {
@@ -67,7 +66,8 @@ object columnHeaderMod {
   
   @js.native
   trait IColumnHeaderProps
-    extends IHeaderProps
+    extends StObject
+       with IHeaderProps
        with IColumnWidths
        with IColumnIndices {
     
@@ -93,14 +93,13 @@ object columnHeaderMod {
   
   type IColumnHeaderRenderer = js.Function1[/* columnIndex */ Double, ReactElement]
   
-  @js.native
   trait IColumnWidths extends StObject {
     
-    var defaultColumnWidth: js.UndefOr[Double] = js.native
+    var defaultColumnWidth: js.UndefOr[Double] = js.undefined
     
-    var maxColumnWidth: js.UndefOr[Double] = js.native
+    var maxColumnWidth: js.UndefOr[Double] = js.undefined
     
-    var minColumnWidth: js.UndefOr[Double] = js.native
+    var minColumnWidth: js.UndefOr[Double] = js.undefined
   }
   object IColumnWidths {
     

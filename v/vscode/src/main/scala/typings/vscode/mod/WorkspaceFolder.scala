@@ -2,22 +2,22 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkspaceFolder extends ConfigurationScope {
+trait WorkspaceFolder
+  extends StObject
+     with ConfigurationScope {
   
   /**
     * The ordinal number of this workspace folder.
     */
-  val index: Double = js.native
+  val index: Double
   
   /**
     * The name of this workspace folder. Defaults to
     * the basename of its [uri-path](#Uri.path)
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * The associated uri for this workspace folder.
@@ -25,7 +25,7 @@ trait WorkspaceFolder extends ConfigurationScope {
     * *Note:* The [Uri](#Uri)-type was intentionally chosen such that future releases of the editor can support
     * workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
     */
-  val uri: Uri = js.native
+  val uri: Uri
 }
 object WorkspaceFolder {
   

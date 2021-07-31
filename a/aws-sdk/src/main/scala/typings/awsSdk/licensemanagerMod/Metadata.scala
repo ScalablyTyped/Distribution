@@ -2,21 +2,19 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /**
     * Reserved.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

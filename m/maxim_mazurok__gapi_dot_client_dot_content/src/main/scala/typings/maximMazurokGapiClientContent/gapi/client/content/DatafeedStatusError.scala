@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedStatusError extends StObject {
   
   /** The code of the error, e.g., "validation/invalid_value". */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** The number of occurrences of the error in the feed. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** A list of example occurrences of the error, grouped by product. */
-  var examples: js.UndefOr[js.Array[DatafeedStatusExample]] = js.native
+  var examples: js.UndefOr[js.Array[DatafeedStatusExample]] = js.undefined
   
   /** The error message, e.g., "Invalid price". */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object DatafeedStatusError {
   

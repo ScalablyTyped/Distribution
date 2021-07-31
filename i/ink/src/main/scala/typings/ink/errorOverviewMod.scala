@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorOverviewMod extends Shortcut {
@@ -14,10 +13,9 @@ object errorOverviewMod extends Shortcut {
   @js.native
   val default: FC[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
-    val error: Error = js.native
+    val error: Error
   }
   object Props {
     

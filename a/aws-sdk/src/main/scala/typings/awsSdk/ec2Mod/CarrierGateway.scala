@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarrierGateway extends StObject {
   
   /**
     * The ID of the carrier gateway.
     */
-  var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.native
+  var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
     * The AWS account ID of the owner of the carrier gateway.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the carrier gateway.
     */
-  var State: js.UndefOr[CarrierGatewayState] = js.native
+  var State: js.UndefOr[CarrierGatewayState] = js.undefined
   
   /**
     * The tags assigned to the carrier gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC associated with the carrier gateway.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.undefined
 }
 object CarrierGateway {
   

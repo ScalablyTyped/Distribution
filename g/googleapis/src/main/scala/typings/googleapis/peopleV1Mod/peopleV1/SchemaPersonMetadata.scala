@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The read-only metadata about a person.
   */
-@js.native
 trait SchemaPersonMetadata extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaPersonMetadata extends StObject {
     * [`connections.list`](/people/api/rest/v1/people.connections/list)
     * requests that include a sync token.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resource names of people linked to this resource.
     */
-  var linkedPeopleResourceNames: js.UndefOr[js.Array[String]] = js.native
+  var linkedPeopleResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * **DEPRECATED** (Please use
     * `person.metadata.sources.profileMetadata.objectType` instead)  The type
     * of the person object.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * Any former resource names this person has had. Populated only for
@@ -37,12 +35,12 @@ trait SchemaPersonMetadata extends StObject {
     * adding or removing fields that link a contact and profile such as a
     * verified email, verified phone number, or profile URL.
     */
-  var previousResourceNames: js.UndefOr[js.Array[String]] = js.native
+  var previousResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The sources of data for the person.
     */
-  var sources: js.UndefOr[js.Array[SchemaSource]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
 }
 object SchemaPersonMetadata {
   

@@ -2,21 +2,19 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationProviderStatus extends StObject {
   
-  var backgroundModeEnabled: Boolean = js.native
+  var backgroundModeEnabled: Boolean
   
-  var gpsAvailable: js.UndefOr[Boolean] = js.native
+  var gpsAvailable: js.UndefOr[Boolean] = js.undefined
   
-  var locationServicesEnabled: Boolean = js.native
+  var locationServicesEnabled: Boolean
   
-  var networkAvailable: js.UndefOr[Boolean] = js.native
+  var networkAvailable: js.UndefOr[Boolean] = js.undefined
   
-  var passiveAvailable: js.UndefOr[Boolean] = js.native
+  var passiveAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object LocationProviderStatus {
   

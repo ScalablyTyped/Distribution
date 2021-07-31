@@ -4,31 +4,29 @@ import typings.mapboxGl.mod.Map
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapContextProps extends StObject {
   
-  var eventManager: js.UndefOr[EventManager] = js.native
+  var eventManager: js.UndefOr[EventManager] = js.undefined
   
-  var isDragging: Boolean = js.native
+  var isDragging: Boolean
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var mapContainer: HTMLElement | Null = js.native
+  var mapContainer: HTMLElement | Null
   
-  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.native
+  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
   
-  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   
-  var viewport: js.UndefOr[typings.viewportMercatorProject.mod.default] = js.native
+  var viewport: js.UndefOr[typings.viewportMercatorProject.mod.default] = js.undefined
 }
 object MapContextProps {
   
   @scala.inline
   def apply(isDragging: Boolean): MapContextProps = {
-    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], mapContainer = null)
     __obj.asInstanceOf[MapContextProps]
   }
   

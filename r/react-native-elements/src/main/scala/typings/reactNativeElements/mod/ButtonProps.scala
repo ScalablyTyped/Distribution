@@ -14,25 +14,25 @@ import typings.reactNativeElements.reactNativeElementsStrings.outline
 import typings.reactNativeElements.reactNativeElementsStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
+- typings.reactNative.mod.AccessibilityProps because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackPropsAndroid because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackPropsIOS because Already inherited
-- typings.reactNative.mod.AccessibilityProps because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackProps because Already inherited
-- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, touchSoundDisabled, tvParallaxProperties. Inlined useForeground, background */ @js.native
-trait ButtonProps extends TouchableOpacityProps {
+- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, touchSoundDisabled, tvParallaxProperties. Inlined useForeground, background */ trait ButtonProps
+  extends StObject
+     with TouchableOpacityProps {
   
   /**
     * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
     *
     * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
     */
-  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Specify a different component as the background for the button.
@@ -40,7 +40,7 @@ trait ButtonProps extends TouchableOpacityProps {
     *
     * @default View
     */
-  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
+  var ViewComponent: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
   
   /**
     * Determines the type of background drawable that's going to be used to display feedback.
@@ -56,31 +56,31 @@ trait ButtonProps extends TouchableOpacityProps {
     *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
     *         type is available on Android API level 21+
     */
-  var background: js.UndefOr[BackgroundPropType] = js.native
+  var background: js.UndefOr[BackgroundPropType] = js.undefined
   
   /**
     * Additional styling for button (background) view component
     *
     * @default null
     */
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for Component container
     *
     * @default null
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Style of the button when disabled
     */
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Style of the title when the button is disabled
     */
-  var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * If the user is allowed to interact with the button
@@ -88,77 +88,77 @@ trait ButtonProps extends TouchableOpacityProps {
     * @default false
     */
   @JSName("disabled")
-  var disabled_ButtonProps: js.UndefOr[Boolean] = js.native
+  var disabled_ButtonProps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Icon to show in the button
     */
-  var icon: js.UndefOr[IconNode] = js.native
+  var icon: js.UndefOr[IconNode] = js.undefined
   
   /**
     * Style for the container around the icon
     */
-  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * If to show the icon on the right
     *
     * @default false
     */
-  var iconRight: js.UndefOr[Boolean] = js.native
+  var iconRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Object of props to be applied to the linearGradient view(ViewComponent)
     */
-  var linearGradientProps: js.UndefOr[js.Object] = js.native
+  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Display a loading spinner
     *
     * @default false
     */
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional props to applied to the ActivityIndicator
     */
-  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.native
+  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.undefined
   
   /**
     * Additional style to applied to the ActivityIndicator
     */
-  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * If the button has raised styling
     *
     * @default false
     */
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Button title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Optional props for the title inside the button
     */
-  var titleProps: js.UndefOr[TextProperties] = js.native
+  var titleProps: js.UndefOr[TextProperties] = js.undefined
   
   /**
     * Title styling
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Type of button
     *
     * @default solid
     */
-  var `type`: js.UndefOr[solid | clear | outline] = js.native
+  var `type`: js.UndefOr[solid | clear | outline] = js.undefined
   
-  var useForeground: js.UndefOr[Boolean] = js.native
+  var useForeground: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonProps {
   
@@ -313,7 +313,7 @@ object ButtonProps {
     def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
     
     @scala.inline
-    def setViewComponent(value: ComponentClass[_, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
+    def setViewComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)

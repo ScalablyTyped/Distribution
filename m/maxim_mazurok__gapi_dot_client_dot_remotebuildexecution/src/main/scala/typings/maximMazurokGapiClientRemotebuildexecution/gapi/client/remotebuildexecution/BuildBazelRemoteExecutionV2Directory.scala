@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2Directory extends StObject {
   
   /** The subdirectories in the directory. */
-  var directories: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2DirectoryNode]] = js.native
+  var directories: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2DirectoryNode]] = js.undefined
   
   /** The files in the directory. */
-  var files: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2FileNode]] = js.native
+  var files: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2FileNode]] = js.undefined
   
   /** The node properties of the Directory. */
-  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.native
+  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.undefined
   
   /** The symlinks in the directory. */
-  var symlinks: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2SymlinkNode]] = js.native
+  var symlinks: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2SymlinkNode]] = js.undefined
 }
 object BuildBazelRemoteExecutionV2Directory {
   

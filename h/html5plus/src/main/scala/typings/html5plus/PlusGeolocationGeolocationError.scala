@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
-@js.native
 trait PlusGeolocationGeolocationError extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var PERMISSION_DENIED: js.UndefOr[Double] = js.native
+  var PERMISSION_DENIED: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置信息不可用
@@ -27,7 +25,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var POSITION_UNAVAILABLE: js.UndefOr[Double] = js.native
+  var POSITION_UNAVAILABLE: js.UndefOr[Double] = js.undefined
   
   /**
     * 获取位置信息超时
@@ -35,7 +33,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var TIMEOUT: js.UndefOr[Double] = js.native
+  var TIMEOUT: js.UndefOr[Double] = js.undefined
   
   /**
     * 未知错误
@@ -43,7 +41,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var UNKNOWN_ERROR: js.UndefOr[Double] = js.native
+  var UNKNOWN_ERROR: js.UndefOr[Double] = js.undefined
   
   /**
     * 错误代码
@@ -51,7 +49,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * 错误描述信息
@@ -59,7 +57,7 @@ trait PlusGeolocationGeolocationError extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object PlusGeolocationGeolocationError {
   

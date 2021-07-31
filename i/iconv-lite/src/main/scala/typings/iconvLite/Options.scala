@@ -2,17 +2,15 @@ package typings.iconvLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var addBOM: js.UndefOr[Boolean] = js.native
+  var addBOM: js.UndefOr[Boolean] = js.undefined
   
-  var defaultEncoding: js.UndefOr[String] = js.native
+  var defaultEncoding: js.UndefOr[String] = js.undefined
   
-  var stripBOM: js.UndefOr[Boolean] = js.native
+  var stripBOM: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

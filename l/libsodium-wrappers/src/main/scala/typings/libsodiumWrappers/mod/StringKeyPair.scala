@@ -2,17 +2,15 @@ package typings.libsodiumWrappers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringKeyPair extends StObject {
   
-  var keyType: KeyType = js.native
+  var keyType: KeyType
   
-  var privateKey: String = js.native
+  var privateKey: String
   
-  var publicKey: String = js.native
+  var publicKey: String
 }
 object StringKeyPair {
   

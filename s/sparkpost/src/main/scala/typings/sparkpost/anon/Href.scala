@@ -2,17 +2,15 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var method: js.Array[String] = js.native
+  var method: js.Array[String]
   
-  var rel: String = js.native
+  var rel: String
 }
 object Href {
   

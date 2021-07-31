@@ -23,24 +23,23 @@ import typings.tarStream.tarStreamStrings.link
 import typings.tarStream.tarStreamStrings.symlink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tar-stream", "extract")
+  @JSImport("tar-stream", JSImport.Namespace)
   @js.native
-  def extract(): Extract_ = js.native
-  @JSImport("tar-stream", "extract")
-  @js.native
-  def extract(opts: WritableOptions): Extract_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tar-stream", "pack")
-  @js.native
-  def pack(): Pack_ = js.native
-  @JSImport("tar-stream", "pack")
-  @js.native
-  def pack(opts: ReadableOptions): Pack_ = js.native
+  @scala.inline
+  def extract(): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")().asInstanceOf[Extract_]
+  @scala.inline
+  def extract(opts: WritableOptions): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(opts.asInstanceOf[js.Any]).asInstanceOf[Extract_]
+  
+  @scala.inline
+  def pack(): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[Pack_]
+  @scala.inline
+  def pack(opts: ReadableOptions): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(opts.asInstanceOf[js.Any]).asInstanceOf[Pack_]
   
   type Callback = js.Function1[/* err */ js.UndefOr[Error | Null], js.Any]
   
@@ -54,34 +53,33 @@ object mod {
     ): this.type = js.native
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var devmajor: js.UndefOr[Double] = js.native
+    var devmajor: js.UndefOr[Double] = js.undefined
     
-    var devminor: js.UndefOr[Double] = js.native
+    var devminor: js.UndefOr[Double] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var gname: js.UndefOr[String] = js.native
+    var gname: js.UndefOr[String] = js.undefined
     
-    var linkname: js.UndefOr[String | Null] = js.native
+    var linkname: js.UndefOr[String | Null] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     var `type`: js.UndefOr[
         file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path` | Null
-      ] = js.native
+      ] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
-    var uname: js.UndefOr[String] = js.native
+    var uname: js.UndefOr[String] = js.undefined
   }
   object Headers {
     
@@ -180,9 +178,9 @@ object mod {
       * To create a pack stream use tar.pack() and call pack.entry(header, [callback]) to add tar entries.
       */
     def entry(headers: Headers): Writable = js.native
-    def entry(headers: Headers, buffer: js.UndefOr[scala.Nothing], callback: Callback): Writable = js.native
     def entry(headers: Headers, buffer: String): Writable = js.native
     def entry(headers: Headers, buffer: String, callback: Callback): Writable = js.native
+    def entry(headers: Headers, buffer: Unit, callback: Callback): Writable = js.native
     def entry(headers: Headers, buffer: Buffer): Writable = js.native
     def entry(headers: Headers, buffer: Buffer, callback: Callback): Writable = js.native
     def entry(headers: Headers, callback: Callback): Writable = js.native

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomViewModelProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait ZoomViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#canZoomIn)
     */
-  var canZoomIn: js.UndefOr[Boolean] = js.native
+  var canZoomIn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the view can zoom out.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#canZoomOut)
     */
-  var canZoomOut: js.UndefOr[Boolean] = js.native
+  var canZoomOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view from which to operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object ZoomViewModelProperties {
   

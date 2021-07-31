@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecryptResponse extends StObject {
   
   /** The decrypted data originally supplied in EncryptRequest.plaintext. */
-  var plaintext: js.UndefOr[String] = js.native
+  var plaintext: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A CRC32C checksum of the returned DecryptResponse.plaintext. An integrity check of DecryptResponse.plaintext can be performed by computing the CRC32C
@@ -18,7 +16,7 @@ trait DecryptResponse extends StObject {
     * successfully decrypt the ciphertext. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which will
     * never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This field is in Beta.
     */
-  var plaintextCrc32c: js.UndefOr[String] = js.native
+  var plaintextCrc32c: js.UndefOr[String] = js.undefined
 }
 object DecryptResponse {
   

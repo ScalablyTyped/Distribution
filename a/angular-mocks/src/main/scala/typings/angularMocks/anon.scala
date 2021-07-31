@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -17,12 +16,12 @@ object anon {
     def sharedInjector(): Unit = js.native
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     @JSName("$scope")
-    var $scope: js.UndefOr[IScope] = js.native
+    var $scope: js.UndefOr[IScope] = js.undefined
   }
   object Dictkey {
     

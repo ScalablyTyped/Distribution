@@ -2,37 +2,35 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectMenuOptions extends StObject {
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var hidePlaceholderMenuItems: Boolean = js.native
+  var hidePlaceholderMenuItems: Boolean
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconpos: js.UndefOr[String] = js.native
+  var iconpos: js.UndefOr[String] = js.undefined
   
-  var iconshadow: js.UndefOr[Boolean] = js.native
+  var iconshadow: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var nativeMenu: js.UndefOr[Boolean] = js.native
+  var nativeMenu: js.UndefOr[Boolean] = js.undefined
   
-  var overlayTheme: js.UndefOr[String] = js.native
+  var overlayTheme: js.UndefOr[String] = js.undefined
   
-  var preventFocusZoom: js.UndefOr[Boolean] = js.native
+  var preventFocusZoom: js.UndefOr[Boolean] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object SelectMenuOptions {
   

@@ -5,7 +5,6 @@ import typings.chromecastCafSender.cast.framework.CastContextEventType.CAST_STAT
 import typings.chromecastCafSender.cast.framework.CastContextEventType.SESSION_STATE_CHANGED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

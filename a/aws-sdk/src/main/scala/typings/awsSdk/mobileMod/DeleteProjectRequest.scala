@@ -2,16 +2,14 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectRequest extends StObject {
   
   /**
     *  Unique project identifier. 
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
 }
 object DeleteProjectRequest {
   

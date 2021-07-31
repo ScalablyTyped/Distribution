@@ -2,23 +2,21 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECBlocks extends StObject {
   
-  val ECCodewordsPerBlock: Double = js.native
+  val ECCodewordsPerBlock: Double
   
-  val NumBlocks: Double = js.native
+  val NumBlocks: Double
   
-  val TotalECCodewords: Double = js.native
+  val TotalECCodewords: Double
   
-  var ecBlocks: js.Array[ECB] | (js.Tuple2[ECB, ECB]) = js.native
+  var ecBlocks: js.Array[ECB] | (js.Tuple2[ECB, ECB])
   
-  var ecCodewordsPerBlock: Double = js.native
+  var ecCodewordsPerBlock: Double
   
-  def getECBlocks(): js.Array[ECB] | (js.Tuple2[ECB, ECB]) = js.native
+  def getECBlocks(): js.Array[ECB] | (js.Tuple2[ECB, ECB])
 }
 object ECBlocks {
   

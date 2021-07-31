@@ -2,53 +2,53 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapCardViewEventMap extends BootstrapGridBaseEventMap {
+trait BootstrapCardViewEventMap
+  extends StObject
+     with BootstrapGridBaseEventMap {
   
-  var batchEditCardDeleting: CardViewBatchEditCardDeletingEventArgs = js.native
+  var batchEditCardDeleting: CardViewBatchEditCardDeletingEventArgs
   
-  var batchEditCardInserting: CardViewBatchEditCardInsertingEventArgs = js.native
+  var batchEditCardInserting: CardViewBatchEditCardInsertingEventArgs
   
-  var batchEditCardValidating: CardViewBatchEditCardValidatingEventArgs = js.native
+  var batchEditCardValidating: CardViewBatchEditCardValidatingEventArgs
   
-  var batchEditChangesCanceling: CardViewBatchEditChangesCancelingEventArgs = js.native
+  var batchEditChangesCanceling: CardViewBatchEditChangesCancelingEventArgs
   
-  var batchEditChangesSaving: CardViewBatchEditChangesSavingEventArgs = js.native
+  var batchEditChangesSaving: CardViewBatchEditChangesSavingEventArgs
   
-  var batchEditConfirmShowing: CardViewBatchEditConfirmShowingEventArgs = js.native
+  var batchEditConfirmShowing: CardViewBatchEditConfirmShowingEventArgs
   
-  var batchEditEndEditing: CardViewBatchEditEndEditingEventArgs = js.native
+  var batchEditEndEditing: CardViewBatchEditEndEditingEventArgs
   
-  var batchEditStartEditing: CardViewBatchEditStartEditingEventArgs = js.native
+  var batchEditStartEditing: CardViewBatchEditStartEditingEventArgs
   
-  var batchEditTemplateCellFocused: CardViewBatchEditTemplateCellFocusedEventArgs = js.native
+  var batchEditTemplateCellFocused: CardViewBatchEditTemplateCellFocusedEventArgs
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var cardClick: CardViewCardClickEventArgs = js.native
+  var cardClick: CardViewCardClickEventArgs
   
-  var cardDblClick: CardViewCardClickEventArgs = js.native
+  var cardDblClick: CardViewCardClickEventArgs
   
-  var cardFocusing: CardViewCardFocusingEventArgs = js.native
+  var cardFocusing: CardViewCardFocusingEventArgs
   
-  var columnSorting: CardViewColumnCancelEventArgs = js.native
+  var columnSorting: CardViewColumnCancelEventArgs
   
-  var customButtonClick: CardViewCustomButtonEventArgs = js.native
+  var customButtonClick: CardViewCustomButtonEventArgs
   
-  var customizationWindowCloseUp: EventArgs = js.native
+  var customizationWindowCloseUp: EventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var focusedCardChanged: CardViewFocusEventArgs = js.native
+  var focusedCardChanged: CardViewFocusEventArgs
   
-  var focusedCellChanging: CardViewFocusedCellChangingEventArgs = js.native
+  var focusedCellChanging: CardViewFocusedCellChangingEventArgs
   
-  var selectionChanged: CardViewSelectionEventArgs = js.native
+  var selectionChanged: CardViewSelectionEventArgs
 }
 object BootstrapCardViewEventMap {
   

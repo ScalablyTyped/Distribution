@@ -4,49 +4,48 @@ import typings.std.Event
 import typings.std.FocusEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Controls {
   
-  @js.native
   trait Button
-    extends Control
+    extends StObject
+       with Control
        with ISelectableControl {
     
-    def createComponentForDisplayModeInternal(displayMode: String): js.Any = js.native
+    def createComponentForDisplayModeInternal(displayMode: String): js.Any
     
-    def createDOMElementForDisplayMode(displayMode: String): js.Any = js.native
+    def createDOMElementForDisplayMode(displayMode: String): js.Any
     
-    def deselect(): scala.Unit = js.native
+    def deselect(): scala.Unit
     
-    def focusOnDisplayedComponent(): scala.Unit = js.native
+    def focusOnDisplayedComponent(): scala.Unit
     
-    def getCommandValueId(): String = js.native
+    def getCommandValueId(): String
     
-    def getDropDownDOMElementForDisplayMode(displayMode: String): scala.Unit = js.native
+    def getDropDownDOMElementForDisplayMode(displayMode: String): scala.Unit
     
-    def getLabel(): String = js.native
+    def getLabel(): String
     
-    def getMenuItemId(): String = js.native
+    def getMenuItemId(): String
     
-    def getTextValue(): String = js.native
+    def getTextValue(): String
     
-    def handleMouseBlur(e: FocusEvent): js.Any = js.native
+    def handleMouseBlur(e: FocusEvent): js.Any
     
-    def handleMouseFocus(e: FocusEvent): js.Any = js.native
+    def handleMouseFocus(e: FocusEvent): js.Any
     
-    def handleTabBlur(e: FocusEvent): js.Any = js.native
+    def handleTabBlur(e: FocusEvent): js.Any
     
-    def handleTabFocus(e: FocusEvent): js.Any = js.native
+    def handleTabFocus(e: FocusEvent): js.Any
     
-    def onClick(e: Event): scala.Unit = js.native
+    def onClick(e: Event): scala.Unit
     
-    def onEnabledChanged(enabled: Boolean): js.Any = js.native
+    def onEnabledChanged(enabled: Boolean): js.Any
     
-    def onMenuClosed(): scala.Unit = js.native
+    def onMenuClosed(): scala.Unit
     
-    def receiveFocus(): scala.Unit = js.native
+    def receiveFocus(): scala.Unit
   }
   object Button {
     
@@ -138,11 +137,11 @@ object Controls {
   
   type CheckBox = ToggleButton
   
-  @js.native
   trait CheckBoxCommandProperties extends StObject
   
-  @js.native
-  trait ColorPicker extends Control
+  trait ColorPicker
+    extends StObject
+       with Control
   object ColorPicker {
     
     @scala.inline
@@ -159,7 +158,6 @@ object Controls {
     }
   }
   
-  @js.native
   trait ColorPickerCommandProperties extends StObject
   
   type ComboBox = DropDown
@@ -168,12 +166,11 @@ object Controls {
   
   type DropDown = MenuLauncher
   
-  @js.native
   trait DropDownCommandProperties extends StObject {
     
-    var SelectedItemId: String = js.native
+    var SelectedItemId: String
     
-    var Value: String = js.native
+    var Value: String
   }
   object DropDownCommandProperties {
     
@@ -196,9 +193,9 @@ object Controls {
   
   type FlyoutAnchor = MenuLauncher
   
-  @js.native
   trait GalleryButton
-    extends Control
+    extends StObject
+       with Control
        with ISelectableControl
   object GalleryButton {
     
@@ -216,19 +213,16 @@ object Controls {
     }
   }
   
-  @js.native
   trait GalleryButtonCommandProperties extends StObject
   
   type InsertTable = Control
   
-  @js.native
   trait InsertTableCommandProperties extends StObject
   
   type JewelMenuLauncher = MenuLauncher
   
   type Label = Control
   
-  @js.native
   trait LabelCommandProperties extends StObject
   
   type MRUSplitButton = DropDown
@@ -237,19 +231,17 @@ object Controls {
   
   type Spinner = Control
   
-  @js.native
   trait SpinnerCommandProperties extends StObject
   
   type SplitButton = MenuLauncher
   
   type TextBox = Control
   
-  @js.native
   trait TextBoxCommandProperties extends StObject
   
-  @js.native
   trait ToggleButton
-    extends Control
+    extends StObject
+       with Control
        with ISelectableControl
   object ToggleButton {
     
@@ -267,6 +259,5 @@ object Controls {
     }
   }
   
-  @js.native
   trait ToggleButtonCommandProperties extends StObject
 }

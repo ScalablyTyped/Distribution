@@ -3,26 +3,26 @@ package typings.naturalSort
 import typings.naturalSort.naturalSortStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("natural-sort", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = js.native
-  @JSImport("natural-sort", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = js.native
+  @scala.inline
+  def apply(): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function2[/* a */ String | Double, /* b */ String | Double, Double]]
+  @scala.inline
+  def apply(options: Options): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ String | Double, /* b */ String | Double, Double]]
   
+  @JSImport("natural-sort", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /** Set to true to make the sort case-sensitive. */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /** Set to 'desc' to sort in reverse. */
-    var direction: js.UndefOr[desc] = js.native
+    var direction: js.UndefOr[desc] = js.undefined
   }
   object Options {
     

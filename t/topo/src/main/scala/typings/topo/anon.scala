@@ -2,21 +2,19 @@ package typings.topo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait After[TGroup] extends StObject {
     
-    var after: js.UndefOr[TGroup | js.Array[TGroup]] = js.native
+    var after: js.UndefOr[TGroup | js.Array[TGroup]] = js.undefined
     
-    var before: js.UndefOr[TGroup | js.Array[TGroup]] = js.native
+    var before: js.UndefOr[TGroup | js.Array[TGroup]] = js.undefined
     
-    var group: js.UndefOr[TGroup] = js.native
+    var group: js.UndefOr[TGroup] = js.undefined
     
-    var sort: js.UndefOr[Double] = js.native
+    var sort: js.UndefOr[Double] = js.undefined
   }
   object After {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AfterMutableBuilder[Self <: After[_], TGroup] (val x: Self with After[TGroup]) extends AnyVal {
+    implicit class AfterMutableBuilder[Self <: After[?], TGroup] (val x: Self & After[TGroup]) extends AnyVal {
       
       @scala.inline
       def setAfter(value: TGroup | js.Array[TGroup]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])

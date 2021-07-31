@@ -3,19 +3,17 @@ package typings.gestalt.mod
 import typings.gestalt.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleExpandableProps extends StObject {
   
-  var accessibilityCollapseLabel: String = js.native
+  var accessibilityCollapseLabel: String
   
-  var accessibilityExpandLabel: String = js.native
+  var accessibilityExpandLabel: String
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[Children] = js.native
+  var items: js.Array[Children]
 }
 object ModuleExpandableProps {
   

@@ -2,36 +2,32 @@ package typings.eol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("eol", "after")
+  @JSImport("eol", JSImport.Namespace)
   @js.native
-  def after(text: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("eol", "auto")
-  @js.native
-  def auto(text: String): String = js.native
+  @scala.inline
+  def after(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("after")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("eol", "before")
-  @js.native
-  def before(text: String): String = js.native
+  @scala.inline
+  def auto(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("auto")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("eol", "cr")
-  @js.native
-  def cr(text: String): String = js.native
+  @scala.inline
+  def before(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("before")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("eol", "crlf")
-  @js.native
-  def crlf(text: String): String = js.native
+  @scala.inline
+  def cr(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cr")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("eol", "lf")
-  @js.native
-  def lf(text: String): String = js.native
+  @scala.inline
+  def crlf(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crlf")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("eol", "split")
-  @js.native
-  def split(text: String): js.Array[String] = js.native
+  @scala.inline
+  def lf(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lf")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def split(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

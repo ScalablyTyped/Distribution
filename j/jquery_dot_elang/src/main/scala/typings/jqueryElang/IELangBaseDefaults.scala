@@ -2,40 +2,38 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELangBase
-@js.native
 trait IELangBaseDefaults extends StObject {
   
-  var contentCSS: String = js.native
+  var contentCSS: String
   
-  var contentInnerCSS: String = js.native
+  var contentInnerCSS: String
   
-  var contentInnerHtml: String = js.native
+  var contentInnerHtml: String
   
-  var fluidRowHtml: String = js.native
+  var fluidRowHtml: String
   
-  var headLabel: String = js.native
+  var headLabel: String
   
-  var headLabelHtml: String = js.native
+  var headLabelHtml: String
   
-  var radioButtonHtml: String = js.native
+  var radioButtonHtml: String
   
-  var radioGroupHtml: String = js.native
+  var radioGroupHtml: String
   
-  var resultCSS: String = js.native
+  var resultCSS: String
   
-  var resultHeadCSS: String = js.native
+  var resultHeadCSS: String
   
-  var resultHeadLabel: String = js.native
+  var resultHeadLabel: String
   
-  var resultHeadLabelHtml: String = js.native
+  var resultHeadLabelHtml: String
   
-  var resultHtml: String = js.native
+  var resultHtml: String
   
-  var submitButtonHtml: String = js.native
+  var submitButtonHtml: String
 }
 object IELangBaseDefaults {
   

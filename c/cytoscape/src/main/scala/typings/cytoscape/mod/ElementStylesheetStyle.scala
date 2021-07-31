@@ -4,17 +4,17 @@ import typings.cytoscape.mod.Css.Edge
 import typings.cytoscape.mod.Css.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Get the entry point to modify the visual style of the graph after initialisation.
   * http://js.cytoscape.org/#core/style
   */
-@js.native
-trait ElementStylesheetStyle extends StylesheetStyle {
+trait ElementStylesheetStyle
+  extends StObject
+     with StylesheetStyle {
   
-  def json(): js.Any = js.native
+  def json(): js.Any
 }
 object ElementStylesheetStyle {
   

@@ -2,17 +2,15 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyNameRouteName[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: RouteName = js.native
+  var name: RouteName
   
-  var params: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] */ js.Any = js.native
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] */ js.Any
 }
 object KeyNameRouteName {
   
@@ -26,7 +24,7 @@ object KeyNameRouteName {
   }
   
   @scala.inline
-  implicit class KeyNameRouteNameMutableBuilder[Self <: KeyNameRouteName[_], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self with KeyNameRouteName[RouteName]) extends AnyVal {
+  implicit class KeyNameRouteNameMutableBuilder[Self <: KeyNameRouteName[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self & KeyNameRouteName[RouteName]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

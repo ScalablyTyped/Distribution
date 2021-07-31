@@ -2,57 +2,55 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxFormLayout's LayoutItem object.
   */
-@js.native
 trait ASPxClientLayoutItem extends StObject {
   
   /**
     * Returns the text displayed in the layout item caption.
     */
-  def GetCaption(): String = js.native
+  def GetCaption(): String
   
   /**
     * Returns the current layout item's subitem specified by its name. An ASPxClientLayoutItem object that represents the current layout item's subitem with the specified name.
     * @param name A string value specifying the name of the layout item.
     */
-  def GetItemByName(name: String): ASPxClientLayoutItem = js.native
+  def GetItemByName(name: String): ASPxClientLayoutItem
   
   /**
     * Returns a value specifying whether a layout item is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Specifies the text displayed in the layout item caption.
     * @param caption A string value specifying the item caption.
     */
-  def SetCaption(caption: String): Unit = js.native
+  def SetCaption(caption: String): Unit
   
   /**
     * Specifies the layout item's visibility.
     * @param value true, if the layout item is visible; otherwise, false.
     */
-  def SetVisible(value: Boolean): Unit = js.native
+  def SetVisible(value: Boolean): Unit
   
   /**
     * Gets the form layout object to which the current item belongs.
     */
-  var formLayout: ASPxClientFormLayout = js.native
+  var formLayout: ASPxClientFormLayout
   
   /**
     * Gets the name that uniquely identifies the layout item.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the immediate parent layout item to which the current layout item belongs.
     */
-  var parent: ASPxClientLayoutItem = js.native
+  var parent: ASPxClientLayoutItem
 }
 object ASPxClientLayoutItem {
   

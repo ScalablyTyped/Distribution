@@ -9,28 +9,32 @@ import typings.std.Event
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ajaxObservableMod {
   
+  @JSImport("rxjs/internal/observable/dom/AjaxObservable", JSImport.Namespace)
   @js.native
-  trait AjaxError extends Error {
+  val ^ : js.Any = js.native
+  
+  trait AjaxError
+    extends StObject
+       with Error {
     
     /** @type {AjaxRequest} The AjaxRequest associated with the error */
-    var request: AjaxRequest = js.native
+    var request: AjaxRequest
     
     /** @type {string|ArrayBuffer|Document|object|any} The response data */
-    var response: js.Any = js.native
+    var response: js.Any
     
     /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
-    var responseType: String = js.native
+    var responseType: String
     
     /** @type {number} The HTTP status code */
-    var status: Double = js.native
+    var status: Double
     
     /** @type {XMLHttpRequest} The XHR instance associated with the error */
-    var xhr: XMLHttpRequest = js.native
+    var xhr: XMLHttpRequest
   }
   object AjaxError {
     
@@ -61,8 +65,36 @@ object ajaxObservableMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxError")
   @js.native
-  class AjaxErrorCls protected () extends AjaxError {
+  class AjaxErrorCls protected ()
+    extends StObject
+       with AjaxError {
     def this(message: String, xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
   @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxObservable")
@@ -145,12 +177,10 @@ object ajaxObservableMod {
       * @owner Observable
       * @nocollapse
       */
-    @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxObservable.create")
-    @js.native
-    def create(urlOrRequest: String): Observable[AjaxResponse] = js.native
-    @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxObservable.create")
-    @js.native
-    def create(urlOrRequest: AjaxRequest): Observable[AjaxResponse] = js.native
+    @scala.inline
+    def create(urlOrRequest: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+    @scala.inline
+    def create(urlOrRequest: AjaxRequest): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
     @scala.inline
     def create_=(x: AjaxCreationMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   }
@@ -209,69 +239,79 @@ object ajaxObservableMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxTimeoutError")
   @js.native
-  class AjaxTimeoutErrorCls protected () extends AjaxError {
+  class AjaxTimeoutErrorCls protected ()
+    extends StObject
+       with AjaxError {
     def this(xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxDelete")
-  @js.native
-  def ajaxDelete(url: String): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxDelete")
-  @js.native
-  def ajaxDelete(url: String, headers: js.Object): Observable[AjaxResponse] = js.native
+  @scala.inline
+  def ajaxDelete(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxDelete(url: String, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxGet")
-  @js.native
-  def ajaxGet(url: String): AjaxObservable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxGet")
-  @js.native
-  def ajaxGet(url: String, headers: js.Object): AjaxObservable[AjaxResponse] = js.native
+  @scala.inline
+  def ajaxGet(url: String): AjaxObservable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any]).asInstanceOf[AjaxObservable[AjaxResponse]]
+  @scala.inline
+  def ajaxGet(url: String, headers: js.Object): AjaxObservable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[AjaxObservable[AjaxResponse]]
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxGetJSON")
-  @js.native
-  def ajaxGetJSON[T](url: String): Observable[T] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxGetJSON")
-  @js.native
-  def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = js.native
+  @scala.inline
+  def ajaxGetJSON[T](url: String): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.Any): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPatch(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.Any): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPost(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.Any): Observable[AjaxResponse] = js.native
-  @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPut(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
   @js.native
   trait AjaxCreationMethod extends StObject {
@@ -289,23 +329,25 @@ object ajaxObservableMod {
     def getJSON[T](url: String, headers: js.Object): Observable[T] = js.native
     
     def patch(url: String): Observable[AjaxResponse] = js.native
-    def patch(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
     def patch(url: String, body: js.Any): Observable[AjaxResponse] = js.native
     def patch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+    def patch(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = js.native
     
     def post(url: String): Observable[AjaxResponse] = js.native
-    def post(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
     def post(url: String, body: js.Any): Observable[AjaxResponse] = js.native
     def post(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+    def post(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = js.native
     
     def put(url: String): Observable[AjaxResponse] = js.native
-    def put(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
     def put(url: String, body: js.Any): Observable[AjaxResponse] = js.native
     def put(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
+    def put(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = js.native
   }
   
   @js.native
-  trait AjaxErrorCtor extends Instantiable3[/* message */ String, /* xhr */ XMLHttpRequest, /* request */ AjaxRequest, AjaxError]
+  trait AjaxErrorCtor
+    extends StObject
+       with Instantiable3[/* message */ String, /* xhr */ XMLHttpRequest, /* request */ AjaxRequest, AjaxError]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rxjs.rxjsStrings.AjaxError
@@ -321,36 +363,35 @@ object ajaxObservableMod {
     def AjaxTimeoutError: typings.rxjs.rxjsStrings.AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[typings.rxjs.rxjsStrings.AjaxTimeoutError]
   }
   
-  @js.native
   trait AjaxRequest extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var createXHR: js.UndefOr[js.Function0[XMLHttpRequest]] = js.native
+    var createXHR: js.UndefOr[js.Function0[XMLHttpRequest]] = js.undefined
     
-    var crossDomain: js.UndefOr[Boolean] = js.native
+    var crossDomain: js.UndefOr[Boolean] = js.undefined
     
-    var hasContent: js.UndefOr[Boolean] = js.native
+    var hasContent: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var progressSubscriber: js.UndefOr[Subscriber[_]] = js.native
+    var progressSubscriber: js.UndefOr[Subscriber[js.Any]] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object AjaxRequest {
     
@@ -412,7 +453,7 @@ object ajaxObservableMod {
       def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
       @scala.inline
-      def setProgressSubscriber(value: Subscriber[_]): Self = StObject.set(x, "progressSubscriber", value.asInstanceOf[js.Any])
+      def setProgressSubscriber(value: Subscriber[js.Any]): Self = StObject.set(x, "progressSubscriber", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProgressSubscriberUndefined: Self = StObject.set(x, "progressSubscriber", js.undefined)
@@ -451,7 +492,8 @@ object ajaxObservableMod {
   
   @js.native
   trait AjaxTimeoutErrorCtor
-    extends Instantiable2[
+    extends StObject
+       with Instantiable2[
           /* xhr */ XMLHttpRequest, 
           /* request */ AjaxRequest, 
           typings.rxjs.ajaxObservableMod.AjaxTimeoutError

@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput extends StObject {
   
   /**
     * A list of repository names that have had their association with the template removed.
     */
-  var disassociatedRepositoryNames: RepositoryNameList = js.native
+  var disassociatedRepositoryNames: RepositoryNameList
   
   /**
     * A list of any errors that might have occurred while attempting to remove the association between the template and the repositories.
     */
-  var errors: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList = js.native
+  var errors: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList
 }
 object BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput {
   

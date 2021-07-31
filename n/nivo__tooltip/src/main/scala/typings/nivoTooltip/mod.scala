@@ -19,10 +19,13 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@nivo/tooltip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@nivo/tooltip", "BasicTooltip")
   @js.native
@@ -40,17 +43,15 @@ object mod {
   @js.native
   val TableTooltip: MemoExoticComponent[js.Function1[/* hasTitleRowsRenderContent */ TableTooltipProps, Element | Null]] = js.native
   
-  @JSImport("@nivo/tooltip", "Tooltip")
-  @js.native
-  def Tooltip(): Element | Null = js.native
+  @scala.inline
+  def Tooltip(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")().asInstanceOf[Element | Null]
   
   @JSImport("@nivo/tooltip", "TooltipActionsContext")
   @js.native
   val TooltipActionsContext: Context[TooltipActionsContextData] = js.native
   
-  @JSImport("@nivo/tooltip", "TooltipProvider")
-  @js.native
-  def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = js.native
+  @scala.inline
+  def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/tooltip", "TooltipStateContext")
   @js.native
@@ -64,19 +65,15 @@ object mod {
   @js.native
   val hiddenTooltipState: TooltipStateContextDataHidden = js.native
   
-  @JSImport("@nivo/tooltip", "isVisibleTooltipState")
-  @js.native
-  def isVisibleTooltipState(state: TooltipStateContextData): /* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean = js.native
+  @scala.inline
+  def isVisibleTooltipState(state: TooltipStateContextData): /* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisibleTooltipState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean]
   
-  @JSImport("@nivo/tooltip", "useTooltip")
-  @js.native
-  def useTooltip(): TooltipActionsContextData = js.native
+  @scala.inline
+  def useTooltip(): TooltipActionsContextData = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")().asInstanceOf[TooltipActionsContextData]
   
-  @JSImport("@nivo/tooltip", "useTooltipHandlers")
-  @js.native
-  def useTooltipHandlers(container: MutableRefObject[HTMLDivElement]): Actions = js.native
+  @scala.inline
+  def useTooltipHandlers(container: MutableRefObject[HTMLDivElement]): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHandlers")(container.asInstanceOf[js.Any]).asInstanceOf[Actions]
   
-  @JSImport("@nivo/tooltip", "useTooltipState")
-  @js.native
-  def useTooltipState(): TooltipStateContextData = js.native
+  @scala.inline
+  def useTooltipState(): TooltipStateContextData = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipState")().asInstanceOf[TooltipStateContextData]
 }

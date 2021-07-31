@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotDateTimeRangeRequest extends StObject {
   
   /**
     * The earliest date and time, in UTC, for the Scheduled Instance to start.
     */
-  var EarliestTime: DateTime = js.native
+  var EarliestTime: DateTime
   
   /**
     * The latest date and time, in UTC, for the Scheduled Instance to start. This value must be later than or equal to the earliest date and at most three months in the future.
     */
-  var LatestTime: DateTime = js.native
+  var LatestTime: DateTime
 }
 object SlotDateTimeRangeRequest {
   

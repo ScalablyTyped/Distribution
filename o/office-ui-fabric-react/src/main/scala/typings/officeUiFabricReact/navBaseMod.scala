@@ -6,10 +6,13 @@ import typings.officeUiFabricReact.navTypesMod.INavProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navBaseMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", "NavBase")
   @js.native
@@ -64,18 +67,16 @@ object navBaseMod {
     def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", "isRelativeUrl")
-  @js.native
-  def isRelativeUrl(url: String): Boolean = js.native
+  @scala.inline
+  def isRelativeUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait INavState extends StObject {
     
-    var isGroupCollapsed: StringDictionary[Boolean] = js.native
+    var isGroupCollapsed: StringDictionary[Boolean]
     
-    var isLinkExpandStateChanged: js.UndefOr[Boolean] = js.native
+    var isLinkExpandStateChanged: js.UndefOr[Boolean] = js.undefined
     
-    var selectedKey: js.UndefOr[String] = js.native
+    var selectedKey: js.UndefOr[String] = js.undefined
   }
   object INavState {
     

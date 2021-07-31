@@ -3,14 +3,16 @@ package typings.jimpPluginGaussian
 import typings.jimpCore.etcMod.ImageCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-gaussian", JSImport.Default)
+  @JSImport("@jimp/plugin-gaussian", JSImport.Namespace)
   @js.native
-  def default(): Gaussian = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Gaussian = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gaussian]
   
   @js.native
   trait Gaussian extends StObject {

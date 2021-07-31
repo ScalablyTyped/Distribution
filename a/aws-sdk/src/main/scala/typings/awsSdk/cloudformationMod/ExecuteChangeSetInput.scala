@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteChangeSetInput extends StObject {
   
   /**
     * The name or ARN of the change set that you want use to update the specified stack.
     */
-  var ChangeSetName: ChangeSetNameOrId = js.native
+  var ChangeSetName: ChangeSetNameOrId
   
   /**
     * A unique identifier for this ExecuteChangeSet request. Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to execute a change set to update a stack with the same name. You might retry ExecuteChangeSet requests to ensure that AWS CloudFormation successfully received them.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.cloudformationMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.cloudformationMod.ClientRequestToken] = js.undefined
   
   /**
     * If you specified the name of a change set, specify the stack name or ID (ARN) that is associated with the change set you want to execute.
     */
-  var StackName: js.UndefOr[StackNameOrId] = js.native
+  var StackName: js.UndefOr[StackNameOrId] = js.undefined
 }
 object ExecuteChangeSetInput {
   

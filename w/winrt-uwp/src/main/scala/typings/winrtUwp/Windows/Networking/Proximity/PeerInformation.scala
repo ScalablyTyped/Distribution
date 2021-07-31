@@ -4,27 +4,25 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information that identifies a peer. */
-@js.native
 trait PeerInformation extends StObject {
   
   /** Gets the device data included during device discovery. */
-  var discoveryData: IBuffer = js.native
+  var discoveryData: IBuffer
   
   /** Gets the display name of the peer. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets the hostname or IP address of the peer. */
-  var hostName: HostName = js.native
+  var hostName: HostName
   
   /** Gets the app id for the peer app. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the service name or TCP port number of the peer. */
-  var serviceName: String = js.native
+  var serviceName: String
 }
 object PeerInformation {
   

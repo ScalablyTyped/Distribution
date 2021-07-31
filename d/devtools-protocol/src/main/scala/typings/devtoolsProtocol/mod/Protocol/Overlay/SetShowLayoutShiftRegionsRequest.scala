@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetShowLayoutShiftRegionsRequest extends StObject {
   
   /**
     * True for showing layout shift regions
     */
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object SetShowLayoutShiftRegionsRequest {
   

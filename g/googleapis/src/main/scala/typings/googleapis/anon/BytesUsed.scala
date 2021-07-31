@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BytesUsed extends StObject {
   
-  var bytesUsed: js.UndefOr[String] = js.native
+  var bytesUsed: js.UndefOr[String] = js.undefined
   
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object BytesUsed {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesiredWeightAndCapacity extends StObject {
   
   /**
     * The variant's capacity.
     */
-  var DesiredInstanceCount: js.UndefOr[TaskCount] = js.native
+  var DesiredInstanceCount: js.UndefOr[TaskCount] = js.undefined
   
   /**
     * The variant's weight.
     */
-  var DesiredWeight: js.UndefOr[VariantWeight] = js.native
+  var DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   
   /**
     * The name of the variant to update.
     */
-  var VariantName: typings.awsSdk.sagemakerMod.VariantName = js.native
+  var VariantName: typings.awsSdk.sagemakerMod.VariantName
 }
 object DesiredWeightAndCapacity {
   

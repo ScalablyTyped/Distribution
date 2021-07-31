@@ -5,31 +5,31 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface provide methods to insert, rename and delete autotext entries from the current autotext group. */
-@js.native
-trait XAutoTextGroup extends XNameAccess {
+trait XAutoTextGroup
+  extends StObject
+     with XNameAccess {
   
   /** returns the titles of all autotext entries. The order of the entries corresponds to the output of the function {@link getElementNames()} . */
-  val Titles: SafeArray[String] = js.native
+  val Titles: SafeArray[String]
   
   /** returns the titles of all autotext entries. The order of the entries corresponds to the output of the function {@link getElementNames()} . */
-  def getTitles(): SafeArray[String] = js.native
+  def getTitles(): SafeArray[String]
   
   /** creates a new {@link AutoTextEntry} entry. */
-  def insertNewByName(aName: String, aTitle: String, xTextRange: XTextRange): XAutoTextEntry = js.native
+  def insertNewByName(aName: String, aTitle: String, xTextRange: XTextRange): XAutoTextEntry
   
   /** removes the specified autotext entry. */
-  def removeByName(aEntryName: String): Unit = js.native
+  def removeByName(aEntryName: String): Unit
   
   /**
     * renames an entry in the autotext group.
     *
     * The position of the autotext entry is not changed.
     */
-  def renameByName(aElementName: String, aNewElementName: String, aNewElementTitle: String): Unit = js.native
+  def renameByName(aElementName: String, aNewElementName: String, aNewElementTitle: String): Unit
 }
 object XAutoTextGroup {
   

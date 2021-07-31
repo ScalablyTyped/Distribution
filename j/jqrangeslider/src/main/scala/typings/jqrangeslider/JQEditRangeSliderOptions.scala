@@ -2,13 +2,13 @@ package typings.jqrangeslider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQEditRangeSliderOptions extends JQNumericRangeSliderOptions {
+trait JQEditRangeSliderOptions
+  extends StObject
+     with JQNumericRangeSliderOptions {
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object JQEditRangeSliderOptions {
   

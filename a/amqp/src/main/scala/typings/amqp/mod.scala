@@ -27,14 +27,16 @@ import typings.node.netMod.Socket
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("amqp", "createConnection")
+  @JSImport("amqp", JSImport.Namespace)
   @js.native
-  def createConnection(options: ConnectionOptions): AMQPClient = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createConnection(options: ConnectionOptions): AMQPClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[AMQPClient]
   
   @js.native
   trait AMQPClient extends Socket {
@@ -150,12 +152,13 @@ object mod {
     def unsubscribe(consumerTag: String): Unit = js.native
   }
   
-  @js.native
-  trait Ack extends DeliveryInfo {
+  trait Ack
+    extends StObject
+       with DeliveryInfo {
     
-    def acknowledge(all: Boolean): Unit = js.native
+    def acknowledge(all: Boolean): Unit
     
-    def reject(requeue: Boolean): Unit = js.native
+    def reject(requeue: Boolean): Unit
   }
   object Ack {
     
@@ -188,55 +191,54 @@ object mod {
   
   type Callback[T] = js.Function1[/* value */ T, Unit]
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var authMechanism: js.UndefOr[String] = js.native
+    var authMechanism: js.UndefOr[String] = js.undefined
     
-    var clientProperties: js.UndefOr[ApplicationName] = js.native
+    var clientProperties: js.UndefOr[ApplicationName] = js.undefined
     
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
-    var defaultExchangeName: js.UndefOr[String] = js.native
+    var defaultExchangeName: js.UndefOr[String] = js.undefined
     
-    var heartbeat: js.UndefOr[Double] = js.native
+    var heartbeat: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var login: js.UndefOr[String] = js.native
+    var login: js.UndefOr[String] = js.undefined
     
-    var noDelay: js.UndefOr[Boolean] = js.native
+    var noDelay: js.UndefOr[Boolean] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** Default: 'node-{NODE_VERSION}' */
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Default: 'node-amqp' */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
     /** Default: true */
-    var reconnect: js.UndefOr[Boolean] = js.native
+    var reconnect: js.UndefOr[Boolean] = js.undefined
     
     /** Default: 'linear' */
-    var reconnectBackoffStrategy: js.UndefOr[String] = js.native
+    var reconnectBackoffStrategy: js.UndefOr[String] = js.undefined
     
     /** Default: 1000 */
-    var reconnectBackoffTime: js.UndefOr[Double] = js.native
+    var reconnectBackoffTime: js.UndefOr[Double] = js.undefined
     
     /** Default: 120000 */
-    var reconnectExponentialLimit: js.UndefOr[Double] = js.native
+    var reconnectExponentialLimit: js.UndefOr[Double] = js.undefined
     
-    var ssl: js.UndefOr[CaFile] = js.native
+    var ssl: js.UndefOr[CaFile] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Default: node-amqp/package.json version */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var vhost: js.UndefOr[String] = js.native
+    var vhost: js.UndefOr[String] = js.undefined
   }
   object ConnectionOptions {
     
@@ -371,22 +373,21 @@ object mod {
     }
   }
   
-  @js.native
   trait DeliveryInfo extends StObject {
     
-    var consumerTag: String = js.native
+    var consumerTag: String
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var deliveryTag: Uint8Array = js.native
+    var deliveryTag: Uint8Array
     
-    var exchange: String = js.native
+    var exchange: String
     
-    var queue: String = js.native
+    var queue: String
     
-    var redelivered: Boolean = js.native
+    var redelivered: Boolean
     
-    var routingKey: String = js.native
+    var routingKey: String
   }
   object DeliveryInfo {
     
@@ -430,7 +431,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DestroyOptions extends StObject {
     
     /**
@@ -438,14 +438,14 @@ object mod {
       *
       * Will ony be deleted if the queue has no messages
       */
-    var ifEmpty: js.UndefOr[Boolean] = js.native
+    var ifEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       *
       * Will only destroy the queue if it has no consumers
       */
-    var ifUnused: js.UndefOr[Boolean] = js.native
+    var ifUnused: js.UndefOr[Boolean] = js.undefined
   }
   object DestroyOptions {
     
@@ -472,20 +472,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ExchangeOptions extends StObject {
     
     /**
       * a map of additional arguments to pass in when creating an exchange
       */
-    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Default: true
       *
       * If set, the exchange is deleted when there are no longer queues bound to it
       */
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -493,7 +492,7 @@ object mod {
       * If set, the exchange will be in confirm mode, and you will get a 'ack'|'error' event emitted on a publish,
       * or the callback on the publish will be called
       */
-    var confirm: js.UndefOr[Boolean] = js.native
+    var confirm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true
@@ -504,7 +503,7 @@ object mod {
       *
       * Non-durable exchanges (transient exchanges) are purged if/when a server restarts
       */
-    var durable: js.UndefOr[Boolean] = js.native
+    var durable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -512,19 +511,19 @@ object mod {
       * If set, the exchange will not be declared,
       * this will allow the exchange to be deleted if you dont know its previous options
       */
-    var noDeclare: js.UndefOr[Boolean] = js.native
+    var noDeclare: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       *
       * f set, the server will not create the exchange. The client can use this to check whether an exchange exists without modifying the server state
       */
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: 'topic'
       */
-    var `type`: js.UndefOr[direct | fanout | topic] = js.native
+    var `type`: js.UndefOr[direct | fanout | topic] = js.undefined
   }
   object ExchangeOptions {
     
@@ -581,7 +580,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ExchangePublishOptions extends StObject {
     
     /**
@@ -589,42 +587,42 @@ object mod {
       *
       * Creating application id
       */
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
     /**
       * Default: null
       */
-    var contentEncoding: js.UndefOr[String] = js.native
+    var contentEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'application/octet-stream'
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * Application correlation identifier
       */
-    var correlationId: js.UndefOr[String] = js.native
+    var correlationId: js.UndefOr[String] = js.undefined
     
     /**
       * 1: Non-persistent
       * 2: Persistent
       */
-    var deliveryMode: js.UndefOr[`1` | `2`] = js.native
+    var deliveryMode: js.UndefOr[`1` | `2`] = js.undefined
     
     /**
       * Default: null
       *
       * Message expiration specification -- ISO date string?
       */
-    var expiration: js.UndefOr[String] = js.native
+    var expiration: js.UndefOr[String] = js.undefined
     
     /**
       * Default: {}
       *
       * Arbitrary application-specific message headers
       */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Default: false
@@ -635,7 +633,7 @@ object mod {
       *
       * If this flag is false, the server will queue the message, but with no guarantee that it will ever be consumed
       */
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -646,21 +644,21 @@ object mod {
       *
       * If this flag is false, the server silently drops the message
       */
-    var mandatory: js.UndefOr[Boolean] = js.native
+    var mandatory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: null
       *
       * Application message identifier
       */
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+    var priority: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
     
     /**
       * Usually used to name a reply queue for a request message
       */
-    var replyTo: js.UndefOr[String] = js.native
+    var replyTo: js.UndefOr[String] = js.undefined
     
     /**
       * Default: null
@@ -669,21 +667,21 @@ object mod {
       *
       * ISO date string?
       */
-    var timestamp: js.UndefOr[String] = js.native
+    var timestamp: js.UndefOr[String] = js.undefined
     
     /**
       * Default: null
       *
       * Message type name
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Default: null
       *
       * Creating user id
       */
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object ExchangePublishOptions {
     
@@ -788,20 +786,19 @@ object mod {
     }
   }
   
-  @js.native
   trait QueueCallback extends StObject {
     
-    var channel: Double = js.native
+    var channel: Double
     
-    var consumerTagListeners: StringDictionary[js.Any] = js.native
+    var consumerTagListeners: StringDictionary[js.Any]
     
-    var consumerTagOptions: StringDictionary[js.Any] = js.native
+    var consumerTagOptions: StringDictionary[js.Any]
     
-    var name: String = js.native
+    var name: String
     
-    var options: QueueOptions = js.native
+    var options: QueueOptions
     
-    var state: String = js.native
+    var state: String
   }
   object QueueCallback {
     
@@ -841,13 +838,12 @@ object mod {
     }
   }
   
-  @js.native
   trait QueueOptions extends StObject {
     
     /**
       * a map of additional arguments to pass in when creating a queue
       */
-    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Default: true
@@ -858,14 +854,14 @@ object mod {
       *
       * If there was no consumer ever on the queue, it won't be deleted
       */
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       *
       * when true the channel will close on unsubscribe
       */
-    var closeChannelOnUnsubscribe: js.UndefOr[Boolean] = js.native
+    var closeChannelOnUnsubscribe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -877,7 +873,7 @@ object mod {
       * Note that durable queues do not necessarily hold persistent messages,
       * although it does not make sense to send persistent messages to a transient queue
       */
-    var durable: js.UndefOr[Boolean] = js.native
+    var durable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -886,14 +882,14 @@ object mod {
       *
       * Setting the 'exclusive' flag always implies 'autoDelete'
       */
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       *
       * If set, the queue will not be declared, this will allow a queue to be deleted if you don't know its previous options
       */
-    var noDeclare: js.UndefOr[Boolean] = js.native
+    var noDeclare: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
@@ -902,7 +898,7 @@ object mod {
       *
       * The client can use this to check whether a queue exists without modifying the server state
       */
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
   }
   object QueueOptions {
     
@@ -967,7 +963,6 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait SubscribeOptions extends StObject {
     
     /**
@@ -978,21 +973,21 @@ object mod {
       *
       * When false, you will receive messages as fast as they are emitted
       */
-    var ack: js.UndefOr[Boolean] = js.native
+    var ack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: undefined
       *
       * Will inject the routingKey into the payload received
       */
-    var deliveryKeyInPayload: js.UndefOr[Boolean] = js.native
+    var deliveryKeyInPayload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       *
       * If set to true, only one subscriber is allowed at a time
       */
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: 1
@@ -1001,14 +996,14 @@ object mod {
       *
       * Setting to zero will widen that window to 'unlimited'. If this is set, queue.shift() should not be used
       */
-    var prefetchCount: js.UndefOr[Double] = js.native
+    var prefetchCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: undefined
       *
       * Will inject the routingKey into the payload received
       */
-    var routingKeyInPayload: js.UndefOr[Boolean] = js.native
+    var routingKeyInPayload: js.UndefOr[Boolean] = js.undefined
   }
   object SubscribeOptions {
     

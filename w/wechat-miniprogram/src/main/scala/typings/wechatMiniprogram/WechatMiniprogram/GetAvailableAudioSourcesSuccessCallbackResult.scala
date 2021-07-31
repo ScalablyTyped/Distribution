@@ -9,10 +9,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.voice_communication
 import typings.wechatMiniprogram.wechatMiniprogramStrings.voice_recognition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAvailableAudioSourcesSuccessCallbackResult extends StObject {
   
   /** 支持的音频输入源列表，可在 [RecorderManager.start()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.start.html) 接口中使用。返回值定义参考 https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource
@@ -27,9 +25,9 @@ trait GetAvailableAudioSourcesSuccessCallbackResult extends StObject {
     * - 'voice_recognition': 同 mic，适用于语音识别，仅限 Android; */
   var audioSources: js.Array[
     auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
-  ] = js.native
+  ]
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetAvailableAudioSourcesSuccessCallbackResult {
   

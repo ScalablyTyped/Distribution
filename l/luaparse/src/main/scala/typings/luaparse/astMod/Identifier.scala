@@ -2,22 +2,21 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identifier
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.Identifier] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.Identifier]
+     with Expression {
   
-  var name: String = js.native
+  var name: String
 }
 object Identifier {
   
   @scala.inline
-  def apply(name: String, `type`: typings.luaparse.luaparseStrings.Identifier): Identifier = {
+  def apply(name: String): Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier]
   }
   

@@ -3,12 +3,12 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidationErrorItem
-  extends BaseError
+  extends StObject
+     with BaseError
      with /**
   * Validation Error Item
   * Instances of this class are included in the `ValidationError.errors` property.

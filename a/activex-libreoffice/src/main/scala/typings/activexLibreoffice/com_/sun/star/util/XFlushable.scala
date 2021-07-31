@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is supported by objects with data that can be flushed to a data source. */
-@js.native
-trait XFlushable extends XInterface {
+trait XFlushable
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive event "flushed." */
-  def addFlushListener(l: XFlushListener): Unit = js.native
+  def addFlushListener(l: XFlushListener): Unit
   
   /** flushes the data of the object to the connected data source. */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /** removes the specified listener. */
-  def removeFlushListener(l: XFlushListener): Unit = js.native
+  def removeFlushListener(l: XFlushListener): Unit
 }
 object XFlushable {
   

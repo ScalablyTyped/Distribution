@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantDetails extends StObject {
   
   /**
     * Display name of the participant.
     */
-  var DisplayName: typings.awsSdk.connectMod.DisplayName = js.native
+  var DisplayName: typings.awsSdk.connectMod.DisplayName
 }
 object ParticipantDetails {
   

@@ -2,40 +2,38 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorAxisGridOptions extends StObject {
   
   /**
     * (Gantt) Set border color for the label grid lines.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Gantt) Set border width of the label grid lines.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set cell height for grid axis labels. By default this is
     * calculated from font size. This option only applies to horizontal axes.
     */
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set specific options for each column (or row for horizontal axes)
     * in the grid. Each extra column/row is its own axis, and the axis options
     * can be set here.
     */
-  var columns: js.UndefOr[js.Array[XAxisOptions]] = js.native
+  var columns: js.UndefOr[js.Array[XAxisOptions]] = js.undefined
   
   /**
     * (Gantt) Enable grid on the axis labels. Defaults to true for Gantt
     * charts.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object ColorAxisGridOptions {
   

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "OrFilter")
 @js.native
-class OrFilter protected () extends Filter {
+class OrFilter protected ()
+  extends StObject
+     with Filter {
   def this(filters: js.Array[Filter]) = this()
   /*
     A container Filter that allows Boolean OR composition of filters.

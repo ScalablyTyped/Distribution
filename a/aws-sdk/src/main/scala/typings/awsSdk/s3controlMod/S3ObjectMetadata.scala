@@ -2,66 +2,64 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3ObjectMetadata extends StObject {
   
   /**
     * 
     */
-  var CacheControl: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var CacheControl: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var ContentDisposition: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var ContentDisposition: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var ContentEncoding: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var ContentEncoding: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var ContentLanguage: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var ContentLanguage: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var ContentLength: js.UndefOr[S3ContentLength] = js.native
+  var ContentLength: js.UndefOr[S3ContentLength] = js.undefined
   
   /**
     * 
     */
-  var ContentMD5: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var ContentMD5: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var ContentType: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var ContentType: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var HttpExpiresDate: js.UndefOr[TimeStamp] = js.native
+  var HttpExpiresDate: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * 
     */
-  var RequesterCharged: js.UndefOr[Boolean] = js.native
+  var RequesterCharged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 
     */
-  var SSEAlgorithm: js.UndefOr[S3SSEAlgorithm] = js.native
+  var SSEAlgorithm: js.UndefOr[S3SSEAlgorithm] = js.undefined
   
   /**
     * 
     */
-  var UserMetadata: js.UndefOr[S3UserMetadata] = js.native
+  var UserMetadata: js.UndefOr[S3UserMetadata] = js.undefined
 }
 object S3ObjectMetadata {
   

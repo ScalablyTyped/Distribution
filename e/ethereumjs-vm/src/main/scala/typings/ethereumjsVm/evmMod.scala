@@ -1,7 +1,6 @@
 package typings.ethereumjsVm
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bnJs.mod.^
 import typings.ethereumjsVm.exceptionsMod.VmError
 import typings.ethereumjsVm.interpreterMod.InterpreterOpts
 import typings.ethereumjsVm.interpreterMod.RunState
@@ -9,20 +8,24 @@ import typings.ethereumjsVm.typesMod.PrecompileFunc
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object evmMod {
   
+  @JSImport("ethereumjs-vm/dist/evm/evm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ethereumjs-vm/dist/evm/evm", JSImport.Default)
   @js.native
-  class default protected () extends EVM {
+  class default protected ()
+    extends StObject
+       with EVM {
     def this(vm: js.Any, txContext: typings.ethereumjsVm.txContextMod.default, block: js.Any) = this()
   }
   
-  @JSImport("ethereumjs-vm/dist/evm/evm", "OOGResult")
-  @js.native
-  def OOGResult(gasLimit: ^): ExecResult = js.native
+  @scala.inline
+  def OOGResult(gasLimit: typings.bnJs.mod.^): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("OOGResult")(gasLimit.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
   
   @js.native
   trait EVM extends StObject {
@@ -44,7 +47,7 @@ object evmMod {
     /**
       * Amount of gas to refund from deleting storage values
       */
-    var _refund: ^ = js.native
+    var _refund: typings.bnJs.mod.^ = js.native
     
     var _state: typings.ethereumjsVm.promisifiedMod.default = js.native
     
@@ -77,31 +80,30 @@ object evmMod {
     /**
       * Executes a precompiled contract with given data and gas limit.
       */
-    def runPrecompile(code: PrecompileFunc, data: Buffer, gasLimit: ^): ExecResult = js.native
+    def runPrecompile(code: PrecompileFunc, data: Buffer, gasLimit: typings.bnJs.mod.^): ExecResult = js.native
   }
   
-  @js.native
   trait EVMResult extends StObject {
     
     /**
       * Address of created account durint transaction, if any
       */
-    var createdAddress: js.UndefOr[Buffer] = js.native
+    var createdAddress: js.UndefOr[Buffer] = js.undefined
     
     /**
       * Contains the results from running the code, if any, as described in [[runCode]]
       */
-    var execResult: ExecResult = js.native
+    var execResult: ExecResult
     
     /**
       * Amount of gas used by the transaction
       */
-    var gasUsed: ^ = js.native
+    var gasUsed: typings.bnJs.mod.^
   }
   object EVMResult {
     
     @scala.inline
-    def apply(execResult: ExecResult, gasUsed: ^): EVMResult = {
+    def apply(execResult: ExecResult, gasUsed: typings.bnJs.mod.^): EVMResult = {
       val __obj = js.Dynamic.literal(execResult = execResult.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[EVMResult]
     }
@@ -119,54 +121,53 @@ object evmMod {
       def setExecResult(value: ExecResult): Self = StObject.set(x, "execResult", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGasUsed(value: ^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ExecResult extends StObject {
     
     /**
       * Description of the exception, if any occured
       */
-    var exceptionError: js.UndefOr[VmError] = js.native
+    var exceptionError: js.UndefOr[VmError] = js.undefined
     
     /**
       * Amount of gas left
       */
-    var gas: js.UndefOr[^] = js.native
+    var gas: js.UndefOr[typings.bnJs.mod.^] = js.undefined
     
     /**
       * Total amount of gas to be refunded from all nested calls.
       */
-    var gasRefund: js.UndefOr[^] = js.native
+    var gasRefund: js.UndefOr[typings.bnJs.mod.^] = js.undefined
     
     /**
       * Amount of gas the code used to run
       */
-    var gasUsed: ^ = js.native
+    var gasUsed: typings.bnJs.mod.^
     
     /**
       * Array of logs that the contract emitted
       */
-    var logs: js.UndefOr[js.Array[_]] = js.native
+    var logs: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Return value from the contract
       */
-    var returnValue: Buffer = js.native
+    var returnValue: Buffer
     
-    var runState: js.UndefOr[RunState] = js.native
+    var runState: js.UndefOr[RunState] = js.undefined
     
     /**
       * A map from the accounts that have self-destructed to the addresses to send their funds to
       */
-    var selfdestruct: js.UndefOr[StringDictionary[Buffer]] = js.native
+    var selfdestruct: js.UndefOr[StringDictionary[Buffer]] = js.undefined
   }
   object ExecResult {
     
     @scala.inline
-    def apply(gasUsed: ^, returnValue: Buffer): ExecResult = {
+    def apply(gasUsed: typings.bnJs.mod.^, returnValue: Buffer): ExecResult = {
       val __obj = js.Dynamic.literal(gasUsed = gasUsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecResult]
     }
@@ -181,10 +182,10 @@ object evmMod {
       def setExceptionErrorUndefined: Self = StObject.set(x, "exceptionError", js.undefined)
       
       @scala.inline
-      def setGas(value: ^): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      def setGas(value: typings.bnJs.mod.^): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGasRefund(value: ^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
+      def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)
@@ -193,10 +194,10 @@ object evmMod {
       def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
       @scala.inline
-      def setGasUsed(value: ^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLogs(value: js.Array[_]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
@@ -221,12 +222,11 @@ object evmMod {
     }
   }
   
-  @js.native
   trait NewContractEvent extends StObject {
     
-    var address: Buffer = js.native
+    var address: Buffer
     
-    var code: Buffer = js.native
+    var code: Buffer
   }
   object NewContractEvent {
     

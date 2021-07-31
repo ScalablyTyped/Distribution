@@ -3,35 +3,33 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupOptions extends StObject {
   
-  var activate: js.UndefOr[js.Function1[/* e */ PopupActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ PopupActivateEvent, Unit]] = js.undefined
   
-  var adjustSize: js.UndefOr[js.Any] = js.native
+  var adjustSize: js.UndefOr[js.Any] = js.undefined
   
-  var anchor: js.UndefOr[String | JQuery] = js.native
+  var anchor: js.UndefOr[String | JQuery] = js.undefined
   
-  var animation: js.UndefOr[Boolean | PopupAnimation] = js.native
+  var animation: js.UndefOr[Boolean | PopupAnimation] = js.undefined
   
-  var appendTo: js.UndefOr[String | JQuery] = js.native
+  var appendTo: js.UndefOr[String | JQuery] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ PopupCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ PopupCloseEvent, Unit]] = js.undefined
   
-  var collision: js.UndefOr[String] = js.native
+  var collision: js.UndefOr[String] = js.undefined
   
-  var deactivate: js.UndefOr[js.Function1[/* e */ PopupDeactivateEvent, Unit]] = js.native
+  var deactivate: js.UndefOr[js.Function1[/* e */ PopupDeactivateEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ PopupOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ PopupOpenEvent, Unit]] = js.undefined
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object PopupOptions {
   

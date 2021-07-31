@@ -2,15 +2,15 @@ package typings.strongholdPayJs.mod.global.Stronghold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TipDropin extends TipDataDropin {
+trait TipDropin
+  extends StObject
+     with TipDataDropin {
   
-  var chargeId: String = js.native
+  var chargeId: String
   
-  var paymentSourceId: String = js.native
+  var paymentSourceId: String
 }
 object TipDropin {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the identity pool that the tags are assigned to.
     */
-  var ResourceArn: ARNString = js.native
+  var ResourceArn: ARNString
   
   /**
     * The keys of the tags to remove from the user pool.
     */
-  var TagKeys: IdentityPoolTagsListType = js.native
+  var TagKeys: IdentityPoolTagsListType
 }
 object UntagResourceInput {
   

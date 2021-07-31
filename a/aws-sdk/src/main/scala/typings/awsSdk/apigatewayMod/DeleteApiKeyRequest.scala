@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApiKeyRequest extends StObject {
   
   /**
     * [Required] The identifier of the ApiKey resource to be deleted.
     */
-  var apiKey: String = js.native
+  var apiKey: String
 }
 object DeleteApiKeyRequest {
   

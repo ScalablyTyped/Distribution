@@ -2,21 +2,21 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRectOptions extends IObjectOptions {
+trait IRectOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * Horizontal border radius
     */
-  var rx: js.UndefOr[Double] = js.native
+  var rx: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical border radius
     */
-  var ry: js.UndefOr[Double] = js.native
+  var ry: js.UndefOr[Double] = js.undefined
 }
 object IRectOptions {
   

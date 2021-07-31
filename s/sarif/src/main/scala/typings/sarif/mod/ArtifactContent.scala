@@ -2,31 +2,29 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactContent extends StObject {
   
   /**
     * MIME Base64-encoded content from a binary artifact, or from a text artifact in its original encoding.
     */
-  var binary: js.UndefOr[String] = js.native
+  var binary: js.UndefOr[String] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the artifact content.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * An alternate rendered representation of the artifact (e.g., a decompiled representation of a binary region).
     */
-  var rendered: js.UndefOr[MultiformatMessageString] = js.native
+  var rendered: js.UndefOr[MultiformatMessageString] = js.undefined
   
   /**
     * UTF-8-encoded content from a text artifact.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ArtifactContent {
   

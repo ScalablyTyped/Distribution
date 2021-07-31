@@ -2,15 +2,13 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryOptions extends StObject {
   
-  var httpCache: js.UndefOr[Boolean] = js.native
+  var httpCache: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object HistoryOptions {
   

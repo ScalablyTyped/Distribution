@@ -5,16 +5,15 @@ import typings.reactNativeCommunityCliTypes.androidMod.AndroidDependencyConfig
 import typings.reactNativeCommunityCliTypes.iosMod.IOSDependencyConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var android: js.UndefOr[AndroidDependencyConfig | Null] = js.native
+  var android: js.UndefOr[AndroidDependencyConfig | Null] = js.undefined
   
-  var ios: js.UndefOr[IOSDependencyConfig | Null] = js.native
+  var ios: js.UndefOr[IOSDependencyConfig | Null] = js.undefined
 }
 object Dictkey {
   

@@ -2,16 +2,14 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  exclude :std.Array<string>,   format :string}> */
-@js.native
 trait PartialexcludeArraystring extends StObject {
   
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object PartialexcludeArraystring {
   

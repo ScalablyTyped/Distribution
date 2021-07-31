@@ -3,26 +3,24 @@ package typings.aliApp.anon
 import typings.aliApp.my.City
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.ChooseCityOptions> */
-@js.native
 trait PartialChooseCityOptions extends StObject {
   
-  var cities: js.UndefOr[js.Array[City]] = js.native
+  var cities: js.UndefOr[js.Array[City]] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var hotCities: js.UndefOr[js.Array[City]] = js.native
+  var hotCities: js.UndefOr[js.Array[City]] = js.undefined
   
-  var showHotCities: js.UndefOr[Boolean] = js.native
+  var showHotCities: js.UndefOr[Boolean] = js.undefined
   
-  var showLocatedCity: js.UndefOr[Boolean] = js.native
+  var showLocatedCity: js.UndefOr[Boolean] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* result */ AdCode, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ AdCode, Unit]] = js.undefined
 }
 object PartialChooseCityOptions {
   

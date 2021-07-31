@@ -4,32 +4,30 @@ import typings.azureSb.anon.ContentRootElement
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationHubRegistration extends StObject {
   
-  var BodyTemplate: js.UndefOr[js.Any] = js.native
+  var BodyTemplate: js.UndefOr[js.Any] = js.undefined
   
-  var ChannelUri: js.UndefOr[String] = js.native
+  var ChannelUri: js.UndefOr[String] = js.undefined
   
-  var DeviceToken: js.UndefOr[String] = js.native
+  var DeviceToken: js.UndefOr[String] = js.undefined
   
-  var Expiry: js.UndefOr[Date] = js.native
+  var Expiry: js.UndefOr[Date] = js.undefined
   
-  var GcmRegistrationId: js.UndefOr[String] = js.native
+  var GcmRegistrationId: js.UndefOr[String] = js.undefined
   
-  var MpnsHeaders: js.UndefOr[js.Any] = js.native
+  var MpnsHeaders: js.UndefOr[js.Any] = js.undefined
   
-  var RegistrationId: String = js.native
+  var RegistrationId: String
   
-  var Tags: js.UndefOr[String] = js.native
+  var Tags: js.UndefOr[String] = js.undefined
   
-  var WnsHeaders: js.UndefOr[js.Any] = js.native
+  var WnsHeaders: js.UndefOr[js.Any] = js.undefined
   
   @JSName("_")
-  var _underscore: ContentRootElement = js.native
+  var _underscore: ContentRootElement
 }
 object NotificationHubRegistration {
   

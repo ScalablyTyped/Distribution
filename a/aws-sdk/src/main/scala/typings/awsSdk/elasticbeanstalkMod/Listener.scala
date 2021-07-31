@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
   /**
     * The port that is used by the Listener.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * The protocol that is used by the Listener.
     */
-  var Protocol: js.UndefOr[String] = js.native
+  var Protocol: js.UndefOr[String] = js.undefined
 }
 object Listener {
   

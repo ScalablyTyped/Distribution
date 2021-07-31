@@ -2,10 +2,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteResult extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait WriteResult extends StObject {
     * @param other The `WriteResult` to compare against.
     * @return true if this `WriteResult` is equal to the provided one.
     */
-  def isEqual(other: WriteResult): Boolean = js.native
+  def isEqual(other: WriteResult): Boolean
   
   /**
     * The write time as set by the Firestore servers.
     */
-  val writeTime: Timestamp = js.native
+  val writeTime: Timestamp
 }
 object WriteResult {
   

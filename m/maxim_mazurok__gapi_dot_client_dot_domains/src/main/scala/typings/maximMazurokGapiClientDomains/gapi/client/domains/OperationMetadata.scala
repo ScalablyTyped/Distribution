@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** API version used to start the operation. */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** The time the operation was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The time the operation finished running. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Human-readable status of the operation, if any. */
-  var statusDetail: js.UndefOr[String] = js.native
+  var statusDetail: js.UndefOr[String] = js.undefined
   
   /** Server-defined resource path for the target of the operation. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** Name of the verb executed by the operation. */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {
   

@@ -2,27 +2,27 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesRollover[T] extends Generic {
+trait IndicesRollover[T]
+  extends StObject
+     with Generic {
   
-  var alias: String = js.native
+  var alias: String
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var dry_run: js.UndefOr[Boolean] = js.native
+  var dry_run: js.UndefOr[Boolean] = js.undefined
   
-  var include_type_name: js.UndefOr[Boolean] = js.native
+  var include_type_name: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var new_index: js.UndefOr[String] = js.native
+  var new_index: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object IndicesRollover {
   
@@ -33,7 +33,7 @@ object IndicesRollover {
   }
   
   @scala.inline
-  implicit class IndicesRolloverMutableBuilder[Self <: IndicesRollover[_], T] (val x: Self with IndicesRollover[T]) extends AnyVal {
+  implicit class IndicesRolloverMutableBuilder[Self <: IndicesRollover[?], T] (val x: Self & IndicesRollover[T]) extends AnyVal {
     
     @scala.inline
     def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])

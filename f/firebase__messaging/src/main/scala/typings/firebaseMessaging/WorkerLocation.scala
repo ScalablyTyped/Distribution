@@ -2,29 +2,27 @@ package typings.firebaseMessaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerLocation extends StObject {
   
-  val hash: String = js.native
+  val hash: String
   
-  val host: String = js.native
+  val host: String
   
-  val hostname: String = js.native
+  val hostname: String
   
-  val href: String = js.native
+  val href: String
   
-  val origin: String = js.native
+  val origin: String
   
-  val pathname: String = js.native
+  val pathname: String
   
-  val port: String = js.native
+  val port: String
   
-  val protocol: String = js.native
+  val protocol: String
   
-  val search: String = js.native
+  val search: String
 }
 object WorkerLocation {
   

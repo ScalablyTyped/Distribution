@@ -2,17 +2,17 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.UnionType, 'type' | 'types'> */
-@js.native
-trait UnionType extends SomeType {
+trait UnionType
+  extends StObject
+     with SomeType {
   
-  var `type`: ModelToObject[String] | String = js.native
+  var `type`: ModelToObject[String] | String
   
-  var types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type] = js.native
+  var types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
 }
 object UnionType {
   

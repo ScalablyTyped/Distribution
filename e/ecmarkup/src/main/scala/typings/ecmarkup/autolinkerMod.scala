@@ -8,17 +8,19 @@ import typings.std.RegExp
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autolinkerMod {
+  
+  @JSImport("ecmarkup/lib/autolinker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ecmarkup/lib/autolinker", "NO_CLAUSE_AUTOLINK")
   @js.native
   val NO_CLAUSE_AUTOLINK: Set[String] = js.native
   
-  @JSImport("ecmarkup/lib/autolinker", "autolink")
-  @js.native
+  @scala.inline
   def autolink(
     node: Node,
     replacer: RegExp,
@@ -26,9 +28,8 @@ object autolinkerMod {
     clause: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any,
     currentId: String,
     allowSameId: Boolean
-  ): Unit = js.native
-  @JSImport("ecmarkup/lib/autolinker", "autolink")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def autolink(
     node: Node,
     replacer: RegExp,
@@ -36,9 +37,8 @@ object autolinkerMod {
     clause: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any,
     currentId: Null,
     allowSameId: Boolean
-  ): Unit = js.native
-  @JSImport("ecmarkup/lib/autolinker", "autolink")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def autolink(
     node: Node,
     replacer: RegExp,
@@ -46,9 +46,8 @@ object autolinkerMod {
     clause: Spec,
     currentId: String,
     allowSameId: Boolean
-  ): Unit = js.native
-  @JSImport("ecmarkup/lib/autolinker", "autolink")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def autolink(
     node: Node,
     replacer: RegExp,
@@ -56,14 +55,13 @@ object autolinkerMod {
     clause: Spec,
     currentId: Null,
     allowSameId: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ecmarkup/lib/autolinker", "replacerForNamespace")
-  @js.native
+  @scala.inline
   def replacerForNamespace(
     namespace: String,
     biblio: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Biblio */ js.Any
-  ): js.Tuple2[RegExp, AutoLinkMap] = js.native
+  ): js.Tuple2[RegExp, AutoLinkMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("replacerForNamespace")(namespace.asInstanceOf[js.Any], biblio.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RegExp, AutoLinkMap]]
   
   type AutoLinkMap = StringDictionary[BiblioEntry]
 }

@@ -3,7 +3,6 @@ package typings.radix64
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,18 +11,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : Radix = js.native
   
-  @js.native
   trait MethodsEnum extends StObject {
     
-    var BASE64: MethodsString = js.native
+    var BASE64: MethodsString
     
-    var BASE64ASCII: MethodsString = js.native
+    var BASE64ASCII: MethodsString
     
-    var BASE64NATURAL: MethodsString = js.native
+    var BASE64NATURAL: MethodsString
     
-    var BASE64URL: MethodsString = js.native
+    var BASE64URL: MethodsString
     
-    var DEFAULT: MethodsString = js.native
+    var DEFAULT: MethodsString
   }
   object MethodsEnum {
     

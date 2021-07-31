@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait Field extends StObject {
     * (e.g., `"ColName"` in the query `"SELECT ColName FROM Table"`). Some columns might have an empty name (e.g., `"SELECT UPPER(ColName)"`). Note that a query result can contain
     * multiple fields with the same name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The type of the field. */
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object Field {
   

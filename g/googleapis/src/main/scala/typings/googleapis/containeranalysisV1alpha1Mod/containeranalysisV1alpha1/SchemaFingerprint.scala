@@ -2,25 +2,23 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of properties that uniquely identify a given Docker image.
   */
-@js.native
 trait SchemaFingerprint extends StObject {
   
   /**
     * The layer-id of the final layer in the Docker image&#39;s v1
     * representation. This field can be used as a filter in list requests.
     */
-  var v1Name: js.UndefOr[String] = js.native
+  var v1Name: js.UndefOr[String] = js.undefined
   
   /**
     * The ordered list of v2 blobs that represent a given image.
     */
-  var v2Blob: js.UndefOr[js.Array[String]] = js.native
+  var v2Blob: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. The name of the image&#39;s v2 blobs computed via: [bottom]
@@ -28,7 +26,7 @@ trait SchemaFingerprint extends StObject {
     * Only the name of the final blob is kept. This field can be used as a
     * filter in list requests.
     */
-  var v2Name: js.UndefOr[String] = js.native
+  var v2Name: js.UndefOr[String] = js.undefined
 }
 object SchemaFingerprint {
   

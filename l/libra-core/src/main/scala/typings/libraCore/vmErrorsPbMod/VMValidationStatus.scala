@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus")
@@ -31,13 +30,11 @@ object VMValidationStatus {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): VMValidationStatus = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): VMValidationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMValidationStatus]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: VMValidationStatus, reader: BinaryReader): VMValidationStatus = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: VMValidationStatus, reader: BinaryReader): VMValidationStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMValidationStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus.extensions")
   @js.native
@@ -52,20 +49,17 @@ object VMValidationStatus {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: VMValidationStatus, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: VMValidationStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMValidationStatus.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: VMValidationStatus): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: VMValidationStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var code: VMValidationStatusCode = js.native
+    var code: VMValidationStatusCode
     
-    var message: String = js.native
+    var message: String
   }
   object AsObject {
     

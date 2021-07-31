@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavContainer extends Control {
+trait NavContainer
+  extends StObject
+     with Control {
   
   /**
     * Adds a custom transition to the NavContainer type (not to a particular instance!). The transition is
@@ -152,9 +153,9 @@ trait NavContainer extends Control {
     * transition.
     */
   def backToPage(sPageId: String): NavContainer = js.native
-  def backToPage(sPageId: String, oBackData: js.UndefOr[scala.Nothing], oTransitionParameters: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  def backToPage(sPageId: String, oBackData: Unit, oTransitionParameters: js.Any): NavContainer = js.native
   
   /**
     * Navigates back to the initial/top level (this is the element aggregated as "initialPage", or the
@@ -371,9 +372,9 @@ trait NavContainer extends Control {
     * inserted previous page if the user would have done a normal forward navigation to it.
     */
   def insertPreviousPage(sPageId: String): NavContainer = js.native
-  def insertPreviousPage(sPageId: String, sTransitionName: js.UndefOr[scala.Nothing], oData: js.Any): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
+  def insertPreviousPage(sPageId: String, sTransitionName: Unit, oData: js.Any): NavContainer = js.native
   
   /**
     * Removes all the controls from the aggregation <code>pages</code>.Additionally, it unregisters them
@@ -479,26 +480,11 @@ trait NavContainer extends Control {
     * use any parameter.
     */
   def to(sPageId: String): NavContainer = js.native
-  def to(
-    sPageId: String,
-    sTransitionName: js.UndefOr[scala.Nothing],
-    oData: js.UndefOr[scala.Nothing],
-    oTransitionParameters: js.Any
-  ): NavContainer = js.native
-  def to(sPageId: String, sTransitionName: js.UndefOr[scala.Nothing], oData: js.Any): NavContainer = js.native
-  def to(
-    sPageId: String,
-    sTransitionName: js.UndefOr[scala.Nothing],
-    oData: js.Any,
-    oTransitionParameters: js.Any
-  ): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String): NavContainer = js.native
-  def to(
-    sPageId: String,
-    sTransitionName: String,
-    oData: js.UndefOr[scala.Nothing],
-    oTransitionParameters: js.Any
-  ): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  def to(sPageId: String, sTransitionName: String, oData: Unit, oTransitionParameters: js.Any): NavContainer = js.native
+  def to(sPageId: String, sTransitionName: Unit, oData: js.Any): NavContainer = js.native
+  def to(sPageId: String, sTransitionName: Unit, oData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
+  def to(sPageId: String, sTransitionName: Unit, oData: Unit, oTransitionParameters: js.Any): NavContainer = js.native
 }

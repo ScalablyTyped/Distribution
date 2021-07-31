@@ -8,7 +8,6 @@ import typings.three.webGLObjectsMod.WebGLObjects
 import typings.three.webGLRendererMod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLShadowMapMod {

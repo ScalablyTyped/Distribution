@@ -2,23 +2,23 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Animation extends FileBase {
+trait Animation
+  extends StObject
+     with FileBase {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var file_name: js.UndefOr[String] = js.native
+  var file_name: js.UndefOr[String] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var mime_type: js.UndefOr[String] = js.native
+  var mime_type: js.UndefOr[String] = js.undefined
   
-  var thumb: js.UndefOr[PhotoSize] = js.native
+  var thumb: js.UndefOr[PhotoSize] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object Animation {
   

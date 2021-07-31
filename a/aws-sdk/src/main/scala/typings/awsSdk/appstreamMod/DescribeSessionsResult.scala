@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSessionsResult extends StObject {
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the streaming sessions.
     */
-  var Sessions: js.UndefOr[SessionList] = js.native
+  var Sessions: js.UndefOr[SessionList] = js.undefined
 }
 object DescribeSessionsResult {
   

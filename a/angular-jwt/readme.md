@@ -12,7 +12,7 @@ Library to help you work with JWTs on AngularJS
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 22 |
-| # downloads        | 653552 |
+| # downloads        | 643276 |
 | # stars            | 2 |
 
 ## Links

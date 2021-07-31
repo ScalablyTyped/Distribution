@@ -2,80 +2,78 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeleconferenceDeviceMediaQuality extends StObject {
   
   // The average inbound stream network jitter.
-  var averageInboundJitter: js.UndefOr[NullableOption[String]] = js.native
+  var averageInboundJitter: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The average inbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.
-  var averageInboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.native
+  var averageInboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The average inbound stream network round trip delay.
-  var averageInboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.native
+  var averageInboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The average outbound stream network jitter.
-  var averageOutboundJitter: js.UndefOr[NullableOption[String]] = js.native
+  var averageOutboundJitter: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The average outbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.
-  var averageOutboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.native
+  var averageOutboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The average outbound stream network round trip delay.
-  var averageOutboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.native
+  var averageOutboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The channel index of media. Indexing begins with 1. If a media session contains 3 video modalities, channel indexes
     * will be 1, 2, and 3.
     */
-  var channelIndex: js.UndefOr[Double] = js.native
+  var channelIndex: js.UndefOr[Double] = js.undefined
   
   // The total number of the inbound packets.
-  var inboundPackets: js.UndefOr[NullableOption[Double]] = js.native
+  var inboundPackets: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // the local IP address for the media session.
-  var localIPAddress: js.UndefOr[NullableOption[String]] = js.native
+  var localIPAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The local media port.
-  var localPort: js.UndefOr[NullableOption[Double]] = js.native
+  var localPort: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The maximum inbound stream network jitter.
-  var maximumInboundJitter: js.UndefOr[NullableOption[String]] = js.native
+  var maximumInboundJitter: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The maximum inbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.
-  var maximumInboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.native
+  var maximumInboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The maximum inbound stream network round trip delay.
-  var maximumInboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.native
+  var maximumInboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The maximum outbound stream network jitter.
-  var maximumOutboundJitter: js.UndefOr[NullableOption[String]] = js.native
+  var maximumOutboundJitter: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The maximum outbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.
-  var maximumOutboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.native
+  var maximumOutboundPacketLossRateInPercentage: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The maximum outbound stream network round trip delay.
-  var maximumOutboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.native
+  var maximumOutboundRoundTripDelay: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The total modality duration. If the media enabled and disabled multiple times, MediaDuration will the summation of all
     * of the durations.
     */
-  var mediaDuration: js.UndefOr[NullableOption[String]] = js.native
+  var mediaDuration: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The network link speed in bytes
-  var networkLinkSpeedInBytes: js.UndefOr[NullableOption[Double]] = js.native
+  var networkLinkSpeedInBytes: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The total number of the outbound packets.
-  var outboundPackets: js.UndefOr[NullableOption[Double]] = js.native
+  var outboundPackets: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The remote IP address for the media session.
-  var remoteIPAddress: js.UndefOr[NullableOption[String]] = js.native
+  var remoteIPAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The remote media port.
-  var remotePort: js.UndefOr[NullableOption[Double]] = js.native
+  var remotePort: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object TeleconferenceDeviceMediaQuality {
   

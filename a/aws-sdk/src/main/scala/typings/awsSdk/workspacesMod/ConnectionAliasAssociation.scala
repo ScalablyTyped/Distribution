@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAliasAssociation extends StObject {
   
   /**
     * The identifier of the AWS account that associated the connection alias with a directory.
     */
-  var AssociatedAccountId: js.UndefOr[AwsAccount] = js.native
+  var AssociatedAccountId: js.UndefOr[AwsAccount] = js.undefined
   
   /**
     * The association status of the connection alias.
     */
-  var AssociationStatus: js.UndefOr[typings.awsSdk.workspacesMod.AssociationStatus] = js.native
+  var AssociationStatus: js.UndefOr[typings.awsSdk.workspacesMod.AssociationStatus] = js.undefined
   
   /**
     * The identifier of the connection alias association. You use the connection identifier in the DNS TXT record when you're configuring your DNS routing policies.
     */
-  var ConnectionIdentifier: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionIdentifier] = js.native
+  var ConnectionIdentifier: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionIdentifier] = js.undefined
   
   /**
     * The identifier of the directory associated with a connection alias.
     */
-  var ResourceId: js.UndefOr[NonEmptyString] = js.native
+  var ResourceId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ConnectionAliasAssociation {
   

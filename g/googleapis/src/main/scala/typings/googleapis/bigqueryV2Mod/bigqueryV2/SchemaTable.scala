@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTable extends StObject {
   
   /**
@@ -14,23 +12,23 @@ trait SchemaTable extends StObject {
     * partitioning, data in the table will be first partitioned and
     * subsequently clustered.
     */
-  var clustering: js.UndefOr[SchemaClustering] = js.native
+  var clustering: js.UndefOr[SchemaClustering] = js.undefined
   
   /**
     * [Output-only] The time when this table was created, in milliseconds since
     * the epoch.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] A user-friendly description of this table.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys).
     */
-  var encryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.native
+  var encryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.undefined
   
   /**
     * [Output-only] A hash of the table metadata. Used to ensure there were no
@@ -38,7 +36,7 @@ trait SchemaTable extends StObject {
     * guaranteed to change when the table contents or the fields numRows,
     * numBytes, numLongTermBytes or lastModifiedTime change.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The time when this table expires, in milliseconds since the
@@ -47,29 +45,29 @@ trait SchemaTable extends StObject {
     * defaultTableExpirationMs property of the encapsulating dataset can be
     * used to set a default expirationTime on newly created tables.
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Describes the data format, location, and other properties of a
     * table stored outside of BigQuery. By defining these properties, the data
     * source can then be queried as if it were a standard BigQuery table.
     */
-  var externalDataConfiguration: js.UndefOr[SchemaExternalDataConfiguration] = js.native
+  var externalDataConfiguration: js.UndefOr[SchemaExternalDataConfiguration] = js.undefined
   
   /**
     * [Optional] A descriptive name for this table.
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] An opaque ID uniquely identifying the table.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The type of the resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this table. You can use these to organize and
@@ -79,97 +77,97 @@ trait SchemaTable extends StObject {
     * values are optional. Label keys must start with a letter and each label
     * in the list must have a different key.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Output-only] The time when this table was last modified, in milliseconds
     * since the epoch.
     */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The geographic location where the table resides. This value
     * is inherited from the dataset.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Materialized view definition.
     */
-  var materializedView: js.UndefOr[SchemaMaterializedViewDefinition] = js.native
+  var materializedView: js.UndefOr[SchemaMaterializedViewDefinition] = js.undefined
   
   /**
     * [Output-only, Beta] Present iff this table represents a ML model.
     * Describes the training information for the model, and it is required to
     * run &#39;PREDICT&#39; queries.
     */
-  var model: js.UndefOr[SchemaModelDefinition] = js.native
+  var model: js.UndefOr[SchemaModelDefinition] = js.undefined
   
   /**
     * [Output-only] The size of this table in bytes, excluding any data in the
     * streaming buffer.
     */
-  var numBytes: js.UndefOr[String] = js.native
+  var numBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The number of bytes in the table that are considered
     * &quot;long-term storage&quot;.
     */
-  var numLongTermBytes: js.UndefOr[String] = js.native
+  var numLongTermBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] [TrustedTester] The physical size of this table in bytes,
     * excluding any data in the streaming buffer. This includes compression and
     * storage used for time travel.
     */
-  var numPhysicalBytes: js.UndefOr[String] = js.native
+  var numPhysicalBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The number of rows of data in this table, excluding any
     * data in the streaming buffer.
     */
-  var numRows: js.UndefOr[String] = js.native
+  var numRows: js.UndefOr[String] = js.undefined
   
   /**
     * [TrustedTester] Range partitioning specification for this table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
-  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.undefined
   
   /**
     * [Beta] [Optional] If set to true, queries over this table require a
     * partition filter that can be used for partition elimination to be
     * specified.
     */
-  var requirePartitionFilter: js.UndefOr[Boolean] = js.native
+  var requirePartitionFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Describes the schema of this table.
     */
-  var schema: js.UndefOr[SchemaTableSchema] = js.native
+  var schema: js.UndefOr[SchemaTableSchema] = js.undefined
   
   /**
     * [Output-only] A URL that can be used to access this resource again.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Contains information regarding this table&#39;s streaming
     * buffer, if one is present. This field will be absent if the table is not
     * being streamed to or if there is no data in the streaming buffer.
     */
-  var streamingBuffer: js.UndefOr[SchemaStreamingbuffer] = js.native
+  var streamingBuffer: js.UndefOr[SchemaStreamingbuffer] = js.undefined
   
   /**
     * [Required] Reference describing the ID of this table.
     */
-  var tableReference: js.UndefOr[SchemaTableReference] = js.native
+  var tableReference: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * Time-based partitioning specification for this table. Only one of
     * timePartitioning and rangePartitioning should be specified.
     */
-  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.undefined
   
   /**
     * [Output-only] Describes the table type. The following values are
@@ -179,12 +177,12 @@ trait SchemaTable extends StObject {
     * external storage system, such as Google Cloud Storage. The default value
     * is TABLE.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The view definition.
     */
-  var view: js.UndefOr[SchemaViewDefinition] = js.native
+  var view: js.UndefOr[SchemaViewDefinition] = js.undefined
 }
 object SchemaTable {
   

@@ -4,20 +4,20 @@ import typings.flowdoc.Node
 import typings.flowdoc.flowdocStrings.PAGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Page extends Node {
+trait Page
+  extends StObject
+     with Node {
   
-  var backgroundColor: Color = js.native
+  var backgroundColor: Color
   
-  var children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond] = js.native
+  var children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]
   
-  var startNodeID: js.UndefOr[String] = js.native
+  var startNodeID: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_Page: PAGE = js.native
+  var type_Page: PAGE
 }
 object Page {
   
@@ -26,11 +26,10 @@ object Page {
     backgroundColor: Color,
     children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond],
     id: String,
-    name: String,
-    `type`: PAGE
+    name: String
   ): Page = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PAGE")
     __obj.asInstanceOf[Page]
   }
   

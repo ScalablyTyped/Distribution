@@ -6,25 +6,25 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes what and how to search within a container. */
-@js.native
-trait SearchDescriptor extends XSearchDescriptor {
+trait SearchDescriptor
+  extends StObject
+     with XSearchDescriptor {
   
   /** If `TRUE` , the search is done backwards in the document. */
-  var SearchBackwards: Boolean = js.native
+  var SearchBackwards: Boolean
   
   /** If `TRUE` , the case of the letters is important for the match. */
-  var SearchCaseSensitive: Boolean = js.native
+  var SearchCaseSensitive: Boolean
   
   /**
     * If `TRUE` , the search string is evaluated as a regular expression.
     *
     * SearchRegularExpression, SearchWildcard and SearchSimilarity are mutually exclusive, only one can be `TRUE` at the same time.
     */
-  var SearchRegularExpression: Boolean = js.native
+  var SearchRegularExpression: Boolean
   
   /**
     * If `TRUE` , a "similarity search" is performed.
@@ -35,13 +35,13 @@ trait SearchDescriptor extends XSearchDescriptor {
     *
     * SearchRegularExpression, SearchWildcard and SearchSimilarity are mutually exclusive, only one can be `TRUE` at the same time.
     */
-  var SearchSimilarity: Boolean = js.native
+  var SearchSimilarity: Boolean
   
   /** specifies the number of characters that must be added to match the search pattern. */
-  var SearchSimilarityAdd: Double = js.native
+  var SearchSimilarityAdd: Double
   
   /** This property specifies the number of characters that must be replaced to match the search pattern. */
-  var SearchSimilarityExchange: Double = js.native
+  var SearchSimilarityExchange: Double
   
   /**
     * If `TRUE` , all similarity rules are applied together.
@@ -50,13 +50,13 @@ trait SearchDescriptor extends XSearchDescriptor {
     *
     * SearchSimilarityRemoveSearchSimilarityAddSearchSimilarityExchange
     */
-  var SearchSimilarityRelax: Boolean = js.native
+  var SearchSimilarityRelax: Boolean
   
   /** This property specifies the number of characters that may be ignored to match the search pattern. */
-  var SearchSimilarityRemove: Double = js.native
+  var SearchSimilarityRemove: Double
   
   /** If `TRUE` , it is searched for positions where the paragraph style with the name of the search pattern is applied. */
-  var SearchStyles: Boolean = js.native
+  var SearchStyles: Boolean
   
   /**
     * If `TRUE` , the search string is evaluated as a wildcard pattern.
@@ -68,10 +68,10 @@ trait SearchDescriptor extends XSearchDescriptor {
     * SearchRegularExpression, SearchWildcard and SearchSimilarity are mutually exclusive, only one can be `TRUE` at the same time.
     * @since LibreOffice 5.2
     */
-  var SearchWildcard: Boolean = js.native
+  var SearchWildcard: Boolean
   
   /** If `TRUE` , only complete words will be found. */
-  var SearchWords: Boolean = js.native
+  var SearchWords: Boolean
 }
 object SearchDescriptor {
   

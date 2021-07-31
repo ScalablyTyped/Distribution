@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposCreateCommitSignatureProtectionRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposCreateCommitSignatureProtectionEndpoint extends StObject {
   
-  var parameters: ReposCreateCommitSignatureProtectionEndpoint = js.native
+  var parameters: ReposCreateCommitSignatureProtectionEndpoint
   
-  var request: ReposCreateCommitSignatureProtectionRequestOptions = js.native
+  var request: ReposCreateCommitSignatureProtectionRequestOptions
   
-  var response: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData] = js.native
+  var response: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]
 }
 object ParametersReposCreateCommitSignatureProtectionEndpoint {
   

@@ -2,15 +2,13 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawArguments extends StObject {
   
-  var args: js.Array[RawArgument] = js.native
+  var args: js.Array[RawArgument]
   
-  var rest: js.Array[String] = js.native
+  var rest: js.Array[String]
 }
 object RawArguments {
   

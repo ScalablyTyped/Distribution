@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchConfig extends StObject {
   
   /** Apt update settings. Use this setting to override the default `apt` patch rules. */
-  var apt: js.UndefOr[AptSettings] = js.native
+  var apt: js.UndefOr[AptSettings] = js.undefined
   
   /** Goo update settings. Use this setting to override the default `goo` patch rules. */
-  var goo: js.UndefOr[js.Any] = js.native
+  var goo: js.UndefOr[js.Any] = js.undefined
   
   /** The `ExecStep` to run after the patch update. */
-  var postStep: js.UndefOr[ExecStep] = js.native
+  var postStep: js.UndefOr[ExecStep] = js.undefined
   
   /** The `ExecStep` to run before the patch update. */
-  var preStep: js.UndefOr[ExecStep] = js.native
+  var preStep: js.UndefOr[ExecStep] = js.undefined
   
   /** Post-patch reboot settings. */
-  var rebootConfig: js.UndefOr[String] = js.native
+  var rebootConfig: js.UndefOr[String] = js.undefined
   
   /** Windows update settings. Use this override the default windows patch rules. */
-  var windowsUpdate: js.UndefOr[WindowsUpdateSettings] = js.native
+  var windowsUpdate: js.UndefOr[WindowsUpdateSettings] = js.undefined
   
   /** Yum update settings. Use this setting to override the default `yum` patch rules. */
-  var yum: js.UndefOr[YumSettings] = js.native
+  var yum: js.UndefOr[YumSettings] = js.undefined
   
   /** Zypper update settings. Use this setting to override the default `zypper` patch rules. */
-  var zypper: js.UndefOr[ZypperSettings] = js.native
+  var zypper: js.UndefOr[ZypperSettings] = js.undefined
 }
 object PatchConfig {
   

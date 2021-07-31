@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offset extends StObject {
   
-  var offset: Double | Signal = js.native
+  var offset: Double | Signal
   
-  var signal: String = js.native
+  var signal: String
 }
 object Offset {
   

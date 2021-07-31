@@ -10,9 +10,9 @@ Watch Redux state for changes.
 | ------------------ | :-------------: |
 | Full name          | redux-watch |
 | Keywords           | redux, watch, observe, monitor, notify, state, observer, watcher, react |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 494637 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 589921 |
 | # stars            | 2 |
 
 ## Links

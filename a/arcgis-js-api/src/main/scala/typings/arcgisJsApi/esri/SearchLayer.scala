@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchLayer extends Accessor {
+trait SearchLayer
+  extends StObject
+     with Accessor {
   
   /**
     * The field to use for search.

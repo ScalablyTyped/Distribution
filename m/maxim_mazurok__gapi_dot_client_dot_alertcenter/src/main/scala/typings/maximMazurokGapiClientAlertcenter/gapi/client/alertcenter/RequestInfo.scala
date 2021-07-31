@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestInfo extends StObject {
   
   /** List of app developers who triggered notifications for above application. */
-  var appDeveloperEmail: js.UndefOr[js.Array[String]] = js.native
+  var appDeveloperEmail: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The application that requires the SQL setup. */
-  var appKey: js.UndefOr[String] = js.native
+  var appKey: js.UndefOr[String] = js.undefined
   
   /** Required. Number of requests sent for this application to set up default SQL instance. */
-  var numberOfRequests: js.UndefOr[String] = js.native
+  var numberOfRequests: js.UndefOr[String] = js.undefined
 }
 object RequestInfo {
   

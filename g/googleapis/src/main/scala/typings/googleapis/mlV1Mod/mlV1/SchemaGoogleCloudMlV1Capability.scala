@@ -2,18 +2,16 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudMlV1Capability extends StObject {
   
   /**
     * Available accelerators for the capability.
     */
-  var availableAccelerators: js.UndefOr[js.Array[String]] = js.native
+  var availableAccelerators: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1Capability {
   

@@ -2,17 +2,15 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtilString extends StObject {
   
   /**
     * Camelizes a string
     * @param string String to camelize
     */
-  def camelize(string: String): String = js.native
+  def camelize(string: String): String
   
   /**
     * Capitalizes a string
@@ -21,20 +19,20 @@ trait IUtilString extends StObject {
     * and other letters stay untouched, if false first letter is capitalized
     * and other letters are converted to lowercase.
     */
-  def capitalize(string: String, firstLetterOnly: Boolean): String = js.native
+  def capitalize(string: String, firstLetterOnly: Boolean): String
   
   /**
     * Escapes XML in a string
     * @param string String to escape
     */
-  def escapeXml(string: String): String = js.native
+  def escapeXml(string: String): String
   
   /**
     * Divide a string in the user perceived single units
     * @param {String} textstring String to escape
     * @return {Array} array containing the graphemes
     */
-  def graphemeSplit(string: String): js.Array[String] = js.native
+  def graphemeSplit(string: String): js.Array[String]
 }
 object IUtilString {
   

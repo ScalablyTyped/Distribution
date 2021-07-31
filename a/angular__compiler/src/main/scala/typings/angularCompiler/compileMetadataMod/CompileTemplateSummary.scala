@@ -3,25 +3,23 @@ package typings.angularCompiler.compileMetadataMod
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileTemplateSummary extends StObject {
   
-  var animations: js.Array[_] | Null = js.native
+  var animations: js.Array[js.Any] | Null
   
-  var encapsulation: ViewEncapsulation | Null = js.native
+  var encapsulation: ViewEncapsulation | Null
   
-  var ngContentSelectors: js.Array[String] = js.native
+  var ngContentSelectors: js.Array[String]
   
-  var styles: js.Array[String] = js.native
+  var styles: js.Array[String]
 }
 object CompileTemplateSummary {
   
   @scala.inline
   def apply(ngContentSelectors: js.Array[String], styles: js.Array[String]): CompileTemplateSummary = {
-    val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], animations = null, encapsulation = null)
     __obj.asInstanceOf[CompileTemplateSummary]
   }
   
@@ -29,7 +27,7 @@ object CompileTemplateSummary {
   implicit class CompileTemplateSummaryMutableBuilder[Self <: CompileTemplateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationsNull: Self = StObject.set(x, "animations", null)

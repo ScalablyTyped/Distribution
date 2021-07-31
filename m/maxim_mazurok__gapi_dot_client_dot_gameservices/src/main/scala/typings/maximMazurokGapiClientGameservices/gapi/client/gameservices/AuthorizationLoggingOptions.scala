@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationLoggingOptions extends StObject {
   
   /** The type of the permission that was checked. */
-  var permissionType: js.UndefOr[String] = js.native
+  var permissionType: js.UndefOr[String] = js.undefined
 }
 object AuthorizationLoggingOptions {
   

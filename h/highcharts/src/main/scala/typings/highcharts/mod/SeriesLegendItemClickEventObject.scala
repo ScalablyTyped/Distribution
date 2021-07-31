@@ -4,38 +4,36 @@ import typings.highcharts.highchartsStrings.legendItemClick
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesLegendItemClickEventObject extends StObject {
   
   /**
     * Related browser event.
     */
-  var browserEvent: PointerEvent = js.native
+  var browserEvent: PointerEvent
   
   /**
     * Prevent the default action of toggle the visibility of the series.
     */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /**
     * Related series.
     */
-  var target: Series = js.native
+  var target: Series
   
   /**
     * Event type.
     */
-  var `type`: legendItemClick = js.native
+  var `type`: legendItemClick
 }
 object SeriesLegendItemClickEventObject {
   
   @scala.inline
-  def apply(browserEvent: PointerEvent, preventDefault: js.Function, target: Series, `type`: legendItemClick): SeriesLegendItemClickEventObject = {
+  def apply(browserEvent: PointerEvent, preventDefault: js.Function, target: Series): SeriesLegendItemClickEventObject = {
     val __obj = js.Dynamic.literal(browserEvent = browserEvent.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("legendItemClick")
     __obj.asInstanceOf[SeriesLegendItemClickEventObject]
   }
   

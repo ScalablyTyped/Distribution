@@ -6,50 +6,49 @@ import typings.std.RTCDataChannelInit
 import typings.std.RTCOfferOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionDescriptionHandlerOptionsMod {
   
-  @js.native
   trait SessionDescriptionHandlerOptions
-    extends typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions {
+    extends StObject
+       with typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions {
     
     /**
       * Answer options to use when creating an answer.
       */
-    var answerOptions: js.UndefOr[RTCAnswerOptions] = js.native
+    var answerOptions: js.UndefOr[RTCAnswerOptions] = js.undefined
     
     /**
       * If true, create a data channel when making initial offer.
       */
-    var dataChannel: js.UndefOr[Boolean] = js.native
+    var dataChannel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A human-readable name to use when creating the data channel.
       */
-    var dataChannelLabel: js.UndefOr[String] = js.native
+    var dataChannelLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Configuration options for creating the data channel.
       */
-    var dataChannelOptions: js.UndefOr[RTCDataChannelInit] = js.native
+    var dataChannelOptions: js.UndefOr[RTCDataChannelInit] = js.undefined
     
     /**
       * The maximum duration to wait in ms for ICE gathering to complete.
       * No timeout if undefined or zero.
       */
-    var iceGatheringTimeout: js.UndefOr[Double] = js.native
+    var iceGatheringTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Offer options to use when creating an offer.
       */
-    var offerOptions: js.UndefOr[RTCOfferOptions] = js.native
+    var offerOptions: js.UndefOr[RTCOfferOptions] = js.undefined
     
     /**
       * Called upon creating a data channel.
       */
-    var onDataChannel: js.UndefOr[js.Function1[/* dataChannel */ RTCDataChannel, Unit]] = js.native
+    var onDataChannel: js.UndefOr[js.Function1[/* dataChannel */ RTCDataChannel, Unit]] = js.undefined
   }
   object SessionDescriptionHandlerOptions {
     

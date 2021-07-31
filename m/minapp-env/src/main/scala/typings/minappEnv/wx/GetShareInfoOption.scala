@@ -2,28 +2,26 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetShareInfoOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[GetShareInfoCompleteCallback] = js.native
+  var complete: js.UndefOr[GetShareInfoCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[GetShareInfoFailCallback] = js.native
+  var fail: js.UndefOr[GetShareInfoFailCallback] = js.undefined
   
   /** shareTicket */
-  var shareTicket: String = js.native
+  var shareTicket: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[GetShareInfoSuccessCallback] = js.native
+  var success: js.UndefOr[GetShareInfoSuccessCallback] = js.undefined
   
   /** 超时时间，单位 ms
     *
     * 最低基础库： `1.9.90` */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object GetShareInfoOption {
   

@@ -10,9 +10,9 @@ Webpack plugin to inline critical CSS and lazy-load the rest.
 | ------------------ | :-------------: |
 | Full name          | critters-webpack-plugin |
 | Keywords           | critical css, inline css, critical, critters, webpack plugin, performance |
-| # releases         | 20 |
-| # dependents       | 11 |
-| # downloads        | 291871 |
+| # releases         | 6 |
+| # dependents       | 12 |
+| # downloads        | 540319 |
 | # stars            | 0 |
 
 ## Links

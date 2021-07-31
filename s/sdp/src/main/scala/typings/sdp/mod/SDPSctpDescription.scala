@@ -2,17 +2,15 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPSctpDescription extends StObject {
   
-  var maxMessageSize: js.UndefOr[Double] = js.native
+  var maxMessageSize: js.UndefOr[Double] = js.undefined
   
-  var port: Double = js.native
+  var port: Double
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object SDPSctpDescription {
   

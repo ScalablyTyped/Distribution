@@ -2,17 +2,15 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollisionFilter extends StObject {
   
-  var category: Double = js.native
+  var category: Double
   
-  var group: Double = js.native
+  var group: Double
   
-  var mask: Double = js.native
+  var mask: Double
 }
 object ICollisionFilter {
   

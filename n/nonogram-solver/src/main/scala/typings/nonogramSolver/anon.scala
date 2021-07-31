@@ -3,20 +3,18 @@ package typings.nonogramSolver
 import typings.nonogramSolver.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Required<nonogram-solver.nonogram-solver.Input> */
-  @js.native
   trait RequiredInput extends StObject {
     
-    var columns: js.Array[js.Array[Double]] = js.native
+    var columns: js.Array[js.Array[Double]]
     
-    var content: js.Array[State] = js.native
+    var content: js.Array[State]
     
-    var rows: js.Array[js.Array[Double]] = js.native
+    var rows: js.Array[js.Array[Double]]
   }
   object RequiredInput {
     

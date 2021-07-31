@@ -2,18 +2,16 @@ package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlBuilder extends StObject {
   
-  def addKeyValueQueryString(key: String, value: String): Unit = js.native
+  def addKeyValueQueryString(key: String, value: String): Unit
   
-  def combinePath(path: String): Unit = js.native
+  def combinePath(path: String): Unit
   
   /** Returns the resulting url */
-  def get_url(): String = js.native
+  def get_url(): String
 }
 object UrlBuilder {
   

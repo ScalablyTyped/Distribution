@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DrawProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#activeAction)
     */
-  var activeAction: js.UndefOr[DrawActionProperties] = js.native
+  var activeAction: js.UndefOr[DrawActionProperties] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object DrawProperties {
   

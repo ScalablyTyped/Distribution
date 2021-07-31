@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction")
@@ -39,9 +38,8 @@ object NoClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.create")
-  @js.native
-  def create(model: IModel): NoClientAction = js.native
+  @scala.inline
+  def create(model: IModel): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object NoClientAction {
     * of the parent ActionButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): NoClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -59,9 +56,8 @@ object NoClientAction {
     * of the parent ActionItem element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): NoClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -72,9 +68,8 @@ object NoClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NoClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -85,9 +80,8 @@ object NoClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NoClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -98,9 +92,8 @@ object NoClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NoClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -111,9 +104,8 @@ object NoClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NoClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -124,9 +116,8 @@ object NoClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): NoClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -137,9 +128,8 @@ object NoClientAction {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDataViewActionButtonUnderAction")
-  @js.native
-  def createInDataViewActionButtonUnderAction(container: DataViewActionButton): NoClientAction = js.native
+  @scala.inline
+  def createInDataViewActionButtonUnderAction(container: DataViewActionButton): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -150,9 +140,8 @@ object NoClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): NoClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -163,9 +152,8 @@ object NoClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NoClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -173,9 +161,8 @@ object NoClientAction {
     * of the parent GridActionButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): NoClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -183,9 +170,8 @@ object NoClientAction {
     * of the parent ListView element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): NoClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -196,9 +182,8 @@ object NoClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): NoClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -206,9 +191,8 @@ object NoClientAction {
     * of the parent menus.MenuItem element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): NoClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -219,9 +203,8 @@ object NoClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NoClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -229,9 +212,8 @@ object NoClientAction {
     * of the parent StaticImageViewer element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NoClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -242,9 +224,8 @@ object NoClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): NoClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
@@ -255,9 +236,8 @@ object NoClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): NoClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): NoClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NoClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.structureTypeName")

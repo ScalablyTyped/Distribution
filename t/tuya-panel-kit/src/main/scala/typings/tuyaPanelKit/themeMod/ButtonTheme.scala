@@ -2,29 +2,27 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonTheme extends StObject {
   
-  var bgHeight: Double | Null = js.native
+  var bgHeight: Double | Null
   
-  var bgRadius: Double | Null = js.native
+  var bgRadius: Double | Null
   
-  var bgWidth: Double | Null = js.native
+  var bgWidth: Double | Null
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var iconSize: Double = js.native
+  var iconSize: Double
   
-  var margin: js.Array[Double] = js.native
+  var margin: js.Array[Double]
 }
 object ButtonTheme {
   
   @scala.inline
   def apply(fontSize: Double, iconSize: Double, margin: js.Array[Double]): ButtonTheme = {
-    val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], bgHeight = null, bgRadius = null, bgWidth = null)
     __obj.asInstanceOf[ButtonTheme]
   }
   

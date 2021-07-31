@@ -10,45 +10,44 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmerLineTypesMod {
   
-  @js.native
   trait IShimmerLine extends StObject
   
-  @js.native
-  trait IShimmerLineProps extends AllHTMLAttributes[HTMLElement] {
+  trait IShimmerLineProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Use to set custom styling of the shimmerLine borders.
       * @deprecated Use `styles` prop to leverage mergeStyle API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Optional callback to access the IShimmerLine interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IShimmerLine]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IShimmerLine]] = js.undefined
     
     /**
       * Sets the height of the rectangle.
       * @defaultvalue 16px
       */
     @JSName("height")
-    var height_IShimmerLineProps: js.UndefOr[Double] = js.native
+    var height_IShimmerLineProps: js.UndefOr[Double] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerLineStyleProps, IShimmerLineStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerLineStyleProps, IShimmerLineStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IShimmerLineProps {
     
@@ -99,24 +98,23 @@ object shimmerLineTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerLineStyleProps extends StObject {
     
     /**
       * Styles to override borderStyles with custom ones.
       * @deprecated in favor of mergeStyles API.
       */
-    var borderStyle: js.UndefOr[IRawStyle] = js.native
+    var borderStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * Needed to provide a height to the root of the control.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Theme values passed to the component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IShimmerLineStyleProps {
     
@@ -146,33 +144,32 @@ object shimmerLineTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerLineStyles extends StObject {
     
     /**
       * Bottom-left corner SVG of the ShimmerLine component.
       */
-    var bottomLeftCorner: js.UndefOr[IStyle] = js.native
+    var bottomLeftCorner: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Bottom-right corner SVG of the ShimmerLine component.
       */
-    var bottomRightCorner: js.UndefOr[IStyle] = js.native
+    var bottomRightCorner: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Root of the ShimmerLine component.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Top-left corner SVG of the ShimmerLine component.
       */
-    var topLeftCorner: js.UndefOr[IStyle] = js.native
+    var topLeftCorner: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Top-right corner SVG of the ShimmerLine component.
       */
-    var topRightCorner: js.UndefOr[IStyle] = js.native
+    var topRightCorner: js.UndefOr[IStyle] = js.undefined
   }
   object IShimmerLineStyles {
     

@@ -2,31 +2,29 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFSBucketOptions extends StObject {
   
   /**
     * Optional read preference to be passed to read operations.
     */
-  var ReadPreference: js.UndefOr[typings.typeorm.mongodbTypingsMod.ReadPreference] = js.native
+  var ReadPreference: js.UndefOr[typings.typeorm.mongodbTypingsMod.ReadPreference] = js.undefined
   
   /**
     * The 'files' and 'chunks' collections will be prefixed with the bucket name followed by a dot.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /**
     * Number of bytes stored in each chunk. Defaults to 255KB.
     */
-  var chunkSizeBytes: js.UndefOr[scala.Double] = js.native
+  var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Optional write concern to be passed to write operations, for instance { w: 1 }.
     */
-  var writeConcern: js.UndefOr[WriteConcern] = js.native
+  var writeConcern: js.UndefOr[WriteConcern] = js.undefined
 }
 object GridFSBucketOptions {
   

@@ -2,13 +2,11 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASN1ObjectParam extends StObject {
   
-  var obj: ASN1Object = js.native
+  var obj: ASN1Object
 }
 object ASN1ObjectParam {
   

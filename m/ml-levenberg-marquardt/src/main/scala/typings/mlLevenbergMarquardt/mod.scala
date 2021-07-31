@@ -3,28 +3,28 @@ package typings.mlLevenbergMarquardt
 import typings.mlLevenbergMarquardt.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** Implementation of the Levenberg-Marquardt curve fitting method. */
+  @scala.inline
+  def apply(d: Data, fn: FittedFunction): Result = (^.asInstanceOf[js.Dynamic].apply(d.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def apply(d: Data, fn: FittedFunction, o: PartialOptions): Result = (^.asInstanceOf[js.Dynamic].apply(d.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Result]
+  
   @JSImport("ml-levenberg-marquardt", JSImport.Namespace)
   @js.native
-  def apply(d: Data, fn: FittedFunction): Result = js.native
-  @JSImport("ml-levenberg-marquardt", JSImport.Namespace)
-  @js.native
-  def apply(d: Data, fn: FittedFunction, o: PartialOptions): Result = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Coordinates of points to fit.
     */
-  @js.native
   trait Data extends StObject {
     
-    var x: js.Array[Double] = js.native
+    var x: js.Array[Double]
     
-    var y: js.Array[Double] = js.native
+    var y: js.Array[Double]
   }
   object Data {
     
@@ -57,50 +57,49 @@ object mod {
     */
   type FittedFunction = js.Function1[/* parameters */ js.Array[Double], js.Function1[/* x */ Double, Double]]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The Levenberg-Marquardt lambda parameter.
       * Default value: 0
       */
-    var damping: Double = js.native
+    var damping: Double
     
     /**
       * Minimum uncertainty allowed for each point.
       * Default value: 10e-3
       */
-    var errorTolerance: Double = js.native
+    var errorTolerance: Double
     
     /**
       * Adjustment for decrease the damping parameter.
       * Default value: 10e-2
       */
-    var gradientDifference: Double = js.native
+    var gradientDifference: Double
     
     /**
       * Initial guesses for the parameters.
       * Default value: Array(parameters.lengh).fill(1)
       */
-    var initialValues: js.Array[Double] = js.native
+    var initialValues: js.Array[Double]
     
     /**
       * The maximum number of iterations before halting.
       * Default value: 100
       */
-    var maxIterations: Double = js.native
+    var maxIterations: Double
     
     /**
       * Maximum values for the parameters.
       * Default value: Array(data.x.length).fill(MAX_SAFE_INTEGER)
       */
-    var maxValue: js.Array[Double] = js.native
+    var maxValue: js.Array[Double]
     
     /**
       * Minimum values for the parameters.
       * Default value: Array(data.x.length).fill(MIN_SAFE_INTEGER)
       */
-    var minValue: js.Array[Double] = js.native
+    var minValue: js.Array[Double]
   }
   object Options {
     
@@ -153,14 +152,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var parameterError: Double = js.native
+    var parameterError: Double
     
-    var parameterValues: js.Array[Double] = js.native
+    var parameterValues: js.Array[Double]
   }
   object Result {
     

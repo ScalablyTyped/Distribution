@@ -3,17 +3,15 @@ package typings.stylableCore.anon
 import typings.stylableCore.cachedProcessFileMod.MinimalFS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fs extends StObject {
   
-  var fs: MinimalFS = js.native
+  var fs: MinimalFS
   
-  def requireModule(id: String): js.Any = js.native
+  def requireModule(id: String): js.Any
   
-  def resolvePath(_ctx: String, path: String): String = js.native
+  def resolvePath(_ctx: String, path: String): String
 }
 object Fs {
   

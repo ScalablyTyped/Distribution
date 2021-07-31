@@ -6,7 +6,6 @@ import typings.activexOffice.Office.MsoOrgChartLayoutType
 import typings.activexOffice.Office.MsoRelativeNodePosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,7 +16,7 @@ trait DiagramNode extends StObject {
     * @param nodeType [nodeType=1]
     */
   def AddNode(): DiagramNode = js.native
-  def AddNode(pos: js.UndefOr[scala.Nothing], nodeType: MsoDiagramNodeType): DiagramNode = js.native
+  def AddNode(pos: Unit, nodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(pos: MsoRelativeNodePosition): DiagramNode = js.native
   def AddNode(pos: MsoRelativeNodePosition, nodeType: MsoDiagramNodeType): DiagramNode = js.native
   

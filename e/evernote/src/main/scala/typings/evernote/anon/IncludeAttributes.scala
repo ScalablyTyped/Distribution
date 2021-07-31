@@ -2,33 +2,31 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeAttributes extends StObject {
   
-  var includeAttributes: js.UndefOr[Boolean] = js.native
+  var includeAttributes: js.UndefOr[Boolean] = js.undefined
   
-  var includeContentLength: js.UndefOr[Boolean] = js.native
+  var includeContentLength: js.UndefOr[Boolean] = js.undefined
   
-  var includeCreated: js.UndefOr[Boolean] = js.native
+  var includeCreated: js.UndefOr[Boolean] = js.undefined
   
-  var includeDeleted: js.UndefOr[Boolean] = js.native
+  var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
-  var includeLargestResourceMime: js.UndefOr[Boolean] = js.native
+  var includeLargestResourceMime: js.UndefOr[Boolean] = js.undefined
   
-  var includeLargestResourceSize: js.UndefOr[Boolean] = js.native
+  var includeLargestResourceSize: js.UndefOr[Boolean] = js.undefined
   
-  var includeNotebookGuid: js.UndefOr[Boolean] = js.native
+  var includeNotebookGuid: js.UndefOr[Boolean] = js.undefined
   
-  var includeTagGuids: js.UndefOr[Boolean] = js.native
+  var includeTagGuids: js.UndefOr[Boolean] = js.undefined
   
-  var includeTitle: js.UndefOr[Boolean] = js.native
+  var includeTitle: js.UndefOr[Boolean] = js.undefined
   
-  var includeUpdateSequenceNum: js.UndefOr[Boolean] = js.native
+  var includeUpdateSequenceNum: js.UndefOr[Boolean] = js.undefined
   
-  var includeUpdated: js.UndefOr[Boolean] = js.native
+  var includeUpdated: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeAttributes {
   

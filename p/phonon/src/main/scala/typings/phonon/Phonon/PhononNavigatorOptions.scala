@@ -2,25 +2,23 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononNavigatorOptions extends StObject {
   
-  var animatePages: js.UndefOr[Boolean] = js.native
+  var animatePages: js.UndefOr[Boolean] = js.undefined
   
-  var defaultPage: js.UndefOr[String] = js.native
+  var defaultPage: js.UndefOr[String] = js.undefined
   
-  var defaultTemplateExtension: js.UndefOr[String] = js.native
+  var defaultTemplateExtension: js.UndefOr[String] = js.undefined
   
-  var enableBrowserBackButton: js.UndefOr[Boolean] = js.native
+  var enableBrowserBackButton: js.UndefOr[Boolean] = js.undefined
   
-  var hashPrefix: js.UndefOr[String] = js.native
+  var hashPrefix: js.UndefOr[String] = js.undefined
   
-  var templateRootDirectory: js.UndefOr[String] = js.native
+  var templateRootDirectory: js.UndefOr[String] = js.undefined
   
-  var useHash: js.UndefOr[Boolean] = js.native
+  var useHash: js.UndefOr[Boolean] = js.undefined
 }
 object PhononNavigatorOptions {
   

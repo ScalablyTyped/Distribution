@@ -2,16 +2,16 @@ package typings.nodeZendesk.mod.Users
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/users#create-user|Zendesk Users Create}
   */
-@js.native
-trait CreateModel extends BaseModel {
+trait CreateModel
+  extends StObject
+     with BaseModel {
   
-  var name: String = js.native
+  var name: String
 }
 object CreateModel {
   

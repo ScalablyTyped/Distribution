@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivacyProfile extends StObject {
   
   // A valid smtp email address for the privacy statement contact. Not required.
-  var contactEmail: js.UndefOr[NullableOption[String]] = js.native
+  var contactEmail: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the
     * company's privacy statement. Not required.
     */
-  var statementUrl: js.UndefOr[NullableOption[String]] = js.native
+  var statementUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PrivacyProfile {
   

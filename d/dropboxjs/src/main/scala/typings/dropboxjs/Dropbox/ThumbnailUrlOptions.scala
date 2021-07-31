@@ -2,17 +2,15 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThumbnailUrlOptions extends StObject {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var png: js.UndefOr[Boolean] = js.native
+  var png: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object ThumbnailUrlOptions {
   

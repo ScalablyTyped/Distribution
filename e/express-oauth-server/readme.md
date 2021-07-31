@@ -12,7 +12,7 @@ OAuth provider for express
 | Keywords           | express, oauth, oauth2 |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 188185 |
+| # downloads        | 233650 |
 | # stars            | 8 |
 
 ## Links

@@ -3,17 +3,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JobCompletedEvent extends JobEvent {
+trait JobCompletedEvent
+  extends StObject
+     with JobEvent {
   
-  var outputVariables: StringDictionary[VariableValue] = js.native
+  var outputVariables: StringDictionary[VariableValue]
   
-  var requestId: Double = js.native
+  var requestId: Double
   
-  var result: TaskResult = js.native
+  var result: TaskResult
 }
 object JobCompletedEvent {
   

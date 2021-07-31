@@ -12,13 +12,15 @@ import typings.typescript.mod.SolutionBuilderWithWatchHost
 import typings.typescript.mod.WatchStatusReporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlledWatchSolutionBuilderHostMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchSolutionBuilderHost", "createControlledWatchSolutionBuilderHost")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchSolutionBuilderHost", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createControlledWatchSolutionBuilderHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
@@ -30,5 +32,5 @@ object controlledWatchSolutionBuilderHostMod {
     afterProgramCreate: js.UndefOr[js.Function1[/* program */ TProgram, Unit]],
     afterProgramEmitAndDiagnostics: js.UndefOr[js.Function1[/* program */ TProgram, Unit]],
     hostExtensions: js.UndefOr[js.Array[TypeScriptHostExtension]]
-  ): SolutionBuilderWithWatchHost[TProgram] = js.native
+  ): SolutionBuilderWithWatchHost[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchSolutionBuilderHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], reportSolutionBuilderStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], afterProgramEmitAndDiagnostics.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[SolutionBuilderWithWatchHost[TProgram]]
 }

@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bigtableadminMod {
+  
+  @JSImport("googleapis/build/src/apis/bigtableadmin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object bigtableadminMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/bigtableadmin", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/bigtableadmin", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object bigtableadminMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/bigtableadmin", "bigtableadmin")
-  @js.native
-  def bigtableadmin(options: Options): Bigtableadmin = js.native
-  @JSImport("googleapis/build/src/apis/bigtableadmin", "bigtableadmin")
-  @js.native
-  def bigtableadmin(options: typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Options): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = js.native
-  @JSImport("googleapis/build/src/apis/bigtableadmin", "bigtableadmin")
-  @js.native
-  def bigtableadmin_v1(version: v1): Bigtableadmin = js.native
-  @JSImport("googleapis/build/src/apis/bigtableadmin", "bigtableadmin")
-  @js.native
-  def bigtableadmin_v2(version: v2): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = js.native
+  @scala.inline
+  def bigtableadmin(options: Options): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
+  @scala.inline
+  def bigtableadmin(options: typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Options): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
+  
+  @scala.inline
+  def bigtableadmin_v1(version: v1): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
+  
+  @scala.inline
+  def bigtableadmin_v2(version: v2): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
 }

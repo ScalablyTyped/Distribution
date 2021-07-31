@@ -2,20 +2,18 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPageNotFoundCallbackResult extends StObject {
   
   /** 是否本次启动的首个页面（例如从分享等入口进来，首个页面是开发者配置的分享页面） */
-  var isEntryPage: Boolean = js.native
+  var isEntryPage: Boolean
   
   /** 不存在页面的路径 (代码包路径) */
-  var path: String = js.native
+  var path: String
   
   /** 打开不存在页面的 query 参数 */
-  var query: IAnyObject = js.native
+  var query: IAnyObject
 }
 object OnPageNotFoundCallbackResult {
   

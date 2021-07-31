@@ -2,17 +2,15 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContextKey[T] extends StObject {
   
-  def get(): js.UndefOr[T] = js.native
+  def get(): js.UndefOr[T]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def set(value: T): Unit = js.native
+  def set(value: T): Unit
 }
 object IContextKey {
   
@@ -23,7 +21,7 @@ object IContextKey {
   }
   
   @scala.inline
-  implicit class IContextKeyMutableBuilder[Self <: IContextKey[_], T] (val x: Self with IContextKey[T]) extends AnyVal {
+  implicit class IContextKeyMutableBuilder[Self <: IContextKey[?], T] (val x: Self & IContextKey[T]) extends AnyVal {
     
     @scala.inline
     def setGet(value: () => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))

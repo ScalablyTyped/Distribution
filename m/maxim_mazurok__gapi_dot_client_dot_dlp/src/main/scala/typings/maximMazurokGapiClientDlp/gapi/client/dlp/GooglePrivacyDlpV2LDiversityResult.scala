@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2LDiversityResult extends StObject {
   
   /** Histogram of l-diversity equivalence class sensitive value frequencies. */
-  var sensitiveValueFrequencyHistogramBuckets: js.UndefOr[js.Array[GooglePrivacyDlpV2LDiversityHistogramBucket]] = js.native
+  var sensitiveValueFrequencyHistogramBuckets: js.UndefOr[js.Array[GooglePrivacyDlpV2LDiversityHistogramBucket]] = js.undefined
 }
 object GooglePrivacyDlpV2LDiversityResult {
   

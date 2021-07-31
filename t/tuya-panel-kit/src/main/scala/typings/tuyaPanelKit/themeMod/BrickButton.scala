@@ -2,30 +2,28 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme> */
-@js.native
 trait BrickButton extends StObject {
   
-  var bgBorder: js.UndefOr[String] = js.native
+  var bgBorder: js.UndefOr[String] = js.undefined
   
-  var bgBorderWidth: js.UndefOr[Double] = js.native
+  var bgBorderWidth: js.UndefOr[Double] = js.undefined
   
-  var bgRadius: js.UndefOr[Double] = js.native
+  var bgRadius: js.UndefOr[Double] = js.undefined
   
-  var dark: BrickButtonTheme = js.native
+  var dark: BrickButtonTheme
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var light: BrickButtonTheme = js.native
+  var light: BrickButtonTheme
   
-  var loadingBackground: js.UndefOr[String] = js.native
+  var loadingBackground: js.UndefOr[String] = js.undefined
   
-  var loadingColor: js.UndefOr[String] = js.native
+  var loadingColor: js.UndefOr[String] = js.undefined
 }
 object BrickButton {
   

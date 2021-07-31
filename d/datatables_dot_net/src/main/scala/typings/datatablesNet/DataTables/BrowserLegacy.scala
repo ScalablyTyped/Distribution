@@ -2,19 +2,17 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserLegacy extends StObject {
   
-  var bBounding: Boolean = js.native
+  var bBounding: Boolean
   
-  var bScrollOversize: Boolean = js.native
+  var bScrollOversize: Boolean
   
-  var bScrollbarLeft: Boolean = js.native
+  var bScrollbarLeft: Boolean
   
-  var barWidth: Double = js.native
+  var barWidth: Double
 }
 object BrowserLegacy {
   

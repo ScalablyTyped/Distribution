@@ -3,7 +3,6 @@ package typings.ol
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gpxMod {
@@ -18,12 +17,11 @@ object gpxMod {
   trait GPX
     extends typings.ol.xmlfeatureMod.default
   
-  @js.native
   trait LayoutOptions extends StObject {
     
-    var hasM: js.UndefOr[Boolean] = js.native
+    var hasM: js.UndefOr[Boolean] = js.undefined
     
-    var hasZ: js.UndefOr[Boolean] = js.native
+    var hasZ: js.UndefOr[Boolean] = js.undefined
   }
   object LayoutOptions {
     
@@ -50,7 +48,6 @@ object gpxMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     var readExtensions: js.UndefOr[
@@ -59,7 +56,7 @@ object gpxMod {
           /* p1 */ Node, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

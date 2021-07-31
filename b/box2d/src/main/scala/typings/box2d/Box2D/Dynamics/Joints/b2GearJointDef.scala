@@ -3,26 +3,26 @@ package typings.box2d.Box2D.Dynamics.Joints
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2GearJointDef extends b2JointDef {
+trait b2GearJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * The first revolute/prismatic joint attached to the gear joint.
     **/
-  var joint1: b2Joint = js.native
+  var joint1: b2Joint
   
   /**
     * The second revolute/prismatic joint attached to the gear joint.
     **/
-  var joint2: b2Joint = js.native
+  var joint2: b2Joint
   
   /**
     * The gear ratio.
     **/
-  var ratio: Double = js.native
+  var ratio: Double
 }
 object b2GearJointDef {
   

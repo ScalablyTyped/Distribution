@@ -2,16 +2,14 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorCommentsOptions>> */
-@js.native
 trait EditorCommentsOptions extends StObject {
   
-  val ignoreEmptyLines: Boolean = js.native
+  val ignoreEmptyLines: Boolean
   
-  val insertSpace: Boolean = js.native
+  val insertSpace: Boolean
 }
 object EditorCommentsOptions {
   

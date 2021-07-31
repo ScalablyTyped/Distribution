@@ -3,7 +3,6 @@ package typings.meteor
 import typings.meteor.Mongo.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceConfigurationMod {
@@ -21,12 +20,11 @@ object serviceConfigurationMod {
     def configurations_=(x: Collection[Configuration, Configuration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configurations")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    var secret: String = js.native
+    var secret: String
   }
   object Configuration {
     

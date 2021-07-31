@@ -13,7 +13,6 @@ import typings.rmcTabs.rmcTabsStrings.horizontal
 import typings.rmcTabs.rmcTabsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsBaseMod {
@@ -51,26 +50,26 @@ object tabsBaseMod {
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]]
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]]
     ): js.Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
-      defaultPrefix: js.UndefOr[scala.Nothing],
-      allPrefix: String
-    ): js.Any = js.native
-    def getSubElement(
-      tab: TabData,
-      index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
       defaultPrefix: String
     ): js.Any = js.native
     def getSubElement(
       tab: TabData,
       index: Double,
-      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[_]],
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
       defaultPrefix: String,
+      allPrefix: String
+    ): js.Any = js.native
+    def getSubElement(
+      tab: TabData,
+      index: Double,
+      subElements: js.Function2[/* defaultPrefix */ String, /* allPrefix */ String, StringDictionary[js.Any]],
+      defaultPrefix: Unit,
       allPrefix: String
     ): js.Any = js.native
     
@@ -85,13 +84,13 @@ object tabsBaseMod {
     def getTabIndex(props: P): Double = js.native
     
     def goToTab(index: Double): Boolean = js.native
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], newState: js.UndefOr[scala.Nothing], props: P): Boolean = js.native
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], newState: js.Any): Boolean = js.native
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], newState: js.Any, props: P): Boolean = js.native
     def goToTab(index: Double, force: Boolean): Boolean = js.native
-    def goToTab(index: Double, force: Boolean, newState: js.UndefOr[scala.Nothing], props: P): Boolean = js.native
     def goToTab(index: Double, force: Boolean, newState: js.Any): Boolean = js.native
     def goToTab(index: Double, force: Boolean, newState: js.Any, props: P): Boolean = js.native
+    def goToTab(index: Double, force: Boolean, newState: Unit, props: P): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: js.Any): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: js.Any, props: P): Boolean = js.native
+    def goToTab(index: Double, force: Unit, newState: Unit, props: P): Boolean = js.native
     
     var instanceId: Double = js.native
     

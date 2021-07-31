@@ -3,34 +3,33 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultAudio
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var audio_duration: js.UndefOr[Double] = js.native
+  var audio_duration: js.UndefOr[Double] = js.undefined
   
-  var audio_url: String = js.native
+  var audio_url: String
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var performer: js.UndefOr[String] = js.native
+  var performer: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: audio = js.native
+  var `type`: audio
 }
 object InlineQueryResultAudio {
   
   @scala.inline
-  def apply(audio_url: String, id: String, title: String, `type`: audio): InlineQueryResultAudio = {
+  def apply(audio_url: String, id: String, title: String): InlineQueryResultAudio = {
     val __obj = js.Dynamic.literal(audio_url = audio_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("audio")
     __obj.asInstanceOf[InlineQueryResultAudio]
   }
   

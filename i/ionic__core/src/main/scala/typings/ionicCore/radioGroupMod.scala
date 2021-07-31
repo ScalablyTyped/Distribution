@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioGroupMod {
   
   @JSImport("@ionic/core/dist/types/components/radio-group/radio-group", "RadioGroup")
   @js.native
-  class RadioGroup () extends ComponentInterface {
+  class RadioGroup ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, the radios can be deselected.

@@ -2,62 +2,60 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Code: Range = js.native
+  var Code: Range
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  var Data: String = js.native
+  var Data: String
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def DoClick(): Unit = js.native
+  def DoClick(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val InlineShape: typings.activexWord.Word.InlineShape = js.native
+  val InlineShape: typings.activexWord.Word.InlineShape
   
-  val Kind: WdFieldKind = js.native
+  val Kind: WdFieldKind
   
-  val LinkFormat: typings.activexWord.Word.LinkFormat = js.native
+  val LinkFormat: typings.activexWord.Word.LinkFormat
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  val Next: Field = js.native
+  val Next: Field
   
-  val OLEFormat: typings.activexWord.Word.OLEFormat = js.native
+  val OLEFormat: typings.activexWord.Word.OLEFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Previous: Field = js.native
+  val Previous: Field
   
-  var Result: Range = js.native
+  var Result: Range
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var ShowCodes: Boolean = js.native
+  var ShowCodes: Boolean
   
-  val Type: WdFieldType = js.native
+  val Type: WdFieldType
   
-  def Unlink(): Unit = js.native
+  def Unlink(): Unit
   
-  def Update(): Boolean = js.native
+  def Update(): Boolean
   
-  def UpdateSource(): Unit = js.native
+  def UpdateSource(): Unit
   
   @JSName("Word.Field_typekey")
-  var WordDotField_typekey: Field = js.native
+  var WordDotField_typekey: Field
 }
 object Field {
   

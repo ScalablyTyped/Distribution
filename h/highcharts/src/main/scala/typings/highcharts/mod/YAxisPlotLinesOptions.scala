@@ -2,68 +2,68 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisPlotLinesOptions extends AxisPlotLinesOptions {
+trait YAxisPlotLinesOptions
+  extends StObject
+     with AxisPlotLinesOptions {
   
   /**
     * (Highstock) Flag to decide if plotLine should be rendered across all
     * panes.
     */
-  var acrossPanes: js.UndefOr[Boolean] = js.native
+  var acrossPanes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A custom class name, in addition to the
     * default `highcharts-plot-line`, to apply to each individual line.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The color of the line.
     */
-  var color: js.UndefOr[ColorString] = js.native
+  var color: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The dashing or dot style for the plot
     * line. For possible values see this overview.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An object defining mouse events for the
     * plot line. Supported properties are `click`, `mouseover`, `mouseout`,
     * `mousemove`.
     */
-  var events: js.UndefOr[YAxisPlotLinesEventsOptions] = js.native
+  var events: js.UndefOr[YAxisPlotLinesEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An id used for identifying the plot line
     * in Axis.removePlotLine.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Text labels for the plot bands
     */
-  var label: js.UndefOr[YAxisPlotLinesLabelOptions] = js.native
+  var label: js.UndefOr[YAxisPlotLinesLabelOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The position of the line in axis units.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The width or thickness of the plot line.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The z index of the plot line within the
     * chart.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object YAxisPlotLinesOptions {
   

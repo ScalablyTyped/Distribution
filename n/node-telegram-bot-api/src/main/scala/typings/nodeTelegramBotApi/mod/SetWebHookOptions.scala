@@ -3,19 +3,17 @@ package typings.nodeTelegramBotApi.mod
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWebHookOptions extends StObject {
   
-  var allowed_updates: js.UndefOr[js.Array[String]] = js.native
+  var allowed_updates: js.UndefOr[js.Array[String]] = js.undefined
   
-  var certificate: js.UndefOr[String | Stream] = js.native
+  var certificate: js.UndefOr[String | Stream] = js.undefined
   
-  var max_connections: js.UndefOr[Double] = js.native
+  var max_connections: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SetWebHookOptions {
   

@@ -6,7 +6,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,20 +23,19 @@ object mod extends Shortcut {
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
   override def _to: splitPanesConstructor = default
   
-  @js.native
   trait containerTypes extends StObject {
     
-    var offsetLeft: Null | Double = js.native
+    var offsetLeft: Null | Double
     
-    var offsetTop: Null | Double = js.native
+    var offsetTop: Null | Double
     
-    var vnode: js.Any = js.native
+    var vnode: js.Any
   }
   object containerTypes {
     
     @scala.inline
     def apply(vnode: js.Any): containerTypes = {
-      val __obj = js.Dynamic.literal(vnode = vnode.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(vnode = vnode.asInstanceOf[js.Any], offsetLeft = null, offsetTop = null)
       __obj.asInstanceOf[containerTypes]
     }
     
@@ -61,12 +59,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait positionTypes extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object positionTypes {
     
@@ -87,10 +84,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait splitPanesComputed extends StObject {
     
-    def defaultWidth(): Double = js.native
+    def defaultWidth(): Double
   }
   object splitPanesComputed {
     
@@ -109,7 +105,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait splitPanesConstructor extends VueConstructor[Vue] {
+  trait splitPanesConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     def beforeDestroy(): Unit = js.native
     
@@ -130,38 +128,37 @@ object mod extends Shortcut {
     var watch: splitPanesWatch = js.native
   }
   
-  @js.native
   trait splitPanesData extends StObject {
     
-    var container: containerTypes = js.native
+    var container: containerTypes
     
-    var panes: js.Array[_] = js.native
+    var panes: js.Array[js.Any]
     
-    var slotsCopy: String = js.native
+    var slotsCopy: String
     
-    var slotsCount: Double = js.native
+    var slotsCount: Double
     
     // Detect double click on touch devices.
-    var splitterTaps: splitterTapsTypes = js.native
+    var splitterTaps: splitterTapsTypes
     
-    var splitters: js.Array[_] = js.native
+    var splitters: js.Array[js.Any]
     
-    var touch: touchTypes = js.native
+    var touch: touchTypes
     
-    var vnodes: js.Array[_] = js.native
+    var vnodes: js.Array[js.Any]
   }
   object splitPanesData {
     
     @scala.inline
     def apply(
       container: containerTypes,
-      panes: js.Array[_],
+      panes: js.Array[js.Any],
       slotsCopy: String,
       slotsCount: Double,
       splitterTaps: splitterTapsTypes,
-      splitters: js.Array[_],
+      splitters: js.Array[js.Any],
       touch: touchTypes,
-      vnodes: js.Array[_]
+      vnodes: js.Array[js.Any]
     ): splitPanesData = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], panes = panes.asInstanceOf[js.Any], slotsCopy = slotsCopy.asInstanceOf[js.Any], slotsCount = slotsCount.asInstanceOf[js.Any], splitterTaps = splitterTaps.asInstanceOf[js.Any], splitters = splitters.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], vnodes = vnodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[splitPanesData]
@@ -174,7 +171,7 @@ object mod extends Shortcut {
       def setContainer(value: containerTypes): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPanes(value: js.Array[_]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
+      def setPanes(value: js.Array[js.Any]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPanesVarargs(value: js.Any*): Self = StObject.set(x, "panes", js.Array(value :_*))
@@ -189,7 +186,7 @@ object mod extends Shortcut {
       def setSplitterTaps(value: splitterTapsTypes): Self = StObject.set(x, "splitterTaps", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSplitters(value: js.Array[_]): Self = StObject.set(x, "splitters", value.asInstanceOf[js.Any])
+      def setSplitters(value: js.Array[js.Any]): Self = StObject.set(x, "splitters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSplittersVarargs(value: js.Any*): Self = StObject.set(x, "splitters", js.Array(value :_*))
@@ -198,43 +195,42 @@ object mod extends Shortcut {
       def setTouch(value: touchTypes): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setVnodes(value: js.Array[_]): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
+      def setVnodes(value: js.Array[js.Any]): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVnodesVarargs(value: js.Any*): Self = StObject.set(x, "vnodes", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait splitPanesMethods extends StObject {
     
-    def bindEvents(): Unit = js.native
+    def bindEvents(): Unit
     
-    def calculatePanesSize(drag: js.Object): Boolean | Unit = js.native
+    def calculatePanesSize(drag: js.Object): Boolean | Unit
     
-    def doPushOtherPanes(sums: js.Object, dragPercentage: Double): js.Any = js.native
+    def doPushOtherPanes(sums: js.Object, dragPercentage: Double): js.Any
     
-    def findNextExpandedPane(splitterIndex: Double): js.Object = js.native
+    def findNextExpandedPane(splitterIndex: Double): js.Object
     
-    def findPrevExpandedPane(splitterIndex: Double): js.Object = js.native
+    def findPrevExpandedPane(splitterIndex: Double): js.Object
     
-    def getCurrentDragPercentage(drag: js.Object): Double = js.native
+    def getCurrentDragPercentage(drag: js.Object): Double
     
-    def getCurrentMouseDrag(e: Event): positionTypes = js.native
+    def getCurrentMouseDrag(e: Event): positionTypes
     
-    def onMouseDown(e: Event, splitterIndex: Double): Unit = js.native
+    def onMouseDown(e: Event, splitterIndex: Double): Unit
     
-    def onMouseMove(e: Event): Unit = js.native
+    def onMouseMove(e: Event): Unit
     
-    def onMouseUp(): Unit = js.native
+    def onMouseUp(): Unit
     
-    def onSplitterClick(e: Event, splitterIndex: Double): Unit = js.native
+    def onSplitterClick(e: Event, splitterIndex: Double): Unit
     
-    def onSplitterDblClick(e: Event, splitterIndex: Double): Unit = js.native
+    def onSplitterDblClick(e: Event, splitterIndex: Double): Unit
     
-    def sumNextPanesSize(splitterIndex: Double): js.Object = js.native
+    def sumNextPanesSize(splitterIndex: Double): js.Object
     
-    def sumPrevPanesSize(splitterIndex: Double): js.Object = js.native
+    def sumPrevPanesSize(splitterIndex: Double): js.Object
   }
   object splitPanesMethods {
     
@@ -306,19 +302,18 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait splitPanesProps extends StObject {
     
     // 支持添加 true
-    var dblClickSplitter: Boolean = js.native
+    var dblClickSplitter: Boolean
     
     // 是否监控插槽 false
-    var horizontal: Boolean = js.native
+    var horizontal: Boolean
     
     // 是否水平 false
-    var pushOtherPanes: Boolean = js.native
+    var pushOtherPanes: Boolean
     
-    var watchSlots: Boolean = js.native
+    var watchSlots: Boolean
   }
   object splitPanesProps {
     
@@ -345,10 +340,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait splitPanesWatch extends StObject {
     
-    def defaultPercent(`val`: js.Any): Unit = js.native
+    def defaultPercent(`val`: js.Any): Unit
   }
   object splitPanesWatch {
     
@@ -366,18 +360,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait splitterTapsTypes extends StObject {
     
-    var splitter: Null | Double = js.native
+    var splitter: Null | Double
     
-    var timeoutId: Null | js.Object = js.native
+    var timeoutId: Null | js.Object
   }
   object splitterTapsTypes {
     
     @scala.inline
     def apply(): splitterTapsTypes = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(splitter = null, timeoutId = null)
       __obj.asInstanceOf[splitterTapsTypes]
     }
     
@@ -398,20 +391,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait touchTypes extends StObject {
     
-    var activeSplitter: Null | Double = js.native
+    var activeSplitter: Null | Double
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
-    var mouseDown: Boolean = js.native
+    var mouseDown: Boolean
   }
   object touchTypes {
     
     @scala.inline
     def apply(dragging: Boolean, mouseDown: Boolean): touchTypes = {
-      val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], mouseDown = mouseDown.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], mouseDown = mouseDown.asInstanceOf[js.Any], activeSplitter = null)
       __obj.asInstanceOf[touchTypes]
     }
     

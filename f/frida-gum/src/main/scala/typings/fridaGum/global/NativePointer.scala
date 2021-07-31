@@ -5,7 +5,6 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.UInt64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("NativePointer")
 @js.native
 class NativePointer protected ()
-  extends typings.fridaGum.NativePointer {
+  extends StObject
+     with typings.fridaGum.NativePointer {
   /**
     * Creates a new NativePointer from `v`, which is either a string containing the memory address in decimal,
     * or hexadecimal if prefixed with “0x”, or a number. You may use the ptr(v) short-hand for brevity.

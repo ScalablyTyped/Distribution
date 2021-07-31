@@ -19,10 +19,13 @@ import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gpgpuContextMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_context", "GPGPUContext")
   @js.native
@@ -164,16 +167,14 @@ object gpgpuContextMod {
     def waitForQueryAndGetTime(query: WebGLQuery): js.Promise[Double] = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_context", "linearSearchLastTrue")
-  @js.native
-  def linearSearchLastTrue(arr: js.Array[js.Function0[Boolean]]): Double = js.native
+  @scala.inline
+  def linearSearchLastTrue(arr: js.Array[js.Function0[Boolean]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linearSearchLastTrue")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait FenceContext extends StObject {
     
-    def isFencePassed(): Boolean = js.native
+    def isFencePassed(): Boolean
     
-    var query: WebGLQuery | WebGLSync = js.native
+    var query: WebGLQuery | WebGLSync
   }
   object FenceContext {
     

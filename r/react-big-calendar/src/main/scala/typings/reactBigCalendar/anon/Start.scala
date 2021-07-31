@@ -2,19 +2,17 @@ package typings.reactBigCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Start[TEvent /* <: js.Object */] extends StObject {
   
-  var end: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.native
+  var end: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.native
+  var start: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.undefined
   
-  var title: js.UndefOr[js.Function1[/* event */ TEvent, String]] = js.native
+  var title: js.UndefOr[js.Function1[/* event */ TEvent, String]] = js.undefined
   
-  var tooltip: js.UndefOr[js.Function1[/* event */ TEvent, String]] = js.native
+  var tooltip: js.UndefOr[js.Function1[/* event */ TEvent, String]] = js.undefined
 }
 object Start {
   
@@ -25,7 +23,7 @@ object Start {
   }
   
   @scala.inline
-  implicit class StartMutableBuilder[Self <: Start[_], TEvent /* <: js.Object */] (val x: Self with Start[TEvent]) extends AnyVal {
+  implicit class StartMutableBuilder[Self <: Start[?], TEvent /* <: js.Object */] (val x: Self & Start[TEvent]) extends AnyVal {
     
     @scala.inline
     def setEnd(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))

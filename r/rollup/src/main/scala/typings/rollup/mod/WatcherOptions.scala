@@ -3,23 +3,21 @@ package typings.rollup.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatcherOptions extends StObject {
   
-  var buildDelay: js.UndefOr[Double] = js.native
+  var buildDelay: js.UndefOr[Double] = js.undefined
   
-  var chokidar: js.UndefOr[ChokidarOptions] = js.native
+  var chokidar: js.UndefOr[ChokidarOptions] = js.undefined
   
-  var clearScreen: js.UndefOr[Boolean] = js.native
+  var clearScreen: js.UndefOr[Boolean] = js.undefined
   
-  var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   
-  var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   
-  var skipWrite: js.UndefOr[Boolean] = js.native
+  var skipWrite: js.UndefOr[Boolean] = js.undefined
 }
 object WatcherOptions {
   

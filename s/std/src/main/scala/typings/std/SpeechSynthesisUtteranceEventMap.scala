@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeechSynthesisUtteranceEventMap extends StObject {
   
-  var boundary: SpeechSynthesisEvent = js.native
+  var boundary: SpeechSynthesisEvent
   
-  var end: SpeechSynthesisEvent = js.native
+  var end: SpeechSynthesisEvent
   
-  var error: SpeechSynthesisErrorEvent = js.native
+  var error: SpeechSynthesisErrorEvent
   
-  var mark: SpeechSynthesisEvent = js.native
+  var mark: SpeechSynthesisEvent
   
-  var pause: SpeechSynthesisEvent = js.native
+  var pause: SpeechSynthesisEvent
   
-  var resume: SpeechSynthesisEvent = js.native
+  var resume: SpeechSynthesisEvent
   
-  var start: SpeechSynthesisEvent = js.native
+  var start: SpeechSynthesisEvent
 }
 object SpeechSynthesisUtteranceEventMap {
   

@@ -2,56 +2,54 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Input extends StObject {
   
   /**
     * Equivalent to KeyboardEvent.altKey.
     */
-  var alt: Boolean = js.native
+  var alt: Boolean
   
   /**
     * Equivalent to KeyboardEvent.code.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Equivalent to KeyboardEvent.controlKey.
     */
-  var control: Boolean = js.native
+  var control: Boolean
   
   /**
     * Equivalent to KeyboardEvent.repeat.
     */
-  var isAutoRepeat: Boolean = js.native
+  var isAutoRepeat: Boolean
   
   /**
     * Equivalent to KeyboardEvent.isComposing.
     */
-  var isComposing: Boolean = js.native
+  var isComposing: Boolean
   
   /**
     * Equivalent to KeyboardEvent.key.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Equivalent to KeyboardEvent.metaKey.
     */
-  var meta: Boolean = js.native
+  var meta: Boolean
   
   /**
     * Equivalent to KeyboardEvent.shiftKey.
     */
-  var shift: Boolean = js.native
+  var shift: Boolean
   
   /**
     * Either `keyUp` or `keyDown`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Input {
   

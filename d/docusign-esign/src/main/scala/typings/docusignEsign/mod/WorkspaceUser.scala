@@ -2,68 +2,66 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceUser extends StObject {
   
   /**
     * The account ID associated with the workspace user.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The name on the account.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the user joined the workspace.
     */
-  var activeSince: js.UndefOr[String] = js.native
+  var activeSince: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the workspace user was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who created this workspace user.
     */
-  var createdById: js.UndefOr[String] = js.native
+  var createdById: js.UndefOr[String] = js.undefined
   
   /**
     * The workspace user's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The text of the workspace invitation email message sent to the user.
     */
-  var invitationEmailBlurb: js.UndefOr[String] = js.native
+  var invitationEmailBlurb: js.UndefOr[String] = js.undefined
   
   /**
     * The subject line of the workspace invitation email message sent to the user.
     */
-  var invitationEmailSubject: js.UndefOr[String] = js.native
+  var invitationEmailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime that the workspace user was last modified.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who last modified the workspace user.
     */
-  var lastModifiedById: js.UndefOr[String] = js.native
+  var lastModifiedById: js.UndefOr[String] = js.undefined
   
   /**
     * Filters the results by user status.
@@ -76,39 +74,39 @@ trait WorkspaceUser extends StObject {
     * * Closed
     * * Disabled
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of workspace user.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace.
     */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for accessing the workspace user.
     */
-  var workspaceUserBaseUrl: js.UndefOr[String] = js.native
+  var workspaceUserBaseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace user.
     */
-  var workspaceUserId: js.UndefOr[String] = js.native
+  var workspaceUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for accessing the workspace user.
     */
-  var workspaceUserUri: js.UndefOr[String] = js.native
+  var workspaceUserUri: js.UndefOr[String] = js.undefined
 }
 object WorkspaceUser {
   

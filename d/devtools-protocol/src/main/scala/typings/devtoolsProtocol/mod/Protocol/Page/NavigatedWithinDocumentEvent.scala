@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatedWithinDocumentEvent extends StObject {
   
   /**
     * Id of the frame.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Frame's new url.
     */
-  var url: String = js.native
+  var url: String
 }
 object NavigatedWithinDocumentEvent {
   

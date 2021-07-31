@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,21 +12,31 @@ object FollowResultType extends StObject {
   
   /** The request failed. */
   @js.native
-  sealed trait failed extends FollowResultType
+  sealed trait failed
+    extends StObject
+       with FollowResultType
   
   /** The request succeeded and the item is being followed. */
   @js.native
-  sealed trait followed extends FollowResultType
+  sealed trait followed
+    extends StObject
+       with FollowResultType
   
   /** The request encountered the maximum follow limit. */
   @js.native
-  sealed trait hitFollowLimit extends FollowResultType
+  sealed trait hitFollowLimit
+    extends StObject
+       with FollowResultType
   
   /** The item was already being followed by the current user so there is no change in status. */
   @js.native
-  sealed trait refollowed extends FollowResultType
+  sealed trait refollowed
+    extends StObject
+       with FollowResultType
   
   /** Result is unknown */
   @js.native
-  sealed trait unknown extends FollowResultType
+  sealed trait unknown
+    extends StObject
+       with FollowResultType
 }

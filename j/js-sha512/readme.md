@@ -11,8 +11,8 @@ This is a simple SHA-512, SHA-384, SHA-512/224, SHA-512/256 hash functions for J
 | Full name          | js-sha512 |
 | Keywords           | sha, sha2, sha384, sha512, sha512/224, sha512/256, hash, encryption, cryptography, HMAC |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 2037480 |
+| # dependents       | 99 |
+| # downloads        | 5393109 |
 | # stars            | 3 |
 
 ## Links

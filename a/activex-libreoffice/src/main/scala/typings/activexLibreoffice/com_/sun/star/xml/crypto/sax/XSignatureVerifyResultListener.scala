@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.crypto.SecurityOperationStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to receive the result information of a signature verification.
   */
-@js.native
-trait XSignatureVerifyResultListener extends XInterface {
+trait XSignatureVerifyResultListener
+  extends StObject
+     with XInterface {
   
   /**
     * Notifies the signature verify result.
     * @param securityId the security id of the signature
     * @param verifyResult the result information
     */
-  def signatureVerified(securityId: Double, verifyResult: SecurityOperationStatus): Unit = js.native
+  def signatureVerified(securityId: Double, verifyResult: SecurityOperationStatus): Unit
 }
 object XSignatureVerifyResultListener {
   

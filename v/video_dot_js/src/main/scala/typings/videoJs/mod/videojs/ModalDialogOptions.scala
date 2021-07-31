@@ -2,7 +2,6 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,20 +30,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *        through the UI in the normal ways. Programmatic closing is
   *        still possible.
   */
-@js.native
-trait ModalDialogOptions extends ComponentOptions {
+trait ModalDialogOptions
+  extends StObject
+     with ComponentOptions {
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fillAlways: js.UndefOr[Boolean] = js.native
+  var fillAlways: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var temporary: js.UndefOr[Boolean] = js.native
+  var temporary: js.UndefOr[Boolean] = js.undefined
   
-  var uncloseable: js.UndefOr[Boolean] = js.native
+  var uncloseable: js.UndefOr[Boolean] = js.undefined
 }
 object ModalDialogOptions {
   

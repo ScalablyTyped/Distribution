@@ -2,7 +2,6 @@ package typings.braintreeWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -11,28 +10,27 @@ object coreMod {
   @js.native
   val VERSION: String = js.native
   
-  @js.native
   trait BraintreeError extends StObject {
     
     /**
       * @description A code that corresponds to specific errors.
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * @description Additional information about the error, such as an underlying network error response.
       */
-    var details: js.Any = js.native
+    var details: js.Any
     
     /**
       * @description A short description of the error.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * @description The type of error.
       */
-    var `type`: BraintreeErrorTypes = js.native
+    var `type`: BraintreeErrorTypes
   }
   object BraintreeError {
     

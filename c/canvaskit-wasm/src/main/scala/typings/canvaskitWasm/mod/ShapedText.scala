@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapedText extends EmbindObject[ShapedText] {
+trait ShapedText
+  extends StObject
+     with EmbindObject[ShapedText] {
   
   /**
     * Return the bounding area for the given text.

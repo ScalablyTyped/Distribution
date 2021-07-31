@@ -8,7 +8,6 @@ import typings.reactTransitionGroup.anon.Appear
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionMod {
@@ -79,9 +78,9 @@ object transitionMod {
   @js.native
   val UNMOUNTED: /* "unmounted" */ String = js.native
   
-  @js.native
   trait BaseTransitionProps[RefElement /* <: js.UndefOr[HTMLElement] */]
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
     /**
       * A function child can be used instead of a React element. This function is
@@ -96,12 +95,12 @@ object transitionMod {
       *    </Transition>
       * ```
       */
-    var children: js.UndefOr[TransitionChildren] = js.native
+    var children: js.UndefOr[TransitionChildren] = js.undefined
     
     /**
       * Show the component; triggers the enter or exit states
       */
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default the child component is mounted immediately along with the
@@ -110,7 +109,7 @@ object transitionMod {
       * transition the component will stay mounted, even on "exited", unless you
       * also specify `unmountOnExit`.
       */
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A React reference to DOM element that need to transition: https://stackoverflow.com/a/51127130/4671932
@@ -118,50 +117,50 @@ object transitionMod {
       * When changing `key` prop of `Transition` in a `TransitionGroup` a new `nodeRef` need to be provided to `Transition` with changed `key`
       * prop (@see https://github.com/reactjs/react-transition-group/blob/master/test/Transition-test.js).
       */
-    var nodeRef: js.UndefOr[Ref[RefElement]] = js.native
+    var nodeRef: js.UndefOr[Ref[RefElement]] = js.undefined
     
     /**
       * Callback fired before the "entering" status is applied. An extra
       * parameter `isAppearing` is supplied to indicate if the enter stage is
       * occurring on the initial mount
       */
-    var onEnter: js.UndefOr[EnterHandler[RefElement]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[RefElement]] = js.undefined
     
     /**
       * Callback fired after the "entered" status is applied. An extra parameter
       * isAppearing is supplied to indicate if the enter stage is occurring on
       * the initial mount
       */
-    var onEntered: js.UndefOr[EnterHandler[RefElement]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[RefElement]] = js.undefined
     
     /**
       * Callback fired after the "entering" status is applied. An extra parameter
       * isAppearing is supplied to indicate if the enter stage is occurring on
       * the initial mount
       */
-    var onEntering: js.UndefOr[EnterHandler[RefElement]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[RefElement]] = js.undefined
     
     /**
       * Callback fired before the "exiting" status is applied.
       */
-    var onExit: js.UndefOr[ExitHandler[RefElement]] = js.native
+    var onExit: js.UndefOr[ExitHandler[RefElement]] = js.undefined
     
     /**
       * Callback fired after the "exited" status is applied.
       */
-    var onExited: js.UndefOr[ExitHandler[RefElement]] = js.native
+    var onExited: js.UndefOr[ExitHandler[RefElement]] = js.undefined
     
     /**
       * Callback fired after the "exiting" status is applied.
       */
-    var onExiting: js.UndefOr[ExitHandler[RefElement]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[RefElement]] = js.undefined
     
     /**
       * By default the child component stays mounted after it reaches the
       * 'exited' state. Set `unmountOnExit` if you'd prefer to unmount the
       * component after it finishes exiting.
       */
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object BaseTransitionProps {
     
@@ -172,7 +171,7 @@ object transitionMod {
     }
     
     @scala.inline
-    implicit class BaseTransitionPropsMutableBuilder[Self <: BaseTransitionProps[_], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self with BaseTransitionProps[RefElement]) extends AnyVal {
+    implicit class BaseTransitionPropsMutableBuilder[Self <: BaseTransitionProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & BaseTransitionProps[RefElement]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: TransitionChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -257,9 +256,9 @@ object transitionMod {
     js.Function1[/* done */ js.Function0[Unit], Unit]
   ]
   
-  @js.native
   trait EndListenerProps[Ref /* <: js.UndefOr[HTMLElement] */]
-    extends BaseTransitionProps[Ref]
+    extends StObject
+       with BaseTransitionProps[Ref]
        with TransitionProps[Ref] {
     
     /**
@@ -267,7 +266,7 @@ object transitionMod {
       * node and a done callback. Allows for more fine grained transition end
       * logic. Note: Timeouts are still used as a fallback if provided.
       */
-    var addEndListener: EndHandler[Ref] = js.native
+    var addEndListener: EndHandler[Ref]
     
     /**
       * The duration of the transition, in milliseconds. Required unless addEndListener is provided.
@@ -288,7 +287,7 @@ object transitionMod {
       * - enter defaults to `0`
       * - exit defaults to `0`
       */
-    var timeout: js.UndefOr[Double | Appear] = js.native
+    var timeout: js.UndefOr[Double | Appear] = js.undefined
   }
   object EndListenerProps {
     
@@ -299,7 +298,7 @@ object transitionMod {
     }
     
     @scala.inline
-    implicit class EndListenerPropsMutableBuilder[Self <: EndListenerProps[_], Ref /* <: js.UndefOr[HTMLElement] */] (val x: Self with EndListenerProps[Ref]) extends AnyVal {
+    implicit class EndListenerPropsMutableBuilder[Self <: EndListenerProps[?], Ref /* <: js.UndefOr[HTMLElement] */] (val x: Self & EndListenerProps[Ref]) extends AnyVal {
       
       @scala.inline
       def setAddEndListener(value: EndHandler[Ref]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
@@ -322,9 +321,9 @@ object transitionMod {
   
   type RefHandler[RefElement /* <: js.UndefOr[HTMLElement] */, ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] = /* import warning: importer.ImportType#apply Failed type conversion: react-transition-group.anon.Explicit<ImplicitRefHandler, ExplicitRefHandler>[RefElement extends undefined ? 'implicit' : 'explicit'] */ js.Any
   
-  @js.native
   trait TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */]
-    extends BaseTransitionProps[RefElement]
+    extends StObject
+       with BaseTransitionProps[RefElement]
        with TransitionProps[RefElement] {
     
     /**
@@ -332,7 +331,7 @@ object transitionMod {
       * node and a done callback. Allows for more fine grained transition end
       * logic. Note: Timeouts are still used as a fallback if provided.
       */
-    var addEndListener: js.UndefOr[EndHandler[RefElement]] = js.native
+    var addEndListener: js.UndefOr[EndHandler[RefElement]] = js.undefined
     
     /**
       * The duration of the transition, in milliseconds. Required unless addEndListener is provided.
@@ -353,7 +352,7 @@ object transitionMod {
       * - enter defaults to `0`
       * - exit defaults to `0`
       */
-    var timeout: Double | Appear = js.native
+    var timeout: Double | Appear
   }
   object TimeoutProps {
     
@@ -364,7 +363,7 @@ object transitionMod {
     }
     
     @scala.inline
-    implicit class TimeoutPropsMutableBuilder[Self <: TimeoutProps[_], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self with TimeoutProps[RefElement]) extends AnyVal {
+    implicit class TimeoutPropsMutableBuilder[Self <: TimeoutProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & TimeoutProps[RefElement]) extends AnyVal {
       
       @scala.inline
       def setAddEndListener(value: EndHandler[RefElement]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
@@ -420,7 +419,6 @@ object transitionMod {
     */
   type Transition[RefElement /* <: js.UndefOr[HTMLElement] */] = Component[TransitionProps[RefElement], js.Object, js.Any]
   
-  @js.native
   trait TransitionActions extends StObject {
     
     /**
@@ -430,17 +428,17 @@ object transitionMod {
       * as the `<Transition>` mounts. Note: there are no specific "appear" states.
       * appear only adds an additional enter transition.
       */
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable enter transitions.
       */
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable exit transitions.
       */
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
   }
   object TransitionActions {
     

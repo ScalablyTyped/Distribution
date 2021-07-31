@@ -2,7 +2,6 @@ package typings.loginWithAmazonSdkBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amazon {
@@ -16,13 +15,19 @@ object amazon {
     object Region extends StObject {
       
       @js.native
-      sealed trait AsiaPacific extends Region
+      sealed trait AsiaPacific
+        extends StObject
+           with Region
       
       @js.native
-      sealed trait Europe extends Region
+      sealed trait Europe
+        extends StObject
+           with Region
       
       @js.native
-      sealed trait NorthAmerica extends Region
+      sealed trait NorthAmerica
+        extends StObject
+           with Region
     }
   }
 }

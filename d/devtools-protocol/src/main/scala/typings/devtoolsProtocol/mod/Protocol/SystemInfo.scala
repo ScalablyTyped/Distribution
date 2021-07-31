@@ -2,53 +2,51 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SystemInfo {
   
-  @js.native
   trait GPUDevice extends StObject {
     
     /**
       * PCI ID of the GPU device, if available; 0 otherwise.
       */
-    var deviceId: Double = js.native
+    var deviceId: Double
     
     /**
       * String description of the GPU device, if the PCI ID is not available.
       */
-    var deviceString: String = js.native
+    var deviceString: String
     
     /**
       * String description of the GPU driver vendor.
       */
-    var driverVendor: String = js.native
+    var driverVendor: String
     
     /**
       * String description of the GPU driver version.
       */
-    var driverVersion: String = js.native
+    var driverVersion: String
     
     /**
       * Revision of the GPU, only available on Windows.
       */
-    var revision: js.UndefOr[Double] = js.native
+    var revision: js.UndefOr[Double] = js.undefined
     
     /**
       * Sub sys ID of the GPU, only available on Windows.
       */
-    var subSysId: js.UndefOr[Double] = js.native
+    var subSysId: js.UndefOr[Double] = js.undefined
     
     /**
       * PCI ID of the GPU vendor, if available; 0 otherwise.
       */
-    var vendorId: Double = js.native
+    var vendorId: Double
     
     /**
       * String description of the GPU vendor, if the PCI ID is not available.
       */
-    var vendorString: String = js.native
+    var vendorString: String
   }
   object GPUDevice {
     
@@ -100,43 +98,42 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait GPUInfo extends StObject {
     
     /**
       * An optional dictionary of additional GPU related attributes.
       */
-    var auxAttributes: js.UndefOr[js.Any] = js.native
+    var auxAttributes: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The graphics devices on the system. Element 0 is the primary GPU.
       */
-    var devices: js.Array[GPUDevice] = js.native
+    var devices: js.Array[GPUDevice]
     
     /**
       * An optional array of GPU driver bug workarounds.
       */
-    var driverBugWorkarounds: js.Array[String] = js.native
+    var driverBugWorkarounds: js.Array[String]
     
     /**
       * An optional dictionary of graphics features and their status.
       */
-    var featureStatus: js.UndefOr[js.Any] = js.native
+    var featureStatus: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Supported accelerated image decoding capabilities.
       */
-    var imageDecoding: js.Array[ImageDecodeAcceleratorCapability] = js.native
+    var imageDecoding: js.Array[ImageDecodeAcceleratorCapability]
     
     /**
       * Supported accelerated video decoding capabilities.
       */
-    var videoDecoding: js.Array[VideoDecodeAcceleratorCapability] = js.native
+    var videoDecoding: js.Array[VideoDecodeAcceleratorCapability]
     
     /**
       * Supported accelerated video encoding capabilities.
       */
-    var videoEncoding: js.Array[VideoEncodeAcceleratorCapability] = js.native
+    var videoEncoding: js.Array[VideoEncodeAcceleratorCapability]
   }
   object GPUInfo {
     
@@ -199,31 +196,30 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait GetInfoResponse extends StObject {
     
     /**
       * The command line string used to launch the browser. Will be the empty string if not
       * supported.
       */
-    var commandLine: String = js.native
+    var commandLine: String
     
     /**
       * Information about the GPUs on the system.
       */
-    var gpu: GPUInfo = js.native
+    var gpu: GPUInfo
     
     /**
       * A platform-dependent description of the model of the machine. On Mac OS, this is, for
       * example, 'MacBookPro'. Will be the empty string if not supported.
       */
-    var modelName: String = js.native
+    var modelName: String
     
     /**
       * A platform-dependent description of the version of the machine. On Mac OS, this is, for
       * example, '10.1'. Will be the empty string if not supported.
       */
-    var modelVersion: String = js.native
+    var modelVersion: String
   }
   object GetInfoResponse {
     
@@ -250,13 +246,12 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait GetProcessInfoResponse extends StObject {
     
     /**
       * An array of process info blocks.
       */
-    var processInfo: js.Array[ProcessInfo] = js.native
+    var processInfo: js.Array[ProcessInfo]
   }
   object GetProcessInfoResponse {
     
@@ -277,28 +272,27 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait ImageDecodeAcceleratorCapability extends StObject {
     
     /**
       * Image coded, e.g. Jpeg.
       */
-    var imageType: ImageType = js.native
+    var imageType: ImageType
     
     /**
       * Maximum supported dimensions of the image in pixels.
       */
-    var maxDimensions: Size = js.native
+    var maxDimensions: Size
     
     /**
       * Minimum supported dimensions of the image in pixels.
       */
-    var minDimensions: Size = js.native
+    var minDimensions: Size
     
     /**
       * Optional array of supported subsampling formats, e.g. 4:2:0, if known.
       */
-    var subsamplings: js.Array[SubsamplingFormat] = js.native
+    var subsamplings: js.Array[SubsamplingFormat]
   }
   object ImageDecodeAcceleratorCapability {
     
@@ -351,24 +345,23 @@ object SystemInfo {
     def webp: typings.devtoolsProtocol.devtoolsProtocolStrings.webp = "webp".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.webp]
   }
   
-  @js.native
   trait ProcessInfo extends StObject {
     
     /**
       * Specifies cumulative CPU usage in seconds across all threads of the
       * process since the process start.
       */
-    var cpuTime: Double = js.native
+    var cpuTime: Double
     
     /**
       * Specifies process id.
       */
-    var id: integer = js.native
+    var id: integer
     
     /**
       * Specifies process type.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ProcessInfo {
     
@@ -393,18 +386,17 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
     /**
       * Height in pixels.
       */
-    var height: integer = js.native
+    var height: integer
     
     /**
       * Width in pixels.
       */
-    var width: integer = js.native
+    var width: integer
   }
   object Size {
     
@@ -443,23 +435,22 @@ object SystemInfo {
     def yuv444: typings.devtoolsProtocol.devtoolsProtocolStrings.yuv444 = "yuv444".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.yuv444]
   }
   
-  @js.native
   trait VideoDecodeAcceleratorCapability extends StObject {
     
     /**
       * Maximum video dimensions in pixels supported for this |profile|.
       */
-    var maxResolution: Size = js.native
+    var maxResolution: Size
     
     /**
       * Minimum video dimensions in pixels supported for this |profile|.
       */
-    var minResolution: Size = js.native
+    var minResolution: Size
     
     /**
       * Video codec profile that is supported, e.g. VP9 Profile 2.
       */
-    var profile: String = js.native
+    var profile: String
   }
   object VideoDecodeAcceleratorCapability {
     
@@ -483,27 +474,26 @@ object SystemInfo {
     }
   }
   
-  @js.native
   trait VideoEncodeAcceleratorCapability extends StObject {
     
-    var maxFramerateDenominator: integer = js.native
+    var maxFramerateDenominator: integer
     
     /**
       * Maximum encoding framerate in frames per second supported for this
       * |profile|, as fraction's numerator and denominator, e.g. 24/1 fps,
       * 24000/1001 fps, etc.
       */
-    var maxFramerateNumerator: integer = js.native
+    var maxFramerateNumerator: integer
     
     /**
       * Maximum video dimensions in pixels supported for this |profile|.
       */
-    var maxResolution: Size = js.native
+    var maxResolution: Size
     
     /**
       * Video codec profile that is supported, e.g H264 Main.
       */
-    var profile: String = js.native
+    var profile: String
   }
   object VideoEncodeAcceleratorCapability {
     

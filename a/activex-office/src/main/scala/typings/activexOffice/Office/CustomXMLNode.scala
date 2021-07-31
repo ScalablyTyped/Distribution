@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,55 +14,21 @@ trait CustomXMLNode extends StObject {
     * @param NodeValue [NodeValue='']
     */
   def AppendChildNode(): Unit = js.native
-  def AppendChildNode(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def AppendChildNode(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType
-  ): Unit = js.native
-  def AppendChildNode(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
-  def AppendChildNode(Name: js.UndefOr[scala.Nothing], NamespaceURI: String): Unit = js.native
-  def AppendChildNode(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def AppendChildNode(Name: js.UndefOr[scala.Nothing], NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
-  def AppendChildNode(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
   def AppendChildNode(Name: String): Unit = js.native
-  def AppendChildNode(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def AppendChildNode(Name: String, NamespaceURI: js.UndefOr[scala.Nothing], NodeType: MsoCustomXMLNodeType): Unit = js.native
-  def AppendChildNode(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
   def AppendChildNode(Name: String, NamespaceURI: String): Unit = js.native
-  def AppendChildNode(Name: String, NamespaceURI: String, NodeType: js.UndefOr[scala.Nothing], NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: String, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
   def AppendChildNode(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
   def AppendChildNode(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: String, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: String, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def AppendChildNode(Name: String, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: String): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: String, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def AppendChildNode(Name: Unit, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
   
   def AppendChildSubtree(XML: String): Unit = js.native
   
@@ -95,165 +60,83 @@ trait CustomXMLNode extends StObject {
     * @param NextSibling [NextSibling=0]
     */
   def InsertNodeBefore(): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(Name: js.UndefOr[scala.Nothing], NamespaceURI: String): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(Name: js.UndefOr[scala.Nothing], NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
   def InsertNodeBefore(Name: String): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(Name: String, NamespaceURI: js.UndefOr[scala.Nothing], NodeType: MsoCustomXMLNodeType): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
   def InsertNodeBefore(Name: String, NamespaceURI: String): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
-  def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: js.UndefOr[scala.Nothing], NodeValue: String): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String,
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: Unit, NodeValue: String, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: Unit, NodeValue: Unit, NextSibling: CustomXMLNode): Unit = js.native
   def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
-  def InsertNodeBefore(
-    Name: String,
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: js.UndefOr[scala.Nothing],
-    NextSibling: CustomXMLNode
-  ): Unit = js.native
   def InsertNodeBefore(Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
   def InsertNodeBefore(
     Name: String,
     NamespaceURI: String,
     NodeType: MsoCustomXMLNodeType,
     NodeValue: String,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(
+    Name: String,
+    NamespaceURI: String,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: Unit,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: Unit, NodeType: Unit, NodeValue: String, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: Unit, NodeType: Unit, NodeValue: Unit, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def InsertNodeBefore(Name: String, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(
+    Name: String,
+    NamespaceURI: Unit,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(
+    Name: String,
+    NamespaceURI: Unit,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: Unit,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String, NodeType: Unit, NodeValue: String, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String, NodeType: Unit, NodeValue: Unit, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: String, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(
+    Name: Unit,
+    NamespaceURI: String,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(
+    Name: Unit,
+    NamespaceURI: String,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: Unit,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: Unit, NodeType: Unit, NodeValue: String, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: Unit, NodeType: Unit, NodeValue: Unit, NextSibling: CustomXMLNode): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def InsertNodeBefore(Name: Unit, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType, NodeValue: String): Unit = js.native
+  def InsertNodeBefore(
+    Name: Unit,
+    NamespaceURI: Unit,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String,
+    NextSibling: CustomXMLNode
+  ): Unit = js.native
+  def InsertNodeBefore(
+    Name: Unit,
+    NamespaceURI: Unit,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: Unit,
     NextSibling: CustomXMLNode
   ): Unit = js.native
   
@@ -293,81 +176,42 @@ trait CustomXMLNode extends StObject {
     * @param NodeValue [NodeValue='']
     */
   def ReplaceChildNode(OldNode: CustomXMLNode): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
-  def ReplaceChildNode(OldNode: CustomXMLNode, Name: js.UndefOr[scala.Nothing], NamespaceURI: String): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: js.UndefOr[scala.Nothing],
-    NamespaceURI: String,
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
   def ReplaceChildNode(OldNode: CustomXMLNode, Name: String): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType
-  ): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: String,
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    NodeType: MsoCustomXMLNodeType,
-    NodeValue: String
-  ): Unit = js.native
   def ReplaceChildNode(OldNode: CustomXMLNode, Name: String, NamespaceURI: String): Unit = js.native
-  def ReplaceChildNode(
-    OldNode: CustomXMLNode,
-    Name: String,
-    NamespaceURI: String,
-    NodeType: js.UndefOr[scala.Nothing],
-    NodeValue: String
-  ): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: String, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
   def ReplaceChildNode(OldNode: CustomXMLNode, Name: String, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
   def ReplaceChildNode(
     OldNode: CustomXMLNode,
     Name: String,
     NamespaceURI: String,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String
+  ): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: String, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: String, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def ReplaceChildNode(
+    OldNode: CustomXMLNode,
+    Name: String,
+    NamespaceURI: Unit,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String
+  ): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: Unit, NamespaceURI: String): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: Unit, NamespaceURI: String, NodeType: Unit, NodeValue: String): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: Unit, NamespaceURI: String, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def ReplaceChildNode(
+    OldNode: CustomXMLNode,
+    Name: Unit,
+    NamespaceURI: String,
+    NodeType: MsoCustomXMLNodeType,
+    NodeValue: String
+  ): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: Unit, NamespaceURI: Unit, NodeType: Unit, NodeValue: String): Unit = js.native
+  def ReplaceChildNode(OldNode: CustomXMLNode, Name: Unit, NamespaceURI: Unit, NodeType: MsoCustomXMLNodeType): Unit = js.native
+  def ReplaceChildNode(
+    OldNode: CustomXMLNode,
+    Name: Unit,
+    NamespaceURI: Unit,
     NodeType: MsoCustomXMLNodeType,
     NodeValue: String
   ): Unit = js.native

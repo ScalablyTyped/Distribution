@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait FraudDetector extends Service {
   ): Request[BatchGetVariableResult, AWSError] = js.native
   
   @JSName("config")
-  var config_FraudDetector: ConfigBase with ClientConfiguration = js.native
+  var config_FraudDetector: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a detector version. The detector version starts in a DRAFT status.

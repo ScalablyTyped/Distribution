@@ -11,18 +11,17 @@ import typings.fastify.utilsMod.RawServerBase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
   
-  @js.native
   trait Bindings
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var level: js.UndefOr[LogLevel | String] = js.native
+    var level: js.UndefOr[LogLevel | String] = js.undefined
     
-    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.native
+    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.undefined
   }
   object Bindings {
     
@@ -53,64 +52,103 @@ object loggerMod {
   trait FastifyLogFn extends StObject {
     
     def apply(msg: String, args: js.Any*): Unit = js.native
-    def apply(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def apply(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def apply(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit = js.native
+    def apply(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait FastifyLoggerInstance extends StObject {
     
-    def child(bindings: Bindings): FastifyLoggerInstance = js.native
+    def child(bindings: Bindings): FastifyLoggerInstance
     
-    def debug(msg: String, args: js.Any*): Unit = js.native
-    def debug(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def debug(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def debug(msg: String, args: js.Any*): Unit
+    def debug(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def debug(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("debug")
-    var debug_Original: FastifyLogFn = js.native
+    var debug_Original: FastifyLogFn
     
-    def error(msg: String, args: js.Any*): Unit = js.native
-    def error(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def error(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def error(msg: String, args: js.Any*): Unit
+    def error(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def error(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("error")
-    var error_Original: FastifyLogFn = js.native
+    var error_Original: FastifyLogFn
     
-    def fatal(msg: String, args: js.Any*): Unit = js.native
-    def fatal(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def fatal(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def fatal(msg: String, args: js.Any*): Unit
+    def fatal(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def fatal(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("fatal")
-    var fatal_Original: FastifyLogFn = js.native
+    var fatal_Original: FastifyLogFn
     
-    def info(msg: String, args: js.Any*): Unit = js.native
-    def info(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def info(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def info(msg: String, args: js.Any*): Unit
+    def info(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def info(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("info")
-    var info_Original: FastifyLogFn = js.native
+    var info_Original: FastifyLogFn
     
-    def trace(msg: String, args: js.Any*): Unit = js.native
-    def trace(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def trace(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def trace(msg: String, args: js.Any*): Unit
+    def trace(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def trace(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("trace")
-    var trace_Original: FastifyLogFn = js.native
+    var trace_Original: FastifyLogFn
     
-    def warn(msg: String, args: js.Any*): Unit = js.native
-    def warn(obj: Record[String, _], msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    def warn(obj: Record[String, _], msg: String, args: js.Any*): Unit = js.native
+    def warn(msg: String, args: js.Any*): Unit
+    def warn(obj: Record[String, js.Any], msg: String, args: js.Any*): Unit
+    def warn(obj: Record[String, js.Any], msg: Unit, args: js.Any*): Unit
     @JSName("warn")
-    var warn_Original: FastifyLogFn = js.native
+    var warn_Original: FastifyLogFn
+  }
+  object FastifyLoggerInstance {
+    
+    @scala.inline
+    def apply(
+      child: Bindings => FastifyLoggerInstance,
+      debug: FastifyLogFn,
+      error: FastifyLogFn,
+      fatal: FastifyLogFn,
+      info: FastifyLogFn,
+      trace: FastifyLogFn,
+      warn: FastifyLogFn
+    ): FastifyLoggerInstance = {
+      val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FastifyLoggerInstance]
+    }
+    
+    @scala.inline
+    implicit class FastifyLoggerInstanceMutableBuilder[Self <: FastifyLoggerInstance] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setChild(value: Bindings => FastifyLoggerInstance): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDebug(value: FastifyLogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setError(value: FastifyLogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFatal(value: FastifyLogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInfo(value: FastifyLogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTrace(value: FastifyLogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarn(value: FastifyLogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait FastifyLoggerOptions[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] extends StObject {
     
     var genReqId: js.UndefOr[
         js.Function1[/* req */ FastifyRequest[RequestGenericInterface, RawServer, RawRequest], String]
-      ] = js.native
+      ] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.native
+    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
     
-    var serializers: js.UndefOr[Err[RawRequest, RawReply, RawServer]] = js.native
+    var serializers: js.UndefOr[Err[RawRequest, RawReply, RawServer]] = js.undefined
   }
   object FastifyLoggerOptions {
     
@@ -121,7 +159,7 @@ object loggerMod {
     }
     
     @scala.inline
-    implicit class FastifyLoggerOptionsMutableBuilder[Self <: FastifyLoggerOptions[_, _, _], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] (val x: Self with (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) extends AnyVal {
+    implicit class FastifyLoggerOptionsMutableBuilder[Self <: FastifyLoggerOptions[?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] (val x: Self & (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) extends AnyVal {
       
       @scala.inline
       def setGenReqId(value: /* req */ FastifyRequest[RequestGenericInterface, RawServer, RawRequest] => String): Self = StObject.set(x, "genReqId", js.Any.fromFunction1(value))
@@ -179,64 +217,63 @@ object loggerMod {
     def warn: typings.fastify.fastifyStrings.warn = "warn".asInstanceOf[typings.fastify.fastifyStrings.warn]
   }
   
-  @js.native
   trait PrettyOptions extends StObject {
     
     /**
       * If set to true, will add color information to the formatted output message. Default: `false`.
       */
-    var colorize: js.UndefOr[Boolean] = js.native
+    var colorize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appends carriage return and line feed, instead of just a line feed, to the formatted log line.
       */
-    var crlf: js.UndefOr[Boolean] = js.native
+    var crlf: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define the log keys that are associated with error like objects. Default: ["err", "error"]
       */
-    var errorLikeObjectKeys: js.UndefOr[js.Array[String]] = js.native
+    var errorLikeObjectKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       *  When formatting an error object, display this list of properties.
       *  The list should be a comma separated list of properties. Default: ''
       */
-    var errorProps: js.UndefOr[String] = js.native
+    var errorProps: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore one or several keys. Example: "time,hostname"
       */
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, it will print the name of the log level as the first field in the log line. Default: `false`.
       */
-    var levelFirst: js.UndefOr[Boolean] = js.native
+    var levelFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Format output of message, e.g. {level} - {pid} will output message: INFO - 1123 Default: `false`.
       */
-    var messageFormat: js.UndefOr[`false` | String] = js.native
+    var messageFormat: js.UndefOr[`false` | String] = js.undefined
     
     /**
       * The key in the JSON object to use as the highlighted message. Default: "msg".
       */
-    var messageKey: js.UndefOr[String] = js.native
+    var messageKey: js.UndefOr[String] = js.undefined
     
     /**
       * Specify a search pattern according to {@link http://jmespath.org|jmespath}
       */
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
     /**
       * Suppress warning on first synchronous flushing.
       */
-    var suppressFlushSyncWarning: js.UndefOr[Boolean] = js.native
+    var suppressFlushSyncWarning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key in the JSON object to use for timestamp display. Default: "time".
       */
-    var timestampKey: js.UndefOr[String] = js.native
+    var timestampKey: js.UndefOr[String] = js.undefined
     
     /**
       * Translate the epoch time value into a human readable date and time string.
@@ -244,7 +281,7 @@ object loggerMod {
       * The default format is yyyy-mm-dd HH:MM:ss.l o in UTC.
       * For a list of available pattern letters see the {@link https://www.npmjs.com/package/dateformat|dateformat documentation}.
       */
-    var translateTime: js.UndefOr[Boolean | String] = js.native
+    var translateTime: js.UndefOr[Boolean | String] = js.undefined
   }
   object PrettyOptions {
     

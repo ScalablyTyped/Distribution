@@ -2,32 +2,30 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2TransactionDecisionValueSpec extends StObject {
   
   /**
     * Options associated with the order.
     */
-  var orderOptions: js.UndefOr[GoogleActionsV2OrdersOrderOptions] = js.native
+  var orderOptions: js.UndefOr[GoogleActionsV2OrdersOrderOptions] = js.undefined
   
   /**
     * Payment options for this order, or empty if no payment
     * is associated with the order.
     */
-  var paymentOptions: js.UndefOr[GoogleActionsV2OrdersPaymentOptions] = js.native
+  var paymentOptions: js.UndefOr[GoogleActionsV2OrdersPaymentOptions] = js.undefined
   
   /**
     * Options used to customize order presentation to the user.
     */
-  var presentationOptions: js.UndefOr[GoogleActionsV2OrdersPresentationOptions] = js.native
+  var presentationOptions: js.UndefOr[GoogleActionsV2OrdersPresentationOptions] = js.undefined
   
   /**
     * The proposed order that's ready for user to approve.
     */
-  var proposedOrder: js.UndefOr[GoogleActionsV2OrdersProposedOrder] = js.native
+  var proposedOrder: js.UndefOr[GoogleActionsV2OrdersProposedOrder] = js.undefined
 }
 object GoogleActionsV2TransactionDecisionValueSpec {
   

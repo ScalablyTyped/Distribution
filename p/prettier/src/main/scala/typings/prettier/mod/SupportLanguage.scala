@@ -2,37 +2,35 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportLanguage extends StObject {
   
-  var aceMode: js.UndefOr[String] = js.native
+  var aceMode: js.UndefOr[String] = js.undefined
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var codemirrorMimeType: js.UndefOr[String] = js.native
+  var codemirrorMimeType: js.UndefOr[String] = js.undefined
   
-  var codemirrorMode: js.UndefOr[String] = js.native
+  var codemirrorMode: js.UndefOr[String] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filenames: js.UndefOr[js.Array[String]] = js.native
+  var filenames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var linguistLanguageId: js.UndefOr[Double] = js.native
+  var linguistLanguageId: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var parsers: js.Array[BuiltInParserName | String] = js.native
+  var parsers: js.Array[BuiltInParserName | String]
   
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
   
-  var tmScope: js.UndefOr[String] = js.native
+  var tmScope: js.UndefOr[String] = js.undefined
   
-  var vscodeLanguageIds: js.UndefOr[js.Array[String]] = js.native
+  var vscodeLanguageIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SupportLanguage {
   

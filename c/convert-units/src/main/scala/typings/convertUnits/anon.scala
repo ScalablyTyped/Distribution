@@ -5,21 +5,19 @@ import typings.convertUnits.mod.system
 import typings.convertUnits.mod.unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Abbr[T /* <: unit */] extends StObject {
     
-    var abbr: T = js.native
+    var abbr: T
     
-    var measure: typings.convertUnits.mod.measure = js.native
+    var measure: typings.convertUnits.mod.measure
     
-    var system: typings.convertUnits.mod.system = js.native
+    var system: typings.convertUnits.mod.system
     
-    var unit: Name = js.native
+    var unit: Name
   }
   object Abbr {
     
@@ -30,7 +28,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AbbrMutableBuilder[Self <: Abbr[_], T /* <: unit */] (val x: Self with Abbr[T]) extends AnyVal {
+    implicit class AbbrMutableBuilder[Self <: Abbr[?], T /* <: unit */] (val x: Self & Abbr[T]) extends AnyVal {
       
       @scala.inline
       def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
@@ -46,12 +44,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CutOffNumber extends StObject {
     
-    var cutOffNumber: js.UndefOr[Double] = js.native
+    var cutOffNumber: js.UndefOr[Double] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[unit]] = js.native
+    var exclude: js.UndefOr[js.Array[unit]] = js.undefined
   }
   object CutOffNumber {
     
@@ -81,18 +78,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Measure[T /* <: unit */] extends StObject {
     
-    var abbr: T = js.native
+    var abbr: T
     
-    var measure: typings.convertUnits.mod.measure = js.native
+    var measure: typings.convertUnits.mod.measure
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
     
-    var system: typings.convertUnits.mod.system = js.native
+    var system: typings.convertUnits.mod.system
   }
   object Measure {
     
@@ -103,7 +99,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class MeasureMutableBuilder[Self <: Measure[_], T /* <: unit */] (val x: Self with Measure[T]) extends AnyVal {
+    implicit class MeasureMutableBuilder[Self <: Measure[?], T /* <: unit */] (val x: Self & Measure[T]) extends AnyVal {
       
       @scala.inline
       def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
@@ -122,12 +118,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: Singular = js.native
+    var name: Singular
     
-    var to_anchor: Double = js.native
+    var to_anchor: Double
   }
   object Name {
     
@@ -148,16 +143,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Plural extends StObject {
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
     
-    var unit: String = js.native
+    var unit: String
     
-    var `val`: Double = js.native
+    var `val`: Double
   }
   object Plural {
     
@@ -185,12 +179,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Singular extends StObject {
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
   }
   object Singular {
     
@@ -211,18 +204,17 @@ object anon {
     }
   }
   
-  @js.native
   trait System extends StObject {
     
-    var abbr: unit = js.native
+    var abbr: unit
     
-    var measure: typings.convertUnits.mod.measure = js.native
+    var measure: typings.convertUnits.mod.measure
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
     
-    var system: typings.convertUnits.mod.system = js.native
+    var system: typings.convertUnits.mod.system
   }
   object System {
     

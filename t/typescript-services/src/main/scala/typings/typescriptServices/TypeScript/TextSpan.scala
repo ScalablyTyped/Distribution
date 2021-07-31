@@ -2,39 +2,37 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextSpan extends StObject {
   
-  var _length: js.Any = js.native
+  var _length: js.Any
   
-  var _start: js.Any = js.native
+  var _start: js.Any
   
-  def containsPosition(position: Double): Boolean = js.native
+  def containsPosition(position: Double): Boolean
   
-  def containsTextSpan(span: TextSpan): Boolean = js.native
+  def containsTextSpan(span: TextSpan): Boolean
   
-  def end(): Double = js.native
+  def end(): Double
   
-  def intersection(span: TextSpan): TextSpan = js.native
+  def intersection(span: TextSpan): TextSpan
   
-  def intersectsWith(start: Double, length: Double): Boolean = js.native
+  def intersectsWith(start: Double, length: Double): Boolean
   
-  def intersectsWithPosition(position: Double): Boolean = js.native
+  def intersectsWithPosition(position: Double): Boolean
   
-  def intersectsWithTextSpan(span: TextSpan): Boolean = js.native
+  def intersectsWithTextSpan(span: TextSpan): Boolean
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def overlap(span: TextSpan): TextSpan = js.native
+  def overlap(span: TextSpan): TextSpan
   
-  def overlapsWith(span: TextSpan): Boolean = js.native
+  def overlapsWith(span: TextSpan): Boolean
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object TextSpan {
   

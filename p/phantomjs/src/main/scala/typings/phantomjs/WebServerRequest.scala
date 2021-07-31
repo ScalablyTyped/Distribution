@@ -3,23 +3,21 @@ package typings.phantomjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebServerRequest extends StObject {
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var httpVersion: Double = js.native
+  var httpVersion: Double
   
-  var method: String = js.native
+  var method: String
   
-  var post: String = js.native
+  var post: String
   
-  var postRaw: String = js.native
+  var postRaw: String
   
-  var url: String = js.native
+  var url: String
 }
 object WebServerRequest {
   

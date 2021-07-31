@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartThingRegistrationTaskRequest extends StObject {
   
   /**
     * The S3 bucket that contains the input file.
     */
-  var inputFileBucket: RegistryS3BucketName = js.native
+  var inputFileBucket: RegistryS3BucketName
   
   /**
     * The name of input file within the S3 bucket. This file contains a newline delimited JSON file. Each line contains the parameter values to provision one device (thing).
     */
-  var inputFileKey: RegistryS3KeyName = js.native
+  var inputFileKey: RegistryS3KeyName
   
   /**
     * The IAM role ARN that grants permission the input file.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The provisioning template.
     */
-  var templateBody: TemplateBody = js.native
+  var templateBody: TemplateBody
 }
 object StartThingRegistrationTaskRequest {
   

@@ -3,19 +3,17 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.plotlyJsStrings.`implicit`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofscaleImplicit extends StObject {
   
-  var name: `implicit` = js.native
+  var name: `implicit`
 }
 object TypeofscaleImplicit {
   
   @scala.inline
-  def apply(name: `implicit`): TypeofscaleImplicit = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): TypeofscaleImplicit = {
+    val __obj = js.Dynamic.literal(name = "implicit")
     __obj.asInstanceOf[TypeofscaleImplicit]
   }
   

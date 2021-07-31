@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentInstreamPositionTargetingOptionDetails extends StObject {
   
   /** Output only. The content instream position. */
-  var contentInstreamPosition: js.UndefOr[String] = js.native
+  var contentInstreamPosition: js.UndefOr[String] = js.undefined
 }
 object ContentInstreamPositionTargetingOptionDetails {
   

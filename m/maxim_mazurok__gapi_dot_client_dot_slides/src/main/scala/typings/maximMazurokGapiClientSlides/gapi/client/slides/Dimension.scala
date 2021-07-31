@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /** The magnitude. */
-  var magnitude: js.UndefOr[Double] = js.native
+  var magnitude: js.UndefOr[Double] = js.undefined
   
   /** The units for magnitude. */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object Dimension {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Inventory")
@@ -33,7 +32,7 @@ class ResourceInventory protected () extends StObject {
     */
   def custombatch(): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaInventoryCustomBatchResponse]): Unit = js.native
-  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
+  def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceInventoryCustombatch): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceInventoryCustombatch,
@@ -70,7 +69,7 @@ class ResourceInventory protected () extends StObject {
     */
   def set(): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaInventorySetResponse]): Unit = js.native
-  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventorySetResponse] = js.native
+  def set(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(params: ParamsResourceInventorySet): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(params: ParamsResourceInventorySet, callback: BodyResponseCallback[SchemaInventorySetResponse]): Unit = js.native
   def set(

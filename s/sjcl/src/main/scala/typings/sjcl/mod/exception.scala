@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exception extends Shortcut {
@@ -16,29 +15,61 @@ object exception extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "exception.bug")
   @js.native
-  class bug protected () extends Error {
+  class bug protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "exception.corrupt")
   @js.native
-  class corrupt protected () extends Error {
+  class corrupt protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "exception.invalid")
   @js.native
-  class invalid protected () extends Error {
+  class invalid protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "exception.notReady")
   @js.native
-  class notReady protected () extends Error {
+  class notReady protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   type _To = SjclExceptions

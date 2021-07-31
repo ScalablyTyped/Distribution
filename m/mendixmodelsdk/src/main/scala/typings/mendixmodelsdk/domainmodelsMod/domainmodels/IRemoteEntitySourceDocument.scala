@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 import typings.mendixmodelsdk.projectsMod.projects.IDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.18.0: introduced
   */
 @js.native
-trait IRemoteEntitySourceDocument extends IDocument {
+trait IRemoteEntitySourceDocument
+  extends StObject
+     with IDocument {
   
   /**
     * In version 8.12.0: added public

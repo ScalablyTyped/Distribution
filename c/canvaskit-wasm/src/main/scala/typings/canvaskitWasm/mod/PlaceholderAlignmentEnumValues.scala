@@ -2,23 +2,23 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaceholderAlignmentEnumValues extends EmbindEnum {
+trait PlaceholderAlignmentEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var AboveBaseline: PlaceholderAlignment = js.native
+  var AboveBaseline: PlaceholderAlignment
   
-  var Baseline: PlaceholderAlignment = js.native
+  var Baseline: PlaceholderAlignment
   
-  var BelowBaseline: PlaceholderAlignment = js.native
+  var BelowBaseline: PlaceholderAlignment
   
-  var Bottom: PlaceholderAlignment = js.native
+  var Bottom: PlaceholderAlignment
   
-  var Middle: PlaceholderAlignment = js.native
+  var Middle: PlaceholderAlignment
   
-  var Top: PlaceholderAlignment = js.native
+  var Top: PlaceholderAlignment
 }
 object PlaceholderAlignmentEnumValues {
   

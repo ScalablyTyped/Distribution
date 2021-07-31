@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapActionConfig extends StObject {
   
   /**
     * The name of the bootstrap action.
     */
-  var Name: XmlStringMaxLen256 = js.native
+  var Name: XmlStringMaxLen256
   
   /**
     * The script run by the bootstrap action.
     */
-  var ScriptBootstrapAction: ScriptBootstrapActionConfig = js.native
+  var ScriptBootstrapAction: ScriptBootstrapActionConfig
 }
 object BootstrapActionConfig {
   

@@ -13,7 +13,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalViewMod {
@@ -37,30 +36,29 @@ object modalViewMod {
     def defaultProps_=(x: IModalPropTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IModalPropTypes extends StObject {
     
-    var animateAppear: js.UndefOr[Boolean] = js.native
+    var animateAppear: js.UndefOr[Boolean] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var animationType: none | fade | `slide-up` | `slide-down` = js.native
+    var animationType: none | fade | `slide-up` | `slide-down`
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onRequestClose: js.UndefOr[CallbackOnBackHandler] = js.native
+    var onRequestClose: js.UndefOr[CallbackOnBackHandler] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
     
-    var wrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var wrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object IModalPropTypes {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobShipmentStateRequest extends StObject {
   
   /**
     * The job ID of the job whose shipment date you want to update, for example JID123e4567-e89b-12d3-a456-426655440000.
     */
-  var JobId: typings.awsSdk.snowballMod.JobId = js.native
+  var JobId: typings.awsSdk.snowballMod.JobId
   
   /**
     * The state of a device when it is being shipped.  Set to RECEIVED when the device arrives at your location. Set to RETURNED when you have returned the device to AWS.
     */
-  var ShipmentState: typings.awsSdk.snowballMod.ShipmentState = js.native
+  var ShipmentState: typings.awsSdk.snowballMod.ShipmentState
 }
 object UpdateJobShipmentStateRequest {
   

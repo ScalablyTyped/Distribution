@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAutoSnapshotRequest extends StObject {
   
   /**
     * The date of the automatic snapshot to delete in YYYY-MM-DD format. Use the get auto snapshots operation to get the available automatic snapshots for a resource.
     */
-  var date: AutoSnapshotDate = js.native
+  var date: AutoSnapshotDate
   
   /**
     * The name of the source instance or disk from which to delete the automatic snapshot.
     */
-  var resourceName: ResourceName = js.native
+  var resourceName: ResourceName
 }
 object DeleteAutoSnapshotRequest {
   

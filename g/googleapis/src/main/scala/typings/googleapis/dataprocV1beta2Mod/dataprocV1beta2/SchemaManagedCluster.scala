@@ -3,13 +3,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cluster that is managed by the workflow.
   */
-@js.native
 trait SchemaManagedCluster extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaManagedCluster extends StObject {
     * Cannot begin or end with hyphen. Must consist of between 2 and 35
     * characters.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The cluster configuration.
     */
-  var config: js.UndefOr[SchemaClusterConfig] = js.native
+  var config: js.UndefOr[SchemaClusterConfig] = js.undefined
   
   /**
     * Optional. The labels to associate with this cluster.Label keys must be
@@ -34,7 +32,7 @@ trait SchemaManagedCluster extends StObject {
     * expression: \p{Ll}\p{Lo}\p{N}_-{0,63}No more than 32 labels can be
     * associated with a given cluster.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaManagedCluster {
   

@@ -11,8 +11,8 @@ Automatically update markdown files with content from external sources
 | Full name          | markdown-magic |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 338026 |
+| # dependents       | 7 |
+| # downloads        | 365018 |
 | # stars            | 1 |
 
 ## Links

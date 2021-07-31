@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetDatafeedStats extends Generic {
+trait MlGetDatafeedStats
+  extends StObject
+     with Generic {
   
-  var allow_no_datafeeds: js.UndefOr[Boolean] = js.native
+  var allow_no_datafeeds: js.UndefOr[Boolean] = js.undefined
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var datafeed_id: js.UndefOr[String] = js.native
+  var datafeed_id: js.UndefOr[String] = js.undefined
 }
 object MlGetDatafeedStats {
   

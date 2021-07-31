@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveChatModeratorSnippet extends StObject {
   
   /** The ID of the live chat this moderator can act on. */
-  var liveChatId: js.UndefOr[String] = js.native
+  var liveChatId: js.UndefOr[String] = js.undefined
   
   /** Details about the moderator. */
-  var moderatorDetails: js.UndefOr[ChannelProfileDetails] = js.native
+  var moderatorDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
 }
 object LiveChatModeratorSnippet {
   

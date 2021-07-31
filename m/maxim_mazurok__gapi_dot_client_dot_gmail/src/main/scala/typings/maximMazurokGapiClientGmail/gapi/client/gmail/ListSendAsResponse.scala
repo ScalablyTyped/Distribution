@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSendAsResponse extends StObject {
   
   /** List of send-as aliases. */
-  var sendAs: js.UndefOr[js.Array[SendAs]] = js.native
+  var sendAs: js.UndefOr[js.Array[SendAs]] = js.undefined
 }
 object ListSendAsResponse {
   

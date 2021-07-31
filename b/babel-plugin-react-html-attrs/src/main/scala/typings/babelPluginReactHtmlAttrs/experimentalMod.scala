@@ -9,7 +9,6 @@ import typings.std.Exclude
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object experimentalMod {
@@ -17,32 +16,33 @@ object experimentalMod {
   /* augmented module */
   object babelPluginReactHtmlAttrsAugmentingMod {
     
+    @JSImport("babel-plugin-react-html-attrs", JSImport.Namespace)
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("babel-plugin-react-html-attrs", "SuspenseList")
     @js.native
     val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
     
-    @JSImport("babel-plugin-react-html-attrs", "unstable_withSuspenseConfig")
-    @js.native
-    def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: js.UndefOr[SuspenseConfig | Null]): Unit = js.native
+    @scala.inline
+    def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: js.UndefOr[SuspenseConfig | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("babel-plugin-react-html-attrs", "useDeferredValue")
-    @js.native
-    def useDeferredValue[T](value: T, config: js.UndefOr[TimeoutConfig | Null]): T = js.native
+    @scala.inline
+    def useDeferredValue[T](value: T, config: js.UndefOr[TimeoutConfig | Null]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeferredValue")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("babel-plugin-react-html-attrs", "useTransition")
-    @js.native
-    def useTransition(config: js.UndefOr[SuspenseConfig | Null]): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+    @scala.inline
+    def useTransition(config: js.UndefOr[SuspenseConfig | Null]): js.Tuple2[TransitionStartFunction, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TransitionStartFunction, Boolean]]
     
-    @js.native
     trait DirectionalSuspenseListProps
-      extends SuspenseListCommonProps
+      extends StObject
+         with SuspenseListCommonProps
          with typings.babelPluginReactHtmlAttrs.mod.SuspenseListProps
          with SuspenseListProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: forwards | backwards = js.native
+      var revealOrder: forwards | backwards
       
       /**
         * Dictates how unloaded items in a SuspenseList is shown.
@@ -51,13 +51,13 @@ object experimentalMod {
         * - `collapsed` shows only the next fallback in the list.
         * - `hidden` doesn’t show any unloaded items.
         */
-      var tail: js.UndefOr[SuspenseListTailMode] = js.native
+      var tail: js.UndefOr[SuspenseListTailMode] = js.undefined
     }
     object DirectionalSuspenseListProps {
       
       @scala.inline
       def apply(
-        children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]),
+        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
         revealOrder: forwards | backwards
       ): DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
@@ -78,27 +78,27 @@ object experimentalMod {
       }
     }
     
-    @js.native
     trait NonDirectionalSuspenseListProps
-      extends SuspenseListCommonProps
+      extends StObject
+         with SuspenseListCommonProps
          with typings.babelPluginReactHtmlAttrs.mod.SuspenseListProps
          with SuspenseListProps {
       
       /**
         * Defines the order in which the `SuspenseList` children should be revealed.
         */
-      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, forwards | backwards]] = js.native
+      var revealOrder: js.UndefOr[Exclude[SuspenseListRevealOrder, forwards | backwards]] = js.undefined
       
       /**
         * The tail property is invalid when not using the `forwards` or `backwards` reveal orders.
         */
-      var tail: js.UndefOr[scala.Nothing] = js.native
+      var tail: js.UndefOr[scala.Nothing] = js.undefined
     }
     object NonDirectionalSuspenseListProps {
       
       @scala.inline
       def apply(
-        children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
+        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
       ): NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[NonDirectionalSuspenseListProps]
@@ -115,12 +115,13 @@ object experimentalMod {
       }
     }
     
-    @js.native
-    trait SuspenseConfig extends TimeoutConfig {
+    trait SuspenseConfig
+      extends StObject
+         with TimeoutConfig {
       
-      var busyDelayMs: js.UndefOr[Double] = js.native
+      var busyDelayMs: js.UndefOr[Double] = js.undefined
       
-      var busyMinDurationMs: js.UndefOr[Double] = js.native
+      var busyMinDurationMs: js.UndefOr[Double] = js.undefined
     }
     object SuspenseConfig {
       
@@ -147,7 +148,6 @@ object experimentalMod {
       }
     }
     
-    @js.native
     trait SuspenseListCommonProps extends StObject {
       
       /**
@@ -157,13 +157,13 @@ object experimentalMod {
         * It does, however, allow those children to be wrapped inside a single
         * level of `<React.Fragment>`.
         */
-      var children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]) = js.native
+      var children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
     }
     object SuspenseListCommonProps {
       
       @scala.inline
       def apply(
-        children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
+        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
       ): SuspenseListCommonProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[SuspenseListCommonProps]
@@ -174,7 +174,7 @@ object experimentalMod {
         
         @scala.inline
         def setChildren(
-          value: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
+          value: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
         ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       }
     }
@@ -188,7 +188,7 @@ object experimentalMod {
       
       @scala.inline
       def DirectionalSuspenseListProps(
-        children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]),
+        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
         revealOrder: forwards | backwards
       ): typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
@@ -197,7 +197,7 @@ object experimentalMod {
       
       @scala.inline
       def NonDirectionalSuspenseListProps(
-        children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
+        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
       ): typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.NonDirectionalSuspenseListProps]
@@ -236,7 +236,6 @@ object experimentalMod {
       def hidden: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden = "hidden".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden]
     }
     
-    @js.native
     trait TimeoutConfig extends StObject {
       
       /**
@@ -246,7 +245,7 @@ object experimentalMod {
         *
         * **NOTE: We recommend that you share Suspense Config between different modules.**
         */
-      var timeoutMs: Double = js.native
+      var timeoutMs: Double
     }
     object TimeoutConfig {
       

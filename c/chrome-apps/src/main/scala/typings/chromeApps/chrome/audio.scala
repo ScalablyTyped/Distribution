@@ -2,7 +2,6 @@ package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.app.*
@@ -20,32 +19,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object audio {
   
-  @js.native
   trait AudioDeviceInfo extends StObject {
     
     /** Device name. */
-    var deviceName: String = js.native
+    var deviceName: String
     
     /** Type of the device. */
-    var deviceType: DeviceType = js.native
+    var deviceType: DeviceType
     
     /** The user-friendly name (e.g. 'USB Microphone'). */
-    var displayName: String = js.native
+    var displayName: String
     
     /** The unique identifier of the audio device. */
-    var id: String = js.native
+    var id: String
     
     /** True if this is the current active device. */
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
     /** The sound level of the device, volume for output, gain for input. */
-    var level: integer = js.native
+    var level: integer
     
     /** The stable/persisted device id string when available. */
-    var stableDeviceId: js.UndefOr[String] = js.native
+    var stableDeviceId: js.UndefOr[String] = js.undefined
     
     /** Stream type associated with this device. */
-    var streamType: StreamType = js.native
+    var streamType: StreamType
   }
   object AudioDeviceInfo {
     
@@ -95,20 +93,19 @@ object audio {
     }
   }
   
-  @js.native
   trait DeviceIdLists extends StObject {
     
     /**
       * List of input devices specified by their ID.
       * To indicate input devices should be unaffected, leave this property unset.
       */
-    var input: js.UndefOr[js.Array[String]] = js.native
+    var input: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * List of output devices specified by their ID.
       * To indicate output devices should be unaffected, leave this property unset.
       */
-    var output: js.UndefOr[js.Array[String]] = js.native
+    var output: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DeviceIdLists {
     
@@ -211,18 +208,17 @@ object audio {
     * Device properties by which to filter the list of returned audio devices.
     * If the filter is not set or set to {}, returned device list will contain all available audio devices.
     */
-  @js.native
   trait Filter extends StObject {
     
     /**
       * If set, only audio devices whose active state matches this value will satisfy the filter.
       */
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, only audio devices whose stream type is included in this list will satisfy the filter.
       */
-    var streamTypes: js.UndefOr[js.Array[StreamType]] = js.native
+    var streamTypes: js.UndefOr[js.Array[StreamType]] = js.undefined
   }
   object Filter {
     
@@ -252,7 +248,6 @@ object audio {
     }
   }
   
-  @js.native
   trait SetDeviceProperties extends StObject {
     
     /**
@@ -260,7 +255,7 @@ object audio {
       * If used with audio input device, represents audio device gain.
       * If used with audio output device, represents audio device volume.
       */
-    var level: js.UndefOr[integer] = js.native
+    var level: js.UndefOr[integer] = js.undefined
   }
   object SetDeviceProperties {
     

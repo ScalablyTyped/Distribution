@@ -3,21 +3,21 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.grpcGrpcJs.grpcGrpcJsStrings.weighted_target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WeightedTargetLoadBalancingConfig extends LoadBalancingConfig {
+trait WeightedTargetLoadBalancingConfig
+  extends StObject
+     with LoadBalancingConfig {
   
-  var name: weighted_target = js.native
+  var name: weighted_target
   
-  var weighted_target: WeightedTargetLbConfig = js.native
+  var weighted_target: WeightedTargetLbConfig
 }
 object WeightedTargetLoadBalancingConfig {
   
   @scala.inline
-  def apply(name: weighted_target, weighted_target: WeightedTargetLbConfig): WeightedTargetLoadBalancingConfig = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], weighted_target = weighted_target.asInstanceOf[js.Any])
+  def apply(weighted_target: WeightedTargetLbConfig): WeightedTargetLoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = "weighted_target", weighted_target = weighted_target.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedTargetLoadBalancingConfig]
   }
   

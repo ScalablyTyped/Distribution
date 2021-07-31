@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsSortCriteria extends StObject {
   
   /**
     * The property to sort the results by.
     */
-  var attributeName: js.UndefOr[ListJobsSortAttributeName] = js.native
+  var attributeName: js.UndefOr[ListJobsSortAttributeName] = js.undefined
   
   /**
     * The sort order to apply to the results, based on the value for the property specified by the attributeName property. Valid values are: ASC, sort the results in ascending order; and, DESC, sort the results in descending order.
     */
-  var orderBy: js.UndefOr[OrderBy] = js.native
+  var orderBy: js.UndefOr[OrderBy] = js.undefined
 }
 object ListJobsSortCriteria {
   

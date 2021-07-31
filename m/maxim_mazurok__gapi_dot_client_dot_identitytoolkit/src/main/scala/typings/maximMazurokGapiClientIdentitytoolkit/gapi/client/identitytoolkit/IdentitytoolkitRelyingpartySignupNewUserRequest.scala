@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartySignupNewUserRequest extends StObject {
   
   /** The captcha challenge. */
-  var captchaChallenge: js.UndefOr[String] = js.native
+  var captchaChallenge: js.UndefOr[String] = js.undefined
   
   /** Response to the captcha. */
-  var captchaResponse: js.UndefOr[String] = js.native
+  var captchaResponse: js.UndefOr[String] = js.undefined
   
   /** Whether to disable the user. Only can be used by service account. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the user. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The email of the user. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Mark the email as verified or not. Only can be used by service account. */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /** The GITKit token of the authenticated user. */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /** Instance id token of the app. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** Privileged caller can create user with specified user id. */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /** The new password of the user. */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** Privileged caller can create user with specified phone number. */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /** The photo url of the user. */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /** For multi-tenant use cases, in order to construct sign-in URL with the correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP configs from. */
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
   
   /** Tenant project number to be used for idp discovery. */
-  var tenantProjectNumber: js.UndefOr[String] = js.native
+  var tenantProjectNumber: js.UndefOr[String] = js.undefined
 }
 object IdentitytoolkitRelyingpartySignupNewUserRequest {
   

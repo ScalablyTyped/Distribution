@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuditFindingsRequest extends StObject {
   
   /**
     * A filter to limit results to the findings for the specified audit check.
     */
-  var checkName: js.UndefOr[AuditCheckName] = js.native
+  var checkName: js.UndefOr[AuditCheckName] = js.undefined
   
   /**
     * A filter to limit results to those found before the specified time. You must specify either the startTime and endTime or the taskId, but not both.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  Boolean flag indicating whether only the suppressed findings or the unsuppressed findings should be listed. If this parameter isn't provided, the response will list both suppressed and unsuppressed findings. 
     */
-  var listSuppressedFindings: js.UndefOr[ListSuppressedFindings] = js.native
+  var listSuppressedFindings: js.UndefOr[ListSuppressedFindings] = js.undefined
   
   /**
     * The maximum number of results to return at one time. The default is 25.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Information identifying the noncompliant resource.
     */
-  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.native
+  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   
   /**
     * A filter to limit results to those found after the specified time. You must specify either the startTime and endTime or the taskId, but not both.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter to limit results to the audit with the specified ID. You must specify either the taskId or the startTime and endTime, but not both.
     */
-  var taskId: js.UndefOr[AuditTaskId] = js.native
+  var taskId: js.UndefOr[AuditTaskId] = js.undefined
 }
 object ListAuditFindingsRequest {
   

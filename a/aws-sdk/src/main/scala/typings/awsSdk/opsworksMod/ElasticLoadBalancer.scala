@@ -2,56 +2,54 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticLoadBalancer extends StObject {
   
   /**
     * A list of Availability Zones.
     */
-  var AvailabilityZones: js.UndefOr[Strings] = js.native
+  var AvailabilityZones: js.UndefOr[Strings] = js.undefined
   
   /**
     * The instance's public DNS name.
     */
-  var DnsName: js.UndefOr[String] = js.native
+  var DnsName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the EC2 instances that the Elastic Load Balancing instance is managing traffic for.
     */
-  var Ec2InstanceIds: js.UndefOr[Strings] = js.native
+  var Ec2InstanceIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The Elastic Load Balancing instance's name.
     */
-  var ElasticLoadBalancerName: js.UndefOr[String] = js.native
+  var ElasticLoadBalancerName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the layer that the instance is attached to.
     */
-  var LayerId: js.UndefOr[String] = js.native
+  var LayerId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance's AWS region.
     */
-  var Region: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the stack that the instance is associated with.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of subnet IDs, if the stack is running in a VPC.
     */
-  var SubnetIds: js.UndefOr[Strings] = js.native
+  var SubnetIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The VPC ID.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object ElasticLoadBalancer {
   

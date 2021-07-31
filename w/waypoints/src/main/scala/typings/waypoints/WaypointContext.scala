@@ -5,22 +5,20 @@ import typings.std.Window
 import typings.waypoints.anon.Horizontal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaypointContext extends StObject {
   
-  var adapter: WaypointAdapter = js.native
+  var adapter: WaypointAdapter
   
   // http://imakewebthings.com/waypoints/api/context/#waypoints-property
-  def destroy(): Waypoint = js.native
+  def destroy(): Waypoint
   
-  var element: HTMLElement | Window = js.native
+  var element: HTMLElement | Window
   
-  def refresh(): Waypoint = js.native
+  def refresh(): Waypoint
   
-  var waypoints: Horizontal = js.native
+  var waypoints: Horizontal
 }
 object WaypointContext {
   

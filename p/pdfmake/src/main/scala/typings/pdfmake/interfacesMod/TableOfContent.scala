@@ -2,21 +2,19 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOfContent extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var numberStyle: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var numberStyle: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   
-  var textMargin: js.UndefOr[Margins] = js.native
+  var textMargin: js.UndefOr[Margins] = js.undefined
   
-  var textStyle: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var textStyle: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   
-  var title: js.UndefOr[Content] = js.native
+  var title: js.UndefOr[Content] = js.undefined
 }
 object TableOfContent {
   

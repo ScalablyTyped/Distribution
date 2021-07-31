@@ -6,14 +6,14 @@ import typings.googleCloudTextToSpeech.v1Mod.TextToSpeechClient
 import typings.googleGax.clientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait TypeofTextToSpeechClient
-    extends Instantiable0[TextToSpeechClient]
+    extends StObject
+       with Instantiable0[TextToSpeechClient]
        with Instantiable1[/* opts */ ClientOptions, TextToSpeechClient] {
     
     /**
@@ -45,7 +45,8 @@ object anon {
   
   @js.native
   trait TypeofTextToSpeechClientInstantiable
-    extends Instantiable0[typings.googleCloudTextToSpeech.v1beta1Mod.TextToSpeechClient]
+    extends StObject
+       with Instantiable0[typings.googleCloudTextToSpeech.v1beta1Mod.TextToSpeechClient]
        with Instantiable1[
           /* opts */ ClientOptions, 
           typings.googleCloudTextToSpeech.v1beta1Mod.TextToSpeechClient
@@ -78,10 +79,9 @@ object anon {
     def servicePath: String = js.native
   }
   
-  @js.native
   trait Typeofv1 extends StObject {
     
-    var TextToSpeechClient: TypeofTextToSpeechClient = js.native
+    var TextToSpeechClient: TypeofTextToSpeechClient
   }
   object Typeofv1 {
     
@@ -99,10 +99,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofv1beta1 extends StObject {
     
-    var TextToSpeechClient: TypeofTextToSpeechClientInstantiable = js.native
+    var TextToSpeechClient: TypeofTextToSpeechClientInstantiable
   }
   object Typeofv1beta1 {
     

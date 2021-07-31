@@ -2,25 +2,23 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFWorker extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  val messageHandler: js.Any | Null = js.native
+  val messageHandler: js.Any | Null
   
-  val port: js.Any | Null = js.native
+  val port: js.Any | Null
   
-  val promise: js.Promise[_] = js.native
+  val promise: js.Promise[js.Any]
 }
 object PDFWorker {
   
   @scala.inline
-  def apply(destroy: () => Unit, promise: js.Promise[_]): PDFWorker = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), promise = promise.asInstanceOf[js.Any])
+  def apply(destroy: () => Unit, promise: js.Promise[js.Any]): PDFWorker = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), promise = promise.asInstanceOf[js.Any], messageHandler = null, port = null)
     __obj.asInstanceOf[PDFWorker]
   }
   
@@ -43,6 +41,6 @@ object PDFWorker {
     def setPortNull: Self = StObject.set(x, "port", null)
     
     @scala.inline
-    def setPromise(value: js.Promise[_]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

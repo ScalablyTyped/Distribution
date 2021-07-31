@@ -4,11 +4,9 @@ import typings.officeJsPreview.Excel.User
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `task.toJSON()`. */
-@js.native
 trait TaskData extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var assignees: js.UndefOr[js.Array[User]] = js.native
+  var assignees: js.UndefOr[js.Array[User]] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dueDate: js.UndefOr[Date] = js.native
+  var dueDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait TaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TaskData {
   

@@ -3,19 +3,17 @@ package typings.nodeHueApi.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRegisteredUser extends StObject {
   
-  var accessed: Date = js.native
+  var accessed: Date
   
-  var created: Date = js.native
+  var created: Date
   
-  var name: String = js.native
+  var name: String
   
-  var username: String = js.native
+  var username: String
 }
 object IRegisteredUser {
   

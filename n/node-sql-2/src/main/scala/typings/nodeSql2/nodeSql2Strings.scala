@@ -3,7 +3,6 @@ package typings.nodeSql2
 import typings.nodeSql2.mod.SQLDialects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeSql2Strings {
@@ -29,12 +28,16 @@ object nodeSql2Strings {
   def cascade: cascade = "cascade".asInstanceOf[cascade]
   
   @js.native
-  sealed trait mssql extends SQLDialects
+  sealed trait mssql
+    extends StObject
+       with SQLDialects
   @scala.inline
   def mssql: mssql = "mssql".asInstanceOf[mssql]
   
   @js.native
-  sealed trait mysql extends SQLDialects
+  sealed trait mysql
+    extends StObject
+       with SQLDialects
   @scala.inline
   def mysql: mysql = "mysql".asInstanceOf[mysql]
   
@@ -44,12 +47,16 @@ object nodeSql2Strings {
   def `no action`: `no action` = ("no action").asInstanceOf[`no action`]
   
   @js.native
-  sealed trait oracle extends SQLDialects
+  sealed trait oracle
+    extends StObject
+       with SQLDialects
   @scala.inline
   def oracle: oracle = "oracle".asInstanceOf[oracle]
   
   @js.native
-  sealed trait postgres extends SQLDialects
+  sealed trait postgres
+    extends StObject
+       with SQLDialects
   @scala.inline
   def postgres: postgres = "postgres".asInstanceOf[postgres]
   
@@ -69,7 +76,9 @@ object nodeSql2Strings {
   def `set null`: `set null` = ("set null").asInstanceOf[`set null`]
   
   @js.native
-  sealed trait sqlite extends SQLDialects
+  sealed trait sqlite
+    extends StObject
+       with SQLDialects
   @scala.inline
   def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
 }

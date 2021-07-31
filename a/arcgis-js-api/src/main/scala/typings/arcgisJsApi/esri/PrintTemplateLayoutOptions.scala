@@ -8,53 +8,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintTemplateLayoutOptions extends Object {
+trait PrintTemplateLayoutOptions
+  extends StObject
+     with Object {
   
   /**
     * The text used for the author if the specified layout contains an author text element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var authorText: js.UndefOr[String] = js.native
+  var authorText: js.UndefOr[String] = js.undefined
   
   /**
     * The text used for the copyright if the specified layout contains a copyright text element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var copyrightText: js.UndefOr[String] = js.native
+  var copyrightText: js.UndefOr[String] = js.undefined
   
   /**
     * An array of name-value pair objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var customTextElements: js.UndefOr[js.Array[_]] = js.native
+  var customTextElements: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the ids of the layers that will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var legendLayers: js.UndefOr[js.Array[LegendLayer]] = js.native
+  var legendLayers: js.UndefOr[js.Array[LegendLayer]] = js.undefined
   
   /**
     * The unit used for the scalebar.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var scalebarUnit: js.UndefOr[Miles | Kilometers | Meters | Feet] = js.native
+  var scalebarUnit: js.UndefOr[Miles | Kilometers | Meters | Feet] = js.undefined
   
   /**
     * The text used for the map title if the specified layout contains a title text element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var titleText: js.UndefOr[String] = js.native
+  var titleText: js.UndefOr[String] = js.undefined
 }
 object PrintTemplateLayoutOptions {
   
@@ -84,7 +84,7 @@ object PrintTemplateLayoutOptions {
     def setCopyrightTextUndefined: Self = StObject.set(x, "copyrightText", js.undefined)
     
     @scala.inline
-    def setCustomTextElements(value: js.Array[_]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
+    def setCustomTextElements(value: js.Array[js.Any]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomTextElementsUndefined: Self = StObject.set(x, "customTextElements", js.undefined)

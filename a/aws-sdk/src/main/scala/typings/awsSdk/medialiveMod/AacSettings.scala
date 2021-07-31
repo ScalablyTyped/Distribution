@@ -2,57 +2,55 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AacSettings extends StObject {
   
   /**
     * Average bitrate in bits/second. Valid values depend on rate control mode and profile.
     */
-  var Bitrate: js.UndefOr[double] = js.native
+  var Bitrate: js.UndefOr[double] = js.undefined
   
   /**
     * Mono, Stereo, or 5.1 channel layout. Valid values depend on rate control mode and profile. The adReceiverMix setting receives a stereo description plus control track and emits a mono AAC encode of the description track, with control data emitted in the PES header as per ETSI TS 101 154 Annex E.
     */
-  var CodingMode: js.UndefOr[AacCodingMode] = js.native
+  var CodingMode: js.UndefOr[AacCodingMode] = js.undefined
   
   /**
     * Set to "broadcasterMixedAd" when input contains pre-mixed main audio + AD (narration) as a stereo pair.  The Audio Type field (audioType) will be set to 3, which signals to downstream systems that this stream contains "broadcaster mixed AD". Note that the input received by the encoder must contain pre-mixed audio; the encoder does not perform the mixing. The values in audioTypeControl and audioType (in AudioDescription) are ignored when set to broadcasterMixedAd.
   Leave set to "normal" when input does not contain pre-mixed audio + AD.
     */
-  var InputType: js.UndefOr[AacInputType] = js.native
+  var InputType: js.UndefOr[AacInputType] = js.undefined
   
   /**
     * AAC Profile.
     */
-  var Profile: js.UndefOr[AacProfile] = js.native
+  var Profile: js.UndefOr[AacProfile] = js.undefined
   
   /**
     * Rate Control Mode.
     */
-  var RateControlMode: js.UndefOr[AacRateControlMode] = js.native
+  var RateControlMode: js.UndefOr[AacRateControlMode] = js.undefined
   
   /**
     * Sets LATM / LOAS AAC output for raw containers.
     */
-  var RawFormat: js.UndefOr[AacRawFormat] = js.native
+  var RawFormat: js.UndefOr[AacRawFormat] = js.undefined
   
   /**
     * Sample rate in Hz. Valid values depend on rate control mode and profile.
     */
-  var SampleRate: js.UndefOr[double] = js.native
+  var SampleRate: js.UndefOr[double] = js.undefined
   
   /**
     * Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.
     */
-  var Spec: js.UndefOr[AacSpec] = js.native
+  var Spec: js.UndefOr[AacSpec] = js.undefined
   
   /**
     * VBR Quality Level - Only used if rateControlMode is VBR.
     */
-  var VbrQuality: js.UndefOr[AacVbrQuality] = js.native
+  var VbrQuality: js.UndefOr[AacVbrQuality] = js.undefined
 }
 object AacSettings {
   

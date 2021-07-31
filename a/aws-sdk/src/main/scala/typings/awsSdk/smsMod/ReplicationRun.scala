@@ -2,66 +2,64 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationRun extends StObject {
   
   /**
     * The ID of the Amazon Machine Image (AMI) from the replication run.
     */
-  var amiId: js.UndefOr[AmiId] = js.native
+  var amiId: js.UndefOr[AmiId] = js.undefined
   
   /**
     * The completion time of the last replication run.
     */
-  var completedTime: js.UndefOr[Timestamp] = js.native
+  var completedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the replication run.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * Indicates whether the replication run should produce an encrypted AMI.
     */
-  var encrypted: js.UndefOr[Encrypted] = js.native
+  var encrypted: js.UndefOr[Encrypted] = js.undefined
   
   /**
     * The ID of the KMS key for replication jobs that produce encrypted AMIs. This value can be any of the following:   KMS key ID   KMS key alias   ARN referring to the KMS key ID   ARN referring to the KMS key alias    If encrypted is true but a KMS key ID is not specified, the customer's default KMS key for Amazon EBS is used. 
     */
-  var kmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * The ID of the replication run.
     */
-  var replicationRunId: js.UndefOr[ReplicationRunId] = js.native
+  var replicationRunId: js.UndefOr[ReplicationRunId] = js.undefined
   
   /**
     * The start time of the next replication run.
     */
-  var scheduledStartTime: js.UndefOr[Timestamp] = js.native
+  var scheduledStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Details about the current stage of the replication run.
     */
-  var stageDetails: js.UndefOr[ReplicationRunStageDetails] = js.native
+  var stageDetails: js.UndefOr[ReplicationRunStageDetails] = js.undefined
   
   /**
     * The state of the replication run.
     */
-  var state: js.UndefOr[ReplicationRunState] = js.native
+  var state: js.UndefOr[ReplicationRunState] = js.undefined
   
   /**
     * The description of the current status of the replication job.
     */
-  var statusMessage: js.UndefOr[ReplicationRunStatusMessage] = js.native
+  var statusMessage: js.UndefOr[ReplicationRunStatusMessage] = js.undefined
   
   /**
     * The type of replication run.
     */
-  var `type`: js.UndefOr[ReplicationRunType] = js.native
+  var `type`: js.UndefOr[ReplicationRunType] = js.undefined
 }
 object ReplicationRun {
   

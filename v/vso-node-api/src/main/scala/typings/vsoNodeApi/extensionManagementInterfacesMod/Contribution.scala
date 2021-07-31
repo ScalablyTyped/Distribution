@@ -2,41 +2,41 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Contribution extends ContributionBase {
+trait Contribution
+  extends StObject
+     with ContributionBase {
   
   /**
     * List of constraints (filters) that should be applied to the availability of this contribution
     */
-  var constraints: js.Array[ContributionConstraint] = js.native
+  var constraints: js.Array[ContributionConstraint]
   
   /**
     * Includes is a set of contributions that should have this contribution included in their targets list.
     */
-  var includes: js.Array[String] = js.native
+  var includes: js.Array[String]
   
   /**
     * Properties/attributes of this contribution
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * List of demanded claims in order for the user to see this contribution (like anonymous, public, member...).
     */
-  var restrictedTo: js.Array[String] = js.native
+  var restrictedTo: js.Array[String]
   
   /**
     * The ids of the contribution(s) that this contribution targets. (parent contributions)
     */
-  var targets: js.Array[String] = js.native
+  var targets: js.Array[String]
   
   /**
     * Id of the Contribution Type
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Contribution {
   

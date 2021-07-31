@@ -2,26 +2,24 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteEntryUpdateModel extends StObject {
   
   /**
     * Id of child suite in a suite
     */
-  var childSuiteId: Double = js.native
+  var childSuiteId: Double
   
   /**
     * Updated sequence number for the test case or child suite in the suite
     */
-  var sequenceNumber: Double = js.native
+  var sequenceNumber: Double
   
   /**
     * Id of a test case in a suite
     */
-  var testCaseId: Double = js.native
+  var testCaseId: Double
 }
 object SuiteEntryUpdateModel {
   

@@ -2,27 +2,27 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocationEvent extends LeafletEvent {
+trait LocationEvent
+  extends StObject
+     with LeafletEvent {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var altitude: Double = js.native
+  var altitude: Double
   
-  var altitudeAccuracy: Double = js.native
+  var altitudeAccuracy: Double
   
-  var bounds: LatLngBounds_ = js.native
+  var bounds: LatLngBounds_
   
-  var heading: Double = js.native
+  var heading: Double
   
-  var latlng: LatLng_ = js.native
+  var latlng: LatLng_
   
-  var speed: Double = js.native
+  var speed: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object LocationEvent {
   

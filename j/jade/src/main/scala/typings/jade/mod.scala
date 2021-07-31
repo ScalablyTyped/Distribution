@@ -4,83 +4,73 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jade.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jade", "compile")
+  @JSImport("jade", JSImport.Namespace)
   @js.native
-  def compile(template: String): JadeGenerationFunction = js.native
-  @JSImport("jade", "compile")
-  @js.native
-  def compile(template: String, options: JadeOptions): JadeGenerationFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jade", "compileClient")
-  @js.native
-  def compileClient(template: String): JadeGenerationFunction = js.native
-  @JSImport("jade", "compileClient")
-  @js.native
-  def compileClient(template: String, options: JadeOptions): JadeGenerationFunction = js.native
+  @scala.inline
+  def compile(template: String): JadeGenerationFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[JadeGenerationFunction]
+  @scala.inline
+  def compile(template: String, options: JadeOptions): JadeGenerationFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JadeGenerationFunction]
   
-  @JSImport("jade", "compileClientWithDependenciesTracked")
-  @js.native
-  def compileClientWithDependenciesTracked(template: String): Body = js.native
-  @JSImport("jade", "compileClientWithDependenciesTracked")
-  @js.native
-  def compileClientWithDependenciesTracked(template: String, options: JadeOptions): Body = js.native
+  @scala.inline
+  def compileClient(template: String): JadeGenerationFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compileClient")(template.asInstanceOf[js.Any]).asInstanceOf[JadeGenerationFunction]
+  @scala.inline
+  def compileClient(template: String, options: JadeOptions): JadeGenerationFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compileClient")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JadeGenerationFunction]
   
-  @JSImport("jade", "compileFile")
-  @js.native
-  def compileFile(path: String): JadeGenerationFunction = js.native
-  @JSImport("jade", "compileFile")
-  @js.native
-  def compileFile(path: String, options: JadeOptions): JadeGenerationFunction = js.native
+  @scala.inline
+  def compileClientWithDependenciesTracked(template: String): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("compileClientWithDependenciesTracked")(template.asInstanceOf[js.Any]).asInstanceOf[Body]
+  @scala.inline
+  def compileClientWithDependenciesTracked(template: String, options: JadeOptions): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("compileClientWithDependenciesTracked")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
   
-  @JSImport("jade", "render")
-  @js.native
-  def render(template: String): String = js.native
-  @JSImport("jade", "render")
-  @js.native
-  def render(template: String, options: JadeOptions): String = js.native
+  @scala.inline
+  def compileFile(path: String): JadeGenerationFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(path.asInstanceOf[js.Any]).asInstanceOf[JadeGenerationFunction]
+  @scala.inline
+  def compileFile(path: String, options: JadeOptions): JadeGenerationFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JadeGenerationFunction]
   
-  @JSImport("jade", "renderFile")
-  @js.native
-  def renderFile(path: String): String = js.native
-  @JSImport("jade", "renderFile")
-  @js.native
-  def renderFile(path: String, options: JadeOptions): String = js.native
+  @scala.inline
+  def render(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, options: JadeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def renderFile(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderFile(path: String, options: JadeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type JadeCustomFilterFunction = js.Function2[/* text */ String, /* options */ StringDictionary[Boolean], String]
   
   type JadeGenerationFunction = js.Function1[/* locals */ js.UndefOr[TemplateLocals], String]
   
-  @js.native
   trait JadeOptions extends StObject {
     
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var doctype: js.UndefOr[String] = js.native
+    var doctype: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var filters: js.UndefOr[StringDictionary[JadeCustomFilterFunction]] = js.native
+    var filters: js.UndefOr[StringDictionary[JadeCustomFilterFunction]] = js.undefined
     
-    var globals: js.UndefOr[js.Array[String]] = js.native
+    var globals: js.UndefOr[js.Array[String]] = js.undefined
     
-    var inlineRuntimeFunctions: js.UndefOr[Boolean] = js.native
+    var inlineRuntimeFunctions: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var pretty: js.UndefOr[Boolean | String] = js.native
+    var pretty: js.UndefOr[Boolean | String] = js.undefined
     
-    var self: js.UndefOr[Boolean] = js.native
+    var self: js.UndefOr[Boolean] = js.undefined
   }
   object JadeOptions {
     

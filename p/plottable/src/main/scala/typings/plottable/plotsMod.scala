@@ -22,7 +22,6 @@ import typings.plottable.plottableStrings.stepBefore
 import typings.plottable.plottableStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plotsMod {
@@ -362,9 +361,8 @@ object plotsMod {
     @scala.inline
     def _SECTOR_VALUE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/plots", "Pie._isValidData")
-    @js.native
-    def _isValidData(value: js.Any): Boolean = js.native
+    @scala.inline
+    def _isValidData(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("plottable/build/src/plots", "Rectangle")
@@ -482,6 +480,10 @@ object plotsMod {
   /* static members */
   object StackedArea {
     
+    @JSImport("plottable/build/src/plots", "StackedArea")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Given an array of Datasets and the accessor function for the key, computes the
       * set reunion (no duplicates) of the domain of each Dataset. The keys are stringified
@@ -491,9 +493,8 @@ object plotsMod {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    @JSImport("plottable/build/src/plots", "StackedArea._domainKeys")
-    @js.native
-    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
+    @scala.inline
+    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable/build/src/plots", "StackedBar")

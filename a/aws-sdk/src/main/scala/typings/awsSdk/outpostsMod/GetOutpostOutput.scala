@@ -2,13 +2,11 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOutpostOutput extends StObject {
   
-  var Outpost: js.UndefOr[typings.awsSdk.outpostsMod.Outpost] = js.native
+  var Outpost: js.UndefOr[typings.awsSdk.outpostsMod.Outpost] = js.undefined
 }
 object GetOutpostOutput {
   

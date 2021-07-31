@@ -2,17 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonceDetails extends StObject {
   
-  var bin: js.UndefOr[String] = js.native
+  var bin: js.UndefOr[String] = js.undefined
   
-  var cardType: js.UndefOr[String] = js.native
+  var cardType: js.UndefOr[String] = js.undefined
   
-  var lastTwo: js.UndefOr[String] = js.native
+  var lastTwo: js.UndefOr[String] = js.undefined
 }
 object NonceDetails {
   

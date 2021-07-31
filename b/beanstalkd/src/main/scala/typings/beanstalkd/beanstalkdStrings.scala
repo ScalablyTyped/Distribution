@@ -3,13 +3,14 @@ package typings.beanstalkd
 import typings.beanstalkd.mod.BeanstalkdJobState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beanstalkdStrings {
   
   @js.native
-  sealed trait buried extends BeanstalkdJobState
+  sealed trait buried
+    extends StObject
+       with BeanstalkdJobState
   @scala.inline
   def buried: buried = "buried".asInstanceOf[buried]
   
@@ -34,7 +35,9 @@ object beanstalkdStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait delayed extends BeanstalkdJobState
+  sealed trait delayed
+    extends StObject
+       with BeanstalkdJobState
   @scala.inline
   def delayed: delayed = "delayed".asInstanceOf[delayed]
   
@@ -64,12 +67,16 @@ object beanstalkdStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait ready extends BeanstalkdJobState
+  sealed trait ready
+    extends StObject
+       with BeanstalkdJobState
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait reserved extends BeanstalkdJobState
+  sealed trait reserved
+    extends StObject
+       with BeanstalkdJobState
   @scala.inline
   def reserved: reserved = "reserved".asInstanceOf[reserved]
   

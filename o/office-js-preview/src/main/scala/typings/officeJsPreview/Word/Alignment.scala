@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,36 +18,48 @@ object Alignment extends StObject {
     *
     */
   @js.native
-  sealed trait centered extends Alignment
+  sealed trait centered
+    extends StObject
+       with Alignment
   
   /**
     * Fully justified alignment.
     *
     */
   @js.native
-  sealed trait justified extends Alignment
+  sealed trait justified
+    extends StObject
+       with Alignment
   
   /**
     * Alignment to the left.
     *
     */
   @js.native
-  sealed trait left extends Alignment
+  sealed trait left
+    extends StObject
+       with Alignment
   
   @js.native
-  sealed trait mixed extends Alignment
+  sealed trait mixed
+    extends StObject
+       with Alignment
   
   /**
     * Alignment to the right.
     *
     */
   @js.native
-  sealed trait right extends Alignment
+  sealed trait right
+    extends StObject
+       with Alignment
   
   /**
     * Unknown alignment.
     *
     */
   @js.native
-  sealed trait unknown extends Alignment
+  sealed trait unknown
+    extends StObject
+       with Alignment
 }

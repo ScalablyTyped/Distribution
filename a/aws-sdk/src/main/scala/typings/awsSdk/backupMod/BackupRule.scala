@@ -2,56 +2,54 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupRule extends StObject {
   
   /**
     * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by AWS Backup. This value is optional.
     */
-  var CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.native
+  var CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   
   /**
     * An array of CopyAction objects, which contains the details of the copy operation.
     */
-  var CopyActions: js.UndefOr[typings.awsSdk.backupMod.CopyActions] = js.native
+  var CopyActions: js.UndefOr[typings.awsSdk.backupMod.CopyActions] = js.undefined
   
   /**
     * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
     */
-  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.native
+  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
   /**
     * An array of key-value pair strings that are assigned to resources that are associated with this rule when restored from backup.
     */
-  var RecoveryPointTags: js.UndefOr[Tags] = js.native
+  var RecoveryPointTags: js.UndefOr[Tags] = js.undefined
   
   /**
     * Uniquely identifies a rule that is used to schedule the backup of a selection of resources.
     */
-  var RuleId: js.UndefOr[String] = js.native
+  var RuleId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional display name for a backup rule.
     */
-  var RuleName: BackupRuleName = js.native
+  var RuleName: BackupRuleName
   
   /**
     * A CRON expression specifying when AWS Backup initiates a backup job. For more information about cron expressions, see Schedule Expressions for Rules in the Amazon CloudWatch Events User Guide.. Prior to specifying a value for this parameter, we recommend testing your cron expression using one of the many available cron generator and testing tools.
     */
-  var ScheduleExpression: js.UndefOr[CronExpression] = js.native
+  var ScheduleExpression: js.UndefOr[CronExpression] = js.undefined
   
   /**
     * A value in minutes after a backup is scheduled before a job will be canceled if it doesn't start successfully. This value is optional.
     */
-  var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.native
+  var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
-  var TargetBackupVaultName: BackupVaultName = js.native
+  var TargetBackupVaultName: BackupVaultName
 }
 object BackupRule {
   

@@ -2,97 +2,95 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var contributors_enabled: Boolean = js.native
+  var contributors_enabled: Boolean
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var default_profile: String = js.native
+  var default_profile: String
   
-  var default_profile_image: String = js.native
+  var default_profile_image: String
   
-  var description: String = js.native
+  var description: String
   
-  var entities: Entities = js.native
+  var entities: Entities
   
-  var favourites_count: Double = js.native
+  var favourites_count: Double
   
-  var follow_request_sent: js.UndefOr[Boolean] = js.native
+  var follow_request_sent: js.UndefOr[Boolean] = js.undefined
   
-  var followers_count: Double = js.native
+  var followers_count: Double
   
-  var following: js.UndefOr[Boolean] = js.native
+  var following: js.UndefOr[Boolean] = js.undefined
   
-  var friends_count: Double = js.native
+  var friends_count: Double
   
-  var geo_enabled: js.UndefOr[Boolean] = js.native
+  var geo_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var id_str: String = js.native
+  var id_str: String
   
-  var is_translator: js.UndefOr[Boolean] = js.native
+  var is_translator: js.UndefOr[Boolean] = js.undefined
   
-  var lang: String = js.native
+  var lang: String
   
-  var listed_count: Double = js.native
+  var listed_count: Double
   
-  var location: String = js.native
+  var location: String
   
-  var name: String = js.native
+  var name: String
   
-  var notifications: js.UndefOr[Boolean] = js.native
+  var notifications: js.UndefOr[Boolean] = js.undefined
   
-  var profile_background_color: String = js.native
+  var profile_background_color: String
   
-  var profile_background_image_url: String = js.native
+  var profile_background_image_url: String
   
-  var profile_background_image_url_https: String = js.native
+  var profile_background_image_url_https: String
   
-  var profile_background_tile: Boolean = js.native
+  var profile_background_tile: Boolean
   
-  var profile_banner_url: String = js.native
+  var profile_banner_url: String
   
-  var profile_image_url: String = js.native
+  var profile_image_url: String
   
-  var profile_image_url_https: String = js.native
+  var profile_image_url_https: String
   
-  var profile_link_color: String = js.native
+  var profile_link_color: String
   
-  var profile_sidebar_border_color: String = js.native
+  var profile_sidebar_border_color: String
   
-  var profile_sidebar_fill_color: String = js.native
+  var profile_sidebar_fill_color: String
   
-  var profile_text_color: String = js.native
+  var profile_text_color: String
   
-  var profile_use_background_image: Boolean = js.native
+  var profile_use_background_image: Boolean
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
   
-  var screen_name: String = js.native
+  var screen_name: String
   
-  var show_all_inline_media: Boolean = js.native
+  var show_all_inline_media: Boolean
   
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
-  var statuses_count: Double = js.native
+  var statuses_count: Double
   
-  var time_zone: js.UndefOr[String] = js.native
+  var time_zone: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var utc_offset: js.UndefOr[Double] = js.native
+  var utc_offset: js.UndefOr[Double] = js.undefined
   
-  var verified: Boolean = js.native
+  var verified: Boolean
   
-  var withheld_in_countries: String = js.native
+  var withheld_in_countries: String
   
-  var withheld_scope: String = js.native
+  var withheld_scope: String
 }
 object User {
   

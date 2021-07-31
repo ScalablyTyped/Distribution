@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientLibraryagent.anon.Alt
 import typings.maximMazurokGapiClientLibraryagent.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -44,20 +43,19 @@ object gapi {
         def `return`(request: Accesstoken): Request[GoogleExampleLibraryagentV1Book] = js.native
       }
       
-      @js.native
       trait GoogleExampleLibraryagentV1Book extends StObject {
         
         /** The name of the book author. */
-        var author: js.UndefOr[String] = js.native
+        var author: js.UndefOr[String] = js.undefined
         
         /** The resource name of the book. Book names have the form `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a book. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Value indicating whether the book has been read. */
-        var read: js.UndefOr[Boolean] = js.native
+        var read: js.UndefOr[Boolean] = js.undefined
         
         /** The title of the book. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object GoogleExampleLibraryagentV1Book {
         
@@ -96,14 +94,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleExampleLibraryagentV1ListBooksResponse extends StObject {
         
         /** The list of books. */
-        var books: js.UndefOr[js.Array[GoogleExampleLibraryagentV1Book]] = js.native
+        var books: js.UndefOr[js.Array[GoogleExampleLibraryagentV1Book]] = js.undefined
         
         /** A token to retrieve next page of results. Pass this value in the ListBooksRequest.page_token field in the subsequent call to `ListBooks` method to retrieve the next page of results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleExampleLibraryagentV1ListBooksResponse {
         
@@ -133,17 +130,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleExampleLibraryagentV1ListShelvesResponse extends StObject {
         
         /**
           * A token to retrieve next page of results. Pass this value in the ListShelvesRequest.page_token field in the subsequent call to `ListShelves` method to retrieve the next page of
           * results.
           */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** The list of shelves. */
-        var shelves: js.UndefOr[js.Array[GoogleExampleLibraryagentV1Shelf]] = js.native
+        var shelves: js.UndefOr[js.Array[GoogleExampleLibraryagentV1Shelf]] = js.undefined
       }
       object GoogleExampleLibraryagentV1ListShelvesResponse {
         
@@ -173,14 +169,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleExampleLibraryagentV1Shelf extends StObject {
         
         /** Output only. The resource name of the shelf. Shelf names have the form `shelves/{shelf_id}`. The name is ignored when creating a shelf. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The theme of the shelf */
-        var theme: js.UndefOr[String] = js.native
+        var theme: js.UndefOr[String] = js.undefined
       }
       object GoogleExampleLibraryagentV1Shelf {
         

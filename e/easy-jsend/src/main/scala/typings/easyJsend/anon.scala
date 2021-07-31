@@ -2,17 +2,15 @@ package typings.easyJsend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Limit extends StObject {
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var skip: Double = js.native
+    var skip: Double
   }
   object Limit {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Partial extends StObject {
     
-    var partial: Boolean = js.native
+    var partial: Boolean
   }
   object Partial {
     

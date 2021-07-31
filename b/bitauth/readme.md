@@ -10,9 +10,9 @@ Passwordless authentication using Bitcoin cryptography
 | ------------------ | :-------------: |
 | Full name          | bitauth |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 20 |
-| # downloads        | 21762 |
+| # downloads        | 21744 |
 | # stars            | 1 |
 
 ## Links

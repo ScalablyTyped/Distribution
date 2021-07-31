@@ -3,14 +3,12 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/environment-alias.EnvironmentAliasProps, 'sys'> */
-@js.native
 trait OmitEnvironmentAliasProps extends StObject {
   
-  var environment: MetaLinkProps = js.native
+  var environment: MetaLinkProps
 }
 object OmitEnvironmentAliasProps {
   

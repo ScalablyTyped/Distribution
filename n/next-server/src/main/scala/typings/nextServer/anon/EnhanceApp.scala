@@ -6,15 +6,13 @@ import typings.nextServer.libUtilsMod.NextComponentType
 import typings.nextServer.libUtilsMod.NextPageContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhanceApp extends StObject {
   
-  var enhanceApp: js.UndefOr[Enhancer[AppType]] = js.native
+  var enhanceApp: js.UndefOr[Enhancer[AppType]] = js.undefined
   
-  var enhanceComponent: js.UndefOr[Enhancer[NextComponentType[NextPageContext, js.Object, js.Object]]] = js.native
+  var enhanceComponent: js.UndefOr[Enhancer[NextComponentType[NextPageContext, js.Object, js.Object]]] = js.undefined
 }
 object EnhanceApp {
   

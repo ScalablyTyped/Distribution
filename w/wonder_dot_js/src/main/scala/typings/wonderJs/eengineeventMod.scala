@@ -1,99 +1,96 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/EEngineEvent", JSImport.Namespace)
-@js.native
-object eengineeventMod extends js.Object {
-  @js.native
-  sealed trait EEngineEvent extends js.Object
+object eengineeventMod {
   
   @js.native
-  object EEngineEvent extends js.Object {
-    @js.native
-    sealed trait ENDLOOP extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_DOWN extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_DRAG extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_MOVE extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_OUT extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_OVER extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_SCALE extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_TAP extends EEngineEvent
-    
-    @js.native
-    sealed trait POINT_UP extends EEngineEvent
-    
-    @js.native
-    sealed trait STARTLOOP extends EEngineEvent
-    
-    @js.native
-    sealed trait TRANSFORM_ROTATE extends EEngineEvent
-    
-    @js.native
-    sealed trait TRANSFORM_SCALE extends EEngineEvent
-    
-    @js.native
-    sealed trait TRANSFORM_TRANSLATE extends EEngineEvent
+  sealed trait EEngineEvent extends StObject
+  @JSImport("wonder.js/dist/es2015/event/EEngineEvent", "EEngineEvent")
+  @js.native
+  object EEngineEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EEngineEvent with Double] = js.native
-    /* 1 */ @js.native
-    object ENDLOOP extends TopLevel[ENDLOOP with Double]
+    def apply(value: Double): js.UndefOr[EEngineEvent & Double] = js.native
     
-    /* 3 */ @js.native
-    object POINT_DOWN extends TopLevel[POINT_DOWN with Double]
+    @js.native
+    sealed trait ENDLOOP
+      extends StObject
+         with EEngineEvent
+    /* 1 */ val ENDLOOP: typings.wonderJs.eengineeventMod.EEngineEvent.ENDLOOP & Double = js.native
     
-    /* 9 */ @js.native
-    object POINT_DRAG extends TopLevel[POINT_DRAG with Double]
+    @js.native
+    sealed trait POINT_DOWN
+      extends StObject
+         with EEngineEvent
+    /* 3 */ val POINT_DOWN: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_DOWN & Double = js.native
     
-    /* 5 */ @js.native
-    object POINT_MOVE extends TopLevel[POINT_MOVE with Double]
+    @js.native
+    sealed trait POINT_DRAG
+      extends StObject
+         with EEngineEvent
+    /* 9 */ val POINT_DRAG: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_DRAG & Double = js.native
     
-    /* 7 */ @js.native
-    object POINT_OUT extends TopLevel[POINT_OUT with Double]
+    @js.native
+    sealed trait POINT_MOVE
+      extends StObject
+         with EEngineEvent
+    /* 5 */ val POINT_MOVE: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_MOVE & Double = js.native
     
-    /* 6 */ @js.native
-    object POINT_OVER extends TopLevel[POINT_OVER with Double]
+    @js.native
+    sealed trait POINT_OUT
+      extends StObject
+         with EEngineEvent
+    /* 7 */ val POINT_OUT: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_OUT & Double = js.native
     
-    /* 8 */ @js.native
-    object POINT_SCALE extends TopLevel[POINT_SCALE with Double]
+    @js.native
+    sealed trait POINT_OVER
+      extends StObject
+         with EEngineEvent
+    /* 6 */ val POINT_OVER: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_OVER & Double = js.native
     
-    /* 2 */ @js.native
-    object POINT_TAP extends TopLevel[POINT_TAP with Double]
+    @js.native
+    sealed trait POINT_SCALE
+      extends StObject
+         with EEngineEvent
+    /* 8 */ val POINT_SCALE: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_SCALE & Double = js.native
     
-    /* 4 */ @js.native
-    object POINT_UP extends TopLevel[POINT_UP with Double]
+    @js.native
+    sealed trait POINT_TAP
+      extends StObject
+         with EEngineEvent
+    /* 2 */ val POINT_TAP: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_TAP & Double = js.native
     
-    /* 0 */ @js.native
-    object STARTLOOP extends TopLevel[STARTLOOP with Double]
+    @js.native
+    sealed trait POINT_UP
+      extends StObject
+         with EEngineEvent
+    /* 4 */ val POINT_UP: typings.wonderJs.eengineeventMod.EEngineEvent.POINT_UP & Double = js.native
     
-    /* 11 */ @js.native
-    object TRANSFORM_ROTATE extends TopLevel[TRANSFORM_ROTATE with Double]
+    @js.native
+    sealed trait STARTLOOP
+      extends StObject
+         with EEngineEvent
+    /* 0 */ val STARTLOOP: typings.wonderJs.eengineeventMod.EEngineEvent.STARTLOOP & Double = js.native
     
-    /* 12 */ @js.native
-    object TRANSFORM_SCALE extends TopLevel[TRANSFORM_SCALE with Double]
+    @js.native
+    sealed trait TRANSFORM_ROTATE
+      extends StObject
+         with EEngineEvent
+    /* 11 */ val TRANSFORM_ROTATE: typings.wonderJs.eengineeventMod.EEngineEvent.TRANSFORM_ROTATE & Double = js.native
     
-    /* 10 */ @js.native
-    object TRANSFORM_TRANSLATE extends TopLevel[TRANSFORM_TRANSLATE with Double]
+    @js.native
+    sealed trait TRANSFORM_SCALE
+      extends StObject
+         with EEngineEvent
+    /* 12 */ val TRANSFORM_SCALE: typings.wonderJs.eengineeventMod.EEngineEvent.TRANSFORM_SCALE & Double = js.native
     
+    @js.native
+    sealed trait TRANSFORM_TRANSLATE
+      extends StObject
+         with EEngineEvent
+    /* 10 */ val TRANSFORM_TRANSLATE: typings.wonderJs.eengineeventMod.EEngineEvent.TRANSFORM_TRANSLATE & Double = js.native
   }
-  
 }
-

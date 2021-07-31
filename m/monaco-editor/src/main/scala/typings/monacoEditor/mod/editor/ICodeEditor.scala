@@ -11,11 +11,12 @@ import typings.monacoEditor.mod.Selection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICodeEditor extends IEditor {
+trait ICodeEditor
+  extends StObject
+     with IEditor {
   
   /**
     * Add a content widget. Widgets must have unique ids, otherwise they will be overwritten.
@@ -43,7 +44,6 @@ trait ICodeEditor extends IEditor {
     */
   def deltaDecorations(oldDecorations: js.Array[String], newDecorations: js.Array[IModelDeltaDecoration]): js.Array[String] = js.native
   
-  def executeCommand(source: js.UndefOr[scala.Nothing], command: ICommand): Unit = js.native
   /**
     * Execute a command on the editor.
     * The edits will land on the undo-redo stack, but no "undo stop" will be pushed.
@@ -52,8 +52,8 @@ trait ICodeEditor extends IEditor {
     */
   def executeCommand(source: String, command: ICommand): Unit = js.native
   def executeCommand(source: Null, command: ICommand): Unit = js.native
+  def executeCommand(source: Unit, command: ICommand): Unit = js.native
   
-  def executeCommands(source: js.UndefOr[scala.Nothing], commands: js.Array[ICommand | Null]): Unit = js.native
   /**
     * Execute multiple (concomitant) commands on the editor.
     * @param source The source of the call.
@@ -61,18 +61,8 @@ trait ICodeEditor extends IEditor {
     */
   def executeCommands(source: String, commands: js.Array[ICommand | Null]): Unit = js.native
   def executeCommands(source: Null, commands: js.Array[ICommand | Null]): Unit = js.native
+  def executeCommands(source: Unit, commands: js.Array[ICommand | Null]): Unit = js.native
   
-  def executeEdits(source: js.UndefOr[scala.Nothing], edits: js.Array[IIdentifiedSingleEditOperation]): Boolean = js.native
-  def executeEdits(
-    source: js.UndefOr[scala.Nothing],
-    edits: js.Array[IIdentifiedSingleEditOperation],
-    endCursorState: js.Array[Selection]
-  ): Boolean = js.native
-  def executeEdits(
-    source: js.UndefOr[scala.Nothing],
-    edits: js.Array[IIdentifiedSingleEditOperation],
-    endCursorState: ICursorStateComputer
-  ): Boolean = js.native
   /**
     * Execute edits on the editor.
     * The edits will land on the undo-redo stack, but no "undo stop" will be pushed.
@@ -95,6 +85,13 @@ trait ICodeEditor extends IEditor {
   def executeEdits(source: Null, edits: js.Array[IIdentifiedSingleEditOperation], endCursorState: js.Array[Selection]): Boolean = js.native
   def executeEdits(
     source: Null,
+    edits: js.Array[IIdentifiedSingleEditOperation],
+    endCursorState: ICursorStateComputer
+  ): Boolean = js.native
+  def executeEdits(source: Unit, edits: js.Array[IIdentifiedSingleEditOperation]): Boolean = js.native
+  def executeEdits(source: Unit, edits: js.Array[IIdentifiedSingleEditOperation], endCursorState: js.Array[Selection]): Boolean = js.native
+  def executeEdits(
+    source: Unit,
     edits: js.Array[IIdentifiedSingleEditOperation],
     endCursorState: ICursorStateComputer
   ): Boolean = js.native

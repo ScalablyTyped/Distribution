@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PolicyRulesWithSubjects prescribes a test that applies to a request to an apiserver. The test considers the subject making the request, the verb being requested, and the resource to be acted upon. This PolicyRulesWithSubjects matches a request if and only if both (a) at least one member of subjects matches the request and (b) at least one member of resourceRules or nonResourceRules matches the request.
   */
-@js.native
 trait PolicyRulesWithSubjects extends StObject {
   
   /**
     * `nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL.
     */
-  var nonResourceRules: js.UndefOr[Input[js.Array[Input[NonResourcePolicyRule]]]] = js.native
+  var nonResourceRules: js.UndefOr[Input[js.Array[Input[NonResourcePolicyRule]]]] = js.undefined
   
   /**
     * `resourceRules` is a slice of ResourcePolicyRules that identify matching requests according to their verb and the target resource. At least one of `resourceRules` and `nonResourceRules` has to be non-empty.
     */
-  var resourceRules: js.UndefOr[Input[js.Array[Input[ResourcePolicyRule]]]] = js.native
+  var resourceRules: js.UndefOr[Input[js.Array[Input[ResourcePolicyRule]]]] = js.undefined
   
   /**
     * subjects is the list of normal user, serviceaccount, or group that this rule cares about. There must be at least one member in this slice. A slice that includes both the system:authenticated and system:unauthenticated user groups matches every request. Required.
     */
-  var subjects: Input[js.Array[Input[Subject]]] = js.native
+  var subjects: Input[js.Array[Input[Subject]]]
 }
 object PolicyRulesWithSubjects {
   

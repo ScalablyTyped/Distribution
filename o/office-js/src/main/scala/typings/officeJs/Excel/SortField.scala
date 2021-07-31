@@ -7,7 +7,6 @@ import typings.officeJs.officeJsStrings.TextAsNumber
 import typings.officeJs.officeJsStrings.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait SortField extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var dataOption: js.UndefOr[SortDataOption | Normal | TextAsNumber] = js.native
+  var dataOption: js.UndefOr[SortDataOption | Normal | TextAsNumber] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var icon: js.UndefOr[Icon] = js.native
+  var icon: js.UndefOr[Icon] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var key: Double = js.native
+  var key: Double
   
   /**
     *
@@ -65,7 +63,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var sortOn: js.UndefOr[SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon] = js.native
+  var sortOn: js.UndefOr[SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait SortField extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subField: js.UndefOr[String] = js.native
+  var subField: js.UndefOr[String] = js.undefined
 }
 object SortField {
   

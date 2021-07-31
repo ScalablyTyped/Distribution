@@ -2,13 +2,11 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The template used for creating replicas in the pool.
   */
-@js.native
 trait SchemaTemplate extends StObject {
   
   /**
@@ -17,27 +15,27 @@ trait SchemaTemplate extends StObject {
     * shell, so any state established by one command is inherited by later
     * commands.
     */
-  var action: js.UndefOr[SchemaAction] = js.native
+  var action: js.UndefOr[SchemaAction] = js.undefined
   
   /**
     * A list of HTTP Health Checks to configure for this replica pool and all
     * virtual machines in this replica pool.
     */
-  var healthChecks: js.UndefOr[js.Array[SchemaHealthCheck]] = js.native
+  var healthChecks: js.UndefOr[js.Array[SchemaHealthCheck]] = js.undefined
   
   /**
     * A free-form string describing the version of this template. You can
     * provide any versioning string you would like. For example, version1 or
     * template-v1.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * The virtual machine parameters to use for creating replicas. You can
     * define settings such as the machine type and the image of replicas in
     * this pool. This is required if replica type is SMART_VM.
     */
-  var vmParams: js.UndefOr[SchemaVmParams] = js.native
+  var vmParams: js.UndefOr[SchemaVmParams] = js.undefined
 }
 object SchemaTemplate {
   

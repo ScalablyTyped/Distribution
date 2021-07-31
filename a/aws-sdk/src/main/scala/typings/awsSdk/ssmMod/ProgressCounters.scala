@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressCounters extends StObject {
   
   /**
     * The total number of steps that the system cancelled in all specified AWS Regions and accounts for the current Automation execution.
     */
-  var CancelledSteps: js.UndefOr[Integer] = js.native
+  var CancelledSteps: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of steps that failed to run in all specified AWS Regions and accounts for the current Automation execution.
     */
-  var FailedSteps: js.UndefOr[Integer] = js.native
+  var FailedSteps: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of steps that successfully completed in all specified AWS Regions and accounts for the current Automation execution.
     */
-  var SuccessSteps: js.UndefOr[Integer] = js.native
+  var SuccessSteps: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of steps that timed out in all specified AWS Regions and accounts for the current Automation execution.
     */
-  var TimedOutSteps: js.UndefOr[Integer] = js.native
+  var TimedOutSteps: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of steps run in all specified AWS Regions and accounts for the current Automation execution.
     */
-  var TotalSteps: js.UndefOr[Integer] = js.native
+  var TotalSteps: js.UndefOr[Integer] = js.undefined
 }
 object ProgressCounters {
   

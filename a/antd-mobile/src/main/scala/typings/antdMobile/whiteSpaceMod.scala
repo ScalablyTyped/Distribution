@@ -10,7 +10,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whiteSpaceMod {
@@ -36,16 +35,17 @@ object whiteSpaceMod {
   trait WhiteSpace
     extends Component[WhiteSpaceProps, js.Any, js.Any]
   
-  @js.native
-  trait WhiteSpaceProps extends WhiteSpacePropsType {
+  trait WhiteSpaceProps
+    extends StObject
+       with WhiteSpacePropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object WhiteSpaceProps {
     

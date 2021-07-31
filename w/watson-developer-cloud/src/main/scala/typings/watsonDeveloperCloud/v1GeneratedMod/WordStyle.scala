@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WordStyle. */
-@js.native
 trait WordStyle extends StObject {
   
   /** HTML head level that content matching this style is tagged with. */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /** Array of word style names to convert. */
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object WordStyle {
   

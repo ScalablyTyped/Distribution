@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackTrigger extends StObject {
   
-  var Arn: String = js.native
+  var Arn: String
   
-  var Type: String = js.native
+  var Type: String
 }
 object RollbackTrigger {
   

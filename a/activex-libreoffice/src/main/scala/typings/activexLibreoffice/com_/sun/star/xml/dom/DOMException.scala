@@ -4,14 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** encapsulates the details of an XML parse error or warning. */
-@js.native
-trait DOMException extends Exception {
+trait DOMException
+  extends StObject
+     with Exception {
   
-  var Code: DOMExceptionType = js.native
+  var Code: DOMExceptionType
 }
 object DOMException {
   

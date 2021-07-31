@@ -4,17 +4,15 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISPECTATOR_TO_PLAYER extends StObject {
   
-  var playerId: Double = js.native
+  var playerId: Double
   
-  var room: SFSRoom = js.native
+  var room: SFSRoom
   
-  var user: SFSUser = js.native
+  var user: SFSUser
 }
 object ISPECTATOR_TO_PLAYER {
   

@@ -2,17 +2,15 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageIterator extends StObject {
   
-  var collection: Double = js.native
+  var collection: Double
   
-  var docIndex: Double = js.native
+  var docIndex: Double
   
-  var pageIndex: Double = js.native
+  var pageIndex: Double
 }
 object PageIterator {
   

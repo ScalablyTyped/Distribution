@@ -358,7 +358,6 @@ import typings.std.SVGViewElement
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -720,8 +719,8 @@ object mod extends Shortcut {
     def apply[ExtraProps](tag: wbr, options: StyledOptions): CreateStyledComponentIntrinsic[wbr, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: webview): CreateStyledComponentIntrinsic[webview, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: webview, options: StyledOptions): CreateStyledComponentIntrinsic[webview, ExtraProps, Theme] = js.native
-    def apply[Tag /* <: ComponentType[_] */, ExtraProps](tag: Tag): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
-    def apply[Tag /* <: ComponentType[_] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
+    def apply[Tag /* <: ComponentType[js.Any] */, ExtraProps](tag: Tag): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
+    def apply[Tag /* <: ComponentType[js.Any] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -731,7 +730,9 @@ object mod extends Shortcut {
   trait CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject
   
   @js.native
-  trait CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme] {
+  trait CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */]
+    extends StObject
+       with CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme] {
     
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */](styles: (Interpolation[WithTheme[StyleProps, StyledInstanceTheme]])*): StyledComponent[InnerProps, StyleProps, StyledInstanceTheme] = js.native
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */](
@@ -742,13 +743,14 @@ object mod extends Shortcut {
   
   @js.native
   trait CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
-    extends CreateStyledComponentBase[InnerProps, ExtraProps, js.Any] {
+    extends StObject
+       with CreateStyledComponentBase[InnerProps, ExtraProps, js.Any] {
     
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](template: TemplateStringsArray, styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
   }
   
-  type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[_] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
+  type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[js.Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   
   type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: importer.ImportType#apply Failed type conversion: @emotion/styled-base.@emotion/styled-base.JSXInEl[Tag] */ js.Any, 
@@ -766,10 +768,11 @@ object mod extends Shortcut {
   
   @js.native
   trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
-    extends ComponentSelector
-       with FunctionComponent[InnerProps with (Omit[StyleProps, theme]) with `0`[Theme]] {
+    extends StObject
+       with FunctionComponent[InnerProps & (Omit[StyleProps, theme]) & `0`[Theme]]
+       with ComponentSelector {
     
-    def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
+    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
     /**
       * @desc this method is type-unsafe
       */
@@ -1377,14 +1380,13 @@ object mod extends Shortcut {
       ] = js.native
   }
   
-  @js.native
   trait StyledOptions extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var shouldForwardProp: js.UndefOr[js.Function1[/* propName */ String, Boolean]] = js.native
+    var shouldForwardProp: js.UndefOr[js.Function1[/* propName */ String, Boolean]] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object StyledOptions {
     
@@ -1417,7 +1419,7 @@ object mod extends Shortcut {
     }
   }
   
-  type WithTheme[P, T] = (P with ThemeT[T]) | (P with ThemeExclude)
+  type WithTheme[P, T] = (P & ThemeT[T]) | (P & ThemeExclude)
   
   type _To = CreateStyled[js.Any]
   

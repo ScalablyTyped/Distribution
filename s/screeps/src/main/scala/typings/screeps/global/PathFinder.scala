@@ -3,7 +3,6 @@ package typings.screeps.global
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PathFinder extends Shortcut {
@@ -22,7 +21,8 @@ object PathFinder extends Shortcut {
     * Creates a new CostMatrix containing 0's for all positions.
     */
   class CostMatrix ()
-    extends typings.screeps.CostMatrix
+    extends StObject
+       with typings.screeps.CostMatrix
   
   type _To = typings.screeps.PathFinder
   

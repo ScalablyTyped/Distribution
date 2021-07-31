@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDivisionsSearch extends StandardParameters {
+trait ParamsResourceDivisionsSearch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The search query. Queries can cover any parts of a OCD ID or a human
@@ -24,12 +24,12 @@ trait ParamsResourceDivisionsSearch extends StandardParameters {
     * Apache Lucene library are supported. See
     * http://lucene.apache.org/core/2_9_4/queryparsersyntax.html
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDivisionSearchRequest] = js.native
+  var requestBody: js.UndefOr[SchemaDivisionSearchRequest] = js.undefined
 }
 object ParamsResourceDivisionsSearch {
   

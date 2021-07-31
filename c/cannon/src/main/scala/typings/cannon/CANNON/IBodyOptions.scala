@@ -2,43 +2,41 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBodyOptions extends StObject {
   
-  var allowSleep: js.UndefOr[Boolean] = js.native
+  var allowSleep: js.UndefOr[Boolean] = js.undefined
   
-  var angularDamping: js.UndefOr[Double] = js.native
+  var angularDamping: js.UndefOr[Double] = js.undefined
   
-  var angularVelocity: js.UndefOr[Vec3] = js.native
+  var angularVelocity: js.UndefOr[Vec3] = js.undefined
   
-  var collisionFilterGroup: js.UndefOr[Double] = js.native
+  var collisionFilterGroup: js.UndefOr[Double] = js.undefined
   
-  var collisionFilterMask: js.UndefOr[Double] = js.native
+  var collisionFilterMask: js.UndefOr[Double] = js.undefined
   
-  var fixedRotation: js.UndefOr[Boolean] = js.native
+  var fixedRotation: js.UndefOr[Boolean] = js.undefined
   
-  var linearDamping: js.UndefOr[Double] = js.native
+  var linearDamping: js.UndefOr[Double] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var material: js.UndefOr[Material] = js.native
+  var material: js.UndefOr[Material] = js.undefined
   
-  var position: js.UndefOr[Vec3] = js.native
+  var position: js.UndefOr[Vec3] = js.undefined
   
-  var quaternion: js.UndefOr[Quaternion] = js.native
+  var quaternion: js.UndefOr[Quaternion] = js.undefined
   
-  var shape: js.UndefOr[Shape] = js.native
+  var shape: js.UndefOr[Shape] = js.undefined
   
-  var sleepSpeedLimit: js.UndefOr[Double] = js.native
+  var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
   
-  var sleepTimeLimit: js.UndefOr[Double] = js.native
+  var sleepTimeLimit: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
   
-  var velocity: js.UndefOr[Vec3] = js.native
+  var velocity: js.UndefOr[Vec3] = js.undefined
 }
 object IBodyOptions {
   

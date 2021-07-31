@@ -2,15 +2,13 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  val Code: Double = js.native
+  val Code: Double
   
-  val Description: String = js.native
+  val Description: String
 }
 object Code {
   

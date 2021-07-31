@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeCallCounterInfo extends StObject {
   
   /**
     * Counter name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Counter time in seconds.
     */
-  var time: Double = js.native
+  var time: Double
   
   /**
     * Counter value.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object RuntimeCallCounterInfo {
   

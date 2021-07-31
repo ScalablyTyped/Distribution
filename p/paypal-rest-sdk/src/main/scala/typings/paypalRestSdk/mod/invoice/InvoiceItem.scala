@@ -3,27 +3,25 @@ package typings.paypalRestSdk.mod.invoice
 import typings.paypalRestSdk.mod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvoiceItem extends StObject {
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var discount: js.UndefOr[Cost] = js.native
+  var discount: js.UndefOr[Cost] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var quantity: Double = js.native
+  var quantity: Double
   
-  var tax: js.UndefOr[Tax] = js.native
+  var tax: js.UndefOr[Tax] = js.undefined
   
-  var unit_of_measure: js.UndefOr[String] = js.native
+  var unit_of_measure: js.UndefOr[String] = js.undefined
   
-  var unit_price: Currency = js.native
+  var unit_price: Currency
 }
 object InvoiceItem {
   

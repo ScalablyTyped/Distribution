@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
     * The keys that are included in this group.
     */
-  var Keys: js.UndefOr[typings.awsSdk.costexplorerMod.Keys] = js.native
+  var Keys: js.UndefOr[typings.awsSdk.costexplorerMod.Keys] = js.undefined
   
   /**
     * The metrics that are included in this group.
     */
-  var Metrics: js.UndefOr[typings.awsSdk.costexplorerMod.Metrics] = js.native
+  var Metrics: js.UndefOr[typings.awsSdk.costexplorerMod.Metrics] = js.undefined
 }
 object Group {
   

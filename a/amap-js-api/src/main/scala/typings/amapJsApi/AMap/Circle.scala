@@ -22,11 +22,12 @@ import typings.amapJsApi.amapJsApiStrings.touchstart
 import typings.amapJsApi.anon.TargetI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Circle[ExtraData] extends ShapeOverlay[ExtraData] {
+trait Circle[ExtraData]
+  extends StObject
+     with ShapeOverlay[ExtraData] {
   
   /**
     * 判断指定点坐标是否在圆内
@@ -78,13 +79,13 @@ trait Circle[ExtraData] extends ShapeOverlay[ExtraData] {
 }
 object Circle {
   
-  @js.native
   trait EventMap[I]
-    extends typings.amapJsApi.AMap.ShapeOverlay.EventMap[I] {
+    extends StObject
+       with typings.amapJsApi.AMap.ShapeOverlay.EventMap[I] {
     
-    var setCenter: Event_[typings.amapJsApi.amapJsApiStrings.setCenter, js.UndefOr[scala.Nothing]] = js.native
+    var setCenter: Event_[typings.amapJsApi.amapJsApiStrings.setCenter, Unit]
     
-    var setRadius: Event_[typings.amapJsApi.amapJsApiStrings.setRadius, js.UndefOr[scala.Nothing]] = js.native
+    var setRadius: Event_[typings.amapJsApi.amapJsApiStrings.setRadius, Unit]
   }
   object EventMap {
     
@@ -98,10 +99,10 @@ object Circle {
       mousemove: MapsEvent[mousemove, I],
       mouseover: MapsEvent[mouseover, I],
       mouseup: MapsEvent[mouseup, I],
-      options: Event_[options, js.UndefOr[scala.Nothing]],
+      options: Event_[options, Unit],
       rightclick: MapsEvent[rightclick, I],
-      setCenter: Event_[setCenter, js.UndefOr[scala.Nothing]],
-      setRadius: Event_[setRadius, js.UndefOr[scala.Nothing]],
+      setCenter: Event_[setCenter, Unit],
+      setRadius: Event_[setRadius, Unit],
       show: Event_[show, TargetI[I]],
       touchend: MapsEvent[touchend, I],
       touchmove: MapsEvent[touchmove, I],
@@ -112,95 +113,94 @@ object Circle {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
-      def setSetCenter(value: Event_[setCenter, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "setCenter", value.asInstanceOf[js.Any])
+      def setSetCenter(value: Event_[setCenter, Unit]): Self = StObject.set(x, "setCenter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetRadius(value: Event_[setRadius, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "setRadius", value.asInstanceOf[js.Any])
+      def setSetRadius(value: Event_[setRadius, Unit]): Self = StObject.set(x, "setRadius", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined amap-js-api.AMap.Merge<amap-js-api.AMap.Polygon.GetOptionsResult<ExtraData>, {  path :std.Array<amap-js-api.AMap.LngLat>,   center :amap-js-api.AMap.LngLat,   radius :number}> */
-  @js.native
   trait GetOptionsResult[ExtraData] extends StObject {
     
     /**
       * 事件是否穿透到地图
       */
-    var bubble: Boolean = js.native
+    var bubble: Boolean
     
-    var center: LngLat = js.native
+    var center: LngLat
     
     /**
       * 是否支持点击
       */
-    var clickable: Boolean = js.native
+    var clickable: Boolean
     
     /**
       * 自定义属性
       */
-    var extData: ExtraData | js.Object = js.native
+    var extData: ExtraData | js.Object
     
     /**
       * 多边形填充颜色
       */
-    var fillColor: String = js.native
+    var fillColor: String
     
     /**
       * 边形填充透明度
       */
-    var fillOpacity: Double = js.native
+    var fillOpacity: Double
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: StrokeLineJoin = js.native
+    var lineJoin: StrokeLineJoin
     
     /**
       * 所属地图
       */
-    var map: Map = js.native
+    var map: Map
     
     /**
       * 多边形轮廓线的节点坐标数组
       */
-    var path: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat] = js.native
+    var path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]
     
-    var radius: Double = js.native
+    var radius: Double
     
     /**
       * 线条颜色
       */
-    var strokeColor: String = js.native
+    var strokeColor: String
     
     /**
       * 虚线的分段
       */
-    var strokeDasharray: js.Array[Double] = js.native
+    var strokeDasharray: js.Array[Double]
     
     /**
       * 线条透明度
       */
-    var strokeOpacity: Double = js.native
+    var strokeOpacity: Double
     
     /**
       * 线条样式，虚线或者实线
       */
-    var strokeStyle: StrokeStyle = js.native
+    var strokeStyle: StrokeStyle
     
     /**
       * 线条宽度
       */
-    var strokeWeight: Double = js.native
+    var strokeWeight: Double
     
-    var texture: String = js.native
+    var texture: String
     
     /**
       * 层级
       */
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object GetOptionsResult {
     
@@ -214,7 +214,7 @@ object Circle {
       fillOpacity: Double,
       lineJoin: StrokeLineJoin,
       map: Map,
-      path: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat],
+      path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat],
       radius: Double,
       strokeColor: String,
       strokeDasharray: js.Array[Double],
@@ -229,7 +229,7 @@ object Circle {
     }
     
     @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[_], ExtraData] (val x: Self with GetOptionsResult[ExtraData]) extends AnyVal {
+    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
@@ -256,7 +256,7 @@ object Circle {
       def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) with js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
@@ -287,41 +287,40 @@ object Circle {
     }
   }
   
-  @js.native
   trait Options[ExtraData] extends StObject {
     
-    var bubble: js.UndefOr[Boolean] = js.native
+    var bubble: js.UndefOr[Boolean] = js.undefined
     
-    var center: js.UndefOr[LocationValue] = js.native
+    var center: js.UndefOr[LocationValue] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var extData: js.UndefOr[ExtraData] = js.native
+    var extData: js.UndefOr[ExtraData] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
-    var strokeStyle: js.UndefOr[StrokeStyle] = js.native
+    var strokeStyle: js.UndefOr[StrokeStyle] = js.undefined
     
-    var strokeWeight: js.UndefOr[Double] = js.native
+    var strokeWeight: js.UndefOr[Double] = js.undefined
     
-    var unit: js.UndefOr[meter | px] = js.native
+    var unit: js.UndefOr[meter | px] = js.undefined
     
     // internal
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -332,7 +331,7 @@ object Circle {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import typings.materialUiTypes.mod.Omit
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabListTabListMod {
@@ -28,27 +27,26 @@ object tabListTabListMod {
   
   type TabListClassKey = TabsClassKey
   
-  type TabListProps[D /* <: ElementType[_] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<TabListTypeMap<P, D>, D> */ js.Any
+  type TabListProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<TabListTypeMap<P, D>, D> */ js.Any
   
-  @js.native
-  trait TabListTypeMap[P, D /* <: ElementType[_] */] extends StObject {
+  trait TabListTypeMap[P, D /* <: ElementType[js.Any] */] extends StObject {
     
-    var classKey: TabListClassKey = js.native
+    var classKey: TabListClassKey
     
-    var defaultComponent: D = js.native
+    var defaultComponent: D
     
-    var props: P with (Omit[
+    var props: P & (Omit[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['props'] */ js.Any, 
         value
-      ]) = js.native
+      ])
   }
   object TabListTypeMap {
     
     @scala.inline
-    def apply[P, D /* <: ElementType[_] */](
+    def apply[P, D /* <: ElementType[js.Any] */](
       classKey: TabListClassKey,
       defaultComponent: D,
-      props: P with (Omit[
+      props: P & (Omit[
           /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['props'] */ js.Any, 
           value
         ])
@@ -58,7 +56,7 @@ object tabListTabListMod {
     }
     
     @scala.inline
-    implicit class TabListTypeMapMutableBuilder[Self <: TabListTypeMap[_, _], P, D /* <: ElementType[_] */] (val x: Self with (TabListTypeMap[P, D])) extends AnyVal {
+    implicit class TabListTypeMapMutableBuilder[Self <: TabListTypeMap[?, ?], P, D /* <: ElementType[js.Any] */] (val x: Self & (TabListTypeMap[P, D])) extends AnyVal {
       
       @scala.inline
       def setClassKey(value: TabListClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
@@ -68,7 +66,7 @@ object tabListTabListMod {
       
       @scala.inline
       def setProps(
-        value: P with (Omit[
+        value: P & (Omit[
               /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['props'] */ js.Any, 
               value
             ])

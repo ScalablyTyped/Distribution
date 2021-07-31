@@ -4,21 +4,19 @@ import typings.doublearray.doublearray.DoubleArray
 import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicDictionaries extends StObject {
   
-  var connection_costs: ConnectionCosts = js.native
+  var connection_costs: ConnectionCosts
   
-  def loadTrie(base_buffer: Int32Array, check_buffer: Int32Array): DynamicDictionaries = js.native
+  def loadTrie(base_buffer: Int32Array, check_buffer: Int32Array): DynamicDictionaries
   
-  var token_info_dictionary: TokenInfoDictionary = js.native
+  var token_info_dictionary: TokenInfoDictionary
   
-  var trie: DoubleArray = js.native
+  var trie: DoubleArray
   
-  var unknown_dictionary: UnknownDictionary = js.native
+  var unknown_dictionary: UnknownDictionary
 }
 object DynamicDictionaries {
   

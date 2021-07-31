@@ -2,26 +2,24 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeCoverageSummary extends StObject {
   
   /**
     * Uri of build for which data is retrieved/published
     */
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
   /**
     * List of coverage data and details for the build
     */
-  var coverageData: js.Array[CodeCoverageData] = js.native
+  var coverageData: js.Array[CodeCoverageData]
   
   /**
     * Uri of build against which difference in coverage is computed
     */
-  var deltaBuild: ShallowReference = js.native
+  var deltaBuild: ShallowReference
 }
 object CodeCoverageSummary {
   

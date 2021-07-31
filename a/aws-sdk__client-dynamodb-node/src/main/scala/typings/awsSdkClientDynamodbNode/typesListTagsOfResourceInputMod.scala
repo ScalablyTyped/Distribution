@@ -4,13 +4,13 @@ import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListTagsOfResourceInputMod {
   
-  @js.native
-  trait ListTagsOfResourceInput extends InputTypesUnion {
+  trait ListTagsOfResourceInput
+    extends StObject
+       with InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -18,7 +18,7 @@ object typesListTagsOfResourceInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -26,23 +26,23 @@ object typesListTagsOfResourceInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>An optional string that, if supplied, must be copied from the output of a previous call to ListTagOfResource. When provided in this manner, this API fetches the next page of results.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Amazon DynamoDB resource with tags to be listed. This value is an Amazon Resource Name (ARN).</p>
       */
-    var ResourceArn: String = js.native
+    var ResourceArn: String
   }
   object ListTagsOfResourceInput {
     

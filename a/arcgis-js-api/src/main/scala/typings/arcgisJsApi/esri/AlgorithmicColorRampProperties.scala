@@ -5,32 +5,32 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`lab-lch`
 import typings.arcgisJsApi.arcgisJsApiStrings.hsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AlgorithmicColorRampProperties extends ColorRampProperties {
+trait AlgorithmicColorRampProperties
+  extends StObject
+     with ColorRampProperties {
   
   /**
     * The algorithm used to generate the colors between the `fromColor` and `toColor`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#algorithm)
     */
-  var algorithm: js.UndefOr[`cie-lab` | `lab-lch` | hsv] = js.native
+  var algorithm: js.UndefOr[`cie-lab` | `lab-lch` | hsv] = js.undefined
   
   /**
     * The first color in the color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#fromColor)
     */
-  var fromColor: js.UndefOr[Color_] = js.native
+  var fromColor: js.UndefOr[Color_] = js.undefined
   
   /**
     * The last color in the color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#toColor)
     */
-  var toColor: js.UndefOr[Color_] = js.native
+  var toColor: js.UndefOr[Color_] = js.undefined
 }
 object AlgorithmicColorRampProperties {
   

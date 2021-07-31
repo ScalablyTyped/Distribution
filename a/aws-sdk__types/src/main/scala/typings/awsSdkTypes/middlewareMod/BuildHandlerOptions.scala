@@ -3,20 +3,20 @@ package typings.awsSdkTypes.middlewareMod
 import typings.awsSdkTypes.awsSdkTypesStrings.build
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildHandlerOptions extends HandlerOptions {
+trait BuildHandlerOptions
+  extends StObject
+     with HandlerOptions {
   
   @JSName("step")
-  var step_BuildHandlerOptions: build = js.native
+  var step_BuildHandlerOptions: build
 }
 object BuildHandlerOptions {
   
   @scala.inline
-  def apply(step: build): BuildHandlerOptions = {
-    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
+  def apply(): BuildHandlerOptions = {
+    val __obj = js.Dynamic.literal(step = "build")
     __obj.asInstanceOf[BuildHandlerOptions]
   }
   

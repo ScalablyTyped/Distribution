@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.ClassedSizeSliderConstructor
 import typings.arcgisJsApi.esri.ClassedSizeSliderProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classedSizeSliderMod extends Shortcut {
   
   @JSImport("esri/widgets/smartMapping/ClassedSizeSlider", JSImport.Namespace)
   @js.native
-  val ^ : ClassedSizeSliderConstructor = js.native
+  val ^ : js.Object & ClassedSizeSliderConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/smartMapping/ClassedSizeSlider", JSImport.Namespace)
@@ -23,12 +22,14 @@ object classedSizeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html)
     */
-  class Class () extends ClassedSizeSlider {
+  class Class ()
+    extends StObject
+       with ClassedSizeSlider {
     def this(properties: ClassedSizeSliderProperties) = this()
   }
   
-  type _To = ClassedSizeSliderConstructor
+  type _To = js.Object & ClassedSizeSliderConstructor
   
   /* This means you don't have to write `^`, but can instead just say `classedSizeSliderMod.foo` */
-  override def _to: ClassedSizeSliderConstructor = ^
+  override def _to: js.Object & ClassedSizeSliderConstructor = ^
 }

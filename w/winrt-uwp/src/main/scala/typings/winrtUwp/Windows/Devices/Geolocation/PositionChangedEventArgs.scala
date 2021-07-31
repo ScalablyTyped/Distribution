@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PositionChanged event. */
-@js.native
 trait PositionChangedEventArgs extends StObject {
   
   /** The location data associated with the PositionChanged event. */
-  var position: Geoposition = js.native
+  var position: Geoposition
 }
 object PositionChangedEventArgs {
   

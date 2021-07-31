@@ -6,7 +6,6 @@ import typings.ssh2.ssh2Strings.close
 import typings.ssh2.ssh2Strings.exit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceControllerDebuggeesBreakpointsList extends StandardParameters {
+trait ParamsResourceControllerDebuggeesBreakpointsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifies the debuggee.
     */
-  var debuggeeId: js.UndefOr[String] = js.native
+  var debuggeeId: js.UndefOr[String] = js.undefined
   
   /**
     * If set to `true` (recommended), returns `google.rpc.Code.OK` status and
@@ -29,7 +29,7 @@ trait ParamsResourceControllerDebuggeesBreakpointsList extends StandardParameter
     * `google.rpc.Code.ABORTED` status when the server-selected timeout has
     * expired.
     */
-  var successOnTimeout: js.UndefOr[Boolean] = js.native
+  var successOnTimeout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A token that, if specified, blocks the method call until the list of
@@ -37,7 +37,7 @@ trait ParamsResourceControllerDebuggeesBreakpointsList extends StandardParameter
     * The value should be set from the `next_wait_token` field in the last
     * response. The initial value should be set to `"init"`.
     */
-  var waitToken: js.UndefOr[String] = js.native
+  var waitToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceControllerDebuggeesBreakpointsList {
   

@@ -2,60 +2,58 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of the Line.  When unset, these fields default to values
   * that match the appearance of new lines created in the Slides editor.
   */
-@js.native
 trait SchemaLineProperties extends StObject {
   
   /**
     * The dash style of the line.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The style of the arrow at the end of the line.
     */
-  var endArrow: js.UndefOr[String] = js.native
+  var endArrow: js.UndefOr[String] = js.undefined
   
   /**
     * The connection at the end of the line. If unset, there is no connection.
     * Only lines with a Type indicating it is a &quot;connector&quot; can have
     * an `end_connection`.
     */
-  var endConnection: js.UndefOr[SchemaLineConnection] = js.native
+  var endConnection: js.UndefOr[SchemaLineConnection] = js.undefined
   
   /**
     * The fill of the line. The default line fill matches the defaults for new
     * lines created in the Slides editor.
     */
-  var lineFill: js.UndefOr[SchemaLineFill] = js.native
+  var lineFill: js.UndefOr[SchemaLineFill] = js.undefined
   
   /**
     * The hyperlink destination of the line. If unset, there is no link.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * The style of the arrow at the beginning of the line.
     */
-  var startArrow: js.UndefOr[String] = js.native
+  var startArrow: js.UndefOr[String] = js.undefined
   
   /**
     * The connection at the beginning of the line. If unset, there is no
     * connection.  Only lines with a Type indicating it is a
     * &quot;connector&quot; can have a `start_connection`.
     */
-  var startConnection: js.UndefOr[SchemaLineConnection] = js.native
+  var startConnection: js.UndefOr[SchemaLineConnection] = js.undefined
   
   /**
     * The thickness of the line.
     */
-  var weight: js.UndefOr[SchemaDimension] = js.native
+  var weight: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaLineProperties {
   

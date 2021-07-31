@@ -3,46 +3,46 @@ package typings.reactNative.mod
 import typings.reactNative.anon.False
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchProps extends SwitchPropsIOS {
+trait SwitchProps
+  extends StObject
+     with SwitchPropsIOS {
   
   /**
     * If true the user won't be able to toggle the switch.
     * Default value is false.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * On iOS, custom color for the background.
     * Can be seen when the switch value is false or when the switch is disabled.
     */
-  var ios_backgroundColor: js.UndefOr[ColorValue] = js.native
+  var ios_backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Invoked with the new value when the value changes.
     */
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
   
   /**
     * Color of the foreground switch grip.
     */
-  var thumbColor: js.UndefOr[ColorValue] = js.native
+  var thumbColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Custom colors for the switch track
     *
     * Color when false and color when true
     */
-  var trackColor: js.UndefOr[False] = js.native
+  var trackColor: js.UndefOr[False] = js.undefined
   
   /**
     * The value of the switch. If true the switch will be turned on.
     * Default value is false.
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
 object SwitchProps {
   

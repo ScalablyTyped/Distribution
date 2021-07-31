@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotHeader extends StObject {
   
   /** The size is the same as the cardinality of the corresponding dimension combinations. */
-  var pivotDimensionHeaders: js.UndefOr[js.Array[PivotDimensionHeader]] = js.native
+  var pivotDimensionHeaders: js.UndefOr[js.Array[PivotDimensionHeader]] = js.undefined
   
   /**
     * The cardinality of the pivot as if offset = 0 and limit = -1. The total number of rows for this pivot's fields regardless of how the parameters offset and limit are specified in the
     * request.
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
 }
 object PivotHeader {
   

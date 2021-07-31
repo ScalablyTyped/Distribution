@@ -2,7 +2,6 @@ package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,98 +11,162 @@ sealed trait PrintMediaType extends StObject
 object PrintMediaType extends StObject {
   
   @js.native
-  sealed trait default extends PrintMediaType
+  sealed trait default
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait archival extends PrintMediaType
+  sealed trait archival
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait autoSelect extends PrintMediaType
+  sealed trait autoSelect
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait backPrintFilm extends PrintMediaType
+  sealed trait backPrintFilm
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait bond extends PrintMediaType
+  sealed trait bond
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait cardStock extends PrintMediaType
+  sealed trait cardStock
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait continuous extends PrintMediaType
+  sealed trait continuous
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait envelopePlain extends PrintMediaType
+  sealed trait envelopePlain
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait envelopeWindow extends PrintMediaType
+  sealed trait envelopeWindow
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait fabric extends PrintMediaType
+  sealed trait fabric
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait highResolution extends PrintMediaType
+  sealed trait highResolution
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait label extends PrintMediaType
+  sealed trait label
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait multiLayerForm extends PrintMediaType
+  sealed trait multiLayerForm
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait multiPartForm extends PrintMediaType
+  sealed trait multiPartForm
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait none extends PrintMediaType
+  sealed trait none
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait notAvailable extends PrintMediaType
+  sealed trait notAvailable
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographic extends PrintMediaType
+  sealed trait photographic
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicFilm extends PrintMediaType
+  sealed trait photographicFilm
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicGlossy extends PrintMediaType
+  sealed trait photographicGlossy
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicHighGloss extends PrintMediaType
+  sealed trait photographicHighGloss
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicMatte extends PrintMediaType
+  sealed trait photographicMatte
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicSatin extends PrintMediaType
+  sealed trait photographicSatin
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait photographicSemiGloss extends PrintMediaType
+  sealed trait photographicSemiGloss
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait plain extends PrintMediaType
+  sealed trait plain
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait printerCustom extends PrintMediaType
+  sealed trait printerCustom
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait screen extends PrintMediaType
+  sealed trait screen
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait screenPaged extends PrintMediaType
+  sealed trait screenPaged
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait stationery extends PrintMediaType
+  sealed trait stationery
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait tShirtTransfer extends PrintMediaType
+  sealed trait tShirtTransfer
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait tabStockFull extends PrintMediaType
+  sealed trait tabStockFull
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait tabStockPreCut extends PrintMediaType
+  sealed trait tabStockPreCut
+    extends StObject
+       with PrintMediaType
   
   @js.native
-  sealed trait transparency extends PrintMediaType
+  sealed trait transparency
+    extends StObject
+       with PrintMediaType
 }

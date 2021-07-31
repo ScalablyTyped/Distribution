@@ -3,15 +3,15 @@ package typings.googleCloudStorage.fileMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestError extends Error {
+trait RequestError
+  extends StObject
+     with Error {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[Error]] = js.undefined
 }
 object RequestError {
   

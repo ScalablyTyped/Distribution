@@ -4,23 +4,21 @@ import typings.googleAppsScript.GoogleAppsScript.Integer
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CommentsOnly extends StObject {
     
-    var commentsOnly: js.UndefOr[Boolean] = js.native
+    var commentsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var contentsOnly: js.UndefOr[Boolean] = js.native
+    var contentsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var formatOnly: js.UndefOr[Boolean] = js.native
+    var formatOnly: js.UndefOr[Boolean] = js.undefined
     
-    var skipFilteredRows: js.UndefOr[Boolean] = js.native
+    var skipFilteredRows: js.UndefOr[Boolean] = js.undefined
     
-    var validationsOnly: js.UndefOr[Boolean] = js.native
+    var validationsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object CommentsOnly {
     
@@ -65,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentsOnly extends StObject {
     
-    var contentsOnly: js.UndefOr[Boolean] = js.native
+    var contentsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var formatOnly: js.UndefOr[Boolean] = js.native
+    var formatOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ContentsOnly {
     
@@ -97,12 +94,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FunctionName extends StObject {
     
-    var functionName: String = js.native
+    var functionName: String
     
-    var name: String = js.native
+    var name: String
   }
   object FunctionName {
     
@@ -123,12 +119,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[Integer] = js.native
+    var max: js.UndefOr[Integer] = js.undefined
     
-    var start: js.UndefOr[Integer] = js.native
+    var start: js.UndefOr[Integer] = js.undefined
   }
   object Max {
     
@@ -155,10 +150,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -176,10 +170,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Template extends StObject {
     
-    var template: js.UndefOr[Sheet] = js.native
+    var template: js.UndefOr[Sheet] = js.undefined
   }
   object Template {
     

@@ -4,26 +4,27 @@ import typings.forkTsCheckerWebpackPlugin.reporterReporterMod.Reporter
 import typings.forkTsCheckerWebpackPlugin.rpcMessagePortMod.RpcMessagePort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterRpcServiceMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/reporter-rpc/ReporterRpcService", "registerReporterRpcService")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/reporter-rpc/ReporterRpcService", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def registerReporterRpcService[TConfiguration /* <: js.Object */](
     servicePort: RpcMessagePort,
     reporterFactory: js.Function1[/* configuration */ TConfiguration, Reporter]
-  ): ReporterRpcService = js.native
+  ): ReporterRpcService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerReporterRpcService")(servicePort.asInstanceOf[js.Any], reporterFactory.asInstanceOf[js.Any])).asInstanceOf[ReporterRpcService]
   
-  @js.native
   trait ReporterRpcService extends StObject {
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def isOpen(): Boolean = js.native
+    def isOpen(): Boolean
     
-    def open(): js.Promise[Unit] = js.native
+    def open(): js.Promise[Unit]
   }
   object ReporterRpcService {
     

@@ -2,36 +2,34 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMetadata[T /* <: SlickData */] extends StObject {
   
   /**
     * Number of columns this cell will span. Can also contain "*" to indicate that the cell should span the rest of the row.
     */
-  var colspan: js.UndefOr[Double | String] = js.native
+  var colspan: js.UndefOr[Double | String] = js.undefined
   
   /**
     * A custom cell editor.
     */
-  var editor: js.UndefOr[js.Any] = js.native
+  var editor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Whether or not a cell can be set as "active".
     */
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A custom cell formatter.
     */
-  var formatter: js.UndefOr[Formatter[T]] = js.native
+  var formatter: js.UndefOr[Formatter[T]] = js.undefined
   
   /**
     * Whether or not a cell can be selected.
     */
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
 }
 object ColumnMetadata {
   
@@ -42,7 +40,7 @@ object ColumnMetadata {
   }
   
   @scala.inline
-  implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata[_], T /* <: SlickData */] (val x: Self with ColumnMetadata[T]) extends AnyVal {
+  implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata[?], T /* <: SlickData */] (val x: Self & ColumnMetadata[T]) extends AnyVal {
     
     @scala.inline
     def setColspan(value: Double | String): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])

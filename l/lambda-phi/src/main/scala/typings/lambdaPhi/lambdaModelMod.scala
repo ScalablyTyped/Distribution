@@ -3,118 +3,266 @@ package typings.lambdaPhi
 import typings.lambdaPhi.lambdaConfigMod.LambdaConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaModelMod {
   
   @JSImport("lambda-phi/lib/lambda-model", JSImport.Default)
   @js.native
-  class default () extends LambdaModel
-  
-  @js.native
-  trait LambdaModel extends StObject {
+  class default ()
+    extends StObject
+       with LambdaModel {
     
+    /* CompleteClass */
     var _anyMethod: js.Any = js.native
     
+    /* CompleteClass */
     var _basePath: js.Any = js.native
     
+    /* CompleteClass */
     var _bodyProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _callbackProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _config: js.Any = js.native
     
+    /* CompleteClass */
     var _contextProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _eventContextProperty: js.Any = js.native
     
     /**
       * Lambda Properties
       */
+    /* CompleteClass */
     var _eventProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _handlerMethod: js.Any = js.native
     
+    /* CompleteClass */
     var _headersProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _httpVerbs: js.Any = js.native
     
+    /* CompleteClass */
     var _instance: js.Any = js.native
     
+    /* CompleteClass */
     var _methodProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _name: js.Any = js.native
     
+    /* CompleteClass */
     var _pathParams: js.Any = js.native
     
+    /* CompleteClass */
     var _pathParamsProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _paths: js.Any = js.native
     
     /**
       * API Properties
       */
+    /* CompleteClass */
     var _postConstructorMethod: js.Any = js.native
     
+    /* CompleteClass */
     var _preLambdaCallbackMethod: js.Any = js.native
     
+    /* CompleteClass */
     var _preLambdaTimeoutMethod: js.Any = js.native
     
+    /* CompleteClass */
     var _preLambdaTimeoutTime: js.Any = js.native
     
     /**
       * Api Gateway Properties
       */
+    /* CompleteClass */
     var _queryParamsProperty: js.Any = js.native
     
+    /* CompleteClass */
     var _stageVariablesProperty: js.Any = js.native
     
+    /* CompleteClass */
     var anyMethod: js.Any = js.native
     
+    /* CompleteClass */
     var basePath: String = js.native
     
+    /* CompleteClass */
     var bodyProperty: js.Any = js.native
     
+    /* CompleteClass */
     var callbackProperty: js.Any = js.native
     
+    /* CompleteClass */
     var config: LambdaConfig = js.native
     
+    /* CompleteClass */
     var contextProperty: js.Any = js.native
     
+    /* CompleteClass */
     var eventContextProperty: js.Any = js.native
     
+    /* CompleteClass */
     var eventProperty: js.Any = js.native
     
+    /* CompleteClass */
     var handlerMethod: js.Any = js.native
     
+    /* CompleteClass */
     var headersProperty: js.Any = js.native
     
+    /* CompleteClass */
     var httpVerbs: js.Array[typings.lambdaPhi.httpVerbModelMod.default] = js.native
     
+    /* CompleteClass */
     var instance: js.Any = js.native
     
+    /* CompleteClass */
     var methodProperty: js.Any = js.native
     
+    /* CompleteClass */
     var name: js.Any = js.native
     
+    /* CompleteClass */
     var pathParams: js.Array[typings.lambdaPhi.pathParamModelMod.default] = js.native
     
+    /* CompleteClass */
     var pathParamsProperty: js.Any = js.native
     
+    /* CompleteClass */
     var paths: js.Array[typings.lambdaPhi.pathModelMod.default] = js.native
     
+    /* CompleteClass */
     var postConstructorMethod: js.Any = js.native
     
+    /* CompleteClass */
     var preLambdaCallbackMethod: String = js.native
     
+    /* CompleteClass */
     var preLambdaTimeoutMethod: String = js.native
     
+    /* CompleteClass */
     var preLambdaTimeoutTime: Double = js.native
     
+    /* CompleteClass */
     var queryParamsProperty: js.Any = js.native
     
+    /* CompleteClass */
     var stageVariablesProperty: js.Any = js.native
+  }
+  
+  trait LambdaModel extends StObject {
+    
+    var _anyMethod: js.Any
+    
+    var _basePath: js.Any
+    
+    var _bodyProperty: js.Any
+    
+    var _callbackProperty: js.Any
+    
+    var _config: js.Any
+    
+    var _contextProperty: js.Any
+    
+    var _eventContextProperty: js.Any
+    
+    /**
+      * Lambda Properties
+      */
+    var _eventProperty: js.Any
+    
+    var _handlerMethod: js.Any
+    
+    var _headersProperty: js.Any
+    
+    var _httpVerbs: js.Any
+    
+    var _instance: js.Any
+    
+    var _methodProperty: js.Any
+    
+    var _name: js.Any
+    
+    var _pathParams: js.Any
+    
+    var _pathParamsProperty: js.Any
+    
+    var _paths: js.Any
+    
+    /**
+      * API Properties
+      */
+    var _postConstructorMethod: js.Any
+    
+    var _preLambdaCallbackMethod: js.Any
+    
+    var _preLambdaTimeoutMethod: js.Any
+    
+    var _preLambdaTimeoutTime: js.Any
+    
+    /**
+      * Api Gateway Properties
+      */
+    var _queryParamsProperty: js.Any
+    
+    var _stageVariablesProperty: js.Any
+    
+    var anyMethod: js.Any
+    
+    var basePath: String
+    
+    var bodyProperty: js.Any
+    
+    var callbackProperty: js.Any
+    
+    var config: LambdaConfig
+    
+    var contextProperty: js.Any
+    
+    var eventContextProperty: js.Any
+    
+    var eventProperty: js.Any
+    
+    var handlerMethod: js.Any
+    
+    var headersProperty: js.Any
+    
+    var httpVerbs: js.Array[typings.lambdaPhi.httpVerbModelMod.default]
+    
+    var instance: js.Any
+    
+    var methodProperty: js.Any
+    
+    var name: js.Any
+    
+    var pathParams: js.Array[typings.lambdaPhi.pathParamModelMod.default]
+    
+    var pathParamsProperty: js.Any
+    
+    var paths: js.Array[typings.lambdaPhi.pathModelMod.default]
+    
+    var postConstructorMethod: js.Any
+    
+    var preLambdaCallbackMethod: String
+    
+    var preLambdaTimeoutMethod: String
+    
+    var preLambdaTimeoutTime: Double
+    
+    var queryParamsProperty: js.Any
+    
+    var stageVariablesProperty: js.Any
   }
   object LambdaModel {
     

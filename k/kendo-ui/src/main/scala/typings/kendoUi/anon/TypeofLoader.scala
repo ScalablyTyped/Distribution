@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Loader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofLoader extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Loader = js.native
+  def extend(proto: js.Object): Loader
   
   /* static member */
-  var fn: Loader = js.native
+  var fn: Loader
 }
 object TypeofLoader {
   

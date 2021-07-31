@@ -10,9 +10,9 @@ A lightweight jQuery plugin for collapsing and expanding long blocks of text wit
 | ------------------ | :-------------: |
 | Full name          | readmore-js |
 | Keywords           | css, jquery, readmore, expand, collapse |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 516081 |
+| # downloads        | 791965 |
 | # stars            | 3 |
 
 ## Links

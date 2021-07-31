@@ -3,7 +3,6 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.wallpaper.WallpaperDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -17,7 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object wallpaper {
   
-  @JSGlobal("chrome.wallpaper.setWallpaper")
+  @JSGlobal("chrome.wallpaper")
   @js.native
-  def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWallpaper")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

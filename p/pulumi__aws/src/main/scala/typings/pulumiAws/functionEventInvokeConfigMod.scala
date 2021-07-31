@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionEventInvokeConfigMod {
@@ -54,6 +53,10 @@ object functionEventInvokeConfigMod {
   /* static members */
   object FunctionEventInvokeConfig {
     
+    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FunctionEventInvokeConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,29 +66,23 @@ object functionEventInvokeConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): FunctionEventInvokeConfig = js.native
-    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FunctionEventInvokeConfig = js.native
-    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState): FunctionEventInvokeConfig = js.native
-    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState, opts: CustomResourceOptions): FunctionEventInvokeConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
     
     /**
       * Returns true if the given object is an instance of FunctionEventInvokeConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/functionEventInvokeConfig", "FunctionEventInvokeConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean]
   }
   
-  @js.native
   trait FunctionEventInvokeConfigArgs extends StObject {
     
     /**
@@ -93,27 +90,27 @@ object functionEventInvokeConfigMod {
       */
     val destinationConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name or Amazon Resource Name (ARN) of the Lambda Function, omitting any version or alias qualifier.
       */
-    val functionName: Input[String] = js.native
+    val functionName: Input[String]
     
     /**
       * Maximum age of a request that Lambda sends to a function for processing in seconds. Valid values between 60 and 21600.
       */
-    val maximumEventAgeInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumEventAgeInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Maximum number of times to retry when the function returns an error. Valid values between 0 and 2. Defaults to 2.
       */
-    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.native
+    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Lambda Function published version, `$LATEST`, or Lambda Alias name.
       */
-    val qualifier: js.UndefOr[Input[String]] = js.native
+    val qualifier: js.UndefOr[Input[String]] = js.undefined
   }
   object FunctionEventInvokeConfigArgs {
     
@@ -155,7 +152,6 @@ object functionEventInvokeConfigMod {
     }
   }
   
-  @js.native
   trait FunctionEventInvokeConfigState extends StObject {
     
     /**
@@ -163,27 +159,27 @@ object functionEventInvokeConfigMod {
       */
     val destinationConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name or Amazon Resource Name (ARN) of the Lambda Function, omitting any version or alias qualifier.
       */
-    val functionName: js.UndefOr[Input[String]] = js.native
+    val functionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Maximum age of a request that Lambda sends to a function for processing in seconds. Valid values between 60 and 21600.
       */
-    val maximumEventAgeInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumEventAgeInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Maximum number of times to retry when the function returns an error. Valid values between 0 and 2. Defaults to 2.
       */
-    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.native
+    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Lambda Function published version, `$LATEST`, or Lambda Alias name.
       */
-    val qualifier: js.UndefOr[Input[String]] = js.native
+    val qualifier: js.UndefOr[Input[String]] = js.undefined
   }
   object FunctionEventInvokeConfigState {
     

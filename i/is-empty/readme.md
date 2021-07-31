@@ -10,9 +10,9 @@ Check whether a value is "empty".
 | ------------------ | :-------------: |
 | Full name          | is-empty |
 | Keywords           | array, check, empty, file, is, map, object, set, value |
-| # releases         | 1 |
-| # dependents       | 97 |
-| # downloads        | 10870977 |
+| # releases         | 0 |
+| # dependents       | 102 |
+| # downloads        | 13330673 |
 | # stars            | 6 |
 
 ## Links

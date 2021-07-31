@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetExtraHTTPHeadersRequest extends StObject {
   
   /**
     * Map with extra HTTP headers.
     */
-  var headers: Headers = js.native
+  var headers: Headers
 }
 object SetExtraHTTPHeadersRequest {
   

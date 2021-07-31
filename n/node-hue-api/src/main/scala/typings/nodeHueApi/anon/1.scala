@@ -2,27 +2,25 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var `1`: String = js.native
+  var `1`: String
   
-  var `2`: String = js.native
+  var `2`: String
   
-  var `3`: String = js.native
+  var `3`: String
   
-  var `4`: String = js.native
+  var `4`: String
   
-  var `5`: String = js.native
+  var `5`: String
   
-  var `6`: String = js.native
+  var `6`: String
   
-  var `7`: String = js.native
+  var `7`: String
   
-  var `8`: String = js.native
+  var `8`: String
 }
 object `1` {
   

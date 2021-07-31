@@ -2,23 +2,21 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatInformation extends StObject {
   
-  val DataMask: Double = js.native
+  val DataMask: Double
   
-  def Equals(other: FormatInformation): Boolean = js.native
+  def Equals(other: FormatInformation): Boolean
   
-  val ErrorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel = js.native
+  val ErrorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
   
-  def GetHashCode(): Double = js.native
+  def GetHashCode(): Double
   
-  var dataMask: Double = js.native
+  var dataMask: Double
   
-  var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel = js.native
+  var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel
 }
 object FormatInformation {
   

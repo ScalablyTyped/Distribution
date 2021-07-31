@@ -8,7 +8,6 @@ import typings.semanticUiReact.semanticUiReactStrings.descending
 import typings.semanticUiReact.tableCellMod.StrictTableCellProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableHeaderCellMod extends Shortcut {
@@ -17,11 +16,12 @@ object tableHeaderCellMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TableHeaderCellProps] = js.native
   
-  @js.native
-  trait StrictTableHeaderCellProps extends StrictTableCellProps {
+  trait StrictTableHeaderCellProps
+    extends StObject
+       with StrictTableCellProps {
     
     /** A header cell can be sorted in ascending or descending order. */
-    var sorted: js.UndefOr[ascending | descending] = js.native
+    var sorted: js.UndefOr[ascending | descending] = js.undefined
   }
   object StrictTableHeaderCellProps {
     
@@ -42,9 +42,9 @@ object tableHeaderCellMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TableHeaderCellProps
-    extends StrictTableHeaderCellProps
+    extends StObject
+       with StrictTableHeaderCellProps
        with /* key */ StringDictionary[js.Any]
   object TableHeaderCellProps {
     

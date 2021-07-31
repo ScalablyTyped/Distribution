@@ -5,30 +5,28 @@ import typings.winrtUwp.Windows.UI.Text.FontStyle
 import typings.winrtUwp.Windows.UI.Text.FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that allow apps to select language-appropriate and script-appropriate fonts for text display. */
 object Fonts {
   
   /** Provides data related to a particular font recommendation for a given language. */
-  @js.native
   trait LanguageFont extends StObject {
     
     /** Gets the family name of the font. */
-    var fontFamily: String = js.native
+    var fontFamily: String
     
     /** Gets the FontStretch property of the font. */
-    var fontStretch: FontStretch = js.native
+    var fontStretch: FontStretch
     
     /** Gets the FontStyle property of the font. */
-    var fontStyle: FontStyle = js.native
+    var fontStyle: FontStyle
     
     /** Gets the weight of the font ( FontWeight ). */
-    var fontWeight: FontWeight = js.native
+    var fontWeight: FontWeight
     
     /** Gets a recommended font size scaling factor for the font. */
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
   }
   object LanguageFont {
     
@@ -65,41 +63,40 @@ object Fonts {
   }
   
   /** Supplies a set of font recommendations for a given language or script for various usage cases. */
-  @js.native
   trait LanguageFontGroup extends StObject {
     
     /** Gets a font that is recommended as an additional option for use in documents beyond the recommendations provided by DocumentHeadingFont , ModernDocumentFont and TraditionalDocumentFont . */
-    var documentAlternate1Font: LanguageFont = js.native
+    var documentAlternate1Font: LanguageFont
     
     /** Gets a font that is recommended as an additional option for use in documents beyond the recommendations provided by DocumentHeadingFont , ModernDocumentFont and TraditionalDocumentFont . */
-    var documentAlternate2Font: LanguageFont = js.native
+    var documentAlternate2Font: LanguageFont
     
     /** Gets a font that is recommended for use in document headings. */
-    var documentHeadingFont: LanguageFont = js.native
+    var documentHeadingFont: LanguageFont
     
     /** Gets a font that is recommended for displaying fixed-width characters. */
-    var fixedWidthTextFont: LanguageFont = js.native
+    var fixedWidthTextFont: LanguageFont
     
     /** Gets a font that is recommended for typical document body text following modern style conventions. */
-    var modernDocumentFont: LanguageFont = js.native
+    var modernDocumentFont: LanguageFont
     
     /** Gets a font that is recommended for typical document body text following traditional style conventions. */
-    var traditionalDocumentFont: LanguageFont = js.native
+    var traditionalDocumentFont: LanguageFont
     
     /** Gets a font that is recommended for special UI elements, such as captions, that are displayed at sizes smaller than typical UI body text. */
-    var uiCaptionFont: LanguageFont = js.native
+    var uiCaptionFont: LanguageFont
     
     /** Gets a font that is recommended for special UI elements, such as headings, that are displayed at sizes somewhat larger than typical UI body text. */
-    var uiHeadingFont: LanguageFont = js.native
+    var uiHeadingFont: LanguageFont
     
     /** Gets a font that is recommended for special UI elements, such as headings in notifications or other app messages, that are displayed at UI body text size or only slightly larger yet need to be differentiated from UI body text. */
-    var uiNotificationHeadingFont: LanguageFont = js.native
+    var uiNotificationHeadingFont: LanguageFont
     
     /** Gets a font that is recommended for typical UI body text. */
-    var uiTextFont: LanguageFont = js.native
+    var uiTextFont: LanguageFont
     
     /** Gets a font that is recommended for special UI elements set at sizes much larger than typical UI body text. */
-    var uiTitleFont: LanguageFont = js.native
+    var uiTitleFont: LanguageFont
   }
   object LanguageFontGroup {
     

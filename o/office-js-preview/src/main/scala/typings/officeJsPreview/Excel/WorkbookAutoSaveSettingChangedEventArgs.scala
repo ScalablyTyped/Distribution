@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.officeJsPreviewStrings.WorkbookAutoSaveSettingChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait WorkbookAutoSaveSettingChangedEventArgs extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait WorkbookAutoSaveSettingChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: WorkbookAutoSaveSettingChanged = js.native
+  var `type`: WorkbookAutoSaveSettingChanged
 }
 object WorkbookAutoSaveSettingChangedEventArgs {
   
   @scala.inline
-  def apply(`type`: WorkbookAutoSaveSettingChanged): WorkbookAutoSaveSettingChangedEventArgs = {
+  def apply(): WorkbookAutoSaveSettingChangedEventArgs = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorkbookAutoSaveSettingChanged")
     __obj.asInstanceOf[WorkbookAutoSaveSettingChangedEventArgs]
   }
   

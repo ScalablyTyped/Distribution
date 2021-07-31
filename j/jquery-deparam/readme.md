@@ -12,7 +12,7 @@ Inverse of jQuery's $.param method to convert a querystring into a javascript ob
 | Keywords           | jquery, deparam, param, querystring |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 393175 |
+| # downloads        | 417889 |
 | # stars            | 0 |
 
 ## Links

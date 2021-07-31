@@ -25,7 +25,6 @@ import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,9 +84,8 @@ object BinaryType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.create")
-  @js.native
-  def create(model: IModel): BinaryType = js.native
+  @scala.inline
+  def create(model: IModel): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -98,9 +96,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInAppServiceActionParameterUnderParameterType")
-  @js.native
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): BinaryType = js.native
+  @scala.inline
+  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -111,9 +108,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInAppServiceActionUnderActionReturnType")
-  @js.native
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): BinaryType = js.native
+  @scala.inline
+  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -124,9 +120,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInConstantUnderType")
-  @js.native
-  def createInConstantUnderType(container: Constant): BinaryType = js.native
+  @scala.inline
+  def createInConstantUnderType(container: Constant): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -137,9 +132,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInCreateVariableActionUnderVariableType")
-  @js.native
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): BinaryType = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -150,9 +144,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInDataSetColumnUnderColumnType")
-  @js.native
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): BinaryType = js.native
+  @scala.inline
+  def createInDataSetColumnUnderColumnType(container: DataSetColumn): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -163,9 +156,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInDataSetParameterUnderParameterType")
-  @js.native
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): BinaryType = js.native
+  @scala.inline
+  def createInDataSetParameterUnderParameterType(container: DataSetParameter): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -176,9 +168,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInDocumentTemplateParameterUnderParameterType")
-  @js.native
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): BinaryType = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -189,9 +180,8 @@ object BinaryType {
     *  7.16.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInImportMappingUnderParameterType")
-  @js.native
-  def createInImportMappingUnderParameterType(container: ImportMapping): BinaryType = js.native
+  @scala.inline
+  def createInImportMappingUnderParameterType(container: ImportMapping): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -202,9 +192,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInMicroflowBaseUnderMicroflowReturnType")
-  @js.native
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): BinaryType = js.native
+  @scala.inline
+  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -215,9 +204,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInMicroflowParameterBaseUnderParameterType")
-  @js.native
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): BinaryType = js.native
+  @scala.inline
+  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -228,9 +216,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInMicroflowParameterObjectUnderVariableType")
-  @js.native
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): BinaryType = js.native
+  @scala.inline
+  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -241,9 +228,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInPublishedOperationUnderOperationReturnType")
-  @js.native
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): BinaryType = js.native
+  @scala.inline
+  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -254,9 +240,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInPublishedParameterUnderParameterType")
-  @js.native
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): BinaryType = js.native
+  @scala.inline
+  def createInPublishedParameterUnderParameterType(container: PublishedParameter): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -267,9 +252,8 @@ object BinaryType {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInRestOperationParameterUnderType")
-  @js.native
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): BinaryType = js.native
+  @scala.inline
+  def createInRestOperationParameterUnderType(container: RestOperationParameter): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -280,9 +264,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInResultHandlingUnderVariableType")
-  @js.native
-  def createInResultHandlingUnderVariableType(container: ResultHandling): BinaryType = js.native
+  @scala.inline
+  def createInResultHandlingUnderVariableType(container: ResultHandling): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /**
     * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -293,9 +276,8 @@ object BinaryType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.createInValueMappingElementUnderType")
-  @js.native
-  def createInValueMappingElementUnderType(container: ValueMappingElement): BinaryType = js.native
+  @scala.inline
+  def createInValueMappingElementUnderType(container: ValueMappingElement): BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.BinaryType.structureTypeName")

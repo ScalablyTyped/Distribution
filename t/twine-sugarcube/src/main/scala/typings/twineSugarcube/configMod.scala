@@ -15,12 +15,10 @@ import typings.twineSugarcube.twineSugarcubeStrings.serialize
 import typings.twineSugarcube.twineSugarcubeStrings.slot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @js.native
   trait ConfigAPI extends StObject {
     
     /**
@@ -37,9 +35,9 @@ object configMod {
       *      color: purple;
       * }
       */
-    var addVisitedLinkClass: Boolean = js.native
+    var addVisitedLinkClass: Boolean
     
-    val audio: PauseOnFadeToZero = js.native
+    val audio: PauseOnFadeToZero
     
     /**
       * Determines whether the output of the Wikifier is post-processed into more sane markup — i.e. where appropriate, it
@@ -49,7 +47,7 @@ object configMod {
       * @example
       * Config.cleanupWikifierOutput = true;
       */
-    var cleanupWikifierOutput: Boolean = js.native
+    var cleanupWikifierOutput: Boolean
     
     /**
       * Indicates whether SugarCube is running in test mode, which enables debug views. See Test Mode for more information.
@@ -77,9 +75,9 @@ object configMod {
       *     // do something debug related
       * <</if>>
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    val history: Controls = js.native
+    val history: Controls
     
     /**
       * Sets the integer delay (in milliseconds) before the loading screen is dismissed, once the document has signaled its
@@ -93,17 +91,17 @@ object configMod {
       * // Delay the dismissal of the loading screen by 2000ms (2s)
       * Config.loadDelay = 2000;
       */
-    var loadDelay: Double = js.native
+    var loadDelay: Double
     
-    val macros: IfAssignmentError = js.native
+    val macros: IfAssignmentError
     
-    val navigation: Override = js.native
+    val navigation: Override
     
-    val passages: Descriptions = js.native
+    val passages: Descriptions
     
-    val saves: Autoload = js.native
+    val saves: Autoload
     
-    val ui: StowBarInitially = js.native
+    val ui: StowBarInitially
   }
   object ConfigAPI {
     
@@ -165,13 +163,12 @@ object configMod {
   
   type DescriptionHandler = js.ThisFunction0[/* this */ Passage, String | Null]
   
-  @js.native
   trait SaveDetails extends StObject {
     
     /**
       * A string representing how the save operation came about—i.e., what caused it.
       */
-    var `type`: autosave | disk | serialize | slot = js.native
+    var `type`: autosave | disk | serialize | slot
   }
   object SaveDetails {
     

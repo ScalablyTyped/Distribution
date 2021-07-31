@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulingNodeAffinity extends StObject {
   
   /** Corresponds to the label key of Node resource. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Defines the operation of node selection. Valid operators are IN for affinity and NOT_IN for anti-affinity. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /** Corresponds to the label values of Node resource. */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchedulingNodeAffinity {
   

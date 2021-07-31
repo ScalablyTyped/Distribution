@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmImage extends StObject {
   
   /** Use this VM image family to find the image; the newest image in this family will be used. */
-  var imageFamily: js.UndefOr[String] = js.native
+  var imageFamily: js.UndefOr[String] = js.undefined
   
   /** Use VM image name to find the image. */
-  var imageName: js.UndefOr[String] = js.native
+  var imageName: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the Google Cloud project that this VM image belongs to. Format: `projects/{project_id}` */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
 }
 object VmImage {
   

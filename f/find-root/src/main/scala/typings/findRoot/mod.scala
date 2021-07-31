@@ -2,7 +2,6 @@ package typings.findRoot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,12 +13,14 @@ object mod {
     * @param check The check predicate
     * @throws {Error} if package.json cannot be found or if the function never returns true
     */
+  @scala.inline
+  def apply(startingPath: String): String = ^.asInstanceOf[js.Dynamic].apply(startingPath.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(startingPath: String, check: FindRootCheckFn): String = (^.asInstanceOf[js.Dynamic].apply(startingPath.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("find-root", JSImport.Namespace)
   @js.native
-  def apply(startingPath: String): String = js.native
-  @JSImport("find-root", JSImport.Namespace)
-  @js.native
-  def apply(startingPath: String, check: FindRootCheckFn): String = js.native
+  val ^ : js.Any = js.native
   
   type FindRootCheckFn = js.Function1[/* dir */ String, Boolean]
 }

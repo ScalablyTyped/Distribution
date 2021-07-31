@@ -17,40 +17,59 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withThemeMod {
   
-  @JSImport("@material-ui/styles/withTheme", JSImport.Default)
+  @JSImport("@material-ui/styles/withTheme", JSImport.Namespace)
   @js.native
-  def default[Theme](component: ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]): ComponentType[
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Theme](
+    component: ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+  ): ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState], 
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
         ComponentProps[
-          ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
-  @JSImport("@material-ui/styles/withTheme", JSImport.Default)
-  @js.native
-  def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
-        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
+        ComponentProps[
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+        ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
+  @scala.inline
+  def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
   
-  @JSImport("@material-ui/styles/withTheme", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
-  @JSImport("@material-ui/styles/withTheme", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
+  @scala.inline
+  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")().asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
+  @scala.inline
+  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")(option.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
 }

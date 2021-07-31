@@ -13,10 +13,13 @@ import typings.blueprintjsCore.keyComboMod.IKeyComboProps
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotkeysMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "Hotkey")
   @js.native
@@ -72,9 +75,8 @@ object hotkeysMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "HotkeysTarget")
-  @js.native
-  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName with T = js.native
+  @scala.inline
+  def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "KeyCombo")
   @js.native
@@ -97,27 +99,21 @@ object hotkeysMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "comboMatches")
-  @js.native
-  def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = js.native
+  @scala.inline
+  def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("comboMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "getKeyCombo")
-  @js.native
-  def getKeyCombo(e: KeyboardEvent): IKeyCombo = js.native
+  @scala.inline
+  def getKeyCombo(e: KeyboardEvent): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyCombo")(e.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "getKeyComboString")
-  @js.native
-  def getKeyComboString(e: KeyboardEvent): String = js.native
+  @scala.inline
+  def getKeyComboString(e: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "hideHotkeysDialog")
-  @js.native
-  def hideHotkeysDialog(): Unit = js.native
+  @scala.inline
+  def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "parseKeyCombo")
-  @js.native
-  def parseKeyCombo(combo: String): IKeyCombo = js.native
+  @scala.inline
+  def parseKeyCombo(combo: String): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "setHotkeysDialogProps")
-  @js.native
-  def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = js.native
+  @scala.inline
+  def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -3,13 +3,14 @@ package typings.vegaUtil
 import typings.vegaUtil.mod.Order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vegaUtilStrings {
   
   @js.native
-  sealed trait ascending extends Order
+  sealed trait ascending
+    extends StObject
+       with Order
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   
@@ -19,7 +20,9 @@ object vegaUtilStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait descending extends Order
+  sealed trait descending
+    extends StObject
+       with Order
   @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellTask extends StObject {
   
   /** The shell command to run. */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
   /** Exit code for the task. */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
 }
 object ShellTask {
   

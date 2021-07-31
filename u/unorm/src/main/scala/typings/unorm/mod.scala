@@ -3,7 +3,6 @@ package typings.unorm
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,16 +11,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait Static extends StObject {
     
-    def nfc(str: String): String = js.native
+    def nfc(str: String): String
     
-    def nfd(str: String): String = js.native
+    def nfd(str: String): String
     
-    def nfkc(str: String): String = js.native
+    def nfkc(str: String): String
     
-    def nfkd(str: String): String = js.native
+    def nfkd(str: String): String
   }
   object Static {
     

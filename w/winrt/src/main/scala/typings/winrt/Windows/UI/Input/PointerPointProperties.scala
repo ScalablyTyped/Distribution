@@ -3,11 +3,11 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointerPointProperties extends IPointerPointProperties
+trait PointerPointProperties
+  extends StObject
+     with IPointerPointProperties
 object PointerPointProperties {
   
   @scala.inline

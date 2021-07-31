@@ -4,7 +4,6 @@ import typings.antdMobileRn.anon.TypeofRMCDefaultTabBar
 import typings.antdMobileRn.tabsIndexNativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Tabs")

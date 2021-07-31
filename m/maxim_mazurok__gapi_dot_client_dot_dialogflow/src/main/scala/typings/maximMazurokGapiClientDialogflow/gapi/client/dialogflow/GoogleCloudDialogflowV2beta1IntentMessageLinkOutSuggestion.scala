@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion extends StObject {
   
   /** Required. The name of the app or site this chip is linking to. */
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
   /** Required. The URI of the app or site to open when the user taps the suggestion chip. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion {
   

@@ -2,17 +2,15 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcData extends StObject {
   
-  val endingAngle: Double = js.native
+  val endingAngle: Double
   
-  val innerRadius: Double = js.native
+  val innerRadius: Double
   
-  val startingAngle: Double = js.native
+  val startingAngle: Double
 }
 object ArcData {
   

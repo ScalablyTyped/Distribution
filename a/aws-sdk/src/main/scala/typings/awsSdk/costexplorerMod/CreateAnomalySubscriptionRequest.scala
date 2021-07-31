@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnomalySubscriptionRequest extends StObject {
   
   /**
     *  The cost anomaly subscription object that you want to create. 
     */
-  var AnomalySubscription: typings.awsSdk.costexplorerMod.AnomalySubscription = js.native
+  var AnomalySubscription: typings.awsSdk.costexplorerMod.AnomalySubscription
 }
 object CreateAnomalySubscriptionRequest {
   

@@ -43,122 +43,120 @@ import typings.stylus.mod.Stylus.Nodes.UnaryOp
 import typings.stylus.mod.Stylus.Nodes.Unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeStatic extends StObject {
   
-  var Arguments: Instantiable0[typings.stylus.mod.Stylus.Nodes.Arguments] = js.native
+  var Arguments: Instantiable0[typings.stylus.mod.Stylus.Nodes.Arguments]
   
-  var Atblock: Instantiable0[typings.stylus.mod.Stylus.Nodes.Atblock] = js.native
+  var Atblock: Instantiable0[typings.stylus.mod.Stylus.Nodes.Atblock]
   
-  var Atrule: Instantiable1[/* type */ String, typings.stylus.mod.Stylus.Nodes.Atrule] = js.native
+  var Atrule: Instantiable1[/* type */ String, typings.stylus.mod.Stylus.Nodes.Atrule]
   
   var BinOp: Instantiable3[
     /* op */ String, 
     /* left */ Expression, 
     /* right */ Expression, 
     typings.stylus.mod.Stylus.Nodes.BinOp
-  ] = js.native
+  ]
   
   var Block: Instantiable1[
     /* parent */ typings.stylus.mod.Stylus.Nodes.Block, 
     typings.stylus.mod.Stylus.Nodes.Block
-  ] = js.native
+  ]
   
-  var Boolean: Instantiable0[typings.stylus.mod.Stylus.Nodes.Boolean] = js.native
+  var Boolean: Instantiable0[typings.stylus.mod.Stylus.Nodes.Boolean]
   
-  var Call: Instantiable2[/* name */ String, /* args */ Expression, typings.stylus.mod.Stylus.Nodes.Call] = js.native
+  var Call: Instantiable2[/* name */ String, /* args */ Expression, typings.stylus.mod.Stylus.Nodes.Call]
   
-  var Charset: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.Charset] = js.native
+  var Charset: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.Charset]
   
   var Comment: Instantiable3[
     /* str */ String, 
     /* suppress */ Boolean, 
     /* inline */ Boolean, 
     typings.stylus.mod.Stylus.Nodes.Comment
-  ] = js.native
+  ]
   
-  var Each: Instantiable0[typings.stylus.mod.Stylus.Nodes.Each] = js.native
+  var Each: Instantiable0[typings.stylus.mod.Stylus.Nodes.Each]
   
-  var Expression: Instantiable1[/* isList */ Boolean, typings.stylus.mod.Stylus.Nodes.Expression] = js.native
+  var Expression: Instantiable1[/* isList */ Boolean, typings.stylus.mod.Stylus.Nodes.Expression]
   
-  var Extend: Instantiable1[/* selectors */ js.Array[Selector], typings.stylus.mod.Stylus.Nodes.Extend] = js.native
+  var Extend: Instantiable1[/* selectors */ js.Array[Selector], typings.stylus.mod.Stylus.Nodes.Extend]
   
   var Function: Instantiable3[
     /* name */ String, 
     /* params */ Params, 
     /* body */ Block, 
     typings.stylus.mod.Stylus.Nodes.Function
-  ] = js.native
+  ]
   
-  var Group: Instantiable0[typings.stylus.mod.Stylus.Nodes.Group] = js.native
+  var Group: Instantiable0[typings.stylus.mod.Stylus.Nodes.Group]
   
-  var HSLA: TypeofHSLA = js.native
+  var HSLA: TypeofHSLA
   
-  var Ident: Instantiable2[/* name */ String, /* val */ Node, typings.stylus.mod.Stylus.Nodes.Ident] = js.native
+  var Ident: Instantiable2[/* name */ String, /* val */ Node, typings.stylus.mod.Stylus.Nodes.Ident]
   
-  var If: Instantiable2[/* cond */ Expression, /* negate */ Boolean, typings.stylus.mod.Stylus.Nodes.If] = js.native
+  var If: Instantiable2[/* cond */ Expression, /* negate */ Boolean, typings.stylus.mod.Stylus.Nodes.If]
   
-  var Import: Instantiable1[/* path */ Expression, typings.stylus.mod.Stylus.Nodes.Import] = js.native
+  var Import: Instantiable1[/* path */ Expression, typings.stylus.mod.Stylus.Nodes.Import]
   
-  var Keyframes: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.Keyframes] = js.native
+  var Keyframes: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.Keyframes]
   
-  var Literal: Instantiable1[/* str */ String, typings.stylus.mod.Stylus.Nodes.Literal] = js.native
+  var Literal: Instantiable1[/* str */ String, typings.stylus.mod.Stylus.Nodes.Literal]
   
-  var Media: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.Media] = js.native
+  var Media: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.Media]
   
-  var Member: Instantiable2[/* left */ Node, /* right */ Node, typings.stylus.mod.Stylus.Nodes.Member] = js.native
+  var Member: Instantiable2[/* left */ Node, /* right */ Node, typings.stylus.mod.Stylus.Nodes.Member]
   
-  var Namespace: Instantiable2[/* val */ String, /* prefix */ String, typings.stylus.mod.Stylus.Nodes.Namespace] = js.native
+  var Namespace: Instantiable2[/* val */ String, /* prefix */ String, typings.stylus.mod.Stylus.Nodes.Namespace]
   
-  var Node: Instantiable0[typings.stylus.mod.Stylus.Nodes.Node] = js.native
+  var Node: Instantiable0[typings.stylus.mod.Stylus.Nodes.Node]
   
-  var Null: Instantiable0[typings.stylus.mod.Stylus.Nodes.Null] = js.native
+  var Null: Instantiable0[typings.stylus.mod.Stylus.Nodes.Null]
   
-  var Object: Instantiable0[typings.stylus.mod.Stylus.Nodes.Object] = js.native
+  var Object: Instantiable0[typings.stylus.mod.Stylus.Nodes.Object]
   
-  var Params: Instantiable0[typings.stylus.mod.Stylus.Nodes.Params] = js.native
+  var Params: Instantiable0[typings.stylus.mod.Stylus.Nodes.Params]
   
   var Property: Instantiable2[
     /* segs */ js.Array[Node], 
     /* expr */ Expression, 
     typings.stylus.mod.Stylus.Nodes.Property
-  ] = js.native
+  ]
   
-  var Query: Instantiable0[typings.stylus.mod.Stylus.Nodes.Query] = js.native
+  var Query: Instantiable0[typings.stylus.mod.Stylus.Nodes.Query]
   
-  var QueryExpr: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.QueryExpr] = js.native
+  var QueryExpr: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.QueryExpr]
   
-  var QueryList: Instantiable0[typings.stylus.mod.Stylus.Nodes.QueryList] = js.native
+  var QueryList: Instantiable0[typings.stylus.mod.Stylus.Nodes.QueryList]
   
-  var RGBA: TypeofRGBA = js.native
+  var RGBA: TypeofRGBA
   
-  var Return: Instantiable1[/* expr */ Expression, typings.stylus.mod.Stylus.Nodes.Return] = js.native
+  var Return: Instantiable1[/* expr */ Expression, typings.stylus.mod.Stylus.Nodes.Return]
   
-  var Root: Instantiable0[typings.stylus.mod.Stylus.Nodes.Root] = js.native
+  var Root: Instantiable0[typings.stylus.mod.Stylus.Nodes.Root]
   
-  var Selector: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.Selector] = js.native
+  var Selector: Instantiable1[/* segs */ js.Array[Node], typings.stylus.mod.Stylus.Nodes.Selector]
   
-  var String: Instantiable1[/* val */ java.lang.String, typings.stylus.mod.Stylus.Nodes.String] = js.native
+  var String: Instantiable1[/* val */ java.lang.String, typings.stylus.mod.Stylus.Nodes.String]
   
   var Ternary: Instantiable3[
     /* op */ String, 
     /* trueExpr */ Expression, 
     /* falseExpr */ Expression, 
     typings.stylus.mod.Stylus.Nodes.Ternary
-  ] = js.native
+  ]
   
-  var UnaryOp: Instantiable2[/* op */ String, /* expr */ Expression, typings.stylus.mod.Stylus.Nodes.UnaryOp] = js.native
+  var UnaryOp: Instantiable2[/* op */ String, /* expr */ Expression, typings.stylus.mod.Stylus.Nodes.UnaryOp]
   
-  var Unit: Instantiable2[/* val */ Double, /* type */ String, typings.stylus.mod.Stylus.Nodes.Unit] = js.native
+  var Unit: Instantiable2[/* val */ Double, /* type */ String, typings.stylus.mod.Stylus.Nodes.Unit]
   
-  var `false`: typings.stylus.mod.Stylus.Nodes.Boolean = js.native
+  var `false`: typings.stylus.mod.Stylus.Nodes.Boolean
   
-  var `null`: Null = js.native
+  var `null`: Null
   
-  var `true`: typings.stylus.mod.Stylus.Nodes.Boolean = js.native
+  var `true`: typings.stylus.mod.Stylus.Nodes.Boolean
 }
 object NodeStatic {
   

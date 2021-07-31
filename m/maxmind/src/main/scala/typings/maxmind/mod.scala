@@ -7,37 +7,37 @@ import typings.mmdbLib.typesMod.ReaderOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("maxmind", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("maxmind", "default.init")
+    @JSImport("maxmind", JSImport.Default)
     @js.native
-    def init(): scala.Nothing = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("maxmind", "default.open")
-    @js.native
-    def open[T](filepath: String): js.Promise[typings.mmdbLib.mod.default[T]] = js.native
-    @JSImport("maxmind", "default.open")
-    @js.native
-    def open[T](filepath: String, opts: js.UndefOr[scala.Nothing], cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = js.native
-    @JSImport("maxmind", "default.open")
-    @js.native
-    def open[T](filepath: String, opts: OpenOpts): js.Promise[typings.mmdbLib.mod.default[T]] = js.native
-    @JSImport("maxmind", "default.open")
-    @js.native
-    def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = js.native
+    @scala.inline
+    def init(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[scala.Nothing]
     
-    @JSImport("maxmind", "default.openSync")
-    @js.native
-    def openSync(): scala.Nothing = js.native
+    @scala.inline
+    def open[T](filepath: String): js.Promise[typings.mmdbLib.mod.default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
+    @scala.inline
+    def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
+    @scala.inline
+    def open[T](filepath: String, opts: OpenOpts): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
+    @scala.inline
+    def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
     
-    @JSImport("maxmind", "default.validate")
-    @js.native
-    def validate(ip: String): Boolean = js.native
+    @scala.inline
+    def openSync(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[scala.Nothing]
+    
+    @scala.inline
+    def validate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("maxmind", "Reader")
@@ -47,43 +47,35 @@ object mod {
     def this(db: Buffer, opts: ReaderOptions) = this()
   }
   
-  @JSImport("maxmind", "init")
-  @js.native
-  def init(): scala.Nothing = js.native
+  @scala.inline
+  def init(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[scala.Nothing]
   
-  @JSImport("maxmind", "open")
-  @js.native
-  def open[T](filepath: String): js.Promise[default[T]] = js.native
-  @JSImport("maxmind", "open")
-  @js.native
-  def open[T](filepath: String, opts: js.UndefOr[scala.Nothing], cb: Callback): js.Promise[default[T]] = js.native
-  @JSImport("maxmind", "open")
-  @js.native
-  def open[T](filepath: String, opts: OpenOpts): js.Promise[default[T]] = js.native
-  @JSImport("maxmind", "open")
-  @js.native
-  def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[default[T]] = js.native
+  @scala.inline
+  def open[T](filepath: String): js.Promise[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T]]]
+  @scala.inline
+  def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
+  @scala.inline
+  def open[T](filepath: String, opts: OpenOpts): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
+  @scala.inline
+  def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
   
-  @JSImport("maxmind", "openSync")
-  @js.native
-  def openSync(): scala.Nothing = js.native
+  @scala.inline
+  def openSync(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[scala.Nothing]
   
-  @JSImport("maxmind", "validate")
-  @js.native
-  def validate(ip: String): Boolean = js.native
+  @scala.inline
+  def validate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type Callback = js.Function0[Unit]
   
-  @js.native
   trait OpenOpts extends StObject {
     
-    var cache: js.UndefOr[Max] = js.native
+    var cache: js.UndefOr[Max] = js.undefined
     
-    var watchForUpdates: js.UndefOr[Boolean] = js.native
+    var watchForUpdates: js.UndefOr[Boolean] = js.undefined
     
-    var watchForUpdatesHook: js.UndefOr[Callback] = js.native
+    var watchForUpdatesHook: js.UndefOr[Callback] = js.undefined
     
-    var watchForUpdatesNonPersistent: js.UndefOr[Boolean] = js.native
+    var watchForUpdatesNonPersistent: js.UndefOr[Boolean] = js.undefined
   }
   object OpenOpts {
     

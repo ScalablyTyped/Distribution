@@ -2,19 +2,17 @@ package typings.qrcodeGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CellSize extends StObject {
     
-    var cellSize: js.UndefOr[Double] = js.native
+    var cellSize: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var scalable: js.UndefOr[Boolean] = js.native
+    var scalable: js.UndefOr[Boolean] = js.undefined
   }
   object CellSize {
     

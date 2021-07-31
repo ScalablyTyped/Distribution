@@ -2,23 +2,21 @@ package typings.jspdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Align {
     
@@ -74,116 +72,8 @@ object anon {
     def closePath(): Unit = js.native
     
     def drawImage(img: String, x: Double, y: Double, w: Double, h: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: js.UndefOr[scala.Nothing],
-      w2: js.UndefOr[scala.Nothing],
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: js.UndefOr[scala.Nothing],
-      w2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: js.UndefOr[scala.Nothing],
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: js.UndefOr[scala.Nothing], y2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: Double,
-      w2: js.UndefOr[scala.Nothing],
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: Double,
-      w2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: js.UndefOr[scala.Nothing],
-      y2: Double,
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
     def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: js.UndefOr[scala.Nothing],
-      w2: js.UndefOr[scala.Nothing],
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: js.UndefOr[scala.Nothing],
-      w2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: js.UndefOr[scala.Nothing],
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
     def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: Double,
-      w2: js.UndefOr[scala.Nothing],
-      h2: Double
-    ): Unit = js.native
     def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double, w2: Double): Unit = js.native
     def drawImage(
       img: String,
@@ -196,6 +86,77 @@ object anon {
       w2: Double,
       h2: Double
     ): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Double,
+      y2: Double,
+      w2: Unit,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Unit, w2: Double): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Double,
+      y2: Unit,
+      w2: Double,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Double,
+      y2: Unit,
+      w2: Unit,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Double): Unit = js.native
+    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Double, w2: Double): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Unit,
+      y2: Double,
+      w2: Double,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Unit,
+      y2: Double,
+      w2: Unit,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Unit, w2: Double): Unit = js.native
+    def drawImage(
+      img: String,
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      x2: Unit,
+      y2: Unit,
+      w2: Double,
+      h2: Double
+    ): Unit = js.native
+    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Unit, w2: Unit, h2: Double): Unit = js.native
     
     def f2(number: Double): Double = js.native
     
@@ -216,7 +177,7 @@ object anon {
     
     def moveTo(x: Double, y: Double): Unit = js.native
     
-    var pageBreaks: js.Array[_] = js.native
+    var pageBreaks: js.Array[js.Any] = js.native
     
     var pageWrapX: Double = js.native
     
@@ -256,56 +217,55 @@ object anon {
     def translate(x: Double, y: Double): Unit = js.native
   }
   
-  @js.native
   trait Collections extends StObject {
     
-    var collections: js.Any = js.native
+    var collections: js.Any
     
-    var events: js.Any = js.native
+    var events: js.Any
     
-    def f2(number: Double): Double = js.native
+    def f2(number: Double): Double
     
-    def getCoordinateString(value: Double): Double = js.native
+    def getCoordinateString(value: Double): Double
     
-    def getCurrentPageInfo(): js.Any = js.native
+    def getCurrentPageInfo(): js.Any
     
-    def getFont(): js.Any = js.native
+    def getFont(): js.Any
     
-    def getFontSize(): Double = js.native
+    def getFontSize(): Double
     
-    def getLineHeight(): Double = js.native
+    def getLineHeight(): Double
     
-    def getNumberOfPages(): Double = js.native
+    def getNumberOfPages(): Double
     
-    def getPageInfo(pageNumberOneBased: Double): js.Any = js.native
+    def getPageInfo(pageNumberOneBased: Double): js.Any
     
-    def getStyle(style: String): js.Any = js.native
+    def getStyle(style: String): js.Any
     
-    def getVerticalCoordinateString(value: Double): Double = js.native
+    def getVerticalCoordinateString(value: Double): Double
     
-    def newAdditionalObject(): js.Any = js.native
+    def newAdditionalObject(): js.Any
     
-    def newObject(): Double = js.native
+    def newObject(): Double
     
-    def newObjectDeferred(): Double = js.native
+    def newObjectDeferred(): Double
     
-    def newObjectDeferredBegin(oid: Double): Unit = js.native
+    def newObjectDeferredBegin(oid: Double): Unit
     
-    def out(string: String): Unit = js.native
+    def out(string: String): Unit
     
-    def output(`type`: js.Any, options: js.Any): js.Any = js.native
+    def output(`type`: js.Any, options: js.Any): js.Any
     
-    var pageSize: GetHeight = js.native
+    var pageSize: GetHeight
     
-    var pages: js.Array[Double] = js.native
+    var pages: js.Array[Double]
     
-    def pdfEscape(text: String, flags: js.Any): js.Any = js.native
+    def pdfEscape(text: String, flags: js.Any): js.Any
     
-    def putStream(str: String): Unit = js.native
+    def putStream(str: String): Unit
     
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
     
-    def write(string1: String): js.Any = js.native
+    def write(string1: String): js.Any
   }
   object Collections {
     
@@ -420,12 +380,11 @@ object anon {
     }
   }
   
-  @js.native
   trait GetContext extends StObject {
     
-    def getContext(): js.Any = js.native
+    def getContext(): js.Any
     
-    var style: js.Any = js.native
+    var style: js.Any
   }
   object GetContext {
     
@@ -446,16 +405,15 @@ object anon {
     }
   }
   
-  @js.native
   trait GetHeight extends StObject {
     
-    def getHeight(): Double = js.native
+    def getHeight(): Double
     
-    def getWidth(): Double = js.native
+    def getWidth(): Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object GetHeight {
     
@@ -482,10 +440,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ReturnPromise extends StObject {
     
-    var returnPromise: Boolean = js.native
+    var returnPromise: Boolean
   }
   object ReturnPromise {
     
@@ -503,10 +460,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     

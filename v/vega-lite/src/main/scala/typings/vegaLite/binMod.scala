@@ -6,60 +6,52 @@ import typings.vegaLite.vegaLiteBooleans.`true`
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binMod {
   
-  @JSImport("vega-lite/build/src/bin", "autoMaxBins")
+  @JSImport("vega-lite/build/src/bin", JSImport.Namespace)
   @js.native
-  def autoMaxBins(): Double = js.native
-  @JSImport("vega-lite/build/src/bin", "autoMaxBins")
-  @js.native
-  def autoMaxBins(channel: ExtendedChannel): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/bin", "binToString")
-  @js.native
-  def binToString(bin: BinParams): String = js.native
-  @JSImport("vega-lite/build/src/bin", "binToString")
-  @js.native
-  def binToString_true(bin: `true`): String = js.native
+  @scala.inline
+  def autoMaxBins(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")().asInstanceOf[Double]
+  @scala.inline
+  def autoMaxBins(channel: ExtendedChannel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoMaxBins")(channel.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/bin", "isBinParams")
-  @js.native
-  def isBinParams(bin: Boolean): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinParams")
-  @js.native
-  def isBinParams(bin: BinParams): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinParams")
-  @js.native
-  def isBinParams_binned(bin: binned): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = js.native
+  @scala.inline
+  def binToString(bin: BinParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/bin", "isBinned")
-  @js.native
-  def isBinned(bin: Boolean): Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinned")
-  @js.native
-  def isBinned(bin: BinParams): Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinned")
-  @js.native
-  def isBinned_binned(bin: binned): Boolean = js.native
+  @scala.inline
+  def binToString_true(bin: `true`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("binToString")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/bin", "isBinning")
-  @js.native
-  def isBinning(bin: Boolean): Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinning")
-  @js.native
-  def isBinning(bin: BinParams): Boolean = js.native
-  @JSImport("vega-lite/build/src/bin", "isBinning")
-  @js.native
-  def isBinning_binned(bin: binned): Boolean = js.native
+  @scala.inline
+  def isBinParams(bin: Boolean): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
+  @scala.inline
+  def isBinParams(bin: BinParams): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
   
-  @JSImport("vega-lite/build/src/bin", "isSelectionExtent")
-  @js.native
-  def isSelectionExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = js.native
+  @scala.inline
+  def isBinParams_binned(bin: binned): /* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinParams")(bin.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/bin.BinParams */ Boolean]
   
-  @js.native
+  @scala.inline
+  def isBinned(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinned(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBinned_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinned")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBinning(bin: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinning(bin: BinParams): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBinning_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSelectionExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
+  
   trait BaseBin extends StObject {
     
     /**
@@ -67,7 +59,7 @@ object binMod {
       *
       * __Default value:__ the minimum bin extent value
       */
-    var anchor: js.UndefOr[Double] = js.native
+    var anchor: js.UndefOr[Double] = js.undefined
     
     /**
       * The number base to use for automatic bin determination (default is base 10).
@@ -75,7 +67,7 @@ object binMod {
       * __Default value:__ `10`
       *
       */
-    var base: js.UndefOr[Double] = js.native
+    var base: js.UndefOr[Double] = js.undefined
     
     /**
       * Scale factors indicating allowable subdivisions. The default value is [5, 2], which indicates that for base 10 numbers (the default base), the method may consider dividing bin sizes by 5 and/or 2. For example, for an initial step size of 10, the method can check if bin sizes of 2 (= 10/5), 5 (= 10/2), or 1 (= 10/(5*2)) might also satisfy the given constraints.
@@ -84,7 +76,7 @@ object binMod {
       *
       * @minItems 1
       */
-    var divide: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var divide: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /**
       * Maximum number of bins.
@@ -93,32 +85,32 @@ object binMod {
       *
       * @minimum 2
       */
-    var maxbins: js.UndefOr[Double] = js.native
+    var maxbins: js.UndefOr[Double] = js.undefined
     
     /**
       * A minimum allowable step size (particularly useful for integer values).
       */
-    var minstep: js.UndefOr[Double] = js.native
+    var minstep: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, attempts to make the bin boundaries use human-friendly boundaries, such as multiples of ten.
       *
       * __Default value:__ `true`
       */
-    var nice: js.UndefOr[Boolean] = js.native
+    var nice: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An exact step size to use between bins.
       *
       * __Note:__ If provided, options such as maxbins will be ignored.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * An array of allowable step sizes to choose from.
       * @minItems 1
       */
-    var steps: js.UndefOr[js.Array[Double]] = js.native
+    var steps: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object BaseBin {
     
@@ -194,20 +186,20 @@ object binMod {
   
   type BinExtent = (js.Tuple2[Double, Double]) | SelectionExtent
   
-  @js.native
   trait BinParams
-    extends BaseBin
+    extends StObject
+       with BaseBin
        with _Bin {
     
     /**
       * When set to `true`, Vega-Lite treats the input data as already binned.
       */
-    var binned: js.UndefOr[Boolean] = js.native
+    var binned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A two-element (`[min, max]`) array indicating the range of desired bin values.
       */
-    var extent: js.UndefOr[BinExtent] = js.native
+    var extent: js.UndefOr[BinExtent] = js.undefined
   }
   object BinParams {
     

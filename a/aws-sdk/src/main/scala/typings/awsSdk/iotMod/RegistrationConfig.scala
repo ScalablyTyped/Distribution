@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistrationConfig extends StObject {
   
   /**
     * The ARN of the role.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The template body.
     */
-  var templateBody: js.UndefOr[TemplateBody] = js.native
+  var templateBody: js.UndefOr[TemplateBody] = js.undefined
 }
 object RegistrationConfig {
   

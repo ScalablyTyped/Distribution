@@ -3,108 +3,90 @@ package typings.hapiAccept
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/accept", "charset")
+  @JSImport("@hapi/accept", JSImport.Namespace)
   @js.native
-  def charset(): String = js.native
-  @JSImport("@hapi/accept", "charset")
-  @js.native
-  def charset(header: js.UndefOr[scala.Nothing], preferences: js.Array[String]): String = js.native
-  @JSImport("@hapi/accept", "charset")
-  @js.native
-  def charset(header: String): String = js.native
-  @JSImport("@hapi/accept", "charset")
-  @js.native
-  def charset(header: String, preferences: js.Array[String]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@hapi/accept", "charsets")
-  @js.native
-  def charsets(): js.Array[String] = js.native
-  @JSImport("@hapi/accept", "charsets")
-  @js.native
-  def charsets(header: String): js.Array[String] = js.native
+  @scala.inline
+  def charset(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")().asInstanceOf[String]
+  @scala.inline
+  def charset(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(header.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def charset(header: String, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("charset")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def charset(header: Unit, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("charset")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/accept", "encoding")
-  @js.native
-  def encoding(): String = js.native
-  @JSImport("@hapi/accept", "encoding")
-  @js.native
-  def encoding(header: js.UndefOr[scala.Nothing], preferences: js.Array[String]): String = js.native
-  @JSImport("@hapi/accept", "encoding")
-  @js.native
-  def encoding(header: String): String = js.native
-  @JSImport("@hapi/accept", "encoding")
-  @js.native
-  def encoding(header: String, preferences: js.Array[String]): String = js.native
+  @scala.inline
+  def charsets(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("charsets")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def charsets(header: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("charsets")(header.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@hapi/accept", "encodings")
-  @js.native
-  def encodings(): js.Array[String] = js.native
-  @JSImport("@hapi/accept", "encodings")
-  @js.native
-  def encodings(header: String): js.Array[String] = js.native
+  @scala.inline
+  def encoding(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encoding")().asInstanceOf[String]
+  @scala.inline
+  def encoding(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encoding")(header.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encoding(header: String, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encoding")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encoding(header: Unit, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encoding")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/accept", "language")
-  @js.native
-  def language(): String = js.native
-  @JSImport("@hapi/accept", "language")
-  @js.native
-  def language(header: js.UndefOr[scala.Nothing], preferences: js.Array[String]): String = js.native
-  @JSImport("@hapi/accept", "language")
-  @js.native
-  def language(header: String): String = js.native
-  @JSImport("@hapi/accept", "language")
-  @js.native
-  def language(header: String, preferences: js.Array[String]): String = js.native
+  @scala.inline
+  def encodings(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodings")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def encodings(header: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodings")(header.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@hapi/accept", "languages")
-  @js.native
-  def languages(): js.Array[String] = js.native
-  @JSImport("@hapi/accept", "languages")
-  @js.native
-  def languages(header: String): js.Array[String] = js.native
+  @scala.inline
+  def language(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")().asInstanceOf[String]
+  @scala.inline
+  def language(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(header.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def language(header: String, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("language")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def language(header: Unit, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("language")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/accept", "mediaType")
-  @js.native
-  def mediaType(): String = js.native
-  @JSImport("@hapi/accept", "mediaType")
-  @js.native
-  def mediaType(header: js.UndefOr[scala.Nothing], preferences: js.Array[String]): String = js.native
-  @JSImport("@hapi/accept", "mediaType")
-  @js.native
-  def mediaType(header: String): String = js.native
-  @JSImport("@hapi/accept", "mediaType")
-  @js.native
-  def mediaType(header: String, preferences: js.Array[String]): String = js.native
+  @scala.inline
+  def languages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def languages(header: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(header.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@hapi/accept", "mediaTypes")
-  @js.native
-  def mediaTypes(): js.Array[String] = js.native
-  @JSImport("@hapi/accept", "mediaTypes")
-  @js.native
-  def mediaTypes(header: String): js.Array[String] = js.native
+  @scala.inline
+  def mediaType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaType")().asInstanceOf[String]
+  @scala.inline
+  def mediaType(header: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaType")(header.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def mediaType(header: String, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaType")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mediaType(header: Unit, preferences: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaType")(header.asInstanceOf[js.Any], preferences.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def mediaTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTypes")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def mediaTypes(header: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTypes")(header.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   object parseAll {
     
+    @scala.inline
+    def apply(headers: Headers): Result = ^.asInstanceOf[js.Dynamic].apply(headers.asInstanceOf[js.Any]).asInstanceOf[Result]
+    
     @JSImport("@hapi/accept", "parseAll")
     @js.native
-    def apply(headers: Headers): Result = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
     trait Headers
-      extends /* header */ StringDictionary[js.Any] {
+      extends StObject
+         with /* header */ StringDictionary[js.Any] {
       
-      val accept: js.UndefOr[String] = js.native
+      val accept: js.UndefOr[String] = js.undefined
       
-      val `accept-charset`: js.UndefOr[String] = js.native
+      val `accept-charset`: js.UndefOr[String] = js.undefined
       
-      val `accept-encoding`: js.UndefOr[String] = js.native
+      val `accept-encoding`: js.UndefOr[String] = js.undefined
       
-      val `accept-language`: js.UndefOr[String] = js.native
+      val `accept-language`: js.UndefOr[String] = js.undefined
     }
     object Headers {
       
@@ -143,16 +125,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Result extends StObject {
       
-      var charsets: js.Array[String] = js.native
+      var charsets: js.Array[String]
       
-      var encodings: js.Array[String] = js.native
+      var encodings: js.Array[String]
       
-      var languages: js.Array[String] = js.native
+      var languages: js.Array[String]
       
-      var mediaTypes: js.Array[String] = js.native
+      var mediaTypes: js.Array[String]
     }
     object Result {
       

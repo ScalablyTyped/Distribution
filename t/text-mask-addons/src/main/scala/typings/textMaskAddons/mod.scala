@@ -5,37 +5,33 @@ import typings.textMaskCore.mod.Mask
 import typings.textMaskCore.mod.Pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("text-mask-addons", "createAutoCorrectedDatePipe")
+  @JSImport("text-mask-addons", JSImport.Namespace)
   @js.native
-  def createAutoCorrectedDatePipe(): Pipe = js.native
-  @JSImport("text-mask-addons", "createAutoCorrectedDatePipe")
-  @js.native
-  def createAutoCorrectedDatePipe(dateFormat: js.UndefOr[scala.Nothing], validYears: DatePipeYears): Pipe = js.native
-  @JSImport("text-mask-addons", "createAutoCorrectedDatePipe")
-  @js.native
-  def createAutoCorrectedDatePipe(dateFormat: String): Pipe = js.native
-  @JSImport("text-mask-addons", "createAutoCorrectedDatePipe")
-  @js.native
-  def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Pipe = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("text-mask-addons", "createNumberMask")
-  @js.native
-  def createNumberMask(): js.Function1[/* rawValue */ String, Mask] = js.native
-  @JSImport("text-mask-addons", "createNumberMask")
-  @js.native
-  def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[/* rawValue */ String, Mask] = js.native
+  @scala.inline
+  def createAutoCorrectedDatePipe(): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")().asInstanceOf[Pipe]
+  @scala.inline
+  def createAutoCorrectedDatePipe(dateFormat: String): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[Pipe]
+  @scala.inline
+  def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
+  @scala.inline
+  def createAutoCorrectedDatePipe(dateFormat: Unit, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
   
-  @js.native
+  @scala.inline
+  def createNumberMask(): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")().asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
+  @scala.inline
+  def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")(maskOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
+  
   trait DatePipeYears extends StObject {
     
-    var maxYear: Double = js.native
+    var maxYear: Double
     
-    var minYear: Double = js.native
+    var minYear: Double
   }
   object DatePipeYears {
     
@@ -56,30 +52,29 @@ object mod {
     }
   }
   
-  @js.native
   trait NumberMaskOptions extends StObject {
     
-    var allowDecimal: Boolean = js.native
+    var allowDecimal: Boolean
     
-    var allowLeadingZeroes: Boolean = js.native
+    var allowLeadingZeroes: Boolean
     
-    var allowNegative: Boolean = js.native
+    var allowNegative: Boolean
     
-    var decimalLimit: Double = js.native
+    var decimalLimit: Double
     
-    var decimalSymbol: String = js.native
+    var decimalSymbol: String
     
-    var includeThousandsSeparator: Boolean = js.native
+    var includeThousandsSeparator: Boolean
     
-    var integerLimit: Double | Null = js.native
+    var integerLimit: Double | Null
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var requireDecimal: Boolean = js.native
+    var requireDecimal: Boolean
     
-    var suffix: String = js.native
+    var suffix: String
     
-    var thousandsSeparatorSymbol: String = js.native
+    var thousandsSeparatorSymbol: String
   }
   object NumberMaskOptions {
     
@@ -96,7 +91,7 @@ object mod {
       suffix: String,
       thousandsSeparatorSymbol: String
     ): NumberMaskOptions = {
-      val __obj = js.Dynamic.literal(allowDecimal = allowDecimal.asInstanceOf[js.Any], allowLeadingZeroes = allowLeadingZeroes.asInstanceOf[js.Any], allowNegative = allowNegative.asInstanceOf[js.Any], decimalLimit = decimalLimit.asInstanceOf[js.Any], decimalSymbol = decimalSymbol.asInstanceOf[js.Any], includeThousandsSeparator = includeThousandsSeparator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], requireDecimal = requireDecimal.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], thousandsSeparatorSymbol = thousandsSeparatorSymbol.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowDecimal = allowDecimal.asInstanceOf[js.Any], allowLeadingZeroes = allowLeadingZeroes.asInstanceOf[js.Any], allowNegative = allowNegative.asInstanceOf[js.Any], decimalLimit = decimalLimit.asInstanceOf[js.Any], decimalSymbol = decimalSymbol.asInstanceOf[js.Any], includeThousandsSeparator = includeThousandsSeparator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], requireDecimal = requireDecimal.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], thousandsSeparatorSymbol = thousandsSeparatorSymbol.asInstanceOf[js.Any], integerLimit = null)
       __obj.asInstanceOf[NumberMaskOptions]
     }
     

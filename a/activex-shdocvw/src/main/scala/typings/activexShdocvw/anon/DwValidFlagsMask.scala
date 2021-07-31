@@ -2,15 +2,13 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DwValidFlagsMask extends StObject {
   
-  val dwValidFlagsMask: Double = js.native
+  val dwValidFlagsMask: Double
   
-  val dwWindowStateFlags: Double = js.native
+  val dwWindowStateFlags: Double
 }
 object DwValidFlagsMask {
   

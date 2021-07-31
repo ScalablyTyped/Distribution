@@ -9,7 +9,6 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.SetOptions
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.UpdateKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -71,12 +70,11 @@ trait DocumentReference extends StObject {
 }
 object DocumentReference {
   
-  @js.native
   trait Observer extends StObject {
     
-    var error: js.UndefOr[ObserverOnError] = js.native
+    var error: js.UndefOr[ObserverOnError] = js.undefined
     
-    var next: ObserverOnNext = js.native
+    var next: ObserverOnNext
   }
   object Observer {
     

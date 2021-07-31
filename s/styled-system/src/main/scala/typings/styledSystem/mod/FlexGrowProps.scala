@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexGrowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait FlexGrowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     */
   var flexGrow: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexGrowProps {
   
@@ -30,12 +28,12 @@ object FlexGrowProps {
   }
   
   @scala.inline
-  implicit class FlexGrowPropsMutableBuilder[Self <: FlexGrowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FlexGrowProps[ThemeType]) extends AnyVal {
+  implicit class FlexGrowPropsMutableBuilder[Self <: FlexGrowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexGrowProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFlexGrow(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object FlexGrowProps {
     def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
     @scala.inline
-    def setFlexGrowVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
+    def setFlexGrowVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any) | Null)*
+    ): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
   }
 }

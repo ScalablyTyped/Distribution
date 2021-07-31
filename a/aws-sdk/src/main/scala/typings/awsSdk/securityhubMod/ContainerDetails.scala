@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerDetails extends StObject {
   
   /**
     * The identifier of the image related to a finding.
     */
-  var ImageId: js.UndefOr[NonEmptyString] = js.native
+  var ImageId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the image related to a finding.
     */
-  var ImageName: js.UndefOr[NonEmptyString] = js.native
+  var ImageName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the container started. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LaunchedAt: js.UndefOr[NonEmptyString] = js.native
+  var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the container related to a finding.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ContainerDetails {
   

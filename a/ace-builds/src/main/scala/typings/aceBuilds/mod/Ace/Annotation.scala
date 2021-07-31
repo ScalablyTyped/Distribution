@@ -2,19 +2,17 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotation extends StObject {
   
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Annotation {
   

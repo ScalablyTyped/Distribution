@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateResourceIdentifier extends StObject {
   
   /**
     * The ID of the AWS resource.
     */
-  var ResourceId: typings.awsSdk.configserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.configserviceMod.ResourceId
   
   /**
     * The name of the AWS resource.
     */
-  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.native
+  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.undefined
   
   /**
     * The type of the AWS resource.
     */
-  var ResourceType: typings.awsSdk.configserviceMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.configserviceMod.ResourceType
   
   /**
     * The 12-digit account ID of the source account.
     */
-  var SourceAccountId: AccountId = js.native
+  var SourceAccountId: AccountId
   
   /**
     * The source region where data is aggregated.
     */
-  var SourceRegion: AwsRegion = js.native
+  var SourceRegion: AwsRegion
 }
 object AggregateResourceIdentifier {
   

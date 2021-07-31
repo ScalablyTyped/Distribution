@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundStyle extends StObject {
   
-  var backgroundStyle: FillStringOpacityNumber = js.native
+  var backgroundStyle: FillStringOpacityNumber
   
-  var foregroundStyle: CursorFill = js.native
+  var foregroundStyle: CursorFill
   
-  var handlerStyle: Width = js.native
+  var handlerStyle: Width
   
-  var textStyle: OpacityTextBaseline = js.native
+  var textStyle: OpacityTextBaseline
 }
 object BackgroundStyle {
   

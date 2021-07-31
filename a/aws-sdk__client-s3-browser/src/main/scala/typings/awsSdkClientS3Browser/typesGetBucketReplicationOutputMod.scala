@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketReplicationOutputMod {
   
-  @js.native
   trait GetBucketReplicationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Container for replication rules. You can add as many as 1,000 rules. Total replication configuration size can be up to 2 MB.</p>
       */
-    var ReplicationConfiguration: js.UndefOr[UnmarshalledReplicationConfiguration] = js.native
+    var ReplicationConfiguration: js.UndefOr[UnmarshalledReplicationConfiguration] = js.undefined
   }
   object GetBucketReplicationOutput {
     

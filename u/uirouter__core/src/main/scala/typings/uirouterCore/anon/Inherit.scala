@@ -2,15 +2,13 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inherit extends StObject {
   
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
-  var matchingKeys: js.UndefOr[js.Any] = js.native
+  var matchingKeys: js.UndefOr[js.Any] = js.undefined
 }
 object Inherit {
   

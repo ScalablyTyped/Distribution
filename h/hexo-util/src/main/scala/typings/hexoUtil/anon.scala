@@ -7,31 +7,29 @@ import typings.hexoUtil.hexoUtilNumbers.`2`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoDetect extends StObject {
     
-    var autoDetect: js.UndefOr[Boolean] = js.native
+    var autoDetect: js.UndefOr[Boolean] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var firstLine: js.UndefOr[Double] = js.native
+    var firstLine: js.UndefOr[Double] = js.undefined
     
-    var gutter: js.UndefOr[Boolean] = js.native
+    var gutter: js.UndefOr[Boolean] = js.undefined
     
-    var hljs: js.UndefOr[Boolean] = js.native
+    var hljs: js.UndefOr[Boolean] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var mark: js.UndefOr[js.Array[Double]] = js.native
+    var mark: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var tab: js.UndefOr[String] = js.native
+    var tab: js.UndefOr[String] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object AutoDetect {
     
@@ -103,12 +101,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictindex
-    extends /* index */ NumberDictionary[js.Any]
+    extends StObject
+       with /* index */ NumberDictionary[js.Any]
        with /* name */ StringDictionary[js.Any] {
     
-    var `0`: String = js.native
+    var `0`: String
   }
   object Dictindex {
     
@@ -127,14 +125,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var omission: js.UndefOr[String] = js.native
+    var omission: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object Length {
     
@@ -167,10 +164,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Segments extends StObject {
     
-    var segments: js.UndefOr[StringDictionary[String | RegExp]] = js.native
+    var segments: js.UndefOr[StringDictionary[String | RegExp]] = js.undefined
   }
   object Segments {
     
@@ -191,12 +187,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Separator extends StObject {
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[`1` | `2`] = js.native
+    var transform: js.UndefOr[`1` | `2`] = js.undefined
   }
   object Separator {
     
@@ -223,10 +218,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Width {
     

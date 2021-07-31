@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ModifyAckDeadlineRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ModifyAckDeadlineRequest.
   * @param [properties] Properties to set
   */
-class ModifyAckDeadlineRequest () extends IModifyAckDeadlineRequest {
+class ModifyAckDeadlineRequest ()
+  extends StObject
+     with IModifyAckDeadlineRequest {
   def this(properties: IModifyAckDeadlineRequest) = this()
   
   /** ModifyAckDeadlineRequest ackDeadlineSeconds. */
@@ -40,18 +41,20 @@ class ModifyAckDeadlineRequest () extends IModifyAckDeadlineRequest {
 }
 object ModifyAckDeadlineRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ModifyAckDeadlineRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ModifyAckDeadlineRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.create")
-  @js.native
-  def create(): ModifyAckDeadlineRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.create")
-  @js.native
-  def create(properties: IModifyAckDeadlineRequest): ModifyAckDeadlineRequest = js.native
+  @scala.inline
+  def create(): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ModifyAckDeadlineRequest]
+  @scala.inline
+  def create(properties: IModifyAckDeadlineRequest): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
   
   /**
     * Decodes a ModifyAckDeadlineRequest message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object ModifyAckDeadlineRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decode")
-  @js.native
-  def decode(reader: Reader): ModifyAckDeadlineRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ModifyAckDeadlineRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ModifyAckDeadlineRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ModifyAckDeadlineRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ModifyAckDeadlineRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyAckDeadlineRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ModifyAckDeadlineRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyAckDeadlineRequest]
   
   /**
     * Decodes a ModifyAckDeadlineRequest message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object ModifyAckDeadlineRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ModifyAckDeadlineRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ModifyAckDeadlineRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
   
   /**
     * Encodes the specified ModifyAckDeadlineRequest message. Does not implicitly {@link google.pubsub.v1.ModifyAckDeadlineRequest.verify|verify} messages.
@@ -97,12 +94,10 @@ object ModifyAckDeadlineRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.encode")
-  @js.native
-  def encode(message: IModifyAckDeadlineRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.encode")
-  @js.native
-  def encode(message: IModifyAckDeadlineRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IModifyAckDeadlineRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IModifyAckDeadlineRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ModifyAckDeadlineRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ModifyAckDeadlineRequest.verify|verify} messages.
@@ -111,12 +106,10 @@ object ModifyAckDeadlineRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IModifyAckDeadlineRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IModifyAckDeadlineRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IModifyAckDeadlineRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IModifyAckDeadlineRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ModifyAckDeadlineRequest message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object ModifyAckDeadlineRequest {
     * @returns ModifyAckDeadlineRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ModifyAckDeadlineRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ModifyAckDeadlineRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ModifyAckDeadlineRequest]
   
   /**
     * Creates a plain object from a ModifyAckDeadlineRequest message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object ModifyAckDeadlineRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.toObject")
-  @js.native
-  def toObject(message: ModifyAckDeadlineRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.toObject")
-  @js.native
-  def toObject(message: ModifyAckDeadlineRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ModifyAckDeadlineRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ModifyAckDeadlineRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ModifyAckDeadlineRequest message.
@@ -148,7 +138,6 @@ object ModifyAckDeadlineRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ModifyAckDeadlineRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

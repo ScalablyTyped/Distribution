@@ -4,15 +4,19 @@ import typings.bingmaps.Microsoft.Maps.IDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.ConfigurableMap")
 @js.native
 class ConfigurableMap ()
-  extends typings.bingmaps.Microsoft.Maps.ConfigurableMap
+  extends StObject
+     with typings.bingmaps.Microsoft.Maps.ConfigurableMap
 /* static members */
 object ConfigurableMap {
+  
+  @JSGlobal("Microsoft.Maps.ConfigurableMap")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A static function that loads a map using a JSON configuraiton file.
@@ -23,67 +27,50 @@ object ConfigurableMap {
     * @param callback Callback that is triggered when the map loads successfully.
     * @param errorCallback Callback that is triggered when an error occurs when loading the map.
     */
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
-  def createFromConfig(element: String, configFileUrl: String, withCredentials: Boolean): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  @scala.inline
+  def createFromConfig(element: String, configFileUrl: String, withCredentials: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
-  def createFromConfig(
-    element: String,
-    configFileUrl: String,
-    withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
+    requestHeaders: Unit,
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
+    requestHeaders: Unit,
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createFromConfig(
+    element: String,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
-  def createFromConfig(
-    element: String,
-    configFileUrl: String,
-    withCredentials: Boolean,
-    requestHeaders: IDictionary[String],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -91,68 +78,60 @@ object ConfigurableMap {
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
-  def createFromConfig(element: HTMLElement, configFileUrl: String, withCredentials: Boolean): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
-    element: HTMLElement,
+    element: String,
     configFileUrl: String,
     withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
+    requestHeaders: IDictionary[String],
+    callback: Unit,
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createFromConfig(element: HTMLElement, configFileUrl: String, withCredentials: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
+    requestHeaders: Unit,
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
-    requestHeaders: js.UndefOr[scala.Nothing],
+    requestHeaders: Unit,
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
-  def createFromConfig(
-    element: HTMLElement,
-    configFileUrl: String,
-    withCredentials: Boolean,
-    requestHeaders: IDictionary[String],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
-  ): Unit = js.native
-  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -160,5 +139,14 @@ object ConfigurableMap {
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: IDictionary[String],
+    callback: Unit,
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromConfig")(element.asInstanceOf[js.Any], configFileUrl.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any], requestHeaders.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

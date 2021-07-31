@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerationValue extends StObject {
   
   /**
     * Additional values related to the slot type value.
     */
-  var synonyms: js.UndefOr[SynonymList] = js.native
+  var synonyms: js.UndefOr[SynonymList] = js.undefined
   
   /**
     * The value of the slot type.
     */
-  var value: Value = js.native
+  var value: Value
 }
 object EnumerationValue {
   

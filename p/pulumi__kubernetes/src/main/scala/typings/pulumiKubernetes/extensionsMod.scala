@@ -17,7 +17,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionsMod {
@@ -38,11 +37,15 @@ object extensionsMod {
       /** @deprecated extensions/v1beta1/DaemonSet is deprecated by apps/v1/DaemonSet and not supported by Kubernetes v1.16+ clusters. */
       def this(name: String) = this()
       def this(name: String, args: DaemonSetArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: DaemonSetArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object DaemonSet {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSet")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing DaemonSet resource's state with the given name, ID, and optional extra
@@ -52,20 +55,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSet.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSet.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DaemonSetMod.DaemonSet]
       
       /**
         * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSet.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSet.DaemonSet */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSet.DaemonSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSet.DaemonSet */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSetList")
@@ -81,11 +81,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: DaemonSetListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: DaemonSetListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object DaemonSetList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSetList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing DaemonSetList resource's state with the given name, ID, and optional extra
@@ -95,20 +99,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSetList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSetList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DaemonSetListMod.DaemonSetList]
       
       /**
         * Returns true if the given object is an instance of DaemonSetList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DaemonSetList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSetList.DaemonSetList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSetList.DaemonSetList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/daemonSetList.DaemonSetList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Deployment")
@@ -125,11 +126,15 @@ object extensionsMod {
       /** @deprecated extensions/v1beta1/Deployment is deprecated by apps/v1/Deployment and not supported by Kubernetes v1.16+ clusters. */
       def this(name: String) = this()
       def this(name: String, args: DeploymentArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: DeploymentArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object Deployment {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Deployment")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing Deployment resource's state with the given name, ID, and optional extra
@@ -139,20 +144,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Deployment.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Deployment.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DeploymentMod.Deployment]
       
       /**
         * Returns true if the given object is an instance of Deployment.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Deployment.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deployment.Deployment */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deployment.Deployment */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DeploymentList")
@@ -168,11 +170,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: DeploymentListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: DeploymentListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object DeploymentList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DeploymentList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
@@ -182,20 +188,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DeploymentList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DeploymentList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1DeploymentListMod.DeploymentList]
       
       /**
         * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.DeploymentList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deploymentList.DeploymentList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deploymentList.DeploymentList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/deploymentList.DeploymentList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Ingress")
@@ -212,11 +215,15 @@ object extensionsMod {
       /** @deprecated extensions/v1beta1/Ingress is deprecated by networking.k8s.io/v1beta1/Ingress and not supported by Kubernetes v1.20+ clusters. */
       def this(name: String) = this()
       def this(name: String, args: IngressArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object Ingress {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Ingress")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing Ingress resource's state with the given name, ID, and optional extra
@@ -226,20 +233,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressMod.Ingress = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressMod.Ingress = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressMod.Ingress]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressMod.Ingress]
       
       /**
         * Returns true if the given object is an instance of Ingress.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.Ingress.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingress.Ingress */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingress.Ingress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingress.Ingress */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.IngressList")
@@ -255,11 +259,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: IngressListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object IngressList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.IngressList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing IngressList resource's state with the given name, ID, and optional extra
@@ -269,20 +277,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressListMod.IngressList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressListMod.IngressList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressListMod.IngressList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressListMod.IngressList]
       
       /**
         * Returns true if the given object is an instance of IngressList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.IngressList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingressList.IngressList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingressList.IngressList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/ingressList.IngressList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicy")
@@ -298,11 +303,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: NetworkPolicyArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: NetworkPolicyArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object NetworkPolicy {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicy")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing NetworkPolicy resource's state with the given name, ID, and optional extra
@@ -312,20 +321,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.networkPolicyMod.NetworkPolicy]
       
       /**
         * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicy.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicy.NetworkPolicy */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicyList")
@@ -341,11 +347,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: NetworkPolicyListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: NetworkPolicyListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object NetworkPolicyList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicyList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing NetworkPolicyList resource's state with the given name, ID, and optional extra
@@ -355,20 +365,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.networkPolicyListMod.NetworkPolicyList]
       
       /**
         * Returns true if the given object is an instance of NetworkPolicyList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.NetworkPolicyList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicyList.NetworkPolicyList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicyList.NetworkPolicyList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/networkPolicyList.NetworkPolicyList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicy")
@@ -384,11 +391,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: PodSecurityPolicyArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: PodSecurityPolicyArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object PodSecurityPolicy {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicy")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing PodSecurityPolicy resource's state with the given name, ID, and optional extra
@@ -398,20 +409,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.podSecurityPolicyMod.PodSecurityPolicy]
       
       /**
         * Returns true if the given object is an instance of PodSecurityPolicy.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicy.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicyList")
@@ -427,11 +435,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: PodSecurityPolicyListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: PodSecurityPolicyListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object PodSecurityPolicyList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicyList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing PodSecurityPolicyList resource's state with the given name, ID, and optional extra
@@ -441,20 +453,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.podSecurityPolicyListMod.PodSecurityPolicyList]
       
       /**
         * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.PodSecurityPolicyList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSet")
@@ -471,11 +480,15 @@ object extensionsMod {
       /** @deprecated extensions/v1beta1/ReplicaSet is deprecated by apps/v1/ReplicaSet and not supported by Kubernetes v1.16+ clusters. */
       def this(name: String) = this()
       def this(name: String, args: ReplicaSetArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: ReplicaSetArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object ReplicaSet {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSet")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing ReplicaSet resource's state with the given name, ID, and optional extra
@@ -485,20 +498,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSet.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSet.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1ReplicaSetMod.ReplicaSet]
       
       /**
         * Returns true if the given object is an instance of ReplicaSet.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSet.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSet.ReplicaSet */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSet.ReplicaSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSet.ReplicaSet */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSetList")
@@ -514,11 +524,15 @@ object extensionsMod {
         */
       def this(name: String) = this()
       def this(name: String, args: ReplicaSetListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: ReplicaSetListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object ReplicaSetList {
+      
+      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSetList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing ReplicaSetList resource's state with the given name, ID, and optional extra
@@ -528,20 +542,17 @@ object extensionsMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSetList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList = js.native
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSetList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1ReplicaSetListMod.ReplicaSetList]
       
       /**
         * Returns true if the given object is an instance of ReplicaSetList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/extensions", "v1beta1.ReplicaSetList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSetList.ReplicaSetList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSetList.ReplicaSetList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/replicaSetList.ReplicaSetList */ Boolean]
     }
   }
 }

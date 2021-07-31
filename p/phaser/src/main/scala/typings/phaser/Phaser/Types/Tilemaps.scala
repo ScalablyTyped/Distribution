@@ -9,28 +9,26 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tilemaps {
   
-  @js.native
   trait FilteringOptions extends StObject {
     
     /**
       * If true, only return tiles that have at least one interesting face.
       */
-    var hasInterestingFace: js.UndefOr[Boolean] = js.native
+    var hasInterestingFace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, only return tiles that collide on at least one side.
       */
-    var isColliding: js.UndefOr[Boolean] = js.native
+    var isColliding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, only return tiles that don't have -1 for an index.
       */
-    var isNotEmpty: js.UndefOr[Boolean] = js.native
+    var isNotEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object FilteringOptions {
     
@@ -63,38 +61,37 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait GIDData extends StObject {
     
     /**
       * Is flipped?
       */
-    var flipped: Boolean = js.native
+    var flipped: Boolean
     
     /**
       * Diagonal flip flag.
       */
-    var flippedAntiDiagonal: Boolean = js.native
+    var flippedAntiDiagonal: Boolean
     
     /**
       * Horizontal flip flag.
       */
-    var flippedHorizontal: Boolean = js.native
+    var flippedHorizontal: Boolean
     
     /**
       * Vertical flip flag.
       */
-    var flippedVertical: Boolean = js.native
+    var flippedVertical: Boolean
     
     /**
       * The Tiled GID.
       */
-    var gid: Double = js.native
+    var gid: Double
     
     /**
       * Amount of rotation.
       */
-    var rotation: Double = js.native
+    var rotation: Double
   }
   object GIDData {
     
@@ -134,23 +131,22 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait GetTilesWithinFilteringOptions extends StObject {
     
     /**
       * If true, only return tiles that have at least one interesting face.
       */
-    var hasInterestingFace: js.UndefOr[Boolean] = js.native
+    var hasInterestingFace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, only return tiles that collide on at least one side.
       */
-    var isColliding: js.UndefOr[Boolean] = js.native
+    var isColliding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, only return tiles that don't have -1 for an index.
       */
-    var isNotEmpty: js.UndefOr[Boolean] = js.native
+    var isNotEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object GetTilesWithinFilteringOptions {
     
@@ -183,108 +179,107 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait LayerDataConfig extends StObject {
     
     /**
       * The alpha value of the layer.
       */
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
     /**
       * The base tile height.
       */
-    var baseTileHeight: js.UndefOr[Double] = js.native
+    var baseTileHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The base tile width.
       */
-    var baseTileWidth: js.UndefOr[Double] = js.native
+    var baseTileWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * An array of physics bodies.
       */
-    var bodies: js.UndefOr[js.Array[_]] = js.native
+    var bodies: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * An array of callbacks.
       */
-    var callbacks: js.UndefOr[js.Array[_]] = js.native
+    var callbacks: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Tile Collision ID index map.
       */
-    var collideIndexes: js.UndefOr[js.Array[_]] = js.native
+    var collideIndexes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * An array of the tile data indexes.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The height of the layer in tiles.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The height in pixels of the entire layer.
       */
-    var heightInPixels: js.UndefOr[Double] = js.native
+    var heightInPixels: js.UndefOr[Double] = js.undefined
     
     /**
       * Tile ID index map.
       */
-    var indexes: js.UndefOr[js.Array[_]] = js.native
+    var indexes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The name of the layer, if specified in Tiled.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Layer specific properties (can be specified in Tiled)
       */
-    var properties: js.UndefOr[js.Array[js.Object]] = js.native
+    var properties: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     /**
       * The pixel height of the tiles.
       */
-    var tileHeight: js.UndefOr[Double] = js.native
+    var tileHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The pixel width of the tiles.
       */
-    var tileWidth: js.UndefOr[Double] = js.native
+    var tileWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * A reference to the Tilemap layer that owns this data.
       */
-    var tilemapLayer: js.UndefOr[DynamicTilemapLayer | StaticTilemapLayer] = js.native
+    var tilemapLayer: js.UndefOr[DynamicTilemapLayer | StaticTilemapLayer] = js.undefined
     
     /**
       * Is the layer visible or not?
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The width of the layer in tiles.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * The width in pixels of the entire layer.
       */
-    var widthInPixels: js.UndefOr[Double] = js.native
+    var widthInPixels: js.UndefOr[Double] = js.undefined
     
     /**
       * The x offset of where to draw from the top left.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The y offset of where to draw from the top left.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object LayerDataConfig {
     
@@ -316,7 +311,7 @@ object Tilemaps {
       def setBaseTileWidthUndefined: Self = StObject.set(x, "baseTileWidth", js.undefined)
       
       @scala.inline
-      def setBodies(value: js.Array[_]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+      def setBodies(value: js.Array[js.Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
@@ -325,7 +320,7 @@ object Tilemaps {
       def setBodiesVarargs(value: js.Any*): Self = StObject.set(x, "bodies", js.Array(value :_*))
       
       @scala.inline
-      def setCallbacks(value: js.Array[_]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      def setCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
@@ -334,7 +329,7 @@ object Tilemaps {
       def setCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
       @scala.inline
-      def setCollideIndexes(value: js.Array[_]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
+      def setCollideIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCollideIndexesUndefined: Self = StObject.set(x, "collideIndexes", js.undefined)
@@ -343,7 +338,7 @@ object Tilemaps {
       def setCollideIndexesVarargs(value: js.Any*): Self = StObject.set(x, "collideIndexes", js.Array(value :_*))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -364,7 +359,7 @@ object Tilemaps {
       def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       @scala.inline
-      def setIndexes(value: js.Array[_]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+      def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
@@ -437,103 +432,102 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait MapDataConfig extends StObject {
     
     /**
       * An object of Tiled Object Layers.
       */
-    var collision: js.UndefOr[js.Object] = js.native
+    var collision: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The format of the Tilemap, as defined in Tiled.
       */
-    var format: js.UndefOr[integer] = js.native
+    var format: js.UndefOr[integer] = js.undefined
     
     /**
       * The height of the entire tilemap.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The height in pixels of the entire tilemap.
       */
-    var heightInPixels: js.UndefOr[Double] = js.native
+    var heightInPixels: js.UndefOr[Double] = js.undefined
     
     /**
       * The collection of images the map uses(specified in Tiled).
       */
-    var imageCollections: js.UndefOr[js.Array[_]] = js.native
+    var imageCollections: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * An array with all the layers configured to the MapData.
       */
-    var images: js.UndefOr[js.Array[_]] = js.native
+    var images: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The layers of the tilemap.
       */
-    var layers: js.UndefOr[js.Array[LayerData]] = js.native
+    var layers: js.UndefOr[js.Array[LayerData]] = js.undefined
     
     /**
       * The key in the Phaser cache that corresponds to the loaded tilemap data.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * An array of Tiled Image Layers.
       */
-    var objects: js.UndefOr[js.Object] = js.native
+    var objects: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The orientation of the map data (i.e. orthogonal, isometric, hexagonal), default 'orthogonal'.
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /**
       * Map specific properties (can be specified in Tiled).
       */
-    var properties: js.UndefOr[Double] = js.native
+    var properties: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines the draw order of tilemap. Default is right-down.
       */
-    var renderOrder: js.UndefOr[String] = js.native
+    var renderOrder: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the tiles.
       */
-    var tileHeight: js.UndefOr[Double] = js.native
+    var tileHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the tiles.
       */
-    var tileWidth: js.UndefOr[Double] = js.native
+    var tileWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of Tile instances.
       */
-    var tiles: js.UndefOr[js.Array[_]] = js.native
+    var tiles: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The tilesets the map uses.
       */
-    var tilesets: js.UndefOr[js.Array[Tileset]] = js.native
+    var tilesets: js.UndefOr[js.Array[Tileset]] = js.undefined
     
     /**
       * The version of Tiled the map uses.
       */
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the entire tilemap.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * The width in pixels of the entire tilemap.
       */
-    var widthInPixels: js.UndefOr[Double] = js.native
+    var widthInPixels: js.UndefOr[Double] = js.undefined
   }
   object MapDataConfig {
     
@@ -571,7 +565,7 @@ object Tilemaps {
       def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       @scala.inline
-      def setImageCollections(value: js.Array[_]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
+      def setImageCollections(value: js.Array[js.Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImageCollectionsUndefined: Self = StObject.set(x, "imageCollections", js.undefined)
@@ -580,7 +574,7 @@ object Tilemaps {
       def setImageCollectionsVarargs(value: js.Any*): Self = StObject.set(x, "imageCollections", js.Array(value :_*))
       
       @scala.inline
-      def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
@@ -640,7 +634,7 @@ object Tilemaps {
       def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
       
       @scala.inline
-      def setTiles(value: js.Array[_]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+      def setTiles(value: js.Array[js.Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
@@ -677,43 +671,42 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait ObjectLayerConfig extends StObject {
     
     /**
       * The name of the Object Layer.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * An array of all objects on this Object Layer.
       */
-    var objects: js.UndefOr[js.Array[_]] = js.native
+    var objects: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The opacity of the layer, between 0 and 1.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The custom properties defined on the Object Layer, keyed by their name.
       */
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The type of each custom property defined on the Object Layer, keyed by its name.
       */
-    var propertytypes: js.UndefOr[js.Any] = js.native
+    var propertytypes: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The type of the layer, which should be `objectgroup`.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the layer is shown (`true`) or hidden (`false`).
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ObjectLayerConfig {
     
@@ -733,7 +726,7 @@ object Tilemaps {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
@@ -773,23 +766,22 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait StyleConfig extends StObject {
     
     /**
       * Color to use for drawing a filled rectangle at colliding tile locations. If set to null, colliding tiles will not be drawn.
       */
-    var collidingTileColor: js.UndefOr[Color | Double | Null] = js.native
+    var collidingTileColor: js.UndefOr[Color | Double | Null] = js.undefined
     
     /**
       * Color to use for drawing a line at interesting tile faces. If set to null, interesting tile faces will not be drawn.
       */
-    var faceColor: js.UndefOr[Color | Double | Null] = js.native
+    var faceColor: js.UndefOr[Color | Double | Null] = js.undefined
     
     /**
       * Color to use for drawing a filled rectangle at non-colliding tile locations. If set to null, non-colliding tiles will not be drawn.
       */
-    var tileColor: js.UndefOr[Color | Double | Null] = js.native
+    var tileColor: js.UndefOr[Color | Double | Null] = js.undefined
   }
   object StyleConfig {
     
@@ -831,108 +823,107 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait TiledObject extends StObject {
     
     /**
       * Only set, and set to `true`, if a ellipse object.
       */
-    var ellipse: js.UndefOr[Boolean] = js.native
+    var ellipse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only set if a tile object. The diagonal flip value.
       */
-    var flippedAntiDiagonal: js.UndefOr[Boolean] = js.native
+    var flippedAntiDiagonal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only set if a tile object. The horizontal flip value.
       */
-    var flippedHorizontal: js.UndefOr[Boolean] = js.native
+    var flippedHorizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only set if a tile object. The vertical flip value.
       */
-    var flippedVertical: js.UndefOr[Boolean] = js.native
+    var flippedVertical: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only set if of type 'tile'.
       */
-    var gid: js.UndefOr[integer] = js.native
+    var gid: js.UndefOr[integer] = js.undefined
     
     /**
       * The height of this object, in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The unique object ID.
       */
-    var id: integer = js.native
+    var id: integer
     
     /**
       * The name this object was assigned in Tiled.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Only set, and set to `true`, if a point object.
       */
-    var point: js.UndefOr[Boolean] = js.native
+    var point: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only set if a polygon object. An array of objects corresponding to points, where each point has an `x` property and a `y` property.
       */
-    var polygon: js.UndefOr[js.Array[Vector2Like]] = js.native
+    var polygon: js.UndefOr[js.Array[Vector2Like]] = js.undefined
     
     /**
       * Only set if a polyline object. An array of objects corresponding to points, where each point has an `x` property and a `y` property.
       */
-    var polyline: js.UndefOr[js.Array[Vector2Like]] = js.native
+    var polyline: js.UndefOr[js.Array[Vector2Like]] = js.undefined
     
     /**
       * Custom properties object.
       */
-    var properties: js.UndefOr[js.Any] = js.native
+    var properties: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Only set, and set to `true`, if a rectangle object.
       */
-    var rectangle: js.UndefOr[Boolean] = js.native
+    var rectangle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The rotation of the object in clockwise degrees.
       */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /**
       * Only set if a text object. Contains the text objects properties.
       */
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The type, as assigned in Tiled.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The visible state of this object.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The width of this object, in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * The horizontal position of this object, in pixels, relative to the tilemap.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical position of this object, in pixels, relative to the tilemap.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object TiledObject {
     
@@ -1065,18 +1056,17 @@ object Tilemaps {
     }
   }
   
-  @js.native
   trait TilemapConfig extends StObject {
     
     /**
       * Instead of loading from the cache, you can also load directly from a 2D array of tile indexes.
       */
-    var data: js.UndefOr[js.Array[js.Array[integer]]] = js.native
+    var data: js.UndefOr[js.Array[js.Array[integer]]] = js.undefined
     
     /**
       * The height of the map in tiles.
       */
-    var height: js.UndefOr[integer] = js.native
+    var height: js.UndefOr[integer] = js.undefined
     
     /**
       * Controls how empty tiles, tiles with an index of -1,
@@ -1086,27 +1076,27 @@ object Tilemaps {
       * memory consumption. However if your map is small or you need to update the tiles dynamically,
       * then leave the default value set.
       */
-    var insertNull: js.UndefOr[Boolean] = js.native
+    var insertNull: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key in the Phaser cache that corresponds to the loaded tilemap data.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The height of a tile in pixels.
       */
-    var tileHeight: js.UndefOr[integer] = js.native
+    var tileHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * The width of a tile in pixels.
       */
-    var tileWidth: js.UndefOr[integer] = js.native
+    var tileWidth: js.UndefOr[integer] = js.undefined
     
     /**
       * The width of the map in tiles.
       */
-    var width: js.UndefOr[integer] = js.native
+    var width: js.UndefOr[integer] = js.undefined
   }
   object TilemapConfig {
     

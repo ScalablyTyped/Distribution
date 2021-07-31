@@ -8,7 +8,6 @@ import typings.officeJs.Visio.Interfaces.ShapeCollectionData
 import typings.officeJs.Visio.Interfaces.ShapeCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait ShapeCollection extends ClientObject {
+trait ShapeCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -62,7 +63,7 @@ trait ShapeCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ShapeCollection = js.native
-  def load(option: ShapeCollectionLoadOptions with CollectionLoadOptions): ShapeCollection = js.native
+  def load(option: ShapeCollectionLoadOptions & CollectionLoadOptions): ShapeCollection = js.native
   def load(option: String): ShapeCollection = js.native
   def load(option: js.Array[String]): ShapeCollection = js.native
   def load(option: LoadOption): ShapeCollection = js.native

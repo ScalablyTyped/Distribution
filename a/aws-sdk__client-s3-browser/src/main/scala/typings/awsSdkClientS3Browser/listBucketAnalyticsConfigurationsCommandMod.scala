@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsInput
 import typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsOutputMod.ListBucketAnalyticsConfigurationsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listBucketAnalyticsConfigurationsCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/ListBucketAnalyticsConfigurationsCommand", "ListBucketAnalyticsConfigurationsCommand")
   @js.native
-  class ListBucketAnalyticsConfigurationsCommand protected () extends Command[
+  class ListBucketAnalyticsConfigurationsCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           ListBucketAnalyticsConfigurationsInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object listBucketAnalyticsConfigurationsCommandMod {
         ] {
     def this(input: ListBucketAnalyticsConfigurationsInput) = this()
     
+    /* CompleteClass */
+    override val input: ListBucketAnalyticsConfigurationsInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[ListBucketAnalyticsConfigurationsInput, ListBucketAnalyticsConfigurationsOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[ListBucketAnalyticsConfigurationsInput, ListBucketAnalyticsConfigurationsOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[ListBucketAnalyticsConfigurationsInput, ListBucketAnalyticsConfigurationsOutput] = js.native
   }
 }

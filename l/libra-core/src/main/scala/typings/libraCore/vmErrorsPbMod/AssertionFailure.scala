@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure")
@@ -27,13 +26,11 @@ object AssertionFailure {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): AssertionFailure = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): AssertionFailure = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AssertionFailure]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: AssertionFailure, reader: BinaryReader): AssertionFailure = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: AssertionFailure, reader: BinaryReader): AssertionFailure = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AssertionFailure]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure.extensions")
   @js.native
@@ -48,18 +45,15 @@ object AssertionFailure {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: AssertionFailure, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: AssertionFailure, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "AssertionFailure.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: AssertionFailure): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: AssertionFailure): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var assertionErrorCode: String = js.native
+    var assertionErrorCode: String
   }
   object AsObject {
     

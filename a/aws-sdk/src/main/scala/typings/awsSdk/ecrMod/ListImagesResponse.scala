@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImagesResponse extends StObject {
   
   /**
     * The list of image IDs for the requested repository.
     */
-  var imageIds: js.UndefOr[ImageIdentifierList] = js.native
+  var imageIds: js.UndefOr[ImageIdentifierList] = js.undefined
   
   /**
     * The nextToken value to include in a future ListImages request. When the results of a ListImages request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListImagesResponse {
   

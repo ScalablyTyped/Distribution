@@ -5,61 +5,49 @@ import typings.phpSerialize.phpSerializeStrings.binary
 import typings.phpSerialize.phpSerializeStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("php-serialize", "isSerialized")
+  @JSImport("php-serialize", JSImport.Namespace)
   @js.native
-  def isSerialized(givenItem: js.Any): Boolean = js.native
-  @JSImport("php-serialize", "isSerialized")
-  @js.native
-  def isSerialized(givenItem: js.Any, strict: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("php-serialize", "serialize")
-  @js.native
-  def serialize(item: js.Any): String = js.native
-  @JSImport("php-serialize", "serialize")
-  @js.native
-  def serialize(item: js.Any, scope: js.UndefOr[scala.Nothing], givenOptions: SerializeOptions): String = js.native
-  @JSImport("php-serialize", "serialize")
-  @js.native
-  def serialize(item: js.Any, scope: js.Any): String = js.native
-  @JSImport("php-serialize", "serialize")
-  @js.native
-  def serialize(item: js.Any, scope: js.Any, givenOptions: SerializeOptions): String = js.native
+  @scala.inline
+  def isSerialized(givenItem: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSerialized(givenItem: js.Any, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSerialized")(givenItem.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: String): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: String, scope: js.UndefOr[scala.Nothing], givenOptions: UnserializeOptions): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: String, scope: js.Any): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: String, scope: js.Any, givenOptions: UnserializeOptions): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: Buffer): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: Buffer, scope: js.UndefOr[scala.Nothing], givenOptions: UnserializeOptions): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: Buffer, scope: js.Any): js.Any = js.native
-  @JSImport("php-serialize", "unserialize")
-  @js.native
-  def unserialize(item: Buffer, scope: js.Any, givenOptions: UnserializeOptions): js.Any = js.native
+  @scala.inline
+  def serialize(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serialize(item: js.Any, scope: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def serialize(item: js.Any, scope: js.Any, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def serialize(item: js.Any, scope: Unit, givenOptions: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def unserialize(item: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: String, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: String, scope: js.Any, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: String, scope: Unit, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: Buffer, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: Buffer, scope: js.Any, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unserialize(item: Buffer, scope: Unit, givenOptions: UnserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unserialize")(item.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], givenOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait SerializeOptions extends StObject {
     
     /** @default 'utf8' */
-    val encoding: js.UndefOr[utf8 | binary] = js.native
+    val encoding: js.UndefOr[utf8 | binary] = js.undefined
   }
   object SerializeOptions {
     
@@ -80,14 +68,13 @@ object mod {
     }
   }
   
-  @js.native
   trait UnserializeOptions extends StObject {
     
     /** @default 'utf8' */
-    val encoding: js.UndefOr[utf8 | binary] = js.native
+    val encoding: js.UndefOr[utf8 | binary] = js.undefined
     
     /** @default true' */
-    val strict: js.UndefOr[Boolean] = js.native
+    val strict: js.UndefOr[Boolean] = js.undefined
   }
   object UnserializeOptions {
     

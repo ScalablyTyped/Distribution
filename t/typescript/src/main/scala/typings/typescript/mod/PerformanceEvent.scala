@@ -4,15 +4,13 @@ import typings.typescript.typescriptStrings.CreatePackageJsonAutoImportProvider
 import typings.typescript.typescriptStrings.UpdateGraph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceEvent extends StObject {
   
-  var durationMs: Double = js.native
+  var durationMs: Double
   
-  var kind: UpdateGraph | CreatePackageJsonAutoImportProvider = js.native
+  var kind: UpdateGraph | CreatePackageJsonAutoImportProvider
 }
 object PerformanceEvent {
   

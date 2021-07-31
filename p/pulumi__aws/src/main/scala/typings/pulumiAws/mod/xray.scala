@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xray {
@@ -33,6 +32,10 @@ object xray {
   /* static members */
   object EncryptionConfig {
     
+    @JSImport("@pulumi/aws", "xray.EncryptionConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EncryptionConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,26 +45,21 @@ object xray {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "xray.EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = js.native
-    @JSImport("@pulumi/aws", "xray.EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = js.native
-    @JSImport("@pulumi/aws", "xray.EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionConfigState): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = js.native
-    @JSImport("@pulumi/aws", "xray.EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionConfigMod.EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionConfigMod.EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionConfigState): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionConfigMod.EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): typings.pulumiAws.encryptionConfigMod.EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.encryptionConfigMod.EncryptionConfig]
     
     /**
       * Returns true if the given object is an instance of EncryptionConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "xray.EncryptionConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "xray.Group")
@@ -81,6 +79,10 @@ object xray {
   /* static members */
   object Group {
     
+    @JSImport("@pulumi/aws", "xray.Group")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Group resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,26 +92,21 @@ object xray {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "xray.Group.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.xrayGroupMod.Group = js.native
-    @JSImport("@pulumi/aws", "xray.Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.xrayGroupMod.Group = js.native
-    @JSImport("@pulumi/aws", "xray.Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.xrayGroupMod.Group = js.native
-    @JSImport("@pulumi/aws", "xray.Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.xrayGroupMod.Group = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.xrayGroupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.xrayGroupMod.Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.xrayGroupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.xrayGroupMod.Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.xrayGroupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.xrayGroupMod.Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.xrayGroupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.xrayGroupMod.Group]
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "xray.Group.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/group.Group */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "xray.SamplingRule")
@@ -129,6 +126,10 @@ object xray {
   /* static members */
   object SamplingRule {
     
+    @JSImport("@pulumi/aws", "xray.SamplingRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SamplingRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -138,25 +139,20 @@ object xray {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "xray.SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.samplingRuleMod.SamplingRule = js.native
-    @JSImport("@pulumi/aws", "xray.SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.samplingRuleMod.SamplingRule = js.native
-    @JSImport("@pulumi/aws", "xray.SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SamplingRuleState): typings.pulumiAws.samplingRuleMod.SamplingRule = js.native
-    @JSImport("@pulumi/aws", "xray.SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SamplingRuleState, opts: CustomResourceOptions): typings.pulumiAws.samplingRuleMod.SamplingRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.samplingRuleMod.SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samplingRuleMod.SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.samplingRuleMod.SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samplingRuleMod.SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SamplingRuleState): typings.pulumiAws.samplingRuleMod.SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samplingRuleMod.SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SamplingRuleState, opts: CustomResourceOptions): typings.pulumiAws.samplingRuleMod.SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samplingRuleMod.SamplingRule]
     
     /**
       * Returns true if the given object is an instance of SamplingRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "xray.SamplingRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean]
   }
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCampaignResponse extends StObject {
   
   /**
     * The properties of the campaign.
     */
-  var campaign: js.UndefOr[Campaign] = js.native
+  var campaign: js.UndefOr[Campaign] = js.undefined
 }
 object DescribeCampaignResponse {
   

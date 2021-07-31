@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherStats extends Generic {
+trait WatcherStats
+  extends StObject
+     with Generic {
   
-  var emit_stacktraces: js.UndefOr[Boolean] = js.native
+  var emit_stacktraces: js.UndefOr[Boolean] = js.undefined
   
-  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object WatcherStats {
   

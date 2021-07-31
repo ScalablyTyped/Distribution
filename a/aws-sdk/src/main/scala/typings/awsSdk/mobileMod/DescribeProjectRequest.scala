@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProjectRequest extends StObject {
   
   /**
     *  Unique project identifier. 
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
   
   /**
     *  If set to true, causes AWS Mobile Hub to synchronize information from other services, e.g., update state of AWS CloudFormation stacks in the AWS Mobile Hub project. 
     */
-  var syncFromResources: js.UndefOr[Boolean] = js.native
+  var syncFromResources: js.UndefOr[Boolean] = js.undefined
 }
 object DescribeProjectRequest {
   

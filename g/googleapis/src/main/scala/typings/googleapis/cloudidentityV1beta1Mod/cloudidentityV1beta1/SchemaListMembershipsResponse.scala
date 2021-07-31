@@ -2,22 +2,20 @@ package typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListMembershipsResponse extends StObject {
   
   /**
     * List of Memberships
     */
-  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.native
+  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results available for listing.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListMembershipsResponse {
   

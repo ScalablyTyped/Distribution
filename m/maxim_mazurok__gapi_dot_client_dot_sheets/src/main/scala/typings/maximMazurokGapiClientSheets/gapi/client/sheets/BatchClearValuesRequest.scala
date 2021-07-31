@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchClearValuesRequest extends StObject {
   
   /** The ranges to clear, in A1 notation. */
-  var ranges: js.UndefOr[js.Array[String]] = js.native
+  var ranges: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchClearValuesRequest {
   

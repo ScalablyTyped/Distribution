@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCheckstateChangingEventUIParam extends StObject {
   
   /**
     * Gets the collection of all checked nodes before the new state is applied.
     */
-  var currentCheckedNodes: js.UndefOr[js.Array[_]] = js.native
+  var currentCheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the current state of the checkbox.
     */
-  var currentState: js.UndefOr[String] = js.native
+  var currentState: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the new state that is going to be applied to the checkbox.
     */
-  var newState: js.UndefOr[String] = js.native
+  var newState: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the node object the checkbox of which is being interacted with.
     */
-  var node: js.UndefOr[js.Any] = js.native
+  var node: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the tree.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object NodeCheckstateChangingEventUIParam {
   
@@ -45,7 +43,7 @@ object NodeCheckstateChangingEventUIParam {
   implicit class NodeCheckstateChangingEventUIParamMutableBuilder[Self <: NodeCheckstateChangingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCurrentCheckedNodes(value: js.Array[_]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
+    def setCurrentCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCurrentCheckedNodesUndefined: Self = StObject.set(x, "currentCheckedNodes", js.undefined)

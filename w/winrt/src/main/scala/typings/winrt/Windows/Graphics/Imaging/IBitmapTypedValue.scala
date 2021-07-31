@@ -3,15 +3,13 @@ package typings.winrt.Windows.Graphics.Imaging
 import typings.winrt.Windows.Foundation.PropertyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBitmapTypedValue extends StObject {
   
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IBitmapTypedValue {
   

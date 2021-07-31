@@ -6,17 +6,17 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogContentMod {
   
   @JSImport("@react-md/dialog/types/DialogContent", "DialogContent")
   @js.native
-  val DialogContent: ForwardRefExoticComponent[DialogContentProps with RefAttributes[HTMLDivElement]] = js.native
+  val DialogContent: ForwardRefExoticComponent[DialogContentProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait DialogContentProps extends HTMLAttributes[HTMLDivElement] {
+  trait DialogContentProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the default padding for the content should be removed. This is
@@ -24,7 +24,7 @@ object dialogContentMod {
       * lists).  In all other cases, it is recommended to apply a custom className
       * with the padding overrides instead.
       */
-    var disablePadding: js.UndefOr[Boolean] = js.native
+    var disablePadding: js.UndefOr[Boolean] = js.undefined
   }
   object DialogContentProps {
     

@@ -4,7 +4,6 @@ import typings.awsSdk.errorMod.AWSError
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialsMod {
@@ -105,23 +104,22 @@ object credentialsMod {
     def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CredentialsOptions extends StObject {
     
     /**
       * AWS access key ID.
       */
-    var accessKeyId: String = js.native
+    var accessKeyId: String
     
     /**
       * AWS secret access key.
       */
-    var secretAccessKey: String = js.native
+    var secretAccessKey: String
     
     /**
       * AWS session token.
       */
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
   }
   object CredentialsOptions {
     

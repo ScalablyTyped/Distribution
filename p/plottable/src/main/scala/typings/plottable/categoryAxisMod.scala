@@ -4,7 +4,6 @@ import typings.plottable.axisMod.Axis
 import typings.plottable.axisMod.AxisOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryAxisMod {
@@ -91,7 +90,7 @@ object categoryAxisMod {
       * @return {DownsampleInfo} an object holding the resultant domain and new stepWidth.
       */
     def getDownsampleInfo(): IDownsampleInfo = js.native
-    def getDownsampleInfo(scale: js.UndefOr[scala.Nothing], domain: js.Array[String]): IDownsampleInfo = js.native
+    def getDownsampleInfo(scale: Unit, domain: js.Array[String]): IDownsampleInfo = js.native
     def getDownsampleInfo(scale: typings.plottable.scalesMod.Category): IDownsampleInfo = js.native
     def getDownsampleInfo(scale: typings.plottable.scalesMod.Category, domain: js.Array[String]): IDownsampleInfo = js.native
     
@@ -165,12 +164,11 @@ object categoryAxisMod {
     def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDownsampleInfo extends StObject {
     
-    var domain: js.Array[String] = js.native
+    var domain: js.Array[String]
     
-    var stepWidth: Double = js.native
+    var stepWidth: Double
   }
   object IDownsampleInfo {
     

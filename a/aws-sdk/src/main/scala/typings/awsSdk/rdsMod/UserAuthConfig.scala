@@ -2,36 +2,34 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAuthConfig extends StObject {
   
   /**
     * The type of authentication that the proxy uses for connections from the proxy to the underlying database.
     */
-  var AuthScheme: js.UndefOr[typings.awsSdk.rdsMod.AuthScheme] = js.native
+  var AuthScheme: js.UndefOr[typings.awsSdk.rdsMod.AuthScheme] = js.undefined
   
   /**
     * A user-specified description about the authentication used by a proxy to log in as a specific database user.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy.
     */
-  var IAMAuth: js.UndefOr[IAMAuthMode] = js.native
+  var IAMAuth: js.UndefOr[IAMAuthMode] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
     */
-  var SecretArn: js.UndefOr[String] = js.native
+  var SecretArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the database user to which the proxy connects.
     */
-  var UserName: js.UndefOr[String] = js.native
+  var UserName: js.UndefOr[String] = js.undefined
 }
 object UserAuthConfig {
   

@@ -4,24 +4,22 @@ import typings.materialSegmentedButton.typesMod.SegmentDetail
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@material/segmented-button.@material/segmented-button/segmented-button/adapter.MDCSegmentedButtonAdapter> */
-  @js.native
   trait PartialMDCSegmentedButton extends StObject {
     
-    var getSegments: js.UndefOr[js.Function0[js.Array[SegmentDetail]]] = js.native
+    var getSegments: js.UndefOr[js.Function0[js.Array[SegmentDetail]]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifySelectedChange: js.UndefOr[js.Function1[/* detail */ SegmentDetail, Unit]] = js.native
+    var notifySelectedChange: js.UndefOr[js.Function1[/* detail */ SegmentDetail, Unit]] = js.undefined
     
-    var selectSegment: js.UndefOr[js.Function1[/* indexOrSegmentId */ Double | String, Unit]] = js.native
+    var selectSegment: js.UndefOr[js.Function1[/* indexOrSegmentId */ Double | String, Unit]] = js.undefined
     
-    var unselectSegment: js.UndefOr[js.Function1[/* indexOrSegmentId */ Double | String, Unit]] = js.native
+    var unselectSegment: js.UndefOr[js.Function1[/* indexOrSegmentId */ Double | String, Unit]] = js.undefined
   }
   object PartialMDCSegmentedButton {
     
@@ -67,24 +65,23 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/segmented-button.@material/segmented-button/segment/adapter.MDCSegmentedButtonSegmentAdapter> */
-  @js.native
   trait PartialMDCSegmentedButtonAddClass extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getAttr: js.UndefOr[js.Function1[/* attrName */ String, String | Null]] = js.native
+    var getAttr: js.UndefOr[js.Function1[/* attrName */ String, String | Null]] = js.undefined
     
-    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var isSingleSelect: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isSingleSelect: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifySelectedChange: js.UndefOr[js.Function1[/* selected */ Boolean, Unit]] = js.native
+    var notifySelectedChange: js.UndefOr[js.Function1[/* selected */ Boolean, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setAttr: js.UndefOr[js.Function2[/* attrName */ String, /* value */ String, Unit]] = js.native
+    var setAttr: js.UndefOr[js.Function2[/* attrName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCSegmentedButtonAddClass {
     

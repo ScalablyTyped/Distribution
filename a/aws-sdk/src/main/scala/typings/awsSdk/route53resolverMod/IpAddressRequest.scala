@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpAddressRequest extends StObject {
   
   /**
     * The IP address that you want to use for DNS queries.
     */
-  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.native
+  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.undefined
   
   /**
     * The ID of the subnet that contains the IP address. 
     */
-  var SubnetId: typings.awsSdk.route53resolverMod.SubnetId = js.native
+  var SubnetId: typings.awsSdk.route53resolverMod.SubnetId
 }
 object IpAddressRequest {
   

@@ -2,17 +2,15 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Age extends StObject {
   
-  var age: js.Any = js.native
+  var age: js.Any
   
-  var daemon: js.Any = js.native
+  var daemon: js.Any
   
-  var ttlInterval: js.Any = js.native
+  var ttlInterval: js.Any
 }
 object Age {
   

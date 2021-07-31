@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectLineMeasurement3DViewModelMeasurementValue extends Object {
+trait DirectLineMeasurement3DViewModelMeasurementValue
+  extends StObject
+     with Object {
   
   /**
     * State of the measured value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#MeasurementValue)
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * Textual representation of the measured value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#MeasurementValue)
     */
-  var text: String = js.native
+  var text: String
 }
 object DirectLineMeasurement3DViewModelMeasurementValue {
   

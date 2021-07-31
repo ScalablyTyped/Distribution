@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageSource extends StObject {
   
   /**
     * **Use `image_uri` instead.** The Google Cloud Storage URI of the form `gs://bucket_name/object_name`. Object versioning is not supported. See [Google Cloud Storage Request
     * URIs](https://cloud.google.com/storage/docs/reference-uris) for more info.
     */
-  var gcsImageUri: js.UndefOr[String] = js.native
+  var gcsImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the source image. Can be either: 1. A Google Cloud Storage URI of the form `gs://bucket_name/object_name`. Object versioning is not supported. See [Google Cloud Storage
@@ -21,7 +19,7 @@ trait ImageSource extends StObject {
     * throttles requests to the site for abuse prevention. You should not depend on externally-hosted images for production applications. When both `gcs_image_uri` and `image_uri` are
     * specified, `image_uri` takes precedence.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object ImageSource {
   

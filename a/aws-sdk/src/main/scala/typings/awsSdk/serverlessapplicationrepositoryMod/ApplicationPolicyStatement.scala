@@ -2,32 +2,30 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationPolicyStatement extends StObject {
   
   /**
     * For the list of actions supported for this operation, see Application 
     Permissions.
     */
-  var Actions: listOfString = js.native
+  var Actions: listOfString
   
   /**
     * An array of PrinciplalOrgIDs, which corresponds to AWS IAM aws:PrincipalOrgID global condition key.
     */
-  var PrincipalOrgIDs: js.UndefOr[listOfString] = js.native
+  var PrincipalOrgIDs: js.UndefOr[listOfString] = js.undefined
   
   /**
     * An array of AWS account IDs, or * to make the application public.
     */
-  var Principals: listOfString = js.native
+  var Principals: listOfString
   
   /**
     * A unique ID for the statement.
     */
-  var StatementId: js.UndefOr[string] = js.native
+  var StatementId: js.UndefOr[string] = js.undefined
 }
 object ApplicationPolicyStatement {
   

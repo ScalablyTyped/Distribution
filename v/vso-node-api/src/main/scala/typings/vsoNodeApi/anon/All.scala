@@ -2,33 +2,31 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait All extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var batchedCI: scala.Double = js.native
+  var batchedCI: scala.Double
   
-  var checkInShelveset: scala.Double = js.native
+  var checkInShelveset: scala.Double
   
-  var individualCI: scala.Double = js.native
+  var individualCI: scala.Double
   
-  var manual: scala.Double = js.native
+  var manual: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var pullRequest: scala.Double = js.native
+  var pullRequest: scala.Double
   
-  var schedule: scala.Double = js.native
+  var schedule: scala.Double
   
-  var triggered: scala.Double = js.native
+  var triggered: scala.Double
   
-  var userCreated: scala.Double = js.native
+  var userCreated: scala.Double
   
-  var validateShelveset: scala.Double = js.native
+  var validateShelveset: scala.Double
 }
 object All {
   

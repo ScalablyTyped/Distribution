@@ -3,10 +3,8 @@ package typings.firebase.mod.firebase.firestore
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blob extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Blob extends StObject {
     * @param other The `Blob` to compare against.
     * @return true if this `Blob` is equal to the provided one.
     */
-  def isEqual(other: Blob): Boolean = js.native
+  def isEqual(other: Blob): Boolean
   
   /**
     * Returns the bytes of a Blob as a Base64-encoded string.
@@ -23,7 +21,7 @@ trait Blob extends StObject {
     * @return
     *   The Base64-encoded string created from the Blob object.
     */
-  def toBase64(): String = js.native
+  def toBase64(): String
   
   /**
     * Returns the bytes of a Blob in a new Uint8Array.
@@ -31,7 +29,7 @@ trait Blob extends StObject {
     * @return
     *   The Uint8Array created from the Blob object.
     */
-  def toUint8Array(): Uint8Array = js.native
+  def toUint8Array(): Uint8Array
 }
 object Blob {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to tag. 
     */
-  var resourceArn: ImageBuilderArn = js.native
+  var resourceArn: ImageBuilderArn
   
   /**
     * The tags to apply to the resource. 
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

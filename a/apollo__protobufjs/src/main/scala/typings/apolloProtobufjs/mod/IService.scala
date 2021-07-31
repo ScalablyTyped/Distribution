@@ -3,15 +3,15 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ @js.native
-trait IService extends INamespace {
+- typings.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ trait IService
+  extends StObject
+     with INamespace {
   
   /** Method descriptors */
-  var methods: StringDictionary[js.UndefOr[IMethod]] = js.native
+  var methods: StringDictionary[js.UndefOr[IMethod]]
 }
 object IService {
   

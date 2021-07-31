@@ -2,41 +2,39 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlatformVersionRequest extends StObject {
   
   /**
     * The name of the builder environment.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * The configuration option settings to apply to the builder environment.
     */
-  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.native
+  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.undefined
   
   /**
     * The location of the platform definition archive in Amazon S3.
     */
-  var PlatformDefinitionBundle: S3Location = js.native
+  var PlatformDefinitionBundle: S3Location
   
   /**
     * The name of your custom platform.
     */
-  var PlatformName: typings.awsSdk.elasticbeanstalkMod.PlatformName = js.native
+  var PlatformName: typings.awsSdk.elasticbeanstalkMod.PlatformName
   
   /**
     * The number, such as 1.0.2, for the new platform version.
     */
-  var PlatformVersion: typings.awsSdk.elasticbeanstalkMod.PlatformVersion = js.native
+  var PlatformVersion: typings.awsSdk.elasticbeanstalkMod.PlatformVersion
   
   /**
     * Specifies the tags applied to the new platform version. Elastic Beanstalk applies these tags only to the platform version. Environments that you create using the platform version don't inherit the tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Tags] = js.undefined
 }
 object CreatePlatformVersionRequest {
   

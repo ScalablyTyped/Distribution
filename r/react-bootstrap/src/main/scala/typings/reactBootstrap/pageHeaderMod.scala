@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageHeaderMod {
@@ -18,10 +17,11 @@ object pageHeaderMod {
   trait PageHeader
     extends Component[PageHeaderProps, js.Object, js.Any]
   
-  @js.native
-  trait PageHeaderProps extends HTMLProps[PageHeader] {
+  trait PageHeaderProps
+    extends StObject
+       with HTMLProps[PageHeader] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
   }
   object PageHeaderProps {
     

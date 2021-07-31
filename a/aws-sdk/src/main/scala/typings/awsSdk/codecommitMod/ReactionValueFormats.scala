@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactionValueFormats extends StObject {
   
   /**
     * The Emoji Version 1.0 graphic of the reaction. These graphics are interpreted slightly differently on different operating systems.
     */
-  var emoji: js.UndefOr[ReactionEmoji] = js.native
+  var emoji: js.UndefOr[ReactionEmoji] = js.undefined
   
   /**
     * The emoji short code for the reaction. Short codes are interpreted slightly differently on different operating systems. 
     */
-  var shortCode: js.UndefOr[ReactionShortCode] = js.native
+  var shortCode: js.UndefOr[ReactionShortCode] = js.undefined
   
   /**
     * The Unicode codepoint for the reaction.
     */
-  var unicode: js.UndefOr[ReactionUnicode] = js.native
+  var unicode: js.UndefOr[ReactionUnicode] = js.undefined
 }
 object ReactionValueFormats {
   

@@ -20,19 +20,17 @@ import typings.nodeRedRuntime.anon.Path
 import typings.nodeRedRuntime.anon.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var wires: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var wires: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   }
   object Id {
     
@@ -64,93 +62,92 @@ object anon {
   }
   
   /* Inlined std.Partial<@node-red/runtime.@node-red/runtime.LocalSettings> */
-  @js.native
   trait PartialLocalSettings extends StObject {
     
-    var adminAuth: js.UndefOr[Default | Authenticate | Strategy] = js.native
+    var adminAuth: js.UndefOr[Default | Authenticate | Strategy] = js.undefined
     
-    var apiMaxLength: js.UndefOr[String] = js.native
+    var apiMaxLength: js.UndefOr[String] = js.undefined
     
-    var contextStorage: js.UndefOr[StringDictionary[String | Module]] = js.native
+    var contextStorage: js.UndefOr[StringDictionary[String | Module]] = js.undefined
     
-    var credentialSecret: js.UndefOr[String | `false`] = js.native
+    var credentialSecret: js.UndefOr[String | `false`] = js.undefined
     
-    var debugMaxLength: js.UndefOr[Double] = js.native
+    var debugMaxLength: js.UndefOr[Double] = js.undefined
     
-    var debugUseColors: js.UndefOr[Boolean] = js.native
+    var debugUseColors: js.UndefOr[Boolean] = js.undefined
     
-    var disableEditor: js.UndefOr[Boolean] = js.native
+    var disableEditor: js.UndefOr[Boolean] = js.undefined
     
-    var editorTheme: js.UndefOr[DeployButton] = js.native
+    var editorTheme: js.UndefOr[DeployButton] = js.undefined
     
-    var exportGlobalContextKeys: js.UndefOr[Boolean] = js.native
+    var exportGlobalContextKeys: js.UndefOr[Boolean] = js.undefined
     
-    var flowFile: js.UndefOr[String] = js.native
+    var flowFile: js.UndefOr[String] = js.undefined
     
-    var flowFilePretty: js.UndefOr[Boolean] = js.native
+    var flowFilePretty: js.UndefOr[Boolean] = js.undefined
     
-    var functionGlobalContext: js.UndefOr[js.Object] = js.native
+    var functionGlobalContext: js.UndefOr[js.Object] = js.undefined
     
-    var httpAdminRoot: js.UndefOr[String | `false`] = js.native
+    var httpAdminRoot: js.UndefOr[String | `false`] = js.undefined
     
-    var httpNodeAuth: js.UndefOr[Pass] = js.native
+    var httpNodeAuth: js.UndefOr[Pass] = js.undefined
     
-    var httpNodeCors: js.UndefOr[CorsOptions] = js.native
+    var httpNodeCors: js.UndefOr[CorsOptions] = js.undefined
     
     var httpNodeMiddleware: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var httpNodeRoot: js.UndefOr[String | `false`] = js.native
+    var httpNodeRoot: js.UndefOr[String | `false`] = js.undefined
     
-    var httpRequestTimeout: js.UndefOr[Double] = js.native
+    var httpRequestTimeout: js.UndefOr[Double] = js.undefined
     
-    var httpRoot: js.UndefOr[String | `false`] = js.native
+    var httpRoot: js.UndefOr[String | `false`] = js.undefined
     
-    var httpServerOptions: js.UndefOr[js.Object] = js.native
+    var httpServerOptions: js.UndefOr[js.Object] = js.undefined
     
-    var httpStatic: js.UndefOr[String] = js.native
+    var httpStatic: js.UndefOr[String] = js.undefined
     
-    var httpStaticAuth: js.UndefOr[Pass] = js.native
+    var httpStaticAuth: js.UndefOr[Pass] = js.undefined
     
-    var https: js.UndefOr[ServerOptions] = js.native
+    var https: js.UndefOr[ServerOptions] = js.undefined
     
-    var logging: js.UndefOr[Console] = js.native
+    var logging: js.UndefOr[Console] = js.undefined
     
-    var mqttReconnectTime: js.UndefOr[Double] = js.native
+    var mqttReconnectTime: js.UndefOr[Double] = js.undefined
     
-    var nodeMessageBufferMaxLength: js.UndefOr[Double] = js.native
+    var nodeMessageBufferMaxLength: js.UndefOr[Double] = js.undefined
     
-    var nodesDir: js.UndefOr[String] = js.native
+    var nodesDir: js.UndefOr[String] = js.undefined
     
-    var paletteCategories: js.UndefOr[js.Array[String]] = js.native
+    var paletteCategories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var safeMode: js.UndefOr[Boolean] = js.native
+    var safeMode: js.UndefOr[Boolean] = js.undefined
     
-    var serialReconnectTime: js.UndefOr[Double] = js.native
+    var serialReconnectTime: js.UndefOr[Double] = js.undefined
     
-    var socketReconnectTime: js.UndefOr[Double] = js.native
+    var socketReconnectTime: js.UndefOr[Double] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
-    var tcpMsgQueueSize: js.UndefOr[Double] = js.native
+    var tcpMsgQueueSize: js.UndefOr[Double] = js.undefined
     
-    var tlsConfigDisableLocalFiles: js.UndefOr[Boolean] = js.native
+    var tlsConfigDisableLocalFiles: js.UndefOr[Boolean] = js.undefined
     
-    var ui: js.UndefOr[Path] = js.native
+    var ui: js.UndefOr[Path] = js.undefined
     
-    var uiHost: js.UndefOr[String] = js.native
+    var uiHost: js.UndefOr[String] = js.undefined
     
-    var uiPort: js.UndefOr[Double] = js.native
+    var uiPort: js.UndefOr[Double] = js.undefined
     
-    var userDir: js.UndefOr[String] = js.native
+    var userDir: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     var webSocketNodeVerifyClient: js.UndefOr[
         (js.Function1[/* info */ Origin, Boolean]) | (js.Function2[
@@ -163,7 +160,7 @@ object anon {
           ], 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object PartialLocalSettings {
     
@@ -268,7 +265,7 @@ object anon {
       
       @scala.inline
       def setHttpNodeMiddleware(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => Unit
       ): Self = StObject.set(x, "httpNodeMiddleware", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -448,23 +445,22 @@ object anon {
   }
   
   /* Inlined node-red-node-test-helper.node-red-node-test-helper.TestFlowsItem<node-red.node-red.NodeDef> */
-  @js.native
   trait TestFlowsItemNodeDef extends StObject {
     
-    var id: js.UndefOr[String] with String = js.native
+    var id: js.UndefOr[String] & String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] with String = js.native
+    var `type`: js.UndefOr[String] & String
     
-    var wires: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var wires: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
-    var z: js.UndefOr[String] = js.native
+    var z: js.UndefOr[String] = js.undefined
   }
   object TestFlowsItemNodeDef {
     
     @scala.inline
-    def apply(id: js.UndefOr[String] with String, `type`: js.UndefOr[String] with String): TestFlowsItemNodeDef = {
+    def apply(id: js.UndefOr[String] & String, `type`: js.UndefOr[String] & String): TestFlowsItemNodeDef = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestFlowsItemNodeDef]
@@ -474,7 +470,7 @@ object anon {
     implicit class TestFlowsItemNodeDefMutableBuilder[Self <: TestFlowsItemNodeDef] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setId(value: js.UndefOr[String] with String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -483,7 +479,7 @@ object anon {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setType(value: js.UndefOr[String] with String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.UndefOr[String] & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWires(value: js.Array[js.Array[String]]): Self = StObject.set(x, "wires", value.asInstanceOf[js.Any])

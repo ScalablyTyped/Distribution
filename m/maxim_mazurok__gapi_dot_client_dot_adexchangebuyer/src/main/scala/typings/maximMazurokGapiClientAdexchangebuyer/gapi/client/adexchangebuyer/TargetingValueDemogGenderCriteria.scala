@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingValueDemogGenderCriteria extends StObject {
   
-  var demogGenderCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var demogGenderCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TargetingValueDemogGenderCriteria {
   

@@ -97,7 +97,6 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationPaginationMod {
@@ -124,17 +123,17 @@ object paginationPaginationMod {
   /* Inlined {None <TAsComponent extends react.react.ElementType<any> = react.react.ElementType<any>>(props : {  as :TAsComponent | undefined} & rbx.rbx/base/helpers.HelpersPropsOverrides & std.Pick<rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}, 'hidden' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly'> & rbx.rbx/components/pagination/pagination.PaginationModifiers & std.Pick<react.react.ComponentProps<TAsComponent>, std.Exclude<keyof react.react.ComponentProps<TAsComponent>, 'hidden' | 'overlay' | 'size' | 'italic' | 'relative' | 'tooltip' | 'as' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'align' | 'rounded'>> & react.react.RefAttributes<TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent>): react.react.<global>.JSX.Element | null,   defaultProps :{  as :react.react.ElementType<any>} & std.Partial<rbx.rbx/base/helpers.HelpersPropsOverrides & std.Pick<rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}, 'hidden' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly'> & rbx.rbx/components/pagination/pagination.PaginationModifiers & std.Pick<any, string | number | symbol>>,   displayName :string,   propTypes :react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}>,   Ellipsis :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/types.Prefer<rbx.rbx/base/helpers.HelpersPropsOverrides, rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}>, react.react.ElementType<any>>,   Link :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/components/pagination/pagination-link.PaginationLinkProps, react.react.ElementType<any>>,   List :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/types.Prefer<rbx.rbx/base/helpers.HelpersPropsOverrides, rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}>, react.react.ElementType<any>>,   Step :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/components/pagination/pagination-step.PaginationStepProps, react.react.ElementType<any>>} & std.Pick<react.react.ForwardRefExoticComponent<react.react.ElementType<any>>, 'displayName' | '$$typeof'> */
   object Pagination {
     
-    @JSImport("rbx/components/pagination/pagination", "Pagination")
-    @js.native
-    def apply[TAsComponent /* <: ElementType[_] */](
-      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[
+    @scala.inline
+    def apply[TAsComponent /* <: ElementType[js.Any] */](
+      props: `6`[TAsComponent] & HelpersPropsOverrides & PickBadgeHelpersPropsFloa & PaginationModifiers & (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
             hidden | overlay | size | italic | relative | tooltip | as | className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly | align | rounded
           ]
-        ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
-    ): Element | Null = js.native
+        ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
+    ): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    
     @JSImport("rbx/components/pagination/pagination", "Pagination")
     @js.native
     val ^ : js.Any = js.native
@@ -165,13 +164,13 @@ object paginationPaginationMod {
     
     @JSImport("rbx/components/pagination/pagination", "Pagination.defaultProps")
     @js.native
-    def defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[_, String | Double | js.Symbol])
+    def defaultProps: AsElementType & (Partial[
+        HelpersPropsOverrides & PickBadgeHelpersPropsFloa & PaginationModifiers & (Pick[js.Any, String | Double | js.Symbol])
       ]) = js.native
     @scala.inline
     def defaultProps_=(
-      x: AsElementType with (Partial[
-          HelpersPropsOverrides with PickBadgeHelpersPropsFloa with PaginationModifiers with (Pick[_, String | Double | js.Symbol])
+      x: AsElementType & (Partial[
+          HelpersPropsOverrides & PickBadgeHelpersPropsFloa & PaginationModifiers & (Pick[js.Any, String | Double | js.Symbol])
         ])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
@@ -192,14 +191,13 @@ object paginationPaginationMod {
     object propTypes
   }
   
-  @js.native
   trait PaginationModifiers extends StObject {
     
-    var align: js.UndefOr[centered | right] = js.native
+    var align: js.UndefOr[centered | right] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large] = js.native
+    var size: js.UndefOr[small | medium | large] = js.undefined
   }
   object PaginationModifiers {
     
@@ -233,88 +231,87 @@ object paginationPaginationMod {
   }
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps & rbx.rbx/components/pagination/pagination.PaginationModifiers */
-  @js.native
   trait PaginationProps extends StObject {
     
-    var align: js.UndefOr[centered | right] = js.native
+    var align: js.UndefOr[centered | right] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large] = js.native
+    var size: js.UndefOr[small | medium | large] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
     
-    var tooltip: js.UndefOr[Double | String] = js.native
+    var tooltip: js.UndefOr[Double | String] = js.undefined
     
-    var tooltipActive: js.UndefOr[Boolean] = js.native
+    var tooltipActive: js.UndefOr[Boolean] = js.undefined
     
     var tooltipColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var tooltipMultiline: js.UndefOr[Boolean] = js.native
+    var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
   }
   object PaginationProps {
     
@@ -550,12 +547,11 @@ object paginationPaginationMod {
   }
   
   /* Inlined rbx.rbx/types.Prefer<rbx.rbx/components/pagination/pagination.PaginationVariablesOverrides, rbx.rbx/components/pagination/pagination.PaginationVariablesDefaults> */
-  @js.native
   trait PaginationVariables extends StObject {
     
-    var alignments: centered | right = js.native
+    var alignments: centered | right
     
-    var sizes: small | medium | large = js.native
+    var sizes: small | medium | large
   }
   object PaginationVariables {
     
@@ -576,12 +572,11 @@ object paginationPaginationMod {
     }
   }
   
-  @js.native
   trait PaginationVariablesDefaults extends StObject {
     
-    var alignments: centered | right = js.native
+    var alignments: centered | right
     
-    var sizes: small | medium | large = js.native
+    var sizes: small | medium | large
   }
   object PaginationVariablesDefaults {
     
@@ -602,6 +597,5 @@ object paginationPaginationMod {
     }
   }
   
-  @js.native
   trait PaginationVariablesOverrides extends StObject
 }

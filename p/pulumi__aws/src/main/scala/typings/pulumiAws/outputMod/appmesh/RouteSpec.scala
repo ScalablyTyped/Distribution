@@ -2,37 +2,35 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpec extends StObject {
   
   /**
     * The gRPC routing information for the route.
     */
-  var grpcRoute: js.UndefOr[RouteSpecGrpcRoute] = js.native
+  var grpcRoute: js.UndefOr[RouteSpecGrpcRoute] = js.undefined
   
   /**
     * The HTTP/2 routing information for the route.
     */
-  var http2Route: js.UndefOr[RouteSpecHttp2Route] = js.native
+  var http2Route: js.UndefOr[RouteSpecHttp2Route] = js.undefined
   
   /**
     * The HTTP routing information for the route.
     */
-  var httpRoute: js.UndefOr[RouteSpecHttpRoute] = js.native
+  var httpRoute: js.UndefOr[RouteSpecHttpRoute] = js.undefined
   
   /**
     * The priority for the route, between `0` and `1000`.
     * Routes are matched based on the specified value, where `0` is the highest priority.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * The TCP routing information for the route.
     */
-  var tcpRoute: js.UndefOr[RouteSpecTcpRoute] = js.native
+  var tcpRoute: js.UndefOr[RouteSpecTcpRoute] = js.undefined
 }
 object RouteSpec {
   

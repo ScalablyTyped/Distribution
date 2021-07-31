@@ -5,7 +5,6 @@ import typings.actionsOnGoogle.helperHelperMod.Helper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2LinkValueSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deeplinkMod {
@@ -21,9 +20,8 @@ object deeplinkMod {
     def this(options: DeepLinkOptions) = this()
   }
   
-  type DeepLinkArgument = js.UndefOr[scala.Nothing]
+  type DeepLinkArgument = Unit
   
-  @js.native
   trait DeepLinkOptions extends StObject {
     
     /**
@@ -31,25 +29,25 @@ object deeplinkMod {
       * @public
       */
     @JSName("package")
-    var _package: String = js.native
+    var _package: String
     
     /**
       * The name of the link destination.
       * @public
       */
-    var destination: String = js.native
+    var destination: String
     
     /**
       * The reason to transfer the user. This may be appended to a Google-specified prompt.
       * @public
       */
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
     /**
       * URL of Android deep link.
       * @public
       */
-    var url: String = js.native
+    var url: String
   }
   object DeepLinkOptions {
     

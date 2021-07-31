@@ -2,20 +2,18 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnTabReplacedDetails extends StObject {
   
   /** The ID of the tab that was replaced. */
-  var replacedTabId: Double = js.native
+  var replacedTabId: Double
   
   /** The ID of the tab that replaced the old tab. */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The time when the replacement happened, in milliseconds since the epoch. */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
 }
 object OnTabReplacedDetails {
   

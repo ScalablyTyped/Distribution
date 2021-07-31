@@ -4,36 +4,34 @@ import typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the {@link com.sun.star.sdbcx.Table} with additional display information, sorting and filtering criteria. */
-@js.native
 trait DataSettings extends StObject {
   
   /** indicates whether the filter should be applied or not, default is `FALSE` . */
-  var ApplyFilter: Boolean = js.native
+  var ApplyFilter: Boolean
   
   /** additional filter for the data object. */
-  var Filter: String = js.native
+  var Filter: String
   
   /** specifies the font attributes for data displaying. */
-  var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor
   
   /** additional group by for the data object. */
-  var GroupBy: String = js.native
+  var GroupBy: String
   
   /** additional having clause for the data object. */
-  var HavingClause: String = js.native
+  var HavingClause: String
   
   /** is an additional sort order definition. */
-  var Order: String = js.native
+  var Order: String
   
   /** specifies the height of a data row. */
-  var RowHeight: Double = js.native
+  var RowHeight: Double
   
   /** specifies the text color (RGB) for displaying text. */
-  var TextColor: Color = js.native
+  var TextColor: Color
 }
 object DataSettings {
   

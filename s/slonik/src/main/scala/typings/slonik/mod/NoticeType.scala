@@ -2,23 +2,21 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoticeType extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var length: Double = js.native
+  var length: Double
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var severity: String = js.native
+  var severity: String
   
-  var where: String = js.native
+  var where: String
 }
 object NoticeType {
   

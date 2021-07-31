@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFieldLevelEncryptionConfigResult extends StObject {
   
   /**
     * The value of the ETag header that you received when updating the configuration. For example: E2QWRUHAPOMQZL.
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * Return the results of updating the configuration.
     */
-  var FieldLevelEncryption: js.UndefOr[typings.awsSdk.cloudfrontMod.FieldLevelEncryption] = js.native
+  var FieldLevelEncryption: js.UndefOr[typings.awsSdk.cloudfrontMod.FieldLevelEncryption] = js.undefined
 }
 object UpdateFieldLevelEncryptionConfigResult {
   

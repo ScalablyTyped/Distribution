@@ -4,7 +4,6 @@ import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.pathMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
@@ -25,15 +24,18 @@ object nodeMod {
   /* static members */
   object NamedNode {
     
+    @JSImport("@firebase/database/dist/src/core/snap/Node", "NamedNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       *
       * @param {!string} name
       * @param {!Node} node
       * @return {NamedNode}
       */
-    @JSImport("@firebase/database/dist/src/core/snap/Node", "NamedNode.Wrap")
-    @js.native
-    def Wrap(name: String, node: Node): NamedNode = js.native
+    @scala.inline
+    def Wrap(name: String, node: Node): NamedNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[NamedNode]
   }
   
   @js.native

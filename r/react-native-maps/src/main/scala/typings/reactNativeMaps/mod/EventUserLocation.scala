@@ -5,15 +5,14 @@ import typings.reactNative.mod.NodeHandle
 import typings.reactNativeMaps.anon.CoordinateAccuracy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventUserLocation
-  extends BaseSyntheticEvent[js.Object, NodeHandle, NodeHandle] {
+  extends StObject
+     with BaseSyntheticEvent[js.Object, NodeHandle, NodeHandle] {
   
   @JSName("nativeEvent")
-  var nativeEvent_EventUserLocation: CoordinateAccuracy = js.native
+  var nativeEvent_EventUserLocation: CoordinateAccuracy
 }
 object EventUserLocation {
   

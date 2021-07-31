@@ -6,13 +6,13 @@ import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpineFile extends MultiFile {
+trait SpineFile
+  extends StObject
+     with MultiFile {
   
-  def addToCache(): js.Any = js.native
+  def addToCache(): js.Any
 }
 object SpineFile {
   

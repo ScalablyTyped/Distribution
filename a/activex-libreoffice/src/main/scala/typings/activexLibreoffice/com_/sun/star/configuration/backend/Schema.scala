@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.Layer Service providing access to individual configuration data for an entity.
   * @since OOo 1.1.2
   */
-@js.native
-trait Schema extends XSchema {
+trait Schema
+  extends StObject
+     with XSchema {
   
   /**
     * The URL of the layer data.
     * @since OOo 2.0
     */
-  var URL: String = js.native
+  var URL: String
 }
 object Schema {
   

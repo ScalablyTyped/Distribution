@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBaiduChannelResponse extends StObject {
   
-  var BaiduChannelResponse: typings.awsSdk.pinpointMod.BaiduChannelResponse = js.native
+  var BaiduChannelResponse: typings.awsSdk.pinpointMod.BaiduChannelResponse
 }
 object UpdateBaiduChannelResponse {
   

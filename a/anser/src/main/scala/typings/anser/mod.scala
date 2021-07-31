@@ -11,16 +11,21 @@ import typings.anser.anserStrings.strikethrough
 import typings.anser.anserStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("anser", JSImport.Default)
   @js.native
-  class default () extends Anser
+  class default ()
+    extends StObject
+       with Anser
   /* static members */
   object default {
+    
+    @JSImport("anser", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This replaces ANSI terminal escape codes with SPAN tags that wrap the
@@ -43,12 +48,10 @@ object mod {
       * @param options The options.
       * @returns The HTML output.
       */
-    @JSImport("anser", "default.ansiToHtml")
-    @js.native
-    def ansiToHtml(txt: String): String = js.native
-    @JSImport("anser", "default.ansiToHtml")
-    @js.native
-    def ansiToHtml(txt: String, options: AnserOptions): String = js.native
+    @scala.inline
+    def ansiToHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def ansiToHtml(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Converts ANSI input into JSON output.
@@ -57,12 +60,10 @@ object mod {
       * @param options The options.
       * @returns The HTML output.
       */
-    @JSImport("anser", "default.ansiToJson")
-    @js.native
-    def ansiToJson(txt: String): js.Array[AnserJsonEntry] = js.native
-    @JSImport("anser", "default.ansiToJson")
-    @js.native
-    def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = js.native
+    @scala.inline
+    def ansiToJson(txt: String): js.Array[AnserJsonEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any]).asInstanceOf[js.Array[AnserJsonEntry]]
+    @scala.inline
+    def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AnserJsonEntry]]
     
     /**
       * Converts ANSI input into text output.
@@ -70,12 +71,10 @@ object mod {
       * @param txt The input text.
       * @returns The text output.
       */
-    @JSImport("anser", "default.ansiToText")
-    @js.native
-    def ansiToText(txt: String): String = js.native
-    @JSImport("anser", "default.ansiToText")
-    @js.native
-    def ansiToText(txt: String, options: AnserOptions): String = js.native
+    @scala.inline
+    def ansiToText(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def ansiToText(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Escape the input HTML.
@@ -87,9 +86,8 @@ object mod {
       * @param txt The input text (containing the ANSI snippets).
       * @returns The escaped html.
       */
-    @JSImport("anser", "default.escapeForHtml")
-    @js.native
-    def escapeForHtml(txt: String): String = js.native
+    @scala.inline
+    def escapeForHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Adds the links in the HTML.
@@ -102,9 +100,8 @@ object mod {
       * @param txt The input text.
       * @returns The HTML containing the <a> tags (unescaped).
       */
-    @JSImport("anser", "default.linkify")
-    @js.native
-    def linkify(txt: String): String = js.native
+    @scala.inline
+    def linkify(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -156,7 +153,7 @@ object mod {
     def linkify(txt: String): String = js.native
     
     def process(txt: String): String = js.native
-    def process(txt: String, options: js.UndefOr[scala.Nothing], markup: Boolean): String = js.native
+    def process(txt: String, options: Unit, markup: Boolean): String = js.native
     def process(txt: String, options: AnserOptions): String = js.native
     def process(txt: String, options: AnserOptions, markup: Boolean): String = js.native
     /**
@@ -170,7 +167,7 @@ object mod {
     def process(txt: String, options: OptionsWithJson, markup: Boolean): js.Array[AnserJsonEntry] = js.native
     
     def processChunk(text: String): String = js.native
-    def processChunk(text: String, options: js.UndefOr[scala.Nothing], markup: Boolean): String = js.native
+    def processChunk(text: String, options: Unit, markup: Boolean): String = js.native
     def processChunk(text: String, options: AnserOptions): String = js.native
     def processChunk(text: String, options: AnserOptions, markup: Boolean): String = js.native
     /**
@@ -193,7 +190,7 @@ object mod {
       * @return The JSON output.
       */
     def processChunkJson(text: String): AnserJsonEntry = js.native
-    def processChunkJson(text: String, options: js.UndefOr[scala.Nothing], markup: Boolean): AnserJsonEntry = js.native
+    def processChunkJson(text: String, options: Unit, markup: Boolean): AnserJsonEntry = js.native
     def processChunkJson(text: String, options: AnserOptions): AnserJsonEntry = js.native
     def processChunkJson(text: String, options: AnserOptions, markup: Boolean): AnserJsonEntry = js.native
     
@@ -203,34 +200,33 @@ object mod {
     def setupPalette(): Unit = js.native
   }
   
-  @js.native
   trait AnserJsonEntry extends StObject {
     
     /** The background color. */
-    var bg: String = js.native
+    var bg: String
     
     /** The background true color (if 16m color is enabled). */
-    var bg_truecolor: String = js.native
+    var bg_truecolor: String
     
     /** `true` if a carriageReturn \r was fount at end of line. */
-    var clearLine: Boolean = js.native
+    var clearLine: Boolean
     
     /** The text. */
-    var content: String = js.native
+    var content: String
     
-    var decoration: Null | bold | dim | italic | underline | blink | reverse | hidden | strikethrough = js.native
+    var decoration: Null | bold | dim | italic | underline | blink | reverse | hidden | strikethrough
     
     /** The foreground color. */
-    var fg: String = js.native
+    var fg: String
     
     /** The foreground true color (if 16m color is enabled). */
-    var fg_truecolor: String = js.native
+    var fg_truecolor: String
     
     /** A function returning `true` if the content is empty, or `false` otherwise. */
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
     /** `true` if the colors were processed, `false` otherwise. */
-    var was_processed: Boolean = js.native
+    var was_processed: Boolean
   }
   object AnserJsonEntry {
     
@@ -245,7 +241,7 @@ object mod {
       isEmpty: () => Boolean,
       was_processed: Boolean
     ): AnserJsonEntry = {
-      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], bg_truecolor = bg_truecolor.asInstanceOf[js.Any], clearLine = clearLine.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fg_truecolor = fg_truecolor.asInstanceOf[js.Any], isEmpty = js.Any.fromFunction0(isEmpty), was_processed = was_processed.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], bg_truecolor = bg_truecolor.asInstanceOf[js.Any], clearLine = clearLine.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fg_truecolor = fg_truecolor.asInstanceOf[js.Any], isEmpty = js.Any.fromFunction0(isEmpty), was_processed = was_processed.asInstanceOf[js.Any], decoration = null)
       __obj.asInstanceOf[AnserJsonEntry]
     }
     
@@ -284,16 +280,15 @@ object mod {
     }
   }
   
-  @js.native
   trait AnserOptions extends StObject {
     
     /** If `true`, the result will be an object. */
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var remove_empty: js.UndefOr[Boolean] = js.native
+    var remove_empty: js.UndefOr[Boolean] = js.undefined
     
     /** If `true`, HTML classes will be appended to the HTML output. */
-    var use_classes: js.UndefOr[Boolean] = js.native
+    var use_classes: js.UndefOr[Boolean] = js.undefined
   }
   object AnserOptions {
     
@@ -326,23 +321,18 @@ object mod {
     }
   }
   
-  /* Inlined anser.anser.AnserOptions & {  json :true} */
-  @js.native
-  trait OptionsWithJson extends StObject {
+  trait OptionsWithJson
+    extends StObject
+       with AnserOptions {
     
-    /** If `true`, the result will be an object. */
-    var json: js.UndefOr[Boolean] with `true` = js.native
-    
-    var remove_empty: js.UndefOr[Boolean] = js.native
-    
-    /** If `true`, HTML classes will be appended to the HTML output. */
-    var use_classes: js.UndefOr[Boolean] = js.native
+    @JSName("json")
+    var json_OptionsWithJson: `true`
   }
   object OptionsWithJson {
     
     @scala.inline
-    def apply(json: js.UndefOr[Boolean] with `true`): OptionsWithJson = {
-      val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+    def apply(): OptionsWithJson = {
+      val __obj = js.Dynamic.literal(json = true)
       __obj.asInstanceOf[OptionsWithJson]
     }
     
@@ -350,19 +340,7 @@ object mod {
     implicit class OptionsWithJsonMutableBuilder[Self <: OptionsWithJson] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setJson(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRemove_empty(value: Boolean): Self = StObject.set(x, "remove_empty", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRemove_emptyUndefined: Self = StObject.set(x, "remove_empty", js.undefined)
-      
-      @scala.inline
-      def setUse_classes(value: Boolean): Self = StObject.set(x, "use_classes", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUse_classesUndefined: Self = StObject.set(x, "use_classes", js.undefined)
+      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
 }

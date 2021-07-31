@@ -2,16 +2,14 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.Route<string, object | undefined>, 'name' | 'params'> */
-@js.native
 trait PickRoutestringobjectunde extends StObject {
   
-  var name: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[js.Any] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object PickRoutestringobjectunde {
   

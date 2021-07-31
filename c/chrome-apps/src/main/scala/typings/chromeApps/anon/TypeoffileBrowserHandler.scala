@@ -6,16 +6,14 @@ import typings.chromeApps.chrome.fileBrowserHandler.SelectFileParameters
 import typings.chromeApps.chrome.fileBrowserHandler.SelectionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeoffileBrowserHandler extends StObject {
   
   /**
     * Fired when file system action is executed from ChromeOS file browser.
     */
-  val onExecute: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]] = js.native
+  val onExecute: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]]
   
   /**
     * Prompts user to select file path under which file should be saved.
@@ -27,7 +25,7 @@ trait TypeoffileBrowserHandler extends StObject {
     * @param params Parameters that will be used while selecting the file.
     * @param callback Function called upon completion.
     */
-  def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
+  def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit
 }
 object TypeoffileBrowserHandler {
   

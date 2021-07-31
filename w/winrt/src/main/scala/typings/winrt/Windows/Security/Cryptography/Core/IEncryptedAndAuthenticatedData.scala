@@ -3,15 +3,13 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEncryptedAndAuthenticatedData extends StObject {
   
-  var authenticationTag: IBuffer = js.native
+  var authenticationTag: IBuffer
   
-  var encryptedData: IBuffer = js.native
+  var encryptedData: IBuffer
 }
 object IEncryptedAndAuthenticatedData {
   

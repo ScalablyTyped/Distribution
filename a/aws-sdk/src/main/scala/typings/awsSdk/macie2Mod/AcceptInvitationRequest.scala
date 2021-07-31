@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInvitationRequest extends StObject {
   
   /**
     * The unique identifier for the invitation to accept.
     */
-  var invitationId: string = js.native
+  var invitationId: string
   
   /**
     * The AWS account ID for the account that sent the invitation.
     */
-  var masterAccount: string = js.native
+  var masterAccount: string
 }
 object AcceptInvitationRequest {
   

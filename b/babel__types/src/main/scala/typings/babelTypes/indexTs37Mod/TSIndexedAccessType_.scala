@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSIndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSIndexedAccessType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSIndexedAccessType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var indexType: TSType = js.native
+  var indexType: TSType
   
-  var objectType: TSType = js.native
+  var objectType: TSType
   
   @JSName("type")
-  var type_TSIndexedAccessType_ : TSIndexedAccessType = js.native
+  var type_TSIndexedAccessType_ : TSIndexedAccessType
 }
 object TSIndexedAccessType_ {
   
   @scala.inline
-  def apply(indexType: TSType, objectType: TSType, `type`: TSIndexedAccessType): TSIndexedAccessType_ = {
-    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(indexType: TSType, objectType: TSType): TSIndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSIndexedAccessType")
     __obj.asInstanceOf[TSIndexedAccessType_]
   }
   

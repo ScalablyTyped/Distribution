@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontSizeProps[TLength] extends StObject {
   
   val fontSize: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FontSizeProps {
   
@@ -23,12 +21,12 @@ object FontSizeProps {
   }
   
   @scala.inline
-  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[_], TLength] (val x: Self with FontSizeProps[TLength]) extends AnyVal {
+  implicit class FontSizePropsMutableBuilder[Self <: FontSizeProps[?], TLength] (val x: Self & FontSizeProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setFontSize(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object FontSizeProps {
     def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setFontSizeVarargs(value: js.Any*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+    def setFontSizeVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "fontSize", js.Array(value :_*))
   }
 }

@@ -5,62 +5,60 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition
 import typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
   /**
     * A unique ID for `Animation` representing the sources that triggered this CSS
     * animation/transition.
     */
-  var cssId: js.UndefOr[String] = js.native
+  var cssId: js.UndefOr[String] = js.undefined
   
   /**
     * `Animation`'s current time.
     */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
   /**
     * `Animation`'s id.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * `Animation`'s name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * `Animation`'s internal paused state.
     */
-  var pausedState: Boolean = js.native
+  var pausedState: Boolean
   
   /**
     * `Animation`'s play state.
     */
-  var playState: String = js.native
+  var playState: String
   
   /**
     * `Animation`'s playback rate.
     */
-  var playbackRate: Double = js.native
+  var playbackRate: Double
   
   /**
     * `Animation`'s source animation node.
     */
-  var source: js.UndefOr[AnimationEffect] = js.native
+  var source: js.UndefOr[AnimationEffect] = js.undefined
   
   /**
     * `Animation`'s start time.
     */
-  var startTime: Double = js.native
+  var startTime: Double
   
   /**
     * Animation type of `Animation`. (AnimationType enum)
     */
-  var `type`: CSSTransition | CSSAnimation | WebAnimation = js.native
+  var `type`: CSSTransition | CSSAnimation | WebAnimation
 }
 object Animation {
   

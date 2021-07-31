@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * its app restrictions schema changed. To fetch the app restrictions schema
   * for an app, use Products.getAppRestrictionsSchema on the EMM API.
   */
-@js.native
 trait SchemaAppRestrictionsSchemaChangeEvent extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaAppRestrictionsSchemaChangeEvent extends StObject {
     * which the app restriction schema changed. This field will always be
     * present.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaAppRestrictionsSchemaChangeEvent {
   

@@ -4,7 +4,6 @@ import typings.sodiumjs.cellMod.Cell
 import typings.sodiumjs.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timerSystemMod {

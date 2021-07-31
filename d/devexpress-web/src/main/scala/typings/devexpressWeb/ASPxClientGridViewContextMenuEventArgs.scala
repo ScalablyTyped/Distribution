@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.ContextMenu event.
   */
-@js.native
-trait ASPxClientGridViewContextMenuEventArgs extends ASPxClientEventArgs {
+trait ASPxClientGridViewContextMenuEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.ContextMenu event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Identifies the grid element being right clicked by the user.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the currently processed menu object.
     */
-  var menu: js.Any = js.native
+  var menu: js.Any
   
   /**
     * Gets which grid element has been right clicked by the user.
     */
-  var objectType: String = js.native
+  var objectType: String
   
   /**
     * Specifies whether a browser context menu should be displayed.
     */
-  var showBrowserMenu: Boolean = js.native
+  var showBrowserMenu: Boolean
 }
 object ASPxClientGridViewContextMenuEventArgs {
   

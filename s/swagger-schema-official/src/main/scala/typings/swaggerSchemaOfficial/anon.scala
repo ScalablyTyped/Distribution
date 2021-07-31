@@ -10,21 +10,19 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.path
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var in: header = js.native
+    var in: header
   }
   object `0` {
     
     @scala.inline
-    def apply(in: header): `0` = {
-      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(in = "header")
       __obj.asInstanceOf[`0`]
     }
     
@@ -36,20 +34,19 @@ object anon {
     }
   }
   
-  @js.native
   trait AllowEmptyValue extends StObject {
     
-    var allowEmptyValue: js.UndefOr[Boolean] = js.native
+    var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
     
-    var collectionFormat: js.UndefOr[ParameterCollectionFormat] = js.native
+    var collectionFormat: js.UndefOr[ParameterCollectionFormat] = js.undefined
     
-    var in: query = js.native
+    var in: query
   }
   object AllowEmptyValue {
     
     @scala.inline
-    def apply(in: query): AllowEmptyValue = {
-      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
+    def apply(): AllowEmptyValue = {
+      val __obj = js.Dynamic.literal(in = "query")
       __obj.asInstanceOf[AllowEmptyValue]
     }
     
@@ -73,22 +70,21 @@ object anon {
     }
   }
   
-  @js.native
   trait CollectionFormat extends StObject {
     
-    var allowEmptyValue: js.UndefOr[Boolean] = js.native
+    var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
     
-    var collectionFormat: js.UndefOr[ParameterCollectionFormat] = js.native
+    var collectionFormat: js.UndefOr[ParameterCollectionFormat] = js.undefined
     
-    var in: formData = js.native
+    var in: formData
     
-    var `type`: ParameterType | file = js.native
+    var `type`: ParameterType | file
   }
   object CollectionFormat {
     
     @scala.inline
-    def apply(in: formData, `type`: ParameterType | file): CollectionFormat = {
-      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
+    def apply(`type`: ParameterType | file): CollectionFormat = {
+      val __obj = js.Dynamic.literal(in = "formData")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionFormat]
     }
@@ -116,18 +112,17 @@ object anon {
     }
   }
   
-  @js.native
   trait In extends StObject {
     
-    var in: path = js.native
+    var in: path
     
-    var required: `true` = js.native
+    var required: `true`
   }
   object In {
     
     @scala.inline
-    def apply(in: path, required: `true`): In = {
-      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    def apply(): In = {
+      val __obj = js.Dynamic.literal(in = "path", required = true)
       __obj.asInstanceOf[In]
     }
     

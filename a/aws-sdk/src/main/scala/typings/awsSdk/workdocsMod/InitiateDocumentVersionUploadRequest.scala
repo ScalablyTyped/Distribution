@@ -2,51 +2,49 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitiateDocumentVersionUploadRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The timestamp when the content of the document was originally created.
     */
-  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The timestamp when the content of the document was modified.
     */
-  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The content type of the document.
     */
-  var ContentType: js.UndefOr[DocumentContentType] = js.native
+  var ContentType: js.UndefOr[DocumentContentType] = js.undefined
   
   /**
     * The size of the document, in bytes.
     */
-  var DocumentSizeInBytes: js.UndefOr[SizeType] = js.native
+  var DocumentSizeInBytes: js.UndefOr[SizeType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var Id: js.UndefOr[ResourceIdType] = js.native
+  var Id: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The name of the document.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: ResourceIdType = js.native
+  var ParentFolderId: ResourceIdType
 }
 object InitiateDocumentVersionUploadRequest {
   

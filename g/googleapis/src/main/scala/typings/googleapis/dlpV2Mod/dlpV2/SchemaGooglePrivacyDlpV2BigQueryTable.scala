@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,24 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `&lt;project_id&gt;:&lt;dataset_id&gt;.&lt;table_id&gt;` or
   * `&lt;project_id&gt;.&lt;dataset_id&gt;.&lt;table_id&gt;`.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2BigQueryTable extends StObject {
   
   /**
     * Dataset ID of the table.
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * The Google Cloud Platform project ID of the project containing the table.
     * If omitted, project ID is inferred from the API call.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the table.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2BigQueryTable {
   

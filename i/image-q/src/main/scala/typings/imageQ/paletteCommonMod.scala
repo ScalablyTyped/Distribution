@@ -4,17 +4,15 @@ import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.utilsPaletteMod.Palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paletteCommonMod {
   
-  @js.native
   trait IPaletteQuantizer extends StObject {
     
-    def quantize(): Palette = js.native
+    def quantize(): Palette
     
-    def sample(pointBuffer: PointContainer): Unit = js.native
+    def sample(pointBuffer: PointContainer): Unit
   }
   object IPaletteQuantizer {
     

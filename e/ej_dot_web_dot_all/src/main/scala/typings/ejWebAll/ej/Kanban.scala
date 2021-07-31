@@ -6,11 +6,12 @@ import typings.ejWebAll.ej.Kanban.KanbanSelection
 import typings.ejWebAll.ej.Kanban.KanbanSwimlane
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Kanban extends Widget_ {
+trait Kanban
+  extends StObject
+     with Widget_ {
   
   var KanbanEdit: KanbanEdit = js.native
   
@@ -22,24 +23,24 @@ trait Kanban extends Widget_ {
   
   def columns(columndetails: String, keyvalue: String): Unit = js.native
   def columns(columndetails: String, keyvalue: String, action: String): Unit = js.native
-  def columns(columndetails: String, keyvalue: js.Array[_]): Unit = js.native
-  def columns(columndetails: String, keyvalue: js.Array[_], action: String): Unit = js.native
-  def columns(columndetails: js.Array[_], keyvalue: String): Unit = js.native
-  def columns(columndetails: js.Array[_], keyvalue: String, action: String): Unit = js.native
+  def columns(columndetails: String, keyvalue: js.Array[js.Any]): Unit = js.native
+  def columns(columndetails: String, keyvalue: js.Array[js.Any], action: String): Unit = js.native
+  def columns(columndetails: js.Array[js.Any], keyvalue: String): Unit = js.native
+  def columns(columndetails: js.Array[js.Any], keyvalue: String, action: String): Unit = js.native
   /** Add or remove columns in Kanban columns collections.Default action is add.
     * @param {any[]|string} Pass array of columns or string of headerText to add/remove the column in Kanban
     * @param {any[]|string} Pass array of columns or string of key value to add/remove the column in Kanban
     * @param {string} optional Pass add/remove action to be performed. By default "add" action will perform
     * @returns {void}
     */
-  def columns(columndetails: js.Array[_], keyvalue: js.Array[_]): Unit = js.native
-  def columns(columndetails: js.Array[_], keyvalue: js.Array[_], action: String): Unit = js.native
+  def columns(columndetails: js.Array[js.Any], keyvalue: js.Array[js.Any]): Unit = js.native
+  def columns(columndetails: js.Array[js.Any], keyvalue: js.Array[js.Any], action: String): Unit = js.native
   
   /** Refresh the Kanban with new data source.
     * @param {any[]} Pass new data source to the Kanban
     * @returns {void}
     */
-  def dataSource(datasource: js.Array[_]): Unit = js.native
+  def dataSource(datasource: js.Array[js.Any]): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -62,14 +63,14 @@ trait Kanban extends Widget_ {
   /** Used for get the names of all the visible column name collections in Kanban.
     * @returns {any[]}
     */
-  def getVisibleColumnNames(): js.Array[_] = js.native
+  def getVisibleColumnNames(): js.Array[js.Any] = js.native
   
   def hideColumns(headerText: String): Unit = js.native
   /** Hide columns from the Kanban based on the header text
     * @param {any[]|string} you can pass either array of header text of various columns or a header text of a column to hide
     * @returns {void}
     */
-  def hideColumns(headerText: js.Array[_]): Unit = js.native
+  def hideColumns(headerText: js.Array[js.Any]): Unit = js.native
   
   @JSName("model")
   var model_Kanban: Model = js.native
@@ -96,7 +97,7 @@ trait Kanban extends Widget_ {
     * @param {any[]|string} You can pass either array of header text of various columns or a header text of a column to show
     * @returns {void}
     */
-  def showColumns(headerText: js.Array[_]): Unit = js.native
+  def showColumns(headerText: js.Array[js.Any]): Unit = js.native
   
   /** Expand or collapse the card based on the state of target &quot;div&quot;
     * @param {string|number} Pass the id of card to be toggle
@@ -116,7 +117,7 @@ trait Kanban extends Widget_ {
     * @param {any[]} Pass the edited JSON data of card need to be update.
     * @returns {void}
     */
-  def updateCard(key: String, data: js.Array[_]): Unit = js.native
+  def updateCard(key: String, data: js.Array[js.Any]): Unit = js.native
 }
 object Kanban {
   
@@ -128,19 +129,27 @@ object Kanban {
     
     ///Creates Kanban with editMode as Dialog
     @js.native
-    sealed trait Dialog extends EditMode
+    sealed trait Dialog
+      extends StObject
+         with EditMode
     
     ///Creates Kanban with editMode as DialogTemplate
     @js.native
-    sealed trait DialogTemplate extends EditMode
+    sealed trait DialogTemplate
+      extends StObject
+         with EditMode
     
     ///Creates Kanban with editMode as ExternalForm
     @js.native
-    sealed trait ExternalForm extends EditMode
+    sealed trait ExternalForm
+      extends StObject
+         with EditMode
     
     ///Creates Kanban with editMode as ExternalFormTemplate
     @js.native
-    sealed trait ExternalFormTemplate extends EditMode
+    sealed trait ExternalFormTemplate
+      extends StObject
+         with EditMode
   }
   
   @js.native
@@ -151,31 +160,45 @@ object Kanban {
     
     ///Allows to set edit type as date picker edit type
     @js.native
-    sealed trait DatePicker extends EditingType
+    sealed trait DatePicker
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as date time picker edit type
     @js.native
-    sealed trait DateTimePicker extends EditingType
+    sealed trait DateTimePicker
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as drop down edit type
     @js.native
-    sealed trait Dropdown extends EditingType
+    sealed trait Dropdown
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as numeric edit type
     @js.native
-    sealed trait Numeric extends EditingType
+    sealed trait Numeric
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as RTE edit type
     @js.native
-    sealed trait RTE extends EditingType
+    sealed trait RTE
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as string edit type
     @js.native
-    sealed trait String extends EditingType
+    sealed trait String
+      extends StObject
+         with EditingType
     
     ///Allows to set edit type as text area edit type
     @js.native
-    sealed trait TextArea extends EditingType
+    sealed trait TextArea
+      extends StObject
+         with EditingType
   }
   
   @js.native
@@ -186,11 +209,15 @@ object Kanban {
     
     ///Form position is bottom.
     @js.native
-    sealed trait Bottom extends FormPosition
+    sealed trait Bottom
+      extends StObject
+         with FormPosition
     
     ///Form position is right.
     @js.native
-    sealed trait Right extends FormPosition
+    sealed trait Right
+      extends StObject
+         with FormPosition
   }
   
   @js.native
@@ -201,11 +228,15 @@ object Kanban {
     
     ///Support for multiple selections in Kanban
     @js.native
-    sealed trait Multiple extends SelectionType
+    sealed trait Multiple
+      extends StObject
+         with SelectionType
     
     ///Support for Single selection in Kanban
     @js.native
-    sealed trait Single extends SelectionType
+    sealed trait Single
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -216,63 +247,70 @@ object Kanban {
     
     ///Sets context menu to Kanban
     @js.native
-    sealed trait All extends Target
+    sealed trait All
+      extends StObject
+         with Target
     
     ///Sets context menu to Kanban card
     @js.native
-    sealed trait Card extends Target
+    sealed trait Card
+      extends StObject
+         with Target
     
     ///Sets context menu to Kanban content
     @js.native
-    sealed trait Content extends Target
+    sealed trait Content
+      extends StObject
+         with Target
     
     ///Sets context menu to Kanban header
     @js.native
-    sealed trait Header extends Target
+    sealed trait Header
+      extends StObject
+         with Target
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns current filtering object field name.
       */
-    var currentFilteringobject: js.UndefOr[js.Any] = js.native
+    var currentFilteringobject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.native
+    var filterCollection: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current action event type.
       */
-    var originalEventType: js.UndefOr[String] = js.native
+    var originalEventType: js.UndefOr[String] = js.undefined
     
     /** Returns primary key value.
       */
-    var primaryKeyValue: js.UndefOr[String] = js.native
+    var primaryKeyValue: js.UndefOr[String] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the edited row index.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -347,56 +385,55 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns current filtering column field name.
       */
-    var currentFilteringColumn: js.UndefOr[String] = js.native
+    var currentFilteringColumn: js.UndefOr[String] = js.undefined
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.native
+    var filterCollection: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns current action event type.
       */
-    var originalEventType: js.UndefOr[String] = js.native
+    var originalEventType: js.UndefOr[String] = js.undefined
     
     /** Returns primary key.
       */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Returns primary key value.
       */
-    var primaryKeyValue: js.UndefOr[String] = js.native
+    var primaryKeyValue: js.UndefOr[String] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the selectedRow index.
       */
-    var selectedRow: js.UndefOr[Double] = js.native
+    var selectedRow: js.UndefOr[Double] = js.undefined
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -483,52 +520,51 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns current filtering column field name.
       */
-    var currentFilteringColumn: js.UndefOr[String] = js.native
+    var currentFilteringColumn: js.UndefOr[String] = js.undefined
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the error return by server.
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.native
+    var filterCollection: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns current action event type.
       */
-    var originalEventType: js.UndefOr[String] = js.native
+    var originalEventType: js.UndefOr[String] = js.undefined
     
     /** Returns primary key value.
       */
-    var primaryKeyValue: js.UndefOr[String] = js.native
+    var primaryKeyValue: js.UndefOr[String] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -609,48 +645,47 @@ object Kanban {
     }
   }
   
-  @js.native
   trait BeforeCardSelectEventArgs extends StObject {
     
     /** Returns the Target item.
       */
-    var Target: js.UndefOr[js.Any] = js.native
+    var Target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the select card index value.
       */
-    var cardIndex: js.UndefOr[Double] = js.native
+    var cardIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the select cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the select cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns select card data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously select the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.native
+    var previousCard: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously select card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[_]] = js.native
+    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCardSelectEventArgs {
     
@@ -706,7 +741,7 @@ object Kanban {
       def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
       @scala.inline
-      def setPreviousRowcellindex(value: js.Array[_]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
@@ -728,28 +763,27 @@ object Kanban {
     }
   }
   
-  @js.native
   trait BeginEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns begin edit data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns primary key value.
       */
-    var primaryKeyValue: js.UndefOr[String] = js.native
+    var primaryKeyValue: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeginEditEventArgs {
     
@@ -794,36 +828,35 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Header text of the column corresponding to the selected card.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the current card to the Kanban.
       */
-    var currentCard: js.UndefOr[String] = js.native
+    var currentCard: js.UndefOr[String] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardClickEventArgs {
     
@@ -880,24 +913,23 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardDoubleClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns current card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardDoubleClickEventArgs {
     
@@ -936,32 +968,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardDragEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns drag data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns drag start element.
       */
-    var dragtarget: js.UndefOr[js.Any] = js.native
+    var dragtarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardDragEventArgs {
     
@@ -1012,32 +1043,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardDragStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns card drag start data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns drag start element.
       */
-    var dragtarget: js.UndefOr[js.Any] = js.native
+    var dragtarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardDragStartEventArgs {
     
@@ -1088,32 +1118,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardDragStopEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns drag stop data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns drag stop element.
       */
-    var droptarget: js.UndefOr[js.Any] = js.native
+    var droptarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardDragStopEventArgs {
     
@@ -1164,36 +1193,35 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardDropEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns dragged data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns previous parent of dragged element
       */
-    var draggedParent: js.UndefOr[js.Any] = js.native
+    var draggedParent: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns drop element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardDropEventArgs {
     
@@ -1250,48 +1278,47 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardSelectEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the select card index value.
       */
-    var cardIndex: js.UndefOr[Double] = js.native
+    var cardIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the select cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the select cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns select card data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously select the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.native
+    var previousCard: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously select card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[_]] = js.native
+    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardSelectEventArgs {
     
@@ -1353,7 +1380,7 @@ object Kanban {
       def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
       @scala.inline
-      def setPreviousRowcellindex(value: js.Array[_]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
@@ -1369,48 +1396,47 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardSelectingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selecting card index value.
       */
-    var cardIndex: js.UndefOr[Double] = js.native
+    var cardIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.native
+    var currentCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns added data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selecting the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.native
+    var previousCard: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously rowcell is selecting card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[_]] = js.native
+    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CardSelectingEventArgs {
     
@@ -1472,7 +1498,7 @@ object Kanban {
       def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
       @scala.inline
-      def setPreviousRowcellindex(value: js.Array[_]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
@@ -1488,22 +1514,21 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CardSettings extends StObject {
     
     /** To customize the card border color based on assigned task. Colors and corresponding values defined here will be mapped with colorField mapped data source column.
       * @Default {Object}
       */
-    var colorMapping: js.UndefOr[js.Any] = js.native
+    var colorMapping: js.UndefOr[js.Any] = js.undefined
     
     /** This specifies the Kanban card to drop into particular target element.
       */
-    var externalDropTarget: js.UndefOr[String] = js.native
+    var externalDropTarget: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to add the template for card .
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object CardSettings {
     
@@ -1536,28 +1561,27 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CellClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the select cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the edited row index.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellClickEventArgs {
     
@@ -1602,63 +1626,62 @@ object Kanban {
     }
   }
   
-  @js.native
   trait Column extends StObject {
     
     /** To enable/disable allowDrag for specific column wise.
       * @Default {true}
       */
-    var allowDrag: js.UndefOr[Boolean] = js.native
+    var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** To enable/disable allowDrop for specific column wise.
       * @Default {true}
       */
-    var allowDrop: js.UndefOr[Boolean] = js.native
+    var allowDrop: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the column level constraints with minimum ,maximum limit validation.
       * @Default {Object}
       */
-    var constraints: js.UndefOr[ColumnsConstraints] = js.native
+    var constraints: js.UndefOr[ColumnsConstraints] = js.undefined
     
     /** Gets or sets a value that indicates to add the template within the header element.
       * @Default {null}
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns header text.
       * @Default {null}
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /** To set column collapse or expand state
       * @Default {false}
       */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns key.
       * @Default {null}
       */
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
     /** Gets or sets an object that indicates whether to show add new button.
       * @Default {false}
       */
-    var showAddButton: js.UndefOr[Boolean] = js.native
+    var showAddButton: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the totalCount properties.
       * @Default {Object}
       */
-    var totalCount: js.UndefOr[ColumnsTotalCount] = js.native
+    var totalCount: js.UndefOr[ColumnsTotalCount] = js.undefined
     
     /** Gets or sets an object that indicates to set specific column visibility.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns width.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Column {
     
@@ -1739,23 +1762,22 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ColumnsConstraints extends StObject {
     
     /** It is used to specify the maximum amount of card in particular column cell or swimlane cell can hold.
       * @Default {null}
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /** It is used to specify the minimum amount of card in particular column cell or swimlane cell can hold.
       * @Default {null}
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /** It is used to specify the type of constraints as column or swimlane.
       * @Default {null}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnsConstraints {
     
@@ -1788,13 +1810,12 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ColumnsTotalCount extends StObject {
     
     /** To customize the totalCount text properties.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ColumnsTotalCount {
     
@@ -1815,32 +1836,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ContextClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state.
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextClickEventArgs {
     
@@ -1891,28 +1911,27 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to add custom contextMenu items.
       * @Default {Array}
       */
-    var customMenuItems: js.UndefOr[js.Array[ContextMenuSettingsCustomMenuItem]] = js.native
+    var customMenuItems: js.UndefOr[js.Array[ContextMenuSettingsCustomMenuItem]] = js.undefined
     
     /** Gets or sets a value that indicates the list of items needs to be disable from default context menu items.
       * @Default {Array}
       */
-    var disableDefaultItems: js.UndefOr[js.Array[_]] = js.native
+    var disableDefaultItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** To enable context menu.All default context menu will show.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Its used to add specific default context menu items.
       * @Default {Array}
       */
-    var menuItems: js.UndefOr[js.Array[_]] = js.native
+    var menuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -1935,7 +1954,7 @@ object Kanban {
       def setCustomMenuItemsVarargs(value: ContextMenuSettingsCustomMenuItem*): Self = StObject.set(x, "customMenuItems", js.Array(value :_*))
       
       @scala.inline
-      def setDisableDefaultItems(value: js.Array[_]): Self = StObject.set(x, "disableDefaultItems", value.asInstanceOf[js.Any])
+      def setDisableDefaultItems(value: js.Array[js.Any]): Self = StObject.set(x, "disableDefaultItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisableDefaultItemsUndefined: Self = StObject.set(x, "disableDefaultItems", js.undefined)
@@ -1950,7 +1969,7 @@ object Kanban {
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
       @scala.inline
-      def setMenuItems(value: js.Array[_]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      def setMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
@@ -1960,23 +1979,22 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ContextMenuSettingsCustomMenuItem extends StObject {
     
     /** Its sets target element to custom context menu item.
       * @Default {ej.Kanban.Target.All}
       */
-    var target: js.UndefOr[Target | String] = js.native
+    var target: js.UndefOr[Target | String] = js.undefined
     
     /** Gets the template to render custom context menu item.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Gets the display name to custom menu item.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ContextMenuSettingsCustomMenuItem {
     
@@ -2009,32 +2027,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ContextOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state.
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextOpenEventArgs {
     
@@ -2085,20 +2102,19 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -2131,13 +2147,12 @@ object Kanban {
     }
   }
   
-  @js.native
   trait CustomToolbarItem extends StObject {
     
     /** Gets the template to render customToolbarItems.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object CustomToolbarItem {
     
@@ -2158,20 +2173,19 @@ object Kanban {
     }
   }
   
-  @js.native
   trait DataBoundEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DataBoundEventArgs {
     
@@ -2204,20 +2218,19 @@ object Kanban {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Returns deleted data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -2250,43 +2263,42 @@ object Kanban {
     }
   }
   
-  @js.native
   trait EditSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable the adding action in cards behavior on Kanban.
       * @Default {false}
       */
-    var allowAdding: js.UndefOr[Boolean] = js.native
+    var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the editing action in cards of Kanban.
       * @Default {false}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies the id of the template which is require to be edited using the Dialog Box.
       * @Default {null}
       */
-    var dialogTemplate: js.UndefOr[String] = js.native
+    var dialogTemplate: js.UndefOr[String] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editing fields of Kanban card.
       * @Default {Array}
       */
-    var editItems: js.UndefOr[js.Array[EditSettingsEditItem]] = js.native
+    var editItems: js.UndefOr[js.Array[EditSettingsEditItem]] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editMode of the Kanban.
       * @Default {ej.Kanban.EditMode.Dialog}
       */
-    var editMode: js.UndefOr[EditMode | String] = js.native
+    var editMode: js.UndefOr[EditMode | String] = js.undefined
     
     /** This specifies the id of the template which is require to be edited using the External edit form.
       * @Default {null}
       */
-    var externalFormTemplate: js.UndefOr[String] = js.native
+    var externalFormTemplate: js.UndefOr[String] = js.undefined
     
     /** This specifies to set the position of an External edit form either in the right or bottom of the Kanban.
       * @Default {ej.Kanban.FormPosition.Bottom}
       */
-    var formPosition: js.UndefOr[FormPosition | String] = js.native
+    var formPosition: js.UndefOr[FormPosition | String] = js.undefined
   }
   object EditSettings {
     
@@ -2346,33 +2358,32 @@ object Kanban {
     }
   }
   
-  @js.native
   trait EditSettingsEditItem extends StObject {
     
     /** It is used to specify defaultValue for the fields while adding new card.
       * @Default {null}
       */
-    var defaultValue: js.UndefOr[String | Double] = js.native
+    var defaultValue: js.UndefOr[String | Double] = js.undefined
     
     /** It is used to set the particular editparams in the card for editing.
       * @Default {Object}
       */
-    var editParams: js.UndefOr[js.Any] = js.native
+    var editParams: js.UndefOr[js.Any] = js.undefined
     
     /** It is used to set the particular editType in the card for editing.
       * @Default {ej.Kanban.EditingType.String}
       */
-    var editType: js.UndefOr[EditingType | String] = js.native
+    var editType: js.UndefOr[EditingType | String] = js.undefined
     
     /** It is used to map editing field from the data source.
       * @Default {null}
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define constraints for saving data to the database.
       * @Default {Object}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
   }
   object EditSettingsEditItem {
     
@@ -2417,32 +2428,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait EndDeleteEventArgs extends StObject {
     
     /** Current action name
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns deleted  data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object EndDeleteEventArgs {
     
@@ -2493,32 +2503,31 @@ object Kanban {
     }
   }
   
-  @js.native
   trait EndEditEventArgs extends StObject {
     
     /** Current Action name
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns modified data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object EndEditEventArgs {
     
@@ -2569,53 +2578,52 @@ object Kanban {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Get or sets an object that indicates the options to map the cards to the collapsible area.
       * @Default {Object}
       */
-    var collapsibleCards: js.UndefOr[FieldsCollapsibleCards] = js.native
+    var collapsibleCards: js.UndefOr[FieldsCollapsibleCards] = js.undefined
     
     /** To customize the card has been Mapped into card color field.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Content field has been Mapped into card text.
       * @Default {null}
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** ImageUrl field has been Mapped into card image.
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** The primarykey field is mapped to data source field. And this will used for Drag and drop and editing mainly.
       * @Default {null}
       */
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Priority field has been mapped data source field to maintain cards priority.
       * @Default {null}
       */
-    var priority: js.UndefOr[String] = js.native
+    var priority: js.UndefOr[String] = js.undefined
     
     /** To enable swimlane grouping based on the given key field from datasource mapping.
       * @Default {null}
       */
-    var swimlaneKey: js.UndefOr[String] = js.native
+    var swimlaneKey: js.UndefOr[String] = js.undefined
     
     /** Tag field has been Mapped into card tag.
       * @Default {null}
       */
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
     /** Title field has been Mapped to field in datasource for title content. If title field specified , card expand/collapse will be enabled with header and content section.
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -2684,18 +2692,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait FieldsCollapsibleCards extends StObject {
     
     /** It is used to specify the collapsible card's field mapping.
       * @Default {null}
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in collapsibleCards.field.
       * @Default {null}
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object FieldsCollapsibleCards {
     
@@ -2722,23 +2729,22 @@ object Kanban {
     }
   }
   
-  @js.native
   trait FilterSetting extends StObject {
     
     /** Gets or sets an object of tooltip to filter buttons.
       * @Default {null}
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that Queries to perform filtering
       * @Default {Object}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets an object of display name to filter queries.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object FilterSetting {
     
@@ -2771,28 +2777,27 @@ object Kanban {
     }
   }
   
-  @js.native
   trait HeaderClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the select cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the column object.
       */
-    var columnData: js.UndefOr[js.Any] = js.native
+    var columnData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HeaderClickEventArgs {
     
@@ -2845,7 +2850,7 @@ object Kanban {
       * @param {any[]} Pass the edited JSON data of card need to be add.
       * @returns {void}
       */
-    def addCard(primaryKey: String, card: js.Array[_]): Unit = js.native
+    def addCard(primaryKey: String, card: js.Array[js.Any]): Unit = js.native
     
     /** Send a cancel request of add/edit card in Kanban when allowEditing/allowAdding is set as true.
       * @returns {void}
@@ -2878,29 +2883,28 @@ object Kanban {
     def startEdit($div: js.Any): Unit = js.native
   }
   
-  @js.native
   trait KanbanFilter extends StObject {
     
     /** Send a clear request to filter cards in the kanban.
       * @returns {void}
       */
-    def clearFilter(): Unit = js.native
+    def clearFilter(): Unit
     
     /** Method used for send a clear search request to Kanban.
       * @returns {void}
       */
-    def clearSearch(): Unit = js.native
+    def clearSearch(): Unit
     
     /** Send a filtering request to cards in the kanban.
       * @returns {void}
       */
-    def filterCards(): Unit = js.native
+    def filterCards(): Unit
     
     /** Send a search request to Kanban with specified string passed in it.
       * @param {string} Pass the string to search in Kanban card
       * @returns {void}
       */
-    def searchCards(searchString: String): Unit = js.native
+    def searchCards(searchString: String): Unit
   }
   object KanbanFilter {
     
@@ -2932,13 +2936,12 @@ object Kanban {
     }
   }
   
-  @js.native
   trait KanbanSelection extends StObject {
     
     /** It is used to clear all the card selection.
       * @returns {void}
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object KanbanSelection {
     
@@ -2956,24 +2959,23 @@ object Kanban {
     }
   }
   
-  @js.native
   trait KanbanSwimlane extends StObject {
     
     /** Collapse all the swimlane rows in Kanban.
       * @returns {void}
       */
-    def collapseAll(): Unit = js.native
+    def collapseAll(): Unit
     
     /** Expand all the swimlane rows in Kanban.
       * @returns {void}
       */
-    def expandAll(): Unit = js.native
+    def expandAll(): Unit
     
     /** Expand or collapse the swimlane row based on the state of target &quot;div&quot;
       * @param {any} Pass the div object to toggleSwimlane row based on its row state
       * @returns {void}
       */
-    def toggle($div: js.Any): Unit = js.native
+    def toggle($div: js.Any): Unit
   }
   object KanbanSwimlane {
     
@@ -2997,20 +2999,19 @@ object Kanban {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -3043,296 +3044,295 @@ object Kanban {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered for every Kanban action before its starts.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered for every Kanban action success event.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggered for every Kanban action server failure event.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable allowDragAndDrop behavior on Kanban.
       * @Default {true}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable drag and drop behavior between Kanban controls.
       * @Default {false}
       */
-    var allowExternalDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowExternalDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** To enable filtering behavior on Kanban.User can specify query in filterSettings collection after enabling allowFiltering.
       * @Default {false}
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to allow card hover actions.
       * @Default {true}
       */
-    var allowHover: js.UndefOr[Boolean] = js.native
+    var allowHover: js.UndefOr[Boolean] = js.undefined
     
     /** To allow keyboard navigation actions.
       * @Default {false}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable printing option.
       * @Default {false}
       */
-    var allowPrinting: js.UndefOr[Boolean] = js.native
+    var allowPrinting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the scrollbar in the Kanban and view the card by scroll through the Kanban manually.
       * @Default {false}
       */
-    var allowScrolling: js.UndefOr[Boolean] = js.native
+    var allowScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** To enable Searching operation in Kanban.
       * @Default {false}
       */
-    var allowSearching: js.UndefOr[Boolean] = js.native
+    var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable allowSelection behavior on Kanban.User can select card and the selected card will be highlighted on Kanban.
       * @Default {true}
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the title of the card.
       * @Default {false}
       */
-    var allowTitle: js.UndefOr[Boolean] = js.native
+    var allowTitle: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the column expand /collapse.
       * @Default {false}
       */
-    var allowToggleColumn: js.UndefOr[Boolean] = js.native
+    var allowToggleColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered before the card is selected.
       */
-    var beforeCardSelect: js.UndefOr[js.Function1[/* e */ BeforeCardSelectEventArgs, Unit]] = js.native
+    var beforeCardSelect: js.UndefOr[js.Function1[/* e */ BeforeCardSelectEventArgs, Unit]] = js.undefined
     
     /** Triggered before the task is going to be edited.
       */
-    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.native
+    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.undefined
     
     /** Trigger after the card is clicked.
       */
-    var cardClick: js.UndefOr[js.Function1[/* e */ CardClickEventArgs, Unit]] = js.native
+    var cardClick: js.UndefOr[js.Function1[/* e */ CardClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when card is double clicked.
       */
-    var cardDoubleClick: js.UndefOr[js.Function1[/* e */ CardDoubleClickEventArgs, Unit]] = js.native
+    var cardDoubleClick: js.UndefOr[js.Function1[/* e */ CardDoubleClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when the card is being dragged.
       */
-    var cardDrag: js.UndefOr[js.Function1[/* e */ CardDragEventArgs, Unit]] = js.native
+    var cardDrag: js.UndefOr[js.Function1[/* e */ CardDragEventArgs, Unit]] = js.undefined
     
     /** Triggered when card dragging start.
       */
-    var cardDragStart: js.UndefOr[js.Function1[/* e */ CardDragStartEventArgs, Unit]] = js.native
+    var cardDragStart: js.UndefOr[js.Function1[/* e */ CardDragStartEventArgs, Unit]] = js.undefined
     
     /** Triggered when card dragging stops.
       */
-    var cardDragStop: js.UndefOr[js.Function1[/* e */ CardDragStopEventArgs, Unit]] = js.native
+    var cardDragStop: js.UndefOr[js.Function1[/* e */ CardDragStopEventArgs, Unit]] = js.undefined
     
     /** Triggered when the card is Dropped.
       */
-    var cardDrop: js.UndefOr[js.Function1[/* e */ CardDropEventArgs, Unit]] = js.native
+    var cardDrop: js.UndefOr[js.Function1[/* e */ CardDropEventArgs, Unit]] = js.undefined
     
     /** Triggered after the card is selected.
       */
-    var cardSelect: js.UndefOr[js.Function1[/* e */ CardSelectEventArgs, Unit]] = js.native
+    var cardSelect: js.UndefOr[js.Function1[/* e */ CardSelectEventArgs, Unit]] = js.undefined
     
     /** Triggered before the card is selected.
       */
-    var cardSelecting: js.UndefOr[js.Function1[/* e */ CardSelectingEventArgs, Unit]] = js.native
+    var cardSelecting: js.UndefOr[js.Function1[/* e */ CardSelectingEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to Customize the card settings.
       * @Default {Object}
       */
-    var cardSettings: js.UndefOr[CardSettings] = js.native
+    var cardSettings: js.UndefOr[CardSettings] = js.undefined
     
     /** Triggers after the cell is clicked.
       */
-    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.native
+    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns.
       * @Default {Array}
       */
-    var columns: js.UndefOr[js.Array[Column]] = js.native
+    var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
     /** Triggered when context menu item is clicked in Kanban
       */
-    var contextClick: js.UndefOr[js.Function1[/* e */ ContextClickEventArgs, Unit]] = js.native
+    var contextClick: js.UndefOr[js.Function1[/* e */ ContextClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to customize the context menu behavior of the Kanban.
       * @Default {Object}
       */
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
     /** Triggered before the context menu is opened.
       */
-    var contextOpen: js.UndefOr[js.Function1[/* e */ ContextOpenEventArgs, Unit]] = js.native
+    var contextOpen: js.UndefOr[js.Function1[/* e */ ContextOpenEventArgs, Unit]] = js.undefined
     
     /** Triggered when the Kanban is rendered completely
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates to render the Kanban with custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to add customToolbarItems within the toolbar to perform any action in the Kanban.
       * @Default {[]}
       */
-    var customToolbarItems: js.UndefOr[js.Array[CustomToolbarItem]] = js.native
+    var customToolbarItems: js.UndefOr[js.Array[CustomToolbarItem]] = js.undefined
     
     /** Triggered the Kanban is bound with data during initial rendering.
       */
-    var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.native
+    var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the data to render the Kanban with cards.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered when Kanban going to destroy.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editing behavior of the Kanban.
       * @Default {Object}
       */
-    var editSettings: js.UndefOr[EditSettings] = js.native
+    var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Align content in the Kanban control align from right to left by setting the property as true.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** To show total count of cards in each column.
       * @Default {false}
       */
-    var enableTotalCount: js.UndefOr[Boolean] = js.native
+    var enableTotalCount: js.UndefOr[Boolean] = js.undefined
     
     /** To perform kanban functionalities with touch interaction.
       * @Default {true}
       */
-    var enableTouch: js.UndefOr[Boolean] = js.native
+    var enableTouch: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered after the card is deleted.
       */
-    var endDelete: js.UndefOr[js.Function1[/* e */ EndDeleteEventArgs, Unit]] = js.native
+    var endDelete: js.UndefOr[js.Function1[/* e */ EndDeleteEventArgs, Unit]] = js.undefined
     
     /** Triggered after the card is edited.
       */
-    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.native
+    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.undefined
     
     /** To customize field mappings for card , editing title and control key parameters
       * @Default {Object}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** To customize the filtering behavior based on queries given.
       * @Default {Array}
       */
-    var filterSettings: js.UndefOr[js.Array[FilterSetting]] = js.native
+    var filterSettings: js.UndefOr[js.Array[FilterSetting]] = js.undefined
     
     /** Triggers after the header is clicked.
       */
-    var headerClick: js.UndefOr[js.Function1[/* e */ HeaderClickEventArgs, Unit]] = js.native
+    var headerClick: js.UndefOr[js.Function1[/* e */ HeaderClickEventArgs, Unit]] = js.undefined
     
     /** When set to true, adapts the Kanban layout to fit the screen size of devices on which it renders.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** To map datasource field for column values mapping
       * @Default {null}
       */
-    var keyField: js.UndefOr[String] = js.native
+    var keyField: js.UndefOr[String] = js.undefined
     
     /** To change the key in keyboard interaction to Kanban control.
       * @Default {null}
       */
-    var keySettings: js.UndefOr[js.Any] = js.native
+    var keySettings: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered initial load.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to
       * a particular country or region.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to set the minimum width of the responsive Kanban while isResponsive property is true.
       * @Default {0}
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** ej Query to query database of Kanban.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered every time a single card rendered request is made to access particular card information.
       */
-    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.native
+    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to customize the scrolling behavior of the Kanban.
       * @Default {Object}
       */
-    var scrollSettings: js.UndefOr[ScrollSettings] = js.native
+    var scrollSettings: js.UndefOr[ScrollSettings] = js.undefined
     
     /** To customize the searching behavior of the Kanban.
       * @Default {Object}
       */
-    var searchSettings: js.UndefOr[SearchSettings] = js.native
+    var searchSettings: js.UndefOr[SearchSettings] = js.undefined
     
     /** To allow customize selection type. Accepting types are &quot;single&quot; and &quot;multiple&quot;.
       * @Default {ej.Kanban.SelectionType.Single}
       */
-    var selectionType: js.UndefOr[SelectionType | String] = js.native
+    var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to render kanban columns using without data source.
       * @Default {false}
       */
-    var showColumnWhenEmpty: js.UndefOr[Boolean] = js.native
+    var showColumnWhenEmpty: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of stacked header rows for the Kanban.
       * @Default {Array}
       */
-    var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.native
+    var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.undefined
     
     /** Triggers before swim lane expand or collapse icon is clicked.
       */
-    var swimlaneClick: js.UndefOr[js.Function1[/* e */ SwimlaneClickEventArgs, Unit]] = js.native
+    var swimlaneClick: js.UndefOr[js.Function1[/* e */ SwimlaneClickEventArgs, Unit]] = js.undefined
     
     /** Customize the settings for swim lane.
       * @Default {Object}
       */
-    var swimlaneSettings: js.UndefOr[SwimlaneSettings] = js.native
+    var swimlaneSettings: js.UndefOr[SwimlaneSettings] = js.undefined
     
     /** Triggered when toolbar item is clicked in Kanban.
       */
-    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.native
+    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.undefined
     
     /** The tooltip allows to display card details in a tooltip while hovering on it.
       */
-    var tooltipSettings: js.UndefOr[TooltipSettings] = js.native
+    var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows.
       * @Default {Array}
       */
-    var workflows: js.UndefOr[js.Array[Workflow]] = js.native
+    var workflows: js.UndefOr[js.Array[Workflow]] = js.undefined
   }
   object Model {
     
@@ -3740,36 +3740,35 @@ object Kanban {
     }
   }
   
-  @js.native
   trait QueryCellInfoEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns Kanban card.
       */
-    var card: js.UndefOr[js.Any] = js.native
+    var card: js.UndefOr[js.Any] = js.undefined
     
     /** Returns Kanban card.
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3826,23 +3825,22 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ScrollSettings extends StObject {
     
     /** To allow the Kanban to freeze particular swimlane at the time of scrolling , until scroll reaches next swimlane and it continues.
       * @Default {false}
       */
-    var allowFreezeSwimlane: js.UndefOr[Boolean] = js.native
+    var allowFreezeSwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified scroll height.
       * @Default {0}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified scroll width.
       * @Default {auto}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object ScrollSettings {
     
@@ -3875,27 +3873,26 @@ object Kanban {
     }
   }
   
-  @js.native
   trait SearchSettings extends StObject {
     
     /** To customize the fields the searching operation can be perform.
       * @Default {Array}
       */
-    var fields: js.UndefOr[js.Array[_]] = js.native
+    var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** To customize the ignore case based on searching.
       * @Default {true}
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the searching string.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** To customize the operator based on searching.
       * @Default {contains}
       */
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
   }
   object SearchSettings {
     
@@ -3909,7 +3906,7 @@ object Kanban {
     implicit class SearchSettingsMutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -3937,13 +3934,12 @@ object Kanban {
     }
   }
   
-  @js.native
   trait StackedHeaderRow extends StObject {
     
     /** Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows.
       * @Default {Array}
       */
-    var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.native
+    var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.undefined
   }
   object StackedHeaderRow {
     
@@ -3967,18 +3963,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait StackedHeaderRowsStackedHeaderColumn extends StObject {
     
     /** Gets or sets a value that indicates the column for the particular stacked header column.
       * @Default {null}
       */
-    var column: js.UndefOr[String] = js.native
+    var column: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the headerText for the particular stacked header column.
       * @Default {null}
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
   }
   object StackedHeaderRowsStackedHeaderColumn {
     
@@ -4005,36 +4000,35 @@ object Kanban {
     }
   }
   
-  @js.native
   trait SwimlaneClickEventArgs extends StObject {
     
     /** Current Action name while swim lane clicked. Actions are "expand" or "collapse"
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the swim lane group data's.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns current swim lane row index.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns current target element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SwimlaneClickEventArgs {
     
@@ -4091,33 +4085,32 @@ object Kanban {
     }
   }
   
-  @js.native
   trait SwimlaneSettings extends StObject {
     
     /** To enable or disable DragAndDrop across swim lane.
       * @Default {false}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the swimlane rows with specified swimlane headers.
       * @Default {[]}
       */
-    var headers: js.UndefOr[js.Array[SwimlaneSettingsHeader]] = js.native
+    var headers: js.UndefOr[js.Array[SwimlaneSettingsHeader]] = js.undefined
     
     /** To enable or disable items count in swim lane.
       * @Default {true}
       */
-    var showCount: js.UndefOr[Boolean] = js.native
+    var showCount: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable empty swimlane on Kanban board.  It is used to shown empty swimlane when no data's present on headers key mapping value.
       * @Default {false}
       */
-    var showEmptySwimlane: js.UndefOr[Boolean] = js.native
+    var showEmptySwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** Customize the settings for unassigned category of swim lane.
       * @Default {Object}
       */
-    var unassignedGroup: js.UndefOr[SwimlaneSettingsUnassignedGroup] = js.native
+    var unassignedGroup: js.UndefOr[SwimlaneSettingsUnassignedGroup] = js.undefined
   }
   object SwimlaneSettings {
     
@@ -4165,18 +4158,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait SwimlaneSettingsHeader extends StObject {
     
     /** Gets or sets a value that indicates to render the Kanban with specified swimlane header key.
       * @Default {null}
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to render the Kanban with specified swimlane header text.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object SwimlaneSettingsHeader {
     
@@ -4203,18 +4195,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait SwimlaneSettingsUnassignedGroup extends StObject {
     
     /** To enable or disable unassigned category change with swim lane key values.
       * @Default {true}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To set the user defined values which are need to categorized as unassigned category swim lane groups.
       * @Default {[null,undefined,]}
       */
-    var keys: js.UndefOr[js.Array[_]] = js.native
+    var keys: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object SwimlaneSettingsUnassignedGroup {
     
@@ -4234,7 +4225,7 @@ object Kanban {
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
       @scala.inline
-      def setKeys(value: js.Array[_]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
@@ -4244,44 +4235,43 @@ object Kanban {
     }
   }
   
-  @js.native
   trait ToolbarClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the item id of that current element.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** Returns the item index of that current element.
       */
-    var itemIndex: js.UndefOr[Double] = js.native
+    var itemIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the item name of that current element.
       */
-    var itemName: js.UndefOr[String] = js.native
+    var itemName: js.UndefOr[String] = js.undefined
     
     /** Returns the item text of that current element.
       */
-    var itemText: js.UndefOr[String] = js.native
+    var itemText: js.UndefOr[String] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the toolbar object of the Kanban.
       */
-    var toolbarData: js.UndefOr[js.Any] = js.native
+    var toolbarData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToolbarClickEventArgs {
     
@@ -4350,18 +4340,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait TooltipSettings extends StObject {
     
     /** To enable or disable the tooltip display.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the tooltip display based on your requirements.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object TooltipSettings {
     
@@ -4388,18 +4377,17 @@ object Kanban {
     }
   }
   
-  @js.native
   trait Workflow extends StObject {
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows allowed Transitions.
       * @Default {null}
       */
-    var allowedTransitions: js.UndefOr[String] = js.native
+    var allowedTransitions: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows key.
       * @Default {null}
       */
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
   }
   object Workflow {
     

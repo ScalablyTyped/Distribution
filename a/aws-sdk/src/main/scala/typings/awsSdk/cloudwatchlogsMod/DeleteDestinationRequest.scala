@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDestinationRequest extends StObject {
   
   /**
     * The name of the destination.
     */
-  var destinationName: DestinationName = js.native
+  var destinationName: DestinationName
 }
 object DeleteDestinationRequest {
   

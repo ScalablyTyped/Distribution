@@ -2,41 +2,39 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddAdd extends StObject {
   
-  var addAdd: scala.Double = js.native
+  var addAdd: scala.Double
   
-  var addRename: scala.Double = js.native
+  var addRename: scala.Double
   
-  var deleteEdit: scala.Double = js.native
+  var deleteEdit: scala.Double
   
-  var deleteRename: scala.Double = js.native
+  var deleteRename: scala.Double
   
-  var directoryChild: scala.Double = js.native
+  var directoryChild: scala.Double
   
-  var directoryFile: scala.Double = js.native
+  var directoryFile: scala.Double
   
-  var editDelete: scala.Double = js.native
+  var editDelete: scala.Double
   
-  var editEdit: scala.Double = js.native
+  var editEdit: scala.Double
   
-  var fileDirectory: scala.Double = js.native
+  var fileDirectory: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var rename1to2: scala.Double = js.native
+  var rename1to2: scala.Double
   
-  var rename2to1: scala.Double = js.native
+  var rename2to1: scala.Double
   
-  var renameAdd: scala.Double = js.native
+  var renameAdd: scala.Double
   
-  var renameDelete: scala.Double = js.native
+  var renameDelete: scala.Double
   
-  var renameRename: scala.Double = js.native
+  var renameRename: scala.Double
 }
 object AddAdd {
   

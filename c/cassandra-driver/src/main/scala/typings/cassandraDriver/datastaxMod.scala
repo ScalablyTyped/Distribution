@@ -8,7 +8,6 @@ import typings.std.Iterator
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datastaxMod {
@@ -17,41 +16,41 @@ object datastaxMod {
     
     object graph {
       
+      @JSImport("cassandra-driver/lib/datastax", "datastax.graph")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSImport("cassandra-driver/lib/datastax", "datastax.graph.GraphResultSet")
       @js.native
       class GraphResultSet protected ()
-        extends Iterator[js.Any, js.Any, js.UndefOr[scala.Nothing]] {
+        extends StObject
+           with Iterator[js.Any, js.Any, Unit] {
         def this(rs: ResultSet) = this()
         
         def first(): js.Any = js.native
         
-        def next(): IteratorResult[_, _] = js.native
-        def next(value: js.Any): IteratorResult[_, _] = js.native
+        def next(): IteratorResult[js.Any, js.Any] = js.native
+        def next(value: js.Any): IteratorResult[js.Any, js.Any] = js.native
         
-        def toArray(): js.Array[_] = js.native
+        def toArray(): js.Array[js.Any] = js.native
         
-        def values(): Iterator[_, _, js.UndefOr[scala.Nothing]] = js.native
+        def values(): Iterator[js.Any, js.Any, Unit] = js.native
       }
       
-      @JSImport("cassandra-driver/lib/datastax", "datastax.graph.asDouble")
-      @js.native
-      def asDouble(value: Double): js.Object = js.native
+      @scala.inline
+      def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @JSImport("cassandra-driver/lib/datastax", "datastax.graph.asFloat")
-      @js.native
-      def asFloat(value: Double): js.Object = js.native
+      @scala.inline
+      def asFloat(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @JSImport("cassandra-driver/lib/datastax", "datastax.graph.asInt")
-      @js.native
-      def asInt(value: Double): js.Object = js.native
+      @scala.inline
+      def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @JSImport("cassandra-driver/lib/datastax", "datastax.graph.asTimestamp")
-      @js.native
-      def asTimestamp(value: Date): js.Object = js.native
+      @scala.inline
+      def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @JSImport("cassandra-driver/lib/datastax", "datastax.graph.asUdt")
-      @js.native
-      def asUdt(value: js.Object): js.Object = js.native
+      @scala.inline
+      def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
       object direction {
         
@@ -88,19 +87,19 @@ object datastaxMod {
         val value: typings.cassandraDriver.graphMod.graph.EnumValue = js.native
       }
       
-      @js.native
       trait Edge
-        extends typings.cassandraDriver.graphMod.graph.Element {
+        extends StObject
+           with typings.cassandraDriver.graphMod.graph.Element {
         
-        var inV: js.UndefOr[typings.cassandraDriver.graphMod.graph.Vertex] = js.native
+        var inV: js.UndefOr[typings.cassandraDriver.graphMod.graph.Vertex] = js.undefined
         
-        var inVLabel: js.UndefOr[String] = js.native
+        var inVLabel: js.UndefOr[String] = js.undefined
         
-        var outV: js.UndefOr[typings.cassandraDriver.graphMod.graph.Vertex] = js.native
+        var outV: js.UndefOr[typings.cassandraDriver.graphMod.graph.Vertex] = js.undefined
         
-        var outVLabel: js.UndefOr[String] = js.native
+        var outVLabel: js.UndefOr[String] = js.undefined
         
-        var properties: js.UndefOr[js.Object] = js.native
+        var properties: js.UndefOr[js.Object] = js.undefined
       }
       object Edge {
         
@@ -145,12 +144,11 @@ object datastaxMod {
         }
       }
       
-      @js.native
       trait Element extends StObject {
         
-        var id: js.Any = js.native
+        var id: js.Any
         
-        var label: String = js.native
+        var label: String
       }
       object Element {
         
@@ -171,20 +169,18 @@ object datastaxMod {
         }
       }
       
-      @js.native
       trait EnumValue extends StObject
       
-      @js.native
       trait Path extends StObject {
         
-        var labels: js.Array[_] = js.native
+        var labels: js.Array[js.Any]
         
-        var objects: js.Array[_] = js.native
+        var objects: js.Array[js.Any]
       }
       object Path {
         
         @scala.inline
-        def apply(labels: js.Array[_], objects: js.Array[_]): Path = {
+        def apply(labels: js.Array[js.Any], objects: js.Array[js.Any]): Path = {
           val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
           __obj.asInstanceOf[Path]
         }
@@ -193,25 +189,24 @@ object datastaxMod {
         implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setLabels(value: js.Array[_]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+          def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
           
           @scala.inline
-          def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+          def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
         }
       }
       
-      @js.native
       trait Property extends StObject {
         
-        var key: js.Any = js.native
+        var key: js.Any
         
-        var value: js.Any = js.native
+        var value: js.Any
       }
       object Property {
         
@@ -232,11 +227,11 @@ object datastaxMod {
         }
       }
       
-      @js.native
       trait Vertex
-        extends typings.cassandraDriver.graphMod.graph.Element {
+        extends StObject
+           with typings.cassandraDriver.graphMod.graph.Element {
         
-        var properties: js.UndefOr[StringDictionary[js.Array[_]]] = js.native
+        var properties: js.UndefOr[StringDictionary[js.Array[js.Any]]] = js.undefined
       }
       object Vertex {
         
@@ -250,22 +245,22 @@ object datastaxMod {
         implicit class VertexMutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setProperties(value: StringDictionary[js.Array[_]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          def setProperties(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         }
       }
       
-      @js.native
       trait VertexProperty
-        extends typings.cassandraDriver.graphMod.graph.Element {
+        extends StObject
+           with typings.cassandraDriver.graphMod.graph.Element {
         
-        var key: String = js.native
+        var key: String
         
-        var properties: js.UndefOr[js.Any] = js.native
+        var properties: js.UndefOr[js.Any] = js.undefined
         
-        var value: js.Any = js.native
+        var value: js.Any
       }
       object VertexProperty {
         
@@ -311,15 +306,17 @@ object datastaxMod {
       }
       object DateRange {
         
-        /* static member */
-        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRange.fromBuffer")
+        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRange")
         @js.native
-        def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = js.native
+        val ^ : js.Any = js.native
         
         /* static member */
-        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRange.fromString")
-        @js.native
-        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = js.native
+        @scala.inline
+        def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
+        
+        /* static member */
+        @scala.inline
+        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
       }
       
       @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound")
@@ -334,20 +331,21 @@ object datastaxMod {
       }
       object DateRangeBound {
         
-        /* static member */
-        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound.fromString")
+        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound")
         @js.native
-        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+        val ^ : js.Any = js.native
         
         /* static member */
-        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound.toLowerBound")
-        @js.native
-        def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+        @scala.inline
+        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
         
         /* static member */
-        @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound.toUpperBound")
-        @js.native
-        def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
+        @scala.inline
+        def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
+        
+        /* static member */
+        @scala.inline
+        def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
       }
       
       @js.native
@@ -357,35 +355,49 @@ object datastaxMod {
       object dateRangePrecision extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[dateRangePrecision with Double] = js.native
+        def apply(value: Double): js.UndefOr[dateRangePrecision & Double] = js.native
         
         @js.native
-        sealed trait day extends dateRangePrecision
-        /* 1 */ val day: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.day with Double = js.native
+        sealed trait day
+          extends StObject
+             with dateRangePrecision
+        /* 1 */ val day: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.day & Double = js.native
         
         @js.native
-        sealed trait hour extends dateRangePrecision
-        /* 2 */ val hour: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.hour with Double = js.native
+        sealed trait hour
+          extends StObject
+             with dateRangePrecision
+        /* 2 */ val hour: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.hour & Double = js.native
         
         @js.native
-        sealed trait millisecond extends dateRangePrecision
-        /* 5 */ val millisecond: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.millisecond with Double = js.native
+        sealed trait millisecond
+          extends StObject
+             with dateRangePrecision
+        /* 5 */ val millisecond: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.millisecond & Double = js.native
         
         @js.native
-        sealed trait minute extends dateRangePrecision
-        /* 3 */ val minute: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.minute with Double = js.native
+        sealed trait minute
+          extends StObject
+             with dateRangePrecision
+        /* 3 */ val minute: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.minute & Double = js.native
         
         @js.native
-        sealed trait month extends dateRangePrecision
-        /* 0 */ val month: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.month with Double = js.native
+        sealed trait month
+          extends StObject
+             with dateRangePrecision
+        /* 0 */ val month: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.month & Double = js.native
         
         @js.native
-        sealed trait second extends dateRangePrecision
-        /* 4 */ val second: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.second with Double = js.native
+        sealed trait second
+          extends StObject
+             with dateRangePrecision
+        /* 4 */ val second: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.second & Double = js.native
         
         @js.native
-        sealed trait year extends dateRangePrecision
-        /* 0 */ val year: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.year with Double = js.native
+        sealed trait year
+          extends StObject
+             with dateRangePrecision
+        /* 0 */ val year: typings.cassandraDriver.datastaxMod.datastax.search.dateRangePrecision.year & Double = js.native
       }
     }
   }

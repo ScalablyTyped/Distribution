@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTemplate extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the GTM Custom Template as computed at storage time. This value is recomputed whenever the template is modified. */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** A reference to the Community Template Gallery entry. */
-  var galleryReference: js.UndefOr[GalleryReference] = js.native
+  var galleryReference: js.UndefOr[GalleryReference] = js.undefined
   
   /** Custom Template display name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** GTM Custom Template's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Auto generated link to the tag manager UI */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /** The custom template in text format. */
-  var templateData: js.UndefOr[String] = js.native
+  var templateData: js.UndefOr[String] = js.undefined
   
   /** The Custom Template ID uniquely identifies the GTM custom template. */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
   /** GTM Workspace ID. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object CustomTemplate {
   

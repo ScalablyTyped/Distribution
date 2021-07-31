@@ -6,36 +6,29 @@ import typings.polished.polishedStrings.Plussign
 import typings.polished.polishedStrings.infix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightToLeft extends StObject {
   
-  var argCount: `2` = js.native
+  var argCount: `2`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify addition */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify addition */ js.Any
   
-  var notation: infix = js.native
+  var notation: infix
   
-  var precedence: `2` = js.native
+  var precedence: `2`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Plussign = js.native
+  var symbol: Plussign
 }
 object RightToLeft {
   
   @scala.inline
   def apply(
-    argCount: `2`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify addition */ js.Any,
-    notation: infix,
-    precedence: `2`,
-    rightToLeft: `0`,
-    symbol: Plussign
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify addition */ js.Any
   ): RightToLeft = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 2, rightToLeft = 0, symbol = "+")
     __obj.asInstanceOf[RightToLeft]
   }
   

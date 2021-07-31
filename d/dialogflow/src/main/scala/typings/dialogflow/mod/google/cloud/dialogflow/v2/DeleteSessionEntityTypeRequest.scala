@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a DeleteSessionEntityTypeRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DeleteSessionEntityTypeRequest.
   * @param [properties] Properties to set
   */
-class DeleteSessionEntityTypeRequest () extends IDeleteSessionEntityTypeRequest {
+class DeleteSessionEntityTypeRequest ()
+  extends StObject
+     with IDeleteSessionEntityTypeRequest {
   def this(properties: IDeleteSessionEntityTypeRequest) = this()
   
   /** DeleteSessionEntityTypeRequest name. */
@@ -32,18 +33,20 @@ class DeleteSessionEntityTypeRequest () extends IDeleteSessionEntityTypeRequest 
 }
 object DeleteSessionEntityTypeRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DeleteSessionEntityTypeRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns DeleteSessionEntityTypeRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.create")
-  @js.native
-  def create(): DeleteSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.create")
-  @js.native
-  def create(properties: IDeleteSessionEntityTypeRequest): DeleteSessionEntityTypeRequest = js.native
+  @scala.inline
+  def create(): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeleteSessionEntityTypeRequest]
+  @scala.inline
+  def create(properties: IDeleteSessionEntityTypeRequest): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
   
   /**
     * Decodes a DeleteSessionEntityTypeRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object DeleteSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Reader): DeleteSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): DeleteSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): DeleteSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): DeleteSessionEntityTypeRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): DeleteSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): DeleteSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSessionEntityTypeRequest]
   
   /**
     * Decodes a DeleteSessionEntityTypeRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object DeleteSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): DeleteSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): DeleteSessionEntityTypeRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
   
   /**
     * Encodes the specified DeleteSessionEntityTypeRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object DeleteSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.encode")
-  @js.native
-  def encode(message: IDeleteSessionEntityTypeRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.encode")
-  @js.native
-  def encode(message: IDeleteSessionEntityTypeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IDeleteSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IDeleteSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified DeleteSessionEntityTypeRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object DeleteSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteSessionEntityTypeRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteSessionEntityTypeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IDeleteSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IDeleteSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a DeleteSessionEntityTypeRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object DeleteSessionEntityTypeRequest {
     * @returns DeleteSessionEntityTypeRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): DeleteSessionEntityTypeRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): DeleteSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteSessionEntityTypeRequest]
   
   /**
     * Creates a plain object from a DeleteSessionEntityTypeRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object DeleteSessionEntityTypeRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.toObject")
-  @js.native
-  def toObject(message: DeleteSessionEntityTypeRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.toObject")
-  @js.native
-  def toObject(message: DeleteSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: DeleteSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: DeleteSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a DeleteSessionEntityTypeRequest message.
@@ -140,7 +130,6 @@ object DeleteSessionEntityTypeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.DeleteSessionEntityTypeRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

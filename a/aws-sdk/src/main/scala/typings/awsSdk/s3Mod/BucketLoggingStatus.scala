@@ -2,13 +2,11 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLoggingStatus extends StObject {
   
-  var LoggingEnabled: js.UndefOr[typings.awsSdk.s3Mod.LoggingEnabled] = js.native
+  var LoggingEnabled: js.UndefOr[typings.awsSdk.s3Mod.LoggingEnabled] = js.undefined
 }
 object BucketLoggingStatus {
   

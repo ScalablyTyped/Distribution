@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTemplateVersionLabelRequest extends StObject {
   
   /** The label key for update. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Requests for add label to TemplateVersion or remove label from TemplateVersion. */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
   
   /** The label value for update. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ModifyTemplateVersionLabelRequest {
   

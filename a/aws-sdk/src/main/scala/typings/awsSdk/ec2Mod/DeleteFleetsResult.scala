@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFleetsResult extends StObject {
   
   /**
     * Information about the EC2 Fleets that are successfully deleted.
     */
-  var SuccessfulFleetDeletions: js.UndefOr[DeleteFleetSuccessSet] = js.native
+  var SuccessfulFleetDeletions: js.UndefOr[DeleteFleetSuccessSet] = js.undefined
   
   /**
     * Information about the EC2 Fleets that are not successfully deleted.
     */
-  var UnsuccessfulFleetDeletions: js.UndefOr[DeleteFleetErrorSet] = js.native
+  var UnsuccessfulFleetDeletions: js.UndefOr[DeleteFleetErrorSet] = js.undefined
 }
 object DeleteFleetsResult {
   

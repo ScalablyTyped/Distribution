@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The FCP is able to restrict access to the local file system to a number of directories shown to the client under configurable alias names.
   * @see com.sun.star.ucb.Content
   */
-@js.native
 trait FileContentProvider
-  extends XContentProvider
+  extends StObject
+     with XContentProvider
      with XContentIdentifierFactory
      with XPropertySet
      with XFileIdentifierConverter

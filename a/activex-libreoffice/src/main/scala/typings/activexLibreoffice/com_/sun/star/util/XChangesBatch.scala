@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,24 +17,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XChangesSet
   * @see XCancellable
   */
-@js.native
-trait XChangesBatch extends XInterface {
+trait XChangesBatch
+  extends StObject
+     with XInterface {
   
   /** queries for any pending changes that can be committed. */
-  val PendingChanges: ChangesSet = js.native
+  val PendingChanges: ChangesSet
   
   /**
     * commits any pending changes.
     *
     * The exact action depends on the concrete service.
     */
-  def commitChanges(): Unit = js.native
+  def commitChanges(): Unit
   
   /** queries for any pending changes that can be committed. */
-  def getPendingChanges(): ChangesSet = js.native
+  def getPendingChanges(): ChangesSet
   
   /** checks whether this object has any pending changes that can be committed. */
-  def hasPendingChanges(): Boolean = js.native
+  def hasPendingChanges(): Boolean
 }
 object XChangesBatch {
   

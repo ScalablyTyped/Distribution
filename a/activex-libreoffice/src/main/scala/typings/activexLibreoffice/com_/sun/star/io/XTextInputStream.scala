@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interfaces allows to read strings separated by delimiters and to read lines. The character encoding to be used can be set by {@link
   * setEncoding()} . Default encoding is "utf8".
   */
-@js.native
-trait XTextInputStream extends XInputStream {
+trait XTextInputStream
+  extends StObject
+     with XInputStream {
   
   /**
     * Returns the EOF status.
@@ -25,7 +25,7 @@ trait XTextInputStream extends XInputStream {
     * empty) and {@link readString()} (if a delimiter is directly followed by the next one).
     * @returns `TRUE` , if the end of file is reached, so that no next string can be read. `FALSE` otherwise
     */
-  def isEOF(): Boolean = js.native
+  def isEOF(): Boolean
   
   /**
     * reads text until a line break (CR, LF, or CR/LF) or EOF is found and returns it as string (without CR, LF).
@@ -35,7 +35,7 @@ trait XTextInputStream extends XInputStream {
     * @see setEncoding
     * @see isEOF
     */
-  def readLine(): String = js.native
+  def readLine(): String
   
   /**
     * reads text until one of the given delimiter characters or EOF is found and returns it as string (without delimiter).
@@ -46,13 +46,13 @@ trait XTextInputStream extends XInputStream {
     * @see setEncoding
     * @see isEOF
     */
-  def readString(Delimiters: SeqEquiv[String], bRemoveDelimiter: Boolean): String = js.native
+  def readString(Delimiters: SeqEquiv[String], bRemoveDelimiter: Boolean): String
   
   /**
     * sets character encoding.
     * @param Encoding sets the character encoding that should be used. The character encoding names refer to the document [http://www.iana.org/assignments/cha
     */
-  def setEncoding(Encoding: String): Unit = js.native
+  def setEncoding(Encoding: String): Unit
 }
 object XTextInputStream {
   

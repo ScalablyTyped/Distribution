@@ -2,120 +2,108 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "PullSymbol")
 @js.native
 class PullSymbol protected ()
-  extends typings.typescriptServices.TypeScript.PullSymbol {
+  extends StObject
+     with typings.typescriptServices.TypeScript.PullSymbol {
   def this(name: String, declKind: typings.typescriptServices.TypeScript.PullElementKind) = this()
 }
 object PullSymbol {
   
-  /* static member */
-  @JSImport("typescript-services", "PullSymbol.getDefaultConstructorSymbolForDocComments")
+  @JSImport("typescript-services", "PullSymbol")
   @js.native
-  def getDefaultConstructorSymbolForDocComments(classSymbol: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("typescript-services", "PullSymbol.getIsExternallyVisible")
-  @js.native
+  @scala.inline
+  def getDefaultConstructorSymbolForDocComments(classSymbol: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConstructorSymbolForDocComments")(classSymbol.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  /* static member */
+  @scala.inline
   def getIsExternallyVisible(
     symbol: typings.typescriptServices.TypeScript.PullSymbol,
     fromIsExternallyVisibleSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     inIsExternallyVisibleSymbols: js.Array[typings.typescriptServices.TypeScript.PullSymbol]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getIsExternallyVisible")(symbol.asInstanceOf[js.Any], fromIsExternallyVisibleSymbol.asInstanceOf[js.Any], inIsExternallyVisibleSymbols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterString")
-  @js.native
-  def getTypeParameterString(typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): String = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterString")
-  @js.native
+  @scala.inline
+  def getTypeParameterString(typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterString")(typars.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def getTypeParameterString(
     typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
-    scopeSymbol: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
     useContraintInName: Boolean
-  ): String = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterString")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterString")(typars.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def getTypeParameterString(
     typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
-  ): String = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterString")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterString")(typars.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def getTypeParameterString(
     typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     useContraintInName: Boolean
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterString")(typars.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
-  def getTypeParameterStringEx(typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
+  @scala.inline
+  def getTypeParameterStringEx(typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): typings.typescriptServices.TypeScript.MemberNameArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
-    scopeSymbol: js.UndefOr[scala.Nothing],
-    getTypeParamMarkerInfo: js.UndefOr[scala.Nothing],
-    useContraintInName: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
-  def getTypeParameterStringEx(
-    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
-    scopeSymbol: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
     getTypeParamMarkerInfo: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
-    scopeSymbol: js.UndefOr[scala.Nothing],
+    scopeSymbol: Unit,
     getTypeParamMarkerInfo: Boolean,
     useContraintInName: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: Unit,
+    getTypeParamMarkerInfo: Unit,
+    useContraintInName: Boolean
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
-  def getTypeParameterStringEx(
-    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
-    scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
-    getTypeParamMarkerInfo: js.UndefOr[scala.Nothing],
-    useContraintInName: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     getTypeParamMarkerInfo: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
-  @JSImport("typescript-services", "PullSymbol.getTypeParameterStringEx")
-  @js.native
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     getTypeParamMarkerInfo: Boolean,
     useContraintInName: Boolean
-  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
+  @scala.inline
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
+    getTypeParamMarkerInfo: Unit,
+    useContraintInName: Boolean
+  ): typings.typescriptServices.TypeScript.MemberNameArray = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParameterStringEx")(typeParameters.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any], getTypeParamMarkerInfo.asInstanceOf[js.Any], useContraintInName.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MemberNameArray]
   
   /* static member */
-  @JSImport("typescript-services", "PullSymbol._isExternalModuleReferenceAlias")
-  @js.native
-  def isExternalModuleReferenceAlias(aliasSymbol: typings.typescriptServices.TypeScript.PullTypeAliasSymbol): Boolean = js.native
+  @scala.inline
+  def isExternalModuleReferenceAlias(aliasSymbol: typings.typescriptServices.TypeScript.PullTypeAliasSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isExternalModuleReferenceAlias")(aliasSymbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "PullSymbol.unqualifiedNameReferencesDifferentSymbolInScope")
-  @js.native
-  def unqualifiedNameReferencesDifferentSymbolInScope(symbol: js.Any, scopePath: js.Any, endScopePathIndex: js.Any): js.Any = js.native
+  @scala.inline
+  def unqualifiedNameReferencesDifferentSymbolInScope(symbol: js.Any, scopePath: js.Any, endScopePathIndex: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unqualifiedNameReferencesDifferentSymbolInScope")(symbol.asInstanceOf[js.Any], scopePath.asInstanceOf[js.Any], endScopePathIndex.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

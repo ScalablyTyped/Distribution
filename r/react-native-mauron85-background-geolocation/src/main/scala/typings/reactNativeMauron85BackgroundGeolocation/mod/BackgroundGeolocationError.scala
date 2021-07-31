@@ -2,15 +2,13 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundGeolocationError extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var message: String = js.native
+  var message: String
 }
 object BackgroundGeolocationError {
   

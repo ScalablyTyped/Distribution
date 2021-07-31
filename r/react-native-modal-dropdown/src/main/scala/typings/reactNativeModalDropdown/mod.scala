@@ -11,7 +11,6 @@ import typings.reactNativeModalDropdown.reactNativeModalDropdownStrings.handled
 import typings.reactNativeModalDropdown.reactNativeModalDropdownStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,40 +30,41 @@ object mod {
     def show(): Unit = js.native
   }
   
-  @js.native
-  trait ModalDropdownProps[T] extends ViewProps {
+  trait ModalDropdownProps[T]
+    extends StObject
+       with ViewProps {
     
-    var adjustFrame: js.UndefOr[js.Function1[/* positionStyle */ PositionStyle, PositionStyle]] = js.native
+    var adjustFrame: js.UndefOr[js.Function1[/* positionStyle */ PositionStyle, PositionStyle]] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var defaultIndex: js.UndefOr[Double] = js.native
+    var defaultIndex: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dropdownStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dropdownTextHighlightStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var dropdownTextHighlightStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var dropdownTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var dropdownTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[always | never | handled] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[always | never | handled] = js.undefined
     
-    var onDropdownWillHide: js.UndefOr[js.Function0[Unit | Boolean]] = js.native
+    var onDropdownWillHide: js.UndefOr[js.Function0[Unit | Boolean]] = js.undefined
     
-    var onDropdownWillShow: js.UndefOr[js.Function0[Unit | Boolean]] = js.native
+    var onDropdownWillShow: js.UndefOr[js.Function0[Unit | Boolean]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* index */ String, /* option */ T, Unit | Boolean]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* index */ String, /* option */ T, Unit | Boolean]] = js.undefined
     
-    var options: js.UndefOr[js.Array[T]] = js.native
+    var options: js.UndefOr[js.Array[T]] = js.undefined
     
-    var renderButtonText: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var renderButtonText: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
     var renderRow: js.UndefOr[
         js.Function3[/* option */ T, /* index */ String, /* isSelected */ Boolean, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     var renderSeparator: js.UndefOr[
         js.Function3[
@@ -73,13 +73,13 @@ object mod {
           /* adjacentRowHighlighted */ Boolean, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var scrollEnabled: js.UndefOr[Boolean] = js.native
+    var scrollEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object ModalDropdownProps {
     
@@ -90,7 +90,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ModalDropdownPropsMutableBuilder[Self <: ModalDropdownProps[_], T] (val x: Self with ModalDropdownProps[T]) extends AnyVal {
+    implicit class ModalDropdownPropsMutableBuilder[Self <: ModalDropdownProps[?], T] (val x: Self & ModalDropdownProps[T]) extends AnyVal {
       
       @scala.inline
       def setAdjustFrame(value: /* positionStyle */ PositionStyle => PositionStyle): Self = StObject.set(x, "adjustFrame", js.Any.fromFunction1(value))
@@ -225,18 +225,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PositionStyle extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PositionStyle {
     

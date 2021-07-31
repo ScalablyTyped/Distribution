@@ -2,50 +2,48 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListCommitsEndpoint extends StObject {
   
   /**
     * GitHub login or email address by which to filter by commit author.
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Only commits containing this file path will be returned.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`).
     */
-  var sha: js.UndefOr[String] = js.native
+  var sha: js.UndefOr[String] = js.undefined
   
   /**
     * Only commits after this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
   
   /**
     * Only commits before this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var until: js.UndefOr[String] = js.native
+  var until: js.UndefOr[String] = js.undefined
 }
 object ReposListCommitsEndpoint {
   

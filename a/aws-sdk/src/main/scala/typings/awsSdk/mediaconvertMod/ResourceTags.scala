@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTags extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The tags for the resource.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
 }
 object ResourceTags {
   

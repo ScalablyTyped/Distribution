@@ -6,13 +6,14 @@ import typings.slonik.mod.LogicalBooleanOperatorType
 import typings.slonik.mod.TypeNameIdentifierType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slonikStrings {
   
   @js.native
-  sealed trait AND extends LogicalBooleanOperatorType
+  sealed trait AND
+    extends StObject
+       with LogicalBooleanOperatorType
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   
@@ -27,37 +28,51 @@ object slonikStrings {
   def DISABLE_TIMEOUT: DISABLE_TIMEOUT = "DISABLE_TIMEOUT".asInstanceOf[DISABLE_TIMEOUT]
   
   @js.native
-  sealed trait EXPLICIT extends ConnectionTypeType
+  sealed trait EXPLICIT
+    extends StObject
+       with ConnectionTypeType
   @scala.inline
   def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   
   @js.native
-  sealed trait Equalssign extends ComparisonOperatorType
+  sealed trait Equalssign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends ComparisonOperatorType
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait Greaterthansign extends ComparisonOperatorType
+  sealed trait Greaterthansign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends ComparisonOperatorType
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait IMPLICIT_QUERY extends ConnectionTypeType
+  sealed trait IMPLICIT_QUERY
+    extends StObject
+       with ConnectionTypeType
   @scala.inline
   def IMPLICIT_QUERY: IMPLICIT_QUERY = "IMPLICIT_QUERY".asInstanceOf[IMPLICIT_QUERY]
   
   @js.native
-  sealed trait IMPLICIT_TRANSACTION extends ConnectionTypeType
+  sealed trait IMPLICIT_TRANSACTION
+    extends StObject
+       with ConnectionTypeType
   @scala.inline
   def IMPLICIT_TRANSACTION: IMPLICIT_TRANSACTION = "IMPLICIT_TRANSACTION".asInstanceOf[IMPLICIT_TRANSACTION]
   
@@ -67,22 +82,30 @@ object slonikStrings {
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   
   @js.native
-  sealed trait Lessthansign extends ComparisonOperatorType
+  sealed trait Lessthansign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends ComparisonOperatorType
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignGreaterthansign extends ComparisonOperatorType
+  sealed trait LessthansignGreaterthansign
+    extends StObject
+       with ComparisonOperatorType
   @scala.inline
   def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
   
   @js.native
-  sealed trait OR extends LogicalBooleanOperatorType
+  sealed trait OR
+    extends StObject
+       with LogicalBooleanOperatorType
   @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
   
@@ -102,52 +125,72 @@ object slonikStrings {
   def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   
   @js.native
-  sealed trait bool extends TypeNameIdentifierType
+  sealed trait bool
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
-  sealed trait bytea extends TypeNameIdentifierType
+  sealed trait bytea
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def bytea: bytea = "bytea".asInstanceOf[bytea]
   
   @js.native
-  sealed trait float4 extends TypeNameIdentifierType
+  sealed trait float4
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def float4: float4 = "float4".asInstanceOf[float4]
   
   @js.native
-  sealed trait float8 extends TypeNameIdentifierType
+  sealed trait float8
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def float8: float8 = "float8".asInstanceOf[float8]
   
   @js.native
-  sealed trait int2 extends TypeNameIdentifierType
+  sealed trait int2
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def int2: int2 = "int2".asInstanceOf[int2]
   
   @js.native
-  sealed trait int4 extends TypeNameIdentifierType
+  sealed trait int4
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def int4: int4 = "int4".asInstanceOf[int4]
   
   @js.native
-  sealed trait json extends TypeNameIdentifierType
+  sealed trait json
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait text extends TypeNameIdentifierType
+  sealed trait text
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait timestamptz extends TypeNameIdentifierType
+  sealed trait timestamptz
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def timestamptz: timestamptz = "timestamptz".asInstanceOf[timestamptz]
   
   @js.native
-  sealed trait uuid extends TypeNameIdentifierType
+  sealed trait uuid
+    extends StObject
+       with TypeNameIdentifierType
   @scala.inline
   def uuid: uuid = "uuid".asInstanceOf[uuid]
 }

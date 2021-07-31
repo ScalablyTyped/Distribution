@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declined extends StObject {
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var declined: scala.Double = js.native
+  var declined: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var notStarted: scala.Double = js.native
+  var notStarted: scala.Double
   
-  var paused: scala.Double = js.native
+  var paused: scala.Double
   
-  var unspecified: scala.Double = js.native
+  var unspecified: scala.Double
 }
 object Declined {
   

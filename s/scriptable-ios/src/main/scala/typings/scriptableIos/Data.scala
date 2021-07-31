@@ -2,21 +2,19 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Raw data representation._
   * @see https://docs.scriptable.app/data
   */
-@js.native
 trait Data extends StObject {
   
   /**
     * _Gets bytes from data._
     * @see https://docs.scriptable.app/data/#-getbytes
     */
-  def getBytes(): js.Array[Double] = js.native
+  def getBytes(): js.Array[Double]
   
   /**
     * _Creates a base64 encoded string._
@@ -24,7 +22,7 @@ trait Data extends StObject {
     * Creates a base64 encoded string from the data.
     * @see https://docs.scriptable.app/data/#-tobase64string
     */
-  def toBase64String(): String = js.native
+  def toBase64String(): String
   
   /**
     * _Creates a string from the data._
@@ -32,7 +30,7 @@ trait Data extends StObject {
     * The data is assumed to represent a UTF8 encoded string. If the string is not UTF8 encoded string, the function will return null.
     * @see https://docs.scriptable.app/data/#-torawstring
     */
-  def toRawString(): String = js.native
+  def toRawString(): String
 }
 object Data {
   

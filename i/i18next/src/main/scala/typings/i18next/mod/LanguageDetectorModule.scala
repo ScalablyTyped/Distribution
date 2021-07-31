@@ -3,21 +3,21 @@ package typings.i18next.mod
 import typings.i18next.i18nextStrings.languageDetector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanguageDetectorModule extends Module {
+trait LanguageDetectorModule
+  extends StObject
+     with Module {
   
-  def cacheUserLanguage(lng: String): Unit = js.native
+  def cacheUserLanguage(lng: String): Unit
   
   /** Must return detected language */
-  def detect(): js.UndefOr[String] = js.native
+  def detect(): js.UndefOr[String]
   
-  def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit = js.native
+  def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit
   
   @JSName("type")
-  var type_LanguageDetectorModule: languageDetector = js.native
+  var type_LanguageDetectorModule: languageDetector
 }
 object LanguageDetectorModule {
   
@@ -25,11 +25,10 @@ object LanguageDetectorModule {
   def apply(
     cacheUserLanguage: String => Unit,
     detect: () => js.UndefOr[String],
-    init: (Services, js.Object, InitOptions) => Unit,
-    `type`: languageDetector
+    init: (Services, js.Object, InitOptions) => Unit
   ): LanguageDetectorModule = {
     val __obj = js.Dynamic.literal(cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction0(detect), init = js.Any.fromFunction3(init))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("languageDetector")
     __obj.asInstanceOf[LanguageDetectorModule]
   }
   

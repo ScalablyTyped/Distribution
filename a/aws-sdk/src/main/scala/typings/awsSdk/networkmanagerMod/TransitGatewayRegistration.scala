@@ -2,26 +2,24 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayRegistration extends StObject {
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the transit gateway registration.
     */
-  var State: js.UndefOr[TransitGatewayRegistrationStateReason] = js.native
+  var State: js.UndefOr[TransitGatewayRegistrationStateReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the transit gateway.
     */
-  var TransitGatewayArn: js.UndefOr[String] = js.native
+  var TransitGatewayArn: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayRegistration {
   

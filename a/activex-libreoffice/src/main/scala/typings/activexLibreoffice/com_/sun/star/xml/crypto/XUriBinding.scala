@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,22 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to dynamically bind a uri with a XInputStream interface.
   */
-@js.native
-trait XUriBinding extends XInterface {
+trait XUriBinding
+  extends StObject
+     with XInterface {
   
   /**
     * Gets the XInputStream interface for a uri.
     * @param uri the uri whose binding is to get
     * @returns the XInputStream bound with the uri
     */
-  def getUriBinding(uri: String): XInputStream = js.native
+  def getUriBinding(uri: String): XInputStream
   
   /**
     * Sets the XInputStream interface for a uri.
     * @param uri the uri to bind
     * @param InputStream the XInputStream to be bound
     */
-  def setUriBinding(uri: String, InputStream: XInputStream): Unit = js.native
+  def setUriBinding(uri: String, InputStream: XInputStream): Unit
 }
 object XUriBinding {
   

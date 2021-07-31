@@ -11,8 +11,8 @@ A high-performance pure-javascript SHA1 implementation suitable for large binary
 | Full name          | rusha |
 | Keywords           | sha1, binary, crypto, hash |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 1875692 |
+| # dependents       | 38 |
+| # downloads        | 1940216 |
 | # stars            | 4 |
 
 ## Links

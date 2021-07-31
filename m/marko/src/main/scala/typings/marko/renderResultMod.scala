@@ -7,13 +7,14 @@ import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderResultMod {
   
   @js.native
-  trait RenderResult extends DomElement {
+  trait RenderResult
+    extends StObject
+       with DomElement {
     
     def apply(out: js.Any): this.type = js.native
     

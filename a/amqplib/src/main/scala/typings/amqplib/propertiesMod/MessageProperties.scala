@@ -2,39 +2,37 @@ package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageProperties extends StObject {
   
-  var appId: js.UndefOr[js.Any] = js.native
+  var appId: js.UndefOr[js.Any] = js.undefined
   
-  var clusterId: js.UndefOr[js.Any] = js.native
+  var clusterId: js.UndefOr[js.Any] = js.undefined
   
-  var contentEncoding: js.UndefOr[js.Any] = js.native
+  var contentEncoding: js.UndefOr[js.Any] = js.undefined
   
-  var contentType: js.UndefOr[js.Any] = js.native
+  var contentType: js.UndefOr[js.Any] = js.undefined
   
-  var correlationId: js.UndefOr[js.Any] = js.native
+  var correlationId: js.UndefOr[js.Any] = js.undefined
   
-  var deliveryMode: js.UndefOr[js.Any] = js.native
+  var deliveryMode: js.UndefOr[js.Any] = js.undefined
   
-  var expiration: js.UndefOr[js.Any] = js.native
+  var expiration: js.UndefOr[js.Any] = js.undefined
   
-  var headers: MessagePropertyHeaders = js.native
+  var headers: MessagePropertyHeaders
   
-  var messageId: js.UndefOr[js.Any] = js.native
+  var messageId: js.UndefOr[js.Any] = js.undefined
   
-  var priority: js.UndefOr[js.Any] = js.native
+  var priority: js.UndefOr[js.Any] = js.undefined
   
-  var replyTo: js.UndefOr[js.Any] = js.native
+  var replyTo: js.UndefOr[js.Any] = js.undefined
   
-  var timestamp: js.UndefOr[js.Any] = js.native
+  var timestamp: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
   
-  var userId: js.UndefOr[js.Any] = js.native
+  var userId: js.UndefOr[js.Any] = js.undefined
 }
 object MessageProperties {
   

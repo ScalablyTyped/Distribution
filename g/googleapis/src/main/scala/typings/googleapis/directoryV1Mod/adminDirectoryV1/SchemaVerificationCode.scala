@@ -2,36 +2,34 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for verification codes in Directory API.
   */
-@js.native
 trait SchemaVerificationCode extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the resource. This is always
     * admin#directory#verificationCode.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The obfuscated unique ID of the user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * A current verification code for the user. Invalidated or used
     * verification codes are not returned as part of the result.
     */
-  var verificationCode: js.UndefOr[String] = js.native
+  var verificationCode: js.UndefOr[String] = js.undefined
 }
 object SchemaVerificationCode {
   

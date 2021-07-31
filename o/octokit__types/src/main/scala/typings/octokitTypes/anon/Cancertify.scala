@@ -2,35 +2,33 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancertify extends StObject {
   
-  var can_certify: Boolean = js.native
+  var can_certify: Boolean
   
-  var can_encrypt_comms: Boolean = js.native
+  var can_encrypt_comms: Boolean
   
-  var can_encrypt_storage: Boolean = js.native
+  var can_encrypt_storage: Boolean
   
-  var can_sign: Boolean = js.native
+  var can_sign: Boolean
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var emails: js.Array[_] = js.native
+  var emails: js.Array[js.Any]
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var key_id: String = js.native
+  var key_id: String
   
-  var primary_key_id: Double = js.native
+  var primary_key_id: Double
   
-  var public_key: String = js.native
+  var public_key: String
   
-  var subkeys: js.Array[_] = js.native
+  var subkeys: js.Array[js.Any]
 }
 object Cancertify {
   
@@ -41,13 +39,13 @@ object Cancertify {
     can_encrypt_storage: Boolean,
     can_sign: Boolean,
     created_at: String,
-    emails: js.Array[_],
+    emails: js.Array[js.Any],
     expires_at: String,
     id: Double,
     key_id: String,
     primary_key_id: Double,
     public_key: String,
-    subkeys: js.Array[_]
+    subkeys: js.Array[js.Any]
   ): Cancertify = {
     val __obj = js.Dynamic.literal(can_certify = can_certify.asInstanceOf[js.Any], can_encrypt_comms = can_encrypt_comms.asInstanceOf[js.Any], can_encrypt_storage = can_encrypt_storage.asInstanceOf[js.Any], can_sign = can_sign.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key_id = key_id.asInstanceOf[js.Any], primary_key_id = primary_key_id.asInstanceOf[js.Any], public_key = public_key.asInstanceOf[js.Any], subkeys = subkeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancertify]
@@ -72,7 +70,7 @@ object Cancertify {
     def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[_]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    def setEmails(value: js.Array[js.Any]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEmailsVarargs(value: js.Any*): Self = StObject.set(x, "emails", js.Array(value :_*))
@@ -93,7 +91,7 @@ object Cancertify {
     def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubkeys(value: js.Array[_]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
+    def setSubkeys(value: js.Array[js.Any]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSubkeysVarargs(value: js.Any*): Self = StObject.set(x, "subkeys", js.Array(value :_*))

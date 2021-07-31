@@ -2,17 +2,15 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyIdTokenOptions extends StObject {
   
-  var audience: js.UndefOr[String | js.Array[String]] = js.native
+  var audience: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var idToken: String = js.native
+  var idToken: String
   
-  var maxExpiry: js.UndefOr[Double] = js.native
+  var maxExpiry: js.UndefOr[Double] = js.undefined
 }
 object VerifyIdTokenOptions {
   

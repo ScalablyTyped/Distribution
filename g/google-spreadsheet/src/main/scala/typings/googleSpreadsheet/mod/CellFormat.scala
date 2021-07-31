@@ -2,79 +2,77 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellFormat extends StObject {
   
   /**
     * @description
     * background color of the cell
     */
-  var backgroundColor: Color = js.native
+  var backgroundColor: Color
   
   /**
     * @description
     * border settings of the cell
     */
-  var borders: Borders = js.native
+  var borders: Borders
   
   /**
     * @description
     * horizontal alignment of the cell's value
     */
-  var horizontalAlignment: HorizontalAlign = js.native
+  var horizontalAlignment: HorizontalAlign
   
   /**
     * @description
     * how a hyperlink (if any) should be displayed
     */
-  var hyperlinkDisplayType: HyperlinkDisplayType = js.native
+  var hyperlinkDisplayType: HyperlinkDisplayType
   
   /**
     * @description
     * format describing how number values should be represented to the user
     */
-  var numberFormat: NumberFormat = js.native
+  var numberFormat: NumberFormat
   
   /**
     * @description
     * padding in the cell
     * - spacing between inner text and cell boundaries
     */
-  var padding: Padding = js.native
+  var padding: Padding
   
   /**
     * @description
     * display direction of cell value text
     */
-  var textDirection: TextDirection = js.native
+  var textDirection: TextDirection
   
   /**
     * @description
     * format of the text in the cell
     * - font, size etc.
     */
-  var textFormat: TextFormat = js.native
+  var textFormat: TextFormat
   
   /**
     * @description
     * rotation applied to text in a cell
     */
-  var textRotation: TextRotation = js.native
+  var textRotation: TextRotation
   
   /**
     * @description
     * vertical alignment of the cell's value
     */
-  var verticalAlignment: VerticalAlign = js.native
+  var verticalAlignment: VerticalAlign
   
   /**
     * @description
     * text-wrapping strategy of the cell's value
     */
-  var wrapStrategy: WrapStrategy = js.native
+  var wrapStrategy: WrapStrategy
 }
 object CellFormat {
   

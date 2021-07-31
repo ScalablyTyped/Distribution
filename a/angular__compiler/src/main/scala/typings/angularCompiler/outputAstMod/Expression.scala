@@ -3,15 +3,14 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "Expression")
 @js.native
 abstract class Expression () extends StObject {
   def this(`type`: Type) = this()
-  def this(`type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(`type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(`type`: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(`type`: Type, sourceSpan: ParseSourceSpan) = this()
   
   def and(rhs: Expression): BinaryOperatorExpr = js.native
@@ -24,14 +23,14 @@ abstract class Expression () extends StObject {
   def biggerEquals(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   
   def bitwiseAnd(rhs: Expression): BinaryOperatorExpr = js.native
-  def bitwiseAnd(rhs: Expression, sourceSpan: js.UndefOr[scala.Nothing], parens: Boolean): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: Null, parens: Boolean): BinaryOperatorExpr = js.native
+  def bitwiseAnd(rhs: Expression, sourceSpan: Unit, parens: Boolean): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: ParseSourceSpan, parens: Boolean): BinaryOperatorExpr = js.native
   
   def callFn(params: js.Array[Expression]): InvokeFunctionExpr = js.native
-  def callFn(params: js.Array[Expression], sourceSpan: js.UndefOr[scala.Nothing], pure: Boolean): InvokeFunctionExpr = js.native
   def callFn(params: js.Array[Expression], sourceSpan: Null, pure: Boolean): InvokeFunctionExpr = js.native
+  def callFn(params: js.Array[Expression], sourceSpan: Unit, pure: Boolean): InvokeFunctionExpr = js.native
   def callFn(params: js.Array[Expression], sourceSpan: ParseSourceSpan): InvokeFunctionExpr = js.native
   def callFn(params: js.Array[Expression], sourceSpan: ParseSourceSpan, pure: Boolean): InvokeFunctionExpr = js.native
   
@@ -44,8 +43,8 @@ abstract class Expression () extends StObject {
   def cast(`type`: Type, sourceSpan: ParseSourceSpan): Expression = js.native
   
   def conditional(trueCase: Expression): ConditionalExpr = js.native
-  def conditional(trueCase: Expression, falseCase: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Null, sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
+  def conditional(trueCase: Expression, falseCase: Unit, sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Expression): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Expression, sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
   
@@ -59,8 +58,8 @@ abstract class Expression () extends StObject {
   def identical(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   
   def instantiate(params: js.Array[Expression]): InstantiateExpr = js.native
-  def instantiate(params: js.Array[Expression], `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
+  def instantiate(params: js.Array[Expression], `type`: Unit, sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Type): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
   
@@ -79,8 +78,8 @@ abstract class Expression () extends StObject {
   def isEquivalent(e: Expression): Boolean = js.native
   
   def key(index: Expression): ReadKeyExpr = js.native
-  def key(index: Expression, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Null, sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
+  def key(index: Expression, `type`: Unit, sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Type): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Type, sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
   

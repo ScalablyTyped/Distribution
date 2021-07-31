@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a caption for an equation.
   */
-@js.native
-trait InsertEquationsCaptionCommand extends CommandWithSimpleStateBase {
+trait InsertEquationsCaptionCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertEquationsCaptionCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertEquationsCaptionCommand {
   

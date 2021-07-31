@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /**
     * Environment variable key-value pairs.
     */
-  var Variables: js.UndefOr[EnvironmentVariables] = js.native
+  var Variables: js.UndefOr[EnvironmentVariables] = js.undefined
 }
 object Environment {
   

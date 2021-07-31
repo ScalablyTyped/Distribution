@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -26,10 +25,9 @@ object providerMod {
     def this(props: ProviderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ProviderProps extends StObject {
     
-    var store: Store[js.Object] = js.native
+    var store: Store[js.Object]
   }
   object ProviderProps {
     

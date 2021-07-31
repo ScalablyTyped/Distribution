@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Location extends StObject {
   
   /**
     * Zero-based byte offsets delimiting the finding. These are relative to the finding's containing element. Note that when the content is not textual, this references the UTF-8 encoded
     * textual representation of the content. Omitted if content is an image.
     */
-  var byteRange: js.UndefOr[GooglePrivacyDlpV2Range] = js.native
+  var byteRange: js.UndefOr[GooglePrivacyDlpV2Range] = js.undefined
   
   /** Unicode character offsets delimiting the finding. These are relative to the finding's containing element. Provided when the content is text. */
-  var codepointRange: js.UndefOr[GooglePrivacyDlpV2Range] = js.native
+  var codepointRange: js.UndefOr[GooglePrivacyDlpV2Range] = js.undefined
   
   /** Information about the container where this finding occurred, if available. */
-  var container: js.UndefOr[GooglePrivacyDlpV2Container] = js.native
+  var container: js.UndefOr[GooglePrivacyDlpV2Container] = js.undefined
   
   /** List of nested objects pointing to the precise location of the finding within the file or record. */
-  var contentLocations: js.UndefOr[js.Array[GooglePrivacyDlpV2ContentLocation]] = js.native
+  var contentLocations: js.UndefOr[js.Array[GooglePrivacyDlpV2ContentLocation]] = js.undefined
 }
 object GooglePrivacyDlpV2Location {
   

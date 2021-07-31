@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationRange extends StObject {
   
   /**
     * The maximum value of the duration range. Must be less than or equal to 604800 seconds (1 week).
     */
-  var maxSeconds: js.UndefOr[AssessmentRunDuration] = js.native
+  var maxSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined
   
   /**
     * The minimum value of the duration range. Must be greater than zero.
     */
-  var minSeconds: js.UndefOr[AssessmentRunDuration] = js.native
+  var minSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined
 }
 object DurationRange {
   

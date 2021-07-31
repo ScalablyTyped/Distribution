@@ -2,23 +2,21 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesHistogramEntryMod {
   
-  @js.native
   trait HistogramEntry extends StObject {
     
     /**
       * <p>The prevalence of the entry.</p>
       */
-    var Count: js.UndefOr[Double] = js.native
+    var Count: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The value of the entry.</p>
       */
-    var Value: js.UndefOr[Double] = js.native
+    var Value: js.UndefOr[Double] = js.undefined
   }
   object HistogramEntry {
     

@@ -3,15 +3,13 @@ package typings.web3Core.mod
 import typings.web3Core.anon.Gas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RLPEncodedTransaction extends StObject {
   
-  var raw: String = js.native
+  var raw: String
   
-  var tx: Gas = js.native
+  var tx: Gas
 }
 object RLPEncodedTransaction {
   

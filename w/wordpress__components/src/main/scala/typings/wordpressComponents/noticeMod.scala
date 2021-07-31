@@ -11,7 +11,6 @@ import typings.wordpressComponents.noticeMod.Notice.Props
 import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeMod {
@@ -50,17 +49,16 @@ object noticeMod {
       }
     }
     
-    @js.native
     trait BaseAction extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var label: String = js.native
+      var label: String
       
       /**
         * Should default classes be removed from the action?
         */
-      var noDefaultClasses: js.UndefOr[Boolean] = js.native
+      var noDefaultClasses: js.UndefOr[Boolean] = js.undefined
     }
     object BaseAction {
       
@@ -90,12 +88,12 @@ object noticeMod {
       }
     }
     
-    @js.native
     trait ButtonAction
-      extends BaseAction
+      extends StObject
+         with BaseAction
          with Action {
       
-      var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+      var onClick: MouseEventHandler[HTMLButtonElement]
     }
     object ButtonAction {
       
@@ -113,33 +111,32 @@ object noticeMod {
       }
     }
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * An array of action objects.
         */
-      var actions: js.UndefOr[js.Array[Action]] = js.native
+      var actions: js.UndefOr[js.Array[Action]] = js.undefined
       
       /**
         * Content to render in the notice.
         */
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the notice should be dismissible or not.
         * @defaultValue true
         */
-      var isDismissible: js.UndefOr[Boolean] = js.native
+      var isDismissible: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Function called when dismissing the notice.
         */
-      var onRemove: js.UndefOr[js.Function0[Unit]] = js.native
+      var onRemove: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var status: js.UndefOr[Status] = js.native
+      var status: js.UndefOr[Status] = js.undefined
     }
     object Props {
       
@@ -193,12 +190,12 @@ object noticeMod {
       }
     }
     
-    @js.native
     trait URLAction
-      extends BaseAction
+      extends StObject
+         with BaseAction
          with Action {
       
-      var url: String = js.native
+      var url: String
     }
     object URLAction {
       

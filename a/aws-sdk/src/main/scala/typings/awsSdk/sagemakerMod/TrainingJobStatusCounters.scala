@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingJobStatusCounters extends StObject {
   
   /**
     * The number of completed training jobs launched by the hyperparameter tuning job.
     */
-  var Completed: js.UndefOr[TrainingJobStatusCounter] = js.native
+  var Completed: js.UndefOr[TrainingJobStatusCounter] = js.undefined
   
   /**
     * The number of in-progress training jobs launched by a hyperparameter tuning job.
     */
-  var InProgress: js.UndefOr[TrainingJobStatusCounter] = js.native
+  var InProgress: js.UndefOr[TrainingJobStatusCounter] = js.undefined
   
   /**
     * The number of training jobs that failed and can't be retried. A failed training job can't be retried if it failed because a client error occurred.
     */
-  var NonRetryableError: js.UndefOr[TrainingJobStatusCounter] = js.native
+  var NonRetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined
   
   /**
     * The number of training jobs that failed, but can be retried. A failed training job can be retried only if it failed because an internal service error occurred.
     */
-  var RetryableError: js.UndefOr[TrainingJobStatusCounter] = js.native
+  var RetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined
   
   /**
     * The number of training jobs launched by a hyperparameter tuning job that were manually stopped.
     */
-  var Stopped: js.UndefOr[TrainingJobStatusCounter] = js.native
+  var Stopped: js.UndefOr[TrainingJobStatusCounter] = js.undefined
 }
 object TrainingJobStatusCounters {
   

@@ -2,19 +2,17 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var collate: String = js.native
+  var collate: String
   
-  var length: Double = js.native
+  var length: Double
   
-  var order: String = js.native
+  var order: String
 }
 object Attribute {
   

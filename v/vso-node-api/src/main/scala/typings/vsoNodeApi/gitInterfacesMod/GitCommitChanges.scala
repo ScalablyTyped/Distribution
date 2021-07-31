@@ -2,15 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCommitChanges extends StObject {
   
-  var changeCounts: ChangeCountDictionary = js.native
+  var changeCounts: ChangeCountDictionary
   
-  var changes: js.Array[GitChange] = js.native
+  var changes: js.Array[GitChange]
 }
 object GitCommitChanges {
   

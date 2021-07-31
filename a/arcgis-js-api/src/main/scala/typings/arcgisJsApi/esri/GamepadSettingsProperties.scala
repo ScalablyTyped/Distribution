@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GamepadSettingsProperties extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait GamepadSettingsProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
     */
-  var enabledFocusMode: js.UndefOr[document | view | none] = js.native
+  var enabledFocusMode: js.UndefOr[document | view | none] = js.undefined
 }
 object GamepadSettingsProperties {
   

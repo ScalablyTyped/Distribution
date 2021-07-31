@@ -2,24 +2,22 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Options interfaces
   */
-@js.native
 trait CreateOptions extends StObject {
   
-  var DefaultMessageTimeToLive: String = js.native
+  var DefaultMessageTimeToLive: String
   
-  var DuplicateDetectionHistoryTimeWindow: String = js.native
+  var DuplicateDetectionHistoryTimeWindow: String
   
-  var EnablePartitioning: Boolean = js.native
+  var EnablePartitioning: Boolean
   
-  var MaxSizeInMegabytes: Double = js.native
+  var MaxSizeInMegabytes: Double
   
-  var RequiresDuplicateDetection: Boolean = js.native
+  var RequiresDuplicateDetection: Boolean
 }
 object CreateOptions {
   

@@ -2,26 +2,24 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLayersummaries extends StObject {
   
   /**
     * A list of layer summary items.
     */
-  var items: js.UndefOr[js.Array[SchemaLayersummary]] = js.native
+  var items: js.UndefOr[js.Array[SchemaLayersummary]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of layer summaries found.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaLayersummaries {
   

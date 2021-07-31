@@ -26,7 +26,6 @@ import typings.materialUiLab.useAutocompleteUseAutocompleteMod.AutocompleteHighl
 import typings.materialUiLab.useAutocompleteUseAutocompleteMod.AutocompleteInputChangeReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiLabStrings {
@@ -37,17 +36,23 @@ object materialUiLabStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait action extends AlertClassKey
+  sealed trait action
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait actions extends SpeedDialClassKey
+  sealed trait actions
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
   
   @js.native
-  sealed trait actionsClosed extends SpeedDialClassKey
+  sealed trait actionsClosed
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def actionsClosed: actionsClosed = "actionsClosed".asInstanceOf[actionsClosed]
   
@@ -68,21 +73,24 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait alignAlternate
-    extends TimelineClassKey
+    extends StObject
+       with TimelineClassKey
        with TimelineItemClassKey
   @scala.inline
   def alignAlternate: alignAlternate = "alignAlternate".asInstanceOf[alignAlternate]
   
   @js.native
   sealed trait alignLeft
-    extends TimelineClassKey
+    extends StObject
+       with TimelineClassKey
        with TimelineItemClassKey
   @scala.inline
   def alignLeft: alignLeft = "alignLeft".asInstanceOf[alignLeft]
   
   @js.native
   sealed trait alignRight
-    extends TimelineClassKey
+    extends StObject
+       with TimelineClassKey
        with TimelineItemClassKey
        with TimelineOppositeContentClassKey
   @scala.inline
@@ -114,18 +122,23 @@ object materialUiLabStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends AutocompleteHighlightChangeReason
+  sealed trait auto
+    extends StObject
+       with AutocompleteHighlightChangeReason
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait avatar extends AvatarGroupClassKey
+  sealed trait avatar
+    extends StObject
+       with AvatarGroupClassKey
   @scala.inline
   def avatar: avatar = "avatar".asInstanceOf[avatar]
   
   @js.native
   sealed trait blur
-    extends AutocompleteChangeReason
+    extends StObject
+       with AutocompleteChangeReason
        with AutocompleteCloseReason
        with CloseReason
   @scala.inline
@@ -157,29 +170,38 @@ object materialUiLabStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait circle extends SkeletonClassKey
+  sealed trait circle
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait clear
-    extends AutocompleteChangeReason
+    extends StObject
+       with AutocompleteChangeReason
        with AutocompleteInputChangeReason
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait clearIndicator extends AutocompleteClassKey
+  sealed trait clearIndicator
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def clearIndicator: clearIndicator = "clearIndicator".asInstanceOf[clearIndicator]
   
   @js.native
-  sealed trait clearIndicatorDirty extends AutocompleteClassKey
+  sealed trait clearIndicatorDirty
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def clearIndicatorDirty: clearIndicatorDirty = "clearIndicatorDirty".asInstanceOf[clearIndicatorDirty]
   
   @js.native
-  sealed trait content extends TreeItemClassKey
+  sealed trait content
+    extends StObject
+       with TreeItemClassKey
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   
@@ -189,7 +211,9 @@ object materialUiLabStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait `create-option` extends AutocompleteChangeReason
+  sealed trait `create-option`
+    extends StObject
+       with AutocompleteChangeReason
   @scala.inline
   def `create-option`: `create-option` = "create-option".asInstanceOf[`create-option`]
   
@@ -199,22 +223,30 @@ object materialUiLabStrings {
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait decimal extends RatingClassKey
+  sealed trait decimal
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait defaultDefault extends TimelineDotClassKey
+  sealed trait defaultDefault
+    extends StObject
+       with TimelineDotClassKey
   @scala.inline
   def defaultDefault: defaultDefault = "defaultDefault".asInstanceOf[defaultDefault]
   
   @js.native
-  sealed trait defaultPrimary extends TimelineDotClassKey
+  sealed trait defaultPrimary
+    extends StObject
+       with TimelineDotClassKey
   @scala.inline
   def defaultPrimary: defaultPrimary = "defaultPrimary".asInstanceOf[defaultPrimary]
   
   @js.native
-  sealed trait defaultSecondary extends TimelineDotClassKey
+  sealed trait defaultSecondary
+    extends StObject
+       with TimelineDotClassKey
   @scala.inline
   def defaultSecondary: defaultSecondary = "defaultSecondary".asInstanceOf[defaultSecondary]
   
@@ -229,28 +261,37 @@ object materialUiLabStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait directionDown extends SpeedDialClassKey
+  sealed trait directionDown
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def directionDown: directionDown = "directionDown".asInstanceOf[directionDown]
   
   @js.native
-  sealed trait directionLeft extends SpeedDialClassKey
+  sealed trait directionLeft
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def directionLeft: directionLeft = "directionLeft".asInstanceOf[directionLeft]
   
   @js.native
-  sealed trait directionRight extends SpeedDialClassKey
+  sealed trait directionRight
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def directionRight: directionRight = "directionRight".asInstanceOf[directionRight]
   
   @js.native
-  sealed trait directionUp extends SpeedDialClassKey
+  sealed trait directionUp
+    extends StObject
+       with SpeedDialClassKey
   @scala.inline
   def directionUp: directionUp = "directionUp".asInstanceOf[directionUp]
   
   @js.native
   sealed trait disabled
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with RatingClassKey
        with ToggleButtonClassKey
   @scala.inline
@@ -267,7 +308,9 @@ object materialUiLabStrings {
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait ellipsis extends PaginationItemClassKey
+  sealed trait ellipsis
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
@@ -282,22 +325,30 @@ object materialUiLabStrings {
   def `end-ellipsis`: `end-ellipsis` = "end-ellipsis".asInstanceOf[`end-ellipsis`]
   
   @js.native
-  sealed trait endAdornment extends AutocompleteClassKey
+  sealed trait endAdornment
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def endAdornment: endAdornment = "endAdornment".asInstanceOf[endAdornment]
   
   @js.native
-  sealed trait error extends Color
+  sealed trait error
+    extends StObject
+       with Color
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait escape extends AutocompleteCloseReason
+  sealed trait escape
+    extends StObject
+       with AutocompleteCloseReason
   @scala.inline
   def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
-  sealed trait escapeKeyDown extends CloseReason
+  sealed trait escapeKeyDown
+    extends StObject
+       with CloseReason
   @scala.inline
   def escapeKeyDown: escapeKeyDown = "escapeKeyDown".asInstanceOf[escapeKeyDown]
   
@@ -307,7 +358,9 @@ object materialUiLabStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait expanded extends TreeItemClassKey
+  sealed trait expanded
+    extends StObject
+       with TreeItemClassKey
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   
@@ -318,13 +371,16 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait fab
-    extends SpeedDialActionClassKey
+    extends StObject
+       with SpeedDialActionClassKey
        with SpeedDialClassKey
   @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
   
   @js.native
-  sealed trait fabClosed extends SpeedDialActionClassKey
+  sealed trait fabClosed
+    extends StObject
+       with SpeedDialActionClassKey
   @scala.inline
   def fabClosed: fabClosed = "fabClosed".asInstanceOf[fabClosed]
   
@@ -334,22 +390,30 @@ object materialUiLabStrings {
   def filled: filled = "filled".asInstanceOf[filled]
   
   @js.native
-  sealed trait filledError extends AlertClassKey
+  sealed trait filledError
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def filledError: filledError = "filledError".asInstanceOf[filledError]
   
   @js.native
-  sealed trait filledInfo extends AlertClassKey
+  sealed trait filledInfo
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def filledInfo: filledInfo = "filledInfo".asInstanceOf[filledInfo]
   
   @js.native
-  sealed trait filledSuccess extends AlertClassKey
+  sealed trait filledSuccess
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def filledSuccess: filledSuccess = "filledSuccess".asInstanceOf[filledSuccess]
   
   @js.native
-  sealed trait filledWarning extends AlertClassKey
+  sealed trait filledWarning
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def filledWarning: filledWarning = "filledWarning".asInstanceOf[filledWarning]
   
@@ -359,24 +423,31 @@ object materialUiLabStrings {
   def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait fitContent extends SkeletonClassKey
+  sealed trait fitContent
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def fitContent: fitContent = "fitContent".asInstanceOf[fitContent]
   
   @js.native
-  sealed trait focus extends OpenReason
+  sealed trait focus
+    extends StObject
+       with OpenReason
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait focusVisible
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with RatingClassKey
   @scala.inline
   def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
   
   @js.native
-  sealed trait focused extends AutocompleteClassKey
+  sealed trait focused
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   
@@ -396,37 +467,51 @@ object materialUiLabStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait group extends TreeItemClassKey
+  sealed trait group
+    extends StObject
+       with TreeItemClassKey
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait groupLabel extends AutocompleteClassKey
+  sealed trait groupLabel
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def groupLabel: groupLabel = "groupLabel".asInstanceOf[groupLabel]
   
   @js.native
-  sealed trait groupUl extends AutocompleteClassKey
+  sealed trait groupUl
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def groupUl: groupUl = "groupUl".asInstanceOf[groupUl]
   
   @js.native
-  sealed trait grouped extends ToggleButtonGroupClassKey
+  sealed trait grouped
+    extends StObject
+       with ToggleButtonGroupClassKey
   @scala.inline
   def grouped: grouped = "grouped".asInstanceOf[grouped]
   
   @js.native
-  sealed trait groupedHorizontal extends ToggleButtonGroupClassKey
+  sealed trait groupedHorizontal
+    extends StObject
+       with ToggleButtonGroupClassKey
   @scala.inline
   def groupedHorizontal: groupedHorizontal = "groupedHorizontal".asInstanceOf[groupedHorizontal]
   
   @js.native
-  sealed trait groupedVertical extends ToggleButtonGroupClassKey
+  sealed trait groupedVertical
+    extends StObject
+       with ToggleButtonGroupClassKey
   @scala.inline
   def groupedVertical: groupedVertical = "groupedVertical".asInstanceOf[groupedVertical]
   
   @js.native
-  sealed trait heightAuto extends SkeletonClassKey
+  sealed trait heightAuto
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def heightAuto: heightAuto = "heightAuto".asInstanceOf[heightAuto]
   
@@ -437,7 +522,8 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait icon
-    extends AlertClassKey
+    extends StObject
+       with AlertClassKey
        with PaginationItemClassKey
        with RatingClassKey
        with SpeedDialIconClassKey
@@ -445,47 +531,65 @@ object materialUiLabStrings {
   def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait iconActive extends RatingClassKey
+  sealed trait iconActive
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def iconActive: iconActive = "iconActive".asInstanceOf[iconActive]
   
   @js.native
-  sealed trait iconContainer extends TreeItemClassKey
+  sealed trait iconContainer
+    extends StObject
+       with TreeItemClassKey
   @scala.inline
   def iconContainer: iconContainer = "iconContainer".asInstanceOf[iconContainer]
   
   @js.native
-  sealed trait iconEmpty extends RatingClassKey
+  sealed trait iconEmpty
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def iconEmpty: iconEmpty = "iconEmpty".asInstanceOf[iconEmpty]
   
   @js.native
-  sealed trait iconFilled extends RatingClassKey
+  sealed trait iconFilled
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def iconFilled: iconFilled = "iconFilled".asInstanceOf[iconFilled]
   
   @js.native
-  sealed trait iconFocus extends RatingClassKey
+  sealed trait iconFocus
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def iconFocus: iconFocus = "iconFocus".asInstanceOf[iconFocus]
   
   @js.native
-  sealed trait iconHover extends RatingClassKey
+  sealed trait iconHover
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def iconHover: iconHover = "iconHover".asInstanceOf[iconHover]
   
   @js.native
-  sealed trait iconOpen extends SpeedDialIconClassKey
+  sealed trait iconOpen
+    extends StObject
+       with SpeedDialIconClassKey
   @scala.inline
   def iconOpen: iconOpen = "iconOpen".asInstanceOf[iconOpen]
   
   @js.native
-  sealed trait iconWithOpenIconOpen extends SpeedDialIconClassKey
+  sealed trait iconWithOpenIconOpen
+    extends StObject
+       with SpeedDialIconClassKey
   @scala.inline
   def iconWithOpenIconOpen: iconWithOpenIconOpen = "iconWithOpenIconOpen".asInstanceOf[iconWithOpenIconOpen]
   
   @js.native
-  sealed trait info extends Color
+  sealed trait info
+    extends StObject
+       with Color
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -501,29 +605,37 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait input
-    extends AutocompleteClassKey
+    extends StObject
+       with AutocompleteClassKey
        with AutocompleteInputChangeReason
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait inputFocused extends AutocompleteClassKey
+  sealed trait inputFocused
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def inputFocused: inputFocused = "inputFocused".asInstanceOf[inputFocused]
   
   @js.native
-  sealed trait inputRoot extends AutocompleteClassKey
+  sealed trait inputRoot
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def inputRoot: inputRoot = "inputRoot".asInstanceOf[inputRoot]
   
   @js.native
-  sealed trait keyboard extends AutocompleteHighlightChangeReason
+  sealed trait keyboard
+    extends StObject
+       with AutocompleteHighlightChangeReason
   @scala.inline
   def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
   sealed trait label
-    extends RatingClassKey
+    extends StObject
+       with RatingClassKey
        with ToggleButtonClassKey
        with TreeItemClassKey
   @scala.inline
@@ -565,12 +677,16 @@ object materialUiLabStrings {
   def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait listbox extends AutocompleteClassKey
+  sealed trait listbox
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait loading extends AutocompleteClassKey
+  sealed trait loading
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   
@@ -590,12 +706,16 @@ object materialUiLabStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait message extends AlertClassKey
+  sealed trait message
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait missingOppositeContent extends TimelineItemClassKey
+  sealed trait missingOppositeContent
+    extends StObject
+       with TimelineItemClassKey
   @scala.inline
   def missingOppositeContent: missingOppositeContent = "missingOppositeContent".asInstanceOf[missingOppositeContent]
   
@@ -605,17 +725,23 @@ object materialUiLabStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait mouse extends AutocompleteHighlightChangeReason
+  sealed trait mouse
+    extends StObject
+       with AutocompleteHighlightChangeReason
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
-  sealed trait mouseEnter extends OpenReason
+  sealed trait mouseEnter
+    extends StObject
+       with OpenReason
   @scala.inline
   def mouseEnter: mouseEnter = "mouseEnter".asInstanceOf[mouseEnter]
   
   @js.native
-  sealed trait mouseLeave extends CloseReason
+  sealed trait mouseLeave
+    extends StObject
+       with CloseReason
   @scala.inline
   def mouseLeave: mouseLeave = "mouseLeave".asInstanceOf[mouseLeave]
   
@@ -635,7 +761,9 @@ object materialUiLabStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait noOptions extends AutocompleteClassKey
+  sealed trait noOptions
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def noOptions: noOptions = "noOptions".asInstanceOf[noOptions]
   
@@ -660,17 +788,23 @@ object materialUiLabStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait openIcon extends SpeedDialIconClassKey
+  sealed trait openIcon
+    extends StObject
+       with SpeedDialIconClassKey
   @scala.inline
   def openIcon: openIcon = "openIcon".asInstanceOf[openIcon]
   
   @js.native
-  sealed trait openIconOpen extends SpeedDialIconClassKey
+  sealed trait openIconOpen
+    extends StObject
+       with SpeedDialIconClassKey
   @scala.inline
   def openIconOpen: openIconOpen = "openIconOpen".asInstanceOf[openIconOpen]
   
   @js.native
-  sealed trait option extends AutocompleteClassKey
+  sealed trait option
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   
@@ -680,56 +814,74 @@ object materialUiLabStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outlined extends PaginationItemClassKey
+  sealed trait outlined
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
-  sealed trait outlinedDefault extends TimelineDotClassKey
+  sealed trait outlinedDefault
+    extends StObject
+       with TimelineDotClassKey
   @scala.inline
   def outlinedDefault: outlinedDefault = "outlinedDefault".asInstanceOf[outlinedDefault]
   
   @js.native
-  sealed trait outlinedError extends AlertClassKey
+  sealed trait outlinedError
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def outlinedError: outlinedError = "outlinedError".asInstanceOf[outlinedError]
   
   @js.native
-  sealed trait outlinedInfo extends AlertClassKey
+  sealed trait outlinedInfo
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def outlinedInfo: outlinedInfo = "outlinedInfo".asInstanceOf[outlinedInfo]
   
   @js.native
   sealed trait outlinedPrimary
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with TimelineDotClassKey
   @scala.inline
   def outlinedPrimary: outlinedPrimary = "outlinedPrimary".asInstanceOf[outlinedPrimary]
   
   @js.native
   sealed trait outlinedSecondary
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with TimelineDotClassKey
   @scala.inline
   def outlinedSecondary: outlinedSecondary = "outlinedSecondary".asInstanceOf[outlinedSecondary]
   
   @js.native
-  sealed trait outlinedSuccess extends AlertClassKey
+  sealed trait outlinedSuccess
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def outlinedSuccess: outlinedSuccess = "outlinedSuccess".asInstanceOf[outlinedSuccess]
   
   @js.native
-  sealed trait outlinedWarning extends AlertClassKey
+  sealed trait outlinedWarning
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def outlinedWarning: outlinedWarning = "outlinedWarning".asInstanceOf[outlinedWarning]
   
   @js.native
-  sealed trait page extends PaginationItemClassKey
+  sealed trait page
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait paper extends AutocompleteClassKey
+  sealed trait paper
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def paper: paper = "paper".asInstanceOf[paper]
   
@@ -739,12 +891,16 @@ object materialUiLabStrings {
   def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait popper extends AutocompleteClassKey
+  sealed trait popper
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def popper: popper = "popper".asInstanceOf[popper]
   
   @js.native
-  sealed trait popperDisablePortal extends AutocompleteClassKey
+  sealed trait popperDisablePortal
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def popperDisablePortal: popperDisablePortal = "popperDisablePortal".asInstanceOf[popperDisablePortal]
   
@@ -754,12 +910,16 @@ object materialUiLabStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait popupIndicator extends AutocompleteClassKey
+  sealed trait popupIndicator
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def popupIndicator: popupIndicator = "popupIndicator".asInstanceOf[popupIndicator]
   
   @js.native
-  sealed trait popupIndicatorOpen extends AutocompleteClassKey
+  sealed trait popupIndicatorOpen
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def popupIndicatorOpen: popupIndicatorOpen = "popupIndicatorOpen".asInstanceOf[popupIndicatorOpen]
   
@@ -774,22 +934,30 @@ object materialUiLabStrings {
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait pristine extends RatingClassKey
+  sealed trait pristine
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def pristine: pristine = "pristine".asInstanceOf[pristine]
   
   @js.native
-  sealed trait pulse extends SkeletonClassKey
+  sealed trait pulse
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def pulse: pulse = "pulse".asInstanceOf[pulse]
   
   @js.native
-  sealed trait readOnly extends RatingClassKey
+  sealed trait readOnly
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
-  sealed trait rect extends SkeletonClassKey
+  sealed trait rect
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   
@@ -809,12 +977,16 @@ object materialUiLabStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait `remove-option` extends AutocompleteChangeReason
+  sealed trait `remove-option`
+    extends StObject
+       with AutocompleteChangeReason
   @scala.inline
   def `remove-option`: `remove-option` = "remove-option".asInstanceOf[`remove-option`]
   
   @js.native
-  sealed trait reset extends AutocompleteInputChangeReason
+  sealed trait reset
+    extends StObject
+       with AutocompleteInputChangeReason
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   
@@ -835,7 +1007,8 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait root
-    extends AlertClassKey
+    extends StObject
+       with AlertClassKey
        with AutocompleteClassKey
        with AvatarGroupClassKey
        with PaginationClassKey
@@ -860,7 +1033,9 @@ object materialUiLabStrings {
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait rounded extends PaginationItemClassKey
+  sealed trait rounded
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   
@@ -876,14 +1051,16 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait `select-option`
-    extends AutocompleteChangeReason
+    extends StObject
+       with AutocompleteChangeReason
        with AutocompleteCloseReason
   @scala.inline
   def `select-option`: `select-option` = "select-option".asInstanceOf[`select-option`]
   
   @js.native
   sealed trait selected
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with ToggleButtonClassKey
        with TreeItemClassKey
   @scala.inline
@@ -891,7 +1068,8 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait sizeLarge
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with RatingClassKey
        with ToggleButtonClassKey
   @scala.inline
@@ -899,7 +1077,8 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait sizeSmall
-    extends PaginationItemClassKey
+    extends StObject
+       with PaginationItemClassKey
        with RatingClassKey
        with ToggleButtonClassKey
   @scala.inline
@@ -921,22 +1100,30 @@ object materialUiLabStrings {
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait standardError extends AlertClassKey
+  sealed trait standardError
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def standardError: standardError = "standardError".asInstanceOf[standardError]
   
   @js.native
-  sealed trait standardInfo extends AlertClassKey
+  sealed trait standardInfo
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def standardInfo: standardInfo = "standardInfo".asInstanceOf[standardInfo]
   
   @js.native
-  sealed trait standardSuccess extends AlertClassKey
+  sealed trait standardSuccess
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def standardSuccess: standardSuccess = "standardSuccess".asInstanceOf[standardSuccess]
   
   @js.native
-  sealed trait standardWarning extends AlertClassKey
+  sealed trait standardWarning
+    extends StObject
+       with AlertClassKey
   @scala.inline
   def standardWarning: standardWarning = "standardWarning".asInstanceOf[standardWarning]
   
@@ -951,17 +1138,23 @@ object materialUiLabStrings {
   def `start-ellipsis`: `start-ellipsis` = "start-ellipsis".asInstanceOf[`start-ellipsis`]
   
   @js.native
-  sealed trait staticTooltip extends SpeedDialActionClassKey
+  sealed trait staticTooltip
+    extends StObject
+       with SpeedDialActionClassKey
   @scala.inline
   def staticTooltip: staticTooltip = "staticTooltip".asInstanceOf[staticTooltip]
   
   @js.native
-  sealed trait staticTooltipClosed extends SpeedDialActionClassKey
+  sealed trait staticTooltipClosed
+    extends StObject
+       with SpeedDialActionClassKey
   @scala.inline
   def staticTooltipClosed: staticTooltipClosed = "staticTooltipClosed".asInstanceOf[staticTooltipClosed]
   
   @js.native
-  sealed trait staticTooltipLabel extends SpeedDialActionClassKey
+  sealed trait staticTooltipLabel
+    extends StObject
+       with SpeedDialActionClassKey
   @scala.inline
   def staticTooltipLabel: staticTooltipLabel = "staticTooltipLabel".asInstanceOf[staticTooltipLabel]
   
@@ -976,17 +1169,23 @@ object materialUiLabStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait success extends Color
+  sealed trait success
+    extends StObject
+       with Color
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait tag extends AutocompleteClassKey
+  sealed trait tag
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
-  sealed trait tagSizeSmall extends AutocompleteClassKey
+  sealed trait tagSizeSmall
+    extends StObject
+       with AutocompleteClassKey
   @scala.inline
   def tagSizeSmall: tagSizeSmall = "tagSizeSmall".asInstanceOf[tagSizeSmall]
   
@@ -996,7 +1195,9 @@ object materialUiLabStrings {
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends SkeletonClassKey
+  sealed trait text
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -1011,12 +1212,16 @@ object materialUiLabStrings {
   def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait textPrimary extends PaginationItemClassKey
+  sealed trait textPrimary
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def textPrimary: textPrimary = "textPrimary".asInstanceOf[textPrimary]
   
   @js.native
-  sealed trait textSecondary extends PaginationItemClassKey
+  sealed trait textSecondary
+    extends StObject
+       with PaginationItemClassKey
   @scala.inline
   def textSecondary: textSecondary = "textSecondary".asInstanceOf[textSecondary]
   
@@ -1027,18 +1232,23 @@ object materialUiLabStrings {
   
   @js.native
   sealed trait toggle
-    extends CloseReason
+    extends StObject
+       with CloseReason
        with OpenReason
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait toggleInput extends AutocompleteCloseReason
+  sealed trait toggleInput
+    extends StObject
+       with AutocompleteCloseReason
   @scala.inline
   def toggleInput: toggleInput = "toggleInput".asInstanceOf[toggleInput]
   
   @js.native
-  sealed trait tooltipPlacementLeft extends SpeedDialActionClassKey
+  sealed trait tooltipPlacementLeft
+    extends StObject
+       with SpeedDialActionClassKey
   @scala.inline
   def tooltipPlacementLeft: tooltipPlacementLeft = "tooltipPlacementLeft".asInstanceOf[tooltipPlacementLeft]
   
@@ -1068,7 +1278,9 @@ object materialUiLabStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait ul extends PaginationClassKey
+  sealed trait ul
+    extends StObject
+       with PaginationClassKey
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   
@@ -1088,27 +1300,37 @@ object materialUiLabStrings {
   def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait vertical extends ToggleButtonGroupClassKey
+  sealed trait vertical
+    extends StObject
+       with ToggleButtonGroupClassKey
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait visuallyhidden extends RatingClassKey
+  sealed trait visuallyhidden
+    extends StObject
+       with RatingClassKey
   @scala.inline
   def visuallyhidden: visuallyhidden = "visuallyhidden".asInstanceOf[visuallyhidden]
   
   @js.native
-  sealed trait warning extends Color
+  sealed trait warning
+    extends StObject
+       with Color
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wave extends SkeletonClassKey
+  sealed trait wave
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def wave: wave = "wave".asInstanceOf[wave]
   
   @js.native
-  sealed trait withChildren extends SkeletonClassKey
+  sealed trait withChildren
+    extends StObject
+       with SkeletonClassKey
   @scala.inline
   def withChildren: withChildren = "withChildren".asInstanceOf[withChildren]
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Datafeeds")
@@ -32,7 +31,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def custombatch(): GaxiosPromise[SchemaDatafeedsCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaDatafeedsCustomBatchResponse]): Unit = js.native
-  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedsCustomBatchResponse] = js.native
+  def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeedsCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceDatafeedsCustombatch): GaxiosPromise[SchemaDatafeedsCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceDatafeedsCustombatch,
@@ -66,7 +65,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDatafeedsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDatafeedsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -97,7 +96,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def fetchnow(): GaxiosPromise[SchemaDatafeedsFetchNowResponse] = js.native
   def fetchnow(callback: BodyResponseCallback[SchemaDatafeedsFetchNowResponse]): Unit = js.native
-  def fetchnow(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedsFetchNowResponse] = js.native
+  def fetchnow(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeedsFetchNowResponse] = js.native
   def fetchnow(params: ParamsResourceDatafeedsFetchnow): GaxiosPromise[SchemaDatafeedsFetchNowResponse] = js.native
   def fetchnow(
     params: ParamsResourceDatafeedsFetchnow,
@@ -131,7 +130,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDatafeed] = js.native
   def get(callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
   def get(params: ParamsResourceDatafeedsGet): GaxiosPromise[SchemaDatafeed] = js.native
   def get(params: ParamsResourceDatafeedsGet, callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
   def get(
@@ -163,7 +162,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaDatafeed] = js.native
   def insert(callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
   def insert(params: ParamsResourceDatafeedsInsert): GaxiosPromise[SchemaDatafeed] = js.native
   def insert(params: ParamsResourceDatafeedsInsert, callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
   def insert(
@@ -195,7 +194,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDatafeedsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDatafeedsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeedsListResponse] = js.native
   def list(params: ParamsResourceDatafeedsList): GaxiosPromise[SchemaDatafeedsListResponse] = js.native
   def list(params: ParamsResourceDatafeedsList, callback: BodyResponseCallback[SchemaDatafeedsListResponse]): Unit = js.native
   def list(
@@ -228,7 +227,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaDatafeed] = js.native
   def patch(callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
   def patch(params: ParamsResourceDatafeedsPatch): GaxiosPromise[SchemaDatafeed] = js.native
   def patch(params: ParamsResourceDatafeedsPatch, callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
   def patch(
@@ -260,7 +259,7 @@ class ResourceDatafeeds protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaDatafeed] = js.native
   def update(callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatafeed] = js.native
   def update(params: ParamsResourceDatafeedsUpdate): GaxiosPromise[SchemaDatafeed] = js.native
   def update(params: ParamsResourceDatafeedsUpdate, callback: BodyResponseCallback[SchemaDatafeed]): Unit = js.native
   def update(

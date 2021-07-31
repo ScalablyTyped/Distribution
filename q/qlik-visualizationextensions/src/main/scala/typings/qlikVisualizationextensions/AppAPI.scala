@@ -6,7 +6,6 @@ import typings.qlikVisualizationextensions.SelectionStateAPI.IQSelectionState
 import typings.qlikVisualizationextensions.TableAPI.IQTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AppAPI {
@@ -21,13 +20,13 @@ object AppAPI {
       * @param qStateName - Mandatory. Alternate state name.
       * @return - A promise of a Qlik engine reply.
       */
-    def addAlternateState(qStateName: String): IPromise[_] = js.native
+    def addAlternateState(qStateName: String): IPromise[js.Any] = js.native
     
     /**
       * Steps back in the list of selections.
       * @return - A promise of a Qlik engine reply.
       */
-    def back(): IPromise[_] = js.native
+    def back(): IPromise[js.Any] = js.native
     
     /**
       * Clears all selections in all fields of the current Qlik Sense app.
@@ -35,10 +34,10 @@ object AppAPI {
       * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
       * @return - A promise of a Qlik engine reply.
       */
-    def clearAll(): IPromise[_] = js.native
-    def clearAll(lockedAlso: js.UndefOr[scala.Nothing], state: String): IPromise[_] = js.native
-    def clearAll(lockedAlso: Boolean): IPromise[_] = js.native
-    def clearAll(lockedAlso: Boolean, state: String): IPromise[_] = js.native
+    def clearAll(): IPromise[js.Any] = js.native
+    def clearAll(lockedAlso: Boolean): IPromise[js.Any] = js.native
+    def clearAll(lockedAlso: Boolean, state: String): IPromise[js.Any] = js.native
+    def clearAll(lockedAlso: Unit, state: String): IPromise[js.Any] = js.native
     
     /**
       * Closes a Qlik Sense app. Also closes the WebSocket and clears out client side data.
@@ -51,8 +50,8 @@ object AppAPI {
       * @param [callback] - Optional. Callback method. Parameter will contain a qHyperCube.
       * @return - A promise of an object model.
       */
-    def createCube(qHyperCubeDef: js.Any): IPromise[_] = js.native
-    def createCube(qHyperCubeDef: js.Any, callback: js.Any): IPromise[_] = js.native
+    def createCube(qHyperCubeDef: js.Any): IPromise[js.Any] = js.native
+    def createCube(qHyperCubeDef: js.Any, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Creates a generic object and registers a callback to receive the data. The generic object can contain the following:
@@ -67,10 +66,10 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of an object model.
       */
-    def createGenericObject(): IPromise[_] = js.native
-    def createGenericObject(`def`: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
-    def createGenericObject(`def`: js.Any): IPromise[_] = js.native
-    def createGenericObject(`def`: js.Any, callback: js.Any): IPromise[_] = js.native
+    def createGenericObject(): IPromise[js.Any] = js.native
+    def createGenericObject(`def`: js.Any): IPromise[js.Any] = js.native
+    def createGenericObject(`def`: js.Any, callback: js.Any): IPromise[js.Any] = js.native
+    def createGenericObject(`def`: Unit, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Defines a list of field values and registers a callback to receive the data.
@@ -78,8 +77,8 @@ object AppAPI {
       * @param [callback] - Optional. Callback method. Parameter will contain a qListObject.
       * @return - A promise of an object model.
       */
-    def createList(qListObjectDef: js.Any): IPromise[_] = js.native
-    def createList(qListObjectDef: js.Any, callback: js.Any): IPromise[_] = js.native
+    def createList(qListObjectDef: js.Any): IPromise[js.Any] = js.native
+    def createList(qListObjectDef: js.Any, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Defines a hypercube for a table and is the entry point to the Table API.
@@ -93,8 +92,8 @@ object AppAPI {
       *                    empty but that eventually will contain data.
       *                    The table object will be updated when selection state changes.
       */
-    def createTable(dimensions: js.Array[_ | String], measures: js.Array[_ | String]): IQTable = js.native
-    def createTable(dimensions: js.Array[_ | String], measures: js.Array[_ | String], options: js.Any): IQTable = js.native
+    def createTable(dimensions: js.Array[js.Any | String], measures: js.Array[js.Any | String]): IQTable = js.native
+    def createTable(dimensions: js.Array[js.Any | String], measures: js.Array[js.Any | String], options: js.Any): IQTable = js.native
     
     /**
       * Destroys a Qlik Sense session object created with the createGenericObject
@@ -104,7 +103,7 @@ object AppAPI {
       * @param id - Session object id.
       * @return - A promise of a Qlik engine reply.
       */
-    def destroySessionObject(id: String): IPromise[_] = js.native
+    def destroySessionObject(id: String): IPromise[js.Any] = js.native
     
     /**
       * Reloads the data in a Qlik Sense app.
@@ -116,22 +115,22 @@ object AppAPI {
       * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
       * @return - A promise of a Qlik engine reply.
       */
-    def doReload(): IPromise[_] = js.native
-    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): IPromise[_] = js.native
-    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean): IPromise[_] = js.native
-    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean, qDebug: Boolean): IPromise[_] = js.native
-    def doReload(qMode: String): IPromise[_] = js.native
-    def doReload(qMode: String, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): IPromise[_] = js.native
-    def doReload(qMode: String, qPartial: Boolean): IPromise[_] = js.native
-    def doReload(qMode: String, qPartial: Boolean, qDebug: Boolean): IPromise[_] = js.native
+    def doReload(): IPromise[js.Any] = js.native
+    def doReload(qMode: String): IPromise[js.Any] = js.native
+    def doReload(qMode: String, qPartial: Boolean): IPromise[js.Any] = js.native
+    def doReload(qMode: String, qPartial: Boolean, qDebug: Boolean): IPromise[js.Any] = js.native
+    def doReload(qMode: String, qPartial: Unit, qDebug: Boolean): IPromise[js.Any] = js.native
+    def doReload(qMode: Unit, qPartial: Boolean): IPromise[js.Any] = js.native
+    def doReload(qMode: Unit, qPartial: Boolean, qDebug: Boolean): IPromise[js.Any] = js.native
+    def doReload(qMode: Unit, qPartial: Unit, qDebug: Boolean): IPromise[js.Any] = js.native
     
     /**
       * Saves a Qlik Sense app, including all objects and data in the data model.
       * @param [qFileName] - Optional. File name of the file to save.
       * @return - A promise of a Qlik engine reply.
       */
-    def doSave(): IPromise[_] = js.native
-    def doSave(qFileName: String): IPromise[_] = js.native
+    def doSave(): IPromise[js.Any] = js.native
+    def doSave(qFileName: String): IPromise[js.Any] = js.native
     
     /**
       * Gets a field reference with methods that can be used to manipulate the field.
@@ -140,15 +139,15 @@ object AppAPI {
       * @return - A QField object with methods and properties that can be used to manipulate the field.
       */
     def field(): IQField = js.native
-    def field(field: js.UndefOr[scala.Nothing], state: String): IQField = js.native
     def field(field: String): IQField = js.native
     def field(field: String, state: String): IQField = js.native
+    def field(field: Unit, state: String): IQField = js.native
     
     /**
       * Step forward in list of selections.
       * @return - A promise of a Qlik engine reply.
       */
-    def forward(): IPromise[_] = js.native
+    def forward(): IPromise[js.Any] = js.native
     
     /**
       * Gets a layout for this Qlik Sense app and registers a callback to receive the data.
@@ -156,8 +155,8 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getAppLayout(): IPromise[_] = js.native
-    def getAppLayout(callback: js.Any): IPromise[_] = js.native
+    def getAppLayout(): IPromise[js.Any] = js.native
+    def getAppLayout(callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Gets a list of sheets and visualizations and registers a callback to receive the data.
@@ -168,9 +167,9 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       */
     def getAppObjectList(): Unit = js.native
-    def getAppObjectList(`type`: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
     def getAppObjectList(`type`: String): Unit = js.native
     def getAppObjectList(`type`: String, callback: js.Any): Unit = js.native
+    def getAppObjectList(`type`: Unit, callback: js.Any): Unit = js.native
     
     /**
       * Gets properties for a generic object, the children of the generic object
@@ -178,7 +177,7 @@ object AppAPI {
       * @param id - Object id.
       * @return - A promise of an object model.
       */
-    def getFullPropertyTree(id: String): IPromise[_] = js.native
+    def getFullPropertyTree(id: String): IPromise[js.Any] = js.native
     
     /**
       * Gets a list of internal Qlik Sense objects and registers a callback to receive the data.
@@ -197,8 +196,8 @@ object AppAPI {
       * @param [callback] - Optional. Registers a callback that is executed every time data is returned.
       * @return - A promise of an object model.
       */
-    def getList(`type`: String): IPromise[_] = js.native
-    def getList(`type`: String, callback: js.Any): IPromise[_] = js.native
+    def getList(`type`: String): IPromise[js.Any] = js.native
+    def getList(`type`: String, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
@@ -217,19 +216,19 @@ object AppAPI {
       *                           Introduced in version 3.0.
       * @return - A promise of an object model.
       */
-    def getObject(id: String): IPromise[_] = js.native
-    def getObject(id: String, elem: js.UndefOr[scala.Nothing], options: js.Any): IPromise[_] = js.native
-    def getObject(id: String, elem: String): IPromise[_] = js.native
-    def getObject(id: String, elem: String, options: js.Any): IPromise[_] = js.native
-    def getObject(id: String, elem: js.Any): IPromise[_] = js.native
-    def getObject(id: String, elem: js.Any, options: js.Any): IPromise[_] = js.native
+    def getObject(id: String): IPromise[js.Any] = js.native
+    def getObject(id: String, elem: String): IPromise[js.Any] = js.native
+    def getObject(id: String, elem: String, options: js.Any): IPromise[js.Any] = js.native
+    def getObject(id: String, elem: js.Any): IPromise[js.Any] = js.native
+    def getObject(id: String, elem: js.Any, options: js.Any): IPromise[js.Any] = js.native
+    def getObject(id: String, elem: Unit, options: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Gets properties for a Qlik Sense object.
       * @param id - Object id.
       * @return - A promise of an object model.
       */
-    def getObjectProperties(id: String): IPromise[_] = js.native
+    def getObjectProperties(id: String): IPromise[js.Any] = js.native
     
     /**
       * Gets the data load script of this app.
@@ -246,9 +245,9 @@ object AppAPI {
       * @param [elem] - Optional. HTML element or string with HTML element id.
       * @return - A promise of an object model.
       */
-    def getSnapshot(id: String): IPromise[_] = js.native
-    def getSnapshot(id: String, elem: String): IPromise[_] = js.native
-    def getSnapshot(id: String, elem: js.Any): IPromise[_] = js.native
+    def getSnapshot(id: String): IPromise[js.Any] = js.native
+    def getSnapshot(id: String, elem: String): IPromise[js.Any] = js.native
+    def getSnapshot(id: String, elem: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Locks all selections.
@@ -257,15 +256,15 @@ object AppAPI {
       * Introduced in version 2.1.
       * @return - A promise of a Qlik engine reply.
       */
-    def lockAll(): IPromise[_] = js.native
-    def lockAll(state: String): IPromise[_] = js.native
+    def lockAll(): IPromise[js.Any] = js.native
+    def lockAll(state: String): IPromise[js.Any] = js.native
     
     /**
       * Removes an alternate state in the app.
       * @param qStateName - Alternate state name.
       * @return - A promise of a Qlik engine reply.
       */
-    def removeAlternateState(qStateName: String): IPromise[_] = js.native
+    def removeAlternateState(qStateName: String): IPromise[js.Any] = js.native
     
     /**
       * Searches for one or more terms in the values of a Qlik Sense app.
@@ -295,8 +294,8 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): IPromise[_] = js.native
-    def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): IPromise[_] = js.native
+    def searchAssociations(qTerms: js.Array[js.Any], qPage: js.Any, qOptions: js.Any): IPromise[js.Any] = js.native
+    def searchAssociations(qTerms: js.Array[js.Any], qPage: js.Any, qOptions: js.Any, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Searches for one or more terms in the values of a Qlik Sense app.
@@ -327,10 +326,10 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def searchResults(qTerms: js.Array[_], qPage: js.Any): IPromise[_] = js.native
-    def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
-    def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): IPromise[_] = js.native
-    def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): IPromise[_] = js.native
+    def searchResults(qTerms: js.Array[js.Any], qPage: js.Any): IPromise[js.Any] = js.native
+    def searchResults(qTerms: js.Array[js.Any], qPage: js.Any, qOptions: js.Any): IPromise[js.Any] = js.native
+    def searchResults(qTerms: js.Array[js.Any], qPage: js.Any, qOptions: js.Any, callback: js.Any): IPromise[js.Any] = js.native
+    def searchResults(qTerms: js.Array[js.Any], qPage: js.Any, qOptions: Unit, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Returns suggestions of words from the values entered in the search. Acts as a helper for the searchAssociations method.
@@ -341,10 +340,10 @@ object AppAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def searchSuggest(qTerms: js.Array[_]): IPromise[_] = js.native
-    def searchSuggest(qTerms: js.Array[_], qOptions: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
-    def searchSuggest(qTerms: js.Array[_], qOptions: js.Any): IPromise[_] = js.native
-    def searchSuggest(qTerms: js.Array[_], qOptions: js.Any, callback: js.Any): IPromise[_] = js.native
+    def searchSuggest(qTerms: js.Array[js.Any]): IPromise[js.Any] = js.native
+    def searchSuggest(qTerms: js.Array[js.Any], qOptions: js.Any): IPromise[js.Any] = js.native
+    def searchSuggest(qTerms: js.Array[js.Any], qOptions: js.Any, callback: js.Any): IPromise[js.Any] = js.native
+    def searchSuggest(qTerms: js.Array[js.Any], qOptions: Unit, callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Makes a selection based on searchAssociation results.
@@ -355,10 +354,10 @@ object AppAPI {
       * @param [qSoftLock] - Optional. This parameter was deprecated in version 2.0 and is ignored in newer versions. Use the qOtions.qContext parameter instead.
       * @return - A promise of a Qlik engine reply.
       */
-    def selectAssociations(qMatchIx: Double, qTerms: js.Array[_]): IPromise[_] = js.native
-    def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.UndefOr[scala.Nothing], qSoftLock: js.Any): IPromise[_] = js.native
-    def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.Any): IPromise[_] = js.native
-    def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.Any, qSoftLock: js.Any): IPromise[_] = js.native
+    def selectAssociations(qMatchIx: Double, qTerms: js.Array[js.Any]): IPromise[js.Any] = js.native
+    def selectAssociations(qMatchIx: Double, qTerms: js.Array[js.Any], qOptions: js.Any): IPromise[js.Any] = js.native
+    def selectAssociations(qMatchIx: Double, qTerms: js.Array[js.Any], qOptions: js.Any, qSoftLock: js.Any): IPromise[js.Any] = js.native
+    def selectAssociations(qMatchIx: Double, qTerms: js.Array[js.Any], qOptions: Unit, qSoftLock: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Sets the data load script of this app. Also validates the script syntax and returns the syntax errors if errors exist.
@@ -372,13 +371,13 @@ object AppAPI {
       * @param [script] - The script content.
       * @return - A promise of an empty object or a list of syntax errors depending on the validation result.
       */
-    def setScript(script: String): IPromise[_] = js.native
+    def setScript(script: String): IPromise[js.Any] = js.native
     
     /**
       * Unlocks all selections that has previously been locked.
       * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
       */
-    def unlockAll(): IPromise[_] = js.native
-    def unlockAll(state: String): IPromise[_] = js.native
+    def unlockAll(): IPromise[js.Any] = js.native
+    def unlockAll(state: String): IPromise[js.Any] = js.native
   }
 }

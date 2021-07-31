@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.LocalTime")
@@ -34,34 +33,31 @@ class LocalTime protected () extends StObject {
 }
 object LocalTime {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.fromBuffer")
+  @JSImport("cassandra-driver/lib/types", "types.LocalTime")
   @js.native
-  def fromBuffer(value: Buffer): LocalTime = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.fromDate")
-  @js.native
-  def fromDate(date: Date, nanoseconds: Double): LocalTime = js.native
+  @scala.inline
+  def fromBuffer(value: Buffer): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.fromMilliseconds")
-  @js.native
-  def fromMilliseconds(milliseconds: Double): LocalTime = js.native
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.fromMilliseconds")
-  @js.native
-  def fromMilliseconds(milliseconds: Double, nanoseconds: Double): LocalTime = js.native
+  @scala.inline
+  def fromDate(date: Date, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.fromString")
-  @js.native
-  def fromString(value: String): LocalTime = js.native
+  @scala.inline
+  def fromMilliseconds(milliseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  @scala.inline
+  def fromMilliseconds(milliseconds: Double, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.now")
-  @js.native
-  def now(): LocalTime = js.native
-  @JSImport("cassandra-driver/lib/types", "types.LocalTime.now")
-  @js.native
-  def now(nanoseconds: Double): LocalTime = js.native
+  @scala.inline
+  def fromString(value: String): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  
+  /* static member */
+  @scala.inline
+  def now(): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalTime]
+  @scala.inline
+  def now(nanoseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(nanoseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
 }

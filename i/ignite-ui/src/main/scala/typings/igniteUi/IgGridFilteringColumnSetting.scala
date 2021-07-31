@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridFilteringColumnSetting
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,19 +16,19 @@ trait IgGridFilteringColumnSetting
     * Enables/disables filtering for the column.
     *
     */
-  var allowFiltering: js.UndefOr[Boolean] = js.native
+  var allowFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies the grid column by index. Either key or index must be set in every column setting.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the grid column by key. Either key or index must be set in every column setting.
     *
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Initial filtering condition for the column.
@@ -69,13 +68,13 @@ trait IgGridFilteringColumnSetting
     * "atBefore"
     * "atAfter"
     */
-  var condition: js.UndefOr[String | Boolean] = js.native
+  var condition: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * An array of strings that determine which [conditions](ui.iggridfiltering#options:columnSettings.condition) to display for this column.
     *
     */
-  var conditionList: js.UndefOr[js.Array[_]] = js.native
+  var conditionList: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An object used to specify custom filtering conditions as objects for this column.
@@ -86,19 +85,19 @@ trait IgGridFilteringColumnSetting
     * filterImgIcon  Class applied to the dropdown item when in simple mode.
     * filterFunc  The custom comparing filter function. Signature: function (value, expression, dataType, ignoreCase, preciseDateFormat).
     */
-  var customConditions: js.UndefOr[js.Any] = js.native
+  var customConditions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Initial filtering expressions - if set they will be applied on initialization together with the preset [condition](ui.iggridfiltering#options:columnSettings.condition).
     *
     */
-  var defaultExpressions: js.UndefOr[IgGridFilteringColumnSettingDefaultExpressions] = js.native
+  var defaultExpressions: js.UndefOr[IgGridFilteringColumnSettingDefaultExpressions] = js.undefined
   
   /**
     * Specifies options to initialize the corresponding editor with.
     *
     */
-  var editorOptions: js.UndefOr[js.Any] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies а custom editor provider instance. More information about editor providers can be found [here](http://www.igniteui.com/help/implementing-custom-editor-provider) and [here](http://www.igniteui.com/help/working-with-combo-editor-provider).
@@ -120,7 +119,7 @@ trait IgGridFilteringColumnSetting
     * });
     *
     */
-  var editorProvider: js.UndefOr[js.Any] = js.native
+  var editorProvider: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies the type of editor to use for the column.
@@ -139,7 +138,7 @@ trait IgGridFilteringColumnSetting
     * "combo" An igCombo editor is created. Both the JS and CSS files used by ui.igCombo should be available.
     * "rating" An igRating editor is created. Both the JS and CSS files used by ui.igRating should be available.
     */
-  var editorType: js.UndefOr[String] = js.native
+  var editorType: js.UndefOr[String] = js.undefined
 }
 object IgGridFilteringColumnSetting {
   
@@ -174,7 +173,7 @@ object IgGridFilteringColumnSetting {
     def setCondition(value: String | Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionList(value: js.Array[_]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
+    def setConditionList(value: js.Array[js.Any]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConditionListUndefined: Self = StObject.set(x, "conditionList", js.undefined)

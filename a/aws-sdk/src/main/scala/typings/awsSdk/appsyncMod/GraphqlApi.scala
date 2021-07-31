@@ -2,71 +2,69 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphqlApi extends StObject {
   
   /**
     * A list of additional authentication providers for the GraphqlApi API.
     */
-  var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.native
+  var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.undefined
   
   /**
     * The API ID.
     */
-  var apiId: js.UndefOr[String] = js.native
+  var apiId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The authentication type.
     */
-  var authenticationType: js.UndefOr[AuthenticationType] = js.native
+  var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
   
   /**
     * The Amazon CloudWatch Logs configuration.
     */
-  var logConfig: js.UndefOr[LogConfig] = js.native
+  var logConfig: js.UndefOr[LogConfig] = js.undefined
   
   /**
     * The API name.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The OpenID Connect configuration.
     */
-  var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.native
+  var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
   
   /**
     * The tags.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The URIs.
     */
-  var uris: js.UndefOr[MapOfStringToString] = js.native
+  var uris: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * The Amazon Cognito user pool configuration.
     */
-  var userPoolConfig: js.UndefOr[UserPoolConfig] = js.native
+  var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   
   /**
     * The ARN of the AWS Web Application Firewall (WAF) ACL associated with this GraphqlApi, if one exists.
     */
-  var wafWebAclArn: js.UndefOr[String] = js.native
+  var wafWebAclArn: js.UndefOr[String] = js.undefined
   
   /**
     * A flag representing whether X-Ray tracing is enabled for this GraphqlApi.
     */
-  var xrayEnabled: js.UndefOr[Boolean] = js.native
+  var xrayEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object GraphqlApi {
   

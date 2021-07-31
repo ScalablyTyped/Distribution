@@ -2,31 +2,53 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osMod {
   
   @JSImport("node-os-utils/lib/os", JSImport.Default)
   @js.native
-  class default () extends Os
+  class default ()
+    extends StObject
+       with Os {
+    
+    /* CompleteClass */
+    override def arch(): String = js.native
+    
+    /* CompleteClass */
+    override def hostname(): String = js.native
+    
+    /* CompleteClass */
+    override def ip(): String = js.native
+    
+    /* CompleteClass */
+    override def oos(): js.Function0[js.Promise[String]] = js.native
+    
+    /* CompleteClass */
+    override def platform(): Platform = js.native
+    
+    /* CompleteClass */
+    override def `type`(): String = js.native
+    
+    /* CompleteClass */
+    override def uptime(): Double = js.native
+  }
   
-  @js.native
   trait Os extends StObject {
     
-    def arch(): String = js.native
+    def arch(): String
     
-    def hostname(): String = js.native
+    def hostname(): String
     
-    def ip(): String = js.native
+    def ip(): String
     
-    def oos(): js.Function0[js.Promise[String]] = js.native
+    def oos(): js.Function0[js.Promise[String]]
     
-    def platform(): Platform = js.native
+    def platform(): Platform
     
-    def `type`(): String = js.native
+    def `type`(): String
     
-    def uptime(): Double = js.native
+    def uptime(): Double
   }
   object Os {
     

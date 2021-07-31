@@ -2,16 +2,16 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubscriberAdvertisement extends Advertisement {
+trait SubscriberAdvertisement
+  extends StObject
+     with Advertisement {
   
   /**
     * Event types that a Subscriber can listen to.
     */
-  var subscribesTo: js.UndefOr[js.Array[String]] = js.native
+  var subscribesTo: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SubscriberAdvertisement {
   

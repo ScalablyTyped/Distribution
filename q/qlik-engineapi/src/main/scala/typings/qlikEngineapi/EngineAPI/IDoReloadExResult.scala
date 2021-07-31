@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DoReloadExResult...
   */
-@js.native
 trait IDoReloadExResult extends StObject {
   
   /**
     * Path to the script log file.
     */
-  var qScriptLogFile: String = js.native
+  var qScriptLogFile: String
   
   /**
     * The operation is successful if qSuccess is set to True.
     */
-  var qSuccess: Boolean = js.native
+  var qSuccess: Boolean
 }
 object IDoReloadExResult {
   

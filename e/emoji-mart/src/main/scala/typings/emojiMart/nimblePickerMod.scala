@@ -5,7 +5,6 @@ import typings.emojiMart.sharedPropsMod.PickerProps
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nimblePickerMod {
@@ -17,10 +16,11 @@ object nimblePickerMod {
   
   type NimblePicker = PureComponent[NimblePickerProps, js.Object, js.Any]
   
-  @js.native
-  trait NimblePickerProps extends PickerProps {
+  trait NimblePickerProps
+    extends StObject
+       with PickerProps {
     
-    var data: Data = js.native
+    var data: Data
   }
   object NimblePickerProps {
     

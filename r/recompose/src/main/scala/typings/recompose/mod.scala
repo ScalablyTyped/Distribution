@@ -18,274 +18,226 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("recompose", "branch")
+  @JSImport("recompose", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def branch[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[_, _]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[_, TOutter] = js.native
-  @JSImport("recompose", "branch")
-  @js.native
+    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
+  @scala.inline
   def branch[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[_, _]) | InferableComponentEnhancer[js.Object],
-    falseEnhancer: (ComponentEnhancer[_, _]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[_, TOutter] = js.native
+    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object],
+    falseEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
   
-  @JSImport("recompose", "componentFromProp")
-  @js.native
-  def componentFromProp(propName: String): StatelessComponent[_] = js.native
+  @scala.inline
+  def componentFromProp(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromProp")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
   
-  @JSImport("recompose", "componentFromStream")
-  @js.native
-  def componentFromStream[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = js.native
+  @scala.inline
+  def componentFromStream[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStream")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  @JSImport("recompose", "componentFromStreamWithConfig")
-  @js.native
+  @scala.inline
   def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
-    /* propsToReactNode */ mapper[Subscribable[_], Subscribable[ReactNode]], 
-    ComponentType[_]
-  ] = js.native
+    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
+    ComponentType[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
+    ComponentType[js.Any]
+  ]]
   
-  @JSImport("recompose", "compose")
-  @js.native
-  def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = js.native
+  @scala.inline
+  def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(functions.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: String): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: String, props: js.Object): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: String, props: js.Object, children: ReactNode): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: ComponentType[_]): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: ComponentType[_], props: js.UndefOr[scala.Nothing], children: ReactNode): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: ComponentType[_], props: js.Object): ReactElement = js.native
-  @JSImport("recompose", "createEagerElement")
-  @js.native
-  def createEagerElement(`type`: ComponentType[_], props: js.Object, children: ReactNode): ReactElement = js.native
+  @scala.inline
+  def createEagerElement(`type`: String): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: String, props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: String, props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: String, props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: ComponentType[js.Any]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: ComponentType[js.Any], props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: ComponentType[js.Any], props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  @scala.inline
+  def createEagerElement(`type`: ComponentType[js.Any], props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @JSImport("recompose", "createEagerFactory")
-  @js.native
-  def createEagerFactory(`type`: String): componentFactory = js.native
-  @JSImport("recompose", "createEagerFactory")
-  @js.native
-  def createEagerFactory(`type`: ComponentType[_]): componentFactory = js.native
+  @scala.inline
+  def createEagerFactory(`type`: String): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
+  @scala.inline
+  def createEagerFactory(`type`: ComponentType[js.Any]): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
   
-  @JSImport("recompose", "createEventHandler")
-  @js.native
-  def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = js.native
+  @scala.inline
+  def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")().asInstanceOf[EventHandlerOf[T, TSubs]]
   
-  @JSImport("recompose", "createEventHandlerWithConfig")
-  @js.native
-  def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[_, Subscribable[_]]] = js.native
+  @scala.inline
+  def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandlerWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]]]
   
-  @JSImport("recompose", "createSink")
-  @js.native
-  def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[_, ComponentState] = js.native
+  @scala.inline
+  def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSink")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
-  @JSImport("recompose", "defaultProps")
-  @js.native
-  def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = js.native
+  @scala.inline
+  def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProps")(props.asInstanceOf[js.Any]).asInstanceOf[DefaultingInferableComponentEnhancer[T]]
   
-  @JSImport("recompose", "flattenProp")
-  @js.native
-  def flattenProp(propName: String): ComponentEnhancer[_, _] = js.native
+  @scala.inline
+  def flattenProp(propName: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenProp")(propName.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @JSImport("recompose", "fromRenderProps")
-  @js.native
+  @scala.inline
   def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[_],
+    RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
-  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
-  @JSImport("recompose", "fromRenderProps")
-  @js.native
+  ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
+  @scala.inline
   def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[_],
+    RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String
-  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
+  ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any], renderPropName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
   
-  @JSImport("recompose", "getContext")
-  @js.native
-  def getContext[TContext](contextTypes: ValidationMap[TContext]): InferableComponentEnhancer[TContext] = js.native
+  @scala.inline
+  def getContext[TContext](contextTypes: ValidationMap[TContext]): InferableComponentEnhancer[TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(contextTypes.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TContext]]
   
-  @JSImport("recompose", "getDisplayName")
-  @js.native
-  def getDisplayName(component: ComponentType[_]): String = js.native
+  @scala.inline
+  def getDisplayName(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(component.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("recompose", "hoistStatics")
-  @js.native
-  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = js.native
-  @JSImport("recompose", "hoistStatics")
-  @js.native
-  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps], blacklist: StringDictionary[Boolean]): InferableComponentEnhancer[TProps] = js.native
+  @scala.inline
+  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TProps]]
+  @scala.inline
+  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps], blacklist: StringDictionary[Boolean]): InferableComponentEnhancer[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[TProps]]
   
-  @JSImport("recompose", "isClassComponent")
-  @js.native
-  def isClassComponent(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isClassComponent(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("recompose", "lifecycle")
-  @js.native
-  def lifecycle[TProps, TState, TInstance](spec: (ReactLifeCycleFunctions[TProps, TState, TInstance]) with TInstance): InferableComponentEnhancer[js.Object] = js.native
+  @scala.inline
+  def lifecycle[TProps, TState, TInstance](spec: (ReactLifeCycleFunctions[TProps, TState, TInstance]) & TInstance): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(spec.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
-  @JSImport("recompose", "mapProps")
-  @js.native
-  def mapProps[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = js.native
+  @scala.inline
+  def mapProps[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapProps")(propsMapper.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner, TOutter]]
   
-  @JSImport("recompose", "mapPropsStream")
-  @js.native
-  def mapPropsStream[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = js.native
+  @scala.inline
+  def mapPropsStream[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStream")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
-  @JSImport("recompose", "mapPropsStreamWithConfig")
-  @js.native
-  def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[/* transform */ mapper[Subscribable[_], Subscribable[_]], ComponentEnhancer[_, _]] = js.native
+  @scala.inline
+  def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
+    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
+    ComponentEnhancer[js.Any, js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
+    ComponentEnhancer[js.Any, js.Any]
+  ]]
   
-  @JSImport("recompose", "nest")
-  @js.native
-  def nest(Components: (String | ComponentType[_])*): ComponentClass[_, ComponentState] = js.native
+  @scala.inline
+  def nest(Components: (String | ComponentType[js.Any])*): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")(Components.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
-  @JSImport("recompose", "onlyUpdateForKeys")
-  @js.native
-  def onlyUpdateForKeys(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = js.native
-  @JSImport("recompose", "onlyUpdateForKeys")
-  @js.native
-  def onlyUpdateForKeys_T[T](propKeys: js.Array[/* keyof T */ String]): InferableComponentEnhancer[js.Object] = js.native
+  @scala.inline
+  def onlyUpdateForKeys(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  
+  @scala.inline
+  def onlyUpdateForKeys_T[T](propKeys: js.Array[/* keyof T */ String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
   @JSImport("recompose", "onlyUpdateForPropTypes")
   @js.native
   val onlyUpdateForPropTypes: InferableComponentEnhancer[js.Object] = js.native
   
-  @JSImport("recompose", "pure")
-  @js.native
-  def pure[TProps](component: ComponentType[TProps]): ComponentType[TProps] = js.native
+  @scala.inline
+  def pure[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  @JSImport("recompose", "renameProp")
-  @js.native
-  def renameProp(outterName: String, innerName: String): ComponentEnhancer[_, _] = js.native
+  @scala.inline
+  def renameProp(outterName: String, innerName: String): ComponentEnhancer[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameProp")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @JSImport("recompose", "renameProps")
-  @js.native
-  def renameProps(nameMap: NameMap): ComponentEnhancer[_, _] = js.native
+  @scala.inline
+  def renameProps(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameProps")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @JSImport("recompose", "renderComponent")
-  @js.native
-  def renderComponent[TProps](component: String): ComponentEnhancer[_, _] = js.native
-  @JSImport("recompose", "renderComponent")
-  @js.native
-  def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[_, _] = js.native
+  @scala.inline
+  def renderComponent[TProps](component: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  @scala.inline
+  def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
   @JSImport("recompose", "renderNothing")
   @js.native
   val renderNothing: InferableComponentEnhancer[js.Object] = js.native
   
-  @JSImport("recompose", "setDisplayName")
-  @js.native
-  def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
-  @JSImport("recompose", "setObservableConfig")
-  @js.native
-  def setObservableConfig(config: ObservableConfig): Unit = js.native
+  @scala.inline
+  def setObservableConfig(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setObservableConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("recompose", "setPropTypes")
-  @js.native
-  def setPropTypes[P](propTypes: ValidationMap[P]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = js.native
+  @scala.inline
+  def setPropTypes[P](propTypes: ValidationMap[P]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPropTypes")(propTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
-  @JSImport("recompose", "setStatic")
-  @js.native
-  def setStatic(key: String, value: js.Any): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def setStatic(key: String, value: js.Any): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
-  @JSImport("recompose", "shallowEqual")
-  @js.native
-  def shallowEqual(a: js.Object, b: js.Object): Boolean = js.native
+  @scala.inline
+  def shallowEqual(a: js.Object, b: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("recompose", "shouldUpdate")
-  @js.native
-  def shouldUpdate[TProps](test: predicateDiff[TProps]): InferableComponentEnhancer[js.Object] = js.native
+  @scala.inline
+  def shouldUpdate[TProps](test: predicateDiff[TProps]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdate")(test.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
   @JSImport("recompose", "toClass")
   @js.native
   val toClass: InferableComponentEnhancer[js.Object] = js.native
   
-  @JSImport("recompose", "toRenderProps")
-  @js.native
-  def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner with TOutter, TOutter]): StatelessComponent[TOutter with Children[TInner]] = js.native
+  @scala.inline
+  def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]): StatelessComponent[TOutter & Children[TInner]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRenderProps")(hoc.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[TOutter & Children[TInner]]]
   
-  @JSImport("recompose", "withContext")
-  @js.native
-  def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, _]): InferableComponentEnhancer[js.Object] = js.native
+  @scala.inline
+  def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
-  @JSImport("recompose", "withHandlers")
-  @js.native
-  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreators[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers with TOutter, TOutter] = js.native
-  @JSImport("recompose", "withHandlers")
-  @js.native
-  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreatorsFactory[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers with TOutter, TOutter] = js.native
+  @scala.inline
+  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreators[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
+  @scala.inline
+  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreatorsFactory[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
   
-  @JSImport("recompose", "withProps")
-  @js.native
-  def withProps[TInner, TOutter](createProps: TInner): InferableComponentEnhancerWithProps[TInner with TOutter, TOutter] = js.native
-  @JSImport("recompose", "withProps")
-  @js.native
-  def withProps[TInner, TOutter](createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner with TOutter, TOutter] = js.native
+  @scala.inline
+  def withProps[TInner, TOutter](createProps: TInner): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  @scala.inline
+  def withProps[TInner, TOutter](createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
   
-  @JSImport("recompose", "withPropsOnChange")
-  @js.native
-  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: js.Array[String], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner with TOutter, TOutter] = js.native
-  @JSImport("recompose", "withPropsOnChange")
-  @js.native
-  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: predicateDiff[TOutter], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner with TOutter, TOutter] = js.native
+  @scala.inline
+  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: js.Array[String], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  @scala.inline
+  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: predicateDiff[TOutter], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
   
-  @JSImport("recompose", "withReducer")
-  @js.native
+  @scala.inline
   def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],
     initialState: TState
-  ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = js.native
-  @JSImport("recompose", "withReducer")
-  @js.native
+  ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withReducer")(stateName.asInstanceOf[js.Any], dispatchName.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter]]
+  @scala.inline
   def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],
     initialState: mapper[TOutter, TState]
-  ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = js.native
+  ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withReducer")(stateName.asInstanceOf[js.Any], dispatchName.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter]]
   
-  @JSImport("recompose", "withState")
-  @js.native
-  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: TState): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = js.native
-  @JSImport("recompose", "withState")
-  @js.native
-  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: mapper[TOutter, TState]): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = js.native
+  @scala.inline
+  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: TState): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
+  @scala.inline
+  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: mapper[TOutter, TState]): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
   
-  @JSImport("recompose", "withStateHandlers")
-  @js.native
-  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: TState, stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter with TState with TUpdaters, TOutter] = js.native
-  @JSImport("recompose", "withStateHandlers")
-  @js.native
-  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: mapper[TOutter, TState], stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter with TState with TUpdaters, TOutter] = js.native
+  @scala.inline
+  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: TState, stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
+  @scala.inline
+  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: mapper[TOutter, TState], stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
   
-  @JSImport("recompose", "wrapDisplayName")
-  @js.native
-  def wrapDisplayName(component: ComponentType[_], wrapperName: String): String = js.native
+  @scala.inline
+  def wrapDisplayName(component: ComponentType[js.Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapDisplayName")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ComponentEnhancer[TInner, TOutter] = js.Function1[/* component */ ComponentType[TInner], ComponentClass[TOutter, ComponentState]]
   
@@ -295,12 +247,11 @@ object mod {
   type EventHandler = js.Function
   
   // createEventHandler: https://github.com/acdlite/recompose/blob/master/docs/API.md#createEventHandler
-  @js.native
   trait EventHandlerOf[T, TSubs /* <: Subscribable[T] */] extends StObject {
     
-    def handler(value: T): Unit = js.native
+    def handler(value: T): Unit
     
-    var stream: TSubs = js.native
+    var stream: TSubs
   }
   object EventHandlerOf {
     
@@ -311,7 +262,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EventHandlerOfMutableBuilder[Self <: EventHandlerOf[_, _], T, TSubs /* <: Subscribable[T] */] (val x: Self with (EventHandlerOf[T, TSubs])) extends AnyVal {
+    implicit class EventHandlerOfMutableBuilder[Self <: EventHandlerOf[?, ?], T, TSubs /* <: Subscribable[T] */] (val x: Self & (EventHandlerOf[T, TSubs])) extends AnyVal {
       
       @scala.inline
       def setHandler(value: T => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
@@ -321,14 +272,14 @@ object mod {
     }
   }
   
-  type HandleCreators[TOutter, THandlers] = HandleCreatorsStructure[TOutter] with (HandleCreatorsHandlers[TOutter, THandlers])
+  type HandleCreators[TOutter, THandlers] = HandleCreatorsStructure[TOutter] & (HandleCreatorsHandlers[TOutter, THandlers])
   
   type HandleCreatorsFactory[TOutter, THandlers] = js.Function1[/* initialProps */ TOutter, HandleCreators[TOutter, THandlers]]
   
   // This type is required to infer THandlers
   type HandleCreatorsHandlers[TOutter, THandlers] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof THandlers ]: (props : TOutter): THandlers[P]}
-    */ typings.recompose.recomposeStrings.HandleCreatorsHandlers with TopLevel[THandlers]
+    */ typings.recompose.recomposeStrings.HandleCreatorsHandlers & TopLevel[THandlers]
   
   // This type is required to infer TOutter
   type HandleCreatorsStructure[TOutter] = StringDictionary[mapper[TOutter, EventHandler]]
@@ -338,7 +289,7 @@ object mod {
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ ComponentType[TInjectedProps], 
     ComponentClass[
-      (Omit[TInjectedProps, /* keyof TInjectedProps */ String]) with TNeedsProps, 
+      (Omit[TInjectedProps, /* keyof TInjectedProps */ String]) & TNeedsProps, 
       ComponentState
     ]
   ]
@@ -347,12 +298,11 @@ object mod {
   type NameMap = StringDictionary[String]
   
   // setObservableConfig: https://github.com/acdlite/recompose/blob/master/docs/API.md#setObservableConfig
-  @js.native
   trait ObservableConfig extends StObject {
     
-    var fromESObservable: js.UndefOr[js.Function1[/* observable */ Subscribable[_], _]] = js.native
+    var fromESObservable: js.UndefOr[js.Function1[/* observable */ Subscribable[js.Any], js.Any]] = js.undefined
     
-    var toESObservable: js.UndefOr[js.Function1[/* stream */ js.Any, Subscribable[_]]] = js.native
+    var toESObservable: js.UndefOr[js.Function1[/* stream */ js.Any, Subscribable[js.Any]]] = js.undefined
   }
   object ObservableConfig {
     
@@ -366,25 +316,24 @@ object mod {
     implicit class ObservableConfigMutableBuilder[Self <: ObservableConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFromESObservable(value: /* observable */ Subscribable[_] => _): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
+      def setFromESObservable(value: /* observable */ Subscribable[js.Any] => js.Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFromESObservableUndefined: Self = StObject.set(x, "fromESObservable", js.undefined)
       
       @scala.inline
-      def setToESObservable(value: /* stream */ js.Any => Subscribable[_]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
+      def setToESObservable(value: /* stream */ js.Any => Subscribable[js.Any]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
       
       @scala.inline
       def setToESObservableUndefined: Self = StObject.set(x, "toESObservable", js.undefined)
     }
   }
   
-  @js.native
   trait Observer[T] extends StObject {
     
-    def complete(): Unit = js.native
+    def complete(): Unit
     
-    def next(props: T): Unit = js.native
+    def next(props: T): Unit
   }
   object Observer {
     
@@ -395,7 +344,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -409,12 +358,11 @@ object mod {
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   // lifecycle: https://github.com/acdlite/recompose/blob/master/docs/API.md#lifecycle
-  @js.native
   trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends StObject {
     
     var UNSAFE_componentWillMount: js.UndefOr[
         js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var UNSAFE_componentWillReceiveProps: js.UndefOr[
         js.ThisFunction1[
@@ -422,7 +370,7 @@ object mod {
           /* nextProps */ TProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var UNSAFE_componentWillUpdate: js.UndefOr[
         js.ThisFunction2[
@@ -431,7 +379,7 @@ object mod {
           /* nextState */ TState, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var componentDidCatch: js.UndefOr[
         js.ThisFunction2[
@@ -440,11 +388,11 @@ object mod {
           /* info */ ErrorInfo, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var componentDidMount: js.UndefOr[
         js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var componentDidUpdate: js.UndefOr[
         js.ThisFunction2[
@@ -453,11 +401,11 @@ object mod {
           /* prevState */ TState, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var componentWillMount: js.UndefOr[
         js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var componentWillReceiveProps: js.UndefOr[
         js.ThisFunction1[
@@ -465,11 +413,11 @@ object mod {
           /* nextProps */ TProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var componentWillUnmount: js.UndefOr[
         js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var componentWillUpdate: js.UndefOr[
         js.ThisFunction2[
@@ -478,7 +426,7 @@ object mod {
           /* nextState */ TState, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var shouldComponentUpdate: js.UndefOr[
         js.ThisFunction2[
@@ -487,7 +435,7 @@ object mod {
           /* nextState */ TState, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ReactLifeCycleFunctions {
     
@@ -498,7 +446,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReactLifeCycleFunctionsMutableBuilder[Self <: ReactLifeCycleFunctions[_, _, _], TProps, TState, TInstance] (val x: Self with (ReactLifeCycleFunctions[TProps, TState, TInstance])) extends AnyVal {
+    implicit class ReactLifeCycleFunctionsMutableBuilder[Self <: ReactLifeCycleFunctions[?, ?, ?], TProps, TState, TInstance] (val x: Self & (ReactLifeCycleFunctions[TProps, TState, TInstance])) extends AnyVal {
       
       @scala.inline
       def setComponentDidCatch(
@@ -623,21 +571,24 @@ object mod {
     }
   }
   
-  type ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance] = (_ReactLifeCycleFunctionsThisArguments[TProps, TState]) with TInstance
+  type ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance] = (_ReactLifeCycleFunctionsThisArguments[TProps, TState]) & TInstance
   
   // withStateHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withstatehandlers
-  type StateHandler[TState] = js.Function1[/* repeated */ js.Any, js.UndefOr[Partial[TState]]]
+  @js.native
+  trait StateHandler[TState] extends StObject {
+    
+    def apply(payload: js.Any*): js.UndefOr[Partial[TState]] = js.native
+  }
   
   type StateHandlerMap[TState] = StringDictionary[StateHandler[TState]]
   
   type StateUpdaters[TOutter, TState, TUpdaters] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ updaterName in keyof TUpdaters ]: (state : TState, props : TOutter): TUpdaters[updaterName]}
-    */ typings.recompose.recomposeStrings.StateUpdaters with TopLevel[TUpdaters]
+    */ typings.recompose.recomposeStrings.StateUpdaters & TopLevel[TUpdaters]
   
-  @js.native
   trait Subscribable[T] extends StObject {
     
-    def subscribe(observer: Observer[T]): Subscription = js.native
+    def subscribe(observer: Observer[T]): Subscription
   }
   object Subscribable {
     
@@ -648,17 +599,16 @@ object mod {
     }
     
     @scala.inline
-    implicit class SubscribableMutableBuilder[Self <: Subscribable[_], T] (val x: Self with Subscribable[T]) extends AnyVal {
+    implicit class SubscribableMutableBuilder[Self <: Subscribable[?], T] (val x: Self & Subscribable[T]) extends AnyVal {
       
       @scala.inline
       def setSubscribe(value: Observer[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Subscription {
     
@@ -682,7 +632,7 @@ object mod {
     var context: js.Any = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callBack: js.Function0[_]): Unit = js.native
+    def forceUpdate(callBack: js.Function0[js.Any]): Unit = js.native
     
     var props: TProps = js.native
     
@@ -691,10 +641,10 @@ object mod {
     def setState[TKeyOfState /* <: /* keyof TState */ String */](f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]]): Unit = js.native
     def setState[TKeyOfState /* <: /* keyof TState */ String */](
       f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]],
-      callback: js.Function0[_]
+      callback: js.Function0[js.Any]
     ): Unit = js.native
     def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState]): Unit = js.native
-    def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState], callback: js.Function0[_]): Unit = js.native
+    def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState], callback: js.Function0[js.Any]): Unit = js.native
     
     var state: TState = js.native
   }

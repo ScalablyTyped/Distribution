@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRouteRule extends StObject {
   
   /**
     * The short description conveying the intent of this routeRule.
     * The description can have a maximum length of 1024 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take effect for the selected backendService.
@@ -21,13 +19,13 @@ trait HttpRouteRule extends StObject {
     * Note that headerAction is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL.
     * Not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
-  var headerAction: js.UndefOr[HttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[HttpHeaderAction] = js.undefined
   
   /**
     * The list of criteria for matching attributes of a request to this routeRule. This list has OR semantics: the request matches this routeRule when any of the matchRules are satisfied.
     * However predicates within a given matchRule have AND semantics. All predicates within a matchRule must match for the request to match the rule.
     */
-  var matchRules: js.UndefOr[js.Array[HttpRouteRuleMatch]] = js.native
+  var matchRules: js.UndefOr[js.Array[HttpRouteRuleMatch]] = js.undefined
   
   /**
     * For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules. RouteRules are evaluated in order of priority, from the
@@ -36,7 +34,7 @@ trait HttpRouteRule extends StObject {
     * Priority numbers can have gaps, which enable you to add or remove rules in the future without affecting the rest of the rules. For example, 1, 2, 3, 4, 5, 9, 12, 16 is a valid
     * series of priority numbers to which you could add rules numbered from 6 to 8, 10 to 11, and 13 to 15 in the future without any impact on existing rules.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * In response to a matching matchRule, the load balancer performs advanced routing actions like URL rewrites, header transformations, etc. prior to forwarding the request to the
@@ -45,7 +43,7 @@ trait HttpRouteRule extends StObject {
     * Only one of urlRedirect, service or routeAction.weightedBackendService must be set.
     * UrlMaps for external HTTP(S) load balancers support only the urlRewrite action within a routeRule's routeAction.
     */
-  var routeAction: js.UndefOr[HttpRouteAction] = js.native
+  var routeAction: js.UndefOr[HttpRouteAction] = js.undefined
   
   /**
     * The full or partial URL of the backend service resource to which traffic is directed if this rule is matched. If routeAction is additionally specified, advanced routing actions like
@@ -53,14 +51,14 @@ trait HttpRouteRule extends StObject {
     * routeAction specifies any  weightedBackendServices, service must not be specified.
     * Only one of urlRedirect, service or routeAction.weightedBackendService must be set.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * When this rule is matched, the request is redirected to a URL specified by urlRedirect.
     * If urlRedirect is specified, service or routeAction must not be set.
     * Not supported when the URL map is bound to target gRPC proxy.
     */
-  var urlRedirect: js.UndefOr[HttpRedirectAction] = js.native
+  var urlRedirect: js.UndefOr[HttpRedirectAction] = js.undefined
 }
 object HttpRouteRule {
   

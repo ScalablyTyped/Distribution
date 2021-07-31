@@ -10,9 +10,9 @@ TypeScript typings for PageSpeed Insights API v5
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.pagespeedonline |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 492 |
+| # downloads        | 787 |
 | # stars            | 0 |
 
 ## Links

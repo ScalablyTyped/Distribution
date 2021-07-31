@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutEmailIdentityDkimAttributesRequest extends StObject {
   
   /**
     * The email identity that you want to change the DKIM settings for.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
   
   /**
     * Sets the DKIM signing configuration for the identity. When you set this value true, then the messages that are sent from the identity are signed using DKIM. If you set this value to false, your messages are sent without DKIM signing.
     */
-  var SigningEnabled: js.UndefOr[Enabled] = js.native
+  var SigningEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object PutEmailIdentityDkimAttributesRequest {
   

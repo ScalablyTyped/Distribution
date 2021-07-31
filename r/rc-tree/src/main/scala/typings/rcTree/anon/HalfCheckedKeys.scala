@@ -3,21 +3,19 @@ package typings.rcTree.anon
 import typings.rcTree.rcTreeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HalfCheckedKeys extends StObject {
   
-  var checked: `false` = js.native
+  var checked: `false`
   
-  var halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key] = js.native
+  var halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key]
 }
 object HalfCheckedKeys {
   
   @scala.inline
-  def apply(checked: `false`, halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key]): HalfCheckedKeys = {
-    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any])
+  def apply(halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key]): HalfCheckedKeys = {
+    val __obj = js.Dynamic.literal(checked = false, halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[HalfCheckedKeys]
   }
   

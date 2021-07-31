@@ -4,22 +4,24 @@ import typings.retry.mod.OperationOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("async-retry", JSImport.Namespace)
-  @js.native
-  def apply[A](fn: RetryFunction[A]): js.Promise[A] = js.native
-  @JSImport("async-retry", JSImport.Namespace)
-  @js.native
-  def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = js.native
+  @scala.inline
+  def apply[A](fn: RetryFunction[A]): js.Promise[A] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[A]]
+  @scala.inline
+  def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[A]]
   
+  @JSImport("async-retry", JSImport.Namespace)
   @js.native
-  trait Options extends OperationOptions {
+  val ^ : js.Any = js.native
+  
+  trait Options
+    extends StObject
+       with OperationOptions {
     
-    var onRetry: js.UndefOr[js.Function2[/* e */ Error, /* attempt */ Double, _]] = js.native
+    var onRetry: js.UndefOr[js.Function2[/* e */ Error, /* attempt */ Double, js.Any]] = js.undefined
   }
   object Options {
     
@@ -33,7 +35,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnRetry(value: (/* e */ Error, /* attempt */ Double) => _): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
+      def setOnRetry(value: (/* e */ Error, /* attempt */ Double) => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)

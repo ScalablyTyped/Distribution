@@ -2,48 +2,86 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
   @JSImport("amcharts/Title", JSImport.Default)
   @js.native
-  class default () extends Title
-  
-  @js.native
-  trait Title extends StObject {
+  class default ()
+    extends StObject
+       with Title {
     
     /**
       * @default 1
       */
+    /* CompleteClass */
     var alpha: Double = js.native
     
     /**
       * Specifies if the tile is bold or not.
       * @default false
       */
+    /* CompleteClass */
     var bold: Boolean = js.native
     
     /**
       * Text color of a title.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Unique id of a Title. You don't need to set it, unless you want to.
       */
+    /* CompleteClass */
     var id: String = js.native
     
     /**
       * Text size
       */
+    /* CompleteClass */
     var size: Double = js.native
     
     /**
       * Text of a label
       */
+    /* CompleteClass */
     var text: String = js.native
+  }
+  
+  trait Title extends StObject {
+    
+    /**
+      * @default 1
+      */
+    var alpha: Double
+    
+    /**
+      * Specifies if the tile is bold or not.
+      * @default false
+      */
+    var bold: Boolean
+    
+    /**
+      * Text color of a title.
+      */
+    var color: String
+    
+    /**
+      * Unique id of a Title. You don't need to set it, unless you want to.
+      */
+    var id: String
+    
+    /**
+      * Text size
+      */
+    var size: Double
+    
+    /**
+      * Text of a label
+      */
+    var text: String
   }
   object Title {
     

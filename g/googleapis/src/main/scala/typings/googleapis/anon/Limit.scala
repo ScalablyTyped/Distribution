@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
-  var usage: js.UndefOr[String] = js.native
+  var usage: js.UndefOr[String] = js.undefined
   
-  var usageInDrive: js.UndefOr[String] = js.native
+  var usageInDrive: js.UndefOr[String] = js.undefined
   
-  var usageInDriveTrash: js.UndefOr[String] = js.native
+  var usageInDriveTrash: js.UndefOr[String] = js.undefined
 }
 object Limit {
   

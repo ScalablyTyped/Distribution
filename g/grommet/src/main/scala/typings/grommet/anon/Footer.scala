@@ -2,19 +2,17 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Footer extends StObject {
   
-  var body: js.UndefOr[AlignBackground] = js.native
+  var body: js.UndefOr[AlignBackground] = js.undefined
   
-  var footer: js.UndefOr[VerticalAlign] = js.native
+  var footer: js.UndefOr[VerticalAlign] = js.undefined
   
-  var header: js.UndefOr[Align] = js.native
+  var header: js.UndefOr[Align] = js.undefined
   
-  var row: js.UndefOr[`20`] = js.native
+  var row: js.UndefOr[`20`] = js.undefined
 }
 object Footer {
   

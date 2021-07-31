@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordError extends StObject {
   
   /**
     * The numeric value of the error.
     */
-  var Code: js.UndefOr[ErrorCode] = js.native
+  var Code: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * The description of the error.
     */
-  var Description: js.UndefOr[ErrorDescription] = js.native
+  var Description: js.UndefOr[ErrorDescription] = js.undefined
 }
 object RecordError {
   

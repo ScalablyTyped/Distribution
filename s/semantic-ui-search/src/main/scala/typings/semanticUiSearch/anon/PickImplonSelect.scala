@@ -4,14 +4,31 @@ import typings.semanticUiSearch.JQuery
 import typings.semanticUiSearch.semanticUiSearchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, 'onSelect'> */
-@js.native
 trait PickImplonSelect extends StObject {
   
-  def onSelect(result: js.Any, response: js.Any): `false` | Unit = js.native
+  def onSelect(result: js.Any, response: js.Any): `false` | Unit
   @JSName("onSelect")
-  var onSelect_Original: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = js.native
+  var onSelect_Original: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
+}
+object PickImplonSelect {
+  
+  @scala.inline
+  def apply(
+    onSelect: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
+  ): PickImplonSelect = {
+    val __obj = js.Dynamic.literal(onSelect = onSelect.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonSelect]
+  }
+  
+  @scala.inline
+  implicit class PickImplonSelectMutableBuilder[Self <: PickImplonSelect] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnSelect(
+      value: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
+    ): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+  }
 }

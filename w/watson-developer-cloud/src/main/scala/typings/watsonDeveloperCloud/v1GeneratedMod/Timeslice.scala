@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Timeslice. */
-@js.native
 trait Timeslice extends StObject {
   
   /** Used to indicate that anomaly detection should be performed. Anomaly detection is used to locate unusual datapoints within a time series. */
-  var anomaly: js.UndefOr[Boolean] = js.native
+  var anomaly: js.UndefOr[Boolean] = js.undefined
   
   /** The field where the aggregation is located in the document. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** Interval of the aggregation. Valid date interval values are second/seconds minute/minutes, hour/hours, day/days, week/weeks, month/months, and year/years. */
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
 }
 object Timeslice {
   

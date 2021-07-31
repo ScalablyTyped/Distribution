@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3PresentationOptions extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait GoogleActionsTransactionsV3PresentationOptions extends StObject {
     * this order. This will be used in various places like prompt, suggestion
     * chip etc while proposing the order to the user.
     */
-  var actionDisplayName: js.UndefOr[String] = js.native
+  var actionDisplayName: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsTransactionsV3PresentationOptions {
   

@@ -4,14 +4,12 @@ import typings.semanticUiShape.semanticUiShapeStrings.initial
 import typings.semanticUiShape.semanticUiShapeStrings.next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-shape.SemanticUI.ShapeSettings._Impl, 'width'> */
-@js.native
 trait PickImplwidth extends StObject {
   
-  var width: next | initial | Double = js.native
+  var width: next | initial | Double
 }
 object PickImplwidth {
   

@@ -9,20 +9,24 @@ import typings.node.httpMod.ServerResponse
 import typings.node.urlMod.UrlWithParsedQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverRouterMod {
   
+  @JSImport("next/dist/next-server/server/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("next/dist/next-server/server/router", JSImport.Default)
   @js.native
-  class default protected () extends Router {
+  class default protected ()
+    extends StObject
+       with Router {
     def this(hasBasePathHeadersFsRoutesRewritesRedirectsCatchAllRouteDynamicRoutesPageCheckerUseFileSystemPublicRoutesLocales: CatchAllRoute) = this()
   }
   
-  @JSImport("next/dist/next-server/server/router", "route")
-  @js.native
-  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], _] = js.native
+  @scala.inline
+  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any]]
   
   type DynamicRoutes = js.Array[Match]
   
@@ -32,14 +36,13 @@ object serverRouterMod {
   
   type RouteMatch = js.Function1[/* pathname */ js.UndefOr[String | Null], `false` | Params]
   
-  @js.native
   trait RouteResult extends StObject {
     
-    var finished: Boolean = js.native
+    var finished: Boolean
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[StringDictionary[String]] = js.native
+    var query: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object RouteResult {
     
@@ -69,22 +72,21 @@ object serverRouterMod {
     }
   }
   
-  @js.native
   trait Route_ extends StObject {
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): js.Promise[RouteResult] | RouteResult = js.native
+    def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): js.Promise[RouteResult] | RouteResult
     
-    var `match`: RouteMatch = js.native
+    var `match`: RouteMatch
     
-    var name: String = js.native
+    var name: String
     
-    var requireBasePath: js.UndefOr[`false`] = js.native
+    var requireBasePath: js.UndefOr[`false`] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Route_ {
     

@@ -2,10 +2,8 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointInstrumentOptionsObject extends StObject {
   
   /**
@@ -13,56 +11,56 @@ trait PointInstrumentOptionsObject extends StObject {
     * duration. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.duration. Defaults to 2000.
     */
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum frequency for a note when using a data property for
     * frequency. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.frequency. Defaults to 2200.
     */
-  var maxFrequency: js.UndefOr[Double] = js.native
+  var maxFrequency: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum pan value for a note when using a data property for
     * panning. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.pan. Defaults to 1 (fully right).
     */
-  var maxPan: js.UndefOr[Double] = js.native
+  var maxPan: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum volume for a note when using a data property for volume.
     * Can be overridden by using either a fixed number or a function for
     * instrumentMapping.volume. Defaults to 1.
     */
-  var maxVolume: js.UndefOr[Double] = js.native
+  var maxVolume: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum duration for a note when using a data property for
     * duration. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.duration. Defaults to 20.
     */
-  var minDuration: js.UndefOr[Double] = js.native
+  var minDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum frequency for a note when using a data property for
     * frequency. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.frequency. Defaults to 220.
     */
-  var minFrequency: js.UndefOr[Double] = js.native
+  var minFrequency: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum pan value for a note when using a data property for
     * panning. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.pan. Defaults to -1 (fully left).
     */
-  var minPan: js.UndefOr[Double] = js.native
+  var minPan: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum volume for a note when using a data property for volume.
     * Can be overridden by using either a fixed number or a function for
     * instrumentMapping.volume. Defaults to 0.1.
     */
-  var minVolume: js.UndefOr[Double] = js.native
+  var minVolume: js.UndefOr[Double] = js.undefined
 }
 object PointInstrumentOptionsObject {
   

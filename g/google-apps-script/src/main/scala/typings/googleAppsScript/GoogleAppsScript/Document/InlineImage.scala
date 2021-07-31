@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a FootnoteSection. An InlineImage cannot itself contain any other element. For
   * more information on document structure, see the guide to extending Google Docs.
   */
-@js.native
-trait InlineImage extends Element {
+trait InlineImage
+  extends StObject
+     with Element {
   
-  def getAltDescription(): String = js.native
+  def getAltDescription(): String
   
-  def getAltTitle(): String = js.native
+  def getAltTitle(): String
   
-  def getAs(contentType: String): Blob = js.native
+  def getAs(contentType: String): Blob
   
-  def getBlob(): Blob = js.native
+  def getBlob(): Blob
   
-  def getHeight(): Integer = js.native
+  def getHeight(): Integer
   
-  def getLinkUrl(): String = js.native
+  def getLinkUrl(): String
   
-  def getWidth(): Integer = js.native
+  def getWidth(): Integer
   
-  def setAltDescription(description: String): InlineImage = js.native
+  def setAltDescription(description: String): InlineImage
   
-  def setAltTitle(title: String): InlineImage = js.native
+  def setAltTitle(title: String): InlineImage
   
-  def setHeight(height: Integer): InlineImage = js.native
+  def setHeight(height: Integer): InlineImage
   
-  def setLinkUrl(url: String): InlineImage = js.native
+  def setLinkUrl(url: String): InlineImage
   
-  def setWidth(width: Integer): InlineImage = js.native
+  def setWidth(width: Integer): InlineImage
 }
 object InlineImage {
   

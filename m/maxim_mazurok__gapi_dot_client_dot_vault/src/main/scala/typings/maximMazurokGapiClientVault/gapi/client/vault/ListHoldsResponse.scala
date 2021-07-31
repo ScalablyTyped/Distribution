@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHoldsResponse extends StObject {
   
   /** The list of holds. */
-  var holds: js.UndefOr[js.Array[Hold]] = js.native
+  var holds: js.UndefOr[js.Array[Hold]] = js.undefined
   
   /** Page token to retrieve the next page of results in the list. If this is empty, then there are no more holds to list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListHoldsResponse {
   

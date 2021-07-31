@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDirectionsEventArgs extends StObject {
   
   /** The calculated route (or routes, if the route mode is transit). */
-  var route: js.Array[IRoute] = js.native
+  var route: js.Array[IRoute]
   
   /** The route summary (or summaries) of the route(s) defined in the route property. */
-  var routeSummary: js.Array[IRouteSummary] = js.native
+  var routeSummary: js.Array[IRouteSummary]
 }
 object IDirectionsEventArgs {
   

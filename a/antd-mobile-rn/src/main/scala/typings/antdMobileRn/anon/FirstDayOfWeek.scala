@@ -2,17 +2,15 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstDayOfWeek extends StObject {
   
-  var firstDayOfWeek: Double = js.native
+  var firstDayOfWeek: Double
   
-  var minimalDaysInFirstWeek: Double = js.native
+  var minimalDaysInFirstWeek: Double
   
-  var timezoneOffset: Double = js.native
+  var timezoneOffset: Double
 }
 object FirstDayOfWeek {
   

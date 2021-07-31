@@ -15,10 +15,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androidpublisherMod {
+  
+  @JSImport("googleapis/build/src/apis/androidpublisher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -125,30 +128,26 @@ object androidpublisherMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher(options: Options): Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher(options: typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Options): typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher(options: typings.googleapis.v11Mod.androidpublisherV11.Options): typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher(options: typings.googleapis.v2Mod.androidpublisherV2.Options): typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher_v1(version: v1): Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher_v11(version: v1Dot1): typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher_v2(version: v2): typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher = js.native
-  @JSImport("googleapis/build/src/apis/androidpublisher", "androidpublisher")
-  @js.native
-  def androidpublisher_v3(version: v3): typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher = js.native
+  @scala.inline
+  def androidpublisher(options: Options): Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(options.asInstanceOf[js.Any]).asInstanceOf[Androidpublisher]
+  @scala.inline
+  def androidpublisher(options: typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Options): typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher]
+  @scala.inline
+  def androidpublisher(options: typings.googleapis.v11Mod.androidpublisherV11.Options): typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher]
+  @scala.inline
+  def androidpublisher(options: typings.googleapis.v2Mod.androidpublisherV2.Options): typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher]
+  
+  @scala.inline
+  def androidpublisher_v1(version: v1): Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(version.asInstanceOf[js.Any]).asInstanceOf[Androidpublisher]
+  
+  @scala.inline
+  def androidpublisher_v11(version: v1Dot1): typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher]
+  
+  @scala.inline
+  def androidpublisher_v2(version: v2): typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher]
+  
+  @scala.inline
+  def androidpublisher_v3(version: v3): typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher = ^.asInstanceOf[js.Dynamic].applyDynamic("androidpublisher")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher]
   
   object auth extends Shortcut {
     
@@ -179,9 +178,12 @@ object androidpublisherMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/androidpublisher", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/androidpublisher", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

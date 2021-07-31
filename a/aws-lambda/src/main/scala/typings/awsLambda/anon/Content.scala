@@ -5,15 +5,13 @@ import typings.awsLambda.awsLambdaStrings.PlainText_
 import typings.awsLambda.awsLambdaStrings.SSML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var contentType: PlainText_ | SSML | CustomPayload = js.native
+  var contentType: PlainText_ | SSML | CustomPayload
 }
 object Content {
   

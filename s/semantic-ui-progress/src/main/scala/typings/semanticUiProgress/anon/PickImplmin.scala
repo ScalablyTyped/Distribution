@@ -2,14 +2,12 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.RandomSettings._Impl, 'min'> */
-@js.native
 trait PickImplmin extends StObject {
   
-  var min: Double = js.native
+  var min: Double
 }
 object PickImplmin {
   

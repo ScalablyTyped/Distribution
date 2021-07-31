@@ -2,23 +2,21 @@ package typings.reactImageMagnifiers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClickMoveLimit extends StObject {
     
-    var clickMoveLimit: js.UndefOr[Double] = js.native
+    var clickMoveLimit: js.UndefOr[Double] = js.undefined
     
-    var doubleTapDurationInMs: js.UndefOr[Double] = js.native
+    var doubleTapDurationInMs: js.UndefOr[Double] = js.undefined
     
-    var longTouchDurationInMs: js.UndefOr[Double] = js.native
+    var longTouchDurationInMs: js.UndefOr[Double] = js.undefined
     
-    var longTouchMoveLimit: js.UndefOr[Double] = js.native
+    var longTouchMoveLimit: js.UndefOr[Double] = js.undefined
     
-    var tapDurationInMs: js.UndefOr[Double] = js.native
+    var tapDurationInMs: js.UndefOr[Double] = js.undefined
   }
   object ClickMoveLimit {
     

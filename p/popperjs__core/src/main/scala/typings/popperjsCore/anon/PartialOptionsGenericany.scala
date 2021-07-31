@@ -3,20 +3,18 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.typesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.OptionsGeneric<any>> */
-@js.native
 trait PartialOptionsGenericany extends StObject {
   
-  var modifiers: js.UndefOr[js.Array[_]] = js.native
+  var modifiers: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.native
+  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.native
+  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
-  var strategy: js.UndefOr[PositioningStrategy] = js.native
+  var strategy: js.UndefOr[PositioningStrategy] = js.undefined
 }
 object PartialOptionsGenericany {
   
@@ -30,7 +28,7 @@ object PartialOptionsGenericany {
   implicit class PartialOptionsGenericanyMutableBuilder[Self <: PartialOptionsGenericany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setModifiers(value: js.Array[_]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    def setModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)

@@ -2,36 +2,34 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftwarePackage extends StObject {
   
   /**
     * The architecture used for the software package.
     */
-  var Architecture: js.UndefOr[NonEmptyString] = js.native
+  var Architecture: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The epoch of the software package.
     */
-  var Epoch: js.UndefOr[NonEmptyString] = js.native
+  var Epoch: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the software package.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The release of the software package.
     */
-  var Release: js.UndefOr[NonEmptyString] = js.native
+  var Release: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version of the software package.
     */
-  var Version: js.UndefOr[NonEmptyString] = js.native
+  var Version: js.UndefOr[NonEmptyString] = js.undefined
 }
 object SoftwarePackage {
   

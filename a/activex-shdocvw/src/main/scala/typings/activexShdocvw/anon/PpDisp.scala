@@ -2,15 +2,13 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PpDisp extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  var ppDisp: js.Any = js.native
+  var ppDisp: js.Any
 }
 object PpDisp {
   

@@ -6,7 +6,6 @@ import typings.agentBase.agentBaseBooleans.`true`
 import typings.agentBase.anon.PickAgentaddRequest
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.Socket
@@ -17,23 +16,22 @@ import typings.node.tlsMod.SecureVersion
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Agent = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Agent]
+  @scala.inline
+  def apply(callback: AgentCallback): Agent = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def apply(callback: AgentCallback, opts: AgentOptions): Agent = (^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  @scala.inline
+  def apply(opts: AgentOptions): Agent = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  
   @JSImport("agent-base", JSImport.Namespace)
   @js.native
-  def apply(): Agent = js.native
-  @JSImport("agent-base", JSImport.Namespace)
-  @js.native
-  def apply(callback: AgentCallback): Agent = js.native
-  @JSImport("agent-base", JSImport.Namespace)
-  @js.native
-  def apply(callback: AgentCallback, opts: AgentOptions): Agent = js.native
-  @JSImport("agent-base", JSImport.Namespace)
-  @js.native
-  def apply(opts: AgentOptions): Agent = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Base `http.Agent` implementation.
@@ -47,7 +45,7 @@ object mod {
   class Agent () extends EventEmitter {
     def this(callback: AgentCallback) = this()
     def this(callback: AgentOptions) = this()
-    def this(callback: js.UndefOr[scala.Nothing], _opts: AgentOptions) = this()
+    def this(callback: Unit, _opts: AgentOptions) = this()
     def this(callback: AgentCallback, _opts: AgentOptions) = this()
     def this(callback: AgentOptions, _opts: AgentOptions) = this()
     
@@ -118,10 +116,9 @@ object mod {
   
   type AgentLike = PickAgentaddRequest | typings.node.httpMod.Agent
   
-  @js.native
   trait AgentOptions extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AgentOptions {
     
@@ -142,14 +139,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AgentRequestOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
   }
   object AgentRequestOptions {
     
@@ -190,14 +186,15 @@ object mod {
   
   /* Inlined parent agent-base.agent-base.AgentRequestOptions */
   /* Inlined parent std.Omit<node.http.RequestOptions, keyof agent-base.agent-base.AgentRequestOptions> */
-  @js.native
-  trait HttpRequestOptions extends RequestOptions {
+  trait HttpRequestOptions
+    extends StObject
+       with RequestOptions {
     
-    var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.native
+    var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.undefined
     
-    var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.native
+    var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.undefined
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
     var createConnection: js.UndefOr[
         js.Function2[
@@ -205,43 +202,43 @@ object mod {
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | String] = js.native
+    var defaultPort: js.UndefOr[Double | String] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var secureEndpoint: `false` = js.native
+    var secureEndpoint: `false`
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object HttpRequestOptions {
     
     @scala.inline
-    def apply(port: Double, secureEndpoint: `false`): HttpRequestOptions = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
+    def apply(port: Double): HttpRequestOptions = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = false)
       __obj.asInstanceOf[HttpRequestOptions]
     }
     
@@ -371,104 +368,105 @@ object mod {
   
   /* Inlined parent agent-base.agent-base.AgentRequestOptions */
   /* Inlined parent std.Omit<node.https.RequestOptions, keyof agent-base.agent-base.AgentRequestOptions> */
-  @js.native
-  trait HttpsRequestOptions extends RequestOptions {
+  trait HttpsRequestOptions
+    extends StObject
+       with RequestOptions {
     
-    var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.native
+    var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.undefined
     
-    var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.native
+    var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.undefined
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
     var createConnection: js.UndefOr[
         js.Function2[
-          /* options */ ClientRequestArgs, 
+          /* options */ this.type, 
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | String] = js.native
+    var defaultPort: js.UndefOr[Double | String] = js.undefined
     
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var secureEndpoint: `true` = js.native
+    var secureEndpoint: `true`
     
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object HttpsRequestOptions {
     
     @scala.inline
-    def apply(port: Double, secureEndpoint: `true`): HttpsRequestOptions = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
+    def apply(port: Double): HttpsRequestOptions = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = true)
       __obj.asInstanceOf[HttpsRequestOptions]
     }
     
@@ -522,7 +520,7 @@ object mod {
       
       @scala.inline
       def setCreateConnection(
-        value: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (HttpsRequestOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -757,14 +755,14 @@ object mod {
   object RequestOptions {
     
     @scala.inline
-    def HttpRequestOptions(port: Double, secureEndpoint: `false`): typings.agentBase.mod.HttpRequestOptions = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
+    def HttpRequestOptions(port: Double): typings.agentBase.mod.HttpRequestOptions = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = false)
       __obj.asInstanceOf[typings.agentBase.mod.HttpRequestOptions]
     }
     
     @scala.inline
-    def HttpsRequestOptions(port: Double, secureEndpoint: `true`): typings.agentBase.mod.HttpsRequestOptions = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
+    def HttpsRequestOptions(port: Double): typings.agentBase.mod.HttpsRequestOptions = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], secureEndpoint = true)
       __obj.asInstanceOf[typings.agentBase.mod.HttpsRequestOptions]
     }
   }

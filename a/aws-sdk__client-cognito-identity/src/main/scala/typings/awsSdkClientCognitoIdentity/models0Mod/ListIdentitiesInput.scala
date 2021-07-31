@@ -2,32 +2,30 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentitiesInput extends StObject {
   
   /**
     * <p>An optional boolean parameter that allows you to hide disabled identities. If
     *          omitted, the ListIdentities API will include disabled identities in the response.</p>
     */
-  var HideDisabled: js.UndefOr[Boolean] = js.native
+  var HideDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The maximum number of identities to return.</p>
     */
-  var MaxResults: js.UndefOr[Double] = js.native
+  var MaxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * <p>A pagination token.</p>
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListIdentitiesInput {
   
@@ -37,9 +35,12 @@ object ListIdentitiesInput {
     __obj.asInstanceOf[ListIdentitiesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentitiesInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentitiesInput")
   @js.native
-  def filterSensitiveLog(obj: ListIdentitiesInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ListIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ListIdentitiesInputMutableBuilder[Self <: ListIdentitiesInput] (val x: Self) extends AnyVal {

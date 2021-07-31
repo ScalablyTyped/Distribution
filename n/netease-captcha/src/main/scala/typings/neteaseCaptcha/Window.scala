@@ -6,13 +6,11 @@ import typings.neteaseCaptcha.NeteaseCaptcha.onError
 import typings.neteaseCaptcha.NeteaseCaptcha.onLoad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var initNECaptcha: js.UndefOr[InitFunction] = js.native
+  var initNECaptcha: js.UndefOr[InitFunction] = js.undefined
 }
 object Window {
   

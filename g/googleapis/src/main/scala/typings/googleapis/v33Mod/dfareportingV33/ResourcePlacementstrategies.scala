@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Placementstrategies")
@@ -31,7 +30,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlacementstrategiesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlacementstrategiesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def get(callback: BodyResponseCallback[SchemaPlacementStrategy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def get(params: ParamsResourcePlacementstrategiesGet): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def get(
     params: ParamsResourcePlacementstrategiesGet,
@@ -94,7 +93,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def insert(callback: BodyResponseCallback[SchemaPlacementStrategy]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def insert(params: ParamsResourcePlacementstrategiesInsert): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def insert(
     params: ParamsResourcePlacementstrategiesInsert,
@@ -133,7 +132,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlacementStrategiesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlacementStrategiesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementStrategiesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementStrategiesListResponse] = js.native
   def list(params: ParamsResourcePlacementstrategiesList): GaxiosPromise[SchemaPlacementStrategiesListResponse] = js.native
   def list(
     params: ParamsResourcePlacementstrategiesList,
@@ -168,7 +167,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def patch(callback: BodyResponseCallback[SchemaPlacementStrategy]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def patch(params: ParamsResourcePlacementstrategiesPatch): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def patch(
     params: ParamsResourcePlacementstrategiesPatch,
@@ -201,7 +200,7 @@ class ResourcePlacementstrategies protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def update(callback: BodyResponseCallback[SchemaPlacementStrategy]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def update(params: ParamsResourcePlacementstrategiesUpdate): GaxiosPromise[SchemaPlacementStrategy] = js.native
   def update(
     params: ParamsResourcePlacementstrategiesUpdate,

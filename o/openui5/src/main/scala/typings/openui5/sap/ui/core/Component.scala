@@ -4,11 +4,12 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component extends ManagedObject {
+trait Component
+  extends StObject
+     with ManagedObject {
   
   /**
     * Cleans up the Component instance before destruction.Applications must not call this hook method
@@ -125,7 +126,7 @@ trait Component extends ManagedObject {
     * @param sLocalServiceAlias Local service alias as defined in the manifest.json
     * @returns Promise which will be resolved with the Service interface
     */
-  def getService(sLocalServiceAlias: String): JQueryPromise[_] = js.native
+  def getService(sLocalServiceAlias: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Initializes the Component instance after creation.Applications must not call this hook method

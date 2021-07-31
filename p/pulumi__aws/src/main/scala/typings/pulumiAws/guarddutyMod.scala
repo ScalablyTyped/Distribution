@@ -26,10 +26,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object guarddutyMod {
+  
+  @JSImport("@pulumi/aws/guardduty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/guardduty", "Detector")
   @js.native
@@ -44,11 +47,15 @@ object guarddutyMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DetectorArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DetectorArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Detector {
+    
+    @JSImport("@pulumi/aws/guardduty", "Detector")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Detector resource's state with the given name, ID, and optional extra
@@ -59,26 +66,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.detectorMod.Detector = js.native
-    @JSImport("@pulumi/aws/guardduty", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.detectorMod.Detector = js.native
-    @JSImport("@pulumi/aws/guardduty", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DetectorState): typings.pulumiAws.detectorMod.Detector = js.native
-    @JSImport("@pulumi/aws/guardduty", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DetectorState, opts: CustomResourceOptions): typings.pulumiAws.detectorMod.Detector = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.detectorMod.Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.detectorMod.Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.detectorMod.Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.detectorMod.Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DetectorState): typings.pulumiAws.detectorMod.Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.detectorMod.Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DetectorState, opts: CustomResourceOptions): typings.pulumiAws.detectorMod.Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.detectorMod.Detector]
     
     /**
       * Returns true if the given object is an instance of Detector.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "Detector.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "Filter")
@@ -98,6 +100,10 @@ object guarddutyMod {
   /* static members */
   object Filter {
     
+    @JSImport("@pulumi/aws/guardduty", "Filter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Filter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -107,26 +113,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.filterMod.Filter = js.native
-    @JSImport("@pulumi/aws/guardduty", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.filterMod.Filter = js.native
-    @JSImport("@pulumi/aws/guardduty", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FilterState): typings.pulumiAws.filterMod.Filter = js.native
-    @JSImport("@pulumi/aws/guardduty", "Filter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): typings.pulumiAws.filterMod.Filter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.filterMod.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.filterMod.Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.filterMod.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.filterMod.Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FilterState): typings.pulumiAws.filterMod.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.filterMod.Filter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): typings.pulumiAws.filterMod.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.filterMod.Filter]
     
     /**
       * Returns true if the given object is an instance of Filter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "Filter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "IPSet")
@@ -146,6 +147,10 @@ object guarddutyMod {
   /* static members */
   object IPSet {
     
+    @JSImport("@pulumi/aws/guardduty", "IPSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IPSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -155,26 +160,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "IPSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ipsetMod.IPSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "IPSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ipsetMod.IPSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "IPSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IPSetState): typings.pulumiAws.ipsetMod.IPSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "IPSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IPSetState, opts: CustomResourceOptions): typings.pulumiAws.ipsetMod.IPSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ipsetMod.IPSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipsetMod.IPSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ipsetMod.IPSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipsetMod.IPSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IPSetState): typings.pulumiAws.ipsetMod.IPSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipsetMod.IPSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IPSetState, opts: CustomResourceOptions): typings.pulumiAws.ipsetMod.IPSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ipsetMod.IPSet]
     
     /**
       * Returns true if the given object is an instance of IPSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "IPSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/ipset.IPSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/ipset.IPSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/ipset.IPSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "InviteAccepter")
@@ -194,6 +194,10 @@ object guarddutyMod {
   /* static members */
   object InviteAccepter {
     
+    @JSImport("@pulumi/aws/guardduty", "InviteAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InviteAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -203,26 +207,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.inviteAccepterMod.InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.inviteAccepterMod.InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InviteAccepterState): typings.pulumiAws.inviteAccepterMod.InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): typings.pulumiAws.inviteAccepterMod.InviteAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.inviteAccepterMod.InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inviteAccepterMod.InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.inviteAccepterMod.InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inviteAccepterMod.InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InviteAccepterState): typings.pulumiAws.inviteAccepterMod.InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inviteAccepterMod.InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): typings.pulumiAws.inviteAccepterMod.InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.inviteAccepterMod.InviteAccepter]
     
     /**
       * Returns true if the given object is an instance of InviteAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "InviteAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "Member")
@@ -242,6 +241,10 @@ object guarddutyMod {
   /* static members */
   object Member {
     
+    @JSImport("@pulumi/aws/guardduty", "Member")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Member resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -251,26 +254,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.memberMod.Member = js.native
-    @JSImport("@pulumi/aws/guardduty", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.memberMod.Member = js.native
-    @JSImport("@pulumi/aws/guardduty", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MemberState): typings.pulumiAws.memberMod.Member = js.native
-    @JSImport("@pulumi/aws/guardduty", "Member.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): typings.pulumiAws.memberMod.Member = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.memberMod.Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.memberMod.Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.memberMod.Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.memberMod.Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MemberState): typings.pulumiAws.memberMod.Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.memberMod.Member]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): typings.pulumiAws.memberMod.Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.memberMod.Member]
     
     /**
       * Returns true if the given object is an instance of Member.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "Member.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount")
@@ -290,6 +288,10 @@ object guarddutyMod {
   /* static members */
   object OrganizationAdminAccount {
     
+    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationAdminAccount resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -299,26 +301,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationAdminAccountMod.OrganizationAdminAccount]
     
     /**
       * Returns true if the given object is an instance of OrganizationAdminAccount.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "OrganizationAdminAccount.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration")
@@ -338,6 +335,10 @@ object guarddutyMod {
   /* static members */
   object OrganizationConfiguration {
     
+    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -347,26 +348,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationConfigurationState): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.organizationConfigurationMod.OrganizationConfiguration]
     
     /**
       * Returns true if the given object is an instance of OrganizationConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "OrganizationConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "PublishingDestination")
@@ -386,6 +382,10 @@ object guarddutyMod {
   /* static members */
   object PublishingDestination {
     
+    @JSImport("@pulumi/aws/guardduty", "PublishingDestination")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PublishingDestination resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -395,26 +395,21 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "PublishingDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.publishingDestinationMod.PublishingDestination = js.native
-    @JSImport("@pulumi/aws/guardduty", "PublishingDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publishingDestinationMod.PublishingDestination = js.native
-    @JSImport("@pulumi/aws/guardduty", "PublishingDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublishingDestinationState): typings.pulumiAws.publishingDestinationMod.PublishingDestination = js.native
-    @JSImport("@pulumi/aws/guardduty", "PublishingDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublishingDestinationState, opts: CustomResourceOptions): typings.pulumiAws.publishingDestinationMod.PublishingDestination = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.publishingDestinationMod.PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publishingDestinationMod.PublishingDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.publishingDestinationMod.PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publishingDestinationMod.PublishingDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublishingDestinationState): typings.pulumiAws.publishingDestinationMod.PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publishingDestinationMod.PublishingDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublishingDestinationState, opts: CustomResourceOptions): typings.pulumiAws.publishingDestinationMod.PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publishingDestinationMod.PublishingDestination]
     
     /**
       * Returns true if the given object is an instance of PublishingDestination.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "PublishingDestination.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean]
   }
   
   @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet")
@@ -434,6 +429,10 @@ object guarddutyMod {
   /* static members */
   object ThreatIntelSet {
     
+    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ThreatIntelSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -443,38 +442,29 @@ object guarddutyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThreatIntelSetState): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = js.native
-    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ThreatIntelSetState, opts: CustomResourceOptions): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.threatIntelSetMod.ThreatIntelSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.threatIntelSetMod.ThreatIntelSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThreatIntelSetState): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.threatIntelSetMod.ThreatIntelSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ThreatIntelSetState, opts: CustomResourceOptions): typings.pulumiAws.threatIntelSetMod.ThreatIntelSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.threatIntelSetMod.ThreatIntelSet]
     
     /**
       * Returns true if the given object is an instance of ThreatIntelSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/threatIntelSet.ThreatIntelSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/threatIntelSet.ThreatIntelSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/threatIntelSet.ThreatIntelSet */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/guardduty", "getDetector")
-  @js.native
-  def getDetector(): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty", "getDetector")
-  @js.native
-  def getDetector(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty", "getDetector")
-  @js.native
-  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = js.native
-  @JSImport("@pulumi/aws/guardduty", "getDetector")
-  @js.native
-  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = js.native
+  @scala.inline
+  def getDetector(): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")().asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: Unit, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDetectorResult]]
+  @scala.inline
+  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
 }

@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Select codes/concepts by their properties (including relationships)
   */
-@js.native
-trait ValueSetComposeIncludeFilter extends BackboneElement {
+trait ValueSetComposeIncludeFilter
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'op'.
     */
-  var _op: js.UndefOr[Element] = js.native
+  var _op: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'property'.
     */
-  var _property: js.UndefOr[Element] = js.native
+  var _property: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * = | is-a | descendent-of | is-not-a | regex | in | not-in | generalizes | exists
     */
-  var op: code = js.native
+  var op: code
   
   /**
     * A property defined by the code system
     */
-  var property: code = js.native
+  var property: code
   
   /**
     * Code from the system, or regex criteria, or boolean value for exists
     */
-  var value: code = js.native
+  var value: code
 }
 object ValueSetComposeIncludeFilter {
   

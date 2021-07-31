@@ -2,29 +2,27 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemControl extends StObject {
   
-  var clearButton: String = js.native
+  var clearButton: String
   
-  var image: String = js.native
+  var image: String
   
-  var item: String = js.native
+  var item: String
   
-  var itemChecked: String = js.native
+  var itemChecked: String
   
-  var itemControl: String = js.native
+  var itemControl: String
   
-  var itemInline: String = js.native
+  var itemInline: String
   
-  var itemText: String = js.native
+  var itemText: String
   
-  var label: String = js.native
+  var label: String
   
-  var root: String = js.native
+  var root: String
 }
 object ItemControl {
   

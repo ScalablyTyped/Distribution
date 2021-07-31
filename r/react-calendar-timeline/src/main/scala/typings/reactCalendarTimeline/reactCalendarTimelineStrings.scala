@@ -3,7 +3,6 @@ package typings.reactCalendarTimeline
 import typings.reactCalendarTimeline.mod.Unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactCalendarTimelineStrings {
@@ -14,12 +13,16 @@ object reactCalendarTimelineStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait day extends Unit
+  sealed trait day
+    extends StObject
+       with Unit
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait hour extends Unit
+  sealed trait hour
+    extends StObject
+       with Unit
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
@@ -29,12 +32,16 @@ object reactCalendarTimelineStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait minute extends Unit
+  sealed trait minute
+    extends StObject
+       with Unit
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait month extends Unit
+  sealed trait month
+    extends StObject
+       with Unit
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -59,17 +66,23 @@ object reactCalendarTimelineStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait second extends Unit
+  sealed trait second
+    extends StObject
+       with Unit
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   
   @js.native
-  sealed trait week extends Unit
+  sealed trait week
+    extends StObject
+       with Unit
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait year extends Unit
+  sealed trait year
+    extends StObject
+       with Unit
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

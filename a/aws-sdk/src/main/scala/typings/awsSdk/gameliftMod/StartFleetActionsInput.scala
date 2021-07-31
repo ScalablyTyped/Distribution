@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFleetActionsInput extends StObject {
   
   /**
     * List of actions to restart on the fleet.
     */
-  var Actions: FleetActionList = js.native
+  var Actions: FleetActionList
   
   /**
     * A unique identifier for a fleet to start actions on. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
 }
 object StartFleetActionsInput {
   

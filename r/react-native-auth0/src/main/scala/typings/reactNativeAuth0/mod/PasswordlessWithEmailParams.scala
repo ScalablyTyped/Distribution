@@ -4,17 +4,15 @@ import typings.reactNativeAuth0.reactNativeAuth0Strings.code
 import typings.reactNativeAuth0.reactNativeAuth0Strings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordlessWithEmailParams extends StObject {
   
-  var authParams: js.UndefOr[AuthParams] = js.native
+  var authParams: js.UndefOr[AuthParams] = js.undefined
   
-  var email: String = js.native
+  var email: String
   
-  var send: js.UndefOr[link | code] = js.native
+  var send: js.UndefOr[link | code] = js.undefined
 }
 object PasswordlessWithEmailParams {
   

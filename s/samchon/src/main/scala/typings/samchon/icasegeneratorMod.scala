@@ -2,12 +2,10 @@ package typings.samchon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icasegeneratorMod {
   
-  @js.native
   trait ICaseGenerator extends StObject {
     
     /**
@@ -16,14 +14,14 @@ object icasegeneratorMod {
       * @param index Index number
       * @return The row of the index'th in combined permuation case
       */
-    def at(index: Double): js.Array[Double] = js.native
+    def at(index: Double): js.Array[Double]
     
     /**
       * Get size of all cases.
       *
       * @return Get a number of the all cases.
       */
-    def size(): Double = js.native
+    def size(): Double
   }
   object ICaseGenerator {
     

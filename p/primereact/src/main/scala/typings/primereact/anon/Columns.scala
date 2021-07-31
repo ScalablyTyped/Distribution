@@ -2,19 +2,17 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  var columns: js.Any = js.native
+  var columns: js.Any
   
-  var dragIndex: Double = js.native
+  var dragIndex: Double
   
-  var dropIndex: Double = js.native
+  var dropIndex: Double
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
 }
 object Columns {
   

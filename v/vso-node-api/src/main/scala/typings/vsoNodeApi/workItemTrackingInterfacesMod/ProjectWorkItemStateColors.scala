@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectWorkItemStateColors extends StObject {
   
   /**
     * Project name
     */
-  var projectName: String = js.native
+  var projectName: String
   
   /**
     * State colors for all work item type in a project
     */
-  var workItemTypeStateColors: js.Array[WorkItemTypeStateColors] = js.native
+  var workItemTypeStateColors: js.Array[WorkItemTypeStateColors]
 }
 object ProjectWorkItemStateColors {
   

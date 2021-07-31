@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends StObject {
   
   /**
     * Describes an application's checkpointing configuration.
     */
-  var checkpointConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration = js.native
+  var checkpointConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
   
   /**
     * Describes configuration parameters for CloudWatch logging for an application.
     */
-  var monitoringConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration = js.native
+  var monitoringConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
   
   /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
     */
-  var parallelismConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration = js.native
+  var parallelismConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfiguration {
   

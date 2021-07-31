@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobQueueResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the job queue.
     */
-  var jobQueueArn: js.UndefOr[String] = js.native
+  var jobQueueArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the job queue.
     */
-  var jobQueueName: js.UndefOr[String] = js.native
+  var jobQueueName: js.UndefOr[String] = js.undefined
 }
 object UpdateJobQueueResponse {
   

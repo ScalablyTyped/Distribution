@@ -2,58 +2,56 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCorrect extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var CorrectCapsLock: Boolean = js.native
+  var CorrectCapsLock: Boolean
   
-  var CorrectDays: Boolean = js.native
+  var CorrectDays: Boolean
   
-  var CorrectHangulAndAlphabet: Boolean = js.native
+  var CorrectHangulAndAlphabet: Boolean
   
-  var CorrectInitialCaps: Boolean = js.native
+  var CorrectInitialCaps: Boolean
   
-  var CorrectKeyboardSetting: Boolean = js.native
+  var CorrectKeyboardSetting: Boolean
   
-  var CorrectSentenceCaps: Boolean = js.native
+  var CorrectSentenceCaps: Boolean
   
-  var CorrectTableCells: Boolean = js.native
+  var CorrectTableCells: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DisplayAutoCorrectOptions: Boolean = js.native
+  var DisplayAutoCorrectOptions: Boolean
   
-  val Entries: AutoCorrectEntries = js.native
+  val Entries: AutoCorrectEntries
   
-  var FirstLetterAutoAdd: Boolean = js.native
+  var FirstLetterAutoAdd: Boolean
   
-  val FirstLetterExceptions: typings.activexWord.Word.FirstLetterExceptions = js.native
+  val FirstLetterExceptions: typings.activexWord.Word.FirstLetterExceptions
   
-  var HangulAndAlphabetAutoAdd: Boolean = js.native
+  var HangulAndAlphabetAutoAdd: Boolean
   
-  val HangulAndAlphabetExceptions: typings.activexWord.Word.HangulAndAlphabetExceptions = js.native
+  val HangulAndAlphabetExceptions: typings.activexWord.Word.HangulAndAlphabetExceptions
   
-  var OtherCorrectionsAutoAdd: Boolean = js.native
+  var OtherCorrectionsAutoAdd: Boolean
   
-  val OtherCorrectionsExceptions: typings.activexWord.Word.OtherCorrectionsExceptions = js.native
+  val OtherCorrectionsExceptions: typings.activexWord.Word.OtherCorrectionsExceptions
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReplaceText: Boolean = js.native
+  var ReplaceText: Boolean
   
-  var ReplaceTextFromSpellingChecker: Boolean = js.native
+  var ReplaceTextFromSpellingChecker: Boolean
   
-  var TwoInitialCapsAutoAdd: Boolean = js.native
+  var TwoInitialCapsAutoAdd: Boolean
   
-  val TwoInitialCapsExceptions: typings.activexWord.Word.TwoInitialCapsExceptions = js.native
+  val TwoInitialCapsExceptions: typings.activexWord.Word.TwoInitialCapsExceptions
   
   @JSName("Word.AutoCorrect_typekey")
-  var WordDotAutoCorrect_typekey: AutoCorrect = js.native
+  var WordDotAutoCorrect_typekey: AutoCorrect
 }
 object AutoCorrect {
   

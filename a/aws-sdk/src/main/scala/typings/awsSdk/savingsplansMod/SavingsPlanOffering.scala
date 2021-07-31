@@ -2,66 +2,64 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlanOffering extends StObject {
   
   /**
     * The currency.
     */
-  var currency: js.UndefOr[CurrencyCode] = js.native
+  var currency: js.UndefOr[CurrencyCode] = js.undefined
   
   /**
     * The description.
     */
-  var description: js.UndefOr[SavingsPlanDescription] = js.native
+  var description: js.UndefOr[SavingsPlanDescription] = js.undefined
   
   /**
     * The duration, in seconds.
     */
-  var durationSeconds: js.UndefOr[SavingsPlansDuration] = js.native
+  var durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var offeringId: js.UndefOr[UUID] = js.native
+  var offeringId: js.UndefOr[UUID] = js.undefined
   
   /**
     * The specific AWS operation for the line item in the billing report.
     */
-  var operation: js.UndefOr[SavingsPlanOperation] = js.native
+  var operation: js.UndefOr[SavingsPlanOperation] = js.undefined
   
   /**
     * The payment option.
     */
-  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.native
+  var paymentOption: js.UndefOr[SavingsPlanPaymentOption] = js.undefined
   
   /**
     * The plan type.
     */
-  var planType: js.UndefOr[SavingsPlanType] = js.native
+  var planType: js.UndefOr[SavingsPlanType] = js.undefined
   
   /**
     * The product type.
     */
-  var productTypes: js.UndefOr[SavingsPlanProductTypeList] = js.native
+  var productTypes: js.UndefOr[SavingsPlanProductTypeList] = js.undefined
   
   /**
     * The properties.
     */
-  var properties: js.UndefOr[SavingsPlanOfferingPropertyList] = js.native
+  var properties: js.UndefOr[SavingsPlanOfferingPropertyList] = js.undefined
   
   /**
     * The service.
     */
-  var serviceCode: js.UndefOr[SavingsPlanServiceCode] = js.native
+  var serviceCode: js.UndefOr[SavingsPlanServiceCode] = js.undefined
   
   /**
     * The usage details of the line item in the billing report.
     */
-  var usageType: js.UndefOr[SavingsPlanUsageType] = js.native
+  var usageType: js.UndefOr[SavingsPlanUsageType] = js.undefined
 }
 object SavingsPlanOffering {
   

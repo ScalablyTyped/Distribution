@@ -2,23 +2,21 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioCodecSettings extends StObject {
   
-  var AacSettings: js.UndefOr[typings.awsSdk.medialiveMod.AacSettings] = js.native
+  var AacSettings: js.UndefOr[typings.awsSdk.medialiveMod.AacSettings] = js.undefined
   
-  var Ac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Ac3Settings] = js.native
+  var Ac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Ac3Settings] = js.undefined
   
-  var Eac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Eac3Settings] = js.native
+  var Eac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Eac3Settings] = js.undefined
   
-  var Mp2Settings: js.UndefOr[typings.awsSdk.medialiveMod.Mp2Settings] = js.native
+  var Mp2Settings: js.UndefOr[typings.awsSdk.medialiveMod.Mp2Settings] = js.undefined
   
-  var PassThroughSettings: js.UndefOr[typings.awsSdk.medialiveMod.PassThroughSettings] = js.native
+  var PassThroughSettings: js.UndefOr[typings.awsSdk.medialiveMod.PassThroughSettings] = js.undefined
   
-  var WavSettings: js.UndefOr[typings.awsSdk.medialiveMod.WavSettings] = js.native
+  var WavSettings: js.UndefOr[typings.awsSdk.medialiveMod.WavSettings] = js.undefined
 }
 object AudioCodecSettings {
   

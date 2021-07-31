@@ -3,7 +3,6 @@ package typings.randomNumber
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,14 +18,13 @@ object mod extends Shortcut {
     Double
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var integer: Boolean = js.native
+    var integer: Boolean
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object Options {
     
@@ -63,14 +61,13 @@ object mod extends Shortcut {
     def generator(options: UnparsedOptions): Generator = js.native
   }
   
-  @js.native
   trait UnparsedOptions extends StObject {
     
-    var integer: js.UndefOr[Boolean] = js.native
+    var integer: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object UnparsedOptions {
     

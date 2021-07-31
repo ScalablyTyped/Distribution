@@ -6,7 +6,6 @@ import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.commandMod.Executor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Actions")

@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -78,19 +77,19 @@ trait appFrameworkCollection extends StObject {
     * @title $().bind(event,callback)
     */
   def bind(eventHash: js.Object): appFrameworkCollection = js.native
-  def bind(eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def bind(eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     custom events since people want to do $().blur instead of $().bind("blur")
     */
   def blur(): appFrameworkCollection = js.native
-  def blur(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def blur(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     custom events since people want to do $().change instead of $().bind("change")
     */
   def change(): appFrameworkCollection = js.native
-  def change(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def change(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Returns the child nodes of the elements based off the selector
@@ -110,7 +109,7 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().click instead of $().bind("click")
     */
   def click(): appFrameworkCollection = js.native
-  def click(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def click(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   def clone(deep: Boolean): appFrameworkCollection = js.native
   
@@ -189,7 +188,7 @@ trait appFrameworkCollection extends StObject {
     * @title $().delegate(selector,event,callback)
     */
   def delegate(selector: js.Any, eventHash: js.Object): appFrameworkCollection = js.native
-  def delegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def delegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Iterates through all elements and applys a callback function
@@ -200,7 +199,7 @@ trait appFrameworkCollection extends StObject {
     * @return {Object} an appframework object
     * @title $().each(function)
     */
-  def each(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): appFrameworkCollection = js.native
+  def each(fn: js.Function2[/* index */ Double, /* item */ js.Any, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Sets the innerHTML of all elements to an empty string
@@ -239,7 +238,7 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().error instead of $().bind("error")
     */
   def error(): appFrameworkCollection = js.native
-  def error(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def error(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Filters elements based off the selector
@@ -272,9 +271,9 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().focus instead of $().bind("focus")
     */
   def focus(): appFrameworkCollection = js.native
-  def focus(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def focus(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
-  def forEach(fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): Unit = js.native
+  def forEach(fn: js.Function2[/* item */ js.Any, /* index */ Double, js.Any]): Unit = js.native
   
   /**
     * Returns the raw DOM element.
@@ -390,19 +389,19 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().keydown instead of $().bind("keydown")
     */
   def keydown(): appFrameworkCollection = js.native
-  def keydown(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def keydown(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     custom events since people want to do $().keypress instead of $().bind("keypress")
     */
   def keypress(): appFrameworkCollection = js.native
-  def keypress(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def keypress(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     custom events since people want to do $().keyup instead of $().bind("keyup")
     */
   def keyup(): appFrameworkCollection = js.native
-  def keyup(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def keyup(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   var length: Double = js.native
   
@@ -410,7 +409,7 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().load instead of $().bind("load")
     */
   def load(): appFrameworkCollection = js.native
-  def load(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def load(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * This is a wrapper to $.map on the selected elements
@@ -421,7 +420,7 @@ trait appFrameworkCollection extends StObject {
     * @return {Object} an appframework object
     * @title $().map(function)
     */
-  def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): appFrameworkCollection = js.native
+  def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Basically the reverse of filter.  Return all elements that do NOT match the selector
@@ -452,8 +451,8 @@ trait appFrameworkCollection extends StObject {
     */
   def off(eventHash: js.Object): appFrameworkCollection = js.native
   def off(eventHash: js.Object, selector: js.Any): appFrameworkCollection = js.native
-  def off(eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
-  def off(eventName: String, selector: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def off(eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
+  def off(eventName: String, selector: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Returns the offset of the element, including traversing up the tree
@@ -479,8 +478,8 @@ trait appFrameworkCollection extends StObject {
     */
   def on(eventHash: js.Object): appFrameworkCollection = js.native
   def on(eventHash: js.Object, selector: js.Any): appFrameworkCollection = js.native
-  def on(eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
-  def on(eventName: String, selector: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def on(eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
+  def on(eventName: String, selector: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Binds an event to each element in the collection that will only execute once.  When it executes, we remove the event listener then right away so it no longer happens
@@ -493,7 +492,7 @@ trait appFrameworkCollection extends StObject {
     * @title $().one(event,callback);
     */
   def one(eventHash: js.Object): appFrameworkCollection = js.native
-  def one(eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def one(eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Returns the parent nodes of the elements based off the selector
@@ -611,7 +610,7 @@ trait appFrameworkCollection extends StObject {
     * @title $().remove(selector)
     */
   def remove(): appFrameworkCollection = js.native
-  def remove(elements: js.Array[_]): appFrameworkCollection = js.native
+  def remove(elements: js.Array[js.Any]): appFrameworkCollection = js.native
   def remove(elements: appFrameworkCollection): appFrameworkCollection = js.native
   def remove(element: HTMLElement): appFrameworkCollection = js.native
   def remove(selector: String): appFrameworkCollection = js.native
@@ -666,13 +665,13 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().resize instead of $().bind("resize")
     */
   def resize(): appFrameworkCollection = js.native
-  def resize(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def resize(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     custom events since people want to do $().select instead of $().bind("select")
     */
   def select(): appFrameworkCollection = js.native
-  def select(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def select(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Serailizes a form into a query string
@@ -726,7 +725,7 @@ trait appFrameworkCollection extends StObject {
     custom events since people want to do $().submit instead of $().bind("submit")
     */
   def submit(): appFrameworkCollection = js.native
-  def submit(fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def submit(fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Gets or sets the innerText for the collection.
@@ -797,7 +796,7 @@ trait appFrameworkCollection extends StObject {
     */
   def unbind(eventHash: js.Object): appFrameworkCollection = js.native
   def unbind(eventName: String): appFrameworkCollection = js.native
-  def unbind(eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def unbind(eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Unbinds events that were registered through delegate.  It acts upon the selector and event.  If a callback is specified, it will remove that one, otherwise it removes all of them.
@@ -812,7 +811,7 @@ trait appFrameworkCollection extends StObject {
     * @title $().undelegate(selector,event,[callback]);
     */
   def undelegate(selector: js.Any, eventHash: js.Object): appFrameworkCollection = js.native
-  def undelegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event, _]): appFrameworkCollection = js.native
+  def undelegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event, js.Any]): appFrameworkCollection = js.native
   
   /**
     * Gets or sets an elements value

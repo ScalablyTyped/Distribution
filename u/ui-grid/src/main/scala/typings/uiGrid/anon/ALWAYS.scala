@@ -2,17 +2,15 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALWAYS extends StObject {
   
-  var ALWAYS: Double = js.native
+  var ALWAYS: Double
   
-  var NEVER: Double = js.native
+  var NEVER: Double
   
-  var WHEN_NEEDED: Double = js.native
+  var WHEN_NEEDED: Double
 }
 object ALWAYS {
   

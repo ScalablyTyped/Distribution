@@ -4,6 +4,7 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoPolling.anon.Cancel
 import typings.luminoPolling.anon.PartialFrequency
 import typings.luminoPolling.mod.IPoll
+import typings.luminoPolling.mod.IPoll.Frequency
 import typings.luminoPolling.mod.IPoll.State
 import typings.luminoPolling.pollMod.Poll.IOptions
 import typings.luminoPolling.pollMod.Poll.Standby
@@ -11,7 +12,6 @@ import typings.luminoSignaling.mod.ISignal
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pollMod {
@@ -19,7 +19,8 @@ object pollMod {
   @JSImport("@lumino/polling/types/poll", "Poll")
   @js.native
   class Poll[T, U, V /* <: String */] protected ()
-    extends IObservableDisposable
+    extends StObject
+       with IObservableDisposable
        with IPoll[T, U, V] {
     /**
       * Instantiate a new poll with exponential backoff in case of failure.
@@ -50,16 +51,42 @@ object pollMod {
     var _timeout: js.Any = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * A signal emitted when the poll is disposed.
       */
     /* InferMemberOverrides */
     override val disposed: ISignal[this.type, Unit] = js.native
     
     /**
+      * The polling frequency data.
+      */
+    /* CompleteClass */
+    override val frequency: Frequency = js.native
+    
+    /**
       * Whether the poll is disposed.
       */
     /* InferMemberOverrides */
     override val isDisposed: Boolean = js.native
+    
+    /**
+      * The name of the poll.
+      */
+    /* CompleteClass */
+    override val name: String = js.native
     
     /**
       * Refreshes the poll. Schedules `refreshed` tick if necessary.
@@ -87,7 +114,7 @@ object pollMod {
       * to allow poll instances to be composed into classes that schedule ticks.
       */
     def schedule(): js.Promise[Unit] = js.native
-    def schedule(next: Partial[(State[T, U, V]) with (Cancel[T, U, V])]): js.Promise[Unit] = js.native
+    def schedule(next: Partial[(State[T, U, V]) & (Cancel[T, U, V])]): js.Promise[Unit] = js.native
     
     /**
       * Indicates when the poll switches to standby.
@@ -102,6 +129,12 @@ object pollMod {
     def start(): js.Promise[Unit] = js.native
     
     /**
+      * The poll state, which is the content of the currently-scheduled poll tick.
+      */
+    /* CompleteClass */
+    override val state: State[T, U, V] = js.native
+    
+    /**
       * Stops the poll. Schedules `stopped` tick if necessary.
       *
       * @returns A promise that resolves after tick is scheduled and never rejects.
@@ -109,11 +142,26 @@ object pollMod {
     def stop(): js.Promise[Unit] = js.native
     
     /**
+      * A promise that resolves when the currently-scheduled tick completes.
+      *
+      * #### Notes
+      * Usually this will resolve after `state.interval` milliseconds from
+      * `state.timestamp`. It can resolve earlier if the user starts or refreshes the
+      * poll, etc.
+      */
+    /* CompleteClass */
+    override val tick: js.Promise[IPoll[T, U, V]] = js.native
+    /**
       * A promise that resolves when the poll next ticks.
       */
     @JSName("tick")
     val tick_Poll: js.Promise[this.type] = js.native
     
+    /**
+      * A signal emitted when the poll state changes, i.e., a new tick is scheduled.
+      */
+    /* CompleteClass */
+    override val ticked: ISignal[IPoll[T, U, V], State[T, U, V]] = js.native
     /**
       * A signal emitted when the poll ticks and fires off a new request.
       */
@@ -166,34 +214,33 @@ object pollMod {
       *
       * @typeparam V - The type to extend the phases supported by a poll.
       */
-    @js.native
     trait IOptions[T, U, V /* <: String */] extends StObject {
       
       /**
         * Whether to begin polling automatically; defaults to `true`.
         */
-      var auto: js.UndefOr[Boolean] = js.native
+      var auto: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A factory function that is passed a poll tick and returns a poll promise.
         */
-      def factory(state: State[T, U, V]): js.Promise[T] = js.native
+      def factory(state: State[T, U, V]): js.Promise[T]
       /**
         * A factory function that is passed a poll tick and returns a poll promise.
         */
       @JSName("factory")
-      var factory_Original: Factory[T, U, V] = js.native
+      var factory_Original: Factory[T, U, V]
       
       /**
         * The polling frequency parameters.
         */
-      var frequency: js.UndefOr[PartialFrequency] = js.native
+      var frequency: js.UndefOr[PartialFrequency] = js.undefined
       
       /**
         * The name of the poll.
         * Defaults to `'unknown'`.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Indicates when the poll switches to standby or a function that returns
@@ -205,7 +252,49 @@ object pollMod {
         * idempotent and safe to call multiple times. It will be called before each
         * tick execution, but may be called by clients as well.
         */
-      var standby: js.UndefOr[Standby | (js.Function0[Boolean | Standby])] = js.native
+      var standby: js.UndefOr[Standby | (js.Function0[Boolean | Standby])] = js.undefined
+    }
+    object IOptions {
+      
+      @scala.inline
+      def apply[T, U, V /* <: String */](factory: /* state */ State[T, U, V] => js.Promise[T]): IOptions[T, U, V] = {
+        val __obj = js.Dynamic.literal(factory = js.Any.fromFunction1(factory))
+        __obj.asInstanceOf[IOptions[T, U, V]]
+      }
+      
+      @scala.inline
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IOptions[T, U, V])) extends AnyVal {
+        
+        @scala.inline
+        def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+        
+        @scala.inline
+        def setFactory(value: /* state */ State[T, U, V] => js.Promise[T]): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setFrequency(value: PartialFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+        
+        @scala.inline
+        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        
+        @scala.inline
+        def setStandby(value: Standby | (js.Function0[Boolean | Standby])): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setStandbyFunction0(value: () => Boolean | Standby): Self = StObject.set(x, "standby", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
+      }
     }
     
     /**

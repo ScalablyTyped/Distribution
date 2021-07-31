@@ -2,17 +2,15 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRequest extends StObject {
   
-  var op: String = js.native
+  var op: String
   
-  var path: String = js.native
+  var path: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object UpdateRequest {
   

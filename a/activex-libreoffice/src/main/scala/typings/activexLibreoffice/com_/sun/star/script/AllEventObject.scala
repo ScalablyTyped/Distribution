@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,30 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Usually the original event is the first argument in the array of arguments.
   */
-@js.native
-trait AllEventObject extends EventObject {
+trait AllEventObject
+  extends StObject
+     with EventObject {
   
   /** The arguments of the original method. */
-  var Arguments: SafeArray[_] = js.native
+  var Arguments: SafeArray[js.Any]
   
   /**
     * A helper value for the implementation that can be used arbitrarily.
     *
     * This field reflects the third parameter of the method {@link XAllListenerAdapterService.createAllListerAdapter()} .
     */
-  var Helper: js.Any = js.native
+  var Helper: js.Any
   
   /** contains the type of the original listener. */
-  var ListenerType: `type` = js.native
+  var ListenerType: `type`
   
   /** The original method name on which the event was fired. */
-  var MethodName: String = js.native
+  var MethodName: String
 }
 object AllEventObject {
   
   @scala.inline
   def apply(
-    Arguments: SafeArray[_],
+    Arguments: SafeArray[js.Any],
     Helper: js.Any,
     ListenerType: `type`,
     MethodName: String,
@@ -51,7 +51,7 @@ object AllEventObject {
   implicit class AllEventObjectMutableBuilder[Self <: AllEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArguments(value: SafeArray[_]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])

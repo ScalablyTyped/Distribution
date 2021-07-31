@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPipelinesOutput extends StObject {
   
   /**
     * Indicates whether there are more results that can be obtained by a subsequent call.
     */
-  var hasMoreResults: js.UndefOr[Boolean] = js.native
+  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The starting point for the next page of results. To view the next page of results, call ListPipelinesOutput again with this marker value. If the value is null, there are no more results.
     */
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
   /**
     * The pipeline identifiers. If you require additional information about the pipelines, you can use these identifiers to call DescribePipelines and GetPipelineDefinition.
     */
-  var pipelineIdList: pipelineList = js.native
+  var pipelineIdList: pipelineList
 }
 object ListPipelinesOutput {
   

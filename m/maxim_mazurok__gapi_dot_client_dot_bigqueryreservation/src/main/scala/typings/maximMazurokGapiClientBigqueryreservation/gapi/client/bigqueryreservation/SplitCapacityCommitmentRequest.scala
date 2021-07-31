@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitCapacityCommitmentRequest extends StObject {
   
   /** Number of slots in the capacity commitment after the split. */
-  var slotCount: js.UndefOr[String] = js.native
+  var slotCount: js.UndefOr[String] = js.undefined
 }
 object SplitCapacityCommitmentRequest {
   

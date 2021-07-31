@@ -2,22 +2,20 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinOptions extends StObject {
   
   /**
     * @deprecated 进房钥匙，若需要权限控制请携带该参数，因某些局限性目前已不建议使用该参数。
     */
-  var privateMapKey: js.UndefOr[String] = js.native
+  var privateMapKey: js.UndefOr[String] = js.undefined
   
   /** 用户角色 */
-  var role: js.UndefOr[Role] = js.native
+  var role: js.UndefOr[Role] = js.undefined
   
   /** 房间号 */
-  var roomId: Double = js.native
+  var roomId: Double
 }
 object JoinOptions {
   

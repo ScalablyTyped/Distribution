@@ -2,22 +2,20 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * <p>The Amazon Resource Name (ARN) of the identity pool that the tags are assigned
     *          to.</p>
     */
-  var ResourceArn: js.UndefOr[String] = js.native
+  var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The keys of the tags to remove from the user pool.</p>
     */
-  var TagKeys: js.UndefOr[js.Array[String]] = js.native
+  var TagKeys: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UntagResourceInput {
   
@@ -27,9 +25,12 @@ object UntagResourceInput {
     __obj.asInstanceOf[UntagResourceInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "UntagResourceInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "UntagResourceInput")
   @js.native
-  def filterSensitiveLog(obj: UntagResourceInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: UntagResourceInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class UntagResourceInputMutableBuilder[Self <: UntagResourceInput] (val x: Self) extends AnyVal {

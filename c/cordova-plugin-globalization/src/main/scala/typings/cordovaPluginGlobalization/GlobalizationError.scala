@@ -2,11 +2,9 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object representing a error from the Globalization API. */
-@js.native
 trait GlobalizationError extends StObject {
   
   /** One of the following codes representing the error type:
@@ -15,10 +13,10 @@ trait GlobalizationError extends StObject {
     * GlobalizationError.PARSING_ERROR: 2
     * GlobalizationError.PATTERN_ERROR: 3
     */
-  var code: Double = js.native
+  var code: Double
   
   /** A text message that includes the error's explanation and/or details */
-  var message: String = js.native
+  var message: String
 }
 object GlobalizationError {
   

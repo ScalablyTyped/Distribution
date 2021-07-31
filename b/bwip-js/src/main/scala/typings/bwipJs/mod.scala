@@ -19,7 +19,6 @@ import typings.std.Error
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,8 +29,7 @@ object mod {
     * @param opts Options to use for rendering
     * @param callback Function to execute when rendering has completed or failed
     */
-  @JSImport("bwip-js", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     canvas: String,
     opts: ToBufferOptions,
@@ -40,9 +38,8 @@ object mod {
       /* canvas */ js.UndefOr[HTMLCanvasElement], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("bwip-js", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     canvas: HTMLCanvasElement,
     opts: ToBufferOptions,
@@ -51,129 +48,126 @@ object mod {
       /* canvas */ js.UndefOr[HTMLCanvasElement], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse, opts: ToBufferOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("bwip-js", JSImport.Namespace)
   @js.native
-  def apply(req: IncomingMessage, res: ServerResponse): Unit = js.native
-  @JSImport("bwip-js", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, res: ServerResponse, opts: ToBufferOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bwip-js", "loadFont")
-  @js.native
-  def loadFont(fontName: String, sizeMulti: Double, fontFile: String): Unit = js.native
+  @scala.inline
+  def loadFont(fontName: String, sizeMulti: Double, fontFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontName.asInstanceOf[js.Any], sizeMulti.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bwip-js", "toBuffer")
-  @js.native
-  def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | Error, /* png */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | Error, /* png */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bwip-js", "toCanvas")
-  @js.native
-  def toCanvas(canvas: String, opts: ToBufferOptions): HTMLCanvasElement = js.native
-  @JSImport("bwip-js", "toCanvas")
-  @js.native
-  def toCanvas(canvas: HTMLCanvasElement, opts: ToBufferOptions): HTMLCanvasElement = js.native
+  @scala.inline
+  def toCanvas(canvas: String, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def toCanvas(canvas: HTMLCanvasElement, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
   
-  @js.native
   trait ToBufferOptions extends StObject {
     
-    var addontextfont: js.UndefOr[String] = js.native
+    var addontextfont: js.UndefOr[String] = js.undefined
     
-    var addontextsize: js.UndefOr[Double] = js.native
+    var addontextsize: js.UndefOr[Double] = js.undefined
     
-    var addontextxoffset: js.UndefOr[Double] = js.native
+    var addontextxoffset: js.UndefOr[Double] = js.undefined
     
-    var addontextyoffset: js.UndefOr[Double] = js.native
+    var addontextyoffset: js.UndefOr[Double] = js.undefined
     
-    var alttext: js.UndefOr[Boolean] = js.native
+    var alttext: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundcolor: js.UndefOr[String] = js.native
+    var backgroundcolor: js.UndefOr[String] = js.undefined
     
-    var barcolor: js.UndefOr[String] = js.native
+    var barcolor: js.UndefOr[String] = js.undefined
     
-    var bcid: String = js.native
+    var bcid: String
     
-    var boraderbottom: js.UndefOr[Double] = js.native
+    var boraderbottom: js.UndefOr[Double] = js.undefined
     
-    var bordercolor: js.UndefOr[String] = js.native
+    var bordercolor: js.UndefOr[String] = js.undefined
     
-    var borderleft: js.UndefOr[Double] = js.native
+    var borderleft: js.UndefOr[Double] = js.undefined
     
-    var borderright: js.UndefOr[Double] = js.native
+    var borderright: js.UndefOr[Double] = js.undefined
     
-    var bordertop: js.UndefOr[Double] = js.native
+    var bordertop: js.UndefOr[Double] = js.undefined
     
-    var borderwidth: js.UndefOr[Double] = js.native
+    var borderwidth: js.UndefOr[Double] = js.undefined
     
-    var guardheight: js.UndefOr[Double] = js.native
+    var guardheight: js.UndefOr[Double] = js.undefined
     
-    var guardleftpos: js.UndefOr[Double] = js.native
+    var guardleftpos: js.UndefOr[Double] = js.undefined
     
-    var guardleftypos: js.UndefOr[Double] = js.native
+    var guardleftypos: js.UndefOr[Double] = js.undefined
     
-    var guardrightpos: js.UndefOr[Double] = js.native
+    var guardrightpos: js.UndefOr[Double] = js.undefined
     
-    var guardrightypos: js.UndefOr[Double] = js.native
+    var guardrightypos: js.UndefOr[Double] = js.undefined
     
-    var guardwhitespace: js.UndefOr[Boolean] = js.native
+    var guardwhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var guardwidth: js.UndefOr[Double] = js.native
+    var guardwidth: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var includecheck: js.UndefOr[Boolean] = js.native
+    var includecheck: js.UndefOr[Boolean] = js.undefined
     
-    var includecheckintext: js.UndefOr[Boolean] = js.native
+    var includecheckintext: js.UndefOr[Boolean] = js.undefined
     
-    var includetext: js.UndefOr[Boolean] = js.native
+    var includetext: js.UndefOr[Boolean] = js.undefined
     
-    var inkspread: js.UndefOr[Double] = js.native
+    var inkspread: js.UndefOr[Double] = js.undefined
     
-    var inkspreadh: js.UndefOr[Double] = js.native
+    var inkspreadh: js.UndefOr[Double] = js.undefined
     
-    var inkspreadv: js.UndefOr[Double] = js.native
+    var inkspreadv: js.UndefOr[Double] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.native
+    var monochrome: js.UndefOr[Boolean] = js.undefined
     
-    var paddingheight: js.UndefOr[Double] = js.native
+    var paddingheight: js.UndefOr[Double] = js.undefined
     
-    var paddingwidth: js.UndefOr[Double] = js.native
+    var paddingwidth: js.UndefOr[Double] = js.undefined
     
-    var parse: js.UndefOr[Boolean] = js.native
+    var parse: js.UndefOr[Boolean] = js.undefined
     
-    var parsefunc: js.UndefOr[Boolean] = js.native
+    var parsefunc: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[N | R | L | I] = js.native
+    var rotate: js.UndefOr[N | R | L | I] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var scaleX: js.UndefOr[Double] = js.native
+    var scaleX: js.UndefOr[Double] = js.undefined
     
-    var scaleY: js.UndefOr[Double] = js.native
+    var scaleY: js.UndefOr[Double] = js.undefined
     
-    var showborder: js.UndefOr[Boolean] = js.native
+    var showborder: js.UndefOr[Boolean] = js.undefined
     
-    var sizelimit: js.UndefOr[Double] = js.native
+    var sizelimit: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var textcolor: js.UndefOr[String] = js.native
+    var textcolor: js.UndefOr[String] = js.undefined
     
-    var textfont: js.UndefOr[String] = js.native
+    var textfont: js.UndefOr[String] = js.undefined
     
-    var textgaps: js.UndefOr[Double] = js.native
+    var textgaps: js.UndefOr[Double] = js.undefined
     
-    var textsize: js.UndefOr[Double] = js.native
+    var textsize: js.UndefOr[Double] = js.undefined
     
-    var textxalign: js.UndefOr[offleft | left | center | right | offright | justify] = js.native
+    var textxalign: js.UndefOr[offleft | left | center | right | offright | justify] = js.undefined
     
-    var textxoffset: js.UndefOr[Double] = js.native
+    var textxoffset: js.UndefOr[Double] = js.undefined
     
-    var textyalign: js.UndefOr[below | center | above] = js.native
+    var textyalign: js.UndefOr[below | center | above] = js.undefined
     
-    var textyoffset: js.UndefOr[Double] = js.native
+    var textyoffset: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ToBufferOptions {
     

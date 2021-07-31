@@ -4,15 +4,15 @@ import typings.react.mod.ButtonHTMLAttributes
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonProps extends ButtonHTMLAttributes[HTMLButtonElement] {
+trait ButtonProps
+  extends StObject
+     with ButtonHTMLAttributes[HTMLButtonElement] {
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var variant: js.UndefOr[String] = js.native
+  var variant: js.UndefOr[String] = js.undefined
 }
 object ButtonProps {
   

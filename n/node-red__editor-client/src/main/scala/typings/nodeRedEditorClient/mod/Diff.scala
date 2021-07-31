@@ -2,23 +2,21 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diff extends StObject {
   
-  def getRemoteDiff(callback: js.Function1[/* diff */ js.Object, Unit]): Unit = js.native
+  def getRemoteDiff(callback: js.Function1[/* diff */ js.Object, Unit]): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def mergeDiff(diff: js.Object): Unit = js.native
+  def mergeDiff(diff: js.Object): Unit
   
-  def showCommitDiff(options: js.Object): Unit = js.native
+  def showCommitDiff(options: js.Object): Unit
   
-  def showRemoteDiff(diff: js.Object): Unit = js.native
+  def showRemoteDiff(diff: js.Object): Unit
   
-  def showUnifiedDiff(options: js.Object): Unit = js.native
+  def showUnifiedDiff(options: js.Object): Unit
 }
 object Diff {
   

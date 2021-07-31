@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebDetectionParams extends StObject {
   
   /** Whether to include results derived from the geo information in the image. */
-  var includeGeoResults: js.UndefOr[Boolean] = js.native
+  var includeGeoResults: js.UndefOr[Boolean] = js.undefined
 }
 object WebDetectionParams {
   

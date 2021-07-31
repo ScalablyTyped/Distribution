@@ -5,7 +5,6 @@ import typings.pubnub.anon.GetAllChannelMetadata
 import typings.pubnub.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,13 +47,13 @@ trait Pubnub extends StObject {
   def createUser(params: UserInputParameters, callback: Callback[GetUserResponse]): Unit = js.native
   
   def decrypt(data: String): js.Any = js.native
-  def decrypt(data: String, customCipherKey: js.UndefOr[scala.Nothing], options: CryptoParameters): js.Any = js.native
   def decrypt(data: String, customCipherKey: String): js.Any = js.native
   def decrypt(data: String, customCipherKey: String, options: CryptoParameters): js.Any = js.native
+  def decrypt(data: String, customCipherKey: Unit, options: CryptoParameters): js.Any = js.native
   def decrypt(data: js.Object): js.Any = js.native
-  def decrypt(data: js.Object, customCipherKey: js.UndefOr[scala.Nothing], options: CryptoParameters): js.Any = js.native
   def decrypt(data: js.Object, customCipherKey: String): js.Any = js.native
   def decrypt(data: js.Object, customCipherKey: String, options: CryptoParameters): js.Any = js.native
+  def decrypt(data: js.Object, customCipherKey: Unit, options: CryptoParameters): js.Any = js.native
   
   def deleteFile(params: FileInputParameters): js.Promise[DeleteFileResponse] = js.native
   def deleteFile(params: FileInputParameters, callback: StatusCallback): Unit = js.native
@@ -80,14 +79,14 @@ trait Pubnub extends StObject {
     */
   def deleteUser(userId: String, callback: Callback[DeleteUserResponse]): Unit = js.native
   
-  def downloadFile(params: DownloadFileParameters): js.Promise[_] = js.native
-  def downloadFile(params: DownloadFileParameters, callback: Callback[_]): Unit = js.native
+  def downloadFile(params: DownloadFileParameters): js.Promise[js.Any] = js.native
+  def downloadFile(params: DownloadFileParameters, callback: Callback[js.Any]): Unit = js.native
   
   // utilities
   def encrypt(data: String): String = js.native
-  def encrypt(data: String, customCipherKey: js.UndefOr[scala.Nothing], options: CryptoParameters): String = js.native
   def encrypt(data: String, customCipherKey: String): String = js.native
   def encrypt(data: String, customCipherKey: String, options: CryptoParameters): String = js.native
+  def encrypt(data: String, customCipherKey: Unit, options: CryptoParameters): String = js.native
   
   def fetchMessages(params: FetchMessagesParameters): js.Promise[FetchMessagesResponse] = js.native
   def fetchMessages(params: FetchMessagesParameters, callback: Callback[FetchMessagesResponse]): Unit = js.native

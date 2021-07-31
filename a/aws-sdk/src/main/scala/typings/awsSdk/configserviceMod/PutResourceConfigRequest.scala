@@ -2,41 +2,39 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutResourceConfigRequest extends StObject {
   
   /**
     * The configuration object of the resource in valid JSON format. It must match the schema registered with AWS CloudFormation.  The configuration JSON must not exceed 64 KB. 
     */
-  var Configuration: typings.awsSdk.configserviceMod.Configuration = js.native
+  var Configuration: typings.awsSdk.configserviceMod.Configuration
   
   /**
     * Unique identifier of the resource.
     */
-  var ResourceId: typings.awsSdk.configserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.configserviceMod.ResourceId
   
   /**
     * Name of the resource.
     */
-  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.native
+  var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.undefined
   
   /**
     * The type of the resource. The custom resource type must be registered with AWS CloudFormation.   You cannot use the organization names “aws”, “amzn”, “amazon”, “alexa”, “custom” with custom resource types. It is the first part of the ResourceType up to the first ::. 
     */
-  var ResourceType: ResourceTypeString = js.native
+  var ResourceType: ResourceTypeString
   
   /**
     * Version of the schema registered for the ResourceType in AWS CloudFormation.
     */
-  var SchemaVersionId: typings.awsSdk.configserviceMod.SchemaVersionId = js.native
+  var SchemaVersionId: typings.awsSdk.configserviceMod.SchemaVersionId
   
   /**
     * Tags associated with the resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.configserviceMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.configserviceMod.Tags] = js.undefined
 }
 object PutResourceConfigRequest {
   

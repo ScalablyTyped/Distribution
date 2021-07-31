@@ -4,7 +4,6 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -64,7 +63,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // 4. exporting public key
   * var pem = KEYUTIL.getPEM(publicKeyObj);
   */
-@js.native
 trait KEYUTIL extends StObject {
   
   /**
@@ -72,7 +70,7 @@ trait KEYUTIL extends StObject {
     * @param pkcsPub8Hex hexadecimal string of PKCS#8 public key
     * @return RSAKey or KJUR.crypto.{ECDSA,DSA} private key object
     */
-  def _getKeyFromPublicPKCS8Hex(h: String): RSAKey | ECDSA = js.native
+  def _getKeyFromPublicPKCS8Hex(h: String): RSAKey | ECDSA
   
   /**
     * read PEM formatted encrypted PKCS#8 private key and returns hexadecimal string of plain PKCS#8 private key
@@ -90,9 +88,9 @@ trait KEYUTIL extends StObject {
     * // key with PBKDF2 with TripleDES
     * % openssl pkcs8 -in plain_p5.pem -topk8 -v2 -des3 -out encrypted_p8.pem
     */
-  def _getPlainPKCS8HexFromEncryptedPKCS8PEM(pkcs8PEM: String, passcode: String): String = js.native
+  def _getPlainPKCS8HexFromEncryptedPKCS8PEM(pkcs8PEM: String, passcode: String): String
   
-  def decryptKeyB64(privateKeyB64: String, sharedKeyAlgName: String, sharedKeyHex: String, ivsaltHex: String): String = js.native
+  def decryptKeyB64(privateKeyB64: String, sharedKeyAlgName: String, sharedKeyHex: String, ivsaltHex: String): String
   
   /**
     * decrypt PEM formatted protected PKCS#5 private key with passcode
@@ -100,7 +98,7 @@ trait KEYUTIL extends StObject {
     * @param passcode passcode to decrypt private key (ex. 'password')
     * @return hexadecimal string of decrypted RSA priavte key
     */
-  def getDecryptedKeyHex(sEncryptedPEM: String, passcode: String): String = js.native
+  def getDecryptedKeyHex(sEncryptedPEM: String, passcode: String): String
   
   /**
     * get PEM formatted encrypted PKCS#5 private key from hexadecimal string of plain private key
@@ -128,7 +126,7 @@ trait KEYUTIL extends StObject {
     * var pem3 =
     *   KEYUTIL.getEncryptedPKCS5PEMFromPrvKeyHex(plainKeyHex, "password", "AES-128-CBC", "1f3d02...");
     */
-  def getEncryptedPKCS5PEMFromPrvKeyHex(pemHeadAlg: String, hPrvKey: String, passcode: String, sharedKeyAlgName: String, ivsaltHex: String): String = js.native
+  def getEncryptedPKCS5PEMFromPrvKeyHex(pemHeadAlg: String, hPrvKey: String, passcode: String, sharedKeyAlgName: String, ivsaltHex: String): String
   
   /**
     * the same function as OpenSSL EVP_BytsToKey to generate shared key and IV
@@ -137,7 +135,7 @@ trait KEYUTIL extends StObject {
     * @param hexadecimal string of IV. heading 8 bytes will be used for passcode salt
     * @return hash of key and unused IV (ex. {keyhex:2fe3..., ivhex:3fad..})
     */
-  def getKeyAndUnusedIvByPasscodeAndIvsalt(algName: String, passcode: String, ivsaltHex: String): String = js.native
+  def getKeyAndUnusedIvByPasscodeAndIvsalt(algName: String, passcode: String, ivsaltHex: String): String
   
   /**
     * get RSAKey/ECDSA private key object from encrypted PEM PKCS#8 private key
@@ -145,21 +143,21 @@ trait KEYUTIL extends StObject {
     * @param passcode passcode string to decrypt key
     * @return RSAKey or KJUR.crypto.ECDSA private key object
     */
-  def getKeyFromEncryptedPKCS8PEM(pkcs8PEM: String, passcode: String): RSAKey | ECDSA = js.native
+  def getKeyFromEncryptedPKCS8PEM(pkcs8PEM: String, passcode: String): RSAKey | ECDSA
   
   /**
     * get RSAKey/DSA/ECDSA private key object from HEX plain PEM PKCS#8 private key
     * @param prvKeyHex hexadecimal string of plain PKCS#8 private key
     * @return RSAKey or KJUR.crypto.{DSA,ECDSA} private key object
     */
-  def getKeyFromPlainPrivatePKCS8Hex(prvKeyHex: String): RSAKey | DSA | ECDSA = js.native
+  def getKeyFromPlainPrivatePKCS8Hex(prvKeyHex: String): RSAKey | DSA | ECDSA
   
   /**
     * get RSAKey/ECDSA private key object from PEM plain PEM PKCS#8 private key
     * @param pkcs8PEM string of plain PEM formatted PKCS#8 private key
     * @return RSAKey or KJUR.crypto.ECDSA private key object
     */
-  def getKeyFromPlainPrivatePKCS8PEM(prvKeyPEM: String): RSAKey | ECDSA = js.native
+  def getKeyFromPlainPrivatePKCS8PEM(prvKeyPEM: String): RSAKey | ECDSA
   
   /**
     * generate PBKDF2 key hexstring with specified passcode and information
@@ -182,7 +180,7 @@ trait KEYUTIL extends StObject {
     * // key with PBKDF2 with TripleDES
     * % openssl pkcs8 -in plain_p5.pem -topk8 -v2 -des3 -out encrypted_p8.pem
     */
-  def getPBKDF2KeyHexFromParam(info: PKCS8Info, passcode: String): String = js.native
+  def getPBKDF2KeyHexFromParam(info: PKCS8Info, passcode: String): String
   
   /**
     * generate PBKDF2 key hexstring with specified passcode and information
@@ -207,7 +205,7 @@ trait KEYUTIL extends StObject {
     * // key with PBKDF2 with TripleDES
     * % openssl pkcs8 -in plain_p5.pem -topk8 -v2 -des3 -out encrypted_p8.pem
     */
-  def parseHexOfEncryptedPKCS8(passcode: String): PKCS8Info = js.native
+  def parseHexOfEncryptedPKCS8(passcode: String): PKCS8Info
   
   /**
     * parse PEM formatted passcode protected PKCS#5 private key
@@ -221,7 +219,7 @@ trait KEYUTIL extends StObject {
     * - type - asymmetric key algorithm name of private key described in PEM header.
     * - data - base64 encoded encrypted private key.
     */
-  def parsePKCS5PEM(sPKCS5PEM: String): String = js.native
+  def parsePKCS5PEM(sPKCS5PEM: String): String
   
   /**
     * parse hexadecimal string of plain PKCS#8 private key
@@ -235,7 +233,7 @@ trait KEYUTIL extends StObject {
     * - keyidx - string starting index of key in pkcs8PrvHex
     *
     */
-  def parsePlainPrivatePKCS8Hex(pkcs8PrvHex: String): PrivatePKCS8HexResult = js.native
+  def parsePlainPrivatePKCS8Hex(pkcs8PrvHex: String): PrivatePKCS8HexResult
   
   /**
     * parse hexadecimal string of PKCS#8 RSA/EC/DSA public key
@@ -249,7 +247,7 @@ trait KEYUTIL extends StObject {
     * - key - hexadecimal string of public key
     *
     */
-  def parsePublicPKCS8Hex(pkcs8PubHex: String): PublicPKCS8HexResult = js.native
+  def parsePublicPKCS8Hex(pkcs8PubHex: String): PublicPKCS8HexResult
   
   /**
     * parse hexadecimal string of plain PKCS#8 private key
@@ -262,7 +260,7 @@ trait KEYUTIL extends StObject {
     * - e - hexadecimal string of public exponent
     *
     */
-  def parsePublicRawRSAKeyHex(pubRawRSAHex: String): PublicRawRSAKeyHexResult = js.native
+  def parsePublicRawRSAKeyHex(pubRawRSAHex: String): PublicRawRSAKeyHexResult
 }
 object KEYUTIL {
   

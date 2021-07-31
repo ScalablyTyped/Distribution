@@ -5,21 +5,19 @@ import typings.reactNativeWindowsCli.dependencyConfigMod.ProjectDependency
 import typings.reactNativeWindowsCli.projectConfigMod.Project
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Latest extends StObject {
     
-    var latest: js.UndefOr[Boolean] = js.native
+    var latest: js.UndefOr[Boolean] = js.undefined
     
-    var requires: js.UndefOr[js.Array[String]] = js.native
+    var requires: js.UndefOr[js.Array[String]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Latest {
     
@@ -62,18 +60,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@react-native-windows/cli.@react-native-windows/cli/lib-commonjs/config/dependencyConfig.WindowsDependencyConfig> */
-  @js.native
   trait PartialWindowsDependencyC extends StObject {
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var nugetPackages: js.UndefOr[js.Array[NuGetPackageDependency]] = js.native
+    var nugetPackages: js.UndefOr[js.Array[NuGetPackageDependency]] = js.undefined
     
-    var projects: js.UndefOr[js.Array[ProjectDependency]] = js.native
+    var projects: js.UndefOr[js.Array[ProjectDependency]] = js.undefined
     
-    var solutionFile: js.UndefOr[String | Null] = js.native
+    var solutionFile: js.UndefOr[String | Null] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
   }
   object PartialWindowsDependencyC {
     
@@ -128,16 +125,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@react-native-windows/cli.@react-native-windows/cli/lib-commonjs/config/projectConfig.WindowsProjectConfig> */
-  @js.native
   trait PartialWindowsProjectConf extends StObject {
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var project: js.UndefOr[Project] = js.native
+    var project: js.UndefOr[Project] = js.undefined
     
-    var solutionFile: js.UndefOr[String] = js.native
+    var solutionFile: js.UndefOr[String] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
   }
   object PartialWindowsProjectConf {
     
@@ -176,14 +172,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Requires extends StObject {
     
-    var requires: js.UndefOr[js.Array[String]] = js.native
+    var requires: js.UndefOr[js.Array[String]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Requires {
     
@@ -219,10 +214,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Verbose extends StObject {
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object Verbose {
     

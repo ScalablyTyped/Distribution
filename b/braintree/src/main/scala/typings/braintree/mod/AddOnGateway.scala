@@ -2,16 +2,14 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gateways
   */
-@js.native
 trait AddOnGateway extends StObject {
   
-  def all(): js.Promise[js.Array[AddOn]] = js.native
+  def all(): js.Promise[js.Array[AddOn]]
 }
 object AddOnGateway {
   

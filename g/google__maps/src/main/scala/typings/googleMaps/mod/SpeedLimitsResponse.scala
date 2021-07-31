@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeedLimitsResponse extends StObject {
   
   /** an array of snapped points. This array is present only if the request contained a path parameter. */
-  var snappedPoints: js.Array[SnappedPoint] = js.native
+  var snappedPoints: js.Array[SnappedPoint]
   
   /** An array of road metadata. */
-  var speedLimits: js.Array[SpeedLimit] = js.native
+  var speedLimits: js.Array[SpeedLimit]
 }
 object SpeedLimitsResponse {
   

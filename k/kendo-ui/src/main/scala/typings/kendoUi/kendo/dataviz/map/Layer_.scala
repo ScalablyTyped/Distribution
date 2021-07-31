@@ -4,19 +4,19 @@ import typings.kendoUi.kendo.Class
 import typings.kendoUi.kendo.dataviz.ui.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Layer_ extends Class {
+trait Layer_
+  extends StObject
+     with Class {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  var map: Map = js.native
+  var map: Map
   
-  var options: LayerOptions = js.native
+  var options: LayerOptions
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Layer_ {
   

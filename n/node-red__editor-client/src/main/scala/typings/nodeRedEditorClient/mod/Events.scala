@@ -2,17 +2,15 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
-  def emit(evt: String, args: js.Any*): Unit = js.native
+  def emit(evt: String, args: js.Any*): Unit
   
-  def off(evt: String, func: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def off(evt: String, func: js.Function1[/* repeated */ js.Any, Unit]): Unit
   
-  def on(evt: String, func: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def on(evt: String, func: js.Function1[/* repeated */ js.Any, Unit]): Unit
 }
 object Events {
   

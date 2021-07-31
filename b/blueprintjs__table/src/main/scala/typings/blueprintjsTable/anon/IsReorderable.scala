@@ -2,17 +2,15 @@ package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsReorderable extends StObject {
   
-  var isReorderable: Boolean = js.native
+  var isReorderable: Boolean
   
-  var isResizable: Boolean = js.native
+  var isResizable: Boolean
   
-  var loading: Boolean = js.native
+  var loading: Boolean
 }
 object IsReorderable {
   

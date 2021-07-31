@@ -2,33 +2,33 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileLayerOptions extends GridLayerOptions {
+trait TileLayerOptions
+  extends StObject
+     with GridLayerOptions {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.native
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   
-  var detectRetina: js.UndefOr[Boolean] = js.native
+  var detectRetina: js.UndefOr[Boolean] = js.undefined
   
-  var errorTileUrl: js.UndefOr[String] = js.native
+  var errorTileUrl: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var maxNativeZoom: js.UndefOr[Double] = js.native
+  var maxNativeZoom: js.UndefOr[Double] = js.undefined
   
-  var minNativeZoom: js.UndefOr[Double] = js.native
+  var minNativeZoom: js.UndefOr[Double] = js.undefined
   
-  var subdomains: js.UndefOr[String | js.Array[String]] = js.native
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var tms: js.UndefOr[Boolean] = js.native
+  var tms: js.UndefOr[Boolean] = js.undefined
   
-  var zoomOffset: js.UndefOr[Double] = js.native
+  var zoomOffset: js.UndefOr[Double] = js.undefined
   
-  var zoomReverse: js.UndefOr[Boolean] = js.native
+  var zoomReverse: js.UndefOr[Boolean] = js.undefined
 }
 object TileLayerOptions {
   

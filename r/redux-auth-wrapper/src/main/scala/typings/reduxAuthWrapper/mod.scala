@@ -6,17 +6,17 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
-  trait AuthBaseConfig[OwnProps, State] extends AuthConfig {
+  trait AuthBaseConfig[OwnProps, State]
+    extends StObject
+       with AuthConfig {
     
-    var authenticatedSelector: StateSelector[State, OwnProps, Boolean] = js.native
+    var authenticatedSelector: StateSelector[State, OwnProps, Boolean]
     
-    var authenticatingSelector: js.UndefOr[StateSelector[State, OwnProps, Boolean]] = js.native
+    var authenticatingSelector: js.UndefOr[StateSelector[State, OwnProps, Boolean]] = js.undefined
   }
   object AuthBaseConfig {
     
@@ -27,7 +27,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AuthBaseConfigMutableBuilder[Self <: AuthBaseConfig[_, _], OwnProps, State] (val x: Self with (AuthBaseConfig[OwnProps, State])) extends AnyVal {
+    implicit class AuthBaseConfigMutableBuilder[Self <: AuthBaseConfig[?, ?], OwnProps, State] (val x: Self & (AuthBaseConfig[OwnProps, State])) extends AnyVal {
       
       @scala.inline
       def setAuthenticatedSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
@@ -40,12 +40,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthConfig extends StObject {
     
-    var AuthenticatingComponent: js.UndefOr[ReactType[_]] = js.native
+    var AuthenticatingComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var wrapperDisplayName: js.UndefOr[String] = js.native
+    var wrapperDisplayName: js.UndefOr[String] = js.undefined
   }
   object AuthConfig {
     
@@ -59,7 +58,7 @@ object mod {
     implicit class AuthConfigMutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAuthenticatingComponent(value: ReactType[_]): Self = StObject.set(x, "AuthenticatingComponent", value.asInstanceOf[js.Any])
+      def setAuthenticatingComponent(value: ReactType[js.Any]): Self = StObject.set(x, "AuthenticatingComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAuthenticatingComponentUndefined: Self = StObject.set(x, "AuthenticatingComponent", js.undefined)

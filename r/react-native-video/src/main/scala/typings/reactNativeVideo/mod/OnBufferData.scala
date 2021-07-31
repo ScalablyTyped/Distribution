@@ -2,13 +2,11 @@ package typings.reactNativeVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBufferData extends StObject {
   
-  var isBuffering: Boolean = js.native
+  var isBuffering: Boolean
 }
 object OnBufferData {
   

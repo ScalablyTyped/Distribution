@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
     */
-  var fontWeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var fontWeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object FontWeightProps {
   
@@ -26,7 +24,7 @@ object FontWeightProps {
   }
   
   @scala.inline
-  implicit class FontWeightPropsMutableBuilder[Self <: FontWeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FontWeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class FontWeightPropsMutableBuilder[Self <: FontWeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontWeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])

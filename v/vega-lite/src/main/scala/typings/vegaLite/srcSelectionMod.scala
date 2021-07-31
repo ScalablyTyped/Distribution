@@ -20,10 +20,13 @@ import typings.vegaTypings.streamMod.Stream
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcSelectionMod {
+  
+  @JSImport("vega-lite/build/src/selection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/selection", "SELECTION_ID")
   @js.native
@@ -33,15 +36,12 @@ object srcSelectionMod {
   @js.native
   val defaultConfig: SelectionConfig = js.native
   
-  @JSImport("vega-lite/build/src/selection", "isLegendBinding")
-  @js.native
-  def isLegendBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean = js.native
+  @scala.inline
+  def isLegendBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean]
   
-  @JSImport("vega-lite/build/src/selection", "isLegendStreamBinding")
-  @js.native
-  def isLegendStreamBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean = js.native
+  @scala.inline
+  def isLegendStreamBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendStreamBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean]
   
-  @js.native
   trait BaseSelectionConfig extends StObject {
     
     /**
@@ -52,13 +52,13 @@ object srcSelectionMod {
       *
       * __See also:__ [`clear`](https://vega.github.io/vega-lite/docs/clear.html) documentation.
       */
-    var clear: js.UndefOr[Stream | String | Boolean] = js.native
+    var clear: js.UndefOr[Stream | String | Boolean] = js.undefined
     
     /**
       * By default, `all` data values are considered to lie within an empty selection.
       * When set to `none`, empty selections contain no data values.
       */
-    var empty: js.UndefOr[all | none] = js.native
+    var empty: js.UndefOr[all | none] = js.undefined
     
     /**
       * An array of encoding channels. The corresponding data field values
@@ -66,7 +66,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`encodings`](https://vega.github.io/vega-lite/docs/project.html) documentation.
       */
-    var encodings: js.UndefOr[js.Array[SingleDefUnitChannel]] = js.native
+    var encodings: js.UndefOr[js.Array[SingleDefUnitChannel]] = js.undefined
     
     /**
       * An array of field names whose values must match for a data tuple to
@@ -74,13 +74,13 @@ object srcSelectionMod {
       *
       * __See also:__ [`fields`](https://vega.github.io/vega-lite/docs/project.html) documentation.
       */
-    var fields: js.UndefOr[js.Array[FieldName]] = js.native
+    var fields: js.UndefOr[js.Array[FieldName]] = js.undefined
     
     /**
       * A [Vega event stream](https://vega.github.io/vega/docs/event-streams/) (object or selector) that triggers the selection.
       * For interval selections, the event stream must specify a [start and end](https://vega.github.io/vega/docs/event-streams/#between-filters).
       */
-    var on: js.UndefOr[Stream | String] = js.native
+    var on: js.UndefOr[Stream | String] = js.undefined
     
     /**
       * With layered and multi-view displays, a strategy that determines how
@@ -89,7 +89,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`resolve`](https://vega.github.io/vega-lite/docs/selection-resolve.html) documentation.
       */
-    var resolve: js.UndefOr[SelectionResolution] = js.native
+    var resolve: js.UndefOr[SelectionResolution] = js.undefined
   }
   object BaseSelectionConfig {
     
@@ -146,7 +146,6 @@ object srcSelectionMod {
     }
   }
   
-  @js.native
   trait BaseSelectionDef[T /* <: single | multi | interval */] extends StObject {
     
     /**
@@ -156,7 +155,7 @@ object srcSelectionMod {
       * - `"multi"` -- to select multiple discrete data value; the first value is selected on `click` and additional values toggled on shift-`click`.
       * - `"interval"` -- to select a continuous range of data values on `drag`.
       */
-    var `type`: T = js.native
+    var `type`: T
   }
   object BaseSelectionDef {
     
@@ -168,20 +167,19 @@ object srcSelectionMod {
     }
     
     @scala.inline
-    implicit class BaseSelectionDefMutableBuilder[Self <: BaseSelectionDef[_], T /* <: single | multi | interval */] (val x: Self with BaseSelectionDef[T]) extends AnyVal {
+    implicit class BaseSelectionDefMutableBuilder[Self <: BaseSelectionDef[?], T /* <: single | multi | interval */] (val x: Self & BaseSelectionDef[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait BrushConfig extends StObject {
     
     /**
       * The mouse cursor used over the interval mark. Any valid [CSS cursor type](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#Values) can be used.
       */
-    var cursor: js.UndefOr[Cursor] = js.native
+    var cursor: js.UndefOr[Cursor] = js.undefined
     
     /**
       * The fill color of the interval mark.
@@ -189,41 +187,41 @@ object srcSelectionMod {
       * __Default value:__ `"#333333"`
       *
       */
-    var fill: js.UndefOr[Color] = js.native
+    var fill: js.UndefOr[Color] = js.undefined
     
     /**
       * The fill opacity of the interval mark (a value between `0` and `1`).
       *
       * __Default value:__ `0.125`
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke color of the interval mark.
       *
       * __Default value:__ `"#ffffff"`
       */
-    var stroke: js.UndefOr[Color] = js.native
+    var stroke: js.UndefOr[Color] = js.undefined
     
     /**
       * An array of alternating stroke and space lengths, for creating dashed or dotted lines.
       */
-    var strokeDash: js.UndefOr[js.Array[Double]] = js.native
+    var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The offset (in pixels) with which to begin drawing the stroke dash array.
       */
-    var strokeDashOffset: js.UndefOr[Double] = js.native
+    var strokeDashOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke opacity of the interval mark (a value between `0` and `1`).
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke width of the interval mark.
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object BrushConfig {
     
@@ -289,23 +287,24 @@ object srcSelectionMod {
     }
   }
   
-  @js.native
   trait IntervalSelection
-    extends IntervalSelectionConfig
+    extends StObject
        with BaseSelectionDef[interval]
+       with IntervalSelectionConfig
        with SelectionDef
   object IntervalSelection {
     
     @scala.inline
-    def apply(`type`: interval): IntervalSelection = {
+    def apply(): IntervalSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("interval")
       __obj.asInstanceOf[IntervalSelection]
     }
   }
   
-  @js.native
-  trait IntervalSelectionConfig extends BaseSelectionConfig {
+  trait IntervalSelectionConfig
+    extends StObject
+       with BaseSelectionConfig {
     
     /**
       * Establishes a two-way binding between the interval selection and the scales
@@ -314,7 +313,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`bind`](https://vega.github.io/vega-lite/docs/bind.html) documentation.
       */
-    var bind: js.UndefOr[scales] = js.native
+    var bind: js.UndefOr[scales] = js.undefined
     
     /**
       * Initialize the selection with a mapping between [projected channels or field names](https://vega.github.io/vega-lite/docs/project.html) and arrays of
@@ -322,7 +321,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`init`](https://vega.github.io/vega-lite/docs/init.html) documentation.
       */
-    var init: js.UndefOr[SelectionInitIntervalMapping] = js.native
+    var init: js.UndefOr[SelectionInitIntervalMapping] = js.undefined
     
     /**
       * An interval selection also adds a rectangle mark to depict the
@@ -331,7 +330,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`mark`](https://vega.github.io/vega-lite/docs/selection-mark.html) documentation.
       */
-    var mark: js.UndefOr[BrushConfig] = js.native
+    var mark: js.UndefOr[BrushConfig] = js.undefined
     
     /**
       * When truthy, allows a user to interactively move an interval selection
@@ -345,7 +344,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`translate`](https://vega.github.io/vega-lite/docs/translate.html) documentation.
       */
-    var translate: js.UndefOr[String | Boolean] = js.native
+    var translate: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * When truthy, allows a user to interactively resize an interval selection.
@@ -357,7 +356,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`zoom`](https://vega.github.io/vega-lite/docs/zoom.html) documentation.
       */
-    var zoom: js.UndefOr[String | Boolean] = js.native
+    var zoom: js.UndefOr[String | Boolean] = js.undefined
   }
   object IntervalSelectionConfig {
     
@@ -408,10 +407,11 @@ object srcSelectionMod {
   */
   trait LegendBinding extends StObject
   
-  @js.native
-  trait LegendStreamBinding extends LegendBinding {
+  trait LegendStreamBinding
+    extends StObject
+       with LegendBinding {
     
-    var legend: String | Stream = js.native
+    var legend: String | Stream
   }
   object LegendStreamBinding {
     
@@ -429,23 +429,24 @@ object srcSelectionMod {
     }
   }
   
-  @js.native
   trait MultiSelection
-    extends MultiSelectionConfig
+    extends StObject
        with BaseSelectionDef[multi]
+       with MultiSelectionConfig
        with SelectionDef
   object MultiSelection {
     
     @scala.inline
-    def apply(`type`: multi): MultiSelection = {
+    def apply(): MultiSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("multi")
       __obj.asInstanceOf[MultiSelection]
     }
   }
   
-  @js.native
-  trait MultiSelectionConfig extends BaseSelectionConfig {
+  trait MultiSelectionConfig
+    extends StObject
+       with BaseSelectionConfig {
     
     /**
       * When set, a selection is populated by interacting with the corresponding legend. Direct manipulation interaction is disabled by default;
@@ -453,7 +454,7 @@ object srcSelectionMod {
       *
       * Legend bindings are restricted to selections that only specify a single field or encoding.
       */
-    var bind: js.UndefOr[LegendBinding] = js.native
+    var bind: js.UndefOr[LegendBinding] = js.undefined
     
     /**
       * Initialize the selection with a mapping between [projected channels or field names](https://vega.github.io/vega-lite/docs/project.html) and an initial
@@ -461,7 +462,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`init`](https://vega.github.io/vega-lite/docs/init.html) documentation.
       */
-    var init: js.UndefOr[js.Array[SelectionInitMapping]] = js.native
+    var init: js.UndefOr[js.Array[SelectionInitMapping]] = js.undefined
     
     /**
       * When true, an invisible voronoi diagram is computed to accelerate discrete
@@ -469,7 +470,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`nearest`](https://vega.github.io/vega-lite/docs/nearest.html) documentation.
       */
-    var nearest: js.UndefOr[Boolean] = js.native
+    var nearest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls whether data values should be toggled or only ever inserted into
@@ -484,7 +485,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`toggle`](https://vega.github.io/vega-lite/docs/toggle.html) documentation.
       */
-    var toggle: js.UndefOr[String | Boolean] = js.native
+    var toggle: js.UndefOr[String | Boolean] = js.undefined
   }
   object MultiSelectionConfig {
     
@@ -526,7 +527,6 @@ object srcSelectionMod {
     }
   }
   
-  @js.native
   trait SelectionConfig extends StObject {
     
     /**
@@ -536,7 +536,7 @@ object srcSelectionMod {
       * For instance, setting `interval` to `{"translate": false}` disables the ability to move
       * interval selections by default.
       */
-    var interval: js.UndefOr[IntervalSelectionConfig] = js.native
+    var interval: js.UndefOr[IntervalSelectionConfig] = js.undefined
     
     /**
       * The default definition for a [`multi`](https://vega.github.io/vega-lite/docs/selection.html#type) selection. All properties and transformations
@@ -545,7 +545,7 @@ object srcSelectionMod {
       * For instance, setting `multi` to `{"toggle": "event.altKey"}` adds additional values to
       * multi selections when clicking with the alt-key pressed by default.
       */
-    var multi: js.UndefOr[MultiSelectionConfig] = js.native
+    var multi: js.UndefOr[MultiSelectionConfig] = js.undefined
     
     /**
       * The default definition for a [`single`](https://vega.github.io/vega-lite/docs/selection.html#type) selection. All properties and transformations
@@ -553,7 +553,7 @@ object srcSelectionMod {
       *
       * For instance, setting `single` to `{"on": "dblclick"}` populates single selections on double-click by default.
       */
-    var single: js.UndefOr[SingleSelectionConfig] = js.native
+    var single: js.UndefOr[SingleSelectionConfig] = js.undefined
   }
   object SelectionConfig {
     
@@ -595,23 +595,23 @@ object srcSelectionMod {
   object SelectionDef {
     
     @scala.inline
-    def IntervalSelection(`type`: interval): typings.vegaLite.srcSelectionMod.IntervalSelection = {
+    def IntervalSelection(): typings.vegaLite.srcSelectionMod.IntervalSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("interval")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.IntervalSelection]
     }
     
     @scala.inline
-    def MultiSelection(`type`: multi): typings.vegaLite.srcSelectionMod.MultiSelection = {
+    def MultiSelection(): typings.vegaLite.srcSelectionMod.MultiSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("multi")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.MultiSelection]
     }
     
     @scala.inline
-    def SingleSelection(`type`: single): typings.vegaLite.srcSelectionMod.SingleSelection = {
+    def SingleSelection(): typings.vegaLite.srcSelectionMod.SingleSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("single")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.SingleSelection]
     }
   }
@@ -620,7 +620,9 @@ object srcSelectionMod {
     - typings.vegaLite.anon.FieldSelection
     - typings.vegaLite.anon.EncodingSelection
   */
-  trait SelectionExtent extends _Domain
+  trait SelectionExtent
+    extends StObject
+       with _Domain
   object SelectionExtent {
     
     @scala.inline
@@ -680,23 +682,24 @@ object srcSelectionMod {
     def single: typings.vegaLite.vegaLiteStrings.single = "single".asInstanceOf[typings.vegaLite.vegaLiteStrings.single]
   }
   
-  @js.native
   trait SingleSelection
-    extends SingleSelectionConfig
+    extends StObject
        with BaseSelectionDef[single]
+       with SingleSelectionConfig
        with SelectionDef
   object SingleSelection {
     
     @scala.inline
-    def apply(`type`: single): SingleSelection = {
+    def apply(): SingleSelection = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("single")
       __obj.asInstanceOf[SingleSelection]
     }
   }
   
-  @js.native
-  trait SingleSelectionConfig extends BaseSelectionConfig {
+  trait SingleSelectionConfig
+    extends StObject
+       with BaseSelectionConfig {
     
     /**
       * When set, a selection is populated by input elements (also known as dynamic query widgets)
@@ -710,14 +713,14 @@ object srcSelectionMod {
       *
       * __See also:__ [`bind`](https://vega.github.io/vega-lite/docs/bind.html) documentation.
       */
-    var bind: js.UndefOr[Binding | (Record[String, Binding]) | LegendBinding] = js.native
+    var bind: js.UndefOr[Binding | (Record[String, Binding]) | LegendBinding] = js.undefined
     
     /**
       * Initialize the selection with a mapping between [projected channels or field names](https://vega.github.io/vega-lite/docs/project.html) and initial values.
       *
       * __See also:__ [`init`](https://vega.github.io/vega-lite/docs/init.html) documentation.
       */
-    var init: js.UndefOr[SelectionInitMapping] = js.native
+    var init: js.UndefOr[SelectionInitMapping] = js.undefined
     
     /**
       * When true, an invisible voronoi diagram is computed to accelerate discrete
@@ -725,7 +728,7 @@ object srcSelectionMod {
       *
       * __See also:__ [`nearest`](https://vega.github.io/vega-lite/docs/nearest.html) documentation.
       */
-    var nearest: js.UndefOr[Boolean] = js.native
+    var nearest: js.UndefOr[Boolean] = js.undefined
   }
   object SingleSelectionConfig {
     

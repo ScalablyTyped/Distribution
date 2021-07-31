@@ -2,26 +2,24 @@ package typings.hapiHapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeSubDomains extends StObject {
   
   /**
     * a boolean specifying whether to add the includeSubDomains flag to the header.
     */
-  var includeSubDomains: Boolean = js.native
+  var includeSubDomains: Boolean
   
   /**
     * the max-age portion of the header, as a number. Default is 15768000.
     */
-  var maxAge: Double = js.native
+  var maxAge: Double
   
   /**
     * a boolean specifying whether to add the 'preload' flag (used to submit domains inclusion in Chrome's HTTP Strict Transport Security (HSTS) preload list) to the header.
     */
-  var preload: Boolean = js.native
+  var preload: Boolean
 }
 object IncludeSubDomains {
   

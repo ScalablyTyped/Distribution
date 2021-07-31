@@ -3,10 +3,13 @@ package typings.javascriptTimeAgo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gradationMod {
+  
+  @JSImport("javascript-time-ago/gradation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("javascript-time-ago/gradation", "canonical")
   @js.native
@@ -20,16 +23,13 @@ object gradationMod {
   @js.native
   val day: Double = js.native
   
-  @JSImport("javascript-time-ago/gradation", "getDate")
-  @js.native
-  def getDate(value: Double): Date = js.native
-  @JSImport("javascript-time-ago/gradation", "getDate")
-  @js.native
-  def getDate(value: Date): Date = js.native
+  @scala.inline
+  def getDate(value: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def getDate(value: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("javascript-time-ago/gradation", "getStep")
-  @js.native
-  def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = js.native
+  @scala.inline
+  def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStep")(gradation.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Gradation]]
   
   @JSImport("javascript-time-ago/gradation", "hour")
   @js.native
@@ -47,32 +47,31 @@ object gradationMod {
   @js.native
   val year: Double = js.native
   
-  @js.native
   trait Gradation extends StObject {
     
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
-    var granularity: js.UndefOr[Double] = js.native
+    var granularity: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_day: js.UndefOr[Double] = js.native
+    var threshold_for_day: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_hour: js.UndefOr[Double] = js.native
+    var threshold_for_hour: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_minute: js.UndefOr[Double] = js.native
+    var threshold_for_minute: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_month: js.UndefOr[Double] = js.native
+    var threshold_for_month: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_now: js.UndefOr[Double] = js.native
+    var threshold_for_now: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_second: js.UndefOr[Double] = js.native
+    var threshold_for_second: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_week: js.UndefOr[Double] = js.native
+    var threshold_for_week: js.UndefOr[Double] = js.undefined
     
-    var threshold_for_year: js.UndefOr[Double] = js.native
+    var threshold_for_year: js.UndefOr[Double] = js.undefined
     
-    var unit: js.UndefOr[Unit] = js.native
+    var unit: js.UndefOr[Unit] = js.undefined
   }
   object Gradation {
     

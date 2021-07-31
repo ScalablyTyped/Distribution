@@ -2,26 +2,24 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwaitPromiseParameterType extends StObject {
   
   /**
     * Whether preview should be generated for the result.
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifier of the promise.
     */
-  var promiseObjectId: RemoteObjectId = js.native
+  var promiseObjectId: RemoteObjectId
   
   /**
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
 }
 object AwaitPromiseParameterType {
   

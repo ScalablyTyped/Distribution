@@ -3,17 +3,15 @@ package typings.stripeV3.stripe
 import typings.stripeV3.anon.Billingdetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleCardSetupOptions extends StObject {
   
   /**
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details.
     */
-  var payment_method_data: js.UndefOr[Billingdetails] = js.native
+  var payment_method_data: js.UndefOr[Billingdetails] = js.undefined
 }
 object HandleCardSetupOptions {
   

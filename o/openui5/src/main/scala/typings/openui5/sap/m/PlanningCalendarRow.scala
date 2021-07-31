@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.unified.CalendarAppointment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlanningCalendarRow extends Element {
+trait PlanningCalendarRow
+  extends StObject
+     with Element {
   
   /**
     * Adds some appointment to the aggregation <code>appointments</code>.

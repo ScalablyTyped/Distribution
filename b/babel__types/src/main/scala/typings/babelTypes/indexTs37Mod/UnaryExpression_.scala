@@ -11,24 +11,23 @@ import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.void
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait UnaryExpression_
-  extends Expression
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait UnaryExpression_
+  extends StObject
      with BaseNode
+     with Expression
      with UnaryLike {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof = js.native
+  var operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof
   
-  var prefix: Boolean = js.native
+  var prefix: Boolean
   
   @JSName("type")
-  var type_UnaryExpression_ : UnaryExpression = js.native
+  var type_UnaryExpression_ : UnaryExpression
 }
 object UnaryExpression_ {
   
@@ -36,11 +35,10 @@ object UnaryExpression_ {
   def apply(
     argument: Expression,
     operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
-    prefix: Boolean,
-    `type`: UnaryExpression
+    prefix: Boolean
   ): UnaryExpression_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression_]
   }
   

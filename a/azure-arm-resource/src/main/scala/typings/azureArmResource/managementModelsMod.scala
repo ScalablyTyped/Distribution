@@ -5,7 +5,6 @@ import typings.std.Array
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managementModelsMod {
@@ -22,14 +21,13 @@ object managementModelsMod {
     def this(parameters: CloudErrorParameters) = this()
   }
   
-  @js.native
   trait ErrorDetails extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object ErrorDetails {
     
@@ -62,10 +60,9 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ErrorResponse extends StObject {
     
-    var error: js.UndefOr[ErrorDetails] = js.native
+    var error: js.UndefOr[ErrorDetails] = js.undefined
   }
   object ErrorResponse {
     
@@ -86,20 +83,19 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroup extends StObject {
     
-    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.native
+    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object ManagementGroup {
     
@@ -150,16 +146,15 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroupChildInfo extends StObject {
     
-    var childId: js.UndefOr[String] = js.native
+    var childId: js.UndefOr[String] = js.undefined
     
-    var childType: js.UndefOr[String] = js.native
+    var childType: js.UndefOr[String] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
   }
   object ManagementGroupChildInfo {
     
@@ -198,18 +193,17 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroupDetailsProperties extends StObject {
     
-    var managementGroupType: js.UndefOr[String] = js.native
+    var managementGroupType: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[ParentGroupInfo] = js.native
+    var parent: js.UndefOr[ParentGroupInfo] = js.undefined
     
-    var updatedBy: js.UndefOr[String] = js.native
+    var updatedBy: js.UndefOr[String] = js.undefined
     
-    var updatedTime: js.UndefOr[Date] = js.native
+    var updatedTime: js.UndefOr[Date] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object ManagementGroupDetailsProperties {
     
@@ -254,18 +248,17 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroupInfo extends StObject {
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object ManagementGroupInfo {
     
@@ -311,23 +304,24 @@ object managementModelsMod {
   }
   
   @js.native
-  trait ManagementGroupListResult extends Array[ManagementGroupInfo] {
+  trait ManagementGroupListResult
+    extends StObject
+       with Array[ManagementGroupInfo] {
     
     val nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ManagementGroupRecursiveChildInfo extends StObject {
     
-    var childId: js.UndefOr[String] = js.native
+    var childId: js.UndefOr[String] = js.undefined
     
-    var childType: js.UndefOr[String] = js.native
+    var childType: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[js.Array[ManagementGroupRecursiveChildInfo]] = js.native
+    var children: js.UndefOr[js.Array[ManagementGroupRecursiveChildInfo]] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
   }
   object ManagementGroupRecursiveChildInfo {
     
@@ -375,22 +369,21 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroupWithChildren extends StObject {
     
-    var children: js.UndefOr[js.Array[ManagementGroupChildInfo]] = js.native
+    var children: js.UndefOr[js.Array[ManagementGroupChildInfo]] = js.undefined
     
-    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.native
+    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object ManagementGroupWithChildren {
     
@@ -450,22 +443,21 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait ManagementGroupWithHierarchy extends StObject {
     
-    var children: js.UndefOr[js.Array[ManagementGroupRecursiveChildInfo]] = js.native
+    var children: js.UndefOr[js.Array[ManagementGroupRecursiveChildInfo]] = js.undefined
     
-    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.native
+    var details: js.UndefOr[ManagementGroupDetailsProperties] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
-    val `type`: js.UndefOr[String] = js.native
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object ManagementGroupWithHierarchy {
     
@@ -525,12 +517,11 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait Operation extends StObject {
     
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -557,14 +548,13 @@ object managementModelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
-    val operation: js.UndefOr[String] = js.native
+    val operation: js.UndefOr[String] = js.undefined
     
-    val provider: js.UndefOr[String] = js.native
+    val provider: js.UndefOr[String] = js.undefined
     
-    val resource: js.UndefOr[String] = js.native
+    val resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -598,17 +588,18 @@ object managementModelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     val nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ParentGroupInfo extends StObject {
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
   }
   object ParentGroupInfo {
     

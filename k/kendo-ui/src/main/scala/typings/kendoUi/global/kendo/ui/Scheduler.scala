@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.SchedulerOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Scheduler")
 @js.native
 class Scheduler protected ()
-  extends typings.kendoUi.kendo.ui.Scheduler {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Scheduler {
   def this(element: Element) = this()
   def this(element: Element, options: SchedulerOptions) = this()
 }
@@ -21,9 +21,8 @@ object Scheduler {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Scheduler.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Scheduler = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Scheduler]
   
   /* static member */
   @JSGlobal("kendo.ui.Scheduler.fn")

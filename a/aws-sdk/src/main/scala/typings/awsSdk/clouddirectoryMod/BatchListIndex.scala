@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchListIndex extends StObject {
   
   /**
     * The reference to the index to list.
     */
-  var IndexReference: ObjectReference = js.native
+  var IndexReference: ObjectReference
   
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Specifies the ranges of indexed values that you want to query.
     */
-  var RangesOnIndexedValues: js.UndefOr[ObjectAttributeRangeList] = js.native
+  var RangesOnIndexedValues: js.UndefOr[ObjectAttributeRangeList] = js.undefined
 }
 object BatchListIndex {
   

@@ -2,14 +2,15 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface represents a directory on a file system.
   */
 @js.native
-trait DirectoryEntry extends Entry {
+trait DirectoryEntry
+  extends StObject
+     with Entry {
   
   /**
     * Creates a new DirectoryReader to read Entries from this Directory.
@@ -32,26 +33,11 @@ trait DirectoryEntry extends Entry {
     *
     */
   def getDirectory(path: String): Unit = js.native
-  def getDirectory(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
-  def getDirectory(path: String, options: js.UndefOr[scala.Nothing], successCallback: DirectoryEntryCallback): Unit = js.native
-  def getDirectory(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: DirectoryEntryCallback,
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def getDirectory(path: String, options: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+  def getDirectory(path: String, options: Unit, successCallback: DirectoryEntryCallback): Unit = js.native
+  def getDirectory(path: String, options: Unit, successCallback: DirectoryEntryCallback, errorCallback: ErrorCallback): Unit = js.native
   def getDirectory(path: String, options: Flags): Unit = js.native
-  def getDirectory(
-    path: String,
-    options: Flags,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def getDirectory(path: String, options: Flags, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def getDirectory(path: String, options: Flags, successCallback: DirectoryEntryCallback): Unit = js.native
   def getDirectory(
     path: String,
@@ -75,26 +61,11 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback A callback that is called when errors happen.
     */
   def getFile(path: String): Unit = js.native
-  def getFile(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
-  def getFile(path: String, options: js.UndefOr[scala.Nothing], successCallback: FileEntryCallback): Unit = js.native
-  def getFile(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: FileEntryCallback,
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def getFile(path: String, options: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+  def getFile(path: String, options: Unit, successCallback: FileEntryCallback): Unit = js.native
+  def getFile(path: String, options: Unit, successCallback: FileEntryCallback, errorCallback: ErrorCallback): Unit = js.native
   def getFile(path: String, options: Flags): Unit = js.native
-  def getFile(
-    path: String,
-    options: Flags,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def getFile(path: String, options: Flags, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback, errorCallback: ErrorCallback): Unit = js.native
   

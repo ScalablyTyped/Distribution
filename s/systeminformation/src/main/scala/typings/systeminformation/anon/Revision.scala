@@ -2,15 +2,13 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Revision extends StObject {
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var table: js.Array[Flags] = js.native
+  var table: js.Array[Flags]
 }
 object Revision {
   

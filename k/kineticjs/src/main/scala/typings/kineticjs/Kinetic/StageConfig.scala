@@ -2,19 +2,19 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StageConfig extends ObjectOptionsConfig {
+trait StageConfig
+  extends StObject
+     with ObjectOptionsConfig {
   
-  var container: String = js.native
+  var container: String
   
   @JSName("height")
-  var height_StageConfig: Double = js.native
+  var height_StageConfig: Double
   
   @JSName("width")
-  var width_StageConfig: Double = js.native
+  var width_StageConfig: Double
 }
 object StageConfig {
   

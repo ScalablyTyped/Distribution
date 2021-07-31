@@ -11,8 +11,8 @@ RSocket TCP client for use in Node.js environments
 | Full name          | rsocket-tcp-client |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 41233 |
+| # dependents       | 4 |
+| # downloads        | 64928 |
 | # stars            | 0 |
 
 ## Links

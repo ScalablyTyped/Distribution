@@ -11,8 +11,8 @@ React Sound component using soundmanager2
 | Full name          | react-sound |
 | Keywords           | react, react-component, sound, soundmanager2 |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 348545 |
+| # dependents       | 9 |
+| # downloads        | 394625 |
 | # stars            | 3 |
 
 ## Links

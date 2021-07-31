@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobScopingBlock extends StObject {
   
   /**
     * An array of conditions, one for each condition that determines which objects to include or exclude from the job.
     */
-  var and: js.UndefOr[listOfJobScopeTerm] = js.native
+  var and: js.UndefOr[listOfJobScopeTerm] = js.undefined
 }
 object JobScopingBlock {
   

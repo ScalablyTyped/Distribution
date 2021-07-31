@@ -5,38 +5,36 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  encoding :node.BufferEncoding | undefined} & node.child_process.ExecOptions */
-@js.native
 trait encodingBufferEncodingund extends StObject {
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var encoding: js.UndefOr[BufferEncoding] = js.native
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var env: js.UndefOr[ProcessEnv] = js.native
+  var env: js.UndefOr[ProcessEnv] = js.undefined
   
-  var gid: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.undefined
   
-  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var shell: js.UndefOr[String] = js.native
+  var shell: js.UndefOr[String] = js.undefined
   
   /**
     * @default 0
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var uid: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.undefined
   
   /**
     * @default true
     */
-  var windowsHide: js.UndefOr[Boolean] = js.native
+  var windowsHide: js.UndefOr[Boolean] = js.undefined
 }
 object encodingBufferEncodingund {
   

@@ -7,27 +7,25 @@ import typings.reactSketchapp.reactSketchappStrings.round
 import typings.reactSketchapp.reactSketchappStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrokeProps extends StObject {
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeDasharray: js.UndefOr[NumberArrayProp] = js.native
+  var strokeDasharray: js.UndefOr[NumberArrayProp] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[NumberProp] = js.native
+  var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeLinecap: js.UndefOr[butt | square | round] = js.native
+  var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[miter | bevel | round] = js.native
+  var strokeLinejoin: js.UndefOr[miter | bevel | round] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[NumberProp] = js.native
+  var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeOpacity: js.UndefOr[NumberProp] = js.native
+  var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeWidth: js.UndefOr[NumberProp] = js.native
+  var strokeWidth: js.UndefOr[NumberProp] = js.undefined
 }
 object StrokeProps {
   

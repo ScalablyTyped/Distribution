@@ -5,28 +5,37 @@ import typings.node.Buffer
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("n-readlines", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LineByLine {
+  class ^ protected ()
+    extends StObject
+       with LineByLine {
     def this(file: Double) = this()
     def this(file: PathLike) = this()
     def this(file: Double, options: Options) = this()
     def this(file: PathLike, options: Options) = this()
+    
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* CompleteClass */
+    override def next(): Buffer | `false` = js.native
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
   }
   
-  @js.native
   trait LineByLine extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def next(): Buffer | `false` = js.native
+    def next(): Buffer | `false`
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object LineByLine {
     
@@ -50,12 +59,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var newLineCharacter: js.UndefOr[String] = js.native
+    var newLineCharacter: js.UndefOr[String] = js.undefined
     
-    var readChunk: js.UndefOr[Double] = js.native
+    var readChunk: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

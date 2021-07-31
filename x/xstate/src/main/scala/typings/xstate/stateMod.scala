@@ -23,10 +23,13 @@ import typings.xstate.xstateStrings.configuration
 import typings.xstate.xstateStrings.transitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMod {
+  
+  @JSImport("xstate/lib/State", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xstate/lib/State", "State")
   @js.native
@@ -66,12 +69,12 @@ object stateMod {
     /**
       * An object mapping actor IDs to spawned actors/invoked services.
       */
-    var children: Record[String, Actor[_, AnyEventObject]] = js.native
+    var children: Record[String, Actor[js.Any, AnyEventObject]] = js.native
     
     /**
       * The enabled state nodes representative of the state value.
       */
-    var configuration: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]] = js.native
+    var configuration: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]] = js.native
     
     var context: TContext = js.native
     
@@ -109,8 +112,9 @@ object stateMod {
       * @param delimiter The character(s) that separate each subpath in the string state node path.
       */
     def toStrings(): js.Array[String] = js.native
-    def toStrings(stateValue: js.UndefOr[StateValue], delimiter: String): js.Array[String] = js.native
+    def toStrings(stateValue: Unit, delimiter: String): js.Array[String] = js.native
     def toStrings(stateValue: StateValue): js.Array[String] = js.native
+    def toStrings(stateValue: StateValue, delimiter: String): js.Array[String] = js.native
     
     /**
       * The transition definitions that resulted in this state.
@@ -122,63 +126,56 @@ object stateMod {
   /* static members */
   object State {
     
+    @JSImport("xstate/lib/State", "State")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new State instance for the given `config`.
       * @param config The state config
       */
-    @JSImport("xstate/lib/State", "State.create")
-    @js.native
-    def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, _, Context[TC]] = js.native
+    @scala.inline
+    def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
     
     /**
       * Creates a new State instance for the given `stateValue` and `context`.
       * @param stateValue
       * @param context
       */
-    @JSImport("xstate/lib/State", "State.from")
-    @js.native
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]]): State[TC, TE, _, Context[TC]] = js.native
-    @JSImport("xstate/lib/State", "State.from")
-    @js.native
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
-    @JSImport("xstate/lib/State", "State.from")
-    @js.native
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, _, Context[TC]] = js.native
-    @JSImport("xstate/lib/State", "State.from")
-    @js.native
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
+    @scala.inline
+    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    @scala.inline
+    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    @scala.inline
+    def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    @scala.inline
+    def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
     
     /**
       * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).
       * @param stateValue
       * @param context
       */
-    @JSImport("xstate/lib/State", "State.inert")
-    @js.native
-    def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, _, Context[TC]], context: TC): State[TC, TE, _, Context[TC]] = js.native
-    @JSImport("xstate/lib/State", "State.inert")
-    @js.native
-    def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, _, Context[TC]] = js.native
+    @scala.inline
+    def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    @scala.inline
+    def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
   }
   
-  @JSImport("xstate/lib/State", "bindActionToState")
-  @js.native
-  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Context[TC]]): ActionObject[TC, TE] = js.native
+  @scala.inline
+  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, js.Any, Context[TC]]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
   
-  @JSImport("xstate/lib/State", "isState")
-  @js.native
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
-  @JSImport("xstate/lib/State", "isState")
-  @js.native
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
+  @scala.inline
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
+  @scala.inline
+  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
   
-  @JSImport("xstate/lib/State", "stateValuesEqual")
-  @js.native
-  def stateValuesEqual(): Boolean = js.native
-  @JSImport("xstate/lib/State", "stateValuesEqual")
-  @js.native
-  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
-  @JSImport("xstate/lib/State", "stateValuesEqual")
-  @js.native
-  def stateValuesEqual(a: StateValue): Boolean = js.native
+  @scala.inline
+  def stateValuesEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")().asInstanceOf[Boolean]
+  @scala.inline
+  def stateValuesEqual(a: Unit, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def stateValuesEqual(a: StateValue): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def stateValuesEqual(a: StateValue, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

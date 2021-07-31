@@ -2,20 +2,18 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomHeaders extends StObject {
   
   /** Regular expression string to match files */
-  var `match`: String = js.native
+  var `match`: String
   
   /** HTTP header name */
-  var name: String = js.native
+  var name: String
   
   /** HTTP header value */
-  var value: String = js.native
+  var value: String
 }
 object CustomHeaders {
   

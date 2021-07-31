@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSArrayType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var elementType: TSType = js.native
+  var elementType: TSType
   
   @JSName("type")
-  var type_TSArrayType: typings.babelTypes.babelTypesStrings.TSArrayType = js.native
+  var type_TSArrayType: typings.babelTypes.babelTypesStrings.TSArrayType
 }
 object TSArrayType {
   

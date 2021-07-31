@@ -2,19 +2,17 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: String = js.native
+  var value: String
 }
 object Token {
   

@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGradientColorObject extends StObject {
   
   /**
     * Center horizontal position relative to the shape. Float ranges 0-1.
     */
-  var cx: Double = js.native
+  var cx: Double
   
   /**
     * Center vertical position relative to the shape. Float ranges 0-1.
     */
-  var cy: Double = js.native
+  var cy: Double
   
   /**
     * Radius relative to the shape. Float ranges 0-1.
     */
-  var r: Double = js.native
+  var r: Double
 }
 object RadialGradientColorObject {
   

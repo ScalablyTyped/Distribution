@@ -2,17 +2,15 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineGroupEditableOption extends StObject {
   
-  var add: js.UndefOr[Boolean] = js.native
+  var add: js.UndefOr[Boolean] = js.undefined
   
-  var order: js.UndefOr[Boolean] = js.native
+  var order: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
 }
 object TimelineGroupEditableOption {
   

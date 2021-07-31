@@ -3,17 +3,15 @@ package typings.winrt.Windows.UI.ViewManagement
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInputPane extends StObject {
   
-  var occludedRect: Rect = js.native
+  var occludedRect: Rect
   
-  var onhiding: js.Any = js.native
+  var onhiding: js.Any
   
-  var onshowing: js.Any = js.native
+  var onshowing: js.Any
 }
 object IInputPane {
   

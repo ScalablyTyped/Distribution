@@ -2,29 +2,27 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayerOptions extends StObject {
   
-  var detectRetina: Boolean = js.native
+  var detectRetina: Boolean
   
-  var errorUrl: String = js.native
+  var errorUrl: String
   
-  def getTileUrl(x: Double, y: Double, z: Double): String = js.native
+  def getTileUrl(x: Double, y: Double, z: Double): String
   
-  var map: Map = js.native
+  var map: Map
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var tileSize: Double = js.native
+  var tileSize: Double
   
-  var tileUrl: String = js.native
+  var tileUrl: String
   
-  var zIndex: Double = js.native
+  var zIndex: Double
   
-  var zooms: js.Array[Double] = js.native
+  var zooms: js.Array[Double]
 }
 object TileLayerOptions {
   

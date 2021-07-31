@@ -3,15 +3,19 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberInputMod {
   
   @JSImport("carbon-components/components/number-input/number-input", JSImport.Default)
   @js.native
-  class default protected () extends NumberInput {
+  class default protected ()
+    extends StObject
+       with NumberInput {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleClick(event: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,10 +32,9 @@ object numberInputMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait NumberInput extends StObject {
+  - Dropped any */ trait NumberInput extends StObject {
     
-    def _handleClick(event: js.Any): Unit = js.native
+    def _handleClick(event: js.Any): Unit
   }
   object NumberInput {
     

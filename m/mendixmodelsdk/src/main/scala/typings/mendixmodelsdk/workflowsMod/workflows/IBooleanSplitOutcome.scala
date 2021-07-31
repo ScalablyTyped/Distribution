@@ -2,7 +2,6 @@ package typings.mendixmodelsdk.workflowsMod.workflows
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.15.0: introduced
   */
 @js.native
-trait IBooleanSplitOutcome extends IExclusiveSplitOutcome {
+trait IBooleanSplitOutcome
+  extends StObject
+     with IExclusiveSplitOutcome {
   
   val value: Boolean = js.native
 }

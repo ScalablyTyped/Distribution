@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * considered to have no applicable bids, as described by the specified
   * status.
   */
-@js.native
 trait SchemaBidResponseWithoutBidsStatusRow extends StObject {
   
   /**
     * The number of impressions for which there was a bid response with the
     * specified status.
     */
-  var impressionCount: js.UndefOr[SchemaMetricValue] = js.native
+  var impressionCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
   
   /**
     * The status specifying why the bid responses were considered to have no
     * applicable bids.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaBidResponseWithoutBidsStatusRow {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexDocumentsResponse extends StObject {
   
   /**
     * The names of the fields that are currently being indexed.
     */
-  var FieldNames: js.UndefOr[FieldNameList] = js.native
+  var FieldNames: js.UndefOr[FieldNameList] = js.undefined
 }
 object IndexDocumentsResponse {
   

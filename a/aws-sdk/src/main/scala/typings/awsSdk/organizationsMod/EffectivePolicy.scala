@@ -2,31 +2,29 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectivePolicy extends StObject {
   
   /**
     * The time of the last update to this policy.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The text content of the policy.
     */
-  var PolicyContent: js.UndefOr[typings.awsSdk.organizationsMod.PolicyContent] = js.native
+  var PolicyContent: js.UndefOr[typings.awsSdk.organizationsMod.PolicyContent] = js.undefined
   
   /**
     * The policy type.
     */
-  var PolicyType: js.UndefOr[EffectivePolicyType] = js.native
+  var PolicyType: js.UndefOr[EffectivePolicyType] = js.undefined
   
   /**
     * The account ID of the policy target. 
     */
-  var TargetId: js.UndefOr[PolicyTargetId] = js.native
+  var TargetId: js.UndefOr[PolicyTargetId] = js.undefined
 }
 object EffectivePolicy {
   

@@ -2,32 +2,30 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 天气插件
-@js.native
 trait WeatherLiveResult extends StObject {
   
-  var adcode: String = js.native
+  var adcode: String
   
-  var city: String = js.native
+  var city: String
   
-  var humidity: String = js.native
+  var humidity: String
   
-  var info: String = js.native
+  var info: String
   
-  var province: String = js.native
+  var province: String
   
-  var reportTime: String = js.native
+  var reportTime: String
   
-  var temperature: Double = js.native
+  var temperature: Double
   
-  var weather: String = js.native
+  var weather: String
   
-  var windDirection: String = js.native
+  var windDirection: String
   
-  var windPower: Double = js.native
+  var windPower: Double
 }
 object WeatherLiveResult {
   

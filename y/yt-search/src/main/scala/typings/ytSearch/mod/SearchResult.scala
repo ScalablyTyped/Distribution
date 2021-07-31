@@ -2,27 +2,25 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResult extends StObject {
   
-  var accounts: js.Array[ChannelSearchResult] = js.native
+  var accounts: js.Array[ChannelSearchResult]
   
   var all: js.Array[
     VideoSearchResult | LiveSearchResult | PlaylistSearchResult | ChannelSearchResult
-  ] = js.native
+  ]
   
-  var channels: js.Array[ChannelSearchResult] = js.native
+  var channels: js.Array[ChannelSearchResult]
   
-  var lists: js.Array[PlaylistSearchResult] = js.native
+  var lists: js.Array[PlaylistSearchResult]
   
-  var live: js.Array[LiveSearchResult] = js.native
+  var live: js.Array[LiveSearchResult]
   
-  var playlists: js.Array[PlaylistSearchResult] = js.native
+  var playlists: js.Array[PlaylistSearchResult]
   
-  var videos: js.Array[VideoSearchResult] = js.native
+  var videos: js.Array[VideoSearchResult]
 }
 object SearchResult {
   

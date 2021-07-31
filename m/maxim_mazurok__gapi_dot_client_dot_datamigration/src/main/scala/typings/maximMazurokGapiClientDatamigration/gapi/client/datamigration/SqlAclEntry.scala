@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlAclEntry extends StObject {
   
   /** The time when this access control entry expires in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example: `2012-11-15T16:19:00.094Z`. */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** A label to identify this entry. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** Input only. The time-to-leave of this access control entry. */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
   
   /** The allowlisted value for the access control list. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SqlAclEntry {
   

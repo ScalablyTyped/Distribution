@@ -5,15 +5,22 @@ import typings.typedRestClient.restClientMod.RestClient
 import typings.vsoNodeApi.vsoBaseInterfacesMod.ApiResourceLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vsoClientMod {
   
   @JSImport("vso-node-api/VsoClient", "InvalidApiResourceVersionError")
   @js.native
-  class InvalidApiResourceVersionError () extends Error {
+  class InvalidApiResourceVersionError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("vso-node-api/VsoClient", "VsoClient")
@@ -29,7 +36,7 @@ object vsoClientMod {
       * Sets a promise that is waited on before any requests are issued. Can be used to asynchronously
       * set the request url and auth token manager.
       */
-    def _setInitializationPromise(promise: js.Promise[_]): Unit = js.native
+    def _setInitializationPromise(promise: js.Promise[js.Any]): Unit = js.native
     
     /* protected */ def autoNegotiateApiVersion(location: ApiResourceLocation, requestedVersion: String): String = js.native
     
@@ -84,18 +91,17 @@ object vsoClientMod {
     def PREVIEW_INDICATOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW_INDICATOR")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ClientVersioningData extends StObject {
     
     /**
       * The api version string to send in the request (e.g. "1.0" or "2.0-preview.2")
       */
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The request path string to send the request to.  Looked up via an options request with the location id.
       */
-    var requestUrl: js.UndefOr[String] = js.native
+    var requestUrl: js.UndefOr[String] = js.undefined
   }
   object ClientVersioningData {
     

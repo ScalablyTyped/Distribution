@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorOptions extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait TextEditorOptions extends StObject {
     * When getting a text editor's options, this property will always be present.
     * When setting a text editor's options, this property is optional.
     */
-  var cursorStyle: js.UndefOr[TextEditorCursorStyle] = js.native
+  var cursorStyle: js.UndefOr[TextEditorCursorStyle] = js.undefined
   
   /**
     * When pressing Tab insert [n](#TextEditorOptions.tabSize) spaces.
     * When getting a text editor's options, this property will always be a boolean (resolved).
     * When setting a text editor's options, this property is optional and it can be a boolean or `"auto"`.
     */
-  var insertSpaces: js.UndefOr[Boolean | String] = js.native
+  var insertSpaces: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * Render relative line numbers w.r.t. the current line number.
     * When getting a text editor's options, this property will always be present.
     * When setting a text editor's options, this property is optional.
     */
-  var lineNumbers: js.UndefOr[TextEditorLineNumbersStyle] = js.native
+  var lineNumbers: js.UndefOr[TextEditorLineNumbersStyle] = js.undefined
   
   /**
     * The size in spaces a tab takes. This is used for two purposes:
@@ -37,7 +35,7 @@ trait TextEditorOptions extends StObject {
     * When getting a text editor's options, this property will always be a number (resolved).
     * When setting a text editor's options, this property is optional and it can be a number or `"auto"`.
     */
-  var tabSize: js.UndefOr[Double | String] = js.native
+  var tabSize: js.UndefOr[Double | String] = js.undefined
 }
 object TextEditorOptions {
   

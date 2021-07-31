@@ -2,15 +2,13 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Throughput extends StObject {
   
-  var readCapacity: Double = js.native
+  var readCapacity: Double
   
-  var writeCapacity: Double = js.native
+  var writeCapacity: Double
 }
 object Throughput {
   

@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongPressActionsSuccessData extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var tapIndex: js.UndefOr[Double] = js.native
+  var tapIndex: js.UndefOr[Double] = js.undefined
 }
 object LongPressActionsSuccessData {
   

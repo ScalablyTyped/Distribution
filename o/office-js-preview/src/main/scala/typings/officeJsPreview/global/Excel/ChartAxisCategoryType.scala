@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartAxisCategoryType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartAxisCategoryType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartAxisCategoryType & String] = js.native
   
-  /* "Automatic" */ val automatic: typings.officeJsPreview.Excel.ChartAxisCategoryType.automatic with String = js.native
+  /* "Automatic" */ val automatic: typings.officeJsPreview.Excel.ChartAxisCategoryType.automatic & String = js.native
   
-  /* "DateAxis" */ val dateAxis: typings.officeJsPreview.Excel.ChartAxisCategoryType.dateAxis with String = js.native
+  /* "DateAxis" */ val dateAxis: typings.officeJsPreview.Excel.ChartAxisCategoryType.dateAxis & String = js.native
   
-  /* "TextAxis" */ val textAxis: typings.officeJsPreview.Excel.ChartAxisCategoryType.textAxis with String = js.native
+  /* "TextAxis" */ val textAxis: typings.officeJsPreview.Excel.ChartAxisCategoryType.textAxis & String = js.native
 }

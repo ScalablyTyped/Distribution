@@ -3,25 +3,23 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.GlobalObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WFSWriteTransactionOptions extends StObject {
   
-  var featureNS: String = js.native
+  var featureNS: String
   
-  var featurePrefix: String = js.native
+  var featurePrefix: String
   
-  var featureType: String = js.native
+  var featureType: String
   
-  var gmlOptions: js.UndefOr[GMLOptions] = js.native
+  var gmlOptions: js.UndefOr[GMLOptions] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var nativeElements: js.Array[GlobalObject] = js.native
+  var nativeElements: js.Array[GlobalObject]
   
-  var srsName: js.UndefOr[String] = js.native
+  var srsName: js.UndefOr[String] = js.undefined
 }
 object WFSWriteTransactionOptions {
   

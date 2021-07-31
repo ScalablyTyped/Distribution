@@ -2,19 +2,17 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Close extends StObject {
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[String] = js.native
+  var complete: js.UndefOr[String] = js.undefined
   
-  var incomplete: js.UndefOr[String] = js.native
+  var incomplete: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[String] = js.native
+  var open: js.UndefOr[String] = js.undefined
 }
 object Close {
   

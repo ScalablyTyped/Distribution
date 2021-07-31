@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsList extends StandardParameters {
+trait ParamsResourceProjectsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An expression for filtering the results of the request.  Filter rules are
@@ -38,20 +38,20 @@ trait ParamsResourceProjectsList extends StandardParameters {
     * specified, the call will return projects for which the user has
     * `resourcemanager.projects.get` permissions.  Optional.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of Projects to return in the response. The server can
     * return fewer Projects than requested. If unspecified, server picks an
     * appropriate default.  Optional.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A pagination token returned from a previous call to ListProjects that
     * indicates from where listing should continue.  Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsList {
   

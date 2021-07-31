@@ -2,16 +2,14 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionEventCallback extends StObject {
   
   /**
     * The uri of the endpoint that is hit when an event occurs
     */
-  var uri: String = js.native
+  var uri: String
 }
 object ExtensionEventCallback {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteStreamRequest extends StObject {
   
   /**
     * The stream ID.
     */
-  var streamId: StreamId = js.native
+  var streamId: StreamId
 }
 object DeleteStreamRequest {
   

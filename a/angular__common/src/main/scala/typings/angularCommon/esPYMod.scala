@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.angularCommon.anon.PYG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esPYMod extends Shortcut {

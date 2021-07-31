@@ -4,7 +4,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -71,7 +70,7 @@ object mod {
     var resetDuration: js.Any = js.native
     
     def start(): Unit = js.native
-    def start(callback: js.Function1[/* args */ js.UndefOr[js.Any], _]): Unit = js.native
+    def start(callback: js.Function1[/* args */ js.UndefOr[js.Any], js.Any]): Unit = js.native
     
     var startTime: js.Any = js.native
     
@@ -90,38 +89,37 @@ object mod {
     var version: String = js.native
   }
   
-  @js.native
   trait CountUpOptions extends StObject {
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var decimalPlaces: js.UndefOr[Double] = js.native
+    var decimalPlaces: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     var easingFn: js.UndefOr[
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
-      ] = js.native
+      ] = js.undefined
     
-    var formattingFn: js.UndefOr[js.Function1[/* n */ Double, String]] = js.native
+    var formattingFn: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
     
-    var numerals: js.UndefOr[js.Array[String]] = js.native
+    var numerals: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var smartEasingAmount: js.UndefOr[Double] = js.native
+    var smartEasingAmount: js.UndefOr[Double] = js.undefined
     
-    var smartEasingThreshold: js.UndefOr[Double] = js.native
+    var smartEasingThreshold: js.UndefOr[Double] = js.undefined
     
-    var startVal: js.UndefOr[Double] = js.native
+    var startVal: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var useEasing: js.UndefOr[Boolean] = js.native
+    var useEasing: js.UndefOr[Boolean] = js.undefined
     
-    var useGrouping: js.UndefOr[Boolean] = js.native
+    var useGrouping: js.UndefOr[Boolean] = js.undefined
   }
   object CountUpOptions {
     

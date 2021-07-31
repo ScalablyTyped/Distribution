@@ -3,19 +3,17 @@ package typings.knuddelsUserappsApi.anon
 import typings.knuddelsUserappsApi.mod.global.KnuddelTransferDisplayType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayReasonText extends StObject {
   
-  var displayReasonText: js.UndefOr[String] = js.native
+  var displayReasonText: js.UndefOr[String] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var transferDisplayType: js.UndefOr[KnuddelTransferDisplayType] = js.native
+  var transferDisplayType: js.UndefOr[KnuddelTransferDisplayType] = js.undefined
 }
 object DisplayReasonText {
   

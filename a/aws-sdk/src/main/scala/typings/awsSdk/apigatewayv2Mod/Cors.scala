@@ -2,41 +2,39 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cors extends StObject {
   
   /**
     * Specifies whether credentials are included in the CORS request. Supported only for HTTP APIs.
     */
-  var AllowCredentials: js.UndefOr[boolean] = js.native
+  var AllowCredentials: js.UndefOr[boolean] = js.undefined
   
   /**
     * Represents a collection of allowed headers. Supported only for HTTP APIs.
     */
-  var AllowHeaders: js.UndefOr[CorsHeaderList] = js.native
+  var AllowHeaders: js.UndefOr[CorsHeaderList] = js.undefined
   
   /**
     * Represents a collection of allowed HTTP methods. Supported only for HTTP APIs.
     */
-  var AllowMethods: js.UndefOr[CorsMethodList] = js.native
+  var AllowMethods: js.UndefOr[CorsMethodList] = js.undefined
   
   /**
     * Represents a collection of allowed origins. Supported only for HTTP APIs.
     */
-  var AllowOrigins: js.UndefOr[CorsOriginList] = js.native
+  var AllowOrigins: js.UndefOr[CorsOriginList] = js.undefined
   
   /**
     * Represents a collection of exposed headers. Supported only for HTTP APIs.
     */
-  var ExposeHeaders: js.UndefOr[CorsHeaderList] = js.native
+  var ExposeHeaders: js.UndefOr[CorsHeaderList] = js.undefined
   
   /**
     * The number of seconds that the browser should cache preflight request results. Supported only for HTTP APIs.
     */
-  var MaxAge: js.UndefOr[IntegerWithLengthBetweenMinus1And86400] = js.native
+  var MaxAge: js.UndefOr[IntegerWithLengthBetweenMinus1And86400] = js.undefined
 }
 object Cors {
   

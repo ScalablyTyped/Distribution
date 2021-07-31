@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse extends StObject {
   
   /** The time at which operation processing completed. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** True if the Trial should stop. */
-  var shouldStop: js.UndefOr[Boolean] = js.native
+  var shouldStop: js.UndefOr[Boolean] = js.undefined
   
   /** The time at which the operation was started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse {
   

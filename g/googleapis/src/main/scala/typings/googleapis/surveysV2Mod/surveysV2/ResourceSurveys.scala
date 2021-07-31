@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/surveys/v2", "surveys_v2.Resource$Surveys")
@@ -30,7 +29,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaSurveysDeleteResponse] = js.native
   def delete(callback: BodyResponseCallback[SchemaSurveysDeleteResponse]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurveysDeleteResponse] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurveysDeleteResponse] = js.native
   def delete(params: ParamsResourceSurveysDelete): GaxiosPromise[SchemaSurveysDeleteResponse] = js.native
   def delete(params: ParamsResourceSurveysDelete, callback: BodyResponseCallback[SchemaSurveysDeleteResponse]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSurvey] = js.native
   def get(callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
   def get(params: ParamsResourceSurveysGet): GaxiosPromise[SchemaSurvey] = js.native
   def get(params: ParamsResourceSurveysGet, callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
   def get(
@@ -88,7 +87,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaSurvey] = js.native
   def insert(callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
   def insert(params: ParamsResourceSurveysInsert): GaxiosPromise[SchemaSurvey] = js.native
   def insert(params: ParamsResourceSurveysInsert, callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
   def insert(
@@ -119,7 +118,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSurveysListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSurveysListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurveysListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurveysListResponse] = js.native
   def list(params: ParamsResourceSurveysList): GaxiosPromise[SchemaSurveysListResponse] = js.native
   def list(params: ParamsResourceSurveysList, callback: BodyResponseCallback[SchemaSurveysListResponse]): Unit = js.native
   def list(
@@ -149,7 +148,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def start(): GaxiosPromise[SchemaSurveysStartResponse] = js.native
   def start(callback: BodyResponseCallback[SchemaSurveysStartResponse]): Unit = js.native
-  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurveysStartResponse] = js.native
+  def start(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurveysStartResponse] = js.native
   def start(params: ParamsResourceSurveysStart): GaxiosPromise[SchemaSurveysStartResponse] = js.native
   def start(params: ParamsResourceSurveysStart, callback: BodyResponseCallback[SchemaSurveysStartResponse]): Unit = js.native
   def start(
@@ -178,7 +177,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def stop(): GaxiosPromise[SchemaSurveysStopResponse] = js.native
   def stop(callback: BodyResponseCallback[SchemaSurveysStopResponse]): Unit = js.native
-  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurveysStopResponse] = js.native
+  def stop(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurveysStopResponse] = js.native
   def stop(params: ParamsResourceSurveysStop): GaxiosPromise[SchemaSurveysStopResponse] = js.native
   def stop(params: ParamsResourceSurveysStop, callback: BodyResponseCallback[SchemaSurveysStopResponse]): Unit = js.native
   def stop(
@@ -209,7 +208,7 @@ class ResourceSurveys protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaSurvey] = js.native
   def update(callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSurvey] = js.native
   def update(params: ParamsResourceSurveysUpdate): GaxiosPromise[SchemaSurvey] = js.native
   def update(params: ParamsResourceSurveysUpdate, callback: BodyResponseCallback[SchemaSurvey]): Unit = js.native
   def update(

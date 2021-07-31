@@ -5,20 +5,18 @@ import typings.ractive.ractiveNumbers.`0`
 import typings.ractive.ractiveNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetOpts extends StObject {
   
   /** Whether or not to merge the given value into the existing data or replace the existing data. Defaults to replacing the existing data (false). */
-  var deep: js.UndefOr[Boolean] = js.native
+  var deep: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to keep the template sturctures removed by this set around for future reinstatement. This can be used to avoid throwing away and recreating components when hiding them. Defaults to false. */
-  var keep: js.UndefOr[Boolean] = js.native
+  var keep: js.UndefOr[Boolean] = js.undefined
   
   /** When applied to an array keypath, whether or not to move the existing elements and their associated template around or simply replace them. Defaults to replacement (false). */
-  var shuffle: js.UndefOr[Shuffler] = js.native
+  var shuffle: js.UndefOr[Shuffler] = js.undefined
 }
 object SetOpts {
   

@@ -2,17 +2,15 @@ package typings.async
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error[E, T] extends StObject {
     
-    var error: js.UndefOr[E] = js.native
+    var error: js.UndefOr[E] = js.undefined
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object Error {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error[_, _], E, T] (val x: Self with (Error[E, T])) extends AnyVal {
+    implicit class ErrorMutableBuilder[Self <: Error[?, ?], E, T] (val x: Self & (Error[E, T])) extends AnyVal {
       
       @scala.inline
       def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -40,16 +38,15 @@ object anon {
   }
   
   /* Inlined async.async.RetryOptions & {  arity :number | undefined} */
-  @js.native
   trait RetryOptionsaritynumberun extends StObject {
     
-    var arity: js.UndefOr[Double] = js.native
+    var arity: js.UndefOr[Double] = js.undefined
     
-    var errorFilter: js.UndefOr[js.Function1[/* error */ typings.std.Error, Boolean]] = js.native
+    var errorFilter: js.UndefOr[js.Function1[/* error */ typings.std.Error, Boolean]] = js.undefined
     
-    var interval: js.UndefOr[Double | (js.Function1[/* retryCount */ Double, Double])] = js.native
+    var interval: js.UndefOr[Double | (js.Function1[/* retryCount */ Double, Double])] = js.undefined
     
-    var times: js.UndefOr[Double] = js.native
+    var times: js.UndefOr[Double] = js.undefined
   }
   object RetryOptionsaritynumberun {
     

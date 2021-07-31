@@ -3,15 +3,15 @@ package typings.sharepoint.SP
 import typings.sharepoint.IEnumerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppLicenseCollection extends ClientValueObjectCollection[AppLicense] {
+trait AppLicenseCollection
+  extends StObject
+     with ClientValueObjectCollection[AppLicense] {
   
-  def add(item: AppLicense): Unit = js.native
+  def add(item: AppLicense): Unit
   
-  def get_item(index: Double): AppLicense = js.native
+  def get_item(index: Double): AppLicense
 }
 object AppLicenseCollection {
   

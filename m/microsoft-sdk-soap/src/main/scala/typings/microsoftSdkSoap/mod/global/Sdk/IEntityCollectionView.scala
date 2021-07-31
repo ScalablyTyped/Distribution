@@ -2,25 +2,23 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEntityCollectionView extends StObject {
   
-  var entities: js.Array[IEntityView] = js.native
+  var entities: js.Array[IEntityView]
   
-  var entityName: java.lang.String = js.native
+  var entityName: java.lang.String
   
-  var minActiveRowVersion: java.lang.String = js.native
+  var minActiveRowVersion: java.lang.String
   
-  var moreRecords: scala.Boolean = js.native
+  var moreRecords: scala.Boolean
   
-  var pagingCookie: java.lang.String = js.native
+  var pagingCookie: java.lang.String
   
-  var totalRecordCount: scala.Double = js.native
+  var totalRecordCount: scala.Double
   
-  var totalRecordCountLimitExceeded: scala.Boolean = js.native
+  var totalRecordCountLimitExceeded: scala.Boolean
 }
 object IEntityCollectionView {
   

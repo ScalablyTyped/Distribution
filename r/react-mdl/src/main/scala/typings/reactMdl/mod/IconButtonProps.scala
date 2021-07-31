@@ -2,13 +2,13 @@ package typings.reactMdl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconButtonProps extends ButtonProps {
+trait IconButtonProps
+  extends StObject
+     with ButtonProps {
   
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
 }
 object IconButtonProps {
   

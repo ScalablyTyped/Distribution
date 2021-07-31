@@ -19,7 +19,6 @@ import typings.std.NodeList
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
@@ -28,8 +27,8 @@ object utilsMod {
   @js.native
   class NumberSequence () extends StObject {
     def this(initValue: Double) = this()
-    def this(initValue: js.UndefOr[scala.Nothing], step: Double) = this()
     def this(initValue: Double, step: Double) = this()
+    def this(initValue: Unit, step: Double) = this()
     
     def next(): Double = js.native
     
@@ -68,17 +67,18 @@ object utilsMod {
   /* static members */
   object Promise {
     
-    @JSImport("ag-grid/dist/lib/utils", "Promise.all")
+    @JSImport("ag-grid/dist/lib/utils", "Promise")
     @js.native
-    def all[T](toCombine: js.Array[Promise[T]]): Promise[js.Array[T]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ag-grid/dist/lib/utils", "Promise.external")
-    @js.native
-    def external[T](): ExternalPromise[T] = js.native
+    @scala.inline
+    def all[T](toCombine: js.Array[Promise[T]]): Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(toCombine.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T]]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Promise.resolve")
-    @js.native
-    def resolve[T](value: T): Promise[T] = js.native
+    @scala.inline
+    def external[T](): ExternalPromise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[ExternalPromise[T]]
+    
+    @scala.inline
+    def resolve[T](value: T): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   }
   
   @js.native
@@ -88,15 +88,19 @@ object utilsMod {
   object PromiseStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PromiseStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[PromiseStatus & Double] = js.native
     
     @js.native
-    sealed trait IN_PROGRESS extends PromiseStatus
-    /* 0 */ val IN_PROGRESS: typings.agGrid.utilsMod.PromiseStatus.IN_PROGRESS with Double = js.native
+    sealed trait IN_PROGRESS
+      extends StObject
+         with PromiseStatus
+    /* 0 */ val IN_PROGRESS: typings.agGrid.utilsMod.PromiseStatus.IN_PROGRESS & Double = js.native
     
     @js.native
-    sealed trait RESOLVED extends PromiseStatus
-    /* 1 */ val RESOLVED: typings.agGrid.utilsMod.PromiseStatus.RESOLVED with Double = js.native
+    sealed trait RESOLVED
+      extends StObject
+         with PromiseStatus
+    /* 1 */ val RESOLVED: typings.agGrid.utilsMod.PromiseStatus.RESOLVED & Double = js.native
   }
   
   @JSImport("ag-grid/dist/lib/utils", "Timer")
@@ -136,131 +140,100 @@ object utilsMod {
     @scala.inline
     def PRINTABLE_CHARACTERS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINTABLE_CHARACTERS")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addAgGridEventPath")
-    @js.native
-    def addAgGridEventPath(event: Event): Unit = js.native
+    @scala.inline
+    def addAgGridEventPath(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAgGridEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addChangeListener")
-    @js.native
-    def addChangeListener(element: HTMLElement, listener: EventListener): Unit = js.native
+    @scala.inline
+    def addChangeListener(element: HTMLElement, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(element.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addCssClass")
-    @js.native
-    def addCssClass(element: HTMLElement, className: String): Unit = js.native
+    @scala.inline
+    def addCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addOrRemoveCssClass")
-    @js.native
-    def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = js.native
+    @scala.inline
+    def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addOrRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addSafePassiveEventListener")
-    @js.native
-    def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    @scala.inline
+    def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSafePassiveEventListener")(eElement.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.addStylesToElement")
-    @js.native
-    def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = js.native
+    @scala.inline
+    def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addStylesToElement")(eElement.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.anyExists")
-    @js.native
-    def anyExists(values: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def anyExists(values: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyExists")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.appendHtml")
-    @js.native
-    def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = js.native
+    @scala.inline
+    def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendHtml")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.areEventsNear")
-    @js.native
-    def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.areEventsNear")
-    @js.native
-    def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.areEventsNear")
-    @js.native
-    def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.areEventsNear")
-    @js.native
-    def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = js.native
+    @scala.inline
+    def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.assign")
-    @js.native
-    def assign(`object`: js.Any, sources: js.Any*): js.Any = js.native
+    @scala.inline
+    def assign(`object`: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(`object`.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.callIfPresent")
-    @js.native
-    def callIfPresent(func: js.Function): Unit = js.native
+    @scala.inline
+    def callIfPresent(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callIfPresent")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.camelCaseToHumanText")
-    @js.native
-    def camelCaseToHumanText(camelCase: String): String = js.native
+    @scala.inline
+    def camelCaseToHumanText(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHumanText")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.camelCaseToHyphen")
-    @js.native
-    def camelCaseToHyphen(str: String): String = js.native
+    @scala.inline
+    def camelCaseToHyphen(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHyphen")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.cleanNumber")
-    @js.native
-    def cleanNumber(value: js.Any): Double = js.native
+    @scala.inline
+    def cleanNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.cloneObject")
-    @js.native
-    def cloneObject[T](`object`: T): T = js.native
+    @scala.inline
+    def cloneObject[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.compareArrays")
-    @js.native
-    def compareArrays(array1: js.Array[_], array2: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def compareArrays(array1: js.Array[js.Any], array2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.containsClass")
-    @js.native
-    def containsClass(element: js.Any, className: String): Boolean = js.native
+    @scala.inline
+    def containsClass(element: js.Any, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.copyNodeList")
-    @js.native
-    def copyNodeList(nodeList: NodeList): js.Array[Node] = js.native
+    @scala.inline
+    def copyNodeList(nodeList: NodeList): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyNodeList")(nodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.createArrayOfNumbers")
-    @js.native
-    def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = js.native
+    @scala.inline
+    def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayOfNumbers")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.createEventPath")
-    @js.native
-    def createEventPath(event: Event): js.Array[EventTarget] = js.native
+    @scala.inline
+    def createEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
     
     /**
       * If icon provided, use this (either a string, or a function callback).
       * if not, then use the default icon from the theme
       */
-    @JSImport("ag-grid/dist/lib/utils", "Utils.createIcon")
-    @js.native
-    def createIcon(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = js.native
+    @scala.inline
+    def createIcon(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.createIconNoSpan")
-    @js.native
-    def createIconNoSpan(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = js.native
+    @scala.inline
+    def createIconNoSpan(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconNoSpan")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.cssStyleObjectToMarkup")
-    @js.native
-    def cssStyleObjectToMarkup(stylesToUse: js.Any): String = js.native
+    @scala.inline
+    def cssStyleObjectToMarkup(stylesToUse: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssStyleObjectToMarkup")(stylesToUse.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * https://stackoverflow.com/questions/24004791/can-someone-explain-the-debounce-function-in-javascript
       */
-    @JSImport("ag-grid/dist/lib/utils", "Utils.debounce")
-    @js.native
-    def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.debounce")
-    @js.native
-    def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = js.native
+    @scala.inline
+    def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.defaultComparator")
-    @js.native
-    def defaultComparator(valueA: js.Any, valueB: js.Any): Double = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.defaultComparator")
-    @js.native
-    def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = js.native
+    @scala.inline
+    def defaultComparator(valueA: js.Any, valueB: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.doOnce")
-    @js.native
-    def doOnce(func: js.Function0[Unit], key: String): Unit = js.native
+    @scala.inline
+    def doOnce(func: js.Function0[Unit], key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doOnce")(func.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.doOnceFlags")
     @js.native
@@ -268,173 +241,128 @@ object utilsMod {
     @scala.inline
     def doOnceFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doOnceFlags")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.ensureDomOrder")
-    @js.native
-    def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = js.native
+    @scala.inline
+    def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.escape")
-    @js.native
-    def escape(toEscape: String): String = js.native
+    @scala.inline
+    def escape(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.every")
-    @js.native
-    def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = js.native
+    @scala.inline
+    def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.executeAfter")
-    @js.native
-    def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = js.native
+    @scala.inline
+    def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAfter")(funcs.asInstanceOf[js.Any], millis.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.executeInAWhile")
-    @js.native
-    def executeInAWhile(funcs: js.Array[js.Function]): Unit = js.native
+    @scala.inline
+    def executeInAWhile(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeInAWhile")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.executeNextVMTurn")
-    @js.native
-    def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = js.native
+    @scala.inline
+    def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeNextVMTurn")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.exists")
-    @js.native
-    def exists(value: js.Any): Boolean = js.native
+    @scala.inline
+    def exists(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.existsAndNotEmpty")
-    @js.native
-    def existsAndNotEmpty(value: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def existsAndNotEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAndNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.filter")
-    @js.native
-    def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = js.native
+    @scala.inline
+    def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: String): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: Boolean): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: String): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: Boolean): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = js.native
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.firstExistingValue")
-    @js.native
-    def firstExistingValue[A](values: A*): A = js.native
+    @scala.inline
+    def firstExistingValue[A](values: A*): A = ^.asInstanceOf[js.Dynamic].applyDynamic("firstExistingValue")(values.asInstanceOf[js.Any]).asInstanceOf[A]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.forEach")
-    @js.native
-    def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.forEachSnapshotFirst")
-    @js.native
-    def forEachSnapshotFirst(list: js.Array[_], callback: js.Function1[/* item */ js.Any, Unit]): Unit = js.native
+    @scala.inline
+    def forEachSnapshotFirst(list: js.Array[js.Any], callback: js.Function1[/* item */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSnapshotFirst")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.formatNumberCommas")
-    @js.native
-    def formatNumberCommas(value: Double): String = js.native
+    @scala.inline
+    def formatNumberCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.formatNumberTwoDecimalPlacesAndCommas")
-    @js.native
-    def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = js.native
+    @scala.inline
+    def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberTwoDecimalPlacesAndCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.formatWidth")
-    @js.native
-    def formatWidth(width: String): String = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.formatWidth")
-    @js.native
-    def formatWidth(width: Double): String = js.native
+    @scala.inline
+    def formatWidth(width: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatWidth(width: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.fuzzyCheckStrings")
-    @js.native
-    def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = js.native
+    @scala.inline
+    def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyCheckStrings")(inputValues.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.fuzzySuggestions")
-    @js.native
-    def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = js.native
+    @scala.inline
+    def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzySuggestions")(inputValue.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.get")
-    @js.native
-    def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(source.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getAllKeysInObjects")
-    @js.native
-    def getAllKeysInObjects(objects: js.Array[_]): js.Array[String] = js.native
+    @scala.inline
+    def getAllKeysInObjects(objects: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysInObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getBodyHeight")
-    @js.native
-    def getBodyHeight(): Double = js.native
+    @scala.inline
+    def getBodyHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyHeight")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getBodyWidth")
-    @js.native
-    def getBodyWidth(): Double = js.native
+    @scala.inline
+    def getBodyWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyWidth")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getElementAttribute")
-    @js.native
-    def getElementAttribute(element: js.Any, attributeName: String): String = js.native
+    @scala.inline
+    def getElementAttribute(element: js.Any, attributeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(element.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getEventPath")
-    @js.native
-    def getEventPath(event: Event): js.Array[EventTarget] = js.native
+    @scala.inline
+    def getEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getFunctionParameters")
-    @js.native
-    def getFunctionParameters(func: js.Any): js.Any = js.native
+    @scala.inline
+    def getFunctionParameters(func: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionParameters")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getMaxDivHeight")
-    @js.native
-    def getMaxDivHeight(): Double = js.native
+    @scala.inline
+    def getMaxDivHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDivHeight")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getNameOfClass")
-    @js.native
-    def getNameOfClass(TheClass: js.Any): String = js.native
+    @scala.inline
+    def getNameOfClass(TheClass: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfClass")(TheClass.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getScrollLeft")
-    @js.native
-    def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = js.native
+    @scala.inline
+    def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollLeft")(element.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getScrollbarWidth")
-    @js.native
-    def getScrollbarWidth(): Double = js.native
+    @scala.inline
+    def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getTarget")
-    @js.native
-    def getTarget(event: Event): Element = js.native
+    @scala.inline
+    def getTarget(event: Event): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(event.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.getValueUsingField")
-    @js.native
-    def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = js.native
+    @scala.inline
+    def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueUsingField")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any], fieldContainsDots.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.get_bigrams")
-    @js.native
-    def get_bigrams(from: String): js.Array[_] = js.native
+    @scala.inline
+    def get_bigrams(from: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_bigrams")(from.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.hyphenToCamelCase")
-    @js.native
-    def hyphenToCamelCase(str: String): String = js.native
+    @scala.inline
+    def hyphenToCamelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenToCamelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.iconNameClassMap")
     @js.native
@@ -442,41 +370,32 @@ object utilsMod {
     @scala.inline
     def iconNameClassMap_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconNameClassMap")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.insertArrayIntoArray")
-    @js.native
-    def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = js.native
+    @scala.inline
+    def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertArrayIntoArray")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.insertIntoArray")
-    @js.native
-    def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = js.native
+    @scala.inline
+    def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertIntoArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.insertTemplateWithDomOrder")
-    @js.native
-    def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = js.native
+    @scala.inline
+    def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertTemplateWithDomOrder")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.insertWithDomOrder")
-    @js.native
-    def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = js.native
+    @scala.inline
+    def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertWithDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isBrowserChrome")
-    @js.native
-    def isBrowserChrome(): Boolean = js.native
+    @scala.inline
+    def isBrowserChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserChrome")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isBrowserEdge")
-    @js.native
-    def isBrowserEdge(): Boolean = js.native
+    @scala.inline
+    def isBrowserEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserEdge")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isBrowserFirefox")
-    @js.native
-    def isBrowserFirefox(): Boolean = js.native
+    @scala.inline
+    def isBrowserFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserFirefox")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isBrowserIE")
-    @js.native
-    def isBrowserIE(): Boolean = js.native
+    @scala.inline
+    def isBrowserIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserIE")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isBrowserSafari")
-    @js.native
-    def isBrowserSafari(): Boolean = js.native
+    @scala.inline
+    def isBrowserSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSafari")().asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.isChrome")
     @js.native
@@ -490,17 +409,14 @@ object utilsMod {
     @scala.inline
     def isEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEdge")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isElement")
-    @js.native
-    def isElement(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isElementInEventPath")
-    @js.native
-    def isElementInEventPath(element: HTMLElement, event: Event): Boolean = js.native
+    @scala.inline
+    def isElementInEventPath(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementInEventPath")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isEventFromPrintableCharacter")
-    @js.native
-    def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = js.native
+    @scala.inline
+    def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFromPrintableCharacter")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.isFirefox")
     @js.native
@@ -508,9 +424,8 @@ object utilsMod {
     @scala.inline
     def isFirefox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFirefox")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isHorizontalScrollShowing")
-    @js.native
-    def isHorizontalScrollShowing(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isHorizontalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.isIE")
     @js.native
@@ -524,28 +439,23 @@ object utilsMod {
     @scala.inline
     def isIPad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIPad")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isKeyPressed")
-    @js.native
-    def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = js.native
+    @scala.inline
+    def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyPressed")(event.asInstanceOf[js.Any], keyToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isNode")
-    @js.native
-    def isNode(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isNode(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isNodeOrElement")
-    @js.native
-    def isNodeOrElement(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isNodeOrElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOrElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * From http://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
       */
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isNumeric")
-    @js.native
-    def isNumeric(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isNumeric(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isNumpadDelWithNumlockOnForEdgeOrIe")
-    @js.native
-    def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = js.native
+    @scala.inline
+    def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumpadDelWithNumlockOnForEdgeOrIe")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.isSafari")
     @js.native
@@ -553,83 +463,64 @@ object utilsMod {
     @scala.inline
     def isSafari_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSafari")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isStopPropagationForAgGrid")
-    @js.native
-    def isStopPropagationForAgGrid(event: Event): Boolean = js.native
+    @scala.inline
+    def isStopPropagationForAgGrid(event: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isUserAgentIPad")
-    @js.native
-    def isUserAgentIPad(): Boolean = js.native
+    @scala.inline
+    def isUserAgentIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserAgentIPad")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isVerticalScrollShowing")
-    @js.native
-    def isVerticalScrollShowing(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isVerticalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVerticalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.isVisible")
-    @js.native
-    def isVisible(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.iterateArray")
-    @js.native
-    def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateArray")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.iterateNamedNodeMap")
-    @js.native
-    def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = js.native
+    @scala.inline
+    def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateNamedNodeMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.iterateObject")
-    @js.native
-    def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.iterateObject")
-    @js.native
-    def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = js.native
+    @scala.inline
+    def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * loads the template and returns it as an element. makes up for no simple way in
       * the dom api to load html directly, eg we cannot do this: document.createElement(template)
       */
-    @JSImport("ag-grid/dist/lib/utils", "Utils.loadTemplate")
-    @js.native
-    def loadTemplate(template: String): HTMLElement = js.native
+    @scala.inline
+    def loadTemplate(template: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.makeNull")
-    @js.native
-    def makeNull[T](value: T): T = js.native
+    @scala.inline
+    def makeNull[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNull")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.map")
-    @js.native
-    def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = js.native
+    @scala.inline
+    def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.mapObject")
-    @js.native
-    def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = js.native
+    @scala.inline
+    def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.mergeDeep")
-    @js.native
-    def mergeDeep(dest: js.Any, source: js.Any): Unit = js.native
+    @scala.inline
+    def mergeDeep(dest: js.Any, source: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.message")
-    @js.native
-    def message(msg: String): Unit = js.native
+    @scala.inline
+    def message(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("message")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.missing")
-    @js.native
-    def missing(value: js.Any): Boolean = js.native
+    @scala.inline
+    def missing(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missing")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.missingOrEmpty")
-    @js.native
-    def missingOrEmpty(value: String): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "Utils.missingOrEmpty")
-    @js.native
-    def missingOrEmpty(value: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def missingOrEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def missingOrEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.missingOrEmptyObject")
-    @js.native
-    def missingOrEmptyObject(value: js.Any): Boolean = js.native
+    @scala.inline
+    def missingOrEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.moveInArray")
-    @js.native
-    def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = js.native
+    @scala.inline
+    def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInArray")(array.asInstanceOf[js.Any], objectsToMove.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Mouse wheel (and 2-finger trackpad) support on the web sucks.  It is
@@ -731,25 +622,20 @@ object utilsMod {
       *         Firefox v4/Win7  |     undefined    |       3
       *
       */
-    @JSImport("ag-grid/dist/lib/utils", "Utils.normalizeWheel")
-    @js.native
-    def normalizeWheel(event: js.Any): js.Any = js.native
+    @scala.inline
+    def normalizeWheel(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWheel")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.offsetHeight")
-    @js.native
-    def offsetHeight(element: HTMLElement): Double = js.native
+    @scala.inline
+    def offsetHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.offsetWidth")
-    @js.native
-    def offsetWidth(element: HTMLElement): Double = js.native
+    @scala.inline
+    def offsetWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.pad")
-    @js.native
-    def pad(num: Double, totalStringSize: Double): String = js.native
+    @scala.inline
+    def pad(num: Double, totalStringSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], totalStringSize.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.parseYyyyMmDdToDate")
-    @js.native
-    def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = js.native
+    @scala.inline
+    def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseYyyyMmDdToDate")(yyyyMmDd.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("ag-grid/dist/lib/utils", "Utils.passiveEvents")
     @js.native
@@ -757,101 +643,77 @@ object utilsMod {
     @scala.inline
     def passiveEvents_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passiveEvents")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.prependDC")
-    @js.native
-    def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = js.native
+    @scala.inline
+    def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependDC")(parent.asInstanceOf[js.Any], documentFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.pushAll")
-    @js.native
-    def pushAll(target: js.Array[_], source: js.Array[_]): Unit = js.native
+    @scala.inline
+    def pushAll(target: js.Array[js.Any], source: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushAll")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.referenceCompare")
-    @js.native
-    def referenceCompare(left: js.Any, right: js.Any): Boolean = js.native
+    @scala.inline
+    def referenceCompare(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("referenceCompare")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeAllChildren")
-    @js.native
-    def removeAllChildren(node: HTMLElement): Unit = js.native
+    @scala.inline
+    def removeAllChildren(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeAllFromArray")
-    @js.native
-    def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = js.native
+    @scala.inline
+    def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllFromArray")(array.asInstanceOf[js.Any], toRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeCssClass")
-    @js.native
-    def removeCssClass(element: HTMLElement, className: String): Unit = js.native
+    @scala.inline
+    def removeCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeElement")
-    @js.native
-    def removeElement(parent: HTMLElement, cssSelector: String): Unit = js.native
+    @scala.inline
+    def removeElement(parent: HTMLElement, cssSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(parent.asInstanceOf[js.Any], cssSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeFromArray")
-    @js.native
-    def removeFromArray[T](array: js.Array[T], `object`: T): Unit = js.native
+    @scala.inline
+    def removeFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeFromParent")
-    @js.native
-    def removeFromParent(node: Element): Unit = js.native
+    @scala.inline
+    def removeFromParent(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromParent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.removeRepeatsFromArray")
-    @js.native
-    def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = js.native
+    @scala.inline
+    def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeRepeatsFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.serializeDateToYyyyMmDd")
-    @js.native
-    def serializeDateToYyyyMmDd(date: Date, separator: String): String = js.native
+    @scala.inline
+    def serializeDateToYyyyMmDd(date: Date, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeDateToYyyyMmDd")(date.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.setCheckboxState")
-    @js.native
-    def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = js.native
+    @scala.inline
+    def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCheckboxState")(eCheckbox.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.setHidden")
-    @js.native
-    def setHidden(element: HTMLElement, hidden: Boolean): Unit = js.native
+    @scala.inline
+    def setHidden(element: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(element.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.setScrollLeft")
-    @js.native
-    def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = js.native
+    @scala.inline
+    def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollLeft")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.setVisible")
-    @js.native
-    def setVisible(element: HTMLElement, visible: Boolean): Unit = js.native
+    @scala.inline
+    def setVisible(element: HTMLElement, visible: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisible")(element.asInstanceOf[js.Any], visible.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.shallowCompare")
-    @js.native
-    def shallowCompare(arr1: js.Array[_], arr2: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def shallowCompare(arr1: js.Array[js.Any], arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.sortNumberArray")
-    @js.native
-    def sortNumberArray(numberArray: js.Array[Double]): Unit = js.native
+    @scala.inline
+    def sortNumberArray(numberArray: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortNumberArray")(numberArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.sortRowNodesByOrder")
-    @js.native
-    def sortRowNodesByOrder(rowNodes: js.Array[RowNode], rowNodeOrder: StringDictionary[Double]): Unit = js.native
+    @scala.inline
+    def sortRowNodesByOrder(rowNodes: js.Array[RowNode], rowNodeOrder: StringDictionary[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortRowNodesByOrder")(rowNodes.asInstanceOf[js.Any], rowNodeOrder.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.stopPropagationForAgGrid")
-    @js.native
-    def stopPropagationForAgGrid(event: Event): Unit = js.native
+    @scala.inline
+    def stopPropagationForAgGrid(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.string_similarity")
-    @js.native
-    def string_similarity(str1: String, str2: String): Double = js.native
+    @scala.inline
+    def string_similarity(str1: String, str2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("string_similarity")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.toStringOrNull")
-    @js.native
-    def toStringOrNull(value: js.Any): String = js.native
+    @scala.inline
+    def toStringOrNull(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringOrNull")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.toStrings")
-    @js.native
-    def toStrings[T](array: js.Array[T]): js.Array[String] = js.native
+    @scala.inline
+    def toStrings[T](array: js.Array[T]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStrings")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.traverseNodesWithKey")
-    @js.native
-    def traverseNodesWithKey(nodes: js.Array[RowNode], callback: js.Function2[/* node */ RowNode, /* key */ String, Unit]): Unit = js.native
+    @scala.inline
+    def traverseNodesWithKey(nodes: js.Array[RowNode], callback: js.Function2[/* node */ RowNode, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNodesWithKey")(nodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "Utils.values")
-    @js.native
-    def values[T](`object`: StringDictionary[T]): js.Array[T] = js.native
+    @scala.inline
+    def values[T](`object`: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -882,131 +744,100 @@ object utilsMod {
     @scala.inline
     def PRINTABLE_CHARACTERS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINTABLE_CHARACTERS")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addAgGridEventPath")
-    @js.native
-    def addAgGridEventPath(event: Event): Unit = js.native
+    @scala.inline
+    def addAgGridEventPath(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAgGridEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addChangeListener")
-    @js.native
-    def addChangeListener(element: HTMLElement, listener: EventListener): Unit = js.native
+    @scala.inline
+    def addChangeListener(element: HTMLElement, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(element.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addCssClass")
-    @js.native
-    def addCssClass(element: HTMLElement, className: String): Unit = js.native
+    @scala.inline
+    def addCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addOrRemoveCssClass")
-    @js.native
-    def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = js.native
+    @scala.inline
+    def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addOrRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addSafePassiveEventListener")
-    @js.native
-    def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    @scala.inline
+    def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSafePassiveEventListener")(eElement.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.addStylesToElement")
-    @js.native
-    def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = js.native
+    @scala.inline
+    def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addStylesToElement")(eElement.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.anyExists")
-    @js.native
-    def anyExists(values: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def anyExists(values: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyExists")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.appendHtml")
-    @js.native
-    def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = js.native
+    @scala.inline
+    def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendHtml")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.areEventsNear")
-    @js.native
-    def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.areEventsNear")
-    @js.native
-    def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.areEventsNear")
-    @js.native
-    def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.areEventsNear")
-    @js.native
-    def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = js.native
+    @scala.inline
+    def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.assign")
-    @js.native
-    def assign(`object`: js.Any, sources: js.Any*): js.Any = js.native
+    @scala.inline
+    def assign(`object`: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(`object`.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.callIfPresent")
-    @js.native
-    def callIfPresent(func: js.Function): Unit = js.native
+    @scala.inline
+    def callIfPresent(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callIfPresent")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.camelCaseToHumanText")
-    @js.native
-    def camelCaseToHumanText(camelCase: String): String = js.native
+    @scala.inline
+    def camelCaseToHumanText(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHumanText")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.camelCaseToHyphen")
-    @js.native
-    def camelCaseToHyphen(str: String): String = js.native
+    @scala.inline
+    def camelCaseToHyphen(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHyphen")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.cleanNumber")
-    @js.native
-    def cleanNumber(value: js.Any): Double = js.native
+    @scala.inline
+    def cleanNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.cloneObject")
-    @js.native
-    def cloneObject[T](`object`: T): T = js.native
+    @scala.inline
+    def cloneObject[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.compareArrays")
-    @js.native
-    def compareArrays(array1: js.Array[_], array2: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def compareArrays(array1: js.Array[js.Any], array2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.containsClass")
-    @js.native
-    def containsClass(element: js.Any, className: String): Boolean = js.native
+    @scala.inline
+    def containsClass(element: js.Any, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.copyNodeList")
-    @js.native
-    def copyNodeList(nodeList: NodeList): js.Array[Node] = js.native
+    @scala.inline
+    def copyNodeList(nodeList: NodeList): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyNodeList")(nodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.createArrayOfNumbers")
-    @js.native
-    def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = js.native
+    @scala.inline
+    def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayOfNumbers")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.createEventPath")
-    @js.native
-    def createEventPath(event: Event): js.Array[EventTarget] = js.native
+    @scala.inline
+    def createEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
     
     /**
       * If icon provided, use this (either a string, or a function callback).
       * if not, then use the default icon from the theme
       */
-    @JSImport("ag-grid/dist/lib/utils", "_.createIcon")
-    @js.native
-    def createIcon(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = js.native
+    @scala.inline
+    def createIcon(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.createIconNoSpan")
-    @js.native
-    def createIconNoSpan(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = js.native
+    @scala.inline
+    def createIconNoSpan(iconName: String, gridOptionsWrapper: GridOptionsWrapper, column: Column): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconNoSpan")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.cssStyleObjectToMarkup")
-    @js.native
-    def cssStyleObjectToMarkup(stylesToUse: js.Any): String = js.native
+    @scala.inline
+    def cssStyleObjectToMarkup(stylesToUse: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssStyleObjectToMarkup")(stylesToUse.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * https://stackoverflow.com/questions/24004791/can-someone-explain-the-debounce-function-in-javascript
       */
-    @JSImport("ag-grid/dist/lib/utils", "_.debounce")
-    @js.native
-    def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.debounce")
-    @js.native
-    def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = js.native
+    @scala.inline
+    def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.defaultComparator")
-    @js.native
-    def defaultComparator(valueA: js.Any, valueB: js.Any): Double = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.defaultComparator")
-    @js.native
-    def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = js.native
+    @scala.inline
+    def defaultComparator(valueA: js.Any, valueB: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.doOnce")
-    @js.native
-    def doOnce(func: js.Function0[Unit], key: String): Unit = js.native
+    @scala.inline
+    def doOnce(func: js.Function0[Unit], key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doOnce")(func.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ag-grid/dist/lib/utils", "_.doOnceFlags")
     @js.native
@@ -1014,209 +845,155 @@ object utilsMod {
     @scala.inline
     def doOnceFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doOnceFlags")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.ensureDomOrder")
-    @js.native
-    def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = js.native
+    @scala.inline
+    def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.escape")
-    @js.native
-    def escape(toEscape: String): String = js.native
+    @scala.inline
+    def escape(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.every")
-    @js.native
-    def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = js.native
+    @scala.inline
+    def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.executeAfter")
-    @js.native
-    def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = js.native
+    @scala.inline
+    def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAfter")(funcs.asInstanceOf[js.Any], millis.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.executeInAWhile")
-    @js.native
-    def executeInAWhile(funcs: js.Array[js.Function]): Unit = js.native
+    @scala.inline
+    def executeInAWhile(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeInAWhile")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.executeNextVMTurn")
-    @js.native
-    def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = js.native
+    @scala.inline
+    def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeNextVMTurn")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.exists")
-    @js.native
-    def exists(value: js.Any): Boolean = js.native
+    @scala.inline
+    def exists(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.existsAndNotEmpty")
-    @js.native
-    def existsAndNotEmpty(value: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def existsAndNotEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAndNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.filter")
-    @js.native
-    def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = js.native
+    @scala.inline
+    def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: String): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: Boolean): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: String): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: Boolean): T = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.find")
-    @js.native
-    def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = js.native
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.firstExistingValue")
-    @js.native
-    def firstExistingValue[A](values: A*): A = js.native
+    @scala.inline
+    def firstExistingValue[A](values: A*): A = ^.asInstanceOf[js.Dynamic].applyDynamic("firstExistingValue")(values.asInstanceOf[js.Any]).asInstanceOf[A]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.forEach")
-    @js.native
-    def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.forEachSnapshotFirst")
-    @js.native
-    def forEachSnapshotFirst(list: js.Array[_], callback: js.Function1[/* item */ js.Any, Unit]): Unit = js.native
+    @scala.inline
+    def forEachSnapshotFirst(list: js.Array[js.Any], callback: js.Function1[/* item */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSnapshotFirst")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.formatNumberCommas")
-    @js.native
-    def formatNumberCommas(value: Double): String = js.native
+    @scala.inline
+    def formatNumberCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.formatNumberTwoDecimalPlacesAndCommas")
-    @js.native
-    def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = js.native
+    @scala.inline
+    def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberTwoDecimalPlacesAndCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.formatWidth")
-    @js.native
-    def formatWidth(width: String): String = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.formatWidth")
-    @js.native
-    def formatWidth(width: Double): String = js.native
+    @scala.inline
+    def formatWidth(width: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatWidth(width: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.fuzzyCheckStrings")
-    @js.native
-    def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = js.native
+    @scala.inline
+    def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyCheckStrings")(inputValues.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.fuzzySuggestions")
-    @js.native
-    def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = js.native
+    @scala.inline
+    def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzySuggestions")(inputValue.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.get")
-    @js.native
-    def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(source.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getAllKeysInObjects")
-    @js.native
-    def getAllKeysInObjects(objects: js.Array[_]): js.Array[String] = js.native
+    @scala.inline
+    def getAllKeysInObjects(objects: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysInObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.get_bigrams")
-    @js.native
-    def getBigrams(from: String): js.Array[_] = js.native
+    @scala.inline
+    def getBigrams(from: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_bigrams")(from.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getBodyHeight")
-    @js.native
-    def getBodyHeight(): Double = js.native
+    @scala.inline
+    def getBodyHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyHeight")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getBodyWidth")
-    @js.native
-    def getBodyWidth(): Double = js.native
+    @scala.inline
+    def getBodyWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyWidth")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getElementAttribute")
-    @js.native
-    def getElementAttribute(element: js.Any, attributeName: String): String = js.native
+    @scala.inline
+    def getElementAttribute(element: js.Any, attributeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(element.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getEventPath")
-    @js.native
-    def getEventPath(event: Event): js.Array[EventTarget] = js.native
+    @scala.inline
+    def getEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getFunctionParameters")
-    @js.native
-    def getFunctionParameters(func: js.Any): js.Any = js.native
+    @scala.inline
+    def getFunctionParameters(func: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionParameters")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getMaxDivHeight")
-    @js.native
-    def getMaxDivHeight(): Double = js.native
+    @scala.inline
+    def getMaxDivHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDivHeight")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getNameOfClass")
-    @js.native
-    def getNameOfClass(TheClass: js.Any): String = js.native
+    @scala.inline
+    def getNameOfClass(TheClass: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfClass")(TheClass.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getScrollLeft")
-    @js.native
-    def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = js.native
+    @scala.inline
+    def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollLeft")(element.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getScrollbarWidth")
-    @js.native
-    def getScrollbarWidth(): Double = js.native
+    @scala.inline
+    def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getTarget")
-    @js.native
-    def getTarget(event: Event): Element = js.native
+    @scala.inline
+    def getTarget(event: Event): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(event.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.getValueUsingField")
-    @js.native
-    def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = js.native
+    @scala.inline
+    def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueUsingField")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any], fieldContainsDots.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.hyphenToCamelCase")
-    @js.native
-    def hyphenToCamelCase(str: String): String = js.native
+    @scala.inline
+    def hyphenToCamelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenToCamelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.insertArrayIntoArray")
-    @js.native
-    def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = js.native
+    @scala.inline
+    def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertArrayIntoArray")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.insertIntoArray")
-    @js.native
-    def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = js.native
+    @scala.inline
+    def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertIntoArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.insertTemplateWithDomOrder")
-    @js.native
-    def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = js.native
+    @scala.inline
+    def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertTemplateWithDomOrder")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.insertWithDomOrder")
-    @js.native
-    def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = js.native
+    @scala.inline
+    def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertWithDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isBrowserChrome")
-    @js.native
-    def isBrowserChrome(): Boolean = js.native
+    @scala.inline
+    def isBrowserChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserChrome")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isBrowserEdge")
-    @js.native
-    def isBrowserEdge(): Boolean = js.native
+    @scala.inline
+    def isBrowserEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserEdge")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isBrowserFirefox")
-    @js.native
-    def isBrowserFirefox(): Boolean = js.native
+    @scala.inline
+    def isBrowserFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserFirefox")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isBrowserIE")
-    @js.native
-    def isBrowserIE(): Boolean = js.native
+    @scala.inline
+    def isBrowserIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserIE")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isBrowserSafari")
-    @js.native
-    def isBrowserSafari(): Boolean = js.native
+    @scala.inline
+    def isBrowserSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSafari")().asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "_.isChrome")
     @js.native
@@ -1230,17 +1007,14 @@ object utilsMod {
     @scala.inline
     def isEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEdge")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isElement")
-    @js.native
-    def isElement(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isElementInEventPath")
-    @js.native
-    def isElementInEventPath(element: HTMLElement, event: Event): Boolean = js.native
+    @scala.inline
+    def isElementInEventPath(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementInEventPath")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isEventFromPrintableCharacter")
-    @js.native
-    def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = js.native
+    @scala.inline
+    def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFromPrintableCharacter")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "_.isFirefox")
     @js.native
@@ -1248,9 +1022,8 @@ object utilsMod {
     @scala.inline
     def isFirefox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFirefox")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isHorizontalScrollShowing")
-    @js.native
-    def isHorizontalScrollShowing(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isHorizontalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("ag-grid/dist/lib/utils", "_.isIE")
     @js.native
@@ -1264,28 +1037,23 @@ object utilsMod {
     @scala.inline
     def isIPad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIPad")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isKeyPressed")
-    @js.native
-    def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = js.native
+    @scala.inline
+    def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyPressed")(event.asInstanceOf[js.Any], keyToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isNode")
-    @js.native
-    def isNode(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isNode(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isNodeOrElement")
-    @js.native
-    def isNodeOrElement(o: js.Any): Boolean = js.native
+    @scala.inline
+    def isNodeOrElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOrElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * From http://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
       */
-    @JSImport("ag-grid/dist/lib/utils", "_.isNumeric")
-    @js.native
-    def isNumeric(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isNumeric(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isNumpadDelWithNumlockOnForEdgeOrIe")
-    @js.native
-    def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = js.native
+    @scala.inline
+    def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumpadDelWithNumlockOnForEdgeOrIe")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("ag-grid/dist/lib/utils", "_.isSafari")
     @js.native
@@ -1293,83 +1061,64 @@ object utilsMod {
     @scala.inline
     def isSafari_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSafari")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isStopPropagationForAgGrid")
-    @js.native
-    def isStopPropagationForAgGrid(event: Event): Boolean = js.native
+    @scala.inline
+    def isStopPropagationForAgGrid(event: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isUserAgentIPad")
-    @js.native
-    def isUserAgentIPad(): Boolean = js.native
+    @scala.inline
+    def isUserAgentIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserAgentIPad")().asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isVerticalScrollShowing")
-    @js.native
-    def isVerticalScrollShowing(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isVerticalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVerticalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.isVisible")
-    @js.native
-    def isVisible(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.iterateArray")
-    @js.native
-    def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateArray")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.iterateNamedNodeMap")
-    @js.native
-    def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = js.native
+    @scala.inline
+    def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateNamedNodeMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.iterateObject")
-    @js.native
-    def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.iterateObject")
-    @js.native
-    def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = js.native
+    @scala.inline
+    def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * loads the template and returns it as an element. makes up for no simple way in
       * the dom api to load html directly, eg we cannot do this: document.createElement(template)
       */
-    @JSImport("ag-grid/dist/lib/utils", "_.loadTemplate")
-    @js.native
-    def loadTemplate(template: String): HTMLElement = js.native
+    @scala.inline
+    def loadTemplate(template: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.makeNull")
-    @js.native
-    def makeNull[T](value: T): T = js.native
+    @scala.inline
+    def makeNull[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNull")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.map")
-    @js.native
-    def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = js.native
+    @scala.inline
+    def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.mapObject")
-    @js.native
-    def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = js.native
+    @scala.inline
+    def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.mergeDeep")
-    @js.native
-    def mergeDeep(dest: js.Any, source: js.Any): Unit = js.native
+    @scala.inline
+    def mergeDeep(dest: js.Any, source: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.message")
-    @js.native
-    def message(msg: String): Unit = js.native
+    @scala.inline
+    def message(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("message")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.missing")
-    @js.native
-    def missing(value: js.Any): Boolean = js.native
+    @scala.inline
+    def missing(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missing")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.missingOrEmpty")
-    @js.native
-    def missingOrEmpty(value: String): Boolean = js.native
-    @JSImport("ag-grid/dist/lib/utils", "_.missingOrEmpty")
-    @js.native
-    def missingOrEmpty(value: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def missingOrEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def missingOrEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.missingOrEmptyObject")
-    @js.native
-    def missingOrEmptyObject(value: js.Any): Boolean = js.native
+    @scala.inline
+    def missingOrEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.moveInArray")
-    @js.native
-    def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = js.native
+    @scala.inline
+    def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInArray")(array.asInstanceOf[js.Any], objectsToMove.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Mouse wheel (and 2-finger trackpad) support on the web sucks.  It is
@@ -1471,25 +1220,20 @@ object utilsMod {
       *         Firefox v4/Win7  |     undefined    |       3
       *
       */
-    @JSImport("ag-grid/dist/lib/utils", "_.normalizeWheel")
-    @js.native
-    def normalizeWheel(event: js.Any): js.Any = js.native
+    @scala.inline
+    def normalizeWheel(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWheel")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.offsetHeight")
-    @js.native
-    def offsetHeight(element: HTMLElement): Double = js.native
+    @scala.inline
+    def offsetHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.offsetWidth")
-    @js.native
-    def offsetWidth(element: HTMLElement): Double = js.native
+    @scala.inline
+    def offsetWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.pad")
-    @js.native
-    def pad(num: Double, totalStringSize: Double): String = js.native
+    @scala.inline
+    def pad(num: Double, totalStringSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], totalStringSize.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.parseYyyyMmDdToDate")
-    @js.native
-    def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = js.native
+    @scala.inline
+    def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseYyyyMmDdToDate")(yyyyMmDd.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("ag-grid/dist/lib/utils", "_.passiveEvents")
     @js.native
@@ -1497,109 +1241,84 @@ object utilsMod {
     @scala.inline
     def passiveEvents_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passiveEvents")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/utils", "_.prependDC")
-    @js.native
-    def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = js.native
+    @scala.inline
+    def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependDC")(parent.asInstanceOf[js.Any], documentFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.pushAll")
-    @js.native
-    def pushAll(target: js.Array[_], source: js.Array[_]): Unit = js.native
+    @scala.inline
+    def pushAll(target: js.Array[js.Any], source: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushAll")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.referenceCompare")
-    @js.native
-    def referenceCompare(left: js.Any, right: js.Any): Boolean = js.native
+    @scala.inline
+    def referenceCompare(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("referenceCompare")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeAllChildren")
-    @js.native
-    def removeAllChildren(node: HTMLElement): Unit = js.native
+    @scala.inline
+    def removeAllChildren(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeAllFromArray")
-    @js.native
-    def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = js.native
+    @scala.inline
+    def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllFromArray")(array.asInstanceOf[js.Any], toRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeCssClass")
-    @js.native
-    def removeCssClass(element: HTMLElement, className: String): Unit = js.native
+    @scala.inline
+    def removeCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeElement")
-    @js.native
-    def removeElement(parent: HTMLElement, cssSelector: String): Unit = js.native
+    @scala.inline
+    def removeElement(parent: HTMLElement, cssSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(parent.asInstanceOf[js.Any], cssSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeFromArray")
-    @js.native
-    def removeFromArray[T](array: js.Array[T], `object`: T): Unit = js.native
+    @scala.inline
+    def removeFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeFromParent")
-    @js.native
-    def removeFromParent(node: Element): Unit = js.native
+    @scala.inline
+    def removeFromParent(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromParent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.removeRepeatsFromArray")
-    @js.native
-    def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = js.native
+    @scala.inline
+    def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeRepeatsFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.serializeDateToYyyyMmDd")
-    @js.native
-    def serializeDateToYyyyMmDd(date: Date, separator: String): String = js.native
+    @scala.inline
+    def serializeDateToYyyyMmDd(date: Date, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeDateToYyyyMmDd")(date.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.setCheckboxState")
-    @js.native
-    def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = js.native
+    @scala.inline
+    def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCheckboxState")(eCheckbox.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.setHidden")
-    @js.native
-    def setHidden(element: HTMLElement, hidden: Boolean): Unit = js.native
+    @scala.inline
+    def setHidden(element: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(element.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.setScrollLeft")
-    @js.native
-    def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = js.native
+    @scala.inline
+    def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollLeft")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.setVisible")
-    @js.native
-    def setVisible(element: HTMLElement, visible: Boolean): Unit = js.native
+    @scala.inline
+    def setVisible(element: HTMLElement, visible: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisible")(element.asInstanceOf[js.Any], visible.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.shallowCompare")
-    @js.native
-    def shallowCompare(arr1: js.Array[_], arr2: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def shallowCompare(arr1: js.Array[js.Any], arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.sortNumberArray")
-    @js.native
-    def sortNumberArray(numberArray: js.Array[Double]): Unit = js.native
+    @scala.inline
+    def sortNumberArray(numberArray: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortNumberArray")(numberArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.sortRowNodesByOrder")
-    @js.native
-    def sortRowNodesByOrder(rowNodes: js.Array[RowNode], rowNodeOrder: StringDictionary[Double]): Unit = js.native
+    @scala.inline
+    def sortRowNodesByOrder(rowNodes: js.Array[RowNode], rowNodeOrder: StringDictionary[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortRowNodesByOrder")(rowNodes.asInstanceOf[js.Any], rowNodeOrder.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.stopPropagationForAgGrid")
-    @js.native
-    def stopPropagationForAgGrid(event: Event): Unit = js.native
+    @scala.inline
+    def stopPropagationForAgGrid(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.string_similarity")
-    @js.native
-    def stringSimilarity(str1: String, str2: String): Double = js.native
+    @scala.inline
+    def stringSimilarity(str1: String, str2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("string_similarity")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.toStringOrNull")
-    @js.native
-    def toStringOrNull(value: js.Any): String = js.native
+    @scala.inline
+    def toStringOrNull(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringOrNull")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.toStrings")
-    @js.native
-    def toStrings[T](array: js.Array[T]): js.Array[String] = js.native
+    @scala.inline
+    def toStrings[T](array: js.Array[T]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStrings")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.traverseNodesWithKey")
-    @js.native
-    def traverseNodesWithKey(nodes: js.Array[RowNode], callback: js.Function2[/* node */ RowNode, /* key */ String, Unit]): Unit = js.native
+    @scala.inline
+    def traverseNodesWithKey(nodes: js.Array[RowNode], callback: js.Function2[/* node */ RowNode, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNodesWithKey")(nodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/utils", "_.values")
-    @js.native
-    def values[T](`object`: StringDictionary[T]): js.Array[T] = js.native
+    @scala.inline
+    def values[T](`object`: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
   
-  @js.native
   trait ExternalPromise[T] extends StObject {
     
-    var promise: Promise[T] = js.native
+    var promise: Promise[T]
     
-    def resolve(value: T): Unit = js.native
+    def resolve(value: T): Unit
   }
   object ExternalPromise {
     
@@ -1610,7 +1329,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class ExternalPromiseMutableBuilder[Self <: ExternalPromise[_], T] (val x: Self with ExternalPromise[T]) extends AnyVal {
+    implicit class ExternalPromiseMutableBuilder[Self <: ExternalPromise[?], T] (val x: Self & ExternalPromise[T]) extends AnyVal {
       
       @scala.inline
       def setPromise(value: Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])

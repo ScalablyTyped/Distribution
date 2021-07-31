@@ -2,7 +2,6 @@ package typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * isolation for ids.  A single Id can be reused across namespaces but the
   * combination of a namespace and an id must be unique.
   */
-@js.native
 trait SchemaEntityKey extends StObject {
   
   /**
     * The id of the entity within the given namespace. The id must be unique
     * within its namespace.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Namespaces provide isolation for ids, i.e an id only needs to be unique
@@ -26,7 +24,7 @@ trait SchemaEntityKey extends StObject {
     * `&quot;identitysources/{identity_source_id}&quot;` is created
     * corresponding to every Identity Source `identity_source_id`.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
 }
 object SchemaEntityKey {
   

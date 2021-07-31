@@ -3,15 +3,13 @@ package typings.nodeForge.mod.tls
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateRequest extends StObject {
   
-  var certificate_authorities: ByteBuffer = js.native
+  var certificate_authorities: ByteBuffer
   
-  var certificate_types: ByteBuffer = js.native
+  var certificate_types: ByteBuffer
 }
 object CertificateRequest {
   

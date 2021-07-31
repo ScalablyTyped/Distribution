@@ -2,17 +2,17 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelHTMLAttributes[T] extends HTMLAttributes[T] {
+trait LabelHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var `for`: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var htmlFor: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.undefined
 }
 object LabelHTMLAttributes {
   
@@ -23,7 +23,7 @@ object LabelHTMLAttributes {
   }
   
   @scala.inline
-  implicit class LabelHTMLAttributesMutableBuilder[Self <: LabelHTMLAttributes[_], T] (val x: Self with LabelHTMLAttributes[T]) extends AnyVal {
+  implicit class LabelHTMLAttributesMutableBuilder[Self <: LabelHTMLAttributes[?], T] (val x: Self & LabelHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])

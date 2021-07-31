@@ -3,21 +3,19 @@ package typings.grommet.anon
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Suggestion extends StObject {
   
-  var suggestion: js.Any = js.native
+  var suggestion: js.Any
   
-  var target: HTMLElement | Null = js.native
+  var target: HTMLElement | Null
 }
 object Suggestion {
   
   @scala.inline
   def apply(suggestion: js.Any): Suggestion = {
-    val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any], target = null)
     __obj.asInstanceOf[Suggestion]
   }
   

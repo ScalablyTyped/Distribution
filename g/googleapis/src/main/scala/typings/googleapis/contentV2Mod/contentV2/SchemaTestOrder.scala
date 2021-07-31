@@ -2,70 +2,68 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTestOrder extends StObject {
   
   /**
     * The details of the customer who placed the order.
     */
-  var customer: js.UndefOr[SchemaTestOrderCustomer] = js.native
+  var customer: js.UndefOr[SchemaTestOrderCustomer] = js.undefined
   
   /**
     * Whether the orderinvoices service should support this order.
     */
-  var enableOrderinvoices: js.UndefOr[Boolean] = js.native
+  var enableOrderinvoices: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#testOrder&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Line items that are ordered. At least one line item must be provided.
     */
-  var lineItems: js.UndefOr[js.Array[SchemaTestOrderLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[SchemaTestOrderLineItem]] = js.undefined
   
   /**
     * Determines if test order must be pulled by merchant or pushed to merchant
     * via push integration.
     */
-  var notificationMode: js.UndefOr[String] = js.native
+  var notificationMode: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the payment method.
     */
-  var paymentMethod: js.UndefOr[SchemaTestOrderPaymentMethod] = js.native
+  var paymentMethod: js.UndefOr[SchemaTestOrderPaymentMethod] = js.undefined
   
   /**
     * Identifier of one of the predefined delivery addresses for the delivery.
     */
-  var predefinedDeliveryAddress: js.UndefOr[String] = js.native
+  var predefinedDeliveryAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Ignored if provided.
     */
-  var promotions: js.UndefOr[js.Array[SchemaOrderLegacyPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[SchemaOrderLegacyPromotion]] = js.undefined
   
   /**
     * The price of shipping for all items. Shipping tax is automatically
     * calculated for MFL orders. For non-MFL orders, tax settings from Merchant
     * Center are applied. Note that shipping is not taxed in certain states.
     */
-  var shippingCost: js.UndefOr[SchemaPrice] = js.native
+  var shippingCost: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Deprecated. Ignored if provided.
     */
-  var shippingCostTax: js.UndefOr[SchemaPrice] = js.native
+  var shippingCostTax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The requested shipping option.
     */
-  var shippingOption: js.UndefOr[String] = js.native
+  var shippingOption: js.UndefOr[String] = js.undefined
 }
 object SchemaTestOrder {
   

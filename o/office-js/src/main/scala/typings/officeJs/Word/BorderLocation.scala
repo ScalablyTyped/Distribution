@@ -2,7 +2,6 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,29 +14,47 @@ sealed trait BorderLocation extends StObject
 object BorderLocation extends StObject {
   
   @js.native
-  sealed trait all extends BorderLocation
+  sealed trait all
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait bottom extends BorderLocation
+  sealed trait bottom
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait inside extends BorderLocation
+  sealed trait inside
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait insideHorizontal extends BorderLocation
+  sealed trait insideHorizontal
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait insideVertical extends BorderLocation
+  sealed trait insideVertical
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait left extends BorderLocation
+  sealed trait left
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait outside extends BorderLocation
+  sealed trait outside
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait right extends BorderLocation
+  sealed trait right
+    extends StObject
+       with BorderLocation
   
   @js.native
-  sealed trait top extends BorderLocation
+  sealed trait top
+    extends StObject
+       with BorderLocation
 }

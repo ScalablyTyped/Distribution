@@ -5,21 +5,21 @@ import typings.ecmarkup.anon.Contents
 import typings.ecmarkup.anon.Element
 import typings.ecmarkup.anon.Grammar
 import typings.ecmarkup.anon.Source
-import typings.ecmarkup.ecmarkupBooleans.`false`
-import typings.ecmarkup.ecmarkupBooleans.`true`
 import typings.ecmarkup.specMod.Spec
 import typings.ecmarkup.specMod.Warning
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectNodesMod {
   
-  @JSImport("ecmarkup/lib/lint/collect-nodes", "collectNodes")
+  @JSImport("ecmarkup/lib/lint/collect-nodes", JSImport.Namespace)
   @js.native
-  def collectNodes(report: js.Function1[/* e */ Warning, Unit], mainSource: String, spec: Spec, document: Document): CollectNodesReturnType = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def collectNodes(report: js.Function1[/* e */ Warning, Unit], mainSource: String, spec: Spec, document: Document): CollectNodesReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("collectNodes")(report.asInstanceOf[js.Any], mainSource.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[CollectNodesReturnType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ecmarkup.anon.Algorithms
@@ -34,16 +34,15 @@ object collectNodesMod {
       earlyErrors: js.Array[Grammar],
       headers: js.Array[Contents],
       mainGrammar: js.Array[Source],
-      sdos: js.Array[Alg],
-      success: `true`
+      sdos: js.Array[Alg]
     ): typings.ecmarkup.anon.Algorithms = {
-      val __obj = js.Dynamic.literal(algorithms = algorithms.asInstanceOf[js.Any], earlyErrors = earlyErrors.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], mainGrammar = mainGrammar.asInstanceOf[js.Any], sdos = sdos.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(algorithms = algorithms.asInstanceOf[js.Any], earlyErrors = earlyErrors.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], mainGrammar = mainGrammar.asInstanceOf[js.Any], sdos = sdos.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[typings.ecmarkup.anon.Algorithms]
     }
     
     @scala.inline
-    def Success(success: `false`): typings.ecmarkup.anon.Success = {
-      val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+    def Success(): typings.ecmarkup.anon.Success = {
+      val __obj = js.Dynamic.literal(success = false)
       __obj.asInstanceOf[typings.ecmarkup.anon.Success]
     }
   }

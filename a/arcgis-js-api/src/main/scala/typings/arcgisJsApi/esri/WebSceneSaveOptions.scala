@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebSceneSaveOptions extends Object {
+trait WebSceneSaveOptions
+  extends StObject
+     with Object {
   
   /**
     * When `true`, the scene will save even if it contains unsupported content (layers, renderers, symbols).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#save)
     */
-  var ignoreUnsupported: js.UndefOr[Boolean] = js.native
+  var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object WebSceneSaveOptions {
   

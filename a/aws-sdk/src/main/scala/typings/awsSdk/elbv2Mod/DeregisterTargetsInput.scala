@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterTargetsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn = js.native
+  var TargetGroupArn: typings.awsSdk.elbv2Mod.TargetGroupArn
   
   /**
     * The targets. If you specified a port override when you registered a target, you must specify both the target ID and the port when you deregister it.
     */
-  var Targets: TargetDescriptions = js.native
+  var Targets: TargetDescriptions
 }
 object DeregisterTargetsInput {
   

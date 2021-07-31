@@ -3,27 +3,26 @@ package typings.estreeJsx.mod
 import typings.estree.mod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXText
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var raw: String = js.native
+  var raw: String
   
   @JSName("type")
-  var type_JSXText: typings.estreeJsx.estreeJsxStrings.JSXText = js.native
+  var type_JSXText: typings.estreeJsx.estreeJsxStrings.JSXText
   
-  var value: String = js.native
+  var value: String
 }
 object JSXText {
   
   @scala.inline
-  def apply(raw: String, `type`: typings.estreeJsx.estreeJsxStrings.JSXText, value: String): JSXText = {
+  def apply(raw: String, value: String): JSXText = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[JSXText]
   }
   

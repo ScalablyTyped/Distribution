@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerDefaultsBing extends StObject {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var imagerySet: js.UndefOr[String] = js.native
+  var imagerySet: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object MapLayerDefaultsBing {
   

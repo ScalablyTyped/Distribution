@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,7 +37,7 @@ trait DataPipeline extends Service {
   def addTags(params: AddTagsInput, callback: js.Function2[/* err */ AWSError, /* data */ AddTagsOutput, Unit]): Request[AddTagsOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_DataPipeline: ConfigBase with ClientConfiguration = js.native
+  var config_DataPipeline: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new, empty pipeline. Use PutPipelineDefinition to populate the pipeline.

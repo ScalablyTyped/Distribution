@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterGatesAlways extends StObject {
   
-  var afterGatesAlways: scala.Double = js.native
+  var afterGatesAlways: scala.Double
   
-  var afterSuccessfulGates: scala.Double = js.native
+  var afterSuccessfulGates: scala.Double
   
-  var beforeGates: scala.Double = js.native
+  var beforeGates: scala.Double
 }
 object AfterGatesAlways {
   

@@ -2,38 +2,36 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindMarkerOptions extends StObject {
   
   /** Only include markers that contain the given Point, inclusive. */
-  var containsPoint: js.UndefOr[PointCompatible] = js.native
+  var containsPoint: js.UndefOr[PointCompatible] = js.undefined
   
   /** Only include markers that contain the given Range, inclusive. */
-  var containsRange: js.UndefOr[RangeCompatible] = js.native
+  var containsRange: js.UndefOr[RangeCompatible] = js.undefined
   
   /** Only include markers that end at the given Point. */
-  var endPosition: js.UndefOr[PointCompatible] = js.native
+  var endPosition: js.UndefOr[PointCompatible] = js.undefined
   
   /** Only include markers that end at the given row number. */
-  var endRow: js.UndefOr[Double] = js.native
+  var endRow: js.UndefOr[Double] = js.undefined
   
   /** Only include markers that end inside the given Range. */
-  var endsInRange: js.UndefOr[RangeCompatible] = js.native
+  var endsInRange: js.UndefOr[RangeCompatible] = js.undefined
   
   /** Only include markers that intersect the given row number. */
-  var intersectsRow: js.UndefOr[Double] = js.native
+  var intersectsRow: js.UndefOr[Double] = js.undefined
   
   /** Only include markers that start at the given Point. */
-  var startPosition: js.UndefOr[PointCompatible] = js.native
+  var startPosition: js.UndefOr[PointCompatible] = js.undefined
   
   /** Only include markers that start at the given row number. */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
   
   /** Only include markers that start inside the given Range. */
-  var startsInRange: js.UndefOr[RangeCompatible] = js.native
+  var startsInRange: js.UndefOr[RangeCompatible] = js.undefined
 }
 object FindMarkerOptions {
   

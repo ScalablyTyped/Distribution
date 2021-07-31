@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Locations$Datasources")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsDatasources protected () extends StObject {
     */
   def checkValidCreds(): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(callback: BodyResponseCallback[SchemaCheckValidCredsResponse]): Unit = js.native
-  def checkValidCreds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
+  def checkValidCreds(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(params: ParamsResourceProjectsLocationsDatasourcesCheckvalidcreds): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(
     params: ParamsResourceProjectsLocationsDatasourcesCheckvalidcreds,
@@ -69,7 +68,7 @@ class ResourceProjectsLocationsDatasources protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDataSource] = js.native
   def get(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasourcesGet): GaxiosPromise[SchemaDataSource] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasourcesGet,
@@ -104,7 +103,7 @@ class ResourceProjectsLocationsDatasources protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDataSourcesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasourcesList): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasourcesList,

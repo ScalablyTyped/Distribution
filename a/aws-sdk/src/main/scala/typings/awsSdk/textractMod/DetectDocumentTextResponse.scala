@@ -2,26 +2,24 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectDocumentTextResponse extends StObject {
   
   /**
     * An array of Block objects that contain the text that's detected in the document.
     */
-  var Blocks: js.UndefOr[BlockList] = js.native
+  var Blocks: js.UndefOr[BlockList] = js.undefined
   
   /**
     * 
     */
-  var DetectDocumentTextModelVersion: js.UndefOr[String] = js.native
+  var DetectDocumentTextModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the document. It contains the number of pages that are detected in the document.
     */
-  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.native
+  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.undefined
 }
 object DetectDocumentTextResponse {
   

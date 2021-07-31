@@ -7,7 +7,6 @@ import typings.frctlFractal.mod.fractal.core.entities.Entity
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
@@ -22,12 +21,17 @@ object core {
   /* was `typeof fractal.api.components.Component` */
   object Component {
     
-    /* static member */
-    @JSImport("@frctl/fractal", "core.Component.create")
+    @JSImport("@frctl/fractal", "core.Component")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def create(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity): IterableIterator[
         js.Object | VariantCollection | typings.frctlFractal.mod.fractal.api.components.Component
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], files.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[
+        js.Object | VariantCollection | typings.frctlFractal.mod.fractal.api.components.Component
+      ]]
   }
   
   /* was `typeof fractal.api.docs.Doc` */
@@ -40,10 +44,13 @@ object core {
   /* was `typeof fractal.api.docs.Doc` */
   object Doc {
     
-    /* static member */
-    @JSImport("@frctl/fractal", "core.Doc.create")
+    @JSImport("@frctl/fractal", "core.Doc")
     @js.native
-    def create(config: js.Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def create(config: js.Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.docs.Doc]
   }
   
   /* was `typeof fractal.api.variants.Variant` */
@@ -61,14 +68,17 @@ object core {
   /* was `typeof fractal.api.variants.Variant` */
   object Variant {
     
-    /* static member */
-    @JSImport("@frctl/fractal", "core.Variant.create")
+    @JSImport("@frctl/fractal", "core.Variant")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def create(
       config: js.Object,
       view: js.Any,
       resources: AssetCollection,
       parent: typings.frctlFractal.mod.fractal.api.components.Component
-    ): typings.frctlFractal.mod.fractal.api.variants.Variant = js.native
+    ): typings.frctlFractal.mod.fractal.api.variants.Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], view.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.variants.Variant]
   }
 }

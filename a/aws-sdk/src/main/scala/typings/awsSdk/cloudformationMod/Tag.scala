@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     *  Required. A string used to identify this tag. You can specify a maximum of 128 characters for a tag key. Tags owned by Amazon Web Services (AWS) have the reserved prefix: aws:.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     *  Required. A string containing the value for this tag. You can specify a maximum of 256 characters for a tag value.
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

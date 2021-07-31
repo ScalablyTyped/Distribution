@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tracing extends StObject {
   
-  var apiGateway: Boolean = js.native
+  var apiGateway: Boolean
   
-  var lambda: js.UndefOr[Boolean] = js.native
+  var lambda: js.UndefOr[Boolean] = js.undefined
 }
 object Tracing {
   

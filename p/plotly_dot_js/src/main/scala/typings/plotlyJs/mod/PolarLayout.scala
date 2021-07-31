@@ -6,27 +6,25 @@ import typings.plotlyJs.plotlyJsStrings.circular
 import typings.plotlyJs.plotlyJsStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolarLayout extends StObject {
   
-  var angularaxis: PartialLayoutAxisAnchor = js.native
+  var angularaxis: PartialLayoutAxisAnchor
   
-  var bgcolor: Color = js.native
+  var bgcolor: Color
   
-  var domain: PartialDomain = js.native
+  var domain: PartialDomain
   
-  var gridshape: circular | linear = js.native
+  var gridshape: circular | linear
   
-  var hole: Double = js.native
+  var hole: Double
   
-  var radialaxis: PartialLayoutAxisAnchor = js.native
+  var radialaxis: PartialLayoutAxisAnchor
   
-  var sector: js.Array[Double] = js.native
+  var sector: js.Array[Double]
   
-  var uirevision: String | Double = js.native
+  var uirevision: String | Double
 }
 object PolarLayout {
   

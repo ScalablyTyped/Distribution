@@ -7,27 +7,25 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accuracy extends StObject {
   
-  var accuracy: js.UndefOr[Micros] = js.native
+  var accuracy: js.UndefOr[Micros] = js.undefined
   
-  var genTime: js.UndefOr[StringParam | HexParam | DateParam | String] = js.native
+  var genTime: js.UndefOr[StringParam | HexParam | DateParam | String] = js.undefined
   
-  var messageImprint: HashMsgHex = js.native
+  var messageImprint: HashMsgHex
   
-  var nonce: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.native
+  var nonce: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.undefined
   
-  var ordering: js.UndefOr[Boolean] = js.native
+  var ordering: js.UndefOr[Boolean] = js.undefined
   
-  var policy: String = js.native
+  var policy: String
   
-  var serialNumber: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.native
+  var serialNumber: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.undefined
   
-  var tsa: js.UndefOr[StringParam] = js.native
+  var tsa: js.UndefOr[StringParam] = js.undefined
 }
 object Accuracy {
   

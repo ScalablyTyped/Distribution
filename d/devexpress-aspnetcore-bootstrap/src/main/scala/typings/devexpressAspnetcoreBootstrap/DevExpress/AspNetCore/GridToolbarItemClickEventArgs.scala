@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridToolbarItemClickEventArgs extends ProcessingModeEventArgs {
+trait GridToolbarItemClickEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val item: BootstrapMenuItem = js.native
+  val item: BootstrapMenuItem
   
-  val toolbarIndex: Double = js.native
+  val toolbarIndex: Double
   
-  val toolbarName: String = js.native
+  val toolbarName: String
   
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
 }
 object GridToolbarItemClickEventArgs {
   

@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditSessionReadyParams extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var ownerUri: String = js.native
+  var ownerUri: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object EditSessionReadyParams {
   

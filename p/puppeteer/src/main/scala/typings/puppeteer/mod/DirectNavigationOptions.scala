@@ -2,18 +2,18 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectNavigationOptions extends NavigationOptions {
+trait DirectNavigationOptions
+  extends StObject
+     with NavigationOptions {
   
   /**
     * Referer header value.
     * If provided it will take preference over the referer header value set by
     * [page.setExtraHTTPHeaders()](#pagesetextrahttpheadersheaders).
     */
-  var referer: js.UndefOr[String] = js.native
+  var referer: js.UndefOr[String] = js.undefined
 }
 object DirectNavigationOptions {
   

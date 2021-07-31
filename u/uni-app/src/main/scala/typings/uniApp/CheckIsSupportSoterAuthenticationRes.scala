@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIsSupportSoterAuthenticationRes extends StObject {
   
   /**
     * 接口调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var supportMode: js.UndefOr[js.Array[_]] = js.native
+  var supportMode: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object CheckIsSupportSoterAuthenticationRes {
   
@@ -36,7 +34,7 @@ object CheckIsSupportSoterAuthenticationRes {
     def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
     @scala.inline
-    def setSupportMode(value: js.Array[_]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    def setSupportMode(value: js.Array[js.Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSupportModeUndefined: Self = StObject.set(x, "supportMode", js.undefined)

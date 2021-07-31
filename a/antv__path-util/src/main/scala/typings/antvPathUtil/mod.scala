@@ -5,81 +5,65 @@ import typings.antvPathUtil.getLineIntersectMod.Point
 import typings.antvPathUtil.rectPathMod.Ele
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@antv/path-util", "catmullRom2Bezier")
+  @JSImport("@antv/path-util", JSImport.Namespace)
   @js.native
-  def catmullRom2Bezier(crp: js.Array[Double]): js.Array[js.Array[_]] = js.native
-  @JSImport("@antv/path-util", "catmullRom2Bezier")
-  @js.native
-  def catmullRom2Bezier(crp: js.Array[Double], z: Boolean): js.Array[js.Array[_]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/path-util", "fillPath")
-  @js.native
-  def fillPath(source: js.Any, target: js.Any): js.Any = js.native
+  @scala.inline
+  def catmullRom2Bezier(crp: js.Array[Double]): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catmullRom2Bezier")(crp.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
+  @scala.inline
+  def catmullRom2Bezier(crp: js.Array[Double], z: Boolean): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("catmullRom2Bezier")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
   
-  @JSImport("@antv/path-util", "fillPathByDiff")
-  @js.native
-  def fillPathByDiff(source: String, target: String): String = js.native
+  @scala.inline
+  def fillPath(source: js.Any, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fillPath")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/path-util", "formatPath")
-  @js.native
-  def formatPath(fromPath: js.Array[js.Array[_]], toPath: js.Array[js.Array[_]]): js.Array[js.Array[_]] = js.native
+  @scala.inline
+  def fillPathByDiff(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fillPathByDiff")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@antv/path-util", "getArcParams")
-  @js.native
-  def getArcParams(startPoint: js.Any, params: js.Any): ArcFlag = js.native
+  @scala.inline
+  def formatPath(fromPath: js.Array[js.Array[js.Any]], toPath: js.Array[js.Array[js.Any]]): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPath")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
   
-  @JSImport("@antv/path-util", "getLineIntersect")
-  @js.native
-  def getLineIntersect(p0: Point, p1: Point, p2: Point, p3: Point): Point | Null = js.native
+  @scala.inline
+  def getArcParams(startPoint: js.Any, params: js.Any): ArcFlag = (^.asInstanceOf[js.Dynamic].applyDynamic("getArcParams")(startPoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ArcFlag]
   
-  @JSImport("@antv/path-util", "isPointInPolygon")
-  @js.native
-  def isPointInPolygon(points: js.Any, x: js.Any, y: js.Any): Boolean = js.native
+  @scala.inline
+  def getLineIntersect(p0: Point, p1: Point, p2: Point, p3: Point): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineIntersect")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
   
-  @JSImport("@antv/path-util", "isPolygonsIntersect")
-  @js.native
-  def isPolygonsIntersect(points1: js.Any, points2: js.Any): Boolean = js.native
+  @scala.inline
+  def isPointInPolygon(points: js.Any, x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInPolygon")(points.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/path-util", "parsePath")
-  @js.native
-  def parsePath(p: String): js.Array[String] = js.native
+  @scala.inline
+  def isPolygonsIntersect(points1: js.Any, points2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPolygonsIntersect")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/path-util", "parsePathArray")
-  @js.native
-  def parsePathArray(path: js.Array[_]): String = js.native
+  @scala.inline
+  def parsePath(p: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@antv/path-util", "parsePathString")
-  @js.native
-  def parsePathString(pathString: String): js.Array[_] = js.native
+  @scala.inline
+  def parsePathArray(path: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathArray")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/path-util", "path2Absolute")
-  @js.native
-  def path2Absolute(pathString: String): js.Array[_] = js.native
+  @scala.inline
+  def parsePathString(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/path-util", "path2Curve")
-  @js.native
-  def path2Curve(path: js.Any): js.Array[_] = js.native
-  @JSImport("@antv/path-util", "path2Curve")
-  @js.native
-  def path2Curve(path: js.Any, path2: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def path2Absolute(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path2Absolute")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/path-util", "path2Segments")
-  @js.native
-  def path2Segments(path: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def path2Curve(path: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path2Curve")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def path2Curve(path: js.Any, path2: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("path2Curve")(path.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/path-util", "pathIntersection")
-  @js.native
-  def pathIntersection(path1: js.Any, path2: js.Any): js.Any = js.native
+  @scala.inline
+  def path2Segments(path: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path2Segments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/path-util", "reactPath")
-  @js.native
-  def reactPath(x: Double, y: Double, w: Double, h: Double): js.Array[Ele] = js.native
-  @JSImport("@antv/path-util", "reactPath")
-  @js.native
-  def reactPath(x: Double, y: Double, w: Double, h: Double, r: Double): js.Array[Ele] = js.native
+  @scala.inline
+  def pathIntersection(path1: js.Any, path2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("pathIntersection")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def reactPath(x: Double, y: Double, w: Double, h: Double): js.Array[Ele] = (^.asInstanceOf[js.Dynamic].applyDynamic("reactPath")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Array[Ele]]
+  @scala.inline
+  def reactPath(x: Double, y: Double, w: Double, h: Double, r: Double): js.Array[Ele] = (^.asInstanceOf[js.Dynamic].applyDynamic("reactPath")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[js.Array[Ele]]
 }

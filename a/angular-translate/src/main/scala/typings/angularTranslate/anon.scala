@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularTranslate.mod.angularAugmentingMod.translate.IStaticFilesLoaderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Files extends StObject {
     
-    var files: js.Array[IStaticFilesLoaderOptions] = js.native
+    var files: js.Array[IStaticFilesLoaderOptions]
   }
   object Files {
     
@@ -37,58 +35,39 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(translationId: String): String = js.native
-    def apply(
-      translationId: String,
-      interpolateParams: js.UndefOr[scala.Nothing],
-      interpolation: js.UndefOr[scala.Nothing],
-      forceLanguage: String
-    ): String = js.native
-    def apply(translationId: String, interpolateParams: js.UndefOr[scala.Nothing], interpolation: String): String = js.native
-    def apply(
-      translationId: String,
-      interpolateParams: js.UndefOr[scala.Nothing],
-      interpolation: String,
-      forceLanguage: String
-    ): String = js.native
     def apply(translationId: String, interpolateParams: js.Any): String = js.native
-    def apply(
-      translationId: String,
-      interpolateParams: js.Any,
-      interpolation: js.UndefOr[scala.Nothing],
-      forceLanguage: String
-    ): String = js.native
     def apply(translationId: String, interpolateParams: js.Any, interpolation: String): String = js.native
     def apply(translationId: String, interpolateParams: js.Any, interpolation: String, forceLanguage: String): String = js.native
+    def apply(translationId: String, interpolateParams: js.Any, interpolation: Unit, forceLanguage: String): String = js.native
+    def apply(translationId: String, interpolateParams: Unit, interpolation: String): String = js.native
+    def apply(translationId: String, interpolateParams: Unit, interpolation: String, forceLanguage: String): String = js.native
+    def apply(translationId: String, interpolateParams: Unit, interpolation: Unit, forceLanguage: String): String = js.native
     def apply(translationIds: js.Array[String]): StringDictionary[String] = js.native
-    def apply(
-      translationIds: js.Array[String],
-      interpolateParams: js.UndefOr[scala.Nothing],
-      interpolation: js.UndefOr[scala.Nothing],
-      forceLanguage: String
-    ): StringDictionary[String] = js.native
-    def apply(
-      translationIds: js.Array[String],
-      interpolateParams: js.UndefOr[scala.Nothing],
-      interpolation: String
-    ): StringDictionary[String] = js.native
-    def apply(
-      translationIds: js.Array[String],
-      interpolateParams: js.UndefOr[scala.Nothing],
-      interpolation: String,
-      forceLanguage: String
-    ): StringDictionary[String] = js.native
     def apply(translationIds: js.Array[String], interpolateParams: js.Any): StringDictionary[String] = js.native
-    def apply(
-      translationIds: js.Array[String],
-      interpolateParams: js.Any,
-      interpolation: js.UndefOr[scala.Nothing],
-      forceLanguage: String
-    ): StringDictionary[String] = js.native
     def apply(translationIds: js.Array[String], interpolateParams: js.Any, interpolation: String): StringDictionary[String] = js.native
     def apply(
       translationIds: js.Array[String],
       interpolateParams: js.Any,
       interpolation: String,
+      forceLanguage: String
+    ): StringDictionary[String] = js.native
+    def apply(
+      translationIds: js.Array[String],
+      interpolateParams: js.Any,
+      interpolation: Unit,
+      forceLanguage: String
+    ): StringDictionary[String] = js.native
+    def apply(translationIds: js.Array[String], interpolateParams: Unit, interpolation: String): StringDictionary[String] = js.native
+    def apply(
+      translationIds: js.Array[String],
+      interpolateParams: Unit,
+      interpolation: String,
+      forceLanguage: String
+    ): StringDictionary[String] = js.native
+    def apply(
+      translationIds: js.Array[String],
+      interpolateParams: Unit,
+      interpolation: Unit,
       forceLanguage: String
     ): StringDictionary[String] = js.native
   }

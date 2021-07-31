@@ -2,48 +2,46 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message containing availability data relevant to DoubleClick Search.
   */
-@js.native
 trait SchemaAvailability extends StObject {
   
   /**
     * DS advertiser ID.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * DS agency ID.
     */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * The time by which all conversions have been uploaded, in epoch millis
     * UTC.
     */
-  var availabilityTimestamp: js.UndefOr[String] = js.native
+  var availabilityTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The numeric segmentation identifier (for example, DoubleClick Search
     * Floodlight activity ID).
     */
-  var segmentationId: js.UndefOr[String] = js.native
+  var segmentationId: js.UndefOr[String] = js.undefined
   
   /**
     * The friendly segmentation identifier (for example, DoubleClick Search
     * Floodlight activity name).
     */
-  var segmentationName: js.UndefOr[String] = js.native
+  var segmentationName: js.UndefOr[String] = js.undefined
   
   /**
     * The segmentation type that this availability is for (its default value is
     * FLOODLIGHT).
     */
-  var segmentationType: js.UndefOr[String] = js.native
+  var segmentationType: js.UndefOr[String] = js.undefined
 }
 object SchemaAvailability {
   

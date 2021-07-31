@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetTrackingConfiguration extends StObject {
   
   /**
     * Desired value to use with a game server group target-based scaling policy. 
     */
-  var TargetValue: NonNegativeDouble = js.native
+  var TargetValue: NonNegativeDouble
 }
 object TargetTrackingConfiguration {
   

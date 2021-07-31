@@ -11,7 +11,7 @@ A simple, extensible object property validator for node.js. Supports express.js.
 | Keywords           | validator, validation, express, check, test, request-validation, koa, koajs |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 60058 |
+| # downloads        | 71046 |
 | # stars            | 2 |
 
 ## Links

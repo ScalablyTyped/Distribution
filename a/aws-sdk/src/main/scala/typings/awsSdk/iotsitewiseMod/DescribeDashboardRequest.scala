@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDashboardRequest extends StObject {
   
   /**
     * The ID of the dashboard.
     */
-  var dashboardId: ID = js.native
+  var dashboardId: ID
 }
 object DescribeDashboardRequest {
   

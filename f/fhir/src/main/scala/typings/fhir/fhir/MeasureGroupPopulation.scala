@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Population criteria
   */
-@js.native
-trait MeasureGroupPopulation extends BackboneElement {
+trait MeasureGroupPopulation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'criteria'.
     */
-  var _criteria: js.UndefOr[Element] = js.native
+  var _criteria: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The name of a valid referenced CQL expression (may be namespaced) that defines this population criteria
     */
-  var criteria: String = js.native
+  var criteria: String
   
   /**
     * The human readable description of this population criteria
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Short name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object MeasureGroupPopulation {
   

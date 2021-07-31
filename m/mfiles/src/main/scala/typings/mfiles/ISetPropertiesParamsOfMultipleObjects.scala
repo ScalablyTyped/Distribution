@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISetPropertiesParamsOfMultipleObjects extends StObject {
   
-  def Add(Index: Double, SetPropertiesParams: ISetPropertiesParams): Unit = js.native
+  def Add(Index: Double, SetPropertiesParams: ISetPropertiesParams): Unit
   
-  def Clone(): ISetPropertiesParamsOfMultipleObjects = js.native
+  def Clone(): ISetPropertiesParamsOfMultipleObjects
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): ISetPropertiesParams = js.native
+  def Item(Index: Double): ISetPropertiesParams
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object ISetPropertiesParamsOfMultipleObjects {
   

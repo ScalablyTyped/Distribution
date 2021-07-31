@@ -2,17 +2,15 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorization extends StObject {
   
-  var Authorization: String = js.native
+  var Authorization: String
   
-  var `Content-Type`: String = js.native
+  var `Content-Type`: String
   
-  var `User-Agent`: String = js.native
+  var `User-Agent`: String
 }
 object Authorization {
   

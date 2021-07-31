@@ -2,23 +2,23 @@ package typings.rxCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
   
   @js.native
-  trait GroupedObservable[TKey, TElement] extends Observable[TElement] {
+  trait GroupedObservable[TKey, TElement]
+    extends StObject
+       with Observable[TElement] {
     
     var key: TKey = js.native
     
     var underlyingObservable: Observable[TElement] = js.native
   }
   
-  @js.native
   trait IDisposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object IDisposable {
     
@@ -43,20 +43,19 @@ object Rx {
   trait IPromise[T] extends StObject {
     
     def `then`[R](): IPromise[R] = js.native
-    def `then`[R](onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, R]): IPromise[R] = js.native
     def `then`[R](onFulfilled: js.Function1[/* value */ T, IPromise[R] | R]): IPromise[R] = js.native
     def `then`[R](
       onFulfilled: js.Function1[/* value */ T, IPromise[R] | R],
       onRejected: js.Function1[/* reason */ js.Any, IPromise[R] | R]
     ): IPromise[R] = js.native
+    def `then`[R](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, R]): IPromise[R] = js.native
   }
   
-  @js.native
   trait IScheduler extends StObject {
     
-    def `catch`(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler = js.native
+    def `catch`(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler
     
-    def catchException(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler = js.native
+    def catchException(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler
   }
   object IScheduler {
     
@@ -95,12 +94,12 @@ object Rx {
     
     def distinct(skipParameter: Boolean, valueSerializer: js.Function1[/* value */ T, String]): Observable[T] = js.native
     def distinct[TKey](): Observable[T] = js.native
-    def distinct[TKey](keySelector: js.UndefOr[scala.Nothing], keySerializer: js.Function1[/* key */ TKey, String]): Observable[T] = js.native
     def distinct[TKey](keySelector: js.Function1[/* value */ T, TKey]): Observable[T] = js.native
     def distinct[TKey](
       keySelector: js.Function1[/* value */ T, TKey],
       keySerializer: js.Function1[/* key */ TKey, String]
     ): Observable[T] = js.native
+    def distinct[TKey](keySelector: Unit, keySerializer: js.Function1[/* key */ TKey, String]): Observable[T] = js.native
     
     def groupBy[TKey, TElement](keySelector: js.Function1[/* value */ T, TKey]): Observable[GroupedObservable[TKey, T]] = js.native
     def groupBy[TKey, TElement](
@@ -112,15 +111,15 @@ object Rx {
       elementSelector: js.Function1[/* value */ T, TElement],
       keySerializer: js.Function1[/* key */ TKey, String]
     ): Observable[GroupedObservable[TKey, TElement]] = js.native
-    def groupBy[TKey, TElement](
-      keySelector: js.Function1[/* value */ T, TKey],
-      skipElementSelector: js.UndefOr[scala.Nothing],
-      keySerializer: js.Function1[/* key */ TKey, String]
-    ): Observable[GroupedObservable[TKey, T]] = js.native
     def groupBy[TKey, TElement](keySelector: js.Function1[/* value */ T, TKey], skipElementSelector: Boolean): Observable[GroupedObservable[TKey, T]] = js.native
     def groupBy[TKey, TElement](
       keySelector: js.Function1[/* value */ T, TKey],
       skipElementSelector: Boolean,
+      keySerializer: js.Function1[/* key */ TKey, String]
+    ): Observable[GroupedObservable[TKey, T]] = js.native
+    def groupBy[TKey, TElement](
+      keySelector: js.Function1[/* value */ T, TKey],
+      skipElementSelector: Unit,
       keySerializer: js.Function1[/* key */ TKey, String]
     ): Observable[GroupedObservable[TKey, T]] = js.native
     
@@ -167,35 +166,33 @@ object Rx {
     def onErrorResumeNext[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
     def onErrorResumeNext[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
     
-    def using[TSource, TResource /* <: IDisposable */](
+    def `using`[TSource, TResource /* <: IDisposable */](
       resourceFactory: js.Function0[TResource],
       observableFactory: js.Function1[/* resource */ TResource, Observable[TSource]]
     ): Observable[TSource] = js.native
   }
   
   // Observer
-  @js.native
   trait Observer[T] extends StObject {
     
-    def checked(): Observer[_] = js.native
+    def checked(): Observer[js.Any]
   }
   object Observer {
     
     @scala.inline
-    def apply[T](checked: () => Observer[_]): Observer[T] = {
+    def apply[T](checked: () => Observer[js.Any]): Observer[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked))
       __obj.asInstanceOf[Observer[T]]
     }
     
     @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       @scala.inline
-      def setChecked(value: () => Observer[_]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
+      def setChecked(value: () => Observer[js.Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait ObserverStatic extends StObject {
     
     /**
@@ -203,7 +200,7 @@ object Rx {
       * @param scheduler Scheduler to schedule observer messages on.
       * @returns Observer whose messages are scheduled on the given scheduler.
       */
-    def notifyOn[T](scheduler: IScheduler): Observer[T] = js.native
+    def notifyOn[T](scheduler: IScheduler): Observer[T]
   }
   object ObserverStatic {
     

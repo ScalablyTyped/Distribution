@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PageContentType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.OneNote.PageContentType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.OneNote.PageContentType & String] = js.native
   
-  /* "Image" */ val image: typings.officeJsPreview.OneNote.PageContentType.image with String = js.native
+  /* "Image" */ val image: typings.officeJsPreview.OneNote.PageContentType.image & String = js.native
   
-  /* "Ink" */ val ink: typings.officeJsPreview.OneNote.PageContentType.ink with String = js.native
+  /* "Ink" */ val ink: typings.officeJsPreview.OneNote.PageContentType.ink & String = js.native
   
-  /* "Other" */ val other: typings.officeJsPreview.OneNote.PageContentType.other with String = js.native
+  /* "Other" */ val other: typings.officeJsPreview.OneNote.PageContentType.other & String = js.native
   
-  /* "Outline" */ val outline: typings.officeJsPreview.OneNote.PageContentType.outline with String = js.native
+  /* "Outline" */ val outline: typings.officeJsPreview.OneNote.PageContentType.outline & String = js.native
 }

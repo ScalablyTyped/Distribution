@@ -5,10 +5,13 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-motion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-motion", "Motion")
   @js.native
@@ -64,12 +67,10 @@ object mod {
   @js.native
   val presets: Presets_ = js.native
   
-  @JSImport("react-motion", "spring")
-  @js.native
-  def spring(`val`: Double): OpaqueConfig = js.native
-  @JSImport("react-motion", "spring")
-  @js.native
-  def spring(`val`: Double, config: SpringHelperConfig): OpaqueConfig = js.native
+  @scala.inline
+  def spring(`val`: Double): OpaqueConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any]).asInstanceOf[OpaqueConfig]
+  @scala.inline
+  def spring(`val`: Double, config: SpringHelperConfig): OpaqueConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[OpaqueConfig]
   
   type InterpolateFunction = js.Function1[
     /* previousInterpolatedStyles */ js.UndefOr[js.Array[TransitionPlainStyle]], 
@@ -79,31 +80,30 @@ object mod {
   /**
     * <Motion/> properties
     */
-  @js.native
   trait MotionProps extends StObject {
     
     /**
       * Callback with your interpolated styles. Must return one react element to render
       * @param interpolatedStyle
       */
-    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, Element]] = js.native
+    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, Element]] = js.undefined
     
     /**
       * The default style. Being ignored on subsequent renders
       * @default Object with same keys as in style whose values are the initial numbers you're interpolating on
       */
-    var defaultStyle: js.UndefOr[PlainStyle] = js.native
+    var defaultStyle: js.UndefOr[PlainStyle] = js.undefined
     
     /**
       * The callback that fires when the animation comes to a rest.
       */
-    var onRest: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Object that maps to either number or opaque config returned by spring().
       * Must keep same keys throughout component's existence
       */
-    var style: Style = js.native
+    var style: Style
   }
   object MotionProps {
     
@@ -139,16 +139,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OpaqueConfig extends StObject {
     
-    var damping: Double = js.native
+    var damping: Double
     
-    var precision: Double = js.native
+    var precision: Double
     
-    var stiffness: Double = js.native
+    var stiffness: Double
     
-    var `val`: Double = js.native
+    var `val`: Double
   }
   object OpaqueConfig {
     
@@ -181,26 +180,25 @@ object mod {
   /**
     * Spring additional configuration
     */
-  @js.native
   trait SpringHelperConfig extends StObject {
     
     /**
       * Specifies damping
       * @defaults 26
       */
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies both the rounding of the interpolated value and the speed (internal).
       * @defaults 0.01
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Specified stiffness
       * @defaults 170
       */
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
   }
   object SpringHelperConfig {
     
@@ -254,15 +252,14 @@ object mod {
   /**
     * Default style for transition
     */
-  @js.native
   trait TransitionPlainStyle extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
     // same as TransitionStyle, passed as argument to style/children function
-    var style: PlainStyle = js.native
+    var style: PlainStyle
   }
   object TransitionPlainStyle {
     
@@ -292,39 +289,38 @@ object mod {
   /**
     * Transition properties
     */
-  @js.native
   trait TransitionProps extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* interpolatedStyles */ js.Array[TransitionPlainStyle], Element]] = js.native
+    var children: js.UndefOr[js.Function1[/* interpolatedStyles */ js.Array[TransitionPlainStyle], Element]] = js.undefined
     
     /**
       * Default styles on first render
       */
-    var defaultStyles: js.UndefOr[js.Array[TransitionPlainStyle]] = js.native
+    var defaultStyles: js.UndefOr[js.Array[TransitionPlainStyle]] = js.undefined
     
     /**
       * Triggers when an element has disappeared
       * @param styleThatLeft
       */
-    var didLeave: js.UndefOr[js.Function1[/* styleThatLeft */ TransitionStyle, Unit]] = js.native
+    var didLeave: js.UndefOr[js.Function1[/* styleThatLeft */ TransitionStyle, Unit]] = js.undefined
     
     /**
       * Styles to interpolate. Accepts array of TransitionStyle objects or interpolated function similar as for
       * <StaggeredMotion/>
       */
-    var styles: js.Array[TransitionStyle] | InterpolateFunction = js.native
+    var styles: js.Array[TransitionStyle] | InterpolateFunction
     
     /**
       * Triggers when a new element will appear
       * @param styleThatEntered
       */
-    var willEnter: js.UndefOr[js.Function1[/* styleThatEntered */ TransitionStyle, PlainStyle]] = js.native
+    var willEnter: js.UndefOr[js.Function1[/* styleThatEntered */ TransitionStyle, PlainStyle]] = js.undefined
     
     /**
       * Triggers when an element will disappear
       * @param styleThatLeft
       */
-    var willLeave: js.UndefOr[js.Function1[/* styleThatLeft */ TransitionStyle, Style | Unit]] = js.native
+    var willLeave: js.UndefOr[js.Function1[/* styleThatLeft */ TransitionStyle, Style | Unit]] = js.undefined
   }
   object TransitionProps {
     
@@ -384,24 +380,23 @@ object mod {
   }
   
   // === TransitionMotion ===
-  @js.native
   trait TransitionStyle extends StObject {
     
     /**
       * Anything you'd like to carry along. Will be preserved on re-renders until key off
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The ID that TransitionMotion uses to track which configuration is which across renders, even when things are reordered.
       * Typically reused as the component key when you map over the interpolated styles.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Actual starting style configuration
       */
-    var style: Style = js.native
+    var style: Style
   }
   object TransitionStyle {
     

@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightIdentity extends StObject {
   
   // The email address of the user who shared the item.
-  var address: js.UndefOr[NullableOption[String]] = js.native
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name of the user who shared the item.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The id of the user who shared the item.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object InsightIdentity {
   

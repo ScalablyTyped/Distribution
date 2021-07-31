@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowTemplateRequest extends StObject {
   
   /**
     * The namespace version in which the workflow is to be created. If no value is specified, the latest version is used by default.
     */
-  var compatibleNamespaceVersion: js.UndefOr[Version] = js.native
+  var compatibleNamespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The workflow DefinitionDocument.
     */
-  var definition: DefinitionDocument = js.native
+  var definition: DefinitionDocument
 }
 object CreateFlowTemplateRequest {
   

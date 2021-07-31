@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Bulleted and Numbering dialog.
   */
-@js.native
-trait OpenNumberingListDialogCommand extends CommandWithSimpleStateBase {
+trait OpenNumberingListDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenNumberingListDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenNumberingListDialogCommand {
   

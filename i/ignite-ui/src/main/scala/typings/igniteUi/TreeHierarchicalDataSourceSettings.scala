@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeHierarchicalDataSourceSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait TreeHierarchicalDataSourceSettings
   /**
     * Configure tree datasource specific settings
     */
-  var treeDS: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDS] = js.native
+  var treeDS: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDS] = js.undefined
 }
 object TreeHierarchicalDataSourceSettings {
   

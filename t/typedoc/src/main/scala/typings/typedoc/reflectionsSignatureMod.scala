@@ -9,7 +9,6 @@ import typings.typedoc.reflectionsParameterMod.ParameterReflection
 import typings.typedoc.reflectionsTypeParameterMod.TypeParameterReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionsSignatureMod {

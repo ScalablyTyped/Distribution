@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterEndPointsInput extends StObject {
   
   /**
     * The IDs of the instances.
     */
-  var Instances: typings.awsSdk.elbMod.Instances = js.native
+  var Instances: typings.awsSdk.elbMod.Instances
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
 }
 object DeregisterEndPointsInput {
   

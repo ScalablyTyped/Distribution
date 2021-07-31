@@ -10,9 +10,9 @@ Ant Design Icons for Vue
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons-vue |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 45 |
-| # downloads        | 1169233 |
+| # releases         | 22 |
+| # dependents       | 84 |
+| # downloads        | 1432714 |
 | # stars            | 0 |
 
 ## Links

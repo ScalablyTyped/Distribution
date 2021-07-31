@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDeviceUsageDataRequest extends StObject {
   
   /**
     * The ARN of the device.
     */
-  var DeviceArn: Arn = js.native
+  var DeviceArn: Arn
   
   /**
     * The type of usage data to delete.
     */
-  var DeviceUsageType: typings.awsSdk.alexaforbusinessMod.DeviceUsageType = js.native
+  var DeviceUsageType: typings.awsSdk.alexaforbusinessMod.DeviceUsageType
 }
 object DeleteDeviceUsageDataRequest {
   

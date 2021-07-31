@@ -4,7 +4,6 @@ import typings.ionicReact.routeActionMod.RouteAction
 import typings.ionicReact.routerDirectionMod.RouterDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicReactStrings {
@@ -100,7 +99,9 @@ object ionicReactStrings {
   def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait back extends RouterDirection
+  sealed trait back
+    extends StObject
+       with RouterDirection
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   
@@ -555,7 +556,9 @@ object ionicReactStrings {
   def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait forward extends RouterDirection
+  sealed trait forward
+    extends StObject
+       with RouterDirection
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   
@@ -905,7 +908,9 @@ object ionicReactStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends RouterDirection
+  sealed trait none
+    extends StObject
+       with RouterDirection
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -1025,7 +1030,9 @@ object ionicReactStrings {
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait pop extends RouteAction
+  sealed trait pop
+    extends StObject
+       with RouteAction
   @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
   
@@ -1050,7 +1057,9 @@ object ionicReactStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait push extends RouteAction
+  sealed trait push
+    extends StObject
+       with RouteAction
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   
@@ -1090,7 +1099,9 @@ object ionicReactStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait replace extends RouteAction
+  sealed trait replace
+    extends StObject
+       with RouteAction
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
@@ -1100,7 +1111,9 @@ object ionicReactStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait root extends RouterDirection
+  sealed trait root
+    extends StObject
+       with RouterDirection
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   

@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,30 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the response to describe the detailed outcome. It will only be included
   * when the operation finishes.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse extends StObject {
   
   /**
     * The number of resources that had errors.
     */
-  var errorCount: js.UndefOr[String] = js.native
+  var errorCount: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of resources included in the source data. This is the
     * sum of the success and error counts.
     */
-  var inputSize: js.UndefOr[String] = js.native
+  var inputSize: js.UndefOr[String] = js.undefined
   
   /**
     * The FHIR store name the resources have been imported to, in the format
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The number of resources that have been imported.
     */
-  var successCount: js.UndefOr[String] = js.native
+  var successCount: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse {
   

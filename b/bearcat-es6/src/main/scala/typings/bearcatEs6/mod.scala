@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -844,12 +843,26 @@ object mod extends Shortcut {
     var tableModelMap: js.Object = js.native
   }
   
-  @js.native
   trait BeanPostProcessor extends StObject {
     
-    def postProcessBeanFactory(): Unit = js.native
+    def postProcessBeanFactory(): Unit
     @JSName("postProcessBeanFactory")
-    var postProcessBeanFactory_Original: CallbackFunc = js.native
+    var postProcessBeanFactory_Original: CallbackFunc
+  }
+  object BeanPostProcessor {
+    
+    @scala.inline
+    def apply(postProcessBeanFactory: () => Unit): BeanPostProcessor = {
+      val __obj = js.Dynamic.literal(postProcessBeanFactory = js.Any.fromFunction0(postProcessBeanFactory))
+      __obj.asInstanceOf[BeanPostProcessor]
+    }
+    
+    @scala.inline
+    implicit class BeanPostProcessorMutableBuilder[Self <: BeanPostProcessor] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setPostProcessBeanFactory(value: () => Unit): Self = StObject.set(x, "postProcessBeanFactory", js.Any.fromFunction0(value))
+    }
   }
   
   @js.native
@@ -869,7 +882,6 @@ object mod extends Shortcut {
     def async(ids: js.Array[String]): Unit = js.native
     def async(ids: js.Array[String], cb: CallbackFunc): Unit = js.native
     
-    def call(beanName: String, context: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /**
       * Bearcat call function used for inherits to call super constructor function.
       *
@@ -886,6 +898,7 @@ object mod extends Shortcut {
       */
     def call(beanName: String, context: js.Object, args: js.Any*): Unit = js.native
     def call(beanName: String, context: Null, args: js.Any*): Unit = js.native
+    def call(beanName: String, context: Unit, args: js.Any*): Unit = js.native
     
     var configLocations: js.Array[String] = js.native
     
@@ -1108,7 +1121,6 @@ object mod extends Shortcut {
     var version: String = js.native
   }
   
-  @js.native
   trait BootStrapLoader extends StObject {
     
     /**
@@ -1117,7 +1129,7 @@ object mod extends Shortcut {
       * @param   idPaths
       * @api     public
       */
-    def load(idPaths: js.Array[String]): Unit = js.native
+    def load(idPaths: js.Array[String]): Unit
   }
   object BootStrapLoader {
     
@@ -1137,7 +1149,6 @@ object mod extends Shortcut {
   
   type CallbackFunc = js.Function0[Unit]
   
-  @js.native
   trait ConfigLoader extends StObject {
     
     /**
@@ -1146,7 +1157,7 @@ object mod extends Shortcut {
       * @return  meta loader
       * @api     public
       */
-    def getMetaLoader(): MetaLoader = js.native
+    def getMetaLoader(): MetaLoader
     
     /**
       * ConfigLoader get recursive scan paths and metaObjects in context.json.
@@ -1156,7 +1167,7 @@ object mod extends Shortcut {
       * @param   metaObjects
       * @api     public
       */
-    def getRecursiveScanPath(cpath: String, scanPaths: js.Array[String], metaObjects: js.Object): Unit = js.native
+    def getRecursiveScanPath(cpath: String, scanPaths: js.Array[String], metaObjects: js.Object): Unit
     
     /**
       * ConfigLoader get meta objects from context path.
@@ -1165,7 +1176,7 @@ object mod extends Shortcut {
       * @return  meta objects
       * @api     public
       */
-    def getResources(cpath: String): js.Object = js.native
+    def getResources(cpath: String): js.Object
   }
   object ConfigLoader {
     
@@ -1193,9 +1204,12 @@ object mod extends Shortcut {
     }
   }
   
-  type ConstructorFunction = js.Function1[/* repeated */ js.Any, js.Any]
-  
   @js.native
+  trait ConstructorFunction extends StObject {
+    
+    def apply(params: js.Any*): js.Any = js.native
+  }
+  
   trait MetaLoader extends StObject {
     
     /**
@@ -1204,7 +1218,7 @@ object mod extends Shortcut {
       * @return  metaObjects
       * @api     public
       */
-    def getMetaObjects(): js.Object = js.native
+    def getMetaObjects(): js.Object
     
     /**
       * MetaLoader load metaObjects from meta path.
@@ -1213,9 +1227,9 @@ object mod extends Shortcut {
       * @return  meta objects
       * @api     public
       */
-    def load(mpath: String): js.Object = js.native
+    def load(mpath: String): js.Object
     
-    var metaObjects: js.Object = js.native
+    var metaObjects: js.Object
     
     /**
       * MetaLoader set metaObject to beanName.
@@ -1224,7 +1238,7 @@ object mod extends Shortcut {
       * @param   metaObject
       * @api     public
       */
-    def setMetaObject(beanName: String, metaObject: js.Object): Unit = js.native
+    def setMetaObject(beanName: String, metaObject: js.Object): Unit
   }
   object MetaLoader {
     
@@ -1256,16 +1270,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ModuleFactory extends StObject {
     
-    def define(id: String, factory: js.Object): Unit = js.native
+    def define(id: String, factory: js.Object): Unit
     
-    var factoryMap: js.Object = js.native
+    var factoryMap: js.Object
     
-    var moduleMap: js.Object = js.native
+    var moduleMap: js.Object
     
-    def require(id: String): js.Any = js.native
+    def require(id: String): js.Any
   }
   object ModuleFactory {
     
@@ -1299,7 +1312,6 @@ object mod extends Shortcut {
   
   type ParamClassFunc = js.Function0[Unit]
   
-  @js.native
   trait ResourceLoader extends StObject {
     
     /**
@@ -1308,7 +1320,7 @@ object mod extends Shortcut {
       * @param   cpath context load path
       * @api     public
       */
-    def addLoadPath(cpath: String): Unit = js.native
+    def addLoadPath(cpath: String): Unit
     
     /**
       * ResourceLoader get config loader.
@@ -1316,7 +1328,7 @@ object mod extends Shortcut {
       * @return  config loader
       * @api     public
       */
-    def getConfigLoader(): ConfigLoader = js.native
+    def getConfigLoader(): ConfigLoader
     
     /**
       * ResourceLoader load metaObjects from context path.
@@ -1325,11 +1337,11 @@ object mod extends Shortcut {
       * @return  metaObjects
       * @api     public
       */
-    def load(cpath: String): js.Object = js.native
+    def load(cpath: String): js.Object
     
-    var loadPathMap: js.Object = js.native
+    var loadPathMap: js.Object
     
-    var loadPaths: String = js.native
+    var loadPaths: String
   }
   object ResourceLoader {
     
@@ -1365,7 +1377,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SingletonBeanFactory extends StObject {
     
     /**
@@ -1375,9 +1386,9 @@ object mod extends Shortcut {
       * @param   beanObject
       * @api     public
       */
-    def addSingleton(beanName: String, beanObject: js.Object): Unit = js.native
+    def addSingleton(beanName: String, beanObject: js.Object): Unit
     
-    var beanFactory: BeanFactory = js.native
+    var beanFactory: BeanFactory
     
     /**
       * SingletonBeanFactory check SingletonBeanFactory contains singleton or not.
@@ -1386,7 +1397,7 @@ object mod extends Shortcut {
       * @return  true | false
       * @api     public
       */
-    def containsSingleton(beanName: String): Boolean = js.native
+    def containsSingleton(beanName: String): Boolean
     
     /**
       * SingletonBeanFactory get singleton from SingletonBeanFactory.
@@ -1395,14 +1406,14 @@ object mod extends Shortcut {
       * @return  singletonObject
       * @api     public
       */
-    def getSingleton(beanName: String): js.Object = js.native
+    def getSingleton(beanName: String): js.Object
     
     /**
       * SingletonBeanFactory get all singleton names from SingletonBeanFactory.
       *
       * @api     public
       */
-    def getSingletonNames(): js.Array[String] = js.native
+    def getSingletonNames(): js.Array[String]
     
     /**
       * SingletonBeanFactory remove singleton from SingletonBeanFactory.
@@ -1410,9 +1421,9 @@ object mod extends Shortcut {
       * @param   beanName
       * @api     public
       */
-    def removeSingleton(beanName: String): Unit = js.native
+    def removeSingleton(beanName: String): Unit
     
-    var singletonObjects: js.Object = js.native
+    var singletonObjects: js.Object
   }
   object SingletonBeanFactory {
     

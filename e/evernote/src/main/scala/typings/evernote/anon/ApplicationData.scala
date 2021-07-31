@@ -3,35 +3,33 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.LazyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationData extends StObject {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var applicationData: js.UndefOr[LazyMap] = js.native
+  var applicationData: js.UndefOr[LazyMap] = js.undefined
   
-  var attachment: js.UndefOr[Boolean] = js.native
+  var attachment: js.UndefOr[Boolean] = js.undefined
   
-  var cameraMake: js.UndefOr[String] = js.native
+  var cameraMake: js.UndefOr[String] = js.undefined
   
-  var cameraModel: js.UndefOr[String] = js.native
+  var cameraModel: js.UndefOr[String] = js.undefined
   
-  var clientWillIndex: js.UndefOr[Boolean] = js.native
+  var clientWillIndex: js.UndefOr[Boolean] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var recoType: js.UndefOr[String] = js.native
+  var recoType: js.UndefOr[String] = js.undefined
   
-  var sourceURL: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
 }
 object ApplicationData {
   

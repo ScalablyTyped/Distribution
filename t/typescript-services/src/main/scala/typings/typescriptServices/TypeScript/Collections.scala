@@ -2,37 +2,35 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Collections {
   
-  @js.native
   trait HashTable[TKey, TValue] extends StObject {
     
-    def add(key: TKey, value: TValue): Unit = js.native
+    def add(key: TKey, value: TValue): Unit
     
-    /* private */ def addEntry(key: js.Any, value: js.Any, hashCode: js.Any): js.Any = js.native
+    /* private */ def addEntry(key: js.Any, value: js.Any, hashCode: js.Any): js.Any
     
-    /* private */ def addOrSet(key: js.Any, value: js.Any, throwOnExistingEntry: js.Any): js.Any = js.native
+    /* private */ def addOrSet(key: js.Any, value: js.Any, throwOnExistingEntry: js.Any): js.Any
     
-    /* private */ def computeHashCode(key: js.Any): js.Any = js.native
+    /* private */ def computeHashCode(key: js.Any): js.Any
     
-    def containsKey(key: TKey): Boolean = js.native
+    def containsKey(key: TKey): Boolean
     
-    var count: js.Any = js.native
+    var count: js.Any
     
-    var entries: js.Any = js.native
+    var entries: js.Any
     
-    /* private */ def findEntry(key: js.Any, hashCode: js.Any): js.Any = js.native
+    /* private */ def findEntry(key: js.Any, hashCode: js.Any): js.Any
     
-    def get(key: TKey): TValue = js.native
+    def get(key: TKey): TValue
     
-    /* private */ def grow(): js.Any = js.native
+    /* private */ def grow(): js.Any
     
-    var hash: js.Any = js.native
+    var hash: js.Any
     
-    def set(key: TKey, value: TValue): Unit = js.native
+    def set(key: TKey, value: TValue): Unit
   }
   object HashTable {
     
@@ -56,7 +54,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class HashTableMutableBuilder[Self <: HashTable[_, _], TKey, TValue] (val x: Self with (HashTable[TKey, TValue])) extends AnyVal {
+    implicit class HashTableMutableBuilder[Self <: HashTable[?, ?], TKey, TValue] (val x: Self & (HashTable[TKey, TValue])) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
@@ -96,20 +94,19 @@ object Collections {
     }
   }
   
-  @js.native
   trait StringTable extends StObject {
     
-    def addCharArray(key: js.Array[Double], start: Double, len: Double): String = js.native
+    def addCharArray(key: js.Array[Double], start: Double, len: Double): String
     
-    /* private */ def addEntry(text: js.Any, hashCode: js.Any): js.Any = js.native
+    /* private */ def addEntry(text: js.Any, hashCode: js.Any): js.Any
     
-    var count: js.Any = js.native
+    var count: js.Any
     
-    var entries: js.Any = js.native
+    var entries: js.Any
     
-    /* private */ def findCharArrayEntry(key: js.Any, start: js.Any, len: js.Any, hashCode: js.Any): js.Any = js.native
+    /* private */ def findCharArrayEntry(key: js.Any, start: js.Any, len: js.Any, hashCode: js.Any): js.Any
     
-    /* private */ def grow(): js.Any = js.native
+    /* private */ def grow(): js.Any
   }
   object StringTable {
     

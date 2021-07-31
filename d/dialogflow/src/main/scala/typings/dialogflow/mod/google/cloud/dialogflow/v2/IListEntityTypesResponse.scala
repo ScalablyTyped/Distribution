@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListEntityTypesResponse. */
-@js.native
 trait IListEntityTypesResponse extends StObject {
   
   /** ListEntityTypesResponse entityTypes */
-  var entityTypes: js.UndefOr[js.Array[IEntityType] | Null] = js.native
+  var entityTypes: js.UndefOr[js.Array[IEntityType] | Null] = js.undefined
   
   /** ListEntityTypesResponse nextPageToken */
-  var nextPageToken: js.UndefOr[String | Null] = js.native
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object IListEntityTypesResponse {
   

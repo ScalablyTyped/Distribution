@@ -4,13 +4,14 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTInterpolationMethod
 import typings.dwt.webTwainBufferMod.WebTwainBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainEditMod {
   
   @js.native
-  trait WebTwainEdit extends WebTwainBuffer {
+  trait WebTwainEdit
+    extends StObject
+       with WebTwainBuffer {
     
     /**
       * [Deprecation] Add text on an image.
@@ -49,14 +50,6 @@ object webTwainEditMod {
     def ChangeBitDepth(index: Double, bitDepth: Double, highQuality: Boolean): Boolean = js.native
     
     def ChangeImageSize(index: Double, width: Double, height: Double, method: Double): Unit | Boolean = js.native
-    def ChangeImageSize(
-      index: Double,
-      width: Double,
-      height: Double,
-      method: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def ChangeImageSize(index: Double, width: Double, height: Double, method: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def ChangeImageSize(
       index: Double,
@@ -64,6 +57,14 @@ object webTwainEditMod {
       height: Double,
       method: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def ChangeImageSize(
+      index: Double,
+      width: Double,
+      height: Double,
+      method: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     /**
@@ -83,14 +84,6 @@ object webTwainEditMod {
       width: Double,
       height: Double,
       method: EnumDWTInterpolationMethod,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
-    def ChangeImageSize(
-      index: Double,
-      width: Double,
-      height: Double,
-      method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit]
     ): Unit | Boolean = js.native
     def ChangeImageSize(
@@ -99,6 +92,14 @@ object webTwainEditMod {
       height: Double,
       method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def ChangeImageSize(
+      index: Double,
+      width: Double,
+      height: Double,
+      method: EnumDWTInterpolationMethod,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -111,15 +112,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def ConvertToBW(index: Double): Unit | Boolean = js.native
-    def ConvertToBW(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def ConvertToBW(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def ConvertToBW(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def ConvertToBW(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -132,15 +133,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def ConvertToGrayScale(index: Double): Unit | Boolean = js.native
-    def ConvertToGrayScale(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def ConvertToGrayScale(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def ConvertToGrayScale(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def ConvertToGrayScale(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -225,15 +226,6 @@ object webTwainEditMod {
       top: Double,
       right: Double,
       bottom: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
-    def Crop(
-      index: Double,
-      left: Double,
-      top: Double,
-      right: Double,
-      bottom: Double,
       successCallback: js.Function0[Unit]
     ): Unit | Boolean = js.native
     def Crop(
@@ -243,6 +235,15 @@ object webTwainEditMod {
       right: Double,
       bottom: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def Crop(
+      index: Double,
+      left: Double,
+      top: Double,
+      right: Double,
+      bottom: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -291,15 +292,6 @@ object webTwainEditMod {
       top: Double,
       right: Double,
       bottom: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
-    def Erase(
-      index: Double,
-      left: Double,
-      top: Double,
-      right: Double,
-      bottom: Double,
       successCallback: js.Function0[Unit]
     ): Unit | Boolean = js.native
     def Erase(
@@ -309,6 +301,15 @@ object webTwainEditMod {
       right: Double,
       bottom: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def Erase(
+      index: Double,
+      left: Double,
+      top: Double,
+      right: Double,
+      bottom: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -321,15 +322,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def Flip(index: Double): Unit | Boolean = js.native
-    def Flip(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def Flip(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def Flip(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def Flip(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -342,15 +343,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def Invert(index: Double): Unit | Boolean = js.native
-    def Invert(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def Invert(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def Invert(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def Invert(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -363,15 +364,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def Mirror(index: Double): Unit | Boolean = js.native
-    def Mirror(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def Mirror(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def Mirror(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def Mirror(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -407,13 +408,6 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def Rotate(index: Double, angle: Double, keepSize: Boolean): Unit | Boolean = js.native
-    def Rotate(
-      index: Double,
-      angle: Double,
-      keepSize: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def Rotate(index: Double, angle: Double, keepSize: Boolean, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def Rotate(
       index: Double,
@@ -422,16 +416,15 @@ object webTwainEditMod {
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
-    
-    def RotateEx(index: Double, angle: Double, keepSize: Boolean, method: Double): Unit | Boolean = js.native
-    def RotateEx(
+    def Rotate(
       index: Double,
       angle: Double,
       keepSize: Boolean,
-      method: Double,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
+    def RotateEx(index: Double, angle: Double, keepSize: Boolean, method: Double): Unit | Boolean = js.native
     def RotateEx(
       index: Double,
       angle: Double,
@@ -445,6 +438,14 @@ object webTwainEditMod {
       keepSize: Boolean,
       method: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def RotateEx(
+      index: Double,
+      angle: Double,
+      keepSize: Boolean,
+      method: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     /**
@@ -464,14 +465,6 @@ object webTwainEditMod {
       angle: Double,
       keepSize: Boolean,
       method: EnumDWTInterpolationMethod,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
-    def RotateEx(
-      index: Double,
-      angle: Double,
-      keepSize: Boolean,
-      method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit]
     ): Unit | Boolean = js.native
     def RotateEx(
@@ -480,6 +473,14 @@ object webTwainEditMod {
       keepSize: Boolean,
       method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def RotateEx(
+      index: Double,
+      angle: Double,
+      keepSize: Boolean,
+      method: EnumDWTInterpolationMethod,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -492,15 +493,15 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def RotateLeft(index: Double): Unit | Boolean = js.native
-    def RotateLeft(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def RotateLeft(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def RotateLeft(
       index: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def RotateLeft(
+      index: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -513,28 +514,19 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def RotateRight(index: Double): Unit | Boolean = js.native
-    def RotateRight(
-      index: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def RotateRight(index: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def RotateRight(
       index: Double,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
-    
-    def SetDPI(index: Double, xResolution: Double, yResolution: Double, resample: Boolean, method: Double): Unit | Boolean = js.native
-    def SetDPI(
+    def RotateRight(
       index: Double,
-      xResolution: Double,
-      yResolution: Double,
-      resample: Boolean,
-      method: Double,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
+    
+    def SetDPI(index: Double, xResolution: Double, yResolution: Double, resample: Boolean, method: Double): Unit | Boolean = js.native
     def SetDPI(
       index: Double,
       xResolution: Double,
@@ -550,6 +542,15 @@ object webTwainEditMod {
       resample: Boolean,
       method: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SetDPI(
+      index: Double,
+      xResolution: Double,
+      yResolution: Double,
+      resample: Boolean,
+      method: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     /**
@@ -577,15 +578,6 @@ object webTwainEditMod {
       yResolution: Double,
       resample: Boolean,
       method: EnumDWTInterpolationMethod,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
-    def SetDPI(
-      index: Double,
-      xResolution: Double,
-      yResolution: Double,
-      resample: Boolean,
-      method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit]
     ): Unit | Boolean = js.native
     def SetDPI(
@@ -595,6 +587,15 @@ object webTwainEditMod {
       resample: Boolean,
       method: EnumDWTInterpolationMethod,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SetDPI(
+      index: Double,
+      xResolution: Double,
+      yResolution: Double,
+      resample: Boolean,
+      method: EnumDWTInterpolationMethod,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -608,17 +609,17 @@ object webTwainEditMod {
       * @argument errorString The error string.
       */
     def SetImageWidth(index: Double, width: Double): Unit | Boolean = js.native
-    def SetImageWidth(
-      index: Double,
-      width: Double,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Unit | Boolean = js.native
     def SetImageWidth(index: Double, width: Double, successCallback: js.Function0[Unit]): Unit | Boolean = js.native
     def SetImageWidth(
       index: Double,
       width: Double,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit | Boolean = js.native
+    def SetImageWidth(
+      index: Double,
+      width: Double,
+      successCallback: Unit,
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit | Boolean = js.native
     
@@ -629,12 +630,12 @@ object webTwainEditMod {
       * @param height Specify the height of the editor.
       */
     def ShowImageEditor(): Boolean = js.native
-    def ShowImageEditor(divId: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Boolean = js.native
-    def ShowImageEditor(divId: js.UndefOr[scala.Nothing], width: Double): Boolean = js.native
-    def ShowImageEditor(divId: js.UndefOr[scala.Nothing], width: Double, height: Double): Boolean = js.native
     def ShowImageEditor(divId: String): Boolean = js.native
-    def ShowImageEditor(divId: String, width: js.UndefOr[scala.Nothing], height: Double): Boolean = js.native
     def ShowImageEditor(divId: String, width: Double): Boolean = js.native
     def ShowImageEditor(divId: String, width: Double, height: Double): Boolean = js.native
+    def ShowImageEditor(divId: String, width: Unit, height: Double): Boolean = js.native
+    def ShowImageEditor(divId: Unit, width: Double): Boolean = js.native
+    def ShowImageEditor(divId: Unit, width: Double, height: Double): Boolean = js.native
+    def ShowImageEditor(divId: Unit, width: Unit, height: Double): Boolean = js.native
   }
 }

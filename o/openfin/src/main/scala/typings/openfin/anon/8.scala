@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.windowOptionMod.ContentNavigation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
-  var newVal: js.UndefOr[ContentNavigation] = js.native
+  var newVal: js.UndefOr[ContentNavigation] = js.undefined
   
-  var oldVal: js.UndefOr[ContentNavigation] = js.native
+  var oldVal: js.UndefOr[ContentNavigation] = js.undefined
 }
 object `8` {
   

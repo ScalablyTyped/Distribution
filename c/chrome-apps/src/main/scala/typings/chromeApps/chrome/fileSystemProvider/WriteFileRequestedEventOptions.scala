@@ -5,20 +5,20 @@ import typings.chromeApps.chrome.integer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WriteFileRequestedEventOptions extends RequestedEventOptions {
+trait WriteFileRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** Buffer of bytes to be operated on the file. */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /** Position in the file (in bytes) to start operating from. */
-  var offset: integer = js.native
+  var offset: integer
   
   /** A request ID used to open the file. */
-  var openRequestId: integer = js.native
+  var openRequestId: integer
 }
 object WriteFileRequestedEventOptions {
   

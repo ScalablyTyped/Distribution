@@ -3,28 +3,26 @@ package typings.wixUiIconsCommon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait IconMetadata extends StObject {
     
     /** some icons have duplicates under different names,
       * lists all files that are described by this metadata */
-    var aliases: js.UndefOr[js.Array[String]] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var sizes: Record[String, String] = js.native
+    var sizes: Record[String, String]
     
     /** tags to be used for searching icons in storybook */
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object IconMetadata {
     

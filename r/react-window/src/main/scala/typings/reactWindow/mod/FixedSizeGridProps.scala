@@ -3,21 +3,21 @@ package typings.reactWindow.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FixedSizeGridProps extends GridProps {
+trait FixedSizeGridProps
+  extends StObject
+     with GridProps {
   
   /**
     * Width of an individual column within the grid.
     */
-  var columnWidth: Double = js.native
+  var columnWidth: Double
   
   /**
     * Height of an individual row within the grid.
     */
-  var rowHeight: Double = js.native
+  var rowHeight: Double
 }
 object FixedSizeGridProps {
   

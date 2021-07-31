@@ -12,7 +12,7 @@ Using CSS animation in your react components.
 | Keywords           | react, react-component, animation |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 31374 |
+| # downloads        | 42481 |
 | # stars            | 0 |
 
 ## Links

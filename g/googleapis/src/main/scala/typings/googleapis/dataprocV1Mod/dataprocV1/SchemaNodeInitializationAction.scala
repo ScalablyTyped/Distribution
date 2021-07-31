@@ -2,20 +2,18 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies an executable to run on a fully configured node and a timeout
   * period for executable completion.
   */
-@js.native
 trait SchemaNodeInitializationAction extends StObject {
   
   /**
     * Required. Cloud Storage URI of executable file.
     */
-  var executableFile: js.UndefOr[String] = js.native
+  var executableFile: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Amount of time executable has to complete. Default is 10
@@ -23,7 +21,7 @@ trait SchemaNodeInitializationAction extends StObject {
     * name of the executable that caused the error and the exceeded timeout
     * period) if the executable is not completed at end of the timeout period.
     */
-  var executionTimeout: js.UndefOr[String] = js.native
+  var executionTimeout: js.UndefOr[String] = js.undefined
 }
 object SchemaNodeInitializationAction {
   

@@ -2,7 +2,6 @@ package typings.pebblekitjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PebbleKit {
@@ -10,12 +9,11 @@ object PebbleKit {
   /**
     * The structure of an app glance.
     */
-  @js.native
   trait AppGlanceSlice extends StObject {
     
-    var expirationTime: js.UndefOr[String] = js.native
+    var expirationTime: js.UndefOr[String] = js.undefined
     
-    var layout: Layout = js.native
+    var layout: Layout
   }
   object AppGlanceSlice {
     
@@ -39,10 +37,9 @@ object PebbleKit {
     }
   }
   
-  @js.native
   trait AppMessageData extends StObject {
     
-    var transactionId: String = js.native
+    var transactionId: String
   }
   object AppMessageData {
     
@@ -60,12 +57,11 @@ object PebbleKit {
     }
   }
   
-  @js.native
   trait AppMessageEvent extends StObject {
     
-    var data: AppMessageData = js.native
+    var data: AppMessageData
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
   }
   object AppMessageEvent {
     
@@ -89,10 +85,9 @@ object PebbleKit {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -110,14 +105,13 @@ object PebbleKit {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var payload: js.UndefOr[js.Object] = js.native
+    var payload: js.UndefOr[js.Object] = js.undefined
     
-    var response: js.UndefOr[String] = js.native
+    var response: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     
@@ -151,16 +145,15 @@ object PebbleKit {
   /**
     * Object containing firmware version information.
     */
-  @js.native
   trait Firmware extends StObject {
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
     
-    var patch: Double = js.native
+    var patch: Double
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object Firmware {
     
@@ -187,12 +180,11 @@ object PebbleKit {
     }
   }
   
-  @js.native
   trait Layout extends StObject {
     
-    var icon: String = js.native
+    var icon: String
     
-    var subtitleTemplateString: String = js.native
+    var subtitleTemplateString: String
   }
   object Layout {
     
@@ -310,15 +302,15 @@ object PebbleKit {
       * @return string
       */
     def sendAppMessage(jsonAppMessage: js.Object): String = js.native
-    def sendAppMessage(
-      jsonAppMessage: js.Object,
-      callbackForAck: js.UndefOr[scala.Nothing],
-      callbackForNack: js.Function1[/* e */ AppMessageEvent, Unit]
-    ): String = js.native
     def sendAppMessage(jsonAppMessage: js.Object, callbackForAck: js.Function1[/* e */ AppMessageEvent, Unit]): String = js.native
     def sendAppMessage(
       jsonAppMessage: js.Object,
       callbackForAck: js.Function1[/* e */ AppMessageEvent, Unit],
+      callbackForNack: js.Function1[/* e */ AppMessageEvent, Unit]
+    ): String = js.native
+    def sendAppMessage(
+      jsonAppMessage: js.Object,
+      callbackForAck: Unit,
       callbackForNack: js.Function1[/* e */ AppMessageEvent, Unit]
     ): String = js.native
     
@@ -375,16 +367,15 @@ object PebbleKit {
     * Read the PebbleKit JS guides for complete information on possible values.
     * @see Pebble.getActiveWatchInfo
     */
-  @js.native
   trait WatchInfo extends StObject {
     
-    var firmware: Firmware = js.native
+    var firmware: Firmware
     
-    var language: String = js.native
+    var language: String
     
-    var model: String = js.native
+    var model: String
     
-    var platform: String = js.native
+    var platform: String
   }
   object WatchInfo {
     

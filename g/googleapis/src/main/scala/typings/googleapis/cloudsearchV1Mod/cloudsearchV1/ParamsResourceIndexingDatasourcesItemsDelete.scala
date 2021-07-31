@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceIndexingDatasourcesItemsDelete extends StandardParameters {
+trait ParamsResourceIndexingDatasourcesItemsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of connector making this call. <br />Format:
     * datasources/{source_id}/connectors/{ID}
     */
-  var connectorName: js.UndefOr[String] = js.native
+  var connectorName: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
     * turn on this field, if asked by Google to help with debugging.
     */
   @JSName("debugOptions.enableDebugging")
-  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The RequestMode for this request.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Name of the item to delete. Format:
     * datasources/{source_id}/items/{item_id}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The incremented version of the item to delete from the index.
@@ -50,7 +50,7 @@ trait ParamsResourceIndexingDatasourcesItemsDelete extends StandardParameters {
     * equal to the version of the currently indexed item. The maximum length
     * for this field is 1024 bytes.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceIndexingDatasourcesItemsDelete {
   

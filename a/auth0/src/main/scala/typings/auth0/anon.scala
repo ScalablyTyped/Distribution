@@ -4,21 +4,19 @@ import typings.auth0.auth0Strings.HS256
 import typings.auth0.auth0Strings.RS256
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alg extends StObject {
     
     // The algorithm used to sign the JsonWebToken
-    var alg: js.UndefOr[HS256 | RS256] = js.native
+    var alg: js.UndefOr[HS256 | RS256] = js.undefined
     
     // The amount of time (in seconds) that the token will be valid after being issued
-    var lifetime_in_seconds: js.UndefOr[Double] = js.native
+    var lifetime_in_seconds: js.UndefOr[Double] = js.undefined
     
-    var scopes: js.UndefOr[js.Object] = js.native
+    var scopes: js.UndefOr[js.Object] = js.undefined
   }
   object Alg {
     
@@ -51,14 +49,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Cert extends StObject {
     
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
-    var pub: js.UndefOr[String] = js.native
+    var pub: js.UndefOr[String] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object Cert {
     
@@ -91,12 +88,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var value: String = js.native
+    var value: String
   }
   object Description {
     
@@ -117,20 +113,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var email_verified: js.UndefOr[Boolean] = js.native
+    var email_verified: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var phone_number: js.UndefOr[String] = js.native
+    var phone_number: js.UndefOr[String] = js.undefined
     
-    var phone_verified: js.UndefOr[Boolean] = js.native
+    var phone_verified: js.UndefOr[Boolean] = js.undefined
     
-    var request_language: js.UndefOr[String] = js.native
+    var request_language: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -181,15 +176,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Methods extends StObject {
     
-    var methods: js.Array[_] = js.native
+    var methods: js.Array[js.Any]
   }
   object Methods {
     
     @scala.inline
-    def apply(methods: js.Array[_]): Methods = {
+    def apply(methods: js.Array[js.Any]): Methods = {
       val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
       __obj.asInstanceOf[Methods]
     }
@@ -198,7 +192,7 @@ object anon {
     implicit class MethodsMutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMethods(value: js.Array[_]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      def setMethods(value: js.Array[js.Any]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodsVarargs(value: js.Any*): Self = StObject.set(x, "methods", js.Array(value :_*))

@@ -6,17 +6,15 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearSelection extends StObject {
   
-  def clearSelection(): js.Any = js.native
+  def clearSelection(): js.Any
   
-  var event: MouseEvent[HTMLButtonElement, NativeMouseEvent] = js.native
+  var event: MouseEvent[HTMLButtonElement, NativeMouseEvent]
   
-  var selection: js.Array[RowT] = js.native
+  var selection: js.Array[RowT]
 }
 object ClearSelection {
   

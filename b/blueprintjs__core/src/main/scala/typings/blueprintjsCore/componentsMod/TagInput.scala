@@ -7,7 +7,6 @@ import typings.blueprintjsCore.anon.ReadonlyITagInputState
 import typings.blueprintjsCore.tagInputMod.ITagInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "TagInput")
@@ -36,7 +35,6 @@ object TagInput {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "TagInput.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = js.native
+  @scala.inline
+  def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
 }

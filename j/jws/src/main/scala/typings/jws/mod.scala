@@ -19,40 +19,36 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jws", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jws", "ALGORITHMS")
   @js.native
   val ALGORITHMS: js.Tuple12[HS256, HS384, HS512, RS256, RS384, RS512, PS256, PS384, PS512, ES256, ES384, ES512] = js.native
   
-  @JSImport("jws", "createSign")
-  @js.native
-  def createSign(options: SignOptions): SignStream = js.native
+  @scala.inline
+  def createSign(options: SignOptions): SignStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any]).asInstanceOf[SignStream]
   
-  @JSImport("jws", "createVerify")
-  @js.native
-  def createVerify(): VerifyStream = js.native
-  @JSImport("jws", "createVerify")
-  @js.native
-  def createVerify(options: VerifyOptions): VerifyStream = js.native
+  @scala.inline
+  def createVerify(): VerifyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")().asInstanceOf[VerifyStream]
+  @scala.inline
+  def createVerify(options: VerifyOptions): VerifyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(options.asInstanceOf[js.Any]).asInstanceOf[VerifyStream]
   
-  @JSImport("jws", "decode")
-  @js.native
-  def decode(signature: String): Signature = js.native
+  @scala.inline
+  def decode(signature: String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(signature.asInstanceOf[js.Any]).asInstanceOf[Signature]
   
-  @JSImport("jws", "sign")
-  @js.native
-  def sign(options: SignOptions): String = js.native
+  @scala.inline
+  def sign(options: SignOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jws", "verify")
-  @js.native
-  def verify(signature: String, algorithm: Algorithm, secretOrKey: String): Boolean = js.native
-  @JSImport("jws", "verify")
-  @js.native
-  def verify(signature: String, algorithm: Algorithm, secretOrKey: Buffer): Boolean = js.native
+  @scala.inline
+  def verify(signature: String, algorithm: Algorithm, secretOrKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(signature.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], secretOrKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(signature: String, algorithm: Algorithm, secretOrKey: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(signature.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], secretOrKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jws.jwsStrings.HS256
@@ -71,19 +67,20 @@ object mod {
   */
   trait Algorithm extends StObject
   
-  @js.native
-  trait CertificateProperties extends PrivateProperties {
+  trait CertificateProperties
+    extends StObject
+       with PrivateProperties {
     
-    var kid: js.UndefOr[String] = js.native
+    var kid: js.UndefOr[String] = js.undefined
     
-    var x5c: js.UndefOr[js.Array[String]] = js.native
+    var x5c: js.UndefOr[js.Array[String]] = js.undefined
     
-    var x5t: js.UndefOr[String] = js.native
+    var x5t: js.UndefOr[String] = js.undefined
     
     @JSName("x5t#S256")
-    var x5tNumbersignS256: js.UndefOr[String] = js.native
+    var x5tNumbersignS256: js.UndefOr[String] = js.undefined
     
-    var x5u: js.UndefOr[String] = js.native
+    var x5u: js.UndefOr[String] = js.undefined
   }
   object CertificateProperties {
     
@@ -131,18 +128,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait Header extends CertificateProperties {
+  trait Header
+    extends StObject
+       with CertificateProperties {
     
-    var alg: Algorithm = js.native
+    var alg: Algorithm
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cty: js.UndefOr[String] = js.native
+    var cty: js.UndefOr[String] = js.undefined
     
-    var jwk: js.UndefOr[JWK] = js.native
+    var jwk: js.UndefOr[JWK] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object Header {
     
@@ -187,16 +185,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait JWK extends CertificateProperties {
+  trait JWK
+    extends StObject
+       with CertificateProperties {
     
-    var alg: js.UndefOr[Algorithm] = js.native
+    var alg: js.UndefOr[Algorithm] = js.undefined
     
-    var key_ops: js.UndefOr[js.Array[String]] = js.native
+    var key_ops: js.UndefOr[js.Array[String]] = js.undefined
     
-    var kty: String = js.native
+    var kty: String
     
-    var use: js.UndefOr[String] = js.native
+    var use: js.UndefOr[String] = js.undefined
   }
   object JWK {
     
@@ -237,32 +236,31 @@ object mod {
   
   type PrivateProperties = StringDictionary[js.Any]
   
-  @js.native
   trait SignOptions extends StObject {
     
-    var encoding: js.UndefOr[String | Buffer | Readable] = js.native
+    var encoding: js.UndefOr[String | Buffer | Readable] = js.undefined
     
-    var header: Header = js.native
-    
-    /**
-      * Can be a string, Buffer, Readable stream, or object.
-      */
-    var key: js.UndefOr[js.Any] = js.native
+    var header: Header
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var payload: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var privateKey: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var secret: js.UndefOr[js.Any] = js.native
+    var privateKey: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * Can be a string, Buffer, Readable stream, or object.
+      */
+    var secret: js.UndefOr[js.Any] = js.undefined
   }
   object SignOptions {
     
@@ -341,14 +339,13 @@ object mod {
     var secret: js.Any = js.native
   }
   
-  @js.native
   trait Signature extends StObject {
     
-    var header: Header = js.native
+    var header: Header
     
-    var payload: js.Any = js.native
+    var payload: js.Any
     
-    var signature: String = js.native
+    var signature: String
   }
   object Signature {
     
@@ -372,20 +369,19 @@ object mod {
     }
   }
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var algorithm: js.UndefOr[Algorithm | Buffer | Readable] = js.native
+    var algorithm: js.UndefOr[Algorithm | Buffer | Readable] = js.undefined
     
-    var encoding: js.UndefOr[String | Buffer | Readable] = js.native
+    var encoding: js.UndefOr[String | Buffer | Readable] = js.undefined
     
-    var key: js.UndefOr[String | Readable | Buffer] = js.native
+    var key: js.UndefOr[String | Readable | Buffer] = js.undefined
     
-    var publicKey: js.UndefOr[String | Readable | Buffer] = js.native
+    var publicKey: js.UndefOr[String | Readable | Buffer] = js.undefined
     
-    var secret: js.UndefOr[String | Readable | Buffer] = js.native
+    var secret: js.UndefOr[String | Readable | Buffer] = js.undefined
     
-    var signature: js.UndefOr[String | Buffer | Readable] = js.native
+    var signature: js.UndefOr[String | Buffer | Readable] = js.undefined
   }
   object VerifyOptions {
     

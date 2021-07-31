@@ -11,20 +11,18 @@ import typings.plotlyJs.plotlyJsStrings.todate
 import typings.plotlyJs.plotlyJsStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.RangeSelectorButton> */
-@js.native
 trait PartialRangeSelectorButto extends StObject {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[second | minute | hour | day | month | year | all] = js.native
+  var step: js.UndefOr[second | minute | hour | day | month | year | all] = js.undefined
   
-  var stepmode: js.UndefOr[backward | todate] = js.native
+  var stepmode: js.UndefOr[backward | todate] = js.undefined
 }
 object PartialRangeSelectorButto {
   

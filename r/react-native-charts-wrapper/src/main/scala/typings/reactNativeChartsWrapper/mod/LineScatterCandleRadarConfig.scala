@@ -2,19 +2,17 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineScatterCandleRadarConfig extends StObject {
   
-  var drawHighlightIndicators: js.UndefOr[Boolean] = js.native
+  var drawHighlightIndicators: js.UndefOr[Boolean] = js.undefined
   
-  var drawHorizontalHighlightIndicator: js.UndefOr[Boolean] = js.native
+  var drawHorizontalHighlightIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var drawVerticalHighlightIndicator: js.UndefOr[Boolean] = js.native
+  var drawVerticalHighlightIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var highlightLineWidth: js.UndefOr[Double] = js.native
+  var highlightLineWidth: js.UndefOr[Double] = js.undefined
 }
 object LineScatterCandleRadarConfig {
   

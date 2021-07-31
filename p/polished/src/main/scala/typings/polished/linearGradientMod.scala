@@ -4,12 +4,14 @@ import typings.polished.linearGradientConfigurationMod.LinearGradientConfigurati
 import typings.polished.styleMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linearGradientMod {
   
-  @JSImport("polished/lib/mixins/linearGradient", JSImport.Default)
+  @JSImport("polished/lib/mixins/linearGradient", JSImport.Namespace)
   @js.native
-  def default(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorStopsFallbackToDirection.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

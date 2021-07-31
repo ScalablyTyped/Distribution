@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJSONWebKeysResponse extends StObject {
   
   /** OnePlatform automatically extracts this field and uses it to set the HTTP Cache-Control header. */
-  var cacheHeader: js.UndefOr[HttpCacheControlResponseHeader] = js.native
+  var cacheHeader: js.UndefOr[HttpCacheControlResponseHeader] = js.undefined
   
   /** The public component of the keys used by the cluster to sign token requests. */
-  var keys: js.UndefOr[js.Array[Jwk]] = js.native
+  var keys: js.UndefOr[js.Array[Jwk]] = js.undefined
 }
 object GetJSONWebKeysResponse {
   

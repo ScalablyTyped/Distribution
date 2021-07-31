@@ -2,13 +2,11 @@ package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `BasicLevel` is an `AccessLevel` using a set of recommended features.
   */
-@js.native
 trait SchemaBasicLevel extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaBasicLevel extends StObject {
     * is used, at least one `Condition` in `conditions` must be satisfied for
     * the `AccessLevel` to be applied. Default behavior is AND.
     */
-  var combiningFunction: js.UndefOr[String] = js.native
+  var combiningFunction: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A list of requirements for the `AccessLevel` to be granted.
     */
-  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.undefined
 }
 object SchemaBasicLevel {
   

@@ -2,58 +2,56 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDetail extends StObject {
   
-  var Arn: js.UndefOr[arnType] = js.native
+  var Arn: js.UndefOr[arnType] = js.undefined
   
   /**
     * A list of the managed policies attached to the user.
     */
-  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.native
+  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the user was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * A list of IAM groups that the user is in.
     */
-  var GroupList: js.UndefOr[groupNameListType] = js.native
+  var GroupList: js.UndefOr[groupNameListType] = js.undefined
   
   /**
     * The path to the user. For more information about paths, see IAM Identifiers in the IAM User Guide.
     */
-  var Path: js.UndefOr[pathType] = js.native
+  var Path: js.UndefOr[pathType] = js.undefined
   
   /**
     * The ARN of the policy used to set the permissions boundary for the user. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
     */
-  var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.native
+  var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
   
   /**
     * A list of tags that are associated with the specified user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
     */
-  var Tags: js.UndefOr[tagListType] = js.native
+  var Tags: js.UndefOr[tagListType] = js.undefined
   
   /**
     * The stable and unique string identifying the user. For more information about IDs, see IAM Identifiers in the IAM User Guide.
     */
-  var UserId: js.UndefOr[idType] = js.native
+  var UserId: js.UndefOr[idType] = js.undefined
   
   /**
     * The friendly name identifying the user.
     */
-  var UserName: js.UndefOr[userNameType] = js.native
+  var UserName: js.UndefOr[userNameType] = js.undefined
   
   /**
     * A list of the inline policies embedded in the user.
     */
-  var UserPolicyList: js.UndefOr[policyDetailListType] = js.native
+  var UserPolicyList: js.UndefOr[policyDetailListType] = js.undefined
 }
 object UserDetail {
   

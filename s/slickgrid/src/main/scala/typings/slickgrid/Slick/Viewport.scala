@@ -2,19 +2,17 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var leftPx: Double = js.native
+  var leftPx: Double
   
-  var rightPx: Double = js.native
+  var rightPx: Double
   
-  var top: Double = js.native
+  var top: Double
 }
 object Viewport {
   

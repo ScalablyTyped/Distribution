@@ -7,29 +7,27 @@ import typings.playcanvas.pc.Mouse
 import typings.playcanvas.pc.TouchDevice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPrefix extends StObject {
   
-  var assetPrefix: js.UndefOr[String] = js.native
+  var assetPrefix: js.UndefOr[String] = js.undefined
   
-  var elementInput: js.UndefOr[ElementInput] = js.native
+  var elementInput: js.UndefOr[ElementInput] = js.undefined
   
-  var gamepads: js.UndefOr[GamePads] = js.native
+  var gamepads: js.UndefOr[GamePads] = js.undefined
   
-  var graphicsDeviceOptions: js.UndefOr[js.Any] = js.native
+  var graphicsDeviceOptions: js.UndefOr[js.Any] = js.undefined
   
-  var keyboard: js.UndefOr[Keyboard] = js.native
+  var keyboard: js.UndefOr[Keyboard] = js.undefined
   
-  var mouse: js.UndefOr[Mouse] = js.native
+  var mouse: js.UndefOr[Mouse] = js.undefined
   
-  var scriptPrefix: js.UndefOr[String] = js.native
+  var scriptPrefix: js.UndefOr[String] = js.undefined
   
-  var scriptsOrder: js.UndefOr[js.Array[String]] = js.native
+  var scriptsOrder: js.UndefOr[js.Array[String]] = js.undefined
   
-  var touch: js.UndefOr[TouchDevice] = js.native
+  var touch: js.UndefOr[TouchDevice] = js.undefined
 }
 object AssetPrefix {
   

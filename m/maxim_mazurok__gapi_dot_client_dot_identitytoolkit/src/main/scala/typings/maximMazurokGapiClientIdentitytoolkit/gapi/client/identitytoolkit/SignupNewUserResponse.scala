@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignupNewUserResponse extends StObject {
   
   /** The name of the user. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The email of the user. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** If idToken is STS id token, then this field will be expiration time of STS id token in seconds. */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /** The Gitkit id token to login the newly sign up user. */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /** The fixed string "identitytoolkit#SignupNewUserResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The RP local ID of the user. */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /** If idToken is STS id token, then this field will be refresh token. */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object SignupNewUserResponse {
   

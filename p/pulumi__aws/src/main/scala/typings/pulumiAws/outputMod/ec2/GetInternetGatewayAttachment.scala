@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInternetGatewayAttachment extends StObject {
   
   /**
     * The current state of the attachment between the gateway and the VPC. Present only if a VPC is attached
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * The ID of an attached VPC.
     */
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object GetInternetGatewayAttachment {
   

@@ -2,20 +2,18 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /** Valid email address */
-  var email: String = js.native
+  var email: String
   
   /** Email address to display in the “To” header instead of address.email (for CC and BCC) */
-  var header_to: js.UndefOr[String] = js.native
+  var header_to: js.UndefOr[String] = js.undefined
   
   /** User-friendly name for the email address */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Address {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scheduling extends StObject {
   
   /**
@@ -14,25 +12,25 @@ trait Scheduling extends StObject {
     *
     * By default, this is set to true so an instance is automatically restarted if it is terminated by Compute Engine.
     */
-  var automaticRestart: js.UndefOr[Boolean] = js.native
+  var automaticRestart: js.UndefOr[Boolean] = js.undefined
   
   /** The minimum number of virtual CPUs this instance will consume when running on a sole-tenant node. */
-  var minNodeCpus: js.UndefOr[Double] = js.native
+  var minNodeCpus: js.UndefOr[Double] = js.undefined
   
   /** A set of node affinity and anti-affinity configurations. Refer to Configuring node affinity for more information. Overrides reservationAffinity. */
-  var nodeAffinities: js.UndefOr[js.Array[SchedulingNodeAffinity]] = js.native
+  var nodeAffinities: js.UndefOr[js.Array[SchedulingNodeAffinity]] = js.undefined
   
   /**
     * Defines the maintenance behavior for this instance. For standard instances, the default behavior is MIGRATE. For preemptible instances, the default and only possible behavior is
     * TERMINATE. For more information, see Setting Instance Scheduling Options.
     */
-  var onHostMaintenance: js.UndefOr[String] = js.native
+  var onHostMaintenance: js.UndefOr[String] = js.undefined
   
   /**
     * Defines whether the instance is preemptible. This can only be set during instance creation or while the instance is stopped and therefore, in a `TERMINATED` state. See Instance Life
     * Cycle for more information on the possible instance states.
     */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
 }
 object Scheduling {
   

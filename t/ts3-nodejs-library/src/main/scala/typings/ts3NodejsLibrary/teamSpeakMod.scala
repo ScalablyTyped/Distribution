@@ -134,7 +134,6 @@ import typings.ts3NodejsLibrary.ts3NodejsLibraryStrings.textmessage
 import typings.ts3NodejsLibrary.ts3NodejsLibraryStrings.tokenused
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamSpeakMod {
@@ -189,9 +188,9 @@ object teamSpeakMod {
       * @param duration optional duration on how much ban entries should be retrieved
       */
     def banList(): js.Promise[js.Array[BanEntry]] = js.native
-    def banList(start: js.UndefOr[scala.Nothing], duration: Double): js.Promise[js.Array[BanEntry]] = js.native
     def banList(start: Double): js.Promise[js.Array[BanEntry]] = js.native
     def banList(start: Double, duration: Double): js.Promise[js.Array[BanEntry]] = js.native
+    def banList(start: Unit, duration: Double): js.Promise[js.Array[BanEntry]] = js.native
     
     /** returns a list of IP addresses used by the server instance on multi-homed machines. */
     def bindingList(): js.Promise[js.Array[BindingEntry]] = js.native
@@ -258,7 +257,7 @@ object teamSpeakMod {
       * @param group the channelgroup id
       * @param perm the permission object
       */
-    def channelGroupAddPerm(group: GroupType, perm: js.UndefOr[scala.Nothing]): Permission[_] = js.native
+    def channelGroupAddPerm(group: GroupType, perm: Unit): Permission[js.Any] = js.native
     def channelGroupAddPerm(group: GroupType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
     
     /**
@@ -268,8 +267,9 @@ object teamSpeakMod {
       * @param cldbid the client database id to filter
       */
     def channelGroupClientList(group: GroupType): js.Promise[ChannelGroupClientList] = js.native
-    def channelGroupClientList(group: GroupType, channel: js.UndefOr[ChannelType], client: ClientType): js.Promise[ChannelGroupClientList] = js.native
+    def channelGroupClientList(group: GroupType, channel: Unit, client: ClientType): js.Promise[ChannelGroupClientList] = js.native
     def channelGroupClientList(group: GroupType, channel: ChannelType): js.Promise[ChannelGroupClientList] = js.native
+    def channelGroupClientList(group: GroupType, channel: ChannelType, client: ClientType): js.Promise[ChannelGroupClientList] = js.native
     
     /**
       * Creates a copy of the channel group.
@@ -282,15 +282,13 @@ object teamSpeakMod {
       * @param name name of the goup
       */
     def channelGroupCopy(sourceGroup: GroupType): js.Promise[ChannelGroupCopy] = js.native
-    def channelGroupCopy(
-      sourceGroup: GroupType,
-      targetGroup: js.UndefOr[GroupType],
-      `type`: js.UndefOr[scala.Nothing],
-      name: String
-    ): js.Promise[ChannelGroupCopy] = js.native
-    def channelGroupCopy(sourceGroup: GroupType, targetGroup: js.UndefOr[GroupType], `type`: Double): js.Promise[ChannelGroupCopy] = js.native
-    def channelGroupCopy(sourceGroup: GroupType, targetGroup: js.UndefOr[GroupType], `type`: Double, name: String): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: Unit, `type`: Double): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: Unit, `type`: Double, name: String): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: Unit, `type`: Unit, name: String): js.Promise[ChannelGroupCopy] = js.native
     def channelGroupCopy(sourceGroup: GroupType, targetGroup: GroupType): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: GroupType, `type`: Double): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: GroupType, `type`: Double, name: String): js.Promise[ChannelGroupCopy] = js.native
+    def channelGroupCopy(sourceGroup: GroupType, targetGroup: GroupType, `type`: Unit, name: String): js.Promise[ChannelGroupCopy] = js.native
     
     /**
       * Creates a new channel group using a given name.
@@ -331,9 +329,9 @@ object teamSpeakMod {
       * @param tokencustomset token custom set
       */
     def channelGroupPrivilegeKeyAdd(group: GroupType, channel: ChannelType): js.Promise[Token] = js.native
-    def channelGroupPrivilegeKeyAdd(group: GroupType, channel: ChannelType, description: js.UndefOr[scala.Nothing], customset: String): js.Promise[Token] = js.native
     def channelGroupPrivilegeKeyAdd(group: GroupType, channel: ChannelType, description: String): js.Promise[Token] = js.native
     def channelGroupPrivilegeKeyAdd(group: GroupType, channel: ChannelType, description: String, customset: String): js.Promise[Token] = js.native
+    def channelGroupPrivilegeKeyAdd(group: GroupType, channel: ChannelType, description: Unit, customset: String): js.Promise[Token] = js.native
     
     /**
       * Changes the name of the channel group
@@ -378,7 +376,7 @@ object teamSpeakMod {
       * @param channel the channel id
       * @param perm the permission object
       */
-    def channelSetPerm(channel: ChannelType, perm: js.UndefOr[scala.Nothing]): Permission[_] = js.native
+    def channelSetPerm(channel: ChannelType, perm: Unit): Permission[js.Any] = js.native
     def channelSetPerm(channel: ChannelType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
     
     /**
@@ -402,7 +400,7 @@ object teamSpeakMod {
       * @param client the client database id
       * @param perm the permission object
       */
-    def clientAddPerm(client: ClientType, perm: js.UndefOr[scala.Nothing]): Permission[_] = js.native
+    def clientAddPerm(client: ClientType, perm: Unit): Permission[js.Any] = js.native
     def clientAddPerm(client: ClientType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
     
     /**
@@ -448,13 +446,13 @@ object teamSpeakMod {
       * @param count retrieve the count of entries
       */
     def clientDbList(): js.Promise[js.Array[ClientDBEntry]] = js.native
-    def clientDbList(start: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
-    def clientDbList(start: js.UndefOr[scala.Nothing], duration: Double): js.Promise[js.Array[ClientDBEntry]] = js.native
-    def clientDbList(start: js.UndefOr[scala.Nothing], duration: Double, count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
     def clientDbList(start: Double): js.Promise[js.Array[ClientDBEntry]] = js.native
-    def clientDbList(start: Double, duration: js.UndefOr[scala.Nothing], count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
     def clientDbList(start: Double, duration: Double): js.Promise[js.Array[ClientDBEntry]] = js.native
     def clientDbList(start: Double, duration: Double, count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
+    def clientDbList(start: Double, duration: Unit, count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
+    def clientDbList(start: Unit, duration: Double): js.Promise[js.Array[ClientDBEntry]] = js.native
+    def clientDbList(start: Unit, duration: Double, count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
+    def clientDbList(start: Unit, duration: Unit, count: Boolean): js.Promise[js.Array[ClientDBEntry]] = js.native
     
     /**
       * Removes a set of specified permissions from a client.
@@ -546,9 +544,9 @@ object teamSpeakMod {
       * @param continueOnError ignore errors
       */
     def clientMove(client: ClientType, channel: ChannelType): js.Promise[js.Array[js.Any]] = js.native
-    def clientMove(client: ClientType, channel: ChannelType, cpw: js.UndefOr[scala.Nothing], continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
     def clientMove(client: ClientType, channel: ChannelType, cpw: String): js.Promise[js.Array[js.Any]] = js.native
     def clientMove(client: ClientType, channel: ChannelType, cpw: String, continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def clientMove(client: ClientType, channel: ChannelType, cpw: Unit, continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Displays a list of permissions defined for a client
@@ -694,68 +692,21 @@ object teamSpeakMod {
       * @param version of the snapshot with 0 the version of the current teamspeak server is being used
       */
     def deploySnapshot(data: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: js.UndefOr[scala.Nothing],
-      password: js.UndefOr[scala.Nothing],
-      keepfiles: js.UndefOr[scala.Nothing],
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: js.UndefOr[scala.Nothing],
-      password: js.UndefOr[scala.Nothing],
-      keepfiles: Boolean
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: js.UndefOr[scala.Nothing],
-      password: js.UndefOr[scala.Nothing],
-      keepfiles: Boolean,
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: js.UndefOr[scala.Nothing], password: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: js.UndefOr[scala.Nothing],
-      password: String,
-      keepfiles: js.UndefOr[scala.Nothing],
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: js.UndefOr[scala.Nothing], password: String, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: js.UndefOr[scala.Nothing],
-      password: String,
-      keepfiles: Boolean,
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
     def deploySnapshot(data: String, salt: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: String,
-      password: js.UndefOr[scala.Nothing],
-      keepfiles: js.UndefOr[scala.Nothing],
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: js.UndefOr[scala.Nothing], keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: String,
-      password: js.UndefOr[scala.Nothing],
-      keepfiles: Boolean,
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
     def deploySnapshot(data: String, salt: String, password: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(
-      data: String,
-      salt: String,
-      password: String,
-      keepfiles: js.UndefOr[scala.Nothing],
-      version: String
-    ): js.Promise[js.Array[js.Any]] = js.native
     def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
     def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * returns the file in the channel with the given path
@@ -764,8 +715,9 @@ object teamSpeakMod {
       * @param cpw channel password of the channel which will be uploaded to
       */
     def downloadFile(path: String): js.Promise[Buffer] = js.native
-    def downloadFile(path: String, channel: js.UndefOr[ChannelType], cpw: String): js.Promise[Buffer] = js.native
+    def downloadFile(path: String, channel: Unit, cpw: String): js.Promise[Buffer] = js.native
     def downloadFile(path: String, channel: ChannelType): js.Promise[Buffer] = js.native
+    def downloadFile(path: String, channel: ChannelType, cpw: String): js.Promise[Buffer] = js.native
     
     /**
       * returns an icon with the given id
@@ -879,9 +831,9 @@ object teamSpeakMod {
       * @param cpw the channel password
       */
     def ftGetFileList(channel: ChannelType): js.Promise[js.Array[FTGetFileEntry]] = js.native
-    def ftGetFileList(channel: ChannelType, path: js.UndefOr[scala.Nothing], cpw: String): js.Promise[js.Array[FTGetFileEntry]] = js.native
     def ftGetFileList(channel: ChannelType, path: String): js.Promise[js.Array[FTGetFileEntry]] = js.native
     def ftGetFileList(channel: ChannelType, path: String, cpw: String): js.Promise[js.Array[FTGetFileEntry]] = js.native
+    def ftGetFileList(channel: ChannelType, path: Unit, cpw: String): js.Promise[js.Array[FTGetFileEntry]] = js.native
     
     /**
       * Initializes a file transfer download. clientftfid is an arbitrary ID to identify the file transfer on client-side.
@@ -911,40 +863,13 @@ object teamSpeakMod {
       * @param tcpw the channel password from where the file will get transferred to
       */
     def ftRenameFile(channel: ChannelType, oldname: String, newname: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(
-      channel: ChannelType,
-      oldname: String,
-      newname: String,
-      tcid: js.UndefOr[scala.Nothing],
-      cpw: js.UndefOr[scala.Nothing],
-      tcpw: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(
-      channel: ChannelType,
-      oldname: String,
-      newname: String,
-      tcid: js.UndefOr[scala.Nothing],
-      cpw: String
-    ): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(
-      channel: ChannelType,
-      oldname: String,
-      newname: String,
-      tcid: js.UndefOr[scala.Nothing],
-      cpw: String,
-      tcpw: String
-    ): js.Promise[js.Array[js.Any]] = js.native
     def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(
-      channel: ChannelType,
-      oldname: String,
-      newname: String,
-      tcid: String,
-      cpw: js.UndefOr[scala.Nothing],
-      tcpw: String
-    ): js.Promise[js.Array[js.Any]] = js.native
     def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String): js.Promise[js.Array[js.Any]] = js.native
     def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: Unit, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: Unit, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Stops the running file transfer with server-side ID serverftfid.
@@ -1006,7 +931,7 @@ object teamSpeakMod {
       * gets the icon id of a resolveable Perm List
       * @param permlist expects a promise which resolves to a permission list
       */
-    def getIconId(permlist: js.Promise[js.Array[Permission[_]]]): js.Promise[Double] = js.native
+    def getIconId(permlist: js.Promise[js.Array[Permission[js.Any]]]): js.Promise[Double] = js.native
     
     /**
       * retrieves an instance of the Permission
@@ -1097,41 +1022,21 @@ object teamSpeakMod {
       * @param beginPos begin at position
       */
     def logView(): js.Promise[js.Array[LogView]] = js.native
-    def logView(
-      lines: js.UndefOr[scala.Nothing],
-      reverse: js.UndefOr[scala.Nothing],
-      instance: js.UndefOr[scala.Nothing],
-      beginPos: Double
-    ): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: js.UndefOr[scala.Nothing], reverse: js.UndefOr[scala.Nothing], instance: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(
-      lines: js.UndefOr[scala.Nothing],
-      reverse: js.UndefOr[scala.Nothing],
-      instance: Double,
-      beginPos: Double
-    ): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: js.UndefOr[scala.Nothing], reverse: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(
-      lines: js.UndefOr[scala.Nothing],
-      reverse: Double,
-      instance: js.UndefOr[scala.Nothing],
-      beginPos: Double
-    ): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: js.UndefOr[scala.Nothing], reverse: Double, instance: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: js.UndefOr[scala.Nothing], reverse: Double, instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
     def logView(lines: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(
-      lines: Double,
-      reverse: js.UndefOr[scala.Nothing],
-      instance: js.UndefOr[scala.Nothing],
-      beginPos: Double
-    ): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: Double, reverse: js.UndefOr[scala.Nothing], instance: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: Double, reverse: js.UndefOr[scala.Nothing], instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
     def logView(lines: Double, reverse: Double): js.Promise[js.Array[LogView]] = js.native
-    def logView(lines: Double, reverse: Double, instance: js.UndefOr[scala.Nothing], beginPos: Double): js.Promise[js.Array[LogView]] = js.native
     def logView(lines: Double, reverse: Double, instance: Double): js.Promise[js.Array[LogView]] = js.native
     def logView(lines: Double, reverse: Double, instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Double, reverse: Double, instance: Unit, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Double, reverse: Unit, instance: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Double, reverse: Unit, instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Double, reverse: Unit, instance: Unit, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Double, instance: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Double, instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Double, instance: Unit, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Unit, instance: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Unit, instance: Double, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
+    def logView(lines: Unit, reverse: Unit, instance: Unit, beginPos: Double): js.Promise[js.Array[LogView]] = js.native
     
     /**
       * Authenticates with the TeamSpeak 3 Server instance using given ServerQuery login credentials.
@@ -1278,13 +1183,6 @@ object teamSpeakMod {
       * @param customset token custom set
       */
     def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType): js.Any = js.native
-    def privilegeKeyAdd(
-      tokentype: ChannelGroup,
-      group: GroupType,
-      channel: ChannelType,
-      description: js.UndefOr[scala.Nothing],
-      customset: String
-    ): js.Any = js.native
     def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType, description: String): js.Any = js.native
     def privilegeKeyAdd(
       tokentype: ChannelGroup,
@@ -1294,27 +1192,34 @@ object teamSpeakMod {
       customset: String
     ): js.Any = js.native
     def privilegeKeyAdd(
+      tokentype: ChannelGroup,
+      group: GroupType,
+      channel: ChannelType,
+      description: Unit,
+      customset: String
+    ): js.Any = js.native
+    def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType
     ): js.Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      channel: js.UndefOr[scala.Nothing],
-      description: js.UndefOr[scala.Nothing],
-      customset: String
-    ): js.Any = js.native
-    def privilegeKeyAdd(
-      tokentype: ServerGroup,
-      group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      channel: js.UndefOr[scala.Nothing],
+      channel: Unit,
       description: String
     ): js.Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      channel: js.UndefOr[scala.Nothing],
+      channel: Unit,
       description: String,
+      customset: String
+    ): js.Any = js.native
+    def privilegeKeyAdd(
+      tokentype: ServerGroup,
+      group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      channel: Unit,
+      description: Unit,
       customset: String
     ): js.Any = js.native
     
@@ -1364,13 +1269,13 @@ object teamSpeakMod {
       * @param duration how many clients should be listed
       */
     def queryLoginList(): js.Promise[js.Array[QueryLoginEntry]] = js.native
-    def queryLoginList(pattern: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
-    def queryLoginList(pattern: js.UndefOr[scala.Nothing], start: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
-    def queryLoginList(pattern: js.UndefOr[scala.Nothing], start: Double, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
     def queryLoginList(pattern: String): js.Promise[js.Array[QueryLoginEntry]] = js.native
-    def queryLoginList(pattern: String, start: js.UndefOr[scala.Nothing], duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
     def queryLoginList(pattern: String, start: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
     def queryLoginList(pattern: String, start: Double, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
+    def queryLoginList(pattern: String, start: Unit, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
+    def queryLoginList(pattern: Unit, start: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
+    def queryLoginList(pattern: Unit, start: Double, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
+    def queryLoginList(pattern: Unit, start: Unit, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
     
     /** closes the ServerQuery connection to the TeamSpeak server instance. */
     def quit(): js.Promise[js.Array[js.Any]] = js.native
@@ -1381,9 +1286,9 @@ object teamSpeakMod {
       * @param timeout time in ms to wait inbetween reconnect
       */
     def reconnect(): js.Promise[this.type] = js.native
-    def reconnect(attempts: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[this.type] = js.native
     def reconnect(attempts: Double): js.Promise[this.type] = js.native
     def reconnect(attempts: Double, timeout: Double): js.Promise[this.type] = js.native
+    def reconnect(attempts: Unit, timeout: Double): js.Promise[this.type] = js.native
     
     /**
       * Subscribes to an Event
@@ -1442,10 +1347,7 @@ object teamSpeakMod {
       * @param group the serverGroup id
       * @param perm the permission object
       */
-    def serverGroupAddPerm(
-      group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      perm: js.UndefOr[scala.Nothing]
-    ): Permission[_] = js.native
+    def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: Unit): Permission[js.Any] = js.native
     def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
     
     /**
@@ -1467,24 +1369,41 @@ object teamSpeakMod {
     def serverGroupCopy(sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType): js.Promise[ServerGroupCopy] = js.native
     def serverGroupCopy(
       sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      targetGroup: js.UndefOr[typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType],
-      `type`: js.UndefOr[scala.Nothing],
-      name: String
-    ): js.Promise[ServerGroupCopy] = js.native
-    def serverGroupCopy(
-      sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      targetGroup: js.UndefOr[typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType],
+      targetGroup: Unit,
       `type`: Double
     ): js.Promise[ServerGroupCopy] = js.native
     def serverGroupCopy(
       sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      targetGroup: js.UndefOr[typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType],
+      targetGroup: Unit,
       `type`: Double,
       name: String
     ): js.Promise[ServerGroupCopy] = js.native
     def serverGroupCopy(
       sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      targetGroup: Unit,
+      `type`: Unit,
+      name: String
+    ): js.Promise[ServerGroupCopy] = js.native
+    def serverGroupCopy(
+      sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
       targetGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType
+    ): js.Promise[ServerGroupCopy] = js.native
+    def serverGroupCopy(
+      sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      targetGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      `type`: Double
+    ): js.Promise[ServerGroupCopy] = js.native
+    def serverGroupCopy(
+      sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      targetGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      `type`: Double,
+      name: String
+    ): js.Promise[ServerGroupCopy] = js.native
+    def serverGroupCopy(
+      sourceGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      targetGroup: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      `type`: Unit,
+      name: String
     ): js.Promise[ServerGroupCopy] = js.native
     
     /**
@@ -1545,15 +1464,15 @@ object teamSpeakMod {
       * @param tokencustomset token custom set
       */
     def serverGroupPrivilegeKeyAdd(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType): js.Promise[Token] = js.native
-    def serverGroupPrivilegeKeyAdd(
-      group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
-      description: js.UndefOr[scala.Nothing],
-      customset: String
-    ): js.Promise[Token] = js.native
     def serverGroupPrivilegeKeyAdd(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, description: String): js.Promise[Token] = js.native
     def serverGroupPrivilegeKeyAdd(
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
       description: String,
+      customset: String
+    ): js.Promise[Token] = js.native
+    def serverGroupPrivilegeKeyAdd(
+      group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
+      description: Unit,
       customset: String
     ): js.Promise[Token] = js.native
     
@@ -1680,11 +1599,13 @@ object teamSpeakMod {
       * @param cpw channel password of the channel which will be uploaded to
       */
     def uploadFile(path: String, data: String): js.Promise[Unit] = js.native
-    def uploadFile(path: String, data: String, channel: js.UndefOr[ChannelType], cpw: String): js.Promise[Unit] = js.native
+    def uploadFile(path: String, data: String, channel: Unit, cpw: String): js.Promise[Unit] = js.native
     def uploadFile(path: String, data: String, channel: ChannelType): js.Promise[Unit] = js.native
+    def uploadFile(path: String, data: String, channel: ChannelType, cpw: String): js.Promise[Unit] = js.native
     def uploadFile(path: String, data: Buffer): js.Promise[Unit] = js.native
-    def uploadFile(path: String, data: Buffer, channel: js.UndefOr[ChannelType], cpw: String): js.Promise[Unit] = js.native
+    def uploadFile(path: String, data: Buffer, channel: Unit, cpw: String): js.Promise[Unit] = js.native
     def uploadFile(path: String, data: Buffer, channel: ChannelType): js.Promise[Unit] = js.native
+    def uploadFile(path: String, data: Buffer, channel: ChannelType, cpw: String): js.Promise[Unit] = js.native
     
     /**
       * uploads an icon to the teamspeak server and returns its id
@@ -1721,6 +1642,10 @@ object teamSpeakMod {
   /* static members */
   object TeamSpeak {
     
+    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @js.native
     sealed trait QueryProtocol extends StObject
     @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.QueryProtocol")
@@ -1728,107 +1653,101 @@ object teamSpeakMod {
     object QueryProtocol extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol with String] = js.native
+      def apply(value: String): js.UndefOr[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol & String] = js.native
       
       @js.native
       sealed trait RAW
-        extends typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
-      /* "raw" */ val RAW: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol.RAW with String = js.native
+        extends StObject
+           with typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
+      /* "raw" */ val RAW: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol.RAW & String = js.native
       
       @js.native
       sealed trait SSH
-        extends typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
-      /* "ssh" */ val SSH: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol.SSH with String = js.native
+        extends StObject
+           with typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
+      /* "ssh" */ val SSH: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol.SSH & String = js.native
     }
     
     /**
       * connects via a Promise wrapper
       * @param config config options to connect
       */
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.connect")
-    @js.native
-    def connect(config: PartialConnectionParams): js.Promise[TeamSpeak] = js.native
+    @scala.inline
+    def connect(config: PartialConnectionParams): js.Promise[TeamSpeak] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TeamSpeak]]
     
     /**
       * filters an array with given filter
       * @param array the array which should get filtered
       * @param filter filter object
       */
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.filter")
-    @js.native
-    def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = js.native
+    @scala.inline
+    def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     /**
       * retrieves the first element of an array
       * @param input the response input
       */
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.singleResponse")
-    @js.native
-    def singleResponse[T](input: T): T = js.native
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.singleResponse")
-    @js.native
-    def singleResponse[T](input: js.Array[T]): T = js.native
+    @scala.inline
+    def singleResponse[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def singleResponse[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Transforms an Input to an Array
       * @param input input data which should be converted to an array
       */
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.toArray")
-    @js.native
-    def toArray[T](input: T): js.Array[T] = js.native
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.toArray")
-    @js.native
-    def toArray[T](input: js.Array[T]): js.Array[T] = js.native
+    @scala.inline
+    def toArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def toArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
     /**
       * waits a set time of ms
       * @param time time in ms to wait
       */
-    @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak.wait")
-    @js.native
-    def wait(time: Double): js.Promise[_] = js.native
+    @scala.inline
+    def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @js.native
     trait ConnectionParams extends StObject {
       
       /** wether it should automatically connect after instanciating (default: true) */
-      var autoConnect: js.UndefOr[Boolean] = js.native
+      var autoConnect: js.UndefOr[Boolean] = js.undefined
       
       /** the host to connect to (default: 127.0.0.1) */
-      var host: String = js.native
+      var host: String
       
       /** wether query clients should be ignored allover (clientList, events, etc) */
-      var ignoreQueries: Boolean = js.native
+      var ignoreQueries: Boolean
       
       /** wether a keepalive should get sent (default: true) */
-      var keepAlive: Boolean = js.native
+      var keepAlive: Boolean
       
       /** sends the keepalive after x seconds of inactivity (default: 250s) */
-      var keepAliveTimeout: Double = js.native
+      var keepAliveTimeout: Double
       
       /** local address the socket should connect from */
-      var localAddress: js.UndefOr[String] = js.native
+      var localAddress: js.UndefOr[String] = js.undefined
       
       /** the nickname to connect with */
-      var nickname: js.UndefOr[String] = js.native
+      var nickname: js.UndefOr[String] = js.undefined
       
       /** the password to use with the login (default: none) */
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
       /** the query protocol to use (default: @see QueryProtocol ) */
-      var protocol: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol = js.native
+      var protocol: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
       
       /** the queryport to use (default: raw=10011 ssh=10022) */
-      var queryport: Double = js.native
+      var queryport: Double
       
       /** time to wait until a timeout gets fired (default: 10000) */
-      var readyTimeout: Double = js.native
+      var readyTimeout: Double
       
       /** the server to select upon connect (default: none) */
-      var serverport: js.UndefOr[Double] = js.native
+      var serverport: js.UndefOr[Double] = js.undefined
       
       /** the username to login with (default: none) */
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object ConnectionParams {
       

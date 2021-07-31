@@ -2,26 +2,24 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceInput extends StObject {
   
   /**
     * The maximum number of results to be returned per request that lists the tags for the resource.
     */
-  var MaxResults: js.UndefOr[MaxTagsCount] = js.native
+  var MaxResults: js.UndefOr[MaxTagsCount] = js.undefined
   
   /**
     * The token for the next set of results, or null if there are no additional results for this request, where the request lists the tags for the resource with the specified ARN.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * Lists the tags for the resource with the specified ARN.
     */
-  var ResourceARN: AmazonResourceName = js.native
+  var ResourceARN: AmazonResourceName
 }
 object ListTagsForResourceInput {
   

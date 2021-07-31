@@ -2,21 +2,21 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The phone info options for multi-factor sign-in. Either multi-factor hint or
   * multi-factor UID and multi-factor session are required.
   */
-@js.native
-trait PhoneMultiFactorSignInInfoOptions extends PhoneInfoOptions {
+trait PhoneMultiFactorSignInInfoOptions
+  extends StObject
+     with PhoneInfoOptions {
   
-  var multiFactorHint: js.UndefOr[MultiFactorInfo] = js.native
+  var multiFactorHint: js.UndefOr[MultiFactorInfo] = js.undefined
   
-  var multiFactorUid: js.UndefOr[String] = js.native
+  var multiFactorUid: js.UndefOr[String] = js.undefined
   
-  var session: MultiFactorSession = js.native
+  var session: MultiFactorSession
 }
 object PhoneMultiFactorSignInInfoOptions {
   

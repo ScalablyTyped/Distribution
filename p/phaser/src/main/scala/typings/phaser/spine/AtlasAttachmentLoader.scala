@@ -2,13 +2,13 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AtlasAttachmentLoader extends AttachmentLoader {
+trait AtlasAttachmentLoader
+  extends StObject
+     with AttachmentLoader {
   
-  var atlas: TextureAtlas = js.native
+  var atlas: TextureAtlas
 }
 object AtlasAttachmentLoader {
   

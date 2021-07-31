@@ -3,17 +3,15 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummonerSpellListDto extends StObject {
   
-  var data: js.Array[StringDictionary[SummonerSpellDto]] = js.native
+  var data: js.Array[StringDictionary[SummonerSpellDto]]
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: String = js.native
+  var version: String
 }
 object SummonerSpellListDto {
   

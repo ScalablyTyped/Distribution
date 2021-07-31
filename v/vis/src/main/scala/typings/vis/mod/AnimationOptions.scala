@@ -2,16 +2,14 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
   /**
     * The duration (in milliseconds).
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * The easing function.
@@ -21,7 +19,7 @@ trait AnimationOptions extends StObject {
     * easeOutCubic, easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart,
     * easeInQuint, easeOutQuint, easeInOutQuint.
     */
-  var easingFunction: EasingFunction = js.native
+  var easingFunction: EasingFunction
 }
 object AnimationOptions {
   

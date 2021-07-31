@@ -2,78 +2,76 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MedicalTranscriptionJob extends StObject {
   
   /**
     * A timestamp that shows when the job was completed.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.native
+  var CompletionTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A timestamp that shows when the job was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * If the TranscriptionJobStatus field is FAILED, this field contains information about why the job failed. The FailureReason field contains one of the following values:    Unsupported media format- The media format specified in the MediaFormat field of the request isn't valid. See the description of the MediaFormat field for a list of valid values.    The media format provided does not match the detected media format- The media format of the audio file doesn't match the format specified in the MediaFormat field in the request. Check the media format of your media file and make sure the two values match.    Invalid sample rate for audio file- The sample rate specified in the MediaSampleRateHertz of the request isn't valid. The sample rate must be between 8000 and 48000 Hertz.    The sample rate provided does not match the detected sample rate- The sample rate in the audio file doesn't match the sample rate specified in the MediaSampleRateHertz field in the request. Check the sample rate of your media file and make sure that the two values match.    Invalid file size: file size too large- The size of your audio file is larger than what Amazon Transcribe Medical can process. For more information, see Guidelines and Quotas in the Amazon Transcribe Medical Guide     Invalid number of channels: number of channels too large- Your audio contains more channels than Amazon Transcribe Medical is configured to process. To request additional channels, see Amazon Transcribe Medical Endpoints and Quotas in the Amazon Web Services General Reference   
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
     * The language code for the language spoken in the source audio file. US English (en-US) is the only supported language for medical transcriptions. Any other value you enter for language code results in a BadRequestException error.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
-  var Media: js.UndefOr[typings.awsSdk.transcribeserviceMod.Media] = js.native
+  var Media: js.UndefOr[typings.awsSdk.transcribeserviceMod.Media] = js.undefined
   
   /**
     * The format of the input media file.
     */
-  var MediaFormat: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaFormat] = js.native
+  var MediaFormat: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaFormat] = js.undefined
   
   /**
     * The sample rate, in Hertz, of the source audio containing medical information. If you don't specify the sample rate, Amazon Transcribe Medical determines it for you. If you choose to specify the sample rate, it must match the rate detected by Amazon Transcribe Medical. In most cases, you should leave the MediaSampleHertz blank and let Amazon Transcribe Medical determine the sample rate.
     */
-  var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaSampleRateHertz] = js.native
+  var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.transcribeserviceMod.MediaSampleRateHertz] = js.undefined
   
   /**
     * The name for a given medical transcription job.
     */
-  var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.native
+  var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
     * Object that contains object.
     */
-  var Settings: js.UndefOr[MedicalTranscriptionSetting] = js.native
+  var Settings: js.UndefOr[MedicalTranscriptionSetting] = js.undefined
   
   /**
     * The medical specialty of any clinicians providing a dictation or having a conversation. PRIMARYCARE is the only available setting for this object. This specialty enables you to generate transcriptions for the following medical fields:   Family Medicine  
     */
-  var Specialty: js.UndefOr[typings.awsSdk.transcribeserviceMod.Specialty] = js.native
+  var Specialty: js.UndefOr[typings.awsSdk.transcribeserviceMod.Specialty] = js.undefined
   
   /**
     * A timestamp that shows when the job started processing.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * An object that contains the MedicalTranscript. The MedicalTranscript contains the TranscriptFileUri.
     */
-  var Transcript: js.UndefOr[MedicalTranscript] = js.native
+  var Transcript: js.UndefOr[MedicalTranscript] = js.undefined
   
   /**
     * The completion status of a medical transcription job.
     */
-  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.native
+  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
   
   /**
     * The type of speech in the transcription job. CONVERSATION is generally used for patient-physician dialogues. DICTATION is the setting for physicians speaking their notes after seeing a patient. For more information, see how-it-works-med 
     */
-  var Type: js.UndefOr[typings.awsSdk.transcribeserviceMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.transcribeserviceMod.Type] = js.undefined
 }
 object MedicalTranscriptionJob {
   

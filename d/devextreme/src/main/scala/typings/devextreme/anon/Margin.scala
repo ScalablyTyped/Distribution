@@ -7,25 +7,23 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Margin extends StObject {
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | top] = js.native
+  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
 }
 object Margin {
   

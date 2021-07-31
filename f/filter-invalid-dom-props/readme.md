@@ -11,8 +11,8 @@ a function to filter props that are not valid dom props when spreading props in 
 | Full name          | filter-invalid-dom-props |
 | Keywords           | react, props, dom, filter-props, dom-props |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1382858 |
+| # dependents       | 17 |
+| # downloads        | 1908218 |
 | # stars            | 1 |
 
 ## Links

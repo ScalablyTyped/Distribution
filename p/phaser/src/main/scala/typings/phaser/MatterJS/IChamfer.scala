@@ -2,22 +2,20 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  --------------------------------------------------------------
 //  Interfaces
 //  --------------------------------------------------------------
-@js.native
 trait IChamfer extends StObject {
   
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
-  var qualityMax: js.UndefOr[Double] = js.native
+  var qualityMax: js.UndefOr[Double] = js.undefined
   
-  var qualityMin: js.UndefOr[Double] = js.native
+  var qualityMin: js.UndefOr[Double] = js.undefined
   
-  var radius: js.UndefOr[Double | js.Array[Double]] = js.native
+  var radius: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object IChamfer {
   

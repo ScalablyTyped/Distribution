@@ -3,19 +3,18 @@ package typings.typedoc.optionsDeclarationMod
 import typings.typedoc.optionsDeclarationMod.ParameterType.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayDeclarationOption
-  extends DeclarationOptionBase
+  extends StObject
+     with DeclarationOptionBase
      with _DeclarationOption
      with _KeyToDeclaration[js.Any] {
   
-  var defaultValue: js.UndefOr[js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_ArrayDeclarationOption: Array = js.native
+  var type_ArrayDeclarationOption: Array
 }
 object ArrayDeclarationOption {
   

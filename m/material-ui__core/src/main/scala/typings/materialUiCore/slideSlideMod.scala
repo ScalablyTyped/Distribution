@@ -10,7 +10,6 @@ import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slideSlideMod extends Shortcut {
@@ -19,12 +18,13 @@ object slideSlideMod extends Shortcut {
   @js.native
   val default: ComponentType[SlideProps] = js.native
   
-  @js.native
-  trait SlideProps extends TransitionProps {
+  trait SlideProps
+    extends StObject
+       with TransitionProps {
     
-    var direction: left | right | up | down = js.native
+    var direction: left | right | up | down
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object SlideProps {
     

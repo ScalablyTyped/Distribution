@@ -2,11 +2,11 @@ package typings.microsoftGraph.mod.CallRecords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceUserAgent extends UserAgent {
+trait ServiceUserAgent
+  extends StObject
+     with UserAgent {
   
   /**
     * Identifies the role of the service used by this endpoint. Possible values are: unknown, customBot,
@@ -17,7 +17,7 @@ trait ServiceUserAgent extends UserAgent {
     * responseGroupServiceAnnouncementService, gateway, skypeTranslator, skypeForBusinessAttendant, responseGroupService,
     * voicemail, unknownFutureValue.
     */
-  var role: js.UndefOr[ServiceRole] = js.native
+  var role: js.UndefOr[ServiceRole] = js.undefined
 }
 object ServiceUserAgent {
   

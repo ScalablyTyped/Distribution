@@ -2,26 +2,24 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alias extends StObject {
   
   /**
   				 * New request
   				 */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
   				 * Request to be redirected
   				 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
   				 * Redirect only exact matching request
   				 */
-  var onlyModule: js.UndefOr[Boolean] = js.native
+  var onlyModule: js.UndefOr[Boolean] = js.undefined
 }
 object Alias {
   

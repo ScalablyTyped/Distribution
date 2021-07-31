@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
   */
-@js.native
 trait PlusOrientationRotation extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * 以x方向为轴心的旋转角度
@@ -27,7 +25,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var beta: js.UndefOr[Double] = js.native
+  var beta: js.UndefOr[Double] = js.undefined
   
   /**
     * 以y方向为轴心的旋转角度
@@ -35,7 +33,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var gamma: js.UndefOr[Double] = js.native
+  var gamma: js.UndefOr[Double] = js.undefined
   
   /**
     * 设备方向值的误差值
@@ -43,7 +41,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var headingAccuracy: js.UndefOr[Double] = js.native
+  var headingAccuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * 设备方向与地球磁场北极方向的角度
@@ -51,7 +49,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var magneticHeading: js.UndefOr[Double] = js.native
+  var magneticHeading: js.UndefOr[Double] = js.undefined
   
   /**
     * 设备方向与地球真实北极方向的角度
@@ -59,7 +57,7 @@ trait PlusOrientationRotation extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
-  var trueHeading: js.UndefOr[Double] = js.native
+  var trueHeading: js.UndefOr[Double] = js.undefined
 }
 object PlusOrientationRotation {
   

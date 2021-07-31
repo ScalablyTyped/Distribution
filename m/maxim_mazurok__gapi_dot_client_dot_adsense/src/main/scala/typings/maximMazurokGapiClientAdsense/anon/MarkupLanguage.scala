@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdsense.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkupLanguage extends StObject {
   
   /** The markup language to use for this ad unit. */
-  var markupLanguage: js.UndefOr[String] = js.native
+  var markupLanguage: js.UndefOr[String] = js.undefined
   
   /** The scripting language to use for this ad unit. */
-  var scriptingLanguage: js.UndefOr[String] = js.native
+  var scriptingLanguage: js.UndefOr[String] = js.undefined
   
   /** Size of this ad unit. */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /** Type of this ad unit. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MarkupLanguage {
   

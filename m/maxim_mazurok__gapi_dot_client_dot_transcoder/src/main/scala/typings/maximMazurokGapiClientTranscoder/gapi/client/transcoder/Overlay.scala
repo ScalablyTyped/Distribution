@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overlay extends StObject {
   
   /** List of Animations. The list should be chronological, without any time overlap. */
-  var animations: js.UndefOr[js.Array[Animation]] = js.native
+  var animations: js.UndefOr[js.Array[Animation]] = js.undefined
   
   /** Image overlay. */
-  var image: js.UndefOr[Image] = js.native
+  var image: js.UndefOr[Image] = js.undefined
 }
 object Overlay {
   

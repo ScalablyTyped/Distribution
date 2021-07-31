@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinaryExpression extends AST {
+trait BinaryExpression
+  extends StObject
+     with AST {
   
-  var _nodeType: js.Any = js.native
+  var _nodeType: js.Any
   
-  var left: AST = js.native
+  var left: AST
   
-  var right: AST = js.native
+  var right: AST
   
-  def structuralEquals(ast: BinaryExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: BinaryExpression, includingPosition: Boolean): Boolean
 }
 object BinaryExpression {
   

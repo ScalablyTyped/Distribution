@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateResourceRequest extends StObject {
   
   /**
     * The name or ID of the application.
     */
-  var application: ApplicationSpecifier = js.native
+  var application: ApplicationSpecifier
   
   /**
     * The name or ID of the resource.
     */
-  var resource: ResourceSpecifier = js.native
+  var resource: ResourceSpecifier
   
   /**
     * The type of the resource that is being disassociated.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
 }
 object DisassociateResourceRequest {
   

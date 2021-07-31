@@ -3,27 +3,25 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageInfo extends StObject {
   
-  var Created: Double = js.native
+  var Created: Double
   
-  var Id: String = js.native
+  var Id: String
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var ParentId: String = js.native
+  var ParentId: String
   
-  var RepoDigests: js.UndefOr[js.Array[String]] = js.native
+  var RepoDigests: js.UndefOr[js.Array[String]] = js.undefined
   
-  var RepoTags: js.Array[String] = js.native
+  var RepoTags: js.Array[String]
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var VirtualSize: Double = js.native
+  var VirtualSize: Double
 }
 object ImageInfo {
   

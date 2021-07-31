@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a font family and weight used to style a TextRun.
   */
-@js.native
 trait SchemaWeightedFontFamily extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaWeightedFontFamily extends StObject {
     * Font menu in Slides or from [Google Fonts] (https://fonts.google.com/).
     * If the font name is unrecognized, the text is rendered in `Arial`.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The rendered weight of the text. This field can have any value that is a
@@ -28,7 +26,7 @@ trait SchemaWeightedFontFamily extends StObject {
     * `700` are considered bold, and weights less than `700`are not bold. The
     * default value is `400` (&quot;normal&quot;).
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object SchemaWeightedFontFamily {
   

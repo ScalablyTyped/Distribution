@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "CardinalityAggregation")
 @js.native
-class CardinalityAggregation protected () extends Aggregation {
+class CardinalityAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that calculates an approximate count of distinct values.
     */

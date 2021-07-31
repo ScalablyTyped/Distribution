@@ -2,26 +2,26 @@ package typings.formUrlencoded
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("form-urlencoded", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Any): String = js.native
-  @JSImport("form-urlencoded", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Any, opts: FormEncodedOptions): String = js.native
+  @scala.inline
+  def apply(data: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: js.Any, opts: FormEncodedOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("form-urlencoded", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FormEncodedOptions extends StObject {
     
-    var ignorenull: js.UndefOr[Boolean] = js.native
+    var ignorenull: js.UndefOr[Boolean] = js.undefined
     
-    var skipIndex: js.UndefOr[Boolean] = js.native
+    var skipIndex: js.UndefOr[Boolean] = js.undefined
     
-    var sorted: js.UndefOr[Boolean] = js.native
+    var sorted: js.UndefOr[Boolean] = js.undefined
   }
   object FormEncodedOptions {
     

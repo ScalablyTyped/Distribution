@@ -6,41 +6,39 @@ import typings.kendoUi.kendoUiStrings.item
 import typings.kendoUi.kendoUiStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RatingOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ RatingChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ RatingChangeEvent, Unit]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var hoveredTemplate: js.UndefOr[String | js.Function] = js.native
+  var hoveredTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var itemTemplate: js.UndefOr[String | js.Function] = js.native
+  var itemTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var label: js.UndefOr[Boolean | RatingLabel] = js.native
+  var label: js.UndefOr[Boolean | RatingLabel] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var precision: String | item | half = js.native
+  var precision: String | item | half
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ RatingSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ RatingSelectEvent, Unit]] = js.undefined
   
-  var selectValueOnFocus: js.UndefOr[Double] = js.native
+  var selectValueOnFocus: js.UndefOr[Double] = js.undefined
   
-  var selectedTemplate: js.UndefOr[String | js.Function] = js.native
+  var selectedTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var selection: String | continuous | single = js.native
+  var selection: String | continuous | single
   
-  var tooltip: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.undefined
 }
 object RatingOptions {
   

@@ -2,18 +2,16 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response[T] extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
   //T|Error;
-  var status: Double = js.native
+  var status: Double
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object Response {
   
@@ -24,7 +22,7 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

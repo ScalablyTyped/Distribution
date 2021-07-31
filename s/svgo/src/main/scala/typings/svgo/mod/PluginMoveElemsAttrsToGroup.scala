@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginMoveElemsAttrsToGroup extends PluginConfig {
+trait PluginMoveElemsAttrsToGroup
+  extends StObject
+     with PluginConfig {
   
-  var moveElemsAttrsToGroup: Boolean | js.Object = js.native
+  var moveElemsAttrsToGroup: Boolean | js.Object
 }
 object PluginMoveElemsAttrsToGroup {
   

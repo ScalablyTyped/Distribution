@@ -3,23 +3,21 @@ package typings.giustoInkRouter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hash extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
   }
   object Hash {
     
@@ -61,12 +59,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -93,23 +90,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Params[T /* <: Record[String, _] */] extends StObject {
+  trait Params[T /* <: Record[String, js.Any] */] extends StObject {
     
-    var params: T = js.native
+    var params: T
     
-    var path: String = js.native
+    var path: String
   }
   object Params {
     
     @scala.inline
-    def apply[T /* <: Record[String, _] */](params: T, path: String): Params[T] = {
+    def apply[T /* <: Record[String, js.Any] */](params: T, path: String): Params[T] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params[T]]
     }
     
     @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params[_], T /* <: Record[String, _] */] (val x: Self with Params[T]) extends AnyVal {
+    implicit class ParamsMutableBuilder[Self <: Params[?], T /* <: Record[String, js.Any] */] (val x: Self & Params[T]) extends AnyVal {
       
       @scala.inline
       def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ Minifier of js, css, html and img
 | ------------------ | :-------------: |
 | Full name          | minify |
 | Keywords           | minify, minimize, js, css, img, html, base64 |
-| # releases         | 12 |
-| # dependents       | 101 |
-| # downloads        | 3456395 |
+| # releases         | 10 |
+| # dependents       | 112 |
+| # downloads        | 4294688 |
 | # stars            | 12 |
 
 ## Links

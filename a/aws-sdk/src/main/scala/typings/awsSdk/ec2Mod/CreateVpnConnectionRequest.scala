@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVpnConnectionRequest extends StObject {
   
   /**
     * The ID of the customer gateway.
     */
-  var CustomerGatewayId: typings.awsSdk.ec2Mod.CustomerGatewayId = js.native
+  var CustomerGatewayId: typings.awsSdk.ec2Mod.CustomerGatewayId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The options for the VPN connection.
     */
-  var Options: js.UndefOr[VpnConnectionOptionsSpecification] = js.native
+  var Options: js.UndefOr[VpnConnectionOptionsSpecification] = js.undefined
   
   /**
     * The tags to apply to the VPN connection.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The ID of the transit gateway. If you specify a transit gateway, you cannot specify a virtual private gateway.
     */
-  var TransitGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayId] = js.native
+  var TransitGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayId] = js.undefined
   
   /**
     * The type of VPN connection (ipsec.1).
     */
-  var Type: String = js.native
+  var Type: String
   
   /**
     * The ID of the virtual private gateway. If you specify a virtual private gateway, you cannot specify a transit gateway.
     */
-  var VpnGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.VpnGatewayId] = js.native
+  var VpnGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.VpnGatewayId] = js.undefined
 }
 object CreateVpnConnectionRequest {
   

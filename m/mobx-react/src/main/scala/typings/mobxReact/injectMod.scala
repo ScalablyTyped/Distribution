@@ -5,15 +5,28 @@ import typings.mobxReact.istorestopropsMod.IStoresToProps
 import typings.mobxReact.iwrappedcomponentMod.IWrappedComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object injectMod {
   
-  @JSImport("mobx-react/dist/inject", "inject")
+  @JSImport("mobx-react/dist/inject", JSImport.Namespace)
   @js.native
-  def inject(stores: String*): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[_]] = js.native
-  @JSImport("mobx-react/dist/inject", "inject")
-  @js.native
-  def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[P]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def inject(stores: String*): js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[js.Any]
+  ]]
+  @scala.inline
+  def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[P]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* target */ IReactComponent[js.Any], 
+    IReactComponent[js.Any] & IWrappedComponent[P]
+  ]]
 }

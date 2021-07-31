@@ -3,37 +3,35 @@ package typings.appBuilderLib
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronOsxSignMod {
   
-  @JSImport("app-builder-lib/electron-osx-sign", "flat")
+  @JSImport("app-builder-lib/electron-osx-sign", JSImport.Namespace)
   @js.native
-  def flat(opts: FlatOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/electron-osx-sign", "flatAsync")
-  @js.native
-  def flatAsync(opts: FlatOptions): js.Promise[_] = js.native
+  @scala.inline
+  def flat(opts: FlatOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("app-builder-lib/electron-osx-sign", "sign")
-  @js.native
-  def sign(opts: SignOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def flatAsync(opts: FlatOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("app-builder-lib/electron-osx-sign", "signAsync")
-  @js.native
-  def signAsync(opts: SignOptions): js.Promise[_] = js.native
+  @scala.inline
+  def sign(opts: SignOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def signAsync(opts: SignOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("signAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  
   trait BaseSignOptions extends StObject {
     
-    var app: String = js.native
+    var app: String
     
-    var identity: js.UndefOr[String] = js.native
+    var identity: js.UndefOr[String] = js.undefined
     
-    var keychain: js.UndefOr[String] = js.native
+    var keychain: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
   }
   object BaseSignOptions {
     
@@ -69,16 +67,17 @@ object electronOsxSignMod {
     }
   }
   
-  @js.native
-  trait FlatOptions extends BaseSignOptions {
+  trait FlatOptions
+    extends StObject
+       with BaseSignOptions {
     
-    var `identity-validation`: js.UndefOr[Boolean] = js.native
+    var `identity-validation`: js.UndefOr[Boolean] = js.undefined
     
-    var install: js.UndefOr[String] = js.native
+    var install: js.UndefOr[String] = js.undefined
     
-    var pkg: js.UndefOr[String] = js.native
+    var pkg: js.UndefOr[String] = js.undefined
     
-    var scripts: js.UndefOr[String] = js.native
+    var scripts: js.UndefOr[String] = js.undefined
   }
   object FlatOptions {
     
@@ -117,38 +116,39 @@ object electronOsxSignMod {
     }
   }
   
-  @js.native
-  trait SignOptions extends BaseSignOptions {
+  trait SignOptions
+    extends StObject
+       with BaseSignOptions {
     
-    var binaries: js.UndefOr[js.Array[String]] = js.native
+    var binaries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var entitlements: js.UndefOr[String] = js.native
+    var entitlements: js.UndefOr[String] = js.undefined
     
-    var `entitlements-inherit`: js.UndefOr[String] = js.native
+    var `entitlements-inherit`: js.UndefOr[String] = js.undefined
     
-    var `entitlements-loginhelper`: js.UndefOr[String] = js.native
+    var `entitlements-loginhelper`: js.UndefOr[String] = js.undefined
     
-    var `gatekeeper-assess`: js.UndefOr[Boolean] = js.native
+    var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
     
-    var hardenedRuntime: js.UndefOr[Boolean] = js.native
+    var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
     
-    var `identity-validation`: js.UndefOr[Boolean] = js.native
+    var `identity-validation`: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
-    var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.native
+    var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.undefined
     
-    var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.native
+    var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.undefined
     
-    var `provisioning-profile`: js.UndefOr[String] = js.native
+    var `provisioning-profile`: js.UndefOr[String] = js.undefined
     
-    var requirements: js.UndefOr[String] = js.native
+    var requirements: js.UndefOr[String] = js.undefined
     
-    var `signature-size`: js.UndefOr[Double] = js.native
+    var `signature-size`: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object SignOptions {
     

@@ -11,20 +11,21 @@ import typings.requestDebug.requestDebugStrings.request
 import typings.requestDebug.requestDebugStrings.response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("request-debug", JSImport.Namespace)
-  @js.native
-  def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](request: RequestAPI[TRequest, TOptions, TUriUrlOptions]): Unit = js.native
-  @JSImport("request-debug", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](request: RequestAPI[TRequest, TOptions, TUriUrlOptions]): Unit = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](
     request: RequestAPI[TRequest, TOptions, TUriUrlOptions],
     cb: LogCallback[TRequest, TOptions, TUriUrlOptions]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("request-debug", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("request-debug", "log")
   @js.native
@@ -89,16 +90,17 @@ object mod {
     def response: typings.requestDebug.requestDebugStrings.response = "response".asInstanceOf[typings.requestDebug.requestDebugStrings.response]
   }
   
-  @js.native
-  trait RedirectData extends LogData {
+  trait RedirectData
+    extends StObject
+       with LogData {
     
-    var debugId: Double = js.native
+    var debugId: Double
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var uri: String = js.native
+    var uri: String
   }
   object RedirectData {
     
@@ -125,18 +127,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequestData extends LogData {
+  trait RequestData
+    extends StObject
+       with LogData {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var debugId: Double = js.native
+    var debugId: Double
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: String = js.native
+    var method: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object RequestData {
     
@@ -169,16 +172,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait ResponseData extends LogData {
+  trait ResponseData
+    extends StObject
+       with LogData {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var debugId: Double = js.native
+    var debugId: Double
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object ResponseData {
     

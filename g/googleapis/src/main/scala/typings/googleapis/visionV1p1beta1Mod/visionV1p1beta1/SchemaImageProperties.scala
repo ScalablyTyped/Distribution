@@ -2,19 +2,17 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stores image properties, such as dominant colors.
   */
-@js.native
 trait SchemaImageProperties extends StObject {
   
   /**
     * If present, dominant colors completed successfully.
     */
-  var dominantColors: js.UndefOr[SchemaDominantColorsAnnotation] = js.native
+  var dominantColors: js.UndefOr[SchemaDominantColorsAnnotation] = js.undefined
 }
 object SchemaImageProperties {
   

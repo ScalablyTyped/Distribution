@@ -2,24 +2,22 @@ package typings.hyphen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<hyphen.hyphen.FactoryOptions> */
-  @js.native
   trait ReadonlyFactoryOptions extends StObject {
     
-    val async: js.UndefOr[Boolean] = js.native
+    val async: js.UndefOr[Boolean] = js.undefined
     
-    val debug: js.UndefOr[Boolean] = js.native
+    val debug: js.UndefOr[Boolean] = js.undefined
     
-    val html: js.UndefOr[Boolean] = js.native
+    val html: js.UndefOr[Boolean] = js.undefined
     
-    val hyphenChar: js.UndefOr[String] = js.native
+    val hyphenChar: js.UndefOr[String] = js.undefined
     
-    val minWordLength: js.UndefOr[Double] = js.native
+    val minWordLength: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyFactoryOptions {
     
@@ -65,14 +63,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<hyphen.hyphen.HyphenationOptions> */
-  @js.native
   trait ReadonlyHyphenationOption extends StObject {
     
-    val debug: js.UndefOr[Boolean] = js.native
+    val debug: js.UndefOr[Boolean] = js.undefined
     
-    val hyphenChar: js.UndefOr[String] = js.native
+    val hyphenChar: js.UndefOr[String] = js.undefined
     
-    val minWordLength: js.UndefOr[Double] = js.native
+    val minWordLength: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyHyphenationOption {
     
@@ -106,12 +103,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<hyphen.hyphen.PatternsDefinition> */
-  @js.native
   trait ReadonlyPatternsDefinitio extends StObject {
     
-    val exceptions: js.Array[String] = js.native
+    val exceptions: js.Array[String]
     
-    val patterns: js.Array[String] = js.native
+    val patterns: js.Array[String]
   }
   object ReadonlyPatternsDefinitio {
     

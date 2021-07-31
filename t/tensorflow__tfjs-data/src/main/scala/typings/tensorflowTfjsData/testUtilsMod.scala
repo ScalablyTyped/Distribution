@@ -4,10 +4,13 @@ import typings.std.Float32Array
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilsMod {
+  
+  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "FakeAudioContext")
   @js.native
@@ -24,9 +27,12 @@ object testUtilsMod {
   /* static members */
   object FakeAudioContext {
     
-    @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "FakeAudioContext.createInstance")
+    @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "FakeAudioContext")
     @js.native
-    def createInstance(): FakeAudioContext = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createInstance(): FakeAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[FakeAudioContext]
   }
   
   @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "FakeAudioMediaStream")
@@ -36,44 +42,37 @@ object testUtilsMod {
     def getTracks(): js.Array[js.Object] = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "describeAllEnvs")
-  @js.native
-  def describeAllEnvs(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describeAllEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAllEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "describeBrowserEnvs")
-  @js.native
-  def describeBrowserEnvs(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describeBrowserEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeBrowserEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "describeNodeEnvs")
-  @js.native
-  def describeNodeEnvs(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describeNodeEnvs(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeNodeEnvs")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "replaceHTMLVideoElementSource")
-  @js.native
-  def replaceHTMLVideoElementSource(videoElement: HTMLVideoElement): js.Promise[Unit] = js.native
+  @scala.inline
+  def replaceHTMLVideoElementSource(videoElement: HTMLVideoElement): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceHTMLVideoElementSource")(videoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "setupFakeAudeoStream")
-  @js.native
-  def setupFakeAudeoStream(): Unit = js.native
+  @scala.inline
+  def setupFakeAudeoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeAudeoStream")().asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/test_utils", "setupFakeVideoStream")
-  @js.native
-  def setupFakeVideoStream(): Unit = js.native
+  @scala.inline
+  def setupFakeVideoStream(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupFakeVideoStream")().asInstanceOf[Unit]
   
-  @js.native
   trait FakeAnalyser extends StObject {
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    var fftSize: Double = js.native
+    var fftSize: Double
     
-    def getFloatFrequencyData(data: Float32Array): Unit = js.native
+    def getFloatFrequencyData(data: Float32Array): Unit
     
-    def getFloatTimeDomainData(data: Float32Array): Unit = js.native
+    def getFloatTimeDomainData(data: Float32Array): Unit
     
-    var smoothingTimeConstant: Double = js.native
+    var smoothingTimeConstant: Double
     
-    var x: js.Any = js.native
+    var x: js.Any
   }
   object FakeAnalyser {
     
@@ -113,10 +112,9 @@ object testUtilsMod {
     }
   }
   
-  @js.native
   trait FakeMediaStreamAudioSourceNode extends StObject {
     
-    def connect(node: js.Object): Unit = js.native
+    def connect(node: js.Object): Unit
   }
   object FakeMediaStreamAudioSourceNode {
     

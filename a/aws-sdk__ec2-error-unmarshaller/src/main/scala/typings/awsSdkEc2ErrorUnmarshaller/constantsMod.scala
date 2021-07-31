@@ -4,7 +4,6 @@ import typings.awsSdkEc2ErrorUnmarshaller.anon.Error
 import typings.awsSdkEc2ErrorUnmarshaller.anon.RequestId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -13,13 +12,12 @@ object constantsMod {
   @js.native
   val ERR_RESP_SHAPE_LEGACY: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any = js.native
   
-  @js.native
   trait ParsedLegacyErrorResponse extends StObject {
     
     @JSName("$metadata")
-    var $metadata: RequestId = js.native
+    var $metadata: RequestId
     
-    var Errors: js.UndefOr[Error] = js.native
+    var Errors: js.UndefOr[Error] = js.undefined
   }
   object ParsedLegacyErrorResponse {
     

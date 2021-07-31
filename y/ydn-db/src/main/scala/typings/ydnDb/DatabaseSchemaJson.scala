@@ -2,17 +2,15 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseSchemaJson extends StObject {
   
-  var fullTextCatalogs: js.UndefOr[js.Array[FullTextCatalog]] = js.native
+  var fullTextCatalogs: js.UndefOr[js.Array[FullTextCatalog]] = js.undefined
   
-  var stores: js.Array[StoreSchemaJson] = js.native
+  var stores: js.Array[StoreSchemaJson]
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DatabaseSchemaJson {
   

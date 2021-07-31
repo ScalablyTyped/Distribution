@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableImportFindingsForProductRequest extends StObject {
   
   /**
     * The ARN of the product to enable the integration for.
     */
-  var ProductArn: NonEmptyString = js.native
+  var ProductArn: NonEmptyString
 }
 object EnableImportFindingsForProductRequest {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fitnessMod {
+  
+  @JSImport("googleapis/build/src/apis/fitness", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object fitnessMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/fitness", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/fitness", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object fitnessMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/fitness", "fitness")
-  @js.native
-  def fitness(options: Options): Fitness = js.native
-  @JSImport("googleapis/build/src/apis/fitness", "fitness")
-  @js.native
-  def fitness_v1(version: v1): Fitness = js.native
+  @scala.inline
+  def fitness(options: Options): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(options.asInstanceOf[js.Any]).asInstanceOf[Fitness]
+  
+  @scala.inline
+  def fitness_v1(version: v1): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(version.asInstanceOf[js.Any]).asInstanceOf[Fitness]
 }

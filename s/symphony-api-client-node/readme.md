@@ -10,9 +10,9 @@ Symphony API Client for NodeJS
 | ------------------ | :-------------: |
 | Full name          | symphony-api-client-node |
 | Keywords           | node, symphony-chat |
-| # releases         | 20 |
+| # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 13338 |
+| # downloads        | 12259 |
 | # stars            | 0 |
 
 ## Links

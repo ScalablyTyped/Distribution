@@ -12,20 +12,19 @@ import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a format condition for a control. */
-@js.native
 trait XFormatCondition
-  extends XPropertySet
-     with XReportControlFormat {
+  extends StObject
+     with XReportControlFormat
+     with XPropertySet {
   
   /** specifies if the condition is enabled or not. */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /** defines the formula of the format condition. If the formula evaluates to `TRUE` then the format will be applied. */
-  var Formula: String = js.native
+  var Formula: String
 }
 object XFormatCondition {
   

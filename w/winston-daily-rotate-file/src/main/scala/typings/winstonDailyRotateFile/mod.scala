@@ -9,7 +9,6 @@ import typings.winstonDailyRotateFile.winstonDailyRotateFileStrings.stream
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,82 +34,83 @@ object mod {
   
   type DailyRotateFileTransportOptions = RequireOnlyOne[GeneralDailyRotateFileTransportOptions, filename | stream]
   
-  @js.native
-  trait GeneralDailyRotateFileTransportOptions extends TransportStreamOptions {
+  trait GeneralDailyRotateFileTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
     /**
       * A string representing the name of the name of the audit file. (default: './hash-audit.json')
       */
-    var auditFile: js.UndefOr[String] = js.native
+    var auditFile: js.UndefOr[String] = js.undefined
     
     /**
       * Create a tailable symlink to the current active log file. (default: false)
       */
-    var createSymlink: js.UndefOr[Boolean] = js.native
+    var createSymlink: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string representing the moment.js date format to be used for rotating. The meta characters used in this string will dictate the frequency of the file rotation. For example, if your datePattern is simply 'HH' you will end up with 24 log files that are picked up and appended to every day. (default 'YYYY-MM-DD')
       */
-    var datePattern: js.UndefOr[String] = js.native
+    var datePattern: js.UndefOr[String] = js.undefined
     
     /**
       * The directory name to save log files to. (default: '.')
       */
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
     /**
       * A string representing an extension to be added to the filename, if not included in the filename property. (default: '')
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * Filename to be used to log to. This filename can include the %DATE% placeholder which will include the formatted datePattern at that point in the filename. (default: 'winston.log.%DATE%)
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * A string representing the frequency of rotation. (default: 'custom')
       */
-    var frequency: js.UndefOr[String] = js.native
+    var frequency: js.UndefOr[String] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum number of logs to keep. If not set, no logs will be removed. This can be a number of files or number of days. If using days, add 'd' as the suffix. (default: null)
       */
-    var maxFiles: js.UndefOr[String | Double] = js.native
+    var maxFiles: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Maximum size of the file after which it will rotate. This can be a number of bytes, or units of kb, mb, and gb. If using the units, add 'k', 'm', or 'g' as the suffix. The units need to directly follow the number. (default: null)
       */
-    var maxSize: js.UndefOr[String | Double] = js.native
+    var maxSize: js.UndefOr[String | Double] = js.undefined
     
     /**
       * An object resembling https://nodejs.org/api/fs.html#fs_fs_createwritestream_path_options indicating additional options that should be passed to the file stream. (default: `{ flags: 'a' }`)
       */
-    var options: js.UndefOr[String | js.Object] = js.native
+    var options: js.UndefOr[String | js.Object] = js.undefined
     
     /**
       * Write directly to a custom stream and bypass the rotation capabilities. (default: null)
       */
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * The name of the tailable symlink. (default: 'current.log')
       */
-    var symlinkName: js.UndefOr[String] = js.native
+    var symlinkName: js.UndefOr[String] = js.undefined
     
     /**
       * A boolean whether or not to generate file name from "datePattern" in UTC format. (default: false)
       */
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A boolean to define whether or not to gzip archived log files. (default 'false')
       */
-    var zippedArchive: js.UndefOr[Boolean] = js.native
+    var zippedArchive: js.UndefOr[Boolean] = js.undefined
   }
   object GeneralDailyRotateFileTransportOptions {
     
@@ -222,20 +222,19 @@ object mod {
   }
   
   // referenced from https://stackoverflow.com/questions/40510611/typescript-interface-require-one-of-two-properties-to-exist
-  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) with (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
+  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
   
   // merging into winston.transports
   object winstonLibWinstonTransportsAugmentingMod {
     
-    @js.native
     trait Transports extends StObject {
       
       var DailyRotateFile: Instantiable1[
             /* options */ js.UndefOr[DailyRotateFileTransportOptions], 
             typings.winstonDailyRotateFile.mod.DailyRotateFile
-          ] = js.native
+          ]
       
-      var DailyRotateFileTransportOptions: typings.winstonDailyRotateFile.mod.DailyRotateFileTransportOptions = js.native
+      var DailyRotateFileTransportOptions: typings.winstonDailyRotateFile.mod.DailyRotateFileTransportOptions
     }
     object Transports {
       

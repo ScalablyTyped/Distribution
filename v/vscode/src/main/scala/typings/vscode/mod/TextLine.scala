@@ -2,43 +2,41 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextLine extends StObject {
   
   /**
     * The offset of the first character which is not a whitespace character as defined
     * by `/\s/`. **Note** that if a line is all whitespace the length of the line is returned.
     */
-  val firstNonWhitespaceCharacterIndex: Double = js.native
+  val firstNonWhitespaceCharacterIndex: Double
   
   /**
     * Whether this line is whitespace only, shorthand
     * for [TextLine.firstNonWhitespaceCharacterIndex](#TextLine.firstNonWhitespaceCharacterIndex) === [TextLine.text.length](#TextLine.text).
     */
-  val isEmptyOrWhitespace: Boolean = js.native
+  val isEmptyOrWhitespace: Boolean
   
   /**
     * The zero-based line number.
     */
-  val lineNumber: Double = js.native
+  val lineNumber: Double
   
   /**
     * The range this line covers without the line separator characters.
     */
-  val range: Range = js.native
+  val range: Range
   
   /**
     * The range this line covers with the line separator characters.
     */
-  val rangeIncludingLineBreak: Range = js.native
+  val rangeIncludingLineBreak: Range
   
   /**
     * The text of this line without the line separator characters.
     */
-  val text: String = js.native
+  val text: String
 }
 object TextLine {
   

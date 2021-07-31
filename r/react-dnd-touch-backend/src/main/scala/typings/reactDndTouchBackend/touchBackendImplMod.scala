@@ -17,14 +17,15 @@ import typings.std.TouchEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchBackendImplMod {
   
   @JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", "TouchBackendImpl")
   @js.native
-  class TouchBackendImpl protected () extends Backend {
+  class TouchBackendImpl protected ()
+    extends StObject
+       with Backend {
     def this(manager: DragDropManager, context: TouchBackendContext, options: TouchBackendOptions) = this()
     
     /**
@@ -98,7 +99,7 @@ object touchBackendImplMod {
     
     var sourceNodes: Map[Identifier, HTMLElement] = js.native
     
-    var sourcePreviewNodeOptions: Map[String, _] = js.native
+    var sourcePreviewNodeOptions: Map[String, js.Any] = js.native
     
     var sourcePreviewNodes: Map[String, HTMLElement] = js.native
     

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait External extends StObject {
   
   /** @deprecated */
-  def AddSearchProvider(): Unit = js.native
+  def AddSearchProvider(): Unit
   
   /** @deprecated */
-  def IsSearchProviderInstalled(): Unit = js.native
+  def IsSearchProviderInstalled(): Unit
 }
 object External {
   

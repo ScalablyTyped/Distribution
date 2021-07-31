@@ -2,10 +2,8 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModeStatic extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ModeStatic extends StObject {
     *
     *     var mode = CryptoJS.mode.CBC.Encryptor.create(cipher, iv.words);
     */
-  def create(cipher: Cipher, iv: js.Array[Double]): Mode_ = js.native
+  def create(cipher: Cipher, iv: js.Array[Double]): Mode_
 }
 object ModeStatic {
   

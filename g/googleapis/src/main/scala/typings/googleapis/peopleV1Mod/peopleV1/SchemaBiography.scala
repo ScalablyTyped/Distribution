@@ -2,29 +2,27 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s short biography.
   */
-@js.native
 trait SchemaBiography extends StObject {
   
   /**
     * The content type of the biography.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the biography.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The short biography.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaBiography {
   

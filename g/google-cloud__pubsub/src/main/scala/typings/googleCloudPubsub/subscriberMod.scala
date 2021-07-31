@@ -13,7 +13,6 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberMod {
@@ -238,18 +237,17 @@ object subscriberMod {
   
   type PullResponse = IPullResponse
   
-  @js.native
   trait SubscriberOptions extends StObject {
     
-    var ackDeadline: js.UndefOr[Double] = js.native
+    var ackDeadline: js.UndefOr[Double] = js.undefined
     
-    var batching: js.UndefOr[BatchOptions] = js.native
+    var batching: js.UndefOr[BatchOptions] = js.undefined
     
-    var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.native
+    var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.undefined
     
-    var flowControl: js.UndefOr[FlowControlOptions] = js.native
+    var flowControl: js.UndefOr[FlowControlOptions] = js.undefined
     
-    var streamingOptions: js.UndefOr[MessageStreamOptions] = js.native
+    var streamingOptions: js.UndefOr[MessageStreamOptions] = js.undefined
   }
   object SubscriberOptions {
     

@@ -4,44 +4,41 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("delete-empty", JSImport.Namespace)
-  @js.native
-  def apply(dir: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("delete-empty", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, cb: DeleteEmptyCallback): Unit = js.native
-  @JSImport("delete-empty", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Options, cb: DeleteEmptyCallback): Unit = js.native
+  @scala.inline
+  def apply(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(dir: String, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(dir: String, options: Options, cb: DeleteEmptyCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("delete-empty", "sync")
+  @JSImport("delete-empty", JSImport.Namespace)
   @js.native
-  def sync(dir: String): js.Array[String] = js.native
-  @JSImport("delete-empty", "sync")
-  @js.native
-  def sync(dir: String, options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(dir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(dir: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   type DeleteEmptyCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* deleted */ js.Array[String], Unit]
   
   type FilterFunction = js.Function2[/* file */ String, /* regex */ RegExp, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Do a dry run without deleting any files
       * @default false
       */
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[FilterFunction] = js.native
+    var filter: js.UndefOr[FilterFunction] = js.undefined
     
-    var junkRegex: js.UndefOr[RegExp] = js.native
+    var junkRegex: js.UndefOr[RegExp] = js.undefined
   }
   object Options {
     

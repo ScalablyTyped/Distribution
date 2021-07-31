@@ -2,24 +2,22 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a number of samples attributed to a certain source position.
   */
-@js.native
 trait PositionTickInfo extends StObject {
   
   /**
     * Source line number (1-based).
     */
-  var line: Double = js.native
+  var line: Double
   
   /**
     * Number of samples attributed to the source line.
     */
-  var ticks: Double = js.native
+  var ticks: Double
 }
 object PositionTickInfo {
   

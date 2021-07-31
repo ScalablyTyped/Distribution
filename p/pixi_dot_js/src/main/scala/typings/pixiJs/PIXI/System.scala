@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait System extends StObject {
   
   /**
     * Generic destroy methods to be overridden by the subclass
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * The renderer this manager works for.
     *
     * @member {PIXI.Renderer} PIXI.System#renderer
     */
-  var renderer: Renderer = js.native
+  var renderer: Renderer
 }
 object System {
   

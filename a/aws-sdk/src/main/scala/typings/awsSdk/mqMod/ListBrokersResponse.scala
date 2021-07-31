@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBrokersResponse extends StObject {
   
   /**
     * A list of information about all brokers.
     */
-  var BrokerSummaries: js.UndefOr[listOfBrokerSummary] = js.native
+  var BrokerSummaries: js.UndefOr[listOfBrokerSummary] = js.undefined
   
   /**
     * The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListBrokersResponse {
   

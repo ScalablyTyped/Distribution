@@ -3,7 +3,6 @@ package typings.ngstorage
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,22 +10,21 @@ object mod {
   object ngStorage {
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ @js.native
-    trait StorageProvider extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ trait StorageProvider extends StObject {
       
-      def get[T](key: String): T | Boolean = js.native
+      def get[T](key: String): T | Boolean
       
-      def remove(key: String): Unit = js.native
+      def remove(key: String): Unit
       
-      def set[T](key: String, value: T): T | Boolean = js.native
+      def set[T](key: String, value: T): T | Boolean
       
-      def setDeserializer(deserializer: js.Function1[/* value */ String, _]): Unit = js.native
+      def setDeserializer(deserializer: js.Function1[/* value */ String, js.Any]): Unit
       
-      def setKeyPrefix(prefix: String): Unit = js.native
+      def setKeyPrefix(prefix: String): Unit
       
-      def setSerializer(serializer: js.Function1[/* value */ js.Any, String]): Unit = js.native
+      def setSerializer(serializer: js.Function1[/* value */ js.Any, String]): Unit
       
-      def supported(): Boolean = js.native
+      def supported(): Boolean
     }
     object StorageProvider {
       
@@ -35,7 +33,7 @@ object mod {
         get: String => js.Any | Boolean,
         remove: String => Unit,
         set: (String, js.Any) => js.Any | Boolean,
-        setDeserializer: js.Function1[/* value */ String, _] => Unit,
+        setDeserializer: js.Function1[/* value */ String, js.Any] => Unit,
         setKeyPrefix: String => Unit,
         setSerializer: js.Function1[/* value */ js.Any, String] => Unit,
         supported: () => Boolean
@@ -57,7 +55,7 @@ object mod {
         def setSet(value: (String, js.Any) => js.Any | Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
         
         @scala.inline
-        def setSetDeserializer(value: js.Function1[/* value */ String, _] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
+        def setSetDeserializer(value: js.Function1[/* value */ String, js.Any] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
         
         @scala.inline
         def setSetKeyPrefix(value: String => Unit): Self = StObject.set(x, "setKeyPrefix", js.Any.fromFunction1(value))
@@ -72,7 +70,8 @@ object mod {
     
     @js.native
     trait StorageService
-      extends /**
+      extends StObject
+         with /**
       * Access to the properties of the store.
       */
     /* key */ StringDictionary[js.Any] {
@@ -89,7 +88,7 @@ object mod {
         * @return the modified storage service.
         */
       @JSName("$default")
-      def $default[T](items: T): StorageService with T = js.native
+      def $default[T](items: T): StorageService & T = js.native
       
       /**
         * Removes all properties from the store.
@@ -98,9 +97,9 @@ object mod {
         * @return the modified storage service.
         */
       @JSName("$reset")
-      def $reset[T](): StorageService with T = js.native
+      def $reset[T](): StorageService & T = js.native
       @JSName("$reset")
-      def $reset[T](items: T): StorageService with T = js.native
+      def $reset[T](items: T): StorageService & T = js.native
       
       /**
         * @return true if the storage service is supported by the browser.

@@ -13,95 +13,93 @@ import typings.i18next.i18nextStrings.v2
 import typings.i18next.i18nextStrings.v3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitOptions extends StObject {
   
   /**
     * Prefixes the namespace to the returned key when using `cimode`
     * @default false
     */
-  var appendNamespaceToCIMode: js.UndefOr[Boolean] = js.native
+  var appendNamespaceToCIMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Appends namespace to missing key
     * @default false
     */
-  var appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.native
+  var appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Options for backend - check documentation of plugin
     * @default undefined
     */
-  var backend: js.UndefOr[js.Object] = js.native
+  var backend: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Options for cache layer - check documentation of plugin
     * @default undefined
     */
-  var cache: js.UndefOr[js.Object] = js.native
+  var cache: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Language will be lowercased EN --> en while leaving full locales like en-US
     * @default false
     */
-  var cleanCode: js.UndefOr[Boolean] = js.native
+  var cleanCode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Compatibility JSON version
     * @default 'v3'
     */
-  var compatibilityJSON: js.UndefOr[v1 | v2 | v3] = js.native
+  var compatibilityJSON: js.UndefOr[v1 | v2 | v3] = js.undefined
   
   /**
     * Char to split context from key
     * @default '_'
     */
-  var contextSeparator: js.UndefOr[String] = js.native
+  var contextSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Logs info level to console output. Helps finding issues with loading not working.
     * @default false
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default namespace used if not passed to translation function
     * @default 'translation'
     */
-  var defaultNS: js.UndefOr[String] = js.native
+  var defaultNS: js.UndefOr[String] = js.undefined
   
   /**
     * Options for language detection - check documentation of plugin
     * @default undefined
     */
-  var detection: js.UndefOr[js.Object] = js.native
+  var detection: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Options for https://github.com/locize/locize-editor
     * @default undefined
     */
-  var editor: js.UndefOr[AutoOpen] = js.native
+  var editor: js.UndefOr[AutoOpen] = js.undefined
   
   /**
     * Language to use if translations in user language are not available.
     * @default 'dev'
     */
-  var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.native
+  var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.undefined
   
   /**
     * String or array of namespaces to lookup key if not found in given namespace.
     * @default false
     */
-  var fallbackNS: js.UndefOr[`false` | String | js.Array[String]] = js.native
+  var fallbackNS: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   
   /**
     * Options for i18n message format - check documentation of plugin
     * @default undefined
     */
-  var i18nFormat: js.UndefOr[js.Object] = js.native
+  var i18nFormat: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Triggers resource loading in init function inside a setTimeout (default async behaviour).
@@ -109,30 +107,30 @@ trait InitOptions extends StObject {
     * init is possible without relaying on the init callback.
     * @default true
     */
-  var initImmediate: js.UndefOr[Boolean] = js.native
+  var initImmediate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @see https://www.i18next.com/interpolation.html
     */
-  var interpolation: js.UndefOr[InterpolationOptions] = js.native
+  var interpolation: js.UndefOr[InterpolationOptions] = js.undefined
   
   /**
     * Char, eg. '\n' that arrays will be joined by
     * @default false
     */
-  var joinArrays: js.UndefOr[`false` | String] = js.native
+  var joinArrays: js.UndefOr[`false` | String] = js.undefined
   
   /**
     * Char to separate keys
     * @default '.'
     */
-  var keySeparator: js.UndefOr[`false` | String] = js.native
+  var keySeparator: js.UndefOr[`false` | String] = js.undefined
   
   /**
     * Language to use (overrides language detection)
     * @default undefined
     */
-  var lng: js.UndefOr[String] = js.native
+  var lng: js.UndefOr[String] = js.undefined
   
   /**
     * Language codes to lookup, given set language is
@@ -141,25 +139,27 @@ trait InitOptions extends StObject {
     * 'languageOnly' --> 'en'
     * @default 'all'
     */
-  var load: js.UndefOr[all | currentOnly | languageOnly] = js.native
+  var load: js.UndefOr[all | currentOnly | languageOnly] = js.undefined
   
   /**
     * Options for https://github.com/locize/locize-lastused
     * @default undefined
     */
-  var locizeLastUsed: js.UndefOr[AllowedHosts] = js.native
+  var locizeLastUsed: js.UndefOr[AllowedHosts] = js.undefined
   
   /**
     * Language will be lowercased eg. en-US --> en-us
     * @default false
     */
-  var lowerCaseLng: js.UndefOr[Boolean] = js.native
+  var lowerCaseLng: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null
     * @default noop
     */
-  var missingInterpolationHandler: js.UndefOr[js.Function3[/* text */ String, /* value */ js.Any, /* options */ this.type, _]] = js.native
+  var missingInterpolationHandler: js.UndefOr[
+    js.Function3[/* text */ String, /* value */ js.Any, /* options */ this.type, js.Any]
+  ] = js.undefined
   
   /**
     * Used for custom missing key handling (needs saveMissing set to true!)
@@ -173,132 +173,132 @@ trait InitOptions extends StObject {
       /* fallbackValue */ String, 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If true will pass eg. en-US if finding en in supportedLngs
     * @default false
     */
-  var nonExplicitSupportedLngs: js.UndefOr[Boolean] = js.native
+  var nonExplicitSupportedLngs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * DEPRECTADED use nonExplicitSupportedLngs
     * @default false
     */
-  var nonExplicitWhitelist: js.UndefOr[Boolean] = js.native
+  var nonExplicitWhitelist: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String or array of namespaces to load
     * @default 'translation'
     */
-  var ns: js.UndefOr[String | js.Array[String]] = js.native
+  var ns: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Char to split namespace from key
     * @default ':'
     */
-  var nsSeparator: js.UndefOr[`false` | String] = js.native
+  var nsSeparator: js.UndefOr[`false` | String] = js.undefined
   
   /**
     * Sets defaultValue
     * @default args => ({ defaultValue: args[1] })
     */
-  var overloadTranslationOptionHandler: js.UndefOr[js.Function1[/* args */ js.Array[String], TOptions[StringMap]]] = js.native
+  var overloadTranslationOptionHandler: js.UndefOr[js.Function1[/* args */ js.Array[String], TOptions[StringMap]]] = js.undefined
   
   /**
     * Receives a key that was not found in `t()` and returns a value, that will be returned by `t()`
     * @default noop
     */
-  var parseMissingKeyHandler: js.UndefOr[js.Function1[/* key */ String, _]] = js.native
+  var parseMissingKeyHandler: js.UndefOr[js.Function1[/* key */ String, js.Any]] = js.undefined
   
   /**
     * Allow initializing with bundled resources while using a backend to load non bundled ones.
     * @default false
     */
-  var partialBundledLanguages: js.UndefOr[Boolean] = js.native
+  var partialBundledLanguages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Char to split plural from key
     * @default '_'
     */
-  var pluralSeparator: js.UndefOr[String] = js.native
+  var pluralSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * String or array of postProcessors to apply per default
     * @default false
     */
-  var postProcess: js.UndefOr[`false` | String | js.Array[String]] = js.native
+  var postProcess: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   
   /**
     * passthrough the resolved object including 'usedNS', 'usedLang' etc into options object of postprocessors as 'i18nResolved' property
     * @default false
     */
-  var postProcessPassResolved: js.UndefOr[Boolean] = js.native
+  var postProcessPassResolved: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of languages to preload. Important on server-side to assert translations are loaded before rendering views.
     * @default false
     */
-  var preload: js.UndefOr[`false` | js.Array[String]] = js.native
+  var preload: js.UndefOr[`false` | js.Array[String]] = js.undefined
   
   /**
     * Options for react - check documentation of plugin
     * @default undefined
     */
-  var react: js.UndefOr[ReactOptions] = js.native
+  var react: js.UndefOr[ReactOptions] = js.undefined
   
   /**
     * Resources to initialize with (if not using loading or not appending using addResourceBundle)
     * @default undefined
     */
-  var resources: js.UndefOr[Resource] = js.native
+  var resources: js.UndefOr[Resource] = js.undefined
   
   /**
     * Allows empty string as valid translation
     * @default true
     */
-  var returnEmptyString: js.UndefOr[Boolean] = js.native
+  var returnEmptyString: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows null values as valid translation
     * @default true
     */
-  var returnNull: js.UndefOr[Boolean] = js.native
+  var returnNull: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows objects as valid translation result
     * @default false
     */
-  var returnObjects: js.UndefOr[Boolean] = js.native
+  var returnObjects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets called if object was passed in as key but returnObjects was set to false
     * @default noop
     */
-  var returnedObjectHandler: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* options */ js.Any, Unit]] = js.native
+  var returnedObjectHandler: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* options */ js.Any, Unit]] = js.undefined
   
   /**
     * Calls save missing key function on backend if key not found
     * @default false
     */
-  var saveMissing: js.UndefOr[Boolean] = js.native
+  var saveMissing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default 'fallback'
     */
-  var saveMissingTo: js.UndefOr[current | all | fallback] = js.native
+  var saveMissingTo: js.UndefOr[current | all | fallback] = js.undefined
   
   /**
     * Will use 'plural' as suffix for languages only having 1 plural form, setting it to false will suffix all with numbers
     * @default true
     */
-  var simplifyPluralSuffix: js.UndefOr[Boolean] = js.native
+  var simplifyPluralSuffix: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of allowed languages
     * @default false
     */
-  var supportedLngs: js.UndefOr[`false` | js.Array[String]] = js.native
+  var supportedLngs: js.UndefOr[`false` | js.Array[String]] = js.undefined
   
   /**
     * Experimental: enable to update default values using the saveMissing
@@ -307,13 +307,13 @@ trait InitOptions extends StObject {
     * Only supported if backend supports it already)
     * @default false
     */
-  var updateMissing: js.UndefOr[Boolean] = js.native
+  var updateMissing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * DEPRECATED use supportedLngs
     * @default false
     */
-  var whitelist: js.UndefOr[`false` | js.Array[String]] = js.native
+  var whitelist: js.UndefOr[`false` | js.Array[String]] = js.undefined
 }
 object InitOptions {
   
@@ -468,7 +468,7 @@ object InitOptions {
     def setLowerCaseLngUndefined: Self = StObject.set(x, "lowerCaseLng", js.undefined)
     
     @scala.inline
-    def setMissingInterpolationHandler(value: (/* text */ String, /* value */ js.Any, InitOptions) => _): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
+    def setMissingInterpolationHandler(value: (/* text */ String, /* value */ js.Any, InitOptions) => js.Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
     
     @scala.inline
     def setMissingInterpolationHandlerUndefined: Self = StObject.set(x, "missingInterpolationHandler", js.undefined)
@@ -526,7 +526,7 @@ object InitOptions {
     def setOverloadTranslationOptionHandlerUndefined: Self = StObject.set(x, "overloadTranslationOptionHandler", js.undefined)
     
     @scala.inline
-    def setParseMissingKeyHandler(value: /* key */ String => _): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction1(value))
+    def setParseMissingKeyHandler(value: /* key */ String => js.Any): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
     def setParseMissingKeyHandlerUndefined: Self = StObject.set(x, "parseMissingKeyHandler", js.undefined)

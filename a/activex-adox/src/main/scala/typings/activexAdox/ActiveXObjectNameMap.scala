@@ -9,32 +9,30 @@ import typings.activexAdox.ADOX.Table
 import typings.activexAdox.ADOX.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ADOX.Catalog")
-  var ADOXDotCatalog: Catalog = js.native
+  var ADOXDotCatalog: Catalog
   
   @JSName("ADOX.Column")
-  var ADOXDotColumn: Column = js.native
+  var ADOXDotColumn: Column
   
   @JSName("ADOX.Group")
-  var ADOXDotGroup: Group = js.native
+  var ADOXDotGroup: Group
   
   @JSName("ADOX.Index")
-  var ADOXDotIndex: Index = js.native
+  var ADOXDotIndex: Index
   
   @JSName("ADOX.Key")
-  var ADOXDotKey: Key = js.native
+  var ADOXDotKey: Key
   
   @JSName("ADOX.Table")
-  var ADOXDotTable: Table = js.native
+  var ADOXDotTable: Table
   
   @JSName("ADOX.User")
-  var ADOXDotUser: User = js.native
+  var ADOXDotUser: User
 }
 object ActiveXObjectNameMap {
   

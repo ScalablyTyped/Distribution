@@ -3,15 +3,13 @@ package typings.twit.mod
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromiseResponse extends StObject {
   
-  var data: Response = js.native
+  var data: Response
   
-  var resp: IncomingMessage = js.native
+  var resp: IncomingMessage
 }
 object PromiseResponse {
   

@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationStorageClassAnalysisDataExportDestination extends StObject {
   
   /**
     * Analytics data export currently only supports an S3 bucket destination (documented below).
     */
-  var s3BucketDestination: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination = js.native
+  var s3BucketDestination: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExportDestination {
   

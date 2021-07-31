@@ -8,13 +8,14 @@ import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.anon.Exec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indent {
   
   @js.native
-  trait genericDefinition extends commandDefinition {
+  trait genericDefinition
+    extends StObject
+       with commandDefinition {
     
     @JSName("async")
     var async_genericDefinition: Boolean = js.native
@@ -46,26 +47,25 @@ object indent {
     var startDisabled_genericDefinition: Boolean = js.native
   }
   
-  @js.native
   trait specificDefinition extends StObject {
     
-    var database: StringDictionary[js.Any] = js.native
+    var database: StringDictionary[js.Any]
     
-    val enterBr: Boolean = js.native
+    val enterBr: Boolean
     
-    def execJob(editor: editor, priority: Double): Boolean = js.native
+    def execJob(editor: editor, priority: Double): Boolean
     
-    def getContext(node: elementPath): element = js.native
+    def getContext(node: elementPath): element
     
-    val indentKey: StringDictionary[js.Any] = js.native
+    val indentKey: StringDictionary[js.Any]
     
-    val isIndent: Boolean = js.native
+    val isIndent: Boolean
     
-    val jobs: StringDictionary[Exec] = js.native
+    val jobs: StringDictionary[Exec]
     
-    def refreshJob(editor: editor, priority: Double): Double = js.native
+    def refreshJob(editor: editor, priority: Double): Double
     
-    val relatedGlobal: StringDictionary[js.Any] = js.native
+    val relatedGlobal: StringDictionary[js.Any]
   }
   object specificDefinition {
     

@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformPreviewTransform[T] extends Generic {
+trait TransformPreviewTransform[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object TransformPreviewTransform {
   
@@ -19,7 +19,7 @@ object TransformPreviewTransform {
   }
   
   @scala.inline
-  implicit class TransformPreviewTransformMutableBuilder[Self <: TransformPreviewTransform[_], T] (val x: Self with TransformPreviewTransform[T]) extends AnyVal {
+  implicit class TransformPreviewTransformMutableBuilder[Self <: TransformPreviewTransform[?], T] (val x: Self & TransformPreviewTransform[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

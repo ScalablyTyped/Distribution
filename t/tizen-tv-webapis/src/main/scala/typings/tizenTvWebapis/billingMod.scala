@@ -5,7 +5,6 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.PRD
 import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object billingMod {
@@ -17,21 +16,24 @@ object billingMod {
   object TVServerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TVServerType with String] = js.native
+    def apply(value: String): js.UndefOr[TVServerType & String] = js.native
     
     @js.native
-    sealed trait DEV extends TVServerType
-    /* "DEV" */ val DEV: typings.tizenTvWebapis.billingMod.TVServerType.DEV with String = js.native
+    sealed trait DEV
+      extends StObject
+         with TVServerType
+    /* "DEV" */ val DEV: typings.tizenTvWebapis.billingMod.TVServerType.DEV & String = js.native
     
     @js.native
-    sealed trait PRD extends TVServerType
-    /* "PRD" */ val PRD: typings.tizenTvWebapis.billingMod.TVServerType.PRD with String = js.native
+    sealed trait PRD
+      extends StObject
+         with TVServerType
+    /* "PRD" */ val PRD: typings.tizenTvWebapis.billingMod.TVServerType.PRD & String = js.native
   }
   
-  @js.native
   trait ApplyInvoiceData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object ApplyInvoiceData {
     
@@ -51,18 +53,17 @@ object billingMod {
   
   type BillingApplyInvoiceCallback = js.Function1[/* data */ ApplyInvoiceData, Unit]
   
-  @js.native
   trait BillingBuyData extends StObject {
     
     /**
       * Payment information. It is same with paymentDetails param of buyItem.
       */
-    var payDetail: String = js.native
+    var payDetail: String
     
     /**
       * Payment result
       */
-    var payResult: String = js.native
+    var payResult: String
   }
   object BillingBuyData {
     
@@ -637,10 +638,9 @@ object billingMod {
   
   type BillingVerifyInvoiceCallback = js.Function1[/* data */ VerifyInvoiceData, Unit]
   
-  @js.native
   trait CancelSubscriptionData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object CancelSubscriptionData {
     
@@ -658,10 +658,9 @@ object billingMod {
     }
   }
   
-  @js.native
   trait ProductsListData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object ProductsListData {
     
@@ -679,10 +678,9 @@ object billingMod {
     }
   }
   
-  @js.native
   trait ServiceAvailableData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object ServiceAvailableData {
     
@@ -700,10 +698,9 @@ object billingMod {
     }
   }
   
-  @js.native
   trait ServiceCountryAvailabilityData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object ServiceCountryAvailabilityData {
     
@@ -721,10 +718,9 @@ object billingMod {
     }
   }
   
-  @js.native
   trait UserPurchaseData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object UserPurchaseData {
     
@@ -742,10 +738,9 @@ object billingMod {
     }
   }
   
-  @js.native
   trait VerifyInvoiceData extends StObject {
     
-    var apiResult: String = js.native
+    var apiResult: String
   }
   object VerifyInvoiceData {
     

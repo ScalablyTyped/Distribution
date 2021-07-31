@@ -9,25 +9,25 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.commonTypesMod.QueryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamSpaceMembershipMod {
   
-  @JSImport("contentful-management/dist/typings/entities/team-space-membership", "wrapTeamSpaceMembership")
+  @JSImport("contentful-management/dist/typings/entities/team-space-membership", JSImport.Namespace)
   @js.native
-  def wrapTeamSpaceMembership(http: AxiosInstance, data: TeamSpaceMembershipProps): TeamSpaceMembership = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/team-space-membership", "wrapTeamSpaceMembershipCollection")
-  @js.native
-  def wrapTeamSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamSpaceMembershipProps]): Collection[TeamSpaceMembership, TeamSpaceMembershipProps] = js.native
+  @scala.inline
+  def wrapTeamSpaceMembership(http: AxiosInstance, data: TeamSpaceMembershipProps): TeamSpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[TeamSpaceMembership]
   
-  @js.native
+  @scala.inline
+  def wrapTeamSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamSpaceMembershipProps]): Collection[TeamSpaceMembership, TeamSpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[TeamSpaceMembership, TeamSpaceMembershipProps]]
+  
   trait Options extends StObject {
     
-    var query: js.UndefOr[QueryOptions] = js.native
+    var query: js.UndefOr[QueryOptions] = js.undefined
     
-    var teamId: js.UndefOr[String] = js.native
+    var teamId: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -54,9 +54,9 @@ object teamSpaceMembershipMod {
     }
   }
   
-  @js.native
   trait TeamSpaceMembership
-    extends TeamSpaceMembershipProps
+    extends StObject
+       with TeamSpaceMembershipProps
        with DefaultElements[TeamSpaceMembershipProps] {
     
     /**
@@ -76,7 +76,7 @@ object teamSpaceMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -105,7 +105,7 @@ object teamSpaceMembershipMod {
       *  .catch(console.error)
       *  ```
       */
-    def update(): js.Promise[TeamSpaceMembership] = js.native
+    def update(): js.Promise[TeamSpaceMembership]
   }
   object TeamSpaceMembership {
     
@@ -133,23 +133,22 @@ object teamSpaceMembershipMod {
     }
   }
   
-  @js.native
   trait TeamSpaceMembershipProps extends StObject {
     
     /**
       * Is admin
       */
-    var admin: Boolean = js.native
+    var admin: Boolean
     
     /**
       * Roles
       */
-    var roles: js.Array[MetaLinkProps] = js.native
+    var roles: js.Array[MetaLinkProps]
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object TeamSpaceMembershipProps {
     

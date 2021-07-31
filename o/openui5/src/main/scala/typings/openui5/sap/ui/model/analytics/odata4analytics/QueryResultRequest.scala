@@ -3,10 +3,8 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResultRequest extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait QueryResultRequest extends StObject {
     * @param aDimensionName Array of dimension names to be added to the already defined          
     * aggregation level.
     */
-  def addToAggregationLevel(aDimensionName: js.Any): Unit = js.native
+  def addToAggregationLevel(aDimensionName: js.Any): Unit
   
   /**
     * Get the names of the dimensions included in the aggregation level
     * @returns The dimension names included in the aggregation level
     */
-  def getAggregationLevel(): js.Array[_] = js.native
+  def getAggregationLevel(): js.Array[js.Any]
   
   /**
     * Get details about a dimensions included in the aggregation level
@@ -31,45 +29,45 @@ trait QueryResultRequest extends StObject {
     * third property         named attributes is an array of attribute names of this         dimension
     * included in this request, or null, if there are none.
     */
-  def getAggregationLevelDetails(sDImensionName: js.Any): js.Any = js.native
+  def getAggregationLevelDetails(sDImensionName: js.Any): js.Any
   
   /**
     * Get the filter expression for this request.Expressions are represented by separate objects. If none
     * exists so far, anew expression object gets created.
     * @returns The filter object         associated to this request.
     */
-  def getFilterExpression(): FilterExpression = js.native
+  def getFilterExpression(): FilterExpression
   
   /**
     * Get the names of the measures included in the query result request
     * @returns The measure names included in the query result request
     */
-  def getMeasureNames(): js.Array[_] = js.native
+  def getMeasureNames(): js.Array[js.Any]
   
   /**
     * Retrieves the current parametrization request
     */
-  def getParameterizationRequest(): js.Any = js.native
+  def getParameterizationRequest(): js.Any
   
   /**
     * Get the description of the query result on which this request operates on
     * @returns Description of a query         result
     */
-  def getQueryResult(): QueryResult = js.native
+  def getQueryResult(): QueryResult
   
   /**
     * Returns the current page boundaries as object with properties<code>start</code> and
     * <code>end</code>. If the end of the page isunbounded, <code>end</code> is null.
     * @returns the current page boundaries as object
     */
-  def getResultPageBoundaries(): js.Any = js.native
+  def getResultPageBoundaries(): js.Any
   
   /**
     * Get the sort expression for this request.Expressions are represented by separate objects. If none
     * exists so far, anew expression object gets created.
     * @returns The sort object         associated to this request.
     */
-  def getSortExpression(): SortExpression = js.native
+  def getSortExpression(): SortExpression
   
   /**
     * Get the value of an query option for the OData request URI correspondingto this request.
@@ -78,7 +76,7 @@ trait QueryResultRequest extends StObject {
     * @returns The value of the requested query option or null, if         this option is not used for the
     * OData request.
     */
-  def getURIQueryOptionValue(sQueryOptionName: String): String = js.native
+  def getURIQueryOptionValue(sQueryOptionName: String): String
   
   /**
     * Get the URI to locate the entity set for the query result.
@@ -86,7 +84,7 @@ trait QueryResultRequest extends StObject {
     * @returns The resource path of the URI pointing to the entity         set. It is a relative URI
     * unless a service root is given, which         would then prefixed in order to return a complete URL.
     */
-  def getURIToQueryResultEntitySet(sServiceRootURI: String): String = js.native
+  def getURIToQueryResultEntitySet(sServiceRootURI: String): String
   
   /**
     * Get the unescaped URI to fetch the query result.
@@ -96,7 +94,7 @@ trait QueryResultRequest extends StObject {
     * @returns The unescaped URI that contains the OData resource path         and OData system query
     * options to express the aggregation level,         filter expression and further options.
     */
-  def getURIToQueryResultEntries(sServiceRootURI: String, sResourcePath: String): String = js.native
+  def getURIToQueryResultEntries(sServiceRootURI: String, sResourcePath: String): String
   
   /**
     * Specify which dimension components shall be included in the query result.The settings get applied to
@@ -110,7 +108,7 @@ trait QueryResultRequest extends StObject {
     * @param aAttributeName Array of dimension attribute names to be included in the           result.
     * Pass null to keep current setting. This argument is           ignored if sDimensionName is null.
     */
-  def includeDimensionKeyTextAttributes(sDimensionName: js.Any, bIncludeKey: js.Any, bIncludeText: js.Any, aAttributeName: js.Any): Unit = js.native
+  def includeDimensionKeyTextAttributes(sDimensionName: js.Any, bIncludeKey: js.Any, bIncludeText: js.Any, aAttributeName: js.Any): Unit
   
   /**
     * Specify which measure components shall be included in the query result.The settings get applied to
@@ -129,7 +127,7 @@ trait QueryResultRequest extends StObject {
     bIncludeRawValue: js.Any,
     bIncludeFormattedValue: js.Any,
     bIncludeUnit: js.Any
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Remove one or more dimensions from the aggregation level. The method alsoremoved a potential sort
@@ -137,7 +135,7 @@ trait QueryResultRequest extends StObject {
     * @param aDimensionName Array of dimension names to be removed from the already           defined
     * aggregation level.
     */
-  def removeFromAggregationLevel(aDimensionName: js.Any): Unit = js.native
+  def removeFromAggregationLevel(aDimensionName: js.Any): Unit
   
   /**
     * Set the aggregation level for the query result request. By default, thequery result will include the
@@ -146,14 +144,14 @@ trait QueryResultRequest extends StObject {
     * @param aDimensionName Array of dimension names to be part of the aggregation level.           If
     * null, the aggregation level includes all dimensions, if           empty, no dimension is included.
     */
-  def setAggregationLevel(aDimensionName: js.Any): Unit = js.native
+  def setAggregationLevel(aDimensionName: js.Any): Unit
   
   /**
     * Set the filter expression for this request.Expressions are represented by separate objects. Calling
     * this methodreplaces the filter object maintained by this request.
     * @param oFilter The filter object to be associated with this request.
     */
-  def setFilterExpression(oFilter: FilterExpression): Unit = js.native
+  def setFilterExpression(oFilter: FilterExpression): Unit
   
   /**
     * Set the measures to be included in the query result request. By default,the query result will
@@ -162,7 +160,7 @@ trait QueryResultRequest extends StObject {
     * @param aMeasureName Array of measure names to be part of the query result request.           If
     * null, the request includes all measures, if empty, no           measure is included.
     */
-  def setMeasures(aMeasureName: js.Any): Unit = js.native
+  def setMeasures(aMeasureName: js.Any): Unit
   
   /**
     * Set the parameterization request required for interactions with the queryresult of parameterized
@@ -171,7 +169,7 @@ trait QueryResultRequest extends StObject {
     * @param oParameterizationRequest Request object for interactions with the parameterization of        
     *   this query
     */
-  def setParameterizationRequest(oParameterizationRequest: js.Any): Unit = js.native
+  def setParameterizationRequest(oParameterizationRequest: js.Any): Unit
   
   /**
     * Set further options to be applied for the OData request to fetch thequery result
@@ -186,7 +184,7 @@ trait QueryResultRequest extends StObject {
     * to keep current setting.           The main use case for this option is to create a request         
     *  with $inlinecount returning an entity count.
     */
-  def setRequestOptions(bIncludeEntityKey: Boolean, bIncludeCount: Boolean, bReturnNoEntities: Boolean): Unit = js.native
+  def setRequestOptions(bIncludeEntityKey: Boolean, bIncludeCount: Boolean, bReturnNoEntities: Boolean): Unit
   
   /**
     * Set the resource path to be considered for the OData request URI of thisquery request object. This
@@ -195,7 +193,7 @@ trait QueryResultRequest extends StObject {
     * @param sResourcePath Resource path pointing to the entity set of the query result.           Must
     * include a valid parameterization if query contains           parameters.
     */
-  def setResourcePath(sResourcePath: js.Any): Unit = js.native
+  def setResourcePath(sResourcePath: js.Any): Unit
   
   /**
     * Specify that only a page of the query result shall be returned. A page isdescribed by its
@@ -205,24 +203,24 @@ trait QueryResultRequest extends StObject {
     * @param end The last row of the query result to be returned. Passing           null is equivalent to
     * get all rows up to the end of the query           result.
     */
-  def setResultPageBoundaries(start: Number, end: Number): Unit = js.native
+  def setResultPageBoundaries(start: Number, end: Number): Unit
   
   /**
     * Set the sort expression for this request.Expressions are represented by separate objects. Calling
     * this methodreplaces the sort object maintained by this request.
     * @param oSorter The sort object to be associated with this request.
     */
-  def setSortExpression(oSorter: SortExpression): Unit = js.native
+  def setSortExpression(oSorter: SortExpression): Unit
 }
 object QueryResultRequest {
   
   @scala.inline
   def apply(
     addToAggregationLevel: js.Any => Unit,
-    getAggregationLevel: () => js.Array[_],
+    getAggregationLevel: () => js.Array[js.Any],
     getAggregationLevelDetails: js.Any => js.Any,
     getFilterExpression: () => FilterExpression,
-    getMeasureNames: () => js.Array[_],
+    getMeasureNames: () => js.Array[js.Any],
     getParameterizationRequest: () => js.Any,
     getQueryResult: () => QueryResult,
     getResultPageBoundaries: () => js.Any,
@@ -253,7 +251,7 @@ object QueryResultRequest {
     def setAddToAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "addToAggregationLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAggregationLevel(value: () => js.Array[_]): Self = StObject.set(x, "getAggregationLevel", js.Any.fromFunction0(value))
+    def setGetAggregationLevel(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAggregationLevel", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetAggregationLevelDetails(value: js.Any => js.Any): Self = StObject.set(x, "getAggregationLevelDetails", js.Any.fromFunction1(value))
@@ -262,7 +260,7 @@ object QueryResultRequest {
     def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMeasureNames(value: () => js.Array[_]): Self = StObject.set(x, "getMeasureNames", js.Any.fromFunction0(value))
+    def setGetMeasureNames(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMeasureNames", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParameterizationRequest(value: () => js.Any): Self = StObject.set(x, "getParameterizationRequest", js.Any.fromFunction0(value))

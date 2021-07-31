@@ -2,101 +2,99 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaStreetSegment extends StObject {
   
-  var administrationRegionIds: js.UndefOr[js.Array[String]] = js.native
+  var administrationRegionIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var beforeGeocodeId: js.UndefOr[String] = js.native
+  var beforeGeocodeId: js.UndefOr[String] = js.undefined
   
-  var catalistUniquePrecinctCode: js.UndefOr[String] = js.native
+  var catalistUniquePrecinctCode: js.UndefOr[String] = js.undefined
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var cityCouncilDistrict: js.UndefOr[String] = js.native
+  var cityCouncilDistrict: js.UndefOr[String] = js.undefined
   
-  var congressionalDistrict: js.UndefOr[String] = js.native
+  var congressionalDistrict: js.UndefOr[String] = js.undefined
   
-  var contestIds: js.UndefOr[js.Array[String]] = js.native
+  var contestIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var countyCouncilDistrict: js.UndefOr[String] = js.native
+  var countyCouncilDistrict: js.UndefOr[String] = js.undefined
   
-  var countyFips: js.UndefOr[String] = js.native
+  var countyFips: js.UndefOr[String] = js.undefined
   
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
-  var earlyVoteSiteByIds: js.UndefOr[js.Array[String]] = js.native
+  var earlyVoteSiteByIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var endHouseNumber: js.UndefOr[String] = js.native
+  var endHouseNumber: js.UndefOr[String] = js.undefined
   
-  var geocodedPoint: js.UndefOr[SchemaPointProto] = js.native
+  var geocodedPoint: js.UndefOr[SchemaPointProto] = js.undefined
   
-  var geographicDivisionOcdIds: js.UndefOr[js.Array[String]] = js.native
+  var geographicDivisionOcdIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var judicialDistrict: js.UndefOr[String] = js.native
+  var judicialDistrict: js.UndefOr[String] = js.undefined
   
-  var mailOnly: js.UndefOr[Boolean] = js.native
+  var mailOnly: js.UndefOr[Boolean] = js.undefined
   
-  var municipalDistrict: js.UndefOr[String] = js.native
+  var municipalDistrict: js.UndefOr[String] = js.undefined
   
-  var ncoaAddress: js.UndefOr[String] = js.native
+  var ncoaAddress: js.UndefOr[String] = js.undefined
   
-  var oddOrEvens: js.UndefOr[js.Array[String]] = js.native
+  var oddOrEvens: js.UndefOr[js.Array[String]] = js.undefined
   
-  var originalId: js.UndefOr[String] = js.native
+  var originalId: js.UndefOr[String] = js.undefined
   
-  var pollinglocationByIds: js.UndefOr[js.Array[String]] = js.native
+  var pollinglocationByIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var precinctName: js.UndefOr[String] = js.native
+  var precinctName: js.UndefOr[String] = js.undefined
   
-  var precinctOcdId: js.UndefOr[String] = js.native
+  var precinctOcdId: js.UndefOr[String] = js.undefined
   
-  var provenances: js.UndefOr[js.Array[SchemaProvenance]] = js.native
+  var provenances: js.UndefOr[js.Array[SchemaProvenance]] = js.undefined
   
-  var published: js.UndefOr[Boolean] = js.native
+  var published: js.UndefOr[Boolean] = js.undefined
   
-  var schoolDistrict: js.UndefOr[String] = js.native
+  var schoolDistrict: js.UndefOr[String] = js.undefined
   
-  var startHouseNumber: js.UndefOr[String] = js.native
+  var startHouseNumber: js.UndefOr[String] = js.undefined
   
-  var startLatE7: js.UndefOr[String] = js.native
+  var startLatE7: js.UndefOr[String] = js.undefined
   
-  var startLngE7: js.UndefOr[String] = js.native
+  var startLngE7: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var stateHouseDistrict: js.UndefOr[String] = js.native
+  var stateHouseDistrict: js.UndefOr[String] = js.undefined
   
-  var stateSenateDistrict: js.UndefOr[String] = js.native
+  var stateSenateDistrict: js.UndefOr[String] = js.undefined
   
-  var streetName: js.UndefOr[String] = js.native
+  var streetName: js.UndefOr[String] = js.undefined
   
-  var subAdministrativeAreaName: js.UndefOr[String] = js.native
+  var subAdministrativeAreaName: js.UndefOr[String] = js.undefined
   
-  var surrogateId: js.UndefOr[String] = js.native
+  var surrogateId: js.UndefOr[String] = js.undefined
   
-  var targetsmartUniquePrecinctCode: js.UndefOr[String] = js.native
+  var targetsmartUniquePrecinctCode: js.UndefOr[String] = js.undefined
   
-  var townshipDistrict: js.UndefOr[String] = js.native
+  var townshipDistrict: js.UndefOr[String] = js.undefined
   
-  var unitNumber: js.UndefOr[String] = js.native
+  var unitNumber: js.UndefOr[String] = js.undefined
   
-  var unitType: js.UndefOr[String] = js.native
+  var unitType: js.UndefOr[String] = js.undefined
   
-  var vanPrecinctCode: js.UndefOr[String] = js.native
+  var vanPrecinctCode: js.UndefOr[String] = js.undefined
   
-  var voterGeographicDivisionOcdIds: js.UndefOr[js.Array[String]] = js.native
+  var voterGeographicDivisionOcdIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var wardDistrict: js.UndefOr[String] = js.native
+  var wardDistrict: js.UndefOr[String] = js.undefined
   
-  var wildcard: js.UndefOr[Boolean] = js.native
+  var wildcard: js.UndefOr[Boolean] = js.undefined
   
-  var zip: js.UndefOr[String] = js.native
+  var zip: js.UndefOr[String] = js.undefined
 }
 object SchemaStreetSegment {
   

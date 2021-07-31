@@ -10,9 +10,9 @@ A powerful templating engine with inheritance, asynchronous control, and more (j
 | ------------------ | :-------------: |
 | Full name          | nunjucks |
 | Keywords           | template, templating |
-| # releases         | 8 |
-| # dependents       | 1358 |
-| # downloads        | 12509461 |
+| # releases         | 3 |
+| # dependents       | 1459 |
+| # downloads        | 13975506 |
 | # stars            | 53 |
 
 ## Links

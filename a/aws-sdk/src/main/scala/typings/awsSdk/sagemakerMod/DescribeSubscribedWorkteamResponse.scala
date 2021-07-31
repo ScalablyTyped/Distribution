@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSubscribedWorkteamResponse extends StObject {
   
   /**
     * A Workteam instance that contains information about the work team.
     */
-  var SubscribedWorkteam: typings.awsSdk.sagemakerMod.SubscribedWorkteam = js.native
+  var SubscribedWorkteam: typings.awsSdk.sagemakerMod.SubscribedWorkteam
 }
 object DescribeSubscribedWorkteamResponse {
   

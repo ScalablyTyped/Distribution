@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartConfigRulesEvaluationRequest extends StObject {
   
   /**
     * The list of names of AWS Config rules that you want to run evaluations for.
     */
-  var ConfigRuleNames: js.UndefOr[ReevaluateConfigRuleNames] = js.native
+  var ConfigRuleNames: js.UndefOr[ReevaluateConfigRuleNames] = js.undefined
 }
 object StartConfigRulesEvaluationRequest {
   

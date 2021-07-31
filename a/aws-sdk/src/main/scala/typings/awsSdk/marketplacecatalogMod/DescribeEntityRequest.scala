@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEntityRequest extends StObject {
   
   /**
     * Required. The catalog related to the request. Fixed value: AWSMarketplace 
     */
-  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog = js.native
+  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog
   
   /**
     * Required. The unique ID of the entity to describe.
     */
-  var EntityId: ResourceId = js.native
+  var EntityId: ResourceId
 }
 object DescribeEntityRequest {
   

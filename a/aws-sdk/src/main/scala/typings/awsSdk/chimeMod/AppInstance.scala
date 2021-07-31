@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInstance extends StObject {
   
   /**
     * The ARN of the messaging instance. 
     */
-  var AppInstanceArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The time at which an app instance was created. In epoch milliseconds.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time an app instance was last updated. In epoch milliseconds.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The metadata of an app instance.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The name of an app instance.
     */
-  var Name: js.UndefOr[NonEmptyResourceName] = js.native
+  var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
 }
 object AppInstance {
   

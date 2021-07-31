@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementAndStatementStatementNotStatementStatementByteMatchStatement extends StObject {
   
   /**
@@ -13,24 +11,24 @@ trait WebAclRuleStatementAndStatementStatementNotStatementStatementByteMatchStat
     */
   var fieldToMatch: js.UndefOr[
     WebAclRuleStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatch
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The area within the portion of a web request that you want AWS WAF to search for `searchString`. Valid values include the following: `EXACTLY`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS`, `CONTAINS_WORD`. See the AWS [documentation](https://docs.aws.amazon.com/waf/latest/APIReference/API_ByteMatchStatement.html) for more information.
     */
-  var positionalConstraint: String = js.native
+  var positionalConstraint: String
   
   /**
     * A string value that you want AWS WAF to search for. AWS WAF searches only in the part of web requests that you designate for inspection in `fieldToMatch`. The maximum length of the value is 50 bytes.
     */
-  var searchString: String = js.native
+  var searchString: String
   
   /**
     * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. See Text Transformation below for details.
     */
   var textTransformations: js.Array[
     WebAclRuleStatementAndStatementStatementNotStatementStatementByteMatchStatementTextTransformation
-  ] = js.native
+  ]
 }
 object WebAclRuleStatementAndStatementStatementNotStatementStatementByteMatchStatement {
   

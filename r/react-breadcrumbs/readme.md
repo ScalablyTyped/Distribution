@@ -12,7 +12,7 @@ Automatic breadcrumbs for react-router
 | Keywords           | react-component, breadcrumbs, react, trail |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 1327018 |
+| # downloads        | 1590592 |
 | # stars            | 4 |
 
 ## Links

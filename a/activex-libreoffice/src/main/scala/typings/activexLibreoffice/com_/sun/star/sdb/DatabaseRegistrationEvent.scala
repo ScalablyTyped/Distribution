@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDatabaseRegistrationsListener
   * @since LibreOffice 3.3
   */
-@js.native
-trait DatabaseRegistrationEvent extends EventObject {
+trait DatabaseRegistrationEvent
+  extends StObject
+     with EventObject {
   
-  var Name: String = js.native
+  var Name: String
   
-  var NewLocation: String = js.native
+  var NewLocation: String
   
-  var OldLocation: String = js.native
+  var OldLocation: String
 }
 object DatabaseRegistrationEvent {
   

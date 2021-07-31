@@ -5,21 +5,22 @@ import typings.jsonSchema.mod.JSONSchema6TypeName
 import typings.jsonSchema.mod.JSONSchema7TypeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonSchemaStrings {
   
   @js.native
   sealed trait any
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait array
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -27,7 +28,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait boolean
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -35,7 +37,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait integer
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -43,7 +46,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait `null`
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -51,7 +55,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait number
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -59,7 +64,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait `object`
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline
@@ -67,7 +73,8 @@ object jsonSchemaStrings {
   
   @js.native
   sealed trait string
-    extends JSONSchema4TypeName
+    extends StObject
+       with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
   @scala.inline

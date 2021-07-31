@@ -2,20 +2,20 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxMultiRangeSelectInfo with extends of RangeSelectInfo
   */
-@js.native
-trait INxMultiRangeSelectInfo extends IRangeSelectInfo {
+trait INxMultiRangeSelectInfo
+  extends StObject
+     with IRangeSelectInfo {
   
   /**
     * Number of the columns to select.
     * Numbering starts from 0.
     */
-  var qColumnsToSelect: Double = js.native
+  var qColumnsToSelect: Double
 }
 object INxMultiRangeSelectInfo {
   

@@ -2,16 +2,14 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeBackground> */
-@js.native
 trait PartialTypeBackground extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var paper: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.undefined
 }
 object PartialTypeBackground {
   

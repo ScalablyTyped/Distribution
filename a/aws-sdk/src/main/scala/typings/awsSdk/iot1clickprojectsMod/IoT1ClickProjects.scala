@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait IoT1ClickProjects extends Service {
   ): Request[AssociateDeviceWithPlacementResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_IoT1ClickProjects: ConfigBase with ClientConfiguration = js.native
+  var config_IoT1ClickProjects: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an empty placement.

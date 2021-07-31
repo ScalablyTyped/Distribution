@@ -2,15 +2,13 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadCallbackType extends StObject {
   
-  var onError: js.UndefOr[js.Function1[/* error */ jsmediatagsError, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ jsmediatagsError, Unit]] = js.undefined
   
-  def onSuccess(): Unit = js.native
+  def onSuccess(): Unit
 }
 object LoadCallbackType {
   

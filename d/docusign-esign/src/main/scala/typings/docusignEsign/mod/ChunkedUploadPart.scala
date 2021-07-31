@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkedUploadPart extends StObject {
   
   /**
     * The order of the part in the chunked upload.
     */
-  var sequence: js.UndefOr[String] = js.native
+  var sequence: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the part in bytes.
     *
     * We recommend that a chunked upload part is no larger than a few MB in size.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object ChunkedUploadPart {
   

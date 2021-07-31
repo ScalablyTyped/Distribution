@@ -6,16 +6,15 @@ import typings.winrt.Windows.Foundation.IGetActivationFactory
 import typings.winrt.Windows.UI.Core.CoreWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Core {
   
-  @js.native
   trait CoreApplication extends StObject
   
-  @js.native
-  trait CoreApplicationView extends ICoreApplicationView
+  trait CoreApplicationView
+    extends StObject
+       with ICoreApplicationView
   object CoreApplicationView {
     
     @scala.inline
@@ -25,22 +24,21 @@ object Core {
     }
   }
   
-  @js.native
   trait ICoreApplication extends StObject {
     
-    def getCurrentView(): CoreApplicationView = js.native
+    def getCurrentView(): CoreApplicationView
     
-    var id: String = js.native
+    var id: String
     
-    var onresuming: js.Any = js.native
+    var onresuming: js.Any
     
-    var onsuspending: js.Any = js.native
+    var onsuspending: js.Any
     
-    var properties: IPropertySet = js.native
+    var properties: IPropertySet
     
-    def run(viewSource: IFrameworkViewSource): Unit = js.native
+    def run(viewSource: IFrameworkViewSource): Unit
     
-    def runWithActivationFactories(activationFactoryCallback: IGetActivationFactory): Unit = js.native
+    def runWithActivationFactories(activationFactoryCallback: IGetActivationFactory): Unit
   }
   object ICoreApplication {
     
@@ -84,12 +82,11 @@ object Core {
     }
   }
   
-  @js.native
   trait ICoreApplicationExit extends StObject {
     
-    def exit(): Unit = js.native
+    def exit(): Unit
     
-    var onexiting: js.Any = js.native
+    var onexiting: js.Any
   }
   object ICoreApplicationExit {
     
@@ -110,12 +107,11 @@ object Core {
     }
   }
   
-  @js.native
   trait ICoreApplicationUseCount extends StObject {
     
-    def decrementApplicationUseCount(): Unit = js.native
+    def decrementApplicationUseCount(): Unit
     
-    def incrementApplicationUseCount(): Unit = js.native
+    def incrementApplicationUseCount(): Unit
   }
   object ICoreApplicationUseCount {
     
@@ -136,16 +132,15 @@ object Core {
     }
   }
   
-  @js.native
   trait ICoreApplicationView extends StObject {
     
-    var coreWindow: CoreWindow = js.native
+    var coreWindow: CoreWindow
     
-    var isHosted: Boolean = js.native
+    var isHosted: Boolean
     
-    var isMain: Boolean = js.native
+    var isMain: Boolean
     
-    var onactivated: js.Any = js.native
+    var onactivated: js.Any
   }
   object ICoreApplicationView {
     
@@ -172,14 +167,13 @@ object Core {
     }
   }
   
-  @js.native
   trait ICoreImmersiveApplication extends StObject {
     
-    def createNewView(runtimeType: String, entryPoint: String): CoreApplicationView = js.native
+    def createNewView(runtimeType: String, entryPoint: String): CoreApplicationView
     
-    var mainView: CoreApplicationView = js.native
+    var mainView: CoreApplicationView
     
-    var views: IVectorView[CoreApplicationView] = js.native
+    var views: IVectorView[CoreApplicationView]
   }
   object ICoreImmersiveApplication {
     
@@ -207,18 +201,17 @@ object Core {
     }
   }
   
-  @js.native
   trait IFrameworkView extends StObject {
     
-    def initialize(applicationView: CoreApplicationView): Unit = js.native
+    def initialize(applicationView: CoreApplicationView): Unit
     
-    def load(entryPoint: String): Unit = js.native
+    def load(entryPoint: String): Unit
     
-    def run(): Unit = js.native
+    def run(): Unit
     
-    def setWindow(window: CoreWindow): Unit = js.native
+    def setWindow(window: CoreWindow): Unit
     
-    def uninitialize(): Unit = js.native
+    def uninitialize(): Unit
   }
   object IFrameworkView {
     
@@ -254,10 +247,9 @@ object Core {
     }
   }
   
-  @js.native
   trait IFrameworkViewSource extends StObject {
     
-    def createView(): IFrameworkView = js.native
+    def createView(): IFrameworkView
   }
   object IFrameworkViewSource {
     

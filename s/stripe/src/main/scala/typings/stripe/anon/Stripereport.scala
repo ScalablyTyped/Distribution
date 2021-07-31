@@ -4,21 +4,19 @@ import typings.stripe.stripeStrings.fraudulent
 import typings.stripe.stripeStrings.safe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stripereport extends StObject {
   
   /**
     * Assessments from Stripe have the key stripe_report and, if set, the value "fraudulent".
     */
-  var stripe_report: js.UndefOr[fraudulent] = js.native
+  var stripe_report: js.UndefOr[fraudulent] = js.undefined
   
   /**
     * Assessments reported by you have the key user_report and, if set, possible values of "safe" and "fraudulent".
     */
-  var user_report: js.UndefOr[fraudulent | safe] = js.native
+  var user_report: js.UndefOr[fraudulent | safe] = js.undefined
 }
 object Stripereport {
   

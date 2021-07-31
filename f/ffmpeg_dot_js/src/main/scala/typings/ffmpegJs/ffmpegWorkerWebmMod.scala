@@ -2,23 +2,32 @@ package typings.ffmpegJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ffmpegWorkerWebmMod {
   
   @JSImport("ffmpeg.js/ffmpeg-worker-webm", JSImport.Namespace)
   @js.native
-  class ^ () extends Worker {
+  class ^ ()
+    extends StObject
+       with Worker {
     def this(someParam: String) = this()
+    
+    /* CompleteClass */
+    override def onmessage(opts: OnMessageOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def postMessage(opts: PostMessageOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def terminate(): Unit = js.native
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -40,10 +49,9 @@ object ffmpegWorkerWebmMod {
     }
   }
   
-  @js.native
   trait OnMessageOptions extends StObject {
     
-    var data: Data = js.native
+    var data: Data
   }
   object OnMessageOptions {
     
@@ -61,12 +69,11 @@ object ffmpegWorkerWebmMod {
     }
   }
   
-  @js.native
   trait PostMessageOptions extends StObject {
     
-    var arguments: js.Array[String] = js.native
+    var arguments: js.Array[String]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object PostMessageOptions {
     
@@ -91,14 +98,13 @@ object ffmpegWorkerWebmMod {
     }
   }
   
-  @js.native
   trait Worker extends StObject {
     
-    def onmessage(opts: OnMessageOptions): Unit = js.native
+    def onmessage(opts: OnMessageOptions): Unit
     
-    def postMessage(opts: PostMessageOptions): Unit = js.native
+    def postMessage(opts: PostMessageOptions): Unit
     
-    def terminate(): Unit = js.native
+    def terminate(): Unit
   }
   object Worker {
     

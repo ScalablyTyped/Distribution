@@ -2,17 +2,15 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientSortControls extends StObject {
   
   /** ClientSortControls keys */
-  var keys: js.UndefOr[js.Array[String] | Null] = js.native
+  var keys: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ClientSortControls reverse */
-  var reverse: js.UndefOr[Boolean | Null] = js.native
+  var reverse: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IClientSortControls {
   

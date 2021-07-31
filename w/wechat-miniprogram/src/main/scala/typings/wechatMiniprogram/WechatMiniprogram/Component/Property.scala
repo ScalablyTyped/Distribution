@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Property[P /* <: PropertyOption */] extends StObject {
   
   /** 组件的对外属性，是属性名到属性设置的映射表 */
-  var properties: P = js.native
+  var properties: P
 }
 object Property {
   
@@ -20,7 +18,7 @@ object Property {
   }
   
   @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property[_], P /* <: PropertyOption */] (val x: Self with Property[P]) extends AnyVal {
+  implicit class PropertyMutableBuilder[Self <: Property[?], P /* <: PropertyOption */] (val x: Self & Property[P]) extends AnyVal {
     
     @scala.inline
     def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])

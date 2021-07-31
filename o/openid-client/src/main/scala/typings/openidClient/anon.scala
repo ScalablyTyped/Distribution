@@ -16,23 +16,21 @@ import typings.openidClient.openidClientStrings.header
 import typings.openidClient.openidClientStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var DPoP: js.UndefOr[DPoPInput] = js.native
+    var DPoP: js.UndefOr[DPoPInput] = js.undefined
     
-    var body: js.UndefOr[String | Buffer] = js.native
+    var body: js.UndefOr[String | Buffer] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: js.UndefOr[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE] = js.native
+    var method: js.UndefOr[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE] = js.undefined
     
-    var tokenType: js.UndefOr[String] = js.native
+    var tokenType: js.UndefOr[String] = js.undefined
   }
   object Body {
     
@@ -77,18 +75,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DPoP extends StObject {
     
-    var DPoP: js.UndefOr[DPoPInput] = js.native
+    var DPoP: js.UndefOr[DPoPInput] = js.undefined
     
-    var method: js.UndefOr[GET | POST] = js.native
+    var method: js.UndefOr[GET | POST] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var tokenType: js.UndefOr[String] = js.native
+    var tokenType: js.UndefOr[String] = js.undefined
     
-    var via: js.UndefOr[header | body | query] = js.native
+    var via: js.UndefOr[header | body | query] = js.undefined
   }
   object DPoP {
     
@@ -133,21 +130,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var formatted: js.UndefOr[String] = js.native
+    var formatted: js.UndefOr[String] = js.undefined
     
-    var locality: js.UndefOr[String] = js.native
+    var locality: js.UndefOr[String] = js.undefined
     
-    var postal_code: js.UndefOr[String] = js.native
+    var postal_code: js.UndefOr[String] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var street_address: js.UndefOr[String] = js.native
+    var street_address: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -198,12 +195,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Idtoken extends StObject {
     
-    var id_token: js.UndefOr[StringDictionary[Null | ClaimsParameterMember]] = js.native
+    var id_token: js.UndefOr[StringDictionary[Null | ClaimsParameterMember]] = js.undefined
     
-    var userinfo: js.UndefOr[StringDictionary[Null | ClaimsParameterMember]] = js.native
+    var userinfo: js.UndefOr[StringDictionary[Null | ClaimsParameterMember]] = js.undefined
   }
   object Idtoken {
     
@@ -230,12 +226,12 @@ object anon {
     }
   }
   
-  @js.native
   trait X5tS256
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     @JSName("x5t#S256")
-    var x5tNumbersignS256: js.UndefOr[String] = js.native
+    var x5tNumbersignS256: js.UndefOr[String] = js.undefined
   }
   object X5tS256 {
     

@@ -2,14 +2,14 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Download Response
-@js.native
-trait DownloadProgressResponse extends ProgressResponseBase {
+trait DownloadProgressResponse
+  extends StObject
+     with ProgressResponseBase {
   
-  val finalUrl: String = js.native
+  val finalUrl: String
 }
 object DownloadProgressResponse {
   

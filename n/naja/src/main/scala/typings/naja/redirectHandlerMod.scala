@@ -9,27 +9,31 @@ import typings.std.EventTarget
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redirectHandlerMod {
   
   @JSImport("naja/src/core/RedirectHandler", "RedirectHandler")
   @js.native
-  class RedirectHandler () extends EventTarget {
+  class RedirectHandler ()
+    extends StObject
+       with EventTarget {
     
-    @JSName("addEventListener")
-    def addEventListener_redirect(`type`: redirect, listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_redirect(
       `type`: redirect,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_redirect(
+      `type`: redirect,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_redirect(
       `type`: redirect,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -41,25 +45,27 @@ object redirectHandlerMod {
     def removeEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
     def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_redirect(`type`: redirect, listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _]): Unit = js.native
+    def removeEventListener_redirect(
+      `type`: redirect,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any]
+    ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_redirect(
       `type`: redirect,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_redirect(
       `type`: redirect,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ RedirectEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
   }
   
-  @js.native
   trait LocationAdapter extends StObject {
     
-    def assign(url: String): Unit = js.native
+    def assign(url: String): Unit
   }
   object LocationAdapter {
     

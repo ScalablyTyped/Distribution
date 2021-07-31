@@ -3,111 +3,109 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridHighlightConfig extends StObject {
   
   /**
     * The named grid areas border color (Default: transparent).
     */
-  var areaBorderColor: js.UndefOr[RGBA] = js.native
+  var areaBorderColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The cell border color (default: transparent). Deprecated, please use rowLineColor and columnLineColor instead.
     */
-  var cellBorderColor: js.UndefOr[RGBA] = js.native
+  var cellBorderColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Whether the cell border is dashed (default: false). Deprecated, please us rowLineDash and columnLineDash instead.
     */
-  var cellBorderDash: js.UndefOr[Boolean] = js.native
+  var cellBorderDash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The column gap highlight fill color (default: transparent).
     */
-  var columnGapColor: js.UndefOr[RGBA] = js.native
+  var columnGapColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The column gap hatching fill color (default: transparent).
     */
-  var columnHatchColor: js.UndefOr[RGBA] = js.native
+  var columnHatchColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The column line color (default: transparent).
     */
-  var columnLineColor: js.UndefOr[RGBA] = js.native
+  var columnLineColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Whether column lines are dashed (default: false).
     */
-  var columnLineDash: js.UndefOr[Boolean] = js.native
+  var columnLineDash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The grid container background color (Default: transparent).
     */
-  var gridBackgroundColor: js.UndefOr[RGBA] = js.native
+  var gridBackgroundColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The grid container border highlight color (default: transparent).
     */
-  var gridBorderColor: js.UndefOr[RGBA] = js.native
+  var gridBorderColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Whether the grid border is dashed (default: false).
     */
-  var gridBorderDash: js.UndefOr[Boolean] = js.native
+  var gridBorderDash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The row gap highlight fill color (default: transparent).
     */
-  var rowGapColor: js.UndefOr[RGBA] = js.native
+  var rowGapColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The row gap hatching fill color (default: transparent).
     */
-  var rowHatchColor: js.UndefOr[RGBA] = js.native
+  var rowHatchColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The row line color (default: transparent).
     */
-  var rowLineColor: js.UndefOr[RGBA] = js.native
+  var rowLineColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Whether row lines are dashed (default: false).
     */
-  var rowLineDash: js.UndefOr[Boolean] = js.native
+  var rowLineDash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show area name labels (default: false).
     */
-  var showAreaNames: js.UndefOr[Boolean] = js.native
+  var showAreaNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the extension lines from grid cells to the rulers should be shown (default: false).
     */
-  var showGridExtensionLines: js.UndefOr[Boolean] = js.native
+  var showGridExtensionLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show line name labels (default: false).
     */
-  var showLineNames: js.UndefOr[Boolean] = js.native
+  var showLineNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show Negative line number labels (default: false).
     */
-  var showNegativeLineNumbers: js.UndefOr[Boolean] = js.native
+  var showNegativeLineNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show Positive line number labels (default: false).
     */
-  var showPositiveLineNumbers: js.UndefOr[Boolean] = js.native
+  var showPositiveLineNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show track size labels (default: false).
     */
-  var showTrackSizes: js.UndefOr[Boolean] = js.native
+  var showTrackSizes: js.UndefOr[Boolean] = js.undefined
 }
 object GridHighlightConfig {
   

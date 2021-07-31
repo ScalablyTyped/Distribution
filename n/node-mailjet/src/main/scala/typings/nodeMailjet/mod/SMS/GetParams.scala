@@ -2,24 +2,22 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // request params
-@js.native
 trait GetParams extends StObject {
   
-  var FromTS: js.UndefOr[Double] = js.native
+  var FromTS: js.UndefOr[Double] = js.undefined
   
-  var Limit: js.UndefOr[Double] = js.native
+  var Limit: js.UndefOr[Double] = js.undefined
   
-  var Offset: js.UndefOr[Double] = js.native
+  var Offset: js.UndefOr[Double] = js.undefined
   
-  var StatusCode: js.UndefOr[js.Array[Double]] = js.native
+  var StatusCode: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var To: js.UndefOr[String] = js.native
+  var To: js.UndefOr[String] = js.undefined
   
-  var ToTS: js.UndefOr[Double] = js.native
+  var ToTS: js.UndefOr[Double] = js.undefined
 }
 object GetParams {
   

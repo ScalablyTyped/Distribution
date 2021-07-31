@@ -11,8 +11,8 @@ A SOCKS proxy `http.Agent` implementation for HTTP and HTTPS
 | Full name          | socks-proxy-agent |
 | Keywords           | socks, socks4, socks4a, socks5, socks5h, proxy, http, https, agent |
 | # releases         | 3 |
-| # dependents       | 128 |
-| # downloads        | 183986920 |
+| # dependents       | 149 |
+| # downloads        | 230578330 |
 | # stars            | 5 |
 
 ## Links

@@ -1,36 +1,31 @@
 package typings.storybookUi.anon
 
 import typings.std.Record
+import typings.storybookApi.shortcutsMod.Shortcuts
 import typings.storybookUi.storybookUiStrings.bottom
 import typings.storybookUi.storybookUiStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Absolute extends StObject {
   
-  var absolute: js.UndefOr[Boolean] = js.native
+  var absolute: js.UndefOr[Boolean] = js.undefined
   
-  var actions: OnSelect with (Record[String, _]) = js.native
+  var actions: OnSelect & (Record[String, js.Any])
   
-  var panelPosition: js.UndefOr[bottom | right] = js.native
+  var panelPosition: js.UndefOr[bottom | right] = js.undefined
   
-  var panels: Record[String, _] = js.native
+  var panels: Record[String, js.Any]
   
-  var selectedPanel: js.UndefOr[String] = js.native
+  var selectedPanel: js.UndefOr[String] = js.undefined
   
-  var shortcuts: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['shortcuts'] */ js.Any = js.native
+  var shortcuts: Shortcuts
 }
 object Absolute {
   
   @scala.inline
-  def apply(
-    actions: OnSelect with (Record[String, _]),
-    panels: Record[String, _],
-    shortcuts: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['shortcuts'] */ js.Any
-  ): Absolute = {
+  def apply(actions: OnSelect & (Record[String, js.Any]), panels: Record[String, js.Any], shortcuts: Shortcuts): Absolute = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Absolute]
   }
@@ -45,7 +40,7 @@ object Absolute {
     def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
     @scala.inline
-    def setActions(value: OnSelect with (Record[String, _])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
@@ -54,7 +49,7 @@ object Absolute {
     def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
     
     @scala.inline
-    def setPanels(value: Record[String, _]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    def setPanels(value: Record[String, js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
@@ -63,8 +58,6 @@ object Absolute {
     def setSelectedPanelUndefined: Self = StObject.set(x, "selectedPanel", js.undefined)
     
     @scala.inline
-    def setShortcuts(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['shortcuts'] */ js.Any
-    ): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+    def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabBarAnimationOptions extends CommonCallbackOptions {
+trait TabBarAnimationOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  是否需要动画效果
-  var animation: Boolean = js.native
+  var animation: Boolean
 }
 object TabBarAnimationOptions {
   

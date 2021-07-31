@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,45 +11,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This kind of object is called view-object.
   */
-@js.native
-trait XView extends XInterface {
+trait XView
+  extends StObject
+     with XInterface {
   
   /** returns the output device which was set using the method {@link XView.setGraphics()} . */
-  var Graphics: XGraphics = js.native
+  var Graphics: XGraphics
   
   /**
     * returns the size of the object in device units.
     *
     * A device must be set before.
     */
-  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /**
     * draws the object at the specified position.
     *
     * If the output should be clipped, the caller has to set the clipping region.
     */
-  def draw(nX: Double, nY: Double): Unit = js.native
+  def draw(nX: Double, nY: Double): Unit
   
   /** returns the output device which was set using the method {@link XView.setGraphics()} . */
-  def getGraphics(): XGraphics = js.native
+  def getGraphics(): XGraphics
   
   /**
     * returns the size of the object in device units.
     *
     * A device must be set before.
     */
-  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** sets the output device. */
-  def setGraphics(aDevice: XGraphics): Boolean = js.native
+  def setGraphics(aDevice: XGraphics): Boolean
   
   /**
     * sets the zoom factor.
     *
     * The zoom factor only affects the content of the view, not the size.
     */
-  def setZoom(fZoomX: Double, fZoomY: Double): Unit = js.native
+  def setZoom(fZoomX: Double, fZoomY: Double): Unit
 }
 object XView {
   

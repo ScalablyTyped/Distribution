@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagInput extends StObject {
   
   /**
     * The ARN of the resource group to which to add tags.
     */
-  var Arn: GroupArn = js.native
+  var Arn: GroupArn
   
   /**
     * The tags to add to the specified resource group. A tag is a string-to-string map of key-value pairs.
     */
-  var Tags: typings.awsSdk.resourcegroupsMod.Tags = js.native
+  var Tags: typings.awsSdk.resourcegroupsMod.Tags
 }
 object TagInput {
   

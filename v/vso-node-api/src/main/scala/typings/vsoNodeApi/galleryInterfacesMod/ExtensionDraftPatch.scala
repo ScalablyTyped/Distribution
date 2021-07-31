@@ -2,15 +2,13 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDraftPatch extends StObject {
   
-  var extensionData: UnpackagedExtensionData = js.native
+  var extensionData: UnpackagedExtensionData
   
-  var operation: DraftPatchOperation = js.native
+  var operation: DraftPatchOperation
 }
 object ExtensionDraftPatch {
   

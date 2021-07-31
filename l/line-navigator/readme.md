@@ -12,7 +12,7 @@ Reads, searches and navigates HTML5/Node.JS text files of any size in the browse
 | Keywords           | frontend, file, search, browser, html5, line, random access, node |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6005 |
+| # downloads        | 9066 |
 | # stars            | 2 |
 
 ## Links

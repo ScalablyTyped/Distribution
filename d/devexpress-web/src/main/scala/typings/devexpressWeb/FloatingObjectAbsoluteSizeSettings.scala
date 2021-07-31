@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains absolute size settings for floating objects.
   */
-@js.native
 trait FloatingObjectAbsoluteSizeSettings extends StObject {
   
   /**
     * Gets or sets a floating object's absolute height.
     */
-  var absoluteHeight: Double = js.native
+  var absoluteHeight: Double
   
   /**
     * Gets or sets a floating object's absolute width.
     */
-  var absoluteWidth: Double = js.native
+  var absoluteWidth: Double
 }
 object FloatingObjectAbsoluteSizeSettings {
   

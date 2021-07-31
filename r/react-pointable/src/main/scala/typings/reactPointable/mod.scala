@@ -43,7 +43,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -71,527 +70,529 @@ object mod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because Already inherited
   - typings.react.mod.AriaAttributes because Already inherited
-  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, dangerouslySetInnerHTML, id, lang, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, max, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, height, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, method, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, target, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, min, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, media, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, name, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, width, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, href, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, crossOrigin, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, `type`, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ @js.native
-  trait PointableProps extends HTMLAttributes[Element] {
+  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, dangerouslySetInnerHTML, id, lang, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, max, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, height, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, method, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, target, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, min, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, media, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, name, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, width, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, href, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, crossOrigin, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, `type`, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ trait PointableProps
+    extends StObject
+       with HTMLAttributes[Element] {
     
     // SVG Specific attributes
-    var accentHeight: js.UndefOr[Double | String] = js.native
+    var accentHeight: js.UndefOr[Double | String] = js.undefined
     
-    var accumulate: js.UndefOr[none | sum] = js.native
+    var accumulate: js.UndefOr[none | sum] = js.undefined
     
-    var additive: js.UndefOr[replace | sum] = js.native
+    var additive: js.UndefOr[replace | sum] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
         auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
-      ] = js.native
+      ] = js.undefined
     
-    var allowReorder: js.UndefOr[no | yes] = js.native
+    var allowReorder: js.UndefOr[no | yes] = js.undefined
     
-    var alphabetic: js.UndefOr[Double | String] = js.native
+    var alphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var amplitude: js.UndefOr[Double | String] = js.native
+    var amplitude: js.UndefOr[Double | String] = js.undefined
     
-    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.native
+    var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
     
-    var ascent: js.UndefOr[Double | String] = js.native
+    var ascent: js.UndefOr[Double | String] = js.undefined
     
-    var attributeName: js.UndefOr[String] = js.native
+    var attributeName: js.UndefOr[String] = js.undefined
     
-    var attributeType: js.UndefOr[String] = js.native
+    var attributeType: js.UndefOr[String] = js.undefined
     
-    var autoReverse: js.UndefOr[Booleanish] = js.native
+    var autoReverse: js.UndefOr[Booleanish] = js.undefined
     
-    var azimuth: js.UndefOr[Double | String] = js.native
+    var azimuth: js.UndefOr[Double | String] = js.undefined
     
-    var baseFrequency: js.UndefOr[Double | String] = js.native
+    var baseFrequency: js.UndefOr[Double | String] = js.undefined
     
-    var baseProfile: js.UndefOr[Double | String] = js.native
+    var baseProfile: js.UndefOr[Double | String] = js.undefined
     
-    var baselineShift: js.UndefOr[Double | String] = js.native
+    var baselineShift: js.UndefOr[Double | String] = js.undefined
     
-    var bbox: js.UndefOr[Double | String] = js.native
+    var bbox: js.UndefOr[Double | String] = js.undefined
     
-    var begin: js.UndefOr[Double | String] = js.native
+    var begin: js.UndefOr[Double | String] = js.undefined
     
-    var bias: js.UndefOr[Double | String] = js.native
+    var bias: js.UndefOr[Double | String] = js.undefined
     
-    var by: js.UndefOr[Double | String] = js.native
+    var by: js.UndefOr[Double | String] = js.undefined
     
-    var calcMode: js.UndefOr[Double | String] = js.native
+    var calcMode: js.UndefOr[Double | String] = js.undefined
     
-    var capHeight: js.UndefOr[Double | String] = js.native
+    var capHeight: js.UndefOr[Double | String] = js.undefined
     
-    var clip: js.UndefOr[Double | String] = js.native
+    var clip: js.UndefOr[Double | String] = js.undefined
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipPathUnits: js.UndefOr[Double | String] = js.native
+    var clipPathUnits: js.UndefOr[Double | String] = js.undefined
     
-    var clipRule: js.UndefOr[Double | String] = js.native
+    var clipRule: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolation: js.UndefOr[Double | String] = js.native
+    var colorInterpolation: js.UndefOr[Double | String] = js.undefined
     
-    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.native
+    var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
     
-    var colorProfile: js.UndefOr[Double | String] = js.native
+    var colorProfile: js.UndefOr[Double | String] = js.undefined
     
-    var colorRendering: js.UndefOr[Double | String] = js.native
+    var colorRendering: js.UndefOr[Double | String] = js.undefined
     
-    var contentScriptType: js.UndefOr[Double | String] = js.native
+    var contentScriptType: js.UndefOr[Double | String] = js.undefined
     
-    var contentStyleType: js.UndefOr[Double | String] = js.native
+    var contentStyleType: js.UndefOr[Double | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
-    var cursor: js.UndefOr[Double | String] = js.native
+    var cursor: js.UndefOr[Double | String] = js.undefined
     
-    var cx: js.UndefOr[Double | String] = js.native
+    var cx: js.UndefOr[Double | String] = js.undefined
     
-    var cy: js.UndefOr[Double | String] = js.native
+    var cy: js.UndefOr[Double | String] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var decelerate: js.UndefOr[Double | String] = js.native
+    var decelerate: js.UndefOr[Double | String] = js.undefined
     
-    var descent: js.UndefOr[Double | String] = js.native
+    var descent: js.UndefOr[Double | String] = js.undefined
     
-    var diffuseConstant: js.UndefOr[Double | String] = js.native
+    var diffuseConstant: js.UndefOr[Double | String] = js.undefined
     
-    var direction: js.UndefOr[Double | String] = js.native
+    var direction: js.UndefOr[Double | String] = js.undefined
     
-    var display: js.UndefOr[Double | String] = js.native
+    var display: js.UndefOr[Double | String] = js.undefined
     
-    var divisor: js.UndefOr[Double | String] = js.native
+    var divisor: js.UndefOr[Double | String] = js.undefined
     
-    var dominantBaseline: js.UndefOr[Double | String] = js.native
+    var dominantBaseline: js.UndefOr[Double | String] = js.undefined
     
-    var dur: js.UndefOr[Double | String] = js.native
+    var dur: js.UndefOr[Double | String] = js.undefined
     
-    var dx: js.UndefOr[Double | String] = js.native
+    var dx: js.UndefOr[Double | String] = js.undefined
     
-    var dy: js.UndefOr[Double | String] = js.native
+    var dy: js.UndefOr[Double | String] = js.undefined
     
-    var edgeMode: js.UndefOr[Double | String] = js.native
+    var edgeMode: js.UndefOr[Double | String] = js.undefined
     
-    var elementRef: js.UndefOr[js.Function1[/* el */ HTMLElement | SVGElement, Unit]] = js.native
+    var elementRef: js.UndefOr[js.Function1[/* el */ HTMLElement | SVGElement, Unit]] = js.undefined
     
-    var elevation: js.UndefOr[Double | String] = js.native
+    var elevation: js.UndefOr[Double | String] = js.undefined
     
-    var enableBackground: js.UndefOr[Double | String] = js.native
+    var enableBackground: js.UndefOr[Double | String] = js.undefined
     
-    var end: js.UndefOr[Double | String] = js.native
+    var end: js.UndefOr[Double | String] = js.undefined
     
-    var exponent: js.UndefOr[Double | String] = js.native
+    var exponent: js.UndefOr[Double | String] = js.undefined
     
-    var externalResourcesRequired: js.UndefOr[Booleanish] = js.native
+    var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double | String] = js.native
+    var fillOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.native
+    var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var filterRes: js.UndefOr[Double | String] = js.native
+    var filterRes: js.UndefOr[Double | String] = js.undefined
     
-    var filterUnits: js.UndefOr[Double | String] = js.native
+    var filterUnits: js.UndefOr[Double | String] = js.undefined
     
-    var floodColor: js.UndefOr[Double | String] = js.native
+    var floodColor: js.UndefOr[Double | String] = js.undefined
     
-    var floodOpacity: js.UndefOr[Double | String] = js.native
+    var floodOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var focusable: js.UndefOr[Booleanish | auto] = js.native
+    var focusable: js.UndefOr[Booleanish | auto] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+    var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var fontStretch: js.UndefOr[Double | String] = js.native
+    var fontStretch: js.UndefOr[Double | String] = js.undefined
     
-    var fontStyle: js.UndefOr[Double | String] = js.native
+    var fontStyle: js.UndefOr[Double | String] = js.undefined
     
-    var fontVariant: js.UndefOr[Double | String] = js.native
+    var fontVariant: js.UndefOr[Double | String] = js.undefined
     
-    var fontWeight: js.UndefOr[Double | String] = js.native
+    var fontWeight: js.UndefOr[Double | String] = js.undefined
     
-    var format: js.UndefOr[Double | String] = js.native
+    var format: js.UndefOr[Double | String] = js.undefined
     
-    var from: js.UndefOr[Double | String] = js.native
+    var from: js.UndefOr[Double | String] = js.undefined
     
-    var fx: js.UndefOr[Double | String] = js.native
+    var fx: js.UndefOr[Double | String] = js.undefined
     
-    var fy: js.UndefOr[Double | String] = js.native
+    var fy: js.UndefOr[Double | String] = js.undefined
     
-    var g1: js.UndefOr[Double | String] = js.native
+    var g1: js.UndefOr[Double | String] = js.undefined
     
-    var g2: js.UndefOr[Double | String] = js.native
+    var g2: js.UndefOr[Double | String] = js.undefined
     
-    var glyphName: js.UndefOr[Double | String] = js.native
+    var glyphName: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.native
+    var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.undefined
     
-    var glyphOrientationVertical: js.UndefOr[Double | String] = js.native
+    var glyphOrientationVertical: js.UndefOr[Double | String] = js.undefined
     
-    var glyphRef: js.UndefOr[Double | String] = js.native
+    var glyphRef: js.UndefOr[Double | String] = js.undefined
     
-    var gradientTransform: js.UndefOr[String] = js.native
+    var gradientTransform: js.UndefOr[String] = js.undefined
     
-    var gradientUnits: js.UndefOr[String] = js.native
+    var gradientUnits: js.UndefOr[String] = js.undefined
     
-    var hanging: js.UndefOr[Double | String] = js.native
+    var hanging: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var horizAdvX: js.UndefOr[Double | String] = js.native
+    var horizAdvX: js.UndefOr[Double | String] = js.undefined
     
-    var horizOriginX: js.UndefOr[Double | String] = js.native
+    var horizOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var ideographic: js.UndefOr[Double | String] = js.native
+    var ideographic: js.UndefOr[Double | String] = js.undefined
     
-    var imageRendering: js.UndefOr[Double | String] = js.native
+    var imageRendering: js.UndefOr[Double | String] = js.undefined
     
-    var in: js.UndefOr[String] = js.native
+    var in: js.UndefOr[String] = js.undefined
     
-    var in2: js.UndefOr[Double | String] = js.native
+    var in2: js.UndefOr[Double | String] = js.undefined
     
-    var intercept: js.UndefOr[Double | String] = js.native
+    var intercept: js.UndefOr[Double | String] = js.undefined
     
-    var k: js.UndefOr[Double | String] = js.native
+    var k: js.UndefOr[Double | String] = js.undefined
     
-    var k1: js.UndefOr[Double | String] = js.native
+    var k1: js.UndefOr[Double | String] = js.undefined
     
-    var k2: js.UndefOr[Double | String] = js.native
+    var k2: js.UndefOr[Double | String] = js.undefined
     
-    var k3: js.UndefOr[Double | String] = js.native
+    var k3: js.UndefOr[Double | String] = js.undefined
     
-    var k4: js.UndefOr[Double | String] = js.native
+    var k4: js.UndefOr[Double | String] = js.undefined
     
-    var kernelMatrix: js.UndefOr[Double | String] = js.native
+    var kernelMatrix: js.UndefOr[Double | String] = js.undefined
     
-    var kernelUnitLength: js.UndefOr[Double | String] = js.native
+    var kernelUnitLength: js.UndefOr[Double | String] = js.undefined
     
-    var kerning: js.UndefOr[Double | String] = js.native
+    var kerning: js.UndefOr[Double | String] = js.undefined
     
-    var keyPoints: js.UndefOr[Double | String] = js.native
+    var keyPoints: js.UndefOr[Double | String] = js.undefined
     
-    var keySplines: js.UndefOr[Double | String] = js.native
+    var keySplines: js.UndefOr[Double | String] = js.undefined
     
-    var keyTimes: js.UndefOr[Double | String] = js.native
+    var keyTimes: js.UndefOr[Double | String] = js.undefined
     
-    var lengthAdjust: js.UndefOr[Double | String] = js.native
+    var lengthAdjust: js.UndefOr[Double | String] = js.undefined
     
-    var letterSpacing: js.UndefOr[Double | String] = js.native
+    var letterSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var lightingColor: js.UndefOr[Double | String] = js.native
+    var lightingColor: js.UndefOr[Double | String] = js.undefined
     
-    var limitingConeAngle: js.UndefOr[Double | String] = js.native
+    var limitingConeAngle: js.UndefOr[Double | String] = js.undefined
     
-    var local: js.UndefOr[Double | String] = js.native
+    var local: js.UndefOr[Double | String] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerHeight: js.UndefOr[Double | String] = js.native
+    var markerHeight: js.UndefOr[Double | String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var markerUnits: js.UndefOr[Double | String] = js.native
+    var markerUnits: js.UndefOr[Double | String] = js.undefined
     
-    var markerWidth: js.UndefOr[Double | String] = js.native
+    var markerWidth: js.UndefOr[Double | String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var maskContentUnits: js.UndefOr[Double | String] = js.native
+    var maskContentUnits: js.UndefOr[Double | String] = js.undefined
     
-    var maskUnits: js.UndefOr[Double | String] = js.native
+    var maskUnits: js.UndefOr[Double | String] = js.undefined
     
-    var mathematical: js.UndefOr[Double | String] = js.native
+    var mathematical: js.UndefOr[Double | String] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.native
+    var max: js.UndefOr[Double | String] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.native
+    var min: js.UndefOr[Double | String] = js.undefined
     
-    var mode: js.UndefOr[Double | String] = js.native
+    var mode: js.UndefOr[Double | String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var numOctaves: js.UndefOr[Double | String] = js.native
+    var numOctaves: js.UndefOr[Double | String] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var opacity: js.UndefOr[Double | String] = js.native
+    var opacity: js.UndefOr[Double | String] = js.undefined
     
-    var operator: js.UndefOr[Double | String] = js.native
+    var operator: js.UndefOr[Double | String] = js.undefined
     
-    var order: js.UndefOr[Double | String] = js.native
+    var order: js.UndefOr[Double | String] = js.undefined
     
-    var orient: js.UndefOr[Double | String] = js.native
+    var orient: js.UndefOr[Double | String] = js.undefined
     
-    var orientation: js.UndefOr[Double | String] = js.native
+    var orientation: js.UndefOr[Double | String] = js.undefined
     
-    var origin: js.UndefOr[Double | String] = js.native
+    var origin: js.UndefOr[Double | String] = js.undefined
     
-    var overflow: js.UndefOr[Double | String] = js.native
+    var overflow: js.UndefOr[Double | String] = js.undefined
     
-    var overlinePosition: js.UndefOr[Double | String] = js.native
+    var overlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var overlineThickness: js.UndefOr[Double | String] = js.native
+    var overlineThickness: js.UndefOr[Double | String] = js.undefined
     
-    var paintOrder: js.UndefOr[Double | String] = js.native
+    var paintOrder: js.UndefOr[Double | String] = js.undefined
     
-    var panose1: js.UndefOr[Double | String] = js.native
+    var panose1: js.UndefOr[Double | String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathLength: js.UndefOr[Double | String] = js.native
+    var pathLength: js.UndefOr[Double | String] = js.undefined
     
-    var patternContentUnits: js.UndefOr[String] = js.native
+    var patternContentUnits: js.UndefOr[String] = js.undefined
     
-    var patternTransform: js.UndefOr[Double | String] = js.native
+    var patternTransform: js.UndefOr[Double | String] = js.undefined
     
-    var patternUnits: js.UndefOr[String] = js.native
+    var patternUnits: js.UndefOr[String] = js.undefined
     
-    var pointerEvents: js.UndefOr[Double | String] = js.native
+    var pointerEvents: js.UndefOr[Double | String] = js.undefined
     
-    var points: js.UndefOr[String] = js.native
+    var points: js.UndefOr[String] = js.undefined
     
-    var pointsAtX: js.UndefOr[Double | String] = js.native
+    var pointsAtX: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtY: js.UndefOr[Double | String] = js.native
+    var pointsAtY: js.UndefOr[Double | String] = js.undefined
     
-    var pointsAtZ: js.UndefOr[Double | String] = js.native
+    var pointsAtZ: js.UndefOr[Double | String] = js.undefined
     
-    var preserveAlpha: js.UndefOr[Booleanish] = js.native
+    var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var primitiveUnits: js.UndefOr[Double | String] = js.native
+    var primitiveUnits: js.UndefOr[Double | String] = js.undefined
     
-    var r: js.UndefOr[Double | String] = js.native
+    var r: js.UndefOr[Double | String] = js.undefined
     
-    var radius: js.UndefOr[Double | String] = js.native
+    var radius: js.UndefOr[Double | String] = js.undefined
     
-    var refX: js.UndefOr[Double | String] = js.native
+    var refX: js.UndefOr[Double | String] = js.undefined
     
-    var refY: js.UndefOr[Double | String] = js.native
+    var refY: js.UndefOr[Double | String] = js.undefined
     
-    var renderingIntent: js.UndefOr[Double | String] = js.native
+    var renderingIntent: js.UndefOr[Double | String] = js.undefined
     
-    var repeatCount: js.UndefOr[Double | String] = js.native
+    var repeatCount: js.UndefOr[Double | String] = js.undefined
     
-    var repeatDur: js.UndefOr[Double | String] = js.native
+    var repeatDur: js.UndefOr[Double | String] = js.undefined
     
-    var requiredExtensions: js.UndefOr[Double | String] = js.native
+    var requiredExtensions: js.UndefOr[Double | String] = js.undefined
     
-    var requiredFeatures: js.UndefOr[Double | String] = js.native
+    var requiredFeatures: js.UndefOr[Double | String] = js.undefined
     
-    var restart: js.UndefOr[Double | String] = js.native
+    var restart: js.UndefOr[Double | String] = js.undefined
     
-    var result: js.UndefOr[String] = js.native
+    var result: js.UndefOr[String] = js.undefined
     
-    var rotate: js.UndefOr[Double | String] = js.native
+    var rotate: js.UndefOr[Double | String] = js.undefined
     
-    var rx: js.UndefOr[Double | String] = js.native
+    var rx: js.UndefOr[Double | String] = js.undefined
     
-    var ry: js.UndefOr[Double | String] = js.native
+    var ry: js.UndefOr[Double | String] = js.undefined
     
-    var scale: js.UndefOr[Double | String] = js.native
+    var scale: js.UndefOr[Double | String] = js.undefined
     
-    var seed: js.UndefOr[Double | String] = js.native
+    var seed: js.UndefOr[Double | String] = js.undefined
     
-    var shapeRendering: js.UndefOr[Double | String] = js.native
+    var shapeRendering: js.UndefOr[Double | String] = js.undefined
     
-    var slope: js.UndefOr[Double | String] = js.native
+    var slope: js.UndefOr[Double | String] = js.undefined
     
-    var spacing: js.UndefOr[Double | String] = js.native
+    var spacing: js.UndefOr[Double | String] = js.undefined
     
-    var specularConstant: js.UndefOr[Double | String] = js.native
+    var specularConstant: js.UndefOr[Double | String] = js.undefined
     
-    var specularExponent: js.UndefOr[Double | String] = js.native
+    var specularExponent: js.UndefOr[Double | String] = js.undefined
     
-    var speed: js.UndefOr[Double | String] = js.native
+    var speed: js.UndefOr[Double | String] = js.undefined
     
-    var spreadMethod: js.UndefOr[String] = js.native
+    var spreadMethod: js.UndefOr[String] = js.undefined
     
-    var startOffset: js.UndefOr[Double | String] = js.native
+    var startOffset: js.UndefOr[Double | String] = js.undefined
     
-    var stdDeviation: js.UndefOr[Double | String] = js.native
+    var stdDeviation: js.UndefOr[Double | String] = js.undefined
     
-    var stemh: js.UndefOr[Double | String] = js.native
+    var stemh: js.UndefOr[Double | String] = js.undefined
     
-    var stemv: js.UndefOr[Double | String] = js.native
+    var stemv: js.UndefOr[Double | String] = js.undefined
     
-    var stitchTiles: js.UndefOr[Double | String] = js.native
+    var stitchTiles: js.UndefOr[Double | String] = js.undefined
     
-    var stopColor: js.UndefOr[String] = js.native
+    var stopColor: js.UndefOr[String] = js.undefined
     
-    var stopOpacity: js.UndefOr[Double | String] = js.native
+    var stopOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughPosition: js.UndefOr[Double | String] = js.native
+    var strikethroughPosition: js.UndefOr[Double | String] = js.undefined
     
-    var strikethroughThickness: js.UndefOr[Double | String] = js.native
+    var strikethroughThickness: js.UndefOr[Double | String] = js.undefined
     
-    var string: js.UndefOr[Double | String] = js.native
+    var string: js.UndefOr[Double | String] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var strokeDasharray: js.UndefOr[String | Double] = js.native
+    var strokeDasharray: js.UndefOr[String | Double] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[String | Double] = js.native
+    var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.native
+    var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.native
+    var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+    var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Double | String] = js.native
+    var strokeOpacity: js.UndefOr[Double | String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double | String] = js.native
+    var strokeWidth: js.UndefOr[Double | String] = js.undefined
     
-    var surfaceScale: js.UndefOr[Double | String] = js.native
+    var surfaceScale: js.UndefOr[Double | String] = js.undefined
     
-    var systemLanguage: js.UndefOr[Double | String] = js.native
+    var systemLanguage: js.UndefOr[Double | String] = js.undefined
     
-    var tableValues: js.UndefOr[Double | String] = js.native
+    var tableValues: js.UndefOr[Double | String] = js.undefined
     
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var targetX: js.UndefOr[Double | String] = js.native
+    var targetX: js.UndefOr[Double | String] = js.undefined
     
-    var targetY: js.UndefOr[Double | String] = js.native
+    var targetY: js.UndefOr[Double | String] = js.undefined
     
-    var textAnchor: js.UndefOr[String] = js.native
+    var textAnchor: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[Double | String] = js.native
+    var textDecoration: js.UndefOr[Double | String] = js.undefined
     
-    var textLength: js.UndefOr[Double | String] = js.native
+    var textLength: js.UndefOr[Double | String] = js.undefined
     
-    var textRendering: js.UndefOr[Double | String] = js.native
+    var textRendering: js.UndefOr[Double | String] = js.undefined
     
-    var to: js.UndefOr[Double | String] = js.native
+    var to: js.UndefOr[Double | String] = js.undefined
     
-    var touchAction: js.UndefOr[TouchAction] = js.native
+    var touchAction: js.UndefOr[TouchAction] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var u1: js.UndefOr[Double | String] = js.native
+    var u1: js.UndefOr[Double | String] = js.undefined
     
-    var u2: js.UndefOr[Double | String] = js.native
+    var u2: js.UndefOr[Double | String] = js.undefined
     
-    var underlinePosition: js.UndefOr[Double | String] = js.native
+    var underlinePosition: js.UndefOr[Double | String] = js.undefined
     
-    var underlineThickness: js.UndefOr[Double | String] = js.native
+    var underlineThickness: js.UndefOr[Double | String] = js.undefined
     
-    var unicode: js.UndefOr[Double | String] = js.native
+    var unicode: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeBidi: js.UndefOr[Double | String] = js.native
+    var unicodeBidi: js.UndefOr[Double | String] = js.undefined
     
-    var unicodeRange: js.UndefOr[Double | String] = js.native
+    var unicodeRange: js.UndefOr[Double | String] = js.undefined
     
-    var unitsPerEm: js.UndefOr[Double | String] = js.native
+    var unitsPerEm: js.UndefOr[Double | String] = js.undefined
     
-    var vAlphabetic: js.UndefOr[Double | String] = js.native
+    var vAlphabetic: js.UndefOr[Double | String] = js.undefined
     
-    var vHanging: js.UndefOr[Double | String] = js.native
+    var vHanging: js.UndefOr[Double | String] = js.undefined
     
-    var vIdeographic: js.UndefOr[Double | String] = js.native
+    var vIdeographic: js.UndefOr[Double | String] = js.undefined
     
-    var vMathematical: js.UndefOr[Double | String] = js.native
+    var vMathematical: js.UndefOr[Double | String] = js.undefined
     
-    var values: js.UndefOr[String] = js.native
+    var values: js.UndefOr[String] = js.undefined
     
-    var vectorEffect: js.UndefOr[Double | String] = js.native
+    var vectorEffect: js.UndefOr[Double | String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var vertAdvY: js.UndefOr[Double | String] = js.native
+    var vertAdvY: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginX: js.UndefOr[Double | String] = js.native
+    var vertOriginX: js.UndefOr[Double | String] = js.undefined
     
-    var vertOriginY: js.UndefOr[Double | String] = js.native
+    var vertOriginY: js.UndefOr[Double | String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var viewTarget: js.UndefOr[Double | String] = js.native
+    var viewTarget: js.UndefOr[Double | String] = js.undefined
     
-    var visibility: js.UndefOr[Double | String] = js.native
+    var visibility: js.UndefOr[Double | String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var widths: js.UndefOr[Double | String] = js.native
+    var widths: js.UndefOr[Double | String] = js.undefined
     
-    var wordSpacing: js.UndefOr[Double | String] = js.native
+    var wordSpacing: js.UndefOr[Double | String] = js.undefined
     
-    var writingMode: js.UndefOr[Double | String] = js.native
+    var writingMode: js.UndefOr[Double | String] = js.undefined
     
-    var x: js.UndefOr[Double | String] = js.native
+    var x: js.UndefOr[Double | String] = js.undefined
     
-    var x1: js.UndefOr[Double | String] = js.native
+    var x1: js.UndefOr[Double | String] = js.undefined
     
-    var x2: js.UndefOr[Double | String] = js.native
+    var x2: js.UndefOr[Double | String] = js.undefined
     
-    var xChannelSelector: js.UndefOr[String] = js.native
+    var xChannelSelector: js.UndefOr[String] = js.undefined
     
-    var xHeight: js.UndefOr[Double | String] = js.native
+    var xHeight: js.UndefOr[Double | String] = js.undefined
     
-    var xlinkActuate: js.UndefOr[String] = js.native
+    var xlinkActuate: js.UndefOr[String] = js.undefined
     
-    var xlinkArcrole: js.UndefOr[String] = js.native
+    var xlinkArcrole: js.UndefOr[String] = js.undefined
     
-    var xlinkHref: js.UndefOr[String] = js.native
+    var xlinkHref: js.UndefOr[String] = js.undefined
     
-    var xlinkRole: js.UndefOr[String] = js.native
+    var xlinkRole: js.UndefOr[String] = js.undefined
     
-    var xlinkShow: js.UndefOr[String] = js.native
+    var xlinkShow: js.UndefOr[String] = js.undefined
     
-    var xlinkTitle: js.UndefOr[String] = js.native
+    var xlinkTitle: js.UndefOr[String] = js.undefined
     
-    var xlinkType: js.UndefOr[String] = js.native
+    var xlinkType: js.UndefOr[String] = js.undefined
     
-    var xmlBase: js.UndefOr[String] = js.native
+    var xmlBase: js.UndefOr[String] = js.undefined
     
-    var xmlLang: js.UndefOr[String] = js.native
+    var xmlLang: js.UndefOr[String] = js.undefined
     
-    var xmlSpace: js.UndefOr[String] = js.native
+    var xmlSpace: js.UndefOr[String] = js.undefined
     
-    var xmlns: js.UndefOr[String] = js.native
+    var xmlns: js.UndefOr[String] = js.undefined
     
-    var xmlnsXlink: js.UndefOr[String] = js.native
+    var xmlnsXlink: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[Double | String] = js.native
+    var y: js.UndefOr[Double | String] = js.undefined
     
-    var y1: js.UndefOr[Double | String] = js.native
+    var y1: js.UndefOr[Double | String] = js.undefined
     
-    var y2: js.UndefOr[Double | String] = js.native
+    var y2: js.UndefOr[Double | String] = js.undefined
     
-    var yChannelSelector: js.UndefOr[String] = js.native
+    var yChannelSelector: js.UndefOr[String] = js.undefined
     
-    var z: js.UndefOr[Double | String] = js.native
+    var z: js.UndefOr[Double | String] = js.undefined
     
-    var zoomAndPan: js.UndefOr[String] = js.native
+    var zoomAndPan: js.UndefOr[String] = js.undefined
   }
   object PointableProps {
     
     @scala.inline
-    def apply(): PointableProps = {
+    def apply(Object: js.Object): PointableProps = {
       val __obj = js.Dynamic.literal()
+      js.Dynamic.global.Object.assign(__obj, Object)
       __obj.asInstanceOf[PointableProps]
     }
     

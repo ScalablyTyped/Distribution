@@ -10,9 +10,9 @@ Official Express/Sequelize Liana for Forest
 | ------------------ | :-------------: |
 | Full name          | forest-express-sequelize |
 | Keywords           | forest, admin, panel, interface, sequelize |
-| # releases         | 86 |
+| # releases         | 104 |
 | # dependents       | 2 |
-| # downloads        | 247275 |
+| # downloads        | 264638 |
 | # stars            | 1 |
 
 ## Links

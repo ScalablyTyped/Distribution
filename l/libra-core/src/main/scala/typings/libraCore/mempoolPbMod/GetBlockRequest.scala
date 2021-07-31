@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest")
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class GetBlockRequest () extends Message {
   
   def addTransactions(): TransactionExclusion = js.native
-  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): TransactionExclusion = js.native
+  def addTransactions(value: Unit, index: Double): TransactionExclusion = js.native
   def addTransactions(value: TransactionExclusion): TransactionExclusion = js.native
   def addTransactions(value: TransactionExclusion, index: Double): TransactionExclusion = js.native
   
@@ -38,13 +37,11 @@ object GetBlockRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GetBlockRequest = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GetBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockRequest]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GetBlockRequest, reader: BinaryReader): GetBlockRequest = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GetBlockRequest, reader: BinaryReader): GetBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockRequest]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.extensions")
   @js.native
@@ -59,20 +56,17 @@ object GetBlockRequest {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GetBlockRequest, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GetBlockRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GetBlockRequest): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GetBlockRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var maxBlockSize: String = js.native
+    var maxBlockSize: String
     
-    var transactionsList: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject] = js.native
+    var transactionsList: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject]
   }
   object AsObject {
     

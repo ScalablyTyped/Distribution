@@ -11,8 +11,8 @@ Any dimensional alpha shape computation
 | Full name          | alpha-shape |
 | Keywords           | alpha, shape, convex, hull, concave, hull, point, simplicial, complex |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 2732461 |
+| # dependents       | 12 |
+| # downloads        | 3368776 |
 | # stars            | 0 |
 
 ## Links

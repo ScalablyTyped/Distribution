@@ -6,10 +6,13 @@ import typings.officeUiFabricReact.iconTypesMod.IIconStyles
 import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Icon/Icon.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/Icon/Icon.styles", "MS_ICON")
   @js.native
@@ -19,7 +22,6 @@ object iconStylesMod {
   @js.native
   val classNames: IProcessedStyleSet[Image] = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/Icon/Icon.styles", "getStyles")
-  @js.native
-  def getStyles(props: IIconStyleProps): IIconStyles = js.native
+  @scala.inline
+  def getStyles(props: IIconStyleProps): IIconStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IIconStyles]
 }

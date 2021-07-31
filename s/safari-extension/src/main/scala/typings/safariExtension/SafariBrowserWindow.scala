@@ -2,11 +2,12 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariBrowserWindow extends SafariEventTarget {
+trait SafariBrowserWindow
+  extends StObject
+     with SafariEventTarget {
   
   def activate(): Unit = js.native
   
@@ -24,9 +25,9 @@ trait SafariBrowserWindow extends SafariEventTarget {
     * @returns A new tab.
     */
   def openTab(): SafariBrowserTab = js.native
-  def openTab(visibility: js.UndefOr[scala.Nothing], index: Double): SafariBrowserTab = js.native
   def openTab(visibility: String): SafariBrowserTab = js.native
   def openTab(visibility: String, index: Double): SafariBrowserTab = js.native
+  def openTab(visibility: Unit, index: Double): SafariBrowserTab = js.native
   
   var tabs: js.Array[SafariBrowserTab] = js.native
   

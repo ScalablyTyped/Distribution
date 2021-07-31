@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * implemented as a VPC Network Peering connection between a service
   * producer&#39;s VPC network and a service consumer&#39;s VPC network.
   */
-@js.native
 trait SchemaConnection extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait SchemaConnection extends StObject {
     * VPC network. `{network}` is the name of the service consumer&#39;s VPC
     * network.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The name of the VPC Network Peering connection that was
     * created by the service producer.
     */
-  var peering: js.UndefOr[String] = js.native
+  var peering: js.UndefOr[String] = js.undefined
   
   /**
     * The name of one or more allocated IP address ranges for this service
@@ -35,13 +33,13 @@ trait SchemaConnection extends StObject {
     * different range when connection is already established will not modify
     * already provisioned service producer subnetworks.
     */
-  var reservedPeeringRanges: js.UndefOr[js.Array[String]] = js.native
+  var reservedPeeringRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. The name of the peering service that&#39;s associated with
     * this connection, in the following format: `services/{service name}`.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaConnection {
   

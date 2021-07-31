@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicaAction extends StObject {
   
   /**
     * The Region of the replica to be removed.
     */
-  var RegionName: typings.awsSdk.dynamodbMod.RegionName = js.native
+  var RegionName: typings.awsSdk.dynamodbMod.RegionName
 }
 object DeleteReplicaAction {
   

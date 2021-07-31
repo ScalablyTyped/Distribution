@@ -6,7 +6,6 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomIFrameMod {
@@ -35,16 +34,15 @@ object zoomIFrameMod {
     def shouldComponentUpdate_MZoomIFrame(nextProps: IZoomIFrameProps): Boolean = js.native
   }
   
-  @js.native
   trait IZoomIFrameProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var iFrameRef: MutableRefObject[HTMLIFrameElement] = js.native
+    var iFrameRef: MutableRefObject[HTMLIFrameElement]
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object IZoomIFrameProps {
     

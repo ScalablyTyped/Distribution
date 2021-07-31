@@ -14,12 +14,10 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentLocationMod.UnmarshalledS
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentDimensionsMod {
   
-  @js.native
   trait SegmentDimensions extends StObject {
     
     /**
@@ -27,36 +25,36 @@ object typesSegmentDimensionsMod {
       */
     var Attributes: js.UndefOr[
         StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The segment behaviors attributes.
       */
-    var Behavior: js.UndefOr[SegmentBehaviors] = js.native
+    var Behavior: js.UndefOr[SegmentBehaviors] = js.undefined
     
     /**
       * The segment demographics attributes.
       */
-    var Demographic: js.UndefOr[SegmentDemographics] = js.native
+    var Demographic: js.UndefOr[SegmentDemographics] = js.undefined
     
     /**
       * The segment location attributes.
       */
-    var Location: js.UndefOr[SegmentLocation] = js.native
+    var Location: js.UndefOr[SegmentLocation] = js.undefined
     
     /**
       * Custom segment metrics.
       */
     var Metrics: js.UndefOr[
         StringDictionary[MetricDimension] | (Iterable[js.Tuple2[String, MetricDimension]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom segment user attributes.
       */
     var UserAttributes: js.UndefOr[
         StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])
-      ] = js.native
+      ] = js.undefined
   }
   object SegmentDimensions {
     
@@ -107,44 +105,45 @@ object typesSegmentDimensionsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentDimensions extends SegmentDimensions {
+  trait UnmarshalledSegmentDimensions
+    extends StObject
+       with SegmentDimensions {
     
     /**
       * Custom segment attributes.
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledAttributeDimension]] = js.native
+    var Attributes_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledAttributeDimension]] = js.undefined
     
     /**
       * The segment behaviors attributes.
       */
     @JSName("Behavior")
-    var Behavior_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentBehaviors] = js.native
+    var Behavior_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentBehaviors] = js.undefined
     
     /**
       * The segment demographics attributes.
       */
     @JSName("Demographic")
-    var Demographic_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentDemographics] = js.native
+    var Demographic_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentDemographics] = js.undefined
     
     /**
       * The segment location attributes.
       */
     @JSName("Location")
-    var Location_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentLocation] = js.native
+    var Location_UnmarshalledSegmentDimensions: js.UndefOr[UnmarshalledSegmentLocation] = js.undefined
     
     /**
       * Custom segment metrics.
       */
     @JSName("Metrics")
-    var Metrics_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledMetricDimension]] = js.native
+    var Metrics_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledMetricDimension]] = js.undefined
     
     /**
       * Custom segment user attributes.
       */
     @JSName("UserAttributes")
-    var UserAttributes_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledAttributeDimension]] = js.native
+    var UserAttributes_UnmarshalledSegmentDimensions: js.UndefOr[StringDictionary[UnmarshalledAttributeDimension]] = js.undefined
   }
   object UnmarshalledSegmentDimensions {
     

@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a container of users, typically used for a database definition object. */
-@js.native
-trait XUsersSupplier extends XInterface {
+trait XUsersSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of users.
     * @returns the users
     */
-  val Users: XNameAccess = js.native
+  val Users: XNameAccess
   
   /**
     * returns the container of users.
     * @returns the users
     */
-  def getUsers(): XNameAccess = js.native
+  def getUsers(): XNameAccess
 }
 object XUsersSupplier {
   

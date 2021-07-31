@@ -3,7 +3,6 @@ package typings.lasso
 import typings.lasso.lassoContextMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lassoPageResultMod {
@@ -20,9 +19,9 @@ object lassoPageResultMod {
     def getBodyHtml(): String = js.native
     def getBodyHtml(data: js.Any): String = js.native
     
-    def getCSSFiles(): js.Array[_] = js.native
+    def getCSSFiles(): js.Array[js.Any] = js.native
     
-    def getCSSUrls(): js.Array[_] = js.native
+    def getCSSUrls(): js.Array[js.Any] = js.native
     
     def getFileByAsyncBundleName(bundleName: String): js.Any = js.native
     
@@ -40,11 +39,11 @@ object lassoPageResultMod {
     
     def getInlineCodeFingerprints(): js.Array[String] = js.native
     
-    def getJavaScriptFiles(): js.Array[_] = js.native
+    def getJavaScriptFiles(): js.Array[js.Any] = js.native
     
-    def getJavaScriptUrls(): js.Array[_] = js.native
+    def getJavaScriptUrls(): js.Array[js.Any] = js.native
     
-    def getOutputFiles(): js.Array[_] = js.native
+    def getOutputFiles(): js.Array[js.Any] = js.native
     
     def getOutputFilesWithInfo(args: js.Any*): Unit = js.native
     

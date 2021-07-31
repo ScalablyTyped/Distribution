@@ -12,256 +12,212 @@ import typings.std.Node
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
-  @JSImport("knockout", "utils.addOrRemoveItem")
+  @JSImport("knockout", "utils")
   @js.native
-  def addOrRemoveItem[T](array: MaybeObservableArray[T], value: T): js.Array[T] = js.native
-  @JSImport("knockout", "utils.addOrRemoveItem")
-  @js.native
-  def addOrRemoveItem[T](array: MaybeObservableArray[T], value: T, included: Boolean): js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("knockout", "utils.arrayFilter")
-  @js.native
-  def arrayFilter[T](array: js.Array[T], predicate: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.Array[T] = js.native
-  @JSImport("knockout", "utils.arrayFilter")
-  @js.native
+  @scala.inline
+  def addOrRemoveItem[T](array: MaybeObservableArray[T], value: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveItem")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def addOrRemoveItem[T](array: MaybeObservableArray[T], value: T, included: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveItem")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], included.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def arrayFilter[T](array: js.Array[T], predicate: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFilter")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
   def arrayFilter[T](
     array: js.Array[T],
     predicate: js.Function2[/* item */ T, /* index */ Double, Boolean],
     predicateOwner: js.Any
-  ): js.Array[T] = js.native
+  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFilter")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], predicateOwner.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("knockout", "utils.arrayFirst")
-  @js.native
-  def arrayFirst[T](array: js.Array[T], predicate: js.Function2[/* item */ T, /* index */ Double, Boolean]): T = js.native
-  @JSImport("knockout", "utils.arrayFirst")
-  @js.native
+  @scala.inline
+  def arrayFirst[T](array: js.Array[T], predicate: js.Function2[/* item */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFirst")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def arrayFirst[T](
     array: js.Array[T],
     predicate: js.Function2[/* item */ T, /* index */ Double, Boolean],
     predicateOwner: js.Any
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayFirst")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], predicateOwner.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("knockout", "utils.arrayForEach")
-  @js.native
-  def arrayForEach[T](array: js.Array[T], action: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = js.native
-  @JSImport("knockout", "utils.arrayForEach")
-  @js.native
+  @scala.inline
+  def arrayForEach[T](array: js.Array[T], action: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayForEach")(array.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def arrayForEach[T](
     array: js.Array[T],
     action: js.Function2[/* item */ T, /* index */ Double, Unit],
     actionOwner: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayForEach")(array.asInstanceOf[js.Any], action.asInstanceOf[js.Any], actionOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.arrayGetDistinctValues")
-  @js.native
-  def arrayGetDistinctValues[T](array: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def arrayGetDistinctValues[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayGetDistinctValues")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("knockout", "utils.arrayIndexOf")
-  @js.native
-  def arrayIndexOf[T](array: MaybeObservableArray[T], item: T): Double = js.native
+  @scala.inline
+  def arrayIndexOf[T](array: MaybeObservableArray[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("knockout", "utils.arrayMap")
-  @js.native
-  def arrayMap[T, U](array: js.Array[T], mapping: js.Function2[/* item */ T, /* index */ Double, U]): js.Array[U] = js.native
-  @JSImport("knockout", "utils.arrayMap")
-  @js.native
+  @scala.inline
+  def arrayMap[T, U](array: js.Array[T], mapping: js.Function2[/* item */ T, /* index */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMap")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  @scala.inline
   def arrayMap[T, U](
     array: js.Array[T],
     mapping: js.Function2[/* item */ T, /* index */ Double, U],
     mappingOwner: js.Any
-  ): js.Array[U] = js.native
+  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMap")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], mappingOwner.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
-  @JSImport("knockout", "utils.arrayPushAll")
-  @js.native
-  def arrayPushAll[T](array: MaybeObservableArray[T], valuesToPush: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def arrayPushAll[T](array: MaybeObservableArray[T], valuesToPush: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPushAll")(array.asInstanceOf[js.Any], valuesToPush.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("knockout", "utils.arrayRemoveItem")
-  @js.native
-  def arrayRemoveItem[T](array: MaybeObservableArray[T], itemToRemove: T): Unit = js.native
+  @scala.inline
+  def arrayRemoveItem[T](array: MaybeObservableArray[T], itemToRemove: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemoveItem")(array.asInstanceOf[js.Any], itemToRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.compareArrays")
-  @js.native
-  def compareArrays[T](a: js.Array[T], b: js.Array[T]): ArrayChanges[T] = js.native
-  @JSImport("knockout", "utils.compareArrays")
-  @js.native
-  def compareArrays[T](a: js.Array[T], b: js.Array[T], dontLimitMoves: Boolean): ArrayChanges[T] = js.native
-  @JSImport("knockout", "utils.compareArrays")
-  @js.native
-  def compareArrays[T](a: js.Array[T], b: js.Array[T], options: CompareArraysOptions): ArrayChanges[T] = js.native
+  @scala.inline
+  def compareArrays[T](a: js.Array[T], b: js.Array[T]): ArrayChanges[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ArrayChanges[T]]
+  @scala.inline
+  def compareArrays[T](a: js.Array[T], b: js.Array[T], dontLimitMoves: Boolean): ArrayChanges[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], dontLimitMoves.asInstanceOf[js.Any])).asInstanceOf[ArrayChanges[T]]
+  @scala.inline
+  def compareArrays[T](a: js.Array[T], b: js.Array[T], options: CompareArraysOptions): ArrayChanges[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayChanges[T]]
   
   object domData {
     
-    @JSImport("knockout", "utils.domData.clear")
+    @JSImport("knockout", "utils.domData")
     @js.native
-    def clear(node: Node): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("knockout", "utils.domData.get")
-    @js.native
-    def get[T](node: Node, key: String): T = js.native
+    @scala.inline
+    def clear(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("knockout", "utils.domData.set")
-    @js.native
-    def set[T](node: Node, key: String, value: T): Unit = js.native
+    @scala.inline
+    def get[T](node: Node, key: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    @scala.inline
+    def set[T](node: Node, key: String, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object domNodeDisposal {
     
-    @JSImport("knockout", "utils.domNodeDisposal.addDisposeCallback")
+    @JSImport("knockout", "utils.domNodeDisposal")
     @js.native
-    def addDisposeCallback(node: Node, callback: js.Function1[/* node */ Node, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("knockout", "utils.domNodeDisposal.cleanExternalData")
-    @js.native
-    def cleanExternalData(node: Node): Unit = js.native
+    @scala.inline
+    def addDisposeCallback(node: Node, callback: js.Function1[/* node */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDisposeCallback")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("knockout", "utils.domNodeDisposal.removeDisposeCallback")
-    @js.native
-    def removeDisposeCallback(node: Node, callback: js.Function1[/* node */ Node, Unit]): Unit = js.native
+    @scala.inline
+    def cleanExternalData(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanExternalData")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def removeDisposeCallback(node: Node, callback: js.Function1[/* node */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDisposeCallback")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("knockout", "utils.extend")
-  @js.native
-  def extend[T, U](target: T, source: U): T with U = js.native
+  @scala.inline
+  def extend[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
   
   @JSImport("knockout", "utils.fieldsIncludedWithJsonPost")
   @js.native
   val fieldsIncludedWithJsonPost: js.Array[String | RegExp] = js.native
   
-  @JSImport("knockout", "utils.getFormFields")
-  @js.native
-  def getFormFields(form: HTMLFormElement, fieldName: String): js.Array[_] = js.native
-  @JSImport("knockout", "utils.getFormFields")
-  @js.native
-  def getFormFields(form: HTMLFormElement, fieldName: RegExp): js.Array[_] = js.native
+  @scala.inline
+  def getFormFields(form: HTMLFormElement, fieldName: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def getFormFields(form: HTMLFormElement, fieldName: RegExp): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormFields")(form.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("knockout", "utils.objectForEach")
-  @js.native
-  def objectForEach(obj: js.Object, action: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = js.native
-  @JSImport("knockout", "utils.objectForEach")
-  @js.native
-  def objectForEach[T](obj: StringDictionary[T], action: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = js.native
+  @scala.inline
+  def objectForEach(obj: js.Object, action: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectForEach")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def objectForEach[T](obj: StringDictionary[T], action: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectForEach")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.parseHtmlFragment")
-  @js.native
-  def parseHtmlFragment(html: String): js.Array[Node] = js.native
-  @JSImport("knockout", "utils.parseHtmlFragment")
-  @js.native
-  def parseHtmlFragment(html: String, documentContext: Document): js.Array[Node] = js.native
+  @scala.inline
+  def parseHtmlFragment(html: String): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(html.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+  @scala.inline
+  def parseHtmlFragment(html: String, documentContext: Document): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(html.asInstanceOf[js.Any], documentContext.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  @JSImport("knockout", "utils.parseJson")
-  @js.native
-  def parseJson(jsonString: String): js.Any = js.native
-  @JSImport("knockout", "utils.parseJson")
-  @js.native
-  def parseJson_T_T[T](jsonString: String): T = js.native
+  @scala.inline
+  def parseJson(jsonString: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("knockout", "utils.peekObservable")
-  @js.native
-  def peekObservable[T](value: MaybeSubscribable[T]): T = js.native
+  @scala.inline
+  def parseJson_T_T[T](jsonString: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(jsonString.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("knockout", "utils.postJson")
-  @js.native
-  def postJson(urlOrForm: String, data: MaybeSubscribable[js.Object]): Unit = js.native
-  @JSImport("knockout", "utils.postJson")
-  @js.native
-  def postJson(urlOrForm: String, data: MaybeSubscribable[js.Object], options: PostJsonOptions): Unit = js.native
-  @JSImport("knockout", "utils.postJson")
-  @js.native
-  def postJson(urlOrForm: HTMLFormElement, data: MaybeSubscribable[js.Object]): Unit = js.native
-  @JSImport("knockout", "utils.postJson")
-  @js.native
-  def postJson(urlOrForm: HTMLFormElement, data: MaybeSubscribable[js.Object], options: PostJsonOptions): Unit = js.native
+  @scala.inline
+  def peekObservable[T](value: MaybeSubscribable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("peekObservable")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("knockout", "utils.range")
-  @js.native
-  def range(min: MaybeSubscribable[Double], max: MaybeSubscribable[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def postJson(urlOrForm: String, data: MaybeSubscribable[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(urlOrForm.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def postJson(urlOrForm: String, data: MaybeSubscribable[js.Object], options: PostJsonOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(urlOrForm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def postJson(urlOrForm: HTMLFormElement, data: MaybeSubscribable[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(urlOrForm.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def postJson(urlOrForm: HTMLFormElement, data: MaybeSubscribable[js.Object], options: PostJsonOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(urlOrForm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.registerEventHandler")
-  @js.native
-  def registerEventHandler(element: Element, eventType: String, handler: EventListener): Unit = js.native
+  @scala.inline
+  def range(min: MaybeSubscribable[Double], max: MaybeSubscribable[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("knockout", "utils.setDomNodeChildrenFromArrayMapping")
-  @js.native
-  def setDomNodeChildrenFromArrayMapping[T](domNode: Node, array: js.Array[T], mapping: MappingFunction[T]): Unit = js.native
-  @JSImport("knockout", "utils.setDomNodeChildrenFromArrayMapping")
-  @js.native
+  @scala.inline
+  def registerEventHandler(element: Element, eventType: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerEventHandler")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setDomNodeChildrenFromArrayMapping[T](domNode: Node, array: js.Array[T], mapping: MappingFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildrenFromArrayMapping")(domNode.asInstanceOf[js.Any], array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setDomNodeChildrenFromArrayMapping[T](
     domNode: Node,
     array: js.Array[T],
     mapping: MappingFunction[T],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callbackAfterAddingNodes: MappingAfterAddFunction[T]
-  ): Unit = js.native
-  @JSImport("knockout", "utils.setDomNodeChildrenFromArrayMapping")
-  @js.native
-  def setDomNodeChildrenFromArrayMapping[T](domNode: Node, array: js.Array[T], mapping: MappingFunction[T], options: MappingOptions[T]): Unit = js.native
-  @JSImport("knockout", "utils.setDomNodeChildrenFromArrayMapping")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildrenFromArrayMapping")(domNode.asInstanceOf[js.Any], array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callbackAfterAddingNodes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setDomNodeChildrenFromArrayMapping[T](domNode: Node, array: js.Array[T], mapping: MappingFunction[T], options: MappingOptions[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildrenFromArrayMapping")(domNode.asInstanceOf[js.Any], array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setDomNodeChildrenFromArrayMapping[T](
     domNode: Node,
     array: js.Array[T],
     mapping: MappingFunction[T],
     options: MappingOptions[T],
     callbackAfterAddingNodes: MappingAfterAddFunction[T]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildrenFromArrayMapping")(domNode.asInstanceOf[js.Any], array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callbackAfterAddingNodes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.setHtml")
-  @js.native
-  def setHtml(node: Node, html: MaybeSubscribable[String]): Unit = js.native
+  @scala.inline
+  def setHtml(node: Node, html: MaybeSubscribable[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHtml")(node.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.setTextContent")
-  @js.native
-  def setTextContent(element: Node, textContent: MaybeSubscribable[String]): Unit = js.native
+  @scala.inline
+  def setTextContent(element: Node, textContent: MaybeSubscribable[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextContent")(element.asInstanceOf[js.Any], textContent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_]): String = js.native
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_], replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_], replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_], replacer: js.Function): String = js.native
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_], replacer: js.Function, space: String): String = js.native
-  @JSImport("knockout", "utils.stringifyJson")
-  @js.native
-  def stringifyJson(data: MaybeSubscribable[_], replacer: js.Function, space: Double): String = js.native
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any], replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any], replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringifyJson(data: MaybeSubscribable[js.Any], replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyJson")(data.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("knockout", "utils.toggleDomNodeCssClass")
-  @js.native
-  def toggleDomNodeCssClass(node: Element, className: String): Unit = js.native
-  @JSImport("knockout", "utils.toggleDomNodeCssClass")
-  @js.native
-  def toggleDomNodeCssClass(node: Element, className: String, shouldHaveClass: Boolean): Unit = js.native
+  @scala.inline
+  def toggleDomNodeCssClass(node: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleDomNodeCssClass")(node.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggleDomNodeCssClass(node: Element, className: String, shouldHaveClass: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleDomNodeCssClass")(node.asInstanceOf[js.Any], className.asInstanceOf[js.Any], shouldHaveClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.triggerEvent")
-  @js.native
-  def triggerEvent(element: Element, eventType: String): Unit = js.native
+  @scala.inline
+  def triggerEvent(element: Element, eventType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("knockout", "utils.unwrapObservable")
-  @js.native
-  def unwrapObservable[T](value: MaybeSubscribable[T]): T = js.native
+  @scala.inline
+  def unwrapObservable[T](value: MaybeSubscribable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapObservable")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @js.native
   trait ArrayChange[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var moved: js.UndefOr[Double] = js.native
+    var moved: js.UndefOr[Double] = js.undefined
     
-    var status: added | deleted | retained = js.native
+    var status: added | deleted | retained
     
-    var value: T = js.native
+    var value: T
   }
   object ArrayChange {
     
@@ -272,7 +228,7 @@ object utils {
     }
     
     @scala.inline
-    implicit class ArrayChangeMutableBuilder[Self <: ArrayChange[_], T] (val x: Self with ArrayChange[T]) extends AnyVal {
+    implicit class ArrayChangeMutableBuilder[Self <: ArrayChange[?], T] (val x: Self & ArrayChange[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -293,12 +249,11 @@ object utils {
   
   type ArrayChanges[T] = js.Array[ArrayChange[T]]
   
-  @js.native
   trait CompareArraysOptions extends StObject {
     
-    var dontLimitMoves: js.UndefOr[Boolean] = js.native
+    var dontLimitMoves: js.UndefOr[Boolean] = js.undefined
     
-    var sparse: js.UndefOr[Boolean] = js.native
+    var sparse: js.UndefOr[Boolean] = js.undefined
   }
   object CompareArraysOptions {
     
@@ -336,20 +291,19 @@ object utils {
   
   type MappingHookFunction[T] = js.Function3[/* nodes */ js.Array[Node], /* index */ Double, /* arrayEntry */ T, Unit]
   
-  @js.native
   trait MappingOptions[T] extends StObject {
     
-    var afterAdd: js.UndefOr[MappingHookFunction[T]] = js.native
+    var afterAdd: js.UndefOr[MappingHookFunction[T]] = js.undefined
     
-    var afterMove: js.UndefOr[MappingHookFunction[T]] = js.native
+    var afterMove: js.UndefOr[MappingHookFunction[T]] = js.undefined
     
-    var afterRemove: js.UndefOr[MappingHookFunction[T]] = js.native
+    var afterRemove: js.UndefOr[MappingHookFunction[T]] = js.undefined
     
-    var beforeMove: js.UndefOr[MappingHookFunction[T]] = js.native
+    var beforeMove: js.UndefOr[MappingHookFunction[T]] = js.undefined
     
-    var beforeRemove: js.UndefOr[MappingHookFunction[T]] = js.native
+    var beforeRemove: js.UndefOr[MappingHookFunction[T]] = js.undefined
     
-    var dontLimitMoves: js.UndefOr[Boolean] = js.native
+    var dontLimitMoves: js.UndefOr[Boolean] = js.undefined
   }
   object MappingOptions {
     
@@ -360,7 +314,7 @@ object utils {
     }
     
     @scala.inline
-    implicit class MappingOptionsMutableBuilder[Self <: MappingOptions[_], T] (val x: Self with MappingOptions[T]) extends AnyVal {
+    implicit class MappingOptionsMutableBuilder[Self <: MappingOptions[?], T] (val x: Self & MappingOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAfterAdd(value: (/* nodes */ js.Array[Node], /* index */ Double, T) => Unit): Self = StObject.set(x, "afterAdd", js.Any.fromFunction3(value))
@@ -400,14 +354,13 @@ object utils {
     }
   }
   
-  @js.native
   trait PostJsonOptions extends StObject {
     
-    var includeFields: js.UndefOr[js.Array[String]] = js.native
+    var includeFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var submitter: js.UndefOr[js.Function1[/* form */ HTMLFormElement, Unit]] = js.native
+    var submitter: js.UndefOr[js.Function1[/* form */ HTMLFormElement, Unit]] = js.undefined
   }
   object PostJsonOptions {
     

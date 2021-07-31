@@ -3,7 +3,6 @@ package typings.twilio.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -40,9 +39,9 @@ trait AccountResource extends ListMappedResource[AccountInstance] {
   
   var outgoingCallerIds: OutgoingCallerIdResource = js.native
   
-  def put(args: js.Any): Promise[_] = js.native
-  def put(args: js.Any, callback: RequestCallback): Promise[_] = js.native
-  def put(callback: RequestCallback): Promise[_] = js.native
+  def put(args: js.Any): Promise[js.Any] = js.native
+  def put(args: js.Any, callback: RequestCallback): Promise[js.Any] = js.native
+  def put(callback: RequestCallback): Promise[js.Any] = js.native
   @JSName("put")
   var put_Original: RestMethod = js.native
   
@@ -58,9 +57,9 @@ trait AccountResource extends ListMappedResource[AccountInstance] {
   
   var transcriptions: TranscriptionResource = js.native
   
-  def update(args: js.Any): Promise[_] = js.native
-  def update(args: js.Any, callback: RequestCallback): Promise[_] = js.native
-  def update(callback: RequestCallback): Promise[_] = js.native
+  def update(args: js.Any): Promise[js.Any] = js.native
+  def update(args: js.Any, callback: RequestCallback): Promise[js.Any] = js.native
+  def update(callback: RequestCallback): Promise[js.Any] = js.native
   @JSName("update")
   var update_Original: RestMethod = js.native
   

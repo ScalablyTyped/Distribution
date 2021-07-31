@@ -2,25 +2,23 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cvv extends StObject {
   
-  var cardholderName: js.UndefOr[String] = js.native
+  var cardholderName: js.UndefOr[String] = js.undefined
   
-  var cvv: js.UndefOr[String] = js.native
+  var cvv: js.UndefOr[String] = js.undefined
   
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
-  var expirationMonth: js.UndefOr[String] = js.native
+  var expirationMonth: js.UndefOr[String] = js.undefined
   
-  var expirationYear: js.UndefOr[String] = js.native
+  var expirationYear: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object Cvv {
   

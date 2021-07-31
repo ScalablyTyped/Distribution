@@ -4,18 +4,16 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.SourceReference> */
-@js.native
 trait PartialSourceReference extends StObject {
   
-  var character: js.UndefOr[ModelToObject[Double] | Double] = js.native
+  var character: js.UndefOr[ModelToObject[Double] | Double] = js.undefined
   
-  var fileName: js.UndefOr[ModelToObject[String] | String] = js.native
+  var fileName: js.UndefOr[ModelToObject[String] | String] = js.undefined
   
-  var line: js.UndefOr[ModelToObject[Double] | Double] = js.native
+  var line: js.UndefOr[ModelToObject[Double] | Double] = js.undefined
 }
 object PartialSourceReference {
   

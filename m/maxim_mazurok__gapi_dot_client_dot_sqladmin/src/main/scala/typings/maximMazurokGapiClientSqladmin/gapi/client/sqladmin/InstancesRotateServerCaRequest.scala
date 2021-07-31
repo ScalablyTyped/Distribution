@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesRotateServerCaRequest extends StObject {
   
   /** Contains details about the rotate server CA operation. */
-  var rotateServerCaContext: js.UndefOr[RotateServerCaContext] = js.native
+  var rotateServerCaContext: js.UndefOr[RotateServerCaContext] = js.undefined
 }
 object InstancesRotateServerCaRequest {
   

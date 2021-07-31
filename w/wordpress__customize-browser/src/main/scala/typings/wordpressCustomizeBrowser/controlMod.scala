@@ -13,7 +13,6 @@ import typings.wordpressCustomizeBrowser.settingMod.Setting
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlMod {
@@ -60,9 +59,9 @@ object controlMod {
     var id: String = js.native
     
     def initialize(): Unit = js.native
-    def initialize(id: js.UndefOr[scala.Nothing], options: ControlParams): Unit = js.native
     def initialize(id: String): Unit = js.native
     def initialize(id: String, options: ControlParams): Unit = js.native
+    def initialize(id: Unit, options: ControlParams): Unit = js.native
     
     def linkElements(): Unit = js.native
     
@@ -107,32 +106,31 @@ object controlMod {
     def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ControlParams extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
-    var instanceNumber: js.UndefOr[Double] = js.native
+    var instanceNumber: js.UndefOr[Double] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var params: js.UndefOr[ControlParams] = js.native
+    var params: js.UndefOr[ControlParams] = js.undefined
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var section: String = js.native
+    var section: String
     
-    var setting: js.UndefOr[String | Setting[_]] = js.native
+    var setting: js.UndefOr[String | Setting[js.Any]] = js.undefined
     
-    var settings: ControlSettings = js.native
+    var settings: ControlSettings
     
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
   }
   object ControlParams {
     
@@ -188,7 +186,7 @@ object controlMod {
       def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetting(value: String | Setting[_]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      def setSetting(value: String | Setting[js.Any]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
@@ -207,5 +205,5 @@ object controlMod {
     }
   }
   
-  type ControlSettings = ((Record[String, Setting[_] | Value[_]]) | (js.Array[Setting[_] | Value[_]])) with Default
+  type ControlSettings = ((Record[String, Setting[js.Any] | Value[js.Any]]) | (js.Array[Setting[js.Any] | Value[js.Any]])) & Default
 }

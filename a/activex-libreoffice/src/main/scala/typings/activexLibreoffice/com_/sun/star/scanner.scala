@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scanner {
@@ -57,14 +56,13 @@ object scanner {
   }
   
   /** a scanner context is an identifier for a specific scanner device */
-  @js.native
   trait ScannerContext extends StObject {
     
     /** InternalData contains service private data and must not be changed */
-    var InternalData: Double = js.native
+    var InternalData: Double
     
     /** ScannerName contains a user readable identification */
-    var ScannerName: String = js.native
+    var ScannerName: String
   }
   object ScannerContext {
     
@@ -86,11 +84,12 @@ object scanner {
   }
   
   /** A {@link ScannerException} gets thrown if an object of type {@link XScannerManager} could not complete a specific action. */
-  @js.native
-  trait ScannerException extends Exception {
+  trait ScannerException
+    extends StObject
+       with Exception {
     
     /** Error: contains the specific reason for failure */
-    var Error: ScanError = js.native
+    var Error: ScanError
   }
   object ScannerException {
     
@@ -111,29 +110,30 @@ object scanner {
   /** {@link ScannerManager} provides a simple method to access scanner devices (or other image producing devices) */
   type ScannerManager = XScannerManager2
   
-  @js.native
-  trait XScannerManager extends XInterface {
+  trait XScannerManager
+    extends StObject
+       with XInterface {
     
     /** returns all available scanner devices */
-    val AvailableScanners: SafeArray[ScannerContext] = js.native
+    val AvailableScanners: SafeArray[ScannerContext]
     
     /** produce some kind of User Interface to let the user have a preview, configure the scan area, etc., it returns FALSE if user cancelled this process */
-    def configureScanner(scannerContext: js.Array[ScannerContext]): Boolean = js.native
+    def configureScanner(scannerContext: js.Array[ScannerContext]): Boolean
     
     /** returns all available scanner devices */
-    def getAvailableScanners(): SafeArray[ScannerContext] = js.native
+    def getAvailableScanners(): SafeArray[ScannerContext]
     
     /** get the image after completion of scan */
-    def getBitmap(scannerContext: ScannerContext): XBitmap = js.native
+    def getBitmap(scannerContext: ScannerContext): XBitmap
     
     /** get the state of scanning after completion of scan */
-    def getError(scannerContext: ScannerContext): ScanError = js.native
+    def getError(scannerContext: ScannerContext): ScanError
     
     /**
       * start the scanning process listener will be called when scan is complete the EventObject of the disposing call will contain the {@link ScannerManager}
       * if the scan was successful, an empty interface otherwise
       */
-    def startScan(scannerContext: ScannerContext, listener: XEventListener): Unit = js.native
+    def startScan(scannerContext: ScannerContext, listener: XEventListener): Unit
   }
   object XScannerManager {
     
@@ -180,14 +180,15 @@ object scanner {
     * Extension of {@link XScannerManager} .
     * @since LibreOffice 3.5
     */
-  @js.native
-  trait XScannerManager2 extends XScannerManager {
+  trait XScannerManager2
+    extends StObject
+       with XScannerManager {
     
     /**
       * produce some kind of User Interface to let the user have a preview, configure the scan area, etc., it, and scan it returns FALSE if user cancelled
       * this process
       */
-    def configureScannerAndScan(scannerContext: js.Array[ScannerContext], listener: XEventListener): Boolean = js.native
+    def configureScannerAndScan(scannerContext: js.Array[ScannerContext], listener: XEventListener): Boolean
   }
   object XScannerManager2 {
     

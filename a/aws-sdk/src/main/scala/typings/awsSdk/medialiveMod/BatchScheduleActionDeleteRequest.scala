@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchScheduleActionDeleteRequest extends StObject {
   
   /**
     * A list of schedule actions to delete.
     */
-  var ActionNames: listOfString = js.native
+  var ActionNames: listOfString
 }
 object BatchScheduleActionDeleteRequest {
   

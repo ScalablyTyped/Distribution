@@ -10,16 +10,15 @@ import typings.rcTable.rowMod.FooterRowProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
   
   object default {
     
-    @JSImport("antd/lib/table", JSImport.Default)
-    @js.native
-    def apply[RecordType /* <: js.Object */](props: TableProps[RecordType]): Element = js.native
+    @scala.inline
+    def apply[RecordType /* <: js.Object */](props: TableProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/table", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -29,18 +28,16 @@ object tableMod {
       * So HOC will not work on this.
       */
     /* was `typeof imported_Column.default` */
-    @JSImport("antd/lib/table", "default.Column")
-    @js.native
-    def Column[RecordType](_underscore: ColumnProps[RecordType]): Null = js.native
+    @scala.inline
+    def Column[RecordType](_underscore: ColumnProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_ColumnGroup.default` */
-    @JSImport("antd/lib/table", "default.ColumnGroup")
-    @js.native
-    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = js.native
+    @scala.inline
+    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     @JSImport("antd/lib/table", "default.SELECTION_ALL")
     @js.native

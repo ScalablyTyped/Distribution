@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Storage.IStorageFolder
 import typings.winrtUwp.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the destination of logged messages from LoggingChannel instances. */

@@ -4,20 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloReportingProtobuf.protobufMod.google.protobuf.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReport extends StObject {
   
   /** Report endTime */
-  var endTime: js.UndefOr[ITimestamp | Null] = js.native
+  var endTime: js.UndefOr[ITimestamp | Null] = js.undefined
   
   /** Report header */
-  var header: js.UndefOr[IReportHeader | Null] = js.native
+  var header: js.UndefOr[IReportHeader | Null] = js.undefined
   
   /** Report tracesPerQuery */
-  var tracesPerQuery: js.UndefOr[StringDictionary[ITracesAndStats] | Null] = js.native
+  var tracesPerQuery: js.UndefOr[StringDictionary[ITracesAndStats] | Null] = js.undefined
 }
 object IReport {
   

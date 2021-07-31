@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,11 @@ object mod {
   
   type Toggle = Component[ToggleProps, js.Object, js.Any]
   
-  @js.native
   trait ToggleIcons extends StObject {
     
-    var checked: js.UndefOr[ReactNode] = js.native
+    var checked: js.UndefOr[ReactNode] = js.undefined
     
-    var unchecked: js.UndefOr[ReactNode] = js.native
+    var unchecked: js.UndefOr[ReactNode] = js.undefined
   }
   object ToggleIcons {
     
@@ -50,10 +48,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ToggleProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait ToggleProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
-    var icons: js.UndefOr[Boolean | ToggleIcons] = js.native
+    var icons: js.UndefOr[Boolean | ToggleIcons] = js.undefined
   }
   object ToggleProps {
     

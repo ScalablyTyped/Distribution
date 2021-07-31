@@ -7,33 +7,31 @@ import typings.std.ArrayLike
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codecMod {
   
-  @JSImport("rfc4648/lib/src/codec", "parse")
+  @JSImport("rfc4648/lib/src/codec", JSImport.Namespace)
   @js.native
-  def parse(string: String, encoding: Encoding): Uint8Array = js.native
-  @JSImport("rfc4648/lib/src/codec", "parse")
-  @js.native
-  def parse(string: String, encoding: Encoding, opts: ParseOptions): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rfc4648/lib/src/codec", "stringify")
-  @js.native
-  def stringify(data: ArrayLike[Double], encoding: Encoding): String = js.native
-  @JSImport("rfc4648/lib/src/codec", "stringify")
-  @js.native
-  def stringify(data: ArrayLike[Double], encoding: Encoding, opts: StringifyOptions): String = js.native
+  @scala.inline
+  def parse(string: String, encoding: Encoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def parse(string: String, encoding: Encoding, opts: ParseOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @js.native
+  @scala.inline
+  def stringify(data: ArrayLike[Double], encoding: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: ArrayLike[Double], encoding: Encoding, opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Encoding extends StObject {
     
-    var bits: Double = js.native
+    var bits: Double
     
-    var chars: String = js.native
+    var chars: String
     
-    var codes: js.UndefOr[StringDictionary[Double]] = js.native
+    var codes: js.UndefOr[StringDictionary[Double]] = js.undefined
   }
   object Encoding {
     
@@ -60,12 +58,11 @@ object codecMod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var loose: js.UndefOr[Boolean] = js.native
+    var loose: js.UndefOr[Boolean] = js.undefined
     
-    var out: js.UndefOr[Instantiable1[/* size */ Double, NumberDictionary[Double]]] = js.native
+    var out: js.UndefOr[Instantiable1[/* size */ Double, NumberDictionary[Double]]] = js.undefined
   }
   object ParseOptions {
     
@@ -92,10 +89,9 @@ object codecMod {
     }
   }
   
-  @js.native
   trait StringifyOptions extends StObject {
     
-    var pad: js.UndefOr[Boolean] = js.native
+    var pad: js.UndefOr[Boolean] = js.undefined
   }
   object StringifyOptions {
     

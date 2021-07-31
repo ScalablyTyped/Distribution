@@ -7,7 +7,6 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rascal", "Vhost")
@@ -50,10 +49,13 @@ class Vhost () extends EventEmitter {
 /* static members */
 object Vhost {
   
-  @JSImport("rascal", "Vhost.create")
+  @JSImport("rascal", "Vhost")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     config: VhostConfig,
     next: js.Function2[/* err */ js.UndefOr[Error], /* vhost */ js.UndefOr[this.type], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

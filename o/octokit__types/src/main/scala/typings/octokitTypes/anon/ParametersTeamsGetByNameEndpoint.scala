@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.TeamsGetByNameResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsGetByNameEndpoint extends StObject {
   
-  var parameters: TeamsGetByNameEndpoint = js.native
+  var parameters: TeamsGetByNameEndpoint
   
-  var request: TeamsGetByNameRequestOptions = js.native
+  var request: TeamsGetByNameRequestOptions
   
-  var response: OctokitResponse[TeamsGetByNameResponseData] = js.native
+  var response: OctokitResponse[TeamsGetByNameResponseData]
 }
 object ParametersTeamsGetByNameEndpoint {
   

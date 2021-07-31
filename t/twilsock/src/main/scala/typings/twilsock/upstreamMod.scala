@@ -7,7 +7,6 @@ import typings.twilsock.packetinterfaceMod.PacketInterface
 import typings.twilsock.twilsockMod.TwilsockImpl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object upstreamMod {
@@ -33,7 +32,7 @@ object upstreamMod {
       * @returns {Promise<Result>} Result from remote side
       */
     def send(method: String, url: String): js.Promise[Result] = js.native
-    def send(method: String, url: String, headers: js.UndefOr[scala.Nothing], body: js.Any): js.Promise[Result] = js.native
+    def send(method: String, url: String, headers: Unit, body: js.Any): js.Promise[Result] = js.native
     def send(method: String, url: String, headers: Headers): js.Promise[Result] = js.native
     def send(method: String, url: String, headers: Headers, body: js.Any): js.Promise[Result] = js.native
     
@@ -46,14 +45,13 @@ object upstreamMod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
   trait Result extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var status: Code = js.native
+    var status: Code
   }
   object Result {
     

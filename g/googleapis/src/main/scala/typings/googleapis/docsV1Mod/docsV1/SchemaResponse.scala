@@ -2,34 +2,32 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single response from an update.
   */
-@js.native
 trait SchemaResponse extends StObject {
   
   /**
     * The result of creating a named range.
     */
-  var createNamedRange: js.UndefOr[SchemaCreateNamedRangeResponse] = js.native
+  var createNamedRange: js.UndefOr[SchemaCreateNamedRangeResponse] = js.undefined
   
   /**
     * The result of inserting an inline image.
     */
-  var insertInlineImage: js.UndefOr[SchemaInsertInlineImageResponse] = js.native
+  var insertInlineImage: js.UndefOr[SchemaInsertInlineImageResponse] = js.undefined
   
   /**
     * The result of inserting an inline Google Sheets chart.
     */
-  var insertInlineSheetsChart: js.UndefOr[SchemaInsertInlineSheetsChartResponse] = js.native
+  var insertInlineSheetsChart: js.UndefOr[SchemaInsertInlineSheetsChartResponse] = js.undefined
   
   /**
     * The result of replacing text.
     */
-  var replaceAllText: js.UndefOr[SchemaReplaceAllTextResponse] = js.native
+  var replaceAllText: js.UndefOr[SchemaReplaceAllTextResponse] = js.undefined
 }
 object SchemaResponse {
   

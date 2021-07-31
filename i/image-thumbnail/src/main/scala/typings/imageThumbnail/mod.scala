@@ -7,58 +7,48 @@ import typings.node.Buffer
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: String): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: String, options: responseTypebase64Options): js.Promise[String] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: String, options: responseTypebufferOptions): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Uri): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Uri, options: responseTypebase64Options): js.Promise[String] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Uri, options: responseTypebufferOptions): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Buffer, options: responseTypebase64Options): js.Promise[String] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: Buffer, options: responseTypebufferOptions): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: ReadStream): js.Promise[Buffer] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: ReadStream, options: responseTypebase64Options): js.Promise[String] = js.native
-  @JSImport("image-thumbnail", JSImport.Namespace)
-  @js.native
-  def apply(src: ReadStream, options: responseTypebufferOptions): js.Promise[Buffer] = js.native
+  @scala.inline
+  def apply(src: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: String, options: responseTypebase64Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(src: String, options: responseTypebufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: Uri): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: Uri, options: responseTypebase64Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(src: Uri, options: responseTypebufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: Buffer, options: responseTypebase64Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(src: Buffer, options: responseTypebufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: ReadStream): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def apply(src: ReadStream, options: responseTypebase64Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(src: ReadStream, options: responseTypebufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
+  @JSImport("image-thumbnail", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

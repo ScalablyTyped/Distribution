@@ -2,19 +2,19 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesRecoveryParams extends GenericParams {
+trait IndicesRecoveryParams
+  extends StObject
+     with GenericParams {
   
-  var activeOnly: js.UndefOr[Boolean] = js.native
+  var activeOnly: js.UndefOr[Boolean] = js.undefined
   
-  var detailed: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.undefined
   
-  var human: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
 }
 object IndicesRecoveryParams {
   

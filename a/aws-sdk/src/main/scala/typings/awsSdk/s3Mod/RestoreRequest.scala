@@ -2,46 +2,44 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreRequest extends StObject {
   
   /**
     * Lifetime of the active copy in days. Do not use with restores that specify OutputLocation. The Days element is required for regular restores, and must not be provided for select requests.
     */
-  var Days: js.UndefOr[typings.awsSdk.s3Mod.Days] = js.native
+  var Days: js.UndefOr[typings.awsSdk.s3Mod.Days] = js.undefined
   
   /**
     * The optional description for the job.
     */
-  var Description: js.UndefOr[typings.awsSdk.s3Mod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.s3Mod.Description] = js.undefined
   
   /**
     * S3 Glacier related parameters pertaining to this job. Do not use with restores that specify OutputLocation.
     */
-  var GlacierJobParameters: js.UndefOr[typings.awsSdk.s3Mod.GlacierJobParameters] = js.native
+  var GlacierJobParameters: js.UndefOr[typings.awsSdk.s3Mod.GlacierJobParameters] = js.undefined
   
   /**
     * Describes the location where the restore job's output is stored.
     */
-  var OutputLocation: js.UndefOr[typings.awsSdk.s3Mod.OutputLocation] = js.native
+  var OutputLocation: js.UndefOr[typings.awsSdk.s3Mod.OutputLocation] = js.undefined
   
   /**
     * Describes the parameters for Select job types.
     */
-  var SelectParameters: js.UndefOr[typings.awsSdk.s3Mod.SelectParameters] = js.native
+  var SelectParameters: js.UndefOr[typings.awsSdk.s3Mod.SelectParameters] = js.undefined
   
   /**
     * Retrieval tier at which the restore will be processed.
     */
-  var Tier: js.UndefOr[typings.awsSdk.s3Mod.Tier] = js.native
+  var Tier: js.UndefOr[typings.awsSdk.s3Mod.Tier] = js.undefined
   
   /**
     * Type of restore request.
     */
-  var Type: js.UndefOr[RestoreRequestType] = js.native
+  var Type: js.UndefOr[RestoreRequestType] = js.undefined
 }
 object RestoreRequest {
   

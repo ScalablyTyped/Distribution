@@ -2,19 +2,17 @@ package typings.jqueryContextmenu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Duration extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var hide: js.UndefOr[String] = js.native
+    var hide: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[String] = js.native
+    var show: js.UndefOr[String] = js.undefined
   }
   object Duration {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Hide extends StObject {
     
-    var hide: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.native
+    var hide: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.undefined
     
-    var show: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.native
+    var show: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.undefined
   }
   object Hide {
     

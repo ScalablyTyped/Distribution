@@ -10,9 +10,9 @@ Helper for creating "exposed" promise object (with resolve & reject methods).
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/deferred |
 | Keywords           | promise, resolve, reject, defer |
-| # releases         | 9 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 18928625 |
+| # downloads        | 24225398 |
 | # stars            | 0 |
 
 ## Links

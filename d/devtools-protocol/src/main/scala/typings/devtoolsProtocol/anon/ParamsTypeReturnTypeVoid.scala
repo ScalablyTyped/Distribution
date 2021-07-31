@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Debugger.RemoveBreakpointRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamsTypeReturnTypeVoid extends StObject {
   
-  var paramsType: js.Array[RemoveBreakpointRequest] = js.native
+  var paramsType: js.Array[RemoveBreakpointRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object ParamsTypeReturnTypeVoid {
   

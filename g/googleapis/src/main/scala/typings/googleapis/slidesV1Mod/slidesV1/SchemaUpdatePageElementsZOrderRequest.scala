@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * elements on the page from back to front. The page element in the front may
   * cover the elements that are behind it.
   */
-@js.native
 trait SchemaUpdatePageElementsZOrderRequest extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaUpdatePageElementsZOrderRequest extends StObject {
     * operation on multiple page elements, the relative Z-orders within these
     * page elements before the operation is maintained.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * The object IDs of the page elements to update.  All the page elements
     * must be on the same page and must not be grouped.
     */
-  var pageElementObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var pageElementObjectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUpdatePageElementsZOrderRequest {
   

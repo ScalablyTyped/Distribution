@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Association class belongsTo method
   */
-@js.native
-trait AssociationOptionsBelongsTo extends AssociationOptions {
+trait AssociationOptionsBelongsTo
+  extends StObject
+     with AssociationOptions {
   
   /**
     * A string or a data type to represent the identifier in the table
     */
-  var keyType: js.UndefOr[DataTypeAbstract] = js.native
+  var keyType: js.UndefOr[DataTypeAbstract] = js.undefined
   
   /**
     * The name of the field to use as the key for the association in the target table. Defaults to the primary
     * key of the target table
     */
-  var targetKey: js.UndefOr[String] = js.native
+  var targetKey: js.UndefOr[String] = js.undefined
 }
 object AssociationOptionsBelongsTo {
   

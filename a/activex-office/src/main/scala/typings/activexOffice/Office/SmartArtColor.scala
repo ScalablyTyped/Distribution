@@ -2,28 +2,26 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartArtColor extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Category: String = js.native
+  val Category: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Description: String = js.native
+  val Description: String
   
-  val Id: String = js.native
+  val Id: String
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.SmartArtColor_typekey")
-  var OfficeDotSmartArtColor_typekey: SmartArtColor = js.native
+  var OfficeDotSmartArtColor_typekey: SmartArtColor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object SmartArtColor {
   

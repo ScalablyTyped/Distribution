@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationSetReputationOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to enable or disable reputation metric tracking for.
     */
-  var ConfigurationSetName: typings.awsSdk.pinpointemailMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.pinpointemailMod.ConfigurationSetName
   
   /**
     * If true, tracking of reputation metrics is enabled for the configuration set. If false, tracking of reputation metrics is disabled for the configuration set.
     */
-  var ReputationMetricsEnabled: js.UndefOr[Enabled] = js.native
+  var ReputationMetricsEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object PutConfigurationSetReputationOptionsRequest {
   

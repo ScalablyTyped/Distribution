@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an end pop-up mode event. */
-@js.native
-trait EndPopupModeEvent extends EventObject {
+trait EndPopupModeEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the new position of the floating window in frame coordinates if bTearoff is `TRUE` */
-  var FloatingPosition: Point = js.native
+  var FloatingPosition: Point
   
   /**
     * specifies how the pop-up mode was ended `TRUE` means the window should be teared-off and positioned at FloatingPosition `FALSE` means the window was
     * closed
     */
-  var bTearoff: Boolean = js.native
+  var bTearoff: Boolean
 }
 object EndPopupModeEvent {
   

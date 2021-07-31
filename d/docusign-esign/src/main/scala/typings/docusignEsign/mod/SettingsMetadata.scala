@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettingsMetadata extends StObject {
   
   /**
     * When **true**, indicates compliance with United States Food and Drug Administration (FDA) regulations on electronic records and electronic signatures (ERES).
     */
-  var is21CFRPart11: js.UndefOr[String] = js.native
+  var is21CFRPart11: js.UndefOr[String] = js.undefined
   
   /**
     * An array of option strings supported by this setting.
     */
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether the property is editable. Valid values are:
@@ -24,22 +22,22 @@ trait SettingsMetadata extends StObject {
     * - `editable`
     * - `read_only`
     */
-  var rights: js.UndefOr[String] = js.native
+  var rights: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var uiHint: js.UndefOr[String] = js.native
+  var uiHint: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var uiOrder: js.UndefOr[String] = js.native
+  var uiOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var uiType: js.UndefOr[String] = js.native
+  var uiType: js.UndefOr[String] = js.undefined
 }
 object SettingsMetadata {
   

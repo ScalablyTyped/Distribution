@@ -2,17 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientAction extends StObject {
   
-  def get_id(): Double = js.native
+  def get_id(): Double
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def get_path(): ObjectPath = js.native
+  def get_path(): ObjectPath
 }
 object ClientAction {
   

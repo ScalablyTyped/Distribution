@@ -3,30 +3,28 @@ package typings.textBuffer.mod.global.TextBuffer
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The structures that are passed to the user by Atom following specific API calls. */
 object Structures {
   
-  @js.native
   trait BufferScanResult extends StObject {
     
-    var buffer: typings.textBuffer.mod.global.TextBuffer.TextBuffer = js.native
+    var buffer: typings.textBuffer.mod.global.TextBuffer.TextBuffer
     
-    var lineText: String = js.native
+    var lineText: String
     
-    var `match`: RegExpExecArray = js.native
+    var `match`: RegExpExecArray
     
-    var matchText: String = js.native
+    var matchText: String
     
-    var range: Range = js.native
+    var range: Range
     
-    def replace(replacementText: String): Unit = js.native
+    def replace(replacementText: String): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
   }
   object BufferScanResult {
     
@@ -75,12 +73,13 @@ object Structures {
     }
   }
   
-  @js.native
-  trait ContextualBufferScanResult extends BufferScanResult {
+  trait ContextualBufferScanResult
+    extends StObject
+       with BufferScanResult {
     
-    var leadingContextLines: js.Array[String] = js.native
+    var leadingContextLines: js.Array[String]
     
-    var trailingContextLines: js.Array[String] = js.native
+    var trailingContextLines: js.Array[String]
   }
   object ContextualBufferScanResult {
     
@@ -119,22 +118,21 @@ object Structures {
     }
   }
   
-  @js.native
   trait TextChange extends StObject {
     
-    var newExtent: Point = js.native
+    var newExtent: Point
     
-    var newRange: Range = js.native
+    var newRange: Range
     
-    var newText: String = js.native
+    var newText: String
     
-    var oldExtent: Point = js.native
+    var oldExtent: Point
     
-    var oldRange: Range = js.native
+    var oldRange: Range
     
-    var oldText: String = js.native
+    var oldText: String
     
-    var start: Point = js.native
+    var start: Point
   }
   object TextChange {
     

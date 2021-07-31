@@ -9,23 +9,21 @@ import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridPivotGridCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object excelExporter {
   
-  @js.native
   trait CellAddress extends StObject {
     
     /**
       * [descr:CellAddress.column]
       */
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CellAddress.row]
       */
-    var row: js.UndefOr[Double] = js.native
+    var row: js.UndefOr[Double] = js.undefined
   }
   object CellAddress {
     
@@ -52,18 +50,17 @@ object excelExporter {
     }
   }
   
-  @js.native
   trait CellRange extends StObject {
     
     /**
       * [descr:CellRange.from]
       */
-    var from: js.UndefOr[CellAddress] = js.native
+    var from: js.UndefOr[CellAddress] = js.undefined
     
     /**
       * [descr:CellRange.to]
       */
-    var to: js.UndefOr[CellAddress] = js.native
+    var to: js.UndefOr[CellAddress] = js.undefined
   }
   object CellRange {
     
@@ -90,43 +87,42 @@ object excelExporter {
     }
   }
   
-  @js.native
   trait ExcelDataGridCell extends StObject {
     
     /**
       * [descr:ExcelDataGridCell.column]
       */
-    var column: js.UndefOr[dxDataGridColumn] = js.native
+    var column: js.UndefOr[dxDataGridColumn] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.groupIndex]
       */
-    var groupIndex: js.UndefOr[Double] = js.native
+    var groupIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.groupSummaryItems]
       */
-    var groupSummaryItems: js.UndefOr[js.Array[NameValue]] = js.native
+    var groupSummaryItems: js.UndefOr[js.Array[NameValue]] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.rowType]
       */
-    var rowType: js.UndefOr[String] = js.native
+    var rowType: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.totalSummaryItemName]
       */
-    var totalSummaryItemName: js.UndefOr[String] = js.native
+    var totalSummaryItemName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExcelDataGridCell.value]
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ExcelDataGridCell {
     
@@ -186,28 +182,27 @@ object excelExporter {
     }
   }
   
-  @js.native
   trait ExcelExportBaseProps extends StObject {
     
     /**
       * [descr:ExcelExportBaseProps.keepColumnWidths]
       */
-    var keepColumnWidths: js.UndefOr[Boolean] = js.native
+    var keepColumnWidths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExcelExportBaseProps.loadPanel]
       */
-    var loadPanel: js.UndefOr[ExportLoadPanel] = js.native
+    var loadPanel: js.UndefOr[ExportLoadPanel] = js.undefined
     
     /**
       * [descr:ExcelExportBaseProps.topLeftCell]
       */
-    var topLeftCell: js.UndefOr[CellAddress | String] = js.native
+    var topLeftCell: js.UndefOr[CellAddress | String] = js.undefined
     
     /**
       * [descr:ExcelExportBaseProps.worksheet]
       */
-    var worksheet: js.UndefOr[js.Any] = js.native
+    var worksheet: js.UndefOr[js.Any] = js.undefined
   }
   object ExcelExportBaseProps {
     
@@ -246,28 +241,29 @@ object excelExporter {
     }
   }
   
-  @js.native
-  trait ExcelExportDataGridProps extends ExcelExportBaseProps {
+  trait ExcelExportDataGridProps
+    extends StObject
+       with ExcelExportBaseProps {
     
     /**
       * [descr:ExcelExportDataGridProps.autoFilterEnabled]
       */
-    var autoFilterEnabled: js.UndefOr[Boolean] = js.native
+    var autoFilterEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExcelExportDataGridProps.component]
       */
-    var component: js.UndefOr[dxDataGrid] = js.native
+    var component: js.UndefOr[dxDataGrid] = js.undefined
     
     /**
       * [descr:ExcelExportDataGridProps.customizeCell]
       */
-    var customizeCell: js.UndefOr[js.Function1[/* options */ ExcelCell, _]] = js.native
+    var customizeCell: js.UndefOr[js.Function1[/* options */ ExcelCell, js.Any]] = js.undefined
     
     /**
       * [descr:ExcelExportDataGridProps.selectedRowsOnly]
       */
-    var selectedRowsOnly: js.UndefOr[Boolean] = js.native
+    var selectedRowsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ExcelExportDataGridProps {
     
@@ -293,7 +289,7 @@ object excelExporter {
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
       @scala.inline
-      def setCustomizeCell(value: /* options */ ExcelCell => _): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      def setCustomizeCell(value: /* options */ ExcelCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
@@ -306,18 +302,19 @@ object excelExporter {
     }
   }
   
-  @js.native
-  trait ExcelExportPivotGridProps extends ExcelExportBaseProps {
+  trait ExcelExportPivotGridProps
+    extends StObject
+       with ExcelExportBaseProps {
     
     /**
       * [descr:ExcelExportPivotGridProps.component]
       */
-    var component: js.UndefOr[dxPivotGrid] = js.native
+    var component: js.UndefOr[dxPivotGrid] = js.undefined
     
     /**
       * [descr:ExcelExportPivotGridProps.customizeCell]
       */
-    var customizeCell: js.UndefOr[js.Function1[/* options */ PivotCell, _]] = js.native
+    var customizeCell: js.UndefOr[js.Function1[/* options */ PivotCell, js.Any]] = js.undefined
   }
   object ExcelExportPivotGridProps {
     
@@ -337,30 +334,31 @@ object excelExporter {
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
       @scala.inline
-      def setCustomizeCell(value: /* options */ PivotCell => _): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      def setCustomizeCell(value: /* options */ PivotCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
     }
   }
   
-  @js.native
-  trait ExcelPivotGridCell extends dxPivotGridPivotGridCell {
+  trait ExcelPivotGridCell
+    extends StObject
+       with dxPivotGridPivotGridCell {
     
     /**
       * [descr:ExcelPivotGridCell.area]
       */
-    var area: js.UndefOr[String] = js.native
+    var area: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExcelPivotGridCell.columnIndex]
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ExcelPivotGridCell.rowIndex]
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object ExcelPivotGridCell {
     
@@ -393,53 +391,52 @@ object excelExporter {
     }
   }
   
-  @js.native
   trait ExportLoadPanel extends StObject {
     
     /**
       * [descr:ExportLoadPanel.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.height]
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.indicatorSrc]
       */
-    var indicatorSrc: js.UndefOr[String] = js.native
+    var indicatorSrc: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.shading]
       */
-    var shading: js.UndefOr[Boolean] = js.native
+    var shading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.shadingColor]
       */
-    var shadingColor: js.UndefOr[String] = js.native
+    var shadingColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.showIndicator]
       */
-    var showIndicator: js.UndefOr[Boolean] = js.native
+    var showIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.showPane]
       */
-    var showPane: js.UndefOr[Boolean] = js.native
+    var showPane: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExportLoadPanel.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ExportLoadPanel {
     

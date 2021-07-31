@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdFilter extends StObject {
   
   /** YouTube Ads to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var adGroupAdIds: js.UndefOr[js.Array[String]] = js.native
+  var adGroupAdIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** YouTube Ad Groups to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var adGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var adGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Campaigns to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var campaignIds: js.UndefOr[js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Insertion Orders to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var insertionOrderIds: js.UndefOr[js.Array[String]] = js.native
+  var insertionOrderIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Line Items to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var lineItemIds: js.UndefOr[js.Array[String]] = js.native
+  var lineItemIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Media Products to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
-  var mediaProductIds: js.UndefOr[js.Array[String]] = js.native
+  var mediaProductIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IdFilter {
   

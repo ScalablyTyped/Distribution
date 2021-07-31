@@ -2,42 +2,40 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Microsoft XML Writer 6.0 */
-@js.native
 trait MXXMLWriter60 extends StObject {
   
   @JSName("MSXML2.MXXMLWriter60_typekey")
-  var MSXML2DotMXXMLWriter60_typekey: MXXMLWriter60 = js.native
+  var MSXML2DotMXXMLWriter60_typekey: MXXMLWriter60
   
   /** Determine whether or not to write the byte order mark */
-  var byteOrderMark: Boolean = js.native
+  var byteOrderMark: Boolean
   
   /** When enabled, the writer no longer escapes out its input when writing it out. */
-  var disableOutputEscaping: Boolean = js.native
+  var disableOutputEscaping: Boolean
   
   /** Set or get the output encoding. */
-  var encoding: String = js.native
+  var encoding: String
   
   /** Flushes all writer buffers forcing the writer to write to the underlying output object */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /** Enable or disable auto indent mode. */
-  var indent: Boolean = js.native
+  var indent: Boolean
   
   /** Determine whether or not to omit the XML declaration. */
-  var omitXMLDeclaration: Boolean = js.native
+  var omitXMLDeclaration: Boolean
   
   /** Set or get the output. */
-  var output: js.Any = js.native
+  var output: js.Any
   
   /** Set or get the standalone document declaration. */
-  var standalone: Boolean = js.native
+  var standalone: Boolean
   
   /** Set or get the xml version info. */
-  var version: String = js.native
+  var version: String
 }
 object MXXMLWriter60 {
   

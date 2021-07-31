@@ -10,9 +10,9 @@ A public-key signature system based on Ed25519 for the NATS ecosystem in typescr
 | ------------------ | :-------------: |
 | Full name          | ts-nkeys |
 | Keywords           | nats, Ed25519, node, typescript |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 3318686 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 3206242 |
 | # stars            | 0 |
 
 ## Links

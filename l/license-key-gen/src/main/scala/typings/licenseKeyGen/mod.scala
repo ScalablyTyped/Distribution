@@ -2,29 +2,29 @@ package typings.licenseKeyGen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("license-key-gen", "createLicense")
+  @JSImport("license-key-gen", JSImport.Namespace)
   @js.native
-  def createLicense(licenseData: licenseData): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("license-key-gen", "validateLicense")
-  @js.native
-  def validateLicense(licenseData: licenseData, serial: String): js.Object = js.native
+  @scala.inline
+  def createLicense(licenseData: licenseData): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createLicense")(licenseData.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @js.native
+  @scala.inline
+  def validateLicense(licenseData: licenseData, serial: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("validateLicense")(licenseData.asInstanceOf[js.Any], serial.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait licenseData extends StObject {
     
-    var appVersion: String = js.native
+    var appVersion: String
     
-    var info: userInfo = js.native
+    var info: userInfo
     
-    var osType: String = js.native
+    var osType: String
     
-    var prodCode: String = js.native
+    var prodCode: String
   }
   object licenseData {
     
@@ -51,18 +51,17 @@ object mod {
     }
   }
   
-  @js.native
   trait userInfo extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var company: String = js.native
+    var company: String
     
-    var state: String = js.native
+    var state: String
     
-    var street: String = js.native
+    var street: String
     
-    var zip: String = js.native
+    var zip: String
   }
   object userInfo {
     

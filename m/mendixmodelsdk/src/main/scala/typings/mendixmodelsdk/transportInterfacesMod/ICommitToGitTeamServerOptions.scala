@@ -3,23 +3,22 @@ package typings.mendixmodelsdk.transportInterfacesMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.git
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICommitToGitTeamServerOptions
-  extends ICommitToTeamServerBaseOptions
+  extends StObject
+     with ICommitToTeamServerBaseOptions
      with ICommitToTeamServerOptions {
   
-  var authorEmail: String = js.native
+  var authorEmail: String
   
-  var authorName: String = js.native
+  var authorName: String
   
-  var repositoryType: git = js.native
+  var repositoryType: git
   
-  var targetCommitId: String = js.native
+  var targetCommitId: String
   
-  var teamServerGitUrl: String = js.native
+  var teamServerGitUrl: String
 }
 object ICommitToGitTeamServerOptions {
   
@@ -28,12 +27,11 @@ object ICommitToGitTeamServerOptions {
     authorEmail: String,
     authorName: String,
     commitMessage: String,
-    repositoryType: git,
     targetBranch: String,
     targetCommitId: String,
     teamServerGitUrl: String
   ): ICommitToGitTeamServerOptions = {
-    val __obj = js.Dynamic.literal(authorEmail = authorEmail.asInstanceOf[js.Any], authorName = authorName.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any], targetBranch = targetBranch.asInstanceOf[js.Any], targetCommitId = targetCommitId.asInstanceOf[js.Any], teamServerGitUrl = teamServerGitUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorEmail = authorEmail.asInstanceOf[js.Any], authorName = authorName.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], repositoryType = "git", targetBranch = targetBranch.asInstanceOf[js.Any], targetCommitId = targetCommitId.asInstanceOf[js.Any], teamServerGitUrl = teamServerGitUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommitToGitTeamServerOptions]
   }
   

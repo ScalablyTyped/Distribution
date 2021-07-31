@@ -2,36 +2,34 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // grant
-@js.native
 trait GrantParameters extends StObject {
   
-  var authKeys: js.UndefOr[js.Array[String]] = js.native
+  var authKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var delete: js.UndefOr[Boolean] = js.native
+  var delete: js.UndefOr[Boolean] = js.undefined
   
-  var get: js.UndefOr[Boolean] = js.native
+  var get: js.UndefOr[Boolean] = js.undefined
   
-  var join: js.UndefOr[Boolean] = js.native
+  var join: js.UndefOr[Boolean] = js.undefined
   
-  var manage: js.UndefOr[Boolean] = js.native
+  var manage: js.UndefOr[Boolean] = js.undefined
   
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
   
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
   
-  var uuids: js.UndefOr[js.Array[String]] = js.native
+  var uuids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var write: js.UndefOr[Boolean] = js.native
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object GrantParameters {
   

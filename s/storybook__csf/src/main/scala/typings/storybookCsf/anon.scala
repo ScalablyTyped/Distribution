@@ -2,23 +2,21 @@ package typings.storybookCsf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Groups extends StObject {
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var root: String | Null = js.native
+    var root: String | Null
   }
   object Groups {
     
     @scala.inline
     def apply(groups: js.Array[String]): Groups = {
-      val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], root = null)
       __obj.asInstanceOf[Groups]
     }
     

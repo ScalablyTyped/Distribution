@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelinePauseStateSettings extends StObject {
   
   /**
     * Pipeline ID to pause ("PIPELINE_0" or "PIPELINE_1").
     */
-  var PipelineId: typings.awsSdk.medialiveMod.PipelineId = js.native
+  var PipelineId: typings.awsSdk.medialiveMod.PipelineId
 }
 object PipelinePauseStateSettings {
   

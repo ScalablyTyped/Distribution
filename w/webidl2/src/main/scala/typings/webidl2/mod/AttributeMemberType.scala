@@ -5,36 +5,35 @@ import typings.webidl2.webidl2Strings.static
 import typings.webidl2.webidl2Strings.stringifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeMemberType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLInterfaceMemberType
      with IDLInterfaceMixinMemberType
      with IDLNamespaceMemberType {
   
   /** An IDL Type for the attribute. */
-  var idlType: IDLTypeDescription = js.native
+  var idlType: IDLTypeDescription
   
   /** True if it's an inherit attribute. */
-  var inherit: Boolean = js.native
+  var inherit: Boolean
   
   /** The attribute's name. */
-  var name: String = js.native
+  var name: String
   
   @JSName("parent")
-  var parent_AttributeMemberType: InterfaceMixinType | InterfaceType | NamespaceType = js.native
+  var parent_AttributeMemberType: InterfaceMixinType | InterfaceType | NamespaceType
   
   /** True if it's a read-only attribute. */
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
   /** Special modifier if exists */
-  var special: static | stringifier | Null = js.native
+  var special: static | stringifier | Null
   
   @JSName("type")
-  var type_AttributeMemberType: attribute = js.native
+  var type_AttributeMemberType: attribute
 }
 object AttributeMemberType {
   
@@ -45,11 +44,10 @@ object AttributeMemberType {
     inherit: Boolean,
     name: String,
     parent: InterfaceMixinType | InterfaceType | NamespaceType,
-    readonly: Boolean,
-    `type`: attribute
+    readonly: Boolean
   ): AttributeMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = null)
+    __obj.updateDynamic("type")("attribute")
     __obj.asInstanceOf[AttributeMemberType]
   }
   

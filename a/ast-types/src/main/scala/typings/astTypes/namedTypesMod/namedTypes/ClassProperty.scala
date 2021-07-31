@@ -21,38 +21,37 @@ import typings.astTypes.kindsMod.VarianceKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
-@js.native
 trait ClassProperty
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with ClassPropertyKind
      with DeclarationKind
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var access: js.UndefOr[public | `private` | `protected`] = js.native
+  var access: js.UndefOr[public | `private` | `protected`] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var key: LiteralKind | IdentifierKind | ExpressionKind = js.native
+  var key: LiteralKind | IdentifierKind | ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.ClassProperty = js.native
+  var `type`: typings.astTypes.astTypesStrings.ClassProperty
   
-  var typeAnnotation: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.undefined
   
-  var value: ExpressionKind | Null = js.native
+  var value: ExpressionKind | Null
   
-  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.native
+  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.undefined
 }
 object ClassProperty {
   

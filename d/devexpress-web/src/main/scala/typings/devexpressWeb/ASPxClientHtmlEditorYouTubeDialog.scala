@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the YouTube Video dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorYouTubeDialog extends ASPxClientHtmlEditorEditElementDialog {
+trait ASPxClientHtmlEditorYouTubeDialog
+  extends StObject
+     with ASPxClientHtmlEditorEditElementDialog {
   
   /**
     * Provides access to the client object of the "Allow fullscreen" check box in the Html Editor's "Insert YouTube Video" dialog.
     */
-  def GetAllowFullscreenCheckBox(): ASPxClientCheckBox = js.native
+  def GetAllowFullscreenCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Enable privacy-enhanced mode" check box in the Html Editor's YouTube Video dialog.
     */
-  def GetConfidentModeCheckBox(): ASPxClientCheckBox = js.native
+  def GetConfidentModeCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Show player controls" check box in the Html Editor's YouTube Video dialog.
     */
-  def GetShowPlayerControlsCheckBox(): ASPxClientCheckBox = js.native
+  def GetShowPlayerControlsCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Show suggested videos when the video finishes" check box in the Html Editor's YouTube Video dialog.
     */
-  def GetShowSameVideosCheckBox(): ASPxClientCheckBox = js.native
+  def GetShowSameVideosCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Show video title and player actions" check box in the Html Editor's YouTube Video dialog.
     */
-  def GetShowVideoNameCheckBox(): ASPxClientCheckBox = js.native
+  def GetShowVideoNameCheckBox(): ASPxClientCheckBox
 }
 object ASPxClientHtmlEditorYouTubeDialog {
   

@@ -10,9 +10,9 @@ Returns the first result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-first |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 96751 |
+| # releases         | 7 |
+| # dependents       | 13 |
+| # downloads        | 262234 |
 | # stars            | 0 |
 
 ## Links

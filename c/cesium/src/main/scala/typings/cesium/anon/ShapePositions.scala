@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapePositions extends StObject {
   
-  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.native
+  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var polylinePositions: js.Array[Cartesian3] = js.native
+  var polylinePositions: js.Array[Cartesian3]
   
-  var shapePositions: Double = js.native
+  var shapePositions: Double
 }
 object ShapePositions {
   

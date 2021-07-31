@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,17 @@ object mod {
     def this(pathOrOptions: DataStoreOptions) = this()
   }
   
-  @js.native
   trait Cursor[T] extends StObject {
     
-    def exec(callback: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit = js.native
+    def exec(callback: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit
     
-    def limit(n: Double): Cursor[T] = js.native
+    def limit(n: Double): Cursor[T]
     
-    def projection(query: js.Any): Cursor[T] = js.native
+    def projection(query: js.Any): Cursor[T]
     
-    def skip(n: Double): Cursor[T] = js.native
+    def skip(n: Double): Cursor[T]
     
-    def sort(query: js.Any): Cursor[T] = js.native
+    def sort(query: js.Any): Cursor[T]
   }
   object Cursor {
     
@@ -46,7 +44,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CursorMutableBuilder[Self <: Cursor[_], T] (val x: Self with Cursor[T]) extends AnyVal {
+    implicit class CursorMutableBuilder[Self <: Cursor[?], T] (val x: Self & Cursor[T]) extends AnyVal {
       
       @scala.inline
       def setExec(value: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
@@ -65,10 +63,9 @@ object mod {
     }
   }
   
-  @js.native
   trait CursorCount extends StObject {
     
-    def exec(callback: js.Function2[/* err */ Error, /* count */ Double, Unit]): Unit = js.native
+    def exec(callback: js.Function2[/* err */ Error, /* count */ Double, Unit]): Unit
   }
   object CursorCount {
     
@@ -86,16 +83,15 @@ object mod {
     }
   }
   
-  @js.native
   trait DataStoreOptions extends StObject {
     
     // (optional): hook you can use to transform data after it was serialized and before it is written to disk.
     // Can be used for example to encrypt data before writing database to disk.
     // This function takes a string as parameter (one line of an NestDb data file) and outputs the transformed string, which must absolutely not contain a \n character (or data will be lost)
-    var afterSerialization: js.UndefOr[js.Function1[/* line */ String, String]] = js.native
+    var afterSerialization: js.UndefOr[js.Function1[/* line */ String, String]] = js.undefined
     
     // Optional, specify the name of your NW app if you want options.filename to be relative to the directory where
-    var autoload: js.UndefOr[Boolean] = js.native
+    var autoload: js.UndefOr[Boolean] = js.undefined
     
     // (optional): reverse of afterSerialization.
     // Make sure to include both and not just one or you risk data loss.
@@ -104,27 +100,27 @@ object mod {
     // NestDb checks that never one is declared without the other, and checks that they are reverse of one another by testing on random strings of various lengths.
     // In addition, if too much data is detected as corrupt,
     // NestDb will refuse to start as it could mean you're not using the deserialization hook corresponding to the serialization hook used before (see below)
-    var beforeDeserialization: js.UndefOr[js.Function1[/* line */ String, String]] = js.native
+    var beforeDeserialization: js.UndefOr[js.Function1[/* line */ String, String]] = js.undefined
     
     // (optional): between 0 and 1, defaults to 10%. NestDb will refuse to start if more than this percentage of the datafile is corrupt.
     // 0 means you don't tolerate any corruption, 1 means you don't care
-    var corruptAlertThreshold: js.UndefOr[Double] = js.native
+    var corruptAlertThreshold: js.UndefOr[Double] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     // Optional, datastore will be in-memory only if not provided
-    var inMemoryOnly: js.UndefOr[Boolean] = js.native
+    var inMemoryOnly: js.UndefOr[Boolean] = js.undefined
     
     // Optional, default to false
-    var nodeWebkitAppName: js.UndefOr[Boolean] = js.native
+    var nodeWebkitAppName: js.UndefOr[Boolean] = js.undefined
     
     // Optional, defaults to false
     // Optional, if autoload is used this will be called after the load database with the error object as parameter. If you don't pass it the error will be thrown
-    var onload: js.UndefOr[js.Function1[/* error */ Error, _]] = js.native
+    var onload: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
     
     // (optional, defaults to false)
     // timestamp the insertion and last update of all documents, with the fields createdAt and updatedAt. User-specified values override automatic generation, usually useful for testing.
-    var timestampData: js.UndefOr[Boolean] = js.native
+    var timestampData: js.UndefOr[Boolean] = js.undefined
   }
   object DataStoreOptions {
     
@@ -180,7 +176,7 @@ object mod {
       def setNodeWebkitAppNameUndefined: Self = StObject.set(x, "nodeWebkitAppName", js.undefined)
       
       @scala.inline
-      def setOnload(value: /* error */ Error => _): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+      def setOnload(value: /* error */ Error => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
@@ -193,16 +189,15 @@ object mod {
     }
   }
   
-  @js.native
   trait EnsureIndexOptions extends StObject {
     
-    var expireAfterSeconds: js.UndefOr[Double] = js.native
+    var expireAfterSeconds: js.UndefOr[Double] = js.undefined
     
-    var fieldName: String = js.native
+    var fieldName: String
     
-    var sparse: js.UndefOr[Boolean] = js.native
+    var sparse: js.UndefOr[Boolean] = js.undefined
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object EnsureIndexOptions {
     
@@ -301,7 +296,7 @@ object mod {
     /**
       * Get an array of all the data in the database
       */
-    def getAllData(): js.Array[_] = js.native
+    def getAllData(): js.Array[js.Any] = js.native
     
     /**
       * Return the list of candidates for a given query
@@ -406,7 +401,7 @@ object mod {
     def update(
       query: js.Any,
       updateQuery: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       cb: js.Function3[/* err */ Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
     ): Unit = js.native
     def update(query: js.Any, updateQuery: js.Any, options: UpdateOptions): Unit = js.native
@@ -419,7 +414,7 @@ object mod {
     def update[T /* <: G */](
       query: js.Any,
       updateQuery: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       cb: js.Function4[
           /* err */ Error, 
           /* numberOfUpdated */ Double, 
@@ -468,14 +463,13 @@ object mod {
     def update_T_G[T /* <: G */](query: js.Any, updateQuery: js.Any, options: UpdateOptions): Unit = js.native
   }
   
-  @js.native
   trait Persistence extends StObject {
     
-    def compactDatafile(): Unit = js.native
+    def compactDatafile(): Unit
     
-    def setAutocompactionInterval(interval: Double): Unit = js.native
+    def setAutocompactionInterval(interval: Double): Unit
     
-    def stopAutocompaction(): Unit = js.native
+    def stopAutocompaction(): Unit
   }
   object Persistence {
     
@@ -506,10 +500,9 @@ object mod {
   /**
     * options only one option for now: multi which allows the removal of multiple documents if set to true. Default is false
     */
-  @js.native
   trait RemoveOptions extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
   }
   object RemoveOptions {
     
@@ -534,14 +527,13 @@ object mod {
     * multi (defaults to false) which allows the modification of several documents if set to true
     * upsert (defaults to false) if you want to insert a new document corresponding to the update rules if your query doesn't match anything
     */
-  @js.native
   trait UpdateOptions extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var returnUpdatedDocs: js.UndefOr[Boolean] = js.native
+    var returnUpdatedDocs: js.UndefOr[Boolean] = js.undefined
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateOptions {
     

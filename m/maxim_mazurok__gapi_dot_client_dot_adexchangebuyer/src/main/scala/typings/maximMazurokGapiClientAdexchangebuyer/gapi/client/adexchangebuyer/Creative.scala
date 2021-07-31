@@ -7,52 +7,50 @@ import typings.maximMazurokGapiClientAdexchangebuyer.anon.DetectedProviderIds
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.DisapprovalReasons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Creative extends StObject {
   
   /** The HTML snippet that displays the ad when inserted in the web page. If set, videoURL, videoVastXML, and nativeAd should not be set. */
-  var HTMLSnippet: js.UndefOr[String] = js.native
+  var HTMLSnippet: js.UndefOr[String] = js.undefined
   
   /** Account id. */
-  var accountId: js.UndefOr[Double] = js.native
+  var accountId: js.UndefOr[Double] = js.undefined
   
   /** The link to the Ad Preferences page. This is only supported for native ads. */
-  var adChoicesDestinationUrl: js.UndefOr[String] = js.native
+  var adChoicesDestinationUrl: js.UndefOr[String] = js.undefined
   
-  var adTechnologyProviders: js.UndefOr[DetectedProviderIds] = js.native
+  var adTechnologyProviders: js.UndefOr[DetectedProviderIds] = js.undefined
   
   /** Detected advertiser id, if any. Read-only. This field should not be set in requests. */
-  var advertiserId: js.UndefOr[js.Array[String]] = js.native
+  var advertiserId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the company being advertised in the creative. A list of advertisers is provided in the advertisers.txt file. */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /** The agency id for this creative. */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * The last upload timestamp of this creative if it was uploaded via API. Read-only. The value of this field is generated, and will be ignored for uploads. (formatted RFC 3339
     * timestamp).
     */
-  var apiUploadTimestamp: js.UndefOr[String] = js.native
+  var apiUploadTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * List of buyer selectable attributes for the ads that may be shown from this snippet. Each attribute is represented by an integer as defined in
     * buyer-declarable-creative-attributes.txt.
     */
-  var attribute: js.UndefOr[js.Array[Double]] = js.native
+  var attribute: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** A buyer-specific id identifying the creative in this ad. */
-  var buyerCreativeId: js.UndefOr[String] = js.native
+  var buyerCreativeId: js.UndefOr[String] = js.undefined
   
   /** The set of destination urls for the snippet. */
-  var clickThroughUrl: js.UndefOr[js.Array[String]] = js.native
+  var clickThroughUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Shows any corrections that were applied to this creative. Read-only. This field should not be set in requests. */
-  var corrections: js.UndefOr[js.Array[Contexts]] = js.native
+  var corrections: js.UndefOr[js.Array[Contexts]] = js.undefined
   
   /**
     * Creative status identity type that the creative item applies to. Ad Exchange real-time bidding is migrating to the sizeless creative verification. Originally, Ad Exchange assigned
@@ -60,70 +58,70 @@ trait Creative extends StObject {
     * creative ID level. This field allows to distinguish whether a given creative status applies to a unique combination of a buyer creative ID and creative dimensions, or to a buyer
     * creative ID as a whole.
     */
-  var creativeStatusIdentityType: js.UndefOr[String] = js.native
+  var creativeStatusIdentityType: js.UndefOr[String] = js.undefined
   
   /**
     * Top-level deals status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=DIRECT_DEALS (or ALL) in servingRestrictions will also exist.
     * Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from servingRestrictions directly.
     */
-  var dealsStatus: js.UndefOr[String] = js.native
+  var dealsStatus: js.UndefOr[String] = js.undefined
   
   /** Detected domains for this creative. Read-only. This field should not be set in requests. */
-  var detectedDomains: js.UndefOr[js.Array[String]] = js.native
+  var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The filtering reasons for the creative. Read-only. This field should not be set in requests. */
-  var filteringReasons: js.UndefOr[Date] = js.native
+  var filteringReasons: js.UndefOr[Date] = js.undefined
   
   /** Ad height. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The set of urls to be called to record an impression. */
-  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Detected languages for this creative. Read-only. This field should not be set in requests. */
-  var languages: js.UndefOr[js.Array[String]] = js.native
+  var languages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** If nativeAd is set, HTMLSnippet, videoVastXML, and the videoURL outside of nativeAd should not be set. (The videoURL inside nativeAd can be set.) */
-  var nativeAd: js.UndefOr[Advertiser] = js.native
+  var nativeAd: js.UndefOr[Advertiser] = js.undefined
   
   /**
     * Top-level open auction status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL) in servingRestrictions will also
     * exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from ServingRestrictions directly.
     */
-  var openAuctionStatus: js.UndefOr[String] = js.native
+  var openAuctionStatus: js.UndefOr[String] = js.undefined
   
   /** Detected product categories, if any. Each category is represented by an integer as defined in  ad-product-categories.txt. Read-only. This field should not be set in requests. */
-  var productCategories: js.UndefOr[js.Array[Double]] = js.native
+  var productCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** All restricted categories for the ads that may be shown from this snippet. Each category is represented by an integer as defined in the  ad-restricted-categories.txt. */
-  var restrictedCategories: js.UndefOr[js.Array[Double]] = js.native
+  var restrictedCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Detected sensitive categories, if any. Each category is represented by an integer as defined in  ad-sensitive-categories.txt. Read-only. This field should not be set in requests. */
-  var sensitiveCategories: js.UndefOr[js.Array[Double]] = js.native
+  var sensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The granular status of this ad in specific contexts. A context here relates to where something ultimately serves (for example, a physical location, a platform, an HTTPS vs HTTP
     * request, or the type of auction). Read-only. This field should not be set in requests. See the examples in the Creatives guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[DisapprovalReasons]] = js.native
+  var servingRestrictions: js.UndefOr[js.Array[DisapprovalReasons]] = js.undefined
   
   /** List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt. */
-  var vendorType: js.UndefOr[js.Array[Double]] = js.native
+  var vendorType: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The version for this creative. Read-only. This field should not be set in requests. */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /** The URL to fetch a video ad. If set, HTMLSnippet, videoVastXML, and nativeAd should not be set. Note, this is different from resource.native_ad.video_url above. */
-  var videoURL: js.UndefOr[String] = js.native
+  var videoURL: js.UndefOr[String] = js.undefined
   
   /** The contents of a VAST document for a video ad. This document should conform to the VAST 2.0 or 3.0 standard. If set, HTMLSnippet, videoURL, and nativeAd and should not be set. */
-  var videoVastXML: js.UndefOr[String] = js.native
+  var videoVastXML: js.UndefOr[String] = js.undefined
   
   /** Ad width. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Creative {
   

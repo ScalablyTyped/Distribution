@@ -2,23 +2,21 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarginLeftProps[TLength] extends StObject {
   
   val marginLeft: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   val ml: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MarginLeftProps {
   
@@ -29,12 +27,12 @@ object MarginLeftProps {
   }
   
   @scala.inline
-  implicit class MarginLeftPropsMutableBuilder[Self <: MarginLeftProps[_], TLength] (val x: Self with MarginLeftProps[TLength]) extends AnyVal {
+  implicit class MarginLeftPropsMutableBuilder[Self <: MarginLeftProps[?], TLength] (val x: Self & MarginLeftProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setMarginLeft(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
@@ -42,12 +40,14 @@ object MarginLeftProps {
     def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def setMarginLeftVarargs(value: js.Any*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+    def setMarginLeftVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
     
     @scala.inline
     def setMl(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,8 @@ object MarginLeftProps {
     def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
     @scala.inline
-    def setMlVarargs(value: js.Any*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    def setMlVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "ml", js.Array(value :_*))
   }
 }

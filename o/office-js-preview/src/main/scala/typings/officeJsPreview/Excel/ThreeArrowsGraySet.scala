@@ -3,17 +3,17 @@ package typings.officeJsPreview.Excel
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThreeArrowsGraySet extends /* index */ NumberDictionary[Icon] {
+trait ThreeArrowsGraySet
+  extends StObject
+     with /* index */ NumberDictionary[Icon] {
   
-  var grayDownArrow: Icon = js.native
+  var grayDownArrow: Icon
   
-  var graySideArrow: Icon = js.native
+  var graySideArrow: Icon
   
-  var grayUpArrow: Icon = js.native
+  var grayUpArrow: Icon
 }
 object ThreeArrowsGraySet {
   

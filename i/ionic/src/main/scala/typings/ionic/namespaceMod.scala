@@ -12,7 +12,6 @@ import typings.ionicCliFramework.mod.BaseNamespace
 import typings.ionicCliFramework.mod.BaseNamespaceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object namespaceMod {

@@ -11,13 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XUIConfigurationManager2
-  extends XUIConfigurationStorage
+  extends StObject
+     with XUIConfigurationStorage
      with XUIConfigurationPersistence
      with XUIConfigurationManager
      with XUIConfiguration

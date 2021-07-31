@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | stoppable |
 | Keywords           | server, net, connect, socket, connection, stop, close, disconnect, disconnection, http, https, tcp |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 5577042 |
+| # releases         | 0 |
+| # dependents       | 82 |
+| # downloads        | 7816022 |
 | # stars            | 2 |
 
 ## Links

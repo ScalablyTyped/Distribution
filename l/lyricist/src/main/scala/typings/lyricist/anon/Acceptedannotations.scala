@@ -2,27 +2,25 @@ package typings.lyricist.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acceptedannotations extends StObject {
   
-  var accepted_annotations: Double = js.native
+  var accepted_annotations: Double
   
-  var contributors: Double = js.native
+  var contributors: Double
   
-  var hot: Boolean = js.native
+  var hot: Boolean
   
-  var iq_earners: Double = js.native
+  var iq_earners: Double
   
-  var pageviews: Double = js.native
+  var pageviews: Double
   
-  var transcribers: Double = js.native
+  var transcribers: Double
   
-  var unreviewed_annotations: Double = js.native
+  var unreviewed_annotations: Double
   
-  var verified_annotations: Double = js.native
+  var verified_annotations: Double
 }
 object Acceptedannotations {
   

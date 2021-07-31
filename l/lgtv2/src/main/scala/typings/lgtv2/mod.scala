@@ -10,32 +10,31 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lgtv2", JSImport.Namespace)
-  @js.native
-  def apply(): LGTV = js.native
-  @JSImport("lgtv2", JSImport.Namespace)
-  @js.native
-  def apply(config: Config): LGTV = js.native
+  @scala.inline
+  def apply(): LGTV = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LGTV]
+  @scala.inline
+  def apply(config: Config): LGTV = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[LGTV]
   
   @JSImport("lgtv2", JSImport.Namespace)
   @js.native
   class ^ () extends LGTV {
     def this(config: Config) = this()
   }
-  
+  @JSImport("lgtv2", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Config extends StObject {
     
-    var clientKey: js.UndefOr[String] = js.native
+    var clientKey: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var reconnect: js.UndefOr[Double] = js.native
+    var reconnect: js.UndefOr[Double] = js.undefined
     
     var saveKey: js.UndefOr[
         js.Function2[
@@ -43,11 +42,11 @@ object mod {
           /* callback */ js.Function1[/* error */ js.UndefOr[ErrnoException | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -129,15 +128,15 @@ object mod {
     
     def request(uri: String): Unit = js.native
     def request(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
-    def request(
-      uri: String,
-      payload: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
-    ): Unit = js.native
     def request(uri: String, payload: js.Any): Unit = js.native
     def request(
       uri: String,
       payload: js.Any,
+      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+    ): Unit = js.native
+    def request(
+      uri: String,
+      payload: Unit,
       callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
     ): Unit = js.native
     
@@ -147,12 +146,6 @@ object mod {
       uri: String,
       callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
     ): Unit = js.native
-    /* private */ def send(
-      `type`: String,
-      uri: String,
-      payload: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
-    ): Unit = js.native
     /* private */ def send(`type`: String, uri: String, payload: js.Any): Unit = js.native
     /* private */ def send(
       `type`: String,
@@ -160,18 +153,24 @@ object mod {
       payload: js.Any,
       callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
     ): Unit = js.native
+    /* private */ def send(
+      `type`: String,
+      uri: String,
+      payload: Unit,
+      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+    ): Unit = js.native
     
     def subscribe(uri: String): Unit = js.native
     def subscribe(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
-    def subscribe(
-      uri: String,
-      payload: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
-    ): Unit = js.native
     def subscribe(uri: String, payload: js.Any): Unit = js.native
     def subscribe(
       uri: String,
       payload: js.Any,
+      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+    ): Unit = js.native
+    def subscribe(
+      uri: String,
+      payload: Unit,
       callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
     ): Unit = js.native
   }

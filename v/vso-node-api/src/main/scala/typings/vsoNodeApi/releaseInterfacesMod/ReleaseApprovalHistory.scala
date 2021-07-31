@@ -4,23 +4,21 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseApprovalHistory extends StObject {
   
-  var approver: IdentityRef = js.native
+  var approver: IdentityRef
   
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
-  var comments: String = js.native
+  var comments: String
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
-  var revision: Double = js.native
+  var revision: Double
 }
 object ReleaseApprovalHistory {
   

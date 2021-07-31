@@ -8,7 +8,6 @@ import typings.antDesignReactNative.imageRollMod.ImageRollTexts
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerMod {
@@ -56,12 +55,12 @@ object imagePickerMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.antDesignReactNative.libStyleMod.WithThemeStyles because var conflicts: styles. Inlined  */ @js.native
-  trait ImagePickerProps
-    extends ImagePickerPropTypes
+  - typings.antDesignReactNative.libStyleMod.WithThemeStyles because var conflicts: styles. Inlined  */ trait ImagePickerProps
+    extends StObject
+       with ImagePickerPropTypes
        with ImageRollTexts {
     
-    var cameraPickerProps: js.UndefOr[CameraRollPickerProps] = js.native
+    var cameraPickerProps: js.UndefOr[CameraRollPickerProps] = js.undefined
   }
   object ImagePickerProps {
     

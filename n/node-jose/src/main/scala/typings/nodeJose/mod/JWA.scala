@@ -3,167 +3,133 @@ package typings.nodeJose.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWA {
   
-  @JSImport("node-jose", "JWA.decrypt")
+  @JSImport("node-jose", "JWA")
   @js.native
-  def decrypt(alg: String, key: String, cdata: String): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: String, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: String, cdata: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: String, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: Buffer, cdata: String): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: Buffer, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: Buffer, cdata: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.decrypt")
-  @js.native
-  def decrypt(alg: String, key: Buffer, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-jose", "JWA.derive")
-  @js.native
-  def derive(alg: String, key: String): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.derive")
-  @js.native
-  def derive(alg: String, key: String, props: DeriveOptions): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.derive")
-  @js.native
-  def derive(alg: String, key: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.derive")
-  @js.native
-  def derive(alg: String, key: Buffer, props: DeriveOptions): js.Promise[Buffer] = js.native
+  @scala.inline
+  def decrypt(alg: String, key: String, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: String, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: String, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: String, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: Buffer, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: Buffer, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: Buffer, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def decrypt(alg: String, key: Buffer, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("node-jose", "JWA.digest")
-  @js.native
-  def digest(alg: String, data: String): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.digest")
-  @js.native
-  def digest(alg: String, data: String, props: js.Any): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.digest")
-  @js.native
-  def digest(alg: String, data: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("node-jose", "JWA.digest")
-  @js.native
-  def digest(alg: String, data: Buffer, props: js.Any): js.Promise[Buffer] = js.native
+  @scala.inline
+  def derive(alg: String, key: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def derive(alg: String, key: String, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def derive(alg: String, key: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def derive(alg: String, key: Buffer, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: String, pdata: String): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: String, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: String, pdata: Buffer): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: String, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: Buffer, pdata: String): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: Buffer, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: Buffer, pdata: Buffer): js.Promise[EncryptReturn] = js.native
-  @JSImport("node-jose", "JWA.encrypt")
-  @js.native
-  def encrypt(alg: String, key: Buffer, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = js.native
+  @scala.inline
+  def digest(alg: String, data: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def digest(alg: String, data: String, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def digest(alg: String, data: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def digest(alg: String, data: Buffer, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("node-jose", "JWA.sign")
-  @js.native
-  def sign(alg: String, key: String, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = js.native
-  @JSImport("node-jose", "JWA.sign")
-  @js.native
-  def sign(alg: String, key: String, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = js.native
-  @JSImport("node-jose", "JWA.sign")
-  @js.native
-  def sign(alg: String, key: Buffer, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = js.native
-  @JSImport("node-jose", "JWA.sign")
-  @js.native
-  def sign(alg: String, key: Buffer, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = js.native
+  @scala.inline
+  def encrypt(alg: String, key: String, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: String, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: String, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: String, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: Buffer, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: Buffer, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: Buffer, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  @scala.inline
+  def encrypt(alg: String, key: Buffer, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
   
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: String, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: String, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: String, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: String, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: Buffer, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: Buffer, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: Buffer, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
-  @JSImport("node-jose", "JWA.verify")
-  @js.native
-  def verify(alg: String, key: Buffer, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = js.native
+  @scala.inline
+  def sign(alg: String, key: String, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  @scala.inline
+  def sign(alg: String, key: String, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  @scala.inline
+  def sign(alg: String, key: Buffer, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  @scala.inline
+  def sign(alg: String, key: Buffer, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
   
-  @js.native
+  @scala.inline
+  def verify(alg: String, key: String, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: String, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: String, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: String, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: Buffer, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: Buffer, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: Buffer, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  @scala.inline
+  def verify(alg: String, key: Buffer, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  
   trait DecryptEncryptOptions extends StObject {
     
-    var aad: js.UndefOr[Buffer] = js.native
+    var aad: js.UndefOr[Buffer] = js.undefined
     
-    var adata: js.UndefOr[Buffer] = js.native
+    var adata: js.UndefOr[Buffer] = js.undefined
     
     // algorithm to use in ec
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
     // variation of enc, probably oversight in lib code
-    var apu: js.UndefOr[Buffer] = js.native
+    var apu: js.UndefOr[Buffer] = js.undefined
     
     // agreement party info used in ec
-    var apv: js.UndefOr[Buffer] = js.native
+    var apv: js.UndefOr[Buffer] = js.undefined
     
     // ephemeral pub key used in ec
-    var enc: js.UndefOr[String] = js.native
+    var enc: js.UndefOr[String] = js.undefined
     
-    var epk: js.UndefOr[Buffer] = js.native
-    
-    // Not used in encrypt
-    var epu: js.UndefOr[Buffer] = js.native
-    
-    // encryption party info
-    var epv: js.UndefOr[Buffer] = js.native
-    
-    var iv: js.UndefOr[Buffer] = js.native
-    
-    // encryption party info
-    var kdata: js.UndefOr[Buffer] = js.native
+    var epk: js.UndefOr[Buffer] = js.undefined
     
     // Not used in encrypt
-    var mac: js.UndefOr[Buffer] = js.native
+    var epu: js.UndefOr[Buffer] = js.undefined
+    
+    // encryption party info
+    var epv: js.UndefOr[Buffer] = js.undefined
+    
+    var iv: js.UndefOr[Buffer] = js.undefined
+    
+    // encryption party info
+    var kdata: js.UndefOr[Buffer] = js.undefined
+    
+    // Not used in encrypt
+    var mac: js.UndefOr[Buffer] = js.undefined
     
     // used in pbes
-    var p2c: js.UndefOr[Double] = js.native
+    var p2c: js.UndefOr[Double] = js.undefined
     
     // agreement party info used in ec
-    var p2s: js.UndefOr[Buffer] = js.native
+    var p2s: js.UndefOr[Buffer] = js.undefined
     
-    var tag: js.UndefOr[Buffer] = js.native
+    var tag: js.UndefOr[Buffer] = js.undefined
   }
   object DecryptEncryptOptions {
     
@@ -268,25 +234,24 @@ object JWA {
     }
   }
   
-  @js.native
   trait DeriveOptions extends StObject {
     
     // public key used in ecdh
-    var hash: js.UndefOr[Buffer] = js.native
+    var hash: js.UndefOr[Buffer] = js.undefined
     
     // salt value used in hkdf
-    var info: js.UndefOr[Buffer] = js.native
+    var info: js.UndefOr[Buffer] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     // key length
-    var otherInfo: js.UndefOr[Buffer] = js.native
+    var otherInfo: js.UndefOr[Buffer] = js.undefined
     
     // info used in concatkdf
-    var public: js.UndefOr[Buffer] = js.native
+    var public: js.UndefOr[Buffer] = js.undefined
     
     // hash used in ecdh
-    var salt: js.UndefOr[Buffer] = js.native
+    var salt: js.UndefOr[Buffer] = js.undefined
   }
   object DeriveOptions {
     
@@ -337,13 +302,12 @@ object JWA {
     }
   }
   
-  @js.native
   trait EncryptReturn extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
     // The cipher text
-    var tag: js.UndefOr[Buffer] = js.native
+    var tag: js.UndefOr[Buffer] = js.undefined
   }
   object EncryptReturn {
     
@@ -367,13 +331,12 @@ object JWA {
     }
   }
   
-  @js.native
   trait SignReturn extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
     // the data passed into the sign function
-    var mac: Buffer = js.native
+    var mac: Buffer
   }
   object SignReturn {
     
@@ -394,10 +357,9 @@ object JWA {
     }
   }
   
-  @js.native
   trait SignVerifyOptions extends StObject {
     
-    var loose: js.UndefOr[Boolean] = js.native
+    var loose: js.UndefOr[Boolean] = js.undefined
   }
   object SignVerifyOptions {
     
@@ -418,16 +380,15 @@ object JWA {
     }
   }
   
-  @js.native
   trait VerifyReturn extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
     // the data passed into the verify function
-    var mac: Buffer = js.native
+    var mac: Buffer
     
     // the signature for `data`
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object VerifyReturn {
     

@@ -2,15 +2,13 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBOutTransferResult extends StObject {
   
-  val bytesWritten: Double = js.native
+  val bytesWritten: Double
   
-  val status: USBTransferStatus = js.native
+  val status: USBTransferStatus
 }
 object USBOutTransferResult {
   

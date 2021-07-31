@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageEditorToolbar extends StObject {
   
-  var click: js.UndefOr[js.Function] = js.native
+  var click: js.UndefOr[js.Function] = js.undefined
   
-  var close: js.UndefOr[js.Function] = js.native
+  var close: js.UndefOr[js.Function] = js.undefined
   
-  var items: js.UndefOr[js.Array[ImageEditorToolbarItem]] = js.native
+  var items: js.UndefOr[js.Array[ImageEditorToolbarItem]] = js.undefined
   
-  var open: js.UndefOr[js.Function] = js.native
+  var open: js.UndefOr[js.Function] = js.undefined
   
-  var overflowClose: js.UndefOr[js.Function] = js.native
+  var overflowClose: js.UndefOr[js.Function] = js.undefined
   
-  var overflowOpen: js.UndefOr[js.Function] = js.native
+  var overflowOpen: js.UndefOr[js.Function] = js.undefined
   
-  var toggle: js.UndefOr[js.Function] = js.native
+  var toggle: js.UndefOr[js.Function] = js.undefined
 }
 object ImageEditorToolbar {
   

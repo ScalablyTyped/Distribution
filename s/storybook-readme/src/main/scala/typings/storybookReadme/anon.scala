@@ -4,15 +4,13 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object Children {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ChildrenElement extends StObject {
     
-    var children: Element = js.native
+    var children: Element
   }
   object ChildrenElement {
     
@@ -54,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Md extends StObject {
     
-    var md: String = js.native
+    var md: String
   }
   object Md {
     

@@ -9,23 +9,21 @@ import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.VarianceKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bound extends StObject {
   
-  var default: js.UndefOr[FlowTypeKind | Null] = js.native
+  var default: js.UndefOr[FlowTypeKind | Null] = js.undefined
   
-  var bound: js.UndefOr[TypeAnnotationKind | Null] = js.native
+  var bound: js.UndefOr[TypeAnnotationKind | Null] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.native
+  var variance: js.UndefOr[VarianceKind | plus | minus | Null] = js.undefined
 }
 object Bound {
   

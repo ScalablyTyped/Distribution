@@ -2,22 +2,20 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption extends StObject {
   
   /**
     * Keyword defined by open source detection systems like Snort or Suricata for stateful rule inspection.
     * See [Snort General Rule Options](http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node31.html) or [Suricata Rule Options](https://suricata.readthedocs.io/en/suricata-5.0.1/rules/intro.html#rule-options) for more details.
     */
-  var keyword: String = js.native
+  var keyword: String
   
   /**
     * Set of strings for additional settings to use in stateful rule inspection.
     */
-  var settings: js.UndefOr[js.Array[String]] = js.native
+  var settings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption {
   

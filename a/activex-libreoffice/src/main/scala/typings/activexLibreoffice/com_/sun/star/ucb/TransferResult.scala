@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about a transfer activity. */
-@js.native
 trait TransferResult extends StObject {
   
   /** Either void if the transfer has been carried out successfully, or an exception indicating the kind of failure. */
-  var Result: js.Any = js.native
+  var Result: js.Any
   
   /** The URL of the source object. */
-  var Source: String = js.native
+  var Source: String
   
   /** The URL of the target folder into which to transfer (a copy of) the source object. */
-  var Target: String = js.native
+  var Target: String
 }
 object TransferResult {
   

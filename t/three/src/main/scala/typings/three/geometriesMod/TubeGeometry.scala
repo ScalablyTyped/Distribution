@@ -4,7 +4,6 @@ import typings.three.curveMod.Curve
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/Geometries", "TubeGeometry")
@@ -20,76 +19,12 @@ class TubeGeometry protected ()
   	 */
   def this(path: Curve[Vector3]) = this()
   def this(path: Curve[Vector3], tubularSegments: Double) = this()
-  def this(path: Curve[Vector3], tubularSegments: js.UndefOr[scala.Nothing], radius: Double) = this()
   def this(path: Curve[Vector3], tubularSegments: Double, radius: Double) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: Double,
-    radiusSegments: Double
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double
-  ) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double) = this()
   def this(path: Curve[Vector3], tubularSegments: Double, radius: Double, radiusSegments: Double) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double,
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: Double,
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: Double,
-    radiusSegments: Double,
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double,
-    closed: Boolean
-  ) = this()
-  def this(
-    path: Curve[Vector3],
-    tubularSegments: Double,
-    radius: Double,
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
-  ) = this()
+  def this(path: Curve[Vector3], tubularSegments: Double, radius: Unit, radiusSegments: Double) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double, radiusSegments: Double) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Double) = this()
   def this(
     path: Curve[Vector3],
     tubularSegments: Double,
@@ -97,4 +32,29 @@ class TubeGeometry protected ()
     radiusSegments: Double,
     closed: Boolean
   ) = this()
+  def this(
+    path: Curve[Vector3],
+    tubularSegments: Double,
+    radius: Double,
+    radiusSegments: Unit,
+    closed: Boolean
+  ) = this()
+  def this(
+    path: Curve[Vector3],
+    tubularSegments: Double,
+    radius: Unit,
+    radiusSegments: Double,
+    closed: Boolean
+  ) = this()
+  def this(path: Curve[Vector3], tubularSegments: Double, radius: Unit, radiusSegments: Unit, closed: Boolean) = this()
+  def this(
+    path: Curve[Vector3],
+    tubularSegments: Unit,
+    radius: Double,
+    radiusSegments: Double,
+    closed: Boolean
+  ) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double, radiusSegments: Unit, closed: Boolean) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Double, closed: Boolean) = this()
+  def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Unit, closed: Boolean) = this()
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultAction extends StObject {
   
   /**
     * Specifies that AWS WAF should allow requests by default.
     */
-  var Allow: js.UndefOr[AllowAction] = js.native
+  var Allow: js.UndefOr[AllowAction] = js.undefined
   
   /**
     * Specifies that AWS WAF should block requests by default. 
     */
-  var Block: js.UndefOr[BlockAction] = js.native
+  var Block: js.UndefOr[BlockAction] = js.undefined
 }
 object DefaultAction {
   

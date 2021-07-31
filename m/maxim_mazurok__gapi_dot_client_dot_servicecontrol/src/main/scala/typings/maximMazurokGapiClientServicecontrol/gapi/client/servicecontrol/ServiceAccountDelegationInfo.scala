@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAccountDelegationInfo extends StObject {
   
   /** First party (Google) identity as the real authority. */
-  var firstPartyPrincipal: js.UndefOr[FirstPartyPrincipal] = js.native
+  var firstPartyPrincipal: js.UndefOr[FirstPartyPrincipal] = js.undefined
   
   /** A string representing the principal_subject associated with the identity. See go/3pical for more info on how principal_subject is formatted. */
-  var principalSubject: js.UndefOr[String] = js.native
+  var principalSubject: js.UndefOr[String] = js.undefined
   
   /** Third party identity as the real authority. */
-  var thirdPartyPrincipal: js.UndefOr[ThirdPartyPrincipal] = js.native
+  var thirdPartyPrincipal: js.UndefOr[ThirdPartyPrincipal] = js.undefined
 }
 object ServiceAccountDelegationInfo {
   

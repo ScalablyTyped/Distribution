@@ -4,7 +4,6 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object line3Mod {
@@ -13,7 +12,7 @@ object line3Mod {
   @js.native
   class Line3 () extends StObject {
     def this(start: Vector3) = this()
-    def this(start: js.UndefOr[scala.Nothing], end: Vector3) = this()
+    def this(start: Unit, end: Vector3) = this()
     def this(start: Vector3, end: Vector3) = this()
     
     def applyMatrix4(matrix: Matrix4): Line3 = js.native
@@ -43,7 +42,7 @@ object line3Mod {
     def getCenter(target: Vector3): Vector3 = js.native
     
     def set(): Line3 = js.native
-    def set(start: js.UndefOr[scala.Nothing], end: Vector3): Line3 = js.native
+    def set(start: Unit, end: Vector3): Line3 = js.native
     def set(start: Vector3): Line3 = js.native
     def set(start: Vector3, end: Vector3): Line3 = js.native
     

@@ -2,67 +2,65 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Closed extends StObject {
   
   /**
     * 栅格线是否封闭
     * @type {true}
     */
-  var alternateColor: js.Any = js.native
+  var alternateColor: js.Any
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
   /**
     * 中心点
     * @type {object}
     */
-  var center: js.Any = js.native
+  var center: js.Any
   
   /**
     * 栅格线是否封闭
     * @type {true}
     */
-  var closed: Boolean = js.native
+  var closed: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var defaultCfg: LineType = js.native
+  var defaultCfg: LineType
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any]
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object Closed {
   
@@ -82,7 +80,7 @@ object Closed {
     isInit: Boolean,
     isRegister: Boolean,
     isUpdating: Boolean,
-    items: js.Array[_],
+    items: js.Array[js.Any],
     locationType: String,
     name: String,
     offsetX: Double,
@@ -142,7 +140,7 @@ object Closed {
     def setIsUpdating(value: Boolean): Self = StObject.set(x, "isUpdating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))

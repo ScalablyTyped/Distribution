@@ -2,25 +2,23 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveGetQuestionsResponseMod {
   
-  @js.native
   trait LiveGetQuestionsResponseQuestionsItem extends StObject {
     
-    var qid: String = js.native
+    var qid: String
     
-    var source: String = js.native
+    var source: String
     
-    var story_sticker_text: String = js.native
+    var story_sticker_text: String
     
-    var text: String = js.native
+    var text: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var user: LiveGetQuestionsResponseUser = js.native
+    var user: LiveGetQuestionsResponseUser
   }
   object LiveGetQuestionsResponseQuestionsItem {
     
@@ -60,12 +58,11 @@ object liveGetQuestionsResponseMod {
     }
   }
   
-  @js.native
   trait LiveGetQuestionsResponseRootObject extends StObject {
     
-    var questions: js.Array[LiveGetQuestionsResponseQuestionsItem] = js.native
+    var questions: js.Array[LiveGetQuestionsResponseQuestionsItem]
     
-    var status: String = js.native
+    var status: String
   }
   object LiveGetQuestionsResponseRootObject {
     
@@ -89,22 +86,21 @@ object liveGetQuestionsResponseMod {
     }
   }
   
-  @js.native
   trait LiveGetQuestionsResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveGetQuestionsResponseUser {
     

@@ -7,27 +7,25 @@ import typings.reactNative.mod.ImagePropertiesSourceOptions
 import typings.reactNative.mod.ImageURISource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultPropsTypeMod {
   
-  @js.native
   trait ResultPropsType extends StObject {
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var buttonType: js.UndefOr[primary | ghost] = js.native
+    var buttonType: js.UndefOr[primary | ghost] = js.undefined
     
-    var img: js.UndefOr[ReactNode] = js.native
+    var img: js.UndefOr[ReactNode] = js.undefined
     
-    var imgUrl: js.UndefOr[ImagePropertiesSourceOptions] = js.native
+    var imgUrl: js.UndefOr[ImagePropertiesSourceOptions] = js.undefined
     
-    var message: js.UndefOr[ReactNode] = js.native
+    var message: js.UndefOr[ReactNode] = js.undefined
     
-    var onButtonClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onButtonClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ResultPropsType {
     

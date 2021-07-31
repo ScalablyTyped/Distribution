@@ -1,6 +1,5 @@
 package typings.spdy
 
-import typings.node.tlsMod.TlsOptions
 import typings.spdy.anon.Connection
 import typings.spdy.anon.Plain
 import typings.spdy.mod.agent.Agent
@@ -8,12 +7,19 @@ import typings.spdy.mod.server.Server
 import typings.spdy.mod.socket.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("spdy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object agent {
+    
+    @JSImport("spdy", "agent")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("spdy", "agent.Agent")
     @js.native
@@ -29,15 +35,14 @@ object mod {
       def this(opts: typings.node.httpMod.AgentOptions) = this()
     }
     
-    @JSImport("spdy", "agent.create")
-    @js.native
-    def create(base: js.Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = js.native
+    @scala.inline
+    def create(base: js.Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent | typings.spdy.mod.agent.PlainAgent]
     
-    @js.native
     trait AgentOptions
-      extends typings.node.httpsMod.AgentOptions {
+      extends StObject
+         with typings.node.httpsMod.AgentOptions {
       
-      var spdy: js.UndefOr[Plain] = js.native
+      var spdy: js.UndefOr[Plain] = js.undefined
     }
     object AgentOptions {
       
@@ -59,15 +64,12 @@ object mod {
     }
   }
   
-  @JSImport("spdy", "createAgent")
-  @js.native
-  def createAgent(base: js.Any, options: AgentOptions): Agent_ | PlainAgent = js.native
-  @JSImport("spdy", "createAgent")
-  @js.native
-  def createAgent(options: AgentOptions): Agent_ | PlainAgent = js.native
+  @scala.inline
+  def createAgent(base: js.Any, options: AgentOptions): Agent_ | PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent_ | PlainAgent]
+  @scala.inline
+  def createAgent(options: AgentOptions): Agent_ | PlainAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(options.asInstanceOf[js.Any]).asInstanceOf[Agent_ | PlainAgent]
   
-  @JSImport("spdy", "createServer")
-  @js.native
+  @scala.inline
   def createServer(
     base: js.Any,
     options: ServerOptions,
@@ -76,18 +78,16 @@ object mod {
       /* response */ typings.node.httpMod.ServerResponse, 
       Unit
     ]
-  ): Server_ = js.native
-  @JSImport("spdy", "createServer")
-  @js.native
+  ): Server_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server_]
+  @scala.inline
   def createServer(
     handler: js.Function2[
       /* request */ IncomingMessage, 
       /* response */ typings.node.httpMod.ServerResponse, 
       Unit
     ]
-  ): Server_ = js.native
-  @JSImport("spdy", "createServer")
-  @js.native
+  ): Server_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(handler.asInstanceOf[js.Any]).asInstanceOf[Server_]
+  @scala.inline
   def createServer(
     options: ServerOptions,
     handler: js.Function2[
@@ -95,33 +95,40 @@ object mod {
       /* response */ typings.node.httpMod.ServerResponse, 
       Unit
     ]
-  ): Server_ = js.native
+  ): Server_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server_]
   
   object request {
     
-    @JSImport("spdy", "request.onNewListener")
+    @JSImport("spdy", "request")
     @js.native
-    def onNewListener(`type`: String): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def onNewListener(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNewListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object response {
     
-    @JSImport("spdy", "response.end")
+    @JSImport("spdy", "response")
     @js.native
-    def end(data: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("spdy", "response.writeHead")
-    @js.native
-    def writeHead(statusCode: Double, obj: js.Object): Unit = js.native
-    @JSImport("spdy", "response.writeHead")
-    @js.native
-    def writeHead(statusCode: Double, reason: String, obj: js.Object): Unit = js.native
+    @scala.inline
+    def end(data: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def writeHead(statusCode: Double, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeHead(statusCode: Double, reason: String, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object server {
     
-    @JSImport("spdy", "server.create")
+    @JSImport("spdy", "server")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def create(
       base: js.Any,
       options: typings.node.httpsMod.ServerOptions,
@@ -130,18 +137,16 @@ object mod {
           /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse, 
           Unit
         ]
-    ): Server = js.native
-    @JSImport("spdy", "server.create")
-    @js.native
+    ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server]
+    @scala.inline
     def create(
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
           /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse, 
           Unit
         ]
-    ): Server = js.native
-    @JSImport("spdy", "server.create")
-    @js.native
+    ): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(handler.asInstanceOf[js.Any]).asInstanceOf[Server]
+    @scala.inline
     def create(
       options: typings.node.httpsMod.ServerOptions,
       handler: js.Function2[
@@ -149,7 +154,7 @@ object mod {
           /* response */ typings.node.httpMod.ServerResponse, 
           Unit
         ]
-    ): Server = js.native
+    ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server]
     
     type IncomingMessage = typings.node.httpMod.IncomingMessage
     
@@ -185,16 +190,15 @@ object mod {
       def spdySlash3Dot1: typings.spdy.spdyStrings.spdySlash3Dot1 = "spdy/3.1".asInstanceOf[typings.spdy.spdyStrings.spdySlash3Dot1]
     }
     
-    @js.native
     trait PushOptions extends StObject {
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var request: js.UndefOr[js.Any] = js.native
+      var request: js.UndefOr[js.Any] = js.undefined
       
-      var response: js.UndefOr[js.Any] = js.native
+      var response: js.UndefOr[js.Any] = js.undefined
       
-      var status: js.UndefOr[Double] = js.native
+      var status: js.UndefOr[Double] = js.undefined
     }
     object PushOptions {
       
@@ -235,12 +239,11 @@ object mod {
     
     type Server = typings.node.httpsMod.Server
     
-    @js.native
     trait ServerOptions
-      extends TlsOptions
-         with typings.node.httpMod.ServerOptions {
+      extends StObject
+         with typings.node.httpsMod.ServerOptions {
       
-      var spdy: js.UndefOr[Connection] = js.native
+      var spdy: js.UndefOr[Connection] = js.undefined
     }
     object ServerOptions {
       
@@ -313,7 +316,6 @@ object mod {
   object socket {
     
     // tslint:disable-next-line no-empty-interface
-    @js.native
     trait Socket extends StObject
   }
 }

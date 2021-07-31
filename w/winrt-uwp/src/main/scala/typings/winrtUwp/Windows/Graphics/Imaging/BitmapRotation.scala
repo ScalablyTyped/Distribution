@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object BitmapRotation extends StObject {
   
   /** Perform a clockwise rotation of 180 degrees. */
   @js.native
-  sealed trait clockwise180Degrees extends BitmapRotation
+  sealed trait clockwise180Degrees
+    extends StObject
+       with BitmapRotation
   
   /** Perform a clockwise rotation of 270 degrees. */
   @js.native
-  sealed trait clockwise270Degrees extends BitmapRotation
+  sealed trait clockwise270Degrees
+    extends StObject
+       with BitmapRotation
   
   /** Perform a clockwise rotation of 90 degrees. */
   @js.native
-  sealed trait clockwise90Degrees extends BitmapRotation
+  sealed trait clockwise90Degrees
+    extends StObject
+       with BitmapRotation
   
   /** No rotation operation is performed. */
   @js.native
-  sealed trait none extends BitmapRotation
+  sealed trait none
+    extends StObject
+       with BitmapRotation
 }

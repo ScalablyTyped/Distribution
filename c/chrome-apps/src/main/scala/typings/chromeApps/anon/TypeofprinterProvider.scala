@@ -6,10 +6,8 @@ import typings.chromeApps.chrome.printerProvider.PrinterCapabilities
 import typings.chromeApps.chrome.printerProvider.PrinterInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofprinterProvider extends StObject {
   
   /** Event fired when print manager requests printer capabilities. */
@@ -19,7 +17,7 @@ trait TypeofprinterProvider extends StObject {
       /* resultCallback */ js.Function1[/* capabilities */ PrinterCapabilities, Unit], 
       Unit
     ]
-  ] = js.native
+  ]
   
   /** Event fired when print manager requests printers provided by extensions. */
   val onGetPrintersRequested: Event[
@@ -27,7 +25,7 @@ trait TypeofprinterProvider extends StObject {
       /* resultCallback */ js.Function1[/* printerInfo */ js.Array[PrinterInfo], Unit], 
       Unit
     ]
-  ] = js.native
+  ]
   
   /**
     * Event fired when print manager requests information about a USB device that may be a printer.
@@ -36,11 +34,11 @@ trait TypeofprinterProvider extends StObject {
     */
   val onGetUsbPrinterInfoRequested: Event[
     js.Function2[
-      /* device */ _, 
+      /* device */ js.Any, 
       /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
       Unit
     ]
-  ] = js.native
+  ]
   
   /** Event fired when print manager requests printing. */
   val onPrintRequested: Event[
@@ -49,7 +47,7 @@ trait TypeofprinterProvider extends StObject {
       /* resultCallback */ js.Function1[/* result */ String, Unit], 
       Unit
     ]
-  ] = js.native
+  ]
 }
 object TypeofprinterProvider {
   
@@ -70,7 +68,7 @@ object TypeofprinterProvider {
     ],
     onGetUsbPrinterInfoRequested: Event[
       js.Function2[
-        /* device */ _, 
+        /* device */ js.Any, 
         /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
         Unit
       ]
@@ -115,7 +113,7 @@ object TypeofprinterProvider {
     def setOnGetUsbPrinterInfoRequested(
       value: Event[
           js.Function2[
-            /* device */ _, 
+            /* device */ js.Any, 
             /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
             Unit
           ]

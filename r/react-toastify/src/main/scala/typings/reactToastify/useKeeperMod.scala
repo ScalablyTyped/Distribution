@@ -2,15 +2,16 @@ package typings.reactToastify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useKeeperMod {
   
-  @JSImport("react-toastify/dist/hooks/useKeeper", "useKeeper")
+  @JSImport("react-toastify/dist/hooks/useKeeper", JSImport.Namespace)
   @js.native
-  def useKeeper[T](arg: T): T = js.native
-  @JSImport("react-toastify/dist/hooks/useKeeper", "useKeeper")
-  @js.native
-  def useKeeper[T](arg: T, refresh: Boolean): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useKeeper[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def useKeeper[T](arg: T, refresh: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeeper")(arg.asInstanceOf[js.Any], refresh.asInstanceOf[js.Any])).asInstanceOf[T]
 }

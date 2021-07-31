@@ -2,15 +2,15 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseNode extends BaseNodeWithoutComments {
+trait BaseNode
+  extends StObject
+     with BaseNodeWithoutComments {
   
-  var leadingComments: js.UndefOr[js.Array[Comment]] = js.native
+  var leadingComments: js.UndefOr[js.Array[Comment]] = js.undefined
   
-  var trailingComments: js.UndefOr[js.Array[Comment]] = js.native
+  var trailingComments: js.UndefOr[js.Array[Comment]] = js.undefined
 }
 object BaseNode {
   

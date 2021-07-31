@@ -13,7 +13,6 @@ import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,26 +29,27 @@ object devtools {
     */
   object inspectedWindow {
     
+    @JSGlobal("browser.devtools.inspectedWindow")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* devtools.inspectedWindow functions */
     /**
       * Evaluates a JavaScript expression in the context of the main frame of the inspected page. The expression must evaluate to a JSON-compliant object, otherwise an exception is thrown. The eval function can report either a DevTools-side error or a JavaScript exception that occurs during evaluation. In either case, the `result` parameter of the callback is `undefined`. In the case of a DevTools-side error, the `isException` parameter is non-null and has `isError` set to true and `code` set to an error code. In the case of a JavaScript error, `isException` is set to true and `value` is set to the string value of thrown object.
       * @param expression An expression to evaluate.
       * @param [options] The options parameter can contain one or more options.
       */
-    @JSGlobal("browser.devtools.inspectedWindow.eval")
-    @js.native
-    def eval(expression: String): js.Promise[js.Object] = js.native
-    @JSGlobal("browser.devtools.inspectedWindow.eval")
-    @js.native
-    def eval(expression: String, options: EvalOptions): js.Promise[js.Object] = js.native
+    @scala.inline
+    def eval(expression: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+    @scala.inline
+    def eval(expression: String, options: EvalOptions): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
     
     /**
       * Retrieves the list of resources from the inspected page.
       * @deprecated Unsupported on Firefox at this time.
       */
-    @JSGlobal("browser.devtools.inspectedWindow.getResources")
-    @js.native
-    def getResources(): js.Promise[js.Array[Resource]] = js.native
+    @scala.inline
+    def getResources(): js.Promise[js.Array[Resource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResources")().asInstanceOf[js.Promise[js.Array[Resource]]]
     
     /* devtools.inspectedWindow events */
     /**
@@ -70,12 +70,10 @@ object devtools {
     val onResourceContentCommitted: js.UndefOr[WebExtEvent[js.Function2[/* resource */ Resource, /* content */ String, Unit]]] = js.native
     
     /** Reloads the inspected page. */
-    @JSGlobal("browser.devtools.inspectedWindow.reload")
-    @js.native
-    def reload(): Unit = js.native
-    @JSGlobal("browser.devtools.inspectedWindow.reload")
-    @js.native
-    def reload(reloadOptions: ReloadReloadOptions): Unit = js.native
+    @scala.inline
+    def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+    @scala.inline
+    def reload(reloadOptions: ReloadReloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* devtools.inspectedWindow properties */
     /** The ID of the tab being inspected. This ID may be used with browser.tabs.* API. */
@@ -91,11 +89,14 @@ object devtools {
     */
   object network {
     
+    @JSGlobal("browser.devtools.network")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* devtools.network functions */
     /** Returns HAR log that contains all known network requests. */
-    @JSGlobal("browser.devtools.network.getHAR")
-    @js.native
-    def getHAR(): js.Promise[StringDictionary[_]] = js.native
+    @scala.inline
+    def getHAR(): js.Promise[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")().asInstanceOf[js.Promise[StringDictionary[js.Any]]]
     
     /**
       * Fired when the inspected window navigates to a new page.
@@ -122,6 +123,10 @@ object devtools {
     */
   object panels {
     
+    @JSGlobal("browser.devtools.panels")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* devtools.panels functions */
     /**
       * Creates an extension panel.
@@ -129,12 +134,10 @@ object devtools {
       * @param iconPath Path of the panel's icon relative to the extension directory, or an empty string to use the default extension icon as the panel icon.
       * @param pagePath Path of the panel's HTML page relative to the extension directory.
       */
-    @JSGlobal("browser.devtools.panels.create")
-    @js.native
-    def create(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
-    @JSGlobal("browser.devtools.panels.create")
-    @js.native
-    def create(title: String, iconPath: _empty, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
+    @scala.inline
+    def create(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExtensionPanel]]
+    @scala.inline
+    def create(title: String, iconPath: _empty, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExtensionPanel]]
     
     /* devtools.panels properties */
     /** Elements panel. */
@@ -157,17 +160,15 @@ object devtools {
       * @param lineNumber Specifies the line number to scroll to when the resource is loaded.
       * @deprecated Unsupported on Firefox at this time.
       */
-    @JSGlobal("browser.devtools.panels.openResource")
-    @js.native
-    def openResource(url: String, lineNumber: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def openResource(url: String, lineNumber: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Specifies the function to be called when the user clicks a resource link in the Developer Tools window. To unset the handler, either call the method with no parameters or pass null as the parameter.
       * @deprecated Unsupported on Firefox at this time.
       */
-    @JSGlobal("browser.devtools.panels.setOpenResourceHandler")
-    @js.native
-    def setOpenResourceHandler(): js.Promise[Resource] = js.native
+    @scala.inline
+    def setOpenResourceHandler(): js.Promise[Resource] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")().asInstanceOf[js.Promise[Resource]]
     
     /** Sources panel. */
     @JSGlobal("browser.devtools.panels.sources")

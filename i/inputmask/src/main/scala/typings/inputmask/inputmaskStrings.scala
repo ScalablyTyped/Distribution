@@ -5,18 +5,21 @@ import typings.inputmask.mod.InputMode
 import typings.inputmask.mod.PositionCaretOnClick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputmaskStrings {
   
   @js.native
-  sealed trait decimal extends InputMode
+  sealed trait decimal
+    extends StObject
+       with InputMode
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait email extends InputMode
+  sealed trait email
+    extends StObject
+       with InputMode
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -36,7 +39,9 @@ object inputmaskStrings {
   def hasMaskedValue: hasMaskedValue = "hasMaskedValue".asInstanceOf[hasMaskedValue]
   
   @js.native
-  sealed trait ignore extends PositionCaretOnClick
+  sealed trait ignore
+    extends StObject
+       with PositionCaretOnClick
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
@@ -51,18 +56,23 @@ object inputmaskStrings {
   def isValid: isValid = "isValid".asInstanceOf[isValid]
   
   @js.native
-  sealed trait lower extends Casing
+  sealed trait lower
+    extends StObject
+       with Casing
   @scala.inline
   def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
-  sealed trait lvp extends PositionCaretOnClick
+  sealed trait lvp
+    extends StObject
+       with PositionCaretOnClick
   @scala.inline
   def lvp: lvp = "lvp".asInstanceOf[lvp]
   
   @js.native
   sealed trait none
-    extends InputMode
+    extends StObject
+       with InputMode
        with PositionCaretOnClick
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -73,7 +83,9 @@ object inputmaskStrings {
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait numeric extends InputMode
+  sealed trait numeric
+    extends StObject
+       with InputMode
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
@@ -83,7 +95,9 @@ object inputmaskStrings {
   def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait radixFocus extends PositionCaretOnClick
+  sealed trait radixFocus
+    extends StObject
+       with PositionCaretOnClick
   @scala.inline
   def radixFocus: radixFocus = "radixFocus".asInstanceOf[radixFocus]
   
@@ -93,12 +107,16 @@ object inputmaskStrings {
   def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait search extends InputMode
+  sealed trait search
+    extends StObject
+       with InputMode
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait select extends PositionCaretOnClick
+  sealed trait select
+    extends StObject
+       with PositionCaretOnClick
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
@@ -108,17 +126,23 @@ object inputmaskStrings {
   def setValue: setValue = "setValue".asInstanceOf[setValue]
   
   @js.native
-  sealed trait tel extends InputMode
+  sealed trait tel
+    extends StObject
+       with InputMode
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends InputMode
+  sealed trait text
+    extends StObject
+       with InputMode
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait title extends Casing
+  sealed trait title
+    extends StObject
+       with Casing
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   
@@ -128,17 +152,23 @@ object inputmaskStrings {
   def unmaskedvalue: unmaskedvalue = "unmaskedvalue".asInstanceOf[unmaskedvalue]
   
   @js.native
-  sealed trait upper extends Casing
+  sealed trait upper
+    extends StObject
+       with Casing
   @scala.inline
   def upper: upper = "upper".asInstanceOf[upper]
   
   @js.native
-  sealed trait url extends InputMode
+  sealed trait url
+    extends StObject
+       with InputMode
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait verbatim extends InputMode
+  sealed trait verbatim
+    extends StObject
+       with InputMode
   @scala.inline
   def verbatim: verbatim = "verbatim".asInstanceOf[verbatim]
 }

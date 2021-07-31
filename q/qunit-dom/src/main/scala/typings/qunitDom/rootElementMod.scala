@@ -3,16 +3,17 @@ package typings.qunitDom
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootElementMod {
   
-  @JSImport("qunit-dom/dist/root-element", "getRootElement")
+  @JSImport("qunit-dom/dist/root-element", JSImport.Namespace)
   @js.native
-  def getRootElement(): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("qunit-dom/dist/root-element", "overrideRootElement")
-  @js.native
-  def overrideRootElement(fn: js.Function0[Element]): Unit = js.native
+  @scala.inline
+  def getRootElement(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootElement")().asInstanceOf[Element]
+  
+  @scala.inline
+  def overrideRootElement(fn: js.Function0[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideRootElement")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

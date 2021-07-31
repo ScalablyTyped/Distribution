@@ -10,45 +10,43 @@ import typings.baseui.toastMod.ToastOverrides
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/toast.ToastProps & {  key :react.react.Key} */
-@js.native
 trait ToastPropskeyKey extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autoHideDuration: js.UndefOr[Double] = js.native
+  var autoHideDuration: js.UndefOr[Double] = js.undefined
   
-  var children: js.UndefOr[(js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode] = js.native
+  var children: js.UndefOr[(js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode] = js.undefined
   
-  var closeable: js.UndefOr[Boolean] = js.native
+  var closeable: js.UndefOr[Boolean] = js.undefined
   
-  var `data-baseweb`: js.UndefOr[String] = js.native
+  var `data-baseweb`: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[typings.react.mod.Key] with typings.react.mod.Key = js.native
+  var key: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key
   
-  var kind: js.UndefOr[info | positive | warning | negative] = js.native
+  var kind: js.UndefOr[info | positive | warning | negative] = js.undefined
   
-  var notificationType: js.UndefOr[`inline` | toast] = js.native
+  var notificationType: js.UndefOr[`inline` | toast] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ typings.std.Event, _]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ typings.std.Event, js.Any]] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[_]] = js.native
+  var onClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ typings.std.Event, _]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* e */ typings.std.Event, js.Any]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function1[/* e */ typings.std.Event, _]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* e */ typings.std.Event, js.Any]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Function1[/* e */ typings.std.Event, _]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function1[/* e */ typings.std.Event, js.Any]] = js.undefined
   
-  var overrides: js.UndefOr[ToastOverrides] = js.native
+  var overrides: js.UndefOr[ToastOverrides] = js.undefined
 }
 object ToastPropskeyKey {
   
   @scala.inline
-  def apply(key: js.UndefOr[typings.react.mod.Key] with typings.react.mod.Key): ToastPropskeyKey = {
+  def apply(key: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key): ToastPropskeyKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastPropskeyKey]
   }
@@ -90,7 +88,7 @@ object ToastPropskeyKey {
     def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
     
     @scala.inline
-    def setKey(value: js.UndefOr[typings.react.mod.Key] with typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    def setKey(value: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKind(value: info | positive | warning | negative): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -105,31 +103,31 @@ object ToastPropskeyKey {
     def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* e */ typings.std.Event => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* e */ typings.std.Event => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: /* e */ typings.std.Event => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: /* e */ typings.std.Event => _): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: /* e */ typings.std.Event => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)

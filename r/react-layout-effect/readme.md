@@ -12,7 +12,7 @@ Tiny package dedicated to an isomorphic `useLayoutEffect`.
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 6 |
-| # downloads        | 348435 |
+| # downloads        | 1389211 |
 | # stars            | 0 |
 
 ## Links

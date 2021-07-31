@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsOfResourceOutput extends StObject {
   
   /**
     * If this value is returned, there are additional results to be displayed. To retrieve them, call ListTagsOfResource again, with NextToken set to this value.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * The tags currently associated with the Amazon DynamoDB resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ListTagsOfResourceOutput {
   

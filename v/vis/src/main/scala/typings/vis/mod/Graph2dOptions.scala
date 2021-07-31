@@ -5,95 +5,93 @@ import typings.moment.mod.MomentFormatSpecification
 import typings.moment.mod.MomentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph2dOptions extends StObject {
   
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
-  var barChart: js.UndefOr[Graph2dOptionBarChart] = js.native
+  var barChart: js.UndefOr[Graph2dOptionBarChart] = js.undefined
   
-  var clickToUse: js.UndefOr[Boolean] = js.native
+  var clickToUse: js.UndefOr[Boolean] = js.undefined
   
-  var configure: js.UndefOr[TimelineOptionsConfigureType] = js.native
+  var configure: js.UndefOr[TimelineOptionsConfigureType] = js.undefined
   
-  var dataAxis: js.UndefOr[Graph2dOptionDataAxis] = js.native
+  var dataAxis: js.UndefOr[Graph2dOptionDataAxis] = js.undefined
   
-  var defaultGroup: js.UndefOr[String] = js.native
+  var defaultGroup: js.UndefOr[String] = js.undefined
   
-  var drawPoints: js.UndefOr[Graph2dOptionDrawPoints] = js.native
+  var drawPoints: js.UndefOr[Graph2dOptionDrawPoints] = js.undefined
   
-  var end: js.UndefOr[DateType] = js.native
+  var end: js.UndefOr[DateType] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.native
-  
-  // TODO
-  var graphHeight: js.UndefOr[HeightWidthType] = js.native
-  
-  var height: js.UndefOr[HeightWidthType] = js.native
-  
-  var hiddenDates: js.UndefOr[js.Any] = js.native
+  var format: js.UndefOr[js.Any] = js.undefined
   
   // TODO
-  var legend: js.UndefOr[Graph2dLegendOption] = js.native
+  var graphHeight: js.UndefOr[HeightWidthType] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var height: js.UndefOr[HeightWidthType] = js.undefined
   
-  var locales: js.UndefOr[Locales] = js.native
+  var hiddenDates: js.UndefOr[js.Any] = js.undefined
   
-  var max: js.UndefOr[DateType] = js.native
+  // TODO
+  var legend: js.UndefOr[Graph2dLegendOption] = js.undefined
   
-  var maxHeight: js.UndefOr[HeightWidthType] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxMinorChars: js.UndefOr[Double] = js.native
+  var locales: js.UndefOr[Locales] = js.undefined
   
-  var min: js.UndefOr[DateType] = js.native
+  var max: js.UndefOr[DateType] = js.undefined
   
-  var minHeight: js.UndefOr[HeightWidthType] = js.native
+  var maxHeight: js.UndefOr[HeightWidthType] = js.undefined
   
-  var moment: js.UndefOr[MomentConstructor] = js.native
+  var maxMinorChars: js.UndefOr[Double] = js.undefined
   
-  var moveable: js.UndefOr[Boolean] = js.native
+  var min: js.UndefOr[DateType] = js.undefined
   
-  var multiselect: js.UndefOr[Boolean] = js.native
+  var minHeight: js.UndefOr[HeightWidthType] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var moment: js.UndefOr[MomentConstructor] = js.undefined
   
-  var sampling: js.UndefOr[Boolean] = js.native
+  var moveable: js.UndefOr[Boolean] = js.undefined
   
-  var showCurrentTime: js.UndefOr[Boolean] = js.native
+  var multiselect: js.UndefOr[Boolean] = js.undefined
   
-  var showMajorLabels: js.UndefOr[Boolean] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var showMinorLabels: js.UndefOr[Boolean] = js.native
+  var sampling: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var showCurrentTime: js.UndefOr[Boolean] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var showMajorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[DateType] = js.native
+  var showMinorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[Graph2dStyleType] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
-  var throttleRedraw: js.UndefOr[Double] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
   
-  var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.native
+  var start: js.UndefOr[DateType] = js.undefined
   
-  var width: js.UndefOr[HeightWidthType] = js.native
+  var style: js.UndefOr[Graph2dStyleType] = js.undefined
   
-  var yAxisOrientation: js.UndefOr[RightLeftEnumType] = js.native
+  var throttleRedraw: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
   
-  var zoomKey: js.UndefOr[String] = js.native
+  var width: js.UndefOr[HeightWidthType] = js.undefined
   
-  var zoomMax: js.UndefOr[Double] = js.native
+  var yAxisOrientation: js.UndefOr[RightLeftEnumType] = js.undefined
   
-  var zoomMin: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
-  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomKey: js.UndefOr[String] = js.undefined
+  
+  var zoomMax: js.UndefOr[Double] = js.undefined
+  
+  var zoomMin: js.UndefOr[Double] = js.undefined
+  
+  var zoomable: js.UndefOr[Boolean] = js.undefined
 }
 object Graph2dOptions {
   

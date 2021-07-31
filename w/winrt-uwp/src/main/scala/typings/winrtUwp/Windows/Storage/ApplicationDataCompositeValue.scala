@@ -11,16 +11,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.mapchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents related app settings that must be serialized and deserialized atomically. */
 @js.native
 trait ApplicationDataCompositeValue extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, _]): Unit = js.native
+  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
   
   /** Removes all application settings previously inserted into the composite value object, returning the object to its empty state. */
   def clear(): Unit = js.native
@@ -29,13 +28,13 @@ trait ApplicationDataCompositeValue extends StObject {
     * Retrieves an iterator to enumerate the settings in the composite value.
     * @return The iterator.
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
   
   /**
     * Returns a read-only snapshot of the contents of the composite value.
     * @return The view of the composite value.
     */
-  def getView(): IMapView[String, _] = js.native
+  def getView(): IMapView[String, js.Any] = js.native
   
   /**
     * Determines whether there is an application setting with the specified key.
@@ -60,10 +59,10 @@ trait ApplicationDataCompositeValue extends StObject {
   def lookup(key: String): js.Any = js.native
   
   /** Occurs when the map changes. */
-  def onmapchanged(ev: IMapChangedEventArgs[String] with (WinRTEvent[IObservableMap[String, _]])): Unit = js.native
+  def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, js.Any]])): Unit = js.native
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
-  var onmapchanged_Original: MapChangedEventHandler[String, _] = js.native
+  var onmapchanged_Original: MapChangedEventHandler[String, js.Any] = js.native
   
   /**
     * Removes a specific item from the ApplicationDataCompositeValue .
@@ -72,9 +71,9 @@ trait ApplicationDataCompositeValue extends StObject {
     */
   def remove(key: String): Boolean = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, _]): Unit = js.native
+  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
   
   /**
     * Removes the value with the specified key.

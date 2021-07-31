@@ -2,15 +2,15 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalConstructedValueBlockParams extends LocalBaseBlockParams {
+trait LocalConstructedValueBlockParams
+  extends StObject
+     with LocalBaseBlockParams {
   
-  var isIndefiniteForm: js.UndefOr[scala.Boolean] = js.native
+  var isIndefiniteForm: js.UndefOr[scala.Boolean] = js.undefined
   
-  var value: js.UndefOr[LocalValueBlock] = js.native
+  var value: js.UndefOr[LocalValueBlock] = js.undefined
 }
 object LocalConstructedValueBlockParams {
   

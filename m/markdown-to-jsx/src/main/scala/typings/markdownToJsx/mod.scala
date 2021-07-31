@@ -14,57 +14,57 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("markdown-to-jsx", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("markdown-to-jsx", JSImport.Default)
   @js.native
   class default ()
     extends Component[MarkdownProps, js.Object, js.Any]
   
-  @JSImport("markdown-to-jsx", "compiler")
-  @js.native
-  def compiler(markdown: String): Element = js.native
-  @JSImport("markdown-to-jsx", "compiler")
-  @js.native
-  def compiler(markdown: String, options: MarkdownOptions): Element = js.native
+  @scala.inline
+  def compiler(markdown: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def compiler(markdown: String, options: MarkdownOptions): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   type ComponentOverride[P, S] = String | (ComponentClass[P, S]) | SFC[P] | (typings.markdownToJsx.anon.Component[P, S])
   
   type Markdown = Component[MarkdownProps, js.Object, js.Any]
   
-  @js.native
   trait MarkdownOptions extends StObject {
     
     /** Custom React.createElement behavior. */
     var createElement: js.UndefOr[
         js.Function3[
           /* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, 
-          /* props */ js.UndefOr[(Attributes with js.Object) | Null], 
+          /* props */ js.UndefOr[(Attributes & js.Object) | Null], 
           /* repeated */ ReactNode, 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** By default, raw HTML is parsed to JSX. This behavior can be disabled with this option. */
-    var disableParsingRawHTML: js.UndefOr[Boolean] = js.native
+    var disableParsingRawHTML: js.UndefOr[Boolean] = js.undefined
     
     /** Force all input strings to use block layout. */
-    var forceBlock: js.UndefOr[Boolean] = js.native
+    var forceBlock: js.UndefOr[Boolean] = js.undefined
     
     /** Force all input strings to use inline layout. */
-    var forceInline: js.UndefOr[Boolean] = js.native
+    var forceInline: js.UndefOr[Boolean] = js.undefined
     
     /** Override named html codes that should be converted to unicode characters. */
-    var namedCodesToUnicode: js.UndefOr[Record[String, String]] = js.native
+    var namedCodesToUnicode: js.UndefOr[Record[String, String]] = js.undefined
     
     /** Override representation of any HTML tag or custom component. */
-    var overrides: js.UndefOr[Dictkey] = js.native
+    var overrides: js.UndefOr[Dictkey] = js.undefined
     
     /** Custom function to generate an HTML id from headings. */
-    var slugify: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var slugify: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
   }
   object MarkdownOptions {
     
@@ -79,7 +79,7 @@ object mod {
       
       @scala.inline
       def setCreateElement(
-        value: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes with js.Object) | Null], /* repeated */ ReactNode) => ReactElement
+        value: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes & js.Object) | Null], /* repeated */ ReactNode) => ReactElement
       ): Self = StObject.set(x, "createElement", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -123,13 +123,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait MarkdownProps extends HTMLAttributes[HTMLElement] {
+  trait MarkdownProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     @JSName("children")
-    var children_MarkdownProps: String = js.native
+    var children_MarkdownProps: String
     
-    var options: js.UndefOr[MarkdownOptions] = js.native
+    var options: js.UndefOr[MarkdownOptions] = js.undefined
   }
   object MarkdownProps {
     

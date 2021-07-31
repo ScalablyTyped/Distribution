@@ -2,7 +2,6 @@ package typings.domInputevent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("InputEvent")
   @js.native
   class InputEvent protected ()
-    extends typings.domInputevent.InputEvent {
+    extends StObject
+       with typings.domInputevent.InputEvent {
     def this(`type`: String) = this()
     def this(`type`: String, eventInitDict: InputEventInit) = this()
   }

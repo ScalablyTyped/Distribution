@@ -2,26 +2,24 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSettingsResponse extends StObject {
   
   /**
     * Specifies whether persistent application settings are enabled for users during their streaming sessions.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The S3 bucket where users’ persistent application settings are stored. When persistent application settings are enabled for the first time for an account in an AWS Region, an S3 bucket is created. The bucket is unique to the AWS account and the Region. 
     */
-  var S3BucketName: js.UndefOr[String] = js.native
+  var S3BucketName: js.UndefOr[String] = js.undefined
   
   /**
     * The path prefix for the S3 bucket where users’ persistent application settings are stored.
     */
-  var SettingsGroup: js.UndefOr[typings.awsSdk.appstreamMod.SettingsGroup] = js.native
+  var SettingsGroup: js.UndefOr[typings.awsSdk.appstreamMod.SettingsGroup] = js.undefined
 }
 object ApplicationSettingsResponse {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryInfo extends StObject {
   
   /** Total internal storage on device in bytes. */
-  var totalInternalStorage: js.UndefOr[String] = js.native
+  var totalInternalStorage: js.UndefOr[String] = js.undefined
   
   /** Total RAM on device in bytes. */
-  var totalRam: js.UndefOr[String] = js.native
+  var totalRam: js.UndefOr[String] = js.undefined
 }
 object MemoryInfo {
   

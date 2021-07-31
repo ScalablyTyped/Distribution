@@ -2,26 +2,24 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWordAtPosition extends StObject {
   
   /**
     * The column where the word ends.
     */
-  val endColumn: Double = js.native
+  val endColumn: Double
   
   /**
     * The column where the word starts.
     */
-  val startColumn: Double = js.native
+  val startColumn: Double
   
   /**
     * The word.
     */
-  val word: String = js.native
+  val word: String
 }
 object IWordAtPosition {
   

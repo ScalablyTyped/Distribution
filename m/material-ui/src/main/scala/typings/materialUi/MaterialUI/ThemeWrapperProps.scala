@@ -3,13 +3,11 @@ package typings.materialUi.MaterialUI
 import typings.materialUi.MaterialUI.Styles.MuiTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeWrapperProps extends StObject {
   
-  var theme: MuiTheme = js.native
+  var theme: MuiTheme
 }
 object ThemeWrapperProps {
   

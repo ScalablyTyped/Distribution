@@ -2,43 +2,41 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridLineOptions extends StObject {
   
-  var borderDash: js.UndefOr[js.Array[Double]] = js.native
+  var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var borderDashOffset: js.UndefOr[Double] = js.native
+  var borderDashOffset: js.UndefOr[Double] = js.undefined
   
-  var circular: js.UndefOr[Boolean] = js.native
+  var circular: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[ChartColor] = js.native
+  var color: js.UndefOr[ChartColor] = js.undefined
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var drawBorder: js.UndefOr[Boolean] = js.native
+  var drawBorder: js.UndefOr[Boolean] = js.undefined
   
-  var drawOnChartArea: js.UndefOr[Boolean] = js.native
+  var drawOnChartArea: js.UndefOr[Boolean] = js.undefined
   
-  var drawTicks: js.UndefOr[Boolean] = js.native
+  var drawTicks: js.UndefOr[Boolean] = js.undefined
   
-  var lineWidth: js.UndefOr[Double | js.Array[Double]] = js.native
+  var lineWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var offsetGridLines: js.UndefOr[Boolean] = js.native
+  var offsetGridLines: js.UndefOr[Boolean] = js.undefined
   
-  var tickMarkLength: js.UndefOr[Double] = js.native
+  var tickMarkLength: js.UndefOr[Double] = js.undefined
   
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
   
-  var zeroLineBorderDash: js.UndefOr[js.Array[Double]] = js.native
+  var zeroLineBorderDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var zeroLineBorderDashOffset: js.UndefOr[Double] = js.native
+  var zeroLineBorderDashOffset: js.UndefOr[Double] = js.undefined
   
-  var zeroLineColor: js.UndefOr[ChartColor] = js.native
+  var zeroLineColor: js.UndefOr[ChartColor] = js.undefined
   
-  var zeroLineWidth: js.UndefOr[Double] = js.native
+  var zeroLineWidth: js.UndefOr[Double] = js.undefined
 }
 object GridLineOptions {
   

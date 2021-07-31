@@ -2,7 +2,6 @@ package typings.ecore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -118,7 +117,9 @@ object mod {
   def EIntegerObject_=(x: EIntegerObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIntegerObject")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait EList extends EObject {
+  trait EList
+    extends StObject
+       with EObject {
     
     def add(eObject: EObject): EList = js.native
     
@@ -155,11 +156,11 @@ object mod {
     
     def last(): EObject = js.native
     
-    def map(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, _]): js.Array[_] = js.native
+    def map(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, js.Any]): js.Array[js.Any] = js.native
     def map(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, _],
+      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, js.Any],
       context: js.Any
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = js.native
     
     def reject(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
     def reject(
@@ -265,7 +266,9 @@ object mod {
   def EOperation_=(x: EOperation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOperation")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait EPackage extends EObject {
+  trait EPackage
+    extends StObject
+       with EObject {
     
     var Registry: EPackageRegistry = js.native
   }
@@ -274,7 +277,9 @@ object mod {
   def EPackage: EPackage = js.native
   
   @js.native
-  trait EPackageRegistry extends EObject {
+  trait EPackageRegistry
+    extends StObject
+       with EObject {
     
     var Registry: EPackageRegistry = js.native
     
@@ -337,18 +342,17 @@ object mod {
   @scala.inline
   def ETypedElement_=(x: ETypedElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETypedElement")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Edit extends StObject {
     
-    def childDescriptors(`object`: EObject): js.Array[EObject] = js.native
+    def childDescriptors(`object`: EObject): js.Array[EObject]
     
-    def childTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject] = js.native
+    def childTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject]
     
-    def choiceOfValues(owner: EObject, feature: EObject): js.Array[EObject] = js.native
+    def choiceOfValues(owner: EObject, feature: EObject): js.Array[EObject]
     
-    def siblingDescriptors(`object`: EObject): js.Array[EObject] = js.native
+    def siblingDescriptors(`object`: EObject): js.Array[EObject]
     
-    def siblingTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject] = js.native
+    def siblingTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject]
   }
   object Edit {
     
@@ -384,7 +388,9 @@ object mod {
   def JSObject_=(x: JSObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSObject")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait Resource extends EObject {
+  trait Resource
+    extends StObject
+       with EObject {
     
     def add(value: EObject): Unit = js.native
     
@@ -416,7 +422,9 @@ object mod {
   def Resource: Resource = js.native
   
   @js.native
-  trait ResourceSet extends EObject {
+  trait ResourceSet
+    extends StObject
+       with EObject {
     
     def elements(): js.Array[EObject] = js.native
     def elements(`type`: String): js.Array[EObject] = js.native
@@ -428,15 +436,17 @@ object mod {
   }
   object ResourceSet {
     
-    @JSImport("ecore", "ResourceSet.create")
+    @JSImport("ecore", "ResourceSet")
     @js.native
-    def create(): ResourceSet = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): ResourceSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceSet]
   }
   
   @scala.inline
   def Resource_=(x: Resource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Resource")(x.asInstanceOf[js.Any])
   
-  @JSImport("ecore", "create")
-  @js.native
-  def create(eClass: EClass): EObject = js.native
+  @scala.inline
+  def create(eClass: EClass): EObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eClass.asInstanceOf[js.Any]).asInstanceOf[EObject]
 }

@@ -12,7 +12,7 @@ Automatically reboot workers when code changes.
 | Keywords           | socketcluter, reboot, reload, monitor, debugging |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 18963 |
+| # downloads        | 15995 |
 | # stars            | 0 |
 
 ## Links

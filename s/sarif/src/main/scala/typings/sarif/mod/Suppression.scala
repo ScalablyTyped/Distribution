@@ -4,41 +4,39 @@ import typings.sarif.mod.Suppression.kind
 import typings.sarif.mod.Suppression.status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Suppression extends StObject {
   
   /**
     * A stable, unique identifer for the suprression in the form of a GUID.
     */
-  var guid: js.UndefOr[String] = js.native
+  var guid: js.UndefOr[String] = js.undefined
   
   /**
     * A string representing the justification for the suppression.
     */
-  var justification: js.UndefOr[String] = js.native
+  var justification: js.UndefOr[String] = js.undefined
   
   /**
     * A string that indicates where the suppression is persisted.
     */
-  var kind: kind = js.native
+  var kind: kind
   
   /**
     * Identifies the location associated with the suppression.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the suppression.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A string that indicates the review status of the suppression.
     */
-  var status: js.UndefOr[status] = js.native
+  var status: js.UndefOr[status] = js.undefined
 }
 object Suppression {
   

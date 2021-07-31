@@ -3,7 +3,6 @@ package typings.auth0.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "UsersManager")
@@ -14,7 +13,7 @@ class UsersManager[A, U] protected () extends StObject {
   def getInfo(accessToken: String): js.Promise[User[A, U]] = js.native
   def getInfo(accessToken: String, cb: js.Function2[/* err */ Error, /* user */ User[A, U], Unit]): Unit = js.native
   
-  def impersonate(userId: String, settings: ImpersonateSettingOptions): js.Promise[_] = js.native
+  def impersonate(userId: String, settings: ImpersonateSettingOptions): js.Promise[js.Any] = js.native
   def impersonate(
     userId: String,
     settings: ImpersonateSettingOptions,

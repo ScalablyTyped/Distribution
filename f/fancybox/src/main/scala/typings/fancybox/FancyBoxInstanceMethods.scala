@@ -3,7 +3,6 @@ package typings.fancybox
 import typings.jquery.JQuery.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,9 +58,9 @@ trait FancyBoxInstanceMethods extends StObject {
     * @param nextHeight
     */
   def canPan(): Boolean = js.native
-  def canPan(nextWidth: js.UndefOr[scala.Nothing], nextHeight: Double): Boolean = js.native
   def canPan(nextWidth: Double): Boolean = js.native
   def canPan(nextWidth: Double, nextHeight: Double): Boolean = js.native
+  def canPan(nextWidth: Unit, nextHeight: Double): Boolean = js.native
   
   /**
     * Horizontally center slide
@@ -150,9 +149,9 @@ trait FancyBoxInstanceMethods extends StObject {
     * @param nextHeight
     */
   def isScaledDown(): Boolean = js.native
-  def isScaledDown(nextWidth: js.UndefOr[scala.Nothing], nextHeight: Double): Boolean = js.native
   def isScaledDown(nextWidth: Double): Boolean = js.native
   def isScaledDown(nextWidth: Double, nextHeight: Double): Boolean = js.native
+  def isScaledDown(nextWidth: Unit, nextHeight: Double): Boolean = js.native
   
   /**
     * Check if current slide is zoomable
@@ -219,13 +218,13 @@ trait FancyBoxInstanceMethods extends StObject {
     * @param duration
     */
   def scaleToActual(): Unit = js.native
-  def scaleToActual(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-  def scaleToActual(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def scaleToActual(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): Unit = js.native
   def scaleToActual(x: Double): Unit = js.native
-  def scaleToActual(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
   def scaleToActual(x: Double, y: Double): Unit = js.native
   def scaleToActual(x: Double, y: Double, duration: Double): Unit = js.native
+  def scaleToActual(x: Double, y: Unit, duration: Double): Unit = js.native
+  def scaleToActual(x: Unit, y: Double): Unit = js.native
+  def scaleToActual(x: Unit, y: Double, duration: Double): Unit = js.native
+  def scaleToActual(x: Unit, y: Unit, duration: Double): Unit = js.native
   
   /**
     * Scale image to fit inside parent element

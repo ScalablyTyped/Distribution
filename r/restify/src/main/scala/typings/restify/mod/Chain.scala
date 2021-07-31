@@ -2,29 +2,27 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chain extends StObject {
   
   /** Utilize the given middleware `handler` */
-  def add(handler: RequestHandler): Unit = js.native
+  def add(handler: RequestHandler): Unit
   
   /** Returns the number of handlers */
-  def count(): Double = js.native
+  def count(): Double
   
   /** Get handlers of a chain instance */
-  def getHandlers(): js.Array[RequestHandler] = js.native
+  def getHandlers(): js.Array[RequestHandler]
   
   /** Prevents calling next multiple times */
-  var onceNext: Boolean = js.native
+  var onceNext: Boolean
   
   /** Handle server requests, punting them down the middleware stack. */
-  def run(req: Request, res: Response, done: js.Function0[_]): Unit = js.native
+  def run(req: Request, res: Response, done: js.Function0[js.Any]): Unit
   
   /** Throws error when next() is called more than once, enables onceNext option */
-  var strictNext: Boolean = js.native
+  var strictNext: Boolean
 }
 object Chain {
   
@@ -34,7 +32,7 @@ object Chain {
     count: () => Double,
     getHandlers: () => js.Array[RequestHandler],
     onceNext: Boolean,
-    run: (Request, Response, js.Function0[_]) => Unit,
+    run: (Request, Response, js.Function0[js.Any]) => Unit,
     strictNext: Boolean
   ): Chain = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), count = js.Any.fromFunction0(count), getHandlers = js.Any.fromFunction0(getHandlers), onceNext = onceNext.asInstanceOf[js.Any], run = js.Any.fromFunction3(run), strictNext = strictNext.asInstanceOf[js.Any])
@@ -57,7 +55,7 @@ object Chain {
     def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: (Request, Response, js.Function0[_]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+    def setRun(value: (Request, Response, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
     @scala.inline
     def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])

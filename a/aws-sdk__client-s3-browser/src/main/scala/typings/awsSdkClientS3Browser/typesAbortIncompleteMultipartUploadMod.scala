@@ -2,18 +2,16 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAbortIncompleteMultipartUploadMod {
   
-  @js.native
   trait AbortIncompleteMultipartUpload extends StObject {
     
     /**
       * <p>Indicates the number of days that must pass since initiation for Lifecycle to abort an Incomplete Multipart Upload.</p>
       */
-    var DaysAfterInitiation: js.UndefOr[Double] = js.native
+    var DaysAfterInitiation: js.UndefOr[Double] = js.undefined
   }
   object AbortIncompleteMultipartUpload {
     

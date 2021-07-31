@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegrationDetails extends StObject {
   
   /** Additional details of the entry in string format. Must be UTF-8 encoded with a length of no more than 1000 characters. */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * An external identifier to be associated with the entry. The integration code will show up together with the entry in many places in the system, for example, reporting. Must be UTF-8
     * encoded with a length of no more than 500 characters.
     */
-  var integrationCode: js.UndefOr[String] = js.native
+  var integrationCode: js.UndefOr[String] = js.undefined
 }
 object IntegrationDetails {
   

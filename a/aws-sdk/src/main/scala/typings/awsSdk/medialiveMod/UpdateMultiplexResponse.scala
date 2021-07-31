@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMultiplexResponse extends StObject {
   
   /**
     * The updated multiplex.
     */
-  var Multiplex: js.UndefOr[typings.awsSdk.medialiveMod.Multiplex] = js.native
+  var Multiplex: js.UndefOr[typings.awsSdk.medialiveMod.Multiplex] = js.undefined
 }
 object UpdateMultiplexResponse {
   

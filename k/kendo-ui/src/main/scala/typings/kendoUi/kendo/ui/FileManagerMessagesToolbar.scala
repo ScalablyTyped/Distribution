@@ -2,45 +2,43 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerMessagesToolbar extends StObject {
   
-  var createFolder: js.UndefOr[String] = js.native
+  var createFolder: js.UndefOr[String] = js.undefined
   
-  var dateCreatedField: js.UndefOr[String] = js.native
+  var dateCreatedField: js.UndefOr[String] = js.undefined
   
-  var dateModifiedField: js.UndefOr[String] = js.native
+  var dateModifiedField: js.UndefOr[String] = js.undefined
   
-  var delete: js.UndefOr[String] = js.native
+  var delete: js.UndefOr[String] = js.undefined
   
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
-  var detailsChecked: js.UndefOr[String] = js.native
+  var detailsChecked: js.UndefOr[String] = js.undefined
   
-  var detailsUnchecked: js.UndefOr[String] = js.native
+  var detailsUnchecked: js.UndefOr[String] = js.undefined
   
-  var nameField: js.UndefOr[String] = js.native
+  var nameField: js.UndefOr[String] = js.undefined
   
-  var rename: js.UndefOr[String] = js.native
+  var rename: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var sizeField: js.UndefOr[String] = js.native
+  var sizeField: js.UndefOr[String] = js.undefined
   
-  var sortDirection: js.UndefOr[String] = js.native
+  var sortDirection: js.UndefOr[String] = js.undefined
   
-  var sortDirectionAsc: js.UndefOr[String] = js.native
+  var sortDirectionAsc: js.UndefOr[String] = js.undefined
   
-  var sortDirectionDesc: js.UndefOr[String] = js.native
+  var sortDirectionDesc: js.UndefOr[String] = js.undefined
   
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
-  var typeField: js.UndefOr[String] = js.native
+  var typeField: js.UndefOr[String] = js.undefined
   
-  var uploadDialog: js.UndefOr[String] = js.native
+  var uploadDialog: js.UndefOr[String] = js.undefined
 }
 object FileManagerMessagesToolbar {
   

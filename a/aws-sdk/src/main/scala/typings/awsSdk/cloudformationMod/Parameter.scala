@@ -2,31 +2,29 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * The key associated with the parameter. If you don't specify a key and value for a particular parameter, AWS CloudFormation uses the default value that is specified in your template.
     */
-  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.native
+  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.undefined
   
   /**
     * The input value associated with the parameter.
     */
-  var ParameterValue: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterValue] = js.native
+  var ParameterValue: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterValue] = js.undefined
   
   /**
     * Read-only. The value that corresponds to a Systems Manager parameter key. This field is returned only for  SSM parameter types in the template.
     */
-  var ResolvedValue: js.UndefOr[ParameterValue] = js.native
+  var ResolvedValue: js.UndefOr[ParameterValue] = js.undefined
   
   /**
     * During a stack update, use the existing parameter value that the stack is using for a given parameter key. If you specify true, do not specify a parameter value.
     */
-  var UsePreviousValue: js.UndefOr[typings.awsSdk.cloudformationMod.UsePreviousValue] = js.native
+  var UsePreviousValue: js.UndefOr[typings.awsSdk.cloudformationMod.UsePreviousValue] = js.undefined
 }
 object Parameter {
   

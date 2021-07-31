@@ -2,41 +2,39 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recommendation extends StObject {
   
   /**
     * How many different places in the profile graph triggered a match.
     */
-  var allMatchesCount: Integer = js.native
+  var allMatchesCount: Integer
   
   /**
     * How much of the total sample count is potentially affected.
     */
-  var allMatchesSum: Double = js.native
+  var allMatchesSum: Double
   
   /**
     * End time of the profile that was used by this analysis. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * The pattern that analysis recognized in the profile to make this recommendation.
     */
-  var pattern: Pattern = js.native
+  var pattern: Pattern
   
   /**
     * The start time of the profile that was used by this analysis. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
   
   /**
     * List of the matches with most impact. 
     */
-  var topMatches: Matches = js.native
+  var topMatches: Matches
 }
 object Recommendation {
   

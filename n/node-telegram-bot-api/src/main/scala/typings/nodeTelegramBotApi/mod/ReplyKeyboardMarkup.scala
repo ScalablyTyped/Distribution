@@ -2,19 +2,17 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplyKeyboardMarkup extends StObject {
   
-  var keyboard: js.Array[js.Array[KeyboardButton]] = js.native
+  var keyboard: js.Array[js.Array[KeyboardButton]]
   
-  var one_time_keyboard: js.UndefOr[Boolean] = js.native
+  var one_time_keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var resize_keyboard: js.UndefOr[Boolean] = js.native
+  var resize_keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var selective: js.UndefOr[Boolean] = js.native
+  var selective: js.UndefOr[Boolean] = js.undefined
 }
 object ReplyKeyboardMarkup {
   

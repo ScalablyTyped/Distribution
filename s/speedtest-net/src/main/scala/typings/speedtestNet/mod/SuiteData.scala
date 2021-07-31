@@ -4,15 +4,13 @@ import typings.speedtestNet.anon.Dynamic
 import typings.speedtestNet.anon.Latency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteData extends StObject {
   
-  var global: Dynamic = js.native
+  var global: Dynamic
   
-  var testStage: Latency = js.native
+  var testStage: Latency
 }
 object SuiteData {
   

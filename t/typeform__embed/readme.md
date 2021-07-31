@@ -4,21 +4,18 @@
 Typings are for version 0.22
 
 ## Library description:
-Library to embed Typeforms in your website
+Core library written in Typescript. Compiles to vanilla JavaScript.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @typeform/embed |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 71 |
 | # dependents       | 10 |
-| # downloads        | 1233298 |
+| # downloads        | 1518647 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/Typeform/embed#readme)
-- [Bugs](https://github.com/Typeform/embed/issues)
-- [Repository](https://github.com/Typeform/embed)
 - [Npm](https://www.npmjs.com/package/%40typeform%2Fembed)
     
 

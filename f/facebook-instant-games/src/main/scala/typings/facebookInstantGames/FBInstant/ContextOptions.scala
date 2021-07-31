@@ -2,26 +2,24 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextOptions extends StObject {
   
   /**
     * The set of filters to apply to the context suggestions.
     */
-  var filters: js.UndefOr[js.Array[ContextFilter]] = js.native
+  var filters: js.UndefOr[js.Array[ContextFilter]] = js.undefined
   
   /**
     * The maximum number of participants that a suggested context should ideally have.
     */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of participants that a suggested context should ideally have.
     */
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
 }
 object ContextOptions {
   

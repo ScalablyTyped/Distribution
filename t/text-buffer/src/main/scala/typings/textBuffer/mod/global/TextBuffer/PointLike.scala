@@ -2,18 +2,16 @@ package typings.textBuffer.mod.global.TextBuffer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface that should be implemented for all "point-compatible" objects. */
-@js.native
 trait PointLike extends StObject {
   
   /** A zero-indexed number representing the column of the Point. */
-  var column: Double = js.native
+  var column: Double
   
   /** A zero-indexed number representing the row of the Point. */
-  var row: Double = js.native
+  var row: Double
 }
 object PointLike {
   

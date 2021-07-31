@@ -10,13 +10,13 @@ YAML 1.2 parser and serializer
 | ------------------ | :-------------: |
 | Full name          | js-yaml |
 | Keywords           | yaml, parser, serializer, pyyaml |
-| # releases         | 6 |
-| # dependents       | 8939 |
-| # downloads        | 842368732 |
+| # releases         | 8 |
+| # dependents       | 9413 |
+| # downloads        | 948970125 |
 | # stars            | 121 |
 
 ## Links
-- [Homepage](https://github.com/nodeca/js-yaml)
+- [Homepage](https://github.com/nodeca/js-yaml#readme)
 - [Bugs](https://github.com/nodeca/js-yaml/issues)
 - [Repository](https://github.com/nodeca/js-yaml)
 - [Npm](https://www.npmjs.com/package/js-yaml)

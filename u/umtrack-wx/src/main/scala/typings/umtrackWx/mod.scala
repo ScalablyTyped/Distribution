@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.umtrackWx.mod.UMA.UMAStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,30 +17,29 @@ object mod extends Shortcut {
     
     type EventParams = String | StringDictionary[String]
     
-    @js.native
     trait InitParams extends StObject {
       
       /**
         * @description
         * APP_KEY distributed by the Umeng<https://www.umeng.com/>
         */
-      var appKey: String = js.native
+      var appKey: String
       
       /**
         * @description If you need to get openid from the Umeng backend, please go to the Umeng backend to set the miniprogram's appId and secret
         */
-      var autoGetOpenid: js.UndefOr[Boolean] = js.native
+      var autoGetOpenid: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @description debug mode
         */
-      var debug: js.UndefOr[Boolean] = js.native
+      var debug: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @description
         * Whether or not to use openid for statistics, if this is false, the user statistics will be used by "Umeng" + random ID
         */
-      var useOpenid: js.UndefOr[Boolean] = js.native
+      var useOpenid: js.UndefOr[Boolean] = js.undefined
     }
     object InitParams {
       

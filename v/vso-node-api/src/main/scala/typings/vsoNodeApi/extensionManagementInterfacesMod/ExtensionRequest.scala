@@ -4,46 +4,44 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionRequest extends StObject {
   
   /**
     * Required message supplied if the request is rejected
     */
-  var rejectMessage: String = js.native
+  var rejectMessage: String
   
   /**
     * Date at which the request was made
     */
-  var requestDate: Date = js.native
+  var requestDate: Date
   
   /**
     * Optional message supplied by the requester justifying the request
     */
-  var requestMessage: String = js.native
+  var requestMessage: String
   
   /**
     * Represents the state of the request
     */
-  var requestState: ExtensionRequestState = js.native
+  var requestState: ExtensionRequestState
   
   /**
     * Represents the user who made the request
     */
-  var requestedBy: IdentityRef = js.native
+  var requestedBy: IdentityRef
   
   /**
     * Date at which the request was resolved
     */
-  var resolveDate: Date = js.native
+  var resolveDate: Date
   
   /**
     * Represents the user who resolved the request
     */
-  var resolvedBy: IdentityRef = js.native
+  var resolvedBy: IdentityRef
 }
 object ExtensionRequest {
   

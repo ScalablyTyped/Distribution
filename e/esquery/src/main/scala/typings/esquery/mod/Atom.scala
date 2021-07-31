@@ -2,16 +2,14 @@ package typings.esquery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Base Atoms
 //
-@js.native
 trait Atom extends StObject {
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Atom {
   

@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedDBInstancesOfferingResult extends StObject {
   
-  var ReservedDBInstance: js.UndefOr[typings.awsSdk.rdsMod.ReservedDBInstance] = js.native
+  var ReservedDBInstance: js.UndefOr[typings.awsSdk.rdsMod.ReservedDBInstance] = js.undefined
 }
 object PurchaseReservedDBInstancesOfferingResult {
   

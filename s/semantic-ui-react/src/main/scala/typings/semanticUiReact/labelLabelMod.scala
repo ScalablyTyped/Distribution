@@ -32,7 +32,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelLabelMod extends Shortcut {
@@ -50,16 +49,18 @@ object labelLabelMod extends Shortcut {
   val default: LabelComponent = js.native
   
   @js.native
-  trait LabelComponent extends ComponentClass[LabelProps, ComponentState] {
+  trait LabelComponent
+    extends StObject
+       with ComponentClass[LabelProps, ComponentState] {
     
     var Detail: StatelessComponent[LabelDetailProps] = js.native
     
     var Group: StatelessComponent[LabelGroupProps] = js.native
   }
   
-  @js.native
   trait LabelProps
-    extends StrictLabelProps
+    extends StObject
+       with StrictLabelProps
        with /* key */ StringDictionary[js.Any]
   object LabelProps {
     
@@ -70,56 +71,55 @@ object labelLabelMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictLabelProps extends StObject {
     
     /** A label can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A label can attach to a content segment. */
-    var attached: js.UndefOr[top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)] = js.native
+    var attached: js.UndefOr[top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)] = js.undefined
     
     /** A label can reduce its complexity. */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** A label can be circular. */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Color of the label. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A label can position itself in the corner of an element. */
-    var corner: js.UndefOr[Boolean | left | right] = js.native
+    var corner: js.UndefOr[Boolean | left | right] = js.undefined
     
     /** Shorthand for LabelDetail. */
-    var detail: js.UndefOr[SemanticShorthandItem[LabelDetailProps]] = js.native
+    var detail: js.UndefOr[SemanticShorthandItem[LabelDetailProps]] = js.undefined
     
     /** Formats the label as a dot. */
-    var empty: js.UndefOr[js.Any] = js.native
+    var empty: js.UndefOr[js.Any] = js.undefined
     
     /** Float above another element in the upper right corner. */
-    var floating: js.UndefOr[Boolean] = js.native
+    var floating: js.UndefOr[Boolean] = js.undefined
     
     /** A horizontal label is formatted to label content along-side it horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** Add an icon by icon name or pass an <Icon /.> */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A label can be formatted to emphasize an image or prop can be used as shorthand for Image. */
-    var image: js.UndefOr[js.Any] = js.native
+    var image: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Called on click.
@@ -129,7 +129,7 @@ object labelLabelMod extends Shortcut {
       */
     var onClick: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ LabelProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Adds an "x" icon, called when "x" is clicked.
@@ -139,25 +139,25 @@ object labelLabelMod extends Shortcut {
       */
     var onRemove: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ LabelProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** A label can point to content next to it. */
-    var pointing: js.UndefOr[Boolean | above | below | left | right] = js.native
+    var pointing: js.UndefOr[Boolean | above | below | left | right] = js.undefined
     
     /** A label can prompt for an error in your forms. */
-    var prompt: js.UndefOr[Boolean] = js.native
+    var prompt: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for Icon to appear as the last child and trigger onRemove. */
-    var removeIcon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var removeIcon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A label can appear as a ribbon attaching itself to an element. */
-    var ribbon: js.UndefOr[Boolean | right] = js.native
+    var ribbon: js.UndefOr[Boolean | right] = js.undefined
     
     /** A label can have different sizes. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     /** A label can appear as a tag. */
-    var tag: js.UndefOr[Boolean] = js.native
+    var tag: js.UndefOr[Boolean] = js.undefined
   }
   object StrictLabelProps {
     

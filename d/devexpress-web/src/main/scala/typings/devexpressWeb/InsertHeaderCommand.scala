@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to activate the page header and begin editing.
   */
-@js.native
-trait InsertHeaderCommand extends CommandWithSimpleStateBase {
+trait InsertHeaderCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertHeaderCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertHeaderCommand {
   

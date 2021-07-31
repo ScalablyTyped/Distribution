@@ -14,7 +14,6 @@ import typings.angularCompiler.templateParserMod.TemplateParser
 import typings.angularCompiler.viewCompilerViewCompilerMod.ViewCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jitCompilerMod {
@@ -112,15 +111,14 @@ object jitCompilerMod {
     
     def hasAotSummary(ref: Type): Boolean = js.native
     
-    def loadAotSummaries(summaries: js.Function0[js.Array[_]]): Unit = js.native
+    def loadAotSummaries(summaries: js.Function0[js.Array[js.Any]]): Unit = js.native
   }
   
-  @js.native
   trait ModuleWithComponentFactories extends StObject {
     
-    var componentFactories: js.Array[js.Object] = js.native
+    var componentFactories: js.Array[js.Object]
     
-    var ngModuleFactory: js.Object = js.native
+    var ngModuleFactory: js.Object
   }
   object ModuleWithComponentFactories {
     

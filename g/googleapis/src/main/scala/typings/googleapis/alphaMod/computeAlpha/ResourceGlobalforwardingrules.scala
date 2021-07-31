@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Globalforwardingrules")
@@ -32,7 +31,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGlobalforwardingrulesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGlobalforwardingrulesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaForwardingRule] = js.native
   def get(callback: BodyResponseCallback[SchemaForwardingRule]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaForwardingRule] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaForwardingRule] = js.native
   def get(params: ParamsResourceGlobalforwardingrulesGet): GaxiosPromise[SchemaForwardingRule] = js.native
   def get(
     params: ParamsResourceGlobalforwardingrulesGet,
@@ -98,7 +97,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceGlobalforwardingrulesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceGlobalforwardingrulesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -132,7 +131,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaForwardingRuleList] = js.native
   def list(callback: BodyResponseCallback[SchemaForwardingRuleList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaForwardingRuleList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaForwardingRuleList] = js.native
   def list(params: ParamsResourceGlobalforwardingrulesList): GaxiosPromise[SchemaForwardingRuleList] = js.native
   def list(
     params: ParamsResourceGlobalforwardingrulesList,
@@ -170,7 +169,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceGlobalforwardingrulesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceGlobalforwardingrulesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -202,7 +201,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceGlobalforwardingrulesSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(
     params: ParamsResourceGlobalforwardingrulesSetlabels,
@@ -238,7 +237,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def setTarget(): GaxiosPromise[SchemaOperation] = js.native
   def setTarget(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setTarget(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setTarget(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setTarget(params: ParamsResourceGlobalforwardingrulesSettarget): GaxiosPromise[SchemaOperation] = js.native
   def setTarget(
     params: ParamsResourceGlobalforwardingrulesSettarget,
@@ -272,7 +271,7 @@ class ResourceGlobalforwardingrules protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceGlobalforwardingrulesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceGlobalforwardingrulesTestiampermissions,

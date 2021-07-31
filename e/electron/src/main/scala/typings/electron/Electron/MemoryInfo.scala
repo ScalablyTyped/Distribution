@@ -2,17 +2,15 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/memory-info
   /**
     * The maximum amount of memory that has ever been pinned to actual physical RAM.
     */
-  var peakWorkingSetSize: Double = js.native
+  var peakWorkingSetSize: Double
   
   /**
     * The amount of memory not shared by other processes, such as JS heap or HTML
@@ -20,12 +18,12 @@ trait MemoryInfo extends StObject {
     *
     * @platform win32
     */
-  var privateBytes: js.UndefOr[Double] = js.native
+  var privateBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of memory currently pinned to actual physical RAM.
     */
-  var workingSetSize: Double = js.native
+  var workingSetSize: Double
 }
 object MemoryInfo {
   

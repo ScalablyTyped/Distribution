@@ -3,13 +3,13 @@ package typings.mongorito.mod
 import typings.mongorito.mod.ActionTypes.REMOVE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveAction extends Action {
+trait RemoveAction
+  extends StObject
+     with Action {
   
-  var `type`: REMOVE = js.native
+  var `type`: REMOVE
 }
 object RemoveAction {
   

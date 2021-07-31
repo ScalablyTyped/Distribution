@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersUpdateShipmentRequest extends StObject {
   
   /**
@@ -13,33 +11,33 @@ trait SchemaOrdersUpdateShipmentRequest extends StObject {
     * shipments[].carrier in the  Orders resource representation for a list of
     * acceptable values.
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the shipment has been delivered, in ISO 8601 format.
     * Optional and can be provided only if status is delivered.
     */
-  var deliveryDate: js.UndefOr[String] = js.native
+  var deliveryDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the operation. Unique across all operations for a given order.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the shipment.
     */
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
   
   /**
     * New status for the shipment. Not updated if missing.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The tracking ID for the shipment. Not updated if missing.
     */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersUpdateShipmentRequest {
   

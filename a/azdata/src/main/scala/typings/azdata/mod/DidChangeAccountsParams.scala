@@ -2,14 +2,12 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeAccountsParams extends StObject {
   
   // Updated accounts
-  var accounts: js.Array[Account] = js.native
+  var accounts: js.Array[Account]
 }
 object DidChangeAccountsParams {
   

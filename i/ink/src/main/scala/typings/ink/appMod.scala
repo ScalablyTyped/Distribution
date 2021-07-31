@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMod {
@@ -30,9 +29,8 @@ object appMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("ink/build/components/App", "default.getDerivedStateFromError")
-    @js.native
-    def getDerivedStateFromError(error: Error): typings.ink.anon.Error = js.native
+    @scala.inline
+    def getDerivedStateFromError(error: Error): typings.ink.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.ink.anon.Error]
   }
   
   @js.native
@@ -83,12 +81,11 @@ object appMod {
     var state_App: ActiveFocusId = js.native
   }
   
-  @js.native
   trait Focusable extends StObject {
     
-    val id: String = js.native
+    val id: String
     
-    val isActive: Boolean = js.native
+    val isActive: Boolean
   }
   object Focusable {
     
@@ -130,16 +127,15 @@ object appMod {
     def writeToStdout(data: String): Unit = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
-    val activeFocusId: js.UndefOr[String] = js.native
+    val activeFocusId: js.UndefOr[String] = js.undefined
     
-    val error: js.UndefOr[Error] = js.native
+    val error: js.UndefOr[Error] = js.undefined
     
-    val focusables: js.Array[Focusable] = js.native
+    val focusables: js.Array[Focusable]
     
-    val isFocusEnabled: Boolean = js.native
+    val isFocusEnabled: Boolean
   }
   object State {
     

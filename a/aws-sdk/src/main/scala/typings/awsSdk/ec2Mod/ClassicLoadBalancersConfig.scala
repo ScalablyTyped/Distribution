@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassicLoadBalancersConfig extends StObject {
   
   /**
     * One or more Classic Load Balancers.
     */
-  var ClassicLoadBalancers: js.UndefOr[typings.awsSdk.ec2Mod.ClassicLoadBalancers] = js.native
+  var ClassicLoadBalancers: js.UndefOr[typings.awsSdk.ec2Mod.ClassicLoadBalancers] = js.undefined
 }
 object ClassicLoadBalancersConfig {
   

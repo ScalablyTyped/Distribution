@@ -3,25 +3,25 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerTempPasswordEntry extends ResponseEntry {
+trait ServerTempPasswordEntry
+  extends StObject
+     with ResponseEntry {
   
-  var desc: String = js.native
+  var desc: String
   
-  var end: Double = js.native
+  var end: Double
   
-  var nickname: String = js.native
+  var nickname: String
   
-  var pwClear: String = js.native
+  var pwClear: String
   
-  var start: Double = js.native
+  var start: Double
   
-  var tcid: String = js.native
+  var tcid: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object ServerTempPasswordEntry {
   

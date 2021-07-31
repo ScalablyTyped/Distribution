@@ -2,41 +2,39 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeploymentsInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.  If applicationName is specified, then deploymentGroupName must be specified. If it is not specified, then deploymentGroupName must not be specified.  
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.native
+  var applicationName: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * A time range (start and end) for returning a subset of the list of deployments.
     */
-  var createTimeRange: js.UndefOr[TimeRange] = js.native
+  var createTimeRange: js.UndefOr[TimeRange] = js.undefined
   
   /**
     * The name of a deployment group for the specified application.  If deploymentGroupName is specified, then applicationName must be specified. If it is not specified, then applicationName must not be specified.  
     */
-  var deploymentGroupName: js.UndefOr[DeploymentGroupName] = js.native
+  var deploymentGroupName: js.UndefOr[DeploymentGroupName] = js.undefined
   
   /**
     * The unique ID of an external resource for returning deployments linked to the external resource.
     */
-  var externalId: js.UndefOr[ExternalId] = js.native
+  var externalId: js.UndefOr[ExternalId] = js.undefined
   
   /**
     * A subset of deployments to list by status:    Created: Include created deployments in the resulting list.    Queued: Include queued deployments in the resulting list.    In Progress: Include in-progress deployments in the resulting list.    Succeeded: Include successful deployments in the resulting list.    Failed: Include failed deployments in the resulting list.    Stopped: Include stopped deployments in the resulting list.  
     */
-  var includeOnlyStatuses: js.UndefOr[DeploymentStatusList] = js.native
+  var includeOnlyStatuses: js.UndefOr[DeploymentStatusList] = js.undefined
   
   /**
     * An identifier returned from the previous list deployments call. It can be used to return the next set of deployments in the list.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDeploymentsInput {
   

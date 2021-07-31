@@ -2,7 +2,6 @@ package typings.matrixAppserviceBridge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
@@ -46,7 +45,7 @@ object requestMod {
       * respective methods are called on this Request.
       * @return {Promise} A promise
       */
-    def getPromise(): js.Promise[_] = js.native
+    def getPromise(): js.Promise[js.Any] = js.native
     
     var id: js.Any = js.native
     
@@ -57,7 +56,7 @@ object requestMod {
       * @param promise The promise whose resolution determines the outcome of this
       * request.
       */
-    def outcomeFrom(promise: js.Promise[_]): js.Promise[Unit] = js.native
+    def outcomeFrom(promise: js.Promise[js.Any]): js.Promise[Unit] = js.native
     
     var pending: js.Any = js.native
     
@@ -79,12 +78,11 @@ object requestMod {
     var startTs: js.Any = js.native
   }
   
-  @js.native
   trait RequestOpts[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object RequestOpts {
     
@@ -95,7 +93,7 @@ object requestMod {
     }
     
     @scala.inline
-    implicit class RequestOptsMutableBuilder[Self <: RequestOpts[_], T] (val x: Self with RequestOpts[T]) extends AnyVal {
+    implicit class RequestOptsMutableBuilder[Self <: RequestOpts[?], T] (val x: Self & RequestOpts[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

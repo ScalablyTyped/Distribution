@@ -5,28 +5,26 @@ import typings.awsSdkClientS3Node.typesTargetGrantMod.UnmarshalledTargetGrant
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLoggingEnabledMod {
   
-  @js.native
   trait LoggingEnabled extends StObject {
     
     /**
       * <p>Specifies the bucket where you want Amazon S3 to store server access logs. You can have your logs delivered to any bucket that you own, including the same bucket that is being logged. You can also configure multiple buckets to deliver their logs to the same target bucket. In this case you should choose a different TargetPrefix for each source bucket so that the delivered log files can be distinguished by key.</p>
       */
-    var TargetBucket: String = js.native
+    var TargetBucket: String
     
     /**
       * _TargetGrants shape
       */
-    var TargetGrants: js.UndefOr[js.Array[TargetGrant] | Iterable[TargetGrant]] = js.native
+    var TargetGrants: js.UndefOr[js.Array[TargetGrant] | Iterable[TargetGrant]] = js.undefined
     
     /**
       * <p>This element lets you specify a prefix for the keys that the log files will be stored under.</p>
       */
-    var TargetPrefix: String = js.native
+    var TargetPrefix: String
   }
   object LoggingEnabled {
     
@@ -56,14 +54,15 @@ object typesLoggingEnabledMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledLoggingEnabled extends LoggingEnabled {
+  trait UnmarshalledLoggingEnabled
+    extends StObject
+       with LoggingEnabled {
     
     /**
       * _TargetGrants shape
       */
     @JSName("TargetGrants")
-    var TargetGrants_UnmarshalledLoggingEnabled: js.UndefOr[js.Array[UnmarshalledTargetGrant]] = js.native
+    var TargetGrants_UnmarshalledLoggingEnabled: js.UndefOr[js.Array[UnmarshalledTargetGrant]] = js.undefined
   }
   object UnmarshalledLoggingEnabled {
     

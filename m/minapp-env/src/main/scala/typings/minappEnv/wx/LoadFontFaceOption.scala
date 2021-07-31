@@ -2,29 +2,27 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadFontFaceOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[LoadFontFaceCompleteCallback] = js.native
+  var complete: js.UndefOr[LoadFontFaceCompleteCallback] = js.undefined
   
   /** 可选的字体描述符 */
-  var desc: js.UndefOr[DescOption] = js.native
+  var desc: js.UndefOr[DescOption] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[LoadFontFaceFailCallback] = js.native
+  var fail: js.UndefOr[LoadFontFaceFailCallback] = js.undefined
   
   /** 定义的字体名称 */
-  var family: String = js.native
+  var family: String
   
   /** 字体资源的地址。建议格式为 TTF 和 WOFF，WOFF2 在低版本的iOS上会不兼容。 */
-  var source: String = js.native
+  var source: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[LoadFontFaceSuccessCallback] = js.native
+  var success: js.UndefOr[LoadFontFaceSuccessCallback] = js.undefined
 }
 object LoadFontFaceOption {
   

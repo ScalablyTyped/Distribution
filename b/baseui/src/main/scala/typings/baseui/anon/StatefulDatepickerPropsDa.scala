@@ -22,34 +22,32 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/datepicker.StatefulDatepickerProps<baseui.baseui/datepicker.DatepickerProps> */
-@js.native
 trait StatefulDatepickerPropsDa extends StObject {
   
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var autoFocusCalendar: js.UndefOr[Boolean] = js.native
+  var autoFocusCalendar: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Function1[/* args */ DatepickerProps, ReactNode]] = js.native
+  var children: js.UndefOr[js.Function1[/* args */ DatepickerProps, ReactNode]] = js.undefined
   
-  var clearable: js.UndefOr[Boolean] = js.native
+  var clearable: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var displayValueAtRangeIndex: js.UndefOr[Double] = js.native
+  var displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var excludeDates: js.UndefOr[js.Array[typings.std.Date]] = js.native
+  var excludeDates: js.UndefOr[js.Array[typings.std.Date]] = js.undefined
   
-  var filterDate: js.UndefOr[js.Function1[/* day */ typings.std.Date, Boolean]] = js.native
+  var filterDate: js.UndefOr[js.Function1[/* day */ typings.std.Date, Boolean]] = js.undefined
   
   var formatDisplayValue: js.UndefOr[
     js.Function2[
@@ -57,72 +55,72 @@ trait StatefulDatepickerPropsDa extends StObject {
       /* formatString */ String, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var formatString: js.UndefOr[String] = js.native
+  var formatString: js.UndefOr[String] = js.undefined
   
-  var highlightedDate: js.UndefOr[typings.std.Date] = js.native
+  var highlightedDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var includeDates: js.UndefOr[js.Array[typings.std.Date]] = js.native
+  var includeDates: js.UndefOr[js.Array[typings.std.Date]] = js.undefined
   
-  var initialState: js.UndefOr[ContainerState] = js.native
+  var initialState: js.UndefOr[ContainerState] = js.undefined
   
   // see https://github.com/date-fns/date-fns/blob/master/src/locale/index.js.flow
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
-  var mask: js.UndefOr[String | Null] = js.native
+  var mask: js.UndefOr[String | Null] = js.undefined
   
-  var maxDate: js.UndefOr[typings.std.Date] = js.native
+  var maxDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var minDate: js.UndefOr[typings.std.Date] = js.native
+  var minDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var monthsShown: js.UndefOr[Double] = js.native
+  var monthsShown: js.UndefOr[Double] = js.undefined
   
-  var mountNode: js.UndefOr[HTMLElement] = js.native
+  var mountNode: js.UndefOr[HTMLElement] = js.undefined
   
-  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.native
+  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[_]] = js.native
+  var onClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onDayClick: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onDayClick: js.UndefOr[js.Function1[/* args */ DateEvent, js.Any]] = js.undefined
   
-  var onDayMouseLeave: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onDayMouseLeave: js.UndefOr[js.Function1[/* args */ DateEvent, js.Any]] = js.undefined
   
-  var onDayMouseOver: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onDayMouseOver: js.UndefOr[js.Function1[/* args */ DateEvent, js.Any]] = js.undefined
   
-  var onMonthChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.native
+  var onMonthChange: js.UndefOr[js.Function1[/* args */ DateDate, js.Any]] = js.undefined
   
-  var onYearChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.native
+  var onYearChange: js.UndefOr[js.Function1[/* args */ DateDate, js.Any]] = js.undefined
   
-  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var overrides: js.UndefOr[DatepickerOverrides[SharedStylePropsT]] = js.native
+  var overrides: js.UndefOr[DatepickerOverrides[SharedStylePropsT]] = js.undefined
   
-  var peekNextMonth: js.UndefOr[Boolean] = js.native
+  var peekNextMonth: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var positive: js.UndefOr[Boolean] = js.native
+  var positive: js.UndefOr[Boolean] = js.undefined
   
-  var quickSelect: js.UndefOr[Boolean] = js.native
+  var quickSelect: js.UndefOr[Boolean] = js.undefined
   
-  var quickSelectOptions: js.UndefOr[js.Array[BeginDate]] = js.native
+  var quickSelectOptions: js.UndefOr[js.Array[BeginDate]] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   
-  var stateReducer: js.UndefOr[StateReducer] = js.native
+  var stateReducer: js.UndefOr[StateReducer] = js.undefined
   
-  var timeSelectEnd: js.UndefOr[Boolean] = js.native
+  var timeSelectEnd: js.UndefOr[Boolean] = js.undefined
   
-  var timeSelectStart: js.UndefOr[Boolean] = js.native
+  var timeSelectStart: js.UndefOr[Boolean] = js.undefined
   
-  var trapTabbing: js.UndefOr[Boolean] = js.native
+  var trapTabbing: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[typings.std.Date | js.Array[typings.std.Date] | Null] = js.native
+  var value: js.UndefOr[typings.std.Date | js.Array[typings.std.Date] | Null] = js.undefined
 }
 object StatefulDatepickerPropsDa {
   
@@ -285,37 +283,37 @@ object StatefulDatepickerPropsDa {
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnClose(value: () => _): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnDayClick(value: /* args */ DateEvent => _): Self = StObject.set(x, "onDayClick", js.Any.fromFunction1(value))
+    def setOnDayClick(value: /* args */ DateEvent => js.Any): Self = StObject.set(x, "onDayClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDayClickUndefined: Self = StObject.set(x, "onDayClick", js.undefined)
     
     @scala.inline
-    def setOnDayMouseLeave(value: /* args */ DateEvent => _): Self = StObject.set(x, "onDayMouseLeave", js.Any.fromFunction1(value))
+    def setOnDayMouseLeave(value: /* args */ DateEvent => js.Any): Self = StObject.set(x, "onDayMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnDayMouseOver(value: /* args */ DateEvent => _): Self = StObject.set(x, "onDayMouseOver", js.Any.fromFunction1(value))
+    def setOnDayMouseOver(value: /* args */ DateEvent => js.Any): Self = StObject.set(x, "onDayMouseOver", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDayMouseOverUndefined: Self = StObject.set(x, "onDayMouseOver", js.undefined)
     
     @scala.inline
-    def setOnMonthChange(value: /* args */ DateDate => _): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
+    def setOnMonthChange(value: /* args */ DateDate => js.Any): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
     
     @scala.inline
-    def setOnYearChange(value: /* args */ DateDate => _): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
+    def setOnYearChange(value: /* args */ DateDate => js.Any): Self = StObject.set(x, "onYearChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnYearChangeUndefined: Self = StObject.set(x, "onYearChange", js.undefined)

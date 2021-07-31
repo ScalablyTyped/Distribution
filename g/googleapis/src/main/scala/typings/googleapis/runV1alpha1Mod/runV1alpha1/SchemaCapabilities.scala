@@ -2,24 +2,22 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds and removes POSIX capabilities from running containers.
   */
-@js.native
 trait SchemaCapabilities extends StObject {
   
   /**
     * Added capabilities +optional
     */
-  var add: js.UndefOr[js.Array[String]] = js.native
+  var add: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Removed capabilities +optional
     */
-  var drop: js.UndefOr[js.Array[String]] = js.native
+  var drop: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCapabilities {
   

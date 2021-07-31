@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationManagedRuleMod {
@@ -83,6 +82,10 @@ object organizationManagedRuleMod {
   /* static members */
   object OrganizationManagedRule {
     
+    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationManagedRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,80 +95,74 @@ object organizationManagedRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): OrganizationManagedRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OrganizationManagedRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState): OrganizationManagedRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState, opts: CustomResourceOptions): OrganizationManagedRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): OrganizationManagedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationManagedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationManagedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationManagedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState): OrganizationManagedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationManagedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationManagedRuleState, opts: CustomResourceOptions): OrganizationManagedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationManagedRule]
     
     /**
       * Returns true if the given object is an instance of OrganizationManagedRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/organizationManagedRule", "OrganizationManagedRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationManagedRule.OrganizationManagedRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationManagedRule.OrganizationManagedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/organizationManagedRule.OrganizationManagedRule */ Boolean]
   }
   
-  @js.native
   trait OrganizationManagedRuleArgs extends StObject {
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of AWS account identifiers to exclude from the rule
       */
-    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config Rule Lambda Function
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at a periodic frequency. Defaults to `TwentyFour_Hours` for periodic frequency triggered rules. Valid values: `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the AWS resource to evaluate
       */
-    val resourceIdScope: js.UndefOr[Input[String]] = js.native
+    val resourceIdScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of types of AWS resources to evaluate
       */
-    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Identifier of an available AWS Config Managed Rule to call. For available values, see the [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) documentation
       */
-    val ruleIdentifier: Input[String] = js.native
+    val ruleIdentifier: Input[String]
     
     /**
       * Tag key of AWS resources to evaluate
       */
-    val tagKeyScope: js.UndefOr[Input[String]] = js.native
+    val tagKeyScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tag value of AWS resources to evaluate
       */
-    val tagValueScope: js.UndefOr[Input[String]] = js.native
+    val tagValueScope: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationManagedRuleArgs {
     
@@ -243,63 +240,62 @@ object organizationManagedRuleMod {
     }
   }
   
-  @js.native
   trait OrganizationManagedRuleState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the rule
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of AWS account identifiers to exclude from the rule
       */
-    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config Rule Lambda Function
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at a periodic frequency. Defaults to `TwentyFour_Hours` for periodic frequency triggered rules. Valid values: `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the AWS resource to evaluate
       */
-    val resourceIdScope: js.UndefOr[Input[String]] = js.native
+    val resourceIdScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of types of AWS resources to evaluate
       */
-    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Identifier of an available AWS Config Managed Rule to call. For available values, see the [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) documentation
       */
-    val ruleIdentifier: js.UndefOr[Input[String]] = js.native
+    val ruleIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tag key of AWS resources to evaluate
       */
-    val tagKeyScope: js.UndefOr[Input[String]] = js.native
+    val tagKeyScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tag value of AWS resources to evaluate
       */
-    val tagValueScope: js.UndefOr[Input[String]] = js.native
+    val tagValueScope: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationManagedRuleState {
     

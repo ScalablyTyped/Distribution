@@ -2,23 +2,21 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnchor extends StObject {
   
-  var col: Double = js.native
+  var col: Double
   
-  var nativeCol: Double = js.native
+  var nativeCol: Double
   
-  var nativeColOff: Double = js.native
+  var nativeColOff: Double
   
-  var nativeRow: Double = js.native
+  var nativeRow: Double
   
-  var nativeRowOff: Double = js.native
+  var nativeRowOff: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object IAnchor {
   

@@ -4,16 +4,14 @@ import typings.storybookAddonKnobs.radioMod.RadiosTypeKnobValue
 import typings.storybookAddonKnobs.radioMod.RadiosTypeOptionsProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.RadiosTypeKnob, 'value' | 'options'> */
-@js.native
 trait PickRadiosTypeKnobvalueop extends StObject {
   
-  var options: RadiosTypeOptionsProp[RadiosTypeKnobValue] = js.native
+  var options: RadiosTypeOptionsProp[RadiosTypeKnobValue]
   
-  var value: RadiosTypeKnobValue = js.native
+  var value: RadiosTypeKnobValue
 }
 object PickRadiosTypeKnobvalueop {
   

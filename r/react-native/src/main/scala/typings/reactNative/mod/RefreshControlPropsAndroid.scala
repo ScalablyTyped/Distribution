@@ -2,37 +2,37 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefreshControlPropsAndroid extends ViewProps {
+trait RefreshControlPropsAndroid
+  extends StObject
+     with ViewProps {
   
   /**
     * The colors (at least one) that will be used to draw the refresh indicator.
     */
-  var colors: js.UndefOr[js.Array[ColorValue]] = js.native
+  var colors: js.UndefOr[js.Array[ColorValue]] = js.undefined
   
   /**
     * Whether the pull to refresh functionality is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The background color of the refresh indicator.
     */
-  var progressBackgroundColor: js.UndefOr[ColorValue] = js.native
+  var progressBackgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Progress view top offset
     * @platform android
     */
-  var progressViewOffset: js.UndefOr[Double] = js.native
+  var progressViewOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * Size of the refresh indicator, see RefreshControl.SIZE.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object RefreshControlPropsAndroid {
   

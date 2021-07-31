@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShiftItem extends ScheduleEntity {
+trait ShiftItem
+  extends StObject
+     with ScheduleEntity {
   
   /**
     * An incremental part of a shift which can cover details of when and where an employee is during their shift. For
     * example, an assignment or a scheduled break or lunch. Required.
     */
-  var activities: js.UndefOr[NullableOption[js.Array[ShiftActivity]]] = js.native
+  var activities: js.UndefOr[NullableOption[js.Array[ShiftActivity]]] = js.undefined
   
   // The shift label of the shiftItem.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The shift notes for the shiftItem.
-  var notes: js.UndefOr[NullableOption[String]] = js.native
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ShiftItem {
   

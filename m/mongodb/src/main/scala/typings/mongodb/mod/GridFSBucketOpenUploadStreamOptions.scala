@@ -2,19 +2,17 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFSBucketOpenUploadStreamOptions extends StObject {
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var chunkSizeBytes: js.UndefOr[scala.Double] = js.native
+  var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
 }
 object GridFSBucketOpenUploadStreamOptions {
   

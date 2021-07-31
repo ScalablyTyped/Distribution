@@ -10,9 +10,9 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/g-base |
 | Keywords           | util, antv, g |
-| # releases         | 57 |
-| # dependents       | 12 |
-| # downloads        | 553972 |
+| # releases         | 60 |
+| # dependents       | 17 |
+| # downloads        | 975965 |
 | # stars            | 0 |
 
 ## Links

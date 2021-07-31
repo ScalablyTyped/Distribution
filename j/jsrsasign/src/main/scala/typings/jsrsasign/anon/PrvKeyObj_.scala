@@ -3,15 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrvKeyObj_ extends StObject {
   
-  var prvKeyObj: RSAKey = js.native
+  var prvKeyObj: RSAKey
   
-  var pubKeyObj: RSAKey = js.native
+  var pubKeyObj: RSAKey
 }
 object PrvKeyObj_ {
   

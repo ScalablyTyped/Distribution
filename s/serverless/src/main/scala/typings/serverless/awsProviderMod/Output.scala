@@ -3,19 +3,17 @@ package typings.serverless.awsProviderMod
 import typings.serverless.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
-  var Condition: js.UndefOr[js.Any] = js.native
+  var Condition: js.UndefOr[js.Any] = js.undefined
   
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
-  var Export: js.UndefOr[Name] = js.native
+  var Export: js.UndefOr[Name] = js.undefined
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object Output {
   

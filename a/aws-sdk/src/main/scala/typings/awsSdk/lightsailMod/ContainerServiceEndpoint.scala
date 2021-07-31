@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerServiceEndpoint extends StObject {
   
   /**
     * The name of the container entry of the deployment that the endpoint configuration applies to.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * The port of the specified container to which traffic is forwarded to.
     */
-  var containerPort: js.UndefOr[integer] = js.native
+  var containerPort: js.UndefOr[integer] = js.undefined
   
   /**
     * An object that describes the health check configuration of the container.
     */
-  var healthCheck: js.UndefOr[ContainerServiceHealthCheckConfig] = js.native
+  var healthCheck: js.UndefOr[ContainerServiceHealthCheckConfig] = js.undefined
 }
 object ContainerServiceEndpoint {
   

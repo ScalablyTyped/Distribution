@@ -5,68 +5,66 @@ import typings.reactVis.reactVisStrings.bottom
 import typings.reactVis.reactVisStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XAxisProps extends StObject {
   
   // default: 'bottom'
-  var attr: js.UndefOr[String] = js.native
+  var attr: js.UndefOr[String] = js.undefined
   
   // default: 'x'
-  var attrAxis: js.UndefOr[String] = js.native
+  var attrAxis: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hideLine: js.UndefOr[Boolean] = js.native
+  var hideLine: js.UndefOr[Boolean] = js.undefined
   
-  var hideTicks: js.UndefOr[Boolean] = js.native
+  var hideTicks: js.UndefOr[Boolean] = js.undefined
   
-  var innerHeight: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.undefined
   
-  var innerWidth: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var on0: js.UndefOr[Boolean] = js.native
+  var on0: js.UndefOr[Boolean] = js.undefined
   
-  var orientation: js.UndefOr[top | bottom] = js.native
+  var orientation: js.UndefOr[top | bottom] = js.undefined
   
-  var style: js.UndefOr[CSSPropertieslineCSSPrope] = js.native
+  var style: js.UndefOr[CSSPropertieslineCSSPrope] = js.undefined
   
-  var tickFormat: js.UndefOr[RVTickFormat] = js.native
+  var tickFormat: js.UndefOr[RVTickFormat] = js.undefined
   
-  var tickLabelAngle: js.UndefOr[Double] = js.native
+  var tickLabelAngle: js.UndefOr[Double] = js.undefined
   
-  var tickPadding: js.UndefOr[Double] = js.native
+  var tickPadding: js.UndefOr[Double] = js.undefined
   
-  var tickSize: js.UndefOr[Double] = js.native
+  var tickSize: js.UndefOr[Double] = js.undefined
   
-  var tickSizeInner: js.UndefOr[Double] = js.native
+  var tickSizeInner: js.UndefOr[Double] = js.undefined
   
-  var tickSizeOuter: js.UndefOr[Double] = js.native
+  var tickSizeOuter: js.UndefOr[Double] = js.undefined
   
-  var tickTotal: js.UndefOr[Double] = js.native
+  var tickTotal: js.UndefOr[Double] = js.undefined
   
-  var tickValues: js.UndefOr[js.Array[_]] = js.native
+  var tickValues: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   // default: 'y'
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object XAxisProps {
   
@@ -218,7 +216,7 @@ object XAxisProps {
     def setTickTotalUndefined: Self = StObject.set(x, "tickTotal", js.undefined)
     
     @scala.inline
-    def setTickValues(value: js.Array[_]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
+    def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)

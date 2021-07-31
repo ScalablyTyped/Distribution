@@ -2,15 +2,13 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PictureType extends StObject {
   
-  var data: js.Array[Double] = js.native
+  var data: js.Array[Double]
   
-  var format: String = js.native
+  var format: String
 }
 object PictureType {
   

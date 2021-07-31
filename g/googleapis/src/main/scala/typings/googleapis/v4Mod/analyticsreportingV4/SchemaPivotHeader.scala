@@ -2,24 +2,22 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The headers for each of the pivot sections defined in the request.
   */
-@js.native
 trait SchemaPivotHeader extends StObject {
   
   /**
     * A single pivot section header.
     */
-  var pivotHeaderEntries: js.UndefOr[js.Array[SchemaPivotHeaderEntry]] = js.native
+  var pivotHeaderEntries: js.UndefOr[js.Array[SchemaPivotHeaderEntry]] = js.undefined
   
   /**
     * The total number of groups for this pivot.
     */
-  var totalPivotGroupsCount: js.UndefOr[Double] = js.native
+  var totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaPivotHeader {
   

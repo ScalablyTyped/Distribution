@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ImportAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAttribute_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var key: Identifier_ | StringLiteral_ = js.native
+  var key: Identifier_ | StringLiteral_
   
   @JSName("type")
-  var type_ImportAttribute_ : ImportAttribute = js.native
+  var type_ImportAttribute_ : ImportAttribute
   
-  var value: StringLiteral_ = js.native
+  var value: StringLiteral_
 }
 object ImportAttribute_ {
   
   @scala.inline
-  def apply(key: Identifier_ | StringLiteral_, `type`: ImportAttribute, value: StringLiteral_): ImportAttribute_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(key: Identifier_ | StringLiteral_, value: StringLiteral_): ImportAttribute_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ImportAttribute")
     __obj.asInstanceOf[ImportAttribute_]
   }
   

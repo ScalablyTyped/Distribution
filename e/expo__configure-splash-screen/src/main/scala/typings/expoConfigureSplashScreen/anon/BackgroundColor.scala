@@ -3,15 +3,13 @@ package typings.expoConfigureSplashScreen.anon
 import typings.colorString.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
 }
 object BackgroundColor {
   

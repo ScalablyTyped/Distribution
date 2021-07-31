@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Node.typesReplicationRuleMod.UnmarshalledReplicatio
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicationConfigurationMod {
   
-  @js.native
   trait ReplicationConfiguration extends StObject {
     
     /**
       * <p>Amazon Resource Name (ARN) of an IAM role for Amazon S3 to assume when replicating the objects.</p>
       */
-    var Role: String = js.native
+    var Role: String
     
     /**
       * <p>Container for one or more replication rules. Replication configuration must have at least one rule and can contain up to 1,000 rules. </p>
       */
-    var Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule] = js.native
+    var Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]
   }
   object ReplicationConfiguration {
     
@@ -45,14 +43,15 @@ object typesReplicationConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicationConfiguration extends ReplicationConfiguration {
+  trait UnmarshalledReplicationConfiguration
+    extends StObject
+       with ReplicationConfiguration {
     
     /**
       * <p>Container for one or more replication rules. Replication configuration must have at least one rule and can contain up to 1,000 rules. </p>
       */
     @JSName("Rules")
-    var Rules_UnmarshalledReplicationConfiguration: js.Array[UnmarshalledReplicationRule] = js.native
+    var Rules_UnmarshalledReplicationConfiguration: js.Array[UnmarshalledReplicationRule]
   }
   object UnmarshalledReplicationConfiguration {
     

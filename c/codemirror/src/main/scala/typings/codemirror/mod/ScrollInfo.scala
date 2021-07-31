@@ -2,23 +2,21 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollInfo extends StObject {
   
-  var clientHeight: js.Any = js.native
+  var clientHeight: js.Any
   
-  var clientWidth: js.Any = js.native
+  var clientWidth: js.Any
   
-  var height: js.Any = js.native
+  var height: js.Any
   
-  var left: js.Any = js.native
+  var left: js.Any
   
-  var top: js.Any = js.native
+  var top: js.Any
   
-  var width: js.Any = js.native
+  var width: js.Any
 }
 object ScrollInfo {
   

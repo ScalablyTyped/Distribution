@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.postTrashMod.PostTrash.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postTrashMod {
@@ -24,10 +23,9 @@ object postTrashMod {
   
   object PostTrash {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
     }
   }
 }

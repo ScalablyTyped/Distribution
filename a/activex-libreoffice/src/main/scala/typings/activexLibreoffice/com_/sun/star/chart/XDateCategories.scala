@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,26 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Can be obtained from interface {@link XChartDocument} via method getData().
   * @since OOo 3.4
   */
-@js.native
 trait XDateCategories extends StObject {
   
   /**
     * retrieves the date values if the category x-axis id a date axis
     * @returns a sequence of doubles representing dates.
     */
-  var DateCategories: SafeArray[Double] = js.native
+  var DateCategories: SafeArray[Double]
   
   /**
     * retrieves the date values if the category x-axis id a date axis
     * @returns a sequence of doubles representing dates.
     */
-  def getDateCategories(): SafeArray[Double] = js.native
+  def getDateCategories(): SafeArray[Double]
   
   /**
     * sets dates as categories
     * @param rDates a sequence of sequences of doubles representing dates.
     */
-  def setDateCategories(rDates: SeqEquiv[Double]): Unit = js.native
+  def setDateCategories(rDates: SeqEquiv[Double]): Unit
 }
 object XDateCategories {
   

@@ -3,15 +3,13 @@ package typings.vueComponentCompilerUtils
 import typings.vueComponentCompilerUtils.utilsMod.ASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PostTransformNode extends StObject {
     
-    def postTransformNode(node: ASTNode): Unit = js.native
+    def postTransformNode(node: ASTNode): Unit
   }
   object PostTransformNode {
     

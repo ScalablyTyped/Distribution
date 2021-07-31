@@ -6,13 +6,11 @@ import typings.ariaQuery.ariaQueryStrings.`direct descendant of document`
 import typings.ariaQuery.ariaQueryStrings.`direct descendant of olComma ul or menu`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIARoleRelationConcept extends StObject {
   
-  var attributes: js.UndefOr[js.Array[ARIARoleRelationConceptAttribute]] = js.native
+  var attributes: js.UndefOr[js.Array[ARIARoleRelationConceptAttribute]] = js.undefined
   
   // These constraints are drawn from the mapping between ARIA and HTML:
   // https://www.w3.org/TR/html-aria
@@ -20,9 +18,9 @@ trait ARIARoleRelationConcept extends StObject {
     js.Array[
       (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`)
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object ARIARoleRelationConcept {
   

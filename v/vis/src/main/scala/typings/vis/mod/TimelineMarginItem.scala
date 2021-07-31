@@ -2,15 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineMarginItem extends StObject {
   
-  var horizontal: js.UndefOr[Double] = js.native
+  var horizontal: js.UndefOr[Double] = js.undefined
   
-  var vertical: js.UndefOr[Double] = js.native
+  var vertical: js.UndefOr[Double] = js.undefined
 }
 object TimelineMarginItem {
   

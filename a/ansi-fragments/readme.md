@@ -10,9 +10,9 @@ A tiny library with builders to help making logs/CLI pretty with a nice DX.
 | ------------------ | :-------------: |
 | Full name          | ansi-fragments |
 | Keywords           | cli, ansi |
-| # releases         | 6 |
-| # dependents       | 14 |
-| # downloads        | 11019502 |
+| # releases         | 3 |
+| # dependents       | 30 |
+| # downloads        | 16595945 |
 | # stars            | 0 |
 
 ## Links

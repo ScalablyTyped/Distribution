@@ -2,13 +2,11 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
-  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.undefined
 }
 object ListTagsForResourceResponse {
   

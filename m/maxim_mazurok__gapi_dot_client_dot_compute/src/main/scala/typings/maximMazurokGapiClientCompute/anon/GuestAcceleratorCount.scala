@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GuestAcceleratorCount extends StObject {
   
   /** Number of accelerator cards exposed to the guest. */
-  var guestAcceleratorCount: js.UndefOr[Double] = js.native
+  var guestAcceleratorCount: js.UndefOr[Double] = js.undefined
   
   /** The accelerator type resource name, not a full URL, e.g. 'nvidia-tesla-k80'. */
-  var guestAcceleratorType: js.UndefOr[String] = js.native
+  var guestAcceleratorType: js.UndefOr[String] = js.undefined
 }
 object GuestAcceleratorCount {
   

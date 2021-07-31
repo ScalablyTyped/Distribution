@@ -5,17 +5,15 @@ import typings.diff2html.typesMod.LineMatchingType
 import typings.diff2html.typesMod.OutputFormatType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object Content {
     
@@ -36,36 +34,35 @@ object anon {
     }
   }
   
-  @js.native
   trait DiffStyle extends StObject {
     
-    var diffStyle: DiffStyleType = js.native
+    var diffStyle: DiffStyleType
     
-    var drawFileList: Boolean = js.native
+    var drawFileList: Boolean
     
-    var fileListStartVisible: Boolean = js.native
+    var fileListStartVisible: Boolean
     
-    var fileListToggle: Boolean = js.native
+    var fileListToggle: Boolean
     
-    var highlight: Boolean = js.native
+    var highlight: Boolean
     
-    var matchWordsThreshold: Double = js.native
+    var matchWordsThreshold: Double
     
-    var matching: LineMatchingType = js.native
+    var matching: LineMatchingType
     
-    var matchingMaxComparisons: Double = js.native
+    var matchingMaxComparisons: Double
     
-    var maxLineLengthHighlight: Double = js.native
+    var maxLineLengthHighlight: Double
     
-    var maxLineSizeInBlockForComparison: Double = js.native
+    var maxLineSizeInBlockForComparison: Double
     
-    var outputFormat: OutputFormatType = js.native
+    var outputFormat: OutputFormatType
     
-    var renderNothingWhenEmpty: Boolean = js.native
+    var renderNothingWhenEmpty: Boolean
     
-    var smartSelection: Boolean = js.native
+    var smartSelection: Boolean
     
-    var synchronisedScroll: Boolean = js.native
+    var synchronisedScroll: Boolean
   }
   object DiffStyle {
     

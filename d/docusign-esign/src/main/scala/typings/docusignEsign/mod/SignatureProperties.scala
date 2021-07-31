@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureProperties extends StObject {
   
   /**
     * Specifies the preferred handler that should be used to validate the signature.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the format of the data that the stream contains.
     */
-  var subFilter: js.UndefOr[String] = js.native
+  var subFilter: js.UndefOr[String] = js.undefined
 }
 object SignatureProperties {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see GraphicProvider
   * @see MediaProperties
   */
-@js.native
-trait XGraphicObject extends XInterface {
+trait XGraphicObject
+  extends StObject
+     with XInterface {
   
   /** is the associated image/graphic for this object. */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** is the id that can be used to form the `vnd.sun.star.GraphicObject` url to address this object. */
-  var UniqueID: String = js.native
+  var UniqueID: String
 }
 object XGraphicObject {
   

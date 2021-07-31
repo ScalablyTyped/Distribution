@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     */
   var flexWrap: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexWrapProps {
   
@@ -30,12 +28,12 @@ object FlexWrapProps {
   }
   
   @scala.inline
-  implicit class FlexWrapPropsMutableBuilder[Self <: FlexWrapProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FlexWrapProps[ThemeType]) extends AnyVal {
+  implicit class FlexWrapPropsMutableBuilder[Self <: FlexWrapProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexWrapProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFlexWrap(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object FlexWrapProps {
     def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
     @scala.inline
-    def setFlexWrapVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
+    def setFlexWrapVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any) | Null)*
+    ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
   }
 }

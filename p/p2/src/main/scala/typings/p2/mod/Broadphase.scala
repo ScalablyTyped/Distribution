@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Broadphase")
@@ -13,11 +12,11 @@ class Broadphase protected () extends StObject {
   def aabbCheck(bodyA: Body, bodyB: Body): Boolean = js.native
   
   def aabbQuery(): js.Array[Body] = js.native
-  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: js.UndefOr[scala.Nothing], result: js.Array[Body]): js.Array[Body] = js.native
-  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: AABB): js.Array[Body] = js.native
-  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
+  def aabbQuery(world: Unit, aabb: Unit, result: js.Array[Body]): js.Array[Body] = js.native
+  def aabbQuery(world: Unit, aabb: AABB): js.Array[Body] = js.native
+  def aabbQuery(world: Unit, aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
   def aabbQuery(world: World): js.Array[Body] = js.native
-  def aabbQuery(world: World, aabb: js.UndefOr[scala.Nothing], result: js.Array[Body]): js.Array[Body] = js.native
+  def aabbQuery(world: World, aabb: Unit, result: js.Array[Body]): js.Array[Body] = js.native
   def aabbQuery(world: World, aabb: AABB): js.Array[Body] = js.native
   def aabbQuery(world: World, aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
   
@@ -70,15 +69,12 @@ object Broadphase {
   @scala.inline
   def SAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAP")(x.asInstanceOf[js.Any])
   
-  @JSImport("p2", "Broadphase.aabbCheck")
-  @js.native
-  def aabbCheck(bodyA: Body, bodyB: Body): Boolean = js.native
+  @scala.inline
+  def aabbCheck(bodyA: Body, bodyB: Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aabbCheck")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("p2", "Broadphase.boundingRadiusCheck")
-  @js.native
-  def boundingRadiusCheck(bodyA: Body, bodyB: Body): Boolean = js.native
+  @scala.inline
+  def boundingRadiusCheck(bodyA: Body, bodyB: Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boundingRadiusCheck")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("p2", "Broadphase.canCollide")
-  @js.native
-  def canCollide(bodyA: Body, bodyB: Body): Boolean = js.native
+  @scala.inline
+  def canCollide(bodyA: Body, bodyB: Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canCollide")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

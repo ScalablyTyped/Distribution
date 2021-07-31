@@ -2,20 +2,20 @@ package typings.uiBox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
   
-  @JSImport("ui-box/dist/src/styles", "add")
+  @JSImport("ui-box/dist/src/styles", JSImport.Namespace)
   @js.native
-  def add(styles: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ui-box/dist/src/styles", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def add(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ui-box/dist/src/styles", "getAll")
-  @js.native
-  def getAll(): String = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def getAll(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[String]
 }

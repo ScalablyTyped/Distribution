@@ -2,12 +2,14 @@ package typings.randomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toIntegerMod {
   
-  @JSImport("random-js/dist/utils/toInteger", "toInteger")
+  @JSImport("random-js/dist/utils/toInteger", JSImport.Namespace)
   @js.native
-  def toInteger(value: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def toInteger(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

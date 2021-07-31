@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.BatchGroup")
 @js.native
 class BatchGroup protected ()
-  extends typings.playcanvas.pc.BatchGroup {
+  extends StObject
+     with typings.playcanvas.pc.BatchGroup {
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double) = this()
   def this(id: Double, name: String, dynamic: Boolean, maxAabbSize: Double, layers: js.Array[Double]) = this()
+  
+  /**
+    * Whether objects within this batch group should support transforming at runtime.
+    */
+  /* CompleteClass */
+  var dynamic: Boolean = js.native
+  
+  /**
+    * Unique id. Can be assigned to model and element components.
+    */
+  /* CompleteClass */
+  var id: Double = js.native
+  
+  /**
+    * Maximum size of any dimension of a bounding box around batched objects.
+    {@link pc.BatchManager#prepare} will split objects into local groups based on this size.
+    */
+  /* CompleteClass */
+  var maxAabbSize: Double = js.native
+  
+  /**
+    * Name of the group.
+    */
+  /* CompleteClass */
+  var name: String = js.native
 }

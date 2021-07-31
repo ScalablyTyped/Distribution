@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgUnitInfo extends StObject {
   
   /** Org unit to search, as provided by the Admin SDK Directory API. */
-  var orgUnitId: js.UndefOr[String] = js.native
+  var orgUnitId: js.UndefOr[String] = js.undefined
 }
 object OrgUnitInfo {
   

@@ -2,15 +2,13 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object people {
   
-  @js.native
   trait BatchGetResponse extends StObject {
     
-    var responses: js.Array[PersonResponse] = js.native
+    var responses: js.Array[PersonResponse]
   }
   object BatchGetResponse {
     
@@ -31,13 +29,12 @@ object people {
     }
   }
   
-  @js.native
   trait GetBatchGetParameters extends StObject {
     
-    var personFields: String = js.native
+    var personFields: String
     
     // Query parameters
-    var resourcesName: js.UndefOr[String] = js.native
+    var resourcesName: js.UndefOr[String] = js.undefined
   }
   object GetBatchGetParameters {
     
@@ -61,13 +58,12 @@ object people {
     }
   }
   
-  @js.native
   trait GetParameters extends StObject {
     
     // Query parameters
-    var personFields: String = js.native
+    var personFields: String
     
-    var resourceName: String = js.native
+    var resourceName: String
   }
   object GetParameters {
     
@@ -88,14 +84,13 @@ object people {
     }
   }
   
-  @js.native
   trait PersonResponse extends StObject {
     
-    var httpStatusCode: Double = js.native
+    var httpStatusCode: Double
     
-    var person: Person = js.native
+    var person: Person
     
-    var requestedResourceName: String = js.native
+    var requestedResourceName: String
   }
   object PersonResponse {
     
@@ -121,21 +116,20 @@ object people {
   
   object connections {
     
-    @js.native
     trait ListParameters extends StObject {
       
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       // Query parameters
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
-      var personFields: String = js.native
+      var personFields: String
       
-      var resourceName: String = js.native
+      var resourceName: String
       
-      var sortOrder: js.UndefOr[SortOrder] = js.native
+      var sortOrder: js.UndefOr[SortOrder] = js.undefined
       
-      var syncToken: js.UndefOr[String] = js.native
+      var syncToken: js.UndefOr[String] = js.undefined
     }
     object ListParameters {
       
@@ -180,14 +174,13 @@ object people {
       }
     }
     
-    @js.native
     trait Response extends StObject {
       
-      var connections: js.Array[Person] = js.native
+      var connections: js.Array[Person]
       
-      var nextPageToken: String = js.native
+      var nextPageToken: String
       
-      var nextSyncToken: String = js.native
+      var nextSyncToken: String
     }
     object Response {
       

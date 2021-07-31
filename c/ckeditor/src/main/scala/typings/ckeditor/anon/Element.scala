@@ -3,15 +3,13 @@ package typings.ckeditor.anon
 import typings.ckeditor.CKEDITOR.dom.element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var element: typings.ckeditor.CKEDITOR.dom.element = js.native
+  var element: typings.ckeditor.CKEDITOR.dom.element
   
-  var item: js.Any = js.native
+  var item: js.Any
 }
 object Element {
   

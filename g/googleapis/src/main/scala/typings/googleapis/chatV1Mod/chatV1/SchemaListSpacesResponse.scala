@@ -2,10 +2,8 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListSpacesResponse extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait SchemaListSpacesResponse extends StObject {
     * for the last page of results. Tokens expire in an hour. An error is
     * thrown if an expired token is passed.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of spaces in the requested (or first) page.
     */
-  var spaces: js.UndefOr[js.Array[SchemaSpace]] = js.native
+  var spaces: js.UndefOr[js.Array[SchemaSpace]] = js.undefined
 }
 object SchemaListSpacesResponse {
   

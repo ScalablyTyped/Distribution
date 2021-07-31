@@ -2,41 +2,39 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterBacktrack extends StObject {
   
   /**
     * Contains the backtrack identifier.
     */
-  var BacktrackIdentifier: js.UndefOr[String] = js.native
+  var BacktrackIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp of the time at which the backtrack was requested.
     */
-  var BacktrackRequestCreationTime: js.UndefOr[TStamp] = js.native
+  var BacktrackRequestCreationTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The timestamp of the time to which the DB cluster was backtracked.
     */
-  var BacktrackTo: js.UndefOr[TStamp] = js.native
+  var BacktrackTo: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The timestamp of the time from which the DB cluster was backtracked.
     */
-  var BacktrackedFrom: js.UndefOr[TStamp] = js.native
+  var BacktrackedFrom: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the backtrack. This property returns one of the following values:    applying - The backtrack is currently being applied to or rolled back from the DB cluster.    completed - The backtrack has successfully been applied to or rolled back from the DB cluster.    failed - An error occurred while the backtrack was applied to or rolled back from the DB cluster.    pending - The backtrack is currently pending application to or rollback from the DB cluster.  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object DBClusterBacktrack {
   

@@ -8,7 +8,6 @@ import typings.node.streamMod.TransformOptions
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ebml", "Encoder")
@@ -43,27 +42,29 @@ class Encoder () extends Transform {
 /* static members */
 object Encoder {
   
+  @JSImport("ebml", "Encoder")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * gets the ID of the type of `tagName`
     * @param tagName tag name to be looked up
     * @return tag ID
     */
-  @JSImport("ebml", "Encoder.getSchemaInfo")
-  @js.native
-  def getSchemaInfo(tagName: String): Double | Null = js.native
+  @scala.inline
+  def getSchemaInfo(tagName: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tagName.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @js.native
   trait TagStackItem extends StObject {
     
-    var children: js.Array[TagStackItem] = js.native
+    var children: js.Array[TagStackItem]
     
-    var data: Buffer | Null = js.native
+    var data: Buffer | Null
     
-    var end: Double = js.native
+    var end: Double
     
-    var id: ReturnType[js.Function1[/* tagName */ String, Double | Null]] = js.native
+    var id: ReturnType[js.Function1[/* tagName */ String, Double | Null]]
     
-    var name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any = js.native
+    var name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
   }
   object TagStackItem {
     
@@ -74,7 +75,7 @@ object Encoder {
       id: ReturnType[js.Function1[/* tagName */ String, Double | Null]],
       name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
     ): TagStackItem = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[TagStackItem]
     }
     

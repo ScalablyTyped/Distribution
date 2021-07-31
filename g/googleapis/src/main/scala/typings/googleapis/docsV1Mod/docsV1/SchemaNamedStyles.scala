@@ -2,21 +2,19 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The named styles. Paragraphs in the document can inherit their TextStyle
   * and ParagraphStyle from these named styles.
   */
-@js.native
 trait SchemaNamedStyles extends StObject {
   
   /**
     * The named styles.  There is an entry for each of the possible named style
     * types.
     */
-  var styles: js.UndefOr[js.Array[SchemaNamedStyle]] = js.native
+  var styles: js.UndefOr[js.Array[SchemaNamedStyle]] = js.undefined
 }
 object SchemaNamedStyles {
   

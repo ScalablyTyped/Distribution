@@ -4,37 +4,33 @@ import typings.node.httpMod.IncomingMessage
 import typings.typeIs.typeIsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(request: IncomingMessage, types: String*): String | `false` | Null = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false` | Null]
+  @scala.inline
+  def apply(request: IncomingMessage, types: js.Array[String]): String | `false` | Null = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false` | Null]
+  
   @JSImport("type-is", JSImport.Namespace)
   @js.native
-  def apply(request: IncomingMessage, types: String*): String | `false` | Null = js.native
-  @JSImport("type-is", JSImport.Namespace)
-  @js.native
-  def apply(request: IncomingMessage, types: js.Array[String]): String | `false` | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("type-is", "hasBody")
-  @js.native
-  def hasBody(request: IncomingMessage): Boolean = js.native
+  @scala.inline
+  def hasBody(request: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBody")(request.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("type-is", "is")
-  @js.native
-  def is(mediaType: String, types: String*): String | `false` = js.native
-  @JSImport("type-is", "is")
-  @js.native
-  def is(mediaType: String, types: js.Array[String]): String | `false` = js.native
+  @scala.inline
+  def is(mediaType: String, types: String*): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(mediaType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def is(mediaType: String, types: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(mediaType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
-  @JSImport("type-is", "mimeMatch")
-  @js.native
-  def mimeMatch(expected: String, actual: String): Boolean = js.native
-  @JSImport("type-is", "mimeMatch")
-  @js.native
-  def mimeMatch_false(expected: `false`, actual: String): Boolean = js.native
+  @scala.inline
+  def mimeMatch(expected: String, actual: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mimeMatch")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("type-is", "normalize")
-  @js.native
-  def normalize(`type`: String): String | `false` = js.native
+  @scala.inline
+  def mimeMatch_false(expected: `false`, actual: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mimeMatch")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def normalize(`type`: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(`type`.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
 }

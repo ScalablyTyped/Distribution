@@ -3,17 +3,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AzureKeyVaultVariableValue extends VariableValue {
+trait AzureKeyVaultVariableValue
+  extends StObject
+     with VariableValue {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var expires: Date = js.native
+  var expires: Date
 }
 object AzureKeyVaultVariableValue {
   

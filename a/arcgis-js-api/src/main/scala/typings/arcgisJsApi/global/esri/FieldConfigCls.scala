@@ -3,7 +3,6 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.FieldConfigProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -15,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html)
   */
 class FieldConfigCls ()
-  extends typings.arcgisJsApi.esri.FieldConfig {
+  extends StObject
+     with typings.arcgisJsApi.esri.FieldConfig {
   def this(properties: FieldConfigProperties) = this()
 }

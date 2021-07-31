@@ -6,7 +6,6 @@ import typings.reactGoogleMapsLoader.anon.Typeofgeometry
 import typings.reactGoogleMapsLoader.mod.ReactGoogleMapsLoader.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,27 +17,26 @@ object mod {
   
   object ReactGoogleMapsLoader {
     
-    @js.native
     trait GoogleMaps extends StObject {
       
-      val Data: js.Any = js.native
+      val Data: js.Any
       
-      val Marker: js.Any = js.native
+      val Marker: js.Any
       
-      val OverlayView: js.Any = js.native
+      val OverlayView: js.Any
       
       // TODO find source documentation
-      val adsense: js.Any = js.native
+      val adsense: js.Any
       
-      val drawing: js.Any = js.native
+      val drawing: js.Any
       
-      val event: js.Any = js.native
+      val event: js.Any
       
-      val geometry: Typeofgeometry = js.native
+      val geometry: Typeofgeometry
       
-      val places: js.Any = js.native
+      val places: js.Any
       
-      val visualization: js.Any = js.native
+      val visualization: js.Any
     }
     object GoogleMaps {
       
@@ -90,12 +88,11 @@ object mod {
       }
     }
     
-    @js.native
     trait Params extends StObject {
       
-      var key: String = js.native
+      var key: String
       
-      var libraries: js.UndefOr[String] = js.native
+      var libraries: js.UndefOr[String] = js.undefined
     }
     object Params {
       

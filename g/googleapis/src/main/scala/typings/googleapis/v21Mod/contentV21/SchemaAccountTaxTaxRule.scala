@@ -2,42 +2,40 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tax calculation rule to apply in a state or province (USA only).
   */
-@js.native
 trait SchemaAccountTaxTaxRule extends StObject {
   
   /**
     * Country code in which tax is applicable.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * State (or province) is which the tax is applicable, described by its
     * location ID (also called criteria ID).
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Explicit tax rate in percent, represented as a floating point number
     * without the percentage character. Must not be negative.
     */
-  var ratePercent: js.UndefOr[String] = js.native
+  var ratePercent: js.UndefOr[String] = js.undefined
   
   /**
     * If true, shipping charges are also taxed.
     */
-  var shippingTaxed: js.UndefOr[Boolean] = js.native
+  var shippingTaxed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the tax rate is taken from a global tax table or specified
     * explicitly.
     */
-  var useGlobalRate: js.UndefOr[Boolean] = js.native
+  var useGlobalRate: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAccountTaxTaxRule {
   

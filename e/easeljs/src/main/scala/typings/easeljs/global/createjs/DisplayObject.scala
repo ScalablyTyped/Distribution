@@ -2,13 +2,13 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.DisplayObject")
 @js.native
 class DisplayObject ()
-  extends typings.easeljs.createjs.DisplayObject
+  extends StObject
+     with typings.easeljs.createjs.DisplayObject
 /* static members */
 object DisplayObject {
   

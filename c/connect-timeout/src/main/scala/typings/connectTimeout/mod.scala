@@ -5,30 +5,30 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(timeout: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(timeout: String, options: TimeoutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("connect-timeout", JSImport.Namespace)
   @js.native
-  def apply(timeout: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-timeout", JSImport.Namespace)
-  @js.native
-  def apply(timeout: String, options: TimeoutOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * @summary Interface for timeout options.
     * @interface
     */
-  @js.native
   trait TimeoutOptions extends StObject {
     
     /**
       * @summary Controls if this module will "respond" in the form of forwarding an error.
       * @type {boolean}
       */
-    var respond: js.UndefOr[Boolean] = js.native
+    var respond: js.UndefOr[Boolean] = js.undefined
   }
   object TimeoutOptions {
     

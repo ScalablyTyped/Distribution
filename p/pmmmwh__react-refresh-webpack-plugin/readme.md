@@ -10,9 +10,9 @@ An **EXPERIMENTAL** Webpack plugin to enable "Fast Refresh" (also previously kno
 | ------------------ | :-------------: |
 | Full name          | @pmmmwh/react-refresh-webpack-plugin |
 | Keywords           | react, javascript, webpack, refresh, hmr, hotreload, livereload, live, edit, hot, reload |
-| # releases         | 33 |
-| # dependents       | 261 |
-| # downloads        | 14354426 |
+| # releases         | 34 |
+| # dependents       | 341 |
+| # downloads        | 23365700 |
 | # stars            | 0 |
 
 ## Links

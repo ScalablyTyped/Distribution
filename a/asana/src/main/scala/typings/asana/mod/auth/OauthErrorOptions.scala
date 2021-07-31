@@ -2,17 +2,15 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthErrorOptions extends StObject {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var error_description: js.UndefOr[String] = js.native
+  var error_description: js.UndefOr[String] = js.undefined
   
-  var error_uri: js.UndefOr[String] = js.native
+  var error_uri: js.UndefOr[String] = js.undefined
 }
 object OauthErrorOptions {
   

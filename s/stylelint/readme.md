@@ -11,8 +11,8 @@ A mighty, modern CSS linter.
 | Full name          | stylelint |
 | Keywords           | css-in-js, css, less, lint, linter, markdown, sass, scss, stylelint, sugarss |
 | # releases         | 27 |
-| # dependents       | 1278 |
-| # downloads        | 87836041 |
+| # dependents       | 1355 |
+| # downloads        | 98258908 |
 | # stars            | 69 |
 
 ## Links

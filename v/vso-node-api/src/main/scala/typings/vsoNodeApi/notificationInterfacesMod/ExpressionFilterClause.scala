@@ -2,27 +2,25 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionFilterClause extends StObject {
   
-  var fieldName: String = js.native
+  var fieldName: String
   
   /**
     * The order in which this clause appeared in the filter query
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Logical Operator 'AND', 'OR' or NULL (only for the first clause in the filter)
     */
-  var logicalOperator: String = js.native
+  var logicalOperator: String
   
-  var operator: String = js.native
+  var operator: String
   
-  var value: String = js.native
+  var value: String
 }
 object ExpressionFilterClause {
   

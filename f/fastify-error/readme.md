@@ -10,9 +10,9 @@ A small utility, used by Fastify itself, for generating consistent error objects
 | ------------------ | :-------------: |
 | Full name          | fastify-error |
 | Keywords           | fastify, error, utility, plugin |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 195338 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 1369313 |
 | # stars            | 0 |
 
 ## Links

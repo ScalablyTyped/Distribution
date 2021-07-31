@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TessellatedMesh extends Object {
+trait TessellatedMesh
+  extends StObject
+     with Object {
   
   /**
     * The indices of the triangles that connect vertices together; each consecutive triplet of indices denotes a triangle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
     */
-  var indices: js.Array[Double] = js.native
+  var indices: js.Array[Double]
   
   /**
     * The vertices that make up the mesh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
     */
-  var vertices: js.Array[MeshVertex] = js.native
+  var vertices: js.Array[MeshVertex]
 }
 object TessellatedMesh {
   

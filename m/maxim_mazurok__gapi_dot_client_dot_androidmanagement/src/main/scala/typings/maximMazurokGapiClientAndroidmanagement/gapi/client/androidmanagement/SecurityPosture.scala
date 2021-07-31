@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityPosture extends StObject {
   
   /** Device's security posture value. */
-  var devicePosture: js.UndefOr[String] = js.native
+  var devicePosture: js.UndefOr[String] = js.undefined
   
   /** Additional details regarding the security posture of the device. */
-  var postureDetails: js.UndefOr[js.Array[PostureDetail]] = js.native
+  var postureDetails: js.UndefOr[js.Array[PostureDetail]] = js.undefined
 }
 object SecurityPosture {
   

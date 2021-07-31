@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object EdgeGestureKind extends StObject {
   
   /** The user entered the Win+Z key sequence on the keyboard. */
   @js.native
-  sealed trait keyboard extends EdgeGestureKind
+  sealed trait keyboard
+    extends StObject
+       with EdgeGestureKind
   
   /** The user performed a right mouse click. */
   @js.native
-  sealed trait mouse extends EdgeGestureKind
+  sealed trait mouse
+    extends StObject
+       with EdgeGestureKind
   
   /** The user made a swipe gesture on a touch-enabled screen. */
   @js.native
-  sealed trait touch extends EdgeGestureKind
+  sealed trait touch
+    extends StObject
+       with EdgeGestureKind
 }

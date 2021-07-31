@@ -2,25 +2,23 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The device configuration. Eventually delivered to devices.
   */
-@js.native
 trait SchemaDeviceConfig extends StObject {
   
   /**
     * The device configuration data.
     */
-  var binaryData: js.UndefOr[String] = js.native
+  var binaryData: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time at which this configuration version was updated in
     * Cloud IoT Core. This timestamp is set by the server.
     */
-  var cloudUpdateTime: js.UndefOr[String] = js.native
+  var cloudUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time at which Cloud IoT Core received the
@@ -33,7 +31,7 @@ trait SchemaDeviceConfig extends StObject {
     * may never be sent to the device, and therefore are never acknowledged.
     * This timestamp is set by Cloud IoT Core.
     */
-  var deviceAckTime: js.UndefOr[String] = js.native
+  var deviceAckTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The version of this update. The version number is assigned
@@ -41,7 +39,7 @@ trait SchemaDeviceConfig extends StObject {
     * version must be 0 on the `CreateDevice` request if a `config` is
     * specified; the response of `CreateDevice` will always have a value of 1.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceConfig {
   

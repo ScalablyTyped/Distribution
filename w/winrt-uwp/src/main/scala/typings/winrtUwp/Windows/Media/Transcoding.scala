@@ -9,7 +9,6 @@ import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes for transcoding audio and video files. */
@@ -24,11 +23,15 @@ object Transcoding {
     
     /** Default video processing algorithm. This algorithm prefers performance, speed, and space over quality. This algorithm will makes use of hardware. */
     @js.native
-    sealed trait default extends MediaVideoProcessingAlgorithm
+    sealed trait default
+      extends StObject
+         with MediaVideoProcessingAlgorithm
     
     /** Prefers quality over performance. This mode always runs in software and insures that hardware implementations, which may differ from the XVP are not used. */
     @js.native
-    sealed trait mrfCrf444 extends MediaVideoProcessingAlgorithm
+    sealed trait mrfCrf444
+      extends StObject
+         with MediaVideoProcessingAlgorithm
   }
   
   @js.native
@@ -40,19 +43,27 @@ object Transcoding {
     
     /** The codec was not found. */
     @js.native
-    sealed trait codecNotFound extends TranscodeFailureReason
+    sealed trait codecNotFound
+      extends StObject
+         with TranscodeFailureReason
     
     /** Profile is invalid. */
     @js.native
-    sealed trait invalidProfile extends TranscodeFailureReason
+    sealed trait invalidProfile
+      extends StObject
+         with TranscodeFailureReason
     
     /** None. */
     @js.native
-    sealed trait none extends TranscodeFailureReason
+    sealed trait none
+      extends StObject
+         with TranscodeFailureReason
     
     /** Reason unknown. */
     @js.native
-    sealed trait unknown extends TranscodeFailureReason
+    sealed trait unknown
+      extends StObject
+         with TranscodeFailureReason
   }
   
   /** Transcodes audio and video files. */
@@ -132,20 +143,19 @@ object Transcoding {
   }
   
   /** Represents an asynchronous media transcode deferral operation which can be used to start the transcode operation. */
-  @js.native
   trait PrepareTranscodeResult extends StObject {
     
     /** Indicates whether the trancode operation can be performed successfully. */
-    var canTranscode: Boolean = js.native
+    var canTranscode: Boolean
     
     /** Specifies the reason for the transcode failure. */
-    var failureReason: TranscodeFailureReason = js.native
+    var failureReason: TranscodeFailureReason
     
     /**
       * Creates an object to perform an asynchronous media transcode operation on media data.
       * @return An object that is used to control the asynchronous operation.
       */
-    def transcodeAsync(): IPromiseWithIAsyncActionWithProgress[Double] = js.native
+    def transcodeAsync(): IPromiseWithIAsyncActionWithProgress[Double]
   }
   object PrepareTranscodeResult {
     

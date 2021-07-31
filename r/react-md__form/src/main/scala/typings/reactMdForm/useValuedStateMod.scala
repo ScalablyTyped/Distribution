@@ -6,25 +6,26 @@ import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useValuedStateMod {
   
-  @JSImport("@react-md/form/types/text-field/useValuedState", "useValuedState")
+  @JSImport("@react-md/form/types/text-field/useValuedState", JSImport.Namespace)
   @js.native
-  def useValuedState[T /* <: TextElement */](hasOnChangeValueDefaultValue: Options[T]): js.Tuple2[Boolean, js.UndefOr[ChangeEventHandler[T]]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useValuedState[T /* <: TextElement */](hasOnChangeValueDefaultValue: Options[T]): js.Tuple2[Boolean, js.UndefOr[ChangeEventHandler[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useValuedState")(hasOnChangeValueDefaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.UndefOr[ChangeEventHandler[T]]]]
   
   type ChangeEventHandler[T /* <: TextElement */] = typings.react.mod.ChangeEventHandler[T]
   
-  @js.native
   trait Options[T /* <: TextElement */] extends StObject {
     
-    var defaultValue: js.UndefOr[Value] = js.native
+    var defaultValue: js.UndefOr[Value] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[T]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
     
-    var value: js.UndefOr[Value] = js.native
+    var value: js.UndefOr[Value] = js.undefined
   }
   object Options {
     
@@ -35,7 +36,7 @@ object useValuedStateMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T /* <: TextElement */] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T /* <: TextElement */] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: Value): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])

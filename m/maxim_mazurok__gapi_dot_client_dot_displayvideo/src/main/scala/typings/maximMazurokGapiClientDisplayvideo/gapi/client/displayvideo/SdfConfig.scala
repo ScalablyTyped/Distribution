@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SdfConfig extends StObject {
   
   /** An administrator email address to which the SDF processing status reports will be sent. */
-  var adminEmail: js.UndefOr[String] = js.native
+  var adminEmail: js.UndefOr[String] = js.undefined
   
   /** Required. The version of SDF being used. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SdfConfig {
   

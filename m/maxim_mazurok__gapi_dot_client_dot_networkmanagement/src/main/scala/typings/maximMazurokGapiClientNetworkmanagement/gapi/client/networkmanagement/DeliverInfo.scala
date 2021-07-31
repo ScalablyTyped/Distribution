@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliverInfo extends StObject {
   
   /** URI of the resource that the packet is delivered to. */
-  var resourceUri: js.UndefOr[String] = js.native
+  var resourceUri: js.UndefOr[String] = js.undefined
   
   /** Target type where the packet is delivered to. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object DeliverInfo {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIndexingConfigurationResponse extends StObject {
   
   /**
     * The index configuration.
     */
-  var thingGroupIndexingConfiguration: js.UndefOr[ThingGroupIndexingConfiguration] = js.native
+  var thingGroupIndexingConfiguration: js.UndefOr[ThingGroupIndexingConfiguration] = js.undefined
   
   /**
     * Thing indexing configuration.
     */
-  var thingIndexingConfiguration: js.UndefOr[ThingIndexingConfiguration] = js.native
+  var thingIndexingConfiguration: js.UndefOr[ThingIndexingConfiguration] = js.undefined
 }
 object GetIndexingConfigurationResponse {
   

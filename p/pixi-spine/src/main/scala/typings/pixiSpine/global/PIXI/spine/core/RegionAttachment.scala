@@ -1,15 +1,78 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
+import typings.pixiSpine.PIXI.spine.core.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.RegionAttachment")
 @js.native
 class RegionAttachment protected ()
-  extends typings.pixiSpine.PIXI.spine.core.RegionAttachment {
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.RegionAttachment {
   def this(name: String) = this()
+  
+  /* CompleteClass */
+  var color: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
+  /* CompleteClass */
+  override def computeWorldVertices(
+    bone: typings.pixiSpine.PIXI.spine.core.Bone,
+    worldVertices: ArrayLike[Double],
+    offset: Double,
+    stride: Double
+  ): Unit = js.native
+  
+  /* CompleteClass */
+  override def copy(): typings.pixiSpine.PIXI.spine.core.Attachment = js.native
+  
+  /* CompleteClass */
+  var height: Double = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var offset: ArrayLike[Double] = js.native
+  
+  /* CompleteClass */
+  var path: String = js.native
+  
+  /* CompleteClass */
+  var region: typings.pixiSpine.PIXI.spine.core.TextureRegion = js.native
+  
+  /* CompleteClass */
+  var rendererObject: js.Any = js.native
+  
+  /* CompleteClass */
+  var rotation: Double = js.native
+  
+  /* CompleteClass */
+  var scaleX: Double = js.native
+  
+  /* CompleteClass */
+  var scaleY: Double = js.native
+  
+  /* CompleteClass */
+  override def setRegion(region: typings.pixiSpine.PIXI.spine.core.TextureRegion): Unit = js.native
+  
+  /* CompleteClass */
+  var tempColor: typings.pixiSpine.PIXI.spine.core.Color = js.native
+  
+  /* CompleteClass */
+  override def updateOffset(): Unit = js.native
+  
+  /* CompleteClass */
+  var uvs: ArrayLike[Double] = js.native
+  
+  /* CompleteClass */
+  var width: Double = js.native
+  
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /* CompleteClass */
+  var y: Double = js.native
 }
 object RegionAttachment {
   

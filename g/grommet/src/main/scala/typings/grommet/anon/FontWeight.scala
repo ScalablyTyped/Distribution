@@ -8,21 +8,19 @@ import typings.grommet.utilsMod.PropsOf
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeight extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]] = js.native
+  var extend: js.UndefOr[ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[TextDecoration] = js.native
+  var hover: js.UndefOr[TextDecoration] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object FontWeight {
   

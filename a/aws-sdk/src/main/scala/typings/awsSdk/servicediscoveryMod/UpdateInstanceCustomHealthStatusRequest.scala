@@ -2,26 +2,24 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInstanceCustomHealthStatusRequest extends StObject {
   
   /**
     * The ID of the instance that you want to change the health status for.
     */
-  var InstanceId: ResourceId = js.native
+  var InstanceId: ResourceId
   
   /**
     * The ID of the service that includes the configuration for the custom health check that you want to change the status for.
     */
-  var ServiceId: ResourceId = js.native
+  var ServiceId: ResourceId
   
   /**
     * The new status of the instance, HEALTHY or UNHEALTHY.
     */
-  var Status: CustomHealthStatus = js.native
+  var Status: CustomHealthStatus
 }
 object UpdateInstanceCustomHealthStatusRequest {
   

@@ -2,15 +2,15 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MinMaxExtendedOptions extends MinMaxOptions {
+trait MinMaxExtendedOptions
+  extends StObject
+     with MinMaxOptions {
   
-  var gt: js.UndefOr[Double] = js.native
+  var gt: js.UndefOr[Double] = js.undefined
   
-  var lt: js.UndefOr[Double] = js.native
+  var lt: js.UndefOr[Double] = js.undefined
 }
 object MinMaxExtendedOptions {
   

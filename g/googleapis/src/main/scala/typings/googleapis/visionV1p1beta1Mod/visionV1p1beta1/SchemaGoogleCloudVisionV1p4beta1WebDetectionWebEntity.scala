@@ -2,30 +2,28 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entity deduced from similar images on the Internet.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1WebDetectionWebEntity extends StObject {
   
   /**
     * Canonical description of the entity, in English.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque entity ID.
     */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /**
     * Overall relevancy score for the entity. Not normalized and not comparable
     * across different image queries.
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1WebDetectionWebEntity {
   

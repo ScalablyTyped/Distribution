@@ -3,21 +3,19 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointStatesInactiveOptionsObject extends StObject {
   
   /**
     * (Highcharts) Animation when not hovering over the node.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts) Opacity of inactive markers.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object PointStatesInactiveOptionsObject {
   

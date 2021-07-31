@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangNavigationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) Translations for all field names used in popup.
     */
-  var popup: js.UndefOr[LangNavigationPopupOptions] = js.native
+  var popup: js.UndefOr[LangNavigationPopupOptions] = js.undefined
 }
 object LangNavigationOptions {
   

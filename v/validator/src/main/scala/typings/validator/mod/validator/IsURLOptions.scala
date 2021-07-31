@@ -3,66 +3,64 @@ package typings.validator.mod.validator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsURLOptions extends StObject {
   
   /**
     * @default false
     */
-  var allow_protocol_relative_urls: js.UndefOr[Boolean] = js.native
+  var allow_protocol_relative_urls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_trailing_dot: js.UndefOr[Boolean] = js.native
+  var allow_trailing_dot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var allow_underscores: js.UndefOr[Boolean] = js.native
+  var allow_underscores: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var disallow_auth: js.UndefOr[Boolean] = js.native
+  var disallow_auth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var host_blacklist: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var host_blacklist: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   
   /**
     * @default false
     */
-  var host_whitelist: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var host_whitelist: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   
   /**
     * @default ['http','https','ftp']
     */
-  var protocols: js.UndefOr[js.Array[String]] = js.native
+  var protocols: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @default true
     */
-  var require_host: js.UndefOr[Boolean] = js.native
+  var require_host: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var require_protocol: js.UndefOr[Boolean] = js.native
+  var require_protocol: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default true
     */
-  var require_tld: js.UndefOr[Boolean] = js.native
+  var require_tld: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default true
     */
-  var require_valid_protocol: js.UndefOr[Boolean] = js.native
+  var require_valid_protocol: js.UndefOr[Boolean] = js.undefined
 }
 object IsURLOptions {
   

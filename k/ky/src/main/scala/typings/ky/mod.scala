@@ -23,7 +23,6 @@ import typings.std.URLSearchParams
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,101 +43,89 @@ object mod {
     	})();
     	```
     	*/
+    @scala.inline
+    def apply(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def apply(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    
     @JSImport("ky", JSImport.Default)
     @js.native
-    def apply(url: Input): ResponsePromise = js.native
-    @JSImport("ky", JSImport.Default)
-    @js.native
-    def apply(url: Input, options: Options): ResponsePromise = js.native
+    val ^ : js.Any = js.native
     
     /**
     	Create a new Ky instance with complete new defaults.
     	@returns A new Ky instance.
     	*/
-    @JSImport("ky", "default.create")
-    @js.native
-    def create(defaultOptions: Options): Call = js.native
+    @scala.inline
+    def create(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
     
     /**
     	Fetch the given `url` using the option `{method: 'delete'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.delete")
-    @js.native
-    def delete(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.delete")
-    @js.native
-    def delete(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def delete(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def delete(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Create a new Ky instance with some defaults overridden with your own.
     	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
     	@returns A new Ky instance.
     	*/
-    @JSImport("ky", "default.extend")
-    @js.native
-    def extend(defaultOptions: Options): Call = js.native
+    @scala.inline
+    def extend(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
     
     /**
     	Fetch the given `url` using the option `{method: 'get'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.get")
-    @js.native
-    def get(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.get")
-    @js.native
-    def get(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def get(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def get(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'head'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.head")
-    @js.native
-    def head(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.head")
-    @js.native
-    def head(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def head(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def head(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'patch'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.patch")
-    @js.native
-    def patch(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.patch")
-    @js.native
-    def patch(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def patch(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def patch(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'post'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.post")
-    @js.native
-    def post(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.post")
-    @js.native
-    def post(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def post(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def post(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'put'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @JSImport("ky", "default.put")
-    @js.native
-    def put(url: Input): ResponsePromise = js.native
-    @JSImport("ky", "default.put")
-    @js.native
-    def put(url: Input, options: Options): ResponsePromise = js.native
+    @scala.inline
+    def put(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    @scala.inline
+    def put(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	A `Symbol` that can be returned by a `beforeRetry` hook to stop the retry.
@@ -169,15 +156,32 @@ object mod {
   
   @JSImport("ky", "HTTPError")
   @js.native
-  class HTTPError protected () extends Error {
+  class HTTPError protected ()
+    extends StObject
+       with Error {
     def this(response: Response) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var response: Response = js.native
   }
   
   @JSImport("ky", "TimeoutError")
   @js.native
-  class TimeoutError () extends Error
+  class TimeoutError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   type AfterResponseHook = js.Function3[
     /* request */ Request, 
@@ -200,17 +204,16 @@ object mod {
     Unit | js.Promise[Unit]
   ]
   
-  @js.native
   trait DownloadProgress extends StObject {
     
-    var percent: Double = js.native
+    var percent: Double
     
     /**
     	Note: If it's not possible to retrieve the body size, it will be `0`.
     	*/
-    var totalBytes: Double = js.native
+    var totalBytes: Double
     
-    var transferredBytes: Double = js.native
+    var transferredBytes: Double
   }
   object DownloadProgress {
     
@@ -234,7 +237,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Hooks extends StObject {
     
     /**
@@ -269,14 +271,14 @@ object mod {
     	})();
     	```
     	*/
-    var afterResponse: js.UndefOr[js.Array[AfterResponseHook]] = js.native
+    var afterResponse: js.UndefOr[js.Array[AfterResponseHook]] = js.undefined
     
     /**
     	This hook enables you to modify the request right before it is sent. Ky will make no further changes to the request after this. The hook function receives normalized input and options as arguments. You could, for example, modify `options.headers` here.
     	A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) can be returned from this hook to completely avoid making a HTTP request. This can be used to mock a request, check an internal cache, etc. An **important** consideration when returning a `Response` from this hook is that all the following hooks will be skipped, so **ensure you only return a `Response` from the last hook**.
     	@default []
     	*/
-    var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook]] = js.native
+    var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook]] = js.undefined
     
     /**
     	This hook enables you to modify the request right before retry. Ky will make no further changes to the request after this. The hook function receives the normalized input and options, an error instance and the retry count as arguments. You could, for example, modify `options.headers` here.
@@ -298,7 +300,7 @@ object mod {
     	```
     	@default []
     	*/
-    var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook]] = js.native
+    var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook]] = js.undefined
   }
   object Hooks {
     
@@ -342,21 +344,22 @@ object mod {
   
   type Input = Request | URL | String
   
-  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: Primitive */] = LiteralType | (BaseType with _empty)
+  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: Primitive */] = LiteralType | (BaseType & _empty)
   
-  @js.native
-  trait NormalizedOptions extends RequestInit {
+  trait NormalizedOptions
+    extends StObject
+       with RequestInit {
     
     // New type.
     @JSName("headers")
-    var headers_NormalizedOptions: Headers = js.native
+    var headers_NormalizedOptions: Headers
     
-    var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.native
+    var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.undefined
     
-    var prefixUrl: js.UndefOr[URL | String] = js.native
+    var prefixUrl: js.UndefOr[URL | String] = js.undefined
     
     // Extended from custom `KyOptions`, but ensured to be set (not optional).
-    var retry: js.UndefOr[RetryOptions | Double] = js.native
+    var retry: js.UndefOr[RetryOptions | Double] = js.undefined
   }
   object NormalizedOptions {
     
@@ -392,26 +395,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends RequestInit {
+  trait Options
+    extends StObject
+       with RequestInit {
     
     /**
     	Hooks allow modifications during the request lifecycle. Hook functions may be async and are run serially.
     	*/
-    var hooks: js.UndefOr[Hooks] = js.native
+    var hooks: js.UndefOr[Hooks] = js.undefined
     
     /**
     	Shortcut for sending JSON. Use this instead of the `body` option.
     	Accepts any plain object or value, which will be `JSON.stringify()`'d and sent in the body with the correct header set.
     	*/
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
     
     /**
     	HTTP method used to make the request.
     	Internally, the standard methods (`GET`, `POST`, `PUT`, `PATCH`, `HEAD` and `DELETE`) are uppercased in order to avoid server errors due to case sensitivity.
     	*/
     @JSName("method")
-    var method_Options: js.UndefOr[LiteralUnion[get | post | put | delete | patch | head, String]] = js.native
+    var method_Options: js.UndefOr[LiteralUnion[get | post | put | delete | patch | head, String]] = js.undefined
     
     /**
     	Download progress event handler.
@@ -431,7 +435,7 @@ object mod {
     	})();
     	```
     	*/
-    var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.native
+    var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.undefined
     
     /**
     	A prefix to prepend to the `input` URL when making the request. It can be any valid URL, either relative or absolute. A trailing slash `/` is optional and will be added automatically, if needed, when it is joined with `input`. Only takes effect when `input` is a string. The `input` argument cannot start with a slash `/` when using this option.
@@ -451,7 +455,7 @@ object mod {
     	})();
     	```
     	*/
-    var prefixUrl: js.UndefOr[URL | String] = js.native
+    var prefixUrl: js.UndefOr[URL | String] = js.undefined
     
     /**
     	An object representing `limit`, `methods`, `statusCodes` and `maxRetryAfter` fields for maximum retry count, allowed methods, allowed status codes and maximum [`Retry-After`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) time.
@@ -472,7 +476,7 @@ object mod {
     	})();
     	```
     	*/
-    var retry: js.UndefOr[RetryOptions | Double] = js.native
+    var retry: js.UndefOr[RetryOptions | Double] = js.undefined
     
     /**
     	Search parameters to include in the request URL. Setting this will override all existing search parameters in the input URL.
@@ -480,21 +484,21 @@ object mod {
     	*/
     var searchParams: js.UndefOr[
         String | (StringDictionary[String | Double | Boolean]) | (js.Array[js.Array[String | Double | Boolean]]) | URLSearchParams
-      ] = js.native
+      ] = js.undefined
     
     /**
     	Throw a `HTTPError` for error responses (non-2xx status codes).
     	Setting this to `false` may be useful if you are checking for resource availability and are expecting error responses.
     	@default true
     	*/
-    var throwHttpErrors: js.UndefOr[Boolean] = js.native
+    var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Timeout in milliseconds for getting a response. Can not be greater than 2147483647.
     	If set to `false`, there will be no timeout.
     	@default 10000
     	*/
-    var timeout: js.UndefOr[Double | `false`] = js.native
+    var timeout: js.UndefOr[Double | `false`] = js.undefined
   }
   object Options {
     
@@ -603,38 +607,37 @@ object mod {
     def text(): js.Promise[String] = js.native
   }
   
-  @js.native
   trait RetryOptions extends StObject {
     
     /**
     	The HTTP status codes allowed to retry with a `Retry-After` header.
     	@default [413, 429, 503]
     	*/
-    var afterStatusCodes: js.UndefOr[js.Array[Double]] = js.native
+    var afterStatusCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
     	The number of times to retry failed requests.
     	@default 2
     	*/
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
     	If the `Retry-After` header is greater than `maxRetryAfter`, the request will be canceled.
     	@default Infinity
     	*/
-    var maxRetryAfter: js.UndefOr[Double] = js.native
+    var maxRetryAfter: js.UndefOr[Double] = js.undefined
     
     /**
     	The HTTP methods allowed to retry.
     	@default ['get', 'put', 'head', 'delete', 'options', 'trace']
     	*/
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	The HTTP status codes allowed to retry.
     	@default [408, 413, 429, 500, 502, 503, 504]
     	*/
-    var statusCodes: js.UndefOr[js.Array[Double]] = js.native
+    var statusCodes: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RetryOptions {
     

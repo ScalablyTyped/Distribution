@@ -8,7 +8,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsMod {
@@ -71,10 +70,9 @@ object suggestionsMod {
     def tryHandleKeyDown(keyCode: Double, currentSuggestionIndex: Double): Boolean = js.native
   }
   
-  @js.native
   trait ISuggestionsState extends StObject {
     
-    var selectedActionType: SuggestionActionType = js.native
+    var selectedActionType: SuggestionActionType
   }
   object ISuggestionsState {
     

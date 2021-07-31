@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonCancelClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to the igGridModalDialog element.
     */
-  var modalDialog: js.UndefOr[String] = js.native
+  var modalDialog: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the reference to the igGridModalDialog widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ButtonCancelClickEventUIParam {
   

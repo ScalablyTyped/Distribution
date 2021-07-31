@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientBigquery.anon
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.ProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FriendlyName extends StObject {
   
   /** A descriptive name for this project. */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /** An opaque ID of this project. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The numeric ID of this project. */
-  var numericId: js.UndefOr[String] = js.native
+  var numericId: js.UndefOr[String] = js.undefined
   
   /** A unique reference to this project. */
-  var projectReference: js.UndefOr[ProjectReference] = js.native
+  var projectReference: js.UndefOr[ProjectReference] = js.undefined
 }
 object FriendlyName {
   

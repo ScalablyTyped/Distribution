@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Worker")
 @js.native
 class ClassWorker protected ()
-  extends typings.fibjs.ClassWorker {
+  extends StObject
+     with typings.fibjs.ClassWorker {
   /**
     * 
     * @brief Worker 对象构造函数

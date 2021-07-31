@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object CaretType extends StObject {
   
   /** The insertion point for a sequenced language; that is, characters that are typed with one key stroke. */
   @js.native
-  sealed trait normal extends CaretType
+  sealed trait normal
+    extends StObject
+       with CaretType
   
   /** The insertion point is null. */
   @js.native
-  sealed trait `null` extends CaretType
+  sealed trait `null`
+    extends StObject
+       with CaretType
 }

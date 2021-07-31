@@ -2,35 +2,33 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGetImageDataOption extends StObject {
   
   /** 画布标识，传入 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件的 `canvas-id` 属性。 */
-  var canvasId: String = js.native
+  var canvasId: String
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[CanvasGetImageDataCompleteCallback] = js.native
+  var complete: js.UndefOr[CanvasGetImageDataCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[CanvasGetImageDataFailCallback] = js.native
+  var fail: js.UndefOr[CanvasGetImageDataFailCallback] = js.undefined
   
   /** 将要被提取的图像数据矩形区域的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[CanvasGetImageDataSuccessCallback] = js.native
+  var success: js.UndefOr[CanvasGetImageDataSuccessCallback] = js.undefined
   
   /** 将要被提取的图像数据矩形区域的宽度 */
-  var width: Double = js.native
+  var width: Double
   
   /** 将要被提取的图像数据矩形区域的左上角横坐标 */
-  var x: Double = js.native
+  var x: Double
   
   /** 将要被提取的图像数据矩形区域的左上角纵坐标 */
-  var y: Double = js.native
+  var y: Double
 }
 object CanvasGetImageDataOption {
   

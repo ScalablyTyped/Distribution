@@ -6,17 +6,15 @@ import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postingAlbumOptionsMod {
   
-  @js.native
   trait PostingAlbumItem extends StObject {
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
     
-    var usertags: js.UndefOr[PostingUsertags] = js.native
+    var usertags: js.UndefOr[PostingUsertags] = js.undefined
   }
   object PostingAlbumItem {
     
@@ -43,14 +41,13 @@ object postingAlbumOptionsMod {
     }
   }
   
-  @js.native
   trait PostingAlbumOptions extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var items: js.Array[PostingAlbumPhotoItem | PostingAlbumVideoItem] = js.native
+    var items: js.Array[PostingAlbumPhotoItem | PostingAlbumVideoItem]
     
-    var location: js.UndefOr[PostingLocation] = js.native
+    var location: js.UndefOr[PostingLocation] = js.undefined
   }
   object PostingAlbumOptions {
     
@@ -83,14 +80,15 @@ object postingAlbumOptionsMod {
     }
   }
   
-  @js.native
-  trait PostingAlbumPhotoItem extends PostingAlbumItem {
+  trait PostingAlbumPhotoItem
+    extends StObject
+       with PostingAlbumItem {
     
-    var file: Buffer = js.native
+    var file: Buffer
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PostingAlbumPhotoItem {
     
@@ -120,16 +118,17 @@ object postingAlbumOptionsMod {
     }
   }
   
-  @js.native
-  trait PostingAlbumVideoItem extends PostingAlbumItem {
+  trait PostingAlbumVideoItem
+    extends StObject
+       with PostingAlbumItem {
     
-    var coverImage: Buffer = js.native
+    var coverImage: Buffer
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var video: Buffer = js.native
+    var video: Buffer
     
-    var videoInfo: js.UndefOr[Duration] = js.native
+    var videoInfo: js.UndefOr[Duration] = js.undefined
   }
   object PostingAlbumVideoItem {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentsListResponse extends StObject {
   
   /** Output only. The deployments contained in this response. */
-  var deployments: js.UndefOr[js.Array[Deployment]] = js.native
+  var deployments: js.UndefOr[js.Array[Deployment]] = js.undefined
   
   /** Output only. A token used to continue a truncated list request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object DeploymentsListResponse {
   

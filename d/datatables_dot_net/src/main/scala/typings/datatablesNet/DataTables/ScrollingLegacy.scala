@@ -2,25 +2,23 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollingLegacy extends StObject {
   
-  var bAutoCss: Boolean = js.native
+  var bAutoCss: Boolean
   
-  var bCollapse: Boolean = js.native
+  var bCollapse: Boolean
   
-  var bInfinite: Boolean = js.native
+  var bInfinite: Boolean
   
-  var iBarWidth: Double = js.native
+  var iBarWidth: Double
   
-  var iLoadGap: Double = js.native
+  var iLoadGap: Double
   
-  var sX: String = js.native
+  var sX: String
   
-  var sY: String = js.native
+  var sY: String
 }
 object ScrollingLegacy {
   

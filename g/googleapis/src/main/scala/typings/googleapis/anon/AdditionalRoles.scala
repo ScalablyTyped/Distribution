@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalRoles extends StObject {
   
-  var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+  var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var primaryRole: js.UndefOr[String] = js.native
+  var primaryRole: js.UndefOr[String] = js.undefined
 }
 object AdditionalRoles {
   

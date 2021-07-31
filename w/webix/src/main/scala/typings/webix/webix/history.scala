@@ -2,15 +2,13 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait history extends StObject {
   
-  def push(view: String, url: String, value: js.Any): Unit = js.native
+  def push(view: String, url: String, value: js.Any): Unit
   
-  def track(view: String, url: String): Unit = js.native
+  def track(view: String, url: String): Unit
 }
 object history {
   

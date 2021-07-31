@@ -6,17 +6,15 @@ import typings.tensorflowTfjsLayers.baseCallbacksMod.History
 import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CallbackList extends StObject {
     
-    var callbackList: typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList = js.native
+    var callbackList: typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList
     
-    var history: History = js.native
+    var history: History
   }
   object CallbackList {
     
@@ -37,14 +35,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Constants extends StObject {
     
-    var constants: js.Array[SymbolicTensor | Tensor[Rank]] = js.native
+    var constants: js.Array[SymbolicTensor | Tensor[Rank]]
     
-    var initialState: js.Array[SymbolicTensor | Tensor[Rank]] = js.native
+    var initialState: js.Array[SymbolicTensor | Tensor[Rank]]
     
-    var inputs: Tensor[Rank] | SymbolicTensor = js.native
+    var inputs: Tensor[Rank] | SymbolicTensor
   }
   object Constants {
     
@@ -78,16 +75,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    def ones(): Tensor[Rank] = js.native
+    def ones(): Tensor[Rank]
     
-    var rate: Double = js.native
+    var rate: Double
     
-    var training: js.UndefOr[Boolean] = js.native
+    var training: js.UndefOr[Boolean] = js.undefined
   }
   object Count {
     
@@ -120,10 +116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaskValue extends StObject {
     
-    var maskValue: Double = js.native
+    var maskValue: Double
   }
   object MaskValue {
     
@@ -141,10 +136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rate extends StObject {
     
-    var rate: Double = js.native
+    var rate: Double
   }
   object Rate {
     
@@ -162,12 +156,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RecipientMap extends StObject {
     
-    var recipientMap: typings.tensorflowTfjsLayers.executorMod.RecipientMap = js.native
+    var recipientMap: typings.tensorflowTfjsLayers.executorMod.RecipientMap
     
-    var sorted: js.Array[SymbolicTensor] = js.native
+    var sorted: js.Array[SymbolicTensor]
   }
   object RecipientMap {
     
@@ -194,10 +187,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stddev extends StObject {
     
-    var stddev: Double = js.native
+    var stddev: Double
   }
   object Stddev {
     

@@ -15,33 +15,31 @@ import typings.pako.pakoNumbers.`9`
 import typings.pako.pakoStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined pako.pako.DeflateFunctionOptions & {  to :'string'} */
-  @js.native
   trait DeflateFunctionOptionstos extends StObject {
     
-    var dictionary: js.UndefOr[js.Any] = js.native
+    var dictionary: js.UndefOr[js.Any] = js.undefined
     
-    var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+    var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
     
-    var memLevel: js.UndefOr[Double] = js.native
+    var memLevel: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var strategy: js.UndefOr[StrategyValues] = js.native
+    var strategy: js.UndefOr[StrategyValues] = js.undefined
     
-    var to: js.UndefOr[string] with string = js.native
+    var to: js.UndefOr[string] & string
     
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object DeflateFunctionOptionstos {
     
     @scala.inline
-    def apply(to: js.UndefOr[string] with string): DeflateFunctionOptionstos = {
+    def apply(to: js.UndefOr[string] & string): DeflateFunctionOptionstos = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeflateFunctionOptionstos]
     }
@@ -80,7 +78,7 @@ object anon {
       def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
       @scala.inline
-      def setTo(value: js.UndefOr[string] with string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      def setTo(value: js.UndefOr[string] & string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
@@ -91,19 +89,18 @@ object anon {
   }
   
   /* Inlined pako.pako.InflateFunctionOptions & {  to :'string'} */
-  @js.native
   trait InflateFunctionOptionstos extends StObject {
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[string] with string = js.native
+    var to: js.UndefOr[string] & string
     
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object InflateFunctionOptionstos {
     
     @scala.inline
-    def apply(to: js.UndefOr[string] with string): InflateFunctionOptionstos = {
+    def apply(to: js.UndefOr[string] & string): InflateFunctionOptionstos = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[InflateFunctionOptionstos]
     }
@@ -118,7 +115,7 @@ object anon {
       def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       @scala.inline
-      def setTo(value: js.UndefOr[string] with string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      def setTo(value: js.UndefOr[string] & string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])

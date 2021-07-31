@@ -8,7 +8,6 @@ import typings.typeorm.typeormStrings.remove
 import typings.typeorm.typeormStrings.save
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subjectBuilderCascadesSubjectBuilderMod {

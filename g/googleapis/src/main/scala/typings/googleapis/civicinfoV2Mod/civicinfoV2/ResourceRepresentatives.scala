@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/civicinfo/v2", "civicinfo_v2.Resource$Representatives")
@@ -35,7 +34,7 @@ class ResourceRepresentatives protected () extends StObject {
     */
   def representativeInfoByAddress(): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(callback: BodyResponseCallback[SchemaRepresentativeInfoResponse]): Unit = js.native
-  def representativeInfoByAddress(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
+  def representativeInfoByAddress(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(params: ParamsResourceRepresentativesRepresentativeinfobyaddress): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(
     params: ParamsResourceRepresentativesRepresentativeinfobyaddress,
@@ -72,7 +71,7 @@ class ResourceRepresentatives protected () extends StObject {
     */
   def representativeInfoByDivision(): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(callback: BodyResponseCallback[SchemaRepresentativeInfoData]): Unit = js.native
-  def representativeInfoByDivision(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
+  def representativeInfoByDivision(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(params: ParamsResourceRepresentativesRepresentativeinfobydivision): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(
     params: ParamsResourceRepresentativesRepresentativeinfobydivision,

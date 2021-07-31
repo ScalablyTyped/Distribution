@@ -9,7 +9,6 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -122,30 +121,29 @@ object mod {
     def task_started: typings.betterQueue.betterQueueStrings.task_started = "task_started".asInstanceOf[typings.betterQueue.betterQueueStrings.task_started]
   }
   
-  @js.native
   trait QueueOptions[T, K] extends StObject {
     
-    var afterProcessDelay: js.UndefOr[Double] = js.native
+    var afterProcessDelay: js.UndefOr[Double] = js.undefined
     
-    var autoResume: js.UndefOr[Boolean] = js.native
+    var autoResume: js.UndefOr[Boolean] = js.undefined
     
-    var batchDelay: js.UndefOr[Double] = js.native
+    var batchDelay: js.UndefOr[Double] = js.undefined
     
-    var batchDelayTimeout: js.UndefOr[Double] = js.native
+    var batchDelayTimeout: js.UndefOr[Double] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var cancelIfRunning: js.UndefOr[Boolean] = js.native
+    var cancelIfRunning: js.UndefOr[Boolean] = js.undefined
     
-    var concurrent: js.UndefOr[Double] = js.native
+    var concurrent: js.UndefOr[Double] = js.undefined
     
-    var failTaskOnProcessException: js.UndefOr[Boolean] = js.native
+    var failTaskOnProcessException: js.UndefOr[Boolean] = js.undefined
     
-    var filo: js.UndefOr[Boolean] = js.native
+    var filo: js.UndefOr[Boolean] = js.undefined
     
     var filter: js.UndefOr[
         js.Function2[/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var id: js.UndefOr[
         (/* keyof T */ String) | (js.Function2[
@@ -153,11 +151,11 @@ object mod {
           /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit], 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var maxTimeout: js.UndefOr[Double] = js.native
+    var maxTimeout: js.UndefOr[Double] = js.undefined
     
     var merge: js.UndefOr[
         js.Function3[
@@ -166,13 +164,13 @@ object mod {
           /* cb */ js.Function2[/* error */ js.Any, /* mergedTask */ T, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var precondition: js.UndefOr[
         js.Function1[/* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var preconditionRetryTimeout: js.UndefOr[Double] = js.native
+    var preconditionRetryTimeout: js.UndefOr[Double] = js.undefined
     
     var priority: js.UndefOr[
         js.Function2[
@@ -180,31 +178,186 @@ object mod {
           /* cb */ js.Function2[/* error */ js.Any, /* priority */ Double, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    def process(task: js.Any, cb: ProcessFunctionCb[K]): Unit = js.native
+    def process(task: js.Any, cb: ProcessFunctionCb[K]): Unit
     @JSName("process")
-    var process_Original: ProcessFunction[T, K] = js.native
+    var process_Original: ProcessFunction[T, K]
     
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
-    var store: js.UndefOr[String | StoreOptions | Store[T]] = js.native
+    var store: js.UndefOr[String | StoreOptions | Store[T]] = js.undefined
     
-    var storeMaxRetries: js.UndefOr[Double] = js.native
+    var storeMaxRetries: js.UndefOr[Double] = js.undefined
     
-    var storeRetryTimeout: js.UndefOr[Double] = js.native
+    var storeRetryTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object QueueOptions {
+    
+    @scala.inline
+    def apply[T, K](process: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): QueueOptions[T, K] = {
+      val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process))
+      __obj.asInstanceOf[QueueOptions[T, K]]
+    }
+    
+    @scala.inline
+    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions[?, ?], T, K] (val x: Self & (QueueOptions[T, K])) extends AnyVal {
+      
+      @scala.inline
+      def setAfterProcessDelay(value: Double): Self = StObject.set(x, "afterProcessDelay", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAfterProcessDelayUndefined: Self = StObject.set(x, "afterProcessDelay", js.undefined)
+      
+      @scala.inline
+      def setAutoResume(value: Boolean): Self = StObject.set(x, "autoResume", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoResumeUndefined: Self = StObject.set(x, "autoResume", js.undefined)
+      
+      @scala.inline
+      def setBatchDelay(value: Double): Self = StObject.set(x, "batchDelay", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBatchDelayTimeout(value: Double): Self = StObject.set(x, "batchDelayTimeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBatchDelayTimeoutUndefined: Self = StObject.set(x, "batchDelayTimeout", js.undefined)
+      
+      @scala.inline
+      def setBatchDelayUndefined: Self = StObject.set(x, "batchDelay", js.undefined)
+      
+      @scala.inline
+      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      
+      @scala.inline
+      def setCancelIfRunning(value: Boolean): Self = StObject.set(x, "cancelIfRunning", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCancelIfRunningUndefined: Self = StObject.set(x, "cancelIfRunning", js.undefined)
+      
+      @scala.inline
+      def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
+      
+      @scala.inline
+      def setFailTaskOnProcessException(value: Boolean): Self = StObject.set(x, "failTaskOnProcessException", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFailTaskOnProcessExceptionUndefined: Self = StObject.set(x, "failTaskOnProcessException", js.undefined)
+      
+      @scala.inline
+      def setFilo(value: Boolean): Self = StObject.set(x, "filo", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFiloUndefined: Self = StObject.set(x, "filo", js.undefined)
+      
+      @scala.inline
+      def setFilter(value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      @scala.inline
+      def setId(
+        value: (/* keyof T */ String) | (js.Function2[
+              /* task */ T, 
+              /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit], 
+              Unit
+            ])
+      ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIdFunction2(
+        value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit]) => Unit
+      ): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      @scala.inline
+      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      
+      @scala.inline
+      def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+      
+      @scala.inline
+      def setMerge(
+        value: (/* oldTask */ T, /* newTask */ T, /* cb */ js.Function2[/* error */ js.Any, /* mergedTask */ T, Unit]) => Unit
+      ): Self = StObject.set(x, "merge", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+      
+      @scala.inline
+      def setPrecondition(value: /* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit] => Unit): Self = StObject.set(x, "precondition", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPreconditionRetryTimeout(value: Double): Self = StObject.set(x, "preconditionRetryTimeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPreconditionRetryTimeoutUndefined: Self = StObject.set(x, "preconditionRetryTimeout", js.undefined)
+      
+      @scala.inline
+      def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
+      
+      @scala.inline
+      def setPriority(
+        value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* priority */ Double, Unit]) => Unit
+      ): Self = StObject.set(x, "priority", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      
+      @scala.inline
+      def setProcess(value: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      
+      @scala.inline
+      def setStore(value: String | StoreOptions | Store[T]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStoreMaxRetries(value: Double): Self = StObject.set(x, "storeMaxRetries", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStoreMaxRetriesUndefined: Self = StObject.set(x, "storeMaxRetries", js.undefined)
+      
+      @scala.inline
+      def setStoreRetryTimeout(value: Double): Self = StObject.set(x, "storeRetryTimeout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStoreRetryTimeoutUndefined: Self = StObject.set(x, "storeRetryTimeout", js.undefined)
+      
+      @scala.inline
+      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    }
   }
   
-  @js.native
   trait QueueStats extends StObject {
     
-    var average: Double = js.native
+    var average: Double
     
-    var peak: Double = js.native
+    var peak: Double
     
-    var successRate: Double = js.native
+    var successRate: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object QueueStats {
     
@@ -231,24 +384,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Store[T] extends StObject {
     
-    def connect(cb: js.Function2[/* error */ js.Any, /* length */ Double, Unit]): Unit = js.native
+    def connect(cb: js.Function2[/* error */ js.Any, /* length */ Double, Unit]): Unit
     
-    def deleteTask(taskId: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def deleteTask(taskId: js.Any, cb: js.Function0[Unit]): Unit
     
-    def getLock(lockId: String, cb: js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]): Unit = js.native
+    def getLock(lockId: String, cb: js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]): Unit
     
-    def getTask(taskId: js.Any, cb: js.Function2[/* error */ js.Any, /* task */ T, Unit]): Unit = js.native
+    def getTask(taskId: js.Any, cb: js.Function2[/* error */ js.Any, /* task */ T, Unit]): Unit
     
-    def putTask(taskId: js.Any, task: T, priority: Double, cb: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def putTask(taskId: js.Any, task: T, priority: Double, cb: js.Function1[/* error */ js.Any, Unit]): Unit
     
-    def releaseLock(lockId: String, cb: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def releaseLock(lockId: String, cb: js.Function1[/* error */ js.Any, Unit]): Unit
     
-    def takeFirstN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit = js.native
+    def takeFirstN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit
     
-    def takeLastN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit = js.native
+    def takeLastN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit
   }
   object Store {
     
@@ -268,7 +420,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[_], T] (val x: Self with Store[T]) extends AnyVal {
+    implicit class StoreMutableBuilder[Self <: Store[?], T] (val x: Self & Store[T]) extends AnyVal {
       
       @scala.inline
       def setConnect(value: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
@@ -296,12 +448,12 @@ object mod {
     }
   }
   
-  @js.native
   trait StoreOptions
-    extends // store-specific options
+    extends StObject
+       with // store-specific options
   /* key */ StringDictionary[js.Any] {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object StoreOptions {
     
@@ -320,18 +472,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TickerProgress extends StObject {
     
-    var complete: Double = js.native
+    var complete: Double
     
-    var eta: String = js.native
+    var eta: String
     
-    var message: String = js.native
+    var message: String
     
-    var pct: Double = js.native
+    var pct: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object TickerProgress {
     

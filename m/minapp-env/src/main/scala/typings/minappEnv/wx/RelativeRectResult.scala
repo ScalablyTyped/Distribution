@@ -2,24 +2,22 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 参照区域的边界 */
-@js.native
 trait RelativeRectResult extends StObject {
   
   /** 下边界 */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /** 左边界 */
-  var left: Double = js.native
+  var left: Double
   
   /** 右边界 */
-  var right: Double = js.native
+  var right: Double
   
   /** 上边界 */
-  var top: Double = js.native
+  var top: Double
 }
 object RelativeRectResult {
   

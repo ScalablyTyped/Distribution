@@ -6,28 +6,26 @@ import typings.nightwatch.nightwatchStrings.SEVERE
 import typings.nightwatch.nightwatchStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchLogEntry extends StObject {
   
   /**
     * Severity level
     */
-  var level: SEVERE | WARNING | INFO | DEBUG = js.native
+  var level: SEVERE | WARNING | INFO | DEBUG
   
   /**
     * The log entry message.
     */
-  var message: String = js.native
+  var message: String
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The time stamp of log entry in seconds.
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object NightwatchLogEntry {
   

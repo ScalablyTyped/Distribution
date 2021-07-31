@@ -2,48 +2,46 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResults[TDoc] extends StObject {
   
-  var aroundLatLng: js.UndefOr[String] = js.native
+  var aroundLatLng: js.UndefOr[String] = js.undefined
   
-  var automaticRadius: js.UndefOr[String] = js.native
+  var automaticRadius: js.UndefOr[String] = js.undefined
   
-  var disjunctiveFacets: js.Array[_] = js.native
+  var disjunctiveFacets: js.Array[js.Any]
   
-  var exhaustiveNbHits: Boolean = js.native
+  var exhaustiveNbHits: Boolean
   
-  var facets: js.Array[_] = js.native
+  var facets: js.Array[js.Any]
   
-  var hierarchicalFacets: js.Array[_] = js.native
+  var hierarchicalFacets: js.Array[js.Any]
   
-  var hits: js.Array[Hit[TDoc]] = js.native
+  var hits: js.Array[Hit[TDoc]]
   
-  var hitsPerPage: Double = js.native
+  var hitsPerPage: Double
   
-  var index: String = js.native
+  var index: String
   
-  var nbHits: Double = js.native
+  var nbHits: Double
   
-  var nbPages: Double = js.native
+  var nbPages: Double
   
-  var page: Double = js.native
+  var page: Double
   
-  var processingTimeMS: Double = js.native
+  var processingTimeMS: Double
   
-  var query: String = js.native
+  var query: String
 }
 object SearchResults {
   
   @scala.inline
   def apply[TDoc](
-    disjunctiveFacets: js.Array[_],
+    disjunctiveFacets: js.Array[js.Any],
     exhaustiveNbHits: Boolean,
-    facets: js.Array[_],
-    hierarchicalFacets: js.Array[_],
+    facets: js.Array[js.Any],
+    hierarchicalFacets: js.Array[js.Any],
     hits: js.Array[Hit[TDoc]],
     hitsPerPage: Double,
     index: String,
@@ -58,7 +56,7 @@ object SearchResults {
   }
   
   @scala.inline
-  implicit class SearchResultsMutableBuilder[Self <: SearchResults[_], TDoc] (val x: Self with SearchResults[TDoc]) extends AnyVal {
+  implicit class SearchResultsMutableBuilder[Self <: SearchResults[?], TDoc] (val x: Self & SearchResults[TDoc]) extends AnyVal {
     
     @scala.inline
     def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
@@ -73,7 +71,7 @@ object SearchResults {
     def setAutomaticRadiusUndefined: Self = StObject.set(x, "automaticRadius", js.undefined)
     
     @scala.inline
-    def setDisjunctiveFacets(value: js.Array[_]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
+    def setDisjunctiveFacets(value: js.Array[js.Any]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisjunctiveFacetsVarargs(value: js.Any*): Self = StObject.set(x, "disjunctiveFacets", js.Array(value :_*))
@@ -82,13 +80,13 @@ object SearchResults {
     def setExhaustiveNbHits(value: Boolean): Self = StObject.set(x, "exhaustiveNbHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacets(value: js.Array[_]): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
+    def setFacets(value: js.Array[js.Any]): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFacetsVarargs(value: js.Any*): Self = StObject.set(x, "facets", js.Array(value :_*))
     
     @scala.inline
-    def setHierarchicalFacets(value: js.Array[_]): Self = StObject.set(x, "hierarchicalFacets", value.asInstanceOf[js.Any])
+    def setHierarchicalFacets(value: js.Array[js.Any]): Self = StObject.set(x, "hierarchicalFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHierarchicalFacetsVarargs(value: js.Any*): Self = StObject.set(x, "hierarchicalFacets", js.Array(value :_*))

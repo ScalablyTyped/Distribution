@@ -3,15 +3,13 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreInfo extends StObject {
   
-  var options: StringDictionary[js.Any] = js.native
+  var options: StringDictionary[js.Any]
   
-  var taskExecutionMode: TaskExecutionMode = js.native
+  var taskExecutionMode: TaskExecutionMode
 }
 object RestoreInfo {
   

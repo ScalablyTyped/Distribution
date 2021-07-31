@@ -12,32 +12,31 @@ import typings.saucelabs.saucelabsStrings.UNKNOWN
 import typings.saucelabs.saucelabsStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Step
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var error: js.UndefOr[ScriptError] = js.native
+  var error: js.UndefOr[ScriptError] = js.undefined
   
-  var hasReplayImage: js.UndefOr[Boolean] = js.native
+  var hasReplayImage: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[Id] = js.native
+  var id: js.UndefOr[Id] = js.undefined
   
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.native
+  var orientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.undefined
   
-  var recordedImage: js.UndefOr[Id] = js.native
+  var recordedImage: js.UndefOr[Id] = js.undefined
   
-  var resolvedPosition: js.UndefOr[Point] = js.native
+  var resolvedPosition: js.UndefOr[Point] = js.undefined
   
-  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.native
+  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.undefined
   
-  var warning: js.UndefOr[ScriptWarning] = js.native
+  var warning: js.UndefOr[ScriptWarning] = js.undefined
 }
 object Step {
   

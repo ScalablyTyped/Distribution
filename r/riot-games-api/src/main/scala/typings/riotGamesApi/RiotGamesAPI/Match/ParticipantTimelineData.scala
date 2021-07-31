@@ -2,19 +2,17 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantTimelineData extends StObject {
   
-  var tenToTwenty: Double = js.native
+  var tenToTwenty: Double
   
-  var thirtyToEnd: Double = js.native
+  var thirtyToEnd: Double
   
-  var twentyToThirty: Double = js.native
+  var twentyToThirty: Double
   
-  var zeroToTen: Double = js.native
+  var zeroToTen: Double
 }
 object ParticipantTimelineData {
   

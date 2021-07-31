@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Threshold extends StObject {
   
   /**
     * The type of comparison. Only "less than" (LT) comparisons are supported.
     */
-  var Comparison: js.UndefOr[typings.awsSdk.connectMod.Comparison] = js.native
+  var Comparison: js.UndefOr[typings.awsSdk.connectMod.Comparison] = js.undefined
   
   /**
     * The threshold value to compare.
     */
-  var ThresholdValue: js.UndefOr[typings.awsSdk.connectMod.ThresholdValue] = js.native
+  var ThresholdValue: js.UndefOr[typings.awsSdk.connectMod.ThresholdValue] = js.undefined
 }
 object Threshold {
   

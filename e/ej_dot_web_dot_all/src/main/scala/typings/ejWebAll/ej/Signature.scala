@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Signature extends Widget_ {
+trait Signature
+  extends StObject
+     with Widget_ {
   
   /** Clears the strokes in the signature.
     * @returns {void}
@@ -69,39 +70,46 @@ object Signature {
     
     ///To save the signature image with BMP format only.
     @js.native
-    sealed trait BMP extends SaveImageFormat
+    sealed trait BMP
+      extends StObject
+         with SaveImageFormat
     
     ///To save the signature image with JPG format only.
     @js.native
-    sealed trait JPG extends SaveImageFormat
+    sealed trait JPG
+      extends StObject
+         with SaveImageFormat
     
     ///To save the signature image with PNG format only.
     @js.native
-    sealed trait PNG extends SaveImageFormat
+    sealed trait PNG
+      extends StObject
+         with SaveImageFormat
     
     ///To save the signature image with TIFF format only.
     @js.native
-    sealed trait TIFF extends SaveImageFormat
+    sealed trait TIFF
+      extends StObject
+         with SaveImageFormat
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Gives the last stored image
       */
-    var lastImage: js.UndefOr[String] = js.native
+    var lastImage: js.UndefOr[String] = js.undefined
     
     /** Instance of the signature model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -140,77 +148,76 @@ object Signature {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** This property is used to set the background color for the signature.
       * @Default {#ffffff}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** This property is used to set the background image for the signature.
       */
-    var backgroundImage: js.UndefOr[String] = js.native
+    var backgroundImage: js.UndefOr[String] = js.undefined
     
     /** Triggers when the stroke is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the Signature textbox widget.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of the Signature control.
       * @Default {100%}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered when the pointer is clicked or touched in the signature canvas.
       */
-    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.native
+    var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.undefined
     
     /** Triggered when the pointer is moved in the signature canvas.
       */
-    var mouseMove: js.UndefOr[js.Function1[/* e */ MouseMoveEventArgs, Unit]] = js.native
+    var mouseMove: js.UndefOr[js.Function1[/* e */ MouseMoveEventArgs, Unit]] = js.undefined
     
     /** Triggered when the pointer is released after click or touch in the signature canvas.
       */
-    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.native
+    var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
     
     /** Allows the type of the image format to be saved when the signature image is saved.
       */
-    var saveImageFormat: js.UndefOr[SaveImageFormat | String] = js.native
+    var saveImageFormat: js.UndefOr[SaveImageFormat | String] = js.undefined
     
     /** Allows the signature image to be saved along with its background.
       * @Default {false}
       */
-    var saveWithBackground: js.UndefOr[Boolean] = js.native
+    var saveWithBackground: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables rounded corner.
       * @Default {true}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the stroke color for the stroke of the signature.
       * @Default {#000000}
       */
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
     /** Sets the stroke width for the stroke of the signature.
       * @Default {2}
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the width of the Signature control.
       * @Default {100%}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -315,24 +322,23 @@ object Signature {
     }
   }
   
-  @js.native
   trait MouseDownEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the signature model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns all the event values
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object MouseDownEventArgs {
     
@@ -371,24 +377,23 @@ object Signature {
     }
   }
   
-  @js.native
   trait MouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the signature model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns all the event values
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object MouseMoveEventArgs {
     
@@ -427,24 +432,23 @@ object Signature {
     }
   }
   
-  @js.native
   trait MouseUpEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the signature model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns all the event values
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object MouseUpEventArgs {
     

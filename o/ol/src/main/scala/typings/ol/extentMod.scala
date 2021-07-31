@@ -8,241 +8,179 @@ import typings.ol.relationshipMod.Relationship
 import typings.ol.sizeMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extentMod {
   
-  @JSImport("ol/extent", "applyTransform")
+  @JSImport("ol/extent", JSImport.Namespace)
   @js.native
-  def applyTransform(extent: Extent, transformFn: TransformFunction): Extent = js.native
-  @JSImport("ol/extent", "applyTransform")
-  @js.native
-  def applyTransform(
-    extent: Extent,
-    transformFn: TransformFunction,
-    opt_extent: js.UndefOr[scala.Nothing],
-    opt_stops: Double
-  ): Extent = js.native
-  @JSImport("ol/extent", "applyTransform")
-  @js.native
-  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent): Extent = js.native
-  @JSImport("ol/extent", "applyTransform")
-  @js.native
-  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent, opt_stops: Double): Extent = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/extent", "approximatelyEquals")
-  @js.native
-  def approximatelyEquals(extent1: Extent, extent2: Extent, tolerance: Double): Boolean = js.native
+  @scala.inline
+  def applyTransform(extent: Extent, transformFn: TransformFunction): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Unit, opt_stops: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any], opt_stops.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent, opt_stops: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any], opt_stops.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "boundingExtent")
-  @js.native
-  def boundingExtent(coordinates: js.Array[Coordinate]): Extent = js.native
+  @scala.inline
+  def approximatelyEquals(extent1: Extent, extent2: Extent, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approximatelyEquals")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "buffer")
-  @js.native
-  def buffer(extent: Extent, value: Double): Extent = js.native
-  @JSImport("ol/extent", "buffer")
-  @js.native
-  def buffer(extent: Extent, value: Double, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def boundingExtent(coordinates: js.Array[Coordinate]): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("boundingExtent")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "clone")
-  @js.native
-  def clone_(extent: Extent): Extent = js.native
-  @JSImport("ol/extent", "clone")
-  @js.native
-  def clone_(extent: Extent, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def buffer(extent: Extent, value: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(extent.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def buffer(extent: Extent, value: Double, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(extent.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "closestSquaredDistanceXY")
-  @js.native
-  def closestSquaredDistanceXY(extent: Extent, x: Double, y: Double): Double = js.native
+  @scala.inline
+  def clone_(extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def clone_(extent: Extent, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(extent.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "containsCoordinate")
-  @js.native
-  def containsCoordinate(extent: Extent, coordinate: Coordinate): Boolean = js.native
+  @scala.inline
+  def closestSquaredDistanceXY(extent: Extent, x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("closestSquaredDistanceXY")(extent.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "containsExtent")
-  @js.native
-  def containsExtent(extent1: Extent, extent2: Extent): Boolean = js.native
+  @scala.inline
+  def containsCoordinate(extent: Extent, coordinate: Coordinate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsCoordinate")(extent.asInstanceOf[js.Any], coordinate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "containsXY")
-  @js.native
-  def containsXY(extent: Extent, x: Double, y: Double): Boolean = js.native
+  @scala.inline
+  def containsExtent(extent1: Extent, extent2: Extent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsExtent")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "coordinateRelationship")
-  @js.native
-  def coordinateRelationship(extent: Extent, coordinate: Coordinate): Relationship = js.native
+  @scala.inline
+  def containsXY(extent: Extent, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsXY")(extent.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "createEmpty")
-  @js.native
-  def createEmpty(): Extent = js.native
+  @scala.inline
+  def coordinateRelationship(extent: Extent, coordinate: Coordinate): Relationship = (^.asInstanceOf[js.Dynamic].applyDynamic("coordinateRelationship")(extent.asInstanceOf[js.Any], coordinate.asInstanceOf[js.Any])).asInstanceOf[Relationship]
   
-  @JSImport("ol/extent", "createOrUpdate")
-  @js.native
-  def createOrUpdate(minX: Double, minY: Double, maxX: Double, maxY: Double): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdate")
-  @js.native
-  def createOrUpdate(minX: Double, minY: Double, maxX: Double, maxY: Double, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createEmpty(): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "createOrUpdateEmpty")
-  @js.native
-  def createOrUpdateEmpty(): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdateEmpty")
-  @js.native
-  def createOrUpdateEmpty(opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createOrUpdate(minX: Double, minY: Double, maxX: Double, maxY: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdate(minX: Double, minY: Double, maxX: Double, maxY: Double, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "createOrUpdateFromCoordinate")
-  @js.native
-  def createOrUpdateFromCoordinate(coordinate: Coordinate): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdateFromCoordinate")
-  @js.native
-  def createOrUpdateFromCoordinate(coordinate: Coordinate, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createOrUpdateEmpty(): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateEmpty")().asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdateEmpty(opt_extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateEmpty")(opt_extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "createOrUpdateFromCoordinates")
-  @js.native
-  def createOrUpdateFromCoordinates(coordinates: js.Array[Coordinate]): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdateFromCoordinates")
-  @js.native
-  def createOrUpdateFromCoordinates(coordinates: js.Array[Coordinate], opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createOrUpdateFromCoordinate(coordinate: Coordinate): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromCoordinate")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdateFromCoordinate(coordinate: Coordinate, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromCoordinate")(coordinate.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "createOrUpdateFromFlatCoordinates")
-  @js.native
-  def createOrUpdateFromFlatCoordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdateFromFlatCoordinates")
-  @js.native
-  def createOrUpdateFromFlatCoordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createOrUpdateFromCoordinates(coordinates: js.Array[Coordinate]): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromCoordinates")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdateFromCoordinates(coordinates: js.Array[Coordinate], opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromCoordinates")(coordinates.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "createOrUpdateFromRings")
-  @js.native
-  def createOrUpdateFromRings(rings: js.Array[js.Array[Coordinate]]): Extent = js.native
-  @JSImport("ol/extent", "createOrUpdateFromRings")
-  @js.native
-  def createOrUpdateFromRings(rings: js.Array[js.Array[Coordinate]], opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def createOrUpdateFromFlatCoordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromFlatCoordinates")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdateFromFlatCoordinates(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromFlatCoordinates")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "equals")
-  @js.native
-  def equals_(extent1: Extent, extent2: Extent): Boolean = js.native
+  @scala.inline
+  def createOrUpdateFromRings(rings: js.Array[js.Array[Coordinate]]): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromRings")(rings.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def createOrUpdateFromRings(rings: js.Array[js.Array[Coordinate]], opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdateFromRings")(rings.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "extend")
-  @js.native
-  def extend(extent1: Extent, extent2: Extent): Extent = js.native
+  @scala.inline
+  def equals_(extent1: Extent, extent2: Extent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "extendCoordinate")
-  @js.native
-  def extendCoordinate(extent: Extent, coordinate: Coordinate): Unit = js.native
+  @scala.inline
+  def extend(extent1: Extent, extent2: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "extendCoordinates")
-  @js.native
-  def extendCoordinates(extent: Extent, coordinates: js.Array[Coordinate]): Extent = js.native
+  @scala.inline
+  def extendCoordinate(extent: Extent, coordinate: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendCoordinate")(extent.asInstanceOf[js.Any], coordinate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/extent", "extendFlatCoordinates")
-  @js.native
-  def extendFlatCoordinates(extent: Extent, flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Extent = js.native
+  @scala.inline
+  def extendCoordinates(extent: Extent, coordinates: js.Array[Coordinate]): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("extendCoordinates")(extent.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "extendRings")
-  @js.native
-  def extendRings(extent: Extent, rings: js.Array[js.Array[Coordinate]]): Extent = js.native
+  @scala.inline
+  def extendFlatCoordinates(extent: Extent, flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("extendFlatCoordinates")(extent.asInstanceOf[js.Any], flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "extendXY")
-  @js.native
-  def extendXY(extent: Extent, x: Double, y: Double): Unit = js.native
+  @scala.inline
+  def extendRings(extent: Extent, rings: js.Array[js.Array[Coordinate]]): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("extendRings")(extent.asInstanceOf[js.Any], rings.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "forEachCorner")
-  @js.native
-  def forEachCorner[S](extent: Extent, callback: js.Function1[/* p0 */ Coordinate, S]): S | Boolean = js.native
+  @scala.inline
+  def extendXY(extent: Extent, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendXY")(extent.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/extent", "getArea")
-  @js.native
-  def getArea(extent: Extent): Double = js.native
+  @scala.inline
+  def forEachCorner[S](extent: Extent, callback: js.Function1[/* p0 */ Coordinate, S]): S | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachCorner")(extent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[S | Boolean]
   
-  @JSImport("ol/extent", "getBottomLeft")
-  @js.native
-  def getBottomLeft(extent: Extent): Coordinate = js.native
+  @scala.inline
+  def getArea(extent: Extent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "getBottomRight")
-  @js.native
-  def getBottomRight(extent: Extent): Coordinate = js.native
+  @scala.inline
+  def getBottomLeft(extent: Extent): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomLeft")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "getCenter")
-  @js.native
-  def getCenter(extent: Extent): Coordinate = js.native
+  @scala.inline
+  def getBottomRight(extent: Extent): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomRight")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "getCorner")
-  @js.native
-  def getCorner(extent: Extent, corner: Corner): Coordinate = js.native
+  @scala.inline
+  def getCenter(extent: Extent): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "getEnlargedArea")
-  @js.native
-  def getEnlargedArea(extent1: Extent, extent2: Extent): Double = js.native
+  @scala.inline
+  def getCorner(extent: Extent, corner: Corner): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("getCorner")(extent.asInstanceOf[js.Any], corner.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "getForViewAndSize")
-  @js.native
-  def getForViewAndSize(center: Coordinate, resolution: Double, rotation: Double, size: Size): Extent = js.native
-  @JSImport("ol/extent", "getForViewAndSize")
-  @js.native
-  def getForViewAndSize(center: Coordinate, resolution: Double, rotation: Double, size: Size, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def getEnlargedArea(extent1: Extent, extent2: Extent): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnlargedArea")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "getHeight")
-  @js.native
-  def getHeight(extent: Extent): Double = js.native
+  @scala.inline
+  def getForViewAndSize(center: Coordinate, resolution: Double, rotation: Double, size: Size): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("getForViewAndSize")(center.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def getForViewAndSize(center: Coordinate, resolution: Double, rotation: Double, size: Size, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("getForViewAndSize")(center.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], size.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "getIntersection")
-  @js.native
-  def getIntersection(extent1: Extent, extent2: Extent): Extent = js.native
-  @JSImport("ol/extent", "getIntersection")
-  @js.native
-  def getIntersection(extent1: Extent, extent2: Extent, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def getHeight(extent: Extent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeight")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "getIntersectionArea")
-  @js.native
-  def getIntersectionArea(extent1: Extent, extent2: Extent): Double = js.native
+  @scala.inline
+  def getIntersection(extent1: Extent, extent2: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def getIntersection(extent1: Extent, extent2: Extent, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "getMargin")
-  @js.native
-  def getMargin(extent: Extent): Double = js.native
+  @scala.inline
+  def getIntersectionArea(extent1: Extent, extent2: Extent): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersectionArea")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "getSize")
-  @js.native
-  def getSize(extent: Extent): Size = js.native
+  @scala.inline
+  def getMargin(extent: Extent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMargin")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "getTopLeft")
-  @js.native
-  def getTopLeft(extent: Extent): Coordinate = js.native
+  @scala.inline
+  def getSize(extent: Extent): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(extent.asInstanceOf[js.Any]).asInstanceOf[Size]
   
-  @JSImport("ol/extent", "getTopRight")
-  @js.native
-  def getTopRight(extent: Extent): Coordinate = js.native
+  @scala.inline
+  def getTopLeft(extent: Extent): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopLeft")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "getWidth")
-  @js.native
-  def getWidth(extent: Extent): Double = js.native
+  @scala.inline
+  def getTopRight(extent: Extent): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopRight")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
   
-  @JSImport("ol/extent", "intersects")
-  @js.native
-  def intersects(extent1: Extent, extent2: Extent): Boolean = js.native
+  @scala.inline
+  def getWidth(extent: Extent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWidth")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ol/extent", "intersectsSegment")
-  @js.native
-  def intersectsSegment(extent: Extent, start: Coordinate, end: Coordinate): Boolean = js.native
+  @scala.inline
+  def intersects(extent1: Extent, extent2: Extent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "isEmpty")
-  @js.native
-  def isEmpty(extent: Extent): Boolean = js.native
+  @scala.inline
+  def intersectsSegment(extent: Extent, start: Coordinate, end: Coordinate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsSegment")(extent.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "returnOrUpdate")
-  @js.native
-  def returnOrUpdate(extent: Extent): Extent = js.native
-  @JSImport("ol/extent", "returnOrUpdate")
-  @js.native
-  def returnOrUpdate(extent: Extent, opt_extent: Extent): Extent = js.native
+  @scala.inline
+  def isEmpty(extent: Extent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(extent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/extent", "scaleFromCenter")
-  @js.native
-  def scaleFromCenter(extent: Extent, value: Double): Unit = js.native
+  @scala.inline
+  def returnOrUpdate(extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("returnOrUpdate")(extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  @scala.inline
+  def returnOrUpdate(extent: Extent, opt_extent: Extent): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("returnOrUpdate")(extent.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/extent", "wrapX")
-  @js.native
-  def wrapX(extent: Extent, projection: default): Extent = js.native
+  @scala.inline
+  def scaleFromCenter(extent: Extent, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleFromCenter")(extent.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wrapX(extent: Extent, projection: default): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(extent.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
   type Extent = js.Tuple4[Double, Double, Double, Double]
 }

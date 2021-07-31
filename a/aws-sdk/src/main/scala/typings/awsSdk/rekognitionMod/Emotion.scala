@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Emotion extends StObject {
   
   /**
     * Level of confidence in the determination.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * Type of emotion detected.
     */
-  var Type: js.UndefOr[EmotionName] = js.native
+  var Type: js.UndefOr[EmotionName] = js.undefined
 }
 object Emotion {
   

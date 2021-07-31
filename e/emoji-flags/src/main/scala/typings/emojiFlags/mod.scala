@@ -2,10 +2,13 @@ package typings.emojiFlags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("emoji-flags", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("emoji-flags", "AD")
   @js.native
@@ -1011,9 +1014,8 @@ object mod {
   @js.native
   val codes: js.Array[String] = js.native
   
-  @JSImport("emoji-flags", "countryCode")
-  @js.native
-  def countryCode(countryCode: String): CountryData = js.native
+  @scala.inline
+  def countryCode(countryCode: String): CountryData = ^.asInstanceOf[js.Dynamic].applyDynamic("countryCode")(countryCode.asInstanceOf[js.Any]).asInstanceOf[CountryData]
   
   @JSImport("emoji-flags", "data")
   @js.native
@@ -1031,18 +1033,17 @@ object mod {
   @js.native
   val unicodes: js.Array[String] = js.native
   
-  @js.native
   trait CountryData extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var emoji: String = js.native
+    var emoji: String
     
-    var name: String = js.native
+    var name: String
     
-    var title: String = js.native
+    var title: String
     
-    var unicode: String = js.native
+    var unicode: String
   }
   object CountryData {
     

@@ -3,30 +3,28 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.dimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the lists of dimensions.
   */
-@js.native
 trait IDimensionListDef extends StObject {
   
   /**
     * Data type JSON
     */
-  var qData: js.Any = js.native
+  var qData: js.Any
   
   /**
     * Type of the list
     */
-  var qType: dimension = js.native
+  var qType: dimension
 }
 object IDimensionListDef {
   
   @scala.inline
-  def apply(qData: js.Any, qType: dimension): IDimensionListDef = {
-    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
+  def apply(qData: js.Any): IDimensionListDef = {
+    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = "dimension")
     __obj.asInstanceOf[IDimensionListDef]
   }
   

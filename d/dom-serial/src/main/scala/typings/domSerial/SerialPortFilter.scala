@@ -2,15 +2,13 @@ package typings.domSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialPortFilter extends StObject {
   
-  var usbProductId: js.UndefOr[Double] = js.native
+  var usbProductId: js.UndefOr[Double] = js.undefined
   
-  var usbVendorId: Double = js.native
+  var usbVendorId: Double
 }
 object SerialPortFilter {
   

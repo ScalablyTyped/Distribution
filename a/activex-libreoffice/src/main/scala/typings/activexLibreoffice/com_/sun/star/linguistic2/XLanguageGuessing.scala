@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Yiddishzh-CN : Chinese (simplified)zh-TW : Chinese (traditional)
   * @since OOo 2.2
   */
-@js.native
 trait XLanguageGuessing extends StObject {
   
   /**
@@ -29,40 +27,40 @@ trait XLanguageGuessing extends StObject {
     *
     * This should be the same as the mathematical union of all enabled and disabled languages.
     */
-  val AvailableLanguages: SafeArray[Locale] = js.native
+  val AvailableLanguages: SafeArray[Locale]
   
   /** returns the list of all disabled languages */
-  val DisabledLanguages: SafeArray[Locale] = js.native
+  val DisabledLanguages: SafeArray[Locale]
   
   /** returns the list of all enabled languages */
-  val EnabledLanguages: SafeArray[Locale] = js.native
+  val EnabledLanguages: SafeArray[Locale]
   
   /**
     * allows to explicitly discard some languages from the set of languages possibly returned.
     *
     * By default all languages are enabled.
     */
-  def disableLanguages(aLanguages: SeqEquiv[Locale]): Unit = js.native
+  def disableLanguages(aLanguages: SeqEquiv[Locale]): Unit
   
   /**
     * allows to explicitly re-enable some languages that got previously disabled.
     *
     * By default all languages are enabled.
     */
-  def enableLanguages(aLanguages: SeqEquiv[Locale]): Unit = js.native
+  def enableLanguages(aLanguages: SeqEquiv[Locale]): Unit
   
   /**
     * returns a list of all supported languages.
     *
     * This should be the same as the mathematical union of all enabled and disabled languages.
     */
-  def getAvailableLanguages(): SafeArray[Locale] = js.native
+  def getAvailableLanguages(): SafeArray[Locale]
   
   /** returns the list of all disabled languages */
-  def getDisabledLanguages(): SafeArray[Locale] = js.native
+  def getDisabledLanguages(): SafeArray[Locale]
   
   /** returns the list of all enabled languages */
-  def getEnabledLanguages(): SafeArray[Locale] = js.native
+  def getEnabledLanguages(): SafeArray[Locale]
   
   /**
     * determines the single most probable language of a sub-string.
@@ -78,7 +76,7 @@ trait XLanguageGuessing extends StObject {
     * @returns the locale for the language identified. If no language could be identified the locale will be empty.
     * @see com.sun.star.lang.Locale
     */
-  def guessPrimaryLanguage(aText: String, nStartPos: Double, nLen: Double): Locale = js.native
+  def guessPrimaryLanguage(aText: String, nStartPos: Double, nLen: Double): Locale
 }
 object XLanguageGuessing {
   

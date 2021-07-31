@@ -1,6 +1,5 @@
 package typings.protractor
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.blockingProxy.mod.BPClient
 import typings.protractor.anon.Args
 import typings.protractor.elementMod.ElementArrayFinder
@@ -14,7 +13,6 @@ import typings.seleniumWebdriver.mod.WebElement
 import typings.webdriverJsExtender.mod.ExtendedWebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
@@ -29,45 +27,25 @@ object browserMod {
   @js.native
   class AbstractWebDriver () extends WebDriver
   
-  @JSImport("protractor/built/browser", "ProtractorBrowser")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/browser", "ProtractorBrowser")
   @js.native
-  class ProtractorBrowser protected ()
-    extends AbstractExtendedWebDriver
-       with /* key */ StringDictionary[js.Any] {
+  class ProtractorBrowser protected () extends AbstractExtendedWebDriver {
     def this(webdriverInstance: WebDriver) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String) = this()
-    def this(webdriverInstance: WebDriver, opt_baseUrl: js.UndefOr[scala.Nothing], opt_rootElement: String) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.Promise[String]
-    ) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String, opt_rootElement: String) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String, opt_rootElement: js.Promise[String]) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: Boolean
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: String,
-      opt_untrackOutstandingTimeouts: Boolean
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.Promise[String],
-      opt_untrackOutstandingTimeouts: Boolean
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: String,
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: Boolean
-    ) = this()
+    def this(webdriverInstance: WebDriver, opt_baseUrl: Unit, opt_rootElement: String) = this()
+    def this(webdriverInstance: WebDriver, opt_baseUrl: Unit, opt_rootElement: js.Promise[String]) = this()
     def this(
       webdriverInstance: WebDriver,
       opt_baseUrl: String,
@@ -82,66 +60,27 @@ object browserMod {
     ) = this()
     def this(
       webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
-      opt_blockingProxyUrl: String
+      opt_baseUrl: String,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Boolean
     ) = this()
     def this(
       webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: Boolean,
-      opt_blockingProxyUrl: String
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_baseUrl: Unit,
       opt_rootElement: String,
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
-      opt_blockingProxyUrl: String
+      opt_untrackOutstandingTimeouts: Boolean
     ) = this()
     def this(
       webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: String,
-      opt_untrackOutstandingTimeouts: Boolean,
-      opt_blockingProxyUrl: String
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_baseUrl: Unit,
       opt_rootElement: js.Promise[String],
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
-      opt_blockingProxyUrl: String
+      opt_untrackOutstandingTimeouts: Boolean
     ) = this()
     def this(
       webdriverInstance: WebDriver,
-      opt_baseUrl: js.UndefOr[scala.Nothing],
-      opt_rootElement: js.Promise[String],
-      opt_untrackOutstandingTimeouts: Boolean,
-      opt_blockingProxyUrl: String
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: String,
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
-      opt_blockingProxyUrl: String
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: String,
-      opt_rootElement: js.UndefOr[scala.Nothing],
-      opt_untrackOutstandingTimeouts: Boolean,
-      opt_blockingProxyUrl: String
-    ) = this()
-    def this(
-      webdriverInstance: WebDriver,
-      opt_baseUrl: String,
-      opt_rootElement: String,
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
-      opt_blockingProxyUrl: String
+      opt_baseUrl: Unit,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Boolean
     ) = this()
     def this(
       webdriverInstance: WebDriver,
@@ -153,8 +92,8 @@ object browserMod {
     def this(
       webdriverInstance: WebDriver,
       opt_baseUrl: String,
-      opt_rootElement: js.Promise[String],
-      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: Unit,
       opt_blockingProxyUrl: String
     ) = this()
     def this(
@@ -162,6 +101,69 @@ object browserMod {
       opt_baseUrl: String,
       opt_rootElement: js.Promise[String],
       opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: Unit,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Unit,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: Unit,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: Unit,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: Unit,
+      opt_rootElement: Unit,
+      opt_untrackOutstandingTimeouts: Unit,
       opt_blockingProxyUrl: String
     ) = this()
     
@@ -318,8 +320,8 @@ object browserMod {
       * the scripts return value.
       * @template T
       */
-    def executeScriptWithDescription(script: String, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
-    def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
+    def executeScriptWithDescription(script: String, description: String, scriptArgs: js.Any*): js.Promise[js.Any] = js.native
+    def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: js.Any*): js.Promise[js.Any] = js.native
     
     /**
       * Fork another instance of browser for use in interactive tests.
@@ -341,19 +343,15 @@ object browserMod {
       * @returns {ProtractorBrowser} A browser instance.
       */
     def forkNewDriverInstance(): ProtractorBrowser = js.native
-    def forkNewDriverInstance(
-      useSameUrl: js.UndefOr[scala.Nothing],
-      copyMockModules: js.UndefOr[scala.Nothing],
-      copyConfigUpdates: Boolean
-    ): ProtractorBrowser = js.native
-    def forkNewDriverInstance(useSameUrl: js.UndefOr[scala.Nothing], copyMockModules: Boolean): ProtractorBrowser = js.native
-    def forkNewDriverInstance(useSameUrl: js.UndefOr[scala.Nothing], copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean): ProtractorBrowser = js.native
-    def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: js.UndefOr[scala.Nothing], copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Unit, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: Unit, copyMockModules: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: Unit, copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: Unit, copyMockModules: Unit, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     
-    def get(destination: String, timeout: Double): js.Promise[_] = js.native
+    def get(destination: String, timeout: Double): js.Promise[js.Any] = js.native
     
     /**
       * Deprecated, use `browser.getCurrentUrl()` instead.
@@ -370,7 +368,7 @@ object browserMod {
       * @returns {webdriver.promise.Promise<string>} The current absolute url from
       * AngularJS.
       */
-    def getLocationAbsUrl(): js.Promise[_] = js.native
+    def getLocationAbsUrl(): js.Promise[js.Any] = js.native
     
     /**
       * Timeout in milliseconds to wait for pages to load when calling `get`.
@@ -389,7 +387,7 @@ object browserMod {
       * @returns {webdriver.promise.Promise} A promise which resolves to the
       * capabilities object.
       */
-    def getProcessedConfig(): js.Promise[_] = js.native
+    def getProcessedConfig(): js.Promise[js.Any] = js.native
     
     /**
       * Get a list of the current mock modules.
@@ -418,15 +416,15 @@ object browserMod {
     
     var internalRootEl: js.Any = js.native
     
-    def isElementPresent(locatorOrElement: ElementFinder): js.Promise[_] = js.native
+    def isElementPresent(locatorOrElement: ElementFinder): js.Promise[js.Any] = js.native
     /**
       * Tests if an element is present on the page.
       * @see webdriver.WebDriver.isElementPresent
       * @returns {!webdriver.promise.Promise} A promise that will resolve to whether
       *     the element is present on the page.
       */
-    def isElementPresent(locatorOrElement: Locator): js.Promise[_] = js.native
-    def isElementPresent(locatorOrElement: WebElement): js.Promise[_] = js.native
+    def isElementPresent(locatorOrElement: Locator): js.Promise[js.Any] = js.native
+    def isElementPresent(locatorOrElement: WebElement): js.Promise[js.Any] = js.native
     
     /**
       * Information about mock modules that will be installed during every
@@ -476,8 +474,8 @@ object browserMod {
       *
       * @param {number=} opt_timeout Number of milliseconds to wait for Angular to start.
       */
-    def refresh(): js.Promise[_] = js.native
-    def refresh(opt_timeout: Double): js.Promise[_] = js.native
+    def refresh(): js.Promise[js.Any] = js.native
+    def refresh(opt_timeout: Double): js.Promise[js.Any] = js.native
     
     /**
       * Remove a registered mock module.
@@ -595,7 +593,7 @@ object browserMod {
       * @returns {!webdriver.promise.Promise} A promise that will resolve once
       *    page has been changed.
       */
-    def setLocation(url: String): js.Promise[_] = js.native
+    def setLocation(url: String): js.Promise[js.Any] = js.native
     
     /**
       * If true, Protractor will track outstanding $timeouts and report them in the
@@ -622,8 +620,8 @@ object browserMod {
       * @returns {!webdriver.promise.Promise} A promise that will resolve to the
       *    scripts return value.
       */
-    def waitForAngular(): js.Promise[_] = js.native
-    def waitForAngular(opt_description: String): js.Promise[_] = js.native
+    def waitForAngular(): js.Promise[js.Any] = js.native
+    def waitForAngular(opt_description: String): js.Promise[js.Any] = js.native
     
     /**
       * If set to false, Protractor will not wait for Angular $http and $timeout

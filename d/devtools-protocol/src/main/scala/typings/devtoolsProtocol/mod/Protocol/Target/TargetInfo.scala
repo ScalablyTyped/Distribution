@@ -4,41 +4,39 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetInfo extends StObject {
   
   /**
     * Whether the target has an attached client.
     */
-  var attached: Boolean = js.native
+  var attached: Boolean
   
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
   
   /**
     * Whether the target has access to the originating window.
     */
-  var canAccessOpener: Boolean = js.native
+  var canAccessOpener: Boolean
   
   /**
     * Frame id of originating window (is only set if target has an opener).
     */
-  var openerFrameId: js.UndefOr[FrameId] = js.native
+  var openerFrameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Opener target Id
     */
-  var openerId: js.UndefOr[TargetID] = js.native
+  var openerId: js.UndefOr[TargetID] = js.undefined
   
-  var targetId: TargetID = js.native
+  var targetId: TargetID
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object TargetInfo {
   

@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupWindowPinnedChangedEventArgs extends PopupWindowEventArgs {
+trait PopupWindowPinnedChangedEventArgs
+  extends StObject
+     with PopupWindowEventArgs {
   
-  val pinned: Boolean = js.native
+  val pinned: Boolean
 }
 object PopupWindowPinnedChangedEventArgs {
   

@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_XmlDocument")
@@ -16,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   */
 class ClassXmlDocument ()
-  extends typings.fibjs.ClassXmlDocument {
+  extends StObject
+     with typings.fibjs.ClassXmlDocument {
   def this(`type`: String) = this()
 }

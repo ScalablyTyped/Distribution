@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLJobConfig extends StObject {
   
   /**
     * How long a job is allowed to run, or how many candidates a job is allowed to generate.
     */
-  var CompletionCriteria: js.UndefOr[AutoMLJobCompletionCriteria] = js.native
+  var CompletionCriteria: js.UndefOr[AutoMLJobCompletionCriteria] = js.undefined
   
   /**
     * Security configuration for traffic encryption or Amazon VPC settings.
     */
-  var SecurityConfig: js.UndefOr[AutoMLSecurityConfig] = js.native
+  var SecurityConfig: js.UndefOr[AutoMLSecurityConfig] = js.undefined
 }
 object AutoMLJobConfig {
   

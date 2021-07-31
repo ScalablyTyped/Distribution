@@ -6,27 +6,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link XFrame} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XDesktopTask extends XComponent {
+trait XDesktopTask
+  extends StObject
+     with XComponent {
   
   /**
     * use {@link com.sun.star.util.XCloseable} or {@link com.sun.star.lang.XComponent.dispose()} instead.
     * @deprecated Deprecated
     */
-  def close(): Boolean = js.native
+  def close(): Boolean
   
   /**
     * use {@link com.sun.star.lang.XInitialization} instead.
     * @deprecated Deprecated
     */
-  def initialize(TaskWindow: XWindow): Unit = js.native
+  def initialize(TaskWindow: XWindow): Unit
 }
 object XDesktopTask {
   

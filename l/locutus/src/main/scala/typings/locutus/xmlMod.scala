@@ -2,22 +2,21 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlMod {
   
-  @JSImport("locutus/php/xml", "utf8_decode")
+  @JSImport("locutus/php/xml", JSImport.Namespace)
   @js.native
-  def utf8Decode(): js.Any = js.native
-  @JSImport("locutus/php/xml", "utf8_decode")
-  @js.native
-  def utf8Decode(strData: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("locutus/php/xml", "utf8_encode")
-  @js.native
-  def utf8Encode(): js.Any = js.native
-  @JSImport("locutus/php/xml", "utf8_encode")
-  @js.native
-  def utf8Encode(argString: js.Any): js.Any = js.native
+  @scala.inline
+  def utf8Decode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")().asInstanceOf[js.Any]
+  @scala.inline
+  def utf8Decode(strData: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")(strData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def utf8Encode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")().asInstanceOf[js.Any]
+  @scala.inline
+  def utf8Encode(argString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")(argString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

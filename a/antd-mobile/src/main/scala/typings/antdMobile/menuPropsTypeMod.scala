@@ -7,22 +7,21 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuPropsTypeMod {
   
-  @js.native
   trait DataItem
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object DataItem {
     
@@ -61,40 +60,39 @@ object menuPropsTypeMod {
     }
   }
   
-  @js.native
   trait MenuProps extends StObject {
     
-    var MenuSelectContanerPrefixCls: js.UndefOr[String] = js.native
+    var MenuSelectContanerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Array[DataItem]] = js.native
+    var data: js.UndefOr[js.Array[DataItem]] = js.undefined
     
-    var defaultValue: js.UndefOr[ValueType] = js.native
+    var defaultValue: js.UndefOr[ValueType] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[`1` | `2`] = js.native
+    var level: js.UndefOr[`1` | `2`] = js.undefined
     
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
-    var multiSelectMenuBtnsCls: js.UndefOr[String] = js.native
+    var multiSelectMenuBtnsCls: js.UndefOr[String] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var radioPrefixCls: js.UndefOr[String] = js.native
+    var radioPrefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subMenuPrefixCls: js.UndefOr[String] = js.native
+    var subMenuPrefixCls: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[ValueType] = js.native
+    var value: js.UndefOr[ValueType] = js.undefined
   }
   object MenuProps {
     

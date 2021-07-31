@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSplitButton
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,7 +19,7 @@ trait IgSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.item to get a reference the igSplitButton element.
     */
-  var click: js.UndefOr[ClickEvent] = js.native
+  var click: js.UndefOr[ClickEvent] = js.undefined
   
   /**
     * Event fired after the button is collapsed.
@@ -28,7 +27,7 @@ trait IgSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var collapsed: js.UndefOr[CollapsedEvent] = js.native
+  var collapsed: js.UndefOr[CollapsedEvent] = js.undefined
   
   /**
     * Event fired before a button item is collapsed.
@@ -36,13 +35,13 @@ trait IgSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var collapsing: js.UndefOr[CollapsingEvent] = js.native
+  var collapsing: js.UndefOr[CollapsingEvent] = js.undefined
   
   /**
     * Default button item name.
     *
     */
-  var defaultItemName: js.UndefOr[String] = js.native
+  var defaultItemName: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after the button is expanded.
@@ -50,7 +49,7 @@ trait IgSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var expanded: js.UndefOr[ExpandedEvent] = js.native
+  var expanded: js.UndefOr[ExpandedEvent] = js.undefined
   
   /**
     * Event fired before a button item is expanded.
@@ -58,19 +57,19 @@ trait IgSplitButton
     *             Function takes arguments evt and ui.
     * Use ui.owner to get a reference the igSplitButton.
     */
-  var expanding: js.UndefOr[ExpandingEvent] = js.native
+  var expanding: js.UndefOr[ExpandingEvent] = js.undefined
   
   /**
     * Button items.
     *
     */
-  var items: js.UndefOr[js.Array[IgSplitButtonItem]] = js.native
+  var items: js.UndefOr[js.Array[IgSplitButtonItem]] = js.undefined
   
   /**
     * Specifies whether the default button will be switched when another button is selected.
     *
     */
-  var swapDefaultEnabled: js.UndefOr[Boolean] = js.native
+  var swapDefaultEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object IgSplitButton {
   

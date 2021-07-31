@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccesspoliciesAccesslevelsGet extends StandardParameters {
+trait ParamsResourceAccesspoliciesAccesslevelsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Whether to return `BasicLevels` in the Cloud Common Expression Language
@@ -20,18 +20,18 @@ trait ParamsResourceAccesspoliciesAccesslevelsGet extends StandardParameters {
     * In the CEL case, `BasicLevels` are translated to equivalent
     * `CustomLevels`.
     */
-  var accessLevelFormat: js.UndefOr[String] = js.native
+  var accessLevelFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. Resource name for the Access Level.  Format:
     * `accessPolicies/{policy_id}/accessLevels/{access_level_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccesspoliciesAccesslevelsGet {
   

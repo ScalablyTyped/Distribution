@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** retrieves the list of available languages. */
-@js.native
-trait XAvailableLocales extends XInterface {
+trait XAvailableLocales
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve the list of supported languages (Locales).
@@ -19,7 +19,7 @@ trait XAvailableLocales extends XInterface {
     * @returns the list of locales supported by the whole of all registered implementations of that service. The sequence will be empty if there is no such lang
     * @see com.sun.star.linguistic2.XSupportedLocales
     */
-  def getAvailableLocales(aServiceName: String): SafeArray[Locale] = js.native
+  def getAvailableLocales(aServiceName: String): SafeArray[Locale]
 }
 object XAvailableLocales {
   

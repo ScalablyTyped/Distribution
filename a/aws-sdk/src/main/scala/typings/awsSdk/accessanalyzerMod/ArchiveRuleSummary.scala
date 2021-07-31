@@ -2,31 +2,29 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArchiveRuleSummary extends StObject {
   
   /**
     * The time at which the archive rule was created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * A filter used to define the archive rule.
     */
-  var filter: FilterCriteriaMap = js.native
+  var filter: FilterCriteriaMap
   
   /**
     * The name of the archive rule.
     */
-  var ruleName: Name = js.native
+  var ruleName: Name
   
   /**
     * The time at which the archive rule was last updated.
     */
-  var updatedAt: Timestamp = js.native
+  var updatedAt: Timestamp
 }
 object ArchiveRuleSummary {
   

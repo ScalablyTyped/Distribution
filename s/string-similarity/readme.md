@@ -10,9 +10,9 @@ Finds degree of similarity between strings, based on Dice's Coefficient, which i
 | ------------------ | :-------------: |
 | Full name          | string-similarity |
 | Keywords           | strings, similar, difference, similarity, compare, comparison, degree, match, matching, dice, levenshtein |
-| # releases         | 7 |
-| # dependents       | 184 |
-| # downloads        | 24744004 |
+| # releases         | 6 |
+| # dependents       | 214 |
+| # downloads        | 32276980 |
 | # stars            | 14 |
 
 ## Links

@@ -30,7 +30,6 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataResolverMod {
@@ -44,7 +43,7 @@ object metadataResolverMod {
       _ngModuleResolver: NgModuleResolver,
       _directiveResolver: DirectiveResolver,
       _pipeResolver: PipeResolver,
-      _summaryResolver: SummaryResolver[_],
+      _summaryResolver: SummaryResolver[js.Any],
       _schemaRegistry: ElementSchemaRegistry,
       _directiveNormalizer: DirectiveNormalizer,
       _console: Console,
@@ -57,7 +56,7 @@ object metadataResolverMod {
       _ngModuleResolver: NgModuleResolver,
       _directiveResolver: DirectiveResolver,
       _pipeResolver: PipeResolver,
-      _summaryResolver: SummaryResolver[_],
+      _summaryResolver: SummaryResolver[js.Any],
       _schemaRegistry: ElementSchemaRegistry,
       _directiveNormalizer: DirectiveNormalizer,
       _console: Console,
@@ -173,20 +172,20 @@ object metadataResolverMod {
     def getHostComponentViewClass(dirType: js.Any): StaticSymbol | ProxyClass = js.native
     
     def getInjectableMetadata(`type`: js.Any): CompileInjectableMetadata | Null = js.native
-    def getInjectableMetadata(`type`: js.Any, dependencies: js.UndefOr[scala.Nothing], throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
-    def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[_]): CompileInjectableMetadata | Null = js.native
-    def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[_], throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
+    def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[js.Any]): CompileInjectableMetadata | Null = js.native
+    def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[js.Any], throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
     def getInjectableMetadata(`type`: js.Any, dependencies: Null, throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
+    def getInjectableMetadata(`type`: js.Any, dependencies: Unit, throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
     
     def getInjectableSummary(`type`: js.Any): CompileTypeSummary = js.native
     
     def getNgModuleMetadata(moduleType: js.Any): CompileNgModuleMetadata | Null = js.native
-    def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: js.UndefOr[scala.Nothing], alreadyCollecting: Set[_]): CompileNgModuleMetadata | Null = js.native
     def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean): CompileNgModuleMetadata | Null = js.native
-    def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean, alreadyCollecting: Set[_]): CompileNgModuleMetadata | Null = js.native
+    def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean, alreadyCollecting: Set[js.Any]): CompileNgModuleMetadata | Null = js.native
+    def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Unit, alreadyCollecting: Set[js.Any]): CompileNgModuleMetadata | Null = js.native
     
     def getNgModuleSummary(moduleType: js.Any): CompileNgModuleSummary | Null = js.native
-    def getNgModuleSummary(moduleType: js.Any, alreadyCollecting: Set[_]): CompileNgModuleSummary | Null = js.native
+    def getNgModuleSummary(moduleType: js.Any, alreadyCollecting: Set[js.Any]): CompileNgModuleSummary | Null = js.native
     
     def getNonNormalizedDirectiveMetadata(directiveType: js.Any): Annotation | Null = js.native
     
@@ -225,8 +224,8 @@ object metadataResolverMod {
     /**
       * Loads the declared directives and pipes of an NgModule.
       */
-    def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean): js.Promise[_] = js.native
-    def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean, throwIfNotFound: Boolean): js.Promise[_] = js.native
+    def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean): js.Promise[js.Any] = js.native
+    def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean, throwIfNotFound: Boolean): js.Promise[js.Any] = js.native
   }
   
   @JSImport("@angular/compiler/src/metadata_resolver", "ERROR_COMPONENT_TYPE")

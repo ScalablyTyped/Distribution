@@ -8,17 +8,18 @@ import typings.webpackNodeExternals.webpackNodeExternalsStrings.commonjs
 import typings.webpackNodeExternals.webpackNodeExternalsStrings.umd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("webpack-node-externals", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("webpack-node-externals", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /** a function that accepts the module name and returns whether it should be included */
   type AllowlistFunctionType = js.Function1[/* moduleName */ String, Boolean]
@@ -27,12 +28,11 @@ object mod {
   
   type ImportTypeCallback = js.Function1[/* moduleName */ String, String]
   
-  @js.native
   trait ModulesFromFileType extends StObject {
     
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[String | js.Array[String]] = js.native
+    var include: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ModulesFromFileType {
     
@@ -65,13 +65,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Additional folders to look for node modules.
       */
-    var additionalModuleDirs: js.UndefOr[js.Array[String]] = js.native
+    var additionalModuleDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An array for the externals to allow, so they will be included in the bundle.
@@ -82,36 +81,36 @@ object mod {
       * they should be bundled.
       * @default []
       */
-    var allowlist: js.UndefOr[js.Array[AllowlistOption] | AllowlistOption] = js.native
+    var allowlist: js.UndefOr[js.Array[AllowlistOption] | AllowlistOption] = js.undefined
     
     /**
       * @default ['.bin']
       */
-    var binaryDirs: js.UndefOr[js.Array[String]] = js.native
+    var binaryDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The method in which unbundled modules will be required in the code. Best to leave as
       * 'commonjs' for node modules.
       * @default 'commonjs'
       */
-    var importType: js.UndefOr[`var` | `this` | commonjs | amd | umd | ImportTypeCallback] = js.native
+    var importType: js.UndefOr[`var` | `this` | commonjs | amd | umd | ImportTypeCallback] = js.undefined
     
     /**
       * @default false
       */
-    var includeAbsolutePaths: js.UndefOr[Boolean] = js.native
+    var includeAbsolutePaths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The folder in which to search for the node modules.
       * @default 'node_modules'
       */
-    var modulesDir: js.UndefOr[String] = js.native
+    var modulesDir: js.UndefOr[String] = js.undefined
     
     /**
       * Read the modules from the package.json file instead of the node_modules folder.
       * @default false
       */
-    var modulesFromFile: js.UndefOr[Boolean | ModulesFromFileType] = js.native
+    var modulesFromFile: js.UndefOr[Boolean | ModulesFromFileType] = js.undefined
   }
   object Options {
     

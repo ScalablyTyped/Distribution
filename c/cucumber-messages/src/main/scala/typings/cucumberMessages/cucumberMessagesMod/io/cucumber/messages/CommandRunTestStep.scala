@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CommandRunTestStep. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandRunTestStep.
   * @param [properties] Properties to set
   */
-class CommandRunTestStep () extends ICommandRunTestStep {
+class CommandRunTestStep ()
+  extends StObject
+     with ICommandRunTestStep {
   def this(properties: ICommandRunTestStep) = this()
   
   /** CommandRunTestStep actionId. */
@@ -44,18 +45,20 @@ class CommandRunTestStep () extends ICommandRunTestStep {
 }
 object CommandRunTestStep {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CommandRunTestStep instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandRunTestStep instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.create")
-  @js.native
-  def create(): CommandRunTestStep = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.create")
-  @js.native
-  def create(properties: ICommandRunTestStep): CommandRunTestStep = js.native
+  @scala.inline
+  def create(): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandRunTestStep]
+  @scala.inline
+  def create(properties: ICommandRunTestStep): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
   
   /**
     * Decodes a CommandRunTestStep message from the specified reader or buffer.
@@ -66,18 +69,14 @@ object CommandRunTestStep {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decode")
-  @js.native
-  def decode(reader: Reader): CommandRunTestStep = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): CommandRunTestStep = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decode")
-  @js.native
-  def decode(reader: Uint8Array): CommandRunTestStep = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): CommandRunTestStep = js.native
+  @scala.inline
+  def decode(reader: Reader): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
+  @scala.inline
+  def decode(reader: Reader, length: Double): CommandRunTestStep = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunTestStep]
+  @scala.inline
+  def decode(reader: Uint8Array): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): CommandRunTestStep = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunTestStep]
   
   /**
     * Decodes a CommandRunTestStep message from the specified reader or buffer, length delimited.
@@ -87,12 +86,10 @@ object CommandRunTestStep {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): CommandRunTestStep = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): CommandRunTestStep = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
   
   /**
     * Encodes the specified CommandRunTestStep message. Does not implicitly {@link io.cucumber.messages.CommandRunTestStep.verify|verify} messages.
@@ -101,12 +98,10 @@ object CommandRunTestStep {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.encode")
-  @js.native
-  def encode(message: ICommandRunTestStep): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.encode")
-  @js.native
-  def encode(message: ICommandRunTestStep, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICommandRunTestStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICommandRunTestStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandRunTestStep message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandRunTestStep.verify|verify} messages.
@@ -115,12 +110,10 @@ object CommandRunTestStep {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandRunTestStep): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandRunTestStep, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICommandRunTestStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICommandRunTestStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandRunTestStep message from a plain object. Also converts values to their respective internal types.
@@ -128,9 +121,8 @@ object CommandRunTestStep {
     * @returns CommandRunTestStep
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): CommandRunTestStep = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): CommandRunTestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandRunTestStep]
   
   /**
     * Creates a plain object from a CommandRunTestStep message. Also converts values to other types if specified.
@@ -139,12 +131,10 @@ object CommandRunTestStep {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.toObject")
-  @js.native
-  def toObject(message: CommandRunTestStep): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.toObject")
-  @js.native
-  def toObject(message: CommandRunTestStep, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: CommandRunTestStep): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: CommandRunTestStep, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandRunTestStep message.
@@ -152,7 +142,6 @@ object CommandRunTestStep {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunTestStep.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

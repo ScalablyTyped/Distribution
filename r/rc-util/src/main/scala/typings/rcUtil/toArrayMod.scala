@@ -4,22 +4,22 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toArrayMod {
   
-  @JSImport("rc-util/lib/Children/toArray", JSImport.Default)
+  @JSImport("rc-util/lib/Children/toArray", JSImport.Namespace)
   @js.native
-  def default(children: ReactNode): js.Array[ReactElement] = js.native
-  @JSImport("rc-util/lib/Children/toArray", JSImport.Default)
-  @js.native
-  def default(children: ReactNode, option: Option): js.Array[ReactElement] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(children: ReactNode): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
+  @scala.inline
+  def default(children: ReactNode, option: Option): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
+  
   trait Option extends StObject {
     
-    var keepEmpty: js.UndefOr[Boolean] = js.native
+    var keepEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object Option {
     

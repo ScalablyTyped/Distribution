@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate encryption result listener.
   */
-@js.native
-trait XEncryptionResultBroadcaster extends XInterface {
+trait XEncryptionResultBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds a new encryption result listener.
@@ -21,7 +21,7 @@ trait XEncryptionResultBroadcaster extends XInterface {
     * When the encryption is finished, the result information will be sent to this listener.
     * @param listener the listener to be added
     */
-  def addEncryptionResultListener(listener: XEncryptionResultListener): Unit = js.native
+  def addEncryptionResultListener(listener: XEncryptionResultListener): Unit
   
   /**
     * Removes an encryption result listener.
@@ -29,7 +29,7 @@ trait XEncryptionResultBroadcaster extends XInterface {
     * After a listener is removed, no result information will be sent to it.
     * @param listener the listener to be removed
     */
-  def removeEncryptionResultListener(listener: XEncryptionResultListener): Unit = js.native
+  def removeEncryptionResultListener(listener: XEncryptionResultListener): Unit
 }
 object XEncryptionResultBroadcaster {
   

@@ -10,16 +10,15 @@ import typings.antd.antdStrings.square
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonButtonMod {
   
   object default {
     
-    @JSImport("antd/lib/skeleton/Button", JSImport.Default)
-    @js.native
-    def apply(props: SkeletonButtonProps): Element = js.native
+    @scala.inline
+    def apply(props: SkeletonButtonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/skeleton/Button", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -32,20 +31,19 @@ object skeletonButtonMod {
   }
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size'> */
-  @js.native
   trait SkeletonButtonProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round] = js.native
+    var shape: js.UndefOr[circle | square | round] = js.undefined
     
-    var size: js.UndefOr[large | small | default] = js.native
+    var size: js.UndefOr[large | small | default] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SkeletonButtonProps {
     

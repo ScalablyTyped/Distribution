@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.socketIoClient.SocketIOClient.ConnectOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -22,7 +21,8 @@ object global {
     @JSGlobal("io.Manager")
     @js.native
     class Manager protected ()
-      extends typings.socketIoClient.SocketIOClient.Manager {
+      extends StObject
+         with typings.socketIoClient.SocketIOClient.Manager {
       /**
         * @see default constructor
         */

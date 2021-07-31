@@ -2,35 +2,33 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies information being retrieved about a single property.
   * @see com.sun.star.beans.XTolerantMultiPropertySet
   */
-@js.native
 trait GetPropertyTolerantResult extends StObject {
   
   /**
     * specifies a success or error code for the retrieval operation.
     * @see com.sun.star.beans.TolerantPropertySetResultType
     */
-  var Result: Double = js.native
+  var Result: Double
   
   /**
     * contains the state of the property.
     *
     * The value is undefined if **Result** is not {@link com.sun.star.beans.TolerantPropertySetResultType.SUCCESS} .
     */
-  var State: PropertyState = js.native
+  var State: PropertyState
   
   /**
     * contains the value of the property.
     *
     * The value is undefined if **Result** is not {@link com.sun.star.beans.TolerantPropertySetResultType.SUCCESS} .
     */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object GetPropertyTolerantResult {
   

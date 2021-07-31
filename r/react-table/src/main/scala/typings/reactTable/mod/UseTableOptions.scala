@@ -3,18 +3,16 @@ package typings.reactTable.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  columns :std.Array<react-table.react-table.Column<D>>,   data :std.Array<D>} & std.Partial<{  initialState :std.Partial<react-table.react-table.TableState<D>>, stateReducer (newState : react-table.react-table.TableState<D>, action : react-table.react-table.ActionType, previousState : react-table.react-table.TableState<D>, instance : react-table.react-table.TableInstance<D> | undefined): react-table.react-table.TableState<D>, useControlledState (state : react-table.react-table.TableState<D>, meta : react-table.react-table.Meta<D, never, react-table.react-table.MetaBase<D>>): react-table.react-table.TableState<D>,   defaultColumn :std.Partial<react-table.react-table.Column<D>>, getSubRows (originalRow : D, relativeIndex : number): std.Array<D>, getRowId (originalRow : D, relativeIndex : number, parent : react-table.react-table.Row<D> | undefined): string}> */
-@js.native
 trait UseTableOptions[D /* <: js.Object */] extends StObject {
   
-  var columns: js.Array[Column[D]] = js.native
+  var columns: js.Array[Column[D]]
   
-  var data: js.Array[D] = js.native
+  var data: js.Array[D]
   
-  var defaultColumn: js.UndefOr[Partial[Column[D]]] = js.native
+  var defaultColumn: js.UndefOr[Partial[Column[D]]] = js.undefined
   
   var getRowId: js.UndefOr[
     js.Function3[
@@ -23,11 +21,11 @@ trait UseTableOptions[D /* <: js.Object */] extends StObject {
       /* parent */ js.UndefOr[Row[D]], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var getSubRows: js.UndefOr[js.Function2[/* originalRow */ D, /* relativeIndex */ Double, js.Array[D]]] = js.native
+  var getSubRows: js.UndefOr[js.Function2[/* originalRow */ D, /* relativeIndex */ Double, js.Array[D]]] = js.undefined
   
-  var initialState: js.UndefOr[Partial[TableState[D]]] = js.native
+  var initialState: js.UndefOr[Partial[TableState[D]]] = js.undefined
   
   var stateReducer: js.UndefOr[
     js.Function4[
@@ -37,7 +35,7 @@ trait UseTableOptions[D /* <: js.Object */] extends StObject {
       /* instance */ js.UndefOr[TableInstance[D]], 
       TableState[D]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var useControlledState: js.UndefOr[
     js.Function2[
@@ -45,7 +43,7 @@ trait UseTableOptions[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       TableState[D]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object UseTableOptions {
   
@@ -56,7 +54,7 @@ object UseTableOptions {
   }
   
   @scala.inline
-  implicit class UseTableOptionsMutableBuilder[Self <: UseTableOptions[_], D /* <: js.Object */] (val x: Self with UseTableOptions[D]) extends AnyVal {
+  implicit class UseTableOptionsMutableBuilder[Self <: UseTableOptions[?], D /* <: js.Object */] (val x: Self & UseTableOptions[D]) extends AnyVal {
     
     @scala.inline
     def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

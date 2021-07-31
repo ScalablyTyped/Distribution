@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Loader
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,89 +11,88 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * You shouldn't create an instance of a MultiFile directly, but should extend it with your own class, setting a custom type and processing methods.
   */
-@js.native
 trait MultiFile extends StObject {
   
   /**
     * Adds another child to this MultiFile, increases the pending count and resets the completion status.
     * @param files The File to add to this MultiFile.
     */
-  def addToMultiFile(files: File): MultiFile = js.native
+  def addToMultiFile(files: File): MultiFile
   
   /**
     * A reference to the Loaders baseURL at the time this MultiFile was created.
     * Used to populate child-files.
     */
-  var baseURL: String = js.native
+  var baseURL: String
   
   /**
     * The completion status of this MultiFile.
     */
-  var complete: Boolean = js.native
+  var complete: Boolean
   
   /**
     * A storage container for transient data that the loading files need.
     */
-  var config: js.Any = js.native
+  var config: js.Any
   
   /**
     * The number of files that failed to load.
     */
-  var failed: integer = js.native
+  var failed: integer
   
   /**
     * Array of files that make up this MultiFile.
     */
-  var files: js.Array[File] = js.native
+  var files: js.Array[File]
   
   /**
     * Checks if this MultiFile is ready to process its children or not.
     */
-  def isReadyToProcess(): Boolean = js.native
+  def isReadyToProcess(): Boolean
   
   /**
     * Unique cache key (unique within its file type)
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * A reference to the Loader that is going to load this file.
     */
-  var loader: LoaderPlugin = js.native
+  var loader: LoaderPlugin
   
   /**
     * Called by each File when it finishes loading.
     * @param file The File that has completed processing.
     */
-  def onFileComplete(file: File): Unit = js.native
+  def onFileComplete(file: File): Unit
   
   /**
     * Called by each File that fails to load.
     * @param file The File that has failed to load.
     */
-  def onFileFailed(file: File): Unit = js.native
+  def onFileFailed(file: File): Unit
   
   /**
     * A reference to the Loaders path at the time this MultiFile was created.
     * Used to populate child-files.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The number of files to load.
     */
-  var pending: integer = js.native
+  var pending: integer
   
   /**
     * A reference to the Loaders prefix at the time this MultiFile was created.
     * Used to populate child-files.
     */
-  var prefix: String = js.native
+  var prefix: String
   
   /**
     * The file type string for sorting within the Loader.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object MultiFile {
   

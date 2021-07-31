@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueWithServiceIds extends StObject {
   
   /**
     * Values of the annotation.
     */
-  var AnnotationValue: js.UndefOr[typings.awsSdk.xrayMod.AnnotationValue] = js.native
+  var AnnotationValue: js.UndefOr[typings.awsSdk.xrayMod.AnnotationValue] = js.undefined
   
   /**
     * Services to which the annotation applies.
     */
-  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.native
+  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.undefined
 }
 object ValueWithServiceIds {
   

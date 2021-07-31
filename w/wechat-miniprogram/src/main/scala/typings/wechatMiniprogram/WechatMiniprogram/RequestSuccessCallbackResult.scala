@@ -3,34 +3,32 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestSuccessCallbackResult extends StObject {
   
   /** 开发者服务器返回的 cookies，格式为字符串数组
     *
     * 最低基础库： `2.10.0` */
-  var cookies: js.Array[String] = js.native
+  var cookies: js.Array[String]
   
   /** 开发者服务器返回的数据 */
-  var data: String | IAnyObject | ArrayBuffer = js.native
+  var data: String | IAnyObject | ArrayBuffer
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 开发者服务器返回的 HTTP Response Header
     *
     * 最低基础库： `1.2.0` */
-  var header: IAnyObject = js.native
+  var header: IAnyObject
   
   /** 网络请求过程中一些调试信息
     *
     * 最低基础库： `2.10.4` */
-  var profile: RequestProfile = js.native
+  var profile: RequestProfile
   
   /** 开发者服务器返回的 HTTP 状态码 */
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object RequestSuccessCallbackResult {
   

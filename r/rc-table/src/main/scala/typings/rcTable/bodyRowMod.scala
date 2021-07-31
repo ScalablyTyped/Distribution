@@ -12,16 +12,15 @@ import typings.std.HTMLElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyRowMod {
   
   object default {
     
-    @JSImport("rc-table/lib/Body/BodyRow", JSImport.Default)
-    @js.native
-    def apply[RecordType /* <: Children[RecordType] */](props: BodyRowProps[RecordType]): Element = js.native
+    @scala.inline
+    def apply[RecordType /* <: Children[RecordType] */](props: BodyRowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("rc-table/lib/Body/BodyRow", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -33,36 +32,35 @@ object bodyRowMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BodyRowProps[RecordType] extends StObject {
     
-    var cellComponent: CustomizeComponent = js.native
+    var cellComponent: CustomizeComponent
     
-    var childrenColumnName: String = js.native
+    var childrenColumnName: String
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var expandedKeys: Set[Key] = js.native
+    var expandedKeys: Set[Key]
     
-    var getRowKey: GetRowKey[RecordType] = js.native
+    var getRowKey: GetRowKey[RecordType]
     
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var onRow: GetComponentProps[RecordType] = js.native
+    var onRow: GetComponentProps[RecordType]
     
-    var record: RecordType = js.native
+    var record: RecordType
     
-    var recordKey: Key = js.native
+    var recordKey: Key
     
-    var rowComponent: CustomizeComponent = js.native
+    var rowComponent: CustomizeComponent
     
-    def rowExpandable(record: RecordType): Boolean = js.native
+    def rowExpandable(record: RecordType): Boolean
     
-    var rowKey: typings.react.mod.Key = js.native
+    var rowKey: typings.react.mod.Key
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object BodyRowProps {
     
@@ -85,7 +83,7 @@ object bodyRowMod {
     }
     
     @scala.inline
-    implicit class BodyRowPropsMutableBuilder[Self <: BodyRowProps[_], RecordType] (val x: Self with BodyRowProps[RecordType]) extends AnyVal {
+    implicit class BodyRowPropsMutableBuilder[Self <: BodyRowProps[?], RecordType] (val x: Self & BodyRowProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])

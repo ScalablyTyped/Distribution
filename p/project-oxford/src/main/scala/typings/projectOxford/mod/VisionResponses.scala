@@ -9,27 +9,25 @@ import typings.projectOxford.anon.Lines
 import typings.projectOxford.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object VisionResponses {
   
-  @js.native
   trait Analyze extends StObject {
     
-    var adult: AdultScore = js.native
+    var adult: AdultScore
     
-    var categories: js.Array[Name] = js.native
+    var categories: js.Array[Name]
     
-    var color: AccentColor = js.native
+    var color: AccentColor
     
-    var faces: js.Array[Age] = js.native
+    var faces: js.Array[Age]
     
-    var imageType: ClipArtType = js.native
+    var imageType: ClipArtType
     
-    var metadata: Format = js.native
+    var metadata: Format
     
-    var requestId: String = js.native
+    var requestId: String
   }
   object Analyze {
     
@@ -79,16 +77,15 @@ object VisionResponses {
     }
   }
   
-  @js.native
   trait Ocr extends StObject {
     
-    var language: String = js.native
+    var language: String
     
-    var orientation: String = js.native
+    var orientation: String
     
-    var regions: js.Array[Lines] = js.native
+    var regions: js.Array[Lines]
     
-    var textAngle: Double = js.native
+    var textAngle: Double
   }
   object Ocr {
     

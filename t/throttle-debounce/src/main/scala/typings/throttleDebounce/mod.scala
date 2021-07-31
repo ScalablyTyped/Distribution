@@ -2,37 +2,33 @@ package typings.throttleDebounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("throttle-debounce", "debounce")
+  @JSImport("throttle-debounce", JSImport.Namespace)
   @js.native
-  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, atBegin: Boolean, callback: T): debounce[T] = js.native
-  @JSImport("throttle-debounce", "debounce")
-  @js.native
-  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, callback: T): debounce[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, atBegin: Boolean, callback: T): debounce[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(delay.asInstanceOf[js.Any], atBegin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[debounce[T]]
+  @scala.inline
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, callback: T): debounce[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[debounce[T]]
   type debounce[T] = throttle[T]
   
-  @JSImport("throttle-debounce", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, callback: T): throttle[T] = js.native
-  @JSImport("throttle-debounce", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, callback: T, debounceMode: Boolean): throttle[T] = js.native
-  @JSImport("throttle-debounce", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, noTrailing: Boolean, callback: T): throttle[T] = js.native
-  @JSImport("throttle-debounce", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](delay: Double, noTrailing: Boolean, callback: T, debounceMode: Boolean): throttle[T] = js.native
-  type throttle[T] = T with Cancel
+  @scala.inline
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, callback: T): throttle[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[throttle[T]]
+  @scala.inline
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, callback: T, debounceMode: Boolean): throttle[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], debounceMode.asInstanceOf[js.Any])).asInstanceOf[throttle[T]]
+  @scala.inline
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, noTrailing: Boolean, callback: T): throttle[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(delay.asInstanceOf[js.Any], noTrailing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[throttle[T]]
+  @scala.inline
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](delay: Double, noTrailing: Boolean, callback: T, debounceMode: Boolean): throttle[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(delay.asInstanceOf[js.Any], noTrailing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], debounceMode.asInstanceOf[js.Any])).asInstanceOf[throttle[T]]
+  type throttle[T] = T & Cancel
   
-  @js.native
   trait Cancel extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object Cancel {
     

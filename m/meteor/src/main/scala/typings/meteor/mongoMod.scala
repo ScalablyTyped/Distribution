@@ -29,7 +29,6 @@ import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoMod {
@@ -59,7 +58,7 @@ object mongoMod {
       def find(selector: String): Cursor[T, U] = js.native
       def find(selector: ObjectID): Cursor[T, U] = js.native
       def find(selector: Selector[T]): Cursor[T, U] = js.native
-      def find[O /* <: Options[T] */](selector: js.UndefOr[Selector[T]], options: O): Cursor[
+      def find[O /* <: Options[T] */](selector: String, options: O): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -67,7 +66,7 @@ object mongoMod {
               U
             ]
           ] = js.native
-      def find[O /* <: Options[T] */](selector: String, options: O): Cursor[
+      def find[O /* <: Options[T] */](selector: Unit, options: O): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -83,18 +82,19 @@ object mongoMod {
               U
             ]
           ] = js.native
-      
-      def findOne(): js.UndefOr[U] = js.native
-      def findOne(selector: String): js.UndefOr[U] = js.native
-      def findOne(selector: ObjectID): js.UndefOr[U] = js.native
-      def findOne(selector: Selector[T]): js.UndefOr[U] = js.native
-      def findOne[O /* <: Omit[Options[T], limit] */](selector: js.UndefOr[Selector[T]], options: O): js.UndefOr[
+      def find[O /* <: Options[T] */](selector: Selector[T], options: O): Cursor[
+            T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
               U
             ]
           ] = js.native
+      
+      def findOne(): js.UndefOr[U] = js.native
+      def findOne(selector: String): js.UndefOr[U] = js.native
+      def findOne(selector: ObjectID): js.UndefOr[U] = js.native
+      def findOne(selector: Selector[T]): js.UndefOr[U] = js.native
       def findOne[O /* <: Omit[Options[T], limit] */](selector: String, options: O): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -102,7 +102,21 @@ object mongoMod {
               U
             ]
           ] = js.native
+      def findOne[O /* <: Omit[Options[T], limit] */](selector: Unit, options: O): js.UndefOr[
+            DispatchTransform[
+              /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+              T, 
+              U
+            ]
+          ] = js.native
       def findOne[O /* <: Omit[Options[T], limit] */](selector: ObjectID, options: O): js.UndefOr[
+            DispatchTransform[
+              /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+              T, 
+              U
+            ]
+          ] = js.native
+      def findOne[O /* <: Omit[Options[T], limit] */](selector: Selector[T], options: O): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
@@ -194,48 +208,28 @@ object mongoMod {
       def remove(selector: Selector[T], callback: js.Function): Double = js.native
       
       def update(selector: String, modifier: Modifier[T]): Double = js.native
-      def update(selector: String, modifier: Modifier[T], options: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
+      def update(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
       def update(selector: String, modifier: Modifier[T], options: ArrayFilters): Double = js.native
       def update(selector: String, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
       def update(selector: ObjectID, modifier: Modifier[T]): Double = js.native
-      def update(
-        selector: ObjectID,
-        modifier: Modifier[T],
-        options: js.UndefOr[scala.Nothing],
-        callback: js.Function
-      ): Double = js.native
+      def update(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
       def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters): Double = js.native
       def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T]): Double = js.native
-      def update(
-        selector: Selector[T],
-        modifier: Modifier[T],
-        options: js.UndefOr[scala.Nothing],
-        callback: js.Function
-      ): Double = js.native
+      def update(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
       
       def upsert(selector: String, modifier: Modifier[T]): InsertedId = js.native
-      def upsert(selector: String, modifier: Modifier[T], options: js.UndefOr[scala.Nothing], callback: js.Function): InsertedId = js.native
+      def upsert(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
       def upsert(selector: String, modifier: Modifier[T], options: Multi): InsertedId = js.native
       def upsert(selector: String, modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
       def upsert(selector: ObjectID, modifier: Modifier[T]): InsertedId = js.native
-      def upsert(
-        selector: ObjectID,
-        modifier: Modifier[T],
-        options: js.UndefOr[scala.Nothing],
-        callback: js.Function
-      ): InsertedId = js.native
+      def upsert(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
       def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi): InsertedId = js.native
       def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T]): InsertedId = js.native
-      def upsert(
-        selector: Selector[T],
-        modifier: Modifier[T],
-        options: js.UndefOr[scala.Nothing],
-        callback: js.Function
-      ): InsertedId = js.native
+      def upsert(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
     }
@@ -246,7 +240,9 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Collection")
     @js.native
-    class CollectionCls[T, U] () extends Collection[T, U] {
+    class CollectionCls[T, U] ()
+      extends StObject
+         with Collection[T, U] {
       def this(name: String) = this()
       def this(name: String, options: IdGeneration[T, U]) = this()
       def this(name: Null, options: IdGeneration[T, U]) = this()
@@ -287,17 +283,18 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Cursor")
     @js.native
-    class CursorCls[T, U] () extends Cursor[T, U]
+    class CursorCls[T, U] ()
+      extends StObject
+         with Cursor[T, U]
     
     @scala.inline
     def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait ObjectID extends StObject {
       
-      def equals(otherID: ObjectID): Boolean = js.native
+      def equals(otherID: ObjectID): Boolean
       
-      def toHexString(): String = js.native
+      def toHexString(): String
     }
     object ObjectID {
       
@@ -319,24 +316,30 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.ObjectID")
     @js.native
-    class ObjectIDCls () extends ObjectID {
+    class ObjectIDCls ()
+      extends StObject
+         with ObjectID {
       def this(hexString: String) = this()
+      
+      /* CompleteClass */
+      override def equals(otherID: ObjectID): Boolean = js.native
+      
+      /* CompleteClass */
+      override def toHexString(): String = js.native
     }
     
-    @JSImport("meteor/mongo", "Mongo.setConnectionOptions")
-    @js.native
-    def setConnectionOptions(options: js.Any): Unit = js.native
+    @scala.inline
+    def setConnectionOptions(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @js.native
     trait AllowDenyOptions extends StObject {
       
-      var fetch: js.UndefOr[js.Array[String]] = js.native
+      var fetch: js.UndefOr[js.Array[String]] = js.undefined
       
-      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.native
+      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
       
-      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.native
+      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
       
-      var transform: js.UndefOr[js.Function | Null] = js.native
+      var transform: js.UndefOr[js.Function | Null] = js.undefined
       
       var update: js.UndefOr[
             js.Function4[
@@ -346,7 +349,7 @@ object mongoMod {
               /* modifier */ js.Any, 
               Boolean
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object AllowDenyOptions {
       
@@ -401,7 +404,7 @@ object mongoMod {
     
     type ArraysOrEach[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P]}}
-      */ typings.meteor.meteorStrings.ArraysOrEach with TopLevel[js.Any]
+      */ typings.meteor.meteorStrings.ArraysOrEach & TopLevel[js.Any]
     
     /* Rewritten from type alias, can be one of: 
       - typings.meteor.meteorNumbers.`1`
@@ -583,7 +586,8 @@ object mongoMod {
     
     @js.native
     trait CollectionStatic
-      extends Instantiable0[Collection[js.Object, js.Object]]
+      extends StObject
+         with Instantiable0[Collection[js.Object, js.Object]]
          with Instantiable1[/* name */ String, Collection[js.Object, js.Object]]
          with Instantiable2[
               (/* name */ Null) | (/* name */ String), 
@@ -599,7 +603,8 @@ object mongoMod {
     
     @js.native
     trait CursorStatic
-      extends Instantiable0[Cursor[js.Object, js.Object]]
+      extends StObject
+         with Instantiable0[Cursor[js.Object, js.Object]]
     
     type Dictionary[T] = StringDictionary[T]
     
@@ -607,100 +612,99 @@ object mongoMod {
     
     type ElementsOf[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]>}
-      */ typings.meteor.meteorStrings.ElementsOf with TopLevel[T]
+      */ typings.meteor.meteorStrings.ElementsOf & TopLevel[T]
     
-    @js.native
     trait FieldExpression[T] extends StObject {
       
       @JSName("$all")
-      var $all: js.UndefOr[js.Array[T]] = js.native
+      var $all: js.UndefOr[js.Array[T]] = js.undefined
       
       @JSName("$bitsAllClear")
-      var $bitsAllClear: js.UndefOr[js.Any] = js.native
+      var $bitsAllClear: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$bitsAllSet")
-      var $bitsAllSet: js.UndefOr[js.Any] = js.native
+      var $bitsAllSet: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$bitsAnyClear")
-      var $bitsAnyClear: js.UndefOr[js.Any] = js.native
+      var $bitsAnyClear: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$bitsAnySet")
-      var $bitsAnySet: js.UndefOr[js.Any] = js.native
+      var $bitsAnySet: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$comment")
-      var $comment: js.UndefOr[String] = js.native
+      var $comment: js.UndefOr[String] = js.undefined
       
       @JSName("$elemMatch")
-      var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.native
+      var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.undefined
       
       @JSName("$eq")
-      var $eq: js.UndefOr[T] = js.native
+      var $eq: js.UndefOr[T] = js.undefined
       
       @JSName("$exists")
-      var $exists: js.UndefOr[Boolean] = js.native
+      var $exists: js.UndefOr[Boolean] = js.undefined
       
       @JSName("$expr")
-      var $expr: js.UndefOr[FieldExpression[T]] = js.native
+      var $expr: js.UndefOr[FieldExpression[T]] = js.undefined
       
       @JSName("$geoIntersects")
-      var $geoIntersects: js.UndefOr[js.Any] = js.native
+      var $geoIntersects: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$geoWithin")
-      var $geoWithin: js.UndefOr[js.Any] = js.native
+      var $geoWithin: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$gt")
-      var $gt: js.UndefOr[T] = js.native
+      var $gt: js.UndefOr[T] = js.undefined
       
       @JSName("$gte")
-      var $gte: js.UndefOr[T] = js.native
+      var $gte: js.UndefOr[T] = js.undefined
       
       @JSName("$in")
-      var $in: js.UndefOr[js.Array[T]] = js.native
+      var $in: js.UndefOr[js.Array[T]] = js.undefined
       
       @JSName("$jsonSchema")
-      var $jsonSchema: js.UndefOr[js.Any] = js.native
+      var $jsonSchema: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$lt")
-      var $lt: js.UndefOr[T] = js.native
+      var $lt: js.UndefOr[T] = js.undefined
       
       @JSName("$lte")
-      var $lte: js.UndefOr[T] = js.native
+      var $lte: js.UndefOr[T] = js.undefined
       
       @JSName("$mod")
-      var $mod: js.UndefOr[js.Array[Double]] = js.native
+      var $mod: js.UndefOr[js.Array[Double]] = js.undefined
       
       @JSName("$ne")
-      var $ne: js.UndefOr[T] = js.native
+      var $ne: js.UndefOr[T] = js.undefined
       
       @JSName("$near")
-      var $near: js.UndefOr[js.Any] = js.native
+      var $near: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$nearSphere")
-      var $nearSphere: js.UndefOr[js.Any] = js.native
+      var $nearSphere: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$nin")
-      var $nin: js.UndefOr[js.Array[T]] = js.native
+      var $nin: js.UndefOr[js.Array[T]] = js.undefined
       
       @JSName("$not")
-      var $not: js.UndefOr[FieldExpression[T]] = js.native
+      var $not: js.UndefOr[FieldExpression[T]] = js.undefined
       
       @JSName("$options")
-      var $options: js.UndefOr[String] = js.native
+      var $options: js.UndefOr[String] = js.undefined
       
       @JSName("$regex")
-      var $regex: js.UndefOr[RegExp | String] = js.native
+      var $regex: js.UndefOr[RegExp | String] = js.undefined
       
       @JSName("$size")
-      var $size: js.UndefOr[Double] = js.native
+      var $size: js.UndefOr[Double] = js.undefined
       
       @JSName("$text")
-      var $text: js.UndefOr[CaseSensitive] = js.native
+      var $text: js.UndefOr[CaseSensitive] = js.undefined
       
       @JSName("$type")
-      var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.native
+      var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.undefined
       
       @JSName("$where")
-      var $where: js.UndefOr[String | js.Function] = js.native
+      var $where: js.UndefOr[String | js.Function] = js.undefined
     }
     object FieldExpression {
       
@@ -711,7 +715,7 @@ object mongoMod {
       }
       
       @scala.inline
-      implicit class FieldExpressionMutableBuilder[Self <: FieldExpression[_], T] (val x: Self with FieldExpression[T]) extends AnyVal {
+      implicit class FieldExpressionMutableBuilder[Self <: FieldExpression[?], T] (val x: Self & FieldExpression[T]) extends AnyVal {
         
         @scala.inline
         def set$all(value: js.Array[T]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
@@ -918,23 +922,23 @@ object mongoMod {
     
     @js.native
     trait ObjectIDStatic
-      extends Instantiable0[ObjectID]
+      extends StObject
+         with Instantiable0[ObjectID]
          with Instantiable1[/* hexString */ String, ObjectID]
     
-    @js.native
     trait ObserveCallbacks[T] extends StObject {
       
-      var added: js.UndefOr[js.Function1[/* document */ T, Unit]] = js.native
+      var added: js.UndefOr[js.Function1[/* document */ T, Unit]] = js.undefined
       
       var addedAt: js.UndefOr[
             js.Function3[/* document */ T, /* atIndex */ Double, /* before */ T | Null, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var changed: js.UndefOr[js.Function2[/* newDocument */ T, /* oldDocument */ T, Unit]] = js.native
+      var changed: js.UndefOr[js.Function2[/* newDocument */ T, /* oldDocument */ T, Unit]] = js.undefined
       
       var changedAt: js.UndefOr[
             js.Function3[/* newDocument */ T, /* oldDocument */ T, /* indexAt */ Double, Unit]
-          ] = js.native
+          ] = js.undefined
       
       var movedTo: js.UndefOr[
             js.Function4[
@@ -944,11 +948,11 @@ object mongoMod {
               /* before */ T | Null, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var removed: js.UndefOr[js.Function1[/* oldDocument */ T, Unit]] = js.native
+      var removed: js.UndefOr[js.Function1[/* oldDocument */ T, Unit]] = js.undefined
       
-      var removedAt: js.UndefOr[js.Function2[/* oldDocument */ T, /* atIndex */ Double, Unit]] = js.native
+      var removedAt: js.UndefOr[js.Function2[/* oldDocument */ T, /* atIndex */ Double, Unit]] = js.undefined
     }
     object ObserveCallbacks {
       
@@ -959,7 +963,7 @@ object mongoMod {
       }
       
       @scala.inline
-      implicit class ObserveCallbacksMutableBuilder[Self <: ObserveCallbacks[_], T] (val x: Self with ObserveCallbacks[T]) extends AnyVal {
+      implicit class ObserveCallbacksMutableBuilder[Self <: ObserveCallbacks[?], T] (val x: Self & ObserveCallbacks[T]) extends AnyVal {
         
         @scala.inline
         def setAdded(value: /* document */ T => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
@@ -1007,20 +1011,19 @@ object mongoMod {
       }
     }
     
-    @js.native
     trait ObserveChangesCallbacks[T] extends StObject {
       
-      var added: js.UndefOr[js.Function2[/* id */ String, /* fields */ Partial[T], Unit]] = js.native
+      var added: js.UndefOr[js.Function2[/* id */ String, /* fields */ Partial[T], Unit]] = js.undefined
       
       var addedBefore: js.UndefOr[
             js.Function3[/* id */ String, /* fields */ Partial[T], /* before */ T | Null, Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var changed: js.UndefOr[js.Function2[/* id */ String, /* fields */ Partial[T], Unit]] = js.native
+      var changed: js.UndefOr[js.Function2[/* id */ String, /* fields */ Partial[T], Unit]] = js.undefined
       
-      var movedBefore: js.UndefOr[js.Function2[/* id */ String, /* before */ T | Null, Unit]] = js.native
+      var movedBefore: js.UndefOr[js.Function2[/* id */ String, /* before */ T | Null, Unit]] = js.undefined
       
-      var removed: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+      var removed: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     }
     object ObserveChangesCallbacks {
       
@@ -1031,7 +1034,7 @@ object mongoMod {
       }
       
       @scala.inline
-      implicit class ObserveChangesCallbacksMutableBuilder[Self <: ObserveChangesCallbacks[_], T] (val x: Self with ObserveChangesCallbacks[T]) extends AnyVal {
+      implicit class ObserveChangesCallbacksMutableBuilder[Self <: ObserveChangesCallbacks[?], T] (val x: Self & ObserveChangesCallbacks[T]) extends AnyVal {
         
         @scala.inline
         def setAdded(value: (/* id */ String, /* fields */ Partial[T]) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction2(value))
@@ -1071,22 +1074,21 @@ object mongoMod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     
-    type OptionalId[TSchema] = (typings.meteor.mongoMod.UnionOmit[TSchema, _id]) with Id
+    type OptionalId[TSchema] = (typings.meteor.mongoMod.UnionOmit[TSchema, _id]) & Id
     
-    @js.native
     trait Options[T] extends StObject {
       
-      var fields: js.UndefOr[FieldSpecifier] = js.native
+      var fields: js.UndefOr[FieldSpecifier] = js.undefined
       
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
-      var reactive: js.UndefOr[Boolean] = js.native
+      var reactive: js.UndefOr[Boolean] = js.undefined
       
-      var skip: js.UndefOr[Double] = js.native
+      var skip: js.UndefOr[Double] = js.undefined
       
-      var sort: js.UndefOr[SortSpecifier] = js.native
+      var sort: js.UndefOr[SortSpecifier] = js.undefined
       
-      var transform: js.UndefOr[Transform[T]] = js.native
+      var transform: js.UndefOr[Transform[T]] = js.undefined
     }
     object Options {
       
@@ -1097,7 +1099,7 @@ object mongoMod {
       }
       
       @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+      implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
         
         @scala.inline
         def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -1144,48 +1146,47 @@ object mongoMod {
     
     type PushModifier[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P] | undefined,   $position :number | undefined,   $slice :number | undefined,   $sort :1 | -1 | meteor.meteor/mongo.Mongo.Dictionary<number> | undefined}}
-      */ typings.meteor.meteorStrings.PushModifier with TopLevel[js.Any]
+      */ typings.meteor.meteorStrings.PushModifier & TopLevel[js.Any]
     
-    type Query[T] = typings.meteor.meteorStrings.Query with TopLevel[js.Any] with And with Dictionary[_]
+    type Query[T] = typings.meteor.meteorStrings.Query & TopLevel[js.Any] & And & Dictionary[js.Any]
     
-    @js.native
     trait QueryWithModifiers[T] extends StObject {
       
       @JSName("$comment")
-      var $comment: js.UndefOr[String] = js.native
+      var $comment: js.UndefOr[String] = js.undefined
       
       @JSName("$explain")
-      var $explain: js.UndefOr[js.Any] = js.native
+      var $explain: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$hint")
-      var $hint: js.UndefOr[js.Any] = js.native
+      var $hint: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$max")
-      var $max: js.UndefOr[js.Any] = js.native
+      var $max: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$maxScan")
-      var $maxScan: js.UndefOr[js.Any] = js.native
+      var $maxScan: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$maxTimeMS")
-      var $maxTimeMS: js.UndefOr[js.Any] = js.native
+      var $maxTimeMS: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$min")
-      var $min: js.UndefOr[js.Any] = js.native
+      var $min: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$natural")
-      var $natural: js.UndefOr[js.Any] = js.native
+      var $natural: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$orderby")
-      var $orderby: js.UndefOr[js.Any] = js.native
+      var $orderby: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$query")
-      var $query: Query[T] = js.native
+      var $query: Query[T]
       
       @JSName("$returnKey")
-      var $returnKey: js.UndefOr[js.Any] = js.native
+      var $returnKey: js.UndefOr[js.Any] = js.undefined
       
       @JSName("$showDiskLoc")
-      var $showDiskLoc: js.UndefOr[js.Any] = js.native
+      var $showDiskLoc: js.UndefOr[js.Any] = js.undefined
     }
     object QueryWithModifiers {
       
@@ -1196,7 +1197,7 @@ object mongoMod {
       }
       
       @scala.inline
-      implicit class QueryWithModifiersMutableBuilder[Self <: QueryWithModifiers[_], T] (val x: Self with QueryWithModifiers[T]) extends AnyVal {
+      implicit class QueryWithModifiersMutableBuilder[Self <: QueryWithModifiers[?], T] (val x: Self & QueryWithModifiers[T]) extends AnyVal {
         
         @scala.inline
         def set$comment(value: String): Self = StObject.set(x, "$comment", value.asInstanceOf[js.Any])
@@ -1271,7 +1272,6 @@ object mongoMod {
     
     type Selector[T] = Query[T] | QueryWithModifiers[T]
     
-    @js.native
     trait SortSpecifier extends StObject
     
     type Transform[T] = js.UndefOr[(js.Function1[/* doc */ T, js.Any]) | Null]

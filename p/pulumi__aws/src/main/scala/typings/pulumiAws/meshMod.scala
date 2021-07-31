@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshMod {
@@ -26,7 +25,7 @@ object meshMod {
       */
     def this(name: String) = this()
     def this(name: String, args: MeshArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: MeshArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -72,6 +71,10 @@ object meshMod {
   /* static members */
   object Mesh {
     
+    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Mesh resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,45 +84,39 @@ object meshMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MeshState): Mesh = js.native
-    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): Mesh = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MeshState): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     
     /**
       * Returns true if the given object is an instance of Mesh.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh/mesh", "Mesh.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ Boolean]
   }
   
-  @js.native
   trait MeshArgs extends StObject {
     
     /**
       * The name to use for the service mesh. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service mesh specification to apply.
       */
-    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.MeshSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.MeshSpec]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object MeshArgs {
     
@@ -152,48 +149,47 @@ object meshMod {
     }
   }
   
-  @js.native
   trait MeshState extends StObject {
     
     /**
       * The ARN of the service mesh.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation date of the service mesh.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last update date of the service mesh.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID of the service mesh's owner.
       */
-    val meshOwner: js.UndefOr[Input[String]] = js.native
+    val meshOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to use for the service mesh. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource owner's AWS account ID.
       */
-    val resourceOwner: js.UndefOr[Input[String]] = js.native
+    val resourceOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service mesh specification to apply.
       */
-    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.MeshSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.MeshSpec]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object MeshState {
     

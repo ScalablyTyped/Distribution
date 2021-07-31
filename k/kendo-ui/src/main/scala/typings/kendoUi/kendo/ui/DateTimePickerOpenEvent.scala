@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateTimePickerOpenEvent extends DateTimePickerEvent {
+trait DateTimePickerOpenEvent
+  extends StObject
+     with DateTimePickerEvent {
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object DateTimePickerOpenEvent {
   

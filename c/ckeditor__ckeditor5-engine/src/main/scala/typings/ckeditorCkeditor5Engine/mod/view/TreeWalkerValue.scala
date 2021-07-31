@@ -2,21 +2,19 @@ package typings.ckeditorCkeditor5Engine.mod.view
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeWalkerValue extends StObject {
   
-  var item: Item = js.native
+  var item: Item
   
-  var length: Double = js.native
+  var length: Double
   
-  var nextPosition: Position = js.native
+  var nextPosition: Position
   
-  var previousPosition: Position = js.native
+  var previousPosition: Position
   
-  var `type`: TreeWalkerValueType = js.native
+  var `type`: TreeWalkerValueType
 }
 object TreeWalkerValue {
   

@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,9 +59,8 @@ object ODataMappedValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue.create")
-  @js.native
-  def create(model: IModel): ODataMappedValue = js.native
+  @scala.inline
+  def create(model: IModel): ODataMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ODataMappedValue]
   
   /**
     * Creates and returns a new ODataMappedValue instance in the SDK and on the server.
@@ -73,9 +71,8 @@ object ODataMappedValue {
     *  8.10.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue.createIn")
-  @js.native
-  def createIn(container: Attribute): ODataMappedValue = js.native
+  @scala.inline
+  def createIn(container: Attribute): ODataMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataMappedValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue.structureTypeName")

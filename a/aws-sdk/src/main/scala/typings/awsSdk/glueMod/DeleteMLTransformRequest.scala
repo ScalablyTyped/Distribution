@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMLTransformRequest extends StObject {
   
   /**
     * The unique identifier of the transform to delete.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object DeleteMLTransformRequest {
   

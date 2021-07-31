@@ -20,22 +20,21 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XImageControl
-  extends XReportControlModel
+  extends StObject
+     with XReportControlModel
      with XImageProducerSupplier {
   
   /** specifies an URL to an image to use for the control. */
-  var ImageURL: String = js.native
+  var ImageURL: String
   
   /**
     * Specifies that the IRI given in the data field should be preserved, otherwise the content will be inserted in the resulting report document. If the
     * data field contains something different as string then this attribute will be ignored.
     */
-  var PreserveIRI: Boolean = js.native
+  var PreserveIRI: Boolean
   
   /**
     * defines how to scale the image
@@ -45,7 +44,7 @@ trait XImageControl
     * The value of this property is one of the {@link com.sun.star.awt.ImageScaleMode} constants.
     * @since OOo 3.2
     */
-  var ScaleMode: Double = js.native
+  var ScaleMode: Double
 }
 object XImageControl {
   

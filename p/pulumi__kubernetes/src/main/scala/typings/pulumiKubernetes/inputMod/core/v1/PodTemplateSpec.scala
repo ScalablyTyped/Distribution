@@ -4,24 +4,22 @@ import typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodTemplateSpec describes the data a pod should have when created from a template
   */
-@js.native
 trait PodTemplateSpec extends StObject {
   
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * Specification of the desired behavior of the pod. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  var spec: js.UndefOr[Input[PodSpec]] = js.native
+  var spec: js.UndefOr[Input[PodSpec]] = js.undefined
 }
 object PodTemplateSpec {
   

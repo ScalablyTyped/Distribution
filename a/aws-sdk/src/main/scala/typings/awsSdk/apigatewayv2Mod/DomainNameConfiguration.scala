@@ -2,56 +2,54 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainNameConfiguration extends StObject {
   
   /**
     * A domain name for the API.
     */
-  var ApiGatewayDomainName: js.UndefOr[string] = js.native
+  var ApiGatewayDomainName: js.UndefOr[string] = js.undefined
   
   /**
     * An AWS-managed certificate that will be used by the edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
     */
-  var CertificateArn: js.UndefOr[Arn] = js.native
+  var CertificateArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The user-friendly name of the certificate that will be used by the edge-optimized endpoint for this domain name.
     */
-  var CertificateName: js.UndefOr[StringWithLengthBetween1And128] = js.native
+  var CertificateName: js.UndefOr[StringWithLengthBetween1And128] = js.undefined
   
   /**
     * The timestamp when the certificate that was used by edge-optimized endpoint for this domain name was uploaded.
     */
-  var CertificateUploadDate: js.UndefOr[timestampIso8601] = js.native
+  var CertificateUploadDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The status of the domain name migration. The valid values are AVAILABLE and UPDATING. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete. If it is AVAILABLE, the domain can be updated.
     */
-  var DomainNameStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameStatus] = js.native
+  var DomainNameStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameStatus] = js.undefined
   
   /**
     * An optional text message containing detailed information about status of the domain name migration.
     */
-  var DomainNameStatusMessage: js.UndefOr[string] = js.native
+  var DomainNameStatusMessage: js.UndefOr[string] = js.undefined
   
   /**
     * The endpoint type.
     */
-  var EndpointType: js.UndefOr[typings.awsSdk.apigatewayv2Mod.EndpointType] = js.native
+  var EndpointType: js.UndefOr[typings.awsSdk.apigatewayv2Mod.EndpointType] = js.undefined
   
   /**
     * The Amazon Route 53 Hosted Zone ID of the endpoint.
     */
-  var HostedZoneId: js.UndefOr[string] = js.native
+  var HostedZoneId: js.UndefOr[string] = js.undefined
   
   /**
     * The Transport Layer Security (TLS) version of the security policy for this domain name. The valid values are TLS_1_0 and TLS_1_2.
     */
-  var SecurityPolicy: js.UndefOr[typings.awsSdk.apigatewayv2Mod.SecurityPolicy] = js.native
+  var SecurityPolicy: js.UndefOr[typings.awsSdk.apigatewayv2Mod.SecurityPolicy] = js.undefined
 }
 object DomainNameConfiguration {
   

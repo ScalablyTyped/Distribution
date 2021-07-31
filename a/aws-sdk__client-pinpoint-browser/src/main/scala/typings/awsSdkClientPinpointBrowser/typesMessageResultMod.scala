@@ -9,12 +9,10 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.TH
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.UNKNOWN_FAILURE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMessageResultMod {
   
-  @js.native
   trait MessageResult extends StObject {
     
     /**
@@ -46,27 +44,27 @@ object typesMessageResultMod {
       */
     var DeliveryStatus: js.UndefOr[
         SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Unique message identifier associated with the message that was sent.
       */
-    var MessageId: js.UndefOr[String] = js.native
+    var MessageId: js.UndefOr[String] = js.undefined
     
     /**
       * Downstream service status code.
       */
-    var StatusCode: js.UndefOr[Double] = js.native
+    var StatusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * Status message for message delivery.
       */
-    var StatusMessage: js.UndefOr[String] = js.native
+    var StatusMessage: js.UndefOr[String] = js.undefined
     
     /**
       * If token was updated as part of delivery. (This is GCM Specific)
       */
-    var UpdatedToken: js.UndefOr[String] = js.native
+    var UpdatedToken: js.UndefOr[String] = js.undefined
   }
   object MessageResult {
     

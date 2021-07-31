@@ -2,13 +2,11 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SentimentAnalyzer extends StObject {
   
-  def getSentiment(words: js.Array[String]): Double = js.native
+  def getSentiment(words: js.Array[String]): Double
 }
 object SentimentAnalyzer {
   

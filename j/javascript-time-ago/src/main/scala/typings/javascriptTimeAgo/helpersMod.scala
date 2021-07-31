@@ -5,25 +5,25 @@ import typings.javascriptTimeAgo.gradationMod.Unit
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
+  
+  @JSImport("javascript-time-ago/gradation/helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("javascript-time-ago/gradation/helpers", "day")
   @js.native
   val day: Double = js.native
   
-  @JSImport("javascript-time-ago/gradation/helpers", "getDate")
-  @js.native
-  def getDate(value: Double): Date = js.native
-  @JSImport("javascript-time-ago/gradation/helpers", "getDate")
-  @js.native
-  def getDate(value: Date): Date = js.native
+  @scala.inline
+  def getDate(value: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def getDate(value: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("javascript-time-ago/gradation/helpers", "getStep")
-  @js.native
-  def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = js.native
+  @scala.inline
+  def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStep")(gradation.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Gradation]]
   
   @JSImport("javascript-time-ago/gradation/helpers", "hour")
   @js.native

@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceReviewsReply extends StandardParameters {
+trait ParamsResourceReviewsReply
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Unique identifier for the Android app for which we want reviews; for
     * example, "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaReviewsReplyRequest] = js.native
+  var requestBody: js.UndefOr[SchemaReviewsReplyRequest] = js.undefined
   
   /**
     *
     */
-  var reviewId: js.UndefOr[String] = js.native
+  var reviewId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceReviewsReply {
   

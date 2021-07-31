@@ -3,23 +3,21 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentManualInterventionPendingEvent extends StObject {
   
-  var deployment: Deployment = js.native
+  var deployment: Deployment
   
-  var emailRecipients: js.Array[String] = js.native
+  var emailRecipients: js.Array[String]
   
-  var environmentOwner: IdentityRef = js.native
+  var environmentOwner: IdentityRef
   
-  var manualIntervention: ManualIntervention = js.native
+  var manualIntervention: ManualIntervention
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
   
-  var release: Release = js.native
+  var release: Release
 }
 object DeploymentManualInterventionPendingEvent {
   

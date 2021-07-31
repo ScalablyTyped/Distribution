@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSourceHierarchy
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
-trait XLevelsSupplier extends XInterface {
+trait XLevelsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of levels.
     * @see com.sun.star.sheet.DataPilotSourceLevels
     */
-  val Levels: XNameAccess = js.native
+  val Levels: XNameAccess
   
   /**
     * returns the collection of levels.
     * @see com.sun.star.sheet.DataPilotSourceLevels
     */
-  def getLevels(): XNameAccess = js.native
+  def getLevels(): XNameAccess
 }
 object XLevelsSupplier {
   

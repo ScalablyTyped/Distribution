@@ -6,20 +6,22 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemListRendererMod {
   
-  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
+  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", JSImport.Namespace)
   @js.native
-  def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
-  @js.native
-  def renderFilteredItems(props: IItemListRendererProps[_], noResults: js.UndefOr[ReactNode], initialContent: ReactNode): ReactNode = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", "renderFilteredItems")
-  @js.native
-  def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def renderFilteredItems(props: IItemListRendererProps[js.Any]): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFilteredItems")(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def renderFilteredItems(props: IItemListRendererProps[js.Any], noResults: Unit, initialContent: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFilteredItems")(props.asInstanceOf[js.Any], noResults.asInstanceOf[js.Any], initialContent.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  @scala.inline
+  def renderFilteredItems(props: IItemListRendererProps[js.Any], noResults: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFilteredItems")(props.asInstanceOf[js.Any], noResults.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  @scala.inline
+  def renderFilteredItems(props: IItemListRendererProps[js.Any], noResults: ReactNode, initialContent: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFilteredItems")(props.asInstanceOf[js.Any], noResults.asInstanceOf[js.Any], initialContent.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   @js.native
   trait IItemListRendererProps[T] extends StObject {

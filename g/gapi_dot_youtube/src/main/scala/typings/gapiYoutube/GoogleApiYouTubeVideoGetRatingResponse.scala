@@ -3,26 +3,24 @@ package typings.gapiYoutube
 import typings.gapiYoutube.anon.Rating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubeVideoGetRatingResponse extends StObject {
   
   /**
     * The ETag of the response.
     */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * A list of ratings that match the request criteria.
     */
-  var items: js.Array[Rating] = js.native
+  var items: js.Array[Rating]
   
   /**
     * The type of the API response. For this operation, the value will be youtube#videoGetRatingResponse.
     */
-  var kind: String = js.native
+  var kind: String
 }
 object GoogleApiYouTubeVideoGetRatingResponse {
   

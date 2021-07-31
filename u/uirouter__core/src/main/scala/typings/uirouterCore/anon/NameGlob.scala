@@ -3,14 +3,12 @@ package typings.uirouterCore.anon
 import typings.uirouterCore.globMod.Glob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameGlob extends StObject {
   
   /** Might be null */
-  var nameGlob: js.UndefOr[Glob] = js.native
+  var nameGlob: js.UndefOr[Glob] = js.undefined
 }
 object NameGlob {
   

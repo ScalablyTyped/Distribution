@@ -5,7 +5,6 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebControls {
@@ -17,41 +16,48 @@ object WebControls {
   object MessageLevel extends StObject {
     
     @js.native
-    sealed trait error extends MessageLevel
+    sealed trait error
+      extends StObject
+         with MessageLevel
     
     @js.native
-    sealed trait information extends MessageLevel
+    sealed trait information
+      extends StObject
+         with MessageLevel
     
     @js.native
-    sealed trait warning extends MessageLevel
+    sealed trait warning
+      extends StObject
+         with MessageLevel
   }
   
-  @js.native
-  trait ControlMessage extends ClientValueObject {
+  trait ControlMessage
+    extends StObject
+       with ClientValueObject {
     
-    def get_code(): Double = js.native
+    def get_code(): Double
     
-    def get_correlationID(): String = js.native
+    def get_correlationID(): String
     
-    def get_encodeDetails(): Boolean = js.native
+    def get_encodeDetails(): Boolean
     
-    def get_header(): String = js.native
+    def get_header(): String
     
-    def get_level(): MessageLevel = js.native
+    def get_level(): MessageLevel
     
-    def get_messageDetails(): String = js.native
+    def get_messageDetails(): String
     
-    def get_messageDetailsForViewers(): String = js.native
+    def get_messageDetailsForViewers(): String
     
-    def get_serverTypeId(): String = js.native
+    def get_serverTypeId(): String
     
-    def get_showForViewerUsers(): Boolean = js.native
+    def get_showForViewerUsers(): Boolean
     
-    def get_showInEditModeOnly(): Boolean = js.native
+    def get_showInEditModeOnly(): Boolean
     
-    def get_stackTrace(): String = js.native
+    def get_stackTrace(): String
     
-    def get_type(): String = js.native
+    def get_type(): String
   }
   object ControlMessage {
     

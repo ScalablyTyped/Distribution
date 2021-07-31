@@ -27,10 +27,13 @@ import typings.std.HTMLUListElement
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentFormattingMod {
+  
+  @JSImport("@storybook/components/dist/typography/DocumentFormatting", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components/dist/typography/DocumentFormatting", "A")
   @js.native
@@ -44,13 +47,12 @@ object documentFormattingMod {
     Theme
   ] = js.native
   
-  @JSImport("@storybook/components/dist/typography/DocumentFormatting", "Code")
-  @js.native
+  @scala.inline
   def Code(
     hasClassNameProps: ComponentProps[
       StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object, Theme]
     ]
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Code")(hasClassNameProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/components/dist/typography/DocumentFormatting", "DL")
   @js.native
@@ -212,13 +214,12 @@ object documentFormattingMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockquote")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.code")
-    @js.native
+    @scala.inline
     def code(
       hasClassNameProps: ComponentProps[
           StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object, Theme]
         ]
-    ): Element = js.native
+    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(hasClassNameProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.div")
     @js.native

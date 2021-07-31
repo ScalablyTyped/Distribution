@@ -2,23 +2,21 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var back: Bezier = js.native
+  var back: Bezier
   
-  var bbox: BBox = js.native
+  var bbox: BBox
   
-  var endcap: BezierCap = js.native
+  var endcap: BezierCap
   
-  var forward: Bezier = js.native
+  var forward: Bezier
   
-  def intersections(shape: Shape): js.Array[js.Array[Double | String]] = js.native
+  def intersections(shape: Shape): js.Array[js.Array[Double | String]]
   
-  var startcap: BezierCap = js.native
+  var startcap: BezierCap
 }
 object Shape {
   

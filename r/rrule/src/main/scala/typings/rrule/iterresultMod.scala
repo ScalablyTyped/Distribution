@@ -6,35 +6,80 @@ import typings.rrule.typesMod.QueryMethodTypes
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iterresultMod {
   
   @JSImport("rrule/dist/esm/src/iterresult", JSImport.Default)
   @js.native
-  class default[M /* <: QueryMethodTypes */] protected () extends IterResult[M] {
+  class default[M /* <: QueryMethodTypes */] protected ()
+    extends StObject
+       with IterResult[M] {
     def this(method: M, args: PartialIterArgs) = this()
+    
+    /* CompleteClass */
+    var _result: js.Array[Date] = js.native
+    
+    /**
+      * Possibly adds a date into the result.
+      *
+      * @param {Date} date - the date isn't necessarly added to the result
+      *                      list (if it is too late/too early)
+      * @return {Boolean} true if it makes sense to continue the iteration
+      *                   false if we're done.
+      */
+    /* CompleteClass */
+    override def accept(date: Date): Boolean = js.native
+    
+    /**
+      *
+      * @param {Date} date that is part of the result.
+      * @return {Boolean} whether we are interested in more values.
+      */
+    /* CompleteClass */
+    override def add(date: Date): Boolean = js.native
+    
+    /* CompleteClass */
+    override val args: PartialIterArgs = js.native
+    
+    /**
+      * 'before' and 'after' return only one date, whereas 'all'
+      * and 'between' an array.
+      * @return {Date,Array?}
+      */
+    /* CompleteClass */
+    override def getValue(): IterResultType[M] = js.native
+    
+    /* CompleteClass */
+    override val maxDate: Date | Null = js.native
+    
+    /* CompleteClass */
+    override val method: M = js.native
+    
+    /* CompleteClass */
+    override val minDate: Date | Null = js.native
+    
+    /* CompleteClass */
+    var total: Double = js.native
   }
   
-  @js.native
   trait IterArgs extends StObject {
     
-    var _value: Date | js.Array[Date] | Null = js.native
+    var _value: Date | js.Array[Date] | Null
     
-    var after: Date = js.native
+    var after: Date
     
-    var before: Date = js.native
+    var before: Date
     
-    var dt: Date = js.native
+    var dt: Date
     
-    var inc: Boolean = js.native
+    var inc: Boolean
   }
   object IterArgs {
     
     @scala.inline
     def apply(after: Date, before: Date, dt: Date, inc: Boolean): IterArgs = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], inc = inc.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], inc = inc.asInstanceOf[js.Any], _value = null)
       __obj.asInstanceOf[IterArgs]
     }
     
@@ -64,10 +109,9 @@ object iterresultMod {
     }
   }
   
-  @js.native
   trait IterResult[M /* <: QueryMethodTypes */] extends StObject {
     
-    var _result: js.Array[Date] = js.native
+    var _result: js.Array[Date]
     
     /**
       * Possibly adds a date into the result.
@@ -77,31 +121,31 @@ object iterresultMod {
       * @return {Boolean} true if it makes sense to continue the iteration
       *                   false if we're done.
       */
-    def accept(date: Date): Boolean = js.native
+    def accept(date: Date): Boolean
     
     /**
       *
       * @param {Date} date that is part of the result.
       * @return {Boolean} whether we are interested in more values.
       */
-    def add(date: Date): Boolean = js.native
+    def add(date: Date): Boolean
     
-    val args: PartialIterArgs = js.native
+    val args: PartialIterArgs
     
     /**
       * 'before' and 'after' return only one date, whereas 'all'
       * and 'between' an array.
       * @return {Date,Array?}
       */
-    def getValue(): IterResultType[M] = js.native
+    def getValue(): IterResultType[M]
     
-    val maxDate: Date | Null = js.native
+    val maxDate: Date | Null
     
-    val method: M = js.native
+    val method: M
     
-    val minDate: Date | Null = js.native
+    val minDate: Date | Null
     
-    var total: Double = js.native
+    var total: Double
   }
   object IterResult {
     
@@ -115,12 +159,12 @@ object iterresultMod {
       method: M,
       total: Double
     ): IterResult[M] = {
-      val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any], accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args.asInstanceOf[js.Any], getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any], accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args.asInstanceOf[js.Any], getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], maxDate = null, minDate = null)
       __obj.asInstanceOf[IterResult[M]]
     }
     
     @scala.inline
-    implicit class IterResultMutableBuilder[Self <: IterResult[_], M /* <: QueryMethodTypes */] (val x: Self with IterResult[M]) extends AnyVal {
+    implicit class IterResultMutableBuilder[Self <: IterResult[?], M /* <: QueryMethodTypes */] (val x: Self & IterResult[M]) extends AnyVal {
       
       @scala.inline
       def setAccept(value: Date => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))

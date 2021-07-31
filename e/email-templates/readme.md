@@ -10,9 +10,9 @@ Create, preview, and send custom email templates for Node.js. Highly configurabl
 | ------------------ | :-------------: |
 | Full name          | email-templates |
 | Keywords           | consolidate, email, engine, koa, lad, lass, mailchimp, mailgun, mandrill, moonmail, nodemailer, postmark, pug, sendgrid, template, templates, transport |
-| # releases         | 23 |
-| # dependents       | 148 |
-| # downloads        | 3288265 |
+| # releases         | 28 |
+| # dependents       | 149 |
+| # downloads        | 3380101 |
 | # stars            | 53 |
 
 ## Links

@@ -2,13 +2,11 @@ package typings.kefir.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Immediate extends StObject {
   
-  var immediate: Boolean = js.native
+  var immediate: Boolean
 }
 object Immediate {
   

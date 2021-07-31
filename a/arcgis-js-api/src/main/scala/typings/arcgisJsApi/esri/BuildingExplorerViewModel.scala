@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildingExplorerViewModel extends Accessor {
+trait BuildingExplorerViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * A collection of layers of type [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) that are added to the widget for exploration.

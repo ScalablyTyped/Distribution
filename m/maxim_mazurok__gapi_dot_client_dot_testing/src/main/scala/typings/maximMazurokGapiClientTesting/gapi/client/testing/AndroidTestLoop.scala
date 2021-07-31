@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidTestLoop extends StObject {
   
   /** The APK for the application under test. */
-  var appApk: js.UndefOr[FileReference] = js.native
+  var appApk: js.UndefOr[FileReference] = js.undefined
   
   /** A multi-apk app bundle for the application under test. */
-  var appBundle: js.UndefOr[AppBundle] = js.native
+  var appBundle: js.UndefOr[AppBundle] = js.undefined
   
   /** The java package for the application under test. The default is determined by examining the application's manifest. */
-  var appPackageId: js.UndefOr[String] = js.native
+  var appPackageId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of scenario labels that should be run during the test. The scenario labels should map to labels defined in the application's manifest. For example, player_experience and
     * com.google.test.loops.player_experience add all of the loops labeled in the manifest with the com.google.test.loops.player_experience name to the execution. Scenarios can also be
     * specified in the scenarios field.
     */
-  var scenarioLabels: js.UndefOr[js.Array[String]] = js.native
+  var scenarioLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of scenarios that should be run during the test. The default is all test loops, derived from the application's manifest. */
-  var scenarios: js.UndefOr[js.Array[Double]] = js.native
+  var scenarios: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object AndroidTestLoop {
   

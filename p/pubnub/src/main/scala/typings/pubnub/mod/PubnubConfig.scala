@@ -3,47 +3,45 @@ package typings.pubnub.mod
 import typings.pubnub.anon.FreeSocketKeepAliveTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubnubConfig extends StObject {
   
-  var authKey: js.UndefOr[String] = js.native
+  var authKey: js.UndefOr[String] = js.undefined
   
-  var autoNetworkDetection: js.UndefOr[Boolean] = js.native
+  var autoNetworkDetection: js.UndefOr[Boolean] = js.undefined
   
-  var cipherKey: js.UndefOr[String] = js.native
+  var cipherKey: js.UndefOr[String] = js.undefined
   
-  var heartbeatInterval: js.UndefOr[Double] = js.native
+  var heartbeatInterval: js.UndefOr[Double] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var keepAliveSettings: js.UndefOr[FreeSocketKeepAliveTimeout] = js.native
+  var keepAliveSettings: js.UndefOr[FreeSocketKeepAliveTimeout] = js.undefined
   
-  var listenToBrowserNetworkEvents: js.UndefOr[Boolean] = js.native
+  var listenToBrowserNetworkEvents: js.UndefOr[Boolean] = js.undefined
   
-  var logVerbosity: js.UndefOr[Boolean] = js.native
+  var logVerbosity: js.UndefOr[Boolean] = js.undefined
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var presenceTimeout: js.UndefOr[Double] = js.native
+  var presenceTimeout: js.UndefOr[Double] = js.undefined
   
-  var publishKey: js.UndefOr[String] = js.native
+  var publishKey: js.UndefOr[String] = js.undefined
   
-  var requestMessageCountThreshold: js.UndefOr[Double] = js.native
+  var requestMessageCountThreshold: js.UndefOr[Double] = js.undefined
   
-  var restore: js.UndefOr[Boolean] = js.native
+  var restore: js.UndefOr[Boolean] = js.undefined
   
-  var secretKey: js.UndefOr[String] = js.native
+  var secretKey: js.UndefOr[String] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
-  var subscribeKey: String = js.native
+  var subscribeKey: String
   
-  var suppressLeaveEvents: js.UndefOr[Boolean] = js.native
+  var suppressLeaveEvents: js.UndefOr[Boolean] = js.undefined
   
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object PubnubConfig {
   

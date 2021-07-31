@@ -13,7 +13,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.right
 import typings.wordpressComponents.wordpressComponentsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexMod {
@@ -32,28 +31,27 @@ object flexMod {
   
   object Flex {
     
-    @js.native
     trait FlexProps extends StObject {
       
       /**
         * Sets align-items. Top and bottom are shorthand for flex-start and flex-end respectively.
         */
-      var align: js.UndefOr[AlignItemsProperty | top | bottom] = js.native
+      var align: js.UndefOr[AlignItemsProperty | top | bottom] = js.undefined
       
       /**
         * Determines the spacing in between children components. The `gap` value is a multiplier to the base value of `4`.
         */
-      var gap: js.UndefOr[Double] = js.native
+      var gap: js.UndefOr[Double] = js.undefined
       
       /**
         * Reverses the flex direction.
         */
-      var isReversed: js.UndefOr[Boolean] = js.native
+      var isReversed: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets jusifty-content. Left and right are shorthand for flex-start and flex-end respectively, not the actual CSS value.
         */
-      var justify: js.UndefOr[JustifyContentProperty | left | right] = js.native
+      var justify: js.UndefOr[JustifyContentProperty | left | right] = js.undefined
     }
     object FlexProps {
       
@@ -92,10 +90,10 @@ object flexMod {
       }
     }
     
-    @js.native
     trait Props
-      extends HTMLProps[HTMLDivElement]
+      extends StObject
          with FlexProps
+         with HTMLProps[HTMLDivElement]
     object Props {
       
       @scala.inline

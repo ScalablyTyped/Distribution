@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.ReposListBranchesForHeadCommitResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposListBranchesForHeadCommitEndpoint extends StObject {
   
-  var parameters: ReposListBranchesForHeadCommitEndpoint = js.native
+  var parameters: ReposListBranchesForHeadCommitEndpoint
   
-  var response: OctokitResponse[ReposListBranchesForHeadCommitResponseData] = js.native
+  var response: OctokitResponse[ReposListBranchesForHeadCommitResponseData]
 }
 object ParametersReposListBranchesForHeadCommitEndpoint {
   

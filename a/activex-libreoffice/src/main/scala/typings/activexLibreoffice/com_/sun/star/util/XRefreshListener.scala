@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive **refreshed** events. */
-@js.native
-trait XRefreshListener extends XEventListener {
+trait XRefreshListener
+  extends StObject
+     with XEventListener {
   
   /** is called when the object data is refreshed. */
-  def refreshed(rEvent: EventObject): Unit = js.native
+  def refreshed(rEvent: EventObject): Unit
 }
 object XRefreshListener {
   

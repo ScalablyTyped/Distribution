@@ -4,17 +4,17 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramEditEvent extends DiagramEvent {
+trait DiagramEditEvent
+  extends StObject
+     with DiagramEvent {
   
-  var connection: js.UndefOr[Model] = js.native
+  var connection: js.UndefOr[Model] = js.undefined
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var shape: js.UndefOr[Model] = js.native
+  var shape: js.UndefOr[Model] = js.undefined
 }
 object DiagramEditEvent {
   

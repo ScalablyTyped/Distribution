@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait WorksheetFreezePanes extends ClientObject {
+trait WorksheetFreezePanes
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")

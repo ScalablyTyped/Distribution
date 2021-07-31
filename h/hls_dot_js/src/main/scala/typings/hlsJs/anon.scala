@@ -10,149 +10,146 @@ import typings.std.Request
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject
   
   /* Inlined std.Partial<hls.js.hls.js.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var abrBandWidthFactor: js.UndefOr[Double] = js.native
+    var abrBandWidthFactor: js.UndefOr[Double] = js.undefined
     
-    var abrBandWidthUpFactor: js.UndefOr[Double] = js.native
+    var abrBandWidthUpFactor: js.UndefOr[Double] = js.undefined
     
-    var abrController: js.UndefOr[AbrController] = js.native
+    var abrController: js.UndefOr[AbrController] = js.undefined
     
-    var abrEwmaDefaultEstimate: js.UndefOr[Double] = js.native
+    var abrEwmaDefaultEstimate: js.UndefOr[Double] = js.undefined
     
-    var abrEwmaFastLive: js.UndefOr[Double] = js.native
+    var abrEwmaFastLive: js.UndefOr[Double] = js.undefined
     
-    var abrEwmaFastVod: js.UndefOr[Double] = js.native
+    var abrEwmaFastVod: js.UndefOr[Double] = js.undefined
     
-    var abrEwmaSlowLive: js.UndefOr[Double] = js.native
+    var abrEwmaSlowLive: js.UndefOr[Double] = js.undefined
     
-    var abrEwmaSlowVod: js.UndefOr[Double] = js.native
+    var abrEwmaSlowVod: js.UndefOr[Double] = js.undefined
     
-    var abrMaxWithRealBitrate: js.UndefOr[Boolean] = js.native
+    var abrMaxWithRealBitrate: js.UndefOr[Boolean] = js.undefined
     
-    var appendErrorMaxRetry: js.UndefOr[Double] = js.native
+    var appendErrorMaxRetry: js.UndefOr[Double] = js.undefined
     
-    var autoStartLoad: js.UndefOr[Boolean] = js.native
+    var autoStartLoad: js.UndefOr[Boolean] = js.undefined
     
-    var capLevelToPlayerSize: js.UndefOr[Boolean] = js.native
+    var capLevelToPlayerSize: js.UndefOr[Boolean] = js.undefined
     
-    var captionsTextTrack1Label: js.UndefOr[String] = js.native
+    var captionsTextTrack1Label: js.UndefOr[String] = js.undefined
     
-    var captionsTextTrack1LanguagedCode: js.UndefOr[String] = js.native
+    var captionsTextTrack1LanguagedCode: js.UndefOr[String] = js.undefined
     
-    var captionsTextTrack2Label: js.UndefOr[String] = js.native
+    var captionsTextTrack2Label: js.UndefOr[String] = js.undefined
     
-    var captionsTextTrack2LanguageCode: js.UndefOr[String] = js.native
+    var captionsTextTrack2LanguageCode: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean | CustomLoggerObject] = js.native
+    var debug: js.UndefOr[Boolean | CustomLoggerObject] = js.undefined
     
-    var defaultAudioCodec: js.UndefOr[String] = js.native
+    var defaultAudioCodec: js.UndefOr[String] = js.undefined
     
-    var enableCEA708Captions: js.UndefOr[Boolean] = js.native
+    var enableCEA708Captions: js.UndefOr[Boolean] = js.undefined
     
-    var enableSoftwareAES: js.UndefOr[Boolean] = js.native
+    var enableSoftwareAES: js.UndefOr[Boolean] = js.undefined
     
-    var enableWebVTT: js.UndefOr[Boolean] = js.native
+    var enableWebVTT: js.UndefOr[Boolean] = js.undefined
     
-    var enableWorker: js.UndefOr[Boolean] = js.native
+    var enableWorker: js.UndefOr[Boolean] = js.undefined
     
-    var fLoader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.native
+    var fLoader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
     
-    var fetchSetup: js.UndefOr[js.Function2[/* context */ js.Any, /* initParams */ js.Any, Request]] = js.native
+    var fetchSetup: js.UndefOr[js.Function2[/* context */ js.Any, /* initParams */ js.Any, Request]] = js.undefined
     
-    var forceKeyFrameOnDiscontinuity: js.UndefOr[Boolean] = js.native
+    var forceKeyFrameOnDiscontinuity: js.UndefOr[Boolean] = js.undefined
     
-    var fragLoadingMaxRetry: js.UndefOr[Double] = js.native
+    var fragLoadingMaxRetry: js.UndefOr[Double] = js.undefined
     
-    var fragLoadingMaxRetryDelay: js.UndefOr[Double] = js.native
+    var fragLoadingMaxRetryDelay: js.UndefOr[Double] = js.undefined
     
-    var fragLoadingRetryDelay: js.UndefOr[Double] = js.native
+    var fragLoadingRetryDelay: js.UndefOr[Double] = js.undefined
     
-    var fragLoadingTimeOut: js.UndefOr[Double] = js.native
+    var fragLoadingTimeOut: js.UndefOr[Double] = js.undefined
     
-    var highBufferWatchdogPeriod: js.UndefOr[Double] = js.native
+    var highBufferWatchdogPeriod: js.UndefOr[Double] = js.undefined
     
-    var initialLiveManifestSize: js.UndefOr[Double] = js.native
+    var initialLiveManifestSize: js.UndefOr[Double] = js.undefined
     
-    var levelLoadingMaxRetry: js.UndefOr[Double] = js.native
+    var levelLoadingMaxRetry: js.UndefOr[Double] = js.undefined
     
-    var levelLoadingMaxRetryTimeout: js.UndefOr[Double] = js.native
+    var levelLoadingMaxRetryTimeout: js.UndefOr[Double] = js.undefined
     
-    var levelLoadingRetryDelay: js.UndefOr[Double] = js.native
+    var levelLoadingRetryDelay: js.UndefOr[Double] = js.undefined
     
-    var levelLoadingTimeOut: js.UndefOr[Double] = js.native
+    var levelLoadingTimeOut: js.UndefOr[Double] = js.undefined
     
-    var liveBackBufferLength: js.UndefOr[Double] = js.native
+    var liveBackBufferLength: js.UndefOr[Double] = js.undefined
     
-    var liveDurationInfinity: js.UndefOr[Boolean] = js.native
+    var liveDurationInfinity: js.UndefOr[Boolean] = js.undefined
     
-    var liveMaxLatencyDuration: js.UndefOr[Double] = js.native
+    var liveMaxLatencyDuration: js.UndefOr[Double] = js.undefined
     
-    var liveMaxLatencyDurationCount: js.UndefOr[Double] = js.native
+    var liveMaxLatencyDurationCount: js.UndefOr[Double] = js.undefined
     
-    var liveSyncDuration: js.UndefOr[Double] = js.native
+    var liveSyncDuration: js.UndefOr[Double] = js.undefined
     
-    var liveSyncDurationCount: js.UndefOr[Double] = js.native
+    var liveSyncDurationCount: js.UndefOr[Double] = js.undefined
     
-    var loader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.native
+    var loader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
     
-    var lowBufferWatchdogPeriod: js.UndefOr[Double] = js.native
+    var lowBufferWatchdogPeriod: js.UndefOr[Double] = js.undefined
     
-    var manifestLoadingMaxRetry: js.UndefOr[Double] = js.native
+    var manifestLoadingMaxRetry: js.UndefOr[Double] = js.undefined
     
-    var manifestLoadingMaxRetryTimeout: js.UndefOr[Double] = js.native
+    var manifestLoadingMaxRetryTimeout: js.UndefOr[Double] = js.undefined
     
-    var manifestLoadingRetryDelay: js.UndefOr[Double] = js.native
+    var manifestLoadingRetryDelay: js.UndefOr[Double] = js.undefined
     
-    var manifestLoadingTimeOut: js.UndefOr[Double] = js.native
+    var manifestLoadingTimeOut: js.UndefOr[Double] = js.undefined
     
-    var maxAudioFramesDrift: js.UndefOr[Double] = js.native
+    var maxAudioFramesDrift: js.UndefOr[Double] = js.undefined
     
-    var maxBufferHole: js.UndefOr[Double] = js.native
+    var maxBufferHole: js.UndefOr[Double] = js.undefined
     
-    var maxBufferLength: js.UndefOr[Double] = js.native
+    var maxBufferLength: js.UndefOr[Double] = js.undefined
     
-    var maxBufferSize: js.UndefOr[Double] = js.native
+    var maxBufferSize: js.UndefOr[Double] = js.undefined
     
-    var maxFragLookUpTolerance: js.UndefOr[Double] = js.native
+    var maxFragLookUpTolerance: js.UndefOr[Double] = js.undefined
     
-    var maxLoadingDelay: js.UndefOr[Double] = js.native
+    var maxLoadingDelay: js.UndefOr[Double] = js.undefined
     
-    var maxMaxBufferLength: js.UndefOr[Double] = js.native
+    var maxMaxBufferLength: js.UndefOr[Double] = js.undefined
     
-    var maxSeekHole: js.UndefOr[Double] = js.native
+    var maxSeekHole: js.UndefOr[Double] = js.undefined
     
-    var maxStarvationDelay: js.UndefOr[Double] = js.native
+    var maxStarvationDelay: js.UndefOr[Double] = js.undefined
     
-    var minAutoBitrate: js.UndefOr[Double] = js.native
+    var minAutoBitrate: js.UndefOr[Double] = js.undefined
     
-    var nudgeMaxRetry: js.UndefOr[Double] = js.native
+    var nudgeMaxRetry: js.UndefOr[Double] = js.undefined
     
-    var nudgeOffset: js.UndefOr[Double] = js.native
+    var nudgeOffset: js.UndefOr[Double] = js.undefined
     
-    var pLoader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.native
+    var pLoader: js.UndefOr[Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
     
-    var startFragPrefetch: js.UndefOr[Boolean] = js.native
+    var startFragPrefetch: js.UndefOr[Boolean] = js.undefined
     
-    var startLevel: js.UndefOr[Double] = js.native
+    var startLevel: js.UndefOr[Double] = js.undefined
     
-    var startPosition: js.UndefOr[Double] = js.native
+    var startPosition: js.UndefOr[Double] = js.undefined
     
-    var stretchShortVideoTrack: js.UndefOr[Boolean] = js.native
+    var stretchShortVideoTrack: js.UndefOr[Boolean] = js.undefined
     
-    var timelineController: js.UndefOr[TimelineController] = js.native
+    var timelineController: js.UndefOr[TimelineController] = js.undefined
     
-    var xhrSetup: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, Unit]] = js.native
+    var xhrSetup: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, Unit]] = js.undefined
   }
   object PartialConfig {
     

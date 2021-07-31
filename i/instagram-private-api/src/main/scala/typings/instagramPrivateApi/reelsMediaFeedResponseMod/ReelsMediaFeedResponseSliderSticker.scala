@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseSliderSticker extends StObject {
   
-  var background_color: String = js.native
+  var background_color: String
   
-  var emoji: String = js.native
+  var emoji: String
   
-  var question: String = js.native
+  var question: String
   
-  var slider_id: Double = js.native
+  var slider_id: Double
   
-  var slider_vote_average: Null = js.native
+  var slider_vote_average: Null
   
-  var slider_vote_count: Double = js.native
+  var slider_vote_count: Double
   
-  var text_color: String = js.native
+  var text_color: String
   
-  var viewer_can_vote: Boolean = js.native
+  var viewer_can_vote: Boolean
   
-  var viewer_vote: js.UndefOr[Double] = js.native
+  var viewer_vote: js.UndefOr[Double] = js.undefined
 }
 object ReelsMediaFeedResponseSliderSticker {
   

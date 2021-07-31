@@ -20,41 +20,37 @@ import typings.std.ClassDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lodash-decorators", "AfterAll")
+  @JSImport("lodash-decorators", JSImport.Namespace)
   @js.native
-  def AfterAll_(n: Double): LodashDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators", "After")
-  @js.native
-  def After_(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def AfterAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "Ary")
-  @js.native
-  def Ary_(n: Double): LodashMethodDecorator = js.native
+  @scala.inline
+  def After_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  
+  @scala.inline
+  def Ary_(n: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Ary")(n.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
   
   @JSImport("lodash-decorators", "Attempt")
   @js.native
   val Attempt_ : BiTypedMethodDecorator = js.native
   
-  @JSImport("lodash-decorators", "BeforeAll")
-  @js.native
-  def BeforeAll_(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def BeforeAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "Before")
-  @js.native
-  def Before_(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def Before_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "BindAll")
-  @js.native
-  def BindAll_(): ClassDecorator = js.native
-  @JSImport("lodash-decorators", "BindAll")
-  @js.native
-  def BindAll_(methods: js.Array[String]): ClassDecorator = js.native
+  @scala.inline
+  def BindAll_(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")().asInstanceOf[ClassDecorator]
+  @scala.inline
+  def BindAll_(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("lodash-decorators", "Bind")
   @js.native
@@ -76,31 +72,23 @@ object mod {
   @js.native
   val Curry_ : BiTypedMethodDecorator1[Double] = js.native
   
-  @JSImport("lodash-decorators", "DebounceAll")
-  @js.native
-  def DebounceAll_(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def DebounceAll_(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Double, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Unit, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "Debounce")
-  @js.native
-  def Debounce_(): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Debounce")
-  @js.native
-  def Debounce_(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Debounce")
-  @js.native
-  def Debounce_(wait: Double): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Debounce")
-  @js.native
-  def Debounce_(wait: Double, options: DebounceOptions): LodashDecorator = js.native
+  @scala.inline
+  def Debounce_(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Debounce")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Debounce_(wait: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Debounce")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Debounce_(wait: Double, options: DebounceOptions): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Debounce")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Debounce_(wait: Unit, options: DebounceOptions): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Debounce")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "DecoratorConfig")
   @js.native
@@ -118,24 +106,19 @@ object mod {
   @js.native
   val Defer_ : BiTypedDecoratorN = js.native
   
-  @JSImport("lodash-decorators", "Delay")
-  @js.native
-  def Delay_(wait: Double, args: js.Any*): LodashMethodDecorator = js.native
+  @scala.inline
+  def Delay_(wait: Double, args: js.Any*): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Delay")(wait.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "Flip")
-  @js.native
-  def Flip_(): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Flip")
-  @js.native
-  def Flip_(fn: ResolvableFunction): LodashDecorator = js.native
+  @scala.inline
+  def Flip_(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Flip_(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "FlowRight")
-  @js.native
-  def FlowRight_(fns: ResolvableFunction*): LodashDecorator = js.native
+  @scala.inline
+  def FlowRight_(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("FlowRight")(fns.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "Flow")
-  @js.native
-  def Flow_(fns: ResolvableFunction*): LodashDecorator = js.native
+  @scala.inline
+  def Flow_(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flow")(fns.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "InstanceChainMap")
   @js.native
@@ -154,9 +137,8 @@ object mod {
   @js.native
   val Memoize_ : BiTypedMethodDecorator1[String | js.Function | (MemoizeConfig[js.Any, js.Any])] = js.native
   
-  @JSImport("lodash-decorators", "Mixin")
-  @js.native
-  def Mixin_(srcs: js.Object*): ClassDecorator = js.native
+  @scala.inline
+  def Mixin_(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(srcs.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("lodash-decorators", "Negate")
   @js.native
@@ -166,27 +148,21 @@ object mod {
   @js.native
   val Once_ : BiTypedDecorator = js.native
   
-  @JSImport("lodash-decorators", "OverArgs")
-  @js.native
-  def OverArgs_(transforms: js.Function*): LodashMethodDecorator = js.native
+  @scala.inline
+  def OverArgs_(transforms: js.Function*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("OverArgs")(transforms.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "PartialRight")
-  @js.native
-  def PartialRight_(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def PartialRight_(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PartialRight")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("lodash-decorators", "Partial")
-  @js.native
-  def Partial_(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def Partial_(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Partial")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("lodash-decorators", "Rearg")
-  @js.native
-  def Rearg_(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Rearg")
-  @js.native
-  def Rearg_(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "Rearg")
-  @js.native
-  def Rearg_(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = js.native
+  @scala.inline
+  def Rearg_(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Rearg_(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def Rearg_(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "Rest")
   @js.native
@@ -200,18 +176,14 @@ object mod {
   @js.native
   val Tap_ : BiTypedMethodDecorator = js.native
   
-  @JSImport("lodash-decorators", "ThrottleAll")
-  @js.native
-  def ThrottleAll_(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "ThrottleAll")
-  @js.native
-  def ThrottleAll_(wait: js.UndefOr[scala.Nothing], options: ThrottleOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "ThrottleAll")
-  @js.native
-  def ThrottleAll_(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "ThrottleAll")
-  @js.native
-  def ThrottleAll_(wait: Double, options: ThrottleOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def ThrottleAll_(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ThrottleAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def ThrottleAll_(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ThrottleAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def ThrottleAll_(wait: Double, options: ThrottleOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ThrottleAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def ThrottleAll_(wait: Unit, options: ThrottleOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ThrottleAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
   @JSImport("lodash-decorators", "ThrottleGetter")
   @js.native
@@ -229,47 +201,38 @@ object mod {
   @js.native
   val Unary_ : BiTypedMethodDecorator = js.native
   
-  @JSImport("lodash-decorators", "Wrap")
-  @js.native
-  def Wrap_(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "Wrap")
-  @js.native
-  def Wrap_(fnToWrap: ResolvableFunction): LodashMethodDecorator = js.native
+  @scala.inline
+  def Wrap_(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def Wrap_(fnToWrap: ResolvableFunction): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(fnToWrap.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "after")
-  @js.native
-  def after(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def after(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("after")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "afterAll")
-  @js.native
-  def afterAll(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def afterAll(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("afterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "ary")
-  @js.native
-  def ary(n: Double): LodashMethodDecorator = js.native
+  @scala.inline
+  def ary(n: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ary")(n.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
   
   @JSImport("lodash-decorators", "attempt")
   @js.native
   val attempt: BiTypedMethodDecorator = js.native
   
-  @JSImport("lodash-decorators", "before")
-  @js.native
-  def before(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def before(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("before")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "beforeAll")
-  @js.native
-  def beforeAll(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def beforeAll(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "bind")
   @js.native
   val bind: BiTypedMethodDecorator1[js.Any] = js.native
   
-  @JSImport("lodash-decorators", "bindAll")
-  @js.native
-  def bindAll(): ClassDecorator = js.native
-  @JSImport("lodash-decorators", "bindAll")
-  @js.native
-  def bindAll(methods: js.Array[String]): ClassDecorator = js.native
+  @scala.inline
+  def bindAll(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")().asInstanceOf[ClassDecorator]
+  @scala.inline
+  def bindAll(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("lodash-decorators", "curry")
   @js.native
@@ -287,54 +250,41 @@ object mod {
   @js.native
   val curryRightAll: BiTypedMethodDecorator1[Double] = js.native
   
-  @JSImport("lodash-decorators", "debounce")
-  @js.native
-  def debounce(): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "debounce")
-  @js.native
-  def debounce(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "debounce")
-  @js.native
-  def debounce(wait: Double): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "debounce")
-  @js.native
-  def debounce(wait: Double, options: DebounceOptions): LodashDecorator = js.native
+  @scala.inline
+  def debounce(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def debounce(wait: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def debounce(wait: Double, options: DebounceOptions): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def debounce(wait: Unit, options: DebounceOptions): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "debounceAll")
-  @js.native
-  def debounceAll(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "debounceAll")
-  @js.native
-  def debounceAll(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "debounceAll")
-  @js.native
-  def debounceAll(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "debounceAll")
-  @js.native
-  def debounceAll(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def debounceAll(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Double, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Unit, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
   @JSImport("lodash-decorators", "defer")
   @js.native
   val defer: BiTypedDecoratorN = js.native
   
-  @JSImport("lodash-decorators", "delay")
-  @js.native
-  def delay(wait: Double, args: js.Any*): LodashMethodDecorator = js.native
+  @scala.inline
+  def delay(wait: Double, args: js.Any*): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(wait.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "flip")
-  @js.native
-  def flip(): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "flip")
-  @js.native
-  def flip(fn: ResolvableFunction): LodashDecorator = js.native
+  @scala.inline
+  def flip(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")().asInstanceOf[LodashDecorator]
+  @scala.inline
+  def flip(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "flow")
-  @js.native
-  def flow(fns: ResolvableFunction*): LodashDecorator = js.native
+  @scala.inline
+  def flow(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(fns.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators", "flowRight")
-  @js.native
-  def flowRight(fns: ResolvableFunction*): LodashDecorator = js.native
+  @scala.inline
+  def flowRight(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flowRight")(fns.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "memoize")
   @js.native
@@ -344,9 +294,8 @@ object mod {
   @js.native
   val memoizeAll: BiTypedMethodDecorator1[js.Function | (MemoizeConfig[js.Any, js.Any])] = js.native
   
-  @JSImport("lodash-decorators", "mixin")
-  @js.native
-  def mixin(srcs: js.Object*): ClassDecorator = js.native
+  @scala.inline
+  def mixin(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(srcs.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("lodash-decorators", "negate")
   @js.native
@@ -356,27 +305,21 @@ object mod {
   @js.native
   val once: BiTypedDecorator = js.native
   
-  @JSImport("lodash-decorators", "overArgs")
-  @js.native
-  def overArgs(transforms: js.Function*): LodashMethodDecorator = js.native
+  @scala.inline
+  def overArgs(transforms: js.Function*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("overArgs")(transforms.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
   
-  @JSImport("lodash-decorators", "partial")
-  @js.native
-  def partial(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def partial(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("lodash-decorators", "partialRight")
-  @js.native
-  def partialRight(partials: js.Any*): PropertyDecorator = js.native
+  @scala.inline
+  def partialRight(partials: js.Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("partialRight")(partials.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("lodash-decorators", "rearg")
-  @js.native
-  def rearg(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "rearg")
-  @js.native
-  def rearg(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = js.native
-  @JSImport("lodash-decorators", "rearg")
-  @js.native
-  def rearg(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = js.native
+  @scala.inline
+  def rearg(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def rearg(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
+  @scala.inline
+  def rearg(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(indexes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "rest")
   @js.native
@@ -394,18 +337,14 @@ object mod {
   @js.native
   val throttle: BiTypedDecorator2[Double, ThrottleOptions] = js.native
   
-  @JSImport("lodash-decorators", "throttleAll")
-  @js.native
-  def throttleAll(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "throttleAll")
-  @js.native
-  def throttleAll(wait: js.UndefOr[scala.Nothing], options: ThrottleOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "throttleAll")
-  @js.native
-  def throttleAll(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "throttleAll")
-  @js.native
-  def throttleAll(wait: Double, options: ThrottleOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def throttleAll(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def throttleAll(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def throttleAll(wait: Double, options: ThrottleOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def throttleAll(wait: Unit, options: ThrottleOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
   
   @JSImport("lodash-decorators", "throttleGetter")
   @js.native
@@ -419,10 +358,8 @@ object mod {
   @js.native
   val unary: BiTypedMethodDecorator = js.native
   
-  @JSImport("lodash-decorators", "wrap")
-  @js.native
-  def wrap(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators", "wrap")
-  @js.native
-  def wrap(fnToWrap: ResolvableFunction): LodashMethodDecorator = js.native
+  @scala.inline
+  def wrap(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def wrap(fnToWrap: ResolvableFunction): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fnToWrap.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
 }

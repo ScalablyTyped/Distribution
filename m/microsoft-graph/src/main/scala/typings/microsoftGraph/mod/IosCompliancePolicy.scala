@@ -2,56 +2,56 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosCompliancePolicy extends DeviceCompliancePolicy {
+trait IosCompliancePolicy
+  extends StObject
+     with DeviceCompliancePolicy {
   
   // Require that devices have enabled device threat protection .
-  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.native
+  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
     * low, medium, high, notSet.
     */
-  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.native
+  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
   
   // Indicates whether or not to require a managed email profile.
-  var managedEmailProfileRequired: js.UndefOr[Boolean] = js.native
+  var managedEmailProfileRequired: js.UndefOr[Boolean] = js.undefined
   
   // Maximum IOS version.
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum IOS version.
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to block simple passcodes.
-  var passcodeBlockSimple: js.UndefOr[Boolean] = js.native
+  var passcodeBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the passcode expires. Valid values 1 to 65535
-  var passcodeExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passcodeExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passcodeMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passcodeMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passcode. Valid values 4 to 14
-  var passcodeMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passcodeMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before a passcode is required.
-  var passcodeMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passcodeMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passcodes to block. Valid values 1 to 24
-  var passcodePreviousPasscodeBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passcodePreviousPasscodeBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to require a passcode.
-  var passcodeRequired: js.UndefOr[Boolean] = js.native
+  var passcodeRequired: js.UndefOr[Boolean] = js.undefined
   
   // The required passcode type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passcodeRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passcodeRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // Devices must not be jailbroken or rooted.
-  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.native
+  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.undefined
 }
 object IosCompliancePolicy {
   

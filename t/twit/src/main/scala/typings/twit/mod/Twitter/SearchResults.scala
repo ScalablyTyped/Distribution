@@ -2,15 +2,13 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResults extends StObject {
   
-  var search_metadata: Metadata = js.native
+  var search_metadata: Metadata
   
-  var statuses: js.Array[Status] = js.native
+  var statuses: js.Array[Status]
 }
 object SearchResults {
   

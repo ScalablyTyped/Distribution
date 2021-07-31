@@ -3,22 +3,20 @@ package typings.qiniuJs.mod
 import typings.qiniuJs.qiniuJsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
   // 错误信息，包含错误码，当后端返回提示信息时也会有相应的错误信息。
-  var isRequestError: js.UndefOr[`true`] = js.native
+  var isRequestError: js.UndefOr[`true`] = js.undefined
   
   // 请求错误状态码，只有在 err.isRequestError 为 true 的时候才有效。可查阅码值对应说明。
-  var message: String = js.native
+  var message: String
   
   // 用于区分是否 xhr 请求错误；当 xhr 请求出现错误并且后端通过 HTTP 状态码返回了错误信息时，该参数为 true；否则为 undefined 。
-  var reqId: String = js.native
+  var reqId: String
 }
 object Error {
   

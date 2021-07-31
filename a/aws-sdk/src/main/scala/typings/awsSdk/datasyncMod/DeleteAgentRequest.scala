@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAgentRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the agent to delete. Use the ListAgents operation to return a list of agents for your account and AWS Region.
     */
-  var AgentArn: typings.awsSdk.datasyncMod.AgentArn = js.native
+  var AgentArn: typings.awsSdk.datasyncMod.AgentArn
 }
 object DeleteAgentRequest {
   

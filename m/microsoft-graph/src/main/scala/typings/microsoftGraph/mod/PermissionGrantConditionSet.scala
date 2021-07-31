@@ -2,27 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PermissionGrantConditionSet extends Entity {
+trait PermissionGrantConditionSet
+  extends StObject
+     with Entity {
   
-  var clientApplicationIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var clientApplicationIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var clientApplicationPublisherIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var clientApplicationPublisherIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var clientApplicationTenantIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var clientApplicationTenantIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var clientApplicationsFromVerifiedPublisherOnly: js.UndefOr[NullableOption[Boolean]] = js.native
+  var clientApplicationsFromVerifiedPublisherOnly: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var permissionClassification: js.UndefOr[NullableOption[String]] = js.native
+  var permissionClassification: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var permissionType: js.UndefOr[NullableOption[PermissionType]] = js.native
+  var permissionType: js.UndefOr[NullableOption[PermissionType]] = js.undefined
   
-  var permissions: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var permissions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var resourceApplication: js.UndefOr[NullableOption[String]] = js.native
+  var resourceApplication: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PermissionGrantConditionSet {
   

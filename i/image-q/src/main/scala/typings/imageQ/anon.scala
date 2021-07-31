@@ -2,19 +2,17 @@ package typings.imageQ
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var L: Double = js.native
+    var L: Double
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
   }
   object A {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait B extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object B {
     
@@ -69,16 +66,15 @@ object anon {
     }
   }
   
-  @js.native
   trait G extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object G {
     
@@ -105,14 +101,13 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object H {
     
@@ -136,14 +131,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object X {
     

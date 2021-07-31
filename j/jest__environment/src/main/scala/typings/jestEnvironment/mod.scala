@@ -62,7 +62,6 @@ import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -96,14 +95,13 @@ object mod {
   }
   
   /* Inlined std.Partial<{  console :std.Console,   docblockPragmas :std.Record<string, string | std.Array<string>>,   testPath :@jest/types.@jest/types.Config.Path}> */
-  @js.native
   trait EnvironmentContext extends StObject {
     
-    var console: js.UndefOr[Console] = js.native
+    var console: js.UndefOr[Console] = js.undefined
     
-    var docblockPragmas: js.UndefOr[Record[String, String | js.Array[String]]] = js.native
+    var docblockPragmas: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
     
-    var testPath: js.UndefOr[Path] = js.native
+    var testPath: js.UndefOr[Path] = js.undefined
   }
   object EnvironmentContext {
     
@@ -144,7 +142,7 @@ object mod {
       *
       * @deprecated Use `expect.extend` instead
       */
-    def addMatchers(matchers: Record[String, _]): Unit = js.native
+    def addMatchers(matchers: Record[String, js.Any]): Unit = js.native
     
     /**
       * Advances all timers by msToRun milliseconds. All pending "macro-tasks"
@@ -213,7 +211,7 @@ object mod {
       * this behavior.
       */
     def doMock(moduleName: String): Jest = js.native
-    def doMock(moduleName: String, moduleFactory: js.Function0[_]): Jest = js.native
+    def doMock(moduleName: String, moduleFactory: js.Function0[js.Any]): Jest = js.native
     
     /**
       * Indicates that the module system should never return a mocked version
@@ -258,7 +256,7 @@ object mod {
     /**
       * Determines if the given function is a mocked function.
       */
-    def isMockFunction(fn: js.Function1[/* repeated */ js.Any, _]): /* is std.ReturnType<@jest/environment.@jest/environment.JestMockFn> */ Boolean = js.native
+    def isMockFunction(fn: js.Function1[/* repeated */ js.Any, js.Any]): /* is std.ReturnType<@jest/environment.@jest/environment.JestMockFn> */ Boolean = js.native
     
     /**
       * `jest.isolateModules(fn)` goes a step further than `jest.resetModules()`
@@ -272,9 +270,9 @@ object mod {
       * Mocks a module with an auto-mocked version when it is being required.
       */
     def mock(moduleName: String): Jest = js.native
-    def mock(moduleName: String, moduleFactory: js.UndefOr[scala.Nothing], options: Virtual): Jest = js.native
-    def mock(moduleName: String, moduleFactory: js.Function0[_]): Jest = js.native
-    def mock(moduleName: String, moduleFactory: js.Function0[_], options: Virtual): Jest = js.native
+    def mock(moduleName: String, moduleFactory: js.Function0[js.Any]): Jest = js.native
+    def mock(moduleName: String, moduleFactory: js.Function0[js.Any], options: Virtual): Jest = js.native
+    def mock(moduleName: String, moduleFactory: Unit, options: Virtual): Jest = js.native
     
     /**
       * Returns the actual module instead of a mock, bypassing all checks on
@@ -440,32 +438,60 @@ object mod {
   
   type Module = NodeModule
   
-  type ModuleWrapper = js.ThisFunction8[
-    /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ /* this */ js.Any, 
-    /* module */ Module, 
-    /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ /* exports */ js.Any, 
-    /* require */ Require with (js.Function1[/* id */ String, _]), 
-    /* __dirname */ String, 
-    /* __filename */ String, 
-    /* global */ Global, 
-    /* jest */ js.UndefOr[Jest], 
-    /* repeated */ js.UndefOr[
-      (js.Function0[
-        js.Any | js.Array[js.Any] | Boolean | Double | Error | EvalError | RangeError | ReferenceError | String | SyntaxError | TypeError | URIError | Unit
-      ]) | (ItBase with FnCall) | (js.Function2[
-        (/* callback */ js.Function1[/* repeated */ js.Any, Unit]) | (/* s */ String), 
-        (/* repeated */ js.Any) | (/* radix */ Double), 
-        Double | Immediate
-      ]) | WeakSetConstructor | (js.Function1[
-        (/* uriComponent */ Boolean) | (/* number */ Double) | (/* callback */ js.Function0[Unit]) | (/* immediateId */ Immediate) | (/* pattern */ RegExp) | (/* encodedURI */ String) | (/* timeoutId */ Timeout), 
-        js.Any | Boolean | Double | js.Function | RegExp | String | Unit
-      ]) | Uint16ArrayConstructor | typings.node.NodeJS.Global | ArrayBufferConstructor | Double | Uint32ArrayConstructor | SetConstructor | (Describe with (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float32ArrayConstructor | Int8ArrayConstructor | JSON | (ItBaseconcurrentItConcurr with FnCall) | js.Function | (ItConcurrent with FnCall) | Int32ArrayConstructor | DataViewConstructor | CoverageMapData | (TypeofBuffer with (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])) | Uint8ClampedArrayConstructor | Math | PromiseConstructor | Int16ArrayConstructor | (js.Function3[
-        /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-        /* ms */ Double, 
-        /* repeated */ js.Any, 
-        Timeout
-      ]) | Jasmine | js.Any | (DescribeBase with (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float64ArrayConstructor | Uint8ArrayConstructor | WeakMapConstructor | (HookBase with FnCallFnTimeout) | MapConstructor
-    ], 
-    js.Any
-  ]
+  @js.native
+  trait ModuleWrapper extends StObject {
+    
+    def apply(
+      module: Module,
+      exports: /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ js.Any,
+      require: Require & (js.Function1[/* id */ String, js.Any]),
+      __dirname: String,
+      __filename: String,
+      global: Global,
+      jest: Unit,
+      extraGlobals: (js.UndefOr[
+          (js.Function0[
+            js.Any | js.Array[js.Any] | Boolean | Double | Error | EvalError | RangeError | ReferenceError | String | SyntaxError | TypeError | URIError | Unit
+          ]) | (ItBase & FnCall) | (js.Function2[
+            (/* callback */ js.Function1[/* repeated */ js.Any, Unit]) | (/* s */ String), 
+            (/* repeated */ js.Any) | (/* radix */ Double), 
+            Double | Immediate
+          ]) | WeakSetConstructor | (js.Function1[
+            (/* uriComponent */ Boolean) | (/* number */ Double) | (/* callback */ js.Function0[Unit]) | (/* immediateId */ Immediate) | (/* pattern */ RegExp) | (/* encodedURI */ String) | (/* timeoutId */ Timeout), 
+            js.Any | Boolean | Double | js.Function | RegExp | String | Unit
+          ]) | (TypeofBuffer & (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])) | Uint16ArrayConstructor | typings.node.NodeJS.Global | ArrayBufferConstructor | Double | Uint32ArrayConstructor | SetConstructor | (Describe & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float32ArrayConstructor | Int8ArrayConstructor | JSON | (ItBaseconcurrentItConcurr & FnCall) | js.Function | (ItConcurrent & FnCall) | Int32ArrayConstructor | DataViewConstructor | CoverageMapData | Uint8ClampedArrayConstructor | Math | PromiseConstructor | Int16ArrayConstructor | (js.Function3[
+            /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
+            /* ms */ Double, 
+            /* repeated */ js.Any, 
+            Timeout
+          ]) | Jasmine | js.Any | (DescribeBase & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float64ArrayConstructor | Uint8ArrayConstructor | WeakMapConstructor | (HookBase & FnCallFnTimeout) | MapConstructor
+        ])*
+    ): js.Any = js.native
+    def apply(
+      module: Module,
+      exports: /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ js.Any,
+      require: Require & (js.Function1[/* id */ String, js.Any]),
+      __dirname: String,
+      __filename: String,
+      global: Global,
+      jest: Jest,
+      extraGlobals: (js.UndefOr[
+          (js.Function0[
+            js.Any | js.Array[js.Any] | Boolean | Double | Error | EvalError | RangeError | ReferenceError | String | SyntaxError | TypeError | URIError | Unit
+          ]) | (ItBase & FnCall) | (js.Function2[
+            (/* callback */ js.Function1[/* repeated */ js.Any, Unit]) | (/* s */ String), 
+            (/* repeated */ js.Any) | (/* radix */ Double), 
+            Double | Immediate
+          ]) | WeakSetConstructor | (js.Function1[
+            (/* uriComponent */ Boolean) | (/* number */ Double) | (/* callback */ js.Function0[Unit]) | (/* immediateId */ Immediate) | (/* pattern */ RegExp) | (/* encodedURI */ String) | (/* timeoutId */ Timeout), 
+            js.Any | Boolean | Double | js.Function | RegExp | String | Unit
+          ]) | (TypeofBuffer & (Instantiable2[/* str */ String, /* encoding */ js.UndefOr[BufferEncoding], Buffer])) | Uint16ArrayConstructor | typings.node.NodeJS.Global | ArrayBufferConstructor | Double | Uint32ArrayConstructor | SetConstructor | (Describe & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float32ArrayConstructor | Int8ArrayConstructor | JSON | (ItBaseconcurrentItConcurr & FnCall) | js.Function | (ItConcurrent & FnCall) | Int32ArrayConstructor | DataViewConstructor | CoverageMapData | Uint8ClampedArrayConstructor | Math | PromiseConstructor | Int16ArrayConstructor | (js.Function3[
+            /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
+            /* ms */ Double, 
+            /* repeated */ js.Any, 
+            Timeout
+          ]) | Jasmine | js.Any | (DescribeBase & (js.Function2[/* blockName */ BlockName, /* blockFn */ BlockFn, Unit])) | Float64ArrayConstructor | Uint8ArrayConstructor | WeakMapConstructor | (HookBase & FnCallFnTimeout) | MapConstructor
+        ])*
+    ): js.Any = js.native
+  }
 }

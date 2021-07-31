@@ -4,36 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openidClient.anon.X5tS256
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrospectionResponse
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var aud: js.UndefOr[String | js.Array[String]] = js.native
+  var aud: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
-  var cnf: js.UndefOr[X5tS256] = js.native
+  var cnf: js.UndefOr[X5tS256] = js.undefined
   
-  var exp: js.UndefOr[Double] = js.native
+  var exp: js.UndefOr[Double] = js.undefined
   
-  var iat: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.undefined
   
-  var iss: js.UndefOr[String] = js.native
+  var iss: js.UndefOr[String] = js.undefined
   
-  var jti: js.UndefOr[String] = js.native
+  var jti: js.UndefOr[String] = js.undefined
   
-  var scope: String = js.native
+  var scope: String
   
-  var sid: js.UndefOr[String] = js.native
+  var sid: js.UndefOr[String] = js.undefined
   
-  var token_type: js.UndefOr[String] = js.native
+  var token_type: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object IntrospectionResponse {
   

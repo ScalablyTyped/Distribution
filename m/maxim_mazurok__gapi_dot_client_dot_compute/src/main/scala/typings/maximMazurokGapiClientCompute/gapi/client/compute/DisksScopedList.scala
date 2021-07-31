@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisksScopedList extends StObject {
   
   /** [Output Only] A list of disks contained in this scope. */
-  var disks: js.UndefOr[js.Array[Disk]] = js.native
+  var disks: js.UndefOr[js.Array[Disk]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of disks when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object DisksScopedList {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartWorkspacesResult extends StObject {
   
   /**
     * Information about the WorkSpaces that could not be started.
     */
-  var FailedRequests: js.UndefOr[FailedStartWorkspaceRequests] = js.native
+  var FailedRequests: js.UndefOr[FailedStartWorkspaceRequests] = js.undefined
 }
 object StartWorkspacesResult {
   

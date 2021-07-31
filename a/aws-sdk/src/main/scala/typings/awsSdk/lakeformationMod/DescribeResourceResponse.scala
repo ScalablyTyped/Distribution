@@ -2,16 +2,14 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourceResponse extends StObject {
   
   /**
     * A structure containing information about an AWS Lake Formation resource.
     */
-  var ResourceInfo: js.UndefOr[typings.awsSdk.lakeformationMod.ResourceInfo] = js.native
+  var ResourceInfo: js.UndefOr[typings.awsSdk.lakeformationMod.ResourceInfo] = js.undefined
 }
 object DescribeResourceResponse {
   

@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDOMXmlSerializer extends StObject {
   
   @JSName("MSHTML.IDOMXmlSerializer_typekey")
-  var MSHTMLDotIDOMXmlSerializer_typekey: IDOMXmlSerializer = js.native
+  var MSHTMLDotIDOMXmlSerializer_typekey: IDOMXmlSerializer
   
-  def serializeToString(pNode: IHTMLDOMNode): String = js.native
+  def serializeToString(pNode: IHTMLDOMNode): String
 }
 object IDOMXmlSerializer {
   

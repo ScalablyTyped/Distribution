@@ -4,14 +4,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectOptionMod {
   
   @JSImport("@ionic/core/dist/types/components/select-option/select-option", "SelectOption")
   @js.native
-  class SelectOption () extends ComponentInterface {
+  class SelectOption ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, the user cannot interact with the select option. This property does not apply when `interface="action-sheet"` as `ion-action-sheet` does not allow for disabled buttons.

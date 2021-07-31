@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactSidebar.anon.PartialCSSStyleDeclaratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,48 +16,47 @@ object mod {
   
   type Sidebar = Component[SidebarProps, js.Object, js.Any]
   
-  @js.native
   trait SidebarProps extends StObject {
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentId: js.UndefOr[String] = js.native
+    var contentId: js.UndefOr[String] = js.undefined
     
-    var defaultSidebarWidth: js.UndefOr[Double] = js.native
+    var defaultSidebarWidth: js.UndefOr[Double] = js.undefined
     
-    var docked: js.UndefOr[Boolean] = js.native
+    var docked: js.UndefOr[Boolean] = js.undefined
     
-    var dragToggleDistance: js.UndefOr[Double] = js.native
+    var dragToggleDistance: js.UndefOr[Double] = js.undefined
     
-    var onSetOpen: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
+    var onSetOpen: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayId: js.UndefOr[String] = js.native
+    var overlayId: js.UndefOr[String] = js.undefined
     
-    var pullRight: js.UndefOr[Boolean] = js.native
+    var pullRight: js.UndefOr[Boolean] = js.undefined
     
-    var rootClassName: js.UndefOr[String] = js.native
+    var rootClassName: js.UndefOr[String] = js.undefined
     
-    var rootId: js.UndefOr[String] = js.native
+    var rootId: js.UndefOr[String] = js.undefined
     
-    var shadow: js.UndefOr[Boolean] = js.native
+    var shadow: js.UndefOr[Boolean] = js.undefined
     
-    var sidebar: js.UndefOr[ReactNode] = js.native
+    var sidebar: js.UndefOr[ReactNode] = js.undefined
     
-    var sidebarClassName: js.UndefOr[String] = js.native
+    var sidebarClassName: js.UndefOr[String] = js.undefined
     
-    var sidebarId: js.UndefOr[String] = js.native
+    var sidebarId: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[SidebarStyles] = js.native
+    var styles: js.UndefOr[SidebarStyles] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var touchHandleWidth: js.UndefOr[Double] = js.native
+    var touchHandleWidth: js.UndefOr[Double] = js.undefined
     
-    var transitions: js.UndefOr[Boolean] = js.native
+    var transitions: js.UndefOr[Boolean] = js.undefined
   }
   object SidebarProps {
     
@@ -193,18 +191,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SidebarStyles extends StObject {
     
-    var content: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var content: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
-    var dragHandle: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var dragHandle: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
-    var overlay: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var overlay: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
-    var root: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var root: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
-    var sidebar: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var sidebar: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
   }
   object SidebarStyles {
     

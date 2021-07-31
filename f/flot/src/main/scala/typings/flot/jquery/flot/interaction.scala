@@ -2,13 +2,11 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait interaction extends StObject {
   
-  var redrawOverlayInterval: js.UndefOr[Double] = js.native
+  var redrawOverlayInterval: js.UndefOr[Double] = js.undefined
 }
 object interaction {
   

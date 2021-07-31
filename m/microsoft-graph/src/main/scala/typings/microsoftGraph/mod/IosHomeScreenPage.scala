@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosHomeScreenPage extends StObject {
   
   // Name of the page
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.
-  var icons: js.UndefOr[js.Array[IosHomeScreenItem]] = js.native
+  var icons: js.UndefOr[js.Array[IosHomeScreenItem]] = js.undefined
 }
 object IosHomeScreenPage {
   

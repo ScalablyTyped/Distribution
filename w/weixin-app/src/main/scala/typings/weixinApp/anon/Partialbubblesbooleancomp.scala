@@ -2,18 +2,16 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  bubbles :boolean,   composed :boolean,   capturePhase :boolean}> */
-@js.native
 trait Partialbubblesbooleancomp extends StObject {
   
-  var bubbles: js.UndefOr[Boolean] = js.native
+  var bubbles: js.UndefOr[Boolean] = js.undefined
   
-  var capturePhase: js.UndefOr[Boolean] = js.native
+  var capturePhase: js.UndefOr[Boolean] = js.undefined
   
-  var composed: js.UndefOr[Boolean] = js.native
+  var composed: js.UndefOr[Boolean] = js.undefined
 }
 object Partialbubblesbooleancomp {
   

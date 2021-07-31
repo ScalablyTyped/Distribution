@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudprivatecatalogMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudprivatecatalog", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object cloudprivatecatalogMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object cloudprivatecatalogMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "cloudprivatecatalog")
-  @js.native
-  def cloudprivatecatalog(options: Options): Cloudprivatecatalog = js.native
-  @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "cloudprivatecatalog")
-  @js.native
-  def cloudprivatecatalog_v1beta1(version: v1beta1): Cloudprivatecatalog = js.native
+  @scala.inline
+  def cloudprivatecatalog(options: Options): Cloudprivatecatalog = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprivatecatalog")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudprivatecatalog]
+  
+  @scala.inline
+  def cloudprivatecatalog_v1beta1(version: v1beta1): Cloudprivatecatalog = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprivatecatalog")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudprivatecatalog]
 }

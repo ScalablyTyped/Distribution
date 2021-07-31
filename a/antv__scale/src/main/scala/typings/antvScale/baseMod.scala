@@ -5,14 +5,15 @@ import typings.antvScale.typesMod.Tick
 import typings.antvScale.typesMod.TickMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
   @JSImport("@antv/scale/lib/base", JSImport.Default)
   @js.native
-  abstract class default protected () extends Scale {
+  abstract class default protected ()
+    extends StObject
+       with Scale {
     def this(cfg: ScaleConfig) = this()
   }
   
@@ -29,14 +30,14 @@ object baseMod {
     /** 0~1转定义域 */
     /* protected */ def calcValue(percent: Double, min: Double, max: Double): Double = js.native
     
-    /* protected */ def calculateTicks(): js.Array[_] = js.native
+    /* protected */ def calculateTicks(): js.Array[js.Any] = js.native
     
     /** 重新初始化 */
     def change(cfg: ScaleConfig): Unit = js.native
     
     var field: js.UndefOr[String] = js.native
     
-    var formatter: js.UndefOr[js.Function2[/* v */ js.Any, /* k */ js.UndefOr[Double], _]] = js.native
+    var formatter: js.UndefOr[js.Function2[/* v */ js.Any, /* k */ js.UndefOr[Double], js.Any]] = js.native
     
     /* protected */ def getConfig(key: js.Any): js.Any = js.native
     
@@ -99,7 +100,7 @@ object baseMod {
     
     var tickMethod: js.UndefOr[String | TickMethod] = js.native
     
-    var ticks: js.UndefOr[js.Array[_]] = js.native
+    var ticks: js.UndefOr[js.Array[js.Any]] = js.native
     
     def translate(v: js.Any): js.Any = js.native
     
@@ -108,6 +109,6 @@ object baseMod {
       */
     var `type`: String = js.native
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.native
   }
 }

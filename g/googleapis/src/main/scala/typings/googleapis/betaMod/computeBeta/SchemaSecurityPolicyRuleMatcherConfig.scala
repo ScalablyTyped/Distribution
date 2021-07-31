@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSecurityPolicyRuleMatcherConfig extends StObject {
   
   /**
     * CIDR IP address range.
     */
-  var srcIpRanges: js.UndefOr[js.Array[String]] = js.native
+  var srcIpRanges: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSecurityPolicyRuleMatcherConfig {
   

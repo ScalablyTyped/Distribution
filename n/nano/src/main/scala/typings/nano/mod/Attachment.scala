@@ -4,16 +4,15 @@ import typings.node.Buffer
 import typings.node.processMod.global.NodeJS.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Attachment extends StObject {
   
-  def destroy(docname: String, attname: String): js.Promise[_] = js.native
-  def destroy(docname: String, attname: String, callback: Callback[_]): js.Promise[_] = js.native
-  def destroy(docname: String, attname: String, params: js.Any): js.Promise[_] = js.native
-  def destroy(docname: String, attname: String, params: js.Any, callback: Callback[_]): js.Promise[_] = js.native
+  def destroy(docname: String, attname: String): js.Promise[js.Any] = js.native
+  def destroy(docname: String, attname: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def destroy(docname: String, attname: String, params: js.Any): js.Promise[js.Any] = js.native
+  def destroy(docname: String, attname: String, params: js.Any, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   def get(docname: String, attname: String): js.Promise[Buffer] = js.native
   def get(docname: String, attname: String, callback: Callback[Buffer]): js.Promise[Buffer] = js.native

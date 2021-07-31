@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataSetRevisionsRequest extends StObject {
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
   
   /**
     * The maximum number of results returned by a single call.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.dataexchangeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.dataexchangeMod.MaxResults] = js.undefined
   
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListDataSetRevisionsRequest {
   

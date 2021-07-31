@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSavedQueriesResponse extends StObject {
   
   /** Page token to retrieve the next page of results in the list. If this is empty, then there are no more saved queries to list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of output saved queries. */
-  var savedQueries: js.UndefOr[js.Array[SavedQuery]] = js.native
+  var savedQueries: js.UndefOr[js.Array[SavedQuery]] = js.undefined
 }
 object ListSavedQueriesResponse {
   

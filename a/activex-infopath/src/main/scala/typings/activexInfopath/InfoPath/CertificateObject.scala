@@ -2,22 +2,20 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateObject extends StObject {
   
-  val ExpirationDate: String = js.native
+  val ExpirationDate: String
   
   @JSName("InfoPath.CertificateObject_typekey")
-  var InfoPathDotCertificateObject_typekey: CertificateObject = js.native
+  var InfoPathDotCertificateObject_typekey: CertificateObject
   
-  val IssuedBy: String = js.native
+  val IssuedBy: String
   
-  val IssuedTo: String = js.native
+  val IssuedTo: String
   
-  val Status: XdCertificateStatus = js.native
+  val Status: XdCertificateStatus
 }
 object CertificateObject {
   

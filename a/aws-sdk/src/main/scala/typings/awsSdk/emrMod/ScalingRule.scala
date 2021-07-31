@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingRule extends StObject {
   
   /**
     * The conditions that trigger an automatic scaling activity.
     */
-  var Action: ScalingAction = js.native
+  var Action: ScalingAction
   
   /**
     * A friendly, more verbose description of the automatic scaling rule.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name used to identify an automatic scaling rule. Rule names must be unique within a scaling policy.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The CloudWatch alarm definition that determines when automatic scaling activity is triggered.
     */
-  var Trigger: ScalingTrigger = js.native
+  var Trigger: ScalingTrigger
 }
 object ScalingRule {
   

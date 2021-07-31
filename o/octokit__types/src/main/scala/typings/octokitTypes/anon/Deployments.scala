@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployments extends StObject {
   
-  var deployments: String = js.native
+  var deployments: String
   
-  var metadata: String = js.native
+  var metadata: String
   
-  var pull_requests: String = js.native
+  var pull_requests: String
   
-  var statuses: String = js.native
+  var statuses: String
 }
 object Deployments {
   

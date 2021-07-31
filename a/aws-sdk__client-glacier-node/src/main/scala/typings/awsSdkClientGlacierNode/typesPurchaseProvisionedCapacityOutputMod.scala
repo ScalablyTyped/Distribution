@@ -4,24 +4,24 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPurchaseProvisionedCapacityOutputMod {
   
-  @js.native
-  trait PurchaseProvisionedCapacityOutput extends _OutputTypesUnion {
+  trait PurchaseProvisionedCapacityOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The ID that identifies the provisioned capacity unit.</p>
       */
-    var capacityId: js.UndefOr[String] = js.native
+    var capacityId: js.UndefOr[String] = js.undefined
   }
   object PurchaseProvisionedCapacityOutput {
     

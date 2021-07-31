@@ -4,14 +4,14 @@ import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPathMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dome extends IModel {
+trait Dome
+  extends StObject
+     with IModel {
   
   @JSName("paths")
-  var paths_Dome: IPathMap = js.native
+  var paths_Dome: IPathMap
 }
 object Dome {
   

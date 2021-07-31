@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSplitterMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -24,60 +22,60 @@ trait IgSplitterMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Collapse the specified panel.
     *
     * @param index Specifies the index of the panel to collapse.
     */
-  def collapseAt(index: js.Object): Unit = js.native
+  def collapseAt(index: js.Object): Unit
   
   /**
     * Destroys the igSplitter widget
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Expand the specified panel by index.
     *
     * @param index Specifies the index of the panel to expand.
     */
-  def expandAt(index: js.Object): Unit = js.native
+  def expandAt(index: js.Object): Unit
   
   /**
     * Retrieves the jQuery element of the first panel.
     */
-  def firstPanel(): js.Object = js.native
+  def firstPanel(): js.Object
   
   /**
     * Refresh splitter layout, use this method to re-render the splitter if some changes to the layout are applied.
     */
-  def refreshLayout(): Unit = js.native
+  def refreshLayout(): Unit
   
   /**
     * Retrieves the jQuery element of the second panel.
     */
-  def secondPanel(): js.Object = js.native
+  def secondPanel(): js.Object
   
   /**
     * You can set new size of the first panel after the splitter is rendered.
     *
     * @param size Specifies the new size of the first panel.
     */
-  def setFirstPanelSize(size: js.Object): Unit = js.native
+  def setFirstPanelSize(size: js.Object): Unit
   
   /**
     * You can set new size of the second panel after the splitter is rendered.
     *
     * @param size Specifies the new size of the second panel.
     */
-  def setSecondPanelSize(size: js.Object): Unit = js.native
+  def setSecondPanelSize(size: js.Object): Unit
   
   /**
     * Returns the element that represents this widget.
     */
-  def widget(): js.Object = js.native
+  def widget(): js.Object
 }
 object IgSplitterMethods {
   

@@ -2,18 +2,16 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceVersion extends StObject {
   
   /**
     * The version of the rest API.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var versionUrl: js.UndefOr[String] = js.native
+  var versionUrl: js.UndefOr[String] = js.undefined
 }
 object ServiceVersion {
   

@@ -2,15 +2,15 @@ package typings.reactAsync.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchOptions[T] extends AsyncOptions[T] {
+trait FetchOptions[T]
+  extends StObject
+     with AsyncOptions[T] {
   
-  var defer: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.undefined
   
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
 }
 object FetchOptions {
   
@@ -21,7 +21,7 @@ object FetchOptions {
   }
   
   @scala.inline
-  implicit class FetchOptionsMutableBuilder[Self <: FetchOptions[_], T] (val x: Self with FetchOptions[T]) extends AnyVal {
+  implicit class FetchOptionsMutableBuilder[Self <: FetchOptions[?], T] (val x: Self & FetchOptions[T]) extends AnyVal {
     
     @scala.inline
     def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])

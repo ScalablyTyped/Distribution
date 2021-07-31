@@ -6,61 +6,61 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsRoutesList extends StandardParameters {
+trait ParamsResourceProjectsLocationsRoutesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional encoded string to continue paging.
     */
-  var continue: js.UndefOr[String] = js.native
+  var continue: js.UndefOr[String] = js.undefined
   
   /**
     * Allows to filter resources based on a specific value for a field name.
     * Send this in a query string format. i.e. 'metadata.name%3Dlorem'. Not
     * currently used by Cloud Run.
     */
-  var fieldSelector: js.UndefOr[String] = js.native
+  var fieldSelector: js.UndefOr[String] = js.undefined
   
   /**
     * Not currently used by Cloud Run.
     */
-  var includeUninitialized: js.UndefOr[Boolean] = js.native
+  var includeUninitialized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows to filter resources based on a label. Supported operations are =,
     * !=, exists, in, and notIn.
     */
-  var labelSelector: js.UndefOr[String] = js.native
+  var labelSelector: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of records that should be returned.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * The project ID or project number from which the routes should be listed.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The baseline resource version from which the list or watch operation
     * should start. Not currently used by Cloud Run.
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Flag that indicates that the client expects to watch this resource as
     * well. Not currently used by Cloud Run.
     */
-  var watch: js.UndefOr[Boolean] = js.native
+  var watch: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceProjectsLocationsRoutesList {
   

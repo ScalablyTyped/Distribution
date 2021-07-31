@@ -2,19 +2,17 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftIconColor extends StObject {
   
-  var leftIconColor: js.UndefOr[String] = js.native
+  var leftIconColor: js.UndefOr[String] = js.undefined
   
-  var nestedLevelDepth: js.UndefOr[Double] = js.native
+  var nestedLevelDepth: js.UndefOr[Double] = js.undefined
   
-  var rightIconColor: js.UndefOr[String] = js.native
+  var rightIconColor: js.UndefOr[String] = js.undefined
   
-  var secondaryTextColor: js.UndefOr[String] = js.native
+  var secondaryTextColor: js.UndefOr[String] = js.undefined
 }
 object LeftIconColor {
   

@@ -7,11 +7,12 @@ import typings.ejWebAll.ej.datavisualization.HeatMap.LegendOrientation
 import typings.ejWebAll.ej.datavisualization.HeatMap.TextDecoration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeatMapLegend extends Widget_ {
+trait HeatMapLegend
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -20,23 +21,22 @@ trait HeatMapLegend extends Widget_ {
 }
 object HeatMapLegend {
   
-  @js.native
   trait ColorMappingCollection extends StObject {
     
     /** Specifies the color of the heatmap legend data.
       * @Default {white}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the label properties of the heatmap legend color.
       * @Default {null}
       */
-    var label: js.UndefOr[ColorMappingCollectionLabel] = js.native
+    var label: js.UndefOr[ColorMappingCollectionLabel] = js.undefined
     
     /** Specifies the color values of the heatmap legend column data.
       * @Default {0}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ColorMappingCollection {
     
@@ -69,42 +69,41 @@ object HeatMapLegend {
     }
   }
   
-  @js.native
   trait ColorMappingCollectionLabel extends StObject {
     
     /** Enables/disables the bold style of the heatmap legend label.
       * @Default {false}
       */
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the font color of the heatmap legend label.
       * @Default {black}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the font family of the heatmap legend label.
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font size of the heatmap legend label.
       * @Default {10}
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Enables/disables the italic style of the heatmap legend label.
       * @Default {false}
       */
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     /** specifies the text value of the heatmap legend label.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the text style of the heatmap legend label.
       * @Default {ej.HeatMap.TextDecoration.None}
       */
-    var textDecoration: js.UndefOr[TextDecoration | String] = js.native
+    var textDecoration: js.UndefOr[TextDecoration | String] = js.undefined
   }
   object ColorMappingCollectionLabel {
     
@@ -161,43 +160,42 @@ object HeatMapLegend {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the color values of the column data.
       * @Default {[]}
       */
-    var colorMappingCollection: js.UndefOr[js.Array[ColorMappingCollection]] = js.native
+    var colorMappingCollection: js.UndefOr[js.Array[ColorMappingCollection]] = js.undefined
     
     /** Specifies the height of the heatmap legend.
       * @Default {null}
       */
-    var height: js.UndefOr[js.Any] = js.native
+    var height: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies can enable responsive mode or not for heatmap legend.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the legend mode as gradient or list.
       * @Default {ej.HeatMap.LegendMode.Gradient}
       */
-    var legendMode: js.UndefOr[LegendMode | String] = js.native
+    var legendMode: js.UndefOr[LegendMode | String] = js.undefined
     
     /** Specifies the orientation of the heatmap legend
       * @Default {ej.HeatMap.LegendOrientation.Horizontal}
       */
-    var orientation: js.UndefOr[LegendOrientation | String] = js.native
+    var orientation: js.UndefOr[LegendOrientation | String] = js.undefined
     
     /** Specifies whether the cell label can be shown or not.
       * @Default {false}
       */
-    var showLabel: js.UndefOr[Boolean] = js.native
+    var showLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the width of the heatmap legend.
       * @Default {null}
       */
-    var width: js.UndefOr[js.Any] = js.native
+    var width: js.UndefOr[js.Any] = js.undefined
   }
   object Model {
     

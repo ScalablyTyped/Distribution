@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtrudedArea extends StObject {
   
   /** The area representing the footprint of the extruded area. */
-  var area: js.UndefOr[Area] = js.native
+  var area: js.UndefOr[Area] = js.undefined
   
   /** The z-value in local tile coordinates where the extruded area ends. */
-  var maxZ: js.UndefOr[Double] = js.native
+  var maxZ: js.UndefOr[Double] = js.undefined
   
   /**
     * The z-value in local tile coordinates where the extruded area begins. This is non-zero for extruded areas that begin off the ground. For example, a building with a skybridge may
     * have an extruded area component with a non-zero min_z.
     */
-  var minZ: js.UndefOr[Double] = js.native
+  var minZ: js.UndefOr[Double] = js.undefined
 }
 object ExtrudedArea {
   

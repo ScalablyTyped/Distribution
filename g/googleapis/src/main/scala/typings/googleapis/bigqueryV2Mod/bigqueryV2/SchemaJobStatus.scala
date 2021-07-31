@@ -2,17 +2,15 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobStatus extends StObject {
   
   /**
     * [Output-only] Final error result of the job. If present, indicates that
     * the job has completed and was unsuccessful.
     */
-  var errorResult: js.UndefOr[SchemaErrorProto] = js.native
+  var errorResult: js.UndefOr[SchemaErrorProto] = js.undefined
   
   /**
     * [Output-only] The first errors encountered during the running of the job.
@@ -20,12 +18,12 @@ trait SchemaJobStatus extends StObject {
     * to stop. Errors here do not necessarily mean that the job has completed
     * or was unsuccessful.
     */
-  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.undefined
   
   /**
     * [Output-only] Running state of the job.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaJobStatus {
   

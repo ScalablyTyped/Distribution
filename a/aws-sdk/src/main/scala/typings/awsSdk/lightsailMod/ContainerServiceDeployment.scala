@@ -2,36 +2,34 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerServiceDeployment extends StObject {
   
   /**
     * An object that describes the configuration for the containers of the deployment.
     */
-  var containers: js.UndefOr[ContainerMap] = js.native
+  var containers: js.UndefOr[ContainerMap] = js.undefined
   
   /**
     * The timestamp when the deployment was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * An object that describes the endpoint of the deployment.
     */
-  var publicEndpoint: js.UndefOr[ContainerServiceEndpoint] = js.native
+  var publicEndpoint: js.UndefOr[ContainerServiceEndpoint] = js.undefined
   
   /**
     * The state of the deployment. A deployment can be in one of the following states:    Activating - The deployment is being created.    Active - The deployment was successfully created, and it's currently running on the container service. The container service can have only one deployment in an active state at a time.    Inactive - The deployment was previously successfully created, but it is not currently running on the container service.    Failed - The deployment failed. Use the GetContainerLog action to view the log events for the containers in the deployment to try to determine the reason for the failure.  
     */
-  var state: js.UndefOr[ContainerServiceDeploymentState] = js.native
+  var state: js.UndefOr[ContainerServiceDeploymentState] = js.undefined
   
   /**
     * The version number of the deployment.
     */
-  var version: js.UndefOr[integer] = js.native
+  var version: js.UndefOr[integer] = js.undefined
 }
 object ContainerServiceDeployment {
   

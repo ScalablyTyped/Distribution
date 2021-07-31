@@ -5,10 +5,9 @@ import typings.cathoQuantum.anon.`8`
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thumbnailMod {
   
-  type Thumbnail = ComponentType[Alt] with `8`
+  type Thumbnail = ComponentType[Alt] & `8`
 }

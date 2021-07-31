@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicebroker/v1beta1", "servicebroker_v1beta1.Resource$Projects$Brokers$Instances")
@@ -35,7 +34,7 @@ class ResourceProjectsBrokersInstances protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(params: ParamsResourceProjectsBrokersInstancesGet): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(
     params: ParamsResourceProjectsBrokersInstancesGet,
@@ -71,7 +70,7 @@ class ResourceProjectsBrokersInstances protected () extends StObject {
     */
   def getLast_operation(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Operation]): Unit = js.native
-  def getLast_operation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
+  def getLast_operation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(params: ParamsResourceProjectsBrokersInstancesGetlastOperation): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(
     params: ParamsResourceProjectsBrokersInstancesGetlastOperation,
@@ -106,7 +105,7 @@ class ResourceProjectsBrokersInstances protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersInstancesList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersInstancesList,

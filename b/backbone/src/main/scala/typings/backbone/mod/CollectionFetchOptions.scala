@@ -2,15 +2,14 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionFetchOptions
-  extends CollectionSetOptions
-     with PersistenceOptions {
+  extends StObject
+     with PersistenceOptions
+     with CollectionSetOptions {
   
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
 }
 object CollectionFetchOptions {
   

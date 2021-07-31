@@ -2,71 +2,69 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongoDbSettings extends StObject {
   
   /**
     *  The authentication mechanism you use to access the MongoDB source endpoint. For the default value, in MongoDB version 2.x, "default" is "mongodb_cr". For MongoDB version 3.x or later, "default" is "scram_sha_1". This setting isn't used when AuthType is set to "no".
     */
-  var AuthMechanism: js.UndefOr[AuthMechanismValue] = js.native
+  var AuthMechanism: js.UndefOr[AuthMechanismValue] = js.undefined
   
   /**
     *  The MongoDB database name. This setting isn't used when AuthType is set to "no".  The default is "admin".
     */
-  var AuthSource: js.UndefOr[String] = js.native
+  var AuthSource: js.UndefOr[String] = js.undefined
   
   /**
     *  The authentication type you use to access the MongoDB source endpoint. When when set to "no", user name and password parameters are not used and can be empty. 
     */
-  var AuthType: js.UndefOr[AuthTypeValue] = js.native
+  var AuthType: js.UndefOr[AuthTypeValue] = js.undefined
   
   /**
     *  The database name on the MongoDB source endpoint. 
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     *  Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to "one".  Must be a positive value greater than 0. Default value is 1000.
     */
-  var DocsToInvestigate: js.UndefOr[String] = js.native
+  var DocsToInvestigate: js.UndefOr[String] = js.undefined
   
   /**
     *  Specifies the document ID. Use this setting when NestingLevel is set to "none".  Default value is "false". 
     */
-  var ExtractDocId: js.UndefOr[String] = js.native
+  var ExtractDocId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     *  Specifies either document or table mode.  Default value is "none". Specify "none" to use document mode. Specify "one" to use table mode.
     */
-  var NestingLevel: js.UndefOr[NestingLevelValue] = js.native
+  var NestingLevel: js.UndefOr[NestingLevelValue] = js.undefined
   
   /**
     *  The password for the user account you use to access the MongoDB source endpoint. 
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     *  The port value for the MongoDB source endpoint. 
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     *  The name of the server on the MongoDB source endpoint. 
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     * The user name you use to access the MongoDB source endpoint. 
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object MongoDbSettings {
   

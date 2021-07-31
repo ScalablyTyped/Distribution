@@ -2,28 +2,26 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbSignUpOptions extends StObject {
   
   /** name of the connection where the user will be created */
-  var connection: String = js.native
+  var connection: String
   
   /** user email address */
-  var email: String = js.native
+  var email: String
   
   /** user password */
-  var password: String = js.native
+  var password: String
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /** additional signup attributes used for creating the user. Will be stored in `user_metadata` */
-  var userMetadata: js.UndefOr[js.Any] = js.native
+  var userMetadata: js.UndefOr[js.Any] = js.undefined
   
   /** User desired username. Required if you use a database connection and you have enabled `Requires Username` */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object DbSignUpOptions {
   

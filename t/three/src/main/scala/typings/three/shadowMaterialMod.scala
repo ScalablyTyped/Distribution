@@ -5,7 +5,6 @@ import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shadowMaterialMod {
@@ -21,10 +20,11 @@ object shadowMaterialMod {
     var color: Color = js.native
   }
   
-  @js.native
-  trait ShadowMaterialParameters extends MaterialParameters {
+  trait ShadowMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
   }
   object ShadowMaterialParameters {
     

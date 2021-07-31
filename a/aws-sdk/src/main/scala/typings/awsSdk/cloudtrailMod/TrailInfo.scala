@@ -2,26 +2,24 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrailInfo extends StObject {
   
   /**
     * The AWS region in which a trail was created.
     */
-  var HomeRegion: js.UndefOr[String] = js.native
+  var HomeRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a trail.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of a trail.
     */
-  var TrailARN: js.UndefOr[String] = js.native
+  var TrailARN: js.UndefOr[String] = js.undefined
 }
 object TrailInfo {
   

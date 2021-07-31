@@ -2,15 +2,13 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraProps extends StObject {
   
-  var extraProps: RenderBodyComponent = js.native
+  var extraProps: RenderBodyComponent
   
-  var restProps: ClassName = js.native
+  var restProps: ClassName
 }
 object ExtraProps {
   

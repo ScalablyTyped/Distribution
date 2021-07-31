@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.imageTypesMod.IImageProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
@@ -45,11 +44,11 @@ object imageMod {
   object ImageCoverStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle & Double] = js.native
     
-    /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape with Double = js.native
+    /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape & Double = js.native
     
-    /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait with Double = js.native
+    /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Image", "ImageFit")
@@ -57,19 +56,19 @@ object imageMod {
   object ImageFit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageFit with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageFit & Double] = js.native
     
-    /* 0 */ val center: typings.officeUiFabricReact.imageTypesMod.ImageFit.center with Double = js.native
+    /* 0 */ val center: typings.officeUiFabricReact.imageTypesMod.ImageFit.center & Double = js.native
     
-    /* 5 */ val centerContain: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerContain with Double = js.native
+    /* 5 */ val centerContain: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerContain & Double = js.native
     
-    /* 4 */ val centerCover: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerCover with Double = js.native
+    /* 4 */ val centerCover: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerCover & Double = js.native
     
-    /* 1 */ val contain: typings.officeUiFabricReact.imageTypesMod.ImageFit.contain with Double = js.native
+    /* 1 */ val contain: typings.officeUiFabricReact.imageTypesMod.ImageFit.contain & Double = js.native
     
-    /* 2 */ val cover: typings.officeUiFabricReact.imageTypesMod.ImageFit.cover with Double = js.native
+    /* 2 */ val cover: typings.officeUiFabricReact.imageTypesMod.ImageFit.cover & Double = js.native
     
-    /* 3 */ val none: typings.officeUiFabricReact.imageTypesMod.ImageFit.none with Double = js.native
+    /* 3 */ val none: typings.officeUiFabricReact.imageTypesMod.ImageFit.none & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Image", "ImageLoadState")
@@ -77,14 +76,14 @@ object imageMod {
   object ImageLoadState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageLoadState with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageLoadState & Double] = js.native
     
-    /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error with Double = js.native
+    /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error & Double = js.native
     
-    /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded with Double = js.native
+    /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded & Double = js.native
     
-    /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded with Double = js.native
+    /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded & Double = js.native
     
-    /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded with Double = js.native
+    /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded & Double = js.native
   }
 }

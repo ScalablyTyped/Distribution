@@ -2,21 +2,19 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browser extends StObject {
   
-  var browser: js.Any = js.native
+  var browser: js.Any
   
-  var ieMobile: Boolean = js.native
+  var ieMobile: Boolean
   
-  var isIE: Double | Boolean = js.native
+  var isIE: Double | Boolean
   
-  var mobile: Boolean = js.native
+  var mobile: Boolean
   
-  var version: js.Any = js.native
+  var version: js.Any
 }
 object Browser {
   

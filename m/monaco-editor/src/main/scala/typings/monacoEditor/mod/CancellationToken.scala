@@ -2,7 +2,6 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,12 +20,12 @@ trait CancellationToken extends StObject {
     *
     * @event
     */
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): IDisposable = js.native
   def onCancellationRequested(
-    listener: js.Function1[/* e */ js.Any, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Any, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[IDisposable]
   ): IDisposable = js.native
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): IDisposable = js.native
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[IDisposable]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[IDisposable]): IDisposable = js.native
 }

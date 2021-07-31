@@ -2,106 +2,104 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightsailDistribution extends StObject {
   
   /**
     * Indicates whether the bundle that is currently applied to your distribution, specified using the distributionName parameter, can be changed to another bundle. Use the UpdateDistributionBundle action to change your distribution's bundle.
     */
-  var ableToUpdateBundle: js.UndefOr[Boolean] = js.native
+  var ableToUpdateBundle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The alternate domain names of the distribution.
     */
-  var alternativeDomainNames: js.UndefOr[StringList] = js.native
+  var alternativeDomainNames: js.UndefOr[StringList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the distribution.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the bundle currently applied to the distribution.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * An object that describes the cache behavior settings of the distribution.
     */
-  var cacheBehaviorSettings: js.UndefOr[CacheSettings] = js.native
+  var cacheBehaviorSettings: js.UndefOr[CacheSettings] = js.undefined
   
   /**
     * An array of objects that describe the per-path cache behavior of the distribution.
     */
-  var cacheBehaviors: js.UndefOr[CacheBehaviorList] = js.native
+  var cacheBehaviors: js.UndefOr[CacheBehaviorList] = js.undefined
   
   /**
     * The name of the SSL/TLS certificate attached to the distribution, if any.
     */
-  var certificateName: js.UndefOr[ResourceName] = js.native
+  var certificateName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The timestamp when the distribution was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * An object that describes the default cache behavior of the distribution.
     */
-  var defaultCacheBehavior: js.UndefOr[CacheBehavior] = js.native
+  var defaultCacheBehavior: js.UndefOr[CacheBehavior] = js.undefined
   
   /**
     * The domain name of the distribution.
     */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the distribution is enabled.
     */
-  var isEnabled: js.UndefOr[Boolean] = js.native
+  var isEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object that describes the location of the distribution, such as the AWS Region and Availability Zone.  Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the distribution.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * An object that describes the origin resource of the distribution, such as a Lightsail instance or load balancer. The distribution pulls, caches, and serves content from the origin.
     */
-  var origin: js.UndefOr[Origin] = js.native
+  var origin: js.UndefOr[Origin] = js.undefined
   
   /**
     * The public DNS of the origin.
     */
-  var originPublicDNS: js.UndefOr[String] = js.native
+  var originPublicDNS: js.UndefOr[String] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., Distribution).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The status of the distribution.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The support code. Include this code in your email to support when you have questions about your Lightsail distribution. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object LightsailDistribution {
   

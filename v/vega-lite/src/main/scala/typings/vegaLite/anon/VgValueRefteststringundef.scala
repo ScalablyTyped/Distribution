@@ -3,28 +3,26 @@ package typings.vegaLite.anon
 import typings.vegaLite.vegaSchemaMod.VgValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/vega.schema.VgValueRef & {  test :string | undefined} */
-@js.native
 trait VgValueRefteststringundef extends StObject {
   
-  var band: js.UndefOr[Boolean | Double | VgValueRef] = js.native
+  var band: js.UndefOr[Boolean | Double | VgValueRef] = js.undefined
   
-  var field: js.UndefOr[String | Datum] = js.native
+  var field: js.UndefOr[String | Datum] = js.undefined
   
-  var mult: js.UndefOr[Double] = js.native
+  var mult: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double | VgValueRef] = js.native
+  var offset: js.UndefOr[Double | VgValueRef] = js.undefined
   
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
   
-  var signal: js.UndefOr[String] = js.native
+  var signal: js.UndefOr[String] = js.undefined
   
-  var test: js.UndefOr[String] = js.native
+  var test: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[typings.vegaLite.channeldefMod.Value[Null]] = js.native
+  var value: js.UndefOr[typings.vegaLite.channeldefMod.Value[Null]] = js.undefined
 }
 object VgValueRefteststringundef {
   

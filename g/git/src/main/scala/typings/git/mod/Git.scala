@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Git")
@@ -106,8 +105,8 @@ class Git protected () extends StObject {
   def ls_files(options: js.Any, args: js.Any*): Unit = js.native
   
   def ls_tree(treeish: js.Any, callback: js.Function): Unit = js.native
-  def ls_tree(treeish: js.Any, paths: js.Array[_], callback: js.Function): Unit = js.native
-  def ls_tree(treeish: js.Any, paths: js.Array[_], options: js.Any, callback: js.Function): Unit = js.native
+  def ls_tree(treeish: js.Any, paths: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def ls_tree(treeish: js.Any, paths: js.Array[js.Any], options: js.Any, callback: js.Function): Unit = js.native
   
   // last element is callback
   def put_raw_object(args: js.Any*): Unit = js.native
@@ -128,7 +127,7 @@ class Git protected () extends StObject {
   def rev_parse(options: js.Any, str: String, callback: js.Function): Unit = js.native
   def rev_parse(options: js.Any, str: String, level: Double, callback: js.Function): Unit = js.native
   
-  def select_existing_objects(objectIds: js.Array[_], callback: js.Function): Unit = js.native
+  def select_existing_objects(objectIds: js.Array[js.Any], callback: js.Function): Unit = js.native
   
   def transform_options(options: js.Any): js.Array[String] = js.native
 }

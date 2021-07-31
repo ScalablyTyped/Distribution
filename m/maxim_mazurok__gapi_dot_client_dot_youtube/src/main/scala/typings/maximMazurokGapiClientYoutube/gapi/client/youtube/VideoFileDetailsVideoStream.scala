@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoFileDetailsVideoStream extends StObject {
   
   /** The video content's display aspect ratio, which specifies the aspect ratio in which the video should be displayed. */
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   /** The video stream's bitrate, in bits per second. */
-  var bitrateBps: js.UndefOr[String] = js.native
+  var bitrateBps: js.UndefOr[String] = js.undefined
   
   /** The video codec that the stream uses. */
-  var codec: js.UndefOr[String] = js.native
+  var codec: js.UndefOr[String] = js.undefined
   
   /** The video stream's frame rate, in frames per second. */
-  var frameRateFps: js.UndefOr[Double] = js.native
+  var frameRateFps: js.UndefOr[Double] = js.undefined
   
   /** The encoded video content's height in pixels. */
-  var heightPixels: js.UndefOr[Double] = js.native
+  var heightPixels: js.UndefOr[Double] = js.undefined
   
   /** The amount that YouTube needs to rotate the original source content to properly display the video. */
-  var rotation: js.UndefOr[String] = js.native
+  var rotation: js.UndefOr[String] = js.undefined
   
   /** A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code. */
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
   
   /** The encoded video content's width in pixels. You can calculate the video's encoding aspect ratio as width_pixels / height_pixels. */
-  var widthPixels: js.UndefOr[Double] = js.native
+  var widthPixels: js.UndefOr[Double] = js.undefined
 }
 object VideoFileDetailsVideoStream {
   

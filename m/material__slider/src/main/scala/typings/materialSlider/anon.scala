@@ -7,26 +7,24 @@ import typings.materialSlider.typesMod.TickMark
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@material/slider.@material/slider/adapter.MDCSliderAdapter> */
-  @js.native
   trait PartialMDCSliderAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addThumbClass: js.UndefOr[js.Function2[/* className */ String, /* thumb */ Thumb, Unit]] = js.native
+    var addThumbClass: js.UndefOr[js.Function2[/* className */ String, /* thumb */ Thumb, Unit]] = js.undefined
     
     var deregisterBodyEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var deregisterEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var deregisterThumbEventHandler: js.UndefOr[
         js.Function3[
@@ -35,47 +33,47 @@ object anon {
           /* handler */ SpecificEventListener[EventType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var deregisterWindowEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var emitChangeEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.native
+    var emitChangeEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var emitDragEndEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.native
+    var emitDragEndEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var emitDragStartEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.native
+    var emitDragStartEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var emitInputEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.native
+    var emitInputEvent: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var focusThumb: js.UndefOr[js.Function1[/* thumb */ Thumb, Unit]] = js.native
+    var focusThumb: js.UndefOr[js.Function1[/* thumb */ Thumb, Unit]] = js.undefined
     
-    var getAttribute: js.UndefOr[js.Function1[/* attribute */ String, String | Null]] = js.native
+    var getAttribute: js.UndefOr[js.Function1[/* attribute */ String, String | Null]] = js.undefined
     
-    var getBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var getBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var getThumbAttribute: js.UndefOr[js.Function2[/* attribute */ String, /* thumb */ Thumb, String | Null]] = js.native
+    var getThumbAttribute: js.UndefOr[js.Function2[/* attribute */ String, /* thumb */ Thumb, String | Null]] = js.undefined
     
-    var getThumbBoundingClientRect: js.UndefOr[js.Function1[/* thumb */ Thumb, ClientRect]] = js.native
+    var getThumbBoundingClientRect: js.UndefOr[js.Function1[/* thumb */ Thumb, ClientRect]] = js.undefined
     
-    var getThumbKnobWidth: js.UndefOr[js.Function1[/* thumb */ Thumb, Double]] = js.native
+    var getThumbKnobWidth: js.UndefOr[js.Function1[/* thumb */ Thumb, Double]] = js.undefined
     
-    var getValueToAriaValueTextFn: js.UndefOr[js.Function0[(js.Function1[/* value */ Double, String]) | Null]] = js.native
+    var getValueToAriaValueTextFn: js.UndefOr[js.Function0[(js.Function1[/* value */ Double, String]) | Null]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isThumbFocused: js.UndefOr[js.Function1[/* thumb */ Thumb, Boolean]] = js.native
+    var isThumbFocused: js.UndefOr[js.Function1[/* thumb */ Thumb, Boolean]] = js.undefined
     
     var registerBodyEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var registerEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var registerThumbEventHandler: js.UndefOr[
         js.Function3[
@@ -84,35 +82,35 @@ object anon {
           /* handler */ SpecificEventListener[EventType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var registerWindowEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeThumbClass: js.UndefOr[js.Function2[/* className */ String, /* thumb */ Thumb, Unit]] = js.native
+    var removeThumbClass: js.UndefOr[js.Function2[/* className */ String, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var removeThumbStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* thumb */ Thumb, Unit]] = js.native
+    var removeThumbStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var removeTrackActiveStyleProperty: js.UndefOr[js.Function1[/* propertyName */ String, Unit]] = js.native
+    var removeTrackActiveStyleProperty: js.UndefOr[js.Function1[/* propertyName */ String, Unit]] = js.undefined
     
-    var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.native
+    var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.undefined
     
     var setThumbAttribute: js.UndefOr[
         js.Function3[/* attribute */ String, /* value */ String, /* thumb */ Thumb, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var setThumbStyleProperty: js.UndefOr[
         js.Function3[/* propertyName */ String, /* value */ String, /* thumb */ Thumb, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var setTrackActiveStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.native
+    var setTrackActiveStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
     
-    var setValueIndicatorText: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.native
+    var setValueIndicatorText: js.UndefOr[js.Function2[/* value */ Double, /* thumb */ Thumb, Unit]] = js.undefined
     
-    var updateTickMarks: js.UndefOr[js.Function1[/* tickMarks */ js.Array[TickMark], Unit]] = js.native
+    var updateTickMarks: js.UndefOr[js.Function1[/* tickMarks */ js.Array[TickMark], Unit]] = js.undefined
   }
   object PartialMDCSliderAdapter {
     
@@ -335,10 +333,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SkipInitialUIUpdate extends StObject {
     
-    var skipInitialUIUpdate: js.UndefOr[Boolean] = js.native
+    var skipInitialUIUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object SkipInitialUIUpdate {
     
@@ -359,10 +356,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SkipUpdateUI extends StObject {
     
-    var skipUpdateUI: js.UndefOr[Boolean] = js.native
+    var skipUpdateUI: js.UndefOr[Boolean] = js.undefined
   }
   object SkipUpdateUI {
     

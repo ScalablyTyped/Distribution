@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobAppProductCodeRule extends Win32LobAppRule {
+trait Win32LobAppProductCodeRule
+  extends StObject
+     with Win32LobAppRule {
   
   // The product code of the app.
-  var productCode: js.UndefOr[NullableOption[String]] = js.native
+  var productCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The product version comparison value.
-  var productVersion: js.UndefOr[NullableOption[String]] = js.native
+  var productVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The product version comparison operator. Possible values are: notConfigured, equal, notEqual, greaterThan,
     * greaterThanOrEqual, lessThan, lessThanOrEqual.
     */
-  var productVersionOperator: js.UndefOr[Win32LobAppRuleOperator] = js.native
+  var productVersionOperator: js.UndefOr[Win32LobAppRuleOperator] = js.undefined
 }
 object Win32LobAppProductCodeRule {
   

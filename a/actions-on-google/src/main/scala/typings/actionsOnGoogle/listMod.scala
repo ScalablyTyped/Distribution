@@ -9,7 +9,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OptionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsListSelectListItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -26,14 +25,13 @@ object listMod {
   
   type ListArgument = OptionArgument
   
-  @js.native
   trait ListOptions extends StObject {
     
     /** @public */
-    var items: (OptionItems[OptionItem | String]) | js.Array[GoogleActionsV2UiElementsListSelectListItem] = js.native
+    var items: (OptionItems[OptionItem | String]) | js.Array[GoogleActionsV2UiElementsListSelectListItem]
     
     /** @public */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ListOptions {
     

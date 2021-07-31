@@ -2,26 +2,24 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  removeUnusedComponents :boolean,   removeComments :boolean,   removeStylableDirectives :boolean,   classNameOptimizations :boolean,   shortNamespaces :boolean,   removeEmptyNodes :boolean,   minify :boolean}> */
-@js.native
 trait PartialremoveUnusedCompon extends StObject {
   
-  var classNameOptimizations: js.UndefOr[Boolean] = js.native
+  var classNameOptimizations: js.UndefOr[Boolean] = js.undefined
   
-  var minify: js.UndefOr[Boolean] = js.native
+  var minify: js.UndefOr[Boolean] = js.undefined
   
-  var removeComments: js.UndefOr[Boolean] = js.native
+  var removeComments: js.UndefOr[Boolean] = js.undefined
   
-  var removeEmptyNodes: js.UndefOr[Boolean] = js.native
+  var removeEmptyNodes: js.UndefOr[Boolean] = js.undefined
   
-  var removeStylableDirectives: js.UndefOr[Boolean] = js.native
+  var removeStylableDirectives: js.UndefOr[Boolean] = js.undefined
   
-  var removeUnusedComponents: js.UndefOr[Boolean] = js.native
+  var removeUnusedComponents: js.UndefOr[Boolean] = js.undefined
   
-  var shortNamespaces: js.UndefOr[Boolean] = js.native
+  var shortNamespaces: js.UndefOr[Boolean] = js.undefined
 }
 object PartialremoveUnusedCompon {
   

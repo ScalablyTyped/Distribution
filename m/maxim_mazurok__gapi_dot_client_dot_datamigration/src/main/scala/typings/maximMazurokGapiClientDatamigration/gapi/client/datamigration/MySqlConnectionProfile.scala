@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MySqlConnectionProfile extends StObject {
   
   /** If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source. */
-  var cloudSqlId: js.UndefOr[String] = js.native
+  var cloudSqlId: js.UndefOr[String] = js.undefined
   
   /** Required. The IP or hostname of the source MySQL database. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database. This field is not returned on request, and the value is
     * encrypted when stored in Database Migration Service.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** Output only. Indicates If this connection profile password is stored. */
-  var passwordSet: js.UndefOr[Boolean] = js.native
+  var passwordSet: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The network port of the source MySQL database. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** SSL configuration for the destination to connect to the source database. */
-  var ssl: js.UndefOr[SslConfig] = js.native
+  var ssl: js.UndefOr[SslConfig] = js.undefined
   
   /** Required. The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service. */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object MySqlConnectionProfile {
   

@@ -3,36 +3,35 @@ package typings.antvComponent.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItem
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * 唯一值，用于动画或者查找
     * @type {string}
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 图形标记
     * @type {object|string}
     */
-  var marker: js.UndefOr[js.Object | String] = js.native
+  var marker: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * 名称
     * @type {string}
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * 值
     * @type {any}
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ListItem {
   

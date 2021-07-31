@@ -4,66 +4,64 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /**
     * Links to other related objects.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The author of the comment.
     */
-  var author: IdentityRef = js.native
+  var author: IdentityRef
   
   /**
     * The comment type at the time of creation.
     */
-  var commentType: CommentType = js.native
+  var commentType: CommentType
   
   /**
     * The comment content.
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * The comment ID. IDs start at 1 and are unique to a pull request.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Whether or not this comment was soft-deleted.
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * The date the comment's content was last updated.
     */
-  var lastContentUpdatedDate: Date = js.native
+  var lastContentUpdatedDate: Date
   
   /**
     * The date the comment was last updated.
     */
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
   /**
     * The ID of the parent comment. This is used for replies.
     */
-  var parentCommentId: Double = js.native
+  var parentCommentId: Double
   
   /**
     * The date the comment was first published.
     */
-  var publishedDate: Date = js.native
+  var publishedDate: Date
   
   /**
     * A list of the users who have liked this comment.
     */
-  var usersLiked: js.Array[IdentityRef] = js.native
+  var usersLiked: js.Array[IdentityRef]
 }
 object Comment {
   

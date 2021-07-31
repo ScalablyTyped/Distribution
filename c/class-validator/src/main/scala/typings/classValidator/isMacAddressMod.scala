@@ -5,35 +5,31 @@ import typings.std.PropertyDecorator
 import typings.validator.mod.validator.IsMACAddressOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMacAddressMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsMacAddress", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsMacAddress", "IS_MAC_ADDRESS")
   @js.native
   val IS_MAC_ADDRESS: /* "isMacAddress" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: js.UndefOr[scala.Nothing], validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: IsMACAddressOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(optionsArg: IsMACAddressOptions, validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "IsMACAddress")
-  @js.native
-  def IsMACAddress_(validationOptionsArg: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsMACAddress_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: Unit, validationOptionsArg: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any], validationOptionsArg.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: IsMACAddressOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(optionsArg: IsMACAddressOptions, validationOptionsArg: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(optionsArg.asInstanceOf[js.Any], validationOptionsArg.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsMACAddress_(validationOptionsArg: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMACAddress")(validationOptionsArg.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "isMACAddress")
-  @js.native
-  def isMACAddress(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsMacAddress", "isMACAddress")
-  @js.native
-  def isMACAddress(value: js.Any, options: IsMACAddressOptions): Boolean = js.native
+  @scala.inline
+  def isMACAddress(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMACAddress")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMACAddress(value: js.Any, options: IsMACAddressOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMACAddress")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

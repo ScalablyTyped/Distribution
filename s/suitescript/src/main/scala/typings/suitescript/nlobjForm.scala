@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 @js.native
-trait nlobjForm extends /**
+trait nlobjForm
+  extends StObject
+     with /**
   *
   * @return
   */
@@ -46,200 +47,8 @@ Instantiable0[nlobjForm] {
     * @param value
     */
   def addCredentialField(name: String, label: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(name: String, label: String, website: js.UndefOr[scala.Nothing], scriptId: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(name: String, label: String, website: js.UndefOr[scala.Nothing], scriptId: String, value: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: String,
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: String,
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: js.UndefOr[scala.Nothing],
-    scriptId: String,
-    value: String,
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
   def addCredentialField(name: String, label: String, website: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(name: String, label: String, website: String, scriptId: js.UndefOr[scala.Nothing], value: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: js.UndefOr[scala.Nothing],
-    value: String,
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
   def addCredentialField(name: String, label: String, website: String, scriptId: String): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: String,
-    value: js.UndefOr[scala.Nothing],
-    entityMatch: Boolean,
-    tab: String
-  ): nlobjField = js.native
   def addCredentialField(name: String, label: String, website: String, scriptId: String, value: String): nlobjField = js.native
   def addCredentialField(
     name: String,
@@ -247,15 +56,6 @@ Instantiable0[nlobjForm] {
     website: String,
     scriptId: String,
     value: String,
-    entityMatch: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addCredentialField(
-    name: String,
-    label: String,
-    website: String,
-    scriptId: String,
-    value: String,
     entityMatch: Boolean
   ): nlobjField = js.native
   def addCredentialField(
@@ -265,6 +65,152 @@ Instantiable0[nlobjForm] {
     scriptId: String,
     value: String,
     entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: String,
+    value: String,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: String, scriptId: String, value: Unit, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: String,
+    value: Unit,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: String,
+    value: Unit,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: String, scriptId: Unit, value: String): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: String, scriptId: Unit, value: String, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: Unit,
+    value: String,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: Unit,
+    value: String,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: String, scriptId: Unit, value: Unit, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: Unit,
+    value: Unit,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: String,
+    scriptId: Unit,
+    value: Unit,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: String): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: String, value: String): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: String, value: String, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: String,
+    value: String,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: String,
+    value: String,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: String, value: Unit, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: String,
+    value: Unit,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: String,
+    value: Unit,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: Unit, value: String): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: Unit, value: String, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: Unit,
+    value: String,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: Unit,
+    value: String,
+    entityMatch: Unit,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(name: String, label: String, website: Unit, scriptId: Unit, value: Unit, entityMatch: Boolean): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: Unit,
+    value: Unit,
+    entityMatch: Boolean,
+    tab: String
+  ): nlobjField = js.native
+  def addCredentialField(
+    name: String,
+    label: String,
+    website: Unit,
+    scriptId: Unit,
+    value: Unit,
+    entityMatch: Unit,
     tab: String
   ): nlobjField = js.native
   
@@ -287,19 +233,13 @@ Instantiable0[nlobjForm] {
     * @return
     */
   def addField(name: String, `type`: String): nlobjField = js.native
-  def addField(
-    name: String,
-    `type`: String,
-    label: js.UndefOr[scala.Nothing],
-    sourceOrRadio: js.UndefOr[scala.Nothing],
-    tab: String
-  ): nlobjField = js.native
-  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], sourceOrRadio: js.Any): nlobjField = js.native
-  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], sourceOrRadio: js.Any, tab: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: String): nlobjField = js.native
-  def addField(name: String, `type`: String, label: String, sourceOrRadio: js.UndefOr[scala.Nothing], tab: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any): nlobjField = js.native
   def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any, tab: String): nlobjField = js.native
+  def addField(name: String, `type`: String, label: String, sourceOrRadio: Unit, tab: String): nlobjField = js.native
+  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: js.Any): nlobjField = js.native
+  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: js.Any, tab: String): nlobjField = js.native
+  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: Unit, tab: String): nlobjField = js.native
   
   /**
     * add a field group to the form.
@@ -584,21 +524,18 @@ object nlobjForm {
     /**
       *
       */
-    @js.native
     trait AddButtonRet extends StObject
     
     // nlobjForm.prototype.addFieldGroup.!ret
     /**
       *
       */
-    @js.native
     trait AddFieldGroupRet extends StObject
     
     // nlobjForm.prototype.addTab.!ret
     /**
       *
       */
-    @js.native
     trait AddTabRet extends StObject
   }
 }

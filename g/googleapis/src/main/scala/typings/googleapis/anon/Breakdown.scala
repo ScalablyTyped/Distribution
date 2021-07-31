@@ -5,25 +5,23 @@ import typings.googleapis.v31Mod.dfareportingV31.SchemaDimensionValue
 import typings.googleapis.v31Mod.dfareportingV31.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breakdown extends StObject {
   
-  var breakdown: js.UndefOr[js.Array[SchemaSortedDimension]] = js.native
+  var breakdown: js.UndefOr[js.Array[SchemaSortedDimension]] = js.undefined
   
-  var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  var dateRange: js.UndefOr[SchemaDateRange] = js.undefined
   
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
-  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var overlapMetricNames: js.UndefOr[js.Array[String]] = js.native
+  var overlapMetricNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pivoted: js.UndefOr[Boolean] = js.native
+  var pivoted: js.UndefOr[Boolean] = js.undefined
 }
 object Breakdown {
   

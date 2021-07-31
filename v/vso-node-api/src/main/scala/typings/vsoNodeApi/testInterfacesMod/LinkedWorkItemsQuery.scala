@@ -2,23 +2,21 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedWorkItemsQuery extends StObject {
   
-  var automatedTestNames: js.Array[String] = js.native
+  var automatedTestNames: js.Array[String]
   
-  var planId: Double = js.native
+  var planId: Double
   
-  var pointIds: js.Array[Double] = js.native
+  var pointIds: js.Array[Double]
   
-  var suiteIds: js.Array[Double] = js.native
+  var suiteIds: js.Array[Double]
   
-  var testCaseIds: js.Array[Double] = js.native
+  var testCaseIds: js.Array[Double]
   
-  var workItemCategory: String = js.native
+  var workItemCategory: String
 }
 object LinkedWorkItemsQuery {
   

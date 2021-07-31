@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Regions")
@@ -30,7 +29,7 @@ class ResourceRegions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaRegionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaRegionsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRegionsListResponse] = js.native
   def list(params: ParamsResourceRegionsList): GaxiosPromise[SchemaRegionsListResponse] = js.native
   def list(params: ParamsResourceRegionsList, callback: BodyResponseCallback[SchemaRegionsListResponse]): Unit = js.native
   def list(

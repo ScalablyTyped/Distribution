@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILicenseStatus extends StObject {
   
-  def ClearLicenseCode(): Unit = js.native
+  def ClearLicenseCode(): Unit
   
-  val EvaluationDaysLeft: Double = js.native
+  val EvaluationDaysLeft: Double
   
-  val EvaluationMode: Boolean = js.native
+  val EvaluationMode: Boolean
   
-  val Expired: Boolean = js.native
+  val Expired: Boolean
   
-  val LicenseCode: String = js.native
+  val LicenseCode: String
   
-  val NumOfConcurrentUserLicenses: Double = js.native
+  val NumOfConcurrentUserLicenses: Double
   
-  val NumOfNamedUserLicenses: Double = js.native
+  val NumOfNamedUserLicenses: Double
   
-  val NumOfReadonlyLicenses: Double = js.native
+  val NumOfReadonlyLicenses: Double
   
-  val SerialNumber: String = js.native
+  val SerialNumber: String
 }
 object ILicenseStatus {
   

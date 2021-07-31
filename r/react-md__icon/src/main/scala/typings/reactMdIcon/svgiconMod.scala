@@ -6,29 +6,29 @@ import typings.react.mod.RefAttributes
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgiconMod {
   
   @JSImport("@react-md/icon/types/SVGIcon", "SVGIcon")
   @js.native
-  val SVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
+  val SVGIcon: ForwardRefExoticComponent[SVGIconProps & RefAttributes[SVGSVGElement]] = js.native
   
-  @js.native
-  trait SVGIconProps extends HTMLAttributes[SVGSVGElement] {
+  trait SVGIconProps
+    extends StObject
+       with HTMLAttributes[SVGSVGElement] {
     
     /**
       * Boolean if the icon should use the dense spec.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the SVG should gain the `focusable` attribute. This is disabled
       * by default since IE11 and Edge actually default this to true and keyboard's
       * will tab focus all SVGs.
       */
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This should be a link to a part of an SVG sprite map. So normally one of
@@ -42,7 +42,7 @@ object svgiconMod {
       * > NOTE: IE **does not support** external SVGs. Please see the demo for more
       * > details.
       */
-    var use: js.UndefOr[String] = js.native
+    var use: js.UndefOr[String] = js.undefined
     
     /**
       * The `viewBox` attribute allows you to specify that a given set of graphics
@@ -62,13 +62,13 @@ object svgiconMod {
       * the top left corner (0, 0) to the bottom right (25, 20) and each unit will
       * be worth `10px`.
       */
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
     /**
       * An optional `xmlns` string to provide. The `use` prop will not work without
       * this prop defined.
       */
-    var xmlns: js.UndefOr[String] = js.native
+    var xmlns: js.UndefOr[String] = js.undefined
   }
   object SVGIconProps {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volume extends StObject {
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported */
-  var configMap: js.UndefOr[ConfigMapVolumeSource] = js.native
+  var configMap: js.UndefOr[ConfigMapVolumeSource] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported Volume's name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported */
-  var secret: js.UndefOr[SecretVolumeSource] = js.native
+  var secret: js.UndefOr[SecretVolumeSource] = js.undefined
 }
 object Volume {
   

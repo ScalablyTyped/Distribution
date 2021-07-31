@@ -2,35 +2,33 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarcodeOptions extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[BarcodeBorder] = js.native
+  var border: js.UndefOr[BarcodeBorder] = js.undefined
   
-  var checksum: js.UndefOr[Boolean] = js.native
+  var checksum: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[BarcodePadding] = js.native
+  var padding: js.UndefOr[BarcodePadding] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[BarcodeText] = js.native
+  var text: js.UndefOr[BarcodeText] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BarcodeOptions {
   

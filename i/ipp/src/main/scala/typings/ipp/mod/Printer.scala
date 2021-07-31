@@ -19,7 +19,6 @@ import typings.ipp.ippStrings.`Validate-Job`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ipp", "Printer")
@@ -31,7 +30,7 @@ class Printer protected () extends StObject {
   def execute(operation: PrinterOpertaion): Unit = js.native
   def execute(
     operation: PrinterOpertaion,
-    message: js.UndefOr[scala.Nothing],
+    message: Unit,
     callback: js.Function2[/* error */ Error, /* response */ FullResponse, Unit]
   ): Unit = js.native
   def execute(operation: PrinterOpertaion, message: FullRequest): Unit = js.native

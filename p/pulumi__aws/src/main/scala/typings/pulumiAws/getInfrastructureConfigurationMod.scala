@@ -5,35 +5,35 @@ import typings.pulumiAws.outputMod.imagebuilder.GetInfrastructureConfigurationLo
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInfrastructureConfigurationMod {
   
-  @JSImport("@pulumi/aws/imagebuilder/getInfrastructureConfiguration", "getInfrastructureConfiguration")
+  @JSImport("@pulumi/aws/imagebuilder/getInfrastructureConfiguration", JSImport.Namespace)
   @js.native
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = js.native
-  @JSImport("@pulumi/aws/imagebuilder/getInfrastructureConfiguration", "getInfrastructureConfiguration")
-  @js.native
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  @scala.inline
+  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  
   trait GetInfrastructureConfigurationArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the infrastructure configuration.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Key-value map of resource tags for the infrastructure created by the infrastructure configuration.
       */
-    val resourceTags: js.UndefOr[StringDictionary[String]] = js.native
+    val resourceTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Key-value map of resource tags for the infrastructure configuration.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetInfrastructureConfigurationArgs {
     
@@ -63,82 +63,81 @@ object getInfrastructureConfigurationMod {
     }
   }
   
-  @js.native
   trait GetInfrastructureConfigurationResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Date the infrastructure configuration was updated.
       */
-    val dateCreated: String = js.native
+    val dateCreated: String
     
-    val dateUpdated: String = js.native
+    val dateUpdated: String
     
     /**
       * Description of the infrastructure configuration.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Name of the IAM Instance Profile associated with the configuration.
       */
-    val instanceProfileName: String = js.native
+    val instanceProfileName: String
     
     /**
       * Set of EC2 Instance Types associated with the configuration.
       */
-    val instanceTypes: js.Array[String] = js.native
+    val instanceTypes: js.Array[String]
     
     /**
       * Name of the EC2 Key Pair associated with the configuration.
       */
-    val keyPair: String = js.native
+    val keyPair: String
     
     /**
       * Nested list of logging settings.
       */
-    val loggings: js.Array[GetInfrastructureConfigurationLogging] = js.native
+    val loggings: js.Array[GetInfrastructureConfigurationLogging]
     
     /**
       * Name of the infrastructure configuration.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Key-value map of resource tags for the infrastructure created by the infrastructure configuration.
       */
-    val resourceTags: StringDictionary[String] = js.native
+    val resourceTags: StringDictionary[String]
     
     /**
       * Set of EC2 Security Group identifiers associated with the configuration.
       */
-    val securityGroupIds: js.Array[String] = js.native
+    val securityGroupIds: js.Array[String]
     
     /**
       * Amazon Resource Name (ARN) of the SNS Topic associated with the configuration.
       */
-    val snsTopicArn: String = js.native
+    val snsTopicArn: String
     
     /**
       * Identifier of the EC2 Subnet associated with the configuration.
       */
-    val subnetId: String = js.native
+    val subnetId: String
     
     /**
       * Key-value map of resource tags for the infrastructure configuration.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Whether instances are terminated on failure.
       */
-    val terminateInstanceOnFailure: Boolean = js.native
+    val terminateInstanceOnFailure: Boolean
   }
   object GetInfrastructureConfigurationResult {
     

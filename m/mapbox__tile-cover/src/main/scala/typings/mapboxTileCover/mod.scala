@@ -5,29 +5,28 @@ import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@mapbox/tile-cover", "geojson")
+  @JSImport("@mapbox/tile-cover", JSImport.Namespace)
   @js.native
-  def geojson(geom: Geometry, limits: Limits): FeatureCollection[Geometry, GeoJsonProperties] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@mapbox/tile-cover", "indexes")
-  @js.native
-  def indexes(geom: Geometry, limits: Limits): js.Array[String] = js.native
+  @scala.inline
+  def geojson(geom: Geometry, limits: Limits): FeatureCollection[Geometry, GeoJsonProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("geojson")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
   
-  @JSImport("@mapbox/tile-cover", "tiles")
-  @js.native
-  def tiles(geom: Geometry, limits: Limits): js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def indexes(geom: Geometry, limits: Limits): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
+  @scala.inline
+  def tiles(geom: Geometry, limits: Limits): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tiles")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  
   trait Limits extends StObject {
     
-    var max_zoom: Double = js.native
+    var max_zoom: Double
     
-    var min_zoom: Double = js.native
+    var min_zoom: Double
   }
   object Limits {
     

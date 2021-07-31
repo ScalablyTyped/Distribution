@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountPasswordPolicyResponse extends StObject {
   
   /**
     * A structure that contains details about the account's password policy.
     */
-  var PasswordPolicy: typings.awsSdk.iamMod.PasswordPolicy = js.native
+  var PasswordPolicy: typings.awsSdk.iamMod.PasswordPolicy
 }
 object GetAccountPasswordPolicyResponse {
   

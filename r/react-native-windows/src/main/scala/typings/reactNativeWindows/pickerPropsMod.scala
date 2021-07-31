@@ -4,15 +4,13 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeWindows.anon.ItemIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerPropsMod {
   
-  @js.native
   trait IPickerChangeEvent extends StObject {
     
-    var nativeEvent: ItemIndex = js.native
+    var nativeEvent: ItemIndex
   }
   object IPickerChangeEvent {
     
@@ -30,14 +28,15 @@ object pickerPropsMod {
     }
   }
   
-  @js.native
-  trait IPickerItemProps extends ViewProps {
+  trait IPickerItemProps
+    extends StObject
+       with ViewProps {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object IPickerItemProps {
     
@@ -67,24 +66,25 @@ object pickerPropsMod {
     }
   }
   
-  @js.native
-  trait IPickerProps extends ViewProps {
+  trait IPickerProps
+    extends StObject
+       with ViewProps {
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ IPickerChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ IPickerChangeEvent, Unit]] = js.undefined
     
     var onValueChange: js.UndefOr[
         js.Function3[/* value */ js.Any, /* itemIndex */ Double, /* text */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var selectedValue: js.UndefOr[js.Any] = js.native
+    var selectedValue: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object IPickerProps {
     

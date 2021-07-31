@@ -24,7 +24,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicRuleMod {
@@ -115,6 +114,10 @@ object topicRuleMod {
   /* static members */
   object TopicRule {
     
+    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TopicRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -124,95 +127,89 @@ object topicRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TopicRule = js.native
-    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TopicRule = js.native
-    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicRuleState): TopicRule = js.native
-    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicRuleState, opts: CustomResourceOptions): TopicRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicRuleState): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicRuleState, opts: CustomResourceOptions): TopicRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicRule]
     
     /**
       * Returns true if the given object is an instance of TopicRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/topicRule", "TopicRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ Boolean]
   }
   
-  @js.native
   trait TopicRuleArgs extends StObject {
     
-    val cloudwatchAlarm: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]] = js.native
+    val cloudwatchAlarm: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]] = js.undefined
     
-    val cloudwatchMetric: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]] = js.native
+    val cloudwatchMetric: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]] = js.undefined
     
     /**
       * The description of the rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
-    val dynamodb: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]] = js.native
+    val dynamodb: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]] = js.undefined
     
-    val dynamodbv2s: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]] = js.native
+    val dynamodbv2s: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]] = js.undefined
     
-    val elasticsearch: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]] = js.native
+    val elasticsearch: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]] = js.undefined
     
     /**
       * Specifies whether the rule is enabled.
       */
-    val enabled: Input[Boolean] = js.native
+    val enabled: Input[Boolean]
     
     /**
       * Configuration block with error action to be associated with the rule. See the documentation for `cloudwatchAlarm`, `cloudwatchMetric`, `dynamodb`, `dynamodbv2`, `elasticsearch`, `firehose`, `iotAnalytics`, `iotEvents`, `kinesis`, `lambda`, `republish`, `s3`, `stepFunctions`, `sns`, `sqs` configuration blocks for further configuration details.
       */
-    val errorAction: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]] = js.native
+    val errorAction: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]] = js.undefined
     
-    val firehose: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]] = js.native
+    val firehose: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]] = js.undefined
     
-    val iotAnalytics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]] = js.native
+    val iotAnalytics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]] = js.undefined
     
-    val iotEvents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]] = js.native
+    val iotEvents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]] = js.undefined
     
-    val kinesis: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]] = js.native
+    val kinesis: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]] = js.undefined
     
-    val lambda: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]] = js.native
+    val lambda: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]] = js.undefined
     
     /**
       * The name of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
-    val republish: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]] = js.native
+    val republish: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]] = js.undefined
     
-    val s3: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]] = js.native
+    val s3: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]] = js.undefined
     
-    val sns: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]] = js.native
+    val sns: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]] = js.undefined
     
     /**
       * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
       */
-    val sql: Input[String] = js.native
+    val sql: Input[String]
     
     /**
       * The version of the SQL rules engine to use when evaluating the rule.
       */
-    val sqlVersion: Input[String] = js.native
+    val sqlVersion: Input[String]
     
-    val sqs: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]] = js.native
+    val sqs: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]] = js.undefined
     
-    val stepFunctions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]] = js.native
+    val stepFunctions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TopicRuleArgs {
     
@@ -362,78 +359,77 @@ object topicRuleMod {
     }
   }
   
-  @js.native
   trait TopicRuleState extends StObject {
     
     /**
       * The ARN of the topic rule
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
-    val cloudwatchAlarm: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]] = js.native
+    val cloudwatchAlarm: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchAlarm]] = js.undefined
     
-    val cloudwatchMetric: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]] = js.native
+    val cloudwatchMetric: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleCloudwatchMetric]] = js.undefined
     
     /**
       * The description of the rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
-    val dynamodb: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]] = js.native
+    val dynamodb: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodb]] = js.undefined
     
-    val dynamodbv2s: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]] = js.native
+    val dynamodbv2s: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleDynamodbv2]]]] = js.undefined
     
-    val elasticsearch: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]] = js.native
+    val elasticsearch: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleElasticsearch]] = js.undefined
     
     /**
       * Specifies whether the rule is enabled.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Configuration block with error action to be associated with the rule. See the documentation for `cloudwatchAlarm`, `cloudwatchMetric`, `dynamodb`, `dynamodbv2`, `elasticsearch`, `firehose`, `iotAnalytics`, `iotEvents`, `kinesis`, `lambda`, `republish`, `s3`, `stepFunctions`, `sns`, `sqs` configuration blocks for further configuration details.
       */
-    val errorAction: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]] = js.native
+    val errorAction: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleErrorAction]] = js.undefined
     
-    val firehose: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]] = js.native
+    val firehose: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleFirehose]] = js.undefined
     
-    val iotAnalytics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]] = js.native
+    val iotAnalytics: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotAnalytic]]]] = js.undefined
     
-    val iotEvents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]] = js.native
+    val iotEvents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleIotEvent]]]] = js.undefined
     
-    val kinesis: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]] = js.native
+    val kinesis: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleKinesis]] = js.undefined
     
-    val lambda: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]] = js.native
+    val lambda: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleLambda]] = js.undefined
     
     /**
       * The name of the rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
-    val republish: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]] = js.native
+    val republish: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleRepublish]] = js.undefined
     
-    val s3: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]] = js.native
+    val s3: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleS3]] = js.undefined
     
-    val sns: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]] = js.native
+    val sns: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSns]] = js.undefined
     
     /**
       * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
       */
-    val sql: js.UndefOr[Input[String]] = js.native
+    val sql: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the SQL rules engine to use when evaluating the rule.
       */
-    val sqlVersion: js.UndefOr[Input[String]] = js.native
+    val sqlVersion: js.UndefOr[Input[String]] = js.undefined
     
-    val sqs: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]] = js.native
+    val sqs: js.UndefOr[Input[typings.pulumiAws.inputMod.iot.TopicRuleSqs]] = js.undefined
     
-    val stepFunctions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]] = js.native
+    val stepFunctions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.iot.TopicRuleStepFunction]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TopicRuleState {
     

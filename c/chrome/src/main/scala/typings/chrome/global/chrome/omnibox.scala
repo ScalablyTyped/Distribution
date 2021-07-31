@@ -8,7 +8,6 @@ import typings.chrome.chrome.omnibox.OmniboxSuggestionDeletedEvent
 import typings.chrome.chrome.omnibox.Suggestion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -55,7 +54,6 @@ object omnibox {
   @scala.inline
   def onInputStarted_=(x: OmniboxInputStartedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputStarted")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.omnibox.setDefaultSuggestion")
-  @js.native
-  def setDefaultSuggestion(suggestion: Suggestion): Unit = js.native
+  @scala.inline
+  def setDefaultSuggestion(suggestion: Suggestion): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSuggestion")(suggestion.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

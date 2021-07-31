@@ -5,41 +5,38 @@ import typings.appBuilderLib.winOptionsMod.WindowsConfiguration
 import typings.appBuilderLib.winPackagerMod.WinPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowsCodeSignMod {
   
-  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "doSign")
+  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", JSImport.Namespace)
   @js.native
-  def doSign(configuration: CustomWindowsSignTaskConfiguration, packager: WinPackager): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "getCertInfo")
-  @js.native
-  def getCertInfo(file: String, password: String): js.Promise[CertificateInfo] = js.native
+  @scala.inline
+  def doSign(configuration: CustomWindowsSignTaskConfiguration, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("doSign")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "getCertificateFromStoreInfo")
-  @js.native
-  def getCertificateFromStoreInfo(options: WindowsConfiguration, vm: VmManager): js.Promise[CertificateFromStoreInfo] = js.native
+  @scala.inline
+  def getCertInfo(file: String, password: String): js.Promise[CertificateInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertInfo")(file.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateInfo]]
   
-  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "getSignVendorPath")
-  @js.native
-  def getSignVendorPath(): js.Promise[String] = js.native
+  @scala.inline
+  def getCertificateFromStoreInfo(options: WindowsConfiguration, vm: VmManager): js.Promise[CertificateFromStoreInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateFromStoreInfo")(options.asInstanceOf[js.Any], vm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateFromStoreInfo]]
   
-  @JSImport("app-builder-lib/out/codeSign/windowsCodeSign", "sign")
-  @js.native
-  def sign(options: WindowsSignOptions, packager: WinPackager): js.Promise[Unit] = js.native
+  @scala.inline
+  def getSignVendorPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignVendorPath")().asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def sign(options: WindowsSignOptions, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait CertificateFromStoreInfo extends StObject {
     
-    var isLocalMachineStore: Boolean = js.native
+    var isLocalMachineStore: Boolean
     
-    var store: String = js.native
+    var store: String
     
-    var subject: String = js.native
+    var subject: String
     
-    var thumbprint: String = js.native
+    var thumbprint: String
   }
   object CertificateFromStoreInfo {
     
@@ -66,12 +63,11 @@ object windowsCodeSignMod {
     }
   }
   
-  @js.native
   trait CertificateInfo extends StObject {
     
-    val bloodyMicrosoftSubjectDn: String = js.native
+    val bloodyMicrosoftSubjectDn: String
     
-    val commonName: String = js.native
+    val commonName: String
   }
   object CertificateInfo {
     
@@ -98,10 +94,11 @@ object windowsCodeSignMod {
     js.Promise[js.Any]
   ]
   
-  @js.native
-  trait CustomWindowsSignTaskConfiguration extends WindowsSignTaskConfiguration {
+  trait CustomWindowsSignTaskConfiguration
+    extends StObject
+       with WindowsSignTaskConfiguration {
     
-    def computeSignToolArgs(isWin: Boolean): js.Array[String] = js.native
+    def computeSignToolArgs(isWin: Boolean): js.Array[String]
   }
   object CustomWindowsSignTaskConfiguration {
     
@@ -125,18 +122,17 @@ object windowsCodeSignMod {
     }
   }
   
-  @js.native
   trait FileCodeSigningInfo extends StObject {
     
-    val file: String = js.native
+    val file: String
     
-    val password: String | Null = js.native
+    val password: String | Null
   }
   object FileCodeSigningInfo {
     
     @scala.inline
     def apply(file: String): FileCodeSigningInfo = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], password = null)
       __obj.asInstanceOf[FileCodeSigningInfo]
     }
     
@@ -154,18 +150,17 @@ object windowsCodeSignMod {
     }
   }
   
-  @js.native
   trait WindowsSignOptions extends StObject {
     
-    val cscInfo: js.UndefOr[FileCodeSigningInfo | CertificateFromStoreInfo | Null] = js.native
+    val cscInfo: js.UndefOr[FileCodeSigningInfo | CertificateFromStoreInfo | Null] = js.undefined
     
-    val name: js.UndefOr[String | Null] = js.native
+    val name: js.UndefOr[String | Null] = js.undefined
     
-    val options: WindowsConfiguration = js.native
+    val options: WindowsConfiguration
     
-    val path: String = js.native
+    val path: String
     
-    val site: js.UndefOr[String | Null] = js.native
+    val site: js.UndefOr[String | Null] = js.undefined
   }
   object WindowsSignOptions {
     
@@ -213,14 +208,15 @@ object windowsCodeSignMod {
     }
   }
   
-  @js.native
-  trait WindowsSignTaskConfiguration extends WindowsSignOptions {
+  trait WindowsSignTaskConfiguration
+    extends StObject
+       with WindowsSignOptions {
     
-    var hash: String = js.native
+    var hash: String
     
-    var isNest: Boolean = js.native
+    var isNest: Boolean
     
-    var resultOutputPath: js.UndefOr[String] = js.native
+    var resultOutputPath: js.UndefOr[String] = js.undefined
   }
   object WindowsSignTaskConfiguration {
     

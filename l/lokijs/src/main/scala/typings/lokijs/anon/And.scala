@@ -2,17 +2,15 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait And extends StObject {
   
   @JSName("$and")
-  var $and: js.Any = js.native
+  var $and: js.Any
   
   @JSName("$or")
-  var $or: js.Any = js.native
+  var $or: js.Any
 }
 object And {
   

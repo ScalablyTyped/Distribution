@@ -2,39 +2,37 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSettings extends StObject {
   
   /**
     * Etag of the collection.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * List of user settings.
     */
-  var items: js.UndefOr[js.Array[SchemaSetting]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSetting]] = js.undefined
   
   /**
     * Type of the collection (&quot;calendar#settings&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. Omitted if no further
     * results are available, in which case nextSyncToken is provided.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Token used at a later point in time to retrieve only the entries that
     * have changed since this result was returned. Omitted if further results
     * are available, in which case nextPageToken is provided.
     */
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSettings {
   

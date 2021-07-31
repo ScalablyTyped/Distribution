@@ -20,7 +20,6 @@ import typings.std.Extract
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -190,22 +189,22 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   
   def contains[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, substring: String): this.type = js.native
   
-  def containsAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[_]): this.type = js.native
+  def containsAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[js.Any]): this.type = js.native
   
-  def containsAllStartingWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[_]): this.type = js.native
+  def containsAllStartingWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, values: js.Array[js.Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_createdAt(key: createdAt, values: js.Array[_]): this.type = js.native
+  def containsAllStartingWith_createdAt(key: createdAt, values: js.Array[js.Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_objectId(key: objectId, values: js.Array[_]): this.type = js.native
+  def containsAllStartingWith_objectId(key: objectId, values: js.Array[js.Any]): this.type = js.native
   @JSName("containsAllStartingWith")
-  def containsAllStartingWith_updatedAt(key: updatedAt, values: js.Array[_]): this.type = js.native
+  def containsAllStartingWith_updatedAt(key: updatedAt, values: js.Array[js.Any]): this.type = js.native
   
   @JSName("containsAll")
-  def containsAll_createdAt(key: createdAt, values: js.Array[_]): this.type = js.native
+  def containsAll_createdAt(key: createdAt, values: js.Array[js.Any]): this.type = js.native
   @JSName("containsAll")
-  def containsAll_objectId(key: objectId, values: js.Array[_]): this.type = js.native
+  def containsAll_objectId(key: objectId, values: js.Array[js.Any]): this.type = js.native
   @JSName("containsAll")
-  def containsAll_updatedAt(key: updatedAt, values: js.Array[_]): this.type = js.native
+  def containsAll_updatedAt(key: updatedAt, values: js.Array[js.Any]): this.type = js.native
   
   @JSName("contains")
   def contains_createdAt(key: createdAt, substring: String): this.type = js.native
@@ -577,7 +576,7 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   ): js.Promise[T] = js.native
   def reduce(
     callback: js.Function3[/* accumulator */ T, /* currentObject */ T, /* index */ Double, js.Thenable[T] | T],
-    initialValue: js.UndefOr[scala.Nothing],
+    initialValue: Unit,
     options: BatchOptions
   ): js.Promise[T] = js.native
   def reduce[U](
@@ -658,45 +657,44 @@ class Query[T /* <: Object[Attributes] */] protected () extends StObject {
 }
 object Query {
   
-  /* static member */
-  @JSGlobal("Parse.Query.and")
+  @JSGlobal("Parse.Query")
   @js.native
-  def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("Parse.Query.fromJSON")
-  @js.native
-  def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): Query[U] = js.native
+  @scala.inline
+  def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
   
   /* static member */
-  @JSGlobal("Parse.Query.nor")
-  @js.native
-  def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = js.native
+  @scala.inline
+  def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
   
   /* static member */
-  @JSGlobal("Parse.Query.or")
-  @js.native
-  def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = js.native
+  @scala.inline
+  def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  
+  /* static member */
+  @scala.inline
+  def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
   
   // According to http://docs.parseplatform.org/rest/guide/#aggregate-queries
-  @js.native
   trait AggregationOptions extends StObject {
     
-    var group: js.UndefOr[Dictkey] = js.native
+    var group: js.UndefOr[Dictkey] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var `match`: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var `match`: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var project: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var project: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     // Sample documentation: https://docs.mongodb.com/v3.2/reference/operator/aggregation/sample/
-    var sample: js.UndefOr[SizeNumber] = js.native
+    var sample: js.UndefOr[SizeNumber] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
     // Sort documentation https://docs.mongodb.com/v3.2/reference/operator/aggregation/sort/#pipe._S_sort
-    var sort: js.UndefOr[StringDictionary[`1` | `-1`]] = js.native
+    var sort: js.UndefOr[StringDictionary[`1` | `-1`]] = js.undefined
   }
   object AggregationOptions {
     
@@ -753,10 +751,11 @@ object Query {
     }
   }
   
-  @js.native
-  trait BatchOptions extends FullOptions {
+  trait BatchOptions
+    extends StObject
+       with FullOptions {
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
   }
   object BatchOptions {
     
@@ -777,9 +776,9 @@ object Query {
     }
   }
   
-  @js.native
   trait CountOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object CountOptions {
     
@@ -790,9 +789,9 @@ object Query {
     }
   }
   
-  @js.native
   trait EachOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object EachOptions {
     
@@ -803,9 +802,9 @@ object Query {
     }
   }
   
-  @js.native
   trait FindOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object FindOptions {
     
@@ -816,9 +815,9 @@ object Query {
     }
   }
   
-  @js.native
   trait FirstOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object FirstOptions {
     
@@ -830,14 +829,13 @@ object Query {
   }
   
   // According to https://parseplatform.org/Parse-SDK-JS/api/2.1.0/Parse.Query.html#fullText
-  @js.native
   trait FullTextOptions extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var diacriticSensitive: js.UndefOr[Boolean] = js.native
+    var diacriticSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object FullTextOptions {
     
@@ -870,9 +868,9 @@ object Query {
     }
   }
   
-  @js.native
   trait GetOptions
-    extends SuccessFailureOptions
+    extends StObject
+       with SuccessFailureOptions
        with ScopeOptions
   object GetOptions {
     

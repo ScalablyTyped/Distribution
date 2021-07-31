@@ -2,13 +2,11 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Time window specified for daily maintenance operations.
   */
-@js.native
 trait SchemaDailyMaintenanceWindow extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaDailyMaintenanceWindow extends StObject {
     * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) format
     * &quot;PTnHnMnS&quot;.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * Time within the maintenance window to start the maintenance operations.
     * Time format should be in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt)
     * format &quot;HH:MM”, where HH : [00-23] and MM : [00-59] GMT.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDailyMaintenanceWindow {
   

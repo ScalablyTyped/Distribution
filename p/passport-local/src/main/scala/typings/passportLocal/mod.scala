@@ -7,7 +7,6 @@ import typings.passportLocal.passportLocalBooleans.`false`
 import typings.passportLocal.passportLocalBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,16 +20,15 @@ object mod {
     def this(options: IStrategyOptions, verify: VerifyFunction) = this()
   }
   
-  @js.native
   trait IStrategyOptions extends StObject {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
     
-    var passwordField: js.UndefOr[String] = js.native
+    var passwordField: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var usernameField: js.UndefOr[String] = js.native
+    var usernameField: js.UndefOr[String] = js.undefined
   }
   object IStrategyOptions {
     
@@ -69,22 +67,21 @@ object mod {
     }
   }
   
-  @js.native
   trait IStrategyOptionsWithRequest extends StObject {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
     
-    var passwordField: js.UndefOr[String] = js.native
+    var passwordField: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var usernameField: js.UndefOr[String] = js.native
+    var usernameField: js.UndefOr[String] = js.undefined
   }
   object IStrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(passReqToCallback: `true`): IStrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(): IStrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[IStrategyOptionsWithRequest]
     }
     
@@ -114,10 +111,9 @@ object mod {
     }
   }
   
-  @js.native
   trait IVerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object IVerifyOptions {
     

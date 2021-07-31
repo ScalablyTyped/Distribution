@@ -2,17 +2,17 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlAttribute extends IXmlNode {
+trait IXmlAttribute
+  extends StObject
+     with IXmlNode {
   
-  var name: String = js.native
+  var name: String
   
-  var specified: Boolean = js.native
+  var specified: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object IXmlAttribute {
   

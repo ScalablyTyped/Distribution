@@ -13,7 +13,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.keyCodesMod.KeyCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoverCardTypesMod {
@@ -25,21 +24,25 @@ object hoverCardTypesMod {
   object HoverCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[HoverCardType with String] = js.native
+    def apply(value: String): js.UndefOr[HoverCardType & String] = js.native
     
     /**
       * File card consisting of two parts: compact and expanded. Has some default sizes if not specified.
       */
     @js.native
-    sealed trait expanding extends HoverCardType
-    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.expanding with String = js.native
+    sealed trait expanding
+      extends StObject
+         with HoverCardType
+    /* "ExpandingCard" */ val expanding: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.expanding & String = js.native
     
     /**
       * Plain card consisting of one part responsive to the size of content.
       */
     @js.native
-    sealed trait plain extends HoverCardType
-    /* "PlainCard" */ val plain: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.plain with String = js.native
+    sealed trait plain
+      extends StObject
+         with HoverCardType
+    /* "PlainCard" */ val plain: typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType.plain & String = js.native
   }
   
   @js.native
@@ -49,21 +52,25 @@ object hoverCardTypesMod {
   object OpenCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OpenCardMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[OpenCardMode & Double] = js.native
     
     /**
       * Open card by hot key
       */
     @js.native
-    sealed trait hotKey extends OpenCardMode
-    /* 1 */ val hotKey: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hotKey with Double = js.native
+    sealed trait hotKey
+      extends StObject
+         with OpenCardMode
+    /* 1 */ val hotKey: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hotKey & Double = js.native
     
     /**
       * Open card by hover
       */
     @js.native
-    sealed trait hover extends OpenCardMode
-    /* 0 */ val hover: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hover with Double = js.native
+    sealed trait hover
+      extends StObject
+         with OpenCardMode
+    /* 0 */ val hover: typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode.hover & Double = js.native
   }
   
   @js.native
@@ -77,108 +84,109 @@ object hoverCardTypesMod {
     def dismiss(withTimeOut: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait IHoverCardProps extends HTMLAttributes[HTMLDivElement] {
+  trait IHoverCardProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Length of card dismiss delay. A min number is necessary for pointer to hop between target and card
       * @defaultvalue 100
       */
-    var cardDismissDelay: js.UndefOr[Double] = js.native
+    var cardDismissDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Length of compact card delay
       * @defaultvalue 500
       */
-    var cardOpenDelay: js.UndefOr[Double] = js.native
+    var cardOpenDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional callback to access the IHoverCardHost interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IHoverCard]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IHoverCard]] = js.undefined
     
     /**
       * This prop is to separate the target to anchor hover card from the target to attach event listener.
       * If set, this prop separates the target to anchor the hover card from the target to attach the event listener.
       * When no `eventListenerTarget` given, HoverCard will use `target` prop or its root to set event listener.
       */
-    var eventListenerTarget: js.UndefOr[HTMLElement | String | Null] = js.native
+    var eventListenerTarget: js.UndefOr[HTMLElement | String | Null] = js.undefined
     
     /**
       * Time in ms when expanded card should open after compact card
       * @defaultvalue 1500
       */
-    var expandedCardOpenDelay: js.UndefOr[Double] = js.native
+    var expandedCardOpenDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Additional ExpandingCard props to pass through HoverCard like renderers, target. gapSpace etc.
       * Used along with 'type' prop set to HoverCardType.expanding.
       * Reference detail properties in ICardProps and IExpandingCardProps.
       */
-    var expandingCardProps: js.UndefOr[IExpandingCardProps] = js.native
+    var expandingCardProps: js.UndefOr[IExpandingCardProps] = js.undefined
     
     /**
       * Enables instant open of the full card upon click
       * @defaultvalue false
       */
-    var instantOpenOnClick: js.UndefOr[Boolean] = js.native
+    var instantOpenOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback when visible card is expanded.
       */
-    var onCardExpand: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCardExpand: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback when card hides
       */
-    var onCardHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCardHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback when card becomes visible
       */
-    var onCardVisible: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCardVisible: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * HotKey used for opening the HoverCard when tabbed to target.
       * @defaultvalue 'KeyCodes.c'
       */
-    var openHotKey: js.UndefOr[KeyCodes] = js.native
+    var openHotKey: js.UndefOr[KeyCodes] = js.undefined
     
     /**
       * Additional PlainCard props to pass through HoverCard like renderers, target, gapSpace etc.
       * Used along with 'type' prop set to HoverCardType.plain.
       * See for more details ICardProps and IPlainCardProps interfaces.
       */
-    var plainCardProps: js.UndefOr[IPlainCardProps] = js.native
+    var plainCardProps: js.UndefOr[IPlainCardProps] = js.undefined
     
     /**
       * Whether or not to mark the container as described by the hover card.
       * If not specified, the caller should mark as element as described by the hover card id.
       */
-    var setAriaDescribedBy: js.UndefOr[Boolean] = js.native
+    var setAriaDescribedBy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to set focus on the first focusable element in the card. Works in pair with the 'trapFocus' prop.
       * @defaultvalue false
       */
-    var setInitialFocus: js.UndefOr[Boolean] = js.native
+    var setInitialFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should block hover card or not
       */
-    var shouldBlockHoverCard: js.UndefOr[js.Function0[Unit]] = js.native
+    var shouldBlockHoverCard: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If true disables Card dismiss upon mouse leave, so that card sticks around.
       * @defaultvalue false
       */
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styles for this component
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IHoverCardStyleProps, IHoverCardStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IHoverCardStyleProps, IHoverCardStyles]] = js.undefined
     
     /**
       * Optional target element to tag hover card on. If not provided and using HoverCard as a wrapper, don't set the
@@ -186,24 +194,24 @@ object hoverCardTypesMod {
       * If no target is given, HoverCard will use its root as a target and become the focusable element with a
       * focus listener attached to it.
       */
-    var target: js.UndefOr[HTMLElement | String | Null] = js.native
+    var target: js.UndefOr[HTMLElement | String | Null] = js.undefined
     
     /**
       * Theme provided by higher order component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Set to true if you want to render the content of the HoverCard in a FocusTrapZone for accessibility reasons.
       * Optionally 'setInitialFocus' prop can be set to true to move focus inside the FocusTrapZone.
       */
-    var trapFocus: js.UndefOr[Boolean] = js.native
+    var trapFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type of the hover card to render.
       * @defaultvalue HoverCardType.expanding
       */
-    var `type`: js.UndefOr[HoverCardType] = js.native
+    var `type`: js.UndefOr[HoverCardType] = js.undefined
   }
   object IHoverCardProps {
     
@@ -356,18 +364,17 @@ object hoverCardTypesMod {
     }
   }
   
-  @js.native
   trait IHoverCardStyleProps extends StObject {
     
     /**
       * Optional className(s) for the host div of HoverCard.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IHoverCardStyleProps {
     
@@ -391,13 +398,12 @@ object hoverCardTypesMod {
     }
   }
   
-  @js.native
   trait IHoverCardStyles extends StObject {
     
     /**
       * Style for the host element in the default enabled, non-toggled state.
       */
-    var host: js.UndefOr[IStyle] = js.native
+    var host: js.UndefOr[IStyle] = js.undefined
   }
   object IHoverCardStyles {
     

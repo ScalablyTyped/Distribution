@@ -9,108 +9,104 @@ import typings.jose.mod.JWK.Key
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWT {
   
+  @JSImport("jose", "JWT")
+  @js.native
+  val ^ : js.Any = js.native
+  
   object AccessToken {
     
-    @JSImport("jose", "JWT.AccessToken.verify")
+    @JSImport("jose", "JWT.AccessToken")
     @js.native
-    def verify(
-      jwt: String,
-      key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys,
-      options: VerifyOptions with AccessTokenVerifyOptions
-    ): js.Object = js.native
-    @JSImport("jose", "JWT.AccessToken.verify")
-    @js.native
-    def verify(jwt: String, key: ConsumeKeyInput | EmbeddedVerifyKeys, options: VerifyOptionscompletetrueComplete): completeResult[Key] = js.native
-    @JSImport("jose", "JWT.AccessToken.verify")
-    @js.native
-    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueComplete): completeResult[NoneKey] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInputWithNone, options: VerifyOptions & AccessTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInput, options: VerifyOptionscompletetrueComplete): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptions & AccessTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrueComplete): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueComplete): completeResult[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[NoneKey]]
   }
   
   object IdToken {
     
-    @JSImport("jose", "JWT.IdToken.verify")
+    @JSImport("jose", "JWT.IdToken")
     @js.native
-    def verify(
-      jwt: String,
-      key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys,
-      options: VerifyOptions with IdTokenVerifyOptions
-    ): js.Object = js.native
-    @JSImport("jose", "JWT.IdToken.verify")
-    @js.native
-    def verify(jwt: String, key: ConsumeKeyInput | EmbeddedVerifyKeys, options: VerifyOptionscompletetrueAudience): completeResult[Key] = js.native
-    @JSImport("jose", "JWT.IdToken.verify")
-    @js.native
-    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueAudience): completeResult[NoneKey] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInputWithNone, options: VerifyOptions & IdTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInput, options: VerifyOptionscompletetrueAudience): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptions & IdTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrueAudience): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueAudience): completeResult[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[NoneKey]]
   }
   
   object LogoutToken {
     
-    @JSImport("jose", "JWT.LogoutToken.verify")
+    @JSImport("jose", "JWT.LogoutToken")
     @js.native
-    def verify(
-      jwt: String,
-      key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys,
-      options: VerifyOptions with LogoutTokenVerifyOptions
-    ): js.Object = js.native
-    @JSImport("jose", "JWT.LogoutToken.verify")
-    @js.native
-    def verify(
-      jwt: String,
-      key: ConsumeKeyInput | EmbeddedVerifyKeys,
-      options: VerifyOptionscompletetrueClockTolerance
-    ): completeResult[Key] = js.native
-    @JSImport("jose", "JWT.LogoutToken.verify")
-    @js.native
-    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueClockTolerance): completeResult[NoneKey] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInputWithNone, options: VerifyOptions & LogoutTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: ConsumeKeyInput, options: VerifyOptionscompletetrueClockTolerance): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptions & LogoutTokenVerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrueClockTolerance): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+    @scala.inline
+    def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueClockTolerance): completeResult[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[NoneKey]]
   }
   
-  @JSImport("jose", "JWT.decode")
-  @js.native
-  def decode(jwt: String): js.Object = js.native
+  @scala.inline
+  def decode(jwt: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jwt.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   /**
     * Decodes the JWT **without verifying the token**. For JWT verification/validation use
     * `jose.JWT.verify`.
     */
-  @JSImport("jose", "JWT.decode")
-  @js.native
-  def decode(jwt: String, options: DecodeOptionscompletetrue): completeResult[js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("jose", "JWT.decode")
-  @js.native
-  def decode(jwt: String, options: DecodeOptions): js.Object = js.native
+  @scala.inline
+  def decode(jwt: String, options: DecodeOptionscompletetrue): completeResult[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jwt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Unit]]
+  @scala.inline
+  def decode(jwt: String, options: DecodeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(jwt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("jose", "JWT.sign")
-  @js.native
-  def sign(payload: js.Object, key: ProduceKeyInputWithNone): String = js.native
-  @JSImport("jose", "JWT.sign")
-  @js.native
-  def sign(payload: js.Object, key: ProduceKeyInputWithNone, options: SignOptions): String = js.native
+  @scala.inline
+  def sign(payload: js.Object, key: ProduceKeyInputWithNone): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def sign(payload: js.Object, key: ProduceKeyInputWithNone, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jose", "JWT.verify")
-  @js.native
-  def verify(jwt: String, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys): js.Object = js.native
-  @JSImport("jose", "JWT.verify")
-  @js.native
-  def verify(
-    jwt: String,
-    key: ConsumeKeyInput | EmbeddedVerifyKeys,
-    options: VerifyOptionscompletetrueAlgorithms
-  ): completeResult[Key] = js.native
-  @JSImport("jose", "JWT.verify")
-  @js.native
-  def verify(jwt: String, key: ConsumeKeyInputWithNone | EmbeddedVerifyKeys, options: VerifyOptions): js.Object = js.native
-  @JSImport("jose", "JWT.verify")
-  @js.native
-  def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueAlgorithms): completeResult[NoneKey] = js.native
+  @scala.inline
+  def verify(jwt: String, key: ConsumeKeyInputWithNone): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def verify(jwt: String, key: ConsumeKeyInputWithNone, options: VerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def verify(jwt: String, key: ConsumeKeyInput, options: VerifyOptionscompletetrueAlgorithms): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+  @scala.inline
+  def verify(jwt: String, key: EmbeddedVerifyKeys): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptionscompletetrueAlgorithms): completeResult[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[Key]]
+  @scala.inline
+  def verify(jwt: String, key: EmbeddedVerifyKeys, options: VerifyOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def verify(jwt: String, key: NoneKey, options: VerifyOptionscompletetrueAlgorithms): completeResult[NoneKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(jwt.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[completeResult[NoneKey]]
   
-  @js.native
-  trait AccessTokenVerifyOptions extends ProfiledVerifyOptions {
+  trait AccessTokenVerifyOptions
+    extends StObject
+       with ProfiledVerifyOptions {
     
-    var maxAuthAge: js.UndefOr[String] = js.native
+    var maxAuthAge: js.UndefOr[String] = js.undefined
   }
   object AccessTokenVerifyOptions {
     
@@ -131,10 +127,9 @@ object JWT {
     }
   }
   
-  @js.native
   trait DecodeOptions extends StObject {
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeOptions {
     
@@ -155,12 +150,13 @@ object JWT {
     }
   }
   
-  @js.native
-  trait IdTokenVerifyOptions extends ProfiledVerifyOptions {
+  trait IdTokenVerifyOptions
+    extends StObject
+       with ProfiledVerifyOptions {
     
-    var maxAuthAge: js.UndefOr[String] = js.native
+    var maxAuthAge: js.UndefOr[String] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
   }
   object IdTokenVerifyOptions {
     
@@ -189,12 +185,11 @@ object JWT {
   
   type LogoutTokenVerifyOptions = ProfiledVerifyOptions
   
-  @js.native
   trait ProfiledVerifyOptions extends StObject {
     
-    var audience: String | js.Array[String] = js.native
+    var audience: String | js.Array[String]
     
-    var issuer: String | js.Array[String] = js.native
+    var issuer: String | js.Array[String]
   }
   object ProfiledVerifyOptions {
     
@@ -221,30 +216,29 @@ object JWT {
     }
   }
   
-  @js.native
   trait SignOptions extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var expiresIn: js.UndefOr[String] = js.native
+    var expiresIn: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[js.Object] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
     
-    var iat: js.UndefOr[Boolean] = js.native
+    var iat: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var kid: js.UndefOr[Boolean] = js.native
+    var kid: js.UndefOr[Boolean] = js.undefined
     
-    var notBefore: js.UndefOr[String] = js.native
+    var notBefore: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object SignOptions {
     
@@ -328,36 +322,35 @@ object JWT {
     }
   }
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var clockTolerance: js.UndefOr[String] = js.native
+    var clockTolerance: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.native
+    var ignoreExp: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreIat: js.UndefOr[Boolean] = js.native
+    var ignoreIat: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNbf: js.UndefOr[Boolean] = js.native
+    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: js.UndefOr[String | js.Array[String]] = js.native
+    var issuer: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var maxTokenAge: js.UndefOr[String] = js.native
+    var maxTokenAge: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object VerifyOptions {
     
@@ -468,16 +461,15 @@ object JWT {
     }
   }
   
-  @js.native
   trait completeResult[T] extends StObject {
     
-    var header: js.Object = js.native
+    var header: js.Object
     
-    var key: T = js.native
+    var key: T
     
-    var payload: js.Object = js.native
+    var payload: js.Object
     
-    var signature: String = js.native
+    var signature: String
   }
   object completeResult {
     
@@ -488,7 +480,7 @@ object JWT {
     }
     
     @scala.inline
-    implicit class completeResultMutableBuilder[Self <: completeResult[_], T] (val x: Self with completeResult[T]) extends AnyVal {
+    implicit class completeResultMutableBuilder[Self <: completeResult[?], T] (val x: Self & completeResult[T]) extends AnyVal {
       
       @scala.inline
       def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])

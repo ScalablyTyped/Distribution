@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Structs.List
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Some of these Game Objects may also be part of the Scene's [Update List]{@link Phaser.GameObjects.UpdateList}, for updating.
   */
 @js.native
-trait DisplayList extends List[GameObject] {
+trait DisplayList
+  extends StObject
+     with List[GameObject] {
   
   /**
     * Immediately sorts the display list if the flag is set.

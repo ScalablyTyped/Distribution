@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,49 +13,73 @@ object NDCertificatePlatformID extends StObject {
   
   /** Client platform is the Google Android operating system running on an ARM processor. */
   @js.native
-  sealed trait androidOnARM extends NDCertificatePlatformID
+  sealed trait androidOnARM
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Apple iOS operating system running on an ARM processor. */
   @js.native
-  sealed trait iOSOnARM extends NDCertificatePlatformID
+  sealed trait iOSOnARM
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Apple OSX operating system. */
   @js.native
-  sealed trait osx extends NDCertificatePlatformID
+  sealed trait osx
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is Microsoft Windows. */
   @js.native
-  sealed trait windows extends NDCertificatePlatformID
+  sealed trait windows
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 7 operating system. */
   @js.native
-  sealed trait windowsMobile7 extends NDCertificatePlatformID
+  sealed trait windowsMobile7
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 7 operating system running on an ARM processor. */
   @js.native
-  sealed trait windowsOnARM extends NDCertificatePlatformID
+  sealed trait windowsOnARM
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 8.1 operating system running on an ARM processor. */
   @js.native
-  sealed trait windowsPhone81OnARM extends NDCertificatePlatformID
+  sealed trait windowsPhone81OnARM
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 8.1 operating system running on an x86 processor. */
   @js.native
-  sealed trait windowsPhone81OnX86 extends NDCertificatePlatformID
+  sealed trait windowsPhone81OnX86
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 8 operating system running on an ARM processor. */
   @js.native
-  sealed trait windowsPhone8OnARM extends NDCertificatePlatformID
+  sealed trait windowsPhone8OnARM
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Microsoft Windows Phone 8 operating system running on an x86 processor. */
   @js.native
-  sealed trait windowsPhone8OnX86 extends NDCertificatePlatformID
+  sealed trait windowsPhone8OnX86
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Xbox operating system running on a Power PC processor. */
   @js.native
-  sealed trait xboxOnPPC extends NDCertificatePlatformID
+  sealed trait xboxOnPPC
+    extends StObject
+       with NDCertificatePlatformID
   
   /** Client platform is the Xbox operating system. */
   @js.native
-  sealed trait xboxOne extends NDCertificatePlatformID
+  sealed trait xboxOne
+    extends StObject
+       with NDCertificatePlatformID
 }

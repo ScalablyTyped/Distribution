@@ -2,15 +2,13 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropName extends StObject {
   
-  var propName: String = js.native
+  var propName: String
   
-  var templateName: String = js.native
+  var templateName: String
 }
 object PropName {
   

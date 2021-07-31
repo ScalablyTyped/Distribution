@@ -5,7 +5,6 @@ import typings.googleapis.v1Mod.abusiveexperiencereportV1.Abusiveexperiencerepor
 import typings.googleapis.v1Mod.abusiveexperiencereportV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

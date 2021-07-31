@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a page break in a spreadsheet.
   * @see com.sun.star.sheet.XSheetPageBreak
   */
-@js.native
 trait TablePageBreakData extends StObject {
   
   /** is `TRUE` for a manual page break, `FALSE` for an automatic one. */
-  var ManualBreak: Boolean = js.native
+  var ManualBreak: Boolean
   
   /** the position (column or row index) of the page break. */
-  var Position: Double = js.native
+  var Position: Double
 }
 object TablePageBreakData {
   

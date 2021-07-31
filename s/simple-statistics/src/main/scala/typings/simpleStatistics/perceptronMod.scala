@@ -2,25 +2,38 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object perceptronMod {
   
   @JSImport("simple-statistics/src/perceptron", JSImport.Default)
   @js.native
-  class default () extends PerceptronModel
-  
-  @js.native
-  trait PerceptronModel extends StObject {
+  class default ()
+    extends StObject
+       with PerceptronModel {
     
+    /* CompleteClass */
     var bias: Double = js.native
     
-    def predict(features: js.Array[Double]): Double = js.native
+    /* CompleteClass */
+    override def predict(features: js.Array[Double]): Double = js.native
     
-    def train(features: js.Array[Double], label: Double): PerceptronModel = js.native
+    /* CompleteClass */
+    override def train(features: js.Array[Double], label: Double): PerceptronModel = js.native
     
+    /* CompleteClass */
     var weights: js.Array[Double] = js.native
+  }
+  
+  trait PerceptronModel extends StObject {
+    
+    var bias: Double
+    
+    def predict(features: js.Array[Double]): Double
+    
+    def train(features: js.Array[Double], label: Double): PerceptronModel
+    
+    var weights: js.Array[Double]
   }
   object PerceptronModel {
     

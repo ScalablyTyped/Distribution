@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitAttachmentStateChangesRequest extends StObject {
   
   /**
     * Any attachments associated with the state change request.
     */
-  var attachments: AttachmentStateChanges = js.native
+  var attachments: AttachmentStateChanges
   
   /**
     * The short name or full ARN of the cluster that hosts the container instance the attachment belongs to.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
 }
 object SubmitAttachmentStateChangesRequest {
   

@@ -3,24 +3,24 @@ package typings.dndCore
 import typings.dndCore.interfacesMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dirtyHandlerIdsMod {
   
-  @JSImport("dnd-core/lib/reducers/dirtyHandlerIds", "reduce")
+  @JSImport("dnd-core/lib/reducers/dirtyHandlerIds", JSImport.Namespace)
   @js.native
-  def reduce(_state: js.UndefOr[scala.Nothing], action: Action[DirtyHandlerIdPayload]): State = js.native
-  @JSImport("dnd-core/lib/reducers/dirtyHandlerIds", "reduce")
-  @js.native
-  def reduce(_state: State, action: Action[DirtyHandlerIdPayload]): State = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def reduce(_state: Unit, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def reduce(_state: State, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  
   trait DirtyHandlerIdPayload extends StObject {
     
-    var prevTargetIds: js.Array[String] = js.native
+    var prevTargetIds: js.Array[String]
     
-    var targetIds: js.Array[String] = js.native
+    var targetIds: js.Array[String]
   }
   object DirtyHandlerIdPayload {
     

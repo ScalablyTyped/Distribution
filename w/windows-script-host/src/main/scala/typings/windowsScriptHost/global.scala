@@ -4,7 +4,6 @@ import typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamReader
 import typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -19,9 +18,8 @@ object global {
     @JSGlobal("WSH.Arguments")
     @js.native
     def Arguments: WshArguments = js.native
-    @JSGlobal("WSH.Arguments")
-    @js.native
-    def Arguments(index: Double): String = js.native
+    @scala.inline
+    def Arguments(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Arguments")(index.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def Arguments_=(x: WshArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arguments")(x.asInstanceOf[js.Any])
     
@@ -37,39 +35,33 @@ object global {
     /**
       * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
       */
-    @JSGlobal("WSH.ConnectObject")
-    @js.native
-    def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = js.native
+    @scala.inline
+    def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a COM object.
       * @param strProgiID
       * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
       */
-    @JSGlobal("WSH.CreateObject")
-    @js.native
-    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-    @JSGlobal("WSH.CreateObject")
-    @js.native
-    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+    @scala.inline
+    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
+    @scala.inline
+    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
     
     /**
       * Disconnects a COM object from its event sources.
       */
-    @JSGlobal("WSH.DisconnectObject")
-    @js.native
-    def DisconnectObject(obj: js.Any): Unit = js.native
+    @scala.inline
+    def DisconnectObject(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Outputs text to either a message box (under WScript.exe) or the command console window followed by
       * a newline (under CScript.exe).
       */
-    @JSGlobal("WSH.Echo")
-    @js.native
-    def Echo(): Unit = js.native
-    @JSGlobal("WSH.Echo")
-    @js.native
-    def Echo(s: js.Any): Unit = js.native
+    @scala.inline
+    def Echo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")().asInstanceOf[Unit]
+    @scala.inline
+    def Echo(s: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Fully qualified path of the host executable.
@@ -80,18 +72,14 @@ object global {
     @scala.inline
     def FullName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject(strPathname: String): js.Any = js.native
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: js.UndefOr[scala.Nothing], strPrefix: String): js.Any = js.native
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: String): js.Any = js.native
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = js.native
+    @scala.inline
+    def GetObject(strPathname: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     /**
       * Retrieves an existing object with the specified ProgID from memory, or creates a new one from a file.
       * @param strPathname Fully qualified path to the file containing the object persisted to disk.
@@ -99,12 +87,10 @@ object global {
       * @param strProgID
       * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
       */
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-    @JSGlobal("WSH.GetObject")
-    @js.native
-    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+    @scala.inline
+    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
+    @scala.inline
+    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
     
     /**
       * Gets/sets the script mode - interactive(true) or batch(false).
@@ -136,12 +122,10 @@ object global {
     /**
       * Forces the script to stop immediately, with an optional exit code.
       */
-    @JSGlobal("WSH.Quit")
-    @js.native
-    def Quit(): Double = js.native
-    @JSGlobal("WSH.Quit")
-    @js.native
-    def Quit(exitCode: Double): Double = js.native
+    @scala.inline
+    def Quit(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")().asInstanceOf[Double]
+    @scala.inline
+    def Quit(exitCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")(exitCode.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *  The full path of the currently running script.
@@ -165,9 +149,8 @@ object global {
       * Suspends script execution for a specified length of time, then continues execution.
       * @param intTime Interval (in milliseconds) to suspend script execution.
       */
-    @JSGlobal("WSH.Sleep")
-    @js.native
-    def Sleep(intTime: Double): Unit = js.native
+    @scala.inline
+    def Sleep(intTime: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Sleep")(intTime.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Exposes the write-only error output stream for the current script.
@@ -218,9 +201,8 @@ object global {
     @JSGlobal("WScript.Arguments")
     @js.native
     def Arguments: WshArguments = js.native
-    @JSGlobal("WScript.Arguments")
-    @js.native
-    def Arguments(index: Double): String = js.native
+    @scala.inline
+    def Arguments(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Arguments")(index.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def Arguments_=(x: WshArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arguments")(x.asInstanceOf[js.Any])
     
@@ -236,39 +218,33 @@ object global {
     /**
       * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
       */
-    @JSGlobal("WScript.ConnectObject")
-    @js.native
-    def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = js.native
+    @scala.inline
+    def ConnectObject(objEventSource: js.Any, strPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectObject")(objEventSource.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a COM object.
       * @param strProgiID
       * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
       */
-    @JSGlobal("WScript.CreateObject")
-    @js.native
-    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-    @JSGlobal("WScript.CreateObject")
-    @js.native
-    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+    @scala.inline
+    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
+    @scala.inline
+    def CreateObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateObject")(strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
     
     /**
       * Disconnects a COM object from its event sources.
       */
-    @JSGlobal("WScript.DisconnectObject")
-    @js.native
-    def DisconnectObject(obj: js.Any): Unit = js.native
+    @scala.inline
+    def DisconnectObject(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisconnectObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Outputs text to either a message box (under WScript.exe) or the command console window followed by
       * a newline (under CScript.exe).
       */
-    @JSGlobal("WScript.Echo")
-    @js.native
-    def Echo(): Unit = js.native
-    @JSGlobal("WScript.Echo")
-    @js.native
-    def Echo(s: js.Any): Unit = js.native
+    @scala.inline
+    def Echo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")().asInstanceOf[Unit]
+    @scala.inline
+    def Echo(s: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Echo")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Fully qualified path of the host executable.
@@ -279,18 +255,14 @@ object global {
     @scala.inline
     def FullName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullName")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject(strPathname: String): js.Any = js.native
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: js.UndefOr[scala.Nothing], strPrefix: String): js.Any = js.native
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: String): js.Any = js.native
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = js.native
+    @scala.inline
+    def GetObject(strPathname: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def GetObject(strPathname: String, strProgID: Unit, strPrefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     /**
       * Retrieves an existing object with the specified ProgID from memory, or creates a new one from a file.
       * @param strPathname Fully qualified path to the file containing the object persisted to disk.
@@ -298,12 +270,10 @@ object global {
       * @param strProgID
       * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
       */
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-    @JSGlobal("WScript.GetObject")
-    @js.native
-    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+    @scala.inline
+    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
+    @scala.inline
+    def GetObject[K /* <: /* keyof activex-interop.ActiveXObjectNameMap */ String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetObject")(strPathname.asInstanceOf[js.Any], strProgID.asInstanceOf[js.Any], strPrefix.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any]
     
     /**
       * Gets/sets the script mode - interactive(true) or batch(false).
@@ -335,12 +305,10 @@ object global {
     /**
       * Forces the script to stop immediately, with an optional exit code.
       */
-    @JSGlobal("WScript.Quit")
-    @js.native
-    def Quit(): Double = js.native
-    @JSGlobal("WScript.Quit")
-    @js.native
-    def Quit(exitCode: Double): Double = js.native
+    @scala.inline
+    def Quit(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")().asInstanceOf[Double]
+    @scala.inline
+    def Quit(exitCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Quit")(exitCode.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *  The full path of the currently running script.
@@ -364,9 +332,8 @@ object global {
       * Suspends script execution for a specified length of time, then continues execution.
       * @param intTime Interval (in milliseconds) to suspend script execution.
       */
-    @JSGlobal("WScript.Sleep")
-    @js.native
-    def Sleep(intTime: Double): Unit = js.native
+    @scala.inline
+    def Sleep(intTime: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Sleep")(intTime.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Exposes the write-only error output stream for the current script.

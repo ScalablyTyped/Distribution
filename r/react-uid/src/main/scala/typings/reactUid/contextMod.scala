@@ -4,32 +4,30 @@ import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
+  
+  @JSImport("react-uid/dist/es5/context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-uid/dist/es5/context", "counter")
   @js.native
   val counter: IdSourceType = js.native
   
-  @JSImport("react-uid/dist/es5/context", "createSource")
-  @js.native
-  def createSource(): IdSourceType = js.native
-  @JSImport("react-uid/dist/es5/context", "createSource")
-  @js.native
-  def createSource(prefix: String): IdSourceType = js.native
+  @scala.inline
+  def createSource(): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")().asInstanceOf[IdSourceType]
+  @scala.inline
+  def createSource(prefix: String): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")(prefix.asInstanceOf[js.Any]).asInstanceOf[IdSourceType]
   
-  @JSImport("react-uid/dist/es5/context", "getId")
-  @js.native
-  def getId(source: IdSourceType): Double = js.native
+  @scala.inline
+  def getId(source: IdSourceType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(source.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-uid/dist/es5/context", "getPrefix")
-  @js.native
-  def getPrefix(): String = js.native
-  @JSImport("react-uid/dist/es5/context", "getPrefix")
-  @js.native
-  def getPrefix(source: IdSourceType): String = js.native
+  @scala.inline
+  def getPrefix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")().asInstanceOf[String]
+  @scala.inline
+  def getPrefix(source: IdSourceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("react-uid/dist/es5/context", "source")
   @js.native
@@ -46,14 +44,13 @@ object contextMod {
     var value: Double = js.native
   }
   
-  @js.native
   trait UIDProps extends StObject {
     
-    def children(id: String, uid: js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]): ReactNode = js.native
+    def children(id: String, uid: js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]): ReactNode
     
-    var idSource: js.UndefOr[IdSourceType] = js.native
+    var idSource: js.UndefOr[IdSourceType] = js.undefined
     
-    var name: js.UndefOr[js.Function1[/* n */ String | Double, String]] = js.native
+    var name: js.UndefOr[js.Function1[/* n */ String | Double, String]] = js.undefined
   }
   object UIDProps {
     

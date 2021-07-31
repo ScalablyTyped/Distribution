@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsHistoriesExecutionsPatch extends StandardParameters {
+trait ParamsResourceProjectsHistoriesExecutionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required.
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /**
     * Required.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * A Project id. Required.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaExecution] = js.native
+  var requestBody: js.UndefOr[SchemaExecution] = js.undefined
   
   /**
     * A unique request ID for server to detect duplicated requests. For
     * example, a UUID.  Optional, but strongly recommended.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsHistoriesExecutionsPatch {
   

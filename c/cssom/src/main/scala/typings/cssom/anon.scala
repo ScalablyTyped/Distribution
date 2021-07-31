@@ -2,15 +2,13 @@ package typings.cssom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
   }
   object Error {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Expression extends StObject {
     
-    var expression: String = js.native
+    var expression: String
     
-    var idx: Double = js.native
+    var idx: Double
   }
   object Expression {
     

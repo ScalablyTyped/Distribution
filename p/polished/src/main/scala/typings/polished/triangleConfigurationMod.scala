@@ -3,23 +3,21 @@ package typings.polished
 import typings.polished.sideKeywordMod.SideKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triangleConfigurationMod {
   
-  @js.native
   trait TriangleConfiguration extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var foregroundColor: String = js.native
+    var foregroundColor: String
     
-    var height: Double | String = js.native
+    var height: Double | String
     
-    var pointingDirection: SideKeyword = js.native
+    var pointingDirection: SideKeyword
     
-    var width: Double | String = js.native
+    var width: Double | String
   }
   object TriangleConfiguration {
     

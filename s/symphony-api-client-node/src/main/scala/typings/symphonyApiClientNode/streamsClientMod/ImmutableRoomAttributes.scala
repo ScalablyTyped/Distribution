@@ -2,17 +2,15 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImmutableRoomAttributes extends StObject {
   
-  var copyProtected: js.UndefOr[Boolean] = js.native
+  var copyProtected: js.UndefOr[Boolean] = js.undefined
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ImmutableRoomAttributes {
   

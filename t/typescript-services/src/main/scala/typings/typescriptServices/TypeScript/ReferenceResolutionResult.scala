@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceResolutionResult extends StObject {
   
-  var diagnostics: js.Array[Diagnostic] = js.native
+  var diagnostics: js.Array[Diagnostic]
   
-  var resolvedFiles: js.Array[IResolvedFile] = js.native
+  var resolvedFiles: js.Array[IResolvedFile]
   
-  var seenNoDefaultLibTag: Boolean = js.native
+  var seenNoDefaultLibTag: Boolean
 }
 object ReferenceResolutionResult {
   

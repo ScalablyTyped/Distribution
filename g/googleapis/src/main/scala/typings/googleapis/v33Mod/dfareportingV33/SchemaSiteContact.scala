@@ -2,54 +2,52 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Site Contact
   */
-@js.native
 trait SchemaSiteContact extends StObject {
   
   /**
     * Address of this site contact.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Site contact type.
     */
-  var contactType: js.UndefOr[String] = js.native
+  var contactType: js.UndefOr[String] = js.undefined
   
   /**
     * Email address of this site contact. This is a required field.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * First name of this site contact.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this site contact. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Last name of this site contact.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
   /**
     * Primary phone number of this site contact.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * Title or designation of this site contact.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteContact {
   

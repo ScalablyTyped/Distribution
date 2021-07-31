@@ -2,46 +2,46 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fridaGum.CpuContext because Already inherited */ @js.native
-trait X64CpuContext extends PortableCpuContext {
+- typings.fridaGum.CpuContext because Already inherited */ trait X64CpuContext
+  extends StObject
+     with PortableCpuContext {
   
-  var r10: NativePointer = js.native
+  var r10: NativePointer
   
-  var r11: NativePointer = js.native
+  var r11: NativePointer
   
-  var r12: NativePointer = js.native
+  var r12: NativePointer
   
-  var r13: NativePointer = js.native
+  var r13: NativePointer
   
-  var r14: NativePointer = js.native
+  var r14: NativePointer
   
-  var r15: NativePointer = js.native
+  var r15: NativePointer
   
-  var r8: NativePointer = js.native
+  var r8: NativePointer
   
-  var r9: NativePointer = js.native
+  var r9: NativePointer
   
-  var rax: NativePointer = js.native
+  var rax: NativePointer
   
-  var rbp: NativePointer = js.native
+  var rbp: NativePointer
   
-  var rbx: NativePointer = js.native
+  var rbx: NativePointer
   
-  var rcx: NativePointer = js.native
+  var rcx: NativePointer
   
-  var rdi: NativePointer = js.native
+  var rdi: NativePointer
   
-  var rdx: NativePointer = js.native
+  var rdx: NativePointer
   
-  var rip: NativePointer = js.native
+  var rip: NativePointer
   
-  var rsi: NativePointer = js.native
+  var rsi: NativePointer
   
-  var rsp: NativePointer = js.native
+  var rsp: NativePointer
 }
 object X64CpuContext {
   

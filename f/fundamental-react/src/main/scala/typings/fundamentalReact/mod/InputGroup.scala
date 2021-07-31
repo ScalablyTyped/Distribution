@@ -10,7 +10,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fundamental-react", "InputGroup")
@@ -26,12 +25,11 @@ object InputGroup {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/InputGroup/InputGroup.InputGroupAddonProps> & {  displayName :'InputGroup.Addon'} */
   object Addon {
     
-    @JSImport("fundamental-react", "InputGroup.Addon")
-    @js.native
-    def apply(props: PropsWithChildren[InputGroupAddonProps]): ReactElement | Null = js.native
-    @JSImport("fundamental-react", "InputGroup.Addon")
-    @js.native
-    def apply(props: PropsWithChildren[InputGroupAddonProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[InputGroupAddonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[InputGroupAddonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("fundamental-react", "InputGroup.Addon")
     @js.native
     val ^ : js.Any = js.native

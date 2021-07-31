@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutWorkflowRunPropertiesRequest extends StObject {
   
   /**
     * Name of the workflow which was run.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The ID of the workflow run for which the run properties should be updated.
     */
-  var RunId: IdString = js.native
+  var RunId: IdString
   
   /**
     * The properties to put for the specified run.
     */
-  var RunProperties: WorkflowRunProperties = js.native
+  var RunProperties: WorkflowRunProperties
 }
 object PutWorkflowRunPropertiesRequest {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverCertificateMod {
@@ -71,6 +70,10 @@ object serverCertificateMod {
   /* static members */
   object ServerCertificate {
     
+    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ServerCertificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -80,60 +83,54 @@ object serverCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ServerCertificate = js.native
-    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ServerCertificate = js.native
-    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServerCertificateState): ServerCertificate = js.native
-    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServerCertificateState, opts: CustomResourceOptions): ServerCertificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ServerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ServerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServerCertificateState): ServerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ServerCertificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServerCertificateState, opts: CustomResourceOptions): ServerCertificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServerCertificate]
     
     /**
       * Returns true if the given object is an instance of ServerCertificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ Boolean]
   }
   
-  @js.native
   trait ServerCertificateArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the server certificate.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the public key certificate in
       * PEM-encoded format.
       */
-    val certificateBody: Input[String] = js.native
+    val certificateBody: Input[String]
     
     /**
       * The contents of the certificate chain.
       * This is typically a concatenation of the PEM-encoded public key certificates
       * of the chain.
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Server Certificate. Do not include the
       * path in this value. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM path for the server certificate.  If it is not
@@ -141,12 +138,12 @@ object serverCertificateMod {
       * AWS CloudFront, the path must be in format `/cloudfront/your_path_here`.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more details on IAM Paths.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the private key in PEM-encoded format.
       */
-    val privateKey: Input[String] = js.native
+    val privateKey: Input[String]
   }
   object ServerCertificateArgs {
     
@@ -197,38 +194,37 @@ object serverCertificateMod {
     }
   }
   
-  @js.native
   trait ServerCertificateState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the server certificate.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the public key certificate in
       * PEM-encoded format.
       */
-    val certificateBody: js.UndefOr[Input[String]] = js.native
+    val certificateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the certificate chain.
       * This is typically a concatenation of the PEM-encoded public key certificates
       * of the chain.
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Server Certificate. Do not include the
       * path in this value. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM path for the server certificate.  If it is not
@@ -236,12 +232,12 @@ object serverCertificateMod {
       * AWS CloudFront, the path must be in format `/cloudfront/your_path_here`.
       * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more details on IAM Paths.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the private key in PEM-encoded format.
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
   }
   object ServerCertificateState {
     

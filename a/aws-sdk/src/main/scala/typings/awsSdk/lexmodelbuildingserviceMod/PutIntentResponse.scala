@@ -2,106 +2,104 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutIntentResponse extends StObject {
   
   /**
     * Checksum of the $LATESTversion of the intent created or updated.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * After the Lambda function specified in thefulfillmentActivityintent fulfills the intent, Amazon Lex conveys this statement to the user.
     */
-  var conclusionStatement: js.UndefOr[Statement] = js.native
+  var conclusionStatement: js.UndefOr[Statement] = js.undefined
   
   /**
     * If defined in the intent, Amazon Lex prompts the user to confirm the intent before fulfilling it.
     */
-  var confirmationPrompt: js.UndefOr[Prompt] = js.native
+  var confirmationPrompt: js.UndefOr[Prompt] = js.undefined
   
   /**
     *  True if a new version of the intent was created. If the createVersion field was not specified in the request, the createVersion field is set to false in the response.
     */
-  var createVersion: js.UndefOr[Boolean] = js.native
+  var createVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date that the intent was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the intent.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * If defined in the intent, Amazon Lex invokes this Lambda function for each user input.
     */
-  var dialogCodeHook: js.UndefOr[CodeHook] = js.native
+  var dialogCodeHook: js.UndefOr[CodeHook] = js.undefined
   
   /**
     * If defined in the intent, Amazon Lex uses this prompt to solicit additional user activity after the intent is fulfilled.
     */
-  var followUpPrompt: js.UndefOr[FollowUpPrompt] = js.native
+  var followUpPrompt: js.UndefOr[FollowUpPrompt] = js.undefined
   
   /**
     * If defined in the intent, Amazon Lex invokes this Lambda function to fulfill the intent after the user provides all of the information required by the intent.
     */
-  var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.native
+  var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.undefined
   
   /**
     * An array of InputContext objects that lists the contexts that must be active for Amazon Lex to choose the intent in a conversation with the user.
     */
-  var inputContexts: js.UndefOr[InputContextList] = js.native
+  var inputContexts: js.UndefOr[InputContextList] = js.undefined
   
   /**
     * Configuration information, if any, required to connect to an Amazon Kendra index and use the AMAZON.KendraSearchIntent intent.
     */
-  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.native
+  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.undefined
   
   /**
     * The date that the intent was updated. When you create a resource, the creation date and last update dates are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the intent.
     */
-  var name: js.UndefOr[IntentName] = js.native
+  var name: js.UndefOr[IntentName] = js.undefined
   
   /**
     * An array of OutputContext objects that lists the contexts that the intent activates when the intent is fulfilled.
     */
-  var outputContexts: js.UndefOr[OutputContextList] = js.native
+  var outputContexts: js.UndefOr[OutputContextList] = js.undefined
   
   /**
     * A unique identifier for the built-in intent that this intent is based on.
     */
-  var parentIntentSignature: js.UndefOr[BuiltinIntentSignature] = js.native
+  var parentIntentSignature: js.UndefOr[BuiltinIntentSignature] = js.undefined
   
   /**
     * If the user answers "no" to the question defined in confirmationPrompt Amazon Lex responds with this statement to acknowledge that the intent was canceled. 
     */
-  var rejectionStatement: js.UndefOr[Statement] = js.native
+  var rejectionStatement: js.UndefOr[Statement] = js.undefined
   
   /**
     *  An array of sample utterances that are configured for the intent. 
     */
-  var sampleUtterances: js.UndefOr[IntentUtteranceList] = js.native
+  var sampleUtterances: js.UndefOr[IntentUtteranceList] = js.undefined
   
   /**
     * An array of intent slots that are configured for the intent.
     */
-  var slots: js.UndefOr[SlotList] = js.native
+  var slots: js.UndefOr[SlotList] = js.undefined
   
   /**
     * The version of the intent. For a new intent, the version is always $LATEST.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object PutIntentResponse {
   

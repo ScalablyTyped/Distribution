@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com::sun::star::lang::SystemDependent::XWINDOW.
   * @deprecated Deprecated
   */
-@js.native
 trait SystemDependentXWindow extends StObject {
   
   /** The display pointer. */
-  var DisplayPointer: Double = js.native
+  var DisplayPointer: Double
   
   /** The {@link XWindow} handle if possible, otherwise 0. */
-  var WindowHandle: Double = js.native
+  var WindowHandle: Double
 }
 object SystemDependentXWindow {
   

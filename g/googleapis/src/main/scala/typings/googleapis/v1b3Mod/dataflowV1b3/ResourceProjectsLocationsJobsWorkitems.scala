@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Workitems")
@@ -33,7 +32,7 @@ class ResourceProjectsLocationsJobsWorkitems protected () extends StObject {
     */
   def lease(): GaxiosPromise[SchemaLeaseWorkItemResponse] = js.native
   def lease(callback: BodyResponseCallback[SchemaLeaseWorkItemResponse]): Unit = js.native
-  def lease(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaseWorkItemResponse] = js.native
+  def lease(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLeaseWorkItemResponse] = js.native
   def lease(params: ParamsResourceProjectsLocationsJobsWorkitemsLease): GaxiosPromise[SchemaLeaseWorkItemResponse] = js.native
   def lease(
     params: ParamsResourceProjectsLocationsJobsWorkitemsLease,
@@ -68,7 +67,7 @@ class ResourceProjectsLocationsJobsWorkitems protected () extends StObject {
     */
   def reportStatus(): GaxiosPromise[SchemaReportWorkItemStatusResponse] = js.native
   def reportStatus(callback: BodyResponseCallback[SchemaReportWorkItemStatusResponse]): Unit = js.native
-  def reportStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReportWorkItemStatusResponse] = js.native
+  def reportStatus(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReportWorkItemStatusResponse] = js.native
   def reportStatus(params: ParamsResourceProjectsLocationsJobsWorkitemsReportstatus): GaxiosPromise[SchemaReportWorkItemStatusResponse] = js.native
   def reportStatus(
     params: ParamsResourceProjectsLocationsJobsWorkitemsReportstatus,

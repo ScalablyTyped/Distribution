@@ -5,7 +5,6 @@ import typings.ink.anon.AutoFocus
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusContextMod extends Shortcut {
@@ -14,26 +13,25 @@ object focusContextMod extends Shortcut {
   @js.native
   val default: Context[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
-    def activate(id: String): Unit = js.native
+    def activate(id: String): Unit
     
-    val activeId: js.UndefOr[String] = js.native
+    val activeId: js.UndefOr[String] = js.undefined
     
-    def add(id: String, options: AutoFocus): Unit = js.native
+    def add(id: String, options: AutoFocus): Unit
     
-    def deactivate(id: String): Unit = js.native
+    def deactivate(id: String): Unit
     
-    def disableFocus(): Unit = js.native
+    def disableFocus(): Unit
     
-    def enableFocus(): Unit = js.native
+    def enableFocus(): Unit
     
-    def focusNext(): Unit = js.native
+    def focusNext(): Unit
     
-    def focusPrevious(): Unit = js.native
+    def focusPrevious(): Unit
     
-    def remove(id: String): Unit = js.native
+    def remove(id: String): Unit
   }
   object Props {
     

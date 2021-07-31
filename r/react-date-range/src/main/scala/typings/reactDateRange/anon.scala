@@ -4,116 +4,114 @@ import typings.reactDateRange.mod.Range
 import typings.reactDateRange.mod._OnChangeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-date-range.react-date-range.ClassNames> */
-  @js.native
   trait PartialClassNames extends StObject {
     
-    var calendarWrapper: js.UndefOr[String] = js.native
+    var calendarWrapper: js.UndefOr[String] = js.undefined
     
-    var dateDisplay: js.UndefOr[String] = js.native
+    var dateDisplay: js.UndefOr[String] = js.undefined
     
-    var dateDisplayItem: js.UndefOr[String] = js.native
+    var dateDisplayItem: js.UndefOr[String] = js.undefined
     
-    var dateDisplayItemActive: js.UndefOr[String] = js.native
+    var dateDisplayItemActive: js.UndefOr[String] = js.undefined
     
-    var dateDisplayWrapper: js.UndefOr[String] = js.native
+    var dateDisplayWrapper: js.UndefOr[String] = js.undefined
     
-    var dateRangePickerWrapper: js.UndefOr[String] = js.native
+    var dateRangePickerWrapper: js.UndefOr[String] = js.undefined
     
-    var dateRangeWrapper: js.UndefOr[String] = js.native
+    var dateRangeWrapper: js.UndefOr[String] = js.undefined
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var dayActive: js.UndefOr[String] = js.native
+    var dayActive: js.UndefOr[String] = js.undefined
     
-    var dayDisabled: js.UndefOr[String] = js.native
+    var dayDisabled: js.UndefOr[String] = js.undefined
     
-    var dayEndOfMonth: js.UndefOr[String] = js.native
+    var dayEndOfMonth: js.UndefOr[String] = js.undefined
     
-    var dayEndOfWeek: js.UndefOr[String] = js.native
+    var dayEndOfWeek: js.UndefOr[String] = js.undefined
     
-    var dayEndPreview: js.UndefOr[String] = js.native
+    var dayEndPreview: js.UndefOr[String] = js.undefined
     
-    var dayHovered: js.UndefOr[String] = js.native
+    var dayHovered: js.UndefOr[String] = js.undefined
     
-    var dayInPreview: js.UndefOr[String] = js.native
+    var dayInPreview: js.UndefOr[String] = js.undefined
     
-    var dayNumber: js.UndefOr[String] = js.native
+    var dayNumber: js.UndefOr[String] = js.undefined
     
-    var dayPassive: js.UndefOr[String] = js.native
+    var dayPassive: js.UndefOr[String] = js.undefined
     
-    var daySelected: js.UndefOr[String] = js.native
+    var daySelected: js.UndefOr[String] = js.undefined
     
-    var dayStartOfMonth: js.UndefOr[String] = js.native
+    var dayStartOfMonth: js.UndefOr[String] = js.undefined
     
-    var dayStartOfWeek: js.UndefOr[String] = js.native
+    var dayStartOfWeek: js.UndefOr[String] = js.undefined
     
-    var dayStartPreview: js.UndefOr[String] = js.native
+    var dayStartPreview: js.UndefOr[String] = js.undefined
     
-    var dayToday: js.UndefOr[String] = js.native
+    var dayToday: js.UndefOr[String] = js.undefined
     
-    var dayWeekend: js.UndefOr[String] = js.native
+    var dayWeekend: js.UndefOr[String] = js.undefined
     
-    var days: js.UndefOr[String] = js.native
+    var days: js.UndefOr[String] = js.undefined
     
-    var definedRangesWrapper: js.UndefOr[String] = js.native
+    var definedRangesWrapper: js.UndefOr[String] = js.undefined
     
-    var endEdge: js.UndefOr[String] = js.native
+    var endEdge: js.UndefOr[String] = js.undefined
     
-    var inRange: js.UndefOr[String] = js.native
+    var inRange: js.UndefOr[String] = js.undefined
     
-    var infiniteMonths: js.UndefOr[String] = js.native
+    var infiniteMonths: js.UndefOr[String] = js.undefined
     
-    var inputRange: js.UndefOr[String] = js.native
+    var inputRange: js.UndefOr[String] = js.undefined
     
-    var inputRangeInput: js.UndefOr[String] = js.native
+    var inputRangeInput: js.UndefOr[String] = js.undefined
     
-    var inputRanges: js.UndefOr[String] = js.native
+    var inputRanges: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var monthAndYearPickers: js.UndefOr[String] = js.native
+    var monthAndYearPickers: js.UndefOr[String] = js.undefined
     
-    var monthAndYearWrapper: js.UndefOr[String] = js.native
+    var monthAndYearWrapper: js.UndefOr[String] = js.undefined
     
-    var monthName: js.UndefOr[String] = js.native
+    var monthName: js.UndefOr[String] = js.undefined
     
-    var monthPicker: js.UndefOr[String] = js.native
+    var monthPicker: js.UndefOr[String] = js.undefined
     
-    var months: js.UndefOr[String] = js.native
+    var months: js.UndefOr[String] = js.undefined
     
-    var monthsHorizontal: js.UndefOr[String] = js.native
+    var monthsHorizontal: js.UndefOr[String] = js.undefined
     
-    var monthsVertical: js.UndefOr[String] = js.native
+    var monthsVertical: js.UndefOr[String] = js.undefined
     
-    var nextButton: js.UndefOr[String] = js.native
+    var nextButton: js.UndefOr[String] = js.undefined
     
-    var nextPrevButton: js.UndefOr[String] = js.native
+    var nextPrevButton: js.UndefOr[String] = js.undefined
     
-    var prevButton: js.UndefOr[String] = js.native
+    var prevButton: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
-    var startEdge: js.UndefOr[String] = js.native
+    var startEdge: js.UndefOr[String] = js.undefined
     
-    var staticRange: js.UndefOr[String] = js.native
+    var staticRange: js.UndefOr[String] = js.undefined
     
-    var staticRangeLabel: js.UndefOr[String] = js.native
+    var staticRangeLabel: js.UndefOr[String] = js.undefined
     
-    var staticRangeSelected: js.UndefOr[String] = js.native
+    var staticRangeSelected: js.UndefOr[String] = js.undefined
     
-    var staticRanges: js.UndefOr[String] = js.native
+    var staticRanges: js.UndefOr[String] = js.undefined
     
-    var weekDay: js.UndefOr[String] = js.native
+    var weekDay: js.UndefOr[String] = js.undefined
     
-    var weekDays: js.UndefOr[String] = js.native
+    var weekDays: js.UndefOr[String] = js.undefined
     
-    var yearPicker: js.UndefOr[String] = js.native
+    var yearPicker: js.UndefOr[String] = js.undefined
   }
   object PartialClassNames {
     
@@ -434,10 +432,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Selection extends _OnChangeProps {
+  trait Selection
+    extends StObject
+       with _OnChangeProps {
     
-    var selection: Range = js.native
+    var selection: Range
   }
   object Selection {
     

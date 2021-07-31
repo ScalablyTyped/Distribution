@@ -9,7 +9,6 @@ import typings.chromeApps.chrome.sockets.tcpServer.SocketInfo
 import typings.chromeApps.chrome.sockets.tcpServer.SocketProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

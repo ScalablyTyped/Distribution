@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Handle extends Object {
+trait Handle
+  extends StObject
+     with Object {
   
   /**
     * Removes the handle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Handles.html#Handle)
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object Handle {
   

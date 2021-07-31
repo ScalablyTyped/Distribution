@@ -2,48 +2,46 @@ package typings.`7zipMin`
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("7zip-min", "cmd")
+  @JSImport("7zip-min", JSImport.Namespace)
   @js.native
-  def cmd(command: js.Array[String], errorCallback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("7zip-min", "list")
-  @js.native
+  @scala.inline
+  def cmd(command: js.Array[String], errorCallback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cmd")(command.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def list(
     pathToArchive: String,
     callback: js.Function2[/* err */ js.Any, /* result */ js.Array[Result], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(pathToArchive.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("7zip-min", "pack")
-  @js.native
+  @scala.inline
   def pack(
     pathToDirOrFile: String,
     pathToArchive: String,
     errorCallback: js.Function1[/* err */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(pathToDirOrFile.asInstanceOf[js.Any], pathToArchive.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("7zip-min", "unpack")
-  @js.native
-  def unpack(pathToArchive: String, whereToUnpack: String, errorCallback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def unpack(pathToArchive: String, whereToUnpack: String, errorCallback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(pathToArchive.asInstanceOf[js.Any], whereToUnpack.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Result extends StObject {
     
-    var attr: String = js.native
+    var attr: String
     
-    var compressed: String = js.native
+    var compressed: String
     
-    var date: String = js.native
+    var date: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: String = js.native
+    var size: String
     
-    var time: String = js.native
+    var time: String
   }
   object Result {
     

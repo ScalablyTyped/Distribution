@@ -2,7 +2,6 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * arguments - Script variables - Main class (in HadoopJob and SparkJob) -
   * Zone (in ClusterSelector)
   */
-@js.native
 trait SchemaTemplateParameter extends StObject {
   
   /**
     * Optional. Brief description of the parameter. Must not exceed 1024
     * characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Paths to all fields that the parameter replaces. A field is
@@ -52,7 +50,7 @@ trait SchemaTemplateParameter extends StObject {
     * placement.clusterSelector.clusterLabels
     * jobs&#39;step-id&#39;.sparkJob.args
     */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. Parameter name. The parameter name is used as the key, and
@@ -61,12 +59,12 @@ trait SchemaTemplateParameter extends StObject {
     * (A-Z), numbers (0-9), and underscores (_), and must not start with a
     * number. The maximum length is 40 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Validation rules to be applied to this parameter&#39;s value.
     */
-  var validation: js.UndefOr[SchemaParameterValidation] = js.native
+  var validation: js.UndefOr[SchemaParameterValidation] = js.undefined
 }
 object SchemaTemplateParameter {
   

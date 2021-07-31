@@ -2,7 +2,6 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Path")
@@ -78,8 +77,8 @@ class Path () extends StObject {
   /* private */ def pointAtT(t: PathT): Point | Null = js.native
   
   /* private */ def prepareSegment(segment: Segment): Segment = js.native
-  /* private */ def prepareSegment(segment: Segment, previousSegment: js.UndefOr[scala.Nothing], nextSegment: Segment): Segment = js.native
   /* private */ def prepareSegment(segment: Segment, previousSegment: Null, nextSegment: Segment): Segment = js.native
+  /* private */ def prepareSegment(segment: Segment, previousSegment: Unit, nextSegment: Segment): Segment = js.native
   /* private */ def prepareSegment(segment: Segment, previousSegment: Segment): Segment = js.native
   /* private */ def prepareSegment(segment: Segment, previousSegment: Segment, nextSegment: Segment): Segment = js.native
   
@@ -125,9 +124,9 @@ class Path () extends StObject {
   def toPolylines(opt: SegmentSubdivisionsOpt): js.Array[Polyline] | Null = js.native
   
   def translate(): this.type = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): this.type = js.native
   def translate(tx: Double): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
+  def translate(tx: Unit, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
   
   /* private */ def updateSubpathStartSegment(segment: Segment): Unit = js.native
@@ -139,19 +138,16 @@ object Path {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("jointjs", "g.Path.createSegment")
-  @js.native
-  def createSegment(`type`: SegmentType, args: js.Any*): PathSegmentUnit = js.native
+  @scala.inline
+  def createSegment(`type`: SegmentType, args: js.Any*): PathSegmentUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSegment")(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[PathSegmentUnit]
   
   /* static member */
-  @JSImport("jointjs", "g.Path.isDataSupported")
-  @js.native
-  def isDataSupported(pathData: String): Boolean = js.native
+  @scala.inline
+  def isDataSupported(pathData: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSupported")(pathData.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("jointjs", "g.Path.parse")
-  @js.native
-  def parse(pathData: String): Path = js.native
+  @scala.inline
+  def parse(pathData: String): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(pathData.asInstanceOf[js.Any]).asInstanceOf[Path]
   
   /* static member */
   @JSImport("jointjs", "g.Path.segmentTypes")

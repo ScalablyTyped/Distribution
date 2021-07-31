@@ -2,19 +2,17 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remarketing List Targeting Expression.
   */
-@js.native
 trait SchemaListTargetingExpression extends StObject {
   
   /**
     * Expression describing which lists are being targeted by the ad.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
 }
 object SchemaListTargetingExpression {
   

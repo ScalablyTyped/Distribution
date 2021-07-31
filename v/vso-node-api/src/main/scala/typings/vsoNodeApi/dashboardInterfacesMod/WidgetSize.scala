@@ -2,21 +2,19 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetSize extends StObject {
   
   /**
     * The Width of the widget, expressed in dashboard grid columns.
     */
-  var columnSpan: Double = js.native
+  var columnSpan: Double
   
   /**
     * The height of the widget, expressed in dashboard grid rows.
     */
-  var rowSpan: Double = js.native
+  var rowSpan: Double
 }
 object WidgetSize {
   

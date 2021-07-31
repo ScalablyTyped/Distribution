@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait LinkType extends StObject
 object LinkType extends StObject {
   
   @js.native
-  sealed trait autoLink extends LinkType
+  sealed trait autoLink
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait autoLinkEmail extends LinkType
+  sealed trait autoLinkEmail
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait autoLinkPath extends LinkType
+  sealed trait autoLinkPath
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait autoLinkPhone extends LinkType
+  sealed trait autoLinkPhone
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait clientLink extends LinkType
+  sealed trait clientLink
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait friendlyLinkAddress extends LinkType
+  sealed trait friendlyLinkAddress
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait friendlyLinkName extends LinkType
+  sealed trait friendlyLinkName
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait notALink extends LinkType
+  sealed trait notALink
+    extends StObject
+       with LinkType
   
   @js.native
-  sealed trait undefined extends LinkType
+  sealed trait undefined
+    extends StObject
+       with LinkType
 }

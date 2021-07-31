@@ -3,25 +3,23 @@ package typings.scrollIntoView
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScrollIntoView {
   
-  @js.native
   trait Alignment extends StObject {
     
     /** 0 to 1, default 0.5 (center) */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** pixels to offset left alignment */
-    var leftOffset: js.UndefOr[Double] = js.native
+    var leftOffset: js.UndefOr[Double] = js.undefined
     
     /** 0 to 1, default 0.5 (center) */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /** pixels to offset top alignment */
-    var topOffset: js.UndefOr[Double] = js.native
+    var topOffset: js.UndefOr[Double] = js.undefined
   }
   object Alignment {
     
@@ -71,16 +69,15 @@ object ScrollIntoView {
     def apply(target: HTMLElement, settings: Settings, callback: Callback): Unit = js.native
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var align: js.UndefOr[Alignment] = js.native
+    var align: js.UndefOr[Alignment] = js.undefined
     
-    var ease: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var ease: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
     
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
     
-    var validTarget: js.UndefOr[js.Function2[/* target */ HTMLElement, /* parentsScrolled */ Double, Boolean]] = js.native
+    var validTarget: js.UndefOr[js.Function2[/* target */ HTMLElement, /* parentsScrolled */ Double, Boolean]] = js.undefined
   }
   object Settings {
     

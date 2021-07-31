@@ -5,14 +5,15 @@ import typings.lruCache.mod.^
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
   
   @JSImport("ethereumjs-blockchain/dist/cache", JSImport.Default)
   @js.native
-  class default[V] protected () extends Cache[V] {
+  class default[V] protected ()
+    extends StObject
+       with Cache[V] {
     def this(opts: Options[String, V]) = this()
   }
   

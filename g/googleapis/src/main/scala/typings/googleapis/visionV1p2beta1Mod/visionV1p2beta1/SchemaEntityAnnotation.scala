@@ -2,20 +2,18 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set of detected entity features.
   */
-@js.native
 trait SchemaEntityAnnotation extends StObject {
   
   /**
     * Image region to which this entity belongs. Not produced for
     * `LABEL_DETECTION` features.
     */
-  var boundingPoly: js.UndefOr[SchemaBoundingPoly] = js.native
+  var boundingPoly: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
     * **Deprecated. Use `score` instead.** The accuracy of the entity detection
@@ -23,18 +21,18 @@ trait SchemaEntityAnnotation extends StObject {
     * Tower&quot; entity is detected, this field represents the confidence that
     * there is a tower in the query image. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Entity textual description, expressed in its `locale` language.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The language code for the locale in which the entity textual
     * `description` is expressed.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The location information for the detected entity. Multiple `LocationInfo`
@@ -43,24 +41,24 @@ trait SchemaEntityAnnotation extends StObject {
     * the place where the image was taken. Location information is usually
     * present for landmarks.
     */
-  var locations: js.UndefOr[js.Array[SchemaLocationInfo]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaLocationInfo]] = js.undefined
   
   /**
     * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
     * Search API](https://developers.google.com/knowledge-graph/).
     */
-  var mid: js.UndefOr[String] = js.native
+  var mid: js.UndefOr[String] = js.undefined
   
   /**
     * Some entities may have optional user-supplied `Property` (name/value)
     * fields, such a score or string that qualifies the entity.
     */
-  var properties: js.UndefOr[js.Array[SchemaProperty]] = js.native
+  var properties: js.UndefOr[js.Array[SchemaProperty]] = js.undefined
   
   /**
     * Overall score of the result. Range [0, 1].
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
   /**
     * The relevancy of the ICA (Image Content Annotation) label to the image.
@@ -70,7 +68,7 @@ trait SchemaEntityAnnotation extends StObject {
     * confidence that there is a tower in each image may be the same. Range [0,
     * 1].
     */
-  var topicality: js.UndefOr[Double] = js.native
+  var topicality: js.UndefOr[Double] = js.undefined
 }
 object SchemaEntityAnnotation {
   

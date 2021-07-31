@@ -2,15 +2,14 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebRedirectionResponseDetails
-  extends typings.chrome.chrome.webRequest.WebResponseCacheDetails {
+  extends StObject
+     with typings.chrome.chrome.webRequest.WebResponseCacheDetails {
   
   /** The new URL. */
-  var redirectUrl: String = js.native
+  var redirectUrl: String
 }
 object WebRedirectionResponseDetails {
   

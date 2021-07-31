@@ -2,17 +2,15 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorString extends StObject {
   
   /**
     * Color to multiply the image pixels with
     * @default #000000
     */
-  var color: String = js.native
+  var color: String
 }
 object ColorString {
   

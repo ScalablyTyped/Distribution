@@ -2,12 +2,14 @@ package typings.qunitDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseWhitespaceMod {
   
-  @JSImport("qunit-dom/dist/helpers/collapse-whitespace", JSImport.Default)
+  @JSImport("qunit-dom/dist/helpers/collapse-whitespace", JSImport.Namespace)
   @js.native
-  def default(string: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }

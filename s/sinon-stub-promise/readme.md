@@ -12,7 +12,7 @@ Synchronous Promise stubbing for Sinon.JS
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1141352 |
+| # downloads        | 1335714 |
 | # stars            | 0 |
 
 ## Links

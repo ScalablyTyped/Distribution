@@ -4,28 +4,35 @@ import typings.ytPlayer.mod.YouTubePlayerQuality
 import typings.ytPlayer.mod.YouTubePlayerState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ytPlayerStrings {
   
   @js.native
-  sealed trait default extends YouTubePlayerQuality
+  sealed trait default
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait buffering extends YouTubePlayerState
+  sealed trait buffering
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def buffering: buffering = "buffering".asInstanceOf[buffering]
   
   @js.native
-  sealed trait cued extends YouTubePlayerState
+  sealed trait cued
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def cued: cued = "cued".asInstanceOf[cued]
   
   @js.native
-  sealed trait ended extends YouTubePlayerState
+  sealed trait ended
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
   
@@ -35,32 +42,44 @@ object ytPlayerStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait hd1080 extends YouTubePlayerQuality
+  sealed trait hd1080
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def hd1080: hd1080 = "hd1080".asInstanceOf[hd1080]
   
   @js.native
-  sealed trait hd720 extends YouTubePlayerQuality
+  sealed trait hd720
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def hd720: hd720 = "hd720".asInstanceOf[hd720]
   
   @js.native
-  sealed trait highres extends YouTubePlayerQuality
+  sealed trait highres
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def highres: highres = "highres".asInstanceOf[highres]
   
   @js.native
-  sealed trait large extends YouTubePlayerQuality
+  sealed trait large
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait medium extends YouTubePlayerQuality
+  sealed trait medium
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait paused extends YouTubePlayerState
+  sealed trait paused
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
   
@@ -75,12 +94,16 @@ object ytPlayerStrings {
   def playbackRateChange: playbackRateChange = "playbackRateChange".asInstanceOf[playbackRateChange]
   
   @js.native
-  sealed trait playing extends YouTubePlayerState
+  sealed trait playing
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
-  sealed trait small extends YouTubePlayerQuality
+  sealed trait small
+    extends StObject
+       with YouTubePlayerQuality
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   
@@ -95,7 +118,9 @@ object ytPlayerStrings {
   def unplayable: unplayable = "unplayable".asInstanceOf[unplayable]
   
   @js.native
-  sealed trait unstarted extends YouTubePlayerState
+  sealed trait unstarted
+    extends StObject
+       with YouTubePlayerState
   @scala.inline
   def unstarted: unstarted = "unstarted".asInstanceOf[unstarted]
 }

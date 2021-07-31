@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NamespaceStatus is information about the current status of a Namespace.
   */
-@js.native
 trait NamespaceStatus extends StObject {
   
   /**
     * Represents the latest available observations of a namespace's current state.
     */
-  var conditions: js.Array[NamespaceCondition] = js.native
+  var conditions: js.Array[NamespaceCondition]
   
   /**
     * Phase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
     */
-  var phase: String = js.native
+  var phase: String
 }
 object NamespaceStatus {
   

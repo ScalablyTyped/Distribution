@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.TabStrip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTabStrip extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): TabStrip = js.native
+  def extend(proto: js.Object): TabStrip
   
   /* static member */
-  var fn: TabStrip = js.native
+  var fn: TabStrip
 }
 object TypeofTabStrip {
   

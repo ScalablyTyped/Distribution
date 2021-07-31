@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMitigationActionRequest extends StObject {
   
   /**
     * A friendly name for the action. Choose a friendly name that accurately describes the action (for example, EnableLoggingAction).
     */
-  var actionName: MitigationActionName = js.native
+  var actionName: MitigationActionName
   
   /**
     * Defines the type of action and the parameters for that action.
     */
-  var actionParams: MitigationActionParams = js.native
+  var actionParams: MitigationActionParams
   
   /**
     * The ARN of the IAM role that is used to apply the mitigation action.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * Metadata that can be used to manage the mitigation action.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateMitigationActionRequest {
   

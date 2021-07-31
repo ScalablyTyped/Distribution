@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** radio-group 中选中项的 value */
-@js.native
 trait ValueString extends StObject {
   
-  var value: String = js.native
+  var value: String
 }
 object ValueString {
   

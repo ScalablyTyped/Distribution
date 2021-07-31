@@ -2,80 +2,78 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of observable attributes for overlays, including color and opacity of
   * stroke and fill, and line styles.
   */
-@js.native
 trait Style extends StObject {
   
   /**
     * The fill color of a shape.
     */
-  var fillColor: String = js.native
+  var fillColor: String
   
   /**
     * The opacity of the fill color.
     */
-  var fillOpacity: Double = js.native
+  var fillOpacity: Double
   
   /**
     * A rule for determining whether a point is inside or outside a polygon.
     */
-  var fillRule: String = js.native
+  var fillRule: String
   
   /**
     * The style to use when drawing line endings.
     */
-  var lineCap: String = js.native
+  var lineCap: String
   
   /**
     * An array of line and gap lengths, used to create a dashed line.
     */
-  var lineDash: js.Array[Double] = js.native
+  var lineDash: js.Array[Double]
   
   /**
     * The number of CSS pixels to offset drawing of a line's dash pattern.
     */
-  var lineDashOffset: Double = js.native
+  var lineDashOffset: Double
   
   /**
     * The gradient to apply along the line.
     */
-  var lineGradient: LineGradient = js.native
+  var lineGradient: LineGradient
   
   /**
     * The style to use when drawing joins between line segments.
     */
-  var lineJoin: String = js.native
+  var lineJoin: String
   
   /**
     * The width of a line's stroke, in CSS pixels.
     */
-  var lineWidth: Double = js.native
+  var lineWidth: Double
   
   /**
     * The stroke color of a line.
     */
-  var strokeColor: String = js.native
+  var strokeColor: String
   
   /**
     * The unit distance along the line where a stroke ends.
     */
-  var strokeEnd: Double = js.native
+  var strokeEnd: Double
   
   /**
     * The opacity of the stroke color.
     */
-  var strokeOpacity: Double = js.native
+  var strokeOpacity: Double
   
   /**
     * The unit distance along the line where a stroke begins.
     */
-  var strokeStart: Double = js.native
+  var strokeStart: Double
 }
 object Style {
   

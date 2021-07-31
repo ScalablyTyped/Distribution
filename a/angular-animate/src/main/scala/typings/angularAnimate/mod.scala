@@ -8,7 +8,6 @@ import typings.angularAnimate.mod.angularAugmentingMod.animate.IAnimateFactory
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,7 +28,7 @@ object mod extends Shortcut {
     trait IModule extends StObject {
       
       def animation(name: String, animationFactory: IAnimateFactory): IModule = js.native
-      def animation(name: String, inlineAnnotatedFunction: js.Array[_]): IModule = js.native
+      def animation(name: String, inlineAnnotatedFunction: js.Array[js.Any]): IModule = js.native
       def animation(`object`: js.Object): IModule = js.native
     }
     
@@ -38,7 +37,6 @@ object mod extends Shortcut {
       */
     object animate {
       
-      @js.native
       trait IAnimateCallbackObject extends StObject {
         
         var addClass: js.UndefOr[
@@ -47,9 +45,9 @@ object mod extends Shortcut {
                   /* addedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var animate: js.UndefOr[
                 js.Function5[
@@ -58,9 +56,9 @@ object mod extends Shortcut {
                   /* toStyles */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var beforeAddClass: js.UndefOr[
                 js.Function4[
@@ -68,9 +66,9 @@ object mod extends Shortcut {
                   /* addedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var beforeRemoveClass: js.UndefOr[
                 js.Function4[
@@ -78,9 +76,9 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var beforeSetClass: js.UndefOr[
                 js.Function5[
@@ -89,25 +87,45 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var enter: js.UndefOr[
-                js.Function3[/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions, _]
-              ] = js.native
+                js.Function3[
+                  /* element */ JQuery, 
+                  /* doneFunction */ Function, 
+                  /* options */ IAnimationOptions, 
+                  js.Any
+                ]
+              ] = js.undefined
         
         var eventFn: js.UndefOr[
-                js.Function3[/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions, _]
-              ] = js.native
+                js.Function3[
+                  /* element */ JQuery, 
+                  /* doneFunction */ Function, 
+                  /* options */ IAnimationOptions, 
+                  js.Any
+                ]
+              ] = js.undefined
         
         var leave: js.UndefOr[
-                js.Function3[/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions, _]
-              ] = js.native
+                js.Function3[
+                  /* element */ JQuery, 
+                  /* doneFunction */ Function, 
+                  /* options */ IAnimationOptions, 
+                  js.Any
+                ]
+              ] = js.undefined
         
         var move: js.UndefOr[
-                js.Function3[/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions, _]
-              ] = js.native
+                js.Function3[
+                  /* element */ JQuery, 
+                  /* doneFunction */ Function, 
+                  /* options */ IAnimationOptions, 
+                  js.Any
+                ]
+              ] = js.undefined
         
         var removeClass: js.UndefOr[
                 js.Function4[
@@ -115,9 +133,9 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var setClass: js.UndefOr[
                 js.Function5[
@@ -126,9 +144,9 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  _
+                  js.Any
                 ]
-              ] = js.native
+              ] = js.undefined
       }
       object IAnimateCallbackObject {
         
@@ -143,7 +161,7 @@ object mod extends Shortcut {
           
           @scala.inline
           def setAddClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "addClass", js.Any.fromFunction4(value))
           
           @scala.inline
@@ -151,7 +169,7 @@ object mod extends Shortcut {
           
           @scala.inline
           def setAnimate(
-            value: (/* element */ JQuery, /* fromStyles */ String, /* toStyles */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* fromStyles */ String, /* toStyles */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "animate", js.Any.fromFunction5(value))
           
           @scala.inline
@@ -159,7 +177,7 @@ object mod extends Shortcut {
           
           @scala.inline
           def setBeforeAddClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "beforeAddClass", js.Any.fromFunction4(value))
           
           @scala.inline
@@ -167,7 +185,7 @@ object mod extends Shortcut {
           
           @scala.inline
           def setBeforeRemoveClass(
-            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "beforeRemoveClass", js.Any.fromFunction4(value))
           
           @scala.inline
@@ -175,39 +193,47 @@ object mod extends Shortcut {
           
           @scala.inline
           def setBeforeSetClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "beforeSetClass", js.Any.fromFunction5(value))
           
           @scala.inline
           def setBeforeSetClassUndefined: Self = StObject.set(x, "beforeSetClass", js.undefined)
           
           @scala.inline
-          def setEnter(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => _): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
+          def setEnter(
+            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+          ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
           
           @scala.inline
           def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
           
           @scala.inline
-          def setEventFn(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => _): Self = StObject.set(x, "eventFn", js.Any.fromFunction3(value))
+          def setEventFn(
+            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+          ): Self = StObject.set(x, "eventFn", js.Any.fromFunction3(value))
           
           @scala.inline
           def setEventFnUndefined: Self = StObject.set(x, "eventFn", js.undefined)
           
           @scala.inline
-          def setLeave(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => _): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+          def setLeave(
+            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+          ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
           
           @scala.inline
           def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
           
           @scala.inline
-          def setMove(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => _): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+          def setMove(
+            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+          ): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
           
           @scala.inline
           def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
           
           @scala.inline
           def setRemoveClass(
-            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "removeClass", js.Any.fromFunction4(value))
           
           @scala.inline
@@ -215,7 +241,7 @@ object mod extends Shortcut {
           
           @scala.inline
           def setSetClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => _
+            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
           ): Self = StObject.set(x, "setClass", js.Any.fromFunction5(value))
           
           @scala.inline
@@ -223,20 +249,19 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IAnimateCssRunner extends StObject {
         
         /**
           * Ends (aborts) the animation
           */
-        def end(): Unit = js.native
+        def end(): Unit
         
         /**
           * Starts the animation
           *
           * @returns The animation runner with a done function for supplying a callback.
           */
-        def start(): IAnimateCssRunnerStart = js.native
+        def start(): IAnimateCssRunnerStart
       }
       object IAnimateCssRunner {
         
@@ -258,7 +283,9 @@ object mod extends Shortcut {
       }
       
       @js.native
-      trait IAnimateCssRunnerStart extends IPromise[Unit] {
+      trait IAnimateCssRunnerStart
+        extends StObject
+           with IPromise[Unit] {
         
         /**
           * Allows you to add done callbacks to the running animation
@@ -331,15 +358,9 @@ object mod extends Shortcut {
           * @returns the animation callback promise
           */
         def animate(element: JQuery, from: js.Any, to: js.Any): IAnimationPromise = js.native
-        def animate(
-          element: JQuery,
-          from: js.Any,
-          to: js.Any,
-          className: js.UndefOr[scala.Nothing],
-          options: IAnimationOptions
-        ): IAnimationPromise = js.native
         def animate(element: JQuery, from: js.Any, to: js.Any, className: String): IAnimationPromise = js.native
         def animate(element: JQuery, from: js.Any, to: js.Any, className: String, options: IAnimationOptions): IAnimationPromise = js.native
+        def animate(element: JQuery, from: js.Any, to: js.Any, className: Unit, options: IAnimationOptions): IAnimationPromise = js.native
         
         /**
           * Cancels the provided animation.
@@ -368,12 +389,7 @@ object mod extends Shortcut {
           * @returns the animation callback promise
           */
         def enter(element: JQuery, parentElement: JQuery): IAnimationPromise = js.native
-        def enter(
-          element: JQuery,
-          parentElement: JQuery,
-          afterElement: js.UndefOr[scala.Nothing],
-          options: IAnimationOptions
-        ): IAnimationPromise = js.native
+        def enter(element: JQuery, parentElement: JQuery, afterElement: Unit, options: IAnimationOptions): IAnimationPromise = js.native
         def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery): IAnimationPromise = js.native
         def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery, options: IAnimationOptions): IAnimationPromise = js.native
         
@@ -410,14 +426,14 @@ object mod extends Shortcut {
         def off(event: String): Unit = js.native
         def off(
           event: String,
-          container: js.UndefOr[scala.Nothing],
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
+          container: Unit,
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
         ): Unit = js.native
         def off(event: String, container: JQuery): Unit = js.native
         def off(
           event: String,
           container: JQuery,
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
         ): Unit = js.native
         
         /**
@@ -430,7 +446,7 @@ object mod extends Shortcut {
         def on(
           event: String,
           container: JQuery,
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
         ): Unit = js.native
         
         /**
@@ -471,20 +487,19 @@ object mod extends Shortcut {
         * Angular Animation Options
         * see https://docs.angularjs.org/api/ngAnimate/#applying-directive-specific-styles-to-an-animation
         */
-      @js.native
       trait IAnimationOptions extends StObject {
         
         /**
           * A space separated list of CSS classes that will be added to the element and spread across the animation.
           */
-        var addClass: js.UndefOr[String] = js.native
+        var addClass: js.UndefOr[String] = js.undefined
         
         /**
           * Whether or not the provided from and to styles will be removed once the animation is closed. This is useful for
           * when the styles are used purely for the sake of the animation and do not have a lasting visual effect on the element
           * (e.g. a colapse and open animation). By default this value is set to false.
           */
-        var cleanupStyles: js.UndefOr[Boolean] = js.native
+        var cleanupStyles: js.UndefOr[Boolean] = js.undefined
         
         /**
           * A number value representing the total delay of the transition and/or keyframe (note that a value of
@@ -493,70 +508,70 @@ object mod extends Shortcut {
           * transition-delay: DETECTED_VALUE). Using true is useful when you want the CSS classes and inline styles to
           * all share the same CSS delay value.
           */
-        var delay: js.UndefOr[Double] = js.native
+        var delay: js.UndefOr[Double] = js.undefined
         
         /**
           * A number value representing the total duration of the transition and/or keyframe (note that a value
           * of 1 is 1000ms). If a value of 0 is provided then the animation will be skipped entirely.
           */
-        var duration: js.UndefOr[Double] = js.native
+        var duration: js.UndefOr[Double] = js.undefined
         
         /**
           * The CSS easing value that will be applied to the transition or keyframe animation (or both).
           */
-        var easing: js.UndefOr[String] = js.native
+        var easing: js.UndefOr[String] = js.undefined
         
         /**
           * The DOM event (e.g. enter, leave, move). When used, a generated CSS class of ng-EVENT and
           * ng-EVENT-active will be applied to the element during the animation. Multiple events can be provided when
           * spaces are used as a separator. (Note that this will not perform any DOM operation.)
           */
-        var event: js.UndefOr[String] = js.native
+        var event: js.UndefOr[String] = js.undefined
         
         /**
           * The starting CSS styles (a key/value object) that will be applied at the start of the animation.
           */
-        var from: js.UndefOr[js.Object] = js.native
+        var from: js.UndefOr[js.Object] = js.undefined
         
         /**
           * The raw CSS keyframe animation style that will be used (e.g. 1s my_animation linear).
           */
-        var keyframeStyle: js.UndefOr[String] = js.native
+        var keyframeStyle: js.UndefOr[String] = js.undefined
         
         /**
           * A space separated list of CSS classes that will be removed from the element and spread across
           * the animation.
           */
-        var removeClass: js.UndefOr[String] = js.native
+        var removeClass: js.UndefOr[String] = js.undefined
         
         /**
           * A numeric time value representing the delay between successively animated elements (Click here to
           * learn how CSS-based staggering works in ngAnimate.)
           */
-        var stagger: js.UndefOr[Double] = js.native
+        var stagger: js.UndefOr[Double] = js.undefined
         
         /**
           * The numeric index representing the stagger item (e.g. a value of 5 is equal to the sixth item
           * in the stagger; therefore when a stagger option value of 0.1 is used then there will be a stagger delay of 600ms)
           *
           */
-        var staggerIndex: js.UndefOr[Double] = js.native
+        var staggerIndex: js.UndefOr[Double] = js.undefined
         
         /**
           * Indicates that the ng-prefix will be added to the event class. Setting to false or
           * omitting will turn ng-EVENT and ng-EVENT-active in EVENT and EVENT-active. Unused if event is omitted.
           */
-        var structural: js.UndefOr[Boolean] = js.native
+        var structural: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The ending CSS styles (a key/value object) that will be applied across the animation via a CSS transition.
           */
-        var to: js.UndefOr[js.Object] = js.native
+        var to: js.UndefOr[js.Object] = js.undefined
         
         /**
           * The raw CSS transition style that will be used (e.g. 1s linear all).
           */
-        var transitionStyle: js.UndefOr[String] = js.native
+        var transitionStyle: js.UndefOr[String] = js.undefined
       }
       object IAnimationOptions {
         

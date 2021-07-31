@@ -2,39 +2,39 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GEHtmlBalloon extends GEAbstractBalloon {
+trait GEHtmlBalloon
+  extends StObject
+     with GEAbstractBalloon {
   
   /**
     * The background color of the balloon.
     * This must be set using the HTML hex format #RRGGBB.
     * If not set, the default is interpreted as #FFFFFF.
     */
-  def getBackgroundColor(): String = js.native
+  def getBackgroundColor(): String
   
   /**
     * The color of the text in the balloon.
     * This must be set using the HTML hex format #RRGGBB.
     * If not set, it is interpreted as #000000.
     */
-  def getForegroundColor(): String = js.native
+  def getForegroundColor(): String
   
   /**
     * The background color of the balloon.
     * This must be set using the HTML hex format #RRGGBB.
     * If not set, the default is interpreted as #FFFFFF.
     */
-  def setBackgroundColor(backgroundColor: String): Unit = js.native
+  def setBackgroundColor(backgroundColor: String): Unit
   
   /**
     * The color of the text in the balloon.
     * This must be set using the HTML hex format #RRGGBB.
     * If not set, it is interpreted as #000000.
     */
-  def setForegroundColor(foregroundColor: String): Unit = js.native
+  def setForegroundColor(foregroundColor: String): Unit
 }
 object GEHtmlBalloon {
   

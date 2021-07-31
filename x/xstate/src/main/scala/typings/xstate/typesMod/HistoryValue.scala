@@ -3,15 +3,13 @@ package typings.xstate.typesMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryValue extends StObject {
   
-  var current: js.UndefOr[StateValue] = js.native
+  var current: js.UndefOr[StateValue] = js.undefined
   
-  var states: Record[String, js.UndefOr[HistoryValue]] = js.native
+  var states: Record[String, js.UndefOr[HistoryValue]]
 }
 object HistoryValue {
   

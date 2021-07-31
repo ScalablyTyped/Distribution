@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartYAxisItemNotes extends StObject {
   
-  var data: js.UndefOr[js.Array[ChartYAxisItemNotesDataItem]] = js.native
+  var data: js.UndefOr[js.Array[ChartYAxisItemNotesDataItem]] = js.undefined
   
-  var icon: js.UndefOr[ChartYAxisItemNotesIcon] = js.native
+  var icon: js.UndefOr[ChartYAxisItemNotesIcon] = js.undefined
   
-  var label: js.UndefOr[ChartYAxisItemNotesLabel] = js.native
+  var label: js.UndefOr[ChartYAxisItemNotesLabel] = js.undefined
   
-  var line: js.UndefOr[ChartYAxisItemNotesLine] = js.native
+  var line: js.UndefOr[ChartYAxisItemNotesLine] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartYAxisItemNotes {
   

@@ -14,76 +14,70 @@ import typings.webshotNode.webshotNodeStrings.png
 import typings.webshotNode.webshotNodeStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String): ReadableStream = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dst: String): Unit = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dst: String, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dst: String, options: Options): Unit = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dst: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, options: Options): ReadableStream = js.native
-  @JSImport("webshot-node", JSImport.Namespace)
-  @js.native
-  def apply(src: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = js.native
+  @scala.inline
+  def apply(src: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(src: String, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(src: String, dst: String): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(src: String, dst: String, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(src: String, dst: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(src: String, dst: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(src: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(src: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
+  @JSImport("webshot-node", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var captureSelector: js.UndefOr[Boolean] = js.native
+    var captureSelector: js.UndefOr[Boolean] = js.undefined
     
-    var cookies: js.UndefOr[js.Array[StringDictionary[_]] | Null] = js.native
+    var cookies: js.UndefOr[js.Array[StringDictionary[js.Any]] | Null] = js.undefined
     
-    var customCSS: js.UndefOr[String] = js.native
+    var customCSS: js.UndefOr[String] = js.undefined
     
-    var customHeaders: js.UndefOr[js.Array[StringDictionary[_]] | Null] = js.native
+    var customHeaders: js.UndefOr[js.Array[StringDictionary[js.Any]] | Null] = js.undefined
     
-    var defaultWhiteBackground: js.UndefOr[Boolean] = js.native
+    var defaultWhiteBackground: js.UndefOr[Boolean] = js.undefined
     
-    var errorIfJSException: js.UndefOr[Boolean] = js.native
+    var errorIfJSException: js.UndefOr[Boolean] = js.undefined
     
-    var errorIfStatusIsNot200: js.UndefOr[Boolean] = js.native
+    var errorIfStatusIsNot200: js.UndefOr[Boolean] = js.undefined
     
-    var phantomConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var phantomConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var phantomPath: js.UndefOr[String] = js.native
+    var phantomPath: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var renderDelay: js.UndefOr[Double] = js.native
+    var renderDelay: js.UndefOr[Double] = js.undefined
     
-    var screenSize: js.UndefOr[Height] = js.native
+    var screenSize: js.UndefOr[Height] = js.undefined
     
-    var shotOffset: js.UndefOr[Bottom] = js.native
+    var shotOffset: js.UndefOr[Bottom] = js.undefined
     
-    var shotSize: js.UndefOr[Width] = js.native
+    var shotSize: js.UndefOr[Width] = js.undefined
     
-    var siteType: js.UndefOr[url | file | html] = js.native
+    var siteType: js.UndefOr[url | file | html] = js.undefined
     
-    var streamType: js.UndefOr[png | jpg | jpeg] = js.native
+    var streamType: js.UndefOr[png | jpg | jpeg] = js.undefined
     
-    var takeShotOnCallback: js.UndefOr[Boolean] = js.native
+    var takeShotOnCallback: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var windowSize: js.UndefOr[Height] = js.native
+    var windowSize: js.UndefOr[Height] = js.undefined
   }
   object Options {
     
@@ -103,7 +97,7 @@ object mod {
       def setCaptureSelectorUndefined: Self = StObject.set(x, "captureSelector", js.undefined)
       
       @scala.inline
-      def setCookies(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      def setCookies(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCookiesNull: Self = StObject.set(x, "cookies", null)
@@ -121,7 +115,7 @@ object mod {
       def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
       
       @scala.inline
-      def setCustomHeaders(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      def setCustomHeaders(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomHeadersNull: Self = StObject.set(x, "customHeaders", null)

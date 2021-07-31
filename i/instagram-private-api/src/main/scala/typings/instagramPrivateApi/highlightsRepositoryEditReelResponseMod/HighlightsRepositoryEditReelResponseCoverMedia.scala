@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryEditReelResponseCoverMedia extends StObject {
   
-  var crop_rect: js.Array[Double] = js.native
+  var crop_rect: js.Array[Double]
   
-  var cropped_image_version: HighlightsRepositoryEditReelResponseCroppedImageVersion = js.native
+  var cropped_image_version: HighlightsRepositoryEditReelResponseCroppedImageVersion
   
-  var full_image_version: HighlightsRepositoryEditReelResponseFullImageVersion = js.native
+  var full_image_version: HighlightsRepositoryEditReelResponseFullImageVersion
   
-  var media_id: String = js.native
+  var media_id: String
 }
 object HighlightsRepositoryEditReelResponseCoverMedia {
   

@@ -14,10 +14,13 @@ import typings.std.Error
 import typings.std.ParameterDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("inversify-express-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("inversify-express-utils", "BaseHttpController")
   @js.native
@@ -26,7 +29,8 @@ object mod {
   
   @JSImport("inversify-express-utils", "BaseMiddleware")
   @js.native
-  abstract class BaseMiddleware () extends StObject
+  abstract class BaseMiddleware ()
+    extends typings.inversifyExpressUtils.baseMiddlewareMod.BaseMiddleware
   
   @JSImport("inversify-express-utils", "HttpContent")
   @js.native
@@ -105,108 +109,81 @@ object mod {
     def HttpContext_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpContext")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("inversify-express-utils", "all")
-  @js.native
-  def all(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def all(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "cleanUpMetadata")
-  @js.native
-  def cleanUpMetadata(): Unit = js.native
+  @scala.inline
+  def cleanUpMetadata(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanUpMetadata")().asInstanceOf[Unit]
   
-  @JSImport("inversify-express-utils", "controller")
-  @js.native
-  def controller(path: String, middleware: Middleware*): js.Function1[/* target */ js.Any, Unit] = js.native
+  @scala.inline
+  def controller(path: String, middleware: Middleware*): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
-  @JSImport("inversify-express-utils", "cookies")
-  @js.native
-  def cookies(): ParameterDecorator = js.native
-  @JSImport("inversify-express-utils", "cookies")
-  @js.native
-  def cookies(cookieName: String): ParameterDecorator = js.native
+  @scala.inline
+  def cookies(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")().asInstanceOf[ParameterDecorator]
+  @scala.inline
+  def cookies(cookieName: String): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")(cookieName.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "getRawMetadata")
-  @js.native
-  def getRawMetadata(container: Container): js.Array[ControllerMetadata] = js.native
+  @scala.inline
+  def getRawMetadata(container: Container): js.Array[ControllerMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMetadata")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[ControllerMetadata]]
   
-  @JSImport("inversify-express-utils", "getRouteInfo")
-  @js.native
-  def getRouteInfo(container: Container): js.Array[Controller] = js.native
+  @scala.inline
+  def getRouteInfo(container: Container): js.Array[Controller] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteInfo")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[Controller]]
   
-  @JSImport("inversify-express-utils", "httpDelete")
-  @js.native
-  def httpDelete(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpDelete(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpDelete")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpGet")
-  @js.native
-  def httpGet(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpGet(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpGet")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpHead")
-  @js.native
-  def httpHead(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpHead(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpHead")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpMethod")
-  @js.native
-  def httpMethod(method: String, path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpMethod(method: String, path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpMethod")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpPatch")
-  @js.native
-  def httpPatch(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpPatch(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPatch")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpPost")
-  @js.native
-  def httpPost(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpPost(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPost")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "httpPut")
-  @js.native
-  def httpPut(path: String, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def httpPut(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPut")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-express-utils", "injectHttpContext")
-  @js.native
-  def injectHttpContext(target: js.Any, targetKey: String): Unit = js.native
-  @JSImport("inversify-express-utils", "injectHttpContext")
-  @js.native
-  def injectHttpContext(target: js.Any, targetKey: String, index: Double): Unit = js.native
+  @scala.inline
+  def injectHttpContext(target: js.Any, targetKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def injectHttpContext(target: js.Any, targetKey: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("inversify-express-utils", "next")
-  @js.native
-  def next(): ParameterDecorator = js.native
+  @scala.inline
+  def next(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "principal")
-  @js.native
-  def principal(): ParameterDecorator = js.native
+  @scala.inline
+  def principal(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("principal")().asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "queryParam")
-  @js.native
-  def queryParam(): ParameterDecorator = js.native
-  @JSImport("inversify-express-utils", "queryParam")
-  @js.native
-  def queryParam(queryParamName: String): ParameterDecorator = js.native
+  @scala.inline
+  def queryParam(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParam")().asInstanceOf[ParameterDecorator]
+  @scala.inline
+  def queryParam(queryParamName: String): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParam")(queryParamName.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "request")
-  @js.native
-  def request(): ParameterDecorator = js.native
+  @scala.inline
+  def request(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "requestBody")
-  @js.native
-  def requestBody(): ParameterDecorator = js.native
+  @scala.inline
+  def requestBody(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("requestBody")().asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "requestHeaders")
-  @js.native
-  def requestHeaders(): ParameterDecorator = js.native
-  @JSImport("inversify-express-utils", "requestHeaders")
-  @js.native
-  def requestHeaders(headerName: String): ParameterDecorator = js.native
+  @scala.inline
+  def requestHeaders(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("requestHeaders")().asInstanceOf[ParameterDecorator]
+  @scala.inline
+  def requestHeaders(headerName: String): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("requestHeaders")(headerName.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "requestParam")
-  @js.native
-  def requestParam(): ParameterDecorator = js.native
-  @JSImport("inversify-express-utils", "requestParam")
-  @js.native
-  def requestParam(paramName: String): ParameterDecorator = js.native
+  @scala.inline
+  def requestParam(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("requestParam")().asInstanceOf[ParameterDecorator]
+  @scala.inline
+  def requestParam(paramName: String): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("requestParam")(paramName.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
   
-  @JSImport("inversify-express-utils", "response")
-  @js.native
-  def response(): ParameterDecorator = js.native
+  @scala.inline
+  def response(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("response")().asInstanceOf[ParameterDecorator]
   
   object results {
     

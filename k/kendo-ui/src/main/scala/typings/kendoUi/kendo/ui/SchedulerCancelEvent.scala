@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchedulerCancelEvent extends SchedulerEvent {
+trait SchedulerCancelEvent
+  extends StObject
+     with SchedulerEvent {
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var event: js.UndefOr[typings.kendoUi.kendo.data.SchedulerEvent] = js.native
+  var event: js.UndefOr[typings.kendoUi.kendo.data.SchedulerEvent] = js.undefined
 }
 object SchedulerCancelEvent {
   

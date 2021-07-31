@@ -11,27 +11,28 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RateLimit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RateLimit]
+  @scala.inline
+  def apply(options: Options): RateLimit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RateLimit]
+  
   @JSImport("express-rate-limit", JSImport.Namespace)
   @js.native
-  def apply(): RateLimit = js.native
-  @JSImport("express-rate-limit", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RateLimit = js.native
+  val ^ : js.Any = js.native
   
   type MaxValueFn = js.Function0[Double | js.Promise[Double]]
   
-  @js.native
   trait Message
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var message: String = js.native
+    var message: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object Message {
     
@@ -52,7 +53,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -61,7 +61,7 @@ object mod {
       * Behavior and name will likely change in future releases.
       * @default false
       */
-    var draft_polli_ratelimit_headers: js.UndefOr[Boolean] = js.native
+    var draft_polli_ratelimit_headers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The funciton to handle requests once `max` is exceeded. It receives the request and response objects.
@@ -72,26 +72,30 @@ object mod {
       */
     var handler: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
       * responses andtime to wait before retrying (`Retry-After`) when `max` is exceeded. Defaults to `true`.
       */
-    var headers: js.UndefOr[Boolean] = js.native
+    var headers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function used to generate keys. Defaults to using `req.ip`.
       * Default: `(req, res) => req.ip`
       */
     var keyGenerator: js.UndefOr[
-        js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
-      ] = js.native
+        js.Function2[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
+          String
+        ]
+      ] = js.undefined
     
     /**
       * Max number of connections during `windowMs` before sending a 429 response. May be a number, or
@@ -99,13 +103,13 @@ object mod {
       * Set to `0` to disable.
       * @default 5
       */
-    var max: js.UndefOr[Double | MaxValueFn] = js.native
+    var max: js.UndefOr[Double | MaxValueFn] = js.undefined
     
     /**
       * Error message sent to user when `max` is exceeded. May be a `string`, JSON object, or any other value
       * that Express's `req.send()` supports. Defaults to `'Too many requests, please try again later.'`.
       */
-    var message: js.UndefOr[String | Buffer | Message] = js.native
+    var message: js.UndefOr[String | Buffer | Message] = js.undefined
     
     /**
       * Function that is called the first time `max` is exceeded. The `req.rateLimit` object has `limit`, `current`,
@@ -115,12 +119,12 @@ object mod {
       */
     var onLimitReached: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* optionsUsed */ this.type, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function used to skip requests. Returning `true` from the function will skip limiting for that request. Defaults to
@@ -128,28 +132,32 @@ object mod {
       * Default: `(req, res) => false`
       */
     var skip: js.UndefOr[
-        js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
-      ] = js.native
+        js.Function2[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
+          Boolean
+        ]
+      ] = js.undefined
     
     /**
       * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
       */
-    var skipFailedRequests: js.UndefOr[Boolean] = js.native
+    var skipFailedRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set to `true`, successful requests (status < 400) won't be counted. Defaults to `false`.
       */
-    var skipSuccessfulRequests: js.UndefOr[Boolean] = js.native
+    var skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined
     
     /**
       * HTTP status code returned when `max` is exceeded. Defaults to `429`.
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * The storage to use when persisting rate limit attempts.
       */
-    var store: js.UndefOr[Store] = js.native
+    var store: js.UndefOr[Store] = js.undefined
     
     /**
       * Timeframe for which requests are checked/remembered. Also used in the Retry-After header when the limit is reached.
@@ -157,7 +165,7 @@ object mod {
       * In some cases the units also differ (e.g. seconds vs miliseconds)
       * @default 60000
       */
-    var windowMs: js.UndefOr[Double] = js.native
+    var windowMs: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -178,7 +186,7 @@ object mod {
       
       @scala.inline
       def setHandler(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => _
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -191,7 +199,9 @@ object mod {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setKeyGenerator(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
+      def setKeyGenerator(
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+      ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
       @scala.inline
       def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
@@ -213,14 +223,16 @@ object mod {
       
       @scala.inline
       def setOnLimitReached(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Options) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], Options) => Unit
       ): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
       
       @scala.inline
-      def setSkip(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      def setSkip(
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+      ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
@@ -266,16 +278,15 @@ object mod {
     def resetKey(key: String): Unit = js.native
   }
   
-  @js.native
   trait RateLimitInfo extends StObject {
     
-    val current: Double = js.native
+    val current: Double
     
-    val limit: Double = js.native
+    val limit: Double
     
-    val remaining: Double = js.native
+    val remaining: Double
     
-    val resetTime: js.UndefOr[Date] = js.native
+    val resetTime: js.UndefOr[Date] = js.undefined
   }
   object RateLimitInfo {
     
@@ -305,16 +316,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Store extends StObject {
     
-    def decrement(key: String): Unit = js.native
+    def decrement(key: String): Unit
     
-    def incr(key: String, cb: StoreIncrementCallback): Unit = js.native
+    def incr(key: String, cb: StoreIncrementCallback): Unit
     
-    def resetAll(): Unit = js.native
+    def resetAll(): Unit
     
-    def resetKey(key: String): Unit = js.native
+    def resetKey(key: String): Unit
   }
   object Store {
     
@@ -357,7 +367,6 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
         /**
@@ -365,7 +374,7 @@ object mod {
           * and remaining number of requests and, if the store provides it, a resetTime Date object.
           * These may be used in your application code to take additional actions or inform the user of their status
           */
-        var rateLimit: RateLimitInfo = js.native
+        var rateLimit: RateLimitInfo
       }
       object Request {
         

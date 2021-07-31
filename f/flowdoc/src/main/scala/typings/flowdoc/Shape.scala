@@ -5,17 +5,17 @@ import typings.flowdoc.Flow.Point
 import typings.flowdoc.Flow.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Shape extends Node {
+trait Shape
+  extends StObject
+     with Node {
   
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
-  var position: Point = js.native
+  var position: Point
   
-  var size: Size = js.native
+  var size: Size
 }
 object Shape {
   

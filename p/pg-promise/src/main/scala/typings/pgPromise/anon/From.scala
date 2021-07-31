@@ -3,17 +3,15 @@ package typings.pgPromise.anon
 import typings.pgPromise.mod.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From[S] extends StObject {
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var skip: js.UndefOr[String | js.Array[String] | (js.Function1[/* c */ Column[S], Boolean])] = js.native
+  var skip: js.UndefOr[String | js.Array[String] | (js.Function1[/* c */ Column[S], Boolean])] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
 }
 object From {
   
@@ -24,7 +22,7 @@ object From {
   }
   
   @scala.inline
-  implicit class FromMutableBuilder[Self <: From[_], S] (val x: Self with From[S]) extends AnyVal {
+  implicit class FromMutableBuilder[Self <: From[?], S] (val x: Self & From[S]) extends AnyVal {
     
     @scala.inline
     def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])

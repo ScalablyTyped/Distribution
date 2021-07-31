@@ -4,7 +4,6 @@ import typings.googleProtobuf.anon.InstantiableV
 import typings.googleProtobuf.mod.Map.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "Map")
@@ -46,15 +45,17 @@ class Map[K, V] protected () extends StObject {
 /* static members */
 object Map {
   
-  @JSImport("google-protobuf", "Map.fromObject")
+  @JSImport("google-protobuf", "Map")
   @js.native
-  def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: js.Any, valueFromObject: js.Any): Map[TK, TV] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: js.Any, valueFromObject: js.Any): Map[TK, TV] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(entries.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any], valueFromObject.asInstanceOf[js.Any])).asInstanceOf[Map[TK, TV]]
   
   // This is implemented by jspb.Map.ArrayIteratorIterable_, but that class shouldn't be exported
-  @js.native
   trait Iterator[T] extends StObject {
     
-    def next(): IteratorResult[T] = js.native
+    def next(): IteratorResult[T]
   }
   object Iterator {
     
@@ -65,19 +66,18 @@ object Map {
     }
     
     @scala.inline
-    implicit class IteratorMutableBuilder[Self <: Iterator[_], T] (val x: Self with Iterator[T]) extends AnyVal {
+    implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
       
       @scala.inline
       def setNext(value: () => IteratorResult[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait IteratorResult[T] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: T = js.native
+    var value: T
   }
   object IteratorResult {
     
@@ -88,7 +88,7 @@ object Map {
     }
     
     @scala.inline
-    implicit class IteratorResultMutableBuilder[Self <: IteratorResult[_], T] (val x: Self with IteratorResult[T]) extends AnyVal {
+    implicit class IteratorResultMutableBuilder[Self <: IteratorResult[?], T] (val x: Self & IteratorResult[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

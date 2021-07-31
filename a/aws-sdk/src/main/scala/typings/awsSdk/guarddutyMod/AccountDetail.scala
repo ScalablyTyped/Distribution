@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountDetail extends StObject {
   
   /**
     * The member account ID.
     */
-  var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
+  var AccountId: typings.awsSdk.guarddutyMod.AccountId
   
   /**
     * The email address of the member account.
     */
-  var Email: typings.awsSdk.guarddutyMod.Email = js.native
+  var Email: typings.awsSdk.guarddutyMod.Email
 }
 object AccountDetail {
   

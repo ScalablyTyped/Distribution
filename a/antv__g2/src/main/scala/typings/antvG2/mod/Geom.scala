@@ -3,7 +3,6 @@ package typings.antvG2.mod
 import typings.antvG2.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,7 +11,7 @@ trait Geom extends StObject {
   def active(open: Boolean): Geom = js.native
   
   def adjust(adj: String): this.type = js.native
-  def adjust(adjs: js.Array[_]): this.type = js.native
+  def adjust(adjs: js.Array[js.Any]): this.type = js.native
   
   def animate(opt: js.Any): Geom = js.native
   

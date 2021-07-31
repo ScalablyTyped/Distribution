@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminAccount extends StObject {
   
   /**
     * The AWS account ID for the account.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the account as a delegated administrator of Amazon Macie for the organization.
     */
-  var status: js.UndefOr[AdminStatus] = js.native
+  var status: js.UndefOr[AdminStatus] = js.undefined
 }
 object AdminAccount {
   

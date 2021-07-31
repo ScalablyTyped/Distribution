@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StickyPositionConstraint extends StObject {
   
   /**
     * Layout rectangle of the containing block of the sticky element
     */
-  var containingBlockRect: Rect = js.native
+  var containingBlockRect: Rect
   
   /**
     * The nearest sticky layer that shifts the containing block
     */
-  var nearestLayerShiftingContainingBlock: js.UndefOr[LayerId] = js.native
+  var nearestLayerShiftingContainingBlock: js.UndefOr[LayerId] = js.undefined
   
   /**
     * The nearest sticky layer that shifts the sticky box
     */
-  var nearestLayerShiftingStickyBox: js.UndefOr[LayerId] = js.native
+  var nearestLayerShiftingStickyBox: js.UndefOr[LayerId] = js.undefined
   
   /**
     * Layout rectangle of the sticky element before being shifted
     */
-  var stickyBoxRect: Rect = js.native
+  var stickyBoxRect: Rect
 }
 object StickyPositionConstraint {
   

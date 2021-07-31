@@ -2,21 +2,19 @@ package typings.reactBigScheduler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerProps extends StObject {
   
-  def nextClick(schedulerData: SchedulerData): Unit = js.native
+  def nextClick(schedulerData: SchedulerData): Unit
   
-  def onSelectDate(schedulerData: SchedulerData, date: String): Unit = js.native
+  def onSelectDate(schedulerData: SchedulerData, date: String): Unit
   
-  def onViewChange(schedulerData: SchedulerData, view: View): Unit = js.native
+  def onViewChange(schedulerData: SchedulerData, view: View): Unit
   
-  def prevClick(schedulerData: SchedulerData): Unit = js.native
+  def prevClick(schedulerData: SchedulerData): Unit
   
-  var schedulerData: SchedulerData = js.native
+  var schedulerData: SchedulerData
 }
 object SchedulerProps {
   

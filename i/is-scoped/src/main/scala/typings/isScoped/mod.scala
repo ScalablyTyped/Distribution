@@ -3,7 +3,6 @@ package typings.isScoped
 import typings.isScoped.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,9 +18,8 @@ object mod {
   	//=> false
   	```
   	*/
-  @JSImport("is-scoped", JSImport.Namespace)
-  @js.native
-  def apply(input: String): Boolean = js.native
+  @scala.inline
+  def apply(input: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("is-scoped", JSImport.Namespace)
   @js.native
@@ -47,9 +45,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isScoped(input: string): boolean;
   // export = isScoped;
-  @JSImport("is-scoped", "default")
-  @js.native
-  def default(input: String): Boolean = js.native
+  @scala.inline
+  def default(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

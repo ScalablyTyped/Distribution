@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tpu/v1", "tpu_v1.Resource$Projects$Locations$Tensorflowversions")
@@ -30,7 +29,7 @@ class ResourceProjectsLocationsTensorflowversions protected () extends StObject 
     */
   def get(): GaxiosPromise[SchemaTensorFlowVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaTensorFlowVersion]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTensorFlowVersion] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTensorFlowVersion] = js.native
   def get(params: ParamsResourceProjectsLocationsTensorflowversionsGet): GaxiosPromise[SchemaTensorFlowVersion] = js.native
   def get(
     params: ParamsResourceProjectsLocationsTensorflowversionsGet,
@@ -66,7 +65,7 @@ class ResourceProjectsLocationsTensorflowversions protected () extends StObject 
     */
   def list(): GaxiosPromise[SchemaListTensorFlowVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTensorFlowVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTensorFlowVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTensorFlowVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsTensorflowversionsList): GaxiosPromise[SchemaListTensorFlowVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsTensorflowversionsList,

@@ -3,21 +3,19 @@ package typings.numeral
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Billion extends StObject {
     
-    var billion: String = js.native
+    var billion: String
     
-    var million: String = js.native
+    var million: String
     
-    var thousand: String = js.native
+    var thousand: String
     
-    var trillion: String = js.native
+    var trillion: String
   }
   object Billion {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Decimal extends StObject {
     
-    var decimal: String = js.native
+    var decimal: String
     
-    var thousands: String = js.native
+    var thousands: String
   }
   object Decimal {
     
@@ -70,12 +67,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: RegExp = js.native
+    var format: RegExp
     
-    var unformat: RegExp = js.native
+    var unformat: RegExp
   }
   object Format {
     
@@ -96,10 +92,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Symbol extends StObject {
     
-    var symbol: String = js.native
+    var symbol: String
   }
   object Symbol {
     

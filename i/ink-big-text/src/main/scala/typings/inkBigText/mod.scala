@@ -28,7 +28,6 @@ import typings.inkBigText.inkBigTextStrings.yellow
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -62,28 +61,27 @@ object mod extends Shortcut {
   //     | 'magentaBright'
   //     | 'cyanBright'
   //     | 'whiteBright';
-  @js.native
   trait BigTextProps extends StObject {
     
-    var align: js.UndefOr[left | center | right] = js.native
+    var align: js.UndefOr[left | center | right] = js.undefined
     
-    var backgroundColor: js.UndefOr[transparent | black | red | green | yellow | blue | magenta | cyan | white] = js.native
+    var backgroundColor: js.UndefOr[transparent | black | red | green | yellow | blue | magenta | cyan | white] = js.undefined
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
     var font: js.UndefOr[
         block | slick | tiny | grid | pallet | shade | simple | simpleBlock | `3d` | simple3d | chrome | huge
-      ] = js.native
+      ] = js.undefined
     
-    var letterSpacing: js.UndefOr[Double] = js.native
+    var letterSpacing: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var space: js.UndefOr[Boolean] = js.native
+    var space: js.UndefOr[Boolean] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object BigTextProps {
     

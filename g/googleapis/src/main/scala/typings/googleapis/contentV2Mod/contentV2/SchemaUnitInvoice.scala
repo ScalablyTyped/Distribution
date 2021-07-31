@@ -2,31 +2,29 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUnitInvoice extends StObject {
   
   /**
     * Additional charges for a unit, e.g. shipping costs.
     */
-  var additionalCharges: js.UndefOr[js.Array[SchemaUnitInvoiceAdditionalCharge]] = js.native
+  var additionalCharges: js.UndefOr[js.Array[SchemaUnitInvoiceAdditionalCharge]] = js.undefined
   
   /**
     * Deprecated.
     */
-  var promotions: js.UndefOr[js.Array[SchemaPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[SchemaPromotion]] = js.undefined
   
   /**
     * [required] Price of the unit, before applying taxes.
     */
-  var unitPricePretax: js.UndefOr[SchemaPrice] = js.native
+  var unitPricePretax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Tax amounts to apply to the unit price.
     */
-  var unitPriceTaxes: js.UndefOr[js.Array[SchemaUnitInvoiceTaxLine]] = js.native
+  var unitPriceTaxes: js.UndefOr[js.Array[SchemaUnitInvoiceTaxLine]] = js.undefined
 }
 object SchemaUnitInvoice {
   

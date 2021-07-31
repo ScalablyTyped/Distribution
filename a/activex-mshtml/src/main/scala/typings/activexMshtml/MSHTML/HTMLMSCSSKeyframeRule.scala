@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLMSCSSKeyframeRule extends StObject {
   
   @JSName("MSHTML.HTMLMSCSSKeyframeRule_typekey")
-  var MSHTMLDotHTMLMSCSSKeyframeRule_typekey: HTMLMSCSSKeyframeRule = js.native
+  var MSHTMLDotHTMLMSCSSKeyframeRule_typekey: HTMLMSCSSKeyframeRule
   
-  var cssText: String = js.native
+  var cssText: String
   
-  var keyText: String = js.native
+  var keyText: String
   
-  val parentRule: IHTMLCSSRule = js.native
+  val parentRule: IHTMLCSSRule
   
-  val parentStyleSheet: IHTMLStyleSheet = js.native
+  val parentStyleSheet: IHTMLStyleSheet
   
-  val style: IHTMLRuleStyle = js.native
+  val style: IHTMLRuleStyle
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLMSCSSKeyframeRule {
   

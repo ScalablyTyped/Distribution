@@ -5,33 +5,31 @@ import typings.cesium.mod.Resource
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseType extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var proxy: js.UndefOr[DefaultProxy] = js.native
+  var proxy: js.UndefOr[DefaultProxy] = js.undefined
   
-  var queryParameters: js.UndefOr[js.Any] = js.native
+  var queryParameters: js.UndefOr[js.Any] = js.undefined
   
-  var request: js.UndefOr[typings.std.Request] = js.native
+  var request: js.UndefOr[typings.std.Request] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var retryAttempts: js.UndefOr[Double] = js.native
+  var retryAttempts: js.UndefOr[Double] = js.undefined
   
-  var retryCallback: js.UndefOr[typings.cesium.mod.Resource.RetryCallback] = js.native
+  var retryCallback: js.UndefOr[typings.cesium.mod.Resource.RetryCallback] = js.undefined
   
-  var templateValues: js.UndefOr[js.Any] = js.native
+  var templateValues: js.UndefOr[js.Any] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object ResponseType {
   

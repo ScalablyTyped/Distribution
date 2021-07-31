@@ -7,23 +7,21 @@ import typings.unfetch.unfetchStrings.include
 import typings.unfetch.unfetchStrings.omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
     var body: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<unfetch.anon.FnCall>[0] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var credentials: js.UndefOr[include | omit] = js.native
+    var credentials: js.UndefOr[include | omit] = js.undefined
     
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
   }
   object Body {
     
@@ -64,16 +62,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Entries extends StObject {
     
-    def entries(): js.Array[js.Tuple2[String, String]] = js.native
+    def entries(): js.Array[js.Tuple2[String, String]]
     
-    def get(key: String): js.UndefOr[String] = js.native
+    def get(key: String): js.UndefOr[String]
     
-    def has(key: String): Boolean = js.native
+    def has(key: String): Boolean
     
-    def keys(): js.Array[String] = js.native
+    def keys(): js.Array[String]
   }
   object Entries {
     

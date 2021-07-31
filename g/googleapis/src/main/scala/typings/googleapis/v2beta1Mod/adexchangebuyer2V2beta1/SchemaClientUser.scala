@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the accounts.clients.invitations.create method).  All fields are required
   * unless otherwise specified.
   */
-@js.native
 trait SchemaClientUser extends StObject {
   
   /**
@@ -21,24 +19,24 @@ trait SchemaClientUser extends StObject {
     * associated; the buyer must be a client of the current sponsor buyer. The
     * value of this field is ignored in an update operation.
     */
-  var clientAccountId: js.UndefOr[String] = js.native
+  var clientAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * User&#39;s email address. The value of this field is ignored in an update
     * operation.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the client user.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The unique numerical ID of the client user that has accepted an
     * invitation. The value of this field is ignored in an update operation.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaClientUser {
   

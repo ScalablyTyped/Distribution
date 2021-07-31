@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.storybookUi.mobileMod.ActiveTabsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialActive extends StObject {
   
-  var initialActive: ActiveTabsType = js.native
+  var initialActive: ActiveTabsType
   
-  var isToolshown: Boolean = js.native
+  var isToolshown: Boolean
 }
 object InitialActive {
   

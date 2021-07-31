@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAnalysisRequest extends StObject {
   
   /**
     * The ID of the analysis that you're deleting.
     */
-  var AnalysisId: RestrictiveResourceId = js.native
+  var AnalysisId: RestrictiveResourceId
   
   /**
     * The ID of the AWS account where you want to delete an analysis.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * This option defaults to the value NoForceDeleteWithoutRecovery. To immediately delete the analysis, add the ForceDeleteWithoutRecovery option. You can't restore an analysis after it's deleted. 
     */
-  var ForceDeleteWithoutRecovery: js.UndefOr[scala.Boolean] = js.native
+  var ForceDeleteWithoutRecovery: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
     * A value that specifies the number of days that QuickSight waits before it deletes the analysis. You can't use this parameter with the ForceDeleteWithoutRecovery option in the same API call. The default value is 30.
     */
-  var RecoveryWindowInDays: js.UndefOr[typings.awsSdk.quicksightMod.RecoveryWindowInDays] = js.native
+  var RecoveryWindowInDays: js.UndefOr[typings.awsSdk.quicksightMod.RecoveryWindowInDays] = js.undefined
 }
 object DeleteAnalysisRequest {
   

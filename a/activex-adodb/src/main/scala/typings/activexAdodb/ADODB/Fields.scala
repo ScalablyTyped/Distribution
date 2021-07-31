@@ -2,7 +2,6 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,39 +15,22 @@ trait Fields extends StObject {
     * @param Attrib [Attrib=-1]
     */
   def Append(Name: String, Type: DataTypeEnum): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: js.UndefOr[scala.Nothing],
-    Attrib: js.UndefOr[scala.Nothing],
-    FieldValue: js.Any
-  ): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: js.UndefOr[scala.Nothing],
-    Attrib: FieldAttributeEnum
-  ): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: js.UndefOr[scala.Nothing],
-    Attrib: FieldAttributeEnum,
-    FieldValue: js.Any
-  ): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: Double,
-    Attrib: js.UndefOr[scala.Nothing],
-    FieldValue: js.Any
-  ): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: Unit, FieldValue: js.Any): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum): Unit = js.native
   def Append(
     Name: String,
     Type: DataTypeEnum,
     DefinedSize: Double,
+    Attrib: FieldAttributeEnum,
+    FieldValue: js.Any
+  ): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: Unit, FieldValue: js.Any): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: FieldAttributeEnum): Unit = js.native
+  def Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: Unit,
     Attrib: FieldAttributeEnum,
     FieldValue: js.Any
   ): Unit = js.native
@@ -76,12 +58,7 @@ trait Fields extends StObject {
     * @param Attrib [Attrib=-1]
     */
   def _Append(Name: String, Type: DataTypeEnum): Unit = js.native
-  def _Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: js.UndefOr[scala.Nothing],
-    Attrib: FieldAttributeEnum
-  ): Unit = js.native
   def _Append(Name: String, Type: DataTypeEnum, DefinedSize: Double): Unit = js.native
   def _Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum): Unit = js.native
+  def _Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: FieldAttributeEnum): Unit = js.native
 }

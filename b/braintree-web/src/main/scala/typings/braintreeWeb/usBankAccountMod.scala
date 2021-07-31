@@ -5,7 +5,6 @@ import typings.braintreeWeb.anon.Client
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usBankAccountMod {
@@ -15,13 +14,13 @@ object usBankAccountMod {
     
     var VERSION: String = js.native
     
-    def create(options: Client, callback: callback[_]): Unit = js.native
+    def create(options: Client, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Cleanly tear down anything set up by {@link module:braintree-web/us-bank-account.create|create}.
       */
     def teardown(): Unit = js.native
-    def teardown(callback: callback[_]): Unit = js.native
+    def teardown(callback: callback[js.Any]): Unit = js.native
     
     /**
       * Tokenizes bank information to return a payment method nonce. You can tokenize bank details by providing
@@ -85,6 +84,6 @@ object usBankAccountMod {
       *   });
       * });
       */
-    def tokenize(options: BankDetails, callback: callback[_]): Unit = js.native
+    def tokenize(options: BankDetails, callback: callback[js.Any]): Unit = js.native
   }
 }

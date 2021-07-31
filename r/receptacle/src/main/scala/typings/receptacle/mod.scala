@@ -3,47 +3,47 @@ package typings.receptacle
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("receptacle", JSImport.Namespace)
   @js.native
-  class ^[T, X] () extends Receptacle[T, X] {
+  class ^[T, X] ()
+    extends StObject
+       with Receptacle[T, X] {
     def this(options: Options[T]) = this()
   }
   
-  @js.native
   trait Export[T, X] extends StObject {
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var items: js.Array[Items[T] with InternalItemData[T]] = js.native
+    var items: js.Array[Items[T] & InternalItemData[T]]
     
-    var lastModified: Date = js.native
+    var lastModified: Date
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
   }
   object Export {
     
     @scala.inline
-    def apply[T, X](id: Double | String, items: js.Array[Items[T] with InternalItemData[T]], lastModified: Date): Export[T, X] = {
+    def apply[T, X](id: Double | String, items: js.Array[Items[T] & InternalItemData[T]], lastModified: Date): Export[T, X] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Export[T, X]]
     }
     
     @scala.inline
-    implicit class ExportMutableBuilder[Self <: Export[_, _], T, X] (val x: Self with (Export[T, X])) extends AnyVal {
+    implicit class ExportMutableBuilder[Self <: Export[?, ?], T, X] (val x: Self & (Export[T, X])) extends AnyVal {
       
       @scala.inline
       def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[Items[T] with InternalItemData[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[Items[T] & InternalItemData[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemsVarargs(value: (Items[T] with InternalItemData[T])*): Self = StObject.set(x, "items", js.Array(value :_*))
+      def setItemsVarargs(value: (Items[T] & InternalItemData[T])*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
       def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
@@ -56,14 +56,13 @@ object mod {
     }
   }
   
-  @js.native
   trait InternalItemData[X] extends StObject {
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var meta: js.UndefOr[X] = js.native
+    var meta: js.UndefOr[X] = js.undefined
     
-    var refresh: js.UndefOr[Double] = js.native
+    var refresh: js.UndefOr[Double] = js.undefined
   }
   object InternalItemData {
     
@@ -74,7 +73,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class InternalItemDataMutableBuilder[Self <: InternalItemData[_], X] (val x: Self with InternalItemData[X]) extends AnyVal {
+    implicit class InternalItemDataMutableBuilder[Self <: InternalItemData[?], X] (val x: Self & InternalItemData[X]) extends AnyVal {
       
       @scala.inline
       def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
@@ -96,12 +95,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Items[T] extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: T = js.native
+    var value: T
   }
   object Items {
     
@@ -112,7 +110,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ItemsMutableBuilder[Self <: Items[_], T] (val x: Self with Items[T]) extends AnyVal {
+    implicit class ItemsMutableBuilder[Self <: Items[?], T] (val x: Self & Items[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -122,16 +120,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options[T] extends StObject {
     
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
-    var items: js.UndefOr[js.Array[Items[T]]] = js.native
+    var items: js.UndefOr[js.Array[Items[T]]] = js.undefined
     
-    var lastModified: js.UndefOr[Date] = js.native
+    var lastModified: js.UndefOr[Date] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -142,7 +139,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -195,12 +192,12 @@ object mod {
     def meta(key: String): js.UndefOr[X] = js.native
     
     def set(key: String, value: T): Receptacle[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _, 
-        js.UndefOr[scala.Nothing]
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any, 
+        Unit
       ] = js.native
     def set(key: String, value: T, options: SetOptions[X]): Receptacle[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _, 
-        js.UndefOr[scala.Nothing]
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any, 
+        Unit
       ] = js.native
     
     var size: Double = js.native
@@ -208,14 +205,13 @@ object mod {
     def toJSON(): Export[T, X] = js.native
   }
   
-  @js.native
   trait SetOptions[X] extends StObject {
     
-    var meta: js.UndefOr[X] = js.native
+    var meta: js.UndefOr[X] = js.undefined
     
-    var refresh: js.UndefOr[Boolean] = js.native
+    var refresh: js.UndefOr[Boolean] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object SetOptions {
     
@@ -226,7 +222,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions[_], X] (val x: Self with SetOptions[X]) extends AnyVal {
+    implicit class SetOptionsMutableBuilder[Self <: SetOptions[?], X] (val x: Self & SetOptions[X]) extends AnyVal {
       
       @scala.inline
       def setMeta(value: X): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])

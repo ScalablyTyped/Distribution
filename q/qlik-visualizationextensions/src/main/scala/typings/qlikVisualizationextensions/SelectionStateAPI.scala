@@ -4,76 +4,74 @@ import typings.angular.mod.IPromise
 import typings.qlikVisualizationextensions.FieldAPI.IQField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SelectionStateAPI {
   
-  @js.native
   trait IQFieldSelections extends StObject {
     
     /**
       * Reference to the field.
       */
-    var field: IQField = js.native
+    var field: IQField
     
     /**
       * Selection state for a field.
       */
-    var fieldName: String = js.native
+    var fieldName: String
     
     /**
       * Defines if the field is numeric.
       */
-    var isNumeric: Boolean = js.native
+    var isNumeric: Boolean
     
     /**
       * Defines if the field is locked.
       */
-    var locked: Boolean = js.native
+    var locked: Boolean
     
     /**
       * Array with maximum of qSelectionThreshold values that are not selected.
       * For each value, the text plus the selection mode (NORMAL/AND/NOT)
       */
-    var notSelectedValues: js.Array[Double] = js.native
+    var notSelectedValues: js.Array[Double]
     
     /**
       * Concatenated string of selected values if number of values are less
       * than the threshold, or if the string is of format "7 of 123".
       */
-    var qSelected: String = js.native
+    var qSelected: String
     
     /**
       * Number of values that will be listed.
       */
-    var qSelectionThreshold: Double = js.native
+    var qSelectionThreshold: Double
     
     /**
       * Sort index. Starting from 0.
       */
-    var qSortIndex: Double = js.native
+    var qSortIndex: Double
     
     /**
       * Object with number of values in different states.
       */
-    var qStateCounts: js.Any = js.native
+    var qStateCounts: js.Any
     
     /**
       * Number of selected values.
       */
-    var selectedCount: Double = js.native
+    var selectedCount: Double
     
     /**
       * Array with maximum of qSelectionThreshold values that are selected.
       * For each value, the text plus the selection mode (NORMAL/AND/NOT)
       */
-    var selectedValues: js.Array[Double] = js.native
+    var selectedValues: js.Array[Double]
     
     /**
       * Total number of values in the field.
       */
-    var totalCount: Double = js.native
+    var totalCount: Double
   }
   object IQFieldSelections {
     
@@ -143,59 +141,58 @@ object SelectionStateAPI {
     }
   }
   
-  @js.native
   trait IQSelectionState extends StObject {
     
     /**
       * Number of back steps available.
       */
-    var backCount: Double = js.native
+    var backCount: Double
     
     /**
       * Cleara all selections in this state.
       * @param lockedAlso - Use to also clear locked fields.
       * @return - A promise of a Qlik engine reply.
       */
-    def clearAll(lockedAlso: Boolean): IPromise[_] = js.native
+    def clearAll(lockedAlso: Boolean): IPromise[js.Any]
     
     /**
       * Number of forward steps available. OnData notification will be triggered after each update.
       */
-    var forwardCount: Double = js.native
+    var forwardCount: Double
     
     /**
       * Locks all selections in this state.
       * @return - A promise of a Qlik engine reply.
       */
-    def lockAll(): IPromise[_] = js.native
+    def lockAll(): IPromise[js.Any]
     
     /**
       * Selections
       */
-    var selections: IQFieldSelections = js.native
+    var selections: IQFieldSelections
     
     /**
       * State name. $ for default state.
       */
-    var stateName: String = js.native
+    var stateName: String
     
     /**
       * Unlocks all selections in this state.
       * @return - A promise of a Qlik engine reply.
       */
-    def unlockAll(): IPromise[_] = js.native
+    def unlockAll(): IPromise[js.Any]
   }
   object IQSelectionState {
     
     @scala.inline
     def apply(
       backCount: Double,
-      clearAll: Boolean => IPromise[_],
+      clearAll: Boolean => IPromise[js.Any],
       forwardCount: Double,
-      lockAll: () => IPromise[_],
+      lockAll: () => IPromise[js.Any],
       selections: IQFieldSelections,
       stateName: String,
-      unlockAll: () => IPromise[_]
+      unlockAll: () => IPromise[js.Any]
     ): IQSelectionState = {
       val __obj = js.Dynamic.literal(backCount = backCount.asInstanceOf[js.Any], clearAll = js.Any.fromFunction1(clearAll), forwardCount = forwardCount.asInstanceOf[js.Any], lockAll = js.Any.fromFunction0(lockAll), selections = selections.asInstanceOf[js.Any], stateName = stateName.asInstanceOf[js.Any], unlockAll = js.Any.fromFunction0(unlockAll))
       __obj.asInstanceOf[IQSelectionState]
@@ -208,13 +205,13 @@ object SelectionStateAPI {
       def setBackCount(value: Double): Self = StObject.set(x, "backCount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClearAll(value: Boolean => IPromise[_]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
+      def setClearAll(value: Boolean => IPromise[js.Any]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setForwardCount(value: Double): Self = StObject.set(x, "forwardCount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLockAll(value: () => IPromise[_]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
+      def setLockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
       
       @scala.inline
       def setSelections(value: IQFieldSelections): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
@@ -223,7 +220,7 @@ object SelectionStateAPI {
       def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUnlockAll(value: () => IPromise[_]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
+      def setUnlockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
     }
   }
 }

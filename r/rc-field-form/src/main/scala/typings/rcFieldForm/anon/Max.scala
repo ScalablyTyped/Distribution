@@ -2,19 +2,17 @@ package typings.rcFieldForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Max extends StObject {
   
-  var len: String = js.native
+  var len: String
   
-  var max: String = js.native
+  var max: String
   
-  var min: String = js.native
+  var min: String
   
-  var range: String = js.native
+  var range: String
 }
 object Max {
   

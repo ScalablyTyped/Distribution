@@ -5,7 +5,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,17 +19,18 @@ object mod {
     *          Default is `false` to keep back compatible.
     * @api public
     */
-  @JSImport("koa-response-time", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-response-time", JSImport.Namespace)
-  @js.native
-  def apply(options: KoaResponseTimeOptions): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: KoaResponseTimeOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-response-time", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait KoaResponseTimeOptions extends StObject {
     
-    var hrtime: js.UndefOr[Boolean] = js.native
+    var hrtime: js.UndefOr[Boolean] = js.undefined
   }
   object KoaResponseTimeOptions {
     

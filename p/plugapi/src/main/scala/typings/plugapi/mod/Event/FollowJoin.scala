@@ -3,15 +3,13 @@ package typings.plugapi.mod.Event
 import typings.plugapi.mod.FollowJoinData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FollowJoin extends StObject {
   
-  var data: FollowJoinData = js.native
+  var data: FollowJoinData
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object FollowJoin {
   

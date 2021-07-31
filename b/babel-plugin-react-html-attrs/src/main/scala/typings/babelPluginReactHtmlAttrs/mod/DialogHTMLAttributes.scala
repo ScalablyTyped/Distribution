@@ -2,13 +2,13 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DialogHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var open: js.UndefOr[Boolean | String] = js.native
+  var open: js.UndefOr[Boolean | String] = js.undefined
 }
 object DialogHTMLAttributes {
   
@@ -19,7 +19,7 @@ object DialogHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[_], T] (val x: Self with DialogHTMLAttributes[T]) extends AnyVal {
+  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[?], T] (val x: Self & DialogHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setOpen(value: Boolean | String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])

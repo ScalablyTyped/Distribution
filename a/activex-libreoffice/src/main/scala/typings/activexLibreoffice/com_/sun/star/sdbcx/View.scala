@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If a view is going to be added to a database, the view must have a unique name within the view and the table container, as it can be used like a
   * table. ** Note: ** After addition, both the containers for views and the container for tables must contain an element for the view.
   */
-@js.native
 trait View
-  extends XRename
+  extends StObject
+     with XRename
      with XPropertySet
      with XAlterView {
   
   /** is the name of the views catalog, may be empty. */
-  var CatalogName: String = js.native
+  var CatalogName: String
   
   /**
     * indicates if a check option should be used for the view.
     * @see com.sun.star.sdbcx.CheckOption
     */
-  var CheckOption: Double = js.native
+  var CheckOption: Double
   
   /**
     * is the command for creating the view.
@@ -39,13 +38,13 @@ trait View
     * This property might be empty when a backend does not support retrieving the current SQL command of a view. However, if the `View` supports altering
     * its command via the {@link XAlterView} interface, then it's required to also provide the current SQL command in the `Command` property.
     */
-  var Command: String = js.native
+  var Command: String
   
   /** is the name of the view. */
-  var Name: String = js.native
+  var Name: String
   
   /** is the name of the view's schema, may be empty. */
-  var SchemaName: String = js.native
+  var SchemaName: String
 }
 object View {
   

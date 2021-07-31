@@ -4,7 +4,6 @@ import typings.std.Event
 import typings.videoJs.mod.videojs.Plugin.PluginEventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *          directly instead of via a sub-class.
   */
 @js.native
-trait Plugin extends EventedMixin {
+trait Plugin
+  extends StObject
+     with EventedMixin {
   
   /**
     * Disposes a plugin.
@@ -68,25 +69,24 @@ trait Plugin extends EventedMixin {
 }
 object Plugin {
   
-  @js.native
   trait PluginEventHash extends StObject {
     
     /**
       * For basic plugins, the return value of the plugin function. For
       * advanced plugins, the plugin instance on which the event is fired.
       */
-    var instance: Plugin = js.native
+    var instance: Plugin
     
     /**
       * The name of the plugin.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * For basic plugins, the plugin function. For advanced plugins, the
       * plugin class/constructor.
       */
-    var plugin: String = js.native
+    var plugin: String
   }
   object PluginEventHash {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * The name of the configuration set that the event destination should be associated with.
     */
-  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName
   
   /**
     * An object that describes the AWS service that email sending event information will be published to.
     */
-  var EventDestination: typings.awsSdk.sesMod.EventDestination = js.native
+  var EventDestination: typings.awsSdk.sesMod.EventDestination
 }
 object CreateConfigurationSetEventDestinationRequest {
   

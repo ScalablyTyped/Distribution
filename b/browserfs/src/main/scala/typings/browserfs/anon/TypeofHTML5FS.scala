@@ -11,17 +11,17 @@ import typings.browserfs.html5fsMod.HTML5FSOptions
 import typings.browserfs.html5fsMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofHTML5FS
-  extends Instantiable0[default]
+  extends StObject
+     with Instantiable0[default]
      with Instantiable1[/* size */ Double, default]
-     with Instantiable2[js.UndefOr[/* size */ Double], /* type */ Double, default]
+     with Instantiable2[(/* size */ Double) | (/* size */ Unit), /* type */ Double, default]
      with Instantiable3[
-      js.UndefOr[/* size */ Double], 
-      js.UndefOr[/* type */ Double], 
+      (/* size */ Double) | (/* size */ Unit), 
+      (/* type */ Double) | (/* type */ Unit), 
       /* deprecateMsg */ Boolean, 
       default
     ] {

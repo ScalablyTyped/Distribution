@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRecommenderConfigurationRequest extends StObject {
   
-  var CreateRecommenderConfiguration: typings.awsSdk.pinpointMod.CreateRecommenderConfiguration = js.native
+  var CreateRecommenderConfiguration: typings.awsSdk.pinpointMod.CreateRecommenderConfiguration
 }
 object CreateRecommenderConfigurationRequest {
   

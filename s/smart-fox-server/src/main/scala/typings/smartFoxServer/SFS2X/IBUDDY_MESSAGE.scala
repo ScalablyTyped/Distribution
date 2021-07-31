@@ -3,19 +3,17 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSBuddy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBUDDY_MESSAGE extends StObject {
   
-  var buddy: SFSBuddy = js.native
+  var buddy: SFSBuddy
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var isItMe: Boolean = js.native
+  var isItMe: Boolean
   
-  var message: String = js.native
+  var message: String
 }
 object IBUDDY_MESSAGE {
   

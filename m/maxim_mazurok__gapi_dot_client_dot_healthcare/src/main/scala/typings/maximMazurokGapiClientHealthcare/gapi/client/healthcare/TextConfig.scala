@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextConfig extends StObject {
   
   /** The transformations to apply to the detected data. */
-  var transformations: js.UndefOr[js.Array[InfoTypeTransformation]] = js.native
+  var transformations: js.UndefOr[js.Array[InfoTypeTransformation]] = js.undefined
 }
 object TextConfig {
   

@@ -4,10 +4,13 @@ import typings.angularCompiler.anon.After
 import typings.angularCompiler.compileMetadataMod.CompileIdentifierMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcParseUtilMod {
+  
+  @JSImport("@angular/compiler/src/parse_util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/parse_util", "ParseError")
   @js.native
@@ -31,15 +34,19 @@ object srcParseUtilMod {
   object ParseErrorLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ParseErrorLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[ParseErrorLevel & Double] = js.native
     
     @js.native
-    sealed trait ERROR extends ParseErrorLevel
-    /* 1 */ val ERROR: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with ParseErrorLevel
+    /* 1 */ val ERROR: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.ERROR & Double = js.native
     
     @js.native
-    sealed trait WARNING extends ParseErrorLevel
-    /* 0 */ val WARNING: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.WARNING with Double = js.native
+    sealed trait WARNING
+      extends StObject
+         with ParseErrorLevel
+    /* 0 */ val WARNING: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.WARNING & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/parse_util", "ParseLocation")
@@ -98,7 +105,7 @@ object srcParseUtilMod {
       */
     def this(start: ParseLocation, end: ParseLocation) = this()
     def this(start: ParseLocation, end: ParseLocation, fullStart: ParseLocation) = this()
-    def this(start: ParseLocation, end: ParseLocation, fullStart: js.UndefOr[scala.Nothing], details: String) = this()
+    def this(start: ParseLocation, end: ParseLocation, fullStart: Unit, details: String) = this()
     def this(start: ParseLocation, end: ParseLocation, fullStart: ParseLocation, details: String) = this()
     
     var details: String | Null = js.native
@@ -110,11 +117,9 @@ object srcParseUtilMod {
     var start: ParseLocation = js.native
   }
   
-  @JSImport("@angular/compiler/src/parse_util", "r3JitTypeSourceSpan")
-  @js.native
-  def r3JitTypeSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
+  @scala.inline
+  def r3JitTypeSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("r3JitTypeSourceSpan")(kind.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], sourceUrl.asInstanceOf[js.Any])).asInstanceOf[ParseSourceSpan]
   
-  @JSImport("@angular/compiler/src/parse_util", "typeSourceSpan")
-  @js.native
-  def typeSourceSpan(kind: String, `type`: CompileIdentifierMetadata): ParseSourceSpan = js.native
+  @scala.inline
+  def typeSourceSpan(kind: String, `type`: CompileIdentifierMetadata): ParseSourceSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("typeSourceSpan")(kind.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ParseSourceSpan]
 }

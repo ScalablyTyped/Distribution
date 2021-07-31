@@ -7,49 +7,47 @@ import typings.redisInfo.redisInfoStrings.sentinel
 import typings.redisInfo.redisInfoStrings.standalone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerInfo extends StObject {
   
-  var arch_bits: `32` | `64` = js.native
+  var arch_bits: `32` | `64`
   
-  var atomicvar_api: String = js.native
+  var atomicvar_api: String
   
-  var config_file: String = js.native
+  var config_file: String
   
-  var executable: String = js.native
+  var executable: String
   
-  var gcc_version: String = js.native
+  var gcc_version: String
   
-  var hz: String = js.native
+  var hz: String
   
-  var lru_clock: String = js.native
+  var lru_clock: String
   
-  var multiplexing_api: String = js.native
+  var multiplexing_api: String
   
-  var os: String = js.native
+  var os: String
   
-  var process_id: String = js.native
+  var process_id: String
   
-  var redis_build_id: String = js.native
+  var redis_build_id: String
   
-  var redis_git_dirty: Flag = js.native
+  var redis_git_dirty: Flag
   
-  var redis_git_sha1: String = js.native
+  var redis_git_sha1: String
   
-  var redis_mode: standalone | sentinel | cluster = js.native
+  var redis_mode: standalone | sentinel | cluster
   
-  var redis_version: String = js.native
+  var redis_version: String
   
-  var run_id: String = js.native
+  var run_id: String
   
-  var tcp_port: String = js.native
+  var tcp_port: String
   
-  var uptime_in_days: String = js.native
+  var uptime_in_days: String
   
-  var uptime_in_seconds: String = js.native
+  var uptime_in_seconds: String
 }
 object ServerInfo {
   

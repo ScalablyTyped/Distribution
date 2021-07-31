@@ -5,12 +5,11 @@ import typings.mapboxGl.mapboxGlStrings.metadata
 import typings.mapboxGl.mapboxGlStrings.source_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MapSourceDataEvent
-  extends MapboxEvent[js.UndefOr[scala.Nothing]]
+  extends MapboxEvent[Unit]
      with MapDataEvent {
   
   var coord: Coordinate = js.native

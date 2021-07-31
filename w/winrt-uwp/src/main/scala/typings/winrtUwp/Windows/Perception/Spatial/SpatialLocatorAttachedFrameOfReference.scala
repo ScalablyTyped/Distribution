@@ -2,25 +2,23 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialLocatorAttachedFrameOfReference extends StObject {
   
-  var adjustHeading: js.Any = js.native
+  var adjustHeading: js.Any
   
   /* unmapped type */
-  var getStationaryCoordinateSystemAtTimestamp: js.Any = js.native
+  var getStationaryCoordinateSystemAtTimestamp: js.Any
   
   /* unmapped type */
-  var relativeOrientation: js.Any = js.native
+  var relativeOrientation: js.Any
   
   /* unmapped type */
-  var relativePosition: js.Any = js.native
+  var relativePosition: js.Any
   
   /* unmapped type */
-  var tryGetRelativeHeadingAtTimestamp: js.Any = js.native
+  var tryGetRelativeHeadingAtTimestamp: js.Any
 }
 object SpatialLocatorAttachedFrameOfReference {
   

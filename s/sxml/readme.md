@@ -12,7 +12,7 @@ Simple XML
 | Keywords           | xml |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 42693 |
+| # downloads        | 70842 |
 | # stars            | 0 |
 
 ## Links

@@ -2,13 +2,11 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeStyles extends StObject {
   
-  def themeStyles(): Unit = js.native
+  def themeStyles(): Unit
 }
 object ThemeStyles {
   

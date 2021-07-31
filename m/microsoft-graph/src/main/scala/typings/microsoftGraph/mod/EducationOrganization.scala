@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EducationOrganization extends Entity {
+trait EducationOrganization
+  extends StObject
+     with Entity {
   
   // Organization description.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Organization display name.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue.
-  var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.native
+  var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.undefined
 }
 object EducationOrganization {
   

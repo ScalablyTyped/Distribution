@@ -4,29 +4,29 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IResultSet extends IBase {
+trait IResultSet
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Number) */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var loaded: js.UndefOr[Boolean] = js.native
+  var loaded: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Model[]) */
-  var records: js.UndefOr[Array] = js.native
+  var records: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var success: js.UndefOr[Boolean] = js.native
+  var success: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var totalRecords: js.UndefOr[Double] = js.native
+  var totalRecords: js.UndefOr[Double] = js.undefined
 }
 object IResultSet {
   

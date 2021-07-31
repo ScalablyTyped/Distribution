@@ -2,19 +2,17 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverflowPaddingTop extends StObject {
   
-  var borderRadius: Double = js.native
+  var borderRadius: Double
   
-  var overflow: String = js.native
+  var overflow: String
   
-  var paddingTop: Double = js.native
+  var paddingTop: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object OverflowPaddingTop {
   

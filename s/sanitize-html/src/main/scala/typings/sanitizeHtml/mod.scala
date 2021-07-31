@@ -6,17 +6,14 @@ import typings.sanitizeHtml.anon.Multiple
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sanitize-html", JSImport.Namespace)
-  @js.native
-  def apply(dirty: String): String = js.native
-  @JSImport("sanitize-html", JSImport.Namespace)
-  @js.native
-  def apply(dirty: String, options: IOptions): String = js.native
+  @scala.inline
+  def apply(dirty: String): String = ^.asInstanceOf[js.Dynamic].apply(dirty.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(dirty: String, options: IOptions): String = (^.asInstanceOf[js.Dynamic].apply(dirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("sanitize-html", JSImport.Namespace)
   @js.native
@@ -28,12 +25,10 @@ object mod {
   @scala.inline
   def defaults_=(x: IDefaults): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
-  @JSImport("sanitize-html", "simpleTransform")
-  @js.native
-  def simpleTransform(tagName: String, attribs: Attributes): Transformer = js.native
-  @JSImport("sanitize-html", "simpleTransform")
-  @js.native
-  def simpleTransform(tagName: String, attribs: Attributes, merge: Boolean): Transformer = js.native
+  @scala.inline
+  def simpleTransform(tagName: String, attribs: Attributes): Transformer = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleTransform")(tagName.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any])).asInstanceOf[Transformer]
+  @scala.inline
+  def simpleTransform(tagName: String, attribs: Attributes, merge: Boolean): Transformer = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleTransform")(tagName.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], merge.asInstanceOf[js.Any])).asInstanceOf[Transformer]
   
   type AllowedAttribute = String | Multiple
   
@@ -58,26 +53,25 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IDefaults extends StObject {
     
-    var allowProtocolRelative: Boolean = js.native
+    var allowProtocolRelative: Boolean
     
-    var allowedAttributes: StringDictionary[js.Array[AllowedAttribute]] = js.native
+    var allowedAttributes: StringDictionary[js.Array[AllowedAttribute]]
     
-    var allowedSchemes: js.Array[String] = js.native
+    var allowedSchemes: js.Array[String]
     
-    var allowedSchemesAppliedToAttributes: js.Array[String] = js.native
+    var allowedSchemesAppliedToAttributes: js.Array[String]
     
-    var allowedSchemesByTag: StringDictionary[js.Array[String]] = js.native
+    var allowedSchemesByTag: StringDictionary[js.Array[String]]
     
-    var allowedTags: js.Array[String] = js.native
+    var allowedTags: js.Array[String]
     
-    var disallowedTagsMode: String = js.native
+    var disallowedTagsMode: String
     
-    var enforceHtmlBoundary: Boolean = js.native
+    var enforceHtmlBoundary: Boolean
     
-    var selfClosing: js.Array[String] = js.native
+    var selfClosing: js.Array[String]
   }
   object IDefaults {
     
@@ -142,16 +136,15 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFrame extends StObject {
     
-    var attribs: StringDictionary[String] = js.native
+    var attribs: StringDictionary[String]
     
-    var tag: String = js.native
+    var tag: String
     
-    var tagPosition: Double = js.native
+    var tagPosition: Double
     
-    var text: String = js.native
+    var text: String
   }
   object IFrame {
     
@@ -179,34 +172,33 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IOptions extends StObject {
     
-    var allowIframeRelativeUrls: js.UndefOr[Boolean] = js.native
+    var allowIframeRelativeUrls: js.UndefOr[Boolean] = js.undefined
     
-    var allowProtocolRelative: js.UndefOr[Boolean] = js.native
+    var allowProtocolRelative: js.UndefOr[Boolean] = js.undefined
     
-    var allowVulnerableTags: js.UndefOr[Boolean] = js.native
+    var allowVulnerableTags: js.UndefOr[Boolean] = js.undefined
     
-    var allowedAttributes: js.UndefOr[StringDictionary[js.Array[AllowedAttribute]] | Boolean] = js.native
+    var allowedAttributes: js.UndefOr[StringDictionary[js.Array[AllowedAttribute]] | Boolean] = js.undefined
     
-    var allowedClasses: js.UndefOr[StringDictionary[js.Array[String] | Boolean]] = js.native
+    var allowedClasses: js.UndefOr[StringDictionary[js.Array[String] | Boolean]] = js.undefined
     
-    var allowedIframeDomains: js.UndefOr[js.Array[String]] = js.native
+    var allowedIframeDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowedIframeHostnames: js.UndefOr[js.Array[String]] = js.native
+    var allowedIframeHostnames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowedSchemes: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var allowedSchemes: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var allowedSchemesAppliedToAttributes: js.UndefOr[js.Array[String]] = js.native
+    var allowedSchemesAppliedToAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowedSchemesByTag: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.native
+    var allowedSchemesByTag: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.undefined
     
-    var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.native
+    var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.undefined
     
-    var allowedTags: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var allowedTags: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var disallowedTagsMode: js.UndefOr[DisallowedTagsModes] = js.native
+    var disallowedTagsMode: js.UndefOr[DisallowedTagsModes] = js.undefined
     
     /**
       * Setting this option to true will instruct sanitize-html to discard all characters outside of html tag boundaries
@@ -214,19 +206,19 @@ object mod {
       * @see {@link https://github.com/apostrophecms/sanitize-html/#discarding-text-outside-of-htmlhtml-tags}
       * @default true
       */
-    var enforceHtmlBoundary: js.UndefOr[Boolean] = js.native
+    var enforceHtmlBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var exclusiveFilter: js.UndefOr[js.Function1[/* frame */ IFrame, Boolean]] = js.native
+    var exclusiveFilter: js.UndefOr[js.Function1[/* frame */ IFrame, Boolean]] = js.undefined
     
-    var nonTextTags: js.UndefOr[js.Array[String]] = js.native
+    var nonTextTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var parser: js.UndefOr[ParserOptions] = js.native
+    var parser: js.UndefOr[ParserOptions] = js.undefined
     
-    var selfClosing: js.UndefOr[js.Array[String]] = js.native
+    var selfClosing: js.UndefOr[js.Array[String]] = js.undefined
     
-    var textFilter: js.UndefOr[js.Function2[/* text */ String, /* tagName */ String, String]] = js.native
+    var textFilter: js.UndefOr[js.Function2[/* text */ String, /* tagName */ String, String]] = js.undefined
     
-    var transformTags: js.UndefOr[StringDictionary[String | Transformer]] = js.native
+    var transformTags: js.UndefOr[StringDictionary[String | Transformer]] = js.undefined
   }
   object IOptions {
     
@@ -382,14 +374,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var attribs: Attributes = js.native
+    var attribs: Attributes
     
-    var tagName: String = js.native
+    var tagName: String
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Tag {
     

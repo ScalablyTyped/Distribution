@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Permissions")
@@ -31,7 +30,7 @@ class ResourcePermissions protected () extends StObject {
     */
   def queryTestablePermissions(): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(callback: BodyResponseCallback[SchemaQueryTestablePermissionsResponse]): Unit = js.native
-  def queryTestablePermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
+  def queryTestablePermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(params: ParamsResourcePermissionsQuerytestablepermissions): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(
     params: ParamsResourcePermissionsQuerytestablepermissions,

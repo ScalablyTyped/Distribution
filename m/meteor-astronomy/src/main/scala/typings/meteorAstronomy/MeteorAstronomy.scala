@@ -24,23 +24,25 @@ import typings.std.Pick
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MeteorAstronomy {
   
   @js.native
   trait Class[T]
-    extends Instantiable0[Model[T]]
+    extends StObject
+       with Instantiable0[Model[T]]
        with Instantiable1[/* data */ Partial[T], Model[T]] {
     
     def find(): Cursor[Model[T], Model[T]] = js.native
-    def find(selector: js.UndefOr[MongoQuery[T]], options: FindOptions): Cursor[Model[T], Model[T]] = js.native
+    def find(selector: Unit, options: FindOptions): Cursor[Model[T], Model[T]] = js.native
     def find(selector: MongoQuery[T]): Cursor[Model[T], Model[T]] = js.native
+    def find(selector: MongoQuery[T], options: FindOptions): Cursor[Model[T], Model[T]] = js.native
     
     def findOne(): Model[T] = js.native
-    def findOne(selector: js.UndefOr[MongoQuery[T]], options: FindOneOptions): Model[T] = js.native
+    def findOne(selector: Unit, options: FindOneOptions): Model[T] = js.native
     def findOne(selector: MongoQuery[T]): Model[T] = js.native
+    def findOne(selector: MongoQuery[T], options: FindOneOptions): Model[T] = js.native
     
     def insert(doc: T): String = js.native
     def insert(doc: T, callback: js.Function0[Unit]): String = js.native
@@ -49,12 +51,7 @@ object MeteorAstronomy {
     def remove(selector: MongoQuery[T], callback: js.Function0[Unit]): Double = js.native
     
     def update(selector: MongoQuery[T], modifier: Modifier[T]): Double = js.native
-    def update(
-      selector: MongoQuery[T],
-      modifier: Modifier[T],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Double = js.native
+    def update(selector: MongoQuery[T], modifier: Modifier[T], options: Unit, callback: js.Function0[Unit]): Double = js.native
     def update(selector: MongoQuery[T], modifier: Modifier[T], options: UpdateOptions): Double = js.native
     def update(
       selector: MongoQuery[T],
@@ -64,12 +61,7 @@ object MeteorAstronomy {
     ): Double = js.native
     
     def upsert(selector: MongoQuery[T], modifier: Modifier[T]): Double = js.native
-    def upsert(
-      selector: MongoQuery[T],
-      modifier: Modifier[T],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Double = js.native
+    def upsert(selector: MongoQuery[T], modifier: Modifier[T], options: Unit, callback: js.Function0[Unit]): Double = js.native
     def upsert(selector: MongoQuery[T], modifier: Modifier[T], options: UpsertOptions): Double = js.native
     def upsert(
       selector: MongoQuery[T],
@@ -79,26 +71,25 @@ object MeteorAstronomy {
     ): Double = js.native
   }
   
-  @js.native
   trait ClassModel[T] extends StObject {
     
-    var behaviors: js.UndefOr[js.Object] = js.native
+    var behaviors: js.UndefOr[js.Object] = js.undefined
     
-    var collection: js.UndefOr[Collection[T, T]] = js.native
+    var collection: js.UndefOr[Collection[T, T]] = js.undefined
     
-    var events: js.UndefOr[js.Object] = js.native
+    var events: js.UndefOr[js.Object] = js.undefined
     
-    var fields: Fields[Omit[T, _id]] = js.native
+    var fields: Fields[Omit[T, _id]]
     
-    var helpers: js.UndefOr[Helpers[T]] = js.native
+    var helpers: js.UndefOr[Helpers[T]] = js.undefined
     
-    var indexes: js.UndefOr[js.Object] = js.native
+    var indexes: js.UndefOr[js.Object] = js.undefined
     
-    var meteorMethods: js.UndefOr[js.Object] = js.native
+    var meteorMethods: js.UndefOr[js.Object] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var secured: js.UndefOr[Insert | Boolean] = js.native
+    var secured: js.UndefOr[Insert | Boolean] = js.undefined
   }
   object ClassModel {
     
@@ -109,7 +100,7 @@ object MeteorAstronomy {
     }
     
     @scala.inline
-    implicit class ClassModelMutableBuilder[Self <: ClassModel[_], T] (val x: Self with ClassModel[T]) extends AnyVal {
+    implicit class ClassModelMutableBuilder[Self <: ClassModel[?], T] (val x: Self & ClassModel[T]) extends AnyVal {
       
       @scala.inline
       def setBehaviors(value: js.Object): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
@@ -161,14 +152,13 @@ object MeteorAstronomy {
     }
   }
   
-  type Enum[T] = T with GetIdentifier
+  type Enum[T] = T & GetIdentifier
   
-  @js.native
   trait EnumModel[T] extends StObject {
     
-    var identifiers: js.Array[String] | T = js.native
+    var identifiers: js.Array[String] | T
     
-    var name: String = js.native
+    var name: String
   }
   object EnumModel {
     
@@ -179,7 +169,7 @@ object MeteorAstronomy {
     }
     
     @scala.inline
-    implicit class EnumModelMutableBuilder[Self <: EnumModel[_], T] (val x: Self with EnumModel[T]) extends AnyVal {
+    implicit class EnumModelMutableBuilder[Self <: EnumModel[?], T] (val x: Self & EnumModel[T]) extends AnyVal {
       
       @scala.inline
       def setIdentifiers(value: js.Array[String] | T): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
@@ -194,26 +184,25 @@ object MeteorAstronomy {
   
   type Fields[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}
-    */ typings.meteorAstronomy.meteorAstronomyStrings.Fields with TopLevel[T]
+    */ typings.meteorAstronomy.meteorAstronomyStrings.Fields & TopLevel[T]
   
-  @js.native
   trait FindOneOptions extends StObject {
     
-    var children: js.UndefOr[Double] = js.native
+    var children: js.UndefOr[Double] = js.undefined
     
-    var defaults: js.UndefOr[Boolean] = js.native
+    var defaults: js.UndefOr[Boolean] = js.undefined
     
-    var disableEvents: js.UndefOr[Boolean] = js.native
+    var disableEvents: js.UndefOr[Boolean] = js.undefined
     
-    var fields: js.UndefOr[FieldSpecifier] = js.native
+    var fields: js.UndefOr[FieldSpecifier] = js.undefined
     
-    var reactive: js.UndefOr[Boolean] = js.native
+    var reactive: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[SortSpecifier] = js.native
+    var sort: js.UndefOr[SortSpecifier] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object FindOneOptions {
     
@@ -269,17 +258,18 @@ object MeteorAstronomy {
       def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
       @scala.inline
-      def setTransform(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
-  @js.native
-  trait FindOptions extends FindOneOptions {
+  trait FindOptions
+    extends StObject
+       with FindOneOptions {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object FindOptions {
     
@@ -307,30 +297,29 @@ object MeteorAstronomy {
   
   type Helpers[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof meteor-astronomy.MeteorAstronomy.FunctionProperties<T> ]: (this : T, args : ...any): any}
-    */ typings.meteorAstronomy.meteorAstronomyStrings.Helpers with TopLevel[js.Any]
+    */ typings.meteorAstronomy.meteorAstronomyStrings.Helpers & TopLevel[js.Any]
   
-  type Model[T] = T with Copy[T]
+  type Model[T] = T & Copy[T]
   
   type ModelField[Field, Doc] = (ModelFullField[Field, Doc]) | TypeOptions
   
-  @js.native
   trait ModelFullField[Field, Doc] extends StObject {
     
-    var default: js.UndefOr[js.Function0[Field]] = js.native
+    var default: js.UndefOr[js.Function0[Field]] = js.undefined
     
-    var immutable: js.UndefOr[Boolean] = js.native
+    var immutable: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[String | Double] = js.native
+    var index: js.UndefOr[String | Double] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* doc */ Doc, Field]] = js.native
+    var resolve: js.UndefOr[js.Function1[/* doc */ Doc, Field]] = js.undefined
     
-    var transient: js.UndefOr[Boolean] = js.native
+    var transient: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: TypeOptions = js.native
+    var `type`: TypeOptions
     
-    var validators: js.UndefOr[js.Array[Validator]] = js.native
+    var validators: js.UndefOr[js.Array[Validator]] = js.undefined
   }
   object ModelFullField {
     
@@ -342,7 +331,7 @@ object MeteorAstronomy {
     }
     
     @scala.inline
-    implicit class ModelFullFieldMutableBuilder[Self <: ModelFullField[_, _], Field, Doc] (val x: Self with (ModelFullField[Field, Doc])) extends AnyVal {
+    implicit class ModelFullFieldMutableBuilder[Self <: ModelFullField[?, ?], Field, Doc] (val x: Self & (ModelFullField[Field, Doc])) extends AnyVal {
       
       @scala.inline
       def setDefault(value: () => Field): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
@@ -410,16 +399,15 @@ object MeteorAstronomy {
   
   type SaveAndValidateCallback = js.Function2[/* err */ js.Any, /* id */ js.Any, Unit]
   
-  @js.native
   trait SaveAndValidateOptions[K] extends StObject {
     
-    var cast: js.UndefOr[Boolean] = js.native
+    var cast: js.UndefOr[Boolean] = js.undefined
     
-    var fields: js.UndefOr[js.Array[K]] = js.native
+    var fields: js.UndefOr[js.Array[K]] = js.undefined
     
-    var simulation: js.UndefOr[Boolean] = js.native
+    var simulation: js.UndefOr[Boolean] = js.undefined
     
-    var stopOnFirstError: js.UndefOr[Boolean] = js.native
+    var stopOnFirstError: js.UndefOr[Boolean] = js.undefined
   }
   object SaveAndValidateOptions {
     
@@ -430,7 +418,7 @@ object MeteorAstronomy {
     }
     
     @scala.inline
-    implicit class SaveAndValidateOptionsMutableBuilder[Self <: SaveAndValidateOptions[_], K] (val x: Self with SaveAndValidateOptions[K]) extends AnyVal {
+    implicit class SaveAndValidateOptionsMutableBuilder[Self <: SaveAndValidateOptions[?], K] (val x: Self & SaveAndValidateOptions[K]) extends AnyVal {
       
       @scala.inline
       def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
@@ -465,10 +453,11 @@ object MeteorAstronomy {
   
   type TypeOptionsPrimitives = StringConstructor | DateConstructor | BooleanConstructor | ObjectConstructor | NumberConstructor
   
-  @js.native
-  trait UpdateOptions extends UpsertOptions {
+  trait UpdateOptions
+    extends StObject
+       with UpsertOptions {
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateOptions {
     
@@ -489,10 +478,9 @@ object MeteorAstronomy {
     }
   }
   
-  @js.native
   trait UpsertOptions extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
   }
   object UpsertOptions {
     
@@ -513,12 +501,11 @@ object MeteorAstronomy {
     }
   }
   
-  @js.native
   trait Validator extends StObject {
     
-    var param: js.Any = js.native
+    var param: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Validator {
     

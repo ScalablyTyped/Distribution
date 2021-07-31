@@ -3,15 +3,13 @@ package typings.divaJs.anon
 import typings.divaJs.interfacesMod.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnchorPage extends StObject {
   
-  var anchorPage: Double = js.native
+  var anchorPage: Double
   
-  var offset: Offset = js.native
+  var offset: Offset
 }
 object AnchorPage {
   

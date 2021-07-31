@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RdsParameters extends StObject {
   
   /**
     * Database.
     */
-  var Database: typings.awsSdk.quicksightMod.Database = js.native
+  var Database: typings.awsSdk.quicksightMod.Database
   
   /**
     * Instance ID.
     */
-  var InstanceId: typings.awsSdk.quicksightMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.quicksightMod.InstanceId
 }
 object RdsParameters {
   

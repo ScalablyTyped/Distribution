@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gml2Mod {
@@ -21,45 +20,45 @@ object gml2Mod {
   trait GML2
     extends typings.ol.gmlbaseMod.default {
     
-    def innerBoundaryIsParser(node: Element, objectStack: js.Array[_]): Unit = js.native
+    def innerBoundaryIsParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def outerBoundaryIsParser(node: Element, objectStack: js.Array[_]): Unit = js.native
+    def outerBoundaryIsParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def readBox(node: Element, objectStack: js.Array[_]): js.UndefOr[Extent] = js.native
+    def readBox(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[Extent] = js.native
     
-    def readFlatCoordinates(node: Node, objectStack: js.Array[_]): js.UndefOr[js.Array[Double]] = js.native
+    def readFlatCoordinates(node: Node, objectStack: js.Array[js.Any]): js.UndefOr[js.Array[Double]] = js.native
     
-    def writeCurveOrLineString(node: Element, geometry: typings.ol.lineStringMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeCurveOrLineString(node: Element, geometry: typings.ol.lineStringMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeEnvelope(node: Element, extent: Extent, objectStack: js.Array[_]): Unit = js.native
+    def writeEnvelope(node: Element, extent: Extent, objectStack: js.Array[js.Any]): Unit = js.native
     
     def writeFeatureElement(
       node: Element,
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
-      objectStack: js.Array[_]
+      objectStack: js.Array[js.Any]
     ): Unit = js.native
     
-    def writeGeometryElement(node: Node, geometry: Extent, objectStack: js.Array[_]): Unit = js.native
-    def writeGeometryElement(node: Node, geometry: typings.ol.geometryMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeGeometryElement(node: Node, geometry: Extent, objectStack: js.Array[js.Any]): Unit = js.native
+    def writeGeometryElement(node: Node, geometry: typings.ol.geometryMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeLineStringOrCurveMember(node: Element, line: typings.ol.lineStringMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeLineStringOrCurveMember(node: Element, line: typings.ol.lineStringMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeLinearRing(node: Element, geometry: typings.ol.linearRingMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeLinearRing(node: Element, geometry: typings.ol.linearRingMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeMultiCurveOrLineString(node: Element, geometry: typings.ol.multiLineStringMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeMultiCurveOrLineString(node: Element, geometry: typings.ol.multiLineStringMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeMultiPoint(node: Element, geometry: typings.ol.multiPointMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeMultiPoint(node: Element, geometry: typings.ol.multiPointMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeMultiSurfaceOrPolygon(node: Element, geometry: typings.ol.multiPolygonMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeMultiSurfaceOrPolygon(node: Element, geometry: typings.ol.multiPolygonMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writePoint(node: Element, geometry: typings.ol.pointMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writePoint(node: Element, geometry: typings.ol.pointMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writePointMember(node: Node, point: typings.ol.pointMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writePointMember(node: Node, point: typings.ol.pointMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeRing(node: Node, ring: typings.ol.linearRingMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeRing(node: Node, ring: typings.ol.linearRingMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeSurfaceOrPolygon(node: Element, geometry: typings.ol.polygonMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeSurfaceOrPolygon(node: Element, geometry: typings.ol.polygonMod.default, objectStack: js.Array[js.Any]): Unit = js.native
     
-    def writeSurfaceOrPolygonMember(node: Node, polygon: typings.ol.polygonMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeSurfaceOrPolygonMember(node: Node, polygon: typings.ol.polygonMod.default, objectStack: js.Array[js.Any]): Unit = js.native
   }
 }

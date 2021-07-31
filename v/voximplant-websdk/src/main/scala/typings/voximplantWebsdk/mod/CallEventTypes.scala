@@ -2,7 +2,6 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CallEventTypes {
@@ -10,18 +9,19 @@ object CallEventTypes {
   /**
     *    Event dispatched after call was connected
     */
-  @js.native
-  trait Connected extends VoxImplantCallEvent {
+  trait Connected
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Optional SIP headers received with the message
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
   }
   object Connected {
     
@@ -48,18 +48,19 @@ object CallEventTypes {
   /**
     *    Event dispatched after call was disconnected
     */
-  @js.native
-  trait Disconnected extends VoxImplantCallEvent {
+  trait Disconnected
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Optional SIP headers received with the message
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
   }
   object Disconnected {
     
@@ -86,28 +87,29 @@ object CallEventTypes {
   /**
     *    Event dispatched after if call failed
     */
-  @js.native
-  trait Failed extends VoxImplantCallEvent {
+  trait Failed
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Status code of the call (i.e. 486)
       */
-    var code: Double = js.native
+    var code: Double
     
     /**
       *    Optional SIP headers received with the message
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
     /**
       *    Status message of call failure (i.e. Busy Here)
       */
-    var reason: String = js.native
+    var reason: String
   }
   object Failed {
     
@@ -140,13 +142,12 @@ object CallEventTypes {
   /**
     *    Event dispatched in case of network connection problem between 2 peers
     */
-  @js.native
   trait ICETimeout extends StObject {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
   }
   object ICETimeout {
     
@@ -167,28 +168,29 @@ object CallEventTypes {
   /**
     *    Event dispatched when INFO message is received
     */
-  @js.native
-  trait InfoReceived extends VoxImplantCallEvent {
+  trait InfoReceived
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Content of the message
       */
-    var body: String = js.native
+    var body: String
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Optional SIP headers received with the message
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
     /**
       *    MIME type of INFO message
       */
-    var mimeType: String = js.native
+    var mimeType: String
   }
   object InfoReceived {
     
@@ -221,18 +223,19 @@ object CallEventTypes {
   /**
     *    Event dispatched when text message is received
     */
-  @js.native
-  trait MessageReceived extends VoxImplantCallEvent {
+  trait MessageReceived
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Content of the message
       */
-    var text: String = js.native
+    var text: String
   }
   object MessageReceived {
     
@@ -256,13 +259,14 @@ object CallEventTypes {
   /**
     *    Event dispatched when progress tone playback starts
     */
-  @js.native
-  trait ProgressToneStart extends VoxImplantCallEvent {
+  trait ProgressToneStart
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
   }
   object ProgressToneStart {
     
@@ -283,13 +287,14 @@ object CallEventTypes {
   /**
     *    Event dispatched when progress tone playback stops
     */
-  @js.native
-  trait ProgressToneStop extends VoxImplantCallEvent {
+  trait ProgressToneStop
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
   }
   object ProgressToneStop {
     
@@ -310,13 +315,14 @@ object CallEventTypes {
   /**
     *    Event dispatched when call has been transferred successfully
     */
-  @js.native
-  trait TransferComplete extends VoxImplantCallEvent {
+  trait TransferComplete
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
   }
   object TransferComplete {
     
@@ -337,13 +343,14 @@ object CallEventTypes {
   /**
     *    Event dispatched when call transfer failed
     */
-  @js.native
-  trait TransferFailed extends VoxImplantCallEvent {
+  trait TransferFailed
+    extends StObject
+       with VoxImplantCallEvent {
     
     /**
       *    Call that dispatched the event
       */
-    var call: Call = js.native
+    var call: Call
   }
   object TransferFailed {
     

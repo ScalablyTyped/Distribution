@@ -2,19 +2,17 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionMetaLocation extends StObject {
   
-  var current: Location = js.native
+  var current: Location
   
-  var history: Nullable[HistoryData] = js.native
+  var history: Nullable[HistoryData]
   
-  var kind: Nullable[String] = js.native
+  var kind: Nullable[String]
   
-  var prev: Location = js.native
+  var prev: Location
 }
 object ActionMetaLocation {
   

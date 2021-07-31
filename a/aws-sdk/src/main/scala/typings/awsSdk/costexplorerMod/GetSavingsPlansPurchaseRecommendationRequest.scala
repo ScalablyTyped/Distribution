@@ -2,51 +2,49 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavingsPlansPurchaseRecommendationRequest extends StObject {
   
   /**
     * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
     */
-  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
     * You can filter your recommendations by Account ID with the LINKED_ACCOUNT dimension. To filter your recommendations by Account ID, specify Key as LINKED_ACCOUNT and Value as the comma-separated Acount ID(s) for which you want to see Savings Plans purchase recommendations. For GetSavingsPlansPurchaseRecommendation, the Filter does not include CostCategories or Tags. It only includes Dimensions. With Dimensions, Key must be LINKED_ACCOUNT and Value can be a single Account ID or multiple comma-separated Account IDs for which you want to see Savings Plans Purchase Recommendations. AND and OR operators are not supported.
     */
-  var Filter: js.UndefOr[Expression] = js.native
+  var Filter: js.UndefOr[Expression] = js.undefined
   
   /**
     * The lookback period used to generate the recommendation.
     */
-  var LookbackPeriodInDays: typings.awsSdk.costexplorerMod.LookbackPeriodInDays = js.native
+  var LookbackPeriodInDays: typings.awsSdk.costexplorerMod.LookbackPeriodInDays
   
   /**
     * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * The number of recommendations that you want returned in a single response object.
     */
-  var PageSize: js.UndefOr[NonNegativeInteger] = js.native
+  var PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * The payment option used to generate these recommendations.
     */
-  var PaymentOption: typings.awsSdk.costexplorerMod.PaymentOption = js.native
+  var PaymentOption: typings.awsSdk.costexplorerMod.PaymentOption
   
   /**
     * The Savings Plans recommendation type requested.
     */
-  var SavingsPlansType: SupportedSavingsPlansType = js.native
+  var SavingsPlansType: SupportedSavingsPlansType
   
   /**
     * The savings plan recommendation term used to generate these recommendations.
     */
-  var TermInYears: typings.awsSdk.costexplorerMod.TermInYears = js.native
+  var TermInYears: typings.awsSdk.costexplorerMod.TermInYears
 }
 object GetSavingsPlansPurchaseRecommendationRequest {
   

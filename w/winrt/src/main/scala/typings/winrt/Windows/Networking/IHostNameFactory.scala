@@ -2,13 +2,11 @@ package typings.winrt.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHostNameFactory extends StObject {
   
-  def createHostName(hostName: String): HostName = js.native
+  def createHostName(hostName: String): HostName
 }
 object IHostNameFactory {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait TableScopedCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.native
+  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columns: js.UndefOr[TableColumnCollectionLoadOptions] = js.native
+  var columns: js.UndefOr[TableColumnCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var highlightFirstColumn: js.UndefOr[Boolean] = js.native
+  var highlightFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var highlightLastColumn: js.UndefOr[Boolean] = js.native
+  var highlightLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var legacyId: js.UndefOr[Boolean] = js.native
+  var legacyId: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.native
+  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showBandedColumns: js.UndefOr[Boolean] = js.native
+  var showBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showBandedRows: js.UndefOr[Boolean] = js.native
+  var showBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showFilterButton: js.UndefOr[Boolean] = js.native
+  var showFilterButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var showHeaders: js.UndefOr[Boolean] = js.native
+  var showHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -124,7 +122,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var showTotals: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -132,7 +130,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var sort: js.UndefOr[TableSortLoadOptions] = js.native
+  var sort: js.UndefOr[TableSortLoadOptions] = js.undefined
   
   /**
     *
@@ -140,7 +138,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -148,7 +146,7 @@ trait TableScopedCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 object TableScopedCollectionLoadOptions {
   

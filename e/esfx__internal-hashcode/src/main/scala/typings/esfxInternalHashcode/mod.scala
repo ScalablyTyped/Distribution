@@ -7,64 +7,60 @@ import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@esfx/internal-hashcode", "combineHashes")
+  @JSImport("@esfx/internal-hashcode", JSImport.Namespace)
   @js.native
-  def combineHashes(x: Double, y: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@esfx/internal-hashcode", "hashBigInt")
-  @js.native
-  def hashBigInt(x: js.BigInt): Double = js.native
+  @scala.inline
+  def combineHashes(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("combineHashes")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@esfx/internal-hashcode", "hashBoolean")
-  @js.native
-  def hashBoolean(x: Boolean): `1` | `0` = js.native
+  @scala.inline
+  def hashBigInt(x: js.BigInt): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashBigInt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@esfx/internal-hashcode", "hashNumber")
-  @js.native
-  def hashNumber(x: Double): Double = js.native
+  @scala.inline
+  def hashBoolean(x: Boolean): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("hashBoolean")(x.asInstanceOf[js.Any]).asInstanceOf[`1` | `0`]
   
-  @JSImport("@esfx/internal-hashcode", "hashObject")
-  @js.native
-  def hashObject(x: js.Object): Double = js.native
+  @scala.inline
+  def hashNumber(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashNumber")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@esfx/internal-hashcode", "hashString")
-  @js.native
-  def hashString(x: String): Double = js.native
+  @scala.inline
+  def hashObject(x: js.Object): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashObject")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@esfx/internal-hashcode", "hashSymbol")
-  @js.native
-  def hashSymbol(x: js.Symbol): Double = js.native
+  @scala.inline
+  def hashString(x: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashString")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def hashSymbol(x: js.Symbol): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashSymbol")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   object hashUnknown {
     
+    @scala.inline
+    def apply(x: js.Any): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
     @JSImport("@esfx/internal-hashcode", "hashUnknown")
     @js.native
-    def apply(x: js.Any): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@esfx/internal-hashcode", "hashUnknown.getState")
-    @js.native
-    def getState(): BigIntSeed = js.native
+    @scala.inline
+    def getState(): BigIntSeed = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[BigIntSeed]
     
-    @JSImport("@esfx/internal-hashcode", "hashUnknown.setState")
-    @js.native
+    @scala.inline
     def setState_getState(
       state: Partial[
           ReturnType[
             /* import warning: importer.ImportType#apply Failed type conversion: (x : unknown): number['getState'] */ js.Any
           ]
         ]
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait Counter extends StObject {
     
-    var next: Double = js.native
+    var next: Double
   }
   object Counter {
     

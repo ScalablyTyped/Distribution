@@ -3,21 +3,19 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Activeanon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryStats extends StObject {
   
-  var failcnt: Double = js.native
+  var failcnt: Double
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var max_usage: Double = js.native
+  var max_usage: Double
   
-  var stats: Activeanon = js.native
+  var stats: Activeanon
   
-  var usage: Double = js.native
+  var usage: Double
 }
 object MemoryStats {
   

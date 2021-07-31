@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrieveTapeArchiveInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the gateway you want to retrieve the virtual tape to. Use the ListGateways operation to return a list of gateways for your account and AWS Region. You retrieve archived virtual tapes to only one gateway and the gateway must be a tape gateway.
     */
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * The Amazon Resource Name (ARN) of the virtual tape you want to retrieve from the virtual tape shelf (VTS).
     */
-  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN = js.native
+  var TapeARN: typings.awsSdk.storagegatewayMod.TapeARN
 }
 object RetrieveTapeArchiveInput {
   

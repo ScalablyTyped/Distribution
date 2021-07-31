@@ -6,25 +6,24 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetObjectTaggingOutputMod {
   
-  @js.native
   trait GetObjectTaggingOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _TagSet shape
       */
-    var TagSet: js.Array[UnmarshalledTag] = js.native
+    var TagSet: js.Array[UnmarshalledTag]
     
     /**
       * _ObjectVersionId shape
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object GetObjectTaggingOutput {
     

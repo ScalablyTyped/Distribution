@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
   
   /** Configuration for the de-identification of the content item. Items specified here will override the template referenced by the deidentify_template_name argument. */
-  var deidentifyConfig: js.UndefOr[GooglePrivacyDlpV2DeidentifyConfig] = js.native
+  var deidentifyConfig: js.UndefOr[GooglePrivacyDlpV2DeidentifyConfig] = js.undefined
   
   /**
     * Template to use. Any configuration directly specified in deidentify_config will override those set in the template. Singular fields that are set in this request will replace their
     * corresponding fields in the template. Repeated fields are appended. Singular sub-messages and groups are recursively merged.
     */
-  var deidentifyTemplateName: js.UndefOr[String] = js.native
+  var deidentifyTemplateName: js.UndefOr[String] = js.undefined
   
   /** Configuration for the inspector. Items specified here will override the template referenced by the inspect_template_name argument. */
-  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
     * Template to use. Any configuration directly specified in inspect_config will override those set in the template. Singular fields that are set in this request will replace their
     * corresponding fields in the template. Repeated fields are appended. Singular sub-messages and groups are recursively merged.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /** The item to de-identify. Will be treated as text. */
-  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.undefined
   
   /** Deprecated. This field has no effect. */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2DeidentifyContentRequest {
   

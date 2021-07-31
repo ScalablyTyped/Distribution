@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to an instance of a background task. */
-@js.native
 trait IWebUIBackgroundTaskInstance extends StObject {
   
   /** Gets or sets the success value for the background task. The success value is what is returned to the foreground instance of your app in the completed event. */
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object IWebUIBackgroundTaskInstance {
   

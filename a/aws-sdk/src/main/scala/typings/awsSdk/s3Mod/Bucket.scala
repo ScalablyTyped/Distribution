@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
   /**
     * Date the bucket was created.
     */
-  var CreationDate: js.UndefOr[typings.awsSdk.s3Mod.CreationDate] = js.native
+  var CreationDate: js.UndefOr[typings.awsSdk.s3Mod.CreationDate] = js.undefined
   
   /**
     * The name of the bucket.
     */
-  var Name: js.UndefOr[BucketName] = js.native
+  var Name: js.UndefOr[BucketName] = js.undefined
 }
 object Bucket {
   

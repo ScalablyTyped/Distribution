@@ -2,12 +2,12 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaPipeline
-  extends ClientInstance
+  extends StObject
+     with ClientInstance
      with MediaObject {
   
   def getGstreamerDot(): js.Promise[String] = js.native

@@ -2,18 +2,16 @@ package typings.socks.constantsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a remote host
   */
-@js.native
 trait SocksRemoteHost extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object SocksRemoteHost {
   

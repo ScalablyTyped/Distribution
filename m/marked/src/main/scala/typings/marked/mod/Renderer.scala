@@ -9,7 +9,6 @@ import typings.marked.markedNumbers.`5`
 import typings.marked.markedNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Renderer")
@@ -23,8 +22,8 @@ class Renderer () extends StObject {
   
   def checkbox(checked: Boolean): String = js.native
   
-  def code(code: String, language: js.UndefOr[scala.Nothing], isEscaped: Boolean): String = js.native
   def code(code: String, language: String, isEscaped: Boolean): String = js.native
+  def code(code: String, language: Unit, isEscaped: Boolean): String = js.native
   
   def codespan(code: String): String = js.native
   

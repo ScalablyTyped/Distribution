@@ -2,21 +2,21 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateKeyOpts extends CommonArgs {
+trait CreateKeyOpts
+  extends StObject
+     with CommonArgs {
   
-  var bucketId: js.UndefOr[String] = js.native
+  var bucketId: js.UndefOr[String] = js.undefined
   
-  var capabilities: js.Array[String] = js.native
+  var capabilities: js.Array[String]
   
-  var keyName: String = js.native
+  var keyName: String
   
-  var namePrefix: js.UndefOr[String] = js.native
+  var namePrefix: js.UndefOr[String] = js.undefined
   
-  var validDurationInSeconds: js.UndefOr[Double] = js.native
+  var validDurationInSeconds: js.UndefOr[Double] = js.undefined
 }
 object CreateKeyOpts {
   

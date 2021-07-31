@@ -3,11 +3,11 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.angular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AngularBuildOptions extends BuildOptions[angular] {
+trait AngularBuildOptions
+  extends StObject
+     with BuildOptions[angular] {
   
   /**
     * The Angular architect configuration to use for builds.
@@ -15,21 +15,21 @@ trait AngularBuildOptions extends BuildOptions[angular] {
     * The `--prod` command line flag is a shortcut which translates to the
     * 'production' configuration.
     */
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
-  var cordovaAssets: js.UndefOr[Boolean] = js.native
+  var cordovaAssets: js.UndefOr[Boolean] = js.undefined
   
-  var sourcemaps: js.UndefOr[Boolean] = js.native
+  var sourcemaps: js.UndefOr[Boolean] = js.undefined
   
-  var watch: js.UndefOr[Boolean] = js.native
+  var watch: js.UndefOr[Boolean] = js.undefined
 }
 object AngularBuildOptions {
   
   @scala.inline
-  def apply(`--`: js.Array[String], engine: String, `type`: angular): AngularBuildOptions = {
+  def apply(`--`: js.Array[String], engine: String): AngularBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("angular")
     __obj.asInstanceOf[AngularBuildOptions]
   }
   

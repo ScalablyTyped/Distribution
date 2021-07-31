@@ -6,19 +6,17 @@ import typings.jest.jestNumbers.`2`
 import typings.jest.jestNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChalkColorSupport extends StObject {
   
-  var has16m: Boolean = js.native
+  var has16m: Boolean
   
-  var has256: Boolean = js.native
+  var has256: Boolean
   
-  var hasBasic: Boolean = js.native
+  var hasBasic: Boolean
   
-  var level: `0` | `1` | `2` | `3` = js.native
+  var level: `0` | `1` | `2` | `3`
 }
 object ChalkColorSupport {
   

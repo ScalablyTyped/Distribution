@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -123,41 +122,21 @@ trait PlusNetXMLHttpRequest extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   def open(): Unit = js.native
-  def open(
-    method: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
-  def open(method: js.UndefOr[scala.Nothing], url: js.UndefOr[scala.Nothing], username: String): Unit = js.native
-  def open(
-    method: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    username: String,
-    password: String
-  ): Unit = js.native
-  def open(method: js.UndefOr[scala.Nothing], url: String): Unit = js.native
-  def open(
-    method: js.UndefOr[scala.Nothing],
-    url: String,
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
-  def open(method: js.UndefOr[scala.Nothing], url: String, username: String): Unit = js.native
-  def open(method: js.UndefOr[scala.Nothing], url: String, username: String, password: String): Unit = js.native
   def open(method: String): Unit = js.native
-  def open(
-    method: String,
-    url: js.UndefOr[scala.Nothing],
-    username: js.UndefOr[scala.Nothing],
-    password: String
-  ): Unit = js.native
-  def open(method: String, url: js.UndefOr[scala.Nothing], username: String): Unit = js.native
-  def open(method: String, url: js.UndefOr[scala.Nothing], username: String, password: String): Unit = js.native
   def open(method: String, url: String): Unit = js.native
-  def open(method: String, url: String, username: js.UndefOr[scala.Nothing], password: String): Unit = js.native
   def open(method: String, url: String, username: String): Unit = js.native
   def open(method: String, url: String, username: String, password: String): Unit = js.native
+  def open(method: String, url: String, username: Unit, password: String): Unit = js.native
+  def open(method: String, url: Unit, username: String): Unit = js.native
+  def open(method: String, url: Unit, username: String, password: String): Unit = js.native
+  def open(method: String, url: Unit, username: Unit, password: String): Unit = js.native
+  def open(method: Unit, url: String): Unit = js.native
+  def open(method: Unit, url: String, username: String): Unit = js.native
+  def open(method: Unit, url: String, username: String, password: String): Unit = js.native
+  def open(method: Unit, url: String, username: Unit, password: String): Unit = js.native
+  def open(method: Unit, url: Unit, username: String): Unit = js.native
+  def open(method: Unit, url: Unit, username: String, password: String): Unit = js.native
+  def open(method: Unit, url: Unit, username: Unit, password: String): Unit = js.native
   
   /**
     * 重写服务器返回的MIME类型
@@ -254,9 +233,9 @@ trait PlusNetXMLHttpRequest extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   def setRequestHeader(): Unit = js.native
-  def setRequestHeader(headerName: js.UndefOr[scala.Nothing], headerValue: String): Unit = js.native
   def setRequestHeader(headerName: String): Unit = js.native
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
+  def setRequestHeader(headerName: Unit, headerValue: String): Unit = js.native
   
   /**
     * 服务器返回的HTTP状态代码

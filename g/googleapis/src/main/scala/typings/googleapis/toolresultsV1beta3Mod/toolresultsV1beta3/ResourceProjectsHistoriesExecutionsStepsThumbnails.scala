@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Thumbnails")
@@ -39,7 +38,7 @@ class ResourceProjectsHistoriesExecutionsStepsThumbnails protected () extends St
     */
   def list(): GaxiosPromise[SchemaListStepThumbnailsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListStepThumbnailsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListStepThumbnailsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListStepThumbnailsResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsStepsThumbnailsList): GaxiosPromise[SchemaListStepThumbnailsResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsStepsThumbnailsList,

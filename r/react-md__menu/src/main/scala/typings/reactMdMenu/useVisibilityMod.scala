@@ -2,17 +2,18 @@ package typings.reactMdMenu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useVisibilityMod {
   
-  @JSImport("@react-md/menu/types/useVisibility", "useVisibility")
+  @JSImport("@react-md/menu/types/useVisibility", JSImport.Namespace)
   @js.native
-  def useVisibility(): ReturnValue = js.native
-  @JSImport("@react-md/menu/types/useVisibility", "useVisibility")
-  @js.native
-  def useVisibility(hasDefaultVisibleDefaultFocusOnVisibilityChange: VisibilityOptions): ReturnValue = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")().asInstanceOf[ReturnValue]
+  @scala.inline
+  def useVisibility(hasDefaultVisibleDefaultFocusValueOnVisibilityChange: VisibilityOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")(hasDefaultVisibleDefaultFocusValueOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdMenu.reactMdMenuStrings.first
@@ -28,20 +29,19 @@ object useVisibilityMod {
     def last: typings.reactMdMenu.reactMdMenuStrings.last = "last".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.last]
   }
   
-  @js.native
   trait ReturnValue extends StObject {
     
-    var defaultFocus: FocusType = js.native
+    var defaultFocus: FocusType
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def showWithFocus(defaultFocus: FocusType): Unit = js.native
+    def showWithFocus(defaultFocus: FocusType): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ReturnValue {
     
@@ -81,14 +81,13 @@ object useVisibilityMod {
     }
   }
   
-  @js.native
   trait VisibilityOptions extends StObject {
     
-    var defaultFocus: js.UndefOr[FocusType] = js.native
+    var defaultFocus: js.UndefOr[FocusType] = js.undefined
     
-    var defaultVisible: js.UndefOr[Boolean] = js.native
+    var defaultVisible: js.UndefOr[Boolean] = js.undefined
     
-    var onVisibilityChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibilityChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
   }
   object VisibilityOptions {
     
@@ -121,12 +120,11 @@ object useVisibilityMod {
     }
   }
   
-  @js.native
   trait VisibilityState extends StObject {
     
-    var defaultFocus: FocusType = js.native
+    var defaultFocus: FocusType
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object VisibilityState {
     

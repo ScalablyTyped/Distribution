@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container for the dynamic properties of an attribute expression.
   */
-@js.native
 trait INxTickCell extends StObject {
   
   /*
     * End value.
     */
-  var qEnd: Double = js.native
+  var qEnd: Double
   
   /**
     * Start value.
     */
-  var qStart: Double = js.native
+  var qStart: Double
   
   /**
     * Tick's label.
     */
-  var qText: String = js.native
+  var qText: String
 }
 object INxTickCell {
   

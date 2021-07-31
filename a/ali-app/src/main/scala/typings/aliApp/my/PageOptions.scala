@@ -3,7 +3,6 @@ package typings.aliApp.my
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -11,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Page 实现的接口对象
   */
-@js.native
 trait PageOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  def onError(): Unit = js.native
+  def onError(): Unit
   
-  def onHide(): Unit = js.native
+  def onHide(): Unit
   
-  def onLaunch(options: Options): Unit = js.native
+  def onLaunch(options: Options): Unit
   
   /**
     * 下拉刷新
@@ -29,9 +28,9 @@ trait PageOptions
     * 需要在页面对应的 .json 配置文件中配置 "pullRefresh": true 选项，才能开启下拉刷新事件。
     * 当处理完数据刷新后，调用 my.stopPullDownRefresh 可以停止当前页面的下拉刷新。
     */
-  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
   
-  def onShow(options: Options): Unit = js.native
+  def onShow(options: Options): Unit
 }
 object PageOptions {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorConfiguration extends StObject {
   
   /**
     *  Specifies whether the connector can be used as a destination. 
     */
-  var canUseAsDestination: js.UndefOr[Boolean] = js.native
+  var canUseAsDestination: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies whether the connector can be used as a source. 
     */
-  var canUseAsSource: js.UndefOr[Boolean] = js.native
+  var canUseAsSource: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies connector-specific metadata such as oAuthScopes, supportedRegions, privateLinkServiceUrl, and so on. 
     */
-  var connectorMetadata: js.UndefOr[ConnectorMetadata] = js.native
+  var connectorMetadata: js.UndefOr[ConnectorMetadata] = js.undefined
   
   /**
     *  Specifies if PrivateLink is enabled for that connector. 
     */
-  var isPrivateLinkEnabled: js.UndefOr[Boolean] = js.native
+  var isPrivateLinkEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies if a PrivateLink endpoint URL is required. 
     */
-  var isPrivateLinkEndpointUrlRequired: js.UndefOr[Boolean] = js.native
+  var isPrivateLinkEndpointUrlRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Lists the connectors that are available for use as destinations. 
     */
-  var supportedDestinationConnectors: js.UndefOr[ConnectorTypeList] = js.native
+  var supportedDestinationConnectors: js.UndefOr[ConnectorTypeList] = js.undefined
   
   /**
     *  Specifies the supported flow frequency for that connector. 
     */
-  var supportedSchedulingFrequencies: js.UndefOr[SchedulingFrequencyTypeList] = js.native
+  var supportedSchedulingFrequencies: js.UndefOr[SchedulingFrequencyTypeList] = js.undefined
   
   /**
     *  Specifies the supported trigger types for the flow. 
     */
-  var supportedTriggerTypes: js.UndefOr[TriggerTypeList] = js.native
+  var supportedTriggerTypes: js.UndefOr[TriggerTypeList] = js.undefined
 }
 object ConnectorConfiguration {
   

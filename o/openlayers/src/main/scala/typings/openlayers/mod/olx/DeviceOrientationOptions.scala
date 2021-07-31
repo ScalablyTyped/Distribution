@@ -2,13 +2,11 @@ package typings.openlayers.mod.olx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceOrientationOptions extends StObject {
   
-  var tracking: js.UndefOr[Boolean] = js.native
+  var tracking: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceOrientationOptions {
   

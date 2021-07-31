@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiaPosDataProvider extends StObject {
   
   /** The ID of the POS data provider. */
-  var posDataProviderId: js.UndefOr[String] = js.native
+  var posDataProviderId: js.UndefOr[String] = js.undefined
   
   /** The account ID by which this merchant is known to the POS data provider. */
-  var posExternalAccountId: js.UndefOr[String] = js.native
+  var posExternalAccountId: js.UndefOr[String] = js.undefined
 }
 object LiaPosDataProvider {
   

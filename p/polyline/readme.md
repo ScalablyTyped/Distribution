@@ -12,7 +12,7 @@ Polyline encoding and decoding
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 339559 |
+| # downloads        | 366292 |
 | # stars            | 5 |
 
 ## Links

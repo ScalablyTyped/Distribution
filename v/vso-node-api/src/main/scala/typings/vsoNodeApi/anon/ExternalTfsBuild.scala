@@ -2,33 +2,31 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalTfsBuild extends StObject {
   
-  var build: scala.Double = js.native
+  var build: scala.Double
   
-  var custom: scala.Double = js.native
+  var custom: scala.Double
   
-  var externalTfsBuild: scala.Double = js.native
+  var externalTfsBuild: scala.Double
   
-  var fileShare: scala.Double = js.native
+  var fileShare: scala.Double
   
-  var gitHub: scala.Double = js.native
+  var gitHub: scala.Double
   
-  var jenkins: scala.Double = js.native
+  var jenkins: scala.Double
   
-  var nuget: scala.Double = js.native
+  var nuget: scala.Double
   
-  var tFGit: scala.Double = js.native
+  var tFGit: scala.Double
   
-  var tfsOnPrem: scala.Double = js.native
+  var tfsOnPrem: scala.Double
   
-  var tfvc: scala.Double = js.native
+  var tfvc: scala.Double
   
-  var xamlBuild: scala.Double = js.native
+  var xamlBuild: scala.Double
 }
 object ExternalTfsBuild {
   

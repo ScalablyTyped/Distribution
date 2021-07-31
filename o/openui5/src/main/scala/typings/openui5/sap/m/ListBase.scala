@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.delegate.ItemNavigation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBase extends Control {
+trait ListBase
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -416,7 +417,7 @@ trait ListBase extends Control {
     * <code>ariaLabelledBy</code>.
     * @since 1.28.0
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>enableBusyIndicator</code>.When this property is set to
@@ -610,7 +611,7 @@ trait ListBase extends Control {
     * filters).        Note: In single selection modes, only the last selected item's binding context is
     * returned in array.
     */
-  def getSelectedContexts(bAll: Boolean): js.Array[_] = js.native
+  def getSelectedContexts(bAll: Boolean): js.Array[js.Any] = js.native
   
   /**
     * Returns selected list item. When no item is selected, "null" is returned. When "multi-selection" is
@@ -695,7 +696,7 @@ trait ListBase extends Control {
     * @since 1.28.0
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>items</code>.Additionally, it unregisters them

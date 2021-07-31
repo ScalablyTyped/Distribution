@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeConstraintSetUpdate extends StObject {
   
   /**
     * Specify INSERT to add a SizeConstraintSetUpdate to a SizeConstraintSet. Use DELETE to remove a SizeConstraintSetUpdate from a SizeConstraintSet.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * Specifies a constraint on the size of a part of the web request. AWS WAF uses the Size, ComparisonOperator, and FieldToMatch to build an expression in the form of "Size ComparisonOperator size in bytes of FieldToMatch". If that expression is true, the SizeConstraint is considered to match.
     */
-  var SizeConstraint: typings.awsSdk.wafregionalMod.SizeConstraint = js.native
+  var SizeConstraint: typings.awsSdk.wafregionalMod.SizeConstraint
 }
 object SizeConstraintSetUpdate {
   

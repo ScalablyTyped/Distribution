@@ -3,14 +3,12 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This resource represents a long-running operation that is the result of a
   * network API call.
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
@@ -18,30 +16,30 @@ trait SchemaOperation extends StObject {
     * `true`, the operation is completed, and either `error` or `response` is
     * available.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The error result of the operation in case of failure or cancellation.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * An OperationMetadata or Metadata object. This will always be returned
     * with the Operation.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The server-assigned name, which is only unique within the same service
     * that originally returns it. For example&amp;#58;
     * `operations/CJHU7Oi_ChDrveSpBRjfuL-qzoWAgEw`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An Empty object.
     */
-  var response: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var response: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaOperation {
   

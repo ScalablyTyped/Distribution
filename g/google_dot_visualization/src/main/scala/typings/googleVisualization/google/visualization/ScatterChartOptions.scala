@@ -5,77 +5,75 @@ import typings.googleVisualization.googleVisualizationStrings.function
 import typings.googleVisualization.googleVisualizationStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScatterChartOptions extends StObject {
   
-  var aggregationTarget: js.UndefOr[String] = js.native
+  var aggregationTarget: js.UndefOr[String] = js.undefined
   
-  var animation: js.UndefOr[TransitionAnimation] = js.native
+  var animation: js.UndefOr[TransitionAnimation] = js.undefined
   
-  var annotations: js.UndefOr[ChartAnnotations] = js.native
+  var annotations: js.UndefOr[ChartAnnotations] = js.undefined
   
-  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.native
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
   
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   
-  var chartArea: js.UndefOr[ChartArea] = js.native
+  var chartArea: js.UndefOr[ChartArea] = js.undefined
   
-  var colors: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var crosshair: js.UndefOr[ChartCrosshair] = js.native
+  var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
   
-  var curveType: js.UndefOr[none | function] = js.native
+  var curveType: js.UndefOr[none | function] = js.undefined
   
-  var dataOpacity: js.UndefOr[Double] = js.native
+  var dataOpacity: js.UndefOr[Double] = js.undefined
   
-  var enableInteractivity: js.UndefOr[Boolean] = js.native
+  var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   
-  var explorer: js.UndefOr[ChartExplorer] = js.native
+  var explorer: js.UndefOr[ChartExplorer] = js.undefined
   
-  var fontName: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var forceIFrame: js.UndefOr[Boolean] = js.native
+  var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var hAxis: js.UndefOr[ChartAxis] = js.native
+  var hAxis: js.UndefOr[ChartAxis] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var legend: js.UndefOr[ChartLegend | none] = js.native
+  var legend: js.UndefOr[ChartLegend | none] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[ChartOrientation] = js.native
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
   
-  var pointShape: js.UndefOr[ChartPointShape] = js.native
+  var pointShape: js.UndefOr[ChartPointShape] = js.undefined
   
-  var pointSize: js.UndefOr[Double] = js.native
+  var pointSize: js.UndefOr[Double] = js.undefined
   
-  var pointsVisible: js.UndefOr[Boolean] = js.native
+  var pointsVisible: js.UndefOr[Boolean] = js.undefined
   
-  var selectionMode: js.UndefOr[ChartSelectionMode] = js.native
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titlePosition: js.UndefOr[String] = js.native
+  var titlePosition: js.UndefOr[String] = js.undefined
   
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var tooltip: js.UndefOr[ChartTooltip] = js.native
+  var tooltip: js.UndefOr[ChartTooltip] = js.undefined
   
-  var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.native
+  var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.undefined
   
-  var vAxis: js.UndefOr[ChartAxis] = js.native
+  var vAxis: js.UndefOr[ChartAxis] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ScatterChartOptions {
   

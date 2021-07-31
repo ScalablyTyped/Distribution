@@ -10,9 +10,9 @@ A flexible math expression evaluator
 | ------------------ | :-------------: |
 | Full name          | math-expression-evaluator |
 | Keywords           | math, expression, evaluator, parser |
-| # releases         | 7 |
-| # dependents       | 29 |
-| # downloads        | 82255910 |
+| # releases         | 13 |
+| # dependents       | 35 |
+| # downloads        | 82736967 |
 | # stars            | 6 |
 
 ## Links

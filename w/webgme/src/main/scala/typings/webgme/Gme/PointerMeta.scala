@@ -3,19 +3,17 @@ package typings.webgme.Gme
 import typings.webgme.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointerMeta extends StObject {
   
-  var items: js.Array[Id] = js.native
+  var items: js.Array[Id]
   
   /**
     * the maximum allowed targets for a pointer is 1.
     * more than 1 requires a set.
     */
-  var max: Double = js.native
+  var max: Double
 }
 object PointerMeta {
   

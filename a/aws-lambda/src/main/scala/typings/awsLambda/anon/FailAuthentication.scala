@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailAuthentication extends StObject {
   
-  var challengeName: String = js.native
+  var challengeName: String
   
-  var failAuthentication: Boolean = js.native
+  var failAuthentication: Boolean
   
-  var issueTokens: Boolean = js.native
+  var issueTokens: Boolean
 }
 object FailAuthentication {
   

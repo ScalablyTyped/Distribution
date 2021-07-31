@@ -4,115 +4,115 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a simple menu. */
-@js.native
-trait XMenu extends XInterface {
+trait XMenu
+  extends StObject
+     with XInterface {
   
   /**
     * returns the number of items in the menu.
     * @returns the number of items in this {@link XMenu} .
     */
-  val ItemCount: Double = js.native
+  val ItemCount: Double
   
   /**
     * adds the specified menu listener to receive events from this menu.
     * @param xListener the {@link XMenuListener} to be added.
     */
-  def addMenuListener(xListener: XMenuListener): Unit = js.native
+  def addMenuListener(xListener: XMenuListener): Unit
   
   /** removes all items from the menu. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * specifies whether mnemonics are automatically assigned to menu items, or not.
     * @param bEnable if `TRUE` , mnemonics are automatically assigned to menu items.
     */
-  def enableAutoMnemonics(bEnable: Boolean): Unit = js.native
+  def enableAutoMnemonics(bEnable: Boolean): Unit
   
   /**
     * enables or disables the menu item.
     * @param nItemId specifies the menu item ID.
     * @param bEnable specifies whether the menu item should be enabled ( `TRUE` ) or disabled ( `FALSE` ).
     */
-  def enableItem(nItemId: Double, bEnable: Boolean): Unit = js.native
+  def enableItem(nItemId: Double, bEnable: Boolean): Unit
   
   /**
     * retrieves the command string for the menu item.
     * @param nItemId specifies the menu item ID for which the command URL should be set.
     * @returns the command of the menu item.
     */
-  def getCommand(nItemId: Double): String = js.native
+  def getCommand(nItemId: Double): String
   
   /**
     * retrieves the help command string for the menu item.
     * @param nItemId specifies the menu item ID for which the help command should be set.
     * @returns the help command of the menu item.
     */
-  def getHelpCommand(nItemId: Double): String = js.native
+  def getHelpCommand(nItemId: Double): String
   
   /**
     * retrieves the help text for the menu item.
     * @param nItemId specifies the menu item identifier for which the help text should be retrieved.
     * @returns a string with the help text.
     */
-  def getHelpText(nItemId: Double): String = js.native
+  def getHelpText(nItemId: Double): String
   
   /**
     * returns the number of items in the menu.
     * @returns the number of items in this {@link XMenu} .
     */
-  def getItemCount(): Double = js.native
+  def getItemCount(): Double
   
   /**
     * returns the ID of the item at the specified position.
     * @param nItemPos specifies the position of the menu item for which the item ID is queried.
     * @returns the ID of the menu item at the given position.
     */
-  def getItemId(nItemPos: Double): Double = js.native
+  def getItemId(nItemPos: Double): Double
   
   /**
     * returns the position of the item with the specified ID.
     * @param nItemId specifies the ID of the menu item for which the item position is queried.
     * @returns the position of the menu item with the specified ID.
     */
-  def getItemPos(nItemId: Double): Double = js.native
+  def getItemPos(nItemId: Double): Double
   
   /**
     * returns the string for the given item id.
     * @param nItemId specifies the ID of the menu item.
     * @returns the label of the menu item.
     */
-  def getItemText(nItemId: Double): String = js.native
+  def getItemText(nItemId: Double): String
   
   /**
     * retrieves the type of the menu item.
     * @param nItemPos specifies the position of the menu item for which the item type is queried.
     * @returns a MenuItemType indicating the item type.
     */
-  def getItemType(nItemPos: Double): MenuItemType = js.native
+  def getItemType(nItemPos: Double): MenuItemType
   
   /**
     * returns the popup menu from the menu item.
     * @param nItemId specifies the menu item ID for which the {@link XPopupMenu} should be retrieved.
     * @returns a {@link XPopupMenu} .
     */
-  def getPopupMenu(nItemId: Double): XPopupMenu = js.native
+  def getPopupMenu(nItemId: Double): XPopupMenu
   
   /**
     * retrieves the tip help text for the menu item.
     * @param nItemId specifies the menu item identifier for which the tip help text should be retrieved.
     * @returns a string with the tip help text.
     */
-  def getTipHelpText(nItemId: Double): String = js.native
+  def getTipHelpText(nItemId: Double): String
   
   /**
     * specifies whether disabled menu entries should be hidden, or not.
     * @param bHide if `TRUE` , disabled menu entries are hidden.
     */
-  def hideDisabledEntries(bHide: Boolean): Unit = js.native
+  def hideDisabledEntries(bHide: Boolean): Unit
   
   /**
     * inserts an item into the menu.
@@ -123,75 +123,75 @@ trait XMenu extends XInterface {
     * @param nItemStyle specifies the style of the menu item, as defined in {@link MenuItemStyle} .
     * @param nItemPos specifies the position where the menu item will be inserted.
     */
-  def insertItem(nItemId: Double, aText: String, nItemStyle: Double, nItemPos: Double): Unit = js.native
+  def insertItem(nItemId: Double, aText: String, nItemStyle: Double, nItemPos: Double): Unit
   
   /**
     * returns the state of the menu item.
     * @param nItemId specifies the menu item ID.
     * @returns `TRUE` if the item is enabled, `FALSE` otherwise.
     */
-  def isItemEnabled(nItemId: Double): Boolean = js.native
+  def isItemEnabled(nItemId: Double): Boolean
   
   /**
     * checks whether an {@link XMenu} is an {@link XPopupMenu} .
     * @returns `TRUE` if the menu is a {@link PopupMenu} , `FALSE` if it is a {@link MenuBar} .
     */
-  def isPopupMenu(): Boolean = js.native
+  def isPopupMenu(): Boolean
   
   /**
     * removes one or more items from the menu.
     * @param nItemPos specifies the position of the (first) menu item to be removed.
     * @param nCount specifies the number of menu items to remove.
     */
-  def removeItem(nItemPos: Double, nCount: Double): Unit = js.native
+  def removeItem(nItemPos: Double, nCount: Double): Unit
   
   /**
     * removes the specified menu listener so that it no longer receives events from this menu.
     * @param xListener the {@link XMenuListener} to be removed.
     */
-  def removeMenuListener(xListener: XMenuListener): Unit = js.native
+  def removeMenuListener(xListener: XMenuListener): Unit
   
   /**
     * sets the command string for the menu item.
     * @param nItemId specifies the menu item ID for which the command should be set.
     * @param aCommand specifies the command for the menu item.
     */
-  def setCommand(nItemId: Double, aCommand: String): Unit = js.native
+  def setCommand(nItemId: Double, aCommand: String): Unit
   
   /**
     * sets the help command string for the menu item.
     * @param nItemId specifies the menu item ID for which the help command URL be set.
     * @param aCommand specifies the help command for the menu item.
     */
-  def setHelpCommand(nItemId: Double, aCommand: String): Unit = js.native
+  def setHelpCommand(nItemId: Double, aCommand: String): Unit
   
   /**
     * sets the help text for the menu item.
     * @param nItemId specifies the menu item identifier for which the help text should be set.
     * @param sHelpText specifies the help text for the menu item.
     */
-  def setHelpText(nItemId: Double, sHelpText: String): Unit = js.native
+  def setHelpText(nItemId: Double, sHelpText: String): Unit
   
   /**
     * sets the text for the menu item.
     * @param nItemId specifies the ID of the menu item.
     * @param aText specifies the label of the menu item.
     */
-  def setItemText(nItemId: Double, aText: String): Unit = js.native
+  def setItemText(nItemId: Double, aText: String): Unit
   
   /**
     * sets the popup menu for a specified menu item.
     * @param nItemId specifies the menu item ID for which the {@link XPopupMenu} should be set.
     * @param aPopupMenu specifies a {@link XPopupMenu} .
     */
-  def setPopupMenu(nItemId: Double, aPopupMenu: XPopupMenu): Unit = js.native
+  def setPopupMenu(nItemId: Double, aPopupMenu: XPopupMenu): Unit
   
   /**
     * sets the tip help text for the menu item.
     * @param nItemId specifies the menu item identifier for which the tip help text should be set.
     * @param sTipHelpText specifies the tip help text for the menu item.
     */
-  def setTipHelpText(nItemId: Double, sTipHelpText: String): Unit = js.native
+  def setTipHelpText(nItemId: Double, sTipHelpText: String): Unit
 }
 object XMenu {
   

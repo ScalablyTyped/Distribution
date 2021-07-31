@@ -2,26 +2,24 @@ package typings.cacache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Algorithm extends StObject {
     
-    var algorithm: String = js.native
+    var algorithm: String
     
-    var digest: String = js.native
+    var digest: String
     
-    var options: js.Array[_] = js.native
+    var options: js.Array[js.Any]
     
-    var source: String = js.native
+    var source: String
   }
   object Algorithm {
     
     @scala.inline
-    def apply(algorithm: String, digest: String, options: js.Array[_], source: String): Algorithm = {
+    def apply(algorithm: String, digest: String, options: js.Array[js.Any], source: String): Algorithm = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Algorithm]
     }
@@ -36,7 +34,7 @@ object anon {
       def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOptions(value: js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
@@ -47,25 +45,24 @@ object anon {
   }
   
   /* Inlined cacache.cacache/en.CacheObject & {  size :number} */
-  @js.native
   trait CacheObjectsizenumber extends StObject {
     
     /** Subresource Integrity hash for the content this entry refers to. */
-    var integrity: String = js.native
+    var integrity: String
     
     /** Key the entry was looked up under. Matches the key argument. */
-    var key: String = js.native
+    var key: String
     
     /** User-assigned metadata associated with the entry/content. */
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
     /** Filesystem path where content is stored, joined with cache argument. */
-    var path: String = js.native
+    var path: String
     
-    var size: Double = js.native
+    var size: Double
     
     /** Timestamp the entry was first added on. */
-    var time: Double = js.native
+    var time: Double
   }
   object CacheObjectsizenumber {
     

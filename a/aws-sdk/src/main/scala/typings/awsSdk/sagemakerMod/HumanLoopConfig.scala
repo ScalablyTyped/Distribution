@@ -2,53 +2,51 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the human task user interface.
     */
-  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn = js.native
+  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn
   
-  var PublicWorkforceTaskPrice: js.UndefOr[typings.awsSdk.sagemakerMod.PublicWorkforceTaskPrice] = js.native
+  var PublicWorkforceTaskPrice: js.UndefOr[typings.awsSdk.sagemakerMod.PublicWorkforceTaskPrice] = js.undefined
   
   /**
     * The length of time that a task remains available for review by human workers.
     */
-  var TaskAvailabilityLifetimeInSeconds: js.UndefOr[FlowDefinitionTaskAvailabilityLifetimeInSeconds] = js.native
+  var TaskAvailabilityLifetimeInSeconds: js.UndefOr[FlowDefinitionTaskAvailabilityLifetimeInSeconds] = js.undefined
   
   /**
     * The number of distinct workers who will perform the same task on each object. For example, if TaskCount is set to 3 for an image classification labeling job, three workers will classify each input image. Increasing TaskCount can improve label accuracy.
     */
-  var TaskCount: FlowDefinitionTaskCount = js.native
+  var TaskCount: FlowDefinitionTaskCount
   
   /**
     * A description for the human worker task.
     */
-  var TaskDescription: FlowDefinitionTaskDescription = js.native
+  var TaskDescription: FlowDefinitionTaskDescription
   
   /**
     * Keywords used to describe the task so that workers can discover the task.
     */
-  var TaskKeywords: js.UndefOr[FlowDefinitionTaskKeywords] = js.native
+  var TaskKeywords: js.UndefOr[FlowDefinitionTaskKeywords] = js.undefined
   
   /**
     * The amount of time that a worker has to complete a task. The default value is 3,600 seconds (1 hour)
     */
-  var TaskTimeLimitInSeconds: js.UndefOr[FlowDefinitionTaskTimeLimitInSeconds] = js.native
+  var TaskTimeLimitInSeconds: js.UndefOr[FlowDefinitionTaskTimeLimitInSeconds] = js.undefined
   
   /**
     * A title for the human worker task.
     */
-  var TaskTitle: FlowDefinitionTaskTitle = js.native
+  var TaskTitle: FlowDefinitionTaskTitle
   
   /**
     * Amazon Resource Name (ARN) of a team of workers.
     */
-  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn = js.native
+  var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
 }
 object HumanLoopConfig {
   

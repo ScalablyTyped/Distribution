@@ -10,9 +10,9 @@ Animation Variables and Mixins used by Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/animation |
 | Keywords           | material components, material design, animation |
-| # releases         | 651 |
+| # releases         | 807 |
 | # dependents       | 69 |
-| # downloads        | 5349349 |
+| # downloads        | 5672917 |
 | # stars            | 0 |
 
 ## Links

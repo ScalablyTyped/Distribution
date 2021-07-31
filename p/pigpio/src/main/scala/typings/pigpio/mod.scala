@@ -6,10 +6,13 @@ import typings.pigpio.anon.Alert
 import typings.pigpio.anon.Bits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pigpio", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pigpio", "CLOCK_PCM")
   @js.native
@@ -457,31 +460,24 @@ object mod {
     def PI_NTFY_FLAGS_ALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI_NTFY_FLAGS_ALIVE")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("pigpio", "configureClock")
-  @js.native
-  def configureClock(microseconds: Double, peripheral: Double): Unit = js.native
+  @scala.inline
+  def configureClock(microseconds: Double, peripheral: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureClock")(microseconds.asInstanceOf[js.Any], peripheral.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pigpio", "configureSocketPort")
-  @js.native
-  def configureSocketPort(port: Double): Unit = js.native
+  @scala.inline
+  def configureSocketPort(port: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSocketPort")(port.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pigpio", "getTick")
-  @js.native
-  def getTick(): Double = js.native
+  @scala.inline
+  def getTick(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTick")().asInstanceOf[Double]
   
-  @JSImport("pigpio", "hardwareRevision")
-  @js.native
-  def hardwareRevision(): Double = js.native
+  @scala.inline
+  def hardwareRevision(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hardwareRevision")().asInstanceOf[Double]
   
-  @JSImport("pigpio", "initialize")
-  @js.native
-  def initialize(): Unit = js.native
+  @scala.inline
+  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
   
-  @JSImport("pigpio", "terminate")
-  @js.native
-  def terminate(): Unit = js.native
+  @scala.inline
+  def terminate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")().asInstanceOf[Unit]
   
-  @JSImport("pigpio", "tickDiff")
-  @js.native
-  def tickDiff(startTick: Double, endTick: Double): Double = js.native
+  @scala.inline
+  def tickDiff(startTick: Double, endTick: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickDiff")(startTick.asInstanceOf[js.Any], endTick.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

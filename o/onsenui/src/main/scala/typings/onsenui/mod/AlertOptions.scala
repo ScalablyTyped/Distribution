@@ -2,33 +2,31 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var buttonLabel: js.UndefOr[String] = js.native
+  var buttonLabel: js.UndefOr[String] = js.undefined
   
-  var buttonLabels: js.UndefOr[js.Array[String]] = js.native
+  var buttonLabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var callback: js.UndefOr[js.Any] = js.native
+  var callback: js.UndefOr[js.Any] = js.undefined
   
-  var cancelable: js.UndefOr[Boolean] = js.native
+  var cancelable: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var messageHTML: js.UndefOr[String] = js.native
+  var messageHTML: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var primaryButtonIndex: js.UndefOr[Double] = js.native
+  var primaryButtonIndex: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AlertOptions {
   

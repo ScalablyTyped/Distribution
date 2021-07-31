@@ -2,25 +2,25 @@ package typings.reactNativeDatawedgeIntents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-datawedge-intents", "registerBroadcastReceiver")
+  @JSImport("react-native-datawedge-intents", JSImport.Namespace)
   @js.native
-  def registerBroadcastReceiver(filter: FilterObject): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-datawedge-intents", "sendBroadcastWithExtras")
-  @js.native
-  def sendBroadcastWithExtras(extrasObject: ExtrasObject): Unit = js.native
+  @scala.inline
+  def registerBroadcastReceiver(filter: FilterObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBroadcastReceiver")(filter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def sendBroadcastWithExtras(extrasObject: ExtrasObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendBroadcastWithExtras")(extrasObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ExtrasObject extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var extras: js.UndefOr[js.Object] = js.native
+    var extras: js.UndefOr[js.Object] = js.undefined
   }
   object ExtrasObject {
     
@@ -44,12 +44,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FilterObject extends StObject {
     
-    var filterActions: js.Array[String] = js.native
+    var filterActions: js.Array[String]
     
-    var filterCategories: js.Array[String] = js.native
+    var filterCategories: js.Array[String]
   }
   object FilterObject {
     

@@ -3,37 +3,35 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChallengeAnswer extends StObject {
   
-  var challengeAnswer: js.UndefOr[String] = js.native
+  var challengeAnswer: js.UndefOr[String] = js.undefined
   
-  var challengeName: js.UndefOr[String] = js.native
+  var challengeName: js.UndefOr[String] = js.undefined
   
-  var clientMetadata: js.UndefOr[StringDictionary[String]] = js.native
+  var clientMetadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var codeParameter: js.UndefOr[String] = js.native
+  var codeParameter: js.UndefOr[String] = js.undefined
   
-  var linkParameter: js.UndefOr[String] = js.native
+  var linkParameter: js.UndefOr[String] = js.undefined
   
-  var newDeviceUsed: js.UndefOr[Boolean] = js.native
+  var newDeviceUsed: js.UndefOr[Boolean] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.native
+  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var session: js.UndefOr[js.Array[ChallengeResult]] = js.native
+  var session: js.UndefOr[js.Array[ChallengeResult]] = js.undefined
   
-  var userAttributes: StringDictionary[String] = js.native
+  var userAttributes: StringDictionary[String]
   
-  var userNotFound: js.UndefOr[Boolean] = js.native
+  var userNotFound: js.UndefOr[Boolean] = js.undefined
   
-  var usernameParameter: js.UndefOr[String] = js.native
+  var usernameParameter: js.UndefOr[String] = js.undefined
   
-  var validationData: js.UndefOr[StringDictionary[String]] = js.native
+  var validationData: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object ChallengeAnswer {
   

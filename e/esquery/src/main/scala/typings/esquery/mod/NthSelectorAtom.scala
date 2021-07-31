@@ -2,13 +2,13 @@ package typings.esquery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NthSelectorAtom extends SubjectSelectorAtom {
+trait NthSelectorAtom
+  extends StObject
+     with SubjectSelectorAtom {
   
-  var index: NumericLiteral = js.native
+  var index: NumericLiteral
 }
 object NthSelectorAtom {
   

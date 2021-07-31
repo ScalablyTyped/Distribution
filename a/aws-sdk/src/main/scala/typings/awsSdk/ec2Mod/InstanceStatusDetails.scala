@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStatusDetails extends StObject {
   
   /**
     * The time when a status check failed. For an instance that was launched and impaired, this is the time when the instance was launched.
     */
-  var ImpairedSince: js.UndefOr[DateTime] = js.native
+  var ImpairedSince: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The type of instance status.
     */
-  var Name: js.UndefOr[StatusName] = js.native
+  var Name: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[StatusType] = js.native
+  var Status: js.UndefOr[StatusType] = js.undefined
 }
 object InstanceStatusDetails {
   

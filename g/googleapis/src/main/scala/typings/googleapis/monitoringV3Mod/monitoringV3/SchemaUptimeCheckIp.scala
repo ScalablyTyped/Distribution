@@ -2,14 +2,12 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the region, location, and list of IP addresses where checkers in
   * the location run from.
   */
-@js.native
 trait SchemaUptimeCheckIp extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait SchemaUptimeCheckIp extends StObject {
     * addresses being in IPv4 format indefinitely and should support
     * interpreting this field in either IPv4 or IPv6 format.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * A more specific location within the region that typically encodes a
     * particular city/town/metro (and its containing state/province or country)
     * within the broader umbrella region category.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * A broad region category in which the IP address is located.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object SchemaUptimeCheckIp {
   

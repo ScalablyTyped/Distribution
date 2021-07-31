@@ -3,23 +3,21 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentData[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var error: js.UndefOr[typings.std.Error] = js.native
+  var error: js.UndefOr[typings.std.Error] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object ComponentData {
   
@@ -30,7 +28,7 @@ object ComponentData {
   }
   
   @scala.inline
-  implicit class ComponentDataMutableBuilder[Self <: ComponentData[_], T] (val x: Self with ComponentData[T]) extends AnyVal {
+  implicit class ComponentDataMutableBuilder[Self <: ComponentData[?], T] (val x: Self & ComponentData[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

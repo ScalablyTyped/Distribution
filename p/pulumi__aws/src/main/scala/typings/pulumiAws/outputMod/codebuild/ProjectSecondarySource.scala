@@ -2,56 +2,54 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSecondarySource extends StObject {
   
   /**
     * Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
     */
-  var auths: js.UndefOr[js.Array[ProjectSecondarySourceAuth]] = js.native
+  var auths: js.UndefOr[js.Array[ProjectSecondarySourceAuth]] = js.undefined
   
   /**
     * The build spec declaration to use for this build project's related builds.
     */
-  var buildspec: js.UndefOr[String] = js.native
+  var buildspec: js.UndefOr[String] = js.undefined
   
   /**
     * Truncate git history to this many commits.
     */
-  var gitCloneDepth: js.UndefOr[Double] = js.native
+  var gitCloneDepth: js.UndefOr[Double] = js.undefined
   
   /**
     * Information about the Git submodules configuration for an AWS CodeBuild build project. Git submodules config blocks are documented below. This option is only valid when the `type` is `CODECOMMIT`, `GITHUB` or `GITHUB_ENTERPRISE`.
     */
-  var gitSubmodulesConfig: js.UndefOr[ProjectSecondarySourceGitSubmodulesConfig] = js.native
+  var gitSubmodulesConfig: js.UndefOr[ProjectSecondarySourceGitSubmodulesConfig] = js.undefined
   
   /**
     * Ignore SSL warnings when connecting to source control.
     */
-  var insecureSsl: js.UndefOr[Boolean] = js.native
+  var insecureSsl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The location of the source code from git or s3.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
     */
-  var reportBuildStatus: js.UndefOr[Boolean] = js.native
+  var reportBuildStatus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The source identifier. Source data will be put inside a folder named as this parameter inside AWS CodeBuild source directory
     */
-  var sourceIdentifier: String = js.native
+  var sourceIdentifier: String
   
   /**
     * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ProjectSecondarySource {
   

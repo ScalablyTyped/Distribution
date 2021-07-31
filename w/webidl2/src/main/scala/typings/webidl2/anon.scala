@@ -5,27 +5,25 @@ import typings.webidl2.mod.Token
 import typings.webidl2.webidl2Strings.`enum-value`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BareMessage extends StObject {
     
-    var bareMessage: String = js.native
+    var bareMessage: String
     
-    var context: String = js.native
+    var context: String
     
-    var input: String = js.native
+    var input: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var sourceName: js.UndefOr[String] = js.native
+    var sourceName: js.UndefOr[String] = js.undefined
     
-    var tokens: js.Array[Token] = js.native
+    var tokens: js.Array[Token]
   }
   object BareMessage {
     
@@ -74,21 +72,20 @@ object anon {
     }
   }
   
-  @js.native
   trait Parent extends StObject {
     
-    var parent: EnumType = js.native
+    var parent: EnumType
     
-    var `type`: `enum-value` = js.native
+    var `type`: `enum-value`
     
-    var value: String = js.native
+    var value: String
   }
   object Parent {
     
     @scala.inline
-    def apply(parent: EnumType, `type`: `enum-value`, value: String): Parent = {
+    def apply(parent: EnumType, value: String): Parent = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("enum-value")
       __obj.asInstanceOf[Parent]
     }
     

@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCondition extends StObject {
   
   /**
     * The dimensions for the event filter to use for the activity.
     */
-  var Dimensions: js.UndefOr[EventDimensions] = js.native
+  var Dimensions: js.UndefOr[EventDimensions] = js.undefined
   
   /**
     * The message identifier (message_id) for the message to use when determining whether message events meet the condition.
     */
-  var MessageActivity: js.UndefOr[string] = js.native
+  var MessageActivity: js.UndefOr[string] = js.undefined
 }
 object EventCondition {
   

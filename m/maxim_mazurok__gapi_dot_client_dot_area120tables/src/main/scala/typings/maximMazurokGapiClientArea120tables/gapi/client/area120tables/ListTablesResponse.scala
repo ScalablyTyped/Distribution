@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTablesResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is empty, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of tables. */
-  var tables: js.UndefOr[js.Array[Table]] = js.native
+  var tables: js.UndefOr[js.Array[Table]] = js.undefined
 }
 object ListTablesResponse {
   

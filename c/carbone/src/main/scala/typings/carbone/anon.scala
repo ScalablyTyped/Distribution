@@ -3,19 +3,17 @@ package typings.carbone
 import typings.carbone.mod.CurrencyRates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Rates extends StObject {
     
-    var rates: CurrencyRates = js.native
+    var rates: CurrencyRates
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object Rates {
     

@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.TransitionCallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fadeMod {
@@ -19,20 +18,20 @@ object fadeMod {
   trait Fade
     extends Component[FadeProps, js.Object, js.Any]
   
-  @js.native
   trait FadeProps
-    extends HTMLProps[Fade]
-       with TransitionCallbacks {
+    extends StObject
+       with TransitionCallbacks
+       with HTMLProps[Fade] {
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object FadeProps {
     

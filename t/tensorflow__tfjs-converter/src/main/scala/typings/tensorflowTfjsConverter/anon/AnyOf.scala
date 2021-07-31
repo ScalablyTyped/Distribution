@@ -2,13 +2,11 @@ package typings.tensorflowTfjsConverter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyOf extends StObject {
   
-  var anyOf: js.Array[ItemsType | TypeString] = js.native
+  var anyOf: js.Array[ItemsType | TypeString]
 }
 object AnyOf {
   

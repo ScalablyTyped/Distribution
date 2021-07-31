@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoomSkillParameter extends StObject {
   
   /**
     * The parameter key of a room skill parameter. ParameterKey is an enumerated type that only takes “DEFAULT” or “SCOPE” as valid values.
     */
-  var ParameterKey: RoomSkillParameterKey = js.native
+  var ParameterKey: RoomSkillParameterKey
   
   /**
     * The parameter value of a room skill parameter.
     */
-  var ParameterValue: RoomSkillParameterValue = js.native
+  var ParameterValue: RoomSkillParameterValue
 }
 object RoomSkillParameter {
   

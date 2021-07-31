@@ -2,16 +2,14 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays.
   */
-@js.native
 trait ArrayBufferTypes extends StObject {
   
-  var ArrayBuffer: typings.minappEnv.ArrayBuffer = js.native
+  var ArrayBuffer: typings.minappEnv.ArrayBuffer
 }
 object ArrayBufferTypes {
   

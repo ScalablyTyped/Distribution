@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExcludedPlacementListBuilder[ExcludedPlacementList] extends AdWordsBuilder[ExcludedPlacementList] {
+trait ExcludedPlacementListBuilder[ExcludedPlacementList]
+  extends StObject
+     with AdWordsBuilder[ExcludedPlacementList] {
   
-  def withName(name: String): ExcludedPlacementListBuilder[ExcludedPlacementList] = js.native
+  def withName(name: String): ExcludedPlacementListBuilder[ExcludedPlacementList]
 }
 object ExcludedPlacementListBuilder {
   
@@ -22,7 +22,7 @@ object ExcludedPlacementListBuilder {
   }
   
   @scala.inline
-  implicit class ExcludedPlacementListBuilderMutableBuilder[Self <: ExcludedPlacementListBuilder[_], ExcludedPlacementList] (val x: Self with ExcludedPlacementListBuilder[ExcludedPlacementList]) extends AnyVal {
+  implicit class ExcludedPlacementListBuilderMutableBuilder[Self <: ExcludedPlacementListBuilder[?], ExcludedPlacementList] (val x: Self & ExcludedPlacementListBuilder[ExcludedPlacementList]) extends AnyVal {
     
     @scala.inline
     def setWithName(value: String => ExcludedPlacementListBuilder[ExcludedPlacementList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))

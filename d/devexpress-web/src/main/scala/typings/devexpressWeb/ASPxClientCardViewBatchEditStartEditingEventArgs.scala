@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditStartEditing event.
   */
-@js.native
-trait ASPxClientCardViewBatchEditStartEditingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewBatchEditStartEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var cardValues: js.Any = js.native
+  var cardValues: js.Any
   
   /**
     * Gets the CardView column that owns a cell that is about to be edited.
     */
-  var focusedColumn: ASPxClientCardViewColumn = js.native
+  var focusedColumn: ASPxClientCardViewColumn
   
   /**
     * Gets the visible index of the card whose cells are about to be edited.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewBatchEditStartEditingEventArgs {
   

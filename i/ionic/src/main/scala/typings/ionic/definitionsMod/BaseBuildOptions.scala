@@ -2,21 +2,19 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseBuildOptions extends StObject {
   
-  var `--`: js.Array[String] = js.native
+  var `--`: js.Array[String]
   
-  var engine: String = js.native
+  var engine: String
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object BaseBuildOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathToObjectIdentifiers extends StObject {
   
   /**
     * Lists ObjectIdentifiers starting from directory root to the object in the request.
     */
-  var ObjectIdentifiers: js.UndefOr[ObjectIdentifierList] = js.native
+  var ObjectIdentifiers: js.UndefOr[ObjectIdentifierList] = js.undefined
   
   /**
     * The path that is used to identify the object starting from directory root.
     */
-  var Path: js.UndefOr[PathString] = js.native
+  var Path: js.UndefOr[PathString] = js.undefined
 }
 object PathToObjectIdentifiers {
   

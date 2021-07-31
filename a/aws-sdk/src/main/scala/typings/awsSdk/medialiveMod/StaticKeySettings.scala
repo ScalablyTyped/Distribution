@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticKeySettings extends StObject {
   
   /**
     * The URL of the license server used for protecting content.
     */
-  var KeyProviderServer: js.UndefOr[InputLocation] = js.native
+  var KeyProviderServer: js.UndefOr[InputLocation] = js.undefined
   
   /**
     * Static key value as a 32 character hexadecimal string.
     */
-  var StaticKeyValue: stringMin32Max32 = js.native
+  var StaticKeyValue: stringMin32Max32
 }
 object StaticKeySettings {
   

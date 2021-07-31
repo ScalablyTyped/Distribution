@@ -3,25 +3,23 @@ package typings.forestExpressMongoose.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var fields: StringDictionary[String] = js.native
+  var fields: StringDictionary[String]
   
-  var filters: Filter | AggregatedFilters = js.native
+  var filters: Filter | AggregatedFilters
   
-  var page: Page = js.native
+  var page: Page
   
-  var search: String = js.native
+  var search: String
   
-  var searchExtended: String = js.native
+  var searchExtended: String
   
-  var sort: String = js.native
+  var sort: String
   
-  var timezone: String = js.native
+  var timezone: String
 }
 object Params {
   

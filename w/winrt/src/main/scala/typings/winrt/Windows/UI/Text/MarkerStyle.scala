@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait MarkerStyle extends StObject
 object MarkerStyle extends StObject {
   
   @js.native
-  sealed trait minus extends MarkerStyle
+  sealed trait minus
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait noNumber extends MarkerStyle
+  sealed trait noNumber
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait parentheses extends MarkerStyle
+  sealed trait parentheses
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait parenthesis extends MarkerStyle
+  sealed trait parenthesis
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait period extends MarkerStyle
+  sealed trait period
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait plain extends MarkerStyle
+  sealed trait plain
+    extends StObject
+       with MarkerStyle
   
   @js.native
-  sealed trait undefined extends MarkerStyle
+  sealed trait undefined
+    extends StObject
+       with MarkerStyle
 }

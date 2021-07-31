@@ -25,7 +25,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textInputMod {
@@ -35,19 +34,19 @@ object textInputMod {
   @js.native
   class TextInput protected ()
     extends Component[
-          TextInputProps with (Omit[
+          TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: TextInputProps with (Omit[
+    def this(props: TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ])) = this()
     def this(
-      props: TextInputProps with (Omit[
+      props: TextInputProps & (Omit[
             DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
             onSelect | size | placeholder
           ]),
@@ -57,51 +56,50 @@ object textInputMod {
   @JSImport("grommet/components/TextInput", "TextInput")
   @js.native
   val TextInput: ComponentClass[
-    TextInputProps with (Omit[
+    TextInputProps & (Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       onSelect | size | placeholder
     ]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait TextInputProps extends StObject {
     
-    var dropAlign: js.UndefOr[Bottom] = js.native
+    var dropAlign: js.UndefOr[Bottom] = js.undefined
     
-    var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+    var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
     
-    var dropProps: js.UndefOr[DropProps] = js.native
+    var dropProps: js.UndefOr[DropProps] = js.undefined
     
-    var dropTarget: js.UndefOr[js.Object] = js.native
+    var dropTarget: js.UndefOr[js.Object] = js.undefined
     
-    var focusIndicator: js.UndefOr[Boolean] = js.native
+    var focusIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var messages: js.UndefOr[EnterSelect] = js.native
+    var messages: js.UndefOr[EnterSelect] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* x */ Suggestion, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* x */ Suggestion, Unit]] = js.undefined
     
-    var onSuggestionsClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSuggestionsClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSuggestionsOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSuggestionsOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[PlaceHolderType] = js.native
+    var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
     
-    var plain: js.UndefOr[Boolean | full] = js.native
+    var plain: js.UndefOr[Boolean | full] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var suggestions: js.UndefOr[js.Array[LabelValue | String]] = js.native
+    var suggestions: js.UndefOr[js.Array[LabelValue | String]] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object TextInputProps {
     

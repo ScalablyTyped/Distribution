@@ -2,19 +2,17 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queryable[T] extends StObject {
   
-  def delete(): ModifyingQuery = js.native
+  def delete(): ModifyingQuery
   
-  def select[U](nodes: js.Any*): Query[U] = js.native
+  def select[U](nodes: js.Any*): Query[U]
   
-  def selectDeep[U](nodesOrTables: js.Any*): Query[U] = js.native
+  def selectDeep[U](nodesOrTables: js.Any*): Query[U]
   
-  def where(nodes: js.Any*): Query[T] = js.native
+  def where(nodes: js.Any*): Query[T]
 }
 object Queryable {
   
@@ -30,7 +28,7 @@ object Queryable {
   }
   
   @scala.inline
-  implicit class QueryableMutableBuilder[Self <: Queryable[_], T] (val x: Self with Queryable[T]) extends AnyVal {
+  implicit class QueryableMutableBuilder[Self <: Queryable[?], T] (val x: Self & Queryable[T]) extends AnyVal {
     
     @scala.inline
     def setDelete(value: () => ModifyingQuery): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))

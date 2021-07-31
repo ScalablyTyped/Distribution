@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.AMap.Polygon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Polygon[ExtraData] extends PathOverlay[ExtraData] {
+trait Polygon[ExtraData]
+  extends StObject
+     with PathOverlay[ExtraData] {
   
   /**
     * 判断指定点坐标是否在多边形范围内
@@ -41,31 +42,31 @@ object Polygon {
   
   type EventMap[I] = typings.amapJsApi.AMap.PathOverlay.EventMap[I]
   
-  @js.native
   trait GetOptionsResult[ExtraData]
-    extends typings.amapJsApi.AMap.ShapeOverlay.GetOptionsResult[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.ShapeOverlay.GetOptionsResult[ExtraData] {
     
     /**
       * 多边形填充颜色
       */
-    var fillColor: String = js.native
+    var fillColor: String
     
     /**
       * 边形填充透明度
       */
-    var fillOpacity: Double = js.native
+    var fillOpacity: Double
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: StrokeLineJoin = js.native
+    var lineJoin: StrokeLineJoin
     
     /**
       * 多边形轮廓线的节点坐标数组
       */
-    var path: js.Array[js.Array[LngLat] | LngLat] = js.native
+    var path: js.Array[js.Array[LngLat] | LngLat]
     
-    var texture: String = js.native
+    var texture: String
   }
   object GetOptionsResult {
     
@@ -92,7 +93,7 @@ object Polygon {
     }
     
     @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[_], ExtraData] (val x: Self with GetOptionsResult[ExtraData]) extends AnyVal {
+    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
@@ -114,24 +115,24 @@ object Polygon {
     }
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
     
     /**
       * 多边形填充颜色
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /**
       * 边形填充透明度
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 多边形轮廓线的节点坐标数组
       */
-    var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.native
+    var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.undefined
   }
   object Options {
     
@@ -142,7 +143,7 @@ object Polygon {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])

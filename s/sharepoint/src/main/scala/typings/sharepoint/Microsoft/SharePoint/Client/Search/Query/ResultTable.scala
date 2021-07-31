@@ -6,37 +6,37 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResultTable extends ClientValueObject {
+trait ResultTable
+  extends StObject
+     with ClientValueObject {
   
-  def get_groupTemplateId(): String = js.native
+  def get_groupTemplateId(): String
   
-  def get_itemTemplateId(): String = js.native
+  def get_itemTemplateId(): String
   
-  def get_properties(): StringDictionary[js.Any] = js.native
+  def get_properties(): StringDictionary[js.Any]
   
-  def get_queryId(): String = js.native
+  def get_queryId(): String
   
-  def get_queryRuleId(): String = js.native
+  def get_queryRuleId(): String
   
-  def get_resultRows(): js.Array[StringDictionary[_]] = js.native
+  def get_resultRows(): js.Array[StringDictionary[js.Any]]
   
-  def get_resultTitle(): String = js.native
+  def get_resultTitle(): String
   
-  def get_resultTitleUrl(): String = js.native
+  def get_resultTitleUrl(): String
   
-  def get_rowCount(): Double = js.native
+  def get_rowCount(): Double
   
-  def get_tableType(): String = js.native
+  def get_tableType(): String
   
-  def get_totalRows(): Double = js.native
+  def get_totalRows(): Double
   
-  def get_totalRowsIncludingDuplicates(): Double = js.native
+  def get_totalRowsIncludingDuplicates(): Double
   
-  def initPropertiesFromJson(parentNode: js.Any): Unit = js.native
+  def initPropertiesFromJson(parentNode: js.Any): Unit
 }
 object ResultTable {
   
@@ -50,7 +50,7 @@ object ResultTable {
     get_properties: () => StringDictionary[js.Any],
     get_queryId: () => String,
     get_queryRuleId: () => String,
-    get_resultRows: () => js.Array[StringDictionary[_]],
+    get_resultRows: () => js.Array[StringDictionary[js.Any]],
     get_resultTitle: () => String,
     get_resultTitleUrl: () => String,
     get_rowCount: () => Double,
@@ -84,7 +84,7 @@ object ResultTable {
     def setGet_queryRuleId(value: () => String): Self = StObject.set(x, "get_queryRuleId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_resultRows(value: () => js.Array[StringDictionary[_]]): Self = StObject.set(x, "get_resultRows", js.Any.fromFunction0(value))
+    def setGet_resultRows(value: () => js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "get_resultRows", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGet_resultTitle(value: () => String): Self = StObject.set(x, "get_resultTitle", js.Any.fromFunction0(value))

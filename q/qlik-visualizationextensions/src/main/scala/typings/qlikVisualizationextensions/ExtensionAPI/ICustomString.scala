@@ -2,19 +2,19 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomString extends ICustomControl {
+trait ICustomString
+  extends StObject
+     with ICustomControl {
   
-  var defaultValue: String = js.native
+  var defaultValue: String
   
-  var expression: ExpressionType = js.native
+  var expression: ExpressionType
   
-  var maxlength: Double = js.native
+  var maxlength: Double
   
-  var show: valueOrfunc[Boolean] = js.native
+  var show: valueOrfunc[Boolean]
 }
 object ICustomString {
   

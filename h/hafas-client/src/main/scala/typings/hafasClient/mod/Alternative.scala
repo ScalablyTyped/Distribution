@@ -2,45 +2,43 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alternative extends StObject {
   
-  var cancelled: js.UndefOr[Boolean] = js.native
+  var cancelled: js.UndefOr[Boolean] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[Line] = js.native
+  var line: js.UndefOr[Line] = js.undefined
   
-  var loadFactor: js.UndefOr[String] = js.native
+  var loadFactor: js.UndefOr[String] = js.undefined
   
-  var nextStopovers: js.UndefOr[js.Array[StopOver]] = js.native
+  var nextStopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   
-  var plannedPlatform: js.UndefOr[String] = js.native
+  var plannedPlatform: js.UndefOr[String] = js.undefined
   
-  var plannedWhen: js.UndefOr[String] = js.native
+  var plannedWhen: js.UndefOr[String] = js.undefined
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var previousStopovers: js.UndefOr[js.Array[StopOver]] = js.native
+  var previousStopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   
-  var prognosedPlatform: js.UndefOr[String] = js.native
+  var prognosedPlatform: js.UndefOr[String] = js.undefined
   
-  var prognosedWhen: js.UndefOr[String] = js.native
+  var prognosedWhen: js.UndefOr[String] = js.undefined
   
-  var provenance: js.UndefOr[String] = js.native
+  var provenance: js.UndefOr[String] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.native
+  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
   
-  var stop: js.UndefOr[Station | Stop] = js.native
+  var stop: js.UndefOr[Station | Stop] = js.undefined
   
-  var tripId: String = js.native
+  var tripId: String
   
-  var when: js.UndefOr[String] = js.native
+  var when: js.UndefOr[String] = js.undefined
 }
 object Alternative {
   

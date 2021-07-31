@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,26 +14,42 @@ sealed trait BorderIndex extends StObject
 object BorderIndex extends StObject {
   
   @js.native
-  sealed trait diagonalDown extends BorderIndex
+  sealed trait diagonalDown
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait diagonalUp extends BorderIndex
+  sealed trait diagonalUp
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait edgeBottom extends BorderIndex
+  sealed trait edgeBottom
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait edgeLeft extends BorderIndex
+  sealed trait edgeLeft
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait edgeRight extends BorderIndex
+  sealed trait edgeRight
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait edgeTop extends BorderIndex
+  sealed trait edgeTop
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait insideHorizontal extends BorderIndex
+  sealed trait insideHorizontal
+    extends StObject
+       with BorderIndex
   
   @js.native
-  sealed trait insideVertical extends BorderIndex
+  sealed trait insideVertical
+    extends StObject
+       with BorderIndex
 }

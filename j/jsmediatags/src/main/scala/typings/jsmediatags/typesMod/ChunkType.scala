@@ -2,15 +2,13 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkType extends StObject {
   
-  var data: DataType = js.native
+  var data: DataType
   
-  var offset: Double = js.native
+  var offset: Double
 }
 object ChunkType {
   

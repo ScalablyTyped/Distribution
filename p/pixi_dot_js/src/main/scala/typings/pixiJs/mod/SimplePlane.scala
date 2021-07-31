@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,6 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "SimplePlane")
 @js.native
 class SimplePlane protected ()
-  extends typings.pixiJs.PIXI.SimplePlane {
+  extends StObject
+     with typings.pixiJs.PIXI.SimplePlane {
   def this(texture: typings.pixiJs.PIXI.Texture, verticesX: Double, verticesY: Double) = this()
 }

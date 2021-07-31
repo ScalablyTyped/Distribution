@@ -6,17 +6,17 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDocumentLanguages extends XInterface {
+trait XDocumentLanguages
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve the list of languages already used in current document
     * @returns sequence
     */
-  def getDocumentLanguages(nScriptTypes: Double, nCount: Double): SafeArray[Locale] = js.native
+  def getDocumentLanguages(nScriptTypes: Double, nCount: Double): SafeArray[Locale]
 }
 object XDocumentLanguages {
   

@@ -3,7 +3,6 @@ package typings.ms
 import typings.ms.anon.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,13 +13,14 @@ object mod {
   * @param {String} value
   * @return {Number}
   */
+  @scala.inline
+  def apply(value: String): Double = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: Double, options: Long): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("ms", JSImport.Namespace)
   @js.native
-  def apply(value: String): Double = js.native
-  @JSImport("ms", JSImport.Namespace)
-  @js.native
-  def apply(value: Double): String = js.native
-  @JSImport("ms", JSImport.Namespace)
-  @js.native
-  def apply(value: Double, options: Long): String = js.native
+  val ^ : js.Any = js.native
 }

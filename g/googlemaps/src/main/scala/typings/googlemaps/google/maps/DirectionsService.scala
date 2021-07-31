@@ -2,16 +2,14 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsService extends StObject {
   
   def route(
     request: DirectionsRequest,
     callback: js.Function2[/* result */ DirectionsResult, /* status */ DirectionsStatus, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object DirectionsService {
   

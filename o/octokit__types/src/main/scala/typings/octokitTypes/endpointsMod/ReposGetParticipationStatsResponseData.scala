@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetParticipationStatsResponseData extends StObject {
   
-  var all: js.Array[Double] = js.native
+  var all: js.Array[Double]
   
-  var owner: js.Array[Double] = js.native
+  var owner: js.Array[Double]
 }
 object ReposGetParticipationStatsResponseData {
   

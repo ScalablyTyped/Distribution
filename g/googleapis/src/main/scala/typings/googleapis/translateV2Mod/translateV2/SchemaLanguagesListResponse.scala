@@ -2,10 +2,8 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLanguagesListResponse extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaLanguagesListResponse extends StObject {
     * list is sorted by the collation order of the language name in the target
     * language.
     */
-  var languages: js.UndefOr[js.Array[SchemaLanguagesResource]] = js.native
+  var languages: js.UndefOr[js.Array[SchemaLanguagesResource]] = js.undefined
 }
 object SchemaLanguagesListResponse {
   

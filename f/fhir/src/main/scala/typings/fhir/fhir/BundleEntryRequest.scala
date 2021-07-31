@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transaction Related Information
   */
-@js.native
-trait BundleEntryRequest extends BackboneElement {
+trait BundleEntryRequest
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'ifMatch'.
     */
-  var _ifMatch: js.UndefOr[Element] = js.native
+  var _ifMatch: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'ifModifiedSince'.
     */
-  var _ifModifiedSince: js.UndefOr[Element] = js.native
+  var _ifModifiedSince: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'ifNoneExist'.
     */
-  var _ifNoneExist: js.UndefOr[Element] = js.native
+  var _ifNoneExist: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'ifNoneMatch'.
     */
-  var _ifNoneMatch: js.UndefOr[Element] = js.native
+  var _ifNoneMatch: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'method'.
     */
-  var _method: js.UndefOr[Element] = js.native
+  var _method: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * For managing update contention
     */
-  var ifMatch: js.UndefOr[String] = js.native
+  var ifMatch: js.UndefOr[String] = js.undefined
   
   /**
     * For managing update contention
     */
-  var ifModifiedSince: js.UndefOr[instant] = js.native
+  var ifModifiedSince: js.UndefOr[instant] = js.undefined
   
   /**
     * For conditional creates
     */
-  var ifNoneExist: js.UndefOr[String] = js.native
+  var ifNoneExist: js.UndefOr[String] = js.undefined
   
   /**
     * For managing cache currency
     */
-  var ifNoneMatch: js.UndefOr[String] = js.native
+  var ifNoneMatch: js.UndefOr[String] = js.undefined
   
   /**
     * GET | POST | PUT | DELETE
     */
-  var method: code = js.native
+  var method: code
   
   /**
     * URL for HTTP equivalent of this entry
     */
-  var url: uri = js.native
+  var url: uri
 }
 object BundleEntryRequest {
   

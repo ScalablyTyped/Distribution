@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlAssignedTargetingOptionDetails extends StObject {
   
   /** Indicates if this option is being negatively targeted. */
-  var negative: js.UndefOr[Boolean] = js.native
+  var negative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The URL, for example `example.com`. DV360 supports two levels of subdirectory targeting, for example `www.example.com/one-subdirectory-level/second-level`, and five levels
     * of subdomain targeting, for example `five.four.three.two.one.example.com`.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object UrlAssignedTargetingOptionDetails {
   

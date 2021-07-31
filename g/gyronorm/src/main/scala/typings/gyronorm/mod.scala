@@ -4,7 +4,6 @@ import typings.gyronorm.anon.Absolute
 import typings.gyronorm.anon.Alpha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,12 +66,11 @@ object mod {
   
   type LogListener = js.Function1[/* data */ LoggerData, Unit]
   
-  @js.native
   trait LoggerData extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object LoggerData {
     
@@ -93,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MotionAndOrientationPayload extends StObject {
     
-    var dm: Alpha = js.native
+    var dm: Alpha
     
-    var `do`: Absolute = js.native
+    var `do`: Absolute
   }
   object MotionAndOrientationPayload {
     
@@ -120,28 +117,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * How many digits after the decimal point will there be in the return values
       */
-    var decimalCount: js.UndefOr[Double] = js.native
+    var decimalCount: js.UndefOr[Double] = js.undefined
     
     /**
       * How often GyroNorm returns data (in milliseconds)
       */
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
     /**
       * If the gravity related values to be normalized
       */
-    var gravityNormalized: js.UndefOr[Boolean] = js.native
+    var gravityNormalized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function to be called to log messages from gyronorm.js
       */
-    var logger: js.UndefOr[LogListener] = js.native
+    var logger: js.UndefOr[LogListener] = js.undefined
     
     /**
       * Can be GyroNorm.GAME or GyroNorm.WORLD. gn.GAME returns
@@ -149,12 +145,12 @@ object mod {
       * gn.WORLD returns the orientation values with respect to the actual
       * north direction of the world.
       */
-    var orientationBase: js.UndefOr[String] = js.native
+    var orientationBase: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true it will return screen adjusted values
       */
-    var screenAdjusted: js.UndefOr[Boolean] = js.native
+    var screenAdjusted: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MigrationsMapCommitAuthorResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsMapCommitAuthorEndpoint extends StObject {
   
-  var parameters: MigrationsMapCommitAuthorEndpoint = js.native
+  var parameters: MigrationsMapCommitAuthorEndpoint
   
-  var request: MigrationsMapCommitAuthorRequestOptions = js.native
+  var request: MigrationsMapCommitAuthorRequestOptions
   
-  var response: OctokitResponse[MigrationsMapCommitAuthorResponseData] = js.native
+  var response: OctokitResponse[MigrationsMapCommitAuthorResponseData]
 }
 object ParametersMigrationsMapCommitAuthorEndpoint {
   

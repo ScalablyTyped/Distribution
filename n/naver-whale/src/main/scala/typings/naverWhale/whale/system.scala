@@ -3,7 +3,6 @@ package typings.naverWhale.whale
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object system {
@@ -18,26 +17,25 @@ object system {
     */
   object cpu {
     
-    @js.native
     trait CpuInfo extends StObject {
       
       /** The architecture name of the processors. */
-      var archName: String = js.native
+      var archName: String
       
       /**
         * A set of feature codes indicating some of the processor's capabilities.
         * The currently supported codes are "mmx", "sse", "sse2", "sse3", "ssse3", "sse4_1", "sse4_2", and "avx".
         */
-      var features: js.Array[String] = js.native
+      var features: js.Array[String]
       
       /** The model name of the processors. */
-      var modelName: String = js.native
+      var modelName: String
       
       /** The number of logical processors. */
-      var numOfProcessors: Double = js.native
+      var numOfProcessors: Double
       
       /** Information about each logical processor. */
-      var processors: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo] = js.native
+      var processors: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo]
     }
     object CpuInfo {
       
@@ -79,11 +77,10 @@ object system {
       }
     }
     
-    @js.native
     trait ProcessorInfo extends StObject {
       
       /** Cumulative usage info for this logical processor. */
-      var usage: typings.chrome.chrome.system.cpu.ProcessorUsage = js.native
+      var usage: typings.chrome.chrome.system.cpu.ProcessorUsage
     }
     object ProcessorInfo {
       
@@ -101,20 +98,19 @@ object system {
       }
     }
     
-    @js.native
     trait ProcessorUsage extends StObject {
       
       /** The cumulative time spent idle by this processor. */
-      var idle: Double = js.native
+      var idle: Double
       
       /** The cumulative time used by kernel programs on this processor. */
-      var kernel: Double = js.native
+      var kernel: Double
       
       /** The total cumulative time for this processor. This value is equal to user + kernel + idle. */
-      var total: Double = js.native
+      var total: Double
       
       /** The cumulative time used by userspace programs on this processor. */
-      var user: Double = js.native
+      var user: Double
     }
     object ProcessorUsage {
       
@@ -152,14 +148,13 @@ object system {
     */
   object memory {
     
-    @js.native
     trait MemoryInfo extends StObject {
       
       /** The amount of available capacity, in bytes. */
-      var availableCapacity: Double = js.native
+      var availableCapacity: Double
       
       /** The total amount of physical memory capacity, in bytes. */
-      var capacity: Double = js.native
+      var capacity: Double
     }
     object MemoryInfo {
       
@@ -191,14 +186,13 @@ object system {
     */
   object storage {
     
-    @js.native
     trait StorageCapacityInfo extends StObject {
       
       /** The available capacity of the storage device, in bytes. */
-      var availableCapacity: Double = js.native
+      var availableCapacity: Double
       
       /** A copied |id| of getAvailableCapacity function parameter |id|. */
-      var id: String = js.native
+      var id: String
     }
     object StorageCapacityInfo {
       
@@ -219,17 +213,16 @@ object system {
       }
     }
     
-    @js.native
     trait StorageUnitInfo extends StObject {
       
       /** The total amount of the storage space, in bytes. */
-      var capacity: Double = js.native
+      var capacity: Double
       
       /** The transient ID that uniquely identifies the storage device. This ID will be persistent within the same run of a single application. It will not be a persistent identifier between different runs of an application, or between different applications. */
-      var id: String = js.native
+      var id: String
       
       /** The name of the storage unit. */
-      var name: String = js.native
+      var name: String
       
       /**
         * The media type of the storage unit.
@@ -237,7 +230,7 @@ object system {
         * removable: The storage is removable, e.g. USB flash drive.
         * unknown: The storage type is unknown.
         */
-      var `type`: String = js.native
+      var `type`: String
     }
     object StorageUnitInfo {
       

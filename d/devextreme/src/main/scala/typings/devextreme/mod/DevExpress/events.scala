@@ -3,64 +3,63 @@ package typings.devextreme.mod.DevExpress
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
   
-  @js.native
   trait dxEvent
-    extends typings.devextreme.mod.DevExpress.events.event {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.events.event {
     
     /**
       * [descr:dxEvent.currentTarget]
       */
-    var currentTarget: Element = js.native
+    var currentTarget: Element
     
     /**
       * [descr:dxEvent.data]
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * [descr:dxEvent.delegateTarget]
       */
-    var delegateTarget: Element = js.native
+    var delegateTarget: Element
     
     /**
       * [descr:dxEvent.isDefaultPrevented()]
       */
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
     /**
       * [descr:dxEvent.isImmediatePropagationStopped()]
       */
-    def isImmediatePropagationStopped(): Boolean = js.native
+    def isImmediatePropagationStopped(): Boolean
     
     /**
       * [descr:dxEvent.isPropagationStopped()]
       */
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
     /**
       * [descr:dxEvent.preventDefault()]
       */
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
     /**
       * [descr:dxEvent.stopImmediatePropagation()]
       */
-    def stopImmediatePropagation(): Unit = js.native
+    def stopImmediatePropagation(): Unit
     
     /**
       * [descr:dxEvent.stopPropagation()]
       */
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
     /**
       * [descr:dxEvent.target]
       */
-    var target: Element = js.native
+    var target: Element
   }
   object dxEvent {
     

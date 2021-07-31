@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XModeChangeBroadcaster
   * @since OOo 1.1.2
   */
-@js.native
-trait XModeChangeListener extends XEventListener {
+trait XModeChangeListener
+  extends StObject
+     with XEventListener {
   
   /** indicates that the mode of the broadcasting component has changed. */
-  def modeChanged(rSource: ModeChangeEvent): Unit = js.native
+  def modeChanged(rSource: ModeChangeEvent): Unit
 }
 object XModeChangeListener {
   

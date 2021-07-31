@@ -13,27 +13,28 @@ import typings.reactNavigationStack.vendorTypesMod.StackNavigationOptions
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createStackNavigatorMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/navigators/createStackNavigator", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/navigators/createStackNavigator", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      _
+      js.Any
     ]
-  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
-  @JSImport("react-navigation-stack/lib/typescript/src/navigators/createStackNavigator", JSImport.Default)
-  @js.native
+  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  @scala.inline
   def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      _
+      js.Any
     ],
     stackConfig: CreateNavigatorConfig[
       StackNavigationConfig, 
@@ -41,5 +42,5 @@ object createStackNavigatorMod {
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]
     ]
-  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
+  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
 }

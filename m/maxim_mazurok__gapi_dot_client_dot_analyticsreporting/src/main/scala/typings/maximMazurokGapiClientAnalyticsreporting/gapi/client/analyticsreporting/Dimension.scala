@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait Dimension extends StObject {
     * dimension values will be sorted according to dictionary (lexicographic) order. For example the ascending dictionary order is: "<50", "1001+", "121-1000", "50-120" And the ascending
     * `HISTOGRAM_BUCKET` order is: "<50", "50-120", "121-1000", "1001+" The client has to explicitly request `"orderType": "HISTOGRAM_BUCKET"` for a histogram-mutated dimension.
     */
-  var histogramBuckets: js.UndefOr[js.Array[String]] = js.native
+  var histogramBuckets: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Name of the dimension to fetch, for example `ga:browser`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Dimension {
   

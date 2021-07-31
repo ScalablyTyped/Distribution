@@ -3,13 +3,11 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The device resource.
   */
-@js.native
 trait SchemaDevice extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaDevice extends StObject {
     * fail. Can be used to temporarily prevent the device from connecting if,
     * for example, the sensor is generating bad data and needs maintenance.
     */
-  var blocked: js.UndefOr[Boolean] = js.native
+  var blocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The most recent device configuration, which is eventually sent from Cloud
@@ -26,7 +24,7 @@ trait SchemaDevice extends StObject {
     * update this field after creation, use the
     * `DeviceManager.ModifyCloudToDeviceConfig` method.
     */
-  var config: js.UndefOr[SchemaDeviceConfig] = js.native
+  var config: js.UndefOr[SchemaDeviceConfig] = js.undefined
   
   /**
     * The credentials used to authenticate this device. To allow credential
@@ -36,31 +34,31 @@ trait SchemaDevice extends StObject {
     * verified against the registry credentials. For details, see the
     * description of the `DeviceRegistry.credentials` field.
     */
-  var credentials: js.UndefOr[js.Array[SchemaDeviceCredential]] = js.native
+  var credentials: js.UndefOr[js.Array[SchemaDeviceCredential]] = js.undefined
   
   /**
     * Gateway-related configuration and state.
     */
-  var gatewayConfig: js.UndefOr[SchemaGatewayConfig] = js.native
+  var gatewayConfig: js.UndefOr[SchemaGatewayConfig] = js.undefined
   
   /**
     * The user-defined device identifier. The device ID must be unique within a
     * device registry.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time a cloud-to-device config version
     * acknowledgment was received from the device. This field is only for
     * configurations sent through MQTT.
     */
-  var lastConfigAckTime: js.UndefOr[String] = js.native
+  var lastConfigAckTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time a cloud-to-device config version was sent to
     * the device.
     */
-  var lastConfigSendTime: js.UndefOr[String] = js.native
+  var lastConfigSendTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The error message of the most recent error, such as a
@@ -69,21 +67,21 @@ trait SchemaDevice extends StObject {
     * empty message and the status code 0 == OK. Otherwise, this field is
     * expected to have a status code other than OK.
     */
-  var lastErrorStatus: js.UndefOr[SchemaStatus] = js.native
+  var lastErrorStatus: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * [Output only] The time the most recent error occurred, such as a failure
     * to publish to Cloud Pub/Sub. This field is the timestamp of
     * &#39;last_error_status&#39;.
     */
-  var lastErrorTime: js.UndefOr[String] = js.native
+  var lastErrorTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time a telemetry event was received. Timestamps
     * are periodically collected and written to storage; they may be stale by a
     * few minutes.
     */
-  var lastEventTime: js.UndefOr[String] = js.native
+  var lastEventTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time an MQTT `PINGREQ` was received. This field
@@ -92,20 +90,20 @@ trait SchemaDevice extends StObject {
     * messages have been sent. Timestamps are periodically collected and
     * written to storage; they may be stale by a few minutes.
     */
-  var lastHeartbeatTime: js.UndefOr[String] = js.native
+  var lastHeartbeatTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time a state event was received. Timestamps are
     * periodically collected and written to storage; they may be stale by a few
     * minutes.
     */
-  var lastStateTime: js.UndefOr[String] = js.native
+  var lastStateTime: js.UndefOr[String] = js.undefined
   
   /**
     * **Beta Feature**  The logging verbosity for device activity. If
     * unspecified, DeviceRegistry.log_level will be used.
     */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key-value pairs assigned to the device. This metadata is not
@@ -116,7 +114,7 @@ trait SchemaDevice extends StObject {
     * size.  The total size of all keys and values must be less than 256 KB,
     * and the maximum number of key-value pairs is 500.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The resource path name. For example,
@@ -125,19 +123,19 @@ trait SchemaDevice extends StObject {
     * When `name` is populated as a response from the service, it always ends
     * in the device numeric ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] A server-defined unique numeric ID for the device. This is
     * a more compact way to identify devices, and it is globally unique.
     */
-  var numId: js.UndefOr[String] = js.native
+  var numId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The state most recently received from the device. If no
     * state has been reported, this field is not present.
     */
-  var state: js.UndefOr[SchemaDeviceState] = js.native
+  var state: js.UndefOr[SchemaDeviceState] = js.undefined
 }
 object SchemaDevice {
   

@@ -2,13 +2,13 @@ package typings.winrtUwp.global.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.System.ProcessLauncher")
 @js.native
 abstract class ProcessLauncher ()
-  extends typings.winrtUwp.Windows.System.ProcessLauncher
+  extends StObject
+     with typings.winrtUwp.Windows.System.ProcessLauncher
 object ProcessLauncher {
   
   @JSGlobal("Windows.System.ProcessLauncher")

@@ -2,21 +2,19 @@ package typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Folder in an Organization&#39;s resource hierarchy, used to organize that
   * Organization&#39;s resources.
   */
-@js.native
 trait SchemaFolder extends StObject {
   
   /**
     * Output only. Timestamp when the Folder was created. Assigned by the
     * server.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The folder’s display name. A folder’s display name must be unique amongst
@@ -26,25 +24,25 @@ trait SchemaFolder extends StObject {
     * no longer than 30 characters. This is captured by the regular expression:
     * [\p{L}\p{N}]([\p{L}\p{N}_- ]{0,28}[\p{L}\p{N}])?.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only.  The lifecycle state of the folder. Updates to the
     * lifecycle_state must be performed via DeleteFolder and UndeleteFolder.
     */
-  var lifecycleState: js.UndefOr[String] = js.native
+  var lifecycleState: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the Folder. Its format is
     * `folders/{folder_id}`, for example: &quot;folders/1234&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Folder’s parent&#39;s resource name. Updates to the folder&#39;s
     * parent must be performed via MoveFolder.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object SchemaFolder {
   

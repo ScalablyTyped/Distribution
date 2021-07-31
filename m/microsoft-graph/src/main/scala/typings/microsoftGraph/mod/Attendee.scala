@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Attendee extends AttendeeBase {
+trait Attendee
+  extends StObject
+     with AttendeeBase {
   
   /**
     * An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed
     * another time, then this property is not included in a response of a GET event.
     */
-  var proposedNewTime: js.UndefOr[NullableOption[TimeSlot]] = js.native
+  var proposedNewTime: js.UndefOr[NullableOption[TimeSlot]] = js.undefined
   
   // The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.
-  var status: js.UndefOr[NullableOption[ResponseStatus]] = js.native
+  var status: js.UndefOr[NullableOption[ResponseStatus]] = js.undefined
 }
 object Attendee {
   

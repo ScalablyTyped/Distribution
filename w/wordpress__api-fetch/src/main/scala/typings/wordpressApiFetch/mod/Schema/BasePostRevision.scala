@@ -4,35 +4,35 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasePostRevision[T /* <: Context */] extends BaseResponse {
+trait BasePostRevision[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var author: Double = js.native
+  var author: Double
   
-  var content: Contextual[T, js.Object, js.Object] = js.native
+  var content: Contextual[T, js.Object, js.Object]
   
-  var date: String = js.native
+  var date: String
   
-  var date_gmt: String = js.native
+  var date_gmt: String
   
-  var excerpt: Contextual[T, js.Object, js.Object] = js.native
+  var excerpt: Contextual[T, js.Object, js.Object]
   
-  var guid: Contextual[T, js.Object, js.Object] = js.native
+  var guid: Contextual[T, js.Object, js.Object]
   
-  var id: Double = js.native
+  var id: Double
   
-  var modified: String = js.native
+  var modified: String
   
-  var modified_gmt: String = js.native
+  var modified_gmt: String
   
-  var parent: Double = js.native
+  var parent: Double
   
-  var slug: String = js.native
+  var slug: String
   
-  var title: Contextual[T, js.Object, js.Object] = js.native
+  var title: Contextual[T, js.Object, js.Object]
 }
 object BasePostRevision {
   
@@ -57,7 +57,7 @@ object BasePostRevision {
   }
   
   @scala.inline
-  implicit class BasePostRevisionMutableBuilder[Self <: BasePostRevision[_], T /* <: Context */] (val x: Self with BasePostRevision[T]) extends AnyVal {
+  implicit class BasePostRevisionMutableBuilder[Self <: BasePostRevision[?], T /* <: Context */] (val x: Self & BasePostRevision[T]) extends AnyVal {
     
     @scala.inline
     def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])

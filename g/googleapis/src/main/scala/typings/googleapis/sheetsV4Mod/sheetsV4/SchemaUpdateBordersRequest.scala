@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,43 +12,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of `{ top: RED, bottom: WHITE, left: BLUE }`. If you want to clear a
   * border, explicitly set the style to NONE.
   */
-@js.native
 trait SchemaUpdateBordersRequest extends StObject {
   
   /**
     * The border to put at the bottom of the range.
     */
-  var bottom: js.UndefOr[SchemaBorder] = js.native
+  var bottom: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The horizontal border to put within the range.
     */
-  var innerHorizontal: js.UndefOr[SchemaBorder] = js.native
+  var innerHorizontal: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The vertical border to put within the range.
     */
-  var innerVertical: js.UndefOr[SchemaBorder] = js.native
+  var innerVertical: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The border to put at the left of the range.
     */
-  var left: js.UndefOr[SchemaBorder] = js.native
+  var left: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The range whose borders should be updated.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * The border to put at the right of the range.
     */
-  var right: js.UndefOr[SchemaBorder] = js.native
+  var right: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The border to put at the top of the range.
     */
-  var top: js.UndefOr[SchemaBorder] = js.native
+  var top: js.UndefOr[SchemaBorder] = js.undefined
 }
 object SchemaUpdateBordersRequest {
   

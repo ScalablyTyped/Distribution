@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetupTag extends StObject {
   
   /** If true, fire the main tag if and only if the setup tag fires successfully. If false, fire the main tag regardless of setup tag firing status. */
-  var stopOnSetupFailure: js.UndefOr[Boolean] = js.native
+  var stopOnSetupFailure: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the setup tag. */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object SetupTag {
   

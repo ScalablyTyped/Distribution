@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object doubleclickbidmanagerMod {
+  
+  @JSImport("googleapis/build/src/apis/doubleclickbidmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object doubleclickbidmanagerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/doubleclickbidmanager", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/doubleclickbidmanager", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object doubleclickbidmanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/doubleclickbidmanager", "doubleclickbidmanager")
-  @js.native
-  def doubleclickbidmanager(options: Options): Doubleclickbidmanager = js.native
-  @JSImport("googleapis/build/src/apis/doubleclickbidmanager", "doubleclickbidmanager")
-  @js.native
-  def doubleclickbidmanager_v1(version: v1): Doubleclickbidmanager = js.native
+  @scala.inline
+  def doubleclickbidmanager(options: Options): Doubleclickbidmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclickbidmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Doubleclickbidmanager]
+  
+  @scala.inline
+  def doubleclickbidmanager_v1(version: v1): Doubleclickbidmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclickbidmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Doubleclickbidmanager]
 }

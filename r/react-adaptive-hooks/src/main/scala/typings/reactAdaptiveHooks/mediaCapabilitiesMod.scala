@@ -6,25 +6,26 @@ import typings.reactAdaptiveHooks.anon.Type
 import typings.reactAdaptiveHooks.anon.Video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaCapabilitiesMod {
   
-  @JSImport("react-adaptive-hooks/media-capabilities", "useMediaCapabilities")
+  @JSImport("react-adaptive-hooks/media-capabilities", JSImport.Namespace)
   @js.native
-  def useMediaCapabilities[T](mediaConfig: MediaConfiguration, initialMediaCapabilities: T): MediaCapabilities[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useMediaCapabilities[T](mediaConfig: MediaConfiguration, initialMediaCapabilities: T): MediaCapabilities[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaCapabilities")(mediaConfig.asInstanceOf[js.Any], initialMediaCapabilities.asInstanceOf[js.Any])).asInstanceOf[MediaCapabilities[T]]
+  
   trait AudioMediaConfiguration extends StObject {
     
-    var bitrate: Double = js.native
+    var bitrate: Double
     
-    var channels: Double = js.native
+    var channels: Double
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var samplerate: Double = js.native
+    var samplerate: Double
   }
   object AudioMediaConfiguration {
     
@@ -51,16 +52,15 @@ object mediaCapabilitiesMod {
     }
   }
   
-  type MediaConfiguration = Type with (Audio | Video)
+  type MediaConfiguration = Type & (Audio | Video)
   
-  @js.native
   trait MediaConfigurationInfo extends StObject {
     
-    var powerEfficient: Boolean = js.native
+    var powerEfficient: Boolean
     
-    var smooth: Boolean = js.native
+    var smooth: Boolean
     
-    var supported: Boolean = js.native
+    var supported: Boolean
   }
   object MediaConfigurationInfo {
     
@@ -84,18 +84,17 @@ object mediaCapabilitiesMod {
     }
   }
   
-  @js.native
   trait VideoMediaConfiguration extends StObject {
     
-    var bitrate: Double = js.native
+    var bitrate: Double
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var framerate: Double = js.native
+    var framerate: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object VideoMediaConfiguration {
     

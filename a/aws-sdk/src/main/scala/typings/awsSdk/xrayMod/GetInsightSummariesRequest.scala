@@ -2,46 +2,44 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightSummariesRequest extends StObject {
   
   /**
     * The end of the time frame in which the insights ended. The end time can't be more than 30 days old.
     */
-  var EndTime: Timestamp = js.native
+  var EndTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the group. Required if the GroupName isn't provided.
     */
-  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.native
+  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.undefined
   
   /**
     * The name of the group. Required if the GroupARN isn't provided.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.undefined
   
   /**
     * The maximum number of results to display.
     */
-  var MaxResults: js.UndefOr[GetInsightSummariesMaxResults] = js.native
+  var MaxResults: js.UndefOr[GetInsightSummariesMaxResults] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The beginning of the time frame in which the insights started. The start time can't be more than 30 days old.
     */
-  var StartTime: Timestamp = js.native
+  var StartTime: Timestamp
   
   /**
     * The list of insight states. 
     */
-  var States: js.UndefOr[InsightStateList] = js.native
+  var States: js.UndefOr[InsightStateList] = js.undefined
 }
 object GetInsightSummariesRequest {
   

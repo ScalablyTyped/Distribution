@@ -2,51 +2,49 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DialogRuntimeResponseGeneric. */
-@js.native
 trait DialogRuntimeResponseGeneric extends StObject {
   
   /** The description to show with the the response. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The ID of the dialog node that the **topic** property is taken from. The **topic** property is populated using the value of the dialog node's **user_label** property. */
-  var dialog_node: js.UndefOr[String] = js.native
+  var dialog_node: js.UndefOr[String] = js.undefined
   
   /** A message to be sent to the human agent who will be taking over the conversation. */
-  var message_to_human_agent: js.UndefOr[String] = js.native
+  var message_to_human_agent: js.UndefOr[String] = js.undefined
   
   /** An array of objects describing the options from which the user can choose. */
-  var options: js.UndefOr[js.Array[DialogNodeOutputOptionsElement]] = js.native
+  var options: js.UndefOr[js.Array[DialogNodeOutputOptionsElement]] = js.undefined
   
   /** The preferred type of control to display. */
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
   /** The type of response returned by the dialog node. The specified response type must be supported by the client application or channel. **Note:** The **suggestion** response type is part of the disambiguation feature, which is only available for Premium users. */
-  var response_type: String = js.native
+  var response_type: String
   
   /** The URL of the image. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** An array of objects describing the possible matching dialog nodes from which the user can choose. **Note:** The **suggestions** property is part of the disambiguation feature, which is only available for Premium users. */
-  var suggestions: js.UndefOr[js.Array[DialogSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[DialogSuggestion]] = js.undefined
   
   /** The text of the response. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** How long to pause, in milliseconds. */
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
   /** The title or introductory text to show before the response. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** A label identifying the topic of the conversation, derived from the **user_label** property of the relevant node. */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
   
   /** Whether to send a "user is typing" event during the pause. */
-  var typing: js.UndefOr[Boolean] = js.native
+  var typing: js.UndefOr[Boolean] = js.undefined
 }
 object DialogRuntimeResponseGeneric {
   

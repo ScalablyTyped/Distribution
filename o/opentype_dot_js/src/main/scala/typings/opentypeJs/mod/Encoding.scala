@@ -2,17 +2,15 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encoding extends StObject {
   
-  def charToGlyphIndex(c: String): Double = js.native
+  def charToGlyphIndex(c: String): Double
   
-  var charset: String = js.native
+  var charset: String
   
-  var font: Font = js.native
+  var font: Font
 }
 object Encoding {
   

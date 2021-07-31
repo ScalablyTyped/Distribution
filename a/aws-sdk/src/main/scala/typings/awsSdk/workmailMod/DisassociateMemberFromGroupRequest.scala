@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateMemberFromGroupRequest extends StObject {
   
   /**
     * The identifier for the group from which members are removed.
     */
-  var GroupId: WorkMailIdentifier = js.native
+  var GroupId: WorkMailIdentifier
   
   /**
     * The identifier for the member to be removed to the group.
     */
-  var MemberId: WorkMailIdentifier = js.native
+  var MemberId: WorkMailIdentifier
   
   /**
     * The identifier for the organization under which the group exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object DisassociateMemberFromGroupRequest {
   

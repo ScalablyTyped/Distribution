@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutlookCategory extends Entity {
+trait OutlookCategory
+  extends StObject
+     with Entity {
   
   /**
     * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note
     * below.
     */
-  var color: js.UndefOr[NullableOption[CategoryColor]] = js.native
+  var color: js.UndefOr[NullableOption[CategoryColor]] = js.undefined
   
   /**
     * A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be
     * changed. Read-only.
     */
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OutlookCategory {
   

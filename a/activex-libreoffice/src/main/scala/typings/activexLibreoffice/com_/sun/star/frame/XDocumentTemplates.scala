@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * special method {@link XDocumentTemplates.update()} . A real implementation of this interface can do that on top of an ucb content provider. Method
   * {@link XDocumentTemplates.getContent()} force that.
   */
-@js.native
-trait XDocumentTemplates extends XInterface {
+trait XDocumentTemplates
+  extends StObject
+     with XInterface {
   
   /**
     * provides access to the root of internal used hierarchy
@@ -24,14 +24,14 @@ trait XDocumentTemplates extends XInterface {
     * This content can be used for accessing the groups directly.
     * @returns the ucb content for template configuration
     */
-  val Content: XContent = js.native
+  val Content: XContent
   
   /**
     * creates a new group
     * @param GroupName the name of the group to be created
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
-  def addGroup(GroupName: String): Boolean = js.native
+  def addGroup(GroupName: String): Boolean
   
   /**
     * creates the template with the given name in the given group using the given URL
@@ -41,7 +41,7 @@ trait XDocumentTemplates extends XInterface {
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     * @see XDocumentTemplates.storeTemplate()
     */
-  def addTemplate(GroupName: String, TemplateName: String, SourceURL: String): Boolean = js.native
+  def addTemplate(GroupName: String, TemplateName: String, SourceURL: String): Boolean
   
   /**
     * provides access to the root of internal used hierarchy
@@ -49,14 +49,14 @@ trait XDocumentTemplates extends XInterface {
     * This content can be used for accessing the groups directly.
     * @returns the ucb content for template configuration
     */
-  def getContent(): XContent = js.native
+  def getContent(): XContent
   
   /**
     * remove an existing group
     * @param GroupName the name of the group to be removed
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
-  def removeGroup(GroupName: String): Boolean = js.native
+  def removeGroup(GroupName: String): Boolean
   
   /**
     * remove a template from specified group
@@ -64,7 +64,7 @@ trait XDocumentTemplates extends XInterface {
     * @param TemplateName specifies the template for delete
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
-  def removeTemplate(GroupName: String, TemplateName: String): Boolean = js.native
+  def removeTemplate(GroupName: String, TemplateName: String): Boolean
   
   /**
     * rename an existing group
@@ -72,7 +72,7 @@ trait XDocumentTemplates extends XInterface {
     * @param NewGroupName the new name of the group
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
-  def renameGroup(OldGroupName: String, NewGroupName: String): Boolean = js.native
+  def renameGroup(OldGroupName: String, NewGroupName: String): Boolean
   
   /**
     * rename a template inside specified group
@@ -81,7 +81,7 @@ trait XDocumentTemplates extends XInterface {
     * @param NewTemplateName specifies the new name for the template
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     */
-  def renameTemplate(GroupName: String, OldTemplateName: String, NewTemplateName: String): Boolean = js.native
+  def renameTemplate(GroupName: String, OldTemplateName: String, NewTemplateName: String): Boolean
   
   /**
     * creates the template with the given name in the given group using the data from the storable
@@ -91,7 +91,7 @@ trait XDocumentTemplates extends XInterface {
     * @returns `TRUE` if operation was successful ; `FALSE` otherwise
     * @see XDocumentTemplates.addTemplate()
     */
-  def storeTemplate(GroupName: String, TemplateName: String, Storable: XStorable): Boolean = js.native
+  def storeTemplate(GroupName: String, TemplateName: String, Storable: XStorable): Boolean
   
   /**
     * force an update for internal structures
@@ -99,7 +99,7 @@ trait XDocumentTemplates extends XInterface {
     * Because the templates are well known by links and not as direct content they can be outdated. An update force actualization of that to find wrong
     * links.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object XDocumentTemplates {
   

@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ReplicationControllerStatus represents the current status of a replication controller.
   */
-@js.native
 trait ReplicationControllerStatus extends StObject {
   
   /**
     * The number of available replicas (ready for at least minReadySeconds) for this replication controller.
     */
-  var availableReplicas: Double = js.native
+  var availableReplicas: Double
   
   /**
     * Represents the latest available observations of a replication controller's current state.
     */
-  var conditions: js.Array[ReplicationControllerCondition] = js.native
+  var conditions: js.Array[ReplicationControllerCondition]
   
   /**
     * The number of pods that have labels matching the labels of the pod template of the replication controller.
     */
-  var fullyLabeledReplicas: Double = js.native
+  var fullyLabeledReplicas: Double
   
   /**
     * ObservedGeneration reflects the generation of the most recently observed replication controller.
     */
-  var observedGeneration: Double = js.native
+  var observedGeneration: Double
   
   /**
     * The number of ready replicas for this replication controller.
     */
-  var readyReplicas: Double = js.native
+  var readyReplicas: Double
   
   /**
     * Replicas is the most recently oberved number of replicas. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller
     */
-  var replicas: Double = js.native
+  var replicas: Double
 }
 object ReplicationControllerStatus {
   

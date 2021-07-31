@@ -3,13 +3,13 @@ package typings.baidumapWebSdk.global.BMap
 import typings.baidumapWebSdk.BMap.TransitRouteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BMap.TransitRoute")
 @js.native
 class TransitRoute protected ()
-  extends typings.baidumapWebSdk.BMap.TransitRoute {
+  extends StObject
+     with typings.baidumapWebSdk.BMap.TransitRoute {
   def this(location: String) = this()
   def this(location: typings.baidumapWebSdk.BMap.Map) = this()
   def this(location: typings.baidumapWebSdk.BMap.Point) = this()

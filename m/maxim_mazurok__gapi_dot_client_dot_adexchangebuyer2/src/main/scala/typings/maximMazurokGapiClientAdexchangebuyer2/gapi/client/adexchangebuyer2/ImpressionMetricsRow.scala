@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImpressionMetricsRow extends StObject {
   
   /** The number of impressions available to the buyer on Ad Exchange. In some cases this value may be unavailable. */
-  var availableImpressions: js.UndefOr[MetricValue] = js.native
+  var availableImpressions: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of impressions for which Ad Exchange sent the buyer a bid request. */
-  var bidRequests: js.UndefOr[MetricValue] = js.native
+  var bidRequests: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of impressions that match the buyer's inventory pretargeting. */
-  var inventoryMatches: js.UndefOr[MetricValue] = js.native
+  var inventoryMatches: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of impressions for which Ad Exchange received a response from the buyer that contained at least one applicable bid. */
-  var responsesWithBids: js.UndefOr[MetricValue] = js.native
+  var responsesWithBids: js.UndefOr[MetricValue] = js.undefined
   
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.native
+  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
   
   /** The number of impressions for which the buyer successfully sent a response to Ad Exchange. */
-  var successfulResponses: js.UndefOr[MetricValue] = js.native
+  var successfulResponses: js.UndefOr[MetricValue] = js.undefined
 }
 object ImpressionMetricsRow {
   

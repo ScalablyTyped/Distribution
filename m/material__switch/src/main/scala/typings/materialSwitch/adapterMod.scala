@@ -2,38 +2,36 @@ package typings.materialSwitch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCSwitchAdapter extends StObject {
     
     /**
       * Adds a CSS class to the root element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Removes a CSS class from the root element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets an attribute value of the native HTML control underlying the switch.
       */
-    def setNativeControlAttr(attr: String, value: String): Unit = js.native
+    def setNativeControlAttr(attr: String, value: String): Unit
     
     /**
       * Sets checked state of the native HTML control underlying the switch.
       */
-    def setNativeControlChecked(checked: Boolean): Unit = js.native
+    def setNativeControlChecked(checked: Boolean): Unit
     
     /**
       * Sets the disabled state of the native HTML control underlying the switch.
       */
-    def setNativeControlDisabled(disabled: Boolean): Unit = js.native
+    def setNativeControlDisabled(disabled: Boolean): Unit
   }
   object MDCSwitchAdapter {
     

@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
-@js.native
 trait FormatProtectionUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FormatProtectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var formulaHidden: js.UndefOr[Boolean] = js.native
+  var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait FormatProtectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
 }
 object FormatProtectionUpdateData {
   

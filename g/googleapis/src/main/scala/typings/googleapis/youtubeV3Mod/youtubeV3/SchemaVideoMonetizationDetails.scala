@@ -2,19 +2,17 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about monetization of a YouTube Video.
   */
-@js.native
 trait SchemaVideoMonetizationDetails extends StObject {
   
   /**
     * The value of access indicates whether the video can be monetized or not.
     */
-  var access: js.UndefOr[SchemaAccessPolicy] = js.native
+  var access: js.UndefOr[SchemaAccessPolicy] = js.undefined
 }
 object SchemaVideoMonetizationDetails {
   

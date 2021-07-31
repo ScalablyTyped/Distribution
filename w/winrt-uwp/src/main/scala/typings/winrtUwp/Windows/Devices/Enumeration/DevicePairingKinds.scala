@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object DevicePairingKinds extends StObject {
   
   /** The user needs to confirm they wish to perform the pairing or unpairing action. */
   @js.native
-  sealed trait confirmOnly extends DevicePairingKinds
+  sealed trait confirmOnly
+    extends StObject
+       with DevicePairingKinds
   
   /** A pin is shown on both the device and the application, and the user needs to confirm that they match. */
   @js.native
-  sealed trait confirmPinMatch extends DevicePairingKinds
+  sealed trait confirmPinMatch
+    extends StObject
+       with DevicePairingKinds
   
   /** A pin is displayed to the user that will need to be entered on the device. In this scenario, the application should Accept the pairing. The device has the authority to cancel the operation if the pin does not match. */
   @js.native
-  sealed trait displayPin extends DevicePairingKinds
+  sealed trait displayPin
+    extends StObject
+       with DevicePairingKinds
   
   /** No action is required on the part of the user. In this case, the device object will attempt to pair without any verification. */
   @js.native
-  sealed trait none extends DevicePairingKinds
+  sealed trait none
+    extends StObject
+       with DevicePairingKinds
   
   /** A pin is shown on the target device and must be provided to the app. */
   @js.native
-  sealed trait providePin extends DevicePairingKinds
+  sealed trait providePin
+    extends StObject
+       with DevicePairingKinds
 }

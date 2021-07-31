@@ -3,13 +3,11 @@ package typings.wxServerSdk.mod
 import typings.wxServerSdk.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TetTempFileURLSuccess extends StObject {
   
-  var fileList: js.Array[ErrMsg] = js.native
+  var fileList: js.Array[ErrMsg]
 }
 object TetTempFileURLSuccess {
   

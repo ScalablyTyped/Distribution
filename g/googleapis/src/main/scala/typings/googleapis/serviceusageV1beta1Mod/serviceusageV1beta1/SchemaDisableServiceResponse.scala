@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * assigned to the `response` field of the returned Operation when that
   * operation is done.
   */
-@js.native
 trait SchemaDisableServiceResponse extends StObject {
   
   /**
     * The new state of the service after disabling.
     */
-  var service: js.UndefOr[SchemaGoogleApiServiceusageV1Service] = js.native
+  var service: js.UndefOr[SchemaGoogleApiServiceusageV1Service] = js.undefined
 }
 object SchemaDisableServiceResponse {
   

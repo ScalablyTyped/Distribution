@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateAttributeGroupResponse extends StObject {
   
   /**
     * The Amazon resource name (ARN) that specifies the application.
     */
-  var applicationArn: js.UndefOr[ApplicationArn] = js.native
+  var applicationArn: js.UndefOr[ApplicationArn] = js.undefined
   
   /**
     * The Amazon resource name (ARN) that specifies the attribute group.
     */
-  var attributeGroupArn: js.UndefOr[AttributeGroupArn] = js.native
+  var attributeGroupArn: js.UndefOr[AttributeGroupArn] = js.undefined
 }
 object DisassociateAttributeGroupResponse {
   

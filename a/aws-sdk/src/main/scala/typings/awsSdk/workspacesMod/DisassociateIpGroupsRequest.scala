@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateIpGroupsRequest extends StObject {
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId
   
   /**
     * The identifiers of one or more IP access control groups.
     */
-  var GroupIds: IpGroupIdList = js.native
+  var GroupIds: IpGroupIdList
 }
 object DisassociateIpGroupsRequest {
   

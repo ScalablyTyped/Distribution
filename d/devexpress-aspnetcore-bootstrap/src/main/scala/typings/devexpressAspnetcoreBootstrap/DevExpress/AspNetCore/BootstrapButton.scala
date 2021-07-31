@@ -6,11 +6,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.lostFocus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapButton extends Control {
+trait BootstrapButton
+  extends StObject
+     with Control {
   
   def doClick(): Unit = js.native
   
@@ -29,7 +30,7 @@ trait BootstrapButton extends Control {
   def getText(): String = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[ButtonClickEventArgs | EventArgs | ProcessingModeEventArgs], 

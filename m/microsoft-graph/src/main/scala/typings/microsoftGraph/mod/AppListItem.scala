@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppListItem extends StObject {
   
   // The application or bundle identifier of the application
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Store URL of the application
-  var appStoreUrl: js.UndefOr[NullableOption[String]] = js.native
+  var appStoreUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The application name
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // The publisher of the application
-  var publisher: js.UndefOr[NullableOption[String]] = js.native
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AppListItem {
   

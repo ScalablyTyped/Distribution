@@ -8,31 +8,29 @@ import typings.typescript.mod.Statement
 import typings.typescript.mod.ThrowStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlFlowMod {
   
-  @JSImport("tsutils/util/control-flow", "endsControlFlow")
+  @JSImport("tsutils/util/control-flow", JSImport.Namespace)
   @js.native
-  def endsControlFlow(statement: BlockLike): Boolean = js.native
-  @JSImport("tsutils/util/control-flow", "endsControlFlow")
-  @js.native
-  def endsControlFlow(statement: Statement): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tsutils/util/control-flow", "getControlFlowEnd")
-  @js.native
-  def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = js.native
-  @JSImport("tsutils/util/control-flow", "getControlFlowEnd")
-  @js.native
-  def getControlFlowEnd(statement: Statement): ControlFlowEnd = js.native
+  @scala.inline
+  def endsControlFlow(statement: BlockLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def endsControlFlow(statement: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  @scala.inline
+  def getControlFlowEnd(statement: Statement): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  
   trait ControlFlowEnd extends StObject {
     
-    val end: Boolean = js.native
+    val end: Boolean
     
-    val statements: js.Array[ControlFlowStatement] = js.native
+    val statements: js.Array[ControlFlowStatement]
   }
   object ControlFlowEnd {
     

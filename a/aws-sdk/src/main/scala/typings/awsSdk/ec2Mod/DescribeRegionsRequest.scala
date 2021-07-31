@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRegionsRequest extends StObject {
   
   /**
     * Indicates whether to display all Regions, including Regions that are disabled for your account.
     */
-  var AllRegions: js.UndefOr[Boolean] = js.native
+  var AllRegions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The filters.    endpoint - The endpoint of the Region (for example, ec2.us-east-1.amazonaws.com).    opt-in-status - The opt-in status of the Region (opt-in-not-required | opted-in | not-opted-in).    region-name - The name of the Region (for example, us-east-1).  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The names of the Regions. You can specify any Regions, whether they are enabled and disabled for your account.
     */
-  var RegionNames: js.UndefOr[RegionNameStringList] = js.native
+  var RegionNames: js.UndefOr[RegionNameStringList] = js.undefined
 }
 object DescribeRegionsRequest {
   

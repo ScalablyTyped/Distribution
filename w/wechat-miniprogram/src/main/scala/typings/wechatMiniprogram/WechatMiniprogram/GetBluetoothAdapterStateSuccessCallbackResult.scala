@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBluetoothAdapterStateSuccessCallbackResult extends StObject {
   
   /** 蓝牙适配器是否可用 */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /** 是否正在搜索设备 */
-  var discovering: Boolean = js.native
+  var discovering: Boolean
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetBluetoothAdapterStateSuccessCallbackResult {
   

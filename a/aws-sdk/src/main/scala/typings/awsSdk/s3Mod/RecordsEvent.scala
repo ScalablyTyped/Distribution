@@ -3,16 +3,14 @@ package typings.awsSdk.s3Mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordsEvent extends StObject {
   
   /**
     * The byte array of partial, one or more result records.
     */
-  var Payload: js.UndefOr[Buffer] = js.native
+  var Payload: js.UndefOr[Buffer] = js.undefined
 }
 object RecordsEvent {
   

@@ -7,7 +7,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object definitionCollectorMod {
@@ -32,24 +31,23 @@ object definitionCollectorMod {
     def visitNode(node: Node): Unit = js.native
   }
   
-  @js.native
   trait ResolvedDirective extends StObject {
     
-    var decorator: NgDecorator = js.native
+    var decorator: NgDecorator
     
-    var name: String = js.native
+    var name: String
     
-    var node: ClassDeclaration = js.native
+    var node: ClassDeclaration
     
-    var providersExpr: Expression | Null = js.native
+    var providersExpr: Expression | Null
     
-    var viewProvidersExpr: Expression | Null = js.native
+    var viewProvidersExpr: Expression | Null
   }
   object ResolvedDirective {
     
     @scala.inline
     def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedDirective = {
-      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = null, viewProvidersExpr = null)
       __obj.asInstanceOf[ResolvedDirective]
     }
     
@@ -79,22 +77,21 @@ object definitionCollectorMod {
     }
   }
   
-  @js.native
   trait ResolvedNgModule extends StObject {
     
-    var decorator: NgDecorator = js.native
+    var decorator: NgDecorator
     
-    var name: String = js.native
+    var name: String
     
-    var node: ClassDeclaration = js.native
+    var node: ClassDeclaration
     
-    var providersExpr: Expression | Null = js.native
+    var providersExpr: Expression | Null
   }
   object ResolvedNgModule {
     
     @scala.inline
     def apply(decorator: NgDecorator, name: String, node: ClassDeclaration): ResolvedNgModule = {
-      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = null)
       __obj.asInstanceOf[ResolvedNgModule]
     }
     

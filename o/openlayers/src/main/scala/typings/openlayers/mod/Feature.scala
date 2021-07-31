@@ -5,7 +5,6 @@ import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Feature")

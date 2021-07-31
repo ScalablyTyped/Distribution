@@ -3,18 +3,19 @@ package typings.editJsonFile
 import typings.node.fsMod.NoParamCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** Create a JSON file editor. */
+  @scala.inline
+  def apply(path: String): JsonEditor = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[JsonEditor]
+  @scala.inline
+  def apply(path: String, options: Options): JsonEditor = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonEditor]
+  
   @JSImport("edit-json-file", JSImport.Namespace)
   @js.native
-  def apply(path: String): JsonEditor = js.native
-  @JSImport("edit-json-file", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: Options): JsonEditor = js.native
+  val ^ : js.Any = js.native
   
   /** JSON file editor. */
   @js.native
@@ -51,16 +52,15 @@ object mod {
   }
   
   /** JSON file editor options. */
-  @js.native
   trait Options extends StObject {
     
-    var autosave: js.UndefOr[Boolean] = js.native
+    var autosave: js.UndefOr[Boolean] = js.undefined
     
-    var stringify_eol: js.UndefOr[Boolean] = js.native
+    var stringify_eol: js.UndefOr[Boolean] = js.undefined
     
-    var stringify_fn: js.UndefOr[js.Function1[/* data */ js.Object, String]] = js.native
+    var stringify_fn: js.UndefOr[js.Function1[/* data */ js.Object, String]] = js.undefined
     
-    var stringify_width: js.UndefOr[Double] = js.native
+    var stringify_width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVPCEConfigurationResult extends StObject {
   
   /**
     * An object that contains information about your VPC endpoint configuration.
     */
-  var vpceConfiguration: js.UndefOr[VPCEConfiguration] = js.native
+  var vpceConfiguration: js.UndefOr[VPCEConfiguration] = js.undefined
 }
 object CreateVPCEConfigurationResult {
   

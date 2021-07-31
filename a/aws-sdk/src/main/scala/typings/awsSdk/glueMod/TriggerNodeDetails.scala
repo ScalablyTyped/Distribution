@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerNodeDetails extends StObject {
   
   /**
     * The information of the trigger represented by the trigger node.
     */
-  var Trigger: js.UndefOr[typings.awsSdk.glueMod.Trigger] = js.native
+  var Trigger: js.UndefOr[typings.awsSdk.glueMod.Trigger] = js.undefined
 }
 object TriggerNodeDetails {
   

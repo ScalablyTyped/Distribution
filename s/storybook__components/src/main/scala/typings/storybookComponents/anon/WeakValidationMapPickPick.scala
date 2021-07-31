@@ -77,102 +77,100 @@ import typings.storybookComponents.storybookComponentsStrings.vertical
 import typings.storybookComponents.storybookComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<std.Pick<std.Pick<react.react.HTMLProps<std.HTMLInputElement>, 'color' | 'content' | 'translate' | 'width' | 'default' | 'hidden' | 'ref' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'color' | 'content' | 'height' | 'translate' | 'width' | 'default' | 'hidden' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'size' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'valid' | 'align' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & react.react.RefAttributes<any> & @emotion/styled-base.@emotion/styled-base/types/helper.Omit<@storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'theme'> & @emotion/styled-base.anon.0<@storybook/theming.@storybook/theming.Theme>> */
-@js.native
 trait WeakValidationMapPickPick extends StObject {
   
-  var default: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var default: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var accept: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var accept: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var acceptCharset: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var acceptCharset: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var action: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var action: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var align: js.UndefOr[Validator[js.UndefOr[Alignments | Null]]] = js.native
+  var align: js.UndefOr[Validator[js.UndefOr[Alignments | Null]]] = js.undefined
   
-  var allowFullScreen: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var allowFullScreen: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var allowTransparency: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var allowTransparency: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var alt: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var alt: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.native
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]] = js.native
+  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.native
+  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.native
+  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.native
+  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
   
-  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.native
+  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.native
+  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
   
-  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     Validator[
@@ -180,647 +178,647 @@ trait WeakValidationMapPickPick extends StObject {
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.native
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
   
-  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var as: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var as: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var async: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var async: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoComplete: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoComplete: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var autoPlay: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var autoPlay: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var capture: js.UndefOr[Validator[js.UndefOr[Boolean | Null | String]]] = js.native
+  var capture: js.UndefOr[Validator[js.UndefOr[Boolean | Null | String]]] = js.undefined
   
-  var cellPadding: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var cellPadding: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var cellSpacing: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var cellSpacing: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var challenge: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var challenge: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var charSet: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var charSet: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var checked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var checked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
-  var cite: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var cite: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var classID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var classID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var colSpan: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var colSpan: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var cols: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var cols: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var content: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var content: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.native
+  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   
-  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var controls: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var controls: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var coords: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var coords: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var crossOrigin: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var crossOrigin: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var css: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var css: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.undefined
   
-  var data: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var data: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var dateTime: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var dateTime: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.native
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
   
-  var defer: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defer: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var download: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var download: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var encType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var encType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var form: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var form: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formAction: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var formAction: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formEncType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var formEncType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formMethod: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var formMethod: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formNoValidate: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var formNoValidate: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var formTarget: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var formTarget: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var frameBorder: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var frameBorder: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var headers: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var headers: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var height: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var height: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var high: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var high: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var href: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var href: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var hrefLang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var hrefLang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var htmlFor: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var htmlFor: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var httpEquiv: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var httpEquiv: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var inlist: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
-  ] = js.native
+  ] = js.undefined
   
-  var integrity: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var integrity: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.native
+  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.undefined
   
-  var keyParams: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var keyParams: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var keyType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var keyType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var kind: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var kind: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var label: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var label: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var list: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var list: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var loop: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var loop: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var low: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var low: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var manifest: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var manifest: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var marginHeight: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var marginHeight: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var marginWidth: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var marginWidth: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var max: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var max: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var maxLength: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var maxLength: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var media: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var media: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var mediaGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var mediaGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var method: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var method: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var min: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var min: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var minLength: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var minLength: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var multiple: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var multiple: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var muted: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var muted: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var name: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var name: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var noValidate: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var noValidate: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var nonce: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var nonce: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onAbortCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onAnimationEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onAnimationIterationCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onAnimationStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onAuxClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onBeforeInputCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onBlurCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCanPlayCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onClickCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCompositionEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCompositionStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onContextMenuCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCopyCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onCutCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onCutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDoubleClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragEnterCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragExitCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragLeaveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDragStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onDropCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDropCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onDurationChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onEmptiedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onEncryptedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onEndedCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onEndedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onErrorCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onFocusCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onGotPointerCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onInputCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onInputCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onInvalidCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onKeyDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onKeyPressCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onKeyUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLoadCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLoadStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLoadedDataCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLostPointerCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onMouseDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onMouseMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onMouseOutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onMouseOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onMouseUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPasteCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPauseCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPauseCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPlayCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPlayingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerCancelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerEnterCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerLeaveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerOutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.native
+  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onPointerUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onProgressCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onRateChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onResetCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onResetCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLInputElement]]]] = js.native
+  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onScrollCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onSeekedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onSeekingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onSelectCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onStalledCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onStalledCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onSubmitCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onSuspendCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTimeUpdateCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.native
+  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTouchCancelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.native
+  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTouchEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.native
+  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTouchMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.native
+  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTouchStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLInputElement]]]] = js.native
+  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onTransitionEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onVolumeChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.native
+  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onWaitingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLInputElement]]]] = js.native
+  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLInputElement]]]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var onWheelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
-  var open: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var open: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var optimum: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var optimum: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var pattern: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var pattern: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var playsInline: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var playsInline: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var poster: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var poster: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var preload: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var preload: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[_]]]] = js.native
+  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[js.Any]]]] = js.undefined
   
-  var rel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var rel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var required: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var required: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var reversed: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var reversed: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var rowSpan: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var rowSpan: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var rows: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var rows: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var sandbox: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var sandbox: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var scope: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var scope: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var scoped: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var scoped: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var scrolling: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var scrolling: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var seamless: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var seamless: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var selected: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var shape: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var shape: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var size: js.UndefOr[Validator[js.UndefOr[Null | Sizes]]] = js.native
+  var size: js.UndefOr[Validator[js.UndefOr[Null | Sizes]]] = js.undefined
   
-  var sizes: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var sizes: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var span: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var span: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var src: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var src: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var srcDoc: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var srcDoc: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var srcLang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var srcLang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var srcSet: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var srcSet: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var start: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var start: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var step: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var step: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   
-  var summary: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var summary: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var target: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var target: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var theme: js.UndefOr[Validator[js.UndefOr[Null | typings.storybookTheming.typesMod.Theme]]] = js.native
+  var theme: js.UndefOr[Validator[js.UndefOr[Null | typings.storybookTheming.typesMod.Theme]]] = js.undefined
   
-  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.native
+  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.undefined
   
-  var `type`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `type`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.native
+  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
   
-  var useMap: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var useMap: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var valid: js.UndefOr[Validator[js.UndefOr[Null | ValidationStates]]] = js.native
+  var valid: js.UndefOr[Validator[js.UndefOr[Null | ValidationStates]]] = js.undefined
   
-  var value: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.native
+  var value: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
   
-  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var width: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var width: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
   
-  var wmode: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var wmode: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var wrap: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var wrap: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
 object WeakValidationMapPickPick {
   
@@ -1344,7 +1342,7 @@ object WeakValidationMapPickPick {
     def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setCss(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    def setCss(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
@@ -1410,7 +1408,7 @@ object WeakValidationMapPickPick {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDownload(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    def setDownload(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
@@ -1524,7 +1522,7 @@ object WeakValidationMapPickPick {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setInlist(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    def setInlist(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
@@ -1725,7 +1723,7 @@ object WeakValidationMapPickPick {
     def setOnAbort(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAbortCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
+    def setOnAbortCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAbortCaptureUndefined: Self = StObject.set(x, "onAbortCapture", js.undefined)
@@ -1737,7 +1735,7 @@ object WeakValidationMapPickPick {
     def setOnAnimationEnd(value: Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAnimationEndCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
+    def setOnAnimationEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationEndCaptureUndefined: Self = StObject.set(x, "onAnimationEndCapture", js.undefined)
@@ -1749,7 +1747,7 @@ object WeakValidationMapPickPick {
     def setOnAnimationIteration(value: Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onAnimationIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAnimationIterationCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    def setOnAnimationIterationCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationIterationCaptureUndefined: Self = StObject.set(x, "onAnimationIterationCapture", js.undefined)
@@ -1761,7 +1759,7 @@ object WeakValidationMapPickPick {
     def setOnAnimationStart(value: Validator[js.UndefOr[AnimationEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAnimationStartCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
+    def setOnAnimationStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationStartCaptureUndefined: Self = StObject.set(x, "onAnimationStartCapture", js.undefined)
@@ -1773,7 +1771,7 @@ object WeakValidationMapPickPick {
     def setOnAuxClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onAuxClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAuxClickCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
+    def setOnAuxClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAuxClickCaptureUndefined: Self = StObject.set(x, "onAuxClickCapture", js.undefined)
@@ -1785,7 +1783,7 @@ object WeakValidationMapPickPick {
     def setOnBeforeInput(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onBeforeInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeInputCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
+    def setOnBeforeInputCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnBeforeInputCaptureUndefined: Self = StObject.set(x, "onBeforeInputCapture", js.undefined)
@@ -1797,7 +1795,7 @@ object WeakValidationMapPickPick {
     def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBlurCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
+    def setOnBlurCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnBlurCaptureUndefined: Self = StObject.set(x, "onBlurCapture", js.undefined)
@@ -1809,7 +1807,7 @@ object WeakValidationMapPickPick {
     def setOnCanPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onCanPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCanPlayCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
+    def setOnCanPlayCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCanPlayCaptureUndefined: Self = StObject.set(x, "onCanPlayCapture", js.undefined)
@@ -1818,7 +1816,7 @@ object WeakValidationMapPickPick {
     def setOnCanPlayThrough(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onCanPlayThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCanPlayThroughCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    def setOnCanPlayThroughCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCanPlayThroughCaptureUndefined: Self = StObject.set(x, "onCanPlayThroughCapture", js.undefined)
@@ -1833,7 +1831,7 @@ object WeakValidationMapPickPick {
     def setOnChange(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChangeCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
+    def setOnChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnChangeCaptureUndefined: Self = StObject.set(x, "onChangeCapture", js.undefined)
@@ -1845,7 +1843,7 @@ object WeakValidationMapPickPick {
     def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClickCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
+    def setOnClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
@@ -1857,7 +1855,7 @@ object WeakValidationMapPickPick {
     def setOnCompositionEnd(value: Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onCompositionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompositionEndCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
+    def setOnCompositionEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionEndCaptureUndefined: Self = StObject.set(x, "onCompositionEndCapture", js.undefined)
@@ -1869,7 +1867,7 @@ object WeakValidationMapPickPick {
     def setOnCompositionStart(value: Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onCompositionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompositionStartCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
+    def setOnCompositionStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionStartCaptureUndefined: Self = StObject.set(x, "onCompositionStartCapture", js.undefined)
@@ -1881,7 +1879,7 @@ object WeakValidationMapPickPick {
     def setOnCompositionUpdate(value: Validator[js.UndefOr[CompositionEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onCompositionUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompositionUpdateCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
+    def setOnCompositionUpdateCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionUpdateCaptureUndefined: Self = StObject.set(x, "onCompositionUpdateCapture", js.undefined)
@@ -1893,7 +1891,7 @@ object WeakValidationMapPickPick {
     def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnContextMenuCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
+    def setOnContextMenuCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnContextMenuCaptureUndefined: Self = StObject.set(x, "onContextMenuCapture", js.undefined)
@@ -1905,7 +1903,7 @@ object WeakValidationMapPickPick {
     def setOnCopy(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCopyCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
+    def setOnCopyCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCopyCaptureUndefined: Self = StObject.set(x, "onCopyCapture", js.undefined)
@@ -1917,7 +1915,7 @@ object WeakValidationMapPickPick {
     def setOnCut(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onCut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCutCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
+    def setOnCutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCutCaptureUndefined: Self = StObject.set(x, "onCutCapture", js.undefined)
@@ -1929,7 +1927,7 @@ object WeakValidationMapPickPick {
     def setOnDoubleClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDoubleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDoubleClickCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
+    def setOnDoubleClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDoubleClickCaptureUndefined: Self = StObject.set(x, "onDoubleClickCapture", js.undefined)
@@ -1941,7 +1939,7 @@ object WeakValidationMapPickPick {
     def setOnDrag(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
+    def setOnDragCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragCaptureUndefined: Self = StObject.set(x, "onDragCapture", js.undefined)
@@ -1950,7 +1948,7 @@ object WeakValidationMapPickPick {
     def setOnDragEnd(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragEndCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
+    def setOnDragEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragEndCaptureUndefined: Self = StObject.set(x, "onDragEndCapture", js.undefined)
@@ -1962,7 +1960,7 @@ object WeakValidationMapPickPick {
     def setOnDragEnter(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragEnterCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
+    def setOnDragEnterCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragEnterCaptureUndefined: Self = StObject.set(x, "onDragEnterCapture", js.undefined)
@@ -1974,7 +1972,7 @@ object WeakValidationMapPickPick {
     def setOnDragExit(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragExitCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
+    def setOnDragExitCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragExitCaptureUndefined: Self = StObject.set(x, "onDragExitCapture", js.undefined)
@@ -1986,7 +1984,7 @@ object WeakValidationMapPickPick {
     def setOnDragLeave(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragLeaveCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
+    def setOnDragLeaveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragLeaveCaptureUndefined: Self = StObject.set(x, "onDragLeaveCapture", js.undefined)
@@ -1998,7 +1996,7 @@ object WeakValidationMapPickPick {
     def setOnDragOver(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragOverCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
+    def setOnDragOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragOverCaptureUndefined: Self = StObject.set(x, "onDragOverCapture", js.undefined)
@@ -2010,7 +2008,7 @@ object WeakValidationMapPickPick {
     def setOnDragStart(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragStartCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
+    def setOnDragStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragStartCaptureUndefined: Self = StObject.set(x, "onDragStartCapture", js.undefined)
@@ -2025,7 +2023,7 @@ object WeakValidationMapPickPick {
     def setOnDrop(value: Validator[js.UndefOr[DragEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDropCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
+    def setOnDropCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDropCaptureUndefined: Self = StObject.set(x, "onDropCapture", js.undefined)
@@ -2037,7 +2035,7 @@ object WeakValidationMapPickPick {
     def setOnDurationChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onDurationChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDurationChangeCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
+    def setOnDurationChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDurationChangeCaptureUndefined: Self = StObject.set(x, "onDurationChangeCapture", js.undefined)
@@ -2049,7 +2047,7 @@ object WeakValidationMapPickPick {
     def setOnEmptied(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEmptiedCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
+    def setOnEmptiedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEmptiedCaptureUndefined: Self = StObject.set(x, "onEmptiedCapture", js.undefined)
@@ -2061,7 +2059,7 @@ object WeakValidationMapPickPick {
     def setOnEncrypted(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEncryptedCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
+    def setOnEncryptedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEncryptedCaptureUndefined: Self = StObject.set(x, "onEncryptedCapture", js.undefined)
@@ -2073,7 +2071,7 @@ object WeakValidationMapPickPick {
     def setOnEnded(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEndedCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
+    def setOnEndedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEndedCaptureUndefined: Self = StObject.set(x, "onEndedCapture", js.undefined)
@@ -2085,7 +2083,7 @@ object WeakValidationMapPickPick {
     def setOnError(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnErrorCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
+    def setOnErrorCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnErrorCaptureUndefined: Self = StObject.set(x, "onErrorCapture", js.undefined)
@@ -2097,7 +2095,7 @@ object WeakValidationMapPickPick {
     def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFocusCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
+    def setOnFocusCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
@@ -2106,10 +2104,10 @@ object WeakValidationMapPickPick {
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnGotPointerCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onGotPointerCapture", value.asInstanceOf[js.Any])
+    def setOnGotPointerCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onGotPointerCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnGotPointerCaptureCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
+    def setOnGotPointerCaptureCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnGotPointerCaptureCaptureUndefined: Self = StObject.set(x, "onGotPointerCaptureCapture", js.undefined)
@@ -2121,7 +2119,7 @@ object WeakValidationMapPickPick {
     def setOnInput(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInputCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
+    def setOnInputCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnInputCaptureUndefined: Self = StObject.set(x, "onInputCapture", js.undefined)
@@ -2133,7 +2131,7 @@ object WeakValidationMapPickPick {
     def setOnInvalid(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInvalidCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
+    def setOnInvalidCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnInvalidCaptureUndefined: Self = StObject.set(x, "onInvalidCapture", js.undefined)
@@ -2145,7 +2143,7 @@ object WeakValidationMapPickPick {
     def setOnKeyDown(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeyDownCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
+    def setOnKeyDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
@@ -2157,7 +2155,7 @@ object WeakValidationMapPickPick {
     def setOnKeyPress(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeyPressCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
+    def setOnKeyPressCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyPressCaptureUndefined: Self = StObject.set(x, "onKeyPressCapture", js.undefined)
@@ -2169,7 +2167,7 @@ object WeakValidationMapPickPick {
     def setOnKeyUp(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onKeyUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeyUpCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
+    def setOnKeyUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
@@ -2181,7 +2179,7 @@ object WeakValidationMapPickPick {
     def setOnLoad(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
+    def setOnLoadCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadCaptureUndefined: Self = StObject.set(x, "onLoadCapture", js.undefined)
@@ -2190,7 +2188,7 @@ object WeakValidationMapPickPick {
     def setOnLoadStart(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadStartCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
+    def setOnLoadStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadStartCaptureUndefined: Self = StObject.set(x, "onLoadStartCapture", js.undefined)
@@ -2205,7 +2203,7 @@ object WeakValidationMapPickPick {
     def setOnLoadedData(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onLoadedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadedDataCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
+    def setOnLoadedDataCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadedDataCaptureUndefined: Self = StObject.set(x, "onLoadedDataCapture", js.undefined)
@@ -2217,7 +2215,7 @@ object WeakValidationMapPickPick {
     def setOnLoadedMetadata(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onLoadedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadedMetadataCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    def setOnLoadedMetadataCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadedMetadataCaptureUndefined: Self = StObject.set(x, "onLoadedMetadataCapture", js.undefined)
@@ -2226,10 +2224,10 @@ object WeakValidationMapPickPick {
     def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
     @scala.inline
-    def setOnLostPointerCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLostPointerCapture", value.asInstanceOf[js.Any])
+    def setOnLostPointerCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLostPointerCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLostPointerCaptureCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    def setOnLostPointerCaptureCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLostPointerCaptureCaptureUndefined: Self = StObject.set(x, "onLostPointerCaptureCapture", js.undefined)
@@ -2241,7 +2239,7 @@ object WeakValidationMapPickPick {
     def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseDownCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
+    def setOnMouseDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseDownCaptureUndefined: Self = StObject.set(x, "onMouseDownCapture", js.undefined)
@@ -2265,7 +2263,7 @@ object WeakValidationMapPickPick {
     def setOnMouseMove(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseMoveCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
+    def setOnMouseMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveCaptureUndefined: Self = StObject.set(x, "onMouseMoveCapture", js.undefined)
@@ -2277,7 +2275,7 @@ object WeakValidationMapPickPick {
     def setOnMouseOut(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseOutCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
+    def setOnMouseOutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOutCaptureUndefined: Self = StObject.set(x, "onMouseOutCapture", js.undefined)
@@ -2289,7 +2287,7 @@ object WeakValidationMapPickPick {
     def setOnMouseOver(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseOverCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
+    def setOnMouseOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOverCaptureUndefined: Self = StObject.set(x, "onMouseOverCapture", js.undefined)
@@ -2301,7 +2299,7 @@ object WeakValidationMapPickPick {
     def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseUpCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
+    def setOnMouseUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseUpCaptureUndefined: Self = StObject.set(x, "onMouseUpCapture", js.undefined)
@@ -2313,7 +2311,7 @@ object WeakValidationMapPickPick {
     def setOnPaste(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPasteCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
+    def setOnPasteCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPasteCaptureUndefined: Self = StObject.set(x, "onPasteCapture", js.undefined)
@@ -2325,7 +2323,7 @@ object WeakValidationMapPickPick {
     def setOnPause(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPauseCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
+    def setOnPauseCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPauseCaptureUndefined: Self = StObject.set(x, "onPauseCapture", js.undefined)
@@ -2337,7 +2335,7 @@ object WeakValidationMapPickPick {
     def setOnPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPlayCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
+    def setOnPlayCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPlayCaptureUndefined: Self = StObject.set(x, "onPlayCapture", js.undefined)
@@ -2349,7 +2347,7 @@ object WeakValidationMapPickPick {
     def setOnPlaying(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPlayingCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
+    def setOnPlayingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPlayingCaptureUndefined: Self = StObject.set(x, "onPlayingCapture", js.undefined)
@@ -2361,7 +2359,7 @@ object WeakValidationMapPickPick {
     def setOnPointerCancel(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerCancelCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
+    def setOnPointerCancelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
@@ -2373,7 +2371,7 @@ object WeakValidationMapPickPick {
     def setOnPointerDown(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerDownCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
+    def setOnPointerDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
@@ -2385,7 +2383,7 @@ object WeakValidationMapPickPick {
     def setOnPointerEnter(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerEnterCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
+    def setOnPointerEnterCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
@@ -2397,7 +2395,7 @@ object WeakValidationMapPickPick {
     def setOnPointerLeave(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerLeaveCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    def setOnPointerLeaveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
@@ -2409,7 +2407,7 @@ object WeakValidationMapPickPick {
     def setOnPointerMove(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerMoveCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
+    def setOnPointerMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
@@ -2421,7 +2419,7 @@ object WeakValidationMapPickPick {
     def setOnPointerOut(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerOutCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
+    def setOnPointerOutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerOutCaptureUndefined: Self = StObject.set(x, "onPointerOutCapture", js.undefined)
@@ -2433,7 +2431,7 @@ object WeakValidationMapPickPick {
     def setOnPointerOver(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerOverCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
+    def setOnPointerOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerOverCaptureUndefined: Self = StObject.set(x, "onPointerOverCapture", js.undefined)
@@ -2445,7 +2443,7 @@ object WeakValidationMapPickPick {
     def setOnPointerUp(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPointerUpCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
+    def setOnPointerUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
@@ -2457,7 +2455,7 @@ object WeakValidationMapPickPick {
     def setOnProgress(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnProgressCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
+    def setOnProgressCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnProgressCaptureUndefined: Self = StObject.set(x, "onProgressCapture", js.undefined)
@@ -2469,7 +2467,7 @@ object WeakValidationMapPickPick {
     def setOnRateChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onRateChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRateChangeCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
+    def setOnRateChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnRateChangeCaptureUndefined: Self = StObject.set(x, "onRateChangeCapture", js.undefined)
@@ -2481,7 +2479,7 @@ object WeakValidationMapPickPick {
     def setOnReset(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnResetCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
+    def setOnResetCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnResetCaptureUndefined: Self = StObject.set(x, "onResetCapture", js.undefined)
@@ -2493,7 +2491,7 @@ object WeakValidationMapPickPick {
     def setOnScroll(value: Validator[js.UndefOr[Null | UIEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScrollCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
+    def setOnScrollCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnScrollCaptureUndefined: Self = StObject.set(x, "onScrollCapture", js.undefined)
@@ -2505,7 +2503,7 @@ object WeakValidationMapPickPick {
     def setOnSeeked(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSeekedCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
+    def setOnSeekedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSeekedCaptureUndefined: Self = StObject.set(x, "onSeekedCapture", js.undefined)
@@ -2517,7 +2515,7 @@ object WeakValidationMapPickPick {
     def setOnSeeking(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSeekingCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
+    def setOnSeekingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSeekingCaptureUndefined: Self = StObject.set(x, "onSeekingCapture", js.undefined)
@@ -2529,7 +2527,7 @@ object WeakValidationMapPickPick {
     def setOnSelect(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelectCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
+    def setOnSelectCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSelectCaptureUndefined: Self = StObject.set(x, "onSelectCapture", js.undefined)
@@ -2541,7 +2539,7 @@ object WeakValidationMapPickPick {
     def setOnStalled(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStalledCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
+    def setOnStalledCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnStalledCaptureUndefined: Self = StObject.set(x, "onStalledCapture", js.undefined)
@@ -2553,7 +2551,7 @@ object WeakValidationMapPickPick {
     def setOnSubmit(value: Validator[js.UndefOr[FormEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSubmitCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
+    def setOnSubmitCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSubmitCaptureUndefined: Self = StObject.set(x, "onSubmitCapture", js.undefined)
@@ -2565,7 +2563,7 @@ object WeakValidationMapPickPick {
     def setOnSuspend(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuspendCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
+    def setOnSuspendCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSuspendCaptureUndefined: Self = StObject.set(x, "onSuspendCapture", js.undefined)
@@ -2577,7 +2575,7 @@ object WeakValidationMapPickPick {
     def setOnTimeUpdate(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTimeUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTimeUpdateCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
+    def setOnTimeUpdateCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTimeUpdateCaptureUndefined: Self = StObject.set(x, "onTimeUpdateCapture", js.undefined)
@@ -2589,7 +2587,7 @@ object WeakValidationMapPickPick {
     def setOnTouchCancel(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTouchCancelCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
+    def setOnTouchCancelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchCancelCaptureUndefined: Self = StObject.set(x, "onTouchCancelCapture", js.undefined)
@@ -2601,7 +2599,7 @@ object WeakValidationMapPickPick {
     def setOnTouchEnd(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTouchEndCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
+    def setOnTouchEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
@@ -2613,7 +2611,7 @@ object WeakValidationMapPickPick {
     def setOnTouchMove(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTouchMoveCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
+    def setOnTouchMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchMoveCaptureUndefined: Self = StObject.set(x, "onTouchMoveCapture", js.undefined)
@@ -2625,7 +2623,7 @@ object WeakValidationMapPickPick {
     def setOnTouchStart(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTouchStartCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
+    def setOnTouchStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchStartCaptureUndefined: Self = StObject.set(x, "onTouchStartCapture", js.undefined)
@@ -2637,7 +2635,7 @@ object WeakValidationMapPickPick {
     def setOnTransitionEnd(value: Validator[js.UndefOr[Null | TransitionEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onTransitionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTransitionEndCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
+    def setOnTransitionEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTransitionEndCaptureUndefined: Self = StObject.set(x, "onTransitionEndCapture", js.undefined)
@@ -2649,7 +2647,7 @@ object WeakValidationMapPickPick {
     def setOnVolumeChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnVolumeChangeCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
+    def setOnVolumeChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnVolumeChangeCaptureUndefined: Self = StObject.set(x, "onVolumeChangeCapture", js.undefined)
@@ -2661,7 +2659,7 @@ object WeakValidationMapPickPick {
     def setOnWaiting(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnWaitingCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
+    def setOnWaitingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnWaitingCaptureUndefined: Self = StObject.set(x, "onWaitingCapture", js.undefined)
@@ -2673,7 +2671,7 @@ object WeakValidationMapPickPick {
     def setOnWheel(value: Validator[js.UndefOr[Null | WheelEventHandler[HTMLInputElement]]]): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnWheelCapture(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
+    def setOnWheelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnWheelCaptureUndefined: Self = StObject.set(x, "onWheelCapture", js.undefined)
@@ -2748,7 +2746,7 @@ object WeakValidationMapPickPick {
     def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setRef(value: Validator[js.UndefOr[Null | Ref[_]]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Validator[js.UndefOr[Null | Ref[js.Any]]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)

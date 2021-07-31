@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.ExternalSheetCache
   * @since OOo 3.1
   */
-@js.native
 trait XExternalSheetCache extends StObject {
   
   /**
     * It returns a list of all row numbers where a cached cell or cells exist. The row numbers are sorted in ascending order.
     * @returns sequence<long> list of all row numbers with cached cell(s)
     */
-  val AllRows: SafeArray[Double] = js.native
+  val AllRows: SafeArray[Double]
   
   /**
     * Index corresponding to this instance of an external sheet cache for usage in formula tokens.
@@ -29,26 +27,26 @@ trait XExternalSheetCache extends StObject {
     * @see FormulaToken
     * @see ExternalReference
     */
-  var TokenIndex: Double = js.native
+  var TokenIndex: Double
   
   /**
     * Given a row number, this method returns a list of all columns numbers that store cached cell values in that row. The column numbers are sorted in
     * ascending order.
     * @returns sequence<long> list of all columns numbers with cached cell values
     */
-  def getAllColumns(nRow: Double): SafeArray[Double] = js.native
+  def getAllColumns(nRow: Double): SafeArray[Double]
   
   /**
     * It returns a list of all row numbers where a cached cell or cells exist. The row numbers are sorted in ascending order.
     * @returns sequence<long> list of all row numbers with cached cell(s)
     */
-  def getAllRows(): SafeArray[Double] = js.native
+  def getAllRows(): SafeArray[Double]
   
   /**
     * It retrieves a cached value from a specified cell position. The cached value can be either string or double.
     * @returns any cached cell value
     */
-  def getCellValue(nColumn: Double, nRow: Double): js.Any = js.native
+  def getCellValue(nColumn: Double, nRow: Double): js.Any
   
   /**
     * It sets a cached value for a specified cell position. The value is expected to be either of type string or of type double. No other data types are
@@ -57,7 +55,7 @@ trait XExternalSheetCache extends StObject {
     * @param nColumn column position (0-based)
     * @param aValue cell value to be cached
     */
-  def setCellValue(nColumn: Double, nRow: Double, aValue: js.Any): Unit = js.native
+  def setCellValue(nColumn: Double, nRow: Double, aValue: js.Any): Unit
 }
 object XExternalSheetCache {
   

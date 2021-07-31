@@ -3,18 +3,16 @@ package typings.gridTemplateParser
 import typings.gridTemplateParser.mod.Track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<grid-template-parser.grid-template-parser.Area> */
-  @js.native
   trait PartialArea extends StObject {
     
-    var column: js.UndefOr[Track] = js.native
+    var column: js.UndefOr[Track] = js.undefined
     
-    var row: js.UndefOr[Track] = js.native
+    var row: js.UndefOr[Track] = js.undefined
   }
   object PartialArea {
     
@@ -42,16 +40,15 @@ object anon {
   }
   
   /* Inlined std.Partial<grid-template-parser.grid-template-parser.Rect> */
-  @js.native
   trait PartialRect extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object PartialRect {
     

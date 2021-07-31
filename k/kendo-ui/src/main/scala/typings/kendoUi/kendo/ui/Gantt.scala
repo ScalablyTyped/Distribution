@@ -11,11 +11,12 @@ import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gantt extends Widget {
+trait Gantt
+  extends StObject
+     with Widget {
   
   def clearSelection(): Unit = js.native
   
@@ -46,7 +47,7 @@ trait Gantt extends Widget {
   def removeTask(task: String): Unit = js.native
   def removeTask(task: GanttTask): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def select(): JQuery = js.native
   def select(row: String): Unit = js.native

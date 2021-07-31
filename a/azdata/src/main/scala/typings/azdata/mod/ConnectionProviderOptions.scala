@@ -2,13 +2,11 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionProviderOptions extends StObject {
   
-  var options: js.Array[ConnectionOption] = js.native
+  var options: js.Array[ConnectionOption]
 }
 object ConnectionProviderOptions {
   

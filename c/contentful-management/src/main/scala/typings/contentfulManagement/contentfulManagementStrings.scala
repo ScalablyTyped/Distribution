@@ -8,7 +8,6 @@ import typings.contentfulManagement.roleMod.ConditionType
 import typings.contentfulManagement.usageMod.UsageMetricEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentfulManagementStrings {
@@ -24,12 +23,16 @@ object contentfulManagementStrings {
   def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
-  sealed trait Asset extends LinkType
+  sealed trait Asset
+    extends StObject
+       with LinkType
   @scala.inline
   def Asset: Asset = "Asset".asInstanceOf[Asset]
   
   @js.native
-  sealed trait Boolean extends Field
+  sealed trait Boolean
+    extends StObject
+       with Field
   @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   
@@ -39,12 +42,16 @@ object contentfulManagementStrings {
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait Date extends Field
+  sealed trait Date
+    extends StObject
+       with Field
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
-  sealed trait Entry extends LinkType
+  sealed trait Entry
+    extends StObject
+       with LinkType
   @scala.inline
   def Entry: Entry = "Entry".asInstanceOf[Entry]
   
@@ -59,7 +66,9 @@ object contentfulManagementStrings {
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait Integer extends Field
+  sealed trait Integer
+    extends StObject
+       with Field
   @scala.inline
   def Integer: Integer = "Integer".asInstanceOf[Integer]
   
@@ -69,17 +78,23 @@ object contentfulManagementStrings {
   def Link: Link = "Link".asInstanceOf[Link]
   
   @js.native
-  sealed trait Location extends Field
+  sealed trait Location
+    extends StObject
+       with Field
   @scala.inline
   def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
-  sealed trait Number extends Field
+  sealed trait Number
+    extends StObject
+       with Field
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
   
   @js.native
-  sealed trait Object extends Field
+  sealed trait Object
+    extends StObject
+       with Field
   @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
   
@@ -99,12 +114,16 @@ object contentfulManagementStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait RichText extends Field
+  sealed trait RichText
+    extends StObject
+       with Field
   @scala.inline
   def RichText: RichText = "RichText".asInstanceOf[RichText]
   
   @js.native
-  sealed trait Symbol extends Field
+  sealed trait Symbol
+    extends StObject
+       with Field
   @scala.inline
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   
@@ -114,7 +133,9 @@ object contentfulManagementStrings {
   def Tag: Tag = "Tag".asInstanceOf[Tag]
   
   @js.native
-  sealed trait Text extends Field
+  sealed trait Text
+    extends StObject
+       with Field
   @scala.inline
   def Text: Text = "Text".asInstanceOf[Text]
   
@@ -124,12 +145,16 @@ object contentfulManagementStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait and extends ConditionType
+  sealed trait and
+    extends StObject
+       with ConditionType
   @scala.inline
   def and: and = "and".asInstanceOf[and]
   
   @js.native
-  sealed trait `app-config` extends AppLocation
+  sealed trait `app-config`
+    extends StObject
+       with AppLocation
   @scala.inline
   def `app-config`: `app-config` = "app-config".asInstanceOf[`app-config`]
   
@@ -164,17 +189,23 @@ object contentfulManagementStrings {
   def `applicationSlashx-www-form-urlencodedSemicolon charsetEqualssignutf-8`: `applicationSlashx-www-form-urlencodedSemicolon charsetEqualssignutf-8` = ("application/x-www-form-urlencoded; charset=utf-8").asInstanceOf[`applicationSlashx-www-form-urlencodedSemicolon charsetEqualssignutf-8`]
   
   @js.native
-  sealed trait archive extends ActionType
+  sealed trait archive
+    extends StObject
+       with ActionType
   @scala.inline
   def archive: archive = "archive".asInstanceOf[archive]
   
   @js.native
-  sealed trait cda extends UsageMetricEnum
+  sealed trait cda
+    extends StObject
+       with UsageMetricEnum
   @scala.inline
   def cda: cda = "cda".asInstanceOf[cda]
   
   @js.native
-  sealed trait cma extends UsageMetricEnum
+  sealed trait cma
+    extends StObject
+       with UsageMetricEnum
   @scala.inline
   def cma: cma = "cma".asInstanceOf[cma]
   
@@ -194,17 +225,23 @@ object contentfulManagementStrings {
   def content_management_manage: content_management_manage = "content_management_manage".asInstanceOf[content_management_manage]
   
   @js.native
-  sealed trait cpa extends UsageMetricEnum
+  sealed trait cpa
+    extends StObject
+       with UsageMetricEnum
   @scala.inline
   def cpa: cpa = "cpa".asInstanceOf[cpa]
   
   @js.native
-  sealed trait create extends ActionType
+  sealed trait create
+    extends StObject
+       with ActionType
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait delete_ extends ActionType
+  sealed trait delete_
+    extends StObject
+       with ActionType
   @scala.inline
   def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
@@ -214,7 +251,9 @@ object contentfulManagementStrings {
   def description: description = "description".asInstanceOf[description]
   
   @js.native
-  sealed trait dialog extends AppLocation
+  sealed trait dialog
+    extends StObject
+       with AppLocation
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
@@ -224,7 +263,9 @@ object contentfulManagementStrings {
   def displayField: displayField = "displayField".asInstanceOf[displayField]
   
   @js.native
-  sealed trait `entry-editor` extends AppLocation
+  sealed trait `entry-editor`
+    extends StObject
+       with AppLocation
   @scala.inline
   def `entry-editor`: `entry-editor` = "entry-editor".asInstanceOf[`entry-editor`]
   
@@ -234,22 +275,30 @@ object contentfulManagementStrings {
   def `entry-field`: `entry-field` = "entry-field".asInstanceOf[`entry-field`]
   
   @js.native
-  sealed trait `entry-sidebar` extends AppLocation
+  sealed trait `entry-sidebar`
+    extends StObject
+       with AppLocation
   @scala.inline
   def `entry-sidebar`: `entry-sidebar` = "entry-sidebar".asInstanceOf[`entry-sidebar`]
   
   @js.native
-  sealed trait equals extends ConditionType
+  sealed trait equals
+    extends StObject
+       with ConditionType
   @scala.inline
   def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait gql extends UsageMetricEnum
+  sealed trait gql
+    extends StObject
+       with UsageMetricEnum
   @scala.inline
   def gql: gql = "gql".asInstanceOf[gql]
   
   @js.native
-  sealed trait not extends ConditionType
+  sealed trait not
+    extends StObject
+       with ConditionType
   @scala.inline
   def not: not = "not".asInstanceOf[not]
   
@@ -259,22 +308,30 @@ object contentfulManagementStrings {
   def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait or extends ConditionType
+  sealed trait or
+    extends StObject
+       with ConditionType
   @scala.inline
   def or: or = "or".asInstanceOf[or]
   
   @js.native
-  sealed trait page extends AppLocation
+  sealed trait page
+    extends StObject
+       with AppLocation
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait publish extends ActionType
+  sealed trait publish
+    extends StObject
+       with ActionType
   @scala.inline
   def publish: publish = "publish".asInstanceOf[publish]
   
   @js.native
-  sealed trait read extends ActionType
+  sealed trait read
+    extends StObject
+       with ActionType
   @scala.inline
   def read: read = "read".asInstanceOf[read]
   
@@ -294,17 +351,23 @@ object contentfulManagementStrings {
   def sysDotid: sysDotid = "sys.id".asInstanceOf[sysDotid]
   
   @js.native
-  sealed trait unarchive extends ActionType
+  sealed trait unarchive
+    extends StObject
+       with ActionType
   @scala.inline
   def unarchive: unarchive = "unarchive".asInstanceOf[unarchive]
   
   @js.native
-  sealed trait unpublish extends ActionType
+  sealed trait unpublish
+    extends StObject
+       with ActionType
   @scala.inline
   def unpublish: unpublish = "unpublish".asInstanceOf[unpublish]
   
   @js.native
-  sealed trait update extends ActionType
+  sealed trait update
+    extends StObject
+       with ActionType
   @scala.inline
   def update: update = "update".asInstanceOf[update]
 }

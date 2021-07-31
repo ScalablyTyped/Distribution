@@ -5,28 +5,28 @@ import typings.elementResizeDetector.elementResizeDetectorStrings.scroll
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("element-resize-detector", JSImport.Namespace)
-  @js.native
-  def apply(): Erd = js.native
-  @JSImport("element-resize-detector", JSImport.Namespace)
-  @js.native
-  def apply(options: ErdmOptions): Erd = js.native
+  @scala.inline
+  def apply(): Erd = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Erd]
+  @scala.inline
+  def apply(options: ErdmOptions): Erd = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Erd]
   
+  @JSImport("element-resize-detector", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Erd extends StObject {
     
-    def listenTo(element: HTMLElement, callback: js.Function1[/* elem */ HTMLElement, Unit]): Unit = js.native
+    def listenTo(element: HTMLElement, callback: js.Function1[/* elem */ HTMLElement, Unit]): Unit
     
-    def removeAllListeners(element: HTMLElement): Unit = js.native
+    def removeAllListeners(element: HTMLElement): Unit
     
-    def removeListener(element: HTMLElement, callback: js.Function1[/* elem */ HTMLElement, Unit]): Unit = js.native
+    def removeListener(element: HTMLElement, callback: js.Function1[/* elem */ HTMLElement, Unit]): Unit
     
-    def uninstall(element: HTMLElement): Unit = js.native
+    def uninstall(element: HTMLElement): Unit
   }
   object Erd {
     
@@ -58,7 +58,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ErdmOptions extends StObject {
     
     /**
@@ -69,29 +68,29 @@ object mod {
       *
       * @default true
       */
-    var callOnAdd: js.UndefOr[Boolean] = js.native
+    var callOnAdd: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, the the system will report debug messages as default
       * for the listenTo method.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom id handler that is responsible for generating,
       * setting and retrieving id's for elements.
       * If not provided, a default id handler will be used.
       */
-    var idHandler: js.UndefOr[IdHandlerProps] = js.native
+    var idHandler: js.UndefOr[IdHandlerProps] = js.undefined
     
     /**
       * A custom reporter that handles reporting logs, warnings and errors.
       * If not provided, a default id handler will be used.
       * If set to false, then nothing will be reported.
       */
-    var reporter: js.UndefOr[ReporterProps] = js.native
+    var reporter: js.UndefOr[ReporterProps] = js.undefined
     
-    var strategy: js.UndefOr[scroll | `object`] = js.native
+    var strategy: js.UndefOr[scroll | `object`] = js.undefined
   }
   object ErdmOptions {
     
@@ -136,12 +135,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IdHandlerProps extends StObject {
     
-    def get(element: HTMLElement, readonly: Boolean): String = js.native
+    def get(element: HTMLElement, readonly: Boolean): String
     
-    def set(element: HTMLElement): String = js.native
+    def set(element: HTMLElement): String
   }
   object IdHandlerProps {
     

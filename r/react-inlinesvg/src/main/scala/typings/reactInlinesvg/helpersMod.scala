@@ -2,10 +2,13 @@ package typings.reactInlinesvg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
+  
+  @JSImport("react-inlinesvg/lib/helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object STATUS {
     
@@ -50,19 +53,15 @@ object helpersMod {
     def UNSUPPORTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-inlinesvg/lib/helpers", "canUseDOM")
-  @js.native
-  def canUseDOM(): Boolean = js.native
+  @scala.inline
+  def canUseDOM(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDOM")().asInstanceOf[Boolean]
   
-  @JSImport("react-inlinesvg/lib/helpers", "isSupportedEnvironment")
-  @js.native
-  def isSupportedEnvironment(): Boolean = js.native
+  @scala.inline
+  def isSupportedEnvironment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedEnvironment")().asInstanceOf[Boolean]
   
-  @JSImport("react-inlinesvg/lib/helpers", "randomString")
-  @js.native
-  def randomString(length: Double): String = js.native
+  @scala.inline
+  def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-inlinesvg/lib/helpers", "supportsInlineSVG")
-  @js.native
-  def supportsInlineSVG(): Boolean = js.native
+  @scala.inline
+  def supportsInlineSVG(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsInlineSVG")().asInstanceOf[Boolean]
 }

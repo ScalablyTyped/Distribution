@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLikedAssetsResponse extends StObject {
   
   /** A list of assets that match the criteria specified in the request. */
-  var assets: js.UndefOr[js.Array[Asset]] = js.native
+  var assets: js.UndefOr[js.Array[Asset]] = js.undefined
   
   /**
     * The continuation token for retrieving the next page. If empty, indicates that there are no more pages. To get the next page, submit the same request specifying this value as the
     * page_token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The total number of assets in the list, without pagination. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListLikedAssetsResponse {
   

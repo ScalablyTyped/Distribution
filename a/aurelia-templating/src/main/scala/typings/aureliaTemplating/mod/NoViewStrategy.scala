@@ -2,7 +2,6 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "NoViewStrategy")
@@ -14,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class NoViewStrategy () extends StObject {
   def this(dependencies: js.Array[String | js.Function | js.Object]) = this()
-  def this(dependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String) = this()
   def this(dependencies: js.Array[String | js.Function | js.Object], dependencyBaseUrl: String) = this()
+  def this(dependencies: Unit, dependencyBaseUrl: String) = this()
   
   /**
     * Loads a view factory.
@@ -29,7 +28,7 @@ class NoViewStrategy () extends StObject {
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(

@@ -3,24 +3,24 @@ package typings.wxJsSdkDt.wx
 import typings.wxJsSdkDt.anon.LocalId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownLoadImageConfig extends WxBaseRequestConfig {
+trait DownLoadImageConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
-  var isShowProgressTips: js.UndefOr[Double] = js.native
+  var isShowProgressTips: js.UndefOr[Double] = js.undefined
   
   /**
     * serverId: 需要下载的图片的服务器端ID，由 uploadImage 接口获得
     */
-  var serverId: String = js.native
+  var serverId: String
   
   /**
     * var localId = res.localId;  返回图片下载后的本地 ID
     */
   @JSName("success")
-  var success_DownLoadImageConfig: js.UndefOr[js.Function1[/* res */ LocalId, Unit]] = js.native
+  var success_DownLoadImageConfig: js.UndefOr[js.Function1[/* res */ LocalId, Unit]] = js.undefined
 }
 object DownLoadImageConfig {
   

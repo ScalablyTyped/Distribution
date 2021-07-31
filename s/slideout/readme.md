@@ -11,8 +11,8 @@ A touch slideout navigation menu for your mobile web apps.
 | Full name          | slideout |
 | Keywords           | slideout, offcanvas, menu, touch |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 243307 |
+| # dependents       | 15 |
+| # downloads        | 340002 |
 | # stars            | 5 |
 
 ## Links

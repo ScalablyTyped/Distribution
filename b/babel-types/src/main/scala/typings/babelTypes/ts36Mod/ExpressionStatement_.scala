@@ -3,32 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ExpressionStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionStatement_
-  extends Node
+  extends StObject
+     with Node
      with ExpressionWrapper
      with Statement {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_ExpressionStatement_ : ExpressionStatement = js.native
+  var type_ExpressionStatement_ : ExpressionStatement
 }
 object ExpressionStatement_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    expression: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ExpressionStatement
-  ): ExpressionStatement_ = {
+  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ExpressionStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[ExpressionStatement_]
   }
   

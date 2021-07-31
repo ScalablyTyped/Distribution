@@ -10,9 +10,9 @@ Interface for parsing, inspecting, transforming, and serializing content through
 | ------------------ | :-------------: |
 | Full name          | unified |
 | Keywords           | unified, process, parse, transform, compile, stringify, serialize, ast, cst, syntax, tree, content, rehype, retext, remark |
-| # releases         | 15 |
-| # dependents       | 511 |
-| # downloads        | 163919742 |
+| # releases         | 13 |
+| # dependents       | 626 |
+| # downloads        | 227998393 |
 | # stars            | 7 |
 
 ## Links

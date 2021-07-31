@@ -2,16 +2,14 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetText extends StObject {
   
-  def getText(): Unit = js.native
+  def getText(): Unit
   
   // Orion Editor
-  def setText(): Unit = js.native
+  def setText(): Unit
 }
 object GetText {
   

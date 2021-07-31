@@ -3,7 +3,6 @@ package typings.playmusic.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,13 +37,6 @@ trait PlayMusic extends StObject {
     songIds: String,
     playlistId: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
-    entryBeforeClientId: js.UndefOr[scala.Nothing],
-    entryAfterClientId: String
-  ): Unit = js.native
-  def addTrackToPlayList(
-    songIds: String,
-    playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
@@ -52,6 +44,13 @@ trait PlayMusic extends StObject {
     playlistId: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String,
+    entryAfterClientId: String
+  ): Unit = js.native
+  def addTrackToPlayList(
+    songIds: String,
+    playlistId: String,
+    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    entryBeforeClientId: Unit,
     entryAfterClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
@@ -63,13 +62,6 @@ trait PlayMusic extends StObject {
     songIds: js.Array[String],
     playlistId: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
-    entryBeforeClientId: js.UndefOr[scala.Nothing],
-    entryAfterClientId: String
-  ): Unit = js.native
-  def addTrackToPlayList(
-    songIds: js.Array[String],
-    playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
@@ -77,6 +69,13 @@ trait PlayMusic extends StObject {
     playlistId: String,
     callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String,
+    entryAfterClientId: String
+  ): Unit = js.native
+  def addTrackToPlayList(
+    songIds: js.Array[String],
+    playlistId: String,
+    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    entryBeforeClientId: Unit,
     entryAfterClientId: String
   ): Unit = js.native
   

@@ -12,7 +12,7 @@ Express middleware to parse user-agent header
 | Keywords           | express, middleware, user-agent |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 603 |
+| # downloads        | 612 |
 | # stars            | 0 |
 
 ## Links

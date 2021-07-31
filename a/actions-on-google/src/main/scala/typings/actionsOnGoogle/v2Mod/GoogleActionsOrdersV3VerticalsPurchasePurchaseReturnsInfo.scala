@@ -2,26 +2,24 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo extends StObject {
   
   /**
     * Return is allowed within that many days.
     */
-  var daysToReturn: js.UndefOr[Double] = js.native
+  var daysToReturn: js.UndefOr[Double] = js.undefined
   
   /**
     * If true, return is allowed.
     */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Link to the return policy.
     */
-  var policyUrl: js.UndefOr[String] = js.native
+  var policyUrl: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo {
   

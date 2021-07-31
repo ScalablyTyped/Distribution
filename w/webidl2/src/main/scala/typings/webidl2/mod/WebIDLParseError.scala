@@ -4,12 +4,13 @@ import typings.std.Error
 import typings.webidl2.anon.BareMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webidl2", "WebIDLParseError")
 @js.native
-class WebIDLParseError protected () extends Error {
+class WebIDLParseError protected ()
+  extends StObject
+     with Error {
   def this(options: BareMessage) = this()
   
   var bareMessage: String = js.native
@@ -22,6 +23,11 @@ class WebIDLParseError protected () extends Error {
   /** the line at which the error occurred. */
   var line: Double = js.native
   
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
   @JSName("name")
   var name_WebIDLParseError: typings.webidl2.webidl2Strings.WebIDLParseError = js.native
   

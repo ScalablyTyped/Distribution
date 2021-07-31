@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepeatStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.RepeatStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.RepeatStatement]
+     with _Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var condition: Expression = js.native
+  var condition: Expression
 }
 object RepeatStatement {
   
   @scala.inline
-  def apply(
-    body: js.Array[Statement],
-    condition: Expression,
-    `type`: typings.luaparse.luaparseStrings.RepeatStatement
-  ): RepeatStatement = {
+  def apply(body: js.Array[Statement], condition: Expression): RepeatStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RepeatStatement")
     __obj.asInstanceOf[RepeatStatement]
   }
   

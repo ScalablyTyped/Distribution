@@ -1,14 +1,11 @@
 package typings.winstonSyslog
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.node.dgramMod.Socket
 import typings.winstonSyslog.winstonSyslogBooleans.`true`
 import typings.winstonTransport.mod.TransportStreamOptions
 import typings.winstonTransport.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,42 +20,51 @@ object mod {
   @js.native
   val Syslog: SyslogTransportInstance = js.native
   
-  @js.native
-  trait SyslogTransportInstance
-    extends ^
-       with Instantiable0[SyslogTransportInstance]
-       with Instantiable1[/* options */ SyslogTransportOptions, SyslogTransportInstance] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
+  trait SyslogTransportInstance extends ^ {
     
     @JSName("connect")
-    def connect_true(callback: js.Function1[/* err */ `true` | Null, _]): Unit = js.native
+    def connect_true(callback: js.Function1[/* err */ `true` | Null, js.Any]): Unit = js.native
     
     var producer: js.Any = js.native
     
     var socket: Socket | typings.node.netMod.Socket = js.native
   }
   
-  @js.native
-  trait SyslogTransportOptions extends TransportStreamOptions {
+  trait SyslogTransportOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var app_name: js.UndefOr[String] = js.native
+    var app_name: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var facility: js.UndefOr[String] = js.native
+    var facility: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var localhost: js.UndefOr[String] = js.native
+    var localhost: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pid: js.UndefOr[Double] = js.native
+    var pid: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SyslogTransportOptions {
     

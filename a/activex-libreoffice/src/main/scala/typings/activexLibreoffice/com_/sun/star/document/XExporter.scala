@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,15 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ImportFilter
   * @see XImporter
   */
-@js.native
-trait XExporter extends XInterface {
+trait XExporter
+  extends StObject
+     with XInterface {
   
   /**
     * sets the source document for the exporter
     * @param Document the source document
     * @throws com::sun::star::lang::IllegalArgumentException if **Document** does not support any service which is supported by this exporter
     */
-  def setSourceDocument(Document: XComponent): Unit = js.native
+  def setSourceDocument(Document: XComponent): Unit
 }
 object XExporter {
   

@@ -2,17 +2,15 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofCalendar extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Calendar = js.native
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Calendar
   
   /* static member */
-  var fn: typings.kendoUi.kendo.ui.Calendar = js.native
+  var fn: typings.kendoUi.kendo.ui.Calendar
 }
 object TypeofCalendar {
   

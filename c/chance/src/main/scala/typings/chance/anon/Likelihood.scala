@@ -2,13 +2,11 @@ package typings.chance.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Likelihood extends StObject {
   
-  var likelihood: Double = js.native
+  var likelihood: Double
 }
 object Likelihood {
   

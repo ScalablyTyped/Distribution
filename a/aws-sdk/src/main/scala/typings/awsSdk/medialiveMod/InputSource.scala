@@ -2,27 +2,25 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSource extends StObject {
   
   /**
     * The key used to extract the password from EC2 Parameter store.
     */
-  var PasswordParam: js.UndefOr[string] = js.native
+  var PasswordParam: js.UndefOr[string] = js.undefined
   
   /**
     * This represents the customer's source URL where stream is
   pulled from.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
   
   /**
     * The username for the input source.
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object InputSource {
   

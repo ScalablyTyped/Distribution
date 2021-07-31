@@ -3,7 +3,6 @@ package typings.openfin
 import typings.openfin.wireMod.Wire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elipcMod {
@@ -32,7 +31,7 @@ object elipcMod {
     
     def onmessage(data: js.Any): Unit = js.native
     
-    def send(data: js.Any, flags: js.Any): js.Promise[_] = js.native
+    def send(data: js.Any, flags: js.Any): js.Promise[js.Any] = js.native
     
     var wire: js.Any = js.native
   }

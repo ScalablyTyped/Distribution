@@ -3,17 +3,15 @@ package typings.eccrypto
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EphemPrivateKey extends StObject {
     
-    var ephemPrivateKey: js.UndefOr[Buffer] = js.native
+    var ephemPrivateKey: js.UndefOr[Buffer] = js.undefined
     
-    var iv: js.UndefOr[Buffer] = js.native
+    var iv: js.UndefOr[Buffer] = js.undefined
   }
   object EphemPrivateKey {
     

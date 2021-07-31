@@ -2,19 +2,17 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppVersion extends StObject {
   
-  var appVersion: String = js.native
+  var appVersion: String
   
-  var batteryLevel: Double = js.native
+  var batteryLevel: Double
   
-  var deviceDescription: String = js.native
+  var deviceDescription: String
   
-  var platform: String = js.native
+  var platform: String
 }
 object AppVersion {
   

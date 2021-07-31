@@ -4,7 +4,6 @@ import typings.amapJsApi.AMap.Map
 import typings.amapJsApiHeatmap.AMap.Heatmap.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -14,7 +13,8 @@ object global {
     @JSGlobal("AMap.Heatmap")
     @js.native
     class Heatmap protected ()
-      extends typings.amapJsApiHeatmap.AMap.Heatmap {
+      extends StObject
+         with typings.amapJsApiHeatmap.AMap.Heatmap {
       /**
         * 热力图
         * @param map 地图对象

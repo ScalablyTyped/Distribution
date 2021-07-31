@@ -2,19 +2,17 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavImagesValues extends StObject {
   
-  var DOWN: String = js.native
+  var DOWN: String
   
-  var GROUP: String = js.native
+  var GROUP: String
   
-  var HOVER: String = js.native
+  var HOVER: String
   
-  var REST: String = js.native
+  var REST: String
 }
 object NavImagesValues {
   

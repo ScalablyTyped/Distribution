@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumnProperties extends StObject {
   
   /** The width of the column. Set when the column's `width_type` is FIXED_WIDTH. */
-  var width: js.UndefOr[Dimension] = js.native
+  var width: js.UndefOr[Dimension] = js.undefined
   
   /** The width type of the column. */
-  var widthType: js.UndefOr[String] = js.native
+  var widthType: js.UndefOr[String] = js.undefined
 }
 object TableColumnProperties {
   

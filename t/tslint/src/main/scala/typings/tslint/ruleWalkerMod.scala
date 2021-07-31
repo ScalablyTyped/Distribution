@@ -11,7 +11,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleWalkerMod {
@@ -52,6 +51,9 @@ object ruleWalkerMod {
     
     val failures: js.Any = js.native
     
+    /* CompleteClass */
+    override def getFailures(): js.Array[RuleFailure] = js.native
+    
     def getLimit(): Double = js.native
     
     def getLineAndCharacterOfPosition(position: Double): LineAndCharacter = js.native
@@ -59,6 +61,9 @@ object ruleWalkerMod {
     def getOptions(): js.Any = js.native
     
     def getRuleName(): String = js.native
+    
+    /* CompleteClass */
+    override def getSourceFile(): SourceFile = js.native
     
     def hasOption(option: String): Boolean = js.native
     
@@ -69,5 +74,8 @@ object ruleWalkerMod {
     val ruleName: js.Any = js.native
     
     val sourceFile: js.Any = js.native
+    
+    /* CompleteClass */
+    override def walk(sourceFile: SourceFile): Unit = js.native
   }
 }

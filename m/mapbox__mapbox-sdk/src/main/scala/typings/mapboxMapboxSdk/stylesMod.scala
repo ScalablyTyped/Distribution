@@ -12,68 +12,68 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/styles", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/styles", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): StylesService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/styles", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): StylesService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
+  
   trait Style extends StObject {
     
     /**
       * Date and time the style was created.
       */
-    var created: String = js.native
+    var created: String
     
     /**
       * Whether the style is a draft or has been published.
       */
-    var draft: Boolean = js.native
+    var draft: Boolean
     
-    var glyphs: String = js.native
+    var glyphs: String
     
     /**
       * The ID of the style.
       */
-    var id: String = js.native
+    var id: String
     
-    var layers: js.Array[String] = js.native
+    var layers: js.Array[String]
     
     /**
       * Information about the style that is used in Mapbox Studio.
       */
-    var metadata: String = js.native
+    var metadata: String
     
     /**
       * Date and time the style was last modified.
       */
-    var modified: String = js.native
+    var modified: String
     
-    var name: String = js.native
+    var name: String
     
     /**
       * The username of the style owner.
       */
-    var owner: String = js.native
+    var owner: String
     
-    var sources: js.Any = js.native
+    var sources: js.Any
     
-    var sprite: String = js.native
+    var sprite: String
     
-    var version: Double = js.native
+    var version: Double
     
     /**
       * Access control for the style, either  public or  private . Private styles require an access token belonging to the owner,
       * while public styles may be requested with an access token belonging to any user.
       */
-    var visibility: String = js.native
+    var visibility: String
   }
   object Style {
     
@@ -144,7 +144,6 @@ object stylesMod {
     }
   }
   
-  @js.native
   trait StylesService extends StObject {
     
     /**
@@ -152,14 +151,14 @@ object stylesMod {
       * @param style
       * @param ownerId
       */
-    def createStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest = js.native
+    def createStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest
     
     /**
       * Delete a style.
       * @param style
       * @param ownerId
       */
-    def deleteStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest = js.native
+    def deleteStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest
     
     /**
       * Remove an icon from a style.
@@ -168,7 +167,7 @@ object stylesMod {
       * @param ownerId
       */
     // implicit any
-    def deleteStyleIcon(config: IconId): Unit = js.native
+    def deleteStyleIcon(config: IconId): Unit
     
     /**
       * Get embeddable HTML displaying a map.
@@ -178,7 +177,7 @@ object stylesMod {
       * @param title
       * @param ownerId
       */
-    def getEmbeddableHtml(config: Config): MapiRequest = js.native
+    def getEmbeddableHtml(config: Config): MapiRequest
     
     /**
       * Get a font glyph range.
@@ -187,14 +186,14 @@ object stylesMod {
       * @param end
       * @param ownerId
       */
-    def getFontGlyphRange(config: End): MapiRequest = js.native
+    def getFontGlyphRange(config: End): MapiRequest
     
     /**
       * Get a style.
       * @param styleId
       * @param ownerId
       */
-    def getStyle(config: OwnerId): MapiRequest = js.native
+    def getStyle(config: OwnerId): MapiRequest
     
     /**
       * Get a style sprite's image or JSON document.
@@ -203,14 +202,14 @@ object stylesMod {
       * @param highRes
       * @param ownerId
       */
-    def getStyleSprite(config: Format): MapiRequest = js.native
+    def getStyleSprite(config: Format): MapiRequest
     
     /**
       * List styles in your account.
       * @param start
       * @param ownerId
       */
-    def listStyles(config: Start): MapiRequest = js.native
+    def listStyles(config: Start): MapiRequest
     
     /**
       * Add an icon to a style, or update an existing one.
@@ -219,7 +218,7 @@ object stylesMod {
       * @param file
       * @param ownerId
       */
-    def putStyleIcon(config: File): MapiRequest = js.native
+    def putStyleIcon(config: File): MapiRequest
     
     /**
       * Update a style.
@@ -229,7 +228,7 @@ object stylesMod {
       * @param ownerId
       */
     // implicit any
-    def updateStyle(config: LastKnownModification): Unit = js.native
+    def updateStyle(config: LastKnownModification): Unit
   }
   object StylesService {
     

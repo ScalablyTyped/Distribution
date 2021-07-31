@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the user's calendars. Use the wl.contacts_calendars scope to read
   * Event objects from the user's friend's calendars.
   */
-@js.native
 trait IEvent extends StObject {
   
   /**
@@ -25,23 +23,23 @@ trait IEvent extends StObject {
     * - out_of_office
     * @default "free"
     */
-  var availability: String = js.native
+  var availability: String
   
   /**
     * The ID of the calendar that contains the event.
     */
-  var calendar_id: String = js.native
+  var calendar_id: String
   
   /**
     * The time, in ISO 8601 format, at which the event was created.
     */
-  var created_time: String = js.native
+  var created_time: String
   
   /**
     * A description of the event, with a maximum length of 32,768
     * characters. This structure is required.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The end time, in ISO 8601 format, of the event. If no end time is
@@ -49,68 +47,68 @@ trait IEvent extends StObject {
     * structure is optional when creating an event. When the event is being
     * read, the time will be the user's local time, in ISO 8601 format.
     */
-  var end_time: String = js.native
+  var end_time: String
   
   /**
     * The object that contains the name and ID of the organizer.
     */
-  var from: IUserInfo = js.native
+  var from: IUserInfo
   
   /**
     * The ID of the event.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value that specifies whether the event is an all-day event. If the
     * event is an all-day event, this value is true; otherwise, it is
     * false. If this structure is missing, the default value is false.
     */
-  var is_all_day_event: Boolean = js.native
+  var is_all_day_event: Boolean
   
   /**
     * A value that specifies whether the event is recurring. If the event
     * is recurring, this value is true; otherwise, it is false.
     */
-  var is_recurrent: Boolean = js.native
+  var is_recurrent: Boolean
   
   /**
     * The name of the location at which the event will take place. The
     * maximum length is 1,000 characters.
     */
-  var location: String = js.native
+  var location: String
   
   /**
     * The name of the event, with a maximum length of 255 characters. This
     * structure is required.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The text description of the recurrence pattern, for example, "Occurs
     * every week on Tuesday". The value is Null if this is not a recurrent
     * event.
     */
-  var recurrence: String = js.native
+  var recurrence: String
   
   /**
     * The time, in minutes, before the event for the reminder alarm.
     */
-  var reminder_time: Double = js.native
+  var reminder_time: Double
   
   /**
     * The start time, in ISO 8601 format, of the event. When the event is
     * being read, the time will be the user's local time, in ISO 8601
     * format.
     */
-  var start_time: String = js.native
+  var start_time: String
   
   /**
     * The time, in ISO 8601 format, at which the event was updated. This
     * structure is visible only in the Event object that is returned if the
     * event was successfully created.
     */
-  var updated_time: String = js.native
+  var updated_time: String
   
   /**
     * A value that specifies whether the event is publicly visible. Valid
@@ -119,7 +117,7 @@ trait IEvent extends StObject {
     * - private  the event is visible only to the event owner.
     * @default "public"
     */
-  var visibility: String = js.native
+  var visibility: String
 }
 object IEvent {
   

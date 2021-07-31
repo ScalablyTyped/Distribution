@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.device.filesystem.ISencha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileSystem extends ISencha
+trait IFileSystem
+  extends StObject
+     with ISencha
 object IFileSystem {
   
   @scala.inline

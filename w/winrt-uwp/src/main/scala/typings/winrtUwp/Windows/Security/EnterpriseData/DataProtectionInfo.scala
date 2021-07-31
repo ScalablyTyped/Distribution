@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about an enterprise protected buffer or stream. */
-@js.native
 trait DataProtectionInfo extends StObject {
   
   /** The enterprise identity of the enterprise protected buffer or stream. */
-  var identity: String = js.native
+  var identity: String
   
   /** The protection status of the enterprise protected buffer or stream. */
-  var status: DataProtectionStatus = js.native
+  var status: DataProtectionStatus
 }
 object DataProtectionInfo {
   

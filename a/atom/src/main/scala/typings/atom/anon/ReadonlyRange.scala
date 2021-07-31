@@ -6,7 +6,6 @@ import typings.atom.mod.RangeCompatible
 import typings.atom.mod.RangeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<atom.atom.Range> */

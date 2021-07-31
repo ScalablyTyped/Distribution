@@ -2,18 +2,16 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFamilyProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var fontFamily: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FontFamilyProps {
   
@@ -24,12 +22,12 @@ object FontFamilyProps {
   }
   
   @scala.inline
-  implicit class FontFamilyPropsMutableBuilder[Self <: FontFamilyProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontFamilyProps[ThemeType]) extends AnyVal {
+  implicit class FontFamilyPropsMutableBuilder[Self <: FontFamilyProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FontFamilyProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFontFamily(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
@@ -41,6 +39,8 @@ object FontFamilyProps {
     def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setFontFamilyVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
+    def setFontFamilyVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Null)*
+    ): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
   }
 }

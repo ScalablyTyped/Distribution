@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait PointOptions extends StObject
 object PointOptions extends StObject {
   
   @js.native
-  sealed trait allowOffClient extends PointOptions
+  sealed trait allowOffClient
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait clientCoordinates extends PointOptions
+  sealed trait clientCoordinates
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait includeInset extends PointOptions
+  sealed trait includeInset
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait noHorizontalScroll extends PointOptions
+  sealed trait noHorizontalScroll
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait noVerticalScroll extends PointOptions
+  sealed trait noVerticalScroll
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait none extends PointOptions
+  sealed trait none
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait start extends PointOptions
+  sealed trait start
+    extends StObject
+       with PointOptions
   
   @js.native
-  sealed trait transform extends PointOptions
+  sealed trait transform
+    extends StObject
+       with PointOptions
 }

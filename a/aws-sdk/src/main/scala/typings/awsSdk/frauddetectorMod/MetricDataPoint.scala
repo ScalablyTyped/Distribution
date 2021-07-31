@@ -2,31 +2,29 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricDataPoint extends StObject {
   
   /**
     * The false positive rate. This is the percentage of total legitimate events that are incorrectly predicted as fraud.
     */
-  var fpr: js.UndefOr[float] = js.native
+  var fpr: js.UndefOr[float] = js.undefined
   
   /**
     * The percentage of fraud events correctly predicted as fraudulent as compared to all events predicted as fraudulent.
     */
-  var precision: js.UndefOr[float] = js.native
+  var precision: js.UndefOr[float] = js.undefined
   
   /**
     * The model threshold that specifies an acceptable fraud capture rate. For example, a threshold of 500 means any model score 500 or above is labeled as fraud.
     */
-  var threshold: js.UndefOr[float] = js.native
+  var threshold: js.UndefOr[float] = js.undefined
   
   /**
     * The true positive rate. This is the percentage of total fraud the model detects. Also known as capture rate.
     */
-  var tpr: js.UndefOr[float] = js.native
+  var tpr: js.UndefOr[float] = js.undefined
 }
 object MetricDataPoint {
   

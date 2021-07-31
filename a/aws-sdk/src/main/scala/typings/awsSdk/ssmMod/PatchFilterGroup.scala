@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchFilterGroup extends StObject {
   
   /**
     * The set of patch filters that make up the group.
     */
-  var PatchFilters: PatchFilterList = js.native
+  var PatchFilters: PatchFilterList
 }
 object PatchFilterGroup {
   

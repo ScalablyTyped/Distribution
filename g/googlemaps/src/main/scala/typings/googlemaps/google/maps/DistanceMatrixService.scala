@@ -2,14 +2,12 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service for computing distances between multiple origins and destinations.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixService Maps JavaScript API}
   */
-@js.native
 trait DistanceMatrixService extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait DistanceMatrixService extends StObject {
   def getDistanceMatrix(
     request: DistanceMatrixRequest,
     callback: js.Function2[/* response */ DistanceMatrixResponse, /* status */ DistanceMatrixStatus, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object DistanceMatrixService {
   

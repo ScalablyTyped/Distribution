@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a newly created enterprise protected file. */
-@js.native
 trait ProtectedFileCreateResult extends StObject {
   
   /** The newly created enterprise protected file. */
-  var file: StorageFile = js.native
+  var file: StorageFile
   
   /** Information about the enterprise protected file. */
-  var protectionInfo: FileProtectionInfo = js.native
+  var protectionInfo: FileProtectionInfo
   
   /** The stream random access to the newly created enterprise protected file. */
-  var stream: IRandomAccessStream = js.native
+  var stream: IRandomAccessStream
 }
 object ProtectedFileCreateResult {
   

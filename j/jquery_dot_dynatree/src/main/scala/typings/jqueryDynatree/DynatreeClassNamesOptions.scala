@@ -2,59 +2,57 @@ package typings.jqueryDynatree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynatreeClassNamesOptions extends StObject {
   
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
-  var checkbox: js.UndefOr[String] = js.native
+  var checkbox: js.UndefOr[String] = js.undefined
   
-  var combinedExpanderPrefix: js.UndefOr[String] = js.native
+  var combinedExpanderPrefix: js.UndefOr[String] = js.undefined
   
-  var combinedIconPrefix: js.UndefOr[String] = js.native
+  var combinedIconPrefix: js.UndefOr[String] = js.undefined
   
-  var connector: js.UndefOr[String] = js.native
+  var connector: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.undefined
   
-  var expanded: js.UndefOr[String] = js.native
+  var expanded: js.UndefOr[String] = js.undefined
   
-  var expander: js.UndefOr[String] = js.native
+  var expander: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
-  var folder: js.UndefOr[String] = js.native
+  var folder: js.UndefOr[String] = js.undefined
   
-  var hasChildren: js.UndefOr[String] = js.native
+  var hasChildren: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[String] = js.undefined
   
-  var lastsib: js.UndefOr[String] = js.native
+  var lastsib: js.UndefOr[String] = js.undefined
   
-  var `lazy`: js.UndefOr[String] = js.native
+  var `lazy`: js.UndefOr[String] = js.undefined
   
-  var noConnector: js.UndefOr[String] = js.native
+  var noConnector: js.UndefOr[String] = js.undefined
   
-  var node: js.UndefOr[String] = js.native
+  var node: js.UndefOr[String] = js.undefined
   
-  var nodeError: js.UndefOr[String] = js.native
+  var nodeError: js.UndefOr[String] = js.undefined
   
-  var nodeIcon: js.UndefOr[String] = js.native
+  var nodeIcon: js.UndefOr[String] = js.undefined
   
-  var nodeWait: js.UndefOr[String] = js.native
+  var nodeWait: js.UndefOr[String] = js.undefined
   
-  var partsel: js.UndefOr[String] = js.native
+  var partsel: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var vline: js.UndefOr[String] = js.native
+  var vline: js.UndefOr[String] = js.undefined
 }
 object DynatreeClassNamesOptions {
   

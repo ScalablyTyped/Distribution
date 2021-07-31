@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the PopupControl extension.
   */
 @js.native
-trait MVCxClientPopupControl extends ASPxClientPopupControl {
+trait MVCxClientPopupControl
+  extends StObject
+     with ASPxClientPopupControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

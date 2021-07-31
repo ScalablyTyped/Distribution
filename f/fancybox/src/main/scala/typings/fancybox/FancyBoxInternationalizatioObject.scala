@@ -2,33 +2,31 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxInternationalizatioObject extends StObject {
   
-  var CLOSE: js.UndefOr[String] = js.native
+  var CLOSE: js.UndefOr[String] = js.undefined
   
-  var DOWNLOAD: js.UndefOr[String] = js.native
+  var DOWNLOAD: js.UndefOr[String] = js.undefined
   
-  var ERROR: js.UndefOr[String] = js.native
+  var ERROR: js.UndefOr[String] = js.undefined
   
-  var FULL_SCREEN: js.UndefOr[String] = js.native
+  var FULL_SCREEN: js.UndefOr[String] = js.undefined
   
-  var NEXT: js.UndefOr[String] = js.native
+  var NEXT: js.UndefOr[String] = js.undefined
   
-  var PLAY_START: js.UndefOr[String] = js.native
+  var PLAY_START: js.UndefOr[String] = js.undefined
   
-  var PLAY_STOP: js.UndefOr[String] = js.native
+  var PLAY_STOP: js.UndefOr[String] = js.undefined
   
-  var PREV: js.UndefOr[String] = js.native
+  var PREV: js.UndefOr[String] = js.undefined
   
-  var SHARE: js.UndefOr[String] = js.native
+  var SHARE: js.UndefOr[String] = js.undefined
   
-  var THUMBS: js.UndefOr[String] = js.native
+  var THUMBS: js.UndefOr[String] = js.undefined
   
-  var ZOOM: js.UndefOr[String] = js.native
+  var ZOOM: js.UndefOr[String] = js.undefined
 }
 object FancyBoxInternationalizatioObject {
   

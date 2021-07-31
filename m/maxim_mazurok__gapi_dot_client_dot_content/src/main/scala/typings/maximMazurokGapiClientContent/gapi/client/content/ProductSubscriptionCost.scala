@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductSubscriptionCost extends StObject {
   
   /** The amount the buyer has to pay per subscription period. */
-  var amount: js.UndefOr[Price] = js.native
+  var amount: js.UndefOr[Price] = js.undefined
   
   /** The type of subscription period. */
-  var period: js.UndefOr[String] = js.native
+  var period: js.UndefOr[String] = js.undefined
   
   /** The number of subscription periods the buyer has to pay. */
-  var periodLength: js.UndefOr[String] = js.native
+  var periodLength: js.UndefOr[String] = js.undefined
 }
 object ProductSubscriptionCost {
   

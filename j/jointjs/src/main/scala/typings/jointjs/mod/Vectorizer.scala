@@ -25,7 +25,6 @@ import typings.std.SVGTransform
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "Vectorizer")
@@ -35,18 +34,18 @@ class Vectorizer protected () extends StObject {
   def this(el: SVGElement) = this()
   def this(el: String, attrs: StringDictionary[js.Any]) = this()
   def this(el: SVGElement, attrs: StringDictionary[js.Any]) = this()
-  def this(el: String, attrs: js.UndefOr[scala.Nothing], children: js.Array[SVGElement | Vectorizer]) = this()
-  def this(el: String, attrs: js.UndefOr[scala.Nothing], children: Vectorizer) = this()
-  def this(el: String, attrs: js.UndefOr[scala.Nothing], children: SVGElement) = this()
   def this(el: String, attrs: StringDictionary[js.Any], children: js.Array[SVGElement | Vectorizer]) = this()
   def this(el: String, attrs: StringDictionary[js.Any], children: Vectorizer) = this()
   def this(el: String, attrs: StringDictionary[js.Any], children: SVGElement) = this()
-  def this(el: SVGElement, attrs: js.UndefOr[scala.Nothing], children: js.Array[SVGElement | Vectorizer]) = this()
-  def this(el: SVGElement, attrs: js.UndefOr[scala.Nothing], children: Vectorizer) = this()
-  def this(el: SVGElement, attrs: js.UndefOr[scala.Nothing], children: SVGElement) = this()
+  def this(el: String, attrs: Unit, children: js.Array[SVGElement | Vectorizer]) = this()
+  def this(el: String, attrs: Unit, children: Vectorizer) = this()
+  def this(el: String, attrs: Unit, children: SVGElement) = this()
   def this(el: SVGElement, attrs: StringDictionary[js.Any], children: js.Array[SVGElement | Vectorizer]) = this()
   def this(el: SVGElement, attrs: StringDictionary[js.Any], children: Vectorizer) = this()
   def this(el: SVGElement, attrs: StringDictionary[js.Any], children: SVGElement) = this()
+  def this(el: SVGElement, attrs: Unit, children: js.Array[SVGElement | Vectorizer]) = this()
+  def this(el: SVGElement, attrs: Unit, children: Vectorizer) = this()
+  def this(el: SVGElement, attrs: Unit, children: SVGElement) = this()
   
   def addClass(className: String): Vectorizer = js.native
   
@@ -66,11 +65,11 @@ class Vectorizer protected () extends StObject {
   def attr(name: String, value: js.Any): this.type = js.native
   
   def bbox(): Rect = js.native
-  def bbox(withoutTransformations: js.UndefOr[scala.Nothing], target: Vectorizer): Rect = js.native
-  def bbox(withoutTransformations: js.UndefOr[scala.Nothing], target: SVGElement): Rect = js.native
   def bbox(withoutTransformations: Boolean): Rect = js.native
   def bbox(withoutTransformations: Boolean, target: Vectorizer): Rect = js.native
   def bbox(withoutTransformations: Boolean, target: SVGElement): Rect = js.native
+  def bbox(withoutTransformations: Unit, target: Vectorizer): Rect = js.native
+  def bbox(withoutTransformations: Unit, target: SVGElement): Rect = js.native
   
   def before(els: js.Array[SVGElement | Vectorizer]): this.type = js.native
   def before(els: Vectorizer): this.type = js.native
@@ -127,13 +126,13 @@ class Vectorizer protected () extends StObject {
   
   def rotate(): Rotation = js.native
   def rotate(angle: Double): this.type = js.native
-  def rotate(angle: Double, cx: js.UndefOr[scala.Nothing], cy: js.UndefOr[scala.Nothing], opt: RotateOptions): this.type = js.native
-  def rotate(angle: Double, cx: js.UndefOr[scala.Nothing], cy: Double): this.type = js.native
-  def rotate(angle: Double, cx: js.UndefOr[scala.Nothing], cy: Double, opt: RotateOptions): this.type = js.native
   def rotate(angle: Double, cx: Double): this.type = js.native
-  def rotate(angle: Double, cx: Double, cy: js.UndefOr[scala.Nothing], opt: RotateOptions): this.type = js.native
   def rotate(angle: Double, cx: Double, cy: Double): this.type = js.native
   def rotate(angle: Double, cx: Double, cy: Double, opt: RotateOptions): this.type = js.native
+  def rotate(angle: Double, cx: Double, cy: Unit, opt: RotateOptions): this.type = js.native
+  def rotate(angle: Double, cx: Unit, cy: Double): this.type = js.native
+  def rotate(angle: Double, cx: Unit, cy: Double, opt: RotateOptions): this.type = js.native
+  def rotate(angle: Double, cx: Unit, cy: Unit, opt: RotateOptions): this.type = js.native
   
   def sample(): js.Array[Sample] = js.native
   def sample(interval: Double): js.Array[Sample] = js.native
@@ -167,9 +166,9 @@ class Vectorizer protected () extends StObject {
   
   def translate(): Translation = js.native
   def translate(tx: Double): this.type = js.native
-  def translate(tx: Double, ty: js.UndefOr[scala.Nothing], opt: TransformOptions): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
   def translate(tx: Double, ty: Double, opt: TransformOptions): this.type = js.native
+  def translate(tx: Double, ty: Unit, opt: TransformOptions): this.type = js.native
   
   def translateAndAutoOrient(position: PlainPoint, reference: PlainPoint): this.type = js.native
   def translateAndAutoOrient(position: PlainPoint, reference: PlainPoint, target: Vectorizer): this.type = js.native
@@ -180,286 +179,213 @@ class Vectorizer protected () extends StObject {
 /* static members */
 object Vectorizer {
   
-  @JSImport("jointjs", "Vectorizer.annotateString")
+  @JSImport("jointjs", "Vectorizer")
   @js.native
-  def annotateString(t: String, annotations: js.Array[TextAnnotation]): js.Array[String | StringDictionary[_]] = js.native
-  @JSImport("jointjs", "Vectorizer.annotateString")
-  @js.native
-  def annotateString(t: String, annotations: js.Array[TextAnnotation], opt: AnnotateStringOptions): js.Array[String | StringDictionary[_]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jointjs", "Vectorizer.convertCircleToPathData")
-  @js.native
-  def convertCircleToPathData(circle: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertCircleToPathData")
-  @js.native
-  def convertCircleToPathData(circle: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertCircleToPathData")
-  @js.native
-  def convertCircleToPathData(circle: SVGElement): String = js.native
+  @scala.inline
+  def annotateString(t: String, annotations: js.Array[TextAnnotation]): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
+  @scala.inline
+  def annotateString(t: String, annotations: js.Array[TextAnnotation], opt: AnnotateStringOptions): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
   
-  @JSImport("jointjs", "Vectorizer.convertEllipseToPathData")
-  @js.native
-  def convertEllipseToPathData(ellipse: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertEllipseToPathData")
-  @js.native
-  def convertEllipseToPathData(ellipse: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertEllipseToPathData")
-  @js.native
-  def convertEllipseToPathData(ellipse: SVGElement): String = js.native
+  @scala.inline
+  def convertCircleToPathData(circle: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertCircleToPathData(circle: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertCircleToPathData(circle: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.convertLineToPathData")
-  @js.native
-  def convertLineToPathData(line: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertLineToPathData")
-  @js.native
-  def convertLineToPathData(line: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertLineToPathData")
-  @js.native
-  def convertLineToPathData(line: SVGElement): String = js.native
+  @scala.inline
+  def convertEllipseToPathData(ellipse: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertEllipseToPathData(ellipse: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertEllipseToPathData(ellipse: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.convertPolygonToPathData")
-  @js.native
-  def convertPolygonToPathData(line: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertPolygonToPathData")
-  @js.native
-  def convertPolygonToPathData(line: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertPolygonToPathData")
-  @js.native
-  def convertPolygonToPathData(line: SVGElement): String = js.native
+  @scala.inline
+  def convertLineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertLineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertLineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.convertPolylineToPathData")
-  @js.native
-  def convertPolylineToPathData(line: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertPolylineToPathData")
-  @js.native
-  def convertPolylineToPathData(line: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertPolylineToPathData")
-  @js.native
-  def convertPolylineToPathData(line: SVGElement): String = js.native
+  @scala.inline
+  def convertPolygonToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertPolygonToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertPolygonToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.convertRectToPathData")
-  @js.native
-  def convertRectToPathData(rect: String): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertRectToPathData")
-  @js.native
-  def convertRectToPathData(rect: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.convertRectToPathData")
-  @js.native
-  def convertRectToPathData(rect: SVGElement): String = js.native
+  @scala.inline
+  def convertPolylineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertPolylineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertPolylineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.createSVGDocument")
-  @js.native
-  def createSVGDocument(content: String): Document = js.native
+  @scala.inline
+  def convertRectToPathData(rect: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertRectToPathData(rect: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertRectToPathData(rect: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.createSVGMatrix")
-  @js.native
-  def createSVGMatrix(matrix: Matrix): SVGMatrix = js.native
-  @JSImport("jointjs", "Vectorizer.createSVGMatrix")
-  @js.native
-  def createSVGMatrix(matrix: SVGMatrix): SVGMatrix = js.native
+  @scala.inline
+  def createSVGDocument(content: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGDocument")(content.asInstanceOf[js.Any]).asInstanceOf[Document]
   
-  @JSImport("jointjs", "Vectorizer.createSVGPoint")
-  @js.native
-  def createSVGPoint(x: Double, y: Double): SVGPoint = js.native
+  @scala.inline
+  def createSVGMatrix(matrix: Matrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
+  @scala.inline
+  def createSVGMatrix(matrix: SVGMatrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
   
-  @JSImport("jointjs", "Vectorizer.createSVGTransform")
-  @js.native
-  def createSVGTransform(): SVGTransform = js.native
-  @JSImport("jointjs", "Vectorizer.createSVGTransform")
-  @js.native
-  def createSVGTransform(matrix: Matrix): SVGTransform = js.native
-  @JSImport("jointjs", "Vectorizer.createSVGTransform")
-  @js.native
-  def createSVGTransform(matrix: SVGMatrix): SVGTransform = js.native
+  @scala.inline
+  def createSVGPoint(x: Double, y: Double): SVGPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("createSVGPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[SVGPoint]
   
-  @JSImport("jointjs", "Vectorizer.createSlicePathData")
-  @js.native
-  def createSlicePathData(innerRadius: Double, outRadius: Double, startAngle: Double, endAngle: Double): String = js.native
+  @scala.inline
+  def createSVGTransform(): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")().asInstanceOf[SVGTransform]
+  @scala.inline
+  def createSVGTransform(matrix: Matrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
+  @scala.inline
+  def createSVGTransform(matrix: SVGMatrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
   
-  @JSImport("jointjs", "Vectorizer.decomposeMatrix")
-  @js.native
-  def decomposeMatrix(matrix: Matrix): DecomposedTransformation = js.native
-  @JSImport("jointjs", "Vectorizer.decomposeMatrix")
-  @js.native
-  def decomposeMatrix(matrix: SVGMatrix): DecomposedTransformation = js.native
+  @scala.inline
+  def createSlicePathData(innerRadius: Double, outRadius: Double, startAngle: Double, endAngle: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlicePathData")(innerRadius.asInstanceOf[js.Any], outRadius.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.deltaTransformPoint")
-  @js.native
-  def deltaTransformPoint(matrix: Matrix, point: PlainPoint): PlainPoint = js.native
-  @JSImport("jointjs", "Vectorizer.deltaTransformPoint")
-  @js.native
-  def deltaTransformPoint(matrix: Matrix, point: SVGPoint): PlainPoint = js.native
-  @JSImport("jointjs", "Vectorizer.deltaTransformPoint")
-  @js.native
-  def deltaTransformPoint(matrix: SVGMatrix, point: PlainPoint): PlainPoint = js.native
-  @JSImport("jointjs", "Vectorizer.deltaTransformPoint")
-  @js.native
-  def deltaTransformPoint(matrix: SVGMatrix, point: SVGPoint): PlainPoint = js.native
+  @scala.inline
+  def decomposeMatrix(matrix: Matrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
+  @scala.inline
+  def decomposeMatrix(matrix: SVGMatrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
   
-  @JSImport("jointjs", "Vectorizer.ensureId")
-  @js.native
-  def ensureId(node: Vectorizer): String = js.native
-  @JSImport("jointjs", "Vectorizer.ensureId")
-  @js.native
-  def ensureId(node: SVGElement): String = js.native
+  @scala.inline
+  def deltaTransformPoint(matrix: Matrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  @scala.inline
+  def deltaTransformPoint(matrix: Matrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  @scala.inline
+  def deltaTransformPoint(matrix: SVGMatrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  @scala.inline
+  def deltaTransformPoint(matrix: SVGMatrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
   
-  @JSImport("jointjs", "Vectorizer.findAnnotationsAtIndex")
-  @js.native
-  def findAnnotationsAtIndex(annotations: js.Array[TextAnnotation], index: Double): js.Array[TextAnnotation] = js.native
+  @scala.inline
+  def ensureId(node: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def ensureId(node: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.findAnnotationsBetweenIndexes")
-  @js.native
-  def findAnnotationsBetweenIndexes(annotations: js.Array[TextAnnotation], start: Double, end: Double): js.Array[TextAnnotation] = js.native
+  @scala.inline
+  def findAnnotationsAtIndex(annotations: js.Array[TextAnnotation], index: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsAtIndex")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @JSImport("jointjs", "Vectorizer.getPointsFromSvgNode")
-  @js.native
-  def getPointsFromSvgNode(node: Vectorizer): js.Array[SVGPoint] = js.native
-  @JSImport("jointjs", "Vectorizer.getPointsFromSvgNode")
-  @js.native
-  def getPointsFromSvgNode(node: SVGElement): js.Array[SVGPoint] = js.native
+  @scala.inline
+  def findAnnotationsBetweenIndexes(annotations: js.Array[TextAnnotation], start: Double, end: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsBetweenIndexes")(annotations.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @JSImport("jointjs", "Vectorizer.isArray")
-  @js.native
-  def isArray(value: js.Any): Boolean = js.native
+  @scala.inline
+  def getPointsFromSvgNode(node: Vectorizer): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
+  @scala.inline
+  def getPointsFromSvgNode(node: SVGElement): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
   
-  @JSImport("jointjs", "Vectorizer.isObject")
-  @js.native
-  def isObject(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.isSVGGraphicsElement")
-  @js.native
-  def isSVGGraphicsElement(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.isString")
-  @js.native
-  def isString(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isSVGGraphicsElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGGraphicsElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.isUndefined")
-  @js.native
-  def isUndefined(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.isV")
-  @js.native
-  def isV(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.isVElement")
-  @js.native
-  def isVElement(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isV(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.matrixToRotate")
-  @js.native
-  def matrixToRotate(matrix: Matrix): Rotation = js.native
-  @JSImport("jointjs", "Vectorizer.matrixToRotate")
-  @js.native
-  def matrixToRotate(matrix: SVGMatrix): Rotation = js.native
+  @scala.inline
+  def isVElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jointjs", "Vectorizer.matrixToScale")
-  @js.native
-  def matrixToScale(matrix: Matrix): Scale = js.native
-  @JSImport("jointjs", "Vectorizer.matrixToScale")
-  @js.native
-  def matrixToScale(matrix: SVGMatrix): Scale = js.native
+  @scala.inline
+  def matrixToRotate(matrix: Matrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
+  @scala.inline
+  def matrixToRotate(matrix: SVGMatrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
   
-  @JSImport("jointjs", "Vectorizer.matrixToTransformString")
-  @js.native
-  def matrixToTransformString(matrix: Matrix): String = js.native
-  @JSImport("jointjs", "Vectorizer.matrixToTransformString")
-  @js.native
-  def matrixToTransformString(matrix: SVGMatrix): String = js.native
+  @scala.inline
+  def matrixToScale(matrix: Matrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
+  @scala.inline
+  def matrixToScale(matrix: SVGMatrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
   
-  @JSImport("jointjs", "Vectorizer.matrixToTranslate")
-  @js.native
-  def matrixToTranslate(matrix: Matrix): Translation = js.native
-  @JSImport("jointjs", "Vectorizer.matrixToTranslate")
-  @js.native
-  def matrixToTranslate(matrix: SVGMatrix): Translation = js.native
+  @scala.inline
+  def matrixToTransformString(matrix: Matrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def matrixToTransformString(matrix: SVGMatrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.mergeAttrs")
-  @js.native
-  def mergeAttrs(a: js.Any, b: js.Any): js.Any = js.native
+  @scala.inline
+  def matrixToTranslate(matrix: Matrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
+  @scala.inline
+  def matrixToTranslate(matrix: SVGMatrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
   
-  @JSImport("jointjs", "Vectorizer.normalizePathData")
-  @js.native
-  def normalizePathData(path: String): String = js.native
+  @scala.inline
+  def mergeAttrs(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jointjs", "Vectorizer.parseTransformString")
-  @js.native
-  def parseTransformString(transform: String): Transform = js.native
+  @scala.inline
+  def normalizePathData(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePathData")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.parseXML")
-  @js.native
-  def parseXML(data: String): XMLDocument = js.native
-  @JSImport("jointjs", "Vectorizer.parseXML")
-  @js.native
-  def parseXML(data: String, opt: ParseXMLOptions): XMLDocument = js.native
+  @scala.inline
+  def parseTransformString(transform: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
-  @JSImport("jointjs", "Vectorizer.qualifyAttr")
-  @js.native
-  def qualifyAttr(name: String): QualifiedAttribute = js.native
+  @scala.inline
+  def parseXML(data: String): XMLDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any]).asInstanceOf[XMLDocument]
+  @scala.inline
+  def parseXML(data: String, opt: ParseXMLOptions): XMLDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[XMLDocument]
   
-  @JSImport("jointjs", "Vectorizer.rectToPath")
-  @js.native
-  def rectToPath(r: RoundedRect): String = js.native
+  @scala.inline
+  def qualifyAttr(name: String): QualifiedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("qualifyAttr")(name.asInstanceOf[js.Any]).asInstanceOf[QualifiedAttribute]
   
-  @JSImport("jointjs", "Vectorizer.sanitizeText")
-  @js.native
-  def sanitizeText(text: String): String = js.native
+  @scala.inline
+  def rectToPath(r: RoundedRect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rectToPath")(r.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.shiftAnnotations")
-  @js.native
-  def shiftAnnotations(annotations: js.Array[TextAnnotation], index: Double, offset: Double): js.Array[TextAnnotation] = js.native
+  @scala.inline
+  def sanitizeText(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeText")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.styleToObject")
-  @js.native
-  def styleToObject(styleString: String): StringDictionary[String] = js.native
+  @scala.inline
+  def shiftAnnotations(annotations: js.Array[TextAnnotation], index: Double, offset: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAnnotations")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @JSImport("jointjs", "Vectorizer.svgPointsToPath")
-  @js.native
-  def svgPointsToPath(points: js.Array[PlainPoint | SVGPoint]): String = js.native
+  @scala.inline
+  def styleToObject(styleString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(styleString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSImport("jointjs", "Vectorizer.toNode")
-  @js.native
-  def toNode(el: js.Array[SVGElement]): SVGElement = js.native
-  @JSImport("jointjs", "Vectorizer.toNode")
-  @js.native
-  def toNode(el: Vectorizer): SVGElement = js.native
-  @JSImport("jointjs", "Vectorizer.toNode")
-  @js.native
-  def toNode(el: SVGElement): SVGElement = js.native
+  @scala.inline
+  def svgPointsToPath(points: js.Array[PlainPoint | SVGPoint]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("svgPointsToPath")(points.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jointjs", "Vectorizer.transformLine")
-  @js.native
-  def transformLine(p: Line, matrix: SVGMatrix): Line = js.native
+  @scala.inline
+  def toNode(el: js.Array[SVGElement]): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  @scala.inline
+  def toNode(el: Vectorizer): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  @scala.inline
+  def toNode(el: SVGElement): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
   
-  @JSImport("jointjs", "Vectorizer.transformPoint")
-  @js.native
-  def transformPoint(p: PlainPoint, matrix: SVGMatrix): Point = js.native
+  @scala.inline
+  def transformLine(p: Line, matrix: SVGMatrix): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("transformLine")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @JSImport("jointjs", "Vectorizer.transformPolyline")
-  @js.native
-  def transformPolyline(p: js.Array[PlainPoint], matrix: SVGMatrix): Polyline = js.native
-  @JSImport("jointjs", "Vectorizer.transformPolyline")
-  @js.native
-  def transformPolyline(p: Polyline, matrix: SVGMatrix): Polyline = js.native
+  @scala.inline
+  def transformPoint(p: PlainPoint, matrix: SVGMatrix): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPoint")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("jointjs", "Vectorizer.transformRect")
-  @js.native
-  def transformRect(r: PlainRect, matrix: SVGMatrix): Rect = js.native
+  @scala.inline
+  def transformPolyline(p: js.Array[PlainPoint], matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
+  @scala.inline
+  def transformPolyline(p: Polyline, matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
   
-  @JSImport("jointjs", "Vectorizer.transformStringToMatrix")
-  @js.native
-  def transformStringToMatrix(transform: String): SVGMatrix = js.native
+  @scala.inline
+  def transformRect(r: PlainRect, matrix: SVGMatrix): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRect")(r.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Rect]
   
-  @JSImport("jointjs", "Vectorizer.uniqueId")
-  @js.native
-  def uniqueId(): String = js.native
+  @scala.inline
+  def transformStringToMatrix(transform: String): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transformStringToMatrix")(transform.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
   
-  @js.native
+  @scala.inline
+  def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
+  
   trait AnnotateStringOptions extends StObject {
     
-    var includeAnnotationIndices: js.UndefOr[Boolean] = js.native
+    var includeAnnotationIndices: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object AnnotateStringOptions {
     
@@ -486,22 +412,21 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait DecomposedTransformation extends StObject {
     
-    var rotation: Double = js.native
+    var rotation: Double
     
-    var scaleX: Double = js.native
+    var scaleX: Double
     
-    var scaleY: Double = js.native
+    var scaleY: Double
     
-    var skewX: Double = js.native
+    var skewX: Double
     
-    var skewY: Double = js.native
+    var skewY: Double
     
-    var translateX: Double = js.native
+    var translateX: Double
     
-    var translateY: Double = js.native
+    var translateY: Double
   }
   object DecomposedTransformation {
     
@@ -545,12 +470,11 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait GetBBoxOptions extends StObject {
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[SVGElement | Vectorizer] = js.native
+    var target: js.UndefOr[SVGElement | Vectorizer] = js.undefined
   }
   object GetBBoxOptions {
     
@@ -578,20 +502,19 @@ object Vectorizer {
   }
   
   // modifiable Matrix. SVGMatrix doesn't allow set on properties or a constructor.
-  @js.native
   trait Matrix extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var d: Double = js.native
+    var d: Double
     
-    var e: Double = js.native
+    var e: Double
     
-    var f: Double = js.native
+    var f: Double
   }
   object Matrix {
     
@@ -624,10 +547,9 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait ParseXMLOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
   }
   object ParseXMLOptions {
     
@@ -648,18 +570,17 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait QualifiedAttribute extends StObject {
     
-    var local: String = js.native
+    var local: String
     
-    var ns: String | Null = js.native
+    var ns: String | Null
   }
   object QualifiedAttribute {
     
     @scala.inline
     def apply(local: String): QualifiedAttribute = {
-      val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], ns = null)
       __obj.asInstanceOf[QualifiedAttribute]
     }
     
@@ -677,10 +598,9 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait RotateOptions extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
   }
   object RotateOptions {
     
@@ -701,14 +621,13 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait Rotation extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var cx: js.UndefOr[Double] = js.native
+    var cx: js.UndefOr[Double] = js.undefined
     
-    var cy: js.UndefOr[Double] = js.native
+    var cy: js.UndefOr[Double] = js.undefined
   }
   object Rotation {
     
@@ -738,20 +657,21 @@ object Vectorizer {
     }
   }
   
-  @js.native
-  trait RoundedRect extends PlainRect {
+  trait RoundedRect
+    extends StObject
+       with PlainRect {
     
-    var `bottom-rx`: js.UndefOr[Double] = js.native
+    var `bottom-rx`: js.UndefOr[Double] = js.undefined
     
-    var `bottom-ry`: js.UndefOr[Double] = js.native
+    var `bottom-ry`: js.UndefOr[Double] = js.undefined
     
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
-    var `top-rx`: js.UndefOr[Double] = js.native
+    var `top-rx`: js.UndefOr[Double] = js.undefined
     
-    var `top-ry`: js.UndefOr[Double] = js.native
+    var `top-ry`: js.UndefOr[Double] = js.undefined
   }
   object RoundedRect {
     
@@ -802,14 +722,13 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait Sample extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Sample {
     
@@ -833,12 +752,11 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait Scale extends StObject {
     
-    var sx: Double = js.native
+    var sx: Double
     
-    var sy: Double = js.native
+    var sy: Double
   }
   object Scale {
     
@@ -859,14 +777,13 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait TextAnnotation extends StObject {
     
-    var attrs: StringDictionary[js.Any] = js.native
+    var attrs: StringDictionary[js.Any]
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object TextAnnotation {
     
@@ -890,24 +807,23 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait TextOptions extends StObject {
     
-    var annotations: js.UndefOr[js.Array[TextAnnotation]] = js.native
+    var annotations: js.UndefOr[js.Array[TextAnnotation]] = js.undefined
     
-    var displayEmpty: js.UndefOr[Boolean] = js.native
+    var displayEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var includeAnnotationIndices: js.UndefOr[Boolean] = js.native
+    var includeAnnotationIndices: js.UndefOr[Boolean] = js.undefined
     
-    var lineHeight: js.UndefOr[Double | String] = js.native
+    var lineHeight: js.UndefOr[Double | String] = js.undefined
     
-    var textPath: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+    var textPath: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
     
-    var textVerticalAnchor: js.UndefOr[TextVerticalAnchor | Double | String] = js.native
+    var textVerticalAnchor: js.UndefOr[TextVerticalAnchor | Double | String] = js.undefined
     
-    var x: js.UndefOr[Double | String] = js.native
+    var x: js.UndefOr[Double | String] = js.undefined
   }
   object TextOptions {
     
@@ -991,16 +907,15 @@ object Vectorizer {
     def top: typings.jointjs.jointjsStrings.top = "top".asInstanceOf[typings.jointjs.jointjsStrings.top]
   }
   
-  @js.native
   trait Transform extends StObject {
     
-    var rotate: Rotation = js.native
+    var rotate: Rotation
     
-    var scale: Scale = js.native
+    var scale: Scale
     
-    var translate: Translation = js.native
+    var translate: Translation
     
-    var value: String = js.native
+    var value: String
   }
   object Transform {
     
@@ -1027,10 +942,9 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait TransformOptions extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
   }
   object TransformOptions {
     
@@ -1051,12 +965,11 @@ object Vectorizer {
     }
   }
   
-  @js.native
   trait Translation extends StObject {
     
-    var tx: Double = js.native
+    var tx: Double
     
-    var ty: Double = js.native
+    var ty: Double
   }
   object Translation {
     

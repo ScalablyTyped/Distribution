@@ -2,13 +2,11 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceIdPayload extends StObject {
   
-  var sourceId: Identifier = js.native
+  var sourceId: Identifier
 }
 object SourceIdPayload {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpcPeeringConnectionOptionsResult extends StObject {
   
   /**
     * Information about the VPC peering connection options for the accepter VPC.
     */
-  var AccepterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptions] = js.native
+  var AccepterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptions] = js.undefined
   
   /**
     * Information about the VPC peering connection options for the requester VPC.
     */
-  var RequesterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptions] = js.native
+  var RequesterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptions] = js.undefined
 }
 object ModifyVpcPeeringConnectionOptionsResult {
   

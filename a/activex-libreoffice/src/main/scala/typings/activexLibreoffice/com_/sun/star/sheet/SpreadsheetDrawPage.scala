@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShapeGrouper
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {{program example here, see documentation}}
   * @since OOo 1.1.2
   */
-@js.native
 trait SpreadsheetDrawPage
-  extends XShapes
+  extends StObject
+     with XShapes
      with XShapeGrouper
 object SpreadsheetDrawPage {
   

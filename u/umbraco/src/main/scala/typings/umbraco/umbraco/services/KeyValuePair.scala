@@ -2,15 +2,13 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValuePair[T] extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var value: T = js.native
+  var value: T
 }
 object KeyValuePair {
   
@@ -21,7 +19,7 @@ object KeyValuePair {
   }
   
   @scala.inline
-  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[_], T] (val x: Self with KeyValuePair[T]) extends AnyVal {
+  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[?], T] (val x: Self & KeyValuePair[T]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

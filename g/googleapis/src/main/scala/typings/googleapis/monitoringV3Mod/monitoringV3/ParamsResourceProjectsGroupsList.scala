@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsGroupsList extends StandardParameters {
+trait ParamsResourceProjectsGroupsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * A group name: "projects/{project_id_or_number}/groups/{group_id}".
@@ -19,19 +19,19 @@ trait ParamsResourceProjectsGroupsList extends StandardParameters {
     * most distant ancestor. If the specified group has no immediate parent,
     * the results are empty.
     */
-  var ancestorsOfGroup: js.UndefOr[String] = js.native
+  var ancestorsOfGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A group name: "projects/{project_id_or_number}/groups/{group_id}".
     * Returns groups whose parentName field contains the group name. If no
     * groups have this parent, the results are empty.
     */
-  var childrenOfGroup: js.UndefOr[String] = js.native
+  var childrenOfGroup: js.UndefOr[String] = js.undefined
   
   /**
     * A group name: "projects/{project_id_or_number}/groups/{group_id}".
@@ -39,25 +39,25 @@ trait ParamsResourceProjectsGroupsList extends StandardParameters {
     * results returned by the childrenOfGroup filter, and includes
     * children-of-children, and so forth.
     */
-  var descendantsOfGroup: js.UndefOr[String] = js.native
+  var descendantsOfGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The project whose groups are to be listed. The format is
     * "projects/{project_id_or_number}".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A positive number that is the maximum number of results to return.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * If this field is not empty then it must contain the nextPageToken value
     * returned by a previous call to this method. Using this field causes the
     * method to return additional results from the previous method call.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsGroupsList {
   

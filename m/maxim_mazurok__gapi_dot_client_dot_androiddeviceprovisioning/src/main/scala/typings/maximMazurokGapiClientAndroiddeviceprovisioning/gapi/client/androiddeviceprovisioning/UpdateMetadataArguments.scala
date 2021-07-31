@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMetadataArguments extends StObject {
   
   /** Required. Device ID of the device. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** Required. Device identifier. */
-  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined
   
   /** Required. The metadata to update. */
-  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.native
+  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.undefined
 }
 object UpdateMetadataArguments {
   

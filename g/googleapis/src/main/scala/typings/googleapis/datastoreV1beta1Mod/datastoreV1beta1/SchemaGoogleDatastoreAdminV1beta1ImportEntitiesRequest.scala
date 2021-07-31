@@ -3,14 +3,12 @@ package typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for
   * google.datastore.admin.v1beta1.DatastoreAdmin.ImportEntities.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends StObject {
     * the export, otherwise a FAILED_PRECONDITION error will be returned. If no
     * filter is specified then all entities from the export are imported.
     */
-  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1beta1EntityFilter] = js.native
+  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1beta1EntityFilter] = js.undefined
   
   /**
     * The full resource URL of the external storage location. Currently, only
@@ -34,12 +32,12 @@ trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends StObject {
     * For more information, see
     * google.datastore.admin.v1beta1.ExportEntitiesResponse.output_url.
     */
-  var inputUrl: js.UndefOr[String] = js.native
+  var inputUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Client-assigned labels.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest {
   

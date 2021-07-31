@@ -2,20 +2,18 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Status of a NAT contained in this router. Next tag: 9
   */
-@js.native
 trait SchemaRouterStatusNatStatus extends StObject {
   
   /**
     * A list of IPs auto-allocated for NAT. Example: [&quot;1.1.1.1&quot;,
     * &quot;129.2.16.89&quot;]
     */
-  var autoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var autoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The number of extra IPs to allocate. This will be greater than 0 only if
@@ -23,28 +21,28 @@ trait SchemaRouterStatusNatStatus extends StObject {
     * This value is meaningful only when auto-allocation of NAT IPs is *not*
     * used.
     */
-  var minExtraNatIpsNeeded: js.UndefOr[Double] = js.native
+  var minExtraNatIpsNeeded: js.UndefOr[Double] = js.undefined
   
   /**
     * Unique name of this NAT.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of VM endpoints (i.e., Nics) that can use NAT.
     */
-  var numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.native
+  var numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of fully qualified URLs of reserved IP address resources.
     */
-  var userAllocatedNatIpResources: js.UndefOr[js.Array[String]] = js.native
+  var userAllocatedNatIpResources: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of IPs user-allocated for NAT. They will be raw IP strings like
     * &quot;179.12.26.133&quot;.
     */
-  var userAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var userAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRouterStatusNatStatus {
   

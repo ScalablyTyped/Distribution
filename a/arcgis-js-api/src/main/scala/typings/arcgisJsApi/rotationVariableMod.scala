@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.RotationVariableConstructor
 import typings.arcgisJsApi.esri.RotationVariableProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rotationVariableMod extends Shortcut {
   
   @JSImport("esri/renderers/visualVariables/RotationVariable", JSImport.Namespace)
   @js.native
-  val ^ : RotationVariableConstructor = js.native
+  val ^ : js.Object & RotationVariableConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/visualVariables/RotationVariable", JSImport.Namespace)
@@ -23,12 +22,22 @@ object rotationVariableMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html)
     */
-  class Class () extends RotationVariable {
+  class Class ()
+    extends StObject
+       with RotationVariable {
     def this(properties: RotationVariableProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = RotationVariableConstructor
+  type _To = js.Object & RotationVariableConstructor
   
   /* This means you don't have to write `^`, but can instead just say `rotationVariableMod.foo` */
-  override def _to: RotationVariableConstructor = ^
+  override def _to: js.Object & RotationVariableConstructor = ^
 }

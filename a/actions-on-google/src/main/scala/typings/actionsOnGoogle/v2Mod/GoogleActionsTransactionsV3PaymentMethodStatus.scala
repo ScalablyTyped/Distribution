@@ -2,19 +2,17 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3PaymentMethodStatus extends StObject {
   
-  var status: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodStatusStatus] = js.native
+  var status: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodStatusStatus] = js.undefined
   
   /**
     * User facing message regarding the payment method status, i.e. \"Expired\".
     * Only required when payment method requires fix or is inapplicable.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsTransactionsV3PaymentMethodStatus {
   

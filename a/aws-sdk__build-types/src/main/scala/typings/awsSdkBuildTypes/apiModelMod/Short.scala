@@ -3,27 +3,26 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Short
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("type")
-  val type_Short: short = js.native
+  val type_Short: short
 }
 object Short {
   
   @scala.inline
-  def apply(`type`: short): Short = {
+  def apply(): Short = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("short")
     __obj.asInstanceOf[Short]
   }
   

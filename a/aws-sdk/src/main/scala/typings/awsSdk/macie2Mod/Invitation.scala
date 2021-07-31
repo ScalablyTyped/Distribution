@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invitation extends StObject {
   
   /**
     * The AWS account ID for the account that sent the invitation.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the invitation. Amazon Macie uses this identifier to validate the inviter account with the invitee account.
     */
-  var invitationId: js.UndefOr[string] = js.native
+  var invitationId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the invitation was sent.
     */
-  var invitedAt: js.UndefOr[timestampIso8601] = js.native
+  var invitedAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The status of the relationship between the account that sent the invitation (inviter account) and the account that received the invitation (invitee account).
     */
-  var relationshipStatus: js.UndefOr[RelationshipStatus] = js.native
+  var relationshipStatus: js.UndefOr[RelationshipStatus] = js.undefined
 }
 object Invitation {
   

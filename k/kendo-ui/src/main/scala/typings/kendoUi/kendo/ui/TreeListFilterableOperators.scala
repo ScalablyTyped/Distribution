@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListFilterableOperators extends StObject {
   
-  var date: js.UndefOr[TreeListFilterableOperatorsDate] = js.native
+  var date: js.UndefOr[TreeListFilterableOperatorsDate] = js.undefined
   
-  var number: js.UndefOr[TreeListFilterableOperatorsNumber] = js.native
+  var number: js.UndefOr[TreeListFilterableOperatorsNumber] = js.undefined
   
-  var string: js.UndefOr[TreeListFilterableOperatorsString] = js.native
+  var string: js.UndefOr[TreeListFilterableOperatorsString] = js.undefined
 }
 object TreeListFilterableOperators {
   

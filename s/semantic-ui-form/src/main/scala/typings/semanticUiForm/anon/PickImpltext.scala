@@ -3,14 +3,12 @@ package typings.semanticUiForm.anon
 import typings.semanticUiForm.SemanticUI.Form.TextSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, 'text'> */
-@js.native
 trait PickImpltext extends StObject {
   
-  var text: TextSettings = js.native
+  var text: TextSettings
 }
 object PickImpltext {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleUpdate extends StObject {
   
   /**
     * Specify INSERT to add a Predicate to a Rule. Use DELETE to remove a Predicate from a Rule.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * The ID of the Predicate (such as an IPSet) that you want to add to a Rule.
     */
-  var Predicate: typings.awsSdk.wafMod.Predicate = js.native
+  var Predicate: typings.awsSdk.wafMod.Predicate
 }
 object RuleUpdate {
   

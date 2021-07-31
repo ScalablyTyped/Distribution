@@ -2,46 +2,44 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConfigurationProfileRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * A description of the configuration profile.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * A URI to locate the configuration. You can specify a Systems Manager (SSM) document, an SSM Parameter Store parameter, or an Amazon S3 object. For an SSM document, specify either the document name in the format ssm-document://&lt;Document_name&gt; or the Amazon Resource Name (ARN). For a parameter, specify either the parameter name in the format ssm-parameter://&lt;Parameter_name&gt; or the ARN. For an Amazon S3 object, specify the URI in the following format: s3://&lt;bucket&gt;/&lt;objectKey&gt; . Here is an example: s3://my-bucket/my-app/us-east-1/my-config.json
     */
-  var LocationUri: Uri = js.native
+  var LocationUri: Uri
   
   /**
     * A name for the configuration profile.
     */
-  var Name: typings.awsSdk.appconfigMod.Name = js.native
+  var Name: typings.awsSdk.appconfigMod.Name
   
   /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     */
-  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.native
+  var RetrievalRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * Metadata to assign to the configuration profile. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * A list of methods for validating the configuration.
     */
-  var Validators: js.UndefOr[ValidatorList] = js.native
+  var Validators: js.UndefOr[ValidatorList] = js.undefined
 }
 object CreateConfigurationProfileRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmPrivateVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The ID of the virtual private gateway.
     */
-  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.native
+  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object ConfirmPrivateVirtualInterfaceRequest {
   

@@ -6,7 +6,6 @@ import typings.std.Node
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,18 +38,17 @@ object mod {
   
   type AttachScopes_ = js.Function2[/* ast */ Node, /* propertyName */ js.UndefOr[String], AttachedScope]
   
-  @js.native
   trait AttachedScope extends StObject {
     
-    def addDeclaration(node: Node, isBlockDeclaration: Boolean, isVar: Boolean): Unit = js.native
+    def addDeclaration(node: Node, isBlockDeclaration: Boolean, isVar: Boolean): Unit
     
-    def contains(name: String): Boolean = js.native
+    def contains(name: String): Boolean
     
-    var declarations: StringDictionary[Boolean] = js.native
+    var declarations: StringDictionary[Boolean]
     
-    var isBlockScope: Boolean = js.native
+    var isBlockScope: Boolean
     
-    var parent: js.UndefOr[AttachedScope] = js.native
+    var parent: js.UndefOr[AttachedScope] = js.undefined
   }
   object AttachedScope {
     
@@ -95,18 +93,17 @@ object mod {
     js.Function1[/* id */ String | js.Any, Boolean]
   ]
   
-  @js.native
   trait DataToEsmOptions extends StObject {
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var namedExports: js.UndefOr[Boolean] = js.native
+    var namedExports: js.UndefOr[Boolean] = js.undefined
     
-    var objectShorthand: js.UndefOr[Boolean] = js.native
+    var objectShorthand: js.UndefOr[Boolean] = js.undefined
     
-    var preferConst: js.UndefOr[Boolean] = js.native
+    var preferConst: js.UndefOr[Boolean] = js.undefined
   }
   object DataToEsmOptions {
     

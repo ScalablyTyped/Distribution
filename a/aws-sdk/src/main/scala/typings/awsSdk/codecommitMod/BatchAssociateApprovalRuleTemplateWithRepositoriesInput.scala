@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAssociateApprovalRuleTemplateWithRepositoriesInput extends StObject {
   
   /**
     * The name of the template you want to associate with one or more repositories.
     */
-  var approvalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var approvalRuleTemplateName: ApprovalRuleTemplateName
   
   /**
     * The names of the repositories you want to associate with the template.  The length constraint limit is for each string in the array. The array itself can be empty. 
     */
-  var repositoryNames: RepositoryNameList = js.native
+  var repositoryNames: RepositoryNameList
 }
 object BatchAssociateApprovalRuleTemplateWithRepositoriesInput {
   

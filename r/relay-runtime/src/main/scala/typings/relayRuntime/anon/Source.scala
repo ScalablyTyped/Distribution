@@ -5,15 +5,13 @@ import typings.relayRuntime.relayObservableMod.RelayObservable
 import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var operation: OperationDescriptor = js.native
+  var operation: OperationDescriptor
   
-  var source: RelayObservable[GraphQLResponse] = js.native
+  var source: RelayObservable[GraphQLResponse]
 }
 object Source {
   

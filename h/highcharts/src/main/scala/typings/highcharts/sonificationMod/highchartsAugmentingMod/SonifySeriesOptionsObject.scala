@@ -4,13 +4,11 @@ import typings.highcharts.mod.Dictionary
 import typings.highcharts.mod.RangeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for sonifying a series.
   */
-@js.native
 trait SonifySeriesOptionsObject extends StObject {
   
   /**
@@ -20,39 +18,39 @@ trait SonifySeriesOptionsObject extends StObject {
     * of point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.native
+  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
   
   /**
     * The duration for playing the points. Note that points might continue
     * to play after the duration has passed, but no new points will start
     * playing.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Earcons to add to the series.
     */
-  var earcons: js.UndefOr[js.Array[EarconConfiguration]] = js.native
+  var earcons: js.UndefOr[js.Array[EarconConfiguration]] = js.undefined
   
   /**
     * The instrument definitions for the points in this series.
     */
-  var instruments: js.Array[PointInstrumentObject] = js.native
+  var instruments: js.Array[PointInstrumentObject]
   
   /**
     * Callback after the series has played.
     */
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Callback after a point has finished playing.
     */
-  var onPointEnd: js.UndefOr[js.Function] = js.native
+  var onPointEnd: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Callback before a point is played.
     */
-  var onPointStart: js.UndefOr[js.Function] = js.native
+  var onPointStart: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The axis to use for when to play the points. Can be a string with a
@@ -62,7 +60,7 @@ trait SonifySeriesOptionsObject extends StObject {
     * first, and the time between points will be proportional to the
     * distance between the numeric values.
     */
-  var pointPlayTime: String | js.Function = js.native
+  var pointPlayTime: String | js.Function
 }
 object SonifySeriesOptionsObject {
   

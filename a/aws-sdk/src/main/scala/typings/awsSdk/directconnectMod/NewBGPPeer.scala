@@ -2,36 +2,34 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewBGPPeer extends StObject {
   
   /**
     * The address family for the BGP peer.
     */
-  var addressFamily: js.UndefOr[AddressFamily] = js.native
+  var addressFamily: js.UndefOr[AddressFamily] = js.undefined
   
   /**
     * The IP address assigned to the Amazon interface.
     */
-  var amazonAddress: js.UndefOr[AmazonAddress] = js.native
+  var amazonAddress: js.UndefOr[AmazonAddress] = js.undefined
   
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  var asn: js.UndefOr[ASN] = js.native
+  var asn: js.UndefOr[ASN] = js.undefined
   
   /**
     * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
-  var authKey: js.UndefOr[BGPAuthKey] = js.native
+  var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   
   /**
     * The IP address assigned to the customer interface.
     */
-  var customerAddress: js.UndefOr[CustomerAddress] = js.native
+  var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
 }
 object NewBGPPeer {
   

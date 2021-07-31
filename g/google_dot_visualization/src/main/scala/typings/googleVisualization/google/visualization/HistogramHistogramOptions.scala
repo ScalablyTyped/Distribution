@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramHistogramOptions extends StObject {
   
-  var bucketSize: js.UndefOr[Double] = js.native
+  var bucketSize: js.UndefOr[Double] = js.undefined
   
-  var hideBucketItems: js.UndefOr[Boolean] = js.native
+  var hideBucketItems: js.UndefOr[Boolean] = js.undefined
   
-  var lastBucketPercentile: js.UndefOr[Double] = js.native
+  var lastBucketPercentile: js.UndefOr[Double] = js.undefined
 }
 object HistogramHistogramOptions {
   

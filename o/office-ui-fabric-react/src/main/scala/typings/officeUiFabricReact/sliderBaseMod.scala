@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.sliderTypesMod.ISliderProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderBaseMod {
@@ -58,6 +57,9 @@ object sliderBaseMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSliderBase(): Unit = js.native
     
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
     val renderedValue: js.Any = js.native
   }
   /* static members */
@@ -74,12 +76,11 @@ object sliderBaseMod {
     def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ISliderState extends StObject {
     
-    var renderedValue: js.UndefOr[Double] = js.native
+    var renderedValue: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ISliderState {
     

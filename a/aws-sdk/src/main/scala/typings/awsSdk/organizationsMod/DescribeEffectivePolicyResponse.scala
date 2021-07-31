@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEffectivePolicyResponse extends StObject {
   
   /**
     * The contents of the effective policy.
     */
-  var EffectivePolicy: js.UndefOr[typings.awsSdk.organizationsMod.EffectivePolicy] = js.native
+  var EffectivePolicy: js.UndefOr[typings.awsSdk.organizationsMod.EffectivePolicy] = js.undefined
 }
 object DescribeEffectivePolicyResponse {
   

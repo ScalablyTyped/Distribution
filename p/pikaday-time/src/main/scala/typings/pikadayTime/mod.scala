@@ -5,14 +5,15 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("pikaday-time", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Pikaday {
+  class ^ protected ()
+    extends StObject
+       with Pikaday {
     def this(options: PikadayOptions) = this()
   }
   
@@ -142,18 +143,17 @@ object mod {
     def toString(format: String): String = js.native
   }
   
-  @js.native
   trait PikadayI18nConfig extends StObject {
     
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
-    var nextMonth: String = js.native
+    var nextMonth: String
     
-    var previousMonth: String = js.native
+    var previousMonth: String
     
-    var weekdays: js.Array[String] = js.native
+    var weekdays: js.Array[String]
     
-    var weekdaysShort: js.Array[String] = js.native
+    var weekdaysShort: js.Array[String]
   }
   object PikadayI18nConfig {
     
@@ -198,208 +198,207 @@ object mod {
     }
   }
   
-  @js.native
   trait PikadayOptions extends StObject {
     
     /**
       * Optional numeric property to prevent calendar from auto-closing after date is selected.
       */
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically show/hide the datepicker on field focus.
       * Default: true if field is set.
       */
-    var bound: js.UndefOr[Boolean] = js.native
+    var bound: js.UndefOr[Boolean] = js.undefined
     
     /**
       * DOM node to render calendar into, see container example.
       * Default: undefined.
       */
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * The initial date to view when first opened.
       */
-    var defaultDate: js.UndefOr[Date] = js.native
+    var defaultDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Callback function that gets passed a Date object for each day
       * in view. Should return true to disable selection of that day.
       */
-    var disableDayFn: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
+    var disableDayFn: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
     
     /**
       * Disallow selection of Saturdays and Sundays.
       */
-    var disableWeekends: js.UndefOr[Boolean] = js.native
+    var disableWeekends: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Bind the datepicker to a form field.
       */
-    var field: js.UndefOr[HTMLElement] = js.native
+    var field: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * First day of the week (0: Sunday, 1: Monday, etc).
       */
-    var firstDay: js.UndefOr[Double] = js.native
+    var firstDay: js.UndefOr[Double] = js.undefined
     
     /**
       * The default output format for toString() and field value.
       * Requires Moment.js for custom formatting.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Language defaults for month and weekday names.
       */
-    var i18n: js.UndefOr[PikadayI18nConfig] = js.native
+    var i18n: js.UndefOr[PikadayI18nConfig] = js.undefined
     
     /**
       * Optional numeric property to specify the increment step for hour.
       */
-    var incrementHourBy: js.UndefOr[Double] = js.native
+    var incrementHourBy: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional numeric property to specify the increment step for minute.
       */
-    var incrementMinuteBy: js.UndefOr[Double] = js.native
+    var incrementMinuteBy: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional numeric property to specify the increment step for second.
       */
-    var incrementSecondBy: js.UndefOr[Double] = js.native
+    var incrementSecondBy: js.UndefOr[Double] = js.undefined
     
     /**
       * Reverse the calendar for right-to-left languages. Default: false.
       */
-    var isRTL: js.UndefOr[Boolean] = js.native
+    var isRTL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When numberOfMonths is used, this will help you to choose where the
       * main calendar will be (default left, can be set to right). Only used
       * for the first display or when a selected date is not already visible.
       */
-    var mainCalendar: js.UndefOr[String] = js.native
+    var mainCalendar: js.UndefOr[String] = js.undefined
     
     /**
       * The latest date that can be selected (this should be a native
       * Date object - e.g. new Date() or moment().toDate()).
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * The earliest date that can be selected (this should be a native
       * Date object - e.g. new Date() or moment().toDate()).
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Number of visible calendars.
       */
-    var numberOfMonths: js.UndefOr[Double] = js.native
+    var numberOfMonths: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback function for when the picker is hidden.
       */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback function for when the picker draws a new month.
       */
-    var onDraw: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDraw: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback function for when the picker becomes visible.
       */
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback function for when a date is selected.
       */
-    var onSelect: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
     /**
       * Preferred position of the datepicker relative to the form field
       * (e.g. 'top right'). Automatic adjustment may occur to avoid
       * displaying outside the viewport. Default: 'bottom left'.
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /**
       * Can be set to false to not reposition the datepicker within the
       * viewport, forcing it to take the configured position. Default: true.
       */
-    var reposition: js.UndefOr[Boolean] = js.native
+    var reposition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the defaultDate the initial selected value.
       */
-    var setDefaultDate: js.UndefOr[Boolean] = js.native
+    var setDefaultDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Render days of the calendar grid that fall in the next or previous months to the current month instead of rendering an empty table cell. Default: false.
       */
-    var showDaysInNextAndPreviousMonths: js.UndefOr[Boolean] = js.native
+    var showDaysInNextAndPreviousMonths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional boolean property to specify whether to show minute controls with calendar or not.
       */
-    var showMinutes: js.UndefOr[Boolean] = js.native
+    var showMinutes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Render the month after the year in the title. Default: false.
       */
-    var showMonthAfterYear: js.UndefOr[Boolean] = js.native
+    var showMonthAfterYear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional boolean property to specify whether to show second controls with calendar or not.
       */
-    var showSeconds: js.UndefOr[Boolean] = js.native
+    var showSeconds: js.UndefOr[Boolean] = js.undefined
     
     /*--pikaday-time specific addition--*/
     /**
       * Optional boolean property to specify whether to show time controls with calendar or not.
       */
-    var showTime: js.UndefOr[Boolean] = js.native
+    var showTime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the ISO week number at the head of the row. Default: false.
       */
-    var showWeekNumber: js.UndefOr[Boolean] = js.native
+    var showWeekNumber: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define a class name that can be used as a hook for styling different
       * themes. Default: null.
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * Optional string added to left of time select
       */
-    var timeLabel: js.UndefOr[String] = js.native
+    var timeLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Use a different element to trigger opening the datepicker.
       * Default: field element.
       */
-    var trigger: js.UndefOr[HTMLElement] = js.native
+    var trigger: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Optional boolean property to specify whether to use 24 hours format or not.
       */
-    var use24hour: js.UndefOr[Boolean] = js.native
+    var use24hour: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of years either side (e.g. 10) or array of upper/lower range
       * (e.g. [1900, 2015]).
       */
-    var yearRange: js.UndefOr[Double | js.Array[Double]] = js.native
+    var yearRange: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Additional text to append to the year in the title.
       */
-    var yearSuffix: js.UndefOr[String] = js.native
+    var yearSuffix: js.UndefOr[String] = js.undefined
   }
   object PikadayOptions {
     

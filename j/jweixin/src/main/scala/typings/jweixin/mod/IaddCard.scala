@@ -4,17 +4,17 @@ import typings.jweixin.anon.CardExt
 import typings.jweixin.anon.CardList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IaddCard extends BaseParams {
+trait IaddCard
+  extends StObject
+     with BaseParams {
   
-  var cardList: js.Array[CardExt] = js.native
+  var cardList: js.Array[CardExt]
   
   // 需要添加的卡券列表
   @JSName("success")
-  def success_MIaddCard(res: CardList): Unit = js.native
+  def success_MIaddCard(res: CardList): Unit
 }
 object IaddCard {
   

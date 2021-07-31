@@ -2,31 +2,29 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionCode extends StObject {
   
   /**
     * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
     */
-  var S3Bucket: js.UndefOr[typings.awsSdk.lambdaMod.S3Bucket] = js.native
+  var S3Bucket: js.UndefOr[typings.awsSdk.lambdaMod.S3Bucket] = js.undefined
   
   /**
     * The Amazon S3 key of the deployment package.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.lambdaMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.lambdaMod.S3Key] = js.undefined
   
   /**
     * For versioned objects, the version of the deployment package object to use.
     */
-  var S3ObjectVersion: js.UndefOr[typings.awsSdk.lambdaMod.S3ObjectVersion] = js.native
+  var S3ObjectVersion: js.UndefOr[typings.awsSdk.lambdaMod.S3ObjectVersion] = js.undefined
   
   /**
     * The base64-encoded contents of the deployment package. AWS SDK and AWS CLI clients handle the encoding for you.
     */
-  var ZipFile: js.UndefOr[_Blob] = js.native
+  var ZipFile: js.UndefOr[_Blob] = js.undefined
 }
 object FunctionCode {
   

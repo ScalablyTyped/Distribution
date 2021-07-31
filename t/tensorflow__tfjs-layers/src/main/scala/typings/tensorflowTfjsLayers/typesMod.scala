@@ -6,17 +6,17 @@ import typings.std.Array
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait BaseSerialization[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */] extends PyJsonDict {
+  trait BaseSerialization[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */]
+    extends StObject
+       with PyJsonDict {
     
-    var class_name: N = js.native
+    var class_name: N
     
-    var config: T = js.native
+    var config: T
   }
   object BaseSerialization {
     
@@ -27,7 +27,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class BaseSerializationMutableBuilder[Self <: BaseSerialization[_, _], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */] (val x: Self with (BaseSerialization[N, T])) extends AnyVal {
+    implicit class BaseSerializationMutableBuilder[Self <: BaseSerialization[?, ?], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */] (val x: Self & (BaseSerialization[N, T])) extends AnyVal {
       
       @scala.inline
       def setClass_name(value: N): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
@@ -39,16 +39,17 @@ object typesMod {
   
   type PyJson[Keys /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ x in Keys ]:? @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue}
-    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson with TopLevel[js.Any]
+    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson & TopLevel[js.Any]
   
   @js.native
   trait PyJsonArray
-    extends Array[PyJsonValue]
+    extends StObject
+       with Array[PyJsonValue]
        with _PyJsonValue
   
-  @js.native
   trait PyJsonDict
-    extends /* key */ StringDictionary[PyJsonValue]
+    extends StObject
+       with /* key */ StringDictionary[PyJsonValue]
        with _PyJsonValue
   object PyJsonDict {
     

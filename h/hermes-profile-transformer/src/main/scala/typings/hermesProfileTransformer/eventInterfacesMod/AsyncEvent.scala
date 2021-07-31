@@ -5,7 +5,6 @@ import typings.hermesProfileTransformer.phasesMod.EventsPhase.ASYNC_EVENTS_NESTA
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.ASYNC_EVENTS_NESTABLE_START
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hermesProfileTransformer.eventInterfacesMod.AsyncEventInstant
   - typings.hermesProfileTransformer.eventInterfacesMod.AsyncEventEnd
 */
-trait AsyncEvent extends Event
+trait AsyncEvent
+  extends StObject
+     with Event
 object AsyncEvent {
   
   @scala.inline

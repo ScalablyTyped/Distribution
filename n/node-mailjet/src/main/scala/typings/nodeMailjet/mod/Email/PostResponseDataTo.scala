@@ -2,19 +2,17 @@ package typings.nodeMailjet.mod.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostResponseDataTo extends StObject {
   
-  val Email: String = js.native
+  val Email: String
   
-  val MessageHref: String = js.native
+  val MessageHref: String
   
-  val MessageID: Double = js.native
+  val MessageID: Double
   
-  val MessageUUID: String = js.native
+  val MessageUUID: String
 }
 object PostResponseDataTo {
   

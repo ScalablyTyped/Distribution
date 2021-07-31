@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Retry-After HTTP header on an HTTP response. */
-@js.native
 trait HttpDateOrDeltaHeaderValue extends StObject {
   
   /** Gets the value of the HTTP-date information used in the Retry-After HTTP header. */
-  var date: Date = js.native
+  var date: Date
   
   /** Gets the value of the delta-seconds information used in the Retry-After HTTP header. */
-  var delta: Double = js.native
+  var delta: Double
 }
 object HttpDateOrDeltaHeaderValue {
   

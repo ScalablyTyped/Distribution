@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,17 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The two control points specify how the Bezier curve goes through the given position.
   * @deprecated Deprecated
   */
-@js.native
 trait BezierPoint extends StObject {
   
   /** This is the position of the first control point. */
-  var ControlPoint1: Point = js.native
+  var ControlPoint1: Point
   
   /** This is the position of the second control point. */
-  var ControlPoint2: Point = js.native
+  var ControlPoint2: Point
   
   /** This is the position of this point. */
-  var Position: Point = js.native
+  var Position: Point
 }
 object BezierPoint {
   

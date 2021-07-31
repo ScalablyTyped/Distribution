@@ -2,17 +2,15 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spacing extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object Spacing {
   

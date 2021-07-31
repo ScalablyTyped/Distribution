@@ -4,38 +4,39 @@ import typings.std.stdStrings.resize
 import typings.std.stdStrings.scroll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VisualViewport extends EventTarget {
+trait VisualViewport
+  extends StObject
+     with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resize(
     `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resize(
     `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -45,40 +46,40 @@ trait VisualViewport extends EventTarget {
   
   val offsetTop: Double = js.native
   
-  var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null = js.native
   
-  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   val pageLeft: Double = js.native
   
   val pageTop: Double = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resize(
     `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resize(
     `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

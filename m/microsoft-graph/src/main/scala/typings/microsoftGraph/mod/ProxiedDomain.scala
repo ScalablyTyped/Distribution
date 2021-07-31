@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxiedDomain extends StObject {
   
   // The IP address or FQDN
-  var ipAddressOrFQDN: js.UndefOr[String] = js.native
+  var ipAddressOrFQDN: js.UndefOr[String] = js.undefined
   
   // Proxy IP or FQDN
-  var proxy: js.UndefOr[NullableOption[String]] = js.native
+  var proxy: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ProxiedDomain {
   

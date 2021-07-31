@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreDefinitionVersion extends StObject {
   
   /**
     * A list of cores in the core definition version.
     */
-  var Cores: js.UndefOr[listOfCore] = js.native
+  var Cores: js.UndefOr[listOfCore] = js.undefined
 }
 object CoreDefinitionVersion {
   

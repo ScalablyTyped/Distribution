@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.Network.LoaderId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
   /**
     * Indicates whether this frame was tagged as an ad.
     */
-  var adFrameType: js.UndefOr[AdFrameType] = js.native
+  var adFrameType: js.UndefOr[AdFrameType] = js.undefined
   
   /**
     * Indicates whether this is a cross origin isolated context.
     */
-  var crossOriginIsolatedContextType: CrossOriginIsolatedContextType = js.native
+  var crossOriginIsolatedContextType: CrossOriginIsolatedContextType
   
   /**
     * Frame document's registered domain, taking the public suffixes list into account.
@@ -25,57 +23,57 @@ trait Frame extends StObject {
     * Example URLs: http://www.google.com/file.html -> "google.com"
     *               http://a.b.co.uk/file.html      -> "b.co.uk"
     */
-  var domainAndRegistry: String = js.native
+  var domainAndRegistry: String
   
   /**
     * Frame unique identifier.
     */
-  var id: FrameId = js.native
+  var id: FrameId
   
   /**
     * Identifier of the loader associated with this frame.
     */
-  var loaderId: LoaderId = js.native
+  var loaderId: LoaderId
   
   /**
     * Frame document's mimeType as determined by the browser.
     */
-  var mimeType: String = js.native
+  var mimeType: String
   
   /**
     * Frame's name as specified in the tag.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Parent frame identifier.
     */
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the main document is a secure context and explains why that is the case.
     */
-  var secureContextType: SecureContextType = js.native
+  var secureContextType: SecureContextType
   
   /**
     * Frame document's security origin.
     */
-  var securityOrigin: String = js.native
+  var securityOrigin: String
   
   /**
     * If the frame failed to load, this contains the URL that could not be loaded. Note that unlike url above, this URL may contain a fragment.
     */
-  var unreachableUrl: js.UndefOr[String] = js.native
+  var unreachableUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Frame document's URL without fragment.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Frame document's URL fragment including the '#'.
     */
-  var urlFragment: js.UndefOr[String] = js.native
+  var urlFragment: js.UndefOr[String] = js.undefined
 }
 object Frame {
   

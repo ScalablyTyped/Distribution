@@ -3,13 +3,11 @@ package typings.jointjs.anon
 import typings.jointjs.mod.highlighters.HighlighterJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Highlighter extends StObject {
   
-  var highlighter: js.UndefOr[HighlighterJSON] = js.native
+  var highlighter: js.UndefOr[HighlighterJSON] = js.undefined
 }
 object Highlighter {
   

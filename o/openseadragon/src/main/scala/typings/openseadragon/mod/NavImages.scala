@@ -2,29 +2,27 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavImages extends StObject {
   
-  var flip: NavImagesValues = js.native
+  var flip: NavImagesValues
   
-  var fullpage: NavImagesValues = js.native
+  var fullpage: NavImagesValues
   
-  var home: NavImagesValues = js.native
+  var home: NavImagesValues
   
-  var next: NavImagesValues = js.native
+  var next: NavImagesValues
   
-  var previous: NavImagesValues = js.native
+  var previous: NavImagesValues
   
-  var rotateleft: NavImagesValues = js.native
+  var rotateleft: NavImagesValues
   
-  var rotateright: NavImagesValues = js.native
+  var rotateright: NavImagesValues
   
-  var zoomIn: NavImagesValues = js.native
+  var zoomIn: NavImagesValues
   
-  var zoomOut: NavImagesValues = js.native
+  var zoomOut: NavImagesValues
 }
 object NavImages {
   

@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
     */
   var publishMetricAction: Input[
     RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction
-  ] = js.native
+  ]
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition {
   

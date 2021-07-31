@@ -10,13 +10,13 @@ React tooltip library built around react-popper
 | ------------------ | :-------------: |
 | Full name          | react-popper-tooltip |
 | Keywords           | react, tooltip, popover, overlay, react-tooltip, react-popper |
-| # releases         | 53 |
-| # dependents       | 33 |
-| # downloads        | 61728571 |
+| # releases         | 18 |
+| # dependents       | 44 |
+| # downloads        | 89809688 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://react-popper-tooltip.netlify.app)
+- [Homepage](https://github.com/mohsinulhaq/react-popper-tooltip#readme)
 - [Bugs](https://github.com/mohsinulhaq/react-popper-tooltip/issues)
 - [Repository](https://github.com/mohsinulhaq/react-popper-tooltip)
 - [Npm](https://www.npmjs.com/package/react-popper-tooltip)

@@ -13,7 +13,6 @@ import typings.rdfJs.mod.Stream
 import typings.rdfjsExpressHandler.anon.Typeofformats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,22 +29,21 @@ object mod extends Shortcut {
   @js.native
   trait RdfHandler extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def apply(options: RdfHandlerOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(options: RdfHandlerOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
-    def attach(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): js.Promise[Unit] = js.native
+    def attach(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait RdfHandlerOptions extends StObject {
     
-    var baseIriFromRequest: js.UndefOr[Boolean | BaseIriFromRequest] = js.native
+    var baseIriFromRequest: js.UndefOr[Boolean | BaseIriFromRequest] = js.undefined
     
-    var defaultMediaType: js.UndefOr[String] = js.native
+    var defaultMediaType: js.UndefOr[String] = js.undefined
     
-    var factory: js.UndefOr[DatasetCoreFactory[Quad, Quad, DatasetCore[Quad, Quad]]] = js.native
+    var factory: js.UndefOr[DatasetCoreFactory[Quad, Quad, DatasetCore[Quad, Quad]]] = js.undefined
     
-    var formats: js.UndefOr[Typeofformats] = js.native
+    var formats: js.UndefOr[Typeofformats] = js.undefined
   }
   object RdfHandlerOptions {
     
@@ -104,12 +102,11 @@ object mod extends Shortcut {
       def quadStream(parserOptions: js.Any): Stream[Quad] = js.native
     }
     
-    @js.native
     trait Response extends StObject {
       
-      def dataset(dataset: DatasetCore[Quad, Quad]): js.Promise[Unit] = js.native
+      def dataset(dataset: DatasetCore[Quad, Quad]): js.Promise[Unit]
       
-      def quadStream(stream: Stream[Quad]): js.Promise[Unit] = js.native
+      def quadStream(stream: Stream[Quad]): js.Promise[Unit]
     }
     object Response {
       

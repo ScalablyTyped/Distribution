@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,22 +13,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * notification calls ( {@link XUpdateListener.updated()} ) immediately afterwards.
   * @see XUpdateListener
   */
-@js.native
-trait XUpdateBroadcaster extends XInterface {
+trait XUpdateBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive the events "approveUpdate" and "updated".
     * @param aListener the listener to add.
     * @see com.sun.star.form.XUpdateListener
     */
-  def addUpdateListener(aListener: XUpdateListener): Unit = js.native
+  def addUpdateListener(aListener: XUpdateListener): Unit
   
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XUpdateListener
     */
-  def removeUpdateListener(aListener: XUpdateListener): Unit = js.native
+  def removeUpdateListener(aListener: XUpdateListener): Unit
 }
 object XUpdateBroadcaster {
   

@@ -8,48 +8,48 @@ import typings.koa.mod.Request
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-proxy", JSImport.Namespace)
   @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-proxy", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   type IndexedObject = StringDictionary[String]
   
   type MapFunction = js.Function1[/* path */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var jar: js.UndefOr[Boolean] = js.native
+    var jar: js.UndefOr[Boolean] = js.undefined
     
-    var map: js.UndefOr[IndexedObject | MapFunction] = js.native
+    var map: js.UndefOr[IndexedObject | MapFunction] = js.undefined
     
-    var `match`: js.UndefOr[RegExp] = js.native
-    
-    // case-insensitive
-    var overrideResponseHeaders: js.UndefOr[js.Any] = js.native
-    
-    var requestOptions: js.UndefOr[RequestOptionFunc | IndexedObject] = js.native
-    
-    var suppressRequestHeaders: js.UndefOr[js.Array[String]] = js.native
+    var `match`: js.UndefOr[RegExp] = js.undefined
     
     // case-insensitive
-    var suppressResponseHeaders: js.UndefOr[js.Array[String]] = js.native
+    var overrideResponseHeaders: js.UndefOr[js.Any] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var requestOptions: js.UndefOr[RequestOptionFunc | IndexedObject] = js.undefined
     
-    var yieldNext: js.UndefOr[Boolean] = js.native
+    var suppressRequestHeaders: js.UndefOr[js.Array[String]] = js.undefined
+    
+    // case-insensitive
+    var suppressResponseHeaders: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var url: js.UndefOr[String] = js.undefined
+    
+    var yieldNext: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

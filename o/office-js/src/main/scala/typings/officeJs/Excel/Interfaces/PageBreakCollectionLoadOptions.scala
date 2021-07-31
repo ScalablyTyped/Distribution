@@ -2,20 +2,18 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait PageBreakCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageBreakCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnIndex: js.UndefOr[Boolean] = js.native
+  var columnIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageBreakCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.native
+  var rowIndex: js.UndefOr[Boolean] = js.undefined
 }
 object PageBreakCollectionLoadOptions {
   

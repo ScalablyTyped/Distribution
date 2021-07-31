@@ -2,21 +2,19 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerSubTitle extends StObject {
   
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[SubTitleType] = js.native
+  var `type`: js.UndefOr[SubTitleType] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object DPlayerSubTitle {
   

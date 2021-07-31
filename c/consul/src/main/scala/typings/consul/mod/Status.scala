@@ -4,7 +4,6 @@ import typings.consul.mod.Status.LeaderOptions
 import typings.consul.mod.Status.PeersOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

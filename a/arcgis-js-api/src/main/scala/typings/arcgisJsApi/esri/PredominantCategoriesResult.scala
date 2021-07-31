@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PredominantCategoriesResult extends Object {
+trait PredominantCategoriesResult
+  extends StObject
+     with Object {
   
   /**
     * An array of objects describing the count of each predominant category.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
     */
-  var predominantCategoryInfos: js.Array[PredominantCategoriesResultPredominantCategoryInfos] = js.native
+  var predominantCategoryInfos: js.Array[PredominantCategoriesResultPredominantCategoryInfos]
 }
 object PredominantCategoriesResult {
   

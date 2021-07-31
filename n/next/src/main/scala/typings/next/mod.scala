@@ -6,7 +6,6 @@ import typings.next.anon.Locale
 import typings.next.libUtilsMod.NextComponentType
 import typings.next.libUtilsMod.NextPageContext
 import typings.next.nextBooleans.`false`
-import typings.next.nextBooleans.`true`
 import typings.next.nextMod.NextServerConstructor
 import typings.next.nextNumbers.`301`
 import typings.next.nextNumbers.`302`
@@ -21,42 +20,43 @@ import typings.node.querystringMod.ParsedUrlQuery
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("next", JSImport.Default)
+  @JSImport("next", JSImport.Namespace)
   @js.native
-  def default(options: NextServerConstructor): typings.next.nextServerMod.default = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(options: NextServerConstructor): typings.next.nextServerMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.next.nextServerMod.default]
   
   type GetServerSideProps[P /* <: StringDictionary[js.Any] */, Q /* <: ParsedUrlQuery */] = js.Function1[
     /* context */ GetServerSidePropsContext[Q], 
     js.Promise[GetServerSidePropsResult[P]]
   ]
   
-  @js.native
   trait GetServerSidePropsContext[Q /* <: ParsedUrlQuery */] extends StObject {
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
-    var params: js.UndefOr[Q] = js.native
+    var params: js.UndefOr[Q] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
-    var previewData: js.UndefOr[js.Any] = js.native
+    var previewData: js.UndefOr[js.Any] = js.undefined
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var req: IncomingMessage = js.native
+    var req: IncomingMessage
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse
     
-    var resolvedUrl: String = js.native
+    var resolvedUrl: String
   }
   object GetServerSidePropsContext {
     
@@ -67,7 +67,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GetServerSidePropsContextMutableBuilder[Self <: GetServerSidePropsContext[_], Q /* <: ParsedUrlQuery */] (val x: Self with GetServerSidePropsContext[Q]) extends AnyVal {
+    implicit class GetServerSidePropsContextMutableBuilder[Self <: GetServerSidePropsContext[?], Q /* <: ParsedUrlQuery */] (val x: Self & GetServerSidePropsContext[Q]) extends AnyVal {
       
       @scala.inline
       def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
@@ -131,8 +131,8 @@ object mod {
   object GetServerSidePropsResult {
     
     @scala.inline
-    def NotFound(notFound: `true`): typings.next.anon.NotFound = {
-      val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
+    def NotFound(): typings.next.anon.NotFound = {
+      val __obj = js.Dynamic.literal(notFound = true)
       __obj.asInstanceOf[typings.next.anon.NotFound]
     }
     
@@ -151,12 +151,11 @@ object mod {
   
   type GetStaticPaths[P /* <: ParsedUrlQuery */] = js.Function1[/* context */ GetStaticPathsContext, js.Promise[GetStaticPathsResult[P]]]
   
-  @js.native
   trait GetStaticPathsContext extends StObject {
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetStaticPathsContext {
     
@@ -186,12 +185,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GetStaticPathsResult[P /* <: ParsedUrlQuery */] extends StObject {
     
-    var fallback: Boolean | blocking = js.native
+    var fallback: Boolean | blocking
     
-    var paths: js.Array[String | Locale[P]] = js.native
+    var paths: js.Array[String | Locale[P]]
   }
   object GetStaticPathsResult {
     
@@ -202,7 +200,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GetStaticPathsResultMutableBuilder[Self <: GetStaticPathsResult[_], P /* <: ParsedUrlQuery */] (val x: Self with GetStaticPathsResult[P]) extends AnyVal {
+    implicit class GetStaticPathsResultMutableBuilder[Self <: GetStaticPathsResult[?], P /* <: ParsedUrlQuery */] (val x: Self & GetStaticPathsResult[P]) extends AnyVal {
       
       @scala.inline
       def setFallback(value: Boolean | blocking): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
@@ -217,20 +215,19 @@ object mod {
   
   type GetStaticProps[P /* <: StringDictionary[js.Any] */, Q /* <: ParsedUrlQuery */] = js.Function1[/* context */ GetStaticPropsContext[Q], js.Promise[GetStaticPropsResult[P]]]
   
-  @js.native
   trait GetStaticPropsContext[Q /* <: ParsedUrlQuery */] extends StObject {
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
-    var params: js.UndefOr[Q] = js.native
+    var params: js.UndefOr[Q] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
-    var previewData: js.UndefOr[js.Any] = js.native
+    var previewData: js.UndefOr[js.Any] = js.undefined
   }
   object GetStaticPropsContext {
     
@@ -241,7 +238,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GetStaticPropsContextMutableBuilder[Self <: GetStaticPropsContext[_], Q /* <: ParsedUrlQuery */] (val x: Self with GetStaticPropsContext[Q]) extends AnyVal {
+    implicit class GetStaticPropsContextMutableBuilder[Self <: GetStaticPropsContext[?], Q /* <: ParsedUrlQuery */] (val x: Self & GetStaticPropsContext[Q]) extends AnyVal {
       
       @scala.inline
       def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
@@ -293,8 +290,8 @@ object mod {
   object GetStaticPropsResult {
     
     @scala.inline
-    def NotFound(notFound: `true`): typings.next.anon.NotFound = {
-      val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
+    def NotFound(): typings.next.anon.NotFound = {
+      val __obj = js.Dynamic.literal(notFound = true)
       __obj.asInstanceOf[typings.next.anon.NotFound]
     }
     
@@ -317,16 +314,15 @@ object mod {
   
   type NextPage[P, IP] = NextComponentType[NextPageContext, IP, P]
   
-  @js.native
   trait PageConfig extends StObject {
     
-    var amp: js.UndefOr[Boolean | hybrid] = js.native
+    var amp: js.UndefOr[Boolean | hybrid] = js.undefined
     
-    var api: js.UndefOr[BodyParser] = js.native
+    var api: js.UndefOr[BodyParser] = js.undefined
     
-    var env: js.UndefOr[js.Array[String]] = js.native
+    var env: js.UndefOr[js.Array[String]] = js.undefined
     
-    var unstable_runtimeJS: js.UndefOr[`false`] = js.native
+    var unstable_runtimeJS: js.UndefOr[`false`] = js.undefined
   }
   object PageConfig {
     
@@ -393,10 +389,11 @@ object mod {
   object reactAugmentingMod {
     
     // <html amp=""> support
-    @js.native
-    trait HtmlHTMLAttributes[T] extends HTMLAttributes[T] {
+    trait HtmlHTMLAttributes[T]
+      extends StObject
+         with HTMLAttributes[T] {
       
-      var amp: js.UndefOr[String] = js.native
+      var amp: js.UndefOr[String] = js.undefined
     }
     object HtmlHTMLAttributes {
       
@@ -407,7 +404,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class HtmlHTMLAttributesMutableBuilder[Self <: HtmlHTMLAttributes[_], T] (val x: Self with HtmlHTMLAttributes[T]) extends AnyVal {
+      implicit class HtmlHTMLAttributesMutableBuilder[Self <: HtmlHTMLAttributes[?], T] (val x: Self & HtmlHTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setAmp(value: String): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
@@ -418,10 +415,11 @@ object mod {
     }
     
     // <link nonce=""> support
-    @js.native
-    trait LinkHTMLAttributes[T] extends HTMLAttributes[T] {
+    trait LinkHTMLAttributes[T]
+      extends StObject
+         with HTMLAttributes[T] {
       
-      var nonce: js.UndefOr[String] = js.native
+      var nonce: js.UndefOr[String] = js.undefined
     }
     object LinkHTMLAttributes {
       
@@ -432,7 +430,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class LinkHTMLAttributesMutableBuilder[Self <: LinkHTMLAttributes[_], T] (val x: Self with LinkHTMLAttributes[T]) extends AnyVal {
+      implicit class LinkHTMLAttributesMutableBuilder[Self <: LinkHTMLAttributes[?], T] (val x: Self & LinkHTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
@@ -443,12 +441,13 @@ object mod {
     }
     
     // <style jsx> and <style jsx global> support for styled-jsx
-    @js.native
-    trait StyleHTMLAttributes[T] extends HTMLAttributes[T] {
+    trait StyleHTMLAttributes[T]
+      extends StObject
+         with HTMLAttributes[T] {
       
-      var global: js.UndefOr[Boolean] = js.native
+      var global: js.UndefOr[Boolean] = js.undefined
       
-      var jsx: js.UndefOr[Boolean] = js.native
+      var jsx: js.UndefOr[Boolean] = js.undefined
     }
     object StyleHTMLAttributes {
       
@@ -459,7 +458,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[_], T] (val x: Self with StyleHTMLAttributes[T]) extends AnyVal {
+      implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])

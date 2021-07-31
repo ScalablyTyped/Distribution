@@ -2,36 +2,34 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseVideoSuccess extends StObject {
   
   /**
     * 选定视频的时间长度
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 返回选定视频的长
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * 选定视频的数据量大小
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * 临时文件路径，下载后的文件会存储到一个临时文件
     */
-  var tempFilePath: js.UndefOr[String] = js.native
+  var tempFilePath: js.UndefOr[String] = js.undefined
   
   /**
     * 返回选定视频的宽
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChooseVideoSuccess {
   

@@ -6,13 +6,14 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.end
 import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/position
 @JSImport("@ckeditor/ckeditor5-engine", "model.Position")
 @js.native
-class Position protected () extends _SchemaContextDefinition {
+class Position protected ()
+  extends StObject
+     with _SchemaContextDefinition {
   def this(root: DocumentFragment, path: js.Array[Double]) = this()
   def this(root: Element, path: js.Array[Double]) = this()
   def this(root: DocumentFragment, path: js.Array[Double], stickiness: PositionStickiness) = this()
@@ -70,63 +71,54 @@ class Position protected () extends _SchemaContextDefinition {
 }
 object Position {
   
-  /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAfter")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position")
   @js.native
-  def createAfter(item: Item): Position = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt(itemOrPosition: Item): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt(itemOrPosition: Item, offset: Double): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt(itemOrPosition: Position): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt(itemOrPosition: Position, offset: Double): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_after(itemOrPosition: Item, offset: after): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_after(itemOrPosition: Position, offset: after): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_before(itemOrPosition: Item, offset: before): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_before(itemOrPosition: Position, offset: before): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_end(itemOrPosition: Item, offset: end): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
-  @js.native
-  def createAt_end(itemOrPosition: Position, offset: end): Unit = js.native
+  @scala.inline
+  def createAfter(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createAfter")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createBefore")
-  @js.native
-  def createBefore(item: Item): Position = js.native
+  @scala.inline
+  def createAt(itemOrPosition: Item): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createAt(itemOrPosition: Item, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createAt(itemOrPosition: Position): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createAt(itemOrPosition: Position, offset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromParentAndOffset")
-  @js.native
-  def createFromParentAndOffset(parent: DocumentFragment, offset: Double): Position = js.native
-  /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromParentAndOffset")
-  @js.native
-  def createFromParentAndOffset(parent: Element, offset: Double): Position = js.native
+  @scala.inline
+  def createAt_after(itemOrPosition: Item, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createAt_after(itemOrPosition: Position, offset: after): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def createAt_before(itemOrPosition: Item, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createAt_before(itemOrPosition: Position, offset: before): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def createAt_end(itemOrPosition: Item, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createAt_end(itemOrPosition: Position, offset: end): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAt")(itemOrPosition.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromPosition")
-  @js.native
-  def createFromPosition(position: Position): Position = js.native
+  @scala.inline
+  def createBefore(item: Item): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createBefore")(item.asInstanceOf[js.Any]).asInstanceOf[Position]
+  
+  @scala.inline
+  def createFromParentAndOffset(parent: DocumentFragment, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
+  /* static member */
+  @scala.inline
+  def createFromParentAndOffset(parent: Element, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromParentAndOffset")(parent.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.fromJSON")
-  @js.native
-  def fromJSON(json: js.Object, doc: Document): Position = js.native
+  @scala.inline
+  def createFromPosition(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPosition")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
+  
+  /* static member */
+  @scala.inline
+  def fromJSON(json: js.Object, doc: Document): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Position]
 }

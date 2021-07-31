@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.Intl.ResolvedDateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "DateTime")
@@ -19,16 +18,16 @@ class DateTime () extends StObject {
   var daysInYear: Double = js.native
   
   def diff(other: DateTime): Duration = js.native
-  def diff(other: DateTime, unit: js.UndefOr[scala.Nothing], options: DiffOptions): Duration = js.native
   def diff(other: DateTime, unit: js.Array[DurationUnit]): Duration = js.native
   def diff(other: DateTime, unit: js.Array[DurationUnit], options: DiffOptions): Duration = js.native
+  def diff(other: DateTime, unit: Unit, options: DiffOptions): Duration = js.native
   def diff(other: DateTime, unit: DurationUnit): Duration = js.native
   def diff(other: DateTime, unit: DurationUnit, options: DiffOptions): Duration = js.native
   
   def diffNow(): Duration = js.native
-  def diffNow(unit: js.UndefOr[scala.Nothing], options: DiffOptions): Duration = js.native
   def diffNow(unit: js.Array[DurationUnit]): Duration = js.native
   def diffNow(unit: js.Array[DurationUnit], options: DiffOptions): Duration = js.native
+  def diffNow(unit: Unit, options: DiffOptions): Duration = js.native
   def diffNow(unit: DurationUnit): Duration = js.native
   def diffNow(unit: DurationUnit, options: DiffOptions): Duration = js.native
   
@@ -133,10 +132,10 @@ class DateTime () extends StObject {
   
   def toLocal(): DateTime = js.native
   
-  def toLocaleParts(): js.Array[_] = js.native
-  def toLocaleParts(options: LocaleOptions with DateTimeFormatOptions): js.Array[_] = js.native
+  def toLocaleParts(): js.Array[js.Any] = js.native
+  def toLocaleParts(options: LocaleOptions & DateTimeFormatOptions): js.Array[js.Any] = js.native
   
-  def toLocaleString(options: LocaleOptions with DateTimeFormatOptions): String = js.native
+  def toLocaleString(options: LocaleOptions & DateTimeFormatOptions): String = js.native
   
   def toMillis(): Double = js.native
   
@@ -162,9 +161,9 @@ class DateTime () extends StObject {
   def toSeconds(): Double = js.native
   
   def toUTC(): DateTime = js.native
-  def toUTC(offset: js.UndefOr[scala.Nothing], options: ZoneOptions): DateTime = js.native
   def toUTC(offset: Double): DateTime = js.native
   def toUTC(offset: Double, options: ZoneOptions): DateTime = js.native
+  def toUTC(offset: Unit, options: ZoneOptions): DateTime = js.native
   
   def until(other: DateTime): Interval = js.native
   
@@ -188,6 +187,10 @@ class DateTime () extends StObject {
 }
 /* static members */
 object DateTime {
+  
+  @JSImport("luxon", "DateTime")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("luxon", "DateTime.DATETIME_FULL")
   @js.native
@@ -274,92 +277,69 @@ object DateTime {
   @js.native
   val TIME_WITH_SHORT_OFFSET: DateTimeFormatOptions = js.native
   
-  @JSImport("luxon", "DateTime.fromFormat")
-  @js.native
-  def fromFormat(text: String, format: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromFormat")
-  @js.native
-  def fromFormat(text: String, format: String, opts: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromFormat(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  @scala.inline
+  def fromFormat(text: String, format: String, opts: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromFormatExplain")
-  @js.native
-  def fromFormatExplain(text: String, format: String): ExplainedFormat = js.native
-  @JSImport("luxon", "DateTime.fromFormatExplain")
-  @js.native
-  def fromFormatExplain(text: String, format: String, opts: DateTimeOptions): ExplainedFormat = js.native
+  @scala.inline
+  def fromFormatExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  @scala.inline
+  def fromFormatExplain(text: String, format: String, opts: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
   
-  @JSImport("luxon", "DateTime.fromHTTP")
-  @js.native
-  def fromHTTP(text: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromHTTP")
-  @js.native
-  def fromHTTP(text: String, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromHTTP(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromHTTP(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromISO")
-  @js.native
-  def fromISO(text: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromISO")
-  @js.native
-  def fromISO(text: String, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromISO(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromISO(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromJSDate")
-  @js.native
-  def fromJSDate(date: Date): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromJSDate")
-  @js.native
-  def fromJSDate(date: Date, options: DateTimeJSOptions): DateTime = js.native
+  @scala.inline
+  def fromJSDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromJSDate(date: Date, options: DateTimeJSOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromMillis")
-  @js.native
-  def fromMillis(ms: Double): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromMillis")
-  @js.native
-  def fromMillis(ms: Double, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromMillis(ms: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromMillis(ms: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromObject")
-  @js.native
-  def fromObject(obj: DateObject): DateTime = js.native
+  @scala.inline
+  def fromObject(obj: DateObject): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromRFC2822")
-  @js.native
-  def fromRFC2822(text: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromRFC2822")
-  @js.native
-  def fromRFC2822(text: String, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromRFC2822(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromRFC2822(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromSQL")
-  @js.native
-  def fromSQL(text: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromSQL")
-  @js.native
-  def fromSQL(text: String, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromSQL(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromSQL(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.fromSeconds")
-  @js.native
-  def fromSeconds(seconds: Double): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromSeconds")
-  @js.native
-  def fromSeconds(seconds: Double, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromSeconds(seconds: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def fromSeconds(seconds: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
   /**
     * @deprecated since 0.3.0. Use fromFormat instead
     */
-  @JSImport("luxon", "DateTime.fromString")
-  @js.native
-  def fromString(text: String, format: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.fromString")
-  @js.native
-  def fromString(text: String, format: String, options: DateTimeOptions): DateTime = js.native
+  @scala.inline
+  def fromString(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  @scala.inline
+  def fromString(text: String, format: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
   /**
     * @deprecated 0.3.0. Use fromFormatExplain instead
     */
-  @JSImport("luxon", "DateTime.fromStringExplain")
-  @js.native
-  def fromStringExplain(text: String, format: String): ExplainedFormat = js.native
-  @JSImport("luxon", "DateTime.fromStringExplain")
-  @js.native
-  def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = js.native
+  @scala.inline
+  def fromStringExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  @scala.inline
+  def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
   
   /**
     * Create an invalid DateTime.
@@ -367,19 +347,15 @@ object DateTime {
     * Should not contain parameters or anything else data-dependent
     * @param [explanation=null] - longer explanation, may include parameters and other useful debugging information
     */
-  @JSImport("luxon", "DateTime.invalid")
-  @js.native
-  def invalid(reason: String): DateTime = js.native
-  @JSImport("luxon", "DateTime.invalid")
-  @js.native
-  def invalid(reason: String, explanation: String): DateTime = js.native
+  @scala.inline
+  def invalid(reason: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  @scala.inline
+  def invalid(reason: String, explanation: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.isDateTime")
-  @js.native
-  def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = js.native
+  @scala.inline
+  def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.DateTime */ Boolean]
   
-  @JSImport("luxon", "DateTime.local")
-  @js.native
+  @scala.inline
   def local(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -388,24 +364,19 @@ object DateTime {
     minute: js.UndefOr[Double],
     second: js.UndefOr[Double],
     millisecond: js.UndefOr[Double]
-  ): DateTime = js.native
+  ): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.max")
-  @js.native
-  def max(): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("luxon", "DateTime.max")
-  @js.native
-  def max(dateTimes: DateTime*): DateTime = js.native
+  @scala.inline
+  def max(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Unit]
+  @scala.inline
+  def max(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.min")
-  @js.native
-  def min(): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("luxon", "DateTime.min")
-  @js.native
-  def min(dateTimes: DateTime*): DateTime = js.native
+  @scala.inline
+  def min(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[Unit]
+  @scala.inline
+  def min(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @JSImport("luxon", "DateTime.utc")
-  @js.native
+  @scala.inline
   def utc(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -414,5 +385,5 @@ object DateTime {
     minute: js.UndefOr[Double],
     second: js.UndefOr[Double],
     millisecond: js.UndefOr[Double]
-  ): DateTime = js.native
+  ): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[DateTime]
 }

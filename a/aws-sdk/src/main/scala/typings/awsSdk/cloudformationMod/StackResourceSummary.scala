@@ -2,46 +2,44 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackResourceSummary extends StObject {
   
   /**
     * Information about whether the resource's actual configuration differs, or has drifted, from its expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
     */
-  var DriftInformation: js.UndefOr[StackResourceDriftInformationSummary] = js.native
+  var DriftInformation: js.UndefOr[StackResourceDriftInformationSummary] = js.undefined
   
   /**
     * Time the status was updated.
     */
-  var LastUpdatedTimestamp: Timestamp = js.native
+  var LastUpdatedTimestamp: Timestamp
   
   /**
     * The logical name of the resource specified in the template.
     */
-  var LogicalResourceId: typings.awsSdk.cloudformationMod.LogicalResourceId = js.native
+  var LogicalResourceId: typings.awsSdk.cloudformationMod.LogicalResourceId
   
   /**
     * The name or unique identifier that corresponds to a physical instance ID of the resource.
     */
-  var PhysicalResourceId: js.UndefOr[typings.awsSdk.cloudformationMod.PhysicalResourceId] = js.native
+  var PhysicalResourceId: js.UndefOr[typings.awsSdk.cloudformationMod.PhysicalResourceId] = js.undefined
   
   /**
     * Current status of the resource.
     */
-  var ResourceStatus: typings.awsSdk.cloudformationMod.ResourceStatus = js.native
+  var ResourceStatus: typings.awsSdk.cloudformationMod.ResourceStatus
   
   /**
     * Success/failure message associated with the resource.
     */
-  var ResourceStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceStatusReason] = js.native
+  var ResourceStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceStatusReason] = js.undefined
   
   /**
     * Type of resource. (For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
     */
-  var ResourceType: typings.awsSdk.cloudformationMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.cloudformationMod.ResourceType
 }
 object StackResourceSummary {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
   */
-@js.native
 trait PlusSpeechSpeechRecognizeOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var continue: js.UndefOr[Boolean] = js.native
+  var continue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 语音识别引擎标识
@@ -31,7 +29,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var engine: js.UndefOr[String] = js.native
+  var engine: js.UndefOr[String] = js.undefined
   
   /**
     * 语音识别引擎的语言
@@ -45,7 +43,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * 指定识别结果识别包括多候选结果
@@ -53,7 +51,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var nbest: js.UndefOr[Double] = js.native
+  var nbest: js.UndefOr[Double] = js.undefined
   
   /**
     * 语音识别结束事件（已废弃，使用end事件）
@@ -62,7 +60,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var onend: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onend: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 语音识别开始事件（已废弃，使用start事件）
@@ -71,7 +69,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var onstart: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onstart: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 识别结果中是否包含标点符号
@@ -80,7 +78,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var punctuation: js.UndefOr[Boolean] = js.native
+  var punctuation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 语音识别超时时间
@@ -89,7 +87,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * 识别时是否显示用户界面
@@ -97,7 +95,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var userInterface: js.UndefOr[Boolean] = js.native
+  var userInterface: js.UndefOr[Boolean] = js.undefined
 }
 object PlusSpeechSpeechRecognizeOptions {
   

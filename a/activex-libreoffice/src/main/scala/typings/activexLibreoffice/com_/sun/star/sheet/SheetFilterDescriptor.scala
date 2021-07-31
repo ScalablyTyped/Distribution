@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.table.TableOrientation
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,50 +18,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The descriptor contains properties and a collection of filter conditions (filter fields) which control the behavior of a filter operation.
   */
-@js.native
 trait SheetFilterDescriptor
-  extends XSheetFilterDescriptor
+  extends StObject
+     with XSheetFilterDescriptor
      with XSheetFilterDescriptor2
      with XPropertySet {
   
   /** specifies if the first row (or column) contains headers which should not be filtered. */
-  var ContainsHeader: Boolean = js.native
+  var ContainsHeader: Boolean
   
   /** specifies if the filtered data should be copied to another position in the document. */
-  var CopyOutputData: Boolean = js.native
+  var CopyOutputData: Boolean
   
   /** specifies if the case of letters is important when comparing entries. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
   
   /**
     * returns the maximum number of filter fields in the descriptor.
     *
     * This read-only property indicates the maximum count of fields the current implementation supports.
     */
-  var MaxFieldCount: Double = js.native
+  var MaxFieldCount: Double
   
   /** specifies if columns or rows are filtered. */
-  var Orientation: TableOrientation = js.native
+  var Orientation: TableOrientation
   
   /**
     * specifies the position where filtered data are to be copied.
     *
     * This is only used if {@link SheetFilterDescriptor.CopyOutputData} is `TRUE` .
     */
-  var OutputPosition: CellAddress = js.native
+  var OutputPosition: CellAddress
   
   /**
     * specifies if the {@link SheetFilterDescriptor.OutputPosition} position is saved for future calls.
     *
     * This is only used if {@link SheetFilterDescriptor.CopyOutputData} is `TRUE` .
     */
-  var SaveOutputPosition: Boolean = js.native
+  var SaveOutputPosition: Boolean
   
   /** specifies if duplicate entries are left out of the result. */
-  var SkipDuplicates: Boolean = js.native
+  var SkipDuplicates: Boolean
   
   /** specifies if the {@link TableFilterField.StringValue} strings are interpreted as regular expressions. */
-  var UseRegularExpressions: Boolean = js.native
+  var UseRegularExpressions: Boolean
 }
 object SheetFilterDescriptor {
   

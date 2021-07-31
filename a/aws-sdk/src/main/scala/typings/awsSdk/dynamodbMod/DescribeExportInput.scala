@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) associated with the export.
     */
-  var ExportArn: typings.awsSdk.dynamodbMod.ExportArn = js.native
+  var ExportArn: typings.awsSdk.dynamodbMod.ExportArn
 }
 object DescribeExportInput {
   

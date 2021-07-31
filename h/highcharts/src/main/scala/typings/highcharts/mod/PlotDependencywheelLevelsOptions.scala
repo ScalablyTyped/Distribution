@@ -2,34 +2,32 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotDependencywheelLevelsOptions extends StObject {
   
   /**
     * (Highcharts) Can set `borderColor` on all nodes which lay on the same
     * level.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts) Can set `borderWidth` on all nodes which lay on the same
     * level.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set `color` on all nodes which lay on the same level.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) Can set `colorByPoint` on all nodes which lay on the same
     * level.
     */
-  var colorByPoint: js.UndefOr[Boolean] = js.native
+  var colorByPoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Can set `dataLabels` on all
@@ -37,25 +35,25 @@ trait PlotDependencywheelLevelsOptions extends StObject {
     */
   var dataLabels: js.UndefOr[
     SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
     * levels object.
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set `linkOpacity` on all points which lay on the same
     * level.
     */
-  var linkOpacity: js.UndefOr[Double] = js.native
+  var linkOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set `states` on all nodes and points which lay on the
     * same level.
     */
-  var states: js.UndefOr[SeriesStatesOptionsObject] = js.native
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
 }
 object PlotDependencywheelLevelsOptions {
   

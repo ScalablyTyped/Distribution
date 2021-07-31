@@ -3,7 +3,6 @@ package typings.calendar
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,7 @@ object mod {
     def this(firstWeekDay: Double) = this()
     
     def monthDates(year: Double, month: Double): js.Array[Date] = js.native
-    def monthDates(year: Double, month: Double, dayFormatter: js.UndefOr[scala.Nothing], weekFormatter: WeekFormatter): js.Array[Date] = js.native
+    def monthDates(year: Double, month: Double, dayFormatter: Unit, weekFormatter: WeekFormatter): js.Array[Date] = js.native
     def monthDates(year: Double, month: Double, dayFormatter: DayFormatter): js.Array[Date] = js.native
     def monthDates(year: Double, month: Double, dayFormatter: DayFormatter, weekFormatter: WeekFormatter): js.Array[Date] = js.native
     

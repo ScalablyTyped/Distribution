@@ -4,15 +4,13 @@ import typings.xstate.anon.Id
 import typings.xstate.typesMod.ActionTypes.Stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopActionObject extends StObject {
   
-  var activity: Id = js.native
+  var activity: Id
   
-  var `type`: Stop = js.native
+  var `type`: Stop
 }
 object StopActionObject {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generic targeting used for targeting dimensions that contains a list of
   * included and excluded numeric IDs.
   */
-@js.native
 trait SchemaCriteriaTargeting extends StObject {
   
   /**
     * A list of numeric IDs to be excluded.
     */
-  var excludedCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of numeric IDs to be included.
     */
-  var targetedCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var targetedCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCriteriaTargeting {
   

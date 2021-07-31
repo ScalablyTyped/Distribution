@@ -3,20 +3,20 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.proxy.IServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDirectProxy extends IServer {
+trait IDirectProxy
+  extends StObject
+     with IServer {
   
   /** [Method] inherit docs
     * @returns String The url
     */
   @JSName("buildUrl")
-  var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.native
+  var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Function/String) */
-  var directFn: js.UndefOr[js.Any] = js.native
+  var directFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
     * @param operation Object
@@ -31,13 +31,13 @@ trait IDirectProxy extends IServer {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.native
+  var paramOrder: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var paramsAsHash: js.UndefOr[Boolean] = js.native
+  var paramsAsHash: js.UndefOr[Boolean] = js.undefined
 }
 object IDirectProxy {
   

@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSitesReleasesCreate extends StandardParameters {
+trait ParamsResourceSitesReleasesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The site that the release belongs to, in the format:
     * <code>sites/<var>site-name</var></code>
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRelease] = js.native
+  var requestBody: js.UndefOr[SchemaRelease] = js.undefined
   
   /**
     * The unique identifier for a version, in the format:
@@ -36,7 +36,7 @@ trait ParamsResourceSitesReleasesCreate extends StandardParameters {
     * parameter must be empty if the `type` field in the request body is
     * `SITE_DISABLE`.
     */
-  var versionName: js.UndefOr[String] = js.native
+  var versionName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSitesReleasesCreate {
   

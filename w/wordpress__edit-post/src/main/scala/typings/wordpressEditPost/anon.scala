@@ -10,19 +10,17 @@ import typings.wordpressEditPost.wordpressEditPostStrings.text
 import typings.wordpressEditPost.wordpressEditPostStrings.visual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AjaxUrl extends StObject {
     
-    var ajaxUrl: String = js.native
+    var ajaxUrl: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var unlockNonce: String = js.native
+    var unlockNonce: String
   }
   object AjaxUrl {
     
@@ -46,14 +44,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var name: String = js.native
+    var name: String
     
-    var slug: String = js.native
+    var slug: String
   }
   object Color {
     
@@ -77,10 +74,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Css extends StObject {
     
-    var css: String = js.native
+    var css: String
   }
   object Css {
     
@@ -98,16 +94,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var isCallbackWidget: Boolean = js.native
+    var isCallbackWidget: Boolean
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object Description {
     
@@ -134,18 +129,17 @@ object anon {
     }
   }
   
-  @js.native
   trait IsLocked extends StObject {
     
-    var isLocked: Boolean = js.native
+    var isLocked: Boolean
     
-    var user: Null | String = js.native
+    var user: Null | String
   }
   object IsLocked {
     
     @scala.inline
     def apply(isLocked: Boolean): IsLocked = {
-      val __obj = js.Dynamic.literal(isLocked = isLocked.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isLocked = isLocked.asInstanceOf[js.Any], user = null)
       __obj.asInstanceOf[IsLocked]
     }
     
@@ -163,14 +157,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var slug: String = js.native
+    var slug: String
   }
   object Name {
     
@@ -195,14 +188,13 @@ object anon {
   }
   
   /* Inlined std.Omit<@wordpress/components.@wordpress/components.Slot.Props, 'name'> */
-  @js.native
   trait OmitPropsname extends StObject {
     
-    var bubblesVirtually: js.UndefOr[Boolean] = js.native
+    var bubblesVirtually: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.native
+    var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.undefined
     
-    var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object OmitPropsname {
     
@@ -236,60 +228,59 @@ object anon {
   }
   
   /* Inlined std.Partial<@wordpress/edit-post.@wordpress/edit-post.EditorSettings> */
-  @js.native
   trait PartialEditorSettings extends StObject {
     
-    var alignWide: js.UndefOr[Boolean] = js.native
+    var alignWide: js.UndefOr[Boolean] = js.undefined
     
-    var allowedBlockTypes: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var allowedBlockTypes: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var allowedMimeTypes: js.UndefOr[(Record[String, String]) | Null] = js.native
+    var allowedMimeTypes: js.UndefOr[(Record[String, String]) | Null] = js.undefined
     
-    var autosaveInterval: js.UndefOr[Double] = js.native
+    var autosaveInterval: js.UndefOr[Double] = js.undefined
     
-    var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.native
+    var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.undefined
     
-    var availableTemplates: js.UndefOr[js.Array[_]] = js.native
+    var availableTemplates: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var bodyPlaceholder: js.UndefOr[String] = js.native
+    var bodyPlaceholder: js.UndefOr[String] = js.undefined
     
-    var codeEditingEnabled: js.UndefOr[Boolean] = js.native
+    var codeEditingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var colors: js.UndefOr[js.Array[Color]] = js.native
+    var colors: js.UndefOr[js.Array[Color]] = js.undefined
     
-    var disableCustomColors: js.UndefOr[Boolean] = js.native
+    var disableCustomColors: js.UndefOr[Boolean] = js.undefined
     
-    var disableCustomFontSizes: js.UndefOr[Boolean] = js.native
+    var disableCustomFontSizes: js.UndefOr[Boolean] = js.undefined
     
-    var disablePostFormats: js.UndefOr[Boolean] = js.native
+    var disablePostFormats: js.UndefOr[Boolean] = js.undefined
     
-    var enableCustomFields: js.UndefOr[Boolean] = js.native
+    var enableCustomFields: js.UndefOr[Boolean] = js.undefined
     
-    var focusMode: js.UndefOr[Boolean] = js.native
+    var focusMode: js.UndefOr[Boolean] = js.undefined
     
-    var fontSizes: js.UndefOr[js.Array[Name]] = js.native
+    var fontSizes: js.UndefOr[js.Array[Name]] = js.undefined
     
-    var hasFixedToolbar: js.UndefOr[Boolean] = js.native
+    var hasFixedToolbar: js.UndefOr[Boolean] = js.undefined
     
-    var hasPermissionsToManageWidgets: js.UndefOr[Boolean] = js.native
+    var hasPermissionsToManageWidgets: js.UndefOr[Boolean] = js.undefined
     
-    var imageSizes: js.UndefOr[js.Array[Slug]] = js.native
+    var imageSizes: js.UndefOr[js.Array[Slug]] = js.undefined
     
-    var isRTL: js.UndefOr[Boolean] = js.native
+    var isRTL: js.UndefOr[Boolean] = js.undefined
     
-    var maxUploadFileSize: js.UndefOr[Double] = js.native
+    var maxUploadFileSize: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var postLock: js.UndefOr[IsLocked] = js.native
+    var postLock: js.UndefOr[IsLocked] = js.undefined
     
-    var postLockUtils: js.UndefOr[AjaxUrl] = js.native
+    var postLockUtils: js.UndefOr[AjaxUrl] = js.undefined
     
-    var richEditingEnabled: js.UndefOr[Boolean] = js.native
+    var richEditingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var styles: js.UndefOr[js.Array[Css]] = js.native
+    var styles: js.UndefOr[js.Array[Css]] = js.undefined
     
-    var titlePlaceholder: js.UndefOr[String] = js.native
+    var titlePlaceholder: js.UndefOr[String] = js.undefined
   }
   object PartialEditorSettings {
     
@@ -342,7 +333,7 @@ object anon {
       def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
       
       @scala.inline
-      def setAvailableTemplates(value: js.Array[_]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)
@@ -484,12 +475,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Slug extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var slug: String = js.native
+    var slug: String
   }
   object Slug {
     
@@ -571,7 +561,7 @@ object anon {
     def getPreference[T](preferenceKey: String): js.UndefOr[T] = js.native
     def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = js.native
     
-    def getPreferences(): Record[String, _] = js.native
+    def getPreferences(): Record[String, js.Any] = js.native
     
     def hasMetaBoxes(): Boolean = js.native
     

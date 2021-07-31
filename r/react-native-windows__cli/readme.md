@@ -10,9 +10,9 @@ CLI to build and run React Native for  Windows apps.
 | ------------------ | :-------------: |
 | Full name          | @react-native-windows/cli |
 | Keywords           | - |
-| # releases         | 48 |
+| # releases         | 85 |
 | # dependents       | 2 |
-| # downloads        | 33521 |
+| # downloads        | 106762 |
 | # stars            | 0 |
 
 ## Links

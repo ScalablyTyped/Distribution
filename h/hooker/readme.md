@@ -12,7 +12,7 @@ Monkey-patch (hook) functions for debugging and stuff.
 | Keywords           | patch, hook, function, debug, aop |
 | # releases         | 0 |
 | # dependents       | 63 |
-| # downloads        | 28073218 |
+| # downloads        | 28951812 |
 | # stars            | 9 |
 
 ## Links

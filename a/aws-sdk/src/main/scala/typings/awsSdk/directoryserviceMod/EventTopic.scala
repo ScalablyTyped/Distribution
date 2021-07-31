@@ -2,36 +2,34 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTopic extends StObject {
   
   /**
     * The date and time of when you associated your directory with the SNS topic.
     */
-  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.native
+  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.undefined
   
   /**
     * The Directory ID of an AWS Directory Service directory that will publish status messages to an SNS topic.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The topic registration status.
     */
-  var Status: js.UndefOr[TopicStatus] = js.native
+  var Status: js.UndefOr[TopicStatus] = js.undefined
   
   /**
     * The SNS topic ARN (Amazon Resource Name).
     */
-  var TopicArn: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicArn] = js.native
+  var TopicArn: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicArn] = js.undefined
   
   /**
     * The name of an AWS SNS topic the receives status messages from the directory.
     */
-  var TopicName: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicName] = js.native
+  var TopicName: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicName] = js.undefined
 }
 object EventTopic {
   

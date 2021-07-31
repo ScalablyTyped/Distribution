@@ -9,7 +9,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -17,21 +16,20 @@ object accordionMod {
   @JSImport("grommet/components/Accordion", "Accordion")
   @js.native
   val Accordion: FC[
-    BoxProps with AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & AccordionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
-  @js.native
   trait AccordionProps extends StObject {
     
-    var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+    var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var animate: js.UndefOr[AnimateType] = js.native
+    var animate: js.UndefOr[AnimateType] = js.undefined
     
-    var messages: js.UndefOr[TabContents] = js.native
+    var messages: js.UndefOr[TabContents] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onActive: js.UndefOr[js.Function1[/* activeIndexes */ js.Array[Double], Unit]] = js.native
+    var onActive: js.UndefOr[js.Function1[/* activeIndexes */ js.Array[Double], Unit]] = js.undefined
   }
   object AccordionProps {
     

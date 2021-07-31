@@ -3,7 +3,6 @@ package typings.typescriptCollections
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dictionaryMod {
@@ -28,18 +27,17 @@ object dictionaryMod {
     * is not appropriate, a custom function which receives a key and returns a
     * unique string must be provided.
     */
-  class default[K, V] () extends Dictionary[K, V] {
+  class default[K, V] ()
+    extends StObject
+       with Dictionary[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
-  }
-  
-  @js.native
-  trait Dictionary[K, V] extends StObject {
     
     /**
       * Removes all mappings from this dictionary.
       * @this {collections.Dictionary}
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * Returns true if this dictionary contains a mapping for the specified key.
@@ -48,7 +46,8 @@ object dictionaryMod {
       * @return {boolean} true if this dictionary contains a mapping for the
       * specified key.
       */
-    def containsKey(key: K): Boolean = js.native
+    /* CompleteClass */
+    override def containsKey(key: K): Boolean = js.native
     
     /**
       * Executes the provided function once for each key-value pair
@@ -57,7 +56,8 @@ object dictionaryMod {
       * invoked with two arguments: key and value. To break the iteration you can
       * optionally return false.
       */
-    def forEach(callback: js.Function2[/* key */ K, /* value */ V, _]): Unit = js.native
+    /* CompleteClass */
+    override def forEach(callback: js.Function2[K, V, js.Any]): Unit = js.native
     
     /**
       * Returns the value to which this dictionary maps the specified key.
@@ -66,25 +66,29 @@ object dictionaryMod {
       * @return {*} the value to which this dictionary maps the specified key or
       * undefined if the map contains no mapping for this key.
       */
-    def getValue(key: K): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def getValue(key: K): js.UndefOr[V] = js.native
     
     /**
       * Returns true if this dictionary contains no mappings.
       * @return {boolean} true if this dictionary contains no mappings.
       */
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
     /**
       * Returns an array containing all of the keys in this dictionary.
       * @return {Array} an array containing all of the keys in this dictionary.
       */
-    def keys(): js.Array[K] = js.native
+    /* CompleteClass */
+    override def keys(): js.Array[K] = js.native
     
     /**
       * Number of elements in the list.
       * @type {number}
       * @private
       */
+    /* CompleteClass */
     var nElements: Double = js.native
     
     /**
@@ -94,7 +98,8 @@ object dictionaryMod {
       * @return {*} previous value associated with specified key, or undefined if
       * there was no mapping for key.
       */
-    def remove(key: K): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def remove(key: K): js.UndefOr[V] = js.native
     
     /**
       * Associates the specified value with the specified key in this dictionary.
@@ -106,19 +111,22 @@ object dictionaryMod {
       * @return {*} previous value associated with the specified key, or undefined if
       * there was no mapping for the key or if the key/value are undefined.
       */
-    def setValue(key: K, value: V): js.UndefOr[V] = js.native
+    /* CompleteClass */
+    override def setValue(key: K, value: V): js.UndefOr[V] = js.native
     
     /**
       * Returns the number of keys in this dictionary.
       * @return {number} the number of key-value mappings in this dictionary.
       */
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
     
     /**
       * Object holding the key-value pairs.
       * @type {Object}
       * @private
       */
+    /* CompleteClass */
     var table: StringDictionary[IDictionaryPair[K, V]] = js.native
     
     /**
@@ -126,13 +134,117 @@ object dictionaryMod {
       * @type {function(Object):string}
       * @protected
       */
-    /* protected */ def toStr(key: K): String = js.native
+    /* CompleteClass */
+    /* protected */ override def toStr(key: K): String = js.native
     
     /**
       * Returns an array containing all of the values in this dictionary.
       * @return {Array} an array containing all of the values in this dictionary.
       */
-    def values(): js.Array[V] = js.native
+    /* CompleteClass */
+    override def values(): js.Array[V] = js.native
+  }
+  
+  trait Dictionary[K, V] extends StObject {
+    
+    /**
+      * Removes all mappings from this dictionary.
+      * @this {collections.Dictionary}
+      */
+    def clear(): Unit
+    
+    /**
+      * Returns true if this dictionary contains a mapping for the specified key.
+      * @param {Object} key key whose presence in this dictionary is to be
+      * tested.
+      * @return {boolean} true if this dictionary contains a mapping for the
+      * specified key.
+      */
+    def containsKey(key: K): Boolean
+    
+    /**
+      * Executes the provided function once for each key-value pair
+      * present in this dictionary.
+      * @param {function(Object,Object):*} callback function to execute, it is
+      * invoked with two arguments: key and value. To break the iteration you can
+      * optionally return false.
+      */
+    def forEach(callback: js.Function2[/* key */ K, /* value */ V, js.Any]): Unit
+    
+    /**
+      * Returns the value to which this dictionary maps the specified key.
+      * Returns undefined if this dictionary contains no mapping for this key.
+      * @param {Object} key key whose associated value is to be returned.
+      * @return {*} the value to which this dictionary maps the specified key or
+      * undefined if the map contains no mapping for this key.
+      */
+    def getValue(key: K): js.UndefOr[V]
+    
+    /**
+      * Returns true if this dictionary contains no mappings.
+      * @return {boolean} true if this dictionary contains no mappings.
+      */
+    def isEmpty(): Boolean
+    
+    /**
+      * Returns an array containing all of the keys in this dictionary.
+      * @return {Array} an array containing all of the keys in this dictionary.
+      */
+    def keys(): js.Array[K]
+    
+    /**
+      * Number of elements in the list.
+      * @type {number}
+      * @private
+      */
+    var nElements: Double
+    
+    /**
+      * Removes the mapping for this key from this dictionary if it is present.
+      * @param {Object} key key whose mapping is to be removed from the
+      * dictionary.
+      * @return {*} previous value associated with specified key, or undefined if
+      * there was no mapping for key.
+      */
+    def remove(key: K): js.UndefOr[V]
+    
+    /**
+      * Associates the specified value with the specified key in this dictionary.
+      * If the dictionary previously contained a mapping for this key, the old
+      * value is replaced by the specified value.
+      * @param {Object} key key with which the specified value is to be
+      * associated.
+      * @param {Object} value value to be associated with the specified key.
+      * @return {*} previous value associated with the specified key, or undefined if
+      * there was no mapping for the key or if the key/value are undefined.
+      */
+    def setValue(key: K, value: V): js.UndefOr[V]
+    
+    /**
+      * Returns the number of keys in this dictionary.
+      * @return {number} the number of key-value mappings in this dictionary.
+      */
+    def size(): Double
+    
+    /**
+      * Object holding the key-value pairs.
+      * @type {Object}
+      * @private
+      */
+    var table: StringDictionary[IDictionaryPair[K, V]]
+    
+    /**
+      * Function used to convert keys to strings.
+      * @type {function(Object):string}
+      * @protected
+      */
+    /* protected */ def toStr(key: K): String
+    
+    /**
+      * Returns an array containing all of the values in this dictionary.
+      * @return {Array} an array containing all of the values in this dictionary.
+      */
+    def values(): js.Array[V]
   }
   object Dictionary {
     
@@ -140,7 +252,7 @@ object dictionaryMod {
     def apply[K, V](
       clear: () => Unit,
       containsKey: K => Boolean,
-      forEach: js.Function2[/* key */ K, /* value */ V, _] => Unit,
+      forEach: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit,
       getValue: K => js.UndefOr[V],
       isEmpty: () => Boolean,
       keys: () => js.Array[K],
@@ -157,7 +269,7 @@ object dictionaryMod {
     }
     
     @scala.inline
-    implicit class DictionaryMutableBuilder[Self <: Dictionary[_, _], K, V] (val x: Self with (Dictionary[K, V])) extends AnyVal {
+    implicit class DictionaryMutableBuilder[Self <: Dictionary[?, ?], K, V] (val x: Self & (Dictionary[K, V])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -166,7 +278,7 @@ object dictionaryMod {
       def setContainsKey(value: K => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setForEach(value: js.Function2[/* key */ K, /* value */ V, _] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      def setForEach(value: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetValue(value: K => js.UndefOr[V]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
@@ -200,12 +312,11 @@ object dictionaryMod {
     }
   }
   
-  @js.native
   trait IDictionaryPair[K, V] extends StObject {
     
-    var key: K = js.native
+    var key: K
     
-    var value: V = js.native
+    var value: V
   }
   object IDictionaryPair {
     
@@ -216,7 +327,7 @@ object dictionaryMod {
     }
     
     @scala.inline
-    implicit class IDictionaryPairMutableBuilder[Self <: IDictionaryPair[_, _], K, V] (val x: Self with (IDictionaryPair[K, V])) extends AnyVal {
+    implicit class IDictionaryPairMutableBuilder[Self <: IDictionaryPair[?, ?], K, V] (val x: Self & (IDictionaryPair[K, V])) extends AnyVal {
       
       @scala.inline
       def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

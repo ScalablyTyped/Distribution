@@ -5,56 +5,54 @@ import typings.rollup.rollupBooleans.`false`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputOptions extends StObject {
   
-  var acorn: js.UndefOr[js.Object] = js.native
+  var acorn: js.UndefOr[js.Object] = js.undefined
   
-  var acornInjectPlugins: js.UndefOr[js.Function | js.Array[js.Function]] = js.native
+  var acornInjectPlugins: js.UndefOr[js.Function | js.Array[js.Function]] = js.undefined
   
-  var cache: js.UndefOr[`false` | RollupCache] = js.native
+  var cache: js.UndefOr[`false` | RollupCache] = js.undefined
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var experimentalCacheExpiry: js.UndefOr[Double] = js.native
+  var experimentalCacheExpiry: js.UndefOr[Double] = js.undefined
   
-  var external: js.UndefOr[ExternalOption] = js.native
+  var external: js.UndefOr[ExternalOption] = js.undefined
   
   /** @deprecated Use the "inlineDynamicImports" output option instead. */
-  var inlineDynamicImports: js.UndefOr[Boolean] = js.native
+  var inlineDynamicImports: js.UndefOr[Boolean] = js.undefined
   
-  var input: js.UndefOr[InputOption] = js.native
+  var input: js.UndefOr[InputOption] = js.undefined
   
   /** @deprecated Use the "manualChunks" output option instead. */
-  var manualChunks: js.UndefOr[ManualChunksOption] = js.native
+  var manualChunks: js.UndefOr[ManualChunksOption] = js.undefined
   
   var moduleContext: js.UndefOr[
     (js.Function1[/* id */ String, js.UndefOr[String | Null]]) | StringDictionary[String]
-  ] = js.native
+  ] = js.undefined
   
-  var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.native
+  var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.undefined
   
-  var perf: js.UndefOr[Boolean] = js.native
+  var perf: js.UndefOr[Boolean] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[Plugin]] = js.native
+  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   
-  var preserveEntrySignatures: js.UndefOr[PreserveEntrySignaturesOption] = js.native
+  var preserveEntrySignatures: js.UndefOr[PreserveEntrySignaturesOption] = js.undefined
   
   /** @deprecated Use the "preserveModules" output option instead. */
-  var preserveModules: js.UndefOr[Boolean] = js.native
+  var preserveModules: js.UndefOr[Boolean] = js.undefined
   
-  var preserveSymlinks: js.UndefOr[Boolean] = js.native
+  var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
   
-  var shimMissingExports: js.UndefOr[Boolean] = js.native
+  var shimMissingExports: js.UndefOr[Boolean] = js.undefined
   
-  var strictDeprecations: js.UndefOr[Boolean] = js.native
+  var strictDeprecations: js.UndefOr[Boolean] = js.undefined
   
-  var treeshake: js.UndefOr[Boolean | TreeshakingOptions] = js.native
+  var treeshake: js.UndefOr[Boolean | TreeshakingOptions] = js.undefined
   
-  var watch: js.UndefOr[WatcherOptions | `false`] = js.native
+  var watch: js.UndefOr[WatcherOptions | `false`] = js.undefined
 }
 object InputOptions {
   

@@ -7,7 +7,6 @@ import typings.inquirer.mod.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandMod {
@@ -119,7 +118,7 @@ object expandMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onSubmit(eventArgs: SuccessfulPromptStateData[_]): Unit = js.native
+    /* protected */ def onSubmit(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
     
     /**
       * Gets or sets an object for paginating the content.
@@ -141,9 +140,9 @@ object expandMod {
       * The hint to render.
       */
     /* protected */ def render(): Unit = js.native
-    /* protected */ def render(error: js.UndefOr[scala.Nothing], hint: String): Unit = js.native
     /* protected */ def render(error: String): Unit = js.native
     /* protected */ def render(error: String, hint: String): Unit = js.native
+    /* protected */ def render(error: Unit, hint: String): Unit = js.native
     
     /**
       * Renders the choices.

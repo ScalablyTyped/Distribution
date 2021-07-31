@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)
   */
-@js.native
 trait WeightedPodAffinityTerm extends StObject {
   
   /**
     * Required. A pod affinity term, associated with the corresponding weight.
     */
-  var podAffinityTerm: Input[PodAffinityTerm] = js.native
+  var podAffinityTerm: Input[PodAffinityTerm]
   
   /**
     * weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
     */
-  var weight: Input[Double] = js.native
+  var weight: Input[Double]
 }
 object WeightedPodAffinityTerm {
   

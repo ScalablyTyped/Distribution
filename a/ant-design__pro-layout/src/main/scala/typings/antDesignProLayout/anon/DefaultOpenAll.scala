@@ -2,17 +2,15 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultOpenAll extends StObject {
   
-  var defaultOpenAll: js.UndefOr[Boolean] = js.native
+  var defaultOpenAll: js.UndefOr[Boolean] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[Boolean] = js.undefined
 }
 object DefaultOpenAll {
   

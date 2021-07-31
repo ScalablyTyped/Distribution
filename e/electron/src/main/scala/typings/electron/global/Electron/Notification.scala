@@ -3,7 +3,6 @@ package typings.electron.global.Electron
 import typings.electron.Electron.NotificationConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.Notification")
@@ -17,11 +16,14 @@ class Notification ()
 }
 object Notification {
   
+  @JSGlobal("Electron.Notification")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Whether or not desktop notifications are supported on the current system
     */
   /* static member */
-  @JSGlobal("Electron.Notification.isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

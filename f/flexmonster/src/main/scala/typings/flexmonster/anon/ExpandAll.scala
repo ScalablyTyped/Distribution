@@ -2,17 +2,15 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandAll extends StObject {
   
-  var columns: js.UndefOr[js.Array[Measure]] = js.native
+  var columns: js.UndefOr[js.Array[Measure]] = js.undefined
   
-  var expandAll: js.UndefOr[Boolean] = js.native
+  var expandAll: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[js.Array[Measure]] = js.native
+  var rows: js.UndefOr[js.Array[Measure]] = js.undefined
 }
 object ExpandAll {
   

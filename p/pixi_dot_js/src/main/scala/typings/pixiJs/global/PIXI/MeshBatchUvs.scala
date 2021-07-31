@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.MeshBatchUvs")
 @js.native
 class MeshBatchUvs protected ()
-  extends typings.pixiJs.PIXI.MeshBatchUvs {
+  extends StObject
+     with typings.pixiJs.PIXI.MeshBatchUvs {
   def this(uvBuffer: typings.pixiJs.PIXI.Buffer, uvMatrix: typings.pixiJs.PIXI.TextureMatrix) = this()
 }

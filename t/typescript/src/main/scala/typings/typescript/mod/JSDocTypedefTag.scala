@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSDocTypedefTag
-  extends NamedDeclaration
+  extends StObject
      with JSDocTag
+     with NamedDeclaration
      with DeclarationWithTypeParameters {
   
   val fullName: js.UndefOr[JSDocNamespaceDeclaration | Identifier] = js.native

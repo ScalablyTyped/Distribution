@@ -2,17 +2,17 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait axis extends axisOptions {
+trait axis
+  extends StObject
+     with axisOptions {
   
-  def c2p(canvasPoint: canvasPoint): point = js.native
+  def c2p(canvasPoint: canvasPoint): point
   
-  var options: axisOptions = js.native
+  var options: axisOptions
   
-  def p2c(point: point): canvasPoint = js.native
+  def p2c(point: point): canvasPoint
 }
 object axis {
   

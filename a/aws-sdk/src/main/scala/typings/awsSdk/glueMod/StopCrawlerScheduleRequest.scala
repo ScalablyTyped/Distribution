@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopCrawlerScheduleRequest extends StObject {
   
   /**
     * Name of the crawler whose schedule state to set.
     */
-  var CrawlerName: NameString = js.native
+  var CrawlerName: NameString
 }
 object StopCrawlerScheduleRequest {
   

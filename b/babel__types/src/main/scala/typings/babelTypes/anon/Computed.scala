@@ -2,19 +2,17 @@ package typings.babelTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Computed extends StObject {
   
-  var computed: Boolean | Null = js.native
+  var computed: Boolean | Null
 }
 object Computed {
   
   @scala.inline
   def apply(): Computed = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(computed = null)
     __obj.asInstanceOf[Computed]
   }
   

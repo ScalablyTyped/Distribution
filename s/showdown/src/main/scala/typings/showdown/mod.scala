@@ -13,7 +13,6 @@ import typings.std.HTMLDocument
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,18 +29,18 @@ object mod {
   @js.native
   trait Converter extends StObject {
     
-    def addExtension(extension: js.Array[ShowdownExtension]): Unit = js.native
-    def addExtension(extension: js.Array[ShowdownExtension], name: String): Unit = js.native
+    def addExtension(`extension`: js.Array[ShowdownExtension]): Unit = js.native
+    def addExtension(`extension`: js.Array[ShowdownExtension], name: String): Unit = js.native
     /**
       * Add extension to THIS converter.
       *
       * @param extension - The new extension to add.
       * @param name - The extension name.
       */
-    def addExtension(extension: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = js.native
-    def addExtension(extension: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension], name: String): Unit = js.native
-    def addExtension(extension: ShowdownExtension): Unit = js.native
-    def addExtension(extension: ShowdownExtension, name: String): Unit = js.native
+    def addExtension(`extension`: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = js.native
+    def addExtension(`extension`: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension], name: String): Unit = js.native
+    def addExtension(`extension`: ShowdownExtension): Unit = js.native
+    def addExtension(`extension`: ShowdownExtension, name: String): Unit = js.native
     
     /**
       * Get all extensions.
@@ -172,7 +171,9 @@ object mod {
     * @constructor
     * @param converterOptions - Configuration object, describes which extensions to apply.
     */
-  class ConverterCls () extends Converter {
+  class ConverterCls ()
+    extends StObject
+       with Converter {
     def this(converterOptions: ConverterOptions) = this()
   }
   
@@ -187,12 +188,10 @@ object mod {
     * @throws Throws if `name` is not of type string.
     * @throws Throws if the extension is not exists.
     */
-  @JSImport("showdown", "extension")
-  @js.native
-  def extension(name: String): js.Array[ShowdownExtension] = js.native
-  @JSImport("showdown", "extension")
-  @js.native
-  def extension(name: String, ext: js.Array[ShowdownExtension]): Unit = js.native
+  @scala.inline
+  def `extension`(name: String): js.Array[ShowdownExtension] = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[ShowdownExtension]]
+  @scala.inline
+  def `extension`(name: String, ext: js.Array[ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Register a extension.
     *
@@ -200,12 +199,10 @@ object mod {
     * @param ext - The extension.
     * @throws Throws if `name` is not of type string.
     */
-  @JSImport("showdown", "extension")
-  @js.native
-  def extension(name: String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = js.native
-  @JSImport("showdown", "extension")
-  @js.native
-  def extension(name: String, ext: ShowdownExtension): Unit = js.native
+  @scala.inline
+  def `extension`(name: String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def `extension`(name: String, ext: ShowdownExtension): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Showdown extensions.
@@ -221,9 +218,8 @@ object mod {
     *
     * @return Returns all extensions.
     */
-  @JSImport("showdown", "getAllExtensions")
-  @js.native
-  def getAllExtensions(): ShowdownExtensions = js.native
+  @scala.inline
+  def getAllExtensions(): ShowdownExtensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllExtensions")().asInstanceOf[ShowdownExtensions]
   
   /**
     * Get the default options.
@@ -231,21 +227,18 @@ object mod {
     * @param [simple=true] - If to returns the default showdown options or the showdown options schema.
     * @returns Returns the options schema if `simple` is `false`, otherwise the default showdown options.
     */
-  @JSImport("showdown", "getDefaultOptions")
-  @js.native
-  def getDefaultOptions(): ShowdownOptionsSchema | ShowdownOptions = js.native
-  @JSImport("showdown", "getDefaultOptions")
-  @js.native
-  def getDefaultOptions(simple: Boolean): ShowdownOptionsSchema | ShowdownOptions = js.native
+  @scala.inline
+  def getDefaultOptions(): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
+  @scala.inline
+  def getDefaultOptions(simple: Boolean): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(simple.asInstanceOf[js.Any]).asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
   
   /**
     * Get the "global" currently set flavor.
     *
     * @returns Returns string flavor name.
     */
-  @JSImport("showdown", "getFlavor")
-  @js.native
-  def getFlavor(): Flavor = js.native
+  @scala.inline
+  def getFlavor(): Flavor = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavor")().asInstanceOf[Flavor]
   
   /**
     * Get the options of a specified flavor. Returns undefined if the flavor was not found.
@@ -253,9 +246,8 @@ object mod {
     * @param name - Name of the flavor.
     * @returns Returns options object of the given flavor `name`.
     */
-  @JSImport("showdown", "getFlavorOptions")
-  @js.native
-  def getFlavorOptions(name: Flavor): js.UndefOr[ShowdownOptions] = js.native
+  @scala.inline
+  def getFlavorOptions(name: Flavor): js.UndefOr[ShowdownOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavorOptions")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ShowdownOptions]]
   
   /**
     * Get a "global" option.
@@ -263,18 +255,16 @@ object mod {
     * @param key - the option key.
     * @returns Returns the value of the given `key`.
     */
-  @JSImport("showdown", "getOption")
-  @js.native
-  def getOption(key: String): js.Any = js.native
+  @scala.inline
+  def getOption(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Get the "global" options.
     *
     * @returns Returns a options object.
     */
-  @JSImport("showdown", "getOptions")
-  @js.native
-  def getOptions(): ShowdownOptions = js.native
+  @scala.inline
+  def getOptions(): ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[ShowdownOptions]
   
   /**
     * Showdown helper.
@@ -290,32 +280,28 @@ object mod {
     *
     * @param name - The extension name.
     */
-  @JSImport("showdown", "removeExtension")
-  @js.native
-  def removeExtension(name: String): Unit = js.native
+  @scala.inline
+  def removeExtension(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes all extensions.
     */
-  @JSImport("showdown", "resetExtensions")
-  @js.native
-  def resetExtensions(): Unit = js.native
+  @scala.inline
+  def resetExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetExtensions")().asInstanceOf[Unit]
   
   /**
     * Reset "global" options to the default values.
     */
-  @JSImport("showdown", "resetOptions")
-  @js.native
-  def resetOptions(): Unit = js.native
+  @scala.inline
+  def resetOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetOptions")().asInstanceOf[Unit]
   
   /**
     * Setting a "global" flavor affects all instances of showdown.
     *
     * @param name - The flavor name.
     */
-  @JSImport("showdown", "setFlavor")
-  @js.native
-  def setFlavor(name: Flavor): Unit = js.native
+  @scala.inline
+  def setFlavor(name: Flavor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlavor")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Setting a "global" option affects all instances of showdown.
@@ -323,9 +309,8 @@ object mod {
     * @param key - the option key.
     * @param value - the option value.
     */
-  @JSImport("showdown", "setOption")
-  @js.native
-  def setOption(key: String, value: js.Any): js.Any = js.native
+  @scala.inline
+  def setOption(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Get a registered subParser.
@@ -335,9 +320,8 @@ object mod {
     * @throws Throws if `name` is not of type string.
     * @throws Throws if the parser is not exists.
     */
-  @JSImport("showdown", "subParser")
-  @js.native
-  def subParser(name: String): SubParser_ = js.native
+  @scala.inline
+  def subParser(name: String): SubParser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any]).asInstanceOf[SubParser_]
   /**
     * Register a subParser.
     *
@@ -345,9 +329,8 @@ object mod {
     * @param func - The handler function of the new parser.
     * @throws Throws if `name` is not of type string.
     */
-  @JSImport("showdown", "subParser")
-  @js.native
-  def subParser(name: String, func: SubParser_): Unit = js.native
+  @scala.inline
+  def subParser(name: String, func: SubParser_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Checks if the given `ext` is a valid showdown extension.
@@ -355,22 +338,19 @@ object mod {
     * @param ext - The extension to checks.
     * @returns Returns `true` if the extension is valid showdown extension, otherwise `false`.
     */
-  @JSImport("showdown", "validateExtension")
-  @js.native
-  def validateExtension(ext: js.Array[ShowdownExtension]): Boolean = js.native
-  @JSImport("showdown", "validateExtension")
-  @js.native
-  def validateExtension(ext: ShowdownExtension): Boolean = js.native
+  @scala.inline
+  def validateExtension(ext: js.Array[ShowdownExtension]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def validateExtension(ext: ShowdownExtension): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Showdown converter extensions store object.
     */
-  @js.native
   trait ConverterExtensions extends StObject {
     
-    var language: js.Array[ShowdownExtension] = js.native
+    var language: js.Array[ShowdownExtension]
     
-    var output: js.Array[ShowdownExtension] = js.native
+    var output: js.Array[ShowdownExtension]
   }
   object ConverterExtensions {
     
@@ -397,34 +377,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ConverterGlobals extends StObject {
     
-    var converter: js.UndefOr[Converter] = js.native
+    var converter: js.UndefOr[Converter] = js.undefined
     
-    var gDimensions: js.UndefOr[Height] = js.native
+    var gDimensions: js.UndefOr[Height] = js.undefined
     
-    var gHtmlBlocks: js.UndefOr[js.Array[String]] = js.native
+    var gHtmlBlocks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var gHtmlMdBlocks: js.UndefOr[js.Array[String]] = js.native
+    var gHtmlMdBlocks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var gHtmlSpans: js.UndefOr[js.Array[String]] = js.native
+    var gHtmlSpans: js.UndefOr[js.Array[String]] = js.undefined
     
-    var gListLevel: js.UndefOr[Double] = js.native
+    var gListLevel: js.UndefOr[Double] = js.undefined
     
-    var gTitles: js.UndefOr[StringDictionary[String]] = js.native
+    var gTitles: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var gUrls: js.UndefOr[StringDictionary[String]] = js.native
+    var gUrls: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var ghCodeBlocks: js.UndefOr[js.Array[Codeblock]] = js.native
+    var ghCodeBlocks: js.UndefOr[js.Array[Codeblock]] = js.undefined
     
-    var hashLinkCounts: js.UndefOr[StringDictionary[Double]] = js.native
+    var hashLinkCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
     
-    var langExtensions: js.UndefOr[js.Array[ShowdownExtension]] = js.native
+    var langExtensions: js.UndefOr[js.Array[ShowdownExtension]] = js.undefined
     
-    var metadata: js.UndefOr[Format] = js.native
+    var metadata: js.UndefOr[Format] = js.undefined
     
-    var outputModifiers: js.UndefOr[js.Array[ShowdownExtension]] = js.native
+    var outputModifiers: js.UndefOr[js.Array[ShowdownExtension]] = js.undefined
   }
   object ConverterGlobals {
     
@@ -535,8 +514,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConverterOptions extends ShowdownOptions {
+  trait ConverterOptions
+    extends StObject
+       with ShowdownOptions {
     
     /**
       * Add extensions to the new converter can be showdown extensions or "global" extensions name.
@@ -545,7 +525,7 @@ object mod {
         js.Array[
           (js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ConverterOptions {
     
@@ -577,7 +557,8 @@ object mod {
   
   @js.native
   trait ConverterStatic
-    extends /**
+    extends StObject
+       with /**
     * @constructor
     * @param converterOptions - Configuration object, describes which extensions to apply.
     */
@@ -596,13 +577,12 @@ object mod {
     Unit | String
   ]
   
-  @js.native
   trait Extension_ extends StObject {
     
     /**
       * Event listeners functions that called on the conversion, when the `event` occurs.
       */
-    var listeners: js.UndefOr[StringDictionary[EventListener]] = js.native
+    var listeners: js.UndefOr[StringDictionary[EventListener]] = js.undefined
     
     /**
       * Property defines the nature of said sub-extensions and can assume 2 values:
@@ -611,7 +591,7 @@ object mod {
       * * `output` - Output extensions (or modifiers) alter the HTML output generated by showdown.
       * * `listener` - Listener extensions for listening to a conversion event.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Extension_ {
     
@@ -648,8 +628,9 @@ object mod {
     * };
     * ```
     */
-  @js.native
-  trait FilterExtension extends Extension_ {
+  trait FilterExtension
+    extends StObject
+       with Extension_ {
     
     var filter: js.UndefOr[
         js.Function3[
@@ -658,7 +639,7 @@ object mod {
           /* options */ js.UndefOr[ConverterOptions], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object FilterExtension {
     
@@ -714,11 +695,11 @@ object mod {
   /** 
     * Helper Interface 
     */
-  @js.native
   trait Helper_
-    extends /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, _]] {
+    extends StObject
+       with /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] {
     
-    def replaceRecursiveRegExp(args: js.Any*): String = js.native
+    def replaceRecursiveRegExp(args: js.Any*): String
   }
   object Helper_ {
     
@@ -751,8 +732,9 @@ object mod {
     * };
     * ```
     */
-  @js.native
-  trait RegexReplaceExtension extends Extension_ {
+  trait RegexReplaceExtension
+    extends StObject
+       with Extension_ {
     
     /**
       * Should be either a string or a RegExp object.
@@ -760,14 +742,14 @@ object mod {
       * Keep in mind that, if a string is used, it will automatically be given a g modifier,
       * that is, it is assumed to be a global replacement.
       */
-    var regex: js.UndefOr[String | RegExp] = js.native
+    var regex: js.UndefOr[String | RegExp] = js.undefined
     
     /**
       * Can be either a string or a function. If replace is a string,
       * it can use the $1 syntax for group substitution,
       * exactly as if it were making use of string.replace (internally it does this actually).
       */
-    var replace: js.UndefOr[js.Any] = js.native
+    var replace: js.UndefOr[js.Any] = js.undefined
   }
   object RegexReplaceExtension {
     
@@ -825,8 +807,9 @@ object mod {
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.showdown.mod.Extension_ because Already inherited
-  - typings.showdown.mod.FilterExtension because var conflicts: listeners, `type`. Inlined filter */ @js.native
-  trait ShowdownExtension extends RegexReplaceExtension {
+  - typings.showdown.mod.FilterExtension because var conflicts: listeners, `type`. Inlined filter */ trait ShowdownExtension
+    extends StObject
+       with RegexReplaceExtension {
     
     var filter: js.UndefOr[
         js.Function3[
@@ -835,7 +818,7 @@ object mod {
           /* options */ js.UndefOr[ConverterOptions], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ShowdownExtension {
     
@@ -867,23 +850,22 @@ object mod {
   /**
     * Showdown option description.
     */
-  @js.native
   trait ShowdownOptionDescription extends StObject {
     
     /**
       * The default value of option.
       */
-    var defaultValue: js.UndefOr[Boolean] = js.native
+    var defaultValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The description of the option.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the option value.
       */
-    var `type`: js.UndefOr[boolean | string | integer] = js.native
+    var `type`: js.UndefOr[boolean | string | integer] = js.undefined
   }
   object ShowdownOptionDescription {
     
@@ -923,9 +905,9 @@ object mod {
     * @see https://github.com/showdownjs/showdown/wiki/Showdown-options
     * @see https://github.com/showdownjs/showdown/blob/master/src/options.js
     */
-  @js.native
   trait ShowdownOptions
-    extends /**
+    extends StObject
+       with /**
     * For custom options {extension, subParser} And also an out-of-date definitions
     */
   /* key */ StringDictionary[js.Any] {
@@ -952,7 +934,7 @@ object mod {
       * @default false
       * @since 1.7.2
       */
-    var backslashEscapesHTMLTags: js.UndefOr[Boolean] = js.native
+    var backslashEscapesHTMLTags: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Outputs a complete html document, including <html>, <head> and <body> tags' instead of an HTML fragment.
@@ -984,7 +966,7 @@ object mod {
       * @default false
       * @since 1.8.5
       */
-    var completeHTMLDocument: js.UndefOr[Boolean] = js.native
+    var completeHTMLDocument: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use text in curly braces as header id.
@@ -996,7 +978,7 @@ object mod {
       * @default false
       * @since 1.7.0
       */
-    var customizedHeaderId: js.UndefOr[Boolean] = js.native
+    var customizedHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables the requirement of indenting sublists by 4 spaces for them to be nested,
@@ -1054,7 +1036,7 @@ object mod {
       * @default false
       * @since 1.5.0
       */
-    var disableForced4SpacesIndentedSublists: js.UndefOr[Boolean] = js.native
+    var disableForced4SpacesIndentedSublists: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable emoji support.
@@ -1067,7 +1049,7 @@ object mod {
       * @see https://github.com/showdownjs/showdown/wiki/Emojis
       * @since 1.8.0
       */
-    var emoji: js.UndefOr[Boolean] = js.native
+    var emoji: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables e-mail addresses encoding through the use of Character Entities, transforming ASCII e-mail addresses into its equivalent decimal entities.
@@ -1094,7 +1076,7 @@ object mod {
       * @default true
       * @since 1.6.1
       */
-    var encodeEmails: js.UndefOr[Boolean] = js.native
+    var encodeEmails: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated https://github.com/showdownjs/showdown/commit/d3ebff7ef0cde5abfc3874463946d5297fc82e78
@@ -1124,7 +1106,7 @@ object mod {
       * @default false
       * @since 1.5.1
       */
-    var excludeTrailingPunctuationFromURLs: js.UndefOr[Boolean] = js.native
+    var excludeTrailingPunctuationFromURLs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for GFM code block style syntax (fenced codeblocks).
@@ -1138,7 +1120,7 @@ object mod {
       * @default true
       * @since 1.2.0
       */
-    var ghCodeBlocks: js.UndefOr[Boolean] = js.native
+    var ghCodeBlocks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generate header ids compatible with github style (spaces are replaced
@@ -1165,7 +1147,7 @@ object mod {
       * @default false
       * @since 1.5.5
       */
-    var ghCompatibleHeaderId: js.UndefOr[Boolean] = js.native
+    var ghCompatibleHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables support for github @mentions, which links to the github profile page of the username mentioned.
@@ -1191,7 +1173,7 @@ object mod {
       * @default false
       * @since 1.6.0
       */
-    var ghMentions: js.UndefOr[Boolean] = js.native
+    var ghMentions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes the link generated by @mentions. `{u}` is replaced by the text of the mentions. Only applies if **[ghMentions][]** is enabled.
@@ -1217,7 +1199,7 @@ object mod {
       * @default https://github.com/{u}
       * @since 1.6.2
       */
-    var ghMentionsLink: js.UndefOr[String] = js.native
+    var ghMentionsLink: js.UndefOr[String] = js.undefined
     
     /**
       * Set the header starting level. For instance, setting this to 3 means that
@@ -1243,7 +1225,7 @@ object mod {
       * @default 1
       * @since 1.1.0
       */
-    var headerLevelStart: js.UndefOr[Double] = js.native
+    var headerLevelStart: js.UndefOr[Double] = js.undefined
     
     /**
       * Turning this on will stop showdown from interpreting underscores in the middle of
@@ -1270,7 +1252,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var literalMidWordUnderscores: js.UndefOr[Boolean] = js.native
+    var literalMidWordUnderscores: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for document metadata (defined at the top of the document
@@ -1285,7 +1267,7 @@ object mod {
       * @default false
       * @since 1.8.5
       */
-    var metadata: js.UndefOr[Boolean] = js.native
+    var metadata: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable the automatic generation of header ids.
@@ -1313,7 +1295,7 @@ object mod {
       * @default false
       * @since 1.1.0
       */
-    var noHeaderId: js.UndefOr[Boolean] = js.native
+    var noHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Omit the trailing newline in a code block.
@@ -1342,7 +1324,7 @@ object mod {
       * @default false
       * @since 1.0.0
       */
-    var omitExtraWLInCodeBlocks: js.UndefOr[Boolean] = js.native
+    var omitExtraWLInCodeBlocks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Open all links in new windows (by adding the attribute target="_blank" to <a> tags).
@@ -1366,7 +1348,7 @@ object mod {
       * @default false
       * @since 1.7.0
       */
-    var openLinksInNewWindow: js.UndefOr[Boolean] = js.native
+    var openLinksInNewWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for setting image dimensions from within markdown syntax.
@@ -1380,7 +1362,7 @@ object mod {
       * @default false
       * @since 1.1.0
       */
-    var parseImgDimensions: js.UndefOr[Boolean] = js.native
+    var parseImgDimensions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add a prefix to the generated header ids.
@@ -1390,7 +1372,7 @@ object mod {
       * @default false
       * @since 1.0.0
       */
-    var prefixHeaderId: js.UndefOr[String | Boolean] = js.native
+    var prefixHeaderId: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Remove only spaces, ' and " from generated header ids (including prefixes),
@@ -1400,7 +1382,7 @@ object mod {
       * @default false
       * @since 1.7.3
       */
-    var rawHeaderId: js.UndefOr[Boolean] = js.native
+    var rawHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting this option to true will prevent showdown from modifying the prefix.
@@ -1410,7 +1392,7 @@ object mod {
       * @default false
       * @since 1.7.3
       */
-    var rawPrefixHeaderId: js.UndefOr[Boolean] = js.native
+    var rawPrefixHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes adding a space between # and the header text mandatory.
@@ -1437,7 +1419,7 @@ object mod {
       * @default false
       * @since 1.5.3
       */
-    var requireSpaceBeforeHeadingText: js.UndefOr[Boolean] = js.native
+    var requireSpaceBeforeHeadingText: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Parses line breaks as like GitHub does, without needing 2 spaces at the end of the line.
@@ -1466,7 +1448,7 @@ object mod {
       * @default false
       * @since 1.5.1
       */
-    var simpleLineBreaks: js.UndefOr[Boolean] = js.native
+    var simpleLineBreaks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turning this option on will enable automatic linking to urls.
@@ -1492,7 +1474,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var simplifiedAutoLink: js.UndefOr[Boolean] = js.native
+    var simplifiedAutoLink: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tries to smartly fix indentation problems related to es6 template
@@ -1501,7 +1483,7 @@ object mod {
       * @default false
       * @since 1.4.2
       */
-    var smartIndentationFix: js.UndefOr[Boolean] = js.native
+    var smartIndentationFix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents weird effects in live previews due to incomplete input.
@@ -1511,14 +1493,14 @@ object mod {
       * You can prevent this by enabling this option.
       * @default false
       */
-    var smoothLivePreview: js.UndefOr[Boolean] = js.native
+    var smoothLivePreview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Split adjacent blockquote blocks.
       *
       * @since 1.8.6
       */
-    var splitAdjacentBlockquotes: js.UndefOr[Boolean] = js.native
+    var splitAdjacentBlockquotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for strikethrough syntax.
@@ -1536,7 +1518,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var strikethrough: js.UndefOr[Boolean] = js.native
+    var strikethrough: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for tables syntax.
@@ -1553,7 +1535,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var tables: js.UndefOr[Boolean] = js.native
+    var tables: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If enabled adds an id property to table headers tags.
@@ -1562,7 +1544,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var tablesHeaderId: js.UndefOr[Boolean] = js.native
+    var tablesHeaderId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for GFM takslists.
@@ -1577,7 +1559,7 @@ object mod {
       * @default false
       * @since 1.2.0
       */
-    var tasklists: js.UndefOr[Boolean] = js.native
+    var tasklists: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable support for underline. Syntax is double or triple underscores: `__underline word__`. With this option enabled,
@@ -1602,7 +1584,7 @@ object mod {
       * @default false
       * @since 1.8.0
       */
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object ShowdownOptions {
     
@@ -1817,5 +1799,9 @@ object mod {
   /**
     * Showdown subParser.
     */
-  type SubParser_ = js.Function1[/* repeated */ js.Any, String]
+  @js.native
+  trait SubParser_ extends StObject {
+    
+    def apply(args: js.Any*): String = js.native
+  }
 }

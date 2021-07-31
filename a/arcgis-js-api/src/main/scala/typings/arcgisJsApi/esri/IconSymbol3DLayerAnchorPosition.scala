@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconSymbol3DLayerAnchorPosition extends Object {
+trait IconSymbol3DLayerAnchorPosition
+  extends StObject
+     with Object {
   
   /**
     * Value defining the position relative to the icon's width.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Value defining the position relative to the icon's height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IconSymbol3DLayerAnchorPosition {
   

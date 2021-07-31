@@ -4,7 +4,6 @@ import typings.knuddelsUserappsApi.mod._KnuddelsSerializable
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("User")
 @js.native
-class User () extends _KnuddelsSerializable {
+class User ()
+  extends StObject
+     with _KnuddelsSerializable {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_addNicklistIcon

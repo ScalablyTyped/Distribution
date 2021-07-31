@@ -1,18 +1,22 @@
 package typings.vanillaTilt
 
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.vanillaTilt.vanillaTiltStrings.x
 import typings.vanillaTilt.vanillaTiltStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vanilla-tilt", JSImport.Default)
   @js.native
-  class default protected () extends VanillaTilt {
+  class default protected ()
+    extends StObject
+       with VanillaTilt {
     /**
       * Creates a new instance of a VanillaTilt element.
       * @param element The element, which should be a VanillaTilt element
@@ -20,140 +24,185 @@ object mod {
       */
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, settings: TiltOptions) = this()
+    
+    /**
+      * Start listening to events
+      */
+    /* CompleteClass */
+    override def addEventListeners(): Unit = js.native
+    
+    /**
+      * Destroys the instance and removes the listeners.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Get values of instance
+      */
+    /* CompleteClass */
+    override def getValues(): TiltValues = js.native
+    
+    /**
+      * Stop listening to events
+      */
+    /* CompleteClass */
+    override def removeEventListener(): Unit = js.native
+    
+    /**
+      * Resets the styling
+      */
+    /* CompleteClass */
+    override def reset(): Unit = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("vanilla-tilt", "default.init")
+    @JSImport("vanilla-tilt", JSImport.Default)
     @js.native
-    def init(elements: js.Array[HTMLElement]): Unit = js.native
-    @JSImport("vanilla-tilt", "default.init")
-    @js.native
-    def init(elements: js.Array[HTMLElement], settings: TiltOptions): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def init(elements: js.Array[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def init(elements: js.Array[HTMLElement], settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Initializes one or multiple elements
       * @param elements The element, which should tilt
       * @param settings Settings, which configures the elements
       */
-    @JSImport("vanilla-tilt", "default.init")
-    @js.native
-    def init(elements: HTMLElement): Unit = js.native
-    @JSImport("vanilla-tilt", "default.init")
-    @js.native
-    def init(elements: HTMLElement, settings: TiltOptions): Unit = js.native
+    @scala.inline
+    def init(elements: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def init(elements: HTMLElement, settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
-  trait HTMLVanillaTiltElement extends HTMLElement {
+  trait HTMLVanillaTiltElement
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     var vanillaTilt: VanillaTilt = js.native
   }
   
-  @js.native
   trait TiltOptions extends StObject {
     
     /**
       * What axis should be disabled. Can be X or Y.
       */
-    var axis: js.UndefOr[Null | x | y] = js.native
+    var axis: js.UndefOr[Null | x | y] = js.undefined
     
     /**
       * Easing on enter/exit.
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     // If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
-    var `full-page-listening`: js.UndefOr[Boolean] = js.native
+    var `full-page-listening`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if it should have a "glare" effect
       */
-    var glare: js.UndefOr[Boolean] = js.native
+    var glare: js.UndefOr[Boolean] = js.undefined
     
     /**
       * false = VanillaTilt creates the glare elements for you, otherwise
       * you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
       */
-    var `glare-prerender`: js.UndefOr[Boolean] = js.native
+    var `glare-prerender`: js.UndefOr[Boolean] = js.undefined
     
     // Boolean to enable/disable device orientation detection,
-    var gyroscope: js.UndefOr[Boolean] = js.native
+    var gyroscope: js.UndefOr[Boolean] = js.undefined
     
     // This is the top limit of the device angle on X axis,
     // meaning that a device rotated at this angle would tilt the element as if
     // the mouse was on the right border of the element;
-    var gyroscopeMaxAngleX: js.UndefOr[Double] = js.native
+    var gyroscopeMaxAngleX: js.UndefOr[Double] = js.undefined
     
     // This is the top limit of the device angle on Y axis,
     // meaning that a device rotated at this angle would tilt the element as if
     // the mouse was on the bottom border of the element;
-    var gyroscopeMaxAngleY: js.UndefOr[Double] = js.native
+    var gyroscopeMaxAngleY: js.UndefOr[Double] = js.undefined
     
     // This is the bottom limit of the device angle on X axis,
     // meaning that a device rotated at this angle would tilt the element as if
     // the mouse was on the left border of the element;
-    var gyroscopeMinAngleX: js.UndefOr[Double] = js.native
+    var gyroscopeMinAngleX: js.UndefOr[Double] = js.undefined
     
     // This is the bottom limit of the device angle on Y axis,
     // meaning that a device rotated at this angle would tilt the element as if
     // the mouse was on the top border of the element;
-    var gyroscopeMinAngleY: js.UndefOr[Double] = js.native
+    var gyroscopeMinAngleY: js.UndefOr[Double] = js.undefined
     
     //How many gyroscope moves to decide the starting position.
-    var gyroscopeSamples: js.UndefOr[Double] = js.native
+    var gyroscopeSamples: js.UndefOr[Double] = js.undefined
     
     /**
       * Max tilt rotation (degrees)
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * the maximum "glare" opacity
       */
-    var `max-glare`: js.UndefOr[Double] = js.native
+    var `max-glare`: js.UndefOr[Double] = js.undefined
     
     // css-selector or link to HTML-element what will be listen mouse events
-    var `mouse-event-element`: js.UndefOr[String] = js.native
+    var `mouse-event-element`: js.UndefOr[String] = js.undefined
     
     /**
       * Transform perspective, the lower the more extreme the tilt gets.
       */
-    var perspective: js.UndefOr[Double] = js.native
+    var perspective: js.UndefOr[Double] = js.undefined
     
     /**
       * If the tilt effect has to be reset on exit.
       */
-    var reset: js.UndefOr[Boolean] = js.native
+    var reset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reverse the tilt direction
       */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 2 = 200%, 1.5 = 150%, etc..
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Speed of the enter/exit transition
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     /**
       * Starting X tilt rotation (degrees)
       */
-    var startX: js.UndefOr[Double] = js.native
+    var startX: js.UndefOr[Double] = js.undefined
     
     /**
       * Starting Y tilt rotation (degrees)
       */
-    var startY: js.UndefOr[Double] = js.native
+    var startY: js.UndefOr[Double] = js.undefined
     
     /**
       * Set a transition on enter/exit.
       */
-    var transition: js.UndefOr[Boolean] = js.native
+    var transition: js.UndefOr[Boolean] = js.undefined
   }
   object TiltOptions {
     
@@ -303,28 +352,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TiltValues extends StObject {
     
     /**
       * The current percentage on the X axis
       */
-    var percentageX: Double = js.native
+    var percentageX: Double
     
     /**
       * The current percentage on the Y axis
       */
-    var percentageY: Double = js.native
+    var percentageY: Double
     
     /**
       * The current tilt on the X axis
       */
-    var tiltX: Double = js.native
+    var tiltX: Double
     
     /**
       * The current tilt on the Y axis
       */
-    var tiltY: Double = js.native
+    var tiltY: Double
   }
   object TiltValues {
     
@@ -351,33 +399,32 @@ object mod {
     }
   }
   
-  @js.native
   trait VanillaTilt extends StObject {
     
     /**
       * Start listening to events
       */
-    def addEventListeners(): Unit = js.native
+    def addEventListeners(): Unit
     
     /**
       * Destroys the instance and removes the listeners.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Get values of instance
       */
-    def getValues(): TiltValues = js.native
+    def getValues(): TiltValues
     
     /**
       * Stop listening to events
       */
-    def removeEventListener(): Unit = js.native
+    def removeEventListener(): Unit
     
     /**
       * Resets the styling
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object VanillaTilt {
     

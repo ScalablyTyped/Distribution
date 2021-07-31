@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicIpv4Pool extends StObject {
   
   /**
     * A description of the address pool.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the location from which the address pool is advertised. A network border group is a unique set of Availability Zones or Local Zones from where AWS advertises public IP addresses.
     */
-  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The address ranges.
     */
-  var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.native
+  var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.undefined
   
   /**
     * The ID of the address pool.
     */
-  var PoolId: js.UndefOr[String] = js.native
+  var PoolId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags for the address pool.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The total number of addresses.
     */
-  var TotalAddressCount: js.UndefOr[Integer] = js.native
+  var TotalAddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of available addresses.
     */
-  var TotalAvailableAddressCount: js.UndefOr[Integer] = js.native
+  var TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
 }
 object PublicIpv4Pool {
   

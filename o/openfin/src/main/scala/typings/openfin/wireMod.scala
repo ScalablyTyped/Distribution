@@ -5,10 +5,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.openfin.anon.Alias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wireMod {
+  
+  @JSImport("openfin/_v2/transport/wire", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait READY_STATE extends StObject
@@ -17,83 +20,85 @@ object wireMod {
   object READY_STATE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[READY_STATE with Double] = js.native
+    def apply(value: Double): js.UndefOr[READY_STATE & Double] = js.native
     
     @js.native
-    sealed trait CLOSED extends READY_STATE
-    /* 3 */ val CLOSED: typings.openfin.wireMod.READY_STATE.CLOSED with Double = js.native
+    sealed trait CLOSED
+      extends StObject
+         with READY_STATE
+    /* 3 */ val CLOSED: typings.openfin.wireMod.READY_STATE.CLOSED & Double = js.native
     
     @js.native
-    sealed trait CLOSING extends READY_STATE
-    /* 2 */ val CLOSING: typings.openfin.wireMod.READY_STATE.CLOSING with Double = js.native
+    sealed trait CLOSING
+      extends StObject
+         with READY_STATE
+    /* 2 */ val CLOSING: typings.openfin.wireMod.READY_STATE.CLOSING & Double = js.native
     
     @js.native
-    sealed trait CONNECTING extends READY_STATE
-    /* 0 */ val CONNECTING: typings.openfin.wireMod.READY_STATE.CONNECTING with Double = js.native
+    sealed trait CONNECTING
+      extends StObject
+         with READY_STATE
+    /* 0 */ val CONNECTING: typings.openfin.wireMod.READY_STATE.CONNECTING & Double = js.native
     
     @js.native
-    sealed trait OPEN extends READY_STATE
-    /* 1 */ val OPEN: typings.openfin.wireMod.READY_STATE.OPEN with Double = js.native
+    sealed trait OPEN
+      extends StObject
+         with READY_STATE
+    /* 1 */ val OPEN: typings.openfin.wireMod.READY_STATE.OPEN & Double = js.native
   }
   
-  @JSImport("openfin/_v2/transport/wire", "isExistingConnectConfig")
-  @js.native
-  def isExistingConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = js.native
+  @scala.inline
+  def isExistingConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExistingConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean]
   
-  @JSImport("openfin/_v2/transport/wire", "isExternalConfig")
-  @js.native
-  def isExternalConfig(config: ConnectConfig): /* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean = js.native
+  @scala.inline
+  def isExternalConfig(config: ConnectConfig): /* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean]
   
-  @JSImport("openfin/_v2/transport/wire", "isInternalConnectConfig")
-  @js.native
-  def isInternalConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = js.native
+  @scala.inline
+  def isInternalConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean]
   
-  @JSImport("openfin/_v2/transport/wire", "isNewConnectConfig")
-  @js.native
-  def isNewConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = js.native
+  @scala.inline
+  def isNewConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean]
   
-  @JSImport("openfin/_v2/transport/wire", "isPortDiscoveryConfig")
-  @js.native
-  def isPortDiscoveryConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = js.native
+  @scala.inline
+  def isPortDiscoveryConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortDiscoveryConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean]
   
-  @js.native
   trait BaseConfig extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var appAssets: js.UndefOr[js.Array[Alias]] = js.native
+    var appAssets: js.UndefOr[js.Array[Alias]] = js.undefined
     
-    var assetsUrl: js.UndefOr[String] = js.native
+    var assetsUrl: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[js.Any] = js.native
+    var client: js.UndefOr[js.Any] = js.undefined
     
-    var customItems: js.UndefOr[js.Array[_]] = js.native
+    var customItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var devToolsPort: js.UndefOr[Double] = js.native
+    var devToolsPort: js.UndefOr[Double] = js.undefined
     
-    var installerUI: js.UndefOr[Boolean] = js.native
+    var installerUI: js.UndefOr[Boolean] = js.undefined
     
-    var licenseKey: js.UndefOr[String] = js.native
+    var licenseKey: js.UndefOr[String] = js.undefined
     
-    var lrsUrl: js.UndefOr[String] = js.native
+    var lrsUrl: js.UndefOr[String] = js.undefined
     
-    var manifestUrl: js.UndefOr[String] = js.native
+    var manifestUrl: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nonPersistent: js.UndefOr[Boolean] = js.native
+    var nonPersistent: js.UndefOr[Boolean] = js.undefined
     
-    var runtime: js.UndefOr[RuntimeConfig] = js.native
+    var runtime: js.UndefOr[RuntimeConfig] = js.undefined
     
-    var runtimeClient: js.UndefOr[Boolean] = js.native
+    var runtimeClient: js.UndefOr[Boolean] = js.undefined
     
-    var services: js.UndefOr[js.Array[ServiceConfig]] = js.native
+    var services: js.UndefOr[js.Array[ServiceConfig]] = js.undefined
     
-    var startupApp: js.UndefOr[js.Any] = js.native
+    var startupApp: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object BaseConfig {
     
@@ -134,7 +139,7 @@ object wireMod {
       def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
       @scala.inline
-      def setCustomItems(value: js.Array[_]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+      def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
@@ -225,11 +230,12 @@ object wireMod {
     }
   }
   
-  @js.native
-  trait ConfigWithRuntime extends BaseConfig {
+  trait ConfigWithRuntime
+    extends StObject
+       with BaseConfig {
     
     @JSName("runtime")
-    var runtime_ConfigWithRuntime: RuntimeConfig = js.native
+    var runtime_ConfigWithRuntime: RuntimeConfig
   }
   object ConfigWithRuntime {
     
@@ -247,11 +253,12 @@ object wireMod {
     }
   }
   
-  @js.native
-  trait ConfigWithUuid extends BaseConfig {
+  trait ConfigWithUuid
+    extends StObject
+       with BaseConfig {
     
     @JSName("uuid")
-    var uuid_ConfigWithUuid: String = js.native
+    var uuid_ConfigWithUuid: String
   }
   object ConfigWithUuid {
     
@@ -274,15 +281,36 @@ object wireMod {
     - typings.openfin.wireMod.NewConnectConfig
     - typings.openfin.wireMod.ExternalConfig
   */
-  type ConnectConfig = _ConnectConfig | NewConnectConfig
+  trait ConnectConfig extends StObject
+  object ConnectConfig {
+    
+    @scala.inline
+    def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.openfin.wireMod.ExistingConnectConfig]
+    }
+    
+    @scala.inline
+    def ExternalConfig(manifestUrl: String): typings.openfin.wireMod.ExternalConfig = {
+      val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.openfin.wireMod.ExternalConfig]
+    }
+    
+    @scala.inline
+    def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
+      val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.openfin.wireMod.NewConnectConfig]
+    }
+  }
   
-  @js.native
   trait ExistingConnectConfig
-    extends ConfigWithUuid
-       with _ConnectConfig {
+    extends StObject
+       with ConfigWithUuid
+       with ConnectConfig
+       with InternalConnectConfig {
     
     @JSName("address")
-    var address_ExistingConnectConfig: String = js.native
+    var address_ExistingConnectConfig: String
   }
   object ExistingConnectConfig {
     
@@ -300,13 +328,13 @@ object wireMod {
     }
   }
   
-  @js.native
   trait ExternalConfig
-    extends BaseConfig
-       with _ConnectConfig {
+    extends StObject
+       with BaseConfig
+       with ConnectConfig {
     
     @JSName("manifestUrl")
-    var manifestUrl_ExternalConfig: String = js.native
+    var manifestUrl_ExternalConfig: String
   }
   object ExternalConfig {
     
@@ -324,26 +352,57 @@ object wireMod {
     }
   }
   
-  type InternalConnectConfig = ExistingConnectConfig | NewConnectConfig
+  /* Rewritten from type alias, can be one of: 
+    - typings.openfin.wireMod.ExistingConnectConfig
+    - typings.openfin.wireMod.NewConnectConfig
+  */
+  trait InternalConnectConfig extends StObject
+  object InternalConnectConfig {
+    
+    @scala.inline
+    def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.openfin.wireMod.ExistingConnectConfig]
+    }
+    
+    @scala.inline
+    def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
+      val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.openfin.wireMod.NewConnectConfig]
+    }
+  }
   
-  type NewConnectConfig = ConfigWithUuid with ConfigWithRuntime
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.openfin.wireMod.BaseConfig because Already inherited
+  - typings.openfin.wireMod.ConfigWithRuntime because var conflicts: address, appAssets, assetsUrl, client, customItems, devToolsPort, installerUI, licenseKey, lrsUrl, manifestUrl, name, nonPersistent, runtime, runtimeClient, services, startupApp, timeout, uuid. Inlined  */ trait NewConnectConfig
+    extends StObject
+       with ConfigWithUuid
+       with ConnectConfig
+       with InternalConnectConfig
+  object NewConnectConfig {
+    
+    @scala.inline
+    def apply(uuid: String): NewConnectConfig = {
+      val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NewConnectConfig]
+    }
+  }
   
-  type PortDiscoveryConfig = (ExternalConfig with ConfigWithRuntime) | NewConnectConfig
+  type PortDiscoveryConfig = (ExternalConfig & ConfigWithRuntime) | NewConnectConfig
   
-  @js.native
   trait RuntimeConfig extends StObject {
     
-    var arguments: js.UndefOr[String] = js.native
+    var arguments: js.UndefOr[String] = js.undefined
     
-    var fallbackVersion: js.UndefOr[String] = js.native
+    var fallbackVersion: js.UndefOr[String] = js.undefined
     
-    var rvmDir: js.UndefOr[String] = js.native
+    var rvmDir: js.UndefOr[String] = js.undefined
     
-    var securityRealm: js.UndefOr[String] = js.native
+    var securityRealm: js.UndefOr[String] = js.undefined
     
-    var verboseLogging: js.UndefOr[Boolean] = js.native
+    var verboseLogging: js.UndefOr[Boolean] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object RuntimeConfig {
     
@@ -391,12 +450,11 @@ object wireMod {
     }
   }
   
-  @js.native
   trait ServiceConfig extends StObject {
     
-    var manifestUrl: String = js.native
+    var manifestUrl: String
     
-    var name: String = js.native
+    var name: String
   }
   object ServiceConfig {
     
@@ -420,32 +478,17 @@ object wireMod {
   @js.native
   trait Wire extends EventEmitter {
     
-    def connect(address: String): js.Promise[_] = js.native
+    def connect(address: String): js.Promise[js.Any] = js.native
     
     def connectSync(): js.Any = js.native
     
-    def send(data: js.Any): js.Promise[_] = js.native
+    def send(data: js.Any): js.Promise[js.Any] = js.native
     
     def shutdown(): js.Promise[Unit] = js.native
   }
   
   @js.native
   trait WireConstructor
-    extends Instantiable1[/* onmessage */ js.Function1[/* data */ js.Any, Unit], Wire]
-  
-  trait _ConnectConfig extends StObject
-  object _ConnectConfig {
-    
-    @scala.inline
-    def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.openfin.wireMod.ExistingConnectConfig]
-    }
-    
-    @scala.inline
-    def ExternalConfig(manifestUrl: String): typings.openfin.wireMod.ExternalConfig = {
-      val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.openfin.wireMod.ExternalConfig]
-    }
-  }
+    extends StObject
+       with Instantiable1[/* onmessage */ js.Function1[/* data */ js.Any, Unit], Wire]
 }

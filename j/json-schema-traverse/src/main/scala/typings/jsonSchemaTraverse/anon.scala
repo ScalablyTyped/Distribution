@@ -3,17 +3,15 @@ package typings.jsonSchemaTraverse
 import typings.jsonSchemaTraverse.mod.TraverseCallbackDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Post extends StObject {
     
-    var post: js.UndefOr[TraverseCallbackDef] = js.native
+    var post: js.UndefOr[TraverseCallbackDef] = js.undefined
     
-    var pre: js.UndefOr[TraverseCallbackDef] = js.native
+    var pre: js.UndefOr[TraverseCallbackDef] = js.undefined
   }
   object Post {
     

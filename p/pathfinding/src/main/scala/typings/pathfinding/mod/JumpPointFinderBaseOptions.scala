@@ -2,13 +2,13 @@ package typings.pathfinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JumpPointFinderBaseOptions extends Heuristic {
+trait JumpPointFinderBaseOptions
+  extends StObject
+     with Heuristic {
   
-  var trackJumpRecursion: js.UndefOr[Boolean] = js.native
+  var trackJumpRecursion: js.UndefOr[Boolean] = js.undefined
 }
 object JumpPointFinderBaseOptions {
   

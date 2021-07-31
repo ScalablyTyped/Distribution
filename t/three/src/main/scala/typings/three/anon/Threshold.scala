@@ -2,13 +2,11 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Threshold extends StObject {
   
-  var threshold: Double = js.native
+  var threshold: Double
 }
 object Threshold {
   

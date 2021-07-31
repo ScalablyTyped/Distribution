@@ -8,10 +8,13 @@ import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IShell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
+  
+  @JSImport("ionic/lib/hooks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/hooks", "Hook")
   @js.native
@@ -29,38 +32,30 @@ object hooksMod {
     def script: String = js.native
   }
   
-  @JSImport("ionic/lib/hooks", "addHook")
-  @js.native
-  def addHook(baseDir: String, hooks: js.UndefOr[scala.Nothing], hook: String): js.Array[String] = js.native
-  @JSImport("ionic/lib/hooks", "addHook")
-  @js.native
-  def addHook(baseDir: String, hooks: String, hook: String): js.Array[String] = js.native
-  @JSImport("ionic/lib/hooks", "addHook")
-  @js.native
-  def addHook(baseDir: String, hooks: js.Array[String], hook: String): js.Array[String] = js.native
+  @scala.inline
+  def addHook(baseDir: String, hooks: String, hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addHook(baseDir: String, hooks: js.Array[String], hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addHook(baseDir: String, hooks: Unit, hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("ionic/lib/hooks", "locateHook")
-  @js.native
-  def locateHook(baseDir: String, hooks: js.Array[String], hook: String): Double = js.native
+  @scala.inline
+  def locateHook(baseDir: String, hooks: js.Array[String], hook: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("locateHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ionic/lib/hooks", "removeHook")
-  @js.native
-  def removeHook(baseDir: String, hooks: js.UndefOr[scala.Nothing], hook: String): js.Array[String] = js.native
-  @JSImport("ionic/lib/hooks", "removeHook")
-  @js.native
-  def removeHook(baseDir: String, hooks: String, hook: String): js.Array[String] = js.native
-  @JSImport("ionic/lib/hooks", "removeHook")
-  @js.native
-  def removeHook(baseDir: String, hooks: js.Array[String], hook: String): js.Array[String] = js.native
+  @scala.inline
+  def removeHook(baseDir: String, hooks: String, hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def removeHook(baseDir: String, hooks: js.Array[String], hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def removeHook(baseDir: String, hooks: Unit, hook: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHook")(baseDir.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait HookDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val project: IProject = js.native
+    val project: IProject
     
-    val shell: IShell = js.native
+    val shell: IShell
   }
   object HookDeps {
     

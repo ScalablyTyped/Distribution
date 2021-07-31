@@ -2,15 +2,13 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventStartCondition extends StObject {
   
-  var EventFilter: js.UndefOr[typings.awsSdk.pinpointMod.EventFilter] = js.native
+  var EventFilter: js.UndefOr[typings.awsSdk.pinpointMod.EventFilter] = js.undefined
   
-  var SegmentId: js.UndefOr[string] = js.native
+  var SegmentId: js.UndefOr[string] = js.undefined
 }
 object EventStartCondition {
   

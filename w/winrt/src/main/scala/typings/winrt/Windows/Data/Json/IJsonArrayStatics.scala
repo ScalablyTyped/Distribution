@@ -3,15 +3,13 @@ package typings.winrt.Windows.Data.Json
 import typings.winrt.anon.ResultSucceeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonArrayStatics extends StObject {
   
-  def parse(input: String): JsonArray = js.native
+  def parse(input: String): JsonArray
   
-  def tryParse(input: String): ResultSucceeded = js.native
+  def tryParse(input: String): ResultSucceeded
 }
 object IJsonArrayStatics {
   

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookCommentReply extends Entity {
+trait WorkbookCommentReply
+  extends StObject
+     with Entity {
   
   // The content of a comment reply.
-  var content: js.UndefOr[NullableOption[String]] = js.native
+  var content: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the type for the comment reply.
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
 }
 object WorkbookCommentReply {
   

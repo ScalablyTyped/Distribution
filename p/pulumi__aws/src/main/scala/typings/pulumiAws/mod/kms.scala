@@ -26,10 +26,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kms {
+  
+  @JSImport("@pulumi/aws", "kms")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "kms.Alias")
   @js.native
@@ -48,6 +51,10 @@ object kms {
   /* static members */
   object Alias {
     
+    @JSImport("@pulumi/aws", "kms.Alias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Alias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,26 +64,21 @@ object kms {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kms.Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.kmsAliasMod.Alias = js.native
-    @JSImport("@pulumi/aws", "kms.Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = js.native
-    @JSImport("@pulumi/aws", "kms.Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState): typings.pulumiAws.kmsAliasMod.Alias = js.native
-    @JSImport("@pulumi/aws", "kms.Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.kmsAliasMod.Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kmsAliasMod.Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kmsAliasMod.Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState): typings.pulumiAws.kmsAliasMod.Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kmsAliasMod.Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.kmsAliasMod.Alias]
     
     /**
       * Returns true if the given object is an instance of Alias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kms.Alias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kms.Ciphertext")
@@ -96,6 +98,10 @@ object kms {
   /* static members */
   object Ciphertext {
     
+    @JSImport("@pulumi/aws", "kms.Ciphertext")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Ciphertext resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -105,26 +111,21 @@ object kms {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kms.Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
-    @JSImport("@pulumi/aws", "kms.Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
-    @JSImport("@pulumi/aws", "kms.Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CiphertextState): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
-    @JSImport("@pulumi/aws", "kms.Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ciphertextMod.Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ciphertextMod.Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ciphertextMod.Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CiphertextState): typings.pulumiAws.ciphertextMod.Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ciphertextMod.Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ciphertextMod.Ciphertext]
     
     /**
       * Returns true if the given object is an instance of Ciphertext.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kms.Ciphertext.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kms.ExternalKey")
@@ -140,11 +141,15 @@ object kms {
       */
     def this(name: String) = this()
     def this(name: String, args: ExternalKeyArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ExternalKeyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ExternalKey {
+    
+    @JSImport("@pulumi/aws", "kms.ExternalKey")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ExternalKey resource's state with the given name, ID, and optional extra
@@ -155,26 +160,21 @@ object kms {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kms.ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
-    @JSImport("@pulumi/aws", "kms.ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
-    @JSImport("@pulumi/aws", "kms.ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ExternalKeyState): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
-    @JSImport("@pulumi/aws", "kms.ExternalKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.externalKeyMod.ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.externalKeyMod.ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.externalKeyMod.ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ExternalKeyState): typings.pulumiAws.externalKeyMod.ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.externalKeyMod.ExternalKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.externalKeyMod.ExternalKey]
     
     /**
       * Returns true if the given object is an instance of ExternalKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kms.ExternalKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kms.Grant")
@@ -194,6 +194,10 @@ object kms {
   /* static members */
   object Grant {
     
+    @JSImport("@pulumi/aws", "kms.Grant")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Grant resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -203,26 +207,21 @@ object kms {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kms.Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.grantMod.Grant = js.native
-    @JSImport("@pulumi/aws", "kms.Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = js.native
-    @JSImport("@pulumi/aws", "kms.Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GrantState): typings.pulumiAws.grantMod.Grant = js.native
-    @JSImport("@pulumi/aws", "kms.Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.grantMod.Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.grantMod.Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.grantMod.Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GrantState): typings.pulumiAws.grantMod.Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.grantMod.Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.grantMod.Grant]
     
     /**
       * Returns true if the given object is an instance of Grant.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kms.Grant.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "kms.Key")
@@ -238,11 +237,15 @@ object kms {
       */
     def this(name: String) = this()
     def this(name: String, args: KeyArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: KeyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Key {
+    
+    @JSImport("@pulumi/aws", "kms.Key")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Key resource's state with the given name, ID, and optional extra
@@ -253,60 +256,45 @@ object kms {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "kms.Key.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.keyMod.Key = js.native
-    @JSImport("@pulumi/aws", "kms.Key.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = js.native
-    @JSImport("@pulumi/aws", "kms.Key.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyState): typings.pulumiAws.keyMod.Key = js.native
-    @JSImport("@pulumi/aws", "kms.Key.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: KeyState, opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.keyMod.Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.keyMod.Key]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.keyMod.Key]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyState): typings.pulumiAws.keyMod.Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.keyMod.Key]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: KeyState, opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.keyMod.Key]
     
     /**
       * Returns true if the given object is an instance of Key.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "kms.Key.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/key.Key */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "kms.getAlias")
-  @js.native
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = js.native
-  @JSImport("@pulumi/aws", "kms.getAlias")
-  @js.native
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = js.native
+  @scala.inline
+  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
+  @scala.inline
+  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
   
-  @JSImport("@pulumi/aws", "kms.getCipherText")
-  @js.native
-  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = js.native
-  @JSImport("@pulumi/aws", "kms.getCipherText")
-  @js.native
-  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = js.native
+  @scala.inline
+  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCipherTextResult]]
+  @scala.inline
+  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCipherTextResult]]
   
-  @JSImport("@pulumi/aws", "kms.getKey")
-  @js.native
-  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = js.native
-  @JSImport("@pulumi/aws", "kms.getKey")
-  @js.native
-  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = js.native
+  @scala.inline
+  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetKeyResult]]
+  @scala.inline
+  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetKeyResult]]
   
-  @JSImport("@pulumi/aws", "kms.getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws", "kms.getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
+  @scala.inline
+  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
   
-  @JSImport("@pulumi/aws", "kms.getSecrets")
-  @js.native
-  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = js.native
-  @JSImport("@pulumi/aws", "kms.getSecrets")
-  @js.native
-  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = js.native
+  @scala.inline
+  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretsResult]]
+  @scala.inline
+  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretsResult]]
 }

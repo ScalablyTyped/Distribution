@@ -13,26 +13,24 @@ import typings.plotlyJs.plotlyJsStrings.point
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.MapboxSymbol> */
-@js.native
 trait PartialMapboxSymbol extends StObject {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconsize: js.UndefOr[Double] = js.native
+  var iconsize: js.UndefOr[Double] = js.undefined
   
-  var placement: js.UndefOr[point | line | `line-center`] = js.native
+  var placement: js.UndefOr[point | line | `line-center`] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textfont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var textfont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
   var textposition: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
-  ] = js.native
+  ] = js.undefined
 }
 object PartialMapboxSymbol {
   

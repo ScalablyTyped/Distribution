@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IProject
 import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,9 +33,8 @@ object ProjectSettings {
     * Expects one argument, the projects.IProject in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ProjectSettings.createIn")
-  @js.native
-  def createIn(container: IProject): typings.mendixmodelsdk.settingsMod.settings.ProjectSettings = js.native
+  @scala.inline
+  def createIn(container: IProject): typings.mendixmodelsdk.settingsMod.settings.ProjectSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.ProjectSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ProjectSettings.structureTypeName")

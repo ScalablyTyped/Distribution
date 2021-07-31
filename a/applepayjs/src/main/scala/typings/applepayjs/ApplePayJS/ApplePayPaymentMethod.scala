@@ -2,34 +2,32 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A dictionary that describes an Apple Pay payment card.
   */
-@js.native
 trait ApplePayPaymentMethod extends StObject {
   
   /**
     * A string, suitable for display, that describes the card.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * A string, suitable for display, that is the name of the payment network backing the card.
     */
-  var network: String = js.native
+  var network: String
   
   /**
     * The payment pass object currently selected to complete the payment.
     */
-  var paymentPass: ApplePayPaymentPass = js.native
+  var paymentPass: ApplePayPaymentPass
   
   /**
     * A value representing the card's type of payment.
     */
-  var `type`: ApplePayPaymentMethodType = js.native
+  var `type`: ApplePayPaymentMethodType
 }
 object ApplePayPaymentMethod {
   

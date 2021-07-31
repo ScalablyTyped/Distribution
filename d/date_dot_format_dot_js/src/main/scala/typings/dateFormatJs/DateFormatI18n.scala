@@ -2,16 +2,14 @@ package typings.dateFormatJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Internationalization strings
-@js.native
 trait DateFormatI18n extends StObject {
   
-  var dayNames: js.Array[String] = js.native
+  var dayNames: js.Array[String]
   
-  var monthNames: js.Array[String] = js.native
+  var monthNames: js.Array[String]
 }
 object DateFormatI18n {
   

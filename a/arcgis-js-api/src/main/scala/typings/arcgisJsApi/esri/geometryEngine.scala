@@ -6,7 +6,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.round
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -142,18 +141,6 @@ trait geometryEngine extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#generalize)
     */
   def generalize(geometry: Geometry_, maxDeviation: Double): Geometry_ = js.native
-  def generalize(
-    geometry: Geometry_,
-    maxDeviation: Double,
-    removeDegenerateParts: js.UndefOr[scala.Nothing],
-    maxDeviationUnit: Double
-  ): Geometry_ = js.native
-  def generalize(
-    geometry: Geometry_,
-    maxDeviation: Double,
-    removeDegenerateParts: js.UndefOr[scala.Nothing],
-    maxDeviationUnit: LinearUnits
-  ): Geometry_ = js.native
   def generalize(geometry: Geometry_, maxDeviation: Double, removeDegenerateParts: Boolean): Geometry_ = js.native
   def generalize(
     geometry: Geometry_,
@@ -165,6 +152,13 @@ trait geometryEngine extends StObject {
     geometry: Geometry_,
     maxDeviation: Double,
     removeDegenerateParts: Boolean,
+    maxDeviationUnit: LinearUnits
+  ): Geometry_ = js.native
+  def generalize(geometry: Geometry_, maxDeviation: Double, removeDegenerateParts: Unit, maxDeviationUnit: Double): Geometry_ = js.native
+  def generalize(
+    geometry: Geometry_,
+    maxDeviation: Double,
+    removeDegenerateParts: Unit,
     maxDeviationUnit: LinearUnits
   ): Geometry_ = js.native
   

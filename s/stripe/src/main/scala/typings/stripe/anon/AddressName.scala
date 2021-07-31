@@ -3,15 +3,13 @@ package typings.stripe.anon
 import typings.stripe.mod.issuing.cardholders.ICardholderBillingAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressName extends StObject {
   
-  var address: ICardholderBillingAddress = js.native
+  var address: ICardholderBillingAddress
   
-  var name: String = js.native
+  var name: String
 }
 object AddressName {
   

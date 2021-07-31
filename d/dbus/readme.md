@@ -11,8 +11,8 @@ A D-Bus binding for Node
 | Full name          | dbus |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 23 |
-| # downloads        | 41011 |
+| # dependents       | 26 |
+| # downloads        | 41800 |
 | # stars            | 2 |
 
 ## Links

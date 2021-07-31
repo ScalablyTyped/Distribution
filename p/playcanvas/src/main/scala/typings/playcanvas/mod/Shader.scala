@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,6 +44,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Shader")
 @js.native
 class Shader protected ()
-  extends typings.playcanvas.pc.Shader {
+  extends StObject
+     with typings.playcanvas.pc.Shader {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, definition: Attributes) = this()
+  
+  /**
+    * Frees resources associated with this shader.
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
 }

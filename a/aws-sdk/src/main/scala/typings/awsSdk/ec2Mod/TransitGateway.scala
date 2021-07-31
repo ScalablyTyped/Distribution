@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGateway extends StObject {
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the transit gateway.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The transit gateway options.
     */
-  var Options: js.UndefOr[TransitGatewayOptions] = js.native
+  var Options: js.UndefOr[TransitGatewayOptions] = js.undefined
   
   /**
     * The ID of the AWS account ID that owns the transit gateway.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the transit gateway.
     */
-  var State: js.UndefOr[TransitGatewayState] = js.native
+  var State: js.UndefOr[TransitGatewayState] = js.undefined
   
   /**
     * The tags for the transit gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the transit gateway.
     */
-  var TransitGatewayArn: js.UndefOr[String] = js.native
+  var TransitGatewayArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: js.UndefOr[String] = js.native
+  var TransitGatewayId: js.UndefOr[String] = js.undefined
 }
 object TransitGateway {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSchemasResponse extends StObject {
   
   /**
     * A token used to get the next set of schemas (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of schemas.
     */
-  var schemas: js.UndefOr[Schemas] = js.native
+  var schemas: js.UndefOr[Schemas] = js.undefined
 }
 object ListSchemasResponse {
   

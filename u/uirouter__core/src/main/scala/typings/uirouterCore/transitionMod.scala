@@ -23,7 +23,6 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionMod {
@@ -65,17 +64,17 @@ object transitionMod {
   object RejectType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uirouterCore.rejectFactoryMod.RejectType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.uirouterCore.rejectFactoryMod.RejectType & Double] = js.native
     
-    /* 3 */ val ABORTED: typings.uirouterCore.rejectFactoryMod.RejectType.ABORTED with Double = js.native
+    /* 3 */ val ABORTED: typings.uirouterCore.rejectFactoryMod.RejectType.ABORTED & Double = js.native
     
-    /* 6 */ val ERROR: typings.uirouterCore.rejectFactoryMod.RejectType.ERROR with Double = js.native
+    /* 6 */ val ERROR: typings.uirouterCore.rejectFactoryMod.RejectType.ERROR & Double = js.native
     
-    /* 5 */ val IGNORED: typings.uirouterCore.rejectFactoryMod.RejectType.IGNORED with Double = js.native
+    /* 5 */ val IGNORED: typings.uirouterCore.rejectFactoryMod.RejectType.IGNORED & Double = js.native
     
-    /* 4 */ val INVALID: typings.uirouterCore.rejectFactoryMod.RejectType.INVALID with Double = js.native
+    /* 4 */ val INVALID: typings.uirouterCore.rejectFactoryMod.RejectType.INVALID & Double = js.native
     
-    /* 2 */ val SUPERSEDED: typings.uirouterCore.rejectFactoryMod.RejectType.SUPERSEDED with Double = js.native
+    /* 2 */ val SUPERSEDED: typings.uirouterCore.rejectFactoryMod.RejectType.SUPERSEDED & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/transition", "Rejection")
@@ -84,48 +83,43 @@ object transitionMod {
     extends typings.uirouterCore.rejectFactoryMod.Rejection {
     def this(`type`: Double) = this()
     def this(`type`: Double, message: String) = this()
-    def this(`type`: Double, message: js.UndefOr[scala.Nothing], detail: js.Any) = this()
     def this(`type`: Double, message: String, detail: js.Any) = this()
+    def this(`type`: Double, message: Unit, detail: js.Any) = this()
   }
   /* static members */
   object Rejection {
     
-    /** Returns a Rejection due to aborted transition */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.aborted")
+    @JSImport("@uirouter/core/lib/transition", "Rejection")
     @js.native
-    def aborted(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.aborted")
-    @js.native
-    def aborted(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    val ^ : js.Any = js.native
     
     /** Returns a Rejection due to aborted transition */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.errored")
-    @js.native
-    def errored(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.errored")
-    @js.native
-    def errored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def aborted(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def aborted(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    
+    /** Returns a Rejection due to aborted transition */
+    @scala.inline
+    def errored(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def errored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to ignored transition */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.ignored")
-    @js.native
-    def ignored(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.ignored")
-    @js.native
-    def ignored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def ignored(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def ignored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to invalid transition */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.invalid")
-    @js.native
-    def invalid(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.invalid")
-    @js.native
-    def invalid(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def invalid(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def invalid(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns true if the obj is a rejected promise created from the `asPromise` factory */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.isRejectionPromise")
-    @js.native
-    def isRejectionPromise(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isRejectionPromise(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejectionPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns a Rejection
@@ -136,40 +130,30 @@ object transitionMod {
       *
       * @returns `detail` if it is already a `Rejection`, else returns an ERROR Rejection.
       */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.normalize")
-    @js.native
-    def normalize(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.normalize")
-    @js.native
-    def normalize(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.normalize")
-    @js.native
-    def normalize(detail: Error): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.normalize")
-    @js.native
-    def normalize(detail: typings.uirouterCore.rejectFactoryMod.Rejection): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def normalize(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def normalize(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def normalize(detail: Error): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def normalize(detail: typings.uirouterCore.rejectFactoryMod.Rejection): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to redirected transition */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.redirected")
-    @js.native
-    def redirected(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.redirected")
-    @js.native
-    def redirected(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def redirected(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def redirected(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to transition superseded */
-    @JSImport("@uirouter/core/lib/transition", "Rejection.superseded")
-    @js.native
-    def superseded(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.superseded")
-    @js.native
-    def superseded(detail: js.UndefOr[scala.Nothing], options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.superseded")
-    @js.native
-    def superseded(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
-    @JSImport("@uirouter/core/lib/transition", "Rejection.superseded")
-    @js.native
-    def superseded(detail: js.Any, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    @scala.inline
+    def superseded(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def superseded(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def superseded(detail: js.Any, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    @scala.inline
+    def superseded(detail: Unit, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
   }
   
   @JSImport("@uirouter/core/lib/transition", "Transition")
@@ -223,14 +207,6 @@ object transitionMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler
     ) = this()
@@ -239,18 +215,8 @@ object transitionMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler
     ) = this()
     def this(
       name: String,
@@ -258,7 +224,7 @@ object transitionMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
     ) = this()
     def this(
@@ -275,39 +241,27 @@ object transitionMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler
     ) = this()
     def this(
       name: String,
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler,
-      synchronous: Boolean
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
+      getErrorHandler: GetErrorHandler
     ) = this()
     def this(
       name: String,
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler,
+      reverseSort: Boolean,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
       synchronous: Boolean
     ) = this()
     def this(
@@ -316,17 +270,7 @@ object transitionMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
-    ) = this()
-    def this(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
     ) = this()
@@ -337,7 +281,7 @@ object transitionMod {
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: Unit,
       synchronous: Boolean
     ) = this()
     def this(
@@ -346,6 +290,46 @@ object transitionMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
@@ -381,9 +365,8 @@ object transitionMod {
       * These GetResultHandler(s) are used by [[invokeHook]] below
       * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.HANDLE_RESULT")
-    @js.native
-    def HANDLE_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
+    @scala.inline
+    def HANDLE_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("HANDLE_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
     @scala.inline
     def HANDLE_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HANDLE_RESULT")(x.asInstanceOf[js.Any])
     
@@ -398,9 +381,8 @@ object transitionMod {
       * These GetErrorHandler(s) are used by [[invokeHook]] below
       * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.LOG_ERROR")
-    @js.native
-    def LOG_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+    @scala.inline
+    def LOG_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
     @scala.inline
     def LOG_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_ERROR")(x.asInstanceOf[js.Any])
     
@@ -415,27 +397,24 @@ object transitionMod {
       * If the result is a promise rejection, log it.
       * Otherwise, ignore the result.
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.LOG_REJECTED_RESULT")
-    @js.native
-    def LOG_REJECTED_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
+    @scala.inline
+    def LOG_REJECTED_RESULT(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_REJECTED_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
     @scala.inline
     def LOG_REJECTED_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_REJECTED_RESULT")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/transition", "TransitionHook.REJECT_ERROR")
     @js.native
     def REJECT_ERROR: GetErrorHandler = js.native
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.REJECT_ERROR")
-    @js.native
-    def REJECT_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+    @scala.inline
+    def REJECT_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("REJECT_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
     @scala.inline
     def REJECT_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECT_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/transition", "TransitionHook.THROW_ERROR")
     @js.native
     def THROW_ERROR: GetErrorHandler = js.native
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.THROW_ERROR")
-    @js.native
-    def THROW_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+    @scala.inline
+    def THROW_ERROR(hook: typings.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("THROW_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
     @scala.inline
     def THROW_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_ERROR")(x.asInstanceOf[js.Any])
     
@@ -457,12 +436,13 @@ object transitionMod {
       * @param waitFor if provided, the chain is `.then()`'ed off this promise
       * @returns a `Promise` for sequentially invoking the hooks (in order)
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.chain")
-    @js.native
-    def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[_] = js.native
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.chain")
-    @js.native
-    def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook], waitFor: js.Promise[_]): js.Promise[_] = js.native
+    @scala.inline
+    def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def chain(
+      hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook],
+      waitFor: js.Promise[js.Any]
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Invokes all the provided TransitionHooks, in order.
@@ -475,19 +455,17 @@ object transitionMod {
       *
       * @returns a promise for the async result, or the result of the callback
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.invokeHooks")
-    @js.native
+    @scala.inline
     def invokeHooks[T](
       hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook],
       doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
-    ): js.Promise[_] | T = js.native
+    ): js.Promise[js.Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | T]
     
     /**
       * Run all TransitionHooks, ignoring their return value.
       */
-    @JSImport("@uirouter/core/lib/transition", "TransitionHook.runAllHooks")
-    @js.native
-    def runAllHooks(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): Unit = js.native
+    @scala.inline
+    def runAllHooks(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@uirouter/core/lib/transition", "TransitionHookPhase")
@@ -495,17 +473,17 @@ object transitionMod {
   object TransitionHookPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase & Double] = js.native
     
-    /* 1 */ val BEFORE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.BEFORE with Double = js.native
+    /* 1 */ val BEFORE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.BEFORE & Double = js.native
     
-    /* 0 */ val CREATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.CREATE with Double = js.native
+    /* 0 */ val CREATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.CREATE & Double = js.native
     
-    /* 4 */ val ERROR: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.ERROR with Double = js.native
+    /* 4 */ val ERROR: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.ERROR & Double = js.native
     
-    /* 2 */ val RUN: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.RUN with Double = js.native
+    /* 2 */ val RUN: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.RUN & Double = js.native
     
-    /* 3 */ val SUCCESS: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.SUCCESS with Double = js.native
+    /* 3 */ val SUCCESS: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase.SUCCESS & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/transition", "TransitionHookScope")
@@ -513,11 +491,11 @@ object transitionMod {
   object TransitionHookScope extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookScope with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.uirouterCore.transitionInterfaceMod.TransitionHookScope & Double] = js.native
     
-    /* 1 */ val STATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE with Double = js.native
+    /* 1 */ val STATE: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
     
-    /* 0 */ val TRANSITION: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION with Double = js.native
+    /* 0 */ val TRANSITION: typings.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/transition", "TransitionService")
@@ -534,8 +512,7 @@ object transitionMod {
   @scala.inline
   def defaultTransOpts_=(x: TransitionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransOpts")(x.asInstanceOf[js.Any])
   
-  @JSImport("@uirouter/core/lib/transition", "makeEvent")
-  @js.native
+  @scala.inline
   def makeEvent(
     registry: IHookRegistry,
     transitionService: typings.uirouterCore.transitionServiceMod.TransitionService,
@@ -544,14 +521,18 @@ object transitionMod {
     /* matchObject */ js.Any, 
     /* callback */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
-    _
-  ] = js.native
+    js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* matchObject */ js.Any, 
+    /* callback */ js.Any, 
+    /* options */ js.UndefOr[js.Object], 
+    js.Any
+  ]]
   
-  @JSImport("@uirouter/core/lib/transition", "matchState")
-  @js.native
+  @scala.inline
   def matchState(
     state: StateObject,
     criterion: HookMatchCriterion,
     transition: typings.uirouterCore.transitionTransitionMod.Transition
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

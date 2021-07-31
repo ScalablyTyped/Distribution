@@ -3,19 +3,17 @@ package typings.ssri.anon
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Promise extends StObject {
   
-  var Promise: js.UndefOr[PromiseConstructorLike] = js.native
+  var Promise: js.UndefOr[PromiseConstructorLike] = js.undefined
   
-  var algorithms: js.UndefOr[js.Array[String]] = js.native
+  var algorithms: js.UndefOr[js.Array[String]] = js.undefined
   
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object Promise {
   

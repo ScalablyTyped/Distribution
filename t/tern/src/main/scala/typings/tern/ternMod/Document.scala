@@ -2,17 +2,15 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var files: js.UndefOr[js.Array[File]] = js.native
+  var files: js.UndefOr[js.Array[File]] = js.undefined
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object Document {
   

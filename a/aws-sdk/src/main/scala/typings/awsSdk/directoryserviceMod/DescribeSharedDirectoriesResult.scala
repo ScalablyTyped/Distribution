@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSharedDirectoriesResult extends StObject {
   
   /**
     * If not null, token that indicates that more results are available. Pass this value for the NextToken parameter in a subsequent call to DescribeSharedDirectories to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * A list of all shared directories in your account.
     */
-  var SharedDirectories: js.UndefOr[typings.awsSdk.directoryserviceMod.SharedDirectories] = js.native
+  var SharedDirectories: js.UndefOr[typings.awsSdk.directoryserviceMod.SharedDirectories] = js.undefined
 }
 object DescribeSharedDirectoriesResult {
   

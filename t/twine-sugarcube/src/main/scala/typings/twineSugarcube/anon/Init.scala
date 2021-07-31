@@ -2,7 +2,6 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,9 +28,9 @@ trait Init extends StObject {
     * State.prng.init("aVeryLongSeed", true); //Seed the PRNG with "aVeryLongSeed" and pad it with extra entropy
     */
   def init(): Unit = js.native
-  def init(seed: js.UndefOr[scala.Nothing], useEntropy: Boolean): Unit = js.native
   def init(seed: String): Unit = js.native
   def init(seed: String, useEntropy: Boolean): Unit = js.native
+  def init(seed: Unit, useEntropy: Boolean): Unit = js.native
   
   /**
     * Returns whether the seedable PRNG has been enabled

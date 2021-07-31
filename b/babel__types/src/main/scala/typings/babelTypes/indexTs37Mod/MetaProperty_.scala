@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.MetaProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait MetaProperty_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait MetaProperty_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var meta: Identifier_ = js.native
+  var meta: Identifier_
   
-  var property: Identifier_ = js.native
+  var property: Identifier_
   
   @JSName("type")
-  var type_MetaProperty_ : MetaProperty = js.native
+  var type_MetaProperty_ : MetaProperty
 }
 object MetaProperty_ {
   
   @scala.inline
-  def apply(meta: Identifier_, property: Identifier_, `type`: MetaProperty): MetaProperty_ = {
-    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(meta: Identifier_, property: Identifier_): MetaProperty_ = {
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[MetaProperty_]
   }
   

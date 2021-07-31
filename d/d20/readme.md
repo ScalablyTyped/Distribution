@@ -12,7 +12,7 @@ Library for rolling dice based on dice-syntax used in RPGs.
 | Keywords           | dice, rpg, d20 |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 5454 |
+| # downloads        | 6344 |
 | # stars            | 2 |
 
 ## Links

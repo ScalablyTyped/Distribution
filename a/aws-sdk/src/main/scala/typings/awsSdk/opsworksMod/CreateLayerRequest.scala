@@ -2,101 +2,99 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLayerRequest extends StObject {
   
   /**
     * One or more user-defined key-value pairs to be added to the stack attributes. To create a cluster layer, set the EcsClusterArn attribute to the cluster's ARN.
     */
-  var Attributes: js.UndefOr[LayerAttributes] = js.native
+  var Attributes: js.UndefOr[LayerAttributes] = js.undefined
   
   /**
     * Whether to automatically assign an Elastic IP address to the layer's instances. For more information, see How to Edit a Layer.
     */
-  var AutoAssignElasticIps: js.UndefOr[Boolean] = js.native
+  var AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For stacks that are running in a VPC, whether to automatically assign a public IP address to the layer's instances. For more information, see How to Edit a Layer.
     */
-  var AutoAssignPublicIps: js.UndefOr[Boolean] = js.native
+  var AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies CloudWatch Logs configuration options for the layer. For more information, see CloudWatchLogsLogStream.
     */
-  var CloudWatchLogsConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.CloudWatchLogsConfiguration] = js.native
+  var CloudWatchLogsConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.CloudWatchLogsConfiguration] = js.undefined
   
   /**
     * The ARN of an IAM profile to be used for the layer's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
     */
-  var CustomInstanceProfileArn: js.UndefOr[String] = js.native
+  var CustomInstanceProfileArn: js.UndefOr[String] = js.undefined
   
   /**
     * A JSON-formatted string containing custom stack configuration and deployment attributes to be installed on the layer's instances. For more information, see  Using Custom JSON. This feature is supported as of version 1.7.42 of the AWS CLI. 
     */
-  var CustomJson: js.UndefOr[String] = js.native
+  var CustomJson: js.UndefOr[String] = js.undefined
   
   /**
     * A LayerCustomRecipes object that specifies the layer custom recipes.
     */
-  var CustomRecipes: js.UndefOr[Recipes] = js.native
+  var CustomRecipes: js.UndefOr[Recipes] = js.undefined
   
   /**
     * An array containing the layer custom security group IDs.
     */
-  var CustomSecurityGroupIds: js.UndefOr[Strings] = js.native
+  var CustomSecurityGroupIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * Whether to disable auto healing for the layer.
     */
-  var EnableAutoHealing: js.UndefOr[Boolean] = js.native
+  var EnableAutoHealing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   To ensure that your instances have the latest security updates, we strongly recommend using the default value of true. 
     */
-  var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.native
+  var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A LifeCycleEventConfiguration object that you can use to configure the Shutdown event to specify an execution timeout and enable or disable Elastic Load Balancer connection draining.
     */
-  var LifecycleEventConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.LifecycleEventConfiguration] = js.native
+  var LifecycleEventConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.LifecycleEventConfiguration] = js.undefined
   
   /**
     * The layer name, which is used by the console.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * An array of Package objects that describes the layer packages.
     */
-  var Packages: js.UndefOr[Strings] = js.native
+  var Packages: js.UndefOr[Strings] = js.undefined
   
   /**
     * For custom layers only, use this parameter to specify the layer's short name, which is used internally by AWS OpsWorks Stacks and by Chef recipes. The short name is also used as the name for the directory where your app files are installed. It can have a maximum of 200 characters, which are limited to the alphanumeric characters, '-', '_', and '.'. The built-in layers' short names are defined by AWS OpsWorks Stacks. For more information, see the Layer Reference.
     */
-  var Shortname: String = js.native
+  var Shortname: String
   
   /**
     * The layer stack ID.
     */
-  var StackId: String = js.native
+  var StackId: String
   
   /**
     * The layer type. A stack cannot have more than one built-in layer of the same type. It can have any number of custom layers. Built-in layers are not available in Chef 12 stacks.
     */
-  var Type: LayerType = js.native
+  var Type: LayerType
   
   /**
     * Whether to use Amazon EBS-optimized instances.
     */
-  var UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.native
+  var UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A VolumeConfigurations object that describes the layer's Amazon EBS volumes.
     */
-  var VolumeConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.VolumeConfigurations] = js.native
+  var VolumeConfigurations: js.UndefOr[typings.awsSdk.opsworksMod.VolumeConfigurations] = js.undefined
 }
 object CreateLayerRequest {
   

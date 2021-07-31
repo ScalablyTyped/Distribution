@@ -2,13 +2,13 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChamferableBodyDefinition extends IBodyDefinition {
+trait IChamferableBodyDefinition
+  extends StObject
+     with IBodyDefinition {
   
-  var chamfer: js.UndefOr[IChamfer] = js.native
+  var chamfer: js.UndefOr[IChamfer] = js.undefined
 }
 object IChamferableBodyDefinition {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsConfig extends StObject {
   
   /** Whether Query Insights feature is enabled. */
-  var queryInsightsEnabled: js.UndefOr[Boolean] = js.native
+  var queryInsightsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum query length stored in bytes. Default value: 1024 bytes. Range: 256-4500 bytes. Query length more than this field value will be truncated to this value. When unset, query
     * length will be the default value.
     */
-  var queryStringLength: js.UndefOr[Double] = js.native
+  var queryStringLength: js.UndefOr[Double] = js.undefined
   
   /** Whether Query Insights will record application tags from query when enabled. */
-  var recordApplicationTags: js.UndefOr[Boolean] = js.native
+  var recordApplicationTags: js.UndefOr[Boolean] = js.undefined
   
   /** Whether Query Insights will record client address when enabled. */
-  var recordClientAddress: js.UndefOr[Boolean] = js.native
+  var recordClientAddress: js.UndefOr[Boolean] = js.undefined
 }
 object InsightsConfig {
   

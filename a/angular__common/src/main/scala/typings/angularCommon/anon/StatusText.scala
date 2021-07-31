@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.httpMod.HttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusText extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
 }
 object StatusText {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,16 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .build();
   *     }
   */
-@js.native
 trait GetAuthTypeResponse extends StObject {
   
-  def build(): GetAuthTypeResponse = js.native
+  def build(): GetAuthTypeResponse
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setAuthType(authType: AuthType): GetAuthTypeResponse = js.native
+  def setAuthType(authType: AuthType): GetAuthTypeResponse
   
-  def setHelpUrl(helpUrl: String): GetAuthTypeResponse = js.native
+  def setHelpUrl(helpUrl: String): GetAuthTypeResponse
 }
 object GetAuthTypeResponse {
   

@@ -4,60 +4,58 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Create {
   
   type GenerateTextureCallback = js.Function2[/* canvas */ HTMLCanvasElement, /* context */ CanvasRenderingContext2D, Unit]
   
-  @js.native
   trait GenerateTextureConfig extends StObject {
     
     /**
       * The HTML Canvas to draw the texture to.
       */
-    var canvas: js.UndefOr[HTMLCanvasElement] = js.native
+    var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
     
     /**
       * Should the canvas be cleared before the texture is drawn?
       */
-    var clearCanvas: js.UndefOr[Boolean] = js.native
+    var clearCanvas: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of data, where each row is a string of single values 0-9A-F, or the period character.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The indexed palette that the data cell values map to.
       */
-    var palette: js.UndefOr[Palette] = js.native
+    var palette: js.UndefOr[Palette] = js.undefined
     
     /**
       * The height of each 'pixel' in the generated texture.
       */
-    var pixelHeight: js.UndefOr[Double] = js.native
+    var pixelHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of each 'pixel' in the generated texture.
       */
-    var pixelWidth: js.UndefOr[Double] = js.native
+    var pixelWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * A callback to send the canvas to after the texture has been drawn.
       */
-    var postRender: js.UndefOr[GenerateTextureCallback] = js.native
+    var postRender: js.UndefOr[GenerateTextureCallback] = js.undefined
     
     /**
       * A callback to send the canvas to prior to the texture being drawn.
       */
-    var preRender: js.UndefOr[GenerateTextureCallback] = js.native
+    var preRender: js.UndefOr[GenerateTextureCallback] = js.undefined
     
     /**
       * Should the canvas be resized before the texture is drawn?
       */
-    var resizeCanvas: js.UndefOr[Boolean] = js.native
+    var resizeCanvas: js.UndefOr[Boolean] = js.undefined
   }
   object GenerateTextureConfig {
     
@@ -83,7 +81,7 @@ object Create {
       def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -129,88 +127,87 @@ object Create {
     }
   }
   
-  @js.native
   trait Palette extends StObject {
     
     /**
       * Color value 1.
       */
-    var `0`: String = js.native
+    var `0`: String
     
     /**
       * Color value 2.
       */
-    var `1`: String = js.native
+    var `1`: String
     
     /**
       * Color value 3.
       */
-    var `2`: String = js.native
+    var `2`: String
     
     /**
       * Color value 4.
       */
-    var `3`: String = js.native
+    var `3`: String
     
     /**
       * Color value 5.
       */
-    var `4`: String = js.native
+    var `4`: String
     
     /**
       * Color value 6.
       */
-    var `5`: String = js.native
+    var `5`: String
     
     /**
       * Color value 7.
       */
-    var `6`: String = js.native
+    var `6`: String
     
     /**
       * Color value 8.
       */
-    var `7`: String = js.native
+    var `7`: String
     
     /**
       * Color value 9.
       */
-    var `8`: String = js.native
+    var `8`: String
     
     /**
       * Color value 10.
       */
-    var `9`: String = js.native
+    var `9`: String
     
     /**
       * Color value 11.
       */
-    var A: String = js.native
+    var A: String
     
     /**
       * Color value 12.
       */
-    var B: String = js.native
+    var B: String
     
     /**
       * Color value 13.
       */
-    var C: String = js.native
+    var C: String
     
     /**
       * Color value 14.
       */
-    var D: String = js.native
+    var D: String
     
     /**
       * Color value 15.
       */
-    var E: String = js.native
+    var E: String
     
     /**
       * Color value 16.
       */
-    var F: String = js.native
+    var F: String
   }
   object Palette {
     

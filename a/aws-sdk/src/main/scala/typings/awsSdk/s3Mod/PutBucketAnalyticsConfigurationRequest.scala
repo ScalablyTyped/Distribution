@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketAnalyticsConfigurationRequest extends StObject {
   
   /**
     * The configuration and any analyses for the analytics filter.
     */
-  var AnalyticsConfiguration: typings.awsSdk.s3Mod.AnalyticsConfiguration = js.native
+  var AnalyticsConfiguration: typings.awsSdk.s3Mod.AnalyticsConfiguration
   
   /**
     * The name of the bucket to which an analytics configuration is stored.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The ID that identifies the analytics configuration.
     */
-  var Id: AnalyticsId = js.native
+  var Id: AnalyticsId
 }
 object PutBucketAnalyticsConfigurationRequest {
   

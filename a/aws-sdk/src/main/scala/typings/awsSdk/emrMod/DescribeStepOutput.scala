@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStepOutput extends StObject {
   
   /**
     * The step details for the requested step identifier.
     */
-  var Step: js.UndefOr[typings.awsSdk.emrMod.Step] = js.native
+  var Step: js.UndefOr[typings.awsSdk.emrMod.Step] = js.undefined
 }
 object DescribeStepOutput {
   

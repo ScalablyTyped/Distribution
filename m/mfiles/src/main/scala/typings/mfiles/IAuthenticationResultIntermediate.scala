@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAuthenticationResultIntermediate extends StObject {
   
-  val AttemptIdentifier: String = js.native
+  val AttemptIdentifier: String
   
-  val AuthenticationData: INamedValues = js.native
+  val AuthenticationData: INamedValues
 }
 object IAuthenticationResultIntermediate {
   

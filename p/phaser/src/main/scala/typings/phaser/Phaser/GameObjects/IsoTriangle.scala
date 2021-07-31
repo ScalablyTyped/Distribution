@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * down or not.
   */
 @js.native
-trait IsoTriangle extends Shape {
+trait IsoTriangle
+  extends StObject
+     with Shape {
   
   /**
     * The color used to fill in the left-facing side of the iso triangle.
@@ -58,18 +59,18 @@ trait IsoTriangle extends Shape {
     * @param showRight Show the right-face of the iso triangle. Default true.
     */
   def setFaces(): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean, showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean): this.type = js.native
-  def setFaces(showTop: Boolean, showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Boolean, showLeft: Unit, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Boolean, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Unit, showRight: Boolean): this.type = js.native
   
-  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
-  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: Double, fillRight: Double): this.type = js.native
-  def setFillStyle(fillTop: Double, fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
   def setFillStyle(fillTop: Double, fillLeft: Double, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Double, fillLeft: Unit, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Unit, fillLeft: Double, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Unit, fillLeft: Unit, fillRight: Double): this.type = js.native
   
   /**
     * Sets the projection level of the iso triangle. Change this to change the 'angle' at which you are looking at the pyramid.

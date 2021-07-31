@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountStatus extends StObject {
   
   /** The ID of the account for which the status is reported. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** A list of account level issues. */
-  var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.native
+  var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#accountStatus`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** List of product-related data by channel, destination, and country. Data in this field may be delayed by up to 30 minutes. */
-  var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.native
+  var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.undefined
   
   /** Whether the account's website is claimed or not. */
-  var websiteClaimed: js.UndefOr[Boolean] = js.native
+  var websiteClaimed: js.UndefOr[Boolean] = js.undefined
 }
 object AccountStatus {
   

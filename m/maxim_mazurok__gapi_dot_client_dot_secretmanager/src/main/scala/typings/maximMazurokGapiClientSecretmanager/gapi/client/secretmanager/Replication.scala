@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replication extends StObject {
   
   /** The Secret will automatically be replicated without any restrictions. */
-  var automatic: js.UndefOr[Automatic] = js.native
+  var automatic: js.UndefOr[Automatic] = js.undefined
   
   /** The Secret will only be replicated into the locations specified. */
-  var userManaged: js.UndefOr[UserManaged] = js.native
+  var userManaged: js.UndefOr[UserManaged] = js.undefined
 }
 object Replication {
   

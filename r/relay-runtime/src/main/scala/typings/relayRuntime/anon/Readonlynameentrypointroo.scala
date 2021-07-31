@@ -4,24 +4,24 @@ import typings.relayRuntime.relayRuntimeStrings.entrypointDotrootDotconsume
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'entrypoint.root.consume',   profilerContext :any,   rootModuleID :string}> */
-@js.native
-trait Readonlynameentrypointroo extends LogEvent {
+trait Readonlynameentrypointroo
+  extends StObject
+     with LogEvent {
   
-  val name: entrypointDotrootDotconsume = js.native
+  val name: entrypointDotrootDotconsume
   
-  val profilerContext: js.Any = js.native
+  val profilerContext: js.Any
   
-  val rootModuleID: String = js.native
+  val rootModuleID: String
 }
 object Readonlynameentrypointroo {
   
   @scala.inline
-  def apply(name: entrypointDotrootDotconsume, profilerContext: js.Any, rootModuleID: String): Readonlynameentrypointroo = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], profilerContext = profilerContext.asInstanceOf[js.Any], rootModuleID = rootModuleID.asInstanceOf[js.Any])
+  def apply(profilerContext: js.Any, rootModuleID: String): Readonlynameentrypointroo = {
+    val __obj = js.Dynamic.literal(name = "entrypoint.root.consume", profilerContext = profilerContext.asInstanceOf[js.Any], rootModuleID = rootModuleID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameentrypointroo]
   }
   

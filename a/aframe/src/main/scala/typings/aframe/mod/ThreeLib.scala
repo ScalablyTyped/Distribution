@@ -122,7 +122,6 @@ import typings.three.webXRMod.XRRigidTransform
 import typings.three.webXRMod.XRSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -997,7 +996,7 @@ trait ThreeLib extends StObject {
   
   var PositionalAudio: Instantiable1[/* listener */ AudioListener, typings.three.mod.PositionalAudio] = js.native
   
-  var PropertyBinding: TypeofPropertyBinding with TypeofPropertyBindingComposite = js.native
+  var PropertyBinding: TypeofPropertyBinding & TypeofPropertyBindingComposite = js.native
   
   var PropertyMixer: Instantiable3[
     /* binding */ js.Any, 
@@ -1597,16 +1596,16 @@ trait ThreeLib extends StObject {
   
   def cloneUniforms(uniforms_src: js.Any): js.Any = js.native
   
-  def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  def error(message: Unit, optionalParams: js.Any*): Unit = js.native
   
-  def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  def log(message: Unit, optionalParams: js.Any*): Unit = js.native
   
-  def mergeUniforms(uniforms: js.Array[_]): js.Any = js.native
+  def mergeUniforms(uniforms: js.Array[js.Any]): js.Any = js.native
   
   val sRGBEncoding: TextureEncoding = js.native
   
-  def warn(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  def warn(message: Unit, optionalParams: js.Any*): Unit = js.native
 }

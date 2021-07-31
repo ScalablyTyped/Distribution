@@ -2,35 +2,35 @@ package typings.saxes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SaxesAttributeNS extends SaxesAttribute {
+trait SaxesAttributeNS
+  extends StObject
+     with SaxesAttribute {
   
   /**
     * The attribute's local name. For instance ``a:b="c"`` would have ``"b"`` for
     * ``local``.
     */
-  var local: String = js.native
+  var local: String
   
   /**
     * The attribute's name. This is the combination of prefix and local name.
     * For instance ``a:b="c"`` would have ``a:b`` for name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The attribute's prefix. For instance ``a:b="c"`` would have ``"a"`` for
     * ``prefix``.
     */
-  var prefix: String = js.native
+  var prefix: String
   
   /** The namespace URI of this attribute. */
-  var uri: String = js.native
+  var uri: String
   
   /** The attribute's value. */
-  var value: String = js.native
+  var value: String
 }
 object SaxesAttributeNS {
   

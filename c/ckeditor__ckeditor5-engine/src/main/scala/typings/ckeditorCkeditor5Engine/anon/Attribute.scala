@@ -2,15 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
-  var attribute: js.UndefOr[js.Array[String]] = js.native
+  var attribute: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: Boolean = js.native
+  var name: Boolean
 }
 object Attribute {
   

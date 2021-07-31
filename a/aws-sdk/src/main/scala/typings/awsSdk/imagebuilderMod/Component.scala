@@ -2,81 +2,79 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Component extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the component.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The change description of the component.
     */
-  var changeDescription: js.UndefOr[NonEmptyString] = js.native
+  var changeDescription: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The data of the component.
     */
-  var data: js.UndefOr[ComponentData] = js.native
+  var data: js.UndefOr[ComponentData] = js.undefined
   
   /**
     * The date that the component was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the component.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The encryption status of the component.
     */
-  var encrypted: js.UndefOr[NullableBoolean] = js.native
+  var encrypted: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The KMS key identifier used to encrypt the component.
     */
-  var kmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the component.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The owner of the component.
     */
-  var owner: js.UndefOr[NonEmptyString] = js.native
+  var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The platform of the component.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
     */
-  var supportedOsVersions: js.UndefOr[OsVersionList] = js.native
+  var supportedOsVersions: js.UndefOr[OsVersionList] = js.undefined
   
   /**
     * The tags associated with the component.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The type of the component denotes whether the component is used to build the image or only to test it.
     */
-  var `type`: js.UndefOr[ComponentType] = js.native
+  var `type`: js.UndefOr[ComponentType] = js.undefined
   
   /**
     * The version of the component.
     */
-  var version: js.UndefOr[VersionNumber] = js.native
+  var version: js.UndefOr[VersionNumber] = js.undefined
 }
 object Component {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Projects")
@@ -31,7 +30,7 @@ class ResourceProjects protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaProject] = js.native
   def create(callback: BodyResponseCallback[SchemaProject]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
   def create(params: ParamsResourceProjectsCreate): GaxiosPromise[SchemaProject] = js.native
   def create(params: ParamsResourceProjectsCreate, callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def create(
@@ -62,7 +61,7 @@ class ResourceProjects protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProject] = js.native
   def get(callback: BodyResponseCallback[SchemaProject]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
   def get(params: ParamsResourceProjectsGet): GaxiosPromise[SchemaProject] = js.native
   def get(params: ParamsResourceProjectsGet, callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def get(
@@ -93,7 +92,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getContent(): GaxiosPromise[SchemaContent] = js.native
   def getContent(callback: BodyResponseCallback[SchemaContent]): Unit = js.native
-  def getContent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContent] = js.native
+  def getContent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContent] = js.native
   def getContent(params: ParamsResourceProjectsGetcontent): GaxiosPromise[SchemaContent] = js.native
   def getContent(params: ParamsResourceProjectsGetcontent, callback: BodyResponseCallback[SchemaContent]): Unit = js.native
   def getContent(
@@ -125,7 +124,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getMetrics(): GaxiosPromise[SchemaMetrics] = js.native
   def getMetrics(callback: BodyResponseCallback[SchemaMetrics]): Unit = js.native
-  def getMetrics(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetrics] = js.native
+  def getMetrics(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetrics] = js.native
   def getMetrics(params: ParamsResourceProjectsGetmetrics): GaxiosPromise[SchemaMetrics] = js.native
   def getMetrics(params: ParamsResourceProjectsGetmetrics, callback: BodyResponseCallback[SchemaMetrics]): Unit = js.native
   def getMetrics(
@@ -159,7 +158,7 @@ class ResourceProjects protected () extends StObject {
     */
   def updateContent(): GaxiosPromise[SchemaContent] = js.native
   def updateContent(callback: BodyResponseCallback[SchemaContent]): Unit = js.native
-  def updateContent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContent] = js.native
+  def updateContent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContent] = js.native
   def updateContent(params: ParamsResourceProjectsUpdatecontent): GaxiosPromise[SchemaContent] = js.native
   def updateContent(params: ParamsResourceProjectsUpdatecontent, callback: BodyResponseCallback[SchemaContent]): Unit = js.native
   def updateContent(

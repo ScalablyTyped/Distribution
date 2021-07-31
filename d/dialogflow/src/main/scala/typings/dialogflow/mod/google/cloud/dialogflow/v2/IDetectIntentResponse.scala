@@ -4,27 +4,25 @@ import typings.dialogflow.mod.google.rpc.IStatus
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DetectIntentResponse. */
-@js.native
 trait IDetectIntentResponse extends StObject {
   
   /** DetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.native
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** DetectIntentResponse outputAudioConfig */
-  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.native
+  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   
   /** DetectIntentResponse queryResult */
-  var queryResult: js.UndefOr[IQueryResult | Null] = js.native
+  var queryResult: js.UndefOr[IQueryResult | Null] = js.undefined
   
   /** DetectIntentResponse responseId */
-  var responseId: js.UndefOr[String | Null] = js.native
+  var responseId: js.UndefOr[String | Null] = js.undefined
   
   /** DetectIntentResponse webhookStatus */
-  var webhookStatus: js.UndefOr[IStatus | Null] = js.native
+  var webhookStatus: js.UndefOr[IStatus | Null] = js.undefined
 }
 object IDetectIntentResponse {
   

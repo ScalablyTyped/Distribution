@@ -14,65 +14,65 @@ import typings.podcast.podcastStrings.trailer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("podcast", JSImport.Namespace)
   @js.native
-  class ^ () extends Podcast {
+  class ^ ()
+    extends StObject
+       with Podcast {
     def this(options: FeedOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], items: js.Array[Item]) = this()
+    def this(options: Unit, items: js.Array[Item]) = this()
     def this(options: FeedOptions, items: js.Array[Item]) = this()
   }
   
-  @js.native
   trait BaseFeedOptions extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var categories: js.UndefOr[js.Array[String]] = js.native
+    var categories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var customElements: js.UndefOr[js.Array[js.Object]] = js.native
+    var customElements: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var customNamespaces: js.UndefOr[js.Object] = js.native
+    var customNamespaces: js.UndefOr[js.Object] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var docs: js.UndefOr[String] = js.native
+    var docs: js.UndefOr[String] = js.undefined
     
-    var generator: js.UndefOr[String] = js.native
+    var generator: js.UndefOr[String] = js.undefined
     
-    var itunesAuthor: js.UndefOr[String] = js.native
+    var itunesAuthor: js.UndefOr[String] = js.undefined
     
-    var itunesCategory: js.UndefOr[js.Array[FeedItunesCategory]] = js.native
+    var itunesCategory: js.UndefOr[js.Array[FeedItunesCategory]] = js.undefined
     
-    var itunesExplicit: js.UndefOr[Boolean] = js.native
+    var itunesExplicit: js.UndefOr[Boolean] = js.undefined
     
-    var itunesImage: js.UndefOr[String] = js.native
+    var itunesImage: js.UndefOr[String] = js.undefined
     
-    var itunesOwner: js.UndefOr[FeedItunesOwner] = js.native
+    var itunesOwner: js.UndefOr[FeedItunesOwner] = js.undefined
     
-    var itunesSubtitle: js.UndefOr[String] = js.native
+    var itunesSubtitle: js.UndefOr[String] = js.undefined
     
-    var itunesSummary: js.UndefOr[String] = js.native
+    var itunesSummary: js.UndefOr[String] = js.undefined
     
-    var itunesType: js.UndefOr[episodic | serial] = js.native
+    var itunesType: js.UndefOr[episodic | serial] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var managingEditor: js.UndefOr[String] = js.native
+    var managingEditor: js.UndefOr[String] = js.undefined
     
-    var pubDate: js.UndefOr[Date | String] = js.native
+    var pubDate: js.UndefOr[Date | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var webMaster: js.UndefOr[String] = js.native
+    var webMaster: js.UndefOr[String] = js.undefined
   }
   object BaseFeedOptions {
     
@@ -225,12 +225,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedItunesCategory extends StObject {
     
-    var subcats: js.UndefOr[js.Array[FeedItunesCategory]] = js.native
+    var subcats: js.UndefOr[js.Array[FeedItunesCategory]] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object FeedItunesCategory {
     
@@ -257,12 +256,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedItunesOwner extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object FeedItunesOwner {
     
@@ -283,54 +281,53 @@ object mod {
     }
   }
   
-  type FeedOptions = BaseFeedOptions with (FeedUrl_ | Feedurl) with (SiteUrl_ | Siteurl) with (ImageUrl_ | Imageurl)
+  type FeedOptions = BaseFeedOptions & (FeedUrl_ | Feedurl) & (SiteUrl_ | Siteurl) & (ImageUrl_ | Imageurl)
   
-  @js.native
   trait Item extends StObject {
     
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
-    var categories: js.UndefOr[js.Array[String]] = js.native
+    var categories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var customElements: js.UndefOr[js.Array[js.Object]] = js.native
+    var customElements: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var date: Date | String = js.native
+    var date: Date | String
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var enclosure: js.UndefOr[ItemEnclosure] = js.native
+    var enclosure: js.UndefOr[ItemEnclosure] = js.undefined
     
-    var guid: js.UndefOr[String] = js.native
+    var guid: js.UndefOr[String] = js.undefined
     
-    var itunesAuthor: js.UndefOr[String] = js.native
+    var itunesAuthor: js.UndefOr[String] = js.undefined
     
-    var itunesDuration: js.UndefOr[Double | String] = js.native
+    var itunesDuration: js.UndefOr[Double | String] = js.undefined
     
-    var itunesEpisode: js.UndefOr[Double] = js.native
+    var itunesEpisode: js.UndefOr[Double] = js.undefined
     
-    var itunesEpisodeType: js.UndefOr[full | trailer | bonus] = js.native
+    var itunesEpisodeType: js.UndefOr[full | trailer | bonus] = js.undefined
     
-    var itunesExplicit: js.UndefOr[Boolean] = js.native
+    var itunesExplicit: js.UndefOr[Boolean] = js.undefined
     
-    var itunesImage: js.UndefOr[String] = js.native
+    var itunesImage: js.UndefOr[String] = js.undefined
     
-    var itunesSeason: js.UndefOr[Double] = js.native
+    var itunesSeason: js.UndefOr[Double] = js.undefined
     
-    var itunesSubtitle: js.UndefOr[String] = js.native
+    var itunesSubtitle: js.UndefOr[String] = js.undefined
     
-    var itunesSummary: js.UndefOr[String] = js.native
+    var itunesSummary: js.UndefOr[String] = js.undefined
     
-    var itunesTitle: js.UndefOr[String] = js.native
+    var itunesTitle: js.UndefOr[String] = js.undefined
     
-    var lat: js.UndefOr[Double] = js.native
+    var lat: js.UndefOr[Double] = js.undefined
     
-    var long: js.UndefOr[Double] = js.native
+    var long: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Item {
     
@@ -477,16 +474,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemEnclosure extends StObject {
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object ItemEnclosure {
     

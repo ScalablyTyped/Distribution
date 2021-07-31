@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionCursor extends StObject {
   
   /** The value of the cursor. */
-  var cursor: js.UndefOr[Cursor] = js.native
+  var cursor: js.UndefOr[Cursor] = js.undefined
   
   /** The partition this is for. */
-  var partition: js.UndefOr[String] = js.native
+  var partition: js.UndefOr[String] = js.undefined
 }
 object PartitionCursor {
   

@@ -3,14 +3,14 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapDateEdit control.
   */
-@js.native
-trait BootstrapClientDateEdit extends ASPxClientDateEdit
+trait BootstrapClientDateEdit
+  extends StObject
+     with ASPxClientDateEdit
 object BootstrapClientDateEdit {
   
   @scala.inline

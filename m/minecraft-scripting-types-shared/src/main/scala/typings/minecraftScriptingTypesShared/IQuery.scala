@@ -3,27 +3,27 @@ package typings.minecraftScriptingTypesShared
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IQuery extends _IMinecraftObject {
+trait IQuery
+  extends StObject
+     with _IMinecraftObject {
   
   /**
     * The type of the object
     */
-  val __type__ : query = js.native
+  val __type__ : query
   
   /**
     * READ ONLY. This is the unique identifier of the query
     */
-  val query_id: Double = js.native
+  val query_id: Double
 }
 object IQuery {
   
   @scala.inline
-  def apply(__type__ : query, query_id: Double): IQuery = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
+  def apply(query_id: Double): IQuery = {
+    val __obj = js.Dynamic.literal(__type__ = "query", query_id = query_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuery]
   }
   

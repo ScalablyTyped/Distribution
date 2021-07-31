@@ -11,81 +11,79 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idialogproptypesMod {
   
-  @js.native
   trait IDialogPropTypes extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[_]] = js.native
+    var afterClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
-    var bodyProps: js.UndefOr[js.Any] = js.native
+    var bodyProps: js.UndefOr[js.Any] = js.undefined
     
-    var bodyStyle: js.UndefOr[js.Object] = js.native
+    var bodyStyle: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var destroyOnClose: js.UndefOr[Boolean] = js.native
+    var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var focusTriggerAfterClose: js.UndefOr[Boolean] = js.native
+    var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[GetContainer | `false`] = js.native
+    var getContainer: js.UndefOr[GetContainer | `false`] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[js.Any] = js.native
+    var maskAnimation: js.UndefOr[js.Any] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskProps: js.UndefOr[js.Any] = js.native
+    var maskProps: js.UndefOr[js.Any] = js.undefined
     
-    var maskStyle: js.UndefOr[js.Object] = js.native
+    var maskStyle: js.UndefOr[js.Object] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.native
+    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
     
-    var mousePosition: js.UndefOr[X] = js.native
+    var mousePosition: js.UndefOr[X] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], _]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], js.Any]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrapClassName: js.UndefOr[String] = js.native
+    var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var wrapProps: js.UndefOr[js.Any] = js.native
+    var wrapProps: js.UndefOr[js.Any] = js.undefined
     
-    var wrapStyle: js.UndefOr[js.Object] = js.native
+    var wrapStyle: js.UndefOr[js.Object] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IDialogPropTypes {
     
@@ -99,7 +97,7 @@ object idialogproptypesMod {
     implicit class IDialogPropTypesMutableBuilder[Self <: IDialogPropTypes] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterClose(value: () => _): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      def setAfterClose(value: () => js.Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
       @scala.inline
       def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
@@ -240,7 +238,7 @@ object idialogproptypesMod {
       def setMousePositionUndefined: Self = StObject.set(x, "mousePosition", js.undefined)
       
       @scala.inline
-      def setOnClose(value: /* e */ SyntheticEvent[Element, Event] => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      def setOnClose(value: /* e */ SyntheticEvent[Element, Event] => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)

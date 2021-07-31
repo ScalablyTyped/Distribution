@@ -2,40 +2,38 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A &lt;a href=&quot;/chart/interactive/docs/gallery/piechart&quot;&gt;pie
   * chart&lt;/a&gt;.
   */
-@js.native
 trait SchemaPieChartSpec extends StObject {
   
   /**
     * The data that covers the domain of the pie chart.
     */
-  var domain: js.UndefOr[SchemaChartData] = js.native
+  var domain: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * Where the legend of the pie chart should be drawn.
     */
-  var legendPosition: js.UndefOr[String] = js.native
+  var legendPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the hole in the pie chart.
     */
-  var pieHole: js.UndefOr[Double] = js.native
+  var pieHole: js.UndefOr[Double] = js.undefined
   
   /**
     * The data that covers the one and only series of the pie chart.
     */
-  var series: js.UndefOr[SchemaChartData] = js.native
+  var series: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * True if the pie is three dimensional.
     */
-  var threeDimensional: js.UndefOr[Boolean] = js.native
+  var threeDimensional: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPieChartSpec {
   

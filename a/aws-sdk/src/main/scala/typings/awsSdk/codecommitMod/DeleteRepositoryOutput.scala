@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRepositoryOutput extends StObject {
   
   /**
     * The ID of the repository that was deleted.
     */
-  var repositoryId: js.UndefOr[RepositoryId] = js.native
+  var repositoryId: js.UndefOr[RepositoryId] = js.undefined
 }
 object DeleteRepositoryOutput {
   

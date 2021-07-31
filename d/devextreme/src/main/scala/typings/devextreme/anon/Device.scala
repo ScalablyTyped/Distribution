@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   var device: js.UndefOr[
     typings.devextreme.mod.DevExpress.Device | js.Array[typings.devextreme.mod.DevExpress.Device] | js.Function
-  ] = js.native
+  ] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
 }
 object Device {
   

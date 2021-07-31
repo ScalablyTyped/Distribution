@@ -2,16 +2,14 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReplicationJobResponse extends StObject {
   
   /**
     * The unique identifier of the replication job.
     */
-  var replicationJobId: js.UndefOr[ReplicationJobId] = js.native
+  var replicationJobId: js.UndefOr[ReplicationJobId] = js.undefined
 }
 object CreateReplicationJobResponse {
   

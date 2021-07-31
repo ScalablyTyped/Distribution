@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.strophejsPluginRoster.strophejsPluginRosterBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,20 +37,19 @@ object mod {
     def unsubscribed: typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed]
   }
   
-  @js.native
   trait RosterItem extends StObject {
     
-    var ask: String = js.native
+    var ask: String
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var jid: String = js.native
+    var jid: String
     
-    var name: String = js.native
+    var name: String
     
-    var resources: StringDictionary[RosterResource] = js.native
+    var resources: StringDictionary[RosterResource]
     
-    var subscription: RosterSubscriptionState = js.native
+    var subscription: RosterSubscriptionState
   }
   object RosterItem {
     
@@ -94,14 +92,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RosterResource extends StObject {
     
-    var priority: String = js.native
+    var priority: String
     
-    var show: String = js.native
+    var show: String
     
-    var status: String = js.native
+    var status: String
   }
   object RosterResource {
     
@@ -170,9 +167,9 @@ object mod {
     def findItem(jid: String): RosterItem | `false` = js.native
     
     def get(userCallback: IqCallback): IqID = js.native
-    def get(userCallback: IqCallback, ver: js.UndefOr[scala.Nothing], items: js.Array[String]): IqID = js.native
     def get(userCallback: IqCallback, ver: String): IqID = js.native
     def get(userCallback: IqCallback, ver: String, items: js.Array[String]): IqID = js.native
+    def get(userCallback: IqCallback, ver: Unit, items: js.Array[String]): IqID = js.native
     
     def registerCallback(callback: RosterUpdateCallback): Unit = js.native
     
@@ -184,9 +181,9 @@ object mod {
     def removeItem(jid: String): Boolean = js.native
     
     def subscribe(jid: String): Unit = js.native
-    def subscribe(jid: String, message: js.UndefOr[scala.Nothing], nick: String): Unit = js.native
     def subscribe(jid: String, message: String): Unit = js.native
     def subscribe(jid: String, message: String, nick: String): Unit = js.native
+    def subscribe(jid: String, message: Unit, nick: String): Unit = js.native
     
     def supportVersioning(): Boolean = js.native
     
@@ -197,18 +194,13 @@ object mod {
     def unsubscribe(jid: String, message: String): Unit = js.native
     
     def update(jid: String): IqID = js.native
-    def update(
-      jid: String,
-      name: js.UndefOr[scala.Nothing],
-      groups: js.UndefOr[scala.Nothing],
-      call_back: IqCallback
-    ): IqID = js.native
-    def update(jid: String, name: js.UndefOr[scala.Nothing], groups: js.Array[String]): IqID = js.native
-    def update(jid: String, name: js.UndefOr[scala.Nothing], groups: js.Array[String], call_back: IqCallback): IqID = js.native
     def update(jid: String, name: String): IqID = js.native
-    def update(jid: String, name: String, groups: js.UndefOr[scala.Nothing], call_back: IqCallback): IqID = js.native
     def update(jid: String, name: String, groups: js.Array[String]): IqID = js.native
     def update(jid: String, name: String, groups: js.Array[String], call_back: IqCallback): IqID = js.native
+    def update(jid: String, name: String, groups: Unit, call_back: IqCallback): IqID = js.native
+    def update(jid: String, name: Unit, groups: js.Array[String]): IqID = js.native
+    def update(jid: String, name: Unit, groups: js.Array[String], call_back: IqCallback): IqID = js.native
+    def update(jid: String, name: Unit, groups: Unit, call_back: IqCallback): IqID = js.native
   }
   
   /*~ Here, declare the same module as the one you imported above */
@@ -217,10 +209,9 @@ object mod {
     
     object Strophe {
       
-      @js.native
       trait Connection extends StObject {
         
-        var roster: StropheRosterPlugin = js.native
+        var roster: StropheRosterPlugin
       }
       object Connection {
         

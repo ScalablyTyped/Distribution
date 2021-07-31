@@ -5,55 +5,53 @@ import typings.std.Date
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined jszip.jszip.JSZipFileOptions & {  dir :true} */
-  @js.native
   trait JSZipFileOptionsdirtrue extends StObject {
     
     /** Set to `true` if the data is `base64` encoded. For example image data from a `<canvas>` element. Plain text and HTML do not need this option. */
-    var base64: js.UndefOr[Boolean] = js.native
+    var base64: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true` if the data should be treated as raw content, `false` if this is a text. If `base64` is used,
       * this defaults to `true`, if the data is not a `string`, this will be set to `true`.
       */
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var compression: js.UndefOr[String] = js.native
+    var compression: js.UndefOr[String] = js.undefined
     
     /** Set to `true` if folders in the file path should be automatically created, otherwise there will only be virtual folders that represent the path to the file. */
-    var createFolders: js.UndefOr[Boolean] = js.native
+    var createFolders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The last modification date, defaults to the current date.
       */
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
     /** Set to `true` if this is a directory and content should be ignored. */
-    var dir: js.UndefOr[Boolean] with `true` = js.native
+    var dir: js.UndefOr[Boolean] & `true`
     
     /** 6 bits number. The DOS permissions of the file, if any. */
-    var dosPermissions: js.UndefOr[Double | Null] = js.native
+    var dosPermissions: js.UndefOr[Double | Null] = js.undefined
     
     /** Set to `true` if (and only if) the input is a "binary string" and has already been prepared with a `0xFF` mask. */
-    var optimizedBinaryString: js.UndefOr[Boolean] = js.native
+    var optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 16 bits number. The UNIX permissions of the file, if any.
       * Also accepts a `string` representing the octal value: `"644"`, `"755"`, etc.
       */
-    var unixPermissions: js.UndefOr[Double | String | Null] = js.native
+    var unixPermissions: js.UndefOr[Double | String | Null] = js.undefined
   }
   object JSZipFileOptionsdirtrue {
     
     @scala.inline
-    def apply(dir: js.UndefOr[Boolean] with `true`): JSZipFileOptionsdirtrue = {
+    def apply(dir: js.UndefOr[Boolean] & `true`): JSZipFileOptionsdirtrue = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSZipFileOptionsdirtrue]
     }
@@ -98,7 +96,7 @@ object anon {
       def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
       @scala.inline
-      def setDir(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      def setDir(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
@@ -126,10 +124,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: Double = js.native
+    var level: Double
   }
   object Level {
     
@@ -147,10 +144,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Promise extends StObject {
     
-    var Promise: PromiseConstructorLike = js.native
+    var Promise: PromiseConstructorLike
   }
   object Promise {
     

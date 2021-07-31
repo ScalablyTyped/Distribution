@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.System
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides diagnostic information about the system and running processes. */
 object Diagnostics {
   
   /** Provides access to data about the CPU usage of a process. */
-  @js.native
   trait ProcessCpuUsage extends StObject {
     
     /**
       * Gets the ProcessCpuUsageReport for the process.
       * @return The CPU usage report for the process.
       */
-    def getReport(): ProcessCpuUsageReport = js.native
+    def getReport(): ProcessCpuUsageReport
   }
   object ProcessCpuUsage {
     
@@ -36,14 +34,13 @@ object Diagnostics {
   }
   
   /** Provides data about the CPU usage of the process. */
-  @js.native
   trait ProcessCpuUsageReport extends StObject {
     
     /** Gets the amount of CPU kernel time consumed by the process. */
-    var kernelTime: Double = js.native
+    var kernelTime: Double
     
     /** Gets the amount of CPU user time consumed by the process. */
-    var userTime: Double = js.native
+    var userTime: Double
   }
   object ProcessCpuUsageReport {
     
@@ -65,29 +62,28 @@ object Diagnostics {
   }
   
   /** Provides diagnostic information about a process, such as CPU usage, disk usage, memory usage and so on. */
-  @js.native
   trait ProcessDiagnosticInfo extends StObject {
     
     /** Gets the CPU time used by the process. */
-    var cpuUsage: ProcessCpuUsage = js.native
+    var cpuUsage: ProcessCpuUsage
     
     /** Gets the disk I/O usage of the process. */
-    var diskUsage: ProcessDiskUsage = js.native
+    var diskUsage: ProcessDiskUsage
     
     /** Gets the name of the executable file for the process. */
-    var executableFileName: String = js.native
+    var executableFileName: String
     
     /** Get memory usage data for the process. */
-    var memoryUsage: ProcessMemoryUsage = js.native
+    var memoryUsage: ProcessMemoryUsage
     
     /** Gets the ProcessDiagnosticInfo for the parent process. */
-    var parent: ProcessDiagnosticInfo = js.native
+    var parent: ProcessDiagnosticInfo
     
     /** Gets the unique process ID. */
-    var processId: Double = js.native
+    var processId: Double
     
     /** Gets the time the process was started. */
-    var processStartTime: Date = js.native
+    var processStartTime: Date
   }
   object ProcessDiagnosticInfo {
     
@@ -132,14 +128,13 @@ object Diagnostics {
   }
   
   /** Provides access to data about the disk usage of a process. */
-  @js.native
   trait ProcessDiskUsage extends StObject {
     
     /**
       * Gets the ProcessDiskUsageReport for the process.
       * @return The ProcessDiskUsageReport for the process.
       */
-    def getReport(): ProcessDiskUsageReport = js.native
+    def getReport(): ProcessDiskUsageReport
   }
   object ProcessDiskUsage {
     
@@ -158,26 +153,25 @@ object Diagnostics {
   }
   
   /** Provides data about the disk usage of the process. */
-  @js.native
   trait ProcessDiskUsageReport extends StObject {
     
     /** Gets the number of bytes the process has read from disk. */
-    var bytesReadCount: Double = js.native
+    var bytesReadCount: Double
     
     /** Gets the number of bytes the process has written to disk. */
-    var bytesWrittenCount: Double = js.native
+    var bytesWrittenCount: Double
     
     /** Gets the number of bytes used by the process in disk operations that were not read or write operations. */
-    var otherBytesCount: Double = js.native
+    var otherBytesCount: Double
     
     /** Gets the number of disk operations performed by the process that were not read or write operations. */
-    var otherOperationCount: Double = js.native
+    var otherOperationCount: Double
     
     /** Gets the number of disk read operations performed by the process. */
-    var readOperationCount: Double = js.native
+    var readOperationCount: Double
     
     /** Gets the number of disk write operations performed by the process. */
-    var writeOperationCount: Double = js.native
+    var writeOperationCount: Double
   }
   object ProcessDiskUsageReport {
     
@@ -218,14 +212,13 @@ object Diagnostics {
   }
   
   /** Provides access to data about the memory usage of a process. */
-  @js.native
   trait ProcessMemoryUsage extends StObject {
     
     /**
       * Gets the ProcessMemoryUsageReport for the process.
       * @return The ProcessMemoryUsageReport for the process.
       */
-    def getReport(): ProcessMemoryUsageReport = js.native
+    def getReport(): ProcessMemoryUsageReport
   }
   object ProcessMemoryUsage {
     
@@ -244,44 +237,43 @@ object Diagnostics {
   }
   
   /** Provides data about the memory usage of the process. */
-  @js.native
   trait ProcessMemoryUsageReport extends StObject {
     
     /** Gets the amount of non-paged memory available to the process, in bytes. */
-    var nonPagedPoolSizeInBytes: Double = js.native
+    var nonPagedPoolSizeInBytes: Double
     
     /** Gets the number of memory page faults. */
-    var pageFaultCount: Double = js.native
+    var pageFaultCount: Double
     
     /** Gets the size of the memory page file in bytes. */
-    var pageFileSizeInBytes: Double = js.native
+    var pageFileSizeInBytes: Double
     
     /** Gets the amount of paged memory available to the process, in bytes. */
-    var pagedPoolSizeInBytes: Double = js.native
+    var pagedPoolSizeInBytes: Double
     
     /** Gets the maximum amount of non-paged memory used by the process, in bytes. */
-    var peakNonPagedPoolSizeInBytes: Double = js.native
+    var peakNonPagedPoolSizeInBytes: Double
     
     /** Gets the maximum size of the memory page file used by the process, in bytes. */
-    var peakPageFileSizeInBytes: Double = js.native
+    var peakPageFileSizeInBytes: Double
     
     /** Gets the maximum amount of paged memory used by the process, in bytes. */
-    var peakPagedPoolSizeInBytes: Double = js.native
+    var peakPagedPoolSizeInBytes: Double
     
     /** Gets the maximum amount of virtual memory used by the associated process. */
-    var peakVirtualMemorySizeInBytes: Double = js.native
+    var peakVirtualMemorySizeInBytes: Double
     
     /** Gets the maximum amount of physical memory used by the associated process. */
-    var peakWorkingSetSizeInBytes: Double = js.native
+    var peakWorkingSetSizeInBytes: Double
     
     /** Gets the number of private memory pages allocated for the associated process. */
-    var privatePageCount: Double = js.native
+    var privatePageCount: Double
     
     /** Gets the amount of the virtual memory allocated for the associated process. */
-    var virtualMemorySizeInBytes: Double = js.native
+    var virtualMemorySizeInBytes: Double
     
     /** Gets the amount of physical memory allocated for the associated process. */
-    var workingSetSizeInBytes: Double = js.native
+    var workingSetSizeInBytes: Double
   }
   object ProcessMemoryUsageReport {
     

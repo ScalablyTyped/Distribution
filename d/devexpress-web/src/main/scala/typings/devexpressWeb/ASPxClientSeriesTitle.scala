@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the SeriesTitle class.
   */
-@js.native
-trait ASPxClientSeriesTitle extends ASPxClientTitleBase {
+trait ASPxClientSeriesTitle
+  extends StObject
+     with ASPxClientTitleBase {
   
   /**
     * Gets the series that owns the current title object.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
 }
 object ASPxClientSeriesTitle {
   

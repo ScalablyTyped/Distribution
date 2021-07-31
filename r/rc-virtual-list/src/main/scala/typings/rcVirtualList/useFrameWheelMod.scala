@@ -3,13 +3,15 @@ package typings.rcVirtualList
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFrameWheelMod {
   
-  @JSImport("rc-virtual-list/es/hooks/useFrameWheel", JSImport.Default)
+  @JSImport("rc-virtual-list/es/hooks/useFrameWheel", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     inVirtual: Boolean,
     isScrollAtTop: Boolean,
@@ -18,14 +20,16 @@ object useFrameWheelMod {
   ): js.Tuple2[
     js.Function1[/* e */ WheelEvent, Unit], 
     js.Function1[/* e */ FireFoxDOMMouseScrollEvent, Unit]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inVirtual.asInstanceOf[js.Any], isScrollAtTop.asInstanceOf[js.Any], isScrollAtBottom.asInstanceOf[js.Any], onWheelDelta.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
+    js.Function1[/* e */ WheelEvent, Unit], 
+    js.Function1[/* e */ FireFoxDOMMouseScrollEvent, Unit]
+  ]]
   
-  @js.native
   trait FireFoxDOMMouseScrollEvent extends StObject {
     
-    var detail: Double = js.native
+    var detail: Double
     
-    var preventDefault: js.Function = js.native
+    var preventDefault: js.Function
   }
   object FireFoxDOMMouseScrollEvent {
     

@@ -5,7 +5,6 @@ import typings.aureliaLoader.mod.Loader
 import typings.aureliaLoader.mod.TemplateRegistryEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewEngine")
@@ -32,7 +31,7 @@ class ViewEngine protected () extends StObject {
     * @param extension The file extension to match in require elements.
     * @param implementation The plugin implementation that handles the resource type.
     */
-  def addResourcePlugin(extension: String, implementation: js.Object): Unit = js.native
+  def addResourcePlugin(`extension`: String, implementation: js.Object): Unit = js.native
   
   /**
     * Loads a view model as a resource.
@@ -55,7 +54,7 @@ class ViewEngine protected () extends StObject {
     moduleIds: js.Array[String],
     names: js.Array[String],
     resources: ViewResources_,
-    compileInstruction: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
     loadContext: ResourceLoadContext
   ): js.Promise[ViewResources_] = js.native
   def importViewResources(
@@ -81,20 +80,11 @@ class ViewEngine protected () extends StObject {
     * @return A promise of ViewResources for the registry entry.
     */
   def loadTemplateResources(registryEntry: TemplateRegistryEntry): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(registryEntry: TemplateRegistryEntry, compileInstruction: Unit, loadContext: Unit, target: js.Any): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(registryEntry: TemplateRegistryEntry, compileInstruction: Unit, loadContext: ResourceLoadContext): js.Promise[ViewResources_] = js.native
   def loadTemplateResources(
     registryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
-    loadContext: js.UndefOr[scala.Nothing],
-    target: js.Any
-  ): js.Promise[ViewResources_] = js.native
-  def loadTemplateResources(
-    registryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
-    loadContext: ResourceLoadContext
-  ): js.Promise[ViewResources_] = js.native
-  def loadTemplateResources(
-    registryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewResources_] = js.native
@@ -102,7 +92,7 @@ class ViewEngine protected () extends StObject {
   def loadTemplateResources(
     registryEntry: TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewResources_] = js.native
   def loadTemplateResources(
@@ -126,20 +116,11 @@ class ViewEngine protected () extends StObject {
     * @return A promise for the compiled view factory.
     */
   def loadViewFactory(urlOrRegistryEntry: String): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(urlOrRegistryEntry: String, compileInstruction: Unit, loadContext: Unit, target: js.Any): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(urlOrRegistryEntry: String, compileInstruction: Unit, loadContext: ResourceLoadContext): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: String,
-    compileInstruction: js.UndefOr[scala.Nothing],
-    loadContext: js.UndefOr[scala.Nothing],
-    target: js.Any
-  ): js.Promise[ViewFactory] = js.native
-  def loadViewFactory(
-    urlOrRegistryEntry: String,
-    compileInstruction: js.UndefOr[scala.Nothing],
-    loadContext: ResourceLoadContext
-  ): js.Promise[ViewFactory] = js.native
-  def loadViewFactory(
-    urlOrRegistryEntry: String,
-    compileInstruction: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
@@ -147,7 +128,7 @@ class ViewEngine protected () extends StObject {
   def loadViewFactory(
     urlOrRegistryEntry: String,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
@@ -164,18 +145,18 @@ class ViewEngine protected () extends StObject {
   def loadViewFactory(urlOrRegistryEntry: TemplateRegistryEntry): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
-    loadContext: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
     loadContext: ResourceLoadContext
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: TemplateRegistryEntry,
-    compileInstruction: js.UndefOr[scala.Nothing],
+    compileInstruction: Unit,
     loadContext: ResourceLoadContext,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
@@ -183,7 +164,7 @@ class ViewEngine protected () extends StObject {
   def loadViewFactory(
     urlOrRegistryEntry: TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
@@ -205,9 +186,8 @@ object ViewEngine {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("aurelia-templating", "ViewEngine.inject")
-  @js.native
-  def inject(): js.Any = js.native
+  @scala.inline
+  def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
   
   /**
     * The metadata key for storing requires declared in a ViewModel.

@@ -19,7 +19,6 @@ import typings.gapiDrive.gapi.client.drive.UntrashParameters
 import typings.gapiDrive.gapi.client.drive.WatchParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -32,57 +31,48 @@ object global {
         
         object files {
           
-          @JSGlobal("gapi.client.drive.files.copy")
+          @JSGlobal("gapi.client.drive.files")
           @js.native
-          def copy(parameters: CopyParameters): HttpRequest[FileResource] = js.native
+          val ^ : js.Any = js.native
           
-          @JSGlobal("gapi.client.drive.files.delete")
-          @js.native
-          def delete(parameters: DeleteParameters): HttpRequest[_] = js.native
+          @scala.inline
+          def copy(parameters: CopyParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.emptyTrash")
-          @js.native
-          def emptyTrash(): HttpRequest[_] = js.native
+          @scala.inline
+          def delete(parameters: DeleteParameters): HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[js.Any]]
           
-          @JSGlobal("gapi.client.drive.files.export")
-          @js.native
-          def export(parameters: ExportParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def emptyTrash(): HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyTrash")().asInstanceOf[HttpRequest[js.Any]]
           
-          @JSGlobal("gapi.client.drive.files.generateIds")
-          @js.native
-          def generateIds(parameters: GenerateIdsParameters): HttpRequest[IdsResource] = js.native
+          @scala.inline
+          def `export`(parameters: ExportParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("export")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.get")
-          @js.native
-          def get(parameters: GetParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def generateIds(parameters: GenerateIdsParameters): HttpRequest[IdsResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateIds")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[IdsResource]]
           
-          @JSGlobal("gapi.client.drive.files.insert")
-          @js.native
-          def insert(parameters: InsertParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def get(parameters: GetParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.list")
-          @js.native
-          def list(parameters: ListParameters): HttpRequest[FileListResource] = js.native
+          @scala.inline
+          def insert(parameters: InsertParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.patch")
-          @js.native
-          def patch(parameters: PatchParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def list(parameters: ListParameters): HttpRequest[FileListResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileListResource]]
           
-          @JSGlobal("gapi.client.drive.files.touch")
-          @js.native
-          def touch(parameters: TouchParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def patch(parameters: PatchParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.trash")
-          @js.native
-          def trash(parameters: TrashParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def touch(parameters: TouchParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("touch")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.untrash")
-          @js.native
-          def untrash(parameters: UntrashParameters): HttpRequest[FileResource] = js.native
+          @scala.inline
+          def trash(parameters: TrashParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("trash")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          @JSGlobal("gapi.client.drive.files.watch")
-          @js.native
-          def watch(parameters: WatchParameters): HttpRequest[ChannelResource] = js.native
+          @scala.inline
+          def untrash(parameters: UntrashParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("untrash")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
+          
+          @scala.inline
+          def watch(parameters: WatchParameters): HttpRequest[ChannelResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[ChannelResource]]
         }
       }
     }

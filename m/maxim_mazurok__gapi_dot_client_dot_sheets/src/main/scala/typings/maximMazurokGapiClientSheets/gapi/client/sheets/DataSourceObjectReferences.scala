@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceObjectReferences extends StObject {
   
   /** The references. */
-  var references: js.UndefOr[js.Array[DataSourceObjectReference]] = js.native
+  var references: js.UndefOr[js.Array[DataSourceObjectReference]] = js.undefined
 }
 object DataSourceObjectReferences {
   

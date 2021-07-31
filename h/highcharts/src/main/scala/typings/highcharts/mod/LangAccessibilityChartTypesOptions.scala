@@ -2,55 +2,53 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityChartTypesOptions extends StObject {
   
-  var barMultiple: js.UndefOr[String] = js.native
+  var barMultiple: js.UndefOr[String] = js.undefined
   
-  var barSingle: js.UndefOr[String] = js.native
+  var barSingle: js.UndefOr[String] = js.undefined
   
-  var boxplotMultiple: js.UndefOr[String] = js.native
+  var boxplotMultiple: js.UndefOr[String] = js.undefined
   
-  var boxplotSingle: js.UndefOr[String] = js.native
+  var boxplotSingle: js.UndefOr[String] = js.undefined
   
-  var bubbleMultiple: js.UndefOr[String] = js.native
+  var bubbleMultiple: js.UndefOr[String] = js.undefined
   
-  var bubbleSingle: js.UndefOr[String] = js.native
+  var bubbleSingle: js.UndefOr[String] = js.undefined
   
-  var columnMultiple: js.UndefOr[String] = js.native
+  var columnMultiple: js.UndefOr[String] = js.undefined
   
-  var columnSingle: js.UndefOr[String] = js.native
+  var columnSingle: js.UndefOr[String] = js.undefined
   
-  var combinationChart: js.UndefOr[String] = js.native
+  var combinationChart: js.UndefOr[String] = js.undefined
   
-  var defaultMultiple: js.UndefOr[String] = js.native
+  var defaultMultiple: js.UndefOr[String] = js.undefined
   
-  var defaultSingle: js.UndefOr[String] = js.native
+  var defaultSingle: js.UndefOr[String] = js.undefined
   
-  var emptyChart: js.UndefOr[String] = js.native
+  var emptyChart: js.UndefOr[String] = js.undefined
   
-  var lineMultiple: js.UndefOr[String] = js.native
+  var lineMultiple: js.UndefOr[String] = js.undefined
   
-  var lineSingle: js.UndefOr[String] = js.native
+  var lineSingle: js.UndefOr[String] = js.undefined
   
-  var mapTypeDescription: js.UndefOr[String] = js.native
+  var mapTypeDescription: js.UndefOr[String] = js.undefined
   
-  var pieMultiple: js.UndefOr[String] = js.native
+  var pieMultiple: js.UndefOr[String] = js.undefined
   
-  var pieSingle: js.UndefOr[String] = js.native
+  var pieSingle: js.UndefOr[String] = js.undefined
   
-  var scatterMultiple: js.UndefOr[String] = js.native
+  var scatterMultiple: js.UndefOr[String] = js.undefined
   
-  var scatterSingle: js.UndefOr[String] = js.native
+  var scatterSingle: js.UndefOr[String] = js.undefined
   
-  var splineMultiple: js.UndefOr[String] = js.native
+  var splineMultiple: js.UndefOr[String] = js.undefined
   
-  var splineSingle: js.UndefOr[String] = js.native
+  var splineSingle: js.UndefOr[String] = js.undefined
   
-  var unknownMap: js.UndefOr[String] = js.native
+  var unknownMap: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityChartTypesOptions {
   

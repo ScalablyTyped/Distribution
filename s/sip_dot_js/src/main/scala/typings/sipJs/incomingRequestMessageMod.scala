@@ -4,7 +4,6 @@ import typings.sipJs.incomingMessageMod.IncomingMessage
 import typings.sipJs.messagesMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object incomingRequestMessageMod {

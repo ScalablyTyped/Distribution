@@ -2,15 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportFailedEvent extends StObject {
   
-  var sourceRepositoryName: String = js.native
+  var sourceRepositoryName: String
   
-  var targetRepository: GitRepository = js.native
+  var targetRepository: GitRepository
 }
 object GitImportFailedEvent {
   

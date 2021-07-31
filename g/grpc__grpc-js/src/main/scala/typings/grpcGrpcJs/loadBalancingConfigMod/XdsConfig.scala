@@ -2,17 +2,15 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XdsConfig extends StObject {
   
-  var balancerName: String = js.native
+  var balancerName: String
   
-  var childPolicy: js.Array[LoadBalancingConfig] = js.native
+  var childPolicy: js.Array[LoadBalancingConfig]
   
-  var fallbackPolicy: js.Array[LoadBalancingConfig] = js.native
+  var fallbackPolicy: js.Array[LoadBalancingConfig]
 }
 object XdsConfig {
   

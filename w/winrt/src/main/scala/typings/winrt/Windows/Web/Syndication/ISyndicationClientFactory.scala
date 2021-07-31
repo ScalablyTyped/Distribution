@@ -3,13 +3,11 @@ package typings.winrt.Windows.Web.Syndication
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyndicationClientFactory extends StObject {
   
-  def createSyndicationClient(serverCredential: PasswordCredential): SyndicationClient = js.native
+  def createSyndicationClient(serverCredential: PasswordCredential): SyndicationClient
 }
 object ISyndicationClientFactory {
   

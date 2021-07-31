@@ -10,9 +10,9 @@ Run the RemoteDev monitor on your local server.
 | ------------------ | :-------------: |
 | Full name          | remotedev-server |
 | Keywords           | devtools, remotedev |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 770203 |
+| # downloads        | 718028 |
 | # stars            | 0 |
 
 ## Links

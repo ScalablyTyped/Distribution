@@ -2,35 +2,33 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about an audio stream.
   */
-@js.native
 trait SchemaVideoFileDetailsAudioStream extends StObject {
   
   /**
     * The audio stream&#39;s bitrate, in bits per second.
     */
-  var bitrateBps: js.UndefOr[String] = js.native
+  var bitrateBps: js.UndefOr[String] = js.undefined
   
   /**
     * The number of audio channels that the stream contains.
     */
-  var channelCount: js.UndefOr[Double] = js.native
+  var channelCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The audio codec that the stream uses.
     */
-  var codec: js.UndefOr[String] = js.native
+  var codec: js.UndefOr[String] = js.undefined
   
   /**
     * A value that uniquely identifies a video vendor. Typically, the value is
     * a four-letter vendor code.
     */
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoFileDetailsAudioStream {
   

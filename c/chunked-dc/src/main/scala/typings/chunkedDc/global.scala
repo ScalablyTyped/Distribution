@@ -19,62 +19,45 @@ import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def afterAll(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterAll(action: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def afterAll(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterAll(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def afterEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterEach(action: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def afterEach(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterEach(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def beforeAll(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeAll(action: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def beforeAll(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeAll(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def beforeEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeEach(action: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def beforeEach(action: js.Function1[/* done */ DoneFn, Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeEach(action: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Entry point
   object chunkedDc extends Shortcut {
@@ -86,14 +69,18 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("chunkedDc.Chunker")
     @js.native
-    class ChunkerCls protected () extends Chunker {
+    class ChunkerCls protected ()
+      extends StObject
+         with Chunker {
       def this(id: Double, message: Uint8Array, chunkSize: Double) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("chunkedDc.Unchunker")
     @js.native
-    class UnchunkerCls () extends Unchunker
+    class UnchunkerCls ()
+      extends StObject
+         with Unchunker
     
     type _To = Standalone
     
@@ -101,65 +88,47 @@ object global {
     override def _to: Standalone = ^
   }
   
-  @JSGlobal("describe")
-  @js.native
-  def describe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("describe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("expect")
-  @js.native
-  def expect(actual: js.Any): Matchers = js.native
-  @JSGlobal("expect")
-  @js.native
-  def expect(spy: js.Function): Matchers = js.native
+  @scala.inline
+  def expect(actual: js.Any): Matchers = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[Matchers]
+  @scala.inline
+  def expect(spy: js.Function): Matchers = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[Matchers]
   
-  @JSGlobal("fail")
-  @js.native
-  def fail(): Unit = js.native
-  @JSGlobal("fail")
-  @js.native
-  def fail(e: js.Any): Unit = js.native
+  @scala.inline
+  def fail(): Unit = js.Dynamic.global.applyDynamic("fail")().asInstanceOf[Unit]
+  @scala.inline
+  def fail(e: js.Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("fdescribe")
-  @js.native
-  def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("fdescribe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def fit(expectation: String): Unit = js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def it(expectation: String): Unit = js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object jasmine {
     
@@ -185,25 +154,20 @@ object global {
     @scala.inline
     def HtmlSpecFilter_=(x: HtmlSpecFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HtmlSpecFilter")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("jasmine.addCustomEqualityTester")
-    @js.native
-    def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = js.native
+    @scala.inline
+    def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomEqualityTester")(equalityTester.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("jasmine.addMatchers")
-    @js.native
-    def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
+    @scala.inline
+    def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("jasmine.any")
-    @js.native
-    def any(aclass: js.Any): Any = js.native
+    @scala.inline
+    def any(aclass: js.Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @JSGlobal("jasmine.anything")
-    @js.native
-    def anything(): Any = js.native
+    @scala.inline
+    def anything(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[Any]
     
-    @JSGlobal("jasmine.arrayContaining")
-    @js.native
-    def arrayContaining(sample: js.Array[_]): ArrayContaining = js.native
+    @scala.inline
+    def arrayContaining(sample: js.Array[js.Any]): ArrayContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining]
     
     @JSGlobal("jasmine.clock")
     @js.native
@@ -211,96 +175,71 @@ object global {
     @scala.inline
     def clock_=(x: js.Function0[Clock]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clock")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy(name: String): Spy = js.native
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy(name: String, originalFn: js.Function): Spy = js.native
+    @scala.inline
+    def createSpy(name: String): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy]
+    @scala.inline
+    def createSpy(name: String, originalFn: js.Function): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
     
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj(baseName: String, methodNames: js.Array[_]): js.Any = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[_]): T = js.native
+    @scala.inline
+    def createSpyObj(baseName: String, methodNames: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("jasmine.getEnv")
-    @js.native
-    def getEnv(): Env = js.native
+    @scala.inline
+    def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSGlobal("jasmine.objectContaining")
-    @js.native
-    def objectContaining(sample: js.Any): ObjectContaining = js.native
+    @scala.inline
+    def getEnv(): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Env]
     
-    @JSGlobal("jasmine.pp")
-    @js.native
-    def pp(value: js.Any): String = js.native
+    @scala.inline
+    def objectContaining(sample: js.Any): ObjectContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining]
     
-    @JSGlobal("jasmine.stringMatching")
-    @js.native
-    def stringMatching(str: String): Any = js.native
-    @JSGlobal("jasmine.stringMatching")
-    @js.native
-    def stringMatching(str: RegExp): Any = js.native
+    @scala.inline
+    def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def stringMatching(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+    @scala.inline
+    def stringMatching(str: RegExp): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   /** If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending. */
-  @JSGlobal("pending")
-  @js.native
-  def pending(): Unit = js.native
-  @JSGlobal("pending")
-  @js.native
-  def pending(reason: String): Unit = js.native
+  @scala.inline
+  def pending(): Unit = js.Dynamic.global.applyDynamic("pending")().asInstanceOf[Unit]
+  @scala.inline
+  def pending(reason: String): Unit = js.Dynamic.global.applyDynamic("pending")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("runs")
-  @js.native
-  def runs(asyncMethod: js.Function): Unit = js.native
+  @scala.inline
+  def runs(asyncMethod: js.Function): Unit = js.Dynamic.global.applyDynamic("runs")(asyncMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("spyOn")
-  @js.native
-  def spyOn(`object`: js.Any, method: String): Spy = js.native
+  @scala.inline
+  def spyOn(`object`: js.Any, method: String): Spy = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy]
   
-  @JSGlobal("waits")
-  @js.native
-  def waits(): Unit = js.native
-  @JSGlobal("waits")
-  @js.native
-  def waits(timeout: Double): Unit = js.native
+  @scala.inline
+  def waits(): Unit = js.Dynamic.global.applyDynamic("waits")().asInstanceOf[Unit]
+  @scala.inline
+  def waits(timeout: Double): Unit = js.Dynamic.global.applyDynamic("waits")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = js.native
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("xdescribe")
-  @js.native
-  def xdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def xdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("xdescribe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
+  @scala.inline
+  def xit(expectation: String): Unit = js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

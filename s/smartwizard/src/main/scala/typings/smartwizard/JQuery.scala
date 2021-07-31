@@ -3,7 +3,6 @@ package typings.smartwizard
 import typings.smartwizard.JQuerySmartwizard.SmartWizardOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

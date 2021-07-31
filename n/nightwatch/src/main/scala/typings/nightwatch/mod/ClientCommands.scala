@@ -6,7 +6,6 @@ import typings.nightwatch.nightwatchStrings.driver
 import typings.nightwatch.nightwatchStrings.server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -209,15 +208,15 @@ trait ClientCommands extends StObject {
     * };
     */
   def injectScript(scriptUrl: String): this.type = js.native
-  def injectScript(
-    scriptUrl: String,
-    id: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
   def injectScript(scriptUrl: String, id: String): this.type = js.native
   def injectScript(
     scriptUrl: String,
     id: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def injectScript(
+    scriptUrl: String,
+    id: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   
@@ -265,9 +264,9 @@ trait ClientCommands extends StObject {
     * };
     */
   def pause(): this.type = js.native
-  def pause(ms: js.UndefOr[scala.Nothing], callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
   def pause(ms: Double): this.type = js.native
   def pause(ms: Double, callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
+  def pause(ms: Unit, callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
   
   /**
     * A simple perform command which allows access to the Nightwatch API in a callback. Can be useful if you want to read variables set by other commands.
@@ -311,7 +310,7 @@ trait ClientCommands extends StObject {
     *     });
     * };
     */
-  def perform(callback: js.Function0[js.UndefOr[js.Promise[_]]]): this.type = js.native
+  def perform(callback: js.Function0[js.UndefOr[js.Promise[js.Any]]]): this.type = js.native
   def perform(callback: js.Function1[/* done */ js.Function0[Unit], Unit]): this.type = js.native
   def perform(callback: js.Function2[/* client */ NightwatchAPI, /* done */ js.Function0[Unit], Unit]): this.type = js.native
   

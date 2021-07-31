@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.season
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Daylight extends Widget_ {
+trait Daylight
+  extends StObject
+     with Widget_ {
   
   /**
     * Controls whether the widget displays a date or a season picker.

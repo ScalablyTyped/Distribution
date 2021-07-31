@@ -10,7 +10,6 @@ import typings.ionicCore.interfaceMod.RouterDirection
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerLinkDelegateMod {
@@ -21,13 +20,13 @@ object routerLinkDelegateMod {
     def this(
       locationStrategy: LocationStrategy,
       navCtrl: NavController,
-      elementRef: ElementRef[_],
+      elementRef: ElementRef[js.Any],
       router: Router
     ) = this()
     def this(
       locationStrategy: LocationStrategy,
       navCtrl: NavController,
-      elementRef: ElementRef[_],
+      elementRef: ElementRef[js.Any],
       router: Router,
       routerLink: RouterLink
     ) = this()

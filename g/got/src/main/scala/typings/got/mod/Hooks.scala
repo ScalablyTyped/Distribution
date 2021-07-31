@@ -3,7 +3,6 @@ package typings.got.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template Options Request options.
   * @template Body Response body type.
   */
-@js.native
 trait Hooks[Options, Body /* <: Buffer | String | js.Object */] extends StObject {
   
-  var afterResponse: js.UndefOr[js.Array[AfterResponseHook[Options, Body]]] = js.native
+  var afterResponse: js.UndefOr[js.Array[AfterResponseHook[Options, Body]]] = js.undefined
   
-  var beforeError: js.UndefOr[js.Array[BeforeErrorHook]] = js.native
+  var beforeError: js.UndefOr[js.Array[BeforeErrorHook]] = js.undefined
   
-  var beforeRedirect: js.UndefOr[js.Array[BeforeRedirectHook[Options]]] = js.native
+  var beforeRedirect: js.UndefOr[js.Array[BeforeRedirectHook[Options]]] = js.undefined
   
-  var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook[Options]]] = js.native
+  var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook[Options]]] = js.undefined
   
-  var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook[Options]]] = js.native
+  var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook[Options]]] = js.undefined
   
-  var init: js.UndefOr[js.Array[InitHook[Options]]] = js.native
+  var init: js.UndefOr[js.Array[InitHook[Options]]] = js.undefined
 }
 object Hooks {
   
@@ -38,7 +36,7 @@ object Hooks {
   }
   
   @scala.inline
-  implicit class HooksMutableBuilder[Self <: Hooks[_, _], Options, Body /* <: Buffer | String | js.Object */] (val x: Self with (Hooks[Options, Body])) extends AnyVal {
+  implicit class HooksMutableBuilder[Self <: Hooks[?, ?], Options, Body /* <: Buffer | String | js.Object */] (val x: Self & (Hooks[Options, Body])) extends AnyVal {
     
     @scala.inline
     def setAfterResponse(value: js.Array[AfterResponseHook[Options, Body]]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])

@@ -2,20 +2,18 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Android device configurations in which the test is to be
   * executed.
   */
-@js.native
 trait SchemaAndroidDeviceList extends StObject {
   
   /**
     * Required. A list of Android devices.
     */
-  var androidDevices: js.UndefOr[js.Array[SchemaAndroidDevice]] = js.native
+  var androidDevices: js.UndefOr[js.Array[SchemaAndroidDevice]] = js.undefined
 }
 object SchemaAndroidDeviceList {
   

@@ -3,23 +3,21 @@ package typings.cordovaPluginXSocialsharing
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialSharingOptions extends StObject {
   
-  var appPackageName: js.UndefOr[String] = js.native
+  var appPackageName: js.UndefOr[String] = js.undefined
   
-  var chooserTitle: js.UndefOr[String] = js.native
+  var chooserTitle: js.UndefOr[String] = js.undefined
   
-  var files: js.UndefOr[ArrayLike[String]] = js.native
+  var files: js.UndefOr[ArrayLike[String]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SocialSharingOptions {
   

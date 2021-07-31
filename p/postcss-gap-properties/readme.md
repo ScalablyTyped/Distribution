@@ -10,9 +10,9 @@ Use the gap, column-gap, and row-gap shorthand properties in CSS
 | ------------------ | :-------------: |
 | Full name          | postcss-gap-properties |
 | Keywords           | postcss, css, postcss-plugin, grids, layouts, columns, rows, gaps, shorthands, prefixes |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 114326502 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 145385491 |
 | # stars            | 0 |
 
 ## Links

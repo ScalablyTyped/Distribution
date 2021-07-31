@@ -3,23 +3,23 @@ package typings.ionic.definitionsMod
 import typings.ionic.anon.RecordHookNamestringArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IProjectConfig extends ProjectFile {
+trait IProjectConfig
+  extends StObject
+     with ProjectFile {
   
-  val hooks: js.UndefOr[RecordHookNamestringArray] = js.native
+  val hooks: js.UndefOr[RecordHookNamestringArray] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  val integrations: ProjectIntegrations = js.native
+  val integrations: ProjectIntegrations
   
-  var name: String = js.native
+  var name: String
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ProjectType] = js.native
+  var `type`: js.UndefOr[ProjectType] = js.undefined
 }
 object IProjectConfig {
   

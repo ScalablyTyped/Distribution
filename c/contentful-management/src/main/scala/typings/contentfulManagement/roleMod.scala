@@ -10,18 +10,19 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.contentfulManagementStrings.delete_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roleMod {
   
-  @JSImport("contentful-management/dist/typings/entities/role", "wrapRole")
+  @JSImport("contentful-management/dist/typings/entities/role", JSImport.Namespace)
   @js.native
-  def wrapRole(http: AxiosInstance, data: RoleProps): Role = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/role", "wrapRoleCollection")
-  @js.native
-  def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps] = js.native
+  @scala.inline
+  def wrapRole(http: AxiosInstance, data: RoleProps): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRole")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Role]
+  
+  @scala.inline
+  def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRoleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Role, RoleProps]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.contentfulManagement.contentfulManagementStrings.read
@@ -84,17 +85,16 @@ object roleMod {
   }
   
   /* Inlined {[ key in contentful-management.contentful-management/dist/typings/entities/role.ConditionType ]: std.Array<contentful-management.contentful-management/dist/typings/entities/role.ConstraintType> | any} */
-  @js.native
   trait ConstraintType extends StObject {
     
-    var and: js.Array[ConstraintType] | js.Any = js.native
+    var and: js.Array[ConstraintType] | js.Any
     
     @JSName("equals")
-    var equals_FConstraintType: js.Array[ConstraintType] | js.Any = js.native
+    var equals_FConstraintType: js.Array[ConstraintType] | js.Any
     
-    var not: js.Array[ConstraintType] | js.Any = js.native
+    var not: js.Array[ConstraintType] | js.Any
     
-    var or: js.Array[ConstraintType] | js.Any = js.native
+    var or: js.Array[ConstraintType] | js.Any
   }
   object ConstraintType {
     
@@ -139,9 +139,9 @@ object roleMod {
     }
   }
   
-  @js.native
   trait Role
-    extends RoleProps
+    extends StObject
+       with RoleProps
        with DefaultElements[RoleProps] {
     
     /**
@@ -163,7 +163,7 @@ object roleMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -185,7 +185,7 @@ object roleMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[Role] = js.native
+    def update(): js.Promise[Role]
   }
   object Role {
     
@@ -214,19 +214,18 @@ object roleMod {
     }
   }
   
-  @js.native
   trait RoleProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
     /**
       * Permissions for application sections
       */
-    var permissions: ContentDelivery = js.native
+    var permissions: ContentDelivery
     
-    var policies: js.Array[Actions] = js.native
+    var policies: js.Array[Actions]
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object RoleProps {
     

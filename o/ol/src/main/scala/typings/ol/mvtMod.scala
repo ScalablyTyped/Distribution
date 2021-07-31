@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.olFeatureMod.FeatureClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mvtMod {
@@ -24,18 +23,17 @@ object mvtMod {
     def setLayers(layers: js.Array[String]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var featureClass: js.UndefOr[FeatureClass] = js.native
+    var featureClass: js.UndefOr[FeatureClass] = js.undefined
     
-    var geometryName: js.UndefOr[String] = js.native
+    var geometryName: js.UndefOr[String] = js.undefined
     
-    var idProperty: js.UndefOr[String] = js.native
+    var idProperty: js.UndefOr[String] = js.undefined
     
-    var layerName: js.UndefOr[String] = js.native
+    var layerName: js.UndefOr[String] = js.undefined
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

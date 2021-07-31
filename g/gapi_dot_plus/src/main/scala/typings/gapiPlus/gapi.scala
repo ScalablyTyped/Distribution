@@ -12,7 +12,6 @@ import typings.gapiPlus.gapiPlusStrings.plusNumbersignpeopleFeed
 import typings.gapiPlus.gapiPlusStrings.plusNumbersignperson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -24,10 +23,9 @@ object gapi {
       
       object people {
         
-        @js.native
         trait GetParameters extends StObject {
           
-          var userId: String = js.native
+          var userId: String
         }
         object GetParameters {
           
@@ -46,22 +44,21 @@ object gapi {
         }
         
         // Search response
-        @js.native
         trait PeopleFeed extends StObject {
           
-          var etag: String = js.native
+          var etag: String
           
-          var items: js.Array[Person] = js.native
+          var items: js.Array[Person]
           
-          var kind: plusNumbersignpeopleFeed = js.native
+          var kind: plusNumbersignpeopleFeed
           
-          var nextPageToken: String = js.native
+          var nextPageToken: String
           
-          var selfLink: String = js.native
+          var selfLink: String
           
-          var title: String = js.native
+          var title: String
           
-          var totalItems: Double = js.native
+          var totalItems: Double
         }
         object PeopleFeed {
           
@@ -69,13 +66,12 @@ object gapi {
           def apply(
             etag: String,
             items: js.Array[Person],
-            kind: plusNumbersignpeopleFeed,
             nextPageToken: String,
             selfLink: String,
             title: String,
             totalItems: Double
           ): PeopleFeed = {
-            val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totalItems = totalItems.asInstanceOf[js.Any])
+            val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = "plus#peopleFeed", nextPageToken = nextPageToken.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totalItems = totalItems.asInstanceOf[js.Any])
             __obj.asInstanceOf[PeopleFeed]
           }
           
@@ -108,66 +104,65 @@ object gapi {
           }
         }
         
-        @js.native
         trait Person extends StObject {
           
-          var aboutMe: String = js.native
+          var aboutMe: String
           
-          var ageRange: Max = js.native
+          var ageRange: Max
           
-          var birthday: String = js.native
+          var birthday: String
           
-          var braggingRights: String = js.native
+          var braggingRights: String
           
-          var circledByCount: Double = js.native
+          var circledByCount: Double
           
-          var cover: CoverInfo = js.native
+          var cover: CoverInfo
           
-          var displayName: String = js.native
+          var displayName: String
           
-          var domain: String = js.native
+          var domain: String
           
-          var emails: js.Array[Type] = js.native
+          var emails: js.Array[Type]
           
-          var etag: String = js.native
+          var etag: String
           
-          var gender: String = js.native
+          var gender: String
           
-          var id: String = js.native
+          var id: String
           
-          var image: Url = js.native
+          var image: Url
           
-          var isPlusUser: Boolean = js.native
+          var isPlusUser: Boolean
           
-          var kind: plusNumbersignperson = js.native
+          var kind: plusNumbersignperson
           
-          var language: String = js.native
+          var language: String
           
-          var name: FamilyName = js.native
+          var name: FamilyName
           
-          var nickname: String = js.native
+          var nickname: String
           
-          var objectType: String = js.native
+          var objectType: String
           
-          var occupation: String = js.native
+          var occupation: String
           
-          var organizations: js.Array[Department] = js.native
+          var organizations: js.Array[Department]
           
-          var placesLived: js.Array[Primary] = js.native
+          var placesLived: js.Array[Primary]
           
-          var plusOneCount: Double = js.native
+          var plusOneCount: Double
           
-          var relationshipStatus: String = js.native
+          var relationshipStatus: String
           
-          var skills: String = js.native
+          var skills: String
           
-          var tagline: String = js.native
+          var tagline: String
           
-          var url: String = js.native
+          var url: String
           
-          var urls: js.Array[Label] = js.native
+          var urls: js.Array[Label]
           
-          var verified: Boolean = js.native
+          var verified: Boolean
         }
         object Person {
           
@@ -187,7 +182,6 @@ object gapi {
             id: String,
             image: Url,
             isPlusUser: Boolean,
-            kind: plusNumbersignperson,
             language: String,
             name: FamilyName,
             nickname: String,
@@ -203,7 +197,7 @@ object gapi {
             urls: js.Array[Label],
             verified: Boolean
           ): Person = {
-            val __obj = js.Dynamic.literal(aboutMe = aboutMe.asInstanceOf[js.Any], ageRange = ageRange.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], braggingRights = braggingRights.asInstanceOf[js.Any], circledByCount = circledByCount.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], isPlusUser = isPlusUser.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], occupation = occupation.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], placesLived = placesLived.asInstanceOf[js.Any], plusOneCount = plusOneCount.asInstanceOf[js.Any], relationshipStatus = relationshipStatus.asInstanceOf[js.Any], skills = skills.asInstanceOf[js.Any], tagline = tagline.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+            val __obj = js.Dynamic.literal(aboutMe = aboutMe.asInstanceOf[js.Any], ageRange = ageRange.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], braggingRights = braggingRights.asInstanceOf[js.Any], circledByCount = circledByCount.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], isPlusUser = isPlusUser.asInstanceOf[js.Any], kind = "plus#person", language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], occupation = occupation.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], placesLived = placesLived.asInstanceOf[js.Any], plusOneCount = plusOneCount.asInstanceOf[js.Any], relationshipStatus = relationshipStatus.asInstanceOf[js.Any], skills = skills.asInstanceOf[js.Any], tagline = tagline.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
             __obj.asInstanceOf[Person]
           }
           
@@ -311,16 +305,15 @@ object gapi {
           }
         }
         
-        @js.native
         trait SearchParameters extends StObject {
           
-          var language: js.UndefOr[String] = js.native
+          var language: js.UndefOr[String] = js.undefined
           
-          var maxResults: js.UndefOr[Double] = js.native
+          var maxResults: js.UndefOr[Double] = js.undefined
           
-          var pageToken: js.UndefOr[String] = js.native
+          var pageToken: js.UndefOr[String] = js.undefined
           
-          var query: String = js.native
+          var query: String
         }
         object SearchParameters {
           

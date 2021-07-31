@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectInformationResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the specified object.
     */
-  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.native
+  var ObjectIdentifier: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectIdentifier] = js.undefined
   
   /**
     * The facets attached to the specified object. Although the response does not include minor version information, the most recently applied minor version of each Facet is in effect. See GetAppliedSchemaVersion for details.
     */
-  var SchemaFacets: js.UndefOr[SchemaFacetList] = js.native
+  var SchemaFacets: js.UndefOr[SchemaFacetList] = js.undefined
 }
 object GetObjectInformationResponse {
   

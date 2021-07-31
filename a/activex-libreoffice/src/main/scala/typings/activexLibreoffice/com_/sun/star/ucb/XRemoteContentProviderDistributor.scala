@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRemoteContentProviderAcceptor
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderDistributor extends XInterface {
+trait XRemoteContentProviderDistributor
+  extends StObject
+     with XInterface {
   
   /**
     * Offer the local content broker to a remote content provider acceptor.
@@ -24,17 +24,17 @@ trait XRemoteContentProviderDistributor extends XInterface {
     * @param Identifier An identifier handed to the {@link XRemoteContentProviderAcceptor} .
     * @returns success indicator. Especially, if there's already a connection to the given Url, the call will fail, no matter whether that connection uses the s
     */
-  def connectToRemoteAcceptor(Url: String, Identifier: String): Boolean = js.native
+  def connectToRemoteAcceptor(Url: String, Identifier: String): Boolean
   
   /** Undo the offering of the local content broker to all remote content provider acceptors. */
-  def disconnectFromAll(): Unit = js.native
+  def disconnectFromAll(): Unit
   
   /**
     * Undo the offering of the local content broker to a specific remote content provider acceptor.
     * @param Url A Uno Url to address the {@link XRemoteContentProviderAcceptor} .
     * @returns success indicator.
     */
-  def disconnectFromRemoteAcceptor(Url: String): Boolean = js.native
+  def disconnectFromRemoteAcceptor(Url: String): Boolean
 }
 object XRemoteContentProviderDistributor {
   

@@ -2,10 +2,8 @@ package typings.firebase.mod.default.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Settings extends StObject {
     * The default value is 40 MB. The threshold must be set to at least 1 MB, and can be set to
     * CACHE_SIZE_UNLIMITED to disable garbage collection.
     */
-  var cacheSizeBytes: js.UndefOr[Double] = js.native
+  var cacheSizeBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * Configures the SDK's underlying transport (WebChannel) to automatically detect if
@@ -29,7 +27,7 @@ trait Settings extends StObject {
     *
     * @webonly
     */
-  var experimentalAutoDetectLongPolling: js.UndefOr[Boolean] = js.native
+  var experimentalAutoDetectLongPolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Forces the SDK’s underlying network transport (WebChannel) to use
@@ -47,10 +45,10 @@ trait Settings extends StObject {
     *
     * @webonly
     */
-  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.native
+  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
   
   /** The hostname to connect to. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to skip nested properties that are set to `undefined` during
@@ -58,7 +56,7 @@ trait Settings extends StObject {
     * and not written to Firestore. If set to `false` or omitted, the SDK
     * throws an exception when it encounters properties of type `undefined`.
     */
-  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.native
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to merge the provided settings with the existing settings. If
@@ -66,10 +64,10 @@ trait Settings extends StObject {
     * set to `false` or left unset, the settings replace the existing
     * settings.
     */
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to use SSL when connecting. */
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
 }
 object Settings {
   

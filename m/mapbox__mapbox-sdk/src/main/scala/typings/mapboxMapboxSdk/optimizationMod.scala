@@ -19,30 +19,30 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizationMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/optimization", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/optimization", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): OptimizationService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/optimization", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): OptimizationService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): OptimizationService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[OptimizationService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): OptimizationService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[OptimizationService]
+  
   trait OptimizationRequest extends StObject {
     
     /**
       * Return additional metadata along the route. You can include several annotations as a comma-separated list. Possible values are:
       */
-    var annotations: js.UndefOr[duration | speed | distance] = js.native
+    var annotations: js.UndefOr[duration | speed | distance] = js.undefined
     
     /**
       * Specify the destination coordinate of the returned route. Accepts  any (default) or  last .
       */
-    var destination: js.UndefOr[any | last] = js.native
+    var destination: js.UndefOr[any | last] = js.undefined
     
     /**
       * Specify pick-up and drop-off locations for a trip by providing a ; delimited list of number pairs that correspond with the coordinates list.
@@ -51,50 +51,50 @@ object optimizationMod {
       * Each pair must contain exactly 2 numbers, which cannot be the same.
       * The returned solution will visit pick-up locations before visiting drop-off locations. The first location can only be a pick-up location, not a drop-off location.
       */
-    var distributions: js.UndefOr[js.Array[Double]] = js.native
+    var distributions: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The format of the returned geometry. Allowed values are:  geojson (as LineString ),  polyline (default, a polyline with precision 5),  polyline6 (a polyline with precision 6).
       */
-    var geometries: js.UndefOr[geojson | polyline | polyline6] = js.native
+    var geometries: js.UndefOr[geojson | polyline | polyline6] = js.undefined
     
     /**
       * The language of returned turn-by-turn text instructions. See supported languages . The default is  en (English).
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the returned overview geometry.
       * Can be 'full' (the most detailed geometry available), 'simplified' (default, a simplified version of the full geometry), or 'false' (no overview geometry).
       */
-    var overview: js.UndefOr[full | simplified | `false`] = js.native
+    var overview: js.UndefOr[full | simplified | `false`] = js.undefined
     
     /**
       * A Mapbox Directions routing profile ID.
       */
-    var profile: MapboxProfile = js.native
+    var profile: MapboxProfile
     
     /**
       * Indicates whether the returned route is roundtrip, meaning the route returns to the first location ( true , default) or not ( false ).
       * If roundtrip=false , the  source and  destination parameters are required but not all combinations will be possible.
       * See the Fixing Start and End Points section below for additional notes.
       */
-    var roundtrip: js.UndefOr[Boolean] = js.native
+    var roundtrip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The coordinate at which to start the returned route. Accepts  any (default) or  first .
       */
-    var source: js.UndefOr[any | first] = js.native
+    var source: js.UndefOr[any | first] = js.undefined
     
     /**
       * Whether to return steps and turn-by-turn instructions ( true ) or not ( false , default).
       */
-    var steps: js.UndefOr[Boolean] = js.native
+    var steps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A semicolon-separated list of {longitude},{latitude} coordinates. There must be between 2 and 12 coordinates. The first coordinate is the start and end point of the trip.
       */
-    var waypoints: js.Array[OptimizationWaypoint] = js.native
+    var waypoints: js.Array[OptimizationWaypoint]
   }
   object OptimizationRequest {
     
@@ -176,10 +176,9 @@ object optimizationMod {
   }
   
   // SdkConfig | MapiClient
-  @js.native
   trait OptimizationService extends StObject {
     
-    def getContours(config: OptimizationRequest): MapiRequest = js.native
+    def getContours(config: OptimizationRequest): MapiRequest
   }
   object OptimizationService {
     
@@ -197,27 +196,26 @@ object optimizationMod {
     }
   }
   
-  @js.native
   trait OptimizationWaypoint extends StObject {
     
     /**
       * Used to indicate how requested routes consider from which side of the road to approach the waypoint.
       */
-    var approach: js.UndefOr[DirectionsApproach] = js.native
+    var approach: js.UndefOr[DirectionsApproach] = js.undefined
     
     /**
       * Used to filter the road segment the waypoint will be placed on by direction and dictates the angle of approach.
       * This option should always be used in conjunction with a `radius`. The first value is an angle clockwise from true north between 0 and 360,
       * and the second is the range of degrees the angle can deviate by.
       */
-    var bearing: js.UndefOr[js.Array[Double]] = js.native
+    var bearing: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var coordinates: Double = js.native
+    var coordinates: Double
     
     /**
       * Maximum distance in meters that the coordinate is allowed to move when snapped to a nearby road segment.
       */
-    var radius: js.UndefOr[Double | unlimited] = js.native
+    var radius: js.UndefOr[Double | unlimited] = js.undefined
   }
   object OptimizationWaypoint {
     

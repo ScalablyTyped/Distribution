@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaStreamSource.SwitchStreamsRequested event. */
-@js.native
 trait MediaStreamSourceSwitchStreamsRequestedEventArgs extends StObject {
   
   /** Gets the object that represents the request to switch the streams. */
-  var request: MediaStreamSourceSwitchStreamsRequest = js.native
+  var request: MediaStreamSourceSwitchStreamsRequest
 }
 object MediaStreamSourceSwitchStreamsRequestedEventArgs {
   

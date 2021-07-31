@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -14,13 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Options to pass to Model on drop
   */
-@js.native
-trait DropOptions extends LoggingOptions {
+trait DropOptions
+  extends StObject
+     with LoggingOptions {
   
   /**
     * Also drop all objects depending on this table, such as views. Only works in postgres
     */
-  var cascade: js.UndefOr[Boolean] = js.native
+  var cascade: js.UndefOr[Boolean] = js.undefined
 }
 object DropOptions {
   

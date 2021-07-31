@@ -2,10 +2,8 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGenerateAccessTokenRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGenerateAccessTokenRequest extends StObject {
     * wildcard character is required; replacing it with a project ID is
     * invalid.
     */
-  var delegates: js.UndefOr[js.Array[String]] = js.native
+  var delegates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The desired lifetime duration of the access token in seconds. Must be set
@@ -27,14 +25,14 @@ trait SchemaGenerateAccessTokenRequest extends StObject {
     * specified, the token&#39;s lifetime will be set to a default value of one
     * hour.
     */
-  var lifetime: js.UndefOr[String] = js.native
+  var lifetime: js.UndefOr[String] = js.undefined
   
   /**
     * Code to identify the scopes to be included in the OAuth 2.0 access token.
     * See https://developers.google.com/identity/protocols/googlescopes for
     * more information. At least one value required.
     */
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGenerateAccessTokenRequest {
   

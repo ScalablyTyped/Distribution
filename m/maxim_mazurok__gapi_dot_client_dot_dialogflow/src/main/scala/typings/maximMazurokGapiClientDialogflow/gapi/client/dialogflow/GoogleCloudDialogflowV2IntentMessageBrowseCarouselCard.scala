@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard extends StObject {
   
   /** Optional. Settings for displaying the image. Applies to every image in items. */
-  var imageDisplayOptions: js.UndefOr[String] = js.native
+  var imageDisplayOptions: js.UndefOr[String] = js.undefined
   
   /** Required. List of items in the Browse Carousel Card. Minimum of two items, maximum of ten. */
   var items: js.UndefOr[
     js.Array[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]
-  ] = js.native
+  ] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectorEntityResponse extends StObject {
   
   /**
     *  Describes the fields for that connector entity. For example, for an account entity, the fields would be account name, account ID, and so on. 
     */
-  var connectorEntityFields: ConnectorEntityFieldList = js.native
+  var connectorEntityFields: ConnectorEntityFieldList
 }
 object DescribeConnectorEntityResponse {
   

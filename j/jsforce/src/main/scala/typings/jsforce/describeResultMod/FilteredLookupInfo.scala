@@ -2,17 +2,15 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteredLookupInfo extends StObject {
   
-  var controllingFields: js.Array[String] = js.native
+  var controllingFields: js.Array[String]
   
-  var dependent: Boolean = js.native
+  var dependent: Boolean
   
-  var optionalFilter: Boolean = js.native
+  var optionalFilter: Boolean
 }
 object FilteredLookupInfo {
   

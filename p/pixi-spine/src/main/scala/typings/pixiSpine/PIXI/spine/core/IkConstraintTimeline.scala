@@ -2,15 +2,15 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IkConstraintTimeline extends CurveTimeline {
+trait IkConstraintTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  var ikConstraintIndex: Double = js.native
+  var ikConstraintIndex: Double
   
   def setFrame(
     frameIndex: Double,
@@ -20,7 +20,7 @@ trait IkConstraintTimeline extends CurveTimeline {
     bendDirection: Double,
     compress: Boolean,
     stretch: Boolean
-  ): Unit = js.native
+  ): Unit
 }
 object IkConstraintTimeline {
   

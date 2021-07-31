@@ -13,21 +13,19 @@ import typings.rsvp.rsvpStrings.fulfilled
 import typings.rsvp.rsvpStrings.rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var length: `9` = js.native
+    var length: `9`
   }
   object `0` {
     
     @scala.inline
-    def apply(length: `9`): `0` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(length = 9)
       __obj.asInstanceOf[`0`]
     }
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`8` = js.native
+    var length: typings.rsvp.rsvpNumbers.`8`
   }
   object `1` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`8`): `1` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(length = 8)
       __obj.asInstanceOf[`1`]
     }
     
@@ -60,16 +57,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`7` = js.native
+    var length: typings.rsvp.rsvpNumbers.`7`
   }
   object `2` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`7`): `2` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `2` = {
+      val __obj = js.Dynamic.literal(length = 7)
       __obj.asInstanceOf[`2`]
     }
     
@@ -81,16 +77,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `3` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`6` = js.native
+    var length: typings.rsvp.rsvpNumbers.`6`
   }
   object `3` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`6`): `3` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `3` = {
+      val __obj = js.Dynamic.literal(length = 6)
       __obj.asInstanceOf[`3`]
     }
     
@@ -102,16 +97,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `4` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`5` = js.native
+    var length: typings.rsvp.rsvpNumbers.`5`
   }
   object `4` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`5`): `4` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `4` = {
+      val __obj = js.Dynamic.literal(length = 5)
       __obj.asInstanceOf[`4`]
     }
     
@@ -123,16 +117,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `5` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`4` = js.native
+    var length: typings.rsvp.rsvpNumbers.`4`
   }
   object `5` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`4`): `5` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `5` = {
+      val __obj = js.Dynamic.literal(length = 4)
       __obj.asInstanceOf[`5`]
     }
     
@@ -144,16 +137,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `6` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`3` = js.native
+    var length: typings.rsvp.rsvpNumbers.`3`
   }
   object `6` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`3`): `6` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `6` = {
+      val __obj = js.Dynamic.literal(length = 3)
       __obj.asInstanceOf[`6`]
     }
     
@@ -165,16 +157,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `7` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`2` = js.native
+    var length: typings.rsvp.rsvpNumbers.`2`
   }
   object `7` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`2`): `7` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `7` = {
+      val __obj = js.Dynamic.literal(length = 2)
       __obj.asInstanceOf[`7`]
     }
     
@@ -186,16 +177,15 @@ object anon {
     }
   }
   
-  @js.native
   trait `8` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`1` = js.native
+    var length: typings.rsvp.rsvpNumbers.`1`
   }
   object `8` {
     
     @scala.inline
-    def apply(length: typings.rsvp.rsvpNumbers.`1`): `8` = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): `8` = {
+      val __obj = js.Dynamic.literal(length = 1)
       __obj.asInstanceOf[`8`]
     }
     
@@ -207,16 +197,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: `10` = js.native
+    var length: `10`
   }
   object Length {
     
     @scala.inline
-    def apply(length: `10`): Length = {
-      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    def apply(): Length = {
+      val __obj = js.Dynamic.literal(length = 10)
       __obj.asInstanceOf[Length]
     }
     
@@ -269,9 +258,9 @@ object anon {
       */
     /* static member */
     def trigger(eventName: String): Unit = js.native
-    def trigger(eventName: String, options: js.UndefOr[scala.Nothing], label: String): Unit = js.native
     def trigger(eventName: String, options: js.Any): Unit = js.native
     def trigger(eventName: String, options: js.Any, label: String): Unit = js.native
+    def trigger(eventName: String, options: Unit, label: String): Unit = js.native
   }
   
   @js.native
@@ -385,14 +374,15 @@ object anon {
     
     /* static member */
     def reject(): Promise[scala.Nothing] = js.native
-    def reject(reason: js.UndefOr[scala.Nothing], label: String): Promise[scala.Nothing] = js.native
     def reject(reason: js.Any): Promise[scala.Nothing] = js.native
     def reject(reason: js.Any, label: String): Promise[scala.Nothing] = js.native
+    def reject(reason: Unit, label: String): Promise[scala.Nothing] = js.native
     
     /* static member */
     def resolve(): Promise[Unit] = js.native
-    def resolve[T](value: js.UndefOr[Arg[T]], label: String): Promise[T] = js.native
+    def resolve[T](value: Unit, label: String): Promise[T] = js.native
     def resolve[T](value: Arg[T]): Promise[T] = js.native
+    def resolve[T](value: Arg[T], label: String): Promise[T] = js.native
     /* static member */
     @JSName("resolve")
     def resolve_T[T](): Promise[T] = js.native

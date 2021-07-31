@@ -20,14 +20,13 @@ import typings.jointjs.mod.g.PlainPoint
 import typings.jointjs.mod.g.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.Element")
 @js.native
 class Element () extends Cell {
   def this(attributes: Attributes) = this()
-  def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+  def this(attributes: Unit, opt: Options) = this()
   def this(attributes: Attributes, opt: Options) = this()
   
   def addPort(port: Port): this.type = js.native
@@ -59,14 +58,9 @@ class Element () extends Cell {
   def hasPorts(): Boolean = js.native
   
   def portProp(portId: String, path: Path): js.Any = js.native
-  def portProp(
-    portId: String,
-    path: Path,
-    value: js.UndefOr[scala.Nothing],
-    opt: typings.jointjs.mod.dia.Cell.Options
-  ): Element = js.native
   def portProp(portId: String, path: Path, value: js.Any): Element = js.native
   def portProp(portId: String, path: Path, value: js.Any, opt: typings.jointjs.mod.dia.Cell.Options): Element = js.native
+  def portProp(portId: String, path: Path, value: Unit, opt: typings.jointjs.mod.dia.Cell.Options): Element = js.native
   @JSName("portProp")
   def portProp_Element(portId: String, path: Path): Element = js.native
   
@@ -89,70 +83,57 @@ class Element () extends Cell {
   def resize(width: Double, height: Double, opt: typings.jointjs.anon.Direction): this.type = js.native
   
   def rotate(deg: Double): this.type = js.native
-  def rotate(
-    deg: Double,
-    absolute: js.UndefOr[scala.Nothing],
-    origin: js.UndefOr[scala.Nothing],
-    opt: StringDictionary[js.Any]
-  ): this.type = js.native
-  def rotate(deg: Double, absolute: js.UndefOr[scala.Nothing], origin: Point): this.type = js.native
-  def rotate(deg: Double, absolute: js.UndefOr[scala.Nothing], origin: Point, opt: StringDictionary[js.Any]): this.type = js.native
   def rotate(deg: Double, absolute: Boolean): this.type = js.native
-  def rotate(deg: Double, absolute: Boolean, origin: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]): this.type = js.native
+  def rotate(deg: Double, absolute: Boolean, origin: Unit, opt: StringDictionary[js.Any]): this.type = js.native
   def rotate(deg: Double, absolute: Boolean, origin: Point): this.type = js.native
   def rotate(deg: Double, absolute: Boolean, origin: Point, opt: StringDictionary[js.Any]): this.type = js.native
+  def rotate(deg: Double, absolute: Unit, origin: Unit, opt: StringDictionary[js.Any]): this.type = js.native
+  def rotate(deg: Double, absolute: Unit, origin: Point): this.type = js.native
+  def rotate(deg: Double, absolute: Unit, origin: Point, opt: StringDictionary[js.Any]): this.type = js.native
   
   def scale(scaleX: Double, scaleY: Double): this.type = js.native
-  def scale(scaleX: Double, scaleY: Double, origin: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]): this.type = js.native
+  def scale(scaleX: Double, scaleY: Double, origin: Unit, opt: StringDictionary[js.Any]): this.type = js.native
   def scale(scaleX: Double, scaleY: Double, origin: Point): this.type = js.native
   def scale(scaleX: Double, scaleY: Double, origin: Point, opt: StringDictionary[js.Any]): this.type = js.native
   
   def size(): Size = js.native
   def size(width: Double): this.type = js.native
-  def size(width: Double, height: js.UndefOr[scala.Nothing], opt: typings.jointjs.anon.Direction): this.type = js.native
   def size(width: Double, height: Double): this.type = js.native
   def size(width: Double, height: Double, opt: typings.jointjs.anon.Direction): this.type = js.native
+  def size(width: Double, height: Unit, opt: typings.jointjs.anon.Direction): this.type = js.native
   
   def translate(tx: Double): this.type = js.native
-  def translate(tx: Double, ty: js.UndefOr[scala.Nothing], opt: TranslateOptions): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
   def translate(tx: Double, ty: Double, opt: TranslateOptions): this.type = js.native
+  def translate(tx: Double, ty: Unit, opt: TranslateOptions): this.type = js.native
 }
 object Element {
   
-  /* static member */
-  @JSImport("jointjs", "dia.Element.define")
+  @JSImport("jointjs", "dia.Element")
   @js.native
-  def define(`type`: String): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(
-    `type`: String,
-    defaults: js.UndefOr[scala.Nothing],
-    protoProps: js.UndefOr[scala.Nothing],
-    staticProps: js.Any
-  ): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any, staticProps: js.Any): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.UndefOr[scala.Nothing], staticProps: js.Any): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Element] = js.native
-  @JSImport("jointjs", "dia.Element.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Attributes extends GenericAttributes[Selectors]
+  /* static member */
+  @scala.inline
+  def define(`type`: String): Constructor[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  
+  trait Attributes
+    extends StObject
+       with GenericAttributes[Selectors]
   object Attributes {
     
     @scala.inline
@@ -162,19 +143,19 @@ object Element {
     }
   }
   
-  @js.native
   trait GenericAttributes[T]
-    extends typings.jointjs.mod.dia.Cell.GenericAttributes[T] {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.GenericAttributes[T] {
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var markup: js.UndefOr[String | MarkupJSON] = js.native
+    var markup: js.UndefOr[String | MarkupJSON] = js.undefined
     
-    var ports: js.UndefOr[Groups] = js.native
+    var ports: js.UndefOr[Groups] = js.undefined
     
-    var position: js.UndefOr[Point] = js.native
+    var position: js.UndefOr[Point] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object GenericAttributes {
     
@@ -185,7 +166,7 @@ object Element {
     }
     
     @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[_], T] (val x: Self with GenericAttributes[T]) extends AnyVal {
+    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
@@ -219,22 +200,21 @@ object Element {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var args: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var attrs: js.UndefOr[Selectors] = js.native
+    var attrs: js.UndefOr[Selectors] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[Markup] = js.native
+    var label: js.UndefOr[Markup] = js.undefined
     
-    var markup: js.UndefOr[String | MarkupJSON] = js.native
+    var markup: js.UndefOr[String | MarkupJSON] = js.undefined
     
-    var z: js.UndefOr[Double | auto] = js.native
+    var z: js.UndefOr[Double | auto] = js.undefined
   }
   object Port {
     
@@ -291,16 +271,15 @@ object Element {
     }
   }
   
-  @js.native
   trait PortGroup extends StObject {
     
-    var attrs: js.UndefOr[Selectors] = js.native
+    var attrs: js.UndefOr[Selectors] = js.undefined
     
-    var label: js.UndefOr[Markup] = js.native
+    var label: js.UndefOr[Markup] = js.undefined
     
-    var markup: js.UndefOr[String | MarkupJSON] = js.native
+    var markup: js.UndefOr[String | MarkupJSON] = js.undefined
     
-    var position: js.UndefOr[PositionType] = js.native
+    var position: js.UndefOr[PositionType] = js.undefined
   }
   object PortGroup {
     
@@ -339,10 +318,11 @@ object Element {
     }
   }
   
-  @js.native
-  trait PortPosition extends PlainPoint {
+  trait PortPosition
+    extends StObject
+       with PlainPoint {
     
-    var angle: Double = js.native
+    var angle: Double
   }
   object PortPosition {
     
@@ -362,12 +342,11 @@ object Element {
   
   type PositionType = String | Args
   
-  @js.native
   trait TranslateOptions extends StObject {
     
-    var restrictedArea: js.UndefOr[BBox] = js.native
+    var restrictedArea: js.UndefOr[BBox] = js.undefined
     
-    var transition: js.UndefOr[TransitionOptions] = js.native
+    var transition: js.UndefOr[TransitionOptions] = js.undefined
   }
   object TranslateOptions {
     

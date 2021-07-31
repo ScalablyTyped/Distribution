@@ -10,9 +10,9 @@ Leaflet plugins for consuming ArcGIS Online and ArcGIS Server services.
 | ------------------ | :-------------: |
 | Full name          | esri-leaflet |
 | Keywords           | arcgis, esri, esri leaflet, gis, leaflet plugin, mapping |
-| # releases         | 9 |
-| # dependents       | 44 |
-| # downloads        | 450139 |
+| # releases         | 13 |
+| # dependents       | 43 |
+| # downloads        | 596997 |
 | # stars            | 3 |
 
 ## Links

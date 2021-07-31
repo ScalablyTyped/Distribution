@@ -2,21 +2,19 @@ package typings.emojiJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mask extends StObject {
     
-    var mask: Double = js.native
+    var mask: Double
     
-    var path: String = js.native
+    var path: String
     
-    var sheet: String = js.native
+    var sheet: String
     
-    var sheet_size: Double = js.native
+    var sheet_size: Double
   }
   object Mask {
     

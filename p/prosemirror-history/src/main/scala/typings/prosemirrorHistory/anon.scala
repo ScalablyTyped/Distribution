@@ -2,17 +2,15 @@ package typings.prosemirrorHistory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Depth extends StObject {
     
-    var depth: js.UndefOr[Double | Null] = js.native
+    var depth: js.UndefOr[Double | Null] = js.undefined
     
-    var newGroupDelay: js.UndefOr[Double | Null] = js.native
+    var newGroupDelay: js.UndefOr[Double | Null] = js.undefined
   }
   object Depth {
     

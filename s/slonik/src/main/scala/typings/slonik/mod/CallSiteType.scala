@@ -2,23 +2,21 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallSiteType extends StObject {
   
-  var columnNumber: Double = js.native
+  var columnNumber: Double
   
-  var fileName: String | Null = js.native
+  var fileName: String | Null
   
-  var lineNumber: Double = js.native
+  var lineNumber: Double
 }
 object CallSiteType {
   
   @scala.inline
   def apply(columnNumber: Double, lineNumber: Double): CallSiteType = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], fileName = null)
     __obj.asInstanceOf[CallSiteType]
   }
   

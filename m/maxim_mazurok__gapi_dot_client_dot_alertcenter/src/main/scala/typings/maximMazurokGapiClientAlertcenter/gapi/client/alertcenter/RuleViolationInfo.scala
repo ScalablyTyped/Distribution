@@ -2,42 +2,40 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleViolationInfo extends StObject {
   
   /** Source of the data. */
-  var dataSource: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[String] = js.undefined
   
   /** List of matches that were found in the resource content. */
-  var matchInfo: js.UndefOr[js.Array[MatchInfo]] = js.native
+  var matchInfo: js.UndefOr[js.Array[MatchInfo]] = js.undefined
   
   /**
     * Resource recipients. For Drive, they are grantees that the Drive file was shared with at the time of rule triggering. Valid values include user emails, group emails, domains, or
     * 'anyone' if the file was publicly accessible. If the file was private the recipients list will be empty. For Gmail, they are emails of the users or groups that the Gmail message was
     * sent to.
     */
-  var recipients: js.UndefOr[js.Array[String]] = js.native
+  var recipients: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Details of the resource which violated the rule. */
-  var resourceInfo: js.UndefOr[ResourceInfo] = js.native
+  var resourceInfo: js.UndefOr[ResourceInfo] = js.undefined
   
   /** Details of the violated rule. */
-  var ruleInfo: js.UndefOr[RuleInfo] = js.native
+  var ruleInfo: js.UndefOr[RuleInfo] = js.undefined
   
   /** Actions suppressed due to other actions with higher priority. */
-  var suppressedActionTypes: js.UndefOr[js.Array[String]] = js.native
+  var suppressedActionTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Trigger of the rule. */
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
   /** Actions applied as a consequence of the rule being triggered. */
-  var triggeredActionTypes: js.UndefOr[js.Array[String]] = js.native
+  var triggeredActionTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Email of the user who caused the violation. Value could be empty if not applicable, for example, a violation found by drive continuous scan. */
-  var triggeringUserEmail: js.UndefOr[String] = js.native
+  var triggeringUserEmail: js.UndefOr[String] = js.undefined
 }
 object RuleViolationInfo {
   

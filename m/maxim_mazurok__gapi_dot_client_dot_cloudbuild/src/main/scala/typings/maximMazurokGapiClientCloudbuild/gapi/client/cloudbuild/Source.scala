@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /** If provided, get the source from this location in a Cloud Source Repository. */
-  var repoSource: js.UndefOr[RepoSource] = js.native
+  var repoSource: js.UndefOr[RepoSource] = js.undefined
   
   /** If provided, get the source from this location in Google Cloud Storage. */
-  var storageSource: js.UndefOr[StorageSource] = js.native
+  var storageSource: js.UndefOr[StorageSource] = js.undefined
 }
 object Source {
   

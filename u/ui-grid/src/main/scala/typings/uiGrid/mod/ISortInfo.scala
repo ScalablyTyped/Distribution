@@ -2,17 +2,15 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISortInfo extends StObject {
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var ignoreSort: js.UndefOr[Boolean] = js.native
+  var ignoreSort: js.UndefOr[Boolean] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object ISortInfo {
   

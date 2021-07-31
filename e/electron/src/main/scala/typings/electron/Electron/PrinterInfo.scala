@@ -2,42 +2,40 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/printer-info
   /**
     * a longer description of the printer's type.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * the name of the printer as shown in Print Preview.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * whether or not a given printer is set as the default printer on the OS.
     */
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
   /**
     * the name of the printer as understood by the OS.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * an object containing a variable number of platform-specific printer information.
     */
-  var options: Options = js.native
+  var options: Options
   
   /**
     * the current status of the printer.
     */
-  var status: Double = js.native
+  var status: Double
 }
 object PrinterInfo {
   

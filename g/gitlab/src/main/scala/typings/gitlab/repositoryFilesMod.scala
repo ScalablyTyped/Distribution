@@ -7,7 +7,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryFilesMod {
@@ -88,28 +87,27 @@ object repositoryFilesMod {
     def showRaw(projectId: Double, filePath: String, ref: String, options: Sudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait RepositoryFileSchema extends StObject {
     
-    var blob_id: String = js.native
+    var blob_id: String
     
-    var commit_id: String = js.native
+    var commit_id: String
     
-    var content: String = js.native
+    var content: String
     
-    var content_sha256: String = js.native
+    var content_sha256: String
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var file_name: String = js.native
+    var file_name: String
     
-    var file_path: String = js.native
+    var file_path: String
     
-    var last_commit_id: String = js.native
+    var last_commit_id: String
     
-    var ref: String = js.native
+    var ref: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object RepositoryFileSchema {
     

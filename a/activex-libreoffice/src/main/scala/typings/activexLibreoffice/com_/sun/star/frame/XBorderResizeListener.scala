@@ -6,19 +6,19 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to listen to border resize events of a controller. */
-@js.native
-trait XBorderResizeListener extends XEventListener {
+trait XBorderResizeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * notifies the listener that the controller's border widths have been changed.
     * @param Object reference to the object representing the controller
     * @param NewSize the new widths of the controller's border
     */
-  def borderWidthsChanged(Object: XInterface, NewSize: BorderWidths): Unit = js.native
+  def borderWidthsChanged(Object: XInterface, NewSize: BorderWidths): Unit
 }
 object XBorderResizeListener {
   

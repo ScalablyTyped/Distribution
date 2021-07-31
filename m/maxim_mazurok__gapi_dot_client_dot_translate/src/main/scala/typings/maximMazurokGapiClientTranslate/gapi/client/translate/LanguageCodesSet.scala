@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageCodesSet extends StObject {
   
   /**
     * The BCP-47 language code(s) for terms defined in the glossary. All entries are unique. The list contains at least two entries. Expected to be an exact match for
     * GlossaryTerm.language_code.
     */
-  var languageCodes: js.UndefOr[js.Array[String]] = js.native
+  var languageCodes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LanguageCodesSet {
   

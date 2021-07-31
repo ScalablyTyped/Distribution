@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A container may support the possibility to add new elements or to drop existing elements. Additions are always done by descriptors which define the
   * properties of the new element.
   */
-@js.native
 trait Container
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XIndexAccess
      with XEnumerationAccess
      with XRefreshable

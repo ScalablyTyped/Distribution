@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents downward API info for projecting into a projected volume. Note that this is identical to a downwardAPI volume source without the default mode.
   */
-@js.native
 trait DownwardAPIProjection extends StObject {
   
   /**
     * Items is a list of DownwardAPIVolume file
     */
-  var items: js.UndefOr[Input[js.Array[Input[DownwardAPIVolumeFile]]]] = js.native
+  var items: js.UndefOr[Input[js.Array[Input[DownwardAPIVolumeFile]]]] = js.undefined
 }
 object DownwardAPIProjection {
   

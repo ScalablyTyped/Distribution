@@ -3,19 +3,17 @@ package typings.playable
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anomalyBloodhoundTypesMod {
   
   type IReportReasons = StringDictionary[String]
   
-  @js.native
   trait IReportType extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var timeoutTime: Double = js.native
+    var timeoutTime: Double
   }
   object IReportType {
     

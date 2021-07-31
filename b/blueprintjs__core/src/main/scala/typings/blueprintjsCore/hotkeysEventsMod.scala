@@ -6,7 +6,6 @@ import typings.blueprintjsCore.hotkeyParserMod.IKeyCombo
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotkeysEventsMod {
@@ -18,15 +17,19 @@ object hotkeysEventsMod {
   object HotkeyScope extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[HotkeyScope with String] = js.native
+    def apply(value: String): js.UndefOr[HotkeyScope & String] = js.native
     
     @js.native
-    sealed trait GLOBAL extends HotkeyScope
-    /* "global" */ val GLOBAL: typings.blueprintjsCore.hotkeysEventsMod.HotkeyScope.GLOBAL with String = js.native
+    sealed trait GLOBAL
+      extends StObject
+         with HotkeyScope
+    /* "global" */ val GLOBAL: typings.blueprintjsCore.hotkeysEventsMod.HotkeyScope.GLOBAL & String = js.native
     
     @js.native
-    sealed trait LOCAL extends HotkeyScope
-    /* "local" */ val LOCAL: typings.blueprintjsCore.hotkeysEventsMod.HotkeyScope.LOCAL with String = js.native
+    sealed trait LOCAL
+      extends StObject
+         with HotkeyScope
+    /* "local" */ val LOCAL: typings.blueprintjsCore.hotkeysEventsMod.HotkeyScope.LOCAL & String = js.native
   }
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysEvents", "HotkeysEvents")
@@ -55,12 +58,11 @@ object hotkeysEventsMod {
     def setHotkeys(props: IHotkeysPropschildrenReacChildren): Unit = js.native
   }
   
-  @js.native
   trait IHotkeyAction extends StObject {
     
-    var combo: IKeyCombo = js.native
+    var combo: IKeyCombo
     
-    var props: IHotkeyProps = js.native
+    var props: IHotkeyProps
   }
   object IHotkeyAction {
     

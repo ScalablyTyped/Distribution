@@ -7,53 +7,51 @@ import typings.electron.electronStrings.none
 import typings.electron.electronStrings.outline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarScrubberConstructorOptions extends StObject {
   
   /**
     * Defaults to `true`.
     */
-  var continuous: js.UndefOr[Boolean] = js.native
+  var continuous: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the user taps any item.
     */
-  var highlight: js.UndefOr[js.Function1[/* highlightedIndex */ Double, Unit]] = js.native
+  var highlight: js.UndefOr[js.Function1[/* highlightedIndex */ Double, Unit]] = js.undefined
   
   /**
     * An array of items to place in this scrubber.
     */
-  var items: js.Array[ScrubberItem] = js.native
+  var items: js.Array[ScrubberItem]
   
   /**
     * Can be `fixed` or `free`. The default is `free`.
     */
-  var mode: js.UndefOr[fixed | free] = js.native
+  var mode: js.UndefOr[fixed | free] = js.undefined
   
   /**
     * Selected overlay item style. Can be `background`, `outline` or `none`. Defaults
     * to `none`.
     */
-  var overlayStyle: js.UndefOr[background | outline | none] = js.native
+  var overlayStyle: js.UndefOr[background | outline | none] = js.undefined
   
   /**
     * Called when the user taps an item that was not the last tapped item.
     */
-  var select: js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]] = js.undefined
   
   /**
     * Selected item style. Can be `background`, `outline` or `none`. Defaults to
     * `none`.
     */
-  var selectedStyle: js.UndefOr[background | outline | none] = js.native
+  var selectedStyle: js.UndefOr[background | outline | none] = js.undefined
   
   /**
     * Defaults to `false`.
     */
-  var showArrowButtons: js.UndefOr[Boolean] = js.native
+  var showArrowButtons: js.UndefOr[Boolean] = js.undefined
 }
 object TouchBarScrubberConstructorOptions {
   

@@ -10,9 +10,9 @@ Composable reactive caching with efficient invalidation.
 | ------------------ | :-------------: |
 | Full name          | optimism |
 | Keywords           | caching, cache, invalidation, reactive, reactivity, dependency, tracking, tracker, memoization |
-| # releases         | 28 |
+| # releases         | 32 |
 | # dependents       | 13 |
-| # downloads        | 69005281 |
+| # downloads        | 74545608 |
 | # stars            | 0 |
 
 ## Links

@@ -2,18 +2,16 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesLastVisiblePriceOptionsObject extends StObject {
   
   /**
     * (Highstock) Enable or disable the indicator.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[SeriesLastVisiblePriceLabelOptionsObject] = js.native
+  var label: js.UndefOr[SeriesLastVisiblePriceLabelOptionsObject] = js.undefined
 }
 object SeriesLastVisiblePriceOptionsObject {
   

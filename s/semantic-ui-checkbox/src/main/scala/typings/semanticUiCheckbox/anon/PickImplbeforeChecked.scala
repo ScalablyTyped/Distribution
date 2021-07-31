@@ -4,14 +4,27 @@ import typings.semanticUiCheckbox.semanticUiCheckboxBooleans.`false`
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'beforeChecked'> */
-@js.native
 trait PickImplbeforeChecked extends StObject {
   
-  def beforeChecked(): Unit | `false` = js.native
+  def beforeChecked(): Unit | `false`
   @JSName("beforeChecked")
-  var beforeChecked_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  var beforeChecked_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
+}
+object PickImplbeforeChecked {
+  
+  @scala.inline
+  def apply(beforeChecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeChecked = {
+    val __obj = js.Dynamic.literal(beforeChecked = beforeChecked.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplbeforeChecked]
+  }
+  
+  @scala.inline
+  implicit class PickImplbeforeCheckedMutableBuilder[Self <: PickImplbeforeChecked] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBeforeChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
+  }
 }

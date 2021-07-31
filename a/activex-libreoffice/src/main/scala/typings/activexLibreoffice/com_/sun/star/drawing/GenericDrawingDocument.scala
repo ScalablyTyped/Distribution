@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.style.XStyleFamiliesSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait GenericDrawingDocument
-  extends OfficeDocument
+  extends StObject
+     with OfficeDocument
      with XMultiServiceFactory
      with XPropertySet
      with XDrawPageDuplicator

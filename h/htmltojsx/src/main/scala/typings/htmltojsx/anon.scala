@@ -2,20 +2,18 @@ package typings.htmltojsx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CreateClass extends StObject {
     
-    var createClass: js.UndefOr[Boolean] = js.native
+    var createClass: js.UndefOr[Boolean] = js.undefined
     
     /** as a string e.g. '    ' or '\t' */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var outputClassName: js.UndefOr[String] = js.native
+    var outputClassName: js.UndefOr[String] = js.undefined
   }
   object CreateClass {
     

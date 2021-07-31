@@ -2,10 +2,8 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupDeveloperIdentityInput extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait LookupDeveloperIdentityInput extends StObject {
     *          Typically, a developer identity provider would issue many developer user identifiers, in
     *          keeping with the number of users.</p>
     */
-  var DeveloperUserIdentifier: js.UndefOr[String] = js.native
+  var DeveloperUserIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
     */
-  var IdentityId: js.UndefOr[String] = js.native
+  var IdentityId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The maximum number of identities to return.</p>
     */
-  var MaxResults: js.UndefOr[Double] = js.native
+  var MaxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * <p>A pagination token. The first call you make will have <code>NextToken</code> set to
@@ -38,7 +36,7 @@ trait LookupDeveloperIdentityInput extends StObject {
     *          response. This token can be used to call the API again and get results starting from the
     *          11th match.</p>
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object LookupDeveloperIdentityInput {
   
@@ -48,9 +46,12 @@ object LookupDeveloperIdentityInput {
     __obj.asInstanceOf[LookupDeveloperIdentityInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "LookupDeveloperIdentityInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "LookupDeveloperIdentityInput")
   @js.native
-  def filterSensitiveLog(obj: LookupDeveloperIdentityInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: LookupDeveloperIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class LookupDeveloperIdentityInputMutableBuilder[Self <: LookupDeveloperIdentityInput] (val x: Self) extends AnyVal {

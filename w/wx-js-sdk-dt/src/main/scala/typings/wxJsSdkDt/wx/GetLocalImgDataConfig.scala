@@ -3,22 +3,22 @@ package typings.wxJsSdkDt.wx
 import typings.wxJsSdkDt.anon.LocalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetLocalImgDataConfig extends WxBaseRequestConfig {
+trait GetLocalImgDataConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 图片的 localID
     */
-  var localId: String = js.native
+  var localId: String
   
   /**
     * 成功后的回调, localData是图片的base64数据，可以用img标签显示
     */
   @JSName("success")
-  def success_MGetLocalImgDataConfig(res: LocalData): Unit = js.native
+  def success_MGetLocalImgDataConfig(res: LocalData): Unit
 }
 object GetLocalImgDataConfig {
   

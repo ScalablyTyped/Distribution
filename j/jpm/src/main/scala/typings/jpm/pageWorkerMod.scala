@@ -9,7 +9,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pageWorkerMod {
   
-  @JSImport("sdk/page-worker", "Page")
+  @JSImport("sdk/page-worker", JSImport.Namespace)
   @js.native
-  def Page(options: Allow): PageWorker = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Page(options: Allow): PageWorker = ^.asInstanceOf[js.Dynamic].applyDynamic("Page")(options.asInstanceOf[js.Any]).asInstanceOf[PageWorker]
   
   @js.native
   trait PageWorker extends StObject {
@@ -36,9 +38,9 @@ object pageWorkerMod {
     
     var include: js.UndefOr[String | (js.Array[RegExp | String]) | RegExp] = js.native
     
-    def on(event: error, handler: js.Function1[/* arg */ js.UndefOr[message | Error], _]): Unit = js.native
+    def on(event: error, handler: js.Function1[/* arg */ js.UndefOr[message | Error], js.Any]): Unit = js.native
     @JSName("on")
-    def on_message(event: message, handler: js.Function1[/* arg */ js.UndefOr[message | Error], _]): Unit = js.native
+    def on_message(event: message, handler: js.Function1[/* arg */ js.UndefOr[message | Error], js.Any]): Unit = js.native
     
     var port: Port = js.native
     

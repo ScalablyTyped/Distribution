@@ -3,7 +3,6 @@ package typings.comDarktalkerCordovaScreenshot
 import typings.comDarktalkerCordovaScreenshot.anon.FilePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object com_ {
@@ -50,40 +49,40 @@ object com_ {
           def save(saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit]): Unit = js.native
           def save(
             saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
-            format: js.UndefOr[scala.Nothing],
-            quality: js.UndefOr[scala.Nothing],
-            filename: String
-          ): Unit = js.native
-          def save(
-            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
-            format: js.UndefOr[scala.Nothing],
-            quality: Double
-          ): Unit = js.native
-          def save(
-            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
-            format: js.UndefOr[scala.Nothing],
-            quality: Double,
-            filename: String
-          ): Unit = js.native
-          def save(
-            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
             format: String
           ): Unit = js.native
           def save(
             saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
             format: String,
-            quality: js.UndefOr[scala.Nothing],
-            filename: String
-          ): Unit = js.native
-          def save(
-            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
-            format: String,
             quality: Double
           ): Unit = js.native
           def save(
             saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
             format: String,
             quality: Double,
+            filename: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: String,
+            quality: Unit,
+            filename: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: Unit,
+            quality: Double
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: Unit,
+            quality: Double,
+            filename: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: Unit,
+            quality: Unit,
             filename: String
           ): Unit = js.native
         }

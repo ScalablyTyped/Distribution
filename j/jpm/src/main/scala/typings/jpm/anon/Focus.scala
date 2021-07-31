@@ -3,19 +3,17 @@ package typings.jpm.anon
 import typings.jpm.panelMod.PanelPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Focus extends StObject {
   
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[PanelPosition] = js.native
+  var position: js.UndefOr[PanelPosition] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Focus {
   

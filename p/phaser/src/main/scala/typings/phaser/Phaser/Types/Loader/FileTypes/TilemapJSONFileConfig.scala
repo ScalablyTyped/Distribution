@@ -3,31 +3,29 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TilemapJSONFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Tilemap Cache.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The absolute or relative URL to load the file from. Or, a well formed JSON object.
     */
-  var url: js.UndefOr[js.Object | String] = js.native
+  var url: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object TilemapJSONFileConfig {
   

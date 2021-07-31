@@ -3,53 +3,70 @@ package typings.dompurify
 import typings.dompurify.mod.HookName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dompurifyStrings {
   
   @js.native
-  sealed trait afterSanitizeAttributes extends HookName
+  sealed trait afterSanitizeAttributes
+    extends StObject
+       with HookName
   @scala.inline
   def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]
   
   @js.native
-  sealed trait afterSanitizeElements extends HookName
+  sealed trait afterSanitizeElements
+    extends StObject
+       with HookName
   @scala.inline
   def afterSanitizeElements: afterSanitizeElements = "afterSanitizeElements".asInstanceOf[afterSanitizeElements]
   
   @js.native
-  sealed trait afterSanitizeShadowDOM extends HookName
+  sealed trait afterSanitizeShadowDOM
+    extends StObject
+       with HookName
   @scala.inline
   def afterSanitizeShadowDOM: afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[afterSanitizeShadowDOM]
   
   @js.native
-  sealed trait beforeSanitizeAttributes extends HookName
+  sealed trait beforeSanitizeAttributes
+    extends StObject
+       with HookName
   @scala.inline
   def beforeSanitizeAttributes: beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[beforeSanitizeAttributes]
   
   @js.native
-  sealed trait beforeSanitizeElements extends HookName
+  sealed trait beforeSanitizeElements
+    extends StObject
+       with HookName
   @scala.inline
   def beforeSanitizeElements: beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[beforeSanitizeElements]
   
   @js.native
-  sealed trait beforeSanitizeShadowDOM extends HookName
+  sealed trait beforeSanitizeShadowDOM
+    extends StObject
+       with HookName
   @scala.inline
   def beforeSanitizeShadowDOM: beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[beforeSanitizeShadowDOM]
   
   @js.native
-  sealed trait uponSanitizeAttribute extends HookName
+  sealed trait uponSanitizeAttribute
+    extends StObject
+       with HookName
   @scala.inline
   def uponSanitizeAttribute: uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[uponSanitizeAttribute]
   
   @js.native
-  sealed trait uponSanitizeElement extends HookName
+  sealed trait uponSanitizeElement
+    extends StObject
+       with HookName
   @scala.inline
   def uponSanitizeElement: uponSanitizeElement = "uponSanitizeElement".asInstanceOf[uponSanitizeElement]
   
   @js.native
-  sealed trait uponSanitizeShadowNode extends HookName
+  sealed trait uponSanitizeShadowNode
+    extends StObject
+       with HookName
   @scala.inline
   def uponSanitizeShadowNode: uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[uponSanitizeShadowNode]
 }

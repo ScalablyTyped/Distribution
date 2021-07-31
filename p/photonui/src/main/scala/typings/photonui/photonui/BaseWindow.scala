@@ -5,34 +5,34 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait BaseWindow extends Container {
+trait BaseWindow
+  extends StObject
+     with Container {
   
-  def center(): Unit = js.native
+  def center(): Unit
   
-  var height: Double = js.native
+  var height: Double
   
-  var maxHeight: Double = js.native
+  var maxHeight: Double
   
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
-  var minHeight: Double = js.native
+  var minHeight: Double
   
-  var minWidth: Double = js.native
+  var minWidth: Double
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var position: X = js.native
+  var position: X
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object BaseWindow {
   

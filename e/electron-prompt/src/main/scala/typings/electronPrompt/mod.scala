@@ -6,30 +6,28 @@ import typings.electronPrompt.electronPromptStrings.select
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-prompt", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[String | Null] = js.native
-  @JSImport("electron-prompt", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], parentBrowserWindow: BrowserWindow): js.Promise[String | Null] = js.native
-  @JSImport("electron-prompt", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[String | Null] = js.native
-  @JSImport("electron-prompt", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, parentBrowserWindow: BrowserWindow): js.Promise[String | Null] = js.native
+  @scala.inline
+  def apply(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def apply(options: Unit, parentBrowserWindow: BrowserWindow): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], parentBrowserWindow.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def apply(options: Options): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def apply(options: Options, parentBrowserWindow: BrowserWindow): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], parentBrowserWindow.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
+  @JSImport("electron-prompt", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ButtonLabels extends StObject {
     
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
-    var ok: js.UndefOr[String] = js.native
+    var ok: js.UndefOr[String] = js.undefined
   }
   object ButtonLabels {
     
@@ -56,112 +54,111 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Whether the window should always stay on top of other windows.
       * Defaults to `false`.
       */
-    var alwaysOnTop: js.UndefOr[Boolean] = js.native
+    var alwaysOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The text for the OK/cancel buttons. Properties are `ok` and `cancel`.
       * Defaults to `null`.
       */
-    var buttonLabels: js.UndefOr[ButtonLabels | Null] = js.native
+    var buttonLabels: js.UndefOr[ButtonLabels | Null] = js.undefined
     
     /**
       * The local path of a CSS file to stylize the prompt window.
       * Defaults to `null`.
       */
-    var customStylesheet: js.UndefOr[String | Null] = js.native
+    var customStylesheet: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The height of the prompt window. Defaults to `130`.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The path to an icon image to use in the title bar.
       * Defaults to `null` and uses electron's icon.
       */
-    var icon: js.UndefOr[String | Null] = js.native
+    var icon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The attributes of the input field, analagous to the HTML attributes:
       * `{type: 'text', required: true}` -> `<input type="text" required>`.
       * Used if the type is `input`.
       */
-    var inputAttrs: js.UndefOr[Record[String, String]] = js.native
+    var inputAttrs: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * The label which appears on the prompt for the input field.
       * Defaults to `Please input a value:`.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to show the menubar or not. Defaults to `false`.
       */
-    var menuBarVisible: js.UndefOr[Boolean] = js.native
+    var menuBarVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The minimum allowed height for the prompt window.
       * Same default value as `height`.
       */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum allowed width for the prompt window.
       * Same default value as `width`.
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the prompt window can be resized or not
       * (also sets `useContentSize`). Defaults to `false`.
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The items for the select dropdown if using the 'select' type in the
       * format 'value': 'display text', where the value is what will be given
       * to the then block and the display text is what the user will see.
       */
-    var selectOptions: js.UndefOr[(Record[String, String]) | Null] = js.native
+    var selectOptions: js.UndefOr[(Record[String, String]) | Null] = js.undefined
     
     /**
       * Whether to show the prompt window icon in taskbar. Defaults to true.
       */
-    var skipTaskbar: js.UndefOr[Boolean] = js.native
+    var skipTaskbar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The title of the prompt window. Defaults to 'Prompt'.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The type of input field, either `input` for a standard text input
       * field or `select` for a dropdown type input. Defaults to `input`.
       */
-    var `type`: js.UndefOr[input | select] = js.native
+    var `type`: js.UndefOr[input | select] = js.undefined
     
     /**
       * Whether the label should be interpreted as HTML or not.
       * Defaults to `false`.
       */
-    var useHtmlLabel: js.UndefOr[Boolean] = js.native
+    var useHtmlLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the input field. Defaults to `null`.
       */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The width of the prompt window. Defaults to `370`.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

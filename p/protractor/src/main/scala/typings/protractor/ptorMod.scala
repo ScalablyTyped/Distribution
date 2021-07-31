@@ -24,7 +24,6 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ptorMod {
@@ -110,28 +109,13 @@ object ptorMod {
     var utils: Chrome = js.native
     
     def wrapDriver(webdriver: WebDriver): ProtractorBrowser = js.native
-    def wrapDriver(
-      webdriver: WebDriver,
-      baseUrl: js.UndefOr[scala.Nothing],
-      rootElement: js.UndefOr[scala.Nothing],
-      untrackOutstandingTimeouts: Boolean
-    ): ProtractorBrowser = js.native
-    def wrapDriver(webdriver: WebDriver, baseUrl: js.UndefOr[scala.Nothing], rootElement: String): ProtractorBrowser = js.native
-    def wrapDriver(
-      webdriver: WebDriver,
-      baseUrl: js.UndefOr[scala.Nothing],
-      rootElement: String,
-      untrackOutstandingTimeouts: Boolean
-    ): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String): ProtractorBrowser = js.native
-    def wrapDriver(
-      webdriver: WebDriver,
-      baseUrl: String,
-      rootElement: js.UndefOr[scala.Nothing],
-      untrackOutstandingTimeouts: Boolean
-    ): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String, rootElement: String): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String, rootElement: String, untrackOutstandingTimeouts: Boolean): ProtractorBrowser = js.native
+    def wrapDriver(webdriver: WebDriver, baseUrl: String, rootElement: Unit, untrackOutstandingTimeouts: Boolean): ProtractorBrowser = js.native
+    def wrapDriver(webdriver: WebDriver, baseUrl: Unit, rootElement: String): ProtractorBrowser = js.native
+    def wrapDriver(webdriver: WebDriver, baseUrl: Unit, rootElement: String, untrackOutstandingTimeouts: Boolean): ProtractorBrowser = js.native
+    def wrapDriver(webdriver: WebDriver, baseUrl: Unit, rootElement: Unit, untrackOutstandingTimeouts: Boolean): ProtractorBrowser = js.native
   }
   
   object protractor extends Shortcut {

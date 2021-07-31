@@ -2,10 +2,8 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelOptions extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait LabelOptions extends StObject {
     */
   var format: js.UndefOr[
     js.Function3[/* value */ Double, /* ratio */ Double, /* id */ String, String | Double]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Show or hide label on each pie piece.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object LabelOptions {
   

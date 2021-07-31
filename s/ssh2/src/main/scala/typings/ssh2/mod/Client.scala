@@ -19,7 +19,6 @@ import typings.ssh2Streams.mod.Prompt
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2", "Client")
@@ -167,7 +166,7 @@ class Client () extends EventEmitter {
     * Emitted when an error occurred.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ Error with ClientErrorExtensions, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* err */ Error & ClientErrorExtensions, Unit]): this.type = js.native
   /**
     * Emitted when the server responds with a greeting message.
     */

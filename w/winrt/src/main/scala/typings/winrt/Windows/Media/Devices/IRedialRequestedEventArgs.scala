@@ -2,13 +2,11 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRedialRequestedEventArgs extends StObject {
   
-  def handled(): Unit = js.native
+  def handled(): Unit
 }
 object IRedialRequestedEventArgs {
   

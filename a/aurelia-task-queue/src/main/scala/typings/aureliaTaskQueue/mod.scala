@@ -2,7 +2,6 @@ package typings.aureliaTaskQueue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,13 +51,12 @@ object mod {
     def queueTask(task: Task): Unit = js.native
   }
   
-  @js.native
   trait Task extends StObject {
     
     /**
       * Call it.
       */
-    def call(): Unit = js.native
+    def call(): Unit
   }
   object Task {
     

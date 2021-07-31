@@ -14,14 +14,16 @@ import typings.reconnectCore.reconnectCoreStrings.fibonacci
 import typings.reconnectCore.reconnectCoreStrings.reconnect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[ArgType, ConnectionType](cf: ConnectFunction[ArgType, ConnectionType]): CustomModule[ArgType, ConnectionType] = ^.asInstanceOf[js.Dynamic].apply(cf.asInstanceOf[js.Any]).asInstanceOf[CustomModule[ArgType, ConnectionType]]
+  
   @JSImport("reconnect-core", JSImport.Namespace)
   @js.native
-  def apply[ArgType, ConnectionType](cf: ConnectFunction[ArgType, ConnectionType]): CustomModule[ArgType, ConnectionType] = js.native
+  val ^ : js.Any = js.native
   
   type ConnectFunction[ArgType, ConnectionType] = js.ThisFunction1[/* this */ Instance[ArgType, ConnectionType], /* opts */ ArgType, ConnectionType]
   
@@ -68,16 +70,17 @@ object mod {
     def reset(): Unit = js.native
   }
   
-  @js.native
-  trait ModuleOptions[ConnectionType] extends ExponentialOptions {
+  trait ModuleOptions[ConnectionType]
+    extends StObject
+       with ExponentialOptions {
     
-    var failAfter: js.UndefOr[Double] = js.native
+    var failAfter: js.UndefOr[Double] = js.undefined
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
-    var onConnect: js.UndefOr[js.Function1[/* con */ ConnectionType, Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function1[/* con */ ConnectionType, Unit]] = js.undefined
     
-    var strategy: js.UndefOr[fibonacci | exponential | Backoff] = js.native
+    var strategy: js.UndefOr[fibonacci | exponential | Backoff] = js.undefined
   }
   object ModuleOptions {
     
@@ -88,7 +91,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions[_], ConnectionType] (val x: Self with ModuleOptions[ConnectionType]) extends AnyVal {
+    implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions[?], ConnectionType] (val x: Self & ModuleOptions[ConnectionType]) extends AnyVal {
       
       @scala.inline
       def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.d3pie.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var segmentStroke: js.UndefOr[String] = js.native
+  var segmentStroke: js.UndefOr[String] = js.undefined
   
-  var segments: js.UndefOr[js.Array[String]] = js.native
+  var segments: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Background {
   

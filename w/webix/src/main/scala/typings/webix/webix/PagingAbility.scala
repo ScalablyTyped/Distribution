@@ -2,17 +2,15 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagingAbility extends StObject {
   
-  def getPage(): Double = js.native
+  def getPage(): Double
   
-  def getPager(): js.Any = js.native
+  def getPager(): js.Any
   
-  def setPage(page: Double): Unit = js.native
+  def setPage(page: Double): Unit
 }
 object PagingAbility {
   

@@ -2,19 +2,17 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a job. The maximum allowed size for a job is 100KB.
   */
-@js.native
 trait SchemaJob extends StObject {
   
   /**
     * App Engine HTTP target.
     */
-  var appEngineHttpTarget: js.UndefOr[SchemaAppEngineHttpTarget] = js.native
+  var appEngineHttpTarget: js.UndefOr[SchemaAppEngineHttpTarget] = js.undefined
   
   /**
     * The deadline for job attempts. If the request handler does not respond by
@@ -26,24 +24,24 @@ trait SchemaJob extends StObject {
     * targets, between 15   seconds and 24 hours. * For PubSub targets, this
     * field is ignored.
     */
-  var attemptDeadline: js.UndefOr[String] = js.native
+  var attemptDeadline: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally caller-specified in CreateJob or UpdateJob.  A human-readable
     * description for the job. This string must not contain more than 500
     * characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP target.
     */
-  var httpTarget: js.UndefOr[SchemaHttpTarget] = js.native
+  var httpTarget: js.UndefOr[SchemaHttpTarget] = js.undefined
   
   /**
     * Output only. The time the last job attempt started.
     */
-  var lastAttemptTime: js.UndefOr[String] = js.native
+  var lastAttemptTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally caller-specified in CreateJob, after which it becomes output
@@ -58,17 +56,17 @@ trait SchemaJob extends StObject {
     * `JOB_ID` can contain only letters ([A-Za-z]), numbers ([0-9]),    hyphens
     * (-), or underscores (_). The maximum length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Pub/Sub target.
     */
-  var pubsubTarget: js.UndefOr[SchemaPubsubTarget] = js.native
+  var pubsubTarget: js.UndefOr[SchemaPubsubTarget] = js.undefined
   
   /**
     * Settings that determine the retry behavior.
     */
-  var retryConfig: js.UndefOr[SchemaRetryConfig] = js.native
+  var retryConfig: js.UndefOr[SchemaRetryConfig] = js.undefined
   
   /**
     * Required, except when used with UpdateJob.  Describes the schedule on
@@ -86,25 +84,25 @@ trait SchemaJob extends StObject {
     * a job attempt fails, the job will be tried a total of retry_count times,
     * with exponential backoff, until the next scheduled start time.
     */
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The next time the job is scheduled. Note that this may be a
     * retry of a previously failed attempt or the next execution time according
     * to the schedule.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. State of the job.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The response from the target for the last attempted
     * execution.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * Specifies the time zone to be used in interpreting schedule. The value of
@@ -115,12 +113,12 @@ trait SchemaJob extends StObject {
     * string &quot;utc&quot;. If a time zone is not specified, the default will
     * be in UTC (also known as GMT).
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The creation time of the job.
     */
-  var userUpdateTime: js.UndefOr[String] = js.native
+  var userUpdateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaJob {
   

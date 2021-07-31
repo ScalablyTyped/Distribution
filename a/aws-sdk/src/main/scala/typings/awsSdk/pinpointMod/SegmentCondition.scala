@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentCondition extends StObject {
   
   /**
     * The unique identifier for the segment to associate with the activity.
     */
-  var SegmentId: string = js.native
+  var SegmentId: string
 }
 object SegmentCondition {
   

@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,16 +15,15 @@ object search {
   
   /* search types */
   /** An object encapsulating a search engine */
-  @js.native
   trait SearchEngine extends StObject {
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var favIconUrl: js.UndefOr[String] = js.native
+    var favIconUrl: js.UndefOr[String] = js.undefined
     
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object SearchEngine {
     
@@ -58,17 +56,16 @@ object search {
     }
   }
   
-  @js.native
   trait SearchSearchProperties extends StObject {
     
     /** Search engine to use. Uses the default if not specified. */
-    var engine: js.UndefOr[String] = js.native
+    var engine: js.UndefOr[String] = js.undefined
     
     /** Terms to search for. */
-    var query: String = js.native
+    var query: String
     
     /** The ID of the tab for the search results. If not specified, a new tab is created. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object SearchSearchProperties {
     

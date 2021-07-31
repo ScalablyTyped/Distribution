@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of enums used by DirectionFinder.
   */
-@js.native
 trait DirectionFinderEnums extends StObject {
   
-  var Avoid: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any = js.native
+  var Avoid: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any
   
-  var Mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any = js.native
+  var Mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any
 }
 object DirectionFinderEnums {
   

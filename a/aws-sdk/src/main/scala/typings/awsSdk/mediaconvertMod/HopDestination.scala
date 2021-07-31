@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HopDestination extends StObject {
   
   /**
     * Optional. When you set up a job to use queue hopping, you can specify a different relative priority for the job in the destination queue. If you don't specify, the relative priority will remain the same as in the previous queue.
     */
-  var Priority: js.UndefOr[integerMinNegative50Max50] = js.native
+  var Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined
   
   /**
     * Optional unless the job is submitted on the default queue. When you set up a job to use queue hopping, you can specify a destination queue. This queue cannot be the original queue to which the job is submitted. If the original queue isn't the default queue and you don't specify the destination queue, the job will move to the default queue.
     */
-  var Queue: js.UndefOr[string] = js.native
+  var Queue: js.UndefOr[string] = js.undefined
   
   /**
     * Required for setting up a job to use queue hopping. Minimum wait time in minutes until the job can hop to the destination queue. Valid range is 1 to 1440 minutes, inclusive.
     */
-  var WaitMinutes: js.UndefOr[integer] = js.native
+  var WaitMinutes: js.UndefOr[integer] = js.undefined
 }
 object HopDestination {
   

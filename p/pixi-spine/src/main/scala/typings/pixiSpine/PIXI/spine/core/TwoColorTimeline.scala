@@ -2,13 +2,13 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TwoColorTimeline extends CurveTimeline {
+trait TwoColorTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
   def setFrame(
     frameIndex: Double,
@@ -20,9 +20,9 @@ trait TwoColorTimeline extends CurveTimeline {
     r2: Double,
     g2: Double,
     b2: Double
-  ): Unit = js.native
+  ): Unit
   
-  var slotIndex: Double = js.native
+  var slotIndex: Double
 }
 object TwoColorTimeline {
   

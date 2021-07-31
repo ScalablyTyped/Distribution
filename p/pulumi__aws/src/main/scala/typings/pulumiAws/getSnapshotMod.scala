@@ -5,25 +5,23 @@ import typings.pulumiAws.inputMod.ebs.GetSnapshotFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSnapshotMod {
   
-  @JSImport("@pulumi/aws/ebs/getSnapshot", "getSnapshot")
+  @JSImport("@pulumi/aws/ebs/getSnapshot", JSImport.Namespace)
   @js.native
-  def getSnapshot(): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshot", "getSnapshot")
-  @js.native
-  def getSnapshot(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshot", "getSnapshot")
-  @js.native
-  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshot", "getSnapshot")
-  @js.native
-  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSnapshot(): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")().asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotResult]]
+  @scala.inline
+  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
+  
   trait GetSnapshotArgs extends StObject {
     
     /**
@@ -31,32 +29,32 @@ object getSnapshotMod {
       * several valid keys, for a full reference, check out
       * [describe-snapshots in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetSnapshotFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSnapshotFilter]] = js.undefined
     
     /**
       * If more than one result is returned, use the most recent snapshot.
       */
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns the snapshots owned by the specified owner id. Multiple owners can be specified.
       */
-    val owners: js.UndefOr[js.Array[String]] = js.native
+    val owners: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * One or more AWS accounts IDs that can create volumes from the snapshot.
       */
-    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.native
+    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Returns information on a specific snapshot_id.
       */
-    val snapshotIds: js.UndefOr[js.Array[String]] = js.native
+    val snapshotIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A map of tags for the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetSnapshotArgs {
     
@@ -119,83 +117,82 @@ object getSnapshotMod {
     }
   }
   
-  @js.native
   trait GetSnapshotResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the EBS Snapshot.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The data encryption key identifier for the snapshot.
       */
-    val dataEncryptionKeyId: String = js.native
+    val dataEncryptionKeyId: String
     
     /**
       * A description for the snapshot
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Whether the snapshot is encrypted.
       */
-    val encrypted: Boolean = js.native
+    val encrypted: Boolean
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
       */
-    val ownerAlias: String = js.native
+    val ownerAlias: String
     
     /**
       * The AWS account ID of the EBS snapshot owner.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val owners: js.UndefOr[js.Array[String]] = js.native
+    val owners: js.UndefOr[js.Array[String]] = js.undefined
     
-    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.native
+    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The snapshot ID (e.g. snap-59fcb34e).
       */
-    val snapshotId: String = js.native
+    val snapshotId: String
     
-    val snapshotIds: js.UndefOr[js.Array[String]] = js.native
+    val snapshotIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The snapshot state.
       */
-    val state: String = js.native
+    val state: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The volume ID (e.g. vol-59fcb34e).
       */
-    val volumeId: String = js.native
+    val volumeId: String
     
     /**
       * The size of the drive in GiBs.
       */
-    val volumeSize: Double = js.native
+    val volumeSize: Double
   }
   object GetSnapshotResult {
     

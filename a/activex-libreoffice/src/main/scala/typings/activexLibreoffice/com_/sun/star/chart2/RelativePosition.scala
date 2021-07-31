@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.activexLibreoffice.com_.sun.star.drawing.Alignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Determines a position of an object relative to a size defined by other means. Values from 0 to 1 cover the entire reference rectangle. Values may also
   * be outside this range, especially negative.
   */
-@js.native
 trait RelativePosition extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait RelativePosition extends StObject {
     * For example if Anchor is TOP_LEFT the top left corner of an object will be placed at the given coordinates. If Anchor is RIGHT the right middle corner
     * of the object will be placed at the given coordinates.
     */
-  var Anchor: Alignment = js.native
+  var Anchor: Alignment
   
   /**
     * The position in the primary direction. The direction is defined by the object using this point.
@@ -30,7 +28,7 @@ trait RelativePosition extends StObject {
     *
     * The values are relative to a reference size (for example the page size). Values between 0 and 1 span the complete bounding rectangle.
     */
-  var Primary: Double = js.native
+  var Primary: Double
   
   /**
     * The position in the secondary direction. The direction is defined by the object using this point.
@@ -39,7 +37,7 @@ trait RelativePosition extends StObject {
     *
     * The values are relative to a reference size (for example the page size). Values between 0 and 1 span the complete bounding rectangle.
     */
-  var Secondary: Double = js.native
+  var Secondary: Double
 }
 object RelativePosition {
   

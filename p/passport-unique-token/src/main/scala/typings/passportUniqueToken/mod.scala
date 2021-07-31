@@ -7,7 +7,6 @@ import typings.passportUniqueToken.passportUniqueTokenBooleans.`false`
 import typings.passportUniqueToken.passportUniqueTokenBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,28 +14,28 @@ object mod {
   @JSImport("passport-unique-token", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var failedOnMissing: js.UndefOr[Boolean] = js.native
+    var failedOnMissing: js.UndefOr[Boolean] = js.undefined
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
     
-    var tokenField: js.UndefOr[String] = js.native
+    var tokenField: js.UndefOr[String] = js.undefined
     
-    var tokenHeader: js.UndefOr[String] = js.native
+    var tokenHeader: js.UndefOr[String] = js.undefined
     
-    var tokenParams: js.UndefOr[String] = js.native
+    var tokenParams: js.UndefOr[String] = js.undefined
     
-    var tokenQuery: js.UndefOr[String] = js.native
+    var tokenQuery: js.UndefOr[String] = js.undefined
   }
   object StrategyOptions {
     
@@ -87,26 +86,25 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsWithRequest extends StObject {
     
-    var failedOnMissing: js.UndefOr[Boolean] = js.native
+    var failedOnMissing: js.UndefOr[Boolean] = js.undefined
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
     
-    var tokenField: js.UndefOr[String] = js.native
+    var tokenField: js.UndefOr[String] = js.undefined
     
-    var tokenHeader: js.UndefOr[String] = js.native
+    var tokenHeader: js.UndefOr[String] = js.undefined
     
-    var tokenParams: js.UndefOr[String] = js.native
+    var tokenParams: js.UndefOr[String] = js.undefined
     
-    var tokenQuery: js.UndefOr[String] = js.native
+    var tokenQuery: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -171,10 +169,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object VerifyOptions {
     

@@ -5,13 +5,11 @@ import typings.grommet.grommetStrings.left
 import typings.grommet.grommetStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Side extends StObject {
   
-  var side: left | right | bottom = js.native
+  var side: left | right | bottom
 }
 object Side {
   

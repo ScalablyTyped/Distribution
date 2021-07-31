@@ -5,7 +5,6 @@ import typings.cordovaSqliteStorage.anon.Item
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SQLitePlugin {
@@ -14,63 +13,57 @@ object SQLitePlugin {
   trait Database extends StObject {
     
     def close(): Unit = js.native
-    def close(success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
+    def close(success: Unit, error: ErrorCallback): Unit = js.native
     def close(success: SuccessCallback): Unit = js.native
     def close(success: SuccessCallback, error: ErrorCallback): Unit = js.native
     
     def executeSql(statement: String): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any]): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any], success: Unit, error: ErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any], success: StatementSuccessCallback): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
-      error: ErrorCallback
-    ): Unit = js.native
-    def executeSql(statement: String, params: js.UndefOr[scala.Nothing], success: StatementSuccessCallback): Unit = js.native
-    def executeSql(
-      statement: String,
-      params: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
       success: StatementSuccessCallback,
       error: ErrorCallback
     ): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_]): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: StatementSuccessCallback): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: StatementSuccessCallback, error: ErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: Unit, error: ErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: StatementSuccessCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: StatementSuccessCallback, error: ErrorCallback): Unit = js.native
     
     def readTransaction(fn: TransactionFunction): Unit = js.native
-    def readTransaction(fn: TransactionFunction, error: js.UndefOr[scala.Nothing], success: SuccessCallback): Unit = js.native
+    def readTransaction(fn: TransactionFunction, error: Unit, success: SuccessCallback): Unit = js.native
     def readTransaction(fn: TransactionFunction, error: ErrorCallback): Unit = js.native
     def readTransaction(fn: TransactionFunction, error: ErrorCallback, success: SuccessCallback): Unit = js.native
     
-    def sqlBatch(sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[_]])]): Unit = js.native
+    def sqlBatch(sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[js.Any]])]): Unit = js.native
     def sqlBatch(
-      sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[_]])],
-      success: js.UndefOr[scala.Nothing],
+      sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[js.Any]])],
+      success: Unit,
       error: ErrorCallback
     ): Unit = js.native
-    def sqlBatch(sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[_]])], success: SuccessCallback): Unit = js.native
+    def sqlBatch(sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[js.Any]])], success: SuccessCallback): Unit = js.native
     def sqlBatch(
-      sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[_]])],
+      sqlStatements: js.Array[String | (js.Tuple2[String, js.Array[js.Any]])],
       success: SuccessCallback,
       error: ErrorCallback
     ): Unit = js.native
     
     def transaction(fn: TransactionFunction): Unit = js.native
-    def transaction(fn: TransactionFunction, error: js.UndefOr[scala.Nothing], success: SuccessCallback): Unit = js.native
+    def transaction(fn: TransactionFunction, error: Unit, success: SuccessCallback): Unit = js.native
     def transaction(fn: TransactionFunction, error: ErrorCallback): Unit = js.native
     def transaction(fn: TransactionFunction, error: ErrorCallback, success: SuccessCallback): Unit = js.native
   }
   
   type DatabaseSuccessCallback = js.Function1[/* db */ Database, Unit]
   
-  @js.native
   trait DeleteArgs extends StObject {
     
-    var iosDatabaseLocation: js.UndefOr[String] = js.native
+    var iosDatabaseLocation: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object DeleteArgs {
     
@@ -102,21 +95,21 @@ object SQLitePlugin {
   
   type ErrorCallback = js.Function1[/* err */ Error, Unit]
   
-  @js.native
   trait OpenArgs
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var androidDatabaseImplementation: js.UndefOr[Double] = js.native
+    var androidDatabaseImplementation: js.UndefOr[Double] = js.undefined
     
-    var androidLockWorkaround: js.UndefOr[Double] = js.native
+    var androidLockWorkaround: js.UndefOr[Double] = js.undefined
     
-    var createFromLocation: js.UndefOr[Double] = js.native
+    var createFromLocation: js.UndefOr[Double] = js.undefined
     
-    var iosDatabaseLocation: js.UndefOr[String] = js.native
+    var iosDatabaseLocation: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object OpenArgs {
     
@@ -164,14 +157,13 @@ object SQLitePlugin {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var insertId: js.UndefOr[Double] = js.native
+    var insertId: js.UndefOr[Double] = js.undefined
     
-    var rows: Item = js.native
+    var rows: Item
     
-    var rowsAffected: Double = js.native
+    var rowsAffected: Double
   }
   object Results {
     
@@ -202,22 +194,22 @@ object SQLitePlugin {
   trait SQLite extends StObject {
     
     def deleteDatabase(args: DeleteArgs): Unit = js.native
-    def deleteDatabase(args: DeleteArgs, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
+    def deleteDatabase(args: DeleteArgs, success: Unit, error: ErrorCallback): Unit = js.native
     def deleteDatabase(args: DeleteArgs, success: SuccessCallback): Unit = js.native
     def deleteDatabase(args: DeleteArgs, success: SuccessCallback, error: ErrorCallback): Unit = js.native
     
     def echoTest(): Unit = js.native
-    def echoTest(ok: js.UndefOr[scala.Nothing], error: js.Function1[/* msg */ String, Unit]): Unit = js.native
     def echoTest(ok: js.Function1[/* value */ String, Unit]): Unit = js.native
     def echoTest(ok: js.Function1[/* value */ String, Unit], error: js.Function1[/* msg */ String, Unit]): Unit = js.native
+    def echoTest(ok: Unit, error: js.Function1[/* msg */ String, Unit]): Unit = js.native
     
     def openDatabase(args: OpenArgs): Database = js.native
-    def openDatabase(args: OpenArgs, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Database = js.native
+    def openDatabase(args: OpenArgs, success: Unit, error: ErrorCallback): Database = js.native
     def openDatabase(args: OpenArgs, success: DatabaseSuccessCallback): Database = js.native
     def openDatabase(args: OpenArgs, success: DatabaseSuccessCallback, error: ErrorCallback): Database = js.native
     
     def selfTest(): Unit = js.native
-    def selfTest(success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
+    def selfTest(success: Unit, error: ErrorCallback): Unit = js.native
     def selfTest(success: SuccessCallback): Unit = js.native
     def selfTest(success: SuccessCallback, error: ErrorCallback): Unit = js.native
   }
@@ -230,30 +222,25 @@ object SQLitePlugin {
   trait Transaction extends StObject {
     
     def executeSql(statement: String): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any]): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
+      success: Unit,
       error: TransactionStatementErrorCallback
     ): Unit = js.native
-    def executeSql(statement: String, params: js.UndefOr[scala.Nothing], success: TransactionStatementSuccessCallback): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any], success: TransactionStatementSuccessCallback): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
       success: TransactionStatementSuccessCallback,
       error: TransactionStatementErrorCallback
     ): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_]): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: Unit, error: TransactionStatementErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: TransactionStatementSuccessCallback): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.Array[_],
-      success: js.UndefOr[scala.Nothing],
-      error: TransactionStatementErrorCallback
-    ): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: TransactionStatementSuccessCallback): Unit = js.native
-    def executeSql(
-      statement: String,
-      params: js.Array[_],
+      params: Unit,
       success: TransactionStatementSuccessCallback,
       error: TransactionStatementErrorCallback
     ): Unit = js.native

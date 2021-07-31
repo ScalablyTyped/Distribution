@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectListMod extends Shortcut {
@@ -26,17 +25,16 @@ object selectListMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/SelectList", JSImport.Namespace)
   @js.native
-  val ^ : SelectListClass = js.native
+  val ^ : js.Object & SelectListClass = js.native
   
   type SelectListClass = ComponentClass[SelectListProps, ComponentState]
   
-  @js.native
   trait SelectListMessages extends StObject {
     
     /**
       * @default: "There are no items in this list"
       */
-    var emptyList: js.UndefOr[String | (js.Function1[/* props */ SelectListProps, String])] = js.native
+    var emptyList: js.UndefOr[String | (js.Function1[/* props */ SelectListProps, String])] = js.undefined
   }
   object SelectListMessages {
     
@@ -60,9 +58,9 @@ object selectListMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SelectListProps
-    extends ReactWidgetsCommonProps
+    extends StObject
+       with ReactWidgetsCommonProps
        with AutoFocus {
     
     /**
@@ -70,87 +68,87 @@ object selectListMod extends Shortcut {
       * spinner gif, useful when loading data via an ajax call.
       * @default false
       */
-    var busy: js.UndefOr[Boolean] = js.native
+    var busy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide an array of possible values for the SelectList. If an array of objects is
       * provided you should use the valueField and textField props, to specify which object
       * properties comprise the value field (such as an id) and the field used to label the item.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Default Value.
       */
-    var defaultValue: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var defaultValue: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /**
       * Delay
       * @default 250
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines how to group the SelectList dropdown list. Providing a string will group the
       * data array by that property. You can also provide a 'function' which should return the
       * group value.
       */
-    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.native
+    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, js.Any])] = js.undefined
     
     /**
       * This component is used to render each option group, when groupBy is specified. By default
       * the groupBy value will be used.
       */
-    var groupComponent: js.UndefOr[ReactType[_]] = js.native
+    var groupComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * This component is used to render each item in the SelectList. The default component
       * renders the text of the selected item (specified by textfield)
       */
-    var itemComponent: js.UndefOr[ReactType[_]] = js.native
+    var itemComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * @default List
       */
-    var listComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var listComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying List component.
       */
-    var listProps: js.UndefOr[js.Object] = js.native
+    var listProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[SelectListMessages] = js.native
+    var messages: js.UndefOr[SelectListMessages] = js.undefined
     
     /**
       * Whether or not the SelectList allows multiple selection or not. when false the SelectList
       * will render as a list of radio buttons, and checkboxes when true.
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The HTML name attribute used to group checkboxes and radio buttons together.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Change event handler that is called when the value is changed. values will be an array
       * when multiple prop is set.
       */
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Any | js.Array[_], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Any | js.Array[js.Any], Unit]] = js.undefined
     
     /**
       * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * The native onKeyPress event, called preventDefault will stop any custom behavior.
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * A handler called when focus shifts on the SelectList. Internally this is used to ensure
@@ -161,26 +159,26 @@ object selectListMod extends Shortcut {
       */
     var onMove: js.UndefOr[
         js.Function3[/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The HTML tabindex attribute, controls the order in which focus moves via the TAB key
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify which data item field to display in the SelectList and selected item. The
       * textField prop may also also used as to find an item in the list as you type. Providing
       * an accessor function allows for computed text values.
       */
-    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.native
+    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.undefined
     
     /**
       * The current value or values of the SelectList. This can be an object (such as a member of
       * the data array) or a primitive value, hinted to by the valueField. The widget value does
       * not need to be in the data array; widgets can have values that are not in their list.
       */
-    var value: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var value: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /**
       * A dataItem field name for uniquely identifying items in the data list. A valueField is
@@ -189,7 +187,7 @@ object selectListMod extends Shortcut {
       * When a valueField is not provided, the SelectList will use strict equality checks (===)
       * to locate the value in the data list.
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object SelectListProps {
     
@@ -209,7 +207,7 @@ object selectListMod extends Shortcut {
       def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -218,7 +216,7 @@ object selectListMod extends Shortcut {
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
-      def setDefaultValue(value: js.Any | js.Array[_]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      def setDefaultValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -233,28 +231,28 @@ object selectListMod extends Shortcut {
       def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, _])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupByFunction1(value: /* dataItem */ js.Any => _): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
       @scala.inline
-      def setGroupComponent(value: ReactType[_]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+      def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
       
       @scala.inline
-      def setItemComponent(value: ReactType[_]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      def setItemComponent(value: ReactType[js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
       @scala.inline
-      def setListComponent(value: ReactType[_] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
+      def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
@@ -284,7 +282,7 @@ object selectListMod extends Shortcut {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* values */ js.Any | js.Array[_] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* values */ js.Any | js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -323,7 +321,7 @@ object selectListMod extends Shortcut {
       def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Any | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
@@ -339,8 +337,8 @@ object selectListMod extends Shortcut {
     }
   }
   
-  type _To = SelectListClass
+  type _To = js.Object & SelectListClass
   
   /* This means you don't have to write `^`, but can instead just say `selectListMod.foo` */
-  override def _to: SelectListClass = ^
+  override def _to: js.Object & SelectListClass = ^
 }

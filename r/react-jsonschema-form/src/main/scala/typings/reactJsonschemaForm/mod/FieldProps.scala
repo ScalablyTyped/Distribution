@@ -74,13 +74,13 @@ import typings.reactJsonschemaForm.reactJsonschemaFormStrings.yes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur'>> */
 @js.native
 trait FieldProps[T]
-  extends /* name */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[js.Any] {
   
   var about: js.UndefOr[String] = js.native
   
@@ -226,7 +226,7 @@ trait FieldProps[T]
   
   var id: js.UndefOr[String] = js.native
   
-  var idSchema: IdSchema[_] = js.native
+  var idSchema: IdSchema[js.Any] = js.native
   
   var inlist: js.UndefOr[js.Any] = js.native
   

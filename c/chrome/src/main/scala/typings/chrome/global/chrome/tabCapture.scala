@@ -6,7 +6,6 @@ import typings.chrome.chrome.tabCapture.CaptureStatusChangedEvent
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -23,13 +22,11 @@ object tabCapture {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.tabCapture.capture")
-  @js.native
-  def capture(options: CaptureOptions, callback: js.Function1[/* stream */ MediaStream | Null, Unit]): Unit = js.native
+  @scala.inline
+  def capture(options: CaptureOptions, callback: js.Function1[/* stream */ MediaStream | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabCapture.getCapturedTabs")
-  @js.native
-  def getCapturedTabs(callback: js.Function1[/* result */ js.Array[CaptureInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getCapturedTabs(callback: js.Function1[/* result */ js.Array[CaptureInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.tabCapture.onStatusChanged")
   @js.native

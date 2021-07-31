@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object org_ {
@@ -19,68 +18,69 @@ object org_ {
         * The interface used for modifying the package database.
         * @see https://git.gnome.org/browse/gnome-software/tree/src/org.freedesktop.PackageKit.xml for documentation of the corresponding D-Bus interface
         */
-      @js.native
-      trait XModify extends XInterface {
+      trait XModify
+        extends StObject
+           with XInterface {
         
         /**
           * Installs sequence< string > packages to provide sequence< string > files.
           * @since LibreOffice 4.0
           */
-        def InstallCatalogs(xid: Double, files: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallCatalogs(xid: Double, files: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs fontconfig resources ( [in] usually fonts) from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallFontconfigResources(xid: Double, resources: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallFontconfigResources(xid: Double, resources: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs GStreamer resources ( [in] usually codecs) from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallGStreamerResources(xid: Double, resources: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallGStreamerResources(xid: Double, resources: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs mimetype handlers from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallMimeTypes(xid: Double, mimeTypes: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallMimeTypes(xid: Double, mimeTypes: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs local package sequence< string > files or service packs.
           * @since LibreOffice 4.0
           */
-        def InstallPackageFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallPackageFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs sequence< string > packages from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallPackageNames(xid: Double, packages: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallPackageNames(xid: Double, packages: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs printer drivers from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallPrinterDrivers(xid: Double, files: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallPrinterDrivers(xid: Double, files: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs sequence< string > packages to provide sequence< string > files.
           * @since LibreOffice 4.0
           */
-        def InstallProvideFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallProvideFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Installs resources of a given type from a configured software source.
           * @since LibreOffice 4.0
           */
-        def InstallResources(xid: Double, types: SeqEquiv[String], resources: SeqEquiv[String], interaction: String): Unit = js.native
+        def InstallResources(xid: Double, types: SeqEquiv[String], resources: SeqEquiv[String], interaction: String): Unit
         
         /**
           * Removes sequence< string > packages that provide the given local sequence< string > files.
           * @since LibreOffice 4.0
           */
-        def RemovePackageByFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit = js.native
+        def RemovePackageByFiles(xid: Double, files: SeqEquiv[String], interaction: String): Unit
       }
       object XModify {
         
@@ -143,20 +143,21 @@ object org_ {
         * The interface used for quering the package database.
         * @see https://git.gnome.org/browse/gnome-software/tree/src/org.freedesktop.PackageKit.xml for documentation of the corresponding D-Bus interface
         */
-      @js.native
-      trait XQuery extends XInterface {
+      trait XQuery
+        extends StObject
+           with XInterface {
         
         /**
           * Installs local package files or service packs.
           * @since LibreOffice 4.0
           */
-        def IsInstalled(packageName: String, interaction: String, installed: js.Array[Boolean]): Unit = js.native
+        def IsInstalled(packageName: String, interaction: String, installed: js.Array[Boolean]): Unit
         
         /**
           * Installs packages to provide files.
           * @since LibreOffice 4.0
           */
-        def SearchFile(fileName: String, interaction: String, installed: js.Array[Boolean], packageName: js.Array[String]): Unit = js.native
+        def SearchFile(fileName: String, interaction: String, installed: js.Array[Boolean], packageName: js.Array[String]): Unit
       }
       object XQuery {
         
@@ -183,9 +184,9 @@ object org_ {
         }
       }
       
-      @js.native
       trait XSyncDbusSessionHelper
-        extends XModify
+        extends StObject
+           with XModify
            with XQuery
       object XSyncDbusSessionHelper {
         

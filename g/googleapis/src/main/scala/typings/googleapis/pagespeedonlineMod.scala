@@ -15,10 +15,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagespeedonlineMod {
+  
+  @JSImport("googleapis/build/src/apis/pagespeedonline", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -151,9 +154,12 @@ object pagespeedonlineMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/pagespeedonline", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/pagespeedonline", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -197,28 +203,24 @@ object pagespeedonlineMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline(options: Options): Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline(options: typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Options): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline(options: typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Options): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline(options: typings.googleapis.v5Mod.pagespeedonlineV5.Options): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline_v1(version: v1): Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline_v2(version: v2): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline_v4(version: v4): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
-  @JSImport("googleapis/build/src/apis/pagespeedonline", "pagespeedonline")
-  @js.native
-  def pagespeedonline_v5(version: v5): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = js.native
+  @scala.inline
+  def pagespeedonline(options: Options): Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(options.asInstanceOf[js.Any]).asInstanceOf[Pagespeedonline]
+  @scala.inline
+  def pagespeedonline(options: typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Options): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline]
+  @scala.inline
+  def pagespeedonline(options: typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Options): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline]
+  @scala.inline
+  def pagespeedonline(options: typings.googleapis.v5Mod.pagespeedonlineV5.Options): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline]
+  
+  @scala.inline
+  def pagespeedonline_v1(version: v1): Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(version.asInstanceOf[js.Any]).asInstanceOf[Pagespeedonline]
+  
+  @scala.inline
+  def pagespeedonline_v2(version: v2): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline]
+  
+  @scala.inline
+  def pagespeedonline_v4(version: v4): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline]
+  
+  @scala.inline
+  def pagespeedonline_v5(version: v5): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = ^.asInstanceOf[js.Dynamic].applyDynamic("pagespeedonline")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline]
 }

@@ -5,29 +5,27 @@ import typings.octokitTypes.octokitTypesStrings.notice
 import typings.octokitTypes.octokitTypesStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksCreateParamsOutputAnnotations extends StObject {
   
-  var annotation_level: notice | warning | failure = js.native
+  var annotation_level: notice | warning | failure
   
-  var end_column: js.UndefOr[Double] = js.native
+  var end_column: js.UndefOr[Double] = js.undefined
   
-  var end_line: Double = js.native
+  var end_line: Double
   
-  var message: String = js.native
+  var message: String
   
-  var path: String = js.native
+  var path: String
   
-  var raw_details: js.UndefOr[String] = js.native
+  var raw_details: js.UndefOr[String] = js.undefined
   
-  var start_column: js.UndefOr[Double] = js.native
+  var start_column: js.UndefOr[Double] = js.undefined
   
-  var start_line: Double = js.native
+  var start_line: Double
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ChecksCreateParamsOutputAnnotations {
   

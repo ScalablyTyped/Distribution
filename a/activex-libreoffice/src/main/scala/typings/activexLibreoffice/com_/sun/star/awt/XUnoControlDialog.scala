@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * our code needs.
   * @since LibreOffice 4.2
   */
-@js.native
 trait XUnoControlDialog
-  extends XControl
+  extends StObject
      with XControlContainer
+     with XControl
      with XWindow
      with XTopWindow
      with XDialog2

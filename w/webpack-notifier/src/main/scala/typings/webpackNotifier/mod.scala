@@ -3,38 +3,38 @@ package typings.webpackNotifier
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-notifier", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
   /** @deprecated use Options */
   type Config = Options
   
-  @js.native
   trait Options extends StObject {
     
-    var alwaysNotify: js.UndefOr[Boolean] = js.native
+    var alwaysNotify: js.UndefOr[Boolean] = js.undefined
     
-    var contentImage: js.UndefOr[String] = js.native
+    var contentImage: js.UndefOr[String] = js.undefined
     
     /**
       * Use emoji in notifications
       * @default false
       */
-    var emoji: js.UndefOr[Boolean] = js.native
+    var emoji: js.UndefOr[Boolean] = js.undefined
     
-    var excludeWarnings: js.UndefOr[Boolean] = js.native
+    var excludeWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var skipFirstNotification: js.UndefOr[Boolean] = js.native
+    var skipFirstNotification: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Options {
     

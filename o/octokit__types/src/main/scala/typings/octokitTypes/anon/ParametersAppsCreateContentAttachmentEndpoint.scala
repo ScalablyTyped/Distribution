@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsCreateContentAttachmentResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsCreateContentAttachmentEndpoint extends StObject {
   
-  var parameters: AppsCreateContentAttachmentEndpoint = js.native
+  var parameters: AppsCreateContentAttachmentEndpoint
   
-  var request: AppsCreateContentAttachmentRequestOptions = js.native
+  var request: AppsCreateContentAttachmentRequestOptions
   
-  var response: OctokitResponse[AppsCreateContentAttachmentResponseData] = js.native
+  var response: OctokitResponse[AppsCreateContentAttachmentResponseData]
 }
 object ParametersAppsCreateContentAttachmentEndpoint {
   

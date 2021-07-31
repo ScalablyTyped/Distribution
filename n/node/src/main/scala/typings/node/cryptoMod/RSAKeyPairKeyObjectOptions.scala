@@ -2,21 +2,19 @@ package typings.node.cryptoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RSAKeyPairKeyObjectOptions extends StObject {
   
   /**
     * Key size in bits
     */
-  var modulusLength: Double = js.native
+  var modulusLength: Double
   
   /**
     * @default 0x10001
     */
-  var publicExponent: js.UndefOr[Double] = js.native
+  var publicExponent: js.UndefOr[Double] = js.undefined
 }
 object RSAKeyPairKeyObjectOptions {
   

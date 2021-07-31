@@ -13,45 +13,43 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slider extends StObject {
   
   /**
     * Determines which button (by index starting from 0) is
     * considered active.
     */
-  var active: Double = js.native
+  var active: Double
   
   /**
     * Sets the background color of the slider grip
     * while dragging.
     */
-  var activebgcolor: Color = js.native
+  var activebgcolor: Color
   
   /**
     * Sets the background color of the slider.
     */
-  var bgcolor: Color = js.native
+  var bgcolor: Color
   
   /**
     * Sets the color of the border enclosing the slider.
     */
-  var bordercolor: Color = js.native
+  var bordercolor: Color
   
   /**
     * Sets the width (in px) of the border enclosing the slider.
     */
-  var borderwidth: Double = js.native
+  var borderwidth: Double
   
-  var currentvalue: typings.plotlyJs.anon.Font = js.native
+  var currentvalue: typings.plotlyJs.anon.Font
   
   /**
     * Sets the font of the slider step labels.
     */
-  var font: Font = js.native
+  var font: Font
   
   /**
     * Sets the length of the slider
@@ -59,72 +57,72 @@ trait Slider extends StObject {
     * That is, the slider's length is this length minus the
     * padding on both ends.
     */
-  var len: Double = js.native
+  var len: Double
   
   /**
     * Determines whether this slider length
     * is set in units of plot *fraction* or in *pixels.
     * Use `len` to set the value.
     */
-  var lenmode: fraction | pixels = js.native
+  var lenmode: fraction | pixels
   
   /**
     * Sets the length in pixels of minor step tick marks
     */
-  var minorticklen: Double = js.native
+  var minorticklen: Double
   
   /**
     * Set the padding of the slider component along each side.
     */
-  var pad: PartialPadding = js.native
+  var pad: PartialPadding
   
-  var steps: js.Array[PartialSliderStep] = js.native
+  var steps: js.Array[PartialSliderStep]
   
   /**
     * Sets the color of the border enclosing the slider.
     */
-  var tickcolor: Color = js.native
+  var tickcolor: Color
   
   /**
     * Sets the length in pixels of step tick marks
     */
-  var ticklen: Double = js.native
+  var ticklen: Double
   
   /**
     * Sets the tick width (in px).
     */
-  var tickwidth: Double = js.native
+  var tickwidth: Double
   
-  var transition: Transition = js.native
+  var transition: Transition
   
   /**
     * Determines whether or not the slider is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * Sets the x position (in normalized coordinates) of the slider.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Sets the slider's horizontal position anchor.
     * This anchor binds the `x` position to the *left*, *center*
     * or *right* of the range selector.
     */
-  var xanchor: auto | left | center | right = js.native
+  var xanchor: auto | left | center | right
   
   /**
     * Sets the y position (in normalized coordinates) of the slider.
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * Sets the slider's vertical position anchor
     * This anchor binds the `y` position to the *top*, *middle*
     * or *bottom* of the range selector.
     */
-  var yanchor: auto | top | middle | bottom = js.native
+  var yanchor: auto | top | middle | bottom
 }
 object Slider {
   

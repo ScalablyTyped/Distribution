@@ -2,42 +2,40 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interior extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Color: XlRgbColor | Double = js.native
+  var Color: XlRgbColor | Double
   
-  var ColorIndex: Double | XlColorIndex = js.native
+  var ColorIndex: Double | XlColorIndex
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Interior_typekey")
-  var ExcelDotInterior_typekey: Interior = js.native
+  var ExcelDotInterior_typekey: Interior
   
-  val Gradient: js.Any = js.native
+  val Gradient: js.Any
   
-  var InvertIfNegative: Boolean = js.native
+  var InvertIfNegative: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Pattern: XlPattern = js.native
+  var Pattern: XlPattern
   
-  var PatternColor: XlRgbColor | Double = js.native
+  var PatternColor: XlRgbColor | Double
   
-  var PatternColorIndex: Double | XlColorIndex = js.native
+  var PatternColorIndex: Double | XlColorIndex
   
-  var PatternThemeColor: XlThemeColor = js.native
+  var PatternThemeColor: XlThemeColor
   
-  var PatternTintAndShade: Double = js.native
+  var PatternTintAndShade: Double
   
-  var ThemeColor: XlThemeColor = js.native
+  var ThemeColor: XlThemeColor
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
 }
 object Interior {
   

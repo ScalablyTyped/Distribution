@@ -7,7 +7,6 @@ import typings.angularStrap.anon.Hide
 import typings.angularStrap.anon.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -16,17 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object popover {
   
-  @js.native
   trait IPopover extends StObject {
     
     @JSName("$promise")
-    var $promise: IPromise[Unit] = js.native
+    var $promise: IPromise[Unit]
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object IPopover {
     
@@ -53,46 +51,45 @@ object popover {
     }
   }
   
-  @js.native
   trait IPopoverOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var contentTemplate: js.UndefOr[String] = js.native
+    var contentTemplate: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* popover */ IPopover, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String | IAugmentedJQuery | Boolean] = js.native
+    var target: js.UndefOr[String | IAugmentedJQuery | Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var viewport: js.UndefOr[String | Padding] = js.native
+    var viewport: js.UndefOr[String | Padding] = js.undefined
   }
   object IPopoverOptions {
     
@@ -221,10 +218,9 @@ object popover {
     }
   }
   
-  @js.native
   trait IPopoverProvider extends StObject {
     
-    var defaults: IPopoverOptions = js.native
+    var defaults: IPopoverOptions
   }
   object IPopoverProvider {
     
@@ -243,7 +239,9 @@ object popover {
   }
   
   @js.native
-  trait IPopoverScope extends IRootScopeService {
+  trait IPopoverScope
+    extends StObject
+       with IRootScopeService {
     
     @JSName("$hide")
     def $hide(): Unit = js.native

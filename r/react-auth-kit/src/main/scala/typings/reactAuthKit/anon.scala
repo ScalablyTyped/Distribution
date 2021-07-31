@@ -3,23 +3,21 @@ package typings.reactAuthKit
 import typings.reactAuthKit.typesMod.signInFunctionParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AuthHeader extends StObject {
     
-    def authHeader(): String | Null = js.native
+    def authHeader(): String | Null
     
-    def authUser(): js.Object | Null = js.native
+    def authUser(): js.Object | Null
     
-    def isAuthenticated(): Boolean = js.native
+    def isAuthenticated(): Boolean
     
-    def signIn(signInConfig: signInFunctionParams): Boolean = js.native
+    def signIn(signInConfig: signInFunctionParams): Boolean
     
-    def signOut(): Boolean = js.native
+    def signOut(): Boolean
   }
   object AuthHeader {
     

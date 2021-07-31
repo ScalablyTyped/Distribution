@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardInformation extends StObject {
   
   /**
     * A complex element containing the credit card billing address information.
     */
-  var address: js.UndefOr[/* Contains address information. */ AddressInformation] = js.native
+  var address: js.UndefOr[/* Contains address information. */ AddressInformation] = js.undefined
   
   /**
     * The credit card number.
     */
-  var cardNumber: js.UndefOr[String] = js.native
+  var cardNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The type of credit card. Valid values are:
@@ -25,27 +23,27 @@ trait CreditCardInformation extends StObject {
     * - `mastercard`
     * - `amex`
     */
-  var cardType: js.UndefOr[String] = js.native
+  var cardType: js.UndefOr[String] = js.undefined
   
   /**
     * The 3 or 4-digit card verification value (CVV) number associated with the credit card. CVV numbers are also referred to as card security codes (CSCs).
     */
-  var cvNumber: js.UndefOr[String] = js.native
+  var cvNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The month that the credit card expires, expressed as a number from 1 to 12.
     */
-  var expirationMonth: js.UndefOr[String] = js.native
+  var expirationMonth: js.UndefOr[String] = js.undefined
   
   /**
     * The year in which the credit card expires, in 4-digit format.
     */
-  var expirationYear: js.UndefOr[String] = js.native
+  var expirationYear: js.UndefOr[String] = js.undefined
   
   /**
     * The exact name as it appears on the credit card.
     */
-  var nameOnCard: js.UndefOr[String] = js.native
+  var nameOnCard: js.UndefOr[String] = js.undefined
 }
 object CreditCardInformation {
   

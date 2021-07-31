@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHostedZoneResponse extends StObject {
   
   /**
     * A complex type that contains the ID, the status, and the date and time of a request to delete a hosted zone.
     */
-  var ChangeInfo: typings.awsSdk.route53Mod.ChangeInfo = js.native
+  var ChangeInfo: typings.awsSdk.route53Mod.ChangeInfo
 }
 object DeleteHostedZoneResponse {
   

@@ -2,16 +2,16 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MissingParams extends Message {
+trait MissingParams
+  extends StObject
+     with Message {
   
   /**
     * A list of the missing parameters.
     */
-  var params: String | js.Array[String] = js.native
+  var params: String | js.Array[String]
 }
 object MissingParams {
   

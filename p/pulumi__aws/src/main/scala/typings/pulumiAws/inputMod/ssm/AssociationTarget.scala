@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationTarget extends StObject {
   
   /**
     * Either `InstanceIds` or `tag:Tag Name` to specify an EC2 tag.
     */
-  var key: Input[String] = js.native
+  var key: Input[String]
   
   /**
     * A list of instance IDs or tag values. AWS currently limits this list size to one value.
     */
-  var values: Input[js.Array[Input[String]]] = js.native
+  var values: Input[js.Array[Input[String]]]
 }
 object AssociationTarget {
   

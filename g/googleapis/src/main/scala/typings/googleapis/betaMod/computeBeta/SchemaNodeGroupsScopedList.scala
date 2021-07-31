@@ -3,22 +3,20 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNodeGroupsScopedList extends StObject {
   
   /**
     * [Output Only] A list of node groups contained in this scope.
     */
-  var nodeGroups: js.UndefOr[js.Array[SchemaNodeGroup]] = js.native
+  var nodeGroups: js.UndefOr[js.Array[SchemaNodeGroup]] = js.undefined
   
   /**
     * [Output Only] An informational warning that appears when the nodeGroup
     * list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaNodeGroupsScopedList {
   

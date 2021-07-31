@@ -2,15 +2,13 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueuesResponse extends StObject {
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var queues: js.Array[Queue] = js.native
+  var queues: js.Array[Queue]
 }
 object ListQueuesResponse {
   

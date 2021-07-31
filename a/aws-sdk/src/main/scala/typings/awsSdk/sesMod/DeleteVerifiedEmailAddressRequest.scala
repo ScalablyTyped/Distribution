@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVerifiedEmailAddressRequest extends StObject {
   
   /**
     * An email address to be removed from the list of verified addresses.
     */
-  var EmailAddress: Address = js.native
+  var EmailAddress: Address
 }
 object DeleteVerifiedEmailAddressRequest {
   

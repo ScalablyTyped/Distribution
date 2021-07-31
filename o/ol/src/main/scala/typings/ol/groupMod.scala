@@ -6,7 +6,6 @@ import typings.ol.objectMod.ObjectEvent
 import typings.ol.olStrings.changeColonlayers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupMod {
@@ -43,28 +42,27 @@ object groupMod {
     def un_changelayers(`type`: changeColonlayers, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
     var layers: js.UndefOr[
         js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default]
-      ] = js.native
+      ] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

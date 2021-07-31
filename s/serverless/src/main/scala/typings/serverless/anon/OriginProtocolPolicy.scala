@@ -2,13 +2,11 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginProtocolPolicy extends StObject {
   
-  var OriginProtocolPolicy: String = js.native
+  var OriginProtocolPolicy: String
 }
 object OriginProtocolPolicy {
   

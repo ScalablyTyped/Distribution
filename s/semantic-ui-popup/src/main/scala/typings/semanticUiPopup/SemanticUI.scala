@@ -145,7 +145,6 @@ import typings.semanticUiPopup.semanticUiPopupStrings.variation
 import typings.semanticUiPopup.semanticUiPopupStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -210,138 +209,142 @@ object SemanticUI {
       * Adjusts popup when content size changes (only necessary for centered popups)
       */
     def apply(behavior: reposition): JQuery = js.native
-    def apply(behavior: setting, name: `inline`, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: `inline`, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: addTouchEvents, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: `inline`, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: addTouchEvents, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: boundary, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: addTouchEvents, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: boundary, value: String): JQuery = js.native
+    def apply(behavior: setting, name: boundary, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: boundary, value: JQuery): JQuery = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: content, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: closable, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: content, value: String): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: content, value: Unit): String = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: delay, value: Unit): DelaySettings = js.native
     def apply(behavior: setting, name: delay, value: DelaySettings): JQuery = js.native
-    def apply(behavior: setting, name: distanceAway, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: distanceAway, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: distanceAway, value: Unit): Double = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: hideOnScroll, value: js.UndefOr[scala.Nothing]): auto | `false` = js.native
+    def apply(behavior: setting, name: exclusive, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: hideOnScroll, value: Unit): auto | `false` = js.native
     def apply(behavior: setting, name: hideOnScroll, value: `false`): JQuery = js.native
     def apply(behavior: setting, name: hideOnScroll, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: hoverable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: hoverable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: html, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: hoverable, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: html, value: String): JQuery = js.native
+    def apply(behavior: setting, name: html, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: html, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: jitter, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: jitter, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: lastResort, value: js.UndefOr[scala.Nothing]): Boolean | String = js.native
+    def apply(behavior: setting, name: jitter, value: Unit): Double = js.native
     def apply(behavior: setting, name: lastResort, value: String): JQuery = js.native
     def apply(behavior: setting, name: lastResort, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: maxSearchDepth, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: lastResort, value: Unit): Boolean | String = js.native
     def apply(behavior: setting, name: maxSearchDepth, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: maxSearchDepth, value: Unit): Double = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
     def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: movePopup, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: movePopup, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: movePopup, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: onCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
     def apply(
       behavior: setting,
       name: onCreate,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onCreate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onHidden,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
+    def apply(behavior: setting, name: onHidden, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onHide,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
     def apply(
       behavior: setting,
       name: onRemove,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
+    def apply(behavior: setting, name: onRemove, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onShow,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onUnplaceable, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
     def apply(
       behavior: setting,
       name: onUnplaceable,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onUnplaceable, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onVisible,
       value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): focus | click | hover | manual = js.native
+    def apply(behavior: setting, name: onVisible, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: on, value: Unit): focus | click | hover | manual = js.native
     def apply(behavior: setting, name: on, value: click): JQuery = js.native
     def apply(behavior: setting, name: on, value: focus): JQuery = js.native
     def apply(behavior: setting, name: on, value: hover): JQuery = js.native
     def apply(behavior: setting, name: on, value: manual): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: popup, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: popup, value: String): JQuery = js.native
+    def apply(behavior: setting, name: popup, value: Unit): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: popup, value: JQuery): JQuery = js.native
     def apply(behavior: setting, name: popup, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: position, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: position, value: String): JQuery = js.native
-    def apply(behavior: setting, name: prefer, value: js.UndefOr[scala.Nothing]): adjacent | opposite = js.native
+    def apply(behavior: setting, name: position, value: Unit): String = js.native
+    def apply(behavior: setting, name: prefer, value: Unit): adjacent | opposite = js.native
     def apply(behavior: setting, name: prefer, value: adjacent): JQuery = js.native
     def apply(behavior: setting, name: prefer, value: opposite): JQuery = js.native
-    def apply(behavior: setting, name: preserve, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: preserve, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: scrollContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: preserve, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: scrollContext, value: String): JQuery = js.native
+    def apply(behavior: setting, name: scrollContext, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: scrollContext, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
     def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: setFluidWidth, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: setFluidWidth, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: setFluidWidth, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: target, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: target, value: String): JQuery = js.native
+    def apply(behavior: setting, name: target, value: Unit): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: target, value: JQuery): JQuery = js.native
     def apply(behavior: setting, name: target, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: title, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: title, value: String): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: title, value: Unit): String = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: variation, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: transition, value: Unit): String = js.native
     def apply(behavior: setting, name: variation, value: String): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: variation, value: Unit): String = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: PopupSettings): JQuery = js.native
     /**
       * Shows popup
@@ -359,33 +362,32 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
         
         /**
           * @default 'ui popup'
           */
-        var popup: String = js.native
+        var popup: String
         
         /**
           * @since 2.2.11
           */
-        var popupVisible: String = js.native
+        var popupVisible: String
         
         /**
           * @default 'top left center bottom right'
           */
-        var position: String = js.native
+        var position: String
         
         /**
           * @default 'visible'
           */
-        var visible: String = js.native
+        var visible: String
       }
       object Impl {
         
@@ -415,18 +417,17 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplloading | PickImplpopupPopup | PickImplposition | PickImplvisible | PickImplpopupVisible) with PartialPickImplkeyofImplLoading
+      type Param = (PickImplloading | PickImplpopupPopup | PickImplposition | PickImplvisible | PickImplpopupVisible) & PartialPickImplkeyofImplLoading
     }
     type ClassNameSettings = Param
     
     object DelaySettings {
       
-      @js.native
       trait Impl extends StObject {
         
-        var hide: Double = js.native
+        var hide: Double
         
-        var show: Double = js.native
+        var show: Double
       }
       object Impl {
         
@@ -447,39 +448,38 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplshow | PickImplhide) with PartialPickImplkeyofImplHide
+      type Param = (PickImplshow | PickImplhide) & PartialPickImplkeyofImplHide
     }
     type DelaySettings = typings.semanticUiPopup.SemanticUI.Popup.DelaySettings.Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'Popup does not fit within the boundaries of the viewport'
           */
-        var cannotPlace: String = js.native
+        var cannotPlace: String
         
         /**
           * @default 'The position you specified is not a valid position'
           */
-        var invalidPosition: String = js.native
+        var invalidPosition: String
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'This module requires ui transitions <https: github.com="" semantic-org="" ui-transition="">'
           */
-        var noTransition: String = js.native
+        var noTransition: String
         
         /**
           * @default 'The target or popup you specified does not exist on the page'
           */
-        var notFound: String = js.native
+        var notFound: String
       }
       object Impl {
         
@@ -515,44 +515,43 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplinvalidPosition | PickImplcannotPlace | PickImplmethod | PickImplnoTransition | PickImplnotFound) with PartialPickImplkeyofImplCannotPlace
+      type Param = (PickImplinvalidPosition | PickImplcannotPlace | PickImplmethod | PickImplnoTransition | PickImplnotFound) & PartialPickImplkeyofImplCannotPlace
     }
     type ErrorSettings = typings.semanticUiPopup.SemanticUI.Popup.ErrorSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'content'
           */
-        var content: String = js.native
+        var content: String
         
         /**
           * @default 'html'
           */
-        var html: String = js.native
+        var html: String
         
         /**
           * @default 'offset'
           */
-        var offset: String = js.native
+        var offset: String
         
         /**
           * @default 'position'
           */
-        var position: String = js.native
+        var position: String
         
         /**
           * @default 'title'
           */
-        var title: String = js.native
+        var title: String
         
         /**
           * @default 'variation'
           */
-        var variation: String = js.native
+        var variation: String
       }
       object Impl {
         
@@ -585,31 +584,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplcontent | PickImplhtmlHtml | PickImploffsetOffset | PickImplposition | PickImpltitle | PickImplvariation) with PartialPickImplkeyofImplContent
+      type Param = (PickImplcontent | PickImplhtmlHtml | PickImploffsetOffset | PickImplposition | PickImpltitle | PickImplvariation) & PartialPickImplkeyofImplContent
     }
     type MetadataSettings = typings.semanticUiPopup.SemanticUI.Popup.MetadataSettings.Param
     
     /* Inlined semantic-ui-popup.SemanticUI.Popup.SelectorSettings.Param */
-    @js.native
     trait SelectorSettings extends StObject {
       
-      var popup: String with js.UndefOr[String] = js.native
+      var popup: String & js.UndefOr[String]
     }
     object SelectorSettings {
       
       @scala.inline
-      def apply(popup: String with js.UndefOr[String]): SelectorSettings = {
+      def apply(popup: String & js.UndefOr[String]): SelectorSettings = {
         val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
         __obj.asInstanceOf[SelectorSettings]
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.ui.popup'
           */
-        var popup: String = js.native
+        var popup: String
       }
       object Impl {
         
@@ -628,15 +625,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl, 'popup'> & std.Partial<std.Pick<semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl, keyof semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var popup: String with js.UndefOr[String] = js.native
+        var popup: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(popup: String with js.UndefOr[String]): typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param = {
+        def apply(popup: String & js.UndefOr[String]): typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param = {
           val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param]
         }
@@ -645,7 +641,7 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setPopup(value: String with js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+          def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
         }
       }
       
@@ -653,84 +649,83 @@ object SemanticUI {
       implicit class SelectorSettingsMutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setPopup(value: String with js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+        def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object PopupSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * When using on: 'hover' whether touchstart events should be added to allow the popup to be triggered
         */
-      var addTouchEvents: Boolean = js.native
+      var addTouchEvents: Boolean
       
       /**
         * When the popup surpasses the boundary of this element, it will attempt to find another display position.
         */
-      var boundary: String | JQuery = js.native
+      var boundary: String | JQuery
       
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * When using on: 'click' specifies whether clicking the page should close the popup
         *
         * @default true
         */
-      var closable: Boolean = js.native
+      var closable: Boolean
       
       /**
         * Content to display
         */
-      var content: String = js.native
+      var content: String
       
       /**
         * Selector or jquery object specifying where the popup should be created.
         *
         * @default 'body'
         */
-      var context: String | JQuery = js.native
+      var context: String | JQuery
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Delay in milliseconds before showing or hiding a popup on hover or focus
         */
-      var delay: DelaySettings = js.native
+      var delay: DelaySettings
       
       /**
         * Offset for distance of popup from element
         *
         * @default 0
         */
-      var distanceAway: Double = js.native
+      var distanceAway: Double
       
       /**
         * Duration of animation events
         *
         * @default 200
         */
-      var duration: Double = js.native
+      var duration: Double
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether all other popups should be hidden when this popup is opened
         *
         * @default false
         */
-      var exclusive: Boolean = js.native
+      var exclusive: Boolean
       
       /**
         * Whether popup should hide on scroll or touchmove, auto only hides for popups without on: 'click'.
@@ -738,19 +733,19 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var hideOnScroll: auto | `false` = js.native
+      var hideOnScroll: auto | `false`
       
       /**
         * Whether popup should not close on hover (useful for popup navigation menus)
         *
         * @default false
         */
-      var hoverable: Boolean = js.native
+      var hoverable: Boolean
       
       /**
         * HTML content to display instead of preformatted title and content
         */
-      var html: String | JQuery = js.native
+      var html: String | JQuery
       
       /**
         * If a popup is inline it will be created next to current element, allowing for local css rules to apply.
@@ -759,7 +754,7 @@ object SemanticUI {
         *
         * @default false
         */
-      var `inline`: Boolean = js.native
+      var `inline`: Boolean
       
       /**
         * Number of pixels that a popup is allowed to appear outside the boundaries of its context.
@@ -767,7 +762,7 @@ object SemanticUI {
         *
         * @default 2
         */
-      var jitter: Double = js.native
+      var jitter: Double
       
       /**
         * When set to false, a popup will not appear and produce an error message if it cannot entirely fit on page.
@@ -776,19 +771,19 @@ object SemanticUI {
         *
         * @default false
         */
-      var lastResort: Boolean | String = js.native
+      var lastResort: Boolean | String
       
       /**
         * Number of iterations before giving up search for popup position when a popup cannot fit on screen
         *
         * @default 10
         */
-      var maxSearchDepth: Double = js.native
+      var maxSearchDepth: Double
       
       /**
         * HTML Data attributes used to store data
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       /**
         * Whether to move popup to same offset container as target element when popup already exists on the page.
@@ -796,14 +791,14 @@ object SemanticUI {
         *
         * @default true
         */
-      var movePopup: Boolean = js.native
+      var movePopup: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -811,70 +806,70 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Whether popup should attach mutationObservers to automatically run destroy when the element is removed from the page's DOM.
         *
         * @default true
         */
-      var observeChanges: Boolean = js.native
+      var observeChanges: Boolean
       
       /**
         * Offset in pixels from calculated position
         *
         * @default 0
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * Event used to trigger popup. Can be either focus, click, hover, or manual. Manual popups must be triggered with $('.element').popup('show');
         *
         * @default 'hover'
         */
-      var on: focus | click | hover | manual = js.native
+      var on: focus | click | hover | manual
       
       // endregion
       // region Callbacks
       /**
         * Callback on popup element creation, with created popup
         */
-      def onCreate($module: JQuery): Unit = js.native
+      def onCreate($module: JQuery): Unit
       
       /**
         * Callback after popup is hidden
         */
-      def onHidden($module: JQuery): Unit = js.native
+      def onHidden($module: JQuery): Unit
       
       /**
         * Callback before popup is hidden. Returning false from this callback will cancel the popup from hiding.
         */
-      def onHide($module: JQuery): `false` | Unit = js.native
+      def onHide($module: JQuery): `false` | Unit
       
       /**
         * Callback immediately before Popup is removed from DOM
         */
-      def onRemove($module: JQuery): Unit = js.native
+      def onRemove($module: JQuery): Unit
       
       /**
         * Callback before popup is shown. Returning false from this callback will cancel the popup from showing.
         */
-      def onShow($module: JQuery): `false` | Unit = js.native
+      def onShow($module: JQuery): `false` | Unit
       
       /**
         * Callback after popup cannot be placed on screen
         */
-      def onUnplaceable($module: JQuery): Unit = js.native
+      def onUnplaceable($module: JQuery): Unit
       
       /**
         * Callback after popup is shown
         */
-      def onVisible($module: JQuery): Unit = js.native
+      def onVisible($module: JQuery): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // region Popup Settings
       /**
@@ -882,64 +877,64 @@ object SemanticUI {
         *
         * @default false
         */
-      var popup: `false` | String | JQuery = js.native
+      var popup: `false` | String | JQuery
       
       /**
         * Position that the popup should appear
         *
         * @default 'top left'
         */
-      var position: String = js.native
+      var position: String
       
       /**
         * Can be set to adjacent or opposite to prefer adjacent or opposite position if popup cannot fit on screen
         *
         * @default 'adjacent'
         */
-      var prefer: adjacent | opposite = js.native
+      var prefer: adjacent | opposite
       
       /**
         * Whether popup contents should be preserved in the page after being hidden, allowing it to re-appear slightly faster on subsequent loads.
         *
         * @default false
         */
-      var preserve: Boolean = js.native
+      var preserve: Boolean
       
       /**
         * Will automatically hide a popup on scroll event in this context
         */
-      var scrollContext: String | JQuery = js.native
+      var scrollContext: String | JQuery
       
       // endregion
       // region DOM Settings
       /**
         * DOM Selectors used internally
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Whether popup should set fluid popup variation width on load to avoid width: 100% including padding
         *
         * @default true
         */
-      var setFluidWidth: Boolean = js.native
+      var setFluidWidth: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * If a selector or jQuery object is specified this allows the popup to be positioned relative to that element.
         *
         * @default false
         */
-      var target: `false` | String | JQuery = js.native
+      var target: `false` | String | JQuery
       
       /**
         * Title to display alongside content
         */
-      var title: String = js.native
+      var title: String
       
       /**
         * Named transition to use when animating menu in and out. Fade and slide down are available without including ui transitions
@@ -947,19 +942,19 @@ object SemanticUI {
         * @default 'slide down'
         * @see {@link http://semantic-ui.com/modules/transition.html}
         */
-      var transition: String = js.native
+      var transition: String
       
       // endregion
       // region Content Settings
       /**
         * Popup variation to use, can use multiple variations with a space delimiter
         */
-      var variation: String = js.native
+      var variation: String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -1164,7 +1159,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplpopup | PickImplexclusive | PickImplmovePopup | PickImplobserveChanges | PickImplboundary | PickImplcontext | PickImplscrollContext | PickImpljitter | PickImplposition | PickImplinline | PickImplpreserve | PickImplprefer | PickImpllastResort | PickImplon | PickImpldelay | PickImpltransition | PickImplduration | PickImplsetFluidWidth | PickImplhoverable | PickImplclosable | PickImpladdTouchEvents | PickImplhideOnScroll | PickImpltarget | PickImpldistanceAway | PickImploffset | PickImplmaxSearchDepth | PickImplonCreate | PickImplonRemove | PickImplonShow | PickImplonVisible | PickImplonHide | PickImplonHidden | PickImplonUnplaceable | PickImplvariation | PickImplcontent | PickImpltitle | PickImplhtml | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplpopup | PickImplexclusive | PickImplmovePopup | PickImplobserveChanges | PickImplboundary | PickImplcontext | PickImplscrollContext | PickImpljitter | PickImplposition | PickImplinline | PickImplpreserve | PickImplprefer | PickImpllastResort | PickImplon | PickImpldelay | PickImpltransition | PickImplduration | PickImplsetFluidWidth | PickImplhoverable | PickImplclosable | PickImpladdTouchEvents | PickImplhideOnScroll | PickImpltarget | PickImpldistanceAway | PickImploffset | PickImplmaxSearchDepth | PickImplonCreate | PickImplonRemove | PickImplonShow | PickImplonVisible | PickImplonHide | PickImplonHidden | PickImplonUnplaceable | PickImplvariation | PickImplcontent | PickImpltitle | PickImplhtml | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/popup.html#/settings}

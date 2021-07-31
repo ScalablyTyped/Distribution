@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsRelationship. */
-@js.native
 trait QueryRelationsRelationship extends StObject {
   
   /** Information about the relationship. */
-  var arguments: js.UndefOr[js.Array[QueryRelationsArgument]] = js.native
+  var arguments: js.UndefOr[js.Array[QueryRelationsArgument]] = js.undefined
   
   /** List of different evidentiary items to support the result. */
-  var evidence: js.UndefOr[js.Array[QueryEvidence]] = js.native
+  var evidence: js.UndefOr[js.Array[QueryEvidence]] = js.undefined
   
   /** The number of times the relationship is mentioned. */
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
   /** The identified relationship type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryRelationsRelationship {
   

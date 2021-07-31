@@ -2,33 +2,33 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepper {
   
-  @js.native
-  trait Step extends Class {
+  trait Step
+    extends StObject
+       with Class {
     
-    def deselect(): Unit = js.native
+    def deselect(): Unit
     
-    def enable(value: Boolean): Unit = js.native
+    def enable(value: Boolean): Unit
     
-    def getEnabled(): Boolean = js.native
+    def getEnabled(): Boolean
     
-    def getIndex(): Double = js.native
+    def getIndex(): Double
     
-    def getSelectable(): Boolean = js.native
+    def getSelectable(): Boolean
     
-    def getSelected(): Boolean = js.native
+    def getSelected(): Boolean
     
-    var options: StepOptions = js.native
+    var options: StepOptions
     
-    def select(): Unit = js.native
+    def select(): Unit
     
-    def setPrevious(value: Boolean): Unit = js.native
+    def setPrevious(value: Boolean): Unit
     
-    def setValid(value: Boolean): Unit = js.native
+    def setValid(value: Boolean): Unit
   }
   object Step {
     
@@ -84,36 +84,35 @@ object stepper {
     }
   }
   
-  @js.native
   trait StepOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var iconTemplate: js.UndefOr[String | js.Function] = js.native
+    var iconTemplate: js.UndefOr[String | js.Function] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var indicatorVisible: js.UndefOr[Boolean] = js.native
+    var indicatorVisible: js.UndefOr[Boolean] = js.undefined
     
-    var isFirstStep: js.UndefOr[Boolean] = js.native
+    var isFirstStep: js.UndefOr[Boolean] = js.undefined
     
-    var isLastStep: js.UndefOr[Boolean] = js.native
+    var isLastStep: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var labelVisible: js.UndefOr[Boolean] = js.native
+    var labelVisible: js.UndefOr[Boolean] = js.undefined
     
-    var previous: js.UndefOr[Boolean] = js.native
+    var previous: js.UndefOr[Boolean] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var successIcon: js.UndefOr[String] = js.native
+    var successIcon: js.UndefOr[String] = js.undefined
   }
   object StepOptions {
     

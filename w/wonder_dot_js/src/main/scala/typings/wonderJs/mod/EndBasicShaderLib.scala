@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "EndBasicShaderLib")
 @js.native
 class EndBasicShaderLib ()
   extends typings.wonderJs.endBasicShaderLibMod.EndBasicShaderLib
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "EndBasicShaderLib")
-@js.native
-object EndBasicShaderLib extends js.Object {
-  def create(): typings.wonderJs.endBasicShaderLibMod.EndBasicShaderLib = js.native
+object EndBasicShaderLib {
+  
+  @JSImport("wonder.js/dist/es2015", "EndBasicShaderLib")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): typings.wonderJs.endBasicShaderLibMod.EndBasicShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.endBasicShaderLibMod.EndBasicShaderLib]
 }
-

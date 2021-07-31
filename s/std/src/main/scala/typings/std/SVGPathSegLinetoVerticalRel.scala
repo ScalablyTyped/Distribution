@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGPathSegLinetoVerticalRel extends SVGPathSeg {
+trait SVGPathSegLinetoVerticalRel
+  extends StObject
+     with SVGPathSeg {
   
-  var y: Double = js.native
+  var y: Double
 }
 object SVGPathSegLinetoVerticalRel {
   

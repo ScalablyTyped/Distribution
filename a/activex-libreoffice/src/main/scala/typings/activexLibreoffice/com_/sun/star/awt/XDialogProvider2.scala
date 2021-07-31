@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides dialogs implementing the {@link com.sun.star.awt.XDialog} interface. */
-@js.native
-trait XDialogProvider2 extends XDialogProvider {
+trait XDialogProvider2
+  extends StObject
+     with XDialogProvider {
   
   /**
     * creates a dialog for the given URL, accepting additional creation parameters
@@ -21,7 +21,7 @@ trait XDialogProvider2 extends XDialogProvider {
     * dialog.**EventHandler** - specifies a component handling events in the dialog. See {@link createDialogWithHandler()} for a detailed specification of
     * dialog event handling.
     */
-  def createDialogWithArguments(URL: String, Arguments: SeqEquiv[NamedValue]): XDialog = js.native
+  def createDialogWithArguments(URL: String, Arguments: SeqEquiv[NamedValue]): XDialog
   
   /**
     * creates a dialog for the given URL accepting an Interface used to handle dialog events.
@@ -31,7 +31,7 @@ trait XDialogProvider2 extends XDialogProvider {
     * @see com.sun.star.awt.XDialogEventHandler
     * @throws com::sun::star::lang::IllegalArgumentException if no dialog for the given URL is found or if the URL is invalid or xHandler is null.
     */
-  def createDialogWithHandler(URL: String, xHandler: XInterface): XDialog = js.native
+  def createDialogWithHandler(URL: String, xHandler: XInterface): XDialog
 }
 object XDialogProvider2 {
   

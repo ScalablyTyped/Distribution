@@ -9,7 +9,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -83,12 +82,11 @@ object mod {
   
   type Arbiter_[T /* <: Contact */] = js.Function2[/* incumbent */ T, /* candidate */ T, T]
   
-  @js.native
   trait Contact extends StObject {
     
-    var id: Uint8Array = js.native
+    var id: Uint8Array
     
-    var vectorClock: Double = js.native
+    var vectorClock: Double
   }
   object Contact {
     
@@ -197,16 +195,15 @@ object mod {
     def toArray(): js.Array[T] = js.native
   }
   
-  @js.native
   trait Node[T /* <: Contact */] extends StObject {
     
-    var contacts: js.Array[T] = js.native
+    var contacts: js.Array[T]
     
-    var dontSplit: Boolean = js.native
+    var dontSplit: Boolean
     
-    var left: T = js.native
+    var left: T
     
-    var right: T = js.native
+    var right: T
   }
   object Node {
     
@@ -217,7 +214,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[_], T /* <: Contact */] (val x: Self with Node[T]) extends AnyVal {
+    implicit class NodeMutableBuilder[Self <: Node[?], T /* <: Contact */] (val x: Self & Node[T]) extends AnyVal {
       
       @scala.inline
       def setContacts(value: js.Array[T]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])

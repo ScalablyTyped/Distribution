@@ -11,8 +11,8 @@ RSocket WebSocket client for use in browser environments
 | Full name          | rsocket-websocket-client |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 5 |
-| # downloads        | 439457 |
+| # dependents       | 7 |
+| # downloads        | 584954 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchReadRequest extends StObject {
   
   /**
     * Represents the manner and timing in which the successful write or update of an object is reflected in a subsequent read operation of that same object.
     */
-  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.native
+  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * A list of operations that are part of the batch.
     */
-  var Operations: BatchReadOperationList = js.native
+  var Operations: BatchReadOperationList
 }
 object BatchReadRequest {
   

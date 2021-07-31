@@ -117,272 +117,271 @@ import typings.rtpParser.rtpParserStrings.reserved
 import typings.rtpParser.rtpParserStrings.unassigned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rtp-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rtp-parser", "FIXED_HEADER_LENGTH")
   @js.native
   val FIXED_HEADER_LENGTH: `12` = js.native
   
-  @JSImport("rtp-parser", "parseRtpPacket")
-  @js.native
-  def parseRtpPacket(buf: Buffer): ParsedRTPPacket = js.native
+  @scala.inline
+  def parseRtpPacket(buf: Buffer): ParsedRTPPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPacket")(buf.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPPacket]
   
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
+  @scala.inline
   def parseRtpPayloadType(
     payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ js.Any
-  ): `1` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType(payloadType: Double): ParsedRTPType = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_0(payloadType: `0`): `19` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_1(payloadType: typings.rtpParser.rtpParserNumbers.`1`): `18` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_100(payloadType: `100`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_101(payloadType: `101`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_102(payloadType: `102`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_103(payloadType: `103`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_104(payloadType: `104`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_105(payloadType: `105`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_106(payloadType: `106`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_107(payloadType: `107`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_108(payloadType: `108`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_109(payloadType: `109`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_11(payloadType: `11`): `9` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_110(payloadType: `110`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_111(payloadType: `111`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_112(payloadType: `112`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_113(payloadType: `113`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_114(payloadType: `114`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_115(payloadType: `115`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_116(payloadType: `116`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_117(payloadType: `117`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_118(payloadType: `118`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_119(payloadType: `119`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_12(payloadType: `12`): `8` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_120(payloadType: `120`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_121(payloadType: `121`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_122(payloadType: `122`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_123(payloadType: `123`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_124(payloadType: `124`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_125(payloadType: `125`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_126(payloadType: `126`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_127(payloadType: `127`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_13(payloadType: `13`): `7` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_14(payloadType: `14`): `6` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_15(payloadType: `15`): ChannelsClockRateMediaTypeName = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_16(payloadType: `16`): ChannelsClockRateMediaType = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_19(payloadType: typings.rtpParser.rtpParserNumbers.`19`): `18` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_2(payloadType: `2`): `18` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_20(payloadType: `20`): `5` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_21(payloadType: `21`): `5` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_22(payloadType: `22`): `5` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_23(payloadType: `23`): `5` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_24(payloadType: `24`): `4` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_25(payloadType: `25`): `3` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_26(payloadType: `26`): typings.rtpParser.anon.`2` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_27(payloadType: `27`): `4` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_29(payloadType: `29`): `4` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_30(payloadType: `30`): `4` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_32(payloadType: `32`): ClockRateMediaType = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_33(payloadType: `33`): MediaType = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_34(payloadType: `34`): ClockRate = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_72(payloadType: `72`): typings.rtpParser.anon.`0` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_73(payloadType: `73`): typings.rtpParser.anon.`0` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_74(payloadType: `74`): typings.rtpParser.anon.`0` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_75(payloadType: `75`): typings.rtpParser.anon.`0` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_76(payloadType: `76`): typings.rtpParser.anon.`0` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_96(payloadType: `96`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_97(payloadType: `97`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_98(payloadType: `98`): Name = js.native
-  @JSImport("rtp-parser", "parseRtpPayloadType")
-  @js.native
-  def parseRtpPayloadType_99(payloadType: `99`): Name = js.native
+  ): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`1`]
+  @scala.inline
+  def parseRtpPayloadType(payloadType: Double): ParsedRTPType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPType]
+  
+  @scala.inline
+  def parseRtpPayloadType_0(payloadType: `0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
+  
+  @scala.inline
+  def parseRtpPayloadType_1(payloadType: typings.rtpParser.rtpParserNumbers.`1`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  
+  @scala.inline
+  def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`10`]
+  
+  @scala.inline
+  def parseRtpPayloadType_100(payloadType: `100`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_101(payloadType: `101`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_102(payloadType: `102`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_103(payloadType: `103`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_104(payloadType: `104`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_105(payloadType: `105`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_106(payloadType: `106`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_107(payloadType: `107`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_108(payloadType: `108`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_109(payloadType: `109`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_11(payloadType: `11`): `9` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`9`]
+  
+  @scala.inline
+  def parseRtpPayloadType_110(payloadType: `110`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_111(payloadType: `111`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_112(payloadType: `112`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_113(payloadType: `113`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_114(payloadType: `114`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_115(payloadType: `115`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_116(payloadType: `116`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_117(payloadType: `117`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_118(payloadType: `118`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_119(payloadType: `119`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_12(payloadType: `12`): `8` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`8`]
+  
+  @scala.inline
+  def parseRtpPayloadType_120(payloadType: `120`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_121(payloadType: `121`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_122(payloadType: `122`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_123(payloadType: `123`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_124(payloadType: `124`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_125(payloadType: `125`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_126(payloadType: `126`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_127(payloadType: `127`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_13(payloadType: `13`): `7` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`7`]
+  
+  @scala.inline
+  def parseRtpPayloadType_14(payloadType: `14`): `6` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`6`]
+  
+  @scala.inline
+  def parseRtpPayloadType_15(payloadType: `15`): ChannelsClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaTypeName]
+  
+  @scala.inline
+  def parseRtpPayloadType_16(payloadType: `16`): ChannelsClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRateMediaType]
+  
+  @scala.inline
+  def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRate]
+  
+  @scala.inline
+  def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
+  
+  @scala.inline
+  def parseRtpPayloadType_19(payloadType: typings.rtpParser.rtpParserNumbers.`19`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  
+  @scala.inline
+  def parseRtpPayloadType_2(payloadType: `2`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  
+  @scala.inline
+  def parseRtpPayloadType_20(payloadType: `20`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  
+  @scala.inline
+  def parseRtpPayloadType_21(payloadType: `21`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  
+  @scala.inline
+  def parseRtpPayloadType_22(payloadType: `22`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  
+  @scala.inline
+  def parseRtpPayloadType_23(payloadType: `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
+  
+  @scala.inline
+  def parseRtpPayloadType_24(payloadType: `24`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  
+  @scala.inline
+  def parseRtpPayloadType_25(payloadType: `25`): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`3`]
+  
+  @scala.inline
+  def parseRtpPayloadType_26(payloadType: `26`): typings.rtpParser.anon.`2` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`2`]
+  
+  @scala.inline
+  def parseRtpPayloadType_27(payloadType: `27`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  
+  @scala.inline
+  def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaTypeName]
+  
+  @scala.inline
+  def parseRtpPayloadType_29(payloadType: `29`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  
+  @scala.inline
+  def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
+  
+  @scala.inline
+  def parseRtpPayloadType_30(payloadType: `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
+  
+  @scala.inline
+  def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaTypeName]
+  
+  @scala.inline
+  def parseRtpPayloadType_32(payloadType: `32`): ClockRateMediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaType]
+  
+  @scala.inline
+  def parseRtpPayloadType_33(payloadType: `33`): MediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaType]
+  
+  @scala.inline
+  def parseRtpPayloadType_34(payloadType: `34`): ClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRate]
+  
+  @scala.inline
+  def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
+  
+  @scala.inline
+  def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
+  
+  @scala.inline
+  def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
+  
+  @scala.inline
+  def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
+  
+  @scala.inline
+  def parseRtpPayloadType_72(payloadType: `72`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  
+  @scala.inline
+  def parseRtpPayloadType_73(payloadType: `73`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  
+  @scala.inline
+  def parseRtpPayloadType_74(payloadType: `74`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  
+  @scala.inline
+  def parseRtpPayloadType_75(payloadType: `75`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  
+  @scala.inline
+  def parseRtpPayloadType_76(payloadType: `76`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
+  
+  @scala.inline
+  def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
+  
+  @scala.inline
+  def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
+  
+  @scala.inline
+  def parseRtpPayloadType_96(payloadType: `96`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_97(payloadType: `97`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_98(payloadType: `98`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
+  @scala.inline
+  def parseRtpPayloadType_99(payloadType: `99`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   @JSImport("rtp-parser", "payloadTypesHash")
   @js.native
   val payloadTypesHash: PayloadTypesHash_ = js.native
   
-  @js.native
   trait ParsedRTPPacket extends StObject {
     
-    var csrc: js.Array[Double] = js.native
+    var csrc: js.Array[Double]
     
-    var csrcCount: Double = js.native
+    var csrcCount: Double
     
-    var extension: Double = js.native
+    var `extension`: Double
     
-    var marker: Double = js.native
+    var marker: Double
     
-    var padding: Double = js.native
+    var padding: Double
     
-    var payload: Buffer = js.native
+    var payload: Buffer
     
-    var payloadType: Double = js.native
+    var payloadType: Double
     
-    var sequenceNumber: Double = js.native
+    var sequenceNumber: Double
     
-    var ssrc: Double = js.native
+    var ssrc: Double
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object ParsedRTPPacket {
     
@@ -390,7 +389,7 @@ object mod {
     def apply(
       csrc: js.Array[Double],
       csrcCount: Double,
-      extension: Double,
+      `extension`: Double,
       marker: Double,
       padding: Double,
       payload: Buffer,
@@ -400,7 +399,8 @@ object mod {
       timestamp: Double,
       version: Double
     ): ParsedRTPPacket = {
-      val __obj = js.Dynamic.literal(csrc = csrc.asInstanceOf[js.Any], csrcCount = csrcCount.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], ssrc = ssrc.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(csrc = csrc.asInstanceOf[js.Any], csrcCount = csrcCount.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], ssrc = ssrc.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedRTPPacket]
     }
     
@@ -445,16 +445,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedRTPType extends StObject {
     
-    var channels: js.UndefOr[typings.rtpParser.rtpParserNumbers.`1` | `2`] = js.native
+    var channels: js.UndefOr[typings.rtpParser.rtpParserNumbers.`1` | `2`] = js.undefined
     
-    var clockRate: js.UndefOr[`8000` | `16000` | `44100` | `90000` | `11025` | `22050`] = js.native
+    var clockRate: js.UndefOr[`8000` | `16000` | `44100` | `90000` | `11025` | `22050`] = js.undefined
     
-    var mediaType: js.UndefOr[A | AV | V] = js.native
+    var mediaType: js.UndefOr[A | AV | V] = js.undefined
     
-    var name: PCMU | GSM | G723 | DVI4 | LPC | PCMA | G722 | L16 | QCELP | CN | MPA | G728 | G729 | CelB | JPEG | nv | H261 | MPV | MP2T | H263 | reserved | unassigned | dynamic = js.native
+    var name: PCMU | GSM | G723 | DVI4 | LPC | PCMA | G722 | L16 | QCELP | CN | MPA | G728 | G729 | CelB | JPEG | nv | H261 | MPV | MP2T | H263 | reserved | unassigned | dynamic
   }
   object ParsedRTPType {
     
@@ -626,264 +625,263 @@ object mod {
   */
   trait PayloadType extends StObject
   
-  @js.native
   trait PayloadTypesHash_ extends StObject {
     
-    var `0`: `19` = js.native
+    var `0`: `19`
     
-    var `1`: `18` = js.native
+    var `1`: `18`
     
-    var `10`: typings.rtpParser.anon.`10` = js.native
+    var `10`: typings.rtpParser.anon.`10`
     
-    var `100`: Name = js.native
+    var `100`: Name
     
-    var `101`: Name = js.native
+    var `101`: Name
     
-    var `102`: Name = js.native
+    var `102`: Name
     
-    var `103`: Name = js.native
+    var `103`: Name
     
-    var `104`: Name = js.native
+    var `104`: Name
     
-    var `105`: Name = js.native
+    var `105`: Name
     
-    var `106`: Name = js.native
+    var `106`: Name
     
-    var `107`: Name = js.native
+    var `107`: Name
     
-    var `108`: Name = js.native
+    var `108`: Name
     
-    var `109`: Name = js.native
+    var `109`: Name
     
-    var `11`: `9` = js.native
+    var `11`: `9`
     
-    var `110`: Name = js.native
+    var `110`: Name
     
-    var `111`: Name = js.native
+    var `111`: Name
     
-    var `112`: Name = js.native
+    var `112`: Name
     
-    var `113`: Name = js.native
+    var `113`: Name
     
-    var `114`: Name = js.native
+    var `114`: Name
     
-    var `115`: Name = js.native
+    var `115`: Name
     
-    var `116`: Name = js.native
+    var `116`: Name
     
-    var `117`: Name = js.native
+    var `117`: Name
     
-    var `118`: Name = js.native
+    var `118`: Name
     
-    var `119`: Name = js.native
+    var `119`: Name
     
-    var `12`: `8` = js.native
+    var `12`: `8`
     
-    var `120`: Name = js.native
+    var `120`: Name
     
-    var `121`: Name = js.native
+    var `121`: Name
     
-    var `122`: Name = js.native
+    var `122`: Name
     
-    var `123`: Name = js.native
+    var `123`: Name
     
-    var `124`: Name = js.native
+    var `124`: Name
     
-    var `125`: Name = js.native
+    var `125`: Name
     
-    var `126`: Name = js.native
+    var `126`: Name
     
-    var `127`: Name = js.native
+    var `127`: Name
     
-    var `13`: `7` = js.native
+    var `13`: `7`
     
-    var `14`: `6` = js.native
+    var `14`: `6`
     
-    var `15`: ChannelsClockRateMediaTypeName = js.native
+    var `15`: ChannelsClockRateMediaTypeName
     
-    var `16`: ChannelsClockRateMediaType = js.native
+    var `16`: ChannelsClockRateMediaType
     
-    var `17`: ChannelsClockRate = js.native
+    var `17`: ChannelsClockRate
     
-    var `18`: Channels = js.native
+    var `18`: Channels
     
-    var `19`: `18` = js.native
+    var `19`: `18`
     
-    var `2`: `18` = js.native
+    var `2`: `18`
     
-    var `20`: `5` = js.native
+    var `20`: `5`
     
-    var `21`: `5` = js.native
+    var `21`: `5`
     
-    var `22`: `5` = js.native
+    var `22`: `5`
     
-    var `23`: `5` = js.native
+    var `23`: `5`
     
-    var `24`: `4` = js.native
+    var `24`: `4`
     
-    var `25`: `3` = js.native
+    var `25`: `3`
     
-    var `26`: typings.rtpParser.anon.`2` = js.native
+    var `26`: typings.rtpParser.anon.`2`
     
-    var `27`: `4` = js.native
+    var `27`: `4`
     
-    var `28`: ClockRateMediaTypeName = js.native
+    var `28`: ClockRateMediaTypeName
     
-    var `29`: `4` = js.native
+    var `29`: `4`
     
-    var `3`: typings.rtpParser.anon.`17` = js.native
+    var `3`: typings.rtpParser.anon.`17`
     
-    var `30`: `4` = js.native
+    var `30`: `4`
     
-    var `31`: MediaTypeName = js.native
+    var `31`: MediaTypeName
     
-    var `32`: ClockRateMediaType = js.native
+    var `32`: ClockRateMediaType
     
-    var `33`: MediaType = js.native
+    var `33`: MediaType
     
-    var `34`: ClockRate = js.native
+    var `34`: ClockRate
     
-    var `35`: `1` = js.native
+    var `35`: `1`
     
-    var `36`: `1` = js.native
+    var `36`: `1`
     
-    var `37`: `1` = js.native
+    var `37`: `1`
     
-    var `38`: `1` = js.native
+    var `38`: `1`
     
-    var `39`: `1` = js.native
+    var `39`: `1`
     
-    var `4`: typings.rtpParser.anon.`16` = js.native
+    var `4`: typings.rtpParser.anon.`16`
     
-    var `40`: `1` = js.native
+    var `40`: `1`
     
-    var `41`: `1` = js.native
+    var `41`: `1`
     
-    var `42`: `1` = js.native
+    var `42`: `1`
     
-    var `43`: `1` = js.native
+    var `43`: `1`
     
-    var `44`: `1` = js.native
+    var `44`: `1`
     
-    var `45`: `1` = js.native
+    var `45`: `1`
     
-    var `46`: `1` = js.native
+    var `46`: `1`
     
-    var `47`: `1` = js.native
+    var `47`: `1`
     
-    var `48`: `1` = js.native
+    var `48`: `1`
     
-    var `49`: `1` = js.native
+    var `49`: `1`
     
-    var `5`: typings.rtpParser.anon.`15` = js.native
+    var `5`: typings.rtpParser.anon.`15`
     
-    var `50`: `1` = js.native
+    var `50`: `1`
     
-    var `51`: `1` = js.native
+    var `51`: `1`
     
-    var `52`: `1` = js.native
+    var `52`: `1`
     
-    var `53`: `1` = js.native
+    var `53`: `1`
     
-    var `54`: `1` = js.native
+    var `54`: `1`
     
-    var `55`: `1` = js.native
+    var `55`: `1`
     
-    var `56`: `1` = js.native
+    var `56`: `1`
     
-    var `57`: `1` = js.native
+    var `57`: `1`
     
-    var `58`: `1` = js.native
+    var `58`: `1`
     
-    var `59`: `1` = js.native
+    var `59`: `1`
     
-    var `6`: typings.rtpParser.anon.`14` = js.native
+    var `6`: typings.rtpParser.anon.`14`
     
-    var `60`: `1` = js.native
+    var `60`: `1`
     
-    var `61`: `1` = js.native
+    var `61`: `1`
     
-    var `62`: `1` = js.native
+    var `62`: `1`
     
-    var `63`: `1` = js.native
+    var `63`: `1`
     
-    var `64`: `1` = js.native
+    var `64`: `1`
     
-    var `65`: `1` = js.native
+    var `65`: `1`
     
-    var `66`: `1` = js.native
+    var `66`: `1`
     
-    var `67`: `1` = js.native
+    var `67`: `1`
     
-    var `68`: `1` = js.native
+    var `68`: `1`
     
-    var `69`: `1` = js.native
+    var `69`: `1`
     
-    var `7`: typings.rtpParser.anon.`13` = js.native
+    var `7`: typings.rtpParser.anon.`13`
     
-    var `70`: `1` = js.native
+    var `70`: `1`
     
-    var `71`: `1` = js.native
+    var `71`: `1`
     
-    var `72`: typings.rtpParser.anon.`0` = js.native
+    var `72`: typings.rtpParser.anon.`0`
     
-    var `73`: typings.rtpParser.anon.`0` = js.native
+    var `73`: typings.rtpParser.anon.`0`
     
-    var `74`: typings.rtpParser.anon.`0` = js.native
+    var `74`: typings.rtpParser.anon.`0`
     
-    var `75`: typings.rtpParser.anon.`0` = js.native
+    var `75`: typings.rtpParser.anon.`0`
     
-    var `76`: typings.rtpParser.anon.`0` = js.native
+    var `76`: typings.rtpParser.anon.`0`
     
-    var `77`: `1` = js.native
+    var `77`: `1`
     
-    var `78`: `1` = js.native
+    var `78`: `1`
     
-    var `79`: `1` = js.native
+    var `79`: `1`
     
-    var `8`: typings.rtpParser.anon.`12` = js.native
+    var `8`: typings.rtpParser.anon.`12`
     
-    var `80`: `1` = js.native
+    var `80`: `1`
     
-    var `81`: `1` = js.native
+    var `81`: `1`
     
-    var `82`: `1` = js.native
+    var `82`: `1`
     
-    var `83`: `1` = js.native
+    var `83`: `1`
     
-    var `84`: `1` = js.native
+    var `84`: `1`
     
-    var `85`: `1` = js.native
+    var `85`: `1`
     
-    var `86`: `1` = js.native
+    var `86`: `1`
     
-    var `87`: `1` = js.native
+    var `87`: `1`
     
-    var `88`: `1` = js.native
+    var `88`: `1`
     
-    var `89`: `1` = js.native
+    var `89`: `1`
     
-    var `9`: typings.rtpParser.anon.`11` = js.native
+    var `9`: typings.rtpParser.anon.`11`
     
-    var `90`: `1` = js.native
+    var `90`: `1`
     
-    var `91`: `1` = js.native
+    var `91`: `1`
     
-    var `92`: `1` = js.native
+    var `92`: `1`
     
-    var `93`: `1` = js.native
+    var `93`: `1`
     
-    var `94`: `1` = js.native
+    var `94`: `1`
     
-    var `95`: `1` = js.native
+    var `95`: `1`
     
-    var `96`: Name = js.native
+    var `96`: Name
     
-    var `97`: Name = js.native
+    var `97`: Name
     
-    var `98`: Name = js.native
+    var `98`: Name
     
-    var `99`: Name = js.native
+    var `99`: Name
   }
   object PayloadTypesHash_ {
     

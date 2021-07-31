@@ -6,12 +6,10 @@ import typings.pino.mod.LogFn
 import typings.pino.mod.WriteFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AsObject extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object anon {
       * @example
       * pino.info('hi') // creates and logs {msg: 'hi', level: 30, time: <ts>}
       */
-    var asObject: js.UndefOr[Boolean] = js.native
+    var asObject: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The serializers provided to `pino` are ignored by default in the browser, including the standard
@@ -78,7 +76,7 @@ object anon {
       *   }
       * })
       */
-    var serialize: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var serialize: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Options for transmission of logs.
@@ -104,7 +102,7 @@ object anon {
       *   }
       * })
       */
-    var transmit: js.UndefOr[Level] = js.native
+    var transmit: js.UndefOr[Level] = js.undefined
     
     /**
       * Instead of passing log messages to `console.log` they can be passed to a supplied function. If `write` is
@@ -135,7 +133,7 @@ object anon {
       *   }
       * })
       */
-    var write: js.UndefOr[WriteFn | DictlogLevel] = js.native
+    var write: js.UndefOr[WriteFn | DictlogLevel] = js.undefined
   }
   object AsObject {
     
@@ -180,7 +178,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Bindings extends StObject {
     
     /**
@@ -189,14 +186,14 @@ object anon {
       * The function takes a single argument, the bindings object.
       * It will be called every time a child logger is created.
       */
-    var bindings: js.UndefOr[js.Function1[/* bindings */ typings.pino.mod.Bindings, js.Object]] = js.native
+    var bindings: js.UndefOr[js.Function1[/* bindings */ typings.pino.mod.Bindings, js.Object]] = js.undefined
     
     /**
       * Changes the shape of the log level.
       * The default shape is { level: number }.
       * The function takes two arguments, the label of the level (e.g. 'info') and the numeric value (e.g. 30).
       */
-    var level: js.UndefOr[js.Function2[/* level */ String, /* number */ Double, js.Object]] = js.native
+    var level: js.UndefOr[js.Function2[/* level */ String, /* number */ Double, js.Object]] = js.undefined
     
     /**
       * Changes the shape of the log object.
@@ -204,7 +201,7 @@ object anon {
       * All arguments passed to the log method, except the message, will be pass to this function.
       * By default it does not change the shape of the log object.
       */
-    var log: js.UndefOr[js.Function1[/* object */ js.Object, js.Object]] = js.native
+    var log: js.UndefOr[js.Function1[/* object */ js.Object, js.Object]] = js.undefined
   }
   object Bindings {
     
@@ -237,20 +234,21 @@ object anon {
     }
   }
   
-  @js.native
-  trait DictlogLevel extends /* logLevel */ StringDictionary[WriteFn] {
+  trait DictlogLevel
+    extends StObject
+       with /* logLevel */ StringDictionary[WriteFn] {
     
-    var debug: js.UndefOr[WriteFn] = js.native
+    var debug: js.UndefOr[WriteFn] = js.undefined
     
-    var error: js.UndefOr[WriteFn] = js.native
+    var error: js.UndefOr[WriteFn] = js.undefined
     
-    var fatal: js.UndefOr[WriteFn] = js.native
+    var fatal: js.UndefOr[WriteFn] = js.undefined
     
-    var info: js.UndefOr[WriteFn] = js.native
+    var info: js.UndefOr[WriteFn] = js.undefined
     
-    var trace: js.UndefOr[WriteFn] = js.native
+    var trace: js.UndefOr[WriteFn] = js.undefined
     
-    var warn: js.UndefOr[WriteFn] = js.native
+    var warn: js.UndefOr[WriteFn] = js.undefined
   }
   object DictlogLevel {
     
@@ -301,12 +299,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Label {
     
@@ -327,7 +324,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
     /**
@@ -335,14 +331,14 @@ object anon {
       * the `send` function will be called based on the main logging `level` (set via `options.level`,
       * defaulting to `info`).
       */
-    var level: js.UndefOr[typings.pino.mod.Level | String] = js.native
+    var level: js.UndefOr[typings.pino.mod.Level | String] = js.undefined
     
     /**
       * Remotely record log messages.
       *
       * @description Called after writing the log message.
       */
-    def send(level: typings.pino.mod.Level, logEvent: LogEvent): Unit = js.native
+    def send(level: typings.pino.mod.Level, logEvent: LogEvent): Unit
   }
   object Level {
     
@@ -366,7 +362,6 @@ object anon {
     }
   }
   
-  @js.native
   trait LogMethod extends StObject {
     
     /**
@@ -375,7 +370,7 @@ object anon {
       * log method and method is the log method itself. This hook must invoke the method function by
       * using apply, like so: method.apply(this, newArgumentsArray).
       */
-    var logMethod: js.UndefOr[js.Function2[/* args */ js.Array[_], /* method */ LogFn, Unit]] = js.native
+    var logMethod: js.UndefOr[js.Function2[/* args */ js.Array[js.Any], /* method */ LogFn, Unit]] = js.undefined
   }
   object LogMethod {
     
@@ -389,7 +384,7 @@ object anon {
     implicit class LogMethodMutableBuilder[Self <: LogMethod] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLogMethod(value: (/* args */ js.Array[_], /* method */ LogFn) => Unit): Self = StObject.set(x, "logMethod", js.Any.fromFunction2(value))
+      def setLogMethod(value: (/* args */ js.Array[js.Any], /* method */ LogFn) => Unit): Self = StObject.set(x, "logMethod", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)

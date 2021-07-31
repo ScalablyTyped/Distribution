@@ -2,10 +2,8 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerExtEventsObject extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait ServerExtEventsObject extends StObject {
     * * * this - the object provided via options.bind or the current active context set with server.bind().
     * * request extension points: a lifecycle method.
     */
-  var method: ServerExtPointFunction | js.Array[ServerExtPointFunction] = js.native
+  var method: ServerExtPointFunction | js.Array[ServerExtPointFunction]
   
-  var options: js.UndefOr[ServerExtOptions] = js.native
+  var options: js.UndefOr[ServerExtOptions] = js.undefined
   
   /**
     * (required) the extension point event name. The available extension points include the request extension points as well as the following server extension points:
@@ -25,7 +23,7 @@ trait ServerExtEventsObject extends StObject {
     * * 'onPostStart' - called after the connection listeners are started.
     * * 'onPreStop' - called before the connection listeners are stopped.
     */
-  var `type`: ServerExtType = js.native
+  var `type`: ServerExtType
 }
 object ServerExtEventsObject {
   

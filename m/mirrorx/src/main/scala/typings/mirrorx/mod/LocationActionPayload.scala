@@ -2,15 +2,13 @@ package typings.mirrorx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationActionPayload extends StObject {
   
-  var args: js.UndefOr[js.Array[_]] = js.native
+  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var method: String = js.native
+  var method: String
 }
 object LocationActionPayload {
   
@@ -24,7 +22,7 @@ object LocationActionPayload {
   implicit class LocationActionPayloadMutableBuilder[Self <: LocationActionPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

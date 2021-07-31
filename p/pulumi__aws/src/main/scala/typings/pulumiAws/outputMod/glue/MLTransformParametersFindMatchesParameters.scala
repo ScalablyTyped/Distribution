@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MLTransformParametersFindMatchesParameters extends StObject {
   
   /**
     * The value that is selected when tuning your transform for a balance between accuracy and cost.
     */
-  var accuracyCostTradeOff: js.UndefOr[Double] = js.native
+  var accuracyCostTradeOff: js.UndefOr[Double] = js.undefined
   
   /**
     * The value to switch on or off to force the output to match the provided labels from users.
     */
-  var enforceProvidedLabels: js.UndefOr[Boolean] = js.native
+  var enforceProvidedLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value selected when tuning your transform for a balance between precision and recall.
     */
-  var precisionRecallTradeOff: js.UndefOr[Double] = js.native
+  var precisionRecallTradeOff: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of a column that uniquely identifies rows in the source table.
     */
-  var primaryKeyColumnName: js.UndefOr[String] = js.native
+  var primaryKeyColumnName: js.UndefOr[String] = js.undefined
 }
 object MLTransformParametersFindMatchesParameters {
   

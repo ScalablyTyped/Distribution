@@ -3,7 +3,6 @@ package typings.angularBlockUi
 import typings.angular.mod.IRequestConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,7 +10,6 @@ object mod {
   
   object blockUI {
     
-    @js.native
     trait BlockUIConfig extends StObject {
       
       /**
@@ -23,7 +21,7 @@ object mod {
         *
         * The default value is 'true'
         */
-      var autoBlock: js.UndefOr[Boolean] = js.native
+      var autoBlock: js.UndefOr[Boolean] = js.undefined
       
       /**
         * When the module is started it will inject the main block element
@@ -37,7 +35,7 @@ object mod {
         *
         * The default value is 'true'
         */
-      var autoInjectBodyBlock: js.UndefOr[Boolean] = js.native
+      var autoInjectBodyBlock: js.UndefOr[Boolean] = js.undefined
       
       /**
         * While a user interface block is active the user can still navigate
@@ -56,7 +54,7 @@ object mod {
         *
         * The default value is 'false'
         */
-      var blockBrowserNavigation: js.UndefOr[Boolean] = js.native
+      var blockBrowserNavigation: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A string containing the default css classes (separated by spaces)
@@ -64,7 +62,7 @@ object mod {
         *
         * The default value is "block-ui block-ui-anim-fade"
         */
-      var cssClass: js.UndefOr[String] = js.native
+      var cssClass: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the amount in milliseconds before the block
@@ -73,7 +71,7 @@ object mod {
         *
         * The default value is 250.
         */
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
       /**
         * Changes the default message to be used when no message
@@ -81,7 +79,7 @@ object mod {
         *
         * Default value is 'Loading ...'.
         */
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
       /**
         * Allows you to specify a filter function to exclude certain ajax
@@ -94,7 +92,7 @@ object mod {
         * @param config the Angular request config object.
         *
         */
-      var requestFilter: js.UndefOr[js.Function1[/* config */ IRequestConfig, String | Boolean]] = js.native
+      var requestFilter: js.UndefOr[js.Function1[/* config */ IRequestConfig, String | Boolean]] = js.undefined
       
       /**
         * By default the BlockUI module will reset the block count and
@@ -104,12 +102,12 @@ object mod {
         *
         * The default value is 'true'
         */
-      var resetOnException: js.UndefOr[Boolean] = js.native
+      var resetOnException: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies a custom template to use as the overlay.
         */
-      var template: js.UndefOr[String] = js.native
+      var template: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies a url to retrieve the template from.
@@ -120,7 +118,7 @@ object mod {
         * If you're using the grunt with html2js or angular-templates,
         * which I highly recommend, you're already set.
         */
-      var templateUrl: js.UndefOr[String] = js.native
+      var templateUrl: js.UndefOr[String] = js.undefined
     }
     object BlockUIConfig {
       
@@ -195,10 +193,9 @@ object mod {
       }
     }
     
-    @js.native
     trait BlockUIInstances extends StObject {
       
-      def get(id: String): BlockUIService = js.native
+      def get(id: String): BlockUIService
     }
     object BlockUIInstances {
       

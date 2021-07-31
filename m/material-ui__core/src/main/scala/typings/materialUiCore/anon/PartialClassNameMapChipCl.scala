@@ -2,56 +2,54 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Chip/Chip.ChipClassKey>> */
-@js.native
 trait PartialClassNameMapChipCl extends StObject {
   
-  var avatar: js.UndefOr[String] = js.native
+  var avatar: js.UndefOr[String] = js.undefined
   
-  var avatarChildren: js.UndefOr[String] = js.native
+  var avatarChildren: js.UndefOr[String] = js.undefined
   
-  var avatarPrimary: js.UndefOr[String] = js.native
+  var avatarPrimary: js.UndefOr[String] = js.undefined
   
-  var avatarSecondary: js.UndefOr[String] = js.native
+  var avatarSecondary: js.UndefOr[String] = js.undefined
   
-  var clickable: js.UndefOr[String] = js.native
+  var clickable: js.UndefOr[String] = js.undefined
   
-  var clickablePrimary: js.UndefOr[String] = js.native
+  var clickablePrimary: js.UndefOr[String] = js.undefined
   
-  var clickableSecondary: js.UndefOr[String] = js.native
+  var clickableSecondary: js.UndefOr[String] = js.undefined
   
-  var colorPrimary: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
-  var colorSecondary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.undefined
   
-  var deletable: js.UndefOr[String] = js.native
+  var deletable: js.UndefOr[String] = js.undefined
   
-  var deletablePrimary: js.UndefOr[String] = js.native
+  var deletablePrimary: js.UndefOr[String] = js.undefined
   
-  var deletableSecondary: js.UndefOr[String] = js.native
+  var deletableSecondary: js.UndefOr[String] = js.undefined
   
-  var deleteIcon: js.UndefOr[String] = js.native
+  var deleteIcon: js.UndefOr[String] = js.undefined
   
-  var deleteIconOutlinedColorPrimary: js.UndefOr[String] = js.native
+  var deleteIconOutlinedColorPrimary: js.UndefOr[String] = js.undefined
   
-  var deleteIconOutlinedColorSecondary: js.UndefOr[String] = js.native
+  var deleteIconOutlinedColorSecondary: js.UndefOr[String] = js.undefined
   
-  var deleteIconPrimary: js.UndefOr[String] = js.native
+  var deleteIconPrimary: js.UndefOr[String] = js.undefined
   
-  var deleteIconSecondary: js.UndefOr[String] = js.native
+  var deleteIconSecondary: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var outlined: js.UndefOr[String] = js.native
+  var outlined: js.UndefOr[String] = js.undefined
   
-  var outlinedPrimary: js.UndefOr[String] = js.native
+  var outlinedPrimary: js.UndefOr[String] = js.undefined
   
-  var outlinedSecondary: js.UndefOr[String] = js.native
+  var outlinedSecondary: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapChipCl {
   

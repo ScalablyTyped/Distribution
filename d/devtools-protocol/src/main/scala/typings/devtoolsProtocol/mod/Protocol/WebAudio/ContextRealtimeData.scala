@@ -2,33 +2,31 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextRealtimeData extends StObject {
   
   /**
     * A running mean of callback interval.
     */
-  var callbackIntervalMean: Double = js.native
+  var callbackIntervalMean: Double
   
   /**
     * A running variance of callback interval.
     */
-  var callbackIntervalVariance: Double = js.native
+  var callbackIntervalVariance: Double
   
   /**
     * The current context time in second in BaseAudioContext.
     */
-  var currentTime: Double = js.native
+  var currentTime: Double
   
   /**
     * The time spent on rendering graph divided by render qunatum duration,
     * and multiplied by 100. 100 means the audio renderer reached the full
     * capacity and glitch may occur.
     */
-  var renderCapacity: Double = js.native
+  var renderCapacity: Double
 }
 object ContextRealtimeData {
   

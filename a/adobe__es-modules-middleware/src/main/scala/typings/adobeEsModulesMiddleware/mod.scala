@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.connect.mod.NextHandleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@adobe/es-modules-middleware", "middleware")
+  @JSImport("@adobe/es-modules-middleware", JSImport.Namespace)
   @js.native
-  def middleware(): NextHandleFunction = js.native
-  @JSImport("@adobe/es-modules-middleware", "middleware")
-  @js.native
-  def middleware(options: MiddlewareOptions): NextHandleFunction = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def middleware(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def middleware(options: MiddlewareOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  
   trait MiddlewareOptions extends StObject {
     
     /** a map of url base path to file system path from which to serve files */
-    var paths: StringDictionary[String] = js.native
+    var paths: StringDictionary[String]
   }
   object MiddlewareOptions {
     
@@ -41,14 +41,13 @@ object mod {
   /* augmented module */
   object karmaAugmentingMod {
     
-    @js.native
     trait ConfigOptions extends StObject {
       
       /**
         * used in Karma to aid in testing es-modules in the browser
         * see {@link https://github.com/adobe/es-modules-middleware}
         */
-      var esModulesMiddleware: js.UndefOr[MiddlewareOptions] = js.native
+      var esModulesMiddleware: js.UndefOr[MiddlewareOptions] = js.undefined
     }
     object ConfigOptions {
       

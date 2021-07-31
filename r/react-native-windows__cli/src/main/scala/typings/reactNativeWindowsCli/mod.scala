@@ -10,10 +10,13 @@ import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cpp
 import typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.cs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-native-windows/cli/lib-commonjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-native-windows/cli/lib-commonjs", "commands")
   @js.native
@@ -27,9 +30,8 @@ object mod {
     WindowsDependencyConfig | Null
   ] = js.native
   
-  @JSImport("@react-native-windows/cli/lib-commonjs", "generateWindows")
-  @js.native
-  def generateWindows(projectDir: String, name: String, ns: String, options: GenerateOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def generateWindows(projectDir: String, name: String, ns: String, options: GenerateOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateWindows")(projectDir.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("@react-native-windows/cli/lib-commonjs", "projectConfig")
   @js.native
@@ -39,24 +41,23 @@ object mod {
     WindowsProjectConfig | Null
   ] = js.native
   
-  @js.native
   trait GenerateOptions extends StObject {
     
-    var experimentalNuGetDependency: Boolean = js.native
+    var experimentalNuGetDependency: Boolean
     
-    var language: cpp | cs = js.native
+    var language: cpp | cs
     
-    var nuGetTestFeed: js.UndefOr[String] = js.native
+    var nuGetTestFeed: js.UndefOr[String] = js.undefined
     
-    var nuGetTestVersion: js.UndefOr[String] = js.native
+    var nuGetTestVersion: js.UndefOr[String] = js.undefined
     
-    var overwrite: Boolean = js.native
+    var overwrite: Boolean
     
-    var telemetry: Boolean = js.native
+    var telemetry: Boolean
     
-    var useWinUI3: Boolean = js.native
+    var useWinUI3: Boolean
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object GenerateOptions {
     

@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,8 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // 2. construct by object
   * o = new KJUR.asn1.x509.X500Name({C: "US", O: "aaa", CN: "http://example.com/"});
   */
-@js.native
-trait X500Name extends ASN1Object {
+trait X500Name
+  extends StObject
+     with ASN1Object {
   
   /**
     * set DN by LDAP(RFC 2253) distinguished name string
@@ -49,7 +49,7 @@ trait X500Name extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByLdapString("CN=foo@example.com,OU=bbb,O=aaa,C=US");
     */
-  def setByLdapString(dnStr: String): Unit = js.native
+  def setByLdapString(dnStr: String): Unit
   
   /**
     * set DN by associative array
@@ -58,7 +58,7 @@ trait X500Name extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByObject({C: "US", O: "aaa", CN="http://example.com/"1});
     */
-  def setByObject(dnObj: X500NameParam): Unit = js.native
+  def setByObject(dnObj: X500NameParam): Unit
   
   /**
     * set DN by OpenSSL oneline distinguished name string
@@ -67,7 +67,7 @@ trait X500Name extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByString("/C=US/O=aaa/OU=bbb/CN=foo@example.com");
     */
-  def setByString(dnStr: String): Unit = js.native
+  def setByString(dnStr: String): Unit
 }
 object X500Name {
   

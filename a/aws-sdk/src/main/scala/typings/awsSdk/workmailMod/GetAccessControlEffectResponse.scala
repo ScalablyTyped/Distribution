@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessControlEffectResponse extends StObject {
   
   /**
     * The rule effect.
     */
-  var Effect: js.UndefOr[AccessControlRuleEffect] = js.native
+  var Effect: js.UndefOr[AccessControlRuleEffect] = js.undefined
   
   /**
     * The rules that match the given parameters, resulting in an effect.
     */
-  var MatchedRules: js.UndefOr[AccessControlRuleNameList] = js.native
+  var MatchedRules: js.UndefOr[AccessControlRuleNameList] = js.undefined
 }
 object GetAccessControlEffectResponse {
   

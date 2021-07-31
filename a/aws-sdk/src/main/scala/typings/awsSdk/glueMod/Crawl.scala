@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crawl extends StObject {
   
   /**
     * The date and time on which the crawl completed.
     */
-  var CompletedOn: js.UndefOr[TimestampValue] = js.native
+  var CompletedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The error message associated with the crawl.
     */
-  var ErrorMessage: js.UndefOr[DescriptionString] = js.native
+  var ErrorMessage: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The log group associated with the crawl.
     */
-  var LogGroup: js.UndefOr[typings.awsSdk.glueMod.LogGroup] = js.native
+  var LogGroup: js.UndefOr[typings.awsSdk.glueMod.LogGroup] = js.undefined
   
   /**
     * The log stream associated with the crawl.
     */
-  var LogStream: js.UndefOr[typings.awsSdk.glueMod.LogStream] = js.native
+  var LogStream: js.UndefOr[typings.awsSdk.glueMod.LogStream] = js.undefined
   
   /**
     * The date and time on which the crawl started.
     */
-  var StartedOn: js.UndefOr[TimestampValue] = js.native
+  var StartedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The state of the crawler.
     */
-  var State: js.UndefOr[CrawlState] = js.native
+  var State: js.UndefOr[CrawlState] = js.undefined
 }
 object Crawl {
   

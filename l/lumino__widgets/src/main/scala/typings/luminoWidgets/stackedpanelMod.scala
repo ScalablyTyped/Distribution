@@ -7,7 +7,6 @@ import typings.luminoWidgets.stackedpanelMod.StackedPanel.IOptions
 import typings.luminoWidgets.widgetMod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackedpanelMod {
@@ -34,7 +33,6 @@ object stackedpanelMod {
     /**
       * An options object for creating a stacked panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -42,7 +40,7 @@ object stackedpanelMod {
         *
         * The default is a new `StackedLayout`.
         */
-      var layout: js.UndefOr[StackedLayout] = js.native
+      var layout: js.UndefOr[StackedLayout] = js.undefined
     }
     object IOptions {
       

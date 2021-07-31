@@ -2,16 +2,14 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.updateNavigation()
-@js.native
 trait UpdateNavigationConfig extends StObject {
   
-  var stateOnly: js.UndefOr[Boolean] = js.native
+  var stateOnly: js.UndefOr[Boolean] = js.undefined
   
-  var updateTapp: js.UndefOr[Boolean] = js.native
+  var updateTapp: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateNavigationConfig {
   

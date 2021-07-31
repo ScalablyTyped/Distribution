@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLOutputDataConfig extends StObject {
   
   /**
     * The AWS KMS encryption key ID.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * The Amazon S3 output path. Must be 128 characters or less.
     */
-  var S3OutputPath: S3Uri = js.native
+  var S3OutputPath: S3Uri
 }
 object AutoMLOutputDataConfig {
   

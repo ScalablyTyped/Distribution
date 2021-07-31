@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVoiceConnectorTerminationHealthResponse extends StObject {
   
   /**
     * The termination health details.
     */
-  var TerminationHealth: js.UndefOr[typings.awsSdk.chimeMod.TerminationHealth] = js.native
+  var TerminationHealth: js.UndefOr[typings.awsSdk.chimeMod.TerminationHealth] = js.undefined
 }
 object GetVoiceConnectorTerminationHealthResponse {
   

@@ -12,7 +12,6 @@ import typings.jointjs.mod.dia.Link
 import typings.jointjs.mod.dia.Link.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object org_ {
@@ -22,7 +21,7 @@ object org_ {
   // default label props
   class Arrow () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -30,23 +29,24 @@ object org_ {
   @js.native
   class Member () extends Element {
     def this(attributes: GenericAttributes[MemberSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[MemberSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
-  @js.native
-  trait MemberSelectors extends Selectors {
+  trait MemberSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".card")
-    var Dotcard: js.UndefOr[SVGRectAttributes] = js.native
+    var Dotcard: js.UndefOr[SVGRectAttributes] = js.undefined
     
     @JSName(".name")
-    var Dotname: js.UndefOr[SVGTextAttributes] = js.native
+    var Dotname: js.UndefOr[SVGTextAttributes] = js.undefined
     
     @JSName(".rank")
-    var Dotrank: js.UndefOr[SVGTextAttributes] = js.native
+    var Dotrank: js.UndefOr[SVGTextAttributes] = js.undefined
     
-    var image: js.UndefOr[SVGImageAttributes] = js.native
+    var image: js.UndefOr[SVGImageAttributes] = js.undefined
   }
   object MemberSelectors {
     

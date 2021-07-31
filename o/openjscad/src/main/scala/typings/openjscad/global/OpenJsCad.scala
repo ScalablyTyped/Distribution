@@ -9,7 +9,6 @@ import typings.std.URL
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OpenJsCad {
@@ -18,21 +17,20 @@ object OpenJsCad {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("OpenJsCad.AlertUserOfUncaughtExceptions")
-  @js.native
-  def AlertUserOfUncaughtExceptions(): Unit = js.native
+  @scala.inline
+  def AlertUserOfUncaughtExceptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AlertUserOfUncaughtExceptions")().asInstanceOf[Unit]
   
-  @JSGlobal("OpenJsCad.FileSystemApiErrorHandler")
-  @js.native
-  def FileSystemApiErrorHandler(fileError: js.Any, operation: js.Any): Unit = js.native
+  @scala.inline
+  def FileSystemApiErrorHandler(fileError: js.Any, operation: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FileSystemApiErrorHandler")(fileError.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("OpenJsCad.Processor")
   @js.native
   class Processor protected ()
-    extends typings.openjscad.OpenJsCad.Processor {
+    extends StObject
+       with typings.openjscad.OpenJsCad.Processor {
     def this(containerdiv: HTMLDivElement) = this()
     def this(containerdiv: HTMLDivElement, options: ProcessorOptions) = this()
-    def this(containerdiv: HTMLDivElement, options: js.UndefOr[scala.Nothing], onchange: EventHandler) = this()
+    def this(containerdiv: HTMLDivElement, options: Unit, onchange: EventHandler) = this()
     def this(containerdiv: HTMLDivElement, options: ProcessorOptions, onchange: EventHandler) = this()
   }
   object Processor {
@@ -42,9 +40,8 @@ object OpenJsCad {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("OpenJsCad.Processor.convertToSolid")
-    @js.native
-    def convertToSolid(obj: js.Any): js.Any = js.native
+    @scala.inline
+    def convertToSolid(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToSolid")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
     @JSGlobal("OpenJsCad.Processor.heightDefault")
@@ -64,29 +61,25 @@ object OpenJsCad {
   @JSGlobal("OpenJsCad.Viewer")
   @js.native
   class Viewer protected ()
-    extends typings.openjscad.OpenJsCad.Viewer {
+    extends StObject
+       with typings.openjscad.OpenJsCad.Viewer {
     def this(containerElm: js.Any, size: js.Any, options: IViewerOptions) = this()
   }
   
-  @JSGlobal("OpenJsCad.checkResult")
-  @js.native
-  def checkResult(result: js.Any): Unit = js.native
+  @scala.inline
+  def checkResult(result: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResult")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("OpenJsCad.expandResultObjectArray")
-  @js.native
-  def expandResultObjectArray(result: js.Any): js.Any = js.native
+  @scala.inline
+  def expandResultObjectArray(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expandResultObjectArray")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSGlobal("OpenJsCad.getParamDefinitions")
-  @js.native
-  def getParamDefinitions(script: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def getParamDefinitions(script: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParamDefinitions")(script.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSGlobal("OpenJsCad.getWindowURL")
-  @js.native
-  def getWindowURL(): URL = js.native
+  @scala.inline
+  def getWindowURL(): URL = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowURL")().asInstanceOf[URL]
   
-  @JSGlobal("OpenJsCad.isChrome")
-  @js.native
-  def isChrome(): Boolean = js.native
+  @scala.inline
+  def isChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChrome")().asInstanceOf[Boolean]
   
   @JSGlobal("OpenJsCad.log")
   @js.native
@@ -94,35 +87,27 @@ object OpenJsCad {
   @scala.inline
   def log_=(x: ILog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("OpenJsCad.makeAbsoluteUrl")
-  @js.native
-  def makeAbsoluteUrl(url: js.Any, baseurl: js.Any): js.Any = js.native
+  @scala.inline
+  def makeAbsoluteUrl(url: js.Any, baseurl: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAbsoluteUrl")(url.asInstanceOf[js.Any], baseurl.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("OpenJsCad.parseJsCadScriptASync")
-  @js.native
-  def parseJsCadScriptASync(script: js.Any, mainParameters: js.Any, options: js.Any, callback: js.Any): Worker = js.native
+  @scala.inline
+  def parseJsCadScriptASync(script: js.Any, mainParameters: js.Any, options: js.Any, callback: js.Any): Worker = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsCadScriptASync")(script.asInstanceOf[js.Any], mainParameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Worker]
   
-  @JSGlobal("OpenJsCad.parseJsCadScriptSync")
-  @js.native
-  def parseJsCadScriptSync(script: js.Any, mainParameters: js.Any, debugging: js.Any): js.Any = js.native
+  @scala.inline
+  def parseJsCadScriptSync(script: js.Any, mainParameters: js.Any, debugging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsCadScriptSync")(script.asInstanceOf[js.Any], mainParameters.asInstanceOf[js.Any], debugging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("OpenJsCad.resultFromCompactBinary")
-  @js.native
-  def resultFromCompactBinary(resultin: js.Any): js.Any = js.native
+  @scala.inline
+  def resultFromCompactBinary(resultin: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resultFromCompactBinary")(resultin.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSGlobal("OpenJsCad.resultToCompactBinary")
-  @js.native
-  def resultToCompactBinary(resultin: js.Any): js.Any = js.native
+  @scala.inline
+  def resultToCompactBinary(resultin: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("resultToCompactBinary")(resultin.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSGlobal("OpenJsCad.revokeBlobUrl")
-  @js.native
-  def revokeBlobUrl(url: js.Any): Unit = js.native
+  @scala.inline
+  def revokeBlobUrl(url: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeBlobUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("OpenJsCad.runMainInWorker")
-  @js.native
-  def runMainInWorker(mainParameters: js.Any): Unit = js.native
+  @scala.inline
+  def runMainInWorker(mainParameters: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runMainInWorker")(mainParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("OpenJsCad.textToBlobUrl")
-  @js.native
-  def textToBlobUrl(txt: js.Any): String = js.native
+  @scala.inline
+  def textToBlobUrl(txt: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textToBlobUrl")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
 }

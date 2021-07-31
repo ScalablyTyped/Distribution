@@ -4,14 +4,15 @@ import typings.soap.typesMod.IHeaders
 import typings.soap.typesMod.ISecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bearerSecurityMod {
   
   @JSImport("soap/lib/security/BearerSecurity", "BearerSecurity")
   @js.native
-  class BearerSecurity protected () extends ISecurity {
+  class BearerSecurity protected ()
+    extends StObject
+       with ISecurity {
     def this(token: String) = this()
     def this(token: String, defaults: js.Any) = this()
     

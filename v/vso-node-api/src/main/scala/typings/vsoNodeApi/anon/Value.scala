@@ -3,15 +3,13 @@ package typings.vsoNodeApi.anon
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeColorAndIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var value: js.Array[WorkItemTypeColorAndIcon] = js.native
+  var value: js.Array[WorkItemTypeColorAndIcon]
 }
 object Value {
   

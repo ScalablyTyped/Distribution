@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetFindingStateRequest extends StObject {
   
   /** Required. The time at which the updated state takes effect. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Required. The desired State of the finding. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SetFindingStateRequest {
   

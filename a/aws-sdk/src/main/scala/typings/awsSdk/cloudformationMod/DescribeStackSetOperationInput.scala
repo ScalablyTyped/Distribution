@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackSetOperationInput extends StObject {
   
   /**
     * The unique ID of the stack set operation. 
     */
-  var OperationId: ClientRequestToken = js.native
+  var OperationId: ClientRequestToken
   
   /**
     * The name or the unique stack ID of the stack set for the stack operation.
     */
-  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
+  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName
 }
 object DescribeStackSetOperationInput {
   

@@ -4,18 +4,18 @@ import typings.reactNative.reactNativeStrings.dialog
 import typings.reactNative.reactNativeStrings.dropdown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PickerPropsAndroid extends ViewProps {
+trait PickerPropsAndroid
+  extends StObject
+     with ViewProps {
   
   /**
     * If set to false, the picker will be disabled, i.e. the user will not be able to make a
     * selection.
     * @platform android
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * On Android, specifies how to display the selection items when the user taps on the picker:
@@ -25,13 +25,13 @@ trait PickerPropsAndroid extends ViewProps {
     *
     * @platform android
     */
-  var mode: js.UndefOr[dialog | dropdown] = js.native
+  var mode: js.UndefOr[dialog | dropdown] = js.undefined
   
   /**
     * Prompt string for this picker, used on Android in dialog mode as the title of the dialog.
     * @platform android
     */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
 }
 object PickerPropsAndroid {
   

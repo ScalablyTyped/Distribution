@@ -2,26 +2,24 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated whenever a product&#39;s availability changes.
   */
-@js.native
 trait SchemaProductAvailabilityChangeEvent extends StObject {
   
   /**
     * The new state of the product. This field will always be present.
     */
-  var availabilityStatus: js.UndefOr[String] = js.native
+  var availabilityStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) for
     * which the product availability changed. This field will always be
     * present.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaProductAvailabilityChangeEvent {
   

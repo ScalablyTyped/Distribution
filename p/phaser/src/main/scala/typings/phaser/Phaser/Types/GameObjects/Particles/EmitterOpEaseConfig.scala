@@ -2,29 +2,29 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines an operation yielding a value incremented continuously across a range.
   */
-@js.native
-trait EmitterOpEaseConfig extends _EmitterOpOnUpdateType {
+trait EmitterOpEaseConfig
+  extends StObject
+     with _EmitterOpOnUpdateType {
   
   /**
     * The name of the easing function.
     */
-  var ease: js.UndefOr[String] = js.native
+  var ease: js.UndefOr[String] = js.undefined
   
   /**
     * The ending value.
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The starting value.
     */
-  var start: Double = js.native
+  var start: Double
 }
 object EmitterOpEaseConfig {
   

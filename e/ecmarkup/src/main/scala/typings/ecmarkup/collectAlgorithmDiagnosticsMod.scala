@@ -5,17 +5,19 @@ import typings.ecmarkup.specMod.Spec
 import typings.ecmarkup.specMod.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectAlgorithmDiagnosticsMod {
   
-  @JSImport("ecmarkup/lib/lint/collect-algorithm-diagnostics", "collectAlgorithmDiagnostics")
+  @JSImport("ecmarkup/lib/lint/collect-algorithm-diagnostics", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def collectAlgorithmDiagnostics(
     report: js.Function1[/* e */ Warning, Unit],
     spec: Spec,
     mainSource: String,
     algorithms: js.Array[Element]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collectAlgorithmDiagnostics")(report.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], mainSource.asInstanceOf[js.Any], algorithms.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

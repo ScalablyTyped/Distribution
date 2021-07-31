@@ -2,16 +2,14 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceDescription extends StObject {
   
   /**
     * The KinesisStreamSourceDescription value for the source Kinesis data stream.
     */
-  var KinesisStreamSourceDescription: js.UndefOr[typings.awsSdk.firehoseMod.KinesisStreamSourceDescription] = js.native
+  var KinesisStreamSourceDescription: js.UndefOr[typings.awsSdk.firehoseMod.KinesisStreamSourceDescription] = js.undefined
 }
 object SourceDescription {
   

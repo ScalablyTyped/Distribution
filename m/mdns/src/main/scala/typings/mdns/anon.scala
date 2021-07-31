@@ -2,15 +2,13 @@ package typings.mdns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Flags extends StObject {
     
-    var flags: js.Any = js.native
+    var flags: js.Any
   }
   object Flags {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var subtypes: js.UndefOr[js.Array[String]] = js.native
+    var subtypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Name {
     

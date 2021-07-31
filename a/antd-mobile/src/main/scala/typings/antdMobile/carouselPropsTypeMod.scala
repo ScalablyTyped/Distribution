@@ -2,27 +2,25 @@ package typings.antdMobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselPropsTypeMod {
   
-  @js.native
   trait CarouselPropsType extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var autoplayInterval: js.UndefOr[Double] = js.native
+    var autoplayInterval: js.UndefOr[Double] = js.undefined
     
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
-    var infinite: js.UndefOr[Boolean] = js.native
+    var infinite: js.UndefOr[Boolean] = js.undefined
     
-    var initialSlideWidth: js.UndefOr[Double] = js.native
+    var initialSlideWidth: js.UndefOr[Double] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object CarouselPropsType {
     

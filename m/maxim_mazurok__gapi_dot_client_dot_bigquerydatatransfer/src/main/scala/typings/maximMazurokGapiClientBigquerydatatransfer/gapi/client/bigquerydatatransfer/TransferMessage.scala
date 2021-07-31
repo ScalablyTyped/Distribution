@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferMessage extends StObject {
   
   /** Message text. */
-  var messageText: js.UndefOr[String] = js.native
+  var messageText: js.UndefOr[String] = js.undefined
   
   /** Time when message was logged. */
-  var messageTime: js.UndefOr[String] = js.native
+  var messageTime: js.UndefOr[String] = js.undefined
   
   /** Message severity. */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
 }
 object TransferMessage {
   

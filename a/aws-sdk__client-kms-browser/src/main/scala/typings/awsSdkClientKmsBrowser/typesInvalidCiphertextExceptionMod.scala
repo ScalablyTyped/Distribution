@@ -5,25 +5,24 @@ import typings.awsSdkClientKmsBrowser.importKeyMaterialExceptionsUnionMod.Import
 import typings.awsSdkClientKmsBrowser.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidCiphertextExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCiphertextExceptionDetails> * / any */ @js.native
-  trait InvalidCiphertextException
-    extends DecryptExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCiphertextExceptionDetails> * / any */ trait InvalidCiphertextException
+    extends StObject
+       with DecryptExceptionsUnion
        with ImportKeyMaterialExceptionsUnion
        with ReEncryptExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidCiphertextException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidCiphertextException
   }
   object InvalidCiphertextException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidCiphertextException): InvalidCiphertextException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidCiphertextException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCiphertextException")
       __obj.asInstanceOf[InvalidCiphertextException]
     }
     
@@ -35,13 +34,12 @@ object typesInvalidCiphertextExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidCiphertextExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidCiphertextExceptionDetails {
     

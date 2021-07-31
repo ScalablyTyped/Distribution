@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder for calendar triggers.
   */
-@js.native
 trait CalendarTriggerBuilder extends StObject {
   
-  def create(): Trigger = js.native
+  def create(): Trigger
   
-  def onEventUpdated(): CalendarTriggerBuilder = js.native
+  def onEventUpdated(): CalendarTriggerBuilder
 }
 object CalendarTriggerBuilder {
   

@@ -4,7 +4,6 @@ import typings.reactNative.mod.Text
 import typings.reactNative.mod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {

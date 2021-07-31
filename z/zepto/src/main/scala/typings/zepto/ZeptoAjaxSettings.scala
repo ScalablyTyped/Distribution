@@ -5,62 +5,60 @@ import typings.std.Error
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZeptoAjaxSettings extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var beforeSend: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* settings */ this.type, Boolean]] = js.native
+  var beforeSend: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* settings */ this.type, Boolean]] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var complete: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* status */ String, Unit]] = js.native
+  var complete: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* status */ String, Unit]] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[js.Any] = js.native
+  var context: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   var error: js.UndefOr[
     js.Function3[/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ Error, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var jsonp: js.UndefOr[String] = js.native
+  var jsonp: js.UndefOr[String] = js.undefined
   
-  var jsonpCallback: js.UndefOr[js.Any] = js.native
+  var jsonpCallback: js.UndefOr[js.Any] = js.undefined
   
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var processData: js.UndefOr[Boolean] = js.native
+  var processData: js.UndefOr[Boolean] = js.undefined
   
   var success: js.UndefOr[
     js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
-  ] = js.native
+  ] = js.undefined
   
   // string or Function
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var traditional: js.UndefOr[Boolean] = js.native
+  var traditional: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var xhrFields: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var xhrFields: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object ZeptoAjaxSettings {
   

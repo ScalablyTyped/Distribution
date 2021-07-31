@@ -5,35 +5,63 @@ import typings.rotJs.typesMod.DisplayOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendMod {
   
   @JSImport("rot-js/lib/display/backend", JSImport.Default)
   @js.native
-  abstract class default () extends Backend
-  
-  @js.native
-  trait Backend extends StObject {
+  abstract class default ()
+    extends StObject
+       with Backend {
     
+    /* CompleteClass */
     var _options: DisplayOptions = js.native
     
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
-    def computeFontSize(availWidth: Double, availHeight: Double): Double = js.native
+    /* CompleteClass */
+    override def computeFontSize(availWidth: Double, availHeight: Double): Double = js.native
     
-    def computeSize(availWidth: Double, availHeight: Double): js.Tuple2[Double, Double] = js.native
+    /* CompleteClass */
+    override def computeSize(availWidth: Double, availHeight: Double): js.Tuple2[Double, Double] = js.native
     
-    def draw(data: DisplayData, clearBefore: Boolean): Unit = js.native
+    /* CompleteClass */
+    override def draw(data: DisplayData, clearBefore: Boolean): Unit = js.native
     
-    def eventToPosition(x: Double, y: Double): js.Tuple2[Double, Double] = js.native
+    /* CompleteClass */
+    override def eventToPosition(x: Double, y: Double): js.Tuple2[Double, Double] = js.native
     
-    def getContainer(): HTMLElement | Null = js.native
+    /* CompleteClass */
+    override def getContainer(): HTMLElement | Null = js.native
     
-    def schedule(cb: js.Function0[Unit]): Unit = js.native
+    /* CompleteClass */
+    override def schedule(cb: js.Function0[Unit]): Unit = js.native
     
-    def setOptions(options: DisplayOptions): Unit = js.native
+    /* CompleteClass */
+    override def setOptions(options: DisplayOptions): Unit = js.native
+  }
+  
+  trait Backend extends StObject {
+    
+    var _options: DisplayOptions
+    
+    def clear(): Unit
+    
+    def computeFontSize(availWidth: Double, availHeight: Double): Double
+    
+    def computeSize(availWidth: Double, availHeight: Double): js.Tuple2[Double, Double]
+    
+    def draw(data: DisplayData, clearBefore: Boolean): Unit
+    
+    def eventToPosition(x: Double, y: Double): js.Tuple2[Double, Double]
+    
+    def getContainer(): HTMLElement | Null
+    
+    def schedule(cb: js.Function0[Unit]): Unit
+    
+    def setOptions(options: DisplayOptions): Unit
   }
   object Backend {
     

@@ -4,59 +4,48 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ByteUtils {
   
-  @JSImport("kdbxweb", "ByteUtils.arrayBufferEquals")
+  @JSImport("kdbxweb", "ByteUtils")
   @js.native
-  def arrayBufferEquals(ab1: ArrayBuffer, ab2: ArrayBuffer): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "ByteUtils.arrayToBuffer")
-  @js.native
-  def arrayToBuffer(arr: ArrayBuffer): ArrayBuffer = js.native
-  @JSImport("kdbxweb", "ByteUtils.arrayToBuffer")
-  @js.native
-  def arrayToBuffer(arr: Uint8Array): ArrayBuffer = js.native
+  @scala.inline
+  def arrayBufferEquals(ab1: ArrayBuffer, ab2: ArrayBuffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferEquals")(ab1.asInstanceOf[js.Any], ab2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("kdbxweb", "ByteUtils.base64ToBytes")
-  @js.native
-  def base64ToBytes(str: String): Uint8Array = js.native
+  @scala.inline
+  def arrayToBuffer(arr: ArrayBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def arrayToBuffer(arr: Uint8Array): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("kdbxweb", "ByteUtils.bytesToBase64")
-  @js.native
-  def bytesToBase64(arr: ArrayBuffer): String = js.native
-  @JSImport("kdbxweb", "ByteUtils.bytesToBase64")
-  @js.native
-  def bytesToBase64(arr: Uint8Array): String = js.native
+  @scala.inline
+  def base64ToBytes(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("kdbxweb", "ByteUtils.bytesToHex")
-  @js.native
-  def bytesToHex(arr: ArrayBuffer): String = js.native
-  @JSImport("kdbxweb", "ByteUtils.bytesToHex")
-  @js.native
-  def bytesToHex(arr: Uint8Array): String = js.native
+  @scala.inline
+  def bytesToBase64(arr: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToBase64")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def bytesToBase64(arr: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToBase64")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("kdbxweb", "ByteUtils.bytesToString")
-  @js.native
-  def bytesToString(arr: ArrayBuffer): String = js.native
-  @JSImport("kdbxweb", "ByteUtils.bytesToString")
-  @js.native
-  def bytesToString(arr: Uint8Array): String = js.native
+  @scala.inline
+  def bytesToHex(arr: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def bytesToHex(arr: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("kdbxweb", "ByteUtils.hexToBytes")
-  @js.native
-  def hexToBytes(hex: String): Uint8Array = js.native
+  @scala.inline
+  def bytesToString(arr: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def bytesToString(arr: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("kdbxweb", "ByteUtils.stringToBytes")
-  @js.native
-  def stringToBytes(str: String): Uint8Array = js.native
+  @scala.inline
+  def hexToBytes(hex: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBytes")(hex.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("kdbxweb", "ByteUtils.zeroBuffer")
-  @js.native
-  def zeroBuffer(buffer: ArrayBuffer): Unit = js.native
-  @JSImport("kdbxweb", "ByteUtils.zeroBuffer")
-  @js.native
-  def zeroBuffer(buffer: Uint8Array): Unit = js.native
+  @scala.inline
+  def stringToBytes(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def zeroBuffer(buffer: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def zeroBuffer(buffer: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

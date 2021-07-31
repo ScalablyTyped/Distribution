@@ -2,29 +2,27 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinPQ[T] extends StObject {
   
-  var N: js.Any = js.native
+  var N: js.Any
   
-  var compare: js.Any = js.native
+  var compare: js.Any
   
-  def delMin(): js.UndefOr[T] = js.native
+  def delMin(): js.UndefOr[T]
   
-  def enqueue(item: T): Unit = js.native
+  def enqueue(item: T): Unit
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  var s: js.Any = js.native
+  var s: js.Any
   
-  def sink(k: Double): Unit = js.native
+  def sink(k: Double): Unit
   
-  def size(): Double = js.native
+  def size(): Double
   
-  def swim(k: Double): Unit = js.native
+  def swim(k: Double): Unit
 }
 object MinPQ {
   
@@ -45,7 +43,7 @@ object MinPQ {
   }
   
   @scala.inline
-  implicit class MinPQMutableBuilder[Self <: MinPQ[_], T] (val x: Self with MinPQ[T]) extends AnyVal {
+  implicit class MinPQMutableBuilder[Self <: MinPQ[?], T] (val x: Self & MinPQ[T]) extends AnyVal {
     
     @scala.inline
     def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])

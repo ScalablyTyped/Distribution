@@ -2,21 +2,21 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RectHeightStyleEnumValues extends EmbindEnum {
+trait RectHeightStyleEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var IncludeLineSpacingBottom: RectHeightStyle = js.native
+  var IncludeLineSpacingBottom: RectHeightStyle
   
-  var IncludeLineSpacingMiddle: RectHeightStyle = js.native
+  var IncludeLineSpacingMiddle: RectHeightStyle
   
-  var IncludeLineSpacingTop: RectHeightStyle = js.native
+  var IncludeLineSpacingTop: RectHeightStyle
   
-  var Max: RectHeightStyle = js.native
+  var Max: RectHeightStyle
   
-  var Tight: RectHeightStyle = js.native
+  var Tight: RectHeightStyle
 }
 object RectHeightStyleEnumValues {
   

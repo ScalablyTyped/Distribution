@@ -3,21 +3,21 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait streamFailureArgs extends baseResponseArgs {
+trait streamFailureArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * The error generated while completing the request.
     */
-  var error: String = js.native
+  var error: String
   
   /**
     * Whether the client will automatically reconnect after the callback returns.
     */
-  var willReconnect: Boolean = js.native
+  var willReconnect: Boolean
 }
 object streamFailureArgs {
   

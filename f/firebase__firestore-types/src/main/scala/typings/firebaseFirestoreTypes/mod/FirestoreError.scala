@@ -2,19 +2,17 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirestoreError extends StObject {
   
-  var code: FirestoreErrorCode = js.native
+  var code: FirestoreErrorCode
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
 }
 object FirestoreError {
   

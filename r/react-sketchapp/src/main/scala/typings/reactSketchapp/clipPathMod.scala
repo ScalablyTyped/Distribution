@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clipPathMod {
@@ -16,12 +15,11 @@ object clipPathMod {
   
   type ClipPath = Component[ClipPathProps, js.Object, js.Any]
   
-  @js.native
   trait ClipPathProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var id: String = js.native
+    var id: String
   }
   object ClipPathProps {
     

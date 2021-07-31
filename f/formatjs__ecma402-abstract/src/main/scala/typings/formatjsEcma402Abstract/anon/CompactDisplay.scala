@@ -8,31 +8,29 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsStyle
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompactDisplay extends StObject {
   
-  var compactDisplay: js.UndefOr[NumberFormatOptionsCompactDisplay] = js.native
+  var compactDisplay: js.UndefOr[NumberFormatOptionsCompactDisplay] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: js.UndefOr[NumberFormatOptionsCurrencyDisplay] = js.native
+  var currencyDisplay: js.UndefOr[NumberFormatOptionsCurrencyDisplay] = js.undefined
   
-  var currencySign: js.UndefOr[NumberFormatOptionsCurrencySign] = js.native
+  var currencySign: js.UndefOr[NumberFormatOptionsCurrencySign] = js.undefined
   
-  var notation: NumberFormatOptionsNotation = js.native
+  var notation: NumberFormatOptionsNotation
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var style: NumberFormatOptionsStyle = js.native
+  var style: NumberFormatOptionsStyle
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: js.UndefOr[NumberFormatOptionsUnitDisplay] = js.native
+  var unitDisplay: js.UndefOr[NumberFormatOptionsUnitDisplay] = js.undefined
   
-  var useGrouping: Boolean = js.native
+  var useGrouping: Boolean
 }
 object CompactDisplay {
   

@@ -2,95 +2,93 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
   // Control options
-  var attributionControl: js.UndefOr[Boolean] = js.native
+  var attributionControl: js.UndefOr[Boolean] = js.undefined
   
-  var bounceAtZoomLimits: js.UndefOr[Boolean] = js.native
+  var bounceAtZoomLimits: js.UndefOr[Boolean] = js.undefined
   
-  var boxZoom: js.UndefOr[Boolean] = js.native
+  var boxZoom: js.UndefOr[Boolean] = js.undefined
   
-  var center: js.UndefOr[LatLngExpression] = js.native
+  var center: js.UndefOr[LatLngExpression] = js.undefined
   
   // Interaction options
-  var closePopupOnClick: js.UndefOr[Boolean] = js.native
+  var closePopupOnClick: js.UndefOr[Boolean] = js.undefined
   
   // Map state options
-  var crs: js.UndefOr[CRS] = js.native
+  var crs: js.UndefOr[CRS] = js.undefined
   
-  var doubleClickZoom: js.UndefOr[Zoom] = js.native
+  var doubleClickZoom: js.UndefOr[Zoom] = js.undefined
   
-  var dragging: js.UndefOr[Boolean] = js.native
+  var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var easeLinearity: js.UndefOr[Double] = js.native
+  var easeLinearity: js.UndefOr[Double] = js.undefined
   
   // Animation options
-  var fadeAnimation: js.UndefOr[Boolean] = js.native
+  var fadeAnimation: js.UndefOr[Boolean] = js.undefined
   
   // Panning inertia options
-  var inertia: js.UndefOr[Boolean] = js.native
+  var inertia: js.UndefOr[Boolean] = js.undefined
   
-  var inertiaDeceleration: js.UndefOr[Double] = js.native
+  var inertiaDeceleration: js.UndefOr[Double] = js.undefined
   
-  var inertiaMaxSpeed: js.UndefOr[Double] = js.native
+  var inertiaMaxSpeed: js.UndefOr[Double] = js.undefined
   
   // Keyboard navigation options
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardPanDelta: js.UndefOr[Double] = js.native
+  var keyboardPanDelta: js.UndefOr[Double] = js.undefined
   
-  var layers: js.UndefOr[js.Array[Layer]] = js.native
+  var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   
-  var markerZoomAnimation: js.UndefOr[Boolean] = js.native
+  var markerZoomAnimation: js.UndefOr[Boolean] = js.undefined
   
-  var maxBounds: js.UndefOr[LatLngBoundsExpression] = js.native
+  var maxBounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
   
-  var maxBoundsViscosity: js.UndefOr[Double] = js.native
+  var maxBoundsViscosity: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var preferCanvas: js.UndefOr[Boolean] = js.native
+  var preferCanvas: js.UndefOr[Boolean] = js.undefined
   
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
   
   // Mousewheel options
-  var scrollWheelZoom: js.UndefOr[Zoom] = js.native
+  var scrollWheelZoom: js.UndefOr[Zoom] = js.undefined
   
   // Touch interaction options
-  var tap: js.UndefOr[Boolean] = js.native
+  var tap: js.UndefOr[Boolean] = js.undefined
   
-  var tapTolerance: js.UndefOr[Double] = js.native
+  var tapTolerance: js.UndefOr[Double] = js.undefined
   
-  var touchZoom: js.UndefOr[Zoom] = js.native
+  var touchZoom: js.UndefOr[Zoom] = js.undefined
   
-  var trackResize: js.UndefOr[Boolean] = js.native
+  var trackResize: js.UndefOr[Boolean] = js.undefined
   
-  var transform3DLimit: js.UndefOr[Double] = js.native
+  var transform3DLimit: js.UndefOr[Double] = js.undefined
   
-  var wheelDebounceTime: js.UndefOr[Double] = js.native
+  var wheelDebounceTime: js.UndefOr[Double] = js.undefined
   
-  var wheelPxPerZoomLevel: js.UndefOr[Double] = js.native
+  var wheelPxPerZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var worldCopyJump: js.UndefOr[Boolean] = js.native
+  var worldCopyJump: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
-  var zoomAnimation: js.UndefOr[Boolean] = js.native
+  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
   
-  var zoomAnimationThreshold: js.UndefOr[Double] = js.native
+  var zoomAnimationThreshold: js.UndefOr[Double] = js.undefined
   
-  var zoomControl: js.UndefOr[Boolean] = js.native
+  var zoomControl: js.UndefOr[Boolean] = js.undefined
   
-  var zoomDelta: js.UndefOr[Double] = js.native
+  var zoomDelta: js.UndefOr[Double] = js.undefined
   
-  var zoomSnap: js.UndefOr[Double] = js.native
+  var zoomSnap: js.UndefOr[Double] = js.undefined
 }
 object MapOptions {
   

@@ -2,20 +2,18 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.StateACL> */
-@js.native
 trait PartialStateACL extends StObject {
   
-  var `object`: js.UndefOr[Double] = js.native
+  var `object`: js.UndefOr[Double] = js.undefined
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var ownerGroup: js.UndefOr[String] = js.native
+  var ownerGroup: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[Double] = js.native
+  var state: js.UndefOr[Double] = js.undefined
 }
 object PartialStateACL {
   

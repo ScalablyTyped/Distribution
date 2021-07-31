@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.lex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BotAliasConversationLogs extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to write your logs to CloudWatch Logs or an S3 bucket. Must be between 20 and 2048 characters in length.
     */
-  var iamRoleArn: String = js.native
+  var iamRoleArn: String
   
   /**
     * The settings for your conversation logs. You can log text, audio, or both. Attributes are documented under log_settings.
     */
-  var logSettings: js.UndefOr[js.Array[BotAliasConversationLogsLogSetting]] = js.native
+  var logSettings: js.UndefOr[js.Array[BotAliasConversationLogsLogSetting]] = js.undefined
 }
 object BotAliasConversationLogs {
   

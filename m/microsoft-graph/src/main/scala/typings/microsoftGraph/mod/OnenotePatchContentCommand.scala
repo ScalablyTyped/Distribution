@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnenotePatchContentCommand extends StObject {
   
   // The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend.
-  var action: js.UndefOr[OnenotePatchActionType] = js.native
+  var action: js.UndefOr[OnenotePatchActionType] = js.undefined
   
   /**
     * A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary
     * data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     */
-  var content: js.UndefOr[NullableOption[String]] = js.native
+  var content: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The location to add the supplied content, relative to the target element. The possible values are: after (default) or
     * before.
     */
-  var position: js.UndefOr[NullableOption[OnenotePatchInsertPosition]] = js.native
+  var position: js.UndefOr[NullableOption[OnenotePatchInsertPosition]] = js.undefined
   
   /**
     * The element to update. Must be the #&amp;lt;data-id&amp;gt; or the generated &amp;lt;id&amp;gt; of the element, or the
     * body or title keyword.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object OnenotePatchContentCommand {
   

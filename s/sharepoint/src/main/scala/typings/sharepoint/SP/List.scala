@@ -4,12 +4,13 @@ import typings.sharepoint.SP.Workflow.WorkflowAssociationCollection
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a list on a SharePoint Web site. */
 @js.native
-trait List[T] extends SecurableObject {
+trait List[T]
+  extends StObject
+     with SecurableObject {
   
   /** Creates a new list item in the list. */
   def addItem(parameters: ListItemCreationInformation): ListItem[T] = js.native
@@ -27,7 +28,7 @@ trait List[T] extends SecurableObject {
   def getItems(query: CamlQuery): ListItemCollection[T] = js.native
   
   /** Returns array of items describing changes since time specified in the query */
-  def getListItemChangesSinceToken(query: ChangeLogItemQuery): js.Array[_] = js.native
+  def getListItemChangesSinceToken(query: ChangeLogItemQuery): js.Array[js.Any] = js.native
   
   /** Returns a collection of lookup fields that use this list as a data source and that have FieldLookup.IsRelationship set to true. */
   def getRelatedFields(): RelatedFieldCollection = js.native

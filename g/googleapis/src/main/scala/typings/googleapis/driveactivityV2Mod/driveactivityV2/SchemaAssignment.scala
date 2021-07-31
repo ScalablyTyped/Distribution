@@ -2,19 +2,17 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A comment with an assignment.
   */
-@js.native
 trait SchemaAssignment extends StObject {
   
   /**
     * The sub-type of this event.
     */
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
 }
 object SchemaAssignment {
   

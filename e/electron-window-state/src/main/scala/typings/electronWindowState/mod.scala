@@ -5,7 +5,6 @@ import typings.electronWindowState.mod.ElectronWindowState.WindowState
 import typings.electronWindowState.mod.ElectronWindowState.WindowStateKeeperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,32 +12,34 @@ object mod {
   /*
     * Load the previous state with fallback to defaults
     */
+  @scala.inline
+  def apply(opts: WindowStateKeeperOptions): WindowState = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[WindowState]
+  
   @JSImport("electron-window-state", JSImport.Namespace)
   @js.native
-  def apply(opts: WindowStateKeeperOptions): WindowState = js.native
+  val ^ : js.Any = js.native
   
   object ElectronWindowState {
     
-    @js.native
     trait WindowState extends StObject {
       
       /*
         * The saved heigth of loaded state.
         * defaultHeight if the state has not been saved yet.
         */
-      var height: Double = js.native
+      var height: Double
       
       /*
         * true if the window state was saved while the the window was in full screen
         * mode. undefined if the state has not been saved yet.
         */
-      var isFullScreen: Boolean = js.native
+      var isFullScreen: Boolean
       
       /*
         * true if the window state was saved while the the window was maximized.
         * undefined if the state has not been saved yet.
         */
-      var isMaximized: Boolean = js.native
+      var isMaximized: Boolean
       
       /*
         * Register listeners on the given BrowserWindow for events that are related
@@ -46,31 +47,31 @@ object mod {
         * It will also restore the window's maximized or full screen state.
         * When the window is closed we automatically remove the listeners and save the state.
         */
-      def manage(win: BrowserWindow): Unit = js.native
+      def manage(win: BrowserWindow): Unit
       
       /*
         * Saves the current state of the given BrowserWindow.
         * This exists mostly for legacy purposes, and in most cases it's better to just use manage.
         */
-      def saveState(win: BrowserWindow): Unit = js.native
+      def saveState(win: BrowserWindow): Unit
       
       /*
         * The saved width of loaded state.
         * defaultWidth if the state has not been saved yet.
         */
-      var width: Double = js.native
+      var width: Double
       
       /*
         * The saved x coordinate of the loaded state.
         * undefined if the state has not been saved yet.
         */
-      var x: Double = js.native
+      var x: Double
       
       /*
         * The saved y coordinate of the loaded state.
         * undefined if the state has not been saved yet.
         */
-      var y: Double = js.native
+      var y: Double
     }
     object WindowState {
       
@@ -118,41 +119,40 @@ object mod {
       }
     }
     
-    @js.native
     trait WindowStateKeeperOptions extends StObject {
       
       /*
         * The height that should be returned if no file exists yet. Defaults to 600.
         */
-      var defaultHeight: js.UndefOr[Double] = js.native
+      var defaultHeight: js.UndefOr[Double] = js.undefined
       
       /*
         * The width that should be returned if no file exists yet. Defaults to 800.
         */
-      var defaultWidth: js.UndefOr[Double] = js.native
+      var defaultWidth: js.UndefOr[Double] = js.undefined
       
       /*
         * The name of file. Defaults to window-state.json
         */
-      var file: js.UndefOr[String] = js.native
+      var file: js.UndefOr[String] = js.undefined
       
       /*
         * Should we automatically restore the window to full screen,
         * if it was last closed full screen. Defaults to true
         */
-      var fullScreen: js.UndefOr[Boolean] = js.native
+      var fullScreen: js.UndefOr[Boolean] = js.undefined
       
       /*
         * Should we automatically maximize the window,
         * if it was last closed maximized. Defaults to true
         */
-      var maximize: js.UndefOr[Boolean] = js.native
+      var maximize: js.UndefOr[Boolean] = js.undefined
       
       /*
         * The path where the state file should be written to.
         * Defaults to app.getPath('userData')
         */
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
     }
     object WindowStateKeeperOptions {
       

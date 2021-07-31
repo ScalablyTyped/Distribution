@@ -2,18 +2,18 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportJpgOptions extends ExportOptions {
+trait ExportJpgOptions
+  extends StObject
+     with ExportOptions {
   
   /**
     * quality Specifies the quality of the image from 0
     * (low quality, low filesize) to 1 (high quality, high filesize).
     * If not set, the browser's default quality value is used.
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
 }
 object ExportJpgOptions {
   

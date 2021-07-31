@@ -6,7 +6,6 @@ import typings.plottable.drawStepMod.DrawStep
 import typings.plottable.interfacesMod.IAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Plot")
@@ -37,15 +36,12 @@ object Plot {
   @scala.inline
   def _ANIMATION_MAX_DURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANIMATION_MAX_DURATION")(x.asInstanceOf[js.Any])
   
-  @JSImport("plottable", "Plot._scaledAccessor")
-  @js.native
-  def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[_] = js.native
+  @scala.inline
+  def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_scaledAccessor")(binding.asInstanceOf[js.Any]).asInstanceOf[IAccessor[js.Any]]
   
-  @JSImport("plottable", "Plot.applyDrawSteps")
-  @js.native
-  def applyDrawSteps(drawSteps: js.Array[DrawStep], dataset: typings.plottable.datasetMod.Dataset): js.Array[AppliedDrawStep] = js.native
+  @scala.inline
+  def applyDrawSteps(drawSteps: js.Array[DrawStep], dataset: typings.plottable.datasetMod.Dataset): js.Array[AppliedDrawStep] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDrawSteps")(drawSteps.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[js.Array[AppliedDrawStep]]
   
-  @JSImport("plottable", "Plot.getTotalDrawTime")
-  @js.native
-  def getTotalDrawTime(data: js.Array[_], drawSteps: js.Array[DrawStep]): Double = js.native
+  @scala.inline
+  def getTotalDrawTime(data: js.Array[js.Any], drawSteps: js.Array[DrawStep]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTotalDrawTime")(data.asInstanceOf[js.Any], drawSteps.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

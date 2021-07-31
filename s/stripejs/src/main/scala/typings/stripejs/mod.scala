@@ -17,15 +17,13 @@ import typings.stripejs.tokenMod.TokenData
 import typings.stripejs.tokenMod.TokenResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait StripeConfigOptions extends StObject {
     
-    var stripeAccount: String = js.native
+    var stripeAccount: String
   }
   object StripeConfigOptions {
     
@@ -43,46 +41,45 @@ object mod {
     }
   }
   
-  @js.native
   trait StripeError extends StObject {
     
     /**
       * For card errors, the ID of the failed charge
       */
-    var charge: js.UndefOr[String] = js.native
+    var charge: js.UndefOr[String] = js.undefined
     
     /**
       * For some errors that could be handled programmatically,
       * a short string indicating the error code reported
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * For card errors resulting from a card issuer decline,
       * a short string indicating the card issuer’s reason for the decline if they provide one
       */
-    var decline_code: js.UndefOr[String] = js.native
+    var decline_code: js.UndefOr[String] = js.undefined
     
     /**
       * A URL to more information about the error code reported
       */
-    var doc_url: js.UndefOr[String] = js.native
+    var doc_url: js.UndefOr[String] = js.undefined
     
     /**
       * A human-readable message providing more details about the error.
       * NOTE: For card errors, these messages can be shown to your users
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * If the error is parameter-specific, the parameter related to the error
       */
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
     /**
       * The type of error that has occurred
       */
-    var `type`: errorType = js.native
+    var `type`: errorType
   }
   object StripeError {
     

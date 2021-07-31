@@ -2,25 +2,23 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionRequest extends StObject {
   
-  var appId: String = js.native
+  var appId: String
   
-  var capabilities: js.Array[Capability] = js.native
+  var capabilities: js.Array[Capability]
   
-  var language: String | Null = js.native
+  var language: String | Null
   
-  var requestSessionTimeout: Double = js.native
+  var requestSessionTimeout: Double
 }
 object SessionRequest {
   
   @scala.inline
   def apply(appId: String, capabilities: js.Array[Capability], requestSessionTimeout: Double): SessionRequest = {
-    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], requestSessionTimeout = requestSessionTimeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], requestSessionTimeout = requestSessionTimeout.asInstanceOf[js.Any], language = null)
     __obj.asInstanceOf[SessionRequest]
   }
   

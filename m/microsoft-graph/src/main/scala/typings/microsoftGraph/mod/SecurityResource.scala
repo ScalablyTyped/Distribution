@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityResource extends StObject {
   
   // Name of the resource that is related to current alert. Required.
-  var resource: js.UndefOr[NullableOption[String]] = js.native
+  var resource: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents type of security resources related to an alert. Possible values are: attacked, related.
-  var resourceType: js.UndefOr[NullableOption[SecurityResourceType]] = js.native
+  var resourceType: js.UndefOr[NullableOption[SecurityResourceType]] = js.undefined
 }
 object SecurityResource {
   

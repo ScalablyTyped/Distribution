@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.reactLeaflet.anon.AddBaseLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-leaflet", "LayersControl")
@@ -66,24 +65,23 @@ object LayersControl {
     def addLayer(layer: Layer): Unit = js.native
   }
   
-  @js.native
   trait ControlledLayerProps extends StObject {
     
-    var addBaseLayer: js.UndefOr[AddLayerHandler] = js.native
+    var addBaseLayer: js.UndefOr[AddLayerHandler] = js.undefined
     
-    var addOverlay: js.UndefOr[AddLayerHandler] = js.native
+    var addOverlay: js.UndefOr[AddLayerHandler] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: Children = js.native
+    var children: Children
     
-    var leaflet: js.UndefOr[LeafletContext] = js.native
+    var leaflet: js.UndefOr[LeafletContext] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var removeLayer: js.UndefOr[RemoveLayerHandler] = js.native
+    var removeLayer: js.UndefOr[RemoveLayerHandler] = js.undefined
     
-    var removeLayerControl: js.UndefOr[RemoveLayerHandler] = js.native
+    var removeLayerControl: js.UndefOr[RemoveLayerHandler] = js.undefined
   }
   object ControlledLayerProps {
     

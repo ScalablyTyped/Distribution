@@ -2,20 +2,18 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Automatically resizes one or more dimensions based on the contents of the
   * cells in that dimension.
   */
-@js.native
 trait SchemaAutoResizeDimensionsRequest extends StObject {
   
   /**
     * The dimensions to automatically resize.
     */
-  var dimensions: js.UndefOr[SchemaDimensionRange] = js.native
+  var dimensions: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaAutoResizeDimensionsRequest {
   

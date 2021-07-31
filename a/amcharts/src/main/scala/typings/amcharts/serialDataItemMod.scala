@@ -2,38 +2,64 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serialDataItemMod {
   
   @JSImport("amcharts/SerialDataItem", JSImport.Default)
   @js.native
-  class default () extends SerialDataItem
+  class default ()
+    extends StObject
+       with SerialDataItem {
+    
+    /**
+      * You can access each GraphDataItem using this object.
+      * The data structure is: graphDataItem = serialDataItem.axes[axisId].graphs[graphId].
+      */
+    /* CompleteClass */
+    var axes: js.Object = js.native
+    
+    /**
+      * category value. String if parseDates is false, Date if true.
+      */
+    /* CompleteClass */
+    var category: js.Any = js.native
+    
+    /**
+      * Timestamp of a series date. Avalable only if parseDates property of CategoryAxis is set to true.
+      */
+    /* CompleteClass */
+    var time: Double = js.native
+    
+    /**
+      * Coordinate (horizontal or vertical, depends on chart's rotate property) of the series.
+      */
+    /* CompleteClass */
+    var x: Double = js.native
+  }
   
-  @js.native
   trait SerialDataItem extends StObject {
     
     /**
       * You can access each GraphDataItem using this object.
       * The data structure is: graphDataItem = serialDataItem.axes[axisId].graphs[graphId].
       */
-    var axes: js.Object = js.native
+    var axes: js.Object
     
     /**
       * category value. String if parseDates is false, Date if true.
       */
-    var category: js.Any = js.native
+    var category: js.Any
     
     /**
       * Timestamp of a series date. Avalable only if parseDates property of CategoryAxis is set to true.
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * Coordinate (horizontal or vertical, depends on chart's rotate property) of the series.
       */
-    var x: Double = js.native
+    var x: Double
   }
   object SerialDataItem {
     

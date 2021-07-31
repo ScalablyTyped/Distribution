@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait ChartAxisTickLabelPosition extends StObject
 object ChartAxisTickLabelPosition extends StObject {
   
   @js.native
-  sealed trait high extends ChartAxisTickLabelPosition
+  sealed trait high
+    extends StObject
+       with ChartAxisTickLabelPosition
   
   @js.native
-  sealed trait low extends ChartAxisTickLabelPosition
+  sealed trait low
+    extends StObject
+       with ChartAxisTickLabelPosition
   
   @js.native
-  sealed trait nextToAxis extends ChartAxisTickLabelPosition
+  sealed trait nextToAxis
+    extends StObject
+       with ChartAxisTickLabelPosition
   
   @js.native
-  sealed trait none extends ChartAxisTickLabelPosition
+  sealed trait none
+    extends StObject
+       with ChartAxisTickLabelPosition
 }

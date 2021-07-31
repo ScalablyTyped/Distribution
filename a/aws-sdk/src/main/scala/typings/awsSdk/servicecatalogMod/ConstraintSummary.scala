@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstraintSummary extends StObject {
   
   /**
     * The description of the constraint.
     */
-  var Description: js.UndefOr[ConstraintDescription] = js.native
+  var Description: js.UndefOr[ConstraintDescription] = js.undefined
   
   /**
     * The type of constraint.    LAUNCH     NOTIFICATION    STACKSET    TEMPLATE   
     */
-  var Type: js.UndefOr[ConstraintType] = js.native
+  var Type: js.UndefOr[ConstraintType] = js.undefined
 }
 object ConstraintSummary {
   

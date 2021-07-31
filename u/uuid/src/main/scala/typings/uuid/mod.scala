@@ -4,7 +4,6 @@ import typings.std.ArrayLike
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,25 +23,81 @@ object mod {
   val stringify: typings.uuid.mod.stringify = js.native
   type stringify = js.Function2[/* buffer */ InputBuffer, /* offset */ js.UndefOr[Double], String]
   
+  @js.native
+  trait v1
+    extends v1Buffer
+       with v1String {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* options */ js.UndefOr[V1Options]): String = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* options */ js.UndefOr[V1Options | Null],
+      arg2: /* buffer */ OutputBuffer,
+      arg3: /* offset */ js.UndefOr[Double]
+    ): OutputBuffer = js.native
+  }
   @JSImport("uuid", "v1")
   @js.native
   val v1: typings.uuid.mod.v1 = js.native
-  type v1 = v1Buffer with v1String
   
+  @js.native
+  trait v3
+    extends v3Buffer
+       with v3String
+       with v3Static {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* name */ String | InputBuffer, arg2: /* namespace */ String | InputBuffer): String = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* name */ String | InputBuffer,
+      arg2: /* namespace */ String | InputBuffer,
+      arg3: /* buffer */ OutputBuffer,
+      arg4: /* offset */ js.UndefOr[Double]
+    ): OutputBuffer = js.native
+  }
   @JSImport("uuid", "v3")
   @js.native
   val v3: typings.uuid.mod.v3 = js.native
-  type v3 = v3Buffer with v3String with v3Static
   
+  @js.native
+  trait v4
+    extends v4Buffer
+       with v4String {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* options */ js.UndefOr[V4Options]): String = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* options */ js.UndefOr[V4Options | Null],
+      arg2: /* buffer */ OutputBuffer,
+      arg3: /* offset */ js.UndefOr[Double]
+    ): OutputBuffer = js.native
+  }
   @JSImport("uuid", "v4")
   @js.native
   val v4: typings.uuid.mod.v4 = js.native
-  type v4 = v4Buffer with v4String
   
+  @js.native
+  trait v5
+    extends v5Buffer
+       with v5String
+       with v5Static {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* name */ String | InputBuffer, arg2: /* namespace */ String | InputBuffer): String = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* name */ String | InputBuffer,
+      arg2: /* namespace */ String | InputBuffer,
+      arg3: /* buffer */ OutputBuffer,
+      arg4: /* offset */ js.UndefOr[Double]
+    ): OutputBuffer = js.native
+  }
   @JSImport("uuid", "v5")
   @js.native
   val v5: typings.uuid.mod.v5 = js.native
-  type v5 = v5Buffer with v5String with v5Static
   
   @JSImport("uuid", "validate")
   @js.native
@@ -59,10 +114,11 @@ object mod {
   // Uses ArrayLike to admit Unit8 and co.
   type OutputBuffer = ArrayLike[Double]
   
-  @js.native
-  trait RandomOptions extends V4Options {
+  trait RandomOptions
+    extends StObject
+       with V4Options {
     
-    var random: js.UndefOr[InputBuffer] = js.native
+    var random: js.UndefOr[InputBuffer] = js.undefined
   }
   object RandomOptions {
     
@@ -83,10 +139,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait RngOptions extends V4Options {
+  trait RngOptions
+    extends StObject
+       with V4Options {
     
-    var rng: js.UndefOr[js.Function0[InputBuffer]] = js.native
+    var rng: js.UndefOr[js.Function0[InputBuffer]] = js.undefined
   }
   object RngOptions {
     
@@ -107,16 +164,15 @@ object mod {
     }
   }
   
-  @js.native
   trait V1BaseOptions extends StObject {
     
-    var clockseq: js.UndefOr[Double] = js.native
+    var clockseq: js.UndefOr[Double] = js.undefined
     
-    var msecs: js.UndefOr[Double | Date] = js.native
+    var msecs: js.UndefOr[Double | Date] = js.undefined
     
-    var node: js.UndefOr[InputBuffer] = js.native
+    var node: js.UndefOr[InputBuffer] = js.undefined
     
-    var nsecs: js.UndefOr[Double] = js.native
+    var nsecs: js.UndefOr[Double] = js.undefined
   }
   object V1BaseOptions {
     
@@ -175,10 +231,10 @@ object mod {
     }
   }
   
-  @js.native
   trait V1RandomOptions
-    extends RandomOptions
+    extends StObject
        with V1BaseOptions
+       with RandomOptions
        with V1Options
   object V1RandomOptions {
     
@@ -189,10 +245,10 @@ object mod {
     }
   }
   
-  @js.native
   trait V1RngOptions
-    extends RngOptions
+    extends StObject
        with V1BaseOptions
+       with RngOptions
        with V1Options
   object V1RngOptions {
     
@@ -240,14 +296,13 @@ object mod {
     OutputBuffer
   ]
   
-  @js.native
   trait v3Static extends StObject {
     
     // https://github.com/uuidjs/uuid/blob/master/src/v35.js#L22
-    var DNS: String = js.native
+    var DNS: String
     
     // https://github.com/uuidjs/uuid/blob/master/src/v35.js#L23
-    var URL: String = js.native
+    var URL: String
   }
   object v3Static {
     
@@ -287,14 +342,13 @@ object mod {
     OutputBuffer
   ]
   
-  @js.native
   trait v5Static extends StObject {
     
     // https://github.com/uuidjs/uuid/blob/master/src/v35.js#L22
-    var DNS: String = js.native
+    var DNS: String
     
     // https://github.com/uuidjs/uuid/blob/master/src/v35.js#L23
-    var URL: String = js.native
+    var URL: String
   }
   object v5Static {
     

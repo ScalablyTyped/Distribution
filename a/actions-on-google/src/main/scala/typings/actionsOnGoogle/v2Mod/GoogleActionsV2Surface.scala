@@ -2,17 +2,15 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2Surface extends StObject {
   
   /**
     * A list of capabilities the surface supports at the time of the request
     * e.g. `actions.capability.AUDIO_OUTPUT`
     */
-  var capabilities: js.UndefOr[js.Array[GoogleActionsV2Capability]] = js.native
+  var capabilities: js.UndefOr[js.Array[GoogleActionsV2Capability]] = js.undefined
 }
 object GoogleActionsV2Surface {
   

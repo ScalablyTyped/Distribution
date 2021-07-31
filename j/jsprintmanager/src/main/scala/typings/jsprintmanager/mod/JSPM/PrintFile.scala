@@ -3,7 +3,6 @@ package typings.jsprintmanager.mod.JSPM
 import typings.jsprintmanager.mod.zip.Reader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.PrintFile")
@@ -15,9 +14,9 @@ class PrintFile protected () extends StObject {
   var _copies: js.Any = js.native
   
   /* protected */ def bool2str(value: js.Any): String = js.native
-  /* protected */ def bool2str(value: js.Any, true_val: js.UndefOr[scala.Nothing], false_val: String): String = js.native
   /* protected */ def bool2str(value: js.Any, true_val: String): String = js.native
   /* protected */ def bool2str(value: js.Any, true_val: String, false_val: String): String = js.native
+  /* protected */ def bool2str(value: js.Any, true_val: Unit, false_val: String): String = js.native
   
   var copies: Double = js.native
   

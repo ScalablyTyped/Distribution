@@ -3,19 +3,17 @@ package typings.antd.anon
 import typings.antd.generateCalendarMod.CalendarMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChange[DateType] extends StObject {
   
-  def onChange(date: DateType): Unit = js.native
+  def onChange(date: DateType): Unit
   
-  def onTypeChange(`type`: CalendarMode): Unit = js.native
+  def onTypeChange(`type`: CalendarMode): Unit
   
-  var `type`: CalendarMode = js.native
+  var `type`: CalendarMode
   
-  var value: DateType = js.native
+  var value: DateType
 }
 object OnChange {
   
@@ -32,7 +30,7 @@ object OnChange {
   }
   
   @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange[_], DateType] (val x: Self with OnChange[DateType]) extends AnyVal {
+  implicit class OnChangeMutableBuilder[Self <: OnChange[?], DateType] (val x: Self & OnChange[DateType]) extends AnyVal {
     
     @scala.inline
     def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))

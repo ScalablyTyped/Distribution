@@ -3,17 +3,15 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleOptions extends StObject {
   
-  var meta: CustomPluginOptions = js.native
+  var meta: CustomPluginOptions
   
-  var moduleSideEffects: Boolean | `no-treeshake` = js.native
+  var moduleSideEffects: Boolean | `no-treeshake`
   
-  var syntheticNamedExports: Boolean | String = js.native
+  var syntheticNamedExports: Boolean | String
 }
 object ModuleOptions {
   

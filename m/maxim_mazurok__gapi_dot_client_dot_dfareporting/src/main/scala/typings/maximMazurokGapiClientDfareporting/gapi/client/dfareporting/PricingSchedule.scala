@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricingSchedule extends StObject {
   
   /** Placement cap cost option. */
-  var capCostOption: js.UndefOr[String] = js.native
+  var capCostOption: js.UndefOr[String] = js.undefined
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Whether this placement is flighted. If true, pricing periods will be computed automatically. */
-  var flighted: js.UndefOr[Boolean] = js.native
+  var flighted: js.UndefOr[Boolean] = js.undefined
   
   /** Floodlight activity ID associated with this placement. This field should be set when placement pricing type is set to PRICING_TYPE_CPA. */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /** Pricing periods for this placement. */
-  var pricingPeriods: js.UndefOr[js.Array[PricingSchedulePricingPeriod]] = js.native
+  var pricingPeriods: js.UndefOr[js.Array[PricingSchedulePricingPeriod]] = js.undefined
   
   /** Placement pricing type. This field is required on insertion. */
-  var pricingType: js.UndefOr[String] = js.native
+  var pricingType: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
-  var testingStartDate: js.UndefOr[String] = js.native
+  var testingStartDate: js.UndefOr[String] = js.undefined
 }
 object PricingSchedule {
   

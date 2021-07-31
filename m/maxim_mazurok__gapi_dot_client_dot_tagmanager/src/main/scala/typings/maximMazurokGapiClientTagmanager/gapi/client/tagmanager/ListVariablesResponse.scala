@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVariablesResponse extends StObject {
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** All GTM Variables of a GTM Container. */
-  var variable: js.UndefOr[js.Array[Variable]] = js.native
+  var variable: js.UndefOr[js.Array[Variable]] = js.undefined
 }
 object ListVariablesResponse {
   

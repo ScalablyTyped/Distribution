@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Trait of group members
   */
-@js.native
-trait GroupCharacteristic extends BackboneElement {
+trait GroupCharacteristic
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'exclude'.
     */
-  var _exclude: js.UndefOr[Element] = js.native
+  var _exclude: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueBoolean'.
     */
-  var _valueBoolean: js.UndefOr[Element] = js.native
+  var _valueBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Kind of characteristic
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Group includes or excludes
     */
-  var exclude: Boolean = js.native
+  var exclude: Boolean
   
   /**
     * Period over which characteristic is tested
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Value held by characteristic
     */
-  var valueBoolean: js.UndefOr[Boolean] = js.native
+  var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Value held by characteristic
     */
-  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Value held by characteristic
     */
-  var valueQuantity: js.UndefOr[Quantity] = js.native
+  var valueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Value held by characteristic
     */
-  var valueRange: js.UndefOr[Range] = js.native
+  var valueRange: js.UndefOr[Range] = js.undefined
 }
 object GroupCharacteristic {
   

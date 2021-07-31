@@ -10,9 +10,9 @@ Firebase Component Platform
 | ------------------ | :-------------: |
 | Full name          | @firebase/component |
 | Keywords           | - |
-| # releases         | 657 |
-| # dependents       | 14 |
-| # downloads        | 40995824 |
+| # releases         | 886 |
+| # dependents       | 19 |
+| # downloads        | 53085303 |
 | # stars            | 0 |
 
 ## Links

@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.AppsRevokeInstallationAccessTokenReques
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsRevokeInstallationAccessTokenEndpoint extends StObject {
   
-  var parameters: AppsRevokeInstallationAccessTokenEndpoint = js.native
+  var parameters: AppsRevokeInstallationAccessTokenEndpoint
   
-  var request: AppsRevokeInstallationAccessTokenRequestOptions = js.native
+  var request: AppsRevokeInstallationAccessTokenRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersAppsRevokeInstallationAccessTokenEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersAppsRevokeInstallationAccessTokenEndpoint {
   def apply(
     parameters: AppsRevokeInstallationAccessTokenEndpoint,
     request: AppsRevokeInstallationAccessTokenRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersAppsRevokeInstallationAccessTokenEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersAppsRevokeInstallationAccessTokenEndpoint]
@@ -39,6 +37,6 @@ object ParametersAppsRevokeInstallationAccessTokenEndpoint {
     def setRequest(value: AppsRevokeInstallationAccessTokenRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

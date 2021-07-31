@@ -3,15 +3,13 @@ package typings.iobroker.anon
 import typings.iobroker.mod.global.ioBroker.ChownFileResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entries extends StObject {
   
-  var entries: js.Array[ChownFileResult] = js.native
+  var entries: js.Array[ChownFileResult]
   
-  var id: String = js.native
+  var id: String
 }
 object Entries {
   

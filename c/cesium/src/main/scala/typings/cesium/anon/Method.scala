@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Method extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var url: String | js.Promise[String] = js.native
+  var url: String | js.Promise[String]
 }
 object Method {
   

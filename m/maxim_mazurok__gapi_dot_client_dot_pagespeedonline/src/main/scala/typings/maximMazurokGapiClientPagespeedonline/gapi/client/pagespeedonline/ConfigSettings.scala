@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigSettings extends StObject {
   
   /** How Lighthouse was run, e.g. from the Chrome extension or from the npm module. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /** The form factor the emulation should use. */
-  var emulatedFormFactor: js.UndefOr[String] = js.native
+  var emulatedFormFactor: js.UndefOr[String] = js.undefined
   
   /** The locale setting. */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /** List of categories of audits the run should conduct. */
-  var onlyCategories: js.UndefOr[js.Any] = js.native
+  var onlyCategories: js.UndefOr[js.Any] = js.undefined
 }
 object ConfigSettings {
   

@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * at least one of the spreadsheets.readonly, spreadsheets, drive.readonly, or
   * drive OAuth scopes.
   */
-@js.native
 trait SchemaRefreshSheetsChartRequest extends StObject {
   
   /**
     * The object ID of the chart to refresh.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaRefreshSheetsChartRequest {
   

@@ -4,27 +4,25 @@ import typings.minappEnv.IAPIParam
 import typings.minappEnv.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] extends StObject {
+trait APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT] extends StObject {
   
   /**
     * In case of callback-style invocation, this function will be called
     */
-  def getCallbackReturn(param: PARAM, context: CONTEXT): CALLBACK_RETURN = js.native
+  def getCallbackReturn(param: PARAM, context: CONTEXT): CALLBACK_RETURN
   
-  def getContext(param: PARAM): CONTEXT = js.native
+  def getContext(param: PARAM): CONTEXT
   
-  def getFinalParam[T /* <: PARAM */](param: PARAM, context: CONTEXT): T = js.native
+  def getFinalParam[T /* <: PARAM */](param: PARAM, context: CONTEXT): T
   
-  def run[T /* <: PARAM */](param: T): Promise[PROMISE_RETURN] = js.native
+  def run[T /* <: PARAM */](param: T): Promise[PROMISE_RETURN]
 }
 object APIBaseContract {
   
   @scala.inline
-  def apply[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT](
+  def apply[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT](
     getCallbackReturn: (PARAM, CONTEXT) => CALLBACK_RETURN,
     getContext: PARAM => CONTEXT,
     getFinalParam: (PARAM, CONTEXT) => js.Any,
@@ -35,7 +33,7 @@ object APIBaseContract {
   }
   
   @scala.inline
-  implicit class APIBaseContractMutableBuilder[Self <: APIBaseContract[_, _, _, _], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] (val x: Self with (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) extends AnyVal {
+  implicit class APIBaseContractMutableBuilder[Self <: APIBaseContract[?, ?, ?, ?], PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[js.Any] */, CONTEXT] (val x: Self & (APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT])) extends AnyVal {
     
     @scala.inline
     def setGetCallbackReturn(value: (PARAM, CONTEXT) => CALLBACK_RETURN): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))

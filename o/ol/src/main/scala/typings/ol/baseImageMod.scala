@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.extentMod.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseImageMod {
@@ -18,30 +17,29 @@ object baseImageMod {
   trait BaseImageLayer
     extends typings.ol.layerLayerMod.default[typings.ol.sourceImageMod.default]
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceImageMod.default] = js.native
+    var source: js.UndefOr[typings.ol.sourceImageMod.default] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

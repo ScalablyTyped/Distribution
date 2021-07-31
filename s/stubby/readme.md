@@ -12,7 +12,7 @@ a lightweight server for stubbing external systems and endpoints
 | Keywords           | server, stub, mock, testing, service, endpoint, http, https, api, rest |
 | # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 266665 |
+| # downloads        | 278537 |
 | # stars            | 6 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkflowRunPropertiesResponse extends StObject {
   
   /**
     * The workflow run properties which were set during the specified run.
     */
-  var RunProperties: js.UndefOr[WorkflowRunProperties] = js.native
+  var RunProperties: js.UndefOr[WorkflowRunProperties] = js.undefined
 }
 object GetWorkflowRunPropertiesResponse {
   

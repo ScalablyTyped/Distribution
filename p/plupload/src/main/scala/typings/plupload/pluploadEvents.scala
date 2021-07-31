@@ -3,45 +3,43 @@ package typings.plupload
 import typings.plupload.plupload.Uploader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluploadEvents extends StObject {
   
-  var BeforeUpload: js.UndefOr[pluploadEventFile] = js.native
+  var BeforeUpload: js.UndefOr[pluploadEventFile] = js.undefined
   
-  var ChunkUploaded: js.UndefOr[pluploadEventChunkUploaded] = js.native
+  var ChunkUploaded: js.UndefOr[pluploadEventChunkUploaded] = js.undefined
   
-  var Destroy: js.UndefOr[pluploadEvent] = js.native
+  var Destroy: js.UndefOr[pluploadEvent] = js.undefined
   
-  var Error: js.UndefOr[pluploadEventError] = js.native
+  var Error: js.UndefOr[pluploadEventError] = js.undefined
   
-  var FileFiltered: js.UndefOr[pluploadEventFile] = js.native
+  var FileFiltered: js.UndefOr[pluploadEventFile] = js.undefined
   
-  var FileUploaded: js.UndefOr[pluploadEventFileUploaded] = js.native
+  var FileUploaded: js.UndefOr[pluploadEventFileUploaded] = js.undefined
   
-  var FilesAdded: js.UndefOr[pluploadEventFiles] = js.native
+  var FilesAdded: js.UndefOr[pluploadEventFiles] = js.undefined
   
-  var FilesRemoved: js.UndefOr[pluploadEventFiles] = js.native
+  var FilesRemoved: js.UndefOr[pluploadEventFiles] = js.undefined
   
-  var Init: js.UndefOr[pluploadEvent] = js.native
+  var Init: js.UndefOr[pluploadEvent] = js.undefined
   
-  var OptionChanged: js.UndefOr[pluploadEventOptionChanged] = js.native
+  var OptionChanged: js.UndefOr[pluploadEventOptionChanged] = js.undefined
   
-  var PostInit: js.UndefOr[pluploadEvent] = js.native
+  var PostInit: js.UndefOr[pluploadEvent] = js.undefined
   
-  var QueueChanged: js.UndefOr[pluploadEvent] = js.native
+  var QueueChanged: js.UndefOr[pluploadEvent] = js.undefined
   
-  var Refresh: js.UndefOr[pluploadEvent] = js.native
+  var Refresh: js.UndefOr[pluploadEvent] = js.undefined
   
-  var StateChanged: js.UndefOr[pluploadEvent] = js.native
+  var StateChanged: js.UndefOr[pluploadEvent] = js.undefined
   
-  var UploadComplete: js.UndefOr[pluploadEventFiles] = js.native
+  var UploadComplete: js.UndefOr[pluploadEventFiles] = js.undefined
   
-  var UploadFile: js.UndefOr[pluploadEventFile] = js.native
+  var UploadFile: js.UndefOr[pluploadEventFile] = js.undefined
   
-  var UploadProgress: js.UndefOr[pluploadEventFile] = js.native
+  var UploadProgress: js.UndefOr[pluploadEventFile] = js.undefined
 }
 object pluploadEvents {
   

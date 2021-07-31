@@ -2,11 +2,11 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnonymousObserver[T] extends Observer[T]
+trait AnonymousObserver[T]
+  extends StObject
+     with Observer[T]
 object AnonymousObserver {
   
   @scala.inline

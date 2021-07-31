@@ -4,7 +4,6 @@ import typings.jsonSchemaTyped.mod.JSONSchemaContentEncodingName
 import typings.jsonSchemaTyped.mod.JSONSchemaTypeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonSchemaTypedStrings {
@@ -35,12 +34,16 @@ object jsonSchemaTypedStrings {
   def $schema: $schema = "$schema".asInstanceOf[$schema]
   
   @js.native
-  sealed trait `7bit` extends JSONSchemaContentEncodingName
+  sealed trait `7bit`
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def `7bit`: `7bit` = "7bit".asInstanceOf[`7bit`]
   
   @js.native
-  sealed trait `8bit` extends JSONSchemaContentEncodingName
+  sealed trait `8bit`
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def `8bit`: `8bit` = "8bit".asInstanceOf[`8bit`]
   
@@ -65,22 +68,30 @@ object jsonSchemaTypedStrings {
   def anyOf: anyOf = "anyOf".asInstanceOf[anyOf]
   
   @js.native
-  sealed trait array extends JSONSchemaTypeName
+  sealed trait array
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait base64 extends JSONSchemaContentEncodingName
+  sealed trait base64
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait binary extends JSONSchemaContentEncodingName
+  sealed trait binary
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait boolean extends JSONSchemaTypeName
+  sealed trait boolean
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -140,9 +151,9 @@ object jsonSchemaTypedStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait enum extends StObject
+  sealed trait `enum` extends StObject
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait examples extends StObject
@@ -190,7 +201,9 @@ object jsonSchemaTypedStrings {
   def `idn-hostname`: `idn-hostname` = "idn-hostname".asInstanceOf[`idn-hostname`]
   
   @js.native
-  sealed trait `ietf-token` extends JSONSchemaContentEncodingName
+  sealed trait `ietf-token`
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def `ietf-token`: `ietf-token` = "ietf-token".asInstanceOf[`ietf-token`]
   
@@ -200,7 +213,9 @@ object jsonSchemaTypedStrings {
   def `if`: `if` = "if".asInstanceOf[`if`]
   
   @js.native
-  sealed trait integer extends JSONSchemaTypeName
+  sealed trait integer
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
@@ -290,17 +305,23 @@ object jsonSchemaTypedStrings {
   def not: not = "not".asInstanceOf[not]
   
   @js.native
-  sealed trait `null` extends JSONSchemaTypeName
+  sealed trait `null`
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait number extends JSONSchemaTypeName
+  sealed trait number
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends JSONSchemaTypeName
+  sealed trait `object`
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -330,7 +351,9 @@ object jsonSchemaTypedStrings {
   def propertyNames: propertyNames = "propertyNames".asInstanceOf[propertyNames]
   
   @js.native
-  sealed trait `quoted-printable` extends JSONSchemaContentEncodingName
+  sealed trait `quoted-printable`
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def `quoted-printable`: `quoted-printable` = "quoted-printable".asInstanceOf[`quoted-printable`]
   
@@ -355,7 +378,9 @@ object jsonSchemaTypedStrings {
   def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait string extends JSONSchemaTypeName
+  sealed trait string
+    extends StObject
+       with JSONSchemaTypeName
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
@@ -410,7 +435,9 @@ object jsonSchemaTypedStrings {
   def writeOnly: writeOnly = "writeOnly".asInstanceOf[writeOnly]
   
   @js.native
-  sealed trait `x-token` extends JSONSchemaContentEncodingName
+  sealed trait `x-token`
+    extends StObject
+       with JSONSchemaContentEncodingName
   @scala.inline
   def `x-token`: `x-token` = "x-token".asInstanceOf[`x-token`]
 }

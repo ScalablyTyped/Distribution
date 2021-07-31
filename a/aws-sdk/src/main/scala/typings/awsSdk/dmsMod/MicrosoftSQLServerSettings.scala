@@ -2,61 +2,59 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MicrosoftSQLServerSettings extends StObject {
   
   /**
     * The maximum size of the packets (in bytes) used to transfer data using BCP.
     */
-  var BcpPacketSize: js.UndefOr[IntegerOptional] = js.native
+  var BcpPacketSize: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specify a filegroup for the AWS DMS internal tables. When the replication task starts, all the internal AWS DMS control tables (awsdms_ apply_exception, awsdms_apply, awsdms_changes) are created on the specified filegroup.
     */
-  var ControlTablesFileGroup: js.UndefOr[String] = js.native
+  var ControlTablesFileGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Database name for the endpoint.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * Endpoint connection password.
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     * Endpoint TCP port.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * When this attribute is set to Y, AWS DMS only reads changes from transaction log backups and doesn't read from the active transaction log file during ongoing replication. Setting this parameter to Y enables you to control active transaction log file growth during full load and ongoing replication tasks. However, it can add some source latency to ongoing replication.
     */
-  var ReadBackupOnly: js.UndefOr[BooleanOptional] = js.native
+  var ReadBackupOnly: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Use this attribute to minimize the need to access the backup log and enable AWS DMS to prevent truncation using one of the following two methods.  Start transactions in the database: This is the default method. When this method is used, AWS DMS prevents TLOG truncation by mimicking a transaction in the database. As long as such a transaction is open, changes that appear after the transaction started aren't truncated. If you need Microsoft Replication to be enabled in your database, then you must choose this method.  Exclusively use sp_repldone within a single task: When this method is used, AWS DMS reads the changes and then uses sp_repldone to mark the TLOG transactions as ready for truncation. Although this method doesn't involve any transactional activities, it can only be used when Microsoft Replication isn't running. Also, when using this method, only one AWS DMS task can access the database at any given time. Therefore, if you need to run parallel AWS DMS tasks against the same database, use the default method.
     */
-  var SafeguardPolicy: js.UndefOr[typings.awsSdk.dmsMod.SafeguardPolicy] = js.native
+  var SafeguardPolicy: js.UndefOr[typings.awsSdk.dmsMod.SafeguardPolicy] = js.undefined
   
   /**
     * Fully qualified domain name of the endpoint.
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     * Use this to attribute to transfer data for full-load operations using BCP. When the target table contains an identity column that does not exist in the source table, you must disable the use BCP for loading table option.
     */
-  var UseBcpFullLoad: js.UndefOr[BooleanOptional] = js.native
+  var UseBcpFullLoad: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Endpoint connection user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object MicrosoftSQLServerSettings {
   

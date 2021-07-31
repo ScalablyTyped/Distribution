@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,10 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * so the collection must be able to handle duplicate entry names.
   * @see FormComponent
   */
-@js.native
 trait FormComponents
-  extends XNameContainer
+  extends StObject
      with XContainer
+     with XNameContainer
      with XIndexContainer
      with XEnumerationAccess
      with XEventAttacherManager

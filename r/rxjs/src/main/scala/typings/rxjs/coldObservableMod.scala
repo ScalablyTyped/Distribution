@@ -7,7 +7,6 @@ import typings.rxjs.subscriptionLogMod.SubscriptionLog
 import typings.rxjs.testMessageMod.TestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coldObservableMod {
@@ -24,7 +23,7 @@ object coldObservableMod {
     
     var messages: js.Array[TestMessage] = js.native
     
-    def scheduleMessages(subscriber: Subscriber[_]): Unit = js.native
+    def scheduleMessages(subscriber: Subscriber[js.Any]): Unit = js.native
     
     var scheduler: Scheduler = js.native
     

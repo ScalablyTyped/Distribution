@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redisMod {
+  
+  @JSImport("googleapis/build/src/apis/redis", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -91,9 +94,12 @@ object redisMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/redis", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/redis", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -137,16 +143,14 @@ object redisMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/redis", "redis")
-  @js.native
-  def redis(options: Options): Redis = js.native
-  @JSImport("googleapis/build/src/apis/redis", "redis")
-  @js.native
-  def redis(options: typings.googleapis.redisV1beta1Mod.redisV1beta1.Options): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = js.native
-  @JSImport("googleapis/build/src/apis/redis", "redis")
-  @js.native
-  def redis_v1(version: v1): Redis = js.native
-  @JSImport("googleapis/build/src/apis/redis", "redis")
-  @js.native
-  def redis_v1beta1(version: v1beta1): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = js.native
+  @scala.inline
+  def redis(options: Options): Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("redis")(options.asInstanceOf[js.Any]).asInstanceOf[Redis]
+  @scala.inline
+  def redis(options: typings.googleapis.redisV1beta1Mod.redisV1beta1.Options): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("redis")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis]
+  
+  @scala.inline
+  def redis_v1(version: v1): Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("redis")(version.asInstanceOf[js.Any]).asInstanceOf[Redis]
+  
+  @scala.inline
+  def redis_v1beta1(version: v1beta1): typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis = ^.asInstanceOf[js.Dynamic].applyDynamic("redis")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis]
 }

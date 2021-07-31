@@ -2,7 +2,6 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait SimpleOrientation extends StObject
 object SimpleOrientation extends StObject {
   
   @js.native
-  sealed trait facedown extends SimpleOrientation
+  sealed trait facedown
+    extends StObject
+       with SimpleOrientation
   
   @js.native
-  sealed trait faceup extends SimpleOrientation
+  sealed trait faceup
+    extends StObject
+       with SimpleOrientation
   
   @js.native
-  sealed trait notRotated extends SimpleOrientation
+  sealed trait notRotated
+    extends StObject
+       with SimpleOrientation
   
   @js.native
-  sealed trait rotated180DegreesCounterclockwise extends SimpleOrientation
+  sealed trait rotated180DegreesCounterclockwise
+    extends StObject
+       with SimpleOrientation
   
   @js.native
-  sealed trait rotated270DegreesCounterclockwise extends SimpleOrientation
+  sealed trait rotated270DegreesCounterclockwise
+    extends StObject
+       with SimpleOrientation
   
   @js.native
-  sealed trait rotated90DegreesCounterclockwise extends SimpleOrientation
+  sealed trait rotated90DegreesCounterclockwise
+    extends StObject
+       with SimpleOrientation
 }

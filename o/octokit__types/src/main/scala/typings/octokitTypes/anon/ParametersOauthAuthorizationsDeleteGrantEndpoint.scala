@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.OauthAuthorizationsDeleteGrantRequestOp
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersOauthAuthorizationsDeleteGrantEndpoint extends StObject {
   
-  var parameters: OauthAuthorizationsDeleteGrantEndpoint = js.native
+  var parameters: OauthAuthorizationsDeleteGrantEndpoint
   
-  var request: OauthAuthorizationsDeleteGrantRequestOptions = js.native
+  var request: OauthAuthorizationsDeleteGrantRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersOauthAuthorizationsDeleteGrantEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersOauthAuthorizationsDeleteGrantEndpoint {
   def apply(
     parameters: OauthAuthorizationsDeleteGrantEndpoint,
     request: OauthAuthorizationsDeleteGrantRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersOauthAuthorizationsDeleteGrantEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersOauthAuthorizationsDeleteGrantEndpoint]
@@ -39,6 +37,6 @@ object ParametersOauthAuthorizationsDeleteGrantEndpoint {
     def setRequest(value: OauthAuthorizationsDeleteGrantRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

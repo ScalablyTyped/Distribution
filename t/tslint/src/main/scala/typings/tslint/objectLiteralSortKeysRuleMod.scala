@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectLiteralSortKeysRuleMod {
@@ -22,20 +21,16 @@ object objectLiteralSortKeysRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.FAILURE_STRING_ALPHABETICAL")
-    @js.native
-    def FAILURE_STRING_ALPHABETICAL(name: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_ALPHABETICAL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_ALPHABETICAL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.FAILURE_STRING_SHORTHAND_FIRST")
-    @js.native
-    def FAILURE_STRING_SHORTHAND_FIRST(name: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_SHORTHAND_FIRST(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_SHORTHAND_FIRST")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.FAILURE_STRING_USE_DECLARATION_ORDER")
-    @js.native
-    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String): String = js.native
-    @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.FAILURE_STRING_USE_DECLARATION_ORDER")
-    @js.native
-    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String, typeName: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String, typeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.metadata")
     @js.native

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Conversions")
@@ -29,7 +28,7 @@ class ResourceConversions protected () extends StObject {
     */
   def batchinsert(): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(callback: BodyResponseCallback[SchemaConversionsBatchInsertResponse]): Unit = js.native
-  def batchinsert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
+  def batchinsert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(params: ParamsResourceConversionsBatchinsert): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(
     params: ParamsResourceConversionsBatchinsert,
@@ -62,7 +61,7 @@ class ResourceConversions protected () extends StObject {
     */
   def batchupdate(): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(callback: BodyResponseCallback[SchemaConversionsBatchUpdateResponse]): Unit = js.native
-  def batchupdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
+  def batchupdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(params: ParamsResourceConversionsBatchupdate): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(
     params: ParamsResourceConversionsBatchupdate,

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The result of compiling the constraints set for a SpeechRecognizer object. */
-@js.native
 trait SpeechRecognitionCompilationResult extends StObject {
   
   /** Gets the result state ( SpeechRecognitionResultStatus ) from the compiling of grammar constraints. */
-  var status: SpeechRecognitionResultStatus = js.native
+  var status: SpeechRecognitionResultStatus
 }
 object SpeechRecognitionCompilationResult {
   

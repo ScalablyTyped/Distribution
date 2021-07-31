@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
-@js.native
 trait PlusShareAuthOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlusShareAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
   /**
     * 分享服务平台申请的appkey
@@ -30,7 +28,7 @@ trait PlusShareAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appkey: js.UndefOr[String] = js.native
+  var appkey: js.UndefOr[String] = js.undefined
   
   /**
     * 分享服务平台申请的appsecret
@@ -39,7 +37,7 @@ trait PlusShareAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appsecret: js.UndefOr[String] = js.native
+  var appsecret: js.UndefOr[String] = js.undefined
   
   /**
     * 分享服务平台申请的redirect_url
@@ -48,7 +46,7 @@ trait PlusShareAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var redirect_url: js.UndefOr[String] = js.native
+  var redirect_url: js.UndefOr[String] = js.undefined
 }
 object PlusShareAuthOptions {
   

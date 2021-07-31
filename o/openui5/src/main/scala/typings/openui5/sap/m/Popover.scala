@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Popover extends Control {
+trait Popover
+  extends StObject
+     with Control {
   
   /**
     * Hook called after adjusment of the Popover position.
@@ -221,7 +222,7 @@ trait Popover extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
-  def getAriaDescribedBy(): js.Array[_] = js.native
+  def getAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets content of aggregation <code>beginButton</code>.BeginButton is shown at the left side (right
@@ -478,7 +479,7 @@ trait Popover extends Control {
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  def removeAllAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them

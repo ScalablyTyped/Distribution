@@ -1,29 +1,26 @@
-package typings.typescriptServices
+package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object TypeScript {
-  
-  type IClassElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
-  
-  type IIndexable[T] = org.scalablytyped.runtime.StringDictionary[T]
-  
-  type IMemberDeclarationSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
-  
-  type IModuleElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
-  
-  type INameSyntax = typings.typescriptServices.TypeScript.ITypeSyntax
-  
-  type IPropertyAssignmentSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
-  
-  type ISyntaxNode = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
-  
-  type ITypeMemberSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
-  
-  type ITypeSyntax = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
-  
-  type TypeArgumentMap = org.scalablytyped.runtime.NumberDictionary[typings.typescriptServices.TypeScript.PullTypeSymbol]
-}
+
+type IClassElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+
+type IIndexable[T] = org.scalablytyped.runtime.StringDictionary[T]
+
+type IMemberDeclarationSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
+
+type IModuleElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+
+type INameSyntax = typings.typescriptServices.TypeScript.ITypeSyntax
+
+type IPropertyAssignmentSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
+
+type ISyntaxNode = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
+
+type ITypeMemberSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+
+type ITypeSyntax = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
+
+type TypeArgumentMap = org.scalablytyped.runtime.NumberDictionary[typings.typescriptServices.TypeScript.PullTypeSymbol]

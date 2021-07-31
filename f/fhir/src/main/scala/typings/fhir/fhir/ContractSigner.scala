@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contract Signatory
   */
-@js.native
-trait ContractSigner extends BackboneElement {
+trait ContractSigner
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contract Signatory Party
     */
-  var party: Reference = js.native
+  var party: Reference
   
   /**
     * Contract Documentation Signature
     */
-  var signature: js.Array[Signature] = js.native
+  var signature: js.Array[Signature]
   
   /**
     * Contract Signatory Role
     */
-  var `type`: Coding = js.native
+  var `type`: Coding
 }
 object ContractSigner {
   

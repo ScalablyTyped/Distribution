@@ -3,11 +3,12 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
+trait HTMLAllCollection
+  extends StObject
+     with /* index */ NumberDictionary[Element] {
   
   /**
     * Returns the item with index index from the collection (determined by tree order).

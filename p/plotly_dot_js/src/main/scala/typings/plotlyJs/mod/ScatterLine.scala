@@ -8,23 +8,21 @@ import typings.plotlyJs.plotlyJsStrings.vh
 import typings.plotlyJs.plotlyJsStrings.vhv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScatterLine extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
-  var dash: Dash = js.native
+  var dash: Dash
   
-  var shape: linear | spline | hv | vh | hvh | vhv = js.native
+  var shape: linear | spline | hv | vh | hvh | vhv
   
-  var simplify: Boolean = js.native
+  var simplify: Boolean
   
-  var smoothing: Double = js.native
+  var smoothing: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object ScatterLine {
   

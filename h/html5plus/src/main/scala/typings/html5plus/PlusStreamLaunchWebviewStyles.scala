@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
-@js.native
 trait PlusStreamLaunchWebviewStyles extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusStreamLaunchWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var blockNetworkImage: js.UndefOr[Boolean] = js.native
+  var blockNetworkImage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 指定首页Webview的id
@@ -28,7 +26,7 @@ trait PlusStreamLaunchWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 指定流应用首页地址
@@ -38,7 +36,7 @@ trait PlusStreamLaunchWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var launch_path: js.UndefOr[String] = js.native
+  var launch_path: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用首页是否显示
@@ -47,7 +45,7 @@ trait PlusStreamLaunchWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PlusStreamLaunchWebviewStyles {
   

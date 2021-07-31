@@ -2,16 +2,14 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListClientUserInvitationsResponse extends StObject {
   
   /**
     * The returned list of client users.
     */
-  var invitations: js.UndefOr[js.Array[SchemaClientUserInvitation]] = js.native
+  var invitations: js.UndefOr[js.Array[SchemaClientUserInvitation]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
@@ -19,7 +17,7 @@ trait SchemaListClientUserInvitationsResponse extends StObject {
     * to the clients.invitations.list method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListClientUserInvitationsResponse {
   

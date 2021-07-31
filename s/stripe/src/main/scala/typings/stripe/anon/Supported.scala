@@ -2,14 +2,12 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Supported extends StObject {
   
   /** Whether 3D Secure is supported on this card. */
-  var supported: Boolean = js.native
+  var supported: Boolean
 }
 object Supported {
   

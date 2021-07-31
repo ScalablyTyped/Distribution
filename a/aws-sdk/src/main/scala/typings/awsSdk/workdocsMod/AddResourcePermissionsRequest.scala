@@ -2,31 +2,29 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddResourcePermissionsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The notification options.
     */
-  var NotificationOptions: js.UndefOr[typings.awsSdk.workdocsMod.NotificationOptions] = js.native
+  var NotificationOptions: js.UndefOr[typings.awsSdk.workdocsMod.NotificationOptions] = js.undefined
   
   /**
     * The users, groups, or organization being granted permission.
     */
-  var Principals: SharePrincipalList = js.native
+  var Principals: SharePrincipalList
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
 }
 object AddResourcePermissionsRequest {
   

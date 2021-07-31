@@ -2,10 +2,13 @@ package typings.uritemplate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("uritemplate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("uritemplate", "UriTemplate")
   @js.native
@@ -24,18 +27,16 @@ object mod {
     def this(options: UriTemplateErrorOptions) = this()
   }
   
-  @JSImport("uritemplate", "parse")
-  @js.native
-  def parse(templateText: String): UriTemplate = js.native
+  @scala.inline
+  def parse(templateText: String): UriTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(templateText.asInstanceOf[js.Any]).asInstanceOf[UriTemplate]
   
-  @js.native
   trait UriTemplateErrorOptions extends StObject {
     
-    var expressionText: String = js.native
+    var expressionText: String
     
-    var message: String = js.native
+    var message: String
     
-    var position: Double = js.native
+    var position: Double
   }
   object UriTemplateErrorOptions {
     

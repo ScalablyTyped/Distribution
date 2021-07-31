@@ -2,15 +2,13 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentTime extends StObject {
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var duration: Double = js.native
+  var duration: Double
 }
 object CurrentTime {
   

@@ -3,10 +3,13 @@ package typings.reactMdUtils
 import typings.reactMdUtils.hexToRGBMod.HexString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isContrastCompliantMod {
+  
+  @JSImport("@react-md/utils/types/colors/isContrastCompliant", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/colors/isContrastCompliant", "AAA_CONTRAST_RATIO")
   @js.native
@@ -20,15 +23,12 @@ object isContrastCompliantMod {
   @js.native
   val NORMAL_TEXT_CONTRAST_RATIO: /* 4.5 */ Double = js.native
   
-  @JSImport("@react-md/utils/types/colors/isContrastCompliant", "isContrastCompliant")
-  @js.native
-  def isContrastCompliant(background: HexString, foreground: HexString): Boolean = js.native
-  @JSImport("@react-md/utils/types/colors/isContrastCompliant", "isContrastCompliant")
-  @js.native
-  def isContrastCompliant(background: HexString, foreground: HexString, compliance: Double): Boolean = js.native
-  @JSImport("@react-md/utils/types/colors/isContrastCompliant", "isContrastCompliant")
-  @js.native
-  def isContrastCompliant(background: HexString, foreground: HexString, compliance: ContrastRatioCompliance): Boolean = js.native
+  @scala.inline
+  def isContrastCompliant(background: HexString, foreground: HexString): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isContrastCompliant(background: HexString, foreground: HexString, compliance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isContrastCompliant(background: HexString, foreground: HexString, compliance: ContrastRatioCompliance): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdUtils.reactMdUtilsStrings.large

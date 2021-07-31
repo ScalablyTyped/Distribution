@@ -2,7 +2,6 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Utilities
@@ -22,16 +21,11 @@ trait Box extends StObject {
   ): js.Object = js.native
   
   def ImNotTouchingYou(element: js.Object): Boolean = js.native
-  def ImNotTouchingYou(
-    element: js.Object,
-    parent: js.UndefOr[scala.Nothing],
-    lrOnly: js.UndefOr[scala.Nothing],
-    tbOnly: Boolean
-  ): Boolean = js.native
-  def ImNotTouchingYou(element: js.Object, parent: js.UndefOr[scala.Nothing], lrOnly: Boolean): Boolean = js.native
-  def ImNotTouchingYou(element: js.Object, parent: js.UndefOr[scala.Nothing], lrOnly: Boolean, tbOnly: Boolean): Boolean = js.native
   def ImNotTouchingYou(element: js.Object, parent: js.Object): Boolean = js.native
-  def ImNotTouchingYou(element: js.Object, parent: js.Object, lrOnly: js.UndefOr[scala.Nothing], tbOnly: Boolean): Boolean = js.native
   def ImNotTouchingYou(element: js.Object, parent: js.Object, lrOnly: Boolean): Boolean = js.native
   def ImNotTouchingYou(element: js.Object, parent: js.Object, lrOnly: Boolean, tbOnly: Boolean): Boolean = js.native
+  def ImNotTouchingYou(element: js.Object, parent: js.Object, lrOnly: Unit, tbOnly: Boolean): Boolean = js.native
+  def ImNotTouchingYou(element: js.Object, parent: Unit, lrOnly: Boolean): Boolean = js.native
+  def ImNotTouchingYou(element: js.Object, parent: Unit, lrOnly: Boolean, tbOnly: Boolean): Boolean = js.native
+  def ImNotTouchingYou(element: js.Object, parent: Unit, lrOnly: Unit, tbOnly: Boolean): Boolean = js.native
 }

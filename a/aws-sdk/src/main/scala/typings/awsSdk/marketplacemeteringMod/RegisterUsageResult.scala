@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterUsageResult extends StObject {
   
   /**
     * (Optional) Only included when public key version has expired
     */
-  var PublicKeyRotationTimestamp: js.UndefOr[Timestamp] = js.native
+  var PublicKeyRotationTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * JWT Token
     */
-  var Signature: js.UndefOr[NonEmptyString] = js.native
+  var Signature: js.UndefOr[NonEmptyString] = js.undefined
 }
 object RegisterUsageResult {
   

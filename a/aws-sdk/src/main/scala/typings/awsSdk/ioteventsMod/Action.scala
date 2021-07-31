@@ -2,76 +2,74 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     * Information needed to clear the timer.
     */
-  var clearTimer: js.UndefOr[ClearTimerAction] = js.native
+  var clearTimer: js.UndefOr[ClearTimerAction] = js.undefined
   
   /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can also customize the payload. One column of the DynamoDB table receives all attribute-value pairs in the payload that you specify. For more information, see Actions in AWS IoT Events Developer Guide.
     */
-  var dynamoDB: js.UndefOr[DynamoDBAction] = js.native
+  var dynamoDB: js.UndefOr[DynamoDBAction] = js.undefined
   
   /**
     * Writes to the DynamoDB table that you created. The default action payload contains all attribute-value pairs that have the information about the detector model instance and the event that triggered the action. You can also customize the payload. A separate column of the DynamoDB table receives one attribute-value pair in the payload that you specify. For more information, see Actions in AWS IoT Events Developer Guide.
     */
-  var dynamoDBv2: js.UndefOr[DynamoDBv2Action] = js.native
+  var dynamoDBv2: js.UndefOr[DynamoDBv2Action] = js.undefined
   
   /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon Kinesis Data Firehose delivery stream.
     */
-  var firehose: js.UndefOr[FirehoseAction] = js.native
+  var firehose: js.UndefOr[FirehoseAction] = js.undefined
   
   /**
     * Sends AWS IoT Events input, which passes information about the detector model instance and the event that triggered the action.
     */
-  var iotEvents: js.UndefOr[IotEventsAction] = js.native
+  var iotEvents: js.UndefOr[IotEventsAction] = js.undefined
   
   /**
     * Sends information about the detector model instance and the event that triggered the action to an asset property in AWS IoT SiteWise .
     */
-  var iotSiteWise: js.UndefOr[IotSiteWiseAction] = js.native
+  var iotSiteWise: js.UndefOr[IotSiteWiseAction] = js.undefined
   
   /**
     * Publishes an MQTT message with the given topic to the AWS IoT message broker.
     */
-  var iotTopicPublish: js.UndefOr[IotTopicPublishAction] = js.native
+  var iotTopicPublish: js.UndefOr[IotTopicPublishAction] = js.undefined
   
   /**
     * Calls a Lambda function, passing in information about the detector model instance and the event that triggered the action.
     */
-  var lambda: js.UndefOr[LambdaAction] = js.native
+  var lambda: js.UndefOr[LambdaAction] = js.undefined
   
   /**
     * Information needed to reset the timer.
     */
-  var resetTimer: js.UndefOr[ResetTimerAction] = js.native
+  var resetTimer: js.UndefOr[ResetTimerAction] = js.undefined
   
   /**
     * Information needed to set the timer.
     */
-  var setTimer: js.UndefOr[SetTimerAction] = js.native
+  var setTimer: js.UndefOr[SetTimerAction] = js.undefined
   
   /**
     * Sets a variable to a specified value.
     */
-  var setVariable: js.UndefOr[SetVariableAction] = js.native
+  var setVariable: js.UndefOr[SetVariableAction] = js.undefined
   
   /**
     * Sends an Amazon SNS message.
     */
-  var sns: js.UndefOr[SNSTopicPublishAction] = js.native
+  var sns: js.UndefOr[SNSTopicPublishAction] = js.undefined
   
   /**
     * Sends information about the detector model instance and the event that triggered the action to an Amazon SQS queue.
     */
-  var sqs: js.UndefOr[SqsAction] = js.native
+  var sqs: js.UndefOr[SqsAction] = js.undefined
 }
 object Action {
   

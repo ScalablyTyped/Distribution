@@ -2,106 +2,104 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserPoolClientRequest extends StObject {
   
   /**
     * The time limit, between 5 minutes and 1 day, after which the access token is no longer valid and cannot be used. This value will be overridden if you have entered a value in TokenValidityUnits.
     */
-  var AccessTokenValidity: js.UndefOr[AccessTokenValidityType] = js.native
+  var AccessTokenValidity: js.UndefOr[AccessTokenValidityType] = js.undefined
   
   /**
     * The allowed OAuth flows. Set to code to initiate a code grant flow, which provides an authorization code as the response. This code can be exchanged for access tokens with the token endpoint. Set to implicit to specify that the client should get the access token (and, optionally, ID token, based on scopes) directly. Set to client_credentials to specify that the client should get the access token (and, optionally, ID token, based on scopes) from the token endpoint using a combination of client and client_secret.
     */
-  var AllowedOAuthFlows: js.UndefOr[OAuthFlowsType] = js.native
+  var AllowedOAuthFlows: js.UndefOr[OAuthFlowsType] = js.undefined
   
   /**
     * Set to true if the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
     */
-  var AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.native
+  var AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The allowed OAuth scopes. Possible values provided by OAuth are: phone, email, openid, and profile. Possible values provided by AWS are: aws.cognito.signin.user.admin. Custom scopes created in Resource Servers are also supported.
     */
-  var AllowedOAuthScopes: js.UndefOr[ScopeListType] = js.native
+  var AllowedOAuthScopes: js.UndefOr[ScopeListType] = js.undefined
   
   /**
     * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.  In regions where Pinpoint is not available, Cognito User Pools only supports sending events to Amazon Pinpoint projects in us-east-1. In regions where Pinpoint is available, Cognito User Pools will support sending events to Amazon Pinpoint projects within that same region.  
     */
-  var AnalyticsConfiguration: js.UndefOr[AnalyticsConfigurationType] = js.native
+  var AnalyticsConfiguration: js.UndefOr[AnalyticsConfigurationType] = js.undefined
   
   /**
     * A list of allowed redirect (callback) URLs for the identity providers. A redirect URI must:   Be an absolute URI.   Be registered with the authorization server.   Not include a fragment component.   See OAuth 2.0 - Redirection Endpoint. Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only. App callback URLs such as myapp://example are also supported.
     */
-  var CallbackURLs: js.UndefOr[CallbackURLsListType] = js.native
+  var CallbackURLs: js.UndefOr[CallbackURLsListType] = js.undefined
   
   /**
     * The client name for the user pool client you would like to create.
     */
-  var ClientName: ClientNameType = js.native
+  var ClientName: ClientNameType
   
   /**
     * The default redirect URI. Must be in the CallbackURLs list. A redirect URI must:   Be an absolute URI.   Be registered with the authorization server.   Not include a fragment component.   See OAuth 2.0 - Redirection Endpoint. Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only. App callback URLs such as myapp://example are also supported.
     */
-  var DefaultRedirectURI: js.UndefOr[RedirectUrlType] = js.native
+  var DefaultRedirectURI: js.UndefOr[RedirectUrlType] = js.undefined
   
   /**
     * The authentication flows that are supported by the user pool clients. Flow names without the ALLOW_ prefix are deprecated in favor of new names with the ALLOW_ prefix. Note that values with ALLOW_ prefix cannot be used along with values without ALLOW_ prefix. Valid values include:    ALLOW_ADMIN_USER_PASSWORD_AUTH: Enable admin based user password authentication flow ADMIN_USER_PASSWORD_AUTH. This setting replaces the ADMIN_NO_SRP_AUTH setting. With this authentication flow, Cognito receives the password in the request instead of using the SRP (Secure Remote Password protocol) protocol to verify passwords.    ALLOW_CUSTOM_AUTH: Enable Lambda trigger based authentication.    ALLOW_USER_PASSWORD_AUTH: Enable user password-based authentication. In this flow, Cognito receives the password in the request instead of using the SRP protocol to verify passwords.    ALLOW_USER_SRP_AUTH: Enable SRP based authentication.    ALLOW_REFRESH_TOKEN_AUTH: Enable authflow to refresh tokens.  
     */
-  var ExplicitAuthFlows: js.UndefOr[ExplicitAuthFlowsListType] = js.native
+  var ExplicitAuthFlows: js.UndefOr[ExplicitAuthFlowsListType] = js.undefined
   
   /**
     * Boolean to specify whether you want to generate a secret for the user pool client being created.
     */
-  var GenerateSecret: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.GenerateSecret] = js.native
+  var GenerateSecret: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.GenerateSecret] = js.undefined
   
   /**
     * The time limit, between 5 minutes and 1 day, after which the ID token is no longer valid and cannot be used. This value will be overridden if you have entered a value in TokenValidityUnits.
     */
-  var IdTokenValidity: js.UndefOr[IdTokenValidityType] = js.native
+  var IdTokenValidity: js.UndefOr[IdTokenValidityType] = js.undefined
   
   /**
     * A list of allowed logout URLs for the identity providers.
     */
-  var LogoutURLs: js.UndefOr[LogoutURLsListType] = js.native
+  var LogoutURLs: js.UndefOr[LogoutURLsListType] = js.undefined
   
   /**
     * Use this setting to choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to ENABLED and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to LEGACY, those APIs will return a UserNotFoundException exception if the user does not exist in the user pool. Valid values include:    ENABLED - This prevents user existence-related errors.    LEGACY - This represents the old behavior of Cognito where user existence related errors are not prevented.    After February 15th 2020, the value of PreventUserExistenceErrors will default to ENABLED for newly created user pool clients if no value is provided. 
     */
-  var PreventUserExistenceErrors: js.UndefOr[PreventUserExistenceErrorTypes] = js.native
+  var PreventUserExistenceErrors: js.UndefOr[PreventUserExistenceErrorTypes] = js.undefined
   
   /**
     * The read attributes.
     */
-  var ReadAttributes: js.UndefOr[ClientPermissionListType] = js.native
+  var ReadAttributes: js.UndefOr[ClientPermissionListType] = js.undefined
   
   /**
     * The time limit, in days, after which the refresh token is no longer valid and cannot be used.
     */
-  var RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.native
+  var RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined
   
   /**
     * A list of provider names for the identity providers that are supported on this client. The following are supported: COGNITO, Facebook, Google and LoginWithAmazon.
     */
-  var SupportedIdentityProviders: js.UndefOr[SupportedIdentityProvidersListType] = js.native
+  var SupportedIdentityProviders: js.UndefOr[SupportedIdentityProvidersListType] = js.undefined
   
   /**
     * The units in which the validity times are represented in. Default for RefreshToken is days, and default for ID and access tokens are hours.
     */
-  var TokenValidityUnits: js.UndefOr[TokenValidityUnitsType] = js.native
+  var TokenValidityUnits: js.UndefOr[TokenValidityUnitsType] = js.undefined
   
   /**
     * The user pool ID for the user pool where you want to create a user pool client.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user pool attributes that the app client can write to. If your app client allows users to sign in through an identity provider, this array must include all attributes that are mapped to identity provider attributes. Amazon Cognito updates mapped attributes when users sign in to your application through an identity provider. If your app client lacks write access to a mapped attribute, Amazon Cognito throws an error when it attempts to update the attribute. For more information, see Specifying Identity Provider Attribute Mappings for Your User Pool.
     */
-  var WriteAttributes: js.UndefOr[ClientPermissionListType] = js.native
+  var WriteAttributes: js.UndefOr[ClientPermissionListType] = js.undefined
 }
 object CreateUserPoolClientRequest {
   

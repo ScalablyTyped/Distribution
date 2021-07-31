@@ -12,21 +12,19 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Boolean = js.native
+    var bottom: Boolean
     
-    var left: Boolean = js.native
+    var left: Boolean
     
-    var right: Boolean = js.native
+    var right: Boolean
     
-    var top: Boolean = js.native
+    var top: Boolean
   }
   object Bottom {
     
@@ -54,36 +52,35 @@ object anon {
   }
   
   /* Inlined std.Partial<scrollbooster.scrollbooster.ScrollBoosterOptions> */
-  @js.native
   trait PartialScrollBoosterOptio extends StObject {
     
-    var bounce: js.UndefOr[Boolean] = js.native
+    var bounce: js.UndefOr[Boolean] = js.undefined
     
-    var bounceForce: js.UndefOr[Double] = js.native
+    var bounceForce: js.UndefOr[Double] = js.undefined
     
-    var content: js.UndefOr[HTMLElement | Null] = js.native
+    var content: js.UndefOr[HTMLElement | Null] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical | all] = js.native
+    var direction: js.UndefOr[horizontal | vertical | all] = js.undefined
     
-    var emulateScroll: js.UndefOr[Boolean] = js.native
+    var emulateScroll: js.UndefOr[Boolean] = js.undefined
     
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
-    var inputsFocus: js.UndefOr[Boolean] = js.native
+    var inputsFocus: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Unit]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* state */ ScrollingState, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* state */ ScrollingState, Unit]] = js.undefined
     
-    var pointerMode: js.UndefOr[touch | mouse | all] = js.native
+    var pointerMode: js.UndefOr[touch | mouse | all] = js.undefined
     
-    var scrollMode: js.UndefOr[transform | native] = js.native
+    var scrollMode: js.UndefOr[transform | native] = js.undefined
     
-    var shouldScroll: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Boolean]] = js.native
+    var shouldScroll: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Boolean]] = js.undefined
     
-    var textSelection: js.UndefOr[Boolean] = js.native
+    var textSelection: js.UndefOr[Boolean] = js.undefined
     
-    var viewport: js.UndefOr[HTMLElement | Null] = js.native
+    var viewport: js.UndefOr[HTMLElement | Null] = js.undefined
   }
   object PartialScrollBoosterOptio {
     
@@ -189,12 +186,11 @@ object anon {
   }
   
   /* Inlined std.Required<scrollbooster.scrollbooster.Position> */
-  @js.native
   trait RequiredPosition extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object RequiredPosition {
     

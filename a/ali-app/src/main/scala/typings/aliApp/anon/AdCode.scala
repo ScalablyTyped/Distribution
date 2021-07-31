@@ -2,15 +2,13 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdCode extends StObject {
   
-  var adCode: String = js.native
+  var adCode: String
   
-  var city: String = js.native
+  var city: String
 }
 object AdCode {
   

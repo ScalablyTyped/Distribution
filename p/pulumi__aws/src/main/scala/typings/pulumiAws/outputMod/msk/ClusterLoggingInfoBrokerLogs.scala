@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterLoggingInfoBrokerLogs extends StObject {
   
-  var cloudwatchLogs: js.UndefOr[ClusterLoggingInfoBrokerLogsCloudwatchLogs] = js.native
+  var cloudwatchLogs: js.UndefOr[ClusterLoggingInfoBrokerLogsCloudwatchLogs] = js.undefined
   
-  var firehose: js.UndefOr[ClusterLoggingInfoBrokerLogsFirehose] = js.native
+  var firehose: js.UndefOr[ClusterLoggingInfoBrokerLogsFirehose] = js.undefined
   
-  var s3: js.UndefOr[ClusterLoggingInfoBrokerLogsS3] = js.native
+  var s3: js.UndefOr[ClusterLoggingInfoBrokerLogsS3] = js.undefined
 }
 object ClusterLoggingInfoBrokerLogs {
   

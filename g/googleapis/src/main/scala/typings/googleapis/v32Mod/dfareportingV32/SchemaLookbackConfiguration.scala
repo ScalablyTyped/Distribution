@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lookback configuration settings.
   */
-@js.native
 trait SchemaLookbackConfiguration extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaLookbackConfiguration extends StObject {
     * default value for your account will be used. Acceptable values are 0 to
     * 90, inclusive.
     */
-  var clickDuration: js.UndefOr[Double] = js.native
+  var clickDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Lookback window, in days, from the last time a given user viewed one of
@@ -27,7 +25,7 @@ trait SchemaLookbackConfiguration extends StObject {
     * the default value for your account will be used. Acceptable values are 0
     * to 90, inclusive.
     */
-  var postImpressionActivitiesDuration: js.UndefOr[Double] = js.native
+  var postImpressionActivitiesDuration: js.UndefOr[Double] = js.undefined
 }
 object SchemaLookbackConfiguration {
   

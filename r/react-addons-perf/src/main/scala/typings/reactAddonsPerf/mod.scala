@@ -3,92 +3,73 @@ package typings.reactAddonsPerf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-addons-perf", "getExclusive")
+  @JSImport("react-addons-perf", JSImport.Namespace)
   @js.native
-  def getExclusive(): js.Any = js.native
-  @JSImport("react-addons-perf", "getExclusive")
-  @js.native
-  def getExclusive(measurements: js.Array[Measurements]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-addons-perf", "getInclusive")
-  @js.native
-  def getInclusive(): js.Any = js.native
-  @JSImport("react-addons-perf", "getInclusive")
-  @js.native
-  def getInclusive(measurements: js.Array[Measurements]): js.Any = js.native
+  @scala.inline
+  def getExclusive(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")().asInstanceOf[js.Any]
+  @scala.inline
+  def getExclusive(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-addons-perf", "getLastMeasurements")
-  @js.native
-  def getLastMeasurements(): js.Array[Measurements] = js.native
+  @scala.inline
+  def getInclusive(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")().asInstanceOf[js.Any]
+  @scala.inline
+  def getInclusive(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-addons-perf", "getOperations")
-  @js.native
-  def getOperations(): js.Any = js.native
-  @JSImport("react-addons-perf", "getOperations")
-  @js.native
-  def getOperations(measurements: js.Array[Measurements]): js.Any = js.native
+  @scala.inline
+  def getLastMeasurements(): js.Array[Measurements] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasurements")().asInstanceOf[js.Array[Measurements]]
   
-  @JSImport("react-addons-perf", "getWasted")
-  @js.native
-  def getWasted(): js.Any = js.native
-  @JSImport("react-addons-perf", "getWasted")
-  @js.native
-  def getWasted(measurements: js.Array[Measurements]): js.Any = js.native
+  @scala.inline
+  def getOperations(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")().asInstanceOf[js.Any]
+  @scala.inline
+  def getOperations(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-addons-perf", "printDOM")
-  @js.native
-  def printDOM(): Unit = js.native
-  @JSImport("react-addons-perf", "printDOM")
-  @js.native
-  def printDOM(measurements: js.Array[Measurements]): Unit = js.native
+  @scala.inline
+  def getWasted(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")().asInstanceOf[js.Any]
+  @scala.inline
+  def getWasted(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-addons-perf", "printExclusive")
-  @js.native
-  def printExclusive(): Unit = js.native
-  @JSImport("react-addons-perf", "printExclusive")
-  @js.native
-  def printExclusive(measurements: js.Array[Measurements]): Unit = js.native
+  @scala.inline
+  def printDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDOM")().asInstanceOf[Unit]
+  @scala.inline
+  def printDOM(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDOM")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-addons-perf", "printInclusive")
-  @js.native
-  def printInclusive(): Unit = js.native
-  @JSImport("react-addons-perf", "printInclusive")
-  @js.native
-  def printInclusive(measurements: js.Array[Measurements]): Unit = js.native
+  @scala.inline
+  def printExclusive(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printExclusive")().asInstanceOf[Unit]
+  @scala.inline
+  def printExclusive(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printExclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-addons-perf", "printOperations")
-  @js.native
-  def printOperations(): Unit = js.native
-  @JSImport("react-addons-perf", "printOperations")
-  @js.native
-  def printOperations(measurements: js.Array[Measurements]): Unit = js.native
+  @scala.inline
+  def printInclusive(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printInclusive")().asInstanceOf[Unit]
+  @scala.inline
+  def printInclusive(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printInclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-addons-perf", "printWasted")
-  @js.native
-  def printWasted(): Unit = js.native
-  @JSImport("react-addons-perf", "printWasted")
-  @js.native
-  def printWasted(measurements: js.Array[Measurements]): Unit = js.native
+  @scala.inline
+  def printOperations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printOperations")().asInstanceOf[Unit]
+  @scala.inline
+  def printOperations(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printOperations")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-addons-perf", "start")
-  @js.native
-  def start(): Unit = js.native
+  @scala.inline
+  def printWasted(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printWasted")().asInstanceOf[Unit]
+  @scala.inline
+  def printWasted(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printWasted")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-addons-perf", "stop")
-  @js.native
-  def stop(): Unit = js.native
+  @scala.inline
+  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  
   trait ComponentPerfContext extends StObject {
     
-    var current: String = js.native
+    var current: String
     
-    var owner: String = js.native
+    var owner: String
   }
   object ComponentPerfContext {
     
@@ -109,22 +90,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Measurements extends StObject {
     
-    var counts: NumericPerfContext = js.native
+    var counts: NumericPerfContext
     
-    var displayNames: StringDictionary[ComponentPerfContext] = js.native
+    var displayNames: StringDictionary[ComponentPerfContext]
     
-    var exclusive: NumericPerfContext = js.native
+    var exclusive: NumericPerfContext
     
-    var inclusive: NumericPerfContext = js.native
+    var inclusive: NumericPerfContext
     
-    var render: NumericPerfContext = js.native
+    var render: NumericPerfContext
     
-    var totalTime: Double = js.native
+    var totalTime: Double
     
-    var writes: NumericPerfContext = js.native
+    var writes: NumericPerfContext
   }
   object Measurements {
     

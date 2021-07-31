@@ -2,26 +2,24 @@ package typings.logstub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<this, 'debug' | 'info' | 'warn' | 'error' | 'child' | 'level'> */
-  @js.native
   trait Pickthisdebuginfowarnerro extends StObject {
     
-    var child: js.UndefOr[js.Any] = js.native
+    var child: js.UndefOr[js.Any] = js.undefined
     
-    var debug: js.UndefOr[js.Any] = js.native
+    var debug: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var info: js.UndefOr[js.Any] = js.native
+    var info: js.UndefOr[js.Any] = js.undefined
     
-    var level: js.UndefOr[js.Any] = js.native
+    var level: js.UndefOr[js.Any] = js.undefined
     
-    var warn: js.UndefOr[js.Any] = js.native
+    var warn: js.UndefOr[js.Any] = js.undefined
   }
   object Pickthisdebuginfowarnerro {
     

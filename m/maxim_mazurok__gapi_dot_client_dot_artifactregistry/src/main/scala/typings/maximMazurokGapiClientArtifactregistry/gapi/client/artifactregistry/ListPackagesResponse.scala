@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPackagesResponse extends StObject {
   
   /** The token to retrieve the next page of packages, or empty if there are no more packages to return. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The packages returned. */
-  var packages: js.UndefOr[js.Array[Package]] = js.native
+  var packages: js.UndefOr[js.Array[Package]] = js.undefined
 }
 object ListPackagesResponse {
   

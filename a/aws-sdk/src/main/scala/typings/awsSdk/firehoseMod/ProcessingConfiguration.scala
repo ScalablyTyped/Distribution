@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingConfiguration extends StObject {
   
   /**
     * Enables or disables data processing.
     */
-  var Enabled: js.UndefOr[BooleanObject] = js.native
+  var Enabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * The data processors.
     */
-  var Processors: js.UndefOr[ProcessorList] = js.native
+  var Processors: js.UndefOr[ProcessorList] = js.undefined
 }
 object ProcessingConfiguration {
   

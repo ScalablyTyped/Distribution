@@ -2,27 +2,25 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaximumTrackTintColor extends StObject {
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var minimumTrackTintColor: js.UndefOr[String] = js.native
+  var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var thumbSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var trackHeight: js.UndefOr[Double] = js.native
+  var trackHeight: js.UndefOr[Double] = js.undefined
   
-  var trackRadius: js.UndefOr[Double] = js.native
+  var trackRadius: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object MaximumTrackTintColor {
   

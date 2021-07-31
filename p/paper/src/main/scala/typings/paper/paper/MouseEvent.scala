@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Item#onMouseLeave}. The MouseEvent object is the only parameter passed
   * to these functions and contains information about the mouse event.
   */
-@js.native
-trait MouseEvent extends Event {
+trait MouseEvent
+  extends StObject
+     with Event {
   
   /** 
     * The current target for the event, as the event traverses the scene graph.
@@ -22,27 +22,27 @@ trait MouseEvent extends Event {
     * opposed to {@link #target} which identifies the element on
     * which the event occurred.
     */
-  var currentTarget: Item = js.native
+  var currentTarget: Item
   
-  var delta: Point = js.native
+  var delta: Point
   
   /** 
     * The position of the mouse in project coordinates when the event was
     * fired.
     */
-  var point: Point = js.native
+  var point: Point
   
   /** 
     * The item that dispatched the event. It is different from
     * {@link #currentTarget} when the event handler is called during
     * the bubbling phase of the event.
     */
-  var target: Item = js.native
+  var target: Item
   
   /** 
     * The type of mouse event.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object MouseEvent {
   

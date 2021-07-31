@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a bookmark in the document.
   */
-@js.native
 trait Bookmark extends StObject {
   
   /**
     * Gets the text buffer interval occupied by the current bookmark element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the bookmark's length.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the name of a bookmark in the document.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * Gets the bookmark's start position in a document.
     */
-  val start: Double = js.native
+  val start: Double
 }
 object Bookmark {
   

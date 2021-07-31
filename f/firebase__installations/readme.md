@@ -9,9 +9,9 @@ Typings are for version 0.4.19
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations |
 | Keywords           | - |
-| # releases         | 1012 |
-| # dependents       | 11 |
-| # downloads        | 27576892 |
+| # releases         | 1257 |
+| # dependents       | 12 |
+| # downloads        | 32302781 |
 | # stars            | 0 |
 
 ## Links

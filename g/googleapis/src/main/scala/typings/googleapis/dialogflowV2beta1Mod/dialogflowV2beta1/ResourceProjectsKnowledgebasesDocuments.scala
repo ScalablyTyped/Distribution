@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Knowledgebases$Documents")
@@ -32,7 +31,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsKnowledgebasesDocumentsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsKnowledgebasesDocumentsCreate,
@@ -65,7 +64,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsKnowledgebasesDocumentsDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsKnowledgebasesDocumentsDelete,
@@ -97,7 +96,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Document]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(params: ParamsResourceProjectsKnowledgebasesDocumentsGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(
     params: ParamsResourceProjectsKnowledgebasesDocumentsGet,
@@ -131,7 +130,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(params: ParamsResourceProjectsKnowledgebasesDocumentsList): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(
     params: ParamsResourceProjectsKnowledgebasesDocumentsList,
@@ -166,7 +165,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsKnowledgebasesDocumentsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsKnowledgebasesDocumentsPatch,
@@ -204,7 +203,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends StObject {
     */
   def reload(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def reload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def reload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(params: ParamsResourceProjectsKnowledgebasesDocumentsReload): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(
     params: ParamsResourceProjectsKnowledgebasesDocumentsReload,

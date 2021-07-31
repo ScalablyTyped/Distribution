@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.winjs.WinJS.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -95,19 +94,19 @@ trait FlipView[T] extends StObject {
     * Raised when the FlipView flips to a page and its renderer function completes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.
     **/
-  def onpagecompleted(eventInfo: CustomEvent[_]): Unit = js.native
+  def onpagecompleted(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised when the FlipView flips to a page.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.
     **/
-  def onpageselected(eventInfo: CustomEvent[_]): Unit = js.native
+  def onpageselected(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Occurs when an item becomes invisible or visible.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source, detail.visible.
     **/
-  def onpagevisibilitychanged(eventInfo: CustomEvent[_]): Unit = js.native
+  def onpagevisibilitychanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Gets or sets the orientation of the FlipView, horizontal or vertical.

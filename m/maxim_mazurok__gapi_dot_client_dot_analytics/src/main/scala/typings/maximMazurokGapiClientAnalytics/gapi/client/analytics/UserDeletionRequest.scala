@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 import typings.maximMazurokGapiClientAnalytics.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDeletionRequest extends StObject {
   
   /** This marks the point in time for which all user data before should be deleted */
-  var deletionRequestTime: js.UndefOr[String] = js.native
+  var deletionRequestTime: js.UndefOr[String] = js.undefined
   
   /** Firebase Project Id */
-  var firebaseProjectId: js.UndefOr[String] = js.native
+  var firebaseProjectId: js.UndefOr[String] = js.undefined
   
   /** User ID. */
-  var id: js.UndefOr[Type] = js.native
+  var id: js.UndefOr[Type] = js.undefined
   
   /** Value is "analytics#userDeletionRequest". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Property ID */
-  var propertyId: js.UndefOr[String] = js.native
+  var propertyId: js.UndefOr[String] = js.undefined
   
   /** Web property ID of the form UA-XXXXX-YY. */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object UserDeletionRequest {
   

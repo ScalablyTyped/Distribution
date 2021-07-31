@@ -5,54 +5,52 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.Agent.MatchMode
 import typings.dialogflow.mod.google.cloud.dialogflow.v2.Agent.Tier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Agent. */
-@js.native
 trait IAgent extends StObject {
   
   /** Agent apiVersion */
   var apiVersion: js.UndefOr[
     ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.ApiVersion * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** Agent avatarUri */
-  var avatarUri: js.UndefOr[String | Null] = js.native
+  var avatarUri: js.UndefOr[String | Null] = js.undefined
   
   /** Agent classificationThreshold */
-  var classificationThreshold: js.UndefOr[Double | Null] = js.native
+  var classificationThreshold: js.UndefOr[Double | Null] = js.undefined
   
   /** Agent defaultLanguageCode */
-  var defaultLanguageCode: js.UndefOr[String | Null] = js.native
+  var defaultLanguageCode: js.UndefOr[String | Null] = js.undefined
   
   /** Agent description */
-  var description: js.UndefOr[String | Null] = js.native
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /** Agent displayName */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /** Agent enableLogging */
-  var enableLogging: js.UndefOr[Boolean | Null] = js.native
+  var enableLogging: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Agent matchMode */
   var matchMode: js.UndefOr[
     MatchMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.MatchMode * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** Agent parent */
-  var parent: js.UndefOr[String | Null] = js.native
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /** Agent supportedLanguageCodes */
-  var supportedLanguageCodes: js.UndefOr[js.Array[String] | Null] = js.native
+  var supportedLanguageCodes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** Agent tier */
   var tier: js.UndefOr[
     Tier | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Agent.Tier * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** Agent timeZone */
-  var timeZone: js.UndefOr[String | Null] = js.native
+  var timeZone: js.UndefOr[String | Null] = js.undefined
 }
 object IAgent {
   

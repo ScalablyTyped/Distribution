@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationRecorderRequest extends StObject {
   
   /**
     * The configuration recorder object that records each configuration change made to the resources.
     */
-  var ConfigurationRecorder: typings.awsSdk.configserviceMod.ConfigurationRecorder = js.native
+  var ConfigurationRecorder: typings.awsSdk.configserviceMod.ConfigurationRecorder
 }
 object PutConfigurationRecorderRequest {
   

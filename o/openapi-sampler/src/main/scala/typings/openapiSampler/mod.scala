@@ -2,50 +2,48 @@ package typings.openapiSampler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("openapi-sampler", "sample")
+  @JSImport("openapi-sampler", JSImport.Namespace)
   @js.native
-  def sample(schema: OpenApiSchema): js.Any = js.native
-  @JSImport("openapi-sampler", "sample")
-  @js.native
-  def sample(schema: OpenApiSchema, options: js.UndefOr[scala.Nothing], spec: OpenApiSpec): js.Any = js.native
-  @JSImport("openapi-sampler", "sample")
-  @js.native
-  def sample(schema: OpenApiSchema, options: Options): js.Any = js.native
-  @JSImport("openapi-sampler", "sample")
-  @js.native
-  def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sample(schema: OpenApiSchema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def sample(schema: OpenApiSchema, options: Unit, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def sample(schema: OpenApiSchema, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type OpenApiSchema = js.Any
   
   type OpenApiSpec = js.Any
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Don't log console warning messages
       */
-    val quiet: js.UndefOr[Boolean] = js.native
+    val quiet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't include non-required object properties not specified in `required` property of the schema object
       */
-    val skipNonRequired: js.UndefOr[Boolean] = js.native
+    val skipNonRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't include readOnly object properties
       */
-    val skipReadOnly: js.UndefOr[Boolean] = js.native
+    val skipReadOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't include writeOnly object properties
       */
-    val skipWriteOnly: js.UndefOr[Boolean] = js.native
+    val skipWriteOnly: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

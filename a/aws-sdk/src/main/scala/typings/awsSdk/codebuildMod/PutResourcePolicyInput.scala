@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutResourcePolicyInput extends StObject {
   
   /**
     *  A JSON-formatted resource policy. For more information, see Sharing a Project and Sharing a Report Group in the AWS CodeBuild User Guide. 
     */
-  var policy: NonEmptyString = js.native
+  var policy: NonEmptyString
   
   /**
     *  The ARN of the Project or ReportGroup resource you want to associate with a resource policy. 
     */
-  var resourceArn: NonEmptyString = js.native
+  var resourceArn: NonEmptyString
 }
 object PutResourcePolicyInput {
   

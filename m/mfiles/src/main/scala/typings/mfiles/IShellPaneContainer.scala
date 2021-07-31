@@ -2,39 +2,37 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShellPaneContainer extends StObject {
   
-  def AddTab(TabId: String, tabTitle: String, insertBeforeTabId: String): IShellPaneTab = js.native
+  def AddTab(TabId: String, tabTitle: String, insertBeforeTabId: String): IShellPaneTab
   
-  val Content: js.Any = js.native
+  val Content: js.Any
   
-  val Events: IShellPaneContainerEvents = js.native
+  val Events: IShellPaneContainerEvents
   
-  def Focus(): Unit = js.native
+  def Focus(): Unit
   
-  def GetSelectedTab(): IShellPaneTab = js.native
+  def GetSelectedTab(): IShellPaneTab
   
-  def GetTab(TabId: String): IShellPaneTab = js.native
+  def GetTab(TabId: String): IShellPaneTab
   
-  val IsFocused: Boolean = js.native
+  val IsFocused: Boolean
   
-  var Minimized: Boolean = js.native
+  var Minimized: Boolean
   
-  def SetDefaultSize(defaultSize: Double, resizeToDefault: Boolean): Unit = js.native
+  def SetDefaultSize(defaultSize: Double, resizeToDefault: Boolean): Unit
   
-  def SetDefaultVisibility(Visible: Boolean, resetToDefault: Boolean): Unit = js.native
+  def SetDefaultVisibility(Visible: Boolean, resetToDefault: Boolean): Unit
   
-  val ShellFrame: IShellFrame = js.native
+  val ShellFrame: IShellFrame
   
-  var Size: Double = js.native
+  var Size: Double
   
-  val TabTitleSize: Double = js.native
+  val TabTitleSize: Double
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object IShellPaneContainer {
   

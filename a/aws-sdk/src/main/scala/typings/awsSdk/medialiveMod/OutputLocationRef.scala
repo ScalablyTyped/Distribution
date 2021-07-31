@@ -2,13 +2,11 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputLocationRef extends StObject {
   
-  var DestinationRefId: js.UndefOr[string] = js.native
+  var DestinationRefId: js.UndefOr[string] = js.undefined
 }
 object OutputLocationRef {
   

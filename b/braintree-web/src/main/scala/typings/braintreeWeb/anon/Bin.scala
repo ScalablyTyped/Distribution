@@ -2,21 +2,19 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bin extends StObject {
   
-  var bin: String = js.native
+  var bin: String
   
-  var cardType: String = js.native
+  var cardType: String
   
-  var isNetworkTokenized: Boolean = js.native
+  var isNetworkTokenized: Boolean
   
-  var lastFour: String = js.native
+  var lastFour: String
   
-  var lastTow: String = js.native
+  var lastTow: String
 }
 object Bin {
   

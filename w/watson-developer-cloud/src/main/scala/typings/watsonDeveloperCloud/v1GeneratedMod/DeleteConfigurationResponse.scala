@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DeleteConfigurationResponse. */
-@js.native
 trait DeleteConfigurationResponse extends StObject {
   
   /** The unique identifier for the configuration. */
-  var configuration_id: String = js.native
+  var configuration_id: String
   
   /** An array of notice messages, if any. */
-  var notices: js.UndefOr[js.Array[Notice]] = js.native
+  var notices: js.UndefOr[js.Array[Notice]] = js.undefined
   
   /** Status of the configuration. A deleted configuration has the status deleted. */
-  var status: String = js.native
+  var status: String
 }
 object DeleteConfigurationResponse {
   

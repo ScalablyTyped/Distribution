@@ -2,7 +2,6 @@ package typings.arrayMove
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,9 +27,12 @@ object mod {
   	//=> ['b', 'a', 'c']
   	```
   	*/
+  @scala.inline
+  def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValueType]]
+  
   @JSImport("array-move", JSImport.Namespace)
   @js.native
-  def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Moves the item to the new position in the input array. Useful for huge arrays where absolute performance is needed.
@@ -38,7 +40,6 @@ object mod {
   	@param from - Index of item to move. If negative, it will begin that many elements from the end.
   	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
   	*/
-  @JSImport("array-move", "mutate")
-  @js.native
-  def mutate(array: js.Array[_], from: Double, to: Double): Unit = js.native
+  @scala.inline
+  def mutate(array: js.Array[js.Any], from: Double, to: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mutate")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

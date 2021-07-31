@@ -2,17 +2,15 @@ package typings.intlMessageformatParser.srcTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseElement[T /* <: TYPE */] extends StObject {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var `type`: T = js.native
+  var `type`: T
   
-  var value: String = js.native
+  var value: String
 }
 object BaseElement {
   
@@ -24,7 +22,7 @@ object BaseElement {
   }
   
   @scala.inline
-  implicit class BaseElementMutableBuilder[Self <: BaseElement[_], T /* <: TYPE */] (val x: Self with BaseElement[T]) extends AnyVal {
+  implicit class BaseElementMutableBuilder[Self <: BaseElement[?], T /* <: TYPE */] (val x: Self & BaseElement[T]) extends AnyVal {
     
     @scala.inline
     def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])

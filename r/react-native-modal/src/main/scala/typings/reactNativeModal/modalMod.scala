@@ -26,7 +26,6 @@ import typings.reactNativeModal.typesMod.Orientation
 import typings.reactNativeModal.typesMod.PresentationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -49,9 +48,8 @@ object modalMod {
     @scala.inline
     def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-modal/dist/modal", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal/dist/modal", "default.propTypes")
     @js.native
@@ -124,9 +122,8 @@ object modalMod {
     @scala.inline
     def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-modal/dist/modal", "ReactNativeModal.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal/dist/modal", "ReactNativeModal.propTypes")
     @js.native
@@ -135,98 +132,99 @@ object modalMod {
     def propTypes_=(x: AnimationIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ModalProps extends ViewProps {
+  trait ModalProps
+    extends StObject
+       with ViewProps {
     
-    var animationIn: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = js.native
+    var animationIn: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])
     
-    var animationInTiming: Double = js.native
+    var animationInTiming: Double
     
-    var animationOut: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = js.native
+    var animationOut: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])
     
-    var animationOutTiming: Double = js.native
+    var animationOutTiming: Double
     
-    var avoidKeyboard: Boolean = js.native
+    var avoidKeyboard: Boolean
     
-    var backdropColor: String = js.native
+    var backdropColor: String
     
-    var backdropOpacity: Double = js.native
+    var backdropOpacity: Double
     
-    var backdropTransitionInTiming: Double = js.native
+    var backdropTransitionInTiming: Double
     
-    var backdropTransitionOutTiming: Double = js.native
+    var backdropTransitionOutTiming: Double
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var coverScreen: Boolean = js.native
+    var coverScreen: Boolean
     
-    var customBackdrop: ReactNode = js.native
+    var customBackdrop: ReactNode
     
-    var deviceHeight: Double = js.native
+    var deviceHeight: Double
     
-    var deviceWidth: Double = js.native
+    var deviceWidth: Double
     
-    var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+    var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
     
-    var hasBackdrop: Boolean = js.native
+    var hasBackdrop: Boolean
     
-    var hideModalContentWhileAnimating: Boolean = js.native
+    var hideModalContentWhileAnimating: Boolean
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    def onBackButtonPress(): Unit = js.native
+    def onBackButtonPress(): Unit
     
-    def onBackdropPress(): Unit = js.native
+    def onBackdropPress(): Unit
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def onModalHide(): Unit = js.native
+    def onModalHide(): Unit
     
-    def onModalShow(): Unit = js.native
+    def onModalShow(): Unit
     
-    def onModalWillHide(): Unit = js.native
+    def onModalWillHide(): Unit
     
-    def onModalWillShow(): Unit = js.native
+    def onModalWillShow(): Unit
     
-    var onOrientationChange: js.UndefOr[OnOrientationChange] = js.native
+    var onOrientationChange: js.UndefOr[OnOrientationChange] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeComplete: js.UndefOr[js.Function1[/* params */ OnSwipeCompleteParams, Unit]] = js.native
+    var onSwipeComplete: js.UndefOr[js.Function1[/* params */ OnSwipeCompleteParams, Unit]] = js.undefined
     
-    var onSwipeMove: js.UndefOr[js.Function1[/* percentageShown */ Double, Unit]] = js.native
+    var onSwipeMove: js.UndefOr[js.Function1[/* percentageShown */ Double, Unit]] = js.undefined
     
-    var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var presentationStyle: js.UndefOr[PresentationStyle] = js.native
+    var presentationStyle: js.UndefOr[PresentationStyle] = js.undefined
     
-    var propagateSwipe: Boolean = js.native
+    var propagateSwipe: Boolean
     
-    var scrollHorizontal: Boolean = js.native
+    var scrollHorizontal: Boolean
     
-    var scrollOffset: Double = js.native
+    var scrollOffset: Double
     
-    var scrollOffsetMax: Double = js.native
+    var scrollOffsetMax: Double
     
-    var scrollTo: OrNull[js.Function1[/* e */ _, Unit]] = js.native
+    var scrollTo: OrNull[js.Function1[/* e */ js.Any, Unit]]
     
-    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.undefined
     
-    var swipeDirection: js.UndefOr[Direction | js.Array[Direction]] = js.native
+    var swipeDirection: js.UndefOr[Direction | js.Array[Direction]] = js.undefined
     
-    var swipeThreshold: Double = js.native
+    var swipeThreshold: Double
     
-    var useNativeDriver: Boolean = js.native
+    var useNativeDriver: Boolean
   }
   object ModalProps {
     
     @scala.inline
     def apply(
-      animationIn: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]),
+      animationIn: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle]),
       animationInTiming: Double,
-      animationOut: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]),
+      animationOut: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle]),
       animationOutTiming: Double,
       avoidKeyboard: Boolean,
       backdropColor: String,
@@ -252,7 +250,7 @@ object modalMod {
       swipeThreshold: Double,
       useNativeDriver: Boolean
     ): ModalProps = {
-      val __obj = js.Dynamic.literal(animationIn = animationIn.asInstanceOf[js.Any], animationInTiming = animationInTiming.asInstanceOf[js.Any], animationOut = animationOut.asInstanceOf[js.Any], animationOutTiming = animationOutTiming.asInstanceOf[js.Any], avoidKeyboard = avoidKeyboard.asInstanceOf[js.Any], backdropColor = backdropColor.asInstanceOf[js.Any], backdropOpacity = backdropOpacity.asInstanceOf[js.Any], backdropTransitionInTiming = backdropTransitionInTiming.asInstanceOf[js.Any], backdropTransitionOutTiming = backdropTransitionOutTiming.asInstanceOf[js.Any], coverScreen = coverScreen.asInstanceOf[js.Any], deviceHeight = deviceHeight.asInstanceOf[js.Any], deviceWidth = deviceWidth.asInstanceOf[js.Any], hasBackdrop = hasBackdrop.asInstanceOf[js.Any], hideModalContentWhileAnimating = hideModalContentWhileAnimating.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], onBackButtonPress = js.Any.fromFunction0(onBackButtonPress), onBackdropPress = js.Any.fromFunction0(onBackdropPress), onModalHide = js.Any.fromFunction0(onModalHide), onModalShow = js.Any.fromFunction0(onModalShow), onModalWillHide = js.Any.fromFunction0(onModalWillHide), onModalWillShow = js.Any.fromFunction0(onModalWillShow), propagateSwipe = propagateSwipe.asInstanceOf[js.Any], scrollHorizontal = scrollHorizontal.asInstanceOf[js.Any], scrollOffset = scrollOffset.asInstanceOf[js.Any], scrollOffsetMax = scrollOffsetMax.asInstanceOf[js.Any], swipeThreshold = swipeThreshold.asInstanceOf[js.Any], useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(animationIn = animationIn.asInstanceOf[js.Any], animationInTiming = animationInTiming.asInstanceOf[js.Any], animationOut = animationOut.asInstanceOf[js.Any], animationOutTiming = animationOutTiming.asInstanceOf[js.Any], avoidKeyboard = avoidKeyboard.asInstanceOf[js.Any], backdropColor = backdropColor.asInstanceOf[js.Any], backdropOpacity = backdropOpacity.asInstanceOf[js.Any], backdropTransitionInTiming = backdropTransitionInTiming.asInstanceOf[js.Any], backdropTransitionOutTiming = backdropTransitionOutTiming.asInstanceOf[js.Any], coverScreen = coverScreen.asInstanceOf[js.Any], deviceHeight = deviceHeight.asInstanceOf[js.Any], deviceWidth = deviceWidth.asInstanceOf[js.Any], hasBackdrop = hasBackdrop.asInstanceOf[js.Any], hideModalContentWhileAnimating = hideModalContentWhileAnimating.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], onBackButtonPress = js.Any.fromFunction0(onBackButtonPress), onBackdropPress = js.Any.fromFunction0(onBackdropPress), onModalHide = js.Any.fromFunction0(onModalHide), onModalShow = js.Any.fromFunction0(onModalShow), onModalWillHide = js.Any.fromFunction0(onModalWillHide), onModalWillShow = js.Any.fromFunction0(onModalWillShow), propagateSwipe = propagateSwipe.asInstanceOf[js.Any], scrollHorizontal = scrollHorizontal.asInstanceOf[js.Any], scrollOffset = scrollOffset.asInstanceOf[js.Any], scrollOffsetMax = scrollOffsetMax.asInstanceOf[js.Any], swipeThreshold = swipeThreshold.asInstanceOf[js.Any], useNativeDriver = useNativeDriver.asInstanceOf[js.Any], scrollTo = null)
       __obj.asInstanceOf[ModalProps]
     }
     
@@ -260,13 +258,13 @@ object modalMod {
     implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnimationIn(value: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      def setAnimationIn(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationInTiming(value: Double): Self = StObject.set(x, "animationInTiming", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAnimationOut(value: Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      def setAnimationOut(value: Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationOutTiming(value: Double): Self = StObject.set(x, "animationOutTiming", value.asInstanceOf[js.Any])
@@ -401,7 +399,7 @@ object modalMod {
       def setScrollOffsetMax(value: Double): Self = StObject.set(x, "scrollOffsetMax", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setScrollTo(value: /* e */ _ => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      def setScrollTo(value: /* e */ js.Any => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
       @scala.inline
       def setScrollToNull: Self = StObject.set(x, "scrollTo", null)
@@ -432,10 +430,9 @@ object modalMod {
     }
   }
   
-  @js.native
   trait OnSwipeCompleteParams extends StObject {
     
-    var swipingDirection: Direction = js.native
+    var swipingDirection: Direction
   }
   object OnSwipeCompleteParams {
     
@@ -453,20 +450,19 @@ object modalMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var deviceHeight: Double = js.native
+    var deviceHeight: Double
     
-    var deviceWidth: Double = js.native
+    var deviceWidth: Double
     
-    var isSwipeable: Boolean = js.native
+    var isSwipeable: Boolean
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    var pan: OrNull[ValueXY] = js.native
+    var pan: OrNull[ValueXY]
     
-    var showContent: Boolean = js.native
+    var showContent: Boolean
   }
   object State {
     
@@ -478,7 +474,7 @@ object modalMod {
       isVisible: Boolean,
       showContent: Boolean
     ): State = {
-      val __obj = js.Dynamic.literal(deviceHeight = deviceHeight.asInstanceOf[js.Any], deviceWidth = deviceWidth.asInstanceOf[js.Any], isSwipeable = isSwipeable.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], showContent = showContent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(deviceHeight = deviceHeight.asInstanceOf[js.Any], deviceWidth = deviceWidth.asInstanceOf[js.Any], isSwipeable = isSwipeable.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], showContent = showContent.asInstanceOf[js.Any], pan = null)
       __obj.asInstanceOf[State]
     }
     

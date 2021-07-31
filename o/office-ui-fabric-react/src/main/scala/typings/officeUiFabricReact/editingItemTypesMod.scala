@@ -8,21 +8,21 @@ import typings.react.mod.ComponentType
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editingItemTypesMod {
   
-  @js.native
-  trait IEditingSelectedPeopleItemProps extends ISelectedPeopleItemProps {
+  trait IEditingSelectedPeopleItemProps
+    extends StObject
+       with ISelectedPeopleItemProps {
     
-    var floatingPickerProps: js.UndefOr[IBaseFloatingPickerProps[IPersonaProps]] = js.native
+    var floatingPickerProps: js.UndefOr[IBaseFloatingPickerProps[IPersonaProps]] = js.undefined
     
-    var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, String]] = js.native
+    var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, String]] = js.undefined
     
-    def onEditingComplete(oldItem: js.Any, newItem: js.Any): Unit = js.native
+    def onEditingComplete(oldItem: js.Any, newItem: js.Any): Unit
     
-    var onRenderFloatingPicker: js.UndefOr[ComponentType[IBaseFloatingPickerProps[IPersonaProps]]] = js.native
+    var onRenderFloatingPicker: js.UndefOr[ComponentType[IBaseFloatingPickerProps[IPersonaProps]]] = js.undefined
   }
   object IEditingSelectedPeopleItemProps {
     
@@ -58,12 +58,11 @@ object editingItemTypesMod {
     }
   }
   
-  @js.native
   trait IEditingSelectedPeopleItemStyles extends StObject {
     
-    var input: IStyle = js.native
+    var input: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IEditingSelectedPeopleItemStyles {
     
@@ -96,6 +95,5 @@ object editingItemTypesMod {
     }
   }
   
-  @js.native
   trait IEditingSelectedPeopleItemStylesProps extends StObject
 }

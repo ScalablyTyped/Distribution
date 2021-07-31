@@ -3,38 +3,36 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.addSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAddSeriesEventObject extends StObject {
   
   /**
     * The series options that were passed to the `addSeries` method.
     */
-  var options: SeriesOptionsType = js.native
+  var options: SeriesOptionsType
   
   /**
     * Prevents the default behaviour of the event.
     */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /**
     * The event target.
     */
-  var target: Chart_ = js.native
+  var target: Chart_
   
   /**
     * The event type.
     */
-  var `type`: addSeries = js.native
+  var `type`: addSeries
 }
 object ChartAddSeriesEventObject {
   
   @scala.inline
-  def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart_, `type`: addSeries): ChartAddSeriesEventObject = {
+  def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart_): ChartAddSeriesEventObject = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("addSeries")
     __obj.asInstanceOf[ChartAddSeriesEventObject]
   }
   

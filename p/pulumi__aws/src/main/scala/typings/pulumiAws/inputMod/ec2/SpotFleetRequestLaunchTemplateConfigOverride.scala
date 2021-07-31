@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotFleetRequestLaunchTemplateConfigOverride extends StObject {
   
   /**
     * The availability zone in which to place the request.
     */
-  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The type of instance to request.
     */
-  var instanceType: js.UndefOr[Input[String]] = js.native
+  var instanceType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The priority for the launch template override. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority.
     */
-  var priority: js.UndefOr[Input[Double]] = js.native
+  var priority: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The maximum spot bid for this override request.
     */
-  var spotPrice: js.UndefOr[Input[String]] = js.native
+  var spotPrice: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The subnet in which to launch the requested instance.
     */
-  var subnetId: js.UndefOr[Input[String]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The capacity added to the fleet by a fulfilled request.
     */
-  var weightedCapacity: js.UndefOr[Input[Double]] = js.native
+  var weightedCapacity: js.UndefOr[Input[Double]] = js.undefined
 }
 object SpotFleetRequestLaunchTemplateConfigOverride {
   

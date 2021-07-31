@@ -2,33 +2,31 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoomMembership extends StObject {
   
   /**
     * The identifier of the user that invited the room member.
     */
-  var InvitedBy: js.UndefOr[NonEmptyString] = js.native
+  var InvitedBy: js.UndefOr[NonEmptyString] = js.undefined
   
-  var Member: js.UndefOr[typings.awsSdk.chimeMod.Member] = js.native
+  var Member: js.UndefOr[typings.awsSdk.chimeMod.Member] = js.undefined
   
   /**
     * The membership role.
     */
-  var Role: js.UndefOr[RoomMembershipRole] = js.native
+  var Role: js.UndefOr[RoomMembershipRole] = js.undefined
   
   /**
     * The room ID.
     */
-  var RoomId: js.UndefOr[NonEmptyString] = js.native
+  var RoomId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The room membership update timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object RoomMembership {
   

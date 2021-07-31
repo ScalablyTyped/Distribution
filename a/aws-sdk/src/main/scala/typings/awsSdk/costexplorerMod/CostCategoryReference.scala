@@ -2,43 +2,41 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CostCategoryReference extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
     */
-  var CostCategoryArn: js.UndefOr[Arn] = js.native
+  var CostCategoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The Cost Category's effective end date.
     */
-  var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.native
+  var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.undefined
   
   /**
     *  The Cost Category's effective start date.
     */
-  var EffectiveStart: js.UndefOr[ZonedDateTime] = js.native
+  var EffectiveStart: js.UndefOr[ZonedDateTime] = js.undefined
   
-  var Name: js.UndefOr[CostCategoryName] = js.native
+  var Name: js.UndefOr[CostCategoryName] = js.undefined
   
   /**
     *  The number of rules associated with a specific Cost Category. 
     */
-  var NumberOfRules: js.UndefOr[NonNegativeInteger] = js.native
+  var NumberOfRules: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     *  The list of processing statuses for Cost Management products for a specific cost category. 
     */
-  var ProcessingStatus: js.UndefOr[CostCategoryProcessingStatusList] = js.native
+  var ProcessingStatus: js.UndefOr[CostCategoryProcessingStatusList] = js.undefined
   
   /**
     *  A list of unique cost category values in a specific cost category. 
     */
-  var Values: js.UndefOr[CostCategoryValuesList] = js.native
+  var Values: js.UndefOr[CostCategoryValuesList] = js.undefined
 }
 object CostCategoryReference {
   

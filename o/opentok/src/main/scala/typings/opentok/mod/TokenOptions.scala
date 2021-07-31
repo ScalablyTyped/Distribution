@@ -2,17 +2,15 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenOptions extends StObject {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var expireTime: js.UndefOr[Double] = js.native
+  var expireTime: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[Role] = js.native
+  var role: js.UndefOr[Role] = js.undefined
 }
 object TokenOptions {
   

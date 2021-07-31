@@ -17,37 +17,35 @@ import typings.baseui.popoverMod.Offset
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/popover.SharedStylePropsArg & {  children :react.react.ReactNode | undefined} */
-@js.native
 trait SharedStylePropsArgchildrArrowOffset extends StObject {
   
   @JSName("$arrowOffset")
-  var $arrowOffset: js.UndefOr[Offset] = js.native
+  var $arrowOffset: js.UndefOr[Offset] = js.undefined
   
   @JSName("$isAnimating")
-  var $isAnimating: js.UndefOr[Boolean] = js.native
+  var $isAnimating: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.native
+  var $isOpen: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$placement")
   var $placement: js.UndefOr[
     topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$popoverMargin")
-  var $popoverMargin: js.UndefOr[Double] = js.native
+  var $popoverMargin: js.UndefOr[Double] = js.undefined
   
   @JSName("$popoverOffset")
-  var $popoverOffset: js.UndefOr[Offset] = js.native
+  var $popoverOffset: js.UndefOr[Offset] = js.undefined
   
   @JSName("$showArrow")
-  var $showArrow: js.UndefOr[Boolean] = js.native
+  var $showArrow: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
 }
 object SharedStylePropsArgchildrArrowOffset {
   

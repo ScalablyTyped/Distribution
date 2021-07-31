@@ -4,27 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface representing the authorization code and associated data.
   */
-@js.native
 trait AuthorizationCode
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var authorizationCode: String = js.native
+  var authorizationCode: String
   
-  var client: Client = js.native
+  var client: Client
   
-  var expiresAt: Date = js.native
+  var expiresAt: Date
   
-  var redirectUri: String = js.native
+  var redirectUri: String
   
-  var scope: js.UndefOr[String | js.Array[String]] = js.native
+  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object AuthorizationCode {
   

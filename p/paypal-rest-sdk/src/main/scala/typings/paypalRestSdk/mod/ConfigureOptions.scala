@@ -2,35 +2,33 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureOptions extends StObject {
   
-  var authorize_url: js.UndefOr[String] = js.native
+  var authorize_url: js.UndefOr[String] = js.undefined
   
-  var client_id: String = js.native
+  var client_id: String
   
-  var client_secret: String = js.native
+  var client_secret: String
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var logout_url: js.UndefOr[String] = js.native
+  var logout_url: js.UndefOr[String] = js.undefined
   
-  var mode: String = js.native
+  var mode: String
   
-  var openid_connect_host: js.UndefOr[String] = js.native
+  var openid_connect_host: js.UndefOr[String] = js.undefined
   
-  var openid_connect_port: js.UndefOr[String] = js.native
+  var openid_connect_port: js.UndefOr[String] = js.undefined
   
-  var openid_connect_schema: js.UndefOr[String] = js.native
+  var openid_connect_schema: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
 }
 object ConfigureOptions {
   

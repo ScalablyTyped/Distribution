@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartCategoryAxisItemLabels extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ChartCategoryAxisItemLabelsBorder] = js.native
+  var border: js.UndefOr[ChartCategoryAxisItemLabelsBorder] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var dateFormats: js.UndefOr[ChartCategoryAxisItemLabelsDateFormats] = js.native
+  var dateFormats: js.UndefOr[ChartCategoryAxisItemLabelsDateFormats] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartCategoryAxisItemLabelsMargin] = js.native
+  var margin: js.UndefOr[Double | ChartCategoryAxisItemLabelsMargin] = js.undefined
   
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Double | ChartCategoryAxisItemLabelsPadding] = js.native
+  var padding: js.UndefOr[Double | ChartCategoryAxisItemLabelsPadding] = js.undefined
   
-  var rotation: js.UndefOr[String | Double | ChartCategoryAxisItemLabelsRotation] = js.native
+  var rotation: js.UndefOr[String | Double | ChartCategoryAxisItemLabelsRotation] = js.undefined
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartCategoryAxisItemLabels {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1alpha", "appengine_v1alpha.Resource$Apps$Domainmappings")
@@ -36,7 +35,7 @@ class ResourceAppsDomainmappings protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsDomainmappingsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsDomainmappingsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -68,7 +67,7 @@ class ResourceAppsDomainmappings protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsDomainmappingsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsDomainmappingsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -98,7 +97,7 @@ class ResourceAppsDomainmappings protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(callback: BodyResponseCallback[SchemaDomainMapping]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainMapping] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(params: ParamsResourceAppsDomainmappingsGet): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(params: ParamsResourceAppsDomainmappingsGet, callback: BodyResponseCallback[SchemaDomainMapping]): Unit = js.native
   def get(
@@ -129,7 +128,7 @@ class ResourceAppsDomainmappings protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDomainMappingsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(params: ParamsResourceAppsDomainmappingsList): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(
     params: ParamsResourceAppsDomainmappingsList,
@@ -168,7 +167,7 @@ class ResourceAppsDomainmappings protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsDomainmappingsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsDomainmappingsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(

@@ -2,54 +2,54 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.UploadingProgressChanged event.
   */
-@js.native
-trait ASPxClientUploadControlUploadingProgressChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientUploadControlUploadingProgressChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the content length of the currently uploaded file.
     */
-  var currentFileContentLength: Double = js.native
+  var currentFileContentLength: Double
   
   /**
     * Gets the name of the file being currently uploaded.
     */
-  var currentFileName: String = js.native
+  var currentFileName: String
   
   /**
     * Gets the position of the current file upload progress.
     */
-  var currentFileProgress: Double = js.native
+  var currentFileProgress: Double
   
   /**
     * Gets the content length of the current file already uploaded to the server.
     */
-  var currentFileUploadedContentLength: Double = js.native
+  var currentFileUploadedContentLength: Double
   
   /**
     * Gets the number of the files selected for upload.
     */
-  var fileCount: Double = js.native
+  var fileCount: Double
   
   /**
     * Gets the current position of total upload progress.
     */
-  var progress: Double = js.native
+  var progress: Double
   
   /**
     * Gets the content length of the files selected for upload.
     */
-  var totalContentLength: Double = js.native
+  var totalContentLength: Double
   
   /**
     * Gets the content length of the files already uploaded to the server.
     */
-  var uploadedContentLength: Double = js.native
+  var uploadedContentLength: Double
 }
 object ASPxClientUploadControlUploadingProgressChangedEventArgs {
   

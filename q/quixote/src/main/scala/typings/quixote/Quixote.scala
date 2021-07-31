@@ -3,17 +3,15 @@ package typings.quixote
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quixote extends StObject {
   
   // Create a test iframe. This is a slow operation, so once you have a frame, it's best to use QFrame.reset() on it rather than creating a new frame for each test
   def createFrame(
     options: QuixoteFrameOptions,
     callback: js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]
-  ): QFrame = js.native
+  ): QFrame
 }
 object Quixote {
   

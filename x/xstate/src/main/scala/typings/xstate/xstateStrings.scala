@@ -3,7 +3,6 @@ package typings.xstate
 import typings.xstate.typesMod._StateTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xstateStrings {
@@ -59,12 +58,16 @@ object xstateStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait atomic extends _StateTypes
+  sealed trait atomic
+    extends StObject
+       with _StateTypes
   @scala.inline
   def atomic: atomic = "atomic".asInstanceOf[atomic]
   
   @js.native
-  sealed trait compound extends _StateTypes
+  sealed trait compound
+    extends StObject
+       with _StateTypes
   @scala.inline
   def compound: compound = "compound".asInstanceOf[compound]
   
@@ -84,12 +87,16 @@ object xstateStrings {
   def external: external = "external".asInstanceOf[external]
   
   @js.native
-  sealed trait `final` extends _StateTypes
+  sealed trait `final`
+    extends StObject
+       with _StateTypes
   @scala.inline
   def `final`: `final` = "final".asInstanceOf[`final`]
   
   @js.native
-  sealed trait history extends _StateTypes
+  sealed trait history
+    extends StObject
+       with _StateTypes
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   
@@ -99,7 +106,9 @@ object xstateStrings {
   def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait parallel extends _StateTypes
+  sealed trait parallel
+    extends StObject
+       with _StateTypes
   @scala.inline
   def parallel: parallel = "parallel".asInstanceOf[parallel]
   

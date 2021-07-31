@@ -2,17 +2,15 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certissuer extends StObject {
   
-  var certissuer: js.UndefOr[String] = js.native
+  var certissuer: js.UndefOr[String] = js.undefined
   
-  var certsubject: js.UndefOr[String] = js.native
+  var certsubject: js.UndefOr[String] = js.undefined
   
-  var ldapstr: String = js.native
+  var ldapstr: String
 }
 object Certissuer {
   

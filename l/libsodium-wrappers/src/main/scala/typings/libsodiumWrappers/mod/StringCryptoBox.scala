@@ -2,15 +2,13 @@ package typings.libsodiumWrappers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringCryptoBox extends StObject {
   
-  var ciphertext: String = js.native
+  var ciphertext: String
   
-  var mac: String = js.native
+  var mac: String
 }
 object StringCryptoBox {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.lb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerRuleActionForward extends StObject {
   
   /**
     * The target group stickiness for the rule.
     */
-  var stickiness: js.UndefOr[ListenerRuleActionForwardStickiness] = js.native
+  var stickiness: js.UndefOr[ListenerRuleActionForwardStickiness] = js.undefined
   
   /**
     * One or more target groups block.
     */
-  var targetGroups: js.Array[ListenerRuleActionForwardTargetGroup] = js.native
+  var targetGroups: js.Array[ListenerRuleActionForwardTargetGroup]
 }
 object ListenerRuleActionForward {
   

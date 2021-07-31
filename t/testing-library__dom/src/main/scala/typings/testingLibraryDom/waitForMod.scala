@@ -5,30 +5,30 @@ import typings.std.HTMLElement
 import typings.std.MutationObserverInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object waitForMod {
   
-  @JSImport("@testing-library/dom/types/wait-for", "waitFor")
+  @JSImport("@testing-library/dom/types/wait-for", JSImport.Namespace)
   @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("@testing-library/dom/types/wait-for", "waitFor")
-  @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
   trait waitForOptions extends StObject {
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var mutationObserverOptions: js.UndefOr[MutationObserverInit] = js.native
+    var mutationObserverOptions: js.UndefOr[MutationObserverInit] = js.undefined
     
-    var onTimeout: js.UndefOr[js.Function1[/* error */ Error, Error]] = js.native
+    var onTimeout: js.UndefOr[js.Function1[/* error */ Error, Error]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object waitForOptions {
     

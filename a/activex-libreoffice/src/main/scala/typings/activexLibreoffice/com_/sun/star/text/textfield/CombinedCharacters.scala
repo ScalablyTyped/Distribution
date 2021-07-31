@@ -12,18 +12,18 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a text field to combine 1 to 6 characters that are treated as one normal character.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait CombinedCharacters extends TextField_ {
+trait CombinedCharacters
+  extends StObject
+     with TextField_ {
   
   /** contains the characters to be combined. */
-  var Content: String = js.native
+  var Content: String
 }
 object CombinedCharacters {
   

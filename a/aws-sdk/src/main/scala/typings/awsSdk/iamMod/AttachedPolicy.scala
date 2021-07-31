@@ -2,18 +2,16 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedPolicy extends StObject {
   
-  var PolicyArn: js.UndefOr[arnType] = js.native
+  var PolicyArn: js.UndefOr[arnType] = js.undefined
   
   /**
     * The friendly name of the attached policy.
     */
-  var PolicyName: js.UndefOr[policyNameType] = js.native
+  var PolicyName: js.UndefOr[policyNameType] = js.undefined
 }
 object AttachedPolicy {
   

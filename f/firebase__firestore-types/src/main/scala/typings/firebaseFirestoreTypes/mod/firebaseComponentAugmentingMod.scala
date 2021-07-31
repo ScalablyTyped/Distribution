@@ -2,15 +2,13 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseComponentAugmentingMod {
   
-  @js.native
   trait NameServiceMapping extends StObject {
     
-    var firestore: FirebaseFirestore = js.native
+    var firestore: FirebaseFirestore
   }
   object NameServiceMapping {
     

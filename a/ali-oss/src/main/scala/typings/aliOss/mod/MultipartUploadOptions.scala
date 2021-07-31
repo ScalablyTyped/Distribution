@@ -2,35 +2,33 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipartUploadOptions extends StObject {
   
-  var callback: js.UndefOr[ObjectCallback] = js.native
+  var callback: js.UndefOr[ObjectCallback] = js.undefined
   
   // the progress callback called after each successful upload of one part
-  var checkpoint: js.UndefOr[Checkpoint] = js.native
+  var checkpoint: js.UndefOr[Checkpoint] = js.undefined
   
-  var copyheaders: js.UndefOr[js.Object] = js.native
+  var copyheaders: js.UndefOr[js.Object] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   // the checkpoint to resume upload, if this is provided, it will continue the upload from where interrupted, otherwise a new multipart upload will be created.
-  var meta: js.UndefOr[UserMeta] = js.native
+  var meta: js.UndefOr[UserMeta] = js.undefined
   
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var parallel: js.UndefOr[Double] = js.native
+  var parallel: js.UndefOr[Double] = js.undefined
   
   // the number of parts to be uploaded in parallel
-  var partSize: js.UndefOr[Double] = js.native
+  var partSize: js.UndefOr[Double] = js.undefined
   
   // the suggested size for each part
-  var progress: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var progress: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object MultipartUploadOptions {
   
@@ -92,7 +90,7 @@ object MultipartUploadOptions {
     def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
     @scala.inline
-    def setProgress(value: /* repeated */ js.Any => _): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+    def setProgress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
     @scala.inline
     def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)

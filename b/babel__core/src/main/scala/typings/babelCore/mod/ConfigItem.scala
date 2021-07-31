@@ -4,42 +4,40 @@ import typings.babelCore.anon.Request
 import typings.babelCore.babelCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigItem extends StObject {
   
   /**
     * The path that the options are relative to.
     */
-  var dirname: String = js.native
+  var dirname: String
   
   /**
     * Information about the plugin's file, if Babel knows it.
     *  *
     */
-  var file: js.UndefOr[Request | Null] = js.native
+  var file: js.UndefOr[Request | Null] = js.undefined
   
   /**
     * The name that the user gave the plugin instance, e.g. `plugins: [ ['env', {}, 'my-env'] ]`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The options object passed to the plugin.
     */
-  var options: js.UndefOr[js.Object | `false`] = js.native
+  var options: js.UndefOr[js.Object | `false`] = js.undefined
   
   /**
     * The resolved value of the plugin.
     */
-  var value: js.Object | (js.Function1[/* repeated */ js.Any, _]) = js.native
+  var value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])
 }
 object ConfigItem {
   
   @scala.inline
-  def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ js.Any, _])): ConfigItem = {
+  def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): ConfigItem = {
     val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }
@@ -72,9 +70,9 @@ object ConfigItem {
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    def setValueFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

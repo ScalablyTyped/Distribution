@@ -13,24 +13,22 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expansionPanelMod {
   
   @JSImport("@react-md/expansion-panel/types/ExpansionPanel", "ExpansionPanel")
   @js.native
-  val ExpansionPanel: ForwardRefExoticComponent[ExpansionPanelProps with RefAttributes[HTMLDivElement]] = js.native
+  val ExpansionPanel: ForwardRefExoticComponent[ExpansionPanelProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Inlined std.Pick<@react-md/card.@react-md/card.CardContentProps, 'disablePadding' | 'disableSecondaryColor' | 'disableParagraphMargin'> */
-  @js.native
   trait ConfigurableCardContentProps extends StObject {
     
-    var disablePadding: js.UndefOr[Boolean] = js.native
+    var disablePadding: js.UndefOr[Boolean] = js.undefined
     
-    var disableParagraphMargin: js.UndefOr[Boolean] = js.native
+    var disableParagraphMargin: js.UndefOr[Boolean] = js.undefined
     
-    var disableSecondaryColor: js.UndefOr[Boolean] = js.native
+    var disableSecondaryColor: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurableCardContentProps {
     
@@ -63,26 +61,26 @@ object expansionPanelMod {
     }
   }
   
-  @js.native
   trait ExpansionPanelProps
-    extends CardProps
+    extends StObject
+       with CardProps
        with ConfigurableCardContentProps {
     
     /**
       * An optional className to provide the content of the panel.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to provide to the content of the panel.
       */
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * An optional header element to display instead of the default
       * implementation.
       */
-    var customHeader: js.UndefOr[ReactNode] = js.native
+    var customHeader: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the collapse transition should be disabled for the content
@@ -90,7 +88,7 @@ object expansionPanelMod {
       * a lot of content within the panel since animating max-height isn't super
       * great since it causes DOM repaints during the entire transition.
       */
-    var disableTransition: js.UndefOr[Boolean] = js.native
+    var disableTransition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if clicking on the header should no longer toggle the expansion
@@ -98,29 +96,29 @@ object expansionPanelMod {
       * when a panel cannot be closed to do preventing all panels from being closed
       * at a time.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the panel is currently expanded.
       */
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
     /**
       * An optional expander icon to use within the default header implementation.
       * This defaults to the `"expander"` icon.
       */
-    var expanderIcon: js.UndefOr[ReactNode] = js.native
+    var expanderIcon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The children to display within the default header element.
       */
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to provide to the default header implementation. If
       * the `header` prop is provided, this will do nothing.
       */
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional ref to pass to the default header implementation. This will be
@@ -130,31 +128,31 @@ object expansionPanelMod {
       * implementation to the focusable element for the keyboard focus behavior to
       * work.
       */
-    var headerRef: js.UndefOr[Ref[HTMLButtonElement]] = js.native
+    var headerRef: js.UndefOr[Ref[HTMLButtonElement]] = js.undefined
     
     /**
       * An optional style object to provide to the default header implementation. If
       * the `header` prop is provided, this will do nothing.
       */
-    var headerStyle: js.UndefOr[CSSProperties] = js.native
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * An id for the panel that is required for a11y.
       */
     @JSName("id")
-    var id_ExpansionPanelProps: String = js.native
+    var id_ExpansionPanelProps: String
     
     /**
       * Boolean if margin top should be applied to this header to add some
       * additional spacing between this panel and the previous panel. This will
       * automatically be provided for panels when using the `usePanels` hook.
       */
-    var marginTop: js.UndefOr[Boolean] = js.native
+    var marginTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that should attempt to change the expansion state of the panel.
       */
-    var onExpandClick: MouseEventHandler[HTMLButtonElement] = js.native
+    var onExpandClick: MouseEventHandler[HTMLButtonElement]
     
     /**
       * Boolean if the content should be persistent within the DOM instead of
@@ -162,7 +160,7 @@ object expansionPanelMod {
       * to maintain state while the panel is hidden since the children will unmount
       * when not expanded.
       */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object ExpansionPanelProps {
     

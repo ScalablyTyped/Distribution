@@ -2,29 +2,27 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anchor extends StObject {
   
-  var cssClass: String = js.native
+  var cssClass: String
   
-  var elementId: String = js.native
+  var elementId: String
   
-  var id: String = js.native
+  var id: String
   
-  var locked: Boolean = js.native
+  var locked: Boolean
   
-  var offsets: js.Tuple2[Double, Double] = js.native
+  var offsets: js.Tuple2[Double, Double]
   
-  var orientation: js.Tuple2[AnchorOrientationHint, AnchorOrientationHint] = js.native
+  var orientation: js.Tuple2[AnchorOrientationHint, AnchorOrientationHint]
   
-  var `type`: AnchorId = js.native
+  var `type`: AnchorId
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Anchor {
   

@@ -25,7 +25,6 @@ import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -48,9 +47,9 @@ object providerMod {
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     
     def appUrl(): String = js.native
@@ -81,8 +80,8 @@ object providerMod {
     def onDeepLinking(_connectCallback: OnConnectCallback): `true` = js.native
     def onDeepLinking(_connectCallback: OnConnectCallback, options: OnConnectOptions): `true` = js.native
     
-    def redirect(response: Response_[_], path: String): Unit = js.native
-    def redirect(response: Response_[_], path: String, options: RedirectOptions): Unit = js.native
+    def redirect(response: Response_[js.Any], path: String): Unit = js.native
+    def redirect(response: Response_[js.Any], path: String, options: RedirectOptions): Unit = js.native
     
     def registerPlatform(config: PlatformConfig): js.Promise[Platform | `false`] = js.native
     
@@ -91,14 +90,13 @@ object providerMod {
     def whitelist(urls: (String | Method)*): `true` = js.native
   }
   
-  @js.native
   trait DeploymentOptions extends StObject {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var serverless: js.UndefOr[Boolean] = js.native
+    var serverless: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object DeploymentOptions {
     
@@ -139,24 +137,23 @@ object providerMod {
     Response_[js.Any] | Unit
   ]
   
-  @js.native
   trait OnConnectOptions extends StObject {
     
     var invalidToken: js.UndefOr[
         js.Function2[
-          /* request */ Request_[ParamsDictionary, _, _, Query], 
-          /* response */ Response_[_], 
-          Response_[_]
+          /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* response */ Response_[js.Any], 
+          Response_[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var sessionTimeout: js.UndefOr[
         js.Function2[
-          /* request */ Request_[ParamsDictionary, _, _, Query], 
-          /* response */ Response_[_], 
-          Response_[_]
+          /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* response */ Response_[js.Any], 
+          Response_[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object OnConnectOptions {
     
@@ -171,7 +168,7 @@ object providerMod {
       
       @scala.inline
       def setInvalidToken(
-        value: (/* request */ Request_[ParamsDictionary, _, _, Query], /* response */ Response_[_]) => Response_[_]
+        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
       ): Self = StObject.set(x, "invalidToken", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -179,7 +176,7 @@ object providerMod {
       
       @scala.inline
       def setSessionTimeout(
-        value: (/* request */ Request_[ParamsDictionary, _, _, Query], /* response */ Response_[_]) => Response_[_]
+        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
       ): Self = StObject.set(x, "sessionTimeout", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -187,32 +184,31 @@ object providerMod {
     }
   }
   
-  @js.native
   trait ProviderOptions extends StObject {
     
-    var appUrl: js.UndefOr[String] = js.native
+    var appUrl: js.UndefOr[String] = js.undefined
     
-    var cookies: js.UndefOr[SameSite] = js.native
+    var cookies: js.UndefOr[SameSite] = js.undefined
     
-    var cors: js.UndefOr[Boolean] = js.native
+    var cors: js.UndefOr[Boolean] = js.undefined
     
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
-    var invalidTokenUrl: js.UndefOr[String] = js.native
+    var invalidTokenUrl: js.UndefOr[String] = js.undefined
     
-    var keysetUrl: js.UndefOr[String] = js.native
+    var keysetUrl: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Boolean] = js.native
+    var logger: js.UndefOr[Boolean] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var serverAddon: js.UndefOr[ServerAddonFunction] = js.native
+    var serverAddon: js.UndefOr[ServerAddonFunction] = js.undefined
     
-    var sessionTimeoutUrl: js.UndefOr[String] = js.native
+    var sessionTimeoutUrl: js.UndefOr[String] = js.undefined
     
-    var ssl: js.UndefOr[Cert] = js.native
+    var ssl: js.UndefOr[Cert] = js.undefined
     
-    var staticPath: js.UndefOr[String] = js.native
+    var staticPath: js.UndefOr[String] = js.undefined
   }
   object ProviderOptions {
     
@@ -299,12 +295,11 @@ object providerMod {
     }
   }
   
-  @js.native
   trait RedirectOptions extends StObject {
     
-    var ignoreRoot: js.UndefOr[Boolean] = js.native
+    var ignoreRoot: js.UndefOr[Boolean] = js.undefined
     
-    var isNewResource: js.UndefOr[Boolean] = js.native
+    var isNewResource: js.UndefOr[Boolean] = js.undefined
   }
   object RedirectOptions {
     

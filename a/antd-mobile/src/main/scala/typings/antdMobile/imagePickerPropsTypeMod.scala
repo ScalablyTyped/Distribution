@@ -7,16 +7,15 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerPropsTypeMod {
   
-  @js.native
   trait ImageFile
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var url: String = js.native
+    var url: String
   }
   object ImageFile {
     
@@ -34,22 +33,21 @@ object imagePickerPropsTypeMod {
     }
   }
   
-  @js.native
   trait ImagePickerPropTypes extends StObject {
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[js.Any] = js.native
+    var capture: js.UndefOr[js.Any] = js.undefined
     
-    var disableDelete: js.UndefOr[Boolean] = js.native
+    var disableDelete: js.UndefOr[Boolean] = js.undefined
     
-    var files: js.UndefOr[js.Array[ImageFile]] = js.native
+    var files: js.UndefOr[js.Array[ImageFile]] = js.undefined
     
-    var length: js.UndefOr[Double | String] = js.native
+    var length: js.UndefOr[Double | String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onAddImageClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onAddImageClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[
@@ -58,17 +56,17 @@ object imagePickerPropsTypeMod {
           /* index */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onFail: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var onFail: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     var onImageClick: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[ImageFile]], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ImagePickerPropTypes {
     

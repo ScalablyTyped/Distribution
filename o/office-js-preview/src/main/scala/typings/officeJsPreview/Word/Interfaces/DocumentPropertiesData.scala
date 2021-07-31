@@ -3,11 +3,9 @@ package typings.officeJsPreview.Word.Interfaces
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
-@js.native
 trait DocumentPropertiesData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var applicationName: js.UndefOr[String] = js.native
+  var applicationName: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var creationDate: js.UndefOr[Date] = js.native
+  var creationDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var customProperties: js.UndefOr[js.Array[CustomPropertyData]] = js.native
+  var customProperties: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastAuthor: js.UndefOr[String] = js.native
+  var lastAuthor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -96,7 +94,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastPrintDate: js.UndefOr[Date] = js.native
+  var lastPrintDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -104,7 +102,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastSaveTime: js.UndefOr[Date] = js.native
+  var lastSaveTime: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -112,7 +110,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var manager: js.UndefOr[String] = js.native
+  var manager: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -120,7 +118,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var revisionNumber: js.UndefOr[String] = js.native
+  var revisionNumber: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -128,7 +126,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var security: js.UndefOr[Double] = js.native
+  var security: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -136,7 +134,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -144,7 +142,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -152,7 +150,7 @@ trait DocumentPropertiesData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DocumentPropertiesData {
   

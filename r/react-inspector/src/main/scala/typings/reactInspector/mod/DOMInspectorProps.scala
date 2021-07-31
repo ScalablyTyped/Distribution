@@ -2,16 +2,15 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMInspectorProps
-  extends TreeViewProps
+  extends StObject
+     with TreeViewProps
      with ThemedComponentProps {
   
   @JSName("data")
-  var data_DOMInspectorProps: js.Object = js.native
+  var data_DOMInspectorProps: js.Object
 }
 object DOMInspectorProps {
   

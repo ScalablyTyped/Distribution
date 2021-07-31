@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
   /** The columns to which CSV data is imported. If not specified, all columns of the database table are loaded with CSV data. */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The table to which CSV data is imported. */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
 }
 object Columns {
   

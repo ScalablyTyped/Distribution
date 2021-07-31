@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceMessage extends StObject {
   
   /**
     * An AWS DMS resource from which you want to remove tag(s). The value for this parameter is an Amazon Resource Name (ARN).
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
   
   /**
     * The tag key (name) of the tag to be removed.
     */
-  var TagKeys: KeyList = js.native
+  var TagKeys: KeyList
 }
 object RemoveTagsFromResourceMessage {
   

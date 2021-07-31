@@ -2,24 +2,22 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppStateStatic extends StObject {
   
   /**
     * Add a handler to AppState changes by listening to the change event
     * type and providing the handler
     */
-  def addEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit = js.native
+  def addEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit
   
-  var currentState: AppStateStatus = js.native
+  var currentState: AppStateStatus
   
   /**
     * Remove a handler by passing the change event type and the handler
     */
-  def removeEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit = js.native
+  def removeEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit
 }
 object AppStateStatic {
   

@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of the find/replace.
   */
-@js.native
 trait SchemaFindReplaceResponse extends StObject {
   
   /**
     * The number of formula cells changed.
     */
-  var formulasChanged: js.UndefOr[Double] = js.native
+  var formulasChanged: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of occurrences (possibly multiple within a cell) changed. For
@@ -22,22 +20,22 @@ trait SchemaFindReplaceResponse extends StObject {
     * `&quot;Google Sheets&quot;`, this would be `&quot;3&quot;` because
     * `&quot;Google Sheets&quot;` -&gt; `&quot;Googlo Shoots&quot;`.
     */
-  var occurrencesChanged: js.UndefOr[Double] = js.native
+  var occurrencesChanged: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of rows changed.
     */
-  var rowsChanged: js.UndefOr[Double] = js.native
+  var rowsChanged: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of sheets changed.
     */
-  var sheetsChanged: js.UndefOr[Double] = js.native
+  var sheetsChanged: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of non-formula cells changed.
     */
-  var valuesChanged: js.UndefOr[Double] = js.native
+  var valuesChanged: js.UndefOr[Double] = js.undefined
 }
 object SchemaFindReplaceResponse {
   

@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnColumnIndexComponent extends StObject {
   
-  var column: js.UndefOr[this.type] = js.native
+  var column: js.UndefOr[this.type] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
 }
 object ColumnColumnIndexComponent {
   

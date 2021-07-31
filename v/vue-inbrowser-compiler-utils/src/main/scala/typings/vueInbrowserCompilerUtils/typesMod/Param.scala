@@ -2,13 +2,13 @@ package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Param extends UnnamedParam {
+trait Param
+  extends StObject
+     with UnnamedParam {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Param {
   

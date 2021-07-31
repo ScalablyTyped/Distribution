@@ -5,19 +5,17 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.none
 import typings.algoliaClientSearch.algoliaClientSearchStrings.partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightMatch extends StObject {
   
-  val fullyHighlighted: js.UndefOr[Boolean] = js.native
+  val fullyHighlighted: js.UndefOr[Boolean] = js.undefined
   
-  val matchLevel: none | partial | full = js.native
+  val matchLevel: none | partial | full
   
-  val matchedWords: js.Array[String] = js.native
+  val matchedWords: js.Array[String]
   
-  val value: String = js.native
+  val value: String
 }
 object HighlightMatch {
   

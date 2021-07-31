@@ -280,23 +280,23 @@ import typings.astTypes.namedTypesMod.namedTypes.YieldExpression
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(builders, builtInTypes, defineMethod, eachField, finalize, getBuilderName, getFieldNames, getFieldValue, getSupertypeNames, NodePath, Path, PathVisitor, someField, Type, use, visit) */ object astNodesAreEquivalent {
     
-    @JSImport("ast-types", "astNodesAreEquivalent")
-    @js.native
-    def apply(a: js.Any, b: js.Any): Boolean = js.native
-    @JSImport("ast-types", "astNodesAreEquivalent")
-    @js.native
-    def apply(a: js.Any, b: js.Any, problemPath: js.Any): Boolean = js.native
+    @scala.inline
+    def apply(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(a: js.Any, b: js.Any, problemPath: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], problemPath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("ast-types", "astNodesAreEquivalent.assert")
+    @JSImport("ast-types", "astNodesAreEquivalent")
     @js.native
-    def assert(a: js.Any, b: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def assert(a: js.Any, b: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object namedTypes {

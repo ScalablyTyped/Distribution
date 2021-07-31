@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IlmMoveToStep[T] extends Generic {
+trait IlmMoveToStep[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var index: String = js.native
+  var index: String
 }
 object IlmMoveToStep {
   
@@ -21,7 +21,7 @@ object IlmMoveToStep {
   }
   
   @scala.inline
-  implicit class IlmMoveToStepMutableBuilder[Self <: IlmMoveToStep[_], T] (val x: Self with IlmMoveToStep[T]) extends AnyVal {
+  implicit class IlmMoveToStepMutableBuilder[Self <: IlmMoveToStep[?], T] (val x: Self & IlmMoveToStep[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

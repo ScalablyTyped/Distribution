@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of Page that are only relevant for pages with page_type
   * MASTER.
   */
-@js.native
 trait SchemaMasterProperties extends StObject {
   
   /**
     * The human-readable name of the master.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
 }
 object SchemaMasterProperties {
   

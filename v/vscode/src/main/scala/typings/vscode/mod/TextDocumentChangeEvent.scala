@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentChangeEvent extends StObject {
   
   /**
     * An array of content changes.
     */
-  val contentChanges: js.Array[TextDocumentContentChangeEvent] = js.native
+  val contentChanges: js.Array[TextDocumentContentChangeEvent]
   
   /**
     * The affected document.
     */
-  val document: TextDocument = js.native
+  val document: TextDocument
 }
 object TextDocumentChangeEvent {
   

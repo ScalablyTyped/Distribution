@@ -10,29 +10,54 @@ import typings.pluginError.anon.Optionspluginstringmessag
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("plugin-error", JSImport.Namespace)
   @js.native
-  val ^ : Constructor = js.native
+  val ^ : js.Object & Constructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("plugin-error", JSImport.Namespace)
   @js.native
   class Class protected ()
-    extends typings.pluginError.anon.PluginError {
+    extends StObject
+       with typings.pluginError.anon.PluginError {
     /**
       * @param options Options with plugin name and message
       */
     def this(options: Optionspluginstringmessag) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Plugin name
+      */
+    /* CompleteClass */
+    var plugin: String = js.native
+    
+    /**
+      * Boolean controlling if properties will be shown in `err.toString()`.
+      */
+    /* CompleteClass */
+    var showProperties: Boolean = js.native
+    
+    /**
+      * Boolean controlling if the stack will be shown in `err.toString()`.
+      */
+    /* CompleteClass */
+    var showStack: Boolean = js.native
   }
   
   @js.native
   trait Constructor
-    extends /**
+    extends StObject
+       with /**
     * @param options Options with plugin name and message
     */
   Instantiable1[/* options */ Optionspluginstringmessag, typings.pluginError.anon.PluginError]
@@ -51,7 +76,7 @@ object mod extends Shortcut {
           PluginError[
             (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor with TopLevel[js.Any]) | Error
+    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[js.Any]) | Error
           ]
         ]
        with /**
@@ -66,32 +91,31 @@ object mod extends Shortcut {
           PluginError[
             (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor with TopLevel[js.Any]) | Error
+    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[js.Any]) | Error
           ]
         ]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * File name where the error occurred
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * Line number where the error occurred
       */
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
     /**
       * Error message
       */
-    var message: js.UndefOr[js.Any] = js.native
+    var message: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Error name
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Error properties will be included in err.toString(). Can be omitted by
@@ -99,7 +123,7 @@ object mod extends Shortcut {
       *
       * Default: `true`
       */
-    var showProperties: js.UndefOr[Boolean] = js.native
+    var showProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default the stack will not be shown. Set this to true if you think the
@@ -107,13 +131,13 @@ object mod extends Shortcut {
       *
       * Default: `false`
       */
-    var showStack: js.UndefOr[Boolean] = js.native
+    var showStack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Error stack to use for `err.toString()` if `showStack` is `true`.
       * By default it uses the `stack` of the original error if you used one, otherwise it captures a new stack.
       */
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -173,40 +197,41 @@ object mod extends Shortcut {
   /**
     * Abstraction for error handling for Vinyl plugins
     */
-  type PluginError[T] = SimplePluginError with T
+  type PluginError[T] = SimplePluginError & T
   
   /**
     * The `SimplePluginError` interface defines the properties available on all the the instances of `PluginError`.
     *
     * @internal
     */
-  @js.native
-  trait SimplePluginError extends Error {
+  trait SimplePluginError
+    extends StObject
+       with Error {
     
     /**
       * File name where the error occurred
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * Line number where the error occurred
       */
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
     /**
       * Plugin name
       */
-    var plugin: String = js.native
+    var plugin: String
     
     /**
       * Boolean controlling if properties will be shown in `err.toString()`.
       */
-    var showProperties: Boolean = js.native
+    var showProperties: Boolean
     
     /**
       * Boolean controlling if the stack will be shown in `err.toString()`.
       */
-    var showStack: Boolean = js.native
+    var showStack: Boolean
   }
   object SimplePluginError {
     
@@ -242,8 +267,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Constructor
+  type _To = js.Object & Constructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Constructor = ^
+  override def _to: js.Object & Constructor = ^
 }

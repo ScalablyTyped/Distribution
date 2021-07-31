@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait HostPathVolumeSource extends StObject {
   
   /**
     * Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Type for HostPath Volume Defaults to "" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object HostPathVolumeSource {
   

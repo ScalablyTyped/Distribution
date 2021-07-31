@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -292,35 +291,34 @@ object mod {
     def update(message: Message): Hasher = js.native
   }
   
-  @js.native
   trait Hasher extends StObject {
     
     /**
       * Return hash in integer array.
       */
-    def array(): js.Array[Double] = js.native
+    def array(): js.Array[Double]
     
     /**
       * Return hash in ArrayBuffer.
       */
-    def arrayBuffer(): ArrayBuffer = js.native
+    def arrayBuffer(): ArrayBuffer
     
     /**
       * Return hash in integer array.
       */
-    def digest(): js.Array[Double] = js.native
+    def digest(): js.Array[Double]
     
     /**
       * Return hash in hex string.
       */
-    def hex(): String = js.native
+    def hex(): String
     
     /**
       * Update hash
       *
       * @param message The message you want to hash.
       */
-    def update(message: Message): Hasher = js.native
+    def update(message: Message): Hasher
   }
   object Hasher {
     

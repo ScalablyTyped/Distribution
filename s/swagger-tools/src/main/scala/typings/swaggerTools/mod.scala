@@ -8,17 +8,18 @@ import typings.swaggerTools.anon.Api
 import typings.swaggerTools.anon.ApiPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("swagger-tools", "initializeMiddleware")
+  @JSImport("swagger-tools", JSImport.Namespace)
   @js.native
-  def initializeMiddleware(swaggerObject: js.Any, callback: InitializeMiddlewareCallback20): Unit = js.native
-  @JSImport("swagger-tools", "initializeMiddleware")
-  @js.native
-  def initializeMiddleware(swaggerObject: js.Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def initializeMiddleware(swaggerObject: js.Any, callback: InitializeMiddlewareCallback20): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initializeMiddleware(swaggerObject: js.Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type InitializeMiddlewareCallback12 = js.Function1[/* middleware */ Middleware12, Unit]
   
@@ -37,7 +38,9 @@ object mod {
   }
   
   @js.native
-  trait Middleware12 extends Middleware {
+  trait Middleware12
+    extends StObject
+       with Middleware {
     
     def swaggerRouter(): NextHandleFunction = js.native
     def swaggerRouter(options: SwaggerRouter12Options): NextHandleFunction = js.native
@@ -47,7 +50,9 @@ object mod {
   }
   
   @js.native
-  trait Middleware20 extends Middleware {
+  trait Middleware20
+    extends StObject
+       with Middleware {
     
     def swaggerRouter(): NextHandleFunction = js.native
     def swaggerRouter(options: SwaggerRouter20Options): NextHandleFunction = js.native
@@ -56,12 +61,11 @@ object mod {
     def swaggerUi(options: SwaggerUiOptions): NextHandleFunction = js.native
   }
   
-  @js.native
   trait OperationParameter extends StObject {
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
     
-    var schema: SwaggerParameterSchema = js.native
+    var schema: SwaggerParameterSchema
   }
   object OperationParameter {
     
@@ -85,10 +89,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Resource extends StObject {
     
-    var resourcePath: String = js.native
+    var resourcePath: String
   }
   object Resource {
     
@@ -112,20 +115,19 @@ object mod {
     var swagger: Api = js.native
   }
   
-  @js.native
   trait Swagger20Operation extends StObject {
     
-    var operationId: js.UndefOr[String] = js.native
+    var operationId: js.UndefOr[String] = js.undefined
     
-    var parameters: js.UndefOr[js.Array[SwaggerParameterSchema]] = js.native
+    var parameters: js.UndefOr[js.Array[SwaggerParameterSchema]] = js.undefined
     
-    var responses: StringDictionary[Swagger20Response] = js.native
+    var responses: StringDictionary[Swagger20Response]
     
-    var security: js.UndefOr[js.Array[Swagger20Security]] = js.native
+    var security: js.UndefOr[js.Array[Swagger20Security]] = js.undefined
     
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Swagger20Operation {
     
@@ -188,12 +190,11 @@ object mod {
     var swagger: ApiPath[P] = js.native
   }
   
-  @js.native
   trait Swagger20Response extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[js.Any] = js.native
+    var schema: js.UndefOr[js.Any] = js.undefined
   }
   object Swagger20Response {
     
@@ -222,28 +223,27 @@ object mod {
   
   type Swagger20Security = StringDictionary[js.Any]
   
-  @js.native
   trait SwaggerParameterSchema extends StObject {
     
-    var allowMultiple: js.UndefOr[Boolean] = js.native
+    var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var in: js.UndefOr[String] = js.native
+    var in: js.UndefOr[String] = js.undefined
     
-    var maximum: js.UndefOr[String] = js.native
+    var maximum: js.UndefOr[String] = js.undefined
     
-    var minimum: js.UndefOr[String] = js.native
+    var minimum: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var paramType: js.UndefOr[String] = js.native
+    var paramType: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SwaggerParameterSchema {
     
@@ -313,16 +313,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SwaggerRequestParameter[T] extends StObject {
     
-    var originalValue: js.Any = js.native
+    var originalValue: js.Any
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
     
-    var schema: SwaggerParameterSchema = js.native
+    var schema: SwaggerParameterSchema
     
-    var value: T = js.native
+    var value: T
   }
   object SwaggerRequestParameter {
     
@@ -333,7 +332,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SwaggerRequestParameterMutableBuilder[Self <: SwaggerRequestParameter[_], T] (val x: Self with SwaggerRequestParameter[T]) extends AnyVal {
+    implicit class SwaggerRequestParameterMutableBuilder[Self <: SwaggerRequestParameter[?], T] (val x: Self & SwaggerRequestParameter[T]) extends AnyVal {
       
       @scala.inline
       def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
@@ -361,14 +360,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait SwaggerRouter12Options extends StObject {
     
-    var controllers: js.UndefOr[SwaggerRouter12OptionsControllers | String | js.Array[String]] = js.native
+    var controllers: js.UndefOr[SwaggerRouter12OptionsControllers | String | js.Array[String]] = js.undefined
     
-    var ignoreMissingHandlers: js.UndefOr[Boolean] = js.native
+    var ignoreMissingHandlers: js.UndefOr[Boolean] = js.undefined
     
-    var useStubs: js.UndefOr[Boolean] = js.native
+    var useStubs: js.UndefOr[Boolean] = js.undefined
   }
   object SwaggerRouter12Options {
     
@@ -413,14 +411,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait SwaggerRouter20Options extends StObject {
     
-    var controllers: js.UndefOr[SwaggerRouter20OptionsControllers | String | js.Array[String]] = js.native
+    var controllers: js.UndefOr[SwaggerRouter20OptionsControllers | String | js.Array[String]] = js.undefined
     
-    var ignoreMissingHandlers: js.UndefOr[Boolean] = js.native
+    var ignoreMissingHandlers: js.UndefOr[Boolean] = js.undefined
     
-    var useStubs: js.UndefOr[Boolean] = js.native
+    var useStubs: js.UndefOr[Boolean] = js.undefined
   }
   object SwaggerRouter20Options {
     
@@ -460,16 +457,15 @@ object mod {
   
   type SwaggerSecurityCallback = js.Function1[/* err */ js.UndefOr[SwaggerSecurityError], Unit]
   
-  @js.native
   trait SwaggerSecurityError extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object SwaggerSecurityError {
     
@@ -520,18 +516,17 @@ object mod {
   
   type SwaggerUi12ApiDeclarations = StringDictionary[js.Any]
   
-  @js.native
   trait SwaggerUiOptions extends StObject {
     
-    var apiDocs: js.UndefOr[String] = js.native
+    var apiDocs: js.UndefOr[String] = js.undefined
     
-    var apiDocsPrefix: js.UndefOr[String] = js.native
+    var apiDocsPrefix: js.UndefOr[String] = js.undefined
     
-    var swaggerUi: js.UndefOr[String] = js.native
+    var swaggerUi: js.UndefOr[String] = js.undefined
     
-    var swaggerUiDir: js.UndefOr[String] = js.native
+    var swaggerUiDir: js.UndefOr[String] = js.undefined
     
-    var swaggerUiPrefix: js.UndefOr[String] = js.native
+    var swaggerUiPrefix: js.UndefOr[String] = js.undefined
   }
   object SwaggerUiOptions {
     
@@ -576,10 +571,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SwaggerValidatorOptions extends StObject {
     
-    var validateResponse: js.UndefOr[Boolean] = js.native
+    var validateResponse: js.UndefOr[Boolean] = js.undefined
   }
   object SwaggerValidatorOptions {
     

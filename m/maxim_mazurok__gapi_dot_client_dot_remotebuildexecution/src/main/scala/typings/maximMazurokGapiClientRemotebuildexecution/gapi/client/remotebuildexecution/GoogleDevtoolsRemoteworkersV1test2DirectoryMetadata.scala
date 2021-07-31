@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends StObject {
   
   /** A pointer to the contents of the directory, in the form of a marshalled Directory message. */
-  var digest: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var digest: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /** The path of the directory, as in FileMetadata.path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
   

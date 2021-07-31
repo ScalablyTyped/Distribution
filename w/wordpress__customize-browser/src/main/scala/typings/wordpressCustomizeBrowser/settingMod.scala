@@ -6,7 +6,6 @@ import typings.wordpressCustomizeBrowser.previewerMod.Previewer
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingMod {
@@ -21,24 +20,23 @@ object settingMod {
     
     def findControls(): js.Array[Control] = js.native
     
-    def initialize(id: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], options: PartialSettingOptions): Unit = js.native
-    def initialize(id: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-    def initialize(id: js.UndefOr[scala.Nothing], value: js.Any, options: PartialSettingOptions): Unit = js.native
-    def initialize(id: String, value: js.UndefOr[scala.Nothing], options: PartialSettingOptions): Unit = js.native
     def initialize(id: String, value: js.Any): Unit = js.native
     def initialize(id: String, value: js.Any, options: PartialSettingOptions): Unit = js.native
+    def initialize(id: String, value: Unit, options: PartialSettingOptions): Unit = js.native
+    def initialize(id: Unit, value: js.Any): Unit = js.native
+    def initialize(id: Unit, value: js.Any, options: PartialSettingOptions): Unit = js.native
+    def initialize(id: Unit, value: Unit, options: PartialSettingOptions): Unit = js.native
     
     def preview(): Unit = js.native
   }
   
-  @js.native
   trait SettingOptions extends StObject {
     
-    var dirty: Boolean = js.native
+    var dirty: Boolean
     
-    var previewer: Previewer[String] = js.native
+    var previewer: Previewer[String]
     
-    var transport: String = js.native
+    var transport: String
   }
   object SettingOptions {
     

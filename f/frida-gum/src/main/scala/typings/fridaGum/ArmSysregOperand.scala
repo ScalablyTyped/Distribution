@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.sysreg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArmSysregOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
   
-  var `type`: sysreg = js.native
+  var `type`: sysreg
   
-  var value: ArmRegister = js.native
+  var value: ArmRegister
 }
 object ArmSysregOperand {
   
   @scala.inline
-  def apply(subtracted: Boolean, `type`: sysreg, value: ArmRegister): ArmSysregOperand = {
+  def apply(subtracted: Boolean, value: ArmRegister): ArmSysregOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sysreg")
     __obj.asInstanceOf[ArmSysregOperand]
   }
   

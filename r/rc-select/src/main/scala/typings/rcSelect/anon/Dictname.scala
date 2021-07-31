@@ -4,17 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rcSelect.generatorMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictname[OptionsType /* <: js.Array[js.Object] */]
-  extends /** Save for customize data */
+  extends StObject
+     with /** Save for customize data */
 /* prop */ StringDictionary[js.Any] {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any
   
-  var key: Key = js.native
+  var key: Key
 }
 object Dictname {
   
@@ -28,7 +27,7 @@ object Dictname {
   }
   
   @scala.inline
-  implicit class DictnameMutableBuilder[Self <: Dictname[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with Dictname[OptionsType]) extends AnyVal {
+  implicit class DictnameMutableBuilder[Self <: Dictname[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & Dictname[OptionsType]) extends AnyVal {
     
     @scala.inline
     def setData(

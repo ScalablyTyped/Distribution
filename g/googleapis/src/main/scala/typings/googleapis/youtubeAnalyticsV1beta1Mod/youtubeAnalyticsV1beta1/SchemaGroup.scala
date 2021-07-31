@@ -4,21 +4,19 @@ import typings.googleapis.anon.ItemCount
 import typings.googleapis.anon.PublishedAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGroup extends StObject {
   
-  var contentDetails: js.UndefOr[ItemCount] = js.native
+  var contentDetails: js.UndefOr[ItemCount] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var snippet: js.UndefOr[PublishedAt] = js.native
+  var snippet: js.UndefOr[PublishedAt] = js.undefined
 }
 object SchemaGroup {
   

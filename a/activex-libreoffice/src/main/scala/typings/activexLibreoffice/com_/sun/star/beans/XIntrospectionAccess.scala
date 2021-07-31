@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,8 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @@see XPropertySet
   * @@see com::sun::star::beans::XExactName
   */
-@js.native
-trait XIntrospectionAccess extends XInterface {
+trait XIntrospectionAccess
+  extends StObject
+     with XInterface {
   
   /**
     * returns information about which method concepts described in the {@link MethodConcept} constants group are supported by this {@link
@@ -36,7 +36,7 @@ trait XIntrospectionAccess extends XInterface {
     * MethodConcept.INDEXCONTAINER} ;
     * @returns zero or more constants of the {@link MethodConcept} constants group combined by an arithmetical or-operation.
     */
-  val SuppliedMethodConcepts: Double = js.native
+  val SuppliedMethodConcepts: Double
   
   /**
     * returns information about which property concepts described in the {@link PropertyConcept} constants group are supported by this {@link
@@ -47,7 +47,7 @@ trait XIntrospectionAccess extends XInterface {
     * {@link PropertyConcept.PROPERTYSET} ,{@link PropertyConcept.ATTRIBUTES} and{@link PropertyConcept.METHODS} .
     * @returns zero or more constants of the {@link PropertyConcept} constants group.combined by an arithmetical or-operation.
     */
-  val SuppliedPropertyConcepts: Double = js.native
+  val SuppliedPropertyConcepts: Double
   
   /**
     * returns the listener types supported by the introspected object.
@@ -56,7 +56,7 @@ trait XIntrospectionAccess extends XInterface {
     * will be one of the elements in the returned sequence.
     * @returns a sequence of the types of listener interfaces which are supported by the introspected object.
     */
-  val SupportedListeners: SafeArray[`type`] = js.native
+  val SupportedListeners: SafeArray[`type`]
   
   /**
     * returns information about a method if a method with the demanded name exists and if it accords to one of the demanded MethodConcepts. The information
@@ -66,21 +66,21 @@ trait XIntrospectionAccess extends XInterface {
     * @returns A {@link com.sun.star.reflection.XIdlMethod} providing information about and access to the demanded method if a corresponding method exists.
     * @throws NoSuchElementException when a method with the demanded name doesn't exist or if it accords to a wrong {@link MethodConcept} .
     */
-  def getMethod(aName: String, nMethodConcepts: Double): XIdlMethod = js.native
+  def getMethod(aName: String, nMethodConcepts: Double): XIdlMethod
   
   /**
     * returns a sequence of methods of the introspected object.
     * @param nMethodConcepts zero or more constants of the {@link MethodConcept} constants group combined by an arithmetical or-operation.
     * @returns all methods of the introspected object which accord to the demanded MethodConcepts.
     */
-  def getMethods(nMethodConcepts: Double): SafeArray[XIdlMethod] = js.native
+  def getMethods(nMethodConcepts: Double): SafeArray[XIdlMethod]
   
   /**
     * returns a sequence of properties of the introspected object
     * @param nPropertyConcepts zero or more constants of the {@link PropertyConcept} constants group combined by an arithmetical or-operation.
     * @returns all properties of the introspected object which accord to the demanded PropertyConcepts.
     */
-  def getProperties(nPropertyConcepts: Double): SafeArray[Property] = js.native
+  def getProperties(nPropertyConcepts: Double): SafeArray[Property]
   
   /**
     * returns information about a property if a property with the demanded name exists and if it accords to one of the demanded PropertyConcepts. The
@@ -90,7 +90,7 @@ trait XIntrospectionAccess extends XInterface {
     * @returns A {@link Property} struct providing information about the demanded property, if a corresponding property exists.
     * @throws NoSuchElementException when a property with the demanded name doesn't exist or if it accords to a wrong {@link PropertyConcept} .
     */
-  def getProperty(aName: String, nPropertyConcepts: Double): Property = js.native
+  def getProperty(aName: String, nPropertyConcepts: Double): Property
   
   /**
     * returns information about which method concepts described in the {@link MethodConcept} constants group are supported by this {@link
@@ -102,7 +102,7 @@ trait XIntrospectionAccess extends XInterface {
     * MethodConcept.INDEXCONTAINER} ;
     * @returns zero or more constants of the {@link MethodConcept} constants group combined by an arithmetical or-operation.
     */
-  def getSuppliedMethodConcepts(): Double = js.native
+  def getSuppliedMethodConcepts(): Double
   
   /**
     * returns information about which property concepts described in the {@link PropertyConcept} constants group are supported by this {@link
@@ -113,7 +113,7 @@ trait XIntrospectionAccess extends XInterface {
     * {@link PropertyConcept.PROPERTYSET} ,{@link PropertyConcept.ATTRIBUTES} and{@link PropertyConcept.METHODS} .
     * @returns zero or more constants of the {@link PropertyConcept} constants group.combined by an arithmetical or-operation.
     */
-  def getSuppliedPropertyConcepts(): Double = js.native
+  def getSuppliedPropertyConcepts(): Double
   
   /**
     * returns the listener types supported by the introspected object.
@@ -122,7 +122,7 @@ trait XIntrospectionAccess extends XInterface {
     * will be one of the elements in the returned sequence.
     * @returns a sequence of the types of listener interfaces which are supported by the introspected object.
     */
-  def getSupportedListeners(): SafeArray[`type`] = js.native
+  def getSupportedListeners(): SafeArray[`type`]
   
   /**
     * allows to ask if a method with the demanded name exists and if it accords to one of the demanded {@link MethodConcept} .
@@ -130,7 +130,7 @@ trait XIntrospectionAccess extends XInterface {
     * @param nMethodConcepts zero or more constants of the {@link MethodConcept} constants group combined by an arithmetical or-operation.
     * @returns `TRUE` if the method exists and accords to one of the demanded MethodConcepts, otherwise `FALSE` is returned.
     */
-  def hasMethod(aName: String, nMethodConcepts: Double): Boolean = js.native
+  def hasMethod(aName: String, nMethodConcepts: Double): Boolean
   
   /**
     * allows to ask if a property with the demanded name exists and if it accords to one of the demanded {@link PropertyConcept} .
@@ -138,7 +138,7 @@ trait XIntrospectionAccess extends XInterface {
     * @param nPropertyConcepts zero or more constants of the {@link PropertyConcept} constants group combined by an arithmetical or-operation.
     * @returns `TRUE` if the property exists and accords to one of the demanded PropertyConcepts, otherwise `FALSE` is returned.
     */
-  def hasProperty(aName: String, nPropertyConcepts: Double): Boolean = js.native
+  def hasProperty(aName: String, nPropertyConcepts: Double): Boolean
   
   /**
     * creates an adapter that implements an interface with the specified type.
@@ -161,7 +161,7 @@ trait XIntrospectionAccess extends XInterface {
     * the {@link XExactName} interface has to be supported.
     * @see com.sun.star.beans.XExactName
     */
-  def queryAdapter(aInterfaceType: `type`): XInterface = js.native
+  def queryAdapter(aInterfaceType: `type`): XInterface
 }
 object XIntrospectionAccess {
   

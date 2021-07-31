@@ -3,20 +3,18 @@ package typings.reveal
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/hakimel/reveal.js/#slide-changed-event
-@js.native
 trait SlideEvent extends StObject {
   
-  var currentSlide: Element = js.native
+  var currentSlide: Element
   
-  var indexh: Double = js.native
+  var indexh: Double
   
-  var indexv: js.UndefOr[Double] = js.native
+  var indexv: js.UndefOr[Double] = js.undefined
   
-  var previousSlide: js.UndefOr[Element] = js.native
+  var previousSlide: js.UndefOr[Element] = js.undefined
 }
 object SlideEvent {
   

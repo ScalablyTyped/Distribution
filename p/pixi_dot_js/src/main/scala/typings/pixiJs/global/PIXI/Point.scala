@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Point")
 @js.native
 class Point ()
-  extends typings.pixiJs.PIXI.Point {
+  extends StObject
+     with typings.pixiJs.PIXI.Point {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
+  
+  /**
+    * X coord
+    * @memberof PIXI.IPointData#
+    * @member {number} x
+    */
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /**
+    * Y coord
+    * @memberof PIXI.IPointData#
+    * @member {number} y
+    */
+  /* CompleteClass */
+  var y: Double = js.native
 }

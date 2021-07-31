@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "IndexedShape")
 @js.native
-class IndexedShape protected () extends Geo {
+class IndexedShape protected ()
+  extends StObject
+     with Geo {
   /*
     Defines a shape that already exists in an index/type.
     */

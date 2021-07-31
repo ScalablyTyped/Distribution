@@ -6,18 +6,16 @@ import typings.vegaLite.channelMod.NonPositionScaleChannel
 import typings.vegaLite.channelMod.ScaleChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcResolveMod {
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/channel.PositionScaleChannel, vega-lite.vega-lite/build/src/resolve.ResolveMode>> */
-  @js.native
   trait AxisResolveMap extends StObject {
     
-    var x: js.UndefOr[ResolveMode] = js.native
+    var x: js.UndefOr[ResolveMode] = js.undefined
     
-    var y: js.UndefOr[ResolveMode] = js.native
+    var y: js.UndefOr[ResolveMode] = js.undefined
   }
   object AxisResolveMap {
     
@@ -46,14 +44,13 @@ object srcResolveMod {
   
   type LegendResolveMap = Partial[Record[NonPositionScaleChannel, ResolveMode]]
   
-  @js.native
   trait Resolve extends StObject {
     
-    var axis: js.UndefOr[AxisResolveMap] = js.native
+    var axis: js.UndefOr[AxisResolveMap] = js.undefined
     
-    var legend: js.UndefOr[LegendResolveMap] = js.native
+    var legend: js.UndefOr[LegendResolveMap] = js.undefined
     
-    var scale: js.UndefOr[ScaleResolveMap] = js.native
+    var scale: js.UndefOr[ScaleResolveMap] = js.undefined
   }
   object Resolve {
     

@@ -3,57 +3,55 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.googleVisualizationStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PieChartOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   
-  var chartArea: js.UndefOr[ChartArea] = js.native
+  var chartArea: js.UndefOr[ChartArea] = js.undefined
   
-  var colors: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var enableInteractivity: js.UndefOr[Boolean] = js.native
+  var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   
-  var fontName: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var is3D: js.UndefOr[Boolean] = js.native
+  var is3D: js.UndefOr[Boolean] = js.undefined
   
-  var legend: js.UndefOr[ChartLegend | none] = js.native
+  var legend: js.UndefOr[ChartLegend | none] = js.undefined
   
-  var pieHole: js.UndefOr[Double] = js.native
+  var pieHole: js.UndefOr[Double] = js.undefined
   
-  var pieResidueSliceColor: js.UndefOr[String] = js.native
+  var pieResidueSliceColor: js.UndefOr[String] = js.undefined
   
-  var pieResidueSliceLabel: js.UndefOr[String] = js.native
+  var pieResidueSliceLabel: js.UndefOr[String] = js.undefined
   
-  var pieSliceBorderColor: js.UndefOr[String] = js.native
+  var pieSliceBorderColor: js.UndefOr[String] = js.undefined
   
-  var pieSliceText: js.UndefOr[String] = js.native
+  var pieSliceText: js.UndefOr[String] = js.undefined
   
-  var pieSliceTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var pieSliceTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var pieStartAngle: js.UndefOr[Double] = js.native
+  var pieStartAngle: js.UndefOr[Double] = js.undefined
   
-  var reverseCategories: js.UndefOr[Boolean] = js.native
+  var reverseCategories: js.UndefOr[Boolean] = js.undefined
   
-  var sliceVisibilityThreshold: js.UndefOr[Double] = js.native
+  var sliceVisibilityThreshold: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[js.Any] = js.native
+  var slices: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var tooltip: js.UndefOr[ChartTooltip] = js.native
+  var tooltip: js.UndefOr[ChartTooltip] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PieChartOptions {
   

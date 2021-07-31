@@ -39,7 +39,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,42 +46,42 @@ object mod {
   @JSImport("hedron", "Bounds")
   @js.native
   class Bounds protected ()
-    extends Component[BoundsProps with HTMLProps[HTMLElement], js.Object, js.Any] {
-    def this(props: BoundsProps with HTMLProps[HTMLElement]) = this()
+    extends Component[BoundsProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+    def this(props: BoundsProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BoundsProps with HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: BoundsProps & HTMLProps[HTMLElement], context: js.Any) = this()
   }
   
   @JSImport("hedron", "Box")
   @js.native
   class Box protected ()
-    extends Component[BoxProps with HTMLProps[HTMLElement], js.Object, js.Any] {
-    def this(props: BoxProps with HTMLProps[HTMLElement]) = this()
+    extends Component[BoxProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+    def this(props: BoxProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BoxProps with HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: BoxProps & HTMLProps[HTMLElement], context: js.Any) = this()
   }
   
   @JSImport("hedron", "Provider")
   @js.native
   class Provider protected ()
-    extends Component[ProviderProps with HTMLProps[HTMLElement], js.Object, js.Any] {
-    def this(props: ProviderProps with HTMLProps[HTMLElement]) = this()
+    extends Component[ProviderProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+    def this(props: ProviderProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ProviderProps with HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: ProviderProps & HTMLProps[HTMLElement], context: js.Any) = this()
   }
   
-  @js.native
   trait BoundsProps
-    extends Styleable
+    extends StObject
+       with Styleable
        with /**
     *  Allow for customer props due to ability to add
     * custom breakpoints
@@ -95,32 +94,32 @@ object mod {
       * children of this component
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Direction of content
       */
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * Controls the CSS flex property
       */
-    var flex: js.UndefOr[String] = js.native
+    var flex: js.UndefOr[String] = js.undefined
     
     /**
       * Alignment of children along the horizontal axis
       */
-    var halign: js.UndefOr[left | center | right] = js.native
+    var halign: js.UndefOr[left | center | right] = js.undefined
     
     /**
       * Alignment of children along the vertical axis
       */
-    var valign: js.UndefOr[top | center | bottom] = js.native
+    var valign: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * Sets whether the children should wrap when there's no more room on the primary axis
       */
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object BoundsProps {
     
@@ -171,9 +170,9 @@ object mod {
     }
   }
   
-  @js.native
   trait BoxProps
-    extends Styleable
+    extends StObject
+       with Styleable
        with /**
     *  Allow for customer props due to ability to add
     * custom breakpoints
@@ -186,42 +185,42 @@ object mod {
       * children of this component
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets whether the Box should fill up all available space
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the CSS flex property
       */
-    var flex: js.UndefOr[String] = js.native
+    var flex: js.UndefOr[String] = js.undefined
     
     /**
       * Convenience property for disabling padding
       */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shifts the box to the bottom of the parent Bounds
       */
-    var shiftDown: js.UndefOr[Boolean] = js.native
+    var shiftDown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shifts the box to the left of the parent Bounds
       */
-    var shiftLeft: js.UndefOr[Boolean] = js.native
+    var shiftLeft: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shifts the box to the right of the parent Bounds
       */
-    var shiftRight: js.UndefOr[Boolean] = js.native
+    var shiftRight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shifts the box to the top of the parent Bounds
       */
-    var shiftUp: js.UndefOr[Boolean] = js.native
+    var shiftUp: js.UndefOr[Boolean] = js.undefined
   }
   object BoxProps {
     
@@ -284,13 +283,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ProviderProps extends StObject {
     
     /**
       * Object specifying the breakpoints
       */
-    var breakpoints: js.UndefOr[StringDictionary[String]] = js.native
+    var breakpoints: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Draws all child columns with 'bounding boxes' for easy
@@ -298,12 +296,12 @@ object mod {
       * children of this component
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The amount of padding added
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
   }
   object ProviderProps {
     
@@ -336,60 +334,59 @@ object mod {
     }
   }
   
-  @js.native
   trait Styleable extends StObject {
     
     /**
       * Background Property
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /**
       * Border property
       */
-    var border: js.UndefOr[String] = js.native
+    var border: js.UndefOr[String] = js.undefined
     
     /**
       * Display Property
       */
     var display: js.UndefOr[
         `inline` | block | contents | flex | grid | `inline-block` | none | initial | inherit | `inline-flex` | `inline-grid` | `inline-table` | `list-item` | `run-in` | table | `table-caption` | `table-column-group` | `table-header-group` | `table-footer-group` | `table-row-group` | `table-cell` | `table-column` | `table-row`
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Height Property
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * Controls hidden
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The amount of padding added
       */
-    var margin: js.UndefOr[String] = js.native
+    var margin: js.UndefOr[String] = js.undefined
     
     /**
       * Opacity Property
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of padding added
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     /**
       * Visibilty Property
       */
-    var visibility: js.UndefOr[visible | hidden | collapse | initial | inherit] = js.native
+    var visibility: js.UndefOr[visible | hidden | collapse | initial | inherit] = js.undefined
     
     /**
       * Width Property
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Styleable {
     

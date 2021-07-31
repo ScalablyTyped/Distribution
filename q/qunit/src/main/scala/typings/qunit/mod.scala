@@ -15,7 +15,6 @@ import typings.qunit.mod.global.QUnit.TestStartDetails
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -157,11 +156,7 @@ object mod extends Shortcut {
         * @param nested A callback with grouped tests and nested modules to run under the current module label
         */
       def module(name: String): Unit = js.native
-      def module(
-        name: String,
-        hooks: js.UndefOr[scala.Nothing],
-        nested: js.Function1[/* hooks */ NestedHooks, Unit]
-      ): Unit = js.native
+      def module(name: String, hooks: Unit, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
       def module(name: String, hooks: Hooks): Unit = js.native
       def module(name: String, hooks: Hooks, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
       def module(name: String, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
@@ -219,7 +214,7 @@ object mod extends Shortcut {
         * @param nested A callback with grouped tests and nested modules to run under the current module label
         */
       @JSName("module")
-      var module_Original: moduleFunc1 with moduleFunc2 with ModuleOnly = js.native
+      var module_Original: moduleFunc1 & moduleFunc2 & ModuleOnly = js.native
       
       /**
         * Adds a test to exclusively run, preventing all other tests from running.
@@ -359,10 +354,9 @@ object mod extends Shortcut {
       @js.native
       val ^ : QUnit = js.native
       
-      @js.native
       trait BeginDetails extends StObject {
         
-        var totalTests: Double = js.native
+        var totalTests: Double
       }
       object BeginDetails {
         
@@ -380,16 +374,15 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait DoneDetails extends StObject {
         
-        var failed: Double = js.native
+        var failed: Double
         
-        var passed: Double = js.native
+        var passed: Double
         
-        var runtime: Double = js.native
+        var runtime: Double
         
-        var total: Double = js.native
+        var total: Double
       }
       object DoneDetails {
         
@@ -416,24 +409,23 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait LogDetails extends StObject {
         
-        var actual: js.Any = js.native
+        var actual: js.Any
         
-        var expected: js.Any = js.native
+        var expected: js.Any
         
-        var message: String = js.native
+        var message: String
         
-        var module: String = js.native
+        var module: String
         
-        var name: String = js.native
+        var name: String
         
-        var result: Boolean = js.native
+        var result: Boolean
         
-        var runtime: Double = js.native
+        var runtime: Double
         
-        var source: String = js.native
+        var source: String
       }
       object LogDetails {
         
@@ -481,18 +473,17 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait ModuleDoneDetails extends StObject {
         
-        var failed: Double = js.native
+        var failed: Double
         
-        var name: String = js.native
+        var name: String
         
-        var passed: Double = js.native
+        var passed: Double
         
-        var runtime: Double = js.native
+        var runtime: Double
         
-        var total: Double = js.native
+        var total: Double
       }
       object ModuleDoneDetails {
         
@@ -522,10 +513,9 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait ModuleStartDetails extends StObject {
         
-        var name: String = js.native
+        var name: String
       }
       object ModuleStartDetails {
         
@@ -543,20 +533,19 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait TestDoneDetails extends StObject {
         
-        var failed: Double = js.native
+        var failed: Double
         
-        var module: String = js.native
+        var module: String
         
-        var name: String = js.native
+        var name: String
         
-        var passed: Double = js.native
+        var passed: Double
         
-        var runtime: Double = js.native
+        var runtime: Double
         
-        var total: Double = js.native
+        var total: Double
       }
       object TestDoneDetails {
         
@@ -589,12 +578,11 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait TestStartDetails extends StObject {
         
-        var module: String = js.native
+        var module: String
         
-        var name: String = js.native
+        var name: String
       }
       object TestStartDetails {
         
@@ -829,9 +817,9 @@ object mod extends Shortcut {
       def pushResult(assertResult: Actual): Unit = js.native
       
       def raises(block: js.Function0[Unit]): Unit = js.native
-      def raises(block: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], message: js.Any): Unit = js.native
       def raises(block: js.Function0[Unit], expected: js.Any): Unit = js.native
       def raises(block: js.Function0[Unit], expected: js.Any, message: js.Any): Unit = js.native
+      def raises(block: js.Function0[Unit], expected: Unit, message: js.Any): Unit = js.native
       
       /**
         * Test if the provided promise rejects, and optionally compare the
@@ -854,11 +842,11 @@ object mod extends Shortcut {
         * @param expectedMatcher Rejection value matcher
         * @param message A short description of the assertion
         */
-      def rejects(promise: js.Promise[_]): js.Promise[Unit] = js.native
-      def rejects(promise: js.Promise[_], expectedMatcher: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
-      def rejects(promise: js.Promise[_], expectedMatcher: js.Any): js.Promise[Unit] = js.native
-      def rejects(promise: js.Promise[_], expectedMatcher: js.Any, message: String): js.Promise[Unit] = js.native
-      def rejects(promise: js.Promise[_], message: String): js.Promise[Unit] = js.native
+      def rejects(promise: js.Promise[js.Any]): js.Promise[Unit] = js.native
+      def rejects(promise: js.Promise[js.Any], expectedMatcher: js.Any): js.Promise[Unit] = js.native
+      def rejects(promise: js.Promise[js.Any], expectedMatcher: js.Any, message: String): js.Promise[Unit] = js.native
+      def rejects(promise: js.Promise[js.Any], expectedMatcher: Unit, message: String): js.Promise[Unit] = js.native
+      def rejects(promise: js.Promise[js.Any], message: String): js.Promise[Unit] = js.native
       
       /**
         * A marker for progress in a given test.
@@ -905,9 +893,9 @@ object mod extends Shortcut {
         * different name.
         */
       def throws(block: js.Function0[Unit]): Unit = js.native
-      def throws(block: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], message: js.Any): Unit = js.native
       def throws(block: js.Function0[Unit], expected: js.Any): Unit = js.native
       def throws(block: js.Function0[Unit], expected: js.Any, message: js.Any): Unit = js.native
+      def throws(block: js.Function0[Unit], expected: Unit, message: js.Any): Unit = js.native
       
       /**
         * A helper assertion to verify the order and number of steps in a test.
@@ -923,46 +911,45 @@ object mod extends Shortcut {
       def verifySteps(steps: js.Array[String], message: String): Unit = js.native
     }
     
-    @js.native
     trait Config extends StObject {
       
-      var altertitle: Boolean = js.native
+      var altertitle: Boolean
       
-      var autostart: Boolean = js.native
+      var autostart: Boolean
       
-      var collapse: Boolean = js.native
+      var collapse: Boolean
       
-      var current: js.Any = js.native
+      var current: js.Any
       
-      var filter: String | RegExp = js.native
+      var filter: String | RegExp
       
-      var fixture: String = js.native
+      var fixture: String
       
-      var hidepassed: Boolean = js.native
+      var hidepassed: Boolean
       
-      var maxDepth: Double = js.native
+      var maxDepth: Double
       
-      var module: String = js.native
+      var module: String
       
-      var moduleId: js.Array[String] = js.native
+      var moduleId: js.Array[String]
       
-      var noglobals: Boolean = js.native
+      var noglobals: Boolean
       
-      var notrycatch: Boolean = js.native
+      var notrycatch: Boolean
       
-      var reorder: Boolean = js.native
+      var reorder: Boolean
       
-      var requireExpects: Boolean = js.native
+      var requireExpects: Boolean
       
-      var scrolltop: Boolean = js.native
+      var scrolltop: Boolean
       
-      var seed: String = js.native
+      var seed: String
       
-      var testId: js.Array[String] = js.native
+      var testId: js.Array[String]
       
-      var testTimeout: Double = js.native
+      var testTimeout: Double
       
-      var urlConfig: js.Array[Id] = js.native
+      var urlConfig: js.Array[Id]
     }
     object Config {
       
@@ -1063,29 +1050,28 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Hooks extends StObject {
       
       /**
         * Runs after the last test. If additional tests are defined after the
         * module's queue has emptied, it will not run this hook again.
         */
-      var after: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
+      var after: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
       
       /**
         * Runs after each test.
         */
-      var afterEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
+      var afterEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
       
       /**
         * Runs before the first test.
         */
-      var before: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
+      var before: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
       
       /**
         * Runs before each test.
         */
-      var beforeEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
+      var beforeEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
     }
     object Hooks {
       
@@ -1124,45 +1110,54 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ModuleOnly extends StObject {
       
-      def only(name: String): Unit = js.native
-      def only(
-        name: String,
-        hooks: js.UndefOr[scala.Nothing],
-        nested: js.Function1[/* hooks */ NestedHooks, Unit]
-      ): Unit = js.native
-      def only(name: String, hooks: Hooks): Unit = js.native
-      def only(name: String, hooks: Hooks, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
-      def only(name: String, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
+      def only(name: String): Unit
+      def only(name: String, hooks: Unit, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit
+      def only(name: String, hooks: Hooks): Unit
+      def only(name: String, hooks: Hooks, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit
+      def only(name: String, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit
       @JSName("only")
-      var only_Original: moduleFunc1 with moduleFunc2 = js.native
+      var only_Original: moduleFunc1 & moduleFunc2
+    }
+    object ModuleOnly {
+      
+      @scala.inline
+      def apply(only: moduleFunc1 & moduleFunc2): ModuleOnly = {
+        val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ModuleOnly]
+      }
+      
+      @scala.inline
+      implicit class ModuleOnlyMutableBuilder[Self <: ModuleOnly] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setOnly(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      }
     }
     
-    @js.native
     trait NestedHooks extends StObject {
       
       /**
         * Runs after the last test. If additional tests are defined after the
         * module's queue has emptied, it will not run this hook again.
         */
-      def after(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit = js.native
+      def after(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit
       
       /**
         * Runs after each test.
         */
-      def afterEach(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit = js.native
+      def afterEach(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit
       
       /**
         * Runs before the first test.
         */
-      def before(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit = js.native
+      def before(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit
       
       /**
         * Runs before each test.
         */
-      def beforeEach(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit = js.native
+      def beforeEach(fn: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit
     }
     object NestedHooks {
       

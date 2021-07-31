@@ -9,10 +9,13 @@ import typings.sourceMap.mod.RawSourceMap
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("istanbul-lib-instrument", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("istanbul-lib-instrument", "Instrumenter")
   @js.native
@@ -22,12 +25,7 @@ object mod {
     var fileCoverage: FileCoverage = js.native
     
     def instrument(code: String, filenameOrCallback: String): Unit = js.native
-    def instrument(
-      code: String,
-      filenameOrCallback: String,
-      callback: js.UndefOr[scala.Nothing],
-      inputSourceMap: RawSourceMap
-    ): Unit = js.native
+    def instrument(code: String, filenameOrCallback: String, callback: Unit, inputSourceMap: RawSourceMap): Unit = js.native
     def instrument(code: String, filenameOrCallback: String, callback: InstrumenterCallback): Unit = js.native
     def instrument(
       code: String,
@@ -39,7 +37,7 @@ object mod {
     def instrument(
       code: String,
       filenameOrCallback: InstrumenterCallback,
-      callback: js.UndefOr[scala.Nothing],
+      callback: Unit,
       inputSourceMap: RawSourceMap
     ): Unit = js.native
     def instrument(code: String, filenameOrCallback: InstrumenterCallback, callback: InstrumenterCallback): Unit = js.native
@@ -65,40 +63,32 @@ object mod {
     var sourceMap: RawSourceMap | Null = js.native
   }
   
-  @JSImport("istanbul-lib-instrument", "createInstrumenter")
-  @js.native
-  def createInstrumenter(): Instrumenter = js.native
-  @JSImport("istanbul-lib-instrument", "createInstrumenter")
-  @js.native
-  def createInstrumenter(options: PartialInstrumenterOption): Instrumenter = js.native
+  @scala.inline
+  def createInstrumenter(): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")().asInstanceOf[Instrumenter]
+  @scala.inline
+  def createInstrumenter(options: PartialInstrumenterOption): Instrumenter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstrumenter")(options.asInstanceOf[js.Any]).asInstanceOf[Instrumenter]
   
-  @JSImport("istanbul-lib-instrument", "programVisitor")
-  @js.native
-  def programVisitor(types: TypeofbabelTypes): Visitor = js.native
-  @JSImport("istanbul-lib-instrument", "programVisitor")
-  @js.native
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: js.UndefOr[scala.Nothing], opts: PartialVisitorOptions): Visitor = js.native
-  @JSImport("istanbul-lib-instrument", "programVisitor")
-  @js.native
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String): Visitor = js.native
-  @JSImport("istanbul-lib-instrument", "programVisitor")
-  @js.native
-  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String, opts: PartialVisitorOptions): Visitor = js.native
+  @scala.inline
+  def programVisitor(types: TypeofbabelTypes): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any]).asInstanceOf[Visitor]
+  @scala.inline
+  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  @scala.inline
+  def programVisitor(types: TypeofbabelTypes, sourceFilePath: String, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  @scala.inline
+  def programVisitor(types: TypeofbabelTypes, sourceFilePath: Unit, opts: PartialVisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].applyDynamic("programVisitor")(types.asInstanceOf[js.Any], sourceFilePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Visitor]
   
-  @JSImport("istanbul-lib-instrument", "readInitialCoverage")
-  @js.native
-  def readInitialCoverage(code: String): InitialCoverage = js.native
+  @scala.inline
+  def readInitialCoverage(code: String): InitialCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("readInitialCoverage")(code.asInstanceOf[js.Any]).asInstanceOf[InitialCoverage]
   
-  @js.native
   trait InitialCoverage extends StObject {
     
-    var coverageData: js.Any = js.native
+    var coverageData: js.Any
     
-    var gcv: js.Any = js.native
+    var gcv: js.Any
     
-    var hash: String = js.native
+    var hash: String
     
-    var path: String = js.native
+    var path: String
   }
   object InitialCoverage {
     
@@ -127,24 +117,23 @@ object mod {
   
   type InstrumenterCallback = js.Function2[/* error */ Error | Null, /* code */ String, Unit]
   
-  @js.native
   trait InstrumenterOptions extends StObject {
     
-    var autoWrap: Boolean = js.native
+    var autoWrap: Boolean
     
-    var compact: Boolean = js.native
+    var compact: Boolean
     
-    var coverageVariable: String = js.native
+    var coverageVariable: String
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var esModules: Boolean = js.native
+    var esModules: Boolean
     
-    var preserveComments: Boolean = js.native
+    var preserveComments: Boolean
     
-    var produceSourceMap: Boolean = js.native
+    var produceSourceMap: Boolean
     
-    def sourceMapUrlCallback(filename: String, url: String): Unit = js.native
+    def sourceMapUrlCallback(filename: String, url: String): Unit
   }
   object InstrumenterOptions {
     
@@ -192,12 +181,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Visitor extends StObject {
     
-    def enter(path: String): Unit = js.native
+    def enter(path: String): Unit
     
-    def exit(path: String): typings.istanbulLibInstrument.anon.FileCoverage = js.native
+    def exit(path: String): typings.istanbulLibInstrument.anon.FileCoverage
   }
   object Visitor {
     
@@ -218,12 +206,11 @@ object mod {
     }
   }
   
-  @js.native
   trait VisitorOptions extends StObject {
     
-    var coverageVariable: String = js.native
+    var coverageVariable: String
     
-    var inputSourceMap: RawSourceMap = js.native
+    var inputSourceMap: RawSourceMap
   }
   object VisitorOptions {
     

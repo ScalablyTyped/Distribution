@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.draggableZoneStylesMod.IDraggableZoneStyles
 import typings.officeUiFabricReact.draggableZoneTypesMod.IDraggableZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draggableZoneMod {
+  
+  @JSImport("office-ui-fabric-react/lib/utilities/DraggableZone", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/utilities/DraggableZone", "DraggableZone")
   @js.native
@@ -16,7 +19,6 @@ object draggableZoneMod {
     def this(props: IDraggableZoneProps) = this()
   }
   
-  @JSImport("office-ui-fabric-react/lib/utilities/DraggableZone", "getClassNames")
-  @js.native
-  def getClassNames(className: String, isDragging: Boolean): IDraggableZoneStyles = js.native
+  @scala.inline
+  def getClassNames(className: String, isDragging: Boolean): IDraggableZoneStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(className.asInstanceOf[js.Any], isDragging.asInstanceOf[js.Any])).asInstanceOf[IDraggableZoneStyles]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationUtilizationGroup extends StObject {
   
   /**
     * The attributes for this group of reservations.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.undefined
   
   /**
     * The key for a specific reservation attribute.
     */
-  var Key: js.UndefOr[ReservationGroupKey] = js.native
+  var Key: js.UndefOr[ReservationGroupKey] = js.undefined
   
   /**
     * How much you used this group of reservations.
     */
-  var Utilization: js.UndefOr[ReservationAggregates] = js.native
+  var Utilization: js.UndefOr[ReservationAggregates] = js.undefined
   
   /**
     * The value of a specific reservation attribute.
     */
-  var Value: js.UndefOr[ReservationGroupValue] = js.native
+  var Value: js.UndefOr[ReservationGroupValue] = js.undefined
 }
 object ReservationUtilizationGroup {
   

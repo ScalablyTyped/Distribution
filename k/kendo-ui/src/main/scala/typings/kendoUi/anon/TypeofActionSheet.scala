@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.ActionSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofActionSheet extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ActionSheet = js.native
+  def extend(proto: js.Object): ActionSheet
   
   /* static member */
-  var fn: ActionSheet = js.native
+  var fn: ActionSheet
 }
 object TypeofActionSheet {
   

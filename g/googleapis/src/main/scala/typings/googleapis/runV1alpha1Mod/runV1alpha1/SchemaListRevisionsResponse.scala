@@ -2,39 +2,37 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListRevisionsResponse is a list of Revision resources.
   */
-@js.native
 trait SchemaListRevisionsResponse extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of Revisions.
     */
-  var items: js.UndefOr[js.Array[SchemaRevision]] = js.native
+  var items: js.UndefOr[js.Array[SchemaRevision]] = js.undefined
   
   /**
     * The kind of this resource, in this case &quot;RevisionList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this revision list.
     */
-  var metadata: js.UndefOr[SchemaListMeta] = js.native
+  var metadata: js.UndefOr[SchemaListMeta] = js.undefined
   
   /**
     * Locations that could not be reached.
     */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaListRevisionsResponse {
   

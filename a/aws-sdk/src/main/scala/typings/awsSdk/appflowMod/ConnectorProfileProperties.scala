@@ -2,86 +2,84 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorProfileProperties extends StObject {
   
   /**
     *  The connector-specific properties required by Amplitude. 
     */
-  var Amplitude: js.UndefOr[AmplitudeConnectorProfileProperties] = js.native
+  var Amplitude: js.UndefOr[AmplitudeConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Datadog. 
     */
-  var Datadog: js.UndefOr[DatadogConnectorProfileProperties] = js.native
+  var Datadog: js.UndefOr[DatadogConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Dynatrace. 
     */
-  var Dynatrace: js.UndefOr[DynatraceConnectorProfileProperties] = js.native
+  var Dynatrace: js.UndefOr[DynatraceConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required Google Analytics. 
     */
-  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileProperties] = js.native
+  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Infor Nexus. 
     */
-  var InforNexus: js.UndefOr[InforNexusConnectorProfileProperties] = js.native
+  var InforNexus: js.UndefOr[InforNexusConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Marketo. 
     */
-  var Marketo: js.UndefOr[MarketoConnectorProfileProperties] = js.native
+  var Marketo: js.UndefOr[MarketoConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Amazon Redshift. 
     */
-  var Redshift: js.UndefOr[RedshiftConnectorProfileProperties] = js.native
+  var Redshift: js.UndefOr[RedshiftConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Salesforce. 
     */
-  var Salesforce: js.UndefOr[SalesforceConnectorProfileProperties] = js.native
+  var Salesforce: js.UndefOr[SalesforceConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by serviceNow. 
     */
-  var ServiceNow: js.UndefOr[ServiceNowConnectorProfileProperties] = js.native
+  var ServiceNow: js.UndefOr[ServiceNowConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Singular. 
     */
-  var Singular: js.UndefOr[SingularConnectorProfileProperties] = js.native
+  var Singular: js.UndefOr[SingularConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Slack. 
     */
-  var Slack: js.UndefOr[SlackConnectorProfileProperties] = js.native
+  var Slack: js.UndefOr[SlackConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Snowflake. 
     */
-  var Snowflake: js.UndefOr[SnowflakeConnectorProfileProperties] = js.native
+  var Snowflake: js.UndefOr[SnowflakeConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Trend Micro. 
     */
-  var Trendmicro: js.UndefOr[TrendmicroConnectorProfileProperties] = js.native
+  var Trendmicro: js.UndefOr[TrendmicroConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Veeva. 
     */
-  var Veeva: js.UndefOr[VeevaConnectorProfileProperties] = js.native
+  var Veeva: js.UndefOr[VeevaConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Zendesk. 
     */
-  var Zendesk: js.UndefOr[ZendeskConnectorProfileProperties] = js.native
+  var Zendesk: js.UndefOr[ZendeskConnectorProfileProperties] = js.undefined
 }
 object ConnectorProfileProperties {
   

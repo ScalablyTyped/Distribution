@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedProductConfig extends StObject {
   
   /**
     * The list of user-supplied arguments.
     */
-  var Args: js.UndefOr[XmlStringList] = js.native
+  var Args: js.UndefOr[XmlStringList] = js.undefined
   
   /**
     * The name of the product configuration.
     */
-  var Name: js.UndefOr[XmlStringMaxLen256] = js.native
+  var Name: js.UndefOr[XmlStringMaxLen256] = js.undefined
 }
 object SupportedProductConfig {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizationActivity extends StObject {
   
   /** Floodlight activity ID of this optimization activity. This is a required field. */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the floodlight activity. This is a read-only, auto-generated field. */
-  var floodlightActivityIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var floodlightActivityIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /**
     * Weight associated with this optimization. The weight assigned will be understood in proportion to the weights assigned to the other optimization activities. Value must be greater
     * than or equal to 1.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object OptimizationActivity {
   

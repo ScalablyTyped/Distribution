@@ -3,41 +3,39 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
   /** Output only. The time when this model was created, in millisecs since the epoch. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** Optional. A user-friendly description of this model. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys). This shows the encryption configuration of the model data while stored in BigQuery storage. This field can be used with
     * PatchModel to update encryption key for an already encrypted model.
     */
-  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
   /** Output only. A hash of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The time when this model expires, in milliseconds since the epoch. If not present, the model will persist indefinitely. Expired models will be deleted and their storage
     * reclaimed. The defaultTableExpirationMs property of the encapsulating dataset can be used to set a default expirationTime on newly created models.
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Input feature columns that were used to train this model. */
-  var featureColumns: js.UndefOr[js.Array[StandardSqlField]] = js.native
+  var featureColumns: js.UndefOr[js.Array[StandardSqlField]] = js.undefined
   
   /** Optional. A descriptive name for this model. */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /** Output only. Label columns that were used to train this model. The output of the model will have a "predicted_" prefix to these columns. */
-  var labelColumns: js.UndefOr[js.Array[StandardSqlField]] = js.native
+  var labelColumns: js.UndefOr[js.Array[StandardSqlField]] = js.undefined
   
   /**
     * The labels associated with this model. You can use these to organize and group your models. Label keys and values can be no longer than 63 characters, can only contain lowercase
@@ -47,23 +45,23 @@ trait Model extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The time when this model was last modified, in millisecs since the epoch. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The geographic location where the model resides. This value is inherited from the dataset. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Required. Unique identifier for this model. */
-  var modelReference: js.UndefOr[ModelReference] = js.native
+  var modelReference: js.UndefOr[ModelReference] = js.undefined
   
   /** Output only. Type of the model resource. */
-  var modelType: js.UndefOr[String] = js.native
+  var modelType: js.UndefOr[String] = js.undefined
   
   /** Output only. Information for all training runs in increasing order of start_time. */
-  var trainingRuns: js.UndefOr[js.Array[TrainingRun]] = js.native
+  var trainingRuns: js.UndefOr[js.Array[TrainingRun]] = js.undefined
 }
 object Model {
   
@@ -134,7 +132,7 @@ object Model {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Model & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

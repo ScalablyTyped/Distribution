@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstancesHealthRequest extends StObject {
   
   /**
     * Specifies the response elements you wish to receive. To retrieve all attributes, set to All. If no attribute names are specified, returns a list of instances.
     */
-  var AttributeNames: js.UndefOr[InstancesHealthAttributes] = js.native
+  var AttributeNames: js.UndefOr[InstancesHealthAttributes] = js.undefined
   
   /**
     * Specify the AWS Elastic Beanstalk environment by ID.
     */
-  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.native
+  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.undefined
   
   /**
     * Specify the AWS Elastic Beanstalk environment by name.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * Specify the pagination token returned by a previous call.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.NextToken] = js.undefined
 }
 object DescribeInstancesHealthRequest {
   

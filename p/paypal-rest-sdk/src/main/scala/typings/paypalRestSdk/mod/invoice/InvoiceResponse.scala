@@ -3,12 +3,11 @@ package typings.paypalRestSdk.mod.invoice
 import typings.paypalRestSdk.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvoiceResponse
-  extends Invoice
+  extends StObject
+     with Invoice
      with Response
 object InvoiceResponse {
   

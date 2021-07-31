@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listenerPolicyMod {
@@ -44,6 +43,10 @@ object listenerPolicyMod {
   /* static members */
   object ListenerPolicy {
     
+    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ListenerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,45 +56,39 @@ object listenerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ListenerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerPolicyState): ListenerPolicy = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): ListenerPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerPolicyState): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
     
     /**
       * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean]
   }
   
-  @js.native
   trait ListenerPolicyArgs extends StObject {
     
     /**
       * The load balancer to attach the policy to.
       */
-    val loadBalancerName: Input[String] = js.native
+    val loadBalancerName: Input[String]
     
     /**
       * The load balancer listener port to apply the policy to.
       */
-    val loadBalancerPort: Input[Double] = js.native
+    val loadBalancerPort: Input[Double]
     
     /**
       * List of Policy Names to apply to the backend server.
       */
-    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ListenerPolicyArgs {
     
@@ -121,23 +118,22 @@ object listenerPolicyMod {
     }
   }
   
-  @js.native
   trait ListenerPolicyState extends StObject {
     
     /**
       * The load balancer to attach the policy to.
       */
-    val loadBalancerName: js.UndefOr[Input[String]] = js.native
+    val loadBalancerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The load balancer listener port to apply the policy to.
       */
-    val loadBalancerPort: js.UndefOr[Input[Double]] = js.native
+    val loadBalancerPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of Policy Names to apply to the backend server.
       */
-    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ListenerPolicyState {
     

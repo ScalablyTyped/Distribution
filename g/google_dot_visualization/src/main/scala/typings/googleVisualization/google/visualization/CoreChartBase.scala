@@ -2,11 +2,12 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreChartBase extends ChartBaseRenderable {
+trait CoreChartBase
+  extends StObject
+     with ChartBaseRenderable {
   
   def getAction(id: String): ChartAction = js.native
   def getAction(id: Double): ChartAction = js.native

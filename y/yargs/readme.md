@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs
 
-Typings are for version 15.0
+Typings are for version 15.4.1
 
 ## Library description:
 yargs the modern, pirate-themed, successor to optimist.
@@ -10,10 +10,10 @@ yargs the modern, pirate-themed, successor to optimist.
 | ------------------ | :-------------: |
 | Full name          | yargs |
 | Keywords           | argument, args, option, parser, parsing, cli, command |
-| # releases         | 27 |
-| # dependents       | 14359 |
-| # downloads        | 1496981338 |
-| # stars            | 512 |
+| # releases         | 49 |
+| # dependents       | 19401 |
+| # downloads        | 2376457962 |
+| # stars            | 515 |
 
 ## Links
 - [Homepage](https://yargs.js.org/)
@@ -24,7 +24,7 @@ yargs the modern, pirate-themed, successor to optimist.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

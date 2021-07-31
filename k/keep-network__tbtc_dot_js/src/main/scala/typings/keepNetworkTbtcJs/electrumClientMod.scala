@@ -6,49 +6,94 @@ import typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.ws
 import typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.wss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electrumClientMod {
   
   @JSImport("@keep-network/tbtc.js/src/lib/ElectrumClient", JSImport.Default)
   @js.native
-  class default protected () extends Client {
+  class default protected ()
+    extends StObject
+       with Client {
     def this(config: Config) = this()
-  }
-  
-  @js.native
-  trait Client extends StObject {
     
-    def broadcastTransaction(rawTX: String): String = js.native
+    /* CompleteClass */
+    override def broadcastTransaction(rawTX: String): String = js.native
     
-    def close(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def close(): js.Promise[Unit] = js.native
     
-    def connect(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def connect(): js.Promise[Unit] = js.native
     
+    /* CompleteClass */
     var electrumClient: js.Any = js.native
     
-    def findOutputForAddress(txHash: String, address: String): Double = js.native
+    /* CompleteClass */
+    override def findOutputForAddress(txHash: String, address: String): Double = js.native
     
-    def getBalanceOfScript(script: String): js.Any = js.native
+    /* CompleteClass */
+    override def getBalanceOfScript(script: String): js.Any = js.native
     
-    def getHeadersChain(blockHeight: Double, confirmations: Double): String = js.native
+    /* CompleteClass */
+    override def getHeadersChain(blockHeight: Double, confirmations: Double): String = js.native
     
-    def getMerkleProof(txHash: String, blockHeight: Double): String = js.native
+    /* CompleteClass */
+    override def getMerkleProof(txHash: String, blockHeight: Double): String = js.native
     
-    def getMerkleRoot(blockHeight: Double): String = js.native
+    /* CompleteClass */
+    override def getMerkleRoot(blockHeight: Double): String = js.native
     
-    def getTransaction(txHash: String): js.Any = js.native
+    /* CompleteClass */
+    override def getTransaction(txHash: String): js.Any = js.native
     
-    def getTransactionsForScript(script: String): js.Any = js.native
+    /* CompleteClass */
+    override def getTransactionsForScript(script: String): js.Any = js.native
     
-    def getUnspentToScript(script: String): js.Any = js.native
+    /* CompleteClass */
+    override def getUnspentToScript(script: String): js.Any = js.native
     
-    def latestBlockHeight(): Double = js.native
+    /* CompleteClass */
+    override def latestBlockHeight(): Double = js.native
     
-    def onNewBlock(callback: js.Function1[/* block */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def onNewBlock(callback: js.Function1[/* block */ js.Any, Unit]): js.Any = js.native
     
-    def onTransactionToScript(script: String, callback: js.Function1[/* state */ js.Any, Unit]): js.Any = js.native
+    /* CompleteClass */
+    override def onTransactionToScript(script: String, callback: js.Function1[/* state */ js.Any, Unit]): js.Any = js.native
+  }
+  
+  trait Client extends StObject {
+    
+    def broadcastTransaction(rawTX: String): String
+    
+    def close(): js.Promise[Unit]
+    
+    def connect(): js.Promise[Unit]
+    
+    var electrumClient: js.Any
+    
+    def findOutputForAddress(txHash: String, address: String): Double
+    
+    def getBalanceOfScript(script: String): js.Any
+    
+    def getHeadersChain(blockHeight: Double, confirmations: Double): String
+    
+    def getMerkleProof(txHash: String, blockHeight: Double): String
+    
+    def getMerkleRoot(blockHeight: Double): String
+    
+    def getTransaction(txHash: String): js.Any
+    
+    def getTransactionsForScript(script: String): js.Any
+    
+    def getUnspentToScript(script: String): js.Any
+    
+    def latestBlockHeight(): Double
+    
+    def onNewBlock(callback: js.Function1[/* block */ js.Any, Unit]): js.Any
+    
+    def onTransactionToScript(script: String, callback: js.Function1[/* state */ js.Any, Unit]): js.Any
   }
   object Client {
     
@@ -124,16 +169,15 @@ object electrumClientMod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: ssl | tls | ws | wss = js.native
+    var protocol: ssl | tls | ws | wss
     
-    var server: String = js.native
+    var server: String
   }
   object Config {
     

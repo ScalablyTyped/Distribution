@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1RoleBindingListMod {
@@ -27,7 +26,7 @@ object v1RoleBindingListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RoleBindingListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RoleBindingListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object v1RoleBindingListMod {
   /* static members */
   object RoleBindingList {
     
+    @JSImport("@pulumi/kubernetes/rbac/v1/roleBindingList", "RoleBindingList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RoleBindingList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object v1RoleBindingListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1/roleBindingList", "RoleBindingList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RoleBindingList = js.native
-    @JSImport("@pulumi/kubernetes/rbac/v1/roleBindingList", "RoleBindingList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): RoleBindingList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleBindingList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleBindingList]
     
     /**
       * Returns true if the given object is an instance of RoleBindingList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1/roleBindingList", "RoleBindingList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/roleBindingList.RoleBindingList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/roleBindingList.RoleBindingList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1/roleBindingList.RoleBindingList */ Boolean]
   }
   
-  @js.native
   trait RoleBindingListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1]] = js.undefined
     
     /**
       * Items is a list of RoleBindings
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1.RoleBinding]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1.RoleBinding]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBindingList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBindingList]] = js.undefined
     
     /**
       * Standard object's metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object RoleBindingListArgs {
     

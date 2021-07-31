@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesForTagOptionInput extends StObject {
   
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.native
+  var PageSize: js.UndefOr[typings.awsSdk.servicecatalogMod.PageSize] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * The resource type.    Portfolio     Product   
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.servicecatalogMod.ResourceType] = js.undefined
   
   /**
     * The TagOption identifier.
     */
-  var TagOptionId: typings.awsSdk.servicecatalogMod.TagOptionId = js.native
+  var TagOptionId: typings.awsSdk.servicecatalogMod.TagOptionId
 }
 object ListResourcesForTagOptionInput {
   

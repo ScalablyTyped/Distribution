@@ -3,17 +3,15 @@ package typings.firebase.anon
 import typings.firebase.mod.firebase.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
   /**
     * Threshhold log level. Only logs at or above this level trigger the `logCallback`
     * passed to `onLog`.
     */
-  var level: LogLevel = js.native
+  var level: LogLevel
 }
 object Level {
   

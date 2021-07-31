@@ -11,7 +11,7 @@ Prevent apps from going to sleep in background.
 | Keywords           | appplant, background, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 117935 |
+| # downloads        | 128852 |
 | # stars            | 2 |
 
 ## Links

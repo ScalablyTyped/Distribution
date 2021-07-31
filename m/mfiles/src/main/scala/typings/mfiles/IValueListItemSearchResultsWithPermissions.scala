@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValueListItemSearchResultsWithPermissions extends StObject {
   
-  val Permissions: IAccessControlLists = js.native
+  val Permissions: IAccessControlLists
   
-  val ValueListItemSearchResults: IValueListItemSearchResults = js.native
+  val ValueListItemSearchResults: IValueListItemSearchResults
 }
 object IValueListItemSearchResultsWithPermissions {
   

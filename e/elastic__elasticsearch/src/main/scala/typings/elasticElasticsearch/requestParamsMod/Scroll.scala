@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Scroll[T] extends Generic {
+trait Scroll[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var scroll_id: js.UndefOr[String] = js.native
+  var scroll_id: js.UndefOr[String] = js.undefined
 }
 object Scroll {
   
@@ -25,7 +25,7 @@ object Scroll {
   }
   
   @scala.inline
-  implicit class ScrollMutableBuilder[Self <: Scroll[_], T] (val x: Self with Scroll[T]) extends AnyVal {
+  implicit class ScrollMutableBuilder[Self <: Scroll[?], T] (val x: Self & Scroll[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

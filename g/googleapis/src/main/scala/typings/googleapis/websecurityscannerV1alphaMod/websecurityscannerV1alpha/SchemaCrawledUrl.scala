@@ -2,7 +2,6 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Web Security Scanner Service crawls the web applications, following all
   * links within the scope of sites, to find the URLs to test against.
   */
-@js.native
 trait SchemaCrawledUrl extends StObject {
   
   /**
     * Output only. The body of the request that was used to visit the URL.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The http method of the request that was used to visit the
     * URL, in uppercase.
     */
-  var httpMethod: js.UndefOr[String] = js.native
+  var httpMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The URL that was crawled.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaCrawledUrl {
   

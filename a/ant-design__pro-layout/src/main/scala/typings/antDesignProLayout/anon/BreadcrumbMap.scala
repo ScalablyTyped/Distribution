@@ -6,15 +6,13 @@ import typings.history.mod.LocationState
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreadcrumbMap extends StObject {
   
-  var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.native
+  var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState] | Pathname] = js.native
+  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
 }
 object BreadcrumbMap {
   

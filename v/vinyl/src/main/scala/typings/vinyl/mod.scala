@@ -15,50 +15,53 @@ import typings.vinyl.anon.Contents
 import typings.vinyl.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("vinyl", JSImport.Namespace)
   @js.native
-  val ^ : FileConstructor = js.native
+  val ^ : js.Object & FileConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("vinyl", JSImport.Namespace)
   @js.native
-  class Class protected () extends NullFile {
+  class Class protected ()
+    extends StObject
+       with NullFile {
     def this(options: ConstructorOptionscontent) = this()
   }
   
   // See https://github.com/Microsoft/TypeScript/issues/11796
   @js.native
-  trait BufferFile extends File {
+  trait BufferFile
+    extends StObject
+       with File {
     
     @JSName("contents")
     var contents_BufferFile: Buffer = js.native
   }
   
-  @js.native
   trait ConstructorOptions
-    extends /* customProperty */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProperty */ StringDictionary[js.Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
       */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /**
       * File contents.
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.native
+    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Stores the path history. If `options.path` and `options.history` are both passed,
@@ -66,19 +69,19 @@ object mod extends Shortcut {
       * normalized by the `file.path` setter.
       * Default: `[]` (or `[options.path]` if `options.path` is passed)
       */
-    var history: js.UndefOr[js.Array[String]] = js.native
+    var history: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Full path to the file.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
       * http://nodejs.org/api/fs.html#fs_class_fs_stats
       */
-    var stat: js.UndefOr[Stats] = js.native
+    var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptions {
     
@@ -136,11 +139,14 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait DirectoryFile extends NullFile
+  trait DirectoryFile
+    extends StObject
+       with NullFile
   
   @js.native
   trait File
-    extends /* customProperty */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customProperty */ StringDictionary[js.Any] {
     
     //
     /**
@@ -383,7 +389,8 @@ object mod extends Shortcut {
   
   @js.native
   trait FileConstructor
-    extends Instantiable0[typings.std.File]
+    extends StObject
+       with Instantiable0[typings.std.File]
        with Instantiable1[
           (/* options */ ConstructorOptions) | (/* options */ ConstructorOptionscontent) | (/* options */ ConstructorOptionscontentBase) | (/* options */ ConstructorOptionscontentDictcustomOption), 
           BufferFile | typings.std.File | NullFile | StreamFile
@@ -401,24 +408,30 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait NullFile extends File {
+  trait NullFile
+    extends StObject
+       with File {
     
     @JSName("contents")
     var contents_NullFile: Null = js.native
   }
   
   @js.native
-  trait StreamFile extends File {
+  trait StreamFile
+    extends StObject
+       with File {
     
     @JSName("contents")
     var contents_StreamFile: ReadableStream = js.native
   }
   
   @js.native
-  trait SymbolicFile extends NullFile
+  trait SymbolicFile
+    extends StObject
+       with NullFile
   
-  type _To = FileConstructor
+  type _To = js.Object & FileConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: FileConstructor = ^
+  override def _to: js.Object & FileConstructor = ^
 }

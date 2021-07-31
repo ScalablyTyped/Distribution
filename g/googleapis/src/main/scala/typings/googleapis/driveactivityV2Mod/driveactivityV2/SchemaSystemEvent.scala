@@ -2,19 +2,17 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Event triggered by system operations instead of end users.
   */
-@js.native
 trait SchemaSystemEvent extends StObject {
   
   /**
     * The type of the system event that may triggered activity.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaSystemEvent {
   

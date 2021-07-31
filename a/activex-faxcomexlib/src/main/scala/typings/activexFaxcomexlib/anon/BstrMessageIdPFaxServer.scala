@@ -3,15 +3,13 @@ package typings.activexFaxcomexlib.anon
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BstrMessageIdPFaxServer extends StObject {
   
-  val bstrMessageId: String = js.native
+  val bstrMessageId: String
   
-  val pFaxServer: FaxServer = js.native
+  val pFaxServer: FaxServer
 }
 object BstrMessageIdPFaxServer {
   

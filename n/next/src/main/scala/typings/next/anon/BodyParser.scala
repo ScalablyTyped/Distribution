@@ -4,24 +4,22 @@ import typings.next.nextBooleans.`false`
 import typings.next.nextBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyParser extends StObject {
   
   /**
     * The byte limit of the body. This is the number of bytes or any string
     * format supported by `bytes`, for example `1000`, `'500kb'` or `'3mb'`.
     */
-  var bodyParser: js.UndefOr[SizeLimit | `false`] = js.native
+  var bodyParser: js.UndefOr[SizeLimit | `false`] = js.undefined
   
   /**
     * Flag to disable warning "API page resolved
     * without sending a response", due to explicitly
     * using an external API resolver, like express
     */
-  var externalResolver: js.UndefOr[`true`] = js.native
+  var externalResolver: js.UndefOr[`true`] = js.undefined
 }
 object BodyParser {
   

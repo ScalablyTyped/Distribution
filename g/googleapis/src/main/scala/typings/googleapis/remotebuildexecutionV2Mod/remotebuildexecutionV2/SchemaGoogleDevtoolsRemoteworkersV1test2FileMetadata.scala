@@ -2,32 +2,30 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata for a file. Similar to the equivalent message in the Remote
   * Execution API.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata extends StObject {
   
   /**
     * If the file is small enough, its contents may also or alternatively be
     * listed here.
     */
-  var contents: js.UndefOr[String] = js.native
+  var contents: js.UndefOr[String] = js.undefined
   
   /**
     * A pointer to the contents of the file. The method by which a client
     * retrieves the contents from a CAS system is not defined here.
     */
-  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.native
+  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = js.undefined
   
   /**
     * Properties of the file
     */
-  var isExecutable: js.UndefOr[Boolean] = js.native
+  var isExecutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path of this file. If this message is part of the
@@ -36,7 +34,7 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata extends StObject {
     * message is part of a Directory message, then the path is relative to the
     * root of that directory. All paths MUST be delimited by forward slashes.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2FileMetadata {
   

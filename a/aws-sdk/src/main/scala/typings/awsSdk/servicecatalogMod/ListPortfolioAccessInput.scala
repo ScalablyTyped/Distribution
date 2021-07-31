@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPortfolioAccessInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The ID of an organization node the portfolio is shared with. All children of this node with an inherited portfolio share will be returned.
     */
-  var OrganizationParentId: js.UndefOr[Id] = js.native
+  var OrganizationParentId: js.UndefOr[Id] = js.undefined
   
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[PageSizeMax100] = js.native
+  var PageSize: js.UndefOr[PageSizeMax100] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: Id = js.native
+  var PortfolioId: Id
 }
 object ListPortfolioAccessInput {
   

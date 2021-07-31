@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GitCreateTagResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGitCreateTagEndpoint extends StObject {
   
-  var parameters: GitCreateTagEndpoint = js.native
+  var parameters: GitCreateTagEndpoint
   
-  var request: GitCreateTagRequestOptions = js.native
+  var request: GitCreateTagRequestOptions
   
-  var response: OctokitResponse[GitCreateTagResponseData] = js.native
+  var response: OctokitResponse[GitCreateTagResponseData]
 }
 object ParametersGitCreateTagEndpoint {
   

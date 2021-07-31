@@ -8,7 +8,6 @@ import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.simpleeventemitterMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extrasMod {
@@ -17,52 +16,38 @@ object extrasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobservable/lib/extras", "getDNode")
-  @js.native
-  def getDNode(thing: js.Any): DataNode = js.native
-  @JSImport("mobservable/lib/extras", "getDNode")
-  @js.native
-  def getDNode(thing: js.Any, property: String): DataNode = js.native
+  @scala.inline
+  def getDNode(thing: js.Any): DataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getDNode")(thing.asInstanceOf[js.Any]).asInstanceOf[DataNode]
+  @scala.inline
+  def getDNode(thing: js.Any, property: String): DataNode = (^.asInstanceOf[js.Dynamic].applyDynamic("getDNode")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[DataNode]
   
-  @JSImport("mobservable/lib/extras", "getDependencyTree")
-  @js.native
-  def getDependencyTree(thing: js.Any): IDependencyTree = js.native
-  @JSImport("mobservable/lib/extras", "getDependencyTree")
-  @js.native
-  def getDependencyTree(thing: js.Any, property: String): IDependencyTree = js.native
+  @scala.inline
+  def getDependencyTree(thing: js.Any): IDependencyTree = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependencyTree")(thing.asInstanceOf[js.Any]).asInstanceOf[IDependencyTree]
+  @scala.inline
+  def getDependencyTree(thing: js.Any, property: String): IDependencyTree = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependencyTree")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[IDependencyTree]
   
-  @JSImport("mobservable/lib/extras", "getObserverTree")
-  @js.native
-  def getObserverTree(thing: js.Any): IObserverTree = js.native
-  @JSImport("mobservable/lib/extras", "getObserverTree")
-  @js.native
-  def getObserverTree(thing: js.Any, property: String): IObserverTree = js.native
+  @scala.inline
+  def getObserverTree(thing: js.Any): IObserverTree = ^.asInstanceOf[js.Dynamic].applyDynamic("getObserverTree")(thing.asInstanceOf[js.Any]).asInstanceOf[IObserverTree]
+  @scala.inline
+  def getObserverTree(thing: js.Any, property: String): IObserverTree = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserverTree")(thing.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[IObserverTree]
   
-  @JSImport("mobservable/lib/extras", "reportTransition")
-  @js.native
-  def reportTransition(node: DataNode, state: String): Unit = js.native
-  @JSImport("mobservable/lib/extras", "reportTransition")
-  @js.native
-  def reportTransition(node: DataNode, state: String, changed: js.UndefOr[scala.Nothing], newValue: js.Any): Unit = js.native
-  @JSImport("mobservable/lib/extras", "reportTransition")
-  @js.native
-  def reportTransition(node: DataNode, state: String, changed: Boolean): Unit = js.native
-  @JSImport("mobservable/lib/extras", "reportTransition")
-  @js.native
-  def reportTransition(node: DataNode, state: String, changed: Boolean, newValue: js.Any): Unit = js.native
+  @scala.inline
+  def reportTransition(node: DataNode, state: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportTransition")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reportTransition(node: DataNode, state: String, changed: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportTransition")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reportTransition(node: DataNode, state: String, changed: Boolean, newValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportTransition")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reportTransition(node: DataNode, state: String, changed: Unit, newValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportTransition")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobservable/lib/extras", "trackTransitions")
-  @js.native
-  def trackTransitions(): Lambda = js.native
-  @JSImport("mobservable/lib/extras", "trackTransitions")
-  @js.native
-  def trackTransitions(extensive: js.UndefOr[scala.Nothing], onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
-  @JSImport("mobservable/lib/extras", "trackTransitions")
-  @js.native
-  def trackTransitions(extensive: Boolean): Lambda = js.native
-  @JSImport("mobservable/lib/extras", "trackTransitions")
-  @js.native
-  def trackTransitions(extensive: Boolean, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
+  @scala.inline
+  def trackTransitions(): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("trackTransitions")().asInstanceOf[Lambda]
+  @scala.inline
+  def trackTransitions(extensive: Boolean): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("trackTransitions")(extensive.asInstanceOf[js.Any]).asInstanceOf[Lambda]
+  @scala.inline
+  def trackTransitions(extensive: Boolean, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("trackTransitions")(extensive.asInstanceOf[js.Any], onReport.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  @scala.inline
+  def trackTransitions(extensive: Unit, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("trackTransitions")(extensive.asInstanceOf[js.Any], onReport.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   @JSImport("mobservable/lib/extras", "transitionTracker")
   @js.native

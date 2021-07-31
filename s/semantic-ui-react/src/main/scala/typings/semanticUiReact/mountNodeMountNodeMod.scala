@@ -6,7 +6,6 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mountNodeMountNodeMod {
@@ -18,9 +17,9 @@ object mountNodeMountNodeMod {
   
   type MountNode = Component[MountNodeProps, js.Object, js.Any]
   
-  @js.native
   trait MountNodeProps
-    extends StrictMountNodeProps
+    extends StObject
+       with StrictMountNodeProps
        with /* key */ StringDictionary[js.Any]
   object MountNodeProps {
     
@@ -31,14 +30,13 @@ object mountNodeMountNodeMod {
     }
   }
   
-  @js.native
   trait StrictMountNodeProps extends StObject {
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** The DOM node where we will apply class names. Defaults to document.body. */
-    var node: js.UndefOr[HTMLElement | Ref[_]] = js.native
+    var node: js.UndefOr[HTMLElement | Ref[js.Any]] = js.undefined
   }
   object StrictMountNodeProps {
     
@@ -58,10 +56,10 @@ object mountNodeMountNodeMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setNode(value: HTMLElement | Ref[_]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      def setNode(value: HTMLElement | Ref[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNodeFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
+      def setNodeFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNodeNull: Self = StObject.set(x, "node", null)

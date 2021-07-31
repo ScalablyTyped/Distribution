@@ -2,23 +2,21 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorFlexDirection extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var flexDirection: String = js.native
+  var flexDirection: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var paddingLeft: Double = js.native
+  var paddingLeft: Double
   
-  var paddingRight: Double = js.native
+  var paddingRight: Double
 }
 object BackgroundColorFlexDirection {
   

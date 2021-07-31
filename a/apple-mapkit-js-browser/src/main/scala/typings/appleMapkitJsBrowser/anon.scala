@@ -6,19 +6,17 @@ import typings.appleMapkitJsBrowser.mapkit.Place
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `1` extends StObject {
     
-    var `1`: String = js.native
+    var `1`: String
     
-    var `2`: js.UndefOr[String] = js.native
+    var `2`: js.UndefOr[String] = js.undefined
     
-    var `3`: js.UndefOr[String] = js.native
+    var `3`: js.UndefOr[String] = js.undefined
   }
   object `1` {
     
@@ -49,12 +47,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Annotation extends StObject {
     
-    var annotation: js.UndefOr[typings.appleMapkitJsBrowser.mapkit.Annotation] = js.native
+    var annotation: js.UndefOr[typings.appleMapkitJsBrowser.mapkit.Annotation] = js.undefined
     
-    var overlay: js.UndefOr[Overlay] = js.native
+    var overlay: js.UndefOr[Overlay] = js.undefined
   }
   object Annotation {
     
@@ -81,10 +78,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AnnotationAnnotation extends StObject {
     
-    var annotation: typings.appleMapkitJsBrowser.mapkit.Annotation = js.native
+    var annotation: typings.appleMapkitJsBrowser.mapkit.Annotation
   }
   object AnnotationAnnotation {
     
@@ -102,12 +98,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -128,12 +123,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Coordinate extends StObject {
     
-    var annotation: typings.appleMapkitJsBrowser.mapkit.Annotation = js.native
+    var annotation: typings.appleMapkitJsBrowser.mapkit.Annotation
     
-    var coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate = js.native
+    var coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate
   }
   object Coordinate {
     
@@ -157,25 +151,24 @@ object anon {
     }
   }
   
-  @js.native
   trait DisplayRegion[Q] extends StObject {
     
     /**
       * A region that encloses the search results. This property is not present
       * if there are no results.
       */
-    var displayRegion: js.UndefOr[CoordinateRegion] = js.native
+    var displayRegion: js.UndefOr[CoordinateRegion] = js.undefined
     
     /**
       * An array of Place objects. The places array is empty if there is no match.
       */
-    var places: js.Array[Place] = js.native
+    var places: js.Array[Place]
     
     /**
       * The query corresponding to the results  The query corresponding to the
       * results, if a SearchAutocompleteResult was not used to perform the search.
       */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
   }
   object DisplayRegion {
     
@@ -186,7 +179,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DisplayRegionMutableBuilder[Self <: DisplayRegion[_], Q] (val x: Self with DisplayRegion[Q]) extends AnyVal {
+    implicit class DisplayRegionMutableBuilder[Self <: DisplayRegion[?], Q] (val x: Self & DisplayRegion[Q]) extends AnyVal {
       
       @scala.inline
       def setDisplayRegion(value: CoordinateRegion): Self = StObject.set(x, "displayRegion", value.asInstanceOf[js.Any])
@@ -208,12 +201,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -235,10 +227,9 @@ object anon {
   }
   
   /* Inlined std.Pick<apple-mapkit-js-browser.mapkit.GeocoderConstructorOptions, 'language'> */
-  @js.native
   trait PickGeocoderConstructorOp extends StObject {
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object PickGeocoderConstructorOp {
     
@@ -259,12 +250,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Timestamp extends StObject {
     
-    var coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate = js.native
+    var coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate
     
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object Timestamp {
     

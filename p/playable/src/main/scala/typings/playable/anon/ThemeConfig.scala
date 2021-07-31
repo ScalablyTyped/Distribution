@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.themeTypesMod.IThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeConfig extends StObject {
   
-  var themeConfig: IThemeConfig = js.native
+  var themeConfig: IThemeConfig
 }
 object ThemeConfig {
   

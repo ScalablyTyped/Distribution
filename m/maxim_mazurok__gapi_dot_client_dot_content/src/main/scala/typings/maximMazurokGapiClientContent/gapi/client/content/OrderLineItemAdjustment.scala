@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderLineItemAdjustment extends StObject {
   
   /** Adjustment for total price of the line item. */
-  var priceAdjustment: js.UndefOr[Price] = js.native
+  var priceAdjustment: js.UndefOr[Price] = js.undefined
   
   /** Adjustment for total tax of the line item. */
-  var taxAdjustment: js.UndefOr[Price] = js.native
+  var taxAdjustment: js.UndefOr[Price] = js.undefined
   
   /** Type of this adjustment. Acceptable values are: - "`promotion`" */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object OrderLineItemAdjustment {
   

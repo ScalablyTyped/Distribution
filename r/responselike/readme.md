@@ -11,8 +11,8 @@ A response-like object for mocking a Node.js HTTP response stream
 | Full name          | responselike |
 | Keywords           | http, https, response, mock, request, responselike |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 170119892 |
+| # dependents       | 39 |
+| # downloads        | 337485120 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReportGroupsOutput extends StObject {
   
   /**
     *  During a previous call, the maximum number of items that can be returned is the value specified in maxResults. If there more items in the list, then a unique string called a nextToken is returned. To get the next batch of items in the list, call this operation again, adding the next token to the call. To get all of the items in the list, keep calling this operation with each subsequent next token that is returned, until no more next tokens are returned. 
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     *  The list of ARNs for the report groups in the current AWS account. 
     */
-  var reportGroups: js.UndefOr[ReportGroupArns] = js.native
+  var reportGroups: js.UndefOr[ReportGroupArns] = js.undefined
 }
 object ListReportGroupsOutput {
   

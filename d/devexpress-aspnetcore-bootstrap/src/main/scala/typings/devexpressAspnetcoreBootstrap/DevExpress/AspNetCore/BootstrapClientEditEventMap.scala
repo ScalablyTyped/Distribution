@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapClientEditEventMap extends ControlEventMap {
+trait BootstrapClientEditEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var gotFocus: EventArgs = js.native
+  var gotFocus: EventArgs
   
-  var lostFocus: EventArgs = js.native
+  var lostFocus: EventArgs
   
-  var validation: EditValidationEventArgs = js.native
+  var validation: EditValidationEventArgs
   
-  var valueChanged: ProcessingModeEventArgs = js.native
+  var valueChanged: ProcessingModeEventArgs
 }
 object BootstrapClientEditEventMap {
   

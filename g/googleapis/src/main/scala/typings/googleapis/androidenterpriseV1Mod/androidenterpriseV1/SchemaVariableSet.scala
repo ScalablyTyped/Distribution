@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * could be a placeholder, and its value could be Alice. Placeholders should
   * start with a &#39;$&#39; sign and should be alphanumeric only.
   */
-@js.native
 trait SchemaVariableSet extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#variableSet&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The placeholder string; defined by EMM.
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the placeholder, specific to the user.
     */
-  var userValue: js.UndefOr[String] = js.native
+  var userValue: js.UndefOr[String] = js.undefined
 }
 object SchemaVariableSet {
   

@@ -5,15 +5,13 @@ import typings.openapiTypes.openapiTypesStrings.basic
 import typings.openapiTypes.openapiTypesStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecuritySchemeObjectBase extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var `type`: basic | apiKey | oauth2 = js.native
+  var `type`: basic | apiKey | oauth2
 }
 object SecuritySchemeObjectBase {
   

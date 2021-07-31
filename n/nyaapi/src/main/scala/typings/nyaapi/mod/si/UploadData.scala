@@ -2,33 +2,31 @@ package typings.nyaapi.mod.si
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadData extends StObject {
   
-  var anonymous: Boolean = js.native
+  var anonymous: Boolean
   
-  var category: String = js.native
+  var category: String
   
-  var complete: Boolean = js.native
+  var complete: Boolean
   
-  var credentials: String = js.native
+  var credentials: String
   
-  var description: String = js.native
+  var description: String
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var information: String = js.native
+  var information: String
   
-  var name: String = js.native
+  var name: String
   
-  var remake: Boolean = js.native
+  var remake: Boolean
   
-  var torrent: String = js.native
+  var torrent: String
   
-  var trusted: Boolean = js.native
+  var trusted: Boolean
 }
 object UploadData {
   

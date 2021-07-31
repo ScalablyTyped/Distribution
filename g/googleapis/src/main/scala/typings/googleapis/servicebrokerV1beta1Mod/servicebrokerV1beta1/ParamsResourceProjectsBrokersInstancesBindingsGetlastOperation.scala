@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsBrokersInstancesBindingsGetlastOperation extends StandardParameters {
+trait ParamsResourceProjectsBrokersInstancesBindingsGetlastOperation
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name must match
     * `projects/[PROJECT_ID]/brokers/[BROKER_ID]/v2/service_instances/[INSTANCE_ID]/service_binding/[BINDING_ID]`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If `operation` was returned during mutation operation, this field must be
     * populated with the provided value.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * Plan id.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
   /**
     * Service id.
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsBrokersInstancesBindingsGetlastOperation {
   

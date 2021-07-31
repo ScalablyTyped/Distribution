@@ -2,26 +2,24 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictedIntent extends StObject {
   
   /**
     * The name of the intent that Amazon Lex suggests satisfies the user's intent.
     */
-  var intentName: js.UndefOr[IntentName] = js.native
+  var intentName: js.UndefOr[IntentName] = js.undefined
   
   /**
     * Indicates how confident Amazon Lex is that an intent satisfies the user's intent.
     */
-  var nluIntentConfidence: js.UndefOr[IntentConfidence] = js.native
+  var nluIntentConfidence: js.UndefOr[IntentConfidence] = js.undefined
   
   /**
     * The slot and slot values associated with the predicted intent.
     */
-  var slots: js.UndefOr[StringMap] = js.native
+  var slots: js.UndefOr[StringMap] = js.undefined
 }
 object PredictedIntent {
   

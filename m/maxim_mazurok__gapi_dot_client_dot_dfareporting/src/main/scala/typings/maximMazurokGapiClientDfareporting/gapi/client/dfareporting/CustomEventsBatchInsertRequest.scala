@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomEventsBatchInsertRequest extends StObject {
   
   /** The set of custom events to insert. */
-  var customEvents: js.UndefOr[js.Array[CustomEvent]] = js.native
+  var customEvents: js.UndefOr[js.Array[CustomEvent]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#customEventsBatchInsertRequest". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object CustomEventsBatchInsertRequest {
   

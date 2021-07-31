@@ -2,29 +2,27 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeDisplayFormat extends StObject {
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var hour: js.UndefOr[String] = js.native
+  var hour: js.UndefOr[String] = js.undefined
   
-  var millisecond: js.UndefOr[String] = js.native
+  var millisecond: js.UndefOr[String] = js.undefined
   
-  var minute: js.UndefOr[String] = js.native
+  var minute: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var quarter: js.UndefOr[String] = js.native
+  var quarter: js.UndefOr[String] = js.undefined
   
-  var second: js.UndefOr[String] = js.native
+  var second: js.UndefOr[String] = js.undefined
   
-  var week: js.UndefOr[String] = js.native
+  var week: js.UndefOr[String] = js.undefined
   
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object TimeDisplayFormat {
   

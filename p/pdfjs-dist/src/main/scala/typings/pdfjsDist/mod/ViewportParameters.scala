@@ -2,25 +2,23 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportParameters extends StObject {
   
   // (optional) The vertical, i.e. y-axis, offset. The default value is `0`.
-  var dontFlip: js.UndefOr[Boolean] = js.native
+  var dontFlip: js.UndefOr[Boolean] = js.undefined
   
   // (optional) The desired rotation, in degrees, of the viewport. If omitted it defaults to the page rotation.
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   // (optional) The horizontal, i.e. x-axis, offset. The default value is `0`.
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   // The desired scale of the viewport.
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var scale: Double = js.native
+  var scale: Double
 }
 object ViewportParameters {
   

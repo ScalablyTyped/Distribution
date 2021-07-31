@@ -2,20 +2,18 @@ package typings.karmaMaterialReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Visualize karma test results in real time with material designed reporter
       * See {@link https://github.com/ameerthehacker/karma-material-reporter#availble-configurations}
       */
-    var materialReporter: js.UndefOr[MaterialReporterOptions] = js.native
+    var materialReporter: js.UndefOr[MaterialReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -36,26 +34,25 @@ object mod {
     }
   }
   
-  @js.native
   trait MaterialReporterOptions extends StObject {
     
     /**
       * whether to open the reporter UI automatically in the default browser
       * @default true
       */
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * expand all the expandable suite menus
       * @default true
       */
-    var expandSuites: js.UndefOr[Boolean] = js.native
+    var expandSuites: js.UndefOr[Boolean] = js.undefined
     
     /**
       * port in which the reporter startes a express server
       * @default 3000
       */
-    var serverPort: js.UndefOr[Double] = js.native
+    var serverPort: js.UndefOr[Double] = js.undefined
   }
   object MaterialReporterOptions {
     

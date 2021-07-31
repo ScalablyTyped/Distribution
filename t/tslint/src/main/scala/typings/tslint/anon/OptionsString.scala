@@ -2,13 +2,11 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsString extends StObject {
   
-  var options: String = js.native
+  var options: String
 }
 object OptionsString {
   

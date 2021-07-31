@@ -7,17 +7,15 @@ import typings.typescriptServices.TypeScript.PullSignatureSymbol
 import typings.typescriptServices.TypeScript.SetAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActualText extends StObject {
     
-    var actualText: String = js.native
+    var actualText: String
     
-    var memberName: String = js.native
+    var memberName: String
   }
   object ActualText {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AllSignatures extends StObject {
     
-    var allSignatures: js.Array[PullSignatureSymbol] = js.native
+    var allSignatures: js.Array[PullSignatureSymbol]
     
-    var signature: PullSignatureSymbol = js.native
+    var signature: PullSignatureSymbol
   }
   object AllSignatures {
     
@@ -67,10 +64,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AllowAutomaticSemicolonInsertion extends StObject {
     
-    var allowAutomaticSemicolonInsertion: Boolean = js.native
+    var allowAutomaticSemicolonInsertion: Boolean
   }
   object AllowAutomaticSemicolonInsertion {
     
@@ -88,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DependencyList extends StObject {
     
-    var dependencyList: String = js.native
+    var dependencyList: String
     
-    var importList: String = js.native
+    var importList: String
   }
   object DependencyList {
     
@@ -114,12 +109,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EnclosingTypeWalkerState1 extends StObject {
     
-    var enclosingTypeWalkerState1: EnclosingTypeWalkerState = js.native
+    var enclosingTypeWalkerState1: EnclosingTypeWalkerState
     
-    var enclosingTypeWalkerState2: EnclosingTypeWalkerState = js.native
+    var enclosingTypeWalkerState2: EnclosingTypeWalkerState
   }
   object EnclosingTypeWalkerState1 {
     
@@ -143,12 +137,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Getter extends StObject {
     
-    var getter: GetAccessor = js.native
+    var getter: GetAccessor
     
-    var setter: SetAccessor = js.native
+    var setter: SetAccessor
   }
   object Getter {
     
@@ -169,12 +162,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexSigs1 extends StObject {
     
-    var indexSigs1: IndexSignatureInfo = js.native
+    var indexSigs1: IndexSignatureInfo
     
-    var indexSigs2: IndexSignatureInfo = js.native
+    var indexSigs2: IndexSignatureInfo
   }
   object IndexSigs1 {
     
@@ -195,12 +187,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var lineStarts: js.Array[Double] = js.native
+    var lineStarts: js.Array[Double]
   }
   object Length {
     
@@ -224,10 +215,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Recursive extends StObject {
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object Recursive {
     
@@ -248,12 +238,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Rest extends StObject {
     
-    var rest: String = js.native
+    var rest: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Rest {
     
@@ -274,12 +263,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StateWhenStartedWalkingTypes1 extends StObject {
     
-    var stateWhenStartedWalkingTypes1: EnclosingTypeWalkerState = js.native
+    var stateWhenStartedWalkingTypes1: EnclosingTypeWalkerState
     
-    var stateWhenStartedWalkingTypes2: EnclosingTypeWalkerState = js.native
+    var stateWhenStartedWalkingTypes2: EnclosingTypeWalkerState
   }
   object StateWhenStartedWalkingTypes1 {
     

@@ -11,8 +11,8 @@ Representation of a geographic point for node.js and the browser
 | Full name          | geopoint |
 | Keywords           | geolocation, point, distance, bounding box, radius |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 121483 |
+| # dependents       | 13 |
+| # downloads        | 135678 |
 | # stars            | 1 |
 
 ## Links

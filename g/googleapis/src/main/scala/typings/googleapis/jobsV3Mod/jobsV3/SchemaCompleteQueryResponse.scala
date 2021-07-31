@@ -2,25 +2,23 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Response of auto-complete query.
   */
-@js.native
 trait SchemaCompleteQueryResponse extends StObject {
   
   /**
     * Results of the matching job/company candidates.
     */
-  var completionResults: js.UndefOr[js.Array[SchemaCompletionResult]] = js.native
+  var completionResults: js.UndefOr[js.Array[SchemaCompletionResult]] = js.undefined
   
   /**
     * Additional information for the API invocation, such as the request
     * tracking id.
     */
-  var metadata: js.UndefOr[SchemaResponseMetadata] = js.native
+  var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
 }
 object SchemaCompleteQueryResponse {
   

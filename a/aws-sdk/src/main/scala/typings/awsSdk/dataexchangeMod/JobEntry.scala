@@ -2,51 +2,49 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEntry extends StObject {
   
   /**
     * The ARN for the job.
     */
-  var Arn: typings.awsSdk.dataexchangeMod.Arn = js.native
+  var Arn: typings.awsSdk.dataexchangeMod.Arn
   
   /**
     * The date and time that the job was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp = js.native
+  var CreatedAt: Timestamp
   
   /**
     * Details of the operation to be performed by the job, such as export destination details or import source details.
     */
-  var Details: ResponseDetails = js.native
+  var Details: ResponseDetails
   
   /**
     * Errors for jobs.
     */
-  var Errors: js.UndefOr[ListOfJobError] = js.native
+  var Errors: js.UndefOr[ListOfJobError] = js.undefined
   
   /**
     * The unique identifier for the job.
     */
-  var Id: typings.awsSdk.dataexchangeMod.Id = js.native
+  var Id: typings.awsSdk.dataexchangeMod.Id
   
   /**
     * The state of the job.
     */
-  var State: typings.awsSdk.dataexchangeMod.State = js.native
+  var State: typings.awsSdk.dataexchangeMod.State
   
   /**
     * The job type.
     */
-  var Type: typings.awsSdk.dataexchangeMod.Type = js.native
+  var Type: typings.awsSdk.dataexchangeMod.Type
   
   /**
     * The date and time that the job was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp = js.native
+  var UpdatedAt: Timestamp
 }
 object JobEntry {
   

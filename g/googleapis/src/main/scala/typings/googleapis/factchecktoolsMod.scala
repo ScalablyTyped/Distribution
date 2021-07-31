@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object factchecktoolsMod {
+  
+  @JSImport("googleapis/build/src/apis/factchecktools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object factchecktoolsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/factchecktools", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/factchecktools", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object factchecktoolsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/factchecktools", "factchecktools")
-  @js.native
-  def factchecktools(options: Options): Factchecktools = js.native
-  @JSImport("googleapis/build/src/apis/factchecktools", "factchecktools")
-  @js.native
-  def factchecktools_v1alpha1(version: v1alpha1): Factchecktools = js.native
+  @scala.inline
+  def factchecktools(options: Options): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(options.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
+  
+  @scala.inline
+  def factchecktools_v1alpha1(version: v1alpha1): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(version.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
 }

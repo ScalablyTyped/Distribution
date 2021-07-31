@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRelationalDatabaseMasterUserPasswordResult extends StObject {
   
   /**
     * The timestamp when the specified version of the master user password was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The master user password for the password version specified.
     */
-  var masterUserPassword: js.UndefOr[SensitiveString] = js.native
+  var masterUserPassword: js.UndefOr[SensitiveString] = js.undefined
 }
 object GetRelationalDatabaseMasterUserPasswordResult {
   

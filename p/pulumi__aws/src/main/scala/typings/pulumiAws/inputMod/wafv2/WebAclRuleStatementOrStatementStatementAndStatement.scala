@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementOrStatementStatementAndStatement extends StObject {
   
   /**
     * The statements to combine with `AND` logic. You can use any statements that can be nested. See Statement above for details.
     */
-  var statements: Input[js.Array[Input[WebAclRuleStatementOrStatementStatementAndStatementStatement]]] = js.native
+  var statements: Input[js.Array[Input[WebAclRuleStatementOrStatementStatementAndStatementStatement]]]
 }
 object WebAclRuleStatementOrStatementStatementAndStatement {
   

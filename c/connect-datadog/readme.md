@@ -11,8 +11,8 @@ Datadog middleware for Connect JS / Express
 | Full name          | connect-datadog |
 | Keywords           | datadog, middleware |
 | # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 1348382 |
+| # dependents       | 4 |
+| # downloads        | 1717063 |
 | # stars            | 2 |
 
 ## Links

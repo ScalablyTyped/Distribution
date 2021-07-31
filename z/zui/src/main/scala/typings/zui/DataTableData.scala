@@ -2,15 +2,13 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTableData extends StObject {
   
-  var cols: js.Array[Column] = js.native
+  var cols: js.Array[Column]
   
-  var rows: js.Array[Row] = js.native
+  var rows: js.Array[Row]
 }
 object DataTableData {
   

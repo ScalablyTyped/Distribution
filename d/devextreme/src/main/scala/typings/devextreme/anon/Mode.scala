@@ -5,15 +5,13 @@ import typings.devextreme.devextremeStrings.standard
 import typings.devextreme.devextremeStrings.virtual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var mode: js.UndefOr[standard | virtual] = js.native
+  var mode: js.UndefOr[standard | virtual] = js.undefined
   
-  var useNative: js.UndefOr[Boolean | auto] = js.native
+  var useNative: js.UndefOr[Boolean | auto] = js.undefined
 }
 object Mode {
   

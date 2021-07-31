@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityProviderByIdentifierRequest extends StObject {
   
   /**
     * The identity provider ID.
     */
-  var IdpIdentifier: IdpIdentifierType = js.native
+  var IdpIdentifier: IdpIdentifierType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object GetIdentityProviderByIdentifierRequest {
   

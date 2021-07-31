@@ -2,20 +2,18 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // what is returned from SpriteSheet.getAnimation(string)
-@js.native
 trait SpriteSheetAnimation extends StObject {
   
-  var frames: js.Array[Double] = js.native
+  var frames: js.Array[Double]
   
-  var name: String = js.native
+  var name: String
   
-  var next: String = js.native
+  var next: String
   
-  var speed: Double = js.native
+  var speed: Double
 }
 object SpriteSheetAnimation {
   

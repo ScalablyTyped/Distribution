@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePlacementsGeneratetags extends StandardParameters {
+trait ParamsResourcePlacementsGeneratetags
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Generate placements belonging to this campaign. This is a required field.
     */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /**
     * Generate tags for these placements.
     */
-  var placementIds: js.UndefOr[js.Array[String]] = js.native
+  var placementIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Tag formats to generate for these placements.  Note:
     * PLACEMENT_TAG_STANDARD can only be generated for 1x1 placements.
     */
-  var tagFormats: js.UndefOr[js.Array[String]] = js.native
+  var tagFormats: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourcePlacementsGeneratetags {
   

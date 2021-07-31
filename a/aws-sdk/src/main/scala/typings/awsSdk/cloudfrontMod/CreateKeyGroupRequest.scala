@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateKeyGroupRequest extends StObject {
   
   /**
     * A key group configuration.
     */
-  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig = js.native
+  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig
 }
 object CreateKeyGroupRequest {
   

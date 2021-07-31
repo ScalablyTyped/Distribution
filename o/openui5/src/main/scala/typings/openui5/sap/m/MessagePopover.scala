@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessagePopover extends Control {
+trait MessagePopover
+  extends StObject
+     with Control {
   
   /**
     * Adds some item to the aggregation <code>items</code>.

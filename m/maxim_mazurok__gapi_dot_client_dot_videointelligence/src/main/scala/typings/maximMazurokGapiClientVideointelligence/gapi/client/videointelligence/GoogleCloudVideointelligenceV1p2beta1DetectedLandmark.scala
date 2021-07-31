@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p2beta1DetectedLandmark extends StObject {
   
   /** The confidence score of the detected landmark. Range [0, 1]. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /** The name of this landmark, for example, left_hand, right_shoulder. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The 2D point of the detected landmark using the normalized image coordindate system. The normalized coordinates have the range from 0 to 1. */
-  var point: js.UndefOr[GoogleCloudVideointelligenceV1p2beta1NormalizedVertex] = js.native
+  var point: js.UndefOr[GoogleCloudVideointelligenceV1p2beta1NormalizedVertex] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p2beta1DetectedLandmark {
   

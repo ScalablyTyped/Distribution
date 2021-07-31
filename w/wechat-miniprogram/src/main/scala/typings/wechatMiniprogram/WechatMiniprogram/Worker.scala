@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Worker extends StObject {
   
   /** [Worker.onMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.onMessage.html)
     *
     * 监听主线程/Worker 线程向当前线程发送的消息的事件。 */
   def onMessage(/** 主线程/Worker 线程向当前线程发送的消息的事件的回调函数 */
-  callback: WorkerOnMessageCallback): Unit = js.native
+  callback: WorkerOnMessageCallback): Unit
   
   /** [Worker.postMessage(Object message)](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.postMessage.html)
   *
@@ -36,12 +34,12 @@ trait Worker extends StObject {
   })
   ``` */
   def postMessage(/** 需要发送的消息，必须是一个可序列化的 JavaScript key-value 形式的对象。 */
-  message: IAnyObject): Unit = js.native
+  message: IAnyObject): Unit
   
   /** [Worker.terminate()](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.terminate.html)
     *
     * 结束当前 Worker 线程。仅限在主线程 worker 对象上调用。 */
-  def terminate(): Unit = js.native
+  def terminate(): Unit
 }
 object Worker {
   

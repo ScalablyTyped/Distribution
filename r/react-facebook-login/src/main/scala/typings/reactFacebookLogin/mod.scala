@@ -13,7 +13,6 @@ import typings.std.HTMLDivElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,9 @@ object mod {
   class default ()
     extends Component[ReactFacebookLoginProps, ReactFacebookLoginState, js.Any]
   
-  @js.native
   trait ReactFacebookFailureResponse extends StObject {
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
   }
   object ReactFacebookFailureResponse {
     
@@ -49,18 +47,17 @@ object mod {
   
   type ReactFacebookLogin = Component[ReactFacebookLoginProps, ReactFacebookLoginState, js.Any]
   
-  @js.native
   trait ReactFacebookLoginInfo extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var picture: js.UndefOr[Data] = js.native
+    var picture: js.UndefOr[Data] = js.undefined
   }
   object ReactFacebookLoginInfo {
     
@@ -149,7 +146,7 @@ object mod {
     
     var state: js.UndefOr[String] = js.native
     
-    var tag: js.UndefOr[Node | (Component[_, js.Object, _])] = js.native
+    var tag: js.UndefOr[Node | (Component[js.Any, js.Object, js.Any])] = js.native
     
     var textButton: js.UndefOr[String] = js.native
     
@@ -160,12 +157,11 @@ object mod {
     var xfbml: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait ReactFacebookLoginState extends StObject {
     
-    var isProcessing: js.UndefOr[Boolean] = js.native
+    var isProcessing: js.UndefOr[Boolean] = js.undefined
     
-    var isSdkLoaded: js.UndefOr[Boolean] = js.native
+    var isSdkLoaded: js.UndefOr[Boolean] = js.undefined
   }
   object ReactFacebookLoginState {
     

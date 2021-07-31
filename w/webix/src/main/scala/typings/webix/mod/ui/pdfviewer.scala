@@ -3,13 +3,13 @@ package typings.webix.mod.ui
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.pdfviewer")
 @js.native
 class pdfviewer ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$numPages")
   var $numPages: Double = js.native
@@ -31,9 +31,12 @@ class pdfviewer ()
   def attachEvent(`type`: pdfviewerEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: pdfviewerEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clear(): Unit = js.native
   
@@ -48,10 +51,10 @@ class pdfviewer ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   

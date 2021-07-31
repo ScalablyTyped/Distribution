@@ -16,14 +16,19 @@ import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientInterceptorsMod {
   
+  @JSImport("@grpc/grpc-js/build/src/client-interceptors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "InterceptingCall")
   @js.native
-  class InterceptingCall protected () extends InterceptingCallInterface {
+  class InterceptingCall protected ()
+    extends StObject
+       with InterceptingCallInterface {
     def this(nextCall: InterceptingCallInterface) = this()
     def this(nextCall: InterceptingCallInterface, requester: Requester) = this()
     
@@ -49,8 +54,16 @@ object clientInterceptorsMod {
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "InterceptorConfigurationError")
   @js.native
-  class InterceptorConfigurationError protected () extends Error {
+  class InterceptorConfigurationError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "ListenerBuilder")
@@ -95,41 +108,70 @@ object clientInterceptorsMod {
     def withStart(start: MetadataRequester): this.type = js.native
   }
   
-  @JSImport("@grpc/grpc-js/build/src/client-interceptors", "getInterceptingCall")
-  @js.native
+  @scala.inline
   def getInterceptingCall(
     interceptorArgs: InterceptorArguments,
-    methodDefinition: ClientMethodDefinition[_, _],
+    methodDefinition: ClientMethodDefinition[js.Any, js.Any],
     options: CallOptions,
     channel: Channel
-  ): InterceptingCallInterface = js.native
+  ): InterceptingCallInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("getInterceptingCall")(interceptorArgs.asInstanceOf[js.Any], methodDefinition.asInstanceOf[js.Any], options.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[InterceptingCallInterface]
   
   type CancelRequester = js.Function1[/* next */ js.Function0[Unit], Unit]
   
   type CloseRequester = js.Function1[/* next */ js.Function0[Unit], Unit]
   
-  @js.native
   trait FullRequester extends StObject {
     
-    def cancel(next: js.Function0[Unit]): Unit = js.native
+    def cancel(next: js.Function0[Unit]): Unit
     @JSName("cancel")
-    var cancel_Original: CancelRequester = js.native
+    var cancel_Original: CancelRequester
     
-    def halfClose(next: js.Function0[Unit]): Unit = js.native
+    def halfClose(next: js.Function0[Unit]): Unit
     @JSName("halfClose")
-    var halfClose_Original: CloseRequester = js.native
+    var halfClose_Original: CloseRequester
     
-    def sendMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit = js.native
+    def sendMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit
     @JSName("sendMessage")
-    var sendMessage_Original: MessageRequester = js.native
+    var sendMessage_Original: MessageRequester
     
     def start(
       metadata: Metadata,
       listener: InterceptingListener,
       next: js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]
-    ): Unit = js.native
+    ): Unit
     @JSName("start")
-    var start_Original: MetadataRequester = js.native
+    var start_Original: MetadataRequester
+  }
+  object FullRequester {
+    
+    @scala.inline
+    def apply(
+      cancel: /* next */ js.Function0[Unit] => Unit,
+      halfClose: /* next */ js.Function0[Unit] => Unit,
+      sendMessage: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit,
+      start: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
+    ): FullRequester = {
+      val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), halfClose = js.Any.fromFunction1(halfClose), sendMessage = js.Any.fromFunction2(sendMessage), start = js.Any.fromFunction3(start))
+      __obj.asInstanceOf[FullRequester]
+    }
+    
+    @scala.inline
+    implicit class FullRequesterMutableBuilder[Self <: FullRequester] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setStart(
+        value: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
+      ): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+    }
   }
   
   @js.native
@@ -155,16 +197,15 @@ object clientInterceptorsMod {
   
   type Interceptor = js.Function2[/* options */ InterceptorOptions, /* nextCall */ NextCall, InterceptingCall]
   
-  @js.native
   trait InterceptorArguments extends StObject {
     
-    var callInterceptorProviders: js.Array[InterceptorProvider] = js.native
+    var callInterceptorProviders: js.Array[InterceptorProvider]
     
-    var callInterceptors: js.Array[Interceptor] = js.native
+    var callInterceptors: js.Array[Interceptor]
     
-    var clientInterceptorProviders: js.Array[InterceptorProvider] = js.native
+    var clientInterceptorProviders: js.Array[InterceptorProvider]
     
-    var clientInterceptors: js.Array[Interceptor] = js.native
+    var clientInterceptors: js.Array[Interceptor]
   }
   object InterceptorArguments {
     
@@ -208,15 +249,16 @@ object clientInterceptorsMod {
     }
   }
   
-  @js.native
-  trait InterceptorOptions extends CallOptions {
+  trait InterceptorOptions
+    extends StObject
+       with CallOptions {
     
-    var method_definition: ClientMethodDefinition[_, _] = js.native
+    var method_definition: ClientMethodDefinition[js.Any, js.Any]
   }
   object InterceptorOptions {
     
     @scala.inline
-    def apply(method_definition: ClientMethodDefinition[_, _]): InterceptorOptions = {
+    def apply(method_definition: ClientMethodDefinition[js.Any, js.Any]): InterceptorOptions = {
       val __obj = js.Dynamic.literal(method_definition = method_definition.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterceptorOptions]
     }
@@ -225,7 +267,7 @@ object clientInterceptorsMod {
     implicit class InterceptorOptionsMutableBuilder[Self <: InterceptorOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMethod_definition(value: ClientMethodDefinition[_, _]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
+      def setMethod_definition(value: ClientMethodDefinition[js.Any, js.Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,16 +285,15 @@ object clientInterceptorsMod {
   type NextCall = js.Function1[/* options */ InterceptorOptions, InterceptingCallInterface]
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.FullRequester> */
-  @js.native
   trait Requester extends StObject {
     
-    var cancel: js.UndefOr[CancelRequester] = js.native
+    var cancel: js.UndefOr[CancelRequester] = js.undefined
     
-    var halfClose: js.UndefOr[CloseRequester] = js.native
+    var halfClose: js.UndefOr[CloseRequester] = js.undefined
     
-    var sendMessage: js.UndefOr[MessageRequester] = js.native
+    var sendMessage: js.UndefOr[MessageRequester] = js.undefined
     
-    var start: js.UndefOr[MetadataRequester] = js.native
+    var start: js.UndefOr[MetadataRequester] = js.undefined
   }
   object Requester {
     

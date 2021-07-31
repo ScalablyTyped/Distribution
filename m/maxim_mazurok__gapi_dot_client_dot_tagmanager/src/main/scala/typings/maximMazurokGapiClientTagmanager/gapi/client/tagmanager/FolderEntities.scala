@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderEntities extends StObject {
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of tags inside the folder. */
-  var tag: js.UndefOr[js.Array[Tag]] = js.native
+  var tag: js.UndefOr[js.Array[Tag]] = js.undefined
   
   /** The list of triggers inside the folder. */
-  var trigger: js.UndefOr[js.Array[Trigger]] = js.native
+  var trigger: js.UndefOr[js.Array[Trigger]] = js.undefined
   
   /** The list of variables inside the folder. */
-  var variable: js.UndefOr[js.Array[Variable]] = js.native
+  var variable: js.UndefOr[js.Array[Variable]] = js.undefined
 }
 object FolderEntities {
   

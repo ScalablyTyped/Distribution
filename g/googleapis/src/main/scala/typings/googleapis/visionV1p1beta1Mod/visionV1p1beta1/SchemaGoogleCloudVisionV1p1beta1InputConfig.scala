@@ -2,25 +2,23 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The desired input location and metadata.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1InputConfig extends StObject {
   
   /**
     * The Google Cloud Storage location to read the input from.
     */
-  var gcsSource: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1GcsSource] = js.native
+  var gcsSource: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1GcsSource] = js.undefined
   
   /**
     * The type of the file. Currently only &quot;application/pdf&quot; and
     * &quot;image/tiff&quot; are supported. Wildcards are not supported.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1InputConfig {
   

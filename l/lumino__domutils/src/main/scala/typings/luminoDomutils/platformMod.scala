@@ -4,12 +4,15 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
   
   object Platform {
+    
+    @JSImport("@lumino/domutils/types/platform", "Platform")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A flag indicating whether the browser is Edge.
@@ -50,11 +53,9 @@ object platformMod {
       * On Mac the `accel` key is the command key. On all other
       * platforms the `accel` key is the control key.
       */
-    @JSImport("@lumino/domutils/types/platform", "Platform.accelKey")
-    @js.native
-    def accelKey(event: KeyboardEvent): Boolean = js.native
-    @JSImport("@lumino/domutils/types/platform", "Platform.accelKey")
-    @js.native
-    def accelKey(event: MouseEvent): Boolean = js.native
+    @scala.inline
+    def accelKey(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def accelKey(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

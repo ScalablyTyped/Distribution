@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: js.UndefOr[Property] = js.native
+  var color: js.UndefOr[Property] = js.undefined
   
-  var image: js.UndefOr[Property] = js.native
+  var image: js.UndefOr[Property] = js.undefined
   
-  var repeat: js.UndefOr[Property] = js.native
+  var repeat: js.UndefOr[Property] = js.undefined
   
-  var transparent: js.UndefOr[Property] = js.native
+  var transparent: js.UndefOr[Property] = js.undefined
 }
 object Color {
   

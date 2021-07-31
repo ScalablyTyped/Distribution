@@ -2,43 +2,41 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBranchPermissionRequired extends StObject {
   
-  var createBranchPermissionRequired: scala.Double = js.native
+  var createBranchPermissionRequired: scala.Double
   
-  var createTagPermissionRequired: scala.Double = js.native
+  var createTagPermissionRequired: scala.Double
   
-  var forcePushRequired: scala.Double = js.native
+  var forcePushRequired: scala.Double
   
-  var invalidRefName: scala.Double = js.native
+  var invalidRefName: scala.Double
   
-  var locked: scala.Double = js.native
+  var locked: scala.Double
   
-  var manageNotePermissionRequired: scala.Double = js.native
+  var manageNotePermissionRequired: scala.Double
   
-  var refNameConflict: scala.Double = js.native
+  var refNameConflict: scala.Double
   
-  var rejectedByPlugin: scala.Double = js.native
+  var rejectedByPlugin: scala.Double
   
-  var rejectedByPolicy: scala.Double = js.native
+  var rejectedByPolicy: scala.Double
   
-  var staleOldObjectId: scala.Double = js.native
+  var staleOldObjectId: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
   
-  var succeededCorruptRef: scala.Double = js.native
+  var succeededCorruptRef: scala.Double
   
-  var succeededNonExistentRef: scala.Double = js.native
+  var succeededNonExistentRef: scala.Double
   
-  var unprocessed: scala.Double = js.native
+  var unprocessed: scala.Double
   
-  var unresolvableToCommit: scala.Double = js.native
+  var unresolvableToCommit: scala.Double
   
-  var writePermissionRequired: scala.Double = js.native
+  var writePermissionRequired: scala.Double
 }
 object CreateBranchPermissionRequired {
   

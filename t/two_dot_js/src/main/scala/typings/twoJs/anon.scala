@@ -3,17 +3,15 @@ package typings.twoJs
 import typings.twoJs.mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Vector = js.native
+    var left: Vector
     
-    var right: Vector = js.native
+    var right: Vector
   }
   object Left {
     

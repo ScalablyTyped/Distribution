@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingSetting extends StObject {
   
   /**
     * The values that indicate whether the pin is always required.
     */
-  var RequirePin: typings.awsSdk.alexaforbusinessMod.RequirePin = js.native
+  var RequirePin: typings.awsSdk.alexaforbusinessMod.RequirePin
 }
 object MeetingSetting {
   

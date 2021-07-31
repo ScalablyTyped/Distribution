@@ -2,28 +2,27 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSMethodSignature
-  extends Node
+  extends StObject
+     with Node
      with TSTypeElement {
   
-  var computed: Boolean | Null = js.native
+  var computed: Boolean | Null
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var parameters: (js.Array[Identifier_ | RestElement_]) | Null = js.native
+  var parameters: (js.Array[Identifier_ | RestElement_]) | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSMethodSignature: typings.babelTypes.babelTypesStrings.TSMethodSignature = js.native
+  var type_TSMethodSignature: typings.babelTypes.babelTypesStrings.TSMethodSignature
 }
 object TSMethodSignature {
   
@@ -32,27 +31,18 @@ object TSMethodSignature {
   def apply(key: Expression): TSMethodSignature = js.native
   @JSImport("babel-types/ts3.6", "TSMethodSignature")
   @js.native
-  def apply(
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSMethodSignature = js.native
+  def apply(key: Expression, typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature = js.native
   @JSImport("babel-types/ts3.6", "TSMethodSignature")
   @js.native
   def apply(
     key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.Array[Identifier_ | RestElement_]
-  ): TSMethodSignature = js.native
-  @JSImport("babel-types/ts3.6", "TSMethodSignature")
-  @js.native
-  def apply(
-    key: Expression,
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: Unit,
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation
   ): TSMethodSignature = js.native
+  @JSImport("babel-types/ts3.6", "TSMethodSignature")
+  @js.native
+  def apply(key: Expression, typeParameters: Unit, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSMethodSignature = js.native
   @JSImport("babel-types/ts3.6", "TSMethodSignature")
   @js.native
   def apply(key: Expression, typeParameters: TypeParameterDeclaration_): TSMethodSignature = js.native
@@ -61,14 +51,6 @@ object TSMethodSignature {
   def apply(
     key: Expression,
     typeParameters: TypeParameterDeclaration_,
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSMethodSignature = js.native
-  @JSImport("babel-types/ts3.6", "TSMethodSignature")
-  @js.native
-  def apply(
-    key: Expression,
-    typeParameters: TypeParameterDeclaration_,
     parameters: js.Array[Identifier_ | RestElement_]
   ): TSMethodSignature = js.native
   @JSImport("babel-types/ts3.6", "TSMethodSignature")
@@ -77,6 +59,14 @@ object TSMethodSignature {
     key: Expression,
     typeParameters: TypeParameterDeclaration_,
     parameters: js.Array[Identifier_ | RestElement_],
+    typeAnnotation: TSTypeAnnotation
+  ): TSMethodSignature = js.native
+  @JSImport("babel-types/ts3.6", "TSMethodSignature")
+  @js.native
+  def apply(
+    key: Expression,
+    typeParameters: TypeParameterDeclaration_,
+    parameters: Unit,
     typeAnnotation: TSTypeAnnotation
   ): TSMethodSignature = js.native
   

@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JourneySchedule extends StObject {
   
   /**
     * The scheduled time, in ISO 8601 format, when the journey ended or will end.
     */
-  var EndTime: js.UndefOr[timestampIso8601] = js.native
+  var EndTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The scheduled time, in ISO 8601 format, when the journey began or will begin.
     */
-  var StartTime: js.UndefOr[timestampIso8601] = js.native
+  var StartTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The starting UTC offset for the journey schedule, if the value of the journey's LocalTime property is true. Valid values are: UTC,
@@ -26,7 +24,7 @@ trait JourneySchedule extends StObject {
     UTC-02:30, UTC-03, UTC-03:30, UTC-04, UTC-05, UTC-06, UTC-07, UTC-08, UTC-09,
     UTC-09:30, UTC-10, and UTC-11.
     */
-  var Timezone: js.UndefOr[string] = js.native
+  var Timezone: js.UndefOr[string] = js.undefined
 }
 object JourneySchedule {
   

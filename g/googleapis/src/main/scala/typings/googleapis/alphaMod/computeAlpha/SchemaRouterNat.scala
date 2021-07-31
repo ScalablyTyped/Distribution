@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Customers can also provide the external IPs that would be used for NAT. GCP
   * would auto-allocate ephemeral IPs if no external IPs are provided.
   */
-@js.native
 trait SchemaRouterNat extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaRouterNat extends StObject {
     * static external IPs that have been assigned to the NAT. These IPs should
     * be used for updating/patching a NAT only.
     */
-  var drainNatIps: js.UndefOr[js.Array[String]] = js.native
+  var drainNatIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Timeout (in seconds) for ICMP connections. Defaults to 30s if not set.
     */
-  var icmpIdleTimeoutSec: js.UndefOr[Double] = js.native
+  var icmpIdleTimeoutSec: js.UndefOr[Double] = js.undefined
   
   /**
     * Configure logging on this NAT.
     */
-  var logConfig: js.UndefOr[SchemaRouterNatLogConfig] = js.native
+  var logConfig: js.UndefOr[SchemaRouterNatLogConfig] = js.undefined
   
   /**
     * Minimum number of ports allocated to a VM from this NAT config. If not
@@ -38,26 +36,26 @@ trait SchemaRouterNat extends StObject {
     * to the nearest power of 2. Eg. if the value of this field is 50, at least
     * 64 ports will be allocated to a VM.
     */
-  var minPortsPerVm: js.UndefOr[Double] = js.native
+  var minPortsPerVm: js.UndefOr[Double] = js.undefined
   
   /**
     * Unique name of this Nat service. The name must be 1-63 characters long
     * and comply with RFC1035.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the NatIpAllocateOption. If it is AUTO_ONLY, then nat_ip should
     * be empty.
     */
-  var natIpAllocateOption: js.UndefOr[String] = js.native
+  var natIpAllocateOption: js.UndefOr[String] = js.undefined
   
   /**
     * A list of URLs of the IP resources used for this Nat service. These IPs
     * must be valid static external IP addresses assigned to the project.
     * max_length is subject to change post alpha.
     */
-  var natIps: js.UndefOr[js.Array[String]] = js.native
+  var natIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify the Nat option. If this field contains
@@ -65,31 +63,31 @@ trait SchemaRouterNat extends StObject {
     * then there should not be any other Router.Nat section in any Router for
     * this network in this region.
     */
-  var sourceSubnetworkIpRangesToNat: js.UndefOr[String] = js.native
+  var sourceSubnetworkIpRangesToNat: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Subnetwork resources whose traffic should be translated by NAT
     * Gateway. It is used only when LIST_OF_SUBNETWORKS is selected for the
     * SubnetworkIpRangeToNatOption above.
     */
-  var subnetworks: js.UndefOr[js.Array[SchemaRouterNatSubnetworkToNat]] = js.native
+  var subnetworks: js.UndefOr[js.Array[SchemaRouterNatSubnetworkToNat]] = js.undefined
   
   /**
     * Timeout (in seconds) for TCP established connections. Defaults to 1200s
     * if not set.
     */
-  var tcpEstablishedIdleTimeoutSec: js.UndefOr[Double] = js.native
+  var tcpEstablishedIdleTimeoutSec: js.UndefOr[Double] = js.undefined
   
   /**
     * Timeout (in seconds) for TCP transitory connections. Defaults to 30s if
     * not set.
     */
-  var tcpTransitoryIdleTimeoutSec: js.UndefOr[Double] = js.native
+  var tcpTransitoryIdleTimeoutSec: js.UndefOr[Double] = js.undefined
   
   /**
     * Timeout (in seconds) for UDP connections. Defaults to 30s if not set.
     */
-  var udpIdleTimeoutSec: js.UndefOr[Double] = js.native
+  var udpIdleTimeoutSec: js.UndefOr[Double] = js.undefined
 }
 object SchemaRouterNat {
   

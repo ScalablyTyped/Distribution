@@ -4,7 +4,6 @@ import typings.ionicCore.mod.Color
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -57,19 +56,19 @@ trait IonContent extends StObject {
     * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
     */
   def scrollToPoint(): js.Promise[Unit] = js.native
-  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
-  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double): js.Promise[Unit] = js.native
-  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): js.Promise[Unit] = js.native
-  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Null, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double): js.Promise[Unit] = js.native
-  def scrollToPoint(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Double, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Null, duration: Double): js.Promise[Unit] = js.native
-  def scrollToPoint(x: Null, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Double, y: Unit, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Double, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Null, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Null, y: Unit, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Unit, y: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Unit, y: Double, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Unit, y: Null, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Unit, y: Unit, duration: Double): js.Promise[Unit] = js.native
   
   /**
     * Scroll to the top of the component.

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Effects
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video effect definition. */
-@js.native
 trait VideoEffectDefinition extends StObject {
   
   /** Gets the activatable class ID of the video effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets the set of properties for configuring the VideoEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object VideoEffectDefinition {
   

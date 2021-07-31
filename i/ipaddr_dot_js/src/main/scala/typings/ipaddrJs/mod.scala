@@ -5,14 +5,19 @@ import typings.ipaddrJs.ipaddrJsStrings.ipv4
 import typings.ipaddrJs.ipaddrJsStrings.ipv6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("ipaddr.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ipaddr.js", "IPv4")
   @js.native
-  class IPv4 protected () extends IP {
+  class IPv4 protected ()
+    extends StObject
+       with IP {
     def this(octets: js.Array[Double]) = this()
     
     def kind(): ipv4 = js.native
@@ -22,52 +27,59 @@ object mod {
     
     var octets: js.Array[Double] = js.native
     
+    /* CompleteClass */
+    override def prefixLengthFromSubnetMask(): Double | Null = js.native
+    
     def range(): IPv4Range = js.native
     
     def subnetMatch(rangeList: RangeList[IPv4]): String = js.native
     def subnetMatch(rangeList: RangeList[IPv4], defaultName: String): String = js.native
     
+    /* CompleteClass */
+    override def toByteArray(): js.Array[Double] = js.native
+    
     def toIPv4MappedAddress(): IPv6 = js.native
+    
+    /* CompleteClass */
+    override def toNormalizedString(): String = js.native
   }
   /* static members */
   object IPv4 {
     
-    @JSImport("ipaddr.js", "IPv4.broadcastAddressFromCIDR")
+    @JSImport("ipaddr.js", "IPv4")
     @js.native
-    def broadcastAddressFromCIDR(addr: String): IPv4 = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ipaddr.js", "IPv4.isIPv4")
-    @js.native
-    def isIPv4(addr: String): Boolean = js.native
+    @scala.inline
+    def broadcastAddressFromCIDR(addr: String): IPv4 = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastAddressFromCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv4]
     
-    @JSImport("ipaddr.js", "IPv4.isValid")
-    @js.native
-    def isValid(addr: String): Boolean = js.native
+    @scala.inline
+    def isIPv4(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ipaddr.js", "IPv4.isValidFourPartDecimal")
-    @js.native
-    def isValidFourPartDecimal(addr: String): Boolean = js.native
+    @scala.inline
+    def isValid(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ipaddr.js", "IPv4.networkAddressFromCIDR")
-    @js.native
-    def networkAddressFromCIDR(addr: String): IPv4 = js.native
+    @scala.inline
+    def isValidFourPartDecimal(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFourPartDecimal")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ipaddr.js", "IPv4.parse")
-    @js.native
-    def parse(addr: String): IPv4 = js.native
+    @scala.inline
+    def networkAddressFromCIDR(addr: String): IPv4 = ^.asInstanceOf[js.Dynamic].applyDynamic("networkAddressFromCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv4]
     
-    @JSImport("ipaddr.js", "IPv4.parseCIDR")
-    @js.native
-    def parseCIDR(addr: String): js.Tuple2[IPv4, Double] = js.native
+    @scala.inline
+    def parse(addr: String): IPv4 = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv4]
     
-    @JSImport("ipaddr.js", "IPv4.subnetMaskFromPrefixLength")
-    @js.native
-    def subnetMaskFromPrefixLength(prefix: Double): IPv4 = js.native
+    @scala.inline
+    def parseCIDR(addr: String): js.Tuple2[IPv4, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[IPv4, Double]]
+    
+    @scala.inline
+    def subnetMaskFromPrefixLength(prefix: Double): IPv4 = ^.asInstanceOf[js.Dynamic].applyDynamic("subnetMaskFromPrefixLength")(prefix.asInstanceOf[js.Any]).asInstanceOf[IPv4]
   }
   
   @JSImport("ipaddr.js", "IPv6")
   @js.native
-  class IPv6 protected () extends IP {
+  class IPv6 protected ()
+    extends StObject
+       with IP {
     def this(parts: js.Array[Double]) = this()
     
     def isIPv4MappedAddress(): Boolean = js.native
@@ -79,85 +91,82 @@ object mod {
     
     var parts: js.Array[Double] = js.native
     
+    /* CompleteClass */
+    override def prefixLengthFromSubnetMask(): Double | Null = js.native
+    
     def range(): IPv6Range = js.native
     
     def subnetMatch(rangeList: RangeList[IPv6]): String = js.native
     def subnetMatch(rangeList: RangeList[IPv6], defaultName: String): String = js.native
     
+    /* CompleteClass */
+    override def toByteArray(): js.Array[Double] = js.native
+    
     def toIPv4Address(): IPv4 = js.native
+    
+    /* CompleteClass */
+    override def toNormalizedString(): String = js.native
     
     var zoneId: js.UndefOr[String] = js.native
   }
   /* static members */
   object IPv6 {
     
-    @JSImport("ipaddr.js", "IPv6.broadcastAddressFromCIDR")
+    @JSImport("ipaddr.js", "IPv6")
     @js.native
-    def broadcastAddressFromCIDR(addr: String): IPv6 = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ipaddr.js", "IPv6.isIPv6")
-    @js.native
-    def isIPv6(addr: String): Boolean = js.native
+    @scala.inline
+    def broadcastAddressFromCIDR(addr: String): IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastAddressFromCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv6]
     
-    @JSImport("ipaddr.js", "IPv6.isValid")
-    @js.native
-    def isValid(addr: String): Boolean = js.native
+    @scala.inline
+    def isIPv6(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ipaddr.js", "IPv6.parse")
-    @js.native
-    def parse(addr: String): IPv6 = js.native
+    @scala.inline
+    def isValid(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("ipaddr.js", "IPv6.parseCIDR")
-    @js.native
-    def parseCIDR(addr: String): js.Tuple2[IPv6, Double] = js.native
+    @scala.inline
+    def parse(addr: String): IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv6]
     
-    @JSImport("ipaddr.js", "IPv6.subnetMaskFromPrefixLength")
-    @js.native
-    def subnetMaskFromPrefixLength(prefix: Double): IPv6 = js.native
+    @scala.inline
+    def parseCIDR(addr: String): js.Tuple2[IPv6, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[IPv6, Double]]
+    
+    @scala.inline
+    def subnetMaskFromPrefixLength(prefix: Double): IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("subnetMaskFromPrefixLength")(prefix.asInstanceOf[js.Any]).asInstanceOf[IPv6]
   }
   
-  @JSImport("ipaddr.js", "fromByteArray")
-  @js.native
-  def fromByteArray(bytes: js.Array[Double]): IPv4 | IPv6 = js.native
+  @scala.inline
+  def fromByteArray(bytes: js.Array[Double]): IPv4 | IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[IPv4 | IPv6]
   
-  @JSImport("ipaddr.js", "isValid")
-  @js.native
-  def isValid(addr: String): Boolean = js.native
+  @scala.inline
+  def isValid(addr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ipaddr.js", "parse")
-  @js.native
-  def parse(addr: String): IPv4 | IPv6 = js.native
+  @scala.inline
+  def parse(addr: String): IPv4 | IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv4 | IPv6]
   
-  @JSImport("ipaddr.js", "parseCIDR")
-  @js.native
-  def parseCIDR(mask: String): js.Tuple2[IPv4 | IPv6, Double] = js.native
+  @scala.inline
+  def parseCIDR(mask: String): js.Tuple2[IPv4 | IPv6, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCIDR")(mask.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[IPv4 | IPv6, Double]]
   
-  @JSImport("ipaddr.js", "process")
-  @js.native
-  def process(addr: String): IPv4 | IPv6 = js.native
+  @scala.inline
+  def process(addr: String): IPv4 | IPv6 = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(addr.asInstanceOf[js.Any]).asInstanceOf[IPv4 | IPv6]
   
-  @JSImport("ipaddr.js", "subnetMatch")
-  @js.native
-  def subnetMatch(addr: IPv4, rangeList: RangeList[IPv4]): String = js.native
-  @JSImport("ipaddr.js", "subnetMatch")
-  @js.native
-  def subnetMatch(addr: IPv4, rangeList: RangeList[IPv4], defaultName: String): String = js.native
-  @JSImport("ipaddr.js", "subnetMatch")
-  @js.native
-  def subnetMatch(addr: IPv6, rangeList: RangeList[IPv6]): String = js.native
-  @JSImport("ipaddr.js", "subnetMatch")
-  @js.native
-  def subnetMatch(addr: IPv6, rangeList: RangeList[IPv6], defaultName: String): String = js.native
+  @scala.inline
+  def subnetMatch(addr: IPv4, rangeList: RangeList[IPv4]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subnetMatch")(addr.asInstanceOf[js.Any], rangeList.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def subnetMatch(addr: IPv4, rangeList: RangeList[IPv4], defaultName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subnetMatch")(addr.asInstanceOf[js.Any], rangeList.asInstanceOf[js.Any], defaultName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def subnetMatch(addr: IPv6, rangeList: RangeList[IPv6]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subnetMatch")(addr.asInstanceOf[js.Any], rangeList.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def subnetMatch(addr: IPv6, rangeList: RangeList[IPv6], defaultName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subnetMatch")(addr.asInstanceOf[js.Any], rangeList.asInstanceOf[js.Any], defaultName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   // Common methods/properties for IPv4 and IPv6 classes.
-  @js.native
   trait IP extends StObject {
     
-    def prefixLengthFromSubnetMask(): Double | Null = js.native
+    def prefixLengthFromSubnetMask(): Double | Null
     
-    def toByteArray(): js.Array[Double] = js.native
+    def toByteArray(): js.Array[Double]
     
-    def toNormalizedString(): String = js.native
+    def toNormalizedString(): String
   }
   object IP {
     

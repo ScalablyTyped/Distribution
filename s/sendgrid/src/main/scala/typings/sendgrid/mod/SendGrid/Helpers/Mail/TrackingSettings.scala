@@ -3,29 +3,27 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Clicktracking
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackingSettings extends StObject {
   
-  def getClickTracking(): ClickTracking = js.native
+  def getClickTracking(): ClickTracking
   
-  def getGanalytics(): Ganalytics = js.native
+  def getGanalytics(): Ganalytics
   
-  def getOpenTracking(): OpenTracking = js.native
+  def getOpenTracking(): OpenTracking
   
-  def getSubscriptionTracking(): SubscriptionTracking = js.native
+  def getSubscriptionTracking(): SubscriptionTracking
   
-  def setClickTracking(value: ClickTracking): Unit = js.native
+  def setClickTracking(value: ClickTracking): Unit
   
-  def setGanalytics(value: Ganalytics): Unit = js.native
+  def setGanalytics(value: Ganalytics): Unit
   
-  def setOpenTracking(value: OpenTracking): Unit = js.native
+  def setOpenTracking(value: OpenTracking): Unit
   
-  def setSubscriptionTracking(value: SubscriptionTracking): Unit = js.native
+  def setSubscriptionTracking(value: SubscriptionTracking): Unit
   
-  def toJSON(): Clicktracking = js.native
+  def toJSON(): Clicktracking
 }
 object TrackingSettings {
   

@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the styling of all paragraphs that overlap with the given range.
   */
-@js.native
 trait SchemaUpdateParagraphStyleRequest extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait SchemaUpdateParagraphStyleRequest extends StObject {
     * value, include its field name in the field mask but leave the field
     * itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The styles to set on the paragraphs.  Certain paragraph style changes may
     * cause other changes in order to mirror the behavior of the Docs editor.
     * See the documentation of ParagraphStyle for more information.
     */
-  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.native
+  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.undefined
   
   /**
     * The range overlapping the paragraphs to style.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaUpdateParagraphStyleRequest {
   

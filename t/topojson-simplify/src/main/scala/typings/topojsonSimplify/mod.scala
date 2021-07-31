@@ -6,86 +6,62 @@ import typings.topojsonSpecification.mod.Properties
 import typings.topojsonSpecification.mod.Topology
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("topojson-simplify", "filter")
+  @JSImport("topojson-simplify", JSImport.Namespace)
   @js.native
-  def filter[K /* <: Objects[js.Object] */](topology: Topology[K], filter: Filter_): Topology[OrNull[K]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("topojson-simplify", "filterAttached")
-  @js.native
-  def filterAttached(topology: Topology[Objects[Properties]]): Filter_ = js.native
+  @scala.inline
+  def filter[K /* <: Objects[js.Object] */](topology: Topology[K], filter: Filter_): Topology[OrNull[K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(topology.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Topology[OrNull[K]]]
   
-  @JSImport("topojson-simplify", "filterAttachedWeight")
-  @js.native
-  def filterAttachedWeight(topology: Topology[Objects[Properties]]): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterAttachedWeight")
-  @js.native
-  def filterAttachedWeight(
-    topology: Topology[Objects[Properties]],
-    minWeight: js.UndefOr[scala.Nothing],
-    weight: RingWeighter
-  ): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterAttachedWeight")
-  @js.native
-  def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterAttachedWeight")
-  @js.native
-  def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = js.native
+  @scala.inline
+  def filterAttached(topology: Topology[Objects[Properties]]): Filter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("filterAttached")(topology.asInstanceOf[js.Any]).asInstanceOf[Filter_]
   
-  @JSImport("topojson-simplify", "filterWeight")
-  @js.native
-  def filterWeight(topology: Topology[Objects[Properties]]): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterWeight")
-  @js.native
-  def filterWeight(
-    topology: Topology[Objects[Properties]],
-    minWeight: js.UndefOr[scala.Nothing],
-    weight: RingWeighter
-  ): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterWeight")
-  @js.native
-  def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = js.native
-  @JSImport("topojson-simplify", "filterWeight")
-  @js.native
-  def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = js.native
+  @scala.inline
+  def filterAttachedWeight(topology: Topology[Objects[Properties]]): Filter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("filterAttachedWeight")(topology.asInstanceOf[js.Any]).asInstanceOf[Filter_]
+  @scala.inline
+  def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterAttachedWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
+  @scala.inline
+  def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterAttachedWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any], weight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
+  @scala.inline
+  def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Unit, weight: RingWeighter): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterAttachedWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any], weight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
   
-  @JSImport("topojson-simplify", "planarRingArea")
-  @js.native
-  def planarRingArea(ring: Ring): Double = js.native
+  @scala.inline
+  def filterWeight(topology: Topology[Objects[Properties]]): Filter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWeight")(topology.asInstanceOf[js.Any]).asInstanceOf[Filter_]
+  @scala.inline
+  def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
+  @scala.inline
+  def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any], weight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
+  @scala.inline
+  def filterWeight(topology: Topology[Objects[Properties]], minWeight: Unit, weight: RingWeighter): Filter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("filterWeight")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any], weight.asInstanceOf[js.Any])).asInstanceOf[Filter_]
   
-  @JSImport("topojson-simplify", "planarTriangleArea")
-  @js.native
-  def planarTriangleArea(triangle: Triangle): Double = js.native
+  @scala.inline
+  def planarRingArea(ring: Ring): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("planarRingArea")(ring.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("topojson-simplify", "presimplify")
-  @js.native
-  def presimplify[T /* <: Objects[js.Object] */](topology: Topology[T]): Topology[T] = js.native
-  @JSImport("topojson-simplify", "presimplify")
-  @js.native
-  def presimplify[T /* <: Objects[js.Object] */](topology: Topology[T], weight: TriangleWeighter): Topology[T] = js.native
+  @scala.inline
+  def planarTriangleArea(triangle: Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("planarTriangleArea")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("topojson-simplify", "quantile")
-  @js.native
-  def quantile(topology: Topology[Objects[Properties]], p: Double): Double = js.native
+  @scala.inline
+  def presimplify[T /* <: Objects[js.Object] */](topology: Topology[T]): Topology[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("presimplify")(topology.asInstanceOf[js.Any]).asInstanceOf[Topology[T]]
+  @scala.inline
+  def presimplify[T /* <: Objects[js.Object] */](topology: Topology[T], weight: TriangleWeighter): Topology[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("presimplify")(topology.asInstanceOf[js.Any], weight.asInstanceOf[js.Any])).asInstanceOf[Topology[T]]
   
-  @JSImport("topojson-simplify", "simplify")
-  @js.native
-  def simplify[T /* <: Objects[js.Object] */](topology: Topology[T]): Topology[T] = js.native
-  @JSImport("topojson-simplify", "simplify")
-  @js.native
-  def simplify[T /* <: Objects[js.Object] */](topology: Topology[T], minWeight: Double): Topology[T] = js.native
+  @scala.inline
+  def quantile(topology: Topology[Objects[Properties]], p: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(topology.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("topojson-simplify", "sphericalRingArea")
-  @js.native
-  def sphericalRingArea(ring: Ring, interior: Boolean): Double = js.native
+  @scala.inline
+  def simplify[T /* <: Objects[js.Object] */](topology: Topology[T]): Topology[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(topology.asInstanceOf[js.Any]).asInstanceOf[Topology[T]]
+  @scala.inline
+  def simplify[T /* <: Objects[js.Object] */](topology: Topology[T], minWeight: Double): Topology[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(topology.asInstanceOf[js.Any], minWeight.asInstanceOf[js.Any])).asInstanceOf[Topology[T]]
   
-  @JSImport("topojson-simplify", "sphericalTriangleArea")
-  @js.native
-  def sphericalTriangleArea(triangle: Triangle): Double = js.native
+  @scala.inline
+  def sphericalRingArea(ring: Ring, interior: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sphericalRingArea")(ring.asInstanceOf[js.Any], interior.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def sphericalTriangleArea(triangle: Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sphericalTriangleArea")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Filter_ = js.Function2[/* ring */ Ring, /* interior */ Boolean, Boolean]
   

@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageScrollToOptions extends StObject {
   
   /**
     * 滚动动画的时长
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 滚动到页面的目标位置
     */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
 }
 object PageScrollToOptions {
   

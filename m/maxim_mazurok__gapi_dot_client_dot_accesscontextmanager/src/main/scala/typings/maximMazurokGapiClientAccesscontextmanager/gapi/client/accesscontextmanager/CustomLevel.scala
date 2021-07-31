@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLevel extends StObject {
   
   /** Required. A Cloud CEL expression evaluating to a boolean. */
-  var expr: js.UndefOr[Expr] = js.native
+  var expr: js.UndefOr[Expr] = js.undefined
 }
 object CustomLevel {
   

@@ -2,34 +2,32 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAccountManagementGranularInformation extends StObject {
   
   /**
     * **True** if the user can manage account security settings.
     */
-  var canManageAccountSecuritySettings: js.UndefOr[String] = js.native
+  var canManageAccountSecuritySettings: js.UndefOr[String] = js.undefined
   
   var canManageAccountSecuritySettingsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage account settings.
     */
-  var canManageAccountSettings: js.UndefOr[String] = js.native
+  var canManageAccountSettings: js.UndefOr[String] = js.undefined
   
   var canManageAccountSettingsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage administrators.
     */
-  var canManageAdmins: js.UndefOr[String] = js.native
+  var canManageAdmins: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `canManageAdmins` property is editable.
@@ -37,21 +35,21 @@ trait UserAccountManagementGranularInformation extends StObject {
     */
   var canManageAdminsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage reporting.
     */
-  var canManageReporting: js.UndefOr[String] = js.native
+  var canManageReporting: js.UndefOr[String] = js.undefined
   
   var canManageReportingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage sharing.
     */
-  var canManageSharing: js.UndefOr[String] = js.native
+  var canManageSharing: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `canManageSharing` property is editable.
@@ -59,21 +57,21 @@ trait UserAccountManagementGranularInformation extends StObject {
     */
   var canManageSharingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage signing groups.
     */
-  var canManageSigningGroups: js.UndefOr[String] = js.native
+  var canManageSigningGroups: js.UndefOr[String] = js.undefined
   
   var canManageSigningGroupsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * **True** if the user can manage users.
     */
-  var canManageUsers: js.UndefOr[String] = js.native
+  var canManageUsers: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `canManageUsers` property is editable.
@@ -81,7 +79,7 @@ trait UserAccountManagementGranularInformation extends StObject {
     */
   var canManageUsersMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object UserAccountManagementGranularInformation {
   

@@ -11,12 +11,14 @@ The lodash method `_.difference` exported as a module.
 | Full name          | lodash.difference |
 | Keywords           | lodash-modularized, difference |
 | # releases         | 0 |
-| # dependents       | 236 |
-| # downloads        | 81566838 |
+| # dependents       | 244 |
+| # downloads        | 112468185 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.difference)
     
 

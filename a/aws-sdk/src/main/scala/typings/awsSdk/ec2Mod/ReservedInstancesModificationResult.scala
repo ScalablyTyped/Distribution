@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstancesModificationResult extends StObject {
   
   /**
     * The ID for the Reserved Instances that were created as part of the modification request. This field is only available when the modification is fulfilled.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[String] = js.undefined
   
   /**
     * The target Reserved Instances configurations supplied as part of the modification request.
     */
-  var TargetConfiguration: js.UndefOr[ReservedInstancesConfiguration] = js.native
+  var TargetConfiguration: js.UndefOr[ReservedInstancesConfiguration] = js.undefined
 }
 object ReservedInstancesModificationResult {
   

@@ -3,15 +3,13 @@ package typings.pkcs11js.Pkcs11Js
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var value: js.UndefOr[Double | Boolean | String | Buffer] = js.native
+  var value: js.UndefOr[Double | Boolean | String | Buffer] = js.undefined
 }
 object Attribute {
   

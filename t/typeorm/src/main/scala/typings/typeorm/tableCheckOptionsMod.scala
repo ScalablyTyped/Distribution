@@ -2,28 +2,26 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCheckOptionsMod {
   
-  @js.native
   trait TableCheckOptions extends StObject {
     
     /**
       * Column that contains this constraint.
       */
-    var columnNames: js.UndefOr[js.Array[String]] = js.native
+    var columnNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Check expression.
       */
-    var expression: js.UndefOr[String] = js.native
+    var expression: js.UndefOr[String] = js.undefined
     
     /**
       * Constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object TableCheckOptions {
     

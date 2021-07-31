@@ -2,19 +2,19 @@ package typings.twit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Options extends ConfigKeys {
+trait Options
+  extends StObject
+     with ConfigKeys {
   
-  var app_only_auth: js.UndefOr[Boolean] = js.native
+  var app_only_auth: js.UndefOr[Boolean] = js.undefined
   
-  var strictSSL: js.UndefOr[Boolean] = js.native
+  var strictSSL: js.UndefOr[Boolean] = js.undefined
   
-  var timeout_ms: js.UndefOr[Double] = js.native
+  var timeout_ms: js.UndefOr[Double] = js.undefined
   
-  var trusted_cert_fingerprints: js.UndefOr[js.Array[String]] = js.native
+  var trusted_cert_fingerprints: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Options {
   

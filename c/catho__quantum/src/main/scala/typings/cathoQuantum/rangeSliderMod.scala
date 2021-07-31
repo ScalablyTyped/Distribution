@@ -15,7 +15,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeSliderMod {
@@ -27,38 +26,37 @@ object rangeSliderMod {
   
   type RangeSlider = Component[RangeSliderProps, js.Object, js.Any]
   
-  @js.native
   trait RangeSliderProps extends StObject {
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[Double | From] = js.native
+    var defaultValue: js.UndefOr[Double | From] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var marks: js.UndefOr[js.Array[LabelValue]] = js.native
+    var marks: js.UndefOr[js.Array[LabelValue]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChangeCommitted: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChangeCommitted: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSizeColors] = js.native
+    var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
     
     var tipFormatter: js.UndefOr[
         js.Function2[/* value */ js.UndefOr[Double], /* index */ js.UndefOr[Double], String]
-      ] = js.native
+      ] = js.undefined
     
-    var track: js.UndefOr[normal | `false` | inverted] = js.native
+    var track: js.UndefOr[normal | `false` | inverted] = js.undefined
     
-    var value: js.UndefOr[Double | From] = js.native
+    var value: js.UndefOr[Double | From] = js.undefined
     
-    var valueLabelDisplay: js.UndefOr[auto | on | off] = js.native
+    var valueLabelDisplay: js.UndefOr[auto | on | off] = js.undefined
   }
   object RangeSliderProps {
     

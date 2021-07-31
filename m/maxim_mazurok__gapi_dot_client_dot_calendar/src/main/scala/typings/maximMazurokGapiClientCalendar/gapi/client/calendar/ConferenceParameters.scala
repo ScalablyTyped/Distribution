@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceParameters extends StObject {
   
   /** Additional add-on specific data. */
-  var addOnParameters: js.UndefOr[ConferenceParametersAddOnParameters] = js.native
+  var addOnParameters: js.UndefOr[ConferenceParametersAddOnParameters] = js.undefined
 }
 object ConferenceParameters {
   

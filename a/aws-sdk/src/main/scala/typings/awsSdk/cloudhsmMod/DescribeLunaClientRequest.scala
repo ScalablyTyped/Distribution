@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLunaClientRequest extends StObject {
   
   /**
     * The certificate fingerprint.
     */
-  var CertificateFingerprint: js.UndefOr[typings.awsSdk.cloudhsmMod.CertificateFingerprint] = js.native
+  var CertificateFingerprint: js.UndefOr[typings.awsSdk.cloudhsmMod.CertificateFingerprint] = js.undefined
   
   /**
     * The ARN of the client.
     */
-  var ClientArn: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientArn] = js.native
+  var ClientArn: js.UndefOr[typings.awsSdk.cloudhsmMod.ClientArn] = js.undefined
 }
 object DescribeLunaClientRequest {
   

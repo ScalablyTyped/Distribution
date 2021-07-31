@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimePickerOptions extends StObject {
   
-  var ARIATemplate: js.UndefOr[String] = js.native
+  var ARIATemplate: js.UndefOr[String] = js.undefined
   
-  var animation: js.UndefOr[Boolean | DateTimePickerAnimation] = js.native
+  var animation: js.UndefOr[Boolean | DateTimePickerAnimation] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ DateTimePickerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DateTimePickerChangeEvent, Unit]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ DateTimePickerCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ DateTimePickerCloseEvent, Unit]] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var dateInput: js.UndefOr[Boolean] = js.native
+  var dateInput: js.UndefOr[Boolean] = js.undefined
   
-  var dates: js.UndefOr[js.Any] = js.native
+  var dates: js.UndefOr[js.Any] = js.undefined
   
-  var depth: js.UndefOr[String] = js.native
+  var depth: js.UndefOr[String] = js.undefined
   
-  var disableDates: js.UndefOr[js.Any | js.Function] = js.native
+  var disableDates: js.UndefOr[js.Any | js.Function] = js.undefined
   
-  var footer: js.UndefOr[Boolean | String | js.Function] = js.native
+  var footer: js.UndefOr[Boolean | String | js.Function] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Date] = js.native
+  var max: js.UndefOr[Date] = js.undefined
   
-  var min: js.UndefOr[Date] = js.native
+  var min: js.UndefOr[Date] = js.undefined
   
-  var month: js.UndefOr[DateTimePickerMonth] = js.native
+  var month: js.UndefOr[DateTimePickerMonth] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ DateTimePickerOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ DateTimePickerOpenEvent, Unit]] = js.undefined
   
-  var parseFormats: js.UndefOr[js.Any] = js.native
+  var parseFormats: js.UndefOr[js.Any] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var timeFormat: js.UndefOr[String] = js.native
+  var timeFormat: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Date] = js.native
+  var value: js.UndefOr[Date] = js.undefined
   
-  var weekNumber: js.UndefOr[Boolean] = js.native
+  var weekNumber: js.UndefOr[Boolean] = js.undefined
 }
 object DateTimePickerOptions {
   

@@ -2,8 +2,6 @@ package typings.storybookClientApi
 
 import typings.std.Record
 import typings.storybookAddons.typesMod.Args
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.LoaderFunction
 import typings.storybookAddons.typesMod.Parameters
 import typings.storybookAddons.typesMod.StoryKind
 import typings.storybookClientApi.anon.Channel
@@ -23,21 +21,21 @@ import typings.storybookClientApi.typesMod.StoreSelectionSpecifier
 import typings.storybookClientApi.typesMod.StoryMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyStoreMod {
   
   @JSImport("@storybook/client-api/dist/story_store", JSImport.Default)
   @js.native
-  class default protected () extends StoryStore {
+  class default protected ()
+    extends StObject
+       with StoryStore {
     def this(params: Channel) = this()
   }
   
-  @js.native
   trait AllowUnsafeOption extends StObject {
     
-    var allowUnsafe: js.UndefOr[Boolean] = js.native
+    var allowUnsafe: js.UndefOr[Boolean] = js.undefined
   }
   object AllowUnsafeOption {
     
@@ -58,17 +56,11 @@ object storyStoreMod {
     }
   }
   
-  /* Inlined @storybook/client-api.@storybook/client-api/dist/types.StoryMetadata & {  order :number} */
-  @js.native
-  trait KindMetadata extends StObject {
+  trait KindMetadata
+    extends StObject
+       with StoryMetadata {
     
-    var decorators: js.UndefOr[js.Array[DecoratorFunction[_]]] = js.native
-    
-    var loaders: js.UndefOr[js.Array[LoaderFunction]] = js.native
-    
-    var order: Double = js.native
-    
-    var parameters: js.UndefOr[Parameters] = js.native
+    var order: Double
   }
   object KindMetadata {
     
@@ -82,38 +74,13 @@ object storyStoreMod {
     implicit class KindMetadataMutableBuilder[Self <: KindMetadata] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDecorators(value: js.Array[DecoratorFunction[_]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
-      
-      @scala.inline
-      def setDecoratorsVarargs(value: DecoratorFunction[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
-      
-      @scala.inline
-      def setLoaders(value: js.Array[LoaderFunction]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
-      
-      @scala.inline
-      def setLoadersVarargs(value: LoaderFunction*): Self = StObject.set(x, "loaders", js.Array(value :_*))
-      
-      @scala.inline
       def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
   
-  @js.native
   trait StoryOptions extends StObject {
     
-    var includeDocsOnly: js.UndefOr[Boolean] = js.native
+    var includeDocsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object StoryOptions {
     
@@ -164,7 +131,7 @@ object storyStoreMod {
     def addKindMetadata(kind: String, hasParametersDecoratorsLoaders: StoryMetadata): Unit = js.native
     
     def addStory(
-      hasIdKindNameStoryFnParametersDecoratorsLoaders: AddStoryArgs,
+      hasIdKindNameOriginalStoryParametersStoryDecoratorsStoryLoaders: AddStoryArgs,
       hasApplyDecoratorsAllowUnsafe: applyDecoratorsfnLegacySt
     ): Unit = js.native
     

@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`. */
-@js.native
 trait ChartLegendFormatUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartLegendFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var border: js.UndefOr[ChartBorderUpdateData] = js.native
+  var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ChartLegendFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[ChartFontUpdateData] = js.native
+  var font: js.UndefOr[ChartFontUpdateData] = js.undefined
 }
 object ChartLegendFormatUpdateData {
   

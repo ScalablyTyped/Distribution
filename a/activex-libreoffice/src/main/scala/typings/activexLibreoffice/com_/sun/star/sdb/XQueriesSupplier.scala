@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a container of database queries. */
-@js.native
-trait XQueriesSupplier extends XInterface {
+trait XQueriesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of queries.
@@ -18,7 +18,7 @@ trait XQueriesSupplier extends XInterface {
     * The single elements of the container support the {@link Query} service.
     * @returns the queries belonging to database connection at which the {@link XQueriesSupplier} interface is exposed.
     */
-  val Queries: XNameAccess = js.native
+  val Queries: XNameAccess
   
   /**
     * returns the container of queries.
@@ -26,7 +26,7 @@ trait XQueriesSupplier extends XInterface {
     * The single elements of the container support the {@link Query} service.
     * @returns the queries belonging to database connection at which the {@link XQueriesSupplier} interface is exposed.
     */
-  def getQueries(): XNameAccess = js.native
+  def getQueries(): XNameAccess
 }
 object XQueriesSupplier {
   

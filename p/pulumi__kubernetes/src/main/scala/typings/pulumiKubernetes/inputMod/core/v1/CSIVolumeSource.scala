@@ -4,39 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a source location of a volume to mount, managed by an external CSI driver
   */
-@js.native
 trait CSIVolumeSource extends StObject {
   
   /**
     * Driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.
     */
-  var driver: Input[String] = js.native
+  var driver: Input[String]
   
   /**
     * Filesystem type to mount. Ex. "ext4", "xfs", "ntfs". If not provided, the empty value is passed to the associated CSI driver which will determine the default filesystem to apply.
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * NodePublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume calls. This field is optional, and  may be empty if no secret is required. If the secret object contains more than one secret, all secret references are passed.
     */
-  var nodePublishSecretRef: js.UndefOr[Input[LocalObjectReference]] = js.native
+  var nodePublishSecretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
   
   /**
     * Specifies a read-only configuration for the volume. Defaults to false (read/write).
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * VolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values.
     */
-  var volumeAttributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var volumeAttributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object CSIVolumeSource {
   

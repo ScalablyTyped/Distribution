@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidRoboTest extends StObject {
   
   /** The initial activity that should be used to start the app. Optional */
-  var appInitialActivity: js.UndefOr[String] = js.native
+  var appInitialActivity: js.UndefOr[String] = js.undefined
   
   /** The java package for the bootstrap. Optional */
-  var bootstrapPackageId: js.UndefOr[String] = js.native
+  var bootstrapPackageId: js.UndefOr[String] = js.undefined
   
   /** The runner class for the bootstrap. Optional */
-  var bootstrapRunnerClass: js.UndefOr[String] = js.native
+  var bootstrapRunnerClass: js.UndefOr[String] = js.undefined
   
   /** The max depth of the traversal stack Robo can explore. Optional */
-  var maxDepth: js.UndefOr[Double] = js.native
+  var maxDepth: js.UndefOr[Double] = js.undefined
   
   /** The max number of steps/actions Robo can execute. Default is no limit (0). Optional */
-  var maxSteps: js.UndefOr[Double] = js.native
+  var maxSteps: js.UndefOr[Double] = js.undefined
 }
 object AndroidRoboTest {
   

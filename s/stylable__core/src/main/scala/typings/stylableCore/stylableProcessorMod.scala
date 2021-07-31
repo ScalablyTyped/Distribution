@@ -19,10 +19,13 @@ import typings.stylableCore.stylableMetaMod.KeyframesSymbol
 import typings.stylableCore.stylableMetaMod.RefedMixin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableProcessorMod {
+  
+  @JSImport("@stylable/core/cjs/stylable-processor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/core/cjs/stylable-processor", "RESERVED_ROOT_NAME")
   @js.native
@@ -40,7 +43,7 @@ object stylableProcessorMod {
   class StylableProcessor () extends StObject {
     def this(diagnostics: Diagnostics) = this()
     def this(
-      diagnostics: js.UndefOr[scala.Nothing],
+      diagnostics: Unit,
       resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
     ) = this()
     def this(
@@ -101,162 +104,129 @@ object stylableProcessorMod {
     /* protected */ def setClassGlobalMapping(decl: Declaration, rule: Rule_): Unit = js.native
   }
   
-  @JSImport("@stylable/core/cjs/stylable-processor", "createEmptyMeta")
-  @js.native
-  def createEmptyMeta(root: Root_, diagnostics: Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
+  @scala.inline
+  def createEmptyMeta(root: Root_, diagnostics: Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyMeta")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
   
-  @JSImport("@stylable/core/cjs/stylable-processor", "process")
-  @js.native
-  def process(root: Root_): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core/cjs/stylable-processor", "process")
-  @js.native
+  @scala.inline
+  def process(root: Root_): typings.stylableCore.stylableMetaMod.StylableMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any]).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
   def process(
     root: Root_,
-    diagnostics: js.UndefOr[scala.Nothing],
+    diagnostics: Unit,
     resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
-  ): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core/cjs/stylable-processor", "process")
-  @js.native
-  def process(root: Root_, diagnostics: Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
-  @JSImport("@stylable/core/cjs/stylable-processor", "process")
-  @js.native
+  ): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
+  def process(root: Root_, diagnostics: Diagnostics): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
+  @scala.inline
   def process(
     root: Root_,
     diagnostics: Diagnostics,
     resolveNamespace: js.Function2[/* namespace */ String, /* source */ String, String]
-  ): typings.stylableCore.stylableMetaMod.StylableMeta = js.native
+  ): typings.stylableCore.stylableMetaMod.StylableMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], resolveNamespace.asInstanceOf[js.Any])).asInstanceOf[typings.stylableCore.stylableMetaMod.StylableMeta]
   
-  @JSImport("@stylable/core/cjs/stylable-processor", "processNamespace")
-  @js.native
-  def processNamespace(namespace: String, source: String): String = js.native
+  @scala.inline
+  def processNamespace(namespace: String, source: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processNamespace")(namespace.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object processorWarnings {
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.CANNOT_EXTEND_IN_COMPLEX")
+    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings")
     @js.native
-    def CANNOT_EXTEND_IN_COMPLEX(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.CANNOT_RESOLVE_EXTEND")
-    @js.native
-    def CANNOT_RESOLVE_EXTEND(name: String): String = js.native
+    @scala.inline
+    def CANNOT_EXTEND_IN_COMPLEX(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_EXTEND_IN_COMPLEX")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.DEFAULT_IMPORT_IS_LOWER_CASE")
-    @js.native
-    def DEFAULT_IMPORT_IS_LOWER_CASE(): String = js.native
+    @scala.inline
+    def CANNOT_RESOLVE_EXTEND(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_RESOLVE_EXTEND")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.EMPTY_IMPORT_FROM")
-    @js.native
-    def EMPTY_IMPORT_FROM(): String = js.native
+    @scala.inline
+    def DEFAULT_IMPORT_IS_LOWER_CASE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_IMPORT_IS_LOWER_CASE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.EMPTY_NAMESPACE_DEF")
-    @js.native
-    def EMPTY_NAMESPACE_DEF(): String = js.native
+    @scala.inline
+    def EMPTY_IMPORT_FROM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EMPTY_IMPORT_FROM")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.FORBIDDEN_DEF_IN_COMPLEX_SELECTOR")
-    @js.native
-    def FORBIDDEN_DEF_IN_COMPLEX_SELECTOR(name: String): String = js.native
+    @scala.inline
+    def EMPTY_NAMESPACE_DEF(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("EMPTY_NAMESPACE_DEF")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.FROM_PROP_MISSING_IN_IMPORT")
-    @js.native
-    def FROM_PROP_MISSING_IN_IMPORT(): String = js.native
+    @scala.inline
+    def FORBIDDEN_DEF_IN_COMPLEX_SELECTOR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FORBIDDEN_DEF_IN_COMPLEX_SELECTOR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.GLOBAL_CSS_VAR_MISSING_COMMA")
-    @js.native
-    def GLOBAL_CSS_VAR_MISSING_COMMA(name: String): String = js.native
+    @scala.inline
+    def FROM_PROP_MISSING_IN_IMPORT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FROM_PROP_MISSING_IN_IMPORT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.ILLEGAL_CSS_VAR_ARGS")
-    @js.native
-    def ILLEGAL_CSS_VAR_ARGS(name: String): String = js.native
+    @scala.inline
+    def GLOBAL_CSS_VAR_MISSING_COMMA(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GLOBAL_CSS_VAR_MISSING_COMMA")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.ILLEGAL_CSS_VAR_USE")
-    @js.native
-    def ILLEGAL_CSS_VAR_USE(name: String): String = js.native
+    @scala.inline
+    def ILLEGAL_CSS_VAR_ARGS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_CSS_VAR_ARGS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.ILLEGAL_GLOBAL_CSS_VAR")
-    @js.native
-    def ILLEGAL_GLOBAL_CSS_VAR(name: String): String = js.native
+    @scala.inline
+    def ILLEGAL_CSS_VAR_USE(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_CSS_VAR_USE")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.ILLEGAL_PROP_IN_IMPORT")
-    @js.native
-    def ILLEGAL_PROP_IN_IMPORT(propName: String): String = js.native
+    @scala.inline
+    def ILLEGAL_GLOBAL_CSS_VAR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_GLOBAL_CSS_VAR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.INVALID_NAMESPACE_DEF")
-    @js.native
-    def INVALID_NAMESPACE_DEF(): String = js.native
+    @scala.inline
+    def ILLEGAL_PROP_IN_IMPORT(propName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ILLEGAL_PROP_IN_IMPORT")(propName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.MISSING_SCOPING_PARAM")
-    @js.native
-    def MISSING_SCOPING_PARAM(): String = js.native
+    @scala.inline
+    def INVALID_NAMESPACE_DEF(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NAMESPACE_DEF")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.MULTIPLE_FROM_IN_IMPORT")
-    @js.native
-    def MULTIPLE_FROM_IN_IMPORT(): String = js.native
+    @scala.inline
+    def MISSING_SCOPING_PARAM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MISSING_SCOPING_PARAM")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.NO_IMPORT_IN_ST_SCOPE")
-    @js.native
-    def NO_IMPORT_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def MULTIPLE_FROM_IN_IMPORT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MULTIPLE_FROM_IN_IMPORT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.NO_KEYFRAMES_IN_ST_SCOPE")
-    @js.native
-    def NO_KEYFRAMES_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def NO_IMPORT_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_IMPORT_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.NO_VARS_DEF_IN_ST_SCOPE")
-    @js.native
-    def NO_VARS_DEF_IN_ST_SCOPE(): String = js.native
+    @scala.inline
+    def NO_KEYFRAMES_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_KEYFRAMES_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.OVERRIDE_MIXIN")
-    @js.native
-    def OVERRIDE_MIXIN(mixinType: String): String = js.native
+    @scala.inline
+    def NO_VARS_DEF_IN_ST_SCOPE(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("NO_VARS_DEF_IN_ST_SCOPE")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.OVERRIDE_TYPED_RULE")
-    @js.native
-    def OVERRIDE_TYPED_RULE(key: String, name: String): String = js.native
+    @scala.inline
+    def OVERRIDE_MIXIN(mixinType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("OVERRIDE_MIXIN")(mixinType.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.PARTIAL_MIXIN_MISSING_ARGUMENTS")
-    @js.native
-    def PARTIAL_MIXIN_MISSING_ARGUMENTS(`type`: String): String = js.native
+    @scala.inline
+    def OVERRIDE_TYPED_RULE(key: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("OVERRIDE_TYPED_RULE")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.REDECLARE_SYMBOL")
-    @js.native
-    def REDECLARE_SYMBOL(name: String): String = js.native
+    @scala.inline
+    def PARTIAL_MIXIN_MISSING_ARGUMENTS(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("PARTIAL_MIXIN_MISSING_ARGUMENTS")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.REDECLARE_SYMBOL_KEYFRAMES")
-    @js.native
-    def REDECLARE_SYMBOL_KEYFRAMES(name: String): String = js.native
+    @scala.inline
+    def REDECLARE_SYMBOL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("REDECLARE_SYMBOL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.ROOT_AFTER_SPACING")
-    @js.native
-    def ROOT_AFTER_SPACING(): String = js.native
+    @scala.inline
+    def REDECLARE_SYMBOL_KEYFRAMES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("REDECLARE_SYMBOL_KEYFRAMES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.STATE_DEFINITION_IN_COMPLEX")
-    @js.native
-    def STATE_DEFINITION_IN_COMPLEX(): String = js.native
+    @scala.inline
+    def ROOT_AFTER_SPACING(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ROOT_AFTER_SPACING")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.STATE_DEFINITION_IN_ELEMENT")
-    @js.native
-    def STATE_DEFINITION_IN_ELEMENT(): String = js.native
+    @scala.inline
+    def STATE_DEFINITION_IN_COMPLEX(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_DEFINITION_IN_COMPLEX")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.UNKNOWN_MIXIN")
-    @js.native
-    def UNKNOWN_MIXIN(name: String): String = js.native
+    @scala.inline
+    def STATE_DEFINITION_IN_ELEMENT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STATE_DEFINITION_IN_ELEMENT")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.UNSCOPED_CLASS")
-    @js.native
-    def UNSCOPED_CLASS(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_MIXIN(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_MIXIN")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-processor", "processorWarnings.UNSCOPED_ELEMENT")
-    @js.native
-    def UNSCOPED_ELEMENT(name: String): String = js.native
+    @scala.inline
+    def UNSCOPED_CLASS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSCOPED_CLASS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNSCOPED_ELEMENT(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSCOPED_ELEMENT")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("@stylable/core/cjs/stylable-processor", "validateScopingSelector")
-  @js.native
-  def validateScopingSelector(atRule: AtRule_, hasSelector: SRule, diagnostics: Diagnostics): Unit = js.native
+  @scala.inline
+  def validateScopingSelector(atRule: AtRule_, hasScopingSelector: SRule, diagnostics: Diagnostics): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateScopingSelector")(atRule.asInstanceOf[js.Any], hasScopingSelector.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait DeclStylableProps extends StObject {
     
-    var sourceValue: String = js.native
+    var sourceValue: String
   }
   object DeclStylableProps {
     
@@ -275,13 +245,17 @@ object stylableProcessorMod {
   }
   
   @js.native
-  trait SDecl extends Declaration {
+  trait SDecl
+    extends StObject
+       with Declaration {
     
     var stylable: DeclStylableProps = js.native
   }
   
   @js.native
-  trait SRule extends Rule_ {
+  trait SRule
+    extends StObject
+       with Rule_ {
     
     var isSimpleSelector: Boolean = js.native
     

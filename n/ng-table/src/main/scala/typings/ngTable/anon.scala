@@ -2,17 +2,15 @@ package typings.ngTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: String = js.native
+    var columns: String
     
-    var tableParams: String = js.native
+    var tableParams: String
   }
   object Columns {
     
@@ -33,20 +31,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Controller extends StObject {
     
-    var controller: String = js.native
+    var controller: String
     
-    var controllerAs: String = js.native
+    var controllerAs: String
     
-    var replace: Boolean = js.native
+    var replace: Boolean
     
-    var restrict: String = js.native
+    var restrict: String
     
-    var scope: Boolean = js.native
+    var scope: Boolean
     
-    var templateUrl: js.Any = js.native
+    var templateUrl: js.Any
   }
   object Controller {
     
@@ -86,10 +83,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
   }
   object Disabled {
     
@@ -107,12 +103,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var header: String = js.native
+    var header: String
     
-    var pagination: String = js.native
+    var pagination: String
   }
   object Header {
     
@@ -133,10 +128,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Show extends StObject {
     
-    var show: Boolean = js.native
+    var show: Boolean
   }
   object Show {
     

@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,9 +61,9 @@ object mod {
     
     @JSImport("react-chartjs-2", "defaults.global")
     @js.native
-    def global: ChartOptions with ChartFontOptions = js.native
+    def global: ChartOptions & ChartFontOptions = js.native
     @scala.inline
-    def global_=(x: ChartOptions with ChartFontOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+    def global_=(x: ChartOptions & ChartFontOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -74,35 +73,34 @@ object mod {
     var chartInstance: ^ = js.native
   }
   
-  @js.native
   trait ChartComponentProps extends StObject {
     
-    var data: ChartData[typings.chartJs.mod.ChartData] = js.native
+    var data: ChartData[typings.chartJs.mod.ChartData]
     
-    var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, _]] = js.native
+    var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, js.Any]] = js.undefined
     
-    var getDatasetAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var getDatasetAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var getElementAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var getElementAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var getElementsAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var getElementsAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var legend: js.UndefOr[ChartLegendOptions] = js.native
+    var legend: js.UndefOr[ChartLegendOptions] = js.undefined
     
-    var onElementsClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onElementsClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
     // alias for getElementsAtEvent (backward compatibility)
-    var options: js.UndefOr[ChartOptions] = js.native
+    var options: js.UndefOr[ChartOptions] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Object]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var redraw: js.UndefOr[Boolean] = js.native
+    var redraw: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[ChartType] = js.native
+    var `type`: js.UndefOr[ChartType] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ChartComponentProps {
     
@@ -122,7 +120,7 @@ object mod {
       def setDataFunction1(value: /* element */ HTMLElement => typings.chartJs.mod.ChartData): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setDatasetKeyProvider(value: /* any */ js.Any => _): Self = StObject.set(x, "datasetKeyProvider", js.Any.fromFunction1(value))
+      def setDatasetKeyProvider(value: /* any */ js.Any => js.Any): Self = StObject.set(x, "datasetKeyProvider", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDatasetKeyProviderUndefined: Self = StObject.set(x, "datasetKeyProvider", js.undefined)
@@ -202,8 +200,9 @@ object mod {
   
   type ChartDataFunction[T /* <: typings.chartJs.mod.ChartData */] = js.Function1[/* element */ HTMLElement, T]
   
-  @js.native
-  trait LinearComponentProps extends ChartComponentProps
+  trait LinearComponentProps
+    extends StObject
+       with ChartComponentProps
   object LinearComponentProps {
     
     @scala.inline

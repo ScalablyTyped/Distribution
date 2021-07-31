@@ -2,13 +2,11 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunTaskRequest extends StObject {
   
-  var responseView: js.UndefOr[View] = js.native
+  var responseView: js.UndefOr[View] = js.undefined
 }
 object RunTaskRequest {
   

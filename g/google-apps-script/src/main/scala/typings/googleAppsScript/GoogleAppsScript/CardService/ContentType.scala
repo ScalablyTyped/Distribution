@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ContentType extends StObject
 object ContentType extends StObject {
   
   @js.native
-  sealed trait IMMUTABLE_HTML extends ContentType
+  sealed trait IMMUTABLE_HTML
+    extends StObject
+       with ContentType
   
   @js.native
-  sealed trait MUTABLE_HTML extends ContentType
+  sealed trait MUTABLE_HTML
+    extends StObject
+       with ContentType
   
   @js.native
-  sealed trait TEXT extends ContentType
+  sealed trait TEXT
+    extends StObject
+       with ContentType
 }

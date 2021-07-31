@@ -4,17 +4,17 @@ import typings.std.Number
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ValidatorOptions {
   
-  @js.native
-  trait IsDateOptions extends Options {
+  trait IsDateOptions
+    extends StObject
+       with Options {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object IsDateOptions {
     
@@ -41,12 +41,13 @@ object ValidatorOptions {
     }
   }
   
-  @js.native
-  trait IsNumberOptions extends Options {
+  trait IsNumberOptions
+    extends StObject
+       with Options {
     
-    var max: js.UndefOr[Number] = js.native
+    var max: js.UndefOr[Number] = js.undefined
     
-    var min: js.UndefOr[Number] = js.native
+    var min: js.UndefOr[Number] = js.undefined
   }
   object IsNumberOptions {
     
@@ -73,12 +74,13 @@ object ValidatorOptions {
     }
   }
   
-  @js.native
-  trait IsStringOptions extends Options {
+  trait IsStringOptions
+    extends StObject
+       with Options {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
   }
   object IsStringOptions {
     

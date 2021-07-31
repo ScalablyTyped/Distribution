@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Collection extends UniqueId {
+trait Collection
+  extends StObject
+     with UniqueId {
   
   /** The default time to live in seconds for documents in a collection. */
-  var defaultTtl: js.UndefOr[Double] = js.native
+  var defaultTtl: js.UndefOr[Double] = js.undefined
   
   /** The indexing policy associated with the collection. */
-  var indexingPolicy: js.UndefOr[IndexingPolicy] = js.native
+  var indexingPolicy: js.UndefOr[IndexingPolicy] = js.undefined
   
   /**
     * This value is used to configure the partition key to be used for partitioning data into multiple partitions.
@@ -21,7 +21,7 @@ trait Collection extends UniqueId {
     *
     * If the x-ms-offer-throughput is equal to or under 10,000, then the collection must not include a partitionKey definition.
     */
-  var partitionKey: js.UndefOr[CollectionPartitionKey] = js.native
+  var partitionKey: js.UndefOr[CollectionPartitionKey] = js.undefined
 }
 object Collection {
   

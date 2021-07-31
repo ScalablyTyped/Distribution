@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about an enterprise protected file. */
-@js.native
 trait FileProtectionInfo extends StObject {
   
   /** The enterprise identity of the enterprise protected file. */
-  var identity: String = js.native
+  var identity: String
   
   /** Specifies if the protection of the enterprise protected file can be roamed to other devices. */
-  var isRoamable: Boolean = js.native
+  var isRoamable: Boolean
   
   /** The protection status of the enterprise protected file. */
-  var status: FileProtectionStatus = js.native
+  var status: FileProtectionStatus
 }
 object FileProtectionInfo {
   

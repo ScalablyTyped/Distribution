@@ -4,7 +4,6 @@ import typings.minappEnv.Array
 import typings.minappEnv.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 组件的绘图上下文 */

@@ -9,7 +9,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,7 +57,7 @@ trait AppStream extends Service {
   ): Request[BatchDisassociateUserStackResult, AWSError] = js.native
   
   @JSName("config")
-  var config_AppStream: ConfigBase with ClientConfiguration = js.native
+  var config_AppStream: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copies the image within the same region or to a new region within the same AWS account. Note that any tags you added to the image will not be copied.

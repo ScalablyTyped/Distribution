@@ -3,24 +3,24 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object device {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Property] (String) */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** [Method] Opens a specified URL
       * @param url String The URL to open
       */
-    var openURL: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
+    var openURL: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Property] (String) */
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -30,13 +30,13 @@ object device {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Object/Boolean) */
-    var scheme: js.UndefOr[js.Any] = js.native
+    var scheme: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (String) */
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object IAbstract {
     
@@ -87,17 +87,18 @@ object device {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract {
+  trait ICordova
+    extends StObject
+       with IAbstract {
     
     /** [Property] (String) */
-    var cordova: js.UndefOr[String] = js.native
+    var cordova: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var model: js.UndefOr[String] = js.native
+    var model: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ICordova {
     
@@ -130,17 +131,18 @@ object device {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract {
+  trait IPhoneGap
+    extends StObject
+       with IAbstract {
     
     /** [Property] (String) */
-    var cordova: js.UndefOr[String] = js.native
+    var cordova: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var model: js.UndefOr[String] = js.native
+    var model: js.UndefOr[String] = js.undefined
     
     /** [Property] (String) */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IPhoneGap {
     
@@ -173,14 +175,15 @@ object device {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract {
+  trait ISencha
+    extends StObject
+       with IAbstract {
     
     /** [Method] Opens a specified URL
       * @param url Object
       */
     @JSName("openURL")
-    var openURL_ISencha: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.native
+    var openURL_ISencha: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISencha {
     

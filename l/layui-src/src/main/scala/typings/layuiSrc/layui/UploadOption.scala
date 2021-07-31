@@ -7,51 +7,49 @@ import typings.layuiSrc.layuiSrcStrings.video
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadOption extends StObject {
   
-  var accept: js.UndefOr[images | file | video | audio] = js.native
+  var accept: js.UndefOr[images | file | video | audio] = js.undefined
   
-  var acceptMime: js.UndefOr[String] = js.native
+  var acceptMime: js.UndefOr[String] = js.undefined
   
-  var allDone: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.native
+  var allDone: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.undefined
   
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
-  var before: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.native
+  var before: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.undefined
   
-  var bindAction: js.UndefOr[String | HTMLElement] = js.native
+  var bindAction: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var choose: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.native
+  var choose: js.UndefOr[js.Function1[/* obj */ js.Object, Unit]] = js.undefined
   
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
   var done: js.UndefOr[
     js.Function3[/* res */ js.Object, /* index */ Double, /* upload */ js.Function0[Unit], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var drag: js.UndefOr[Boolean] = js.native
+  var drag: js.UndefOr[Boolean] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var error: js.UndefOr[js.Function2[/* index */ Double, /* upload */ js.Function0[Unit], Unit]] = js.native
+  var error: js.UndefOr[js.Function2[/* index */ Double, /* upload */ js.Function0[Unit], Unit]] = js.undefined
   
-  var exts: js.UndefOr[String] = js.native
+  var exts: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[js.Object] = js.native
+  var header: js.UndefOr[js.Object] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object UploadOption {
   

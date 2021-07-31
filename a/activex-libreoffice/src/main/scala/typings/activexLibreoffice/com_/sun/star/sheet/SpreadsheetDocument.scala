@@ -11,13 +11,13 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a model component which consists of some settings and one or more spreadsheets. */
 @js.native
 trait SpreadsheetDocument
-  extends OfficeDocument
+  extends StObject
+     with OfficeDocument
      with SpreadsheetDocumentSettings
      with XMultiServiceFactory
      with XActionLockable

@@ -3,38 +3,36 @@ package typings.httpProxy
 import typings.node.querystringMod.ParsedUrlQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<node.url.Url> */
-  @js.native
   trait PartialUrl extends StObject {
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var hash: js.UndefOr[String | Null] = js.native
+    var hash: js.UndefOr[String | Null] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var pathname: js.UndefOr[String | Null] = js.native
+    var pathname: js.UndefOr[String | Null] = js.undefined
     
-    var port: js.UndefOr[String | Null] = js.native
+    var port: js.UndefOr[String | Null] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[String | Null | ParsedUrlQuery] = js.native
+    var query: js.UndefOr[String | Null | ParsedUrlQuery] = js.undefined
     
-    var search: js.UndefOr[String | Null] = js.native
+    var search: js.UndefOr[String | Null] = js.undefined
     
-    var slashes: js.UndefOr[Boolean | Null] = js.native
+    var slashes: js.UndefOr[Boolean | Null] = js.undefined
   }
   object PartialUrl {
     

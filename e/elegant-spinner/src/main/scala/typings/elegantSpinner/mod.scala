@@ -2,14 +2,12 @@ package typings.elegantSpinner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("elegant-spinner", JSImport.Namespace)
-  @js.native
-  def apply(): js.Function0[String] = js.native
+  @scala.inline
+  def apply(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[String]]
   
   @JSImport("elegant-spinner", JSImport.Namespace)
   @js.native

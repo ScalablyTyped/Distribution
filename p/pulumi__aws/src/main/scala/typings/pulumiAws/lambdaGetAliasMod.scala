@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaGetAliasMod {
   
-  @JSImport("@pulumi/aws/lambda/getAlias", "getAlias")
+  @JSImport("@pulumi/aws/lambda/getAlias", JSImport.Namespace)
   @js.native
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = js.native
-  @JSImport("@pulumi/aws/lambda/getAlias", "getAlias")
-  @js.native
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
+  @scala.inline
+  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
+  
   trait GetAliasArgs extends StObject {
     
     /**
       * Name of the aliased Lambda function.
       */
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * Name of the Lambda alias.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetAliasArgs {
     
@@ -47,37 +47,36 @@ object lambdaGetAliasMod {
     }
   }
   
-  @js.native
   trait GetAliasResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) identifying the Lambda function alias.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Description of alias.
       */
-    val description: String = js.native
+    val description: String
     
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * Lambda function version which the alias uses.
       */
-    val functionVersion: String = js.native
+    val functionVersion: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN to be used for invoking Lambda Function from API Gateway - to be used in aws_api_gateway_integration's `uri`.
       */
-    val invokeArn: String = js.native
+    val invokeArn: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetAliasResult {
     

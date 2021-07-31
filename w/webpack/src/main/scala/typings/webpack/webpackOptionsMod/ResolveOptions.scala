@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.anon.Alias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveOptions extends StObject {
   
   /**
@@ -16,102 +14,102 @@ trait ResolveOptions extends StObject {
   var alias: js.UndefOr[(/**
   				 * New request
   				 */
-  StringDictionary[String]) | js.Array[Alias]] = js.native
+  StringDictionary[String]) | js.Array[Alias]] = js.undefined
   
   /**
   	 * Fields in the description file (package.json) which are used to redirect requests inside the module
   	 */
-  var aliasFields: js.UndefOr[ArrayOfStringOrStringArrayValues] = js.native
+  var aliasFields: js.UndefOr[ArrayOfStringOrStringArrayValues] = js.undefined
   
   /**
   	 * Predicate function to decide which requests should be cached
   	 */
-  var cachePredicate: js.UndefOr[js.Function] = js.native
+  var cachePredicate: js.UndefOr[js.Function] = js.undefined
   
   /**
   	 * Include the context information in the cache identifier when caching
   	 */
-  var cacheWithContext: js.UndefOr[Boolean] = js.native
+  var cacheWithContext: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable concord resolving extras
   	 */
-  var concord: js.UndefOr[Boolean] = js.native
+  var concord: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Filenames used to find a description file
   	 */
-  var descriptionFiles: js.UndefOr[ArrayOfStringValues] = js.native
+  var descriptionFiles: js.UndefOr[ArrayOfStringValues] = js.undefined
   
   /**
   	 * Enforce using one of the extensions from the extensions option
   	 */
-  var enforceExtension: js.UndefOr[Boolean] = js.native
+  var enforceExtension: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enforce using one of the module extensions from the moduleExtensions option
   	 */
-  var enforceModuleExtension: js.UndefOr[Boolean] = js.native
+  var enforceModuleExtension: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Extensions added to the request when trying to find the file
   	 */
-  var extensions: js.UndefOr[ArrayOfStringValues] = js.native
+  var extensions: js.UndefOr[ArrayOfStringValues] = js.undefined
   
   /**
   	 * Filesystem for the resolver
   	 */
-  var fileSystem: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var fileSystem: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Field names from the description file (package.json) which are used to find the default entry point
   	 */
-  var mainFields: js.UndefOr[ArrayOfStringOrStringArrayValues] = js.native
+  var mainFields: js.UndefOr[ArrayOfStringOrStringArrayValues] = js.undefined
   
   /**
   	 * Filenames used to find the default entry point if there is no description file or main field
   	 */
-  var mainFiles: js.UndefOr[ArrayOfStringValues] = js.native
+  var mainFiles: js.UndefOr[ArrayOfStringValues] = js.undefined
   
   /**
   	 * Extensions added to the module request when trying to find the module
   	 */
-  var moduleExtensions: js.UndefOr[ArrayOfStringValues] = js.native
+  var moduleExtensions: js.UndefOr[ArrayOfStringValues] = js.undefined
   
   /**
   	 * Folder names or directory paths where to find modules
   	 */
-  var modules: js.UndefOr[ArrayOfStringValues] = js.native
+  var modules: js.UndefOr[ArrayOfStringValues] = js.undefined
   
   /**
   	 * Plugins for the resolver
   	 */
-  var plugins: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.native
+  var plugins: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.undefined
   
   /**
   	 * Custom resolver
   	 */
-  var resolver: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var resolver: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * A list of directories in which requests that are server-relative URLs (starting with '/') are resolved. On non-windows system these requests are tried to resolve as absolute path first.
   	 */
-  var roots: js.UndefOr[js.Array[String]] = js.native
+  var roots: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
   	 * Enable resolving symlinks to the original location
   	 */
-  var symlinks: js.UndefOr[Boolean] = js.native
+  var symlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable caching of successfully resolved requests
   	 */
-  var unsafeCache: js.UndefOr[Boolean | StringDictionary[js.Any]] = js.native
+  var unsafeCache: js.UndefOr[Boolean | StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Use synchronous filesystem calls for the resolver
   	 */
-  var useSyncFileSystemCalls: js.UndefOr[Boolean] = js.native
+  var useSyncFileSystemCalls: js.UndefOr[Boolean] = js.undefined
 }
 object ResolveOptions {
   

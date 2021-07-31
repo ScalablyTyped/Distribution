@@ -2,15 +2,13 @@ package typings.vis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maximum extends StObject {
   
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
 }
 object Maximum {
   

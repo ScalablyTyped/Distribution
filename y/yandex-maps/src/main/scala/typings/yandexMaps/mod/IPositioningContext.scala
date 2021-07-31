@@ -2,17 +2,15 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPositioningContext extends StObject {
   
-  def fromClientPixels(clientPixelPoint: js.Array[Double]): js.Array[Double] = js.native
+  def fromClientPixels(clientPixelPoint: js.Array[Double]): js.Array[Double]
   
-  def getZoom(): Double = js.native
+  def getZoom(): Double
   
-  def toClientPixels(globalPixelPoint: js.Array[Double]): js.Array[Double] = js.native
+  def toClientPixels(globalPixelPoint: js.Array[Double]): js.Array[Double]
 }
 object IPositioningContext {
   

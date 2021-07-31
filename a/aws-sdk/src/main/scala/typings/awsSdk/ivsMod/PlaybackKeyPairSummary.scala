@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaybackKeyPairSummary extends StObject {
   
   /**
     * Key-pair ARN.
     */
-  var arn: js.UndefOr[PlaybackKeyPairArn] = js.native
+  var arn: js.UndefOr[PlaybackKeyPairArn] = js.undefined
   
   /**
     * Key-pair name.
     */
-  var name: js.UndefOr[PlaybackKeyPairName] = js.native
+  var name: js.UndefOr[PlaybackKeyPairName] = js.undefined
   
   /**
     * Array of 1-50 maps, each of the form string:string (key:value) 
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object PlaybackKeyPairSummary {
   

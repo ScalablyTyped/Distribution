@@ -12,7 +12,7 @@ Asynchronous templates for the browser and server (LinkedIn fork)
 | Keywords           | templates, views, dust, dustjs, dust.js, linkedin |
 | # releases         | 0 |
 | # dependents       | 202 |
-| # downloads        | 1079006 |
+| # downloads        | 975037 |
 | # stars            | 16 |
 
 ## Links

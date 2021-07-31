@@ -2,30 +2,28 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateServerRequest extends StObject {
   
   /**
     * Sets the number of automated backups that you want to keep. 
     */
-  var BackupRetentionCount: js.UndefOr[Integer] = js.native
+  var BackupRetentionCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * Setting DisableAutomatedBackup to true disables automated or scheduled backups. Automated backups are enabled by default. 
     */
-  var DisableAutomatedBackup: js.UndefOr[Boolean] = js.native
+  var DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined
   
-  var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.native
+  var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
   
-  var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
   
   /**
     * The name of the server to update. 
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
 }
 object UpdateServerRequest {
   

@@ -2,42 +2,40 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGLinearGradientElement extends StObject {
   
   @JSName("MSHTML.SVGLinearGradientElement_typekey")
-  var MSHTMLDotSVGLinearGradientElement_typekey: SVGLinearGradientElement = js.native
+  var MSHTMLDotSVGLinearGradientElement_typekey: SVGLinearGradientElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var gradientTransform: SVGAnimatedTransformList = js.native
+  var gradientTransform: SVGAnimatedTransformList
   
-  var gradientUnits: SVGAnimatedEnumeration = js.native
+  var gradientUnits: SVGAnimatedEnumeration
   
-  val href: SVGAnimatedString = js.native
+  val href: SVGAnimatedString
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var spreadMethod: SVGAnimatedEnumeration = js.native
+  var spreadMethod: SVGAnimatedEnumeration
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var x1: SVGAnimatedLength = js.native
+  var x1: SVGAnimatedLength
   
-  var x2: SVGAnimatedLength = js.native
+  var x2: SVGAnimatedLength
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var y1: SVGAnimatedLength = js.native
+  var y1: SVGAnimatedLength
   
-  var y2: SVGAnimatedLength = js.native
+  var y2: SVGAnimatedLength
 }
 object SVGLinearGradientElement {
   

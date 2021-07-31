@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * You can register an {@link XVetoableChangeListener} with a source object so as to be notified of any constrained property updates.
   */
-@js.native
-trait XVetoableChangeListener extends XEventListener {
+trait XVetoableChangeListener
+  extends StObject
+     with XEventListener {
   
   /** gets called when a constrained property is changed. */
-  def vetoableChange(aEvent: PropertyChangeEvent): Unit = js.native
+  def vetoableChange(aEvent: PropertyChangeEvent): Unit
 }
 object XVetoableChangeListener {
   

@@ -2,33 +2,28 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strncasecmpMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: js.Any, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: js.Any, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: js.Any, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: Unit, argStr2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: Unit, argStr2: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(argStr1: Unit, argStr2: Unit, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(argStr1.asInstanceOf[js.Any], argStr2.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.UndefOr[scala.Nothing], argStr2: js.UndefOr[scala.Nothing], len: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.UndefOr[scala.Nothing], argStr2: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.UndefOr[scala.Nothing], argStr2: js.Any, len: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.Any, argStr2: js.UndefOr[scala.Nothing], len: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.Any, argStr2: js.Any): js.Any = js.native
-  @JSImport("locutus/php/strings/strncasecmp", JSImport.Namespace)
-  @js.native
-  def apply(argStr1: js.Any, argStr2: js.Any, len: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

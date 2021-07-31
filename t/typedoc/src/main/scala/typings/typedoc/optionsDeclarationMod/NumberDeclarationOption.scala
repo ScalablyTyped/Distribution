@@ -3,23 +3,22 @@ package typings.typedoc.optionsDeclarationMod
 import typings.typedoc.optionsDeclarationMod.ParameterType.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberDeclarationOption
-  extends DeclarationOptionBase
+  extends StObject
+     with DeclarationOptionBase
      with _DeclarationOption
      with _KeyToDeclaration[js.Any] {
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_NumberDeclarationOption: Number = js.native
+  var type_NumberDeclarationOption: Number
 }
 object NumberDeclarationOption {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: js.UndefOr[Id] = js.native
+  var ApplicationId: js.UndefOr[Id] = js.undefined
   
   /**
     * The description of the environment.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The environment ID.
     */
-  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.undefined
   
   /**
     * Amazon CloudWatch alarms monitored during the deployment.
     */
-  var Monitors: js.UndefOr[MonitorList] = js.native
+  var Monitors: js.UndefOr[MonitorList] = js.undefined
   
   /**
     * The name of the environment.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
   
   /**
     * The state of the environment. An environment can be in one of the following states: READY_FOR_DEPLOYMENT, DEPLOYING, ROLLING_BACK, or ROLLED_BACK 
     */
-  var State: js.UndefOr[EnvironmentState] = js.native
+  var State: js.UndefOr[EnvironmentState] = js.undefined
 }
 object Environment {
   

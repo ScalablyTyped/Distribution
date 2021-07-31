@@ -6,19 +6,17 @@ import typings.googleAppsScript.GoogleAppsScript.AdminLicenseManager.Schema.Lice
 import typings.googleAppsScript.GoogleAppsScript.AdminLicenseManager.Schema.LicenseAssignmentList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminLicenseManager extends StObject {
   
-  var LicenseAssignments: js.UndefOr[LicenseAssignmentsCollection] = js.native
+  var LicenseAssignments: js.UndefOr[LicenseAssignmentsCollection] = js.undefined
   
   // Create a new instance of LicenseAssignment
-  def newLicenseAssignment(): LicenseAssignment = js.native
+  def newLicenseAssignment(): LicenseAssignment
   
   // Create a new instance of LicenseAssignmentInsert
-  def newLicenseAssignmentInsert(): LicenseAssignmentInsert = js.native
+  def newLicenseAssignmentInsert(): LicenseAssignmentInsert
 }
 object AdminLicenseManager {
   
@@ -81,24 +79,23 @@ object AdminLicenseManager {
   
   object Schema {
     
-    @js.native
     trait LicenseAssignment extends StObject {
       
-      var etags: js.UndefOr[String] = js.native
+      var etags: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var productName: js.UndefOr[String] = js.native
+      var productName: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
-      var skuName: js.UndefOr[String] = js.native
+      var skuName: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object LicenseAssignment {
       
@@ -161,10 +158,9 @@ object AdminLicenseManager {
       }
     }
     
-    @js.native
     trait LicenseAssignmentInsert extends StObject {
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object LicenseAssignmentInsert {
       
@@ -185,16 +181,15 @@ object AdminLicenseManager {
       }
     }
     
-    @js.native
     trait LicenseAssignmentList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[LicenseAssignment]] = js.native
+      var items: js.UndefOr[js.Array[LicenseAssignment]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object LicenseAssignmentList {
       

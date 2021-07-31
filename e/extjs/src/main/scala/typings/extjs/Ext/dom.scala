@@ -6,37 +6,35 @@ import typings.extjs.Ext.dd.IDDTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dom {
   
-  @js.native
   trait AbstractElement_ extends StObject
   
-  @js.native
   trait Element_ extends StObject
   
-  @js.native
-  trait IAbstractElement extends IBase {
+  trait IAbstractElement
+    extends StObject
+       with IBase {
     
     /** [Property] (Number) */
-    var ASCLASS: js.UndefOr[Double] = js.native
+    var ASCLASS: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var DISPLAY: js.UndefOr[Double] = js.native
+    var DISPLAY: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var OFFSETS: js.UndefOr[Double] = js.native
+    var OFFSETS: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var VISIBILITY: js.UndefOr[Double] = js.native
+    var VISIBILITY: js.UndefOr[Double] = js.undefined
     
     /** [Method] Adds one or more CSS classes to the element
       * @param className String/String[] The CSS classes to add separated by space, or an array of classes
       * @returns Ext.dom.Element this
       */
-    var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Appends the passed element s to this element Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement/Object The id or element to insert or a DomHelper config The id of the node, a DOM Node or an existing Element.
@@ -45,19 +43,19 @@ object dom {
       */
     var appendChild: js.UndefOr[
         js.Function2[/* el */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Appends this element to the passed element Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement The new parent element. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.AbstractElement This element
       */
-    var appendTo: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var appendTo: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] More flexible version of setStyle for setting style properties
       * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
       * @returns Ext.dom.Element this
       */
-    var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Selects a single direct child based on the passed CSS selector the selector should not contain an id
       * @param selector String The CSS selector
@@ -65,14 +63,18 @@ object dom {
       * @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom = true)
       */
     var child: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Returns true if this element is an ancestor of the passed element
       * @param el HTMLElement/String The element to check
       * @returns Boolean True if this element is an ancestor of el, else false
       */
-    var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Boolean]] = js.native
+    var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Method] Creates the passed DomHelper config and appends it to this element or optionally inserts it before the passed child e
       * @param config Object DomHelper element config object. If no tag is specified (e.g., {tag:'input'}) then a div will be automatically generated with the specified attributes.
@@ -87,16 +89,16 @@ object dom {
           /* returnDom */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (String) */
-    var defaultUnit: js.UndefOr[java.lang.String] = js.native
+    var defaultUnit: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Alias to remove  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (HTMLElement) */
-    var dom: js.UndefOr[HTMLElement] = js.native
+    var dom: js.UndefOr[HTMLElement] = js.undefined
     
     /** [Method] Selects a single child at any depth below this element based on the passed CSS selector the selector should not cont
       * @param selector String The CSS selector
@@ -104,8 +106,12 @@ object dom {
       * @returns HTMLElement/Ext.dom.Element The child Ext.dom.Element (or DOM node if returnDom = true)
       */
     var down: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Looks at this node and then at parent nodes for a match of the passed simple selector e g
       * @param selector String The simple selector to test
@@ -120,7 +126,7 @@ object dom {
           /* returnEl */ js.UndefOr[Boolean], 
           HTMLElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Looks at parent nodes for a match of the passed simple selector e g
       * @param selector String The simple selector to test
@@ -135,7 +141,7 @@ object dom {
           /* returnEl */ js.UndefOr[Boolean], 
           HTMLElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the first child skipping text nodes Defined in override Ext dom AbstractElement_traversal
       * @param selector String Find the next sibling that matches the passed simple selector
@@ -143,13 +149,17 @@ object dom {
       * @returns Ext.dom.Element/HTMLElement The first child or null
       */
     var first: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Returns the active element in the DOM
       * @returns HTMLElement The active (focused) element in the document.
       */
-    var getActiveElement: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getActiveElement: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
     /** [Method] Returns the value of an attribute from the element s underlying DOM node
       * @param name String The attribute name
@@ -162,13 +172,13 @@ object dom {
           /* namespace */ js.UndefOr[java.lang.String], 
           java.lang.String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the width of the border s for the specified side s  Defined in override Ext dom AbstractElement_style
       * @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the border left width + the border right width.
       * @returns Number The width of the sides passed added together
       */
-    var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.native
+    var getBorderWidth: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
     
     /** [Method] Returns a child element of this element given its id
       * @param id String The id of the desired child element.
@@ -176,34 +186,34 @@ object dom {
       */
     var getById: js.UndefOr[
         js.Function2[/* id */ js.UndefOr[java.lang.String], /* asDom */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the innerHTML of an Element or an empty string if the element s dom no longer exists  */
-    var getHTML: js.UndefOr[js.Function0[Unit]] = js.native
+    var getHTML: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the offset height of the element Defined in override Ext dom AbstractElement_style
       * @param contentHeight Boolean true to get the height minus borders and padding
       * @returns Number The element's height
       */
-    var getHeight: js.UndefOr[js.Function1[/* contentHeight */ js.UndefOr[Boolean], Double]] = js.native
+    var getHeight: js.UndefOr[js.Function1[/* contentHeight */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Returns an object with properties top left right and bottom representing the margins of this element unless sides i
       * @param sides String Any combination of l, r, t, b to get the sum of those sides
       * @returns Object/Number
       */
-    var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], _]] = js.native
+    var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Gets the width of the padding s for the specified side s  Defined in override Ext dom AbstractElement_style
       * @param side String Can be t, l, r, b or any combination of those to add multiple values. For example, passing 'lr' would get the padding left + the padding right.
       * @returns Number The padding of the sides passed added together
       */
-    var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.native
+    var getPadding: js.UndefOr[js.Function1[/* side */ js.UndefOr[java.lang.String], Double]] = js.undefined
     
     /** [Method] Returns the size of the element
       * @param contentSize Boolean true to get the width/size minus borders and padding
       * @returns Object An object containing the element's size:
       */
-    var getSize: js.UndefOr[js.Function1[/* contentSize */ js.UndefOr[Boolean], _]] = js.native
+    var getSize: js.UndefOr[js.Function1[/* contentSize */ js.UndefOr[Boolean], js.Any]] = js.undefined
     
     /** [Method] Returns a named style property based on computed currentStyle primary and inline style if primary is not available
       * @param property String/String[] The style property (or multiple property names in an array) whose value is returned.
@@ -211,58 +221,58 @@ object dom {
       * @returns String/Object The current value of the style property for this element (or a hash of named style values if multiple property arguments are requested).
       */
     var getStyle: js.UndefOr[
-        js.Function2[/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean], js.Any]
+      ] = js.undefined
     
     /** [Method] Returns the value of the value attribute
       * @param asNumber Boolean true to parse the value as a number
       * @returns String/Number
       */
-    var getValue: js.UndefOr[js.Function1[/* asNumber */ js.UndefOr[Boolean], _]] = js.native
+    var getValue: js.UndefOr[js.Function1[/* asNumber */ js.UndefOr[Boolean], js.Any]] = js.undefined
     
     /** [Method] Returns the dimensions of the element available to lay content out in
       * @returns Object Object describing width and height.
       */
-    var getViewSize: js.UndefOr[js.Function0[_]] = js.native
+    var getViewSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the offset width of the element Defined in override Ext dom AbstractElement_style
       * @param contentWidth Boolean true to get the width minus borders and padding
       * @returns Number The element's width
       */
-    var getWidth: js.UndefOr[js.Function1[/* contentWidth */ js.UndefOr[Boolean], Double]] = js.native
+    var getWidth: js.UndefOr[js.Function1[/* contentWidth */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Checks if the specified CSS class exists on this element s DOM node
       * @param className String The CSS class to check for
       * @returns Boolean True if the class exists, else false
       */
-    var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Method] Hide this element  Uses display mode to determine whether to use display or visibility
       * @param animate Boolean/Object true for the default animation or a standard Element animation config object
       * @returns Ext.dom.Element this
       */
-    var hide: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var hide: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Property] (String) */
-    var id: js.UndefOr[java.lang.String] = js.native
+    var id: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Inserts this element after the passed element in the DOM Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement The element to insert after. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.AbstractElement This element
       */
-    var insertAfter: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var insertAfter: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Inserts this element before the passed element in the DOM Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.AbstractElement This element
       */
-    var insertBefore: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var insertBefore: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Inserts or creates an element or DomHelper config as the first child of this element Defined in override Ext dom
       * @param el String/HTMLElement/Ext.dom.AbstractElement/Object The id or element to insert or a DomHelper config to create and insert
       * @returns Ext.dom.AbstractElement The new child
       */
-    var insertFirst: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var insertFirst: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Inserts an html fragment into this element Defined in override Ext dom AbstractElement_insertion
       * @param where String Where to insert the html in relation to this element - beforeBegin, afterBegin, beforeEnd, afterEnd. See Ext.dom.Helper.insertHtml for details.
@@ -275,9 +285,9 @@ object dom {
           /* where */ js.UndefOr[java.lang.String], 
           /* html */ js.UndefOr[java.lang.String], 
           /* returnEl */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element Defined in override Ext d
       * @param el String/HTMLElement/Ext.dom.AbstractElement/Object/Array The id, element to insert or a DomHelper config to create and insert or an array of any of those.
@@ -292,13 +302,13 @@ object dom {
           /* returnDom */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns true if this element matches the passed simple selector e g
       * @param selector String The simple selector to test
       * @returns Boolean True if this element matches the selector, else false
       */
-    var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Method] Checks if the current value of a style is equal to a given value
       * @param style String property whose value is returned.
@@ -311,13 +321,13 @@ object dom {
           /* value */ js.UndefOr[java.lang.String], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns true if the value of the given property is visually transparent
       * @param prop String The style property whose value is to be tested.
       * @returns Boolean True if the style property is visually transparent.
       */
-    var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var isTransparent: js.UndefOr[js.Function1[/* prop */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Method] Gets the last child skipping text nodes Defined in override Ext dom AbstractElement_traversal
       * @param selector String Find the previous sibling that matches the passed simple selector
@@ -325,8 +335,12 @@ object dom {
       * @returns Ext.dom.Element/HTMLElement The last child or null
       */
     var last: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Puts a mask over this element to disable user interaction
       * @param msg String A message to display in the mask
@@ -338,7 +352,7 @@ object dom {
           /* msgCls */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the next sibling skipping text nodes Defined in override Ext dom AbstractElement_traversal
       * @param selector String Find the next sibling that matches the passed simple selector
@@ -346,8 +360,12 @@ object dom {
       * @returns Ext.dom.Element/HTMLElement The next sibling or null
       */
     var next: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Gets the parent node for this element optionally chaining up trying to match a selector Defined in override Ext dom
       * @param selector String Find a parent node that matches the passed simple selector
@@ -355,8 +373,12 @@ object dom {
       * @returns Ext.dom.Element/HTMLElement The parent node or null
       */
     var parent: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Gets the previous sibling skipping text nodes Defined in override Ext dom AbstractElement_traversal
       * @param selector String Find the previous sibling that matches the passed simple selector
@@ -364,40 +386,44 @@ object dom {
       * @returns Ext.dom.Element/HTMLElement The previous sibling or null
       */
     var prev: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean], _]
-      ] = js.native
+        js.Function2[
+          /* selector */ js.UndefOr[java.lang.String], 
+          /* returnDom */ js.UndefOr[Boolean], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Selects child nodes based on the passed CSS selector the selector should not contain an id
       * @param selector String The CSS selector
       * @returns HTMLElement[] An array of the matched nodes
       */
-    var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
       * @param className String/String[] The CSS class to add, or an array of classes
       * @returns Ext.dom.Element this
       */
-    var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Removes this element s dom reference  */
-    var remove: js.UndefOr[js.Function0[Unit]] = js.native
+    var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Removes one or more CSS classes from the element
       * @param className String/String[] The CSS classes to remove separated by space, or an array of classes
       * @returns Ext.dom.Element this
       */
-    var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Forces the browser to repaint this element Defined in override Ext dom AbstractElement_style
       * @returns Ext.dom.Element this
       */
-    var repaint: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.native
+    var repaint: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Replaces the passed element with this element Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement The element to replace. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.AbstractElement This element
       */
-    var replace: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var replace: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Replaces a CSS class on the element with another
       * @param oldClassName String The CSS class to replace
@@ -410,13 +436,13 @@ object dom {
           /* newClassName */ js.UndefOr[java.lang.String], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Replaces this element with the passed element Defined in override Ext dom AbstractElement_insertion
       * @param el String/HTMLElement/Ext.dom.AbstractElement/Object The new element (id of the node, a DOM Node or an existing Element) or a DomHelper config of an element to create
       * @returns Ext.dom.AbstractElement This element
       */
-    var replaceWith: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.native
+    var replaceWith: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Creates a Ext CompositeElement for child nodes based on the passed CSS selector the selector should not contain an id
       * @param selector String The CSS selector
@@ -429,13 +455,13 @@ object dom {
           /* unique */ js.UndefOr[Boolean], 
           typings.extjs.Ext.ICompositeElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Serializes a DOM form into a url encoded string Defined in override Ext dom AbstractElement_static
       * @param form Object The form
       * @returns String The url encoded form
       */
-    var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String]] = js.native
+    var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
     
     /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
       * @param o Object The object with the attributes
@@ -448,7 +474,7 @@ object dom {
           /* useSet */ js.UndefOr[Boolean], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Set the innerHTML of this element
       * @param html String The new HTML
@@ -456,13 +482,13 @@ object dom {
       */
     var setHTML: js.UndefOr[
         js.Function1[/* html */ js.UndefOr[java.lang.String], typings.extjs.Ext.IElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Set the height of this Element
       * @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels.) A String used to set the CSS height style. Animation may not be used.
       * @returns Ext.dom.Element this
       */
-    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Set the size of this Element
       * @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
@@ -475,7 +501,7 @@ object dom {
           /* height */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
       * @param property String/Object The style property to be set, or an object of multiple styles.
@@ -488,13 +514,13 @@ object dom {
           /* value */ js.UndefOr[java.lang.String], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY OFFSETS or ASCLASS
       * @param mode Object
       * @returns Ext.dom.AbstractElement this
       */
-    var setVisibilityMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[js.Any], this.type]] = js.native
+    var setVisibilityMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the visibility of the element see details
       * @param visible Boolean Whether the element is visible
@@ -507,19 +533,19 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Set the width of this Element
       * @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used.
       * @returns Ext.dom.Element this
       */
-    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Show this element  Uses display mode to determine whether to use display or visibility
       * @param animate Boolean/Object true for the default animation or a standard Element animation config object
       * @returns Ext.dom.Element this
       */
-    var show: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var show: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Toggles the specified CSS class on this element removes it if it already exists otherwise adds it
       * @param className String The CSS class to toggle
@@ -527,10 +553,10 @@ object dom {
       */
     var toggleCls: js.UndefOr[
         js.Function1[/* className */ js.UndefOr[java.lang.String], typings.extjs.Ext.dom.IElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes a previously applied mask  */
-    var unmask: js.UndefOr[js.Function0[Unit]] = js.native
+    var unmask: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Walks up the DOM looking for a parent node that matches the passed simple selector e g
       * @param selector String The simple selector to test
@@ -545,7 +571,7 @@ object dom {
           /* returnDom */ js.UndefOr[Boolean], 
           typings.extjs.Ext.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Update the innerHTML of this element
       * @param html String The new HTML
@@ -553,7 +579,7 @@ object dom {
       */
     var update: js.UndefOr[
         js.Function1[/* html */ js.UndefOr[java.lang.String], typings.extjs.Ext.dom.IElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Creates and wraps this element with another element Defined in override Ext dom AbstractElement_insertion
       * @param config Object DomHelper element config object for the wrapper element or null for an empty div
@@ -566,9 +592,9 @@ object dom {
           /* config */ js.UndefOr[js.Any], 
           /* returnDom */ js.UndefOr[Boolean], 
           /* selector */ js.UndefOr[java.lang.String], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstractElement {
     
@@ -612,7 +638,9 @@ object dom {
       def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
       
       @scala.inline
-      def setChild(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "child", js.Any.fromFunction2(value))
+      def setChild(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "child", js.Any.fromFunction2(value))
       
       @scala.inline
       def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
@@ -656,7 +684,9 @@ object dom {
       def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
       @scala.inline
-      def setDown(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+      def setDown(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
@@ -678,7 +708,9 @@ object dom {
       def setFindParentUndefined: Self = StObject.set(x, "findParent", js.undefined)
       
       @scala.inline
-      def setFirst(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
+      def setFirst(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
@@ -722,7 +754,7 @@ object dom {
       def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
       
       @scala.inline
-      def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "getMargin", js.Any.fromFunction1(value))
+      def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetMarginUndefined: Self = StObject.set(x, "getMargin", js.undefined)
@@ -734,25 +766,25 @@ object dom {
       def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
       
       @scala.inline
-      def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+      def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
       
       @scala.inline
-      def setGetStyle(value: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getStyle", js.Any.fromFunction2(value))
+      def setGetStyle(value: (/* property */ js.UndefOr[js.Any], /* inline */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
       
       @scala.inline
-      def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
       @scala.inline
-      def setGetViewSize(value: () => _): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
+      def setGetViewSize(value: () => js.Any): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetViewSizeUndefined: Self = StObject.set(x, "getViewSize", js.undefined)
@@ -801,7 +833,7 @@ object dom {
       
       @scala.inline
       def setInsertHtml(
-        value: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _
+        value: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "insertHtml", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -836,7 +868,9 @@ object dom {
       def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
       @scala.inline
-      def setLast(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "last", js.Any.fromFunction2(value))
+      def setLast(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "last", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
@@ -848,7 +882,9 @@ object dom {
       def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
       @scala.inline
-      def setNext(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
+      def setNext(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
       
       @scala.inline
       def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
@@ -860,13 +896,17 @@ object dom {
       def setOFFSETSUndefined: Self = StObject.set(x, "OFFSETS", js.undefined)
       
       @scala.inline
-      def setParent(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
+      def setParent(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
       
       @scala.inline
       def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
       @scala.inline
-      def setPrev(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "prev", js.Any.fromFunction2(value))
+      def setPrev(
+        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
+      ): Self = StObject.set(x, "prev", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
@@ -1031,7 +1071,7 @@ object dom {
       
       @scala.inline
       def setWrap(
-        value: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => _
+        value: (/* config */ js.UndefOr[js.Any], /* returnDom */ js.UndefOr[Boolean], /* selector */ js.UndefOr[java.lang.String]) => js.Any
       ): Self = StObject.set(x, "wrap", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1039,8 +1079,9 @@ object dom {
     }
   }
   
-  @js.native
-  trait IAbstractHelper extends IBase {
+  trait IAbstractHelper
+    extends StObject
+       with IBase {
     
     /** [Method] Creates new DOM element s and appends them to el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1053,22 +1094,24 @@ object dom {
           /* el */ js.UndefOr[js.Any], 
           /* o */ js.UndefOr[js.Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Applies a style specification to an element
       * @param el String/HTMLElement The element to apply styles to
       * @param styles String/Object/Function A style specification string e.g. 'width:100px', or object in the form {width:'100px'}, or a function which returns such a specification.
       */
-    var applyStyles: js.UndefOr[js.Function2[/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]] = js.native
+    var applyStyles: js.UndefOr[js.Function2[/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Converts the styles from the given object to text
       * @param styles Object The object describing the styles.
       * @param buffer String[] The output buffer.
       * @returns String/String[] If buffer is passed, it is returned. Otherwise the style string is returned.
       */
-    var generateStyles: js.UndefOr[js.Function2[/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array], _]] = js.native
+    var generateStyles: js.UndefOr[
+        js.Function2[/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array], js.Any]
+      ] = js.undefined
     
     /** [Method] Creates new DOM element s and inserts them after el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1081,9 +1124,9 @@ object dom {
           /* el */ js.UndefOr[js.Any], 
           /* o */ js.UndefOr[js.Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Creates new DOM element s and inserts them before el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1096,9 +1139,9 @@ object dom {
           /* el */ js.UndefOr[js.Any], 
           /* o */ js.UndefOr[js.Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Creates new DOM element s and inserts them as the first child of el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1111,9 +1154,9 @@ object dom {
           /* el */ js.UndefOr[js.Any], 
           /* o */ js.UndefOr[js.Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Inserts an HTML fragment into the DOM
       * @param where String Where to insert the html in relation to el - beforeBegin, afterBegin, beforeEnd, afterEnd. For example take the following HTML: &lt;div&gt;Contents&lt;/div&gt; Using different where values inserts element to the following places:  beforeBegin: &lt;HERE&gt;&lt;div&gt;Contents&lt;/div&gt; afterBegin: &lt;div&gt;&lt;HERE&gt;Contents&lt;/div&gt; beforeEnd: &lt;div&gt;Contents&lt;HERE&gt;&lt;/div&gt; afterEnd: &lt;div&gt;Contents&lt;/div&gt;&lt;HERE&gt;
@@ -1128,13 +1171,13 @@ object dom {
           /* html */ js.UndefOr[java.lang.String], 
           HTMLElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the markup for the passed Element s config
       * @param spec Object The DOM object spec (and children)
       * @returns String
       */
-    var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.native
+    var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
     
     /** [Method] Creates new DOM element s and overwrites the contents of el with them
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1147,9 +1190,9 @@ object dom {
           /* el */ js.UndefOr[js.Any], 
           /* o */ js.UndefOr[js.Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstractHelper {
     
@@ -1164,7 +1207,7 @@ object dom {
       
       @scala.inline
       def setAppend(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "append", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1177,14 +1220,14 @@ object dom {
       def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
       
       @scala.inline
-      def setGenerateStyles(value: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => _): Self = StObject.set(x, "generateStyles", js.Any.fromFunction2(value))
+      def setGenerateStyles(value: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "generateStyles", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGenerateStylesUndefined: Self = StObject.set(x, "generateStyles", js.undefined)
       
       @scala.inline
       def setInsertAfter(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1192,7 +1235,7 @@ object dom {
       
       @scala.inline
       def setInsertBefore(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1200,7 +1243,7 @@ object dom {
       
       @scala.inline
       def setInsertFirst(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "insertFirst", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1222,7 +1265,7 @@ object dom {
       
       @scala.inline
       def setOverwrite(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "overwrite", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1230,8 +1273,9 @@ object dom {
     }
   }
   
-  @js.native
-  trait IAbstractQuery extends IBase {
+  trait IAbstractQuery
+    extends StObject
+       with IBase {
     
     /** [Method] Returns true if the passed element s match the passed simple selector e g
       * @param el String/HTMLElement/Array An element id, element or array of elements
@@ -1240,7 +1284,7 @@ object dom {
       */
     var is: js.UndefOr[
         js.Function2[/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Selects a group of elements
       * @param selector String The selector/xpath query (can be a comma separated list of selectors)
@@ -1249,7 +1293,7 @@ object dom {
       */
     var select: js.UndefOr[
         js.Function2[/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any], Array]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Selects a single element
       * @param selector String The selector/xpath query
@@ -1262,7 +1306,7 @@ object dom {
           /* root */ js.UndefOr[js.Any], 
           HTMLElement
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstractQuery {
     
@@ -1297,8 +1341,9 @@ object dom {
   
   type ICompositeElement = typings.extjs.Ext.dom.ICompositeElementLite
   
-  @js.native
-  trait ICompositeElementLite extends IBase {
+  trait ICompositeElementLite
+    extends StObject
+       with IBase {
     
     /** [Method] Adds elements to this Composite object
       * @param els HTMLElement[]/Ext.dom.CompositeElement Either an Array of DOM elements to add, or another Composite object who's elements should be added.
@@ -1306,18 +1351,18 @@ object dom {
       */
     var add: js.UndefOr[
         js.Function1[/* els */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes all elements from this Composite
       * @param removeDom Boolean True to also remove the elements from the document.
       */
-    var clear: js.UndefOr[js.Function1[/* removeDom */ js.UndefOr[Boolean], Unit]] = js.native
+    var clear: js.UndefOr[js.Function1[/* removeDom */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Returns true if this composite contains the passed element
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.Element, or an HtmlElement to find within the composite collection.
       * @returns Boolean
       */
-    var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Boolean]] = js.native
+    var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Method] Calls the passed function for each element in this composite
       * @param fn Function The function to call.
@@ -1330,10 +1375,10 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.ICompositeElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (HTMLElement[]) */
-    var elements: js.UndefOr[Array] = js.native
+    var elements: js.UndefOr[Array] = js.undefined
     
     /** [Method] Clears this Composite and adds the elements passed
       * @param els HTMLElement[]/Ext.dom.CompositeElement Either an array of DOM elements, or another Composite from which to fill this Composite.
@@ -1341,7 +1386,7 @@ object dom {
       */
     var fill: js.UndefOr[
         js.Function1[/* els */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Filters this composite to only elements that match the passed selector
       * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
@@ -1349,37 +1394,37 @@ object dom {
       */
     var filter: js.UndefOr[
         js.Function1[/* selector */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the first Element
       * @returns Ext.dom.Element
       */
-    var first: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.native
+    var first: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Returns the number of elements in this Composite
       * @returns Number
       */
-    var getCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Find the index of the passed element within the composite collection
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
       * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
       */
-    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.native
+    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isComposite: js.UndefOr[Boolean] = js.native
+    var isComposite: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns a flyweight Element of the dom element object at the specified index
       * @param index Number
       * @returns Ext.dom.Element
       */
-    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], typings.extjs.Ext.dom.IElement]] = js.native
+    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Returns the last Element
       * @returns Ext.dom.Element
       */
-    var last: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.native
+    var last: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Removes the specified element s
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite or an array of any of those.
@@ -1392,7 +1437,7 @@ object dom {
           /* removeDom */ js.UndefOr[Boolean], 
           typings.extjs.Ext.dom.ICompositeElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Replaces the specified element with the passed element
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite to replace.
@@ -1407,7 +1452,7 @@ object dom {
           /* domReplace */ js.UndefOr[Boolean], 
           typings.extjs.Ext.dom.ICompositeElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets a range nodes
       * @param start Number The index of the first node in the range
@@ -1416,7 +1461,7 @@ object dom {
       */
     var slice: js.UndefOr[
         js.Function2[/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], Array]
-      ] = js.native
+      ] = js.undefined
   }
   object ICompositeElementLite {
     
@@ -1533,8 +1578,9 @@ object dom {
     }
   }
   
-  @js.native
-  trait IElement extends IAbstractElement {
+  trait IElement
+    extends StObject
+       with IAbstractElement {
     
     /** [Method] Sets up event handlers to add and remove a css class when the mouse is down and then up on this element a click effe
       * @param className String The class to add
@@ -1549,7 +1595,7 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets up event handlers to add and remove a css class when this element has the focus Defined in override Ext dom Ele
       * @param className String The class to add
@@ -1564,7 +1610,7 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets up event handlers to add and remove a css class when the mouse is over this element Defined in override Ext dom
       * @param className String The class to add
@@ -1579,7 +1625,7 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Convenience method for constructing a KeyMap
       * @param key String/Number/Number[]/Object Either a string with the keys to listen for, the numeric key code, array of key codes or an object with the following options:
@@ -1594,13 +1640,13 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           typings.extjs.Ext.util.IKeyMap
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Creates a KeyMap for this element
       * @param config Object The KeyMap config. See Ext.util.KeyMap for more details
       * @returns Ext.util.KeyMap The KeyMap created
       */
-    var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], typings.extjs.Ext.util.IKeyMap]] = js.native
+    var addKeyMap: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], typings.extjs.Ext.util.IKeyMap]] = js.undefined
     
     /** [Method] Shorthand for on
       * @param eventName String The name of event to handle.
@@ -1617,63 +1663,63 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Performs custom animation on this Element
       * @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
       * @returns Ext.dom.Element this
       */
-    var animate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.native
+    var animate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Property] (Boolean) */
-    var autoBoxAdjust: js.UndefOr[Boolean] = js.native
+    var autoBoxAdjust: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Tries to blur the element
       * @returns Ext.dom.Element this
       */
-    var blur: js.UndefOr[js.Function0[this.type]] = js.native
+    var blur: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Wraps the specified element with a special 9 element markup CSS block that renders by default as a gray container wit
       * @param class String A base CSS class to apply to the containing wrapper element. Note that there are a number of CSS rules that are dependent on this name to make the overall effect work, so if you supply an alternate base class, make sure you also supply all of the necessary rules.
       * @returns Ext.dom.Element The outermost wrapping element of the created box structure.
       */
-    var boxWrap: js.UndefOr[js.Function1[/* clazz */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var boxWrap: js.UndefOr[js.Function1[/* clazz */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] When an element is moved around in the DOM or is hidden using display none it loses layout and therefore all scrol
       * @returns Function A function which will restore all descentant elements of this Element to their scroll positions recorded when this function was executed. Be aware that the returned function is a closure which has captured the scope of cacheScrollValues, so take care to derefence it as soon as not needed - if is it is a var it will drop out of scope, and the reference will be freed.
       */
-    var cacheScrollValues: js.UndefOr[js.Function0[_]] = js.native
+    var cacheScrollValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Centers the Element in either the viewport or another Element
       * @param centerIn String/HTMLElement/Ext.dom.Element element in which to center the element.
       */
-    var center: js.UndefOr[js.Function1[/* centerIn */ js.UndefOr[js.Any], Unit]] = js.native
+    var center: js.UndefOr[js.Function1[/* centerIn */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Removes Empty or whitespace filled text nodes
       * @param forceReclean Boolean By default the element keeps track if it has been cleaned already so you can call this over and over. However, if you update the element and need to force a reclean, you can pass true.
       */
-    var clean: js.UndefOr[js.Function1[/* forceReclean */ js.UndefOr[Boolean], Unit]] = js.native
+    var clean: js.UndefOr[js.Function1[/* forceReclean */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Alias for removeAllListeners
       * @returns Ext.dom.Element this
       */
-    var clearListeners: js.UndefOr[js.Function0[this.type]] = js.native
+    var clearListeners: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Clears any opacity settings from this element
       * @returns Ext.dom.Element this
       */
-    var clearOpacity: js.UndefOr[js.Function0[this.type]] = js.native
+    var clearOpacity: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Clears positioning back to the default when the document was loaded
       * @param value String The value to use for the left, right, top, bottom. You could use 'auto'.
       * @returns Ext.dom.Element this
       */
-    var clearPositioning: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var clearPositioning: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Store the current overflow setting and clip overflow on the element  use unclip to remove Defined in override Ext d
       * @returns Ext.dom.Element this
       */
-    var clip: js.UndefOr[js.Function0[this.type]] = js.native
+    var clip: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Creates a proxy element of this element
       * @param config String/Object The class name of the proxy element or a DomHelper config object
@@ -1688,41 +1734,41 @@ object dom {
           /* matchBox */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Creates an iframe shim for this element to keep selects and other windowed objects from showing through
       * @returns Ext.dom.Element The new shim element
       */
-    var createShim: js.UndefOr[js.Function0[this.type]] = js.native
+    var createShim: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Convenience method for setVisibilityMode Element DISPLAY
       * @param display String What to set display to when visible
       * @returns Ext.dom.Element this
       */
-    var enableDisplayMode: js.UndefOr[js.Function1[/* display */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var enableDisplayMode: js.UndefOr[js.Function1[/* display */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Fade an element in from transparent to opaque
       * @param options Object Object literal with any of the Ext.fx.Anim config options
       * @returns Ext.Element The Element
       */
-    var fadeIn: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var fadeIn: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Fade an element out from opaque to transparent
       * @param options Object Object literal with any of the Ext.fx.Anim config options
       * @returns Ext.Element The Element
       */
-    var fadeOut: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var fadeOut: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Tries to focus the element
       * @param defer Number Milliseconds to defer the focus
       * @returns Ext.dom.Element this
       */
-    var focus: js.UndefOr[js.Function1[/* defer */ js.UndefOr[Double], this.type]] = js.native
+    var focus: js.UndefOr[js.Function1[/* defer */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Method] Alias for isFocusable
       * @returns Boolean True if the element is focusable
       */
-    var focusable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var focusable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Shows a ripple of exploding attenuating borders to draw attention to an Element
       * @param color String The hex color value for the border.
@@ -1737,7 +1783,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of a namespaced attribute from the element s underlying DOM node
       * @param namespace String The namespace in which to look for the attribute
@@ -1750,18 +1796,18 @@ object dom {
           /* name */ js.UndefOr[java.lang.String], 
           java.lang.String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the bottom Y coordinate of the element element Y position  element height  Defined in override Ext dom Elemen
       * @param local Boolean True to get the local css position instead of page coordinate
       * @returns Number
       */
-    var getBottom: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.native
+    var getBottom: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Calculates the x y to center this element on the screen Defined in override Ext dom Element_position
       * @returns Number[] The x, y values [x, y]
       */
-    var getCenterXY: js.UndefOr[js.Function0[Array]] = js.native
+    var getCenterXY: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Return the CSS color for the specified CSS attribute
       * @param attr String The css attribute
@@ -1775,87 +1821,87 @@ object dom {
           /* prefix */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns either the offsetHeight or the height of this element based on CSS height adjusted by padding or borders when
       * @returns Number
       */
-    var getComputedHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getComputedHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns either the offsetWidth or the width of this element based on CSS width adjusted by padding or borders when ne
       * @returns Number
       */
-    var getComputedWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getComputedWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the sum width of the padding and borders for the passed sides
       * @param sides String
       * @returns Number
       */
-    var getFrameWidth: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], Double]] = js.native
+    var getFrameWidth: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], Double]] = js.undefined
     
     /** [Method] Gets the left X coordinate Defined in override Ext dom Element_position
       * @param local Boolean True to get the local css position instead of page coordinate
       * @returns Number
       */
-    var getLeft: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.native
+    var getLeft: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Gets this element s ElementLoader
       * @returns Ext.ElementLoader The loader
       */
-    var getLoader: js.UndefOr[js.Function0[IElementLoader]] = js.native
+    var getLoader: js.UndefOr[js.Function0[IElementLoader]] = js.undefined
     
     /** [Method] Gets the local CSS X position for the element Defined in override Ext dom Element_position
       * @returns Number
       */
-    var getLocalX: js.UndefOr[js.Function0[Double]] = js.native
+    var getLocalX: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Gets the local CSS X and Y position for the element Defined in override Ext dom Element_position
       * @returns Array [x, y]
       */
-    var getLocalXY: js.UndefOr[js.Function0[Array]] = js.native
+    var getLocalXY: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Gets the local CSS Y position for the element Defined in override Ext dom Element_position
       * @returns Number
       */
-    var getLocalY: js.UndefOr[js.Function0[Double]] = js.native
+    var getLocalY: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns an object defining the area of this Element which can be passed to Ext util Positionable setBox to set anothe
       * @param asRegion Boolean If true an Ext.util.Region will be returned
       * @returns Object/Ext.util.Region box An object in the following format: {  left: &lt;Element's X position&gt;,  top: &lt;Element's Y position&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. So the result may also be used for setXY
       */
-    var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], _]] = js.native
+    var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], js.Any]] = js.undefined
     
     /** [Method] Gets an object with all CSS positioning properties
       * @param autoPx Boolean true to return pixel values for "auto" styles.
       * @returns Object
       */
-    var getPositioning: js.UndefOr[js.Function1[/* autoPx */ js.UndefOr[Boolean], _]] = js.native
+    var getPositioning: js.UndefOr[js.Function1[/* autoPx */ js.UndefOr[Boolean], js.Any]] = js.undefined
     
     /** [Method] Gets the right X coordinate of the element element X position  element width  Defined in override Ext dom Element_
       * @param local Boolean True to get the local css position instead of page coordinates
       * @returns Number
       */
-    var getRight: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.native
+    var getRight: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Returns the current scroll position of the element
       * @returns Object An object containing the scroll position in the format {left: (scrollLeft), top: (scrollTop)}
       */
-    var getScroll: js.UndefOr[js.Function0[_]] = js.native
+    var getScroll: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Gets the left scroll position Defined in override Ext dom Element_scroll
       * @returns Number The left scroll position
       */
-    var getScrollLeft: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollLeft: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Gets the top scroll position Defined in override Ext dom Element_scroll
       * @returns Number The top scroll position
       */
-    var getScrollTop: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollTop: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the dimensions of the element available to lay content out in
       * @returns Object Object describing width and height.
       */
-    var getStyleSize: js.UndefOr[js.Function0[_]] = js.native
+    var getStyleSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the width in pixels of the passed text or the width of the text in this Element
       * @param text String The text to measure. Defaults to the innerHTML of the element.
@@ -1870,28 +1916,28 @@ object dom {
           /* max */ js.UndefOr[Double], 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the top Y coordinate Defined in override Ext dom Element_position
       * @param local Boolean True to get the local css position instead of page coordinates
       * @returns Number
       */
-    var getTop: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.native
+    var getTop: js.UndefOr[js.Function1[/* local */ js.UndefOr[Boolean], Double]] = js.undefined
     
     /** [Method] Gets element X position in page coordinates Defined in override Ext dom Element_position
       * @returns Number
       */
-    var getX: js.UndefOr[js.Function0[Double]] = js.native
+    var getX: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Gets element X and Y positions in page coordinates Defined in override Ext dom Element_position
       * @returns Array [x, y]
       */
-    var getXY: js.UndefOr[js.Function0[Array]] = js.native
+    var getXY: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Gets element Y position in page coordinates Defined in override Ext dom Element_position
       * @returns Number
       */
-    var getY: js.UndefOr[js.Function0[Double]] = js.native
+    var getY: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Slides the element while fading it out of view
       * @param anchor String One of the valid Ext.fx.Anim anchor positions (defaults to bottom: 'b')
@@ -1904,14 +1950,14 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Hide this element  Uses display mode to determine whether to use display or visibility
       * @param animate Boolean/Object true for the default animation or a standard Element animation config object
       * @returns Ext.dom.Element this
       */
     @JSName("hide")
-    var hide_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.native
+    var hide_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Highlights the Element by setting a color applies to the background color by default but can be changed using the
       * @param color String The highlight color. Should be a 6 char hex color without the leading # (defaults to yellow: 'ffff9c')
@@ -1924,7 +1970,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets up event handlers to call the passed functions when the mouse is moved into and out of the Element
       * @param overFn Function The function to call when the mouse enters the Element.
@@ -1941,7 +1987,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Initializes a Ext dd DD drag drop object for this element
       * @param group String The group the DD object is member of
@@ -1956,7 +2002,7 @@ object dom {
           /* overrides */ js.UndefOr[js.Any], 
           IDD
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Initializes a Ext dd DDProxy object for this element
       * @param group String The group the DDProxy object is member of
@@ -1971,7 +2017,7 @@ object dom {
           /* overrides */ js.UndefOr[js.Any], 
           IDDProxy
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Initializes a Ext dd DDTarget object for this element
       * @param group String The group the DDTarget object is member of
@@ -1986,45 +2032,45 @@ object dom {
           /* overrides */ js.UndefOr[js.Any], 
           IDDTarget
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Tests various css rules browsers to determine if this element uses a border box
       * @returns Boolean
       */
-    var isBorderBox: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isBorderBox: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns true if display is not none
       * @returns Boolean
       */
-    var isDisplayed: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isDisplayed: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Checks whether this element can be focused
       * @param asFocusEl Object
       * @returns Boolean True if the element is focusable
       */
-    var isFocusable: js.UndefOr[js.Function1[/* asFocusEl */ js.UndefOr[js.Any], Boolean]] = js.native
+    var isFocusable: js.UndefOr[js.Function1[/* asFocusEl */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Method] Returns true if this element is masked
       * @returns Boolean
       */
-    var isMasked: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isMasked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns true if this element is scrollable
       * @returns Boolean
       */
-    var isScrollable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isScrollable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Checks whether the element is currently visible using both visibility and display properties
       * @param deep Boolean True to walk the dom and see if parent elements are hidden. If false, the function only checks the visibility of the element itself and it may return true even though a parent is not visible.
       * @returns Boolean true if the element is currently visible, else false
       */
-    var isVisible: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Boolean], Boolean]] = js.native
+    var isVisible: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Boolean], Boolean]] = js.undefined
     
     /** [Method] Direct access to the Ext ElementLoader Ext ElementLoader load method
       * @param options Object
       * @returns Ext.dom.Element this
       */
-    var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Puts a mask over this element to disable user interaction
       * @param msg String A message to display in the mask
@@ -2038,7 +2084,7 @@ object dom {
           /* msgCls */ js.UndefOr[java.lang.String], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Monitors this Element for the mouse leaving
       * @param delay Number The delay in milliseconds to wait for possible mouse re-entry before calling the handler function.
@@ -2051,9 +2097,9 @@ object dom {
           /* delay */ js.UndefOr[Double], 
           /* handler */ js.UndefOr[js.Any], 
           /* scope */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the position of the element in page coordinates
       * @param x Number X value for new position (coordinates are page-based)
@@ -2068,10 +2114,10 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns true if this element needs an explicit tabIndex to make it focusable  */
-    var needsTabIndex: js.UndefOr[js.Function0[Unit]] = js.native
+    var needsTabIndex: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Appends an event handler to this element
       * @param eventName String The name of event to handle.
@@ -2088,16 +2134,16 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (String) */
-    var originalDisplay: js.UndefOr[java.lang.String] = js.native
+    var originalDisplay: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Creates a pause before any subsequent queued effects begin
       * @param seconds Number The length of time to pause (in seconds)
       * @returns Ext.Element The Element
       */
-    var pause: js.UndefOr[js.Function1[/* seconds */ js.UndefOr[Double], this.type]] = js.native
+    var pause: js.UndefOr[js.Function1[/* seconds */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Method] Initializes positioning on this element
       * @param pos String Positioning to use "relative", "absolute" or "fixed"
@@ -2113,18 +2159,18 @@ object dom {
           /* y */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Fades the element out while slowly expanding it in all directions
       * @param options Object Object literal with any of the Ext.fx.Anim config options
       * @returns Ext.dom.Element The Element
       */
-    var puff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var puff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Recursively removes all previous added listeners from this element and its children
       * @returns Ext.dom.Element this
       */
-    var purgeAllListeners: js.UndefOr[js.Function0[this.type]] = js.native
+    var purgeAllListeners: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Create an event handler on this element such that when the event fires and is handled by this element it will be rel
       * @param eventName String The type of event to relay
@@ -2136,12 +2182,12 @@ object dom {
           /* observable */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes all previous added listeners from this element
       * @returns Ext.dom.Element this
       */
-    var removeAllListeners: js.UndefOr[js.Function0[this.type]] = js.native
+    var removeAllListeners: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Shorthand for un
       * @param eventName String The name of the event from which to remove the handler.
@@ -2156,7 +2202,7 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Animates the transition of an element s dimensions from a starting height width to an ending height width
       * @param width Number The new width (pass undefined to keep the original width)
@@ -2171,7 +2217,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls this element the specified direction
       * @param direction String Possible values are:  "l" (or "left") "r" (or "right") "t" (or "top", or "up") "b" (or "bottom", or "down")
@@ -2186,7 +2232,7 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls this element by the passed delta values optionally animating
       * @param deltaX Number/Number[]/Object Either the x delta, an Array specifying x and y deltas or an object with "x" and "y" properties.
@@ -2201,7 +2247,7 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls this element into view within the passed container
       * @param container String/HTMLElement/Ext.Element The container element to scroll. Should be a string (id), dom node, or Ext.Element.
@@ -2218,7 +2264,7 @@ object dom {
           /* highlight */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls this element the specified scroll point
       * @param side String Either "left" for scrollLeft values or "top" for scrollTop values.
@@ -2233,18 +2279,18 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Enable text selection for this element normalized across browsers  Defined in override Ext dom Element_style
       * @returns Ext.Element this
       */
-    var selectable: js.UndefOr[js.Function0[this.type]] = js.native
+    var selectable: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Sets the element s CSS bottom style
       * @param bottom Number/String Number of pixels or CSS string value to set as the bottom CSS property value
       * @returns Ext.dom.Element this
       */
-    var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], this.type]] = js.native
+    var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the element s position and size in one shot
       * @param x Number X value for new position (coordinates are page-based)
@@ -2263,19 +2309,19 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the CSS display property
       * @param value Boolean/String Boolean value to display the element using its default display, or a string to set the display directly.
       * @returns Ext.dom.Element this
       */
-    var setDisplayed: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.native
+    var setDisplayed: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the element s left position directly using CSS style instead of setX
       * @param left Number/String Number of pixels or CSS string value to set as the left CSS property value
       * @returns Ext.dom.Element this
       */
-    var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], this.type]] = js.native
+    var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
       * @param left Number/String Number of pixels or CSS string value to set as the left CSS property value
@@ -2284,7 +2330,7 @@ object dom {
       */
     var setLeftTop: js.UndefOr[
         js.Function2[/* left */ js.UndefOr[js.Any], /* top */ js.UndefOr[js.Any], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the position of the element in page coordinates
       * @param x Number X value for new position
@@ -2299,7 +2345,7 @@ object dom {
           /* animate */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Set the opacity of the element Defined in override Ext dom Element_style
       * @param opacity Number The new opacity. 0 = transparent, .5 = 50% visibile, 1 = fully visible, etc
@@ -2308,37 +2354,37 @@ object dom {
       */
     var setOpacity: js.UndefOr[
         js.Function2[/* opacity */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Set positioning with an object returned by getPositioning
       * @param posCfg Object
       * @returns Ext.dom.Element this
       */
-    var setPositioning: js.UndefOr[js.Function1[/* posCfg */ js.UndefOr[js.Any], this.type]] = js.native
+    var setPositioning: js.UndefOr[js.Function1[/* posCfg */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the element s CSS right style
       * @param right Number/String Number of pixels or CSS string value to set as the right CSS property value
       * @returns Ext.dom.Element this
       */
-    var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], this.type]] = js.native
+    var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the left scroll position Defined in override Ext dom Element_scroll
       * @param left Number The left scroll position
       * @returns Ext.dom.Element this
       */
-    var setScrollLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[Double], this.type]] = js.native
+    var setScrollLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Method] Sets the top scroll position Defined in override Ext dom Element_scroll
       * @param top Number The top scroll position
       * @returns Ext.dom.Element this
       */
-    var setScrollTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[Double], this.type]] = js.native
+    var setScrollTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Method] Sets the element s top position directly using CSS style instead of setY
       * @param top Number/String Number of pixels or CSS string value to set as the top CSS property value
       * @returns Ext.dom.Element this
       */
-    var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], this.type]] = js.native
+    var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the visibility of the element see details
       * @param visible Boolean Whether the element is visible
@@ -2348,20 +2394,20 @@ object dom {
     @JSName("setVisible")
     var setVisible_IElement: js.UndefOr[
         js.Function2[/* visible */ js.UndefOr[Boolean], /* animate */ js.UndefOr[js.Any], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Animates the transition of any combination of an element s dimensions xy position and or opacity
       * @param options Object Object literal with any of the Ext.fx.Anim config options
       * @returns Ext.Element The Element
       */
-    var shift: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var shift: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Show this element  Uses display mode to determine whether to use display or visibility
       * @param animate Boolean/Object true for the default animation or a standard Element animation config object
       * @returns Ext.dom.Element this
       */
     @JSName("show")
-    var show_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.native
+    var show_IElement: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Slides the element into view
       * @param anchor String One of the valid Ext.fx.Anim anchor positions (defaults to top: 't')
@@ -2374,7 +2420,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Slides the element out of view
       * @param anchor String One of the valid Ext.fx.Anim anchor positions (defaults to top: 't')
@@ -2387,7 +2433,7 @@ object dom {
           /* options */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Stops the specified event s from bubbling and optionally prevents the default action
       * @param eventName String/String[] an event / array of events to stop from bubbling
@@ -2400,19 +2446,19 @@ object dom {
           /* preventDefault */ js.UndefOr[Boolean], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Blinks the element as if it was clicked and then collapses on its center similar to switching off a television
       * @param options Object Object literal with any of the Ext.fx.Anim config options
       * @returns Ext.dom.Element The Element
       */
-    var switchOff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.native
+    var switchOff: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Toggles the element s visibility or display depending on visibility mode
       * @param animate Boolean/Object True for the default animation, or a standard Element animation config object
       * @returns Ext.dom.Element this
       */
-    var toggle: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.native
+    var toggle: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Removes an event handler from this element
       * @param eventName String The name of the event from which to remove the handler.
@@ -2427,17 +2473,17 @@ object dom {
           /* scope */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Return clipping overflow to original clipping before clip was called Defined in override Ext dom Element_style
       * @returns Ext.dom.Element this
       */
-    var unclip: js.UndefOr[js.Function0[this.type]] = js.native
+    var unclip: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Disables text selection for this element normalized across browsers  Defined in override Ext dom Element_style
       * @returns Ext.dom.Element this
       */
-    var unselectable: js.UndefOr[js.Function0[this.type]] = js.native
+    var unselectable: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Updates the innerHTML of this element optionally searching for and processing scripts
       * @param html String The new HTML
@@ -2453,7 +2499,7 @@ object dom {
           /* callback */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IElement {
     
@@ -2537,7 +2583,7 @@ object dom {
       def setBoxWrapUndefined: Self = StObject.set(x, "boxWrap", js.undefined)
       
       @scala.inline
-      def setCacheScrollValues(value: () => _): Self = StObject.set(x, "cacheScrollValues", js.Any.fromFunction0(value))
+      def setCacheScrollValues(value: () => js.Any): Self = StObject.set(x, "cacheScrollValues", js.Any.fromFunction0(value))
       
       @scala.inline
       def setCacheScrollValuesUndefined: Self = StObject.set(x, "cacheScrollValues", js.undefined)
@@ -2707,13 +2753,13 @@ object dom {
       def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
       
       @scala.inline
-      def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
+      def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetPageBoxUndefined: Self = StObject.set(x, "getPageBox", js.undefined)
       
       @scala.inline
-      def setGetPositioning(value: /* autoPx */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getPositioning", js.Any.fromFunction1(value))
+      def setGetPositioning(value: /* autoPx */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getPositioning", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetPositioningUndefined: Self = StObject.set(x, "getPositioning", js.undefined)
@@ -2725,7 +2771,7 @@ object dom {
       def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
       
       @scala.inline
-      def setGetScroll(value: () => _): Self = StObject.set(x, "getScroll", js.Any.fromFunction0(value))
+      def setGetScroll(value: () => js.Any): Self = StObject.set(x, "getScroll", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
@@ -2743,7 +2789,7 @@ object dom {
       def setGetScrollUndefined: Self = StObject.set(x, "getScroll", js.undefined)
       
       @scala.inline
-      def setGetStyleSize(value: () => _): Self = StObject.set(x, "getStyleSize", js.Any.fromFunction0(value))
+      def setGetStyleSize(value: () => js.Any): Self = StObject.set(x, "getStyleSize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStyleSizeUndefined: Self = StObject.set(x, "getStyleSize", js.undefined)
@@ -2886,7 +2932,7 @@ object dom {
       
       @scala.inline
       def setMonitorMouseLeave(
-        value: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
+        value: (/* delay */ js.UndefOr[Double], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "monitorMouseLeave", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -3178,29 +3224,30 @@ object dom {
     }
   }
   
-  @js.native
-  trait IHelper extends IAbstractHelper {
+  trait IHelper
+    extends StObject
+       with IAbstractHelper {
     
     /** [Method] Creates new DOM element s without inserting them to the document
       * @param o Object/String The DOM object spec (and children) or raw HTML blob
       * @returns HTMLElement The new uninserted node
       */
-    var createDom: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], HTMLElement]] = js.native
+    var createDom: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], HTMLElement]] = js.undefined
     
     /** [Method] Alias for markup
       * @param spec Object The DOM object spec (and children)
       * @returns String
       */
-    var createHtml: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.native
+    var createHtml: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
     
     /** [Method] Creates a new Ext Template from the DOM object spec
       * @param o Object The DOM object spec (and children)
       * @returns Ext.Template The new template
       */
-    var createTemplate: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], ITemplate]] = js.native
+    var createTemplate: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], ITemplate]] = js.undefined
     
     /** [Property] (Boolean) */
-    var useDom: js.UndefOr[Boolean] = js.native
+    var useDom: js.UndefOr[Boolean] = js.undefined
   }
   object IHelper {
     
@@ -3239,21 +3286,21 @@ object dom {
     }
   }
   
-  @js.native
   trait ILayer
-    extends typings.extjs.Ext.IElement {
+    extends StObject
+       with typings.extjs.Ext.IElement {
     
     /** [Config Option] (String) */
-    var cls: js.UndefOr[java.lang.String] = js.native
+    var cls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var constrain: js.UndefOr[Boolean] = js.native
+    var constrain: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var dh: js.UndefOr[js.Any] = js.native
+    var dh: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var hideMode: js.UndefOr[java.lang.String] = js.native
+    var hideMode: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] overridden Element method
       * @param x Object
@@ -3279,7 +3326,7 @@ object dom {
           /* easing */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] overridden Element method
       * @param h Object
@@ -3299,7 +3346,7 @@ object dom {
           /* easing */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the element s left and top positions directly using CSS style Defined in override Ext dom Element_position
       * @param left Object
@@ -3313,14 +3360,14 @@ object dom {
           /* top */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] overridden Element method
       * @param left Object
       * @returns Ext.dom.Element this
       */
     @JSName("setLeft")
-    var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var setLeft_ILayer: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] overridden Element method
       * @param w Object
@@ -3342,14 +3389,14 @@ object dom {
           /* easing */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the element s top position directly using CSS style instead of setY
       * @param top Object
       * @returns Ext.dom.Element this
       */
     @JSName("setTop")
-    var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.native
+    var setTop_ILayer: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], typings.extjs.Ext.dom.IElement]] = js.undefined
     
     /** [Method] overridden Element method
       * @param visible Object
@@ -3369,7 +3416,7 @@ object dom {
           /* easing */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] overridden Element method
       * @param w Object
@@ -3389,31 +3436,31 @@ object dom {
           /* easing */ js.UndefOr[js.Any], 
           typings.extjs.Ext.dom.IElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the z index of this layer and adjusts any shadow and shim z indexes
       * @param zindex Number The new z-index to set
       * @returns Ext.Layer The Layer
       */
-    var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.native
+    var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Config Option] (String/Boolean) */
-    var shadow: js.UndefOr[js.Any] = js.native
+    var shadow: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var shadowOffset: js.UndefOr[Double] = js.native
+    var shadowOffset: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var shim: js.UndefOr[Boolean] = js.native
+    var shim: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var useDisplay: js.UndefOr[Boolean] = js.native
+    var useDisplay: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var visibilityCls: js.UndefOr[java.lang.String] = js.native
+    var visibilityCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var zindex: js.UndefOr[Double] = js.native
+    var zindex: js.UndefOr[Double] = js.undefined
   }
   object ILayer {
     
@@ -3554,20 +3601,18 @@ object dom {
     }
   }
   
-  @js.native
   trait IQuery extends StObject
   
-  @js.native
   trait Query extends StObject
   
   object abstractelement {
     
-    @js.native
     trait IFly
-      extends typings.extjs.Ext.dom.IElement {
+      extends StObject
+         with typings.extjs.Ext.dom.IElement {
       
       /** [Property] (Boolean) */
-      var isFly: js.UndefOr[Boolean] = js.native
+      var isFly: js.UndefOr[Boolean] = js.undefined
     }
     object IFly {
       
@@ -3591,12 +3636,12 @@ object dom {
   
   object element {
     
-    @js.native
     trait IFly
-      extends typings.extjs.Ext.dom.IElement {
+      extends StObject
+         with typings.extjs.Ext.dom.IElement {
       
       /** [Property] (Boolean) */
-      var isFly: js.UndefOr[Boolean] = js.native
+      var isFly: js.UndefOr[Boolean] = js.undefined
     }
     object IFly {
       

@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Expression extends BaseElement {
+trait Expression
+  extends StObject
+     with BaseElement {
   
-  var body: String = js.native
+  var body: String
 }
 object Expression {
   

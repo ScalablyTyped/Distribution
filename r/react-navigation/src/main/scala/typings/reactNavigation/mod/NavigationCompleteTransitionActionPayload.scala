@@ -2,15 +2,13 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationCompleteTransitionActionPayload extends StObject {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var toChildKey: js.UndefOr[String] = js.native
+  var toChildKey: js.UndefOr[String] = js.undefined
 }
 object NavigationCompleteTransitionActionPayload {
   

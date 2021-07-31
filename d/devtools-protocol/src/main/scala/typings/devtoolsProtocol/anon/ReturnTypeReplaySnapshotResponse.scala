@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.LayerTree.ReplaySnapshotRequest
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.ReplaySnapshotResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeReplaySnapshotResponse extends StObject {
   
-  var paramsType: js.Array[ReplaySnapshotRequest] = js.native
+  var paramsType: js.Array[ReplaySnapshotRequest]
   
-  var returnType: ReplaySnapshotResponse = js.native
+  var returnType: ReplaySnapshotResponse
 }
 object ReturnTypeReplaySnapshotResponse {
   

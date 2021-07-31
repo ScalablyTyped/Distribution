@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.NumericTextBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofNumericTextBox extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): NumericTextBox = js.native
+  def extend(proto: js.Object): NumericTextBox
   
   /* static member */
-  var fn: NumericTextBox = js.native
+  var fn: NumericTextBox
 }
 object TypeofNumericTextBox {
   

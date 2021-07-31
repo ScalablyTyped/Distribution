@@ -5,17 +5,15 @@ import typings.minappEnv.minappEnvStrings.normal
 import typings.minappEnv.minappEnvStrings.ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartGyroscopeOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[StartGyroscopeCompleteCallback] = js.native
+  var complete: js.UndefOr[StartGyroscopeCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[StartGyroscopeFailCallback] = js.native
+  var fail: js.UndefOr[StartGyroscopeFailCallback] = js.undefined
   
   /** 监听陀螺仪数据回调函数的执行频率
     *
@@ -23,10 +21,10 @@ trait StartGyroscopeOption extends StObject {
     * - 'game': 适用于更新游戏的回调频率，在 20ms/次 左右;
     * - 'ui': 适用于更新 UI 的回调频率，在 60ms/次 左右;
     * - 'normal': 普通的回调频率，在 200ms/次 左右; */
-  var interval: js.UndefOr[game | ui | normal] = js.native
+  var interval: js.UndefOr[game | ui | normal] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[StartGyroscopeSuccessCallback] = js.native
+  var success: js.UndefOr[StartGyroscopeSuccessCallback] = js.undefined
 }
 object StartGyroscopeOption {
   

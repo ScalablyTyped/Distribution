@@ -10,9 +10,9 @@ Parameterized test utility for Mocha
 | ------------------ | :-------------: |
 | Full name          | mocha-each |
 | Keywords           | parameterized, test, mocha, each |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 789066 |
+| # downloads        | 900696 |
 | # stars            | 2 |
 
 ## Links

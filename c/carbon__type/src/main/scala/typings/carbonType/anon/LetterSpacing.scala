@@ -2,17 +2,15 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetterSpacing extends StObject {
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var letterSpacing: String = js.native
+  var letterSpacing: String
   
-  var lineHeight: String = js.native
+  var lineHeight: String
 }
 object LetterSpacing {
   

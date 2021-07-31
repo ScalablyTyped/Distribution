@@ -10,10 +10,8 @@ import typings.xterm.xtermStrings.sound
 import typings.xterm.xtermStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITerminalOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait ITerminalOptions extends StObject {
     * marked as experimental/proposed will throw an error. This defaults to
     * true currently, but will change to false in v5.0.
     */
-  var allowProposedApi: js.UndefOr[Boolean] = js.native
+  var allowProposedApi: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether background should support non-opaque color. It must be set before
@@ -29,22 +27,22 @@ trait ITerminalOptions extends StObject {
     * executing it again. Note that enabling this can negatively impact
     * performance.
     */
-  var allowTransparency: js.UndefOr[Boolean] = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A data uri of the sound to use for the bell when `bellStyle = 'sound'`.
     */
-  var bellSound: js.UndefOr[String] = js.native
+  var bellSound: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the bell notification the terminal will use.
     */
-  var bellStyle: js.UndefOr[none | sound] = js.native
+  var bellStyle: js.UndefOr[none | sound] = js.undefined
   
   /**
     * The number of columns in the terminal.
     */
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
   /**
     * When enabled the cursor will be set to the beginning of the next line
@@ -54,79 +52,79 @@ trait ITerminalOptions extends StObject {
     * deal with data from a non-PTY related source, this settings might be
     * useful.
     */
-  var convertEol: js.UndefOr[Boolean] = js.native
+  var convertEol: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the cursor blinks.
     */
-  var cursorBlink: js.UndefOr[Boolean] = js.native
+  var cursorBlink: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The style of the cursor.
     */
-  var cursorStyle: js.UndefOr[block | underline | bar] = js.native
+  var cursorStyle: js.UndefOr[block | underline | bar] = js.undefined
   
   /**
     * The width of the cursor in CSS pixels when `cursorStyle` is set to 'bar'.
     */
-  var cursorWidth: js.UndefOr[Double] = js.native
+  var cursorWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether input should be disabled.
     */
-  var disableStdin: js.UndefOr[Boolean] = js.native
+  var disableStdin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to draw bold text in bright colors. The default is true.
     */
-  var drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.native
+  var drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The modifier key hold to multiply scroll speed.
     */
-  var fastScrollModifier: js.UndefOr[alt | ctrl | shift] = js.native
+  var fastScrollModifier: js.UndefOr[alt | ctrl | shift] = js.undefined
   
   /**
     * The scroll speed multiplier used for fast scrolling.
     */
-  var fastScrollSensitivity: js.UndefOr[Double] = js.native
+  var fastScrollSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * The font family used to render text.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The font size used to render text.
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The font weight used to render non-bold text.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * The font weight used to render bold text.
     */
-  var fontWeightBold: js.UndefOr[FontWeight] = js.native
+  var fontWeightBold: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * The spacing in whole pixels between characters.
     */
-  var letterSpacing: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * The line height used to render text.
     */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The duration in milliseconds before link tooltip events fire when
     * hovering on a link.
     * @deprecated This will be removed when the link matcher API is removed.
     */
-  var linkTooltipHoverDuration: js.UndefOr[Double] = js.native
+  var linkTooltipHoverDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * What log level to use, this will log for all levels below and including
@@ -138,7 +136,7 @@ trait ITerminalOptions extends StObject {
     * 4. error
     * 5. off
     */
-  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   
   /**
     * Whether holding a modifier key will force normal selection behavior,
@@ -147,12 +145,12 @@ trait ITerminalOptions extends StObject {
     * example, this allows you to use xterm.js' regular selection inside tmux
     * with mouse mode enabled.
     */
-  var macOptionClickForcesSelection: js.UndefOr[Boolean] = js.native
+  var macOptionClickForcesSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to treat option as the meta key.
     */
-  var macOptionIsMeta: js.UndefOr[Boolean] = js.native
+  var macOptionIsMeta: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The minimum contrast ratio for text in the terminal, setting this will
@@ -164,7 +162,7 @@ trait ITerminalOptions extends StObject {
     * - 7: Minimum for WCAG AAA compliance.
     * - 21: White on black or black on white.
     */
-  var minimumContrastRatio: js.UndefOr[Double] = js.native
+  var minimumContrastRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of renderer to use, this allows using the fallback DOM renderer
@@ -174,53 +172,53 @@ trait ITerminalOptions extends StObject {
     * - Letter spacing
     * - Cursor blink
     */
-  var rendererType: js.UndefOr[RendererType] = js.native
+  var rendererType: js.UndefOr[RendererType] = js.undefined
   
   /**
     * Whether to select the word under the cursor on right click, this is
     * standard behavior in a lot of macOS applications.
     */
-  var rightClickSelectsWord: js.UndefOr[Boolean] = js.native
+  var rightClickSelectsWord: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of rows in the terminal.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether screen reader support is enabled. When on this will expose
     * supporting elements in the DOM to support NVDA on Windows and VoiceOver
     * on macOS.
     */
-  var screenReaderMode: js.UndefOr[Boolean] = js.native
+  var screenReaderMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scrolling speed multiplier used for adjusting normal scrolling speed.
     */
-  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of scrollback in the terminal. Scrollback is the amount of
     * rows that are retained when lines are scrolled beyond the initial
     * viewport.
     */
-  var scrollback: js.UndefOr[Double] = js.native
+  var scrollback: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of tab stops in the terminal.
     */
-  var tabStopWidth: js.UndefOr[Double] = js.native
+  var tabStopWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The color theme of the terminal.
     */
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
   /**
     * Enable various window manipulation and report features.
     * All features are disabled by default for security reasons.
     */
-  var windowOptions: js.UndefOr[IWindowOptions] = js.native
+  var windowOptions: js.UndefOr[IWindowOptions] = js.undefined
   
   /**
     * Whether "Windows mode" is enabled. Because Windows backends winpty and
@@ -232,13 +230,13 @@ trait ITerminalOptions extends StObject {
     * - Lines are assumed to be wrapped if the last character of the line is
     *   not whitespace.
     */
-  var windowsMode: js.UndefOr[Boolean] = js.native
+  var windowsMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string containing all characters that are considered word separated by the
     * double click to select work logic.
     */
-  var wordSeparator: js.UndefOr[String] = js.native
+  var wordSeparator: js.UndefOr[String] = js.undefined
 }
 object ITerminalOptions {
   

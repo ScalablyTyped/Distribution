@@ -11,7 +11,6 @@ import typings.ionicReact.routerDirectionMod.RouterDirection
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navManagerMod {
@@ -31,171 +30,118 @@ object navManagerMod {
     def getStackManager(): js.Any = js.native
     
     def goBack(): Unit = js.native
-    def goBack(route: js.UndefOr[scala.Nothing], animationBuilder: AnimationBuilder): Unit = js.native
     def goBack(route: String): Unit = js.native
     def goBack(route: String, animationBuilder: AnimationBuilder): Unit = js.native
-    def goBack(route: RouteInfo[_]): Unit = js.native
-    def goBack(route: RouteInfo[_], animationBuilder: AnimationBuilder): Unit = js.native
+    def goBack(route: Unit, animationBuilder: AnimationBuilder): Unit = js.native
+    def goBack(route: RouteInfo[js.Any]): Unit = js.native
+    def goBack(route: RouteInfo[js.Any], animationBuilder: AnimationBuilder): Unit = js.native
     
     var ionRouterContextValue: IonRouterContextState = js.native
     
     def navigate(path: String): Unit = js.native
+    def navigate(path: String, direction: Unit, action: Unit, animationBuilder: Unit, options: js.Any): Unit = js.native
+    def navigate(path: String, direction: Unit, action: Unit, animationBuilder: Unit, options: js.Any, tab: String): Unit = js.native
+    def navigate(path: String, direction: Unit, action: Unit, animationBuilder: Unit, options: Unit, tab: String): Unit = js.native
+    def navigate(path: String, direction: Unit, action: Unit, animationBuilder: AnimationBuilder): Unit = js.native
+    def navigate(path: String, direction: Unit, action: Unit, animationBuilder: AnimationBuilder, options: js.Any): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
+      direction: Unit,
+      action: Unit,
+      animationBuilder: AnimationBuilder,
+      options: js.Any,
       tab: String
     ): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.Any
+      direction: Unit,
+      action: Unit,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
+      tab: String
     ): Unit = js.native
+    def navigate(path: String, direction: Unit, action: RouteAction): Unit = js.native
+    def navigate(path: String, direction: Unit, action: RouteAction, animationBuilder: Unit, options: js.Any): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
+      direction: Unit,
+      action: RouteAction,
+      animationBuilder: Unit,
       options: js.Any,
       tab: String
     ): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
+      direction: Unit,
+      action: RouteAction,
+      animationBuilder: Unit,
+      options: Unit,
       tab: String
     ): Unit = js.native
+    def navigate(path: String, direction: Unit, action: RouteAction, animationBuilder: AnimationBuilder): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder,
-      options: js.Any
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder,
-      options: js.Any,
-      tab: String
-    ): Unit = js.native
-    def navigate(path: String, direction: js.UndefOr[scala.Nothing], action: RouteAction): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.Any
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.Any,
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: RouteAction,
-      animationBuilder: AnimationBuilder
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
-      action: RouteAction,
-      animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: js.UndefOr[scala.Nothing],
+      direction: Unit,
       action: RouteAction,
       animationBuilder: AnimationBuilder,
       options: js.Any
     ): Unit = js.native
     def navigate(
       path: String,
-      direction: js.UndefOr[scala.Nothing],
+      direction: Unit,
       action: RouteAction,
       animationBuilder: AnimationBuilder,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def navigate(
+      path: String,
+      direction: Unit,
+      action: RouteAction,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
       tab: String
     ): Unit = js.native
     def navigate(path: String, direction: RouterDirection): Unit = js.native
+    def navigate(path: String, direction: RouterDirection, action: Unit, animationBuilder: Unit, options: js.Any): Unit = js.native
     def navigate(
       path: String,
       direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.Any
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
+      action: Unit,
+      animationBuilder: Unit,
       options: js.Any,
       tab: String
     ): Unit = js.native
     def navigate(
       path: String,
       direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
+      action: Unit,
+      animationBuilder: Unit,
+      options: Unit,
       tab: String
     ): Unit = js.native
+    def navigate(path: String, direction: RouterDirection, action: Unit, animationBuilder: AnimationBuilder): Unit = js.native
     def navigate(
       path: String,
       direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
+      action: Unit,
       animationBuilder: AnimationBuilder,
       options: js.Any
     ): Unit = js.native
     def navigate(
       path: String,
       direction: RouterDirection,
-      action: js.UndefOr[scala.Nothing],
+      action: Unit,
       animationBuilder: AnimationBuilder,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def navigate(
+      path: String,
+      direction: RouterDirection,
+      action: Unit,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
       tab: String
     ): Unit = js.native
     def navigate(path: String, direction: RouterDirection, action: RouteAction): Unit = js.native
@@ -203,23 +149,23 @@ object navManagerMod {
       path: String,
       direction: RouterDirection,
       action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: RouterDirection,
-      action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
+      animationBuilder: Unit,
       options: js.Any
     ): Unit = js.native
     def navigate(
       path: String,
       direction: RouterDirection,
       action: RouteAction,
-      animationBuilder: js.UndefOr[scala.Nothing],
+      animationBuilder: Unit,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def navigate(
+      path: String,
+      direction: RouterDirection,
+      action: RouteAction,
+      animationBuilder: Unit,
+      options: Unit,
       tab: String
     ): Unit = js.native
     def navigate(path: String, direction: RouterDirection, action: RouteAction, animationBuilder: AnimationBuilder): Unit = js.native
@@ -228,14 +174,6 @@ object navManagerMod {
       direction: RouterDirection,
       action: RouteAction,
       animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def navigate(
-      path: String,
-      direction: RouterDirection,
-      action: RouteAction,
-      animationBuilder: AnimationBuilder,
       options: js.Any
     ): Unit = js.native
     def navigate(
@@ -244,6 +182,14 @@ object navManagerMod {
       action: RouteAction,
       animationBuilder: AnimationBuilder,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def navigate(
+      path: String,
+      direction: RouterDirection,
+      action: RouteAction,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
       tab: String
     ): Unit = js.native
   }
@@ -261,56 +207,45 @@ object navManagerMod {
     def onChangeTab(tab: String, path: String, routeOptions: js.Any): Unit = js.native
     
     def onNavigate(path: String, action: RouteAction): Unit = js.native
+    def onNavigate(path: String, action: RouteAction, direction: Unit, animationBuilder: Unit, options: js.Any): Unit = js.native
     def onNavigate(
       path: String,
       action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def onNavigate(
-      path: String,
-      action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.Any
-    ): Unit = js.native
-    def onNavigate(
-      path: String,
-      action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
-      animationBuilder: js.UndefOr[scala.Nothing],
+      direction: Unit,
+      animationBuilder: Unit,
       options: js.Any,
       tab: String
     ): Unit = js.native
     def onNavigate(
       path: String,
       action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder
-    ): Unit = js.native
-    def onNavigate(
-      path: String,
-      action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
-      animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
+      direction: Unit,
+      animationBuilder: Unit,
+      options: Unit,
       tab: String
     ): Unit = js.native
+    def onNavigate(path: String, action: RouteAction, direction: Unit, animationBuilder: AnimationBuilder): Unit = js.native
     def onNavigate(
       path: String,
       action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
+      direction: Unit,
       animationBuilder: AnimationBuilder,
       options: js.Any
     ): Unit = js.native
     def onNavigate(
       path: String,
       action: RouteAction,
-      direction: js.UndefOr[scala.Nothing],
+      direction: Unit,
       animationBuilder: AnimationBuilder,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def onNavigate(
+      path: String,
+      action: RouteAction,
+      direction: Unit,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
       tab: String
     ): Unit = js.native
     def onNavigate(path: String, action: RouteAction, direction: RouterDirection): Unit = js.native
@@ -318,23 +253,23 @@ object navManagerMod {
       path: String,
       action: RouteAction,
       direction: RouterDirection,
-      animationBuilder: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def onNavigate(
-      path: String,
-      action: RouteAction,
-      direction: RouterDirection,
-      animationBuilder: js.UndefOr[scala.Nothing],
+      animationBuilder: Unit,
       options: js.Any
     ): Unit = js.native
     def onNavigate(
       path: String,
       action: RouteAction,
       direction: RouterDirection,
-      animationBuilder: js.UndefOr[scala.Nothing],
+      animationBuilder: Unit,
       options: js.Any,
+      tab: String
+    ): Unit = js.native
+    def onNavigate(
+      path: String,
+      action: RouteAction,
+      direction: RouterDirection,
+      animationBuilder: Unit,
+      options: Unit,
       tab: String
     ): Unit = js.native
     def onNavigate(path: String, action: RouteAction, direction: RouterDirection, animationBuilder: AnimationBuilder): Unit = js.native
@@ -343,14 +278,6 @@ object navManagerMod {
       action: RouteAction,
       direction: RouterDirection,
       animationBuilder: AnimationBuilder,
-      options: js.UndefOr[scala.Nothing],
-      tab: String
-    ): Unit = js.native
-    def onNavigate(
-      path: String,
-      action: RouteAction,
-      direction: RouterDirection,
-      animationBuilder: AnimationBuilder,
       options: js.Any
     ): Unit = js.native
     def onNavigate(
@@ -361,20 +288,28 @@ object navManagerMod {
       options: js.Any,
       tab: String
     ): Unit = js.native
+    def onNavigate(
+      path: String,
+      action: RouteAction,
+      direction: RouterDirection,
+      animationBuilder: AnimationBuilder,
+      options: Unit,
+      tab: String
+    ): Unit = js.native
     
     def onNavigateBack(): Unit = js.native
-    def onNavigateBack(route: js.UndefOr[scala.Nothing], animationBuilder: AnimationBuilder): Unit = js.native
     def onNavigateBack(route: String): Unit = js.native
     def onNavigateBack(route: String, animationBuilder: AnimationBuilder): Unit = js.native
-    def onNavigateBack(route: RouteInfo[_]): Unit = js.native
-    def onNavigateBack(route: RouteInfo[_], animationBuilder: AnimationBuilder): Unit = js.native
+    def onNavigateBack(route: Unit, animationBuilder: AnimationBuilder): Unit = js.native
+    def onNavigateBack(route: RouteInfo[js.Any]): Unit = js.native
+    def onNavigateBack(route: RouteInfo[js.Any], animationBuilder: AnimationBuilder): Unit = js.native
     
     def onResetTab(tab: String, path: String): Unit = js.native
     def onResetTab(tab: String, path: String, routeOptions: js.Any): Unit = js.native
     
-    def onSetCurrentTab(tab: String, routeInfo: RouteInfo[_]): Unit = js.native
+    def onSetCurrentTab(tab: String, routeInfo: RouteInfo[js.Any]): Unit = js.native
     
-    var routeInfo: RouteInfo[_] = js.native
+    var routeInfo: RouteInfo[js.Any] = js.native
     
     var stackManager: js.Any = js.native
   }

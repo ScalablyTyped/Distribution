@@ -2,13 +2,11 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SidebarContext extends StObject {
   
-  def init(): Unit = js.native
+  def init(): Unit
 }
 object SidebarContext {
   

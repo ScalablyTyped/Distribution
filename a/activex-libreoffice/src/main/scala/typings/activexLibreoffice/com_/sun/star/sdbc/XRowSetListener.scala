@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for receiving "cursorMoved", "rowChanged", and "rowSetChanged" events posted by, for example, a row set. */
-@js.native
-trait XRowSetListener extends XEventListener {
+trait XRowSetListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when a row set's cursor is moved.
     * @param event contains information about the event
     */
-  def cursorMoved(event: EventObject): Unit = js.native
+  def cursorMoved(event: EventObject): Unit
   
   /**
     * is called when a row is inserted, updated, or deleted.
@@ -24,13 +24,13 @@ trait XRowSetListener extends XEventListener {
     * @param event contains information about the event
     * @see com.sun.star.sdb.XRowsChangeListener
     */
-  def rowChanged(event: EventObject): Unit = js.native
+  def rowChanged(event: EventObject): Unit
   
   /**
     * is called when the row set has changed, or in other words, when the row set has been reexecuted.
     * @param event contains information about the event
     */
-  def rowSetChanged(event: EventObject): Unit = js.native
+  def rowSetChanged(event: EventObject): Unit
 }
 object XRowSetListener {
   

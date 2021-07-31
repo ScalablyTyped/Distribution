@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupsmigrationV1Mod {
@@ -71,7 +70,7 @@ object groupsmigrationV1Mod {
         */
       def insert(): GaxiosPromise[SchemaGroups] = js.native
       def insert(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
-      def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
+      def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
       def insert(params: ParamsResourceArchiveInsert): GaxiosPromise[SchemaGroups] = js.native
       def insert(params: ParamsResourceArchiveInsert, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
       def insert(
@@ -87,16 +86,17 @@ object groupsmigrationV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -108,23 +108,24 @@ object groupsmigrationV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceArchiveInsert extends StandardParameters {
+    trait ParamsResourceArchiveInsert
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The group ID
         */
-      var groupId: js.UndefOr[String] = js.native
+      var groupId: js.UndefOr[String] = js.undefined
       
       /**
         * Media metadata
         */
-      var media: js.UndefOr[Body] = js.native
+      var media: js.UndefOr[Body] = js.undefined
     }
     object ParamsResourceArchiveInsert {
       
@@ -160,18 +161,17 @@ object groupsmigrationV1Mod {
     /**
       * JSON response template for groups migration API.
       */
-    @js.native
     trait SchemaGroups extends StObject {
       
       /**
         * The kind of insert resource this is.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The status of the insert request.
         */
-      var responseCode: js.UndefOr[String] = js.native
+      var responseCode: js.UndefOr[String] = js.undefined
     }
     object SchemaGroups {
       
@@ -198,46 +198,45 @@ object groupsmigrationV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

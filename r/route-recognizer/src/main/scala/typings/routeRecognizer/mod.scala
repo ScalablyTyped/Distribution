@@ -10,14 +10,15 @@ import typings.routeRecognizer.dslMod.Route
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("route-recognizer", JSImport.Default)
   @js.native
-  class default () extends RouteRecognizer
+  class default ()
+    extends StObject
+       with RouteRecognizer
   object default {
     
     @JSImport("route-recognizer", JSImport.Default)
@@ -34,17 +35,18 @@ object mod {
     /* static member */
     object Normalizer {
       
-      @JSImport("route-recognizer", "default.Normalizer.encodePathSegment")
+      @JSImport("route-recognizer", "default.Normalizer")
       @js.native
-      def encodePathSegment(str: String): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("route-recognizer", "default.Normalizer.normalizePath")
-      @js.native
-      def normalizePath(path: String): String = js.native
+      @scala.inline
+      def encodePathSegment(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePathSegment")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("route-recognizer", "default.Normalizer.normalizeSegment")
-      @js.native
-      def normalizeSegment(segment: String): String = js.native
+      @scala.inline
+      def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      @scala.inline
+      def normalizeSegment(segment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     /* static member */
@@ -55,12 +57,12 @@ object mod {
     def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Params
-    extends /* key */ NumberDictionary[Opaque]
+    extends StObject
+       with /* key */ NumberDictionary[Opaque]
        with /* key */ StringDictionary[Opaque] {
     
-    var queryParams: js.UndefOr[QueryParams | Null] = js.native
+    var queryParams: js.UndefOr[QueryParams | Null] = js.undefined
   }
   object Params {
     
@@ -86,14 +88,13 @@ object mod {
   
   type QueryParams = StringDictionary[js.UndefOr[js.Array[js.Any] | js.Any | Null]]
   
-  @js.native
   trait Result extends StObject {
     
-    var handler: Opaque = js.native
+    var handler: Opaque
     
-    var isDynamic: Boolean = js.native
+    var isDynamic: Boolean
     
-    var params: Params = js.native
+    var params: Params
   }
   object Result {
     
@@ -125,16 +126,17 @@ object mod {
   
   @js.native
   trait Results
-    extends ArrayLike[js.UndefOr[Result]] {
+    extends StObject
+       with ArrayLike[js.UndefOr[Result]] {
     
     def push(results: Result*): Double = js.native
     
     var queryParams: QueryParams = js.native
     
     def slice(): js.Array[Result] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Result] = js.native
     def slice(start: Double): js.Array[Result] = js.native
     def slice(start: Double, end: Double): js.Array[Result] = js.native
+    def slice(start: Unit, end: Double): js.Array[Result] = js.native
     
     def splice(start: Double, deleteCount: Double, items: Result*): js.Array[Result] = js.native
   }
@@ -152,7 +154,7 @@ object mod {
     
     def generateQueryString(params: QueryParams): String = js.native
     
-    def handlersFor(name: String): js.Array[_] = js.native
+    def handlersFor(name: String): js.Array[js.Any] = js.native
     
     def hasRoute(name: String): Boolean = js.native
     

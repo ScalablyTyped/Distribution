@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisStreamsInput extends StObject {
   
   /**
     * The ARN of the input Kinesis data stream to read.
     */
-  var ResourceARN: typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN
 }
 object KinesisStreamsInput {
   

@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GetOperationRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetOperationRequest.
   * @param [properties] Properties to set
   */
-class GetOperationRequest () extends IGetOperationRequest {
+class GetOperationRequest ()
+  extends StObject
+     with IGetOperationRequest {
   def this(properties: IGetOperationRequest) = this()
   
   /** GetOperationRequest name. */
@@ -32,18 +33,20 @@ class GetOperationRequest () extends IGetOperationRequest {
 }
 object GetOperationRequest {
   
+  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GetOperationRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GetOperationRequest instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.create")
-  @js.native
-  def create(): GetOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.create")
-  @js.native
-  def create(properties: IGetOperationRequest): GetOperationRequest = js.native
+  @scala.inline
+  def create(): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetOperationRequest]
+  @scala.inline
+  def create(properties: IGetOperationRequest): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
   /**
     * Decodes a GetOperationRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GetOperationRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decode")
-  @js.native
-  def decode(reader: Reader): GetOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GetOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GetOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GetOperationRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetOperationRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetOperationRequest]
   
   /**
     * Decodes a GetOperationRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GetOperationRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GetOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GetOperationRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
   /**
     * Encodes the specified GetOperationRequest message. Does not implicitly {@link google.longrunning.GetOperationRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object GetOperationRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.encode")
-  @js.native
-  def encode(message: IGetOperationRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.encode")
-  @js.native
-  def encode(message: IGetOperationRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGetOperationRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGetOperationRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetOperationRequest message, length delimited. Does not implicitly {@link google.longrunning.GetOperationRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object GetOperationRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetOperationRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetOperationRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGetOperationRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGetOperationRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetOperationRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GetOperationRequest {
     * @returns GetOperationRequest
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GetOperationRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
   /**
     * Creates a plain object from a GetOperationRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GetOperationRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.toObject")
-  @js.native
-  def toObject(message: GetOperationRequest): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.toObject")
-  @js.native
-  def toObject(message: GetOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GetOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GetOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetOperationRequest message.
@@ -140,7 +130,6 @@ object GetOperationRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.GetOperationRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

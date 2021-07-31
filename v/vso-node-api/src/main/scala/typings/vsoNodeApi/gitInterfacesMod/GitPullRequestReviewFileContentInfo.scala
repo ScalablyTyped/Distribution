@@ -2,23 +2,21 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPullRequestReviewFileContentInfo extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The file change path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Content hash of on-disk representation of file content. Its calculated by the client by using SHA1 hash function. Ensure that uploaded file has same encoding as in source control.
     */
-  var sHA1Hash: String = js.native
+  var sHA1Hash: String
 }
 object GitPullRequestReviewFileContentInfo {
   

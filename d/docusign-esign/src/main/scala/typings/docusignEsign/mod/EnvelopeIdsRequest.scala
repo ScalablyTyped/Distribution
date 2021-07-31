@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeIdsRequest extends StObject {
   
   /**
     * A comma-separated list of envelope IDs to include in the results.
     */
-  var envelopeIds: js.UndefOr[js.Array[String]] = js.native
+  var envelopeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A comma-separated list of transaction IDs to include in the results. Note that transaction IDs are valid for seven days.
     */
-  var transactionIds: js.UndefOr[js.Array[String]] = js.native
+  var transactionIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object EnvelopeIdsRequest {
   

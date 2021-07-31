@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `namedSheetView.toJSON()`. */
-@js.native
 trait NamedSheetViewData extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait NamedSheetViewData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object NamedSheetViewData {
   

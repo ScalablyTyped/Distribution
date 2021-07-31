@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLocationsRequest extends StObject {
   
   /**
     * You can use API filters to narrow down the list of resources returned by ListLocations. For example, to retrieve all tasks on a specific source location, you can use ListLocations with filter name LocationType S3 and Operator Equals.
     */
-  var Filters: js.UndefOr[LocationFilters] = js.native
+  var Filters: js.UndefOr[LocationFilters] = js.undefined
   
   /**
     * The maximum number of locations to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin the next list of locations.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
 }
 object ListLocationsRequest {
   

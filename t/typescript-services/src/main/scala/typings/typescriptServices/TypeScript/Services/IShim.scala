@@ -2,13 +2,11 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShim extends StObject {
   
-  def dispose(dummy: js.Any): Unit = js.native
+  def dispose(dummy: js.Any): Unit
 }
 object IShim {
   

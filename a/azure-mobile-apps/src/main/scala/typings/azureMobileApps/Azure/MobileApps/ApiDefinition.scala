@@ -1,0 +1,100 @@
+package typings.azureMobileApps.Azure.MobileApps
+
+import typings.azureMobileApps.Express.Request
+import typings.azureMobileApps.Express.Response
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ApiDefinition extends StObject {
+  
+  var authorize: js.UndefOr[Boolean] = js.undefined
+  
+  var delete: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
+  
+  var get: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
+  
+  var patch: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
+  
+  var post: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
+  
+  var put: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
+}
+object ApiDefinition {
+  
+  @scala.inline
+  def apply(): ApiDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ApiDefinition]
+  }
+  
+  @scala.inline
+  implicit class ApiDefinitionMutableBuilder[Self <: ApiDefinition] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAuthorize(value: Boolean): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAuthorizeUndefined: Self = StObject.set(x, "authorize", js.undefined)
+    
+    @scala.inline
+    def setDelete(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeleteFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    
+    @scala.inline
+    def setDeleteVarargs(value: Middleware*): Self = StObject.set(x, "delete", js.Array(value :_*))
+    
+    @scala.inline
+    def setGet(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    
+    @scala.inline
+    def setGetVarargs(value: Middleware*): Self = StObject.set(x, "get", js.Array(value :_*))
+    
+    @scala.inline
+    def setPatch(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPatchFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    
+    @scala.inline
+    def setPatchVarargs(value: Middleware*): Self = StObject.set(x, "patch", js.Array(value :_*))
+    
+    @scala.inline
+    def setPost(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPostFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    
+    @scala.inline
+    def setPostVarargs(value: Middleware*): Self = StObject.set(x, "post", js.Array(value :_*))
+    
+    @scala.inline
+    def setPut(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPutFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+    
+    @scala.inline
+    def setPutVarargs(value: Middleware*): Self = StObject.set(x, "put", js.Array(value :_*))
+  }
+}

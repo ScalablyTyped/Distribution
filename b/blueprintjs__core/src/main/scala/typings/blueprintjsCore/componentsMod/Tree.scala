@@ -5,7 +5,6 @@ import typings.blueprintjsCore.treeMod.ITreeProps
 import typings.blueprintjsCore.treeNodeMod.ITreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Tree")
@@ -32,14 +31,11 @@ object Tree {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "Tree.nodeFromPath")
-  @js.native
-  def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/components", "Tree.nodeFromPath")
-  @js.native
-  def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = js.native
+  @scala.inline
+  def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[ITreeNode[U]]
+  @scala.inline
+  def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any], treeNodes.asInstanceOf[js.Any])).asInstanceOf[ITreeNode[U]]
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "Tree.ofType")
-  @js.native
-  def ofType[U](): Instantiable1[/* props */ ITreeProps[U], typings.blueprintjsCore.treeMod.Tree[U]] = js.native
+  @scala.inline
+  def ofType[U](): Instantiable1[/* props */ ITreeProps[U], typings.blueprintjsCore.treeMod.Tree[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeProps[U], typings.blueprintjsCore.treeMod.Tree[U]]]
 }

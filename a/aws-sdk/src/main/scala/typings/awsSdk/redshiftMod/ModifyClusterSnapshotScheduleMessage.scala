@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterSnapshotScheduleMessage extends StObject {
   
   /**
     * A unique identifier for the cluster whose snapshot schedule you want to modify. 
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
   
   /**
     * A boolean to indicate whether to remove the assoiciation between the cluster and the schedule.
     */
-  var DisassociateSchedule: js.UndefOr[BooleanOptional] = js.native
+  var DisassociateSchedule: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * A unique alphanumeric identifier for the schedule that you want to associate with the cluster.
     */
-  var ScheduleIdentifier: js.UndefOr[String] = js.native
+  var ScheduleIdentifier: js.UndefOr[String] = js.undefined
 }
 object ModifyClusterSnapshotScheduleMessage {
   

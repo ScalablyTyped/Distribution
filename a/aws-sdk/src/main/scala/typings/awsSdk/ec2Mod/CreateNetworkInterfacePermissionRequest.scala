@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNetworkInterfacePermissionRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: js.UndefOr[String] = js.native
+  var AwsAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS service. Currently not supported.
     */
-  var AwsService: js.UndefOr[String] = js.native
+  var AwsService: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
   
   /**
     * The type of permission to grant.
     */
-  var Permission: InterfacePermissionType = js.native
+  var Permission: InterfacePermissionType
 }
 object CreateNetworkInterfacePermissionRequest {
   

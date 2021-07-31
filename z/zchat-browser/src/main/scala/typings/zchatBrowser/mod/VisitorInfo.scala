@@ -2,17 +2,15 @@ package typings.zchatBrowser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisitorInfo extends StObject {
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var email: String = js.native
+  var email: String
   
-  var phone: String = js.native
+  var phone: String
 }
 object VisitorInfo {
   

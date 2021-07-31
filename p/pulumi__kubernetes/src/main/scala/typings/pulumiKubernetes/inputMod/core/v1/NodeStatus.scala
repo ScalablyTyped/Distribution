@@ -4,69 +4,67 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeStatus is information about the current status of a node.
   */
-@js.native
 trait NodeStatus extends StObject {
   
   /**
     * List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example.
     */
-  var addresses: js.UndefOr[Input[js.Array[Input[NodeAddress]]]] = js.native
+  var addresses: js.UndefOr[Input[js.Array[Input[NodeAddress]]]] = js.undefined
   
   /**
     * Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity.
     */
-  var allocatable: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var allocatable: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
     */
-  var capacity: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var capacity: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition
     */
-  var conditions: js.UndefOr[Input[js.Array[Input[NodeCondition]]]] = js.native
+  var conditions: js.UndefOr[Input[js.Array[Input[NodeCondition]]]] = js.undefined
   
   /**
     * Status of the config assigned to the node via the dynamic Kubelet config feature.
     */
-  var config: js.UndefOr[Input[NodeConfigStatus]] = js.native
+  var config: js.UndefOr[Input[NodeConfigStatus]] = js.undefined
   
   /**
     * Endpoints of daemons running on the Node.
     */
-  var daemonEndpoints: js.UndefOr[Input[NodeDaemonEndpoints]] = js.native
+  var daemonEndpoints: js.UndefOr[Input[NodeDaemonEndpoints]] = js.undefined
   
   /**
     * List of container images on this node
     */
-  var images: js.UndefOr[Input[js.Array[Input[ContainerImage]]]] = js.native
+  var images: js.UndefOr[Input[js.Array[Input[ContainerImage]]]] = js.undefined
   
   /**
     * Set of ids/uuids to uniquely identify the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#info
     */
-  var nodeInfo: js.UndefOr[Input[NodeSystemInfo]] = js.native
+  var nodeInfo: js.UndefOr[Input[NodeSystemInfo]] = js.undefined
   
   /**
     * NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.
     */
-  var phase: js.UndefOr[Input[String]] = js.native
+  var phase: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * List of volumes that are attached to the node.
     */
-  var volumesAttached: js.UndefOr[Input[js.Array[Input[AttachedVolume]]]] = js.native
+  var volumesAttached: js.UndefOr[Input[js.Array[Input[AttachedVolume]]]] = js.undefined
   
   /**
     * List of attachable volumes in use (mounted) by the node.
     */
-  var volumesInUse: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var volumesInUse: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object NodeStatus {
   

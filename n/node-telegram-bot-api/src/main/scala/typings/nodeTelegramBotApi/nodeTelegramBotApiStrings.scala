@@ -10,43 +10,56 @@ import typings.nodeTelegramBotApi.mod.ParseMode
 import typings.nodeTelegramBotApi.mod.PollType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeTelegramBotApiStrings {
   
   @js.native
-  sealed trait HTML extends ParseMode
+  sealed trait HTML
+    extends StObject
+       with ParseMode
   @scala.inline
   def HTML: HTML = "HTML".asInstanceOf[HTML]
   
   @js.native
-  sealed trait Markdown extends ParseMode
+  sealed trait Markdown
+    extends StObject
+       with ParseMode
   @scala.inline
   def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
   
   @js.native
-  sealed trait MarkdownV2 extends ParseMode
+  sealed trait MarkdownV2
+    extends StObject
+       with ParseMode
   @scala.inline
   def MarkdownV2: MarkdownV2 = "MarkdownV2".asInstanceOf[MarkdownV2]
   
   @js.native
-  sealed trait administrator extends ChatMemberStatus
+  sealed trait administrator
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def administrator: administrator = "administrator".asInstanceOf[administrator]
   
   @js.native
-  sealed trait animation extends MessageType
+  sealed trait animation
+    extends StObject
+       with MessageType
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   
   @js.native
-  sealed trait applicationSlashpdf extends DocumentMimeType
+  sealed trait applicationSlashpdf
+    extends StObject
+       with DocumentMimeType
   @scala.inline
   def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
   
   @js.native
-  sealed trait applicationSlashzip extends DocumentMimeType
+  sealed trait applicationSlashzip
+    extends StObject
+       with DocumentMimeType
   @scala.inline
   def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
   
@@ -56,17 +69,23 @@ object nodeTelegramBotApiStrings {
   def article: article = "article".asInstanceOf[article]
   
   @js.native
-  sealed trait audio extends MessageType
+  sealed trait audio
+    extends StObject
+       with MessageType
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait bold extends MessageEntityType
+  sealed trait bold
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait bot_command extends MessageEntityType
+  sealed trait bot_command
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def bot_command: bot_command = "bot_command".asInstanceOf[bot_command]
   
@@ -76,12 +95,16 @@ object nodeTelegramBotApiStrings {
   def callback_query: callback_query = "callback_query".asInstanceOf[callback_query]
   
   @js.native
-  sealed trait channel extends ChatType
+  sealed trait channel
+    extends StObject
+       with ChatType
   @scala.inline
   def channel: channel = "channel".asInstanceOf[channel]
   
   @js.native
-  sealed trait channel_chat_created extends MessageType
+  sealed trait channel_chat_created
+    extends StObject
+       with MessageType
   @scala.inline
   def channel_chat_created: channel_chat_created = "channel_chat_created".asInstanceOf[channel_chat_created]
   
@@ -96,27 +119,37 @@ object nodeTelegramBotApiStrings {
   def chosen_inline_result: chosen_inline_result = "chosen_inline_result".asInstanceOf[chosen_inline_result]
   
   @js.native
-  sealed trait code extends MessageEntityType
+  sealed trait code
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait contact extends MessageType
+  sealed trait contact
+    extends StObject
+       with MessageType
   @scala.inline
   def contact: contact = "contact".asInstanceOf[contact]
   
   @js.native
-  sealed trait creator extends ChatMemberStatus
+  sealed trait creator
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def creator: creator = "creator".asInstanceOf[creator]
   
   @js.native
-  sealed trait delete_chat_photo extends MessageType
+  sealed trait delete_chat_photo
+    extends StObject
+       with MessageType
   @scala.inline
   def delete_chat_photo: delete_chat_photo = "delete_chat_photo".asInstanceOf[delete_chat_photo]
   
   @js.native
-  sealed trait document extends MessageType
+  sealed trait document
+    extends StObject
+       with MessageType
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
@@ -151,7 +184,9 @@ object nodeTelegramBotApiStrings {
   def edited_message_text: edited_message_text = "edited_message_text".asInstanceOf[edited_message_text]
   
   @js.native
-  sealed trait email extends MessageEntityType
+  sealed trait email
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -161,12 +196,16 @@ object nodeTelegramBotApiStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait find_location extends ChatAction
+  sealed trait find_location
+    extends StObject
+       with ChatAction
   @scala.inline
   def find_location: find_location = "find_location".asInstanceOf[find_location]
   
   @js.native
-  sealed trait game extends MessageType
+  sealed trait game
+    extends StObject
+       with MessageType
   @scala.inline
   def game: game = "game".asInstanceOf[game]
   
@@ -176,17 +215,23 @@ object nodeTelegramBotApiStrings {
   def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait group extends ChatType
+  sealed trait group
+    extends StObject
+       with ChatType
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait group_chat_created extends MessageType
+  sealed trait group_chat_created
+    extends StObject
+       with MessageType
   @scala.inline
   def group_chat_created: group_chat_created = "group_chat_created".asInstanceOf[group_chat_created]
   
   @js.native
-  sealed trait hashtag extends MessageEntityType
+  sealed trait hashtag
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
   
@@ -196,42 +241,58 @@ object nodeTelegramBotApiStrings {
   def inline_query: inline_query = "inline_query".asInstanceOf[inline_query]
   
   @js.native
-  sealed trait invoice extends MessageType
+  sealed trait invoice
+    extends StObject
+       with MessageType
   @scala.inline
   def invoice: invoice = "invoice".asInstanceOf[invoice]
   
   @js.native
-  sealed trait italic extends MessageEntityType
+  sealed trait italic
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait kicked extends ChatMemberStatus
+  sealed trait kicked
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def kicked: kicked = "kicked".asInstanceOf[kicked]
   
   @js.native
-  sealed trait left extends ChatMemberStatus
+  sealed trait left
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait left_chat_member extends MessageType
+  sealed trait left_chat_member
+    extends StObject
+       with MessageType
   @scala.inline
   def left_chat_member: left_chat_member = "left_chat_member".asInstanceOf[left_chat_member]
   
   @js.native
-  sealed trait location extends MessageType
+  sealed trait location
+    extends StObject
+       with MessageType
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait member extends ChatMemberStatus
+  sealed trait member
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def member: member = "member".asInstanceOf[member]
   
   @js.native
-  sealed trait mention extends MessageEntityType
+  sealed trait mention
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def mention: mention = "mention".asInstanceOf[mention]
   
@@ -241,12 +302,16 @@ object nodeTelegramBotApiStrings {
   def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait migrate_from_chat_id extends MessageType
+  sealed trait migrate_from_chat_id
+    extends StObject
+       with MessageType
   @scala.inline
   def migrate_from_chat_id: migrate_from_chat_id = "migrate_from_chat_id".asInstanceOf[migrate_from_chat_id]
   
   @js.native
-  sealed trait migrate_to_chat_id extends MessageType
+  sealed trait migrate_to_chat_id
+    extends StObject
+       with MessageType
   @scala.inline
   def migrate_to_chat_id: migrate_to_chat_id = "migrate_to_chat_id".asInstanceOf[migrate_to_chat_id]
   
@@ -256,32 +321,44 @@ object nodeTelegramBotApiStrings {
   def mpeg4_gif: mpeg4_gif = "mpeg4_gif".asInstanceOf[mpeg4_gif]
   
   @js.native
-  sealed trait new_chat_members extends MessageType
+  sealed trait new_chat_members
+    extends StObject
+       with MessageType
   @scala.inline
   def new_chat_members: new_chat_members = "new_chat_members".asInstanceOf[new_chat_members]
   
   @js.native
-  sealed trait new_chat_photo extends MessageType
+  sealed trait new_chat_photo
+    extends StObject
+       with MessageType
   @scala.inline
   def new_chat_photo: new_chat_photo = "new_chat_photo".asInstanceOf[new_chat_photo]
   
   @js.native
-  sealed trait new_chat_title extends MessageType
+  sealed trait new_chat_title
+    extends StObject
+       with MessageType
   @scala.inline
   def new_chat_title: new_chat_title = "new_chat_title".asInstanceOf[new_chat_title]
   
   @js.native
-  sealed trait passport_data extends MessageType
+  sealed trait passport_data
+    extends StObject
+       with MessageType
   @scala.inline
   def passport_data: passport_data = "passport_data".asInstanceOf[passport_data]
   
   @js.native
-  sealed trait photo extends MessageType
+  sealed trait photo
+    extends StObject
+       with MessageType
   @scala.inline
   def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
-  sealed trait pinned_message extends MessageType
+  sealed trait pinned_message
+    extends StObject
+       with MessageType
   @scala.inline
   def pinned_message: pinned_message = "pinned_message".asInstanceOf[pinned_message]
   
@@ -296,7 +373,9 @@ object nodeTelegramBotApiStrings {
   def polling_error: polling_error = "polling_error".asInstanceOf[polling_error]
   
   @js.native
-  sealed trait pre extends MessageEntityType
+  sealed trait pre
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   
@@ -306,37 +385,51 @@ object nodeTelegramBotApiStrings {
   def pre_checkout_query: pre_checkout_query = "pre_checkout_query".asInstanceOf[pre_checkout_query]
   
   @js.native
-  sealed trait `private` extends ChatType
+  sealed trait `private`
+    extends StObject
+       with ChatType
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait quiz extends PollType
+  sealed trait quiz
+    extends StObject
+       with PollType
   @scala.inline
   def quiz: quiz = "quiz".asInstanceOf[quiz]
   
   @js.native
-  sealed trait record_audio extends ChatAction
+  sealed trait record_audio
+    extends StObject
+       with ChatAction
   @scala.inline
   def record_audio: record_audio = "record_audio".asInstanceOf[record_audio]
   
   @js.native
-  sealed trait record_video extends ChatAction
+  sealed trait record_video
+    extends StObject
+       with ChatAction
   @scala.inline
   def record_video: record_video = "record_video".asInstanceOf[record_video]
   
   @js.native
-  sealed trait record_video_note extends ChatAction
+  sealed trait record_video_note
+    extends StObject
+       with ChatAction
   @scala.inline
   def record_video_note: record_video_note = "record_video_note".asInstanceOf[record_video_note]
   
   @js.native
-  sealed trait regular extends PollType
+  sealed trait regular
+    extends StObject
+       with PollType
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait restricted extends ChatMemberStatus
+  sealed trait restricted
+    extends StObject
+       with ChatMemberStatus
   @scala.inline
   def restricted: restricted = "restricted".asInstanceOf[restricted]
   
@@ -346,72 +439,100 @@ object nodeTelegramBotApiStrings {
   def shipping_query: shipping_query = "shipping_query".asInstanceOf[shipping_query]
   
   @js.native
-  sealed trait sticker extends MessageType
+  sealed trait sticker
+    extends StObject
+       with MessageType
   @scala.inline
   def sticker: sticker = "sticker".asInstanceOf[sticker]
   
   @js.native
-  sealed trait successful_payment extends MessageType
+  sealed trait successful_payment
+    extends StObject
+       with MessageType
   @scala.inline
   def successful_payment: successful_payment = "successful_payment".asInstanceOf[successful_payment]
   
   @js.native
-  sealed trait supergroup extends ChatType
+  sealed trait supergroup
+    extends StObject
+       with ChatType
   @scala.inline
   def supergroup: supergroup = "supergroup".asInstanceOf[supergroup]
   
   @js.native
-  sealed trait supergroup_chat_created extends MessageType
+  sealed trait supergroup_chat_created
+    extends StObject
+       with MessageType
   @scala.inline
   def supergroup_chat_created: supergroup_chat_created = "supergroup_chat_created".asInstanceOf[supergroup_chat_created]
   
   @js.native
-  sealed trait text extends MessageType
+  sealed trait text
+    extends StObject
+       with MessageType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait text_link extends MessageEntityType
+  sealed trait text_link
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def text_link: text_link = "text_link".asInstanceOf[text_link]
   
   @js.native
-  sealed trait text_mention extends MessageEntityType
+  sealed trait text_mention
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def text_mention: text_mention = "text_mention".asInstanceOf[text_mention]
   
   @js.native
-  sealed trait typing extends ChatAction
+  sealed trait typing
+    extends StObject
+       with ChatAction
   @scala.inline
   def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
-  sealed trait upload_audio extends ChatAction
+  sealed trait upload_audio
+    extends StObject
+       with ChatAction
   @scala.inline
   def upload_audio: upload_audio = "upload_audio".asInstanceOf[upload_audio]
   
   @js.native
-  sealed trait upload_document extends ChatAction
+  sealed trait upload_document
+    extends StObject
+       with ChatAction
   @scala.inline
   def upload_document: upload_document = "upload_document".asInstanceOf[upload_document]
   
   @js.native
-  sealed trait upload_photo extends ChatAction
+  sealed trait upload_photo
+    extends StObject
+       with ChatAction
   @scala.inline
   def upload_photo: upload_photo = "upload_photo".asInstanceOf[upload_photo]
   
   @js.native
-  sealed trait upload_video extends ChatAction
+  sealed trait upload_video
+    extends StObject
+       with ChatAction
   @scala.inline
   def upload_video: upload_video = "upload_video".asInstanceOf[upload_video]
   
   @js.native
-  sealed trait upload_video_note extends ChatAction
+  sealed trait upload_video_note
+    extends StObject
+       with ChatAction
   @scala.inline
   def upload_video_note: upload_video_note = "upload_video_note".asInstanceOf[upload_video_note]
   
   @js.native
-  sealed trait url extends MessageEntityType
+  sealed trait url
+    extends StObject
+       with MessageEntityType
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
@@ -421,17 +542,23 @@ object nodeTelegramBotApiStrings {
   def venue: venue = "venue".asInstanceOf[venue]
   
   @js.native
-  sealed trait video extends MessageType
+  sealed trait video
+    extends StObject
+       with MessageType
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait video_note extends MessageType
+  sealed trait video_note
+    extends StObject
+       with MessageType
   @scala.inline
   def video_note: video_note = "video_note".asInstanceOf[video_note]
   
   @js.native
-  sealed trait voice extends MessageType
+  sealed trait voice
+    extends StObject
+       with MessageType
   @scala.inline
   def voice: voice = "voice".asInstanceOf[voice]
   

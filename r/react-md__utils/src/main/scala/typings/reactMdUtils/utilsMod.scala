@@ -2,10 +2,13 @@ package typings.reactMdUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("@react-md/utils/types/search/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/search/utils", "DEFAULT_GET_ITEM_VALUE")
   @js.native
@@ -59,44 +62,28 @@ object utilsMod {
   @js.native
   val DEFAULT_VALUE_KEY: /* "value" */ String = js.native
   
-  @JSImport("@react-md/utils/types/search/utils", "getItemValue")
-  @js.native
-  def getItemValue(item: js.Any): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getItemValue")
-  @js.native
-  def getItemValue(item: js.Any, valueKey: String): String = js.native
+  @scala.inline
+  def getItemValue(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getItemValue(item: js.Any, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(
-    value: String,
-    lowercase: js.UndefOr[scala.Nothing],
-    trim: js.UndefOr[scala.Nothing],
-    ignoreWhitespace: Boolean
-  ): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: js.UndefOr[scala.Nothing], trim: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: js.UndefOr[scala.Nothing], trim: Boolean, ignoreWhitespace: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: js.UndefOr[scala.Nothing], ignoreWhitespace: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search/utils", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: Boolean, ignoreWhitespace: Boolean): String = js.native
+  @scala.inline
+  def getSearchString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait BaseSearchOptions[T] extends StObject {
     
     /**
@@ -110,12 +97,12 @@ object utilsMod {
       * - return item[valueKey] if it's an object (this uses typeof item === "object")
       * - return the empty string for all other data types
       */
-    var getItemValue: js.UndefOr[GetItemValue_[T]] = js.native
+    var getItemValue: js.UndefOr[GetItemValue_[T]] = js.undefined
     
     /**
       * The key to use to get a value string if the item is an object.
       */
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
   }
   object BaseSearchOptions {
     
@@ -126,7 +113,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class BaseSearchOptionsMutableBuilder[Self <: BaseSearchOptions[_], T] (val x: Self with BaseSearchOptions[T]) extends AnyVal {
+    implicit class BaseSearchOptionsMutableBuilder[Self <: BaseSearchOptions[?], T] (val x: Self & BaseSearchOptions[T]) extends AnyVal {
       
       @scala.inline
       def setGetItemValue(value: (T, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
@@ -144,20 +131,21 @@ object utilsMod {
   
   type GetItemValue_[T] = js.Function2[/* item */ T, /* valueKey */ String, String]
   
-  @js.native
-  trait SearchOptions[T] extends BaseSearchOptions[T] {
+  trait SearchOptions[T]
+    extends StObject
+       with BaseSearchOptions[T] {
     
     /**
       * Boolean if all the whitespace should be ignored in the query string and for
       * each item.
       */
-    var ignoreWhitespace: js.UndefOr[Boolean] = js.native
+    var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the query string and each item should have the leading and
       * trailing spaces removed.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object SearchOptions {
     
@@ -168,7 +156,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions[_], T] (val x: Self with SearchOptions[T]) extends AnyVal {
+    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions[?], T] (val x: Self & SearchOptions[T]) extends AnyVal {
       
       @scala.inline
       def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])

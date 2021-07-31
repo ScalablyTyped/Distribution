@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientRun.anon.ApiVersion
 import typings.maximMazurokGapiClientRun.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

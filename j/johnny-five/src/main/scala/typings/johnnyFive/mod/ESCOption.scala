@@ -7,23 +7,21 @@ import typings.johnnyFive.johnnyFiveStrings.FORWARD_REVERSE_BRAKE
 import typings.johnnyFive.johnnyFiveStrings.PCA9685
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ESCOption extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var controller: js.UndefOr[PCA9685 | DEFAULT] = js.native
+  var controller: js.UndefOr[PCA9685 | DEFAULT] = js.undefined
   
-  var device: js.UndefOr[FORWARD | FORWARD_REVERSE | FORWARD_REVERSE_BRAKE] = js.native
+  var device: js.UndefOr[FORWARD | FORWARD_REVERSE | FORWARD_REVERSE_BRAKE] = js.undefined
   
-  var neutral: js.UndefOr[Double] = js.native
+  var neutral: js.UndefOr[Double] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var pwmRange: js.UndefOr[js.Array[Double]] = js.native
+  var pwmRange: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ESCOption {
   

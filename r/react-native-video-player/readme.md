@@ -10,9 +10,9 @@ A video player for React Native with controls
 | ------------------ | :-------------: |
 | Full name          | react-native-video-player |
 | Keywords           | react-component, react-native, ios, android |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 69859 |
+| # releases         | 2 |
+| # dependents       | 5 |
+| # downloads        | 78496 |
 | # stars            | 0 |
 
 ## Links

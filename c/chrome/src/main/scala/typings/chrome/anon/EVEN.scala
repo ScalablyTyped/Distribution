@@ -5,23 +5,21 @@ import typings.chrome.chromeStrings.no
 import typings.chrome.chromeStrings.odd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EVEN extends StObject {
   
-  var EVEN: even = js.native
+  var EVEN: even
   
-  var NO: no = js.native
+  var NO: no
   
-  var ODD: odd = js.native
+  var ODD: odd
 }
 object EVEN {
   
   @scala.inline
-  def apply(EVEN: even, NO: no, ODD: odd): EVEN = {
-    val __obj = js.Dynamic.literal(EVEN = EVEN.asInstanceOf[js.Any], NO = NO.asInstanceOf[js.Any], ODD = ODD.asInstanceOf[js.Any])
+  def apply(): EVEN = {
+    val __obj = js.Dynamic.literal(EVEN = "even", NO = "no", ODD = "odd")
     __obj.asInstanceOf[EVEN]
   }
   

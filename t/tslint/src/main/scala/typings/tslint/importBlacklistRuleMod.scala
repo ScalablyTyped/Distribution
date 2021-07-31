@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importBlacklistRuleMod {
@@ -34,9 +33,8 @@ object importBlacklistRuleMod {
     @scala.inline
     def IMPLICIT_NAMED_IMPORT_FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLICIT_NAMED_IMPORT_FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.MAKE_NAMED_IMPORT_FAILURE_STRING")
-    @js.native
-    def MAKE_NAMED_IMPORT_FAILURE_STRING(importName: String): String = js.native
+    @scala.inline
+    def MAKE_NAMED_IMPORT_FAILURE_STRING(importName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MAKE_NAMED_IMPORT_FAILURE_STRING")(importName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.WHOLE_MODULE_FAILURE_STRING")
     @js.native

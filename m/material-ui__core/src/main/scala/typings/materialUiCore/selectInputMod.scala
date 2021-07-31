@@ -17,7 +17,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectInputMod extends Shortcut {
@@ -26,57 +25,56 @@ object selectInputMod extends Shortcut {
   @js.native
   val default: ComponentType[SelectInputProps] = js.native
   
-  @js.native
   trait SelectInputProps extends StObject {
     
-    var IconComponent: js.UndefOr[ReactType[_]] = js.native
+    var IconComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var MenuProps: js.UndefOr[PartialMenuProps] = js.native
+    var MenuProps: js.UndefOr[PartialMenuProps] = js.undefined
     
-    var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var autoWidth: Boolean = js.native
+    var autoWidth: Boolean
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Value, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Value, Unit]] = js.undefined
     
-    var multiple: Boolean = js.native
+    var multiple: Boolean
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var native: Boolean = js.native
+    var native: Boolean
     
-    var onBlur: js.UndefOr[FocusEventHandler[_]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[_]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     var renderValue: js.UndefOr[
         js.Function1[
           /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]), 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var value: String | Double | Boolean | (js.Array[String | Double | Boolean]) = js.native
+    var value: String | Double | Boolean | (js.Array[String | Double | Boolean])
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.native
+    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
   }
   object SelectInputProps {
     
@@ -110,7 +108,7 @@ object selectInputMod extends Shortcut {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setIconComponent(value: ReactType[_]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
+      def setIconComponent(value: ReactType[js.Any]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIconComponentUndefined: Self = StObject.set(x, "IconComponent", js.undefined)
@@ -140,7 +138,7 @@ object selectInputMod extends Shortcut {
       def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBlur(value: FocusEvent[_] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
@@ -158,7 +156,7 @@ object selectInputMod extends Shortcut {
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: FocusEvent[_] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      def setOnFocus(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)

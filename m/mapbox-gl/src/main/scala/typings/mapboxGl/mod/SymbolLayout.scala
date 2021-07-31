@@ -21,95 +21,94 @@ import typings.mapboxGl.mapboxGlStrings.viewport
 import typings.mapboxGl.mapboxGlStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolLayout
-  extends Layout
+  extends StObject
+     with Layout
      with _AnyLayout {
   
-  var `icon-allow-overlap`: js.UndefOr[Boolean | StyleFunction | Expression] = js.native
+  var `icon-allow-overlap`: js.UndefOr[Boolean | StyleFunction | Expression] = js.undefined
   
-  var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.native
+  var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   
-  var `icon-ignore-placement`: js.UndefOr[Boolean] = js.native
+  var `icon-ignore-placement`: js.UndefOr[Boolean] = js.undefined
   
-  var `icon-image`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `icon-image`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `icon-keep-upright`: js.UndefOr[Boolean] = js.native
+  var `icon-keep-upright`: js.UndefOr[Boolean] = js.undefined
   
-  var `icon-offset`: js.UndefOr[js.Array[Double] | StyleFunction | Expression] = js.native
+  var `icon-offset`: js.UndefOr[js.Array[Double] | StyleFunction | Expression] = js.undefined
   
-  var `icon-optional`: js.UndefOr[Boolean] = js.native
+  var `icon-optional`: js.UndefOr[Boolean] = js.undefined
   
-  var `icon-padding`: js.UndefOr[Double | Expression] = js.native
+  var `icon-padding`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `icon-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.native
+  var `icon-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   
-  var `icon-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `icon-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `icon-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.native
+  var `icon-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   
-  var `icon-size`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `icon-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `icon-text-fit`: js.UndefOr[none | both | width | height] = js.native
+  var `icon-text-fit`: js.UndefOr[none | both | width | height] = js.undefined
   
-  var `icon-text-fit-padding`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `icon-text-fit-padding`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `symbol-avoid-edges`: js.UndefOr[Boolean] = js.native
+  var `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined
   
-  var `symbol-placement`: js.UndefOr[point | line | `line-center`] = js.native
+  var `symbol-placement`: js.UndefOr[point | line | `line-center`] = js.undefined
   
-  var `symbol-sort-key`: js.UndefOr[Double | Expression] = js.native
+  var `symbol-sort-key`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `symbol-spacing`: js.UndefOr[Double | Expression] = js.native
+  var `symbol-spacing`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `symbol-z-order`: js.UndefOr[`viewport-y` | source_] = js.native
+  var `symbol-z-order`: js.UndefOr[`viewport-y` | source_] = js.undefined
   
-  var `text-allow-overlap`: js.UndefOr[Boolean] = js.native
+  var `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined
   
-  var `text-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.native
+  var `text-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   
-  var `text-field`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `text-field`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `text-font`: js.UndefOr[String | js.Array[String] | Expression] = js.native
+  var `text-font`: js.UndefOr[String | js.Array[String] | Expression] = js.undefined
   
-  var `text-ignore-placement`: js.UndefOr[Boolean] = js.native
+  var `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined
   
-  var `text-justify`: js.UndefOr[left | center | right | Expression] = js.native
+  var `text-justify`: js.UndefOr[left | center | right | Expression] = js.undefined
   
-  var `text-keep-upright`: js.UndefOr[Boolean] = js.native
+  var `text-keep-upright`: js.UndefOr[Boolean] = js.undefined
   
-  var `text-letter-spacing`: js.UndefOr[Double | Expression] = js.native
+  var `text-letter-spacing`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `text-line-height`: js.UndefOr[Double | Expression] = js.native
+  var `text-line-height`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `text-max-angle`: js.UndefOr[Double | Expression] = js.native
+  var `text-max-angle`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `text-max-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-max-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `text-offset`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `text-offset`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `text-optional`: js.UndefOr[Boolean] = js.native
+  var `text-optional`: js.UndefOr[Boolean] = js.undefined
   
-  var `text-padding`: js.UndefOr[Double | Expression] = js.native
+  var `text-padding`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `text-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.native
+  var `text-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   
-  var `text-radial-offset`: js.UndefOr[Double | Expression] = js.native
+  var `text-radial-offset`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `text-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `text-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.native
+  var `text-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   
-  var `text-size`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `text-transform`: js.UndefOr[none | uppercase | lowercase | StyleFunction | Expression] = js.native
+  var `text-transform`: js.UndefOr[none | uppercase | lowercase | StyleFunction | Expression] = js.undefined
   
-  var `text-variable-anchor`: js.UndefOr[js.Array[Anchor]] = js.native
+  var `text-variable-anchor`: js.UndefOr[js.Array[Anchor]] = js.undefined
   
-  var `text-writing-mode`: js.UndefOr[js.Array[horizontal | vertical]] = js.native
+  var `text-writing-mode`: js.UndefOr[js.Array[horizontal | vertical]] = js.undefined
 }
 object SymbolLayout {
   

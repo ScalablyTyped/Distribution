@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Intents.BatchUpdateIntents.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse extends StObject {
   
   /**
     * The collection of updated or created intents.
     */
-  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1Intent]] = js.native
+  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1Intent]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse {
   

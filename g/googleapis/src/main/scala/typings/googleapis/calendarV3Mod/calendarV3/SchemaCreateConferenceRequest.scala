@@ -2,28 +2,26 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCreateConferenceRequest extends StObject {
   
   /**
     * The conference solution, such as Hangouts or Hangouts Meet.
     */
-  var conferenceSolutionKey: js.UndefOr[SchemaConferenceSolutionKey] = js.native
+  var conferenceSolutionKey: js.UndefOr[SchemaConferenceSolutionKey] = js.undefined
   
   /**
     * The client-generated unique ID for this request. Clients should
     * regenerate this ID for every new request. If an ID provided is the same
     * as for the previous request, the request is ignored.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the conference create request.
     */
-  var status: js.UndefOr[SchemaConferenceRequestStatus] = js.native
+  var status: js.UndefOr[SchemaConferenceRequestStatus] = js.undefined
 }
 object SchemaCreateConferenceRequest {
   

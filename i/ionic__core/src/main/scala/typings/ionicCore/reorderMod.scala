@@ -5,14 +5,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reorderMod {
   
   @JSImport("@ionic/core/dist/types/components/reorder/reorder", "Reorder")
   @js.native
-  class Reorder () extends ComponentInterface {
+  class Reorder ()
+    extends StObject
+       with ComponentInterface {
     
     var el: HTMLIonReorderElement = js.native
     

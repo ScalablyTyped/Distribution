@@ -5,10 +5,13 @@ import typings.jestWatcher.baseWatchPluginMod.default
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jest-watcher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jest-watcher", "BaseWatchPlugin")
   @js.native
@@ -94,11 +97,9 @@ object mod {
   class Prompt ()
     extends typings.jestWatcher.promptMod.default
   
-  @JSImport("jest-watcher", "printPatternCaret")
-  @js.native
-  def printPatternCaret(pattern: String, pipe: WritableStream): Unit = js.native
+  @scala.inline
+  def printPatternCaret(pattern: String, pipe: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printPatternCaret")(pattern.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-watcher", "printRestoredPatternCaret")
-  @js.native
-  def printRestoredPatternCaret(pattern: String, currentUsageRows: Double, pipe: WritableStream): Unit = js.native
+  @scala.inline
+  def printRestoredPatternCaret(pattern: String, currentUsageRows: Double, pipe: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printRestoredPatternCaret")(pattern.asInstanceOf[js.Any], currentUsageRows.asInstanceOf[js.Any], pipe.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

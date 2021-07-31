@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.pan
 import typings.arcgisJsApi.arcgisJsApiStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait gamepadGamepadSettings extends Accessor {
+trait gamepadGamepadSettings
+  extends StObject
+     with Accessor {
   
   /**
     * Use this property to explicitly select the gamepad device for map and scene navigation.

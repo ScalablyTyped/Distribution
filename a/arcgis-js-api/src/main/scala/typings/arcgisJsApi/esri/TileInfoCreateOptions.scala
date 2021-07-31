@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileInfoCreateOptions extends Object {
+trait TileInfoCreateOptions
+  extends StObject
+     with Object {
   
   /**
     * An array of scale values to use for the TileInfo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
-  var scales: js.UndefOr[js.Array[Double]] = js.native
+  var scales: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The size of each tile in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The spatial reference for the new TileInfo instance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
-  var spatialReference: js.UndefOr[SpatialReference] = js.native
+  var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 object TileInfoCreateOptions {
   

@@ -3,17 +3,15 @@ package typings.chrome.anon
 import typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions extends StObject {
   
-  var actions: js.UndefOr[js.Array[Type]] = js.native
+  var actions: js.UndefOr[js.Array[Type]] = js.undefined
   
-  var conditions: js.UndefOr[js.Array[PageStateMatcherProperties]] = js.native
+  var conditions: js.UndefOr[js.Array[PageStateMatcherProperties]] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
 }
 object Actions {
   

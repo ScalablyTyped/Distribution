@@ -2,25 +2,23 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response from the list request. Contains a list of activities and a
   * token to retrieve the next page of results.
   */
-@js.native
 trait SchemaListActivitiesResponse extends StObject {
   
   /**
     * List of activities.
     */
-  var activities: js.UndefOr[js.Array[SchemaActivity]] = js.native
+  var activities: js.UndefOr[js.Array[SchemaActivity]] = js.undefined
   
   /**
     * Token for the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListActivitiesResponse {
   

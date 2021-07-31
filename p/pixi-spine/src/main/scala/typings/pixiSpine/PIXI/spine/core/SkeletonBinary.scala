@@ -3,35 +3,33 @@ package typings.pixiSpine.PIXI.spine.core
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkeletonBinary extends StObject {
   
-  var attachmentLoader: AttachmentLoader = js.native
+  var attachmentLoader: AttachmentLoader
   
-  var linkedMeshes: js.Any = js.native
+  var linkedMeshes: js.Any
   
-  var readAnimation: js.Any = js.native
+  var readAnimation: js.Any
   
-  var readAttachment: js.Any = js.native
+  var readAttachment: js.Any
   
-  var readCurve: js.Any = js.native
+  var readCurve: js.Any
   
-  var readFloatArray: js.Any = js.native
+  var readFloatArray: js.Any
   
-  var readShortArray: js.Any = js.native
+  var readShortArray: js.Any
   
-  def readSkeletonData(binary: Uint8Array): SkeletonData = js.native
+  def readSkeletonData(binary: Uint8Array): SkeletonData
   
-  var readSkin: js.Any = js.native
+  var readSkin: js.Any
   
-  var readVertices: js.Any = js.native
+  var readVertices: js.Any
   
-  var scale: Double = js.native
+  var scale: Double
   
-  def setCurve(timeline: CurveTimeline, frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit = js.native
+  def setCurve(timeline: CurveTimeline, frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit
 }
 object SkeletonBinary {
   

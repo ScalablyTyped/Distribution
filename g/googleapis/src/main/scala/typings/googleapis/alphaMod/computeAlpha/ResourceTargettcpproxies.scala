@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Targettcpproxies")
@@ -32,7 +31,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargettcpproxiesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargettcpproxiesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTargetTcpProxy] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetTcpProxy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetTcpProxy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetTcpProxy] = js.native
   def get(params: ParamsResourceTargettcpproxiesGet): GaxiosPromise[SchemaTargetTcpProxy] = js.native
   def get(params: ParamsResourceTargettcpproxiesGet, callback: BodyResponseCallback[SchemaTargetTcpProxy]): Unit = js.native
   def get(
@@ -95,7 +94,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargettcpproxiesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargettcpproxiesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -129,7 +128,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTargetTcpProxyList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetTcpProxyList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetTcpProxyList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetTcpProxyList] = js.native
   def list(params: ParamsResourceTargettcpproxiesList): GaxiosPromise[SchemaTargetTcpProxyList] = js.native
   def list(
     params: ParamsResourceTargettcpproxiesList,
@@ -164,7 +163,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def setBackendService(): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setBackendService(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setBackendService(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(params: ParamsResourceTargettcpproxiesSetbackendservice): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(
     params: ParamsResourceTargettcpproxiesSetbackendservice,
@@ -199,7 +198,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def setProxyHeader(): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setProxyHeader(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setProxyHeader(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(params: ParamsResourceTargettcpproxiesSetproxyheader): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(
     params: ParamsResourceTargettcpproxiesSetproxyheader,
@@ -233,7 +232,7 @@ class ResourceTargettcpproxies protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceTargettcpproxiesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceTargettcpproxiesTestiampermissions,

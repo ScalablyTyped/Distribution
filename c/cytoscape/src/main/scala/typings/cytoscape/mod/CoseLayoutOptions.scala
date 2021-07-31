@@ -3,61 +3,61 @@ package typings.cytoscape.mod
 import typings.cytoscape.cytoscapeStrings.cose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#layouts/cose
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.LayoutOptions because Already inherited */ @js.native
-trait CoseLayoutOptions extends ShapedLayoutOptions {
+- typings.cytoscape.mod.LayoutOptions because Already inherited */ trait CoseLayoutOptions
+  extends StObject
+     with ShapedLayoutOptions {
   
   // Extra spacing between components in non-compound graphs
-  var componentSpacing: Double = js.native
+  var componentSpacing: Double
   
   // Cooling factor (how the temperature is reduced between consecutive iterations
-  var coolingFactor: Double = js.native
+  var coolingFactor: Double
   
   // Divisor to compute edge forces
-  def edgeElasticity(edge: js.Any): Double = js.native
+  def edgeElasticity(edge: js.Any): Double
   
   // Gravity force (constant)
-  var gravity: Double = js.native
+  var gravity: Double
   
   // Ideal edge (non nested) length
-  def idealEdgeLength(edge: js.Any): Double = js.native
+  def idealEdgeLength(edge: js.Any): Double
   
   // Initial temperature (maximum node displacement)
-  var initialTemp: Double = js.native
+  var initialTemp: Double
   
   // Lower temperature threshold (below this point the layout will end)
-  var minTemp: Double = js.native
+  var minTemp: Double
   
   @JSName("name")
-  var name_CoseLayoutOptions: cose = js.native
+  var name_CoseLayoutOptions: cose
   
   // Nesting factor (multiplier) to compute ideal edge length for nested edges
-  var nestingFactor: Double = js.native
+  var nestingFactor: Double
   
   // Node repulsion (overlapping) multiplier
-  var nodeOverlap: Double = js.native
+  var nodeOverlap: Double
   
   // Node repulsion (non overlapping) multiplier
-  def nodeRepulsion(node: js.Any): Double = js.native
+  def nodeRepulsion(node: js.Any): Double
   
   // Maximum number of iterations to perform
-  var numIter: Double = js.native
+  var numIter: Double
   
   // Randomize the initial positions of the nodes (true) or use existing positions (false)
-  var randomize: Boolean = js.native
+  var randomize: Boolean
   
   // Number of iterations between consecutive screen positions update
   // (0 -> only updated on the end)
-  var refresh: Double = js.native
+  var refresh: Double
   
   // Pass a reference to weaver to use threads for calculations
-  var weaver: Boolean = js.native
+  var weaver: Boolean
 }
 object CoseLayoutOptions {
   
@@ -71,7 +71,6 @@ object CoseLayoutOptions {
     idealEdgeLength: js.Any => Double,
     initialTemp: Double,
     minTemp: Double,
-    name: cose,
     nestingFactor: Double,
     nodeDimensionsIncludeLabels: Boolean,
     nodeOverlap: Double,
@@ -81,7 +80,7 @@ object CoseLayoutOptions {
     refresh: Double,
     weaver: Boolean
   ): CoseLayoutOptions = {
-    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing.asInstanceOf[js.Any], coolingFactor = coolingFactor.asInstanceOf[js.Any], edgeElasticity = js.Any.fromFunction1(edgeElasticity), fit = fit.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], idealEdgeLength = js.Any.fromFunction1(idealEdgeLength), initialTemp = initialTemp.asInstanceOf[js.Any], minTemp = minTemp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nestingFactor = nestingFactor.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], nodeOverlap = nodeOverlap.asInstanceOf[js.Any], nodeRepulsion = js.Any.fromFunction1(nodeRepulsion), numIter = numIter.asInstanceOf[js.Any], randomize = randomize.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], weaver = weaver.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing.asInstanceOf[js.Any], coolingFactor = coolingFactor.asInstanceOf[js.Any], edgeElasticity = js.Any.fromFunction1(edgeElasticity), fit = fit.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], idealEdgeLength = js.Any.fromFunction1(idealEdgeLength), initialTemp = initialTemp.asInstanceOf[js.Any], minTemp = minTemp.asInstanceOf[js.Any], name = "cose", nestingFactor = nestingFactor.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], nodeOverlap = nodeOverlap.asInstanceOf[js.Any], nodeRepulsion = js.Any.fromFunction1(nodeRepulsion), numIter = numIter.asInstanceOf[js.Any], randomize = randomize.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], weaver = weaver.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoseLayoutOptions]
   }
   

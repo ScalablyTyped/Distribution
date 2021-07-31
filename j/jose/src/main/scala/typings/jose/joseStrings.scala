@@ -10,13 +10,14 @@ import typings.jose.mod.keyType
 import typings.jose.mod.use
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joseStrings {
   
   @js.native
-  sealed trait EC extends keyType
+  sealed trait EC
+    extends StObject
+       with keyType
   @scala.inline
   def EC: EC = "EC".asInstanceOf[EC]
   
@@ -97,59 +98,70 @@ object joseStrings {
   
   @js.native
   sealed trait Ed25519
-    extends Curves
+    extends StObject
+       with Curves
        with OKPCurve
   @scala.inline
   def Ed25519: Ed25519 = "Ed25519".asInstanceOf[Ed25519]
   
   @js.native
   sealed trait Ed448
-    extends Curves
+    extends StObject
+       with Curves
        with OKPCurve
   @scala.inline
   def Ed448: Ed448 = "Ed448".asInstanceOf[Ed448]
   
   @js.native
-  sealed trait OKP extends keyType
+  sealed trait OKP
+    extends StObject
+       with keyType
   @scala.inline
   def OKP: OKP = "OKP".asInstanceOf[OKP]
   
   @js.native
   sealed trait `P-256`
-    extends Curves
+    extends StObject
+       with Curves
        with ECCurve
   @scala.inline
   def `P-256`: `P-256` = "P-256".asInstanceOf[`P-256`]
   
   @js.native
   sealed trait `P-384`
-    extends Curves
+    extends StObject
+       with Curves
        with ECCurve
   @scala.inline
   def `P-384`: `P-384` = "P-384".asInstanceOf[`P-384`]
   
   @js.native
   sealed trait `P-521`
-    extends Curves
+    extends StObject
+       with Curves
        with ECCurve
   @scala.inline
   def `P-521`: `P-521` = "P-521".asInstanceOf[`P-521`]
   
   @js.native
-  sealed trait RSA extends keyType
+  sealed trait RSA
+    extends StObject
+       with keyType
   @scala.inline
   def RSA: RSA = "RSA".asInstanceOf[RSA]
   
   @js.native
   sealed trait X25519
-    extends Curves
+    extends StObject
+       with Curves
        with OKPCurve
   @scala.inline
   def X25519: X25519 = "X25519".asInstanceOf[X25519]
   
   @js.native
   sealed trait X448
-    extends Curves
+    extends StObject
+       with Curves
        with OKPCurve
   @scala.inline
   def X448: X448 = "X448".asInstanceOf[X448]
@@ -165,12 +177,16 @@ object joseStrings {
   def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
-  sealed trait decrypt extends keyOperation
+  sealed trait decrypt
+    extends StObject
+       with keyOperation
   @scala.inline
   def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait deriveKey extends keyOperation
+  sealed trait deriveKey
+    extends StObject
+       with keyOperation
   @scala.inline
   def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
   
@@ -180,12 +196,16 @@ object joseStrings {
   def embedded: embedded = "embedded".asInstanceOf[embedded]
   
   @js.native
-  sealed trait enc extends use
+  sealed trait enc
+    extends StObject
+       with use
   @scala.inline
   def enc: enc = "enc".asInstanceOf[enc]
   
   @js.native
-  sealed trait encrypt extends keyOperation
+  sealed trait encrypt
+    extends StObject
+       with keyOperation
   @scala.inline
   def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
   
@@ -215,13 +235,16 @@ object joseStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait oct extends keyType
+  sealed trait oct
+    extends StObject
+       with keyType
   @scala.inline
   def oct: oct = "oct".asInstanceOf[oct]
   
   @js.native
   sealed trait `private`
-    extends asymmetricKeyObjectTypes
+    extends StObject
+       with asymmetricKeyObjectTypes
        with keyObjectTypes
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
@@ -233,30 +256,38 @@ object joseStrings {
   
   @js.native
   sealed trait public
-    extends asymmetricKeyObjectTypes
+    extends StObject
+       with asymmetricKeyObjectTypes
        with keyObjectTypes
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait secp256k1
-    extends Curves
+    extends StObject
+       with Curves
        with ECCurve
   @scala.inline
   def secp256k1: secp256k1 = "secp256k1".asInstanceOf[secp256k1]
   
   @js.native
-  sealed trait secret extends keyObjectTypes
+  sealed trait secret
+    extends StObject
+       with keyObjectTypes
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   
   @js.native
-  sealed trait sig extends use
+  sealed trait sig
+    extends StObject
+       with use
   @scala.inline
   def sig: sig = "sig".asInstanceOf[sig]
   
   @js.native
-  sealed trait sign extends keyOperation
+  sealed trait sign
+    extends StObject
+       with keyOperation
   @scala.inline
   def sign: sign = "sign".asInstanceOf[sign]
   
@@ -271,17 +302,23 @@ object joseStrings {
   def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
   
   @js.native
-  sealed trait unwrapKey extends keyOperation
+  sealed trait unwrapKey
+    extends StObject
+       with keyOperation
   @scala.inline
   def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
   
   @js.native
-  sealed trait verify extends keyOperation
+  sealed trait verify
+    extends StObject
+       with keyOperation
   @scala.inline
   def verify: verify = "verify".asInstanceOf[verify]
   
   @js.native
-  sealed trait wrapKey extends keyOperation
+  sealed trait wrapKey
+    extends StObject
+       with keyOperation
   @scala.inline
   def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
 }

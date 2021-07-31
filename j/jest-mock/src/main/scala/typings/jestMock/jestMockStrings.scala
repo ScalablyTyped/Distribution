@@ -4,28 +4,35 @@ import typings.jestMock.mod.MockFunctionMetadataType
 import typings.jestMock.mod.MockFunctionResultType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestMockStrings {
   
   @js.native
-  sealed trait array extends MockFunctionMetadataType
+  sealed trait array
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait collection extends MockFunctionMetadataType
+  sealed trait collection
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def collection: collection = "collection".asInstanceOf[collection]
   
   @js.native
-  sealed trait constant extends MockFunctionMetadataType
+  sealed trait constant
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
-  sealed trait function extends MockFunctionMetadataType
+  sealed trait function
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   
@@ -35,27 +42,37 @@ object jestMockStrings {
   def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait incomplete extends MockFunctionResultType
+  sealed trait incomplete
+    extends StObject
+       with MockFunctionResultType
   @scala.inline
   def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
   
   @js.native
-  sealed trait `null` extends MockFunctionMetadataType
+  sealed trait `null`
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait `object` extends MockFunctionMetadataType
+  sealed trait `object`
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait regexp extends MockFunctionMetadataType
+  sealed trait regexp
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait `return` extends MockFunctionResultType
+  sealed trait `return`
+    extends StObject
+       with MockFunctionResultType
   @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
   
@@ -65,12 +82,16 @@ object jestMockStrings {
   def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait `throw` extends MockFunctionResultType
+  sealed trait `throw`
+    extends StObject
+       with MockFunctionResultType
   @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   
   @js.native
-  sealed trait undefined extends MockFunctionMetadataType
+  sealed trait undefined
+    extends StObject
+       with MockFunctionMetadataType
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
 }

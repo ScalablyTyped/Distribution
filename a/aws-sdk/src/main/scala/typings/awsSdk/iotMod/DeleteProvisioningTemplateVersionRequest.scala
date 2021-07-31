@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProvisioningTemplateVersionRequest extends StObject {
   
   /**
     * The name of the fleet provisioning template version to delete.
     */
-  var templateName: TemplateName = js.native
+  var templateName: TemplateName
   
   /**
     * The fleet provisioning template version ID to delete.
     */
-  var versionId: TemplateVersionId = js.native
+  var versionId: TemplateVersionId
 }
 object DeleteProvisioningTemplateVersionRequest {
   

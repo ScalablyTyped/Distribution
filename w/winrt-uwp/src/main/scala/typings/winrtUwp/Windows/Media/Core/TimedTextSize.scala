@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a size that is used to convey the values of timed text style properties. */
-@js.native
 trait TimedTextSize extends StObject {
   
   /** The height. */
-  var height: Double = js.native
+  var height: Double
   
   /** The units of the size, either pixels or percentage. */
-  var unit: TimedTextUnit = js.native
+  var unit: TimedTextUnit
   
   /** The width. */
-  var width: Double = js.native
+  var width: Double
 }
 object TimedTextSize {
   

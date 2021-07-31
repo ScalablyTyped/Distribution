@@ -2,30 +2,28 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of replies to a comment on a file in Google Drive.
   */
-@js.native
 trait SchemaCommentReplyList extends StObject {
   
   /**
     * The list of replies. If nextPageToken is populated, then this list may be
     * incomplete and an additional page of results should be fetched.
     */
-  var items: js.UndefOr[js.Array[SchemaCommentReply]] = js.native
+  var items: js.UndefOr[js.Array[SchemaCommentReply]] = js.undefined
   
   /**
     * This is always drive#commentReplyList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the next page of replies.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of replies. This will be absent if the
@@ -33,12 +31,12 @@ trait SchemaCommentReplyList extends StObject {
     * any reason, it should be discarded, and pagination should be restarted
     * from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this list.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaCommentReplyList {
   

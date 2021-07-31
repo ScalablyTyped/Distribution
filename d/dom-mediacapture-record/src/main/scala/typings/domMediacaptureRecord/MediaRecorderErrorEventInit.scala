@@ -4,13 +4,13 @@ import typings.std.DOMException
 import typings.std.EventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaRecorderErrorEventInit extends EventInit {
+trait MediaRecorderErrorEventInit
+  extends StObject
+     with EventInit {
   
-  var error: DOMException = js.native
+  var error: DOMException
 }
 object MediaRecorderErrorEventInit {
   

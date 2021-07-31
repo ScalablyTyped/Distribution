@@ -11,7 +11,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait ZipFS
   var data: js.Any = js.native
   
   /* InferMemberOverrides */
-  override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+  override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
   
   /* InferMemberOverrides */
   override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native

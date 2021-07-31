@@ -2,10 +2,8 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaWindowsDetail extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait SchemaWindowsDetail extends StObject {
     * manifests. Examples include distro or storage location for vulnerable
     * jar.
     */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the vulnerability.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The names of the KBs which have hotfixes to mitigate this
@@ -27,12 +25,12 @@ trait SchemaWindowsDetail extends StObject {
     * multiple KBs) that mitigate a given vulnerability. Currently any listed
     * kb&#39;s presence is considered a fix.
     */
-  var fixingKbs: js.UndefOr[js.Array[SchemaKnowledgeBase]] = js.native
+  var fixingKbs: js.UndefOr[js.Array[SchemaKnowledgeBase]] = js.undefined
   
   /**
     * Required. The name of the vulnerability.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaWindowsDetail {
   

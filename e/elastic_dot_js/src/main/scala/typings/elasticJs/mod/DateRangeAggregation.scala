@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DateRangeAggregation")
 @js.native
-class DateRangeAggregation protected () extends Aggregation {
+class DateRangeAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that is dedicated for date value ranges.
     */

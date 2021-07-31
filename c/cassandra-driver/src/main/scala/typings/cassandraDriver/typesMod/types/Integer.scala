@@ -3,7 +3,6 @@ package typings.cassandraDriver.typesMod.types
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Integer")
@@ -92,35 +91,28 @@ object Integer {
   def ZERO_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromBits")
-  @js.native
-  def fromBits(bits: js.Array[Double]): Integer = js.native
+  @scala.inline
+  def fromBits(bits: js.Array[Double]): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromBuffer")
-  @js.native
-  def fromBuffer(bits: Buffer): Integer = js.native
+  @scala.inline
+  def fromBuffer(bits: Buffer): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromInt")
-  @js.native
-  def fromInt(value: Double): Integer = js.native
+  @scala.inline
+  def fromInt(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromNumber")
-  @js.native
-  def fromNumber(value: Double): Integer = js.native
+  @scala.inline
+  def fromNumber(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromString")
-  @js.native
-  def fromString(str: String): Integer = js.native
-  @JSImport("cassandra-driver/lib/types", "types.Integer.fromString")
-  @js.native
-  def fromString(str: String, opt_radix: Double): Integer = js.native
+  @scala.inline
+  def fromString(str: String): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  @scala.inline
+  def fromString(str: String, opt_radix: Double): Integer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Integer]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Integer.toBuffer")
-  @js.native
-  def toBuffer(value: Integer): Buffer = js.native
+  @scala.inline
+  def toBuffer(value: Integer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

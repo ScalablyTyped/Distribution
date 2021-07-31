@@ -4,23 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies (some) functionality provided by a grid control (aka table control)
   * @since OOo 3.1
   */
-@js.native
 trait XGridControl
-  extends XGrid
+  extends StObject
+     with XGrid
      with XGridFieldDataSupplier {
   
   /** registers a listener which is to be notified about state changes in the grid control */
-  def addGridControlListener(listener: XGridControlListener): Unit = js.native
+  def addGridControlListener(listener: XGridControlListener): Unit
   
   /** revokes a previously registered grid control listener */
-  def removeGridControlListener(listener: XGridControlListener): Unit = js.native
+  def removeGridControlListener(listener: XGridControlListener): Unit
 }
 object XGridControl {
   
@@ -30,7 +29,7 @@ object XGridControl {
     acquire: () => Unit,
     addGridControlListener: XGridControlListener => Unit,
     getCurrentColumnPosition: () => Double,
-    queryFieldData: (Double, `type`) => SafeArray[_],
+    queryFieldData: (Double, `type`) => SafeArray[js.Any],
     queryFieldDataType: `type` => SafeArray[Boolean],
     queryInterface: `type` => js.Any,
     release: () => Unit,

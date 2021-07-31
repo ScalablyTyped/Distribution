@@ -3,29 +3,28 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var comments: (js.Array[CommentBlock | CommentLine]) | Null = js.native
+  var comments: (js.Array[CommentBlock | CommentLine]) | Null
   
-  var program: Program_ = js.native
+  var program: Program_
   
-  var tokens: js.Array[_] | Null = js.native
+  var tokens: js.Array[js.Any] | Null
   
   @JSName("type")
-  var type_File_ : File = js.native
+  var type_File_ : File
 }
 object File_ {
   
   @scala.inline
-  def apply(program: Program_, `type`: File): File_ = {
-    val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(program: Program_): File_ = {
+    val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], comments = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, tokens = null, trailingComments = null)
+    __obj.updateDynamic("type")("File")
     __obj.asInstanceOf[File_]
   }
   
@@ -45,7 +44,7 @@ object File_ {
     def setProgram(value: Program_): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokens(value: js.Array[_]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTokensNull: Self = StObject.set(x, "tokens", null)

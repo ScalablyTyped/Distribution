@@ -3,30 +3,30 @@ package typings.gulpSize
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-size", JSImport.Namespace)
-  @js.native
-  def apply(): SizeStream = js.native
-  @JSImport("gulp-size", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): SizeStream = js.native
+  @scala.inline
+  def apply(): SizeStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SizeStream]
+  @scala.inline
+  def apply(options: Options): SizeStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SizeStream]
   
+  @JSImport("gulp-size", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var showFiles: js.UndefOr[Boolean] = js.native
+    var showFiles: js.UndefOr[Boolean] = js.undefined
     
-    var showTotal: js.UndefOr[Boolean] = js.native
+    var showTotal: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -72,7 +72,9 @@ object mod {
   }
   
   @js.native
-  trait SizeStream extends ReadWriteStream {
+  trait SizeStream
+    extends StObject
+       with ReadWriteStream {
     
     var prettySize: String = js.native
     

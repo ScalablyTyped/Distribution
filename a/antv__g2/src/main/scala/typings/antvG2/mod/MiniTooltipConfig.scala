@@ -5,31 +5,30 @@ import typings.antvG2.mod.Styles.background
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MiniTooltipConfig
-  extends CommonTooltipConfig
+  extends StObject
+     with CommonTooltipConfig
      with TooltipConfig {
   
-  var boardStyle: js.UndefOr[background] = js.native
+  var boardStyle: js.UndefOr[background] = js.undefined
   
-  var triangleHeight: js.UndefOr[Double] = js.native
+  var triangleHeight: js.UndefOr[Double] = js.undefined
   
-  var triangleWidth: js.UndefOr[Double] = js.native
+  var triangleWidth: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_MiniTooltipConfig: mini = js.native
+  var type_MiniTooltipConfig: mini
   
-  var valueStyle: js.UndefOr[text] = js.native
+  var valueStyle: js.UndefOr[text] = js.undefined
 }
 object MiniTooltipConfig {
   
   @scala.inline
-  def apply(`type`: mini): MiniTooltipConfig = {
+  def apply(): MiniTooltipConfig = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mini")
     __obj.asInstanceOf[MiniTooltipConfig]
   }
   

@@ -3,17 +3,15 @@ package typings.postcssReporter
 import typings.postcss.mod.ResultMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Messages extends StObject {
     
-    var messages: js.Array[ResultMessage] = js.native
+    var messages: js.Array[ResultMessage]
     
-    var source: String = js.native
+    var source: String
   }
   object Messages {
     

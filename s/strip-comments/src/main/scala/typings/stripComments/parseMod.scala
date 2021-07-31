@@ -4,7 +4,6 @@ import typings.stripComments.mod.Options
 import typings.stripComments.nodeMod.Block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
@@ -21,10 +20,12 @@ object parseMod {
     * @param  `input` string from which to strip comments
     * @param  `options` pass `opts.keepProtected: true` to keep ignored comments (e.g. `/ *!`)
     */
+  @scala.inline
+  def apply(input: String): Block = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Block]
+  @scala.inline
+  def apply(input: String, options: Options): Block = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Block]
+  
   @JSImport("strip-comments/lib/parse", JSImport.Namespace)
   @js.native
-  def apply(input: String): Block = js.native
-  @JSImport("strip-comments/lib/parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): Block = js.native
+  val ^ : js.Any = js.native
 }

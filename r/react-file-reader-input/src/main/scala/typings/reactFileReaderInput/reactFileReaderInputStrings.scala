@@ -3,7 +3,6 @@ package typings.reactFileReaderInput
 import typings.reactFileReaderInput.mod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFileReaderInputStrings {
@@ -39,7 +38,9 @@ object reactFileReaderInputStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait binary extends Format
+  sealed trait binary
+    extends StObject
+       with Format
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
@@ -49,7 +50,9 @@ object reactFileReaderInputStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait buffer extends Format
+  sealed trait buffer
+    extends StObject
+       with Format
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   
@@ -259,7 +262,9 @@ object reactFileReaderInputStrings {
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends Format
+  sealed trait text
+    extends StObject
+       with Format
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -284,7 +289,9 @@ object reactFileReaderInputStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait url extends Format
+  sealed trait url
+    extends StObject
+       with Format
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   

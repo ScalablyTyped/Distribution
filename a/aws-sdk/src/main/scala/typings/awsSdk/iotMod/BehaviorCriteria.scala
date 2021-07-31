@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BehaviorCriteria extends StObject {
   
   /**
     * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold).
     */
-  var comparisonOperator: js.UndefOr[ComparisonOperator] = js.native
+  var comparisonOperator: js.UndefOr[ComparisonOperator] = js.undefined
   
   /**
     * If a device is in violation of the behavior for the specified number of consecutive datapoints, an alarm occurs. If not specified, the default is 1.
     */
-  var consecutiveDatapointsToAlarm: js.UndefOr[ConsecutiveDatapointsToAlarm] = js.native
+  var consecutiveDatapointsToAlarm: js.UndefOr[ConsecutiveDatapointsToAlarm] = js.undefined
   
   /**
     * If an alarm has occurred and the offending device is no longer in violation of the behavior for the specified number of consecutive datapoints, the alarm is cleared. If not specified, the default is 1.
     */
-  var consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.native
+  var consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.undefined
   
   /**
     * Use this to specify the time duration over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT). For a statisticalThreshhold metric comparison, measurements from all devices are accumulated over this time duration before being used to calculate percentiles, and later, measurements from an individual device are also accumulated over this time duration before being given a percentile rank.
     */
-  var durationSeconds: js.UndefOr[DurationSeconds] = js.native
+  var durationSeconds: js.UndefOr[DurationSeconds] = js.undefined
   
   /**
     * A statistical ranking (percentile) which indicates a threshold value by which a behavior is determined to be in compliance or in violation of the behavior.
     */
-  var statisticalThreshold: js.UndefOr[StatisticalThreshold] = js.native
+  var statisticalThreshold: js.UndefOr[StatisticalThreshold] = js.undefined
   
   /**
     * The value to be compared with the metric.
     */
-  var value: js.UndefOr[MetricValue] = js.native
+  var value: js.UndefOr[MetricValue] = js.undefined
 }
 object BehaviorCriteria {
   

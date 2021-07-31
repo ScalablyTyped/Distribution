@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zrRepositoryMod {
@@ -15,6 +14,6 @@ object zrRepositoryMod {
   class ZrRepository protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    def tokenResult(): js.Promise[IgResponse[_]] = js.native
+    def tokenResult(): js.Promise[IgResponse[js.Any]] = js.native
   }
 }

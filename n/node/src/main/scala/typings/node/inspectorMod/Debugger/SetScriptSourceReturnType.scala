@@ -5,37 +5,35 @@ import typings.node.inspectorMod.Runtime.StackTrace
 import typings.node.inspectorMod.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetScriptSourceReturnType extends StObject {
   
   /**
     * Async stack trace, if any.
     */
-  var asyncStackTrace: js.UndefOr[StackTrace] = js.native
+  var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Async stack trace, if any.
     * @experimental
     */
-  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * New stack trace in case editing has happened while VM was stopped.
     */
-  var callFrames: js.UndefOr[js.Array[CallFrame]] = js.native
+  var callFrames: js.UndefOr[js.Array[CallFrame]] = js.undefined
   
   /**
     * Exception details if any.
     */
-  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.native
+  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
   /**
     * Whether current call stack  was modified after applying the changes.
     */
-  var stackChanged: js.UndefOr[Boolean] = js.native
+  var stackChanged: js.UndefOr[Boolean] = js.undefined
 }
 object SetScriptSourceReturnType {
   

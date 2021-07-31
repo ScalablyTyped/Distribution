@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleS3 extends StObject {
   
   /**
     * The Amazon S3 bucket name.
     */
-  var bucketName: Input[String] = js.native
+  var bucketName: Input[String]
   
   /**
     * The object key.
     */
-  var key: Input[String] = js.native
+  var key: Input[String]
   
   /**
     * The IAM role ARN that allows access to the CloudWatch alarm.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object TopicRuleS3 {
   

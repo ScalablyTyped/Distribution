@@ -3,38 +3,33 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.AssignmentPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait AssignmentPattern_
-  extends LVal
+- typings.babelTypes.mod._Node because Already inherited */ trait AssignmentPattern_
+  extends StObject
      with BaseNode
+     with LVal
      with Pattern
      with PatternLike {
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ = js.native
+  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_
   
-  var right: Expression = js.native
+  var right: Expression
   
-  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_AssignmentPattern_ : AssignmentPattern = js.native
+  var type_AssignmentPattern_ : AssignmentPattern
 }
 object AssignmentPattern_ {
   
   @scala.inline
-  def apply(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_,
-    right: Expression,
-    `type`: AssignmentPattern
-  ): AssignmentPattern_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_, right: Expression): AssignmentPattern_ = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
   }
   

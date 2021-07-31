@@ -10,7 +10,6 @@ import typings.reduxPersist.reduxPersistStrings.persistSlashREHYDRATE
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -24,46 +23,45 @@ object typesMod {
     * `S` means State
     * `RS` means RawState
     */
-  @js.native
   trait PersistConfig[S, RS, HSS, ESS] extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @desc Used for migrations.
       */
     var getStoredState: js.UndefOr[
         js.Function1[/* config */ PersistConfig[S, RS, HSS, ESS], js.Promise[PersistedState]]
-      ] = js.native
+      ] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
     /**
       * @deprecated keyPrefix is going to be removed in v6.
       */
-    var keyPrefix: js.UndefOr[String] = js.native
+    var keyPrefix: js.UndefOr[String] = js.undefined
     
-    var migrate: js.UndefOr[PersistMigrate] = js.native
+    var migrate: js.UndefOr[PersistMigrate] = js.undefined
     
-    var serialize: js.UndefOr[Boolean] = js.native
+    var serialize: js.UndefOr[Boolean] = js.undefined
     
-    var stateReconciler: js.UndefOr[`false` | StateReconciler[S]] = js.native
+    var stateReconciler: js.UndefOr[`false` | StateReconciler[S]] = js.undefined
     
-    var storage: Storage = js.native
+    var storage: Storage
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transforms: js.UndefOr[js.Array[Transform[HSS, ESS, S, RS]]] = js.native
+    var transforms: js.UndefOr[js.Array[Transform[HSS, ESS, S, RS]]] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var writeFailHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var writeFailHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
   }
   object PersistConfig {
     
@@ -74,7 +72,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class PersistConfigMutableBuilder[Self <: PersistConfig[_, _, _, _], S, RS, HSS, ESS] (val x: Self with (PersistConfig[S, RS, HSS, ESS])) extends AnyVal {
+    implicit class PersistConfigMutableBuilder[Self <: PersistConfig[?, ?, ?, ?], S, RS, HSS, ESS] (val x: Self & (PersistConfig[S, RS, HSS, ESS])) extends AnyVal {
       
       @scala.inline
       def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
@@ -178,12 +176,11 @@ object typesMod {
   
   type PersistMigrate = js.Function2[/* state */ PersistedState, /* currentVersion */ Double, js.Promise[PersistedState]]
   
-  @js.native
   trait PersistState extends StObject {
     
-    var rehydrated: Boolean = js.native
+    var rehydrated: Boolean
     
-    var version: Double = js.native
+    var version: Double
   }
   object PersistState {
     
@@ -206,17 +203,16 @@ object typesMod {
   
   type PersistedState = js.UndefOr[Persist]
   
-  @js.native
   trait Persistoid extends StObject {
     
-    def flush(): js.Promise[_] = js.native
+    def flush(): js.Promise[js.Any]
     
-    def update(state: js.Object): Unit = js.native
+    def update(state: js.Object): Unit
   }
   object Persistoid {
     
     @scala.inline
-    def apply(flush: () => js.Promise[_], update: js.Object => Unit): Persistoid = {
+    def apply(flush: () => js.Promise[js.Any], update: js.Object => Unit): Persistoid = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Persistoid]
     }
@@ -225,7 +221,7 @@ object typesMod {
     implicit class PersistoidMutableBuilder[Self <: Persistoid] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFlush(value: () => js.Promise[_]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
       @scala.inline
       def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
@@ -236,34 +232,33 @@ object typesMod {
     * A persistor is a redux store unto itself, allowing you to purge stored state, flush all
     * pending state serialization and immediately write to disk
     */
-  @js.native
   trait Persistor extends StObject {
     
-    def dispatch(action: PersistorAction): PersistorAction = js.native
+    def dispatch(action: PersistorAction): PersistorAction
     
-    def flush(): js.Promise[_] = js.native
+    def flush(): js.Promise[js.Any]
     
-    def getState(): PersistorState = js.native
+    def getState(): PersistorState
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    def persist(): Unit = js.native
+    def persist(): Unit
     
-    def purge(): js.Promise[_] = js.native
+    def purge(): js.Promise[js.Any]
     
-    def subscribe(callback: PersistorSubscribeCallback): js.Function0[_] = js.native
+    def subscribe(callback: PersistorSubscribeCallback): js.Function0[js.Any]
   }
   object Persistor {
     
     @scala.inline
     def apply(
       dispatch: PersistorAction => PersistorAction,
-      flush: () => js.Promise[_],
+      flush: () => js.Promise[js.Any],
       getState: () => PersistorState,
       pause: () => Unit,
       persist: () => Unit,
-      purge: () => js.Promise[_],
-      subscribe: PersistorSubscribeCallback => js.Function0[_]
+      purge: () => js.Promise[js.Any],
+      subscribe: PersistorSubscribeCallback => js.Function0[js.Any]
     ): Persistor = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), flush = js.Any.fromFunction0(flush), getState = js.Any.fromFunction0(getState), pause = js.Any.fromFunction0(pause), persist = js.Any.fromFunction0(persist), purge = js.Any.fromFunction0(purge), subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[Persistor]
@@ -276,7 +271,7 @@ object typesMod {
       def setDispatch(value: PersistorAction => PersistorAction): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setFlush(value: () => js.Promise[_]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetState(value: () => PersistorState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
@@ -288,10 +283,10 @@ object typesMod {
       def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setPurge(value: () => js.Promise[_]): Self = StObject.set(x, "purge", js.Any.fromFunction0(value))
+      def setPurge(value: () => js.Promise[js.Any]): Self = StObject.set(x, "purge", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setSubscribe(value: PersistorSubscribeCallback => js.Function0[_]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      def setSubscribe(value: PersistorSubscribeCallback => js.Function0[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -303,24 +298,23 @@ object typesMod {
   object PersistorAction {
     
     @scala.inline
-    def RegisterAction(key: String, `type`: persistSlashREGISTER): typings.reduxPersist.typesMod.RegisterAction = {
+    def RegisterAction(key: String): typings.reduxPersist.typesMod.RegisterAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("persist/REGISTER")
       __obj.asInstanceOf[typings.reduxPersist.typesMod.RegisterAction]
     }
     
     @scala.inline
-    def RehydrateAction(key: String, `type`: persistSlashREHYDRATE): typings.reduxPersist.typesMod.RehydrateAction = {
+    def RehydrateAction(key: String): typings.reduxPersist.typesMod.RehydrateAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("persist/REHYDRATE")
       __obj.asInstanceOf[typings.reduxPersist.typesMod.RehydrateAction]
     }
   }
   
-  @js.native
   trait PersistorOptions extends StObject {
     
-    var enhancer: js.UndefOr[StoreEnhancer[_, js.Object]] = js.native
+    var enhancer: js.UndefOr[StoreEnhancer[js.Any, js.Object]] = js.undefined
   }
   object PersistorOptions {
     
@@ -335,7 +329,7 @@ object typesMod {
       
       @scala.inline
       def setEnhancer(
-        value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[_, js.Object]
+        value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Any, js.Object]
       ): Self = StObject.set(x, "enhancer", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -343,12 +337,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PersistorState extends StObject {
     
-    var bootstrapped: Boolean = js.native
+    var bootstrapped: Boolean
     
-    var registry: js.Array[String] = js.native
+    var registry: js.Array[String]
   }
   object PersistorState {
     
@@ -374,19 +367,20 @@ object typesMod {
   
   type PersistorSubscribeCallback = js.Function0[js.Any]
   
-  @js.native
-  trait RegisterAction extends PersistorAction {
+  trait RegisterAction
+    extends StObject
+       with PersistorAction {
     
-    var key: String = js.native
+    var key: String
     
-    var `type`: persistSlashREGISTER = js.native
+    var `type`: persistSlashREGISTER
   }
   object RegisterAction {
     
     @scala.inline
-    def apply(key: String, `type`: persistSlashREGISTER): RegisterAction = {
+    def apply(key: String): RegisterAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("persist/REGISTER")
       __obj.asInstanceOf[RegisterAction]
     }
     
@@ -401,23 +395,24 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait RehydrateAction extends PersistorAction {
+  trait RehydrateAction
+    extends StObject
+       with PersistorAction {
     
-    var err: js.UndefOr[RehydrateErrorType | Null] = js.native
+    var err: js.UndefOr[RehydrateErrorType | Null] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var payload: js.UndefOr[js.Object | Null] = js.native
+    var payload: js.UndefOr[js.Object | Null] = js.undefined
     
-    var `type`: persistSlashREHYDRATE = js.native
+    var `type`: persistSlashREHYDRATE
   }
   object RehydrateAction {
     
     @scala.inline
-    def apply(key: String, `type`: persistSlashREHYDRATE): RehydrateAction = {
+    def apply(key: String): RehydrateAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("persist/REHYDRATE")
       __obj.asInstanceOf[RehydrateAction]
     }
     
@@ -460,14 +455,13 @@ object typesMod {
     S
   ]
   
-  @js.native
   trait Storage extends StObject {
     
-    def getItem(key: String, args: js.Any*): js.Any = js.native
+    def getItem(key: String, args: js.Any*): js.Any
     
-    def removeItem(key: String, args: js.Any*): js.Any = js.native
+    def removeItem(key: String, args: js.Any*): js.Any
     
-    def setItem(key: String, value: js.Any, args: js.Any*): js.Any = js.native
+    def setItem(key: String, value: js.Any, args: js.Any*): js.Any
   }
   object Storage {
     
@@ -495,12 +489,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Transform[HSS, ESS, S, RS] extends StObject {
     
-    var in: TransformInbound[HSS, ESS, S] = js.native
+    var in: TransformInbound[HSS, ESS, S]
     
-    var out: TransformOutbound[ESS, HSS, RS] = js.native
+    var out: TransformOutbound[ESS, HSS, RS]
   }
   object Transform {
     
@@ -514,7 +507,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform[_, _, _, _], HSS, ESS, S, RS] (val x: Self with (Transform[HSS, ESS, S, RS])) extends AnyVal {
+    implicit class TransformMutableBuilder[Self <: Transform[?, ?, ?, ?], HSS, ESS, S, RS] (val x: Self & (Transform[HSS, ESS, S, RS])) extends AnyVal {
       
       @scala.inline
       def setIn(value: (HSS, /* keyof S */ /* key */ String, S) => ESS): Self = StObject.set(x, "in", js.Any.fromFunction3(value))
@@ -540,23 +533,24 @@ object typesMod {
     */
   type TransformOutbound[SS, HSS, RS] = js.Function3[/* state */ SS, /* keyof RS */ /* key */ String, /* rawState */ RS, HSS]
   
-  @js.native
-  trait WebStorage extends Storage {
+  trait WebStorage
+    extends StObject
+       with Storage {
     
     /**
       * @desc Fetches key and returns item in a promise.
       */
-    def getItem(key: String): js.Promise[String | Null] = js.native
+    def getItem(key: String): js.Promise[String | Null]
     
     /**
       * @desc Removes value for key.
       */
-    def removeItem(key: String): js.Promise[Unit] = js.native
+    def removeItem(key: String): js.Promise[Unit]
     
     /**
       * @desc Sets value for key and returns item in a promise.
       */
-    def setItem(key: String, item: String): js.Promise[Unit] = js.native
+    def setItem(key: String, item: String): js.Promise[Unit]
   }
   object WebStorage {
     

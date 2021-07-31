@@ -3,7 +3,6 @@ package typings.rcInputNumber
 import typings.rcInputNumber.interfaceMod.InputNumberProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -77,9 +76,8 @@ object mod {
       @scala.inline
       def onPressEnter_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPressEnter")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-input-number", "default.defaultProps.parser")
-      @js.native
-      def parser(input: String): String = js.native
+      @scala.inline
+      def parser(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(input.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("rc-input-number", "default.defaultProps.prefixCls")
       @js.native

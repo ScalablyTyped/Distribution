@@ -11,7 +11,7 @@ Precision timer for nanosecond differences
 | Keywords           | precise, precision, nanosecond, timer, time, difference, elasped |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 17165 |
+| # downloads        | 5251 |
 | # stars            | 1 |
 
 ## Links

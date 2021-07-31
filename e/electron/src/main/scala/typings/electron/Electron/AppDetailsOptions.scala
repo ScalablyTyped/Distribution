@@ -2,38 +2,36 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppDetailsOptions extends StObject {
   
   /**
     * Index of the icon in `appIconPath`. Ignored when `appIconPath` is not set.
     * Default is `0`.
     */
-  var appIconIndex: js.UndefOr[Double] = js.native
+  var appIconIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Window's Relaunch Icon.
     */
-  var appIconPath: js.UndefOr[String] = js.native
+  var appIconPath: js.UndefOr[String] = js.undefined
   
   /**
     * Window's App User Model ID. It has to be set, otherwise the other options will
     * have no effect.
     */
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
   /**
     * Window's Relaunch Command.
     */
-  var relaunchCommand: js.UndefOr[String] = js.native
+  var relaunchCommand: js.UndefOr[String] = js.undefined
   
   /**
     * Window's Relaunch Display Name.
     */
-  var relaunchDisplayName: js.UndefOr[String] = js.native
+  var relaunchDisplayName: js.UndefOr[String] = js.undefined
 }
 object AppDetailsOptions {
   

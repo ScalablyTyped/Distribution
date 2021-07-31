@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgRadialMenu
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,166 +16,166 @@ trait IgRadialMenu
   /**
     * Returns or sets the background of the center button of the menu when the IsOpen property is false.
     */
-  var centerButtonClosedFill: js.UndefOr[String] = js.native
+  var centerButtonClosedFill: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen property is false.
     */
-  var centerButtonClosedStroke: js.UndefOr[String] = js.native
+  var centerButtonClosedStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the height of the center button content.
     */
-  var centerButtonContentHeight: js.UndefOr[Double] = js.native
+  var centerButtonContentHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the width of the center button content.
     */
-  var centerButtonContentWidth: js.UndefOr[Double] = js.native
+  var centerButtonContentWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the background of the center button of the menu when the IsOpen property is true.
     */
-  var centerButtonFill: js.UndefOr[String] = js.native
+  var centerButtonFill: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the background of the center button of the menu when under the pointer.
     */
-  var centerButtonHotTrackFill: js.UndefOr[String] = js.native
+  var centerButtonHotTrackFill: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the brush used for the outline of the ring of the center button when under the pointer.
     */
-  var centerButtonHotTrackStroke: js.UndefOr[String] = js.native
+  var centerButtonHotTrackStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen is true.
     */
-  var centerButtonStroke: js.UndefOr[String] = js.native
+  var centerButtonStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the width of the outline of the inner rings of the menu.
     */
-  var centerButtonStrokeThickness: js.UndefOr[Double] = js.native
+  var centerButtonStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Invoked when the IsOpen property is changed to false.
     * Function takes a first argument ui.
     * Use ui.owner to obtain reference to menu widget.
     */
-  var closed: js.UndefOr[ClosedEvent] = js.native
+  var closed: js.UndefOr[ClosedEvent] = js.undefined
   
   /**
     * Gets or sets the name of the item within the menu whose children are currently displayed.
     */
-  var currentOpenMenuItemName: js.UndefOr[String] = js.native
+  var currentOpenMenuItemName: js.UndefOr[String] = js.undefined
   
   /**
     * The font for the control
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the items of the menu are currently displayed. When closed, only the center button is rendered.
     */
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the items in the menu.
     */
-  var items: js.UndefOr[js.Array[IgRadialMenuItem]] = js.native
+  var items: js.UndefOr[js.Array[IgRadialMenuItem]] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Returns or sets the brush for the backing of the radial menu.
     */
-  var menuBackground: js.UndefOr[String] = js.native
+  var menuBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the duration of the animation performed when the IsOpen property is changed.
     */
-  var menuItemOpenCloseAnimationDuration: js.UndefOr[Double] = js.native
+  var menuItemOpenCloseAnimationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.native
+  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Returns or sets the duration of the animation performed when the IsOpen property is changed.
     */
-  var menuOpenCloseAnimationDuration: js.UndefOr[Double] = js.native
+  var menuOpenCloseAnimationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  var menuOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.native
+  var menuOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Returns or sets the minimum number of wedges displayed by the menu.
     */
-  var minWedgeCount: js.UndefOr[Double] = js.native
+  var minWedgeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Invoked when the IsOpen property is changed to true.
     * Function takes a first argument ui.
     * Use ui.owner to obtain reference to menu widget.
     */
-  var opened: js.UndefOr[OpenedEvent] = js.native
+  var opened: js.UndefOr[OpenedEvent] = js.undefined
   
   /**
     * Returns or sets the background of the outer ring of the menu.
     */
-  var outerRingFill: js.UndefOr[String] = js.native
+  var outerRingFill: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the brush used for the outline of the outer ring.
     */
-  var outerRingStroke: js.UndefOr[String] = js.native
+  var outerRingStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the width of the outline of the outer ring of the menu.
     */
-  var outerRingStrokeThickness: js.UndefOr[Double] = js.native
+  var outerRingStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the thickness of the outer ring of the menu.
     */
-  var outerRingThickness: js.UndefOr[Double] = js.native
+  var outerRingThickness: js.UndefOr[Double] = js.undefined
   
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Returns or sets the starting angle of the items expressed as the percentage of the width of a single wedge/slice.
     */
-  var rotationAsPercentageOfWedge: js.UndefOr[Double] = js.native
+  var rotationAsPercentageOfWedge: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the starting angle of the items in degrees.
     */
-  var rotationInDegrees: js.UndefOr[Double] = js.native
+  var rotationInDegrees: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns or sets the amount of padding around each wedge in degrees.
     */
-  var wedgePaddingInDegrees: js.UndefOr[Double] = js.native
+  var wedgePaddingInDegrees: js.UndefOr[Double] = js.undefined
 }
 object IgRadialMenu {
   

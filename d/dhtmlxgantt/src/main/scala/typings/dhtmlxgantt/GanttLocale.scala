@@ -2,15 +2,13 @@ package typings.dhtmlxgantt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttLocale extends StObject {
   
-  var date: GanttLocaleDate = js.native
+  var date: GanttLocaleDate
   
-  var labels: GanttLocaleLabels = js.native
+  var labels: GanttLocaleLabels
 }
 object GanttLocale {
   

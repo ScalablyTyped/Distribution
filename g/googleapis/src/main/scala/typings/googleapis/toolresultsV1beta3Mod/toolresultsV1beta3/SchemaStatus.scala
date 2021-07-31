@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,26 +40,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * message `Status` could be used directly after any stripping needed for
   * security/privacy reasons.
   */
-@js.native
 trait SchemaStatus extends StObject {
   
   /**
     * The status code, which should be an enum value of [google.rpc.Code][].
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of messages that carry the error details. There is a common set of
     * message types for APIs to use.
     */
-  var details: js.UndefOr[js.Array[SchemaAny]] = js.native
+  var details: js.UndefOr[js.Array[SchemaAny]] = js.undefined
   
   /**
     * A developer-facing error message, which should be in English. Any
     * user-facing error message should be localized and sent in the
     * [google.rpc.Status.details][] field, or localized by the client.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SchemaStatus {
   

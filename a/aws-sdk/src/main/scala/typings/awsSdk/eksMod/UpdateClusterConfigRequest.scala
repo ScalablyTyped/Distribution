@@ -2,28 +2,26 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClusterConfigRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[String] = js.native
+  var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * Enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs aren't exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing. 
     */
-  var logging: js.UndefOr[Logging] = js.native
+  var logging: js.UndefOr[Logging] = js.undefined
   
   /**
     * The name of the Amazon EKS cluster to update.
     */
-  var name: String = js.native
+  var name: String
   
-  var resourcesVpcConfig: js.UndefOr[VpcConfigRequest] = js.native
+  var resourcesVpcConfig: js.UndefOr[VpcConfigRequest] = js.undefined
 }
 object UpdateClusterConfigRequest {
   

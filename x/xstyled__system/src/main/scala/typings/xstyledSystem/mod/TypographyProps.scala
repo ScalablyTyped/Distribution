@@ -2,12 +2,11 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypographyProps
-  extends FontFamilyProps
+  extends StObject
+     with FontFamilyProps
      with FontSizeProps[StyledSystemLength]
      with LineHeightProps[StyledSystemLength]
      with FontWeightProps

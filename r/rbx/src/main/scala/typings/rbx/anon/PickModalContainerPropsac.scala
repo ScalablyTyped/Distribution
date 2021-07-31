@@ -4,28 +4,26 @@ import typings.react.mod.ReactNode
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<rbx.rbx/components/modal/modal-container.ModalContainerProps, 'active' | 'document' | 'children' | 'clipped' | 'closeOnBlur' | 'closeOnEsc' | 'onClose' | 'containerClassName'> */
-@js.native
 trait PickModalContainerPropsac extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var clipped: js.UndefOr[Boolean] = js.native
+  var clipped: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnBlur: js.UndefOr[Boolean] = js.native
+  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnEsc: js.UndefOr[Boolean] = js.native
+  var closeOnEsc: js.UndefOr[Boolean] = js.undefined
   
-  var containerClassName: js.UndefOr[String] = js.native
+  var containerClassName: js.UndefOr[String] = js.undefined
   
-  var document: js.UndefOr[Document] = js.native
+  var document: js.UndefOr[Document] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PickModalContainerPropsac {
   

@@ -2,14 +2,16 @@ package typings.vscodeWindowsRegistry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vscode-windows-registry", "GetStringRegKey")
+  @JSImport("vscode-windows-registry", JSImport.Namespace)
   @js.native
-  def GetStringRegKey(hive: HKEY, path: String, name: String): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def GetStringRegKey(hive: HKEY, path: String, name: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetStringRegKey")(hive.asInstanceOf[js.Any], path.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vscodeWindowsRegistry.vscodeWindowsRegistryStrings.HKEY_CURRENT_USER

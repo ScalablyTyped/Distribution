@@ -2,26 +2,24 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFunctionEventInvokeConfigsRequest extends StObject {
   
   /**
     * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
-  var FunctionName: typings.awsSdk.lambdaMod.FunctionName = js.native
+  var FunctionName: typings.awsSdk.lambdaMod.FunctionName
   
   /**
     * Specify the pagination token that's returned by a previous request to retrieve the next page of results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of configurations to return.
     */
-  var MaxItems: js.UndefOr[MaxFunctionEventInvokeConfigListItems] = js.native
+  var MaxItems: js.UndefOr[MaxFunctionEventInvokeConfigListItems] = js.undefined
 }
 object ListFunctionEventInvokeConfigsRequest {
   

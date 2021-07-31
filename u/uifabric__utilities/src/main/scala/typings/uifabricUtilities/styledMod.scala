@@ -13,285 +13,256 @@ import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import typings.uifabricUtilities.anon.CachedInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styledMod {
   
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
+  @JSImport("@uifabric/utilities/lib/styled", JSImport.Namespace)
   @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): FunctionComponent[TComponentProps] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: ComponentClass[TComponentProps, ComponentState],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.UndefOr[scala.Nothing],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
-  @JSImport("@uifabric/utilities/lib/styled", "styled")
-  @js.native
-  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
-    Component: FunctionComponent[TComponentProps],
-    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
-    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
-    customizable: ICustomizableProps,
-    pure: Boolean
-  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: Unit,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: Unit,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: Unit,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: Unit,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  @scala.inline
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+  
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: Unit,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: Unit,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: Unit,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: Unit,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  @scala.inline
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: Unit,
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+  
   trait ICustomizableProps extends StObject {
     
     /**
       * List of fields which can be customized.
       * @defaultvalue [ 'theme', 'styles' ]
       */
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Name of scope, which can be targeted using the Customizer.
       */
-    var scope: String = js.native
+    var scope: String
   }
   object ICustomizableProps {
     
@@ -318,10 +289,9 @@ object styledMod {
     }
   }
   
-  @js.native
   trait IPropsWithStyles[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */] extends StObject {
     
-    var styles: js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]] = js.undefined
   }
   object IPropsWithStyles {
     
@@ -332,7 +302,7 @@ object styledMod {
     }
     
     @scala.inline
-    implicit class IPropsWithStylesMutableBuilder[Self <: IPropsWithStyles[_, _], TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self with (IPropsWithStyles[TStyleProps, TStyleSet])) extends AnyVal {
+    implicit class IPropsWithStylesMutableBuilder[Self <: IPropsWithStyles[?, ?], TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (IPropsWithStyles[TStyleProps, TStyleSet])) extends AnyVal {
       
       @scala.inline
       def setStyles(value: IStyleFunctionOrObject[TStyleProps, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
@@ -345,5 +315,5 @@ object styledMod {
     }
   }
   
-  type StyleFunction[TStyleProps, TStyleSet] = (IStyleFunctionOrObject[TStyleProps, TStyleSet]) with (CachedInputs[TStyleProps, TStyleSet])
+  type StyleFunction[TStyleProps, TStyleSet] = (IStyleFunctionOrObject[TStyleProps, TStyleSet]) & (CachedInputs[TStyleProps, TStyleSet])
 }

@@ -2,15 +2,13 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubscriberOptions extends StObject {
   
-  var SubscribeChannels: js.UndefOr[String] = js.native
+  var SubscribeChannels: js.UndefOr[String] = js.undefined
   
-  var UnsubscribeChannels: js.UndefOr[String] = js.native
+  var UnsubscribeChannels: js.UndefOr[String] = js.undefined
 }
 object UpdateSubscriberOptions {
   

@@ -13,10 +13,13 @@ import typings.firebaseDatabase.repoMod.Repo
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@firebase/database", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/database", "DataSnapshot")
   @js.native
@@ -139,41 +142,32 @@ object mod {
     @scala.inline
     def TIMESTAMP_=(x: Sv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMESTAMP")(x.asInstanceOf[js.Any])
     
-    @JSImport("@firebase/database", "ServerValue.increment")
-    @js.native
-    def increment(delta: Double): SvIncrement = js.native
+    @scala.inline
+    def increment(delta: Double): SvIncrement = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(delta.asInstanceOf[js.Any]).asInstanceOf[SvIncrement]
   }
   
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(): Unit = js.native
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(logger_ : js.UndefOr[scala.Nothing], persistent: Boolean): Unit = js.native
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = js.native
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = js.native
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(logger_ : Boolean): Unit = js.native
-  @JSImport("@firebase/database", "enableLogging")
-  @js.native
-  def enableLogging(logger_ : Boolean, persistent: Boolean): Unit = js.native
+  @scala.inline
+  def enableLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[Unit]
+  @scala.inline
+  def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def enableLogging(logger_ : Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableLogging(logger_ : Boolean, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def enableLogging(logger_ : Unit, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database", "registerDatabase")
-  @js.native
-  def registerDatabase(instance: FirebaseNamespace): Unit = js.native
+  @scala.inline
+  def registerDatabase(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDatabase")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* augmented module */
   object firebaseAppTypesAugmentingMod {
     
-    @js.native
     trait FirebaseApp extends StObject {
       
-      var database: js.UndefOr[js.Function1[/* databaseURL */ js.UndefOr[String], FirebaseDatabase]] = js.native
+      var database: js.UndefOr[js.Function1[/* databaseURL */ js.UndefOr[String], FirebaseDatabase]] = js.undefined
     }
     object FirebaseApp {
       
@@ -194,10 +188,9 @@ object mod {
       }
     }
     
-    @js.native
     trait FirebaseNamespace extends StObject {
       
-      var database: js.UndefOr[Call] = js.native
+      var database: js.UndefOr[Call] = js.undefined
     }
     object FirebaseNamespace {
       

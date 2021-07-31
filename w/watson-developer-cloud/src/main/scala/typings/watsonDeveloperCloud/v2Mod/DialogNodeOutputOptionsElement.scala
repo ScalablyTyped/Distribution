@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DialogNodeOutputOptionsElement. */
-@js.native
 trait DialogNodeOutputOptionsElement extends StObject {
   
   /** The user-facing label for the option. */
-  var label: String = js.native
+  var label: String
   
   /** An object defining the message input to be sent to the assistant if the user selects the corresponding option. */
-  var value: DialogNodeOutputOptionsElementValue = js.native
+  var value: DialogNodeOutputOptionsElementValue
 }
 object DialogNodeOutputOptionsElement {
   

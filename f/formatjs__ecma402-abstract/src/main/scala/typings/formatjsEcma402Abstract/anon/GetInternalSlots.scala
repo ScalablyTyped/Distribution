@@ -4,13 +4,11 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatInternal
 import typings.std.Intl.NumberFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInternalSlots extends StObject {
   
-  def getInternalSlots(nf: NumberFormat): NumberFormatInternal = js.native
+  def getInternalSlots(nf: NumberFormat): NumberFormatInternal
 }
 object GetInternalSlots {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLivechatmessagesList extends StandardParameters {
+trait ParamsResourceLivechatmessagesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The hl parameter instructs the API to retrieve localized resource
@@ -27,38 +27,38 @@ trait ParamsResourceLivechatmessagesList extends StandardParameters {
     * are not available, the snippet.localized object will contain resource
     * details in the resource's default language.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The liveChatId parameter specifies the ID of the chat whose messages will
     * be returned.
     */
-  var liveChatId: js.UndefOr[String] = js.native
+  var liveChatId: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of messages that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken property
     * identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies the liveChatComment resource parts that the
     * API response will include. Supported values are id and snippet.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The profileImageSize parameter specifies the size of the user profile
     * pictures that should be returned in the result set. Default: 88.
     */
-  var profileImageSize: js.UndefOr[Double] = js.native
+  var profileImageSize: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceLivechatmessagesList {
   

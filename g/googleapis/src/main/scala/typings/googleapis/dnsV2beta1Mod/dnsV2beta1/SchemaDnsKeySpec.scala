@@ -2,23 +2,21 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDnsKeySpec extends StObject {
   
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
-  var keyLength: js.UndefOr[Double] = js.native
+  var keyLength: js.UndefOr[Double] = js.undefined
   
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#dnsKeySpec&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDnsKeySpec {
   

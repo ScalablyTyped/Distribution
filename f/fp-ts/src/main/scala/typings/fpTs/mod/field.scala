@@ -1,0 +1,24 @@
+package typings.fpTs.mod
+
+import typings.fpTs.eqMod.Eq
+import typings.fpTs.fieldMod.Field
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object field {
+  
+  @JSImport("fp-ts", "field")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("fp-ts", "field.fieldNumber")
+  @js.native
+  val fieldNumber: Field[Double] = js.native
+  
+  @scala.inline
+  def gcd[A](E: Eq[A], field: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(E.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+  
+  @scala.inline
+  def lcm[A](E: Eq[A], F: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lcm")(E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+}

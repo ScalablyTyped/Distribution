@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatingSystemsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#operatingSystemsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Operating system collection. */
-  var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.native
+  var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.undefined
 }
 object OperatingSystemsListResponse {
   

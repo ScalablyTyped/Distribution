@@ -2,46 +2,44 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RobotDeployment extends StObject {
   
   /**
     * The robot deployment Amazon Resource Name (ARN).
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the deployment finished.
     */
-  var deploymentFinishTime: js.UndefOr[CreatedAt] = js.native
+  var deploymentFinishTime: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the deployment was started.
     */
-  var deploymentStartTime: js.UndefOr[CreatedAt] = js.native
+  var deploymentStartTime: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The robot deployment failure code.
     */
-  var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.native
+  var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.undefined
   
   /**
     * A short description of the reason why the robot deployment failed.
     */
-  var failureReason: js.UndefOr[GenericString] = js.native
+  var failureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Information about how the deployment is progressing.
     */
-  var progressDetail: js.UndefOr[ProgressDetail] = js.native
+  var progressDetail: js.UndefOr[ProgressDetail] = js.undefined
   
   /**
     * The status of the robot deployment.
     */
-  var status: js.UndefOr[RobotStatus] = js.native
+  var status: js.UndefOr[RobotStatus] = js.undefined
 }
 object RobotDeployment {
   

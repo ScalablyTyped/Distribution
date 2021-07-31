@@ -2,13 +2,11 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFolderDataRelationshipsParent extends StObject {
   
-  var data: CreateFolderDataRelationshipsParentData = js.native
+  var data: CreateFolderDataRelationshipsParentData
 }
 object CreateFolderDataRelationshipsParent {
   

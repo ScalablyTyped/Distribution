@@ -2,27 +2,25 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentOptions extends StObject {
   
-  var autoLinkWorkItems: Boolean = js.native
+  var autoLinkWorkItems: Boolean
   
-  var badgeEnabled: Boolean = js.native
+  var badgeEnabled: Boolean
   
-  var emailNotificationType: String = js.native
+  var emailNotificationType: String
   
-  var emailRecipients: String = js.native
+  var emailRecipients: String
   
-  var enableAccessToken: Boolean = js.native
+  var enableAccessToken: Boolean
   
-  var publishDeploymentStatus: Boolean = js.native
+  var publishDeploymentStatus: Boolean
   
-  var skipArtifactsDownload: Boolean = js.native
+  var skipArtifactsDownload: Boolean
   
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object EnvironmentOptions {
   

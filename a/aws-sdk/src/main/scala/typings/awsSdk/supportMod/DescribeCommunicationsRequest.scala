@@ -2,36 +2,34 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCommunicationsRequest extends StObject {
   
   /**
     * The start date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
     */
-  var afterTime: js.UndefOr[AfterTime] = js.native
+  var afterTime: js.UndefOr[AfterTime] = js.undefined
   
   /**
     * The end date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
     */
-  var beforeTime: js.UndefOr[BeforeTime] = js.native
+  var beforeTime: js.UndefOr[BeforeTime] = js.undefined
   
   /**
     * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
     */
-  var caseId: CaseId = js.native
+  var caseId: CaseId
   
   /**
     * The maximum number of results to return before paginating.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * A resumption point for pagination.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeCommunicationsRequest {
   

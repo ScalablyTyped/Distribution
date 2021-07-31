@@ -10,8 +10,8 @@ Sorting with support for numbers, dates, unicode and more.
 | Full name          | natural-sort |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 143287 |
+| # dependents       | 6 |
+| # downloads        | 222858 |
 | # stars            | 1 |
 
 ## Links

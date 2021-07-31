@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait univariateColorSizeCreateVisualVariablesParamsSizeOptions extends Object {
+trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
+  extends StObject
+     with Object {
   
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
     */
-  var axis: js.UndefOr[all | height] = js.native
+  var axis: js.UndefOr[all | height] = js.undefined
   
   /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
     */
-  var legendOptions: js.UndefOr[univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined size scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
     */
-  var sizeScheme: js.UndefOr[SizeScheme] = js.native
+  var sizeScheme: js.UndefOr[SizeScheme] = js.undefined
 }
 object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
   

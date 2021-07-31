@@ -23,13 +23,13 @@ import typings.puppeteer.puppeteerStrings.workerdestroyed
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Page
-  extends FrameBase
-     with EventEmitter {
+  extends StObject
+     with EventEmitter
+     with FrameBase {
   
   var accessibility: Accessibility = js.native
   
@@ -118,7 +118,7 @@ trait Page
     * @param fn The function to be evaluated in browser context.
     * @param args The arguments to pass to the `fn`.
     */
-  def evaluateOnNewDocument(fn: EvaluateFn[_], args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
+  def evaluateOnNewDocument(fn: EvaluateFn[js.Any], args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
   
   /**
     * The method adds a function called name on the page's `window` object.
@@ -127,7 +127,7 @@ trait Page
     * @param name The name of the function on the window object.
     * @param fn Callback function which will be called in Puppeteer's context.
     */
-  def exposeFunction(name: String, puppeteerFunction: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+  def exposeFunction(name: String, puppeteerFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Unit] = js.native
   
   /** An array of all frames attached to the page. */
   def frames(): js.Array[Frame] = js.native
@@ -174,10 +174,7 @@ trait Page
     * @param handler The callback function.
     */
   @JSName("on")
-  def on_close(
-    eventName: close,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def on_close(eventName: close, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_console(eventName: console, handler: js.Function2[/* e */ ConsoleMessage, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -196,10 +193,7 @@ trait Page
   @JSName("on")
   def on_framenavigated(eventName: framenavigated, handler: js.Function2[/* e */ Frame, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_load(
-    eventName: load,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def on_load(eventName: load, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_metrics(
     eventName: metrics,
@@ -229,10 +223,7 @@ trait Page
     * @param handler The callback function.
     */
   @JSName("once")
-  def once_close(
-    eventName: close,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def once_close(eventName: close, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_console(eventName: console, handler: js.Function2[/* e */ ConsoleMessage, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -251,10 +242,7 @@ trait Page
   @JSName("once")
   def once_framenavigated(eventName: framenavigated, handler: js.Function2[/* e */ Frame, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
-  def once_load(
-    eventName: load,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def once_load(eventName: load, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_metrics(
     eventName: metrics,
@@ -289,7 +277,7 @@ trait Page
     * The method iterates JavaScript heap and finds all the objects with the given prototype.
     * @param prototypeHandle A handle to the object prototype.
     */
-  def queryObjects(prototypeHandle: JSHandle[_]): js.Promise[JSHandle[_]] = js.native
+  def queryObjects(prototypeHandle: JSHandle[js.Any]): js.Promise[JSHandle[js.Any]] = js.native
   
   /**
     * Reloads the current page.

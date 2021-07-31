@@ -2,37 +2,35 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactLocation extends StObject {
   
   /**
     * A short description of the artifact location.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * The index within the run artifacts array of the artifact object associated with the artifact location.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the artifact location.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A string containing a valid relative or absolute URI.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * A string which indirectly specifies the absolute URI with respect to which a relative URI in the "uri" property
     * is interpreted.
     */
-  var uriBaseId: js.UndefOr[String] = js.native
+  var uriBaseId: js.UndefOr[String] = js.undefined
 }
 object ArtifactLocation {
   

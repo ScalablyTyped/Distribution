@@ -6,12 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.majority
 import typings.arcgisJsApi.arcgisJsApiStrings.nearest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WCSLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with ImageryTileMixinProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties {
@@ -21,28 +20,28 @@ trait WCSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#coverageId)
     */
-  var coverageId: js.UndefOr[String] = js.native
+  var coverageId: js.UndefOr[String] = js.undefined
   
   /**
     * Use this property to append custom parameters to all WCS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#customParameters)
     */
-  var customParameters: js.UndefOr[js.Any] = js.native
+  var customParameters: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Defines how to interpolate pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#interpolation)
     */
-  var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.native
+  var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.undefined
   
   /**
     * Use this property to define a data slice to by choosing a variable with a given value for each of its dimensions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#multidimensionalDefinition)
     */
-  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.native
+  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.undefined
   
   /**
     * The renderer assigned to the layer.
@@ -50,14 +49,14 @@ trait WCSLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#renderer)
     */
   @JSName("renderer")
-  var renderer_WCSLayerProperties: js.UndefOr[ClassBreaksRendererProperties | RasterStretchRendererProperties] = js.native
+  var renderer_WCSLayerProperties: js.UndefOr[ClassBreaksRendererProperties | RasterStretchRendererProperties] = js.undefined
   
   /**
     * The version of Web Coverage Service currently being used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#version)
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object WCSLayerProperties {
   

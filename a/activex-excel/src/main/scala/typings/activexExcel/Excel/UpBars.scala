@@ -2,34 +2,32 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpBars extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
   @JSName("Excel.UpBars_typekey")
-  var ExcelDotUpBars_typekey: UpBars = js.native
+  var ExcelDotUpBars_typekey: UpBars
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object UpBars {
   

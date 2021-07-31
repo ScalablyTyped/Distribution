@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,26 +28,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Statement} , and then create a {@link ResultSet} . On the other hand, a row set can be used to implement capabilities for a result set, which
   * are not supported by a driver result set, like caching strategies or update capabilities.
   */
-@js.native
 trait RowSet
-  extends ResultSet
+  extends StObject
+     with ResultSet
      with XRowSet
      with XParameters {
   
   /** is the command which should be executed. */
-  var Command: String = js.native
+  var Command: String
   
   /**
     * is the name of a named datasource to use.
     * @see com.sun.star.sdbc:XDataSource
     */
-  var DataSourceName: String = js.native
+  var DataSourceName: String
   
   /**
     * returns if escape processing is on or off. If escape scanning is on (the default), the driver will do escape substitution before sending the SQL to
     * the database. This is only evaluated, if the CommandType is COMMAND.
     */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
   
   /**
     * returns the maximum number of bytes allowed for any column value.
@@ -58,37 +57,37 @@ trait RowSet
     * com.sun.star.sdbc.DataType.CHAR} , {@link com.sun.star.sdbc.DataType.VARCHAR} , and {@link com.sun.star.sdbc.DataType.LONGVARCHAR} columns. If the
     * limit is exceeded, the excess data is silently discarded. ;  There is no limitation, if set to zero.
     */
-  var MaxFieldSize: Double = js.native
+  var MaxFieldSize: Double
   
   /**
     * retrieves the maximum number of rows that a {@link ResultSet} can contain. If the limit is exceeded, the excess rows are silently dropped. ;  There is
     * no limitation, if set to zero.
     */
-  var MaxRows: Double = js.native
+  var MaxRows: Double
   
   /** determines the user for whom to open the connection. */
-  var Password: String = js.native
+  var Password: String
   
   /**
     * retrieves the number of seconds the driver will wait for a {@link Statement} to execute. If the limit is exceeded, a {@link
     * com.sun.star.sdbc.SQLException} is thrown. There is no limitation, if set to zero.
     */
-  var QueryTimeOut: Double = js.native
+  var QueryTimeOut: Double
   
   /**
     * indicates the transaction isolation level, which should be used for the connection.
     * @see com.sun.star.sdbc.TransactionIsolation
     */
-  var TransactionIsolation: Double = js.native
+  var TransactionIsolation: Double
   
   /** is the type map that will be used for the custom mapping of SQL structured types and distinct types. */
-  var TypeMap: XNameAccess = js.native
+  var TypeMap: XNameAccess
   
   /** is the connection URL. Could be used instead of the DataSourceName. */
-  var URL: String = js.native
+  var URL: String
   
   /** determines the user for whom to open the connection. */
-  var User: String = js.native
+  var User: String
 }
 object RowSet {
   

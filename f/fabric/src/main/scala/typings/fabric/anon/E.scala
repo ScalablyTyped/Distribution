@@ -4,15 +4,13 @@ import typings.fabric.fabricImplMod.Object
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait E extends StObject {
   
-  var e: js.UndefOr[Event] = js.native
+  var e: js.UndefOr[Event] = js.undefined
   
-  var `object`: js.UndefOr[Object] = js.native
+  var `object`: js.UndefOr[Object] = js.undefined
 }
 object E {
   

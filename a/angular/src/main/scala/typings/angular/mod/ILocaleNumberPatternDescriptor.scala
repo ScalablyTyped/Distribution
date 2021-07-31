@@ -2,29 +2,27 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocaleNumberPatternDescriptor extends StObject {
   
-  var gSize: Double = js.native
+  var gSize: Double
   
-  var lgSize: Double = js.native
+  var lgSize: Double
   
-  var maxFrac: Double = js.native
+  var maxFrac: Double
   
-  var minFrac: Double = js.native
+  var minFrac: Double
   
-  var minInt: Double = js.native
+  var minInt: Double
   
-  var negPre: String = js.native
+  var negPre: String
   
-  var negSuf: String = js.native
+  var negSuf: String
   
-  var posPre: String = js.native
+  var posPre: String
   
-  var posSuf: String = js.native
+  var posSuf: String
 }
 object ILocaleNumberPatternDescriptor {
   

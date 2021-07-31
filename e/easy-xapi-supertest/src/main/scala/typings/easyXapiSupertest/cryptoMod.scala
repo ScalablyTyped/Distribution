@@ -5,101 +5,83 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
   
-  @JSImport("crypto", "createCipher")
+  @JSImport("crypto", JSImport.Namespace)
   @js.native
-  def createCipher(algorithm: String, password: js.Any): Cipher = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: String, key: js.Any, iv: js.Any): Cipher = js.native
+  @scala.inline
+  def createCipher(algorithm: String, password: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
-  @JSImport("crypto", "createCredentials")
-  @js.native
-  def createCredentials(details: CredentialDetails): Credentials = js.native
+  @scala.inline
+  def createCipheriv(algorithm: String, key: js.Any, iv: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
-  @JSImport("crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: String, password: js.Any): Decipher = js.native
+  @scala.inline
+  def createCredentials(details: CredentialDetails): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createCredentials")(details.asInstanceOf[js.Any]).asInstanceOf[Credentials]
   
-  @JSImport("crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: String, key: js.Any, iv: js.Any): Decipher = js.native
+  @scala.inline
+  def createDecipher(algorithm: String, password: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
-  @JSImport("crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime_length: Double): DiffieHellman = js.native
-  @JSImport("crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime: Double, encoding: String): DiffieHellman = js.native
+  @scala.inline
+  def createDecipheriv(algorithm: String, key: js.Any, iv: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
-  @JSImport("crypto", "createHash")
-  @js.native
-  def createHash(algorithm: String): Hash = js.native
+  @scala.inline
+  def createDiffieHellman(prime_length: Double): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
+  @scala.inline
+  def createDiffieHellman(prime: Double, encoding: String): DiffieHellman = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman]
   
-  @JSImport("crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: String): Hmac = js.native
-  @JSImport("crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: Buffer): Hmac = js.native
+  @scala.inline
+  def createHash(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
-  @JSImport("crypto", "createSign")
-  @js.native
-  def createSign(algorithm: String): Signer = js.native
+  @scala.inline
+  def createHmac(algorithm: String, key: String): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: Buffer): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
   
-  @JSImport("crypto", "createVerify")
-  @js.native
-  def createVerify(algorith: String): Verify = js.native
+  @scala.inline
+  def createSign(algorithm: String): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Signer]
   
-  @JSImport("crypto", "getDiffieHellman")
-  @js.native
-  def getDiffieHellman(group_name: String): DiffieHellman = js.native
+  @scala.inline
+  def createVerify(algorith: String): Verify = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(algorith.asInstanceOf[js.Any]).asInstanceOf[Verify]
   
-  @JSImport("crypto", "pbkdf2")
-  @js.native
+  @scala.inline
+  def getDiffieHellman(group_name: String): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffieHellman")(group_name.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
+  
+  @scala.inline
   def pbkdf2(
     password: String,
     salt: String,
     iterations: Double,
     keylen: Double,
-    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("crypto", "pbkdf2")
-  @js.native
+    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def pbkdf2(
     password: String,
     salt: String,
     iterations: Double,
     keylen: Double,
     digest: String,
-    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("crypto", "pbkdf2Sync")
-  @js.native
-  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = js.native
-  @JSImport("crypto", "pbkdf2Sync")
-  @js.native
-  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @scala.inline
+  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("crypto", "pseudoRandomBytes")
-  @js.native
-  def pseudoRandomBytes(size: Double): Buffer = js.native
-  @JSImport("crypto", "pseudoRandomBytes")
-  @js.native
-  def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def pseudoRandomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double): Buffer = js.native
-  @JSImport("crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def randomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def randomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Cipher extends StObject {
@@ -110,30 +92,29 @@ object cryptoMod {
     def setAutoPadding(auto_padding: Boolean): Unit = js.native
     
     def update(data: String): String = js.native
-    def update(data: String, input_encoding: js.UndefOr[scala.Nothing], output_encoding: String): String = js.native
     def update(data: String, input_encoding: String): String = js.native
     def update(data: String, input_encoding: String, output_encoding: String): String = js.native
+    def update(data: String, input_encoding: Unit, output_encoding: String): String = js.native
     def update(data: Buffer): Buffer = js.native
   }
   
-  @js.native
   trait CredentialDetails extends StObject {
     
-    var ca: js.Any = js.native
+    var ca: js.Any
     
-    var cert: String = js.native
-    
-    //string | string array
-    var ciphers: String = js.native
+    var cert: String
     
     //string | string array
-    var crl: js.Any = js.native
+    var ciphers: String
     
-    var key: String = js.native
+    //string | string array
+    var crl: js.Any
     
-    var passphrase: String = js.native
+    var key: String
     
-    var pfx: String = js.native
+    var passphrase: String
+    
+    var pfx: String
   }
   object CredentialDetails {
     
@@ -177,10 +158,9 @@ object cryptoMod {
     }
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
   }
   object Credentials {
     
@@ -210,9 +190,9 @@ object cryptoMod {
     def setAutoPadding(auto_padding: Boolean): Unit = js.native
     
     def update(data: String): String = js.native
-    def update(data: String, input_encoding: js.UndefOr[scala.Nothing], output_encoding: String): String = js.native
     def update(data: String, input_encoding: String): String = js.native
     def update(data: String, input_encoding: String, output_encoding: String): String = js.native
+    def update(data: String, input_encoding: Unit, output_encoding: String): String = js.native
     def update(data: Buffer): Buffer = js.native
   }
   
@@ -220,9 +200,9 @@ object cryptoMod {
   trait DiffieHellman extends StObject {
     
     def computeSecret(other_public_key: String): String = js.native
-    def computeSecret(other_public_key: String, input_encoding: js.UndefOr[scala.Nothing], output_encoding: String): String = js.native
     def computeSecret(other_public_key: String, input_encoding: String): String = js.native
     def computeSecret(other_public_key: String, input_encoding: String, output_encoding: String): String = js.native
+    def computeSecret(other_public_key: String, input_encoding: Unit, output_encoding: String): String = js.native
     
     def generateKeys(): String = js.native
     def generateKeys(encoding: String): String = js.native
@@ -269,12 +249,11 @@ object cryptoMod {
     def update(data: js.Any, input_encoding: String): Hmac = js.native
   }
   
-  @js.native
   trait Signer extends StObject {
     
-    def sign(private_key: String, output_format: String): String = js.native
+    def sign(private_key: String, output_format: String): String
     
-    def update(data: js.Any): Unit = js.native
+    def update(data: js.Any): Unit
   }
   object Signer {
     

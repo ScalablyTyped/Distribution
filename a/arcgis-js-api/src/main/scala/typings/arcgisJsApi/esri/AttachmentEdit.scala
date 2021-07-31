@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttachmentEdit extends Object {
+trait AttachmentEdit
+  extends StObject
+     with Object {
   
   /**
     * The attachment to be added, updated or deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var attachment: AttachmentEditAttachment = js.native
+  var attachment: AttachmentEditAttachment
   
   /**
     * The feature, `objectId` or `globalId` of feature associated with the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var feature: Graphic | Double | String = js.native
+  var feature: Graphic | Double | String
 }
 object AttachmentEdit {
   

@@ -2,36 +2,34 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** NluEnrichmentFeatures. */
-@js.native
 trait NluEnrichmentFeatures extends StObject {
   
   /** An object that indicates the Categories enrichment will be applied to the specified field. */
-  var categories: js.UndefOr[NluEnrichmentCategories] = js.native
+  var categories: js.UndefOr[NluEnrichmentCategories] = js.undefined
   
   /** An object specifiying the concepts enrichment and related parameters. */
-  var concepts: js.UndefOr[NluEnrichmentConcepts] = js.native
+  var concepts: js.UndefOr[NluEnrichmentConcepts] = js.undefined
   
   /** An object specifying the emotion detection enrichment and related parameters. */
-  var emotion: js.UndefOr[NluEnrichmentEmotion] = js.native
+  var emotion: js.UndefOr[NluEnrichmentEmotion] = js.undefined
   
   /** An object speficying the Entities enrichment and related parameters. */
-  var entities: js.UndefOr[NluEnrichmentEntities] = js.native
+  var entities: js.UndefOr[NluEnrichmentEntities] = js.undefined
   
   /** An object specifying the Keyword enrichment and related parameters. */
-  var keywords: js.UndefOr[NluEnrichmentKeywords] = js.native
+  var keywords: js.UndefOr[NluEnrichmentKeywords] = js.undefined
   
   /** An object specifying the relations enrichment and related parameters. */
-  var relations: js.UndefOr[NluEnrichmentRelations] = js.native
+  var relations: js.UndefOr[NluEnrichmentRelations] = js.undefined
   
   /** An object specifiying the semantic roles enrichment and related parameters. */
-  var semantic_roles: js.UndefOr[NluEnrichmentSemanticRoles] = js.native
+  var semantic_roles: js.UndefOr[NluEnrichmentSemanticRoles] = js.undefined
   
   /** An object specifying the sentiment extraction enrichment and related parameters. */
-  var sentiment: js.UndefOr[NluEnrichmentSentiment] = js.native
+  var sentiment: js.UndefOr[NluEnrichmentSentiment] = js.undefined
 }
 object NluEnrichmentFeatures {
   

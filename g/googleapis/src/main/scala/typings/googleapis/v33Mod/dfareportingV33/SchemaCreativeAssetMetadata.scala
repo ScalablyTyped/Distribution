@@ -2,7 +2,6 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * uploaded or has already been uploaded. Refer to the creative sample code
   * for how to upload assets and insert a creative.
   */
-@js.native
 trait SchemaCreativeAssetMetadata extends StObject {
   
   /**
     * ID of the creative asset. This is a required field.
     */
-  var assetIdentifier: js.UndefOr[SchemaCreativeAssetId] = js.native
+  var assetIdentifier: js.UndefOr[SchemaCreativeAssetId] = js.undefined
   
   /**
     * List of detected click tags for assets. This is a read-only
     * auto-generated field.
     */
-  var clickTags: js.UndefOr[js.Array[SchemaClickTag]] = js.native
+  var clickTags: js.UndefOr[js.Array[SchemaClickTag]] = js.undefined
   
   /**
     * List of feature dependencies for the creative asset that are detected by
@@ -30,24 +28,24 @@ trait SchemaCreativeAssetMetadata extends StObject {
     * be able to support in order to render your HTML5 creative correctly. This
     * is a read-only, auto-generated field.
     */
-  var detectedFeatures: js.UndefOr[js.Array[String]] = js.native
+  var detectedFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Numeric ID of the asset. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the numeric ID of the asset. This is a read-only,
     * auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#creativeAssetMetadata&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Rules validated during code generation that generated a warning. This is
@@ -67,7 +65,7 @@ trait SchemaCreativeAssetMetadata extends StObject {
     * &quot;PRIMARY_HTML_MISSING&quot; - &quot;SVG_INVALID&quot; -
     * &quot;ZIP_INVALID&quot;
     */
-  var warnedValidationRules: js.UndefOr[js.Array[String]] = js.native
+  var warnedValidationRules: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCreativeAssetMetadata {
   

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceEphemeralBlockDevice extends StObject {
   
   /**
     * The physical name of the device.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * Whether the specified device included in the device mapping was suppressed or not (Boolean).
     */
-  var noDevice: js.UndefOr[Boolean] = js.native
+  var noDevice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The virtual device name.
     */
-  var virtualName: js.UndefOr[String] = js.native
+  var virtualName: js.UndefOr[String] = js.undefined
 }
 object GetInstanceEphemeralBlockDevice {
   

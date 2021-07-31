@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileContentBuffer extends StObject {
   
   /** The raw content in the secure keys file. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The file type of source file. */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
 }
 object FileContentBuffer {
   

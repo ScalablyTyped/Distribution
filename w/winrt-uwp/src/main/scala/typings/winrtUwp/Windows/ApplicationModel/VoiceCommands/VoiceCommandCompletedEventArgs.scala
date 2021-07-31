@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the VoiceCommandCompleted event. */
-@js.native
 trait VoiceCommandCompletedEventArgs extends StObject {
   
   /** The reason the voice command completed. */
-  var reason: VoiceCommandCompletionReason = js.native
+  var reason: VoiceCommandCompletionReason
 }
 object VoiceCommandCompletedEventArgs {
   

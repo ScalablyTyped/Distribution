@@ -10,31 +10,29 @@ import typings.systeminformation.anon.Standard
 import typings.systeminformation.anon.Summary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartData extends StObject {
   
-  var ata_smart_attributes: Revision = js.native
+  var ata_smart_attributes: Revision
   
-  var ata_smart_error_log: Summary = js.native
+  var ata_smart_error_log: Summary
   
-  var ata_smart_self_test_log: Standard = js.native
+  var ata_smart_self_test_log: Standard
   
-  var device: Infoname = js.native
+  var device: Infoname
   
-  var json_format_version: js.Array[Double] = js.native
+  var json_format_version: js.Array[Double]
   
-  var power_cycle_count: Double = js.native
+  var power_cycle_count: Double
   
-  var power_on_time: Hours = js.native
+  var power_on_time: Hours
   
-  var smart_status: Passed = js.native
+  var smart_status: Passed
   
-  var smartctl: Argv = js.native
+  var smartctl: Argv
   
-  var temperature: Current = js.native
+  var temperature: Current
 }
 object SmartData {
   

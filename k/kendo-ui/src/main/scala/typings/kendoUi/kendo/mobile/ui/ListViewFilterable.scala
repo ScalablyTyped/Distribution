@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListViewFilterable extends StObject {
   
-  var autoFilter: js.UndefOr[Boolean] = js.native
+  var autoFilter: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
 }
 object ListViewFilterable {
   

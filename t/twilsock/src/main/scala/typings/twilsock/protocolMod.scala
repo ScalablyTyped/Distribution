@@ -3,25 +3,23 @@ package typings.twilsock
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolMod {
   
   object Protocol {
     
-    @js.native
     trait Address extends StObject {
       
-      var headers: Headers = js.native
+      var headers: Headers
       
-      var host: String = js.native
+      var host: String
       
-      var method: Method = js.native
+      var method: Method
       
-      var params: Params = js.native
+      var params: Params
       
-      var path: String = js.native
+      var path: String
     }
     object Address {
       
@@ -51,23 +49,21 @@ object protocolMod {
       }
     }
     
-    @js.native
     trait Context extends StObject
     
-    @js.native
     trait Header extends StObject {
       
-      var http_request: js.UndefOr[Request] = js.native
+      var http_request: js.UndefOr[Request] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var method: MessageType = js.native
+      var method: MessageType
       
-      var notification_ctx_id: js.UndefOr[String] = js.native
+      var notification_ctx_id: js.UndefOr[String] = js.undefined
       
-      var payload_size: js.UndefOr[Double] = js.native
+      var payload_size: js.UndefOr[Double] = js.undefined
       
-      var payload_type: js.UndefOr[String] = js.native
+      var payload_type: js.UndefOr[String] = js.undefined
     }
     object Header {
       
@@ -183,18 +179,17 @@ object protocolMod {
     
     type Params = StringDictionary[String]
     
-    @js.native
     trait Request extends StObject {
       
-      var headers: Headers = js.native
+      var headers: Headers
       
-      var host: String = js.native
+      var host: String
       
-      var method: Method = js.native
+      var method: Method
       
-      var params: Params = js.native
+      var params: Params
       
-      var path: String = js.native
+      var path: String
     }
     object Request {
       

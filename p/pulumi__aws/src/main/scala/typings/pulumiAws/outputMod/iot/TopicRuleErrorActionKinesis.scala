@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionKinesis extends StObject {
   
   /**
     * The partition key.
     */
-  var partitionKey: js.UndefOr[String] = js.native
+  var partitionKey: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the Amazon Kinesis stream.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * The name of the Amazon Kinesis stream.
     */
-  var streamName: String = js.native
+  var streamName: String
 }
 object TopicRuleErrorActionKinesis {
   

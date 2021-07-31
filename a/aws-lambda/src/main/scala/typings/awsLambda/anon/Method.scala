@@ -2,21 +2,19 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Method extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var sourceIp: String = js.native
+  var sourceIp: String
   
-  var userAgent: String = js.native
+  var userAgent: String
 }
 object Method {
   

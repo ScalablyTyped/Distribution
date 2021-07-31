@@ -3,11 +3,12 @@ package typings.easeljs.createjs
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stage extends Container {
+trait Stage
+  extends StObject
+     with Container {
   
   // properties
   var autoClear: Boolean = js.native

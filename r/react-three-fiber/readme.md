@@ -10,9 +10,9 @@ A React renderer for Three.js (web and react-native)
 | ------------------ | :-------------: |
 | Full name          | react-three-fiber |
 | Keywords           | react, renderer, fiber, three, threejs |
-| # releases         | 258 |
-| # dependents       | 32 |
-| # downloads        | 607271 |
+| # releases         | 273 |
+| # dependents       | 35 |
+| # downloads        | 828783 |
 | # stars            | 0 |
 
 ## Links

@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadSettings extends StObject {
   
   /**
     * Whether the file has a header row, or the files each have a header row.
     */
-  var ContainsHeader: js.UndefOr[Boolean] = js.native
+  var ContainsHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The delimiter between values in the file.
     */
-  var Delimiter: js.UndefOr[typings.awsSdk.quicksightMod.Delimiter] = js.native
+  var Delimiter: js.UndefOr[typings.awsSdk.quicksightMod.Delimiter] = js.undefined
   
   /**
     * File format.
     */
-  var Format: js.UndefOr[FileFormat] = js.native
+  var Format: js.UndefOr[FileFormat] = js.undefined
   
   /**
     * A row number to start reading data from.
     */
-  var StartFromRow: js.UndefOr[PositiveInteger] = js.native
+  var StartFromRow: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     * Text qualifier.
     */
-  var TextQualifier: js.UndefOr[typings.awsSdk.quicksightMod.TextQualifier] = js.native
+  var TextQualifier: js.UndefOr[typings.awsSdk.quicksightMod.TextQualifier] = js.undefined
 }
 object UploadSettings {
   

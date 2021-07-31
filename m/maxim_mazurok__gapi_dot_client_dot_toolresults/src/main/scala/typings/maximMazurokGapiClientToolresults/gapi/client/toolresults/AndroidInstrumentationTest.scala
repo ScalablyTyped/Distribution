@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidInstrumentationTest extends StObject {
   
   /** The java package for the test to be executed. Required */
-  var testPackageId: js.UndefOr[String] = js.native
+  var testPackageId: js.UndefOr[String] = js.undefined
   
   /** The InstrumentationTestRunner class. Required */
-  var testRunnerClass: js.UndefOr[String] = js.native
+  var testRunnerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Each target must be fully qualified with the package name or class name, in one of these formats: - "package package_name" - "class package_name.class_name" - "class
     * package_name.class_name#method_name" If empty, all targets in the module will be run.
     */
-  var testTargets: js.UndefOr[js.Array[String]] = js.native
+  var testTargets: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The flag indicates whether Android Test Orchestrator will be used to run test or not. */
-  var useOrchestrator: js.UndefOr[Boolean] = js.native
+  var useOrchestrator: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidInstrumentationTest {
   

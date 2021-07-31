@@ -2,40 +2,38 @@ package typings.keysym
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("keysym", "fromKeysym")
+  @JSImport("keysym", JSImport.Namespace)
   @js.native
-  def fromKeysym(keysym: Double): js.UndefOr[Record] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("keysym", "fromName")
-  @js.native
-  def fromName(name: String): js.UndefOr[Record] = js.native
+  @scala.inline
+  def fromKeysym(keysym: Double): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeysym")(keysym.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
   
-  @JSImport("keysym", "fromUnicode")
-  @js.native
-  def fromUnicode(code: String): js.Array[Record] = js.native
-  @JSImport("keysym", "fromUnicode")
-  @js.native
-  def fromUnicode(code: Double): js.Array[Record] = js.native
+  @scala.inline
+  def fromName(name: String): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
+  
+  @scala.inline
+  def fromUnicode(code: String): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
+  @scala.inline
+  def fromUnicode(code: Double): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
   
   @JSImport("keysym", "records")
   @js.native
   val records: js.Array[Record] = js.native
   
-  @js.native
   trait Record extends StObject {
     
-    var keysym: Double = js.native
+    var keysym: Double
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var status: String = js.native
+    var status: String
     
-    var unicode: Double = js.native
+    var unicode: Double
   }
   object Record {
     

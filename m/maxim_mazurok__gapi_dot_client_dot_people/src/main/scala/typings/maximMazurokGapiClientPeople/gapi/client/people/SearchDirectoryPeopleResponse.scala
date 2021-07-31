@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDirectoryPeopleResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of people in the domain directory that match the query. */
-  var people: js.UndefOr[js.Array[Person]] = js.native
+  var people: js.UndefOr[js.Array[Person]] = js.undefined
   
   /** The total number of items in the list without pagination. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SearchDirectoryPeopleResponse {
   

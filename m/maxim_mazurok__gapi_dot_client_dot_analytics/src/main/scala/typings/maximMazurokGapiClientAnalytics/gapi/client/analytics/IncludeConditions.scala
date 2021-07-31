@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeConditions extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait IncludeConditions extends StObject {
     * and Transactions Greater than 2, and you set the look-back window to 14 days, then any user from Central Asia whose cumulative transactions exceed 2 during the last 14 days is added
     * to the audience.
     */
-  var daysToLookBack: js.UndefOr[Double] = js.native
+  var daysToLookBack: js.UndefOr[Double] = js.undefined
   
   /** Boolean indicating whether this segment is a smart list. https://support.google.com/analytics/answer/4628577 */
-  var isSmartList: js.UndefOr[Boolean] = js.native
+  var isSmartList: js.UndefOr[Boolean] = js.undefined
   
   /** Resource type for include conditions. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Number of days (in the range 1 to 540) a user remains in the audience. */
-  var membershipDurationDays: js.UndefOr[Double] = js.native
+  var membershipDurationDays: js.UndefOr[Double] = js.undefined
   
   /** The segment condition that will cause a user to be added to an audience. */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
 }
 object IncludeConditions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpEndpointDescription extends StObject {
   
   /**
     * The name of the HTTP endpoint selected as the destination.
     */
-  var Name: js.UndefOr[HttpEndpointName] = js.native
+  var Name: js.UndefOr[HttpEndpointName] = js.undefined
   
   /**
     * The URL of the HTTP endpoint selected as the destination.
     */
-  var Url: js.UndefOr[HttpEndpointUrl] = js.native
+  var Url: js.UndefOr[HttpEndpointUrl] = js.undefined
 }
 object HttpEndpointDescription {
   

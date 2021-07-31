@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.music
 import typings.instagramPrivateApi.instagramPrivateApiStrings.text_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object questionStickerMod {

@@ -6,27 +6,26 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response
-  extends Object
+  extends StObject
+     with Object
      with Body {
   
-  val headers: Headers = js.native
+  val headers: Headers
   
-  val ok: Boolean = js.native
+  val ok: Boolean
   
-  val redirected: Boolean = js.native
+  val redirected: Boolean
   
-  val status: Double = js.native
+  val status: Double
   
-  val statusText: String = js.native
+  val statusText: String
   
-  val `type`: ResponseType = js.native
+  val `type`: ResponseType
   
-  val url: String = js.native
+  val url: String
 }
 object Response {
   
@@ -39,7 +38,7 @@ object Response {
     formData: () => js.Promise[FormData],
     hasOwnProperty: PropertyKey => Boolean,
     headers: Headers,
-    json: () => js.Promise[_],
+    json: () => js.Promise[js.Any],
     ok: Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     redirected: Boolean,

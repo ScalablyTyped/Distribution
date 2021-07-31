@@ -11,13 +11,15 @@ import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.tableInterfaceMod.TransformColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useSorterMod {
   
-  @JSImport("antd/lib/table/hooks/useSorter", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/useSorter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[RecordType](
     hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
   ): js.Tuple4[
@@ -25,37 +27,40 @@ object useSorterMod {
     js.Array[SortState[RecordType]], 
     ColumnTitleProps[RecordType], 
     js.Function0[SorterResult[RecordType] | js.Array[SorterResult[RecordType]]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[
+    TransformColumns[RecordType], 
+    js.Array[SortState[RecordType]], 
+    ColumnTitleProps[RecordType], 
+    js.Function0[SorterResult[RecordType] | js.Array[SorterResult[RecordType]]]
+  ]]
   
-  @JSImport("antd/lib/table/hooks/useSorter", "getSortData")
-  @js.native
+  @scala.inline
   def getSortData[RecordType](
     data: js.Array[RecordType],
     sortStates: js.Array[SortState[RecordType]],
     childrenColumnName: String
-  ): js.Array[RecordType] = js.native
+  ): js.Array[RecordType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortData")(data.asInstanceOf[js.Any], sortStates.asInstanceOf[js.Any], childrenColumnName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RecordType]]
   
-  @js.native
   trait SortState[RecordType] extends StObject {
     
-    var column: ColumnType[RecordType] = js.native
+    var column: ColumnType[RecordType]
     
-    var key: Key = js.native
+    var key: Key
     
-    var multiplePriority: Double | `false` = js.native
+    var multiplePriority: Double | `false`
     
-    var sortOrder: SortOrder | Null = js.native
+    var sortOrder: SortOrder | Null
   }
   object SortState {
     
     @scala.inline
     def apply[RecordType](column: ColumnType[RecordType], key: Key, multiplePriority: Double | `false`): SortState[RecordType] = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any], sortOrder = null)
       __obj.asInstanceOf[SortState[RecordType]]
     }
     
     @scala.inline
-    implicit class SortStateMutableBuilder[Self <: SortState[_], RecordType] (val x: Self with SortState[RecordType]) extends AnyVal {
+    implicit class SortStateMutableBuilder[Self <: SortState[?], RecordType] (val x: Self & SortState[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

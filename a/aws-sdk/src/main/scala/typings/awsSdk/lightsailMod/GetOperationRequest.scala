@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOperationRequest extends StObject {
   
   /**
     * A GUID used to identify the operation.
     */
-  var operationId: NonEmptyString = js.native
+  var operationId: NonEmptyString
 }
 object GetOperationRequest {
   

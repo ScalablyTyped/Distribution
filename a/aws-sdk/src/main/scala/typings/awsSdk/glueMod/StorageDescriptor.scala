@@ -2,76 +2,74 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageDescriptor extends StObject {
   
   /**
     * A list of reducer grouping columns, clustering columns, and bucketing columns in the table.
     */
-  var BucketColumns: js.UndefOr[NameStringList] = js.native
+  var BucketColumns: js.UndefOr[NameStringList] = js.undefined
   
   /**
     * A list of the Columns in the table.
     */
-  var Columns: js.UndefOr[ColumnList] = js.native
+  var Columns: js.UndefOr[ColumnList] = js.undefined
   
   /**
     *  True if the data in the table is compressed, or False if not.
     */
-  var Compressed: js.UndefOr[Boolean] = js.native
+  var Compressed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The input format: SequenceFileInputFormat (binary), or TextInputFormat, or a custom format.
     */
-  var InputFormat: js.UndefOr[FormatString] = js.native
+  var InputFormat: js.UndefOr[FormatString] = js.undefined
   
   /**
     * The physical location of the table. By default, this takes the form of the warehouse location, followed by the database location in the warehouse, followed by the table name.
     */
-  var Location: js.UndefOr[LocationString] = js.native
+  var Location: js.UndefOr[LocationString] = js.undefined
   
   /**
     * Must be specified if the table contains any dimension columns.
     */
-  var NumberOfBuckets: js.UndefOr[Integer] = js.native
+  var NumberOfBuckets: js.UndefOr[Integer] = js.undefined
   
   /**
     * The output format: SequenceFileOutputFormat (binary), or IgnoreKeyTextOutputFormat, or a custom format.
     */
-  var OutputFormat: js.UndefOr[FormatString] = js.native
+  var OutputFormat: js.UndefOr[FormatString] = js.undefined
   
   /**
     * The user-supplied properties in key-value form.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * An object that references a schema stored in the AWS Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference.
     */
-  var SchemaReference: js.UndefOr[typings.awsSdk.glueMod.SchemaReference] = js.native
+  var SchemaReference: js.UndefOr[typings.awsSdk.glueMod.SchemaReference] = js.undefined
   
   /**
     * The serialization/deserialization (SerDe) information.
     */
-  var SerdeInfo: js.UndefOr[SerDeInfo] = js.native
+  var SerdeInfo: js.UndefOr[SerDeInfo] = js.undefined
   
   /**
     * The information about values that appear frequently in a column (skewed values).
     */
-  var SkewedInfo: js.UndefOr[typings.awsSdk.glueMod.SkewedInfo] = js.native
+  var SkewedInfo: js.UndefOr[typings.awsSdk.glueMod.SkewedInfo] = js.undefined
   
   /**
     * A list specifying the sort order of each bucket in the table.
     */
-  var SortColumns: js.UndefOr[OrderList] = js.native
+  var SortColumns: js.UndefOr[OrderList] = js.undefined
   
   /**
     *  True if the table data is stored in subdirectories, or False if not.
     */
-  var StoredAsSubDirectories: js.UndefOr[Boolean] = js.native
+  var StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
 }
 object StorageDescriptor {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineDescription extends StObject {
   
   /**
     * Description of the pipeline.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A list of read-only fields that contain metadata about the pipeline: @userId, @accountId, and @pipelineState.
     */
-  var fields: fieldList = js.native
+  var fields: fieldList
   
   /**
     * The name of the pipeline.
     */
-  var name: id = js.native
+  var name: id
   
   /**
     * The pipeline identifier that was assigned by AWS Data Pipeline. This is a string of the form df-297EG78HU43EEXAMPLE.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
   
   /**
     * A list of tags to associated with a pipeline. Tags let you control access to pipelines. For more information, see Controlling User Access to Pipelines in the AWS Data Pipeline Developer Guide.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
 }
 object PipelineDescription {
   

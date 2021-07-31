@@ -25,10 +25,13 @@ import typings.reduxForm.selectorsMod.NamesSelector
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object immutableMod {
+  
+  @JSImport("redux-form/immutable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-form/immutable", "Field")
   @js.native
@@ -58,12 +61,12 @@ object immutableMod {
   @js.native
   class Fields[P] protected ()
     extends typings.reduxForm.mod.Fields[P] {
-    def this(props: BaseFieldsProps[P] with P) = this()
+    def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BaseFieldsProps[P] with P, context: js.Any) = this()
+    def this(props: BaseFieldsProps[P] & P, context: js.Any) = this()
   }
   
   @JSImport("redux-form/immutable", "Form")
@@ -86,12 +89,12 @@ object immutableMod {
   @js.native
   class FormSection[P] protected ()
     extends typings.reduxForm.mod.FormSection[P] {
-    def this(props: FormSectionProps[P] with P) = this()
+    def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FormSectionProps[P] with P, context: js.Any) = this()
+    def this(props: FormSectionProps[P] & P, context: js.Any) = this()
   }
   
   @JSImport("redux-form/immutable", "SubmissionError")
@@ -101,98 +104,69 @@ object immutableMod {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
   }
   
-  @JSImport("redux-form/immutable", "arrayInsert")
-  @js.native
-  def arrayInsert(form: String, field: String, index: Double, value: js.Any): FormAction = js.native
+  @scala.inline
+  def arrayInsert(form: String, field: String, index: Double, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayInsert")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayMove")
-  @js.native
-  def arrayMove(form: String, field: String, from: Double, to: Double): FormAction = js.native
+  @scala.inline
+  def arrayMove(form: String, field: String, from: Double, to: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayPop")
-  @js.native
-  def arrayPop(form: String, field: String): FormAction = js.native
+  @scala.inline
+  def arrayPop(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPop")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayPush")
-  @js.native
-  def arrayPush(form: String, field: String, value: js.Any): FormAction = js.native
+  @scala.inline
+  def arrayPush(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPush")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayRemove")
-  @js.native
-  def arrayRemove(form: String, field: String, index: Double): FormAction = js.native
+  @scala.inline
+  def arrayRemove(form: String, field: String, index: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayRemoveAll")
-  @js.native
-  def arrayRemoveAll(form: String, field: String): FormAction = js.native
+  @scala.inline
+  def arrayRemoveAll(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemoveAll")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayShift")
-  @js.native
-  def arrayShift(form: String, field: String): FormAction = js.native
+  @scala.inline
+  def arrayShift(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayShift")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arraySplice")
-  @js.native
-  def arraySplice(form: String, field: String, index: Double, removeNum: Double, value: js.Any): FormAction = js.native
+  @scala.inline
+  def arraySplice(form: String, field: String, index: Double, removeNum: Double, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arraySplice")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeNum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arraySwap")
-  @js.native
-  def arraySwap(form: String, field: String, indexA: Double, indexB: Double): FormAction = js.native
+  @scala.inline
+  def arraySwap(form: String, field: String, indexA: Double, indexB: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arraySwap")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "arrayUnshift")
-  @js.native
-  def arrayUnshift(form: String, field: String, value: js.Any): FormAction = js.native
+  @scala.inline
+  def arrayUnshift(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnshift")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "autofill")
-  @js.native
-  def autofill(form: String, field: String, value: js.Any): FormAction = js.native
+  @scala.inline
+  def autofill(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("autofill")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "blur")
-  @js.native
-  def blur(form: String, field: String, value: js.Any): FormAction = js.native
-  @JSImport("redux-form/immutable", "blur")
-  @js.native
-  def blur(form: String, field: String, value: js.Any, touch: Boolean): FormAction = js.native
+  @scala.inline
+  def blur(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def blur(form: String, field: String, value: js.Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "change")
-  @js.native
-  def change(form: String, field: String, value: js.Any): FormAction = js.native
-  @JSImport("redux-form/immutable", "change")
-  @js.native
-  def change(
-    form: String,
-    field: String,
-    value: js.Any,
-    touch: js.UndefOr[scala.Nothing],
-    persistentSubmitErrors: Boolean
-  ): FormAction = js.native
-  @JSImport("redux-form/immutable", "change")
-  @js.native
-  def change(form: String, field: String, value: js.Any, touch: Boolean): FormAction = js.native
-  @JSImport("redux-form/immutable", "change")
-  @js.native
-  def change(form: String, field: String, value: js.Any, touch: Boolean, persistentSubmitErrors: Boolean): FormAction = js.native
+  @scala.inline
+  def change(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def change(form: String, field: String, value: js.Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def change(form: String, field: String, value: js.Any, touch: Boolean, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def change(form: String, field: String, value: js.Any, touch: Unit, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "clearFields")
-  @js.native
-  def clearFields(form: String, keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): FormAction = js.native
+  @scala.inline
+  def clearFields(form: String, keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearFields")(form.asInstanceOf[js.Any], keepTouched.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "clearSubmitErrors")
-  @js.native
-  def clearSubmitErrors(form: String): FormAction = js.native
+  @scala.inline
+  def clearSubmitErrors(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSubmitErrors")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "destroy")
-  @js.native
-  def destroy(form: String*): FormAction = js.native
+  @scala.inline
+  def destroy(form: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "focus")
-  @js.native
-  def focus(form: String, field: String): FormAction = js.native
+  @scala.inline
+  def focus(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "formValueSelector")
-  @js.native
-  def formValueSelector[State](form: String): js.Function2[/* state */ State, /* repeated */ String, _] = js.native
-  @JSImport("redux-form/immutable", "formValueSelector")
-  @js.native
-  def formValueSelector[State](form: String, getFormState: js.Function1[/* state */ State, FormStateMap]): js.Function2[/* state */ State, /* repeated */ String, _] = js.native
+  @scala.inline
+  def formValueSelector[State](form: String): js.Function2[/* state */ State, /* repeated */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValueSelector")(form.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* state */ State, /* repeated */ String, js.Any]]
+  @scala.inline
+  def formValueSelector[State](form: String, getFormState: js.Function1[/* state */ State, FormStateMap]): js.Function2[/* state */ State, /* repeated */ String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formValueSelector")(form.asInstanceOf[js.Any], getFormState.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* state */ State, /* repeated */ String, js.Any]]
   
   @JSImport("redux-form/immutable", "getFormAsyncErrors")
   @js.native
@@ -234,26 +208,16 @@ object immutableMod {
   @js.native
   val hasSubmitSucceeded: BooleanSelector[js.Object] = js.native
   
-  @JSImport("redux-form/immutable", "initialize")
-  @js.native
-  def initialize(form: String, data: js.Any): FormAction = js.native
-  @JSImport("redux-form/immutable", "initialize")
-  @js.native
-  def initialize(
-    form: String,
-    data: js.Any,
-    keepDirty: js.UndefOr[scala.Nothing],
-    options: PartialInitializeOptions
-  ): FormAction = js.native
-  @JSImport("redux-form/immutable", "initialize")
-  @js.native
-  def initialize(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
-  @JSImport("redux-form/immutable", "initialize")
-  @js.native
-  def initialize(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
-  @JSImport("redux-form/immutable", "initialize")
-  @js.native
-  def initialize(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native
+  @scala.inline
+  def initialize(form: String, data: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def initialize(form: String, data: js.Any, keepDirty: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def initialize(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def initialize(form: String, data: js.Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  @scala.inline
+  def initialize(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   @JSImport("redux-form/immutable", "isAsyncValidating")
   @js.native
@@ -283,61 +247,46 @@ object immutableMod {
   @js.native
   val reducer: FormReducer = js.native
   
-  @JSImport("redux-form/immutable", "reduxForm")
-  @js.native
-  def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = js.native
-  @JSImport("redux-form/immutable", "reduxForm")
-  @js.native
-  def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = js.native
+  @scala.inline
+  def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
+  @scala.inline
+  def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
-  @JSImport("redux-form/immutable", "registerField")
-  @js.native
-  def registerField(form: String, name: String, `type`: FieldType): FormAction = js.native
+  @scala.inline
+  def registerField(form: String, name: String, `type`: FieldType): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("registerField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "reset")
-  @js.native
-  def reset(form: String): FormAction = js.native
+  @scala.inline
+  def reset(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "resetSection")
-  @js.native
-  def resetSection(form: String, sections: String*): FormAction = js.native
+  @scala.inline
+  def resetSection(form: String, sections: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("resetSection")(form.asInstanceOf[js.Any], sections.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "setSubmitFailed")
-  @js.native
-  def setSubmitFailed(form: String, fields: String*): FormAction = js.native
+  @scala.inline
+  def setSubmitFailed(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setSubmitFailed")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "startAsyncValidation")
-  @js.native
-  def startAsyncValidation(form: String): FormAction = js.native
+  @scala.inline
+  def startAsyncValidation(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("startAsyncValidation")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "startSubmit")
-  @js.native
-  def startSubmit(form: String): FormAction = js.native
+  @scala.inline
+  def startSubmit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("startSubmit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "stopSubmit")
-  @js.native
-  def stopSubmit(form: String): FormAction = js.native
-  @JSImport("redux-form/immutable", "stopSubmit")
-  @js.native
-  def stopSubmit(form: String, errors: FormErrors[_, _]): FormAction = js.native
+  @scala.inline
+  def stopSubmit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("stopSubmit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
+  @scala.inline
+  def stopSubmit(form: String, errors: FormErrors[js.Any, js.Any]): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopSubmit")(form.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "touch")
-  @js.native
-  def touch(form: String, fields: String*): FormAction = js.native
+  @scala.inline
+  def touch(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("touch")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "unregisterField")
-  @js.native
-  def unregisterField(form: String, name: String): FormAction = js.native
+  @scala.inline
+  def unregisterField(form: String, name: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "untouch")
-  @js.native
-  def untouch(form: String, fields: String*): FormAction = js.native
+  @scala.inline
+  def untouch(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("untouch")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "updateSyncErrors")
-  @js.native
-  def updateSyncErrors[T](from: String, syncErrors: FormErrors[_, T], error: T): FormAction = js.native
+  @scala.inline
+  def updateSyncErrors[T](from: String, syncErrors: FormErrors[js.Any, T], error: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncErrors")(from.asInstanceOf[js.Any], syncErrors.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  @JSImport("redux-form/immutable", "updateSyncWarnings")
-  @js.native
-  def updateSyncWarnings[T](form: String, syncWarnings: FormWarnings[_, T], warning: T): FormAction = js.native
+  @scala.inline
+  def updateSyncWarnings[T](form: String, syncWarnings: FormWarnings[js.Any, T], warning: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncWarnings")(form.asInstanceOf[js.Any], syncWarnings.asInstanceOf[js.Any], warning.asInstanceOf[js.Any])).asInstanceOf[FormAction]
 }

@@ -2,11 +2,11 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AggressiveTokenizerEs extends Tokenizer
+trait AggressiveTokenizerEs
+  extends StObject
+     with Tokenizer
 object AggressiveTokenizerEs {
   
   @scala.inline

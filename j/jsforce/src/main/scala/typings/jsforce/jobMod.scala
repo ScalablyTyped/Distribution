@@ -8,7 +8,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobMod {
@@ -18,64 +17,23 @@ object jobMod {
   class Job protected () extends EventEmitter {
     def this(bulk: Bulk) = this()
     def this(bulk: Bulk, `type`: String) = this()
-    def this(bulk: Bulk, `type`: js.UndefOr[scala.Nothing], operation: String) = this()
     def this(bulk: Bulk, `type`: String, operation: String) = this()
-    def this(
-      bulk: Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions
-    ) = this()
-    def this(bulk: Bulk, `type`: js.UndefOr[scala.Nothing], operation: String, options: BulkOptions) = this()
-    def this(bulk: Bulk, `type`: String, operation: js.UndefOr[scala.Nothing], options: BulkOptions) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: String) = this()
     def this(bulk: Bulk, `type`: String, operation: String, options: BulkOptions) = this()
-    def this(
-      bulk: Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      jobId: String
-    ) = this()
-    def this(
-      bulk: Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions,
-      jobId: String
-    ) = this()
-    def this(
-      bulk: Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: String,
-      options: js.UndefOr[scala.Nothing],
-      jobId: String
-    ) = this()
-    def this(
-      bulk: Bulk,
-      `type`: js.UndefOr[scala.Nothing],
-      operation: String,
-      options: BulkOptions,
-      jobId: String
-    ) = this()
-    def this(
-      bulk: Bulk,
-      `type`: String,
-      operation: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      jobId: String
-    ) = this()
-    def this(
-      bulk: Bulk,
-      `type`: String,
-      operation: js.UndefOr[scala.Nothing],
-      options: BulkOptions,
-      jobId: String
-    ) = this()
-    def this(bulk: Bulk, `type`: String, operation: String, options: js.UndefOr[scala.Nothing], jobId: String) = this()
+    def this(bulk: Bulk, `type`: String, operation: Unit, options: BulkOptions) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: String, options: BulkOptions) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: Unit, options: BulkOptions) = this()
+    def this(bulk: Bulk, `type`: String, operation: String, options: Unit, jobId: String) = this()
     def this(bulk: Bulk, `type`: String, operation: String, options: BulkOptions, jobId: String) = this()
+    def this(bulk: Bulk, `type`: String, operation: Unit, options: Unit, jobId: String) = this()
+    def this(bulk: Bulk, `type`: String, operation: Unit, options: BulkOptions, jobId: String) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: String, options: Unit, jobId: String) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: String, options: BulkOptions, jobId: String) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: Unit, options: Unit, jobId: String) = this()
+    def this(bulk: Bulk, `type`: Unit, operation: Unit, options: BulkOptions, jobId: String) = this()
     
-    def abort(): js.Promise[_] = js.native
-    def abort(callback: js.Function2[/* err */ Error, /* jobInfo */ JobInfo, Unit]): js.Promise[_] = js.native
+    def abort(): js.Promise[js.Any] = js.native
+    def abort(callback: js.Function2[/* err */ Error, /* jobInfo */ JobInfo, Unit]): js.Promise[js.Any] = js.native
     
     def batch(batchId: String): Batch = js.native
     
@@ -97,16 +55,15 @@ object jobMod {
     def open(callback: js.Function2[/* err */ Error, /* jobInfo */ JobInfo, Unit]): js.Promise[JobInfo] = js.native
   }
   
-  @js.native
   trait JobInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `object`: String = js.native
+    var `object`: String
     
-    var operation: String = js.native
+    var operation: String
     
-    var state: String = js.native
+    var state: String
   }
   object JobInfo {
     

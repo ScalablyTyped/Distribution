@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionCheckResponse extends StObject {
   
   /** The version of the API this client revision should use when calling API methods. */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#revisionCheckResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The result of the revision check. */
-  var revisionStatus: js.UndefOr[String] = js.native
+  var revisionStatus: js.UndefOr[String] = js.undefined
 }
 object RevisionCheckResponse {
   

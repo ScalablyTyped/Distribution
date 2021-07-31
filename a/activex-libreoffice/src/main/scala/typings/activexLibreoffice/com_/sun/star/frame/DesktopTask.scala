@@ -11,44 +11,43 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use the {@link Frame} service instead of this
   * @deprecated Deprecated
   */
-@js.native
 trait DesktopTask
-  extends XFramesSupplier
+  extends StObject
      with XDesktopTask
      with XPropertySet
-     with XWindowArranger {
+     with XWindowArranger
+     with XFramesSupplier {
   
-  var IsAlwaysVisible: Boolean = js.native
+  var IsAlwaysVisible: Boolean
   
-  var IsDesktop: Boolean = js.native
+  var IsDesktop: Boolean
   
-  var IsFloating: Boolean = js.native
+  var IsFloating: Boolean
   
   /** use th visible state of the frame container window instead of this */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** use the position of the frame container window instead of this */
-  var Position: Point = js.native
+  var Position: Point
   
   /** use the size of the frame container window instead of this */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** use property {@link Frame.Title} instead of that */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * use {@link com.sun.star.lang.XInitialization} instead.
     * @deprecated Deprecated
     */
   /* InferMemberOverrides */
-  override def initialize(TaskWindow: XWindow): Unit = js.native
+  override def initialize(TaskWindow: XWindow): Unit
 }
 object DesktopTask {
   

@@ -3,15 +3,13 @@ package typings.reactBootstrapTable.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparatorDate extends StObject {
   
-  var comparator: CSSProperties = js.native
+  var comparator: CSSProperties
   
-  var date: CSSProperties = js.native
+  var date: CSSProperties
 }
 object ComparatorDate {
   

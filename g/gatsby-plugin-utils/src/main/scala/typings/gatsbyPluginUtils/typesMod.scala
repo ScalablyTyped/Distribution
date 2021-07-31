@@ -3,21 +3,21 @@ package typings.gatsbyPluginUtils
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait IFlattenedPlugin extends IPluginInfo {
+  trait IFlattenedPlugin
+    extends StObject
+       with IPluginInfo {
     
-    var browserAPIs: js.Array[String] = js.native
+    var browserAPIs: js.Array[String]
     
-    var nodeAPIs: js.Array[String] = js.native
+    var nodeAPIs: js.Array[String]
     
-    var skipSSR: js.UndefOr[Boolean] = js.native
+    var skipSSR: js.UndefOr[Boolean] = js.undefined
     
-    var ssrAPIs: js.Array[String] = js.native
+    var ssrAPIs: js.Array[String]
   }
   object IFlattenedPlugin {
     
@@ -64,23 +64,22 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IPluginInfo extends StObject {
     
     /** Unique ID describing a plugin */
-    var id: String = js.native
+    var id: String
     
     /** The plugin name */
-    var name: String = js.native
+    var name: String
     
     /** Options passed to the plugin */
-    var pluginOptions: js.UndefOr[IPluginInfoOptions] = js.native
+    var pluginOptions: js.UndefOr[IPluginInfoOptions] = js.undefined
     
     /** The absolute path to the plugin */
-    var resolve: String = js.native
+    var resolve: String
     
     /** The plugin version (can be content hash) */
-    var version: String = js.native
+    var version: String
   }
   object IPluginInfo {
     
@@ -113,13 +112,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IPluginInfoOptions
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[IPluginInfo]] = js.native
+    var plugins: js.UndefOr[js.Array[IPluginInfo]] = js.undefined
   }
   object IPluginInfoOptions {
     
@@ -149,14 +148,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IPluginRefObject extends StObject {
     
-    var options: js.UndefOr[IPluginRefOptions] = js.native
+    var options: js.UndefOr[IPluginRefOptions] = js.undefined
     
-    var parentDir: js.UndefOr[String] = js.native
+    var parentDir: js.UndefOr[String] = js.undefined
     
-    var resolve: String = js.native
+    var resolve: String
   }
   object IPluginRefObject {
     
@@ -186,13 +184,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IPluginRefOptions
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[PluginRef]] = js.native
+    var plugins: js.UndefOr[js.Array[PluginRef]] = js.undefined
   }
   object IPluginRefOptions {
     
@@ -222,10 +220,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IRawSiteConfig extends StObject {
     
-    var plugins: js.UndefOr[js.Array[PluginRef]] = js.native
+    var plugins: js.UndefOr[js.Array[PluginRef]] = js.undefined
   }
   object IRawSiteConfig {
     
@@ -249,11 +246,12 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ISiteConfig extends IRawSiteConfig {
+  trait ISiteConfig
+    extends StObject
+       with IRawSiteConfig {
     
     @JSName("plugins")
-    var plugins_ISiteConfig: js.UndefOr[js.Array[IPluginRefObject]] = js.native
+    var plugins_ISiteConfig: js.UndefOr[js.Array[IPluginRefObject]] = js.undefined
   }
   object ISiteConfig {
     

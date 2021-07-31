@@ -18,38 +18,36 @@ import typings.awsSdkClientS3Node.typesInventoryScheduleMod.UnmarshalledInventor
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInventoryConfigurationMod {
   
-  @js.native
   trait InventoryConfiguration extends StObject {
     
     /**
       * <p>Contains information about where to publish the inventory results.</p>
       */
-    var Destination: InventoryDestination = js.native
+    var Destination: InventoryDestination
     
     /**
       * <p>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria.</p>
       */
-    var Filter: js.UndefOr[InventoryFilter] = js.native
+    var Filter: js.UndefOr[InventoryFilter] = js.undefined
     
     /**
       * <p>The ID used to identify the inventory configuration.</p>
       */
-    var Id: String = js.native
+    var Id: String
     
     /**
       * <p>Specifies which object version(s) to included in the inventory results.</p>
       */
-    var IncludedObjectVersions: All | Current | String = js.native
+    var IncludedObjectVersions: All | Current | String
     
     /**
       * <p>Specifies whether the inventory is enabled or disabled.</p>
       */
-    var IsEnabled: Boolean = js.native
+    var IsEnabled: Boolean
     
     /**
       * <p>Contains the optional fields that are included in the inventory results.</p>
@@ -60,12 +58,12 @@ object typesInventoryConfigurationMod {
         ]) | (Iterable[
           Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Specifies the schedule for generating inventory results.</p>
       */
-    var Schedule: InventorySchedule = js.native
+    var Schedule: InventorySchedule
   }
   object InventoryConfiguration {
     
@@ -124,20 +122,21 @@ object typesInventoryConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledInventoryConfiguration extends InventoryConfiguration {
+  trait UnmarshalledInventoryConfiguration
+    extends StObject
+       with InventoryConfiguration {
     
     /**
       * <p>Contains information about where to publish the inventory results.</p>
       */
     @JSName("Destination")
-    var Destination_UnmarshalledInventoryConfiguration: UnmarshalledInventoryDestination = js.native
+    var Destination_UnmarshalledInventoryConfiguration: UnmarshalledInventoryDestination
     
     /**
       * <p>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria.</p>
       */
     @JSName("Filter")
-    var Filter_UnmarshalledInventoryConfiguration: js.UndefOr[UnmarshalledInventoryFilter] = js.native
+    var Filter_UnmarshalledInventoryConfiguration: js.UndefOr[UnmarshalledInventoryFilter] = js.undefined
     
     /**
       * <p>Contains the optional fields that are included in the inventory results.</p>
@@ -147,13 +146,13 @@ object typesInventoryConfigurationMod {
         js.Array[
           Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Specifies the schedule for generating inventory results.</p>
       */
     @JSName("Schedule")
-    var Schedule_UnmarshalledInventoryConfiguration: UnmarshalledInventorySchedule = js.native
+    var Schedule_UnmarshalledInventoryConfiguration: UnmarshalledInventorySchedule
   }
   object UnmarshalledInventoryConfiguration {
     

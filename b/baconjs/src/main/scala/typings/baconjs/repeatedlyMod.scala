@@ -4,12 +4,14 @@ import typings.baconjs.eventMod.Event
 import typings.baconjs.observableMod.EventStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repeatedlyMod {
   
-  @JSImport("baconjs/types/repeatedly", JSImport.Default)
+  @JSImport("baconjs/types/repeatedly", JSImport.Namespace)
   @js.native
-  def default[V](delay: Double, values: js.Array[V | Event[V]]): EventStream[V] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[V](delay: Double, values: js.Array[V | Event[V]]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delay.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
 }

@@ -2,13 +2,11 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextExecution extends StObject {
   
-  var nextExecution: js.Function = js.native
+  var nextExecution: js.Function
 }
 object NextExecution {
   

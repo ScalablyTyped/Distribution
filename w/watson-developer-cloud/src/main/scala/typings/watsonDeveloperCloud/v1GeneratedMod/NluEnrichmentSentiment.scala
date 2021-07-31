@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object specifying the sentiment extraction enrichment and related parameters. */
-@js.native
 trait NluEnrichmentSentiment extends StObject {
   
   /** When `true`, sentiment analysis is performed on the entire field. */
-  var document: js.UndefOr[Boolean] = js.native
+  var document: js.UndefOr[Boolean] = js.undefined
   
   /** A comma-separated list of target strings that will have any associated sentiment analyzed. */
-  var targets: js.UndefOr[js.Array[String]] = js.native
+  var targets: js.UndefOr[js.Array[String]] = js.undefined
 }
 object NluEnrichmentSentiment {
   

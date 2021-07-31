@@ -2,13 +2,13 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayersControlEvent extends LayerEvent {
+trait LayersControlEvent
+  extends StObject
+     with LayerEvent {
   
-  var name: String = js.native
+  var name: String
 }
 object LayersControlEvent {
   

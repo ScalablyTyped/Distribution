@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,32 +16,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  1. Large components which are wrapped up in UNO interfaces and for which distinct filters are not available separately as components. 2. Very small
   * components for which only one or very few hard coded file format filters make sense or even exist.
   */
-@js.native
-trait XStorable extends XInterface {
+trait XStorable
+  extends StObject
+     with XInterface {
   
   /**
     * After {@link XStorable.storeAsURL()} it returns the URL the object was stored to.
     * @returns the URL of the resource which is represented by this object.
     */
-  val Location: String = js.native
+  val Location: String
   
   /**
     * After {@link XStorable.storeAsURL()} it returns the URL the object was stored to.
     * @returns the URL of the resource which is represented by this object.
     */
-  def getLocation(): String = js.native
+  def getLocation(): String
   
   /**
     * The object may know the location because it was loaded from there, or because it is stored there.
     * @returns `TRUE` if the object knows a location where it is persistent `FALSE` otherwise
     */
-  def hasLocation(): Boolean = js.native
+  def hasLocation(): Boolean
   
   /**
     * It is not possible to call {@link XStorable.store()} successfully when the data store is read-only.
     * @returns `TRUE` if the data store is readonly or opened readonly `FALSE` otherwise
     */
-  def isReadonly(): Boolean = js.native
+  def isReadonly(): Boolean
   
   /**
     * stores the data to the URL from which it was loaded.
@@ -52,7 +52,7 @@ trait XStorable extends XInterface {
     * @see XStorable.storeToURL
     * @throws com::sun::star::io::IOException if an IO error occurred during save operation (may the location is unknown)
     */
-  def store(): Unit = js.native
+  def store(): Unit
   
   /**
     * stores the object's persistent data to a URL and makes this URL the new location of the object.
@@ -69,7 +69,7 @@ trait XStorable extends XInterface {
     * @see com.sun.star.document.MediaDescriptor
     * @throws com::sun::star::io::IOException if an IO error occurred during save operation (may the location is unknown)
     */
-  def storeAsURL(sURL: String, lArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def storeAsURL(sURL: String, lArguments: SeqEquiv[PropertyValue]): Unit
   
   /**
     * stores the object's persistent data to a URL and continues to be a representation of the old URL.
@@ -85,7 +85,7 @@ trait XStorable extends XInterface {
     * @see com.sun.star.document.MediaDescriptor
     * @throws com::sun::star::io::IOException if an IO error occurred during save operation (may the location is unknown)
     */
-  def storeToURL(sURL: String, lArguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def storeToURL(sURL: String, lArguments: SeqEquiv[PropertyValue]): Unit
 }
 object XStorable {
   

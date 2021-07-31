@@ -2,26 +2,24 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Measures the progress of a particular metric.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1Progress extends StObject {
   
   /**
     * The amount of work that has been completed. Note that this may be greater
     * than work_estimated.
     */
-  var workCompleted: js.UndefOr[String] = js.native
+  var workCompleted: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of how much work needs to be performed. May be zero if the
     * work estimate is unavailable.
     */
-  var workEstimated: js.UndefOr[String] = js.native
+  var workEstimated: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1Progress {
   

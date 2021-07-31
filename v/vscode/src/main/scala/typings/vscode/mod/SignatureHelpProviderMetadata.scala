@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpProviderMetadata extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait SignatureHelpProviderMetadata extends StObject {
     * These trigger characters are only active when signature help is already showing. All trigger characters
     * are also counted as re-trigger characters.
     */
-  val retriggerCharacters: js.Array[String] = js.native
+  val retriggerCharacters: js.Array[String]
   
   /**
     * List of characters that trigger signature help.
     */
-  val triggerCharacters: js.Array[String] = js.native
+  val triggerCharacters: js.Array[String]
 }
 object SignatureHelpProviderMetadata {
   

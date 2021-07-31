@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiServiceusageV1ServiceConfig extends StObject {
   
   /** A list of API interfaces exported by this service. Contains only the names, versions, and method names of the interfaces. */
-  var apis: js.UndefOr[js.Array[Api]] = js.native
+  var apis: js.UndefOr[js.Array[Api]] = js.undefined
   
   /** Auth configuration. Contains only the OAuth rules. */
-  var authentication: js.UndefOr[Authentication] = js.native
+  var authentication: js.UndefOr[Authentication] = js.undefined
   
   /** Additional API documentation. Contains only the summary and the documentation URL. */
-  var documentation: js.UndefOr[Documentation] = js.native
+  var documentation: js.UndefOr[Documentation] = js.undefined
   
   /** Configuration for network endpoints. Contains only the names and aliases of the endpoints. */
-  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.native
+  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.undefined
   
   /** Defines the monitored resources used by this service. This is required by the Service.monitoring and Service.logging configurations. */
-  var monitoredResources: js.UndefOr[js.Array[MonitoredResourceDescriptor]] = js.native
+  var monitoredResources: js.UndefOr[js.Array[MonitoredResourceDescriptor]] = js.undefined
   
   /** Monitoring configuration. This should not include the 'producer_destinations' field. */
-  var monitoring: js.UndefOr[Monitoring] = js.native
+  var monitoring: js.UndefOr[Monitoring] = js.undefined
   
   /** The DNS address at which this service is available. An example DNS address would be: `calendar.googleapis.com`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Quota configuration. */
-  var quota: js.UndefOr[Quota] = js.native
+  var quota: js.UndefOr[Quota] = js.undefined
   
   /** The product title for this service. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Configuration controlling usage of this service. */
-  var usage: js.UndefOr[Usage] = js.native
+  var usage: js.UndefOr[Usage] = js.undefined
 }
 object GoogleApiServiceusageV1ServiceConfig {
   

@@ -2,76 +2,74 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaResponse extends StObject {
   
   /**
     * The compatibility mode of the schema.
     */
-  var Compatibility: js.UndefOr[typings.awsSdk.glueMod.Compatibility] = js.native
+  var Compatibility: js.UndefOr[typings.awsSdk.glueMod.Compatibility] = js.undefined
   
   /**
     * The date and time the schema was created.
     */
-  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.native
+  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * The data format of the schema definition. Currently only AVRO is supported.
     */
-  var DataFormat: js.UndefOr[typings.awsSdk.glueMod.DataFormat] = js.native
+  var DataFormat: js.UndefOr[typings.awsSdk.glueMod.DataFormat] = js.undefined
   
   /**
     * A description of schema if specified when created
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The latest version of the schema associated with the returned schema definition.
     */
-  var LatestSchemaVersion: js.UndefOr[VersionLongNumber] = js.native
+  var LatestSchemaVersion: js.UndefOr[VersionLongNumber] = js.undefined
   
   /**
     * The next version of the schema associated with the returned schema definition.
     */
-  var NextSchemaVersion: js.UndefOr[VersionLongNumber] = js.native
+  var NextSchemaVersion: js.UndefOr[VersionLongNumber] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the registry.
     */
-  var RegistryArn: js.UndefOr[GlueResourceArn] = js.native
+  var RegistryArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the schema.
     */
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The version number of the checkpoint (the last time the compatibility mode was changed).
     */
-  var SchemaCheckpoint: js.UndefOr[SchemaCheckpointNumber] = js.native
+  var SchemaCheckpoint: js.UndefOr[SchemaCheckpointNumber] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The status of the schema.
     */
-  var SchemaStatus: js.UndefOr[typings.awsSdk.glueMod.SchemaStatus] = js.native
+  var SchemaStatus: js.UndefOr[typings.awsSdk.glueMod.SchemaStatus] = js.undefined
   
   /**
     * The date and time the schema was updated.
     */
-  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.native
+  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.undefined
 }
 object GetSchemaResponse {
   

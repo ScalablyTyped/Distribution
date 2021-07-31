@@ -2,17 +2,15 @@ package typings.growingIo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GIOConfigOptions extends StObject {
   
   /** 是否采集数据 */
-  var dataCollect: js.UndefOr[Boolean] = js.native
+  var dataCollect: js.UndefOr[Boolean] = js.undefined
   
   /** 是否检测hash变化 */
-  var hashtag: js.UndefOr[Boolean] = js.native
+  var hashtag: js.UndefOr[Boolean] = js.undefined
 }
 object GIOConfigOptions {
   

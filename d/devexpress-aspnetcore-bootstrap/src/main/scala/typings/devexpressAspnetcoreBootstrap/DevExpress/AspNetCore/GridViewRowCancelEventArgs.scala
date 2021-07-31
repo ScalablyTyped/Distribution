@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewRowCancelEventArgs extends CancelEventArgs {
+trait GridViewRowCancelEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val visibleIndex: Double = js.native
+  val visibleIndex: Double
 }
 object GridViewRowCancelEventArgs {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowNode extends StObject {
   
   /** Output only. The error detail. */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /** Output only. The job id; populated after the node enters RUNNING state. */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /** Output only. Node's prerequisite nodes. */
-  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.native
+  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The node state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of the node. */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object WorkflowNode {
   

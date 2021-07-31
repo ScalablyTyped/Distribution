@@ -2,28 +2,26 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBonusPaymentsRequest extends StObject {
   
   /**
     * The ID of the assignment associated with the bonus payments to retrieve. If specified, only bonus payments for the given assignment are returned. Either the HITId parameter or the AssignmentId parameter must be specified
     */
-  var AssignmentId: js.UndefOr[EntityId] = js.native
+  var AssignmentId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The ID of the HIT associated with the bonus payments to retrieve. If not specified, all bonus payments for all assignments for the given HIT are returned. Either the HITId parameter or the AssignmentId parameter must be specified
     */
-  var HITId: js.UndefOr[EntityId] = js.native
+  var HITId: js.UndefOr[EntityId] = js.undefined
   
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListBonusPaymentsRequest {
   

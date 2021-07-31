@@ -12,7 +12,7 @@ Integrate a system of ODEs using the Second Order Runge-Kutta (Midpoint) method
 | Keywords           | scijs, integral, definite-integral, integration, calculus, adaptive, romberg |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 18088 |
+| # downloads        | 47283 |
 | # stars            | 1 |
 
 ## Links

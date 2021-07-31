@@ -2,13 +2,11 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemGetDirectoryOptions extends StObject {
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
 }
 object FileSystemGetDirectoryOptions {
   

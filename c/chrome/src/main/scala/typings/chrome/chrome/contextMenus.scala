@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -17,31 +16,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object contextMenus {
   
-  @js.native
   trait CreateProperties extends StObject {
     
     /** Optional. The initial state of a checkbox or radio item: true for selected and false for unselected. Only one radio item can be selected at a time in a given group of radio items.  */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. List of contexts this menu item will appear in. Defaults to ['page'] if not specified.  */
-    var contexts: js.UndefOr[js.Array[String]] = js.native
+    var contexts: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Optional. Lets you restrict the item to apply only to documents whose URL matches one of the given patterns. (This applies to frames as well.) For details on the format of a pattern, see Match Patterns.  */
-    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 20.
       * Whether this context menu item is enabled or disabled. Defaults to true.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 21.
       * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this extension.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
@@ -49,26 +47,26 @@ object contextMenus {
       * @param info Information sent when a context menu item is clicked.
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
       */
-    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.native
+    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.undefined
     
     /** Optional. The ID of a parent menu item; this makes the item a child of a previously added item.  */
-    var parentId: js.UndefOr[js.Any] = js.native
+    var parentId: js.UndefOr[js.Any] = js.undefined
     
     /** Optional. Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.  */
-    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Optional. The text to be displayed in the item; this is required unless type is 'separator'. When the context is 'selection', you can use %s within the string to show the selected text. For example, if this parameter's value is "Translate '%s' to Pig Latin" and the user selects the word "cool", the context menu item for the selection is "Translate 'cool' to Pig Latin".  */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Optional. The type of menu item. Defaults to 'normal' if not specified.  */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 62.
       * Whether the item is visible in the menu.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CreateProperties {
     
@@ -160,7 +158,6 @@ object contextMenus {
   
   type MenuClickedEvent = Event[js.Function2[/* info */ OnClickData, /* tab */ js.UndefOr[Tab], Unit]]
   
-  @js.native
   trait OnClickData extends StObject {
     
     /**
@@ -168,13 +165,13 @@ object contextMenus {
       * Since Chrome 35.
       * A flag indicating the state of a checkbox or radio item after it is clicked.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Since Chrome 35.
       * A flag indicating whether the element is editable (text input, textarea, etc.).
       */
-    var editable: Boolean = js.native
+    var editable: Boolean
     
     /**
       * Optional.
@@ -182,68 +179,68 @@ object contextMenus {
       * The ID of the frame of the element where the context menu was
       * clicked, if it was in a frame.
       */
-    var frameId: js.UndefOr[Double] = js.native
+    var frameId: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * The URL of the frame of the element where the context menu was clicked, if it was in a frame.
       */
-    var frameUrl: js.UndefOr[String] = js.native
+    var frameUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * If the element is a link, the URL it points to.
       */
-    var linkUrl: js.UndefOr[String] = js.native
+    var linkUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * One of 'image', 'video', or 'audio' if the context menu was activated on one of these types of elements.
       */
-    var mediaType: js.UndefOr[String] = js.native
+    var mediaType: js.UndefOr[String] = js.undefined
     
     /**
       * Since Chrome 35.
       * The ID of the menu item that was clicked.
       */
-    var menuItemId: js.Any = js.native
+    var menuItemId: js.Any
     
     /**
       * Since Chrome 35.
       * The URL of the page where the menu item was clicked. This property is not set if the click occured in a context where there is no current page, such as in a launcher context menu.
       */
-    var pageUrl: String = js.native
+    var pageUrl: String
     
     /**
       * Optional.
       * Since Chrome 35.
       * The parent ID, if any, for the item clicked.
       */
-    var parentMenuItemId: js.UndefOr[js.Any] = js.native
+    var parentMenuItemId: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * The text for the context selection, if any.
       */
-    var selectionText: js.UndefOr[String] = js.native
+    var selectionText: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * Will be present for elements with a 'src' URL.
       */
-    var srcUrl: js.UndefOr[String] = js.native
+    var srcUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 35.
       * A flag indicating the state of a checkbox or radio item before it was clicked.
       */
-    var wasChecked: js.UndefOr[Boolean] = js.native
+    var wasChecked: js.UndefOr[Boolean] = js.undefined
   }
   object OnClickData {
     
@@ -321,35 +318,34 @@ object contextMenus {
     }
   }
   
-  @js.native
   trait UpdateProperties extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var contexts: js.UndefOr[js.Array[String]] = js.native
+    var contexts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Optional. Since Chrome 20.  */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var onclick: js.UndefOr[js.Function] = js.native
+    var onclick: js.UndefOr[js.Function] = js.undefined
     
     /** Optional. Note: You cannot change an item to be a child of one of its own descendants.  */
-    var parentId: js.UndefOr[js.Any] = js.native
+    var parentId: js.UndefOr[js.Any] = js.undefined
     
-    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * @since Chrome 62.
       * Whether the item is visible in the menu.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateProperties {
     

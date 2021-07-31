@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Productstatuses")
@@ -30,7 +29,7 @@ class ResourceProductstatuses protected () extends StObject {
     */
   def custombatch(): GaxiosPromise[SchemaProductstatusesCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaProductstatusesCustomBatchResponse]): Unit = js.native
-  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductstatusesCustomBatchResponse] = js.native
+  def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductstatusesCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceProductstatusesCustombatch): GaxiosPromise[SchemaProductstatusesCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceProductstatusesCustombatch,
@@ -64,7 +63,7 @@ class ResourceProductstatuses protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProductStatus] = js.native
   def get(callback: BodyResponseCallback[SchemaProductStatus]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductStatus] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductStatus] = js.native
   def get(params: ParamsResourceProductstatusesGet): GaxiosPromise[SchemaProductStatus] = js.native
   def get(params: ParamsResourceProductstatusesGet, callback: BodyResponseCallback[SchemaProductStatus]): Unit = js.native
   def get(
@@ -96,7 +95,7 @@ class ResourceProductstatuses protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaProductstatusesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaProductstatusesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductstatusesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductstatusesListResponse] = js.native
   def list(params: ParamsResourceProductstatusesList): GaxiosPromise[SchemaProductstatusesListResponse] = js.native
   def list(
     params: ParamsResourceProductstatusesList,

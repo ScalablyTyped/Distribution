@@ -4,17 +4,15 @@ import typings.wordpressCustomizeBrowser.previewerMod.Previewer
 import typings.wordpressCustomizeBrowser.settingMod.Setting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Choice extends StObject {
     
-    var choice: js.Any = js.native
+    var choice: js.Any
     
-    var header: js.Any = js.native
+    var header: js.Any
   }
   object Choice {
     
@@ -35,10 +33,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[String | Setting[_]] = js.native
+    var default: js.UndefOr[String | Setting[js.Any]] = js.undefined
   }
   object Default {
     
@@ -52,7 +49,7 @@ object anon {
     implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDefault(value: String | Setting[_]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: String | Setting[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -60,14 +57,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@wordpress/customize-browser.@wordpress/customize-browser/Setting.Setting_Options> */
-  @js.native
   trait PartialSettingOptions extends StObject {
     
-    var dirty: js.UndefOr[Boolean] = js.native
+    var dirty: js.UndefOr[Boolean] = js.undefined
     
-    var previewer: js.UndefOr[Previewer[String]] = js.native
+    var previewer: js.UndefOr[Previewer[String]] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
   }
   object PartialSettingOptions {
     

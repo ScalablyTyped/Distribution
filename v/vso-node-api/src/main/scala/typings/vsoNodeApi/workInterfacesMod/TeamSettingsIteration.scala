@@ -2,31 +2,31 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamSettingsIteration extends TeamSettingsDataContractBase {
+trait TeamSettingsIteration
+  extends StObject
+     with TeamSettingsDataContractBase {
   
   /**
     * Attributes such as start and end date
     */
-  var attributes: TeamIterationAttributes = js.native
+  var attributes: TeamIterationAttributes
   
   /**
     * Id of the resource
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Name of the resource
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Relative path of the iteration
     */
-  var path: String = js.native
+  var path: String
 }
 object TeamSettingsIteration {
   

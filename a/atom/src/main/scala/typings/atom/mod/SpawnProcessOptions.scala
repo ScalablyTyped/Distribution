@@ -3,35 +3,33 @@ package typings.atom.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpawnProcessOptions extends StObject {
   
   /** Current working directory of the child process. */
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
   /** Prepare child to run independently of its parent process. */
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
   /** Environment key-value pairs. */
-  var env: js.UndefOr[StringDictionary[String]] = js.native
+  var env: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /** Sets the group identity of the process. */
-  var gid: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.undefined
   
   /**
     *  If true, runs command inside of a shell. Uses "/bin/sh" on UNIX, and process.env.ComSpec
     *  on Windows. A different shell can be specified as a string.
     */
-  var shell: js.UndefOr[Boolean | String] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.undefined
   
   /** The child's stdio configuration. */
-  var stdio: js.UndefOr[String | (js.Array[String | Double])] = js.native
+  var stdio: js.UndefOr[String | (js.Array[String | Double])] = js.undefined
   
   /** Sets the user identity of the process. */
-  var uid: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.undefined
 }
 object SpawnProcessOptions {
   

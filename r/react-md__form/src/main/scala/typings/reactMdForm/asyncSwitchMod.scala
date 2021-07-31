@@ -7,36 +7,36 @@ import typings.reactMdForm.switchMod.SwitchProps
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncSwitchMod {
   
   @JSImport("@react-md/form/types/toggle/AsyncSwitch", "AsyncSwitch")
   @js.native
-  val AsyncSwitch: ForwardRefExoticComponent[AsyncSwitchProps with RefAttributes[HTMLInputElement]] = js.native
+  val AsyncSwitch: ForwardRefExoticComponent[AsyncSwitchProps & RefAttributes[HTMLInputElement]] = js.native
   
-  @js.native
-  trait AsyncSwitchProps extends SwitchProps {
+  trait AsyncSwitchProps
+    extends StObject
+       with SwitchProps {
     
     /**
       * Boolean if the switch is still loading. This will "disable" the switch and
       * add the circular progress indicator in the switch's ball until it is set
       * back to false.
       */
-    var loading: Boolean = js.native
+    var loading: Boolean
     
     /**
       * An optional class name to apply to the progress bar while the loading state
       * is enabled.
       */
-    var progressClassName: js.UndefOr[String] = js.native
+    var progressClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the progress bar while the loading state is
       * enabled.
       */
-    var progressStyle: js.UndefOr[CSSProperties] = js.native
+    var progressStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object AsyncSwitchProps {
     

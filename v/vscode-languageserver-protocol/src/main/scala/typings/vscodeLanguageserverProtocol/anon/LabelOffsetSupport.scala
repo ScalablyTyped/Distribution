@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelOffsetSupport extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait LabelOffsetSupport extends StObject {
     *
     * @since 3.14.0
     */
-  var labelOffsetSupport: js.UndefOr[Boolean] = js.native
+  var labelOffsetSupport: js.UndefOr[Boolean] = js.undefined
 }
 object LabelOffsetSupport {
   

@@ -2,25 +2,23 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single entry in the confusion matrix.
   */
-@js.native
 trait SchemaEntry extends StObject {
   
   /**
     * Number of items being predicted as this label.
     */
-  var itemCount: js.UndefOr[String] = js.native
+  var itemCount: js.UndefOr[String] = js.undefined
   
   /**
     * The predicted label. For confidence_threshold &gt; 0, we will also add an
     * entry indicating the number of items under the confidence threshold.
     */
-  var predictedLabel: js.UndefOr[String] = js.native
+  var predictedLabel: js.UndefOr[String] = js.undefined
 }
 object SchemaEntry {
   

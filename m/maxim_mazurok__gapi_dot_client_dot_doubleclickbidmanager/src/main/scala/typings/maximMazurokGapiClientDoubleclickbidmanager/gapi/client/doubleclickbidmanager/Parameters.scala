@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameters extends StObject {
   
   /** Filters used to match traffic data in your report. */
-  var filters: js.UndefOr[js.Array[FilterPair]] = js.native
+  var filters: js.UndefOr[js.Array[FilterPair]] = js.undefined
   
   /** Data is grouped by the filters listed in this field. */
-  var groupBys: js.UndefOr[js.Array[String]] = js.native
+  var groupBys: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Deprecated. This field is no longer in use. */
-  var includeInviteData: js.UndefOr[Boolean] = js.native
+  var includeInviteData: js.UndefOr[Boolean] = js.undefined
   
   /** Metrics to include as columns in your report. */
-  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Additional query options. */
-  var options: js.UndefOr[Options] = js.native
+  var options: js.UndefOr[Options] = js.undefined
   
   /** Report type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Parameters {
   

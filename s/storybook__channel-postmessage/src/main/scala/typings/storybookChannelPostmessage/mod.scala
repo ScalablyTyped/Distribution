@@ -6,14 +6,16 @@ import typings.storybookChannels.mod.ChannelEvent
 import typings.storybookChannels.mod.ChannelHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@storybook/channel-postmessage", JSImport.Default)
+  @JSImport("@storybook/channel-postmessage", JSImport.Namespace)
   @js.native
-  def default(hasPage: Config): typings.storybookChannels.mod.default = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasPage: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPage.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
   
   @JSImport("@storybook/channel-postmessage", "KEY")
   @js.native
@@ -47,16 +49,15 @@ object mod {
       * the event will be stored in a buffer and sent when the window exists.
       * @param event
       */
-    def send(event: ChannelEvent): js.Promise[_] = js.native
-    def send(event: ChannelEvent, options: js.Any): js.Promise[_] = js.native
+    def send(event: ChannelEvent): js.Promise[js.Any] = js.native
+    def send(event: ChannelEvent, options: js.Any): js.Promise[js.Any] = js.native
     
     def setHandler(handler: ChannelHandler): Unit = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var page: manager | preview = js.native
+    var page: manager | preview
   }
   object Config {
     

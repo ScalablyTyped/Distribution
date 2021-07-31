@@ -2,21 +2,19 @@ package typings.urbanairshipCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alert extends StObject {
     
-    var alert: Double = js.native
+    var alert: Double
     
-    var badge: Double = js.native
+    var badge: Double
     
-    var none: Double = js.native
+    var none: Double
     
-    var sound: Double = js.native
+    var sound: Double
   }
   object Alert {
     

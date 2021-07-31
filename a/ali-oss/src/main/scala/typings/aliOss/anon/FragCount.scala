@@ -2,19 +2,17 @@ package typings.aliOss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragCount extends StObject {
   
-  var FragCount: Double = js.native
+  var FragCount: Double
   
-  var FragDuration: Double = js.native
+  var FragDuration: Double
   
-  var PlaylistName: String = js.native
+  var PlaylistName: String
   
-  var Type: String = js.native
+  var Type: String
 }
 object FragCount {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinpointDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Pinpoint project that you want to send email events to.
     */
-  var ApplicationArn: js.UndefOr[AmazonResourceName] = js.native
+  var ApplicationArn: js.UndefOr[AmazonResourceName] = js.undefined
 }
 object PinpointDestination {
   

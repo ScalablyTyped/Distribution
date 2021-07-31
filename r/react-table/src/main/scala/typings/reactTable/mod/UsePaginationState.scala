@@ -2,15 +2,13 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsePaginationState[D /* <: js.Object */] extends StObject {
   
-  var pageIndex: Double = js.native
+  var pageIndex: Double
   
-  var pageSize: Double = js.native
+  var pageSize: Double
 }
 object UsePaginationState {
   
@@ -21,7 +19,7 @@ object UsePaginationState {
   }
   
   @scala.inline
-  implicit class UsePaginationStateMutableBuilder[Self <: UsePaginationState[_], D /* <: js.Object */] (val x: Self with UsePaginationState[D]) extends AnyVal {
+  implicit class UsePaginationStateMutableBuilder[Self <: UsePaginationState[?], D /* <: js.Object */] (val x: Self & UsePaginationState[D]) extends AnyVal {
     
     @scala.inline
     def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])

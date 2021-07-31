@@ -2,14 +2,12 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
   /** _non-standard_  */
-  var _transferSize: js.UndefOr[Double | Null] = js.native
+  var _transferSize: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Size of the received response body in bytes.
@@ -17,19 +15,19 @@ trait Response extends StObject {
     * - Set to zero in case of responses coming from the cache (`304`).
     * - Set to `-1` if the info is not available.
     */
-  var bodySize: Double = js.native
+  var bodySize: Double
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** Details about the response body. */
-  var content: Content = js.native
+  var content: Content
   
   /** List of cookie objects. */
-  var cookies: js.Array[Cookie] = js.native
+  var cookies: js.Array[Cookie]
   
   /** List of header objects. */
-  var headers: js.Array[Header] = js.native
+  var headers: js.Array[Header]
   
   /**
     * Total number of bytes from the start of the HTTP response message until
@@ -42,19 +40,19 @@ trait Response extends StObject {
     * the browser are not included in this number, but they appear in the list
     * of header objects._
     */
-  var headersSize: Double = js.native
+  var headersSize: Double
   
   /** Response HTTP Version. */
-  var httpVersion: String = js.native
+  var httpVersion: String
   
   /** Redirection target URL from the Location response header. */
-  var redirectURL: String = js.native
+  var redirectURL: String
   
   /** Response status. */
-  var status: Double = js.native
+  var status: Double
   
   /** Response status description. */
-  var statusText: String = js.native
+  var statusText: String
 }
 object Response {
   

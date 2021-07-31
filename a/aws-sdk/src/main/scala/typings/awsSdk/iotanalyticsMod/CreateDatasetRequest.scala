@@ -2,51 +2,49 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetRequest extends StObject {
   
   /**
     * A list of actions that create the data set contents.
     */
-  var actions: DatasetActions = js.native
+  var actions: DatasetActions
   
   /**
     * When dataset contents are created, they are delivered to destinations specified here.
     */
-  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.native
+  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
   
   /**
     * The name of the data set.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
   
   /**
     * A list of data rules that send notifications to Amazon CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
     */
-  var lateDataRules: js.UndefOr[LateDataRules] = js.native
+  var lateDataRules: js.UndefOr[LateDataRules] = js.undefined
   
   /**
     * Optional. How long, in days, versions of dataset contents are kept for the dataset. If not specified or set to null, versions of dataset contents are retained for at most 90 days. The number of versions of dataset contents retained is determined by the versioningConfiguration parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * Metadata which can be used to manage the data set.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * A list of triggers. A trigger causes data set contents to be populated at a specified time interval or when another data set's contents are created. The list of triggers can be empty or contain up to five DataSetTrigger objects.
     */
-  var triggers: js.UndefOr[DatasetTriggers] = js.native
+  var triggers: js.UndefOr[DatasetTriggers] = js.undefined
   
   /**
     * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
     */
-  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.native
+  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
 }
 object CreateDatasetRequest {
   

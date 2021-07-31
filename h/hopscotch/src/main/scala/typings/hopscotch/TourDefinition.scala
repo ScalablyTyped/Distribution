@@ -2,15 +2,15 @@ package typings.hopscotch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TourDefinition extends HopscotchConfiguration {
+trait TourDefinition
+  extends StObject
+     with HopscotchConfiguration {
   
-  var id: String = js.native
+  var id: String
   
-  var steps: js.Array[StepDefinition] = js.native
+  var steps: js.Array[StepDefinition]
 }
 object TourDefinition {
   

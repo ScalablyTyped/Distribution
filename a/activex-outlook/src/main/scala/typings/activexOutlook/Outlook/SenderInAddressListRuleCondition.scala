@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SenderInAddressListRuleCondition extends StObject {
   
-  var AddressList: typings.activexOutlook.Outlook.AddressList = js.native
+  var AddressList: typings.activexOutlook.Outlook.AddressList
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ConditionType: OlRuleConditionType = js.native
+  val ConditionType: OlRuleConditionType
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Outlook.SenderInAddressListRuleCondition_typekey")
-  var OutlookDotSenderInAddressListRuleCondition_typekey: SenderInAddressListRuleCondition = js.native
+  var OutlookDotSenderInAddressListRuleCondition_typekey: SenderInAddressListRuleCondition
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object SenderInAddressListRuleCondition {
   

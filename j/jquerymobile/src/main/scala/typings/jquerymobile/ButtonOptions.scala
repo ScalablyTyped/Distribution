@@ -2,29 +2,27 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonOptions extends StObject {
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var iconpos: js.UndefOr[String] = js.native
+  var iconpos: js.UndefOr[String] = js.undefined
   
-  var iconshadow: js.UndefOr[Boolean] = js.native
+  var iconshadow: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object ButtonOptions {
   

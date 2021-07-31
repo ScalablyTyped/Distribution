@@ -3,40 +3,36 @@ package typings.i2cBus
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("i2c-bus", "open")
+  @JSImport("i2c-bus", JSImport.Namespace)
   @js.native
-  def open(busNumber: Double, callback: CompletionCallback): I2CBus = js.native
-  @JSImport("i2c-bus", "open")
-  @js.native
-  def open(busNumber: Double, options: OpenOptions, callback: CompletionCallback): I2CBus = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("i2c-bus", "openPromisified")
-  @js.native
-  def openPromisified(busNumber: Double): js.Promise[PromisifiedBus] = js.native
-  @JSImport("i2c-bus", "openPromisified")
-  @js.native
-  def openPromisified(busNumber: Double, options: OpenOptions): js.Promise[PromisifiedBus] = js.native
+  @scala.inline
+  def open(busNumber: Double, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
+  @scala.inline
+  def open(busNumber: Double, options: OpenOptions, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
   
-  @JSImport("i2c-bus", "openSync")
-  @js.native
-  def openSync(busNumber: Double): I2CBus = js.native
-  @JSImport("i2c-bus", "openSync")
-  @js.native
-  def openSync(busNumber: Double, options: OpenOptions): I2CBus = js.native
+  @scala.inline
+  def openPromisified(busNumber: Double): js.Promise[PromisifiedBus] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromisifiedBus]]
+  @scala.inline
+  def openPromisified(busNumber: Double, options: OpenOptions): js.Promise[PromisifiedBus] = (^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PromisifiedBus]]
+  
+  @scala.inline
+  def openSync(busNumber: Double): I2CBus = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any]).asInstanceOf[I2CBus]
+  @scala.inline
+  def openSync(busNumber: Double, options: OpenOptions): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
   
   type BufferCallback = js.Function3[/* error */ js.Any, /* bytesReadOrWritten */ Double, /* buffer */ Buffer, js.Any]
   
-  @js.native
   trait BytesRead extends StObject {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    var bytesRead: Double = js.native
+    var bytesRead: Double
   }
   object BytesRead {
     
@@ -57,12 +53,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BytesWritten extends StObject {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object BytesWritten {
     
@@ -492,14 +487,13 @@ object mod {
     def writeWordSync(address: Double, command: Double, word: Double): Unit = js.native
   }
   
-  @js.native
   trait I2CDeviceId extends StObject {
     
-    var manufacturer: Double = js.native
+    var manufacturer: Double
     
-    var name: String = js.native
+    var name: String
     
-    var product: Double = js.native
+    var product: Double
   }
   object I2CDeviceId {
     
@@ -523,42 +517,41 @@ object mod {
     }
   }
   
-  @js.native
   trait I2CFuncs extends StObject {
     
-    var i2c: Boolean = js.native
+    var i2c: Boolean
     
-    var protocolMangling: Boolean = js.native
+    var protocolMangling: Boolean
     
-    var smbusBlockProcCall: Boolean = js.native
+    var smbusBlockProcCall: Boolean
     
-    var smbusPec: Boolean = js.native
+    var smbusPec: Boolean
     
-    var smbusProcCall: Boolean = js.native
+    var smbusProcCall: Boolean
     
-    var smbusQuick: Boolean = js.native
+    var smbusQuick: Boolean
     
-    var smbusReadBlock: Boolean = js.native
+    var smbusReadBlock: Boolean
     
-    var smbusReadByte: Boolean = js.native
+    var smbusReadByte: Boolean
     
-    var smbusReadI2cBlock: Boolean = js.native
+    var smbusReadI2cBlock: Boolean
     
-    var smbusReadWord: Boolean = js.native
+    var smbusReadWord: Boolean
     
-    var smbusReceiveByte: Boolean = js.native
+    var smbusReceiveByte: Boolean
     
-    var smbusSendByte: Boolean = js.native
+    var smbusSendByte: Boolean
     
-    var smbusWriteBlock: Boolean = js.native
+    var smbusWriteBlock: Boolean
     
-    var smbusWriteByte: Boolean = js.native
+    var smbusWriteByte: Boolean
     
-    var smbusWriteI2cBlock: Boolean = js.native
+    var smbusWriteI2cBlock: Boolean
     
-    var smbusWriteWord: Boolean = js.native
+    var smbusWriteWord: Boolean
     
-    var tenBitAddr: Boolean = js.native
+    var tenBitAddr: Boolean
   }
   object I2CFuncs {
     
@@ -642,11 +635,10 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenOptions extends StObject {
     
     /** A boolean value specifying whether access to devices on the I2C bus should be allowed even if they are already in use by a kernel driver/module. Corresponds to I2C_SLAVE_FORCE on Linux. The valid values for forceAccess are true and false. Optional, the default value is false. */
-    var forceAccess: Boolean = js.native
+    var forceAccess: Boolean
   }
   object OpenOptions {
     

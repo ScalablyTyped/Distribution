@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparisonType extends StObject {
   
   /** Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL. */
-  var comparisonType: js.UndefOr[String] = js.native
+  var comparisonType: js.UndefOr[String] = js.undefined
   
   /** Value used for this comparison. */
-  var comparisonValue: js.UndefOr[String] = js.native
+  var comparisonValue: js.UndefOr[String] = js.undefined
   
   /** Expression used for this match. */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /** Type of the match to be performed. Possible values are REGEXP, BEGINS_WITH, or EXACT. */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /** Type of this event condition. Possible values are CATEGORY, ACTION, LABEL, or VALUE. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ComparisonType {
   

@@ -2,22 +2,20 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sub extends StObject {
   
   /**
     * Objects that, together, make up what should be displayed in the banner.
     * Includes additional information intended to be used to aid in visual layout
     */
-  var components: js.Array[Component] = js.native
+  var components: js.Array[Component]
   
   /**
     * String that contains all the text that should be displayed.
     */
-  var text: String = js.native
+  var text: String
 }
 object Sub {
   

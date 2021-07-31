@@ -2,32 +2,30 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLineItemShippingDetailsMethod extends StObject {
   
   /**
     * The carrier for the shipping. Optional. See shipments[].carrier for a
     * list of acceptable values.
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum transit time.
     */
-  var maxDaysInTransit: js.UndefOr[Double] = js.native
+  var maxDaysInTransit: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the shipping method.
     */
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum transit time.
     */
-  var minDaysInTransit: js.UndefOr[Double] = js.native
+  var minDaysInTransit: js.UndefOr[Double] = js.undefined
 }
 object SchemaOrderLineItemShippingDetailsMethod {
   

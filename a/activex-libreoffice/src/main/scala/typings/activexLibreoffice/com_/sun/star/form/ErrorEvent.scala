@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,10 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please do **not** use anymore, this struct is deprecated.
   * @deprecated Deprecated
   */
-@js.native
-trait ErrorEvent extends EventObject {
+trait ErrorEvent
+  extends StObject
+     with EventObject {
   
-  var Reason: js.Any = js.native
+  var Reason: js.Any
 }
 object ErrorEvent {
   

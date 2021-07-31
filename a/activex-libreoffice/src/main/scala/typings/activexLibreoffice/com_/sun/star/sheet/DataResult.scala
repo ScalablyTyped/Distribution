@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains the result of one element in the data pilot data array.
   * @see com.sun.star.sheet.XDataPilotResults
   */
-@js.native
 trait DataResult extends StObject {
   
   /**
     * contains boolean flags describing the result.
     * @see com.sun.star.sheet.DataResultFlags
     */
-  var Flags: Double = js.native
+  var Flags: Double
   
   /** contains the result value. */
-  var Value: Double = js.native
+  var Value: Double
 }
 object DataResult {
   

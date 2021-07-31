@@ -2,28 +2,26 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeSummary extends StObject {
   
   /**
     * An object that describes the status of the bulk send envelopes.
     */
-  var bulkEnvelopeStatus: js.UndefOr[BulkEnvelopeStatus] = js.native
+  var bulkEnvelopeStatus: js.UndefOr[BulkEnvelopeStatus] = js.undefined
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the envelope status. Valid values are:
@@ -37,17 +35,17 @@ trait EnvelopeSummary extends StObject {
     * * `voided`: The envelope is no longer valid and recipients cannot access or sign the envelope.
     *
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The DateTime that the envelope changed status (i.e. was created or sent.)
     */
-  var statusDateTime: js.UndefOr[String] = js.native
+  var statusDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object EnvelopeSummary {
   

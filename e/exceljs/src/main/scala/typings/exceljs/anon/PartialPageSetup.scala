@@ -15,56 +15,54 @@ import typings.exceljs.mod.Margins
 import typings.exceljs.mod.PaperSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.PageSetup> */
-@js.native
 trait PartialPageSetup extends StObject {
   
-  var blackAndWhite: js.UndefOr[Boolean] = js.native
+  var blackAndWhite: js.UndefOr[Boolean] = js.undefined
   
-  var cellComments: js.UndefOr[atEnd | asDisplayed | None] = js.native
+  var cellComments: js.UndefOr[atEnd | asDisplayed | None] = js.undefined
   
-  var draft: js.UndefOr[Boolean] = js.native
+  var draft: js.UndefOr[Boolean] = js.undefined
   
-  var errors: js.UndefOr[dash | blank | NA | displayed] = js.native
+  var errors: js.UndefOr[dash | blank | NA | displayed] = js.undefined
   
-  var firstPageNumber: js.UndefOr[Double] = js.native
+  var firstPageNumber: js.UndefOr[Double] = js.undefined
   
-  var fitToHeight: js.UndefOr[Double] = js.native
+  var fitToHeight: js.UndefOr[Double] = js.undefined
   
-  var fitToPage: js.UndefOr[Boolean] = js.native
+  var fitToPage: js.UndefOr[Boolean] = js.undefined
   
-  var fitToWidth: js.UndefOr[Double] = js.native
+  var fitToWidth: js.UndefOr[Double] = js.undefined
   
-  var horizontalCentered: js.UndefOr[Boolean] = js.native
+  var horizontalCentered: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalDpi: js.UndefOr[Double] = js.native
+  var horizontalDpi: js.UndefOr[Double] = js.undefined
   
-  var margins: js.UndefOr[Margins] = js.native
+  var margins: js.UndefOr[Margins] = js.undefined
   
-  var orientation: js.UndefOr[portrait | landscape] = js.native
+  var orientation: js.UndefOr[portrait | landscape] = js.undefined
   
-  var pageOrder: js.UndefOr[downThenOver | overThenDown] = js.native
+  var pageOrder: js.UndefOr[downThenOver | overThenDown] = js.undefined
   
-  var paperSize: js.UndefOr[PaperSize] = js.native
+  var paperSize: js.UndefOr[PaperSize] = js.undefined
   
-  var printArea: js.UndefOr[String] = js.native
+  var printArea: js.UndefOr[String] = js.undefined
   
-  var printTitlesColumn: js.UndefOr[String] = js.native
+  var printTitlesColumn: js.UndefOr[String] = js.undefined
   
-  var printTitlesRow: js.UndefOr[String] = js.native
+  var printTitlesRow: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var showGridLines: js.UndefOr[Boolean] = js.native
+  var showGridLines: js.UndefOr[Boolean] = js.undefined
   
-  var showRowColHeaders: js.UndefOr[Boolean] = js.native
+  var showRowColHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var verticalCentered: js.UndefOr[Boolean] = js.native
+  var verticalCentered: js.UndefOr[Boolean] = js.undefined
   
-  var verticalDpi: js.UndefOr[Double] = js.native
+  var verticalDpi: js.UndefOr[Double] = js.undefined
 }
 object PartialPageSetup {
   

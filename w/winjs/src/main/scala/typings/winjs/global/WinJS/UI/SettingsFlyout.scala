@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The set of properties and values to apply to the new SettingsFlyout.
   **/
 class SettingsFlyout ()
-  extends typings.winjs.WinJS.UI.SettingsFlyout {
+  extends StObject
+     with typings.winjs.WinJS.UI.SettingsFlyout {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object SettingsFlyout {
@@ -36,17 +36,15 @@ object SettingsFlyout {
     * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
     **/
   /* static member */
-  @JSGlobal("WinJS.UI.SettingsFlyout.populateSettings")
-  @js.native
-  def populateSettings(e: CustomEvent[_]): Unit = js.native
+  @scala.inline
+  def populateSettings(e: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateSettings")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows the SettingsPane UI, if hidden, regardless of other state.
     **/
   /* static member */
-  @JSGlobal("WinJS.UI.SettingsFlyout.show")
-  @js.native
-  def show(): Unit = js.native
+  @scala.inline
+  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
   
   /**
     * Show the Settings flyout using the Settings element identifier (ID) and the path of the page that contains the Settings element.
@@ -54,9 +52,8 @@ object SettingsFlyout {
     * @param path The path of the page that contains the Settings element.
     **/
   /* static member */
-  @JSGlobal("WinJS.UI.SettingsFlyout.showSettings")
-  @js.native
-  def showSettings(id: String, path: js.Any): Unit = js.native
+  @scala.inline
+  def showSettings(id: String, path: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSettings")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Indicates that the object is compatibile with declarative processing.

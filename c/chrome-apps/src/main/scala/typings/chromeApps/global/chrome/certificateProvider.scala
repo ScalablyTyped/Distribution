@@ -14,7 +14,6 @@ import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -30,6 +29,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can use these certificates for TLS authentications.
   */
 object certificateProvider {
+  
+  @JSGlobal("chrome.certificateProvider")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The types of errors that can be presented to the user through the requestPin function.
@@ -134,12 +137,11 @@ object certificateProvider {
     * when the dialog request finishes unsuccessfully (e.g. the dialog was
     * canceled by the user or was not allowed to be shown).
     */
-  @JSGlobal("chrome.certificateProvider.requestPin")
-  @js.native
+  @scala.inline
   def requestPin(
     details: RequestPinDetails,
     callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPin")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Stops the pin request started by the *requestPin* function.
@@ -147,7 +149,6 @@ object certificateProvider {
     * @param callback To be used by Chrome to send to the app the status from
     * their request to close PIN dialog for user.
     */
-  @JSGlobal("chrome.certificateProvider.stopPinRequest")
-  @js.native
-  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopPinRequest")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

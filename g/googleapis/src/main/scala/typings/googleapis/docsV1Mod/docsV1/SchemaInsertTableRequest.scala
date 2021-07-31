@@ -2,27 +2,25 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts a table at the specified location.  A newline character will be
   * inserted before the inserted table.
   */
-@js.native
 trait SchemaInsertTableRequest extends StObject {
   
   /**
     * The number of columns in the table.
     */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /**
     * Inserts the table at the end of the given header, footer or document
     * body. A newline character will be inserted before the inserted table.
     * Tables cannot be inserted inside a footnote.
     */
-  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts the table at a specific model index.  A newline character will be
@@ -33,12 +31,12 @@ trait SchemaInsertTableRequest extends StObject {
     * its preceding paragraph).  Tables cannot be inserted inside a footnote or
     * equation.
     */
-  var location: js.UndefOr[SchemaLocation] = js.native
+  var location: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
     * The number of rows in the table.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
 }
 object SchemaInsertTableRequest {
   

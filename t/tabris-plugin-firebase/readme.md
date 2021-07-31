@@ -10,9 +10,9 @@ A firebase plugin for Tabris.js
 | ------------------ | :-------------: |
 | Full name          | tabris-plugin-firebase |
 | Keywords           | ecosystem:cordova, cordova-android, cordova-ios, tabris, tabris.js, firebase |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 541 |
+| # downloads        | 183 |
 | # stars            | 1 |
 
 ## Links

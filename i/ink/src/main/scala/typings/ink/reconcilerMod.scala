@@ -6,7 +6,6 @@ import typings.ink.domMod.TextNode
 import typings.reactReconciler.mod.Reconciler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reconcilerMod extends Shortcut {

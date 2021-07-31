@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * elements and user-defined ones. All changes on user interface element settings are done on this layer.
   * @since OOo 2.0
   */
-@js.native
-trait ModuleUIConfigurationManager extends XModuleUIConfigurationManager2 {
+trait ModuleUIConfigurationManager
+  extends StObject
+     with XModuleUIConfigurationManager2 {
   
   /**
     * provides a function to initialize a module user interface configuration manager instance.
@@ -35,7 +35,7 @@ trait ModuleUIConfigurationManager extends XModuleUIConfigurationManager2 {
     * changes also at the root storage. A non-initialized module user interface configuration manager cannot be used, it is treated as a read-only
     * container.
     */
-  def createDefault(ModuleShortName: String, ModuleIdentifier: String): Unit = js.native
+  def createDefault(ModuleShortName: String, ModuleIdentifier: String): Unit
 }
 object ModuleUIConfigurationManager {
   

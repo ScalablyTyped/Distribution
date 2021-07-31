@@ -2,26 +2,24 @@ package typings.progressjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressJsOptions extends StObject {
   
   /**
     * to consider CSS3 transitions in events
     */
-  var considerTransition: js.UndefOr[Boolean] = js.native
+  var considerTransition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * overlay mode makes an overlay layer in the target element
     */
-  var overlayMode: js.UndefOr[Boolean] = js.native
+  var overlayMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * progress bar theme
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object ProgressJsOptions {
   

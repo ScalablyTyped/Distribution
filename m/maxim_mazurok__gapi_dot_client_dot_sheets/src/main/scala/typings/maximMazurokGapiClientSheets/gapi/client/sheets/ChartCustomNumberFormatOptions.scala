@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartCustomNumberFormatOptions extends StObject {
   
   /** Custom prefix to be prepended to the chart attribute. This field is optional. */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /** Custom suffix to be appended to the chart attribute. This field is optional. */
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
 }
 object ChartCustomNumberFormatOptions {
   

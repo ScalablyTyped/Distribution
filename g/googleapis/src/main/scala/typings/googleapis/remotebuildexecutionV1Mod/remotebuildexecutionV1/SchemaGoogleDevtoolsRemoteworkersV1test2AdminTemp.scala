@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,18 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * tasks from the LUCI project
   * (http://github.com/luci/luci-py/appengine/swarming).
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp extends StObject {
   
   /**
     * The argument to the admin action; see `Command` for semantics.
     */
-  var arg: js.UndefOr[String] = js.native
+  var arg: js.UndefOr[String] = js.undefined
   
   /**
     * The admin action; see `Command` for legal values.
     */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2AdminTemp {
   

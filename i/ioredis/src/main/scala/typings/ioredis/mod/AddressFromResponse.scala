@@ -2,17 +2,15 @@ package typings.ioredis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressFromResponse extends StObject {
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var ip: String = js.native
+  var ip: String
   
-  var port: String = js.native
+  var port: String
 }
 object AddressFromResponse {
   

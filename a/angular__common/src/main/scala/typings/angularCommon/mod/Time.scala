@@ -2,15 +2,13 @@ package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var hours: Double = js.native
+  var hours: Double
   
-  var minutes: Double = js.native
+  var minutes: Double
 }
 object Time {
   

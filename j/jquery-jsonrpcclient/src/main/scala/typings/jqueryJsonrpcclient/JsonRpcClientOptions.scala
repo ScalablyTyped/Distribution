@@ -8,29 +8,28 @@ import typings.std.MessageEvent
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonRpcClientOptions
-  extends AjaxSettings[js.Any] {
+  extends StObject
+     with AjaxSettings[js.Any] {
   
-  var ajaxUrl: String = js.native
+  var ajaxUrl: String
   
-  var getSockect: js.UndefOr[js.Function1[/* onmessageCb */ js.Function0[Unit], WebSocket]] = js.native
+  var getSockect: js.UndefOr[js.Function1[/* onmessageCb */ js.Function0[Unit], WebSocket]] = js.undefined
   
   @JSName("headers")
-  var headers_JsonRpcClientOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var headers_JsonRpcClientOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onclose: js.UndefOr[js.Function1[/* ev */ CloseEvent, Unit]] = js.native
+  var onclose: js.UndefOr[js.Function1[/* ev */ CloseEvent, Unit]] = js.undefined
   
-  var onerror: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   
-  var onmessage: js.UndefOr[js.Function1[/* ev */ MessageEvent[_], Unit]] = js.native
+  var onmessage: js.UndefOr[js.Function1[/* ev */ MessageEvent[js.Any], Unit]] = js.undefined
   
-  var onopen: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.native
+  var onopen: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   
-  var socketUrl: js.UndefOr[String] = js.native
+  var socketUrl: js.UndefOr[String] = js.undefined
 }
 object JsonRpcClientOptions {
   
@@ -71,7 +70,7 @@ object JsonRpcClientOptions {
     def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def setOnmessage(value: /* ev */ MessageEvent[_] => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+    def setOnmessage(value: /* ev */ MessageEvent[js.Any] => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)

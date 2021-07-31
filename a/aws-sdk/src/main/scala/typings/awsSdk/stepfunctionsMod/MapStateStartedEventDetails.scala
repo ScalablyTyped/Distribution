@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapStateStartedEventDetails extends StObject {
   
   /**
     * The size of the array for Map state iterations.
     */
-  var length: js.UndefOr[UnsignedInteger] = js.native
+  var length: js.UndefOr[UnsignedInteger] = js.undefined
 }
 object MapStateStartedEventDetails {
   

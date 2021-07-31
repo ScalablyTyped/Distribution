@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceDataSyncRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * View a list of resource data syncs according to the sync type. Specify SyncToDestination to view resource data syncs that synchronize data to an Amazon S3 bucket. Specify SyncFromSource to view resource data syncs from AWS Organizations or from multiple AWS Regions.
     */
-  var SyncType: js.UndefOr[ResourceDataSyncType] = js.native
+  var SyncType: js.UndefOr[ResourceDataSyncType] = js.undefined
 }
 object ListResourceDataSyncRequest {
   

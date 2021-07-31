@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignInStatus extends StObject {
   
   // Provides additional details on the sign-in activity
-  var additionalDetails: js.UndefOr[NullableOption[String]] = js.native
+  var additionalDetails: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provides the 5-6digit error code that's generated during a sign-in failure. Check out the list of error codes and
     * messages.
     */
-  var errorCode: js.UndefOr[NullableOption[Double]] = js.native
+  var errorCode: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Provides the error message or the reason for failure for the corresponding sign-in activity. Check out the list of
     * error codes and messages.
     */
-  var failureReason: js.UndefOr[NullableOption[String]] = js.native
+  var failureReason: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SignInStatus {
   

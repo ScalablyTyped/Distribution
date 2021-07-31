@@ -2,59 +2,59 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MomentSetObject extends MomentInputObject {
+trait MomentSetObject
+  extends StObject
+     with MomentInputObject {
   
-  var DDD: js.UndefOr[numberlike] = js.native
+  var DDD: js.UndefOr[numberlike] = js.undefined
   
-  var E: js.UndefOr[numberlike] = js.native
+  var E: js.UndefOr[numberlike] = js.undefined
   
-  var GG: js.UndefOr[numberlike] = js.native
+  var GG: js.UndefOr[numberlike] = js.undefined
   
-  var Q: js.UndefOr[numberlike] = js.native
+  var Q: js.UndefOr[numberlike] = js.undefined
   
-  var W: js.UndefOr[numberlike] = js.native
+  var W: js.UndefOr[numberlike] = js.undefined
   
-  var dayOfYear: js.UndefOr[numberlike] = js.native
+  var dayOfYear: js.UndefOr[numberlike] = js.undefined
   
-  var dayOfYears: js.UndefOr[numberlike] = js.native
+  var dayOfYears: js.UndefOr[numberlike] = js.undefined
   
-  var e: js.UndefOr[numberlike] = js.native
+  var e: js.UndefOr[numberlike] = js.undefined
   
-  var gg: js.UndefOr[numberlike] = js.native
+  var gg: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeek: js.UndefOr[numberlike] = js.native
+  var isoWeek: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeekYear: js.UndefOr[numberlike] = js.native
+  var isoWeekYear: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeekYears: js.UndefOr[numberlike] = js.native
+  var isoWeekYears: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeekday: js.UndefOr[numberlike] = js.native
+  var isoWeekday: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeekdays: js.UndefOr[numberlike] = js.native
+  var isoWeekdays: js.UndefOr[numberlike] = js.undefined
   
-  var isoWeeks: js.UndefOr[numberlike] = js.native
+  var isoWeeks: js.UndefOr[numberlike] = js.undefined
   
-  var quarter: js.UndefOr[numberlike] = js.native
+  var quarter: js.UndefOr[numberlike] = js.undefined
   
-  var quarters: js.UndefOr[numberlike] = js.native
+  var quarters: js.UndefOr[numberlike] = js.undefined
   
-  var w: js.UndefOr[numberlike] = js.native
+  var w: js.UndefOr[numberlike] = js.undefined
   
-  var week: js.UndefOr[numberlike] = js.native
+  var week: js.UndefOr[numberlike] = js.undefined
   
-  var weekYear: js.UndefOr[numberlike] = js.native
+  var weekYear: js.UndefOr[numberlike] = js.undefined
   
-  var weekYears: js.UndefOr[numberlike] = js.native
+  var weekYears: js.UndefOr[numberlike] = js.undefined
   
-  var weekday: js.UndefOr[numberlike] = js.native
+  var weekday: js.UndefOr[numberlike] = js.undefined
   
-  var weekdays: js.UndefOr[numberlike] = js.native
+  var weekdays: js.UndefOr[numberlike] = js.undefined
   
-  var weeks: js.UndefOr[numberlike] = js.native
+  var weeks: js.UndefOr[numberlike] = js.undefined
 }
 object MomentSetObject {
   

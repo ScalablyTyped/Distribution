@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetProperties extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait WidgetProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#container)
     */
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
   /**
     * The unique ID assigned to the widget when the widget is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The widget's label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#label)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object WidgetProperties {
   

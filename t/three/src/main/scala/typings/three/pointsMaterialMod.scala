@@ -6,7 +6,6 @@ import typings.three.materialMod.MaterialParameters
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointsMaterialMod {
@@ -49,20 +48,21 @@ object pointsMaterialMod {
     var sizeAttenuation: Boolean = js.native
   }
   
-  @js.native
-  trait PointsMaterialParameters extends MaterialParameters {
+  trait PointsMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var sizeAttenuation: js.UndefOr[Boolean] = js.native
+    var sizeAttenuation: js.UndefOr[Boolean] = js.undefined
   }
   object PointsMaterialParameters {
     

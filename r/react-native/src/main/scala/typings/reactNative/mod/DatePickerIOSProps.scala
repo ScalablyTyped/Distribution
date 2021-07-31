@@ -17,16 +17,16 @@ import typings.reactNative.reactNativeStrings.time
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatePickerIOSProps extends ViewProps {
+trait DatePickerIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * The currently selected date.
     */
-  var date: js.UndefOr[Date | Null] = js.native
+  var date: js.UndefOr[Date | Null] = js.undefined
   
   /**
     * Provides an initial value that will change when the user starts selecting
@@ -36,50 +36,50 @@ trait DatePickerIOSProps extends ViewProps {
     * causes it to go out of sync with native. The initialDate prop is intended
     * to allow you to have native be source of truth.
     */
-  var initialDate: js.UndefOr[Date | Null] = js.native
+  var initialDate: js.UndefOr[Date | Null] = js.undefined
   
   /**
     * The date picker locale.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum date.
     * Restricts the range of possible date/time values.
     */
-  var maximumDate: js.UndefOr[Date] = js.native
+  var maximumDate: js.UndefOr[Date] = js.undefined
   
   /**
     * Maximum date.
     * Restricts the range of possible date/time values.
     */
-  var minimumDate: js.UndefOr[Date] = js.native
+  var minimumDate: js.UndefOr[Date] = js.undefined
   
   /**
     *  enum(1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30)
     *  The interval at which minutes can be selected.
     */
-  var minuteInterval: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`] = js.native
+  var minuteInterval: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`] = js.undefined
   
   /**
     *  enum('date', 'time', 'datetime')
     *  The date picker mode.
     */
-  var mode: js.UndefOr[date | time | datetime] = js.native
+  var mode: js.UndefOr[date | time | datetime] = js.undefined
   
   /**
     * Date change handler.
     * This is called when the user changes the date or time in the UI.
     * The first and only argument is a Date object representing the new date and time.
     */
-  def onDateChange(newDate: Date): Unit = js.native
+  def onDateChange(newDate: Date): Unit
   
   /**
     * Timezone offset in minutes.
     * By default, the date picker will use the device's timezone. With this parameter, it is possible to force a certain timezone offset.
     * For instance, to show times in Pacific Standard Time, pass -7 * 60.
     */
-  var timeZoneOffsetInMinutes: js.UndefOr[Double] = js.native
+  var timeZoneOffsetInMinutes: js.UndefOr[Double] = js.undefined
 }
 object DatePickerIOSProps {
   

@@ -2,15 +2,13 @@ package typings.escpos.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoOpen extends StObject {
   
-  var autoOpen: Boolean = js.native
+  var autoOpen: Boolean
   
-  var baudRate: Double = js.native
+  var baudRate: Double
 }
 object AutoOpen {
   

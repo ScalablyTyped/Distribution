@@ -116,201 +116,199 @@ import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.WebpropertyPar
 import typings.googleAppsScript.GoogleAppsScript.Analytics.Schema.WebpropertyPermissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analytics extends StObject {
   
-  var Data: js.UndefOr[DataCollection] = js.native
+  var Data: js.UndefOr[DataCollection] = js.undefined
   
-  var Management: js.UndefOr[ManagementCollection] = js.native
+  var Management: js.UndefOr[ManagementCollection] = js.undefined
   
-  var Metadata: js.UndefOr[MetadataCollection] = js.native
+  var Metadata: js.UndefOr[MetadataCollection] = js.undefined
   
-  var Provisioning: js.UndefOr[ProvisioningCollection] = js.native
+  var Provisioning: js.UndefOr[ProvisioningCollection] = js.undefined
   
-  var UserDeletion: js.UndefOr[UserDeletionCollection] = js.native
+  var UserDeletion: js.UndefOr[UserDeletionCollection] = js.undefined
   
   // Create a new instance of Account
-  def newAccount(): Account = js.native
+  def newAccount(): Account
   
   // Create a new instance of AccountChildLink
-  def newAccountChildLink(): AccountChildLink = js.native
+  def newAccountChildLink(): AccountChildLink
   
   // Create a new instance of AccountPermissions
-  def newAccountPermissions(): AccountPermissions = js.native
+  def newAccountPermissions(): AccountPermissions
   
   // Create a new instance of AccountRef
-  def newAccountRef(): AccountRef = js.native
+  def newAccountRef(): AccountRef
   
   // Create a new instance of AccountTicket
-  def newAccountTicket(): AccountTicket = js.native
+  def newAccountTicket(): AccountTicket
   
   // Create a new instance of AccountTreeRequest
-  def newAccountTreeRequest(): AccountTreeRequest = js.native
+  def newAccountTreeRequest(): AccountTreeRequest
   
   // Create a new instance of AdWordsAccount
-  def newAdWordsAccount(): AdWordsAccount = js.native
+  def newAdWordsAccount(): AdWordsAccount
   
   // Create a new instance of AnalyticsDataimportDeleteUploadDataRequest
-  def newAnalyticsDataimportDeleteUploadDataRequest(): AnalyticsDataimportDeleteUploadDataRequest = js.native
+  def newAnalyticsDataimportDeleteUploadDataRequest(): AnalyticsDataimportDeleteUploadDataRequest
   
   // Create a new instance of CustomDimension
-  def newCustomDimension(): CustomDimension = js.native
+  def newCustomDimension(): CustomDimension
   
   // Create a new instance of CustomDimensionParentLink
-  def newCustomDimensionParentLink(): CustomDimensionParentLink = js.native
+  def newCustomDimensionParentLink(): CustomDimensionParentLink
   
   // Create a new instance of CustomMetric
-  def newCustomMetric(): CustomMetric = js.native
+  def newCustomMetric(): CustomMetric
   
   // Create a new instance of CustomMetricParentLink
-  def newCustomMetricParentLink(): CustomMetricParentLink = js.native
+  def newCustomMetricParentLink(): CustomMetricParentLink
   
   // Create a new instance of EntityAdWordsLink
-  def newEntityAdWordsLink(): EntityAdWordsLink = js.native
+  def newEntityAdWordsLink(): EntityAdWordsLink
   
   // Create a new instance of EntityAdWordsLinkEntity
-  def newEntityAdWordsLinkEntity(): EntityAdWordsLinkEntity = js.native
+  def newEntityAdWordsLinkEntity(): EntityAdWordsLinkEntity
   
   // Create a new instance of EntityUserLink
-  def newEntityUserLink(): EntityUserLink = js.native
+  def newEntityUserLink(): EntityUserLink
   
   // Create a new instance of EntityUserLinkEntity
-  def newEntityUserLinkEntity(): EntityUserLinkEntity = js.native
+  def newEntityUserLinkEntity(): EntityUserLinkEntity
   
   // Create a new instance of EntityUserLinkPermissions
-  def newEntityUserLinkPermissions(): EntityUserLinkPermissions = js.native
+  def newEntityUserLinkPermissions(): EntityUserLinkPermissions
   
   // Create a new instance of Experiment
-  def newExperiment(): Experiment = js.native
+  def newExperiment(): Experiment
   
   // Create a new instance of ExperimentParentLink
-  def newExperimentParentLink(): ExperimentParentLink = js.native
+  def newExperimentParentLink(): ExperimentParentLink
   
   // Create a new instance of ExperimentVariations
-  def newExperimentVariations(): ExperimentVariations = js.native
+  def newExperimentVariations(): ExperimentVariations
   
   // Create a new instance of Filter
-  def newFilter(): Filter = js.native
+  def newFilter(): Filter
   
   // Create a new instance of FilterAdvancedDetails
-  def newFilterAdvancedDetails(): FilterAdvancedDetails = js.native
+  def newFilterAdvancedDetails(): FilterAdvancedDetails
   
   // Create a new instance of FilterExpression
-  def newFilterExpression(): FilterExpression = js.native
+  def newFilterExpression(): FilterExpression
   
   // Create a new instance of FilterLowercaseDetails
-  def newFilterLowercaseDetails(): FilterLowercaseDetails = js.native
+  def newFilterLowercaseDetails(): FilterLowercaseDetails
   
   // Create a new instance of FilterParentLink
-  def newFilterParentLink(): FilterParentLink = js.native
+  def newFilterParentLink(): FilterParentLink
   
   // Create a new instance of FilterRef
-  def newFilterRef(): FilterRef = js.native
+  def newFilterRef(): FilterRef
   
   // Create a new instance of FilterSearchAndReplaceDetails
-  def newFilterSearchAndReplaceDetails(): FilterSearchAndReplaceDetails = js.native
+  def newFilterSearchAndReplaceDetails(): FilterSearchAndReplaceDetails
   
   // Create a new instance of FilterUppercaseDetails
-  def newFilterUppercaseDetails(): FilterUppercaseDetails = js.native
+  def newFilterUppercaseDetails(): FilterUppercaseDetails
   
   // Create a new instance of Goal
-  def newGoal(): Goal = js.native
+  def newGoal(): Goal
   
   // Create a new instance of GoalEventDetails
-  def newGoalEventDetails(): GoalEventDetails = js.native
+  def newGoalEventDetails(): GoalEventDetails
   
   // Create a new instance of GoalEventDetailsEventConditions
-  def newGoalEventDetailsEventConditions(): GoalEventDetailsEventConditions = js.native
+  def newGoalEventDetailsEventConditions(): GoalEventDetailsEventConditions
   
   // Create a new instance of GoalParentLink
-  def newGoalParentLink(): GoalParentLink = js.native
+  def newGoalParentLink(): GoalParentLink
   
   // Create a new instance of GoalUrlDestinationDetails
-  def newGoalUrlDestinationDetails(): GoalUrlDestinationDetails = js.native
+  def newGoalUrlDestinationDetails(): GoalUrlDestinationDetails
   
   // Create a new instance of GoalUrlDestinationDetailsSteps
-  def newGoalUrlDestinationDetailsSteps(): GoalUrlDestinationDetailsSteps = js.native
+  def newGoalUrlDestinationDetailsSteps(): GoalUrlDestinationDetailsSteps
   
   // Create a new instance of GoalVisitNumPagesDetails
-  def newGoalVisitNumPagesDetails(): GoalVisitNumPagesDetails = js.native
+  def newGoalVisitNumPagesDetails(): GoalVisitNumPagesDetails
   
   // Create a new instance of GoalVisitTimeOnSiteDetails
-  def newGoalVisitTimeOnSiteDetails(): GoalVisitTimeOnSiteDetails = js.native
+  def newGoalVisitTimeOnSiteDetails(): GoalVisitTimeOnSiteDetails
   
   // Create a new instance of HashClientIdRequest
-  def newHashClientIdRequest(): HashClientIdRequest = js.native
+  def newHashClientIdRequest(): HashClientIdRequest
   
   // Create a new instance of IncludeConditions
-  def newIncludeConditions(): IncludeConditions = js.native
+  def newIncludeConditions(): IncludeConditions
   
   // Create a new instance of LinkedForeignAccount
-  def newLinkedForeignAccount(): LinkedForeignAccount = js.native
+  def newLinkedForeignAccount(): LinkedForeignAccount
   
   // Create a new instance of Profile
-  def newProfile(): Profile = js.native
+  def newProfile(): Profile
   
   // Create a new instance of ProfileChildLink
-  def newProfileChildLink(): ProfileChildLink = js.native
+  def newProfileChildLink(): ProfileChildLink
   
   // Create a new instance of ProfileFilterLink
-  def newProfileFilterLink(): ProfileFilterLink = js.native
+  def newProfileFilterLink(): ProfileFilterLink
   
   // Create a new instance of ProfileParentLink
-  def newProfileParentLink(): ProfileParentLink = js.native
+  def newProfileParentLink(): ProfileParentLink
   
   // Create a new instance of ProfilePermissions
-  def newProfilePermissions(): ProfilePermissions = js.native
+  def newProfilePermissions(): ProfilePermissions
   
   // Create a new instance of ProfileRef
-  def newProfileRef(): ProfileRef = js.native
+  def newProfileRef(): ProfileRef
   
   // Create a new instance of RemarketingAudience
-  def newRemarketingAudience(): RemarketingAudience = js.native
+  def newRemarketingAudience(): RemarketingAudience
   
   // Create a new instance of RemarketingAudienceAudienceDefinition
-  def newRemarketingAudienceAudienceDefinition(): RemarketingAudienceAudienceDefinition = js.native
+  def newRemarketingAudienceAudienceDefinition(): RemarketingAudienceAudienceDefinition
   
   // Create a new instance of RemarketingAudienceStateBasedAudienceDefinition
-  def newRemarketingAudienceStateBasedAudienceDefinition(): RemarketingAudienceStateBasedAudienceDefinition = js.native
+  def newRemarketingAudienceStateBasedAudienceDefinition(): RemarketingAudienceStateBasedAudienceDefinition
   
   // Create a new instance of RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions
-  def newRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions(): RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions = js.native
+  def newRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions(): RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions
   
   // Create a new instance of UnsampledReport
-  def newUnsampledReport(): UnsampledReport = js.native
+  def newUnsampledReport(): UnsampledReport
   
   // Create a new instance of UnsampledReportCloudStorageDownloadDetails
-  def newUnsampledReportCloudStorageDownloadDetails(): UnsampledReportCloudStorageDownloadDetails = js.native
+  def newUnsampledReportCloudStorageDownloadDetails(): UnsampledReportCloudStorageDownloadDetails
   
   // Create a new instance of UnsampledReportDriveDownloadDetails
-  def newUnsampledReportDriveDownloadDetails(): UnsampledReportDriveDownloadDetails = js.native
+  def newUnsampledReportDriveDownloadDetails(): UnsampledReportDriveDownloadDetails
   
   // Create a new instance of UserDeletionRequest
-  def newUserDeletionRequest(): UserDeletionRequest = js.native
+  def newUserDeletionRequest(): UserDeletionRequest
   
   // Create a new instance of UserDeletionRequestId
-  def newUserDeletionRequestId(): UserDeletionRequestId = js.native
+  def newUserDeletionRequestId(): UserDeletionRequestId
   
   // Create a new instance of UserRef
-  def newUserRef(): UserRef = js.native
+  def newUserRef(): UserRef
   
   // Create a new instance of WebPropertyRef
-  def newWebPropertyRef(): WebPropertyRef = js.native
+  def newWebPropertyRef(): WebPropertyRef
   
   // Create a new instance of Webproperty
-  def newWebproperty(): Webproperty = js.native
+  def newWebproperty(): Webproperty
   
   // Create a new instance of WebpropertyChildLink
-  def newWebpropertyChildLink(): WebpropertyChildLink = js.native
+  def newWebpropertyChildLink(): WebpropertyChildLink
   
   // Create a new instance of WebpropertyParentLink
-  def newWebpropertyParentLink(): WebpropertyParentLink = js.native
+  def newWebpropertyParentLink(): WebpropertyParentLink
   
   // Create a new instance of WebpropertyPermissions
-  def newWebpropertyPermissions(): WebpropertyPermissions = js.native
+  def newWebpropertyPermissions(): WebpropertyPermissions
 }
 object Analytics {
   
@@ -627,14 +625,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait DataCollection extends StObject {
       
-      var Ga: js.UndefOr[GaCollection] = js.native
+      var Ga: js.UndefOr[GaCollection] = js.undefined
       
-      var Mcf: js.UndefOr[McfCollection] = js.native
+      var Mcf: js.UndefOr[McfCollection] = js.undefined
       
-      var Realtime: js.UndefOr[RealtimeCollection] = js.native
+      var Realtime: js.UndefOr[RealtimeCollection] = js.undefined
     }
     object DataCollection {
       
@@ -705,11 +702,10 @@ object Analytics {
         def list(optionalArgs: js.Object): Accounts = js.native
       }
       
-      @js.native
       trait ClientIdCollection extends StObject {
         
         // Hashes the given Client ID.
-        def hashClientId(resource: HashClientIdRequest): HashClientIdResponse = js.native
+        def hashClientId(resource: HashClientIdRequest): HashClientIdResponse
       }
       object ClientIdCollection {
         
@@ -1135,48 +1131,47 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ManagementCollection extends StObject {
       
-      var AccountSummaries: js.UndefOr[AccountSummariesCollection] = js.native
+      var AccountSummaries: js.UndefOr[AccountSummariesCollection] = js.undefined
       
-      var AccountUserLinks: js.UndefOr[AccountUserLinksCollection] = js.native
+      var AccountUserLinks: js.UndefOr[AccountUserLinksCollection] = js.undefined
       
-      var Accounts: js.UndefOr[AccountsCollection] = js.native
+      var Accounts: js.UndefOr[AccountsCollection] = js.undefined
       
-      var ClientId: js.UndefOr[ClientIdCollection] = js.native
+      var ClientId: js.UndefOr[ClientIdCollection] = js.undefined
       
-      var CustomDataSources: js.UndefOr[CustomDataSourcesCollection] = js.native
+      var CustomDataSources: js.UndefOr[CustomDataSourcesCollection] = js.undefined
       
-      var CustomDimensions: js.UndefOr[CustomDimensionsCollection] = js.native
+      var CustomDimensions: js.UndefOr[CustomDimensionsCollection] = js.undefined
       
-      var CustomMetrics: js.UndefOr[CustomMetricsCollection] = js.native
+      var CustomMetrics: js.UndefOr[CustomMetricsCollection] = js.undefined
       
-      var Experiments: js.UndefOr[ExperimentsCollection] = js.native
+      var Experiments: js.UndefOr[ExperimentsCollection] = js.undefined
       
-      var Filters: js.UndefOr[FiltersCollection] = js.native
+      var Filters: js.UndefOr[FiltersCollection] = js.undefined
       
-      var Goals: js.UndefOr[GoalsCollection] = js.native
+      var Goals: js.UndefOr[GoalsCollection] = js.undefined
       
-      var ProfileFilterLinks: js.UndefOr[ProfileFilterLinksCollection] = js.native
+      var ProfileFilterLinks: js.UndefOr[ProfileFilterLinksCollection] = js.undefined
       
-      var ProfileUserLinks: js.UndefOr[ProfileUserLinksCollection] = js.native
+      var ProfileUserLinks: js.UndefOr[ProfileUserLinksCollection] = js.undefined
       
-      var Profiles: js.UndefOr[ProfilesCollection] = js.native
+      var Profiles: js.UndefOr[ProfilesCollection] = js.undefined
       
-      var RemarketingAudience: js.UndefOr[RemarketingAudienceCollection] = js.native
+      var RemarketingAudience: js.UndefOr[RemarketingAudienceCollection] = js.undefined
       
-      var Segments: js.UndefOr[SegmentsCollection] = js.native
+      var Segments: js.UndefOr[SegmentsCollection] = js.undefined
       
-      var UnsampledReports: js.UndefOr[UnsampledReportsCollection] = js.native
+      var UnsampledReports: js.UndefOr[UnsampledReportsCollection] = js.undefined
       
-      var Uploads: js.UndefOr[UploadsCollection] = js.native
+      var Uploads: js.UndefOr[UploadsCollection] = js.undefined
       
-      var WebPropertyAdWordsLinks: js.UndefOr[WebPropertyAdWordsLinksCollection] = js.native
+      var WebPropertyAdWordsLinks: js.UndefOr[WebPropertyAdWordsLinksCollection] = js.undefined
       
-      var Webproperties: js.UndefOr[WebpropertiesCollection] = js.native
+      var Webproperties: js.UndefOr[WebpropertiesCollection] = js.undefined
       
-      var WebpropertyUserLinks: js.UndefOr[WebpropertyUserLinksCollection] = js.native
+      var WebpropertyUserLinks: js.UndefOr[WebpropertyUserLinksCollection] = js.undefined
     }
     object ManagementCollection {
       
@@ -1313,11 +1308,10 @@ object Analytics {
     
     object Metadata {
       
-      @js.native
       trait ColumnsCollection extends StObject {
         
         // Lists all columns for a report type
-        def list(reportType: String): Columns = js.native
+        def list(reportType: String): Columns
       }
       object ColumnsCollection {
         
@@ -1336,10 +1330,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait MetadataCollection extends StObject {
       
-      var Columns: js.UndefOr[ColumnsCollection] = js.native
+      var Columns: js.UndefOr[ColumnsCollection] = js.undefined
     }
     object MetadataCollection {
       
@@ -1360,14 +1353,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProvisioningCollection extends StObject {
       
       // Creates an account ticket.
-      def createAccountTicket(resource: AccountTicket): AccountTicket = js.native
+      def createAccountTicket(resource: AccountTicket): AccountTicket
       
       // Provision account.
-      def createAccountTree(resource: AccountTreeRequest): AccountTreeResponse = js.native
+      def createAccountTree(resource: AccountTreeRequest): AccountTreeResponse
     }
     object ProvisioningCollection {
       
@@ -1393,11 +1385,10 @@ object Analytics {
     
     object UserDeletion {
       
-      @js.native
       trait UserDeletionRequestCollection extends StObject {
         
         // Insert or update a user deletion requests.
-        def upsert(resource: UserDeletionRequest): UserDeletionRequest = js.native
+        def upsert(resource: UserDeletionRequest): UserDeletionRequest
       }
       object UserDeletionRequestCollection {
         
@@ -1416,10 +1407,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UserDeletionCollection extends StObject {
       
-      var UserDeletionRequest: js.UndefOr[UserDeletionRequestCollection] = js.native
+      var UserDeletionRequest: js.UndefOr[UserDeletionRequestCollection] = js.undefined
     }
     object UserDeletionCollection {
       
@@ -1443,26 +1433,25 @@ object Analytics {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var childLink: js.UndefOr[AccountChildLink] = js.native
+      var childLink: js.UndefOr[AccountChildLink] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissions: js.UndefOr[AccountPermissions] = js.native
+      var permissions: js.UndefOr[AccountPermissions] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object Account {
       
@@ -1531,12 +1520,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountChildLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AccountChildLink {
       
@@ -1563,10 +1551,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountPermissions extends StObject {
       
-      var effective: js.UndefOr[js.Array[String]] = js.native
+      var effective: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AccountPermissions {
       
@@ -1590,16 +1577,15 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountRef extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object AccountRef {
       
@@ -1638,24 +1624,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountSummaries extends StObject {
       
-      var items: js.UndefOr[js.Array[AccountSummary]] = js.native
+      var items: js.UndefOr[js.Array[AccountSummary]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object AccountSummaries {
       
@@ -1721,18 +1706,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountSummary extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var webProperties: js.UndefOr[js.Array[WebPropertySummary]] = js.native
+      var webProperties: js.UndefOr[js.Array[WebPropertySummary]] = js.undefined
     }
     object AccountSummary {
       
@@ -1780,20 +1764,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountTicket extends StObject {
       
-      var account: js.UndefOr[Account] = js.native
+      var account: js.UndefOr[Account] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profile: js.UndefOr[Profile] = js.native
+      var profile: js.UndefOr[Profile] = js.undefined
       
-      var redirectUri: js.UndefOr[String] = js.native
+      var redirectUri: js.UndefOr[String] = js.undefined
       
-      var webproperty: js.UndefOr[Webproperty] = js.native
+      var webproperty: js.UndefOr[Webproperty] = js.undefined
     }
     object AccountTicket {
       
@@ -1844,20 +1827,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountTreeRequest extends StObject {
       
-      var accountName: js.UndefOr[String] = js.native
+      var accountName: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profileName: js.UndefOr[String] = js.native
+      var profileName: js.UndefOr[String] = js.undefined
       
-      var timezone: js.UndefOr[String] = js.native
+      var timezone: js.UndefOr[String] = js.undefined
       
-      var webpropertyName: js.UndefOr[String] = js.native
+      var webpropertyName: js.UndefOr[String] = js.undefined
       
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
     }
     object AccountTreeRequest {
       
@@ -1908,16 +1890,15 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AccountTreeResponse extends StObject {
       
-      var account: js.UndefOr[Account] = js.native
+      var account: js.UndefOr[Account] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profile: js.UndefOr[Profile] = js.native
+      var profile: js.UndefOr[Profile] = js.undefined
       
-      var webproperty: js.UndefOr[Webproperty] = js.native
+      var webproperty: js.UndefOr[Webproperty] = js.undefined
     }
     object AccountTreeResponse {
       
@@ -1956,24 +1937,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Accounts extends StObject {
       
-      var items: js.UndefOr[js.Array[Account]] = js.native
+      var items: js.UndefOr[js.Array[Account]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Accounts {
       
@@ -2039,14 +2019,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AdWordsAccount extends StObject {
       
-      var autoTaggingEnabled: js.UndefOr[Boolean] = js.native
+      var autoTaggingEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AdWordsAccount {
       
@@ -2079,10 +2058,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait AnalyticsDataimportDeleteUploadDataRequest extends StObject {
       
-      var customDataImportUids: js.UndefOr[js.Array[String]] = js.native
+      var customDataImportUids: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AnalyticsDataimportDeleteUploadDataRequest {
       
@@ -2106,14 +2084,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Column extends StObject {
       
-      var attributes: js.UndefOr[js.Object] = js.native
+      var attributes: js.UndefOr[js.Object] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Column {
       
@@ -2146,18 +2123,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Columns extends StObject {
       
-      var attributeNames: js.UndefOr[js.Array[String]] = js.native
+      var attributeNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Column]] = js.native
+      var items: js.UndefOr[js.Array[Column]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
     }
     object Columns {
       
@@ -2208,40 +2184,39 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDataSource extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var childLink: js.UndefOr[CustomDataSourceChildLink] = js.native
+      var childLink: js.UndefOr[CustomDataSourceChildLink] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var importBehavior: js.UndefOr[String] = js.native
+      var importBehavior: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[CustomDataSourceParentLink] = js.native
+      var parentLink: js.UndefOr[CustomDataSourceParentLink] = js.undefined
       
-      var profilesLinked: js.UndefOr[js.Array[String]] = js.native
+      var profilesLinked: js.UndefOr[js.Array[String]] = js.undefined
       
-      var schema: js.UndefOr[js.Array[String]] = js.native
+      var schema: js.UndefOr[js.Array[String]] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object CustomDataSource {
       
@@ -2358,12 +2333,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDataSourceChildLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CustomDataSourceChildLink {
       
@@ -2390,12 +2364,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDataSourceParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CustomDataSourceParentLink {
       
@@ -2422,24 +2395,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDataSources extends StObject {
       
-      var items: js.UndefOr[js.Array[CustomDataSource]] = js.native
+      var items: js.UndefOr[js.Array[CustomDataSource]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object CustomDataSources {
       
@@ -2505,32 +2477,31 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDimension extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[CustomDimensionParentLink] = js.native
+      var parentLink: js.UndefOr[CustomDimensionParentLink] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object CustomDimension {
       
@@ -2617,12 +2588,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDimensionParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CustomDimensionParentLink {
       
@@ -2649,24 +2619,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomDimensions extends StObject {
       
-      var items: js.UndefOr[js.Array[CustomDimension]] = js.native
+      var items: js.UndefOr[js.Array[CustomDimension]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object CustomDimensions {
       
@@ -2732,38 +2701,37 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomMetric extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var max_value: js.UndefOr[String] = js.native
+      var max_value: js.UndefOr[String] = js.undefined
       
-      var min_value: js.UndefOr[String] = js.native
+      var min_value: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[CustomMetricParentLink] = js.native
+      var parentLink: js.UndefOr[CustomMetricParentLink] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object CustomMetric {
       
@@ -2868,12 +2836,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomMetricParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CustomMetricParentLink {
       
@@ -2900,24 +2867,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait CustomMetrics extends StObject {
       
-      var items: js.UndefOr[js.Array[CustomMetric]] = js.native
+      var items: js.UndefOr[js.Array[CustomMetric]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object CustomMetrics {
       
@@ -2983,22 +2949,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityAdWordsLink extends StObject {
       
-      var adWordsAccounts: js.UndefOr[js.Array[AdWordsAccount]] = js.native
+      var adWordsAccounts: js.UndefOr[js.Array[AdWordsAccount]] = js.undefined
       
-      var entity: js.UndefOr[EntityAdWordsLinkEntity] = js.native
+      var entity: js.UndefOr[EntityAdWordsLinkEntity] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var profileIds: js.UndefOr[js.Array[String]] = js.native
+      var profileIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object EntityAdWordsLink {
       
@@ -3061,10 +3026,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityAdWordsLinkEntity extends StObject {
       
-      var webPropertyRef: js.UndefOr[WebPropertyRef] = js.native
+      var webPropertyRef: js.UndefOr[WebPropertyRef] = js.undefined
     }
     object EntityAdWordsLinkEntity {
       
@@ -3085,22 +3049,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityAdWordsLinks extends StObject {
       
-      var items: js.UndefOr[js.Array[EntityAdWordsLink]] = js.native
+      var items: js.UndefOr[js.Array[EntityAdWordsLink]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
     }
     object EntityAdWordsLinks {
       
@@ -3160,20 +3123,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityUserLink extends StObject {
       
-      var entity: js.UndefOr[EntityUserLinkEntity] = js.native
+      var entity: js.UndefOr[EntityUserLinkEntity] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var permissions: js.UndefOr[EntityUserLinkPermissions] = js.native
+      var permissions: js.UndefOr[EntityUserLinkPermissions] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var userRef: js.UndefOr[UserRef] = js.native
+      var userRef: js.UndefOr[UserRef] = js.undefined
     }
     object EntityUserLink {
       
@@ -3224,14 +3186,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityUserLinkEntity extends StObject {
       
-      var accountRef: js.UndefOr[AccountRef] = js.native
+      var accountRef: js.UndefOr[AccountRef] = js.undefined
       
-      var profileRef: js.UndefOr[ProfileRef] = js.native
+      var profileRef: js.UndefOr[ProfileRef] = js.undefined
       
-      var webPropertyRef: js.UndefOr[WebPropertyRef] = js.native
+      var webPropertyRef: js.UndefOr[WebPropertyRef] = js.undefined
     }
     object EntityUserLinkEntity {
       
@@ -3264,12 +3225,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityUserLinkPermissions extends StObject {
       
-      var effective: js.UndefOr[js.Array[String]] = js.native
+      var effective: js.UndefOr[js.Array[String]] = js.undefined
       
-      var local: js.UndefOr[js.Array[String]] = js.native
+      var local: js.UndefOr[js.Array[String]] = js.undefined
     }
     object EntityUserLinkPermissions {
       
@@ -3302,22 +3262,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait EntityUserLinks extends StObject {
       
-      var items: js.UndefOr[js.Array[EntityUserLink]] = js.native
+      var items: js.UndefOr[js.Array[EntityUserLink]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
     }
     object EntityUserLinks {
       
@@ -3377,64 +3336,63 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Experiment extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var editableInGaUi: js.UndefOr[Boolean] = js.native
+      var editableInGaUi: js.UndefOr[Boolean] = js.undefined
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var equalWeighting: js.UndefOr[Boolean] = js.native
+      var equalWeighting: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var minimumExperimentLengthInDays: js.UndefOr[Double] = js.native
+      var minimumExperimentLengthInDays: js.UndefOr[Double] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var objectiveMetric: js.UndefOr[String] = js.native
+      var objectiveMetric: js.UndefOr[String] = js.undefined
       
-      var optimizationType: js.UndefOr[String] = js.native
+      var optimizationType: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[ExperimentParentLink] = js.native
+      var parentLink: js.UndefOr[ExperimentParentLink] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var reasonExperimentEnded: js.UndefOr[String] = js.native
+      var reasonExperimentEnded: js.UndefOr[String] = js.undefined
       
-      var rewriteVariationUrlsAsOriginal: js.UndefOr[Boolean] = js.native
+      var rewriteVariationUrlsAsOriginal: js.UndefOr[Boolean] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var servingFramework: js.UndefOr[String] = js.native
+      var servingFramework: js.UndefOr[String] = js.undefined
       
-      var snippet: js.UndefOr[String] = js.native
+      var snippet: js.UndefOr[String] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var trafficCoverage: js.UndefOr[Double] = js.native
+      var trafficCoverage: js.UndefOr[Double] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var variations: js.UndefOr[js.Array[ExperimentVariations]] = js.native
+      var variations: js.UndefOr[js.Array[ExperimentVariations]] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
       
-      var winnerConfidenceLevel: js.UndefOr[Double] = js.native
+      var winnerConfidenceLevel: js.UndefOr[Double] = js.undefined
       
-      var winnerFound: js.UndefOr[Boolean] = js.native
+      var winnerFound: js.UndefOr[Boolean] = js.undefined
     }
     object Experiment {
       
@@ -3620,12 +3578,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ExperimentParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ExperimentParentLink {
       
@@ -3652,18 +3609,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ExperimentVariations extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
       
-      var won: js.UndefOr[Boolean] = js.native
+      var won: js.UndefOr[Boolean] = js.undefined
     }
     object ExperimentVariations {
       
@@ -3708,24 +3664,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Experiments extends StObject {
       
-      var items: js.UndefOr[js.Array[Experiment]] = js.native
+      var items: js.UndefOr[js.Array[Experiment]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Experiments {
       
@@ -3791,38 +3746,37 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Filter extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advancedDetails: js.UndefOr[FilterAdvancedDetails] = js.native
+      var advancedDetails: js.UndefOr[FilterAdvancedDetails] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var excludeDetails: js.UndefOr[FilterExpression] = js.native
+      var excludeDetails: js.UndefOr[FilterExpression] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var includeDetails: js.UndefOr[FilterExpression] = js.native
+      var includeDetails: js.UndefOr[FilterExpression] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lowercaseDetails: js.UndefOr[FilterLowercaseDetails] = js.native
+      var lowercaseDetails: js.UndefOr[FilterLowercaseDetails] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[FilterParentLink] = js.native
+      var parentLink: js.UndefOr[FilterParentLink] = js.undefined
       
-      var searchAndReplaceDetails: js.UndefOr[FilterSearchAndReplaceDetails] = js.native
+      var searchAndReplaceDetails: js.UndefOr[FilterSearchAndReplaceDetails] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var uppercaseDetails: js.UndefOr[FilterUppercaseDetails] = js.native
+      var uppercaseDetails: js.UndefOr[FilterUppercaseDetails] = js.undefined
     }
     object Filter {
       
@@ -3927,34 +3881,33 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterAdvancedDetails extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var extractA: js.UndefOr[String] = js.native
+      var extractA: js.UndefOr[String] = js.undefined
       
-      var extractB: js.UndefOr[String] = js.native
+      var extractB: js.UndefOr[String] = js.undefined
       
-      var fieldA: js.UndefOr[String] = js.native
+      var fieldA: js.UndefOr[String] = js.undefined
       
-      var fieldAIndex: js.UndefOr[Double] = js.native
+      var fieldAIndex: js.UndefOr[Double] = js.undefined
       
-      var fieldARequired: js.UndefOr[Boolean] = js.native
+      var fieldARequired: js.UndefOr[Boolean] = js.undefined
       
-      var fieldB: js.UndefOr[String] = js.native
+      var fieldB: js.UndefOr[String] = js.undefined
       
-      var fieldBIndex: js.UndefOr[Double] = js.native
+      var fieldBIndex: js.UndefOr[Double] = js.undefined
       
-      var fieldBRequired: js.UndefOr[Boolean] = js.native
+      var fieldBRequired: js.UndefOr[Boolean] = js.undefined
       
-      var outputConstructor: js.UndefOr[String] = js.native
+      var outputConstructor: js.UndefOr[String] = js.undefined
       
-      var outputToField: js.UndefOr[String] = js.native
+      var outputToField: js.UndefOr[String] = js.undefined
       
-      var outputToFieldIndex: js.UndefOr[Double] = js.native
+      var outputToFieldIndex: js.UndefOr[Double] = js.undefined
       
-      var overrideOutputField: js.UndefOr[Boolean] = js.native
+      var overrideOutputField: js.UndefOr[Boolean] = js.undefined
     }
     object FilterAdvancedDetails {
       
@@ -4047,20 +4000,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterExpression extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var expressionValue: js.UndefOr[String] = js.native
+      var expressionValue: js.UndefOr[String] = js.undefined
       
-      var field: js.UndefOr[String] = js.native
+      var field: js.UndefOr[String] = js.undefined
       
-      var fieldIndex: js.UndefOr[Double] = js.native
+      var fieldIndex: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var matchType: js.UndefOr[String] = js.native
+      var matchType: js.UndefOr[String] = js.undefined
     }
     object FilterExpression {
       
@@ -4111,12 +4063,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterLowercaseDetails extends StObject {
       
-      var field: js.UndefOr[String] = js.native
+      var field: js.UndefOr[String] = js.undefined
       
-      var fieldIndex: js.UndefOr[Double] = js.native
+      var fieldIndex: js.UndefOr[Double] = js.undefined
     }
     object FilterLowercaseDetails {
       
@@ -4143,12 +4094,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object FilterParentLink {
       
@@ -4175,18 +4125,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterRef extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object FilterRef {
       
@@ -4231,18 +4180,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterSearchAndReplaceDetails extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var field: js.UndefOr[String] = js.native
+      var field: js.UndefOr[String] = js.undefined
       
-      var fieldIndex: js.UndefOr[Double] = js.native
+      var fieldIndex: js.UndefOr[Double] = js.undefined
       
-      var replaceString: js.UndefOr[String] = js.native
+      var replaceString: js.UndefOr[String] = js.undefined
       
-      var searchString: js.UndefOr[String] = js.native
+      var searchString: js.UndefOr[String] = js.undefined
     }
     object FilterSearchAndReplaceDetails {
       
@@ -4287,12 +4235,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait FilterUppercaseDetails extends StObject {
       
-      var field: js.UndefOr[String] = js.native
+      var field: js.UndefOr[String] = js.undefined
       
-      var fieldIndex: js.UndefOr[Double] = js.native
+      var fieldIndex: js.UndefOr[Double] = js.undefined
     }
     object FilterUppercaseDetails {
       
@@ -4319,24 +4266,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Filters extends StObject {
       
-      var items: js.UndefOr[js.Array[Filter]] = js.native
+      var items: js.UndefOr[js.Array[Filter]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Filters {
       
@@ -4402,42 +4348,41 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaData extends StObject {
       
-      var columnHeaders: js.UndefOr[js.Array[GaDataColumnHeaders]] = js.native
+      var columnHeaders: js.UndefOr[js.Array[GaDataColumnHeaders]] = js.undefined
       
-      var containsSampledData: js.UndefOr[Boolean] = js.native
+      var containsSampledData: js.UndefOr[Boolean] = js.undefined
       
-      var dataLastRefreshed: js.UndefOr[String] = js.native
+      var dataLastRefreshed: js.UndefOr[String] = js.undefined
       
-      var dataTable: js.UndefOr[GaDataDataTable] = js.native
+      var dataTable: js.UndefOr[GaDataDataTable] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var profileInfo: js.UndefOr[GaDataProfileInfo] = js.native
+      var profileInfo: js.UndefOr[GaDataProfileInfo] = js.undefined
       
-      var query: js.UndefOr[GaDataQuery] = js.native
+      var query: js.UndefOr[GaDataQuery] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
       
-      var sampleSize: js.UndefOr[String] = js.native
+      var sampleSize: js.UndefOr[String] = js.undefined
       
-      var sampleSpace: js.UndefOr[String] = js.native
+      var sampleSpace: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.native
+      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
     }
     object GaData {
       
@@ -4560,14 +4505,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataColumnHeaders extends StObject {
       
-      var columnType: js.UndefOr[String] = js.native
+      var columnType: js.UndefOr[String] = js.undefined
       
-      var dataType: js.UndefOr[String] = js.native
+      var dataType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object GaDataColumnHeaders {
       
@@ -4600,12 +4544,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataDataTable extends StObject {
       
-      var cols: js.UndefOr[js.Array[GaDataDataTableCols]] = js.native
+      var cols: js.UndefOr[js.Array[GaDataDataTableCols]] = js.undefined
       
-      var rows: js.UndefOr[js.Array[GaDataDataTableRows]] = js.native
+      var rows: js.UndefOr[js.Array[GaDataDataTableRows]] = js.undefined
     }
     object GaDataDataTable {
       
@@ -4638,14 +4581,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataDataTableCols extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object GaDataDataTableCols {
       
@@ -4678,10 +4620,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataDataTableRows extends StObject {
       
-      var c: js.UndefOr[js.Array[GaDataDataTableRowsC]] = js.native
+      var c: js.UndefOr[js.Array[GaDataDataTableRowsC]] = js.undefined
     }
     object GaDataDataTableRows {
       
@@ -4705,10 +4646,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataDataTableRowsC extends StObject {
       
-      var v: js.UndefOr[String] = js.native
+      var v: js.UndefOr[String] = js.undefined
     }
     object GaDataDataTableRowsC {
       
@@ -4729,20 +4669,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataProfileInfo extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var profileName: js.UndefOr[String] = js.native
+      var profileName: js.UndefOr[String] = js.undefined
       
-      var tableId: js.UndefOr[String] = js.native
+      var tableId: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object GaDataProfileInfo {
       
@@ -4793,30 +4732,29 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GaDataQuery extends StObject {
       
-      var dimensions: js.UndefOr[String] = js.native
+      var dimensions: js.UndefOr[String] = js.undefined
       
-      var end_date: js.UndefOr[String] = js.native
+      var end_date: js.UndefOr[String] = js.undefined
       
-      var filters: js.UndefOr[String] = js.native
+      var filters: js.UndefOr[String] = js.undefined
       
-      var ids: js.UndefOr[String] = js.native
+      var ids: js.UndefOr[String] = js.undefined
       
-      var max_results: js.UndefOr[Double] = js.native
+      var max_results: js.UndefOr[Double] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[String]] = js.native
+      var metrics: js.UndefOr[js.Array[String]] = js.undefined
       
-      var samplingLevel: js.UndefOr[String] = js.native
+      var samplingLevel: js.UndefOr[String] = js.undefined
       
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
       
-      var sort: js.UndefOr[js.Array[String]] = js.native
+      var sort: js.UndefOr[js.Array[String]] = js.undefined
       
-      var start_date: js.UndefOr[String] = js.native
+      var start_date: js.UndefOr[String] = js.undefined
       
-      var start_index: js.UndefOr[Double] = js.native
+      var start_index: js.UndefOr[Double] = js.undefined
     }
     object GaDataQuery {
       
@@ -4903,44 +4841,43 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Goal extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var eventDetails: js.UndefOr[GoalEventDetails] = js.native
+      var eventDetails: js.UndefOr[GoalEventDetails] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[GoalParentLink] = js.native
+      var parentLink: js.UndefOr[GoalParentLink] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var urlDestinationDetails: js.UndefOr[GoalUrlDestinationDetails] = js.native
+      var urlDestinationDetails: js.UndefOr[GoalUrlDestinationDetails] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
       
-      var visitNumPagesDetails: js.UndefOr[GoalVisitNumPagesDetails] = js.native
+      var visitNumPagesDetails: js.UndefOr[GoalVisitNumPagesDetails] = js.undefined
       
-      var visitTimeOnSiteDetails: js.UndefOr[GoalVisitTimeOnSiteDetails] = js.native
+      var visitTimeOnSiteDetails: js.UndefOr[GoalVisitTimeOnSiteDetails] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object Goal {
       
@@ -5063,12 +5000,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalEventDetails extends StObject {
       
-      var eventConditions: js.UndefOr[js.Array[GoalEventDetailsEventConditions]] = js.native
+      var eventConditions: js.UndefOr[js.Array[GoalEventDetailsEventConditions]] = js.undefined
       
-      var useEventValue: js.UndefOr[Boolean] = js.native
+      var useEventValue: js.UndefOr[Boolean] = js.undefined
     }
     object GoalEventDetails {
       
@@ -5098,18 +5034,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalEventDetailsEventConditions extends StObject {
       
-      var comparisonType: js.UndefOr[String] = js.native
+      var comparisonType: js.UndefOr[String] = js.undefined
       
-      var comparisonValue: js.UndefOr[String] = js.native
+      var comparisonValue: js.UndefOr[String] = js.undefined
       
-      var expression: js.UndefOr[String] = js.native
+      var expression: js.UndefOr[String] = js.undefined
       
-      var matchType: js.UndefOr[String] = js.native
+      var matchType: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object GoalEventDetailsEventConditions {
       
@@ -5154,12 +5089,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object GoalParentLink {
       
@@ -5186,18 +5120,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalUrlDestinationDetails extends StObject {
       
-      var caseSensitive: js.UndefOr[Boolean] = js.native
+      var caseSensitive: js.UndefOr[Boolean] = js.undefined
       
-      var firstStepRequired: js.UndefOr[Boolean] = js.native
+      var firstStepRequired: js.UndefOr[Boolean] = js.undefined
       
-      var matchType: js.UndefOr[String] = js.native
+      var matchType: js.UndefOr[String] = js.undefined
       
-      var steps: js.UndefOr[js.Array[GoalUrlDestinationDetailsSteps]] = js.native
+      var steps: js.UndefOr[js.Array[GoalUrlDestinationDetailsSteps]] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object GoalUrlDestinationDetails {
       
@@ -5245,14 +5178,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalUrlDestinationDetailsSteps extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var number: js.UndefOr[Double] = js.native
+      var number: js.UndefOr[Double] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object GoalUrlDestinationDetailsSteps {
       
@@ -5285,12 +5217,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalVisitNumPagesDetails extends StObject {
       
-      var comparisonType: js.UndefOr[String] = js.native
+      var comparisonType: js.UndefOr[String] = js.undefined
       
-      var comparisonValue: js.UndefOr[String] = js.native
+      var comparisonValue: js.UndefOr[String] = js.undefined
     }
     object GoalVisitNumPagesDetails {
       
@@ -5317,12 +5248,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait GoalVisitTimeOnSiteDetails extends StObject {
       
-      var comparisonType: js.UndefOr[String] = js.native
+      var comparisonType: js.UndefOr[String] = js.undefined
       
-      var comparisonValue: js.UndefOr[String] = js.native
+      var comparisonValue: js.UndefOr[String] = js.undefined
     }
     object GoalVisitTimeOnSiteDetails {
       
@@ -5349,24 +5279,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Goals extends StObject {
       
-      var items: js.UndefOr[js.Array[Goal]] = js.native
+      var items: js.UndefOr[js.Array[Goal]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Goals {
       
@@ -5432,14 +5361,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait HashClientIdRequest extends StObject {
       
-      var clientId: js.UndefOr[String] = js.native
+      var clientId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object HashClientIdRequest {
       
@@ -5472,16 +5400,15 @@ object Analytics {
       }
     }
     
-    @js.native
     trait HashClientIdResponse extends StObject {
       
-      var clientId: js.UndefOr[String] = js.native
+      var clientId: js.UndefOr[String] = js.undefined
       
-      var hashedClientId: js.UndefOr[String] = js.native
+      var hashedClientId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object HashClientIdResponse {
       
@@ -5520,18 +5447,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait IncludeConditions extends StObject {
       
-      var daysToLookBack: js.UndefOr[Double] = js.native
+      var daysToLookBack: js.UndefOr[Double] = js.undefined
       
-      var isSmartList: js.UndefOr[Boolean] = js.native
+      var isSmartList: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var membershipDurationDays: js.UndefOr[Double] = js.native
+      var membershipDurationDays: js.UndefOr[Double] = js.undefined
       
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
     }
     object IncludeConditions {
       
@@ -5576,28 +5502,27 @@ object Analytics {
       }
     }
     
-    @js.native
     trait LinkedForeignAccount extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var eligibleForSearch: js.UndefOr[Boolean] = js.native
+      var eligibleForSearch: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var linkedAccountId: js.UndefOr[String] = js.native
+      var linkedAccountId: js.UndefOr[String] = js.undefined
       
-      var remarketingAudienceId: js.UndefOr[String] = js.native
+      var remarketingAudienceId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object LinkedForeignAccount {
       
@@ -5672,38 +5597,37 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfData extends StObject {
       
-      var columnHeaders: js.UndefOr[js.Array[McfDataColumnHeaders]] = js.native
+      var columnHeaders: js.UndefOr[js.Array[McfDataColumnHeaders]] = js.undefined
       
-      var containsSampledData: js.UndefOr[Boolean] = js.native
+      var containsSampledData: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var profileInfo: js.UndefOr[McfDataProfileInfo] = js.native
+      var profileInfo: js.UndefOr[McfDataProfileInfo] = js.undefined
       
-      var query: js.UndefOr[McfDataQuery] = js.native
+      var query: js.UndefOr[McfDataQuery] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[McfDataRows]]] = js.native
+      var rows: js.UndefOr[js.Array[js.Array[McfDataRows]]] = js.undefined
       
-      var sampleSize: js.UndefOr[String] = js.native
+      var sampleSize: js.UndefOr[String] = js.undefined
       
-      var sampleSpace: js.UndefOr[String] = js.native
+      var sampleSpace: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.native
+      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
     }
     object McfData {
       
@@ -5814,14 +5738,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfDataColumnHeaders extends StObject {
       
-      var columnType: js.UndefOr[String] = js.native
+      var columnType: js.UndefOr[String] = js.undefined
       
-      var dataType: js.UndefOr[String] = js.native
+      var dataType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object McfDataColumnHeaders {
       
@@ -5854,20 +5777,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfDataProfileInfo extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var profileName: js.UndefOr[String] = js.native
+      var profileName: js.UndefOr[String] = js.undefined
       
-      var tableId: js.UndefOr[String] = js.native
+      var tableId: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object McfDataProfileInfo {
       
@@ -5918,30 +5840,29 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfDataQuery extends StObject {
       
-      var dimensions: js.UndefOr[String] = js.native
+      var dimensions: js.UndefOr[String] = js.undefined
       
-      var end_date: js.UndefOr[String] = js.native
+      var end_date: js.UndefOr[String] = js.undefined
       
-      var filters: js.UndefOr[String] = js.native
+      var filters: js.UndefOr[String] = js.undefined
       
-      var ids: js.UndefOr[String] = js.native
+      var ids: js.UndefOr[String] = js.undefined
       
-      var max_results: js.UndefOr[Double] = js.native
+      var max_results: js.UndefOr[Double] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[String]] = js.native
+      var metrics: js.UndefOr[js.Array[String]] = js.undefined
       
-      var samplingLevel: js.UndefOr[String] = js.native
+      var samplingLevel: js.UndefOr[String] = js.undefined
       
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
       
-      var sort: js.UndefOr[js.Array[String]] = js.native
+      var sort: js.UndefOr[js.Array[String]] = js.undefined
       
-      var start_date: js.UndefOr[String] = js.native
+      var start_date: js.UndefOr[String] = js.undefined
       
-      var start_index: js.UndefOr[Double] = js.native
+      var start_index: js.UndefOr[Double] = js.undefined
     }
     object McfDataQuery {
       
@@ -6028,12 +5949,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfDataRows extends StObject {
       
-      var conversionPathValue: js.UndefOr[js.Array[McfDataRowsConversionPathValue]] = js.native
+      var conversionPathValue: js.UndefOr[js.Array[McfDataRowsConversionPathValue]] = js.undefined
       
-      var primitiveValue: js.UndefOr[String] = js.native
+      var primitiveValue: js.UndefOr[String] = js.undefined
     }
     object McfDataRows {
       
@@ -6063,12 +5983,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait McfDataRowsConversionPathValue extends StObject {
       
-      var interactionType: js.UndefOr[String] = js.native
+      var interactionType: js.UndefOr[String] = js.undefined
       
-      var nodeValue: js.UndefOr[String] = js.native
+      var nodeValue: js.UndefOr[String] = js.undefined
     }
     object McfDataRowsConversionPathValue {
       
@@ -6095,60 +6014,59 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Profile extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var botFilteringEnabled: js.UndefOr[Boolean] = js.native
+      var botFilteringEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var childLink: js.UndefOr[ProfileChildLink] = js.native
+      var childLink: js.UndefOr[ProfileChildLink] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var defaultPage: js.UndefOr[String] = js.native
+      var defaultPage: js.UndefOr[String] = js.undefined
       
-      var eCommerceTracking: js.UndefOr[Boolean] = js.native
+      var eCommerceTracking: js.UndefOr[Boolean] = js.undefined
       
-      var enhancedECommerceTracking: js.UndefOr[Boolean] = js.native
+      var enhancedECommerceTracking: js.UndefOr[Boolean] = js.undefined
       
-      var excludeQueryParameters: js.UndefOr[String] = js.native
+      var excludeQueryParameters: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[ProfileParentLink] = js.native
+      var parentLink: js.UndefOr[ProfileParentLink] = js.undefined
       
-      var permissions: js.UndefOr[ProfilePermissions] = js.native
+      var permissions: js.UndefOr[ProfilePermissions] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var siteSearchCategoryParameters: js.UndefOr[String] = js.native
+      var siteSearchCategoryParameters: js.UndefOr[String] = js.undefined
       
-      var siteSearchQueryParameters: js.UndefOr[String] = js.native
+      var siteSearchQueryParameters: js.UndefOr[String] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var stripSiteSearchCategoryParameters: js.UndefOr[Boolean] = js.native
+      var stripSiteSearchCategoryParameters: js.UndefOr[Boolean] = js.undefined
       
-      var stripSiteSearchQueryParameters: js.UndefOr[Boolean] = js.native
+      var stripSiteSearchQueryParameters: js.UndefOr[Boolean] = js.undefined
       
-      var timezone: js.UndefOr[String] = js.native
+      var timezone: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
       
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
     }
     object Profile {
       
@@ -6319,12 +6237,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileChildLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ProfileChildLink {
       
@@ -6351,20 +6268,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileFilterLink extends StObject {
       
-      var filterRef: js.UndefOr[FilterRef] = js.native
+      var filterRef: js.UndefOr[FilterRef] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profileRef: js.UndefOr[ProfileRef] = js.native
+      var profileRef: js.UndefOr[ProfileRef] = js.undefined
       
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ProfileFilterLink {
       
@@ -6415,24 +6331,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileFilterLinks extends StObject {
       
-      var items: js.UndefOr[js.Array[ProfileFilterLink]] = js.native
+      var items: js.UndefOr[js.Array[ProfileFilterLink]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object ProfileFilterLinks {
       
@@ -6498,12 +6413,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ProfileParentLink {
       
@@ -6530,10 +6444,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfilePermissions extends StObject {
       
-      var effective: js.UndefOr[js.Array[String]] = js.native
+      var effective: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ProfilePermissions {
       
@@ -6557,22 +6470,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileRef extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object ProfileRef {
       
@@ -6629,18 +6541,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait ProfileSummary extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ProfileSummary {
       
@@ -6685,24 +6596,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Profiles extends StObject {
       
-      var items: js.UndefOr[js.Array[Profile]] = js.native
+      var items: js.UndefOr[js.Array[Profile]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Profiles {
       
@@ -6768,26 +6678,25 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RealtimeData extends StObject {
       
-      var columnHeaders: js.UndefOr[js.Array[RealtimeDataColumnHeaders]] = js.native
+      var columnHeaders: js.UndefOr[js.Array[RealtimeDataColumnHeaders]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profileInfo: js.UndefOr[RealtimeDataProfileInfo] = js.native
+      var profileInfo: js.UndefOr[RealtimeDataProfileInfo] = js.undefined
       
-      var query: js.UndefOr[RealtimeDataQuery] = js.native
+      var query: js.UndefOr[RealtimeDataQuery] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var totalsForAllResults: js.UndefOr[js.Object] = js.native
+      var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
     }
     object RealtimeData {
       
@@ -6862,14 +6771,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RealtimeDataColumnHeaders extends StObject {
       
-      var columnType: js.UndefOr[String] = js.native
+      var columnType: js.UndefOr[String] = js.undefined
       
-      var dataType: js.UndefOr[String] = js.native
+      var dataType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object RealtimeDataColumnHeaders {
       
@@ -6902,20 +6810,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RealtimeDataProfileInfo extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var profileName: js.UndefOr[String] = js.native
+      var profileName: js.UndefOr[String] = js.undefined
       
-      var tableId: js.UndefOr[String] = js.native
+      var tableId: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object RealtimeDataProfileInfo {
       
@@ -6966,20 +6873,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RealtimeDataQuery extends StObject {
       
-      var dimensions: js.UndefOr[String] = js.native
+      var dimensions: js.UndefOr[String] = js.undefined
       
-      var filters: js.UndefOr[String] = js.native
+      var filters: js.UndefOr[String] = js.undefined
       
-      var ids: js.UndefOr[String] = js.native
+      var ids: js.UndefOr[String] = js.undefined
       
-      var max_results: js.UndefOr[Double] = js.native
+      var max_results: js.UndefOr[Double] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[String]] = js.native
+      var metrics: js.UndefOr[js.Array[String]] = js.undefined
       
-      var sort: js.UndefOr[js.Array[String]] = js.native
+      var sort: js.UndefOr[js.Array[String]] = js.undefined
     }
     object RealtimeDataQuery {
       
@@ -7036,36 +6942,35 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RemarketingAudience extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var audienceDefinition: js.UndefOr[RemarketingAudienceAudienceDefinition] = js.native
+      var audienceDefinition: js.UndefOr[RemarketingAudienceAudienceDefinition] = js.undefined
       
-      var audienceType: js.UndefOr[String] = js.native
+      var audienceType: js.UndefOr[String] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var linkedAdAccounts: js.UndefOr[js.Array[LinkedForeignAccount]] = js.native
+      var linkedAdAccounts: js.UndefOr[js.Array[LinkedForeignAccount]] = js.undefined
       
-      var linkedViews: js.UndefOr[js.Array[String]] = js.native
+      var linkedViews: js.UndefOr[js.Array[String]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var stateBasedAudienceDefinition: js.UndefOr[RemarketingAudienceStateBasedAudienceDefinition] = js.native
+      var stateBasedAudienceDefinition: js.UndefOr[RemarketingAudienceStateBasedAudienceDefinition] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object RemarketingAudience {
       
@@ -7170,10 +7075,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RemarketingAudienceAudienceDefinition extends StObject {
       
-      var includeConditions: js.UndefOr[IncludeConditions] = js.native
+      var includeConditions: js.UndefOr[IncludeConditions] = js.undefined
     }
     object RemarketingAudienceAudienceDefinition {
       
@@ -7194,12 +7098,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RemarketingAudienceStateBasedAudienceDefinition extends StObject {
       
-      var excludeConditions: js.UndefOr[RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions] = js.native
+      var excludeConditions: js.UndefOr[RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions] = js.undefined
       
-      var includeConditions: js.UndefOr[IncludeConditions] = js.native
+      var includeConditions: js.UndefOr[IncludeConditions] = js.undefined
     }
     object RemarketingAudienceStateBasedAudienceDefinition {
       
@@ -7226,12 +7129,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions extends StObject {
       
-      var exclusionDuration: js.UndefOr[String] = js.native
+      var exclusionDuration: js.UndefOr[String] = js.undefined
       
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
     }
     object RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions {
       
@@ -7258,24 +7160,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait RemarketingAudiences extends StObject {
       
-      var items: js.UndefOr[js.Array[RemarketingAudience]] = js.native
+      var items: js.UndefOr[js.Array[RemarketingAudience]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object RemarketingAudiences {
       
@@ -7341,26 +7242,25 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Segment extends StObject {
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var definition: js.UndefOr[String] = js.native
+      var definition: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var segmentId: js.UndefOr[String] = js.native
+      var segmentId: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object Segment {
       
@@ -7429,24 +7329,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Segments extends StObject {
       
-      var items: js.UndefOr[js.Array[Segment]] = js.native
+      var items: js.UndefOr[js.Array[Segment]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Segments {
       
@@ -7512,46 +7411,45 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UnsampledReport extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var cloudStorageDownloadDetails: js.UndefOr[UnsampledReportCloudStorageDownloadDetails] = js.native
+      var cloudStorageDownloadDetails: js.UndefOr[UnsampledReportCloudStorageDownloadDetails] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var dimensions: js.UndefOr[String] = js.native
+      var dimensions: js.UndefOr[String] = js.undefined
       
-      var downloadType: js.UndefOr[String] = js.native
+      var downloadType: js.UndefOr[String] = js.undefined
       
-      var driveDownloadDetails: js.UndefOr[UnsampledReportDriveDownloadDetails] = js.native
+      var driveDownloadDetails: js.UndefOr[UnsampledReportDriveDownloadDetails] = js.undefined
       
-      var end_date: js.UndefOr[String] = js.native
+      var end_date: js.UndefOr[String] = js.undefined
       
-      var filters: js.UndefOr[String] = js.native
+      var filters: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[String] = js.native
+      var metrics: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var segment: js.UndefOr[String] = js.native
+      var segment: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var start_date: js.UndefOr[String] = js.native
+      var start_date: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object UnsampledReport {
       
@@ -7680,12 +7578,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UnsampledReportCloudStorageDownloadDetails extends StObject {
       
-      var bucketId: js.UndefOr[String] = js.native
+      var bucketId: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object UnsampledReportCloudStorageDownloadDetails {
       
@@ -7712,10 +7609,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UnsampledReportDriveDownloadDetails extends StObject {
       
-      var documentId: js.UndefOr[String] = js.native
+      var documentId: js.UndefOr[String] = js.undefined
     }
     object UnsampledReportDriveDownloadDetails {
       
@@ -7736,24 +7632,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UnsampledReports extends StObject {
       
-      var items: js.UndefOr[js.Array[UnsampledReport]] = js.native
+      var items: js.UndefOr[js.Array[UnsampledReport]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object UnsampledReports {
       
@@ -7819,22 +7714,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Upload extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var customDataSourceId: js.UndefOr[String] = js.native
+      var customDataSourceId: js.UndefOr[String] = js.undefined
       
-      var errors: js.UndefOr[js.Array[String]] = js.native
+      var errors: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var uploadTime: js.UndefOr[String] = js.native
+      var uploadTime: js.UndefOr[String] = js.undefined
     }
     object Upload {
       
@@ -7894,22 +7788,21 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Uploads extends StObject {
       
-      var items: js.UndefOr[js.Array[Upload]] = js.native
+      var items: js.UndefOr[js.Array[Upload]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
     }
     object Uploads {
       
@@ -7969,18 +7862,17 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UserDeletionRequest extends StObject {
       
-      var deletionRequestTime: js.UndefOr[String] = js.native
+      var deletionRequestTime: js.UndefOr[String] = js.undefined
       
-      var firebaseProjectId: js.UndefOr[String] = js.native
+      var firebaseProjectId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[UserDeletionRequestId] = js.native
+      var id: js.UndefOr[UserDeletionRequestId] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var webPropertyId: js.UndefOr[String] = js.native
+      var webPropertyId: js.UndefOr[String] = js.undefined
     }
     object UserDeletionRequest {
       
@@ -8025,12 +7917,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UserDeletionRequestId extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object UserDeletionRequestId {
       
@@ -8057,14 +7948,13 @@ object Analytics {
       }
     }
     
-    @js.native
     trait UserRef extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object UserRef {
       
@@ -8097,20 +7987,19 @@ object Analytics {
       }
     }
     
-    @js.native
     trait WebPropertyRef extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object WebPropertyRef {
       
@@ -8161,24 +8050,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait WebPropertySummary extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var level: js.UndefOr[String] = js.native
+      var level: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var profiles: js.UndefOr[js.Array[ProfileSummary]] = js.native
+      var profiles: js.UndefOr[js.Array[ProfileSummary]] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
     }
     object WebPropertySummary {
       
@@ -8244,24 +8132,23 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Webproperties extends StObject {
       
-      var items: js.UndefOr[js.Array[Webproperty]] = js.native
+      var items: js.UndefOr[js.Array[Webproperty]] = js.undefined
       
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var previousLink: js.UndefOr[String] = js.native
+      var previousLink: js.UndefOr[String] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Webproperties {
       
@@ -8327,46 +8214,45 @@ object Analytics {
       }
     }
     
-    @js.native
     trait Webproperty extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var childLink: js.UndefOr[WebpropertyChildLink] = js.native
+      var childLink: js.UndefOr[WebpropertyChildLink] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var dataRetentionResetOnNewActivity: js.UndefOr[Boolean] = js.native
+      var dataRetentionResetOnNewActivity: js.UndefOr[Boolean] = js.undefined
       
-      var dataRetentionTtl: js.UndefOr[String] = js.native
+      var dataRetentionTtl: js.UndefOr[String] = js.undefined
       
-      var defaultProfileId: js.UndefOr[String] = js.native
+      var defaultProfileId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var industryVertical: js.UndefOr[String] = js.native
+      var industryVertical: js.UndefOr[String] = js.undefined
       
-      var internalWebPropertyId: js.UndefOr[String] = js.native
+      var internalWebPropertyId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var level: js.UndefOr[String] = js.native
+      var level: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[WebpropertyParentLink] = js.native
+      var parentLink: js.UndefOr[WebpropertyParentLink] = js.undefined
       
-      var permissions: js.UndefOr[WebpropertyPermissions] = js.native
+      var permissions: js.UndefOr[WebpropertyPermissions] = js.undefined
       
-      var profileCount: js.UndefOr[Double] = js.native
+      var profileCount: js.UndefOr[Double] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var websiteUrl: js.UndefOr[String] = js.native
+      var websiteUrl: js.UndefOr[String] = js.undefined
     }
     object Webproperty {
       
@@ -8495,12 +8381,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait WebpropertyChildLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object WebpropertyChildLink {
       
@@ -8527,12 +8412,11 @@ object Analytics {
       }
     }
     
-    @js.native
     trait WebpropertyParentLink extends StObject {
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object WebpropertyParentLink {
       
@@ -8559,10 +8443,9 @@ object Analytics {
       }
     }
     
-    @js.native
     trait WebpropertyPermissions extends StObject {
       
-      var effective: js.UndefOr[js.Array[String]] = js.native
+      var effective: js.UndefOr[js.Array[String]] = js.undefined
     }
     object WebpropertyPermissions {
       

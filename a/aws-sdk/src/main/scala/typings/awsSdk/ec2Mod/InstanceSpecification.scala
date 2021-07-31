@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceSpecification extends StObject {
   
   /**
     * Excludes the root volume from being snapshotted.
     */
-  var ExcludeBootVolume: js.UndefOr[Boolean] = js.native
+  var ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance to specify which volumes should be snapshotted.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.undefined
 }
 object InstanceSpecification {
   

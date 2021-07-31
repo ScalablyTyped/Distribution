@@ -2,13 +2,11 @@ package typings.vegaTypings.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Test extends StObject {
   
-  var test: js.UndefOr[String] = js.native
+  var test: js.UndefOr[String] = js.undefined
 }
 object Test {
   

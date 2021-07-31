@@ -3,7 +3,6 @@ package typings.lazyJs
 import typings.lazyJs.LazyJS.LazyStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,33 +16,45 @@ object global {
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     object ArrayLikeSequence {
       
-      @JSGlobal("LazyJS.ArrayLikeSequence.define")
+      @JSGlobal("LazyJS.ArrayLikeSequence")
       @js.native
-      def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     object ObjectLikeSequence {
       
-      @JSGlobal("LazyJS.ObjectLikeSequence.define")
+      @JSGlobal("LazyJS.ObjectLikeSequence")
       @js.native
-      def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     object Sequence {
       
-      @JSGlobal("LazyJS.Sequence.define")
+      @JSGlobal("LazyJS.Sequence")
       @js.native
-      def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     object StringLikeSequence {
       
-      @JSGlobal("LazyJS.StringLikeSequence.define")
+      @JSGlobal("LazyJS.StringLikeSequence")
       @js.native
-      def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def define(methodName: js.Array[String], overrides: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(methodName.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     }
   }
   

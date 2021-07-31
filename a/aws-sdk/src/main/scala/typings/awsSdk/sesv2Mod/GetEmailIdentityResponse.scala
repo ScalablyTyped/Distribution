@@ -2,46 +2,44 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEmailIdentityResponse extends StObject {
   
   /**
     * An object that contains information about the DKIM attributes for the identity.
     */
-  var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.native
+  var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.undefined
   
   /**
     * The feedback forwarding configuration for the identity. If the value is true, you receive email notifications when bounce or complaint events occur. These notifications are sent to the address that you specified in the Return-Path header of the original email. You're required to have a method of tracking bounces and complaints. If you haven't set up another mechanism for receiving bounce or complaint notifications (for example, by setting up an event destination), you receive an email notification when these events occur (even if this setting is disabled).
     */
-  var FeedbackForwardingStatus: js.UndefOr[Enabled] = js.native
+  var FeedbackForwardingStatus: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The email identity type.
     */
-  var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.native
+  var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.undefined
   
   /**
     * An object that contains information about the Mail-From attributes for the email identity.
     */
-  var MailFromAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.MailFromAttributes] = js.native
+  var MailFromAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.MailFromAttributes] = js.undefined
   
   /**
     * A map of policy names to policies.
     */
-  var Policies: js.UndefOr[PolicyMap] = js.native
+  var Policies: js.UndefOr[PolicyMap] = js.undefined
   
   /**
     * An array of objects that define the tags (keys and values) that are associated with the email identity.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Specifies whether or not the identity is verified. You can only send email from verified email addresses or domains. For more information about verifying identities, see the Amazon Pinpoint User Guide.
     */
-  var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.native
+  var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
 }
 object GetEmailIdentityResponse {
   

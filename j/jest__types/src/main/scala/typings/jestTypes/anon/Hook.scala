@@ -4,21 +4,21 @@ import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.jestTypesStrings.hook_start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Hook extends AsyncEvent {
+trait Hook
+  extends StObject
+     with AsyncEvent {
   
-  var hook: typings.jestTypes.circusMod.Hook = js.native
+  var hook: typings.jestTypes.circusMod.Hook
   
-  var name: hook_start = js.native
+  var name: hook_start
 }
 object Hook {
   
   @scala.inline
-  def apply(hook: typings.jestTypes.circusMod.Hook, name: hook_start): Hook = {
-    val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(hook: typings.jestTypes.circusMod.Hook): Hook = {
+    val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = "hook_start")
     __obj.asInstanceOf[Hook]
   }
   

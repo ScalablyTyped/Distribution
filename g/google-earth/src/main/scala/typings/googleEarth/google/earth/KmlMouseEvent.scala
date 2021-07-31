@@ -2,84 +2,84 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlMouseEvent extends KmlEvent {
+trait KmlMouseEvent
+  extends StObject
+     with KmlEvent {
   
   /**
     * Indicates whether the ALT key was held down when an event occurred.
     */
-  def getAltKey(): Boolean = js.native
+  def getAltKey(): Boolean
   
   /**
     * The altitude at which the event occurred, in meters.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * The button on the mouse was pressed.
     * Possible values include 0, 1, 2, where 0 is left, 1 is middle, and 2 is right mouse key.
     */
-  def getButton(): Double = js.native
+  def getButton(): Double
   
   /**
     * The x coordinate at which the event occurred, measured in pixels from the left edge of the plug-in window.
     */
-  def getClientX(): Double = js.native
+  def getClientX(): Double
   
   /**
     * The y coordinate at which the event occurred, measured in pixels from the top edge of the plug-in window.
     */
-  def getClientY(): Double = js.native
+  def getClientY(): Double
   
   /**
     * Indicates whether the CTRL key was held down when an event occurred.
     */
-  def getCtrlKey(): Boolean = js.native
+  def getCtrlKey(): Boolean
   
   /**
     * Indicates whether a mouse action occurred while on the Google Earth globe.
     */
-  def getDidHitGlobe(): Boolean = js.native
+  def getDidHitGlobe(): Boolean
   
   /**
     * The latitude at which the event occurred, in decimal degrees.
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * The longitude at which the event occurred, in decimal degrees.
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
   
   /**
     * Used with the mouseover and mouseout events to specify a secondary target.
     * For mouseover, it specifies the object that the mouse was over.
     * For mouseout, it specifies the new object that the mouse is over.
     */
-  def getRelatedTarget(): GEEventEmitter = js.native
+  def getRelatedTarget(): GEEventEmitter
   
   /**
     * The x coordinate at which the event occurred, measured in pixels from the left edge of the computer screen.
     */
-  def getScreenX(): Double = js.native
+  def getScreenX(): Double
   
   /**
     * The y coordinate at which the event occurred, measured in pixels from the top edge of the computer screen.
     */
-  def getScreenY(): Double = js.native
+  def getScreenY(): Double
   
   /**
     * Indicates whether the SHIFT key was held down when an event occurred.
     */
-  def getShiftKey(): Boolean = js.native
+  def getShiftKey(): Boolean
   
   /**
     * Returns the timestamp of the event, in Unix time.
     */
-  def getTimeStamp(): Double = js.native
+  def getTimeStamp(): Double
 }
 object KmlMouseEvent {
   

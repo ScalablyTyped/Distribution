@@ -3,38 +3,36 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:enable:interface-name */
-@js.native
 trait EndpointSettings extends StObject {
   
-  var Aliases: js.UndefOr[js.Array[String]] = js.native
+  var Aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var DriverOpts: js.UndefOr[StringDictionary[String]] = js.native
+  var DriverOpts: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var EndpointID: js.UndefOr[String] = js.native
+  var EndpointID: js.UndefOr[String] = js.undefined
   
-  var Gateway: js.UndefOr[String] = js.native
+  var Gateway: js.UndefOr[String] = js.undefined
   
-  var GlobalIPV6PrefixLen: js.UndefOr[Double] = js.native
+  var GlobalIPV6PrefixLen: js.UndefOr[Double] = js.undefined
   
-  var GlobalIPv6Address: js.UndefOr[String] = js.native
+  var GlobalIPv6Address: js.UndefOr[String] = js.undefined
   
-  var IPAMConfig: js.UndefOr[typings.dockerode.mod.IPAMConfig] = js.native
+  var IPAMConfig: js.UndefOr[typings.dockerode.mod.IPAMConfig] = js.undefined
   
-  var IPAddress: js.UndefOr[String] = js.native
+  var IPAddress: js.UndefOr[String] = js.undefined
   
-  var IPPrefixLen: js.UndefOr[Double] = js.native
+  var IPPrefixLen: js.UndefOr[Double] = js.undefined
   
-  var IPv6Gateway: js.UndefOr[String] = js.native
+  var IPv6Gateway: js.UndefOr[String] = js.undefined
   
-  var Links: js.UndefOr[js.Array[String]] = js.native
+  var Links: js.UndefOr[js.Array[String]] = js.undefined
   
-  var MacAddress: js.UndefOr[String] = js.native
+  var MacAddress: js.UndefOr[String] = js.undefined
   
-  var NetworkID: js.UndefOr[String] = js.native
+  var NetworkID: js.UndefOr[String] = js.undefined
 }
 object EndpointSettings {
   

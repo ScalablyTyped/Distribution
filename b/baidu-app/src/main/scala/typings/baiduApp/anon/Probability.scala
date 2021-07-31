@@ -2,23 +2,21 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Probability extends StObject {
   
   // 分类结果置信度（0–1.0）
-  var location: Height = js.native
+  var location: Height
   
   // type=0 为1千种高优商标识别结果；type=1 为2万类logo库的结果；其它type为自定义logo库结果。
-  var name: Double = js.native
+  var name: Double
   
   // 识别的品牌名称
-  var probability: Double = js.native
+  var probability: Double
   
   // 菜品识别结果数组
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object Probability {
   

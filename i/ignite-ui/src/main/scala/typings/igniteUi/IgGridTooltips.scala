@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridTooltips
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,44 +17,44 @@ trait IgGridTooltips
     * A list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)
     *
     */
-  var columnSettings: js.UndefOr[IgGridTooltipsColumnSettings] = js.native
+  var columnSettings: js.UndefOr[IgGridTooltipsColumnSettings] = js.undefined
   
   /**
     * Sets the left position of the tooltip relative to the mouse cursor
     *
     */
-  var cursorLeftOffset: js.UndefOr[Double] = js.native
+  var cursorLeftOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the top position of the tooltip relative to the mouse cursor
     *
     */
-  var cursorTopOffset: js.UndefOr[Double] = js.native
+  var cursorTopOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the time tooltip fades in and out when showing/hiding
     *
     */
-  var fadeTimespan: js.UndefOr[Double] = js.native
+  var fadeTimespan: js.UndefOr[Double] = js.undefined
   
   /**
     * Type="integer" The time in milliseconds after which tooltip hides when mouse
     * cursor gets outside of the cell.
     *
     */
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time in milliseconds after which tooltip will show when
     * mouse cursor is hovered over a cell.
     *
     */
-  var showDelay: js.UndefOr[Double] = js.native
+  var showDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the tooltip's style
@@ -65,27 +64,27 @@ trait IgGridTooltips
     * "tooltip" The tooltip will be positioned according to the mouse cursor. Will render the tooltip content as plain text.
     * "popover" The tooltip will be positioned according to the target element with an arrow pointing the element. This style is more suitable for touch-supported environments. Will render the tooltip content as HTML.
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after a tooltip is hidden
     */
-  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.native
+  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.undefined
   
   /**
     * Event fired when the mouse has left an element and the tooltip is about to hide
     */
-  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.native
+  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.undefined
   
   /**
     * Event fired when the mouse has hovered on an element long enough to display a tooltip
     */
-  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.native
+  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.undefined
   
   /**
     * Event fired after a tooltip is shown
     */
-  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.native
+  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.undefined
   
   /**
     * Determines the tooltip visibility option
@@ -96,7 +95,7 @@ trait IgGridTooltips
     * "never" tooltips do not show automatically
     * "overflow" tooltips show only when the underlying data overflows its container
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object IgGridTooltips {
   

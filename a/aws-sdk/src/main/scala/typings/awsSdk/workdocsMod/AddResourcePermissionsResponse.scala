@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddResourcePermissionsResponse extends StObject {
   
   /**
     * The share results.
     */
-  var ShareResults: js.UndefOr[ShareResultsList] = js.native
+  var ShareResults: js.UndefOr[ShareResultsList] = js.undefined
 }
 object AddResourcePermissionsResponse {
   

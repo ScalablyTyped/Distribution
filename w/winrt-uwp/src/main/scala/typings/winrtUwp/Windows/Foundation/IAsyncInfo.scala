@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Foundation
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports asynchronous actions and operations. IAsyncInfo is a base interface for IAsyncAction , IAsyncActionWithProgress<TProgress> , IAsyncOperation<TResult> and IAsyncOperationWithProgress<TResult,TProgress> , each of which support combinations of return type and progress for an asynchronous method. */
-@js.native
 trait IAsyncInfo extends StObject {
   
   /** Cancels the asynchronous operation. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** Closes the asynchronous operation. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets a string that describes an error condition of the asynchronous operation. */
-  var errorCode: WinRTError = js.native
+  var errorCode: WinRTError
   
   /** Gets the handle of the asynchronous operation. */
-  var id: Double = js.native
+  var id: Double
   
   /** Gets a value that indicates the status of the asynchronous operation. */
-  var status: AsyncStatus = js.native
+  var status: AsyncStatus
 }
 object IAsyncInfo {
   

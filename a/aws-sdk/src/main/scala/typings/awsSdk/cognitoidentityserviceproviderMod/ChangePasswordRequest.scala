@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangePasswordRequest extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * The old password.
     */
-  var PreviousPassword: PasswordType = js.native
+  var PreviousPassword: PasswordType
   
   /**
     * The new password.
     */
-  var ProposedPassword: PasswordType = js.native
+  var ProposedPassword: PasswordType
 }
 object ChangePasswordRequest {
   

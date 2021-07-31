@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterViewChecked extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AfterViewChecked extends StObject {
     * default change detector has completed one change-check cycle
     * for a component's view.
     */
-  def ngAfterViewChecked(): Unit = js.native
+  def ngAfterViewChecked(): Unit
 }
 object AfterViewChecked {
   

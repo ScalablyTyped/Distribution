@@ -7,7 +7,6 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Giraffe {
@@ -31,14 +30,13 @@ object Giraffe {
   
   type AppMap = StringDictionary[App]
   
-  @js.native
   trait AttachmentOptions extends StObject {
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var suppressRender: js.UndefOr[Boolean] = js.native
+    var suppressRender: js.UndefOr[Boolean] = js.undefined
   }
   object AttachmentOptions {
     
@@ -109,7 +107,7 @@ object Giraffe {
       
       var modelView: View[TModel] = js.native
       
-      var modelViewArgs: js.Array[_] = js.native
+      var modelViewArgs: js.Array[js.Any] = js.native
       
       var modelViewEl: js.Any = js.native
       
@@ -128,9 +126,9 @@ object Giraffe {
         * reasons.
         */
       def on(eventName: js.Any): this.type = js.native
-      def on(eventName: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
       def on(eventName: js.Any, callback: js.Any): this.type = js.native
       def on(eventName: js.Any, callback: js.Any, context: js.Any): this.type = js.native
+      def on(eventName: js.Any, callback: Unit, context: js.Any): this.type = js.native
     }
     
     @js.native
@@ -165,16 +163,15 @@ object Giraffe {
     }
   }
   
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var alwaysRender: js.UndefOr[Boolean] = js.native
+    var alwaysRender: js.UndefOr[Boolean] = js.undefined
     
-    var disposeOnDetach: js.UndefOr[Boolean] = js.native
+    var disposeOnDetach: js.UndefOr[Boolean] = js.undefined
     
-    var documentTitle: js.UndefOr[String] = js.native
+    var documentTitle: js.UndefOr[String] = js.undefined
     
-    var saveScrollPosition: js.UndefOr[Boolean] = js.native
+    var saveScrollPosition: js.UndefOr[Boolean] = js.undefined
   }
   object DefaultOptions {
     
@@ -213,28 +210,27 @@ object Giraffe {
     }
   }
   
-  @js.native
   trait GiraffeObject extends StObject {
     
-    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var app: App = js.native
+    var app: App
     
-    var appEvents: js.UndefOr[StringMap] = js.native
+    var appEvents: js.UndefOr[StringMap] = js.undefined
     
-    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeDispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var dataEvents: js.UndefOr[StringMap] = js.native
+    var dataEvents: js.UndefOr[StringMap] = js.undefined
     
-    var defaultOptions: js.UndefOr[DefaultOptions] = js.native
+    var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
     
-    var dispose: js.UndefOr[js.Function0[js.Any]] = js.native
+    var dispose: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var initialize: js.UndefOr[js.Function0[js.Any]] = js.native
+    var initialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object GiraffeObject {
     

@@ -6,7 +6,6 @@ import typings.jss.mod.JssStyle
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,7 +20,11 @@ object mod extends Shortcut {
   
   type CreateCss = js.Function1[/* jss */ js.UndefOr[Jss], Css]
   
-  type Css = js.Function1[/* repeated */ StyleArg, String]
+  @js.native
+  trait Css extends StObject {
+    
+    def apply(args: StyleArg*): String = js.native
+  }
   
   type StyleArg = JssStyle | js.Array[JssStyle]
   

@@ -2,14 +2,12 @@ package typings.microsoftAjax.Sys.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates an object that contains a set of integer coordinates that represent a position. The getLocation method of the HTMLElement class returns a Point object.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb383992(v=vs.100).aspx}        *
   */
-@js.native
 trait Point extends StObject {
   
   //#endregion
@@ -18,13 +16,13 @@ trait Point extends StObject {
     * Gets the x-coordinate of a Sys.UI.Point object in pixels. This property is read-only.
     * @return A number that represents the x-coordinate of the Point object in pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Gets the y-coordinate of a Sys.UI.Point object in pixels. This property is read-only.
     * @return A number that represents the y-coordinate of the Point object in pixels.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Point {
   

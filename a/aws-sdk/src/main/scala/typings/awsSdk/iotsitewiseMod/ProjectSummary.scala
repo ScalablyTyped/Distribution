@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSummary extends StObject {
   
   /**
     * The date the project was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The project's description.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the project.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The date the project was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the project.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object ProjectSummary {
   

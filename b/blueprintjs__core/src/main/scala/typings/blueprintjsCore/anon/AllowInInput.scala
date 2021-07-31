@@ -2,21 +2,19 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowInInput extends StObject {
   
-  var allowInInput: Boolean = js.native
+  var allowInInput: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var global: Boolean = js.native
+  var global: Boolean
   
-  var preventDefault: Boolean = js.native
+  var preventDefault: Boolean
   
-  var stopPropagation: Boolean = js.native
+  var stopPropagation: Boolean
 }
 object AllowInInput {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerSourceSecurityGroup extends StObject {
   
   /**
     * The name of the security group.
     */
-  var GroupName: js.UndefOr[NonEmptyString] = js.native
+  var GroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The owner of the security group.
     */
-  var OwnerAlias: js.UndefOr[NonEmptyString] = js.native
+  var OwnerAlias: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElbLoadBalancerSourceSecurityGroup {
   

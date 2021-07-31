@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAcceleratorResponse extends StObject {
   
   /**
     * The accelerator that is created by specifying a listener and the supported IP address types.
     */
-  var Accelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.Accelerator] = js.native
+  var Accelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.Accelerator] = js.undefined
 }
 object CreateAcceleratorResponse {
   

@@ -3,20 +3,18 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISignatureDef extends StObject {
   
   /** SignatureDef inputs */
-  var inputs: js.UndefOr[StringDictionary[ITensorInfo] | Null] = js.native
+  var inputs: js.UndefOr[StringDictionary[ITensorInfo] | Null] = js.undefined
   
   /** SignatureDef methodName */
-  var methodName: js.UndefOr[String | Null] = js.native
+  var methodName: js.UndefOr[String | Null] = js.undefined
   
   /** SignatureDef outputs */
-  var outputs: js.UndefOr[StringDictionary[ITensorInfo] | Null] = js.native
+  var outputs: js.UndefOr[StringDictionary[ITensorInfo] | Null] = js.undefined
 }
 object ISignatureDef {
   

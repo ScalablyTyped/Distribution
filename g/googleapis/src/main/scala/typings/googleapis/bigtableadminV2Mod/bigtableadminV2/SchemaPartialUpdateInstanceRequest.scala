@@ -2,25 +2,23 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for BigtableInstanceAdmin.PartialUpdateInstance.
   */
-@js.native
 trait SchemaPartialUpdateInstanceRequest extends StObject {
   
   /**
     * The Instance which will (partially) replace the current value.
     */
-  var instance: js.UndefOr[SchemaInstance] = js.native
+  var instance: js.UndefOr[SchemaInstance] = js.undefined
   
   /**
     * The subset of Instance fields which should be replaced. Must be
     * explicitly set.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaPartialUpdateInstanceRequest {
   

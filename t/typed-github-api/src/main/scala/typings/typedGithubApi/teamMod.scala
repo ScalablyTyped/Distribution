@@ -4,31 +4,29 @@ import typings.typedGithubApi.typedGithubApiStrings.admin
 import typings.typedGithubApi.typedGithubApiStrings.closed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamMod {
   
-  @js.native
   trait Team extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var members_url: String = js.native
+    var members_url: String
     
-    var name: String = js.native
+    var name: String
     
-    var permission: admin = js.native
+    var permission: admin
     
-    var privacy: closed = js.native
+    var privacy: closed
     
-    var repositories_url: String = js.native
+    var repositories_url: String
     
-    var slug: String = js.native
+    var slug: String
     
-    var url: String = js.native
+    var url: String
   }
   object Team {
     
@@ -38,13 +36,11 @@ object teamMod {
       id: Double,
       members_url: String,
       name: String,
-      permission: admin,
-      privacy: closed,
       repositories_url: String,
       slug: String,
       url: String
     ): Team = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], repositories_url = repositories_url.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = "admin", privacy = "closed", repositories_url = repositories_url.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Team]
     }
     

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSpreadsheetCellCancelEditEventArgs")
 @js.native
 class ASPxClientSpreadsheetCellCancelEditEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSpreadsheetCellCancelEditEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSpreadsheetCellCancelEditEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSpreadsheetCellCancelEditEventArgs class with specified settings.
     * @param columnIndex The active cell's column index.
@@ -29,4 +29,40 @@ class ASPxClientSpreadsheetCellCancelEditEventArgs protected ()
     displayText: String,
     sheetName: String
   ) = this()
+  
+  /**
+    * Gets the active cell's column index.
+    */
+  /* CompleteClass */
+  var columnIndex: Double = js.native
+  
+  /**
+    * Specifies the text displayed in the processed cell.
+    */
+  /* CompleteClass */
+  var displayText: String = js.native
+  
+  /**
+    * Gets the active cell's formula.
+    */
+  /* CompleteClass */
+  var formula: String = js.native
+  
+  /**
+    * Gets the active cell's row index.
+    */
+  /* CompleteClass */
+  var rowIndex: Double = js.native
+  
+  /**
+    * Gets the current worksheet's name.
+    */
+  /* CompleteClass */
+  var sheetName: String = js.native
+  
+  /**
+    * Gets the active cell's current value.
+    */
+  /* CompleteClass */
+  var value: String = js.native
 }

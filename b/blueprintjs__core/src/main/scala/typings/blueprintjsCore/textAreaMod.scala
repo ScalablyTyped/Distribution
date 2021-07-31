@@ -2,12 +2,30 @@ package typings.blueprintjsCore
 
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IIntentProps
+import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.refsMod.IRef
-import typings.react.mod.TextareaHTMLAttributes
+import typings.react.mod.AriaAttributes
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ChangeEventHandler
+import typings.react.mod.DOMAttributes
+import typings.react.reactStrings.decimal
+import typings.react.reactStrings.email
+import typings.react.reactStrings.inherit
+import typings.react.reactStrings.no
+import typings.react.reactStrings.none
+import typings.react.reactStrings.numeric
+import typings.react.reactStrings.off
+import typings.react.reactStrings.on
+import typings.react.reactStrings.search
+import typings.react.reactStrings.tel
+import typings.react.reactStrings.text
+import typings.react.reactStrings.url
+import typings.react.reactStrings.yes
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAreaMod {
@@ -46,35 +64,171 @@ object textAreaMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.blueprintjsCore.propsMod.IProps because var conflicts: className. Inlined  */ @js.native
-  trait ITextAreaProps
-    extends TextareaHTMLAttributes[HTMLTextAreaElement]
-       with IIntentProps {
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.TextareaHTMLAttributes because var conflicts: className. Inlined required, cols, wrap, maxLength, form, value, minLength, readOnly, name, disabled, dirName, rows, autoFocus, onChange_TextareaHTMLAttributes, autoComplete */ trait ITextAreaProps
+    extends StObject
+       with IIntentProps
+       with IProps
+       with AriaAttributes
+       with DOMAttributes[HTMLTextAreaElement] {
+    
+    // RDFa Attributes
+    var about: js.UndefOr[String] = js.undefined
+    
+    // Standard HTML Attributes
+    var accessKey: js.UndefOr[String] = js.undefined
+    
+    // Non-standard Attributes
+    var autoCapitalize: js.UndefOr[String] = js.undefined
+    
+    var autoComplete: js.UndefOr[String] = js.undefined
+    
+    var autoCorrect: js.UndefOr[String] = js.undefined
+    
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSave: js.UndefOr[String] = js.undefined
+    
+    var color: js.UndefOr[String] = js.undefined
+    
+    var cols: js.UndefOr[Double] = js.undefined
+    
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    
+    var contextMenu: js.UndefOr[String] = js.undefined
+    
+    var datatype: js.UndefOr[String] = js.undefined
+    
+    // React-specific Attributes
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
+    
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
+    
+    var dir: js.UndefOr[String] = js.undefined
+    
+    var dirName: js.UndefOr[String] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Whether the text area should take up the full width of its container.
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
+    
+    var form: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the text area should automatically grow vertically to accomodate content.
       */
-    var growVertically: js.UndefOr[Boolean] = js.native
+    var growVertically: js.UndefOr[Boolean] = js.undefined
+    
+    var hidden: js.UndefOr[Boolean] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
+    
+    var inlist: js.UndefOr[js.Any] = js.undefined
+    
+    // Living Standard
+    /**
+      * Hints at the type of data that might be entered by the user while editing the element or its contents
+      * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+      */
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
     /**
       * Ref handler that receives HTML `<textarea>` element backing this component.
       */
-    var inputRef: js.UndefOr[IRef[HTMLTextAreaElement]] = js.native
+    var inputRef: js.UndefOr[IRef[HTMLTextAreaElement]] = js.undefined
+    
+    /**
+      * Specify that a standard HTML element should behave like a defined custom built-in element
+      * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+      */
+    var is: js.UndefOr[String] = js.undefined
+    
+    var itemID: js.UndefOr[String] = js.undefined
+    
+    var itemProp: js.UndefOr[String] = js.undefined
+    
+    var itemRef: js.UndefOr[String] = js.undefined
+    
+    var itemScope: js.UndefOr[Boolean] = js.undefined
+    
+    var itemType: js.UndefOr[String] = js.undefined
+    
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the text area should appear with large styling.
       */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
+    
+    var maxLength: js.UndefOr[Double] = js.undefined
+    
+    var minLength: js.UndefOr[Double] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    @JSName("onChange")
+    var onChange_TextareaHTMLAttributes: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] = js.undefined
+    
+    var placeholder: js.UndefOr[String] = js.undefined
+    
+    var prefix: js.UndefOr[String] = js.undefined
+    
+    var property: js.UndefOr[String] = js.undefined
+    
+    // Unknown
+    var radioGroup: js.UndefOr[String] = js.undefined
+    
+    var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var required: js.UndefOr[Boolean] = js.undefined
+    
+    var resource: js.UndefOr[String] = js.undefined
+    
+    var results: js.UndefOr[Double] = js.undefined
+    
+    // <command>, <menuitem>
+    // WAI-ARIA
+    var role: js.UndefOr[String] = js.undefined
+    
+    var rows: js.UndefOr[Double] = js.undefined
+    
+    var security: js.UndefOr[String] = js.undefined
+    
+    var slot: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the text area should appear with small styling.
       */
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
+    
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
+    
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
+    
+    var tabIndex: js.UndefOr[Double] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+    
+    var translate: js.UndefOr[yes | no] = js.undefined
+    
+    var typeof: js.UndefOr[String] = js.undefined
+    
+    var unselectable: js.UndefOr[on | off] = js.undefined
+    
+    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+    
+    var vocab: js.UndefOr[String] = js.undefined
+    
+    var wrap: js.UndefOr[String] = js.undefined
   }
   object ITextAreaProps {
     
@@ -88,16 +242,157 @@ object textAreaMod {
     implicit class ITextAreaPropsMutableBuilder[Self <: ITextAreaProps] (val x: Self) extends AnyVal {
       
       @scala.inline
+      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      
+      @scala.inline
+      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      
+      @scala.inline
+      def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+      
+      @scala.inline
+      def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      
+      @scala.inline
+      def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+      
+      @scala.inline
+      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      @scala.inline
+      def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      
+      @scala.inline
+      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      @scala.inline
+      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      
+      @scala.inline
+      def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      @scala.inline
+      def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      @scala.inline
+      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      
+      @scala.inline
+      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      
+      @scala.inline
+      def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      @scala.inline
+      def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      
+      @scala.inline
+      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDirName(value: String): Self = StObject.set(x, "dirName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDirNameUndefined: Self = StObject.set(x, "dirName", js.undefined)
+      
+      @scala.inline
+      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      
+      @scala.inline
+      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      @scala.inline
+      def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      
+      @scala.inline
       def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       @scala.inline
+      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      
+      @scala.inline
       def setGrowVertically(value: Boolean): Self = StObject.set(x, "growVertically", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGrowVerticallyUndefined: Self = StObject.set(x, "growVertically", js.undefined)
+      
+      @scala.inline
+      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      
+      @scala.inline
+      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      @scala.inline
+      def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      
+      @scala.inline
+      def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
       @scala.inline
       def setInputRef(value: IRef[HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
@@ -109,23 +404,235 @@ object textAreaMod {
       def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
       @scala.inline
+      def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      
+      @scala.inline
+      def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      
+      @scala.inline
+      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      
+      @scala.inline
+      def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
+      
+      @scala.inline
+      def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
+      
+      @scala.inline
+      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      
+      @scala.inline
+      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      @scala.inline
       def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
       @scala.inline
+      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      
+      @scala.inline
+      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      @scala.inline
+      def setOnChange(value: ChangeEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      @scala.inline
+      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      @scala.inline
+      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
+      @scala.inline
+      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      @scala.inline
+      def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      
+      @scala.inline
+      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      
+      @scala.inline
+      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
+      @scala.inline
+      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      
+      @scala.inline
+      def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      @scala.inline
+      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      @scala.inline
+      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      
+      @scala.inline
+      def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      @scala.inline
+      def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      
+      @scala.inline
       def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      
+      @scala.inline
+      def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+      
+      @scala.inline
+      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      @scala.inline
+      def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
+      
+      @scala.inline
+      def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
+      
+      @scala.inline
+      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      @scala.inline
+      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      @scala.inline
+      def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      
+      @scala.inline
+      def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      
+      @scala.inline
+      def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      
+      @scala.inline
+      def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      
+      @scala.inline
+      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      
+      @scala.inline
+      def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      
+      @scala.inline
+      def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
-  @js.native
   trait ITextAreaState extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
   }
   object ITextAreaState {
     

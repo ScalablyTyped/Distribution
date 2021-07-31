@@ -2,13 +2,11 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTransform extends StObject {
   
-  var textTransform: String = js.native
+  var textTransform: String
 }
 object TextTransform {
   

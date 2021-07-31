@@ -2,19 +2,17 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
-  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.native
+  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.undefined
   
-  var IsCanceled: js.UndefOr[typings.awsSdk.importexportMod.IsCanceled] = js.native
+  var IsCanceled: js.UndefOr[typings.awsSdk.importexportMod.IsCanceled] = js.undefined
   
-  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.undefined
   
-  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.native
+  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.undefined
 }
 object Job {
   

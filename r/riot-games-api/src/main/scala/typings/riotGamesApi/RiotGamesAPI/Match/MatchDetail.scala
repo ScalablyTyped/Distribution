@@ -2,39 +2,37 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchDetail extends StObject {
   
-  var mapId: Double = js.native
+  var mapId: Double
   
-  var matchCreation: Double = js.native
+  var matchCreation: Double
   
-  var matchId: Double = js.native
+  var matchId: Double
   
-  var matchMode: String = js.native
+  var matchMode: String
   
-  var matchType: String = js.native
+  var matchType: String
   
-  var matchVersion: String = js.native
+  var matchVersion: String
   
-  var participantIdentities: js.Array[ParticipantIdentity] = js.native
+  var participantIdentities: js.Array[ParticipantIdentity]
   
-  var participants: js.Array[Participant] = js.native
+  var participants: js.Array[Participant]
   
-  var plateformId: String = js.native
+  var plateformId: String
   
-  var queueType: String = js.native
+  var queueType: String
   
-  var region: String = js.native
+  var region: String
   
-  var season: String = js.native
+  var season: String
   
-  var teams: js.Array[Team] = js.native
+  var teams: js.Array[Team]
   
-  var timeline: Timeline = js.native
+  var timeline: Timeline
 }
 object MatchDetail {
   

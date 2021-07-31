@@ -2,36 +2,34 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationSummary extends StObject {
   
   /**
     * The alias associated with the organization.
     */
-  var Alias: js.UndefOr[OrganizationName] = js.native
+  var Alias: js.UndefOr[OrganizationName] = js.undefined
   
   /**
     * The default email domain associated with the organization.
     */
-  var DefaultMailDomain: js.UndefOr[DomainName] = js.native
+  var DefaultMailDomain: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The error message associated with the organization. It is only present if unexpected behavior has occurred with regards to the organization. It provides insight or solutions regarding unexpected behavior.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier associated with the organization.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.native
+  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.undefined
   
   /**
     * The state associated with the organization.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
 }
 object OrganizationSummary {
   

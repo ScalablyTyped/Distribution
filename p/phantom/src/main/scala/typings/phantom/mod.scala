@@ -100,40 +100,38 @@ import typings.phantom.phantomStrings.zoomFactor
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("phantom", "create")
+  @JSImport("phantom", JSImport.Namespace)
   @js.native
-  def create(): js.Promise[PhantomJS] = js.native
-  @JSImport("phantom", "create")
-  @js.native
-  def create(args: js.UndefOr[scala.Nothing], config: LogLevel): js.Promise[PhantomJS] = js.native
-  @JSImport("phantom", "create")
-  @js.native
-  def create(args: js.Array[String]): js.Promise[PhantomJS] = js.native
-  @JSImport("phantom", "create")
-  @js.native
-  def create(args: js.Array[String], config: LogLevel): js.Promise[PhantomJS] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(): js.Promise[PhantomJS] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[PhantomJS]]
+  @scala.inline
+  def create(args: js.Array[String]): js.Promise[PhantomJS] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PhantomJS]]
+  @scala.inline
+  def create(args: js.Array[String], config: LogLevel): js.Promise[PhantomJS] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PhantomJS]]
+  @scala.inline
+  def create(args: Unit, config: LogLevel): js.Promise[PhantomJS] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PhantomJS]]
+  
   trait ICookie extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[String] = js.native
+    var expires: js.UndefOr[String] = js.undefined
     
-    var httponly: js.UndefOr[Boolean] = js.native
+    var httponly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ICookie {
     
@@ -181,16 +179,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IOpenWebPageSettings extends StObject {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[utf8 | String] = js.native
+    var encoding: js.UndefOr[utf8 | String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var operation: js.UndefOr[GET | POST | HEAD | DELETE | PUT | String] = js.native
+    var operation: js.UndefOr[GET | POST | HEAD | DELETE | PUT | String] = js.undefined
   }
   object IOpenWebPageSettings {
     
@@ -229,22 +226,21 @@ object mod {
     }
   }
   
-  @js.native
   trait IPaperSizeOptions extends StObject {
     
-    var footer: js.UndefOr[Contents] = js.native
+    var footer: js.UndefOr[Contents] = js.undefined
     
-    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.native
+    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
     
-    var header: js.UndefOr[Contents] = js.native
+    var header: js.UndefOr[Contents] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[String | Bottom] = js.native
+    var margin: js.UndefOr[String | Bottom] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object IPaperSizeOptions {
     
@@ -301,27 +297,21 @@ object mod {
     }
   }
   
-  @js.native
   trait IPhantomCallback extends StObject {
     
-    var method: callback = js.native
+    var method: callback
     
-    var parent: typings.phantom.phantomStrings.phantom = js.native
+    var parent: typings.phantom.phantomStrings.phantom
     
-    var target: js.Function = js.native
+    var target: js.Function
     
-    var transform: `true` = js.native
+    var transform: `true`
   }
   object IPhantomCallback {
     
     @scala.inline
-    def apply(
-      method: callback,
-      parent: typings.phantom.phantomStrings.phantom,
-      target: js.Function,
-      transform: `true`
-    ): IPhantomCallback = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+    def apply(target: js.Function): IPhantomCallback = {
+      val __obj = js.Dynamic.literal(method = "callback", parent = "phantom", target = target.asInstanceOf[js.Any], transform = true)
       __obj.asInstanceOf[IPhantomCallback]
     }
     
@@ -342,18 +332,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IRequestData extends StObject {
     
-    var headers: js.Array[Name] = js.native
+    var headers: js.Array[Name]
     
-    var id: Double = js.native
+    var id: Double
     
-    var method: String = js.native
+    var method: String
     
-    var time: Date = js.native
+    var time: Date
     
-    var url: String = js.native
+    var url: String
   }
   object IRequestData {
     
@@ -386,28 +375,27 @@ object mod {
     }
   }
   
-  @js.native
   trait IResponse extends StObject {
     
-    var bodySize: Double = js.native
+    var bodySize: Double
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var headers: js.Array[Name] = js.native
+    var headers: js.Array[Name]
     
-    var id: String = js.native
+    var id: String
     
-    var redirectURL: String = js.native
+    var redirectURL: String
     
-    var stage: start | end = js.native
+    var stage: start | end
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
     
-    var time: Date = js.native
+    var time: Date
     
-    var url: String = js.native
+    var url: String
   }
   object IResponse {
     
@@ -718,44 +706,17 @@ object mod {
     def renderBase64(`type`: String): js.Promise[String] = js.native
     
     def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
-    def sendEvent(
-      keyboardEventType: String,
-      key: String,
-      null1: js.UndefOr[scala.Nothing],
-      null2: js.UndefOr[scala.Nothing],
-      modifier: Double
-    ): js.Promise[Unit] = js.native
-    def sendEvent(keyboardEventType: String, key: String, null1: js.UndefOr[scala.Nothing], null2: Unit): js.Promise[Unit] = js.native
-    def sendEvent(
-      keyboardEventType: String,
-      key: String,
-      null1: js.UndefOr[scala.Nothing],
-      null2: Unit,
-      modifier: Double
-    ): js.Promise[Unit] = js.native
     def sendEvent(keyboardEventType: String, key: String, null1: Unit): js.Promise[Unit] = js.native
-    def sendEvent(
-      keyboardEventType: String,
-      key: String,
-      null1: Unit,
-      null2: js.UndefOr[scala.Nothing],
-      modifier: Double
-    ): js.Promise[Unit] = js.native
     def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Unit): js.Promise[Unit] = js.native
     def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Unit, modifier: Double): js.Promise[Unit] = js.native
     def sendEvent(mouseEventType: String): js.Promise[Unit] = js.native
-    def sendEvent(
-      mouseEventType: String,
-      mouseX: js.UndefOr[scala.Nothing],
-      mouseY: js.UndefOr[scala.Nothing],
-      button: String
-    ): js.Promise[Unit] = js.native
-    def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double): js.Promise[Unit] = js.native
-    def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double, button: String): js.Promise[Unit] = js.native
     def sendEvent(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
-    def sendEvent(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): js.Promise[Unit] = js.native
     def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
     def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
+    def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Unit, button: String): js.Promise[Unit] = js.native
+    def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Double): js.Promise[Unit] = js.native
+    def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Double, button: String): js.Promise[Unit] = js.native
+    def sendEvent(mouseEventType: String, mouseX: Unit, mouseY: Unit, button: String): js.Promise[Unit] = js.native
     
     def setContent(html: String, url: String): js.Promise[String] = js.native
     

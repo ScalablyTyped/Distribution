@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,25 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A {@link CommandInfoChangeEvent} object is sent to XCommandInfoChangeListeners.
   */
-@js.native
-trait CommandInfoChangeEvent extends EventObject {
+trait CommandInfoChangeEvent
+  extends StObject
+     with EventObject {
   
   /**
     * contains the implementation handle for the command.
     *
     * May be `-1` if the implementation has no handle.
     */
-  var Handle: Double = js.native
+  var Handle: Double
   
   /** contains the name of the command. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * contains the reason for the event.
     *
     * The value can be one of the {@link CommandInfoChange} constants.
     */
-  var Reason: Double = js.native
+  var Reason: Double
 }
 object CommandInfoChangeEvent {
   

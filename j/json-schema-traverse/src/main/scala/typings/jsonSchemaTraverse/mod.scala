@@ -4,20 +4,20 @@ import typings.jsonSchemaTraverse.anon.Post
 import typings.jsonSchemaTraverse.jsonSchemaTraverseBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(schema: js.Object, cb: TraverseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: js.Object, opts: TraverseOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(schema: js.Object, opts: TraverseOptions, cb: TraverseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("json-schema-traverse", JSImport.Namespace)
   @js.native
-  def apply(schema: js.Object, cb: TraverseCallback): Unit = js.native
-  @JSImport("json-schema-traverse", JSImport.Namespace)
-  @js.native
-  def apply(schema: js.Object, opts: TraverseOptions): Unit = js.native
-  @JSImport("json-schema-traverse", JSImport.Namespace)
-  @js.native
-  def apply(schema: js.Object, opts: TraverseOptions, cb: TraverseCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   object arrayKeywords {
     
@@ -74,6 +74,14 @@ object mod {
     @scala.inline
     def contains_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contains")(x.asInstanceOf[js.Any])
     
+    @JSImport("json-schema-traverse", "keywords.else")
+    @js.native
+    val `else`: `true` = js.native
+    
+    @JSImport("json-schema-traverse", "keywords.if")
+    @js.native
+    val `if`: `true` = js.native
+    
     @JSImport("json-schema-traverse", "keywords.items")
     @js.native
     def items: `true` = js.native
@@ -91,14 +99,6 @@ object mod {
     def propertyNames: `true` = js.native
     @scala.inline
     def propertyNames_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyNames")(x.asInstanceOf[js.Any])
-    
-    @JSImport("json-schema-traverse", "keywords.else")
-    @js.native
-    val `else`: `true` = js.native
-    
-    @JSImport("json-schema-traverse", "keywords.if")
-    @js.native
-    val `if`: `true` = js.native
     
     @JSImport("json-schema-traverse", "keywords.then")
     @js.native
@@ -157,9 +157,7 @@ object mod {
     
     @JSImport("json-schema-traverse", "skipKeywords.enum")
     @js.native
-    def enum: `true` = js.native
-    @scala.inline
-    def enum_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enum")(x.asInstanceOf[js.Any])
+    val `enum`: `true` = js.native
     
     @JSImport("json-schema-traverse", "skipKeywords.exclusiveMaximum")
     @js.native
@@ -265,11 +263,10 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait TraverseOptions extends StObject {
     
     /** Without option allKeys: true callback will be called only with root schema. */
-    var allKeys: js.UndefOr[Boolean] = js.native
+    var allKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback function `cb` is called for each schema object (not including draft-06 boolean schemas),
@@ -278,7 +275,7 @@ object mod {
       * will be called before traversing child elements, and `post` will be called
       * after all child elementshave been traversed.
       */
-    var cb: js.UndefOr[TraverseCallback] = js.native
+    var cb: js.UndefOr[TraverseCallback] = js.undefined
   }
   object TraverseOptions {
     

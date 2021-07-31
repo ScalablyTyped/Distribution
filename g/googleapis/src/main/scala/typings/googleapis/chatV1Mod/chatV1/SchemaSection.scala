@@ -2,7 +2,6 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * narrow fixed width, so there is currently no need for layout properties
   * (e.g. float).
   */
-@js.native
 trait SchemaSection extends StObject {
   
   /**
     * The header of the section, text formatted supported.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * A section must contain at least 1 widget.
     */
-  var widgets: js.UndefOr[js.Array[SchemaWidgetMarkup]] = js.native
+  var widgets: js.UndefOr[js.Array[SchemaWidgetMarkup]] = js.undefined
 }
 object SchemaSection {
   

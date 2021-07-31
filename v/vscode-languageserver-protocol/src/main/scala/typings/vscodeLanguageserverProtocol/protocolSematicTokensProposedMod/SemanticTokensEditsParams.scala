@@ -5,23 +5,22 @@ import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensEditsParams
-  extends WorkDoneProgressParams
+  extends StObject
+     with WorkDoneProgressParams
      with PartialResultParams {
   
   /**
     * The previous result id.
     */
-  var previousResultId: String = js.native
+  var previousResultId: String
   
   /**
     * The text document.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object SemanticTokensEditsParams {
   

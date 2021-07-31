@@ -2,26 +2,26 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait X86Instruction extends Instruction {
+trait X86Instruction
+  extends StObject
+     with Instruction {
   
   /**
     * Array of objects describing each operand.
     */
-  var operands: js.Array[X86Operand] = js.native
+  var operands: js.Array[X86Operand]
   
   /**
     * Registers implicitly read by this instruction.
     */
-  var regsRead: js.Array[X86Register] = js.native
+  var regsRead: js.Array[X86Register]
   
   /**
     * Registers implicitly written to by this instruction.
     */
-  var regsWritten: js.Array[X86Register] = js.native
+  var regsWritten: js.Array[X86Register]
 }
 object X86Instruction {
   

@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.ej.PdfViewer.AnnotationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PdfViewer extends Widget_ {
+trait PdfViewer
+  extends StObject
+     with Widget_ {
   
   /** Aborts the download operation.
     * @returns {void}
@@ -216,15 +217,21 @@ object PdfViewer {
     
     ///Specifies the highlight annotation.
     @js.native
-    sealed trait Highlight extends AnnotationType
+    sealed trait Highlight
+      extends StObject
+         with AnnotationType
     
     ///Specifies the strikethrough annotation.
     @js.native
-    sealed trait Strikethrough extends AnnotationType
+    sealed trait Strikethrough
+      extends StObject
+         with AnnotationType
     
     ///Specifies the underline annotation.
     @js.native
-    sealed trait Underline extends AnnotationType
+    sealed trait Underline
+      extends StObject
+         with AnnotationType
   }
   
   @js.native
@@ -235,11 +242,15 @@ object PdfViewer {
     
     ///Retrieves complete details to render all the pages in a single request.
     @js.native
-    sealed trait Complete extends BufferingMode
+    sealed trait Complete
+      extends StObject
+         with BufferingMode
     
     ///Retrieves details to render first two pages in a request and rest of the pages in other request.
     @js.native
-    sealed trait Default extends BufferingMode
+    sealed trait Default
+      extends StObject
+         with BufferingMode
   }
   
   @js.native
@@ -250,11 +261,15 @@ object PdfViewer {
     
     ///To set the panning mode to the PDF viewer control.
     @js.native
-    sealed trait Pan extends InteractionMode
+    sealed trait Pan
+      extends StObject
+         with InteractionMode
     
     ///To set the text selection mode to the PDF viewer control.
     @js.native
-    sealed trait TextSelection extends InteractionMode
+    sealed trait TextSelection
+      extends StObject
+         with InteractionMode
   }
   
   @js.native
@@ -265,15 +280,21 @@ object PdfViewer {
     
     ///Opens the hyperlink in the same tab of the browser.
     @js.native
-    sealed trait Default extends LinkTarget
+    sealed trait Default
+      extends StObject
+         with LinkTarget
     
     ///Opens the hyperlink in a new tab of the browser.
     @js.native
-    sealed trait NewTab extends LinkTarget
+    sealed trait NewTab
+      extends StObject
+         with LinkTarget
     
     ///Opens the hyperlink in a new window of the browser.
     @js.native
-    sealed trait NewWindow extends LinkTarget
+    sealed trait NewWindow
+      extends StObject
+         with LinkTarget
   }
   
   @js.native
@@ -284,11 +305,15 @@ object PdfViewer {
     
     ///Denotes that the service is located in the local project
     @js.native
-    sealed trait Local extends PdfService
+    sealed trait Local
+      extends StObject
+         with PdfService
     
     ///Denotes that the service is hosted in the remote server
     @js.native
-    sealed trait Remote extends PdfService
+    sealed trait Remote
+      extends StObject
+         with PdfService
   }
   
   @js.native
@@ -299,55 +324,72 @@ object PdfViewer {
     
     ///Shows all the toolbar items.
     @js.native
-    sealed trait All extends ToolbarItems
+    sealed trait All
+      extends StObject
+         with ToolbarItems
     
     ///Shows only download tool in the toolbar.
     @js.native
-    sealed trait DownloadTool extends ToolbarItems
+    sealed trait DownloadTool
+      extends StObject
+         with ToolbarItems
     
     ///Shows only magnification tools in the toolbar.
     @js.native
-    sealed trait MagnificationTools extends ToolbarItems
+    sealed trait MagnificationTools
+      extends StObject
+         with ToolbarItems
     
     ///Shows only page navigation tools in the toolbar.
     @js.native
-    sealed trait PageNavigationTools extends ToolbarItems
+    sealed trait PageNavigationTools
+      extends StObject
+         with ToolbarItems
     
     ///Shows only print tool in the toolbar.
     @js.native
-    sealed trait PrintTools extends ToolbarItems
+    sealed trait PrintTools
+      extends StObject
+         with ToolbarItems
     
     ///Shows only selection tool in the toolbar.
     @js.native
-    sealed trait SelectionTool extends ToolbarItems
+    sealed trait SelectionTool
+      extends StObject
+         with ToolbarItems
     
     ///Shows only signature tool in the toolbar.
     @js.native
-    sealed trait SignatureTool extends ToolbarItems
+    sealed trait SignatureTool
+      extends StObject
+         with ToolbarItems
     
     ///Shows only text markup annotation tools in the toolbar.
     @js.native
-    sealed trait TextMarkupAnnotationTools extends ToolbarItems
+    sealed trait TextMarkupAnnotationTools
+      extends StObject
+         with ToolbarItems
     
     ///Shows only text search tool in the toolbar.
     @js.native
-    sealed trait TextSearchTool extends ToolbarItems
+    sealed trait TextSearchTool
+      extends StObject
+         with ToolbarItems
   }
   
-  @js.native
   trait AfterPrintEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AfterPrintEventArgs {
     
@@ -380,24 +422,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AjaxRequestFailureEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the exception details.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxRequestFailureEventArgs {
     
@@ -436,24 +477,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AjaxRequestSuccessEventArgs extends StObject {
     
     /** true, if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the response data on ajax success.
       */
-    var responseData: js.UndefOr[String] = js.native
+    var responseData: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxRequestSuccessEventArgs {
     
@@ -492,40 +532,39 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AnnotationAddEventArgs extends StObject {
     
     /** Returns the bounds of the annotation added in the page of the PDF document.
       */
-    var annotationBound: js.UndefOr[js.Array[_]] = js.native
+    var annotationBound: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the id of the annotation added in the page of the PDF document.
       */
-    var annotationID: js.UndefOr[Double] = js.native
+    var annotationID: js.UndefOr[Double] = js.undefined
     
     /** Returns the settings of the annotation added to the PDF document.
       */
-    var annotationSettings: js.UndefOr[js.Any] = js.native
+    var annotationSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the type of the annotation added in the page of the PDF document.
       */
-    var annotationType: js.UndefOr[String] = js.native
+    var annotationType: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the annotation is added.
       */
-    var pageID: js.UndefOr[Double] = js.native
+    var pageID: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AnnotationAddEventArgs {
     
@@ -539,7 +578,7 @@ object PdfViewer {
     implicit class AnnotationAddEventArgsMutableBuilder[Self <: AnnotationAddEventArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnnotationBound(value: js.Array[_]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
+      def setAnnotationBound(value: js.Array[js.Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnotationBoundUndefined: Self = StObject.set(x, "annotationBound", js.undefined)
@@ -591,24 +630,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AnnotationContextMenu extends StObject {
     
     /** Enables/disables the delete menu in the annotation context menu.
       */
-    var isDeleteEnable: js.UndefOr[Boolean] = js.native
+    var isDeleteEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the annotation context menu.
       */
-    var isEnable: js.UndefOr[Boolean] = js.native
+    var isEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the popup menu in the annotation context menu.
       */
-    var isPopupEnable: js.UndefOr[Boolean] = js.native
+    var isPopupEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the properties menu in the annotation context menu.
       */
-    var isPropertiesEnable: js.UndefOr[Boolean] = js.native
+    var isPropertiesEnable: js.UndefOr[Boolean] = js.undefined
   }
   object AnnotationContextMenu {
     
@@ -647,40 +685,39 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AnnotationPropertiesChangeEventArgs extends StObject {
     
     /** Returns the id of the annotation added in the page of the PDF document.
       */
-    var annotationID: js.UndefOr[Double] = js.native
+    var annotationID: js.UndefOr[Double] = js.undefined
     
     /** Returns the type of the annotation added in the page of the PDF document.
       */
-    var annotationType: js.UndefOr[String] = js.native
+    var annotationType: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies that the color of the annotation is changed.
       */
-    var isColorChanged: js.UndefOr[Boolean] = js.native
+    var isColorChanged: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies that the opacity of the annotation is changed.
       */
-    var isOpacityChanged: js.UndefOr[Boolean] = js.native
+    var isOpacityChanged: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the annotation is added.
       */
-    var pageID: js.UndefOr[Double] = js.native
+    var pageID: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AnnotationPropertiesChangeEventArgs {
     
@@ -743,32 +780,31 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait AnnotationRemoveEventArgs extends StObject {
     
     /** Returns the id of the annotation removed from the page of the PDF document.
       */
-    var annotationID: js.UndefOr[Double] = js.native
+    var annotationID: js.UndefOr[Double] = js.undefined
     
     /** Returns the type of the annotation removed from the page of the PDF document.
       */
-    var annotationType: js.UndefOr[String] = js.native
+    var annotationType: js.UndefOr[String] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the annotation is removed.
       */
-    var pageID: js.UndefOr[Double] = js.native
+    var pageID: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AnnotationRemoveEventArgs {
     
@@ -819,20 +855,19 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait BeforePrintEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforePrintEventArgs {
     
@@ -865,24 +900,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait BufferEndEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the state of the buffering
       */
-    var isBuffering: js.UndefOr[Boolean] = js.native
+    var isBuffering: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BufferEndEventArgs {
     
@@ -921,24 +955,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait BufferStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the state of the buffering
       */
-    var isBuffering: js.UndefOr[Boolean] = js.native
+    var isBuffering: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BufferStartEventArgs {
     
@@ -977,20 +1010,19 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -1023,24 +1055,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait DocumentLoadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF document name displaying in the PDF viewer.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DocumentLoadEventArgs {
     
@@ -1079,20 +1110,19 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait DocumentUnloadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DocumentUnloadEventArgs {
     
@@ -1125,28 +1155,27 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait DownloadEndEventArgs extends StObject {
     
     /** true, if the event should be canceled; otherwise, false
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the file being displayed in the PDF viewer.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the status about the download is completed or aborted.
       */
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DownloadEndEventArgs {
     
@@ -1191,28 +1220,27 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait DownloadStartEventArgs extends StObject {
     
     /** true, if the event should be canceled; otherwise, false
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the file being displayed in the PDF viewer.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the status about the download is started.
       */
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DownloadStartEventArgs {
     
@@ -1257,32 +1285,31 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait HighlightSettings extends StObject {
     
     /** Gets/sets the author of the highlight annotation.
       */
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the color of the highlight  annotation.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the locked property of the highlight annotation.
       */
-    var isLocked: js.UndefOr[Boolean] = js.native
+    var isLocked: js.UndefOr[Boolean] = js.undefined
     
     /** Gets/sets the modified Date of the highlight annotation.
       */
-    var modifiedDate: js.UndefOr[String] = js.native
+    var modifiedDate: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the opacity of the highlight annotation.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Gets/sets the subject of the highlight annotation.
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object HighlightSettings {
     
@@ -1333,24 +1360,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait HyperlinkClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the clicked hyperlink
       */
-    var hyperlink: js.UndefOr[String] = js.native
+    var hyperlink: js.UndefOr[String] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HyperlinkClickEventArgs {
     
@@ -1389,216 +1415,215 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers after the printing is completed.
       */
-    var afterPrint: js.UndefOr[js.Function1[/* e */ AfterPrintEventArgs, Unit]] = js.native
+    var afterPrint: js.UndefOr[js.Function1[/* e */ AfterPrintEventArgs, Unit]] = js.undefined
     
     /** Triggers when the AJAX request is failed.
       */
-    var ajaxRequestFailure: js.UndefOr[js.Function1[/* e */ AjaxRequestFailureEventArgs, Unit]] = js.native
+    var ajaxRequestFailure: js.UndefOr[js.Function1[/* e */ AjaxRequestFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when the ajax request is Success.
       */
-    var ajaxRequestSuccess: js.UndefOr[js.Function1[/* e */ AjaxRequestSuccessEventArgs, Unit]] = js.native
+    var ajaxRequestSuccess: js.UndefOr[js.Function1[/* e */ AjaxRequestSuccessEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the buffering of the PDF pages in the client side.
       */
-    var allowClientBuffering: js.UndefOr[Boolean] = js.native
+    var allowClientBuffering: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when an annotation is added over the page of the PDF document.
       */
-    var annotationAdd: js.UndefOr[js.Function1[/* e */ AnnotationAddEventArgs, Unit]] = js.native
+    var annotationAdd: js.UndefOr[js.Function1[/* e */ AnnotationAddEventArgs, Unit]] = js.undefined
     
     /** Enables/disables the annotation context menu.
       */
-    var annotationContextMenu: js.UndefOr[AnnotationContextMenu] = js.native
+    var annotationContextMenu: js.UndefOr[AnnotationContextMenu] = js.undefined
     
     /** Triggers when the property of the annotation is changed in the page of the PDF document.
       */
-    var annotationPropertiesChange: js.UndefOr[js.Function1[/* e */ AnnotationPropertiesChangeEventArgs, Unit]] = js.native
+    var annotationPropertiesChange: js.UndefOr[js.Function1[/* e */ AnnotationPropertiesChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when an annotation is removed from the page of the PDF document.
       */
-    var annotationRemove: js.UndefOr[js.Function1[/* e */ AnnotationRemoveEventArgs, Unit]] = js.native
+    var annotationRemove: js.UndefOr[js.Function1[/* e */ AnnotationRemoveEventArgs, Unit]] = js.undefined
     
     /** Specifies the type of the annotations.
       */
-    var annotationType: js.UndefOr[AnnotationType | String] = js.native
+    var annotationType: js.UndefOr[AnnotationType | String] = js.undefined
     
     /** Triggers before the printing starts.
       */
-    var beforePrint: js.UndefOr[js.Function1[/* e */ BeforePrintEventArgs, Unit]] = js.native
+    var beforePrint: js.UndefOr[js.Function1[/* e */ BeforePrintEventArgs, Unit]] = js.undefined
     
     /** Triggers when the client buffering process ends.
       */
-    var bufferEnd: js.UndefOr[js.Function1[/* e */ BufferEndEventArgs, Unit]] = js.native
+    var bufferEnd: js.UndefOr[js.Function1[/* e */ BufferEndEventArgs, Unit]] = js.undefined
     
     /** Triggers when the client buffering process starts.
       */
-    var bufferStart: js.UndefOr[js.Function1[/* e */ BufferStartEventArgs, Unit]] = js.native
+    var bufferStart: js.UndefOr[js.Function1[/* e */ BufferStartEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the buffering mode of the PDF viewer control when allowClientBuffering is set to true.
       */
-    var bufferingMode: js.UndefOr[BufferingMode | String] = js.native
+    var bufferingMode: js.UndefOr[BufferingMode | String] = js.undefined
     
     /** Gets the number of the page being displayed in the PDF viewer.
       */
-    var currentPageNumber: js.UndefOr[Double] = js.native
+    var currentPageNumber: js.UndefOr[Double] = js.undefined
     
     /** Triggers when PDF viewer control is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Triggers when the PDF document gets loaded and is ready to view in the Control.
       */
-    var documentLoad: js.UndefOr[js.Function1[/* e */ DocumentLoadEventArgs, Unit]] = js.native
+    var documentLoad: js.UndefOr[js.Function1[/* e */ DocumentLoadEventArgs, Unit]] = js.undefined
     
     /** Sets the PDF document path for initial loading.
       */
-    var documentPath: js.UndefOr[String] = js.native
+    var documentPath: js.UndefOr[String] = js.undefined
     
     /** Triggers when the PDF document gets unloaded from the PDF viewer.
       */
-    var documentUnload: js.UndefOr[js.Function1[/* e */ DocumentUnloadEventArgs, Unit]] = js.native
+    var documentUnload: js.UndefOr[js.Function1[/* e */ DocumentUnloadEventArgs, Unit]] = js.undefined
     
     /** Triggers when the download is completed or aborted.
       */
-    var downloadEnd: js.UndefOr[js.Function1[/* e */ DownloadEndEventArgs, Unit]] = js.native
+    var downloadEnd: js.UndefOr[js.Function1[/* e */ DownloadEndEventArgs, Unit]] = js.undefined
     
     /** Triggers when the download is started.
       */
-    var downloadStart: js.UndefOr[js.Function1[/* e */ DownloadStartEventArgs, Unit]] = js.native
+    var downloadStart: js.UndefOr[js.Function1[/* e */ DownloadStartEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the highlight annotation.
       */
-    var enableHighlightAnnotation: js.UndefOr[Boolean] = js.native
+    var enableHighlightAnnotation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the hyperlinks in PDF document.
       */
-    var enableHyperlink: js.UndefOr[Boolean] = js.native
+    var enableHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the adding of handwritten signature over the PDF document.
       */
-    var enableSignature: js.UndefOr[Boolean] = js.native
+    var enableSignature: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the strikethrough annotation.
       */
-    var enableStrikethroughAnnotation: js.UndefOr[Boolean] = js.native
+    var enableStrikethroughAnnotation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the text markup annotations.
       */
-    var enableTextMarkupAnnotations: js.UndefOr[Boolean] = js.native
+    var enableTextMarkupAnnotations: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the text selection in PDF document.
       */
-    var enableTextSelection: js.UndefOr[Boolean] = js.native
+    var enableTextSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the underline annotation.
       */
-    var enableUnderlineAnnotation: js.UndefOr[Boolean] = js.native
+    var enableUnderlineAnnotation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets the name of the PDF document which loaded in the ejPdfViewer control for downloading.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the settings of the highlight annotation.
       */
-    var highlightSettings: js.UndefOr[HighlightSettings] = js.native
+    var highlightSettings: js.UndefOr[HighlightSettings] = js.undefined
     
     /** Triggers when hyperlink in the PDF Document is clicked
       */
-    var hyperlinkClick: js.UndefOr[js.Function1[/* e */ HyperlinkClickEventArgs, Unit]] = js.native
+    var hyperlinkClick: js.UndefOr[js.Function1[/* e */ HyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the open state of the hyperlink in the PDF document.
       */
-    var hyperlinkOpenState: js.UndefOr[LinkTarget | String] = js.native
+    var hyperlinkOpenState: js.UndefOr[LinkTarget | String] = js.undefined
     
     /** Specifies the viewer interaction mode.
       */
-    var interactionMode: js.UndefOr[InteractionMode | String] = js.native
+    var interactionMode: js.UndefOr[InteractionMode | String] = js.undefined
     
     /** Checks whether the PDF document is edited.
       */
-    var isDocumentEdited: js.UndefOr[Boolean] = js.native
+    var isDocumentEdited: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the responsiveness of the PDF viewer control during the window resize.
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the locale information of the PDF viewer.
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Triggers when there is change in current page number.
       */
-    var pageChange: js.UndefOr[js.Function1[/* e */ PageChangeEventArgs, Unit]] = js.native
+    var pageChange: js.UndefOr[js.Function1[/* e */ PageChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the mouse click is performed over the page of the PDF document.
       */
-    var pageClick: js.UndefOr[js.Function1[/* e */ PageClickEventArgs, Unit]] = js.native
+    var pageClick: js.UndefOr[js.Function1[/* e */ PageClickEventArgs, Unit]] = js.undefined
     
     /** Gets the total number of pages in PDF document.
       */
-    var pageCount: js.UndefOr[Double] = js.native
+    var pageCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the location of the supporting PDF service
       */
-    var pdfService: js.UndefOr[PdfService | String] = js.native
+    var pdfService: js.UndefOr[PdfService | String] = js.undefined
     
     /** Specifies the name of the action method in the server.
       */
-    var serverActionSettings: js.UndefOr[ServerActionSettings] = js.native
+    var serverActionSettings: js.UndefOr[ServerActionSettings] = js.undefined
     
     /** Sets the PDF Web API service URL
       */
-    var serviceUrl: js.UndefOr[String] = js.native
+    var serviceUrl: js.UndefOr[String] = js.undefined
     
     /** Triggers when a handwritten signature is added over the page of the PDF document.
       */
-    var signatureAdd: js.UndefOr[js.Function1[/* e */ SignatureAddEventArgs, Unit]] = js.native
+    var signatureAdd: js.UndefOr[js.Function1[/* e */ SignatureAddEventArgs, Unit]] = js.undefined
     
     /** Triggers when a handwritten signature is removed from the page of the PDF document.
       */
-    var signatureDelete: js.UndefOr[js.Function1[/* e */ SignatureDeleteEventArgs, Unit]] = js.native
+    var signatureDelete: js.UndefOr[js.Function1[/* e */ SignatureDeleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when a handwritten signature properties is changed in the PDF document.
       */
-    var signaturePropertiesChange: js.UndefOr[js.Function1[/* e */ SignaturePropertiesChangeEventArgs, Unit]] = js.native
+    var signaturePropertiesChange: js.UndefOr[js.Function1[/* e */ SignaturePropertiesChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when a handwritten signature is resized in the PDF document.
       */
-    var signatureResize: js.UndefOr[js.Function1[/* e */ SignatureResizeEventArgs, Unit]] = js.native
+    var signatureResize: js.UndefOr[js.Function1[/* e */ SignatureResizeEventArgs, Unit]] = js.undefined
     
     /** Gets/sets the settings of the handwritten signature.
       */
-    var signatureSettings: js.UndefOr[SignatureSettings] = js.native
+    var signatureSettings: js.UndefOr[SignatureSettings] = js.undefined
     
     /** Gets/sets the settings of the strikethrough annotation.
       */
-    var strikethroughSettings: js.UndefOr[StrikethroughSettings] = js.native
+    var strikethroughSettings: js.UndefOr[StrikethroughSettings] = js.undefined
     
     /** Enables/ disables the text selection context menu.
       */
-    var textSelectionContextMenu: js.UndefOr[TextSelectionContextMenu] = js.native
+    var textSelectionContextMenu: js.UndefOr[TextSelectionContextMenu] = js.undefined
     
     /** Specifies the toolbar settings.
       */
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Gets/sets the settings of the underline annotation.
       */
-    var underlineSettings: js.UndefOr[UnderlineSettings] = js.native
+    var underlineSettings: js.UndefOr[UnderlineSettings] = js.undefined
     
     /** Triggers when there is change in the magnification value.
       */
-    var zoomChange: js.UndefOr[js.Function1[/* e */ ZoomChangeEventArgs, Unit]] = js.native
+    var zoomChange: js.UndefOr[js.Function1[/* e */ ZoomChangeEventArgs, Unit]] = js.undefined
     
     /** Gets the current zoom percentage of the PDF document in viewer.
       */
-    var zoomPercentage: js.UndefOr[Double] = js.native
+    var zoomPercentage: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -1925,24 +1950,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait PageChangeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current page number in view.
       */
-    var currentPageNumber: js.UndefOr[Double] = js.native
+    var currentPageNumber: js.UndefOr[Double] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PageChangeEventArgs {
     
@@ -1981,28 +2005,27 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait PageClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current X position
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /** Returns the current Y position
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PageClickEventArgs {
     
@@ -2047,24 +2070,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait ServerActionSettings extends StObject {
     
     /** Specifies the name of the action method used for downloading the PDF document from the PDF viewer control.
       */
-    var download: js.UndefOr[String] = js.native
+    var download: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the action method used for uploading the PDF document to the PDF viewer control.
       */
-    var fileUpload: js.UndefOr[String] = js.native
+    var fileUpload: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the action method used for loading the PDF document.
       */
-    var load: js.UndefOr[String] = js.native
+    var load: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the action method used for printing the PDF document in the PDF viewer control.
       */
-    var print: js.UndefOr[String] = js.native
+    var print: js.UndefOr[String] = js.undefined
   }
   object ServerActionSettings {
     
@@ -2103,32 +2125,31 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait SignatureAddEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the signature is added.
       */
-    var pageNumber: js.UndefOr[Double] = js.native
+    var pageNumber: js.UndefOr[Double] = js.undefined
     
     /** Returns the bounds of the signature added in the page of the PDF document.
       */
-    var signatureBound: js.UndefOr[js.Array[_]] = js.native
+    var signatureBound: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the settings of the signature added to the PDF document.
       */
-    var signatureSettings: js.UndefOr[js.Any] = js.native
+    var signatureSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SignatureAddEventArgs {
     
@@ -2160,7 +2181,7 @@ object PdfViewer {
       def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
       @scala.inline
-      def setSignatureBound(value: js.Array[_]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
+      def setSignatureBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSignatureBoundUndefined: Self = StObject.set(x, "signatureBound", js.undefined)
@@ -2182,24 +2203,23 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait SignatureDeleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the signature is removed.
       */
-    var pageNumber: js.UndefOr[Double] = js.native
+    var pageNumber: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SignatureDeleteEventArgs {
     
@@ -2238,48 +2258,47 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait SignaturePropertiesChangeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current color of the signature.
       */
-    var currentColor: js.UndefOr[String] = js.native
+    var currentColor: js.UndefOr[String] = js.undefined
     
     /** Returns the current opacity of the signature.
       */
-    var currentOpacity: js.UndefOr[Double] = js.native
+    var currentOpacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies that the color of the signature is changed.
       */
-    var isColorChange: js.UndefOr[Boolean] = js.native
+    var isColorChange: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies that the opacity of the signature is changed.
       */
-    var isOpacityChange: js.UndefOr[Boolean] = js.native
+    var isOpacityChange: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the signature properties is changed.
       */
-    var pageID: js.UndefOr[Double] = js.native
+    var pageID: js.UndefOr[Double] = js.undefined
     
     /** Returns the previous color of the signature.
       */
-    var previousColor: js.UndefOr[String] = js.native
+    var previousColor: js.UndefOr[String] = js.undefined
     
     /** Returns the previous opacity of the signature.
       */
-    var previousOpacity: js.UndefOr[Double] = js.native
+    var previousOpacity: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SignaturePropertiesChangeEventArgs {
     
@@ -2354,36 +2373,35 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait SignatureResizeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the page number in which the signature is added.
       */
-    var pageNumber: js.UndefOr[Double] = js.native
+    var pageNumber: js.UndefOr[Double] = js.undefined
     
     /** Returns the current bounds of the signature resized in the page of the PDF document.
       */
-    var signatureCurrentBound: js.UndefOr[js.Array[_]] = js.native
+    var signatureCurrentBound: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the previous bounds of the signature resized in the page of the PDF document.
       */
-    var signaturePreviousBound: js.UndefOr[js.Array[_]] = js.native
+    var signaturePreviousBound: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the settings of the signature added to the PDF document.
       */
-    var signatureSettings: js.UndefOr[js.Any] = js.native
+    var signatureSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SignatureResizeEventArgs {
     
@@ -2415,7 +2433,7 @@ object PdfViewer {
       def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
       @scala.inline
-      def setSignatureCurrentBound(value: js.Array[_]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
+      def setSignatureCurrentBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSignatureCurrentBoundUndefined: Self = StObject.set(x, "signatureCurrentBound", js.undefined)
@@ -2424,7 +2442,7 @@ object PdfViewer {
       def setSignatureCurrentBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureCurrentBound", js.Array(value :_*))
       
       @scala.inline
-      def setSignaturePreviousBound(value: js.Array[_]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
+      def setSignaturePreviousBound(value: js.Array[js.Any]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSignaturePreviousBoundUndefined: Self = StObject.set(x, "signaturePreviousBound", js.undefined)
@@ -2446,16 +2464,15 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait SignatureSettings extends StObject {
     
     /** Gets/sets the color of the handwritten signature.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the opacity of the handwritten signature.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object SignatureSettings {
     
@@ -2482,32 +2499,31 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait StrikethroughSettings extends StObject {
     
     /** Gets/sets the author of the strikethrough annotation.
       */
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the color of the strikethrough annotation.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the locked property of the strikethrough annotation.
       */
-    var isLocked: js.UndefOr[Boolean] = js.native
+    var isLocked: js.UndefOr[Boolean] = js.undefined
     
     /** Gets/sets the modified Date of the strikethrough annotation.
       */
-    var modifiedDate: js.UndefOr[String] = js.native
+    var modifiedDate: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the opacity of the strikethrough annotation.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Gets/sets the subject of the strikethrough annotation.
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object StrikethroughSettings {
     
@@ -2558,28 +2574,27 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait TextSelectionContextMenu extends StObject {
     
     /** Enables/disables the copy menu in the text selection context menu.
       */
-    var isCopyEnable: js.UndefOr[Boolean] = js.native
+    var isCopyEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/ disables the text selection context menu.
       */
-    var isEnable: js.UndefOr[Boolean] = js.native
+    var isEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the highlight annotation menu in the text selection context menu.
       */
-    var isHighlightEnable: js.UndefOr[Boolean] = js.native
+    var isHighlightEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the search menu in the text selection context menu.
       */
-    var isSearchEnable: js.UndefOr[Boolean] = js.native
+    var isSearchEnable: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the strikeout annotation menu in the text selection context menu.
       */
-    var isStrikeoutEnable: js.UndefOr[Boolean] = js.native
+    var isStrikeoutEnable: js.UndefOr[Boolean] = js.undefined
   }
   object TextSelectionContextMenu {
     
@@ -2624,16 +2639,15 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
     /** Shows or hides the tooltip of the toolbar items.
       */
-    var showToolTip: js.UndefOr[Boolean] = js.native
+    var showToolTip: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the grouped items in the toolbar with the help of enum ej.PdfViewer.ToolbarItems
       */
-    var toolbarItem: js.UndefOr[ToolbarItems | String] = js.native
+    var toolbarItem: js.UndefOr[ToolbarItems | String] = js.undefined
   }
   object ToolbarSettings {
     
@@ -2660,32 +2674,31 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait UnderlineSettings extends StObject {
     
     /** Gets/sets the author of the underline annotation.
       */
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the color of the underline annotation.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the locked property of the underline annotation.
       */
-    var isLocked: js.UndefOr[Boolean] = js.native
+    var isLocked: js.UndefOr[Boolean] = js.undefined
     
     /** Gets/sets the modified Date of the underline annotation.
       */
-    var modifiedDate: js.UndefOr[String] = js.native
+    var modifiedDate: js.UndefOr[String] = js.undefined
     
     /** Gets/sets the opacity of the underline annotation.
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Gets/sets the subject of the underline annotation.
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object UnderlineSettings {
     
@@ -2736,28 +2749,27 @@ object PdfViewer {
     }
   }
   
-  @js.native
   trait ZoomChangeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current zoom percentage of the PDF viewer control
       */
-    var currentZoomPercentage: js.UndefOr[Double] = js.native
+    var currentZoomPercentage: js.UndefOr[Double] = js.undefined
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous zoom percentage of the PDF viewer control
       */
-    var previousZoomPercentage: js.UndefOr[Double] = js.native
+    var previousZoomPercentage: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ZoomChangeEventArgs {
     

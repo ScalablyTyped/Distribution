@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanClearBrowserCookiesResponse extends StObject {
   
   /**
     * True if browser cookies can be cleared.
     */
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object CanClearBrowserCookiesResponse {
   

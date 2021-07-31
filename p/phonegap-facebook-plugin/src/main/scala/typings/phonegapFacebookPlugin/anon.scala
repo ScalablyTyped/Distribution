@@ -2,25 +2,23 @@ package typings.phonegapFacebookPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var expiresIn: String = js.native
+    var expiresIn: String
     
-    var secret: String = js.native
+    var secret: String
     
-    var session_key: Boolean = js.native
+    var session_key: Boolean
     
-    var sig: String = js.native
+    var sig: String
     
-    var userID: String = js.native
+    var userID: String
   }
   object AccessToken {
     

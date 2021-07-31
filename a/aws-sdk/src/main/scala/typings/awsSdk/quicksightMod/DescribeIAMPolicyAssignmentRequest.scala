@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIAMPolicyAssignmentRequest extends StObject {
   
   /**
     * The name of the assignment, also called a rule.
     */
-  var AssignmentName: IAMPolicyAssignmentName = js.native
+  var AssignmentName: IAMPolicyAssignmentName
   
   /**
     * The ID of the AWS account that contains the assignment that you want to describe.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The namespace that contains the assignment.
     */
-  var Namespace: typings.awsSdk.quicksightMod.Namespace = js.native
+  var Namespace: typings.awsSdk.quicksightMod.Namespace
 }
 object DescribeIAMPolicyAssignmentRequest {
   

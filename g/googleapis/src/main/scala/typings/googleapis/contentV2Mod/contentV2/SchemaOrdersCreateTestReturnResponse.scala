@@ -2,22 +2,20 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCreateTestReturnResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#ordersCreateTestReturnResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the newly created test order return.
     */
-  var returnId: js.UndefOr[String] = js.native
+  var returnId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersCreateTestReturnResponse {
   

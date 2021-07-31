@@ -2,16 +2,14 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromoteResourceShareCreatedFromPolicyRequest extends StObject {
   
   /**
     * The ARN of the resource share to promote.
     */
-  var resourceShareArn: String = js.native
+  var resourceShareArn: String
 }
 object PromoteResourceShareCreatedFromPolicyRequest {
   

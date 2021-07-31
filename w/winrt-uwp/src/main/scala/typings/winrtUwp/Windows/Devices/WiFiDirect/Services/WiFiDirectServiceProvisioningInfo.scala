@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains provisioning information about a Wi-Fi Direct Service. */
-@js.native
 trait WiFiDirectServiceProvisioningInfo extends StObject {
   
   /** Gets a value indicating whether Wi-Fi Direct Point to Point (P2P) group formation is needed. */
-  var isGroupFormationNeeded: Boolean = js.native
+  var isGroupFormationNeeded: Boolean
   
   /** Gets a value describing the configuration method in use. */
-  var selectedConfigurationMethod: WiFiDirectServiceConfigurationMethod = js.native
+  var selectedConfigurationMethod: WiFiDirectServiceConfigurationMethod
 }
 object WiFiDirectServiceProvisioningInfo {
   

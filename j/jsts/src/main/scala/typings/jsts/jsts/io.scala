@@ -3,12 +3,10 @@ package typings.jsts.jsts
 import typings.jsts.jsts.geom.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object io {
   
-  @js.native
   trait GeoJSONReader extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object io {
       * @return {jsts.geom.Geometry}
       * geometry a <code>Geometry</code> to process.
       */
-    def read(geometry: js.Object): Geometry = js.native
+    def read(geometry: js.Object): Geometry
   }
   object GeoJSONReader {
     
@@ -36,7 +34,6 @@ object io {
     }
   }
   
-  @js.native
   trait GeoJSONWriter extends StObject {
     
     /**
@@ -46,7 +43,7 @@ object io {
       *          geometry a <code>Geometry</code> to process.
       * @return {Object} The GeoJSON representation of the Geometry.
       */
-    def write(geometry: Geometry): js.Object = js.native
+    def write(geometry: Geometry): js.Object
   }
   object GeoJSONWriter {
     
@@ -64,12 +61,11 @@ object io {
     }
   }
   
-  @js.native
   trait OL3Parser extends StObject {
     
-    def read(geometry: js.Any): Geometry = js.native
+    def read(geometry: js.Any): Geometry
     
-    def write(geometry: Geometry): js.Any = js.native
+    def write(geometry: Geometry): js.Any
   }
   object OL3Parser {
     
@@ -90,7 +86,6 @@ object io {
     }
   }
   
-  @js.native
   trait WKTReader extends StObject {
     
     /**
@@ -102,9 +97,9 @@ object io {
       * @return {jsts.geom.Geometry} a <code>Geometry</code> read from
       *         <code>string.</code>
       */
-    def read(wkt: String): Geometry = js.native
+    def read(wkt: String): Geometry
     
-    def reducePrecision(geometry: Geometry): Unit = js.native
+    def reducePrecision(geometry: Geometry): Unit
   }
   object WKTReader {
     
@@ -125,6 +120,5 @@ object io {
     }
   }
   
-  @js.native
   trait WKTWriter extends StObject
 }

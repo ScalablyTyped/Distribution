@@ -2,34 +2,32 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A card is a UI element that can contain UI widgets such as texts, images.
   */
-@js.native
 trait SchemaCard extends StObject {
   
   /**
     * The actions of this card.
     */
-  var cardActions: js.UndefOr[js.Array[SchemaCardAction]] = js.native
+  var cardActions: js.UndefOr[js.Array[SchemaCardAction]] = js.undefined
   
   /**
     * The header of the card. A header usually contains a title and an image.
     */
-  var header: js.UndefOr[SchemaCardHeader] = js.native
+  var header: js.UndefOr[SchemaCardHeader] = js.undefined
   
   /**
     * Name of the card.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Sections are separated by a line divider.
     */
-  var sections: js.UndefOr[js.Array[SchemaSection]] = js.native
+  var sections: js.UndefOr[js.Array[SchemaSection]] = js.undefined
 }
 object SchemaCard {
   

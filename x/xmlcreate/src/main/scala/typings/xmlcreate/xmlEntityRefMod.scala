@@ -2,24 +2,24 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlEntityRefMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlEntityRef", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlEntityRef[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlEntityRef[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlEntityRefOptions) = this()
   }
   
-  @js.native
   trait IXmlEntityRefOptions extends StObject {
     
     /**
       * The name of the entity to be referenced.
       */
-    var name: String = js.native
+    var name: String
   }
   object IXmlEntityRefOptions {
     

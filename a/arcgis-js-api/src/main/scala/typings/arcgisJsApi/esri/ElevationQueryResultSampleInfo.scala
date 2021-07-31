@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElevationQueryResultSampleInfo extends Object {
+trait ElevationQueryResultSampleInfo
+  extends StObject
+     with Object {
   
   /**
     * The resolution at which the z-value was sampled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
-  var demResolution: Double = js.native
+  var demResolution: Double
   
   /**
     * The elevation source from which the data for the corresponding coordinate was sampled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
-  var source: ElevationLayer = js.native
+  var source: ElevationLayer
 }
 object ElevationQueryResultSampleInfo {
   

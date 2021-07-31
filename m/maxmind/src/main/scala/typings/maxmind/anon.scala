@@ -5,7 +5,6 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -16,7 +15,7 @@ object anon {
     def apply(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
     def apply(
       filename: PathLike,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
     ): Unit = js.native
     def apply(
@@ -26,10 +25,9 @@ object anon {
     ): Unit = js.native
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
   }
   object Max {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAccountSendingEnabledRequest extends StObject {
   
   /**
     * Describes whether email sending is enabled or disabled for your Amazon SES account in the current AWS Region.
     */
-  var Enabled: js.UndefOr[typings.awsSdk.sesMod.Enabled] = js.native
+  var Enabled: js.UndefOr[typings.awsSdk.sesMod.Enabled] = js.undefined
 }
 object UpdateAccountSendingEnabledRequest {
   

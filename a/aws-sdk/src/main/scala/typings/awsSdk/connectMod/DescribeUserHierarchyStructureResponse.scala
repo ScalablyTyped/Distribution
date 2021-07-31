@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserHierarchyStructureResponse extends StObject {
   
   /**
     * Information about the hierarchy structure.
     */
-  var HierarchyStructure: js.UndefOr[typings.awsSdk.connectMod.HierarchyStructure] = js.native
+  var HierarchyStructure: js.UndefOr[typings.awsSdk.connectMod.HierarchyStructure] = js.undefined
 }
 object DescribeUserHierarchyStructureResponse {
   

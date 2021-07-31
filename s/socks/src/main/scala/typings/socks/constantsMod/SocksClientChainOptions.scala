@@ -4,30 +4,28 @@ import typings.socks.socksBooleans.`false`
 import typings.socks.socksStrings.connect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SocksClient chain connection options.
   */
-@js.native
 trait SocksClientChainOptions extends StObject {
   
-  var command: connect = js.native
+  var command: connect
   
-  var destination: SocksRemoteHost = js.native
+  var destination: SocksRemoteHost
   
-  var proxies: js.Array[SocksProxy] = js.native
+  var proxies: js.Array[SocksProxy]
   
-  var randomizeChain: js.UndefOr[`false`] = js.native
+  var randomizeChain: js.UndefOr[`false`] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object SocksClientChainOptions {
   
   @scala.inline
-  def apply(command: connect, destination: SocksRemoteHost, proxies: js.Array[SocksProxy]): SocksClientChainOptions = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any])
+  def apply(destination: SocksRemoteHost, proxies: js.Array[SocksProxy]): SocksClientChainOptions = {
+    val __obj = js.Dynamic.literal(command = "connect", destination = destination.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientChainOptions]
   }
   

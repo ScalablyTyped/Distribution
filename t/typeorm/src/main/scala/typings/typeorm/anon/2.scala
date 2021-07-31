@@ -7,13 +7,11 @@ import typings.typeorm.typeormStrings.pessimistic_write
 import typings.typeorm.typeormStrings.pessimistic_write_or_fail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var mode: pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail = js.native
+  var mode: pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail
 }
 object `2` {
   

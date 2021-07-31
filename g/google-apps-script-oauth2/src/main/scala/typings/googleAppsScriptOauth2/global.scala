@@ -3,7 +3,6 @@ package typings.googleAppsScriptOauth2
 import typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.OAuth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,11 +14,11 @@ object global {
     object TokenFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat with String] = js.native
+      def apply(value: String): js.UndefOr[typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat & String] = js.native
       
-      /* "application/x-www-form-urlencoded" */ val FORM_URL_ENCODED: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat.FORM_URL_ENCODED with String = js.native
+      /* "application/x-www-form-urlencoded" */ val FORM_URL_ENCODED: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat.FORM_URL_ENCODED & String = js.native
       
-      /* "application/json" */ val JSON: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON with String = js.native
+      /* "application/json" */ val JSON: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON & String = js.native
     }
   }
   

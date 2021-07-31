@@ -4,23 +4,21 @@ import typings.screeps.screepsStrings.ZH
 import typings.screeps.screepsStrings.ZO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait K extends StObject {
   
-  var H: ZH = js.native
+  var H: ZH
   
-  var K: typings.screeps.screepsStrings.ZK = js.native
+  var K: typings.screeps.screepsStrings.ZK
   
-  var O: ZO = js.native
+  var O: ZO
 }
 object K {
   
   @scala.inline
-  def apply(H: ZH, K: typings.screeps.screepsStrings.ZK, O: ZO): K = {
-    val __obj = js.Dynamic.literal(H = H.asInstanceOf[js.Any], K = K.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any])
+  def apply(): K = {
+    val __obj = js.Dynamic.literal(H = "ZH", K = "ZK", O = "ZO")
     __obj.asInstanceOf[K]
   }
   

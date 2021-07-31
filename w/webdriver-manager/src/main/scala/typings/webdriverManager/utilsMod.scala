@@ -6,7 +6,6 @@ import typings.node.childProcessMod.SpawnSyncOptions
 import typings.node.childProcessMod.SpawnSyncReturns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
@@ -15,25 +14,19 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("webdriver-manager/built/lib/utils", "adb")
-  @js.native
-  def adb(sdkPath: String, port: Double, command: String, timeout: Double): js.Promise[String] = js.native
-  @JSImport("webdriver-manager/built/lib/utils", "adb")
-  @js.native
-  def adb(sdkPath: String, port: Double, command: String, timeout: Double, args: js.Array[String]): js.Promise[String] = js.native
+  @scala.inline
+  def adb(sdkPath: String, port: Double, command: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def adb(sdkPath: String, port: Double, command: String, timeout: Double, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("webdriver-manager/built/lib/utils", "request")
-  @js.native
-  def request(method: String, port: String, path: String): js.Promise[String] = js.native
-  @JSImport("webdriver-manager/built/lib/utils", "request")
-  @js.native
-  def request(method: String, port: String, path: String, timeout: js.UndefOr[scala.Nothing], data: js.Any): js.Promise[String] = js.native
-  @JSImport("webdriver-manager/built/lib/utils", "request")
-  @js.native
-  def request(method: String, port: String, path: String, timeout: Double): js.Promise[String] = js.native
-  @JSImport("webdriver-manager/built/lib/utils", "request")
-  @js.native
-  def request(method: String, port: String, path: String, timeout: Double, data: js.Any): js.Promise[String] = js.native
+  @scala.inline
+  def request(method: String, port: String, path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def request(method: String, port: String, path: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def request(method: String, port: String, path: String, timeout: Double, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def request(method: String, port: String, path: String, timeout: Unit, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("webdriver-manager/built/lib/utils", "spawn")
   @js.native

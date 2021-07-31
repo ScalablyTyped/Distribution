@@ -3,31 +3,29 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.Services.FormatCodeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesProvider extends StObject {
   
-  var activeRules: js.Any = js.native
+  var activeRules: js.Any
   
-  /* private */ def createActiveRules(options: js.Any): js.Any = js.native
+  /* private */ def createActiveRules(options: js.Any): js.Any
   
-  def ensureUpToDate(options: FormatCodeOptions): Unit = js.native
+  def ensureUpToDate(options: FormatCodeOptions): Unit
   
-  def getRuleByName(name: String): Rule = js.native
+  def getRuleByName(name: String): Rule
   
-  def getRuleName(rule: Rule): String = js.native
+  def getRuleName(rule: Rule): String
   
-  def getRulesMap(): RulesMap = js.native
+  def getRulesMap(): RulesMap
   
-  var globalRules: js.Any = js.native
+  var globalRules: js.Any
   
-  var logger: js.Any = js.native
+  var logger: js.Any
   
-  var options: js.Any = js.native
+  var options: js.Any
   
-  var rulesMap: js.Any = js.native
+  var rulesMap: js.Any
 }
 object RulesProvider {
   

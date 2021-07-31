@@ -2,53 +2,51 @@ package typings.jqueryMaskmoney
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jQueryMaskMoney {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Set if the prefix and suffix will stay in the field's value after the user exits the field
       */
-    var affixesStay: js.UndefOr[Boolean] = js.native
+    var affixesStay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting to prevent negative values
       */
-    var allowNegative: js.UndefOr[Boolean] = js.native
+    var allowNegative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting to prevent users from inputing zero
       */
-    var allowZero: js.UndefOr[Boolean] = js.native
+    var allowZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The decimal separator
       */
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
     /**
       * How many decimal places are allowed
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * The prefix to be displayed before the value entered
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix to be displayed after the value entered
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * The thousands separator
       */
-    var thousands: js.UndefOr[String] = js.native
+    var thousands: js.UndefOr[String] = js.undefined
   }
   object Options {
     

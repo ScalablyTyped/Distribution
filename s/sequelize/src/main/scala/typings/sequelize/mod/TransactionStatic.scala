@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Transaction
   */
-@js.native
 trait TransactionStatic extends StObject {
   
   /**
@@ -48,7 +46,7 @@ trait TransactionStatic extends StObject {
     *
     * @see ISOLATION_LEVELS
     */
-  var ISOLATION_LEVELS: TransactionIsolationLevels = js.native
+  var ISOLATION_LEVELS: TransactionIsolationLevels
   
   /**
     * Possible options for row locking. Used in conjuction with `find` calls:
@@ -85,7 +83,7 @@ trait TransactionStatic extends StObject {
     * ```
     * UserModel will be locked but TaskModel won't!
     */
-  var LOCK: TransactionLock = js.native
+  var LOCK: TransactionLock
   
   /**
     * Transaction type can be set per-transaction by passing `options.type` to
@@ -120,7 +118,7 @@ trait TransactionStatic extends StObject {
     *
     * @see Sequelize.Transaction.TYPES
     */
-  var TYPES: TransactionTypes = js.native
+  var TYPES: TransactionTypes
 }
 object TransactionStatic {
   

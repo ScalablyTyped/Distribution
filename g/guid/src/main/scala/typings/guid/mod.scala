@@ -2,28 +2,27 @@ package typings.guid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(guid: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].apply(guid.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
   @JSImport("guid", JSImport.Namespace)
   @js.native
-  def apply(guid: js.Object): js.Object = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("guid", "EMPTY")
   @js.native
   val EMPTY: String = js.native
   
-  @JSImport("guid", "create")
-  @js.native
-  def create(): js.Object = js.native
+  @scala.inline
+  def create(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Object]
   
-  @JSImport("guid", "isGuid")
-  @js.native
-  def isGuid(value: String): Boolean = js.native
+  @scala.inline
+  def isGuid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGuid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("guid", "raw")
-  @js.native
-  def raw(): String = js.native
+  @scala.inline
+  def raw(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[String]
 }

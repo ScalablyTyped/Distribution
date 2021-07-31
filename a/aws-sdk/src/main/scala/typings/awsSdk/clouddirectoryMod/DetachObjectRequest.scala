@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachObjectRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory where objects reside. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The link name associated with the object that needs to be detached.
     */
-  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName = js.native
+  var LinkName: typings.awsSdk.clouddirectoryMod.LinkName
   
   /**
     * The parent reference from which the object with the specified link name is detached.
     */
-  var ParentReference: ObjectReference = js.native
+  var ParentReference: ObjectReference
 }
 object DetachObjectRequest {
   

@@ -3,18 +3,14 @@ package typings.vegaLite.channeldefMod
 import typings.vegaLite.binMod.Bin
 import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.sortMod.Sort
-import typings.vegaLite.srcGuideMod.TitleMixins
 import typings.vegaLite.srcTypeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortableFieldDef[F /* <: Field */, T /* <: Type */, B /* <: Bin */]
-  extends FieldDefBase[F, B]
-     with TitleMixins
-     with TypeMixins[T] {
+  extends StObject
+     with TypedFieldDef[F, T, B] {
   
   /**
     * Sort order for the encoded field.
@@ -34,7 +30,7 @@ trait SortableFieldDef[F /* <: Field */, T /* <: Type */, B /* <: Bin */]
     *
     * __See also:__ [`sort`](https://vega.github.io/vega-lite/docs/sort.html) documentation.
     */
-  var sort: js.UndefOr[Sort[F]] = js.native
+  var sort: js.UndefOr[Sort[F]] = js.undefined
 }
 object SortableFieldDef {
   
@@ -45,7 +41,7 @@ object SortableFieldDef {
   }
   
   @scala.inline
-  implicit class SortableFieldDefMutableBuilder[Self <: SortableFieldDef[_, _, _], F /* <: Field */, T /* <: Type */, B /* <: Bin */] (val x: Self with (SortableFieldDef[F, T, B])) extends AnyVal {
+  implicit class SortableFieldDefMutableBuilder[Self <: SortableFieldDef[?, ?, ?], F /* <: Field */, T /* <: Type */, B /* <: Bin */] (val x: Self & (SortableFieldDef[F, T, B])) extends AnyVal {
     
     @scala.inline
     def setSort(value: Sort[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])

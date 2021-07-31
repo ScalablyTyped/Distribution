@@ -17,7 +17,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an EntityTypes */
@@ -32,8 +31,8 @@ class EntityTypes protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls BatchCreateEntities.
@@ -167,6 +166,10 @@ class EntityTypes protected () extends Service {
 }
 object EntityTypes {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new EntityTypes service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -175,18 +178,14 @@ object EntityTypes {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): EntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): EntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): EntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): EntityTypes = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): EntityTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[EntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): EntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[EntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): EntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[EntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): EntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[EntityTypes]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#batchCreateEntities}.

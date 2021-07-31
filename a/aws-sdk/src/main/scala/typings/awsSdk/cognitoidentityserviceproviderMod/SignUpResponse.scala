@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignUpResponse extends StObject {
   
   /**
     * The code delivery details returned by the server response to the user registration request.
     */
-  var CodeDeliveryDetails: js.UndefOr[CodeDeliveryDetailsType] = js.native
+  var CodeDeliveryDetails: js.UndefOr[CodeDeliveryDetailsType] = js.undefined
   
   /**
     * A response from the server indicating that a user registration has been confirmed.
     */
-  var UserConfirmed: BooleanType = js.native
+  var UserConfirmed: BooleanType
   
   /**
     * The UUID of the authenticated user. This is not the same as username.
     */
-  var UserSub: StringType = js.native
+  var UserSub: StringType
 }
 object SignUpResponse {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The state of a property contains information about the source of the value, e.g. the object itself, a default or a stylesheet. For more information
   * see PropertyState.
   */
-@js.native
-trait XMultiPropertyStates extends XInterface {
+trait XMultiPropertyStates
+  extends StObject
+     with XInterface {
   
   /**
     * @param aPropertyNames specifies the names of the properties. All names must be unique. This sequence must be alphabetically sorted.
@@ -24,13 +24,13 @@ trait XMultiPropertyStates extends XInterface {
     * @throws UnknownPropertyException if one of the propertes does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyDefaults(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
+  def getPropertyDefaults(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any]
   
   /**
     * @param aPropertyName specifies the names of the properties. All names must be unique. This sequence must be alphabetically sorted.
     * @returns a sequence of the states of the properties which are specified by their names.  The order of the states is correlating to the order of the given
     */
-  def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
   
   /**
     * sets all properties to their default values.
@@ -38,7 +38,7 @@ trait XMultiPropertyStates extends XInterface {
     * Each value depends on the implementation of this interface. If it is a bound property, you must change the value before the change events are fired.
     * If it is a constrained property, you must fire the vetoable event before you change the property value.
     */
-  def setAllPropertiesToDefault(): Unit = js.native
+  def setAllPropertiesToDefault(): Unit
   
   /**
     * sets the specified properties to their default values.
@@ -48,14 +48,14 @@ trait XMultiPropertyStates extends XInterface {
     * @param aPropertyNames specifies the names of the properties. All names must be unique. This sequence must be alphabetically sorted.
     * @throws UnknownPropertyException if one of the properties does not exist.
     */
-  def setPropertiesToDefault(aPropertyNames: SeqEquiv[String]): Unit = js.native
+  def setPropertiesToDefault(aPropertyNames: SeqEquiv[String]): Unit
 }
 object XMultiPropertyStates {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -70,7 +70,7 @@ object XMultiPropertyStates {
   implicit class XMultiPropertyStatesMutableBuilder[Self <: XMultiPropertyStates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[_]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
+    def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))

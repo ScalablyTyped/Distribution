@@ -7,12 +7,11 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUIShareTargetActivatedEventArgs
-  extends IShareTargetActivatedEventArgs
+  extends StObject
+     with IShareTargetActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIShareTargetActivatedEventArgs {
   

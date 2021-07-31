@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressEvent extends StObject {
   
   /**
     * The Progress event details.
     */
-  var Details: js.UndefOr[Progress] = js.native
+  var Details: js.UndefOr[Progress] = js.undefined
 }
 object ProgressEvent {
   

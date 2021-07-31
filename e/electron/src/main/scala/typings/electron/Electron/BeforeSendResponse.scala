@@ -3,18 +3,16 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforeSendResponse extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When provided, request will be made with these headers.
     */
-  var requestHeaders: js.UndefOr[Record[String, String | js.Array[String]]] = js.native
+  var requestHeaders: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
 }
 object BeforeSendResponse {
   

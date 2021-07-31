@@ -6,7 +6,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paddingSerializationMod {
@@ -20,14 +19,15 @@ object paddingSerializationMod {
   
   type PaddingLayerSerialization = ZeroPadding2DLayerSerialization
   
-  @js.native
-  trait ZeroPadding2DLayerConfig extends LayerConfig {
+  trait ZeroPadding2DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
     
     var padding: js.UndefOr[
         Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
-      ] = js.native
+      ] = js.undefined
   }
   object ZeroPadding2DLayerConfig {
     

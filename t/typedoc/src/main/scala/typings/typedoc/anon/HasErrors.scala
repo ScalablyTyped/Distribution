@@ -2,15 +2,13 @@ package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasErrors extends StObject {
   
-  var hasErrors: Boolean = js.native
+  var hasErrors: Boolean
   
-  var inputFiles: js.Array[String] = js.native
+  var inputFiles: js.Array[String]
 }
 object HasErrors {
   

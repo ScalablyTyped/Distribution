@@ -4,24 +4,24 @@ import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetKeyPolicyOutputMod {
   
-  @js.native
-  trait GetKeyPolicyOutput extends OutputTypesUnion {
+  trait GetKeyPolicyOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A key policy document in JSON format.</p>
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
   }
   object GetKeyPolicyOutput {
     

@@ -2,26 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxSelectionInfo...
   */
-@js.native
 trait INxSelectionInfo extends StObject {
   
   /**
     * Is set to true if the visualization is in selection mode.
     * For more information about the selection mode
     */
-  var qInSelections: Boolean = js.native
+  var qInSelections: Boolean
   
   /**
     * Is set to true if the visualization is in selection mode
     * and if some selections have been made while in selection mode.
     */
-  var qMadeSelections: Boolean = js.native
+  var qMadeSelections: Boolean
 }
 object INxSelectionInfo {
   

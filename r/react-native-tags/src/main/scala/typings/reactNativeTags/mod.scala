@@ -5,7 +5,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,18 +14,17 @@ object mod {
   class default ()
     extends Component[TagsProps, js.Object, js.Any]
   
-  @js.native
   trait RenderTag extends StObject {
     
-    def deleteTagOnPress(): Unit = js.native
+    def deleteTagOnPress(): Unit
     
-    var index: Double = js.native
+    var index: Double
     
-    def onPress(): Unit = js.native
+    def onPress(): Unit
     
-    var readonly: Boolean = js.native
+    var readonly: Boolean
     
-    var tag: String = js.native
+    var tag: String
   }
   object RenderTag {
     
@@ -56,16 +54,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TagPress extends StObject {
     
-    var deleted: Boolean = js.native
+    var deleted: Boolean
     
-    def event(): Unit = js.native
+    def event(): Unit
     
-    var index: Double = js.native
+    var index: Double
     
-    var tagLabel: String = js.native
+    var tagLabel: String
   }
   object TagPress {
     
@@ -94,22 +91,21 @@ object mod {
   
   type Tags = Component[TagsProps, js.Object, js.Any]
   
-  @js.native
   trait TagsProps extends StObject {
     
-    var containerStyle: js.UndefOr[ViewStyle] = js.native
+    var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var createTagOnReturn: js.UndefOr[Boolean] = js.native
+    var createTagOnReturn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Triggers new tag creation
       */
-    var createTagOnString: js.UndefOr[js.Array[String]] = js.native
+    var createTagOnString: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Remove the tag when pressed
       */
-    var deleteTagOnPress: js.UndefOr[Boolean] = js.native
+    var deleteTagOnPress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial tags
@@ -117,21 +113,21 @@ object mod {
       * initialTags={["dog", "cat", "chicken"]}
       * ```
       */
-    var initialTags: js.UndefOr[js.Array[String]] = js.native
+    var initialTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The input element's text
       */
-    var initialText: js.UndefOr[String] = js.native
+    var initialText: js.UndefOr[String] = js.undefined
     
-    var inputContainerStyle: js.UndefOr[TextStyle] = js.native
+    var inputContainerStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var inputStyle: js.UndefOr[TextStyle] = js.native
+    var inputStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * The max number of tags that can be entered
       */
-    var maxNumberOfTags: js.UndefOr[Double] = js.native
+    var maxNumberOfTags: js.UndefOr[Double] = js.undefined
     
     /**
       * Fires when tags are added or removed
@@ -139,7 +135,7 @@ object mod {
       * onChangeTags={(tags) => console.warn(tags)}
       * ```
       */
-    var onChangeTags: js.UndefOr[js.Function1[/* tags */ js.Array[String], Unit]] = js.native
+    var onChangeTags: js.UndefOr[js.Function1[/* tags */ js.Array[String], Unit]] = js.undefined
     
     /**
       * Fires when tags are pressed
@@ -152,12 +148,12 @@ object mod {
           /* deleted */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Tags cannot be modified
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Manage the rendering of your own Tag
@@ -172,13 +168,13 @@ object mod {
       * )}
       * ```
       */
-    def renderTag(tag: RenderTag): Unit = js.native
+    def renderTag(tag: RenderTag): Unit
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var tagContainerStyle: js.UndefOr[ViewStyle] = js.native
+    var tagContainerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var tagTextStyle: js.UndefOr[TextStyle] = js.native
+    var tagTextStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * Forward props to the textInput
@@ -188,7 +184,7 @@ object mod {
       * }}
       * ```
       */
-    var textInputProps: js.UndefOr[TextInputProps] = js.native
+    var textInputProps: js.UndefOr[TextInputProps] = js.undefined
   }
   object TagsProps {
     
@@ -310,10 +306,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TextInputProps extends StObject {
     
-    var placeholder: String = js.native
+    var placeholder: String
   }
   object TextInputProps {
     

@@ -6,7 +6,6 @@ import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Typ
 import typings.powerappsComponentFramework.ComponentFramework.UtilityApi.LookupOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

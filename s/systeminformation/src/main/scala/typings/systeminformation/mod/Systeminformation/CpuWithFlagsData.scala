@@ -2,13 +2,13 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CpuWithFlagsData extends CpuData {
+trait CpuWithFlagsData
+  extends StObject
+     with CpuData {
   
-  var flags: String = js.native
+  var flags: String
 }
 object CpuWithFlagsData {
   

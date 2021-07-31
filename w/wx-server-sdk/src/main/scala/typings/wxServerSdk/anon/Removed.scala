@@ -2,13 +2,11 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Removed extends StObject {
   
-  var removed: Double = js.native
+  var removed: Double
 }
 object Removed {
   

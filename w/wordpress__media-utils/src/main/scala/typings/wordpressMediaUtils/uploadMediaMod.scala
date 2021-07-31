@@ -6,26 +6,27 @@ import typings.std.Record
 import typings.wordpressMediaUtils.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadMediaMod {
   
-  @JSImport("@wordpress/media-utils/utils/upload-media", "uploadMedia")
+  @JSImport("@wordpress/media-utils/utils/upload-media", JSImport.Namespace)
   @js.native
-  def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadMedia")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>, 'alt_text' | 'caption' | 'source_url' | 'title'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>[P]} */ @js.native
-  trait MediaItem extends StObject {
+  - Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>, 'alt_text' | 'caption' | 'source_url' | 'title'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>[P]} */ trait MediaItem extends StObject {
     
-    var alt: String = js.native
+    var alt: String
     
-    var caption: String = js.native
+    var caption: String
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object MediaItem {
     
@@ -78,38 +79,37 @@ object uploadMediaMod {
     def SIZE_ABOVE_LIMIT: typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT = "SIZE_ABOVE_LIMIT".asInstanceOf[typings.wordpressMediaUtils.wordpressMediaUtilsStrings.SIZE_ABOVE_LIMIT]
   }
   
-  @js.native
   trait UploadMediaOptions extends StObject {
     
     /**
       * Additional data to include in the request.
       */
-    var additionalData: js.UndefOr[Record[String, _]] = js.native
+    var additionalData: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * Array with the types of media that can be uploaded, if unset all types are allowed.
       */
-    var allowedTypes: js.UndefOr[js.Array[String]] = js.native
+    var allowedTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * List of files.
       */
-    var filesList: ArrayLike[File] = js.native
+    var filesList: ArrayLike[File]
     
     /**
       * Maximum upload size in bytes allowed for the site.
       */
-    var maxUploadFileSize: Double = js.native
+    var maxUploadFileSize: Double
     
     /**
       * Function called when an error happens.
       */
-    def onError(error: Code): Unit = js.native
+    def onError(error: Code): Unit
     
     /**
       * Function called each time a file or a temporary representation of the file is available.
       */
-    def onFileChange(files: js.Array[MediaItem]): Unit = js.native
+    def onFileChange(files: js.Array[MediaItem]): Unit
     
     /**
       * Allowed mime types and file extensions.
@@ -120,7 +120,7 @@ object uploadMediaMod {
       * }
       * ```
       */
-    var wpAllowedMimeTypes: js.UndefOr[Record[String, String]] = js.native
+    var wpAllowedMimeTypes: js.UndefOr[Record[String, String]] = js.undefined
   }
   object UploadMediaOptions {
     
@@ -139,7 +139,7 @@ object uploadMediaMod {
     implicit class UploadMediaOptionsMutableBuilder[Self <: UploadMediaOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdditionalData(value: Record[String, _]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      def setAdditionalData(value: Record[String, js.Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)

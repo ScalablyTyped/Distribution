@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDimensionGroupRequest extends StObject {
   
   /** The range of the group to be deleted. */
-  var range: js.UndefOr[DimensionRange] = js.native
+  var range: js.UndefOr[DimensionRange] = js.undefined
 }
 object DeleteDimensionGroupRequest {
   

@@ -2,14 +2,12 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uid extends StObject {
   
   /** The ID of the remote user. */
-  var uid: String = js.native
+  var uid: String
 }
 object Uid {
   

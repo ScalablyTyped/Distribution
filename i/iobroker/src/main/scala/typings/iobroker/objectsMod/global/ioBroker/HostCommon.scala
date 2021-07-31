@@ -4,36 +4,36 @@ import typings.iobroker.iobrokerStrings.JavascriptSlashNodeDotjs
 import typings.iobroker.iobrokerStrings.`js-controller`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HostCommon extends ObjectCommon {
+trait HostCommon
+  extends StObject
+     with ObjectCommon {
   
   /** An array of IP addresses this host exposes */
-  var address: js.Array[String] = js.native
+  var address: js.Array[String]
   
   // e.g. 1.2.3 (following semver)
   /** The command line of the executable */
-  var cmd: String = js.native
+  var cmd: String
   
   // Make it possible to narrow the object type using the custom property
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var installedVersion: String = js.native
+  var installedVersion: String
   
   /** The display name of this host */
   @JSName("name")
-  var name_HostCommon: String = js.native
+  var name_HostCommon: String
   
-  var platform: JavascriptSlashNodeDotjs = js.native
+  var platform: JavascriptSlashNodeDotjs
   
-  var title: String = js.native
+  var title: String
   
   // IPv4 or IPv6
-  var `type`: `js-controller` = js.native
+  var `type`: `js-controller`
 }
 object HostCommon {
   
@@ -41,15 +41,14 @@ object HostCommon {
   def apply(
     address: js.Array[String],
     cmd: String,
+    custom: Unit,
     hostname: String,
     installedVersion: String,
     name: String,
-    platform: JavascriptSlashNodeDotjs,
-    title: String,
-    `type`: `js-controller`
+    title: String
   ): HostCommon = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], installedVersion = installedVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], installedVersion = installedVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = "Javascript/Node.js", title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("js-controller")
     __obj.asInstanceOf[HostCommon]
   }
   
@@ -64,6 +63,9 @@ object HostCommon {
     
     @scala.inline
     def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])

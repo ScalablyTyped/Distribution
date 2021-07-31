@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerCapabilitiesData extends Object {
+trait FeatureLayerCapabilitiesData
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the feature service is versioned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var isVersioned: Boolean = js.native
+  var isVersioned: Boolean
   
   /**
     * Indicates if the attachment is enabled on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsAttachment: Boolean = js.native
+  var supportsAttachment: Boolean
   
   /**
     * Indicates if the features in the layer support m-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsM: Boolean = js.native
+  var supportsM: Boolean
   
   /**
     * Indicates if the features in the layer support z-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsZ: Boolean = js.native
+  var supportsZ: Boolean
 }
 object FeatureLayerCapabilitiesData {
   

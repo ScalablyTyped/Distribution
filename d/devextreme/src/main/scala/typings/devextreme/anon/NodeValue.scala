@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.viz.dxTreeMapNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeValue extends StObject {
   
-  var node: js.UndefOr[dxTreeMapNode] = js.native
+  var node: js.UndefOr[dxTreeMapNode] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var valueText: js.UndefOr[String] = js.native
+  var valueText: js.UndefOr[String] = js.undefined
 }
 object NodeValue {
   

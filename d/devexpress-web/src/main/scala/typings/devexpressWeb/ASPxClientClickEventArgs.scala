@@ -2,69 +2,69 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick client events.
   */
-@js.native
-trait ASPxClientClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a column field name.
     */
-  var ColumnFieldName: String = js.native
+  var ColumnFieldName: String
   
   /**
     * Gets the index of a column that owns the processed cell.
     */
-  var ColumnIndex: Double = js.native
+  var ColumnIndex: Double
   
   /**
     * Gets a column field value.
     */
-  var ColumnValue: js.Any = js.native
+  var ColumnValue: js.Any
   
   /**
     * Gets a column value type.
     */
-  var ColumnValueType: String = js.native
+  var ColumnValueType: String
   
   /**
     * Gets the index of the data field which corresponds to the clicked summary value.
     */
-  var DataIndex: Double = js.native
+  var DataIndex: Double
   
   /**
     * Provides access to the parameters associated with the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick events.
     */
-  var HtmlEvent: js.Any = js.native
+  var HtmlEvent: js.Any
   
   /**
     * Gets a row field name.
     */
-  var RowFieldName: String = js.native
+  var RowFieldName: String
   
   /**
     * Gets the index of a row that owns the processed cell.
     */
-  var RowIndex: Double = js.native
+  var RowIndex: Double
   
   /**
     * Gets a row field value.
     */
-  var RowValue: js.Any = js.native
+  var RowValue: js.Any
   
   /**
     * Gets a row value type.
     */
-  var RowValueType: String = js.native
+  var RowValueType: String
   
   /**
     * Gets the processed cell's value.
     */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object ASPxClientClickEventArgs {
   

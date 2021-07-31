@@ -2,14 +2,12 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
   @JSName("$geometry")
-  var $geometry: js.Object = js.native
+  var $geometry: js.Object
 }
 object Geometry {
   

@@ -19,31 +19,29 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.word
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   /**
     * Enables the advanced query syntax.
     */
-  val advancedSyntax: js.UndefOr[Boolean] = js.native
+  val advancedSyntax: js.UndefOr[Boolean] = js.undefined
   
   /**
     * AdvancedSyntaxFeatures can be exactPhrase or excludeWords
     */
-  val advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.native
+  val advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.undefined
   
   /**
     * Enables compression of large integer arrays.
     */
-  val allowCompressionOfIntegerArray: js.UndefOr[Boolean] = js.native
+  val allowCompressionOfIntegerArray: js.UndefOr[Boolean] = js.undefined
   
   /**
     * hether to allow typos on numbers (“numeric tokens”) in the query string.
     */
-  val allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.native
+  val allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of alternatives that should be considered an exact match by the exact ranking criterion.
@@ -52,264 +50,264 @@ trait Settings extends StObject {
     js.Array[
       typings.algoliaClientSearch.algoliaClientSearchStrings.ignorePlurals | singleWordSynonym | multiWordsSynonym
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Allows proximity to impact which searchable attribute is matched in the attribute ranking stage.
     */
-  val attributeCriteriaComputedByMinProximity: js.UndefOr[Boolean] = js.native
+  val attributeCriteriaComputedByMinProximity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the de-duplication attribute to be used with the distinct feature.
     */
-  val attributeForDistinct: js.UndefOr[String] = js.native
+  val attributeForDistinct: js.UndefOr[String] = js.undefined
   
   /**
     * The complete list of attributes that will be used for faceting.
     */
-  val attributesForFaceting: js.UndefOr[js.Array[String]] = js.native
+  val attributesForFaceting: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of attributes to highlight.
     */
-  val attributesToHighlight: js.UndefOr[js.Array[String]] = js.native
+  val attributesToHighlight: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @deprecated Use `searchableAttributes` instead.
     */
-  val attributesToIndex: js.UndefOr[js.Array[String]] = js.native
+  val attributesToIndex: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Gives control over which attributes to retrieve and which not to retrieve.
     */
-  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.native
+  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of attributes to snippet, with an optional maximum number of words to snippet.
     */
-  val attributesToSnippet: js.UndefOr[js.Array[String]] = js.native
+  val attributesToSnippet: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of attributes on which to do a decomposition of camel case words.
     */
-  val camelCaseAttributes: js.UndefOr[js.Array[String]] = js.native
+  val camelCaseAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Overrides Algolia's default normalization.
     */
-  val customNormalization: js.UndefOr[Record[String, Record[String, String]]] = js.native
+  val customNormalization: js.UndefOr[Record[String, Record[String, String]]] = js.undefined
   
   /**
     * Specifies the custom ranking criterion.
     */
-  val customRanking: js.UndefOr[js.Array[String]] = js.native
+  val customRanking: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify on which attributes in your index Algolia should apply word-splitting (“decompounding”)
     */
-  val decompoundedAttributes: js.UndefOr[Record[String, js.Array[String]]] = js.native
+  val decompoundedAttributes: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
   
   /**
     * List of attributes on which you want to disable the exact ranking criterion.
     */
-  val disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.native
+  val disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of attributes on which you want to disable prefix matching.
     */
-  val disablePrefixOnAttributes: js.UndefOr[js.Array[String]] = js.native
+  val disablePrefixOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of attributes on which you want to disable typo tolerance.
     */
-  val disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.native
+  val disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of words on which you want to disable typo tolerance.
     */
-  val disableTypoToleranceOnWords: js.UndefOr[js.Array[String]] = js.native
+  val disableTypoToleranceOnWords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Enables de-duplication or grouping of results.
     */
-  val distinct: js.UndefOr[Boolean | Double] = js.native
+  val distinct: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * Enable personalization for queries by default
     */
-  val enablePersonalization: js.UndefOr[Boolean] = js.native
+  val enablePersonalization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether rules should be globally enabled.
     */
-  val enableRules: js.UndefOr[Boolean] = js.native
+  val enableRules: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls how the exact ranking criterion is computed when the query contains only one word.
     */
-  val exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.native
+  val exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.undefined
   
   /**
     * The HTML string to insert after the highlighted parts in all highlight and snippet results.
     */
-  val highlightPostTag: js.UndefOr[String] = js.native
+  val highlightPostTag: js.UndefOr[String] = js.undefined
   
   /**
     * The HTML string to insert before the highlighted parts in all highlight and snippet results.
     */
-  val highlightPreTag: js.UndefOr[String] = js.native
+  val highlightPreTag: js.UndefOr[String] = js.undefined
   
   /**
     * Set the number of hits per page.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.native
+  val hitsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Treats singular, plurals, and other forms of declensions as matching terms.
     */
-  val ignorePlurals: js.UndefOr[js.Array[String] | Boolean] = js.native
+  val ignorePlurals: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   
   /**
     * A list of language ISO code.
     */
-  val indexLanguages: js.UndefOr[js.Array[String]] = js.native
+  val indexLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Characters that should not be automatically normalized by the search engine.
     */
-  val keepDiacriticsOnCharacters: js.UndefOr[String] = js.native
+  val keepDiacriticsOnCharacters: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of facet hits to return during a search for facet values.
     */
-  val maxFacetHits: js.UndefOr[Double] = js.native
+  val maxFacetHits: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of facet values to return for each facet during a regular search.
     */
-  val maxValuesPerFacet: js.UndefOr[Double] = js.native
+  val maxValuesPerFacet: js.UndefOr[Double] = js.undefined
   
   /**
     * Precision of the proximity ranking criterion.
     */
-  val minProximity: js.UndefOr[Double] = js.native
+  val minProximity: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of characters a word in the query string must contain to accept matches with 1 typo.
     */
-  val minWordSizefor1Typo: js.UndefOr[Double] = js.native
+  val minWordSizefor1Typo: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of characters a word in the query string must contain to accept matches with 2 typos.
     */
-  val minWordSizefor2Typos: js.UndefOr[Double] = js.native
+  val minWordSizefor2Typos: js.UndefOr[Double] = js.undefined
   
   /**
     * List of numeric attributes that can be used as numerical filters.
     */
-  val numericAttributesForFiltering: js.UndefOr[js.Array[String]] = js.native
+  val numericAttributesForFiltering: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of words that should be considered as optional when found in the query.
     */
-  val optionalWords: js.UndefOr[js.Array[String]] = js.native
+  val optionalWords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set the maximum number of hits accessible via pagination.
     */
-  val paginationLimitedTo: js.UndefOr[Double] = js.native
+  val paginationLimitedTo: js.UndefOr[Double] = js.undefined
   
   /**
     * The primary parameter is automatically added to a replica's settings when the replica is created and cannot be modified.
     *
     * Can not be setted.
     */
-  val primary: js.UndefOr[String] = js.native
+  val primary: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the languages to be used by language-specific settings and functionalities such as ignorePlurals, removeStopWords, and CJK word-detection.
     */
-  val queryLanguages: js.UndefOr[js.Array[String]] = js.native
+  val queryLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Controls if and how query words are interpreted as prefixes.
     */
-  val queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.native
+  val queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.undefined
   
   /**
     * Controls the way results are sorted.
     */
-  val ranking: js.UndefOr[js.Array[String]] = js.native
+  val ranking: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Removes stop (common) words from the query before executing it.
     */
-  val removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.native
+  val removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
     * Selects a strategy to remove words from the query when it doesn’t match any hits.
     */
-  val removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.native
+  val removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.undefined
   
   /**
     * Whether to highlight and snippet the original word that matches the synonym or the synonym itself.
     */
-  val replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.native
+  val replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Creates replicas, exact copies of an index.
     */
-  val replicas: js.UndefOr[js.Array[String]] = js.native
+  val replicas: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Choose which fields the response will contain. Applies to search and browse queries.
     */
-  val responseFields: js.UndefOr[js.Array[String]] = js.native
+  val responseFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Restrict highlighting and snippeting to items that matched the query.
     */
-  val restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.native
+  val restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The complete list of attributes that will be used for searching.
     */
-  val searchableAttributes: js.UndefOr[js.Array[String]] = js.native
+  val searchableAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Control which separators are indexed.
     */
-  val separatorsToIndex: js.UndefOr[String] = js.native
+  val separatorsToIndex: js.UndefOr[String] = js.undefined
   
   /**
     * @deprecated Use `replicas` instead.
     */
-  val slaves: js.UndefOr[js.Array[String]] = js.native
+  val slaves: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * String used as an ellipsis indicator when a snippet is truncated.
     */
-  val snippetEllipsisText: js.UndefOr[String] = js.native
+  val snippetEllipsisText: js.UndefOr[String] = js.undefined
   
   /**
     * Controls how facet values are sorted.
     */
-  val sortFacetValuesBy: js.UndefOr[count | alpha] = js.native
+  val sortFacetValuesBy: js.UndefOr[count | alpha] = js.undefined
   
   /**
     * Controls whether typo tolerance is enabled and how it is applied.
     */
-  val typoTolerance: js.UndefOr[String | Boolean] = js.native
+  val typoTolerance: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * List of attributes that cannot be retrieved at query time.
     */
-  val unretrievableAttributes: js.UndefOr[js.Array[String]] = js.native
+  val unretrievableAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Custom userData that could be added to the Settings.
     */
-  val userData: js.UndefOr[js.Any] = js.native
+  val userData: js.UndefOr[js.Any] = js.undefined
 }
 object Settings {
   

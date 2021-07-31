@@ -2,74 +2,73 @@ package typings.extjs.Ext.form.field
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IField
-  extends typings.extjs.Ext.IBase {
+  extends StObject
+     with typings.extjs.Ext.IBase {
   
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
     * @param fn Object A function containing the transaction code
     */
-  var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
+  var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Template method before a field is reset  */
-  var beforeReset: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Checks whether the value of the field has changed since the last time it was checked  */
-  var checkChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Checks the isDirty state of the field and if it has changed since the last time it was checked fires the dirtychange  */
-  var checkDirty: js.UndefOr[js.Function0[Unit]] = js.native
+  var checkDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Clear any invalid styles messages for this field  */
-  var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Only relevant if the instance s isFileUpload method returns true
     * @returns any
     */
-  var extractFileInput: js.UndefOr[js.Function0[_]] = js.native
+  var extractFileInput: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Runs this field s validators and returns an array of error messages for any validation failures
     * @param value Object The value to get errors for (defaults to the current field value)
     * @returns any All error messages for this field; an empty Array if none.
     */
-  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
     * @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getModelData: js.UndefOr[js.Function0[_]] = js.native
+  var getModelData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the name attribute of the field
     * @returns string name The field name
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.native
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the parameter s that would be included in a standard form submit for this field
     * @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getSubmitData: js.UndefOr[js.Function0[_]] = js.native
+  var getSubmitData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the current data value of the field
     * @returns any value The field value
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Initializes this Field mixin on the current instance  */
-  var initField: js.UndefOr[js.Function0[Unit]] = js.native
+  var initField: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Initializes the field s value based on the initial config  */
-  var initValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var initValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
     * @returns any True if this field has been changed from its original value (and is not disabled), false otherwise.
     */
-  var isDirty: js.UndefOr[js.Function0[_]] = js.native
+  var isDirty: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns whether two field values are logically equal
     * @param value1 Object The first value to compare
@@ -77,64 +76,64 @@ trait IField
     * @returns any True if the values are equal, false if inequal.
     */
   var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
     * @returns any
     */
-  var isFileUpload: js.UndefOr[js.Function0[_]] = js.native
+  var isFileUpload: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isFormField: js.UndefOr[Boolean] = js.native
+  var isFormField: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
     * @returns any True if the value is valid, else false
     */
-  var isValid: js.UndefOr[js.Function0[_]] = js.native
+  var isValid: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Associate one or more error messages with this field
     * @param errors String/String[] The error message(s) for the field.
     */
-  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], Unit]] = js.native
+  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var originalValue: js.UndefOr[js.Any] = js.native
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
-  var reset: js.UndefOr[js.Function0[Unit]] = js.native
+  var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Resets the field s originalValue property so it matches the current value  */
-  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets a data value into the field and runs the change detection and validation
     * @param value Object The value to set
     * @returns any this
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var submitValue: js.UndefOr[Boolean] = js.native
+  var submitValue: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Allows for any necessary modifications before the original value is set
     * @param value Object The initial value
     * @returns any The modified initial value
     */
-  var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
+  var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
     * @returns any True if the value is valid, else false
     */
-  var validate: js.UndefOr[js.Function0[_]] = js.native
+  var validate: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var validateOnChange: js.UndefOr[Boolean] = js.native
+  var validateOnChange: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IField {
   
@@ -184,19 +183,19 @@ object IField {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setExtractFileInput(value: () => _): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
+    def setExtractFileInput(value: () => js.Any): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
     
     @scala.inline
     def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
     
     @scala.inline
-    def setGetErrors(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
+    def setGetErrors(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
     
     @scala.inline
-    def setGetModelData(value: () => _): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
+    def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
@@ -208,13 +207,13 @@ object IField {
     def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
     @scala.inline
-    def setGetSubmitData(value: () => _): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
+    def setGetSubmitData(value: () => js.Any): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubmitDataUndefined: Self = StObject.set(x, "getSubmitData", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
@@ -232,19 +231,19 @@ object IField {
     def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
     
     @scala.inline
-    def setIsDirty(value: () => _): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    def setIsDirty(value: () => js.Any): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def setIsEqual(value: (/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+    def setIsEqual(value: (/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
     
     @scala.inline
     def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
     
     @scala.inline
-    def setIsFileUpload(value: () => _): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
+    def setIsFileUpload(value: () => js.Any): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
@@ -256,7 +255,7 @@ object IField {
     def setIsFormFieldUndefined: Self = StObject.set(x, "isFormField", js.undefined)
     
     @scala.inline
-    def setIsValid(value: () => _): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    def setIsValid(value: () => js.Any): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
@@ -292,7 +291,7 @@ object IField {
     def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
@@ -304,13 +303,13 @@ object IField {
     def setSubmitValueUndefined: Self = StObject.set(x, "submitValue", js.undefined)
     
     @scala.inline
-    def setTransformOriginalValue(value: /* value */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    def setTransformOriginalValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
     
     @scala.inline
-    def setValidate(value: () => _): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    def setValidate(value: () => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     @scala.inline
     def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])

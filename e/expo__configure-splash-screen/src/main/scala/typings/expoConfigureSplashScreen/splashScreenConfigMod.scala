@@ -12,23 +12,21 @@ import typings.expoConfigureSplashScreen.anon.Translucent
 import typings.expoConfigureSplashScreen.constantsMod.SplashScreenImageResizeModeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splashScreenConfigMod {
   
-  @js.native
   trait AndroidSplashScreenConfig extends StObject {
     
-    var backgroundColor: Color = js.native
+    var backgroundColor: Color
     
-    var darkMode: js.UndefOr[Image] = js.native
+    var darkMode: js.UndefOr[Image] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.native
+    var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.undefined
     
-    var statusBar: js.UndefOr[Style] = js.native
+    var statusBar: js.UndefOr[Style] = js.undefined
   }
   object AndroidSplashScreenConfig {
     
@@ -70,18 +68,17 @@ object splashScreenConfigMod {
     }
   }
   
-  @js.native
   trait AndroidSplashScreenConfigJSON extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var darkMode: js.UndefOr[StatusBar] = js.native
+    var darkMode: js.UndefOr[StatusBar] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var imageResizeMode: js.UndefOr[String] = js.native
+    var imageResizeMode: js.UndefOr[String] = js.undefined
     
-    var statusBar: js.UndefOr[Translucent] = js.native
+    var statusBar: js.UndefOr[Translucent] = js.undefined
   }
   object AndroidSplashScreenConfigJSON {
     
@@ -123,18 +120,17 @@ object splashScreenConfigMod {
     }
   }
   
-  @js.native
   trait IosSplashScreenConfig extends StObject {
     
-    var backgroundColor: Color = js.native
+    var backgroundColor: Color
     
-    var darkMode: js.UndefOr[BackgroundColor] = js.native
+    var darkMode: js.UndefOr[BackgroundColor] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.native
+    var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.undefined
     
-    var statusBar: js.UndefOr[Hidden] = js.native
+    var statusBar: js.UndefOr[Hidden] = js.undefined
   }
   object IosSplashScreenConfig {
     
@@ -176,18 +172,17 @@ object splashScreenConfigMod {
     }
   }
   
-  @js.native
   trait IosSplashScreenConfigJSON extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var darkMode: js.UndefOr[BackgroundColorImage] = js.native
+    var darkMode: js.UndefOr[BackgroundColorImage] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var imageResizeMode: js.UndefOr[String] = js.native
+    var imageResizeMode: js.UndefOr[String] = js.undefined
     
-    var statusBar: js.UndefOr[HiddenStyle] = js.native
+    var statusBar: js.UndefOr[HiddenStyle] = js.undefined
   }
   object IosSplashScreenConfigJSON {
     

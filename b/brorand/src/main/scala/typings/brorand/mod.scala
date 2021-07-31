@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,8 +17,16 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("brorand", "Rand")
   @js.native
-  class Rand protected () extends RandInstance {
+  class Rand protected ()
+    extends StObject
+       with RandInstance {
     def this(rand: typings.brorand.mod.rand) = this()
+    
+    /* CompleteClass */
+    override def generate(len: Double): Buffer | Uint8Array = js.native
+    
+    /* CompleteClass */
+    var rand: typings.brorand.mod.rand = js.native
   }
   
   @js.native
@@ -30,12 +37,11 @@ object mod extends Shortcut {
     var Rand: RandStatic = js.native
   }
   
-  @js.native
   trait RandInstance extends StObject {
     
-    def generate(len: Double): Buffer | Uint8Array = js.native
+    def generate(len: Double): Buffer | Uint8Array
     
-    var rand: typings.brorand.mod.rand = js.native
+    var rand: typings.brorand.mod.rand
   }
   object RandInstance {
     
@@ -57,17 +63,18 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait RandStatic extends Instantiable1[/* rand */ rand, RandInstance]
+  trait RandStatic
+    extends StObject
+       with Instantiable1[/* rand */ rand, RandInstance]
   
   type _To = BrorandStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: BrorandStatic = ^
   
-  @js.native
   trait rand extends StObject {
     
-    def getByte(): Double = js.native
+    def getByte(): Double
   }
   object rand {
     

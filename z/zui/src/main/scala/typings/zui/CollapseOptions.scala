@@ -2,15 +2,13 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapseOptions extends StObject {
   
-  var parent: js.UndefOr[js.Any] = js.native
+  var parent: js.UndefOr[js.Any] = js.undefined
   
-  var toggle: js.UndefOr[Boolean] = js.native
+  var toggle: js.UndefOr[Boolean] = js.undefined
 }
 object CollapseOptions {
   

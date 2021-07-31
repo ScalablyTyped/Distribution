@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimensions extends StObject {
   
   /**
     * The channel used for grouping and filters.
     */
-  var Channel: js.UndefOr[typings.awsSdk.connectMod.Channel] = js.native
+  var Channel: js.UndefOr[typings.awsSdk.connectMod.Channel] = js.undefined
   
   /**
     * Information about the queue for which metrics are returned.
     */
-  var Queue: js.UndefOr[QueueReference] = js.native
+  var Queue: js.UndefOr[QueueReference] = js.undefined
 }
 object Dimensions {
   

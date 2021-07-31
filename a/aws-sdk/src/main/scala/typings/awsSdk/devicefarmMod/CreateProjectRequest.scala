@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectRequest extends StObject {
   
   /**
     * Sets the execution timeout value (in minutes) for a project. All test runs in this project use the specified execution timeout value unless overridden when scheduling a run.
     */
-  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * The project's name.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object CreateProjectRequest {
   

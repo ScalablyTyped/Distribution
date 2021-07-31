@@ -7,12 +7,14 @@ import typings.angular.mod.IDirective
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableDynamicDirectiveMod {
   
-  @JSImport("ng-table/src/browser/ngTableDynamic.directive", "ngTableDynamic")
+  @JSImport("ng-table/src/browser/ngTableDynamic.directive", JSImport.Namespace)
   @js.native
-  def ngTableDynamic(): IDirective[IScope, JQLite, IAttributes, IController] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ngTableDynamic(): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableDynamic")().asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
 }

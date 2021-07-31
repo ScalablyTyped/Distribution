@@ -2,29 +2,27 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends StObject {
   
   /** Gateway address used for the IP configuration. */
-  var Gateway: js.UndefOr[S] = js.native
+  var Gateway: js.UndefOr[S] = js.undefined
   
   /** The IP address for a connection. Can be IPv4 or IPv6 address, depending on value of Type. */
-  var IPAddress: js.UndefOr[S] = js.native
+  var IPAddress: js.UndefOr[S] = js.undefined
   
   /** Array of addresses used for name servers. */
-  var NameServers: js.UndefOr[SL] = js.native
+  var NameServers: js.UndefOr[SL] = js.undefined
   
   /** The routing prefix. */
-  var RoutingPrefix: js.UndefOr[L] = js.native
+  var RoutingPrefix: js.UndefOr[L] = js.undefined
   
   /** The IP configuration type. Can be IPv4 or IPv6. */
-  var Type: js.UndefOr[IPConfigurationType | ManagedType[IPConfigurationType]] = js.native
+  var Type: js.UndefOr[IPConfigurationType | ManagedType[IPConfigurationType]] = js.undefined
   
   /** The URL for WEb Proxy Auto-Discovery, as reported over DHCP. */
-  var WebProxyAutoDiscoveryUrl: js.UndefOr[S] = js.native
+  var WebProxyAutoDiscoveryUrl: js.UndefOr[S] = js.undefined
 }
 object IPConfigProperties {
   
@@ -35,7 +33,7 @@ object IPConfigProperties {
   }
   
   @scala.inline
-  implicit class IPConfigPropertiesMutableBuilder[Self <: IPConfigProperties[_, _, _, _, _], M /* <: ManagedObject */, B, S, SL, L] (val x: Self with (IPConfigProperties[M, B, S, SL, L])) extends AnyVal {
+  implicit class IPConfigPropertiesMutableBuilder[Self <: IPConfigProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, B, S, SL, L] (val x: Self & (IPConfigProperties[M, B, S, SL, L])) extends AnyVal {
     
     @scala.inline
     def setGateway(value: S): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])

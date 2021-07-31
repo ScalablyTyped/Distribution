@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportTasksRequest extends StObject {
   
   /**
     * The maximum number of items returned. If you don't specify a value, the default is up to 50 items.
     */
-  var limit: js.UndefOr[DescribeLimit] = js.native
+  var limit: js.UndefOr[DescribeLimit] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The status code of the export task. Specifying a status code filters the results to zero or more export tasks.
     */
-  var statusCode: js.UndefOr[ExportTaskStatusCode] = js.native
+  var statusCode: js.UndefOr[ExportTaskStatusCode] = js.undefined
   
   /**
     * The ID of the export task. Specifying a task ID filters the results to zero or one export tasks.
     */
-  var taskId: js.UndefOr[ExportTaskId] = js.native
+  var taskId: js.UndefOr[ExportTaskId] = js.undefined
 }
 object DescribeExportTasksRequest {
   

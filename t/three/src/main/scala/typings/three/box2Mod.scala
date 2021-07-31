@@ -3,7 +3,6 @@ package typings.three
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object box2Mod {
@@ -12,7 +11,7 @@ object box2Mod {
   @js.native
   class Box2 () extends StObject {
     def this(min: Vector2) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Vector2) = this()
+    def this(min: Unit, max: Vector2) = this()
     def this(min: Vector2, max: Vector2) = this()
     
     def clampPoint(point: Vector2, target: Vector2): Vector2 = js.native

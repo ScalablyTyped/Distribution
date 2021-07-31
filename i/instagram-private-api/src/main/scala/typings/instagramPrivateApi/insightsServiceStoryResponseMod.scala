@@ -2,15 +2,13 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object insightsServiceStoryResponseMod {
   
-  @js.native
   trait InsightsServiceStoryResponseData extends StObject {
     
-    var media: InsightsServiceStoryResponseMedia = js.native
+    var media: InsightsServiceStoryResponseMedia
   }
   object InsightsServiceStoryResponseData {
     
@@ -28,12 +26,11 @@ object insightsServiceStoryResponseMod {
     }
   }
   
-  @js.native
   trait InsightsServiceStoryResponseInlineInsightsNode extends StObject {
     
-    var metrics: Null = js.native
+    var metrics: Null
     
-    var state: String = js.native
+    var state: String
   }
   object InsightsServiceStoryResponseInlineInsightsNode {
     
@@ -54,12 +51,11 @@ object insightsServiceStoryResponseMod {
     }
   }
   
-  @js.native
   trait InsightsServiceStoryResponseInstagramActor extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var instagram_actor_id: String = js.native
+    var instagram_actor_id: String
   }
   object InsightsServiceStoryResponseInstagramActor {
     
@@ -80,26 +76,25 @@ object insightsServiceStoryResponseMod {
     }
   }
   
-  @js.native
   trait InsightsServiceStoryResponseMedia extends StObject {
     
-    var creation_time: Double = js.native
+    var creation_time: Double
     
-    var id: String = js.native
+    var id: String
     
-    var inline_insights_node: InsightsServiceStoryResponseInlineInsightsNode = js.native
+    var inline_insights_node: InsightsServiceStoryResponseInlineInsightsNode
     
-    var instagram_actor: InsightsServiceStoryResponseInstagramActor = js.native
+    var instagram_actor: InsightsServiceStoryResponseInstagramActor
     
-    var instagram_media_id: String = js.native
+    var instagram_media_id: String
     
-    var instagram_media_owner_id: String = js.native
+    var instagram_media_owner_id: String
     
-    var shopping_outbound_click_count: Double = js.native
+    var shopping_outbound_click_count: Double
     
-    var taps_back_count: Double = js.native
+    var taps_back_count: Double
     
-    var taps_forward_count: Double = js.native
+    var taps_forward_count: Double
   }
   object InsightsServiceStoryResponseMedia {
     
@@ -151,10 +146,9 @@ object insightsServiceStoryResponseMod {
     }
   }
   
-  @js.native
   trait InsightsServiceStoryResponseRootObject extends StObject {
     
-    var data: InsightsServiceStoryResponseData = js.native
+    var data: InsightsServiceStoryResponseData
   }
   object InsightsServiceStoryResponseRootObject {
     

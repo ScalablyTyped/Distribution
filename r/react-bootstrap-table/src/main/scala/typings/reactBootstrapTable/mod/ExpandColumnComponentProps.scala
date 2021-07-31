@@ -2,21 +2,19 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandColumnComponentProps extends StObject {
   
   /**
     * True if the current row is able to be expanded.
     */
-  var isExpandableRow: Boolean = js.native
+  var isExpandableRow: Boolean
   
   /**
     * True if the current row is currently expanded.
     */
-  var isExpanded: Boolean = js.native
+  var isExpanded: Boolean
 }
 object ExpandColumnComponentProps {
   

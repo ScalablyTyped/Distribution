@@ -4,27 +4,45 @@ import typings.nodelibFsStat.anon.PartialFileSystemAdapter
 import typings.nodelibFsStat.fsMod.FileSystemAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
   @JSImport("@nodelib/fs.stat/out/settings", JSImport.Default)
   @js.native
-  class default () extends Settings {
+  class default ()
+    extends StObject
+       with Settings {
     def this(_options: Options) = this()
+    
+    /* CompleteClass */
+    var _getValue: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _options: js.Any = js.native
+    
+    /* CompleteClass */
+    override val followSymbolicLink: Boolean = js.native
+    
+    /* CompleteClass */
+    override val fs: FileSystemAdapter = js.native
+    
+    /* CompleteClass */
+    override val markSymbolicLink: Boolean = js.native
+    
+    /* CompleteClass */
+    override val throwErrorOnBrokenSymbolicLink: Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var followSymbolicLink: js.UndefOr[Boolean] = js.native
+    var followSymbolicLink: js.UndefOr[Boolean] = js.undefined
     
-    var fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+    var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
     
-    var markSymbolicLink: js.UndefOr[Boolean] = js.native
+    var markSymbolicLink: js.UndefOr[Boolean] = js.undefined
     
-    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
+    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -63,20 +81,19 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var _getValue: js.Any = js.native
+    var _getValue: js.Any
     
-    val _options: js.Any = js.native
+    val _options: js.Any
     
-    val followSymbolicLink: Boolean = js.native
+    val followSymbolicLink: Boolean
     
-    val fs: FileSystemAdapter = js.native
+    val fs: FileSystemAdapter
     
-    val markSymbolicLink: Boolean = js.native
+    val markSymbolicLink: Boolean
     
-    val throwErrorOnBrokenSymbolicLink: Boolean = js.native
+    val throwErrorOnBrokenSymbolicLink: Boolean
   }
   object Settings {
     

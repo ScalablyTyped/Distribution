@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageBarBaseMod {
@@ -57,14 +56,13 @@ object messageBarBaseMod {
     def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IMessageBarState extends StObject {
     
-    var expandSingleLine: js.UndefOr[Boolean] = js.native
+    var expandSingleLine: js.UndefOr[Boolean] = js.undefined
     
-    var labelId: js.UndefOr[String] = js.native
+    var labelId: js.UndefOr[String] = js.undefined
     
-    var showContent: js.UndefOr[Boolean] = js.native
+    var showContent: js.UndefOr[Boolean] = js.undefined
   }
   object IMessageBarState {
     

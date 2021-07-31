@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.entitiesMod.ProfileEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoverFeedResponseMod {
@@ -32,15 +31,14 @@ object discoverFeedResponseMod {
     var username: String = js.native
   }
   
-  @js.native
   trait DiscoverFeedResponseNewSuggestedUsers extends StObject {
     
-    var suggestions: js.Array[_] = js.native
+    var suggestions: js.Array[js.Any]
   }
   object DiscoverFeedResponseNewSuggestedUsers {
     
     @scala.inline
-    def apply(suggestions: js.Array[_]): DiscoverFeedResponseNewSuggestedUsers = {
+    def apply(suggestions: js.Array[js.Any]): DiscoverFeedResponseNewSuggestedUsers = {
       val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiscoverFeedResponseNewSuggestedUsers]
     }
@@ -49,27 +47,26 @@ object discoverFeedResponseMod {
     implicit class DiscoverFeedResponseNewSuggestedUsersMutableBuilder[Self <: DiscoverFeedResponseNewSuggestedUsers] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setSuggestions(value: js.Array[_]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      def setSuggestions(value: js.Array[js.Any]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuggestionsVarargs(value: js.Any*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait DiscoverFeedResponseRootObject extends StObject {
     
-    var max_id: String = js.native
+    var max_id: String
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var new_suggested_users: DiscoverFeedResponseNewSuggestedUsers = js.native
+    var new_suggested_users: DiscoverFeedResponseNewSuggestedUsers
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var status: String = js.native
+    var status: String
     
-    var suggested_users: DiscoverFeedResponseSuggestedUsers = js.native
+    var suggested_users: DiscoverFeedResponseSuggestedUsers
   }
   object DiscoverFeedResponseRootObject {
     
@@ -109,10 +106,9 @@ object discoverFeedResponseMod {
     }
   }
   
-  @js.native
   trait DiscoverFeedResponseSuggestedUsers extends StObject {
     
-    var suggestions: js.Array[DiscoverFeedResponseSuggestionsItem] = js.native
+    var suggestions: js.Array[DiscoverFeedResponseSuggestionsItem]
   }
   object DiscoverFeedResponseSuggestedUsers {
     
@@ -133,34 +129,33 @@ object discoverFeedResponseMod {
     }
   }
   
-  @js.native
   trait DiscoverFeedResponseSuggestionsItem extends StObject {
     
-    var algorithm: String = js.native
+    var algorithm: String
     
-    var caption: String = js.native
+    var caption: String
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var icon: String = js.native
+    var icon: String
     
-    var is_new_suggestion: Boolean = js.native
+    var is_new_suggestion: Boolean
     
-    var large_urls: js.Array[_] = js.native
+    var large_urls: js.Array[js.Any]
     
-    var media_ids: js.Array[_] = js.native
+    var media_ids: js.Array[js.Any]
     
-    var media_infos: js.Array[_] = js.native
+    var media_infos: js.Array[js.Any]
     
-    var social_context: String = js.native
+    var social_context: String
     
-    var thumbnail_urls: js.Array[_] = js.native
+    var thumbnail_urls: js.Array[js.Any]
     
-    var user: DiscoverFeedResponseUser = js.native
+    var user: DiscoverFeedResponseUser
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object DiscoverFeedResponseSuggestionsItem {
     
@@ -171,11 +166,11 @@ object discoverFeedResponseMod {
       followed_by: Boolean,
       icon: String,
       is_new_suggestion: Boolean,
-      large_urls: js.Array[_],
-      media_ids: js.Array[_],
-      media_infos: js.Array[_],
+      large_urls: js.Array[js.Any],
+      media_ids: js.Array[js.Any],
+      media_infos: js.Array[js.Any],
       social_context: String,
-      thumbnail_urls: js.Array[_],
+      thumbnail_urls: js.Array[js.Any],
       user: DiscoverFeedResponseUser,
       uuid: String,
       value: Double
@@ -203,19 +198,19 @@ object discoverFeedResponseMod {
       def setIs_new_suggestion(value: Boolean): Self = StObject.set(x, "is_new_suggestion", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLarge_urls(value: js.Array[_]): Self = StObject.set(x, "large_urls", value.asInstanceOf[js.Any])
+      def setLarge_urls(value: js.Array[js.Any]): Self = StObject.set(x, "large_urls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLarge_urlsVarargs(value: js.Any*): Self = StObject.set(x, "large_urls", js.Array(value :_*))
       
       @scala.inline
-      def setMedia_ids(value: js.Array[_]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
+      def setMedia_ids(value: js.Array[js.Any]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMedia_idsVarargs(value: js.Any*): Self = StObject.set(x, "media_ids", js.Array(value :_*))
       
       @scala.inline
-      def setMedia_infos(value: js.Array[_]): Self = StObject.set(x, "media_infos", value.asInstanceOf[js.Any])
+      def setMedia_infos(value: js.Array[js.Any]): Self = StObject.set(x, "media_infos", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMedia_infosVarargs(value: js.Any*): Self = StObject.set(x, "media_infos", js.Array(value :_*))
@@ -224,7 +219,7 @@ object discoverFeedResponseMod {
       def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setThumbnail_urls(value: js.Array[_]): Self = StObject.set(x, "thumbnail_urls", value.asInstanceOf[js.Any])
+      def setThumbnail_urls(value: js.Array[js.Any]): Self = StObject.set(x, "thumbnail_urls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setThumbnail_urlsVarargs(value: js.Any*): Self = StObject.set(x, "thumbnail_urls", js.Array(value :_*))

@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSecurityConfigurationInput extends StObject {
   
   /**
     * The name of the security configuration.
     */
-  var Name: XmlString = js.native
+  var Name: XmlString
   
   /**
     * The security configuration details in JSON format. For JSON parameters and examples, see Use Security Configurations to Set Up Cluster Security in the Amazon EMR Management Guide.
     */
-  var SecurityConfiguration: String = js.native
+  var SecurityConfiguration: String
 }
 object CreateSecurityConfigurationInput {
   

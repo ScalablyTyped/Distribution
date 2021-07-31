@@ -4,51 +4,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Subscription. */
-@js.native
 trait ISubscription extends StObject {
   
   /** Subscription ackDeadlineSeconds */
-  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
   
   /** Subscription deadLetterPolicy */
-  var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.native
+  var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
   
   /** Subscription detached */
-  var detached: js.UndefOr[Boolean | Null] = js.native
+  var detached: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Subscription enableMessageOrdering */
-  var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.native
+  var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Subscription expirationPolicy */
-  var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.native
+  var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.undefined
   
   /** Subscription filter */
-  var filter: js.UndefOr[String | Null] = js.native
+  var filter: js.UndefOr[String | Null] = js.undefined
   
   /** Subscription labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** Subscription messageRetentionDuration */
-  var messageRetentionDuration: js.UndefOr[IDuration | Null] = js.native
+  var messageRetentionDuration: js.UndefOr[IDuration | Null] = js.undefined
   
   /** Subscription name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Subscription pushConfig */
-  var pushConfig: js.UndefOr[IPushConfig | Null] = js.native
+  var pushConfig: js.UndefOr[IPushConfig | Null] = js.undefined
   
   /** Subscription retainAckedMessages */
-  var retainAckedMessages: js.UndefOr[Boolean | Null] = js.native
+  var retainAckedMessages: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Subscription retryPolicy */
-  var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.native
+  var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
   
   /** Subscription topic */
-  var topic: js.UndefOr[String | Null] = js.native
+  var topic: js.UndefOr[String | Null] = js.undefined
 }
 object ISubscription {
   

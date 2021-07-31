@@ -2,20 +2,18 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuOptions extends StObject {
   
   /** The command to trigger when the item is clicked. */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
   /** The menu itme's label. */
-  var label: String = js.native
+  var label: String
   
   /** An array of sub menus. */
-  var submenu: js.UndefOr[js.Array[MenuOptions]] = js.native
+  var submenu: js.UndefOr[js.Array[MenuOptions]] = js.undefined
 }
 object MenuOptions {
   

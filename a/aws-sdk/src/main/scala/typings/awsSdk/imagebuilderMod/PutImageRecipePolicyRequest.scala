@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutImageRecipePolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe that this policy should be applied to. 
     */
-  var imageRecipeArn: ImageRecipeArn = js.native
+  var imageRecipeArn: ImageRecipeArn
   
   /**
     * The policy to apply. 
     */
-  var policy: ResourcePolicyDocument = js.native
+  var policy: ResourcePolicyDocument
 }
 object PutImageRecipePolicyRequest {
   

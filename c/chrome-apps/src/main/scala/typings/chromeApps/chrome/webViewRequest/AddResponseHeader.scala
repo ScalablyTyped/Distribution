@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * you need to first remove and then add a new
   * response header in order to replace one.
   */
-@js.native
-trait AddResponseHeader extends OnRequestActions {
+trait AddResponseHeader
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader
 }
 object AddResponseHeader {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader): AddResponseHeader = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): AddResponseHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseHeader")
     __obj.asInstanceOf[AddResponseHeader]
   }
   

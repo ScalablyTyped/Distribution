@@ -11,8 +11,8 @@ Get the first fulfilled promise that satisfies the provided testing function
 | Full name          | p-locate |
 | Keywords           | promise, locate, find, finder, search, searcher, test, array, collection, iterable, iterator, race, fulfilled, fastest, async, await, promises, bluebird |
 | # releases         | 4 |
-| # dependents       | 117 |
-| # downloads        | 1383692156 |
+| # dependents       | 155 |
+| # downloads        | 1875373543 |
 | # stars            | 1 |
 
 ## Links

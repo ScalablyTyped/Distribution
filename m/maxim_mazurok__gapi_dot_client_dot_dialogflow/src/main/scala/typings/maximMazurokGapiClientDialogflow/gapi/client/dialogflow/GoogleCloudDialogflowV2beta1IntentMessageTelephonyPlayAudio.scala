@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObje
     * (usually the same as the Dialogflow agent project). If the Google Cloud Storage bucket is in the Telephony Gateway project, this permission is added by default when enabling the
     * Dialogflow V2 API. For audio from other sources, consider using the `TelephonySynthesizeSpeech` message with SSML.
     */
-  var audioUri: js.UndefOr[String] = js.native
+  var audioUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   

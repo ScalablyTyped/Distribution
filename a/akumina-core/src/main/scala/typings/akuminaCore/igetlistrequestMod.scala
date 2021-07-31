@@ -3,49 +3,47 @@ package typings.akuminaCore
 import typings.akuminaCore.ilanguagerequestMod.ILanguageRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igetlistrequestMod {
   
-  @js.native
   trait IGetListRequest extends StObject {
     
-    var PageManager: js.UndefOr[js.Any] = js.native
+    var PageManager: js.UndefOr[js.Any] = js.undefined
     
-    var additionalSelectFields: String = js.native
+    var additionalSelectFields: String
     
-    var contextSiteUrl: String = js.native
+    var contextSiteUrl: String
     
-    var expandFields: String = js.native
+    var expandFields: String
     
-    var hostUrl: String = js.native
+    var hostUrl: String
     
-    var isHosted: Boolean = js.native
+    var isHosted: Boolean
     
-    var isPagedResult: Boolean = js.native
+    var isPagedResult: Boolean
     
-    var isRoot: Boolean = js.native
+    var isRoot: Boolean
     
-    var language: js.UndefOr[ILanguageRequest] = js.native
+    var language: js.UndefOr[ILanguageRequest] = js.undefined
     
-    var listName: String = js.native
+    var listName: String
     
-    var orderBy: js.UndefOr[js.Any] = js.native
+    var orderBy: js.UndefOr[js.Any] = js.undefined
     
-    var personaCheckRequired: Boolean = js.native
+    var personaCheckRequired: Boolean
     
-    var postData: js.Object = js.native
+    var postData: js.Object
     
-    var preloadCallback: js.UndefOr[js.Any] = js.native
+    var preloadCallback: js.UndefOr[js.Any] = js.undefined
     
-    var queryFilter: js.UndefOr[js.Any] = js.native
+    var queryFilter: js.UndefOr[js.Any] = js.undefined
     
-    var rowLimit: Double = js.native
+    var rowLimit: Double
     
-    var selectFields: String = js.native
+    var selectFields: String
     
-    var viewXml: String = js.native
+    var viewXml: String
   }
   object IGetListRequest {
     

@@ -2,23 +2,21 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedTransaction extends StObject {
   
-  var messageHash: js.UndefOr[String] = js.native
+  var messageHash: js.UndefOr[String] = js.undefined
   
-  var r: String = js.native
+  var r: String
   
-  var rawTransaction: js.UndefOr[String] = js.native
+  var rawTransaction: js.UndefOr[String] = js.undefined
   
-  var s: String = js.native
+  var s: String
   
-  var transactionHash: js.UndefOr[String] = js.native
+  var transactionHash: js.UndefOr[String] = js.undefined
   
-  var v: String = js.native
+  var v: String
 }
 object SignedTransaction {
   

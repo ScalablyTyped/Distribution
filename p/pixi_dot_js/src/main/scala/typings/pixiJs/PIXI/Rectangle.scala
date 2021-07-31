@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,9 +29,9 @@ trait Rectangle extends StObject {
     * @return {PIXI.Rectangle} Returns itself.
     */
   def ceil(): Rectangle = js.native
-  def ceil(resolution: js.UndefOr[scala.Nothing], eps: Double): Rectangle = js.native
   def ceil(resolution: Double): Rectangle = js.native
   def ceil(resolution: Double, eps: Double): Rectangle = js.native
+  def ceil(resolution: Unit, eps: Double): Rectangle = js.native
   
   /**
     * Checks whether the x and y coordinates given are contained within this Rectangle
@@ -97,9 +96,9 @@ trait Rectangle extends StObject {
     * @return {PIXI.Rectangle} Returns itself.
     */
   def pad(): Rectangle = js.native
-  def pad(paddingX: js.UndefOr[scala.Nothing], paddingY: Double): Rectangle = js.native
   def pad(paddingX: Double): Rectangle = js.native
   def pad(paddingX: Double, paddingY: Double): Rectangle = js.native
+  def pad(paddingX: Unit, paddingY: Double): Rectangle = js.native
   
   /**
     * returns the right edge of the rectangle

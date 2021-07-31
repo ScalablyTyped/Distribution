@@ -6,39 +6,37 @@ import typings.chartJs.chartJsStrings.start
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegendOptions extends StObject {
   
-  var align: js.UndefOr[center | end | start] = js.native
+  var align: js.UndefOr[center | end | start] = js.undefined
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var labels: js.UndefOr[ChartLegendLabelOptions] = js.native
+  var labels: js.UndefOr[ChartLegendLabelOptions] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function2[/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onHover: js.UndefOr[
     js.Function2[/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onLeave: js.UndefOr[
     js.Function2[/* event */ MouseEvent, /* legendItem */ ChartLegendLabelItem, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var textDirection: js.UndefOr[String] = js.native
+  var textDirection: js.UndefOr[String] = js.undefined
 }
 object ChartLegendOptions {
   

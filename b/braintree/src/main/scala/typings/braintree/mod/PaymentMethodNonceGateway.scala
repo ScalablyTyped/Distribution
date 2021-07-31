@@ -2,15 +2,13 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodNonceGateway extends StObject {
   
-  def create(paymentMethodToken: String): js.Promise[ValidatedResponse[PaymentMethodNonce]] = js.native
+  def create(paymentMethodToken: String): js.Promise[ValidatedResponse[PaymentMethodNonce]]
   
-  def find(paymentMethodNonce: String): js.Promise[PaymentMethodNonce] = js.native
+  def find(paymentMethodNonce: String): js.Promise[PaymentMethodNonce]
 }
 object PaymentMethodNonceGateway {
   

@@ -7,27 +7,25 @@ import typings.plotlyJs.plotlyJsStrings.angular
 import typings.plotlyJs.plotlyJsStrings.bullet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gauge extends StObject {
   
-  var axis: PartialAxis = js.native
+  var axis: PartialAxis
   
-  var bar: PartialGaugeBar = js.native
+  var bar: PartialGaugeBar
   
-  var bgcolor: Color = js.native
+  var bgcolor: Color
   
-  var bordercolor: Color = js.native
+  var bordercolor: Color
   
-  var borderwidth: Double = js.native
+  var borderwidth: Double
   
-  var shape: angular | bullet = js.native
+  var shape: angular | bullet
   
-  var steps: js.Array[typings.plotlyJs.anon.Color] = js.native
+  var steps: js.Array[typings.plotlyJs.anon.Color]
   
-  var threshold: PartialThreshold = js.native
+  var threshold: PartialThreshold
 }
 object Gauge {
   

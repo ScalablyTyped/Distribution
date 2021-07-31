@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Item to be linked
   */
-@js.native
-trait LinkageItem extends BackboneElement {
+trait LinkageItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Resource being linked
     */
-  var resource: Reference = js.native
+  var resource: Reference
   
   /**
     * source | alternate | historical
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object LinkageItem {
   

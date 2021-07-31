@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contact extends StObject {
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var phone_number: String = js.native
+  var phone_number: String
   
-  var user_id: js.UndefOr[Double] = js.native
+  var user_id: js.UndefOr[Double] = js.undefined
   
-  var vcard: js.UndefOr[String] = js.native
+  var vcard: js.UndefOr[String] = js.undefined
 }
 object Contact {
   

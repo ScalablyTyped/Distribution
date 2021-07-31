@@ -25,7 +25,6 @@ import typings.officeJs.officeJsStrings.MonochromaticPalette8
 import typings.officeJs.officeJsStrings.MonochromaticPalette9
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartAreaFormat extends ClientObject {
+trait ChartAreaFormat
+  extends StObject
+     with ClientObject {
   
   /**
     *

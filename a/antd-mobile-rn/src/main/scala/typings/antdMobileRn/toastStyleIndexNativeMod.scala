@@ -13,7 +13,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastStyleIndexNativeMod {
@@ -73,24 +72,23 @@ object toastStyleIndexNativeMod {
     def textToast_=(x: BorderRadiusPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textToast")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IToastStyle extends StObject {
     
-    var centering: ViewStyle = js.native
+    var centering: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: TextStyle = js.native
+    var content: TextStyle
     
-    var iconToast: ViewStyle = js.native
+    var iconToast: ViewStyle
     
-    var image: ImageStyle = js.native
+    var image: ImageStyle
     
-    var innerContainer: ViewStyle = js.native
+    var innerContainer: ViewStyle
     
-    var innerWrap: ViewStyle = js.native
+    var innerWrap: ViewStyle
     
-    var textToast: ViewStyle = js.native
+    var textToast: ViewStyle
   }
   object IToastStyle {
     

@@ -9,25 +9,23 @@ import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclareExtends extends StObject {
   
-  var body: TSInterfaceBodyKind = js.native
+  var body: TSInterfaceBodyKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declare: js.UndefOr[Boolean] = js.native
+  var declare: js.UndefOr[Boolean] = js.undefined
   
-  var `extends`: js.UndefOr[js.Array[TSExpressionWithTypeArgumentsKind] | Null] = js.native
+  var `extends`: js.UndefOr[js.Array[TSExpressionWithTypeArgumentsKind] | Null] = js.undefined
   
-  var id: IdentifierKind | TSQualifiedNameKind = js.native
+  var id: IdentifierKind | TSQualifiedNameKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object DeclareExtends {
   

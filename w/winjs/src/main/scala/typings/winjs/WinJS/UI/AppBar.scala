@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Interfaces
@@ -80,25 +79,25 @@ trait AppBar extends StObject {
     * Occurs immediately after the AppBar is closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterclose(eventInfo: CustomEvent[_]): Unit = js.native
+  def onafterclose(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Occurs immeidately after the AppBar is opened.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafteropen(eventInfo: CustomEvent[_]): Unit = js.native
+  def onafteropen(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Occurs immediately before the AppBar is closed. Is cancelable.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: CustomEvent[_]): Unit = js.native
+  def onbeforeclose(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Occurs immediately before the AppBar is opened. Is cancelable.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: CustomEvent[_]): Unit = js.native
+  def onbeforeopen(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Opens the AppBar.

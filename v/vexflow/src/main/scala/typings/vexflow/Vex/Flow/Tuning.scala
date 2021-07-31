@@ -2,21 +2,19 @@ package typings.vexflow.Vex.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tuning extends StObject {
   
-  def getNoteForFret(fretNum: String, stringNum: String): String = js.native
+  def getNoteForFret(fretNum: String, stringNum: String): String
   
-  def getValueForFret(fretNum: String, stringNum: String): Double = js.native
+  def getValueForFret(fretNum: String, stringNum: String): Double
   
-  def getValueForString(stringNum: String): Double = js.native
+  def getValueForString(stringNum: String): Double
   
-  def noteToInteger(noteString: String): Double = js.native
+  def noteToInteger(noteString: String): Double
   
-  def setTuning(tuningString: String): Unit = js.native
+  def setTuning(tuningString: String): Unit
 }
 object Tuning {
   

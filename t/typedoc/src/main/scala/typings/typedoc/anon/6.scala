@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.listInvalidSymbolLinks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  var name: listInvalidSymbolLinks = js.native
+  var name: listInvalidSymbolLinks
 }
 object `6` {
   
   @scala.inline
-  def apply(name: listInvalidSymbolLinks): `6` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `6` = {
+    val __obj = js.Dynamic.literal(name = "listInvalidSymbolLinks")
     __obj.asInstanceOf[`6`]
   }
   

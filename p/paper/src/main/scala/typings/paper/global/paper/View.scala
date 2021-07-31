@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -15,4 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.View")
 @js.native
 class View ()
-  extends typings.paper.paper.View
+  extends StObject
+     with typings.paper.paper.View

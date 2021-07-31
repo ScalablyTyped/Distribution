@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.DropDownListOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.DropDownList")
 @js.native
 class DropDownList protected ()
-  extends typings.kendoUi.kendo.ui.DropDownList {
+  extends StObject
+     with typings.kendoUi.kendo.ui.DropDownList {
   def this(element: Element) = this()
   def this(element: Element, options: DropDownListOptions) = this()
 }
@@ -21,9 +21,8 @@ object DropDownList {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.DropDownList.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.DropDownList = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.DropDownList = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.DropDownList]
   
   /* static member */
   @JSGlobal("kendo.ui.DropDownList.fn")

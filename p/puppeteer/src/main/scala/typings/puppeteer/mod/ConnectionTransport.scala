@@ -2,19 +2,17 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionTransport extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var onclose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onmessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var onmessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   
-  def send(message: String): Unit = js.native
+  def send(message: String): Unit
 }
 object ConnectionTransport {
   

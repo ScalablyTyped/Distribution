@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFiltersResponse extends StObject {
   
   /** List of a user's filters. */
-  var filter: js.UndefOr[js.Array[Filter]] = js.native
+  var filter: js.UndefOr[js.Array[Filter]] = js.undefined
 }
 object ListFiltersResponse {
   

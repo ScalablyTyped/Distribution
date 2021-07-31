@@ -1,50 +1,39 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.`Visual Studio Team Services`
 import typings.envCi.envCiStrings.vsts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VstsEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: String = js.native
+  var branch: String
   
-  var build: String = js.native
+  var build: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var name: `Visual Studio Team Services` = js.native
+  var name: `Visual Studio Team Services`
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var root: String = js.native
+  var root: String
   
-  var service: vsts = js.native
+  var service: vsts
 }
 object VstsEnv {
   
   @scala.inline
-  def apply(
-    branch: String,
-    build: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: `Visual Studio Team Services`,
-    root: String,
-    service: vsts
-  ): VstsEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+  def apply(branch: String, build: String, commit: String, isPr: Boolean, root: String): VstsEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Visual Studio Team Services", root = root.asInstanceOf[js.Any], service = "vsts")
     __obj.asInstanceOf[VstsEnv]
   }
   

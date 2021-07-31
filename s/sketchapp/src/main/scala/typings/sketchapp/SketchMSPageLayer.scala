@@ -4,22 +4,22 @@ import typings.sketchapp.sketchappStrings.page
 import typings.sketchapp.sketchappStrings.symbolMaster
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchMSPageLayer extends SketchMSContainerLayer {
+trait SketchMSPageLayer
+  extends StObject
+     with SketchMSContainerLayer {
   
   @JSName("_class")
-  var _class_SketchMSPageLayer: page | symbolMaster = js.native
+  var _class_SketchMSPageLayer: page | symbolMaster
   
-  var hasClickThrough: Boolean = js.native
+  var hasClickThrough: Boolean
   
-  var horizontalRulerData: SketchMSRulerData = js.native
+  var horizontalRulerData: SketchMSRulerData
   
-  var includeInCloudUpload: Boolean = js.native
+  var includeInCloudUpload: Boolean
   
-  var verticalRulerData: SketchMSRulerData = js.native
+  var verticalRulerData: SketchMSRulerData
 }
 object SketchMSPageLayer {
   

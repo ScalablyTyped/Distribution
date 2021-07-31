@@ -2,41 +2,39 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowExecutionSummary extends StObject {
   
   /**
     * The date and time when the flow execution summary was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the flow execution.
     */
-  var flowExecutionId: js.UndefOr[FlowExecutionId] = js.native
+  var flowExecutionId: js.UndefOr[FlowExecutionId] = js.undefined
   
   /**
     * The ID of the flow.
     */
-  var flowTemplateId: js.UndefOr[Urn] = js.native
+  var flowTemplateId: js.UndefOr[Urn] = js.undefined
   
   /**
     * The current status of the flow execution.
     */
-  var status: js.UndefOr[FlowExecutionStatus] = js.native
+  var status: js.UndefOr[FlowExecutionStatus] = js.undefined
   
   /**
     * The ID of the system instance that contains the flow.
     */
-  var systemInstanceId: js.UndefOr[Urn] = js.native
+  var systemInstanceId: js.UndefOr[Urn] = js.undefined
   
   /**
     * The date and time when the flow execution summary was last updated.
     */
-  var updatedAt: js.UndefOr[Timestamp] = js.native
+  var updatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object FlowExecutionSummary {
   

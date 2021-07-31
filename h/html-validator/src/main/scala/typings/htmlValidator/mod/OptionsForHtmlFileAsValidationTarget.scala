@@ -2,13 +2,13 @@ package typings.htmlValidator.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptionsForHtmlFileAsValidationTarget extends BasicOptions {
+trait OptionsForHtmlFileAsValidationTarget
+  extends StObject
+     with BasicOptions {
   
-  var data: String = js.native
+  var data: String
 }
 object OptionsForHtmlFileAsValidationTarget {
   

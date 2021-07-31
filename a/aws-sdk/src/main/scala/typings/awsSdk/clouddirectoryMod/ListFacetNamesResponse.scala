@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFacetNamesResponse extends StObject {
   
   /**
     * The names of facets that exist within the schema.
     */
-  var FacetNames: js.UndefOr[FacetNameList] = js.native
+  var FacetNames: js.UndefOr[FacetNameList] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
 }
 object ListFacetNamesResponse {
   

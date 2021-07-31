@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.PipelineTopicExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineTopicExpression_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_PipelineTopicExpression_ : PipelineTopicExpression = js.native
+  var type_PipelineTopicExpression_ : PipelineTopicExpression
 }
 object PipelineTopicExpression_ {
   
   @scala.inline
-  def apply(expression: Expression, `type`: PipelineTopicExpression): PipelineTopicExpression_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression): PipelineTopicExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("PipelineTopicExpression")
     __obj.asInstanceOf[PipelineTopicExpression_]
   }
   

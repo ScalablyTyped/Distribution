@@ -13,13 +13,13 @@ import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDisableEnhancedMonitoringInputMod {
   
-  @js.native
-  trait DisableEnhancedMonitoringInput extends InputTypesUnion {
+  trait DisableEnhancedMonitoringInput
+    extends StObject
+       with InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -27,7 +27,7 @@ object typesDisableEnhancedMonitoringInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -35,13 +35,13 @@ object typesDisableEnhancedMonitoringInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>List of shard-level metrics to disable.</p> <p>The following are the valid shard-level metrics. The value "<code>ALL</code>" disables every metric.</p> <ul> <li> <p> <code>IncomingBytes</code> </p> </li> <li> <p> <code>IncomingRecords</code> </p> </li> <li> <p> <code>OutgoingBytes</code> </p> </li> <li> <p> <code>OutgoingRecords</code> </p> </li> <li> <p> <code>WriteProvisionedThroughputExceeded</code> </p> </li> <li> <p> <code>ReadProvisionedThroughputExceeded</code> </p> </li> <li> <p> <code>IteratorAgeMilliseconds</code> </p> </li> <li> <p> <code>ALL</code> </p> </li> </ul> <p>For more information, see <a href="http://docs.aws.amazon.com/kinesis/latest/dev/monitoring-with-cloudwatch.html">Monitoring the Amazon Kinesis Data Streams Service with Amazon CloudWatch</a> in the <i>Amazon Kinesis Data Streams Developer Guide</i>.</p>
@@ -50,12 +50,12 @@ object typesDisableEnhancedMonitoringInputMod {
         IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
       ]) | (Iterable[
         IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
-      ]) = js.native
+      ])
     
     /**
       * <p>The name of the Kinesis data stream for which to disable enhanced monitoring.</p>
       */
-    var StreamName: String = js.native
+    var StreamName: String
   }
   object DisableEnhancedMonitoringInput {
     

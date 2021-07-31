@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveDimensions extends PluginConfig {
+trait PluginRemoveDimensions
+  extends StObject
+     with PluginConfig {
   
-  var removeDimensions: Boolean | js.Object = js.native
+  var removeDimensions: Boolean | js.Object
 }
 object PluginRemoveDimensions {
   

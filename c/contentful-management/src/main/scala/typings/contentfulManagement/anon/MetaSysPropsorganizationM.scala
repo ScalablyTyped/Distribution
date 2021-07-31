@@ -3,40 +3,38 @@ package typings.contentfulManagement.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/common-types.MetaSysProps & {  organizationMembership :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps},   user :std.Record<string, any> | null,   invitationUrl :string,   status :string} */
-@js.native
 trait MetaSysPropsorganizationM extends StObject {
   
-  var archivedVersion: js.UndefOr[Double] = js.native
+  var archivedVersion: js.UndefOr[Double] = js.undefined
   
-  var createdAt: String = js.native
+  var createdAt: String
   
-  var createdBy: js.UndefOr[Sys] = js.native
+  var createdBy: js.UndefOr[Sys] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var invitationUrl: String = js.native
+  var invitationUrl: String
   
-  var organizationMembership: Sys = js.native
+  var organizationMembership: Sys
   
-  var publishedVersion: js.UndefOr[Double] = js.native
+  var publishedVersion: js.UndefOr[Double] = js.undefined
   
-  var space: js.UndefOr[Sys] = js.native
+  var space: js.UndefOr[Sys] = js.undefined
   
-  var status: js.UndefOr[Sys] with String = js.native
+  var status: js.UndefOr[Sys] & String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updatedAt: String = js.native
+  var updatedAt: String
   
-  var updatedBy: js.UndefOr[Sys] = js.native
+  var updatedBy: js.UndefOr[Sys] = js.undefined
   
-  var user: (Record[String, _]) | Null = js.native
+  var user: (Record[String, js.Any]) | Null
   
-  var version: Double = js.native
+  var version: Double
 }
 object MetaSysPropsorganizationM {
   
@@ -46,12 +44,12 @@ object MetaSysPropsorganizationM {
     id: String,
     invitationUrl: String,
     organizationMembership: Sys,
-    status: js.UndefOr[Sys] with String,
+    status: js.UndefOr[Sys] & String,
     `type`: String,
     updatedAt: String,
     version: Double
   ): MetaSysPropsorganizationM = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invitationUrl = invitationUrl.asInstanceOf[js.Any], organizationMembership = organizationMembership.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invitationUrl = invitationUrl.asInstanceOf[js.Any], organizationMembership = organizationMembership.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], user = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaSysPropsorganizationM]
   }
@@ -96,7 +94,7 @@ object MetaSysPropsorganizationM {
     def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def setStatus(value: js.UndefOr[Sys] with String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    def setStatus(value: js.UndefOr[Sys] & String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -111,7 +109,7 @@ object MetaSysPropsorganizationM {
     def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
     
     @scala.inline
-    def setUser(value: Record[String, _]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    def setUser(value: Record[String, js.Any]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUserNull: Self = StObject.set(x, "user", null)

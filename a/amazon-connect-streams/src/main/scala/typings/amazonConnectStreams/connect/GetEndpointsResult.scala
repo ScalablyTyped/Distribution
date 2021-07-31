@@ -2,15 +2,13 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEndpointsResult extends StObject {
   
-  var addresses: js.Array[Endpoint] = js.native
+  var addresses: js.Array[Endpoint]
   
-  var endpoints: js.Array[Endpoint] = js.native
+  var endpoints: js.Array[Endpoint]
 }
 object GetEndpointsResult {
   

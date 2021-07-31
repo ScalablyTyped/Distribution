@@ -2,15 +2,13 @@ package typings.lambdaPhi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaConfigMod {
   
-  @js.native
   trait LambdaConfig extends StObject {
     
-    var allowNullInjection: Boolean = js.native
+    var allowNullInjection: Boolean
   }
   object LambdaConfig {
     

@@ -2,24 +2,22 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The domain of a CandlestickChart.
   */
-@js.native
 trait SchemaCandlestickDomain extends StObject {
   
   /**
     * The data of the CandlestickDomain.
     */
-  var data: js.UndefOr[SchemaChartData] = js.native
+  var data: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * True to reverse the order of the domain values (horizontal axis).
     */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCandlestickDomain {
   

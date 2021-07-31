@@ -12,7 +12,6 @@ import typings.node.nodeStrings.auto
 import typings.node.utilMod.InspectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object consoleMod extends Shortcut {
@@ -24,11 +23,13 @@ object consoleMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("console", "Console")
   @js.native
-  class Console protected () extends Console_ {
+  class Console protected ()
+    extends StObject
+       with Console_ {
     def this(options: ConsoleConstructorOptions) = this()
     def this(stdout: WritableStream) = this()
     def this(stdout: WritableStream, stderr: WritableStream) = this()
-    def this(stdout: WritableStream, stderr: js.UndefOr[scala.Nothing], ignoreErrors: Boolean) = this()
+    def this(stdout: WritableStream, stderr: Unit, ignoreErrors: Boolean) = this()
     def this(stdout: WritableStream, stderr: WritableStream, ignoreErrors: Boolean) = this()
   }
   
@@ -43,11 +44,13 @@ object consoleMod extends Shortcut {
       /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
       @JSGlobal("console.Console")
       @js.native
-      class ConsoleCls protected () extends Console_ {
+      class ConsoleCls protected ()
+        extends StObject
+           with Console_ {
         def this(options: ConsoleConstructorOptions) = this()
         def this(stdout: WritableStream) = this()
         def this(stdout: WritableStream, stderr: WritableStream) = this()
-        def this(stdout: WritableStream, stderr: js.UndefOr[scala.Nothing], ignoreErrors: Boolean) = this()
+        def this(stdout: WritableStream, stderr: Unit, ignoreErrors: Boolean) = this()
         def this(stdout: WritableStream, stderr: WritableStream, ignoreErrors: Boolean) = this()
       }
       
@@ -63,13 +66,13 @@ object consoleMod extends Shortcut {
       
       var Console: ConsoleConstructor = js.native
       
-      def assert(value: js.Any, message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * A simple assertion test that verifies whether `value` is truthy.
         * If it is not, an `AssertionError` is thrown.
         * If provided, the error `message` is formatted using `util.format()` and used as the error message.
         */
       def assert(value: js.Any, message: java.lang.String, optionalParams: js.Any*): Unit = js.native
+      def assert(value: js.Any, message: Unit, optionalParams: js.Any*): Unit = js.native
       
       /**
         * When `stdout` is a TTY, calling `console.clear()` will attempt to clear the TTY.
@@ -89,11 +92,11 @@ object consoleMod extends Shortcut {
       def countReset(): Unit = js.native
       def countReset(label: java.lang.String): Unit = js.native
       
-      def debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * The `console.debug()` function is an alias for {@link console.log()}.
         */
       def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def debug(message: Unit, optionalParams: js.Any*): Unit = js.native
       
       /**
         * Uses {@link util.inspect()} on `obj` and prints the resulting string to `stdout`.
@@ -107,11 +110,11 @@ object consoleMod extends Shortcut {
         */
       def dirxml(data: js.Any*): Unit = js.native
       
-      def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * Prints to `stderr` with newline.
         */
       def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def error(message: Unit, optionalParams: js.Any*): Unit = js.native
       
       /**
         * Increases indentation of subsequent lines by two spaces.
@@ -129,17 +132,17 @@ object consoleMod extends Shortcut {
         */
       def groupEnd(): Unit = js.native
       
-      def info(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * The {@link console.info()} function is an alias for {@link console.log()}.
         */
       def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def info(message: Unit, optionalParams: js.Any*): Unit = js.native
       
-      def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * Prints to `stdout` with newline.
         */
       def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def log(message: Unit, optionalParams: js.Any*): Unit = js.native
       
       // --- Inspector mode only ---
       /**
@@ -175,11 +178,11 @@ object consoleMod extends Shortcut {
       def timeEnd(): Unit = js.native
       def timeEnd(label: java.lang.String): Unit = js.native
       
-      def timeLog(label: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
       /**
         * For a timer that was previously started by calling {@link console.time()}, prints the elapsed time and other `data` arguments to `stdout`.
         */
       def timeLog(label: java.lang.String, data: js.Any*): Unit = js.native
+      def timeLog(label: Unit, data: js.Any*): Unit = js.native
       
       /**
         * This method does not display anything unless used in the inspector.
@@ -188,47 +191,47 @@ object consoleMod extends Shortcut {
       def timeStamp(): Unit = js.native
       def timeStamp(label: java.lang.String): Unit = js.native
       
-      def trace(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * Prints to `stderr` the string 'Trace :', followed by the {@link util.format()} formatted message and stack trace to the current position in the code.
         */
       def trace(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def trace(message: Unit, optionalParams: js.Any*): Unit = js.native
       
-      def warn(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
       /**
         * The {@link console.warn()} function is an alias for {@link console.error()}.
         */
       def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
+      def warn(message: Unit, optionalParams: js.Any*): Unit = js.native
     }
     
     object NodeJS {
       
       @js.native
       trait ConsoleConstructor
-        extends Instantiable1[
+        extends StObject
+           with Instantiable1[
                   (/* options */ ConsoleConstructorOptions) | (/* stdout */ WritableStream), 
                   Console_
                 ]
            with Instantiable2[/* stdout */ WritableStream, /* stderr */ WritableStream, Console_]
            with Instantiable3[
                   /* stdout */ WritableStream, 
-                  js.UndefOr[/* stderr */ WritableStream], 
+                  (/* stderr */ Unit) | (/* stderr */ WritableStream), 
                   /* ignoreErrors */ Boolean, 
                   Console_
                 ]
       
-      @js.native
       trait ConsoleConstructorOptions extends StObject {
         
-        var colorMode: js.UndefOr[Boolean | auto] = js.native
+        var colorMode: js.UndefOr[Boolean | auto] = js.undefined
         
-        var ignoreErrors: js.UndefOr[Boolean] = js.native
+        var ignoreErrors: js.UndefOr[Boolean] = js.undefined
         
-        var inspectOptions: js.UndefOr[typings.node.NodeJS.InspectOptions] = js.native
+        var inspectOptions: js.UndefOr[typings.node.NodeJS.InspectOptions] = js.undefined
         
-        var stderr: js.UndefOr[WritableStream] = js.native
+        var stderr: js.UndefOr[WritableStream] = js.undefined
         
-        var stdout: WritableStream = js.native
+        var stdout: WritableStream
       }
       object ConsoleConstructorOptions {
         
@@ -270,10 +273,9 @@ object consoleMod extends Shortcut {
         }
       }
       
-      @js.native
       trait Global extends StObject {
         
-        var console: Console_ = js.native
+        var console: Console_
       }
       object Global {
         

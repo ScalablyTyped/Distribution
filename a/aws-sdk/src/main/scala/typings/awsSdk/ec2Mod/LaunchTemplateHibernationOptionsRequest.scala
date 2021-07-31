@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateHibernationOptionsRequest extends StObject {
   
   /**
     * If you set this parameter to true, the instance is enabled for hibernation. Default: false 
     */
-  var Configured: js.UndefOr[Boolean] = js.native
+  var Configured: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchTemplateHibernationOptionsRequest {
   

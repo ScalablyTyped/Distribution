@@ -2,17 +2,15 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TenantInfo extends StObject {
   
-  var homeTenant: Boolean = js.native
+  var homeTenant: Boolean
   
-  var tenantId: String = js.native
+  var tenantId: String
   
-  var tenantName: String = js.native
+  var tenantName: String
 }
 object TenantInfo {
   

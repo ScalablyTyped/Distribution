@@ -2,15 +2,13 @@ package typings.bunyanPrettystream
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var useColor: js.UndefOr[Boolean] = js.native
+    var useColor: js.UndefOr[Boolean] = js.undefined
   }
   object Mode {
     

@@ -5,12 +5,9 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Props
-import typings.wordpressComponents.wordpressComponentsStrings.`insert-at-caret`
-import typings.wordpressComponents.wordpressComponentsStrings.replace
 import typings.wordpressRichText.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autocompleteMod {
@@ -18,9 +15,12 @@ object autocompleteMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
+    @scala.inline
+    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/components/autocomplete", JSImport.Default)
     @js.native
-    def apply[T](props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object Autocomplete {
@@ -45,7 +45,6 @@ object autocompleteMod {
       def replace: typings.wordpressComponents.wordpressComponentsStrings.replace = "replace".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.replace]
     }
     
-    @js.native
     trait Completer[T] extends StObject {
       
       /**
@@ -53,12 +52,12 @@ object autocompleteMod {
         * autocomplete trigger and query text and returns a boolean indicating
         * whether the completer should be considered for that context.
         */
-      var allowContext: js.UndefOr[js.Function2[/* before */ String, /* after */ String, Boolean]] = js.native
+      var allowContext: js.UndefOr[js.Function2[/* before */ String, /* after */ String, Boolean]] = js.undefined
       
       /**
         * A class name to apply to the autocompletion popup menu.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A function that takes an option and responds with how the option
@@ -79,14 +78,14 @@ object autocompleteMod {
         * @param value - the value of the completer option.
         * @param query - the text value of the autocomplete query.
         */
-      def getOptionCompletion(value: js.Any, query: String): OptionCompletion = js.native
+      def getOptionCompletion(value: js.Any, query: String): OptionCompletion
       
       /**
         * A function that returns the keywords for the specified option.
         *
         * @param option - a completer option.
         */
-      var getOptionKeywords: js.UndefOr[js.Function1[/* option */ T, js.Array[String]]] = js.native
+      var getOptionKeywords: js.UndefOr[js.Function1[/* option */ T, js.Array[String]]] = js.undefined
       
       /**
         * A function that returns the label for a given option. A label may be
@@ -94,13 +93,13 @@ object autocompleteMod {
         *
         * @param option - a completer option.
         */
-      def getOptionLabel(option: T): ReactNode = js.native
+      def getOptionLabel(option: T): ReactNode
       
       /**
         * Whether to apply debouncing for the autocompleter. Set to `true` to
         * enable debouncing.
         */
-      var isDebounced: js.UndefOr[Boolean] = js.native
+      var isDebounced: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function that returns whether or not the specified option should
@@ -108,13 +107,13 @@ object autocompleteMod {
         *
         * @param option - a completer option.
         */
-      var isOptionDisabled: js.UndefOr[js.Function1[/* option */ T, Boolean]] = js.native
+      var isOptionDisabled: js.UndefOr[js.Function1[/* option */ T, Boolean]] = js.undefined
       
       /**
         * The name of the completer. Useful for identifying a specific
         * completer to be overridden via extensibility hooks.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The raw options for completion. May be an array, a function that
@@ -124,14 +123,14 @@ object autocompleteMod {
         * those options are rendered and what their completions should be when
         * selected.
         */
-      var options: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T] = js.native
+      var options: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T]
       
       /**
         * The string prefix that should trigger the completer. For example,
         * Gutenberg's block completer is triggered when the `/` character is
         * entered.
         */
-      var triggerPrefix: String = js.native
+      var triggerPrefix: String
     }
     object Completer {
       
@@ -148,7 +147,7 @@ object autocompleteMod {
       }
       
       @scala.inline
-      implicit class CompleterMutableBuilder[Self <: Completer[_], T] (val x: Self with Completer[T]) extends AnyVal {
+      implicit class CompleterMutableBuilder[Self <: Completer[?], T] (val x: Self & Completer[T]) extends AnyVal {
         
         @scala.inline
         def setAllowContext(value: (/* before */ String, /* after */ String) => Boolean): Self = StObject.set(x, "allowContext", js.Any.fromFunction2(value))
@@ -210,20 +209,19 @@ object autocompleteMod {
     */
     type OptionCompletion = _OptionCompletion | ReactNode
     
-    @js.native
     trait Props[T] extends StObject {
       
-      def children(props: RenderProps): Element | Null = js.native
+      def children(props: RenderProps): Element | Null
       
-      var completers: js.Array[Completer[T]] = js.native
+      var completers: js.Array[Completer[T]]
       
-      var isSelected: js.UndefOr[Boolean] = js.native
+      var isSelected: js.UndefOr[Boolean] = js.undefined
       
-      var onChange: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.native
+      var onChange: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
       
-      var onReplace: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.native
+      var onReplace: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
       
-      var record: js.UndefOr[Value] = js.native
+      var record: js.UndefOr[Value] = js.undefined
     }
     object Props {
       
@@ -234,7 +232,7 @@ object autocompleteMod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], T] (val x: Self with Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
         
         @scala.inline
         def setChildren(value: RenderProps => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
@@ -271,16 +269,15 @@ object autocompleteMod {
       }
     }
     
-    @js.native
     trait RenderProps extends StObject {
       
-      var activeId: String = js.native
+      var activeId: String
       
-      var isExpanded: Boolean = js.native
+      var isExpanded: Boolean
       
-      var listBoxId: String = js.native
+      var listBoxId: String
       
-      def onKeyDown(event: KeyboardEvent[HTMLElement]): Unit = js.native
+      def onKeyDown(event: KeyboardEvent[HTMLElement]): Unit
     }
     object RenderProps {
       
@@ -316,14 +313,14 @@ object autocompleteMod {
     object _OptionCompletion {
       
       @scala.inline
-      def Action(action: `insert-at-caret`): typings.wordpressComponents.anon.Action = {
-        val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+      def Action(): typings.wordpressComponents.anon.Action = {
+        val __obj = js.Dynamic.literal(action = "insert-at-caret")
         __obj.asInstanceOf[typings.wordpressComponents.anon.Action]
       }
       
       @scala.inline
-      def Value(action: replace, value: typings.wordpressRichText.mod.Value): typings.wordpressComponents.anon.Value = {
-        val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      def Value(value: typings.wordpressRichText.mod.Value): typings.wordpressComponents.anon.Value = {
+        val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.anon.Value]
       }
     }

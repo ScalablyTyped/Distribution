@@ -3,17 +3,15 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.mod.GotoDpAlarmData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var data: GotoDpAlarmData = js.native
+  var data: GotoDpAlarmData
   
-  var repeat: Double = js.native
+  var repeat: Double
 }
 object Category {
   

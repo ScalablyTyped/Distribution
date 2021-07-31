@@ -2,26 +2,24 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslPolicy extends StObject {
   
   /**
     * The ciphers.
     */
-  var Ciphers: js.UndefOr[typings.awsSdk.elbv2Mod.Ciphers] = js.native
+  var Ciphers: js.UndefOr[typings.awsSdk.elbv2Mod.Ciphers] = js.undefined
   
   /**
     * The name of the policy.
     */
-  var Name: js.UndefOr[SslPolicyName] = js.native
+  var Name: js.UndefOr[SslPolicyName] = js.undefined
   
   /**
     * The protocols.
     */
-  var SslProtocols: js.UndefOr[typings.awsSdk.elbv2Mod.SslProtocols] = js.native
+  var SslProtocols: js.UndefOr[typings.awsSdk.elbv2Mod.SslProtocols] = js.undefined
 }
 object SslPolicy {
   

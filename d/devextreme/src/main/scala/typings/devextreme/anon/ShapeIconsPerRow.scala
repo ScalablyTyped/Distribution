@@ -11,21 +11,19 @@ import typings.devextreme.devextremeStrings.orgChart
 import typings.devextreme.devextremeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeIconsPerRow extends StObject {
   
-  var groups: js.UndefOr[js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]] = js.native
+  var groups: js.UndefOr[js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]] = js.undefined
   
-  var shapeIconsPerRow: js.UndefOr[Double] = js.native
+  var shapeIconsPerRow: js.UndefOr[Double] = js.undefined
   
-  var showSearch: js.UndefOr[Boolean] = js.native
+  var showSearch: js.UndefOr[Boolean] = js.undefined
   
-  var visibility: js.UndefOr[auto | visible | collapsed | disabled] = js.native
+  var visibility: js.UndefOr[auto | visible | collapsed | disabled] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ShapeIconsPerRow {
   

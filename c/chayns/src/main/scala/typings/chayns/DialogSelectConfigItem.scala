@@ -2,19 +2,17 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogSelectConfigItem extends StObject {
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object DialogSelectConfigItem {
   

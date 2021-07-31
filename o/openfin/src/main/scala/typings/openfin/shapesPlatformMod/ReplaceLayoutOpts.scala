@@ -3,13 +3,11 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.shapesLayoutMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceLayoutOpts extends StObject {
   
-  var layout: Layout = js.native
+  var layout: Layout
 }
 object ReplaceLayoutOpts {
   

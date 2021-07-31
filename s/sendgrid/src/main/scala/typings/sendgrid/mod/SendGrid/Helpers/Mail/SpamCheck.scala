@@ -3,25 +3,23 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Posttourl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpamCheck extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getPosttoUrl(): String = js.native
+  def getPosttoUrl(): String
   
-  def getThreshold(): Double = js.native
+  def getThreshold(): Double
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setPosttoUrl(post_to_url: String): Unit = js.native
+  def setPosttoUrl(post_to_url: String): Unit
   
-  def setThreshold(threshold: Double): Unit = js.native
+  def setThreshold(threshold: Double): Unit
   
-  def toJSON(): Posttourl = js.native
+  def toJSON(): Posttourl
 }
 object SpamCheck {
   

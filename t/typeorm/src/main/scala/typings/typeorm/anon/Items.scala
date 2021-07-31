@@ -2,15 +2,13 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items[R, T] extends StObject {
   
-  var id: R = js.native
+  var id: R
   
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
 }
 object Items {
   
@@ -21,7 +19,7 @@ object Items {
   }
   
   @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items[_, _], R, T] (val x: Self with (Items[R, T])) extends AnyVal {
+  implicit class ItemsMutableBuilder[Self <: Items[?, ?], R, T] (val x: Self & (Items[R, T])) extends AnyVal {
     
     @scala.inline
     def setId(value: R): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

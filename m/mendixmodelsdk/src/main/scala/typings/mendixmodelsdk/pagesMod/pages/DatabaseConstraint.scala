@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint")
@@ -54,9 +53,8 @@ object DatabaseConstraint {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.create")
-  @js.native
-  def create(model: IModel): DatabaseConstraint = js.native
+  @scala.inline
+  def create(model: IModel): DatabaseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DatabaseConstraint]
   
   /**
     * Creates and returns a new DatabaseConstraint instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object DatabaseConstraint {
     *  6.0.0 to 6.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.createIn")
-  @js.native
-  def createIn(container: DatabaseSourceBase): DatabaseConstraint = js.native
+  @scala.inline
+  def createIn(container: DatabaseSourceBase): DatabaseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DatabaseConstraint]
   
   /**
     * Creates and returns a new DatabaseConstraint instance in the SDK and on the server.
@@ -77,9 +74,8 @@ object DatabaseConstraint {
     * of the parent DatabaseSourceBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.createInDatabaseSourceBaseUnderDatabaseConstraints")
-  @js.native
-  def createInDatabaseSourceBaseUnderDatabaseConstraints(container: DatabaseSourceBase): DatabaseConstraint = js.native
+  @scala.inline
+  def createInDatabaseSourceBaseUnderDatabaseConstraints(container: DatabaseSourceBase): DatabaseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseSourceBaseUnderDatabaseConstraints")(container.asInstanceOf[js.Any]).asInstanceOf[DatabaseConstraint]
   
   /**
     * Creates and returns a new DatabaseConstraint instance in the SDK and on the server.
@@ -90,9 +86,8 @@ object DatabaseConstraint {
     *  6.1.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.createInSelectorDatabaseSourceUnderDatabaseConstraints")
-  @js.native
-  def createInSelectorDatabaseSourceUnderDatabaseConstraints(container: SelectorDatabaseSource): DatabaseConstraint = js.native
+  @scala.inline
+  def createInSelectorDatabaseSourceUnderDatabaseConstraints(container: SelectorDatabaseSource): DatabaseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorDatabaseSourceUnderDatabaseConstraints")(container.asInstanceOf[js.Any]).asInstanceOf[DatabaseConstraint]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.structureTypeName")

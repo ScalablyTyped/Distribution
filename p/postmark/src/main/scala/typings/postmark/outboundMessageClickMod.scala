@@ -5,39 +5,37 @@ import typings.postmark.outboundMessageOpenMod.ClientDetails
 import typings.postmark.outboundMessageOpenMod.GeoLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outboundMessageClickMod {
   
-  @js.native
   trait ClickEvent extends StObject {
     
-    var ClickLocation: LinkClickLocation = js.native
+    var ClickLocation: LinkClickLocation
     
-    var Client: ClientDetails = js.native
+    var Client: ClientDetails
     
-    var Geo: GeoLocation = js.native
+    var Geo: GeoLocation
     
-    var MessageID: String = js.native
+    var MessageID: String
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var OS: ClientDetails = js.native
+    var OS: ClientDetails
     
-    var OriginalLink: String = js.native
+    var OriginalLink: String
     
-    var Platform: String = js.native
+    var Platform: String
     
-    var ReceivedAt: String = js.native
+    var ReceivedAt: String
     
-    var Recipient: String = js.native
+    var Recipient: String
     
-    var RecordType: String = js.native
+    var RecordType: String
     
-    var Tag: String = js.native
+    var Tag: String
     
-    var UserAgent: String = js.native
+    var UserAgent: String
   }
   object ClickEvent {
     
@@ -105,12 +103,11 @@ object outboundMessageClickMod {
     }
   }
   
-  @js.native
   trait OutboundMessageClicks extends StObject {
     
-    var Clicks: js.Array[ClickEvent] = js.native
+    var Clicks: js.Array[ClickEvent]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object OutboundMessageClicks {
     

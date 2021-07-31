@@ -2,21 +2,19 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDefineThemeOptions extends StObject {
   
-  var accent: js.UndefOr[String] = js.native
+  var accent: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var dark: js.UndefOr[Boolean] = js.native
+  var dark: js.UndefOr[Boolean] = js.undefined
   
-  var primary: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.undefined
   
-  var warn: js.UndefOr[String] = js.native
+  var warn: js.UndefOr[String] = js.undefined
 }
 object IDefineThemeOptions {
   

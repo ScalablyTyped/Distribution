@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,16 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       return url + stateToken;
   *     }
   */
-@js.native
 trait StateTokenBuilder extends StObject {
   
-  def createToken(): String = js.native
+  def createToken(): String
   
-  def withArgument(name: String, value: String): StateTokenBuilder = js.native
+  def withArgument(name: String, value: String): StateTokenBuilder
   
-  def withMethod(method: String): StateTokenBuilder = js.native
+  def withMethod(method: String): StateTokenBuilder
   
-  def withTimeout(seconds: Integer): StateTokenBuilder = js.native
+  def withTimeout(seconds: Integer): StateTokenBuilder
 }
 object StateTokenBuilder {
   

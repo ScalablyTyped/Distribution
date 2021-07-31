@@ -13,30 +13,28 @@ import typings.plotlyJs.plotlyJsStrings.top
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  text :string,   font :std.Partial<plotly.js.plotly.js.Font>,   xref :'container' | 'paper',   yref :'container' | 'paper',   x :number,   y :number,   xanchor :'auto' | 'left' | 'center' | 'right',   yanchor :'auto' | 'top' | 'middle' | 'bottom',   pad :std.Partial<plotly.js.plotly.js.Padding>}> */
-@js.native
 trait PartialtextstringfontPartFont extends StObject {
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
-  var pad: js.UndefOr[Partial[Padding]] = js.native
+  var pad: js.UndefOr[Partial[Padding]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var xref: js.UndefOr[container | paper] = js.native
+  var xref: js.UndefOr[container | paper] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
   
-  var yref: js.UndefOr[container | paper] = js.native
+  var yref: js.UndefOr[container | paper] = js.undefined
 }
 object PartialtextstringfontPartFont {
   

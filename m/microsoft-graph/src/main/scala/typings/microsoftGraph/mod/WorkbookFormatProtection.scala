@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookFormatProtection extends Entity {
+trait WorkbookFormatProtection
+  extends StObject
+     with Entity {
   
   /**
     * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't
     * have uniform formula hidden setting.
     */
-  var formulaHidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var formulaHidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform
     * lock setting.
     */
-  var locked: js.UndefOr[NullableOption[Boolean]] = js.native
+  var locked: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object WorkbookFormatProtection {
   

@@ -2,35 +2,33 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target scaling by network usage. Only applicable in the App Engine flexible
   * environment.
   */
-@js.native
 trait SchemaNetworkUtilization extends StObject {
   
   /**
     * Target bytes received per second.
     */
-  var targetReceivedBytesPerSecond: js.UndefOr[Double] = js.native
+  var targetReceivedBytesPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target packets received per second.
     */
-  var targetReceivedPacketsPerSecond: js.UndefOr[Double] = js.native
+  var targetReceivedPacketsPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target bytes sent per second.
     */
-  var targetSentBytesPerSecond: js.UndefOr[Double] = js.native
+  var targetSentBytesPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Target packets sent per second.
     */
-  var targetSentPacketsPerSecond: js.UndefOr[Double] = js.native
+  var targetSentPacketsPerSecond: js.UndefOr[Double] = js.undefined
 }
 object SchemaNetworkUtilization {
   

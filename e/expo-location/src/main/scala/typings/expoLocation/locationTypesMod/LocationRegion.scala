@@ -2,23 +2,21 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRegion extends StObject {
   
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var notifyOnEnter: js.UndefOr[Boolean] = js.native
+  var notifyOnEnter: js.UndefOr[Boolean] = js.undefined
   
-  var notifyOnExit: js.UndefOr[Boolean] = js.native
+  var notifyOnExit: js.UndefOr[Boolean] = js.undefined
   
-  var radius: Double = js.native
+  var radius: Double
 }
 object LocationRegion {
   

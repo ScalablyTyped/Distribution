@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBuildsOutput extends StObject {
   
   /**
     * A collection of build resources that match the request.
     */
-  var Builds: js.UndefOr[BuildList] = js.native
+  var Builds: js.UndefOr[BuildList] = js.undefined
   
   /**
     * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
-  var NextToken: js.UndefOr[NonEmptyString] = js.native
+  var NextToken: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ListBuildsOutput {
   

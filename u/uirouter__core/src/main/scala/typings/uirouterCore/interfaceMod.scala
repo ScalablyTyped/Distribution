@@ -3,14 +3,15 @@ package typings.uirouterCore
 import typings.uirouterCore.routerMod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
   @JSImport("@uirouter/core/lib/interface", "UIRouterPluginBase")
   @js.native
-  abstract class UIRouterPluginBase () extends UIRouterPlugin
+  abstract class UIRouterPluginBase ()
+    extends StObject
+       with UIRouterPlugin
   
   @js.native
   trait Disposable extends StObject {
@@ -78,7 +79,7 @@ object interfaceMod {
       * @param token the key for the value to get.  May be a string or arbitrary object.
       * @return a Promise for the Dependency Injection value that matches the token
       */
-    def getAsync(token: js.Any): js.Promise[_] = js.native
+    def getAsync(token: js.Any): js.Promise[js.Any] = js.native
     /** Asynchronously gets a value as type `T` (generics parameter) */
     @JSName("getAsync")
     def getAsync_T[T](token: js.Any): js.Promise[T] = js.native
@@ -106,7 +107,9 @@ object interfaceMod {
   }
   
   @js.native
-  trait UIRouterPlugin extends Disposable {
+  trait UIRouterPlugin
+    extends StObject
+       with Disposable {
     
     var name: String = js.native
   }

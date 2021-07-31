@@ -2,30 +2,28 @@ package typings.smartFoxServer.SFS2X.Entities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Data
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Data.html
 object Data {
   
-  @js.native
   trait Vec3D extends StObject {
     
     /**
       * Indicates whether the position is expressed using floating point values or not.
       * @return {boolean} Returns: true if the position is expressed using floating point values.
       */
-    def isFloat(): Boolean = js.native
+    def isFloat(): Boolean
     
     /** @type {number} Returns the position along the X axis. */
-    var px: Double = js.native
+    var px: Double
     
     /** @type {number} Returns the position along the Y axis. */
-    var py: Double = js.native
+    var py: Double
     
     /** @type {number} Returns the position along the Z axis. */
-    var pz: Double = js.native
+    var pz: Double
   }
   object Vec3D {
     

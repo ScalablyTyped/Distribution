@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringConstraintsResource extends StObject {
   
   /**
     * The Amazon S3 URI for the constraints resource.
     */
-  var S3Uri: js.UndefOr[typings.awsSdk.sagemakerMod.S3Uri] = js.native
+  var S3Uri: js.UndefOr[typings.awsSdk.sagemakerMod.S3Uri] = js.undefined
 }
 object MonitoringConstraintsResource {
   

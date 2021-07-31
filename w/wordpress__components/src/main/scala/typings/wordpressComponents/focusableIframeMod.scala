@@ -8,7 +8,6 @@ import typings.std.HTMLIFrameElement
 import typings.wordpressComponents.focusableIframeMod.FocusableIframe.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusableIframeMod {
@@ -27,10 +26,11 @@ object focusableIframeMod {
   
   object FocusableIframe {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLIFrameElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLIFrameElement] {
       
-      var iframeRef: js.UndefOr[RefObject[HTMLIFrameElement]] = js.native
+      var iframeRef: js.UndefOr[RefObject[HTMLIFrameElement]] = js.undefined
     }
     object Props {
       

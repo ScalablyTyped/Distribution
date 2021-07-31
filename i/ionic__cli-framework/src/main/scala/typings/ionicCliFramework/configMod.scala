@@ -4,7 +4,6 @@ import typings.std.NonNullable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
@@ -48,7 +47,6 @@ object configMod {
     def unset[P /* <: /* keyof T */ String */](property: P): Unit = js.native
   }
   
-  @js.native
   trait BaseConfigOptions extends StObject {
     
     /**
@@ -58,7 +56,7 @@ object configMod {
       * For example, to operate on `c` object within `{ a: { b: { c: {} } } }`,
       * use `pathPrefix` of `['a', 'b', 'c']`.
       */
-    var pathPrefix: js.UndefOr[js.Array[String]] = js.native
+    var pathPrefix: js.UndefOr[js.Array[String]] = js.undefined
   }
   object BaseConfigOptions {
     

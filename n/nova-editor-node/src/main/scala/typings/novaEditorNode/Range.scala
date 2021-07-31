@@ -2,34 +2,32 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/range/
-@js.native
 trait Range extends StObject {
   
-  def compare(other: Range): Double = js.native
+  def compare(other: Range): Double
   
-  def containsIndex(index: Double): Boolean = js.native
+  def containsIndex(index: Double): Boolean
   
-  def containsRange(other: Range): Boolean = js.native
+  def containsRange(other: Range): Boolean
   
-  var empty: Boolean = js.native
+  var empty: Boolean
   
-  var end: Double = js.native
+  var end: Double
   
-  def intersection(other: Range): Range = js.native
+  def intersection(other: Range): Range
   
-  def intersectsRange(other: Range): Boolean = js.native
+  def intersectsRange(other: Range): Boolean
   
-  def isEqual(other: Range): Boolean = js.native
+  def isEqual(other: Range): Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  def union(other: Range): Range = js.native
+  def union(other: Range): Range
 }
 object Range {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalysisSummary extends StObject {
   
   /**
     * The ID of the analysis. This ID displays in the URL.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.native
+  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the analysis.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The time that the analysis was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The time that the analysis was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The name of the analysis. This name is displayed in the QuickSight console. 
     */
-  var Name: js.UndefOr[AnalysisName] = js.native
+  var Name: js.UndefOr[AnalysisName] = js.undefined
   
   /**
     * The last known status for the analysis.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
 }
 object AnalysisSummary {
   

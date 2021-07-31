@@ -2,26 +2,25 @@ package typings.hirestime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hirestime", JSImport.Default)
+  @JSImport("hirestime", JSImport.Namespace)
   @js.native
-  def default(): Elapsor = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hirestime", "hiresTimeBrowserDate")
-  @js.native
-  def hiresTimeBrowserDate(): Elapsor = js.native
+  @scala.inline
+  def default(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Elapsor]
   
-  @JSImport("hirestime", "hiresTimeBrowserPerformance")
-  @js.native
-  def hiresTimeBrowserPerformance(): Elapsor = js.native
+  @scala.inline
+  def hiresTimeBrowserDate(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserDate")().asInstanceOf[Elapsor]
   
-  @JSImport("hirestime", "hirestimeNode")
-  @js.native
-  def hirestimeNode(): Elapsor = js.native
+  @scala.inline
+  def hiresTimeBrowserPerformance(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hiresTimeBrowserPerformance")().asInstanceOf[Elapsor]
+  
+  @scala.inline
+  def hirestimeNode(): Elapsor = ^.asInstanceOf[js.Dynamic].applyDynamic("hirestimeNode")().asInstanceOf[Elapsor]
   
   @js.native
   trait Elapsor extends StObject {

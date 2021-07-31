@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO(yavanosta): conflict with base class properties
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //     readonly max: CSSNumericValue;
 // };
 @js.native
-trait CSSNumericArray extends /* index */ NumberDictionary[CSSNumericValue] {
+trait CSSNumericArray
+  extends StObject
+     with /* index */ NumberDictionary[CSSNumericValue] {
   
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[CSSNumericValue]] = js.native

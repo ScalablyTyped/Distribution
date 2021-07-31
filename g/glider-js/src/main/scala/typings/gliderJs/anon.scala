@@ -6,23 +6,21 @@ import typings.gliderJs.gliderJsStrings.slide
 import typings.gliderJs.mod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Next extends StObject {
     
-    var next: Selector | Null = js.native
+    var next: Selector | Null
     
-    var prev: Selector | Null = js.native
+    var prev: Selector | Null
   }
   object Next {
     
     @scala.inline
     def apply(): Next = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(next = null, prev = null)
       __obj.asInstanceOf[Next]
     }
     
@@ -43,10 +41,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scroll extends StObject {
     
-    def scroll(): Unit = js.native
+    def scroll(): Unit
   }
   object Scroll {
     
@@ -64,10 +61,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Slide extends StObject {
     
-    var slide: Double = js.native
+    var slide: Double
   }
   object Slide {
     
@@ -85,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: arrow | dot | slide = js.native
+    var `type`: arrow | dot | slide
     
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object Type {
     

@@ -2,12 +2,13 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait p5 extends p5InstanceExtensions {
+trait p5
+  extends StObject
+     with p5InstanceExtensions {
   
   /**
     *   Allows for the friendly error system (FES) to be

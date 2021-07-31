@@ -13,12 +13,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.searching
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented
      with GoTo {
   
@@ -180,7 +180,7 @@ trait SearchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#results)
     */
-  val results: js.Array[_] = js.native
+  val results: js.Array[js.Any] = js.native
   
   /**
     * Depending on the sources specified, `search()` queries the feature layer(s) and/or performs address matching using any specified [Locator(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html) and returns the applicable results.

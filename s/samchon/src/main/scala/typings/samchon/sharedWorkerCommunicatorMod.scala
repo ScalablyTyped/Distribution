@@ -6,7 +6,6 @@ import typings.std.MessageEvent
 import typings.std.MessagePort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedWorkerCommunicatorMod {
@@ -27,7 +26,7 @@ object sharedWorkerCommunicatorMod {
     /**
       * @hidden
       */
-    /* protected */ def _Handle_message(event: MessageEvent[_]): Unit = js.native
+    /* protected */ def _Handle_message(event: MessageEvent[js.Any]): Unit = js.native
     
     /**
       * @hidden

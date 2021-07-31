@@ -5,13 +5,13 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnResizedEvent extends ColumnEvent {
+trait ColumnResizedEvent
+  extends StObject
+     with ColumnEvent {
   
-  var finished: Boolean = js.native
+  var finished: Boolean
 }
 object ColumnResizedEvent {
   

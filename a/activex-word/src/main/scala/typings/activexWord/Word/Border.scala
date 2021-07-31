@@ -2,36 +2,34 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var ArtStyle: WdPageBorderArt = js.native
+  var ArtStyle: WdPageBorderArt
   
-  var ArtWidth: Double = js.native
+  var ArtWidth: Double
   
-  var Color: WdColor = js.native
+  var Color: WdColor
   
-  var ColorIndex: WdColorIndex = js.native
+  var ColorIndex: WdColorIndex
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Inside: Boolean = js.native
+  val Inside: Boolean
   
-  var LineStyle: WdLineStyle = js.native
+  var LineStyle: WdLineStyle
   
-  var LineWidth: WdLineWidth = js.native
+  var LineWidth: WdLineWidth
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
   @JSName("Word.Border_typekey")
-  var WordDotBorder_typekey: Border = js.native
+  var WordDotBorder_typekey: Border
 }
 object Border {
   

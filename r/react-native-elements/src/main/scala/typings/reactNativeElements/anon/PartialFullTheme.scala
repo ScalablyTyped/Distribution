@@ -2,86 +2,84 @@ package typings.reactNativeElements.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.FullTheme> */
-@js.native
 trait PartialFullTheme extends StObject {
   
-  var Accessory: js.UndefOr[PartialIconPropsPartialIm] = js.native
+  var Accessory: js.UndefOr[PartialIconPropsPartialIm] = js.undefined
   
-  var AirbnbRating: js.UndefOr[PartialAirbnbRatingProps] = js.native
+  var AirbnbRating: js.UndefOr[PartialAirbnbRatingProps] = js.undefined
   
-  var Avatar: js.UndefOr[PartialAvatarProps] = js.native
+  var Avatar: js.UndefOr[PartialAvatarProps] = js.undefined
   
-  var Badge: js.UndefOr[PartialBadgeProps] = js.native
+  var Badge: js.UndefOr[PartialBadgeProps] = js.undefined
   
-  var BottomSheet: js.UndefOr[PartialBottomSheetProps] = js.native
+  var BottomSheet: js.UndefOr[PartialBottomSheetProps] = js.undefined
   
-  var Button: js.UndefOr[PartialButtonProps] = js.native
+  var Button: js.UndefOr[PartialButtonProps] = js.undefined
   
-  var ButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.native
+  var ButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.undefined
   
-  var Card: js.UndefOr[PartialCardProps] = js.native
+  var Card: js.UndefOr[PartialCardProps] = js.undefined
   
-  var CardDivider: js.UndefOr[PartialDividerProps] = js.native
+  var CardDivider: js.UndefOr[PartialDividerProps] = js.undefined
   
-  var CardFeaturedSubtitle: js.UndefOr[PartialTextProps] = js.native
+  var CardFeaturedSubtitle: js.UndefOr[PartialTextProps] = js.undefined
   
-  var CardFeaturedTitle: js.UndefOr[PartialTextProps] = js.native
+  var CardFeaturedTitle: js.UndefOr[PartialTextProps] = js.undefined
   
-  var CardImage: js.UndefOr[PartialImageProps] = js.native
+  var CardImage: js.UndefOr[PartialImageProps] = js.undefined
   
-  var CardTitle: js.UndefOr[PartialTextProps] = js.native
+  var CardTitle: js.UndefOr[PartialTextProps] = js.undefined
   
-  var CheckBox: js.UndefOr[PartialCheckBoxProps] = js.native
+  var CheckBox: js.UndefOr[PartialCheckBoxProps] = js.undefined
   
-  var Divider: js.UndefOr[PartialDividerProps] = js.native
+  var Divider: js.UndefOr[PartialDividerProps] = js.undefined
   
-  var Header: js.UndefOr[PartialHeaderProps] = js.native
+  var Header: js.UndefOr[PartialHeaderProps] = js.undefined
   
-  var Icon: js.UndefOr[PartialIconProps] = js.native
+  var Icon: js.UndefOr[PartialIconProps] = js.undefined
   
-  var Image: js.UndefOr[PartialImageProps] = js.native
+  var Image: js.UndefOr[PartialImageProps] = js.undefined
   
-  var Input: js.UndefOr[PartialInputProps] = js.native
+  var Input: js.UndefOr[PartialInputProps] = js.undefined
   
-  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.native
+  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.undefined
   
-  var ListItemButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.native
+  var ListItemButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.undefined
   
-  var ListItemCheckBox: js.UndefOr[PartialCheckBoxProps] = js.native
+  var ListItemCheckBox: js.UndefOr[PartialCheckBoxProps] = js.undefined
   
-  var ListItemChevron: js.UndefOr[PartialIconProps] = js.native
+  var ListItemChevron: js.UndefOr[PartialIconProps] = js.undefined
   
-  var ListItemContent: js.UndefOr[PartialViewProperties] = js.native
+  var ListItemContent: js.UndefOr[PartialViewProperties] = js.undefined
   
-  var ListItemInput: js.UndefOr[PartialInputProps] = js.native
+  var ListItemInput: js.UndefOr[PartialInputProps] = js.undefined
   
-  var ListItemSubtitle: js.UndefOr[PartialTextProps] = js.native
+  var ListItemSubtitle: js.UndefOr[PartialTextProps] = js.undefined
   
-  var ListItemTitle: js.UndefOr[PartialTextProps] = js.native
+  var ListItemTitle: js.UndefOr[PartialTextProps] = js.undefined
   
-  var Overlay: js.UndefOr[PartialOverlayProps] = js.native
+  var Overlay: js.UndefOr[PartialOverlayProps] = js.undefined
   
-  var PricingCard: js.UndefOr[PartialPricingCardProps] = js.native
+  var PricingCard: js.UndefOr[PartialPricingCardProps] = js.undefined
   
-  var Rating: js.UndefOr[PartialRatingProps] = js.native
+  var Rating: js.UndefOr[PartialRatingProps] = js.undefined
   
-  var SearchBar: js.UndefOr[PartialSearchBarProps] = js.native
+  var SearchBar: js.UndefOr[PartialSearchBarProps] = js.undefined
   
-  var Slider: js.UndefOr[PartialSliderProps] = js.native
+  var Slider: js.UndefOr[PartialSliderProps] = js.undefined
   
-  var SocialIcon: js.UndefOr[PartialSocialIconProps] = js.native
+  var SocialIcon: js.UndefOr[PartialSocialIconProps] = js.undefined
   
-  var Text: js.UndefOr[PartialTextProps] = js.native
+  var Text: js.UndefOr[PartialTextProps] = js.undefined
   
-  var Tile: js.UndefOr[PartialTileProps] = js.native
+  var Tile: js.UndefOr[PartialTileProps] = js.undefined
   
-  var Tooltip: js.UndefOr[PartialTooltipProps] = js.native
+  var Tooltip: js.UndefOr[PartialTooltipProps] = js.undefined
   
-  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.native
+  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.undefined
 }
 object PartialFullTheme {
   

@@ -3,14 +3,15 @@ package typings.urlSlugify
 import typings.urlSlugify.urlSlugifyStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("url-slugify", JSImport.Namespace)
   @js.native
-  class ^ () extends URLSlugify
+  class ^ ()
+    extends StObject
+       with URLSlugify
   
   /* Rewritten from type alias, can be one of: 
     - typings.urlSlugify.urlSlugifyStrings.`-_`

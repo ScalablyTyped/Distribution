@@ -2,20 +2,18 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var result: js.Array[_] = js.native
+  var result: js.Array[js.Any]
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object Result {
   
   @scala.inline
-  def apply(result: js.Array[_], success: Boolean): Result = {
+  def apply(result: js.Array[js.Any], success: Boolean): Result = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
@@ -24,7 +22,7 @@ object Result {
   implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))

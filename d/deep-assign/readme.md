@@ -10,9 +10,9 @@ Recursive Object.assign()
 | ------------------ | :-------------: |
 | Full name          | deep-assign |
 | Keywords           | object, obj, assign, extend, properties, merge, clone, copy, mixin, deep, recursive, key, keys, values, prop, properties |
-| # releases         | 2 |
-| # dependents       | 361 |
-| # downloads        | 12837772 |
+| # releases         | 0 |
+| # dependents       | 378 |
+| # downloads        | 17526200 |
 | # stars            | 11 |
 
 ## Links

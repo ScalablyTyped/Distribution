@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for updating more than one range of values in a spreadsheet.
   */
-@js.native
 trait SchemaBatchUpdateValuesRequest extends StObject {
   
   /**
     * The new values to apply to the spreadsheet.
     */
-  var data: js.UndefOr[js.Array[SchemaValueRange]] = js.native
+  var data: js.UndefOr[js.Array[SchemaValueRange]] = js.undefined
   
   /**
     * Determines if the update response should include the values of the cells
@@ -25,7 +23,7 @@ trait SchemaBatchUpdateValuesRequest extends StObject {
     * response will include all values in the requested range (excluding
     * trailing empty rows and columns).
     */
-  var includeValuesInResponse: js.UndefOr[Boolean] = js.native
+  var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines how dates, times, and durations in the response should be
@@ -33,18 +31,18 @@ trait SchemaBatchUpdateValuesRequest extends StObject {
     * FORMATTED_VALUE. The default dateTime render option is
     * DateTimeRenderOption.SERIAL_NUMBER.
     */
-  var responseDateTimeRenderOption: js.UndefOr[String] = js.native
+  var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /**
     * Determines how values in the response should be rendered. The default
     * render option is ValueRenderOption.FORMATTED_VALUE.
     */
-  var responseValueRenderOption: js.UndefOr[String] = js.native
+  var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
   /**
     * How the input data should be interpreted.
     */
-  var valueInputOption: js.UndefOr[String] = js.native
+  var valueInputOption: js.UndefOr[String] = js.undefined
 }
 object SchemaBatchUpdateValuesRequest {
   

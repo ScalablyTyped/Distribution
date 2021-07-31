@@ -2,63 +2,61 @@ package typings.recurlyRecurlyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addressMod {
   
-  @js.native
   trait Address extends StObject {
     
     /**
       * First line of a street address
       */
-    var address1: js.UndefOr[String] = js.native
+    var address1: js.UndefOr[String] = js.undefined
     
     /**
       * Second line of a street address
       */
-    var address2: js.UndefOr[String] = js.native
+    var address2: js.UndefOr[String] = js.undefined
     
     /**
       * Town or locality
       */
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
     /**
       * {@link http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2| [ISO 3166-1 alpha-2]} country code
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * Cardholder first name
       */
-    var first_name: String = js.native
+    var first_name: String
     
     /**
       * Cardholder last name
       */
-    var last_name: String = js.native
+    var last_name: String
     
     /**
       * Phone number
       */
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     /**
       * Postal code
       */
-    var postal_code: js.UndefOr[String] = js.native
+    var postal_code: js.UndefOr[String] = js.undefined
     
     /**
       * Province or region
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
     /**
       * Customer VAT number. Used for VAT exclusion
       */
-    var vat_number: js.UndefOr[String] = js.native
+    var vat_number: js.UndefOr[String] = js.undefined
   }
   object Address {
     

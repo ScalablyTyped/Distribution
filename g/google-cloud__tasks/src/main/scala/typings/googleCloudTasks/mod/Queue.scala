@@ -2,23 +2,21 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queue extends StObject {
   
-  var appEngineHttpQueue: AppEngineHttpQueue = js.native
+  var appEngineHttpQueue: AppEngineHttpQueue
   
-  var name: String = js.native
+  var name: String
   
-  var purgeTime: String = js.native
+  var purgeTime: String
   
-  var rateLimits: RateLimits = js.native
+  var rateLimits: RateLimits
   
-  var retryConfig: RetryConfig = js.native
+  var retryConfig: RetryConfig
   
-  var state: String = js.native
+  var state: String
 }
 object Queue {
   

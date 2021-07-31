@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsSinksUpdate extends StandardParameters {
+trait ParamsResourceProjectsSinksUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaLogSink] = js.native
+  var requestBody: js.UndefOr[SchemaLogSink] = js.undefined
   
   /**
     * Required. The full resource name of the sink to update, including the
@@ -31,7 +31,7 @@ trait ParamsResourceProjectsSinksUpdate extends StandardParameters {
     * "folders/[FOLDER_ID]/sinks/[SINK_ID]" Example:
     * "projects/my-project-id/sinks/my-sink-id".
     */
-  var sinkName: js.UndefOr[String] = js.native
+  var sinkName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. See sinks.create for a description of this field. When updating
@@ -43,7 +43,7 @@ trait ParamsResourceProjectsSinksUpdate extends StandardParameters {
     * service account. It is an error if the old value is true and the new
     * value is set to false or defaulted to false.
     */
-  var uniqueWriterIdentity: js.UndefOr[Boolean] = js.native
+  var uniqueWriterIdentity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Field mask that specifies the fields in sink that need an
@@ -57,7 +57,7 @@ trait ParamsResourceProjectsSinksUpdate extends StandardParameters {
     * https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskExample:
     * updateMask=filter.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsSinksUpdate {
   

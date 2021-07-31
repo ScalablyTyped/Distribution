@@ -3,19 +3,17 @@ package typings.bootstrapDatepicker
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerCustomFormatOptions extends StObject {
   
   var toDisplay: js.UndefOr[
     js.Function3[/* date */ String, /* format */ js.Any, /* language */ js.Any, String]
-  ] = js.native
+  ] = js.undefined
   
   var toValue: js.UndefOr[
     js.Function3[/* date */ String, /* format */ js.Any, /* language */ js.Any, Date]
-  ] = js.native
+  ] = js.undefined
 }
 object DatepickerCustomFormatOptions {
   

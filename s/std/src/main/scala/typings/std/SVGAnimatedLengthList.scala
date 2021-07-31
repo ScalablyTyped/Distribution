@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of type SVGLengthList which can be animated. */
-@js.native
 trait SVGAnimatedLengthList extends StObject {
   
-  val animVal: SVGLengthList = js.native
+  val animVal: SVGLengthList
   
-  val baseVal: SVGLengthList = js.native
+  val baseVal: SVGLengthList
 }
 object SVGAnimatedLengthList {
   

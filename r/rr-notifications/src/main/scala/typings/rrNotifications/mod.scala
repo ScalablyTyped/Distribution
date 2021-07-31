@@ -5,10 +5,13 @@ import typings.react.mod.FC
 import typings.rrNotifications.anon.AnimationDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rr-notifications", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rr-notifications", "NotificationsContext")
   @js.native
@@ -18,11 +21,9 @@ object mod {
   @js.native
   val NotificationsProvider: FC[AnimationDuration] = js.native
   
-  @JSImport("rr-notifications", "useNotification")
-  @js.native
-  def useNotification(): NotificationsContextType = js.native
+  @scala.inline
+  def useNotification(): NotificationsContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotification")().asInstanceOf[NotificationsContextType]
   
-  @js.native
   trait NotificationPayload extends StObject
   
   @js.native

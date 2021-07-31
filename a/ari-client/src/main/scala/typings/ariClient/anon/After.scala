@@ -2,23 +2,21 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait After extends StObject {
   
-  var after: js.UndefOr[Double] = js.native
+  var after: js.UndefOr[Double] = js.undefined
   
-  var before: js.UndefOr[Double] = js.native
+  var before: js.UndefOr[Double] = js.undefined
   
-  var between: js.UndefOr[Double] = js.native
+  var between: js.UndefOr[Double] = js.undefined
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var dtmf: js.UndefOr[String] = js.native
+  var dtmf: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object After {
   

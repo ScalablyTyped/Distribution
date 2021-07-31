@@ -2,23 +2,21 @@ package typings.authmosphere
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var expires_in: js.UndefOr[Double] = js.native
+    var expires_in: js.UndefOr[Double] = js.undefined
     
-    var local_expiry: js.UndefOr[Double] = js.native
+    var local_expiry: js.UndefOr[Double] = js.undefined
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
     
-    var token_type: js.UndefOr[String] = js.native
+    var token_type: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -63,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var redirectUri: String = js.native
+    var redirectUri: String
   }
   object Code {
     
@@ -89,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RefreshToken extends StObject {
     
-    var refreshToken: String = js.native
+    var refreshToken: String
   }
   object RefreshToken {
     
@@ -110,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var scope: js.Array[String] = js.native
+    var scope: js.Array[String]
   }
   object Scope {
     
@@ -134,10 +129,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TokenInfoEndpoint extends StObject {
     
-    var tokenInfoEndpoint: String = js.native
+    var tokenInfoEndpoint: String
   }
   object TokenInfoEndpoint {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyFilter extends StObject {
   
   /** The operator to filter by. */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
   
   /** The property to filter by. */
-  var property: js.UndefOr[PropertyReference] = js.native
+  var property: js.UndefOr[PropertyReference] = js.undefined
   
   /** The value to compare the property to. */
-  var value: js.UndefOr[Value] = js.native
+  var value: js.UndefOr[Value] = js.undefined
 }
 object PropertyFilter {
   

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerBreadcrumb extends StObject {
   
-  var delimiterIcon: js.UndefOr[String] = js.native
+  var delimiterIcon: js.UndefOr[String] = js.undefined
   
-  var rootIcon: js.UndefOr[String] = js.native
+  var rootIcon: js.UndefOr[String] = js.undefined
 }
 object FileManagerBreadcrumb {
   

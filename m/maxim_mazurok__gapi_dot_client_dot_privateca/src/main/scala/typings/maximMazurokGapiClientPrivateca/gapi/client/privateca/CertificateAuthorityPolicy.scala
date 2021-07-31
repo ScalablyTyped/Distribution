@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateAuthorityPolicy extends StObject {
   
   /**
     * Optional. If any value is specified here, then all Certificates issued by the CertificateAuthority must match at least one listed value. If no value is specified, all values will be
     * allowed for this fied. Glob patterns are also supported.
     */
-  var allowedCommonNames: js.UndefOr[js.Array[String]] = js.native
+  var allowedCommonNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. All Certificates issued by the CertificateAuthority must match at least one listed ReusableConfigWrapper in the list. */
-  var allowedConfigList: js.UndefOr[AllowedConfigList] = js.native
+  var allowedConfigList: js.UndefOr[AllowedConfigList] = js.undefined
   
   /** Optional. If specified, then only methods allowed in the IssuanceModes may be used to issue Certificates. */
-  var allowedIssuanceModes: js.UndefOr[IssuanceModes] = js.native
+  var allowedIssuanceModes: js.UndefOr[IssuanceModes] = js.undefined
   
   /**
     * Optional. If any Subject is specified here, then all Certificates issued by the CertificateAuthority must match at least one listed Subject. If a Subject has an empty field, any
     * value will be allowed for that field.
     */
-  var allowedLocationsAndOrganizations: js.UndefOr[js.Array[Subject]] = js.native
+  var allowedLocationsAndOrganizations: js.UndefOr[js.Array[Subject]] = js.undefined
   
   /**
     * Optional. If a AllowedSubjectAltNames is specified here, then all Certificates issued by the CertificateAuthority must match AllowedSubjectAltNames. If no value or an empty value is
     * specified, any value will be allowed for the SubjectAltNames field.
     */
-  var allowedSans: js.UndefOr[AllowedSubjectAltNames] = js.native
+  var allowedSans: js.UndefOr[AllowedSubjectAltNames] = js.undefined
   
   /**
     * Optional. The maximum lifetime allowed by the CertificateAuthority. Note that if the any part if the issuing chain expires before a Certificate's requested maximum_lifetime, the
     * effective lifetime will be explicitly truncated.
     */
-  var maximumLifetime: js.UndefOr[String] = js.native
+  var maximumLifetime: js.UndefOr[String] = js.undefined
   
   /** Optional. All Certificates issued by the CertificateAuthority will use the provided configuration values, overwriting any requested configuration values. */
-  var overwriteConfigValues: js.UndefOr[ReusableConfigWrapper] = js.native
+  var overwriteConfigValues: js.UndefOr[ReusableConfigWrapper] = js.undefined
 }
 object CertificateAuthorityPolicy {
   

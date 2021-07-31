@@ -2,25 +2,23 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueConfigurationDeprecated extends StObject {
   
-  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.native
+  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.undefined
   
   /**
     * A collection of bucket events for which to send notifications
     */
-  var Events: js.UndefOr[EventList] = js.native
+  var Events: js.UndefOr[EventList] = js.undefined
   
-  var Id: js.UndefOr[NotificationId] = js.native
+  var Id: js.UndefOr[NotificationId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SQS queue to which Amazon S3 publishes a message when it detects events of the specified type. 
     */
-  var Queue: js.UndefOr[QueueArn] = js.native
+  var Queue: js.UndefOr[QueueArn] = js.undefined
 }
 object QueueConfigurationDeprecated {
   

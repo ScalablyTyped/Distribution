@@ -2,11 +2,9 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "ext internal"
-@js.native
 trait ExtTypeSettings extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ExtTypeSettings extends StObject {
     *
     * @see https://datatables.net/manual/plug-ins/type-detection
     */
-  var detect: js.Array[FunctionExtTypeSettingsDetect] = js.native
+  var detect: js.Array[FunctionExtTypeSettingsDetect]
   
   /**
     * Type based ordering functions for plug-in development.
@@ -22,7 +20,7 @@ trait ExtTypeSettings extends StObject {
     * @see https://datatables.net/manual/plug-ins/sorting
     * @default {}
     */
-  var order: js.Object = js.native
+  var order: js.Object
   
   /**
     * Type based search formatting for plug-in development.
@@ -33,7 +31,7 @@ trait ExtTypeSettings extends StObject {
     *     return d.replace(/\n/g," ").replace( /<.*?>/g, "" );
     *   }
     */
-  var search: js.Object = js.native
+  var search: js.Object
 }
 object ExtTypeSettings {
   

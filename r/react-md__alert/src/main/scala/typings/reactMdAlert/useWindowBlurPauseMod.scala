@@ -3,27 +3,28 @@ package typings.reactMdAlert
 import typings.reactMdAlert.messageQueueContextMod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useWindowBlurPauseMod {
   
-  @JSImport("@react-md/alert/types/useWindowBlurPause", "useWindowBlurPause")
+  @JSImport("@react-md/alert/types/useWindowBlurPause", JSImport.Namespace)
   @js.native
-  def useWindowBlurPause(hasStartTimerStopTimerVisibleMessageDisabled: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useWindowBlurPause(hasStartTimerStopTimerVisibleMessageDisabled: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowBlurPause")(hasStartTimerStopTimerVisibleMessageDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[Message] = js.native
+    var message: js.UndefOr[Message] = js.undefined
     
-    def startTimer(): Unit = js.native
+    def startTimer(): Unit
     
-    def stopTimer(): Unit = js.native
+    def stopTimer(): Unit
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object Options {
     

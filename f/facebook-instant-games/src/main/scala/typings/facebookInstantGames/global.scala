@@ -13,7 +13,6 @@ import typings.facebookInstantGames.FBInstant.Player
 import typings.facebookInstantGames.FBInstant.SharePayload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -34,9 +33,8 @@ object global {
       * @throws CLIENT_REQUIRES_UPDATE
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.canCreateShortcutAsync")
-    @js.native
-    def canCreateShortcutAsync(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def canCreateShortcutAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canCreateShortcutAsync")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Checks if the current player is eligible for the matchPlayerAsync API.
@@ -44,9 +42,8 @@ object global {
       * @throws NETWORK_FAILURE
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
-    @JSGlobal("FBInstant.checkCanPlayerMatchAsync")
-    @js.native
-    def checkCanPlayerMatchAsync(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def checkCanPlayerMatchAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCanPlayerMatchAsync")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Contains functions and properties related to the current game context.
@@ -64,9 +61,8 @@ object global {
       * @throws CLIENT_REQUIRES_UPDATE
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.createShortcutAsync")
-    @js.native
-    def createShortcutAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def createShortcutAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createShortcutAsync")().asInstanceOf[js.Promise[Unit]]
     
     /**
       * Returns the entry point that the game was launched from.
@@ -74,9 +70,8 @@ object global {
       *
       * @returns The name of the entry point from which the user started the game.
       */
-    @JSGlobal("FBInstant.getEntryPointAsync")
-    @js.native
-    def getEntryPointAsync(): js.Promise[String] = js.native
+    @scala.inline
+    def getEntryPointAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntryPointAsync")().asInstanceOf[js.Promise[String]]
     
     /**
       * Returns any data object associated with the entry point that the game was launched from.
@@ -86,9 +81,8 @@ object global {
       *
       * @returns Data associated with the current entry point.
       */
-    @JSGlobal("FBInstant.getEntryPointData")
-    @js.native
-    def getEntryPointData(): js.Any = js.native
+    @scala.inline
+    def getEntryPointData(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntryPointData")().asInstanceOf[js.Any]
     
     /**
       * Attempt to create an instance of interstitial ad. This instance can then be preloaded and presented.
@@ -97,9 +91,8 @@ object global {
       * @throws ADS_TOO_MANY_INSTANCES
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
-    @JSGlobal("FBInstant.getInterstitialAdAsync")
-    @js.native
-    def getInterstitialAdAsync(placementID: String): js.Promise[AdInstance] = js.native
+    @scala.inline
+    def getInterstitialAdAsync(placementID: String): js.Promise[AdInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterstitialAdAsync")(placementID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdInstance]]
     
     /**
       * Fetch a specific leaderboard belonging to this Instant Game.
@@ -112,9 +105,8 @@ object global {
       * @throws INVALID_OPERATION
       * @throws INVALID_PARAM
       */
-    @JSGlobal("FBInstant.getLeaderboardAsync")
-    @js.native
-    def getLeaderboardAsync(name: String): js.Promise[Leaderboard] = js.native
+    @scala.inline
+    def getLeaderboardAsync(name: String): js.Promise[Leaderboard] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeaderboardAsync")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Leaderboard]]
     
     /**
       * The current locale. Use this to determine what language the current game should be localized with.
@@ -122,16 +114,14 @@ object global {
       *
       * @returns The current locale.
       */
-    @JSGlobal("FBInstant.getLocale")
-    @js.native
-    def getLocale(): String | Null = js.native
+    @scala.inline
+    def getLocale(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[String | Null]
     
     /**
       * The platform on which the game is currently running. The value will always be null until FBInstant.initializeAsync() resolves.
       */
-    @JSGlobal("FBInstant.getPlatform")
-    @js.native
-    def getPlatform(): Platform | Null = js.native
+    @scala.inline
+    def getPlatform(): Platform | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[Platform | Null]
     
     /**
       * Attempt to create an instance of rewarded video. This instance can then be preloaded and presented.
@@ -140,27 +130,24 @@ object global {
       * @throws ADS_TOO_MANY_INSTANCES
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
-    @JSGlobal("FBInstant.getRewardedVideoAsync")
-    @js.native
-    def getRewardedVideoAsync(placementID: String): js.Promise[AdInstance] = js.native
+    @scala.inline
+    def getRewardedVideoAsync(placementID: String): js.Promise[AdInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRewardedVideoAsync")(placementID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdInstance]]
     
     /**
       * The string representation of this SDK version.
       *
       * @returns The SDK version.
       */
-    @JSGlobal("FBInstant.getSDKVersion")
-    @js.native
-    def getSDKVersion(): String = js.native
+    @scala.inline
+    def getSDKVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")().asInstanceOf[String]
     
     /**
       * Provides a list of API functions that are supported by the client.
       *
       * @returns List of API functions that the client explicitly supports.
       */
-    @JSGlobal("FBInstant.getSupportedAPIs")
-    @js.native
-    def getSupportedAPIs(): js.Array[String] = js.native
+    @scala.inline
+    def getSupportedAPIs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedAPIs")().asInstanceOf[js.Array[String]]
     
     /**
       * Initializes the SDK library. This should be called before any other SDK functions.
@@ -168,9 +155,8 @@ object global {
       * @returns A promise that resolves when the SDK is ready to use.
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.initializeAsync")
-    @js.native
-    def initializeAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def initializeAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAsync")().asInstanceOf[js.Promise[Unit]]
     
     /**
       * Log an app event with FB Analytics. See https://developers.facebook.com/docs/javascript/reference/v2.8#app_events for more details about FB Analytics.
@@ -181,18 +167,14 @@ object global {
       * and can only contain '_', '-', ' ', and alphanumeric characters. Values must be less than 100 characters in length.
       * @returns The error if the event failed to log; otherwise returns null.
       */
-    @JSGlobal("FBInstant.logEvent")
-    @js.native
-    def logEvent(eventName: String): APIError | Null = js.native
-    @JSGlobal("FBInstant.logEvent")
-    @js.native
-    def logEvent(eventName: String, valueToSum: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]): APIError | Null = js.native
-    @JSGlobal("FBInstant.logEvent")
-    @js.native
-    def logEvent(eventName: String, valueToSum: Double): APIError | Null = js.native
-    @JSGlobal("FBInstant.logEvent")
-    @js.native
-    def logEvent(eventName: String, valueToSum: Double, parameters: StringDictionary[String]): APIError | Null = js.native
+    @scala.inline
+    def logEvent(eventName: String): APIError | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[APIError | Null]
+    @scala.inline
+    def logEvent(eventName: String, valueToSum: Double): APIError | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], valueToSum.asInstanceOf[js.Any])).asInstanceOf[APIError | Null]
+    @scala.inline
+    def logEvent(eventName: String, valueToSum: Double, parameters: StringDictionary[String]): APIError | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], valueToSum.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[APIError | Null]
+    @scala.inline
+    def logEvent(eventName: String, valueToSum: Unit, parameters: StringDictionary[String]): APIError | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], valueToSum.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[APIError | Null]
     
     /**
       * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group
@@ -214,42 +196,29 @@ object global {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(
-      matchTag: js.UndefOr[scala.Nothing],
-      switchContextWhenMatched: js.UndefOr[scala.Nothing],
-      offlineMatch: Boolean
-    ): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: String): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: js.UndefOr[scala.Nothing], offlineMatch: Boolean): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.matchPlayerAsync")
-    @js.native
-    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
+    @scala.inline
+    def matchPlayerAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")().asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any], offlineMatch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Unit, offlineMatch: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any], offlineMatch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: Unit, switchContextWhenMatched: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: Unit, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any], offlineMatch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def matchPlayerAsync(matchTag: Unit, switchContextWhenMatched: Unit, offlineMatch: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPlayerAsync")(matchTag.asInstanceOf[js.Any], switchContextWhenMatched.asInstanceOf[js.Any], offlineMatch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Set a callback to be fired when a pause event is triggered.
       * @param func A function to call when a pause event occurs.
       */
-    @JSGlobal("FBInstant.onPause")
-    @js.native
-    def onPause(func: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onPause(func: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPause")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Contains functions and properties related to payments and purchases of game products.
@@ -277,25 +246,22 @@ object global {
       * @param score An integer value representing the player's best score in a session.
       * @returns void
       */
-    @JSGlobal("FBInstant.postSessionScore")
-    @js.native
-    def postSessionScore(score: Double): Unit = js.native
+    @scala.inline
+    def postSessionScore(score: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postSessionScore")(score.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Quits the game.
       */
-    @JSGlobal("FBInstant.quit")
-    @js.native
-    def quit(): Unit = js.native
+    @scala.inline
+    def quit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("quit")().asInstanceOf[Unit]
     
     /**
       * Report the game's initial loading progress.
       *
       * @param percentage A number between 0 and 100.
       */
-    @JSGlobal("FBInstant.setLoadingProgress")
-    @js.native
-    def setLoadingProgress(percentage: Double): Unit = js.native
+    @scala.inline
+    def setLoadingProgress(percentage: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoadingProgress")(percentage.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sets the data associated with the individual gameplay session for the current context.
@@ -305,9 +271,8 @@ object global {
       *
       * @param sessionData An arbitrary data object, which must be less than or equal to 1000 characters when stringified.
       */
-    @JSGlobal("FBInstant.setSessionData")
-    @js.native
-    def setSessionData(sessionData: js.Any): Unit = js.native
+    @scala.inline
+    def setSessionData(sessionData: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSessionData")(sessionData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
@@ -323,9 +288,8 @@ object global {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.shareAsync")
-    @js.native
-    def shareAsync(payload: SharePayload): js.Promise[Unit] = js.native
+    @scala.inline
+    def shareAsync(payload: SharePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * This indicates that the game has finished initial loading and is ready to start.
@@ -335,9 +299,8 @@ object global {
       * @throws INVALID_PARAM
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
-    @JSGlobal("FBInstant.startGameAsync")
-    @js.native
-    def startGameAsync(): js.Promise[Unit] = js.native
+    @scala.inline
+    def startGameAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("startGameAsync")().asInstanceOf[js.Promise[Unit]]
     
     /**
       * Request that the client switch to a different Instant Game. The API will reject if the switch fails - else, the client will load the new game.
@@ -350,12 +313,10 @@ object global {
       * @throws PENDING_REQUEST
       * @throws CLIENT_REQUIRES_UPDATE
       */
-    @JSGlobal("FBInstant.switchGameAsync")
-    @js.native
-    def switchGameAsync(appID: String): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.switchGameAsync")
-    @js.native
-    def switchGameAsync(appID: String, data: js.Any): js.Promise[Unit] = js.native
+    @scala.inline
+    def switchGameAsync(appID: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def switchGameAsync(appID: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Informs Facebook of an update that occurred in the game. This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
@@ -367,11 +328,9 @@ object global {
       * @throws PENDING_REQUEST
       * @throws INVALID_OPERATION
       */
-    @JSGlobal("FBInstant.updateAsync")
-    @js.native
-    def updateAsync(payload: CustomUpdatePayload): js.Promise[Unit] = js.native
-    @JSGlobal("FBInstant.updateAsync")
-    @js.native
-    def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[Unit] = js.native
+    @scala.inline
+    def updateAsync(payload: CustomUpdatePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
 }

@@ -2,31 +2,29 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fontcolor extends StObject {
   
   /**
     * To specify the font color of the context menu items. 'gray' | '##666699'
     */
-  var `font-color`: js.UndefOr[js.Any] = js.native
+  var `font-color`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To display or remove the Save Image context menu item. true | false
     */
-  var image: js.UndefOr[Boolean] = js.native
+  var image: js.UndefOr[Boolean] = js.undefined
   
   /**
     * To display or remove the Lock/Unlock Scrolling context menu item. true | false
     */
-  var lock: js.UndefOr[Boolean] = js.native
+  var lock: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use the object to display or remove individual Share Image context menu items: email, facebook, twitter, and linkedin. {...}
     */
-  var share: js.UndefOr[js.Any] = js.native
+  var share: js.UndefOr[js.Any] = js.undefined
 }
 object Fontcolor {
   

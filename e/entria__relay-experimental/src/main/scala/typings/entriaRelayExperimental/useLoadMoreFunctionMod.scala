@@ -11,23 +11,24 @@ import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayStoreTypesMod.RequestDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLoadMoreFunctionMod {
   
-  @JSImport("@entria/relay-experimental/lib/useLoadMoreFunction", "getConnectionState")
+  @JSImport("@entria/relay-experimental/lib/useLoadMoreFunction", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getConnectionState(
     direction: Direction,
     fragmentNode: ReaderFragment,
     fragmentData: js.Any,
     connectionPathInFragmentData: js.Array[String | Double]
-  ): Cursor = js.native
+  ): Cursor = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionState")(direction.asInstanceOf[js.Any], fragmentNode.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any], connectionPathInFragmentData.asInstanceOf[js.Any])).asInstanceOf[Cursor]
   
-  @JSImport("@entria/relay-experimental/lib/useLoadMoreFunction", "useLoadMoreFunction")
-  @js.native
-  def useLoadMoreFunction(args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn, Boolean, js.Function0[Unit]] = js.native
+  @scala.inline
+  def useLoadMoreFunction(args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn, Boolean, js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoadMoreFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LoadMoreFn, Boolean, js.Function0[Unit]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.entriaRelayExperimental.entriaRelayExperimentalStrings.forward
@@ -45,32 +46,31 @@ object useLoadMoreFunctionMod {
   
   type LoadMoreFn = js.Function2[/* count */ Double, /* options */ js.UndefOr[OnComplete], Disposable]
   
-  @js.native
   trait UseLoadMoreFunctionArgs extends StObject {
     
-    var componentDisplayName: String = js.native
+    var componentDisplayName: String
     
-    var connectionPathInFragmentData: js.Array[String | Double] = js.native
+    var connectionPathInFragmentData: js.Array[String | Double]
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var fragmentData: js.Any = js.native
+    var fragmentData: js.Any
     
-    var fragmentIdentifier: String = js.native
+    var fragmentIdentifier: String
     
-    var fragmentNode: ReaderFragment = js.native
+    var fragmentNode: ReaderFragment
     
-    var fragmentOwner: RequestDescriptor | (js.Array[RequestDescriptor | Null]) | Null = js.native
+    var fragmentOwner: RequestDescriptor | (js.Array[RequestDescriptor | Null]) | Null
     
-    var fragmentRefPathInResponse: js.Array[String | Double] = js.native
+    var fragmentRefPathInResponse: js.Array[String | Double]
     
-    var observer: Observer[GraphQLResponse] = js.native
+    var observer: Observer[GraphQLResponse]
     
-    def onReset(): Unit = js.native
+    def onReset(): Unit
     
-    var paginationMetadata: ReaderPaginationMetadata = js.native
+    var paginationMetadata: ReaderPaginationMetadata
     
-    var paginationRequest: ConcreteRequest = js.native
+    var paginationRequest: ConcreteRequest
   }
   object UseLoadMoreFunctionArgs {
     
@@ -88,7 +88,7 @@ object useLoadMoreFunctionMod {
       paginationMetadata: ReaderPaginationMetadata,
       paginationRequest: ConcreteRequest
     ): UseLoadMoreFunctionArgs = {
-      val __obj = js.Dynamic.literal(componentDisplayName = componentDisplayName.asInstanceOf[js.Any], connectionPathInFragmentData = connectionPathInFragmentData.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], fragmentData = fragmentData.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any], fragmentNode = fragmentNode.asInstanceOf[js.Any], fragmentRefPathInResponse = fragmentRefPathInResponse.asInstanceOf[js.Any], observer = observer.asInstanceOf[js.Any], onReset = js.Any.fromFunction0(onReset), paginationMetadata = paginationMetadata.asInstanceOf[js.Any], paginationRequest = paginationRequest.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(componentDisplayName = componentDisplayName.asInstanceOf[js.Any], connectionPathInFragmentData = connectionPathInFragmentData.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], fragmentData = fragmentData.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any], fragmentNode = fragmentNode.asInstanceOf[js.Any], fragmentRefPathInResponse = fragmentRefPathInResponse.asInstanceOf[js.Any], observer = observer.asInstanceOf[js.Any], onReset = js.Any.fromFunction0(onReset), paginationMetadata = paginationMetadata.asInstanceOf[js.Any], paginationRequest = paginationRequest.asInstanceOf[js.Any], fragmentOwner = null)
       __obj.asInstanceOf[UseLoadMoreFunctionArgs]
     }
     

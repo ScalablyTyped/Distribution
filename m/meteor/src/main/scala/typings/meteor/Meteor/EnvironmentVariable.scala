@@ -2,19 +2,17 @@ package typings.meteor.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentVariable[T] extends StObject {
   
-  def get(): T = js.native
+  def get(): T
   
-  def getOrNullIfOutsideFiber(): T | Null = js.native
+  def getOrNullIfOutsideFiber(): T | Null
   
-  val slot: Double = js.native
+  val slot: Double
   
-  def withValue[U](value: T, fn: js.Function0[U]): U = js.native
+  def withValue[U](value: T, fn: js.Function0[U]): U
 }
 object EnvironmentVariable {
   
@@ -30,7 +28,7 @@ object EnvironmentVariable {
   }
   
   @scala.inline
-  implicit class EnvironmentVariableMutableBuilder[Self <: EnvironmentVariable[_], T] (val x: Self with EnvironmentVariable[T]) extends AnyVal {
+  implicit class EnvironmentVariableMutableBuilder[Self <: EnvironmentVariable[?], T] (val x: Self & EnvironmentVariable[T]) extends AnyVal {
     
     @scala.inline
     def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))

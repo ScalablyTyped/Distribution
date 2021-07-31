@@ -2,15 +2,15 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnKeyDownEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnKeyDownEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var cell: Double = js.native
+  var cell: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object OnKeyDownEventArgs {
   
@@ -21,7 +21,7 @@ object OnKeyDownEventArgs {
   }
   
   @scala.inline
-  implicit class OnKeyDownEventArgsMutableBuilder[Self <: OnKeyDownEventArgs[_], T /* <: SlickData */] (val x: Self with OnKeyDownEventArgs[T]) extends AnyVal {
+  implicit class OnKeyDownEventArgsMutableBuilder[Self <: OnKeyDownEventArgs[?], T /* <: SlickData */] (val x: Self & OnKeyDownEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])

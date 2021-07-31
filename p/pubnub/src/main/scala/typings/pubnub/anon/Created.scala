@@ -2,19 +2,17 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Created extends StObject {
   
-  var created: String = js.native
+  var created: String
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object Created {
   

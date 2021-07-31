@@ -12,7 +12,6 @@ import typings.std.Element
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sideNavigationMod {
@@ -47,10 +46,9 @@ object sideNavigationMod {
     def activePredicate(item: Item): Boolean = js.native
   }
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -86,16 +84,15 @@ object sideNavigationMod {
   @js.native
   val StyledSubNavContainer: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait Item extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
-    var subNav: js.UndefOr[js.Array[Item]] = js.native
+    var subNav: js.UndefOr[js.Array[Item]] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object Item {
     
@@ -137,16 +134,15 @@ object sideNavigationMod {
     }
   }
   
-  @js.native
   trait NavItemOverrides extends StObject {
     
     var NavItem: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var NavLink: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object NavItemOverrides {
     
@@ -177,23 +173,22 @@ object sideNavigationMod {
     }
   }
   
-  @js.native
   trait NavItemProps extends StObject {
     
     @JSName("$active")
-    var $active: js.UndefOr[Boolean] = js.native
+    var $active: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$level")
-    var $level: js.UndefOr[Double] = js.native
+    var $level: js.UndefOr[Double] = js.undefined
     
     @JSName("$selectable")
-    var $selectable: js.UndefOr[Boolean] = js.native
+    var $selectable: js.UndefOr[Boolean] = js.undefined
     
-    var item: Item = js.native
+    var item: Item
     
-    var onSelect: js.UndefOr[js.Function1[/* args */ ItemAny, _]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* args */ ItemAny, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[NavItemOverrides] = js.native
+    var overrides: js.UndefOr[NavItemOverrides] = js.undefined
   }
   object NavItemProps {
     
@@ -228,7 +223,7 @@ object sideNavigationMod {
       def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelect(value: /* args */ ItemAny => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      def setOnSelect(value: /* args */ ItemAny => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
@@ -241,28 +236,27 @@ object sideNavigationMod {
     }
   }
   
-  @js.native
   trait NavigationOverrides extends StObject {
     
     var NavItem: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var NavItemContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var NavLink: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var SubNavContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object NavigationOverrides {
     
@@ -317,20 +311,19 @@ object sideNavigationMod {
     }
   }
   
-  @js.native
   trait NavigationProps extends StObject {
     
-    var activeItemId: String = js.native
+    var activeItemId: String
     
-    var activePredicate: js.UndefOr[js.Function2[/* item */ js.Any, /* activeItemId */ String, Boolean]] = js.native
+    var activePredicate: js.UndefOr[js.Function2[/* item */ js.Any, /* activeItemId */ String, Boolean]] = js.undefined
     
-    var items: js.UndefOr[js.Array[Item]] = js.native
+    var items: js.UndefOr[js.Array[Item]] = js.undefined
     
-    var mapItem: js.UndefOr[js.Function1[/* item */ Item, Item]] = js.native
+    var mapItem: js.UndefOr[js.Function1[/* item */ Item, Item]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ EventItem, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ EventItem, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[NavigationOverrides] = js.native
+    var overrides: js.UndefOr[NavigationOverrides] = js.undefined
   }
   object NavigationProps {
     
@@ -368,7 +361,7 @@ object sideNavigationMod {
       def setMapItemUndefined: Self = StObject.set(x, "mapItem", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* args */ EventItem => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ EventItem => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

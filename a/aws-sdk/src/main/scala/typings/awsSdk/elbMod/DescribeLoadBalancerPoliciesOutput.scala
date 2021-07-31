@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoadBalancerPoliciesOutput extends StObject {
   
   /**
     * Information about the policies.
     */
-  var PolicyDescriptions: js.UndefOr[typings.awsSdk.elbMod.PolicyDescriptions] = js.native
+  var PolicyDescriptions: js.UndefOr[typings.awsSdk.elbMod.PolicyDescriptions] = js.undefined
 }
 object DescribeLoadBalancerPoliciesOutput {
   

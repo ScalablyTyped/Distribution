@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceInfo extends StObject {
   
   /** All files used during config generation. */
@@ -14,9 +12,9 @@ trait SourceInfo extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object SourceInfo {
   
@@ -34,7 +32,7 @@ object SourceInfo {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
@@ -45,7 +43,7 @@ object SourceInfo {
     def setSourceFilesVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo & TopLevel[js.Any])*
     ): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
   }
 }

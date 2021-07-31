@@ -2,21 +2,19 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetCognitoEventsRequest extends StObject {
   
   /**
     * The events to configure
     */
-  var Events: typings.awsSdk.cognitosyncMod.Events = js.native
+  var Events: typings.awsSdk.cognitosyncMod.Events
   
   /**
     * The Cognito Identity Pool to use when configuring Cognito Events
     */
-  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId
 }
 object SetCognitoEventsRequest {
   

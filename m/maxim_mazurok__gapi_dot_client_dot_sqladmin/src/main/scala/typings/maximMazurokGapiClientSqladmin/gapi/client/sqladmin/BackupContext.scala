@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupContext extends StObject {
   
   /** The identifier of the backup. */
-  var backupId: js.UndefOr[String] = js.native
+  var backupId: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#backupContext*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object BackupContext {
   

@@ -2,29 +2,27 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceInfo extends StObject {
   
-  var available: Boolean = js.native
+  var available: Boolean
   
-  var cordova: String = js.native
+  var cordova: String
   
-  var isVirtual: Boolean = js.native
+  var isVirtual: Boolean
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: String = js.native
+  var model: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var serial: String = js.native
+  var serial: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var version: String = js.native
+  var version: String
 }
 object IDeviceInfo {
   

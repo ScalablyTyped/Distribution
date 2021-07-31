@@ -2,7 +2,6 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,23 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * boundaries:Upper bound (0 &lt;= i &lt; N-1): offset + (width * i).  Lower
   * bound (1 &lt;= i &lt; N): offset + (width * (i - 1)).
   */
-@js.native
 trait SchemaLinear extends StObject {
   
   /**
     * Must be greater than 0.
     */
-  var numFiniteBuckets: js.UndefOr[Double] = js.native
+  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * Lower bound of the first bucket.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Must be greater than 0.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaLinear {
   

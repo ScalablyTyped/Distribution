@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkottieAnimation extends EmbindObject[SkottieAnimation] {
+trait SkottieAnimation
+  extends StObject
+     with EmbindObject[SkottieAnimation] {
   
   /**
     * Returns the animation duration in seconds.

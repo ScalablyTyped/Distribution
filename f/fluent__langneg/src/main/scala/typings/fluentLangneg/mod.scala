@@ -6,34 +6,33 @@ import typings.fluentLangneg.fluentLangnegStrings.lookup
 import typings.fluentLangneg.fluentLangnegStrings.matching
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@fluent/langneg", "acceptedLanguages")
+  @JSImport("@fluent/langneg", JSImport.Namespace)
   @js.native
-  def acceptedLanguages(acceptedLanguages: String): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@fluent/langneg", "negotiateLanguages")
-  @js.native
-  def negotiateLanguages(requestedLocales: js.Array[String], availableLocales: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@fluent/langneg", "negotiateLanguages")
-  @js.native
+  @scala.inline
+  def acceptedLanguages(acceptedLanguages: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptedLanguages")(acceptedLanguages.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def negotiateLanguages(requestedLocales: js.Array[String], availableLocales: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("negotiateLanguages")(requestedLocales.asInstanceOf[js.Any], availableLocales.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
   def negotiateLanguages(
     requestedLocales: js.Array[String],
     availableLocales: js.Array[String],
     options: NegotiateLanguageOptions
-  ): js.Array[String] = js.native
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("negotiateLanguages")(requestedLocales.asInstanceOf[js.Any], availableLocales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait NegotiateLanguageOptions extends StObject {
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var likelySubtags: js.UndefOr[StringMap] = js.native
+    var likelySubtags: js.UndefOr[StringMap] = js.undefined
     
-    var strategy: js.UndefOr[filtering | matching | lookup] = js.native
+    var strategy: js.UndefOr[filtering | matching | lookup] = js.undefined
   }
   object NegotiateLanguageOptions {
     

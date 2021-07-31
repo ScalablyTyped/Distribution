@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorOriginationRequest extends StObject {
   
   /**
     * The origination setting details to add.
     */
-  var Origination: typings.awsSdk.chimeMod.Origination = js.native
+  var Origination: typings.awsSdk.chimeMod.Origination
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString = js.native
+  var VoiceConnectorId: NonEmptyString
 }
 object PutVoiceConnectorOriginationRequest {
   

@@ -45,7 +45,6 @@ import typings.std.HTMLLIElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -210,9 +209,9 @@ trait Mocha extends StObject {
     * @see https://mochajs.org/api/mocha#reporter
     */
   def reporter(): this.type = js.native
-  def reporter(reporter: js.UndefOr[scala.Nothing], reporterOptions: js.Any): this.type = js.native
   def reporter(reporter: String): this.type = js.native
   def reporter(reporter: String, reporterOptions: js.Any): this.type = js.native
+  def reporter(reporter: Unit, reporterOptions: js.Any): this.type = js.native
   /**
     * Set reporter to one of the built-in reporters.
     *
@@ -310,7 +309,8 @@ object Mocha {
     */
   @js.native
   trait Context
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var _runnable: js.Any = js.native
     
@@ -425,7 +425,9 @@ object Mocha {
     * @see https://mochajs.org/api/Hook.html
     */
   @js.native
-  trait Hook extends Runnable {
+  trait Hook
+    extends StObject
+       with Runnable {
     
     var _error: js.Any = js.native
     
@@ -488,13 +490,11 @@ object Mocha {
     * Third-party declarations that want to add new entries to the `Interface` union can
     * contribute names here.
     */
-  @js.native
   trait InterfaceContributions extends StObject
   
   /**
     * Variables added to the global scope by Mocha when run in the CLI.
     */
-  @js.native
   trait MochaGlobals extends StObject {
     
     /**
@@ -510,7 +510,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def after(fn: AsyncFunc): Unit = js.native
+    def after(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -524,7 +524,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def after(fn: Func): Unit = js.native
+    def after(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -537,9 +537,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def after(name: String): Unit = js.native
-    def after(name: String, fn: AsyncFunc): Unit = js.native
-    def after(name: String, fn: Func): Unit = js.native
+    def after(name: String): Unit
+    def after(name: String, fn: AsyncFunc): Unit
+    def after(name: String, fn: Func): Unit
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -554,7 +554,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def afterEach(fn: AsyncFunc): Unit = js.native
+    def afterEach(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -568,7 +568,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def afterEach(fn: Func): Unit = js.native
+    def afterEach(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -581,9 +581,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def afterEach(name: String): Unit = js.native
-    def afterEach(name: String, fn: AsyncFunc): Unit = js.native
-    def afterEach(name: String, fn: Func): Unit = js.native
+    def afterEach(name: String): Unit
+    def afterEach(name: String, fn: AsyncFunc): Unit
+    def afterEach(name: String, fn: Func): Unit
     /**
       * Execute after each test case.
       *
@@ -592,7 +592,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#afterEach
       */
     @JSName("afterEach")
-    var afterEach_Original: HookFunction = js.native
+    var afterEach_Original: HookFunction
     
     /**
       * Execute after running tests.
@@ -602,7 +602,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#after
       */
     @JSName("after")
-    var after_Original: HookFunction = js.native
+    var after_Original: HookFunction
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -617,7 +617,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def before(fn: AsyncFunc): Unit = js.native
+    def before(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -631,7 +631,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def before(fn: Func): Unit = js.native
+    def before(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -644,9 +644,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def before(name: String): Unit = js.native
-    def before(name: String, fn: AsyncFunc): Unit = js.native
-    def before(name: String, fn: Func): Unit = js.native
+    def before(name: String): Unit
+    def before(name: String, fn: AsyncFunc): Unit
+    def before(name: String, fn: Func): Unit
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -661,7 +661,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def beforeEach(fn: AsyncFunc): Unit = js.native
+    def beforeEach(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -675,7 +675,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def beforeEach(fn: Func): Unit = js.native
+    def beforeEach(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -688,9 +688,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def beforeEach(name: String): Unit = js.native
-    def beforeEach(name: String, fn: AsyncFunc): Unit = js.native
-    def beforeEach(name: String, fn: Func): Unit = js.native
+    def beforeEach(name: String): Unit
+    def beforeEach(name: String, fn: AsyncFunc): Unit
+    def beforeEach(name: String, fn: Func): Unit
     /**
       * Execute before each test case.
       *
@@ -699,7 +699,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#beforeEach
       */
     @JSName("beforeEach")
-    var beforeEach_Original: HookFunction = js.native
+    var beforeEach_Original: HookFunction
     
     /**
       * Execute before running tests.
@@ -709,7 +709,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#before
       */
     @JSName("before")
-    var before_Original: HookFunction = js.native
+    var before_Original: HookFunction
     
     /**
       * [qunit] Describe a "suite" with the given `title`.
@@ -721,7 +721,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def context(title: String): Suite = js.native
+    def context(title: String): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -733,14 +733,14 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def context(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def context(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     /**
       * Describe a "suite" containing nested suites and tests.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("context")
-    var context_Original: SuiteFunction = js.native
+    var context_Original: SuiteFunction
     
     /**
       * [qunit] Describe a "suite" with the given `title`.
@@ -752,7 +752,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def describe(title: String): Suite = js.native
+    def describe(title: String): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -764,14 +764,14 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def describe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def describe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     /**
       * Describe a "suite" containing nested suites and tests.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("describe")
-    var describe_Original: SuiteFunction = js.native
+    var describe_Original: SuiteFunction
     
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
@@ -784,7 +784,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def it(fn: AsyncFunc): Test = js.native
+    def it(fn: AsyncFunc): Test
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
       * The name of the function is used as the name of the test.
@@ -796,7 +796,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def it(fn: Func): Test = js.native
+    def it(fn: Func): Test
     /**
       * Describe a specification or test-case with the given `title` and callback `fn` acting
       * as a thunk.
@@ -808,20 +808,20 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def it(title: String): Test = js.native
-    def it(title: String, fn: AsyncFunc): Test = js.native
-    def it(title: String, fn: Func): Test = js.native
+    def it(title: String): Test
+    def it(title: String, fn: AsyncFunc): Test
+    def it(title: String, fn: Func): Test
     /**
       * Describes a test case.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("it")
-    var it_Original: TestFunction = js.native
+    var it_Original: TestFunction
     
-    def run(): Unit = js.native
+    def run(): Unit
     @JSName("run")
-    var run_Original: js.Function0[Unit] = js.native
+    var run_Original: js.Function0[Unit]
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -836,7 +836,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def setup(fn: AsyncFunc): Unit = js.native
+    def setup(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -850,7 +850,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def setup(fn: Func): Unit = js.native
+    def setup(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -863,9 +863,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#beforeEach
       */
-    def setup(name: String): Unit = js.native
-    def setup(name: String, fn: AsyncFunc): Unit = js.native
-    def setup(name: String, fn: Func): Unit = js.native
+    def setup(name: String): Unit
+    def setup(name: String, fn: AsyncFunc): Unit
+    def setup(name: String, fn: Func): Unit
     /**
       * Execute before each test case.
       *
@@ -874,7 +874,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#beforeEach
       */
     @JSName("setup")
-    var setup_Original: HookFunction = js.native
+    var setup_Original: HookFunction
     
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
@@ -887,7 +887,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def specify(fn: AsyncFunc): Test = js.native
+    def specify(fn: AsyncFunc): Test
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
       * The name of the function is used as the name of the test.
@@ -899,7 +899,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def specify(fn: Func): Test = js.native
+    def specify(fn: Func): Test
     /**
       * Describe a specification or test-case with the given `title` and callback `fn` acting
       * as a thunk.
@@ -911,16 +911,16 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def specify(title: String): Test = js.native
-    def specify(title: String, fn: AsyncFunc): Test = js.native
-    def specify(title: String, fn: Func): Test = js.native
+    def specify(title: String): Test
+    def specify(title: String, fn: AsyncFunc): Test
+    def specify(title: String, fn: Func): Test
     /**
       * Describes a test case.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("specify")
-    var specify_Original: TestFunction = js.native
+    var specify_Original: TestFunction
     
     /**
       * [qunit] Describe a "suite" with the given `title`.
@@ -932,7 +932,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def suite(title: String): Suite = js.native
+    def suite(title: String): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -944,7 +944,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def suite(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def suite(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -959,7 +959,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def suiteSetup(fn: AsyncFunc): Unit = js.native
+    def suiteSetup(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -973,7 +973,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def suiteSetup(fn: Func): Unit = js.native
+    def suiteSetup(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -986,9 +986,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#before
       */
-    def suiteSetup(name: String): Unit = js.native
-    def suiteSetup(name: String, fn: AsyncFunc): Unit = js.native
-    def suiteSetup(name: String, fn: Func): Unit = js.native
+    def suiteSetup(name: String): Unit
+    def suiteSetup(name: String, fn: AsyncFunc): Unit
+    def suiteSetup(name: String, fn: Func): Unit
     /**
       * Execute before running tests.
       *
@@ -997,7 +997,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#before
       */
     @JSName("suiteSetup")
-    var suiteSetup_Original: HookFunction = js.native
+    var suiteSetup_Original: HookFunction
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -1012,7 +1012,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def suiteTeardown(fn: AsyncFunc): Unit = js.native
+    def suiteTeardown(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -1026,7 +1026,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def suiteTeardown(fn: Func): Unit = js.native
+    def suiteTeardown(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -1039,9 +1039,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#after
       */
-    def suiteTeardown(name: String): Unit = js.native
-    def suiteTeardown(name: String, fn: AsyncFunc): Unit = js.native
-    def suiteTeardown(name: String, fn: Func): Unit = js.native
+    def suiteTeardown(name: String): Unit
+    def suiteTeardown(name: String, fn: AsyncFunc): Unit
+    def suiteTeardown(name: String, fn: Func): Unit
     /**
       * Execute after running tests.
       *
@@ -1050,7 +1050,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#after
       */
     @JSName("suiteTeardown")
-    var suiteTeardown_Original: HookFunction = js.native
+    var suiteTeardown_Original: HookFunction
     
     /**
       * Describe a "suite" containing nested suites and tests.
@@ -1058,7 +1058,7 @@ object Mocha {
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("suite")
-    var suite_Original: SuiteFunction = js.native
+    var suite_Original: SuiteFunction
     
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
@@ -1073,7 +1073,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def teardown(fn: AsyncFunc): Unit = js.native
+    def teardown(fn: AsyncFunc): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
       * function is used as the name of the hook.
@@ -1087,7 +1087,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def teardown(fn: Func): Unit = js.native
+    def teardown(fn: Func): Unit
     /**
       * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
       *
@@ -1100,9 +1100,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/global.html#afterEach
       */
-    def teardown(name: String): Unit = js.native
-    def teardown(name: String, fn: AsyncFunc): Unit = js.native
-    def teardown(name: String, fn: Func): Unit = js.native
+    def teardown(name: String): Unit
+    def teardown(name: String, fn: AsyncFunc): Unit
+    def teardown(name: String, fn: Func): Unit
     /**
       * Execute after each test case.
       *
@@ -1111,7 +1111,7 @@ object Mocha {
       * @see https://mochajs.org/api/global.html#afterEach
       */
     @JSName("teardown")
-    var teardown_Original: HookFunction = js.native
+    var teardown_Original: HookFunction
     
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
@@ -1124,7 +1124,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def test(fn: AsyncFunc): Test = js.native
+    def test(fn: AsyncFunc): Test
     /**
       * Describe a specification or test-case with the given callback `fn` acting as a thunk.
       * The name of the function is used as the name of the test.
@@ -1136,7 +1136,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def test(fn: Func): Test = js.native
+    def test(fn: Func): Test
     /**
       * Describe a specification or test-case with the given `title` and callback `fn` acting
       * as a thunk.
@@ -1148,44 +1148,44 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def test(title: String): Test = js.native
-    def test(title: String, fn: AsyncFunc): Test = js.native
-    def test(title: String, fn: Func): Test = js.native
+    def test(title: String): Test
+    def test(title: String, fn: AsyncFunc): Test
+    def test(title: String, fn: Func): Test
     /**
       * Describes a test case.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("test")
-    var test_Original: TestFunction = js.native
+    var test_Original: TestFunction
     
     /**
       * Pending suite.
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xcontext(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+    def xcontext(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
     /**
       * Pending suite.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("xcontext")
-    var xcontext_Original: PendingSuiteFunction = js.native
+    var xcontext_Original: PendingSuiteFunction
     
     /**
       * Pending suite.
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xdescribe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+    def xdescribe(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
     /**
       * Pending suite.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("xdescribe")
-    var xdescribe_Original: PendingSuiteFunction = js.native
+    var xdescribe_Original: PendingSuiteFunction
     
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
@@ -1199,7 +1199,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xit(fn: AsyncFunc): Test = js.native
+    def xit(fn: AsyncFunc): Test
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
       * acting as a thunk. The name of the function is used as the name of the test. Indicates
@@ -1212,7 +1212,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xit(fn: Func): Test = js.native
+    def xit(fn: Func): Test
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
       * callback `fn` acting as a thunk. Indicates this test should not be executed.
@@ -1224,16 +1224,16 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xit(title: String): Test = js.native
-    def xit(title: String, fn: AsyncFunc): Test = js.native
-    def xit(title: String, fn: Func): Test = js.native
+    def xit(title: String): Test
+    def xit(title: String, fn: AsyncFunc): Test
+    def xit(title: String, fn: Func): Test
     /**
       * Describes a pending test case.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("xit")
-    var xit_Original: PendingTestFunction = js.native
+    var xit_Original: PendingTestFunction
     
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
@@ -1247,7 +1247,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xspecify(fn: AsyncFunc): Test = js.native
+    def xspecify(fn: AsyncFunc): Test
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given callback `fn`
       * acting as a thunk. The name of the function is used as the name of the test. Indicates
@@ -1260,7 +1260,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xspecify(fn: Func): Test = js.native
+    def xspecify(fn: Func): Test
     /**
       * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
       * callback `fn` acting as a thunk. Indicates this test should not be executed.
@@ -1272,22 +1272,112 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xspecify(title: String): Test = js.native
-    def xspecify(title: String, fn: AsyncFunc): Test = js.native
-    def xspecify(title: String, fn: Func): Test = js.native
+    def xspecify(title: String): Test
+    def xspecify(title: String, fn: AsyncFunc): Test
+    def xspecify(title: String, fn: Func): Test
     /**
       * Describes a pending test case.
       *
       * - _Only available when invoked via the mocha CLI._
       */
     @JSName("xspecify")
-    var xspecify_Original: PendingTestFunction = js.native
+    var xspecify_Original: PendingTestFunction
+  }
+  object MochaGlobals {
+    
+    @scala.inline
+    def apply(
+      after: HookFunction,
+      afterEach: HookFunction,
+      before: HookFunction,
+      beforeEach: HookFunction,
+      context: SuiteFunction,
+      describe: SuiteFunction,
+      it: TestFunction,
+      run: () => Unit,
+      setup: HookFunction,
+      specify: TestFunction,
+      suite: SuiteFunction,
+      suiteSetup: HookFunction,
+      suiteTeardown: HookFunction,
+      teardown: HookFunction,
+      test: TestFunction,
+      xcontext: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit,
+      xdescribe: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit,
+      xit: PendingTestFunction,
+      xspecify: PendingTestFunction
+    ): MochaGlobals = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], afterEach = afterEach.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], beforeEach = beforeEach.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), setup = setup.asInstanceOf[js.Any], specify = specify.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], suiteSetup = suiteSetup.asInstanceOf[js.Any], suiteTeardown = suiteTeardown.asInstanceOf[js.Any], teardown = teardown.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], xcontext = js.Any.fromFunction2(xcontext), xdescribe = js.Any.fromFunction2(xdescribe), xit = xit.asInstanceOf[js.Any], xspecify = xspecify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MochaGlobals]
+    }
+    
+    @scala.inline
+    implicit class MochaGlobalsMutableBuilder[Self <: MochaGlobals] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXcontext(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xcontext", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setXdescribe(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xdescribe", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  trait MochaInstanceOptions extends MochaOptions {
+  trait MochaInstanceOptions
+    extends StObject
+       with MochaOptions {
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
   }
   object MochaInstanceOptions {
     
@@ -1314,79 +1404,78 @@ object Mocha {
   /**
     * Options to pass to Mocha.
     */
-  @js.native
   trait MochaOptions extends StObject {
     
-    var allowUncaught: js.UndefOr[Boolean] = js.native
+    var allowUncaught: js.UndefOr[Boolean] = js.undefined
     
-    var asyncOnly: js.UndefOr[Boolean] = js.native
+    var asyncOnly: js.UndefOr[Boolean] = js.undefined
     
     /** bail on the first test failure. */
-    var bail: js.UndefOr[Boolean] = js.native
+    var bail: js.UndefOr[Boolean] = js.undefined
     
     /** check for global variable leaks. */
-    var checkLeaks: js.UndefOr[Boolean] = js.native
+    var checkLeaks: js.UndefOr[Boolean] = js.undefined
     
     /** Color TTY output from reporter */
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Boolean] = js.native
+    var delay: js.UndefOr[Boolean] = js.undefined
     
-    var forbidOnly: js.UndefOr[Boolean] = js.native
+    var forbidOnly: js.UndefOr[Boolean] = js.undefined
     
-    var forbidPending: js.UndefOr[Boolean] = js.native
+    var forbidPending: js.UndefOr[Boolean] = js.undefined
     
     /** display the full stack trace on failure. */
-    var fullStackTrace: js.UndefOr[Boolean] = js.native
+    var fullStackTrace: js.UndefOr[Boolean] = js.undefined
     
-    var fullTrace: js.UndefOr[Boolean] = js.native
+    var fullTrace: js.UndefOr[Boolean] = js.undefined
     
     /** Array of accepted globals. */
-    var globals: js.UndefOr[js.Array[String]] = js.native
+    var globals: js.UndefOr[js.Array[String]] = js.undefined
     
     /** string or regexp to filter tests with. */
-    var grep: js.UndefOr[String | RegExp] = js.native
+    var grep: js.UndefOr[String | RegExp] = js.undefined
     
     /** Enable growl support. */
-    var growl: js.UndefOr[Boolean] = js.native
+    var growl: js.UndefOr[Boolean] = js.undefined
     
     /** Do not show diffs at all. */
-    var hideDiff: js.UndefOr[Boolean] = js.native
+    var hideDiff: js.UndefOr[Boolean] = js.undefined
     
     /** Use inline diffs rather than +/-. */
-    var inlineDiffs: js.UndefOr[Boolean] = js.native
+    var inlineDiffs: js.UndefOr[Boolean] = js.undefined
     
     /** Max number of worker processes for parallel runs */
-    var jobs: js.UndefOr[Double] = js.native
+    var jobs: js.UndefOr[Double] = js.undefined
     
-    var noHighlighting: js.UndefOr[Boolean] = js.native
+    var noHighlighting: js.UndefOr[Boolean] = js.undefined
     
     /** Run job in parallel */
-    var parallel: js.UndefOr[Boolean] = js.native
+    var parallel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reporter constructor, built-in reporter name, or reporter module path. Defaults to
       * `"spec"`.
       */
-    var reporter: js.UndefOr[String | ReporterConstructor] = js.native
+    var reporter: js.UndefOr[String | ReporterConstructor] = js.undefined
     
     /** Options to pass to the reporter. */
-    var reporterOptions: js.UndefOr[js.Any] = js.native
+    var reporterOptions: js.UndefOr[js.Any] = js.undefined
     
     /** number of times to retry failed tests. */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
     /** Assigns hooks to the root suite */
-    var rootHooks: js.UndefOr[RootHookObject] = js.native
+    var rootHooks: js.UndefOr[RootHookObject] = js.undefined
     
     /** milliseconds to wait before considering a test slow. */
-    var slow: js.UndefOr[Double] = js.native
+    var slow: js.UndefOr[Double] = js.undefined
     
     /** timeout in milliseconds or time string like '1s'. */
-    var timeout: js.UndefOr[Double | String] = js.native
+    var timeout: js.UndefOr[Double | String] = js.undefined
     
     /** Test interfaces ("bdd", "tdd", "exports", etc.). */
-    var ui: js.UndefOr[Interface] = js.native
+    var ui: js.UndefOr[Interface] = js.undefined
   }
   object MochaOptions {
     
@@ -1628,13 +1717,14 @@ object Mocha {
   trait Reporter extends StObject
   
   @js.native
-  trait ReporterConstructor extends Instantiable2[/* runner */ Runner, /* options */ MochaOptions, Base_]
+  trait ReporterConstructor
+    extends StObject
+       with Instantiable2[/* runner */ Runner, /* options */ MochaOptions, Base_]
   
   /**
     * Third-party declarations that want to add new entries to the `Reporter` union can
     * contribute names here.
     */
-  @js.native
   trait ReporterContributions extends StObject
   
   /**
@@ -1647,30 +1737,29 @@ object Mocha {
     *
     * @see https://mochajs.org/#root-hook-plugins
     */
-  @js.native
   trait RootHookObject extends StObject {
     
     /**
       * In serial mode, run after all tests end, once only.
       * In parallel mode, run after all tests end, for each file.
       */
-    var afterAll: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.native
+    var afterAll: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.undefined
     
     /**
       * In both modes, run after every test.
       */
-    var afterEach: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.native
+    var afterEach: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.undefined
     
     /**
       * In serial mode (Mocha's default), before all tests begin, once only.
       * In parallel mode, run before all tests begin, for each file.
       */
-    var beforeAll: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.native
+    var beforeAll: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.undefined
     
     /**
       * In both modes, run before each test.
       */
-    var beforeEach: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.native
+    var beforeEach: js.UndefOr[Func | AsyncFunc | (js.Array[AsyncFunc | Func])] = js.undefined
   }
   object RootHookObject {
     
@@ -1730,7 +1819,9 @@ object Mocha {
     * @see https://mochajs.org/api/Runnable.html
     */
   @js.native
-  trait Runnable extends EventEmitter {
+  trait Runnable
+    extends StObject
+       with EventEmitter {
     
     var _currentRetry: js.Any = js.native
     
@@ -1959,7 +2050,9 @@ object Mocha {
     * @see https://mochajs.org/api/Mocha.Runner.html
     */
   @js.native
-  trait Runner extends EventEmitter {
+  trait Runner
+    extends StObject
+       with EventEmitter {
     
     var _abort: js.Any = js.native
     
@@ -2354,57 +2447,41 @@ object Mocha {
     def uncaught(err: js.Any): Unit = js.native
   }
   
-  @js.native
   trait RunnerConstants extends StObject {
     
-    val EVENT_DELAY_BEGIN: waiting = js.native
+    val EVENT_DELAY_BEGIN: waiting
     
-    val EVENT_DELAY_END: ready = js.native
+    val EVENT_DELAY_END: ready
     
-    val EVENT_HOOK_BEGIN: hook = js.native
+    val EVENT_HOOK_BEGIN: hook
     
-    val EVENT_HOOK_END: `hook end` = js.native
+    val EVENT_HOOK_END: `hook end`
     
-    val EVENT_RUN_BEGIN: start = js.native
+    val EVENT_RUN_BEGIN: start
     
-    val EVENT_RUN_END: end = js.native
+    val EVENT_RUN_END: end
     
-    val EVENT_SUITE_BEGIN: suite = js.native
+    val EVENT_SUITE_BEGIN: suite
     
-    val EVENT_SUITE_END: `suite end` = js.native
+    val EVENT_SUITE_END: `suite end`
     
-    val EVENT_TEST_BEGIN: test = js.native
+    val EVENT_TEST_BEGIN: test
     
-    val EVENT_TEST_END: `test end` = js.native
+    val EVENT_TEST_END: `test end`
     
-    val EVENT_TEST_FAIL: fail = js.native
+    val EVENT_TEST_FAIL: fail
     
-    val EVENT_TEST_PASS: pass = js.native
+    val EVENT_TEST_PASS: pass
     
-    val EVENT_TEST_PENDING: pending = js.native
+    val EVENT_TEST_PENDING: pending
     
-    val EVENT_TEST_RETRY: retry = js.native
+    val EVENT_TEST_RETRY: retry
   }
   object RunnerConstants {
     
     @scala.inline
-    def apply(
-      EVENT_DELAY_BEGIN: waiting,
-      EVENT_DELAY_END: ready,
-      EVENT_HOOK_BEGIN: hook,
-      EVENT_HOOK_END: `hook end`,
-      EVENT_RUN_BEGIN: start,
-      EVENT_RUN_END: end,
-      EVENT_SUITE_BEGIN: suite,
-      EVENT_SUITE_END: `suite end`,
-      EVENT_TEST_BEGIN: test,
-      EVENT_TEST_END: `test end`,
-      EVENT_TEST_FAIL: fail,
-      EVENT_TEST_PASS: pass,
-      EVENT_TEST_PENDING: pending,
-      EVENT_TEST_RETRY: retry
-    ): RunnerConstants = {
-      val __obj = js.Dynamic.literal(EVENT_DELAY_BEGIN = EVENT_DELAY_BEGIN.asInstanceOf[js.Any], EVENT_DELAY_END = EVENT_DELAY_END.asInstanceOf[js.Any], EVENT_HOOK_BEGIN = EVENT_HOOK_BEGIN.asInstanceOf[js.Any], EVENT_HOOK_END = EVENT_HOOK_END.asInstanceOf[js.Any], EVENT_RUN_BEGIN = EVENT_RUN_BEGIN.asInstanceOf[js.Any], EVENT_RUN_END = EVENT_RUN_END.asInstanceOf[js.Any], EVENT_SUITE_BEGIN = EVENT_SUITE_BEGIN.asInstanceOf[js.Any], EVENT_SUITE_END = EVENT_SUITE_END.asInstanceOf[js.Any], EVENT_TEST_BEGIN = EVENT_TEST_BEGIN.asInstanceOf[js.Any], EVENT_TEST_END = EVENT_TEST_END.asInstanceOf[js.Any], EVENT_TEST_FAIL = EVENT_TEST_FAIL.asInstanceOf[js.Any], EVENT_TEST_PASS = EVENT_TEST_PASS.asInstanceOf[js.Any], EVENT_TEST_PENDING = EVENT_TEST_PENDING.asInstanceOf[js.Any], EVENT_TEST_RETRY = EVENT_TEST_RETRY.asInstanceOf[js.Any])
+    def apply(): RunnerConstants = {
+      val __obj = js.Dynamic.literal(EVENT_DELAY_BEGIN = "waiting", EVENT_DELAY_END = "ready", EVENT_HOOK_BEGIN = "hook", EVENT_HOOK_END = "hook end", EVENT_RUN_BEGIN = "start", EVENT_RUN_END = "end", EVENT_SUITE_BEGIN = "suite", EVENT_SUITE_END = "suite end", EVENT_TEST_BEGIN = "test", EVENT_TEST_END = "test end", EVENT_TEST_FAIL = "fail", EVENT_TEST_PASS = "pass", EVENT_TEST_PENDING = "pending", EVENT_TEST_RETRY = "retry")
       __obj.asInstanceOf[RunnerConstants]
     }
     
@@ -2458,24 +2535,23 @@ object Mocha {
   /**
     * Test statistics
     */
-  @js.native
   trait Stats extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[Date] = js.native
+    var end: js.UndefOr[Date] = js.undefined
     
-    var failures: Double = js.native
+    var failures: Double
     
-    var passes: Double = js.native
+    var passes: Double
     
-    var pending: Double = js.native
+    var pending: Double
     
-    var start: js.UndefOr[Date] = js.native
+    var start: js.UndefOr[Date] = js.undefined
     
-    var suites: Double = js.native
+    var suites: Double
     
-    var tests: Double = js.native
+    var tests: Double
   }
   object Stats {
     
@@ -2550,7 +2626,9 @@ object Mocha {
     * @see https://mochajs.org/api/Mocha.Suite.html
     */
   @js.native
-  trait Suite extends EventEmitter {
+  trait Suite
+    extends StObject
+       with EventEmitter {
     
     var _afterAll: js.Any = js.native
     
@@ -2996,57 +3074,41 @@ object Mocha {
   }
   
   // #endregion Runner untyped events
-  @js.native
   trait SuiteConstants extends StObject {
     
-    val EVENT_FILE_POST_REQUIRE: `post-require` = js.native
+    val EVENT_FILE_POST_REQUIRE: `post-require`
     
-    val EVENT_FILE_PRE_REQUIRE: `pre-require` = js.native
+    val EVENT_FILE_PRE_REQUIRE: `pre-require`
     
-    val EVENT_FILE_REQUIRE: require = js.native
+    val EVENT_FILE_REQUIRE: require
     
-    val EVENT_ROOT_SUITE_RUN: run = js.native
+    val EVENT_ROOT_SUITE_RUN: run
     
-    val EVENT_SUITE_ADD_HOOK_AFTER_ALL: afterAll = js.native
+    val EVENT_SUITE_ADD_HOOK_AFTER_ALL: afterAll
     
-    val EVENT_SUITE_ADD_HOOK_AFTER_EACH: afterEach = js.native
+    val EVENT_SUITE_ADD_HOOK_AFTER_EACH: afterEach
     
-    val EVENT_SUITE_ADD_HOOK_BEFORE_ALL: beforeAll = js.native
+    val EVENT_SUITE_ADD_HOOK_BEFORE_ALL: beforeAll
     
-    val EVENT_SUITE_ADD_HOOK_BEFORE_EACH: beforeEach = js.native
+    val EVENT_SUITE_ADD_HOOK_BEFORE_EACH: beforeEach
     
-    val EVENT_SUITE_ADD_SUITE: suite = js.native
+    val EVENT_SUITE_ADD_SUITE: suite
     
-    val EVENT_SUITE_ADD_TEST: test = js.native
+    val EVENT_SUITE_ADD_TEST: test
     
-    val HOOK_TYPE_AFTER_ALL: afterAll = js.native
+    val HOOK_TYPE_AFTER_ALL: afterAll
     
-    val HOOK_TYPE_AFTER_EACH: afterEach = js.native
+    val HOOK_TYPE_AFTER_EACH: afterEach
     
-    val HOOK_TYPE_BEFORE_ALL: beforeAll = js.native
+    val HOOK_TYPE_BEFORE_ALL: beforeAll
     
-    val HOOK_TYPE_BEFORE_EACH: beforeEach = js.native
+    val HOOK_TYPE_BEFORE_EACH: beforeEach
   }
   object SuiteConstants {
     
     @scala.inline
-    def apply(
-      EVENT_FILE_POST_REQUIRE: `post-require`,
-      EVENT_FILE_PRE_REQUIRE: `pre-require`,
-      EVENT_FILE_REQUIRE: require,
-      EVENT_ROOT_SUITE_RUN: run,
-      EVENT_SUITE_ADD_HOOK_AFTER_ALL: afterAll,
-      EVENT_SUITE_ADD_HOOK_AFTER_EACH: afterEach,
-      EVENT_SUITE_ADD_HOOK_BEFORE_ALL: beforeAll,
-      EVENT_SUITE_ADD_HOOK_BEFORE_EACH: beforeEach,
-      EVENT_SUITE_ADD_SUITE: suite,
-      EVENT_SUITE_ADD_TEST: test,
-      HOOK_TYPE_AFTER_ALL: afterAll,
-      HOOK_TYPE_AFTER_EACH: afterEach,
-      HOOK_TYPE_BEFORE_ALL: beforeAll,
-      HOOK_TYPE_BEFORE_EACH: beforeEach
-    ): SuiteConstants = {
-      val __obj = js.Dynamic.literal(EVENT_FILE_POST_REQUIRE = EVENT_FILE_POST_REQUIRE.asInstanceOf[js.Any], EVENT_FILE_PRE_REQUIRE = EVENT_FILE_PRE_REQUIRE.asInstanceOf[js.Any], EVENT_FILE_REQUIRE = EVENT_FILE_REQUIRE.asInstanceOf[js.Any], EVENT_ROOT_SUITE_RUN = EVENT_ROOT_SUITE_RUN.asInstanceOf[js.Any], EVENT_SUITE_ADD_HOOK_AFTER_ALL = EVENT_SUITE_ADD_HOOK_AFTER_ALL.asInstanceOf[js.Any], EVENT_SUITE_ADD_HOOK_AFTER_EACH = EVENT_SUITE_ADD_HOOK_AFTER_EACH.asInstanceOf[js.Any], EVENT_SUITE_ADD_HOOK_BEFORE_ALL = EVENT_SUITE_ADD_HOOK_BEFORE_ALL.asInstanceOf[js.Any], EVENT_SUITE_ADD_HOOK_BEFORE_EACH = EVENT_SUITE_ADD_HOOK_BEFORE_EACH.asInstanceOf[js.Any], EVENT_SUITE_ADD_SUITE = EVENT_SUITE_ADD_SUITE.asInstanceOf[js.Any], EVENT_SUITE_ADD_TEST = EVENT_SUITE_ADD_TEST.asInstanceOf[js.Any], HOOK_TYPE_AFTER_ALL = HOOK_TYPE_AFTER_ALL.asInstanceOf[js.Any], HOOK_TYPE_AFTER_EACH = HOOK_TYPE_AFTER_EACH.asInstanceOf[js.Any], HOOK_TYPE_BEFORE_ALL = HOOK_TYPE_BEFORE_ALL.asInstanceOf[js.Any], HOOK_TYPE_BEFORE_EACH = HOOK_TYPE_BEFORE_EACH.asInstanceOf[js.Any])
+    def apply(): SuiteConstants = {
+      val __obj = js.Dynamic.literal(EVENT_FILE_POST_REQUIRE = "post-require", EVENT_FILE_PRE_REQUIRE = "pre-require", EVENT_FILE_REQUIRE = "require", EVENT_ROOT_SUITE_RUN = "run", EVENT_SUITE_ADD_HOOK_AFTER_ALL = "afterAll", EVENT_SUITE_ADD_HOOK_AFTER_EACH = "afterEach", EVENT_SUITE_ADD_HOOK_BEFORE_ALL = "beforeAll", EVENT_SUITE_ADD_HOOK_BEFORE_EACH = "beforeEach", EVENT_SUITE_ADD_SUITE = "suite", EVENT_SUITE_ADD_TEST = "test", HOOK_TYPE_AFTER_ALL = "afterAll", HOOK_TYPE_AFTER_EACH = "afterEach", HOOK_TYPE_BEFORE_ALL = "beforeAll", HOOK_TYPE_BEFORE_EACH = "beforeEach")
       __obj.asInstanceOf[SuiteConstants]
     }
     
@@ -3167,7 +3229,9 @@ object Mocha {
     * @see https://mochajs.org/api/Test.html
     */
   @js.native
-  trait Test extends Runnable {
+  trait Test
+    extends StObject
+       with Runnable {
     
     // added by reporters
     var err: js.UndefOr[Error] = js.native
@@ -3321,7 +3385,6 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.reporters.Base.html
       */
-    @js.native
     trait Base_ extends StObject {
       
       var done: js.UndefOr[
@@ -3330,29 +3393,29 @@ object Mocha {
               /* fn */ js.UndefOr[js.Function1[/* failures */ Double, Unit]], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Output common epilogue used by many of the bundled reporters.
         *
         * @see https://mochajs.org/api/Mocha.reporters.Base.html#.Base#epilogue
         */
-      def epilogue(): Unit = js.native
+      def epilogue(): Unit
       
       /**
         * Test failures
         */
-      var failures: js.Array[Test] = js.native
+      var failures: js.Array[Test]
       
       /**
         * The configured runner
         */
-      var runner: Runner = js.native
+      var runner: Runner
       
       /**
         * Test run statistics
         */
-      var stats: Stats = js.native
+      var stats: Stats
     }
     object Base_ {
       
@@ -3394,57 +3457,58 @@ object Mocha {
         *
         * @see https://mochajs.org/api/module-base#.colors
         */
-      @js.native
-      trait ColorMap extends /* key */ StringDictionary[Double] {
+      trait ColorMap
+        extends StObject
+           with /* key */ StringDictionary[Double] {
         
-        var `bright fail`: Double = js.native
+        var `bright fail`: Double
         
-        var `bright pass`: Double = js.native
+        var `bright pass`: Double
         
-        var `bright yellow`: Double = js.native
+        var `bright yellow`: Double
         
-        var checkmark: Double = js.native
+        var checkmark: Double
         
-        var `diff added`: Double = js.native
+        var `diff added`: Double
         
-        var `diff gutter`: Double = js.native
+        var `diff gutter`: Double
         
-        var `diff removed`: Double = js.native
+        var `diff removed`: Double
         
-        var `error message`: Double = js.native
+        var `error message`: Double
         
-        var `error stack`: Double = js.native
+        var `error stack`: Double
         
-        var `error title`: Double = js.native
+        var `error title`: Double
         
-        var fail: Double = js.native
+        var fail: Double
         
-        var fast: Double = js.native
+        var fast: Double
         
-        var green: Double = js.native
+        var green: Double
         
-        var light: Double = js.native
+        var light: Double
         
-        var medium: Double = js.native
+        var medium: Double
         
         // added by Base
-        var pass: Double = js.native
+        var pass: Double
         
-        var pending: Double = js.native
+        var pending: Double
         
         // added by Landing
-        var plane: Double = js.native
+        var plane: Double
         
-        var `plane crash`: Double = js.native
+        var `plane crash`: Double
         
         // added by Progress
-        var progress: Double = js.native
+        var progress: Double
         
-        var runway: Double = js.native
+        var runway: Double
         
-        var slow: Double = js.native
+        var slow: Double
         
-        var suite: Double = js.native
+        var suite: Double
       }
       object ColorMap {
         
@@ -3567,18 +3631,19 @@ object Mocha {
         *
         * @see https://mochajs.org/api/module-base#.symbols
         */
-      @js.native
-      trait SymbolMap extends /* key */ StringDictionary[String] {
+      trait SymbolMap
+        extends StObject
+           with /* key */ StringDictionary[String] {
         
-        var bang: String = js.native
+        var bang: String
         
-        var comma: String = js.native
+        var comma: String
         
-        var dot: String = js.native
+        var dot: String
         
-        var err: String = js.native
+        var err: String
         
-        var ok: String = js.native
+        var ok: String
       }
       object SymbolMap {
         
@@ -3637,29 +3702,30 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.reporters.HTML.html
       */
-    @js.native
-    trait HTML_ extends Base_ {
+    trait HTML_
+      extends StObject
+         with Base_ {
       
       /**
         * Adds code toggle functionality for the provided test's list element.
         *
         * @see https://mochajs.org/api/Mocha.reporters.HTML.html#addCodeToggle
         */
-      def addCodeToggle(el: HTMLLIElement, contents: String): Unit = js.native
+      def addCodeToggle(el: HTMLLIElement, contents: String): Unit
       
       /**
         * Provide suite URL.
         *
         * @see https://mochajs.org/api/Mocha.reporters.HTML.html#suiteURL
         */
-      def suiteURL(suite: Suite): String = js.native
+      def suiteURL(suite: Suite): String
       
       /**
         * Provide test URL.
         *
         * @see https://mochajs.org/api/Mocha.reporters.HTML.html#testURL
         */
-      def testURL(test: Test): String = js.native
+      def testURL(test: Test): String
     }
     object HTML_ {
       
@@ -3738,42 +3804,43 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.reporters.Nyan.html
       */
-    @js.native
-    trait Nyan_ extends Base_ {
+    trait Nyan_
+      extends StObject
+         with Base_ {
       
-      var appendRainbow: js.Any = js.native
+      var appendRainbow: js.Any
       
-      var colorIndex: js.Any = js.native
+      var colorIndex: js.Any
       
-      var cursorDown: js.Any = js.native
+      var cursorDown: js.Any
       
-      var cursorUp: js.Any = js.native
+      var cursorUp: js.Any
       
-      var draw: js.Any = js.native
+      var draw: js.Any
       
-      var drawNyanCat: js.Any = js.native
+      var drawNyanCat: js.Any
       
-      var drawRainbow: js.Any = js.native
+      var drawRainbow: js.Any
       
-      var drawScoreboard: js.Any = js.native
+      var drawScoreboard: js.Any
       
-      var face: js.Any = js.native
+      var face: js.Any
       
-      var generateColors: js.Any = js.native
+      var generateColors: js.Any
       
-      var numberOfLines: js.Any = js.native
+      var numberOfLines: js.Any
       
-      var rainbowColors: js.Any = js.native
+      var rainbowColors: js.Any
       
-      var rainbowify: js.Any = js.native
+      var rainbowify: js.Any
       
-      var scoreboardWidth: js.Any = js.native
+      var scoreboardWidth: js.Any
       
-      var tick: js.Any = js.native
+      var tick: js.Any
       
-      var trajectories: js.Any = js.native
+      var trajectories: js.Any
       
-      var trajectoryWidthMax: js.Any = js.native
+      var trajectoryWidthMax: js.Any
     }
     object Nyan_ {
       
@@ -3863,9 +3930,9 @@ object Mocha {
     
     object Progress_ {
       
-      @js.native
       trait MochaOptions
-        extends typings.mocha.Mocha.MochaOptions
+        extends StObject
+           with typings.mocha.Mocha.MochaOptions
       object MochaOptions {
         
         @scala.inline
@@ -3875,18 +3942,17 @@ object Mocha {
         }
       }
       
-      @js.native
       trait ReporterOptions extends StObject {
         
-        var close: js.UndefOr[String] = js.native
+        var close: js.UndefOr[String] = js.undefined
         
-        var complete: js.UndefOr[String] = js.native
+        var complete: js.UndefOr[String] = js.undefined
         
-        var incomplete: js.UndefOr[String] = js.native
+        var incomplete: js.UndefOr[String] = js.undefined
         
-        var open: js.UndefOr[String] = js.native
+        var open: js.UndefOr[String] = js.undefined
         
-        var verbose: js.UndefOr[Boolean] = js.native
+        var verbose: js.UndefOr[Boolean] = js.undefined
       }
       object ReporterOptions {
         
@@ -3957,8 +4023,9 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.reporters.XUnit.html
       */
-    @js.native
-    trait XUnit_ extends Base_ {
+    trait XUnit_
+      extends StObject
+         with Base_ {
       
       /**
         * Override done to close the stream (if it's a file).
@@ -3966,21 +4033,21 @@ object Mocha {
         * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#done
         */
       @JSName("done")
-      def done_MXUnit_(failures: Double, fn: js.Function1[/* failures */ Double, Unit]): Unit = js.native
+      def done_MXUnit_(failures: Double, fn: js.Function1[/* failures */ Double, Unit]): Unit
       
       /**
         * Output tag for the given `test.`
         *
         * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#test
         */
-      def test(test: Test): Unit = js.native
+      def test(test: Test): Unit
       
       /**
         * Write out the given line.
         *
         * @see https://mochajs.org/api/Mocha.reporters.XUnit.html#write
         */
-      def write(line: String): Unit = js.native
+      def write(line: String): Unit
     }
     object XUnit_ {
       
@@ -3998,9 +4065,9 @@ object Mocha {
         __obj.asInstanceOf[XUnit_]
       }
       
-      @js.native
       trait MochaOptions
-        extends typings.mocha.Mocha.MochaOptions
+        extends StObject
+           with typings.mocha.Mocha.MochaOptions
       object MochaOptions {
         
         @scala.inline
@@ -4010,12 +4077,11 @@ object Mocha {
         }
       }
       
-      @js.native
       trait ReporterOptions extends StObject {
         
-        var output: js.UndefOr[String] = js.native
+        var output: js.UndefOr[String] = js.undefined
         
-        var suiteName: js.UndefOr[String] = js.native
+        var suiteName: js.UndefOr[String] = js.undefined
       }
       object ReporterOptions {
         

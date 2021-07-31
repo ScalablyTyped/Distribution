@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is not intended to be implemented.
   */
-@js.native
 trait TaskStartEvent extends StObject {
   
   /**
     * The task item representing the task that got started.
     */
-  val execution: TaskExecution = js.native
+  val execution: TaskExecution
 }
 object TaskStartEvent {
   

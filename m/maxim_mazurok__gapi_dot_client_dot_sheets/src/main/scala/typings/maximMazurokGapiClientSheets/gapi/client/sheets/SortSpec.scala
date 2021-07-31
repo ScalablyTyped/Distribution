@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortSpec extends StObject {
   
   /** The background fill color to sort by; cells with this fill color are sorted to the top. Mutually exclusive with foreground_color. */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The background fill color to sort by; cells with this fill color are sorted to the top. Mutually exclusive with foreground_color, and must be an RGB-type color. If background_color
     * is also set, this field takes precedence.
     */
-  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** Reference to a data source column. */
-  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
+  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.undefined
   
   /** The dimension the sort should be applied to. */
-  var dimensionIndex: js.UndefOr[Double] = js.native
+  var dimensionIndex: js.UndefOr[Double] = js.undefined
   
   /** The foreground color to sort by; cells with this foreground color are sorted to the top. Mutually exclusive with background_color. */
-  var foregroundColor: js.UndefOr[Color] = js.native
+  var foregroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The foreground color to sort by; cells with this foreground color are sorted to the top. Mutually exclusive with background_color, and must be an RGB-type color. If foreground_color
     * is also set, this field takes precedence.
     */
-  var foregroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var foregroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The order data should be sorted. */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object SortSpec {
   

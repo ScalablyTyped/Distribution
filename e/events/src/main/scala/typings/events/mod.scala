@@ -2,7 +2,6 @@ package typings.events
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,13 +66,15 @@ object mod {
     @scala.inline
     def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
-    @JSImport("events", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: EventEmitter, `type`: String): Double = js.native
-    @JSImport("events", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: EventEmitter, `type`: Double): Double = js.native
+    @scala.inline
+    def listenerCount(emitter: EventEmitter, `type`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def listenerCount(emitter: EventEmitter, `type`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
 }

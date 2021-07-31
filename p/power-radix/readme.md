@@ -12,7 +12,7 @@ Library for converting numbers from one radix representation (encoding) to anoth
 | Keywords           | arithmetic, base conversion, base convert, base, base10, base58 decode, base58 encode, base58, base64 decode, base64 encode, base64, conversion, convert, decode, encode, hex, math, power, radix conversion, radix convert, radix |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 42182 |
+| # downloads        | 11207 |
 | # stars            | 0 |
 
 ## Links

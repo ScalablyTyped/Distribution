@@ -2,33 +2,31 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Categories extends StObject {
   
-  var PNAccessDeniedCategory: String = js.native
+  var PNAccessDeniedCategory: String
   
-  var PNBadRequestCategory: String = js.native
+  var PNBadRequestCategory: String
   
-  var PNConnectedCategory: String = js.native
+  var PNConnectedCategory: String
   
-  var PNMalformedResponseCategory: String = js.native
+  var PNMalformedResponseCategory: String
   
-  var PNNetworkDownCategory: String = js.native
+  var PNNetworkDownCategory: String
   
-  var PNNetworkIssuesCategory: String = js.native
+  var PNNetworkIssuesCategory: String
   
-  var PNNetworkUpCategory: String = js.native
+  var PNNetworkUpCategory: String
   
-  var PNReconnectedCategory: String = js.native
+  var PNReconnectedCategory: String
   
-  var PNRequestMessageCountExceedCategory: String = js.native
+  var PNRequestMessageCountExceedCategory: String
   
-  var PNTimeoutCategory: String = js.native
+  var PNTimeoutCategory: String
   
-  var PNUnknownCategory: String = js.native
+  var PNUnknownCategory: String
 }
 object Categories {
   

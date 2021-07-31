@@ -8,45 +8,89 @@ import typings.umbraco.umbraco.resources.Direction
 import typings.umbraco.umbraco.resources.OrderItemsBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error[T] extends StObject {
     
-    def error(data: IResourcePromise, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit = js.native
+    def error(data: IResourcePromise, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit
     @JSName("error")
-    var error_Original: IHttpPromiseCallback[IResourcePromise] = js.native
+    var error_Original: IHttpPromiseCallback[IResourcePromise]
     
-    def success(data: T, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit = js.native
+    def success(data: T, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit
     @JSName("success")
-    var success_Original: IHttpPromiseCallback[T] = js.native
+    var success_Original: IHttpPromiseCallback[T]
+  }
+  object Error {
+    
+    @scala.inline
+    def apply[T](
+      error: (IResourcePromise, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit,
+      success: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
+    ): Error[T] = {
+      val __obj = js.Dynamic.literal(error = js.Any.fromFunction4(error), success = js.Any.fromFunction4(success))
+      __obj.asInstanceOf[Error[T]]
+    }
+    
+    @scala.inline
+    implicit class ErrorMutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
+      
+      @scala.inline
+      def setError(
+        value: (IResourcePromise, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
+      ): Self = StObject.set(x, "error", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setSuccess(
+        value: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
+      ): Self = StObject.set(x, "success", js.Any.fromFunction4(value))
+    }
   }
   
-  @js.native
   trait ErrorMsg[T] extends StObject {
     
-    var errorMsg: String = js.native
+    var errorMsg: String
     
-    def success(data: T, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit = js.native
+    def success(data: T, status: Double, headers: IHttpHeadersGetter, config: IRequestConfig): Unit
     @JSName("success")
-    var success_Original: IHttpPromiseCallback[T] = js.native
+    var success_Original: IHttpPromiseCallback[T]
+  }
+  object ErrorMsg {
+    
+    @scala.inline
+    def apply[T](
+      errorMsg: String,
+      success: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
+    ): ErrorMsg[T] = {
+      val __obj = js.Dynamic.literal(errorMsg = errorMsg.asInstanceOf[js.Any], success = js.Any.fromFunction4(success))
+      __obj.asInstanceOf[ErrorMsg[T]]
+    }
+    
+    @scala.inline
+    implicit class ErrorMsgMutableBuilder[Self <: ErrorMsg[?], T] (val x: Self & ErrorMsg[T]) extends AnyVal {
+      
+      @scala.inline
+      def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuccess(
+        value: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
+      ): Self = StObject.set(x, "success", js.Any.fromFunction4(value))
+    }
   }
   
-  @js.native
   trait Filter extends StObject {
     
-    var filter: String = js.native
+    var filter: String
     
-    var orderBy: OrderItemsBy = js.native
+    var orderBy: OrderItemsBy
     
-    var orderDirection: Direction = js.native
+    var orderDirection: Direction
     
-    var pageNumber: Double = js.native
+    var pageNumber: Double
     
-    var pageSize: Double = js.native
+    var pageSize: Double
   }
   object Filter {
     
@@ -82,10 +126,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var Url: String = js.native
+    var Url: String
   }
   object Url {
     

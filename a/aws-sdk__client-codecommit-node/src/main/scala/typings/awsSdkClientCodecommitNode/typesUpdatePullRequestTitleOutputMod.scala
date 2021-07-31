@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesPullRequestMod.UnmarshalledPullRe
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdatePullRequestTitleOutputMod {
   
-  @js.native
-  trait UpdatePullRequestTitleOutput extends OutputTypesUnion {
+  trait UpdatePullRequestTitleOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the updated pull request.</p>
       */
-    var pullRequest: UnmarshalledPullRequest = js.native
+    var pullRequest: UnmarshalledPullRequest
   }
   object UpdatePullRequestTitleOutput {
     

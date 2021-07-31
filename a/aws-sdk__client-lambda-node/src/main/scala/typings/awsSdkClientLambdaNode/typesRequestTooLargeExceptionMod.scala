@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRequestTooLargeExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RequestTooLargeExceptionDetails> * / any */ @js.native
-  trait RequestTooLargeException extends InvokeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RequestTooLargeExceptionDetails> * / any */ trait RequestTooLargeException
+    extends StObject
+       with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException
   }
   object RequestTooLargeException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException): RequestTooLargeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RequestTooLargeException = {
+      val __obj = js.Dynamic.literal(name = "RequestTooLargeException")
       __obj.asInstanceOf[RequestTooLargeException]
     }
     
@@ -30,18 +30,17 @@ object typesRequestTooLargeExceptionMod {
     }
   }
   
-  @js.native
   trait RequestTooLargeExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object RequestTooLargeExceptionDetails {
     

@@ -7,7 +7,6 @@ import typings.evernote.mod.Types.MessageThreadID
 import typings.evernote.mod.Types.SharedNotebookPrivilegeLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NotebookShareTemplate")

@@ -4,15 +4,15 @@ import typings.inboxsdk.inboxsdkStrings.destroy
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomRouteView extends RouteView {
+trait CustomRouteView
+  extends StObject
+     with RouteView {
   
-  def getElement(): HTMLElement = js.native
+  def getElement(): HTMLElement
   
-  def setFullWidth(fullWidth: Boolean): Unit = js.native
+  def setFullWidth(fullWidth: Boolean): Unit
 }
 object CustomRouteView {
   

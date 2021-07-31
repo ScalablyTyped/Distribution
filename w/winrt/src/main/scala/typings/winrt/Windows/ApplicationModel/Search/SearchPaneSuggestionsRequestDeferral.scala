@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchPaneSuggestionsRequestDeferral extends ISearchPaneSuggestionsRequestDeferral
+trait SearchPaneSuggestionsRequestDeferral
+  extends StObject
+     with ISearchPaneSuggestionsRequestDeferral
 object SearchPaneSuggestionsRequestDeferral {
   
   @scala.inline

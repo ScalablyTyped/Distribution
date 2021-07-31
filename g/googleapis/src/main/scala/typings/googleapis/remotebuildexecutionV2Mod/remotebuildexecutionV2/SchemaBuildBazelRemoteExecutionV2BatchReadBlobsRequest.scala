@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request message for ContentAddressableStorage.BatchReadBlobs.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest extends StObject {
   
   /**
     * The individual blob digests.
     */
-  var digests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Digest]] = js.native
+  var digests: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Digest]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest {
   

@@ -5,7 +5,6 @@ import typings.officeJs.Office.MailboxEnums.ItemType
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,13 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - {@link Office.Message | Message}
   */
 @js.native
-trait MessageRead extends Item {
+trait MessageRead
+  extends StObject
+     with Item {
   
   def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native
   def addHandlerAsync(
     eventType: String,
     handler: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -63,7 +64,7 @@ trait MessageRead extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -235,11 +236,7 @@ trait MessageRead extends Item {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayReplyAllFormAsync(formData: String): Unit = js.native
-  def displayReplyAllFormAsync(
-    formData: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyAllFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyAllFormAsync(
     formData: String,
@@ -249,7 +246,7 @@ trait MessageRead extends Item {
   def displayReplyAllFormAsync(formData: ReplyFormData): Unit = js.native
   def displayReplyAllFormAsync(
     formData: ReplyFormData,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyAllFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
@@ -311,11 +308,7 @@ trait MessageRead extends Item {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayReplyFormAsync(formData: String): Unit = js.native
-  def displayReplyFormAsync(
-    formData: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayReplyFormAsync(formData: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyFormAsync(
     formData: String,
@@ -325,7 +318,7 @@ trait MessageRead extends Item {
   def displayReplyFormAsync(formData: ReplyFormData): Unit = js.native
   def displayReplyFormAsync(
     formData: ReplyFormData,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
@@ -390,10 +383,7 @@ trait MessageRead extends Item {
     *                If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
     */
   def getAllInternetHeadersAsync(): Unit = js.native
-  def getAllInternetHeadersAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
+  def getAllInternetHeadersAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -431,7 +421,7 @@ trait MessageRead extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
   def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -868,7 +858,7 @@ trait MessageRead extends Item {
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
@@ -899,7 +889,7 @@ trait MessageRead extends Item {
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native

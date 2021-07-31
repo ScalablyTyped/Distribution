@@ -2,29 +2,27 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the list of reports.
   */
-@js.native
 trait SchemaReportList extends StObject {
   
   /**
     * The eTag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The reports returned in this response.
     */
-  var items: js.UndefOr[js.Array[SchemaReport]] = js.native
+  var items: js.UndefOr[js.Array[SchemaReport]] = js.undefined
   
   /**
     * The kind of list this is, in this case dfareporting#reportList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token used to page through reports. To retrieve the next
@@ -32,7 +30,7 @@ trait SchemaReportList extends StObject {
     * value of this field. The page token is only valid for a limited amount of
     * time and should not be persisted.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaReportList {
   

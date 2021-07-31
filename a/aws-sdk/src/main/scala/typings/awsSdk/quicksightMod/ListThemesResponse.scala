@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThemesResponse extends StObject {
   
   /**
     * The token for the next set of results, or null if there are no more results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
   
   /**
     * Information about the themes in the list.
     */
-  var ThemeSummaryList: js.UndefOr[typings.awsSdk.quicksightMod.ThemeSummaryList] = js.native
+  var ThemeSummaryList: js.UndefOr[typings.awsSdk.quicksightMod.ThemeSummaryList] = js.undefined
 }
 object ListThemesResponse {
   

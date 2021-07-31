@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventStreamMod {
@@ -43,6 +42,10 @@ object eventStreamMod {
   /* static members */
   object EventStream {
     
+    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventStream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object eventStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventStream = js.native
-    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventStream = js.native
-    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventStreamState): EventStream = js.native
-    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): EventStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventStreamState): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
     
     /**
       * Returns true if the given object is an instance of EventStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean]
   }
   
-  @js.native
   trait EventStreamArgs extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon Kinesis stream or Firehose delivery stream to which you want to publish events.
       */
-    val destinationStreamArn: Input[String] = js.native
+    val destinationStreamArn: Input[String]
     
     /**
       * The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
   }
   object EventStreamArgs {
     
@@ -114,23 +111,22 @@ object eventStreamMod {
     }
   }
   
-  @js.native
   trait EventStreamState extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon Kinesis stream or Firehose delivery stream to which you want to publish events.
       */
-    val destinationStreamArn: js.UndefOr[Input[String]] = js.native
+    val destinationStreamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object EventStreamState {
     

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NestingLevelSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to bullet_alignment. */
-  var bulletAlignmentSuggested: js.UndefOr[Boolean] = js.native
+  var bulletAlignmentSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to glyph_format. */
-  var glyphFormatSuggested: js.UndefOr[Boolean] = js.native
+  var glyphFormatSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to glyph_symbol. */
-  var glyphSymbolSuggested: js.UndefOr[Boolean] = js.native
+  var glyphSymbolSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to glyph_type. */
-  var glyphTypeSuggested: js.UndefOr[Boolean] = js.native
+  var glyphTypeSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to indent_first_line. */
-  var indentFirstLineSuggested: js.UndefOr[Boolean] = js.native
+  var indentFirstLineSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to indent_start. */
-  var indentStartSuggested: js.UndefOr[Boolean] = js.native
+  var indentStartSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to start_number. */
-  var startNumberSuggested: js.UndefOr[Boolean] = js.native
+  var startNumberSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in text style have been changed in this suggestion. */
-  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.native
+  var textStyleSuggestionState: js.UndefOr[TextStyleSuggestionState] = js.undefined
 }
 object NestingLevelSuggestionState {
   

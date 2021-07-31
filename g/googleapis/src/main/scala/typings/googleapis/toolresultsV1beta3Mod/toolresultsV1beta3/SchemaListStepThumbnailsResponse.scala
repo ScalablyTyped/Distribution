@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response containing the thumbnails in a step.
   */
-@js.native
 trait SchemaListStepThumbnailsResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaListStepThumbnailsResponse extends StObject {
     * indicates that there are more thumbnails to read, by calling list again
     * with this value in the page_token field.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of image data.  Images are returned in a deterministic order; they
@@ -26,7 +24,7 @@ trait SchemaListStepThumbnailsResponse extends StObject {
     * creation time are greater than images with one. * Third, by the order in
     * which they were added to the step (by calls to CreateStep or UpdateStep).
     */
-  var thumbnails: js.UndefOr[js.Array[SchemaImage]] = js.native
+  var thumbnails: js.UndefOr[js.Array[SchemaImage]] = js.undefined
 }
 object SchemaListStepThumbnailsResponse {
   

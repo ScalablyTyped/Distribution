@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SymbolPalette extends Widget_ {
+trait SymbolPalette
+  extends StObject
+     with Widget_ {
   
   /** Add items to Palettes at runtime
     * @param {string} name of the Palette
@@ -31,18 +32,17 @@ trait SymbolPalette extends Widget_ {
 }
 object SymbolPalette {
   
-  @js.native
   trait DefaultSettings extends StObject {
     
     /** Defines the default properties of the connectors
       * @Default {null}
       */
-    var connector: js.UndefOr[js.Any] = js.native
+    var connector: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the default properties of the nodes
       * @Default {null}
       */
-    var node: js.UndefOr[js.Any] = js.native
+    var node: js.UndefOr[js.Any] = js.undefined
   }
   object DefaultSettings {
     
@@ -69,81 +69,80 @@ object SymbolPalette {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Defines whether the symbols can be dragged from palette or not
       * @Default {true}
       */
-    var allowDrag: js.UndefOr[Boolean] = js.native
+    var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** Customizes the style of the symbol palette
       * @Default {e-symbolpalette}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the default properties of nodes and connectors
       */
-    var defaultSettings: js.UndefOr[DefaultSettings] = js.native
+    var defaultSettings: js.UndefOr[DefaultSettings] = js.undefined
     
     /** Sets the Id of the diagram, over which the symbols will be dropped
       * @Default {null}
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the palette headers
       * @Default {30}
       */
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the symbol palette
       * @Default {400}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the palette items
       * @Default {50}
       */
-    var paletteItemHeight: js.UndefOr[Double] = js.native
+    var paletteItemHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the palette items
       * @Default {50}
       */
-    var paletteItemWidth: js.UndefOr[Double] = js.native
+    var paletteItemWidth: js.UndefOr[Double] = js.undefined
     
     /** An array of JSON objects, where each object represents a node/connector
       * @Default {[]}
       */
-    var palettes: js.UndefOr[js.Array[Palette]] = js.native
+    var palettes: js.UndefOr[js.Array[Palette]] = js.undefined
     
     /** Defines the preview height of the symbols
       * @Default {100}
       */
-    var previewHeight: js.UndefOr[Double] = js.native
+    var previewHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the offset value to be left between the mouse cursor and symbol previews
       * @Default {(110, 110)}
       */
-    var previewOffset: js.UndefOr[js.Any] = js.native
+    var previewOffset: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the width of the symbol previews
       * @Default {100}
       */
-    var previewWidth: js.UndefOr[Double] = js.native
+    var previewWidth: js.UndefOr[Double] = js.undefined
     
     /** Triggers when a palette item is selected or unselected
       */
-    var selectionChange: js.UndefOr[js.Function1[/* e */ SelectionChangeEventArgs, Unit]] = js.native
+    var selectionChange: js.UndefOr[js.Function1[/* e */ SelectionChangeEventArgs, Unit]] = js.undefined
     
     /** Enable or disable the palette item text
       * @Default {true}
       */
-    var showPaletteItemText: js.UndefOr[Boolean] = js.native
+    var showPaletteItemText: js.UndefOr[Boolean] = js.undefined
     
     /** The width of the palette
       * @Default {250}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -251,23 +250,22 @@ object SymbolPalette {
     }
   }
   
-  @js.native
   trait Palette extends StObject {
     
     /** Defines whether the palette must be in expanded state or in collapsed state
       * @Default {true}
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the palette items
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the name of the palette
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Palette {
     
@@ -287,7 +285,7 @@ object SymbolPalette {
       def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -303,16 +301,15 @@ object SymbolPalette {
     }
   }
   
-  @js.native
   trait SelectionChangeEventArgs extends StObject {
     
     /** returns whether an element is selected or unselected
       */
-    var changeType: js.UndefOr[String] = js.native
+    var changeType: js.UndefOr[String] = js.undefined
     
     /** returns the node or connector that is selected or unselected
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object SelectionChangeEventArgs {
     

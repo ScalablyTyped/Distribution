@@ -2,27 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolicyRoot extends Entity {
+trait PolicyRoot
+  extends StObject
+     with Entity {
   
-  var activityBasedTimeoutPolicies: js.UndefOr[NullableOption[js.Array[ActivityBasedTimeoutPolicy]]] = js.native
+  var activityBasedTimeoutPolicies: js.UndefOr[NullableOption[js.Array[ActivityBasedTimeoutPolicy]]] = js.undefined
   
-  var claimsMappingPolicies: js.UndefOr[NullableOption[js.Array[ClaimsMappingPolicy]]] = js.native
+  var claimsMappingPolicies: js.UndefOr[NullableOption[js.Array[ClaimsMappingPolicy]]] = js.undefined
   
-  var conditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[ConditionalAccessPolicy]]] = js.native
+  var conditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[ConditionalAccessPolicy]]] = js.undefined
   
-  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.native
+  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.undefined
   
-  var identitySecurityDefaultsEnforcementPolicy: js.UndefOr[NullableOption[IdentitySecurityDefaultsEnforcementPolicy]] = js.native
+  var identitySecurityDefaultsEnforcementPolicy: js.UndefOr[NullableOption[IdentitySecurityDefaultsEnforcementPolicy]] = js.undefined
   
-  var permissionGrantPolicies: js.UndefOr[NullableOption[js.Array[PermissionGrantPolicy]]] = js.native
+  var permissionGrantPolicies: js.UndefOr[NullableOption[js.Array[PermissionGrantPolicy]]] = js.undefined
   
-  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.native
+  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.undefined
   
-  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.native
+  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.undefined
 }
 object PolicyRoot {
   

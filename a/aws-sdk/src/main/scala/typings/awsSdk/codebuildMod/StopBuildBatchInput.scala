@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBuildBatchInput extends StObject {
   
   /**
     * The identifier of the batch build to stop.
     */
-  var id: NonEmptyString = js.native
+  var id: NonEmptyString
 }
 object StopBuildBatchInput {
   

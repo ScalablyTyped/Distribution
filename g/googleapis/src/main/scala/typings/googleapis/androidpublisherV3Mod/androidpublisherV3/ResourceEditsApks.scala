@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Apks")
@@ -33,7 +32,7 @@ class ResourceEditsApks protected () extends StObject {
     */
   def addexternallyhosted(): GaxiosPromise[SchemaApksAddExternallyHostedResponse] = js.native
   def addexternallyhosted(callback: BodyResponseCallback[SchemaApksAddExternallyHostedResponse]): Unit = js.native
-  def addexternallyhosted(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApksAddExternallyHostedResponse] = js.native
+  def addexternallyhosted(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApksAddExternallyHostedResponse] = js.native
   def addexternallyhosted(params: ParamsResourceEditsApksAddexternallyhosted): GaxiosPromise[SchemaApksAddExternallyHostedResponse] = js.native
   def addexternallyhosted(
     params: ParamsResourceEditsApksAddexternallyhosted,
@@ -67,7 +66,7 @@ class ResourceEditsApks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaApksListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaApksListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApksListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApksListResponse] = js.native
   def list(params: ParamsResourceEditsApksList): GaxiosPromise[SchemaApksListResponse] = js.native
   def list(params: ParamsResourceEditsApksList, callback: BodyResponseCallback[SchemaApksListResponse]): Unit = js.native
   def list(
@@ -99,7 +98,7 @@ class ResourceEditsApks protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaApk] = js.native
   def upload(callback: BodyResponseCallback[SchemaApk]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApk] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApk] = js.native
   def upload(params: ParamsResourceEditsApksUpload): GaxiosPromise[SchemaApk] = js.native
   def upload(params: ParamsResourceEditsApksUpload, callback: BodyResponseCallback[SchemaApk]): Unit = js.native
   def upload(

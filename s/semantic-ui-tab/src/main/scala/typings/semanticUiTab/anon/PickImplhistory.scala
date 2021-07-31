@@ -2,14 +2,12 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'history'> */
-@js.native
 trait PickImplhistory extends StObject {
   
-  var history: Boolean = js.native
+  var history: Boolean
 }
 object PickImplhistory {
   

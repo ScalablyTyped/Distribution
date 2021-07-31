@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Utterance. */
-@js.native
 trait Utterance extends StObject {
   
   /** An utterance contributed by a user in the conversation that is to be analyzed. The utterance can contain multiple sentences. */
-  var text: String = js.native
+  var text: String
   
   /** A string that identifies the user who contributed the utterance specified by the `text` parameter. */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object Utterance {
   

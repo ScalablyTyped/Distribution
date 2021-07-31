@@ -2,23 +2,21 @@ package typings.connectTimeout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Express {
   
-  @js.native
   trait Request extends StObject {
     
     /**
       * @summary Clears the timeout on the request.
       */
-    def clearTimeout(): Unit = js.native
+    def clearTimeout(): Unit
     
     /**
       * @summary true if timeout fired; false otherwise.
       */
-    var timedout: Boolean = js.native
+    var timedout: Boolean
   }
   object Request {
     

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,95 +31,157 @@ sealed trait MimeType extends StObject
 object MimeType extends StObject {
   
   @js.native
-  sealed trait BMP extends MimeType
+  sealed trait BMP
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait CSS extends MimeType
+  sealed trait CSS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait CSV extends MimeType
+  sealed trait CSV
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait FOLDER extends MimeType
+  sealed trait FOLDER
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GIF extends MimeType
+  sealed trait GIF
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_APPS_SCRIPT extends MimeType
+  sealed trait GOOGLE_APPS_SCRIPT
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_DOCS extends MimeType
+  sealed trait GOOGLE_DOCS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_DRAWINGS extends MimeType
+  sealed trait GOOGLE_DRAWINGS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_FORMS extends MimeType
+  sealed trait GOOGLE_FORMS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_SHEETS extends MimeType
+  sealed trait GOOGLE_SHEETS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_SITES extends MimeType
+  sealed trait GOOGLE_SITES
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait GOOGLE_SLIDES extends MimeType
+  sealed trait GOOGLE_SLIDES
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait HTML extends MimeType
+  sealed trait HTML
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait JAVASCRIPT extends MimeType
+  sealed trait JAVASCRIPT
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait JPEG extends MimeType
+  sealed trait JPEG
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_EXCEL extends MimeType
+  sealed trait MICROSOFT_EXCEL
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_EXCEL_LEGACY extends MimeType
+  sealed trait MICROSOFT_EXCEL_LEGACY
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_POWERPOINT extends MimeType
+  sealed trait MICROSOFT_POWERPOINT
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_POWERPOINT_LEGACY extends MimeType
+  sealed trait MICROSOFT_POWERPOINT_LEGACY
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_WORD extends MimeType
+  sealed trait MICROSOFT_WORD
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait MICROSOFT_WORD_LEGACY extends MimeType
+  sealed trait MICROSOFT_WORD_LEGACY
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait OPENDOCUMENT_GRAPHICS extends MimeType
+  sealed trait OPENDOCUMENT_GRAPHICS
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait OPENDOCUMENT_PRESENTATION extends MimeType
+  sealed trait OPENDOCUMENT_PRESENTATION
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait OPENDOCUMENT_SPREADSHEET extends MimeType
+  sealed trait OPENDOCUMENT_SPREADSHEET
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait OPENDOCUMENT_TEXT extends MimeType
+  sealed trait OPENDOCUMENT_TEXT
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait PDF extends MimeType
+  sealed trait PDF
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait PLAIN_TEXT extends MimeType
+  sealed trait PLAIN_TEXT
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait PNG extends MimeType
+  sealed trait PNG
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait RTF extends MimeType
+  sealed trait RTF
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait SVG extends MimeType
+  sealed trait SVG
+    extends StObject
+       with MimeType
   
   @js.native
-  sealed trait ZIP extends MimeType
+  sealed trait ZIP
+    extends StObject
+       with MimeType
 }

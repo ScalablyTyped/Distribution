@@ -11,20 +11,33 @@ import typings.std.Error
 import typings.std.PopStateEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
   
   @JSImport("next-server/dist/lib/router/router", JSImport.Default)
   @js.native
-  class default protected () extends Router {
+  class default protected ()
+    extends StObject
+       with Router {
     def this(
       pathname: String,
       query: ParsedUrlQuery,
       as: String,
       hasInitialPropsPageLoaderAppWrapAppComponentErrSubscription: App
     ) = this()
+    
+    /* CompleteClass */
+    var asPath: String = js.native
+    
+    /* CompleteClass */
+    var pathname: String = js.native
+    
+    /* CompleteClass */
+    var query: ParsedUrlQuery = js.native
+    
+    /* CompleteClass */
+    var route: String = js.native
   }
   /* static members */
   object default {
@@ -33,9 +46,8 @@ object routerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("next-server/dist/lib/router/router", "default._rewriteUrlForNextExport")
-    @js.native
-    def _rewriteUrlForNextExport(url: String): String = js.native
+    @scala.inline
+    def _rewriteUrlForNextExport(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_rewriteUrlForNextExport")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("next-server/dist/lib/router/router", "default.events")
     @js.native
@@ -44,16 +56,15 @@ object routerMod {
     def events_=(x: MittEmitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BaseRouter extends StObject {
     
-    var asPath: String = js.native
+    var asPath: String
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var route: String = js.native
+    var route: String
   }
   object BaseRouter {
     
@@ -85,40 +96,39 @@ object routerMod {
   type ComponentLoadCancel = js.Function0[Unit] | Null
   
   /* Inlined next-server.next-server/dist/lib/router/router.BaseRouter & std.Pick<next-server.next-server/dist/lib/router/router.Router, 'push' | 'replace' | 'reload' | 'back' | 'prefetch' | 'beforePopState' | 'events'> */
-  @js.native
   trait NextRouter extends StObject {
     
-    var asPath: String = js.native
+    var asPath: String
     
-    var back: js.Function0[Unit] = js.native
+    var back: js.Function0[Unit]
     
-    var beforePopState: js.Function1[/* cb */ BeforePopStateCallback, Unit] = js.native
+    var beforePopState: js.Function1[/* cb */ BeforePopStateCallback, Unit]
     
-    var events: MittEmitter = js.native
+    var events: MittEmitter
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var prefetch: js.Function1[/* url */ String, js.Promise[Unit]] = js.native
+    var prefetch: js.Function1[/* url */ String, js.Promise[Unit]]
     
     var push: js.Function3[
         /* url */ Url, 
         /* as */ js.UndefOr[Url], 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Boolean]
-      ] = js.native
+      ]
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var reload: js.Function0[Unit] = js.native
+    var reload: js.Function0[Unit]
     
     var replace: js.Function3[
         /* url */ Url, 
         /* as */ js.UndefOr[Url], 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Boolean]
-      ] = js.native
+      ]
     
-    var route: String = js.native
+    var route: String
   }
   object NextRouter {
     
@@ -182,16 +192,15 @@ object routerMod {
     }
   }
   
-  @js.native
   trait RouteInfo extends StObject {
     
-    var Component: ComponentType[js.Object] = js.native
+    var Component: ComponentType[js.Object]
     
-    var err: js.UndefOr[Error] = js.native
+    var err: js.UndefOr[Error] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.native
+    var props: js.UndefOr[js.Any] = js.undefined
   }
   object RouteInfo {
     
@@ -228,7 +237,9 @@ object routerMod {
   }
   
   @js.native
-  trait Router extends BaseRouter {
+  trait Router
+    extends StObject
+       with BaseRouter {
     
     var _bps: js.UndefOr[BeforePopStateCallback] = js.native
     
@@ -263,7 +274,7 @@ object routerMod {
     
     def fetchComponent(route: String): js.Promise[ComponentType[js.Object]] = js.native
     
-    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[_] = js.native
+    def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[js.Any] = js.native
     
     def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[RouteInfo] = js.native
     def getRouteInfo(route: String, pathname: String, query: js.Any, as: String, shallow: Boolean): js.Promise[RouteInfo] = js.native
@@ -290,8 +301,9 @@ object routerMod {
       * @param options object you can define `shallow` and other options
       */
     def push(url: Url): js.Promise[Boolean] = js.native
-    def push(url: Url, as: js.UndefOr[Url], options: js.Object): js.Promise[Boolean] = js.native
+    def push(url: Url, as: Unit, options: js.Object): js.Promise[Boolean] = js.native
     def push(url: Url, as: Url): js.Promise[Boolean] = js.native
+    def push(url: Url, as: Url, options: js.Object): js.Promise[Boolean] = js.native
     
     def reload(): Unit = js.native
     
@@ -302,8 +314,9 @@ object routerMod {
       * @param options object you can define `shallow` and other options
       */
     def replace(url: Url): js.Promise[Boolean] = js.native
-    def replace(url: Url, as: js.UndefOr[Url], options: js.Object): js.Promise[Boolean] = js.native
+    def replace(url: Url, as: Unit, options: js.Object): js.Promise[Boolean] = js.native
     def replace(url: Url, as: Url): js.Promise[Boolean] = js.native
+    def replace(url: Url, as: Url, options: js.Object): js.Promise[Boolean] = js.native
     
     def scrollToHash(as: String): Unit = js.native
     

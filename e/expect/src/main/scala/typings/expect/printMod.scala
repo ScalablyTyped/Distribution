@@ -3,43 +3,37 @@ package typings.expect
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printMod {
   
-  @JSImport("expect/build/print", "printCloseTo")
+  @JSImport("expect/build/print", JSImport.Namespace)
   @js.native
-  def printCloseTo(receivedDiff: Double, expectedDiff: Double, precision: Double, isNot: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expect/build/print", "printExpectedConstructorName")
-  @js.native
-  def printExpectedConstructorName(label: String, expected: js.Function): String = js.native
+  @scala.inline
+  def printCloseTo(receivedDiff: Double, expectedDiff: Double, precision: Double, isNot: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printCloseTo")(receivedDiff.asInstanceOf[js.Any], expectedDiff.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printExpectedConstructorNameNot")
-  @js.native
-  def printExpectedConstructorNameNot(label: String, expected: js.Function): String = js.native
+  @scala.inline
+  def printExpectedConstructorName(label: String, expected: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printExpectedConstructorName")(label.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printReceivedArrayContainExpectedItem")
-  @js.native
-  def printReceivedArrayContainExpectedItem(received: js.Array[_], index: Double): String = js.native
+  @scala.inline
+  def printExpectedConstructorNameNot(label: String, expected: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printExpectedConstructorNameNot")(label.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printReceivedConstructorName")
-  @js.native
-  def printReceivedConstructorName(label: String, received: js.Function): String = js.native
+  @scala.inline
+  def printReceivedArrayContainExpectedItem(received: js.Array[js.Any], index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedArrayContainExpectedItem")(received.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printReceivedConstructorNameNot")
-  @js.native
-  def printReceivedConstructorNameNot(label: String, received: js.Function, expected: js.Function): String = js.native
+  @scala.inline
+  def printReceivedConstructorName(label: String, received: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedConstructorName")(label.asInstanceOf[js.Any], received.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printReceivedStringContainExpectedResult")
-  @js.native
-  def printReceivedStringContainExpectedResult(received: String): String = js.native
-  @JSImport("expect/build/print", "printReceivedStringContainExpectedResult")
-  @js.native
-  def printReceivedStringContainExpectedResult(received: String, result: RegExpExecArray): String = js.native
+  @scala.inline
+  def printReceivedConstructorNameNot(label: String, received: js.Function, expected: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedConstructorNameNot")(label.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("expect/build/print", "printReceivedStringContainExpectedSubstring")
-  @js.native
-  def printReceivedStringContainExpectedSubstring(received: String, start: Double, length: Double): String = js.native
+  @scala.inline
+  def printReceivedStringContainExpectedResult(received: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedStringContainExpectedResult")(received.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def printReceivedStringContainExpectedResult(received: String, result: RegExpExecArray): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedStringContainExpectedResult")(received.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def printReceivedStringContainExpectedSubstring(received: String, start: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printReceivedStringContainExpectedSubstring")(received.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
 }

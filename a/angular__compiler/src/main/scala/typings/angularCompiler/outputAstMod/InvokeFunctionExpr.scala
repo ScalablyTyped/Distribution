@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "InvokeFunctionExpr")
@@ -11,43 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class InvokeFunctionExpr protected () extends Expression {
   def this(fn: Expression, args: js.Array[Expression]) = this()
   def this(fn: Expression, args: js.Array[Expression], `type`: Type) = this()
-  def this(
-    fn: Expression,
-    args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan
-  ) = this()
   def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
-  def this(
-    fn: Expression,
-    args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: Expression,
-    args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: Null,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: Expression,
-    args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: Expression,
-    args: js.Array[Expression],
-    `type`: Null,
-    sourceSpan: js.UndefOr[scala.Nothing],
-    pure: Boolean
-  ) = this()
   def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: Unit, pure: Boolean) = this()
   def this(
     fn: Expression,
     args: js.Array[Expression],
@@ -55,14 +22,17 @@ class InvokeFunctionExpr protected () extends Expression {
     sourceSpan: ParseSourceSpan,
     pure: Boolean
   ) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: Unit, pure: Boolean) = this()
   def this(
     fn: Expression,
     args: js.Array[Expression],
-    `type`: Type,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    `type`: Unit,
+    sourceSpan: ParseSourceSpan,
     pure: Boolean
   ) = this()
   def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: Unit, pure: Boolean) = this()
   def this(
     fn: Expression,
     args: js.Array[Expression],

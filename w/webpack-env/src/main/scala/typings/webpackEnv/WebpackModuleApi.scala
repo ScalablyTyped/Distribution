@@ -21,58 +21,56 @@ import typings.webpackEnv.webpackEnvStrings.unaccepted
 import typings.webpackEnv.webpackEnvStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebpackModuleApi {
   
-  @js.native
   trait AcceptOptions extends StObject {
     
     /**
       * Indicates that apply() is automatically called by check function
       */
-    var autoApply: js.UndefOr[Boolean] = js.native
+    var autoApply: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ignore changes made to declined modules.
       */
-    var ignoreDeclined: js.UndefOr[Boolean] = js.native
+    var ignoreDeclined: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Ignore errors throw in accept handlers, error handlers and while reevaluating module.
       */
-    var ignoreErrored: js.UndefOr[Boolean] = js.native
+    var ignoreErrored: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the update process continues even if some modules are not accepted (and would bubble to the entry point).
       */
-    var ignoreUnaccepted: js.UndefOr[Boolean] = js.native
+    var ignoreUnaccepted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Notifier for accepted modules.
       */
-    var onAccepted: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.native
+    var onAccepted: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.undefined
     
     /**
       * Notifier for declined modules.
       */
-    var onDeclined: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.native
+    var onDeclined: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.undefined
     
     /**
       * Notifier for disposed modules.
       */
-    var onDisposed: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.native
+    var onDisposed: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.undefined
     
     /**
       * Notifier for errors.
       */
-    var onErrored: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.native
+    var onErrored: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.undefined
     
     /**
       * Notifier for unaccepted modules.
       */
-    var onUnaccepted: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.native
+    var onUnaccepted: js.UndefOr[js.Function1[/* info */ HotNotifierInfo, Unit]] = js.undefined
   }
   object AcceptOptions {
     
@@ -275,51 +273,50 @@ object WebpackModuleApi {
     def status(callback: js.Function1[/* status */ String, Unit]): Unit = js.native
   }
   
-  @js.native
   trait HotNotifierInfo extends StObject {
     
     /**
       * For declined/accepted/unaccepted: the chain from where the update was propagated.
       */
-    var chain: js.UndefOr[js.Array[Double]] = js.native
+    var chain: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * For errors: the module id owning the accept handler.
       */
-    var dependencyId: js.UndefOr[Double] = js.native
+    var dependencyId: js.UndefOr[Double] = js.undefined
     
     /**
       * For errors: the thrown error
       */
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
     /**
       * The module in question.
       */
-    var moduleId: Double = js.native
+    var moduleId: Double
     
     /**
       * For self-accept-error-handler-errored: the error thrown by the module
       * before the error handler tried to handle it.
       */
-    var originalError: js.UndefOr[Error] = js.native
+    var originalError: js.UndefOr[Error] = js.undefined
     
     /**
       * For accepted: The location of accept handlers that will handle the update
       */
-    var outdatedDependencies: js.UndefOr[NumberDictionary[js.Array[Double]]] = js.native
+    var outdatedDependencies: js.UndefOr[NumberDictionary[js.Array[Double]]] = js.undefined
     
     /**
       * For accepted: the modules that are outdated and will be disposed
       */
-    var outdatedModules: js.UndefOr[js.Array[Double]] = js.native
+    var outdatedModules: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * For declined: the module id of the declining parent
       */
-    var parentId: js.UndefOr[Double] = js.native
+    var parentId: js.UndefOr[Double] = js.undefined
     
-    var `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored` = js.native
+    var `type`: `self-declined` | declined | unaccepted | accepted | disposed | `accept-errored` | `self-accept-errored` | `self-accept-error-handler-errored`
   }
   object HotNotifierInfo {
     
@@ -394,22 +391,21 @@ object WebpackModuleApi {
     }
   }
   
-  @js.native
   trait Module extends StObject {
     
-    var children: js.Array[NodeModule] = js.native
+    var children: js.Array[NodeModule]
     
-    var exports: js.Any = js.native
+    var exports: js.Any
     
-    var filename: String = js.native
+    var filename: String
     
-    var hot: js.UndefOr[Hot] = js.native
+    var hot: js.UndefOr[Hot] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var loaded: Boolean = js.native
+    var loaded: Boolean
     
-    var parent: js.UndefOr[NodeModule | Null] = js.native
+    var parent: js.UndefOr[NodeModule | Null] = js.undefined
   }
   object Module {
     
@@ -462,10 +458,9 @@ object WebpackModuleApi {
   /**
     * Inside env you can pass any variable
     */
-  @js.native
   trait NodeProcess extends StObject {
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
   }
   object NodeProcess {
     
@@ -521,54 +516,49 @@ object WebpackModuleApi {
     var cache: StringDictionary[js.UndefOr[NodeModule]] = js.native
     
     def context(path: String): RequireContext = js.native
-    def context(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp): RequireContext = js.native
     def context(path: String, deep: Boolean): RequireContext = js.native
     def context(path: String, deep: Boolean, filter: RegExp): RequireContext = js.native
+    def context(path: String, deep: Unit, filter: RegExp): RequireContext = js.native
     @JSName("context")
-    def context_eager(path: String, deep: js.UndefOr[scala.Nothing], filter: js.UndefOr[scala.Nothing], mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp, mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: Boolean, filter: js.UndefOr[scala.Nothing], mode: eager): RequireContext = js.native
+    def context_eager(path: String, deep: Boolean, filter: Unit, mode: eager): RequireContext = js.native
     @JSName("context")
     def context_eager(path: String, deep: Boolean, filter: RegExp, mode: eager): RequireContext = js.native
     @JSName("context")
-    def context_lazy(path: String, deep: js.UndefOr[scala.Nothing], filter: js.UndefOr[scala.Nothing], mode: `lazy`): RequireContext = js.native
+    def context_eager(path: String, deep: Unit, filter: Unit, mode: eager): RequireContext = js.native
     @JSName("context")
-    def context_lazy(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp, mode: `lazy`): RequireContext = js.native
+    def context_eager(path: String, deep: Unit, filter: RegExp, mode: eager): RequireContext = js.native
     @JSName("context")
-    def context_lazy(path: String, deep: Boolean, filter: js.UndefOr[scala.Nothing], mode: `lazy`): RequireContext = js.native
+    def context_lazy(path: String, deep: Boolean, filter: Unit, mode: `lazy`): RequireContext = js.native
     @JSName("context")
     def context_lazy(path: String, deep: Boolean, filter: RegExp, mode: `lazy`): RequireContext = js.native
     @JSName("context")
-    def context_lazyonce(
-      path: String,
-      deep: js.UndefOr[scala.Nothing],
-      filter: js.UndefOr[scala.Nothing],
-      mode: `lazy-once`
-    ): RequireContext = js.native
+    def context_lazy(path: String, deep: Unit, filter: Unit, mode: `lazy`): RequireContext = js.native
     @JSName("context")
-    def context_lazyonce(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp, mode: `lazy-once`): RequireContext = js.native
+    def context_lazy(path: String, deep: Unit, filter: RegExp, mode: `lazy`): RequireContext = js.native
     @JSName("context")
-    def context_lazyonce(path: String, deep: Boolean, filter: js.UndefOr[scala.Nothing], mode: `lazy-once`): RequireContext = js.native
+    def context_lazyonce(path: String, deep: Boolean, filter: Unit, mode: `lazy-once`): RequireContext = js.native
     @JSName("context")
     def context_lazyonce(path: String, deep: Boolean, filter: RegExp, mode: `lazy-once`): RequireContext = js.native
     @JSName("context")
-    def context_sync(path: String, deep: js.UndefOr[scala.Nothing], filter: js.UndefOr[scala.Nothing], mode: sync): RequireContext = js.native
+    def context_lazyonce(path: String, deep: Unit, filter: Unit, mode: `lazy-once`): RequireContext = js.native
     @JSName("context")
-    def context_sync(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp, mode: sync): RequireContext = js.native
+    def context_lazyonce(path: String, deep: Unit, filter: RegExp, mode: `lazy-once`): RequireContext = js.native
     @JSName("context")
-    def context_sync(path: String, deep: Boolean, filter: js.UndefOr[scala.Nothing], mode: sync): RequireContext = js.native
+    def context_sync(path: String, deep: Boolean, filter: Unit, mode: sync): RequireContext = js.native
     @JSName("context")
     def context_sync(path: String, deep: Boolean, filter: RegExp, mode: sync): RequireContext = js.native
     @JSName("context")
-    def context_weak(path: String, deep: js.UndefOr[scala.Nothing], filter: js.UndefOr[scala.Nothing], mode: weak): RequireContext = js.native
+    def context_sync(path: String, deep: Unit, filter: Unit, mode: sync): RequireContext = js.native
     @JSName("context")
-    def context_weak(path: String, deep: js.UndefOr[scala.Nothing], filter: RegExp, mode: weak): RequireContext = js.native
+    def context_sync(path: String, deep: Unit, filter: RegExp, mode: sync): RequireContext = js.native
     @JSName("context")
-    def context_weak(path: String, deep: Boolean, filter: js.UndefOr[scala.Nothing], mode: weak): RequireContext = js.native
+    def context_weak(path: String, deep: Boolean, filter: Unit, mode: weak): RequireContext = js.native
     @JSName("context")
     def context_weak(path: String, deep: Boolean, filter: RegExp, mode: weak): RequireContext = js.native
+    @JSName("context")
+    def context_weak(path: String, deep: Unit, filter: Unit, mode: weak): RequireContext = js.native
+    @JSName("context")
+    def context_weak(path: String, deep: Unit, filter: RegExp, mode: weak): RequireContext = js.native
     
     /**
       * Download additional dependencies on demand. The paths array lists modules that should be available. When they are, callback is called. If the callback is a function expression, dependencies in that source part are extracted and also loaded on demand. A single request is fired to the server, except if all modules are already available.
@@ -584,18 +574,18 @@ object WebpackModuleApi {
     def ensure(
       paths: js.Array[String],
       callback: js.Function1[/* require */ NodeRequire, Unit],
-      errorCallback: js.UndefOr[scala.Nothing],
-      chunkName: String
-    ): Unit = js.native
-    def ensure(
-      paths: js.Array[String],
-      callback: js.Function1[/* require */ NodeRequire, Unit],
       errorCallback: js.Function1[/* error */ js.Any, Unit]
     ): Unit = js.native
     def ensure(
       paths: js.Array[String],
       callback: js.Function1[/* require */ NodeRequire, Unit],
       errorCallback: js.Function1[/* error */ js.Any, Unit],
+      chunkName: String
+    ): Unit = js.native
+    def ensure(
+      paths: js.Array[String],
+      callback: js.Function1[/* require */ NodeRequire, Unit],
+      errorCallback: Unit,
       chunkName: String
     ): Unit = js.native
     
@@ -625,7 +615,14 @@ object WebpackModuleApi {
     var resolve_Original: typings.webpackEnv.NodeJS.RequireResolve = js.native
   }
   
-  type RequireLambda = Require1 with Require2
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - js.Any because Already inherited
+  - js.Object because Already inherited
+  - js.Function because Already inherited
+  - typings.webpackEnv.WebpackModuleApi.Require2 because Already inherited */ @js.native
+  trait RequireLambda extends Require1
   
   type RequireResolve = js.Function1[/* id */ String, String | Double]
 }

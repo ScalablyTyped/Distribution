@@ -5,40 +5,40 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to receive window events.
   * @see XActivateListener
   */
-@js.native
-trait XTopWindowListener extends XEventListener {
+trait XTopWindowListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a window is activated. */
-  def windowActivated(e: EventObject): Unit = js.native
+  def windowActivated(e: EventObject): Unit
   
   /** is invoked when a window has been closed. */
-  def windowClosed(e: EventObject): Unit = js.native
+  def windowClosed(e: EventObject): Unit
   
   /**
     * is invoked when a window is in the process of being closed.
     *
     * The close operation can be overridden at this point.
     */
-  def windowClosing(e: EventObject): Unit = js.native
+  def windowClosing(e: EventObject): Unit
   
   /** is invoked when a window is deactivated. */
-  def windowDeactivated(e: EventObject): Unit = js.native
+  def windowDeactivated(e: EventObject): Unit
   
   /** is invoked when a window is iconified. */
-  def windowMinimized(e: EventObject): Unit = js.native
+  def windowMinimized(e: EventObject): Unit
   
   /** is invoked when a window is deiconified. */
-  def windowNormalized(e: EventObject): Unit = js.native
+  def windowNormalized(e: EventObject): Unit
   
   /** is invoked when a window has been opened. */
-  def windowOpened(e: EventObject): Unit = js.native
+  def windowOpened(e: EventObject): Unit
 }
 object XTopWindowListener {
   

@@ -6,15 +6,16 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorOpsUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor_ops_util", "makeTensor")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor_ops_util", JSImport.Namespace)
   @js.native
-  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor_ops_util", "makeTensor")
-  @js.native
-  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double], dtype: DataType): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
 }

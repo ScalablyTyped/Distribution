@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is an IDL version of the Java interface **org.xml.sax.DocumentHandler** with some smaller adaptations.
   */
-@js.native
-trait XDocumentHandler extends XInterface {
+trait XDocumentHandler
+  extends StObject
+     with XInterface {
   
   /** receives notification of character data. */
-  def characters(aChars: String): Unit = js.native
+  def characters(aChars: String): Unit
   
   /** receives notification of the end of a document. */
-  def endDocument(): Unit = js.native
+  def endDocument(): Unit
   
   /** receives notification of the end of an element. */
-  def endElement(aName: String): Unit = js.native
+  def endElement(aName: String): Unit
   
   /** receives notification of white space that can be ignored. */
-  def ignorableWhitespace(aWhitespaces: String): Unit = js.native
+  def ignorableWhitespace(aWhitespaces: String): Unit
   
   /** receives notification of a processing instruction. */
-  def processingInstruction(aTarget: String, aData: String): Unit = js.native
+  def processingInstruction(aTarget: String, aData: String): Unit
   
   /** receives an object for locating the origin of SAX document events. */
-  def setDocumentLocator(xLocator: XLocator): Unit = js.native
+  def setDocumentLocator(xLocator: XLocator): Unit
   
   /** receives notification of the beginning of a document. */
-  def startDocument(): Unit = js.native
+  def startDocument(): Unit
   
   /** receives notification of the beginning of an element . */
-  def startElement(aName: String, xAttribs: XAttributeList): Unit = js.native
+  def startElement(aName: String, xAttribs: XAttributeList): Unit
 }
 object XDocumentHandler {
   

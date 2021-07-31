@@ -3,35 +3,33 @@ package typings.docusignEsign.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentPublish extends StObject {
   
   /**
     * A unique ID for the Salesforce object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * An array of userIds that are mentioned directly in the body of a comment.
     */
-  var mentions: js.UndefOr[js.Array[String]] = js.native
+  var mentions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the text that is shown in the dropdown list.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var threadAnchorKeys: js.UndefOr[StringDictionary[String]] = js.native
+  var threadAnchorKeys: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The unique identifier for the comment thread.
     */
-  var threadId: js.UndefOr[String] = js.native
+  var threadId: js.UndefOr[String] = js.undefined
   
-  var visibleTo: js.UndefOr[js.Array[String]] = js.native
+  var visibleTo: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CommentPublish {
   

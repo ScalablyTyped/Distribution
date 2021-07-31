@@ -2,29 +2,27 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTranslateTimeline extends StObject {
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var PREV_X: Double = js.native
+  var PREV_X: Double
   
   /* static member */
-  var PREV_Y: Double = js.native
+  var PREV_Y: Double
   
   /* static member */
-  var X: Double = js.native
+  var X: Double
   
   /* static member */
-  var Y: Double = js.native
+  var Y: Double
 }
 object TypeofTranslateTimeline {
   

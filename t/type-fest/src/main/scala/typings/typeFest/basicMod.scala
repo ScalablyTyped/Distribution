@@ -16,21 +16,21 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicMod {
   
-  type Class[T, Arguments /* <: js.Array[_] */] = Instantiable1[/* arguments_ */ Arguments, T]
+  type Class[T, Arguments /* <: js.Array[js.Any] */] = Instantiable1[/* arguments_ */ Arguments, T]
   
   @js.native
   trait JsonArray
-    extends Array[JsonValue]
+    extends StObject
+       with Array[JsonValue]
        with _JsonValue
   
-  @js.native
   trait JsonObject
-    extends /* key */ StringDictionary[JsonValue]
+    extends StObject
+       with /* key */ StringDictionary[JsonValue]
        with _JsonValue
   object JsonObject {
     
@@ -65,10 +65,9 @@ object basicMod {
   
   object global {
     
-    @js.native
     trait SymbolConstructor extends StObject {
       
-      val observable: js.Symbol = js.native
+      val observable: js.Symbol
     }
     object SymbolConstructor {
       

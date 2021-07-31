@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait SchemaSubnetworksExpandIpCidrRangeRequest extends StObject {
     * within this network. This range can only be larger than (i.e. a superset
     * of) the range previously defined before the update.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * The type of IP CIDR range to associate with this subnetwork. The default
     * is RFC_1918. When expanding to a non-RFC 1918 range, this field must be
     * be set to NON_RFC_1918.
     */
-  var rangeType: js.UndefOr[String] = js.native
+  var rangeType: js.UndefOr[String] = js.undefined
 }
 object SchemaSubnetworksExpandIpCidrRangeRequest {
   

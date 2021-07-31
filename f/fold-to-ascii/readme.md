@@ -12,7 +12,7 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 | Keywords           | ascii, sanitize, diacritics, unicode, folding, ligatures |
 | # releases         | 5 |
 | # dependents       | 14 |
-| # downloads        | 212121 |
+| # downloads        | 338964 |
 | # stars            | 1 |
 
 ## Links

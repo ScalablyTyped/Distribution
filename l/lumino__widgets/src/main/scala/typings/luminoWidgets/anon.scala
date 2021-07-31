@@ -2,22 +2,20 @@ package typings.luminoWidgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@lumino/widgets.@lumino/widgets/types/gridlayout.GridLayout.ICellConfig> */
-  @js.native
   trait PartialICellConfig extends StObject {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var columnSpan: js.UndefOr[Double] = js.native
+    var columnSpan: js.UndefOr[Double] = js.undefined
     
-    var row: js.UndefOr[Double] = js.native
+    var row: js.UndefOr[Double] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
   }
   object PartialICellConfig {
     

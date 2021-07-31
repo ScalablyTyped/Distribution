@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1UserEvent extends StObject {
   
   /** Optional. User event detailed information common across different recommendation types. */
-  var eventDetail: js.UndefOr[GoogleCloudRecommendationengineV1beta1EventDetail] = js.native
+  var eventDetail: js.UndefOr[GoogleCloudRecommendationengineV1beta1EventDetail] = js.undefined
   
   /** Optional. This field should *not* be set when using JavaScript pixel or the Recommendations AI Tag. Defaults to `EVENT_SOURCE_UNSPECIFIED`. */
-  var eventSource: js.UndefOr[String] = js.native
+  var eventSource: js.UndefOr[String] = js.undefined
   
   /** Optional. Only required for ImportUserEvents method. Timestamp of user event created. */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. User event type. Allowed values are: * `add-to-cart` Products being added to cart. * `add-to-list` Items being added to a list (shopping list, favorites etc). *
@@ -24,7 +22,7 @@ trait GoogleCloudRecommendationengineV1beta1UserEvent extends StObject {
     * items being refunded or returned. * `remove-from-cart` Products being removed from cart. * `remove-from-list` Items being removed from a list. * `search` Product search. *
     * `shopping-cart-page-view` User viewing a shopping cart. * `impression` List of items displayed. Used by Google Tag Manager.
     */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Retail product specific user event metadata. This field is required for the following event types: * `add-to-cart` * `add-to-list` * `category-page-view` *
@@ -32,10 +30,10 @@ trait GoogleCloudRecommendationengineV1beta1UserEvent extends StObject {
     * `page-visit` * `shopping-cart-page-view` - note that 'product_event_detail' should be set for this unless the shopping cart is empty. This field is not allowed for the following
     * event types: * `home-page-view`
     */
-  var productEventDetail: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductEventDetail] = js.native
+  var productEventDetail: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductEventDetail] = js.undefined
   
   /** Required. User information. */
-  var userInfo: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserInfo] = js.native
+  var userInfo: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserInfo] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1UserEvent {
   

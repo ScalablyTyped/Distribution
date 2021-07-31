@@ -7,7 +7,6 @@ import typings.reactCodemirror.ReactCodeMirror.ReactCodeMirrorClass
 import typings.reactCodemirror.ReactCodeMirror.ReactCodeMirrorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,10 +21,10 @@ object mod extends Shortcut {
   }
   @JSImport("react-codemirror", JSImport.Namespace)
   @js.native
-  val ^ : ReactCodeMirrorClass = js.native
+  val ^ : js.Object & ReactCodeMirrorClass = js.native
   
-  type _To = ReactCodeMirrorClass
+  type _To = js.Object & ReactCodeMirrorClass
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ReactCodeMirrorClass = ^
+  override def _to: js.Object & ReactCodeMirrorClass = ^
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommentOutput extends StObject {
   
   /**
     * The contents of the comment.
     */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
 }
 object GetCommentOutput {
   

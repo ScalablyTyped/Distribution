@@ -3,16 +3,14 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ASN1 utilities class */
-@js.native
 trait ASN1Util extends StObject {
   
-  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String = js.native
+  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String
   
-  def integerToByteHex(i: Double): String = js.native
+  def integerToByteHex(i: Double): String
   
   /**
     * get encoded hexadecimal string of ASN1Object specifed by JSON parameters
@@ -25,7 +23,7 @@ trait ASN1Util extends StObject {
     * @example
     * jsonToASN1HEX({'prnstr': 'aaa'});
     */
-  def jsonToASN1HEX(param: ASNObject): String = js.native
+  def jsonToASN1HEX(param: ASNObject): String
   
   /**
     * generate ASN1Object specifed by JSON parameters
@@ -72,7 +70,7 @@ trait ASN1Util extends StObject {
     *                      {'prnstr': 'aaa'}]}
     *                   ]});
     */
-  def newObject(param: ASNObject): ASN1Object = js.native
+  def newObject(param: ASNObject): ASN1Object
 }
 object ASN1Util {
   

@@ -2,39 +2,37 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTTPGetAction describes an action based on HTTP Get requests.
   */
-@js.native
 trait HTTPGetAction extends StObject {
   
   /**
     * Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
     */
-  var host: String = js.native
+  var host: String
   
   /**
     * Custom headers to set in the request. HTTP allows repeated headers.
     */
-  var httpHeaders: js.Array[HTTPHeader] = js.native
+  var httpHeaders: js.Array[HTTPHeader]
   
   /**
     * Path to access on the HTTP server.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
     */
-  var port: Double | String = js.native
+  var port: Double | String
   
   /**
     * Scheme to use for connecting to the host. Defaults to HTTP.
     */
-  var scheme: String = js.native
+  var scheme: String
 }
 object HTTPGetAction {
   

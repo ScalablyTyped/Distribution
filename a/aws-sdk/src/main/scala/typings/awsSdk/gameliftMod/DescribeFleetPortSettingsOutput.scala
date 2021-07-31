@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetPortSettingsOutput extends StObject {
   
   /**
     * The port settings for the requested fleet ID.
     */
-  var InboundPermissions: js.UndefOr[IpPermissionsList] = js.native
+  var InboundPermissions: js.UndefOr[IpPermissionsList] = js.undefined
 }
 object DescribeFleetPortSettingsOutput {
   

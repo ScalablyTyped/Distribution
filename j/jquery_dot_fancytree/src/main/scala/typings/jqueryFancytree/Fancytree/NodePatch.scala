@@ -2,22 +2,20 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Data object similar to NodeData, but with additional options.
   * May be passed to FancytreeNode#applyPatch (Every property that is omitted (or set to undefined) will be ignored)  */
-@js.native
 trait NodePatch extends StObject {
   
   /** (not yet implemented) */
-  var appendChildren: js.UndefOr[NodeData] = js.native
+  var appendChildren: js.UndefOr[NodeData] = js.undefined
   
   /** (not yet implemented) */
-  var insertChildren: js.UndefOr[NodeData] = js.native
+  var insertChildren: js.UndefOr[NodeData] = js.undefined
   
   /** (not yet implemented) */
-  var replaceChildren: js.UndefOr[NodeData] = js.native
+  var replaceChildren: js.UndefOr[NodeData] = js.undefined
 }
 object NodePatch {
   

@@ -3,24 +3,45 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 import typings.phaser.Phaser.GameObjects.Particles.Particle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmitterOpCustomUpdateConfig extends _EmitterOpOnUpdateType {
+trait EmitterOpCustomUpdateConfig
+  extends StObject
+     with _EmitterOpOnUpdateType {
   
   /**
     * A callback that is invoked each time the emitter emits a particle.
     */
-  var onEmit: js.UndefOr[EmitterOpOnEmitCallback] = js.native
+  var onEmit: js.UndefOr[EmitterOpOnEmitCallback] = js.undefined
   
   /**
     * A callback that is invoked each time the emitter updates.
     */
-  def onUpdate(particle: Particle, key: String, t: Double, value: Double): Unit = js.native
+  def onUpdate(particle: Particle, key: String, t: Double, value: Double): Unit
   /**
     * A callback that is invoked each time the emitter updates.
     */
   @JSName("onUpdate")
-  var onUpdate_Original: EmitterOpOnUpdateCallback = js.native
+  var onUpdate_Original: EmitterOpOnUpdateCallback
+}
+object EmitterOpCustomUpdateConfig {
+  
+  @scala.inline
+  def apply(onUpdate: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): EmitterOpCustomUpdateConfig = {
+    val __obj = js.Dynamic.literal(onUpdate = js.Any.fromFunction4(onUpdate))
+    __obj.asInstanceOf[EmitterOpCustomUpdateConfig]
+  }
+  
+  @scala.inline
+  implicit class EmitterOpCustomUpdateConfigMutableBuilder[Self <: EmitterOpCustomUpdateConfig] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setOnEmitUndefined: Self = StObject.set(x, "onEmit", js.undefined)
+    
+    @scala.inline
+    def setOnUpdate(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction4(value))
+  }
 }

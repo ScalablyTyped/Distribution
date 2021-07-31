@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotSelection extends StObject {
   
   /** Must be a dimension name from the request. */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /** Order by only when the named dimension is this value. */
-  var dimensionValue: js.UndefOr[String] = js.native
+  var dimensionValue: js.UndefOr[String] = js.undefined
 }
 object PivotSelection {
   

@@ -7,19 +7,17 @@ import typings.cqrsDomain.cqrsDomainStrings.tingodb
 import typings.cqrsDomain.mod.SupportedDBTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aggregate extends StObject {
     
-    var aggregate: String = js.native
+    var aggregate: String
     
-    var aggregateId: String = js.native
+    var aggregateId: String
     
-    var context: String = js.native
+    var context: String
   }
   object Aggregate {
     
@@ -43,32 +41,31 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthSource extends StObject {
     
-    var authSource: js.UndefOr[String] = js.native
+    var authSource: js.UndefOr[String] = js.undefined
     
-    var dbName: js.UndefOr[String] = js.native
+    var dbName: js.UndefOr[String] = js.undefined
     
-    var eventsCollectionName: js.UndefOr[String] = js.native
+    var eventsCollectionName: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var snapshotsCollectionName: js.UndefOr[String] = js.native
+    var snapshotsCollectionName: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transactionsCollectionName: js.UndefOr[String] = js.native
+    var transactionsCollectionName: js.UndefOr[String] = js.undefined
     
-    var `type`: SupportedDBTypes = js.native
+    var `type`: SupportedDBTypes
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object AuthSource {
     
@@ -153,22 +150,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Db extends StObject {
     
-    var db: Double = js.native
+    var db: Double
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var `type`: SupportedDBTypes = js.native
+    var `type`: SupportedDBTypes
   }
   object Db {
     
@@ -220,24 +216,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var db: js.UndefOr[Double] = js.native
+    var db: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var `type`: mongodb | redis | tingodb | inmemory = js.native
+    var `type`: mongodb | redis | tingodb | inmemory
   }
   object Host {
     

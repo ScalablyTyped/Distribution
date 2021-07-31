@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaDataSourceConfig extends StObject {
   
   /**
     * The ARN for the Lambda function.
     */
-  var lambdaFunctionArn: String = js.native
+  var lambdaFunctionArn: String
 }
 object LambdaDataSourceConfig {
   

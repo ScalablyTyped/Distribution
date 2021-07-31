@@ -10,13 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the service {@link com.sun.star.sdbcx.TableDescriptor} with additional display information, sorting, and filtering criteria. */
-@js.native
 trait TableDescriptor
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.TableDescriptor
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.TableDescriptor
      with DataSettings
 object TableDescriptor {
   

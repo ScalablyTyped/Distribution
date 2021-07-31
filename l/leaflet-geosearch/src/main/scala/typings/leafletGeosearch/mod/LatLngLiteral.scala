@@ -2,15 +2,13 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LatLngLiteral extends StObject {
   
-  var lat: Double = js.native
+  var lat: Double
   
-  var lng: Double = js.native
+  var lng: Double
 }
 object LatLngLiteral {
   

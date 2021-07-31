@@ -5,22 +5,23 @@ import typings.std.Pick
 import typings.uiBox.typesEnhancersMod.EnhancerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitBoxPropsMod {
   
-  @JSImport("ui-box/dist/src/utils/split-box-props", JSImport.Default)
+  @JSImport("ui-box/dist/src/utils/split-box-props", JSImport.Namespace)
   @js.native
-  def default[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
+  
   trait SplitBoxProps[P /* <: EnhancerProps */] extends StObject {
     
     var matchedProps: Pick[
         P, 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
-      ] = js.native
+      ]
     
     var remainingProps: Pick[
         P, 
@@ -28,7 +29,7 @@ object splitBoxPropsMod {
           /* keyof P */ String, 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
         ]
-      ] = js.native
+      ]
   }
   object SplitBoxProps {
     
@@ -51,7 +52,7 @@ object splitBoxPropsMod {
     }
     
     @scala.inline
-    implicit class SplitBoxPropsMutableBuilder[Self <: SplitBoxProps[_], P /* <: EnhancerProps */] (val x: Self with SplitBoxProps[P]) extends AnyVal {
+    implicit class SplitBoxPropsMutableBuilder[Self <: SplitBoxProps[?], P /* <: EnhancerProps */] (val x: Self & SplitBoxProps[P]) extends AnyVal {
       
       @scala.inline
       def setMatchedProps(

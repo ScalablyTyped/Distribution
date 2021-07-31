@@ -3,26 +3,24 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGSizeConfig extends StObject {
   
   /**
     * An optional height. The SVG will be resized to this size before being rendered to a texture.
     */
-  var height: js.UndefOr[integer] = js.native
+  var height: js.UndefOr[integer] = js.undefined
   
   /**
     * An optional scale. If given it overrides the width / height properties. The SVG is scaled by the scale factor before being rendered to a texture.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional width. The SVG will be resized to this size before being rendered to a texture.
     */
-  var width: js.UndefOr[integer] = js.native
+  var width: js.UndefOr[integer] = js.undefined
 }
 object SVGSizeConfig {
   

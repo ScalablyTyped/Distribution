@@ -3,21 +3,19 @@ package typings.postcss.mod
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Syntax extends StObject {
   
   /**
     * Function to generate AST by string.
     */
-  var parse: js.UndefOr[Parser] = js.native
+  var parse: js.UndefOr[Parser] = js.undefined
   
   /**
     * Class to generate string by AST.
     */
-  var stringify: js.UndefOr[Stringifier] = js.native
+  var stringify: js.UndefOr[Stringifier] = js.undefined
 }
 object Syntax {
   

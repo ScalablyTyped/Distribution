@@ -2,26 +2,26 @@ package typings.markdownPdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("markdown-pdf", JSImport.Namespace)
-  @js.native
-  def apply(): OptionsBuilder = js.native
-  @JSImport("markdown-pdf", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): OptionsBuilder = js.native
+  @scala.inline
+  def apply(): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[OptionsBuilder]
+  @scala.inline
+  def apply(options: Options): OptionsBuilder = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OptionsBuilder]
   
+  @JSImport("markdown-pdf", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ConcatFromOptionsBuilder extends StObject {
     
     /** Create and concatenate readable streams from paths and pipe to markdown-pdf. */
-    def paths(paths: js.Array[String], opts: js.Any): ToOptionsBuilder = js.native
+    def paths(paths: js.Array[String], opts: js.Any): ToOptionsBuilder
     
     /** Create and concatenate readable streams from strings and pipe to markdown-pdf. */
-    def strings(markdownTexts: js.Array[String], opts: js.Any): ToOptionsBuilder = js.native
+    def strings(markdownTexts: js.Array[String], opts: js.Any): ToOptionsBuilder
   }
   object ConcatFromOptionsBuilder {
     
@@ -45,10 +45,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ConcatOptionsBuilder extends StObject {
     
-    var from: ConcatFromOptionsBuilder = js.native
+    var from: ConcatFromOptionsBuilder
   }
   object ConcatOptionsBuilder {
     
@@ -82,45 +81,44 @@ object mod {
   }
   
   /** Configuration options */
-  @js.native
   trait Options extends StObject {
     
     /** Path to custom CSS file, relative to current directory. */
-    var cssPath: js.UndefOr[String] = js.native
+    var cssPath: js.UndefOr[String] = js.undefined
     
     /** Current working directory. */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /** Path to custorm highlight CSS file (for code highlighting with highlight.js), relative to the current directory. */
-    var highlightCssPath: js.UndefOr[String] = js.native
+    var highlightCssPath: js.UndefOr[String] = js.undefined
     
     /** If renderDelay option isn't set, this is the timeout (in ms) before the page is rendered in case the page.onLoadFinished event doesn't fire. */
-    var loadTimeout: js.UndefOr[Double] = js.native
+    var loadTimeout: js.UndefOr[Double] = js.undefined
     
     /** Supported dimension units are: 'mm', 'cm', 'in', 'px' */
-    var paperBorder: js.UndefOr[String] = js.native
+    var paperBorder: js.UndefOr[String] = js.undefined
     
-    var paperFormat: js.UndefOr[PaperFormat] = js.native
+    var paperFormat: js.UndefOr[PaperFormat] = js.undefined
     
-    var paperOrientation: js.UndefOr[PaperOrientation] = js.native
+    var paperOrientation: js.UndefOr[PaperOrientation] = js.undefined
     
     /** Path to the phantomjs library. */
-    var phantomPath: js.UndefOr[String] = js.native
+    var phantomPath: js.UndefOr[String] = js.undefined
     
     /** A function that returns a through2 stream that transforms the HTML before it is converted to PDF. */
-    var preProcessHtml: js.UndefOr[js.Function0[_]] = js.native
+    var preProcessHtml: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** A function that returns a through2 stream that transforms the markdown before it is converted to HTML. */
-    var preProcessMd: js.UndefOr[js.Function0[_]] = js.native
+    var preProcessMd: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** A config object that is passed to remarkable, the underlying markdown parser */
-    var remarkable: js.UndefOr[js.Any] = js.native
+    var remarkable: js.UndefOr[js.Any] = js.undefined
     
     /** Delay (in ms) before the PDF is rendered. */
-    var renderDelay: js.UndefOr[Double] = js.native
+    var renderDelay: js.UndefOr[Double] = js.undefined
     
     /** Path to CommonJS module which sets the page header and footer (see runnings.js). */
-    var runningsPath: js.UndefOr[String] = js.native
+    var runningsPath: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -182,13 +180,13 @@ object mod {
       def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
       
       @scala.inline
-      def setPreProcessHtml(value: () => _): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
+      def setPreProcessHtml(value: () => js.Any): Self = StObject.set(x, "preProcessHtml", js.Any.fromFunction0(value))
       
       @scala.inline
       def setPreProcessHtmlUndefined: Self = StObject.set(x, "preProcessHtml", js.undefined)
       
       @scala.inline
-      def setPreProcessMd(value: () => _): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
+      def setPreProcessMd(value: () => js.Any): Self = StObject.set(x, "preProcessMd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setPreProcessMdUndefined: Self = StObject.set(x, "preProcessMd", js.undefined)
@@ -213,20 +211,37 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsBuilder extends StObject {
     
     /** Concatenates stream and pipe them to markdown pdf. */
-    var concat: ConcatOptionsBuilder = js.native
+    var concat: ConcatOptionsBuilder
     
     /** Create a readable stream and pipe it to markdown pdf. */
     /** Create a readable stream from path and pipe to markdown-pdf. path can be a single path or array of paths. */
-    def from(path: String): ToOptionsBuilder = js.native
+    def from(path: String): ToOptionsBuilder
     /** Create a readable stream from path and pipe to markdown-pdf. path can be a single path or array of paths. */
-    def from(path: js.Array[String]): ToOptionsBuilder = js.native
+    def from(path: js.Array[String]): ToOptionsBuilder
     /** Create a readable stream and pipe it to markdown pdf. */
     @JSName("from")
-    var from_Original: FromOptionsBuilder with FromFunction = js.native
+    var from_Original: FromOptionsBuilder & FromFunction
+  }
+  object OptionsBuilder {
+    
+    @scala.inline
+    def apply(concat: ConcatOptionsBuilder, from: FromOptionsBuilder & FromFunction): OptionsBuilder = {
+      val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsBuilder]
+    }
+    
+    @scala.inline
+    implicit class OptionsBuilderMutableBuilder[Self <: OptionsBuilder] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConcat(value: ConcatOptionsBuilder): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFrom(value: FromOptionsBuilder & FromFunction): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -300,7 +315,6 @@ object mod {
     */
   js.Function2[/* path */ String, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
   
-  @js.native
   trait ToOptionsBuilder extends StObject {
     
     /**
@@ -308,14 +322,29 @@ object mod {
       * path can be a single path, or array of output paths if you specified an array of inputs.
       * The callback function cb will be invoked when data has finished being written.
       */
-    def to(path: String): Unit = js.native
+    def to(path: String): Unit
     /**
       * Create a writeable stream to path and pipe output from markdown-pdf to it.
       * path can be a single path, or array of output paths if you specified an array of inputs.
       * The callback function cb will be invoked when data has finished being written.
       */
-    def to(path: String, callback: js.Function0[Unit]): Unit = js.native
+    def to(path: String, callback: js.Function0[Unit]): Unit
     @JSName("to")
-    var to_Original: ToBuilder with ToFunction = js.native
+    var to_Original: ToBuilder & ToFunction
+  }
+  object ToOptionsBuilder {
+    
+    @scala.inline
+    def apply(to: ToBuilder & ToFunction): ToOptionsBuilder = {
+      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ToOptionsBuilder]
+    }
+    
+    @scala.inline
+    implicit class ToOptionsBuilderMutableBuilder[Self <: ToOptionsBuilder] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setTo(value: ToBuilder & ToFunction): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    }
   }
 }

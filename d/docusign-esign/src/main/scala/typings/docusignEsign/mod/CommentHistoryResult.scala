@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentHistoryResult extends StObject {
   
   /**
     * An array of comment tabs that contain information about users' comments on documents.
     */
-  var comments: js.UndefOr[js.Array[Comment]] = js.native
+  var comments: js.UndefOr[js.Array[Comment]] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   // int32
-  var endTimetoken: js.UndefOr[String] = js.native
+  var endTimetoken: js.UndefOr[String] = js.undefined
   
-  var startTimetoken: js.UndefOr[String] = js.native
+  var startTimetoken: js.UndefOr[String] = js.undefined
 }
 object CommentHistoryResult {
   

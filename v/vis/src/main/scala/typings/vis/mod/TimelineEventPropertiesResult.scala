@@ -4,61 +4,59 @@ import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineEventPropertiesResult extends StObject {
   
   /**
     * The original click event.
     */
-  var event: Event = js.native
+  var event: Event
   
   /**
     *  The id of the clicked group
     */
-  var group: js.UndefOr[Double | Null] = js.native
+  var group: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The id of the clicked item.
     */
-  var item: js.UndefOr[IdType | Null] = js.native
+  var item: js.UndefOr[IdType | Null] = js.undefined
   
   /**
     * Absolute horizontal position of the click event.
     */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /**
     * Absolute vertical position of the click event.
     */
-  var pageY: Double = js.native
+  var pageY: Double
   
   /**
     * Date of the clicked event, snapped to a nice value.
     */
-  var snappedTime: Date = js.native
+  var snappedTime: Date
   
   /**
     *  Date of the clicked event.
     */
-  var time: Date = js.native
+  var time: Date
   
   /**
     * Name of the clicked thing.
     */
-  var what: js.UndefOr[TimelineEventPropertiesResultWhatType] = js.native
+  var what: js.UndefOr[TimelineEventPropertiesResultWhatType] = js.undefined
   
   /**
     * Relative horizontal position of the click event.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Relative vertical position of the click event.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object TimelineEventPropertiesResult {
   

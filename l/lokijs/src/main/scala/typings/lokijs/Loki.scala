@@ -32,7 +32,6 @@ import typings.lokijs.lokijsStrings.ttl
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,7 +39,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @implements LokiEventEmitter
   */
 @js.native
-trait Loki extends LokiEventEmitter {
+trait Loki
+  extends StObject
+     with LokiEventEmitter {
   
   var ENV: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA = js.native
   
@@ -90,9 +91,9 @@ trait Loki extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback
     */
   def autosaveEnable(): Unit = js.native
-  def autosaveEnable(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def autosaveEnable(options: js.Any): Unit = js.native
   def autosaveEnable(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def autosaveEnable(options: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
   
   var autosaveHandle: Double | Null = js.native
   
@@ -112,7 +113,7 @@ trait Loki extends LokiEventEmitter {
   def close(): Unit = js.native
   def close(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
   
-  var collections: js.Array[Collection[_]] = js.native
+  var collections: js.Array[Collection[js.Any]] = js.native
   
   /**
     * Allows reconfiguring database options
@@ -130,7 +131,7 @@ trait Loki extends LokiEventEmitter {
     * @param initialConfig - (internal) true is passed when loki ctor is invoking
     */
   def configureOptions(): Unit = js.native
-  def configureOptions(options: js.UndefOr[scala.Nothing], initialConfig: Boolean): Unit = js.native
+  def configureOptions(options: Unit, initialConfig: Boolean): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP, initialConfig: Boolean): Unit = js.native
   
@@ -156,15 +157,15 @@ trait Loki extends LokiEventEmitter {
     */
   def deleteDatabase(callback: js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]): Unit = js.native
   def deleteDatabase(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  def deleteDatabase(
     options: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit],
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
   ): Unit = js.native
   def deleteDatabase(
     options: Null,
+    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
+  def deleteDatabase(
+    options: Unit,
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
   ): Unit = js.native
   
@@ -178,10 +179,10 @@ trait Loki extends LokiEventEmitter {
     *
     * @returns an array of documents to attach to collection.data.
     */
-  def deserializeCollection(destructuredSource: String): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[_] = js.native
+  def deserializeCollection(destructuredSource: String): js.Array[js.Any] = js.native
+  def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[js.Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[js.Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[js.Any] = js.native
   
   /**
     * Database level destructured JSON deserialization routine to minimize memory overhead.
@@ -241,9 +242,9 @@ trait Loki extends LokiEventEmitter {
   
   def getName(): String = js.native
   
-  def listCollections(): js.Array[Collection[_]] = js.native
+  def listCollections(): js.Array[Collection[js.Any]] = js.native
   
-  def loadCollection(collection: Collection[_]): Unit = js.native
+  def loadCollection(collection: Collection[js.Any]): Unit = js.native
   
   /**
     * Handles manually loading from file system, local storage, or adapter (such as indexeddb)
@@ -269,7 +270,7 @@ trait Loki extends LokiEventEmitter {
     * });
     */
   def loadDatabase(): Unit = js.native
-  def loadDatabase(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def loadDatabase(options: Unit, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   
@@ -280,13 +281,13 @@ trait Loki extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback / error handler
     */
   def loadDatabaseInternal(): Unit = js.native
-  def loadDatabaseInternal(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
   def loadDatabaseInternal(options: js.Any): Unit = js.native
   def loadDatabaseInternal(
     options: js.Any,
+    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
+  def loadDatabaseInternal(
+    options: Unit,
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
   ): Unit = js.native
   
@@ -330,7 +331,7 @@ trait Loki extends LokiEventEmitter {
     * @param newName - new name of collection
     * @returns reference to the newly renamed collection
     */
-  def renameCollection(oldName: String, newName: String): Collection[_] = js.native
+  def renameCollection(oldName: String, newName: String): Collection[js.Any] = js.native
   
   // alias
   def save(): Unit = js.native
@@ -434,7 +435,7 @@ trait Loki extends LokiEventEmitter {
   @JSName("serialize")
   def serialize_Union(): String | js.Array[String] = js.native
   
-  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[_], Unit]] = js.native
+  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.native
   
   /**
     * Wait for throttledSaves to complete and invoke your callback when drained or duration is met.

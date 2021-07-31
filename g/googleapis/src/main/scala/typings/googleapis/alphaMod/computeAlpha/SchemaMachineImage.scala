@@ -2,43 +2,41 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Machine image resource.
   */
-@js.native
 trait SchemaMachineImage extends StObject {
   
   /**
     * [Output Only] The creation timestamp for this machine image in RFC3339
     * text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A unique identifier for this machine image. The server
     * defines this identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The resource type, which is always compute#machineImage for
     * machine image.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Encryption key to protect the machine image.
     */
-  var machineImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var machineImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -49,18 +47,18 @@ trait SchemaMachineImage extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL for this machine image. The server defines this
     * URL.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * The source instance used to create the machine image. You can provide
@@ -69,22 +67,22 @@ trait SchemaMachineImage extends StObject {
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance
     * - projects/project/zones/zone/instances/instance
     */
-  var sourceInstance: js.UndefOr[String] = js.native
+  var sourceInstance: js.UndefOr[String] = js.undefined
   
   /**
     * Properties of source instance.
     */
-  var sourceInstanceProperties: js.UndefOr[SchemaSourceInstanceProperties] = js.native
+  var sourceInstanceProperties: js.UndefOr[SchemaSourceInstanceProperties] = js.undefined
   
   /**
     * [Output Only] The status of disk creation.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * GCS bucket storage location of the snapshot (regional or multi-regional).
     */
-  var storageLocations: js.UndefOr[js.Array[String]] = js.native
+  var storageLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaMachineImage {
   

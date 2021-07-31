@@ -2,35 +2,33 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The set of columns&#39; values that share the same ldiversity value.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass extends StObject {
   
   /**
     * Size of the k-anonymity equivalence class.
     */
-  var equivalenceClassSize: js.UndefOr[String] = js.native
+  var equivalenceClassSize: js.UndefOr[String] = js.undefined
   
   /**
     * Number of distinct sensitive values in this equivalence class.
     */
-  var numDistinctSensitiveValues: js.UndefOr[String] = js.native
+  var numDistinctSensitiveValues: js.UndefOr[String] = js.undefined
   
   /**
     * Quasi-identifier values defining the k-anonymity equivalence class. The
     * order is always the same as the original request.
     */
-  var quasiIdsValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.native
+  var quasiIdsValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
   
   /**
     * Estimated frequencies of top sensitive values.
     */
-  var topSensitiveValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]] = js.native
+  var topSensitiveValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass {
   

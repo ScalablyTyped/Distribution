@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph extends StObject {
   
   /**
     * The ARN of the behavior graph.
     */
-  var Arn: js.UndefOr[GraphArn] = js.native
+  var Arn: js.UndefOr[GraphArn] = js.undefined
   
   /**
     * The date and time that the behavior graph was created. The value is in milliseconds since the epoch.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.native
+  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
 }
 object Graph {
   

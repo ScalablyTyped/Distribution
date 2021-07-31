@@ -2,60 +2,58 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a query.
   */
-@js.native
 trait SchemaQuery extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;doubleclickbidmanager#query&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Query metadata.
     */
-  var metadata: js.UndefOr[SchemaQueryMetadata] = js.native
+  var metadata: js.UndefOr[SchemaQueryMetadata] = js.undefined
   
   /**
     * Query parameters.
     */
-  var params: js.UndefOr[SchemaParameters] = js.native
+  var params: js.UndefOr[SchemaParameters] = js.undefined
   
   /**
     * Query ID.
     */
-  var queryId: js.UndefOr[String] = js.native
+  var queryId: js.UndefOr[String] = js.undefined
   
   /**
     * The ending time for the data that is shown in the report. Note,
     * reportDataEndTimeMs is required if metadata.dataRange is CUSTOM_DATES and
     * ignored otherwise.
     */
-  var reportDataEndTimeMs: js.UndefOr[String] = js.native
+  var reportDataEndTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * The starting time for the data that is shown in the report. Note,
     * reportDataStartTimeMs is required if metadata.dataRange is CUSTOM_DATES
     * and ignored otherwise.
     */
-  var reportDataStartTimeMs: js.UndefOr[String] = js.native
+  var reportDataStartTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * Information on how often and when to run a query.
     */
-  var schedule: js.UndefOr[SchemaQuerySchedule] = js.native
+  var schedule: js.UndefOr[SchemaQuerySchedule] = js.undefined
   
   /**
     * Canonical timezone code for report data time. Defaults to
     * America/New_York.
     */
-  var timezoneCode: js.UndefOr[String] = js.native
+  var timezoneCode: js.UndefOr[String] = js.undefined
 }
 object SchemaQuery {
   

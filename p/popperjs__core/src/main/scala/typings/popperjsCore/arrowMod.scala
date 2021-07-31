@@ -7,7 +7,6 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowMod extends Shortcut {
@@ -18,18 +17,17 @@ object arrowMod extends Shortcut {
   
   type ArrowModifier = Modifier[arrow, Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var element: HTMLElement | String | Null = js.native
+    var element: HTMLElement | String | Null
     
-    var padding: Padding = js.native
+    var padding: Padding
   }
   object Options {
     
     @scala.inline
     def apply(padding: Padding): Options = {
-      val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], element = null)
       __obj.asInstanceOf[Options]
     }
     

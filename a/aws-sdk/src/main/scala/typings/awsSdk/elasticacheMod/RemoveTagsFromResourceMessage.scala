@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource from which you want the tags removed, for example arn:aws:elasticache:us-west-2:0123456789:cluster:myCluster or arn:aws:elasticache:us-west-2:0123456789:snapshot:mySnapshot. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var ResourceName: String = js.native
+  var ResourceName: String
   
   /**
     * A list of TagKeys identifying the tags you want removed from the named resource.
     */
-  var TagKeys: KeyList = js.native
+  var TagKeys: KeyList
 }
 object RemoveTagsFromResourceMessage {
   

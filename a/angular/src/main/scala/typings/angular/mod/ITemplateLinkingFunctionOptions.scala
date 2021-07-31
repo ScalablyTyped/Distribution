@@ -5,17 +5,15 @@ import typings.angular.JQuery
 import typings.angular.anon.Instance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITemplateLinkingFunctionOptions extends StObject {
   
-  var futureParentElement: js.UndefOr[JQuery] = js.native
+  var futureParentElement: js.UndefOr[JQuery] = js.undefined
   
-  var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.native
+  var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.undefined
   
-  var transcludeControllers: js.UndefOr[StringDictionary[Instance]] = js.native
+  var transcludeControllers: js.UndefOr[StringDictionary[Instance]] = js.undefined
 }
 object ITemplateLinkingFunctionOptions {
   

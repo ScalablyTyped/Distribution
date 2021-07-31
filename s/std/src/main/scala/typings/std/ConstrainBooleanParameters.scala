@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstrainBooleanParameters extends StObject {
   
-  var exact: js.UndefOr[scala.Boolean] = js.native
+  var exact: js.UndefOr[scala.Boolean] = js.undefined
   
-  var ideal: js.UndefOr[scala.Boolean] = js.native
+  var ideal: js.UndefOr[scala.Boolean] = js.undefined
 }
 object ConstrainBooleanParameters {
   

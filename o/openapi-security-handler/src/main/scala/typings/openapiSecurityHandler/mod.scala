@@ -7,21 +7,32 @@ import typings.openapiTypes.mod.OpenAPIV2.SecurityRequirementObject
 import typings.openapiTypes.mod.OpenAPIV2.SecuritySchemeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-security-handler", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPISecurityHandler {
+  class default protected ()
+    extends StObject
+       with OpenAPISecurityHandler {
     def this(args: OpenAPISecurityHandlerArgs) = this()
+    
+    /* CompleteClass */
+    override def handle(request: js.Any): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def handle(request: Request): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    var operationSecurity: js.Any = js.native
+    
+    /* CompleteClass */
+    var securitySets: js.Any = js.native
   }
   
-  @js.native
   trait IOpenAPISecurityHandler extends StObject {
     
-    def handle(request: Request): js.Promise[Unit] = js.native
+    def handle(request: Request): js.Promise[Unit]
   }
   object IOpenAPISecurityHandler {
     
@@ -39,14 +50,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPISecurityHandler extends IOpenAPISecurityHandler {
+  trait OpenAPISecurityHandler
+    extends StObject
+       with IOpenAPISecurityHandler {
     
-    def handle(request: js.Any): js.Promise[Unit] = js.native
+    def handle(request: js.Any): js.Promise[Unit]
     
-    var operationSecurity: js.Any = js.native
+    var operationSecurity: js.Any
     
-    var securitySets: js.Any = js.native
+    var securitySets: js.Any
   }
   object OpenAPISecurityHandler {
     
@@ -70,18 +82,17 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPISecurityHandlerArgs extends StObject {
     
-    var loggingKey: String = js.native
+    var loggingKey: String
     
     var operationSecurity: js.Array[
         SecurityRequirementObject | typings.openapiTypes.mod.OpenAPIV3.SecurityRequirementObject
-      ] = js.native
+      ]
     
-    var securityDefinitions: SecurityDefinitionsObject = js.native
+    var securityDefinitions: SecurityDefinitionsObject
     
-    var securityHandlers: SecurityHandlers = js.native
+    var securityHandlers: SecurityHandlers
   }
   object OpenAPISecurityHandlerArgs {
     

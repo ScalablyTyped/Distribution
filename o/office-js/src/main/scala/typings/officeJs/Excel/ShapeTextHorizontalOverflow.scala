@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,8 +17,12 @@ sealed trait ShapeTextHorizontalOverflow extends StObject
 object ShapeTextHorizontalOverflow extends StObject {
   
   @js.native
-  sealed trait clip extends ShapeTextHorizontalOverflow
+  sealed trait clip
+    extends StObject
+       with ShapeTextHorizontalOverflow
   
   @js.native
-  sealed trait overflow extends ShapeTextHorizontalOverflow
+  sealed trait overflow
+    extends StObject
+       with ShapeTextHorizontalOverflow
 }

@@ -2,19 +2,17 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutArrayChange[T] extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var moved: js.UndefOr[Double] = js.native
+  var moved: js.UndefOr[Double] = js.undefined
   
-  var status: String = js.native
+  var status: String
   
-  var value: T = js.native
+  var value: T
 }
 object KnockoutArrayChange {
   
@@ -25,7 +23,7 @@ object KnockoutArrayChange {
   }
   
   @scala.inline
-  implicit class KnockoutArrayChangeMutableBuilder[Self <: KnockoutArrayChange[_], T] (val x: Self with KnockoutArrayChange[T]) extends AnyVal {
+  implicit class KnockoutArrayChangeMutableBuilder[Self <: KnockoutArrayChange[?], T] (val x: Self & KnockoutArrayChange[T]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

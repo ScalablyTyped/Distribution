@@ -2,37 +2,35 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFile extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/upload-file
   /**
     * Path of file to be uploaded.
     */
-  var filePath: String = js.native
+  var filePath: String
   
   /**
     * Number of bytes to read from `offset`. Defaults to `0`.
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * Last Modification time in number of seconds since the UNIX epoch.
     */
-  var modificationTime: Double = js.native
+  var modificationTime: Double
   
   /**
     * Defaults to `0`.
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * `file`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object UploadFile {
   

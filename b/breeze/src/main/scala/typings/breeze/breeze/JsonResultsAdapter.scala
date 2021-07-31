@@ -2,21 +2,19 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonResultsAdapter extends StObject {
   
-  def extractKeyMappings(data: js.Object): js.Array[KeyMapping] = js.native
+  def extractKeyMappings(data: js.Object): js.Array[KeyMapping]
   
-  def extractResults(data: js.Object): js.Object = js.native
+  def extractResults(data: js.Object): js.Object
   
-  def extractSaveResults(data: js.Object): js.Array[_] = js.native
+  def extractSaveResults(data: js.Object): js.Array[js.Any]
   
-  var name: String = js.native
+  var name: String
   
-  def visitNode(node: js.Object, queryContext: QueryContext, nodeContext: NodeContext): typings.breeze.anon.EntityType = js.native
+  def visitNode(node: js.Object, queryContext: QueryContext, nodeContext: NodeContext): typings.breeze.anon.EntityType
 }
 object JsonResultsAdapter {
   
@@ -24,7 +22,7 @@ object JsonResultsAdapter {
   def apply(
     extractKeyMappings: js.Object => js.Array[KeyMapping],
     extractResults: js.Object => js.Object,
-    extractSaveResults: js.Object => js.Array[_],
+    extractSaveResults: js.Object => js.Array[js.Any],
     name: String,
     visitNode: (js.Object, QueryContext, NodeContext) => typings.breeze.anon.EntityType
   ): JsonResultsAdapter = {
@@ -42,7 +40,7 @@ object JsonResultsAdapter {
     def setExtractResults(value: js.Object => js.Object): Self = StObject.set(x, "extractResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtractSaveResults(value: js.Object => js.Array[_]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
+    def setExtractSaveResults(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

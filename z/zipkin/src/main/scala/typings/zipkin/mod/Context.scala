@@ -2,19 +2,17 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context[T] extends StObject {
   
-  def getContext(): T = js.native
+  def getContext(): T
   
-  def letContext[V](ctx: T, callback: js.Function0[V]): V = js.native
+  def letContext[V](ctx: T, callback: js.Function0[V]): V
   
-  def scoped[V](callback: js.Function0[V]): V = js.native
+  def scoped[V](callback: js.Function0[V]): V
   
-  def setContext(ctx: T): Unit = js.native
+  def setContext(ctx: T): Unit
 }
 object Context {
   
@@ -30,7 +28,7 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
     
     @scala.inline
     def setGetContext(value: () => T): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))

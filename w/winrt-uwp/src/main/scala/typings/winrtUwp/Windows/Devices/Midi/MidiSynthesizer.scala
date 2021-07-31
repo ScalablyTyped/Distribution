@@ -4,36 +4,34 @@ import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the Microsoft GS wavetable software synthesizer, included in Windows. This synthesizer provides a Roland GS sound set, which includes and extends the General MIDI sound set. */
-@js.native
 trait MidiSynthesizer extends StObject {
   
   /** Gets the audio output device being used by this instance of the Microsoft MIDI synthesizer. */
-  var audioDevice: DeviceInformation = js.native
+  var audioDevice: DeviceInformation
   
   /** Closes this instance of the Microsoft MIDI synthesizer. It is a best practice for the caller to use this method to clear resources used by the MIDI object. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets the device ID of the Microsoft MIDI synthesizer. Note that all instances of the synthesizer have the same ID. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * Sends an array of bytes through the synthesizer's out port . This enables you to send your data as a byte array instead of as a defined MIDI message.
     * @param midiData The array of bytes to send.
     */
-  def sendBuffer(midiData: IBuffer): Unit = js.native
+  def sendBuffer(midiData: IBuffer): Unit
   
   /**
     * Sends a MIDI message through the Microsoft MIDI synthesizer's out port .
     * @param midiMessage The MIDI message to send.
     */
-  def sendMessage(midiMessage: IMidiMessage): Unit = js.native
+  def sendMessage(midiMessage: IMidiMessage): Unit
   
   /** Gets or sets the output volume of this instance of the Microsoft MIDI synthesizer. */
-  var volume: Double = js.native
+  var volume: Double
 }
 object MidiSynthesizer {
   

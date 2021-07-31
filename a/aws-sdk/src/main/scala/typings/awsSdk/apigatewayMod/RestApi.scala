@@ -2,76 +2,74 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestApi extends StObject {
   
   /**
     * The source of the API key for metering requests according to a usage plan. Valid values are: HEADER to read the API key from the X-API-Key header of a request. AUTHORIZER to read the API key from the UsageIdentifierKey from a custom authorizer.
     */
-  var apiKeySource: js.UndefOr[ApiKeySourceType] = js.native
+  var apiKeySource: js.UndefOr[ApiKeySourceType] = js.undefined
   
   /**
     * The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
     */
-  var binaryMediaTypes: js.UndefOr[ListOfString] = js.native
+  var binaryMediaTypes: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * The timestamp when the API was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The API's description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether clients can invoke your API by using the default execute-api endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke your API, disable the default endpoint.
     */
-  var disableExecuteApiEndpoint: js.UndefOr[Boolean] = js.native
+  var disableExecuteApiEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The endpoint configuration of this RestApi showing the endpoint types of the API.
     */
-  var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.native
+  var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.undefined
   
   /**
     * The API's identifier. This identifier is unique across all of your APIs in API Gateway.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A nullable integer that is used to enable compression (with non-negative between 0 and 10485760 (10M) bytes, inclusive) or disable compression (with a null value) on an API. When compression is enabled, compression or decompression is not applied on the payload if the payload size is smaller than this value. Setting it to zero allows compression for any payload size.
     */
-  var minimumCompressionSize: js.UndefOr[NullableInteger] = js.native
+  var minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The API's name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration.
     */
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * A version identifier for the API.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * The warning messages reported when failonwarnings is turned on during API import.
     */
-  var warnings: js.UndefOr[ListOfString] = js.native
+  var warnings: js.UndefOr[ListOfString] = js.undefined
 }
 object RestApi {
   

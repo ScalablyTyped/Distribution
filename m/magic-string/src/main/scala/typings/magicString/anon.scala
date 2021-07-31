@@ -3,17 +3,15 @@ package typings.magicString
 import typings.magicString.mod.MagicString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: MagicString = js.native
+    var content: MagicString
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object Content {
     
@@ -38,16 +36,15 @@ object anon {
   }
   
   /* Inlined std.Partial<magic-string.magic-string.SourceMapOptions> */
-  @js.native
   trait PartialSourceMapOptions extends StObject {
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var hires: js.UndefOr[Boolean] = js.native
+    var hires: js.UndefOr[Boolean] = js.undefined
     
-    var includeContent: js.UndefOr[Boolean] = js.native
+    var includeContent: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object PartialSourceMapOptions {
     

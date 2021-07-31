@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XDNetworkState extends StObject {
   
   @JSName("InfoPath.XDNetworkState_typekey")
-  var InfoPathDotXDNetworkState_typekey: XDNetworkState = js.native
+  var InfoPathDotXDNetworkState_typekey: XDNetworkState
   
-  def IsDestinationReachable(bstrDestination: String): Boolean = js.native
+  def IsDestinationReachable(bstrDestination: String): Boolean
   
-  val MachineOnlineState: XdMachineOnlineState = js.native
+  val MachineOnlineState: XdMachineOnlineState
 }
 object XDNetworkState {
   

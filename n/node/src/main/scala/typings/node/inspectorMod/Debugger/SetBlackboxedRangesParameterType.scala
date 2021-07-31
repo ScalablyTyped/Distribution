@@ -3,18 +3,16 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBlackboxedRangesParameterType extends StObject {
   
-  var positions: js.Array[ScriptPosition] = js.native
+  var positions: js.Array[ScriptPosition]
   
   /**
     * Id of the script.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
 }
 object SetBlackboxedRangesParameterType {
   

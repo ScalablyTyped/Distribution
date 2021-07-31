@@ -2,52 +2,50 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOmNavigator extends StObject {
   
   @JSName("MSHTML.IOmNavigator_typekey")
-  var MSHTMLDotIOmNavigator_typekey: IOmNavigator = js.native
+  var MSHTMLDotIOmNavigator_typekey: IOmNavigator
   
-  val appCodeName: String = js.native
+  val appCodeName: String
   
-  val appMinorVersion: String = js.native
+  val appMinorVersion: String
   
-  val appName: String = js.native
+  val appName: String
   
-  val appVersion: String = js.native
+  val appVersion: String
   
-  val browserLanguage: String = js.native
+  val browserLanguage: String
   
-  val connectionSpeed: Double = js.native
+  val connectionSpeed: Double
   
-  val cookieEnabled: Boolean = js.native
+  val cookieEnabled: Boolean
   
-  val cpuClass: String = js.native
+  val cpuClass: String
   
-  def javaEnabled(): Boolean = js.native
+  def javaEnabled(): Boolean
   
-  val mimeTypes: CMimeTypes = js.native
+  val mimeTypes: CMimeTypes
   
-  val onLine: Boolean = js.native
+  val onLine: Boolean
   
-  val opsProfile: COpsProfile = js.native
+  val opsProfile: COpsProfile
   
-  val platform: String = js.native
+  val platform: String
   
-  val plugins: IHTMLPluginsCollection = js.native
+  val plugins: IHTMLPluginsCollection
   
-  val systemLanguage: String = js.native
+  val systemLanguage: String
   
-  def taintEnabled(): Boolean = js.native
+  def taintEnabled(): Boolean
   
-  val userAgent: String = js.native
+  val userAgent: String
   
-  val userLanguage: String = js.native
+  val userLanguage: String
   
-  val userProfile: COpsProfile = js.native
+  val userProfile: COpsProfile
 }
 object IOmNavigator {
   

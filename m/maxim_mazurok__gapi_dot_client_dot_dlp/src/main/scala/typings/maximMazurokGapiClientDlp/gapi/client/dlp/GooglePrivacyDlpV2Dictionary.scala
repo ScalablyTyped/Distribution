@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Dictionary extends StObject {
   
   /** Newline-delimited file of words in Cloud Storage. Only a single file is accepted. */
-  var cloudStoragePath: js.UndefOr[GooglePrivacyDlpV2CloudStoragePath] = js.native
+  var cloudStoragePath: js.UndefOr[GooglePrivacyDlpV2CloudStoragePath] = js.undefined
   
   /** List of words or phrases to search for. */
-  var wordList: js.UndefOr[GooglePrivacyDlpV2WordList] = js.native
+  var wordList: js.UndefOr[GooglePrivacyDlpV2WordList] = js.undefined
 }
 object GooglePrivacyDlpV2Dictionary {
   

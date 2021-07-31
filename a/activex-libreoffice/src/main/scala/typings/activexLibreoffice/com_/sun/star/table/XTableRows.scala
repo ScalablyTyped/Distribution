@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access rows via index and to insert and remove rows.
   * @see com.sun.star.table.TableRows
   */
-@js.native
-trait XTableRows extends XIndexAccess {
+trait XTableRows
+  extends StObject
+     with XIndexAccess {
   
   /**
     * inserts new rows.
@@ -21,7 +21,7 @@ trait XTableRows extends XIndexAccess {
     * @param nIndex is the index the first inserted row will have.
     * @param nCount is the number of rows to insert.
     */
-  def insertByIndex(nIndex: Double, nCount: Double): Unit = js.native
+  def insertByIndex(nIndex: Double, nCount: Double): Unit
   
   /**
     * deletes rows.
@@ -30,7 +30,7 @@ trait XTableRows extends XIndexAccess {
     * @param nIndex is the index of the first row to delete.
     * @param nCount is the number of rows to delete.
     */
-  def removeByIndex(nIndex: Double, nCount: Double): Unit = js.native
+  def removeByIndex(nIndex: Double, nCount: Double): Unit
 }
 object XTableRows {
   

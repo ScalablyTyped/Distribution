@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseEndpoint extends StObject {
   
   /**
     * Specifies the DNS address of the database.
     */
-  var address: js.UndefOr[NonEmptyString] = js.native
+  var address: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the port that the database is listening on.
     */
-  var port: js.UndefOr[integer] = js.native
+  var port: js.UndefOr[integer] = js.undefined
 }
 object RelationalDatabaseEndpoint {
   

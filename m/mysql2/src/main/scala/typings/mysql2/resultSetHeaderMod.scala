@@ -3,27 +3,25 @@ package typings.mysql2
 import typings.mysql2.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultSetHeaderMod {
   
-  @js.native
   trait ResultSetHeader extends StObject {
     
-    var affectedRows: Double = js.native
+    var affectedRows: Double
     
-    var constructor: `2` = js.native
+    var constructor: `2`
     
-    var fieldCount: Double = js.native
+    var fieldCount: Double
     
-    var info: String = js.native
+    var info: String
     
-    var insertId: Double = js.native
+    var insertId: Double
     
-    var serverStatus: Double = js.native
+    var serverStatus: Double
     
-    var warningStatus: Double = js.native
+    var warningStatus: Double
   }
   object ResultSetHeader {
     

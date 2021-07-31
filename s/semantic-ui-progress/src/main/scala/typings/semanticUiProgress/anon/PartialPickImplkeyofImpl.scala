@@ -13,70 +13,68 @@ import typings.semanticUiProgress.semanticUiProgressStrings.percent
 import typings.semanticUiProgress.semanticUiProgressStrings.ratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, keyof semantic-ui-progress.SemanticUI.ProgressSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var autoSuccess: js.UndefOr[Boolean] = js.native
+  var autoSuccess: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var label: js.UndefOr[percent | ratio] = js.native
+  var label: js.UndefOr[percent | ratio] = js.undefined
   
-  var limitValues: js.UndefOr[Boolean] = js.native
+  var limitValues: js.UndefOr[Boolean] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   var onActive: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onChange: js.UndefOr[
     js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onError: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSuccess: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]] = js.native
+  var onSuccess: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]] = js.undefined
   
   var onWarning: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var random: js.UndefOr[RandomSettings] = js.native
+  var random: js.UndefOr[RandomSettings] = js.undefined
   
-  var regExp: js.UndefOr[RegExpSettings] = js.native
+  var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showActivity: js.UndefOr[Boolean] = js.native
+  var showActivity: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[TextSettings] = js.native
+  var text: js.UndefOr[TextSettings] = js.undefined
   
-  var total: js.UndefOr[`false` | Double] = js.native
+  var total: js.UndefOr[`false` | Double] = js.undefined
   
-  var value: js.UndefOr[`false` | Double] = js.native
+  var value: js.UndefOr[`false` | Double] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

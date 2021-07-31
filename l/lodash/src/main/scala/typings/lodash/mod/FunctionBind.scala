@@ -2,20 +2,22 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FunctionBind extends StObject {
   
-  def apply(func: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any, partials: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
+  def apply(func: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any, partials: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   
   /**
     * @see _.placeholder
     */
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
+  /**
+    * @see _.placeholder
+    */
+  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
   def placeholder[T](value: List[T]): Collection[T] = js.native
   /**
     * @see _.placeholder
@@ -31,12 +33,9 @@ trait FunctionBind extends StObject {
     * @see _.placeholder
     */
   @JSName("placeholder")
-  def placeholder_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-  /**
-    * @see _.placeholder
-    */
-  @JSName("placeholder")
   def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   /**
     * @see _.placeholder
     */
@@ -119,5 +118,5 @@ trait FunctionBind extends StObject {
     * @see _.placeholder
     */
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with String = js.native
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
 }

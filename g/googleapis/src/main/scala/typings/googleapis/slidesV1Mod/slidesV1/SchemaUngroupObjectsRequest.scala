@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Ungroups objects, such as groups.
   */
-@js.native
 trait SchemaUngroupObjectsRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaUngroupObjectsRequest extends StObject {
     * same page. The group itself is deleted. The visual sizes and positions of
     * all the children are preserved.
     */
-  var objectIds: js.UndefOr[js.Array[String]] = js.native
+  var objectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUngroupObjectsRequest {
   

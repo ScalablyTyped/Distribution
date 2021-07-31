@@ -19,7 +19,6 @@ import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.stop
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,39 +30,55 @@ object mod {
   object DH_STATES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[DH_STATES with String] = js.native
+    def apply(value: String): js.UndefOr[DH_STATES & String] = js.native
     
     @js.native
-    sealed trait DOWNLOADING extends DH_STATES
-    /* "DOWNLOADING" */ val DOWNLOADING: typings.nodeDownloaderHelper.mod.DH_STATES.DOWNLOADING with String = js.native
+    sealed trait DOWNLOADING
+      extends StObject
+         with DH_STATES
+    /* "DOWNLOADING" */ val DOWNLOADING: typings.nodeDownloaderHelper.mod.DH_STATES.DOWNLOADING & String = js.native
     
     @js.native
-    sealed trait FAILED extends DH_STATES
-    /* "FAILED" */ val FAILED: typings.nodeDownloaderHelper.mod.DH_STATES.FAILED with String = js.native
+    sealed trait FAILED
+      extends StObject
+         with DH_STATES
+    /* "FAILED" */ val FAILED: typings.nodeDownloaderHelper.mod.DH_STATES.FAILED & String = js.native
     
     @js.native
-    sealed trait FINISHED extends DH_STATES
-    /* "FINISHED" */ val FINISHED: typings.nodeDownloaderHelper.mod.DH_STATES.FINISHED with String = js.native
+    sealed trait FINISHED
+      extends StObject
+         with DH_STATES
+    /* "FINISHED" */ val FINISHED: typings.nodeDownloaderHelper.mod.DH_STATES.FINISHED & String = js.native
     
     @js.native
-    sealed trait IDLE extends DH_STATES
-    /* "IDLE" */ val IDLE: typings.nodeDownloaderHelper.mod.DH_STATES.IDLE with String = js.native
+    sealed trait IDLE
+      extends StObject
+         with DH_STATES
+    /* "IDLE" */ val IDLE: typings.nodeDownloaderHelper.mod.DH_STATES.IDLE & String = js.native
     
     @js.native
-    sealed trait PAUSED extends DH_STATES
-    /* "PAUSED" */ val PAUSED: typings.nodeDownloaderHelper.mod.DH_STATES.PAUSED with String = js.native
+    sealed trait PAUSED
+      extends StObject
+         with DH_STATES
+    /* "PAUSED" */ val PAUSED: typings.nodeDownloaderHelper.mod.DH_STATES.PAUSED & String = js.native
     
     @js.native
-    sealed trait RESUMED extends DH_STATES
-    /* "RESUMED" */ val RESUMED: typings.nodeDownloaderHelper.mod.DH_STATES.RESUMED with String = js.native
+    sealed trait RESUMED
+      extends StObject
+         with DH_STATES
+    /* "RESUMED" */ val RESUMED: typings.nodeDownloaderHelper.mod.DH_STATES.RESUMED & String = js.native
     
     @js.native
-    sealed trait STARTED extends DH_STATES
-    /* "STARTED" */ val STARTED: typings.nodeDownloaderHelper.mod.DH_STATES.STARTED with String = js.native
+    sealed trait STARTED
+      extends StObject
+         with DH_STATES
+    /* "STARTED" */ val STARTED: typings.nodeDownloaderHelper.mod.DH_STATES.STARTED & String = js.native
     
     @js.native
-    sealed trait STOPPED extends DH_STATES
-    /* "STOPPED" */ val STOPPED: typings.nodeDownloaderHelper.mod.DH_STATES.STOPPED with String = js.native
+    sealed trait STOPPED
+      extends StObject
+         with DH_STATES
+    /* "STOPPED" */ val STOPPED: typings.nodeDownloaderHelper.mod.DH_STATES.STOPPED & String = js.native
   }
   
   @JSImport("node-downloader-helper", "DownloaderHelper")
@@ -126,22 +141,21 @@ object mod {
     def updateOptions(options: Options): Unit = js.native
   }
   
-  @js.native
   trait DownloadInfo extends StObject {
     
     // if the download is a resume,
-    var downloadedSize: Double = js.native
+    var downloadedSize: Double
     
     // total file size got from the server
-    var fileName: String = js.native
+    var fileName: String
     
     // assigned name
-    var filePath: String = js.native
+    var filePath: String
     
     // download path
-    var isResumed: Boolean = js.native
+    var isResumed: Boolean
     
-    var totalSize: Double = js.native
+    var totalSize: Double
   }
   object DownloadInfo {
     
@@ -171,16 +185,15 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloaderError extends StObject {
     
     // Http status response if available
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
     // Error message
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object DownloaderError {
     
@@ -210,19 +223,18 @@ object mod {
     }
   }
   
-  @js.native
   trait FilePaths extends StObject {
     
     // modified path name
-    var fileName: String = js.native
+    var fileName: String
     
-    var path: String = js.native
+    var path: String
     
     // original path name
-    var prevFileName: String = js.native
+    var prevFileName: String
     
     // modified file name
-    var prevPath: String = js.native
+    var prevPath: String
   }
   object FilePaths {
     
@@ -249,22 +261,21 @@ object mod {
     }
   }
   
-  @js.native
   trait FinalDownloadInfo extends StObject {
     
     // total size of file on the disk
-    var downloadedSize: Double = js.native
+    var downloadedSize: Double
     
-    var fileName: String = js.native
+    var fileName: String
     
     // assigned name
-    var filePath: String = js.native
+    var filePath: String
     
     // total file size got from the server
-    var onDiskSize: Double = js.native
+    var onDiskSize: Double
     
     // download path
-    var totalSize: Double = js.native
+    var totalSize: Double
   }
   object FinalDownloadInfo {
     
@@ -294,37 +305,36 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     // Custom HTTP Header ex: Authorization, User-Agent
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     // Custom filename when saved
-    var forceResume: js.UndefOr[Boolean] = js.native
+    var forceResume: js.UndefOr[Boolean] = js.undefined
     
     // Request Method Verb
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
     // if true it will override the file, otherwise will append '(number)' to the end of file
-    var httpRequestOptions: js.UndefOr[RequestOptions] = js.native
+    var httpRequestOptions: js.UndefOr[RequestOptions] = js.undefined
     
     // Override the http request options
-    var httpsRequestOptions: js.UndefOr[typings.node.httpsMod.RequestOptions] = js.native
+    var httpsRequestOptions: js.UndefOr[typings.node.httpsMod.RequestOptions] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     // If the server does not return the "accept-ranges" header, can be force if it does support it
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
     // remove the file when is stopped (default:true)
-    var removeOnFail: js.UndefOr[Boolean] = js.native
+    var removeOnFail: js.UndefOr[Boolean] = js.undefined
     
     // { maxRetries: number, delay: number in ms } or false to disable (default)
-    var removeOnStop: js.UndefOr[Boolean] = js.native
+    var removeOnStop: js.UndefOr[Boolean] = js.undefined
     
     // Override the https request options, ex: to add SSL Certs
-    var retry: js.UndefOr[Delay] = js.native
+    var retry: js.UndefOr[Delay] = js.undefined
   }
   object Options {
     
@@ -399,22 +409,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
     // name of file
-    var downloaded: Double = js.native
+    var downloaded: Double
     
     // total size that needs to be downloaded in bytes
-    var name: String = js.native
+    var name: String
     
     // downloaded size in bytes
-    var progress: Double = js.native
+    var progress: Double
     
     // progress porcentage 0-100%
-    var speed: Double = js.native
+    var speed: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Stats {
     

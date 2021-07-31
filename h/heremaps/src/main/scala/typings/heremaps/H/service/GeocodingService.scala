@@ -3,14 +3,15 @@ package typings.heremaps.H.service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class encapsulates the Geocoding REST API in a service stub with calls to its various resources implemented.
   */
 @js.native
-trait GeocodingService extends AbstractRestService {
+trait GeocodingService
+  extends StObject
+     with AbstractRestService {
   
   /**
     * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
@@ -60,12 +61,11 @@ object GeocodingService {
     * @property subDomain {string=} - the sub-domain of the geo-coding service relative to the platform's base URL, default is 'geocoder'
     * @property path {string=} - the path of the Geocoding service, default is '6.2'
     */
-  @js.native
   trait Options extends StObject {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var subDomain: js.UndefOr[String] = js.native
+    var subDomain: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -7,7 +7,6 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.DeclareModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

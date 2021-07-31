@@ -11,7 +11,6 @@ import typings.reactMdUtils.typesTypesMod.ClassNameCloneableChild
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textContainerMod {
@@ -19,13 +18,14 @@ object textContainerMod {
   @JSImport("@react-md/typography/types/TextContainer", "TextContainer")
   @js.native
   val TextContainer: ForwardRefExoticComponent[
-    TextContainerProps with (RefAttributes[
+    TextContainerProps & (RefAttributes[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
     ])
   ] = js.native
   
-  @js.native
-  trait TextContainerProps extends HTMLAttributes[HTMLDivElement] {
+  trait TextContainerProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Either a child render function or a react node. If this is not the child
@@ -33,7 +33,7 @@ object textContainerMod {
       * `component` prop.
       */
     @JSName("children")
-    var children_TextContainerProps: js.UndefOr[ReactNode | ClassNameCloneableChild[js.Object] | TextContainerRenderFunction] = js.native
+    var children_TextContainerProps: js.UndefOr[ReactNode | ClassNameCloneableChild[js.Object] | TextContainerRenderFunction] = js.undefined
     
     /**
       * Boolean if the `className` should be cloned into the `children` for this
@@ -43,13 +43,13 @@ object textContainerMod {
       * down to to the DOM element.
       */
     @JSName("clone")
-    var clone_FTextContainerProps: js.UndefOr[Boolean] = js.native
+    var clone_FTextContainerProps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The component to render as. By default this will just be a div, but
       * anything can be provided.
       */
-    var component: js.UndefOr[ElementType[_]] = js.native
+    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     /**
       * The size for the text container. This can usually just be left at the
@@ -57,7 +57,7 @@ object textContainerMod {
       * `"mobile"` and `"desktop"` based on media queries.  However, you can also
       * manually specify `"mobile"` or `"desktop"` if needed.
       */
-    var size: js.UndefOr[TextContainerSize] = js.native
+    var size: js.UndefOr[TextContainerSize] = js.undefined
   }
   object TextContainerProps {
     
@@ -86,7 +86,7 @@ object textContainerMod {
       def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
       @scala.inline
-      def setComponent(value: ElementType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

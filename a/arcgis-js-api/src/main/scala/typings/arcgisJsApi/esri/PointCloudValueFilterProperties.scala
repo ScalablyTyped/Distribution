@@ -4,25 +4,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.exclude
 import typings.arcgisJsApi.arcgisJsApiStrings.include
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudValueFilterProperties extends PointCloudFilterProperties {
+trait PointCloudValueFilterProperties
+  extends StObject
+     with PointCloudFilterProperties {
   
   /**
     * Whether points should be included or excluded from the filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
     */
-  var mode: js.UndefOr[include | exclude] = js.native
+  var mode: js.UndefOr[include | exclude] = js.undefined
   
   /**
     * An array of numeric values representing the classification codes that the filter should apply.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#values)
     */
-  var values: js.UndefOr[js.Array[Double]] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object PointCloudValueFilterProperties {
   

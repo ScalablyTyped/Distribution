@@ -3,17 +3,17 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.TextSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSnapshot extends ITextSnapshot {
+trait TextSnapshot
+  extends StObject
+     with ITextSnapshot {
   
-  /* private */ def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any = js.native
+  /* private */ def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any
   
-  var lines: js.Any = js.native
+  var lines: js.Any
   
-  var snapshot: js.Any = js.native
+  var snapshot: js.Any
 }
 object TextSnapshot {
   

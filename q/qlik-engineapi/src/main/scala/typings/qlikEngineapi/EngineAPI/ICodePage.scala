@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CodePage...
   */
-@js.native
 trait ICodePage extends StObject {
   
   /**
     * Description of the code page
     */
-  var qDescription: String = js.native
+  var qDescription: String
   
   /**
     * Name of the code page
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Number of the code page
     */
-  var qNumber: Double = js.native
+  var qNumber: Double
 }
 object ICodePage {
   

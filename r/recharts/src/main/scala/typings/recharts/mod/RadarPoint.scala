@@ -2,27 +2,25 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadarPoint extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var cx: Double = js.native
+  var cx: Double
   
-  var cy: Double = js.native
+  var cy: Double
   
-  var payload: js.Object = js.native
+  var payload: js.Object
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var value: Double = js.native
+  var value: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object RadarPoint {
   

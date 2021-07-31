@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVaultAccessPolicyOutput extends StObject {
   
   /**
     * Contains the returned vault access policy as a JSON string.
     */
-  var policy: js.UndefOr[VaultAccessPolicy] = js.native
+  var policy: js.UndefOr[VaultAccessPolicy] = js.undefined
 }
 object GetVaultAccessPolicyOutput {
   

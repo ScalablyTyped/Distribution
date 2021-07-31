@@ -3,22 +3,22 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.wechatMiniprogramStrings.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoJSONPolygon extends IGeoJSONObject {
+trait IGeoJSONPolygon
+  extends StObject
+     with IGeoJSONObject {
   
-  var coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]] = js.native
+  var coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]]
   
-  var `type`: Polygon = js.native
+  var `type`: Polygon
 }
 object IGeoJSONPolygon {
   
   @scala.inline
-  def apply(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]], `type`: Polygon): IGeoJSONPolygon = {
+  def apply(coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]]): IGeoJSONPolygon = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Polygon")
     __obj.asInstanceOf[IGeoJSONPolygon]
   }
   

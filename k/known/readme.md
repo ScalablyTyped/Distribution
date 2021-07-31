@@ -12,7 +12,7 @@ Allow only access to known object properties using ES2015 Proxy
 | Keywords           | object, property, properties, prop, get, getter, access, proxy, proxies, es2015 |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 692 |
+| # downloads        | 900 |
 | # stars            | 0 |
 
 ## Links

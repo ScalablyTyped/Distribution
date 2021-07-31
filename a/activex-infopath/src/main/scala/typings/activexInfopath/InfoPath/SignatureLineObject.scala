@@ -2,33 +2,31 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureLineObject extends StObject {
   
-  val Id: String = js.native
+  val Id: String
   
   @JSName("InfoPath.SignatureLineObject_typekey")
-  var InfoPathDotSignatureLineObject_typekey: SignatureLineObject = js.native
+  var InfoPathDotSignatureLineObject_typekey: SignatureLineObject
   
   def Sign(
     bstrImageURL: String,
     bstrSuggestedSigner: String,
     bstrSuggestedSignerTitle: String,
     bstrSuggestedSignerEmailAddress: String
-  ): Boolean = js.native
+  ): Boolean
   
-  val Signature: SignatureObject = js.native
+  val Signature: SignatureObject
   
-  val SignatureAppearanceType: XdSignatureAppearanceType = js.native
+  val SignatureAppearanceType: XdSignatureAppearanceType
   
-  var SuggestedSigner: String = js.native
+  var SuggestedSigner: String
   
-  var SuggestedSignerEmailAddress: String = js.native
+  var SuggestedSignerEmailAddress: String
   
-  var SuggestedSignerTitle: String = js.native
+  var SuggestedSignerTitle: String
 }
 object SignatureLineObject {
   

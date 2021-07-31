@@ -12,24 +12,24 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a place holder text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait JumpEdit extends TextField_ {
+trait JumpEdit
+  extends StObject
+     with TextField_ {
   
   /** determines a hint that is displayed at the user interface as tip. */
-  var Hint: String = js.native
+  var Hint: String
   
   /** determines the text of the place holder. */
-  var PlaceHolder: String = js.native
+  var PlaceHolder: String
   
   /** determines the type of the place holder as described in {@link com.sun.star.text.PlaceholderType} . */
-  var PlaceHolderType: Double = js.native
+  var PlaceHolderType: Double
 }
 object JumpEdit {
   

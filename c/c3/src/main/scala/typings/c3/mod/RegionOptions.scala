@@ -4,64 +4,62 @@ import typings.c3.c3Strings.dashed
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionOptions extends StObject {
   
   /**
     * The axis on which `start` and `end` values lie.
     */
-  var axis: js.UndefOr[AxisName] = js.native
+  var axis: js.UndefOr[AxisName] = js.undefined
   
   /**
     * An optional class to apply to the region, which can be used for styling
     * or targeting.
     */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
   /**
     * The point on the axis at which to end the region. If not provided, will
     * use the end edge of the axis.
     */
-  var end: js.UndefOr[String | Double | Date] = js.native
+  var end: js.UndefOr[String | Double | Date] = js.undefined
   
   /**
     * An optional label property can be provided to display a label for the region.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Control the opacity of the region area.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Control the position of the label horizontally.
     */
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
   /**
     * Control the position of the label vertically.
     */
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
   /**
     * The point on the axis at which to start the region. If not provided, will
     * use the start edge of the axis.
     */
-  var start: js.UndefOr[String | Double | Date] = js.native
+  var start: js.UndefOr[String | Double | Date] = js.undefined
   
   /**
     * If `'dashed'`, renders the line as dashed in this range instead of showing a region block.
     */
-  var style: js.UndefOr[dashed] = js.native
+  var style: js.UndefOr[dashed] = js.undefined
   
   /**
     * Used to identify whether or not the label text should be rotated 90 degrees
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object RegionOptions {
   

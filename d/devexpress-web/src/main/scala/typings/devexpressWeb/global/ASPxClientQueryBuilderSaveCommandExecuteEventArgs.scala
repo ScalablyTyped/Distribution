@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,4 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes a new instance of the ASPxClientQueryBuilderSaveCommandExecuteEventArgs class with the default settings.
   */
 class ASPxClientQueryBuilderSaveCommandExecuteEventArgs ()
-  extends typings.devexpressWeb.ASPxClientQueryBuilderSaveCommandExecuteEventArgs
+  extends StObject
+     with typings.devexpressWeb.ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
+  
+  /**
+    * Specifies whether or not the event was handled.
+    */
+  /* CompleteClass */
+  var handled: Boolean = js.native
+}

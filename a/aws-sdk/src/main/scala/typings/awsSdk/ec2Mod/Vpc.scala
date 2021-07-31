@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vpc extends StObject {
   
   /**
     * The primary IPv4 CIDR block for the VPC.
     */
-  var CidrBlock: js.UndefOr[String] = js.native
+  var CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the IPv4 CIDR blocks associated with the VPC.
     */
-  var CidrBlockAssociationSet: js.UndefOr[VpcCidrBlockAssociationSet] = js.native
+  var CidrBlockAssociationSet: js.UndefOr[VpcCidrBlockAssociationSet] = js.undefined
   
   /**
     * The ID of the set of DHCP options you've associated with the VPC.
     */
-  var DhcpOptionsId: js.UndefOr[String] = js.native
+  var DhcpOptionsId: js.UndefOr[String] = js.undefined
   
   /**
     * The allowed tenancy of instances launched into the VPC.
     */
-  var InstanceTenancy: js.UndefOr[Tenancy] = js.native
+  var InstanceTenancy: js.UndefOr[Tenancy] = js.undefined
   
   /**
     * Information about the IPv6 CIDR blocks associated with the VPC.
     */
-  var Ipv6CidrBlockAssociationSet: js.UndefOr[VpcIpv6CidrBlockAssociationSet] = js.native
+  var Ipv6CidrBlockAssociationSet: js.UndefOr[VpcIpv6CidrBlockAssociationSet] = js.undefined
   
   /**
     * Indicates whether the VPC is the default VPC.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.native
+  var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AWS account that owns the VPC.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the VPC.
     */
-  var State: js.UndefOr[VpcState] = js.native
+  var State: js.UndefOr[VpcState] = js.undefined
   
   /**
     * Any tags assigned to the VPC.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object Vpc {
   

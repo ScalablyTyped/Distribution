@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningInformation extends StObject {
   
-  var defaultConnectionId: js.UndefOr[String] = js.native
+  var defaultConnectionId: js.UndefOr[String] = js.undefined
   
-  var defaultPlanId: js.UndefOr[String] = js.native
+  var defaultPlanId: js.UndefOr[String] = js.undefined
   
   /**
     * The code that identifies the billing plan groups and plans for the new account.
     */
-  var distributorCode: js.UndefOr[String] = js.native
+  var distributorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The password for the `distributorCode`.
     */
-  var distributorPassword: js.UndefOr[String] = js.native
+  var distributorPassword: js.UndefOr[String] = js.undefined
   
-  var passwordRuleText: js.UndefOr[String] = js.native
+  var passwordRuleText: js.UndefOr[String] = js.undefined
   
-  var planPromotionText: js.UndefOr[String] = js.native
+  var planPromotionText: js.UndefOr[String] = js.undefined
   
-  var purchaseOrderOrPromAllowed: js.UndefOr[String] = js.native
+  var purchaseOrderOrPromAllowed: js.UndefOr[String] = js.undefined
 }
 object ProvisioningInformation {
   

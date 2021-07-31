@@ -2,21 +2,19 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A11yRemovalMessage[Item] extends StObject {
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var activeSelectedItem: Item = js.native
+  var activeSelectedItem: Item
   
-  def itemToString(item: Item): String = js.native
+  def itemToString(item: Item): String
   
-  var removedSelectedItem: Item = js.native
+  var removedSelectedItem: Item
   
-  var resultCount: Double = js.native
+  var resultCount: Double
 }
 object A11yRemovalMessage {
   
@@ -33,7 +31,7 @@ object A11yRemovalMessage {
   }
   
   @scala.inline
-  implicit class A11yRemovalMessageMutableBuilder[Self <: A11yRemovalMessage[_], Item] (val x: Self with A11yRemovalMessage[Item]) extends AnyVal {
+  implicit class A11yRemovalMessageMutableBuilder[Self <: A11yRemovalMessage[?], Item] (val x: Self & A11yRemovalMessage[Item]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

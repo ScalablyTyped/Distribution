@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
   /** [Output Only] The array of errors encountered while processing this operation. */
-  var errors: js.UndefOr[js.Array[Location]] = js.native
+  var errors: js.UndefOr[js.Array[Location]] = js.undefined
 }
 object Errors {
   

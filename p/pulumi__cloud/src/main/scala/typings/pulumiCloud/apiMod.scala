@@ -7,7 +7,6 @@ import typings.pulumiCloud.serviceMod.Endpoint
 import typings.pulumiPulumi.outputMod.Output_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
@@ -122,7 +121,9 @@ object apiMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud/api", "API")
   @js.native
-  class APICls protected () extends API {
+  class APICls protected ()
+    extends StObject
+       with API {
     def this(apiName: String) = this()
   }
   
@@ -137,7 +138,9 @@ object apiMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud/api", "HttpEndpoint")
   @js.native
-  class HttpEndpointCls protected () extends API {
+  class HttpEndpointCls protected ()
+    extends StObject
+       with API {
     def this(apiName: String) = this()
   }
   
@@ -145,31 +148,32 @@ object apiMod {
   def HttpEndpoint_=(x: APIConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpEndpoint")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait APIConstructor extends Instantiable1[/* apiName */ String, API]
+  trait APIConstructor
+    extends StObject
+       with Instantiable1[/* apiName */ String, API]
   
-  @js.native
   trait Domain extends StObject {
     
     /**
       * An SSL/TLS certficicate issued for this domain (`cert.pem`).
       */
-    var certificateBody: String = js.native
+    var certificateBody: String
     
     /**
       * The certificate chain for the SSL/TLS certificate provided for this
       * domain (`chain.pem`).
       */
-    var certificateChain: String = js.native
+    var certificateChain: String
     
     /**
       * An SSL/TLS private key issued for thie domain (`privkey.pem`).
       */
-    var certificatePrivateKey: String = js.native
+    var certificatePrivateKey: String
     
     /**
       * The domain name to associate with the API.
       */
-    var domainName: String = js.native
+    var domainName: String
   }
   object Domain {
     
@@ -201,7 +205,6 @@ object apiMod {
     }
   }
   
-  @js.native
   trait HttpDeployment extends StObject {
     
     /**
@@ -209,12 +212,12 @@ object apiMod {
       * previous call to attachCustomDomain on the API.  Each name
       * should be mapped using a DNS A record.
       */
-    var customDomainNames: js.Array[Output_[String]] = js.native
+    var customDomainNames: js.Array[Output_[String]]
     
     /**
       * The URL at which the HttpDeployment is available to the Internet.
       */
-    var url: Output_[String] = js.native
+    var url: Output_[String]
   }
   object HttpDeployment {
     
@@ -238,59 +241,58 @@ object apiMod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
     /**
       * The base url on which this http request was served.
       */
-    var baseUrl: String = js.native
+    var baseUrl: String
     
     /**
       * The body of the HTTP request.
       */
-    var body: Buffer = js.native
+    var body: Buffer
     
     /**
       * The headers of the HTTP request.
       */
-    var headers: StringDictionary[String | js.Array[String]] = js.native
+    var headers: StringDictionary[String | js.Array[String]]
     
     /**
       * The hostname of the request.
       */
-    var hostname: String = js.native
+    var hostname: String
     
     /**
       * The method of the HTTP request.
       */
-    var method: String = js.native
+    var method: String
     
     /**
       * The path parameters of the HTTP request. Each `{param}` in the matched
       * route is available as a property of this oject.
       */
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
     
     /**
       * The raw path from the HTTP request.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The protocol of the request (e.g. HTTP/HTTPS).
       */
-    var protocol: String = js.native
+    var protocol: String
     
     /**
       * The query parameters parsed from the query string of the request URL.
       */
-    var query: StringDictionary[String | js.Array[String]] = js.native
+    var query: StringDictionary[String | js.Array[String]]
     
     /**
       * The headers of the HTTP request.
       */
-    var rawHeaders: js.Array[String] = js.native
+    var rawHeaders: js.Array[String]
   }
   object Request {
     
@@ -357,9 +359,9 @@ object apiMod {
       * response body.
       */
     def end(): Unit = js.native
-    def end(data: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
     def end(data: String): Unit = js.native
     def end(data: String, encoding: String): Unit = js.native
+    def end(data: Unit, encoding: String): Unit = js.native
     def end(data: Buffer): Unit = js.native
     def end(data: Buffer, encoding: String): Unit = js.native
     
@@ -411,20 +413,19 @@ object apiMod {
   
   type RouteHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ js.Function0[Unit], Unit]
   
-  @js.native
   trait ServeStaticOptions extends StObject {
     
     /**
       * The `content-type` to serve the file as.  Only valid when localPath points to a file.  If
       * localPath points to a directory, the content types for all files will be inferred.
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * By default API.static will also serve 'index.html' in response to a request on a
       * directory. To disable this set false or to supply a new index pass a string.
       */
-    var index: js.UndefOr[Boolean | String] = js.native
+    var index: js.UndefOr[Boolean | String] = js.undefined
   }
   object ServeStaticOptions {
     

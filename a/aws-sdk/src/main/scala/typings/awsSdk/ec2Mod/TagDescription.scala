@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagDescription extends StObject {
   
   /**
     * The tag key.
     */
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The resource type.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.ec2Mod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.ec2Mod.ResourceType] = js.undefined
   
   /**
     * The tag value.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object TagDescription {
   

@@ -3,19 +3,20 @@ package typings.appBuilderLib
 import typings.appBuilderLib.packagerApiMod.PackagerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forgeMakerMod {
   
-  @JSImport("app-builder-lib/out/forge-maker", "buildForge")
+  @JSImport("app-builder-lib/out/forge-maker", JSImport.Namespace)
   @js.native
-  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
   trait ForgeOptions extends StObject {
     
-    val dir: String = js.native
+    val dir: String
   }
   object ForgeOptions {
     

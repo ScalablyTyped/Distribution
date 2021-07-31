@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,7 @@ trait CustomXmlPrefixMappings extends StObject {
   def addNamespaceAsync(
     prefix: String,
     ns: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addNamespaceAsync(prefix: String, ns: String, options: AsyncContextOptions): Unit = js.native
@@ -62,11 +61,7 @@ trait CustomXmlPrefixMappings extends StObject {
     */
   def getNamespaceAsync(prefix: String): Unit = js.native
   def getNamespaceAsync(prefix: String, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getNamespaceAsync(
-    prefix: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[String], Unit]
-  ): Unit = js.native
+  def getNamespaceAsync(prefix: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getNamespaceAsync(prefix: String, options: AsyncContextOptions): Unit = js.native
   def getNamespaceAsync(
     prefix: String,
@@ -91,11 +86,7 @@ trait CustomXmlPrefixMappings extends StObject {
     */
   def getPrefixAsync(ns: String): Unit = js.native
   def getPrefixAsync(ns: String, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getPrefixAsync(
-    ns: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[String], Unit]
-  ): Unit = js.native
+  def getPrefixAsync(ns: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getPrefixAsync(ns: String, options: AsyncContextOptions): Unit = js.native
   def getPrefixAsync(
     ns: String,

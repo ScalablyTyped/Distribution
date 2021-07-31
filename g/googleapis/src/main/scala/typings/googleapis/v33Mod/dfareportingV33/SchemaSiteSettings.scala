@@ -2,19 +2,17 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Site Settings
   */
-@js.native
 trait SchemaSiteSettings extends StObject {
   
   /**
     * Whether active view creatives are disabled for this site.
     */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this site opts out of ad blocking. When true, ad blocking is
@@ -22,17 +20,17 @@ trait SchemaSiteSettings extends StObject {
     * placement settings. When false, the campaign and placement settings take
     * effect.
     */
-  var adBlockingOptOut: js.UndefOr[Boolean] = js.native
+  var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether new cookies are disabled for this site.
     */
-  var disableNewCookie: js.UndefOr[Boolean] = js.native
+  var disableNewCookie: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configuration settings for dynamic and image floodlight tags.
     */
-  var tagSetting: js.UndefOr[SchemaTagSetting] = js.native
+  var tagSetting: js.UndefOr[SchemaTagSetting] = js.undefined
   
   /**
     * Whether Verification and ActiveView for in-stream video creatives are
@@ -40,7 +38,7 @@ trait SchemaSiteSettings extends StObject {
     * value will be used to populate the placement.videoActiveViewOptOut field,
     * when no value is specified for the new placement.
     */
-  var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.native
+  var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default VPAID adapter setting for new placements created under this site.
@@ -53,7 +51,7 @@ trait SchemaSiteSettings extends StObject {
     * adapter).  Note: Flash is no longer supported. This field now defaults to
     * HTML5 when the following values are provided: FLASH, BOTH.
     */
-  var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.native
+  var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteSettings {
   

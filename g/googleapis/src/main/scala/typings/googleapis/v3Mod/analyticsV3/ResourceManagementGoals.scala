@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Goals")
@@ -33,7 +32,7 @@ class ResourceManagementGoals protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoal] = js.native
   def get(callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
   def get(params: ParamsResourceManagementGoalsGet): GaxiosPromise[SchemaGoal] = js.native
   def get(params: ParamsResourceManagementGoalsGet, callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceManagementGoals protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaGoal] = js.native
   def insert(callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
   def insert(params: ParamsResourceManagementGoalsInsert): GaxiosPromise[SchemaGoal] = js.native
   def insert(params: ParamsResourceManagementGoalsInsert, callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
   def insert(
@@ -98,7 +97,7 @@ class ResourceManagementGoals protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoals] = js.native
   def list(callback: BodyResponseCallback[SchemaGoals]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoals] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoals] = js.native
   def list(params: ParamsResourceManagementGoalsList): GaxiosPromise[SchemaGoals] = js.native
   def list(params: ParamsResourceManagementGoalsList, callback: BodyResponseCallback[SchemaGoals]): Unit = js.native
   def list(
@@ -131,7 +130,7 @@ class ResourceManagementGoals protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoal] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
   def patch(params: ParamsResourceManagementGoalsPatch): GaxiosPromise[SchemaGoal] = js.native
   def patch(params: ParamsResourceManagementGoalsPatch, callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
   def patch(
@@ -164,7 +163,7 @@ class ResourceManagementGoals protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaGoal] = js.native
   def update(callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoal] = js.native
   def update(params: ParamsResourceManagementGoalsUpdate): GaxiosPromise[SchemaGoal] = js.native
   def update(params: ParamsResourceManagementGoalsUpdate, callback: BodyResponseCallback[SchemaGoal]): Unit = js.native
   def update(

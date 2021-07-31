@@ -12,33 +12,29 @@ import typings.std.RequestInit
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-fetch", "blob")
+  @JSImport("d3-fetch", JSImport.Namespace)
   @js.native
-  def blob(url: String): js.Promise[Blob] = js.native
-  @JSImport("d3-fetch", "blob")
-  @js.native
-  def blob(url: String, init: RequestInit): js.Promise[Blob] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-fetch", "buffer")
-  @js.native
-  def buffer(url: String): js.Promise[ArrayBuffer] = js.native
-  @JSImport("d3-fetch", "buffer")
-  @js.native
-  def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = js.native
+  @scala.inline
+  def blob(url: String): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  @scala.inline
+  def blob(url: String, init: RequestInit): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   
-  @JSImport("d3-fetch", "csv")
-  @js.native
-  def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "csv")
-  @js.native
-  def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "csv")
-  @js.native
+  @scala.inline
+  def buffer(url: String): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  @scala.inline
+  def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  
+  @scala.inline
+  def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def csv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     init: RequestInit,
@@ -48,9 +44,8 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("d3-fetch", "csv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def csv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     row: js.Function3[
@@ -59,16 +54,13 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("d3-fetch", "dsv")
-  @js.native
-  def dsv[Columns /* <: String */](delimiter: String, url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "dsv")
-  @js.native
-  def dsv[Columns /* <: String */](delimiter: String, url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "dsv")
-  @js.native
+  @scala.inline
+  def dsv[Columns /* <: String */](delimiter: String, url: String): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def dsv[Columns /* <: String */](delimiter: String, url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def dsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     delimiter: String,
     url: String,
@@ -79,9 +71,8 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("d3-fetch", "dsv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def dsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     delimiter: String,
     url: String,
@@ -91,51 +82,38 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("d3-fetch", "html")
-  @js.native
-  def html(url: String): js.Promise[Document] = js.native
-  @JSImport("d3-fetch", "html")
-  @js.native
-  def html(url: String, init: RequestInit): js.Promise[Document] = js.native
+  @scala.inline
+  def html(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def html(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   
-  @JSImport("d3-fetch", "image")
-  @js.native
-  def image(url: String): js.Promise[HTMLImageElement] = js.native
-  @JSImport("d3-fetch", "image")
-  @js.native
-  def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = js.native
+  @scala.inline
+  def image(url: String): js.Promise[HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLImageElement]]
+  @scala.inline
+  def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLImageElement]]
   
-  @JSImport("d3-fetch", "json")
-  @js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
-  @JSImport("d3-fetch", "json")
-  @js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
+  @scala.inline
+  def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+  @scala.inline
+  def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
   
-  @JSImport("d3-fetch", "svg")
-  @js.native
-  def svg(url: String): js.Promise[Document] = js.native
-  @JSImport("d3-fetch", "svg")
-  @js.native
-  def svg(url: String, init: RequestInit): js.Promise[Document] = js.native
+  @scala.inline
+  def svg(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def svg(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   
-  @JSImport("d3-fetch", "text")
-  @js.native
-  def text(url: String): js.Promise[String] = js.native
-  @JSImport("d3-fetch", "text")
-  @js.native
-  def text(url: String, init: RequestInit): js.Promise[String] = js.native
+  @scala.inline
+  def text(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def text(url: String, init: RequestInit): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("d3-fetch", "tsv")
-  @js.native
-  def tsv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "tsv")
-  @js.native
-  def tsv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("d3-fetch", "tsv")
-  @js.native
+  @scala.inline
+  def tsv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def tsv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def tsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     init: RequestInit,
@@ -145,9 +123,8 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("d3-fetch", "tsv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def tsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     row: js.Function3[
@@ -156,12 +133,10 @@ object mod {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("d3-fetch", "xml")
-  @js.native
-  def xml(url: String): js.Promise[XMLDocument] = js.native
-  @JSImport("d3-fetch", "xml")
-  @js.native
-  def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = js.native
+  @scala.inline
+  def xml(url: String): js.Promise[XMLDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[XMLDocument]]
+  @scala.inline
+  def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[XMLDocument]]
 }

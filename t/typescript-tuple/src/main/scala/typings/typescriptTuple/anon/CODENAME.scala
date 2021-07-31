@@ -4,21 +4,19 @@ import typings.typescriptTuple.typescriptTupleStrings.InfiniteTuple
 import typings.typescriptTuple.typescriptTupleStrings.`Cannot reverse an infinite tuple`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CODENAME extends StObject {
   
-  var CODENAME: InfiniteTuple = js.native
+  var CODENAME: InfiniteTuple
   
-  var ERROR: `Cannot reverse an infinite tuple` = js.native
+  var ERROR: `Cannot reverse an infinite tuple`
 }
 object CODENAME {
   
   @scala.inline
-  def apply(CODENAME: InfiniteTuple, ERROR: `Cannot reverse an infinite tuple`): CODENAME = {
-    val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
+  def apply(): CODENAME = {
+    val __obj = js.Dynamic.literal(CODENAME = "InfiniteTuple", ERROR = "Cannot reverse an infinite tuple")
     __obj.asInstanceOf[CODENAME]
   }
   

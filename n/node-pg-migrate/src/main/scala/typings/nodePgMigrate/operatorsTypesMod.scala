@@ -1,27 +1,24 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseAddToOperatorFamilyFn
-import typings.nodePgMigrate.anon.ReverseCreateOperatorClassFn
-import typings.nodePgMigrate.anon.ReverseCreateOperatorFamilyFn
-import typings.nodePgMigrate.anon.ReverseCreateOperatorFn
-import typings.nodePgMigrate.anon.ReverseRenameOperatorClassFn
-import typings.nodePgMigrate.anon.ReverseRenameOperatorFamilyFn
 import typings.nodePgMigrate.functionsTypesMod.FunctionParam
-import typings.nodePgMigrate.generalTypesMod.CascadeOption
 import typings.nodePgMigrate.generalTypesMod.DropOptions
-import typings.nodePgMigrate.generalTypesMod.IfExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.generalTypesMod.Type
 import typings.nodePgMigrate.nodePgMigrateStrings.function
 import typings.nodePgMigrate.nodePgMigrateStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsTypesMod {
   
-  type AddToOperatorFamily = AddToOperatorFamilyFn with ReverseAddToOperatorFamilyFn
+  @js.native
+  trait AddToOperatorFamily extends AddToOperatorFamilyFn {
+    
+    def reverse(operatorFamilyName: Name, indexMethod: Name, operatorList: js.Array[OperatorListDefinition]): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: AddToOperatorFamilyFn = js.native
+  }
   
   type AddToOperatorFamilyFn = js.Function3[
     /* operatorFamilyName */ Name, 
@@ -30,25 +27,42 @@ object operatorsTypesMod {
     String | js.Array[String]
   ]
   
-  type CreateOperator = CreateOperatorFn with ReverseCreateOperatorFn
+  @js.native
+  trait CreateOperator extends CreateOperatorFn {
+    
+    def reverse(operatorName: Name, options: CreateOperatorOptions & DropOperatorOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateOperatorFn = js.native
+  }
   
-  type CreateOperatorClass = CreateOperatorClassFn with ReverseCreateOperatorClassFn
+  @js.native
+  trait CreateOperatorClass extends CreateOperatorClassFn {
+    
+    def reverse(
+      operatorClassName: Name,
+      `type`: Type,
+      indexMethod: Name,
+      operatorList: js.Array[OperatorListDefinition],
+      options: CreateOperatorClassOptions & DropOptions
+    ): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateOperatorClassFn = js.native
+  }
   
   type CreateOperatorClassFn = js.Function5[
     /* operatorClassName */ Name, 
     /* type */ Type, 
     /* indexMethod */ Name, 
     /* operatorList */ js.Array[OperatorListDefinition], 
-    /* options */ CreateOperatorClassOptions with DropOptions, 
+    /* options */ CreateOperatorClassOptions & DropOptions, 
     String | js.Array[String]
   ]
   
-  @js.native
   trait CreateOperatorClassOptions extends StObject {
     
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
     
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
   }
   object CreateOperatorClassOptions {
     
@@ -75,7 +89,14 @@ object operatorsTypesMod {
     }
   }
   
-  type CreateOperatorFamily = CreateOperatorFamilyFn with ReverseCreateOperatorFamilyFn
+  @js.native
+  trait CreateOperatorFamily extends CreateOperatorFamilyFn {
+    
+    def reverse(operatorFamilyName: Name, indexMethod: Name): String | js.Array[String] = js.native
+    def reverse(operatorFamilyName: Name, indexMethod: Name, options: DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateOperatorFamilyFn = js.native
+  }
   
   type CreateOperatorFamilyFn = js.Function3[
     /* operatorFamilyName */ Name, 
@@ -86,30 +107,29 @@ object operatorsTypesMod {
   
   type CreateOperatorFn = js.Function2[
     /* operatorName */ Name, 
-    /* options */ CreateOperatorOptions with DropOperatorOptions, 
+    /* options */ CreateOperatorOptions & DropOperatorOptions, 
     String | js.Array[String]
   ]
   
-  @js.native
   trait CreateOperatorOptions extends StObject {
     
-    var commutator: js.UndefOr[Name] = js.native
+    var commutator: js.UndefOr[Name] = js.undefined
     
-    var hashes: js.UndefOr[Boolean] = js.native
+    var hashes: js.UndefOr[Boolean] = js.undefined
     
-    var join: js.UndefOr[Name] = js.native
+    var join: js.UndefOr[Name] = js.undefined
     
-    var left: js.UndefOr[Name] = js.native
+    var left: js.UndefOr[Name] = js.undefined
     
-    var merges: js.UndefOr[Boolean] = js.native
+    var merges: js.UndefOr[Boolean] = js.undefined
     
-    var negator: js.UndefOr[Name] = js.native
+    var negator: js.UndefOr[Name] = js.undefined
     
-    var procedure: Name = js.native
+    var procedure: Name
     
-    var restrict: js.UndefOr[Name] = js.native
+    var restrict: js.UndefOr[Name] = js.undefined
     
-    var right: js.UndefOr[Name] = js.native
+    var right: js.UndefOr[Name] = js.undefined
   }
   object CreateOperatorOptions {
     
@@ -195,14 +215,13 @@ object operatorsTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait DropOperatorOptions
-    extends IfExistsOption
-       with CascadeOption {
+    extends StObject
+       with DropOptions {
     
-    var left: js.UndefOr[Name] = js.native
+    var left: js.UndefOr[Name] = js.undefined
     
-    var right: js.UndefOr[Name] = js.native
+    var right: js.UndefOr[Name] = js.undefined
   }
   object DropOperatorOptions {
     
@@ -229,16 +248,15 @@ object operatorsTypesMod {
     }
   }
   
-  @js.native
   trait OperatorListDefinition extends StObject {
     
-    var name: Name = js.native
+    var name: Name
     
-    var number: Double = js.native
+    var number: Double
     
-    var params: js.UndefOr[js.Array[FunctionParam]] = js.native
+    var params: js.UndefOr[js.Array[FunctionParam]] = js.undefined
     
-    var `type`: function | operator = js.native
+    var `type`: function | operator
   }
   object OperatorListDefinition {
     
@@ -279,7 +297,13 @@ object operatorsTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameOperatorClass = RenameOperatorClassFn with ReverseRenameOperatorClassFn
+  @js.native
+  trait RenameOperatorClass extends RenameOperatorClassFn {
+    
+    def reverse(oldOperatorClassName: Name, indexMethod: Name, newOperatorClassName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameOperatorClassFn = js.native
+  }
   
   type RenameOperatorClassFn = js.Function3[
     /* oldOperatorClassName */ Name, 
@@ -288,7 +312,13 @@ object operatorsTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameOperatorFamily = RenameOperatorFamilyFn with ReverseRenameOperatorFamilyFn
+  @js.native
+  trait RenameOperatorFamily extends RenameOperatorFamilyFn {
+    
+    def reverse(oldOperatorFamilyName: Name, indexMethod: Name, newOperatorFamilyName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameOperatorFamilyFn = js.native
+  }
   
   type RenameOperatorFamilyFn = js.Function3[
     /* oldOperatorFamilyName */ Name, 

@@ -3,25 +3,23 @@ package typings.framebus
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type FramebusOnHandler = js.Function2[/* data */ FramebusSubscriberArg, /* reply */ FramebusReplyHandler, Unit]
   
-  @js.native
   trait FramebusPayload extends StObject {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var event: String = js.native
+    var event: String
     
-    var eventData: js.UndefOr[FramebusSubscriberArg] = js.native
+    var eventData: js.UndefOr[FramebusSubscriberArg] = js.undefined
     
-    var origin: String = js.native
+    var origin: String
     
-    var reply: js.UndefOr[String | ReplyFunction] = js.native
+    var reply: js.UndefOr[String | ReplyFunction] = js.undefined
   }
   object FramebusPayload {
     
@@ -56,9 +54,6 @@ object typesMod {
       def setReply(value: String | ReplyFunction): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReplyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
-      
-      @scala.inline
       def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     }
   }
@@ -81,14 +76,17 @@ object typesMod {
   
   type FramebusSubscription = Record[String, js.Array[FramebusSubscribeHandler]]
   
-  type ReplyFunction = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait ReplyFunction extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      def Window(): typings.framebus.typesMod.global.Window = js.native
+      def Window(): typings.framebus.typesMod.global.Window
     }
     object Window {
       

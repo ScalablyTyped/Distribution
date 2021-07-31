@@ -1,14 +1,12 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-layers"
-version := "2.7.0-be72ba"
-scalaVersion := "2.13.3"
+version := "2.7.0-e2f3ec"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "std" % "4.1-40053c",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "2.7.0-c5e67d")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "std" % "4.1-044efb",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "2.7.0-018315")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

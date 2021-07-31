@@ -3,13 +3,11 @@ package typings.wegameApi.anon
 import typings.wegameApi.KVData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KVDataList extends StObject {
   
-  var KVDataList: js.Array[KVData] = js.native
+  var KVDataList: js.Array[KVData]
 }
 object KVDataList {
   

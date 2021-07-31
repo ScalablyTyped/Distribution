@@ -2,19 +2,17 @@ package typings.awsSdkMiddlewareEc2Copysnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessKeyId extends StObject {
     
-    var accessKeyId: String = js.native
+    var accessKeyId: String
     
-    var secretAccessKey: String = js.native
+    var secretAccessKey: String
     
-    var sessionToken: String = js.native
+    var sessionToken: String
   }
   object AccessKeyId {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var path: String = js.native
+    var path: String
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object Hostname {
     

@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitSvgOptions extends StObject {
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var `stroke-animation`: js.UndefOr[Boolean] = js.native
+  var `stroke-animation`: js.UndefOr[Boolean] = js.undefined
 }
 object UIkitSvgOptions {
   

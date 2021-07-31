@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProposalOutput extends StObject {
   
   /**
     * The unique identifier of the proposal.
     */
-  var ProposalId: js.UndefOr[ResourceIdString] = js.native
+  var ProposalId: js.UndefOr[ResourceIdString] = js.undefined
 }
 object CreateProposalOutput {
   

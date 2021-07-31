@@ -2,15 +2,13 @@ package typings.cassanknex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertableQueryBuilder extends StObject {
   
-  def ifNotExists(): this.type = js.native
+  def ifNotExists(): this.type
   
-  def into(table: String): this.type = js.native
+  def into(table: String): this.type
 }
 object InsertableQueryBuilder {
   

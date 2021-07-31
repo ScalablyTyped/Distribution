@@ -2,21 +2,19 @@ package typings.siesta.Siesta.Test
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWaitForConfig extends StObject {
   
-  var callback: js.Function = js.native
+  var callback: js.Function
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var method: js.Function = js.native
+  var method: js.Function
   
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object IWaitForConfig {
   

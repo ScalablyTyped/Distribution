@@ -2,63 +2,61 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains detailed information about a specific URL submitted as a sitemap.
   */
-@js.native
 trait SchemaWmxSitemap extends StObject {
   
   /**
     * The various content types in the sitemap.
     */
-  var contents: js.UndefOr[js.Array[SchemaWmxSitemapContent]] = js.native
+  var contents: js.UndefOr[js.Array[SchemaWmxSitemapContent]] = js.undefined
   
   /**
     * Number of errors in the sitemap. These are issues with the sitemap itself
     * that need to be fixed before it can be processed correctly.
     */
-  var errors: js.UndefOr[String] = js.native
+  var errors: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the sitemap has not been processed.
     */
-  var isPending: js.UndefOr[Boolean] = js.native
+  var isPending: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the sitemap is a collection of sitemaps.
     */
-  var isSitemapsIndex: js.UndefOr[Boolean] = js.native
+  var isSitemapsIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Date &amp; time in which this sitemap was last downloaded. Date format is
     * in RFC 3339 format (yyyy-mm-dd).
     */
-  var lastDownloaded: js.UndefOr[String] = js.native
+  var lastDownloaded: js.UndefOr[String] = js.undefined
   
   /**
     * Date &amp; time in which this sitemap was submitted. Date format is in
     * RFC 3339 format (yyyy-mm-dd).
     */
-  var lastSubmitted: js.UndefOr[String] = js.native
+  var lastSubmitted: js.UndefOr[String] = js.undefined
   
   /**
     * The url of the sitemap.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the sitemap. For example: rssFeed.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Number of warnings for the sitemap. These are generally non-critical
     * issues with URLs in the sitemaps.
     */
-  var warnings: js.UndefOr[String] = js.native
+  var warnings: js.UndefOr[String] = js.undefined
 }
 object SchemaWmxSitemap {
   

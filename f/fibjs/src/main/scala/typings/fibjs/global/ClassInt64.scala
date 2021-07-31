@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   */
 class ClassInt64 ()
-  extends typings.fibjs.ClassInt64 {
+  extends StObject
+     with typings.fibjs.ClassInt64 {
   /**
     * 
     * @brief Int64 构造函数

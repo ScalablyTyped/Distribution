@@ -2,18 +2,16 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions
-@js.native
 trait PositionOptions extends StObject {
   
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
-  var maximumAge: Double = js.native
+  var maximumAge: Double
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object PositionOptions {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEvent extends StObject {
   
   /**
     * Required. The job name(s) associated with this event. For example, if this is an impression event, this field contains the identifiers of all jobs shown to the job seeker. If this
     * was a view event, this field contains the identifier of the viewed job.
     */
-  var jobs: js.UndefOr[js.Array[String]] = js.native
+  var jobs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The type of the event (see JobEventType). */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object JobEvent {
   

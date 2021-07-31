@@ -4,19 +4,18 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.lodashDecorators.sharedMod.MemoizeMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable[T, U]
-    extends Instantiable1[/* args (repeated) */ js.Any, MemoizeMap[T, U]]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, MemoizeMap[T, U]]
   
-  @js.native
   trait Post extends StObject {
     
-    var post: js.UndefOr[Boolean] = js.native
+    var post: js.UndefOr[Boolean] = js.undefined
   }
   object Post {
     

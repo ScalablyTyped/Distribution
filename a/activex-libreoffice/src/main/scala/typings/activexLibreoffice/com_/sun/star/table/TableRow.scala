@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a special cell range containing all cells of a single specific row in a table or spreadsheet. */
-@js.native
 trait TableRow
-  extends XCellRange
+  extends StObject
+     with XCellRange
      with XPropertySet {
   
   /**
@@ -21,16 +20,16 @@ trait TableRow
     *
     * When hidden, it returns the height which the row would have, if it were visible.
     */
-  var Height: Double = js.native
+  var Height: Double
   
   /** is `TRUE` , if there is a manual vertical page break attached to the row. */
-  var IsStartOfNewPage: Boolean = js.native
+  var IsStartOfNewPage: Boolean
   
   /** is `TRUE` , if the row is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** is `TRUE` , if the row always keeps its optimal height. */
-  var OptimalHeight: Boolean = js.native
+  var OptimalHeight: Boolean
 }
 object TableRow {
   

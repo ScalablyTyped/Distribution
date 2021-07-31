@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource from which to delete tags. Currently, the supported resources are Amazon ECS capacity providers, tasks, services, task definitions, clusters, and container instances.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
   
   /**
     * The keys of the tags to be removed.
     */
-  var tagKeys: TagKeys = js.native
+  var tagKeys: TagKeys
 }
 object UntagResourceRequest {
   

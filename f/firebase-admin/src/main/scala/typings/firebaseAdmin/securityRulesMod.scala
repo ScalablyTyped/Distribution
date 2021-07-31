@@ -4,19 +4,20 @@ import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securityRulesMod {
   
   object securityRules {
     
+    @scala.inline
+    def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
+    @scala.inline
+    def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
+    
     @JSImport("firebase-admin/lib/security-rules", "securityRules")
     @js.native
-    def apply(): SecurityRules = js.native
-    @JSImport("firebase-admin/lib/security-rules", "securityRules")
-    @js.native
-    def apply(app: App): SecurityRules = js.native
+    val ^ : js.Any = js.native
     
     /**
       * A source file containing some Firebase security rules. The content includes raw
@@ -24,12 +25,11 @@ object securityRulesMod {
       * [`securityRules.createRulesFileFromSource()`](securityRules.SecurityRules#createRulesFileFromSource)
       * method to create new instances of this type.
       */
-    @js.native
     trait RulesFile extends StObject {
       
-      val content: String = js.native
+      val content: String
       
-      val name: String = js.native
+      val name: String
     }
     object RulesFile {
       
@@ -53,10 +53,11 @@ object securityRulesMod {
     /**
       * A set of Firebase security rules.
       */
-    @js.native
-    trait Ruleset extends RulesetMetadata {
+    trait Ruleset
+      extends StObject
+         with RulesetMetadata {
       
-      val source: js.Array[RulesFile] = js.native
+      val source: js.Array[RulesFile]
     }
     object Ruleset {
       
@@ -80,20 +81,19 @@ object securityRulesMod {
     /**
       * Required metadata associated with a ruleset.
       */
-    @js.native
     trait RulesetMetadata extends StObject {
       
       /**
         * Creation time of the `Ruleset` as a UTC timestamp string.
         */
-      val createTime: String = js.native
+      val createTime: String
       
       /**
         * Name of the `Ruleset` as a short string. This can be directly passed into APIs
         * like {@link securityRules.SecurityRules.getRuleset `securityRules.getRuleset()`}
         * and {@link securityRules.SecurityRules.deleteRuleset `securityRules.deleteRuleset()`}.
         */
-      val name: String = js.native
+      val name: String
     }
     object RulesetMetadata {
       
@@ -117,18 +117,17 @@ object securityRulesMod {
     /**
       * A page of ruleset metadata.
       */
-    @js.native
     trait RulesetMetadataList extends StObject {
       
       /**
         * The next page token if available. This is needed to retrieve the next batch.
         */
-      val nextPageToken: js.UndefOr[String] = js.native
+      val nextPageToken: js.UndefOr[String] = js.undefined
       
       /**
         * A batch of ruleset metadata.
         */
-      val rulesets: js.Array[RulesetMetadata] = js.native
+      val rulesets: js.Array[RulesetMetadata]
     }
     object RulesetMetadataList {
       
@@ -248,9 +247,9 @@ object securityRulesMod {
         * @return A promise that fulfills with a page of rulesets.
         */
       def listRulesetMetadata(): js.Promise[RulesetMetadataList] = js.native
-      def listRulesetMetadata(pageSize: js.UndefOr[scala.Nothing], nextPageToken: String): js.Promise[RulesetMetadataList] = js.native
       def listRulesetMetadata(pageSize: Double): js.Promise[RulesetMetadataList] = js.native
       def listRulesetMetadata(pageSize: Double, nextPageToken: String): js.Promise[RulesetMetadataList] = js.native
+      def listRulesetMetadata(pageSize: Unit, nextPageToken: String): js.Promise[RulesetMetadataList] = js.native
       
       /**
         * Applies the specified {@link securityRules.Ruleset `Ruleset`} ruleset

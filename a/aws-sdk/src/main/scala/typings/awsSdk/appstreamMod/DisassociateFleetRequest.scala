@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateFleetRequest extends StObject {
   
   /**
     * The name of the fleet.
     */
-  var FleetName: String = js.native
+  var FleetName: String
   
   /**
     * The name of the stack.
     */
-  var StackName: String = js.native
+  var StackName: String
 }
 object DisassociateFleetRequest {
   

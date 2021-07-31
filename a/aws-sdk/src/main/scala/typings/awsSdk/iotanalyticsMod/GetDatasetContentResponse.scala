@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDatasetContentResponse extends StObject {
   
   /**
     * A list of DatasetEntry objects.
     */
-  var entries: js.UndefOr[DatasetEntries] = js.native
+  var entries: js.UndefOr[DatasetEntries] = js.undefined
   
   /**
     * The status of the data set content.
     */
-  var status: js.UndefOr[DatasetContentStatus] = js.native
+  var status: js.UndefOr[DatasetContentStatus] = js.undefined
   
   /**
     * The time when the request was made.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.native
+  var timestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object GetDatasetContentResponse {
   

@@ -2,39 +2,37 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFaceHyphenFallback extends StObject {
   
   var `-moz-font-feature-settings`: js.UndefOr[
     FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var `font-display`: js.UndefOr[FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty]] = js.native
+  var `font-display`: js.UndefOr[FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty]] = js.undefined
   
-  var `font-family`: js.UndefOr[String | js.Array[String]] = js.native
+  var `font-family`: js.UndefOr[String | js.Array[String]] = js.undefined
   
   var `font-feature-settings`: js.UndefOr[
     FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var `font-stretch`: js.UndefOr[FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty]] = js.native
+  var `font-stretch`: js.UndefOr[FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty]] = js.undefined
   
-  var `font-style`: js.UndefOr[FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty]] = js.native
+  var `font-style`: js.UndefOr[FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty]] = js.undefined
   
-  var `font-variant`: js.UndefOr[FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty]] = js.native
+  var `font-variant`: js.UndefOr[FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty]] = js.undefined
   
   var `font-variation-settings`: js.UndefOr[
     FontFaceFontVariationSettingsProperty | js.Array[FontFaceFontVariationSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var `font-weight`: js.UndefOr[FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty]] = js.native
+  var `font-weight`: js.UndefOr[FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty]] = js.undefined
   
-  var src: js.UndefOr[String | js.Array[String]] = js.native
+  var src: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `unicode-range`: js.UndefOr[String | js.Array[String]] = js.native
+  var `unicode-range`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object FontFaceHyphenFallback {
   

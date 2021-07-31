@@ -4,15 +4,13 @@ import typings.vscode.mod.Range
 import typings.vscode.mod.TextDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var document: TextDocument = js.native
+  var document: TextDocument
   
-  var range: Range = js.native
+  var range: Range
 }
 object Document {
   

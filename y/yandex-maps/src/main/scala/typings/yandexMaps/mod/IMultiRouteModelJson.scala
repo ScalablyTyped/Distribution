@@ -2,15 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMultiRouteModelJson extends StObject {
   
-  var params: IMultiRouteParams = js.native
+  var params: IMultiRouteParams
   
-  var referencePoints: js.Array[IMultiRouteReferencePoint] = js.native
+  var referencePoints: js.Array[IMultiRouteReferencePoint]
 }
 object IMultiRouteModelJson {
   

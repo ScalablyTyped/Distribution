@@ -3,38 +3,36 @@ package typings.reactVirtualized.esGridMod
 import typings.reactVirtualized.anon.ContainerSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellSizeAndPositionManager extends StObject {
   
-  def areOffsetsAdjusted(): Boolean = js.native
+  def areOffsetsAdjusted(): Boolean
   
-  def configure(hasCellCountEstimatedCellSize: ConfigureParams): Unit = js.native
+  def configure(hasCellCountEstimatedCellSize: ConfigureParams): Unit
   
-  def getCellCount(): Double = js.native
+  def getCellCount(): Double
   
-  def getEstimatedCellSize(): Double = js.native
+  def getEstimatedCellSize(): Double
   
-  def getLastMeasuredIndex(): Double = js.native
+  def getLastMeasuredIndex(): Double
   
-  def getOffsetAdjustment(hasContainerSizeOffset: ContainerSizeAndOffset): Double = js.native
+  def getOffsetAdjustment(hasContainerSizeOffset: ContainerSizeAndOffset): Double
   
   /**
     * This method returns the size and position for the cell at the specified index.
     * It just-in-time calculates (or used cached values) for cells leading up to the index.
     */
-  def getSizeAndPositionOfCell(index: Double): SizeAndPositionData = js.native
+  def getSizeAndPositionOfCell(index: Double): SizeAndPositionData
   
-  def getSizeAndPositionOfLastMeasuredCell(): SizeAndPositionData = js.native
+  def getSizeAndPositionOfLastMeasuredCell(): SizeAndPositionData
   
   /**
     * Total size of all cells being measured.
     * This value will be completedly estimated initially.
     * As cells as measured the estimate will be updated.
     */
-  def getTotalSize(): Double = js.native
+  def getTotalSize(): Double
   
   /**
     * Determines a new offset that ensures a certain cell is visible, given the current offset.
@@ -47,16 +45,16 @@ trait CellSizeAndPositionManager extends StObject {
     * @param totalSize Total size (width or height) of all cells
     * @return Offset to use to ensure the specified cell is visible
     */
-  def getUpdatedOffsetForIndex(params: ContainerSize): Double = js.native
+  def getUpdatedOffsetForIndex(params: ContainerSize): Double
   
-  def getVisibleCellRange(params: GetVisibleCellRangeParams): VisibleCellRange = js.native
+  def getVisibleCellRange(params: GetVisibleCellRangeParams): VisibleCellRange
   
   /**
     * Clear all cached values for cells after the specified index.
     * This method should be called for any cell that has changed its size.
     * It will not immediately perform any calculations; they'll be performed the next time getSizeAndPositionOfCell() is called.
     */
-  def resetCell(index: Double): Unit = js.native
+  def resetCell(index: Double): Unit
 }
 object CellSizeAndPositionManager {
   

@@ -6,15 +6,14 @@ import typings.blueprintjsCore.numericInputMod.INumericInputState
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "NumericInput")
 @js.native
 class NumericInput protected ()
   extends typings.blueprintjsCore.numericInputMod.NumericInput {
-  def this(props: HTMLInputProps with INumericInputProps) = this()
-  def this(props: HTMLInputProps with INumericInputProps, context: js.Any) = this()
+  def this(props: HTMLInputProps & INumericInputProps) = this()
+  def this(props: HTMLInputProps & INumericInputProps, context: js.Any) = this()
 }
 /* static members */
 object NumericInput {
@@ -59,9 +58,8 @@ object NumericInput {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "NumericInput.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = js.native
+  @scala.inline
+  def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
   
   @JSImport("@blueprintjs/core/lib/esm/components", "NumericInput.getStepMaxPrecision")
   @js.native

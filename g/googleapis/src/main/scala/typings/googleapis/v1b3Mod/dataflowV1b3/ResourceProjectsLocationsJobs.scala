@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Locations$Jobs")
@@ -38,7 +37,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaJob] = js.native
   def create(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceProjectsLocationsJobsCreate): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceProjectsLocationsJobsCreate, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def create(
@@ -77,7 +76,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaJob] = js.native
   def get(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceProjectsLocationsJobsGet): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceProjectsLocationsJobsGet, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def get(
@@ -114,7 +113,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def getMetrics(): GaxiosPromise[SchemaJobMetrics] = js.native
   def getMetrics(callback: BodyResponseCallback[SchemaJobMetrics]): Unit = js.native
-  def getMetrics(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJobMetrics] = js.native
+  def getMetrics(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJobMetrics] = js.native
   def getMetrics(params: ParamsResourceProjectsLocationsJobsGetmetrics): GaxiosPromise[SchemaJobMetrics] = js.native
   def getMetrics(
     params: ParamsResourceProjectsLocationsJobsGetmetrics,
@@ -157,7 +156,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsJobsList): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsJobsList,
@@ -194,7 +193,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def snapshot(): GaxiosPromise[SchemaSnapshot] = js.native
   def snapshot(callback: BodyResponseCallback[SchemaSnapshot]): Unit = js.native
-  def snapshot(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSnapshot] = js.native
+  def snapshot(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSnapshot] = js.native
   def snapshot(params: ParamsResourceProjectsLocationsJobsSnapshot): GaxiosPromise[SchemaSnapshot] = js.native
   def snapshot(
     params: ParamsResourceProjectsLocationsJobsSnapshot,
@@ -234,7 +233,7 @@ class ResourceProjectsLocationsJobs protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaJob] = js.native
   def update(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def update(params: ParamsResourceProjectsLocationsJobsUpdate): GaxiosPromise[SchemaJob] = js.native
   def update(params: ParamsResourceProjectsLocationsJobsUpdate, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def update(

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsLastRouteMessages extends Object {
+trait DirectionsLastRouteMessages
+  extends StObject
+     with Object {
   
   /**
     * A descriptive message of the returned mesage.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Number indicating the message type returned from the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object DirectionsLastRouteMessages {
   

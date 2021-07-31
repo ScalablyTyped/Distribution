@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecondIMapView extends StObject {
   
-  var first: IMapView[String, String] = js.native
+  var first: IMapView[String, String]
   
-  var second: IMapView[String, String] = js.native
+  var second: IMapView[String, String]
 }
 object SecondIMapView {
   

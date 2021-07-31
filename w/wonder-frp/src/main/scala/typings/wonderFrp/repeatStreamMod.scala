@@ -2,25 +2,29 @@ package typings.wonderFrp
 
 import typings.wonderFrp.baseStreamMod.BaseStream
 import typings.wonderFrp.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/RepeatStream", JSImport.Namespace)
-@js.native
-object repeatStreamMod extends js.Object {
+object repeatStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/RepeatStream", "RepeatStream")
   @js.native
   class RepeatStream protected () extends BaseStream {
     def this(source: Stream, count: Double) = this()
+    
     var _count: js.Any = js.native
+    
     var _source: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object RepeatStream extends js.Object {
-    def create(source: Stream, count: Double): RepeatStream = js.native
+  object RepeatStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/RepeatStream", "RepeatStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(source: Stream, count: Double): RepeatStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[RepeatStream]
   }
-  
 }
-

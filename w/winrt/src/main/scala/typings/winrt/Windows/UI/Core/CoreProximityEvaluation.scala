@@ -3,15 +3,13 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreProximityEvaluation extends StObject {
   
-  var adjustedPoint: Point = js.native
+  var adjustedPoint: Point
   
-  var score: Double = js.native
+  var score: Double
 }
 object CoreProximityEvaluation {
   

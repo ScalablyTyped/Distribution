@@ -7,7 +7,6 @@ import typings.opentelemetryApi.spanContextMod.SpanContext
 import typings.opentelemetryApi.spanKindMod.SpanKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object samplerMod {
@@ -16,7 +15,7 @@ object samplerMod {
   trait Sampler extends StObject {
     
     def shouldSample(
-      parentContext: js.UndefOr[scala.Nothing],
+      parentContext: Unit,
       traceId: String,
       spanName: String,
       spanKind: SpanKind,

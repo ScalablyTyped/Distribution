@@ -2,12 +2,14 @@ package typings.mobx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
   
-  @JSImport("mobx/lib/api/transaction", "transaction")
+  @JSImport("mobx/lib/api/transaction", JSImport.Namespace)
   @js.native
-  def transaction[T](action: js.Function0[T], thisArg: js.UndefOr[scala.Nothing]): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def transaction[T](action: js.Function0[T], thisArg: Unit): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
 }

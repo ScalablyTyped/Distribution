@@ -4,10 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentElementViewModel extends StObject {
   
   /**
@@ -15,20 +13,20 @@ trait MomentElementViewModel extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#state)
     */
-  var state: ready = js.native
+  var state: ready
   
   /**
     * The selected date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#value)
     */
-  var value: Date = js.native
+  var value: Date
 }
 object MomentElementViewModel {
   
   @scala.inline
-  def apply(state: ready, value: Date): MomentElementViewModel = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(value: Date): MomentElementViewModel = {
+    val __obj = js.Dynamic.literal(state = "ready", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentElementViewModel]
   }
   

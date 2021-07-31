@@ -6,31 +6,32 @@ import typings.requireAll.requireAllBooleans.`true`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  
   @JSImport("require-all", JSImport.Namespace)
   @js.native
-  def apply(options: Options): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var dirname: String = js.native
+    var dirname: String
     
-    var excludeDirs: js.UndefOr[RegExp] = js.native
+    var excludeDirs: js.UndefOr[RegExp] = js.undefined
     
     var filter: js.UndefOr[
         (js.Function2[/* name */ String, /* path */ String, js.UndefOr[String | `false`]]) | RegExp
-      ] = js.native
+      ] = js.undefined
     
-    var map: js.UndefOr[js.Function2[/* name */ String, /* path */ String, String]] = js.native
+    var map: js.UndefOr[js.Function2[/* name */ String, /* path */ String, String]] = js.undefined
     
-    var recursive: js.UndefOr[`true` | `false`] = js.native
+    var recursive: js.UndefOr[`true` | `false`] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* module */ js.Any, _]] = js.native
+    var resolve: js.UndefOr[js.Function1[/* module */ js.Any, js.Any]] = js.undefined
   }
   object Options {
     
@@ -74,7 +75,7 @@ object mod {
       def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
       @scala.inline
-      def setResolve(value: /* module */ js.Any => _): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      def setResolve(value: /* module */ js.Any => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
       @scala.inline
       def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)

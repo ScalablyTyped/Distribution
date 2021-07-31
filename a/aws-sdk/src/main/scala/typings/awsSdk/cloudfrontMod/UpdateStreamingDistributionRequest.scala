@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStreamingDistributionRequest extends StObject {
   
   /**
     * The streaming distribution's id.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The value of the ETag header that you received when retrieving the streaming distribution's configuration. For example: E2QWRUHAPOMQZL.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The streaming distribution's configuration information.
     */
-  var StreamingDistributionConfig: typings.awsSdk.cloudfrontMod.StreamingDistributionConfig = js.native
+  var StreamingDistributionConfig: typings.awsSdk.cloudfrontMod.StreamingDistributionConfig
 }
 object UpdateStreamingDistributionRequest {
   

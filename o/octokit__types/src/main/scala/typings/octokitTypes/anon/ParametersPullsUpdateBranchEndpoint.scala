@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.PullsUpdateBranchResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersPullsUpdateBranchEndpoint extends StObject {
   
-  var parameters: PullsUpdateBranchEndpoint = js.native
+  var parameters: PullsUpdateBranchEndpoint
   
-  var request: PullsUpdateBranchRequestOptions = js.native
+  var request: PullsUpdateBranchRequestOptions
   
-  var response: OctokitResponse[PullsUpdateBranchResponseData] = js.native
+  var response: OctokitResponse[PullsUpdateBranchResponseData]
 }
 object ParametersPullsUpdateBranchEndpoint {
   

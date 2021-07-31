@@ -6,7 +6,6 @@ import typings.prex.mod.CancellationToken
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Grammar")
@@ -20,21 +19,9 @@ class Grammar protected ()
     */
   def this(rootNames: Iterable[String]) = this()
   def this(rootNames: Iterable[String], options: CompilerOptions) = this()
-  def this(
-    rootNames: Iterable[String],
-    options: js.UndefOr[scala.Nothing],
-    host: typings.grammarkdown.hostMod.CoreAsyncHost
-  ) = this()
-  def this(
-    rootNames: Iterable[String],
-    options: js.UndefOr[scala.Nothing],
-    host: typings.grammarkdown.hostMod.CoreSyncHost
-  ) = this()
-  def this(
-    rootNames: Iterable[String],
-    options: js.UndefOr[scala.Nothing],
-    host: typings.grammarkdown.nodeMod.Host
-  ) = this()
+  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.hostMod.CoreAsyncHost) = this()
+  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.hostMod.CoreSyncHost) = this()
+  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.nodeMod.Host) = this()
   def this(
     rootNames: Iterable[String],
     options: CompilerOptions,
@@ -50,6 +37,10 @@ class Grammar protected ()
 /* static members */
 object Grammar {
   
+  @JSImport("grammarkdown", "Grammar")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Converts a string containing Grammarkdown syntax into output based on the provided options.
     * @param content The Grammarkdown source text to convert.
@@ -61,172 +52,116 @@ object Grammar {
     * {@inheritDoc Grammar.(convert:1)}
     * @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable`
     */
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(content: String): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  @scala.inline
+  def convert(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: Unit, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
-    hostFallback: js.UndefOr[scala.Nothing],
-    cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
-    hostFallback: js.UndefOr[scala.Nothing],
-    cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
     cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
-    hostFallback: typings.grammarkdown.hostMod.CoreSyncHost
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
     cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.nodeMod.Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
-    hostFallback: typings.grammarkdown.nodeMod.Host
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.nodeMod.Host,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hostFallback: typings.grammarkdown.nodeMod.Host,
     cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(content: String, options: CompilerOptions): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: js.UndefOr[scala.Nothing],
-    cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: js.UndefOr[scala.Nothing],
-    cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: CompilerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
     cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
     cancelable: CancellationToken
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
-  def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.nodeMod.Host): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.nodeMod.Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.nodeMod.Host,
     cancelable: Cancelable
-  ): String = js.native
-  @JSImport("grammarkdown", "Grammar.convert")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def convert(
     content: String,
     options: CompilerOptions,
     hostFallback: typings.grammarkdown.nodeMod.Host,
     cancelable: CancellationToken
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaStreamConstraints extends StObject {
   
-  var audio: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.native
+  var audio: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
   
-  var peerIdentity: js.UndefOr[java.lang.String] = js.native
+  var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
   
-  var video: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.native
+  var video: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
 }
 object MediaStreamConstraints {
   

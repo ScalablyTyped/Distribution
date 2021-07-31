@@ -2,15 +2,13 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxCellPosition extends StObject {
   
-  var qx: Double = js.native
+  var qx: Double
   
-  var qy: Double = js.native
+  var qy: Double
 }
 object NxCellPosition {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerStorageMessage extends StObject {
   
   /**
     * The total amount of storage currently used for snapshots.
     */
-  var TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.native
+  var TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined
   
   /**
     * The total amount of storage currently provisioned.
     */
-  var TotalProvisionedStorageInMegaBytes: js.UndefOr[Double] = js.native
+  var TotalProvisionedStorageInMegaBytes: js.UndefOr[Double] = js.undefined
 }
 object CustomerStorageMessage {
   

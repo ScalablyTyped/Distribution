@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ClassPrivateProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `223` extends StObject {
   
-  var `type`: ClassPrivateProperty = js.native
+  var `type`: ClassPrivateProperty
 }
 object `223` {
   
   @scala.inline
-  def apply(`type`: ClassPrivateProperty): `223` = {
+  def apply(): `223` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[`223`]
   }
   

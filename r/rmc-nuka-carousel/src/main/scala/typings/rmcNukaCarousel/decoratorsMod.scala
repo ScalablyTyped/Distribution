@@ -5,7 +5,6 @@ import typings.rmcNukaCarousel.anon.Component
 import typings.rmcNukaCarousel.anon.ComponentPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod extends Shortcut {
@@ -14,30 +13,29 @@ object decoratorsMod extends Shortcut {
   @js.native
   val default: js.Array[Component | ComponentPosition] = js.native
   
-  @js.native
   trait IDecoratorProps extends StObject {
     
-    var cellSpacing: js.UndefOr[Double] = js.native
+    var cellSpacing: js.UndefOr[Double] = js.undefined
     
-    var currentSlide: Double = js.native
+    var currentSlide: Double
     
-    var frameWidth: Double | String = js.native
+    var frameWidth: Double | String
     
-    var goToSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var goToSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var nextSlide: js.UndefOr[js.Function0[Unit]] = js.native
+    var nextSlide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def previousSlide(): Unit = js.native
+    def previousSlide(): Unit
     
-    var slideCount: Double = js.native
+    var slideCount: Double
     
-    var slideWidth: Double | String = js.native
+    var slideWidth: Double | String
     
-    var slidesToScroll: Double = js.native
+    var slidesToScroll: Double
     
-    var slidesToShow: js.UndefOr[Double] = js.native
+    var slidesToShow: js.UndefOr[Double] = js.undefined
     
-    var wrapAround: js.UndefOr[Boolean] = js.native
+    var wrapAround: js.UndefOr[Boolean] = js.undefined
   }
   object IDecoratorProps {
     

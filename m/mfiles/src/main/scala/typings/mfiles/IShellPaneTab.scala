@@ -2,41 +2,39 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShellPaneTab extends StObject {
   
-  val Events: IShellPaneTabEvents = js.native
+  val Events: IShellPaneTabEvents
   
-  val IsBuiltIn: Boolean = js.native
+  val IsBuiltIn: Boolean
   
-  def Remove(): Unit = js.native
+  def Remove(): Unit
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Selected: Boolean = js.native
+  val Selected: Boolean
   
-  def ShowDashboard(dashboardID: String, data: js.Any): Unit = js.native
+  def ShowDashboard(dashboardID: String, data: js.Any): Unit
   
-  def ShowEmptyContent(): Unit = js.native
+  def ShowEmptyContent(): Unit
   
-  def ShowFilePreview(file: String): Unit = js.native
+  def ShowFilePreview(file: String): Unit
   
-  def ShowObjectVersionProperties(propertyValuesWithIcons: IPropertyValuesWithIconClues): Unit = js.native
+  def ShowObjectVersionProperties(propertyValuesWithIcons: IPropertyValuesWithIconClues): Unit
   
-  def ShowPersistentContent(sessionHandle: Double): Unit = js.native
+  def ShowPersistentContent(sessionHandle: Double): Unit
   
-  def ShowSSRSReport(reportURL: String): Unit = js.native
+  def ShowSSRSReport(reportURL: String): Unit
   
-  val TabId: String = js.native
+  val TabId: String
   
-  var Title: String = js.native
+  var Title: String
   
-  def Unselect(): Unit = js.native
+  def Unselect(): Unit
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object IShellPaneTab {
   

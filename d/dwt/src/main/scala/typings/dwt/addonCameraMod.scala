@@ -4,7 +4,6 @@ import typings.std.Blob
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonCameraMod {
@@ -63,7 +62,7 @@ object addonCameraMod {
       * @param resolution Specify the initial resolution.
       */
     def play(): js.Promise[Resolution] = js.native
-    def play(element: js.UndefOr[scala.Nothing], resolution: Resolution): js.Promise[Resolution] = js.native
+    def play(element: Unit, resolution: Resolution): js.Promise[Resolution] = js.native
     def play(element: HTMLElement): js.Promise[Resolution] = js.native
     def play(element: HTMLElement, resolution: Resolution): js.Promise[Resolution] = js.native
     
@@ -95,12 +94,11 @@ object addonCameraMod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait DeviceInfo extends StObject {
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var label: String = js.native
+    var label: String
   }
   object DeviceInfo {
     
@@ -121,12 +119,11 @@ object addonCameraMod {
     }
   }
   
-  @js.native
   trait Resolution extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Resolution {
     

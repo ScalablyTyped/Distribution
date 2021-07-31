@@ -14,11 +14,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AreaMeasurement3D extends Widget_ {
+trait AreaMeasurement3D
+  extends StObject
+     with Widget_ {
   
   /**
     * The widget's default CSS icon class.

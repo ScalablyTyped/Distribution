@@ -2,16 +2,14 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelQueryResponse extends StObject {
   
   /**
     *  A CancellationMessage is returned when a CancelQuery request for the query specified by QueryId has already been issued. 
     */
-  var CancellationMessage: js.UndefOr[String] = js.native
+  var CancellationMessage: js.UndefOr[String] = js.undefined
 }
 object CancelQueryResponse {
   

@@ -2,26 +2,24 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Line break options passed in calls to {@link XBreakIterator.getLineBreak()} . */
-@js.native
 trait LineBreakUserOptions extends StObject {
   
-  var allowHyphenateEnglish: Boolean = js.native
+  var allowHyphenateEnglish: Boolean
   
   /**
     * If punctuation characters are allowed at the end of the line if outside of the margins, resulting in a line not being wrapped if only the punctuation
     * would wrap.
     */
-  var allowPunctuationOutsideMargin: Boolean = js.native
+  var allowPunctuationOutsideMargin: Boolean
   
-  var applyForbiddenRules: Boolean = js.native
+  var applyForbiddenRules: Boolean
   
-  var forbiddenBeginCharacters: String = js.native
+  var forbiddenBeginCharacters: String
   
-  var forbiddenEndCharacters: String = js.native
+  var forbiddenEndCharacters: String
 }
 object LineBreakUserOptions {
   

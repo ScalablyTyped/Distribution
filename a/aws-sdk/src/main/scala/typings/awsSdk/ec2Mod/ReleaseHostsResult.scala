@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseHostsResult extends StObject {
   
   /**
     * The IDs of the Dedicated Hosts that were successfully released.
     */
-  var Successful: js.UndefOr[ResponseHostIdList] = js.native
+  var Successful: js.UndefOr[ResponseHostIdList] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts that could not be released, including an error message.
     */
-  var Unsuccessful: js.UndefOr[UnsuccessfulItemList] = js.native
+  var Unsuccessful: js.UndefOr[UnsuccessfulItemList] = js.undefined
 }
 object ReleaseHostsResult {
   

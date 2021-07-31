@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioBufferSourceOptions extends StObject {
   
-  var buffer: js.UndefOr[AudioBuffer | Null] = js.native
+  var buffer: js.UndefOr[AudioBuffer | Null] = js.undefined
   
-  var detune: js.UndefOr[Double] = js.native
+  var detune: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[scala.Boolean] = js.native
+  var loop: js.UndefOr[scala.Boolean] = js.undefined
   
-  var loopEnd: js.UndefOr[Double] = js.native
+  var loopEnd: js.UndefOr[Double] = js.undefined
   
-  var loopStart: js.UndefOr[Double] = js.native
+  var loopStart: js.UndefOr[Double] = js.undefined
   
-  var playbackRate: js.UndefOr[Double] = js.native
+  var playbackRate: js.UndefOr[Double] = js.undefined
 }
 object AudioBufferSourceOptions {
   

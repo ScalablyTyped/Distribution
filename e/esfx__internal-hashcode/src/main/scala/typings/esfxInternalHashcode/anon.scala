@@ -5,35 +5,33 @@ import typings.std.Map
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BigIntSeed extends StObject {
     
-    var bigIntSeed: Double = js.native
+    var bigIntSeed: Double
     
-    var globalSymbolHashes: js.UndefOr[Map[js.Symbol, Double]] = js.native
+    var globalSymbolHashes: js.UndefOr[Map[js.Symbol, Double]] = js.undefined
     
-    var globalSymbolSeed: Double = js.native
+    var globalSymbolSeed: Double
     
-    var localSymbolCounter: js.UndefOr[Counter] = js.native
+    var localSymbolCounter: js.UndefOr[Counter] = js.undefined
     
-    var localSymbolHashes: js.UndefOr[Map[js.Symbol, Double]] = js.native
+    var localSymbolHashes: js.UndefOr[Map[js.Symbol, Double]] = js.undefined
     
-    var localSymbolSeed: Double = js.native
+    var localSymbolSeed: Double
     
-    var nullPrototypeCounter: js.UndefOr[Counter] = js.native
+    var nullPrototypeCounter: js.UndefOr[Counter] = js.undefined
     
-    var objectSeed: Double = js.native
+    var objectSeed: Double
     
-    var stringSeed: Double = js.native
+    var stringSeed: Double
     
-    var weakObjectHashes: js.UndefOr[WeakMap[js.Object, Double]] = js.native
+    var weakObjectHashes: js.UndefOr[WeakMap[js.Object, Double]] = js.undefined
     
-    var weakPrototypeCounters: js.UndefOr[WeakMap[js.Object, Counter]] = js.native
+    var weakPrototypeCounters: js.UndefOr[WeakMap[js.Object, Counter]] = js.undefined
   }
   object BigIntSeed {
     

@@ -2,251 +2,249 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entry extends StObject {
   
   /** _non-standard_  */
-  var _all_end: js.UndefOr[Double | String | Null] = js.native
+  var _all_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _all_ms: js.UndefOr[Double | String | Null] = js.native
+  var _all_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _all_start: js.UndefOr[Double | String | Null] = js.native
+  var _all_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesIn: js.UndefOr[Double | String | Null] = js.native
+  var _bytesIn: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesOut: js.UndefOr[Double | String | Null] = js.native
+  var _bytesOut: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _cacheControl: js.UndefOr[String | Null] = js.native
+  var _cacheControl: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _cache_time: js.UndefOr[Double | String | Null] = js.native
+  var _cache_time: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _cdn_provider: js.UndefOr[String | Null] = js.native
+  var _cdn_provider: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _certificate_bytes: js.UndefOr[Double | String | Null] = js.native
+  var _certificate_bytes: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _client_port: js.UndefOr[Double | String | Null] = js.native
+  var _client_port: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _connect_end: js.UndefOr[Double | String | Null] = js.native
+  var _connect_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _connect_ms: js.UndefOr[Double | String | Null] = js.native
+  var _connect_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _connect_start: js.UndefOr[Double | String | Null] = js.native
+  var _connect_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _contentEncoding: js.UndefOr[String | Null] = js.native
+  var _contentEncoding: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _contentType: js.UndefOr[String | Null] = js.native
+  var _contentType: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _dns_end: js.UndefOr[Double | String | Null] = js.native
+  var _dns_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _dns_ms: js.UndefOr[Double | String | Null] = js.native
+  var _dns_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _dns_start: js.UndefOr[Double | String | Null] = js.native
+  var _dns_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _download_end: js.UndefOr[Double | String | Null] = js.native
+  var _download_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _download_ms: js.UndefOr[Double | String | Null] = js.native
+  var _download_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _download_start: js.UndefOr[Double | String | Null] = js.native
+  var _download_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _expires: js.UndefOr[String | Null] = js.native
+  var _expires: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _full_url: js.UndefOr[String | Null] = js.native
+  var _full_url: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _gzip_save: js.UndefOr[Double | String | Null] = js.native
+  var _gzip_save: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _gzip_total: js.UndefOr[Double | String | Null] = js.native
+  var _gzip_total: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _host: js.UndefOr[String | Null] = js.native
+  var _host: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _http2_stream_dependency: js.UndefOr[Double | String | Null] = js.native
+  var _http2_stream_dependency: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _http2_stream_exclusive: js.UndefOr[Double | String | Null] = js.native
+  var _http2_stream_exclusive: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _http2_stream_id: js.UndefOr[Double | String | Null] = js.native
+  var _http2_stream_id: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _http2_stream_weight: js.UndefOr[Double | String | Null] = js.native
+  var _http2_stream_weight: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _image_save: js.UndefOr[Double | String | Null] = js.native
+  var _image_save: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _image_total: js.UndefOr[Double | String | Null] = js.native
+  var _image_total: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _index: js.UndefOr[Double | Null] = js.native
+  var _index: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initialPriority: js.UndefOr[String | Null] = js.native
+  var _initialPriority: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator: js.UndefOr[String | Null] = js.native
+  var _initiator: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator_column: js.UndefOr[String | Null] = js.native
+  var _initiator_column: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator_detail: js.UndefOr[String | Null] = js.native
+  var _initiator_detail: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator_function: js.UndefOr[String | Null] = js.native
+  var _initiator_function: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator_line: js.UndefOr[String | Null] = js.native
+  var _initiator_line: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _initiator_type: js.UndefOr[String | Null] = js.native
+  var _initiator_type: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ip_addr: js.UndefOr[String | Null] = js.native
+  var _ip_addr: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _is_secure: js.UndefOr[Double | String | Null] = js.native
+  var _is_secure: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _jpeg_scan_count: js.UndefOr[Double | String | Null] = js.native
+  var _jpeg_scan_count: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _load_end: js.UndefOr[Double | String | Null] = js.native
+  var _load_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _load_ms: js.UndefOr[Double | String | Null] = js.native
+  var _load_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _load_start: js.UndefOr[Double | String | Null] = js.native
+  var _load_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _method: js.UndefOr[String | Null] = js.native
+  var _method: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _minify_save: js.UndefOr[Double | String | Null] = js.native
+  var _minify_save: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _minify_total: js.UndefOr[Double | String | Null] = js.native
+  var _minify_total: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _number: js.UndefOr[Double | Null] = js.native
+  var _number: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _objectSize: js.UndefOr[Double | String | Null] = js.native
+  var _objectSize: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _objectSizeUncompressed: js.UndefOr[Double | String | Null] = js.native
+  var _objectSizeUncompressed: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _priority: js.UndefOr[String | Null] = js.native
+  var _priority: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _protocol: js.UndefOr[Double | String | Null] = js.native
+  var _protocol: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _request_id: js.UndefOr[Double | String | Null] = js.native
+  var _request_id: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _responseCode: js.UndefOr[Double | String | Null] = js.native
+  var _responseCode: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cache: js.UndefOr[Double | String | Null] = js.native
+  var _score_cache: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cdn: js.UndefOr[Double | String | Null] = js.native
+  var _score_cdn: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_combine: js.UndefOr[Double | String | Null] = js.native
+  var _score_combine: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_compress: js.UndefOr[Double | String | Null] = js.native
+  var _score_compress: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cookies: js.UndefOr[Double | String | Null] = js.native
+  var _score_cookies: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_etags: js.UndefOr[Double | String | Null] = js.native
+  var _score_etags: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_gzip: js.UndefOr[Double | String | Null] = js.native
+  var _score_gzip: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var `_score_keep-alive`: js.UndefOr[Double | String | Null] = js.native
+  var `_score_keep-alive`: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_minify: js.UndefOr[Double | String | Null] = js.native
+  var _score_minify: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_progressive_jpeg: js.UndefOr[Double | Null] = js.native
+  var _score_progressive_jpeg: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _server_count: js.UndefOr[Double | String | Null] = js.native
+  var _server_count: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _server_rtt: js.UndefOr[Double | String | Null] = js.native
+  var _server_rtt: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _socket: js.UndefOr[Double | String | Null] = js.native
+  var _socket: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ssl_end: js.UndefOr[Double | String | Null] = js.native
+  var _ssl_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ssl_ms: js.UndefOr[Double | String | Null] = js.native
+  var _ssl_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ssl_start: js.UndefOr[Double | String | Null] = js.native
+  var _ssl_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ttfb_end: js.UndefOr[Double | String | Null] = js.native
+  var _ttfb_end: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ttfb_ms: js.UndefOr[Double | String | Null] = js.native
+  var _ttfb_ms: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _ttfb_start: js.UndefOr[Double | String | Null] = js.native
+  var _ttfb_start: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _type: js.UndefOr[Double | String | Null] = js.native
+  var _type: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _url: js.UndefOr[String | Null] = js.native
+  var _url: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _was_pushed: js.UndefOr[Double | String | Null] = js.native
+  var _was_pushed: js.UndefOr[Double | String | Null] = js.undefined
   
   /** Info about cache usage. */
-  var cache: Cache = js.native
+  var cache: Cache
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID of the parent TCP/IP connection, can be the client or server
@@ -259,32 +257,32 @@ trait Entry extends StObject {
     * connection ID can be used instead (e.g. connection index). Leave out
     * this field if the application doesn't support this info.
     */
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to the parent page. Leave out this field if the application
     * does not support grouping by pages.
     */
-  var pageref: js.UndefOr[String] = js.native
+  var pageref: js.UndefOr[String] = js.undefined
   
   /** Detailed info about the request. */
-  var request: Request = js.native
+  var request: Request
   
   /** Detailed info about the response. */
-  var response: Response = js.native
+  var response: Response
   
   /**
     * IP address of the server that was connected
     * (result of DNS resolution).
     */
-  var serverIPAddress: js.UndefOr[String] = js.native
+  var serverIPAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time stamp of the request start
     *
     * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`).
     */
-  var startedDateTime: String = js.native
+  var startedDateTime: String
   
   /**
     * Total elapsed time of the request in milliseconds.
@@ -292,10 +290,10 @@ trait Entry extends StObject {
     * This is the sum of all timings available in the timings object
     * (i.e. not including `-1` values).
     */
-  var time: Double = js.native
+  var time: Double
   
   /** Detailed timing info about request/response round trip. */
-  var timings: Timings = js.native
+  var timings: Timings
 }
 object Entry {
   

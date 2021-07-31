@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `SECTION_TYPE_ZERO_TOUCH`. To learn more, read [Claim devices for
   * customers](/zero-touch/guides/how-it-works#claim).
   */
-@js.native
 trait SchemaDeviceClaim extends StObject {
   
   /**
     * The ID of the Customer that purchased the device.
     */
-  var ownerCompanyId: js.UndefOr[String] = js.native
+  var ownerCompanyId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reseller that claimed the device.
     */
-  var resellerId: js.UndefOr[String] = js.native
+  var resellerId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The type of claim made on the device.
     */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceClaim {
   

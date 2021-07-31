@@ -11,8 +11,8 @@ redefine an svg path with absolute coordinates
 | Full name          | abs-svg-path |
 | Keywords           | absolute, svg, path |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 4567975 |
+| # dependents       | 16 |
+| # downloads        | 6146272 |
 | # stars            | 1 |
 
 ## Links

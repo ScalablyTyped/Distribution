@@ -2,7 +2,6 @@ package typings.prettyBytes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,14 +24,15 @@ object mod {
   //=> '1,34 kB'
   ```
   */
-  @JSImport("pretty-bytes", JSImport.Namespace)
-  @js.native
-  def apply(number: Double): String = js.native
-  @JSImport("pretty-bytes", JSImport.Namespace)
-  @js.native
-  def apply(number: Double, options: Options): String = js.native
+  @scala.inline
+  def apply(number: Double): String = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(number: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("pretty-bytes", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -46,7 +46,7 @@ object mod {
     		//=> '1 kiB'
     		```
     		*/
-    val binary: js.UndefOr[Boolean] = js.native
+    val binary: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Format the number as [bits](https://en.wikipedia.org/wiki/Bit) instead of [bytes](https://en.wikipedia.org/wiki/Byte). This can be useful when, for example, referring to [bit rate](https://en.wikipedia.org/wiki/Bit_rate).
@@ -57,7 +57,7 @@ object mod {
     		//=> '1.34 kbit'
     		```
     		*/
-    val bits: js.UndefOr[Boolean] = js.native
+    val bits: js.UndefOr[Boolean] = js.undefined
     
     /**
     		- If `false`: Output won't be localized.
@@ -66,13 +66,13 @@ object mod {
     		__Note:__ Localization should generally work in browsers. Node.js needs to be [built](https://github.com/nodejs/node/wiki/Intl) with `full-icu` or `system-icu`. Alternatively, the [`full-icu`](https://github.com/unicode-org/full-icu-npm) module can be used to provide support at runtime.
     		@default false
     		*/
-    val locale: js.UndefOr[Boolean | String] = js.native
+    val locale: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     		Include plus sign for positive numbers. If the difference is exactly zero a space character will be prepended instead for better alignment.
     		@default false
     		*/
-    val signed: js.UndefOr[Boolean] = js.native
+    val signed: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

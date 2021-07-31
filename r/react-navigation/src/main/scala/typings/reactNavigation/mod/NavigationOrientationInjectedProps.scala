@@ -2,13 +2,11 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOrientationInjectedProps extends StObject {
   
-  var isLandscape: Boolean = js.native
+  var isLandscape: Boolean
 }
 object NavigationOrientationInjectedProps {
   

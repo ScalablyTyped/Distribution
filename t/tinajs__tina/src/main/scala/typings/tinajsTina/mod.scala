@@ -6,10 +6,13 @@ import typings.tinajsTina.anon.PartialPageDefinitions
 import typings.tinajsTina.anon.PartialPageDefinitionsAttached
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@tinajs/tina", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tinajs/tina", "Component")
   @js.native
@@ -22,13 +25,15 @@ object mod {
   /* static members */
   object Component {
     
-    @JSImport("@tinajs/tina", "Component.define")
+    @JSImport("@tinajs/tina", "Component")
     @js.native
-    def define(definitions: PartialComponentDefinitio): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tinajs/tina", "Component.mixin")
-    @js.native
-    def mixin(definitions: PartialComponentDefinitio): Unit = js.native
+    @scala.inline
+    def define(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def mixin(definitions: PartialComponentDefinitio): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@tinajs/tina", "Page")
@@ -37,31 +42,33 @@ object mod {
   /* static members */
   object Page {
     
-    @JSImport("@tinajs/tina", "Page.define")
+    @JSImport("@tinajs/tina", "Page")
     @js.native
-    def define(definitions: PartialPageDefinitionsAttached): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tinajs/tina", "Page.mixin")
-    @js.native
-    def mixin(definitions: PartialPageDefinitionsAttached): Unit = js.native
+    @scala.inline
+    def define(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def mixin(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("@tinajs/tina", "use")
-  @js.native
-  def use(plugin: js.Any): Unit = js.native
+  @scala.inline
+  def use(plugin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait ComponentDefinitions extends ComponentLifecycles {
+  trait ComponentDefinitions
+    extends StObject
+       with ComponentLifecycles {
     
-    def compute(data: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+    def compute(data: StringDictionary[js.Any]): StringDictionary[js.Any]
     
-    var data: StringDictionary[js.Any] = js.native
+    var data: StringDictionary[js.Any]
     
-    var methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]] = js.native
+    var methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
     
-    var mixins: js.Array[PartialComponentDefinitio] = js.native
+    var mixins: js.Array[PartialComponentDefinitio]
     
-    var properties: ComponentProperties = js.native
+    var properties: ComponentProperties
   }
   object ComponentDefinitions {
     
@@ -72,7 +79,7 @@ object mod {
       created: () => Unit,
       data: StringDictionary[js.Any],
       detached: () => Unit,
-      methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]],
+      methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]],
       mixins: js.Array[PartialComponentDefinitio],
       moved: () => Unit,
       properties: ComponentProperties,
@@ -92,7 +99,7 @@ object mod {
       def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMixins(value: js.Array[PartialComponentDefinitio]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
@@ -105,18 +112,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ComponentLifecycles extends StObject {
     
-    def attached(): Unit = js.native
+    def attached(): Unit
     
-    def created(): Unit = js.native
+    def created(): Unit
     
-    def detached(): Unit = js.native
+    def detached(): Unit
     
-    def moved(): Unit = js.native
+    def moved(): Unit
     
-    def ready(): Unit = js.native
+    def ready(): Unit
   }
   object ComponentLifecycles {
     
@@ -156,7 +162,8 @@ object mod {
   
   @js.native
   trait PageDefinitions
-    extends ComponentDefinitions
+    extends StObject
+       with ComponentDefinitions
        with PageEvents
        with PageHooks {
     
@@ -164,16 +171,15 @@ object mod {
     var mixins_PageDefinitions: js.Array[PartialPageDefinitions] = js.native
   }
   
-  @js.native
   trait PageEvents extends StObject {
     
-    def onPageScroll(event: Page): Unit = js.native
+    def onPageScroll(event: Page): Unit
     
-    def onPullDownRefresh(event: Page): Unit = js.native
+    def onPullDownRefresh(event: Page): Unit
     
-    def onReachBottom(event: Page): Unit = js.native
+    def onReachBottom(event: Page): Unit
     
-    def onShareAppMessage(event: Page): Unit = js.native
+    def onShareAppMessage(event: Page): Unit
   }
   object PageEvents {
     

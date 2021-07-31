@@ -1,18 +1,15 @@
 package typings.reactLeaflet.mod
 
-import typings.leaflet.mod.ControlPosition
+import typings.leaflet.mod.ControlOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  leaflet :react-leaflet.react-leaflet.LeafletContext | undefined} & leaflet.leaflet.ControlOptions */
-@js.native
-trait MapControlProps extends StObject {
+trait MapControlProps
+  extends StObject
+     with ControlOptions {
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
-  
-  var position: js.UndefOr[ControlPosition] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 object MapControlProps {
   
@@ -30,11 +27,5 @@ object MapControlProps {
     
     @scala.inline
     def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

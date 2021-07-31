@@ -2,25 +2,23 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
-@js.native
 trait DocumentListResponse[D] extends StObject {
   
   // Offset where the document list started.
-  var offset: Double = js.native
+  var offset: Double
   
   // Array of view row objects. By default the information returned contains only the document ID and revision.
-  var rows: js.Array[DocumentResponseRow[D]] = js.native
+  var rows: js.Array[DocumentResponseRow[D]]
   
   // Number of documents in the database/view. Note that this is not the number of rows returned in the actual
   // query.
-  var total_rows: Double = js.native
+  var total_rows: Double
   
   // Current update sequence for the database.
-  var update_seq: js.UndefOr[Double] = js.native
+  var update_seq: js.UndefOr[Double] = js.undefined
 }
 object DocumentListResponse {
   
@@ -31,7 +29,7 @@ object DocumentListResponse {
   }
   
   @scala.inline
-  implicit class DocumentListResponseMutableBuilder[Self <: DocumentListResponse[_], D] (val x: Self with DocumentListResponse[D]) extends AnyVal {
+  implicit class DocumentListResponseMutableBuilder[Self <: DocumentListResponse[?], D] (val x: Self & DocumentListResponse[D]) extends AnyVal {
     
     @scala.inline
     def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])

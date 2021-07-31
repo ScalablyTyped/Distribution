@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
   /**
     * The DNS address of the Cluster.
     */
-  var Address: js.UndefOr[String] = js.native
+  var Address: js.UndefOr[String] = js.undefined
   
   /**
     * The port that the database engine is listening on.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
 }
 object Endpoint {
   

@@ -2,10 +2,8 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRetrievalImportance extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaRetrievalImportance extends StObject {
     * during retrieval. Once set, the token importance of a property cannot be
     * changed.
     */
-  var importance: js.UndefOr[String] = js.native
+  var importance: js.UndefOr[String] = js.undefined
 }
 object SchemaRetrievalImportance {
   

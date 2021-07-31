@@ -3,23 +3,21 @@ package typings.antDesignReactNative.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var color: String = js.native
+  var color: String
   
-  var component: Element = js.native
+  var component: Element
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Color {
   

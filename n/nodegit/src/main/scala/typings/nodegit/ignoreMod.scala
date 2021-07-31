@@ -3,7 +3,6 @@ package typings.nodegit
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ignoreMod {
@@ -14,16 +13,17 @@ object ignoreMod {
   /* static members */
   object Ignore {
     
-    @JSImport("nodegit/ignore", "Ignore.addRule")
+    @JSImport("nodegit/ignore", "Ignore")
     @js.native
-    def addRule(repo: Repository, rules: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/ignore", "Ignore.clearInternalRules")
-    @js.native
-    def clearInternalRules(repo: Repository): Double = js.native
+    @scala.inline
+    def addRule(repo: Repository, rules: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(repo.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/ignore", "Ignore.pathIsIgnored")
-    @js.native
-    def pathIsIgnored(repo: Repository, path: String): js.Promise[Double] = js.native
+    @scala.inline
+    def clearInternalRules(repo: Repository): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInternalRules")(repo.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def pathIsIgnored(repo: Repository, path: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathIsIgnored")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
 }

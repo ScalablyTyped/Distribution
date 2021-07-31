@@ -2,22 +2,20 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestSidebarAction extends StObject {
   
-  var browser_style: js.UndefOr[Boolean] = js.native
+  var browser_style: js.UndefOr[Boolean] = js.undefined
   
-  var default_icon: js.UndefOr[IconPath] = js.native
+  var default_icon: js.UndefOr[IconPath] = js.undefined
   
-  var default_panel: String = js.native
+  var default_panel: String
   
-  var default_title: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.undefined
   
   /** Whether or not the sidebar is opened at install. Default is `true`. */
-  var open_at_install: js.UndefOr[Boolean] = js.native
+  var open_at_install: js.UndefOr[Boolean] = js.undefined
 }
 object WebExtensionManifestSidebarAction {
   

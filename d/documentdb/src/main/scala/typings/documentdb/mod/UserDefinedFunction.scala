@@ -2,14 +2,14 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserDefinedFunction extends UserScriptable {
+trait UserDefinedFunction
+  extends StObject
+     with UserScriptable {
   
   /** Type of function */
-  var userDefinedFunctionType: js.UndefOr[UserDefinedFunctionType] = js.native
+  var userDefinedFunctionType: js.UndefOr[UserDefinedFunctionType] = js.undefined
 }
 object UserDefinedFunction {
   

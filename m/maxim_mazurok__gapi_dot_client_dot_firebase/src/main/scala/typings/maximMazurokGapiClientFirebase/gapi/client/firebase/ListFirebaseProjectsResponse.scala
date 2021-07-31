@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFirebaseProjectsResponse extends StObject {
   
   /**
     * If the result list is too large to fit in a single response, then a token is returned. If the string is empty, then this response is the last page of results. This token can be used
     * in a subsequent calls to `ListFirebaseProjects` to find the next group of Projects. Page tokens are short-lived and should not be persisted.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** One page of the list of Projects that are accessible to the caller. */
-  var results: js.UndefOr[js.Array[FirebaseProject]] = js.native
+  var results: js.UndefOr[js.Array[FirebaseProject]] = js.undefined
 }
 object ListFirebaseProjectsResponse {
   

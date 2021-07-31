@@ -9,7 +9,6 @@ import typings.seleniumWebdriver.mod.ILocation
 import typings.seleniumWebdriver.mod.WebElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
@@ -48,9 +47,9 @@ object inputMod {
       * @return {!Actions} A self reference.
       */
     def click(): Actions = js.native
-    def click(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
     def click(opt_elementOrButton: String): Actions = js.native
     def click(opt_elementOrButton: String, opt_button: String): Actions = js.native
+    def click(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
     def click(opt_elementOrButton: WebElement): Actions = js.native
     def click(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
     
@@ -87,9 +86,9 @@ object inputMod {
       * @return {!Actions} A self reference.
       */
     def doubleClick(): Actions = js.native
-    def doubleClick(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
     def doubleClick(opt_elementOrButton: String): Actions = js.native
     def doubleClick(opt_elementOrButton: String, opt_button: String): Actions = js.native
+    def doubleClick(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
     def doubleClick(opt_elementOrButton: WebElement): Actions = js.native
     def doubleClick(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
     
@@ -153,9 +152,9 @@ object inputMod {
       * @return {!Actions} A self reference.
       */
     def mouseDown(): Actions = js.native
-    def mouseDown(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
     def mouseDown(opt_elementOrButton: String): Actions = js.native
     def mouseDown(opt_elementOrButton: String, opt_button: String): Actions = js.native
+    def mouseDown(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
     def mouseDown(opt_elementOrButton: WebElement): Actions = js.native
     def mouseDown(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
     
@@ -201,9 +200,9 @@ object inputMod {
       * @return {!Actions} A self reference.
       */
     def mouseUp(): Actions = js.native
-    def mouseUp(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
     def mouseUp(opt_elementOrButton: String): Actions = js.native
     def mouseUp(opt_elementOrButton: String, opt_button: String): Actions = js.native
+    def mouseUp(opt_elementOrButton: Unit, opt_button: String): Actions = js.native
     def mouseUp(opt_elementOrButton: WebElement): Actions = js.native
     def mouseUp(opt_elementOrButton: WebElement, opt_button: String): Actions = js.native
     
@@ -224,8 +223,8 @@ object inputMod {
       */
     def move(direction: IDirection): Actions = js.native
     
-    def pause(duration: js.UndefOr[scala.Nothing], devices: Device*): Actions = js.native
     def pause(duration: Double, devices: Device*): Actions = js.native
+    def pause(duration: Unit, devices: Device*): Actions = js.native
     def pause(duration: Device, devices: Device*): Actions = js.native
     
     /**
@@ -269,19 +268,25 @@ object inputMod {
   object Button extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Button with Double] = js.native
+    def apply(value: Double): js.UndefOr[Button & Double] = js.native
     
     @js.native
-    sealed trait LEFT extends Button
-    /* 0 */ val LEFT: typings.seleniumWebdriver.inputMod.Button.LEFT with Double = js.native
+    sealed trait LEFT
+      extends StObject
+         with Button
+    /* 0 */ val LEFT: typings.seleniumWebdriver.inputMod.Button.LEFT & Double = js.native
     
     @js.native
-    sealed trait MIDDLE extends Button
-    /* 1 */ val MIDDLE: typings.seleniumWebdriver.inputMod.Button.MIDDLE with Double = js.native
+    sealed trait MIDDLE
+      extends StObject
+         with Button
+    /* 1 */ val MIDDLE: typings.seleniumWebdriver.inputMod.Button.MIDDLE & Double = js.native
     
     @js.native
-    sealed trait RIGHT extends Button
-    /* 2 */ val RIGHT: typings.seleniumWebdriver.inputMod.Button.RIGHT with Double = js.native
+    sealed trait RIGHT
+      extends StObject
+         with Button
+    /* 2 */ val RIGHT: typings.seleniumWebdriver.inputMod.Button.RIGHT & Double = js.native
   }
   
   @JSImport("selenium-webdriver/lib/input", "Device")
@@ -311,17 +316,21 @@ object inputMod {
   object Origin extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Origin with String] = js.native
+    def apply(value: String): js.UndefOr[Origin & String] = js.native
     
     /** Compute offsets relative to the pointer's current position. */
     @js.native
-    sealed trait POINTER extends Origin
-    /* "pointer" */ val POINTER: typings.seleniumWebdriver.inputMod.Origin.POINTER with String = js.native
+    sealed trait POINTER
+      extends StObject
+         with Origin
+    /* "pointer" */ val POINTER: typings.seleniumWebdriver.inputMod.Origin.POINTER & String = js.native
     
     /** Compute offsets relative to the viewport. */
     @js.native
-    sealed trait VIEWPORT extends Origin
-    /* "viewport" */ val VIEWPORT: typings.seleniumWebdriver.inputMod.Origin.VIEWPORT with String = js.native
+    sealed trait VIEWPORT
+      extends StObject
+         with Origin
+    /* "viewport" */ val VIEWPORT: typings.seleniumWebdriver.inputMod.Origin.VIEWPORT & String = js.native
   }
   
   @JSImport("selenium-webdriver/lib/input", "Pointer")
@@ -330,16 +339,15 @@ object inputMod {
     def this(`type`: String, id: String) = this()
   }
   
-  @js.native
   trait IDirection extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[Origin | WebElement] = js.native
+    var origin: js.UndefOr[Origin | WebElement] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object IDirection {
     
@@ -378,132 +386,131 @@ object inputMod {
     }
   }
   
-  @js.native
   trait IKey extends StObject {
     
-    var ADD: String = js.native
+    var ADD: String
     
-    var ALT: String = js.native
+    var ALT: String
     
-    var ARROW_DOWN: String = js.native
+    var ARROW_DOWN: String
     
-    var ARROW_LEFT: String = js.native
+    var ARROW_LEFT: String
     
-    var ARROW_RIGHT: String = js.native
+    var ARROW_RIGHT: String
     
-    var ARROW_UP: String = js.native
+    var ARROW_UP: String
     
-    var BACK_SPACE: String = js.native
+    var BACK_SPACE: String
     
-    var CANCEL: String = js.native
+    var CANCEL: String
     
-    var CLEAR: String = js.native
+    var CLEAR: String
     
-    var COMMAND: String = js.native
+    var COMMAND: String
     
-    var CONTROL: String = js.native
+    var CONTROL: String
     
-    var DECIMAL: String = js.native
+    var DECIMAL: String
     
-    var DELETE: String = js.native
+    var DELETE: String
     
-    var DIVIDE: String = js.native
+    var DIVIDE: String
     
-    var DOWN: String = js.native
+    var DOWN: String
     
-    var END: String = js.native
+    var END: String
     
-    var ENTER: String = js.native
+    var ENTER: String
     
-    var EQUALS: String = js.native
+    var EQUALS: String
     
-    var ESCAPE: String = js.native
+    var ESCAPE: String
     
-    var F1: String = js.native
+    var F1: String
     
-    var F10: String = js.native
+    var F10: String
     
-    var F11: String = js.native
+    var F11: String
     
-    var F12: String = js.native
+    var F12: String
     
     // function keys
-    var F2: String = js.native
+    var F2: String
     
-    var F3: String = js.native
+    var F3: String
     
-    var F4: String = js.native
+    var F4: String
     
-    var F5: String = js.native
+    var F5: String
     
-    var F6: String = js.native
+    var F6: String
     
-    var F7: String = js.native
+    var F7: String
     
-    var F8: String = js.native
+    var F8: String
     
-    var F9: String = js.native
+    var F9: String
     
     // ^break
-    var HELP: String = js.native
+    var HELP: String
     
-    var HOME: String = js.native
+    var HOME: String
     
-    var INSERT: String = js.native
+    var INSERT: String
     
-    var LEFT: String = js.native
+    var LEFT: String
     
     // Apple command key
-    var META: String = js.native
+    var META: String
     
-    var MULTIPLY: String = js.native
+    var MULTIPLY: String
     
-    var NULL: String = js.native
+    var NULL: String
     
-    var NUMPAD0: String = js.native
+    var NUMPAD0: String
     
     // number pad keys
-    var NUMPAD1: String = js.native
+    var NUMPAD1: String
     
-    var NUMPAD2: String = js.native
+    var NUMPAD2: String
     
-    var NUMPAD3: String = js.native
+    var NUMPAD3: String
     
-    var NUMPAD4: String = js.native
+    var NUMPAD4: String
     
-    var NUMPAD5: String = js.native
+    var NUMPAD5: String
     
-    var NUMPAD6: String = js.native
+    var NUMPAD6: String
     
-    var NUMPAD7: String = js.native
+    var NUMPAD7: String
     
-    var NUMPAD8: String = js.native
+    var NUMPAD8: String
     
-    var NUMPAD9: String = js.native
+    var NUMPAD9: String
     
-    var PAGE_DOWN: String = js.native
+    var PAGE_DOWN: String
     
-    var PAGE_UP: String = js.native
+    var PAGE_UP: String
     
-    var PAUSE: String = js.native
+    var PAUSE: String
     
-    var RETURN: String = js.native
+    var RETURN: String
     
-    var RIGHT: String = js.native
+    var RIGHT: String
     
-    var SEMICOLON: String = js.native
+    var SEMICOLON: String
     
-    var SEPARATOR: String = js.native
+    var SEPARATOR: String
     
-    var SHIFT: String = js.native
+    var SHIFT: String
     
-    var SPACE: String = js.native
+    var SPACE: String
     
-    var SUBTRACT: String = js.native
+    var SUBTRACT: String
     
-    var TAB: String = js.native
+    var TAB: String
     
-    var UP: String = js.native
+    var UP: String
     
     // alias for Windows key
     /**
@@ -518,7 +525,7 @@ object inputMod {
       * @param {...string} var_args The key sequence to concatenate.
       * @return {string} The null-terminated key sequence.
       */
-    def chord(var_args: (String | IKey)*): String = js.native
+    def chord(var_args: (String | IKey)*): String
   }
   object IKey {
     

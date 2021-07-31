@@ -3,24 +3,24 @@ package typings.gulpDebug
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-debug", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-debug", JSImport.Namespace)
-  @js.native
-  def apply(options: IOptions): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-debug", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IOptions extends StObject {
     
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IOptions {
     

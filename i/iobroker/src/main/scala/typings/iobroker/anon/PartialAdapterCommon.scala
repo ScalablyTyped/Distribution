@@ -16,152 +16,150 @@ import typings.iobroker.objectsMod.global.ioBroker.WelcomeScreenEntry
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.AdapterCommon> */
-@js.native
 trait PartialAdapterCommon extends StObject {
   
-  var adminColumns: js.UndefOr[js.Array[_]] = js.native
+  var adminColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var adminTab: js.UndefOr[Faicon] = js.native
+  var adminTab: js.UndefOr[Faicon] = js.undefined
   
-  var allowInit: js.UndefOr[Boolean] = js.native
+  var allowInit: js.UndefOr[Boolean] = js.undefined
   
-  var availableModes: js.UndefOr[js.Array[InstanceMode]] = js.native
+  var availableModes: js.UndefOr[js.Array[InstanceMode]] = js.undefined
   
-  var blockly: js.UndefOr[Boolean] = js.native
+  var blockly: js.UndefOr[Boolean] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var connectionType: js.UndefOr[local | cloud] = js.native
+  var connectionType: js.UndefOr[local | cloud] = js.undefined
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var dataFolder: js.UndefOr[String] = js.native
+  var dataFolder: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[poll | push | assumption] = js.native
+  var dataSource: js.UndefOr[poll | push | assumption] = js.undefined
   
-  var dependencies: js.UndefOr[js.Array[Record[String, String]]] = js.native
+  var dependencies: js.UndefOr[js.Array[Record[String, String]]] = js.undefined
   
-  var docs: js.UndefOr[PartialRecordLanguagesstr] = js.native
+  var docs: js.UndefOr[PartialRecordLanguagesstr] = js.undefined
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var eraseOnUpload: js.UndefOr[Boolean] = js.native
+  var eraseOnUpload: js.UndefOr[Boolean] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var extIcon: js.UndefOr[String] = js.native
+  var extIcon: js.UndefOr[String] = js.undefined
   
-  var getHistory: js.UndefOr[Boolean] = js.native
+  var getHistory: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var installedVersion: js.UndefOr[String] = js.native
+  var installedVersion: js.UndefOr[String] = js.undefined
   
-  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.undefined
   
-  var localLink: js.UndefOr[String] = js.native
+  var localLink: js.UndefOr[String] = js.undefined
   
-  var localLinks: js.UndefOr[Record[String, String]] = js.native
+  var localLinks: js.UndefOr[Record[String, String]] = js.undefined
   
-  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   
-  var logTransporter: js.UndefOr[Boolean] = js.native
+  var logTransporter: js.UndefOr[Boolean] = js.undefined
   
-  var main: js.UndefOr[String] = js.native
+  var main: js.UndefOr[String] = js.undefined
   
-  var materialize: js.UndefOr[Boolean] = js.native
+  var materialize: js.UndefOr[Boolean] = js.undefined
   
-  var materializeTab: js.UndefOr[Boolean] = js.native
+  var materializeTab: js.UndefOr[Boolean] = js.undefined
   
-  var messagebox: js.UndefOr[`true`] = js.native
+  var messagebox: js.UndefOr[`true`] = js.undefined
   
-  var mode: js.UndefOr[InstanceMode] = js.native
+  var mode: js.UndefOr[InstanceMode] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noConfig: js.UndefOr[`true`] = js.native
+  var noConfig: js.UndefOr[`true`] = js.undefined
   
-  var noIntro: js.UndefOr[`true`] = js.native
+  var noIntro: js.UndefOr[`true`] = js.undefined
   
-  var noRepository: js.UndefOr[`true`] = js.native
+  var noRepository: js.UndefOr[`true`] = js.undefined
   
-  var nogit: js.UndefOr[`true`] = js.native
+  var nogit: js.UndefOr[`true`] = js.undefined
   
-  var nondeletable: js.UndefOr[`true`] = js.native
+  var nondeletable: js.UndefOr[`true`] = js.undefined
   
-  var onlyWWW: js.UndefOr[Boolean] = js.native
+  var onlyWWW: js.UndefOr[Boolean] = js.undefined
   
-  var os: js.UndefOr[linux | darwin | win32 | (js.Array[linux | darwin | win32])] = js.native
+  var os: js.UndefOr[linux | darwin | win32 | (js.Array[linux | darwin | win32])] = js.undefined
   
-  var osDependencies: js.UndefOr[Darwin] = js.native
+  var osDependencies: js.UndefOr[Darwin] = js.undefined
   
-  var platform: js.UndefOr[JavascriptSlashNodeDotjs] = js.native
+  var platform: js.UndefOr[JavascriptSlashNodeDotjs] = js.undefined
   
-  var preserveSettings: js.UndefOr[String | js.Array[String]] = js.native
+  var preserveSettings: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var restartAdapters: js.UndefOr[js.Array[String]] = js.native
+  var restartAdapters: js.UndefOr[js.Array[String]] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
   
-  var serviceStates: js.UndefOr[Boolean | String] = js.native
+  var serviceStates: js.UndefOr[Boolean | String] = js.undefined
   
-  var singleton: js.UndefOr[Boolean] = js.native
+  var singleton: js.UndefOr[Boolean] = js.undefined
   
-  var singletonHost: js.UndefOr[Boolean] = js.native
+  var singletonHost: js.UndefOr[Boolean] = js.undefined
   
-  var stopBeforeUpdate: js.UndefOr[Boolean] = js.native
+  var stopBeforeUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var stopTimeout: js.UndefOr[Double] = js.native
+  var stopTimeout: js.UndefOr[Double] = js.undefined
   
-  var subscribable: js.UndefOr[Boolean] = js.native
+  var subscribable: js.UndefOr[Boolean] = js.undefined
   
-  var subscribe: js.UndefOr[js.Any] = js.native
+  var subscribe: js.UndefOr[js.Any] = js.undefined
   
-  var supportCustoms: js.UndefOr[Boolean] = js.native
+  var supportCustoms: js.UndefOr[Boolean] = js.undefined
   
-  var supportStopInstance: js.UndefOr[Boolean] = js.native
+  var supportStopInstance: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleLang: js.UndefOr[RecordLanguagesstring] = js.native
+  var titleLang: js.UndefOr[RecordLanguagesstring] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var unsafePerm: js.UndefOr[`true`] = js.native
+  var unsafePerm: js.UndefOr[`true`] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var wakeup: js.UndefOr[Boolean] = js.native
+  var wakeup: js.UndefOr[Boolean] = js.undefined
   
-  var webByVersion: js.UndefOr[Boolean] = js.native
+  var webByVersion: js.UndefOr[Boolean] = js.undefined
   
-  var webExtendable: js.UndefOr[Boolean] = js.native
+  var webExtendable: js.UndefOr[Boolean] = js.undefined
   
-  var webExtension: js.UndefOr[String] = js.native
+  var webExtension: js.UndefOr[String] = js.undefined
   
-  var webPreSettings: js.UndefOr[js.Any] = js.native
+  var webPreSettings: js.UndefOr[js.Any] = js.undefined
   
-  var webservers: js.UndefOr[js.Any] = js.native
+  var webservers: js.UndefOr[js.Any] = js.undefined
   
-  var welcomeScreen: js.UndefOr[js.Array[WelcomeScreenEntry]] = js.native
+  var welcomeScreen: js.UndefOr[js.Array[WelcomeScreenEntry]] = js.undefined
   
-  var welcomeScreenPro: js.UndefOr[js.Array[WelcomeScreenEntry]] = js.native
+  var welcomeScreenPro: js.UndefOr[js.Array[WelcomeScreenEntry]] = js.undefined
   
-  var wwwDontUpload: js.UndefOr[Boolean] = js.native
+  var wwwDontUpload: js.UndefOr[Boolean] = js.undefined
 }
 object PartialAdapterCommon {
   
   @scala.inline
-  def apply(): PartialAdapterCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialAdapterCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialAdapterCommon]
   }
   
@@ -169,7 +167,7 @@ object PartialAdapterCommon {
   implicit class PartialAdapterCommonMutableBuilder[Self <: PartialAdapterCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAdminColumns(value: js.Array[_]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
+    def setAdminColumns(value: js.Array[js.Any]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAdminColumnsUndefined: Self = StObject.set(x, "adminColumns", js.undefined)
@@ -215,6 +213,9 @@ object PartialAdapterCommon {
     
     @scala.inline
     def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataFolder(value: String): Self = StObject.set(x, "dataFolder", value.asInstanceOf[js.Any])

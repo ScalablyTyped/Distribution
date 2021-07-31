@@ -4,7 +4,6 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.audio
 import typings.agoraRtcSdk.agoraRtcSdkStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,10 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See [MediaStreamTrack](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack) for details.
   *
   */
-@js.native
 trait MediaStreamTrack extends StObject {
   
-  var kind: audio | video = js.native
+  var kind: audio | video
 }
 object MediaStreamTrack {
   

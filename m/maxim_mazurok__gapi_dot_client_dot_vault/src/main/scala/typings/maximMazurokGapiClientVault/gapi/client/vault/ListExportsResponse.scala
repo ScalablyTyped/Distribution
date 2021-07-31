@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListExportsResponse extends StObject {
   
   /** The list of exports. */
-  var exports: js.UndefOr[js.Array[Export]] = js.native
+  var exports: js.UndefOr[js.Array[Export]] = js.undefined
   
   /** Page token to retrieve the next page of results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListExportsResponse {
   

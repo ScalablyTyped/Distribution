@@ -19,10 +19,13 @@ import typings.std.Intl.NumberFormatOptions
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@lingui/macro", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@lingui/macro", "DateFormat")
@@ -85,45 +88,33 @@ object mod {
   @js.native
   class Trans () extends default
   
-  @JSImport("@lingui/macro", "date")
-  @js.native
-  def date(value: Date): MessageDescriptor = js.native
-  @JSImport("@lingui/macro", "date")
-  @js.native
-  def date(value: Date, format: DateTimeFormatOptions): MessageDescriptor = js.native
+  @scala.inline
+  def date(value: Date): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  @scala.inline
+  def date(value: Date, format: DateTimeFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @JSImport("@lingui/macro", "number")
-  @js.native
-  def number(value: Double): MessageDescriptor = js.native
-  @JSImport("@lingui/macro", "number")
-  @js.native
-  def number(value: Double, format: NumberFormatOptions): MessageDescriptor = js.native
+  @scala.inline
+  def number(value: Double): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  @scala.inline
+  def number(value: Double, format: NumberFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @JSImport("@lingui/macro", "plural")
-  @js.native
-  def plural(config: PluralProps): MessageDescriptor = js.native
-  @JSImport("@lingui/macro", "plural")
-  @js.native
-  def plural(id: String, config: PluralProps): MessageDescriptor = js.native
+  @scala.inline
+  def plural(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("plural")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  @scala.inline
+  def plural(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("plural")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @JSImport("@lingui/macro", "select")
-  @js.native
-  def select(config: SelectProps): MessageDescriptor = js.native
-  @JSImport("@lingui/macro", "select")
-  @js.native
-  def select(id: String, config: SelectProps): MessageDescriptor = js.native
+  @scala.inline
+  def select(config: SelectProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  @scala.inline
+  def select(id: String, config: SelectProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @JSImport("@lingui/macro", "selectOrdinal")
-  @js.native
-  def selectOrdinal(config: PluralProps): MessageDescriptor = js.native
-  @JSImport("@lingui/macro", "selectOrdinal")
-  @js.native
-  def selectOrdinal(id: String, config: PluralProps): MessageDescriptor = js.native
+  @scala.inline
+  def selectOrdinal(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  @scala.inline
+  def selectOrdinal(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @JSImport("@lingui/macro", "t")
-  @js.native
-  def t(id: String): js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor] = js.native
-  @JSImport("@lingui/macro", "t")
-  @js.native
-  def t(strings: TemplateStringsArray, values: js.Any*): MessageDescriptor = js.native
+  @scala.inline
+  def t(id: String): js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(id.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor]]
+  @scala.inline
+  def t(strings: TemplateStringsArray, values: js.Any*): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
 }

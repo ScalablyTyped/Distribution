@@ -3,13 +3,11 @@ package typings.azdata.mod.nb
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageHandler[T /* <: IMessage */] extends StObject {
   
-  def handle(message: T): Unit | Thenable[Unit] = js.native
+  def handle(message: T): Unit | Thenable[Unit]
 }
 object MessageHandler {
   
@@ -20,7 +18,7 @@ object MessageHandler {
   }
   
   @scala.inline
-  implicit class MessageHandlerMutableBuilder[Self <: MessageHandler[_], T /* <: IMessage */] (val x: Self with MessageHandler[T]) extends AnyVal {
+  implicit class MessageHandlerMutableBuilder[Self <: MessageHandler[?], T /* <: IMessage */] (val x: Self & MessageHandler[T]) extends AnyVal {
     
     @scala.inline
     def setHandle(value: T => Unit | Thenable[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))

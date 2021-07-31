@@ -7,7 +7,6 @@ import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object marqueeSelectionBaseMod {
@@ -99,12 +98,11 @@ object marqueeSelectionBaseMod {
     def defaultProps_=(x: IsEnabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IMarqueeSelectionState extends StObject {
     
-    var dragOrigin: js.UndefOr[Point] = js.native
+    var dragOrigin: js.UndefOr[Point] = js.undefined
     
-    var dragRect: js.UndefOr[IRectangle] = js.native
+    var dragRect: js.UndefOr[IRectangle] = js.undefined
   }
   object IMarqueeSelectionState {
     

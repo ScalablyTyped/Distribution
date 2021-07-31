@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedPlan extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait AssignedPlan extends StObject {
     * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
     * look like this: '2014-01-01T00:00:00Z'
     */
-  var assignedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var assignedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For example, 'Enabled'.
-  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.native
+  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the service; for example, 'Exchange'.
-  var service: js.UndefOr[NullableOption[String]] = js.native
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A GUID that identifies the service plan.
-  var servicePlanId: js.UndefOr[NullableOption[String]] = js.native
+  var servicePlanId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AssignedPlan {
   

@@ -2,19 +2,17 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagHeaderFlags extends StObject {
   
-  var experimental_indicator: Boolean = js.native
+  var experimental_indicator: Boolean
   
-  var extended_header: Boolean = js.native
+  var extended_header: Boolean
   
-  var footer_present: Boolean = js.native
+  var footer_present: Boolean
   
-  var unsynchronisation: Boolean = js.native
+  var unsynchronisation: Boolean
 }
 object TagHeaderFlags {
   

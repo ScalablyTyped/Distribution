@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeValidDBInstanceModificationsResult extends StObject {
   
-  var ValidDBInstanceModificationsMessage: js.UndefOr[typings.awsSdk.rdsMod.ValidDBInstanceModificationsMessage] = js.native
+  var ValidDBInstanceModificationsMessage: js.UndefOr[typings.awsSdk.rdsMod.ValidDBInstanceModificationsMessage] = js.undefined
 }
 object DescribeValidDBInstanceModificationsResult {
   

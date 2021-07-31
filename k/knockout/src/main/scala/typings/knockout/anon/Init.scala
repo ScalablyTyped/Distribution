@@ -5,15 +5,13 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Init extends StObject {
   
-  def init(): BindingHandlerControlsDescendant = js.native
+  def init(): BindingHandlerControlsDescendant
   
-  def update(element: Node, valueAccessor: js.Function0[MaybeSubscribable[String]]): Unit = js.native
+  def update(element: Node, valueAccessor: js.Function0[MaybeSubscribable[String]]): Unit
 }
 object Init {
   

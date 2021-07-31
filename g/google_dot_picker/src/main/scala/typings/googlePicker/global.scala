@@ -1,8 +1,8 @@
 package typings.googlePicker
 
+import typings.googlePicker.google.picker.Picker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -33,13 +33,24 @@ object global {
       @JSGlobal("google.picker.DocsUploadView")
       @js.native
       class DocsUploadView ()
-        extends typings.googlePicker.google.picker.DocsUploadView
+        extends StObject
+           with typings.googlePicker.google.picker.DocsUploadView {
+        
+        // Allows the user to select a folder in Google Drive to upload to.
+        /* CompleteClass */
+        override def setIncludeFolders(included: Boolean): typings.googlePicker.google.picker.DocsUploadView = js.native
+        
+        // Sets the upload destination to the specified folder. This overrides ".setIncludeFolders" to false.
+        /* CompleteClass */
+        override def setParent(parentId: String): typings.googlePicker.google.picker.DocsUploadView = js.native
+      }
       
       @JSGlobal("google.picker.DocsView")
       @js.native
       // Constructor. The ViewId must be one of the Google Drive views. Default is ViewId.DOCS.
       class DocsView ()
-        extends typings.googlePicker.google.picker.DocsView {
+        extends StObject
+           with typings.googlePicker.google.picker.DocsView {
         def this(viewId: String) = this()
       }
       
@@ -236,7 +247,101 @@ object global {
       @JSGlobal("google.picker.PickerBuilder")
       @js.native
       class PickerBuilder ()
-        extends typings.googlePicker.google.picker.PickerBuilder
+        extends StObject
+           with typings.googlePicker.google.picker.PickerBuilder {
+        
+        // Add a View to the navigation pane.
+        /* CompleteClass */
+        override def addView(viewOrId: js.Any): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Add a ViewGroup to the top-level navigation pane.
+        /* CompleteClass */
+        override def addViewGroup(viewGroup: js.Any): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Construct the Picker object. The Picker object is returned.
+        /* CompleteClass */
+        override def build(): Picker = js.native
+        
+        // Disable a picker feature.
+        /* CompleteClass */
+        override def disableFeature(feature: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Enable a picker feature.
+        /* CompleteClass */
+        override def enableFeature(feature: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Get the relay URL, used for gadgets.rpc.
+        /* CompleteClass */
+        override def getRelayUrl(): String = js.native
+        
+        // Get the dialog title.
+        /* CompleteClass */
+        override def getTitle(): String = js.native
+        
+        // Disable the title bar from being shown. To re-enable, call setTitle with a non-empty title or undefined.
+        /* CompleteClass */
+        override def hideTitleBar(): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Check if a picker Feature is enabled.
+        /* CompleteClass */
+        override def isFeatureEnabled(feature: String): Boolean = js.native
+        
+        // Sets the Google Drive App ID needed to allow application to access the user's files via the Google Drive API.
+        /* CompleteClass */
+        override def setAppId(appId: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the callback method called when the user picks and item (or items), or cancels. The callback method receives a single callback object. The structure of the callback object is described in the JSON Guide.
+        /* CompleteClass */
+        override def setCallback(method: js.Function): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Sets the Browser API key obtained from Google Developers Console. See the Developer's Guide for details on how to obtain the Browser API key.
+        /* CompleteClass */
+        override def setDeveloperKey(key: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the document.
+        /* CompleteClass */
+        override def setDocument(document: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // ISO 639 language code. If the language is not supported, en-US is used. This method provides an alternative to setting the locale at google.load() time. See the Developer's Guide for a list of supported locales.
+        /* CompleteClass */
+        override def setLocale(locale: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Sets the maximum number of items a user can pick.
+        /* CompleteClass */
+        override def setMaxItems(max: Double): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Sets an OAuth token to use for authenticating the current user. Depending on the scope of the token, only certain views will display data. Valid scopes are Google Docs, Drive, Photos, YouTube.
+        /* CompleteClass */
+        override def setOAuthToken(token: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Sets the origin of picker dialog. The origin should be set to the window.location.protocol + '//' + window.location.host of the top-most page, if your application is running in an iframe.
+        /* CompleteClass */
+        override def setOrigin(origin: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the relay URL, used for gadgets.rpc.
+        /* CompleteClass */
+        override def setRelayUrl(url: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the list of MIME types which will be selectable. Use commas to separate MIME types if more than one is required.
+        /* CompleteClass */
+        override def setSelectableMimeTypes(`type`: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the preferred dialog size. The dialog will be auto-centered. It has a minimum size of (566,350) and a maximum size of (1051,650).
+        /* CompleteClass */
+        override def setSize(width: Double, height: Double): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Set the dialog title.
+        /* CompleteClass */
+        override def setTitle(title: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Specify an album ID for photo uploads. See Picasa Web Albums Data API documentation for more information about albums.
+        /* CompleteClass */
+        override def setUploadToAlbumId(albumId: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        
+        // Returns the URI generated by this builder.
+        /* CompleteClass */
+        override def toUri(): String = js.native
+      }
       
       object Response {
         

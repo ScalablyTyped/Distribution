@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endpoint extends StObject {
   
   /**
     * An endpoint address.
     */
-  var Address: String = js.native
+  var Address: String
   
   /**
     * The TTL for the endpoint, in minutes.
     */
-  var CachePeriodInMinutes: Long = js.native
+  var CachePeriodInMinutes: Long
 }
 object Endpoint {
   

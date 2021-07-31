@@ -3,22 +3,22 @@ package typings.ow
 import typings.ow.owBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hasItemsMod {
   
-  @JSImport("ow/dist/source/utils/has-items", JSImport.Default)
+  @JSImport("ow/dist/source/utils/has-items", JSImport.Namespace)
   @js.native
-  def default[T](source: CollectionLike[T], items: js.Array[T]): `true` | js.Array[T] = js.native
-  @JSImport("ow/dist/source/utils/has-items", JSImport.Default)
-  @js.native
-  def default[T](source: CollectionLike[T], items: js.Array[T], maxValues: Double): `true` | js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](source: CollectionLike[T], items: js.Array[T]): `true` | js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[T]]
+  @scala.inline
+  def default[T](source: CollectionLike[T], items: js.Array[T], maxValues: Double): `true` | js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], items.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[T]]
+  
   trait CollectionLike[T] extends StObject {
     
-    def has(item: T): Boolean = js.native
+    def has(item: T): Boolean
   }
   object CollectionLike {
     
@@ -29,7 +29,7 @@ object hasItemsMod {
     }
     
     @scala.inline
-    implicit class CollectionLikeMutableBuilder[Self <: CollectionLike[_], T] (val x: Self with CollectionLike[T]) extends AnyVal {
+    implicit class CollectionLikeMutableBuilder[Self <: CollectionLike[?], T] (val x: Self & CollectionLike[T]) extends AnyVal {
       
       @scala.inline
       def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))

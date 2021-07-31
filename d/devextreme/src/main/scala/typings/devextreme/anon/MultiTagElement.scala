@@ -4,25 +4,23 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxTagBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiTagElement extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxTagBox] = js.native
+  var component: js.UndefOr[dxTagBox] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var multiTagElement: js.UndefOr[dxElement] = js.native
+  var multiTagElement: js.UndefOr[dxElement] = js.undefined
   
-  var selectedItems: js.UndefOr[js.Array[String | Double | _]] = js.native
+  var selectedItems: js.UndefOr[js.Array[String | Double | js.Any]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object MultiTagElement {
   
@@ -66,7 +64,7 @@ object MultiTagElement {
     def setMultiTagElementUndefined: Self = StObject.set(x, "multiTagElement", js.undefined)
     
     @scala.inline
-    def setSelectedItems(value: js.Array[String | Double | _]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)

@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait CalendarType extends StObject
 object CalendarType extends StObject {
   
   @js.native
-  sealed trait Gregorian extends CalendarType
+  sealed trait Gregorian
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait Islamic extends CalendarType
+  sealed trait Islamic
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait Japanese extends CalendarType
+  sealed trait Japanese
+    extends StObject
+       with CalendarType
 }

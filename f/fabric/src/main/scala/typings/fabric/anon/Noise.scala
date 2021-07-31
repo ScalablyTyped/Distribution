@@ -2,14 +2,12 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Noise extends StObject {
   
   /** @default 0 */
-  var noise: Double = js.native
+  var noise: Double
 }
 object Noise {
   

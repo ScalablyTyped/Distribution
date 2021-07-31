@@ -2,17 +2,15 @@ package typings.workboxPrecaching
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object installResultMod {
   
-  @js.native
   trait InstallResult extends StObject {
     
-    var notUpdatedURLs: js.Array[String] = js.native
+    var notUpdatedURLs: js.Array[String]
     
-    var updatedURLs: js.Array[String] = js.native
+    var updatedURLs: js.Array[String]
   }
   object InstallResult {
     

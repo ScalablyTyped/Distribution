@@ -2,49 +2,47 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShapeDefaults extends StObject {
   
-  var connectorDefaults: js.UndefOr[DiagramShapeDefaultsConnectorDefaults] = js.native
+  var connectorDefaults: js.UndefOr[DiagramShapeDefaultsConnectorDefaults] = js.undefined
   
-  var connectors: js.UndefOr[js.Array[DiagramShapeDefaultsConnector]] = js.native
+  var connectors: js.UndefOr[js.Array[DiagramShapeDefaultsConnector]] = js.undefined
   
-  var content: js.UndefOr[DiagramShapeDefaultsContent] = js.native
+  var content: js.UndefOr[DiagramShapeDefaultsContent] = js.undefined
   
-  var editable: js.UndefOr[Boolean | DiagramShapeDefaultsEditable] = js.native
+  var editable: js.UndefOr[Boolean | DiagramShapeDefaultsEditable] = js.undefined
   
-  var fill: js.UndefOr[String | DiagramShapeDefaultsFill] = js.native
+  var fill: js.UndefOr[String | DiagramShapeDefaultsFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[DiagramShapeDefaultsHover] = js.native
+  var hover: js.UndefOr[DiagramShapeDefaultsHover] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[DiagramShapeDefaultsRotation] = js.native
+  var rotation: js.UndefOr[DiagramShapeDefaultsRotation] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[DiagramShapeDefaultsStroke] = js.native
+  var stroke: js.UndefOr[DiagramShapeDefaultsStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DiagramShapeDefaults {
   

@@ -3,7 +3,6 @@ package typings.cordovaPluginContacts
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,15 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from the device contacts database. Contacts can also be retrieved (individually or in bulk)
   * from the database by invoking the navigator.contacts.find method.
   */
-@js.native
-trait Contact extends ContactProperties {
+trait Contact
+  extends StObject
+     with ContactProperties {
   
   /**
     * Removes the contact from the device contacts database, otherwise executes an error callback with a ContactError object.
     * @param onSuccess Success callback function invoked on success operation.
     * @param onError Error callback function, invoked when an error occurs.
     */
-  def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
     * Saves a new contact to the device contacts database, or updates an existing contact if a contact with the same id already exists.
@@ -29,7 +29,7 @@ trait Contact extends ContactProperties {
   def save(
     onSuccess: js.Function1[/* contact */ this.type, Unit],
     onError: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Contact {
   

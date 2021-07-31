@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressEditor.errorBoundaryMod.ErrorBoundary.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorBoundaryMod {
@@ -25,12 +24,11 @@ object errorBoundaryMod {
   
   object ErrorBoundary {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      def onError(): Unit = js.native
+      def onError(): Unit
     }
     object Props {
       

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTrialResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the trial that is being deleted.
     */
-  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.native
+  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.undefined
 }
 object DeleteTrialResponse {
   

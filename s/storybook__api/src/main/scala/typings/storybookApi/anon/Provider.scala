@@ -2,13 +2,11 @@ package typings.storybookApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Provider extends StObject {
   
-  var provider: typings.storybookApi.providerMod.Provider = js.native
+  var provider: typings.storybookApi.providerMod.Provider
 }
 object Provider {
   

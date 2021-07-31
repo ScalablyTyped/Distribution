@@ -5,30 +5,30 @@ import typings.mobx.observableobjectMod.IObjectWillChange
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectType[T] extends IObjectWillChange[T] {
+trait ObjectType[T]
+  extends StObject
+     with IObjectWillChange[T] {
   
-  var name: PropertyKey = js.native
+  var name: PropertyKey
   
-  var `object`: T = js.native
+  var `object`: T
   
-  var `type`: remove = js.native
+  var `type`: remove
 }
 object ObjectType {
   
   @scala.inline
-  def apply[T](name: PropertyKey, `object`: T, `type`: remove): ObjectType[T] = {
+  def apply[T](name: PropertyKey, `object`: T): ObjectType[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("remove")
     __obj.asInstanceOf[ObjectType[T]]
   }
   
   @scala.inline
-  implicit class ObjectTypeMutableBuilder[Self <: ObjectType[_], T] (val x: Self with ObjectType[T]) extends AnyVal {
+  implicit class ObjectTypeMutableBuilder[Self <: ObjectType[?], T] (val x: Self & ObjectType[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

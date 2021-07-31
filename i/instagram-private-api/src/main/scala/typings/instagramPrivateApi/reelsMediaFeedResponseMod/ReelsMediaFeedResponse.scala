@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponse extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var items: js.Array[ReelsMediaFeedResponseItem] = js.native
+  var items: js.Array[ReelsMediaFeedResponseItem]
   
-  var latest_reel_media: Double = js.native
+  var latest_reel_media: Double
   
-  var media_count: Double = js.native
+  var media_count: Double
   
-  var prefetch_count: Double = js.native
+  var prefetch_count: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var seen: Double = js.native
+  var seen: Double
   
-  var user: ReelsMediaFeedResponseUser = js.native
+  var user: ReelsMediaFeedResponseUser
 }
 object ReelsMediaFeedResponse {
   

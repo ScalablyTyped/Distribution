@@ -15,52 +15,53 @@ import typings.reactMdTree.typesMod.UnknownTreeItem
 import typings.reactMdTree.useFlattenedTreeListMod.MetadataRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTreeMovementMod {
   
-  @JSImport("@react-md/tree/types/useTreeMovement", "useTreeMovement")
+  @JSImport("@react-md/tree/types/useTreeMovement", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useTreeMovement(
     hasIdDataRootIdSortOnBlurOnFocusOnKeyDownMultiSelectSelectedIdsOnItemSelectOnMultiItemSelectExpandedIdsOnItemExpansionOnMultiItemExpansionValueKeyGetItemValue: Options
-  ): ReturnValue = js.native
+  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMovement")(hasIdDataRootIdSortOnBlurOnFocusOnKeyDownMultiSelectSelectedIdsOnItemSelectOnMultiItemSelectExpandedIdsOnItemExpansionOnMultiItemExpansionValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   /* Inlined std.Pick<@react-md/tree.@react-md/tree/types/types.TreeProps<@react-md/tree.@react-md/tree/types/types.UnknownTreeItem>, 'id' | 'data' | 'sort' | 'onBlur' | 'onFocus' | 'onKeyDown' | 'multiSelect' | 'selectedIds' | 'onItemSelect' | 'onMultiItemSelect' | 'expandedIds' | 'onItemExpansion' | 'onMultiItemExpansion'> & std.Required<std.Pick<@react-md/tree.@react-md/tree/types/types.TreeProps<@react-md/tree.@react-md/tree/types/types.UnknownTreeItem>, 'valueKey' | 'getItemValue' | 'rootId'>> */
-  @js.native
   trait Options extends StObject {
     
-    var data: TreeData[UnknownTreeItem] = js.native
+    var data: TreeData[UnknownTreeItem]
     
-    var expandedIds: ExpandedIds = js.native
+    var expandedIds: ExpandedIds
     
-    var getItemValue: js.Function2[/* item */ UnknownTreeItem, /* valueKey */ String, String] = js.native
+    var getItemValue: js.Function2[/* item */ UnknownTreeItem, /* valueKey */ String, String]
     
-    var id: String = js.native
+    var id: String
     
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[ListElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[ListElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[ListElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[ListElement]] = js.undefined
     
-    var onItemExpansion: js.Function2[/* itemId */ TreeItemId, /* expanded */ Boolean, Unit] = js.native
+    var onItemExpansion: js.Function2[/* itemId */ TreeItemId, /* expanded */ Boolean, Unit]
     
-    var onItemSelect: js.Function1[/* itemId */ TreeItemId, Unit] = js.native
+    var onItemSelect: js.Function1[/* itemId */ TreeItemId, Unit]
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[ListElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[ListElement]] = js.undefined
     
-    var onMultiItemExpansion: js.Function1[/* itemIds */ ExpandedIds, Unit] = js.native
+    var onMultiItemExpansion: js.Function1[/* itemIds */ ExpandedIds, Unit]
     
-    var onMultiItemSelect: js.Function1[/* itemIds */ SelectedIds, Unit] = js.native
+    var onMultiItemSelect: js.Function1[/* itemIds */ SelectedIds, Unit]
     
-    var rootId: TreeItemId = js.native
+    var rootId: TreeItemId
     
-    var selectedIds: SelectedIds = js.native
+    var selectedIds: SelectedIds
     
-    var sort: js.UndefOr[TreeItemSorter[UnknownTreeItem]] = js.native
+    var sort: js.UndefOr[TreeItemSorter[UnknownTreeItem]] = js.undefined
     
-    var valueKey: String = js.native
+    var valueKey: String
   }
   object Options {
     
@@ -156,27 +157,26 @@ object useTreeMovementMod {
     }
   }
   
-  @js.native
   trait ReturnValue extends StObject {
     
     /**
       * The current treeitem's DOM id that is currently keyboard focused.
       */
-    var activeId: String = js.native
+    var activeId: String
     
     /**
       * A blur handler that should be passed to the tree list element that handles
       * removing the `aria-activedescendant` when the tree is no longer within
       * focus. This will also call the optional `onBlur` prop.
       */
-    var handleBlur: FocusEventHandler[ListElement] = js.native
+    var handleBlur: FocusEventHandler[ListElement]
     
     /**
       * A focus handler that should be passed to the tree element that handles
       * conditionally setting the default `aria-activedescendant` id on first
       * focus. This will also call the optional `onFocus` prop.
       */
-    var handleFocus: FocusEventHandler[ListElement] = js.native
+    var handleFocus: FocusEventHandler[ListElement]
     
     /**
       * The keydown handler that should be passed to the tree list element that
@@ -184,20 +184,20 @@ object useTreeMovementMod {
       *
       * This will also call the optional `onKeyDown` prop.
       */
-    var handleKeyDown: KeyboardEventHandler[ListElement] = js.native
+    var handleKeyDown: KeyboardEventHandler[ListElement]
     
     /**
       * A record containing the DOM ids for each tree item along with a ref object
       * to provide to the itemRenderer for that item. This is just for a quick
       * lookup to help with all the tree traversal and keyboard movement.
       */
-    var itemIdRefs: MetadataRecord = js.native
+    var itemIdRefs: MetadataRecord
     
     /**
       * A nested list representation of the provided tree data. This is used for
       * rendering all the treeitem nodes.
       */
-    var items: js.Array[NestedTreeItemUnknownTree] = js.native
+    var items: js.Array[NestedTreeItemUnknownTree]
     
     /**
       * A function that updates the `activeId` based on the provided `itemId`. This
@@ -205,7 +205,7 @@ object useTreeMovementMod {
       * touch since the `activeId` will be updated automatically for all the other
       * flows.
       */
-    def setActiveId(itemId: TreeItemId): Unit = js.native
+    def setActiveId(itemId: TreeItemId): Unit
   }
   object ReturnValue {
     

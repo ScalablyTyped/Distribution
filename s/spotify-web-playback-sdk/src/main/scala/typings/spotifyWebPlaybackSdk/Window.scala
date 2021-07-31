@@ -3,15 +3,13 @@ package typings.spotifyWebPlaybackSdk
 import typings.spotifyWebPlaybackSdk.anon.TypeofSpotify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var Spotify: TypeofSpotify = js.native
+  var Spotify: TypeofSpotify
   
-  def onSpotifyWebPlaybackSDKReady(): Unit = js.native
+  def onSpotifyWebPlaybackSDKReady(): Unit
 }
 object Window {
   

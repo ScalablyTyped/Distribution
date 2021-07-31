@@ -13,7 +13,6 @@ import typings.uaParserJs.IUAParser.IResult
 import typings.uaParserJs.IUAParser.OS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,8 +24,8 @@ object mod {
     */
   class UAParser () extends StObject {
     def this(uastring: String) = this()
-    def this(uastring: js.UndefOr[scala.Nothing], extensions: js.Any) = this()
     def this(uastring: String, extensions: js.Any) = this()
+    def this(uastring: Unit, extensions: js.Any) = this()
     
     /**
       *  Returns browser information

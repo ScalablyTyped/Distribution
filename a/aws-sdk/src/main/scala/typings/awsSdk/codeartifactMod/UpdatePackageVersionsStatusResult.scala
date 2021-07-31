@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePackageVersionsStatusResult extends StObject {
   
   /**
     *  A list of SuccessfulPackageVersionInfo objects, one for each package version with a status that successfully updated. 
     */
-  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.native
+  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.undefined
   
   /**
     *  A list of PackageVersionError objects, one for each package version with a status that failed to update. 
     */
-  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.native
+  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.undefined
 }
 object UpdatePackageVersionsStatusResult {
   

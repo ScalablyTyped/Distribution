@@ -2,26 +2,26 @@ package typings.uslug
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("uslug", JSImport.Namespace)
-  @js.native
-  def apply(value: String): String = js.native
-  @JSImport("uslug", JSImport.Namespace)
-  @js.native
-  def apply(value: String, options: UslugOptions): String = js.native
+  @scala.inline
+  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, options: UslugOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("uslug", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait UslugOptions extends StObject {
     
-    var allowedChars: js.UndefOr[String] = js.native
+    var allowedChars: js.UndefOr[String] = js.undefined
     
-    var lower: js.UndefOr[Boolean] = js.native
+    var lower: js.UndefOr[Boolean] = js.undefined
     
-    var spaces: js.UndefOr[Boolean] = js.native
+    var spaces: js.UndefOr[Boolean] = js.undefined
   }
   object UslugOptions {
     

@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveLikeResponseMod {
   
-  @js.native
   trait LiveLikeResponseRootObject extends StObject {
     
-    var burst_likes: Double = js.native
+    var burst_likes: Double
     
-    var likes: Double = js.native
+    var likes: Double
     
-    var status: String = js.native
+    var status: String
   }
   object LiveLikeResponseRootObject {
     

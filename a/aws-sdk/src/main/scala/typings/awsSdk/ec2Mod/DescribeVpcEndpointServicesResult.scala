@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcEndpointServicesResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the service.
     */
-  var ServiceDetails: js.UndefOr[ServiceDetailSet] = js.native
+  var ServiceDetails: js.UndefOr[ServiceDetailSet] = js.undefined
   
   /**
     * A list of supported services.
     */
-  var ServiceNames: js.UndefOr[ValueStringList] = js.native
+  var ServiceNames: js.UndefOr[ValueStringList] = js.undefined
 }
 object DescribeVpcEndpointServicesResult {
   

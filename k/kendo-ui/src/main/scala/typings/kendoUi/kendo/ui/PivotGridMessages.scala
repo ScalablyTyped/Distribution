@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridMessages extends StObject {
   
-  var columnFields: js.UndefOr[String] = js.native
+  var columnFields: js.UndefOr[String] = js.undefined
   
-  var fieldMenu: js.UndefOr[PivotGridMessagesFieldMenu] = js.native
+  var fieldMenu: js.UndefOr[PivotGridMessagesFieldMenu] = js.undefined
   
-  var measureFields: js.UndefOr[String] = js.native
+  var measureFields: js.UndefOr[String] = js.undefined
   
-  var rowFields: js.UndefOr[String] = js.native
+  var rowFields: js.UndefOr[String] = js.undefined
 }
 object PivotGridMessages {
   

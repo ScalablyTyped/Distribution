@@ -2,41 +2,39 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexConfigurationSummary extends StObject {
   
   /**
     * The Unix timestamp when the index was created.
     */
-  var CreatedAt: Timestamp = js.native
+  var CreatedAt: Timestamp
   
   /**
     * Indicates whether the index is a enterprise edition index or a developer edition index. 
     */
-  var Edition: js.UndefOr[IndexEdition] = js.native
+  var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
     * A unique identifier for the index. Use this to identify the index when you are using operations such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
     */
-  var Id: js.UndefOr[IndexId] = js.native
+  var Id: js.UndefOr[IndexId] = js.undefined
   
   /**
     * The name of the index.
     */
-  var Name: js.UndefOr[IndexName] = js.native
+  var Name: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The current status of the index. When the status is ACTIVE, the index is ready to search.
     */
-  var Status: IndexStatus = js.native
+  var Status: IndexStatus
   
   /**
     * The Unix timestamp when the index was last updated by the UpdateIndex operation.
     */
-  var UpdatedAt: Timestamp = js.native
+  var UpdatedAt: Timestamp
 }
 object IndexConfigurationSummary {
   

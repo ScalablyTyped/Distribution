@@ -11,7 +11,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.Screen")
@@ -386,9 +385,9 @@ class Screen protected () extends NodeWithEvents {
     * Spawn a process in the foreground, return to blessed app after exit.
     */
   def spawn(file: String): ChildProcess = js.native
-  def spawn(file: String, args: js.UndefOr[scala.Nothing], options: NodeChildProcessExecOptions): ChildProcess = js.native
   def spawn(file: String, args: js.Array[String]): ChildProcess = js.native
   def spawn(file: String, args: js.Array[String], options: NodeChildProcessExecOptions): ChildProcess = js.native
+  def spawn(file: String, args: Unit, options: NodeChildProcessExecOptions): ChildProcess = js.native
   
   /**
     * The width of tabs within an element's content.

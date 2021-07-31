@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html)
   */
-@js.native
 trait symbologyDotDensity extends StObject {
   
   /**
@@ -18,28 +16,28 @@ trait symbologyDotDensity extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#cloneScheme)
     */
-  def cloneScheme(scheme: DotDensityScheme): DotDensityScheme = js.native
+  def cloneScheme(scheme: DotDensityScheme): DotDensityScheme
   
   /**
     * Returns a dot density scheme with the provided name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemeByName)
     */
-  def getSchemeByName(params: dotDensityGetSchemeByNameParams): DotDensityScheme = js.native
+  def getSchemeByName(params: dotDensityGetSchemeByNameParams): DotDensityScheme
   
   /**
     * Returns a primary scheme and secondary schemes defining symbol properties for dot density-based data-driven visualizations in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
     */
-  def getSchemes(params: dotDensityGetSchemesParams): DotDensitySchemes = js.native
+  def getSchemes(params: dotDensityGetSchemesParams): DotDensitySchemes
   
   /**
     * Returns an array of dot density schemes with the provided tags.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemesByTag)
     */
-  def getSchemesByTag(params: dotDensityGetSchemesByTagParams): js.Array[DotDensityScheme] = js.native
+  def getSchemesByTag(params: dotDensityGetSchemesByTagParams): js.Array[DotDensityScheme]
 }
 object symbologyDotDensity {
   

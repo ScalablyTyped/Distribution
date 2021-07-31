@@ -5,22 +5,20 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Tile/Tile.TileProps> */
-@js.native
 trait PartialTileProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var isDouble: js.UndefOr[Boolean] = js.native
+  var isDouble: js.UndefOr[Boolean] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var size: js.UndefOr[s] = js.native
+  var size: js.UndefOr[s] = js.undefined
 }
 object PartialTileProps {
   

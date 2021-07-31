@@ -2,24 +2,22 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The read-only metadata about a profile.
   */
-@js.native
 trait SchemaProfileMetadata extends StObject {
   
   /**
     * The profile object type.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * The user types.
     */
-  var userTypes: js.UndefOr[js.Array[String]] = js.native
+  var userTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaProfileMetadata {
   

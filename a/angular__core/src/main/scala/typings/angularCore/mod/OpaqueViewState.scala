@@ -3,19 +3,17 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.`Brand for OpaqueViewState that nothing will match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpaqueViewState extends StObject {
   
-  var __brand__ : `Brand for OpaqueViewState that nothing will match` = js.native
+  var __brand__ : `Brand for OpaqueViewState that nothing will match`
 }
 object OpaqueViewState {
   
   @scala.inline
-  def apply(__brand__ : `Brand for OpaqueViewState that nothing will match`): OpaqueViewState = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
+  def apply(): OpaqueViewState = {
+    val __obj = js.Dynamic.literal(__brand__ = "Brand for OpaqueViewState that nothing will match")
     __obj.asInstanceOf[OpaqueViewState]
   }
   

@@ -4,17 +4,15 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamInfo extends StObject {
   
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
-  var reader: ReadableStream = js.native
+  var reader: ReadableStream
   
-  var writer: WritableStream = js.native
+  var writer: WritableStream
 }
 object StreamInfo {
   

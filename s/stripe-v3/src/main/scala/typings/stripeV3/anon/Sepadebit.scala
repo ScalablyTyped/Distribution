@@ -3,21 +3,19 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.elements.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sepadebit extends StObject {
   
   /**
     * The customer's billing_details. name and email are required.
     */
-  var billing_details: Email = js.native
+  var billing_details: Email
   
   /**
     * An iban Element.
     */
-  var sepa_debit: Element | Iban = js.native
+  var sepa_debit: Element | Iban
 }
 object Sepadebit {
   

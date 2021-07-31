@@ -2,22 +2,20 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectIdAndType extends StObject {
   
   /**
     * The object ID, this can be a URL or a Facebook ID.
     */
-  var objectId: String = js.native
+  var objectId: String
   
   /**
     * Encapsulates the valid values for the facebook:object_type
     * attribute for a LikeView
     */
-  var objectType: ObjectIdActionType = js.native
+  var objectType: ObjectIdActionType
 }
 object ObjectIdAndType {
   

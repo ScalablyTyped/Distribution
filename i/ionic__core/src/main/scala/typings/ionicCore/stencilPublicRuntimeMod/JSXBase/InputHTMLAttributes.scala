@@ -2,123 +2,123 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
+trait InputHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var accept: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.undefined
   
-  var allowdirs: js.UndefOr[Boolean] = js.native
+  var allowdirs: js.UndefOr[Boolean] = js.undefined
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autocomplete: js.UndefOr[String] = js.native
+  var autocomplete: js.UndefOr[String] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean | String] = js.native
+  var autofocus: js.UndefOr[Boolean | String] = js.undefined
   
-  var capture: js.UndefOr[String] = js.native
+  var capture: js.UndefOr[String] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.undefined
   
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var dirName: js.UndefOr[String] = js.native
+  var dirName: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var files: js.UndefOr[js.Any] = js.native
+  var files: js.UndefOr[js.Any] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.undefined
   
-  var formEncType: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.undefined
   
-  var formMethod: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.undefined
   
-  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.undefined
   
-  var formTarget: js.UndefOr[String] = js.native
+  var formTarget: js.UndefOr[String] = js.undefined
   
-  var formaction: js.UndefOr[String] = js.native
+  var formaction: js.UndefOr[String] = js.undefined
   
-  var formenctype: js.UndefOr[String] = js.native
+  var formenctype: js.UndefOr[String] = js.undefined
   
-  var formmethod: js.UndefOr[String] = js.native
+  var formmethod: js.UndefOr[String] = js.undefined
   
-  var formnovalidate: js.UndefOr[Boolean] = js.native
+  var formnovalidate: js.UndefOr[Boolean] = js.undefined
   
-  var formtarget: js.UndefOr[String] = js.native
+  var formtarget: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var list: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double | String] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var maxlength: js.UndefOr[Double | String] = js.native
+  var maxlength: js.UndefOr[Double | String] = js.undefined
   
-  var min: js.UndefOr[Double | String] = js.native
+  var min: js.UndefOr[Double | String] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var minlength: js.UndefOr[Double | String] = js.native
+  var minlength: js.UndefOr[Double | String] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var readonly: js.UndefOr[Boolean | String] = js.native
+  var readonly: js.UndefOr[Boolean | String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var selectionDirection: js.UndefOr[String] = js.native
+  var selectionDirection: js.UndefOr[String] = js.undefined
   
-  var selectionEnd: js.UndefOr[Double | String] = js.native
+  var selectionEnd: js.UndefOr[Double | String] = js.undefined
   
-  var selectionStart: js.UndefOr[Double | String] = js.native
+  var selectionStart: js.UndefOr[Double | String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[Double | String] = js.native
+  var step: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
-  var valueAsDate: js.UndefOr[js.Any] = js.native
+  var valueAsDate: js.UndefOr[js.Any] = js.undefined
   
-  var valueAsNumber: js.UndefOr[js.Any] = js.native
+  var valueAsNumber: js.UndefOr[js.Any] = js.undefined
   
-  var webkitEntries: js.UndefOr[js.Any] = js.native
+  var webkitEntries: js.UndefOr[js.Any] = js.undefined
   
-  var webkitdirectory: js.UndefOr[Boolean] = js.native
+  var webkitdirectory: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object InputHTMLAttributes {
   
@@ -129,7 +129,7 @@ object InputHTMLAttributes {
   }
   
   @scala.inline
-  implicit class InputHTMLAttributesMutableBuilder[Self <: InputHTMLAttributes[_], T] (val x: Self with InputHTMLAttributes[T]) extends AnyVal {
+  implicit class InputHTMLAttributesMutableBuilder[Self <: InputHTMLAttributes[?], T] (val x: Self & InputHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])

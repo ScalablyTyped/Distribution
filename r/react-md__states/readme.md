@@ -10,9 +10,9 @@ A package for adding the different focus, hover, selected, active, etc states to
 | ------------------ | :-------------: |
 | Full name          | @react-md/states |
 | Keywords           | accessibility, a11y, react-md, keyboard, focus, selection |
-| # releases         | 36 |
+| # releases         | 38 |
 | # dependents       | 11 |
-| # downloads        | 15215 |
+| # downloads        | 25687 |
 | # stars            | 0 |
 
 ## Links

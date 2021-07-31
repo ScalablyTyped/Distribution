@@ -2,15 +2,13 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaIDObj extends StObject {
   
-  var schema_name: String = js.native
+  var schema_name: String
   
-  var schema_version: String = js.native
+  var schema_version: String
 }
 object SchemaIDObj {
   

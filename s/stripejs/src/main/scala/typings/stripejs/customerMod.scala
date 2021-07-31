@@ -28,44 +28,42 @@ import typings.stripejs.stripejsStrings.verification_failed
 import typings.stripejs.stripejsStrings.verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customerMod {
   
-  @js.native
   trait Address extends StObject {
     
     /**
       * City/District/Suburb/Town/Village.
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * Two-letter country code, capitalized
       * NOTE: The codes are specified by the ISO3166 alpha-2
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Address line 1 (Street address/PO Box/Company name).
       */
-    var line1: String = js.native
+    var line1: String
     
     /**
       * Address line 2 (Apartment/Suite/Unit/Building).
       */
-    var line2: String = js.native
+    var line2: String
     
     /**
       * ZIP or postal code
       */
-    var postal_code: String = js.native
+    var postal_code: String
     
     /**
       * State/County/Province/Region.
       */
-    var state: String = js.native
+    var state: String
   }
   object Address {
     
@@ -98,72 +96,71 @@ object customerMod {
     }
   }
   
-  @js.native
   trait BankAccount extends StObject {
     
     /**
       * The name of the person or business that owns the bank account.
       */
-    var account_holder_name: String = js.native
+    var account_holder_name: String
     
     /**
       * The type of entity that holds the account.
       */
-    var account_holder_type: individual | company = js.native
+    var account_holder_type: individual | company
     
     /**
       * Name of the bank associated with the routing number
       * @example 'STRIPE TEST BANK'
       */
-    var bank_name: String = js.native
+    var bank_name: String
     
     /**
       * Two-letter ISO code representing the country the bank account is located in
       * @example 'US'
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Three-letter ISO code for the currency paid out to the bank account
       * @example 'usd'
       */
-    var currency: String = js.native
+    var currency: String
     
-    var customer: String = js.native
+    var customer: String
     
     /**
       * Uniquely identifies this particular bank account.
       * NOTE: You can use this attribute to check whether two bank accounts are the same
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * The unique identifier of the bank account
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The last 4 digits of the bank number
       */
-    var last4: String = js.native
+    var last4: String
     
     /**
       * Your own saved information with this bank account
       */
-    var metadata: StringDictionary[String] = js.native
+    var metadata: StringDictionary[String]
     
-    var `object`: bank_account = js.native
+    var `object`: bank_account
     
     /**
       * The routing transit number for the bank account
       */
-    var routing_number: String = js.native
+    var routing_number: String
     
     /**
       * The status of the bank account
       * @see https://stripe.com/docs/api#customer_bank_account_object-status
       */
-    var status: `new` | validated | verified | verification_failed | errored = js.native
+    var status: `new` | validated | verified | verification_failed | errored
   }
   object BankAccount {
     
@@ -179,12 +176,11 @@ object customerMod {
       id: String,
       last4: String,
       metadata: StringDictionary[String],
-      `object`: bank_account,
       routing_number: String,
       status: `new` | validated | verified | verification_failed | errored
     ): BankAccount = {
       val __obj = js.Dynamic.literal(account_holder_name = account_holder_name.asInstanceOf[js.Any], account_holder_type = account_holder_type.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[BankAccount]
     }
     
@@ -232,154 +228,153 @@ object customerMod {
     }
   }
   
-  @js.native
   trait Card extends StObject {
     
-    var account: js.UndefOr[String] = js.native
+    var account: js.UndefOr[String] = js.undefined
     
     /**
       * City/District/Suburb/Town/Village
       */
-    var address_city: String = js.native
+    var address_city: String
     
     /**
       * The country in which the address is located
       */
-    var address_country: String = js.native
+    var address_country: String
     
     /**
       * Address line 1 (Street address/PO Box/Company name)
       */
-    var address_line1: String = js.native
+    var address_line1: String
     
     /**
       * The results of address_line1 if it was provided
       */
-    var address_line1_check: checkStatus = js.native
+    var address_line1_check: checkStatus
     
     /**
       * Address line 2 (Apartment/Suite/Unit/Building)
       */
-    var address_line2: String = js.native
+    var address_line2: String
     
     /**
       * State/County/Province/Region.
       */
-    var address_state: String = js.native
+    var address_state: String
     
     /**
       * ZIP or postal code
       */
-    var address_zip: String = js.native
+    var address_zip: String
     
     /**
       * The results of address_zip if it was provided
       */
-    var address_zip_check: checkStatus = js.native
+    var address_zip_check: checkStatus
     
     /**
       * A set of available payout methods for this card
       * NOTE: Only values from this set should be passed as the method when creating a transfer
       */
-    var available_payout_methods: js.Array[standard] | (js.Tuple2[standard, instant]) = js.native
+    var available_payout_methods: js.Array[standard] | (js.Tuple2[standard, instant])
     
     /**
       * The brand of the card
       */
-    var brand: (`American Express`) | (`Diners Club`) | Discover | JCB | MasterCard | UnionPay | Visa | Unknown = js.native
+    var brand: (`American Express`) | (`Diners Club`) | Discover | JCB | MasterCard | UnionPay | Visa | Unknown
     
     /**
       * Two-letter ISO code representing the country of the card
       * You could use this attribute to get a sense of the international breakdown of cards you’ve collected
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Three-letter ISO code for currency
       * Only applicable on accounts (not customers or recipients).
       * The card can be used as a transfer destination for funds in this currency
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * The customer that this card belongs to
       * NOTE: This attribute will not be in the card object if the card belongs to an account or recipient instead
       */
-    var customer: js.UndefOr[js.Any] = js.native
+    var customer: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If a CVC was provided, results of the check
       */
-    var cvc_check: checkStatus = js.native
+    var cvc_check: checkStatus
     
     /**
       * Only applicable on accounts (not customers or recipients)
       * This indicates whether this card is the default external account for its currency
       */
-    var default_for_currency: js.UndefOr[Boolean] = js.native
+    var default_for_currency: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The last four digits of the device account number.
       * NOTE: For tokenized numbers only
       */
-    var dynamic_last4: String = js.native
+    var dynamic_last4: String
     
     /**
       * Two-digit number representing the card’s expiration month
       */
-    var exp_month: Double = js.native
+    var exp_month: Double
     
     /**
       * Four-digit number representing the card’s expiration year
       */
-    var exp_year: Double = js.native
+    var exp_year: Double
     
     /**
       * Uniquely identifies this particular card number
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
     /**
       * Card funding type
       */
-    var funding: credit | debit | prepaid | unknown_ = js.native
+    var funding: credit | debit | prepaid | unknown_
     
     /**
       * The unique identifier of the bank account
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The last four digits of the card
       */
-    var last4: String = js.native
+    var last4: String
     
     /**
       * Your own saved information with this card
       */
-    var metadata: StringDictionary[String] = js.native
+    var metadata: StringDictionary[String]
     
     /**
       * The name of the cardholder
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The account this card belongs to.
       * NOTE: This attribute will not be in the card object if the card belongs to a customer or recipient instead.
       */
-    var `object`: card = js.native
+    var `object`: card
     
     /**
       * The recipient that this card belongs to.
       * NOTE: This attribute will not be in the card object if the card belongs to a customer or account instead
       */
-    var recipient: js.UndefOr[String] = js.native
+    var recipient: js.UndefOr[String] = js.undefined
     
     /**
       * If the card number is tokenized, this is the method that was used
       */
-    var tokenization_method: apple_pay | android_pay = js.native
+    var tokenization_method: apple_pay | android_pay
   }
   object Card {
     
@@ -406,11 +401,10 @@ object customerMod {
       last4: String,
       metadata: StringDictionary[String],
       name: String,
-      `object`: card,
       tokenization_method: apple_pay | android_pay
     ): Card = {
       val __obj = js.Dynamic.literal(address_city = address_city.asInstanceOf[js.Any], address_country = address_country.asInstanceOf[js.Any], address_line1 = address_line1.asInstanceOf[js.Any], address_line1_check = address_line1_check.asInstanceOf[js.Any], address_line2 = address_line2.asInstanceOf[js.Any], address_state = address_state.asInstanceOf[js.Any], address_zip = address_zip.asInstanceOf[js.Any], address_zip_check = address_zip_check.asInstanceOf[js.Any], available_payout_methods = available_payout_methods.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], dynamic_last4 = dynamic_last4.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tokenization_method = tokenization_method.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[Card]
     }
     
@@ -523,49 +517,48 @@ object customerMod {
     }
   }
   
-  @js.native
   trait Customer extends StObject {
     
     /**
       * The Address of the customer
       */
-    var address: Address = js.native
+    var address: Address
     
     /**
       * The email address of the customer
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * The full name of the owner
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The phone number of the customer
       * NOTE: This includes the extension
       */
-    var phone: String = js.native
+    var phone: String
     
     /**
       * Verified customer’s address
       */
-    val verified_address: Address = js.native
+    val verified_address: Address
     
     /**
       * Verified customer’s email address
       */
-    val verified_email: String = js.native
+    val verified_email: String
     
     /**
       * Verified customer’s full name
       */
-    val verified_name: String = js.native
+    val verified_name: String
     
     /**
       * Verified customer’s phone number
       */
-    val verified_phone: String = js.native
+    val verified_phone: String
   }
   object Customer {
     

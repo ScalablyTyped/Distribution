@@ -2,19 +2,17 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the Kubernetes Dashboard.
   */
-@js.native
 trait SchemaKubernetesDashboard extends StObject {
   
   /**
     * Whether the Kubernetes Dashboard is enabled for this cluster.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaKubernetesDashboard {
   

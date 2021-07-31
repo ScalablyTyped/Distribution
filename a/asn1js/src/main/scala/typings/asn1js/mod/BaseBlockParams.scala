@@ -2,17 +2,17 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseBlockParams extends LocalBaseBlockParams {
+trait BaseBlockParams
+  extends StObject
+     with LocalBaseBlockParams {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var optional: js.UndefOr[scala.Boolean] = js.native
+  var optional: js.UndefOr[scala.Boolean] = js.undefined
   
-  var primitiveSchema: js.UndefOr[js.Object] = js.native
+  var primitiveSchema: js.UndefOr[js.Object] = js.undefined
 }
 object BaseBlockParams {
   

@@ -8,12 +8,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Allow HTTP header on an HTTP response. */
 @js.native
-trait HttpMethodHeaderValueCollection extends Array[HttpMethod] {
+trait HttpMethodHeaderValueCollection
+  extends StObject
+     with Array[HttpMethod] {
   
   /**
     * Adds a new HttpMethod item to the end of the collection.

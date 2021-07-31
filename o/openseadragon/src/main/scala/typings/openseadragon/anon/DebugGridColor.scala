@@ -4,19 +4,17 @@ import typings.openseadragon.mod.Viewer
 import typings.openseadragon.mod.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugGridColor extends StObject {
   
-  var debugGridColor: js.UndefOr[String] = js.native
+  var debugGridColor: js.UndefOr[String] = js.undefined
   
-  var element: typings.std.Element = js.native
+  var element: typings.std.Element
   
-  var viewer: Viewer = js.native
+  var viewer: Viewer
   
-  var viewport: Viewport = js.native
+  var viewport: Viewport
 }
 object DebugGridColor {
   

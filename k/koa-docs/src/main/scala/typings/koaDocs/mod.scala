@@ -7,29 +7,30 @@ import typings.koaDocs.anon.Description
 import typings.koaDocs.mod.koaDocs.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-docs", "get")
+  @JSImport("koa-docs", JSImport.Namespace)
   @js.native
-  def get(path: String, options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def get(path: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   object koaDocs {
     
-    @js.native
     trait Options extends StObject {
       
-      var groups: js.Array[Description] = js.native
+      var groups: js.Array[Description]
       
-      var routeHandlers: js.UndefOr[String] = js.native
+      var routeHandlers: js.UndefOr[String] = js.undefined
       
-      var theme: js.UndefOr[String] = js.native
+      var theme: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var version: String = js.native
+      var version: String
     }
     object Options {
       

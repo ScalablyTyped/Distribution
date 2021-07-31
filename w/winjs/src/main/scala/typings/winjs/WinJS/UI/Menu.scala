@@ -6,7 +6,6 @@ import typings.std.MouseEvent
 import typings.winjs.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -88,8 +87,8 @@ trait Menu extends StObject {
     * @param commands The commands to hide. The array elements may be MenuCommand objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to hide the commands immediately, without animating them; otherwise, false.
     **/
-  def hideCommands(commands: js.Array[_]): Unit = js.native
-  def hideCommands(commands: js.Array[_], immediate: Boolean): Unit = js.native
+  def hideCommands(commands: js.Array[js.Any]): Unit = js.native
+  def hideCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
   
   //#endregion Constructors
   //#region Events
@@ -138,9 +137,9 @@ trait Menu extends StObject {
     * @param alignment For top or bottom placement, the alignment of the Menu to the anchor's edge: center, left, or right.
     **/
   def show(anchor: HTMLElement): Unit = js.native
-  def show(anchor: HTMLElement, placement: js.UndefOr[scala.Nothing], alignment: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String, alignment: String): Unit = js.native
+  def show(anchor: HTMLElement, placement: Unit, alignment: String): Unit = js.native
   
   /**
     * Shows the Menu, if hidden, regardless of other states, top and left aligned at the specified coordinates,
@@ -158,14 +157,14 @@ trait Menu extends StObject {
     * @param commands The commands to show. The array elements may be Menu objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to show the commands immediately, without animating them; otherwise, false.
     **/
-  def showCommands(commands: js.Array[_]): Unit = js.native
-  def showCommands(commands: js.Array[_], immediate: Boolean): Unit = js.native
+  def showCommands(commands: js.Array[js.Any]): Unit = js.native
+  def showCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
   
   /**
     * Shows the specified commands of the Menu while hiding all other commands.
     * @param commands The commands to show. The array elements may be MenuCommand objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to show the specified commands (and hide the others) immediately, without animating them; otherwise, false.
     **/
-  def showOnlyCommands(commands: js.Array[_]): Unit = js.native
-  def showOnlyCommands(commands: js.Array[_], immediate: Boolean): Unit = js.native
+  def showOnlyCommands(commands: js.Array[js.Any]): Unit = js.native
+  def showOnlyCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
 }

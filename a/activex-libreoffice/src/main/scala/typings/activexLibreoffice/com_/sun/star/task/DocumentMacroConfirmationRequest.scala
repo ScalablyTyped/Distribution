@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the request to approve or deny the execution of macros contained in a document. */
-@js.native
-trait DocumentMacroConfirmationRequest extends ClassifiedInteractionRequest {
+trait DocumentMacroConfirmationRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** contains information about the signatures in the document */
-  var DocumentSignatureInformation: SafeArray[typings.activexLibreoffice.com_.sun.star.security.DocumentSignatureInformation] = js.native
+  var DocumentSignatureInformation: SafeArray[typings.activexLibreoffice.com_.sun.star.security.DocumentSignatureInformation]
   
   /**
     * refers to the storage related to the last committed version of the document.
@@ -23,13 +23,13 @@ trait DocumentMacroConfirmationRequest extends ClassifiedInteractionRequest {
     * and thus the signed macros.
     * @see com.sun.star.security.XDocumentDigitalSignatures.showScriptingContentSignatures
     */
-  var DocumentStorage: XStorage = js.native
+  var DocumentStorage: XStorage
   
   /** specifies the URL of the document which contains macros whose execution should be approved or rejected. */
-  var DocumentURL: String = js.native
+  var DocumentURL: String
   
   /** contains information about the ODF version of the document */
-  var DocumentVersion: String = js.native
+  var DocumentVersion: String
 }
 object DocumentMacroConfirmationRequest {
   

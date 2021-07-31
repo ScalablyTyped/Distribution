@@ -2,25 +2,25 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RadialChartPoint extends AbstractSeriesPoint {
+trait RadialChartPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var subLabel: js.UndefOr[String] = js.native
+  var subLabel: js.UndefOr[String] = js.undefined
 }
 object RadialChartPoint {
   

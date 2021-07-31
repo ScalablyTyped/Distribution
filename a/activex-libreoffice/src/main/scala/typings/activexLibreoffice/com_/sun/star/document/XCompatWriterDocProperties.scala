@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XCompatWriterDocProperties extends StObject {
   
-  var Category: String = js.native
+  var Category: String
   
-  var Company: String = js.native
+  var Company: String
   
-  var Manager: String = js.native
+  var Manager: String
 }
 object XCompatWriterDocProperties {
   

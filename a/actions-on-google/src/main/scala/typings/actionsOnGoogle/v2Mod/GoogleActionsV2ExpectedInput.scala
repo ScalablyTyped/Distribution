@@ -2,29 +2,27 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2ExpectedInput extends StObject {
   
   /**
     * The customized prompt used to ask user for input.
     */
-  var inputPrompt: js.UndefOr[GoogleActionsV2InputPrompt] = js.native
+  var inputPrompt: js.UndefOr[GoogleActionsV2InputPrompt] = js.undefined
   
   /**
     * List of intents that can be used to fulfill this input.
     * To have Actions on Google just return the raw user input, the app
     * should ask for the `actions.intent.TEXT` intent.
     */
-  var possibleIntents: js.UndefOr[js.Array[GoogleActionsV2ExpectedIntent]] = js.native
+  var possibleIntents: js.UndefOr[js.Array[GoogleActionsV2ExpectedIntent]] = js.undefined
   
   /**
     * List of phrases the Action wants Google to use for speech biasing.
     * Up to 1000 phrases are allowed.
     */
-  var speechBiasingHints: js.UndefOr[js.Array[String]] = js.native
+  var speechBiasingHints: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleActionsV2ExpectedInput {
   

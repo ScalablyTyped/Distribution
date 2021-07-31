@@ -2,17 +2,15 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Upload extends StObject {
   
-  var initiated: js.Any = js.native
+  var initiated: js.Any
   
-  var name: String = js.native
+  var name: String
   
-  var uploadId: String = js.native
+  var uploadId: String
 }
 object Upload {
   

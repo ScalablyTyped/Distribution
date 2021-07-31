@@ -4,15 +4,15 @@
 Typings are for version 0.13
 
 ## Library description:
-Create SAML assertions.
+Create SAML assertions. Supports SAML 1.1 and SAML 2.0 tokens.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | saml |
 | Keywords           | saml, authentication |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 7 |
-| # downloads        | 912837 |
+| # downloads        | 1172323 |
 | # stars            | 1 |
 
 ## Links

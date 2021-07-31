@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.storybookAddons.distMod.Addon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Right extends StObject {
   
-  var left: js.Array[Addon] = js.native
+  var left: js.Array[Addon]
   
-  var right: js.Array[Addon] = js.native
+  var right: js.Array[Addon]
 }
 object Right {
   

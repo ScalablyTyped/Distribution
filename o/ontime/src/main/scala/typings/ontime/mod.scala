@@ -2,31 +2,32 @@ package typings.ontime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ontime", "ontime")
+  @JSImport("ontime", JSImport.Namespace)
   @js.native
-  def ontime(sched: OntimeSchedule, job: OntimeJob): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ontime(sched: OntimeSchedule, job: OntimeJob): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ontime")(sched.asInstanceOf[js.Any], job.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OntimeJob = js.Function1[/* ot */ OntimeReport, Unit]
   
-  @js.native
   trait OntimeReport extends StObject {
     
     /**
       * Clears timers for scheduling jobs that the ontime instance knows.
       * This does not terminate the current execution of a job; you still need to call ot.done() for that purpose.
       */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     /**
       * Should be called after the job has been finished.
       * This is important especially when single is set to true because scheduling the next run is done in the method.
       */
-    def done(): Unit = js.native
+    def done(): Unit
   }
   object OntimeReport {
     
@@ -47,7 +48,6 @@ object mod {
     }
   }
   
-  @js.native
   trait OntimeSchedule extends StObject {
     
     /**
@@ -66,7 +66,7 @@ object mod {
       * The time expression is given to ontime through the cycle option. You can give a single expression of the string
       * type like '01-01T12:00:00' or multiple ones as an array of strings like [ '01-01T12:00:00', '7-1T0:0:0' ]
       */
-    var cycle: String | js.Array[String] = js.native
+    var cycle: String | js.Array[String]
     
     /**
       * It is sometimes necessary to run a job on the last day of each month, which have been replaced with doing it on
@@ -75,7 +75,7 @@ object mod {
       *
       * Default: false
       */
-    var keepLast: js.UndefOr[Boolean] = js.native
+    var keepLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ontime has a very simple form of logging that is useful when checking if your configuration works as intended.
@@ -83,7 +83,7 @@ object mod {
       *
       * Default: false
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ontime launches a job on its scheduled time. If the job takes longer than the time interval of the cycle, more
@@ -92,7 +92,7 @@ object mod {
       *
       * Default: false
       */
-    var single: js.UndefOr[Boolean] = js.native
+    var single: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The step option enables a job to be skipped periodically.Setting it to n forces ontime to skip a given job n-1
@@ -100,14 +100,14 @@ object mod {
       *
       * Default: 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Setting the utc option to true changes ontime to interpret the time expressions as UTC.
       *
       * Default: false
       */
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object OntimeSchedule {
     

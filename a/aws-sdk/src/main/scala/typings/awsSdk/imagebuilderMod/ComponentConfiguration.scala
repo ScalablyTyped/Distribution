@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the component. 
     */
-  var componentArn: ComponentVersionArnOrBuildVersionArn = js.native
+  var componentArn: ComponentVersionArnOrBuildVersionArn
 }
 object ComponentConfiguration {
   

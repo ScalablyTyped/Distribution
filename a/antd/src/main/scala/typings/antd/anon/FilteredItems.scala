@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.antd.transferListMod.RenderedItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteredItems[RecordType /* <: typings.antd.transferMod.KeyWiseTransferItem */] extends StObject {
   
-  var filteredItems: js.Array[RecordType] = js.native
+  var filteredItems: js.Array[RecordType]
   
-  var filteredRenderItems: js.Array[RenderedItem[RecordType]] = js.native
+  var filteredRenderItems: js.Array[RenderedItem[RecordType]]
 }
 object FilteredItems {
   
@@ -22,7 +20,7 @@ object FilteredItems {
   }
   
   @scala.inline
-  implicit class FilteredItemsMutableBuilder[Self <: FilteredItems[_], RecordType /* <: typings.antd.transferMod.KeyWiseTransferItem */] (val x: Self with FilteredItems[RecordType]) extends AnyVal {
+  implicit class FilteredItemsMutableBuilder[Self <: FilteredItems[?], RecordType /* <: typings.antd.transferMod.KeyWiseTransferItem */] (val x: Self & FilteredItems[RecordType]) extends AnyVal {
     
     @scala.inline
     def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])

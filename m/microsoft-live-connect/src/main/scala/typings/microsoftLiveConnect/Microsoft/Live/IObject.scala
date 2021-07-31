@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * types in a single collection. You discriminate between them using their
   * 'type' field.
   */
-@js.native
 trait IObject extends StObject {
   
   /**
     * The object's type.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IObject {
   

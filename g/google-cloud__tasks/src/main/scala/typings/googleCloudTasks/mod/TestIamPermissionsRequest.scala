@@ -2,13 +2,11 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestIamPermissionsRequest extends StObject {
   
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TestIamPermissionsRequest {
   

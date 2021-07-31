@@ -2,17 +2,15 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeStatus extends StObject {
   
-  var fill: js.UndefOr[NodeStatusFill] = js.native
+  var fill: js.UndefOr[NodeStatusFill] = js.undefined
   
-  var shape: js.UndefOr[NodeStatusShape] = js.native
+  var shape: js.UndefOr[NodeStatusShape] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object NodeStatus {
   

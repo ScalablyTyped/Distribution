@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceGoalBidStrategy extends StObject {
   
   /** The ID of the Custom Bidding Algorithm used by this strategy. Only applicable when performance_goal_type is set to `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CUSTOM_ALGO`. */
-  var customBiddingAlgorithmId: js.UndefOr[String] = js.native
+  var customBiddingAlgorithmId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum average CPM that may be bid, in micros of the advertiser's currency. Must be greater than or equal to a billable unit of the given currency. Not applicable when
     * performance_goal_type is set to `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_VIEWABLE_CPM`. For example, 1500000 represents 1.5 standard units of the currency.
     */
-  var maxAverageCpmBidAmountMicros: js.UndefOr[String] = js.native
+  var maxAverageCpmBidAmountMicros: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The performance goal the bidding strategy will attempt to meet or beat, in micros of the advertiser's currency or in micro of the ROAS (Return On Advertising Spend) value
@@ -27,14 +25,14 @@ trait PerformanceGoalBidStrategy extends StObject {
     * target is $2 and an impression is 40% likely to be viewable, the bid price will be $0.80 CPM (40% of $2). For example, 1500000 represents 1.5 standard units of the currency or ROAS
     * value.
     */
-  var performanceGoalAmountMicros: js.UndefOr[String] = js.native
+  var performanceGoalAmountMicros: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the performance goal that the bidding strategy will try to meet or beat. For line item level usage, the value must be one of: *
     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPA` * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPC` * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_VIEWABLE_CPM` *
     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CUSTOM_ALGO`.
     */
-  var performanceGoalType: js.UndefOr[String] = js.native
+  var performanceGoalType: js.UndefOr[String] = js.undefined
 }
 object PerformanceGoalBidStrategy {
   

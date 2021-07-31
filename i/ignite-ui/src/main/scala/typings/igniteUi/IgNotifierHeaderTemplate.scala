@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgNotifierHeaderTemplate
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgNotifierHeaderTemplate
     * Controls whether the popover renders a functional close button
     *
     */
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the content for the popover header.
     *
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IgNotifierHeaderTemplate {
   

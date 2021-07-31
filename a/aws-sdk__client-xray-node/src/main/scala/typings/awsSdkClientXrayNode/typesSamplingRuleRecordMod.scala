@@ -5,28 +5,26 @@ import typings.awsSdkClientXrayNode.typesSamplingRuleMod.UnmarshalledSamplingRul
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSamplingRuleRecordMod {
   
-  @js.native
   trait SamplingRuleRecord extends StObject {
     
     /**
       * <p>When the rule was created.</p>
       */
-    var CreatedAt: js.UndefOr[Date | String | Double] = js.native
+    var CreatedAt: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>When the rule was last modified.</p>
       */
-    var ModifiedAt: js.UndefOr[Date | String | Double] = js.native
+    var ModifiedAt: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The sampling rule.</p>
       */
-    var SamplingRule: js.UndefOr[typings.awsSdkClientXrayNode.typesSamplingRuleMod.SamplingRule] = js.native
+    var SamplingRule: js.UndefOr[typings.awsSdkClientXrayNode.typesSamplingRuleMod.SamplingRule] = js.undefined
   }
   object SamplingRuleRecord {
     
@@ -59,26 +57,27 @@ object typesSamplingRuleRecordMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSamplingRuleRecord extends SamplingRuleRecord {
+  trait UnmarshalledSamplingRuleRecord
+    extends StObject
+       with SamplingRuleRecord {
     
     /**
       * <p>When the rule was created.</p>
       */
     @JSName("CreatedAt")
-    var CreatedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.native
+    var CreatedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>When the rule was last modified.</p>
       */
     @JSName("ModifiedAt")
-    var ModifiedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.native
+    var ModifiedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The sampling rule.</p>
       */
     @JSName("SamplingRule")
-    var SamplingRule_UnmarshalledSamplingRuleRecord: js.UndefOr[UnmarshalledSamplingRule] = js.native
+    var SamplingRule_UnmarshalledSamplingRuleRecord: js.UndefOr[UnmarshalledSamplingRule] = js.undefined
   }
   object UnmarshalledSamplingRuleRecord {
     

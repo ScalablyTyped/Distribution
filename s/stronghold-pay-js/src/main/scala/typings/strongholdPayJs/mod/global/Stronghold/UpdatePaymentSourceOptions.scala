@@ -2,15 +2,15 @@ package typings.strongholdPayJs.mod.global.Stronghold
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdatePaymentSourceOptions extends Options {
+trait UpdatePaymentSourceOptions
+  extends StObject
+     with Options {
   
-  var onSuccess: js.UndefOr[UpdatePaymentSourceOnSuccess] = js.native
+  var onSuccess: js.UndefOr[UpdatePaymentSourceOnSuccess] = js.undefined
   
-  var paymentSourceId: String = js.native
+  var paymentSourceId: String
 }
 object UpdatePaymentSourceOptions {
   

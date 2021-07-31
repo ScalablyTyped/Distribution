@@ -2,19 +2,17 @@ package typings.carbonLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: Double = js.native
+    var columns: Double
     
-    var margin: String = js.native
+    var margin: String
     
-    var width: String = js.native
+    var width: String
   }
   object Columns {
     

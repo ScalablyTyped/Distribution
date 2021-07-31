@@ -2,16 +2,14 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.MetadataSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.MetadataSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplCache extends StObject {
   
-  var cache: js.UndefOr[String] = js.native
+  var cache: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[String] = js.native
+  var results: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplCache {
   

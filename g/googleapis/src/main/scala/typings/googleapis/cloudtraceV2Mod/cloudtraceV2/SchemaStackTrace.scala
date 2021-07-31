@@ -2,19 +2,17 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A call stack appearing in a trace.
   */
-@js.native
 trait SchemaStackTrace extends StObject {
   
   /**
     * Stack frames in this stack trace. A maximum of 128 frames are allowed.
     */
-  var stackFrames: js.UndefOr[SchemaStackFrames] = js.native
+  var stackFrames: js.UndefOr[SchemaStackFrames] = js.undefined
   
   /**
     * The hash ID is used to conserve network bandwidth for duplicate stack
@@ -24,7 +22,7 @@ trait SchemaStackTrace extends StObject {
     * spans within the same request can refer to that stack trace by only
     * setting `stackTraceHashId`.
     */
-  var stackTraceHashId: js.UndefOr[String] = js.native
+  var stackTraceHashId: js.UndefOr[String] = js.undefined
 }
 object SchemaStackTrace {
   

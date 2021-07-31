@@ -2,46 +2,44 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansPurchaseRecommendation extends StObject {
   
   /**
     * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
     */
-  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
     * The lookback period in days, used to generate the recommendation.
     */
-  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.native
+  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
     * The payment option used to generate the recommendation.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.undefined
   
   /**
     * Details for the Savings Plans we recommend that you purchase to cover existing Savings Plans eligible workloads.
     */
-  var SavingsPlansPurchaseRecommendationDetails: js.UndefOr[SavingsPlansPurchaseRecommendationDetailList] = js.native
+  var SavingsPlansPurchaseRecommendationDetails: js.UndefOr[SavingsPlansPurchaseRecommendationDetailList] = js.undefined
   
   /**
     * Summary metrics for your Savings Plans Recommendations. 
     */
-  var SavingsPlansPurchaseRecommendationSummary: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlansPurchaseRecommendationSummary] = js.native
+  var SavingsPlansPurchaseRecommendationSummary: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlansPurchaseRecommendationSummary] = js.undefined
   
   /**
     * The requested Savings Plans recommendation type.
     */
-  var SavingsPlansType: js.UndefOr[SupportedSavingsPlansType] = js.native
+  var SavingsPlansType: js.UndefOr[SupportedSavingsPlansType] = js.undefined
   
   /**
     * The Savings Plans recommendation term in years, used to generate the recommendation.
     */
-  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.native
+  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.undefined
 }
 object SavingsPlansPurchaseRecommendation {
   

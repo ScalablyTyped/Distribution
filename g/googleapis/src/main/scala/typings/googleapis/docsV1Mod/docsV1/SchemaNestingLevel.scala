@@ -2,21 +2,19 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties describing the look and feel of a list bullet at a
   * given level of nesting.
   */
-@js.native
 trait SchemaNestingLevel extends StObject {
   
   /**
     * The alignment of the bullet within the space allotted for rendering the
     * bullet.
     */
-  var bulletAlignment: js.UndefOr[String] = js.native
+  var bulletAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * The format string used by bullets at this level of nesting.  The glyph
@@ -42,7 +40,7 @@ trait SchemaNestingLevel extends StObject {
     * in the glyph format for a particular paragraph depends on the
     * paragraph&#39;s order within the list.
     */
-  var glyphFormat: js.UndefOr[String] = js.native
+  var glyphFormat: js.UndefOr[String] = js.undefined
   
   /**
     * A custom glyph symbol used by bullets when paragraphs at this level of
@@ -51,7 +49,7 @@ trait SchemaNestingLevel extends StObject {
     * corresponding to Unicode U+25cf code point and the glyph_format is `%0`,
     * the rendered glyph would be the solid circle.
     */
-  var glyphSymbol: js.UndefOr[String] = js.native
+  var glyphSymbol: js.UndefOr[String] = js.undefined
   
   /**
     * The type of glyph used by bullets when paragraphs at this level of
@@ -62,20 +60,20 @@ trait SchemaNestingLevel extends StObject {
     * glyph would replace the placeholder `%0` in the glyph format with a
     * number corresponding to list item&#39;s order within the list.
     */
-  var glyphType: js.UndefOr[String] = js.native
+  var glyphType: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of indentation for the first line of paragraphs at this level
     * of nesting.
     */
-  var indentFirstLine: js.UndefOr[SchemaDimension] = js.native
+  var indentFirstLine: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The amount of indentation for paragraphs at this level of nesting.
     * Applied to the side that corresponds to the start of the text, based on
     * the paragraph&#39;s content direction.
     */
-  var indentStart: js.UndefOr[SchemaDimension] = js.native
+  var indentStart: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The number of the first list item at this nesting level.  A value of 0 is
@@ -84,12 +82,12 @@ trait SchemaNestingLevel extends StObject {
     * begin at `a` and `i` respectively.  This value is ignored for nesting
     * levels with unordered glyphs.
     */
-  var startNumber: js.UndefOr[Double] = js.native
+  var startNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * The text style of bullets at this level of nesting.
     */
-  var textStyle: js.UndefOr[SchemaTextStyle] = js.native
+  var textStyle: js.UndefOr[SchemaTextStyle] = js.undefined
 }
 object SchemaNestingLevel {
   

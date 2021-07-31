@@ -2,36 +2,34 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outcome extends StObject {
   
   /**
     * The outcome ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The timestamp when the outcome was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The outcome description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The timestamp when the outcome was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The outcome name.
     */
-  var name: js.UndefOr[identifier] = js.native
+  var name: js.UndefOr[identifier] = js.undefined
 }
 object Outcome {
   

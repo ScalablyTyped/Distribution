@@ -2,33 +2,31 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataGroup extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var content: String = js.native
+  var content: String
   
-  var id: IdType = js.native
+  var id: IdType
   
-  var nestedGroups: js.UndefOr[js.Array[IdType]] = js.native
+  var nestedGroups: js.UndefOr[js.Array[IdType]] = js.undefined
   
-  var options: js.UndefOr[DataGroupOptions] = js.native
+  var options: js.UndefOr[DataGroupOptions] = js.undefined
   
-  var showNested: js.UndefOr[Boolean] = js.native
+  var showNested: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var subgroupOrder: js.UndefOr[String | js.Function0[Unit]] = js.native
+  var subgroupOrder: js.UndefOr[String | js.Function0[Unit]] = js.undefined
   
-  var subgroupStack: js.UndefOr[SubGroupStackOptions | Boolean] = js.native
+  var subgroupStack: js.UndefOr[SubGroupStackOptions | Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object DataGroup {
   

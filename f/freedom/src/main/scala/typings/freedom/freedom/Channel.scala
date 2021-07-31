@@ -2,13 +2,31 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Channels are ways that freedom modules can send each other messages.
-@js.native
 trait Channel
-  extends OnAndEmit[js.Any, js.Any] {
+  extends StObject
+     with OnAndEmit[js.Any, js.Any] {
   
-  def close(): Unit = js.native
+  def close(): Unit
+}
+object Channel {
+  
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    emit: (/* eventType */ String, /* value */ js.UndefOr[js.Any]) => Unit,
+    on: (/* eventType */ String, /* handler */ js.Function1[js.Any, Unit]) => Unit
+  ): Channel = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on))
+    __obj.asInstanceOf[Channel]
+  }
+  
+  @scala.inline
+  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+  }
 }

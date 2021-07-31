@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1CreateInstructionRequest extends StObject {
   
   /** Required. Instruction of how to perform the labeling task. */
-  var instruction: js.UndefOr[GoogleCloudDatalabelingV1beta1Instruction] = js.native
+  var instruction: js.UndefOr[GoogleCloudDatalabelingV1beta1Instruction] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1CreateInstructionRequest {
   

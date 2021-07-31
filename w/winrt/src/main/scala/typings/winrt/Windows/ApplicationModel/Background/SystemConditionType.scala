@@ -2,7 +2,6 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait SystemConditionType extends StObject
 object SystemConditionType extends StObject {
   
   @js.native
-  sealed trait internetAvailable extends SystemConditionType
+  sealed trait internetAvailable
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait internetNotAvailable extends SystemConditionType
+  sealed trait internetNotAvailable
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait invalid extends SystemConditionType
+  sealed trait invalid
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait sessionConnected extends SystemConditionType
+  sealed trait sessionConnected
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait sessionDisconnected extends SystemConditionType
+  sealed trait sessionDisconnected
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait userNotPresent extends SystemConditionType
+  sealed trait userNotPresent
+    extends StObject
+       with SystemConditionType
   
   @js.native
-  sealed trait userPresent extends SystemConditionType
+  sealed trait userPresent
+    extends StObject
+       with SystemConditionType
 }

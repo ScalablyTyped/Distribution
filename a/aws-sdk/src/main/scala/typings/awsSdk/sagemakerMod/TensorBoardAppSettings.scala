@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TensorBoardAppSettings extends StObject {
   
   /**
     * The default instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     */
-  var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.native
+  var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.undefined
 }
 object TensorBoardAppSettings {
   

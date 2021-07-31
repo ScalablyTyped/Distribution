@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFlowDefinitionResponse extends StObject {
   
   /**
     * The timestamp when the flow definition was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The reason your flow definition failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow defintion.
     */
-  var FlowDefinitionArn: typings.awsSdk.sagemakerMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.sagemakerMod.FlowDefinitionArn
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition.
     */
-  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName = js.native
+  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName
   
   /**
     * The status of the flow definition. Valid values are listed below.
     */
-  var FlowDefinitionStatus: typings.awsSdk.sagemakerMod.FlowDefinitionStatus = js.native
+  var FlowDefinitionStatus: typings.awsSdk.sagemakerMod.FlowDefinitionStatus
   
   /**
     * An object containing information about what triggers a human review workflow.
     */
-  var HumanLoopActivationConfig: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopActivationConfig] = js.native
+  var HumanLoopActivationConfig: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopActivationConfig] = js.undefined
   
   /**
     * An object containing information about who works on the task, the workforce task price, and other task details.
     */
-  var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig
   
   /**
     * Container for configuring the source of human task requests. Used to specify if Amazon Rekognition or Amazon Textract is used as an integration source.
     */
-  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
+  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.undefined
   
   /**
     * An object containing information about the output file.
     */
-  var OutputConfig: FlowDefinitionOutputConfig = js.native
+  var OutputConfig: FlowDefinitionOutputConfig
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) execution role for the flow definition.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
 }
 object DescribeFlowDefinitionResponse {
   

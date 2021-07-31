@@ -2,11 +2,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "notebook.toJSON()". */
-@js.native
 trait NotebookData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var clientUrl: js.UndefOr[String] = js.native
+  var clientUrl: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.2]
     */
-  var isVirtual: js.UndefOr[Boolean] = js.native
+  var isVirtual: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var sectionGroups: js.UndefOr[js.Array[SectionGroupData]] = js.native
+  var sectionGroups: js.UndefOr[js.Array[SectionGroupData]] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait NotebookData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var sections: js.UndefOr[js.Array[SectionData]] = js.native
+  var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
 }
 object NotebookData {
   

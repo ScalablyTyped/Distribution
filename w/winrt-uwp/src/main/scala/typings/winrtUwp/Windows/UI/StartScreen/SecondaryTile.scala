@@ -12,14 +12,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.visualelementsrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates, enumerates, and provides information about a secondary tile. */
 @js.native
 trait SecondaryTile extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visualelementsrequested(
     `type`: visualelementsrequested,
@@ -48,7 +47,7 @@ trait SecondaryTile extends StObject {
   var logo: Uri = js.native
   
   /** Fired when a call is made to RequestCreateAsync . */
-  def onvisualelementsrequested(ev: VisualElementsRequestedEventArgs with WinRTEvent[SecondaryTile]): Unit = js.native
+  def onvisualelementsrequested(ev: VisualElementsRequestedEventArgs & WinRTEvent[SecondaryTile]): Unit = js.native
   /** Fired when a call is made to RequestCreateAsync . */
   @JSName("onvisualelementsrequested")
   var onvisualelementsrequested_Original: TypedEventHandler[SecondaryTile, VisualElementsRequestedEventArgs] = js.native
@@ -56,7 +55,7 @@ trait SecondaryTile extends StObject {
   /** Gets or sets a phonetic version of the secondary tile name. Used with character-based languages for UI sorting purposes. */
   var phoneticName: String = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visualelementsrequested(
     `type`: visualelementsrequested,

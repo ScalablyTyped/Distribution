@@ -2,15 +2,16 @@ package typings.isArray
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[/* is std.Array<any> */ Boolean]
+  @scala.inline
+  def apply(`val`: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  
   @JSImport("is-array", JSImport.Namespace)
   @js.native
-  def apply(): /* is std.Array<any> */ Boolean = js.native
-  @JSImport("is-array", JSImport.Namespace)
-  @js.native
-  def apply(`val`: js.Any): /* is std.Array<any> */ Boolean = js.native
+  val ^ : js.Any = js.native
 }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDuplicatesRequest extends StObject {
   
   /** The columns in the range to analyze for duplicate values. If no columns are selected then all columns are analyzed for duplicates. */
-  var comparisonColumns: js.UndefOr[js.Array[DimensionRange]] = js.native
+  var comparisonColumns: js.UndefOr[js.Array[DimensionRange]] = js.undefined
   
   /** The range to remove duplicates rows from. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
 }
 object DeleteDuplicatesRequest {
   

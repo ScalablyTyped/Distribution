@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineInput extends StObject {
   
   /**
     * The name of the pipeline for which you want to get information. Pipeline names must be unique under an AWS user account.
     */
-  var name: PipelineName = js.native
+  var name: PipelineName
   
   /**
     * The version number of the pipeline. If you do not specify a version, defaults to the current version.
     */
-  var version: js.UndefOr[PipelineVersion] = js.native
+  var version: js.UndefOr[PipelineVersion] = js.undefined
 }
 object GetPipelineInput {
   

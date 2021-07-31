@@ -4,63 +4,61 @@ import typings.winrtUwp.Windows.Devices.Sms.CellularClass
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the current state of the mobile broadband network device for the account. */
-@js.native
 trait MobileBroadbandDeviceInformation extends StObject {
   
   /** Gets the cellular technology used by the mobile broadband network device. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** Gets a value indicating the radio state of the device. */
-  var currentRadioState: MobileBroadbandRadioState = js.native
+  var currentRadioState: MobileBroadbandRadioState
   
   /** Gets the name of the data class when the DataClasses property returns Custom. */
-  var customDataClass: String = js.native
+  var customDataClass: String
   
   /** Gets the cellular data services supported by the mobile broadband network device. */
-  var dataClasses: DataClasses = js.native
+  var dataClasses: DataClasses
   
   /** Gets the DeviceInformation Id of the mobile broadband device. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets a value indicating the type of Mobile Broadband device. */
-  var deviceType: MobileBroadbandDeviceType = js.native
+  var deviceType: MobileBroadbandDeviceType
   
   /** Gets the device-specific firmware information for the mobile broadband network device. */
-  var firmwareInformation: String = js.native
+  var firmwareInformation: String
   
   /** Gets the name of the manufacturer of the mobile broadband network device. */
-  var manufacturer: String = js.native
+  var manufacturer: String
   
   /** Gets the value that uniquely identifies the mobile broadband device to the network provider. */
-  var mobileEquipmentId: String = js.native
+  var mobileEquipmentId: String
   
   /** Gets the name of the model of the mobile broadband network device. */
-  var model: String = js.native
+  var model: String
   
   /** Gets the readiness status of the mobile broadband network device. */
-  var networkDeviceStatus: NetworkDeviceStatus = js.native
+  var networkDeviceStatus: NetworkDeviceStatus
   
   /** Gets a MobileBroadbandPinManager object for the mobile broadband device. */
-  var pinManager: MobileBroadbandPinManager = js.native
+  var pinManager: MobileBroadbandPinManager
   
   /** Gets the revision of the mobile broadband device. */
-  var revision: String = js.native
+  var revision: String
   
   /** Gets the serial number of the mobile broadband device. */
-  var serialNumber: String = js.native
+  var serialNumber: String
   
   /** Gets the SIM integrated circuit card identifier (ICCID) for the mobile broadband network device. */
-  var simIccId: String = js.native
+  var simIccId: String
   
   /** Gets the subscriber identifier for the mobile broadband network device. */
-  var subscriberId: String = js.native
+  var subscriberId: String
   
   /** Gets the telephone numbers for the mobile broadband device. */
-  var telephoneNumbers: IVectorView[String] = js.native
+  var telephoneNumbers: IVectorView[String]
 }
 object MobileBroadbandDeviceInformation {
   

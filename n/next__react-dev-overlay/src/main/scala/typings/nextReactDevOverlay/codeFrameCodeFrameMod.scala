@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.stacktraceParser.mod.StackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeFrameCodeFrameMod {
@@ -13,12 +12,11 @@ object codeFrameCodeFrameMod {
   @js.native
   val CodeFrame: FC[CodeFrameProps] = js.native
   
-  @js.native
   trait CodeFrameProps extends StObject {
     
-    var codeFrame: String = js.native
+    var codeFrame: String
     
-    var stackFrame: StackFrame = js.native
+    var stackFrame: StackFrame
   }
   object CodeFrameProps {
     

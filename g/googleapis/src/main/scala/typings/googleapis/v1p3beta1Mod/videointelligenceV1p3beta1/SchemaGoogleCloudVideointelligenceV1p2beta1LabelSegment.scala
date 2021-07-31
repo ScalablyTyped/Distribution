@@ -2,24 +2,22 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video segment level annotation results for label detection.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1LabelSegment extends StObject {
   
   /**
     * Confidence that the label is accurate. Range: [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Video segment where a label was detected.
     */
-  var segment: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment] = js.native
+  var segment: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1LabelSegment {
   

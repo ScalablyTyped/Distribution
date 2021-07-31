@@ -5,7 +5,6 @@ import typings.videoJs.anon.TypeofPlugin
 import typings.videoJs.mod.videojs.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plugin_ {
@@ -13,7 +12,9 @@ object Plugin_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin")
   @js.native
-  class ^ protected () extends Plugin {
+  class ^ protected ()
+    extends StObject
+       with Plugin {
     /**
       * Creates an instance of this class.
       *
@@ -46,9 +47,8 @@ object Plugin_ {
     * @param name
     *        The name of the plugin to be deregistered.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.deregisterPlugin")
-  @js.native
-  def deregisterPlugin(name: String): Unit = js.native
+  @scala.inline
+  def deregisterPlugin(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Gets a plugin by name if it exists.
@@ -58,9 +58,8 @@ object Plugin_ {
     *
     * @return The plugin (or `undefined`).
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.getPlugin")
-  @js.native
-  def getPlugin(name: String): TypeofPlugin = js.native
+  @scala.inline
+  def getPlugin(name: String): TypeofPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlugin]
   
   /**
     * Gets a plugin's version, if available
@@ -70,9 +69,8 @@ object Plugin_ {
     *
     * @return The plugin's version or an empty string.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.getPluginVersion")
-  @js.native
-  def getPluginVersion(name: String): String = js.native
+  @scala.inline
+  def getPluginVersion(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginVersion")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Gets an object containing multiple Video.js plugins.
@@ -86,12 +84,10 @@ object Plugin_ {
     *
     * @check returning type
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.getPlugins")
-  @js.native
-  def getPlugins(): StringDictionary[Plugin] = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.getPlugins")
-  @js.native
-  def getPlugins(names: js.Array[String]): StringDictionary[Plugin] = js.native
+  @scala.inline
+  def getPlugins(): StringDictionary[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugins")().asInstanceOf[StringDictionary[Plugin]]
+  @scala.inline
+  def getPlugins(names: js.Array[String]): StringDictionary[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugins")(names.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Plugin]]
   
   /**
     * Determines if a plugin is a basic plugin (i.e. not a sub-class of `Plugin`).
@@ -102,16 +98,13 @@ object Plugin_ {
     *
     * @return Whether or not a plugin is a basic plugin.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.isBasic")
-  @js.native
-  def isBasic(plugin: String): Boolean = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.isBasic")
-  @js.native
-  def isBasic(plugin: js.Function0[_]): Boolean = js.native
+  @scala.inline
+  def isBasic(plugin: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBasic(plugin: js.Function0[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.registerPlugin")
-  @js.native
-  def registerPlugin[T /* <: TypeofPlugin */](name: String, plugin: T): js.Function0[T] = js.native
+  @scala.inline
+  def registerPlugin[T /* <: TypeofPlugin */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
   /**
     * Register a Video.js plugin.
     *
@@ -126,10 +119,9 @@ object Plugin_ {
     * @return For advanced plugins, a factory function for that plugin. For
     *          basic plugins, a wrapper function that initializes the plugin.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Plugin.registerPlugin")
-  @js.native
+  @scala.inline
   def registerPlugin[T, K](
     name: String,
     plugin: js.ThisFunction1[/* this */ typings.videoJs.mod.videojs.Player, /* repeated */ K, T]
-  ): js.Function1[/* repeated */ K, T] = js.native
+  ): js.Function1[/* repeated */ K, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ K, T]]
 }

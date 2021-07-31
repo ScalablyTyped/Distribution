@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the DataRequested event. The system fires this event when the user invokes the Share UI. */
-@js.native
 trait DataRequestedEventArgs extends StObject {
   
   /** Enables you to get the DataRequest object and either give it data or a failure message. */
-  var request: DataRequest = js.native
+  var request: DataRequest
 }
 object DataRequestedEventArgs {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanEmulateResponse extends StObject {
   
   /**
     * True if emulation is supported.
     */
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object CanEmulateResponse {
   

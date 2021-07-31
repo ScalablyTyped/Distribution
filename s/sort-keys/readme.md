@@ -10,9 +10,9 @@ Sort the keys of an object
 | ------------------ | :-------------: |
 | Full name          | sort-keys |
 | Keywords           | sort, object, keys, key, stable, deterministic, deep, recursive, recursively |
-| # releases         | 3 |
-| # dependents       | 206 |
-| # downloads        | 436655217 |
+| # releases         | 5 |
+| # dependents       | 218 |
+| # downloads        | 617896146 |
 | # stars            | 5 |
 
 ## Links

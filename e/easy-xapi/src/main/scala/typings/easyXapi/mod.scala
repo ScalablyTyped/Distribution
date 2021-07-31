@@ -1,6 +1,5 @@
 package typings.easyXapi
 
-import typings.bunyan.mod.^
 import typings.easyXapi.anon.Level
 import typings.easyXapi.anon.Partial
 import typings.express.mod.Application_
@@ -13,33 +12,33 @@ import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("easy-xapi", "create")
+  @JSImport("easy-xapi", JSImport.Namespace)
   @js.native
-  def create(conf: Config): Result = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("easy-xapi", "init")
-  @js.native
-  def init(conf: InitConfig): Unit = js.native
+  @scala.inline
+  def create(conf: Config): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(conf.asInstanceOf[js.Any]).asInstanceOf[Result]
   
-  @js.native
+  @scala.inline
+  def init(conf: InitConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(conf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Config extends StObject {
     
-    var log: Level = js.native
+    var log: Level
     
-    def mount(app: Application_): Unit = js.native
+    def mount(app: Application_): Unit
     
-    var name: String = js.native
+    var name: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var root: String = js.native
+    var root: String
     
-    var xHeaderDefaults: js.UndefOr[js.Object] = js.native
+    var xHeaderDefaults: js.UndefOr[js.Object] = js.undefined
   }
   object Config {
     
@@ -75,10 +74,9 @@ object mod {
     }
   }
   
-  @js.native
   trait InitConfig extends StObject {
     
-    var jSend: js.UndefOr[Partial] = js.native
+    var jSend: js.UndefOr[Partial] = js.undefined
   }
   object InitConfig {
     
@@ -99,26 +97,52 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
     /**
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
+    def app(req: IncomingMessage, res: ServerResponse): js.Any
     @JSName("app")
-    var app_Original: Application_ = js.native
+    var app_Original: Application_
     
-    var express: js.Any = js.native
+    var express: js.Any
     
-    def listen(): Unit = js.native
+    def listen(): Unit
     
-    var log: ^ = js.native
+    var log: typings.bunyan.mod.^
     
-    var server: Server = js.native
+    var server: Server
+  }
+  object Result {
+    
+    @scala.inline
+    def apply(app: Application_, express: js.Any, listen: () => Unit, log: typings.bunyan.mod.^, server: Server): Result = {
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], listen = js.Any.fromFunction0(listen), log = log.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Result]
+    }
+    
+    @scala.inline
+    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExpress(value: js.Any): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setListen(value: () => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    }
   }
 }

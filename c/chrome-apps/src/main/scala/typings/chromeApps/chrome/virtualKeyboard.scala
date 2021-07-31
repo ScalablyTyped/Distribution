@@ -2,7 +2,6 @@ package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -29,23 +28,22 @@ object virtualKeyboard {
     * From **Chrome 63** the properties can be distinct and are optional.
     * If omitted, the current value is preserved.
     */
-  @js.native
   trait FeatureRestrictions extends StObject {
     
     /** Whether virtual keyboards can provide auto-complete. */
-    var autoCompleteEnabled: js.UndefOr[Boolean] = js.native
+    var autoCompleteEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether virtual keyboards can provide auto-correct. */
-    var autoCorrectEnabled: js.UndefOr[Boolean] = js.native
+    var autoCorrectEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether virtual keyboards can provide input via handwriting recognition. */
-    var handwritingEnabled: js.UndefOr[Boolean] = js.native
+    var handwritingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether virtual keyboards can provide spell-check. */
-    var spellCheckEnabled: js.UndefOr[Boolean] = js.native
+    var spellCheckEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether virtual keyboards can provide voice input. */
-    var voiceInputEnabled: js.UndefOr[Boolean] = js.native
+    var voiceInputEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object FeatureRestrictions {
     

@@ -10,9 +10,9 @@ vfile utility to create a virtual message
 | ------------------ | :-------------: |
 | Full name          | vfile-message |
 | Keywords           | vfile, vfile-util, util, utility, virtual, file, message |
-| # releases         | 9 |
-| # dependents       | 17 |
-| # downloads        | 172356263 |
+| # releases         | 5 |
+| # dependents       | 33 |
+| # downloads        | 213874102 |
 | # stars            | 0 |
 
 ## Links

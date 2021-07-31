@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Parameters needed for commute search.
   */
-@js.native
 trait SchemaCommutePreference extends StObject {
   
   /**
@@ -18,38 +16,38 @@ trait SchemaCommutePreference extends StObject {
     * to `false` or is not specified, only jobs that include street level
     * addresses will be returned by commute search.
     */
-  var allowNonStreetLevelAddress: js.UndefOr[Boolean] = js.native
+  var allowNonStreetLevelAddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  The departure hour to use to calculate traffic impact. Accepts
     * an integer between 0 and 23, representing the hour in the time zone of
     * the start_location. Must not be present if road_traffic is specified.
     */
-  var departureHourLocal: js.UndefOr[Double] = js.native
+  var departureHourLocal: js.UndefOr[Double] = js.undefined
   
   /**
     * Required.  The method of transportation for which to calculate the
     * commute time.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Specifies the traffic density to use when calculating commute
     * time. Must not be present if departure_hour_local is specified.
     */
-  var roadTraffic: js.UndefOr[String] = js.native
+  var roadTraffic: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The latitude and longitude of the location from which to
     * calculate the commute time.
     */
-  var startLocation: js.UndefOr[SchemaLatLng] = js.native
+  var startLocation: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Required.  The maximum travel time in seconds. The maximum allowed value
     * is `3600s` (one hour). Format is `123s`.
     */
-  var travelTime: js.UndefOr[String] = js.native
+  var travelTime: js.UndefOr[String] = js.undefined
 }
 object SchemaCommutePreference {
   

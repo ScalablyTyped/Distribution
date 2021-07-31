@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,9 +21,12 @@ object mod {
   /* static members */
   object Light {
     
-    @JSImport("react-syntax-highlighter", "Light.registerLanguage")
+    @JSImport("react-syntax-highlighter", "Light")
     @js.native
-    def registerLanguage(name: String, func: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "LightAsync")
@@ -34,9 +36,12 @@ object mod {
   /* static members */
   object LightAsync {
     
-    @JSImport("react-syntax-highlighter", "LightAsync.registerLanguage")
+    @JSImport("react-syntax-highlighter", "LightAsync")
     @js.native
-    def registerLanguage(name: String, func: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "Prism")
@@ -56,9 +61,12 @@ object mod {
   /* static members */
   object PrismAsyncLight {
     
-    @JSImport("react-syntax-highlighter", "PrismAsyncLight.registerLanguage")
+    @JSImport("react-syntax-highlighter", "PrismAsyncLight")
     @js.native
-    def registerLanguage(name: String, func: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "PrismLight")
@@ -68,32 +76,35 @@ object mod {
   /* static members */
   object PrismLight {
     
-    @JSImport("react-syntax-highlighter", "PrismLight.registerLanguage")
+    @JSImport("react-syntax-highlighter", "PrismLight")
     @js.native
-    def registerLanguage(name: String, func: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait SyntaxHighlighterProps
-    extends /* spread */ StringDictionary[js.Any] {
+    extends StObject
+       with /* spread */ StringDictionary[js.Any] {
     
-    var codeTagProps: js.UndefOr[HTMLProps[HTMLElement]] = js.native
+    var codeTagProps: js.UndefOr[HTMLProps[HTMLElement]] = js.undefined
     
-    var customStyle: js.UndefOr[js.Any] = js.native
+    var customStyle: js.UndefOr[js.Any] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var lineNumberStyle: js.UndefOr[js.Any] = js.native
+    var lineNumberStyle: js.UndefOr[js.Any] = js.undefined
     
-    var lineProps: js.UndefOr[lineTagPropsFunction | HTMLProps[HTMLElement]] = js.native
+    var lineProps: js.UndefOr[lineTagPropsFunction | HTMLProps[HTMLElement]] = js.undefined
     
-    var showLineNumbers: js.UndefOr[Boolean] = js.native
+    var showLineNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var startingLineNumber: js.UndefOr[Double] = js.native
+    var startingLineNumber: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var useInlineStyles: js.UndefOr[Boolean] = js.native
+    var useInlineStyles: js.UndefOr[Boolean] = js.undefined
   }
   object SyntaxHighlighterProps {
     

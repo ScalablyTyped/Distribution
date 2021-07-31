@@ -5,32 +5,42 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referrerPolicyMod {
   
-  @JSImport("helmet/dist/middlewares/referrer-policy", JSImport.Default)
+  @JSImport("helmet/dist/middlewares/referrer-policy", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
-  @JSImport("helmet/dist/middlewares/referrer-policy", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  @scala.inline
   def default(options: ReadonlyReferrerPolicyOpt): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @js.native
   trait ReferrerPolicyOptions extends StObject {
     
-    var policy: js.UndefOr[String | js.Array[String]] = js.native
+    var policy: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ReferrerPolicyOptions {
     

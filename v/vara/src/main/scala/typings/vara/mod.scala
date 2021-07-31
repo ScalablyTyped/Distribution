@@ -13,7 +13,6 @@ import typings.vara.varaStrings.left
 import typings.vara.varaStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,9 @@ object mod {
   /* was `typeof VaraType` */
   @JSImport("vara", JSImport.Namespace)
   @js.native
-  class ^ protected () extends VaraType {
+  class ^ protected ()
+    extends StObject
+       with VaraType {
     def this(queryDom: String, fontJSONSource: String, textStep: js.Array[TextStep]) = this()
     def this(
       queryDom: String,
@@ -31,18 +32,17 @@ object mod {
     ) = this()
   }
   
-  @js.native
   trait TextElements extends StObject {
     
     /**
       * Array of svg g elements, each representing a letter
       */
-    var characters: js.Array[SVGGElement] = js.native
+    var characters: js.Array[SVGGElement]
     
     /**
       * Svg g wrapping the text block
       */
-    var container: SVGGElement = js.native
+    var container: SVGGElement
   }
   object TextElements {
     
@@ -66,48 +66,47 @@ object mod {
     }
   }
   
-  @js.native
   trait TextProperties extends StObject {
     
     /**
       * Whether to animate the text automatically
       */
-    var autoAnimation: js.UndefOr[Boolean] = js.native
+    var autoAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color of the text
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Duration of the animation in milliseconds
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Size of the text
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Space between each character
       */
-    var letterSpacing: js.UndefOr[Double] = js.native
+    var letterSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the animation should be in a queue
       */
-    var queued: js.UndefOr[Boolean] = js.native
+    var queued: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width / Thickness of the stroke
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Text align, accepted values are left,center,right
       */
-    var textAlign: js.UndefOr[left | center | right] = js.native
+    var textAlign: js.UndefOr[left | center | right] = js.undefined
   }
   object TextProperties {
     
@@ -170,40 +169,41 @@ object mod {
     }
   }
   
-  @js.native
-  trait TextStep extends TextProperties {
+  trait TextStep
+    extends StObject
+       with TextProperties {
     
     /**
       * Delay before the animation starts in milliseconds
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the x or y coordinate should be from its calculated position,
       * ie the position if x or y coordinates were not applied
       */
-    var fromCurrentPosition: js.UndefOr[X] = js.native
+    var fromCurrentPosition: js.UndefOr[X] = js.undefined
     
     /**
       * String or integer, for if animations are called manually or when using the get() method.
       * Default is the index of the object.
       */
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Text to be shown
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * x coordinate of the text
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * y coordinate of the text
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object TextStep {
     

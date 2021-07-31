@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Image object, for use in "image.set({ ... })". */
-@js.native
 trait ImageUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ImageUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ImageUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ImageUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var hyperlink: js.UndefOr[String] = js.native
+  var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ImageUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ImageUpdateData {
   

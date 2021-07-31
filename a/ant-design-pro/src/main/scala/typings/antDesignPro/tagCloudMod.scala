@@ -5,7 +5,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagCloudMod {
@@ -15,14 +14,13 @@ object tagCloudMod {
   class default ()
     extends Component[ITagCloudProps, js.Any, js.Any]
   
-  @js.native
   trait ITagCloudProps extends StObject {
     
-    var data: js.Array[Name] = js.native
+    var data: js.Array[Name]
     
-    var height: Double = js.native
+    var height: Double
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ITagCloudProps {
     

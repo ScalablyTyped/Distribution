@@ -2,14 +2,15 @@ package typings.expiredStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("expired-storage", JSImport.Namespace)
   @js.native
-  class ^ () extends ExpiredStorage {
+  class ^ ()
+    extends StObject
+       with ExpiredStorage {
     def this(localStorage: js.Any) = this()
   }
   
@@ -108,29 +109,28 @@ object mod {
     def updateExpiration(key: String, expiration: Double): js.Any = js.native
   }
   
-  @js.native
   trait PeekInterface extends StObject {
     
     /**
       * Has the [key] expired or not
       */
-    var isExpired: Boolean = js.native
+    var isExpired: Boolean
     
     /**
       * Time remaining until expiration
       */
-    var timeLeft: Double | Null = js.native
+    var timeLeft: Double | Null
     
     /**
       * The value of a [key]
       */
-    var value: String | Null = js.native
+    var value: String | Null
   }
   object PeekInterface {
     
     @scala.inline
     def apply(isExpired: Boolean): PeekInterface = {
-      val __obj = js.Dynamic.literal(isExpired = isExpired.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isExpired = isExpired.asInstanceOf[js.Any], timeLeft = null, value = null)
       __obj.asInstanceOf[PeekInterface]
     }
     

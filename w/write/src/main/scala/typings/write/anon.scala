@@ -6,7 +6,6 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -20,10 +19,9 @@ object anon {
   }
   
   /* Inlined std.Omit<node.fs.MakeDirectoryOptions, 'recursive'> */
-  @js.native
   trait OmitMakeDirectoryOptionsr extends StObject {
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
   }
   object OmitMakeDirectoryOptionsr {
     

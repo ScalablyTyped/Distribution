@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,32 +14,52 @@ sealed trait ThemeColorType extends StObject
 object ThemeColorType extends StObject {
   
   @js.native
-  sealed trait ACCENT1 extends ThemeColorType
+  sealed trait ACCENT1
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait ACCENT2 extends ThemeColorType
+  sealed trait ACCENT2
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait ACCENT3 extends ThemeColorType
+  sealed trait ACCENT3
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait ACCENT4 extends ThemeColorType
+  sealed trait ACCENT4
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait ACCENT5 extends ThemeColorType
+  sealed trait ACCENT5
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait ACCENT6 extends ThemeColorType
+  sealed trait ACCENT6
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait BACKGROUND extends ThemeColorType
+  sealed trait BACKGROUND
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait HYPERLINK extends ThemeColorType
+  sealed trait HYPERLINK
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait TEXT extends ThemeColorType
+  sealed trait TEXT
+    extends StObject
+       with ThemeColorType
   
   @js.native
-  sealed trait UNSUPPORTED extends ThemeColorType
+  sealed trait UNSUPPORTED
+    extends StObject
+       with ThemeColorType
 }

@@ -2,15 +2,15 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateResult[T /* <: js.Object */] extends UpdateMetadata {
+trait UpdateResult[T /* <: js.Object */]
+  extends StObject
+     with UpdateMetadata {
   
-  var `new`: js.UndefOr[Document[T]] = js.native
+  var `new`: js.UndefOr[Document[T]] = js.undefined
   
-  var old: js.UndefOr[Document[T]] = js.native
+  var old: js.UndefOr[Document[T]] = js.undefined
 }
 object UpdateResult {
   
@@ -21,7 +21,7 @@ object UpdateResult {
   }
   
   @scala.inline
-  implicit class UpdateResultMutableBuilder[Self <: UpdateResult[_], T /* <: js.Object */] (val x: Self with UpdateResult[T]) extends AnyVal {
+  implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?], T /* <: js.Object */] (val x: Self & UpdateResult[T]) extends AnyVal {
     
     @scala.inline
     def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])

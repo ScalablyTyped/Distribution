@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Identity", "identity")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Identity", JSImport.Namespace)
   @js.native
-  def identity(args: InputsIdentityInputs): TensorInfo = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def identity(args: InputsIdentityInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Identity", "identityConfig")
   @js.native

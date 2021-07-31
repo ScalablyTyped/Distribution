@@ -2,23 +2,21 @@ package typings.reactNavigationNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: String = js.native
+  var background: String
   
-  var border: String = js.native
+  var border: String
   
-  var card: String = js.native
+  var card: String
   
-  var notification: String = js.native
+  var notification: String
   
-  var primary: String = js.native
+  var primary: String
   
-  var text: String = js.native
+  var text: String
 }
 object Background {
   

@@ -6,7 +6,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaContainerMod {
@@ -14,33 +13,34 @@ object mediaContainerMod {
   @JSImport("@react-md/media/types/MediaContainer", "MediaContainer")
   @js.native
   val MediaContainer: ForwardRefExoticComponent[
-    (MediaContainerProps with RefAttributes[HTMLDivElement]) | (MediaContainerWithAspectRatioProps with RefAttributes[HTMLDivElement])
+    (MediaContainerProps & RefAttributes[HTMLDivElement]) | (MediaContainerWithAspectRatioProps & RefAttributes[HTMLDivElement])
   ] = js.native
   
-  @js.native
-  trait MediaContainerProps extends HTMLAttributes[HTMLDivElement] {
+  trait MediaContainerProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if any media element children should be updated to be responsive.
       */
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the media container should have a `width: 100%;` applied.
       */
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional aspect ratio height to enforce. This **must** be used alongside
       * the `width` prop.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * An optional aspect ratio width to enforce. This **must** be used alongside
       * the `height` prop.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MediaContainerProps {
     
@@ -79,14 +79,15 @@ object mediaContainerMod {
     }
   }
   
-  @js.native
-  trait MediaContainerWithAspectRatioProps extends MediaContainerProps {
+  trait MediaContainerWithAspectRatioProps
+    extends StObject
+       with MediaContainerProps {
     
     @JSName("height")
-    var height_MediaContainerWithAspectRatioProps: Double = js.native
+    var height_MediaContainerWithAspectRatioProps: Double
     
     @JSName("width")
-    var width_MediaContainerWithAspectRatioProps: Double = js.native
+    var width_MediaContainerWithAspectRatioProps: Double
   }
   object MediaContainerWithAspectRatioProps {
     

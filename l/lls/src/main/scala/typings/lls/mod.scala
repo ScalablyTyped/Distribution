@@ -6,7 +6,6 @@ import typings.lls.mod.LargeLocalStorageInterfaces.LargeLocalStorageService
 import typings.lls.mod.LargeLocalStorageInterfaces.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("lls", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LargeLocalStorageService {
+  class ^ protected ()
+    extends StObject
+       with LargeLocalStorageService {
     def this(options: Options) = this()
   }
   @JSImport("lls", JSImport.Namespace)
@@ -23,16 +24,15 @@ object mod extends Shortcut {
   
   object LargeLocalStorageInterfaces {
     
-    @js.native
     trait Entry extends StObject {
       
-      var attachKey: String = js.native
+      var attachKey: String
       
-      var data: js.Any = js.native
+      var data: js.Any
       
-      var docKey: String = js.native
+      var docKey: String
       
-      var url: String = js.native
+      var url: String
     }
     object Entry {
       
@@ -60,7 +60,9 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait LargeLocalStorageService extends Instantiable1[/* options */ Options, LargeLocalStorageService] {
+    trait LargeLocalStorageService
+      extends StObject
+         with Instantiable1[/* options */ Options, LargeLocalStorageService] {
       
       /**
         * Gets all attachments URLs for a document.
@@ -77,11 +79,11 @@ object mod extends Shortcut {
       /**
         * Get the attachment identified by attachKey
         */
-      def getAttachment(attachKey: String): Promise[_] = js.native
+      def getAttachment(attachKey: String): Promise[js.Any] = js.native
       /**
         * Get the attachment identified by docKey and attachKey
         */
-      def getAttachment(docKey: String, attachKey: String): Promise[_] = js.native
+      def getAttachment(docKey: String, attachKey: String): Promise[js.Any] = js.native
       
       /**
         * Get the URL for a given attachment.
@@ -100,7 +102,7 @@ object mod extends Shortcut {
       /**
         * Get the contents of a document identified by docKey
         */
-      def getContents(docKey: String): Promise[_] = js.native
+      def getContents(docKey: String): Promise[js.Any] = js.native
       
       var initialized: Promise[Double] = js.native
       
@@ -123,8 +125,8 @@ object mod extends Shortcut {
       /**
         * Remove the specified document and all of its attachments.
         */
-      def rm(): Promise[_] = js.native
-      def rm(docKey: String): Promise[_] = js.native
+      def rm(): Promise[js.Any] = js.native
+      def rm(docKey: String): Promise[js.Any] = js.native
       
       /**
         * Remove an attachment from a document.
@@ -146,23 +148,22 @@ object mod extends Shortcut {
       def setContents(docKey: String, data: js.Any): Promise[Unit] = js.native
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Force LLS to use a specific storage implementation: 'IndexedDB' or 'WebSQL' or 'FilesystemAPI'.
         */
-      var forceProvider: js.UndefOr[String] = js.native
+      var forceProvider: js.UndefOr[String] = js.undefined
       
       /**
         * Optional name for your LLS database. Defaults to lls. This is the name given to the underlying IndexedDB or WebSQL DB or FSAPI Folder. LLS's with different names are independent.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Desired capacity in bytes.
         */
-      var size: Double = js.native
+      var size: Double
     }
     object Options {
       
@@ -199,15 +200,12 @@ object mod extends Shortcut {
       def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Promise[U]]): Promise[U] = js.native
       
       def `then`[U](): Promise[U] = js.native
-      def `then`[U](
-        onFulfilled: js.UndefOr[scala.Nothing],
-        onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | Unit]
-      ): Promise[U] = js.native
       def `then`[U](onFulfilled: js.Function1[/* value */ T, U | Promise[U]]): Promise[U] = js.native
       def `then`[U](
         onFulfilled: js.Function1[/* value */ T, Promise[U] | U],
         onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | Unit]
       ): Promise[U] = js.native
+      def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | Unit]): Promise[U] = js.native
     }
   }
   

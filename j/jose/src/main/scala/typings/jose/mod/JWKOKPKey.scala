@@ -3,28 +3,27 @@ package typings.jose.mod
 import typings.jose.joseStrings.OKP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JWKOKPKey
-  extends KeyParameters
+  extends StObject
+     with KeyParameters
      with JSONWebKey
      with _ProduceKeyInput {
   
-  var crv: OKPCurve = js.native
+  var crv: OKPCurve
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var kty: OKP = js.native
+  var kty: OKP
   
-  var x: String = js.native
+  var x: String
 }
 object JWKOKPKey {
   
   @scala.inline
-  def apply(crv: OKPCurve, kty: OKP, x: String): JWKOKPKey = {
-    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
+  def apply(crv: OKPCurve, x: String): JWKOKPKey = {
+    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "OKP", x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKOKPKey]
   }
   

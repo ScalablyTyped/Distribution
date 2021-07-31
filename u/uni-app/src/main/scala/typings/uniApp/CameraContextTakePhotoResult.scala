@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraContextTakePhotoResult extends StObject {
   
   /**
     * 照片文件的临时路径，安卓是jpg图片格式，ios是png
     */
-  var tempImagePath: js.UndefOr[String] = js.native
+  var tempImagePath: js.UndefOr[String] = js.undefined
 }
 object CameraContextTakePhotoResult {
   

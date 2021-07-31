@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the context of use for a conformance or knowledge resource
   */
-@js.native
-trait UsageContext extends Element {
+trait UsageContext
+  extends StObject
+     with Element {
   
   /**
     * Type of context being specified
     */
-  var code: Coding = js.native
+  var code: Coding
   
   /**
     * Value that defines the context
     */
-  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Value that defines the context
     */
-  var valueQuantity: js.UndefOr[Quantity] = js.native
+  var valueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Value that defines the context
     */
-  var valueRange: js.UndefOr[Range] = js.native
+  var valueRange: js.UndefOr[Range] = js.undefined
 }
 object UsageContext {
   

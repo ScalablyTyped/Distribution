@@ -20,11 +20,9 @@ import typings.officeJs.officeJsStrings.MonochromaticPalette8
 import typings.officeJs.officeJsStrings.MonochromaticPalette9
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`. */
-@js.native
 trait ChartAreaFormatUpdateData extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait ChartAreaFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var border: js.UndefOr[ChartBorderUpdateData] = js.native
+  var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ChartAreaFormatUpdateData extends StObject {
     */
   var colorScheme: js.UndefOr[
     ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait ChartAreaFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[ChartFontUpdateData] = js.native
+  var font: js.UndefOr[ChartFontUpdateData] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait ChartAreaFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var roundedCorners: js.UndefOr[Boolean] = js.native
+  var roundedCorners: js.UndefOr[Boolean] = js.undefined
 }
 object ChartAreaFormatUpdateData {
   

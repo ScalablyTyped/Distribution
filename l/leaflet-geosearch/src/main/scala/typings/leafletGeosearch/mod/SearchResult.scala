@@ -2,21 +2,19 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResult[Raw] extends StObject {
   
-  var bounds: BoundsTuple = js.native
+  var bounds: BoundsTuple
   
-  var label: String = js.native
+  var label: String
   
-  var raw: Raw = js.native
+  var raw: Raw
   
-  var x: String = js.native
+  var x: String
   
-  var y: String = js.native
+  var y: String
 }
 object SearchResult {
   
@@ -27,7 +25,7 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult[_], Raw] (val x: Self with SearchResult[Raw]) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult[?], Raw] (val x: Self & SearchResult[Raw]) extends AnyVal {
     
     @scala.inline
     def setBounds(value: BoundsTuple): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])

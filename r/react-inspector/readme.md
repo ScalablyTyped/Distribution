@@ -10,9 +10,9 @@ Power of Browser DevTools inspectors right inside your React app
 | ------------------ | :-------------: |
 | Full name          | react-inspector |
 | Keywords           | devtools, inspector, object, object-inspector, react, react-component, reactjs, table, table-inspector, table-view, tableview, tree, tree-view, treeview, ui, view |
-| # releases         | 8 |
-| # dependents       | 76 |
-| # downloads        | 65338675 |
+| # releases         | 10 |
+| # dependents       | 81 |
+| # downloads        | 82345471 |
 | # stars            | 4 |
 
 ## Links

@@ -4,7 +4,6 @@ import typings.stringifyAttributes.mod.Attributes
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,26 +29,27 @@ object mod {
   //=> '<div>Hello &lt;em&gt;World&lt;/em&gt;</div>'
   ```
   */
-  @JSImport("create-html-element", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("create-html-element", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @JSImport("create-html-element", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BaseOptions extends StObject {
     
     /**
     		HTML tag attributes.
     		*/
-    var attributes: js.UndefOr[Attributes] = js.native
+    var attributes: js.UndefOr[Attributes] = js.undefined
     
     /**
     		HTML tag name.
     		@default 'div'
     		*/
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object BaseOptions {
     
@@ -76,13 +76,12 @@ object mod {
     }
   }
   
-  @js.native
   trait HtmlOptions extends StObject {
     
     /**
     		HTML tag value in unescaped HTML.
     		*/
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
   }
   object HtmlOptions {
     
@@ -103,15 +102,14 @@ object mod {
     }
   }
   
-  type Options = BaseOptions with (MergeExclusive[HtmlOptions, TextOptions])
+  type Options = BaseOptions & (MergeExclusive[HtmlOptions, TextOptions])
   
-  @js.native
   trait TextOptions extends StObject {
     
     /**
     		HTML tag value in escaped HTML.
     		*/
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object TextOptions {
     

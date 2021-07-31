@@ -2,29 +2,27 @@ package typings.speedtestNet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerData extends StObject {
   
-  var country: String = js.native
+  var country: String
   
-  var host: String = js.native
+  var host: String
   
-  var host_functional: js.UndefOr[String] = js.native
+  var host_functional: js.UndefOr[String] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var ip: String = js.native
+  var ip: String
   
-  var location: String = js.native
+  var location: String
   
-  var name: String = js.native
+  var name: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var sponsor: js.UndefOr[String] = js.native
+  var sponsor: js.UndefOr[String] = js.undefined
 }
 object ServerData {
   

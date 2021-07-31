@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object SocketActivityConnectedStandbyAction extends StObject {
   
   /** The app should not receive packets when the system goes to stand by. */
   @js.native
-  sealed trait doNotWake extends SocketActivityConnectedStandbyAction
+  sealed trait doNotWake
+    extends StObject
+       with SocketActivityConnectedStandbyAction
   
   /** The app can receive packets even when the system goes to stand by. */
   @js.native
-  sealed trait wake extends SocketActivityConnectedStandbyAction
+  sealed trait wake
+    extends StObject
+       with SocketActivityConnectedStandbyAction
 }

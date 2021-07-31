@@ -2,21 +2,19 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait formatSettings extends StObject {
   
-  var currency: currencySettings = js.native
+  var currency: currencySettings
   
-  var decimals: Double = js.native
+  var decimals: Double
   
-  var groupSizes: js.Array[Double] = js.native
+  var groupSizes: js.Array[Double]
   
-  var pattern: js.Array[String] = js.native
+  var pattern: js.Array[String]
   
-  var percent: percentSettings = js.native
+  var percent: percentSettings
 }
 object formatSettings {
   

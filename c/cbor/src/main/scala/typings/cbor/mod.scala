@@ -15,7 +15,6 @@ import typings.std.Error
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,60 +27,46 @@ object mod {
   /* static members */
   object Commented {
     
-    @JSImport("cbor", "Commented.comment")
+    @JSImport("cbor", "Commented")
     @js.native
-    def comment(input: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: String, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: String, options: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: String, options: String, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: String, options: CommentOptions): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: String, options: CommentOptions, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer, options: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer, options: String, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer, options: CommentOptions): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: Buffer, options: CommentOptions, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView, options: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView, options: String, cb: commentCallback): Unit = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView, options: CommentOptions): js.Promise[String] = js.native
-    @JSImport("cbor", "Commented.comment")
-    @js.native
-    def comment(input: ArrayBufferView, options: CommentOptions, cb: commentCallback): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def comment(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: String, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: String, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: String, options: String, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: String, options: CommentOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: String, options: CommentOptions, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: Buffer, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: Buffer, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: Buffer, options: String, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: Buffer, options: CommentOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: Buffer, options: CommentOptions, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: ArrayBufferView, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: ArrayBufferView, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: ArrayBufferView, options: String, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def comment(input: ArrayBufferView, options: CommentOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def comment(input: ArrayBufferView, options: CommentOptions, cb: commentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("cbor", "Decoder")
@@ -92,175 +77,124 @@ object mod {
   /* static members */
   object Decoder {
     
-    @JSImport("cbor", "Decoder.decodeAll")
+    @JSImport("cbor", "Decoder")
     @js.native
-    def decodeAll(input: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: String, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: String, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: String, options: String, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: String, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: String, options: DecodeOptions, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer, options: String, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: Buffer, options: DecodeOptions, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView, options: String, cb: decodeAllCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAll")
-    @js.native
-    def decodeAll(input: ArrayBufferView, options: DecodeOptions, cb: decodeAllCallback): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: String): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: String, options: String): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: String, options: DecodeOptions): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: Buffer): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: Buffer, options: String): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: Buffer, options: DecodeOptions): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: ArrayBufferView): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: ArrayBufferView, options: String): js.Array[_] = js.native
-    @JSImport("cbor", "Decoder.decodeAllSync")
-    @js.native
-    def decodeAllSync(input: ArrayBufferView, options: DecodeOptions): js.Array[_] = js.native
+    @scala.inline
+    def decodeAll(input: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: String, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: String, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: String, options: String, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: String, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: String, options: DecodeOptions, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: Buffer): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: Buffer, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: Buffer, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: Buffer, options: String, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: Buffer, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: Buffer, options: DecodeOptions, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView, options: String, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeAll(input: ArrayBufferView, options: DecodeOptions, cb: decodeAllCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String, options: String, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: String, options: DecodeOptions, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer, options: String, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: Buffer, options: DecodeOptions, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView, options: String): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView, options: String, cb: decodeCallback): Unit = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView, options: DecodeOptions): js.Promise[_] = js.native
-    @JSImport("cbor", "Decoder.decodeFirst")
-    @js.native
-    def decodeFirst(input: ArrayBufferView, options: DecodeOptions, cb: decodeCallback): Unit = js.native
+    @scala.inline
+    def decodeAllSync(input: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: String, options: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: String, options: DecodeOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: Buffer): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: Buffer, options: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: Buffer, options: DecodeOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: ArrayBufferView): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: ArrayBufferView, options: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def decodeAllSync(input: ArrayBufferView, options: DecodeOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: String): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: String, options: String): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: String, options: DecodeOptions): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: Buffer): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: Buffer, options: String): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: Buffer, options: DecodeOptions): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: ArrayBufferView): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: ArrayBufferView, options: String): js.Any = js.native
-    @JSImport("cbor", "Decoder.decodeFirstSync")
-    @js.native
-    def decodeFirstSync(input: ArrayBufferView, options: DecodeOptions): js.Any = js.native
+    @scala.inline
+    def decodeFirst(input: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: String, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: String, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: String, options: String, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: String, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: String, options: DecodeOptions, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: Buffer): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: Buffer, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: Buffer, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: Buffer, options: String, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: Buffer, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: Buffer, options: DecodeOptions, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView, options: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView, options: String, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView, options: DecodeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def decodeFirst(input: ArrayBufferView, options: DecodeOptions, cb: decodeCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("cbor", "Decoder.nullcheck")
-    @js.native
-    def nullcheck(`val`: js.Any): js.Any = js.native
+    @scala.inline
+    def decodeFirstSync(input: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: String, options: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: String, options: DecodeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: Buffer, options: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: Buffer, options: DecodeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: ArrayBufferView): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: ArrayBufferView, options: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def decodeFirstSync(input: ArrayBufferView, options: DecodeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def nullcheck(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nullcheck")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("cbor", "Diagnose")
@@ -271,33 +205,28 @@ object mod {
   /* static members */
   object Diagnose {
     
-    @JSImport("cbor", "Diagnose.diagnose")
+    @JSImport("cbor", "Diagnose")
     @js.native
-    def diagnose(input: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: String, cb: diagnoseCallback): Unit = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: String, encoding: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: Buffer): js.Promise[String] = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: Buffer, cb: diagnoseCallback): Unit = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: Buffer, encoding: String): js.Promise[String] = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: ArrayBufferView): js.Promise[String] = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: ArrayBufferView, cb: diagnoseCallback): Unit = js.native
-    @JSImport("cbor", "Diagnose.diagnose")
-    @js.native
-    def diagnose(input: ArrayBufferView, encoding: String): js.Promise[String] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def diagnose(input: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def diagnose(input: String, cb: diagnoseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def diagnose(input: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def diagnose(input: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def diagnose(input: Buffer, cb: diagnoseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def diagnose(input: Buffer, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def diagnose(input: ArrayBufferView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def diagnose(input: ArrayBufferView, cb: diagnoseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def diagnose(input: ArrayBufferView, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   }
   
   @JSImport("cbor", "Encoder")
@@ -317,33 +246,33 @@ object mod {
   /* static members */
   object Encoder {
     
-    @JSImport("cbor", "Encoder.encode")
+    @JSImport("cbor", "Encoder")
     @js.native
-    def encode(objs: js.Any*): Buffer | ArrayBufferView = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("cbor", "Encoder.encodeAsync")
-    @js.native
-    def encodeAsync(obj: js.Any): js.Promise[Buffer | ArrayBufferView] = js.native
-    @JSImport("cbor", "Encoder.encodeAsync")
-    @js.native
-    def encodeAsync(obj: js.Any, options: EncoderOptions): js.Promise[Buffer | ArrayBufferView] = js.native
+    @scala.inline
+    def encode(objs: js.Any*): Buffer | ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(objs.asInstanceOf[js.Any]).asInstanceOf[Buffer | ArrayBufferView]
     
-    @JSImport("cbor", "Encoder.encodeCanonical")
-    @js.native
-    def encodeCanonical(objs: js.Any*): Buffer | ArrayBufferView = js.native
+    @scala.inline
+    def encodeAsync(obj: js.Any): js.Promise[Buffer | ArrayBufferView] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeAsync")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer | ArrayBufferView]]
+    @scala.inline
+    def encodeAsync(obj: js.Any, options: EncoderOptions): js.Promise[Buffer | ArrayBufferView] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAsync")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | ArrayBufferView]]
     
-    @JSImport("cbor", "Encoder.encodeOne")
-    @js.native
-    def encodeOne(obj: js.Any): Buffer | ArrayBufferView = js.native
-    @JSImport("cbor", "Encoder.encodeOne")
-    @js.native
-    def encodeOne(obj: js.Any, options: EncoderOptions): Buffer | ArrayBufferView = js.native
+    @scala.inline
+    def encodeCanonical(objs: js.Any*): Buffer | ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCanonical")(objs.asInstanceOf[js.Any]).asInstanceOf[Buffer | ArrayBufferView]
+    
+    @scala.inline
+    def encodeOne(obj: js.Any): Buffer | ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeOne")(obj.asInstanceOf[js.Any]).asInstanceOf[Buffer | ArrayBufferView]
+    @scala.inline
+    def encodeOne(obj: js.Any, options: EncoderOptions): Buffer | ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeOne")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer | ArrayBufferView]
   }
   
   @JSImport("cbor", "Map")
   @js.native
-  class Map protected () extends CborMap {
-    def this(iterable: Iterable[js.Tuple2[_, _]]) = this()
+  class Map protected ()
+    extends StObject
+       with CborMap {
+    def this(iterable: Iterable[js.Tuple2[js.Any, js.Any]]) = this()
   }
   
   @JSImport("cbor", "Simple")
@@ -356,22 +285,21 @@ object mod {
   /* static members */
   object Simple {
     
-    @JSImport("cbor", "Simple.decode")
+    @JSImport("cbor", "Simple")
     @js.native
-    def decode(`val`: Double): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
-    @JSImport("cbor", "Simple.decode")
-    @js.native
-    def decode(`val`: Double, has_parent: js.UndefOr[scala.Nothing], parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
-    @JSImport("cbor", "Simple.decode")
-    @js.native
-    def decode(`val`: Double, has_parent: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
-    @JSImport("cbor", "Simple.decode")
-    @js.native
-    def decode(`val`: Double, has_parent: Boolean, parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("cbor", "Simple.isSimple")
-    @js.native
-    def isSimple(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def decode(`val`: Double): js.UndefOr[Null | Boolean | js.Symbol | Simple] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Null | Boolean | js.Symbol | Simple]]
+    @scala.inline
+    def decode(`val`: Double, has_parent: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(`val`.asInstanceOf[js.Any], has_parent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Null | Boolean | js.Symbol | Simple]]
+    @scala.inline
+    def decode(`val`: Double, has_parent: Boolean, parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(`val`.asInstanceOf[js.Any], has_parent.asInstanceOf[js.Any], parent_indefinite.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Null | Boolean | js.Symbol | Simple]]
+    @scala.inline
+    def decode(`val`: Double, has_parent: Unit, parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(`val`.asInstanceOf[js.Any], has_parent.asInstanceOf[js.Any], parent_indefinite.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Null | Boolean | js.Symbol | Simple]]
+    
+    @scala.inline
+    def isSimple(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimple")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("cbor", "Tagged")
@@ -379,11 +307,11 @@ object mod {
   class Tagged protected () extends StObject {
     def this(tag: Double) = this()
     def this(tag: Double, value: js.Any) = this()
-    def this(tag: Double, value: js.UndefOr[scala.Nothing], err: Error) = this()
     def this(tag: Double, value: js.Any, err: Error) = this()
+    def this(tag: Double, value: Unit, err: Error) = this()
     
     def convert(): js.Any = js.native
-    def convert(converters: NumberDictionary[js.Function1[/* val */ js.Any, _]]): js.Any = js.native
+    def convert(converters: NumberDictionary[js.Function1[/* val */ js.Any, js.Any]]): js.Any = js.native
     
     def encodeCBOR(gen: Encoder): Boolean = js.native
   }
@@ -449,7 +377,8 @@ object mod {
   
   @js.native
   trait CborMap
-    extends typings.std.Map[
+    extends StObject
+       with typings.std.Map[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
         ] {
@@ -457,12 +386,11 @@ object mod {
     def encodeCBOR(gen: Encoder): Boolean = js.native
   }
   
-  @js.native
   trait CommentOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
   }
   object CommentOptions {
     
@@ -489,10 +417,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait CommentedOptions extends TransformOptions {
+  trait CommentedOptions
+    extends StObject
+       with TransformOptions {
     
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
   }
   object CommentedOptions {
     
@@ -513,10 +442,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DecodeOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
   }
   object DecodeOptions {
     
@@ -537,14 +465,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait DecoderOptions extends TransformOptions {
+  trait DecoderOptions
+    extends StObject
+       with TransformOptions {
     
-    var bigint: js.UndefOr[Boolean] = js.native
+    var bigint: js.UndefOr[Boolean] = js.undefined
     
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
-    var tags: js.UndefOr[NumberDictionary[js.Function1[/* v */ js.Any, _]]] = js.native
+    var tags: js.UndefOr[NumberDictionary[js.Function1[/* v */ js.Any, js.Any]]] = js.undefined
   }
   object DecoderOptions {
     
@@ -570,21 +499,22 @@ object mod {
       def setMax_depthUndefined: Self = StObject.set(x, "max_depth", js.undefined)
       
       @scala.inline
-      def setTags(value: NumberDictionary[js.Function1[/* v */ js.Any, _]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      def setTags(value: NumberDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
-  @js.native
-  trait DiagnoseOptions extends TransformOptions {
+  trait DiagnoseOptions
+    extends StObject
+       with TransformOptions {
     
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var stream_errors: js.UndefOr[Boolean] = js.native
+    var stream_errors: js.UndefOr[Boolean] = js.undefined
   }
   object DiagnoseOptions {
     
@@ -617,20 +547,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait EncoderOptions extends TransformOptions {
+  trait EncoderOptions
+    extends StObject
+       with TransformOptions {
     
-    var canonical: js.UndefOr[Boolean] = js.native
+    var canonical: js.UndefOr[Boolean] = js.undefined
     
-    var dateType: js.UndefOr[number | float | int | string] = js.native
+    var dateType: js.UndefOr[number | float | int | string] = js.undefined
     
-    var detectLoops: js.UndefOr[Boolean | js.Symbol] = js.native
+    var detectLoops: js.UndefOr[Boolean | js.Symbol] = js.undefined
     
-    var disallowUndefinedKeys: js.UndefOr[Boolean] = js.native
+    var disallowUndefinedKeys: js.UndefOr[Boolean] = js.undefined
     
-    var encodeUndefined: js.UndefOr[js.Any] = js.native
+    var encodeUndefined: js.UndefOr[js.Any] = js.undefined
     
-    var genTypes: js.UndefOr[js.Array[_]] = js.native
+    var genTypes: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object EncoderOptions {
     
@@ -674,7 +605,7 @@ object mod {
       def setEncodeUndefinedUndefined: Self = StObject.set(x, "encodeUndefined", js.undefined)
       
       @scala.inline
-      def setGenTypes(value: js.Array[_]): Self = StObject.set(x, "genTypes", value.asInstanceOf[js.Any])
+      def setGenTypes(value: js.Array[js.Any]): Self = StObject.set(x, "genTypes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGenTypesUndefined: Self = StObject.set(x, "genTypes", js.undefined)

@@ -8,11 +8,12 @@ import typings.reactNative.mod.StatusBarProps
 import typings.reactNative.mod.StatusBarStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofStatusBar extends Instantiable1[/* props */ ReadonlyStatusBarProps, StatusBar] {
+trait TypeofStatusBar
+  extends StObject
+     with Instantiable1[/* props */ ReadonlyStatusBarProps, StatusBar] {
   
   /**
     * The current height of the status bar on the device.

@@ -15,10 +15,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthoringInfoVisualVariableProperties extends StObject {
   
   /**
@@ -26,49 +24,49 @@ trait AuthoringInfoVisualVariableProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#endTime)
     */
-  var endTime: js.UndefOr[String | Double] = js.native
+  var endTime: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Indicates the field name used for generating the data-driven visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#field)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the value of the upper handle if a slider was used to generate the visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#maxSliderValue)
     */
-  var maxSliderValue: js.UndefOr[Double] = js.native
+  var maxSliderValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the value of the lower handle if a slider was used to generate the visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#minSliderValue)
     */
-  var minSliderValue: js.UndefOr[Double] = js.native
+  var minSliderValue: js.UndefOr[Double] = js.undefined
   
   /**
     * If an age or timeline renderer was generated, indicates the start time of the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#startTime)
     */
-  var startTime: js.UndefOr[String | Double] = js.native
+  var startTime: js.UndefOr[String | Double] = js.undefined
   
   /**
     * If the UI offers the option to display values based on a ratio or percentage, this indicates which selection was made.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#style)
     */
-  var style: js.UndefOr[percent | `percent-of-total` | ratio] = js.native
+  var style: js.UndefOr[percent | `percent-of-total` | ratio] = js.undefined
   
   /**
     * Indicates the theme selected by the user when generating a renderer or visual variable with one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#theme)
     */
-  var theme: js.UndefOr[`above-and-below` | `centered-on` | extremes | `high-to-low`] = js.native
+  var theme: js.UndefOr[`above-and-below` | `centered-on` | extremes | `high-to-low`] = js.undefined
   
   /**
     * The type of visual variable generated.
@@ -77,14 +75,14 @@ trait AuthoringInfoVisualVariableProperties extends StObject {
     */
   var `type`: js.UndefOr[
     typings.arcgisJsApi.arcgisJsApiStrings.color | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.opacity
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If an age or timeline renderer was generated, indicates the time units used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#units)
     */
-  var units: js.UndefOr[seconds | minutes | hours | days | months | years] = js.native
+  var units: js.UndefOr[seconds | minutes | hours | days | months | years] = js.undefined
 }
 object AuthoringInfoVisualVariableProperties {
   

@@ -3,19 +3,17 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Collapsible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackInstance extends StObject {
   
-  def add(entry: Collapsible): StackInstanceEntry = js.native
+  def add(entry: Collapsible): StackInstanceEntry
   
-  def hide(): StackInstance = js.native
+  def hide(): StackInstance
   
-  def resize(): Unit = js.native
+  def resize(): Unit
   
-  def show(): StackInstance = js.native
+  def show(): StackInstance
 }
 object StackInstance {
   

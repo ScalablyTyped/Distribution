@@ -14,7 +14,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tile {
@@ -360,8 +359,8 @@ object tile {
   class layer protected () extends StObject {
     def this(id: String) = this()
     def this(id: String, useBackdrop: Boolean) = this()
-    def this(id: String, useBackdrop: js.UndefOr[scala.Nothing], maxConcurrentRequests: Double) = this()
     def this(id: String, useBackdrop: Boolean, maxConcurrentRequests: Double) = this()
+    def this(id: String, useBackdrop: Unit, maxConcurrentRequests: Double) = this()
     
     /**
       * Composes an array of quadtiles with composition information and
@@ -667,9 +666,12 @@ object tile {
   }
   object quad {
     
-    @JSImport("mapsjs", "tile.quad.factoryQuadFromKey")
+    @JSImport("mapsjs", "tile.quad")
     @js.native
-    def factoryQuadFromKey(key: String): quad = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def factoryQuadFromKey(key: String): quad = ^.asInstanceOf[js.Dynamic].applyDynamic("factoryQuadFromKey")(key.asInstanceOf[js.Any]).asInstanceOf[quad]
   }
   
   @JSImport("mapsjs", "tile.renderer")

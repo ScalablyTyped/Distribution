@@ -9,7 +9,6 @@ import typings.reactNativeSwipeout.mod.SwipeoutButtonProperties
 import typings.reactNativeSwipeout.mod.SwipeoutProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeActionMod {
@@ -38,14 +37,15 @@ object swipeActionMod {
     def renderCustomButton(button: SwipeoutButtonProps): Color = js.native
   }
   
-  @js.native
-  trait SwipeActionProps extends SwipeoutProperties {
+  trait SwipeActionProps
+    extends StObject
+       with SwipeoutProperties {
     
     @JSName("left")
-    var left_SwipeActionProps: js.UndefOr[js.Array[SwipeoutButtonProps]] = js.native
+    var left_SwipeActionProps: js.UndefOr[js.Array[SwipeoutButtonProps]] = js.undefined
     
     @JSName("right")
-    var right_SwipeActionProps: js.UndefOr[js.Array[SwipeoutButtonProps]] = js.native
+    var right_SwipeActionProps: js.UndefOr[js.Array[SwipeoutButtonProps]] = js.undefined
   }
   object SwipeActionProps {
     
@@ -78,10 +78,11 @@ object swipeActionMod {
     }
   }
   
-  @js.native
-  trait SwipeoutButtonProps extends SwipeoutButtonProperties {
+  trait SwipeoutButtonProps
+    extends StObject
+       with SwipeoutButtonProperties {
     
-    var style: js.UndefOr[StyleProp[TextStyle] with BackgroundColor] = js.native
+    var style: js.UndefOr[StyleProp[TextStyle] & BackgroundColor] = js.undefined
   }
   object SwipeoutButtonProps {
     
@@ -95,7 +96,7 @@ object swipeActionMod {
     implicit class SwipeoutButtonPropsMutableBuilder[Self <: SwipeoutButtonProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStyle(value: StyleProp[TextStyle] with BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      def setStyle(value: StyleProp[TextStyle] & BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

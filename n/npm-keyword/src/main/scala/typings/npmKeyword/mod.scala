@@ -2,7 +2,6 @@ package typings.npmKeyword
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,18 +19,14 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-keyword", JSImport.Namespace)
-  @js.native
-  def apply(keyword: String): js.Promise[js.Array[PackageDescriptor]] = js.native
-  @JSImport("npm-keyword", JSImport.Namespace)
-  @js.native
-  def apply(keyword: String, options: Options): js.Promise[js.Array[PackageDescriptor]] = js.native
-  @JSImport("npm-keyword", JSImport.Namespace)
-  @js.native
-  def apply(keyword: js.Array[String]): js.Promise[js.Array[PackageDescriptor]] = js.native
-  @JSImport("npm-keyword", JSImport.Namespace)
-  @js.native
-  def apply(keyword: js.Array[String], options: Options): js.Promise[js.Array[PackageDescriptor]] = js.native
+  @scala.inline
+  def apply(keyword: String): js.Promise[js.Array[PackageDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PackageDescriptor]]]
+  @scala.inline
+  def apply(keyword: String, options: Options): js.Promise[js.Array[PackageDescriptor]] = (^.asInstanceOf[js.Dynamic].apply(keyword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[PackageDescriptor]]]
+  @scala.inline
+  def apply(keyword: js.Array[String]): js.Promise[js.Array[PackageDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PackageDescriptor]]]
+  @scala.inline
+  def apply(keyword: js.Array[String], options: Options): js.Promise[js.Array[PackageDescriptor]] = (^.asInstanceOf[js.Dynamic].apply(keyword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[PackageDescriptor]]]
   
   @JSImport("npm-keyword", JSImport.Namespace)
   @js.native
@@ -55,12 +50,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-keyword", "count")
-  @js.native
-  def count(keyword: String): js.Promise[Double] = js.native
-  @JSImport("npm-keyword", "count")
-  @js.native
-  def count(keyword: js.Array[String]): js.Promise[Double] = js.native
+  @scala.inline
+  def count(keyword: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def count(keyword: js.Array[String]): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmKeyword */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
@@ -78,27 +71,22 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-keyword", "names")
-  @js.native
-  def names(keyword: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("npm-keyword", "names")
-  @js.native
-  def names(keyword: String, options: Options): js.Promise[js.Array[String]] = js.native
-  @JSImport("npm-keyword", "names")
-  @js.native
-  def names(keyword: js.Array[String]): js.Promise[js.Array[String]] = js.native
-  @JSImport("npm-keyword", "names")
-  @js.native
-  def names(keyword: js.Array[String], options: Options): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def names(keyword: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("names")(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def names(keyword: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("names")(keyword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def names(keyword: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("names")(keyword.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def names(keyword: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("names")(keyword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Limits the amount of results.
     		@default 250
     		*/
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -119,12 +107,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PackageDescriptor extends StObject {
     
-    val description: String = js.native
+    val description: String
     
-    val name: String = js.native
+    val name: String
   }
   object PackageDescriptor {
     

@@ -2,23 +2,24 @@ package typings.jestPnpResolver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-pnp-resolver", JSImport.Default)
+  @JSImport("jest-pnp-resolver", JSImport.Namespace)
   @js.native
-  def default(request: String, options: JestResolverOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(request: String, options: JestResolverOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait JestResolverOptions extends StObject {
     
-    var basedir: String = js.native
+    var basedir: String
     
-    def defaultResolver(request: String, opts: js.Any): String = js.native
+    def defaultResolver(request: String, opts: js.Any): String
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object JestResolverOptions {
     

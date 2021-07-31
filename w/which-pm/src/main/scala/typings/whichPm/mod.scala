@@ -5,25 +5,28 @@ import typings.whichPm.whichPmStrings.pnpm
 import typings.whichPm.whichPmStrings.yarn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pkgPath: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(pkgPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  
   @JSImport("which-pm", JSImport.Namespace)
   @js.native
-  def apply(pkgPath: String): js.Promise[Result] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait NPM extends Result {
+  trait NPM
+    extends StObject
+       with Result {
     
-    val name: npm = js.native
+    val name: npm
   }
   object NPM {
     
     @scala.inline
-    def apply(name: npm): NPM = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NPM = {
+      val __obj = js.Dynamic.literal(name = "npm")
       __obj.asInstanceOf[NPM]
     }
     
@@ -35,12 +38,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait Other extends Result {
+  trait Other
+    extends StObject
+       with Result {
     
-    val name: String = js.native
+    val name: String
     
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object Other {
     
@@ -64,18 +68,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait PNPM extends Result {
+  trait PNPM
+    extends StObject
+       with Result {
     
-    val name: pnpm = js.native
+    val name: pnpm
     
-    val version: String = js.native
+    val version: String
   }
   object PNPM {
     
     @scala.inline
-    def apply(name: pnpm, version: String): PNPM = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    def apply(version: String): PNPM = {
+      val __obj = js.Dynamic.literal(name = "pnpm", version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PNPM]
     }
     
@@ -100,8 +105,8 @@ object mod {
   object Result {
     
     @scala.inline
-    def NPM(name: npm): typings.whichPm.mod.NPM = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def NPM(): typings.whichPm.mod.NPM = {
+      val __obj = js.Dynamic.literal(name = "npm")
       __obj.asInstanceOf[typings.whichPm.mod.NPM]
     }
     
@@ -112,28 +117,29 @@ object mod {
     }
     
     @scala.inline
-    def PNPM(name: pnpm, version: String): typings.whichPm.mod.PNPM = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    def PNPM(version: String): typings.whichPm.mod.PNPM = {
+      val __obj = js.Dynamic.literal(name = "pnpm", version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.whichPm.mod.PNPM]
     }
     
     @scala.inline
-    def YARN(name: yarn): typings.whichPm.mod.YARN = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def YARN(): typings.whichPm.mod.YARN = {
+      val __obj = js.Dynamic.literal(name = "yarn")
       __obj.asInstanceOf[typings.whichPm.mod.YARN]
     }
   }
   
-  @js.native
-  trait YARN extends Result {
+  trait YARN
+    extends StObject
+       with Result {
     
-    val name: yarn = js.native
+    val name: yarn
   }
   object YARN {
     
     @scala.inline
-    def apply(name: yarn): YARN = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): YARN = {
+      val __obj = js.Dynamic.literal(name = "yarn")
       __obj.asInstanceOf[YARN]
     }
     

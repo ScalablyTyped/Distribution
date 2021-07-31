@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalLexicalScopeNamesResponse extends StObject {
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
 }
 object GlobalLexicalScopeNamesResponse {
   

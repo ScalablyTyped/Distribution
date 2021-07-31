@@ -16,10 +16,13 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rc-slider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-slider", JSImport.Default)
@@ -75,14 +78,15 @@ object mod {
   
   @JSImport("rc-slider", "SliderTooltip")
   @js.native
-  val SliderTooltip: ForwardRefExoticComponent[TooltipProps with RefAttributes[_]] = js.native
+  val SliderTooltip: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = js.native
   
-  @JSImport("rc-slider", "createSliderWithTooltip")
-  @js.native
-  def createSliderWithTooltip[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = js.native
+  @scala.inline
+  def createSliderWithTooltip[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSliderWithTooltip")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
   
   @js.native
-  trait CompoundedComponent extends ComponentClass[SliderProps, ComponentState] {
+  trait CompoundedComponent
+    extends StObject
+       with ComponentClass[SliderProps, ComponentState] {
     
     var Handle: Instantiable0[typings.rcSlider.handleMod.default] = js.native
     

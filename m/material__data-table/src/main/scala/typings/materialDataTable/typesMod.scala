@@ -4,25 +4,23 @@ import typings.materialDataTable.constantsMod.SortValue
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCDataTableRowSelectionChangedEventDetail extends StObject {
     
-    var rowId: String | Null = js.native
+    var rowId: String | Null
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object MDCDataTableRowSelectionChangedEventDetail {
     
     @scala.inline
     def apply(rowIndex: Double, selected: Boolean): MDCDataTableRowSelectionChangedEventDetail = {
-      val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], rowId = null)
       __obj.asInstanceOf[MDCDataTableRowSelectionChangedEventDetail]
     }
     
@@ -43,12 +41,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ProgressIndicatorStyles extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var top: String = js.native
+    var top: String
   }
   object ProgressIndicatorStyles {
     
@@ -69,20 +66,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SortActionEventData extends StObject {
     
-    var columnId: String | Null = js.native
+    var columnId: String | Null
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var headerCell: HTMLElement = js.native
+    var headerCell: HTMLElement
   }
   object SortActionEventData {
     
     @scala.inline
     def apply(columnIndex: Double, headerCell: HTMLElement): SortActionEventData = {
-      val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], columnId = null)
       __obj.asInstanceOf[SortActionEventData]
     }
     
@@ -103,22 +99,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SortActionEventDetail extends StObject {
     
-    var columnId: String | Null = js.native
+    var columnId: String | Null
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var headerCell: HTMLElement = js.native
+    var headerCell: HTMLElement
     
-    var sortValue: SortValue = js.native
+    var sortValue: SortValue
   }
   object SortActionEventDetail {
     
     @scala.inline
     def apply(columnIndex: Double, headerCell: HTMLElement, sortValue: SortValue): SortActionEventDetail = {
-      val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], sortValue = sortValue.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], sortValue = sortValue.asInstanceOf[js.Any], columnId = null)
       __obj.asInstanceOf[SortActionEventDetail]
     }
     

@@ -2,30 +2,28 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of filtered bids with the specified dimension values that have
   * the specified creative.
   */
-@js.native
 trait SchemaFilteredBidCreativeRow extends StObject {
   
   /**
     * The number of bids with the specified creative.
     */
-  var bidCount: js.UndefOr[SchemaMetricValue] = js.native
+  var bidCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The ID of the creative.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
 }
 object SchemaFilteredBidCreativeRow {
   

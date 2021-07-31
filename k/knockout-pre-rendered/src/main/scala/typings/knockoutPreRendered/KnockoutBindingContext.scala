@@ -3,7 +3,6 @@ package typings.knockoutPreRendered
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,18 +27,18 @@ trait KnockoutBindingContext extends StObject {
   var $parentContext: js.UndefOr[KnockoutBindingContext] = js.native
   
   @JSName("$parents")
-  var $parents: js.Array[_] = js.native
+  var $parents: js.Array[js.Any] = js.native
   
   @JSName("$rawData")
-  var $rawData: js.Any | KnockoutObservable[_] = js.native
+  var $rawData: js.Any | KnockoutObservable[js.Any] = js.native
   
   @JSName("$root")
   var $root: js.Any = js.native
   
   def createChildContext(dataItemOrAccessor: js.Any): js.Any = js.native
-  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.UndefOr[scala.Nothing], extendCallback: js.Function): js.Any = js.native
   def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any): js.Any = js.native
   def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any, extendCallback: js.Function): js.Any = js.native
+  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: Unit, extendCallback: js.Function): js.Any = js.native
   
   def extend(properties: js.Any): js.Any = js.native
 }

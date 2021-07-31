@@ -6,7 +6,6 @@ import typings.react.mod.ContextType
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionRedirectMod {
@@ -26,16 +25,15 @@ object ionRedirectMod {
     var context_IonRedirect: ContextType[Context[NavContextState]] = js.native
   }
   
-  @js.native
   trait IonRedirectProps extends StObject {
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var routerOptions: js.UndefOr[js.Any] = js.native
+    var routerOptions: js.UndefOr[js.Any] = js.undefined
     
-    var to: String = js.native
+    var to: String
   }
   object IonRedirectProps {
     
@@ -71,6 +69,5 @@ object ionRedirectMod {
     }
   }
   
-  @js.native
   trait IonRedirectState extends StObject
 }

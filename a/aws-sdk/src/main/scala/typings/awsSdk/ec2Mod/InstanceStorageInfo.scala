@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStorageInfo extends StObject {
   
   /**
     * Describes the disks that are available for the instance type.
     */
-  var Disks: js.UndefOr[DiskInfoList] = js.native
+  var Disks: js.UndefOr[DiskInfoList] = js.undefined
   
   /**
     * Indicates whether non-volatile memory express (NVMe) is supported for instance store.
     */
-  var NvmeSupport: js.UndefOr[EphemeralNvmeSupport] = js.native
+  var NvmeSupport: js.UndefOr[EphemeralNvmeSupport] = js.undefined
   
   /**
     * The total size of the disks, in GB.
     */
-  var TotalSizeInGB: js.UndefOr[DiskSize] = js.native
+  var TotalSizeInGB: js.UndefOr[DiskSize] = js.undefined
 }
 object InstanceStorageInfo {
   

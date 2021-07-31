@@ -2,20 +2,20 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldSchemaInViewLookupField extends FieldSchemaInView {
+trait FieldSchemaInViewLookupField
+  extends StObject
+     with FieldSchemaInView {
   
   /** Either "TRUE" or "FALSE" */
-  var AllowMultipleValues: String = js.native
+  var AllowMultipleValues: String
   
   /** Target lookup list display form URL, including PageType and List attributes. */
-  var DispFormUrl: String = js.native
+  var DispFormUrl: String
   
   /** Either "TRUE" or "FALSE" */
-  var HasPrefix: String = js.native
+  var HasPrefix: String
 }
 object FieldSchemaInViewLookupField {
   

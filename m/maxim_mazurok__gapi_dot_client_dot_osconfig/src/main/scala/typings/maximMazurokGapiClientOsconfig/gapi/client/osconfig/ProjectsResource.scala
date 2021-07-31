@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var patchDeployments: PatchDeploymentsResource = js.native
+  var patchDeployments: PatchDeploymentsResource
   
-  var patchJobs: PatchJobsResource = js.native
+  var patchJobs: PatchJobsResource
 }
 object ProjectsResource {
   

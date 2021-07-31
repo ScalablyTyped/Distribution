@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFoldersSinksDelete extends StandardParameters {
+trait ParamsResourceFoldersSinksDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The full resource name of the sink to delete, including the
@@ -26,7 +26,7 @@ trait ParamsResourceFoldersSinksDelete extends StandardParameters {
     * "folders/[FOLDER_ID]/sinks/[SINK_ID]" Example:
     * "projects/my-project-id/sinks/my-sink-id".
     */
-  var sinkName: js.UndefOr[String] = js.native
+  var sinkName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceFoldersSinksDelete {
   

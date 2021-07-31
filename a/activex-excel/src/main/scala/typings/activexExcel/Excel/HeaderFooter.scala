@@ -2,18 +2,16 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderFooter extends StObject {
   
   @JSName("Excel.HeaderFooter_typekey")
-  var ExcelDotHeaderFooter_typekey: HeaderFooter = js.native
+  var ExcelDotHeaderFooter_typekey: HeaderFooter
   
-  val Picture: Graphic = js.native
+  val Picture: Graphic
   
-  var Text: String = js.native
+  var Text: String
 }
 object HeaderFooter {
   

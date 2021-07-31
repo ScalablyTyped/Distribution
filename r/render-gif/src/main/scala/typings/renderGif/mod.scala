@@ -3,7 +3,6 @@ package typings.renderGif
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,19 +20,21 @@ object mod {
   renderGif(fs.readFileSync("unicorn.gif"), logUpdate);
   ```
   */
-  @JSImport("render-gif", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     data: ArrayLike[Double],
     callback: js.Function1[/* data */ ArrayLike[Double], Unit],
     options: Options
-  ): ReturnValue = js.native
+  ): ReturnValue = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnValue]
   
+  @JSImport("render-gif", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /** The maximum framerate to render the gif at. */
-    var maximumFrameRate: js.UndefOr[Double] = js.native
+    var maximumFrameRate: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -54,11 +55,10 @@ object mod {
     }
   }
   
-  @js.native
   trait ReturnValue extends StObject {
     
     /** Whether the animation should be rendered and provided to the callback. */
-    var isPlaying: Boolean = js.native
+    var isPlaying: Boolean
   }
   object ReturnValue {
     

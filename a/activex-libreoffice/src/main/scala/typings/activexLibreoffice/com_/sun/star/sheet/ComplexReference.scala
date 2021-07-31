@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a reference to a cell range. */
-@js.native
 trait ComplexReference extends StObject {
   
   /** is the first reference. */
-  var Reference1: SingleReference = js.native
+  var Reference1: SingleReference
   
   /** is the second reference. */
-  var Reference2: SingleReference = js.native
+  var Reference2: SingleReference
 }
 object ComplexReference {
   

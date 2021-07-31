@@ -2,7 +2,6 @@ package typings.officeJs.global.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SelectionMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Word.SelectionMode with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Word.SelectionMode & String] = js.native
   
-  /* "End" */ val end: typings.officeJs.Word.SelectionMode.end with String = js.native
+  /* "End" */ val end: typings.officeJs.Word.SelectionMode.end & String = js.native
   
-  /* "Select" */ val select: typings.officeJs.Word.SelectionMode.select with String = js.native
+  /* "Select" */ val select: typings.officeJs.Word.SelectionMode.select & String = js.native
   
-  /* "Start" */ val start: typings.officeJs.Word.SelectionMode.start with String = js.native
+  /* "Start" */ val start: typings.officeJs.Word.SelectionMode.start & String = js.native
 }

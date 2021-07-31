@@ -4,35 +4,27 @@ import typings.regexpp.regexppStrings.end
 import typings.regexpp.regexppStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeAssertion
-  extends BoundaryAssertion
-     with NodeBase {
+  extends StObject
+     with NodeBase
+     with BoundaryAssertion {
   
-  var kind: start | end = js.native
+  var kind: start | end
   
   @JSName("parent")
-  var parent_EdgeAssertion: Alternative | Quantifier = js.native
+  var parent_EdgeAssertion: Alternative | Quantifier
   
   @JSName("type")
-  var type_EdgeAssertion: typings.regexpp.regexppStrings.Assertion = js.native
+  var type_EdgeAssertion: typings.regexpp.regexppStrings.Assertion
 }
 object EdgeAssertion {
   
   @scala.inline
-  def apply(
-    end: Double,
-    kind: start | end,
-    parent: Alternative | Quantifier,
-    raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.Assertion
-  ): EdgeAssertion = {
+  def apply(end: Double, kind: start | end, parent: Alternative | Quantifier, raw: String, start: Double): EdgeAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[EdgeAssertion]
   }
   

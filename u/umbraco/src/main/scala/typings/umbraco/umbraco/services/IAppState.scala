@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * Tracks the various application state variables when working in the back office, raises events when state changes.
   */
-@js.native
 trait IAppState extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait IAppState extends StObject {
     * Returns the current global state value by key - we do not return an object reference here - we do NOT want this
     * to be publicly mutable and allow setting arbitrary values
     */
-  def getGlobalState(key: String): IGlobalState = js.native
+  def getGlobalState(key: String): IGlobalState
   
   /**
     * @ngdoc function
@@ -38,7 +36,7 @@ trait IAppState extends StObject {
     * Returns the current menu state value by key - we do not return an object here - we do NOT want this
     * to be publicly mutable and allow setting arbitrary values
     */
-  def getMenuState(key: String): IStateObject = js.native
+  def getMenuState(key: String): IStateObject
   
   /**
     * @ngdoc function
@@ -50,10 +48,10 @@ trait IAppState extends StObject {
     * Returns the current section state value by key - we do not return an object here - we do NOT want this
     * to be publicly mutable and allow setting arbitrary values
     */
-  def getSectionState(key: String): ISectionState = js.native
+  def getSectionState(key: String): ISectionState
   
   /** function to validate and set the state on a state object */
-  def getState(stateObj: IStateObject, key: String, stateObjName: String): IStateObject = js.native
+  def getState(stateObj: IStateObject, key: String, stateObjName: String): IStateObject
   
   /**
     * @ngdoc function
@@ -65,7 +63,7 @@ trait IAppState extends StObject {
     * Returns the current tree state value by key - we do not return an object here - we do NOT want this
     * to be publicly mutable and allow setting arbitrary values
     */
-  def getTreeState(key: String): ITreeState = js.native
+  def getTreeState(key: String): ITreeState
   
   /**
     * @ngdoc function
@@ -76,7 +74,7 @@ trait IAppState extends StObject {
     * @description
     * Sets a global state value by key
     */
-  def setGlobalState(key: String, value: Boolean): Unit = js.native
+  def setGlobalState(key: String, value: Boolean): Unit
   
   /**
     * @ngdoc function
@@ -87,7 +85,7 @@ trait IAppState extends StObject {
     * @description
     * Sets a section state value by key
     */
-  def setMenuState(key: String, value: IMenuState): Unit = js.native
+  def setMenuState(key: String, value: IMenuState): Unit
   
   /**
     * @ngdoc function
@@ -98,10 +96,10 @@ trait IAppState extends StObject {
     * @description
     * Sets a section state value by key
     */
-  def setSectionState(key: String, value: ISectionState): Unit = js.native
+  def setSectionState(key: String, value: ISectionState): Unit
   
   /** function to validate and set the state on a state object */
-  def setState(stateObj: IStateObject, key: String, value: js.Any, stateObjName: String): Unit = js.native
+  def setState(stateObj: IStateObject, key: String, value: js.Any, stateObjName: String): Unit
   
   /**
     * @ngdoc function
@@ -112,7 +110,7 @@ trait IAppState extends StObject {
     * @description
     * Sets a section state value by key
     */
-  def setTreeState(key: String, value: ITreeState): Unit = js.native
+  def setTreeState(key: String, value: ITreeState): Unit
 }
 object IAppState {
   

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeExtentProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait TimeExtentProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end)
     */
-  var end: js.UndefOr[DateProperties] = js.native
+  var end: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The start time of the time extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start)
     */
-  var start: js.UndefOr[DateProperties] = js.native
+  var start: js.UndefOr[DateProperties] = js.undefined
 }
 object TimeExtentProperties {
   

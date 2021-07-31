@@ -2,19 +2,17 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemeMetadata extends StObject {
   
-  var bg_image: String = js.native
+  var bg_image: String
   
-  var bottom_text: String = js.native
+  var bottom_text: String
   
-  var meme_name: String = js.native
+  var meme_name: String
   
-  var top_text: String = js.native
+  var top_text: String
 }
 object MemeMetadata {
   

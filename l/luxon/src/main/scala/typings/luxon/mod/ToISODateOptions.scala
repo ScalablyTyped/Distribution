@@ -2,17 +2,15 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToISODateOptions extends StObject {
   
   /**
     * choose between the basic and extended format
     * @default 'extended'
     */
-  var format: js.UndefOr[ToISOFormat] = js.native
+  var format: js.UndefOr[ToISOFormat] = js.undefined
 }
 object ToISODateOptions {
   

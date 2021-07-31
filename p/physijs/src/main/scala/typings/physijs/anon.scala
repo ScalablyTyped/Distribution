@@ -2,19 +2,17 @@ package typings.physijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Friction extends StObject {
     
-    var friction: Double = js.native
+    var friction: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var restriction: Double = js.native
+    var restriction: Double
   }
   object Friction {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: js.Any = js.native
+    var target: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Target {
     

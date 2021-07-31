@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait FlexProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StO
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
     */
-  var flex: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var flex: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object FlexProps {
   
@@ -25,7 +23,7 @@ object FlexProps {
   }
   
   @scala.inline
-  implicit class FlexPropsMutableBuilder[Self <: FlexProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FlexProps[ThemeType, TVal])) extends AnyVal {
+  implicit class FlexPropsMutableBuilder[Self <: FlexProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FlexProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setFlex(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])

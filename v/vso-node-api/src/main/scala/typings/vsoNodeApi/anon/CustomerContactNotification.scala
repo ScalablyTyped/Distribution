@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerContactNotification extends StObject {
   
-  var customerContactNotification: scala.Double = js.native
+  var customerContactNotification: scala.Double
   
-  var publisherMemberUpdateNotification: scala.Double = js.native
+  var publisherMemberUpdateNotification: scala.Double
   
-  var qnaNotification: scala.Double = js.native
+  var qnaNotification: scala.Double
   
-  var reviewNotification: scala.Double = js.native
+  var reviewNotification: scala.Double
 }
 object CustomerContactNotification {
   

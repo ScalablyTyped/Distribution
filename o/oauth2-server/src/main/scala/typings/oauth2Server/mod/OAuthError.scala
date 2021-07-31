@@ -3,12 +3,13 @@ package typings.oauth2Server.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2-server", "OAuthError")
 @js.native
-class OAuthError protected () extends Error {
+class OAuthError protected ()
+  extends StObject
+     with Error {
   def this(messageOrError: String) = this()
   def this(messageOrError: Error) = this()
   def this(messageOrError: String, properties: js.Object) = this()
@@ -18,4 +19,10 @@ class OAuthError protected () extends Error {
     * The HTTP error code.
     */
   var code: Double = js.native
+  
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
 }

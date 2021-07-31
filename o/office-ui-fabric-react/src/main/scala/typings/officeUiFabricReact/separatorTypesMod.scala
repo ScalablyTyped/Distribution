@@ -11,37 +11,36 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object separatorTypesMod {
   
-  @js.native
   trait ISeparator extends StObject
   
-  @js.native
-  trait ISeparatorProps extends HTMLAttributes[HTMLElement] {
+  trait ISeparatorProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Where the content should be aligned in the separator.
       * @defaultValue 'center'
       */
-    var alignContent: js.UndefOr[start | center | end] = js.native
+    var alignContent: js.UndefOr[start | center | end] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ISeparatorStyleProps, ISeparatorStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ISeparatorStyleProps, ISeparatorStyles]] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether the element is a vertical separator.
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ISeparatorProps {
     
@@ -84,16 +83,15 @@ object separatorTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Separator/Separator.types.ISeparatorProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Separator/Separator.types.ISeparatorProps, 'className' | 'alignContent' | 'vertical'> */
-  @js.native
   trait ISeparatorStyleProps extends StObject {
     
-    var alignContent: js.UndefOr[start | center | end] = js.native
+    var alignContent: js.UndefOr[start | center | end] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ISeparatorStyleProps {
     
@@ -129,18 +127,17 @@ object separatorTypesMod {
     }
   }
   
-  @js.native
   trait ISeparatorStyles extends StObject {
     
     /**
       * Style for the content
       */
-    var content: IStyle = js.native
+    var content: IStyle
     
     /**
       * Style for the root element
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ISeparatorStyles {
     

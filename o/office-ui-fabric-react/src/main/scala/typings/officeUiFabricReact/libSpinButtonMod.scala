@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
 import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libSpinButtonMod {
@@ -15,14 +14,14 @@ object libSpinButtonMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection with Double
+        typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection & Double
       ] = js.native
     
-    /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down with Double = js.native
+    /* -1 */ val down: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
     
-    /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning with Double = js.native
+    /* 0 */ val notSpinning: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
     
-    /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up with Double = js.native
+    /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")

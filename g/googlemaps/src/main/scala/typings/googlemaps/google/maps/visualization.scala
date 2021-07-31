@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visualization {
@@ -16,17 +15,25 @@ object visualization {
   object MapsEngineStatus extends StObject {
     
     @js.native
-    sealed trait INVALID_LAYER extends MapsEngineStatus
+    sealed trait INVALID_LAYER
+      extends StObject
+         with MapsEngineStatus
     
     @js.native
-    sealed trait OK extends MapsEngineStatus
+    sealed trait OK
+      extends StObject
+         with MapsEngineStatus
     
     @js.native
-    sealed trait UNKNOWN_ERROR extends MapsEngineStatus
+    sealed trait UNKNOWN_ERROR
+      extends StObject
+         with MapsEngineStatus
   }
   
   @js.native
-  trait HeatmapLayer extends MVCObject {
+  trait HeatmapLayer
+    extends StObject
+       with MVCObject {
     
     def getData(): MVCArray[LatLng | WeightedLocation] = js.native
     
@@ -41,22 +48,21 @@ object visualization {
     def setOptions(options: HeatmapLayerOptions): Unit = js.native
   }
   
-  @js.native
   trait HeatmapLayerOptions extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var dissipating: js.UndefOr[Boolean] = js.native
+    var dissipating: js.UndefOr[Boolean] = js.undefined
     
-    var gradient: js.UndefOr[js.Array[String]] = js.native
+    var gradient: js.UndefOr[js.Array[String]] = js.undefined
     
-    var map: js.UndefOr[Map[Element]] = js.native
+    var map: js.UndefOr[Map[Element]] = js.undefined
     
-    var maxIntensity: js.UndefOr[Double] = js.native
+    var maxIntensity: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object HeatmapLayerOptions {
     
@@ -115,7 +121,9 @@ object visualization {
   
   // TODO find source documentation
   @js.native
-  trait MapsEngineLayer extends MVCObject {
+  trait MapsEngineLayer
+    extends StObject
+       with MVCObject {
     
     def getLayerId(): String = js.native
     
@@ -150,28 +158,27 @@ object visualization {
   }
   
   // TODO find source documentation
-  @js.native
   trait MapsEngineLayerOptions extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
-    var fitBounds: js.UndefOr[Boolean] = js.native
+    var fitBounds: js.UndefOr[Boolean] = js.undefined
     
-    var layerId: js.UndefOr[String] = js.native
+    var layerId: js.UndefOr[String] = js.undefined
     
-    var layerKey: js.UndefOr[String] = js.native
+    var layerKey: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[Map[Element]] = js.native
+    var map: js.UndefOr[Map[Element]] = js.undefined
     
-    var mapId: js.UndefOr[String] = js.native
+    var mapId: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var suppressInfoWindows: js.UndefOr[Boolean] = js.native
+    var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object MapsEngineLayerOptions {
     
@@ -247,10 +254,9 @@ object visualization {
   }
   
   // TODO find source documentation
-  @js.native
   trait MapsEngineLayerProperties extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object MapsEngineLayerProperties {
     
@@ -269,16 +275,15 @@ object visualization {
   }
   
   // TODO find source documentation
-  @js.native
   trait MapsEngineMouseEvent extends StObject {
     
-    var featureId: js.UndefOr[String] = js.native
+    var featureId: js.UndefOr[String] = js.undefined
     
-    var infoWindowHtml: js.UndefOr[String] = js.native
+    var infoWindowHtml: js.UndefOr[String] = js.undefined
     
-    var latLng: js.UndefOr[LatLng] = js.native
+    var latLng: js.UndefOr[LatLng] = js.undefined
     
-    var pixelOffset: js.UndefOr[Size] = js.native
+    var pixelOffset: js.UndefOr[Size] = js.undefined
   }
   object MapsEngineMouseEvent {
     
@@ -318,14 +323,12 @@ object visualization {
   }
   
   // TODO find source documentation
-  @js.native
   trait MapsEventListener extends StObject
   
   // TODO find source documentation
-  @js.native
   trait MouseEvent extends StObject {
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object MouseEvent {
     
@@ -343,12 +346,11 @@ object visualization {
     }
   }
   
-  @js.native
   trait WeightedLocation extends StObject {
     
-    var location: LatLng = js.native
+    var location: LatLng
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object WeightedLocation {
     

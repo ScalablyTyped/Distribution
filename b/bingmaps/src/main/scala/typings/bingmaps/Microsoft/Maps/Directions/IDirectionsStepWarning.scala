@@ -2,26 +2,24 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDirectionsStepWarning extends StObject {
   
   /** Where the warning starts. */
-  var origin: String = js.native
+  var origin: String
   
   /** The severity of the warning. Values can be: Low Impact, Minor, Moderate, Serious or None. */
-  var severity: String = js.native
+  var severity: String
   
   /** The warning text. */
-  var text: String = js.native
+  var text: String
   
   /** Where the warning ends. */
-  var to: String = js.native
+  var to: String
   
   /** The type of warning. A list of Warning type values can be found here: https://msdn.microsoft.com/en-us/library/hh441731.aspx */
-  var warningType: String = js.native
+  var warningType: String
 }
 object IDirectionsStepWarning {
   

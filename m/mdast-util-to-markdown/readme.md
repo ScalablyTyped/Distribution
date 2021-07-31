@@ -10,9 +10,9 @@ mdast utility to serialize markdown
 | ------------------ | :-------------: |
 | Full name          | mdast-util-to-markdown |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, markup, serialize, stringify, compile, syntax, tree, ast |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 249 |
+| # releases         | 21 |
+| # dependents       | 22 |
+| # downloads        | 7358313 |
 | # stars            | 0 |
 
 ## Links

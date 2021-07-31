@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceContactgroupsDelete extends StandardParameters {
+trait ParamsResourceContactgroupsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Set to true to also delete the contacts in the specified group.
     */
-  var deleteContacts: js.UndefOr[Boolean] = js.native
+  var deleteContacts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource name of the contact group to delete.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceContactgroupsDelete {
   

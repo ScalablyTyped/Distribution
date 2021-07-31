@@ -3,18 +3,17 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.Infinity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionInfinity
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
-  var negative: Boolean = js.native
+  var negative: Boolean
   
   @JSName("type")
-  var type_ValueDescriptionInfinity: Infinity = js.native
+  var type_ValueDescriptionInfinity: Infinity
 }
 object ValueDescriptionInfinity {
   
@@ -22,11 +21,10 @@ object ValueDescriptionInfinity {
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
     negative: Boolean,
-    parent: Argument | ConstantMemberType | FieldType,
-    `type`: Infinity
+    parent: Argument | ConstantMemberType | FieldType
   ): ValueDescriptionInfinity = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Infinity")
     __obj.asInstanceOf[ValueDescriptionInfinity]
   }
   

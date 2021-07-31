@@ -3,15 +3,13 @@ package typings.jsreportHtmlToXlsx
 import typings.jsreportHtmlToXlsx.mod.jsreportCoreAugmentingMod.htmlEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HtmlEngine extends StObject {
     
-    var htmlEngine: typings.jsreportHtmlToXlsx.mod.jsreportCoreAugmentingMod.htmlEngine = js.native
+    var htmlEngine: typings.jsreportHtmlToXlsx.mod.jsreportCoreAugmentingMod.htmlEngine
   }
   object HtmlEngine {
     
@@ -30,16 +28,15 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-html-to-xlsx.jsreport-html-to-xlsx.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var addBufferSize: js.UndefOr[Double] = js.native
+    var addBufferSize: js.UndefOr[Double] = js.undefined
     
-    var escapeAmp: js.UndefOr[Boolean] = js.native
+    var escapeAmp: js.UndefOr[Boolean] = js.undefined
     
-    var numberOfParsedAddIterations: js.UndefOr[Double] = js.native
+    var numberOfParsedAddIterations: js.UndefOr[Double] = js.undefined
     
-    var strategy: js.UndefOr[String] = js.native
+    var strategy: js.UndefOr[String] = js.undefined
   }
   object PartialOptions {
     

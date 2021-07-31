@@ -2,25 +2,23 @@ package typings.twineSugarcube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptingMod {
   
-  @js.native
   trait ScriptingAPI extends StObject {
     
     /**
       * Evaluates the given JavaScript code and returns the result, throwing if there were errors.
       */
-    def evalJavaScript(code: String): js.Any = js.native
+    def evalJavaScript(code: String): js.Any
     
     /**
       * Evaluates the given TwineScript code and returns the result, throwing if there were errors.
       */
-    def evalTwineScript(code: String): js.Any = js.native
+    def evalTwineScript(code: String): js.Any
     
-    def parse(rawCodeString: String): String = js.native
+    def parse(rawCodeString: String): String
   }
   object ScriptingAPI {
     

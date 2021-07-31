@@ -11,12 +11,12 @@ WordPress internationalization (i18n) library.
 | Full name          | @wordpress/i18n |
 | Keywords           | wordpress, gutenberg, i18n |
 | # releases         | 20 |
-| # dependents       | 42 |
-| # downloads        | 1057151 |
+| # dependents       | 47 |
+| # downloads        | 1483969 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/i18n/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/i18n/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fi18n)

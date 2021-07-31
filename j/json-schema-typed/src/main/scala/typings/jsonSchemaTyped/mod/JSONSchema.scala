@@ -24,10 +24,8 @@ import typings.jsonSchemaTyped.jsonSchemaTypedStrings.uri
 import typings.jsonSchemaTyped.jsonSchemaTypedStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONSchema extends StObject {
   
   /**
@@ -39,7 +37,7 @@ trait JSONSchema extends StObject {
     * particular schema. It is RECOMMENDED that a default value be valid against
     * the associated schema.
     */
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This keyword is reserved for comments from schema authors to readers or
@@ -68,7 +66,7 @@ trait JSONSchema extends StObject {
     * on the presence, absence, or contents of "$comment" properties.
     */
   @JSName("$comment")
-  var $comment: js.UndefOr[String] = js.native
+  var $comment: js.UndefOr[String] = js.undefined
   
   /**
     * The "$id" keyword defines a URI for the schema, and the base URI that other
@@ -84,7 +82,7 @@ trait JSONSchema extends StObject {
     * [RFC3986]: http://json-schema.org/latest/json-schema-core.html#RFC3986
     */
   @JSName("$id")
-  var $id: js.UndefOr[String] = js.native
+  var $id: js.UndefOr[String] = js.undefined
   
   /**
     * The "$ref" keyword is used to reference a schema, and provides the ability
@@ -107,7 +105,7 @@ trait JSONSchema extends StObject {
     * of infinite recursive nesting like this; the behavior is undefined.
     */
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.native
+  var $ref: js.UndefOr[String] = js.undefined
   
   /**
     * The "$schema" keyword is both used as a JSON Schema version identifier and
@@ -132,7 +130,7 @@ trait JSONSchema extends StObject {
     * [RFC3986]: http://json-schema.org/latest/json-schema-core.html#RFC3986
     */
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
   /**
     * The value of "additionalItems" MUST be a valid JSON Schema.
@@ -149,7 +147,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalItems: js.UndefOr[JSONSchema | Boolean] = js.native
+  var additionalItems: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * The value of "additionalProperties" MUST be a valid JSON Schema.
@@ -166,7 +164,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalProperties: js.UndefOr[JSONSchema | Boolean] = js.native
+  var additionalProperties: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
@@ -175,7 +173,7 @@ trait JSONSchema extends StObject {
     * An instance validates successfully against this keyword if it validates
     * successfully against all schemas defined by this keyword's value.
     */
-  var allOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
+  var allOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
   
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
@@ -184,7 +182,7 @@ trait JSONSchema extends StObject {
     * An instance validates successfully against this keyword if it validates
     * successfully against at least one schema defined by this keyword's value.
     */
-  var anyOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
+  var anyOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
   
   /**
     * The value of this keyword MAY be of any type, including null.
@@ -192,7 +190,7 @@ trait JSONSchema extends StObject {
     * An instance validates successfully against this keyword if its value is
     * equal to the value of the keyword.
     */
-  var const: js.UndefOr[js.Any] = js.native
+  var const: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The value of this keyword MUST be a valid JSON Schema.
@@ -200,7 +198,7 @@ trait JSONSchema extends StObject {
     * An array instance is valid against "contains" if at least one of its
     * elements is valid against the given schema.
     */
-  var contains: js.UndefOr[JSONSchema | Boolean] = js.native
+  var contains: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * If the instance value is a string, this property defines that the string
@@ -213,7 +211,7 @@ trait JSONSchema extends StObject {
     *
     * [RFC2045]: https://tools.ietf.org/html/rfc2045#section-6.1
     */
-  var contentEncoding: js.UndefOr[JSONSchemaContentEncodingName | JSONSchemaContentEncoding] = js.native
+  var contentEncoding: js.UndefOr[JSONSchemaContentEncodingName | JSONSchemaContentEncoding] = js.undefined
   
   /**
     * The value of this property must be a media type, as defined by
@@ -230,7 +228,7 @@ trait JSONSchema extends StObject {
     *
     * [RFC2046]: https://tools.ietf.org/html/rfc2046
     */
-  var contentMediaType: js.UndefOr[String] = js.native
+  var contentMediaType: js.UndefOr[String] = js.undefined
   
   /**
     * The "definitions" keywords provides a standardized location for schema
@@ -240,7 +238,7 @@ trait JSONSchema extends StObject {
     * This keyword's value MUST be an object. Each member value of this object
     * MUST be a valid JSON Schema.
     */
-  var definitions: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
+  var definitions: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   
   /**
     * This keyword specifies rules that are evaluated if the instance is an
@@ -260,13 +258,13 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]] = js.native
+  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]] = js.undefined
   
   /**
     * Can be used to decorate a user interface with explanation or information
     * about the data produced.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This keyword's value MUST be a valid JSON Schema.
@@ -280,7 +278,7 @@ trait JSONSchema extends StObject {
     * evaluate the instance against this keyword, for either validation or
     * annotation collection purposes, in such cases.
     */
-  var `else`: js.UndefOr[JSONSchema | Boolean] = js.native
+  var `else`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * The value of this keyword MUST be an array. This array SHOULD have at least
@@ -291,7 +289,7 @@ trait JSONSchema extends StObject {
     *
     * Elements in the array might be of any value, including null.
     */
-  var enum: js.UndefOr[js.Array[_]] = js.native
+  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The value of this keyword MUST be an array. There are no restrictions
@@ -307,7 +305,7 @@ trait JSONSchema extends StObject {
     * additional example. If "examples" is absent, "default" MAY still be used in
     * this manner.
     */
-  var examples: js.UndefOr[js.Array[_]] = js.native
+  var examples: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The value of "exclusiveMaximum" MUST be number, representing an exclusive
@@ -316,7 +314,7 @@ trait JSONSchema extends StObject {
     * If the instance is a number, then the instance is valid only if it has a
     * value strictly less than (not equal to) "exclusiveMaximum".
     */
-  var exclusiveMaximum: js.UndefOr[Double] = js.native
+  var exclusiveMaximum: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of "exclusiveMinimum" MUST be number, representing an exclusive
@@ -325,7 +323,7 @@ trait JSONSchema extends StObject {
     * If the instance is a number, then the instance is valid only if it has a
     * value strictly greater than (not equal to) "exclusiveMinimum".
     */
-  var exclusiveMinimum: js.UndefOr[Double] = js.native
+  var exclusiveMinimum: js.UndefOr[Double] = js.undefined
   
   /**
     * The "format" keyword functions as both an [annotation][annotation] and as
@@ -348,7 +346,7 @@ trait JSONSchema extends StObject {
     */
   var format: js.UndefOr[
     JSONSchemaFormat | date | `date-time` | email | `full-date` | `full-time` | hostname | `idn-email` | `idn-hostname` | ipv4 | ipv6 | iri | `iri-reference` | `json-pointer` | `json-pointer-uri-fragment` | regex | `relative-json-pointer` | time | uri | `uri-reference` | `uri-template` | uuid
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This keyword's value MUST be a valid JSON Schema.
@@ -370,7 +368,7 @@ trait JSONSchema extends StObject {
     *
     * [annotations]: http://json-schema.org/latest/json-schema-validation.html#annotations
     */
-  var `if`: js.UndefOr[JSONSchema | Boolean] = js.native
+  var `if`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * The value of "items" MUST be either a valid JSON Schema or an array of
@@ -387,7 +385,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var items: js.UndefOr[JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])] = js.native
+  var items: js.UndefOr[JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -395,7 +393,7 @@ trait JSONSchema extends StObject {
     * An array instance is valid against "maxItems" if its size is less than, or
     * equal to, the value of this keyword.
     */
-  var maxItems: js.UndefOr[Double] = js.native
+  var maxItems: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -408,7 +406,7 @@ trait JSONSchema extends StObject {
     *
     * [RFC7159]: http://json-schema.org/latest/json-schema-validation.html#RFC7159
     */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -416,7 +414,7 @@ trait JSONSchema extends StObject {
     * An object instance is valid against "maxProperties" if its number of
     * properties is less than, or equal to, the value of this keyword.
     */
-  var maxProperties: js.UndefOr[Double] = js.native
+  var maxProperties: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of "maximum" MUST be a number, representing an inclusive upper
@@ -425,7 +423,7 @@ trait JSONSchema extends StObject {
     * If the instance is a number, then this keyword validates only if the
     * instance is less than or exactly equal to "maximum".
     */
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -435,7 +433,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as a value of 0.
     */
-  var minItems: js.UndefOr[Double] = js.native
+  var minItems: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -450,7 +448,7 @@ trait JSONSchema extends StObject {
     *
     * [RFC7159]: http://json-schema.org/latest/json-schema-validation.html#RFC7159
     */
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of this keyword MUST be a non-negative integer.
@@ -460,7 +458,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as a value of 0.
     */
-  var minProperties: js.UndefOr[Double] = js.native
+  var minProperties: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of "minimum" MUST be a number, representing an inclusive lower
@@ -469,7 +467,7 @@ trait JSONSchema extends StObject {
     * If the instance is a number, then this keyword validates only if the
     * instance is greater than or exactly equal to "minimum".
     */
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of "multipleOf" MUST be a number, strictly greater than 0.
@@ -477,7 +475,7 @@ trait JSONSchema extends StObject {
     * A numeric instance is valid only if division by this keyword's value
     * results in an integer.
     */
-  var multipleOf: js.UndefOr[Double] = js.native
+  var multipleOf: js.UndefOr[Double] = js.undefined
   
   /**
     * This keyword's value MUST be a valid JSON Schema.
@@ -485,7 +483,7 @@ trait JSONSchema extends StObject {
     * An instance is valid against this keyword if it fails to validate
     * successfully against the schema defined by this keyword.
     */
-  var not: js.UndefOr[JSONSchema | Boolean] = js.native
+  var not: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
@@ -494,7 +492,7 @@ trait JSONSchema extends StObject {
     * An instance validates successfully against this keyword if it validates
     * successfully against exactly one schema defined by this keyword's value.
     */
-  var oneOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
+  var oneOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
   
   /**
     * The value of this keyword MUST be a string. This string SHOULD be a valid
@@ -504,7 +502,7 @@ trait JSONSchema extends StObject {
     * instance successfully. Recall: regular expressions are not implicitly
     * anchored.
     */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
   /**
     * The value of "patternProperties" MUST be an object. Each property name of
@@ -523,7 +521,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var patternProperties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
+  var patternProperties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   
   /**
     * The value of "properties" MUST be an object. Each value of this object MUST
@@ -538,7 +536,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var properties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
+  var properties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   
   /**
     * The value of "propertyNames" MUST be a valid JSON Schema.
@@ -549,7 +547,7 @@ trait JSONSchema extends StObject {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var propertyNames: js.UndefOr[JSONSchema | Boolean] = js.native
+  var propertyNames: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * The value of this keywords MUST be a boolean. When multiple occurrences of
@@ -573,7 +571,7 @@ trait JSONSchema extends StObject {
     *
     * @default false
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of this keyword MUST be an array. Elements of this array, if any,
@@ -586,7 +584,7 @@ trait JSONSchema extends StObject {
     *
     * @default []
     */
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This keyword's value MUST be a valid JSON Schema.
@@ -600,13 +598,13 @@ trait JSONSchema extends StObject {
     * instance against this keyword, for either validation or annotation
     * collection purposes, in such cases.
     */
-  var `then`: js.UndefOr[JSONSchema | Boolean] = js.native
+  var `then`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   
   /**
     * Can be used to decorate a user interface with a short label about the data
     * produced.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The value of this keyword MUST be either a string or an array. If it is an
@@ -621,7 +619,7 @@ trait JSONSchema extends StObject {
     */
   var `type`: js.UndefOr[
     JSONSchemaType | JSONSchemaTypeName | (js.Array[JSONSchemaType | JSONSchemaTypeName])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The value of this keyword MUST be a boolean.
@@ -634,7 +632,7 @@ trait JSONSchema extends StObject {
     *
     * @default false
     */
-  var uniqueItems: js.UndefOr[Boolean] = js.native
+  var uniqueItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of this keyword MUST be a boolean. When multiple occurrences of
@@ -661,7 +659,7 @@ trait JSONSchema extends StObject {
     *
     * @default false
     */
-  var writeOnly: js.UndefOr[Boolean] = js.native
+  var writeOnly: js.UndefOr[Boolean] = js.undefined
 }
 object JSONSchema {
   
@@ -786,7 +784,7 @@ object JSONSchema {
     def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
@@ -795,7 +793,7 @@ object JSONSchema {
     def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def setExamples(value: js.Array[_]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    def setExamples(value: js.Array[js.Any]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)

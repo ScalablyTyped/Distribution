@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartSeriesCollection extends ClientObject {
+trait ChartSeriesCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble sizes for it (depending on chart type).
@@ -29,9 +30,9 @@ trait ChartSeriesCollection extends ClientObject {
     * @param index Optional. Index value of the series to be added. Zero-indexed.
     */
   def add(): ChartSeries = js.native
-  def add(name: js.UndefOr[scala.Nothing], index: Double): ChartSeries = js.native
   def add(name: String): ChartSeries = js.native
   def add(name: String, index: Double): ChartSeries = js.native
+  def add(name: Unit, index: Double): ChartSeries = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -70,7 +71,7 @@ trait ChartSeriesCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ChartSeriesCollection = js.native
-  def load(options: ChartSeriesCollectionLoadOptions with CollectionLoadOptions): ChartSeriesCollection = js.native
+  def load(options: ChartSeriesCollectionLoadOptions & CollectionLoadOptions): ChartSeriesCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ChartSeriesCollection = js.native
   def load(propertyNames: String): ChartSeriesCollection = js.native
   def load(propertyNames: js.Array[String]): ChartSeriesCollection = js.native

@@ -2,34 +2,32 @@ package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the base class for the PrintTaskOptionXxx objects. */
-@js.native
 trait IPrintOptionDetails extends StObject {
   
   /** Gets or sets the string for an error condition. */
-  var errorText: String = js.native
+  var errorText: String
   
   /** Gets the ID for a print task option. */
-  var optionId: String = js.native
+  var optionId: String
   
   /** Gets the option type for a print task option. */
-  var optionType: PrintOptionType = js.native
+  var optionType: PrintOptionType
   
   /** Gets or sets the state of a print task option. */
-  var state: PrintOptionStates = js.native
+  var state: PrintOptionStates
   
   /**
     * Sets the value for the print task option.
     * @param value Value for the print task option.
     * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
     */
-  def trySetValue(value: js.Any): Boolean = js.native
+  def trySetValue(value: js.Any): Boolean
   
   /** Gets the enumerated value of a print task option. */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IPrintOptionDetails {
   

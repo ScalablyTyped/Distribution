@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScopedRoleMembership extends Entity {
+trait ScopedRoleMembership
+  extends StObject
+     with Entity {
   
   // Unique identifier for the administrative unit that the directory role is scoped to
-  var administrativeUnitId: js.UndefOr[String] = js.native
+  var administrativeUnitId: js.UndefOr[String] = js.undefined
   
   // Unique identifier for the directory role that the member is in.
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
   
   // Role member identity information. Represents the user that is a member of this scoped-role.
-  var roleMemberInfo: js.UndefOr[Identity] = js.native
+  var roleMemberInfo: js.UndefOr[Identity] = js.undefined
 }
 object ScopedRoleMembership {
   

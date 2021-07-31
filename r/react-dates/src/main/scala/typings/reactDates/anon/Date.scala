@@ -3,19 +3,17 @@ package typings.reactDates.anon
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
-  var date: Moment | Null = js.native
+  var date: Moment | Null
 }
 object Date {
   
   @scala.inline
   def apply(): Date = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(date = null)
     __obj.asInstanceOf[Date]
   }
   

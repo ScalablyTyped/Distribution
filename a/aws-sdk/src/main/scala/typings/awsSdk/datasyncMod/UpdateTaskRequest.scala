@@ -2,38 +2,36 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTaskRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource name of the CloudWatch LogGroup.
     */
-  var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.native
+  var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   
   /**
     * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
     */
-  var Excludes: js.UndefOr[FilterList] = js.native
+  var Excludes: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The name of the task to update.
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
   
-  var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.native
+  var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.undefined
   
   /**
     * Specifies a schedule used to periodically transfer files from a source to a destination location. You can configure your task to execute hourly, daily, weekly or on specific days of the week. You control when in the day or hour you want the task to execute. The time you specify is UTC time. For more information, see task-scheduling.
     */
-  var Schedule: js.UndefOr[TaskSchedule] = js.native
+  var Schedule: js.UndefOr[TaskSchedule] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource name of the task to update.
     */
-  var TaskArn: typings.awsSdk.datasyncMod.TaskArn = js.native
+  var TaskArn: typings.awsSdk.datasyncMod.TaskArn
 }
 object UpdateTaskRequest {
   

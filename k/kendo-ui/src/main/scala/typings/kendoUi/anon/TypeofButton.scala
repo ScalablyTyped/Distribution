@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofButton extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Button = js.native
+  def extend(proto: js.Object): Button
   
   /* static member */
-  var fn: Button = js.native
+  var fn: Button
 }
 object TypeofButton {
   

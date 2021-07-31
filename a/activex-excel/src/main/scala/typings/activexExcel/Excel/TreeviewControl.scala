@@ -3,24 +3,22 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeviewControl extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var Drilled: js.Any = js.native
+  var Drilled: js.Any
   
   @JSName("Excel.TreeviewControl_typekey")
-  var ExcelDotTreeviewControl_typekey: TreeviewControl = js.native
+  var ExcelDotTreeviewControl_typekey: TreeviewControl
   
-  var Hidden: SafeArray[SafeArray[String]] = js.native
+  var Hidden: SafeArray[SafeArray[String]]
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object TreeviewControl {
   

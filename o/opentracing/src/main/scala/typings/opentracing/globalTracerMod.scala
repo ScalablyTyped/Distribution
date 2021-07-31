@@ -3,16 +3,17 @@ package typings.opentracing
 import typings.opentracing.tracerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalTracerMod {
   
-  @JSImport("opentracing/lib/global_tracer", "globalTracer")
+  @JSImport("opentracing/lib/global_tracer", JSImport.Namespace)
   @js.native
-  def globalTracer(): default = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("opentracing/lib/global_tracer", "initGlobalTracer")
-  @js.native
-  def initGlobalTracer(tracer: default): Unit = js.native
+  @scala.inline
+  def globalTracer(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("globalTracer")().asInstanceOf[default]
+  
+  @scala.inline
+  def initGlobalTracer(tracer: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initGlobalTracer")(tracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -3,35 +3,34 @@ package typings.cytoscape.mod
 import typings.cytoscape.cytoscapeStrings.random
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#layouts/random
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.LayoutOptions because Already inherited */ @js.native
-trait RandomLayoutOptions
-  extends BaseLayoutOptions
+- typings.cytoscape.mod.LayoutOptions because Already inherited */ trait RandomLayoutOptions
+  extends StObject
+     with BaseLayoutOptions
      with AnimatedLayoutOptions {
   
   // constrain layout bounds
-  var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.native
+  var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.undefined
   
   // whether to fit to viewport
-  var fit: Boolean = js.native
+  var fit: Boolean
   
   @JSName("name")
-  var name_RandomLayoutOptions: random = js.native
+  var name_RandomLayoutOptions: random
   
   // fit padding
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
 }
 object RandomLayoutOptions {
   
   @scala.inline
-  def apply(fit: Boolean, name: random): RandomLayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(fit: Boolean): RandomLayoutOptions = {
+    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "random")
     __obj.asInstanceOf[RandomLayoutOptions]
   }
   

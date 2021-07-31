@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlEntry")
@@ -51,9 +50,8 @@ object WsdlEntry {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlEntry.create")
-  @js.native
-  def create(model: IModel): WsdlEntry = js.native
+  @scala.inline
+  def create(model: IModel): WsdlEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WsdlEntry]
   
   /**
     * Creates and returns a new WsdlEntry instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object WsdlEntry {
     * of the parent WsdlDescription element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlEntry.createIn")
-  @js.native
-  def createIn(container: WsdlDescription): WsdlEntry = js.native
+  @scala.inline
+  def createIn(container: WsdlDescription): WsdlEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlEntry]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlEntry.structureTypeName")

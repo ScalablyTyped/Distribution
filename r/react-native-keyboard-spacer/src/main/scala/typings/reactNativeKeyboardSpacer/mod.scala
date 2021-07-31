@@ -5,7 +5,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,14 +16,13 @@ object mod {
   
   type KeyboardSpacer = Component[KeyboardSpacerProps, js.Any, js.Any]
   
-  @js.native
   trait KeyboardSpacerProps extends StObject {
     
-    var onToggle: js.UndefOr[js.Function2[/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function2[/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double, Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var topSpacing: js.UndefOr[Double] = js.native
+    var topSpacing: js.UndefOr[Double] = js.undefined
   }
   object KeyboardSpacerProps {
     

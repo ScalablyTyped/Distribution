@@ -2,17 +2,17 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DragUpdate extends DragStart {
+trait DragUpdate
+  extends StObject
+     with DragStart {
   
   // populated when a draggable is dragging over another in combine mode
-  var combine: js.UndefOr[Combine] = js.native
+  var combine: js.UndefOr[Combine] = js.undefined
   
   // may not have any destination (drag to nowhere)
-  var destination: js.UndefOr[DraggableLocation] = js.native
+  var destination: js.UndefOr[DraggableLocation] = js.undefined
 }
 object DragUpdate {
   

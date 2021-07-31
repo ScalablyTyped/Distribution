@@ -4,7 +4,6 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.asc
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @link https://commerce.coinbase.com/docs/api/#pagination
   */
-@js.native
 trait PaginationRequest extends StObject {
   
   /**
     * A cursor for use in pagination.
     * This is a resource ID that defines your place in the list.
     */
-  var ending_before: js.UndefOr[String | Null] = js.native
+  var ending_before: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Number of results per call.
@@ -27,20 +25,20 @@ trait PaginationRequest extends StObject {
     * Accepted values: 0 - 100
     * Default: 25
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * Order of resources in the response.
     *
     * default: desc
     */
-  var order: js.UndefOr[asc | desc] = js.native
+  var order: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * A cursor for use in pagination.
     * This is a resource ID that defines your place in the list.
     */
-  var starting_after: js.UndefOr[String | Null] = js.native
+  var starting_after: js.UndefOr[String | Null] = js.undefined
 }
 object PaginationRequest {
   

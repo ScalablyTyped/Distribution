@@ -4,15 +4,14 @@ import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "InputGroup")
 @js.native
 class InputGroup protected ()
   extends typings.blueprintjsCore.componentsMod.InputGroup {
-  def this(props: IInputGroupProps with HTMLInputProps) = this()
-  def this(props: IInputGroupProps with HTMLInputProps, context: js.Any) = this()
+  def this(props: IInputGroupProps & HTMLInputProps) = this()
+  def this(props: IInputGroupProps & HTMLInputProps, context: js.Any) = this()
 }
 /* static members */
 object InputGroup {

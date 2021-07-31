@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The name of the file being compared, including its extension and subdirectory, if any.
     */
-  var filePath: js.UndefOr[Path] = js.native
+  var filePath: js.UndefOr[Path] = js.undefined
   
   /**
     * The position of a change in a compared file, in line number format.
     */
-  var filePosition: js.UndefOr[Position] = js.native
+  var filePosition: js.UndefOr[Position] = js.undefined
   
   /**
     * In a comparison of commits or a pull request, whether the change is in the before or after of that comparison.
     */
-  var relativeFileVersion: js.UndefOr[RelativeFileVersionEnum] = js.native
+  var relativeFileVersion: js.UndefOr[RelativeFileVersionEnum] = js.undefined
 }
 object Location {
   

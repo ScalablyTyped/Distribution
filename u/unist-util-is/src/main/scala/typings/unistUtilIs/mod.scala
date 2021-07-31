@@ -5,53 +5,26 @@ import typings.unist.mod.Node
 import typings.unist.mod.Parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]]): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](
-    node: js.Any,
-    test: js.Array[Test[_]],
-    index: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](
-    node: js.Any,
-    test: js.Array[Test[_]],
-    index: js.UndefOr[scala.Nothing],
-    parent: Parent,
-    context: js.Any
-  ): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](
-    node: js.Any,
-    test: js.Array[Test[_]],
-    index: Double,
-    parent: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Double): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Double, parent: Unit, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Double, parent: Parent): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Unit, parent: Unit, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Unit, parent: Parent): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[js.Any]], index: Unit, parent: Parent, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
   /**
     * Unist utility to check if a node passes a test.
     *
@@ -67,36 +40,26 @@ object mod {
     * @typeParam T type that node is compared with
     * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
     */
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Unit, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Unit, parent: Unit, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Unit, parent: Parent): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  @scala.inline
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Unit, parent: Parent, context: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], test.asInstanceOf[js.Any], index.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  
   @JSImport("unist-util-is", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T]): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](
-    node: js.Any,
-    test: Test[T],
-    index: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent, context: js.Any): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: js.UndefOr[scala.Nothing], context: js.Any): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent): /* is T */ Boolean = js.native
-  @JSImport("unist-util-is", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Union of all the types of tests

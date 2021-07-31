@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcRoute extends StObject {
   
   /**
     * An object that represents the action to take if a match is determined.
     */
-  var action: GrpcRouteAction = js.native
+  var action: GrpcRouteAction
   
   /**
     * An object that represents the criteria for determining a request match.
     */
-  var `match`: GrpcRouteMatch = js.native
+  var `match`: GrpcRouteMatch
   
   /**
     * An object that represents a retry policy.
     */
-  var retryPolicy: js.UndefOr[GrpcRetryPolicy] = js.native
+  var retryPolicy: js.UndefOr[GrpcRetryPolicy] = js.undefined
   
   /**
     * An object that represents types of timeouts. 
     */
-  var timeout: js.UndefOr[GrpcTimeout] = js.native
+  var timeout: js.UndefOr[GrpcTimeout] = js.undefined
 }
 object GrpcRoute {
   

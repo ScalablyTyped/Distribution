@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BidProtocol extends StObject {
   
-  var bidProtocol: js.UndefOr[String] = js.native
+  var bidProtocol: js.UndefOr[String] = js.undefined
   
-  var maximumQps: js.UndefOr[Double] = js.native
+  var maximumQps: js.UndefOr[Double] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object BidProtocol {
   

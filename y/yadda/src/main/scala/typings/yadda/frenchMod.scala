@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frenchMod extends Shortcut {
@@ -16,7 +15,8 @@ object frenchMod extends Shortcut {
   
   @js.native
   trait Library
-    extends typings.yadda.englishMod.Library {
+    extends StObject
+       with typings.yadda.englishMod.Library {
     
     def alors(
       step: String,
@@ -1412,23 +1412,23 @@ object frenchMod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Vocabulary
-    extends typings.yadda.englishMod.Vocabulary {
+    extends StObject
+       with typings.yadda.englishMod.Vocabulary {
     
-    var alors: String = js.native
+    var alors: String
     
-    var etantdonnalors: String = js.native
+    var etantdonnalors: String
     
-    var etantdonnalorss: String = js.native
+    var etantdonnalorss: String
     
-    var etantdonne: String = js.native
+    var etantdonne: String
     
-    var lorsque: String = js.native
+    var lorsque: String
     
-    var quand: String = js.native
+    var quand: String
     
-    var soit: String = js.native
+    var soit: String
   }
   object Vocabulary {
     
@@ -1442,7 +1442,7 @@ object frenchMod extends Shortcut {
       etantdonne: String,
       examples: String,
       feature: String,
-      given: String,
+      `given`: String,
       lorsque: String,
       only: String,
       pending: String,
@@ -1452,7 +1452,8 @@ object frenchMod extends Shortcut {
       `then`: String,
       when: String
     ): Vocabulary = {
-      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], alors = alors.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], etantdonnalors = etantdonnalors.asInstanceOf[js.Any], etantdonnalorss = etantdonnalorss.asInstanceOf[js.Any], etantdonne = etantdonne.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], lorsque = lorsque.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], quand = quand.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], soit = soit.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], alors = alors.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], etantdonnalors = etantdonnalors.asInstanceOf[js.Any], etantdonnalorss = etantdonnalorss.asInstanceOf[js.Any], etantdonne = etantdonne.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], lorsque = lorsque.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], quand = quand.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], soit = soit.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }

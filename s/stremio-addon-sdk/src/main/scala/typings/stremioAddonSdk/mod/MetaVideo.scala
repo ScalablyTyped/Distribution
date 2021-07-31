@@ -2,10 +2,8 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaVideo extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait MetaVideo extends StObject {
     *
     * No need to use this if you've passed stream.
     */
-  var available: js.UndefOr[Boolean] = js.native
+  var available: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Episode number, if applicable.
     */
-  var episode: js.UndefOr[Double] = js.native
+  var episode: js.UndefOr[Double] = js.undefined
   
   /**
     * ID of the video.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Video overview/summary
     */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /**
     * ISO 8601, publish date of the video.
@@ -37,12 +35,12 @@ trait MetaVideo extends StObject {
     *
     * e.g. "2010-12-06T05:00:00.000Z"
     */
-  var released: String = js.native
+  var released: String
   
   /**
     * Season number, if applicable.
     */
-  var season: js.UndefOr[Double] = js.native
+  var season: js.UndefOr[Double] = js.undefined
   
   /**
     * In case you can return links to streams while forming meta response,
@@ -53,24 +51,24 @@ trait MetaVideo extends StObject {
     * from other addons for that video.
     * If you return streams that way, it is still recommended to implement the streams resource.
     */
-  var streams: js.UndefOr[js.Array[Stream]] = js.native
+  var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   
   /**
     * URL to png of the video thumbnail, in the video's aspect ratio.
     *
     * max file size 5kb.
     */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the video.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * YouTube ID of the trailer video; use if this is an episode for a series.
     */
-  var trailer: js.UndefOr[String] = js.native
+  var trailer: js.UndefOr[String] = js.undefined
 }
 object MetaVideo {
   

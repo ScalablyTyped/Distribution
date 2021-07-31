@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalGroup extends Accessor {
+trait PortalGroup
+  extends StObject
+     with Accessor {
   
   /**
     * The access privileges on the group which determines who can see and access the group.
@@ -38,16 +39,16 @@ trait PortalGroup extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchCategorySchema)
     */
-  def fetchCategorySchema(): js.Promise[js.Array[_]] = js.native
-  def fetchCategorySchema(options: PortalGroupFetchCategorySchemaOptions): js.Promise[js.Array[_]] = js.native
+  def fetchCategorySchema(): js.Promise[js.Array[js.Any]] = js.native
+  def fetchCategorySchema(options: PortalGroupFetchCategorySchemaOptions): js.Promise[js.Array[js.Any]] = js.native
   
   /**
     * Fetches the current members of the group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchMembers)
     */
-  def fetchMembers(): js.Promise[_] = js.native
-  def fetchMembers(options: PortalGroupFetchMembersOptions): js.Promise[_] = js.native
+  def fetchMembers(): js.Promise[js.Any] = js.native
+  def fetchMembers(options: PortalGroupFetchMembersOptions): js.Promise[js.Any] = js.native
   
   /**
     * Get the URL to the thumbnail image for the group.
@@ -98,7 +99,7 @@ trait PortalGroup extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#queryItems)
     */
   def queryItems(): js.Promise[PortalQueryResult] = js.native
-  def queryItems(queryParams: js.UndefOr[scala.Nothing], options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
+  def queryItems(queryParams: Unit, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParams): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native

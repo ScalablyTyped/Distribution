@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Size...
   */
-@js.native
 trait ISize extends StObject {
   
   /**
     * Number of pixels on the x axis.
     */
-  var qcx: Double = js.native
+  var qcx: Double
   
   /**
     * Number of pixels on the y axis.
     */
-  var qcy: Double = js.native
+  var qcy: Double
 }
 object ISize {
   

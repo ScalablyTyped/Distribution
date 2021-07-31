@@ -2,18 +2,16 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitResult extends StObject {
   
   /** Contains declaration emit diagnostics */
-  var diagnostics: js.Array[Diagnostic] = js.native
+  var diagnostics: js.Array[Diagnostic]
   
-  var emitSkipped: Boolean = js.native
+  var emitSkipped: Boolean
   
-  var emittedFiles: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var emittedFiles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 object EmitResult {
   

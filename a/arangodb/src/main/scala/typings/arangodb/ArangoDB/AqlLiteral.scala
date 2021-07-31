@@ -2,13 +2,11 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AqlLiteral extends StObject {
   
-  def toAQL(): String = js.native
+  def toAQL(): String
 }
 object AqlLiteral {
   

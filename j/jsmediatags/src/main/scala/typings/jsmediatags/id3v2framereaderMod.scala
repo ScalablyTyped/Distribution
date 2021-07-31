@@ -8,7 +8,6 @@ import typings.jsmediatags.typesMod.TagFrames
 import typings.jsmediatags.typesMod.TagHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object id3v2framereaderMod extends Shortcut {

@@ -5,13 +5,13 @@ import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.dashboard")
 @js.native
 class dashboard ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$dragCreate")
   def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native
@@ -42,9 +42,12 @@ class dashboard ()
   def attachEvent(`type`: dashboardEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: dashboardEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -71,8 +74,8 @@ class dashboard ()
   def restore(state: js.Any): Unit = js.native
   def restore(state: js.Any, factory: WebixCallback): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(serializer: WebixCallback): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(serializer: WebixCallback): js.Array[js.Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

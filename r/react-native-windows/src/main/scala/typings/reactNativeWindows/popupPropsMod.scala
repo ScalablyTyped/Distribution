@@ -4,37 +4,37 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupPropsMod {
   
-  @js.native
-  trait IPopupProps extends ViewProps {
+  trait IPopupProps
+    extends StObject
+       with ViewProps {
     
     /**
       * Sets whether the Popup will automatically receive focus when opened.
       * Defaults to true. Always true when isLightDismissEnabled === true.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var horizontalOffset: js.UndefOr[Double] = js.native
+    var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Configures the Popup with a transparent backdrop.
       */
-    var isLightDismissEnabled: js.UndefOr[Boolean] = js.native
+    var isLightDismissEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Sets a React element to use as an anchor point. When set, the popup will be positioned relative to it.
       */
-    var target: js.UndefOr[ReactNode] = js.native
+    var target: js.UndefOr[ReactNode] = js.undefined
     
-    var verticalOffset: js.UndefOr[Double] = js.native
+    var verticalOffset: js.UndefOr[Double] = js.undefined
   }
   object IPopupProps {
     

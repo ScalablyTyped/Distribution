@@ -2,23 +2,21 @@ package typings.bootstrapValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatorOptions extends StObject {
   
-  var custom: js.UndefOr[js.Any] = js.native
+  var custom: js.UndefOr[js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
-  var feedback: js.UndefOr[js.Any] = js.native
+  var feedback: js.UndefOr[js.Any] = js.undefined
   
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
 }
 object ValidatorOptions {
   

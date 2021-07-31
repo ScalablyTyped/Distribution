@@ -2,17 +2,15 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  val email: js.UndefOr[String] = js.native
+  val email: js.UndefOr[String] = js.undefined
   
-  val id: js.UndefOr[Double] = js.native
+  val id: js.UndefOr[Double] = js.undefined
   
-  val name: js.UndefOr[String] = js.native
+  val name: js.UndefOr[String] = js.undefined
 }
 object User {
   

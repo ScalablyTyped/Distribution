@@ -8,39 +8,35 @@ import typings.phaser.Phaser.Physics.Arcade.Sprite
 import typings.phaser.Phaser.Physics.Arcade.StaticGroup
 import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
 import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
-import typings.phaser.Phaser.Types.GameObjects.Group.GroupCallback
-import typings.phaser.Phaser.Types.GameObjects.Group.GroupMultipleCreateCallback
+import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Arcade {
   
-  @js.native
   trait ArcadeBodyBounds extends StObject {
     
     /**
       * The lower edge.
       */
-    var bottom: Double = js.native
+    var bottom: Double
     
     /**
       * The right edge.
       */
-    var right: Double = js.native
+    var right: Double
     
     /**
       * The left edge.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The upper edge.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object ArcadeBodyBounds {
     
@@ -67,33 +63,32 @@ object Arcade {
     }
   }
   
-  @js.native
   trait ArcadeBodyCollision extends StObject {
     
     /**
       * True if the Body is colliding on its lower edge.
       */
-    var down: Boolean = js.native
+    var down: Boolean
     
     /**
       * True if the Body is colliding on its left edge.
       */
-    var left: Boolean = js.native
+    var left: Boolean
     
     /**
       * True if the Body is not colliding.
       */
-    var none: Boolean = js.native
+    var none: Boolean
     
     /**
       * True if the Body is colliding on its right edge.
       */
-    var right: Boolean = js.native
+    var right: Boolean
     
     /**
       * True if the Body is colliding on its upper edge.
       */
-    var up: Boolean = js.native
+    var up: Boolean
   }
   object ArcadeBodyCollision {
     
@@ -142,113 +137,112 @@ object Arcade {
     DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer
   ])
   
-  @js.native
   trait ArcadeWorldConfig extends StObject {
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#checkCollision}.
       */
-    var checkCollision: js.UndefOr[CheckCollisionObject] = js.native
+    var checkCollision: js.UndefOr[CheckCollisionObject] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#debug}.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults bodyDebugColor}.
       */
-    var debugBodyColor: js.UndefOr[Double] = js.native
+    var debugBodyColor: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults debugShowBody}.
       */
-    var debugShowBody: js.UndefOr[Boolean] = js.native
+    var debugShowBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults debugShowStaticBody}.
       */
-    var debugShowStaticBody: js.UndefOr[Boolean] = js.native
+    var debugShowStaticBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults debugShowStaticBody}.
       */
-    var debugShowVelocity: js.UndefOr[Boolean] = js.native
+    var debugShowVelocity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults staticBodyDebugColor}.
       */
-    var debugStaticBodyColor: js.UndefOr[Double] = js.native
+    var debugStaticBodyColor: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#defaults velocityDebugColor}.
       */
-    var debugVelocityColor: js.UndefOr[Double] = js.native
+    var debugVelocityColor: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#forceX}.
       */
-    var forceX: js.UndefOr[Boolean] = js.native
+    var forceX: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#fps}.
       */
-    var fps: js.UndefOr[Double] = js.native
+    var fps: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#gravity}.
       */
-    var gravity: js.UndefOr[Vector2Like] = js.native
+    var gravity: js.UndefOr[Vector2Like] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#bounds bounds.height}.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#isPaused}.
       */
-    var isPaused: js.UndefOr[Boolean] = js.native
+    var isPaused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#maxEntries}.
       */
-    var maxEntries: js.UndefOr[Double] = js.native
+    var maxEntries: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#OVERLAP_BIAS}.
       */
-    var overlapBias: js.UndefOr[Double] = js.native
+    var overlapBias: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#TILE_BIAS}.
       */
-    var tileBias: js.UndefOr[Double] = js.native
+    var tileBias: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#timeScale}.
       */
-    var timeScale: js.UndefOr[Double] = js.native
+    var timeScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#useTree}.
       */
-    var useTree: js.UndefOr[Boolean] = js.native
+    var useTree: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#bounds bounds.width}.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#bounds bounds.x}.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.World#bounds bounds.y}.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ArcadeWorldConfig {
     
@@ -389,38 +383,37 @@ object Arcade {
     }
   }
   
-  @js.native
   trait ArcadeWorldDefaults extends StObject {
     
     /**
       * The color of dynamic body outlines when rendered to the debug display.
       */
-    var bodyDebugColor: Double = js.native
+    var bodyDebugColor: Double
     
     /**
       * Set to `true` to render dynamic body outlines to the debug display.
       */
-    var debugShowBody: Boolean = js.native
+    var debugShowBody: Boolean
     
     /**
       * Set to `true` to render static body outlines to the debug display.
       */
-    var debugShowStaticBody: Boolean = js.native
+    var debugShowStaticBody: Boolean
     
     /**
       * Set to `true` to render body velocity markers to the debug display.
       */
-    var debugShowVelocity: Boolean = js.native
+    var debugShowVelocity: Boolean
     
     /**
       * The color of static body outlines when rendered to the debug display.
       */
-    var staticBodyDebugColor: Double = js.native
+    var staticBodyDebugColor: Double
     
     /**
       * The color of the velocity markers when rendered to the debug display.
       */
-    var velocityDebugColor: Double = js.native
+    var velocityDebugColor: Double
   }
   object ArcadeWorldDefaults {
     
@@ -460,28 +453,27 @@ object Arcade {
     }
   }
   
-  @js.native
   trait ArcadeWorldTreeMinMax extends StObject {
     
     /**
       * The maximum x value used in RTree searches.
       */
-    var maxX: Double = js.native
+    var maxX: Double
     
     /**
       * The maximum y value used in RTree searches.
       */
-    var maxY: Double = js.native
+    var maxY: Double
     
     /**
       * The minimum x value used in RTree searches.
       */
-    var minX: Double = js.native
+    var minX: Double
     
     /**
       * The minimum y value used in RTree searches.
       */
-    var minY: Double = js.native
+    var minY: Double
   }
   object ArcadeWorldTreeMinMax {
     
@@ -508,28 +500,27 @@ object Arcade {
     }
   }
   
-  @js.native
   trait CheckCollisionObject extends StObject {
     
     /**
       * Will bodies collide with the bottom side of the world bounds?
       */
-    var down: Boolean = js.native
+    var down: Boolean
     
     /**
       * Will bodies collide with the left side of the world bounds?
       */
-    var left: Boolean = js.native
+    var left: Boolean
     
     /**
       * Will bodies collide with the right side of the world bounds?
       */
-    var right: Boolean = js.native
+    var right: Boolean
     
     /**
       * Will bodies collide with the top side of the world bounds?
       */
-    var up: Boolean = js.native
+    var up: Boolean
   }
   object CheckCollisionObject {
     
@@ -566,174 +557,124 @@ object Arcade {
   
   type ImageWithStaticBody = Image
   
-  /* Inlined phaser.Phaser.Types.GameObjects.Group.GroupConfig & {  collideWorldBounds :boolean | undefined,   customBoundsRectangle :phaser.Phaser.Geom.Rectangle | undefined,   accelerationX :number | undefined,   accelerationY :number | undefined,   allowDrag :boolean | undefined,   allowGravity :boolean | undefined,   allowRotation :boolean | undefined,   bounceX :number | undefined,   bounceY :number | undefined,   dragX :number | undefined,   dragY :number | undefined,   enable :boolean | undefined,   gravityX :number | undefined,   gravityY :number | undefined,   frictionX :number | undefined,   frictionY :number | undefined,   velocityX :number | undefined,   velocityY :number | undefined,   angularVelocity :number | undefined,   angularAcceleration :number | undefined,   angularDrag :number | undefined,   mass :number | undefined,   immovable :boolean | undefined} */
-  @js.native
-  trait PhysicsGroupConfig extends StObject {
+  trait PhysicsGroupConfig
+    extends StObject
+       with GroupConfig {
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#acceleration acceleration.x}.
       */
-    var accelerationX: js.UndefOr[Double] = js.native
+    var accelerationX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#acceleration acceleration.y}.
       */
-    var accelerationY: js.UndefOr[Double] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#active}.
-      */
-    var active: js.UndefOr[Boolean] = js.native
+    var accelerationY: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#allowDrag}.
       */
-    var allowDrag: js.UndefOr[Boolean] = js.native
+    var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#allowGravity}.
       */
-    var allowGravity: js.UndefOr[Boolean] = js.native
+    var allowGravity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#allowRotation}.
       */
-    var allowRotation: js.UndefOr[Boolean] = js.native
+    var allowRotation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#angularAcceleration}.
       */
-    var angularAcceleration: js.UndefOr[Double] = js.native
+    var angularAcceleration: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#angularDrag}.
       */
-    var angularDrag: js.UndefOr[Double] = js.native
+    var angularDrag: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#angularVelocity}.
       */
-    var angularVelocity: js.UndefOr[Double] = js.native
+    var angularVelocity: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#bounce bounce.x}.
       */
-    var bounceX: js.UndefOr[Double] = js.native
+    var bounceX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#bounce bounce.y}.
       */
-    var bounceY: js.UndefOr[Double] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#classType}.
-      */
-    var classType: js.UndefOr[js.Function] = js.native
+    var bounceY: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#collideWorldBounds}.
       */
-    var collideWorldBounds: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#createCallback}.
-      */
-    var createCallback: js.UndefOr[GroupCallback] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#createMultipleCallback}.
-      */
-    var createMultipleCallback: js.UndefOr[GroupMultipleCreateCallback] = js.native
+    var collideWorldBounds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#setBoundsRectangle setBoundsRectangle}.
       */
-    var customBoundsRectangle: js.UndefOr[Rectangle] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#defaultFrame}.
-      */
-    var defaultFrame: js.UndefOr[String | integer] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#defaultKey}.
-      */
-    var defaultKey: js.UndefOr[String] = js.native
+    var customBoundsRectangle: js.UndefOr[Rectangle] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#drag drag.x}.
       */
-    var dragX: js.UndefOr[Double] = js.native
+    var dragX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#drag drag.y}.
       */
-    var dragY: js.UndefOr[Double] = js.native
+    var dragY: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#enable enable}.
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#friction friction.x}.
       */
-    var frictionX: js.UndefOr[Double] = js.native
+    var frictionX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#friction friction.y}.
       */
-    var frictionY: js.UndefOr[Double] = js.native
+    var frictionY: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#gravity gravity.x}.
       */
-    var gravityX: js.UndefOr[Double] = js.native
+    var gravityX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#gravity gravity.y}.
       */
-    var gravityY: js.UndefOr[Double] = js.native
+    var gravityY: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#immovable}.
       */
-    var immovable: js.UndefOr[Boolean] = js.native
+    var immovable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#mass}.
       */
-    var mass: js.UndefOr[Double] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#maxSize}.
-      */
-    var maxSize: js.UndefOr[Double] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#name}.
-      */
-    var name: js.UndefOr[String] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#removeCallback}.
-      */
-    var removeCallback: js.UndefOr[GroupCallback] = js.native
-    
-    /**
-      * Sets {@link Phaser.GameObjects.Group#runChildUpdate}.
-      */
-    var runChildUpdate: js.UndefOr[Boolean] = js.native
+    var mass: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.x}.
       */
-    var velocityX: js.UndefOr[Double] = js.native
+    var velocityX: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.y}.
       */
-    var velocityY: js.UndefOr[Double] = js.native
+    var velocityY: js.UndefOr[Double] = js.undefined
   }
   object PhysicsGroupConfig {
     
@@ -757,12 +698,6 @@ object Arcade {
       
       @scala.inline
       def setAccelerationYUndefined: Self = StObject.set(x, "accelerationY", js.undefined)
-      
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
       @scala.inline
       def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
@@ -813,46 +748,16 @@ object Arcade {
       def setBounceYUndefined: Self = StObject.set(x, "bounceY", js.undefined)
       
       @scala.inline
-      def setClassType(value: js.Function): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassTypeUndefined: Self = StObject.set(x, "classType", js.undefined)
-      
-      @scala.inline
       def setCollideWorldBounds(value: Boolean): Self = StObject.set(x, "collideWorldBounds", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCollideWorldBoundsUndefined: Self = StObject.set(x, "collideWorldBounds", js.undefined)
       
       @scala.inline
-      def setCreateCallback(value: /* item */ GameObject => Unit): Self = StObject.set(x, "createCallback", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setCreateCallbackUndefined: Self = StObject.set(x, "createCallback", js.undefined)
-      
-      @scala.inline
-      def setCreateMultipleCallback(value: /* items */ js.Array[GameObject] => Unit): Self = StObject.set(x, "createMultipleCallback", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setCreateMultipleCallbackUndefined: Self = StObject.set(x, "createMultipleCallback", js.undefined)
-      
-      @scala.inline
       def setCustomBoundsRectangle(value: Rectangle): Self = StObject.set(x, "customBoundsRectangle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomBoundsRectangleUndefined: Self = StObject.set(x, "customBoundsRectangle", js.undefined)
-      
-      @scala.inline
-      def setDefaultFrame(value: String | integer): Self = StObject.set(x, "defaultFrame", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDefaultFrameUndefined: Self = StObject.set(x, "defaultFrame", js.undefined)
-      
-      @scala.inline
-      def setDefaultKey(value: String): Self = StObject.set(x, "defaultKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDefaultKeyUndefined: Self = StObject.set(x, "defaultKey", js.undefined)
       
       @scala.inline
       def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
@@ -909,30 +814,6 @@ object Arcade {
       def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
       
       @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      @scala.inline
-      def setRemoveCallback(value: /* item */ GameObject => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRemoveCallbackUndefined: Self = StObject.set(x, "removeCallback", js.undefined)
-      
-      @scala.inline
-      def setRunChildUpdate(value: Boolean): Self = StObject.set(x, "runChildUpdate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRunChildUpdateUndefined: Self = StObject.set(x, "runChildUpdate", js.undefined)
-      
-      @scala.inline
       def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -946,123 +827,122 @@ object Arcade {
     }
   }
   
-  @js.native
   trait PhysicsGroupDefaults extends StObject {
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAccelerationX}.
       */
-    var setAccelerationX: Double = js.native
+    var setAccelerationX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAccelerationY}.
       */
-    var setAccelerationY: Double = js.native
+    var setAccelerationY: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAllowDrag}.
       */
-    var setAllowDrag: Boolean = js.native
+    var setAllowDrag: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAllowGravity}.
       */
-    var setAllowGravity: Boolean = js.native
+    var setAllowGravity: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAllowRotation}.
       */
-    var setAllowRotation: Boolean = js.native
+    var setAllowRotation: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAngularAcceleration}.
       */
-    var setAngularAcceleration: Double = js.native
+    var setAngularAcceleration: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAngularDrag}.
       */
-    var setAngularDrag: Double = js.native
+    var setAngularDrag: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setAngularVelocity}.
       */
-    var setAngularVelocity: Double = js.native
+    var setAngularVelocity: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setBounceX}.
       */
-    var setBounceX: Double = js.native
+    var setBounceX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setBounceY}.
       */
-    var setBounceY: Double = js.native
+    var setBounceY: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setBoundsRectangle}.
       */
-    var setBoundsRectangle: Rectangle = js.native
+    var setBoundsRectangle: Rectangle
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setCollideWorldBounds}.
       */
-    var setCollideWorldBounds: Boolean = js.native
+    var setCollideWorldBounds: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setDragX}.
       */
-    var setDragX: Double = js.native
+    var setDragX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setDragY}.
       */
-    var setDragY: Double = js.native
+    var setDragY: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setEnable}.
       */
-    var setEnable: Boolean = js.native
+    var setEnable: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setFrictionX}.
       */
-    var setFrictionX: Double = js.native
+    var setFrictionX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setFrictionY}.
       */
-    var setFrictionY: Double = js.native
+    var setFrictionY: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setGravityX}.
       */
-    var setGravityX: Double = js.native
+    var setGravityX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setGravityY}.
       */
-    var setGravityY: Double = js.native
+    var setGravityY: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setImmovable}.
       */
-    var setImmovable: Boolean = js.native
+    var setImmovable: Boolean
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setMass}.
       */
-    var setMass: Double = js.native
+    var setMass: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setVelocityX}.
       */
-    var setVelocityX: Double = js.native
+    var setVelocityX: Double
     
     /**
       * As {@link Phaser.Physics.Arcade.Body#setVelocityY}.
       */
-    var setVelocityY: Double = js.native
+    var setVelocityY: Double
   }
   object PhysicsGroupDefaults {
     

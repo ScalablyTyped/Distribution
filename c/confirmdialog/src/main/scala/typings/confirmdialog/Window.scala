@@ -2,13 +2,11 @@ package typings.confirmdialog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var setContentAppend: js.Any = js.native
+  var setContentAppend: js.Any
 }
 object Window {
   

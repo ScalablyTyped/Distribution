@@ -3,22 +3,22 @@ package typings.jweixin.mod
 import typings.jweixin.anon.TranslateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================音频接口================================*/
 /*=============================智能接口================================*/
-@js.native
-trait ItranslateVoice extends BaseParams {
+trait ItranslateVoice
+  extends StObject
+     with BaseParams {
   
   // 需要识别的音频的本地Id，由录音相关接口获得
-  var isShowProgressTips: Double = js.native
+  var isShowProgressTips: Double
   
-  var localId: String = js.native
+  var localId: String
   
   // 默认为1，显示进度提示
   @JSName("success")
-  def success_MItranslateVoice(res: TranslateResult): Unit = js.native
+  def success_MItranslateVoice(res: TranslateResult): Unit
 }
 object ItranslateVoice {
   

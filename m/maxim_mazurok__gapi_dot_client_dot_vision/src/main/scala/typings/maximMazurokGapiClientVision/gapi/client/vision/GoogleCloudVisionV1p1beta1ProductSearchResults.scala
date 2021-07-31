@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p1beta1ProductSearchResults extends StObject {
   
   /**
     * Timestamp of the index which provided these results. Products added to the product set and products removed from the product set after this time are not reflected in the current
     * results.
     */
-  var indexTime: js.UndefOr[String] = js.native
+  var indexTime: js.UndefOr[String] = js.undefined
   
   /**
     * List of results grouped by products detected in the query image. Each entry corresponds to one bounding polygon in the query image, and contains the matching products specific to
     * that region. There may be duplicate product matches in the union of all the per-product results.
     */
-  var productGroupedResults: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult]] = js.native
+  var productGroupedResults: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult]] = js.undefined
   
   /** List of results, one for each product match. */
-  var results: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsResult]] = js.native
+  var results: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsResult]] = js.undefined
 }
 object GoogleCloudVisionV1p1beta1ProductSearchResults {
   

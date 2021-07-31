@@ -2,27 +2,25 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrokeProps extends StObject {
   
-  var stroke: js.UndefOr[Color] = js.native
+  var stroke: js.UndefOr[Color] = js.undefined
   
-  var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.native
+  var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[NumberProp] = js.native
+  var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeLinecap: js.UndefOr[Linecap] = js.native
+  var strokeLinecap: js.UndefOr[Linecap] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[Linejoin] = js.native
+  var strokeLinejoin: js.UndefOr[Linejoin] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[NumberProp] = js.native
+  var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeOpacity: js.UndefOr[NumberProp] = js.native
+  var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
   
-  var strokeWidth: js.UndefOr[NumberProp] = js.native
+  var strokeWidth: js.UndefOr[NumberProp] = js.undefined
 }
 object StrokeProps {
   

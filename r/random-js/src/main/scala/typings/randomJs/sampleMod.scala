@@ -4,12 +4,14 @@ import typings.randomJs.typesMod.Engine
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sampleMod {
   
-  @JSImport("random-js/dist/distribution/sample", "sample")
+  @JSImport("random-js/dist/distribution/sample", JSImport.Namespace)
   @js.native
-  def sample[T](engine: Engine, population: ArrayLike[T], sampleSize: Double): js.Array[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sample[T](engine: Engine, population: ArrayLike[T], sampleSize: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(engine.asInstanceOf[js.Any], population.asInstanceOf[js.Any], sampleSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintResponse extends Object {
+trait PrintResponse
+  extends StObject
+     with Object {
   
   /**
     * URL pointing to the location of the generated printout of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html#PrintResponse)
     */
-  var url: String = js.native
+  var url: String
 }
 object PrintResponse {
   

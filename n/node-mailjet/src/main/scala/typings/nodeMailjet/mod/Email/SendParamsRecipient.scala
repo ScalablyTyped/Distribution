@@ -2,16 +2,14 @@ package typings.nodeMailjet.mod.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // other types
-@js.native
 trait SendParamsRecipient extends StObject {
   
-  var Email: String = js.native
+  var Email: String
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object SendParamsRecipient {
   

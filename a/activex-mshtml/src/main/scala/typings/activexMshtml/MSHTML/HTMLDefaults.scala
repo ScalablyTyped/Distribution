@@ -2,38 +2,36 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLDefaults extends StObject {
   
   @JSName("MSHTML.HTMLDefaults_typekey")
-  var MSHTMLDotHTMLDefaults_typekey: HTMLDefaults = js.native
+  var MSHTMLDotHTMLDefaults_typekey: HTMLDefaults
   
-  var canHaveHTML: Boolean = js.native
+  var canHaveHTML: Boolean
   
-  val constructor: js.Any = js.native
+  val constructor: js.Any
   
-  var contentEditable: String = js.native
+  var contentEditable: String
   
-  var frozen: Boolean = js.native
+  var frozen: Boolean
   
-  var isMultiLine: Boolean = js.native
+  var isMultiLine: Boolean
   
-  var scrollSegmentX: Double = js.native
+  var scrollSegmentX: Double
   
-  var scrollSegmentY: Double = js.native
+  var scrollSegmentY: Double
   
-  val style: IHTMLStyle = js.native
+  val style: IHTMLStyle
   
-  var tabStop: Boolean = js.native
+  var tabStop: Boolean
   
-  var viewInheritStyle: Boolean = js.native
+  var viewInheritStyle: Boolean
   
-  var viewLink: IHTMLDocument = js.native
+  var viewLink: IHTMLDocument
   
-  var viewMasterTab: Boolean = js.native
+  var viewMasterTab: Boolean
 }
 object HTMLDefaults {
   

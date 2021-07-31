@@ -4,18 +4,18 @@ import typings.express.mod.Handler
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(s: String): Handler = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  @scala.inline
+  def apply(s: String, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  @scala.inline
+  def apply(s: RegExp, t: String): Handler = (^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  
   @JSImport("express-urlrewrite", JSImport.Namespace)
   @js.native
-  def apply(s: String): Handler = js.native
-  @JSImport("express-urlrewrite", JSImport.Namespace)
-  @js.native
-  def apply(s: String, t: String): Handler = js.native
-  @JSImport("express-urlrewrite", JSImport.Namespace)
-  @js.native
-  def apply(s: RegExp, t: String): Handler = js.native
+  val ^ : js.Any = js.native
 }

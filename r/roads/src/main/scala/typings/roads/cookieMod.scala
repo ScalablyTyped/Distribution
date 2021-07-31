@@ -6,7 +6,6 @@ import typings.roads.responseMod.default
 import typings.roads.roadMod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cookieMod {
@@ -31,15 +30,15 @@ object cookieMod {
       */
     def this(body: String) = this()
     def this(body: String, status: Double) = this()
-    def this(body: String, status: js.UndefOr[scala.Nothing], headers: js.Object) = this()
     def this(body: String, status: Double, headers: js.Object) = this()
+    def this(body: String, status: Unit, headers: js.Object) = this()
     
     def getCookies(): StringDictionary[String] = js.native
     
     def setCookie(name: String): Unit = js.native
-    def setCookie(name: String, value: js.UndefOr[scala.Nothing], options: CookieSerializeOptions): Unit = js.native
     def setCookie(name: String, value: js.Any): Unit = js.native
     def setCookie(name: String, value: js.Any, options: CookieSerializeOptions): Unit = js.native
+    def setCookie(name: String, value: Unit, options: CookieSerializeOptions): Unit = js.native
   }
   
   @scala.inline

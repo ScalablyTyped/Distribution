@@ -2,14 +2,15 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cpuMod {
   
   @JSImport("node-os-utils/lib/cpu", JSImport.Default)
   @js.native
-  class default () extends Cpu
+  class default ()
+    extends StObject
+       with Cpu
   
   @js.native
   trait Cpu extends StObject {
@@ -32,16 +33,15 @@ object cpuMod {
     def usage(interval: Double): js.Promise[Double] = js.native
   }
   
-  @js.native
   trait CpuAverageInfo extends StObject {
     
-    var avgIdle: Double = js.native
+    var avgIdle: Double
     
-    var avgTotal: Double = js.native
+    var avgTotal: Double
     
-    var totalIdle: Double = js.native
+    var totalIdle: Double
     
-    var totalTick: Double = js.native
+    var totalTick: Double
   }
   object CpuAverageInfo {
     

@@ -3,19 +3,17 @@ package typings.xstate.anon
 import typings.xstate.xstateStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var event: _empty = js.native
+  var event: _empty
 }
 object `0` {
   
   @scala.inline
-  def apply(event: _empty): `0` = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(event = "")
     __obj.asInstanceOf[`0`]
   }
   

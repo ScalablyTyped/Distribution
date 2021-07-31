@@ -3,18 +3,16 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AffectedRequest extends StObject {
   
   /**
     * The unique request id.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object AffectedRequest {
   

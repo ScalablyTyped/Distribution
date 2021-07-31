@@ -3,36 +3,34 @@ package typings.figma.mod.global
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mixins
-@js.native
 trait BaseNodeMixin extends StObject {
   
-  def getPluginData(key: String): String = js.native
+  def getPluginData(key: String): String
   
   // Namespace is a string that must be at least 3 alphanumeric characters, and should
   // be a name related to your plugin. Other plugins will be able to read this data.
-  def getSharedPluginData(namespace: String, key: String): String = js.native
+  def getSharedPluginData(namespace: String, key: String): String
   
-  val id: String = js.native
+  val id: String
   
-  var name: String = js.native
+  var name: String
   
-  val parent: (BaseNode with ChildrenMixin) | Null = js.native
+  val parent: (BaseNode & ChildrenMixin) | Null
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   // Note: setting this also sets `autoRename` to false on TextNodes
-  val removed: Boolean = js.native
+  val removed: Boolean
   
-  def setPluginData(key: String, value: String): Unit = js.native
+  def setPluginData(key: String, value: String): Unit
   
-  def setRelaunchData(data: StringDictionary[/* description */ String]): Unit = js.native
+  def setRelaunchData(data: StringDictionary[/* description */ String]): Unit
   
-  def setSharedPluginData(namespace: String, key: String, value: String): Unit = js.native
+  def setSharedPluginData(namespace: String, key: String, value: String): Unit
 }
 object BaseNodeMixin {
   
@@ -48,7 +46,7 @@ object BaseNodeMixin {
     setRelaunchData: StringDictionary[/* description */ String] => Unit,
     setSharedPluginData: (String, String, String) => Unit
   ): BaseNodeMixin = {
-    val __obj = js.Dynamic.literal(getPluginData = js.Any.fromFunction1(getPluginData), getSharedPluginData = js.Any.fromFunction2(getSharedPluginData), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removed = removed.asInstanceOf[js.Any], setPluginData = js.Any.fromFunction2(setPluginData), setRelaunchData = js.Any.fromFunction1(setRelaunchData), setSharedPluginData = js.Any.fromFunction3(setSharedPluginData))
+    val __obj = js.Dynamic.literal(getPluginData = js.Any.fromFunction1(getPluginData), getSharedPluginData = js.Any.fromFunction2(getSharedPluginData), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removed = removed.asInstanceOf[js.Any], setPluginData = js.Any.fromFunction2(setPluginData), setRelaunchData = js.Any.fromFunction1(setRelaunchData), setSharedPluginData = js.Any.fromFunction3(setSharedPluginData), parent = null)
     __obj.asInstanceOf[BaseNodeMixin]
   }
   
@@ -68,7 +66,7 @@ object BaseNodeMixin {
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: BaseNode with ChildrenMixin): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: BaseNode & ChildrenMixin): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentNull: Self = StObject.set(x, "parent", null)

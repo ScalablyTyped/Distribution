@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,32 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Days is valid.
   * @since OOo 3.3
   */
-@js.native
 trait Duration extends StObject {
   
   /** contains the days. */
-  var Days: Double = js.native
+  var Days: Double
   
   /** contains the hours. */
-  var Hours: Double = js.native
+  var Hours: Double
   
   /** contains the minutes. */
-  var Minutes: Double = js.native
+  var Minutes: Double
   
   /** contains the months. */
-  var Months: Double = js.native
+  var Months: Double
   
   /** contains the nanoseconds. */
-  var NanoSeconds: Double = js.native
+  var NanoSeconds: Double
   
   /** explicit sign bit. */
-  var Negative: Boolean = js.native
+  var Negative: Boolean
   
   /** contains the seconds. */
-  var Seconds: Double = js.native
+  var Seconds: Double
   
   /** contains the years. */
-  var Years: Double = js.native
+  var Years: Double
 }
 object Duration {
   

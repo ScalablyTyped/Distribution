@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object MediaCategory extends StObject {
   
   /** Media is intended for real-time communications. */
   @js.native
-  sealed trait communications extends MediaCategory
+  sealed trait communications
+    extends StObject
+       with MediaCategory
   
   /** Media is game chat. */
   @js.native
-  sealed trait gameChat extends MediaCategory
+  sealed trait gameChat
+    extends StObject
+       with MediaCategory
   
   /** General media. */
   @js.native
-  sealed trait media extends MediaCategory
+  sealed trait media
+    extends StObject
+       with MediaCategory
   
   /** Media category is other. */
   @js.native
-  sealed trait other extends MediaCategory
+  sealed trait other
+    extends StObject
+       with MediaCategory
   
   /** Media is speech. */
   @js.native
-  sealed trait speech extends MediaCategory
+  sealed trait speech
+    extends StObject
+       with MediaCategory
 }

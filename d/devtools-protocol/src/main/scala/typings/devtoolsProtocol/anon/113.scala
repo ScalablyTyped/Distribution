@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Network.EmulateNetworkConditionsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `113` extends StObject {
   
-  var paramsType: js.Array[EmulateNetworkConditionsRequest] = js.native
+  var paramsType: js.Array[EmulateNetworkConditionsRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `113` {
   

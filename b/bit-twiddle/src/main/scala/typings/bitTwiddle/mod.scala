@@ -2,10 +2,13 @@ package typings.bitTwiddle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bit-twiddle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bit-twiddle", "INT_BITS")
   @js.native
@@ -19,75 +22,57 @@ object mod {
   @js.native
   val INT_MIN: Double = js.native
   
-  @JSImport("bit-twiddle", "abs")
-  @js.native
-  def abs(value: Double): Double = js.native
+  @scala.inline
+  def abs(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "countTrailingZeros")
-  @js.native
-  def countTrailingZeros(value: Double): Double = js.native
+  @scala.inline
+  def countTrailingZeros(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countTrailingZeros")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "deinterleave2")
-  @js.native
-  def deinterleave2(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def deinterleave2(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deinterleave2")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "deinterleave3")
-  @js.native
-  def deinterleave3(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def deinterleave3(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deinterleave3")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "interleave2")
-  @js.native
-  def interleave2(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def interleave2(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interleave2")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "interleave3")
-  @js.native
-  def interleave3(x: Double, y: Double, z: Double): Double = js.native
+  @scala.inline
+  def interleave3(x: Double, y: Double, z: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interleave3")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "isPow2")
-  @js.native
-  def isPow2(value: Double): Boolean = js.native
+  @scala.inline
+  def isPow2(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPow2")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("bit-twiddle", "log10")
-  @js.native
-  def log10(value: Double): Double = js.native
+  @scala.inline
+  def log10(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "log2")
-  @js.native
-  def log2(value: Double): Double = js.native
+  @scala.inline
+  def log2(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "max")
-  @js.native
-  def max(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def max(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "min")
-  @js.native
-  def min(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def min(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "nextCombination")
-  @js.native
-  def nextCombination(x: Double): Double = js.native
+  @scala.inline
+  def nextCombination(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextCombination")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "nextPow2")
-  @js.native
-  def nextPow2(value: Double): Double = js.native
+  @scala.inline
+  def nextPow2(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPow2")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "parity")
-  @js.native
-  def parity(value: Double): Double = js.native
+  @scala.inline
+  def parity(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parity")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "popCount")
-  @js.native
-  def popCount(value: Double): Double = js.native
+  @scala.inline
+  def popCount(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("popCount")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "prevPow2")
-  @js.native
-  def prevPow2(value: Double): Double = js.native
+  @scala.inline
+  def prevPow2(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prevPow2")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "reverse")
-  @js.native
-  def reverse(value: Double): Double = js.native
+  @scala.inline
+  def reverse(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bit-twiddle", "sign")
-  @js.native
-  def sign(value: Double): Double = js.native
+  @scala.inline
+  def sign(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

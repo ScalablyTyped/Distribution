@@ -3,16 +3,14 @@ package typings.eggView
 import typings.eggView.anon.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait Application extends StObject {
     
-    var view: ViewManager = js.native
+    var view: ViewManager
   }
   object Application {
     
@@ -31,7 +29,9 @@ object mod {
   }
   
   @js.native
-  trait Context extends ViewBase {
+  trait Context
+    extends StObject
+       with ViewBase {
     
     /**
       * View instance that is created every request
@@ -39,10 +39,9 @@ object mod {
     var view: ContextView = js.native
   }
   
-  @js.native
   trait EggAppConfig extends StObject {
     
-    var view: Cache = js.native
+    var view: Cache
   }
   object EggAppConfig {
     

@@ -3,45 +3,43 @@ package typings.typeorm
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationCountMetadataArgsMod {
   
-  @js.native
   trait RelationCountMetadataArgs extends StObject {
     
     /**
       * Alias of the joined (destination) table.
       */
-    val alias: js.UndefOr[String] = js.native
+    val alias: js.UndefOr[String] = js.undefined
     
     /**
       * Class's property name to which this decorator is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Extra condition applied to "ON" section of join.
       */
-    val queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]] = js.native
+    val queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]] = js.undefined
     
     /**
       * Target's relation which it should count.
       */
-    val relation: String | (js.Function1[/* object */ js.Any, _]) = js.native
+    val relation: String | (js.Function1[/* object */ js.Any, js.Any])
     
     /**
       * Class to which this decorator is applied.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object RelationCountMetadataArgs {
     
     @scala.inline
     def apply(
       propertyName: String,
-      relation: String | (js.Function1[/* object */ js.Any, _]),
+      relation: String | (js.Function1[/* object */ js.Any, js.Any]),
       target: js.Function
     ): RelationCountMetadataArgs = {
       val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any], relation = relation.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
@@ -61,16 +59,16 @@ object relationCountMetadataArgsMod {
       def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[_] => SelectQueryBuilder[_]): Self = StObject.set(x, "queryBuilderFactory", js.Any.fromFunction1(value))
+      def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[js.Any] => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "queryBuilderFactory", js.Any.fromFunction1(value))
       
       @scala.inline
       def setQueryBuilderFactoryUndefined: Self = StObject.set(x, "queryBuilderFactory", js.undefined)
       
       @scala.inline
-      def setRelation(value: String | (js.Function1[/* object */ js.Any, _])): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+      def setRelation(value: String | (js.Function1[/* object */ js.Any, js.Any])): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRelationFunction1(value: /* object */ js.Any => _): Self = StObject.set(x, "relation", js.Any.fromFunction1(value))
+      def setRelationFunction1(value: /* object */ js.Any => js.Any): Self = StObject.set(x, "relation", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

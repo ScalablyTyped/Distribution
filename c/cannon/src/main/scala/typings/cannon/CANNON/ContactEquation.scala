@@ -2,33 +2,33 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContactEquation extends Equation {
+trait ContactEquation
+  extends StObject
+     with Equation {
   
-  var biInvInertiaTimesRixn: Vec3 = js.native
+  var biInvInertiaTimesRixn: Vec3
   
-  var bjInvInertiaTimesRjxn: Vec3 = js.native
+  var bjInvInertiaTimesRjxn: Vec3
   
-  var invIi: Mat3 = js.native
+  var invIi: Mat3
   
-  var invIj: Mat3 = js.native
+  var invIj: Mat3
   
-  var ni: Vec3 = js.native
+  var ni: Vec3
   
-  var penetrationVec: Vec3 = js.native
+  var penetrationVec: Vec3
   
-  var restitution: Double = js.native
+  var restitution: Double
   
-  var ri: Vec3 = js.native
+  var ri: Vec3
   
-  var rixn: Vec3 = js.native
+  var rixn: Vec3
   
-  var rj: Vec3 = js.native
+  var rj: Vec3
   
-  var rjxn: Vec3 = js.native
+  var rjxn: Vec3
 }
 object ContactEquation {
   

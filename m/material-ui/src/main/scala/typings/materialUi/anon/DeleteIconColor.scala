@@ -2,23 +2,21 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIconColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var deleteIconColor: js.UndefOr[String] = js.native
+  var deleteIconColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var shadow: js.UndefOr[String] = js.native
+  var shadow: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object DeleteIconColor {
   

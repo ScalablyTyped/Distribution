@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightUrl extends StObject {
   
-  var height: js.UndefOr[Double | RangeMaxPoint] = js.native
+  var height: js.UndefOr[Double | RangeMaxPoint] = js.undefined
   
-  var url: js.UndefOr[String | RangeMinPoint] = js.native
+  var url: js.UndefOr[String | RangeMinPoint] = js.undefined
   
-  var width: js.UndefOr[Double | RangeMaxPoint] = js.native
+  var width: js.UndefOr[Double | RangeMaxPoint] = js.undefined
 }
 object HeightUrl {
   

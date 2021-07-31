@@ -12,7 +12,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
@@ -20,12 +19,11 @@ object selectMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeProps<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue>> & {  serialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue): @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue,   deserialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue): @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue} */
   object default {
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Select", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]]): ReactElement | Null = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Select", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/addon-knobs/dist/components/types/Select", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -67,10 +65,11 @@ object selectMod {
     def serialize_=(x: js.Function1[/* value */ SelectTypeKnobValue, SelectTypeKnobValue]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait SelectTypeKnob[T /* <: SelectTypeKnobValue */] extends KnobControlConfig[T] {
+  trait SelectTypeKnob[T /* <: SelectTypeKnobValue */]
+    extends StObject
+       with KnobControlConfig[T] {
     
-    var options: SelectTypeOptionsProp[T] = js.native
+    var options: SelectTypeOptionsProp[T]
   }
   object SelectTypeKnob {
     
@@ -81,7 +80,7 @@ object selectMod {
     }
     
     @scala.inline
-    implicit class SelectTypeKnobMutableBuilder[Self <: SelectTypeKnob[_], T /* <: SelectTypeKnobValue */] (val x: Self with SelectTypeKnob[T]) extends AnyVal {
+    implicit class SelectTypeKnobMutableBuilder[Self <: SelectTypeKnob[?], T /* <: SelectTypeKnobValue */] (val x: Self & SelectTypeKnob[T]) extends AnyVal {
       
       @scala.inline
       def setOptions(value: SelectTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
@@ -98,11 +97,12 @@ object selectMod {
     (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | T
   ]) | js.Array[T]
   
-  @js.native
-  trait SelectTypeProps[T /* <: SelectTypeKnobValue */] extends KnobControlProps[T] {
+  trait SelectTypeProps[T /* <: SelectTypeKnobValue */]
+    extends StObject
+       with KnobControlProps[T] {
     
     @JSName("knob")
-    var knob_SelectTypeProps: SelectTypeKnob[T] = js.native
+    var knob_SelectTypeProps: SelectTypeKnob[T]
   }
   object SelectTypeProps {
     
@@ -113,7 +113,7 @@ object selectMod {
     }
     
     @scala.inline
-    implicit class SelectTypePropsMutableBuilder[Self <: SelectTypeProps[_], T /* <: SelectTypeKnobValue */] (val x: Self with SelectTypeProps[T]) extends AnyVal {
+    implicit class SelectTypePropsMutableBuilder[Self <: SelectTypeProps[?], T /* <: SelectTypeKnobValue */] (val x: Self & SelectTypeProps[T]) extends AnyVal {
       
       @scala.inline
       def setKnob(value: SelectTypeKnob[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])

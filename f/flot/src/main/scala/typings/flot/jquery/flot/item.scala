@@ -2,27 +2,25 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait item extends StObject {
   
   // the point, e.g. [0, 2]
-  var dataIndex: Double = js.native
+  var dataIndex: Double
   
-  var datapoint: js.Array[Double] = js.native
+  var datapoint: js.Array[Double]
   
   //the index of the series
-  var pageX: Double = js.native
+  var pageX: Double
   
-  var pageY: Double = js.native
+  var pageY: Double
   
   // the index of the point in the data array
-  var series: dataSeries = js.native
+  var series: dataSeries
   
   //the series object
-  var seriesIndex: Double = js.native
+  var seriesIndex: Double
 }
 object item {
   

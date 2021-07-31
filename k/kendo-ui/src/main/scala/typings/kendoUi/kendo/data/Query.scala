@@ -2,13 +2,12 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query extends StObject {
   
-  var data: js.Array[_] = js.native
+  var data: js.Array[js.Any] = js.native
   
   def filter(filters: js.Array[DataSourceFilterItem]): Query = js.native
   def filter(filters: DataSourceFilterItem): Query = js.native
@@ -30,5 +29,5 @@ trait Query extends StObject {
   
   def take(count: Double): Query = js.native
   
-  def toArray(): js.Array[_] = js.native
+  def toArray(): js.Array[js.Any] = js.native
 }

@@ -11,43 +11,41 @@ import typings.openlayers.mod.source.wms.ServerType
 import typings.openlayers.mod.tilegrid.TileGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileWMSOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var cacheSize: js.UndefOr[Double] = js.native
+  var cacheSize: js.UndefOr[Double] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var gutter: js.UndefOr[Double] = js.native
+  var gutter: js.UndefOr[Double] = js.undefined
   
-  var hidpi: js.UndefOr[Boolean] = js.native
+  var hidpi: js.UndefOr[Boolean] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var params: StringDictionary[js.Any] = js.native
+  var params: StringDictionary[js.Any]
   
-  var projection: js.UndefOr[ProjectionLike] = js.native
+  var projection: js.UndefOr[ProjectionLike] = js.undefined
   
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   
-  var serverType: js.UndefOr[ServerType | String] = js.native
+  var serverType: js.UndefOr[ServerType | String] = js.undefined
   
-  var tileGrid: js.UndefOr[TileGrid] = js.native
+  var tileGrid: js.UndefOr[TileGrid] = js.undefined
   
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
   
-  var transition: js.UndefOr[Double] = js.native
+  var transition: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object TileWMSOptions {
   

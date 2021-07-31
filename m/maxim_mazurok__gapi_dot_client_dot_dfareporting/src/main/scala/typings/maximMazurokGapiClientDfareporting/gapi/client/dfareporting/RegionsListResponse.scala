@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#regionsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Region collection. */
-  var regions: js.UndefOr[js.Array[Region]] = js.native
+  var regions: js.UndefOr[js.Array[Region]] = js.undefined
 }
 object RegionsListResponse {
   

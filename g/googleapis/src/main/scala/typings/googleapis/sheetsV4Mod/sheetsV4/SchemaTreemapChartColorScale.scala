@@ -2,38 +2,36 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A color scale for a treemap chart.
   */
-@js.native
 trait SchemaTreemapChartColorScale extends StObject {
   
   /**
     * The background color for cells with a color value greater than or equal
     * to maxValue. Defaults to #109618 if not specified.
     */
-  var maxValueColor: js.UndefOr[SchemaColor] = js.native
+  var maxValueColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The background color for cells with a color value at the midpoint between
     * minValue and maxValue. Defaults to #efe6dc if not specified.
     */
-  var midValueColor: js.UndefOr[SchemaColor] = js.native
+  var midValueColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The background color for cells with a color value less than or equal to
     * minValue. Defaults to #dc3912 if not specified.
     */
-  var minValueColor: js.UndefOr[SchemaColor] = js.native
+  var minValueColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The background color for cells that have no color data associated with
     * them. Defaults to #000000 if not specified.
     */
-  var noDataColor: js.UndefOr[SchemaColor] = js.native
+  var noDataColor: js.UndefOr[SchemaColor] = js.undefined
 }
 object SchemaTreemapChartColorScale {
   

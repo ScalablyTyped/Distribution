@@ -2,34 +2,32 @@ package typings.cytoscape.mod.Css
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#style/transition-animation
   */
-@js.native
 trait TransitionAnimation extends StObject {
   
   /**
     * The length of the delay in seconds before the transition occurs (e.g. 250ms).
     */
-  var `transition-delay`: Double = js.native
+  var `transition-delay`: Double
   
   /**
     * The length of the transition in seconds(e.g. 0.5s).
     */
-  var `transition-duration`: Double = js.native
+  var `transition-duration`: Double
   
   /**
     * A comma separated list of style properties to animate in this state.
     */
-  var `transition-property`: String = js.native
+  var `transition-property`: String
   
   /**
     * An easing function that controls the animation progress curve (a visualisation of easings serves as a reference).
     */
-  var `transition-timing-function`: TransitionTimingFunction = js.native
+  var `transition-timing-function`: TransitionTimingFunction
 }
 object TransitionAnimation {
   

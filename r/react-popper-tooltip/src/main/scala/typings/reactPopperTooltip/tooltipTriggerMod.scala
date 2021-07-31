@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.MutationObserverInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipTriggerMod {
@@ -66,9 +65,8 @@ object tooltipTriggerMod {
       @scala.inline
       def mutationObserverOptions_=(x: MutationObserverInit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mutationObserverOptions")(x.asInstanceOf[js.Any])
       
-      @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.onVisibilityChange")
-      @js.native
-      def onVisibilityChange(): Unit = js.native
+      @scala.inline
+      def onVisibilityChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVisibilityChange")().asInstanceOf[Unit]
       
       @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.placement")
       @js.native

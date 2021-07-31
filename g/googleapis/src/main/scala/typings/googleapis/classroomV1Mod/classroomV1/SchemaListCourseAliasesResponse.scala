@@ -2,25 +2,23 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response when listing course aliases.
   */
-@js.native
 trait SchemaListCourseAliasesResponse extends StObject {
   
   /**
     * The course aliases.
     */
-  var aliases: js.UndefOr[js.Array[SchemaCourseAlias]] = js.native
+  var aliases: js.UndefOr[js.Array[SchemaCourseAlias]] = js.undefined
   
   /**
     * Token identifying the next page of results to return. If empty, no
     * further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListCourseAliasesResponse {
   

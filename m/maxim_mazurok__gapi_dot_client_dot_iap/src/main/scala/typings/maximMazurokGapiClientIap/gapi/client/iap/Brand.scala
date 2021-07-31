@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brand extends StObject {
   
   /** Application name displayed on OAuth consent screen. */
-  var applicationTitle: js.UndefOr[String] = js.native
+  var applicationTitle: js.UndefOr[String] = js.undefined
   
   /** Output only. Identifier of the brand. NOTE: GCP project number achieves the same brand identification purpose as only one brand per project can be created. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Whether the brand is only intended for usage inside the G Suite organization only. */
-  var orgInternalOnly: js.UndefOr[Boolean] = js.native
+  var orgInternalOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Support email displayed on the OAuth consent screen. */
-  var supportEmail: js.UndefOr[String] = js.native
+  var supportEmail: js.UndefOr[String] = js.undefined
 }
 object Brand {
   

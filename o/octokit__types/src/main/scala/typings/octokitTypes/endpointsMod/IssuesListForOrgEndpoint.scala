@@ -13,16 +13,14 @@ import typings.octokitTypes.octokitTypesStrings.subscribed
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesListForOrgEndpoint extends StObject {
   
   /**
     * The direction of the sort. Can be either `asc` or `desc`.
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Indicates which sorts of issues to return. Can be one of:
@@ -32,40 +30,40 @@ trait IssuesListForOrgEndpoint extends StObject {
     * \* `subscribed`: Issues you're subscribed to updates for
     * \* `all`: All issues the authenticated user can see, regardless of participation or creation
     */
-  var filter: js.UndefOr[assigned | created | mentioned | subscribed | all] = js.native
+  var filter: js.UndefOr[assigned | created | mentioned | subscribed | all] = js.undefined
   
   /**
     * A list of comma separated label names. Example: `bug,ui,@high`
     */
-  var labels: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Only issues updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
   
   /**
     * What to sort results by. Can be either `created`, `updated`, `comments`.
     */
-  var sort: js.UndefOr[created | updated | comments] = js.native
+  var sort: js.UndefOr[created | updated | comments] = js.undefined
   
   /**
     * Indicates the state of the issues to return. Can be either `open`, `closed`, or `all`.
     */
-  var state: js.UndefOr[open | closed | all] = js.native
+  var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object IssuesListForOrgEndpoint {
   

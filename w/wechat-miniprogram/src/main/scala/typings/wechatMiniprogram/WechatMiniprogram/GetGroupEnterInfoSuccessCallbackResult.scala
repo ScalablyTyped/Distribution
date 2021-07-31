@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupEnterInfoSuccessCallbackResult extends StObject {
   
   /** 敏感数据对应的云 ID，开通[云开发](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)的小程序才会返回，可通过云调用直接获取开放数据，详细见[云调用直接获取开放数据](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html#method-cloud)
     *
     * 最低基础库： `2.7.0` */
-  var cloudID: String = js.native
+  var cloudID: String
   
   /** 包括敏感数据在内的完整转发信息的加密数据，详细见[加密数据解密算法](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html) */
-  var encryptedData: String = js.native
+  var encryptedData: String
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 加密算法的初始向量，详细见[加密数据解密算法](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html) */
-  var iv: String = js.native
+  var iv: String
 }
 object GetGroupEnterInfoSuccessCallbackResult {
   

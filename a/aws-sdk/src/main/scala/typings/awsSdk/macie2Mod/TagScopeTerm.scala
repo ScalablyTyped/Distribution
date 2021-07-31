@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagScopeTerm extends StObject {
   
   /**
     * The operator to use in the condition. Valid operators are EQ (equals) or NE (not equals).
     */
-  var comparator: js.UndefOr[JobComparator] = js.native
+  var comparator: js.UndefOr[JobComparator] = js.undefined
   
   /**
     * The tag key to use in the condition.
     */
-  var key: js.UndefOr[string] = js.native
+  var key: js.UndefOr[string] = js.undefined
   
   /**
     * The tag keys or tag key and value pairs to use in the condition.
     */
-  var tagValues: js.UndefOr[listOfTagValuePair] = js.native
+  var tagValues: js.UndefOr[listOfTagValuePair] = js.undefined
   
   /**
     * The type of object to apply the condition to.
     */
-  var target: js.UndefOr[TagTarget] = js.native
+  var target: js.UndefOr[TagTarget] = js.undefined
 }
 object TagScopeTerm {
   

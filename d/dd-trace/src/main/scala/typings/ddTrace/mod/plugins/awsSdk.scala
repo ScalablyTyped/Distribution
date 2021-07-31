@@ -3,26 +3,26 @@ package typings.ddTrace.mod.plugins
 import typings.ddTrace.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [aws-sdk](https://github.com/aws/aws-sdk-js) module.
   */
-@js.native
-trait awsSdk extends Instrumentation {
+trait awsSdk
+  extends StObject
+     with Instrumentation {
   
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[`1`] = js.native
+  var hooks: js.UndefOr[`1`] = js.undefined
   
   /**
     * Whether to add a suffix to the service name so that each AWS service has its own service name.
     * @default true
     */
-  var splitByAwsService: js.UndefOr[Boolean] = js.native
+  var splitByAwsService: js.UndefOr[Boolean] = js.undefined
 }
 object awsSdk {
   

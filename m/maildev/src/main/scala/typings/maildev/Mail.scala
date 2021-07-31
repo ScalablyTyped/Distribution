@@ -2,24 +2,22 @@ package typings.maildev
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for mail.
   */
-@js.native
 trait Mail extends StObject {
   
   /**
     * Client.
     */
-  var envelope: js.UndefOr[js.Object] = js.native
+  var envelope: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Identifier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Mail {
   

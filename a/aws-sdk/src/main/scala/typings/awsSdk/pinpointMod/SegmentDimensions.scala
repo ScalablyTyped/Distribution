@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDimensions extends StObject {
   
   /**
     * One or more custom attributes to use as criteria for the segment.
     */
-  var Attributes: js.UndefOr[MapOfAttributeDimension] = js.native
+  var Attributes: js.UndefOr[MapOfAttributeDimension] = js.undefined
   
   /**
     * The behavior-based criteria, such as how recently users have used your app, for the segment.
     */
-  var Behavior: js.UndefOr[SegmentBehaviors] = js.native
+  var Behavior: js.UndefOr[SegmentBehaviors] = js.undefined
   
   /**
     * The demographic-based criteria, such as device platform, for the segment.
     */
-  var Demographic: js.UndefOr[SegmentDemographics] = js.native
+  var Demographic: js.UndefOr[SegmentDemographics] = js.undefined
   
   /**
     * The location-based criteria, such as region or GPS coordinates, for the segment.
     */
-  var Location: js.UndefOr[SegmentLocation] = js.native
+  var Location: js.UndefOr[SegmentLocation] = js.undefined
   
   /**
     * One or more custom metrics to use as criteria for the segment.
     */
-  var Metrics: js.UndefOr[MapOfMetricDimension] = js.native
+  var Metrics: js.UndefOr[MapOfMetricDimension] = js.undefined
   
   /**
     * One or more custom user attributes to use as criteria for the segment.
     */
-  var UserAttributes: js.UndefOr[MapOfAttributeDimension] = js.native
+  var UserAttributes: js.UndefOr[MapOfAttributeDimension] = js.undefined
 }
 object SegmentDimensions {
   

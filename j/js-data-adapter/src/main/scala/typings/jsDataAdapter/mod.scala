@@ -5,10 +5,13 @@ import typings.jsData.mod.Mapper
 import typings.jsDataAdapter.anon.TypeofAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("js-data-adapter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("js-data-adapter", "Adapter")
   @js.native
@@ -99,20 +102,20 @@ object mod {
     
     def findAll(mapper: Mapper, query: IDict, opts: IDict): js.Any = js.native
     
-    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[_] = js.native
-    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[_] = js.native
+    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
+    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
     
-    def loadHasMany(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[_] = js.native
-    def loadHasMany(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[_] = js.native
+    def loadHasMany(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasMany(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
     
-    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[_] = js.native
-    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[_] = js.native
+    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
     
-    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[_] = js.native
-    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[_] = js.native
+    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
     
-    def loadHasOne(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[_] = js.native
-    def loadHasOne(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[_] = js.native
+    def loadHasOne(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasOne(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
     
     def log(level: String, args: js.Any*): Unit = js.native
     
@@ -140,47 +143,47 @@ object mod {
   /* static members */
   object Adapter {
     
-    @JSImport("js-data-adapter", "Adapter.extend")
+    @JSImport("js-data-adapter", "Adapter")
     @js.native
-    def extend(): TypeofAdapter = js.native
-    @JSImport("js-data-adapter", "Adapter.extend")
-    @js.native
-    def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: IDict): TypeofAdapter = js.native
-    @JSImport("js-data-adapter", "Adapter.extend")
-    @js.native
-    def extend(instanceProps: IDict): TypeofAdapter = js.native
-    @JSImport("js-data-adapter", "Adapter.extend")
-    @js.native
-    def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def extend(): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[TypeofAdapter]
+    @scala.inline
+    def extend(instanceProps: Unit, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
+    @scala.inline
+    def extend(instanceProps: IDict): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[TypeofAdapter]
+    @scala.inline
+    def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
   }
   
   @JSImport("js-data-adapter", "Response")
   @js.native
-  class Response () extends IDict {
+  class Response ()
+    extends StObject
+       with IDict {
     
     var data: js.Any = js.native
     
     var op: String = js.native
   }
   
-  @JSImport("js-data-adapter", "noop")
-  @js.native
-  def noop(args: js.Any*): js.Promise[_] = js.native
+  @scala.inline
+  def noop(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("js-data-adapter", "noop2")
-  @js.native
-  def noop2(args: js.Any*): js.Promise[_] = js.native
+  @scala.inline
+  def noop2(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("js-data-adapter", "unique")
-  @js.native
-  def unique(array: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def unique(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
-  trait IAdapterOpts extends IDict {
+  trait IAdapterOpts
+    extends StObject
+       with IDict {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object IAdapterOpts {
     

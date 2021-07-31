@@ -3,20 +3,20 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Single assignment
-@js.native
-trait SingleAssignmentDisposable extends IDisposable {
+trait SingleAssignmentDisposable
+  extends StObject
+     with IDisposable {
   
-  var current: IDisposable = js.native
+  var current: IDisposable
   
-  def getDisposable(): IDisposable = js.native
+  def getDisposable(): IDisposable
   
-  var isDisposed: Boolean = js.native
+  var isDisposed: Boolean
   
-  def setDisposable(value: IDisposable): Unit = js.native
+  def setDisposable(value: IDisposable): Unit
 }
 object SingleAssignmentDisposable {
   

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarLegend extends Control {
+trait CalendarLegend
+  extends StObject
+     with Control {
   
   /**
     * Adds some item to the aggregation <code>items</code>.

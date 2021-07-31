@@ -12,7 +12,7 @@ Configurable, input validated routing for koa.
 | Keywords           | joi, koa, router, validate, validator, validation |
 | # releases         | 6 |
 | # dependents       | 26 |
-| # downloads        | 255375 |
+| # downloads        | 236916 |
 | # stars            | 2 |
 
 ## Links

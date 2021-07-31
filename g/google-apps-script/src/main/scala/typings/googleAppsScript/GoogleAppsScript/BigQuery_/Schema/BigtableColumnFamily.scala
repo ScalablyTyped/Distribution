@@ -2,21 +2,19 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigtableColumnFamily extends StObject {
   
-  var columns: js.UndefOr[js.Array[BigtableColumn]] = js.native
+  var columns: js.UndefOr[js.Array[BigtableColumn]] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var familyId: js.UndefOr[String] = js.native
+  var familyId: js.UndefOr[String] = js.undefined
   
-  var onlyReadLatest: js.UndefOr[Boolean] = js.native
+  var onlyReadLatest: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object BigtableColumnFamily {
   

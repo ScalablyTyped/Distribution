@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshIstio extends StObject {
   
   /** Identifier for the mesh in which this Istio service is defined. Corresponds to the mesh_uid metric label in Istio metrics. */
-  var meshUid: js.UndefOr[String] = js.native
+  var meshUid: js.UndefOr[String] = js.undefined
   
   /** The name of the Istio service underlying this service. Corresponds to the destination_service_name metric label in Istio metrics. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /** The namespace of the Istio service underlying this service. Corresponds to the destination_service_namespace metric label in Istio metrics. */
-  var serviceNamespace: js.UndefOr[String] = js.native
+  var serviceNamespace: js.UndefOr[String] = js.undefined
 }
 object MeshIstio {
   

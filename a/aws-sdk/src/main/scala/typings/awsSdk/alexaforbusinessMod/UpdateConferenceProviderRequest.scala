@@ -2,36 +2,34 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConferenceProviderRequest extends StObject {
   
   /**
     * The ARN of the conference provider.
     */
-  var ConferenceProviderArn: Arn = js.native
+  var ConferenceProviderArn: Arn
   
   /**
     * The type of the conference provider.
     */
-  var ConferenceProviderType: typings.awsSdk.alexaforbusinessMod.ConferenceProviderType = js.native
+  var ConferenceProviderType: typings.awsSdk.alexaforbusinessMod.ConferenceProviderType
   
   /**
     * The IP endpoint and protocol for calling.
     */
-  var IPDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IPDialIn] = js.native
+  var IPDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.IPDialIn] = js.undefined
   
   /**
     * The meeting settings for the conference provider.
     */
-  var MeetingSetting: typings.awsSdk.alexaforbusinessMod.MeetingSetting = js.native
+  var MeetingSetting: typings.awsSdk.alexaforbusinessMod.MeetingSetting
   
   /**
     * The information for PSTN conferencing.
     */
-  var PSTNDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PSTNDialIn] = js.native
+  var PSTNDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PSTNDialIn] = js.undefined
 }
 object UpdateConferenceProviderRequest {
   

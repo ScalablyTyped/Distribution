@@ -10,9 +10,9 @@ Render-less container for ID generation
 | ------------------ | :-------------: |
 | Full name          | react-uid |
 | Keywords           | react, uid, counter, context |
-| # releases         | 4 |
-| # dependents       | 69 |
-| # downloads        | 3243894 |
+| # releases         | 3 |
+| # dependents       | 82 |
+| # downloads        | 4003373 |
 | # stars            | 0 |
 
 ## Links

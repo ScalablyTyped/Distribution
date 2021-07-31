@@ -5,7 +5,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libFabricMod {
@@ -13,7 +12,7 @@ object libFabricMod {
   @JSImport("office-ui-fabric-react/lib/Fabric", "Fabric")
   @js.native
   val Fabric: ForwardRefExoticComponent[
-    IFabricProps with RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]
+    IFabricProps & RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]
   ] = js.native
   
   @JSImport("office-ui-fabric-react/lib/Fabric", "FabricBase")

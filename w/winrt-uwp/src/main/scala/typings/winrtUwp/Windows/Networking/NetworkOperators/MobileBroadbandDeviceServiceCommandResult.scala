@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a mobile broadband device service command. */
-@js.native
 trait MobileBroadbandDeviceServiceCommandResult extends StObject {
   
   /** Gets the response data from the command execution on a mobile broadband device service. */
-  var responseData: IBuffer = js.native
+  var responseData: IBuffer
   
   /** Gets the status code of the command execution on a mobile broadband device service. */
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object MobileBroadbandDeviceServiceCommandResult {
   

@@ -2,19 +2,17 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockThemeButton extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
 }
 object Auth0LockThemeButton {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageConfiguration extends StObject {
   
   /**
     * The message that the campaign sends through the ADM (Amazon Device Messaging) channel. If specified, this message overrides the default message.
     */
-  var ADMMessage: js.UndefOr[Message] = js.native
+  var ADMMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The message that the campaign sends through the APNs (Apple Push Notification service) channel. If specified, this message overrides the default message.
     */
-  var APNSMessage: js.UndefOr[Message] = js.native
+  var APNSMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The message that the campaign sends through the Baidu (Baidu Cloud Push) channel. If specified, this message overrides the default message.
     */
-  var BaiduMessage: js.UndefOr[Message] = js.native
+  var BaiduMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The message that the campaign sends through a custom channel, as specified by the delivery configuration (CustomDeliveryConfiguration) settings for the campaign. If specified, this message overrides the default message. 
     */
-  var CustomMessage: js.UndefOr[CampaignCustomMessage] = js.native
+  var CustomMessage: js.UndefOr[CampaignCustomMessage] = js.undefined
   
   /**
     * The default message that the campaign sends through all the channels that are configured for the campaign.
     */
-  var DefaultMessage: js.UndefOr[Message] = js.native
+  var DefaultMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The message that the campaign sends through the email channel. If specified, this message overrides the default message.
     */
-  var EmailMessage: js.UndefOr[CampaignEmailMessage] = js.native
+  var EmailMessage: js.UndefOr[CampaignEmailMessage] = js.undefined
   
   /**
     * The message that the campaign sends through the GCM channel, which enables Amazon Pinpoint to send push notifications through the Firebase Cloud Messaging (FCM), formerly Google Cloud Messaging (GCM), service. If specified, this message overrides the default message.
     */
-  var GCMMessage: js.UndefOr[Message] = js.native
+  var GCMMessage: js.UndefOr[Message] = js.undefined
   
   /**
     * The message that the campaign sends through the SMS channel. If specified, this message overrides the default message.
     */
-  var SMSMessage: js.UndefOr[CampaignSmsMessage] = js.native
+  var SMSMessage: js.UndefOr[CampaignSmsMessage] = js.undefined
 }
 object MessageConfiguration {
   

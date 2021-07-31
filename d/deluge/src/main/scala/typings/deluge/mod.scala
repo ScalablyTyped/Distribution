@@ -5,14 +5,16 @@ import typings.deluge.anon.State
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(deluge_url: String, password: String): Deluge = (^.asInstanceOf[js.Dynamic].apply(deluge_url.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Deluge]
+  
   @JSImport("deluge", JSImport.Namespace)
   @js.native
-  def apply(deluge_url: String, password: String): Deluge = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Deluge extends StObject {
@@ -79,30 +81,29 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait DelugeStats extends StObject {
     
-    var dht_nodes: Double = js.native
+    var dht_nodes: Double
     
-    var download_protocol_rate: Double = js.native
+    var download_protocol_rate: Double
     
-    var download_rate: Double = js.native
+    var download_rate: Double
     
-    var free_space: Double = js.native
+    var free_space: Double
     
-    var has_incoming_connections: Boolean = js.native
+    var has_incoming_connections: Boolean
     
-    var max_download: Double = js.native
+    var max_download: Double
     
-    var max_num_connections: Double = js.native
+    var max_num_connections: Double
     
-    var max_upload: Double = js.native
+    var max_upload: Double
     
-    var num_connections: Double = js.native
+    var num_connections: Double
     
-    var upload_protocol_rate: Double = js.native
+    var upload_protocol_rate: Double
     
-    var upload_rate: Double = js.native
+    var upload_rate: Double
   }
   object DelugeStats {
     
@@ -162,26 +163,25 @@ object mod {
     }
   }
   
-  @js.native
   trait DownloadOptions extends StObject {
     
-    var add_paused: Boolean = js.native
+    var add_paused: Boolean
     
-    var compact_allocation: Boolean = js.native
+    var compact_allocation: Boolean
     
-    var download_location: String = js.native
+    var download_location: String
     
-    var file_priorities: js.Array[_] = js.native
+    var file_priorities: js.Array[js.Any]
     
-    var max_connections: Double = js.native
+    var max_connections: Double
     
-    var max_download_speed: Double = js.native
+    var max_download_speed: Double
     
-    var max_upload_slots: Double = js.native
+    var max_upload_slots: Double
     
-    var max_upload_speed: Double = js.native
+    var max_upload_speed: Double
     
-    var prioritize_first_last_pieces: Boolean = js.native
+    var prioritize_first_last_pieces: Boolean
   }
   object DownloadOptions {
     
@@ -190,7 +190,7 @@ object mod {
       add_paused: Boolean,
       compact_allocation: Boolean,
       download_location: String,
-      file_priorities: js.Array[_],
+      file_priorities: js.Array[js.Any],
       max_connections: Double,
       max_download_speed: Double,
       max_upload_slots: Double,
@@ -214,7 +214,7 @@ object mod {
       def setDownload_location(value: String): Self = StObject.set(x, "download_location", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFile_priorities(value: js.Array[_]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
+      def setFile_priorities(value: js.Array[js.Any]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFile_prioritiesVarargs(value: js.Any*): Self = StObject.set(x, "file_priorities", js.Array(value :_*))
@@ -236,16 +236,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var status: String = js.native
+    var status: String
   }
   object Host {
     
@@ -272,54 +271,53 @@ object mod {
     }
   }
   
-  @js.native
   trait Torrent extends StObject {
     
-    var distributed_copies: Double = js.native
+    var distributed_copies: Double
     
-    var download_payload_rate: Double = js.native
+    var download_payload_rate: Double
     
-    var eta: Double = js.native
+    var eta: Double
     
-    var is_auto_managed: Boolean = js.native
+    var is_auto_managed: Boolean
     
-    var max_download_speed: Double = js.native
+    var max_download_speed: Double
     
-    var max_upload_speed: Double = js.native
+    var max_upload_speed: Double
     
-    var name: String = js.native
+    var name: String
     
-    var num_peers: Double = js.native
+    var num_peers: Double
     
-    var num_seeds: Double = js.native
+    var num_seeds: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var queue: Double = js.native
+    var queue: Double
     
-    var ratio: Double = js.native
+    var ratio: Double
     
-    var save_path: String = js.native
+    var save_path: String
     
-    var seeds_peers_ratio: Double = js.native
+    var seeds_peers_ratio: Double
     
-    var state: String = js.native
+    var state: String
     
-    var time_added: Double = js.native
+    var time_added: Double
     
-    var total_done: Double = js.native
+    var total_done: Double
     
-    var total_peers: Double = js.native
+    var total_peers: Double
     
-    var total_seeds: Double = js.native
+    var total_seeds: Double
     
-    var total_uploaded: Double = js.native
+    var total_uploaded: Double
     
-    var total_wanted: Double = js.native
+    var total_wanted: Double
     
-    var tracker_host: String = js.native
+    var tracker_host: String
     
-    var upload_payload_rate: Double = js.native
+    var upload_payload_rate: Double
   }
   object Torrent {
     
@@ -427,16 +425,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TorrentRecord extends StObject {
     
-    var connected: Boolean = js.native
+    var connected: Boolean
     
-    var filters: State = js.native
+    var filters: State
     
-    var stats: DelugeStats = js.native
+    var stats: DelugeStats
     
-    var torrents: StringDictionary[Torrent] = js.native
+    var torrents: StringDictionary[Torrent]
   }
   object TorrentRecord {
     

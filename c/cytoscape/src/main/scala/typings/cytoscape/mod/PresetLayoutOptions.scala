@@ -3,38 +3,37 @@ package typings.cytoscape.mod
 import typings.cytoscape.cytoscapeStrings.preset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.LayoutOptions because Already inherited */ @js.native
-trait PresetLayoutOptions
-  extends BaseLayoutOptions
+- typings.cytoscape.mod.LayoutOptions because Already inherited */ trait PresetLayoutOptions
+  extends StObject
+     with BaseLayoutOptions
      with AnimatedLayoutOptions {
   
   // whether to fit to viewport
-  var fit: js.UndefOr[Boolean] = js.native
+  var fit: js.UndefOr[Boolean] = js.undefined
   
   @JSName("name")
-  var name_PresetLayoutOptions: preset = js.native
+  var name_PresetLayoutOptions: preset
   
   // padding on fit
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   // the pan level to set (prob want fit = false if set)
-  var pan: js.UndefOr[Double] = js.native
+  var pan: js.UndefOr[Double] = js.undefined
   
   // map of (node id) => (position obj); or function(node){ return somPos; }
-  var positions: js.UndefOr[NodePositionMap | NodePositionFunction] = js.native
+  var positions: js.UndefOr[NodePositionMap | NodePositionFunction] = js.undefined
   
   // the zoom level to set (prob want fit = false if set)
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object PresetLayoutOptions {
   
   @scala.inline
-  def apply(name: preset): PresetLayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): PresetLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = "preset")
     __obj.asInstanceOf[PresetLayoutOptions]
   }
   

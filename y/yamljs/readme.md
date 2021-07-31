@@ -11,8 +11,8 @@ Standalone JavaScript YAML 1.2 Parser & Encoder. Works under node.js and all maj
 | Full name          | yamljs |
 | Keywords           | yaml, json, yaml2json, json2yaml |
 | # releases         | 0 |
-| # dependents       | 1293 |
-| # downloads        | 50071910 |
+| # dependents       | 1314 |
+| # downloads        | 62183479 |
 | # stars            | 64 |
 
 ## Links

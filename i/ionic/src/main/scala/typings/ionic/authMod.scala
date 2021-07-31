@@ -5,7 +5,6 @@ import typings.ionic.definitionsMod.ResourceClientLoad
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authMod {
@@ -32,10 +31,9 @@ object authMod {
     def load(email: String): js.Promise[AuthConnection] = js.native
   }
   
-  @js.native
   trait AuthClientDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
   }
   object AuthClientDeps {
     
@@ -53,10 +51,9 @@ object authMod {
     }
   }
   
-  @js.native
   trait AuthConnection extends StObject {
     
-    val uuid: String = js.native
+    val uuid: String
   }
   object AuthConnection {
     

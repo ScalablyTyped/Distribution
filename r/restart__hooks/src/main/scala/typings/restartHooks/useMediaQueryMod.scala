@@ -2,15 +2,16 @@ package typings.restartHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMediaQueryMod {
   
-  @JSImport("@restart/hooks/cjs/useMediaQuery", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useMediaQuery", JSImport.Namespace)
   @js.native
-  def default(): Boolean = js.native
-  @JSImport("@restart/hooks/cjs/useMediaQuery", JSImport.Default)
-  @js.native
-  def default(query: String): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  @scala.inline
+  def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

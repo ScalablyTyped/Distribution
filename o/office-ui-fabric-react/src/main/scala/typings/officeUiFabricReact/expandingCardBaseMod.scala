@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandingCardBaseMod {
@@ -50,12 +49,11 @@ object expandingCardBaseMod {
     def defaultProps_=(x: CompactCardHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IExpandingCardState extends StObject {
     
-    var firstFrameRendered: Boolean = js.native
+    var firstFrameRendered: Boolean
     
-    var needsScroll: Boolean = js.native
+    var needsScroll: Boolean
   }
   object IExpandingCardState {
     

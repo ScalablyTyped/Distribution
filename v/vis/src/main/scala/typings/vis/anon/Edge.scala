@@ -2,16 +2,14 @@ package typings.vis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
-  var edge: js.UndefOr[Boolean] = js.native
+  var edge: js.UndefOr[Boolean] = js.undefined
   
   // please note, chosen.edge could be also a function. This case is not represented here
-  var label: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[Boolean] = js.undefined
 }
 object Edge {
   

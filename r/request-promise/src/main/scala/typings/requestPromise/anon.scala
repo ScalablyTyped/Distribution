@@ -6,7 +6,6 @@ import typings.bluebird.mod.Constructor
 import typings.bluebird.mod.Resolvable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,12 +14,12 @@ object anon {
   trait FnCall[T] extends StObject {
     
     def apply[U](): Bluebird[U] = js.native
-    def apply[U](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
     def apply[U](onFulfill: js.Function1[/* value */ T, Resolvable[U]]): Bluebird[U] = js.native
     def apply[U](
       onFulfill: js.Function1[/* value */ T, Resolvable[U]],
       onReject: js.Function1[/* error */ js.Any, Resolvable[U]]
     ): Bluebird[U] = js.native
+    def apply[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
     def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
   }
   

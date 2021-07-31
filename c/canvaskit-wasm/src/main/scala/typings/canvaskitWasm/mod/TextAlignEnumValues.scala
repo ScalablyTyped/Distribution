@@ -2,23 +2,23 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextAlignEnumValues extends EmbindEnum {
+trait TextAlignEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Center: TextAlign = js.native
+  var Center: TextAlign
   
-  var End: TextAlign = js.native
+  var End: TextAlign
   
-  var Justify: TextAlign = js.native
+  var Justify: TextAlign
   
-  var Left: TextAlign = js.native
+  var Left: TextAlign
   
-  var Right: TextAlign = js.native
+  var Right: TextAlign
   
-  var Start: TextAlign = js.native
+  var Start: TextAlign
 }
 object TextAlignEnumValues {
   

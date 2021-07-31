@@ -2,7 +2,6 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "GoogleAuthProvider")
@@ -27,19 +26,14 @@ object GoogleAuthProvider {
   @scala.inline
   def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
   
-  @JSImport("@firebase/auth-types", "GoogleAuthProvider.credential")
-  @js.native
-  def credential(): AuthCredential = js.native
-  @JSImport("@firebase/auth-types", "GoogleAuthProvider.credential")
-  @js.native
-  def credential(idToken: js.UndefOr[scala.Nothing], accessToken: String): AuthCredential = js.native
-  @JSImport("@firebase/auth-types", "GoogleAuthProvider.credential")
-  @js.native
-  def credential(idToken: String): AuthCredential = js.native
-  @JSImport("@firebase/auth-types", "GoogleAuthProvider.credential")
-  @js.native
-  def credential(idToken: String, accessToken: String): AuthCredential = js.native
-  @JSImport("@firebase/auth-types", "GoogleAuthProvider.credential")
-  @js.native
-  def credential(idToken: Null, accessToken: String): AuthCredential = js.native
+  @scala.inline
+  def credential(): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[AuthCredential]
+  @scala.inline
+  def credential(idToken: String): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[AuthCredential]
+  @scala.inline
+  def credential(idToken: String, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  @scala.inline
+  def credential(idToken: Null, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  @scala.inline
+  def credential(idToken: Unit, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
 }

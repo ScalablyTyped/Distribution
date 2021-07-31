@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotificationRulesFilter extends StObject {
   
   /**
     * The name of the attribute you want to use to filter the returned notification rules.
     */
-  var Name: ListNotificationRulesFilterName = js.native
+  var Name: ListNotificationRulesFilterName
   
   /**
     * The value of the attribute you want to use to filter the returned notification rules. For example, if you specify filtering by RESOURCE in Name, you might specify the ARN of a pipeline in AWS CodePipeline for the value.
     */
-  var Value: ListNotificationRulesFilterValue = js.native
+  var Value: ListNotificationRulesFilterValue
 }
 object ListNotificationRulesFilter {
   

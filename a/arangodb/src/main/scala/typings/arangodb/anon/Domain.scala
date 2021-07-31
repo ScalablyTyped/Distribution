@@ -3,25 +3,23 @@ package typings.arangodb.anon
 import typings.arangodb.ArangoDB.HashAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var algorithm: js.UndefOr[HashAlgorithm] = js.native
+  var algorithm: js.UndefOr[HashAlgorithm] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object Domain {
   

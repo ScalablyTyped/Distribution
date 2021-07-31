@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait utils extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait utils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatDateLabel)
     */
-  def formatDateLabel(value: Double): String = js.native
+  def formatDateLabel(value: Double): String
   
   /**
     * Computes and returns standard deviation values based on the given average and standard deviation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#getDeviationValues)
     */
-  def getDeviationValues(standardDeviation: Double, average: Double, count: Double): js.Array[Double] = js.native
+  def getDeviationValues(standardDeviation: Double, average: Double, count: Double): js.Array[Double]
 }
 object utils {
   

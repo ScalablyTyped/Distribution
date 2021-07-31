@@ -12,7 +12,7 @@ A test framework for Node-RED nodes
 | Keywords           | test, iot, node-red |
 | # releases         | 7 |
 | # dependents       | 4 |
-| # downloads        | 68829 |
+| # downloads        | 83126 |
 | # stars            | 0 |
 
 ## Links

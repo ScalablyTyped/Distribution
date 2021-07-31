@@ -2,18 +2,16 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayResponses extends StObject {
   
   /**
     * Returns the entire collection, because of no pagination support.
     */
-  var items: js.UndefOr[ListOfGatewayResponse] = js.native
+  var items: js.UndefOr[ListOfGatewayResponse] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object GatewayResponses {
   

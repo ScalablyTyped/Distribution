@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Locations$Autoscalingpolicies")
@@ -31,7 +30,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def create(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(params: ParamsResourceProjectsLocationsAutoscalingpoliciesCreate): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesCreate,
@@ -64,7 +63,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsAutoscalingpoliciesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesDelete,
@@ -96,7 +95,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def get(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(params: ParamsResourceProjectsLocationsAutoscalingpoliciesGet): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesGet,
@@ -129,7 +128,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsAutoscalingpoliciesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesGetiampolicy,
@@ -163,7 +162,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def list(): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAutoscalingPoliciesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsAutoscalingpoliciesList): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesList,
@@ -197,7 +196,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsAutoscalingpoliciesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesSetiampolicy,
@@ -234,7 +233,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsAutoscalingpoliciesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesTestiampermissions,
@@ -271,7 +270,7 @@ class ResourceProjectsLocationsAutoscalingpolicies protected () extends StObject
     */
   def update(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(params: ParamsResourceProjectsLocationsAutoscalingpoliciesUpdate): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(
     params: ParamsResourceProjectsLocationsAutoscalingpoliciesUpdate,

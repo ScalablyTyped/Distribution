@@ -10,7 +10,6 @@ import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesProviderStylesProviderMod extends Shortcut {
@@ -23,25 +22,24 @@ object stylesProviderStylesProviderMod extends Shortcut {
   @js.native
   val StylesContext: Context[StylesOptions] = js.native
   
-  @js.native
   trait StylesOptions extends StObject {
     
-    var disableGeneration: js.UndefOr[Boolean] = js.native
+    var disableGeneration: js.UndefOr[Boolean] = js.undefined
     
-    var generateClassName: js.UndefOr[GenerateId] = js.native
+    var generateClassName: js.UndefOr[GenerateId] = js.undefined
     
-    var injectFirst: js.UndefOr[Boolean] = js.native
+    var injectFirst: js.UndefOr[Boolean] = js.undefined
     
-    var jss: js.UndefOr[Jss] = js.native
-    
-    // TODO need info @oliviertassinari
-    var sheetsCache: js.UndefOr[js.Object] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
     
     // TODO need info @oliviertassinari
-    var sheetsManager: js.UndefOr[js.Object] = js.native
+    var sheetsCache: js.UndefOr[js.Object] = js.undefined
     
     // TODO need info @oliviertassinari
-    var sheetsRegistry: js.UndefOr[js.Object] = js.native
+    var sheetsManager: js.UndefOr[js.Object] = js.undefined
+    
+    // TODO need info @oliviertassinari
+    var sheetsRegistry: js.UndefOr[js.Object] = js.undefined
   }
   object StylesOptions {
     
@@ -98,10 +96,11 @@ object stylesProviderStylesProviderMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StylesProviderProps extends StylesOptions {
+  trait StylesProviderProps
+    extends StObject
+       with StylesOptions {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object StylesProviderProps {
     

@@ -2,28 +2,26 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureInformation extends StObject {
   
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
-  var documentation: js.UndefOr[String | MarkupContent] = js.native
+  var documentation: js.UndefOr[String | MarkupContent] = js.undefined
   
   /**
     * The label of this signature. Will be shown in
     * the UI.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The parameters of this signature.
     */
-  var parameters: js.UndefOr[js.Array[ParameterInformation]] = js.native
+  var parameters: js.UndefOr[js.Array[ParameterInformation]] = js.undefined
 }
 object SignatureInformation {
   
@@ -33,12 +31,14 @@ object SignatureInformation {
     __obj.asInstanceOf[SignatureInformation]
   }
   
-  @JSImport("vscode-languageserver-types", "SignatureInformation.create")
+  @JSImport("vscode-languageserver-types", "SignatureInformation")
   @js.native
-  def create(label: String, documentation: js.UndefOr[scala.Nothing], parameters: ParameterInformation*): SignatureInformation = js.native
-  @JSImport("vscode-languageserver-types", "SignatureInformation.create")
-  @js.native
-  def create(label: String, documentation: String, parameters: ParameterInformation*): SignatureInformation = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(label: String, documentation: String, parameters: ParameterInformation*): SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SignatureInformation]
+  @scala.inline
+  def create(label: String, documentation: Unit, parameters: ParameterInformation*): SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SignatureInformation]
   
   @scala.inline
   implicit class SignatureInformationMutableBuilder[Self <: SignatureInformation] (val x: Self) extends AnyVal {

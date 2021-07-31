@@ -2,17 +2,15 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableauEvent extends StObject {
   
   /** Gets the name of the event, which is a string, but is also one of the items in the TableauEventName enum. */
-  def getEventName(): TableauEventName = js.native
+  def getEventName(): TableauEventName
   
   /** Gets the Viz object associated with the event. */
-  def getViz(): Viz = js.native
+  def getViz(): Viz
 }
 object TableauEvent {
   

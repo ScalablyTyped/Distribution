@@ -22,7 +22,6 @@ import typings.screeps.screepsStrings.terrain
 import typings.screeps.screepsStrings.tombstone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -93,27 +92,21 @@ trait Room extends StObject {
     * @returns The name of a new flag, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
   def createFlag(pos: RoomPosition): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(
-    pos: RoomPosition,
-    name: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[ColorConstant],
-    secondaryColor: ColorConstant
-  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: RoomPosition, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: RoomPosition, name: String, color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(
-    pos: Pos,
-    name: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[ColorConstant],
-    secondaryColor: ColorConstant
-  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Pos, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Pos, name: String, color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param x The X position.
@@ -130,23 +123,13 @@ trait Room extends StObject {
     * @returns The name of a new flag, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
   def createFlag(x: Double, y: Double): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(
-    x: Double,
-    y: Double,
-    name: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[ColorConstant],
-    secondaryColor: ColorConstant
-  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(x: Double, y: Double, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(
-    x: Double,
-    y: Double,
-    name: String,
-    color: js.UndefOr[ColorConstant],
-    secondaryColor: ColorConstant
-  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   
   /**
     * Total amount of energy available in all spawns and extensions in the room.
@@ -305,8 +288,8 @@ trait Room extends StObject {
   def lookForAtArea(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Deposit, deposit] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], energy] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[_, exit] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[_, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[js.Any, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[js.Any, exit] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Flag, flag] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Flag, flag] = js.native
   def lookForAtArea(`type`: mineral, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Mineral[MineralConstant], mineral] = js.native
@@ -346,7 +329,7 @@ trait Room extends StObject {
   @JSName("lookForAtArea")
   def lookForAtArea_energy(`type`: energy, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[_, exit] = js.native
+  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[js.Any, exit] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_flag(`type`: flag, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Flag, flag] = js.native
   @JSName("lookForAtArea")
@@ -406,11 +389,11 @@ trait Room extends StObject {
   @JSName("lookForAt")
   def lookForAt_energy(`type`: energy, x: Double, y: Double): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[js.Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[js.Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[js.Any] = js.native
   @JSName("lookForAt")
   def lookForAt_flag(`type`: flag, target: HasRoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")

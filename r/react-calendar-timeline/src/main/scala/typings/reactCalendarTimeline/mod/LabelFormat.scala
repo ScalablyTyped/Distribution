@@ -2,23 +2,21 @@ package typings.reactCalendarTimeline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelFormat extends StObject {
   
-  var day: TimeFormat = js.native
+  var day: TimeFormat
   
-  var hour: TimeFormat = js.native
+  var hour: TimeFormat
   
-  var minute: TimeFormat = js.native
+  var minute: TimeFormat
   
-  var month: TimeFormat = js.native
+  var month: TimeFormat
   
-  var week: TimeFormat = js.native
+  var week: TimeFormat
   
-  var year: TimeFormat = js.native
+  var year: TimeFormat
 }
 object LabelFormat {
   

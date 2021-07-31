@@ -2,51 +2,49 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceSharePermissionSummary extends StObject {
   
   /**
     * The ARN of the permission.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the permission was created.
     */
-  var creationTime: js.UndefOr[DateTime] = js.native
+  var creationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The identifier for the version of the permission that is set as the default version.
     */
-  var defaultVersion: js.UndefOr[Boolean] = js.native
+  var defaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time when the permission was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.native
+  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the permission.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of resource to which the permission applies.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The current status of the permission.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the version of the permission.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ResourceSharePermissionSummary {
   

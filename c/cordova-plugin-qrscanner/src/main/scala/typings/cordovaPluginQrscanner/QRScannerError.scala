@@ -2,7 +2,6 @@ package typings.cordovaPluginQrscanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,23 +28,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 *    7 | `LIGHT_UNAVAILABLE`         | The device light is unavailable because it doesn't exist or is otherwise unable to be configured.
 *    8 | `OPEN_SETTINGS_UNAVAILABLE` | The device is unable to open settings.
 */
-@js.native
 trait QRScannerError extends StObject {
   
   /**
     * A simple message describing this QRScannerError.
     */
-  var _message: String = js.native
+  var _message: String
   
   /**
     * The standard number identifying the type of this QRScannerError.
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     * The standard string identifying the type of this QRScannerError.
     */
-  var name: String = js.native
+  var name: String
 }
 object QRScannerError {
   

@@ -8,23 +8,22 @@ import typings.storybookApi.mod.ModuleFn
 import typings.storybookApi.storeMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonsMod {
   
-  @JSImport("@storybook/api/dist/modules/addons", "ensurePanel")
+  @JSImport("@storybook/api/dist/modules/addons", JSImport.Namespace)
   @js.native
-  def ensurePanel(panels: Panels): String = js.native
-  @JSImport("@storybook/api/dist/modules/addons", "ensurePanel")
-  @js.native
-  def ensurePanel(panels: Panels, selectedPanel: js.UndefOr[scala.Nothing], currentPanel: String): String = js.native
-  @JSImport("@storybook/api/dist/modules/addons", "ensurePanel")
-  @js.native
-  def ensurePanel(panels: Panels, selectedPanel: String): String = js.native
-  @JSImport("@storybook/api/dist/modules/addons", "ensurePanel")
-  @js.native
-  def ensurePanel(panels: Panels, selectedPanel: String, currentPanel: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ensurePanel(panels: Panels): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def ensurePanel(panels: Panels, selectedPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def ensurePanel(panels: Panels, selectedPanel: String, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def ensurePanel(panels: Panels, selectedPanel: Unit, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@storybook/api/dist/modules/addons", "init")
   @js.native
@@ -37,49 +36,58 @@ object addonsMod {
   object types extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[types with String] = js.native
+    def apply(value: String): js.UndefOr[types & String] = js.native
     
     @js.native
-    sealed trait NOTES_ELEMENT extends types
-    /* "notes-element" */ val NOTES_ELEMENT: typings.storybookApi.addonsMod.types.NOTES_ELEMENT with String = js.native
+    sealed trait NOTES_ELEMENT
+      extends StObject
+         with types
+    /* "notes-element" */ val NOTES_ELEMENT: typings.storybookApi.addonsMod.types.NOTES_ELEMENT & String = js.native
     
     @js.native
-    sealed trait PANEL extends types
-    /* "panel" */ val PANEL: typings.storybookApi.addonsMod.types.PANEL with String = js.native
+    sealed trait PANEL
+      extends StObject
+         with types
+    /* "panel" */ val PANEL: typings.storybookApi.addonsMod.types.PANEL & String = js.native
     
     @js.native
-    sealed trait PREVIEW extends types
-    /* "preview" */ val PREVIEW: typings.storybookApi.addonsMod.types.PREVIEW with String = js.native
+    sealed trait PREVIEW
+      extends StObject
+         with types
+    /* "preview" */ val PREVIEW: typings.storybookApi.addonsMod.types.PREVIEW & String = js.native
     
     @js.native
-    sealed trait TAB extends types
-    /* "tab" */ val TAB: typings.storybookApi.addonsMod.types.TAB with String = js.native
+    sealed trait TAB
+      extends StObject
+         with types
+    /* "tab" */ val TAB: typings.storybookApi.addonsMod.types.TAB & String = js.native
     
     @js.native
-    sealed trait TOOL extends types
-    /* "tool" */ val TOOL: typings.storybookApi.addonsMod.types.TOOL with String = js.native
+    sealed trait TOOL
+      extends StObject
+         with types
+    /* "tool" */ val TOOL: typings.storybookApi.addonsMod.types.TOOL & String = js.native
   }
   
-  @js.native
   trait Addon extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `match`: js.UndefOr[js.Function1[/* matchOptions */ MatchOptions, Boolean]] = js.native
+    var `match`: js.UndefOr[js.Function1[/* matchOptions */ MatchOptions, Boolean]] = js.undefined
     
-    var paramKey: js.UndefOr[String] = js.native
+    var paramKey: js.UndefOr[String] = js.undefined
     
-    def render(renderOptions: RenderOptions): ReactElement = js.native
+    def render(renderOptions: RenderOptions): ReactElement
     
-    var route: js.UndefOr[js.Function1[/* routeOptions */ RouteOptions, String]] = js.native
+    var route: js.UndefOr[js.Function1[/* routeOptions */ RouteOptions, String]] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: js.UndefOr[Types_] = js.native
+    var `type`: js.UndefOr[Types_] = js.undefined
   }
   object Addon {
     
@@ -144,16 +152,15 @@ object addonsMod {
   
   type Collection[T] = StringDictionary[T]
   
-  @js.native
   trait MatchOptions extends StObject {
     
-    var location: WindowLocation[LocationState] = js.native
+    var location: WindowLocation[LocationState]
     
-    var path: String = js.native
+    var path: String
     
-    var storyId: String = js.native
+    var storyId: String
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
   }
   object MatchOptions {
     
@@ -185,12 +192,11 @@ object addonsMod {
   
   type Panels = Collection[Addon]
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var key: String = js.native
+    var key: String
   }
   object RenderOptions {
     
@@ -211,16 +217,15 @@ object addonsMod {
     }
   }
   
-  @js.native
   trait RouteOptions extends StObject {
     
-    var location: WindowLocation[LocationState] = js.native
+    var location: WindowLocation[LocationState]
     
-    var path: String = js.native
+    var path: String
     
-    var storyId: String = js.native
+    var storyId: String
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
   }
   object RouteOptions {
     
@@ -280,7 +285,7 @@ object addonsMod {
     - typings.storybookApi.storybookApiStrings.info
     - typings.storybookApi.storybookApiStrings.settings
     - typings.storybookApi.storybookApiStrings.page
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - java.lang.String
   */
   type ViewMode = js.UndefOr[_ViewMode | String]

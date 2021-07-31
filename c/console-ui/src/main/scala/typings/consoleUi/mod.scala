@@ -4,7 +4,6 @@ import typings.consoleUi.anon.Ci
 import typings.inquirer.mod.QuestionCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,9 @@ object mod {
     */
   @JSImport("console-ui", JSImport.Namespace)
   @js.native
-  class ^ () extends UI {
+  class ^ ()
+    extends StObject
+       with UI {
     def this(options: Ci) = this()
   }
   
@@ -70,9 +71,9 @@ object mod {
       * will be prepended with DEPRECATION text when printed.
       */
     def writeDeprecateLine(message: String): Unit = js.native
-    def writeDeprecateLine(message: String, test: js.UndefOr[scala.Nothing], prepend: Boolean): Unit = js.native
     def writeDeprecateLine(message: String, test: Boolean): Unit = js.native
     def writeDeprecateLine(message: String, test: Boolean, prepend: Boolean): Unit = js.native
+    def writeDeprecateLine(message: String, test: Unit, prepend: Boolean): Unit = js.native
     
     /**
       * Unified mechanism to an Error to the console.
@@ -99,9 +100,9 @@ object mod {
       * will be prepended with WARNING text when printed.
       */
     def writeWarnLine(message: String): Unit = js.native
-    def writeWarnLine(message: String, test: js.UndefOr[scala.Nothing], prepend: Boolean): Unit = js.native
     def writeWarnLine(message: String, test: Boolean): Unit = js.native
     def writeWarnLine(message: String, test: Boolean, prepend: Boolean): Unit = js.native
+    def writeWarnLine(message: String, test: Unit, prepend: Boolean): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

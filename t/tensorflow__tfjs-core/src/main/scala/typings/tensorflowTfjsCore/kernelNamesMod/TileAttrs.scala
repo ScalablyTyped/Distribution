@@ -2,13 +2,11 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileAttrs extends StObject {
   
-  var reps: js.Array[Double] = js.native
+  var reps: js.Array[Double]
 }
 object TileAttrs {
   

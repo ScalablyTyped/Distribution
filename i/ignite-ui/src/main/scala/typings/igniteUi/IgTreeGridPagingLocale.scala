@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridPagingLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgTreeGridPagingLocale
     * Sets/gets the text message shown while loading content of the context row(while processing breadcrumb/immediate parent row). It is set via $.html(). If set to null loading message is not shown.
     *
     */
-  var contextRowLoadingText: js.UndefOr[String] = js.native
+  var contextRowLoadingText: js.UndefOr[String] = js.undefined
   
   /**
     * Sets/gets the content of the context row when the first record in the page is root(hasn't ancestors) record. It is set via $.html()
     *
     */
-  var contextRowRootText: js.UndefOr[String] = js.native
+  var contextRowRootText: js.UndefOr[String] = js.undefined
 }
 object IgTreeGridPagingLocale {
   

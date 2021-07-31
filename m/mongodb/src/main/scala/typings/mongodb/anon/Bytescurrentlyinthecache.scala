@@ -2,57 +2,55 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bytescurrentlyinthecache extends StObject {
   
-  var `bytes currently in the cache`: Double = js.native
+  var `bytes currently in the cache`: Double
   
-  var `bytes read into cache`: Double = js.native
+  var `bytes read into cache`: Double
   
-  var `bytes written from cache`: Double = js.native
+  var `bytes written from cache`: Double
   
-  var `checkpoint blocked page eviction`: Double = js.native
+  var `checkpoint blocked page eviction`: Double
   
-  var `data source pages selected for eviction unable to be evicted`: Double = js.native
+  var `data source pages selected for eviction unable to be evicted`: Double
   
-  var `hazard pointer blocked page eviction`: Double = js.native
+  var `hazard pointer blocked page eviction`: Double
   
-  var `in-memory page passed criteria to be split`: Double = js.native
+  var `in-memory page passed criteria to be split`: Double
   
-  var `in-memory page splits`: Double = js.native
+  var `in-memory page splits`: Double
   
-  var `internal pages evicted`: Double = js.native
+  var `internal pages evicted`: Double
   
-  var `internal pages split during eviction`: Double = js.native
+  var `internal pages split during eviction`: Double
   
-  var `leaf pages split during eviction`: Double = js.native
+  var `leaf pages split during eviction`: Double
   
-  var `modified pages evicted`: Double = js.native
+  var `modified pages evicted`: Double
   
-  var `overflow pages read into cache`: Double = js.native
+  var `overflow pages read into cache`: Double
   
-  var `overflow values cached in memory`: Double = js.native
+  var `overflow values cached in memory`: Double
   
-  var `page split during eviction deepened the tree`: Double = js.native
+  var `page split during eviction deepened the tree`: Double
   
-  var `page written requiring lookaside records`: Double = js.native
+  var `page written requiring lookaside records`: Double
   
-  var `pages read into cache`: Double = js.native
+  var `pages read into cache`: Double
   
-  var `pages read into cache requiring lookaside entries`: Double = js.native
+  var `pages read into cache requiring lookaside entries`: Double
   
-  var `pages requested from the cache`: Double = js.native
+  var `pages requested from the cache`: Double
   
-  var `pages written from cache`: Double = js.native
+  var `pages written from cache`: Double
   
-  var `pages written requiring in-memory restoration`: Double = js.native
+  var `pages written requiring in-memory restoration`: Double
   
-  var `tracked dirty bytes in the cache`: Double = js.native
+  var `tracked dirty bytes in the cache`: Double
   
-  var `unmodified pages evicted`: Double = js.native
+  var `unmodified pages evicted`: Double
 }
 object Bytescurrentlyinthecache {
   

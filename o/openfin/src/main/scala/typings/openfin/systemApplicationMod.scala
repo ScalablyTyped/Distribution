@@ -2,19 +2,17 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemApplicationMod {
   
-  @js.native
   trait ApplicationInfo extends StObject {
     
-    var isRunning: Boolean = js.native
+    var isRunning: Boolean
     
-    var parentUuid: js.UndefOr[String] = js.native
+    var parentUuid: js.UndefOr[String] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object ApplicationInfo {
     

@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickerIOSItemProps extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var textColor: js.UndefOr[ProcessedColorValue] = js.native
+  var textColor: js.UndefOr[ProcessedColorValue] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object PickerIOSItemProps {
   

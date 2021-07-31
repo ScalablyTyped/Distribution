@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var t2 = new KJUR.asn1.x509.Time{'type': 'gen',  'str': '20130508235959Z'} // GeneralizedTime
   */
 @js.native
-trait Time extends ASN1Object {
+trait Time
+  extends StObject
+     with ASN1Object {
   
   def setTimeParams(timeParams: String): Unit = js.native
   def setTimeParams(timeParams: DateParam): Unit = js.native

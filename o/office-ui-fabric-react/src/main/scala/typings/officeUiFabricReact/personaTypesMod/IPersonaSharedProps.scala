@@ -11,161 +11,161 @@ import typings.std.HTMLDivElement
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPersonaSharedProps extends HTMLAttributes[PersonaBase | PersonaCoinBase | HTMLDivElement] {
+trait IPersonaSharedProps
+  extends StObject
+     with HTMLAttributes[PersonaBase | PersonaCoinBase | HTMLDivElement] {
   
   /**
     * Whether initials are calculated for phone numbers and number sequences.
     * Example: Set property to true to get initials for project names consisting of numbers only.
     * @defaultvalue false
     */
-  var allowPhoneInitials: js.UndefOr[Boolean] = js.native
+  var allowPhoneInitials: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional HTML element props for Persona coin.
     */
-  var coinProps: js.UndefOr[IPersonaCoinProps] = js.native
+  var coinProps: js.UndefOr[IPersonaCoinProps] = js.undefined
   
   /**
     * Optional custom persona coin size in pixel.
     */
-  var coinSize: js.UndefOr[Double] = js.native
+  var coinSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to not render persona details, and just render the persona image/initials.
     */
-  var hidePersonaDetails: js.UndefOr[Boolean] = js.native
+  var hidePersonaDetails: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Alt text for the image to use. Defaults to an empty string.
     */
-  var imageAlt: js.UndefOr[String] = js.native
+  var imageAlt: js.UndefOr[String] = js.undefined
   
   /**
     * The user's initials to display in the image area when there is no image.
     * @defaultvalue [Derived from text]
     */
-  var imageInitials: js.UndefOr[String] = js.native
+  var imageInitials: js.UndefOr[String] = js.undefined
   
   /**
     * If true, adds the css class 'is-fadeIn' to the image.
     */
-  var imageShouldFadeIn: js.UndefOr[Boolean] = js.native
+  var imageShouldFadeIn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until
     * it is successfully loaded. This disables imageShouldFadeIn.
     * @defaultvalue false
     */
-  var imageShouldStartVisible: js.UndefOr[Boolean] = js.native
+  var imageShouldStartVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Url to the image to use, should be a square aspect ratio and big enough to fit in the image area.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The background color when the user's initials are displayed.
     * @defaultvalue [Derived from text]
     */
-  var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.native
+  var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.undefined
   
   /**
     * This flag can be used to signal the persona is out of office.
     * This will change the way the presence icon looks for statuses that support dual-presence.
     */
-  var isOutOfOffice: js.UndefOr[Boolean] = js.native
+  var isOutOfOffice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional callback for when loading state of the photo changes
     */
-  var onPhotoLoadingStateChange: js.UndefOr[js.Function1[/* newImageLoadState */ ImageLoadState, Unit]] = js.native
+  var onPhotoLoadingStateChange: js.UndefOr[js.Function1[/* newImageLoadState */ ImageLoadState, Unit]] = js.undefined
   
   /**
     * Optional custom renderer for the coin
     * @deprecated Use `onRenderPersonaCoin` for custom rendering instead
     */
-  var onRenderCoin: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.native
+  var onRenderCoin: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.undefined
   
   /**
     * Optional custom renderer for the initials
     */
-  var onRenderInitials: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.native
+  var onRenderInitials: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.undefined
   
   /**
     * Optional custom renderer for the coin
     */
-  var onRenderPersonaCoin: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.native
+  var onRenderPersonaCoin: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.undefined
   
   /**
     * Optional text to display, usually a custom message set. The optional text will only be shown when using size100.
     */
-  var optionalText: js.UndefOr[String] = js.native
+  var optionalText: js.UndefOr[String] = js.undefined
   
   /**
     * Presence of the person to display - will not display presence if undefined.
     * @defaultvalue PersonaPresence.none
     */
-  var presence: js.UndefOr[PersonaPresence] = js.native
+  var presence: js.UndefOr[PersonaPresence] = js.undefined
   
   /** The colors to be used for the presence-icon and it's background */
-  var presenceColors: js.UndefOr[Available] = js.native
+  var presenceColors: js.UndefOr[Available] = js.undefined
   
   /**
     * Presence title to be shown as a tooltip on hover over the presence icon.
     */
-  var presenceTitle: js.UndefOr[String] = js.native
+  var presenceTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Primary text to display, usually the name of the person.
     * @deprecated Use `text` instead.
     */
-  var primaryText: js.UndefOr[String] = js.native
+  var primaryText: js.UndefOr[String] = js.undefined
   
   /**
     * Secondary text to display, usually the role of the user.
     */
-  var secondaryText: js.UndefOr[String] = js.native
+  var secondaryText: js.UndefOr[String] = js.undefined
   
   /**
     * If true renders the initials while the image is loading.
     * This only applies when an imageUrl is provided.
     * @defaultvalue false
     */
-  var showInitialsUntilImageLoads: js.UndefOr[Boolean] = js.native
+  var showInitialsUntilImageLoads: js.UndefOr[Boolean] = js.undefined
   
-  var showSecondaryText: js.UndefOr[Boolean] = js.native
+  var showSecondaryText: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, show the special coin for unknown persona.
     * It has '?' in place of initials, with static font and background colors
     */
-  var showUnknownPersonaCoin: js.UndefOr[Boolean] = js.native
+  var showUnknownPersonaCoin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Decides the size of the control.
     * @defaultvalue PersonaSize.size48
     */
-  var size: js.UndefOr[PersonaSize] = js.native
+  var size: js.UndefOr[PersonaSize] = js.undefined
   
   /**
     * Tertiary text to display, usually the status of the user.
     * The tertiary text will only be shown when using size72 or size100.
     */
-  var tertiaryText: js.UndefOr[String] = js.native
+  var tertiaryText: js.UndefOr[String] = js.undefined
   
   /**
     * Primary text to display, usually the name of the person.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Theme provided by High-Order Component.
     */
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
 }
 object IPersonaSharedProps {
   

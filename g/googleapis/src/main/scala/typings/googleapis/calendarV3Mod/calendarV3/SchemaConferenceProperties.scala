@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaConferenceProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaConferenceProperties extends StObject {
     * The possible values are:   - &quot;eventHangout&quot;  -
     * &quot;eventNamedHangout&quot;  - &quot;hangoutsMeet&quot;  Optional.
     */
-  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.native
+  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaConferenceProperties {
   

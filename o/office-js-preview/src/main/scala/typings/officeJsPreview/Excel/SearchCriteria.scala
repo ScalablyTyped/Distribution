@@ -4,7 +4,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Backwards
 import typings.officeJsPreview.officeJsPreviewStrings.Forward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait SearchCriteria extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait SearchCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var completeMatch: js.UndefOr[Boolean] = js.native
+  var completeMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait SearchCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait SearchCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var searchDirection: js.UndefOr[SearchDirection | Forward | Backwards] = js.native
+  var searchDirection: js.UndefOr[SearchDirection | Forward | Backwards] = js.undefined
 }
 object SearchCriteria {
   

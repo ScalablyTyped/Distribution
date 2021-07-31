@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAlignString extends StObject {
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var textAlign: String = js.native
+  var textAlign: String
 }
 object TextAlignString {
   

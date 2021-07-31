@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPRange extends StObject {
   
   /**
     * The IP range in Classless Inter-Domain Routing (CIDR) notation.
     */
-  var CIDRIP: js.UndefOr[String] = js.native
+  var CIDRIP: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the IP range, for example, "authorized".
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags for the IP range.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object IPRange {
   

@@ -2,15 +2,13 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Create extends StObject {
   
-  var create: Boolean = js.native
+  var create: Boolean
   
-  var overwrite: Boolean = js.native
+  var overwrite: Boolean
 }
 object Create {
   

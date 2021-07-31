@@ -5,7 +5,6 @@ import typings.std.PointerEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Pointer")
@@ -29,7 +28,6 @@ class Pointer protected () extends StObject {
     */
   def destroy(): Unit = js.native
   
-  def findNearestKDPoint(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
     * algorithm.
@@ -47,6 +45,7 @@ class Pointer protected () extends StObject {
     * @return The point closest to given coordinates.
     */
   def findNearestKDPoint(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: Unit, e: PointerEventObject): js.UndefOr[Point] = js.native
   
   /**
     * Return the cached chartPosition if it is available on the Pointer,
@@ -111,7 +110,7 @@ class Pointer protected () extends StObject {
     *        possible.
     */
   def reset(): Unit = js.native
-  def reset(allowMove: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
   def reset(allowMove: Boolean): Unit = js.native
   def reset(allowMove: Boolean, delay: Double): Unit = js.native
+  def reset(allowMove: Unit, delay: Double): Unit = js.native
 }

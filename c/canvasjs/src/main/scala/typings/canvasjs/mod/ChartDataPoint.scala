@@ -3,25 +3,25 @@ package typings.canvasjs.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartDataPoint extends ChartDataCommon {
+trait ChartDataPoint
+  extends StObject
+     with ChartDataCommon {
   
   /**
     * Sets the exploded value of dataPoint. It is applicable only in case of Pie and Doughnut Charts. This property causes the Pie/Doughnut slice to separate out.
     * Default: true
     * Example: true, false
     */
-  var exploded: js.UndefOr[Boolean] = js.native
+  var exploded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets label value of a dataPoint. The value appears next to the dataPoint on axisX Line. If not provided, it takes x value for label.
     * Default: x value
     * Example: "label1", "label2"..
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the x value. It determines the position of the dataPoint on X Axis. It can be numeric or a dateTime value. Values can be positive or Negative.
@@ -30,21 +30,21 @@ trait ChartDataPoint extends ChartDataCommon {
     * Example: 10, 20, 30 ..
     * new Date(2011, 08, 01)
     */
-  var x: js.UndefOr[Double | Date] = js.native
+  var x: js.UndefOr[Double | Date] = js.undefined
   
   /**
     * Sets the y value of dataPoint. It determines the position of dataPoint on Y Axis. Values can be positive or Negative
     * Default: null
     * Example: 5, 20, -30 ..
     */
-  var y: js.UndefOr[Double | Null] = js.native
+  var y: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Sets the z value of dataPoint. It is only applicable in case of Bubble chart. This value determines the size of the bubble.
     * Default: 1
     * Example: 10, 20, 35..
     */
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object ChartDataPoint {
   

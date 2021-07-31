@@ -2,41 +2,39 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sku extends StObject {
   
   /**
     * The SKU capacity.
     */
-  var capacity: js.UndefOr[Double] = js.native
+  var capacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The SKU family.
     */
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
   /**
     * The SKU model.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * The SKU name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The SKU size.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * The SKU tier.
     */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
 }
 object Sku {
   

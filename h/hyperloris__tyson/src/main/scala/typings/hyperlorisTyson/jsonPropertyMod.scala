@@ -3,10 +3,13 @@ package typings.hyperlorisTyson
 import typings.hyperlorisTyson.typeTokenMod.ClassType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonPropertyMod {
+  
+  @JSImport("@hyperloris/tyson/dist/types/annotations/jsonProperty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Access extends StObject
@@ -15,43 +18,43 @@ object jsonPropertyMod {
   object Access extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Access with String] = js.native
+    def apply(value: String): js.UndefOr[Access & String] = js.native
     
     /**
       * Access setting that means that the property may only be used
       * for deserialization: json -> class
       */
     @js.native
-    sealed trait FROMJSON_ONLY extends Access
-    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.FROMJSON_ONLY with String = js.native
+    sealed trait FROMJSON_ONLY
+      extends StObject
+         with Access
+    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.FROMJSON_ONLY & String = js.native
     
     /**
       * Access setting that means that the property may only be used
       * for serialization: class -> json
       */
     @js.native
-    sealed trait TOJSON_ONLY extends Access
-    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY with String = js.native
+    sealed trait TOJSON_ONLY
+      extends StObject
+         with Access
+    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY & String = js.native
   }
   
-  @JSImport("@hyperloris/tyson/dist/types/annotations/jsonProperty", "JsonProperty")
-  @js.native
-  def JsonProperty(): js.Any = js.native
-  @JSImport("@hyperloris/tyson/dist/types/annotations/jsonProperty", "JsonProperty")
-  @js.native
-  def JsonProperty(options: String): js.Any = js.native
-  @JSImport("@hyperloris/tyson/dist/types/annotations/jsonProperty", "JsonProperty")
-  @js.native
-  def JsonProperty(options: JsonPropertyOptions): js.Any = js.native
+  @scala.inline
+  def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
+  @scala.inline
+  def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait JsonPropertyOptions extends StObject {
     
     /**
       * It can be used to force Tyson to ignore this property during
       * the serialization or deserialization process.
       */
-    var access: js.UndefOr[Access] = js.native
+    var access: js.UndefOr[Access] = js.undefined
     
     /**
       * Ignore the type of this property.
@@ -60,14 +63,14 @@ object jsonPropertyMod {
       * during serialization.
       * Default value: false
       */
-    var ignoreType: js.UndefOr[Boolean] = js.native
+    var ignoreType: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates the name of the key on the JSON, this is very useful
       * if you need to have a different name on the class.
       * Eg. If you mark your private property with "_"
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Property that indicates whether a value is expected for property
@@ -75,14 +78,14 @@ object jsonPropertyMod {
       * an exception is thrown.
       * Default value: false
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a type of the property.
       * This is mandatory for arrays (single and multi-type).
       * NOTE: if it's a Date object, you MUST specify the type!
       */
-    var `type`: js.UndefOr[ClassType[_] | js.Array[_]] = js.native
+    var `type`: js.UndefOr[ClassType[js.Any] | js.Array[js.Any]] = js.undefined
   }
   object JsonPropertyOptions {
     
@@ -120,7 +123,7 @@ object jsonPropertyMod {
       def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       @scala.inline
-      def setType(value: ClassType[_] | js.Array[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: ClassType[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

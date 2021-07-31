@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkflowResponse extends StObject {
   
   /**
     * The resource metadata for the workflow.
     */
-  var Workflow: js.UndefOr[typings.awsSdk.glueMod.Workflow] = js.native
+  var Workflow: js.UndefOr[typings.awsSdk.glueMod.Workflow] = js.undefined
 }
 object GetWorkflowResponse {
   

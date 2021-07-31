@@ -4,23 +4,21 @@ import typings.jsonwebtoken.jsonwebtokenBooleans.`true`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined jsonwebtoken.jsonwebtoken.DecodeOptions & {  json :true} */
-  @js.native
   trait DecodeOptionsjsontrue extends StObject {
     
-    var complete: js.UndefOr[Boolean] = js.native
+    var complete: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] with `true` = js.native
+    var json: js.UndefOr[Boolean] & `true`
   }
   object DecodeOptionsjsontrue {
     
     @scala.inline
-    def apply(json: js.UndefOr[Boolean] with `true`): DecodeOptionsjsontrue = {
+    def apply(json: js.UndefOr[Boolean] & `true`): DecodeOptionsjsontrue = {
       val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeOptionsjsontrue]
     }
@@ -35,16 +33,15 @@ object anon {
       def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
       @scala.inline
-      def setJson(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      def setJson(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String | Buffer = js.native
+    var key: String | Buffer
     
-    var passphrase: String = js.native
+    var passphrase: String
   }
   object Key {
     

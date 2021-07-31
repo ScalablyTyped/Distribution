@@ -4,13 +4,11 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofunsignedTx extends StObject {
   
-  def encode(data: Transaction): KeyValue = js.native
+  def encode(data: Transaction): KeyValue
 }
 object TypeofunsignedTx {
   

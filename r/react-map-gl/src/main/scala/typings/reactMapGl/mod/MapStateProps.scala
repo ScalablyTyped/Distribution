@@ -3,54 +3,52 @@ package typings.reactMapGl.mod
 import typings.reactMapGl.reactMapGlStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-map-gl.react-map-gl.ViewportProps & react-map-gl.react-map-gl.InteractiveState> */
-@js.native
 trait MapStateProps extends StObject {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var maxPitch: js.UndefOr[Double] = js.native
+  var maxPitch: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minPitch: js.UndefOr[Double] = js.native
+  var minPitch: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var startBearing: js.UndefOr[Double] = js.native
+  var startBearing: js.UndefOr[Double] = js.undefined
   
-  var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var startPitch: js.UndefOr[Double] = js.native
+  var startPitch: js.UndefOr[Double] = js.undefined
   
-  var startZoom: js.UndefOr[Double] = js.native
+  var startZoom: js.UndefOr[Double] = js.undefined
   
-  var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double | auto] = js.native
+  var transitionDuration: js.UndefOr[Double | auto] = js.undefined
   
-  var transitionEasing: js.UndefOr[EasingFunction] = js.native
+  var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
   
-  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.native
+  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
   
-  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.native
+  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object MapStateProps {
   

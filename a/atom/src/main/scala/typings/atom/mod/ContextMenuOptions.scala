@@ -1,9 +1,7 @@
 package typings.atom.mod
 
-import typings.atom.atomStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -20,9 +18,9 @@ object ContextMenuOptions {
   }
   
   @scala.inline
-  def Type(`type`: separator): typings.atom.anon.Type = {
+  def Type(): typings.atom.anon.Type = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("separator")
     __obj.asInstanceOf[typings.atom.anon.Type]
   }
 }

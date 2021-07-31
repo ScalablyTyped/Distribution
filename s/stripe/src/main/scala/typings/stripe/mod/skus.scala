@@ -12,7 +12,6 @@ import typings.stripe.stripeStrings.out_of_stock
 import typings.stripe.stripeStrings.sku
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skus {
@@ -20,7 +19,6 @@ object skus {
   /**
     * Description of the SKU’s inventory.
     */
-  @js.native
   trait IInventory extends StObject {
     
     /**
@@ -28,18 +26,18 @@ object skus {
       *
       * Positive integer or zero
       */
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
     /**
       * Inventory type. Possible values are "finite", "bucket"" (not quantified), and "infinite".
       */
-    var `type`: finite | bucket | infinite = js.native
+    var `type`: finite | bucket | infinite
     
     /**
       * An indicator of the inventory available. Possible values are "in_stock", "limited", and "out_of_stock".
       * Will be present if and only if type is "bucket".
       */
-    var value: js.UndefOr[in_stock | limited | out_of_stock] = js.native
+    var value: js.UndefOr[in_stock | limited | out_of_stock] = js.undefined
   }
   object IInventory {
     
@@ -70,57 +68,58 @@ object skus {
     }
   }
   
-  @js.native
-  trait ISku extends IResourceObject {
+  trait ISku
+    extends StObject
+       with IResourceObject {
     
     /**
       * Whether or not the SKU is available for purchase.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var attributes: ISkuAttributes = js.native
+    var attributes: ISkuAttributes
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The URL of an image for this SKU, meant to be displayable to the customer.
       */
-    var image: String = js.native
+    var image: String
     
-    var inventory: IInventory = js.native
+    var inventory: IInventory
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is "sku"
       */
     @JSName("object")
-    var object_ISku: sku = js.native
+    var object_ISku: sku
     
     /**
       * The dimensions of this SKU for shipping purposes.
       */
-    var package_dimensions: IPackageDimensions = js.native
+    var package_dimensions: IPackageDimensions
     
     /**
       * The cost of the item as a positive integer in the smallest currency unit (that is, 100 cents to charge $1.00, or 1 to charge ¥1,
       * Japanese Yen being a 0-decimal currency).
       */
-    var price: Double = js.native
+    var price: Double
     
     /**
       * The ID of the product this SKU is associated with. The product must be currently active. [Expandable]
       */
-    var product: String | IProduct = js.native
+    var product: String | IProduct
     
-    var updated: Double = js.native
+    var updated: Double
   }
   object ISku {
     
@@ -135,14 +134,13 @@ object skus {
       inventory: IInventory,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: sku,
       package_dimensions: IPackageDimensions,
       price: Double,
       product: String | IProduct,
       updated: Double
     ): ISku = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], package_dimensions = package_dimensions.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("sku")
       __obj.asInstanceOf[ISku]
     }
     
@@ -197,48 +195,49 @@ object skus {
     */
   type ISkuAttributes = StringDictionary[String]
   
-  @js.native
-  trait ISkuCreationOptions extends IDataOptionsWithMetadata {
+  trait ISkuCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether or not the SKU is available for purchase. Default to true.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var attributes: js.UndefOr[ISkuAttributes] = js.native
+    var attributes: js.UndefOr[ISkuAttributes] = js.undefined
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The identifier for the SKU. Must be unique. If not provided, an identifier will be randomly generated.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of an image for this SKU, meant to be displayable to the customer.
       */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var inventory: IInventory = js.native
+    var inventory: IInventory
     
     /**
       * The dimensions of this SKU for shipping purposes.
       */
-    var package_dimensions: js.UndefOr[IPackageDimensions] = js.native
+    var package_dimensions: js.UndefOr[IPackageDimensions] = js.undefined
     
     /**
       * The cost of the item as a nonnegative integer in the smallest currency unit (that is, 100 cents to charge $1.00, or 1 to charge ¥1,
       * Japanese Yen being a 0-decimal currency).
       */
-    var price: Double = js.native
+    var price: Double
     
     /**
       * The ID of the product this SKU is associated with.
       */
-    var product: String = js.native
+    var product: String
   }
   object ISkuCreationOptions {
     
@@ -295,13 +294,14 @@ object skus {
     }
   }
   
-  @js.native
-  trait ISkuListOptions extends IListOptions {
+  trait ISkuListOptions
+    extends StObject
+       with IListOptions {
     
     /**
       * Only return SKUs that are active or inactive (e.g. pass false to list all inactive products).
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only return SKUs that have the specified key/value pairs in this partially constructed dictionary.
@@ -309,23 +309,23 @@ object skus {
       * attributes ["color", "size"], passing in attributes[color]=red returns all the SKUs for this product
       * that have color set to red.
       */
-    var attributes: js.UndefOr[ISkuAttributes] = js.native
+    var attributes: js.UndefOr[ISkuAttributes] = js.undefined
     
     /**
       * Only return SKUs with the given IDs.
       */
-    var ids: js.UndefOr[js.Array[String]] = js.native
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Only return SKUs that are either in stock or out of stock (e.g. pass false to list all SKUs that are out of stock).
       * If no value is provided, all SKUs are returned.
       */
-    var in_stock: js.UndefOr[Boolean] = js.native
+    var in_stock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of the product whose SKUs will be retrieved.
       */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
   }
   object ISkuListOptions {
     
@@ -373,42 +373,43 @@ object skus {
     }
   }
   
-  @js.native
-  trait ISkuUpdateOptions extends IDataOptionsWithMetadata {
+  trait ISkuUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether or not the SKU is available for purchase.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of an image for this SKU, meant to be displayable to the customer.
       * This can be unset by updating the value to null and then saving.
       */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var inventory: js.UndefOr[IInventory] = js.native
+    var inventory: js.UndefOr[IInventory] = js.undefined
     
     /**
       * The dimensions of this SKU for shipping purposes.
       */
-    var package_dimensions: js.UndefOr[IPackageDimensions] = js.native
+    var package_dimensions: js.UndefOr[IPackageDimensions] = js.undefined
     
     /**
       * The cost of the item as a nonnegative integer in the smallest currency unit (that is, 100 cents to charge $1.00, or 1 to charge ¥1,
       * Japanese Yen being a 0-decimal currency).
       */
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of the product this SKU is associated with.
       */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
   }
   object ISkuUpdateOptions {
     

@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclarationProvider extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait DeclarationProvider extends StObject {
     * @return A declaration or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideDeclaration(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Declaration] = js.native
+  def provideDeclaration(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Declaration]
 }
 object DeclarationProvider {
   

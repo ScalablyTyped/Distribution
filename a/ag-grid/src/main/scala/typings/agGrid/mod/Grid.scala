@@ -5,7 +5,6 @@ import typings.agGrid.gridOptionsMod.GridOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "Grid")
@@ -46,15 +45,12 @@ object Grid {
   @scala.inline
   def frameworkBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameworkBeans")(x.asInstanceOf[js.Any])
   
-  @JSImport("ag-grid", "Grid.setEnterpriseBeans")
-  @js.native
-  def setEnterpriseBeans(enterpriseBeans: js.Array[_], rowModelClasses: js.Any): Unit = js.native
+  @scala.inline
+  def setEnterpriseBeans(enterpriseBeans: js.Array[js.Any], rowModelClasses: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseBeans")(enterpriseBeans.asInstanceOf[js.Any], rowModelClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ag-grid", "Grid.setEnterpriseComponents")
-  @js.native
-  def setEnterpriseComponents(components: js.Array[_]): Unit = js.native
+  @scala.inline
+  def setEnterpriseComponents(components: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ag-grid", "Grid.setFrameworkBeans")
-  @js.native
-  def setFrameworkBeans(frameworkBeans: js.Array[_]): Unit = js.native
+  @scala.inline
+  def setFrameworkBeans(frameworkBeans: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrameworkBeans")(frameworkBeans.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

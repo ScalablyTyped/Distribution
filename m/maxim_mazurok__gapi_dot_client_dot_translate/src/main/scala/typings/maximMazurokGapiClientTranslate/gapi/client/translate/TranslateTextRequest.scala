@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateTextRequest extends StObject {
   
   /**
     * Required. The content of the input in string format. We recommend the total content be less than 30k codepoints. The max length of this field is 1024. Use BatchTranslateText for
     * larger text.
     */
-  var contents: js.UndefOr[js.Array[String]] = js.native
+  var contents: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. Glossary to be applied. The glossary must be within the same region (have the same location-id) as the model, otherwise an INVALID_ARGUMENT (400) error is returned. */
-  var glossaryConfig: js.UndefOr[TranslateTextGlossaryConfig] = js.native
+  var glossaryConfig: js.UndefOr[TranslateTextGlossaryConfig] = js.undefined
   
   /**
     * Optional. The labels with user-defined metadata for the request. Label keys and values can be no longer than 63 characters (Unicode codepoints), can only contain lowercase letters,
@@ -26,11 +24,11 @@ trait TranslateTextRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. The format of the source text, for example, "text/html", "text/plain". If left blank, the MIME type defaults to "text/html". */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The `model` type requested for this translation. The format depends on model type: - AutoML Translation models:
@@ -39,16 +37,16 @@ trait TranslateTextRequest extends StObject {
     * (non-regionalized) requests, use `location-id` `global`. For example, `projects/{project-number-or-id}/locations/global/models/general/nmt`. If missing, the system decides which
     * google base model to use.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The BCP-47 language code of the input text if known, for example, "en-US" or "sr-Latn". Supported language codes are listed in Language Support. If the source language
     * isn't specified, the API attempts to identify the source language automatically and returns the source language within the response.
     */
-  var sourceLanguageCode: js.UndefOr[String] = js.native
+  var sourceLanguageCode: js.UndefOr[String] = js.undefined
   
   /** Required. The BCP-47 language code to use for translation of the input text, set to one of the language codes listed in Language Support. */
-  var targetLanguageCode: js.UndefOr[String] = js.native
+  var targetLanguageCode: js.UndefOr[String] = js.undefined
 }
 object TranslateTextRequest {
   
@@ -80,7 +78,7 @@ object TranslateTextRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

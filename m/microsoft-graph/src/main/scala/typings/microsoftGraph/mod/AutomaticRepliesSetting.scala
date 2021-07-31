@@ -2,35 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticRepliesSetting extends StObject {
   
   /**
     * The set of audience external to the signed-in user's organization who will receive the ExternalReplyMessage, if Status
     * is AlwaysEnabled or Scheduled. The possible values are: none, contactsOnly, all.
     */
-  var externalAudience: js.UndefOr[NullableOption[ExternalAudienceScope]] = js.native
+  var externalAudience: js.UndefOr[NullableOption[ExternalAudienceScope]] = js.undefined
   
   // The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
-  var externalReplyMessage: js.UndefOr[NullableOption[String]] = js.native
+  var externalReplyMessage: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled
     * or Scheduled.
     */
-  var internalReplyMessage: js.UndefOr[NullableOption[String]] = js.native
+  var internalReplyMessage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time that automatic replies are set to end, if Status is set to Scheduled.
-  var scheduledEndDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var scheduledEndDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The date and time that automatic replies are set to begin, if Status is set to Scheduled.
-  var scheduledStartDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var scheduledStartDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // Configurations status for automatic replies. The possible values are: disabled, alwaysEnabled, scheduled.
-  var status: js.UndefOr[NullableOption[AutomaticRepliesStatus]] = js.native
+  var status: js.UndefOr[NullableOption[AutomaticRepliesStatus]] = js.undefined
 }
 object AutomaticRepliesSetting {
   

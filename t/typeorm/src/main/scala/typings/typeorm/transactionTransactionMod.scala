@@ -4,18 +4,18 @@ import typings.std.MethodDecorator
 import typings.typeorm.optionsTransactionOptionsMod.TransactionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionTransactionMod {
   
-  @JSImport("typeorm/decorator/transaction/Transaction", "Transaction")
+  @JSImport("typeorm/decorator/transaction/Transaction", JSImport.Namespace)
   @js.native
-  def Transaction(): MethodDecorator = js.native
-  @JSImport("typeorm/decorator/transaction/Transaction", "Transaction")
-  @js.native
-  def Transaction(connectionName: String): MethodDecorator = js.native
-  @JSImport("typeorm/decorator/transaction/Transaction", "Transaction")
-  @js.native
-  def Transaction(options: TransactionOptions): MethodDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Transaction(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")().asInstanceOf[MethodDecorator]
+  @scala.inline
+  def Transaction(connectionName: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(connectionName.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  @scala.inline
+  def Transaction(options: TransactionOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(options.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
 }

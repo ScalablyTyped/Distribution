@@ -3,19 +3,17 @@ package typings.activexLibreoffice.com_.sun.star.presentation
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * an event has a source that causes an event to be fired and a trigger that defines under which condition an event should be raised and an offset if the
   * event should be raised a defined amount of time after the event is triggered.
   */
-@js.native
 trait ParagraphTarget extends StObject {
   
-  var Paragraph: Double = js.native
+  var Paragraph: Double
   
-  var Shape: XShape = js.native
+  var Shape: XShape
 }
 object ParagraphTarget {
   

@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2clientvpnEndpointMod {
@@ -91,6 +90,10 @@ object ec2clientvpnEndpointMod {
   /* static members */
   object Endpoint {
     
+    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Endpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,29 +103,23 @@ object ec2clientvpnEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Endpoint = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/endpoint", "Endpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean]
   }
   
-  @js.native
   trait EndpointArgs extends StObject {
     
     /**
@@ -130,47 +127,47 @@ object ec2clientvpnEndpointMod {
       */
     val authenticationOptions: Input[
         js.Array[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]]
-      ] = js.native
+      ]
     
     /**
       * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
       */
-    val clientCidrBlock: Input[String] = js.native
+    val clientCidrBlock: Input[String]
     
     /**
       * Information about the client connection logging options.
       */
-    val connectionLogOptions: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions] = js.native
+    val connectionLogOptions: Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]
     
     /**
       * Name of the repository.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.
       */
-    val dnsServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dnsServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of the ACM server certificate.
       */
-    val serverCertificateArn: Input[String] = js.native
+    val serverCertificateArn: Input[String]
     
     /**
       * Indicates whether split-tunnel is enabled on VPN endpoint. Default value is `false`.
       */
-    val splitTunnel: js.UndefOr[Input[Boolean]] = js.native
+    val splitTunnel: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The transport protocol to be used by the VPN session. Default value is `udp`.
       */
-    val transportProtocol: js.UndefOr[Input[String]] = js.native
+    val transportProtocol: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointArgs {
     
@@ -244,13 +241,12 @@ object ec2clientvpnEndpointMod {
     }
   }
   
-  @js.native
   trait EndpointState extends StObject {
     
     /**
       * The ARN of the Client VPN endpoint.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the authentication method to be used to authenticate clients.
@@ -259,57 +255,57 @@ object ec2clientvpnEndpointMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointAuthenticationOption]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
       */
-    val clientCidrBlock: js.UndefOr[Input[String]] = js.native
+    val clientCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the client connection logging options.
       */
-    val connectionLogOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]] = js.native
+    val connectionLogOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2clientvpn.EndpointConnectionLogOptions]] = js.undefined
     
     /**
       * Name of the repository.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS name to be used by clients when establishing their VPN session.
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.
       */
-    val dnsServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dnsServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of the ACM server certificate.
       */
-    val serverCertificateArn: js.UndefOr[Input[String]] = js.native
+    val serverCertificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether split-tunnel is enabled on VPN endpoint. Default value is `false`.
       */
-    val splitTunnel: js.UndefOr[Input[Boolean]] = js.native
+    val splitTunnel: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The current state of the Client VPN endpoint.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The transport protocol to be used by the VPN session. Default value is `udp`.
       */
-    val transportProtocol: js.UndefOr[Input[String]] = js.native
+    val transportProtocol: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointState {
     

@@ -2,16 +2,14 @@ package typings.cordovaPluginCamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /**
     * This plugin provides an API for taking pictures and for choosing images from the system's image library.
     */
-  var camera: Camera = js.native
+  var camera: Camera
 }
 object Navigator {
   

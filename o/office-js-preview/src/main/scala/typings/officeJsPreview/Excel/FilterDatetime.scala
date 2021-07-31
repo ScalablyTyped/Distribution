@@ -8,7 +8,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Second
 import typings.officeJsPreview.officeJsPreviewStrings.Year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait FilterDatetime extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait FilterDatetime extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var date: String = js.native
+  var date: String
   
   /**
     *
@@ -34,7 +32,7 @@ trait FilterDatetime extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second = js.native
+  var specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second
 }
 object FilterDatetime {
   

@@ -3,38 +3,36 @@ package typings.googleapis.docsV1Mod.docsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ParagraphElement that contains an InlineObject.
   */
-@js.native
 trait SchemaInlineObjectElement extends StObject {
   
   /**
     * The ID of the InlineObject this element contains.
     */
-  var inlineObjectId: js.UndefOr[String] = js.native
+  var inlineObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
     * deletions of this content.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested insertion IDs. An InlineObjectElement may have multiple
     * insertion IDs if it is a nested suggested change. If empty, then this is
     * not a suggested insertion.
     */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested text style changes to this InlineObject, keyed by
     * suggestion ID.
     */
-  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle]] = js.native
+  var suggestedTextStyleChanges: js.UndefOr[StringDictionary[SchemaSuggestedTextStyle]] = js.undefined
   
   /**
     * The text style of this InlineObjectElement.  Similar to text content,
@@ -42,7 +40,7 @@ trait SchemaInlineObjectElement extends StObject {
     * object element can affect content layout as well as the styling of text
     * inserted adjacent to it.
     */
-  var textStyle: js.UndefOr[SchemaTextStyle] = js.native
+  var textStyle: js.UndefOr[SchemaTextStyle] = js.undefined
 }
 object SchemaInlineObjectElement {
   

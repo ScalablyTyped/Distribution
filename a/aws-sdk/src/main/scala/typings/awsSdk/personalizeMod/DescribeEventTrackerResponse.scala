@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventTrackerResponse extends StObject {
   
   /**
     * An object that describes the event tracker.
     */
-  var eventTracker: js.UndefOr[EventTracker] = js.native
+  var eventTracker: js.UndefOr[EventTracker] = js.undefined
 }
 object DescribeEventTrackerResponse {
   

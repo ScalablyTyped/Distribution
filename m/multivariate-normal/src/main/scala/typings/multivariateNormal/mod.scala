@@ -2,27 +2,28 @@ package typings.multivariateNormal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("multivariate-normal", JSImport.Default)
+  @JSImport("multivariate-normal", JSImport.Namespace)
   @js.native
-  def default(mean: js.Array[Double], cov: js.Array[js.Array[Double]]): Distribution = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(mean: js.Array[Double], cov: js.Array[js.Array[Double]]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], cov.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+  
   trait Distribution extends StObject {
     
-    def getCov(): js.Array[js.Array[Double]] = js.native
+    def getCov(): js.Array[js.Array[Double]]
     
-    def getMean(): js.Array[Double] = js.native
+    def getMean(): js.Array[Double]
     
-    def sample(): js.Array[Double] = js.native
+    def sample(): js.Array[Double]
     
-    def setCov(newCov: js.Array[js.Array[Double]]): Distribution = js.native
+    def setCov(newCov: js.Array[js.Array[Double]]): Distribution
     
-    def setMean(newMean: js.Array[Double]): Distribution = js.native
+    def setMean(newMean: js.Array[Double]): Distribution
   }
   object Distribution {
     

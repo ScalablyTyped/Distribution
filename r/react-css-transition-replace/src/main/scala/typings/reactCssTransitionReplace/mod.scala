@@ -6,14 +6,13 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("react-css-transition-replace", JSImport.Namespace)
   @js.native
-  val ^ : CSSTransitionReplace = js.native
+  val ^ : js.Object & CSSTransitionReplace = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-css-transition-replace", JSImport.Namespace)
@@ -27,12 +26,11 @@ object mod extends Shortcut {
   type CSSTransitionReplace = ComponentClass[Props, ComponentState]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.CSSTransitionGroupProps * / any */ @js.native
-  trait Props extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.CSSTransitionGroupProps * / any */ trait Props extends StObject {
     
-    var changeWidth: js.UndefOr[Boolean] = js.native
+    var changeWidth: js.UndefOr[Boolean] = js.undefined
     
-    var overflowHidden: js.UndefOr[Boolean] = js.native
+    var overflowHidden: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
@@ -59,8 +57,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = CSSTransitionReplace
+  type _To = js.Object & CSSTransitionReplace
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CSSTransitionReplace = ^
+  override def _to: js.Object & CSSTransitionReplace = ^
 }

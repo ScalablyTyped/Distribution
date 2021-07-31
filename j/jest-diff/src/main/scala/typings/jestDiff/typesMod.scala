@@ -2,47 +2,45 @@ package typings.jestDiff
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait DiffOptions extends StObject {
     
-    var aAnnotation: js.UndefOr[String] = js.native
+    var aAnnotation: js.UndefOr[String] = js.undefined
     
-    var aColor: js.UndefOr[DiffOptionsColor] = js.native
+    var aColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var aIndicator: js.UndefOr[String] = js.native
+    var aIndicator: js.UndefOr[String] = js.undefined
     
-    var bAnnotation: js.UndefOr[String] = js.native
+    var bAnnotation: js.UndefOr[String] = js.undefined
     
-    var bColor: js.UndefOr[DiffOptionsColor] = js.native
+    var bColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var bIndicator: js.UndefOr[String] = js.native
+    var bIndicator: js.UndefOr[String] = js.undefined
     
-    var changeColor: js.UndefOr[DiffOptionsColor] = js.native
+    var changeColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var changeLineTrailingSpaceColor: js.UndefOr[DiffOptionsColor] = js.native
+    var changeLineTrailingSpaceColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var commonColor: js.UndefOr[DiffOptionsColor] = js.native
+    var commonColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var commonIndicator: js.UndefOr[String] = js.native
+    var commonIndicator: js.UndefOr[String] = js.undefined
     
-    var commonLineTrailingSpaceColor: js.UndefOr[DiffOptionsColor] = js.native
+    var commonLineTrailingSpaceColor: js.UndefOr[DiffOptionsColor] = js.undefined
     
-    var contextLines: js.UndefOr[Double] = js.native
+    var contextLines: js.UndefOr[Double] = js.undefined
     
-    var emptyFirstOrLastLinePlaceholder: js.UndefOr[String] = js.native
+    var emptyFirstOrLastLinePlaceholder: js.UndefOr[String] = js.undefined
     
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
-    var includeChangeCounts: js.UndefOr[Boolean] = js.native
+    var includeChangeCounts: js.UndefOr[Boolean] = js.undefined
     
-    var omitAnnotationLines: js.UndefOr[Boolean] = js.native
+    var omitAnnotationLines: js.UndefOr[Boolean] = js.undefined
     
-    var patchColor: js.UndefOr[DiffOptionsColor] = js.native
+    var patchColor: js.UndefOr[DiffOptionsColor] = js.undefined
   }
   object DiffOptions {
     
@@ -161,42 +159,41 @@ object typesMod {
   
   type DiffOptionsColor = js.Function1[/* arg */ String, String]
   
-  @js.native
   trait DiffOptionsNormalized extends StObject {
     
-    var aAnnotation: String = js.native
+    var aAnnotation: String
     
-    var aColor: DiffOptionsColor = js.native
+    var aColor: DiffOptionsColor
     
-    var aIndicator: String = js.native
+    var aIndicator: String
     
-    var bAnnotation: String = js.native
+    var bAnnotation: String
     
-    var bColor: DiffOptionsColor = js.native
+    var bColor: DiffOptionsColor
     
-    var bIndicator: String = js.native
+    var bIndicator: String
     
-    var changeColor: DiffOptionsColor = js.native
+    var changeColor: DiffOptionsColor
     
-    var changeLineTrailingSpaceColor: DiffOptionsColor = js.native
+    var changeLineTrailingSpaceColor: DiffOptionsColor
     
-    var commonColor: DiffOptionsColor = js.native
+    var commonColor: DiffOptionsColor
     
-    var commonIndicator: String = js.native
+    var commonIndicator: String
     
-    var commonLineTrailingSpaceColor: DiffOptionsColor = js.native
+    var commonLineTrailingSpaceColor: DiffOptionsColor
     
-    var contextLines: Double = js.native
+    var contextLines: Double
     
-    var emptyFirstOrLastLinePlaceholder: String = js.native
+    var emptyFirstOrLastLinePlaceholder: String
     
-    var expand: Boolean = js.native
+    var expand: Boolean
     
-    var includeChangeCounts: Boolean = js.native
+    var includeChangeCounts: Boolean
     
-    var omitAnnotationLines: Boolean = js.native
+    var omitAnnotationLines: Boolean
     
-    var patchColor: DiffOptionsColor = js.native
+    var patchColor: DiffOptionsColor
   }
   object DiffOptionsNormalized {
     

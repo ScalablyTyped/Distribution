@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageAllocation extends StObject {
   
   /**
     * The total quantity allocated to this bucket of usage.
     */
-  var AllocatedUsageQuantity: typings.awsSdk.marketplacemeteringMod.AllocatedUsageQuantity = js.native
+  var AllocatedUsageQuantity: typings.awsSdk.marketplacemeteringMod.AllocatedUsageQuantity
   
   /**
     * The set of tags that define the bucket of usage. For the bucket of items with no tags, this parameter can be left out.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object UsageAllocation {
   

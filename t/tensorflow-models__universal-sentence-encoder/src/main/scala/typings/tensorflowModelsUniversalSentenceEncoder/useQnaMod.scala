@@ -5,10 +5,13 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useQnaMod {
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "UniversalSentenceEncoderQnA")
   @js.native
@@ -35,22 +38,20 @@ object useQnaMod {
     var tokenizer: js.Any = js.native
   }
   
-  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "loadQnA")
-  @js.native
-  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = js.native
+  @scala.inline
+  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "version")
   @js.native
   val version: /* "1.3.2" */ String = js.native
   
-  @js.native
   trait ModelInput extends StObject {
     
-    var contexts: js.UndefOr[js.Array[String]] = js.native
+    var contexts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var queries: js.Array[String] = js.native
+    var queries: js.Array[String]
     
-    var responses: js.Array[String] = js.native
+    var responses: js.Array[String]
   }
   object ModelInput {
     
@@ -86,12 +87,11 @@ object useQnaMod {
     }
   }
   
-  @js.native
   trait ModelOutput extends StObject {
     
-    var queryEmbedding: Tensor[Rank] = js.native
+    var queryEmbedding: Tensor[Rank]
     
-    var responseEmbedding: Tensor[Rank] = js.native
+    var responseEmbedding: Tensor[Rank]
   }
   object ModelOutput {
     

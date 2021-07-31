@@ -5,35 +5,35 @@ import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IShippingInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChargeUpdateOptions extends IDataOptionsWithMetadata {
+trait IChargeUpdateOptions
+  extends StObject
+     with IDataOptionsWithMetadata {
   
   /**
     * An arbitrary string which you can attach to a charge object. It is displayed when in the web interface alongside the charge.
     * Note that if you use Stripe to send automatic email receipts to your customers, your receipt emails will include the description
     * of the charge(s) that they are describing. This can be unset by updating the value to null and then saving.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A set of key/value pairs you can attach to a charge giving information about its riskiness.
     */
-  var fraud_details: js.UndefOr[Userreport] = js.native
+  var fraud_details: js.UndefOr[Userreport] = js.undefined
   
   /**
     * This is the email address that the receipt for this charge will be sent to.
     * If this field is updated, then a new email receipt will be sent to the updated address.
     */
-  var receipt_email: js.UndefOr[String] = js.native
+  var receipt_email: js.UndefOr[String] = js.undefined
   
   /**
     * Shipping information for the charge. Helps prevent fraud on charges for
     * physical goods.
     */
-  var shipping: js.UndefOr[IShippingInformation] = js.native
+  var shipping: js.UndefOr[IShippingInformation] = js.undefined
   
   /**
     * A string that identifies this transaction as part of a group.
@@ -41,7 +41,7 @@ trait IChargeUpdateOptions extends IDataOptionsWithMetadata {
     *
     * Connect only.
     */
-  var transfer_group: js.UndefOr[String] = js.native
+  var transfer_group: js.UndefOr[String] = js.undefined
 }
 object IChargeUpdateOptions {
   

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessPointVpcConfiguration extends StObject {
   
   /**
     * This access point will only allow connections from the specified VPC ID.
     */
-  var vpcId: Input[String] = js.native
+  var vpcId: Input[String]
 }
 object AccessPointVpcConfiguration {
   

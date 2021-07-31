@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecaptchaParamResponse extends StObject {
   
   /** The fixed string "identitytoolkit#GetRecaptchaParamResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Site key registered at recaptcha. */
-  var recaptchaSiteKey: js.UndefOr[String] = js.native
+  var recaptchaSiteKey: js.UndefOr[String] = js.undefined
   
   /** The stoken field for the recaptcha widget, used to request captcha challenge. */
-  var recaptchaStoken: js.UndefOr[String] = js.native
+  var recaptchaStoken: js.UndefOr[String] = js.undefined
 }
 object GetRecaptchaParamResponse {
   

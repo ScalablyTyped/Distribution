@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides information about a veto which has been raised against an operation */
-@js.native
 trait XVeto extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait XVeto extends StObject {
     *
     * The concrete semantics of this attribute is to be defined in the service implementing this interface.
     */
-  var Details: js.Any = js.native
+  var Details: js.Any
   
   /** describes the reason for the veto */
-  var Reason: String = js.native
+  var Reason: String
 }
 object XVeto {
   

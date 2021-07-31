@@ -2,17 +2,15 @@ package typings.reactInlinesvg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CacheRequests extends StObject {
     
-    var cacheRequests: Boolean = js.native
+    var cacheRequests: Boolean
     
-    var uniquifyIDs: Boolean = js.native
+    var uniquifyIDs: Boolean
   }
   object CacheRequests {
     

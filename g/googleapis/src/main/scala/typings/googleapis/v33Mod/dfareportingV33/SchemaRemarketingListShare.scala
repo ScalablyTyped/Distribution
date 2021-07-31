@@ -2,7 +2,6 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,29 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * lists. This resource can be used to manage remarketing list sharing to
   * other accounts and advertisers.
   */
-@js.native
 trait SchemaRemarketingListShare extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#remarketingListShare&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Remarketing list ID. This is a read-only, auto-generated field.
     */
-  var remarketingListId: js.UndefOr[String] = js.native
+  var remarketingListId: js.UndefOr[String] = js.undefined
   
   /**
     * Accounts that the remarketing list is shared with.
     */
-  var sharedAccountIds: js.UndefOr[js.Array[String]] = js.native
+  var sharedAccountIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Advertisers that the remarketing list is shared with.
     */
-  var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRemarketingListShare {
   

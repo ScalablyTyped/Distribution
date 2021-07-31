@@ -4,24 +4,22 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait IIconClasses extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var info: String = js.native
+    var info: String
     
-    var success: String = js.native
+    var success: String
     
     @JSName("wait")
-    var wait_FIIconClasses: String = js.native
+    var wait_FIIconClasses: String
     
-    var warning: String = js.native
+    var warning: String
   }
   object IIconClasses {
     
@@ -52,10 +50,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait IPopParams extends IToast {
+  trait IPopParams
+    extends StObject
+       with IToast {
     
-    var toasterId: js.UndefOr[Double] = js.native
+    var toasterId: js.UndefOr[Double] = js.undefined
   }
   object IPopParams {
     
@@ -76,12 +75,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IPopReturn extends StObject {
     
-    var toastId: String | Double = js.native
+    var toastId: String | Double
     
-    var toasterId: Double = js.native
+    var toasterId: Double
   }
   object IPopReturn {
     
@@ -102,46 +100,45 @@ object mod {
     }
   }
   
-  @js.native
   trait IToast extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var bodyOutputType: js.UndefOr[String] = js.native
+    var bodyOutputType: js.UndefOr[String] = js.undefined
     
-    var clickHandler: js.UndefOr[EventListener] = js.native
+    var clickHandler: js.UndefOr[EventListener] = js.undefined
     
-    var closeHtml: js.UndefOr[String] = js.native
+    var closeHtml: js.UndefOr[String] = js.undefined
     
-    var directiveData: js.UndefOr[js.Any] = js.native
+    var directiveData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Called when the toast has been removed.
       * @param toast the displayed toast
       */
-    var onHideCallback: js.UndefOr[IToastCallback] = js.native
+    var onHideCallback: js.UndefOr[IToastCallback] = js.undefined
     
     /**
       * Called when the toast has been displayed.
       * @param toast the displayed toast
       */
-    var onShowCallback: js.UndefOr[IToastCallback] = js.native
+    var onShowCallback: js.UndefOr[IToastCallback] = js.undefined
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var tapToDismiss: js.UndefOr[Boolean] = js.native
+    var tapToDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var toastId: js.UndefOr[String | Double] = js.native
+    var toastId: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Acceptable types are:
       * 'error', 'info', 'wait', 'success', and 'warning'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IToast {
     
@@ -238,38 +235,37 @@ object mod {
   
   type IToastEventListener = js.Function3[/* event */ Event, /* toasterId */ Double, /* toastId */ String | Double, Unit]
   
-  @js.native
   trait IToasterConfig extends StObject {
     
     /**
       * Options include:
       * '', 'trustedHtml', 'template', 'templateWithData'
       */
-    var `body-output-type`: js.UndefOr[String] = js.native
+    var `body-output-type`: js.UndefOr[String] = js.undefined
     
-    var `body-template`: js.UndefOr[String] = js.native
+    var `body-template`: js.UndefOr[String] = js.undefined
     
-    var `close-button`: js.UndefOr[Boolean] = js.native
+    var `close-button`: js.UndefOr[Boolean] = js.undefined
     
-    var `close-html`: js.UndefOr[String] = js.native
+    var `close-html`: js.UndefOr[String] = js.undefined
     
-    var `icon-class`: js.UndefOr[String] = js.native
+    var `icon-class`: js.UndefOr[String] = js.undefined
     
-    var `icon-classes`: js.UndefOr[IIconClasses] = js.native
+    var `icon-classes`: js.UndefOr[IIconClasses] = js.undefined
     
     /**
       * limits max number of toasts
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var `message-class`: js.UndefOr[String] = js.native
+    var `message-class`: js.UndefOr[String] = js.undefined
     
     /**
       * stop timeout on mouseover and restart timer on mouseout
       */
-    var `mouseover-timer-stop`: js.UndefOr[Boolean] = js.native
+    var `mouseover-timer-stop`: js.UndefOr[Boolean] = js.undefined
     
-    var `newest-on-top`: js.UndefOr[Boolean] = js.native
+    var `newest-on-top`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Options include:
@@ -277,15 +273,15 @@ object mod {
       * 'toast-top-left', 'toast-top-center', 'toast-top-rigt',
       * 'toast-bottom-left', 'toast-bottom-center', 'toast-bottom-rigt',
       */
-    var `position-class`: js.UndefOr[String] = js.native
+    var `position-class`: js.UndefOr[String] = js.undefined
     
-    var `prevent-duplicates`: js.UndefOr[Boolean] = js.native
+    var `prevent-duplicates`: js.UndefOr[Boolean] = js.undefined
     
-    var `tap-to-dismiss`: js.UndefOr[Boolean] = js.native
+    var `tap-to-dismiss`: js.UndefOr[Boolean] = js.undefined
     
-    var `time-out`: js.UndefOr[Double] = js.native
+    var `time-out`: js.UndefOr[Double] = js.undefined
     
-    var `title-class`: js.UndefOr[String] = js.native
+    var `title-class`: js.UndefOr[String] = js.undefined
   }
   object IToasterConfig {
     
@@ -390,18 +386,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IToasterEventRegistry extends StObject {
     
-    def setup(): Unit = js.native
+    def setup(): Unit
     
-    def subscribeToClearToastsEvent(onClearToasts: IToastEventListener): Unit = js.native
+    def subscribeToClearToastsEvent(onClearToasts: IToastEventListener): Unit
     
-    def subscribeToNewToastEvent(onNewToast: IToastEventListener): Unit = js.native
+    def subscribeToNewToastEvent(onNewToast: IToastEventListener): Unit
     
-    def unsubscribeToClearToastsEvent(onClearToasts: IToastEventListener): Unit = js.native
+    def unsubscribeToClearToastsEvent(onClearToasts: IToastEventListener): Unit
     
-    def unsubscribeToNewToastEvent(onNewToast: IToastEventListener): Unit = js.native
+    def unsubscribeToNewToastEvent(onNewToast: IToastEventListener): Unit
   }
   object IToasterEventRegistry {
     
@@ -441,11 +436,11 @@ object mod {
   trait IToasterService extends StObject {
     
     def clear(): Unit = js.native
-    def clear(toasterId: js.UndefOr[scala.Nothing], toastId: String): Unit = js.native
-    def clear(toasterId: js.UndefOr[scala.Nothing], toastId: Double): Unit = js.native
     def clear(toasterId: Double): Unit = js.native
     def clear(toasterId: Double, toastId: String): Unit = js.native
     def clear(toasterId: Double, toastId: Double): Unit = js.native
+    def clear(toasterId: Unit, toastId: String): Unit = js.native
+    def clear(toasterId: Unit, toastId: Double): Unit = js.native
     
     def error(params: IPopParams): Unit = js.native
     def error(

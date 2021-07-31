@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeConfiguration extends StObject {
   
   /**
     * Configuration for telemetry service.
     */
-  var TelemetryConfiguration: js.UndefOr[typings.awsSdk.greengrassMod.TelemetryConfiguration] = js.native
+  var TelemetryConfiguration: js.UndefOr[typings.awsSdk.greengrassMod.TelemetryConfiguration] = js.undefined
 }
 object RuntimeConfiguration {
   

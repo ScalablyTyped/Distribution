@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceCandidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsArrayReturnValueNumber extends StObject {
   
-  var items: js.Array[ResourceCandidate] = js.native
+  var items: js.Array[ResourceCandidate]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object ItemsArrayReturnValueNumber {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExportRequest extends StObject {
   
   /**
     * The format of the exported data.
     */
-  var exportType: ExportType = js.native
+  var exportType: ExportType
   
   /**
     * The name of the bot to export.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The type of resource to export. 
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /**
     * The version of the bot to export.
     */
-  var version: NumericalVersion = js.native
+  var version: NumericalVersion
 }
 object GetExportRequest {
   

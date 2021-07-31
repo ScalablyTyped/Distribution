@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.TileLayoutOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.TileLayout")
 @js.native
 class TileLayout protected ()
-  extends typings.kendoUi.kendo.ui.TileLayout {
+  extends StObject
+     with typings.kendoUi.kendo.ui.TileLayout {
   def this(element: Element) = this()
   def this(element: Element, options: TileLayoutOptions) = this()
 }
@@ -21,9 +21,8 @@ object TileLayout {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.TileLayout.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TileLayout = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TileLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TileLayout]
   
   /* static member */
   @JSGlobal("kendo.ui.TileLayout.fn")

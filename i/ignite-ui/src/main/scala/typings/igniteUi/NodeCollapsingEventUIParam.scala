@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCollapsingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the node object about to collapse.
     */
-  var node: js.UndefOr[js.Any] = js.native
+  var node: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the tree.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object NodeCollapsingEventUIParam {
   

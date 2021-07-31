@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterDialogMovingEventUIParam extends StObject {
   
   /**
     * Gets reference to filtering dialog DOM element.
     */
-  var dialog: js.UndefOr[String] = js.native
+  var dialog: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the original position of the groupby dialog div as { top, left } object, relative to the page.
     */
-  var originalPosition: js.UndefOr[js.Any] = js.native
+  var originalPosition: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to GridFiltering.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the current position of the groupby dialog div as { top, left } object, relative to the page.
     */
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
 }
 object FilterDialogMovingEventUIParam {
   

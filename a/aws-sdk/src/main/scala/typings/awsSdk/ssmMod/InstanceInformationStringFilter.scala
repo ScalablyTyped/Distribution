@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceInformationStringFilter extends StObject {
   
   /**
     * The filter key name to describe your instances. For example: "InstanceIds"|"AgentVersion"|"PingStatus"|"PlatformTypes"|"ActivationIds"|"IamRole"|"ResourceType"|"AssociationStatus"|"Tag Key"
     */
-  var Key: InstanceInformationStringFilterKey = js.native
+  var Key: InstanceInformationStringFilterKey
   
   /**
     * The filter values.
     */
-  var Values: InstanceInformationFilterValueSet = js.native
+  var Values: InstanceInformationFilterValueSet
 }
 object InstanceInformationStringFilter {
   

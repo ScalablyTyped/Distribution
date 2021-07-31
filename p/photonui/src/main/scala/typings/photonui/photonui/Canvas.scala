@@ -5,37 +5,37 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Canvas extends Widget {
+trait Canvas
+  extends StObject
+     with Widget {
   
-  var canvas: HTMLElement = js.native
+  var canvas: HTMLElement
   
-  def getContext(contextId: String): js.Any = js.native
+  def getContext(contextId: String): js.Any
   
-  var height: Double = js.native
+  var height: Double
   
-  var interactiveMode: HTMLElement = js.native
+  var interactiveMode: HTMLElement
   
-  def setContext(contextId: String): Unit = js.native
+  def setContext(contextId: String): Unit
   
-  def supportsContext(contextId: String): Boolean = js.native
+  def supportsContext(contextId: String): Boolean
   
-  def toBlod(imageFormat: String): js.Any = js.native
-  
-  // returns Blob
-  def toBlodHD(imageFormat: String): js.Any = js.native
+  def toBlod(imageFormat: String): js.Any
   
   // returns Blob
-  def toDataUrl(imageFormat: String): String = js.native
+  def toBlodHD(imageFormat: String): js.Any
   
-  def toDataUrlHD(imageFormat: String): String = js.native
+  // returns Blob
+  def toDataUrl(imageFormat: String): String
   
-  def transferControlToProxy(): Unit = js.native
+  def toDataUrlHD(imageFormat: String): String
   
-  var width: Double = js.native
+  def transferControlToProxy(): Unit
+  
+  var width: Double
 }
 object Canvas {
   

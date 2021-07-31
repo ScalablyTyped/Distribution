@@ -3,21 +3,21 @@ package typings.sharepoint.SPClientTemplates
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextFieldInForm extends RenderContextForm {
+trait RenderContextFieldInForm
+  extends StObject
+     with RenderContextForm {
   
-  var CurrentFieldSchema: FieldSchemaInForm = js.native
+  var CurrentFieldSchema: FieldSchemaInForm
   
-  var CurrentFieldValue: js.Any = js.native
+  var CurrentFieldValue: js.Any
   
-  var CurrentGroup: Group = js.native
+  var CurrentGroup: Group
   
-  var CurrentGroupIdx: Double = js.native
+  var CurrentGroupIdx: Double
   
-  var CurrentItems: js.Array[Item] = js.native
+  var CurrentItems: js.Array[Item]
 }
 object RenderContextFieldInForm {
   

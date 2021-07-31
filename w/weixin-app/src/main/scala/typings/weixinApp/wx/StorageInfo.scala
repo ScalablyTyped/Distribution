@@ -2,26 +2,24 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageInfo extends StObject {
   
   /**
     * 当前占用的空间大小, 单位kb
     */
-  var currentSize: Double = js.native
+  var currentSize: Double
   
   /**
     * 当前storage中所有的key
     */
-  var keys: js.Array[String] = js.native
+  var keys: js.Array[String]
   
   /**
     * 限制的空间大小，单位kb
     */
-  var limitSize: Double = js.native
+  var limitSize: Double
 }
 object StorageInfo {
   

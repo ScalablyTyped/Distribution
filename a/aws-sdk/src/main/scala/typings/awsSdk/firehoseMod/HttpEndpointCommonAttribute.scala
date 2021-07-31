@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpEndpointCommonAttribute extends StObject {
   
   /**
     * The name of the HTTP endpoint common attribute.
     */
-  var AttributeName: HttpEndpointAttributeName = js.native
+  var AttributeName: HttpEndpointAttributeName
   
   /**
     * The value of the HTTP endpoint common attribute.
     */
-  var AttributeValue: HttpEndpointAttributeValue = js.native
+  var AttributeValue: HttpEndpointAttributeValue
 }
 object HttpEndpointCommonAttribute {
   

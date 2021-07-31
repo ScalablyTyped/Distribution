@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Grouping extends StObject {
   
-  var filtering: js.UndefOr[Boolean] = js.native
+  var filtering: js.UndefOr[Boolean] = js.undefined
   
-  var grouping: js.UndefOr[Boolean] = js.native
+  var grouping: js.UndefOr[Boolean] = js.undefined
   
-  var sorting: js.UndefOr[Boolean] = js.native
+  var sorting: js.UndefOr[Boolean] = js.undefined
 }
 object Grouping {
   

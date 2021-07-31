@@ -11,48 +11,47 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardActionsTypesMod {
   
-  @js.native
   trait IDocumentCardActions extends StObject
   
-  @js.native
-  trait IDocumentCardActionsProps extends ClassAttributes[DocumentCardActionsBase] {
+  trait IDocumentCardActionsProps
+    extends StObject
+       with ClassAttributes[DocumentCardActionsBase] {
     
     /**
       * The actions available for this document.
       */
-    var actions: js.Array[IButtonProps] = js.native
+    var actions: js.Array[IButtonProps]
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardActions]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardActions]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IDocumentCardActionsStyleProps, IDocumentCardActionsStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The number of views this document has received.
       */
-    var views: js.UndefOr[Number] = js.native
+    var views: js.UndefOr[Number] = js.undefined
   }
   object IDocumentCardActionsProps {
     
@@ -109,18 +108,17 @@ object documentCardActionsTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardActionsStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardActionsStyleProps {
     
@@ -144,16 +142,15 @@ object documentCardActionsTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardActionsStyles extends StObject {
     
-    var action: IStyle = js.native
+    var action: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var views: IStyle = js.native
+    var views: IStyle
     
-    var viewsIcon: IStyle = js.native
+    var viewsIcon: IStyle
   }
   object IDocumentCardActionsStyles {
     

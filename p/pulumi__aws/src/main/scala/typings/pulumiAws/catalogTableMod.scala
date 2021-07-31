@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object catalogTableMod {
@@ -96,6 +95,10 @@ object catalogTableMod {
   /* static members */
   object CatalogTable {
     
+    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CatalogTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -105,90 +108,84 @@ object catalogTableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CatalogTable = js.native
-    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CatalogTable = js.native
-    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CatalogTableState): CatalogTable = js.native
-    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CatalogTableState, opts: CustomResourceOptions): CatalogTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CatalogTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CatalogTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CatalogTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CatalogTableState): CatalogTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CatalogTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CatalogTableState, opts: CustomResourceOptions): CatalogTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CatalogTable]
     
     /**
       * Returns true if the given object is an instance of CatalogTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogTable.CatalogTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogTable.CatalogTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/catalogTable.CatalogTable */ Boolean]
   }
   
-  @js.native
   trait CatalogTableArgs extends StObject {
     
     /**
       * ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all lowercase.
       */
-    val databaseName: Input[String] = js.native
+    val databaseName: Input[String]
     
     /**
       * Description of the table.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SerDe.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Owner of the table.
       */
-    val owner: js.UndefOr[Input[String]] = js.native
+    val owner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of initialization parameters for the SerDe, in key-value form.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. see Partition Keys below.
       */
-    val partitionKeys: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CatalogTablePartitionKey]]]] = js.native
+    val partitionKeys: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CatalogTablePartitionKey]]]] = js.undefined
     
     /**
       * Retention time for this table.
       */
-    val retention: js.UndefOr[Input[Double]] = js.native
+    val retention: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
       */
-    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CatalogTableStorageDescriptor]] = js.native
+    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CatalogTableStorageDescriptor]] = js.undefined
     
     /**
       * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.). While optional, some Athena DDL queries such as `ALTER TABLE` and `SHOW CREATE TABLE` will fail if this argument is empty.
       */
-    val tableType: js.UndefOr[Input[String]] = js.native
+    val tableType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the table is a view, the expanded text of the view; otherwise null.
       */
-    val viewExpandedText: js.UndefOr[Input[String]] = js.native
+    val viewExpandedText: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the table is a view, the original text of the view; otherwise null.
       */
-    val viewOriginalText: js.UndefOr[Input[String]] = js.native
+    val viewOriginalText: js.UndefOr[Input[String]] = js.undefined
   }
   object CatalogTableArgs {
     
@@ -275,73 +272,72 @@ object catalogTableMod {
     }
   }
   
-  @js.native
   trait CatalogTableState extends StObject {
     
     /**
       * The ARN of the Glue Table.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all lowercase.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the table.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SerDe.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Owner of the table.
       */
-    val owner: js.UndefOr[Input[String]] = js.native
+    val owner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of initialization parameters for the SerDe, in key-value form.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. see Partition Keys below.
       */
-    val partitionKeys: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CatalogTablePartitionKey]]]] = js.native
+    val partitionKeys: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CatalogTablePartitionKey]]]] = js.undefined
     
     /**
       * Retention time for this table.
       */
-    val retention: js.UndefOr[Input[Double]] = js.native
+    val retention: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
       */
-    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CatalogTableStorageDescriptor]] = js.native
+    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CatalogTableStorageDescriptor]] = js.undefined
     
     /**
       * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.). While optional, some Athena DDL queries such as `ALTER TABLE` and `SHOW CREATE TABLE` will fail if this argument is empty.
       */
-    val tableType: js.UndefOr[Input[String]] = js.native
+    val tableType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the table is a view, the expanded text of the view; otherwise null.
       */
-    val viewExpandedText: js.UndefOr[Input[String]] = js.native
+    val viewExpandedText: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the table is a view, the original text of the view; otherwise null.
       */
-    val viewOriginalText: js.UndefOr[Input[String]] = js.native
+    val viewOriginalText: js.UndefOr[Input[String]] = js.undefined
   }
   object CatalogTableState {
     

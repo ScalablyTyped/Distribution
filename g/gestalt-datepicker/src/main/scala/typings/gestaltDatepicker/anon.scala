@@ -5,17 +5,15 @@ import typings.std.Date
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Event extends StObject {
     
-    var event: SyntheticEvent[HTMLInputElement, typings.std.Event] = js.native
+    var event: SyntheticEvent[HTMLInputElement, typings.std.Event]
     
-    var value: Date = js.native
+    var value: Date
   }
   object Event {
     

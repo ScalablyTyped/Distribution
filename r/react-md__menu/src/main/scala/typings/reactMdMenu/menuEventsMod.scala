@@ -6,23 +6,24 @@ import typings.reactMdMenu.reactMdMenuStrings.last
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuEventsMod {
   
-  @JSImport("@react-md/menu/types/MenuEvents", "MenuEvents")
+  @JSImport("@react-md/menu/types/MenuEvents", JSImport.Namespace)
   @js.native
-  def MenuEvents(hasMenuRefCancelledDefaultFocus: MenuEventsProps): Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def MenuEvents(hasMenuRefCancelledDefaultFocus: MenuEventsProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuEvents")(hasMenuRefCancelledDefaultFocus.asInstanceOf[js.Any]).asInstanceOf[Null]
+  
   trait MenuEventsProps extends StObject {
     
-    var cancelled: Boolean = js.native
+    var cancelled: Boolean
     
-    var defaultFocus: first | last | String = js.native
+    var defaultFocus: first | last | String
     
-    var menuRef: MutableRefObject[HTMLDivElement | Null] = js.native
+    var menuRef: MutableRefObject[HTMLDivElement | Null]
   }
   object MenuEventsProps {
     

@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.excludeTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `23` extends StObject {
   
-  var name: excludeTags = js.native
+  var name: excludeTags
 }
 object `23` {
   
   @scala.inline
-  def apply(name: excludeTags): `23` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `23` = {
+    val __obj = js.Dynamic.literal(name = "excludeTags")
     __obj.asInstanceOf[`23`]
   }
   

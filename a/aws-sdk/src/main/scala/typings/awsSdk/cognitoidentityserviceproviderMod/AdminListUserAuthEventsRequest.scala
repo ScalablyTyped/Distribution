@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminListUserAuthEventsRequest extends StObject {
   
   /**
     * The maximum number of authentication events to return.
     */
-  var MaxResults: js.UndefOr[QueryLimitType] = js.native
+  var MaxResults: js.UndefOr[QueryLimitType] = js.undefined
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user pool username or an alias.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminListUserAuthEventsRequest {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,29 +13,43 @@ object UiccAppKind extends StObject {
   
   /** CDMA application. */
   @js.native
-  sealed trait csim extends UiccAppKind
+  sealed trait csim
+    extends StObject
+       with UiccAppKind
   
   /** IP multimedia services application. */
   @js.native
-  sealed trait isim extends UiccAppKind
+  sealed trait isim
+    extends StObject
+       with UiccAppKind
   
   /** Master File application. */
   @js.native
-  sealed trait mf extends UiccAppKind
+  sealed trait mf
+    extends StObject
+       with UiccAppKind
   
   /** Removable user identity card application. */
   @js.native
-  sealed trait mfRuim extends UiccAppKind
+  sealed trait mfRuim
+    extends StObject
+       with UiccAppKind
   
   /** A GSM application. */
   @js.native
-  sealed trait mfSim extends UiccAppKind
+  sealed trait mfSim
+    extends StObject
+       with UiccAppKind
   
   /** An unknown kind. */
   @js.native
-  sealed trait unknown extends UiccAppKind
+  sealed trait unknown
+    extends StObject
+       with UiccAppKind
   
   /** UMTS application. */
   @js.native
-  sealed trait usim extends UiccAppKind
+  sealed trait usim
+    extends StObject
+       with UiccAppKind
 }

@@ -2,18 +2,18 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a Choice field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormChoice extends FieldSchemaInForm {
+trait FieldSchemaInFormChoice
+  extends StObject
+     with FieldSchemaInForm {
   
   /** List of choices for this field. */
-  var Choices: js.Array[String] = js.native
+  var Choices: js.Array[String]
   
   /** Display format for the choice field */
-  var FormatType: ChoiceFormatType = js.native
+  var FormatType: ChoiceFormatType
 }
 object FieldSchemaInFormChoice {
   

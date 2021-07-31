@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var grads: NamedTensorMap = js.native
+  var grads: NamedTensorMap
   
-  var value: Scalar = js.native
+  var value: Scalar
 }
 object Value {
   

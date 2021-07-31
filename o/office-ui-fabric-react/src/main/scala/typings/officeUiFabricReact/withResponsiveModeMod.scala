@@ -6,10 +6,13 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withResponsiveModeMod {
+  
+  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ResponsiveMode extends StObject
@@ -18,72 +21,77 @@ object withResponsiveModeMod {
   object ResponsiveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ResponsiveMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[ResponsiveMode & Double] = js.native
     
     @js.native
-    sealed trait large extends ResponsiveMode
-    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large with Double = js.native
+    sealed trait large
+      extends StObject
+         with ResponsiveMode
+    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large & Double = js.native
     
     @js.native
-    sealed trait medium extends ResponsiveMode
-    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium with Double = js.native
+    sealed trait medium
+      extends StObject
+         with ResponsiveMode
+    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium & Double = js.native
     
     @js.native
-    sealed trait small extends ResponsiveMode
-    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small with Double = js.native
+    sealed trait small
+      extends StObject
+         with ResponsiveMode
+    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small & Double = js.native
     
     @js.native
-    sealed trait unknown extends ResponsiveMode
-    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown with Double = js.native
+    sealed trait unknown
+      extends StObject
+         with ResponsiveMode
+    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
     
     @js.native
-    sealed trait xLarge extends ResponsiveMode
-    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge with Double = js.native
+    sealed trait xLarge
+      extends StObject
+         with ResponsiveMode
+    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
     
     @js.native
-    sealed trait xxLarge extends ResponsiveMode
-    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge with Double = js.native
+    sealed trait xxLarge
+      extends StObject
+         with ResponsiveMode
+    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
     
     @js.native
-    sealed trait xxxLarge extends ResponsiveMode
-    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge with Double = js.native
+    sealed trait xxxLarge
+      extends StObject
+         with ResponsiveMode
+    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "getInitialResponsiveMode")
-  @js.native
-  def getInitialResponsiveMode(): ResponsiveMode = js.native
+  @scala.inline
+  def getInitialResponsiveMode(): ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialResponsiveMode")().asInstanceOf[ResponsiveMode]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "getResponsiveMode")
-  @js.native
-  def getResponsiveMode(): ResponsiveMode = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "getResponsiveMode")
-  @js.native
-  def getResponsiveMode(currentWindow: Window): ResponsiveMode = js.native
+  @scala.inline
+  def getResponsiveMode(): ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveMode")().asInstanceOf[ResponsiveMode]
+  @scala.inline
+  def getResponsiveMode(currentWindow: Window): ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveMode")(currentWindow.asInstanceOf[js.Any]).asInstanceOf[ResponsiveMode]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "initializeResponsiveMode")
-  @js.native
-  def initializeResponsiveMode(): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "initializeResponsiveMode")
-  @js.native
-  def initializeResponsiveMode(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def initializeResponsiveMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeResponsiveMode")().asInstanceOf[Unit]
+  @scala.inline
+  def initializeResponsiveMode(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeResponsiveMode")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "setResponsiveMode")
-  @js.native
-  def setResponsiveMode(): Unit = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "setResponsiveMode")
-  @js.native
-  def setResponsiveMode(responsiveMode: ResponsiveMode): Unit = js.native
+  @scala.inline
+  def setResponsiveMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setResponsiveMode")().asInstanceOf[Unit]
+  @scala.inline
+  def setResponsiveMode(responsiveMode: ResponsiveMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setResponsiveMode")(responsiveMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode", "withResponsiveMode")
-  @js.native
+  @scala.inline
   def withResponsiveMode[TProps /* <: typings.officeUiFabricReact.anon.ResponsiveMode */, TState](
     ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ js.Any, Component[TProps, TState, js.Any]]
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withResponsiveMode")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait IWithResponsiveModeState extends StObject {
     
-    var responsiveMode: js.UndefOr[ResponsiveMode] = js.native
+    var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
   }
   object IWithResponsiveModeState {
     

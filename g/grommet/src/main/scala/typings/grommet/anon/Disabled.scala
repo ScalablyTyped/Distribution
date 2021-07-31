@@ -3,19 +3,17 @@ package typings.grommet.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String | ReactNode] = js.native
+  var label: js.UndefOr[String | ReactNode] = js.undefined
   
-  var value: String | Double | Boolean = js.native
+  var value: String | Double | Boolean
 }
 object Disabled {
   

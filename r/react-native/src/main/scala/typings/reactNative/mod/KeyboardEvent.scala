@@ -2,21 +2,19 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardEvent extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var easing: KeyboardEventEasing = js.native
+  var easing: KeyboardEventEasing
   
-  var endCoordinates: ScreenRect = js.native
+  var endCoordinates: ScreenRect
   
-  var isEventFromThisApp: Boolean = js.native
+  var isEventFromThisApp: Boolean
   
-  var startCoordinates: ScreenRect = js.native
+  var startCoordinates: ScreenRect
 }
 object KeyboardEvent {
   

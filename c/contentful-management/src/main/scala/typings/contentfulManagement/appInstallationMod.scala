@@ -8,22 +8,23 @@ import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appInstallationMod {
   
-  @JSImport("contentful-management/dist/typings/entities/app-installation", "wrapAppInstallation")
+  @JSImport("contentful-management/dist/typings/entities/app-installation", JSImport.Namespace)
   @js.native
-  def wrapAppInstallation(http: AxiosInstance, data: AppInstallationProps): AppInstallation = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/app-installation", "wrapAppInstallationCollection")
-  @js.native
-  def wrapAppInstallationCollection(http: AxiosInstance, data: CollectionProp[AppInstallationProps]): Collection[AppInstallation, AppInstallationProps] = js.native
+  @scala.inline
+  def wrapAppInstallation(http: AxiosInstance, data: AppInstallationProps): AppInstallation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[AppInstallation]
   
-  @js.native
+  @scala.inline
+  def wrapAppInstallationCollection(http: AxiosInstance, data: CollectionProp[AppInstallationProps]): Collection[AppInstallation, AppInstallationProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAppInstallationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[AppInstallation, AppInstallationProps]]
+  
   trait AppInstallation
-    extends AppInstallationProps
+    extends StObject
+       with AppInstallationProps
        with DefaultElements[AppInstallationProps] {
     
     /**
@@ -44,7 +45,7 @@ object appInstallationMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -67,7 +68,7 @@ object appInstallationMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[AppInstallation] = js.native
+    def update(): js.Promise[AppInstallation]
   }
   object AppInstallation {
     
@@ -94,13 +95,12 @@ object appInstallationMod {
     }
   }
   
-  @js.native
   trait AppInstallationProps extends StObject {
     
     /** App Installation specific configuration variables */
-    var parameters: StringDictionary[String] = js.native
+    var parameters: StringDictionary[String]
     
-    var sys: MetaSysPropsappDefinition = js.native
+    var sys: MetaSysPropsappDefinition
   }
   object AppInstallationProps {
     

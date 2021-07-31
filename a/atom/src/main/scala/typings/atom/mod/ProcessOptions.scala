@@ -2,17 +2,17 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProcessOptions extends NodeProcessOptions {
+trait ProcessOptions
+  extends StObject
+     with NodeProcessOptions {
   
   /**
     *  Whether the command will automatically start when this BufferedProcess is
     *  created.
     */
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
 }
 object ProcessOptions {
   

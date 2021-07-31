@@ -9,10 +9,8 @@ import typings.tuyaPanelKit.themeMod.LinearGradientBackground
 import typings.tuyaPanelKit.themeMod.RadialGradientBackground
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOptions extends StObject {
   
   /**
@@ -25,60 +23,60 @@ trait NavigationOptions extends StObject {
     *
     */
   var background: js.UndefOr[
-    Double | String | Uri | RadialGradientBackground | (LinearGradientBackground with LinearGradientBackgroundOffset)
-  ] = js.native
+    Double | String | Uri | RadialGradientBackground | (LinearGradientBackground & LinearGradientBackgroundOffset)
+  ] = js.undefined
   
   /**
     * @desc 自定义面板背景样式
     */
-  var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * @desc 是否启用首页手势返回 app 列表页面
     * @default true
     */
-  var enablePopGesture: js.UndefOr[Boolean] = js.native
+  var enablePopGesture: js.UndefOr[Boolean] = js.undefined
   
-  var gesture: js.UndefOr[Boolean] = js.native
+  var gesture: js.UndefOr[Boolean] = js.undefined
   
-  var hideTopbar: js.UndefOr[Boolean] = js.native
+  var hideTopbar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @desc 蓝牙离线提示是否覆盖整个面板(除头部栏外)
     * @default true
     */
-  var isBleOfflineOverlay: js.UndefOr[Boolean] = js.native
+  var isBleOfflineOverlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @desc 自定义渲染状态栏
     */
-  var renderStatusBar: js.UndefOr[js.Function0[Element]] = js.native
+  var renderStatusBar: js.UndefOr[js.Function0[Element]] = js.undefined
   
   /**
     * @desc 自定义渲染头部栏
     */
-  var renderTopBar: js.UndefOr[js.Function0[Element]] = js.native
+  var renderTopBar: js.UndefOr[js.Function0[Element]] = js.undefined
   
   /**
     * @desc 控制是否显示离线遮罩
     * @default true
     */
-  var showOfflineView: js.UndefOr[Boolean] = js.native
+  var showOfflineView: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @desc 自定义头部栏标题
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * @desc 自定义头部栏样式
     */
-  var topbarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var topbarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * @desc 自定义头部栏文字样式
     */
-  var topbarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var topbarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object NavigationOptions {
   
@@ -93,7 +91,7 @@ object NavigationOptions {
     
     @scala.inline
     def setBackground(
-      value: Double | String | Uri | RadialGradientBackground | (LinearGradientBackground with LinearGradientBackgroundOffset)
+      value: Double | String | Uri | RadialGradientBackground | (LinearGradientBackground & LinearGradientBackgroundOffset)
     ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline

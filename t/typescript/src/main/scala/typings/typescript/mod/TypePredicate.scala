@@ -5,7 +5,6 @@ import typings.typescript.mod.TypePredicateKind.AssertsThis
 import typings.typescript.mod.TypePredicateKind.This
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -24,8 +23,8 @@ object TypePredicate {
   }
   
   @scala.inline
-  def AssertsThisTypePredicate(kind: AssertsThis): typings.typescript.mod.AssertsThisTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def AssertsThisTypePredicate(kind: AssertsThis, parameterIndex: Unit, parameterName: Unit): typings.typescript.mod.AssertsThisTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.AssertsThisTypePredicate]
   }
   
@@ -42,8 +41,8 @@ object TypePredicate {
   }
   
   @scala.inline
-  def ThisTypePredicate(kind: This, `type`: Type): typings.typescript.mod.ThisTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def ThisTypePredicate(kind: This, parameterIndex: Unit, parameterName: Unit, `type`: Type): typings.typescript.mod.ThisTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.ThisTypePredicate]
   }

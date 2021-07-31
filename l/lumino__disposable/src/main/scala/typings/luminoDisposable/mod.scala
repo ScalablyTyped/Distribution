@@ -4,14 +4,15 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@lumino/disposable", "DisposableDelegate")
   @js.native
-  class DisposableDelegate protected () extends IDisposable {
+  class DisposableDelegate protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new disposable delegate.
       *
@@ -20,6 +21,29 @@ object mod {
     def this(fn: js.Function0[Unit]) = this()
     
     var _fn: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
   }
   
   @JSImport("@lumino/disposable", "DisposableSet")
@@ -27,7 +51,9 @@ object mod {
   /**
     * Construct a new disposable set.
     */
-  class DisposableSet () extends IDisposable {
+  class DisposableSet ()
+    extends StObject
+       with IDisposable {
     
     var _isDisposed: js.Any = js.native
     
@@ -58,6 +84,29 @@ object mod {
     def contains(item: IDisposable): Boolean = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    
+    /**
       * Remove a disposable item from the set.
       *
       * @param item - The item to remove from the set.
@@ -69,6 +118,10 @@ object mod {
   }
   object DisposableSet {
     
+    @JSImport("@lumino/disposable", "DisposableSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a disposable set from an iterable of items.
       *
@@ -76,9 +129,8 @@ object mod {
       *
       * @returns A new disposable initialized with the given items.
       */
-    @JSImport("@lumino/disposable", "DisposableSet.from")
-    @js.native
-    def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = js.native
+    @scala.inline
+    def from(items: IterableOrArrayLike[IDisposable]): DisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[DisposableSet]
   }
   
   @JSImport("@lumino/disposable", "ObservableDisposableDelegate")
@@ -94,6 +146,35 @@ object mod {
     def this(fn: js.Function0[Unit]) = this()
     
     var _disposed: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * A signal emitted when the object is disposed.
+      */
+    /* CompleteClass */
+    override val disposed: ISignal[this.type, Unit] = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
   }
   
   @JSImport("@lumino/disposable", "ObservableDisposableSet")
@@ -106,8 +187,41 @@ object mod {
        with IObservableDisposable {
     
     var _disposed: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * A signal emitted when the object is disposed.
+      */
+    /* CompleteClass */
+    override val disposed: ISignal[this.type, Unit] = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
   }
   object ObservableDisposableSet {
+    
+    @JSImport("@lumino/disposable", "ObservableDisposableSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create an observable disposable set from an iterable of items.
@@ -116,12 +230,10 @@ object mod {
       *
       * @returns A new disposable initialized with the given items.
       */
-    @JSImport("@lumino/disposable", "ObservableDisposableSet.from")
-    @js.native
-    def from(items: IterableOrArrayLike[IDisposable]): ObservableDisposableSet = js.native
+    @scala.inline
+    def from(items: IterableOrArrayLike[IDisposable]): ObservableDisposableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[ObservableDisposableSet]
   }
   
-  @js.native
   trait IDisposable extends StObject {
     
     /**
@@ -135,7 +247,7 @@ object mod {
       * It is undefined behavior to use any functionality of the object
       * after it has been disposed unless otherwise explicitly noted.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Test whether the object has been disposed.
@@ -143,7 +255,7 @@ object mod {
       * #### Notes
       * This property is always safe to access.
       */
-    val isDisposed: Boolean = js.native
+    val isDisposed: Boolean
   }
   object IDisposable {
     
@@ -164,13 +276,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait IObservableDisposable extends IDisposable {
+  trait IObservableDisposable
+    extends StObject
+       with IDisposable {
     
     /**
       * A signal emitted when the object is disposed.
       */
-    val disposed: ISignal[this.type, Unit] = js.native
+    val disposed: ISignal[this.type, Unit]
   }
   object IObservableDisposable {
     

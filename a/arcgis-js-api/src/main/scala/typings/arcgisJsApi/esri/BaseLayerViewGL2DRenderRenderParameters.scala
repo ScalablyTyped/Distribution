@@ -5,32 +5,32 @@ import typings.std.PropertyKey
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseLayerViewGL2DRenderRenderParameters extends Object {
+trait BaseLayerViewGL2DRenderRenderParameters
+  extends StObject
+     with Object {
   
   /**
     * The WebGL or WebGL 2 context.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
     */
-  var context: WebGLRenderingContext | js.Any = js.native
+  var context: WebGLRenderingContext | js.Any
   
   /**
     * The object that describes view state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
     */
-  var state: ViewState = js.native
+  var state: ViewState
   
   /**
     * The stationary state of the `MapView`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
     */
-  var stationary: Boolean = js.native
+  var stationary: Boolean
 }
 object BaseLayerViewGL2DRenderRenderParameters {
   

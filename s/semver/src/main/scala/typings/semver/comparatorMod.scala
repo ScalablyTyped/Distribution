@@ -9,14 +9,15 @@ import typings.semver.semverStrings.LessthansignEqualssign
 import typings.semver.semverStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comparatorMod {
   
   @JSImport("semver/classes/comparator", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Comparator {
+  class ^ protected ()
+    extends StObject
+       with Comparator {
     def this(comp: String) = this()
     def this(comp: Comparator) = this()
     def this(comp: String, optionsOrLoose: Boolean) = this()

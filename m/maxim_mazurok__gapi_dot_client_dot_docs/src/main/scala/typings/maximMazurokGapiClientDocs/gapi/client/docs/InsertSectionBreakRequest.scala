@@ -2,27 +2,25 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertSectionBreakRequest extends StObject {
   
   /**
     * Inserts a newline and a section break at the end of the document body. Section breaks cannot be inserted inside a footnote, header or footer. Because section breaks can only be
     * inserted inside the body, the segment ID field must be empty.
     */
-  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts a newline and a section break at a specific index in the document. The section break must be inserted inside the bounds of an existing Paragraph. For instance, it cannot be
     * inserted at a table's start index (i.e. between the table and its preceding paragraph). Section breaks cannot be inserted inside a table, equation, footnote, header, or footer.
     * Since section breaks can only be inserted inside the body, the segment ID field must be empty.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** The type of section to insert. */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object InsertSectionBreakRequest {
   

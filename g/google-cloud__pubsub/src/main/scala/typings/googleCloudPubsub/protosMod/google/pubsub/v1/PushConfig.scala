@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a PushConfig. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new PushConfig.
   * @param [properties] Properties to set
   */
-class PushConfig () extends IPushConfig {
+class PushConfig ()
+  extends StObject
+     with IPushConfig {
   def this(properties: IPushConfig) = this()
   
   /** PushConfig attributes. */
@@ -40,6 +41,10 @@ class PushConfig () extends IPushConfig {
 }
 object PushConfig {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an OidcToken. */
   @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken")
   @js.native
@@ -47,7 +52,9 @@ object PushConfig {
     * Constructs a new OidcToken.
     * @param [properties] Properties to set
     */
-  class OidcToken () extends IOidcToken {
+  class OidcToken ()
+    extends StObject
+       with IOidcToken {
     def this(properties: IOidcToken) = this()
     
     /** OidcToken audience. */
@@ -66,18 +73,20 @@ object PushConfig {
   }
   object OidcToken {
     
+    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new OidcToken instance using the specified properties.
       * @param [properties] Properties to set
       * @returns OidcToken instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.create")
-    @js.native
-    def create(): OidcToken = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.create")
-    @js.native
-    def create(properties: IOidcToken): OidcToken = js.native
+    @scala.inline
+    def create(): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OidcToken]
+    @scala.inline
+    def create(properties: IOidcToken): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer.
@@ -88,18 +97,14 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Reader): OidcToken = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): OidcToken = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Uint8Array): OidcToken = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): OidcToken = js.native
+    @scala.inline
+    def decode(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    @scala.inline
+    def decode(reader: Reader, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
+    @scala.inline
+    def decode(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer, length delimited.
@@ -109,12 +114,10 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): OidcToken = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): OidcToken = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Encodes the specified OidcToken message. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -123,12 +126,10 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.encode")
-    @js.native
-    def encode(message: IOidcToken): Writer = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.encode")
-    @js.native
-    def encode(message: IOidcToken, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified OidcToken message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -137,12 +138,10 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IOidcToken): Writer = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IOidcToken, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an OidcToken message from a plain object. Also converts values to their respective internal types.
@@ -150,9 +149,8 @@ object PushConfig {
       * @returns OidcToken
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): OidcToken = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Creates a plain object from an OidcToken message. Also converts values to other types if specified.
@@ -161,12 +159,10 @@ object PushConfig {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.toObject")
-    @js.native
-    def toObject(message: OidcToken): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.toObject")
-    @js.native
-    def toObject(message: OidcToken, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: OidcToken): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: OidcToken, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an OidcToken message.
@@ -174,9 +170,8 @@ object PushConfig {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.OidcToken.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -185,12 +180,10 @@ object PushConfig {
     * @returns PushConfig instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.create")
-  @js.native
-  def create(): PushConfig = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.create")
-  @js.native
-  def create(properties: IPushConfig): PushConfig = js.native
+  @scala.inline
+  def create(): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PushConfig]
+  @scala.inline
+  def create(properties: IPushConfig): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer.
@@ -201,18 +194,14 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Reader): PushConfig = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): PushConfig = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): PushConfig = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): PushConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer, length delimited.
@@ -222,12 +211,10 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): PushConfig = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): PushConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Encodes the specified PushConfig message. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -236,12 +223,10 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.encode")
-  @js.native
-  def encode(message: IPushConfig): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.encode")
-  @js.native
-  def encode(message: IPushConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified PushConfig message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -250,12 +235,10 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPushConfig): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPushConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a PushConfig message from a plain object. Also converts values to their respective internal types.
@@ -263,9 +246,8 @@ object PushConfig {
     * @returns PushConfig
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): PushConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Creates a plain object from a PushConfig message. Also converts values to other types if specified.
@@ -274,12 +256,10 @@ object PushConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.toObject")
-  @js.native
-  def toObject(message: PushConfig): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.toObject")
-  @js.native
-  def toObject(message: PushConfig, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: PushConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: PushConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a PushConfig message.
@@ -287,19 +267,17 @@ object PushConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.PushConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an OidcToken. */
-  @js.native
   trait IOidcToken extends StObject {
     
     /** OidcToken audience */
-    var audience: js.UndefOr[String | Null] = js.native
+    var audience: js.UndefOr[String | Null] = js.undefined
     
     /** OidcToken serviceAccountEmail */
-    var serviceAccountEmail: js.UndefOr[String | Null] = js.native
+    var serviceAccountEmail: js.UndefOr[String | Null] = js.undefined
   }
   object IOidcToken {
     

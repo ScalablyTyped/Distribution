@@ -2,7 +2,6 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * included in the response when certain request parameters are set, such as
   * `enable_word_time_offsets`.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends StObject {
     * always provided. The default of 0.0 is a sentinel value indicating
     * `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to
@@ -29,7 +27,7 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A distinct integer value is assigned for every speaker
@@ -38,7 +36,7 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends StObject {
     * diarization_speaker_count, and is only set if speaker diarization is
     * enabled.
     */
-  var speakerTag: js.UndefOr[Double] = js.native
+  var speakerTag: js.UndefOr[Double] = js.undefined
   
   /**
     * Time offset relative to the beginning of the audio, and corresponding to
@@ -46,12 +44,12 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The word corresponding to this set of information.
     */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1WordInfo {
   

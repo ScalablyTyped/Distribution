@@ -13,19 +13,17 @@ import typings.firebaseAnalyticsTypes.mod.MinimalDynamicConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApiKey extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var measurementId: js.UndefOr[String] = js.native
+    var measurementId: js.UndefOr[String] = js.undefined
   }
   object ApiKey {
     
@@ -58,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DynamicConfigPromisesList extends StObject {
     
-    var dynamicConfigPromisesList: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]] = js.native
+    var dynamicConfigPromisesList: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]]
     
-    var initializationPromisesMap: StringDictionary[js.Promise[String]] = js.native
+    var initializationPromisesMap: StringDictionary[js.Promise[String]]
   }
   object DynamicConfigPromisesList {
     
@@ -90,10 +87,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrorInfo extends StObject {
     
-    var errorInfo: String = js.native
+    var errorInfo: String
   }
   object ErrorInfo {
     
@@ -111,58 +107,74 @@ object anon {
     }
   }
   
-  @js.native
   trait GtagCore extends StObject {
     
     @JSName("gtagCore")
-    var gtagCore_Original: Gtag = js.native
+    var gtagCore_Original: Gtag
     @JSName("gtagCore")
-    def gtagCore_config(command: config, targetId: String): Unit = js.native
+    def gtagCore_config(command: config, targetId: String): Unit
     @JSName("gtagCore")
-    def gtagCore_config(command: config, targetId: String, config: ControlParams): Unit = js.native
+    def gtagCore_config(command: config, targetId: String, config: ControlParams): Unit
     @JSName("gtagCore")
-    def gtagCore_config(command: config, targetId: String, config: CustomParams): Unit = js.native
+    def gtagCore_config(command: config, targetId: String, config: CustomParams): Unit
     @JSName("gtagCore")
-    def gtagCore_config(command: config, targetId: String, config: EventParams): Unit = js.native
+    def gtagCore_config(command: config, targetId: String, config: EventParams): Unit
     @JSName("gtagCore")
-    def gtagCore_event(command: event, eventName: String): Unit = js.native
+    def gtagCore_event(command: event, eventName: String): Unit
     @JSName("gtagCore")
-    def gtagCore_event(command: event, eventName: String, eventParams: ControlParams): Unit = js.native
+    def gtagCore_event(command: event, eventName: String, eventParams: ControlParams): Unit
     @JSName("gtagCore")
-    def gtagCore_event(command: event, eventName: String, eventParams: CustomParams): Unit = js.native
+    def gtagCore_event(command: event, eventName: String, eventParams: CustomParams): Unit
     @JSName("gtagCore")
-    def gtagCore_event(command: event, eventName: String, eventParams: EventParams): Unit = js.native
+    def gtagCore_event(command: event, eventName: String, eventParams: EventParams): Unit
     @JSName("gtagCore")
-    def gtagCore_set(command: set, config: CustomParams): Unit = js.native
+    def gtagCore_set(command: set, config: CustomParams): Unit
     
     @JSName("wrappedGtag")
-    var wrappedGtag_Original: Gtag = js.native
+    var wrappedGtag_Original: Gtag
     @JSName("wrappedGtag")
-    def wrappedGtag_config(command: config, targetId: String): Unit = js.native
+    def wrappedGtag_config(command: config, targetId: String): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_config(command: config, targetId: String, config: ControlParams): Unit = js.native
+    def wrappedGtag_config(command: config, targetId: String, config: ControlParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_config(command: config, targetId: String, config: CustomParams): Unit = js.native
+    def wrappedGtag_config(command: config, targetId: String, config: CustomParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_config(command: config, targetId: String, config: EventParams): Unit = js.native
+    def wrappedGtag_config(command: config, targetId: String, config: EventParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_event(command: event, eventName: String): Unit = js.native
+    def wrappedGtag_event(command: event, eventName: String): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_event(command: event, eventName: String, eventParams: ControlParams): Unit = js.native
+    def wrappedGtag_event(command: event, eventName: String, eventParams: ControlParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_event(command: event, eventName: String, eventParams: CustomParams): Unit = js.native
+    def wrappedGtag_event(command: event, eventName: String, eventParams: CustomParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_event(command: event, eventName: String, eventParams: EventParams): Unit = js.native
+    def wrappedGtag_event(command: event, eventName: String, eventParams: EventParams): Unit
     @JSName("wrappedGtag")
-    def wrappedGtag_set(command: set, config: CustomParams): Unit = js.native
+    def wrappedGtag_set(command: set, config: CustomParams): Unit
+  }
+  object GtagCore {
+    
+    @scala.inline
+    def apply(gtagCore: Gtag, wrappedGtag: Gtag): GtagCore = {
+      val __obj = js.Dynamic.literal(gtagCore = gtagCore.asInstanceOf[js.Any], wrappedGtag = wrappedGtag.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GtagCore]
+    }
+    
+    @scala.inline
+    implicit class GtagCoreMutableBuilder[Self <: GtagCore] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGtagCore(value: Gtag): Self = StObject.set(x, "gtagCore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWrappedGtag(value: Gtag): Self = StObject.set(x, "wrappedGtag", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait HttpStatus extends StObject {
     
-    var httpStatus: Double = js.native
+    var httpStatus: Double
     
-    var responseMessage: String = js.native
+    var responseMessage: String
   }
   object HttpStatus {
     
@@ -183,10 +195,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -204,10 +215,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Reason extends StObject {
     
-    var reason: Error = js.native
+    var reason: Error
   }
   object Reason {
     
@@ -225,10 +235,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ThrottleEndTimeMillis extends StObject {
     
-    var throttleEndTimeMillis: Double = js.native
+    var throttleEndTimeMillis: Double
   }
   object ThrottleEndTimeMillis {
     

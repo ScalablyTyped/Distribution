@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Other elements required for this mapping (from context)
   */
-@js.native
-trait ConceptMapGroupElementTargetDependsOn extends BackboneElement {
+trait ConceptMapGroupElementTargetDependsOn
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'property'.
     */
-  var _property: js.UndefOr[Element] = js.native
+  var _property: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Value of the referenced element
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Display for the code
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to property mapping depends on
     */
-  var property: uri = js.native
+  var property: uri
   
   /**
     * Code System (if necessary)
     */
-  var system: js.UndefOr[uri] = js.native
+  var system: js.UndefOr[uri] = js.undefined
 }
 object ConceptMapGroupElementTargetDependsOn {
   

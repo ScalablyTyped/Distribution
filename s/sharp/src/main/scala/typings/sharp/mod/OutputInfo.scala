@@ -2,30 +2,28 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputInfo extends StObject {
   
-  var channels: Double = js.native
+  var channels: Double
   
   /** Only defined when using a crop strategy */
-  var cropOffsetLeft: js.UndefOr[Double] = js.native
+  var cropOffsetLeft: js.UndefOr[Double] = js.undefined
   
   /** Only defined when using a crop strategy */
-  var cropOffsetTop: js.UndefOr[Double] = js.native
+  var cropOffsetTop: js.UndefOr[Double] = js.undefined
   
-  var format: String = js.native
+  var format: String
   
-  var height: Double = js.native
+  var height: Double
   
   /** indicating if premultiplication was used */
-  var premultiplied: Boolean = js.native
+  var premultiplied: Boolean
   
-  var size: Double = js.native
+  var size: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object OutputInfo {
   

@@ -32,7 +32,6 @@ import typings.instagramPrivateApi.storyResponseOptionsMod.StoryMusicQuestionRes
 import typings.instagramPrivateApi.storyResponseOptionsMod.StoryTextQuestionResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryMod {
@@ -53,39 +52,39 @@ object mediaRepositoryMod {
     
     def commentsBulkDelete(mediaId: String, commentIds: js.Array[String]): js.Promise[StatusResponse] = js.native
     
-    def commentsDisable(mediaId: js.Any): js.Promise[_] = js.native
+    def commentsDisable(mediaId: js.Any): js.Promise[js.Any] = js.native
     
-    def commentsEnable(mediaId: js.Any): js.Promise[_] = js.native
+    def commentsEnable(mediaId: js.Any): js.Promise[js.Any] = js.native
     
     def configure(options: MediaConfigureTimelineOptions): js.Promise[MediaRepositoryConfigureResponseRootObject] = js.native
     
-    def configureSidecar(options: MediaConfigureSidecarOptions): js.Promise[_] = js.native
+    def configureSidecar(options: MediaConfigureSidecarOptions): js.Promise[js.Any] = js.native
     
-    def configureToIgtv(options: MediaConfigureToIgtvOptions): js.Promise[_] = js.native
+    def configureToIgtv(options: MediaConfigureToIgtvOptions): js.Promise[js.Any] = js.native
     
-    def configureToStory(options: MediaConfigureStoryPhotoOptions): js.Promise[_] = js.native
+    def configureToStory(options: MediaConfigureStoryPhotoOptions): js.Promise[js.Any] = js.native
     
-    def configureToStoryVideo(options: MediaConfigureStoryVideoOptions): js.Promise[_] = js.native
+    def configureToStoryVideo(options: MediaConfigureStoryVideoOptions): js.Promise[js.Any] = js.native
     
     def configureVideo(options: MediaConfigureTimelineVideoOptions): js.Promise[MediaRepositoryConfigureResponseRootObject] = js.native
     
-    def delete(hasMediaIdMediaType: MediaType): js.Promise[_] = js.native
+    def delete(hasMediaIdMediaType: MediaType): js.Promise[js.Any] = js.native
     
     def editMedia(hasMediaIdCaptionText: CaptionText): js.Promise[MediaEditResponseRootObject] = js.native
     
     def info(mediaId: String): js.Promise[MediaInfoResponseRootObject] = js.native
     
-    def like(options: LikeRequestOptions): js.Promise[_] = js.native
+    def like(options: LikeRequestOptions): js.Promise[js.Any] = js.native
     
     var likeAction: js.Any = js.native
     
-    def likeComment(commentId: String): js.Promise[_] = js.native
+    def likeComment(commentId: String): js.Promise[js.Any] = js.native
     
     def likers(id: String): js.Promise[MediaRepositoryLikersResponseRootObject] = js.native
     
     def onlyMe(mediaId: String): js.Promise[StatusResponse] = js.native
     
-    def save(mediaId: String): js.Promise[_] = js.native
+    def save(mediaId: String): js.Promise[js.Any] = js.native
     
     def seen(reels: StringDictionary[js.Array[String]]): js.Promise[StatusResponse] = js.native
     def seen(reels: StringDictionary[js.Array[String]], module: IgAppModule): js.Promise[StatusResponse] = js.native
@@ -128,13 +127,13 @@ object mediaRepositoryMod {
     
     def undoOnlyMe(mediaId: String): js.Promise[StatusResponse] = js.native
     
-    def unlike(options: UnlikeRequestOptions): js.Promise[_] = js.native
+    def unlike(options: UnlikeRequestOptions): js.Promise[js.Any] = js.native
     
-    def unlikeComment(commentId: String): js.Promise[_] = js.native
+    def unlikeComment(commentId: String): js.Promise[js.Any] = js.native
     
-    def unsave(mediaId: String): js.Promise[_] = js.native
+    def unsave(mediaId: String): js.Promise[js.Any] = js.native
     
-    def uploadFinish(options: Sourcetype): js.Promise[_] = js.native
+    def uploadFinish(options: Sourcetype): js.Promise[js.Any] = js.native
   }
   /* static members */
   object MediaRepository {

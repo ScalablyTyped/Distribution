@@ -3,44 +3,42 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the white balance settings on a capture device. */
-@js.native
 trait WhiteBalanceControl extends StObject {
   
   /** Gets the maximum white balance value. */
-  var max: Double = js.native
+  var max: Double
   
   /** Gets the minimum white balance value. */
-  var min: Double = js.native
+  var min: Double
   
   /** Gets the color temperature preset. */
-  var preset: ColorTemperaturePreset = js.native
+  var preset: ColorTemperaturePreset
   
   /**
     * Asynchronously sets the color temperature Preset .
     * @param preset The color temperate preset to set the Preset property to.
     * @return The object that is used to control the asynchronous operation.
     */
-  def setPresetAsync(preset: ColorTemperaturePreset): IPromiseWithIAsyncAction = js.native
+  def setPresetAsync(preset: ColorTemperaturePreset): IPromiseWithIAsyncAction
   
   /**
     * Asynchronously sets the color temperature Value .
     * @param temperature The temperature value to set the Value property to.
     * @return The object that is used to control the asynchronous operation.
     */
-  def setValueAsync(temperature: Double): IPromiseWithIAsyncAction = js.native
+  def setValueAsync(temperature: Double): IPromiseWithIAsyncAction
   
   /** Gets the step value. */
-  var step: Double = js.native
+  var step: Double
   
   /** Gets a value that specifies if the capture device supports the white balance control. */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the color temperature value. */
-  var value: Double = js.native
+  var value: Double
 }
 object WhiteBalanceControl {
   

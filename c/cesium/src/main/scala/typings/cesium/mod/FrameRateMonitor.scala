@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.MinimumFrameRateAfterWarmup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "FrameRateMonitor")
@@ -17,13 +16,13 @@ class FrameRateMonitor () extends StObject {
   
   var lastFramesPerSecond: Double = js.native
   
-  var lowFrameRate: Event[js.Array[_]] = js.native
+  var lowFrameRate: Event[js.Array[js.Any]] = js.native
   
   var minimumFrameRateAfterWarmup: Double = js.native
   
   var minimumFrameRateDuringWarmup: Double = js.native
   
-  var nominalFrameRate: Event[js.Array[_]] = js.native
+  var nominalFrameRate: Event[js.Array[js.Any]] = js.native
   
   def pause(): Unit = js.native
   
@@ -51,7 +50,6 @@ object FrameRateMonitor {
   def defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSettings")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "FrameRateMonitor.fromScene")
-  @js.native
-  def fromScene(scene: Scene): FrameRateMonitor = js.native
+  @scala.inline
+  def fromScene(scene: Scene): FrameRateMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[FrameRateMonitor]
 }

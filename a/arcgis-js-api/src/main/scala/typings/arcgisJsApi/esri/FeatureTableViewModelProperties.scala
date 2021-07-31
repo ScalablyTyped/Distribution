@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTableViewModelProperties extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait FeatureTableViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#attachmentsEnabled)
     */
-  var attachmentsEnabled: js.UndefOr[Boolean] = js.native
+  var attachmentsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether editing is enabled on the data within the feature table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#editingEnabled)
     */
-  var editingEnabled: js.UndefOr[Boolean] = js.native
+  var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of individual configuration objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#fieldConfigs)
     */
-  var fieldConfigs: js.UndefOr[js.Array[FieldColumnConfigProperties]] = js.native
+  var fieldConfigs: js.UndefOr[js.Array[FieldColumnConfigProperties]] = js.undefined
   
   /**
     * A collection of fields to remain hidden within the table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#hiddenFields)
     */
-  var hiddenFields: js.UndefOr[CollectionProperties[String]] = js.native
+  var hiddenFields: js.UndefOr[CollectionProperties[String]] = js.undefined
   
   /**
     * Indicates whether to highlight the associated feature when a row is selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightOnRowSelectEnabled)
     */
-  var highlightOnRowSelectEnabled: js.UndefOr[Boolean] = js.native
+  var highlightOnRowSelectEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) containing the fields and attributes to display within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.native
+  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object FeatureTableViewModelProperties {
   

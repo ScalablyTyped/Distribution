@@ -7,33 +7,25 @@ import typings.cadesplugin.cadespluginNumbers.`3`
 import typings.cadesplugin.cadespluginNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CAPICOM_STORE_LOCATION extends StObject {
   
-  val CAPICOM_ACTIVE_DIRECTORY_USER_STORE: `3` = js.native
+  val CAPICOM_ACTIVE_DIRECTORY_USER_STORE: `3`
   
-  val CAPICOM_CURRENT_USER_STORE: `2` = js.native
+  val CAPICOM_CURRENT_USER_STORE: `2`
   
-  val CAPICOM_LOCAL_MACHINE_STORE: `1` = js.native
+  val CAPICOM_LOCAL_MACHINE_STORE: `1`
   
-  val CAPICOM_MEMORY_STORE: `0` = js.native
+  val CAPICOM_MEMORY_STORE: `0`
   
-  val CAPICOM_SMART_CARD_USER_STORE: `4` = js.native
+  val CAPICOM_SMART_CARD_USER_STORE: `4`
 }
 object CAPICOM_STORE_LOCATION {
   
   @scala.inline
-  def apply(
-    CAPICOM_ACTIVE_DIRECTORY_USER_STORE: `3`,
-    CAPICOM_CURRENT_USER_STORE: `2`,
-    CAPICOM_LOCAL_MACHINE_STORE: `1`,
-    CAPICOM_MEMORY_STORE: `0`,
-    CAPICOM_SMART_CARD_USER_STORE: `4`
-  ): CAPICOM_STORE_LOCATION = {
-    val __obj = js.Dynamic.literal(CAPICOM_ACTIVE_DIRECTORY_USER_STORE = CAPICOM_ACTIVE_DIRECTORY_USER_STORE.asInstanceOf[js.Any], CAPICOM_CURRENT_USER_STORE = CAPICOM_CURRENT_USER_STORE.asInstanceOf[js.Any], CAPICOM_LOCAL_MACHINE_STORE = CAPICOM_LOCAL_MACHINE_STORE.asInstanceOf[js.Any], CAPICOM_MEMORY_STORE = CAPICOM_MEMORY_STORE.asInstanceOf[js.Any], CAPICOM_SMART_CARD_USER_STORE = CAPICOM_SMART_CARD_USER_STORE.asInstanceOf[js.Any])
+  def apply(): CAPICOM_STORE_LOCATION = {
+    val __obj = js.Dynamic.literal(CAPICOM_ACTIVE_DIRECTORY_USER_STORE = 3, CAPICOM_CURRENT_USER_STORE = 2, CAPICOM_LOCAL_MACHINE_STORE = 1, CAPICOM_MEMORY_STORE = 0, CAPICOM_SMART_CARD_USER_STORE = 4)
     __obj.asInstanceOf[CAPICOM_STORE_LOCATION]
   }
   

@@ -3,17 +3,15 @@ package typings.postmark
 import typings.postmark.serverMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serversMod {
   
-  @js.native
   trait Servers extends StObject {
     
-    var Servers: js.Array[Server] = js.native
+    var Servers: js.Array[Server]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object Servers {
     

@@ -2,46 +2,44 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCodeCoveragesInput extends StObject {
   
   /**
     * The maximum line coverage percentage to report.
     */
-  var maxLineCoveragePercentage: js.UndefOr[Percentage] = js.native
+  var maxLineCoveragePercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var maxResults: js.UndefOr[PageSize] = js.native
+  var maxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The minimum line coverage percentage to report.
     */
-  var minLineCoveragePercentage: js.UndefOr[Percentage] = js.native
+  var minLineCoveragePercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The nextToken value returned from a previous call to DescribeCodeCoverages. This specifies the next item to return. To return the beginning of the list, exclude this parameter.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     *  The ARN of the report for which test cases are returned. 
     */
-  var reportArn: NonEmptyString = js.native
+  var reportArn: NonEmptyString
   
   /**
     * Specifies how the results are sorted. Possible values are:  FILE_PATH  The results are sorted by file path.  LINE_COVERAGE_PERCENTAGE  The results are sorted by the percentage of lines that are covered.  
     */
-  var sortBy: js.UndefOr[ReportCodeCoverageSortByType] = js.native
+  var sortBy: js.UndefOr[ReportCodeCoverageSortByType] = js.undefined
   
   /**
     * Specifies if the results are sorted in ascending or descending order.
     */
-  var sortOrder: js.UndefOr[SortOrderType] = js.native
+  var sortOrder: js.UndefOr[SortOrderType] = js.undefined
 }
 object DescribeCodeCoveragesInput {
   

@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftImageOffset extends StObject {
   
-  var leftImageOffset: js.UndefOr[Double] = js.native
+  var leftImageOffset: js.UndefOr[Double] = js.undefined
   
-  var topImageOffset: js.UndefOr[Double] = js.native
+  var topImageOffset: js.UndefOr[Double] = js.undefined
 }
 object LeftImageOffset {
   

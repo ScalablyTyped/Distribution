@@ -2,17 +2,17 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolygonOptions extends ShapeOptions {
+trait PolygonOptions
+  extends StObject
+     with ShapeOptions {
   
   /** @default 0.5 */
-  val radius: js.UndefOr[Double] = js.native
+  val radius: js.UndefOr[Double] = js.undefined
   
   /** @default 3 */
-  val sides: js.UndefOr[Double] = js.native
+  val sides: js.UndefOr[Double] = js.undefined
 }
 object PolygonOptions {
   

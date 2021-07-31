@@ -2,21 +2,20 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.update method
   */
-@js.native
 trait InstanceUpdateOptions
-  extends InstanceSaveOptions
+  extends StObject
+     with InstanceSaveOptions
      with InstanceSetOptions {
   
   /**
     * A hash of attributes to describe your search. See above for examples.
     */
-  var where: js.UndefOr[AnyWhereOptions | (js.Array[col | and | or | String])] = js.native
+  var where: js.UndefOr[AnyWhereOptions | (js.Array[col | and | or | String])] = js.undefined
 }
 object InstanceUpdateOptions {
   

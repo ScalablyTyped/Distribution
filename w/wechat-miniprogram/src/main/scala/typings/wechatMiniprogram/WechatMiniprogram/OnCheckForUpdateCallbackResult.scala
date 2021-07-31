@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnCheckForUpdateCallbackResult extends StObject {
   
   /** 是否有新版本 */
-  var hasUpdate: Boolean = js.native
+  var hasUpdate: Boolean
 }
 object OnCheckForUpdateCallbackResult {
   

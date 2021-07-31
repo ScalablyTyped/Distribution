@@ -4,25 +4,23 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Light extends StObject {
   
-  var anchor: js.UndefOr[map | viewport] = js.native
+  var anchor: js.UndefOr[map | viewport] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var `color-transition`: js.UndefOr[Transition] = js.native
+  var `color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var intensity: js.UndefOr[Double] = js.native
+  var intensity: js.UndefOr[Double] = js.undefined
   
-  var `intensity-transition`: js.UndefOr[Transition] = js.native
+  var `intensity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var position: js.UndefOr[js.Array[Double]] = js.native
+  var position: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `position-transition`: js.UndefOr[Transition] = js.native
+  var `position-transition`: js.UndefOr[Transition] = js.undefined
 }
 object Light {
   

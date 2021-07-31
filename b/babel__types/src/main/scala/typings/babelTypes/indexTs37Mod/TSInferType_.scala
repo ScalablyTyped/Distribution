@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSInferType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSInferType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSInferType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var typeParameter: TSTypeParameter_ = js.native
+  var typeParameter: TSTypeParameter_
   
   @JSName("type")
-  var type_TSInferType_ : TSInferType = js.native
+  var type_TSInferType_ : TSInferType
 }
 object TSInferType_ {
   
   @scala.inline
-  def apply(`type`: TSInferType, typeParameter: TSTypeParameter_): TSInferType_ = {
-    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeParameter: TSTypeParameter_): TSInferType_ = {
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSInferType")
     __obj.asInstanceOf[TSInferType_]
   }
   

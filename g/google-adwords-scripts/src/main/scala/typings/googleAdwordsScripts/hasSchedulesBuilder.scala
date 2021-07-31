@@ -2,13 +2,11 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasSchedulesBuilder[B] extends StObject {
   
-  def withSchedules(schedules: ExtensionScheduleInput): B = js.native
+  def withSchedules(schedules: ExtensionScheduleInput): B
 }
 object hasSchedulesBuilder {
   
@@ -19,7 +17,7 @@ object hasSchedulesBuilder {
   }
   
   @scala.inline
-  implicit class hasSchedulesBuilderMutableBuilder[Self <: hasSchedulesBuilder[_], B] (val x: Self with hasSchedulesBuilder[B]) extends AnyVal {
+  implicit class hasSchedulesBuilderMutableBuilder[Self <: hasSchedulesBuilder[?], B] (val x: Self & hasSchedulesBuilder[B]) extends AnyVal {
     
     @scala.inline
     def setWithSchedules(value: ExtensionScheduleInput => B): Self = StObject.set(x, "withSchedules", js.Any.fromFunction1(value))

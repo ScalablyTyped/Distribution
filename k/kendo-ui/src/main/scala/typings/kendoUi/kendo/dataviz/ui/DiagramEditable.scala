@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramEditable extends StObject {
   
-  var connectionTemplate: js.UndefOr[String | js.Function] = js.native
+  var connectionTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var drag: js.UndefOr[Boolean | DiagramEditableDrag] = js.native
+  var drag: js.UndefOr[Boolean | DiagramEditableDrag] = js.undefined
   
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[Boolean | DiagramEditableResize] = js.native
+  var resize: js.UndefOr[Boolean | DiagramEditableResize] = js.undefined
   
-  var rotate: js.UndefOr[Boolean | DiagramEditableRotate] = js.native
+  var rotate: js.UndefOr[Boolean | DiagramEditableRotate] = js.undefined
   
-  var shapeTemplate: js.UndefOr[String | js.Function] = js.native
+  var shapeTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var tools: js.UndefOr[js.Array[DiagramEditableTool]] = js.native
+  var tools: js.UndefOr[js.Array[DiagramEditableTool]] = js.undefined
 }
 object DiagramEditable {
   

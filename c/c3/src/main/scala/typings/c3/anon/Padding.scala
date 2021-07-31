@@ -5,26 +5,24 @@ import typings.c3.c3Strings.left
 import typings.c3.c3Strings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
   /**
     * Spacing around the title.
     */
-  var padding: js.UndefOr[typings.c3.mod.Padding] = js.native
+  var padding: js.UndefOr[typings.c3.mod.Padding] = js.undefined
   
   /**
     * Chart title text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Position the title relative to the chart.
     */
-  var title_position: js.UndefOr[right | center | left] = js.native
+  var title_position: js.UndefOr[right | center | left] = js.undefined
 }
 object Padding {
   

@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceSearchResult extends StObject {
   
   /**
@@ -20,20 +18,20 @@ trait ResourceSearchResult extends StObject {
   var additionalAttributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The type of this resource. Example: `compute.googleapis.com/Disk`. To search against the `asset_type`: * specify the `asset_type` field in your search request. */
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
   /**
     * One or more paragraphs of text description of this resource. Maximum length could be up to 1M bytes. To search against the `description`: * use a field query. Example:
     * `description:"*important instance*"` * use a free text query. Example: `"*important instance*"`
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The display name of this resource. To search against the `display_name`: * use a field query. Example: `displayName:"My Instance"` * use a free text query. Example: `"My Instance"` */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Labels associated with this resource. See [Labelling and grouping GCP
@@ -44,34 +42,34 @@ trait ResourceSearchResult extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Location can be `global`, regional like `us-east1`, or zonal like `us-west1-b`. To search against the `location`: * use a field query. Example: `location:us-west*` * use a free text
     * query. Example: `us-west*`
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The full resource name of this resource. Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1`. See [Cloud Asset Inventory Resource Name
     * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format) for more information. To search against the `name`: * use a field query. Example: `name:instance1` * use
     * a free text query. Example: `instance1`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Network tags associated with this resource. Like labels, network tags are a type of annotations used to group GCP resources. See [Labelling GCP
     * resources](https://cloud.google.com/blog/products/gcp/labelling-and-grouping-your-google-cloud-platform-resources) for more information. To search against the `network_tags`: * use
     * a field query. Example: `networkTags:internal` * use a free text query. Example: `internal`
     */
-  var networkTags: js.UndefOr[js.Array[String]] = js.native
+  var networkTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The project that this resource belongs to, in the form of projects/{PROJECT_NUMBER}. To search against the `project`: * specify the `scope` field as this project in your search
     * request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
 }
 object ResourceSearchResult {
   
@@ -88,7 +86,7 @@ object ResourceSearchResult {
     def setAdditionalAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "additionalAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -116,7 +114,7 @@ object ResourceSearchResult {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.ResourceSearchResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

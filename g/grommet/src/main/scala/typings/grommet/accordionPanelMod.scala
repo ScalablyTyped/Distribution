@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionPanelMod {
@@ -19,29 +18,28 @@ object accordionPanelMod {
   @js.native
   class AccordionPanel protected ()
     extends Component[
-          AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/AccordionPanel", "AccordionPanel")
   @js.native
   val AccordionPanel: ComponentClass[
-    AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait AccordionPanelProps extends StObject {
     
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
     
-    var label: js.UndefOr[String | ReactNode] = js.native
+    var label: js.UndefOr[String | ReactNode] = js.undefined
   }
   object AccordionPanelProps {
     

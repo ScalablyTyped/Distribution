@@ -2,16 +2,14 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomatedDiscoveryInformation extends StObject {
   
   /**
     * Time that automated discovery last ran.
     */
-  var LastRunTime: js.UndefOr[DateTime] = js.native
+  var LastRunTime: js.UndefOr[DateTime] = js.undefined
 }
 object AutomatedDiscoveryInformation {
   

@@ -9,7 +9,6 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarTypesMod {
@@ -19,15 +18,15 @@ object calendarTypesMod {
   object DateRangeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType & Double] = js.native
     
-    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Day with Double = js.native
+    /* 0 */ val Day: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Day & Double = js.native
     
-    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Month with Double = js.native
+    /* 2 */ val Month: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Month & Double = js.native
     
-    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Week with Double = js.native
+    /* 1 */ val Week: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.Week & Double = js.native
     
-    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek with Double = js.native
+    /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar/Calendar.types", "DayOfWeek")
@@ -35,21 +34,21 @@ object calendarTypesMod {
   object DayOfWeek extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek & Double] = js.native
     
-    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Friday with Double = js.native
+    /* 5 */ val Friday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Friday & Double = js.native
     
-    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Monday with Double = js.native
+    /* 1 */ val Monday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Monday & Double = js.native
     
-    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Saturday with Double = js.native
+    /* 6 */ val Saturday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Saturday & Double = js.native
     
-    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Sunday with Double = js.native
+    /* 0 */ val Sunday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Sunday & Double = js.native
     
-    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Thursday with Double = js.native
+    /* 4 */ val Thursday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Thursday & Double = js.native
     
-    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Tuesday with Double = js.native
+    /* 2 */ val Tuesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Tuesday & Double = js.native
     
-    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday with Double = js.native
+    /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar/Calendar.types", "FirstWeekOfYear")
@@ -57,20 +56,19 @@ object calendarTypesMod {
   object FirstWeekOfYear extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear & Double] = js.native
     
-    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstDay with Double = js.native
+    /* 0 */ val FirstDay: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
     
-    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek with Double = js.native
+    /* 2 */ val FirstFourDayWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
     
-    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
+    /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
   }
   
-  @js.native
   trait ICalendar extends StObject {
     
     /** Sets focus to the selected date. */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ICalendar {
     
@@ -114,26 +112,25 @@ object calendarTypesMod {
     def formatYear(date: Date): String = js.native
   }
   
-  @js.native
   trait ICalendarIconStrings extends StObject {
     
     /**
       * Close icon
       * @defaultvalue 'CalculatorMultiply'
       */
-    var closeIcon: js.UndefOr[String] = js.native
+    var closeIcon: js.UndefOr[String] = js.undefined
     
     /**
       * FabricMDL2Icons name for the left navigation icon.  Previous default: ChevronLeft.
       * @defaultvalue 'Up'
       */
-    var leftNavigation: js.UndefOr[String] = js.native
+    var leftNavigation: js.UndefOr[String] = js.undefined
     
     /**
       * FabricMDL2Icons name for the right navigation icon.  Previous default: ChevronRight.
       * @defaultvalue 'Down'
       */
-    var rightNavigation: js.UndefOr[String] = js.native
+    var rightNavigation: js.UndefOr[String] = js.undefined
   }
   object ICalendarIconStrings {
     
@@ -166,16 +163,16 @@ object calendarTypesMod {
     }
   }
   
-  @js.native
   trait ICalendarProps
-    extends HTMLAttributes[HTMLElement]
-       with IBaseProps[ICalendar] {
+    extends StObject
+       with IBaseProps[ICalendar]
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Allows all dates and buttons to be focused, including disabled ones
       * @defaultvalue false
       */
-    var allFocusable: js.UndefOr[Boolean] = js.native
+    var allFocusable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the month view should automatically navigate to the next or previous date range
@@ -184,76 +181,76 @@ object calendarTypesMod {
       * picker will automatically navigate to the month of April.
       * @defaultvalue false
       */
-    var autoNavigateOnSelection: js.UndefOr[Boolean] = js.native
+    var autoNavigateOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The date range type indicating how  many days should be selected as the user
       * selects days
       * @defaultvalue DateRangeType.Day
       */
-    var dateRangeType: js.UndefOr[DateRangeType] = js.native
+    var dateRangeType: js.UndefOr[DateRangeType] = js.undefined
     
     /**
       * Apply additional formating to dates, for example localized date formatting.
       */
-    var dateTimeFormatter: js.UndefOr[ICalendarFormatDateCallbacks] = js.native
+    var dateTimeFormatter: js.UndefOr[ICalendarFormatDateCallbacks] = js.undefined
     
     /**
       * The first day of the week for your locale.
       * @defaultvalue DayOfWeek.Sunday
       */
-    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.native
+    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
     
     /**
       * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
       * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
       * @defaultvalue FirstWeekOfYear.FirstDay
       */
-    var firstWeekOfYear: js.UndefOr[FirstWeekOfYear] = js.native
+    var firstWeekOfYear: js.UndefOr[FirstWeekOfYear] = js.undefined
     
     /**
       * Whether the month picker should highlight the current month
       * @defaultvalue false
       */
-    var highlightCurrentMonth: js.UndefOr[Boolean] = js.native
+    var highlightCurrentMonth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the month picker should highlight the selected month
       * @defaultvalue false
       */
-    var highlightSelectedMonth: js.UndefOr[Boolean] = js.native
+    var highlightSelectedMonth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the day picker is shown beside the month picker or hidden.
       * @defaultvalue true
       */
-    var isDayPickerVisible: js.UndefOr[Boolean] = js.native
+    var isDayPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the month picker is shown beside the day picker or hidden.
       * @defaultvalue true
       */
-    var isMonthPickerVisible: js.UndefOr[Boolean] = js.native
+    var isMonthPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set the Calendar will not allow navigation to or selection of a date later than this value.
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * If set the Calendar will not allow navigation to or selection of a date earlier than this value.
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Customize navigation icons using ICalendarIconStrings
       */
-    var navigationIcons: js.UndefOr[ICalendarIconStrings] = js.native
+    var navigationIcons: js.UndefOr[ICalendarIconStrings] = js.undefined
     
     /**
       * Callback issued when calendar is closed
       */
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback issued when a date is selected
@@ -263,87 +260,87 @@ object calendarTypesMod {
       */
     var onSelectDate: js.UndefOr[
         js.Function2[/* date */ Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[Date]], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If set the Calendar will not allow selection of dates in this array.
       */
-    var restrictedDates: js.UndefOr[js.Array[Date]] = js.native
+    var restrictedDates: js.UndefOr[js.Array[Date]] = js.undefined
     
     /**
       * When clicking on "Today", select the date and close the calendar.
       * @defaultvalue false
       */
-    var selectDateOnClick: js.UndefOr[Boolean] = js.native
+    var selectDateOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This property has been removed at 0.80.0 in place of the `focus` method, to be removed \@ 1.0.0.
       * @deprecated Replaced with the `focus` method.
       */
-    var shouldFocusOnMount: js.UndefOr[Boolean] = js.native
+    var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the close button should be shown or not
       * @defaultvalue false
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the "Go to today" link should be shown or not
       */
-    var showGoToToday: js.UndefOr[Boolean] = js.native
+    var showGoToToday: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show month picker on top of date picker when visible.
       * @defaultvalue false
       */
-    var showMonthPickerAsOverlay: js.UndefOr[Boolean] = js.native
+    var showMonthPickerAsOverlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the calendar should show 6 weeks by default.
       * @defaultvalue false
       */
-    var showSixWeeksByDefault: js.UndefOr[Boolean] = js.native
+    var showSixWeeksByDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the calendar should show the week number (weeks 1 to 53) before each week row
       * @defaultvalue false
       */
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Localized strings to use in the Calendar
       */
-    var strings: ICalendarStrings | Null = js.native
+    var strings: ICalendarStrings | Null
     
     /**
       * Value of today. If null, current time in client machine will be used.
       */
-    var today: js.UndefOr[Date] = js.native
+    var today: js.UndefOr[Date] = js.undefined
     
     /**
       * Default value of the Calendar, if any
       */
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
     
     /**
       * The days that are selectable when dateRangeType is WorkWeek.
       * If dateRangeType is not WorkWeek this property does nothing.
       * @defaultvalue [Monday,Tuesday,Wednesday,Thursday,Friday]
       */
-    var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.native
+    var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
     
     /**
       * Whether the year picker is enabled
       * @defaultvalue false
       */
-    var yearPickerHidden: js.UndefOr[Boolean] = js.native
+    var yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   }
   object ICalendarProps {
     
     @scala.inline
     def apply(): ICalendarProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(strings = null)
       __obj.asInstanceOf[ICalendarProps]
     }
     
@@ -526,90 +523,89 @@ object calendarTypesMod {
     }
   }
   
-  @js.native
   trait ICalendarStrings extends StObject {
     
     /**
       * Aria-label for the "close" button.
       */
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * An array of strings for the full names of days of the week.
       * The array is 0-based, so days[0] should be the full name of Sunday.
       */
-    var days: js.Array[String] = js.native
+    var days: js.Array[String]
     
     /**
       * String to render for button to direct the user to today's date.
       */
-    var goToToday: String = js.native
+    var goToToday: String
     
     /**
       * Aria-label format string for the header button in the month picker. Should have 1 string param, e.g. "`{0}`,
       * select to change the year". This aria-label will only be applied if the year picker is enabled; otherwise
       * the label will default to the header string, e.g. "2019".
       */
-    var monthPickerHeaderAriaLabel: js.UndefOr[String] = js.native
+    var monthPickerHeaderAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * An array of strings for the full names of months.
       * The array is 0-based, so months[0] should be the full name of January.
       */
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
     /**
       * Aria-label for the "next month" button.
       */
-    var nextMonthAriaLabel: js.UndefOr[String] = js.native
+    var nextMonthAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label for the "next year" button.
       */
-    var nextYearAriaLabel: js.UndefOr[String] = js.native
+    var nextYearAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label for the "next year range" button.
       */
-    var nextYearRangeAriaLabel: js.UndefOr[String] = js.native
+    var nextYearRangeAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label for the "previous month" button.
       */
-    var prevMonthAriaLabel: js.UndefOr[String] = js.native
+    var prevMonthAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label for the "previous year" button.
       */
-    var prevYearAriaLabel: js.UndefOr[String] = js.native
+    var prevYearAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label for the "previous year range" button.
       */
-    var prevYearRangeAriaLabel: js.UndefOr[String] = js.native
+    var prevYearRangeAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * An array of strings for the initials of the days of the week.
       * The array is 0-based, so days[0] should be the initial of Sunday.
       */
-    var shortDays: js.Array[String] = js.native
+    var shortDays: js.Array[String]
     
     /**
       * An array of strings for the short names of months.
       * The array is 0-based, so shortMonths[0] should be the short name of January.
       */
-    var shortMonths: js.Array[String] = js.native
+    var shortMonths: js.Array[String]
     
     /**
       * Aria-label format string for the week number header. Should have 1 string param e.g. "week number \{0\}"
       */
-    var weekNumberFormatString: js.UndefOr[String] = js.native
+    var weekNumberFormatString: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label format string for the header button in the year picker.
       * Should have 1 string param, e.g. "`{0}`, select to change the month"
       */
-    var yearPickerHeaderAriaLabel: js.UndefOr[String] = js.native
+    var yearPickerHeaderAriaLabel: js.UndefOr[String] = js.undefined
   }
   object ICalendarStrings {
     

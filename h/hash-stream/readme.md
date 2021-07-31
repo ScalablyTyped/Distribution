@@ -11,8 +11,8 @@ Get a hash of a file or a stream
 | Full name          | hash-stream |
 | Keywords           | hash, stream |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 12218 |
+| # dependents       | 14 |
+| # downloads        | 17770 |
 | # stars            | 0 |
 
 ## Links

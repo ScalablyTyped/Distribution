@@ -2,19 +2,19 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StyleHTMLAttributes[T] extends HTMLAttributes[T] {
+trait StyleHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object StyleHTMLAttributes {
   
@@ -25,7 +25,7 @@ object StyleHTMLAttributes {
   }
   
   @scala.inline
-  implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[_], T] (val x: Self with StyleHTMLAttributes[T]) extends AnyVal {
+  implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])

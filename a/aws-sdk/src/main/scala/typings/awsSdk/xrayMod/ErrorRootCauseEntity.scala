@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorRootCauseEntity extends StObject {
   
   /**
     * The types and messages of the exceptions.
     */
-  var Exceptions: js.UndefOr[RootCauseExceptions] = js.native
+  var Exceptions: js.UndefOr[RootCauseExceptions] = js.undefined
   
   /**
     * The name of the entity.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that denotes a remote subsegment.
     */
-  var Remote: js.UndefOr[NullableBoolean] = js.native
+  var Remote: js.UndefOr[NullableBoolean] = js.undefined
 }
 object ErrorRootCauseEntity {
   

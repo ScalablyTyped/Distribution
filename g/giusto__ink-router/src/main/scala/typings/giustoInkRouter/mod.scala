@@ -12,10 +12,13 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@giusto/ink-router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@giusto/ink-router", "CommandLineRouter")
   @js.native
@@ -65,20 +68,18 @@ object mod {
     def this(props: SwitchProps, context: js.Any) = this()
   }
   
-  @JSImport("@giusto/ink-router", "withRouter")
-  @js.native
-  def withRouter(component: ComponentType[_]): js.Function1[/* props */ js.Any, Element] = js.native
+  @scala.inline
+  def withRouter(component: ComponentType[js.Any]): js.Function1[/* props */ js.Any, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, Element]]
   
-  @js.native
   trait CommandLineRouterProps extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initialEntries: js.UndefOr[js.Array[String]] = js.native
+    var initialEntries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[Record[String, _]] = js.native
+    var options: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object CommandLineRouterProps {
     
@@ -116,33 +117,32 @@ object mod {
       def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
       @scala.inline
-      def setOptions(value: Record[String, _]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
-  @js.native
-  trait RouteComponentProps[T /* <: Record[String, _] */] extends StObject {
+  trait RouteComponentProps[T /* <: Record[String, js.Any] */] extends StObject {
     
-    var history: History[js.Object] = js.native
+    var history: History[js.Object]
     
-    var location: Location[js.Object] = js.native
+    var location: Location[js.Object]
     
-    var `match`: Params[T] = js.native
+    var `match`: Params[T]
   }
   object RouteComponentProps {
     
     @scala.inline
-    def apply[T /* <: Record[String, _] */](history: History[js.Object], location: Location[js.Object], `match`: Params[T]): RouteComponentProps[T] = {
+    def apply[T /* <: Record[String, js.Any] */](history: History[js.Object], location: Location[js.Object], `match`: Params[T]): RouteComponentProps[T] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
     @scala.inline
-    implicit class RouteComponentPropsMutableBuilder[Self <: RouteComponentProps[_], T /* <: Record[String, _] */] (val x: Self with RouteComponentProps[T]) extends AnyVal {
+    implicit class RouteComponentPropsMutableBuilder[Self <: RouteComponentProps[?], T /* <: Record[String, js.Any] */] (val x: Self & RouteComponentProps[T]) extends AnyVal {
       
       @scala.inline
       def setHistory(value: History[js.Object]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
@@ -155,21 +155,20 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteProps extends StObject {
     
-    var component: ComponentType[_] = js.native
+    var component: ComponentType[js.Any]
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[Key] = js.native
+    var location: js.UndefOr[Key] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object RouteProps {
     
     @scala.inline
-    def apply(component: ComponentType[_], path: String): RouteProps = {
+    def apply(component: ComponentType[js.Any], path: String): RouteProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteProps]
     }
@@ -178,7 +177,7 @@ object mod {
     implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
@@ -197,16 +196,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RouterProps extends StObject {
     
-    var getUserConfirmation: js.UndefOr[js.Function0[Unit]] = js.native
+    var getUserConfirmation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var initialEntries: js.UndefOr[js.Array[String | Hash]] = js.native
+    var initialEntries: js.UndefOr[js.Array[String | Hash]] = js.undefined
     
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var keyLength: js.UndefOr[Double] = js.native
+    var keyLength: js.UndefOr[Double] = js.undefined
   }
   object RouterProps {
     
@@ -248,12 +246,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SwitchProps extends StObject {
     
-    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.native
+    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
-    var notFound: js.UndefOr[js.Function0[_] | ComponentType[_]] = js.native
+    var notFound: js.UndefOr[js.Function0[js.Any] | ComponentType[js.Any]] = js.undefined
   }
   object SwitchProps {
     
@@ -276,10 +273,10 @@ object mod {
       def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
       @scala.inline
-      def setNotFound(value: js.Function0[_] | ComponentType[_]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+      def setNotFound(value: js.Function0[js.Any] | ComponentType[js.Any]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNotFoundFunction0(value: () => _): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
+      def setNotFoundFunction0(value: () => js.Any): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
       
       @scala.inline
       def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)

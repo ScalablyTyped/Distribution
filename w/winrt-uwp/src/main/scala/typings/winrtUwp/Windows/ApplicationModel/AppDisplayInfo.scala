@@ -4,25 +4,23 @@ import typings.winrtUwp.Windows.Foundation.Size
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an application's name, description, and logo. */
-@js.native
 trait AppDisplayInfo extends StObject {
   
   /** Gets the application's description. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the application's display name. */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Get the application's logo.
     * @param size The size of the rectangle in which the logo must fit.
     * @return The largest logo in your Package.appxmanifest file that will fit in the specified Size.
     */
-  def getLogo(size: Size): RandomAccessStreamReference = js.native
+  def getLogo(size: Size): RandomAccessStreamReference
 }
 object AppDisplayInfo {
   

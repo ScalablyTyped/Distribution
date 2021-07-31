@@ -16,10 +16,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ramMod {
+  
+  @JSImport("@pulumi/aws/ram", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/ram", "PrincipalAssociation")
   @js.native
@@ -38,6 +41,10 @@ object ramMod {
   /* static members */
   object PrincipalAssociation {
     
+    @JSImport("@pulumi/aws/ram", "PrincipalAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PrincipalAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,26 +54,21 @@ object ramMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram", "PrincipalAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "PrincipalAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "PrincipalAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrincipalAssociationState): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "PrincipalAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrincipalAssociationState, opts: CustomResourceOptions): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.principalAssociationMod.PrincipalAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.principalAssociationMod.PrincipalAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrincipalAssociationState): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.principalAssociationMod.PrincipalAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrincipalAssociationState, opts: CustomResourceOptions): typings.pulumiAws.principalAssociationMod.PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.principalAssociationMod.PrincipalAssociation]
     
     /**
       * Returns true if the given object is an instance of PrincipalAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram", "PrincipalAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ram", "ResourceAssociation")
@@ -86,6 +88,10 @@ object ramMod {
   /* static members */
   object ResourceAssociation {
     
+    @JSImport("@pulumi/aws/ram", "ResourceAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -95,26 +101,21 @@ object ramMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceAssociationState): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceAssociationMod.ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceAssociationMod.ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceAssociationState): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceAssociationMod.ResourceAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resourceAssociationMod.ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceAssociationMod.ResourceAssociation]
     
     /**
       * Returns true if the given object is an instance of ResourceAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ram", "ResourceShare")
@@ -130,11 +131,15 @@ object ramMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ResourceShareArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ResourceShareArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ResourceShare {
+    
+    @JSImport("@pulumi/aws/ram", "ResourceShare")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ResourceShare resource's state with the given name, ID, and optional extra
@@ -145,26 +150,21 @@ object ramMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceShareMod.ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceShareMod.ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareState): typings.pulumiAws.resourceShareMod.ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareState, opts: CustomResourceOptions): typings.pulumiAws.resourceShareMod.ResourceShare = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceShareMod.ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareMod.ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resourceShareMod.ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareMod.ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareState): typings.pulumiAws.resourceShareMod.ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareMod.ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareState, opts: CustomResourceOptions): typings.pulumiAws.resourceShareMod.ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareMod.ResourceShare]
     
     /**
       * Returns true if the given object is an instance of ResourceShare.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceShare.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ram", "ResourceShareAccepter")
@@ -184,6 +184,10 @@ object ramMod {
   /* static members */
   object ResourceShareAccepter {
     
+    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceShareAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -193,32 +197,25 @@ object ramMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resourceShareAccepterMod.ResourceShareAccepter]
     
     /**
       * Returns true if the given object is an instance of ResourceShareAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram", "ResourceShareAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/ram", "getResourceShare")
-  @js.native
-  def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = js.native
-  @JSImport("@pulumi/aws/ram", "getResourceShare")
-  @js.native
-  def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = js.native
+  @scala.inline
+  def getResourceShare(args: GetResourceShareArgs): js.Promise[GetResourceShareResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResourceShareResult]]
+  @scala.inline
+  def getResourceShare(args: GetResourceShareArgs, opts: InvokeOptions): js.Promise[GetResourceShareResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceShare")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResourceShareResult]]
 }

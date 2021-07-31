@@ -3,71 +3,69 @@ package typings.materialDrawer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCDrawerAdapter extends StObject {
     
     /**
       * Adds a class to the root Element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Returns true if the element contains the given class.
       * @param element target element to verify class name
       * @param className class name
       */
-    def elementHasClass(element: Element, className: String): Boolean = js.native
+    def elementHasClass(element: Element, className: String): Boolean
     
     /**
       * Focuses the active / selected navigation item.
       */
-    def focusActiveNavigationItem(): Unit = js.native
+    def focusActiveNavigationItem(): Unit
     
     /**
       * Returns true if the root Element contains the given class.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * Emits a custom event "MDCDrawer:closed" denoting the drawer has closed.
       */
-    def notifyClose(): Unit = js.native
+    def notifyClose(): Unit
     
     /**
       * Emits a custom event "MDCDrawer:opened" denoting the drawer has opened.
       */
-    def notifyOpen(): Unit = js.native
+    def notifyOpen(): Unit
     
     /**
       * Releases focus trap from root element which was set by `trapFocus`
       * and restores focus to where it was prior to calling `trapFocus`.
       */
-    def releaseFocus(): Unit = js.native
+    def releaseFocus(): Unit
     
     /**
       * Removes a class from the root Element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Restores focus to element previously saved with 'saveFocus'.
       */
-    def restoreFocus(): Unit = js.native
+    def restoreFocus(): Unit
     
     /**
       * Saves the focus of currently active element.
       */
-    def saveFocus(): Unit = js.native
+    def saveFocus(): Unit
     
     /**
       * Traps focus on root element and focuses the active navigation element.
       */
-    def trapFocus(): Unit = js.native
+    def trapFocus(): Unit
   }
   object MDCDrawerAdapter {
     

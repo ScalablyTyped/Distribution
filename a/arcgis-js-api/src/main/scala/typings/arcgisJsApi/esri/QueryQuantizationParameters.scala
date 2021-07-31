@@ -8,39 +8,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryQuantizationParameters extends Object {
+trait QueryQuantizationParameters
+  extends StObject
+     with Object {
   
   /**
     * An extent defining the quantization grid bounds.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
     */
-  var extent: js.UndefOr[Extent] = js.native
+  var extent: js.UndefOr[Extent] = js.undefined
   
   /**
     * Geometry coordinates are optimized for viewing and displaying of data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
     */
-  var mode: js.UndefOr[view | edit] = js.native
+  var mode: js.UndefOr[view | edit] = js.undefined
   
   /**
     * The integer's coordinates will be returned relative to the origin position defined by this property value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
     */
-  var originPosition: js.UndefOr[`upper-left` | `lower-left`] = js.native
+  var originPosition: js.UndefOr[`upper-left` | `lower-left`] = js.undefined
   
   /**
     * The size of one pixel in the units of the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
     */
-  var tolerance: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[Double] = js.undefined
 }
 object QueryQuantizationParameters {
   

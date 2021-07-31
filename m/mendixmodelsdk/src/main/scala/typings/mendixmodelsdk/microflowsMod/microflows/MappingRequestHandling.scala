@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling")
@@ -52,9 +51,8 @@ object MappingRequestHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.create")
-  @js.native
-  def create(model: IModel): MappingRequestHandling = js.native
+  @scala.inline
+  def create(model: IModel): MappingRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MappingRequestHandling]
   
   /**
     * Creates and returns a new MappingRequestHandling instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object MappingRequestHandling {
     *  7.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.createInExportXmlActionUnderResultHandling")
-  @js.native
-  def createInExportXmlActionUnderResultHandling(container: ExportXmlAction): MappingRequestHandling = js.native
+  @scala.inline
+  def createInExportXmlActionUnderResultHandling(container: ExportXmlAction): MappingRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[MappingRequestHandling]
   
   /**
     * Creates and returns a new MappingRequestHandling instance in the SDK and on the server.
@@ -78,9 +75,8 @@ object MappingRequestHandling {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.createInRestCallActionUnderRequestHandling")
-  @js.native
-  def createInRestCallActionUnderRequestHandling(container: RestCallAction): MappingRequestHandling = js.native
+  @scala.inline
+  def createInRestCallActionUnderRequestHandling(container: RestCallAction): MappingRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[MappingRequestHandling]
   
   /**
     * Creates and returns a new MappingRequestHandling instance in the SDK and on the server.
@@ -88,9 +84,8 @@ object MappingRequestHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.createInWebServiceCallActionUnderRequestBodyHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): MappingRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): MappingRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[MappingRequestHandling]
   
   /**
     * Creates and returns a new MappingRequestHandling instance in the SDK and on the server.
@@ -98,9 +93,8 @@ object MappingRequestHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.createInWebServiceCallActionUnderRequestHeaderHandling")
-  @js.native
-  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): MappingRequestHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): MappingRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[MappingRequestHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MappingRequestHandling.structureTypeName")

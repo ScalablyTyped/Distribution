@@ -2,36 +2,34 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepExecutionStatusDetail extends StObject {
   
   /**
     * The creation date and time of the step.
     */
-  var CreationDateTime: Date = js.native
+  var CreationDateTime: Date
   
   /**
     * The completion date and time of the step.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * A description of the step's current state.
     */
-  var LastStateChangeReason: js.UndefOr[XmlString] = js.native
+  var LastStateChangeReason: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The start date and time of the step.
     */
-  var StartDateTime: js.UndefOr[Date] = js.native
+  var StartDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The state of the step.
     */
-  var State: StepExecutionState = js.native
+  var State: StepExecutionState
 }
 object StepExecutionStatusDetail {
   

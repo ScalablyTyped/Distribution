@@ -2,17 +2,15 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProducerStreamOptions extends StObject {
   
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
-  var kafkaClient: js.UndefOr[KafkaClientOptions] = js.native
+  var kafkaClient: js.UndefOr[KafkaClientOptions] = js.undefined
   
-  var producer: js.UndefOr[ProducerOptions] = js.native
+  var producer: js.UndefOr[ProducerOptions] = js.undefined
 }
 object ProducerStreamOptions {
   

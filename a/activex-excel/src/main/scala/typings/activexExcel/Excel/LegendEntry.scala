@@ -2,42 +2,40 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendEntry extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
   @JSName("Excel.LegendEntry_typekey")
-  var ExcelDotLegendEntry_typekey: LegendEntry = js.native
+  var ExcelDotLegendEntry_typekey: LegendEntry
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Left: Double = js.native
+  val Left: Double
   
-  val LegendKey: typings.activexExcel.Excel.LegendKey = js.native
+  val LegendKey: typings.activexExcel.Excel.LegendKey
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  val Top: Double = js.native
+  val Top: Double
   
-  val Width: Double = js.native
+  val Width: Double
 }
 object LegendEntry {
   

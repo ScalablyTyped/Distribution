@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataAssociation extends BaseElement {
+trait DataAssociation
+  extends StObject
+     with BaseElement {
   
-  var assignment: Assignment = js.native
+  var assignment: Assignment
   
-  var sourceRef: ItemAwareElement = js.native
+  var sourceRef: ItemAwareElement
   
-  var targetRef: ItemAwareElement = js.native
+  var targetRef: ItemAwareElement
   
-  var transformation: FormalExpression = js.native
+  var transformation: FormalExpression
 }
 object DataAssociation {
   

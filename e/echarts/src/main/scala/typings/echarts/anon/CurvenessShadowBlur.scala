@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CurvenessShadowBlur extends js.Object {
+trait CurvenessShadowBlur extends StObject {
   
   /**
     * The color of the tree edge.
@@ -15,7 +14,7 @@ trait CurvenessShadowBlur extends js.Object {
     * ""#ccc""
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.color
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The curvature of the tree edge.
@@ -25,7 +24,7 @@ trait CurvenessShadowBlur extends js.Object {
     * 0.5
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.curveness
     */
-  var curveness: js.UndefOr[Double] = js.native
+  var curveness: js.UndefOr[Double] = js.undefined
   
   /**
     * Size of shadow blur.
@@ -39,7 +38,7 @@ trait CurvenessShadowBlur extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow color. Support same format as `color`.
@@ -47,7 +46,7 @@ trait CurvenessShadowBlur extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.shadowColor
     */
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
   /**
     * Offset distance on the horizontal direction of shadow.
@@ -55,7 +54,7 @@ trait CurvenessShadowBlur extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Offset distance on the vertical direction of shadow.
@@ -63,7 +62,7 @@ trait CurvenessShadowBlur extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the tree edge.
@@ -73,7 +72,7 @@ trait CurvenessShadowBlur extends js.Object {
     * 1.5
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle.width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CurvenessShadowBlur {
   
@@ -84,60 +83,48 @@ object CurvenessShadowBlur {
   }
   
   @scala.inline
-  implicit class CurvenessShadowBlurOps[Self <: CurvenessShadowBlur] (val x: Self) extends AnyVal {
+  implicit class CurvenessShadowBlurMutableBuilder[Self <: CurvenessShadowBlur] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurveness(value: Double): Self = StObject.set(x, "curveness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCurvenessUndefined: Self = StObject.set(x, "curveness", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveness(value: Double): Self = this.set("curveness", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deleteCurveness: Self = this.set("curveness", js.undefined)
+    def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

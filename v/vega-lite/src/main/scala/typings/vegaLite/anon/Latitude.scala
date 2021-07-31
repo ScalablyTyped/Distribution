@@ -2,30 +2,23 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Latitude extends StObject {
   
-  val latitude: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val latitude: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val latitude2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val latitude2: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val longitude: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val longitude: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val longitude2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val longitude2: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Latitude {
   
   @scala.inline
-  def apply(
-    latitude: typings.vegaLite.vegaLiteNumbers.`1`,
-    latitude2: typings.vegaLite.vegaLiteNumbers.`1`,
-    longitude: typings.vegaLite.vegaLiteNumbers.`1`,
-    longitude2: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Latitude = {
-    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], latitude2 = latitude2.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], longitude2 = longitude2.asInstanceOf[js.Any])
+  def apply(): Latitude = {
+    val __obj = js.Dynamic.literal(latitude = 1, latitude2 = 1, longitude = 1, longitude2 = 1)
     __obj.asInstanceOf[Latitude]
   }
   

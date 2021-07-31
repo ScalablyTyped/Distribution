@@ -2,21 +2,19 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRepositoryAssociationsResponse extends StObject {
   
   /**
     * The nextToken value to include in a future ListRecommendations request. When the results of a ListRecommendations request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
   
   /**
     * A list of repository associations that meet the criteria of the request.
     */
-  var RepositoryAssociationSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.RepositoryAssociationSummaries] = js.native
+  var RepositoryAssociationSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.RepositoryAssociationSummaries] = js.undefined
 }
 object ListRepositoryAssociationsResponse {
   

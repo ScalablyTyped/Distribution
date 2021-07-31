@@ -10,9 +10,9 @@ ReactJS Powered Presentation Framework
 | ------------------ | :-------------: |
 | Full name          | spectacle |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 26 |
 | # dependents       | 15 |
-| # downloads        | 66677 |
+| # downloads        | 52313 |
 | # stars            | 6 |
 
 ## Links

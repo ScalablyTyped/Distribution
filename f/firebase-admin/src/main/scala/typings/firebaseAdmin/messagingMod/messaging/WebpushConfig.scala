@@ -3,21 +3,19 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpushConfig extends StObject {
   
   /**
     * A collection of data fields.
     */
-  var data: js.UndefOr[StringDictionary[String]] = js.native
+  var data: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Options for features provided by the FCM SDK for Web.
     */
-  var fcmOptions: js.UndefOr[WebpushFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[WebpushFcmOptions] = js.undefined
   
   /**
     * A collection of WebPush headers. Header values must be strings.
@@ -25,12 +23,12 @@ trait WebpushConfig extends StObject {
     * See [WebPush specification](https://tools.ietf.org/html/rfc8030#section-5)
     * for supported headers.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A WebPush notification payload to be included in the message.
     */
-  var notification: js.UndefOr[WebpushNotification] = js.native
+  var notification: js.UndefOr[WebpushNotification] = js.undefined
 }
 object WebpushConfig {
   

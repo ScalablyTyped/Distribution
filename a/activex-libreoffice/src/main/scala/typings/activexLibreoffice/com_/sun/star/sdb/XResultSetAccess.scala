@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the interface to create a {@link com.sun.star.sdbc.ResultSet} based on the object providing the interface. */
-@js.native
-trait XResultSetAccess extends XInterface {
+trait XResultSetAccess
+  extends StObject
+     with XInterface {
   
   /**
     * returns a new {@link com.sun.star.sdbc.ResultSet} based on the object.
     * @returns the new created {@link ResultSet} object
     */
-  def createResultSet(): XResultSet = js.native
+  def createResultSet(): XResultSet
 }
 object XResultSetAccess {
   

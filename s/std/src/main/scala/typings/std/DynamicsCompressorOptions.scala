@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DynamicsCompressorOptions extends AudioNodeOptions {
+trait DynamicsCompressorOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var attack: js.UndefOr[Double] = js.native
+  var attack: js.UndefOr[Double] = js.undefined
   
-  var knee: js.UndefOr[Double] = js.native
+  var knee: js.UndefOr[Double] = js.undefined
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var release: js.UndefOr[Double] = js.native
+  var release: js.UndefOr[Double] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object DynamicsCompressorOptions {
   

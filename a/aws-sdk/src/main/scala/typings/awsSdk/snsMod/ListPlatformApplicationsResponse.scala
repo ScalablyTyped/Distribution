@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlatformApplicationsResponse extends StObject {
   
   /**
     * NextToken string is returned when calling ListPlatformApplications action if additional records are available after the first page results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Platform applications returned when calling ListPlatformApplications action.
     */
-  var PlatformApplications: js.UndefOr[ListOfPlatformApplications] = js.native
+  var PlatformApplications: js.UndefOr[ListOfPlatformApplications] = js.undefined
 }
 object ListPlatformApplicationsResponse {
   

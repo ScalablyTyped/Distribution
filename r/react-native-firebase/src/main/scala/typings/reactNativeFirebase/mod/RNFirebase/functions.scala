@@ -5,7 +5,6 @@ import typings.reactNativeFirebase.mod.App
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Source: https://github.com/firebase/firebase-js-sdk/blob/master/packages/functions-types/index.d.ts
@@ -15,9 +14,9 @@ object functions {
     * `FirebaseFunctions` represents a Functions app, and is the entry point for
     * all Functions operations.
     */
-  @js.native
   trait Functions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Gets an `HttpsCallable` instance that refers to the function with the given
@@ -26,7 +25,7 @@ object functions {
       * @param name The name of the https callable function.
       * @return The `HttpsCallable` instance.
       */
-    def httpsCallable[Params, Result](name: String): HttpsCallable[Params, Result] = js.native
+    def httpsCallable[Params, Result](name: String): HttpsCallable[Params, Result]
     
     /**
       * Changes this instance to point to a Cloud Functions emulator running
@@ -37,7 +36,7 @@ object functions {
       * @param origin the origin string of the local emulator started via firebase tools
       * "http://10.0.0.8:1337".
       */
-    def useFunctionsEmulator(origin: String): js.Promise[Null] = js.native
+    def useFunctionsEmulator(origin: String): js.Promise[Null]
   }
   object Functions {
     
@@ -185,9 +184,9 @@ object functions {
       * See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/functions/reference/functions.md
       */
     def apply(): Functions = js.native
-    def apply(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native
     def apply(appOrRegion: String): Functions = js.native
     def apply(appOrRegion: String, region: String): Functions = js.native
+    def apply(appOrRegion: Unit, region: String): Functions = js.native
     def apply(appOrRegion: App): Functions = js.native
     def apply(appOrRegion: App, region: String): Functions = js.native
     
@@ -206,10 +205,9 @@ object functions {
   /**
     * An HttpsCallableResult wraps a single result from a function call.
     */
-  @js.native
   trait HttpsCallableResult[R] extends StObject {
     
-    val data: R = js.native
+    val data: R
   }
   object HttpsCallableResult {
     
@@ -220,26 +218,27 @@ object functions {
     }
     
     @scala.inline
-    implicit class HttpsCallableResultMutableBuilder[Self <: HttpsCallableResult[_], R] (val x: Self with HttpsCallableResult[R]) extends AnyVal {
+    implicit class HttpsCallableResultMutableBuilder[Self <: HttpsCallableResult[?], R] (val x: Self & HttpsCallableResult[R]) extends AnyVal {
       
       @scala.inline
       def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait HttpsError extends Error {
+  trait HttpsError
+    extends StObject
+       with Error {
     
     /**
       * A standard error code that will be returned to the client. This also
       * determines the HTTP status code of the response, as defined in code.proto.
       */
-    val code: FunctionsErrorCode = js.native
+    val code: FunctionsErrorCode
     
     /**
       * Extra data to be converted to JSON and included in the error response.
       */
-    val details: js.UndefOr[js.Any] = js.native
+    val details: js.UndefOr[js.Any] = js.undefined
   }
   object HttpsError {
     

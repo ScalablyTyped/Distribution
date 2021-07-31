@@ -5,45 +5,45 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pattern: String): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  @scala.inline
+  def apply(pattern: String, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  @scala.inline
+  def apply(pattern: js.Array[String]): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  @scala.inline
+  def apply(pattern: js.Array[String], options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  @scala.inline
+  def apply(pattern: FileFunction): Filter = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  @scala.inline
+  def apply(pattern: FileFunction, options: Options): Filter = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  
   @JSImport("gulp-filter", JSImport.Namespace)
   @js.native
-  def apply(pattern: String): Filter = js.native
-  @JSImport("gulp-filter", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, options: Options): Filter = js.native
-  @JSImport("gulp-filter", JSImport.Namespace)
-  @js.native
-  def apply(pattern: js.Array[String]): Filter = js.native
-  @JSImport("gulp-filter", JSImport.Namespace)
-  @js.native
-  def apply(pattern: js.Array[String], options: Options): Filter = js.native
-  @JSImport("gulp-filter", JSImport.Namespace)
-  @js.native
-  def apply(pattern: FileFunction): Filter = js.native
-  @JSImport("gulp-filter", JSImport.Namespace)
-  @js.native
-  def apply(pattern: FileFunction, options: Options): Filter = js.native
+  val ^ : js.Any = js.native
   
   type FileFunction = js.Function1[/* file */ File, Boolean]
   
   // A transform stream with a .restore object
   @js.native
-  trait Filter extends ReadWriteStream {
+  trait Filter
+    extends StObject
+       with ReadWriteStream {
     
     var restore: ReadWriteStream = js.native
   }
   
-  @js.native
-  trait Options extends IOptions {
+  trait Options
+    extends StObject
+       with IOptions {
     
-    var passthrough: js.UndefOr[Boolean] = js.native
+    var passthrough: js.UndefOr[Boolean] = js.undefined
     
-    var restore: js.UndefOr[Boolean] = js.native
+    var restore: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

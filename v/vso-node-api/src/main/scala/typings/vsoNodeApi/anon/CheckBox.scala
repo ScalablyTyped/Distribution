@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckBox extends StObject {
   
-  var checkBox: scala.Double = js.native
+  var checkBox: scala.Double
   
-  var combo: scala.Double = js.native
+  var combo: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var passwordBox: scala.Double = js.native
+  var passwordBox: scala.Double
   
-  var radioButtons: scala.Double = js.native
+  var radioButtons: scala.Double
   
-  var textArea: scala.Double = js.native
+  var textArea: scala.Double
   
-  var textBox: scala.Double = js.native
+  var textBox: scala.Double
 }
 object CheckBox {
   

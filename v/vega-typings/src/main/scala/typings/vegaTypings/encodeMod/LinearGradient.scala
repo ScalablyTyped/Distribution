@@ -3,60 +3,59 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.vegaTypingsStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGradient
-  extends BaseGradient
+  extends StObject
+     with BaseGradient
      with Gradient {
   
   /**
     * The type of gradient. Use `"linear"` for a linear gradient.
     */
   @JSName("gradient")
-  var gradient_LinearGradient: linear = js.native
+  var gradient_LinearGradient: linear
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * An array of gradient stops defining the gradient color sequence.
     */
-  var stops: js.Array[GradientStop] = js.native
+  var stops: js.Array[GradientStop]
   
   /**
     * The starting x-coordinate, in normalized [0, 1] coordinates, of the linear gradient.
     *
     * __Default value:__ `0`
     */
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
   /**
     * The ending x-coordinate, in normalized [0, 1] coordinates, of the linear gradient.
     *
     * __Default value:__ `1`
     */
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * The starting y-coordinate, in normalized [0, 1] coordinates, of the linear gradient.
     *
     * __Default value:__ `0`
     */
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
   /**
     * The ending y-coordinate, in normalized [0, 1] coordinates, of the linear gradient.
     *
     * __Default value:__ `0`
     */
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object LinearGradient {
   
   @scala.inline
-  def apply(gradient: linear, stops: js.Array[GradientStop]): LinearGradient = {
-    val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+  def apply(stops: js.Array[GradientStop]): LinearGradient = {
+    val __obj = js.Dynamic.literal(gradient = "linear", stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradient]
   }
   

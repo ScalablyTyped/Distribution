@@ -2,13 +2,11 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiUser builder
   */
-@js.native
 trait KiiUserBuilder extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait KiiUserBuilder extends StObject {
     *
     * @return a working KiiUser object.
     */
-  def build(): KiiUser = js.native
+  def build(): KiiUser
   
   /**
     * Set email address.
@@ -33,7 +31,7 @@ trait KiiUserBuilder extends StObject {
     * @throws If the email address is not in the
     *     proper format
     */
-  def setEmailAddress(emailAddress: String): KiiUserBuilder = js.native
+  def setEmailAddress(emailAddress: String): KiiUserBuilder
   
   /**
     * Set global phone number.
@@ -48,7 +46,7 @@ trait KiiUserBuilder extends StObject {
     * @throws If the phone number is not
     *     in the proper format
     */
-  def setGlobalPhoneNumber(phoneNumber: String): KiiUserBuilder = js.native
+  def setGlobalPhoneNumber(phoneNumber: String): KiiUserBuilder
   
   /**
     * Set local phone number.
@@ -65,7 +63,7 @@ trait KiiUserBuilder extends StObject {
     *     in the proper format
     * @throws If the country code is not a valid format
     */
-  def setLocalPhoneNumber(phoneNumber: String, country: String): KiiUserBuilder = js.native
+  def setLocalPhoneNumber(phoneNumber: String, country: String): KiiUserBuilder
   
   /**
     * Set user name.
@@ -80,7 +78,7 @@ trait KiiUserBuilder extends StObject {
     * @throws If the username is not in the
     *     proper format
     */
-  def setUsername(username: String): KiiUserBuilder = js.native
+  def setUsername(username: String): KiiUserBuilder
 }
 object KiiUserBuilder {
   

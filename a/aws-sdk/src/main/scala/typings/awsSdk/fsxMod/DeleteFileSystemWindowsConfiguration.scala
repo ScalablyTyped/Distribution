@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSystemWindowsConfiguration extends StObject {
   
   /**
     * A set of tags for your final backup.
     */
-  var FinalBackupTags: js.UndefOr[Tags] = js.native
+  var FinalBackupTags: js.UndefOr[Tags] = js.undefined
   
   /**
     * By default, Amazon FSx for Windows takes a final backup on your behalf when the DeleteFileSystem operation is invoked. Doing this helps protect you from data loss, and we highly recommend taking the final backup. If you want to skip this backup, use this flag to do so.
     */
-  var SkipFinalBackup: js.UndefOr[Flag] = js.native
+  var SkipFinalBackup: js.UndefOr[Flag] = js.undefined
 }
 object DeleteFileSystemWindowsConfiguration {
   

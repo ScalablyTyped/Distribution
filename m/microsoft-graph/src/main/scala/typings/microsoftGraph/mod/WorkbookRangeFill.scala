@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookRangeFill extends Entity {
+trait WorkbookRangeFill
+  extends StObject
+     with Entity {
   
   /**
     * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. 'FFA500') or as a named HTML color
     * (e.g. 'orange')
     */
-  var color: js.UndefOr[NullableOption[String]] = js.native
+  var color: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkbookRangeFill {
   

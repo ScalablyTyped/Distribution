@@ -2,17 +2,15 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminalLinkProvider[T /* <: TerminalLink */] extends StObject {
   
   /**
     * Handle an activated terminal link.
     * @param link The link to handle.
     */
-  def handleTerminalLink(link: T): ProviderResult[Unit] = js.native
+  def handleTerminalLink(link: T): ProviderResult[Unit]
   
   /**
     * Provide terminal links for the given context. Note that this can be called multiple times
@@ -22,7 +20,7 @@ trait TerminalLinkProvider[T /* <: TerminalLink */] extends StObject {
     * @param token A cancellation token.
     * @return A list of terminal links for the given line.
     */
-  def provideTerminalLinks(context: TerminalLinkContext, token: CancellationToken): ProviderResult[js.Array[T]] = js.native
+  def provideTerminalLinks(context: TerminalLinkContext, token: CancellationToken): ProviderResult[js.Array[T]]
 }
 object TerminalLinkProvider {
   
@@ -36,7 +34,7 @@ object TerminalLinkProvider {
   }
   
   @scala.inline
-  implicit class TerminalLinkProviderMutableBuilder[Self <: TerminalLinkProvider[_], T /* <: TerminalLink */] (val x: Self with TerminalLinkProvider[T]) extends AnyVal {
+  implicit class TerminalLinkProviderMutableBuilder[Self <: TerminalLinkProvider[?], T /* <: TerminalLink */] (val x: Self & TerminalLinkProvider[T]) extends AnyVal {
     
     @scala.inline
     def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = StObject.set(x, "handleTerminalLink", js.Any.fromFunction1(value))

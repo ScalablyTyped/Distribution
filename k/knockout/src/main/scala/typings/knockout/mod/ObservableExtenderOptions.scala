@@ -5,23 +5,21 @@ import typings.knockout.knockoutStrings.always
 import typings.knockout.mod.utils.CompareArraysOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<knockout.knockout.ExtendersOptions<T>> */
-@js.native
 trait ObservableExtenderOptions[T] extends StObject {
   
-  var deferred: js.UndefOr[`true`] = js.native
+  var deferred: js.UndefOr[`true`] = js.undefined
   
   @JSName("notify")
-  var notify_FObservableExtenderOptions: js.UndefOr[always | js.Any] = js.native
+  var notify_FObservableExtenderOptions: js.UndefOr[always | js.Any] = js.undefined
   
-  var rateLimit: js.UndefOr[Double | RateLimitOptions] = js.native
+  var rateLimit: js.UndefOr[Double | RateLimitOptions] = js.undefined
   
-  var throttle: js.UndefOr[Double] = js.native
+  var throttle: js.UndefOr[Double] = js.undefined
   
-  var trackArrayChanges: js.UndefOr[`true` | CompareArraysOptions] = js.native
+  var trackArrayChanges: js.UndefOr[`true` | CompareArraysOptions] = js.undefined
 }
 object ObservableExtenderOptions {
   
@@ -32,7 +30,7 @@ object ObservableExtenderOptions {
   }
   
   @scala.inline
-  implicit class ObservableExtenderOptionsMutableBuilder[Self <: ObservableExtenderOptions[_], T] (val x: Self with ObservableExtenderOptions[T]) extends AnyVal {
+  implicit class ObservableExtenderOptionsMutableBuilder[Self <: ObservableExtenderOptions[?], T] (val x: Self & ObservableExtenderOptions[T]) extends AnyVal {
     
     @scala.inline
     def setDeferred(value: `true`): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])

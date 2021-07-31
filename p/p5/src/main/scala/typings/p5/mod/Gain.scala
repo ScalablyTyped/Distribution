@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,9 +16,9 @@ trait Gain extends StObject {
     *   seconds from now
     */
   def amp(volume: Double): Unit = js.native
-  def amp(volume: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def amp(volume: Double, rampTime: Unit, timeFromNow: Double): Unit = js.native
   
   /**
     *   Send output to a p5.sound or web audio object

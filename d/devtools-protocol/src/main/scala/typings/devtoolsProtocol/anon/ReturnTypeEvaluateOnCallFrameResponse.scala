@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.EvaluateOnCallFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EvaluateOnCallFrameResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeEvaluateOnCallFrameResponse extends StObject {
   
-  var paramsType: js.Array[EvaluateOnCallFrameRequest] = js.native
+  var paramsType: js.Array[EvaluateOnCallFrameRequest]
   
-  var returnType: EvaluateOnCallFrameResponse = js.native
+  var returnType: EvaluateOnCallFrameResponse
 }
 object ReturnTypeEvaluateOnCallFrameResponse {
   

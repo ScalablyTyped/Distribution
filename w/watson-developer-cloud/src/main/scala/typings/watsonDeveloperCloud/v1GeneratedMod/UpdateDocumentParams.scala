@@ -6,37 +6,35 @@ import typings.node.NodeJS.ReadableStream
 import typings.watsonDeveloperCloud.v1GeneratedMod.UpdateDocumentConstants.FileContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateDocument` operation. */
-@js.native
 trait UpdateDocumentParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The ID of the document. */
-  var document_id: String = js.native
+  var document_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
   /** The content of the document to ingest. The maximum supported file size when adding a file to a collection is 50 megabytes, the maximum supported file size when testing a confiruration is 1 megabyte. Files larger than the supported size are rejected. */
-  var file: js.UndefOr[ReadableStream | FileObject | Buffer] = js.native
+  var file: js.UndefOr[ReadableStream | FileObject | Buffer] = js.undefined
   
   /** The content type of file. */
-  var file_content_type: js.UndefOr[FileContentType | String] = js.native
+  var file_content_type: js.UndefOr[FileContentType | String] = js.undefined
   
   /** The filename for file. */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** If you're using the Data Crawler to upload your documents, you can test a document against the type of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 1 MB are rejected. Example:  ``` { "Creator": "Johnny Appleseed", "Subject": "Apples" } ```. */
-  var metadata: js.UndefOr[String] = js.native
+  var metadata: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateDocumentParams {
   

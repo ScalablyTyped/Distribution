@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterStatus extends StObject {
   
   /** Best routes for this router's network. */
-  var bestRoutes: js.UndefOr[js.Array[Route]] = js.native
+  var bestRoutes: js.UndefOr[js.Array[Route]] = js.undefined
   
   /** Best routes learned by this router. */
-  var bestRoutesForRouter: js.UndefOr[js.Array[Route]] = js.native
+  var bestRoutesForRouter: js.UndefOr[js.Array[Route]] = js.undefined
   
-  var bgpPeerStatus: js.UndefOr[js.Array[RouterStatusBgpPeerStatus]] = js.native
+  var bgpPeerStatus: js.UndefOr[js.Array[RouterStatusBgpPeerStatus]] = js.undefined
   
-  var natStatus: js.UndefOr[js.Array[RouterStatusNatStatus]] = js.native
+  var natStatus: js.UndefOr[js.Array[RouterStatusNatStatus]] = js.undefined
   
   /** URI of the network to which this router belongs. */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
 }
 object RouterStatus {
   

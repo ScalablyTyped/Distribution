@@ -2,21 +2,19 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnDefinition extends StObject {
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var notNull: js.UndefOr[Boolean] = js.native
+  var notNull: js.UndefOr[Boolean] = js.undefined
   
-  var primaryKey: js.UndefOr[Boolean] = js.native
+  var primaryKey: js.UndefOr[Boolean] = js.undefined
   
-  var references: js.UndefOr[typings.anydbSql.anon.Column] = js.native
+  var references: js.UndefOr[typings.anydbSql.anon.Column] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object ColumnDefinition {
   

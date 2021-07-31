@@ -2,19 +2,17 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedData extends StObject {
   
   // 调用结果
-  var encryptedData: String = js.native
+  var encryptedData: String
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   // 包括敏感数据在内的完整用户信息的加密数据，详细见加密数据解密算法
-  var iv: String = js.native
+  var iv: String
 }
 object EncryptedData {
   

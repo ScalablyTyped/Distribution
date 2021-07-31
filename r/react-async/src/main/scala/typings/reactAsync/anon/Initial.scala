@@ -9,17 +9,15 @@ import typings.reactAsync.mod.AsyncRejected
 import typings.reactAsync.mod.PendingChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Initial[T /* <: js.Object */] extends StObject {
   
-  var children: js.UndefOr[PendingChildren[T]] = js.native
+  var children: js.UndefOr[PendingChildren[T]] = js.undefined
   
-  var initial: js.UndefOr[Boolean] = js.native
+  var initial: js.UndefOr[Boolean] = js.undefined
   
-  var state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]]) = js.native
+  var state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
 }
 object Initial {
   
@@ -32,7 +30,7 @@ object Initial {
   }
   
   @scala.inline
-  implicit class InitialMutableBuilder[Self <: Initial[_], T /* <: js.Object */] (val x: Self with Initial[T]) extends AnyVal {
+  implicit class InitialMutableBuilder[Self <: Initial[?], T /* <: js.Object */] (val x: Self & Initial[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

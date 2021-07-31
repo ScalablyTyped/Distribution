@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logResourcePolicyMod {
@@ -38,6 +37,10 @@ object logResourcePolicyMod {
   /* static members */
   object LogResourcePolicy {
     
+    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogResourcePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object logResourcePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogResourcePolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogResourcePolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogResourcePolicyState): LogResourcePolicy = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogResourcePolicyState, opts: CustomResourceOptions): LogResourcePolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogResourcePolicyState): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogResourcePolicyState, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
     
     /**
       * Returns true if the given object is an instance of LogResourcePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean]
   }
   
-  @js.native
   trait LogResourcePolicyArgs extends StObject {
     
     /**
       * Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.
       */
-    val policyDocument: Input[String] = js.native
+    val policyDocument: Input[String]
     
     /**
       * Name of the resource policy.
       */
-    val policyName: Input[String] = js.native
+    val policyName: Input[String]
   }
   object LogResourcePolicyArgs {
     
@@ -101,18 +98,17 @@ object logResourcePolicyMod {
     }
   }
   
-  @js.native
   trait LogResourcePolicyState extends StObject {
     
     /**
       * Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.
       */
-    val policyDocument: js.UndefOr[Input[String]] = js.native
+    val policyDocument: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the resource policy.
       */
-    val policyName: js.UndefOr[Input[String]] = js.native
+    val policyName: js.UndefOr[Input[String]] = js.undefined
   }
   object LogResourcePolicyState {
     

@@ -2,7 +2,6 @@ package typings.jquerySimplemodal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SimpleModal {
@@ -10,16 +9,15 @@ object SimpleModal {
   type JQueryExtension = js.Function1[/* options */ js.UndefOr[SimpleModalOptions], JQuery]
   
   /** Sent to callbacks as a parameter. */
-  @js.native
   trait SimpleModalDialog extends StObject {
     
-    var container: JQuery = js.native
+    var container: JQuery
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var iframe: JQuery = js.native
+    var iframe: JQuery
     
-    var overlay: JQuery = js.native
+    var overlay: JQuery
   }
   object SimpleModalDialog {
     
@@ -46,89 +44,88 @@ object SimpleModal {
     }
   }
   
-  @js.native
   trait SimpleModalOptions extends StObject {
     
     /** The jQuery selector to append the elements to. For ASP.NET, use 'form'. Default: 'body'. */
-    var appendTo: js.UndefOr[String] = js.native
+    var appendTo: js.UndefOr[String] = js.undefined
     
     /** Automatically position the container upon creation and on window resize? Default: true. (Changed in 1.4) */
-    var autoPosition: js.UndefOr[Boolean] = js.native
+    var autoPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Resize the container if it exceeds the browser window dimensions? Default: false. (Changed in 1.4) */
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
     /** If true, closeHTML, escClose and overlayClose will be used if set. If false, none of them will be used. Default: true. */
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
     /** The CSS class used to bind to the close event. Default: 'simplemodal-close'. */
-    var closeClass: js.UndefOr[String] = js.native
+    var closeClass: js.UndefOr[String] = js.undefined
     
     /** The HTML for the default close link. SimpleModal will automatically add the closeClass to this element. Default: ''. */
-    var closeHTML: js.UndefOr[String] = js.native
+    var closeHTML: js.UndefOr[String] = js.undefined
     
     /** The CSS styling for the container div. Default: {}. */
-    var containerCss: js.UndefOr[js.Object] = js.native
+    var containerCss: js.UndefOr[js.Object] = js.undefined
     
     /** The DOM element id for the container div. Default: 'simplemodal-container'. */
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
     /** The CSS styling for the data div. Default: {}. */
-    var dataCss: js.UndefOr[js.Object] = js.native
+    var dataCss: js.UndefOr[js.Object] = js.undefined
     
     /** The DOM element id for the data div. Default: 'simplemodal-data'. */
-    var dataId: js.UndefOr[String] = js.native
+    var dataId: js.UndefOr[String] = js.undefined
     
     /** Allow Esc keypress to close the dialog? Default: true. */
-    var escClose: js.UndefOr[Boolean] = js.native
+    var escClose: js.UndefOr[Boolean] = js.undefined
     
     /** Focus in the first visible, enabled element? Default: true. */
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum height for the container. If not specified, the window height is used. Default: null. */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** The maximum width for the container. If not specified, the window width is used. Default: null. */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** The minimum height for the container. Default: null. */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /** The minimum width for the container. Default: null. */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** User will be unable to interact with the page below the modal or tab away from the dialog. If false, the overlay, iframe, and certain events will be disabled allowing the user to interact with the page below the dialog. Default: true. (Added in 1.3.4. Name changed from transient in 1.3.5) */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
     /** The callback function used in place of SimpleModal's close. Default: null. */
-    var onClose: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.undefined
     
     /** The callback function used in place of SimpleModal's open. Default: null. */
-    var onOpen: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.undefined
     
     /** The callback function used after the modal dialog has opened. Default: null. */
-    var onShow: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* dialog */ SimpleModalDialog, Unit]] = js.undefined
     
     /** The opacity value for the overlay div, from 0 - 100. Default: 50. */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Allow click on overlay to close the dialog? Default: false. */
-    var overlayClose: js.UndefOr[Boolean] = js.native
+    var overlayClose: js.UndefOr[Boolean] = js.undefined
     
     /** The CSS styling for the overlay div. Default: {}. */
-    var overlayCss: js.UndefOr[js.Object] = js.native
+    var overlayCss: js.UndefOr[js.Object] = js.undefined
     
     /** The DOM element id for the overlay div. Default: 'simplemodal-overlay'. */
-    var overlayId: js.UndefOr[String] = js.native
+    var overlayId: js.UndefOr[String] = js.undefined
     
     /** Persist the data across modal calls? Only used for existing DOM elements. If true, the data will be maintained across modal calls, if false, the data will be reverted to its original state. Default: true. */
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
     
     /** Position of container [top, left]. Can be number of pixels or percentage. Default: null. */
-    var position: js.UndefOr[js.Array[_]] = js.native
+    var position: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Starting z-index value. Default: 1000. */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object SimpleModalOptions {
     
@@ -292,7 +289,7 @@ object SimpleModal {
       def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
       @scala.inline
-      def setPosition(value: js.Array[_]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

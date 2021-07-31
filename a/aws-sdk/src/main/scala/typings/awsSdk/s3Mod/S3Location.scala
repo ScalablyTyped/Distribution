@@ -2,48 +2,46 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * A list of grants that control access to the staged results.
     */
-  var AccessControlList: js.UndefOr[Grants] = js.native
+  var AccessControlList: js.UndefOr[Grants] = js.undefined
   
   /**
     * The name of the bucket where the restore results will be placed.
     */
-  var BucketName: typings.awsSdk.s3Mod.BucketName = js.native
+  var BucketName: typings.awsSdk.s3Mod.BucketName
   
   /**
     * The canned ACL to apply to the restore results.
     */
-  var CannedACL: js.UndefOr[ObjectCannedACL] = js.native
+  var CannedACL: js.UndefOr[ObjectCannedACL] = js.undefined
   
-  var Encryption: js.UndefOr[typings.awsSdk.s3Mod.Encryption] = js.native
+  var Encryption: js.UndefOr[typings.awsSdk.s3Mod.Encryption] = js.undefined
   
   /**
     * The prefix that is prepended to the restore results for this request.
     */
-  var Prefix: LocationPrefix = js.native
+  var Prefix: LocationPrefix
   
   /**
     * The class of storage used to store the restore results.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
   
   /**
     * The tag-set that is applied to the restore results.
     */
-  var Tagging: js.UndefOr[typings.awsSdk.s3Mod.Tagging] = js.native
+  var Tagging: js.UndefOr[typings.awsSdk.s3Mod.Tagging] = js.undefined
   
   /**
     * A list of metadata to store with the restore results in S3.
     */
-  var UserMetadata: js.UndefOr[typings.awsSdk.s3Mod.UserMetadata] = js.native
+  var UserMetadata: js.UndefOr[typings.awsSdk.s3Mod.UserMetadata] = js.undefined
 }
 object S3Location {
   

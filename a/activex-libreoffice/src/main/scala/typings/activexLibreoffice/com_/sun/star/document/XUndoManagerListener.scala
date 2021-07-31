@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,27 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XUndoManager
   * @since OOo 3.4
   */
-@js.native
 trait XUndoManagerListener
-  extends typings.activexLibreoffice.com_.sun.star.lang.XEventListener {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.lang.XEventListener {
   
   /**
     * is called when the top-most action of the Redo stack has been re-applied.
     * @see XUndoManager.redo
     */
-  def actionRedone(iEvent: UndoManagerEvent): Unit = js.native
+  def actionRedone(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when the top-most action of the undo stack has been undone.
     * @see XUndoManager.undo
     */
-  def actionUndone(iEvent: UndoManagerEvent): Unit = js.native
+  def actionUndone(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when both the Undo and the Redo stack have been cleared from all Undo actions.
     * @see XUndoManager.clear
     */
-  def allActionsCleared(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit = js.native
+  def allActionsCleared(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit
   
   /**
     * is called when an Undo context has been left, but no actions have been added within this context.
@@ -42,7 +41,7 @@ trait XUndoManagerListener
     * @see leftContext
     * @see leftHiddenContext
     */
-  def cancelledContext(iEvent: UndoManagerEvent): Unit = js.native
+  def cancelledContext(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when a new Undo context has been entered.
@@ -51,7 +50,7 @@ trait XUndoManagerListener
     * contexts, including the one just entered.
     * @see XUndoManager.enterUndoContext
     */
-  def enteredContext(iEvent: UndoManagerEvent): Unit = js.native
+  def enteredContext(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when a new hidden Undo context has been entered.
@@ -60,7 +59,7 @@ trait XUndoManagerListener
     * contexts, including the one just entered.
     * @see XUndoManager.enterUndoContext
     */
-  def enteredHiddenContext(iEvent: UndoManagerEvent): Unit = js.native
+  def enteredHiddenContext(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when an Undo context has been left.
@@ -71,7 +70,7 @@ trait XUndoManagerListener
     * @see leftHiddenUndocontext
     * @see cancelledContext
     */
-  def leftContext(iEvent: UndoManagerEvent): Unit = js.native
+  def leftContext(iEvent: UndoManagerEvent): Unit
   
   /**
     * is calledn when a hidden Undo context has been left.
@@ -81,16 +80,16 @@ trait XUndoManagerListener
     * @see leftContext
     * @see cancelledContext
     */
-  def leftHiddenContext(iEvent: UndoManagerEvent): Unit = js.native
+  def leftHiddenContext(iEvent: UndoManagerEvent): Unit
   
   /**
     * is called when the Redo stack has been cleared.
     * @see XUndoManager.clearRedo
     */
-  def redoActionsCleared(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit = js.native
+  def redoActionsCleared(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit
   
   /** called when the complete undo manager has been reset */
-  def resetAll(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit = js.native
+  def resetAll(iEvent: typings.activexLibreoffice.com_.sun.star.lang.EventObject): Unit
   
   /**
     * is called when an undo action is added to the undo stack.
@@ -99,7 +98,7 @@ trait XUndoManagerListener
     * UndoManagerEvent.UndoContextDepth} will be greater `0` , and the newly added action will be subordinate of the context action.
     * @see XUndoManager.addUndoAction
     */
-  def undoActionAdded(iEvent: UndoManagerEvent): Unit = js.native
+  def undoActionAdded(iEvent: UndoManagerEvent): Unit
 }
 object XUndoManagerListener {
   

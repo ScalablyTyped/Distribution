@@ -2,59 +2,57 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotInstanceRequestEbsBlockDevice extends StObject {
   
   /**
     * Whether the volume should be destroyed
     * on instance termination (Default: `true`).
     */
-  var deleteOnTermination: js.UndefOr[Boolean] = js.native
+  var deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the device to mount.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * Enables [EBS
     * encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
     * on the volume (Default: `false`). Cannot be used with `snapshotId`. Must be configured to perform drift detection.
     */
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
   /**
     * The amount of provisioned
     * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
     * This must be set with a `volumeType` of `"io1/io2"`.
     */
-  var iops: Double = js.native
+  var iops: Double
   
   /**
     * Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.
     */
-  var kmsKeyId: String = js.native
+  var kmsKeyId: String
   
   /**
     * The Snapshot ID to mount.
     */
-  var snapshotId: String = js.native
+  var snapshotId: String
   
-  var volumeId: String = js.native
+  var volumeId: String
   
   /**
     * The size of the volume in gibibytes (GiB).
     */
-  var volumeSize: Double = js.native
+  var volumeSize: Double
   
   /**
     * The type of volume. Can be `"standard"`, `"gp2"`, `"io1"`
     * or `"io2"`. (Default: `"gp2"`).
     */
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object SpotInstanceRequestEbsBlockDevice {
   

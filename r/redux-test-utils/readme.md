@@ -10,9 +10,9 @@ Test utils to simplify mocking for redux.
 | ------------------ | :-------------: |
 | Full name          | redux-test-utils |
 | Keywords           | dispatch, redux, store, test |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 6 |
-| # downloads        | 1146949 |
+| # downloads        | 1057049 |
 | # stars            | 1 |
 
 ## Links

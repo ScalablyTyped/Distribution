@@ -4,7 +4,6 @@ import typings.mobxStateTree.actionMod.IMiddlewareEventType
 import typings.mobxStateTree.livelinessCheckingMod.LivelinessMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobxStateTreeStrings {
@@ -40,7 +39,9 @@ object mobxStateTreeStrings {
   def ModelSnapshotType: ModelSnapshotType = "ModelSnapshotType".asInstanceOf[ModelSnapshotType]
   
   @js.native
-  sealed trait action extends IMiddlewareEventType
+  sealed trait action
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
@@ -60,37 +61,51 @@ object mobxStateTreeStrings {
   def detach: detach = "detach".asInstanceOf[detach]
   
   @js.native
-  sealed trait error extends LivelinessMode
+  sealed trait error
+    extends StObject
+       with LivelinessMode
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait flow_resume extends IMiddlewareEventType
+  sealed trait flow_resume
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def flow_resume: flow_resume = "flow_resume".asInstanceOf[flow_resume]
   
   @js.native
-  sealed trait flow_resume_error extends IMiddlewareEventType
+  sealed trait flow_resume_error
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def flow_resume_error: flow_resume_error = "flow_resume_error".asInstanceOf[flow_resume_error]
   
   @js.native
-  sealed trait flow_return extends IMiddlewareEventType
+  sealed trait flow_return
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def flow_return: flow_return = "flow_return".asInstanceOf[flow_return]
   
   @js.native
-  sealed trait flow_spawn extends IMiddlewareEventType
+  sealed trait flow_spawn
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def flow_spawn: flow_spawn = "flow_spawn".asInstanceOf[flow_spawn]
   
   @js.native
-  sealed trait flow_throw extends IMiddlewareEventType
+  sealed trait flow_throw
+    extends StObject
+       with IMiddlewareEventType
   @scala.inline
   def flow_throw: flow_throw = "flow_throw".asInstanceOf[flow_throw]
   
   @js.native
-  sealed trait ignore extends LivelinessMode
+  sealed trait ignore
+    extends StObject
+       with LivelinessMode
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
@@ -110,7 +125,9 @@ object mobxStateTreeStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait warn extends LivelinessMode
+  sealed trait warn
+    extends StObject
+       with LivelinessMode
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

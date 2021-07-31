@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SublayersOwner extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait SublayersOwner extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#createServiceSublayers)
     */
-  def createServiceSublayers(): Collection[Sublayer] = js.native
+  def createServiceSublayers(): Collection[Sublayer]
   
   /**
     * Returns the sublayer with the given layerId.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#findSublayerById)
     */
-  def findSublayerById(id: Double): Sublayer = js.native
+  def findSublayerById(id: Double): Sublayer
 }
 object SublayersOwner {
   

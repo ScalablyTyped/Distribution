@@ -2,25 +2,23 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfigurationExtract extends StObject {
   
-  var compression: js.UndefOr[String] = js.native
+  var compression: js.UndefOr[String] = js.undefined
   
-  var destinationFormat: js.UndefOr[String] = js.native
+  var destinationFormat: js.UndefOr[String] = js.undefined
   
-  var destinationUri: js.UndefOr[String] = js.native
+  var destinationUri: js.UndefOr[String] = js.undefined
   
-  var destinationUris: js.UndefOr[js.Array[String]] = js.native
+  var destinationUris: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fieldDelimiter: js.UndefOr[String] = js.native
+  var fieldDelimiter: js.UndefOr[String] = js.undefined
   
-  var printHeader: js.UndefOr[Boolean] = js.native
+  var printHeader: js.UndefOr[Boolean] = js.undefined
   
-  var sourceTable: js.UndefOr[TableReference] = js.native
+  var sourceTable: js.UndefOr[TableReference] = js.undefined
 }
 object JobConfigurationExtract {
   

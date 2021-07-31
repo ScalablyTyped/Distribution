@@ -4,7 +4,6 @@ import typings.agGrid.beanStubMod.BeanStub
 import typings.agGrid.gridPanelMod.GridPanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heightScalerMod {

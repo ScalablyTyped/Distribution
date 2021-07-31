@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBrokerInstanceOptionsResponse extends StObject {
   
   /**
     * List of available broker instance options.
     */
-  var BrokerInstanceOptions: js.UndefOr[listOfBrokerInstanceOption] = js.native
+  var BrokerInstanceOptions: js.UndefOr[listOfBrokerInstanceOption] = js.undefined
   
   /**
     * Required. The maximum number of instance options that can be returned per page (20 by default). This value must be an integer from 5 to 100.
     */
-  var MaxResults: js.UndefOr[integerMin5Max100] = js.native
+  var MaxResults: js.UndefOr[integerMin5Max100] = js.undefined
   
   /**
     * The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object DescribeBrokerInstanceOptionsResponse {
   

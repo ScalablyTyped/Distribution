@@ -2,33 +2,31 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCloudFormationChangeSetResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: js.UndefOr[string] = js.native
+  var ApplicationId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the change set.Length constraints: Minimum length of 1.Pattern: ARN:[-a-zA-Z0-9:/]*
     */
-  var ChangeSetId: js.UndefOr[string] = js.native
+  var ChangeSetId: js.UndefOr[string] = js.undefined
   
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[string] = js.native
+  var SemanticVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The unique ID of the stack.
     */
-  var StackId: js.UndefOr[string] = js.native
+  var StackId: js.UndefOr[string] = js.undefined
 }
 object CreateCloudFormationChangeSetResponse {
   

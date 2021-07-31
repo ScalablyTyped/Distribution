@@ -4,103 +4,101 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCaseResult extends StObject {
   
-  var afnStripId: Double = js.native
+  var afnStripId: Double
   
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
-  var associatedBugs: js.Array[ShallowReference] = js.native
+  var associatedBugs: js.Array[ShallowReference]
   
-  var automatedTestId: String = js.native
+  var automatedTestId: String
   
-  var automatedTestName: String = js.native
+  var automatedTestName: String
   
-  var automatedTestStorage: String = js.native
+  var automatedTestStorage: String
   
-  var automatedTestType: String = js.native
+  var automatedTestType: String
   
-  var automatedTestTypeId: String = js.native
+  var automatedTestTypeId: String
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildReference: BuildReference = js.native
+  var buildReference: BuildReference
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: Date = js.native
+  var completedDate: Date
   
-  var computerName: String = js.native
+  var computerName: String
   
-  var configuration: ShallowReference = js.native
+  var configuration: ShallowReference
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var customFields: js.Array[CustomTestField] = js.native
+  var customFields: js.Array[CustomTestField]
   
-  var durationInMs: Double = js.native
+  var durationInMs: Double
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var failingSince: FailingSince = js.native
+  var failingSince: FailingSince
   
-  var failureType: String = js.native
+  var failureType: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var iterationDetails: js.Array[TestIterationDetailsModel] = js.native
+  var iterationDetails: js.Array[TestIterationDetailsModel]
   
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
-  var release: ShallowReference = js.native
+  var release: ShallowReference
   
-  var releaseReference: ReleaseReference = js.native
+  var releaseReference: ReleaseReference
   
-  var resetCount: Double = js.native
+  var resetCount: Double
   
-  var resolutionState: String = js.native
+  var resolutionState: String
   
-  var resolutionStateId: Double = js.native
+  var resolutionStateId: Double
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var runBy: IdentityRef = js.native
+  var runBy: IdentityRef
   
-  var stackTrace: String = js.native
+  var stackTrace: String
   
-  var startedDate: Date = js.native
+  var startedDate: Date
   
-  var state: String = js.native
+  var state: String
   
-  var testCase: ShallowReference = js.native
+  var testCase: ShallowReference
   
-  var testCaseReferenceId: Double = js.native
+  var testCaseReferenceId: Double
   
-  var testCaseTitle: String = js.native
+  var testCaseTitle: String
   
-  var testPlan: ShallowReference = js.native
+  var testPlan: ShallowReference
   
-  var testPoint: ShallowReference = js.native
+  var testPoint: ShallowReference
   
-  var testRun: ShallowReference = js.native
+  var testRun: ShallowReference
   
-  var testSuite: ShallowReference = js.native
+  var testSuite: ShallowReference
   
-  var url: String = js.native
+  var url: String
 }
 object TestCaseResult {
   

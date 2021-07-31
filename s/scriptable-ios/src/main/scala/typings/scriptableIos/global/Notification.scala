@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/notification/#-new-notification
   */
 class Notification ()
-  extends typings.scriptableIos.Notification
+  extends StObject
+     with typings.scriptableIos.Notification
 object Notification {
+  
+  @JSGlobal("Notification")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Delivered notifications displayed in the Notification Center._
@@ -26,9 +30,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#alldelivered
     */
   /* static member */
-  @JSGlobal("Notification.allDelivered")
-  @js.native
-  def allDelivered(): js.Promise[js.Array[typings.scriptableIos.Notification]] = js.native
+  @scala.inline
+  def allDelivered(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDelivered")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
   
   /**
     * _All pending notifications._
@@ -37,9 +40,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#allpending
     */
   /* static member */
-  @JSGlobal("Notification.allPending")
-  @js.native
-  def allPending(): js.Promise[js.Array[typings.scriptableIos.Notification]] = js.native
+  @scala.inline
+  def allPending(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allPending")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
   
   /**
     * _Removes all delivered notifications._
@@ -48,9 +50,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removealldelivered
     */
   /* static member */
-  @JSGlobal("Notification.removeAllDelivered")
-  @js.native
-  def removeAllDelivered(): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeAllDelivered(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllDelivered")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes all pending notifications._
@@ -61,9 +62,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removeallpending
     */
   /* static member */
-  @JSGlobal("Notification.removeAllPending")
-  @js.native
-  def removeAllPending(): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeAllPending(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllPending")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes delivered notifications._
@@ -73,9 +73,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removedelivered
     */
   /* static member */
-  @JSGlobal("Notification.removeDelivered")
-  @js.native
-  def removeDelivered(identifiers: js.Array[String]): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeDelivered(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDelivered")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes pending notifications._
@@ -85,9 +84,8 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removepending
     */
   /* static member */
-  @JSGlobal("Notification.removePending")
-  @js.native
-  def removePending(identifiers: js.Array[String]): js.Promise[Unit] = js.native
+  @scala.inline
+  def removePending(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removePending")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Resets the current notification._
@@ -99,7 +97,6 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#resetcurrent
     */
   /* static member */
-  @JSGlobal("Notification.resetCurrent")
-  @js.native
-  def resetCurrent(): Unit = js.native
+  @scala.inline
+  def resetCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCurrent")().asInstanceOf[Unit]
 }

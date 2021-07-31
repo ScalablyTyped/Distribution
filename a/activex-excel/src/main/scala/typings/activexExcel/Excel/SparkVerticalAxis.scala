@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkVerticalAxis extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var CustomMaxScaleValue: js.Any = js.native
+  var CustomMaxScaleValue: js.Any
   
-  var CustomMinScaleValue: js.Any = js.native
+  var CustomMinScaleValue: js.Any
   
   @JSName("Excel.SparkVerticalAxis_typekey")
-  var ExcelDotSparkVerticalAxis_typekey: SparkVerticalAxis = js.native
+  var ExcelDotSparkVerticalAxis_typekey: SparkVerticalAxis
   
-  var MaxScaleType: XlSparkScale = js.native
+  var MaxScaleType: XlSparkScale
   
-  var MinScaleType: XlSparkScale = js.native
+  var MinScaleType: XlSparkScale
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object SparkVerticalAxis {
   

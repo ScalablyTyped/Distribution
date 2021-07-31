@@ -3,31 +3,29 @@ package typings.highlightJs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageDetail extends StObject {
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var case_insensitive: js.UndefOr[Boolean] = js.native
+  var case_insensitive: js.UndefOr[Boolean] = js.undefined
   
-  var classNameAliases: js.UndefOr[Record[String, String]] = js.native
+  var classNameAliases: js.UndefOr[Record[String, String]] = js.undefined
   
-  var compiled: js.UndefOr[Boolean] = js.native
+  var compiled: js.UndefOr[Boolean] = js.undefined
   
-  var contains: js.Array[Mode] = js.native
+  var contains: js.Array[Mode]
   
-  var disableAutodetect: js.UndefOr[Boolean] = js.native
+  var disableAutodetect: js.UndefOr[Boolean] = js.undefined
   
-  var exports: js.UndefOr[js.Any] = js.native
+  var exports: js.UndefOr[js.Any] = js.undefined
   
-  var keywords: js.UndefOr[(Record[String, _]) | String] = js.native
+  var keywords: js.UndefOr[(Record[String, js.Any]) | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var rawDefinition: js.UndefOr[js.Function0[Language]] = js.native
+  var rawDefinition: js.UndefOr[js.Function0[Language]] = js.undefined
 }
 object LanguageDetail {
   
@@ -86,7 +84,7 @@ object LanguageDetail {
     def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def setKeywords(value: (Record[String, _]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    def setKeywords(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)

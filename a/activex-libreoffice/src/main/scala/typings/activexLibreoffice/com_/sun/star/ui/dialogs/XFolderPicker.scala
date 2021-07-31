@@ -3,44 +3,44 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies a {@link FolderPicker} interface. */
-@js.native
-trait XFolderPicker extends XExecutableDialog {
+trait XFolderPicker
+  extends StObject
+     with XExecutableDialog {
   
   /**
     * Returns the selected directory as url conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @returns The selected directory as url if the user did close the dialog with Ok else the returned value is undefined.
     */
-  val Directory: String = js.native
+  val Directory: String
   
   /**
     * Returns the root directory that the {@link FolderPicker} is showing. The return value is undefined if the client did not choose a root directory or
     * the previously specified root directory doesn't exist.
     * @returns The directory in url format.
     */
-  var DisplayDirectory: String = js.native
+  var DisplayDirectory: String
   
   /**
     * Returns the selected directory as url conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @returns The selected directory as url if the user did close the dialog with Ok else the returned value is undefined.
     */
-  def getDirectory(): String = js.native
+  def getDirectory(): String
   
   /**
     * Returns the root directory that the {@link FolderPicker} is showing. The return value is undefined if the client did not choose a root directory or
     * the previously specified root directory doesn't exist.
     * @returns The directory in url format.
     */
-  def getDisplayDirectory(): String = js.native
+  def getDisplayDirectory(): String
   
   /**
     * The implementation may optionally show the given text as a description for the user within the dialog, e.g. "Please select a directory". If the client
     * doesn't set a description the dialog may show a default description.
     */
-  def setDescription(aDescription: String): Unit = js.native
+  def setDescription(aDescription: String): Unit
   
   /**
     * Sets the root directory that the {@link FolderPicker} should display. It is not specified which root directory the {@link FolderPicker} chooses if the
@@ -48,7 +48,7 @@ trait XFolderPicker extends XExecutableDialog {
     * @param aDirectory Specifies the root directory in url format, conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @throws com::sun::star::lang::IllegalArgumentException if the given url is invalid.
     */
-  def setDisplayDirectory(aDirectory: String): Unit = js.native
+  def setDisplayDirectory(aDirectory: String): Unit
 }
 object XFolderPicker {
   

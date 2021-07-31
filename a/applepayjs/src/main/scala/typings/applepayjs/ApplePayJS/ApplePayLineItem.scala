@@ -2,29 +2,27 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a line item in a payment request - for example, total, tax, discount, or grand total.
   */
-@js.native
 trait ApplePayLineItem extends StObject {
   
   /**
     * The line item's amount.
     */
-  var amount: String = js.native
+  var amount: String
   
   /**
     * A short, localized description of the line item.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * A value that indicates if the line item is final or pending.
     */
-  var `type`: js.UndefOr[ApplePayLineItemType] = js.native
+  var `type`: js.UndefOr[ApplePayLineItemType] = js.undefined
 }
 object ApplePayLineItem {
   

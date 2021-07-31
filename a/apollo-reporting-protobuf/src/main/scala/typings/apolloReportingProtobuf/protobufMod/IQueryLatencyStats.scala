@@ -2,47 +2,45 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQueryLatencyStats extends StObject {
   
   /** QueryLatencyStats cacheHits */
-  var cacheHits: js.UndefOr[Double | Null] = js.native
+  var cacheHits: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats cacheLatencyCount */
-  var cacheLatencyCount: js.UndefOr[js.Array[Double] | Null] = js.native
+  var cacheLatencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats forbiddenOperationCount */
-  var forbiddenOperationCount: js.UndefOr[Double | Null] = js.native
+  var forbiddenOperationCount: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats latencyCount */
-  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.native
+  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats persistedQueryHits */
-  var persistedQueryHits: js.UndefOr[Double | Null] = js.native
+  var persistedQueryHits: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats persistedQueryMisses */
-  var persistedQueryMisses: js.UndefOr[Double | Null] = js.native
+  var persistedQueryMisses: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats privateCacheTtlCount */
-  var privateCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.native
+  var privateCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats publicCacheTtlCount */
-  var publicCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.native
+  var publicCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats registeredOperationCount */
-  var registeredOperationCount: js.UndefOr[Double | Null] = js.native
+  var registeredOperationCount: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats requestCount */
-  var requestCount: js.UndefOr[Double | Null] = js.native
+  var requestCount: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats requestsWithErrorsCount */
-  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.native
+  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats rootErrorStats */
-  var rootErrorStats: js.UndefOr[IPathErrorStats | Null] = js.native
+  var rootErrorStats: js.UndefOr[IPathErrorStats | Null] = js.undefined
 }
 object IQueryLatencyStats {
   

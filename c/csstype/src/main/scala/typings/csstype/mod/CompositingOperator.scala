@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.subtract
 */
 trait CompositingOperator
-  extends _MaskLayer[js.Any]
+  extends StObject
      with _MaskCompositeProperty
+     with _MaskLayer[js.Any]
 object CompositingOperator {
   
   @scala.inline

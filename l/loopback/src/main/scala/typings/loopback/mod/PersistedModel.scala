@@ -12,7 +12,6 @@ import typings.loopback.anon.Where
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -178,6 +177,10 @@ class PersistedModel protected () extends Model {
 }
 object PersistedModel {
   
+  @JSImport("loopback", "PersistedModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -186,9 +189,8 @@ object PersistedModel {
     * @param  {() => void} callback Callback function
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.bulkUpdate")
-  @js.native
-  def bulkUpdate(updates: js.Array[_], options: js.Any): js.Promise[Unit] = js.native
+  @scala.inline
+  def bulkUpdate(updates: js.Array[js.Any], options: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -197,9 +199,8 @@ object PersistedModel {
     * @param  {() => void} callback Callback function
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.bulkUpdate")
-  @js.native
-  def bulkUpdate(updates: js.Array[_], options: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  @scala.inline
+  def bulkUpdate(updates: js.Array[js.Any], options: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
@@ -211,9 +212,8 @@ object PersistedModel {
     * @param {Array} changes An Array of [Change](#change) objects
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.changes")
-  @js.native
-  def changes(since: Double, filter: js.Any): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def changes(since: Double, filter: js.Any): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
     * to reduce the number of results returned.
@@ -224,28 +224,25 @@ object PersistedModel {
     * @param {Array} changes An Array of [Change](#change) objects
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.changes")
-  @js.native
-  def changes(since: Double, filter: js.Any, callback: CallbackWithResult[_]): Unit = js.native
+  @scala.inline
+  def changes(since: Double, filter: js.Any, callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a checkpoint
     * @param  {() => void} callback
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.checkpoint")
-  @js.native
-  def checkpoint(): Unit = js.native
-  @JSImport("loopback", "PersistedModel.checkpoint")
-  @js.native
-  def checkpoint(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def checkpoint(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")().asInstanceOf[Unit]
+  @scala.inline
+  def checkpoint(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Create a checkpoint
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.checkpoint")
-  @js.native
-  def checkpoint_Promise(): js.Promise[Unit] = js.native
+  @scala.inline
+  def checkpoint_Promise(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * Return the number of records that match the optional "where" filter.
@@ -260,12 +257,10 @@ object PersistedModel {
     * @param {number} count number of instances updated
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.count")
-  @js.native
-  def count(): js.Promise[Double] = js.native
-  @JSImport("loopback", "PersistedModel.count")
-  @js.native
-  def count(where: js.Any): js.Promise[Double] = js.native
+  @scala.inline
+  def count(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def count(where: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   /**
     * Return the number of records that match the optional "where" filter.
     * @param {any} [where] Optional where filter, like
@@ -279,9 +274,8 @@ object PersistedModel {
     * @param {number} count number of instances updated
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.count")
-  @js.native
-  def count(where: js.Any, callback: CallbackWithResult[Double]): Unit = js.native
+  @scala.inline
+  def count(where: js.Any, callback: CallbackWithResult[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create new instance of Model, and save to database
@@ -289,12 +283,10 @@ object PersistedModel {
     * @returns {T | T[]} Model instances or null
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.create")
-  @js.native
-  def create[T](): js.Promise[T | js.Array[T] | Null] = js.native
-  @JSImport("loopback", "PersistedModel.create")
-  @js.native
-  def create[T](data: js.Any): js.Promise[T | js.Array[T] | Null] = js.native
+  @scala.inline
+  def create[T](): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  @scala.inline
+  def create[T](data: js.Any): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
   /**
     * Create new instance of Model, and save to database
     * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -303,15 +295,12 @@ object PersistedModel {
     * @param {any} models Model instances or null
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.create")
-  @js.native
-  def create[T](data: js.Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.create")
-  @js.native
-  def create[T](data: js.Array[_]): js.Promise[T | js.Array[T] | Null] = js.native
-  @JSImport("loopback", "PersistedModel.create")
-  @js.native
-  def create[T](data: js.Array[_], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
+  @scala.inline
+  def create[T](data: js.Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create[T](data: js.Array[js.Any]): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  @scala.inline
+  def create[T](data: js.Array[js.Any], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
@@ -319,18 +308,16 @@ object PersistedModel {
     * @returns {any} changes
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.createChangeStream")
-  @js.native
-  def createChangeStream(options: Where): js.Promise[_] = js.native
+  @scala.inline
+  def createChangeStream(options: Where): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @param {() => void} callback
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.createChangeStream")
-  @js.native
-  def createChangeStream(options: Where, callback: CallbackWithResult[_]): Unit = js.native
+  @scala.inline
+  def createChangeStream(options: Where, callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
@@ -338,9 +325,8 @@ object PersistedModel {
     * @param  {Array}    deltas
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.createUpdates")
-  @js.native
-  def createUpdates(deltas: js.Array[_]): js.Promise[Unit] = js.native
+  @scala.inline
+  def createUpdates(deltas: js.Array[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
@@ -348,18 +334,16 @@ object PersistedModel {
     * @param  {() => void} callback
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.createUpdates")
-  @js.native
-  def createUpdates(deltas: js.Array[_], callback: CallbackWithoutResult): Unit = js.native
+  @scala.inline
+  def createUpdates(deltas: js.Array[js.Any], callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the current checkpoint ID
     * @returns {Promise<number>} resolves to currentCheckpointId
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.currentCheckpoint")
-  @js.native
-  def currentCheckpoint(): js.Promise[Double] = js.native
+  @scala.inline
+  def currentCheckpoint(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("currentCheckpoint")().asInstanceOf[js.Promise[Double]]
   /**
     * Get the current checkpoint ID
     * @callback {() => void} callback Callback function called with `(err, currentCheckpointId)` arguments.  Required.
@@ -367,9 +351,8 @@ object PersistedModel {
     * @param {number} currentCheckpointId Current checkpoint ID
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.currentCheckpoint")
-  @js.native
-  def currentCheckpoint(callback: CallbackWithResult[Double]): Unit = js.native
+  @scala.inline
+  def currentCheckpoint(callback: CallbackWithResult[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentCheckpoint")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Destroy all model instances that match the optional `where` specification
@@ -383,12 +366,10 @@ object PersistedModel {
     * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.destroyAll")
-  @js.native
-  def destroyAll(): js.Promise[Info] = js.native
-  @JSImport("loopback", "PersistedModel.destroyAll")
-  @js.native
-  def destroyAll(where: js.Any): js.Promise[Info] = js.native
+  @scala.inline
+  def destroyAll(): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[js.Promise[Info]]
+  @scala.inline
+  def destroyAll(where: js.Any): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Info]]
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -404,18 +385,16 @@ object PersistedModel {
     * @param {number} info.count number of instances (rows, documents) destroyed
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.destroyAll")
-  @js.native
-  def destroyAll(where: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  @scala.inline
+  def destroyAll(where: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.destroyById")
-  @js.native
-  def destroyById(id: js.Any): js.Promise[Unit] = js.native
+  @scala.inline
+  def destroyById(id: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
@@ -423,9 +402,8 @@ object PersistedModel {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.destroyById")
-  @js.native
-  def destroyById(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  @scala.inline
+  def destroyById(id: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a set of deltas and conflicts since the given checkpoint
@@ -434,9 +412,8 @@ object PersistedModel {
     * @param  {Array}  remoteChanges  An Array of change objects.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.diff")
-  @js.native
-  def diff(since: Double, remoteChanges: js.Array[_]): js.Promise[_] = js.native
+  @scala.inline
+  def diff(since: Double, remoteChanges: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   /**
     * Get a set of deltas and conflicts since the given checkpoint
     * See [Change.diff()](#change-diff) for details
@@ -447,26 +424,23 @@ object PersistedModel {
     * @param {any} result any with `deltas` and `conflicts` properties; see [Change.diff()](#change-diff) for details
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.diff")
-  @js.native
-  def diff(since: Double, remoteChanges: js.Array[_], callback: CallbackWithResult[_]): Unit = js.native
+  @scala.inline
+  def diff(since: Double, remoteChanges: js.Array[js.Any], callback: CallbackWithResult[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enable the tracking of changes made to the model. Usually for replication.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.enableChangeTracking")
-  @js.native
-  def enableChangeTracking(): Unit = js.native
+  @scala.inline
+  def enableChangeTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableChangeTracking")().asInstanceOf[Unit]
   
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.exists")
-  @js.native
-  def exists(id: js.Any): js.Promise[Boolean] = js.native
+  @scala.inline
+  def exists(id: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
@@ -475,9 +449,8 @@ object PersistedModel {
     * @param {boolean} exists True if the instance with the specified ID exists; false otherwise
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.exists")
-  @js.native
-  def exists(id: js.Any, callback: CallbackWithResult[Boolean]): Unit = js.native
+  @scala.inline
+  def exists(id: js.Any, callback: CallbackWithResult[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find all model instances that match `filter` specification.
@@ -501,12 +474,10 @@ object PersistedModel {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.find")
-  @js.native
-  def find[T](): js.Promise[js.Array[T] | Null] = js.native
-  @JSImport("loopback", "PersistedModel.find")
-  @js.native
-  def find[T](filter: Fields): js.Promise[js.Array[T] | Null] = js.native
+  @scala.inline
+  def find[T](): js.Promise[js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")().asInstanceOf[js.Promise[js.Array[T] | Null]]
+  @scala.inline
+  def find[T](filter: Fields): js.Promise[js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T] | Null]]
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -532,9 +503,8 @@ object PersistedModel {
     * @param {Array} models Model instances matching the filter, or null if none found
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.find")
-  @js.native
-  def find[T](filter: Fields, callback: CallbackWithResult[js.Array[T]]): Unit = js.native
+  @scala.inline
+  def find[T](filter: Fields, callback: CallbackWithResult[js.Array[T]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find object by ID with an optional filter for include/fields
@@ -546,9 +516,8 @@ object PersistedModel {
     * <br/>See [Include filter](docs.strongloop.com/display/LB/Include+filter).
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findById")
-  @js.native
-  def findById[T](id: js.Any): js.Promise[T | Null] = js.native
+  @scala.inline
+  def findById[T](id: js.Any): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -557,12 +526,10 @@ object PersistedModel {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findById")
-  @js.native
-  def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.findById")
-  @js.native
-  def findById[T](id: js.Any, filter: Include): js.Promise[T | Null] = js.native
+  @scala.inline
+  def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def findById[T](id: js.Any, filter: Include): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -576,9 +543,8 @@ object PersistedModel {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findById")
-  @js.native
-  def findById[T](id: js.Any, filter: Include, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def findById[T](id: js.Any, filter: Include, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find one model instance that matches `filter` specification.
@@ -601,9 +567,8 @@ object PersistedModel {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOne")
-  @js.native
-  def findOne[T](): js.Promise[T | Null] = js.native
+  @scala.inline
+  def findOne[T](): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")().asInstanceOf[js.Promise[T | Null]]
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -613,12 +578,10 @@ object PersistedModel {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOne")
-  @js.native
-  def findOne[T](callback: CallbackWithResult[T]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.findOne")
-  @js.native
-  def findOne[T](filter: Order): js.Promise[T | Null] = js.native
+  @scala.inline
+  def findOne[T](callback: CallbackWithResult[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def findOne[T](filter: Order): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -643,9 +606,8 @@ object PersistedModel {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOne")
-  @js.native
-  def findOne[T](filter: Order, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def findOne[T](filter: Order, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Finds one record matching the optional filter object. If not found, creates
@@ -674,9 +636,8 @@ object PersistedModel {
     * @param {any} data Data to insert if object matching the `where` filter is not found.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOrCreate")
-  @js.native
-  def findOrCreate[T](data: js.Any): js.Promise[Created[T] | Null] = js.native
+  @scala.inline
+  def findOrCreate[T](data: js.Any): js.Promise[Created[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -691,12 +652,10 @@ object PersistedModel {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOrCreate")
-  @js.native
-  def findOrCreate[T](data: js.Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.findOrCreate")
-  @js.native
-  def findOrCreate[T](data: js.Any, filter: Fields): js.Promise[Created[T] | Null] = js.native
+  @scala.inline
+  def findOrCreate[T](data: js.Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def findOrCreate[T](data: js.Any, filter: Fields): js.Promise[Created[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -728,35 +687,31 @@ object PersistedModel {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.findOrCreate")
-  @js.native
-  def findOrCreate[T](data: js.Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
+  @scala.inline
+  def findOrCreate[T](data: js.Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the `Change` model.
     * Throws an error if the change model is not correctly setup.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.getChangeModel")
-  @js.native
-  def getChangeModel(): Unit = js.native
+  @scala.inline
+  def getChangeModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeModel")().asInstanceOf[Unit]
   
   /**
     * Get the `id` property name of the constructor
     * @returns {string} The `id` property nam
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.getIdName")
-  @js.native
-  def getIdName(): String = js.native
+  @scala.inline
+  def getIdName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIdName")().asInstanceOf[String]
   
   /**
     * Get the source identifier for this model or dataSource
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.getSourceId")
-  @js.native
-  def getSourceId(): js.Promise[String] = js.native
+  @scala.inline
+  def getSourceId(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceId")().asInstanceOf[js.Promise[String]]
   /**
     * Get the source identifier for this model or dataSource
     * @callback {() => void} callback Callback function called with `(err, id)` arguments.
@@ -764,9 +719,8 @@ object PersistedModel {
     * @param {string} sourceId Source identifier for the model or dataSource
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.getSourceId")
-  @js.native
-  def getSourceId(callback: CallbackWithResult[String]): Unit = js.native
+  @scala.inline
+  def getSourceId(callback: CallbackWithResult[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Handle a change error. Override this method in a subclassing model to customize
@@ -774,18 +728,16 @@ object PersistedModel {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.handleChangeError")
-  @js.native
-  def handleChangeError(err: Error): Unit = js.native
+  @scala.inline
+  def handleChangeError(err: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleChangeError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.rectifyChange")
-  @js.native
-  def rectifyChange(id: js.Any): js.Promise[Unit] = js.native
+  @scala.inline
+  def rectifyChange(id: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
@@ -793,9 +745,8 @@ object PersistedModel {
     * @param {Error} er
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.rectifyChange")
-  @js.native
-  def rectifyChange(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  @scala.inline
+  def rectifyChange(id: js.Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replace attributes for a model instance whose id is the first input
@@ -807,9 +758,8 @@ object PersistedModel {
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceById")
-  @js.native
-  def replaceById[T](id: js.Any, data: js.Any): js.Promise[T] = js.native
+  @scala.inline
+  def replaceById[T](id: js.Any, data: js.Any): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -821,12 +771,10 @@ object PersistedModel {
     * @param {any} instance Replaced instance
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceById")
-  @js.native
-  def replaceById[T](id: js.Any, data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.replaceById")
-  @js.native
-  def replaceById[T](id: js.Any, data: js.Any, options: Validate): js.Promise[T] = js.native
+  @scala.inline
+  def replaceById[T](id: js.Any, data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replaceById[T](id: js.Any, data: js.Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -840,9 +788,8 @@ object PersistedModel {
     * @param {any} instance Replaced instance
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceById")
-  @js.native
-  def replaceById[T](id: js.Any, data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def replaceById[T](id: js.Any, data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replace or insert a model instance; replace existing record if one is found,
@@ -853,9 +800,8 @@ object PersistedModel {
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceOrCreate")
-  @js.native
-  def replaceOrCreate[T](data: js.Any): js.Promise[T] = js.native
+  @scala.inline
+  def replaceOrCreate[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -866,12 +812,10 @@ object PersistedModel {
     * @param {any} model Replaced model instance.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceOrCreate")
-  @js.native
-  def replaceOrCreate[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.replaceOrCreate")
-  @js.native
-  def replaceOrCreate[T](data: js.Any, options: Validate): js.Promise[T] = js.native
+  @scala.inline
+  def replaceOrCreate[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replaceOrCreate[T](data: js.Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -884,9 +828,8 @@ object PersistedModel {
     * @param {any} model Replaced model instance.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replaceOrCreate")
-  @js.native
-  def replaceOrCreate[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def replaceOrCreate[T](data: js.Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Replicate changes since the given checkpoint to the given target model
@@ -901,218 +844,166 @@ object PersistedModel {
     * argument for the next replication
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
+  @scala.inline
+  def replicate(): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")().asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Unit, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Unit, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
   def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: js.UndefOr[scala.Nothing], targetModel: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    optionsFilter: js.Any
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: js.UndefOr[scala.Nothing],
+    since: Double,
+    targetModel: Unit,
     options: js.Any,
     optionsFilter: js.Any,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
   def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: Model,
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.UndefOr[scala.Nothing],
+    since: Double,
+    targetModel: Unit,
+    options: js.Any,
+    optionsFilter: Unit,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Unit, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
   def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: Model,
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: Model,
-    options: js.UndefOr[scala.Nothing],
+    since: Double,
+    targetModel: Unit,
+    options: Unit,
     optionsFilter: js.Any,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: js.UndefOr[scala.Nothing],
-    targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
   def replicate(
     since: Double,
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.UndefOr[scala.Nothing],
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Unit,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: js.UndefOr[scala.Nothing], options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: js.UndefOr[scala.Nothing],
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: Model,
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: Model, options: js.UndefOr[scala.Nothing], optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: Model,
-    options: js.UndefOr[scala.Nothing],
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(
-    since: Double,
-    targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
-  @JSImport("loopback", "PersistedModel.replicate")
-  @js.native
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
   def replicate(
     since: Double,
     targetModel: Model,
     options: js.Any,
     optionsFilter: js.Any,
     callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[Conflicts] | Unit = js.native
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Double, targetModel: Model, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Unit, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Unit, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: js.Any,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: js.Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Unit, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(since: Unit, targetModel: Model, options: Unit, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  @scala.inline
+  def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
   
   /**
     * Update multiple instances that match the where clause.
@@ -1134,9 +1025,8 @@ object PersistedModel {
     * @param {any} data any containing data to replace matching instances, if any.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(): js.Promise[Double] = js.native
+  @scala.inline
+  def updateAll(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")().asInstanceOf[js.Promise[Double]]
   /**
     * Update multiple instances that match the where clause.
     * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
@@ -1146,47 +1036,8 @@ object PersistedModel {
     *
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
-  /**
-    * Update multiple instances that match the where clause.
-    *
-    * Example:
-    *
-    * ```js
-    * Employee.updateAll({managerId: 'x001'}, {managerId: 'x002'}, function(err, info) {
-    *     ...
-    * });
-    * ```
-    *
-    * @param {any} [where] Optional `where` filter, like
-    * ```
-    * { key: val, key2: {gt: 'val2'}, ...}
-    * ```
-    * <br/>see
-    * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
-    * @param {any} data any containing data to replace matching instances, if any.
-    *
-    * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
-    * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
-    * @param {any} info Additional information about the command outcome.
-    * @param {number} info.count number of instances (rows, documents) updated.
-    *
-    */
-  /* static member */
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(whereOrData: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(where: js.UndefOr[scala.Nothing], data: js.Any): js.Promise[Double] = js.native
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(where: js.Any): js.Promise[Double] = js.native
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(where: js.Any, data: js.Any): js.Promise[Double] = js.native
+  @scala.inline
+  def updateAll(callback: CallbackWithMultipleResults[js.Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Update multiple instances that match the where clause.
     *
@@ -1213,9 +1064,42 @@ object PersistedModel {
     *
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.updateAll")
-  @js.native
-  def updateAll(where: js.Any, data: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  @scala.inline
+  def updateAll(whereOrData: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(whereOrData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateAll(where: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def updateAll(where: js.Any, data: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  /**
+    * Update multiple instances that match the where clause.
+    *
+    * Example:
+    *
+    * ```js
+    * Employee.updateAll({managerId: 'x001'}, {managerId: 'x002'}, function(err, info) {
+    *     ...
+    * });
+    * ```
+    *
+    * @param {any} [where] Optional `where` filter, like
+    * ```
+    * { key: val, key2: {gt: 'val2'}, ...}
+    * ```
+    * <br/>see
+    * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
+    * @param {any} data any containing data to replace matching instances, if any.
+    *
+    * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
+    * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
+    * @param {any} info Additional information about the command outcome.
+    * @param {number} info.count number of instances (rows, documents) updated.
+    *
+    */
+  /* static member */
+  @scala.inline
+  def updateAll(where: js.Any, data: js.Any, callback: CallbackWithMultipleResults[js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateAll(where: Unit, data: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
   /**
     * Update or insert a model instance
@@ -1225,9 +1109,8 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.upsert")
-  @js.native
-  def upsert[T](data: js.Any): js.Promise[T] = js.native
+  @scala.inline
+  def upsert[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance
     * @param {any} data The model instance data to insert.
@@ -1236,9 +1119,8 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.upsert")
-  @js.native
-  def upsert[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def upsert[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Update or insert a model instance based on the search criteria.
@@ -1254,9 +1136,8 @@ object PersistedModel {
     * @param {any} data The model instance data to insert.
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.upsertWithWhere")
-  @js.native
-  def upsertWithWhere[T](data: js.Any): js.Promise[T] = js.native
+  @scala.inline
+  def upsertWithWhere[T](data: js.Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance based on the search criteria.
     * If there is a single instance retrieved, update the retrieved model.
@@ -1274,7 +1155,6 @@ object PersistedModel {
     * @param {any} model Updated model instance
     */
   /* static member */
-  @JSImport("loopback", "PersistedModel.upsertWithWhere")
-  @js.native
-  def upsertWithWhere[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  @scala.inline
+  def upsertWithWhere[T](data: js.Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

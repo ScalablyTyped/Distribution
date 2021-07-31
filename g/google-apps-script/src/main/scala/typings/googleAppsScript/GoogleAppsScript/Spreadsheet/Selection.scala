@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,18 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   *     Logger.log('Active Sheet: ' + selection.getActiveSheet().getName());
   */
-@js.native
 trait Selection extends StObject {
   
-  def getActiveRange(): Range | Null = js.native
+  def getActiveRange(): Range | Null
   
-  def getActiveRangeList(): RangeList | Null = js.native
+  def getActiveRangeList(): RangeList | Null
   
-  def getActiveSheet(): Sheet = js.native
+  def getActiveSheet(): Sheet
   
-  def getCurrentCell(): Range | Null = js.native
+  def getCurrentCell(): Range | Null
   
-  def getNextDataRange(direction: Direction): Range | Null = js.native
+  def getNextDataRange(direction: Direction): Range | Null
 }
 object Selection {
   

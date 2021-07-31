@@ -2,13 +2,11 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCostCategoryDefinitionResponse extends StObject {
   
-  var CostCategory: js.UndefOr[typings.awsSdk.costexplorerMod.CostCategory] = js.native
+  var CostCategory: js.UndefOr[typings.awsSdk.costexplorerMod.CostCategory] = js.undefined
 }
 object DescribeCostCategoryDefinitionResponse {
   

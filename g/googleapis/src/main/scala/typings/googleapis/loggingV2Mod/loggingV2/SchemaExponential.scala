@@ -2,7 +2,6 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,23 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * boundaries:Upper bound (0 &lt;= i &lt; N-1): scale * (growth_factor ^ i).
   * Lower bound (1 &lt;= i &lt; N): scale * (growth_factor ^ (i - 1)).
   */
-@js.native
 trait SchemaExponential extends StObject {
   
   /**
     * Must be greater than 1.
     */
-  var growthFactor: js.UndefOr[Double] = js.native
+  var growthFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Must be greater than 0.
     */
-  var numFiniteBuckets: js.UndefOr[Double] = js.native
+  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * Must be greater than 0.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object SchemaExponential {
   

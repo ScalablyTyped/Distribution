@@ -2,22 +2,20 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedWorkerInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/shared-worker-info
   /**
     * The unique id of the shared worker.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The url of the shared worker.
     */
-  var url: String = js.native
+  var url: String
 }
 object SharedWorkerInfo {
   

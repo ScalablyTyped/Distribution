@@ -5,11 +5,12 @@ import typings.std.Document
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTE extends Widget_ {
+trait RTE
+  extends StObject
+     with Widget_ {
   
   /** Returns the range object.
     * @returns {any}
@@ -88,9 +89,9 @@ trait RTE extends Widget_ {
     * @returns {HTMLElement}
     */
   def insertColumn(): HTMLElement = js.native
-  def insertColumn(before: js.UndefOr[scala.Nothing], cell: JQuery): HTMLElement = js.native
   def insertColumn(before: Boolean): HTMLElement = js.native
   def insertColumn(before: Boolean, cell: JQuery): HTMLElement = js.native
+  def insertColumn(before: Unit, cell: JQuery): HTMLElement = js.native
   
   /** Inserts new item to the target contextmenu node.
     * @returns {void}
@@ -103,9 +104,9 @@ trait RTE extends Widget_ {
     * @returns {HTMLElement}
     */
   def insertRow(): HTMLElement = js.native
-  def insertRow(before: js.UndefOr[scala.Nothing], cell: JQuery): HTMLElement = js.native
   def insertRow(before: Boolean): HTMLElement = js.native
   def insertRow(before: Boolean, cell: JQuery): HTMLElement = js.native
+  def insertRow(before: Unit, cell: JQuery): HTMLElement = js.native
   
   @JSName("model")
   var model_RTE: Model = js.native
@@ -188,27 +189,30 @@ object RTE {
     
     ///To display the RTE toolbar overflow items as inline toolbar
     @js.native
-    sealed trait Inline extends ToolbarOverflowMode
+    sealed trait Inline
+      extends StObject
+         with ToolbarOverflowMode
     
     ///To display the RTE toolbar overflow items as popup
     @js.native
-    sealed trait Popup extends ToolbarOverflowMode
+    sealed trait Popup
+      extends StObject
+         with ToolbarOverflowMode
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -241,20 +245,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait ContextMenuClickEventArgs extends StObject {
     
     /** returns clicked menu item element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the selected item.
       */
-    var selectedItem: js.UndefOr[Double] = js.native
+    var selectedItem: js.UndefOr[Double] = js.undefined
     
     /** returns clicked menu item text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ContextMenuClickEventArgs {
     
@@ -287,20 +290,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -333,20 +335,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -379,20 +380,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait ExecuteEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ExecuteEventArgs {
     
@@ -425,16 +425,15 @@ object RTE {
     }
   }
   
-  @js.native
   trait ExportToPdfSettings extends StObject {
     
     /** Specifies the file name for the exported pdf file.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** This API is used to receive the server-side handler for export related operations.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ExportToPdfSettings {
     
@@ -461,16 +460,15 @@ object RTE {
     }
   }
   
-  @js.native
   trait ExportToWordSettings extends StObject {
     
     /** Specifies the file name for the exported word file.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** This API is used to receive the server-side handler for export related operations.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ExportToWordSettings {
     
@@ -497,20 +495,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait FileBrowser extends StObject {
     
     /** This API is used to receive the server-side handler for file related operations.
       */
-    var ajaxAction: js.UndefOr[String] = js.native
+    var ajaxAction: js.UndefOr[String] = js.undefined
     
     /** Specifies the file type extension shown in the file browser window.
       */
-    var extensionAllow: js.UndefOr[String] = js.native
+    var extensionAllow: js.UndefOr[String] = js.undefined
     
     /** Specifies the directory to perform operations like create, delete and rename folder and files, and upload the selected files to the current directory.
       */
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
   }
   object FileBrowser {
     
@@ -543,20 +540,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait ImageBrowser extends StObject {
     
     /** This API is used to receive the server-side handler for the file related operations.
       */
-    var ajaxAction: js.UndefOr[String] = js.native
+    var ajaxAction: js.UndefOr[String] = js.undefined
     
     /** Specifies the file type extension shown in the image browser window.
       */
-    var extensionAllow: js.UndefOr[String] = js.native
+    var extensionAllow: js.UndefOr[String] = js.undefined
     
     /** Specifies the directory to perform operations like create, delete and rename folder and files, and upload the selected images to the current directory.
       */
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
   }
   object ImageBrowser {
     
@@ -589,12 +585,11 @@ object RTE {
     }
   }
   
-  @js.native
   trait ImportSettings extends StObject {
     
     /** This API is used to receive the server-side handler for import operations.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ImportSettings {
     
@@ -615,20 +610,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait KeydownEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeydownEventArgs {
     
@@ -661,20 +655,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait KeyupEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeyupEventArgs {
     
@@ -707,356 +700,355 @@ object RTE {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Enables/disables the editing of the content.
       * @Default {True}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** RTE control can be accessed through the keyboard shortcut keys.
       * @Default {True}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** When the property is set to true, it focuses the RTE at the time of rendering.
       * @Default {false}
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /** Based on the content size, its height is adjusted instead of adding the scrollbar.
       * @Default {false}
       */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when changed successfully.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Sets the colorCode to display the color of the fontColor and backgroundColor in the font tools of the RTE.
       * @Default {[000000, FFFFFF, C4C4C4, ADADAD, 595959, 262626, 4f81bd, dbe5f1, b8cce4, 95b3d7, 366092, 244061, c0504d, f2dcdb, e5b9b7, d99694, 953734,632423, 9bbb59, ebf1dd, d7e3bc,
       * c3d69b, 76923c, 4f6128, 8064a2, e5e0ec, ccc1d9, b2a2c7, 5f497a, 3f3151, f79646, fdeada, fbd5b5, fac08f,e36c09, 974806]}
       */
-    var colorCode: js.UndefOr[js.Any] = js.native
+    var colorCode: js.UndefOr[js.Any] = js.undefined
     
     /** The number of columns given are rendered in the color palate popup.
       * @Default {6}
       */
-    var colorPaletteColumns: js.UndefOr[Double] = js.native
+    var colorPaletteColumns: js.UndefOr[Double] = js.undefined
     
     /** The number of rows given are rendered in the color palate popup.
       * @Default {6}
       */
-    var colorPaletteRows: js.UndefOr[Double] = js.native
+    var colorPaletteRows: js.UndefOr[Double] = js.undefined
     
     /** Fires when mouse click on menu items.
       */
-    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.native
+    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.undefined
     
     /** Fires when the RTE is created successfully
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for the RTE theme. This cssClass API helps the usage of custom skinning option for the RTE control by including this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires before the RTE is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** When the property is set to true, it returns the encrypted text.
       * @Default {false}
       */
-    var enableHtmlEncode: js.UndefOr[Boolean] = js.native
+    var enableHtmlEncode: js.UndefOr[Boolean] = js.undefined
     
     /** Maintain the values of the RTE after page reload.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the RTE in the RTL direction.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the resize icon and enables the resize option in the RTE.
       * @Default {True}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the tab key action with the RichTextEditor content.
       * @Default {True}
       */
-    var enableTabKeyNavigation: js.UndefOr[Boolean] = js.native
+    var enableTabKeyNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Formats the contents based on the XHTML rules.
       * @Default {false}
       */
-    var enableXHTML: js.UndefOr[Boolean] = js.native
+    var enableXHTML: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the RTE controlâ€™s accessibility or interaction.
       * @Default {True}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the commands are executed successfully.
       */
-    var execute: js.UndefOr[js.Function1[/* e */ ExecuteEventArgs, Unit]] = js.native
+    var execute: js.UndefOr[js.Function1[/* e */ ExecuteEventArgs, Unit]] = js.undefined
     
     /** This API allows to enable url and fileName for pdf export.
       * @Default {null}
       */
-    var exportToPdfSettings: js.UndefOr[ExportToPdfSettings] = js.native
+    var exportToPdfSettings: js.UndefOr[ExportToPdfSettings] = js.undefined
     
     /** This API allows to enable url and fileName for word export.
       * @Default {null}
       */
-    var exportToWordSettings: js.UndefOr[ExportToWordSettings] = js.native
+    var exportToWordSettings: js.UndefOr[ExportToWordSettings] = js.undefined
     
     /** Load the external CSS file inside Iframe.
       * @Default {null}
       */
-    var externalCSS: js.UndefOr[String] = js.native
+    var externalCSS: js.UndefOr[String] = js.undefined
     
     /** This API allows to enable the file browser support in the RTE control to browse, create, delete and upload the files in the specified current directory.
       * @Default {null}
       */
-    var fileBrowser: js.UndefOr[FileBrowser] = js.native
+    var fileBrowser: js.UndefOr[FileBrowser] = js.undefined
     
     /** Sets the fontName in the RTE.
       * @Default {{text: Segoe UI, value: Segoe UI },{text: Arial, value: Arial,Helvetica,sans-serif },{text: Courier New, value: Courier New,Courier,Monospace },{text: Georgia, value:
       * Georgia,serif },{text: Impact, value: Impact,Charcoal,sans-serif },{text: Lucida Console, value: Lucida Console,Monaco,Monospace },{text: Tahoma, value: Tahoma,Geneva,sans-serif
       * },{text: Times New Roman, value: Times New Roman },{text: Trebuchet MS, value: Trebuchet MS,Helvetica,sans-serif },{text: Verdana, value: Verdana,Geneva,sans-serif}}
       */
-    var fontName: js.UndefOr[js.Any] = js.native
+    var fontName: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the fontSize in the RTE.
       * @Default {{ text: 1, value: 1 },{ text: 2 (10pt), value: 2 },{ text: 3 (12pt), value: 3 },{ text: 4 (14pt), value: 4 },{ text: 5 (18pt), value: 5 },{ text: 6 (24pt), value: 6 },{
       * text: 7 (36pt), value: 7 }}
       */
-    var fontSize: js.UndefOr[js.Any] = js.native
+    var fontSize: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the format in the RTE.
       * @Default {{ text: Paragraph, value: &lt;p&gt;, spriteCssClass: e-paragraph },{ text: Quotation, value: &lt;blockquote&gt;, spriteCssClass: e-quotation },{ text: Heading 1, value:
       * &lt;h1&gt;, spriteCssClass: e-h1 },{ text: Heading 2, value: &lt;h2&gt;, spriteCssClass: e-h2 },{ text: Heading 3, value: &lt;h3&gt;, spriteCssClass: e-h3 },{ text: Heading 4,
       * value: &lt;h4&gt;, spriteCssClass: e-h4 },{ text: Heading 5, value: &lt;h5&gt;, spriteCssClass: e-h5 },{ text: Heading 6, value: &lt;h6&gt;, spriteCssClass: e-h6}}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the RTE textbox.
       * @Default {370}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the ejRTE.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the given attributes to the iframe body element.
       * @Default {{}}
       */
-    var iframeAttributes: js.UndefOr[js.Any] = js.native
+    var iframeAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** This API allows the image browser to support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
       * @Default {null}
       */
-    var imageBrowser: js.UndefOr[ImageBrowser] = js.native
+    var imageBrowser: js.UndefOr[ImageBrowser] = js.undefined
     
     /** This API allows to enable the url for connecting to RTE import.
       * @Default {null}
       */
-    var importSettings: js.UndefOr[ImportSettings] = js.native
+    var importSettings: js.UndefOr[ImportSettings] = js.undefined
     
     /** Enables/disables responsive support for the RTE control toolbar items during the window resizing time.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the keydown action is successful.
       */
-    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.native
+    var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.undefined
     
     /** Fires when the keyup action is successful.
       */
-    var keyup: js.UndefOr[js.Function1[/* e */ KeyupEventArgs, Unit]] = js.native
+    var keyup: js.UndefOr[js.Function1[/* e */ KeyupEventArgs, Unit]] = js.undefined
     
     /** Sets the culture in the RTE when you set the localization values are needs to be assigned to the corresponding text as follows.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum height for the RTE outer wrapper element.
       * @Default {null}
       */
-    var maxHeight: js.UndefOr[String | Double] = js.native
+    var maxHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the maximum length for the RTE outer wrapper element.
       * @Default {7000}
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /** Sets the maximum width for the RTE outer wrapper element.
       * @Default {null}
       */
-    var maxWidth: js.UndefOr[String | Double] = js.native
+    var maxWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum height for the RTE outer wrapper element.
       * @Default {280}
       */
-    var minHeight: js.UndefOr[String | Double] = js.native
+    var minHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum width for the RTE outer wrapper element.
       * @Default {400}
       */
-    var minWidth: js.UndefOr[String | Double] = js.native
+    var minWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the name in the RTE. When the name value is not initialized, the ID value is assigned to the name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** This API holds configuration setting for paste cleanup behavior.
       * @Default {{ listConversion: false, cleanCSS: false,	removeStyles: false, cleanElements: false }}
       */
-    var pasteCleanupSettings: js.UndefOr[PasteCleanupSettings] = js.native
+    var pasteCleanupSettings: js.UndefOr[PasteCleanupSettings] = js.undefined
     
     /** Fires before the RTE Edit area is rendered and after the toolbar is rendered.
       */
-    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, Unit]] = js.native
+    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, Unit]] = js.undefined
     
     /** Fires when the text is selected in the text area
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Counts the total characters and displays it in the RTE footer.
       * @Default {True}
       */
-    var showCharCount: js.UndefOr[Boolean] = js.native
+    var showCharCount: js.UndefOr[Boolean] = js.undefined
     
     /** Shows ClearAll icon in the RTE footer.
       * @Default {false}
       */
-    var showClearAll: js.UndefOr[Boolean] = js.native
+    var showClearAll: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the clear format in the RTE footer.
       * @Default {true}
       */
-    var showClearFormat: js.UndefOr[Boolean] = js.native
+    var showClearFormat: js.UndefOr[Boolean] = js.undefined
     
     /** The showContextMenu property helps to enable custom context menu within editor area.
       * @Default {True}
       */
-    var showContextMenu: js.UndefOr[Boolean] = js.native
+    var showContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the Custom Table in the RTE.
       * @Default {True}
       */
-    var showCustomTable: js.UndefOr[Boolean] = js.native
+    var showCustomTable: js.UndefOr[Boolean] = js.undefined
     
     /** This API is used to set the default dimensions for the image and video. When this property is set to true, the image and video dialog displays the dimension option.
       * @Default {false}
       */
-    var showDimensions: js.UndefOr[Boolean] = js.native
+    var showDimensions: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the FontOption in the RTE.
       * @Default {True}
       */
-    var showFontOption: js.UndefOr[Boolean] = js.native
+    var showFontOption: js.UndefOr[Boolean] = js.undefined
     
     /** Shows footer in the RTE. When the footer is enabled, it displays the HTML tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
       * @Default {false}
       */
-    var showFooter: js.UndefOr[Boolean] = js.native
+    var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the HtmlSource in the RTE footer.
       * @Default {false}
       */
-    var showHtmlSource: js.UndefOr[Boolean] = js.native
+    var showHtmlSource: js.UndefOr[Boolean] = js.undefined
     
     /** When the cursor is placed or when the text is selected in the RTE, it displays the tag info in the footer.
       * @Default {True}
       */
-    var showHtmlTagInfo: js.UndefOr[Boolean] = js.native
+    var showHtmlTagInfo: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables rounded corner UI look for RTE.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Shows the toolbar in the RTE.
       * @Default {True}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Counts the total words and displays it in the RTE footer.
       * @Default {True}
       */
-    var showWordCount: js.UndefOr[Boolean] = js.native
+    var showWordCount: js.UndefOr[Boolean] = js.undefined
     
     /** The given number of columns render the insert table pop.
       * @Default {10}
       */
-    var tableColumns: js.UndefOr[Double] = js.native
+    var tableColumns: js.UndefOr[Double] = js.undefined
     
     /** The given number of rows render the insert table pop.
       * @Default {8}
       */
-    var tableRows: js.UndefOr[Double] = js.native
+    var tableRows: js.UndefOr[Double] = js.undefined
     
     /** Specifies the overflow mode for RTE responsive toolbar
       * @Default {Popup}
       */
-    var toolbarOverflowMode: js.UndefOr[ToolbarOverflowMode | String] = js.native
+    var toolbarOverflowMode: js.UndefOr[ToolbarOverflowMode | String] = js.undefined
     
     /** Sets the tools in the RTE and gets the inner display order of the corresponding group element. Tools are dependent on the toolsList property.
       * @Default {formatStyle: [format],style: [bold, italic, underline, strikethrough],alignment: [justifyLeft, justifyCenter, justifyRight, justifyFull],lists: [unorderedList,
       * orderedList],indenting: [outdent, indent],doAction: [undo, redo],links: [createLink,removeLink],images: [image],media: [video],tables: [createTable, addRowAbove, addRowBelow,
       * addColumnLeft, addColumnRight, deleteRow, deleteColumn, deleteTable]],view:[â€œfullScreenâ€,zoomIn,zoomOut],print:[print]}
       */
-    var tools: js.UndefOr[Tools] = js.native
+    var tools: js.UndefOr[Tools] = js.undefined
     
     /** Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get
       * the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
       * @Default {[formatStyle, font, style, effects, alignment, lists, indenting, clipboard, doAction, clear, links, images, media, tables, casing,view, customTools,print,edit]}
       */
-    var toolsList: js.UndefOr[js.Array[_]] = js.native
+    var toolsList: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Display the hints for the tools in the Toolbar.
       * @Default {{ associate: mouseenter, showShadow: true, position: { stem: { horizontal: left, vertical: top }  }, tip: { size: { width: 5, height: 5 }, isBalloon: false }}
       */
-    var tooltipSettings: js.UndefOr[js.Any] = js.native
+    var tooltipSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Gets the undo stack limit.
       * @Default {50}
       */
-    var undoStackLimit: js.UndefOr[Double] = js.native
+    var undoStackLimit: js.UndefOr[Double] = js.undefined
     
     /** Sets the jQuery validation error message to the Rich Text Editor.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the jQuery validation rules to the Rich Text Editor.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** The given string value is displayed in the editable area.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the RTE textbox.
       * @Default {786}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
     
     /** Increases and decreases the contents zoom range in percentage
       * @Default {0.05}
       */
-    var zoomStep: js.UndefOr[String | Double] = js.native
+    var zoomStep: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1439,7 +1431,7 @@ object RTE {
       def setTools(value: Tools): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setToolsList(value: js.Array[_]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
+      def setToolsList(value: js.Array[js.Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setToolsListUndefined: Self = StObject.set(x, "toolsList", js.undefined)
@@ -1494,28 +1486,27 @@ object RTE {
     }
   }
   
-  @js.native
   trait PasteCleanupSettings extends StObject {
     
     /** This API is used to clean the unwanted css in the elements pasted from word document to editor.
       * @Default {false}
       */
-    var cleanCSS: js.UndefOr[Boolean] = js.native
+    var cleanCSS: js.UndefOr[Boolean] = js.undefined
     
     /** This API is used to clean the unwanted elements pasted from word document to editor.
       * @Default {false}
       */
-    var cleanElements: js.UndefOr[Boolean] = js.native
+    var cleanElements: js.UndefOr[Boolean] = js.undefined
     
     /** This API is used to convert the list elements pasted from word document to editor.
       * @Default {false}
       */
-    var listConversion: js.UndefOr[Boolean] = js.native
+    var listConversion: js.UndefOr[Boolean] = js.undefined
     
     /** This API is used to remove all styles in the elements pasted from word document to editor.
       * @Default {false}
       */
-    var removeStyles: js.UndefOr[Boolean] = js.native
+    var removeStyles: js.UndefOr[Boolean] = js.undefined
   }
   object PasteCleanupSettings {
     
@@ -1554,20 +1545,19 @@ object RTE {
     }
   }
   
-  @js.native
   trait PreRenderEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PreRenderEventArgs {
     
@@ -1600,24 +1590,23 @@ object RTE {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** When the event is canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     
@@ -1656,92 +1645,91 @@ object RTE {
     }
   }
   
-  @js.native
   trait Tools extends StObject {
     
     /** Specifies the alignment tools and the display order of this tool in the RTE toolbar.
       */
-    var alignment: js.UndefOr[js.Any] = js.native
+    var alignment: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the casing tools and the display order of this tool in the RTE toolbar.
       */
-    var casing: js.UndefOr[js.Array[_]] = js.native
+    var casing: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the clear tools and the display order of this tool in the RTE toolbar.
       */
-    var clear: js.UndefOr[js.Array[_]] = js.native
+    var clear: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the clipboard tools and the display order of this tool in the RTE toolbar.
       */
-    var clipboard: js.UndefOr[js.Array[_]] = js.native
+    var clipboard: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the customOrderedList tools and the display order of this tool in the RTE toolbar.
       */
-    var customOrderedList: js.UndefOr[js.Array[ToolsCustomOrderedList]] = js.native
+    var customOrderedList: js.UndefOr[js.Array[ToolsCustomOrderedList]] = js.undefined
     
     /** Specifies the customUnOrderedList tools and the display order of this tool in the RTE toolbar.
       */
-    var customUnorderedList: js.UndefOr[js.Array[ToolsCustomUnorderedList]] = js.native
+    var customUnorderedList: js.UndefOr[js.Array[ToolsCustomUnorderedList]] = js.undefined
     
     /** Specifies the doAction tools and the display order of this tool in the RTE toolbar.
       */
-    var doAction: js.UndefOr[js.Array[_]] = js.native
+    var doAction: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the edit tools and the displays tool in the RTE toolbar.
       */
-    var edit: js.UndefOr[js.Array[_]] = js.native
+    var edit: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the effect of tools and the display order of this tool in RTE toolbar.
       */
-    var effects: js.UndefOr[js.Array[_]] = js.native
+    var effects: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the font tools and the display order of this tool in the RTE toolbar.
       */
-    var font: js.UndefOr[js.Array[_]] = js.native
+    var font: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the formatStyle tools and the display order of this tool in the RTE toolbar.
       */
-    var formatStyle: js.UndefOr[js.Array[_]] = js.native
+    var formatStyle: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the image tools and the display order of this tool in the RTE toolbar.
       */
-    var images: js.UndefOr[js.Array[_]] = js.native
+    var images: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the importExport tools and the display order of this tool in the RTE toolbar.
       */
-    var importExport: js.UndefOr[js.Array[_]] = js.native
+    var importExport: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the indent tools and the display order of this tool in the RTE toolbar.
       */
-    var indenting: js.UndefOr[js.Array[_]] = js.native
+    var indenting: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the link tools and the display order of this tool in the RTE toolbar.
       */
-    var links: js.UndefOr[js.Array[_]] = js.native
+    var links: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the list tools and the display order of this tool in the RTE toolbar.
       */
-    var lists: js.UndefOr[js.Array[_]] = js.native
+    var lists: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the media tools and the display order of this tool in the RTE toolbar.
       */
-    var media: js.UndefOr[js.Array[_]] = js.native
+    var media: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the print tools and the display order of this tool in the RTE toolbar.
       */
-    var print: js.UndefOr[js.Array[_]] = js.native
+    var print: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the style tools and the display order of this tool in the RTE toolbar.
       */
-    var style: js.UndefOr[js.Array[_]] = js.native
+    var style: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the table tools and the display order of this tool in the RTE toolbar.
       */
-    var tables: js.UndefOr[js.Array[_]] = js.native
+    var tables: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the view tools and the display order of this tool in the RTE toolbar.
       */
-    var view: js.UndefOr[js.Array[_]] = js.native
+    var view: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Tools {
     
@@ -1761,7 +1749,7 @@ object RTE {
       def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
       @scala.inline
-      def setCasing(value: js.Array[_]): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
+      def setCasing(value: js.Array[js.Any]): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
@@ -1770,7 +1758,7 @@ object RTE {
       def setCasingVarargs(value: js.Any*): Self = StObject.set(x, "casing", js.Array(value :_*))
       
       @scala.inline
-      def setClear(value: js.Array[_]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      def setClear(value: js.Array[js.Any]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
@@ -1779,7 +1767,7 @@ object RTE {
       def setClearVarargs(value: js.Any*): Self = StObject.set(x, "clear", js.Array(value :_*))
       
       @scala.inline
-      def setClipboard(value: js.Array[_]): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      def setClipboard(value: js.Array[js.Any]): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
@@ -1806,7 +1794,7 @@ object RTE {
       def setCustomUnorderedListVarargs(value: ToolsCustomUnorderedList*): Self = StObject.set(x, "customUnorderedList", js.Array(value :_*))
       
       @scala.inline
-      def setDoAction(value: js.Array[_]): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
+      def setDoAction(value: js.Array[js.Any]): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDoActionUndefined: Self = StObject.set(x, "doAction", js.undefined)
@@ -1815,7 +1803,7 @@ object RTE {
       def setDoActionVarargs(value: js.Any*): Self = StObject.set(x, "doAction", js.Array(value :_*))
       
       @scala.inline
-      def setEdit(value: js.Array[_]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      def setEdit(value: js.Array[js.Any]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
@@ -1824,7 +1812,7 @@ object RTE {
       def setEditVarargs(value: js.Any*): Self = StObject.set(x, "edit", js.Array(value :_*))
       
       @scala.inline
-      def setEffects(value: js.Array[_]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      def setEffects(value: js.Array[js.Any]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
@@ -1833,7 +1821,7 @@ object RTE {
       def setEffectsVarargs(value: js.Any*): Self = StObject.set(x, "effects", js.Array(value :_*))
       
       @scala.inline
-      def setFont(value: js.Array[_]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      def setFont(value: js.Array[js.Any]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
@@ -1842,7 +1830,7 @@ object RTE {
       def setFontVarargs(value: js.Any*): Self = StObject.set(x, "font", js.Array(value :_*))
       
       @scala.inline
-      def setFormatStyle(value: js.Array[_]): Self = StObject.set(x, "formatStyle", value.asInstanceOf[js.Any])
+      def setFormatStyle(value: js.Array[js.Any]): Self = StObject.set(x, "formatStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatStyleUndefined: Self = StObject.set(x, "formatStyle", js.undefined)
@@ -1851,7 +1839,7 @@ object RTE {
       def setFormatStyleVarargs(value: js.Any*): Self = StObject.set(x, "formatStyle", js.Array(value :_*))
       
       @scala.inline
-      def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
@@ -1860,7 +1848,7 @@ object RTE {
       def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
       
       @scala.inline
-      def setImportExport(value: js.Array[_]): Self = StObject.set(x, "importExport", value.asInstanceOf[js.Any])
+      def setImportExport(value: js.Array[js.Any]): Self = StObject.set(x, "importExport", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImportExportUndefined: Self = StObject.set(x, "importExport", js.undefined)
@@ -1869,7 +1857,7 @@ object RTE {
       def setImportExportVarargs(value: js.Any*): Self = StObject.set(x, "importExport", js.Array(value :_*))
       
       @scala.inline
-      def setIndenting(value: js.Array[_]): Self = StObject.set(x, "indenting", value.asInstanceOf[js.Any])
+      def setIndenting(value: js.Array[js.Any]): Self = StObject.set(x, "indenting", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIndentingUndefined: Self = StObject.set(x, "indenting", js.undefined)
@@ -1878,7 +1866,7 @@ object RTE {
       def setIndentingVarargs(value: js.Any*): Self = StObject.set(x, "indenting", js.Array(value :_*))
       
       @scala.inline
-      def setLinks(value: js.Array[_]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      def setLinks(value: js.Array[js.Any]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
@@ -1887,7 +1875,7 @@ object RTE {
       def setLinksVarargs(value: js.Any*): Self = StObject.set(x, "links", js.Array(value :_*))
       
       @scala.inline
-      def setLists(value: js.Array[_]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
@@ -1896,7 +1884,7 @@ object RTE {
       def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
       
       @scala.inline
-      def setMedia(value: js.Array[_]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      def setMedia(value: js.Array[js.Any]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
@@ -1905,7 +1893,7 @@ object RTE {
       def setMediaVarargs(value: js.Any*): Self = StObject.set(x, "media", js.Array(value :_*))
       
       @scala.inline
-      def setPrint(value: js.Array[_]): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      def setPrint(value: js.Array[js.Any]): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
@@ -1914,7 +1902,7 @@ object RTE {
       def setPrintVarargs(value: js.Any*): Self = StObject.set(x, "print", js.Array(value :_*))
       
       @scala.inline
-      def setStyle(value: js.Array[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -1923,7 +1911,7 @@ object RTE {
       def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
       
       @scala.inline
-      def setTables(value: js.Array[_]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      def setTables(value: js.Array[js.Any]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
@@ -1932,7 +1920,7 @@ object RTE {
       def setTablesVarargs(value: js.Any*): Self = StObject.set(x, "tables", js.Array(value :_*))
       
       @scala.inline
-      def setView(value: js.Array[_]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      def setView(value: js.Array[js.Any]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
@@ -1942,32 +1930,31 @@ object RTE {
     }
   }
   
-  @js.native
   trait ToolsCustomOrderedList extends StObject {
     
     /** Specifies the styles for customOrderedList item.
       */
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
     /** Specifies the image for customOrderedList item.
       */
-    var listImage: js.UndefOr[String] = js.native
+    var listImage: js.UndefOr[String] = js.undefined
     
     /** Specifies the list style for customOrderedList item.
       */
-    var listStyle: js.UndefOr[String] = js.native
+    var listStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the name for customOrderedList item.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies the text for customOrderedList item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the title for customOrderedList item.
       */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object ToolsCustomOrderedList {
     
@@ -2018,32 +2005,31 @@ object RTE {
     }
   }
   
-  @js.native
   trait ToolsCustomUnorderedList extends StObject {
     
     /** Specifies the styles for customUnorderedList item.
       */
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
     /** Specifies the image for customUnorderedList item.
       */
-    var listImage: js.UndefOr[String] = js.native
+    var listImage: js.UndefOr[String] = js.undefined
     
     /** Specifies the list style for customUnorderedList item.
       */
-    var listStyle: js.UndefOr[String] = js.native
+    var listStyle: js.UndefOr[String] = js.undefined
     
     /** Specifies the name for customUnorderedList item.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Specifies the text for customUnorderedList item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the title for customUnorderedList item.
       */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object ToolsCustomUnorderedList {
     

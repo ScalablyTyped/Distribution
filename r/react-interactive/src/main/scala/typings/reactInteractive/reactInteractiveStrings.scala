@@ -5,63 +5,84 @@ import typings.reactInteractive.mod.Focus
 import typings.reactInteractive.mod.IState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactInteractiveStrings {
   
   @js.native
-  sealed trait hover extends IState
+  sealed trait hover
+    extends StObject
+       with IState
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait hoverActive extends IState
+  sealed trait hoverActive
+    extends StObject
+       with IState
   @scala.inline
   def hoverActive: hoverActive = "hoverActive".asInstanceOf[hoverActive]
   
   @js.native
-  sealed trait keyActive extends IState
+  sealed trait keyActive
+    extends StObject
+       with IState
   @scala.inline
   def keyActive: keyActive = "keyActive".asInstanceOf[keyActive]
   
   @js.native
-  sealed trait keyClick extends ClickType
+  sealed trait keyClick
+    extends StObject
+       with ClickType
   @scala.inline
   def keyClick: keyClick = "keyClick".asInstanceOf[keyClick]
   
   @js.native
-  sealed trait mouse extends Focus
+  sealed trait mouse
+    extends StObject
+       with Focus
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
-  sealed trait mouseClick extends ClickType
+  sealed trait mouseClick
+    extends StObject
+       with ClickType
   @scala.inline
   def mouseClick: mouseClick = "mouseClick".asInstanceOf[mouseClick]
   
   @js.native
-  sealed trait normal extends IState
+  sealed trait normal
+    extends StObject
+       with IState
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait tab extends Focus
+  sealed trait tab
+    extends StObject
+       with Focus
   @scala.inline
   def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
-  sealed trait tapClick extends ClickType
+  sealed trait tapClick
+    extends StObject
+       with ClickType
   @scala.inline
   def tapClick: tapClick = "tapClick".asInstanceOf[tapClick]
   
   @js.native
-  sealed trait touch extends Focus
+  sealed trait touch
+    extends StObject
+       with Focus
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
-  sealed trait touchActive extends IState
+  sealed trait touchActive
+    extends StObject
+       with IState
   @scala.inline
   def touchActive: touchActive = "touchActive".asInstanceOf[touchActive]
 }

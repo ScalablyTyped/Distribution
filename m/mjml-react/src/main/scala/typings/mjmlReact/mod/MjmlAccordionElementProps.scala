@@ -5,31 +5,29 @@ import typings.mjmlReact.mjmlReactStrings.left
 import typings.mjmlReact.mjmlReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlAccordionElementProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var iconAlign: js.UndefOr[String] = js.native
+  var iconAlign: js.UndefOr[String] = js.undefined
   
-  var iconHeight: js.UndefOr[String] = js.native
+  var iconHeight: js.UndefOr[String] = js.undefined
   
-  var iconPosition: js.UndefOr[left | right] = js.native
+  var iconPosition: js.UndefOr[left | right] = js.undefined
   
-  var iconUnwrappedAlt: js.UndefOr[String] = js.native
+  var iconUnwrappedAlt: js.UndefOr[String] = js.undefined
   
-  var iconUnwrappedUrl: js.UndefOr[String] = js.native
+  var iconUnwrappedUrl: js.UndefOr[String] = js.undefined
   
-  var iconWidth: js.UndefOr[String] = js.native
+  var iconWidth: js.UndefOr[String] = js.undefined
   
-  var iconWrappedAlt: js.UndefOr[String] = js.native
+  var iconWrappedAlt: js.UndefOr[String] = js.undefined
   
-  var iconWrappedUrl: js.UndefOr[String] = js.native
+  var iconWrappedUrl: js.UndefOr[String] = js.undefined
 }
 object MjmlAccordionElementProps {
   

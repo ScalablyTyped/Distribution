@@ -3,15 +3,13 @@ package typings.firefoxWebextBrowser.browser.manifest
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionDictionaryManifestBrowserSpecificSettings extends StObject {
   
-  var edge: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var edge: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var gecko: js.UndefOr[FirefoxSpecificProperties] = js.native
+  var gecko: js.UndefOr[FirefoxSpecificProperties] = js.undefined
 }
 object WebExtensionDictionaryManifestBrowserSpecificSettings {
   

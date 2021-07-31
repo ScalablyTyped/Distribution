@@ -13,7 +13,6 @@ import typings.jointjs.mod.dia.Point
 import typings.jointjs.mod.dia.Sides
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routers {
@@ -61,12 +60,11 @@ object routers {
   
   type GenericRouterArguments[K /* <: RouterType */] = /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.routers.RouterArgumentsMap[K] */ js.Any
   
-  @js.native
   trait GenericRouterJSON[K /* <: RouterType */] extends StObject {
     
-    var args: js.UndefOr[GenericRouterArguments[K]] = js.native
+    var args: js.UndefOr[GenericRouterArguments[K]] = js.undefined
     
-    var name: K = js.native
+    var name: K
   }
   object GenericRouterJSON {
     
@@ -77,7 +75,7 @@ object routers {
     }
     
     @scala.inline
-    implicit class GenericRouterJSONMutableBuilder[Self <: GenericRouterJSON[_], K /* <: RouterType */] (val x: Self with GenericRouterJSON[K]) extends AnyVal {
+    implicit class GenericRouterJSONMutableBuilder[Self <: GenericRouterJSON[?], K /* <: RouterType */] (val x: Self & GenericRouterJSON[K]) extends AnyVal {
       
       @scala.inline
       def setArgs(value: GenericRouterArguments[K]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -90,26 +88,25 @@ object routers {
     }
   }
   
-  @js.native
   trait ManhattanRouterArguments extends StObject {
     
-    var endDirections: js.UndefOr[js.Array[OrthogonalDirection]] = js.native
+    var endDirections: js.UndefOr[js.Array[OrthogonalDirection]] = js.undefined
     
-    var excludeEnds: js.UndefOr[js.Array[LinkEnd]] = js.native
+    var excludeEnds: js.UndefOr[js.Array[LinkEnd]] = js.undefined
     
-    var excludeTypes: js.UndefOr[js.Array[String]] = js.native
+    var excludeTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxAllowedDirectionChange: js.UndefOr[Double] = js.native
+    var maxAllowedDirectionChange: js.UndefOr[Double] = js.undefined
     
-    var maximumLoops: js.UndefOr[Double] = js.native
+    var maximumLoops: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Sides] = js.native
+    var padding: js.UndefOr[Sides] = js.undefined
     
-    var perpendicular: js.UndefOr[Boolean] = js.native
+    var perpendicular: js.UndefOr[Boolean] = js.undefined
     
-    var startDirections: js.UndefOr[js.Array[OrthogonalDirection]] = js.native
+    var startDirections: js.UndefOr[js.Array[OrthogonalDirection]] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object ManhattanRouterArguments {
     
@@ -190,15 +187,13 @@ object routers {
     }
   }
   
-  @js.native
   trait NormalRouterArguments extends StObject
   
-  @js.native
   trait OneSideRouterArguments extends StObject {
     
-    var padding: js.UndefOr[Sides] = js.native
+    var padding: js.UndefOr[Sides] = js.undefined
     
-    var side: js.UndefOr[OrthogonalDirection] = js.native
+    var side: js.UndefOr[OrthogonalDirection] = js.undefined
   }
   object OneSideRouterArguments {
     
@@ -225,12 +220,11 @@ object routers {
     }
   }
   
-  @js.native
   trait OrthogonalRouterArguments extends StObject {
     
-    var elementPadding: js.UndefOr[Double] = js.native
+    var elementPadding: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Sides] = js.native
+    var padding: js.UndefOr[Sides] = js.undefined
   }
   object OrthogonalRouterArguments {
     
@@ -310,19 +304,19 @@ object routers {
     def step: typings.jointjs.jointjsStrings.step = "step".asInstanceOf[typings.jointjs.jointjsStrings.step]
   }
   
-  @js.native
   trait RouterArgumentsMap
-    extends /* key */ StringDictionary[StringDictionary[js.Any]] {
+    extends StObject
+       with /* key */ StringDictionary[StringDictionary[js.Any]] {
     
-    var manhattan: ManhattanRouterArguments = js.native
+    var manhattan: ManhattanRouterArguments
     
-    var metro: ManhattanRouterArguments = js.native
+    var metro: ManhattanRouterArguments
     
-    var normal: NormalRouterArguments = js.native
+    var normal: NormalRouterArguments
     
-    var oneSide: OneSideRouterArguments = js.native
+    var oneSide: OneSideRouterArguments
     
-    var orthogonal: OrthogonalRouterArguments = js.native
+    var orthogonal: OrthogonalRouterArguments
   }
   object RouterArgumentsMap {
     

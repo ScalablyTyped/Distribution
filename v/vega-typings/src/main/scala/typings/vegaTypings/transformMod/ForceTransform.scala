@@ -4,38 +4,38 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceTransform extends _Transforms {
+trait ForceTransform
+  extends StObject
+     with _Transforms {
   
-  var alpha: js.UndefOr[Double | SignalRef] = js.native
+  var alpha: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var alphaMin: js.UndefOr[Double | SignalRef] = js.native
+  var alphaMin: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var alphaTarget: js.UndefOr[Double | SignalRef] = js.native
+  var alphaTarget: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var forces: js.UndefOr[(js.Array[Force | SignalRef]) | SignalRef] = js.native
+  var forces: js.UndefOr[(js.Array[Force | SignalRef]) | SignalRef] = js.undefined
   
-  var iterations: js.UndefOr[Double | SignalRef] = js.native
+  var iterations: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var restart: js.UndefOr[Boolean | SignalRef] = js.native
+  var restart: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var signal: js.UndefOr[SignalName] = js.native
+  var signal: js.UndefOr[SignalName] = js.undefined
   
-  var static: js.UndefOr[Boolean | SignalRef] = js.native
+  var static: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var `type`: force = js.native
+  var `type`: force
   
-  var velocityDecay: js.UndefOr[Double | SignalRef] = js.native
+  var velocityDecay: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ForceTransform {
   
   @scala.inline
-  def apply(`type`: force): ForceTransform = {
+  def apply(): ForceTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("force")
     __obj.asInstanceOf[ForceTransform]
   }
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceParameter extends StObject {
   
   /**
     * Named parameter. Must be a legitimate identifier for the DataSource that supports it. For example, [BigQuery
     * identifier](https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#identifiers).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** ID of a NamedRange. Its size must be 1x1. */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
   
   /** A range that contains the value of the parameter. Its size must be 1x1. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
 }
 object DataSourceParameter {
   

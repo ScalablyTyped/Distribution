@@ -10,10 +10,13 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeGroupBaseMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "MeasuredContext")
   @js.native
@@ -58,35 +61,31 @@ object resizeGroupBaseMod {
     def remeasure(): Unit = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "getMeasurementCache")
-  @js.native
-  def getMeasurementCache(): AddMeasurementToCache = js.native
+  @scala.inline
+  def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
   
-  @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "getNextResizeGroupStateProvider")
-  @js.native
-  def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "getNextResizeGroupStateProvider")
-  @js.native
-  def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = js.native
+  @scala.inline
+  def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
+  @scala.inline
+  def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
   
-  @js.native
   trait IResizeGroupState extends StObject {
     
     /**
       * Data to render in a hidden div for measurement
       */
-    var dataToMeasure: js.UndefOr[js.Any] = js.native
+    var dataToMeasure: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set to true when the content container might have new dimensions and should
       * be remeasured.
       */
-    var measureContainer: js.UndefOr[Boolean] = js.native
+    var measureContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Final data used to render proper sized component
       */
-    var renderedData: js.UndefOr[js.Any] = js.native
+    var renderedData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Are we resizing to accommodate having more or less available space?
@@ -95,7 +94,7 @@ object resizeGroupBaseMod {
       * The 'shrink' direction is when the contents don't fit in the container and we need
       * to find a transformation of the data that makes everything fit.
       */
-    var resizeDirection: js.UndefOr[grow | shrink] = js.native
+    var resizeDirection: js.UndefOr[grow | shrink] = js.undefined
   }
   object IResizeGroupState {
     

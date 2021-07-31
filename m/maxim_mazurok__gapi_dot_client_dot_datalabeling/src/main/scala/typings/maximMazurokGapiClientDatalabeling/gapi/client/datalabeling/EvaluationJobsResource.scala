@@ -11,7 +11,6 @@ import typings.maximMazurokGapiClientDatalabeling.anon.UpdateMask
 import typings.maximMazurokGapiClientDatalabeling.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

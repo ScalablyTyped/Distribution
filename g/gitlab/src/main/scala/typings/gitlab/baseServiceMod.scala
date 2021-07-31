@@ -7,7 +7,6 @@ import typings.gitlab.gitlabStrings.execution
 import typings.gitlab.gitlabStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseServiceMod {
@@ -30,34 +29,33 @@ object baseServiceMod {
     val url: String = js.native
   }
   
-  @js.native
   trait BaseServiceOptions extends StObject {
     
-    var camelize: js.UndefOr[Boolean] = js.native
+    var camelize: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var jobToken: js.UndefOr[String] = js.native
+    var jobToken: js.UndefOr[String] = js.undefined
     
-    var oauthToken: js.UndefOr[String] = js.native
+    var oauthToken: js.UndefOr[String] = js.undefined
     
-    var profileMode: js.UndefOr[execution | memory] = js.native
+    var profileMode: js.UndefOr[execution | memory] = js.undefined
     
-    var profileToken: js.UndefOr[String] = js.native
+    var profileToken: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var requestTimeout: js.UndefOr[Double] = js.native
+    var requestTimeout: js.UndefOr[Double] = js.undefined
     
-    var requester: js.UndefOr[Requester] = js.native
+    var requester: js.UndefOr[Requester] = js.undefined
     
-    var sudo: js.UndefOr[String | Double] = js.native
+    var sudo: js.UndefOr[String | Double] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[`3` | `4`] = js.native
+    var version: js.UndefOr[`3` | `4`] = js.undefined
   }
   object BaseServiceOptions {
     
@@ -150,18 +148,17 @@ object baseServiceMod {
     }
   }
   
-  @js.native
   trait Requester extends StObject {
     
-    var delete: js.Function = js.native
+    var delete: js.Function
     
-    var get: js.Function = js.native
+    var get: js.Function
     
-    var post: js.Function = js.native
+    var post: js.Function
     
-    var put: js.Function = js.native
+    var put: js.Function
     
-    var stream: js.UndefOr[js.Function] = js.native
+    var stream: js.UndefOr[js.Function] = js.undefined
   }
   object Requester {
     

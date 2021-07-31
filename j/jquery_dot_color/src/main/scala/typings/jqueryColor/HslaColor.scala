@@ -2,19 +2,17 @@ package typings.jqueryColor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HslaColor extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var hue: js.UndefOr[Double] = js.native
+  var hue: js.UndefOr[Double] = js.undefined
   
-  var lightness: js.UndefOr[Double] = js.native
+  var lightness: js.UndefOr[Double] = js.undefined
   
-  var saturation: js.UndefOr[Double] = js.native
+  var saturation: js.UndefOr[Double] = js.undefined
 }
 object HslaColor {
   

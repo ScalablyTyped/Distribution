@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait TaskCollection extends ClientObject {
+trait TaskCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -75,7 +76,7 @@ trait TaskCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TaskCollection = js.native
-  def load(options: TaskCollectionLoadOptions with CollectionLoadOptions): TaskCollection = js.native
+  def load(options: TaskCollectionLoadOptions & CollectionLoadOptions): TaskCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TaskCollection = js.native
   def load(propertyNames: String): TaskCollection = js.native
   def load(propertyNames: js.Array[String]): TaskCollection = js.native

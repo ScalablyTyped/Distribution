@@ -2,47 +2,45 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationObjectUnits extends StObject {
   
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
-  var days: js.UndefOr[Double] = js.native
+  var days: js.UndefOr[Double] = js.undefined
   
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
-  var hours: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.undefined
   
-  var millisecond: js.UndefOr[Double] = js.native
+  var millisecond: js.UndefOr[Double] = js.undefined
   
-  var milliseconds: js.UndefOr[Double] = js.native
+  var milliseconds: js.UndefOr[Double] = js.undefined
   
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
-  var months: js.UndefOr[Double] = js.native
+  var months: js.UndefOr[Double] = js.undefined
   
-  var quarter: js.UndefOr[Double] = js.native
+  var quarter: js.UndefOr[Double] = js.undefined
   
-  var quarters: js.UndefOr[Double] = js.native
+  var quarters: js.UndefOr[Double] = js.undefined
   
-  var second: js.UndefOr[Double] = js.native
+  var second: js.UndefOr[Double] = js.undefined
   
-  var seconds: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.undefined
   
-  var week: js.UndefOr[Double] = js.native
+  var week: js.UndefOr[Double] = js.undefined
   
-  var weeks: js.UndefOr[Double] = js.native
+  var weeks: js.UndefOr[Double] = js.undefined
   
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
   
-  var years: js.UndefOr[Double] = js.native
+  var years: js.UndefOr[Double] = js.undefined
 }
 object DurationObjectUnits {
   

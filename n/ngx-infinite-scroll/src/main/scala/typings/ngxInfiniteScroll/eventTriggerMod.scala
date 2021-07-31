@@ -3,21 +3,22 @@ package typings.ngxInfiniteScroll
 import typings.ngxInfiniteScroll.modelsMod.IPositionStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventTriggerMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/event-trigger", "shouldTriggerEvents")
+  @JSImport("ngx-infinite-scroll/src/services/event-trigger", JSImport.Namespace)
   @js.native
-  def shouldTriggerEvents(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean, isTriggeredCurrentTotal: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def shouldTriggerEvents(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean, isTriggeredCurrentTotal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerEvents")(alwaysCallback.asInstanceOf[js.Any], shouldFireScrollEvent.asInstanceOf[js.Any], isTriggeredCurrentTotal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait IDistanceRange extends StObject {
     
-    var down: Double = js.native
+    var down: Double
     
-    var up: Double = js.native
+    var up: Double
   }
   object IDistanceRange {
     
@@ -38,12 +39,11 @@ object eventTriggerMod {
     }
   }
   
-  @js.native
   trait IScrollConfig extends StObject {
     
-    var alwaysCallback: Boolean = js.native
+    var alwaysCallback: Boolean
     
-    var shouldFireScrollEvent: Boolean = js.native
+    var shouldFireScrollEvent: Boolean
   }
   object IScrollConfig {
     
@@ -64,14 +64,15 @@ object eventTriggerMod {
     }
   }
   
-  @js.native
-  trait IScrollerProps extends IDistanceRange {
+  trait IScrollerProps
+    extends StObject
+       with IDistanceRange {
     
-    var alwaysCallback: Boolean = js.native
+    var alwaysCallback: Boolean
     
-    var container: IPositionStats = js.native
+    var container: IPositionStats
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
   }
   object IScrollerProps {
     
@@ -95,12 +96,11 @@ object eventTriggerMod {
     }
   }
   
-  @js.native
   trait ITriggerEvents extends StObject {
     
-    def down(event: js.Any): js.Any = js.native
+    def down(event: js.Any): js.Any
     
-    def up(event: js.Any): js.Any = js.native
+    def up(event: js.Any): js.Any
   }
   object ITriggerEvents {
     

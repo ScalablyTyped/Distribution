@@ -4,29 +4,28 @@ import typings.easydate.easydateStrings.local
 import typings.easydate.easydateStrings.utc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("easydate", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String): String = js.native
-  @JSImport("easydate", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, config: String): String = js.native
-  @JSImport("easydate", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, config: DateConfig): String = js.native
+  @scala.inline
+  def apply(pattern: String): String = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(pattern: String, config: String): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(pattern: String, config: DateConfig): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("easydate", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DateConfig extends StObject {
     
-    var adjust: js.UndefOr[Boolean] = js.native
+    var adjust: js.UndefOr[Boolean] = js.undefined
     
-    var setDate: js.UndefOr[String] = js.native
+    var setDate: js.UndefOr[String] = js.undefined
     
-    var timeZone: js.UndefOr[utc | local] = js.native
+    var timeZone: js.UndefOr[utc | local] = js.undefined
   }
   object DateConfig {
     

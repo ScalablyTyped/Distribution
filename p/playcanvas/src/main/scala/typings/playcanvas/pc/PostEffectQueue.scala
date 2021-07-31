@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The application.
   * @param camera - The camera component.
   */
-@js.native
 trait PostEffectQueue extends StObject {
   
   /**
@@ -18,28 +16,28 @@ trait PostEffectQueue extends StObject {
     * automatically enable the queue.
     * @param effect - The post effect to add to the queue.
     */
-  def addEffect(effect: PostEffect): Unit = js.native
+  def addEffect(effect: PostEffect): Unit
   
   /**
     * Removes all the effects from the queue and disables it.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Disables the queue and all of its effects.
     */
-  def disable(): Unit = js.native
+  def disable(): Unit
   
   /**
     * Enables the queue and all of its effects. If there are no effects then the queue will not be enabled.
     */
-  def enable(): Unit = js.native
+  def enable(): Unit
   
   /**
     * Removes a post effect from the queue. If the queue becomes empty it will be disabled automatically.
     * @param effect - The post effect to remove.
     */
-  def removeEffect(effect: PostEffect): Unit = js.native
+  def removeEffect(effect: PostEffect): Unit
 }
 object PostEffectQueue {
   

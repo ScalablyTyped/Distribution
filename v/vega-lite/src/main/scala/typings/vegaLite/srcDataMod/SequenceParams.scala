@@ -3,10 +3,8 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceParams extends StObject {
   
   /**
@@ -14,24 +12,24 @@ trait SequenceParams extends StObject {
     *
     * __Default value:__ `"data"`
     */
-  var as: js.UndefOr[FieldName] = js.native
+  var as: js.UndefOr[FieldName] = js.undefined
   
   /**
     * The starting value of the sequence (inclusive).
     */
-  var start: Double = js.native
+  var start: Double
   
   /**
     * The step value between sequence entries.
     *
     * __Default value:__ `1`
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * The ending value of the sequence (exclusive).
     */
-  var stop: Double = js.native
+  var stop: Double
 }
 object SequenceParams {
   

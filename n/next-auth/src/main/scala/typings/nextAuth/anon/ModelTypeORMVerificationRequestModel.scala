@@ -3,15 +3,13 @@ package typings.nextAuth.anon
 import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelTypeORMVerificationRequestModel extends StObject {
   
-  var model: TypeORMVerificationRequestModel = js.native
+  var model: TypeORMVerificationRequestModel
   
-  var schema: typings.nextAuth.adaptersMod.Schema[TypeORMVerificationRequestModel] = js.native
+  var schema: typings.nextAuth.adaptersMod.Schema[TypeORMVerificationRequestModel]
 }
 object ModelTypeORMVerificationRequestModel {
   

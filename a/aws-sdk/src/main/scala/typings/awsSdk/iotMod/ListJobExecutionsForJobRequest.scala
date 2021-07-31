@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobExecutionsForJobRequest extends StObject {
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * The maximum number of results to be returned per request.
     */
-  var maxResults: js.UndefOr[LaserMaxResults] = js.native
+  var maxResults: js.UndefOr[LaserMaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The status of the job.
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.native
+  var status: js.UndefOr[JobExecutionStatus] = js.undefined
 }
 object ListJobExecutionsForJobRequest {
   

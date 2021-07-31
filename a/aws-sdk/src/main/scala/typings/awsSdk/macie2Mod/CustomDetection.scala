@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomDetection extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom data identifier.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The total number of occurrences of the sensitive data that the custom data identifier detected.
     */
-  var count: js.UndefOr[long] = js.native
+  var count: js.UndefOr[long] = js.undefined
   
   /**
     * The name of the custom data identifier.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
   
   /**
     * The location of 1-15 occurrences of the sensitive data that the custom data identifier detected. A finding includes location data for a maximum of 15 occurrences of sensitive data.
     */
-  var occurrences: js.UndefOr[Occurrences] = js.native
+  var occurrences: js.UndefOr[Occurrences] = js.undefined
 }
 object CustomDetection {
   

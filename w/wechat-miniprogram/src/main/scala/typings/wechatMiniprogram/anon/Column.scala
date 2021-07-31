@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /** 修改的列 */
-  var column: Double = js.native
+  var column: Double
   
-  var value: Double = js.native
+  var value: Double
 }
 object Column {
   

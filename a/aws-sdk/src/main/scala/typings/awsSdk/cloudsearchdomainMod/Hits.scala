@@ -2,31 +2,29 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hits extends StObject {
   
   /**
     * A cursor that can be used to retrieve the next set of matching documents when you want to page through a large result set.
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of documents that match the search request.
     */
-  var found: js.UndefOr[Long] = js.native
+  var found: js.UndefOr[Long] = js.undefined
   
   /**
     * A document that matches the search request.
     */
-  var hit: js.UndefOr[HitList] = js.native
+  var hit: js.UndefOr[HitList] = js.undefined
   
   /**
     * The index of the first matching document.
     */
-  var start: js.UndefOr[Long] = js.native
+  var start: js.UndefOr[Long] = js.undefined
 }
 object Hits {
   

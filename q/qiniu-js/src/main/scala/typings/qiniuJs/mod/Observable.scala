@@ -2,7 +2,6 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,15 +16,15 @@ trait Observable extends StObject {
     * @returns
     */
   def subscribe(next: js.Function1[/* obj */ Next, Unit]): Subscription = js.native
-  def subscribe(
-    next: js.Function1[/* obj */ Next, Unit],
-    error: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* obj */ CompletedResult, Unit]
-  ): Subscription = js.native
   def subscribe(next: js.Function1[/* obj */ Next, Unit], error: js.Function1[/* err */ Error | String, Unit]): Subscription = js.native
   def subscribe(
     next: js.Function1[/* obj */ Next, Unit],
     error: js.Function1[/* err */ Error | String, Unit],
+    complete: js.Function1[/* obj */ CompletedResult, Unit]
+  ): Subscription = js.native
+  def subscribe(
+    next: js.Function1[/* obj */ Next, Unit],
+    error: Unit,
     complete: js.Function1[/* obj */ CompletedResult, Unit]
   ): Subscription = js.native
   def subscribe(options: Observer): Subscription = js.native

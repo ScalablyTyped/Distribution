@@ -1,12 +1,11 @@
 package typings.echarts.anon
 
 import typings.echarts.echarts.EChartOption.BaseTooltip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
   /**
     * child nodes, recursive definition, configurations are the
@@ -17,7 +16,7 @@ trait Children extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.children
     */
-  var children: js.UndefOr[js.Array[_]] = js.native
+  var children: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Enable hyperlink jump when clicking on node.
@@ -32,7 +31,7 @@ trait Children extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.link
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * The same meaning as `target` in `html` `<a>` label, See
@@ -44,7 +43,7 @@ trait Children extends js.Object {
     * "blank"
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.target
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * tooltip settings in this series data.
@@ -52,7 +51,7 @@ trait Children extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.native
+  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
 }
 object Children {
   
@@ -63,45 +62,33 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children] (val x: Self) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: js.Any*): Self = this.set("children", js.Array(value :_*))
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[_]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setTooltip(value: BaseTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

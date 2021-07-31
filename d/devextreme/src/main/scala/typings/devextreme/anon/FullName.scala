@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullName[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object FullName {
   
@@ -25,7 +23,7 @@ object FullName {
   }
   
   @scala.inline
-  implicit class FullNameMutableBuilder[Self <: FullName[_], T] (val x: Self with FullName[T]) extends AnyVal {
+  implicit class FullNameMutableBuilder[Self <: FullName[?], T] (val x: Self & FullName[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

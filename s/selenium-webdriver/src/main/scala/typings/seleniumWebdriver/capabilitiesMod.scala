@@ -7,7 +7,6 @@ import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object capabilitiesMod {
@@ -23,10 +22,12 @@ object capabilitiesMod {
     * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
     *     capabilities to initialize this instance from.
     */
-  class Capabilities () extends CreateSessionCapabilities {
+  class Capabilities ()
+    extends StObject
+       with CreateSessionCapabilities {
     def this(other: js.Object) = this()
     def this(other: Capabilities) = this()
-    def this(other: Map[String, _]) = this()
+    def this(other: Map[String, js.Any]) = this()
     
     /**
       * Deletes an entry from this set of capabilities.
@@ -104,7 +105,7 @@ object capabilitiesMod {
       * @return {!Capabilities} A self reference.
       */
     def merge(other: Capabilities): Capabilities = js.native
-    def merge(other: Map[String, _]): Capabilities = js.native
+    def merge(other: Map[String, js.Any]): Capabilities = js.native
     
     /**
       * @param {string} key The capability key.
@@ -187,43 +188,42 @@ object capabilitiesMod {
   /* static members */
   object Capabilities {
     
+    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities")
+    @js.native
+    val ^ : js.Any = js.native
+    
     // endregion
     // region Static Methods
     /**
       * @return {!Capabilities} A basic set of capabilities for Chrome.
       */
-    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities.chrome")
-    @js.native
-    def chrome(): Capabilities = js.native
+    @scala.inline
+    def chrome(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Microsoft Edge.
       */
-    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities.edge")
-    @js.native
-    def edge(): Capabilities = js.native
+    @scala.inline
+    def edge(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Firefox.
       */
-    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities.firefox")
-    @js.native
-    def firefox(): Capabilities = js.native
+    @scala.inline
+    def firefox(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for
       *     Internet Explorer.
       */
-    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities.ie")
-    @js.native
-    def ie(): Capabilities = js.native
+    @scala.inline
+    def ie(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Safari.
       */
-    @JSImport("selenium-webdriver/lib/capabilities", "Capabilities.safari")
-    @js.native
-    def safari(): Capabilities = js.native
+    @scala.inline
+    def safari(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[Capabilities]
   }
   
   @JSImport("selenium-webdriver/lib/capabilities", "Capability")
@@ -242,20 +242,19 @@ object capabilitiesMod {
   @js.native
   val UserPromptHandler: IUserPromptHandler = js.native
   
-  @js.native
   trait IBrowser extends StObject {
     
-    var CHROME: String = js.native
+    var CHROME: String
     
-    var EDGE: String = js.native
+    var EDGE: String
     
-    var FIREFOX: String = js.native
+    var FIREFOX: String
     
-    var IE: String = js.native
+    var IE: String
     
-    var INTERNET_EXPLORER: String = js.native
+    var INTERNET_EXPLORER: String
     
-    var SAFARI: String = js.native
+    var SAFARI: String
   }
   object IBrowser {
     
@@ -295,46 +294,45 @@ object capabilitiesMod {
     }
   }
   
-  @js.native
   trait ICapability extends StObject {
     
     /**
       * Indicates whether a WebDriver session implicitly trusts otherwise untrusted
       * and self-signed TLS certificates during navigation.
       */
-    var ACCEPT_INSECURE_TLS_CERTS: String = js.native
+    var ACCEPT_INSECURE_TLS_CERTS: String
     
     /**
       * The browser name. Common browser names are defined in the
       * {@link ./capabilities.Browser Browser} enum.
       */
-    var BROWSER_NAME: String = js.native
+    var BROWSER_NAME: String
     
     /** Identifies the browser version. */
-    var BROWSER_VERSION: String = js.native
+    var BROWSER_VERSION: String
     
     /**
       * Key for the logging driver logging preferences.
       */
-    var LOGGING_PREFS: String = js.native
+    var LOGGING_PREFS: String
     
     /**
       * Defines the session's
       * {@linkplain ./capabilities.PageLoadStrategy page loading strategy}.
       */
-    var PAGE_LOAD_STRATEGY: String = js.native
+    var PAGE_LOAD_STRATEGY: String
     
     /**
       * Identifies the operating system of the endpoint node. Common values
       * recognized by the most WebDriver server implementations are predefined in
       * the {@link ./capabilities.Platform Platform} enum.
       */
-    var PLATFORM_NAME: String = js.native
+    var PLATFORM_NAME: String
     
     /**
       * Describes the proxy configuration to use for a new WebDriver session.
       */
-    var PROXY: String = js.native
+    var PROXY: String
     
     /**
       * Indicates whether the remote end supports all of the window resizing and
@@ -346,20 +344,20 @@ object capabilitiesMod {
       * -  {@linkplain ./webdriver.Window#minimize Window.minimize()}
       * -  {@linkplain ./webdriver.Window#fullscreen Window.fullscreen()}
       */
-    var SET_WINDOW_RECT: String = js.native
+    var SET_WINDOW_RECT: String
     
     /**
       * Describes the {@linkplain ./capabilities.Timeouts timeouts} imposed on
       * certain session operations.
       */
-    var TIMEOUTS: String = js.native
+    var TIMEOUTS: String
     
     /**
       * Defines how a WebDriver session should
       * {@linkplain ./capabilities.UserPromptHandler respond} to unhandled user
       * prompts.
       */
-    var UNHANDLED_PROMPT_BEHAVIOR: String = js.native
+    var UNHANDLED_PROMPT_BEHAVIOR: String
   }
   object ICapability {
     
@@ -415,26 +413,25 @@ object capabilitiesMod {
     }
   }
   
-  @js.native
   trait IPageLoadStrategy extends StObject {
     
     /**
       * Indicates WebDriver should wait for the document readiness state to
       * become "interactive" after navigation.
       */
-    var EAGER: String = js.native
+    var EAGER: String
     
     /**
       * Indicates WebDriver should not wait on the document readiness state after a
       * navigation event.
       */
-    var NONE: String = js.native
+    var NONE: String
     
     /**
       * Indicates WebDriver should wait for the document readiness state to
       * be "complete" after navigation. This is the default page loading strategy.
       */
-    var NORMAL: String = js.native
+    var NORMAL: String
   }
   object IPageLoadStrategy {
     
@@ -458,14 +455,13 @@ object capabilitiesMod {
     }
   }
   
-  @js.native
   trait IPlatform extends StObject {
     
-    var LINUX: String = js.native
+    var LINUX: String
     
-    var MAC: String = js.native
+    var MAC: String
     
-    var WINDOWS: String = js.native
+    var WINDOWS: String
   }
   object IPlatform {
     
@@ -489,7 +485,6 @@ object capabilitiesMod {
     }
   }
   
-  @js.native
   trait ITimeouts extends StObject {
     
     /**
@@ -497,19 +492,19 @@ object capabilitiesMod {
       * {@linkplain ./webdriver.IWebDriver#findElement locate} an element on the
       * current page.
       */
-    var `implicit`: js.UndefOr[Double] = js.native
+    var `implicit`: js.UndefOr[Double] = js.undefined
     
     /**
       * The timeout, in milliseconds, to apply to navigation events along with the
       * {@link PageLoadStrategy}.
       */
-    var pageLoad: js.UndefOr[Double] = js.native
+    var pageLoad: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines when, in milliseconds, to interrupt a script that is being
       * {@linkplain ./webdriver.IWebDriver#executeScript evaluated}.
       */
-    var script: js.UndefOr[Double] = js.native
+    var script: js.UndefOr[Double] = js.undefined
   }
   object ITimeouts {
     
@@ -542,29 +537,28 @@ object capabilitiesMod {
     }
   }
   
-  @js.native
   trait IUserPromptHandler extends StObject {
     
     /** All prompts should be silently accepted. */
-    var ACCEPT: String = js.native
+    var ACCEPT: String
     
     /**
       * All prompts should be automatically accepted, but an error should be
       * returned to the next (or currently executing) WebDriver command.
       */
-    var ACCEPT_AND_NOTIFY: String = js.native
+    var ACCEPT_AND_NOTIFY: String
     
     /** All prompts should be silently dismissed. */
-    var DISMISS: String = js.native
+    var DISMISS: String
     
     /**
       * All prompts should be automatically dismissed, but an error should be
       * returned to the next (or currently executing) WebDriver command.
       */
-    var DISMISS_AND_NOTIFY: String = js.native
+    var DISMISS_AND_NOTIFY: String
     
     /** All prompts should be left unhandled. */
-    var IGNORE: String = js.native
+    var IGNORE: String
   }
   object IUserPromptHandler {
     

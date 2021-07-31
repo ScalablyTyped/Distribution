@@ -3,18 +3,17 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseListUserOrganization200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var is_ancestor: js.UndefOr[Boolean] = js.native
+  var is_ancestor: js.UndefOr[Boolean] = js.undefined
   
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ResponseListUserOrganization200 {
   

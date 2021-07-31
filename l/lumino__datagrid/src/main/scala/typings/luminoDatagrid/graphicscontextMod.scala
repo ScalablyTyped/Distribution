@@ -18,14 +18,15 @@ import typings.std.ImageData
 import typings.std.TextMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphicscontextMod {
   
   @JSImport("@lumino/datagrid/lib/graphicscontext", "GraphicsContext")
   @js.native
-  class GraphicsContext protected () extends IDisposable {
+  class GraphicsContext protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Create a new graphics context object.
       *
@@ -65,6 +66,20 @@ object graphicscontextMod {
     def createPattern(image: HTMLVideoElement, repetition: String): CanvasPattern | Null = js.native
     
     def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): CanvasGradient = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     def drawFocusIfNeeded(element: Element): Unit = js.native
     
@@ -162,6 +177,15 @@ object graphicscontextMod {
     var globalCompositeOperation: String = js.native
     
     var imageSmoothingEnabled: Boolean = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     def isPointInPath(x: Double, y: Double): Boolean = js.native
     def isPointInPath(x: Double, y: Double, fillRule: CanvasFillRule): Boolean = js.native

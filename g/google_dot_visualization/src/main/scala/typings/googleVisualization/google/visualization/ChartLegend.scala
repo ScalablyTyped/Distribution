@@ -2,21 +2,19 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegend extends StObject {
   
-  var alignment: js.UndefOr[ChartLegendAlignment] = js.native
+  var alignment: js.UndefOr[ChartLegendAlignment] = js.undefined
   
-  var maxLines: js.UndefOr[Double] = js.native
+  var maxLines: js.UndefOr[Double] = js.undefined
   
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[ChartLegendPosition] = js.native
+  var position: js.UndefOr[ChartLegendPosition] = js.undefined
   
-  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
 }
 object ChartLegend {
   

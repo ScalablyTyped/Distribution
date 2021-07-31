@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Vpn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object VpnDomainNameType extends StObject {
   
   /** Fully qualified domain name (FQDN) */
   @js.native
-  sealed trait fullyQualified extends VpnDomainNameType
+  sealed trait fullyQualified
+    extends StObject
+       with VpnDomainNameType
   
   /** Reserved */
   @js.native
-  sealed trait reserved extends VpnDomainNameType
+  sealed trait reserved
+    extends StObject
+       with VpnDomainNameType
   
   /** Domain name suffix */
   @js.native
-  sealed trait suffix extends VpnDomainNameType
+  sealed trait suffix
+    extends StObject
+       with VpnDomainNameType
 }

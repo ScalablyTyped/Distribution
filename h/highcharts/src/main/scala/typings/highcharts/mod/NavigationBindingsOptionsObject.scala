@@ -2,37 +2,35 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBindingsOptionsObject extends StObject {
   
   /**
     * ClassName of the element for a binding.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Last event to be fired after last step event.
     */
-  var end: js.UndefOr[js.Function] = js.native
+  var end: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Initial event, fired on a button click.
     */
-  var init: js.UndefOr[js.Function] = js.native
+  var init: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Event fired on first click on a chart.
     */
-  var start: js.UndefOr[js.Function] = js.native
+  var start: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Last event to be fired after last step event. Array of step events to be
     * called sequentially after each user click.
     */
-  var steps: js.UndefOr[js.Array[js.Function]] = js.native
+  var steps: js.UndefOr[js.Array[js.Function]] = js.undefined
 }
 object NavigationBindingsOptionsObject {
   

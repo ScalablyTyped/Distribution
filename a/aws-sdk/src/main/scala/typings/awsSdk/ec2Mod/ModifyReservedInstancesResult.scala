@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyReservedInstancesResult extends StObject {
   
   /**
     * The ID for the modification.
     */
-  var ReservedInstancesModificationId: js.UndefOr[String] = js.native
+  var ReservedInstancesModificationId: js.UndefOr[String] = js.undefined
 }
 object ModifyReservedInstancesResult {
   

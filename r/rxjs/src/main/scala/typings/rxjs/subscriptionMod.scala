@@ -4,7 +4,6 @@ import typings.rxjs.typesMod.SubscriptionLike
 import typings.rxjs.typesMod.TeardownLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionMod {
@@ -15,7 +14,9 @@ object subscriptionMod {
     * @param {function(): void} [unsubscribe] A function describing how to
     * perform the disposal of resources when the `unsubscribe` method is called.
     */
-  class Subscription () extends SubscriptionLike {
+  class Subscription ()
+    extends StObject
+       with SubscriptionLike {
     def this(unsubscribe: js.Function0[Unit]) = this()
     
     /** @internal */
@@ -46,6 +47,9 @@ object subscriptionMod {
       */
     def add(teardown: TeardownLogic): Subscription = js.native
     
+    /* CompleteClass */
+    override val closed: Boolean = js.native
+    
     /**
       * Removes a Subscription from the internal list of subscriptions that will
       * unsubscribe during the unsubscribe process of this Subscription.
@@ -53,6 +57,9 @@ object subscriptionMod {
       * @return {void}
       */
     def remove(subscription: Subscription): Unit = js.native
+    
+    /* CompleteClass */
+    override def unsubscribe(): Unit = js.native
   }
   /* static members */
   object Subscription {

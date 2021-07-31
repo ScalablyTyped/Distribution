@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the same peer gateway. The peer gateway could either be a external VPN
   * gateway or GCP VPN gateway.
   */
-@js.native
 trait SchemaVpnGatewayStatusVpnConnection extends StObject {
   
   /**
@@ -18,24 +16,24 @@ trait SchemaVpnGatewayStatusVpnConnection extends StObject {
     * in this VPN connection are connected. This field is mutually exclusive
     * with peer_gcp_gateway.
     */
-  var peerExternalGateway: js.UndefOr[String] = js.native
+  var peerExternalGateway: js.UndefOr[String] = js.undefined
   
   /**
     * URL reference to the peer side VPN gateways to which the VPN tunnels in
     * this VPN connection are connected. This field is mutually exclusive with
     * peer_gcp_gateway.
     */
-  var peerGcpGateway: js.UndefOr[String] = js.native
+  var peerGcpGateway: js.UndefOr[String] = js.undefined
   
   /**
     * HighAvailabilityRequirementState for the VPN connection.
     */
-  var state: js.UndefOr[SchemaVpnGatewayStatusHighAvailabilityRequirementState] = js.native
+  var state: js.UndefOr[SchemaVpnGatewayStatusHighAvailabilityRequirementState] = js.undefined
   
   /**
     * List of VPN tunnels that are in this VPN connection.
     */
-  var tunnels: js.UndefOr[js.Array[SchemaVpnGatewayStatusTunnel]] = js.native
+  var tunnels: js.UndefOr[js.Array[SchemaVpnGatewayStatusTunnel]] = js.undefined
 }
 object SchemaVpnGatewayStatusVpnConnection {
   

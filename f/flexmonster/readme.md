@@ -10,9 +10,9 @@ Pivot table component for web reporting. The most powerful JavaScript tool to vi
 | ------------------ | :-------------: |
 | Full name          | flexmonster |
 | Keywords           | pivot, pivot table, pivot grid, pivot charts, analytics, reporting, mysql, msas, analysis services, csv, json, BI, business intelligence |
-| # releases         | 67 |
-| # dependents       | 4 |
-| # downloads        | 175276 |
+| # releases         | 65 |
+| # dependents       | 6 |
+| # downloads        | 198803 |
 | # stars            | 0 |
 
 ## Links

@@ -2,13 +2,11 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `Publish` method.
   */
-@js.native
 trait SchemaPublishResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaPublishResponse extends StObject {
     * the messages in the request. IDs are guaranteed to be unique within the
     * topic.
     */
-  var messageIds: js.UndefOr[js.Array[String]] = js.native
+  var messageIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPublishResponse {
   

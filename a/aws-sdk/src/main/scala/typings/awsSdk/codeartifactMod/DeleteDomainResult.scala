@@ -2,16 +2,14 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDomainResult extends StObject {
   
   /**
     *  Contains information about the deleted domain after processing the request. 
     */
-  var domain: js.UndefOr[DomainDescription] = js.native
+  var domain: js.UndefOr[DomainDescription] = js.undefined
 }
 object DeleteDomainResult {
   

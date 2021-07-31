@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is an IDL version of the Java interface **org.xml.sax.Locator** .
   */
-@js.native
-trait XLocator extends XInterface {
+trait XLocator
+  extends StObject
+     with XInterface {
   
   /** @returns the column number where the current document event ends. */
-  val ColumnNumber: Double = js.native
+  val ColumnNumber: Double
   
   /** @returns the line number where the current document event ends. */
-  val LineNumber: Double = js.native
+  val LineNumber: Double
   
   /** @returns the public identifier for the current document event. */
-  val PublicId: String = js.native
+  val PublicId: String
   
   /** @returns the system identifier for the current document event. */
-  val SystemId: String = js.native
+  val SystemId: String
   
   /** @returns the column number where the current document event ends. */
-  def getColumnNumber(): Double = js.native
+  def getColumnNumber(): Double
   
   /** @returns the line number where the current document event ends. */
-  def getLineNumber(): Double = js.native
+  def getLineNumber(): Double
   
   /** @returns the public identifier for the current document event. */
-  def getPublicId(): String = js.native
+  def getPublicId(): String
   
   /** @returns the system identifier for the current document event. */
-  def getSystemId(): String = js.native
+  def getSystemId(): String
 }
 object XLocator {
   

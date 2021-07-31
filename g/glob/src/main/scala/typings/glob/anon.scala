@@ -2,15 +2,13 @@ package typings.glob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsDirectory extends StObject {
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
   }
   object IsDirectory {
     

@@ -19,38 +19,34 @@ import typings.webpackBlocksDevServer.webpackBlocksDevServerStrings.warning
 import typings.webpackBlocksDevServer.webpackBlocksDevServerStrings.ws
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], entry: String): js.Any = js.native
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], entry: js.Array[String]): js.Any = js.native
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, entry: String): js.Any = js.native
-  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, entry: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Unit, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Unit, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("@webpack-blocks/dev-server", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ContextObject extends StObject {
     
-    var `match`: js.Any = js.native
+    var `match`: js.Any
     
-    var parsedUrl: js.Any = js.native
+    var parsedUrl: js.Any
     
-    var request: js.Any = js.native
+    var request: js.Any
   }
   object ContextObject {
     
@@ -75,18 +71,17 @@ object mod {
     }
   }
   
-  @js.native
   trait HistoryOptions extends StObject {
     
-    var disableDotRule: js.UndefOr[Boolean] = js.native
+    var disableDotRule: js.UndefOr[Boolean] = js.undefined
     
-    var htmlAcceptHeaders: js.UndefOr[js.Array[String]] = js.native
+    var htmlAcceptHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var rewrites: js.UndefOr[RewritesObject] = js.native
+    var rewrites: js.UndefOr[RewritesObject] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object HistoryOptions {
     
@@ -136,102 +131,101 @@ object mod {
   
   type InjectClientFunction = js.Function1[/* compilerConfig */ js.Any, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var after: js.UndefOr[StartMiddlewareFunction] = js.native
+    var after: js.UndefOr[StartMiddlewareFunction] = js.undefined
     
-    var allowedHosts: js.UndefOr[js.Array[String]] = js.native
+    var allowedHosts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var before: js.UndefOr[StartMiddlewareFunction] = js.native
+    var before: js.UndefOr[StartMiddlewareFunction] = js.undefined
     
-    var bonjour: js.UndefOr[Boolean] = js.native
+    var bonjour: js.UndefOr[Boolean] = js.undefined
     
-    var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.native
+    var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.native
+    var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.undefined
     
-    var disableHostCheck: js.UndefOr[Boolean] = js.native
+    var disableHostCheck: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var historyApiFallback: js.UndefOr[Boolean | HistoryOptions] = js.native
+    var historyApiFallback: js.UndefOr[Boolean | HistoryOptions] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hot: js.UndefOr[Boolean] = js.native
+    var hot: js.UndefOr[Boolean] = js.undefined
     
-    var hotOnly: js.UndefOr[Boolean] = js.native
+    var hotOnly: js.UndefOr[Boolean] = js.undefined
     
-    var http2: js.UndefOr[Boolean] = js.native
+    var http2: js.UndefOr[Boolean] = js.undefined
     
-    var https: js.UndefOr[Boolean | js.Object] = js.native
+    var https: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var injectClient: js.UndefOr[Boolean | InjectClientFunction] = js.native
+    var injectClient: js.UndefOr[Boolean | InjectClientFunction] = js.undefined
     
-    var injectHot: js.UndefOr[Boolean | InjectClientFunction] = js.native
+    var injectHot: js.UndefOr[Boolean | InjectClientFunction] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var liveReload: js.UndefOr[Boolean] = js.native
+    var liveReload: js.UndefOr[Boolean] = js.undefined
     
-    var mimeTypes: js.UndefOr[typings.webpackBlocksDevServer.anon.String] = js.native
+    var mimeTypes: js.UndefOr[typings.webpackBlocksDevServer.anon.String] = js.undefined
     
-    var noInfo: js.UndefOr[Boolean] = js.native
+    var noInfo: js.UndefOr[Boolean] = js.undefined
     
-    var open: js.UndefOr[Boolean | String] = js.native
+    var open: js.UndefOr[Boolean | String] = js.undefined
     
-    var openPage: js.UndefOr[String] = js.native
+    var openPage: js.UndefOr[String] = js.undefined
     
-    var overlay: js.UndefOr[Boolean | Errors] = js.native
+    var overlay: js.UndefOr[Boolean | Errors] = js.undefined
     
-    var pfx: js.UndefOr[String] = js.native
+    var pfx: js.UndefOr[String] = js.undefined
     
-    var pfxPassphrase: js.UndefOr[String] = js.native
+    var pfxPassphrase: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var proxy: js.UndefOr[js.Object | js.Array[ProxyType]] = js.native
+    var proxy: js.UndefOr[js.Object | js.Array[ProxyType]] = js.undefined
     
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var serveIndex: js.UndefOr[Boolean] = js.native
+    var serveIndex: js.UndefOr[Boolean] = js.undefined
     
-    var setup: js.UndefOr[InjectClientFunction] = js.native
+    var setup: js.UndefOr[InjectClientFunction] = js.undefined
     
-    var socket: js.UndefOr[String] = js.native
+    var socket: js.UndefOr[String] = js.undefined
     
-    var socketHost: js.UndefOr[String] = js.native
+    var socketHost: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var socketPort: js.UndefOr[Double | String] = js.native
+    var socketPort: js.UndefOr[Double | String] = js.undefined
     
-    var staticOptions: js.UndefOr[SetHeadersFunction] = js.native
+    var staticOptions: js.UndefOr[SetHeadersFunction] = js.undefined
     
-    var stats: js.UndefOr[none | `errors-only` | minimal | normal | verbose | js.Object] = js.native
+    var stats: js.UndefOr[none | `errors-only` | minimal | normal | verbose | js.Object] = js.undefined
     
-    var transportMode: js.UndefOr[sockjs | ws | TransportMode] = js.native
+    var transportMode: js.UndefOr[sockjs | ws | TransportMode] = js.undefined
     
-    var useLocalIp: js.UndefOr[Boolean] = js.native
+    var useLocalIp: js.UndefOr[Boolean] = js.undefined
     
-    var watchContentBase: js.UndefOr[Boolean] = js.native
+    var watchContentBase: js.UndefOr[Boolean] = js.undefined
     
-    var watchOptions: js.UndefOr[WatchOptions] = js.native
+    var watchOptions: js.UndefOr[WatchOptions] = js.undefined
     
-    var writeToDisk: js.UndefOr[Boolean | WriteToDiskFunction] = js.native
+    var writeToDisk: js.UndefOr[Boolean | WriteToDiskFunction] = js.undefined
   }
   object Options {
     
@@ -557,12 +551,11 @@ object mod {
   
   type ProxyType = js.Object | ProxyFunction
   
-  @js.native
   trait RewritesObject extends StObject {
     
-    var from: RegExp = js.native
+    var from: RegExp
     
-    var to: String | RewritesToFunction = js.native
+    var to: String | RewritesToFunction
   }
   object RewritesObject {
     
@@ -592,12 +585,11 @@ object mod {
   
   type StartMiddlewareFunction = js.Function2[/* app */ js.Any, /* server */ js.Any, Unit]
   
-  @js.native
   trait TransportMode extends StObject {
     
-    var client: js.UndefOr[String | PathFunction] = js.native
+    var client: js.UndefOr[String | PathFunction] = js.undefined
     
-    var server: js.UndefOr[String | PathFunction] = js.native
+    var server: js.UndefOr[String | PathFunction] = js.undefined
   }
   object TransportMode {
     
@@ -630,14 +622,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WatchOptions extends StObject {
     
-    var aggregateTimeout: js.UndefOr[Double] = js.native
+    var aggregateTimeout: js.UndefOr[Double] = js.undefined
     
-    var ignored: js.UndefOr[RegExp] = js.native
+    var ignored: js.UndefOr[RegExp] = js.undefined
     
-    var poll: js.UndefOr[Boolean | Double] = js.native
+    var poll: js.UndefOr[Boolean | Double] = js.undefined
   }
   object WatchOptions {
     

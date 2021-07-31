@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsRestore extends StandardParameters {
+trait ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsRestore
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The resource name of the CryptoKeyVersion to restore.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRestoreCryptoKeyVersionRequest] = js.native
+  var requestBody: js.UndefOr[SchemaRestoreCryptoKeyVersionRequest] = js.undefined
 }
 object ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsRestore {
   

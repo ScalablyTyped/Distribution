@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandsResponse extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait BrandsResponse extends StObject {
     js.Array[
       /* Information about a brand that is associated with an account. A brand applies custom styles and text to an envelope. */ Brand
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The brand that envelope recipients see when a brand is not explicitly set.
     */
-  var recipientBrandIdDefault: js.UndefOr[String] = js.native
+  var recipientBrandIdDefault: js.UndefOr[String] = js.undefined
   
   /**
     * The brand that envelope senders see when a brand is not explicitly set.
     */
-  var senderBrandIdDefault: js.UndefOr[String] = js.native
+  var senderBrandIdDefault: js.UndefOr[String] = js.undefined
 }
 object BrandsResponse {
   

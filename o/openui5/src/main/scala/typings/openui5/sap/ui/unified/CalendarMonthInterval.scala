@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarMonthInterval extends Control {
+trait CalendarMonthInterval
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -162,7 +163,7 @@ trait CalendarMonthInterval extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>intervalSelection</code>.If set, interval selection is
@@ -292,7 +293,7 @@ trait CalendarMonthInterval extends Control {
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>selectedDates</code>.Additionally, it

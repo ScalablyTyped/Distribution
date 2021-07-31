@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Uploads")
@@ -33,7 +32,7 @@ class ResourceManagementUploads protected () extends StObject {
     */
   def deleteUploadData(): GaxiosPromise[Unit] = js.native
   def deleteUploadData(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def deleteUploadData(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def deleteUploadData(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def deleteUploadData(params: ParamsResourceManagementUploadsDeleteuploaddata): GaxiosPromise[Unit] = js.native
   def deleteUploadData(params: ParamsResourceManagementUploadsDeleteuploaddata, callback: BodyResponseCallback[Unit]): Unit = js.native
   def deleteUploadData(
@@ -65,7 +64,7 @@ class ResourceManagementUploads protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUpload] = js.native
   def get(callback: BodyResponseCallback[SchemaUpload]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpload] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUpload] = js.native
   def get(params: ParamsResourceManagementUploadsGet): GaxiosPromise[SchemaUpload] = js.native
   def get(params: ParamsResourceManagementUploadsGet, callback: BodyResponseCallback[SchemaUpload]): Unit = js.native
   def get(
@@ -98,7 +97,7 @@ class ResourceManagementUploads protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUploads] = js.native
   def list(callback: BodyResponseCallback[SchemaUploads]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploads] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUploads] = js.native
   def list(params: ParamsResourceManagementUploadsList): GaxiosPromise[SchemaUploads] = js.native
   def list(params: ParamsResourceManagementUploadsList, callback: BodyResponseCallback[SchemaUploads]): Unit = js.native
   def list(
@@ -132,7 +131,7 @@ class ResourceManagementUploads protected () extends StObject {
     */
   def uploadData(): GaxiosPromise[SchemaUpload] = js.native
   def uploadData(callback: BodyResponseCallback[SchemaUpload]): Unit = js.native
-  def uploadData(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpload] = js.native
+  def uploadData(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUpload] = js.native
   def uploadData(params: ParamsResourceManagementUploadsUploaddata): GaxiosPromise[SchemaUpload] = js.native
   def uploadData(params: ParamsResourceManagementUploadsUploaddata, callback: BodyResponseCallback[SchemaUpload]): Unit = js.native
   def uploadData(

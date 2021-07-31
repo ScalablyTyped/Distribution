@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to change the master password, or let it be requested and checked. */
-@js.native
-trait XMasterPasswordHandling2 extends XMasterPasswordHandling {
+trait XMasterPasswordHandling2
+  extends StObject
+     with XMasterPasswordHandling {
   
   /** allows to detect whether the default master password is used */
-  def isDefaultMasterPasswordUsed(): Boolean = js.native
+  def isDefaultMasterPasswordUsed(): Boolean
   
   /**
     * allows to let the default password be used
@@ -19,7 +19,7 @@ trait XMasterPasswordHandling2 extends XMasterPasswordHandling {
     * Please use this method with care. Using of default master password let the passwords be stored non-encrypted. If a master password is predefined in
     * the algorithm it is no more an encryption, it is just an encoding.
     */
-  def useDefaultMasterPassword(xHandler: XInteractionHandler): Boolean = js.native
+  def useDefaultMasterPassword(xHandler: XInteractionHandler): Boolean
 }
 object XMasterPasswordHandling2 {
   

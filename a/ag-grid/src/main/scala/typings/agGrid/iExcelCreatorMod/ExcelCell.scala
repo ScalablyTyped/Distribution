@@ -2,17 +2,15 @@ package typings.agGrid.iExcelCreatorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelCell extends StObject {
   
-  var data: ExcelData = js.native
+  var data: ExcelData
   
-  var mergeAcross: js.UndefOr[Double] = js.native
+  var mergeAcross: js.UndefOr[Double] = js.undefined
   
-  var styleId: String = js.native
+  var styleId: String
 }
 object ExcelCell {
   

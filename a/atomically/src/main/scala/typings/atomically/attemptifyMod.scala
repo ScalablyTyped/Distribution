@@ -4,22 +4,21 @@ import typings.atomically.typesMod.Exception
 import typings.atomically.typesMod.FN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attemptifyMod {
   
-  @JSImport("atomically/dist/utils/attemptify", "attemptifyAsync")
+  @JSImport("atomically/dist/utils/attemptify", JSImport.Namespace)
   @js.native
-  def attemptifyAsync[T /* <: FN[js.Array[_], _] */](fn: T): T = js.native
-  @JSImport("atomically/dist/utils/attemptify", "attemptifyAsync")
-  @js.native
-  def attemptifyAsync[T /* <: FN[js.Array[_], _] */](fn: T, onError: FN[js.Array[Exception], _]): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("atomically/dist/utils/attemptify", "attemptifySync")
-  @js.native
-  def attemptifySync[T /* <: FN[js.Array[_], _] */](fn: T): T = js.native
-  @JSImport("atomically/dist/utils/attemptify", "attemptifySync")
-  @js.native
-  def attemptifySync[T /* <: FN[js.Array[_], _] */](fn: T, onError: FN[js.Array[Exception], _]): T = js.native
+  @scala.inline
+  def attemptifyAsync[T /* <: FN[js.Array[js.Any], js.Any] */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("attemptifyAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def attemptifyAsync[T /* <: FN[js.Array[js.Any], js.Any] */](fn: T, onError: FN[js.Array[Exception], js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("attemptifyAsync")(fn.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def attemptifySync[T /* <: FN[js.Array[js.Any], js.Any] */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("attemptifySync")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def attemptifySync[T /* <: FN[js.Array[js.Any], js.Any] */](fn: T, onError: FN[js.Array[Exception], js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("attemptifySync")(fn.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[T]
 }

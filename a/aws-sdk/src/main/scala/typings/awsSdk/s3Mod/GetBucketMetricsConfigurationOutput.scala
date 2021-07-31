@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketMetricsConfigurationOutput extends StObject {
   
   /**
     * Specifies the metrics configuration.
     */
-  var MetricsConfiguration: js.UndefOr[typings.awsSdk.s3Mod.MetricsConfiguration] = js.native
+  var MetricsConfiguration: js.UndefOr[typings.awsSdk.s3Mod.MetricsConfiguration] = js.undefined
 }
 object GetBucketMetricsConfigurationOutput {
   

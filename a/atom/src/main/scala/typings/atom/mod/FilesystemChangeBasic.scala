@@ -6,17 +6,15 @@ import typings.atom.atomStrings.modified
 import typings.atom.atomStrings.renamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilesystemChangeBasic[Action /* <: created | modified | deleted | renamed */] extends StObject {
   
   /** A string describing the filesystem action that occurred. */
-  var action: Action = js.native
+  var action: Action
   
   /** The absolute path to the filesystem entry that was acted upon. */
-  var path: String = js.native
+  var path: String
 }
 object FilesystemChangeBasic {
   
@@ -27,7 +25,7 @@ object FilesystemChangeBasic {
   }
   
   @scala.inline
-  implicit class FilesystemChangeBasicMutableBuilder[Self <: FilesystemChangeBasic[_], Action /* <: created | modified | deleted | renamed */] (val x: Self with FilesystemChangeBasic[Action]) extends AnyVal {
+  implicit class FilesystemChangeBasicMutableBuilder[Self <: FilesystemChangeBasic[?], Action /* <: created | modified | deleted | renamed */] (val x: Self & FilesystemChangeBasic[Action]) extends AnyVal {
     
     @scala.inline
     def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

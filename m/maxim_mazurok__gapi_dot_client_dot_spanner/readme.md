@@ -10,9 +10,9 @@ TypeScript typings for Cloud Spanner API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.spanner |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 73 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 1543 |
 | # stars            | 0 |
 
 ## Links

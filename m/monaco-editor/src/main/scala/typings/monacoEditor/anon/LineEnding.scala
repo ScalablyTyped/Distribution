@@ -2,15 +2,13 @@ package typings.monacoEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineEnding extends StObject {
   
-  var lineEnding: String = js.native
+  var lineEnding: String
   
-  var preserveBOM: Boolean = js.native
+  var preserveBOM: Boolean
 }
 object LineEnding {
   

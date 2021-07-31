@@ -4,38 +4,65 @@ import typings.jestWorker.typesMod.FarmOptions
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("jest-worker", JSImport.Default)
   @js.native
-  class default protected () extends JestWorker {
+  class default protected ()
+    extends StObject
+       with JestWorker {
     def this(workerPath: String) = this()
     def this(workerPath: String, options: FarmOptions) = this()
-  }
-  
-  @js.native
-  trait JestWorker extends StObject {
     
+    /* CompleteClass */
     var _bindExposedWorkerMethods: js.Any = js.native
     
+    /* CompleteClass */
     var _callFunctionWithArgs: js.Any = js.native
     
+    /* CompleteClass */
     var _ending: js.Any = js.native
     
+    /* CompleteClass */
     var _farm: js.Any = js.native
     
+    /* CompleteClass */
     var _options: js.Any = js.native
     
+    /* CompleteClass */
     var _workerPool: js.Any = js.native
     
-    def end(): Unit = js.native
+    /* CompleteClass */
+    override def end(): Unit = js.native
     
-    def getStderr(): ReadableStream = js.native
+    /* CompleteClass */
+    override def getStderr(): ReadableStream = js.native
     
-    def getStdout(): ReadableStream = js.native
+    /* CompleteClass */
+    override def getStdout(): ReadableStream = js.native
+  }
+  
+  trait JestWorker extends StObject {
+    
+    var _bindExposedWorkerMethods: js.Any
+    
+    var _callFunctionWithArgs: js.Any
+    
+    var _ending: js.Any
+    
+    var _farm: js.Any
+    
+    var _options: js.Any
+    
+    var _workerPool: js.Any
+    
+    def end(): Unit
+    
+    def getStderr(): ReadableStream
+    
+    def getStdout(): ReadableStream
   }
   object JestWorker {
     

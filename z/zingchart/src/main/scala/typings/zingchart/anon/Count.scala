@@ -2,26 +2,24 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
   /**
     * Offset from start to zoom. This attribute is coupled with the type attribute to determine where to set the zoom level. 1 | 2 | 3
     */
-  var count: js.UndefOr[js.Any] = js.native
+  var count: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the text of the button 3m | 2015 | all
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * To set multiplier for count ytd | all | year | month | week | day | hour | minute
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Count {
   

@@ -38,7 +38,6 @@ import typings.ssh2Streams.ssh2StreamsStrings.header
 import typings.ssh2Streams.ssh2StreamsStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2-streams", "SSH2Stream")
@@ -57,9 +56,9 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def authFailure(): Boolean = js.native
-  def authFailure(authMethods: js.UndefOr[scala.Nothing], partialSuccess: Boolean): Boolean = js.native
   def authFailure(authMethods: js.Array[String]): Boolean = js.native
   def authFailure(authMethods: js.Array[String], partialSuccess: Boolean): Boolean = js.native
+  def authFailure(authMethods: Unit, partialSuccess: Boolean): Boolean = js.native
   
   /**
     * (Client-only)
@@ -231,9 +230,9 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def channelOpenFail(remoteChannel: Double, reasonCode: Double): Boolean = js.native
-  def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: js.UndefOr[scala.Nothing], lang: String): Boolean = js.native
   def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: String): Boolean = js.native
   def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: String, lang: String): Boolean = js.native
+  def channelOpenFail(remoteChannel: Double, reasonCode: Double, description: Unit, lang: String): Boolean = js.native
   
   /**
     * (Client/Server)
@@ -610,35 +609,6 @@ class SSH2Stream () extends Transform {
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def pty(channel: Double, rows: Double, cols: Double, height: Double, width: Double): Boolean = js.native
-  def pty(
-    channel: Double,
-    rows: Double,
-    cols: Double,
-    height: Double,
-    width: Double,
-    terminalType: js.UndefOr[scala.Nothing],
-    terminalModes: js.UndefOr[scala.Nothing],
-    wantReply: Boolean
-  ): Boolean = js.native
-  def pty(
-    channel: Double,
-    rows: Double,
-    cols: Double,
-    height: Double,
-    width: Double,
-    terminalType: js.UndefOr[scala.Nothing],
-    terminalModes: js.Any
-  ): Boolean = js.native
-  def pty(
-    channel: Double,
-    rows: Double,
-    cols: Double,
-    height: Double,
-    width: Double,
-    terminalType: js.UndefOr[scala.Nothing],
-    terminalModes: js.Any,
-    wantReply: Boolean
-  ): Boolean = js.native
   def pty(channel: Double, rows: Double, cols: Double, height: Double, width: Double, terminalType: String): Boolean = js.native
   def pty(
     channel: Double,
@@ -647,16 +617,6 @@ class SSH2Stream () extends Transform {
     height: Double,
     width: Double,
     terminalType: String,
-    terminalModes: js.UndefOr[scala.Nothing],
-    wantReply: Boolean
-  ): Boolean = js.native
-  def pty(
-    channel: Double,
-    rows: Double,
-    cols: Double,
-    height: Double,
-    width: Double,
-    terminalType: String,
     terminalModes: js.Any
   ): Boolean = js.native
   def pty(
@@ -667,6 +627,45 @@ class SSH2Stream () extends Transform {
     width: Double,
     terminalType: String,
     terminalModes: js.Any,
+    wantReply: Boolean
+  ): Boolean = js.native
+  def pty(
+    channel: Double,
+    rows: Double,
+    cols: Double,
+    height: Double,
+    width: Double,
+    terminalType: String,
+    terminalModes: Unit,
+    wantReply: Boolean
+  ): Boolean = js.native
+  def pty(
+    channel: Double,
+    rows: Double,
+    cols: Double,
+    height: Double,
+    width: Double,
+    terminalType: Unit,
+    terminalModes: js.Any
+  ): Boolean = js.native
+  def pty(
+    channel: Double,
+    rows: Double,
+    cols: Double,
+    height: Double,
+    width: Double,
+    terminalType: Unit,
+    terminalModes: js.Any,
+    wantReply: Boolean
+  ): Boolean = js.native
+  def pty(
+    channel: Double,
+    rows: Double,
+    cols: Double,
+    height: Double,
+    width: Double,
+    terminalType: Unit,
+    terminalModes: Unit,
     wantReply: Boolean
   ): Boolean = js.native
   

@@ -2,46 +2,44 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /**
     * If true, sets the datasource to read-only mode. In read-only mode, the Indexing API rejects any requests to index or delete items in this source. Enabling read-only mode does not
     * stop the processing of previously accepted data.
     */
-  var disableModifications: js.UndefOr[Boolean] = js.native
+  var disableModifications: js.UndefOr[Boolean] = js.undefined
   
   /** Disable serving any search or assist results. */
-  var disableServing: js.UndefOr[Boolean] = js.native
+  var disableServing: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Display name of the datasource The maximum length is 300 characters. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** List of service accounts that have indexing access. */
-  var indexingServiceAccounts: js.UndefOr[js.Array[String]] = js.native
+  var indexingServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This field restricts visibility to items at the datasource level. Items within the datasource are restricted to the union of users and groups included in this field. Note that, this
     * does not ensure access to a specific item, as users need to have ACL permissions on the contained items. This ensures a high level access on the entire datasource, and that the
     * individual items are not shared outside this visibility.
     */
-  var itemsVisibility: js.UndefOr[js.Array[GSuitePrincipal]] = js.native
+  var itemsVisibility: js.UndefOr[js.Array[GSuitePrincipal]] = js.undefined
   
   /** Name of the datasource resource. Format: datasources/{source_id}. The name is ignored when creating a datasource. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** IDs of the Long Running Operations (LROs) currently running for this schema. */
-  var operationIds: js.UndefOr[js.Array[String]] = js.native
+  var operationIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A short name or alias for the source. This value will be used to match the 'source' operator. For example, if the short name is *<value>* then queries like *source:<value>* will
     * only return results for this source. The value must be unique across all datasources. The value must only contain alphanumeric characters (a-zA-Z0-9). The value cannot start with
     * 'google' and cannot be one of the following: mail, gmail, docs, drive, groups, sites, calendar, hangouts, gplus, keep, people, teams. Its maximum length is 32 characters.
     */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
 }
 object DataSource {
   

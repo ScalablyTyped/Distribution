@@ -2,48 +2,90 @@ package typings.ringbufferjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ringbufferjs", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends RingBuffer[T] {
+  class ^[T] protected ()
+    extends StObject
+       with RingBuffer[T] {
     def this(capacity: Double) = this()
-    def this(capacity: Double, evictedCB: js.Function1[/* element */ T, _]) = this()
-  }
-  
-  @js.native
-  trait RingBuffer[T] extends StObject {
+    def this(capacity: Double, evictedCB: js.Function1[/* element */ T, js.Any]) = this()
     
+    /* CompleteClass */
     var _elements: js.Array[T] = js.native
     
-    def _evictedCb(element: T): js.Any = js.native
+    /* CompleteClass */
+    override def _evictedCb(element: T): js.Any = js.native
     
+    /* CompleteClass */
     var _first: Double = js.native
     
+    /* CompleteClass */
     var _last: Double = js.native
     
+    /* CompleteClass */
     var _size: Double = js.native
     
-    def capacity(): Double = js.native
+    /* CompleteClass */
+    override def capacity(): Double = js.native
     
-    def deq(): T = js.native
+    /* CompleteClass */
+    override def deq(): T = js.native
     
-    def deqN(count: Double): js.Array[T] = js.native
+    /* CompleteClass */
+    override def deqN(count: Double): js.Array[T] = js.native
     
-    def enq(element: T): Double = js.native
+    /* CompleteClass */
+    override def enq(element: T): Double = js.native
     
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
-    def isFull(): Boolean = js.native
+    /* CompleteClass */
+    override def isFull(): Boolean = js.native
     
-    def peek(): T = js.native
+    /* CompleteClass */
+    override def peek(): T = js.native
     
-    def peekN(count: Double): js.Array[T] = js.native
+    /* CompleteClass */
+    override def peekN(count: Double): js.Array[T] = js.native
     
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
+  }
+  
+  trait RingBuffer[T] extends StObject {
+    
+    var _elements: js.Array[T]
+    
+    def _evictedCb(element: T): js.Any
+    
+    var _first: Double
+    
+    var _last: Double
+    
+    var _size: Double
+    
+    def capacity(): Double
+    
+    def deq(): T
+    
+    def deqN(count: Double): js.Array[T]
+    
+    def enq(element: T): Double
+    
+    def isEmpty(): Boolean
+    
+    def isFull(): Boolean
+    
+    def peek(): T
+    
+    def peekN(count: Double): js.Array[T]
+    
+    def size(): Double
   }
   object RingBuffer {
     
@@ -69,7 +111,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RingBufferMutableBuilder[Self <: RingBuffer[_], T] (val x: Self with RingBuffer[T]) extends AnyVal {
+    implicit class RingBufferMutableBuilder[Self <: RingBuffer[?], T] (val x: Self & RingBuffer[T]) extends AnyVal {
       
       @scala.inline
       def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))

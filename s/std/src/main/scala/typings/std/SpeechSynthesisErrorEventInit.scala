@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpeechSynthesisErrorEventInit extends SpeechSynthesisEventInit {
+trait SpeechSynthesisErrorEventInit
+  extends StObject
+     with SpeechSynthesisEventInit {
   
-  var error: SpeechSynthesisErrorCode = js.native
+  var error: SpeechSynthesisErrorCode
 }
 object SpeechSynthesisErrorEventInit {
   

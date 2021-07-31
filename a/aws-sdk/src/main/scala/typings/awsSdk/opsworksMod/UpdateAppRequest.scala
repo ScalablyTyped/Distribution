@@ -2,66 +2,64 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppRequest extends StObject {
   
   /**
     * The app ID.
     */
-  var AppId: String = js.native
+  var AppId: String
   
   /**
     * A Source object that specifies the app repository.
     */
-  var AppSource: js.UndefOr[Source] = js.native
+  var AppSource: js.UndefOr[Source] = js.undefined
   
   /**
     * One or more user-defined key/value pairs to be added to the stack attributes.
     */
-  var Attributes: js.UndefOr[AppAttributes] = js.native
+  var Attributes: js.UndefOr[AppAttributes] = js.undefined
   
   /**
     * The app's data sources.
     */
-  var DataSources: js.UndefOr[typings.awsSdk.opsworksMod.DataSources] = js.native
+  var DataSources: js.UndefOr[typings.awsSdk.opsworksMod.DataSources] = js.undefined
   
   /**
     * A description of the app.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The app's virtual host settings, with multiple domains separated by commas. For example: 'www.example.com, example.com' 
     */
-  var Domains: js.UndefOr[Strings] = js.native
+  var Domains: js.UndefOr[Strings] = js.undefined
   
   /**
     * Whether SSL is enabled for the app.
     */
-  var EnableSsl: js.UndefOr[Boolean] = js.native
+  var EnableSsl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of EnvironmentVariable objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instances.For more information, see  Environment Variables. There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variables' names, values, and protected flag values - cannot exceed 20 KB. This limit should accommodate most if not all use cases. Exceeding it will cause an exception with the message, "Environment: is too large (maximum is 20 KB)."  If you have specified one or more environment variables, you cannot modify the stack's Chef version. 
     */
-  var Environment: js.UndefOr[EnvironmentVariables] = js.native
+  var Environment: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
     * The app name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * An SslConfiguration object with the SSL configuration.
     */
-  var SslConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.SslConfiguration] = js.native
+  var SslConfiguration: js.UndefOr[typings.awsSdk.opsworksMod.SslConfiguration] = js.undefined
   
   /**
     * The app type.
     */
-  var Type: js.UndefOr[AppType] = js.native
+  var Type: js.UndefOr[AppType] = js.undefined
 }
 object UpdateAppRequest {
   

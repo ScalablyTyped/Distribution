@@ -4,15 +4,16 @@ import typings.std.ClassDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exclusionMod {
   
-  @JSImport("typeorm/browser/decorator/Exclusion", "Exclusion")
+  @JSImport("typeorm/browser/decorator/Exclusion", JSImport.Namespace)
   @js.native
-  def Exclusion(expression: String): ClassDecorator with PropertyDecorator = js.native
-  @JSImport("typeorm/browser/decorator/Exclusion", "Exclusion")
-  @js.native
-  def Exclusion(name: String, expression: String): ClassDecorator with PropertyDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Exclusion(expression: String): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(expression.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
+  @scala.inline
+  def Exclusion(name: String, expression: String): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(name.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]
 }

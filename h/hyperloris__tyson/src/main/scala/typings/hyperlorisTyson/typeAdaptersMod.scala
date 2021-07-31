@@ -6,7 +6,6 @@ import typings.hyperlorisTyson.typeTokenMod.ClassType
 import typings.hyperlorisTyson.typeTokenMod.TypeToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeAdaptersMod {
@@ -45,11 +44,9 @@ object typeAdaptersMod {
     @scala.inline
     def STRING_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING_FACTORY")(x.asInstanceOf[js.Any])
     
-    @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.newFactory")
-    @js.native
-    def newFactory[TT](`type`: ClassType[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = js.native
-    @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.newFactory")
-    @js.native
-    def newFactory[TT](`type`: TypeToken[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = js.native
+    @scala.inline
+    def newFactory[TT](`type`: ClassType[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
+    @scala.inline
+    def newFactory[TT](`type`: TypeToken[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
   }
 }

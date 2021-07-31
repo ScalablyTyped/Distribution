@@ -2,27 +2,25 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionInfo extends StObject {
   
-  var application_name: js.UndefOr[String] = js.native
+  var application_name: js.UndefOr[String] = js.undefined
   
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
-  var fallback_application_name: js.UndefOr[Boolean] = js.native
+  var fallback_application_name: js.UndefOr[Boolean] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String | Null] = js.native
+  var password: js.UndefOr[String | Null] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object ConnectionInfo {
   

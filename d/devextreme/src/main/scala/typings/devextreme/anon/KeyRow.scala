@@ -5,27 +5,25 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeListColumn
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRow extends StObject {
   
-  var column: js.UndefOr[dxTreeListColumn] = js.native
+  var column: js.UndefOr[dxTreeListColumn] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxTreeListRowObject] = js.native
+  var row: js.UndefOr[dxTreeListRowObject] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowType: js.UndefOr[String] = js.native
+  var rowType: js.UndefOr[String] = js.undefined
 }
 object KeyRow {
   

@@ -2,29 +2,27 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Wifi 信息 */
-@js.native
 trait WifiInfo extends StObject {
   
   /** Wi-Fi 的 BSSID */
-  var BSSID: String = js.native
+  var BSSID: String
   
   /** Wi-Fi 的 SSID */
-  var SSID: String = js.native
+  var SSID: String
   
   /** Wi-Fi 频段单位 MHz
     *
     * 最低基础库： `2.12.0` */
-  var frequency: Double = js.native
+  var frequency: Double
   
   /** Wi-Fi 是否安全 */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /** Wi-Fi 信号强度 */
-  var signalStrength: Double = js.native
+  var signalStrength: Double
 }
 object WifiInfo {
   

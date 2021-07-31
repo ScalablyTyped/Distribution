@@ -2,23 +2,21 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Busy extends StObject {
   
-  var busy: Boolean = js.native
+  var busy: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var labels: js.Array[Id] = js.native
+  var labels: js.Array[Id]
   
-  var name: String = js.native
+  var name: String
   
-  var os: String = js.native
+  var os: String
   
-  var status: String = js.native
+  var status: String
 }
 object Busy {
   

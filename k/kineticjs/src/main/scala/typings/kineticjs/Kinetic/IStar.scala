@@ -2,11 +2,12 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStar extends IShape {
+trait IStar
+  extends StObject
+     with IShape {
   
   def getInnerRadius(): Double = js.native
   

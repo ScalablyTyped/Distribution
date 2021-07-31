@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.TimePicker")
 @js.native
 class TimePicker protected ()
-  extends typings.ejWebAll.ej.TimePicker {
+  extends StObject
+     with typings.ejWebAll.ej.TimePicker {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()

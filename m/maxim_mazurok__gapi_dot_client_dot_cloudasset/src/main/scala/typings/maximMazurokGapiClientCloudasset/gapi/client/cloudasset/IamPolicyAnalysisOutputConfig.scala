@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamPolicyAnalysisOutputConfig extends StObject {
   
   /** Destination on BigQuery. */
-  var bigqueryDestination: js.UndefOr[GoogleCloudAssetV1BigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[GoogleCloudAssetV1BigQueryDestination] = js.undefined
   
   /** Destination on Cloud Storage. */
-  var gcsDestination: js.UndefOr[GoogleCloudAssetV1GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GoogleCloudAssetV1GcsDestination] = js.undefined
 }
 object IamPolicyAnalysisOutputConfig {
   

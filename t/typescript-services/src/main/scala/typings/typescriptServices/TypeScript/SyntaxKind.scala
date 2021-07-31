@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,800 +11,1332 @@ sealed trait SyntaxKind extends StObject
 object SyntaxKind extends StObject {
   
   @js.native
-  sealed trait AddAssignmentExpression extends SyntaxKind
+  sealed trait AddAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AddExpression extends SyntaxKind
+  sealed trait AddExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AmpersandAmpersandToken extends SyntaxKind
+  sealed trait AmpersandAmpersandToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AmpersandEqualsToken extends SyntaxKind
+  sealed trait AmpersandEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AmpersandToken extends SyntaxKind
+  sealed trait AmpersandToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AndAssignmentExpression extends SyntaxKind
+  sealed trait AndAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AnyKeyword extends SyntaxKind
+  sealed trait AnyKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ArgumentList extends SyntaxKind
+  sealed trait ArgumentList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ArrayLiteralExpression extends SyntaxKind
+  sealed trait ArrayLiteralExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ArrayType extends SyntaxKind
+  sealed trait ArrayType
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AssignmentExpression extends SyntaxKind
+  sealed trait AssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AsteriskEqualsToken extends SyntaxKind
+  sealed trait AsteriskEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait AsteriskToken extends SyntaxKind
+  sealed trait AsteriskToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BarBarToken extends SyntaxKind
+  sealed trait BarBarToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BarEqualsToken extends SyntaxKind
+  sealed trait BarEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BarToken extends SyntaxKind
+  sealed trait BarToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BitwiseAndExpression extends SyntaxKind
+  sealed trait BitwiseAndExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BitwiseExclusiveOrExpression extends SyntaxKind
+  sealed trait BitwiseExclusiveOrExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BitwiseNotExpression extends SyntaxKind
+  sealed trait BitwiseNotExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BitwiseOrExpression extends SyntaxKind
+  sealed trait BitwiseOrExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait Block extends SyntaxKind
+  sealed trait Block
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BooleanKeyword extends SyntaxKind
+  sealed trait BooleanKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BreakKeyword extends SyntaxKind
+  sealed trait BreakKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait BreakStatement extends SyntaxKind
+  sealed trait BreakStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CallSignature extends SyntaxKind
+  sealed trait CallSignature
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CaretEqualsToken extends SyntaxKind
+  sealed trait CaretEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CaretToken extends SyntaxKind
+  sealed trait CaretToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CaseKeyword extends SyntaxKind
+  sealed trait CaseKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CaseSwitchClause extends SyntaxKind
+  sealed trait CaseSwitchClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CastExpression extends SyntaxKind
+  sealed trait CastExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CatchClause extends SyntaxKind
+  sealed trait CatchClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CatchKeyword extends SyntaxKind
+  sealed trait CatchKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ClassDeclaration extends SyntaxKind
+  sealed trait ClassDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ClassKeyword extends SyntaxKind
+  sealed trait ClassKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CloseBraceToken extends SyntaxKind
+  sealed trait CloseBraceToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CloseBracketToken extends SyntaxKind
+  sealed trait CloseBracketToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CloseParenToken extends SyntaxKind
+  sealed trait CloseParenToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ColonToken extends SyntaxKind
+  sealed trait ColonToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CommaExpression extends SyntaxKind
+  sealed trait CommaExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait CommaToken extends SyntaxKind
+  sealed trait CommaToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConditionalExpression extends SyntaxKind
+  sealed trait ConditionalExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConstKeyword extends SyntaxKind
+  sealed trait ConstKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait Constraint extends SyntaxKind
+  sealed trait Constraint
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConstructSignature extends SyntaxKind
+  sealed trait ConstructSignature
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConstructorDeclaration extends SyntaxKind
+  sealed trait ConstructorDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConstructorKeyword extends SyntaxKind
+  sealed trait ConstructorKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ConstructorType extends SyntaxKind
+  sealed trait ConstructorType
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ContinueKeyword extends SyntaxKind
+  sealed trait ContinueKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ContinueStatement extends SyntaxKind
+  sealed trait ContinueStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DebuggerKeyword extends SyntaxKind
+  sealed trait DebuggerKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DebuggerStatement extends SyntaxKind
+  sealed trait DebuggerStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DeclareKeyword extends SyntaxKind
+  sealed trait DeclareKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DefaultKeyword extends SyntaxKind
+  sealed trait DefaultKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DefaultSwitchClause extends SyntaxKind
+  sealed trait DefaultSwitchClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DeleteExpression extends SyntaxKind
+  sealed trait DeleteExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DeleteKeyword extends SyntaxKind
+  sealed trait DeleteKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DivideAssignmentExpression extends SyntaxKind
+  sealed trait DivideAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DivideExpression extends SyntaxKind
+  sealed trait DivideExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DoKeyword extends SyntaxKind
+  sealed trait DoKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DoStatement extends SyntaxKind
+  sealed trait DoStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DotDotDotToken extends SyntaxKind
+  sealed trait DotDotDotToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait DotToken extends SyntaxKind
+  sealed trait DotToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ElementAccessExpression extends SyntaxKind
+  sealed trait ElementAccessExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ElseClause extends SyntaxKind
+  sealed trait ElseClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ElseKeyword extends SyntaxKind
+  sealed trait ElseKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EmptyStatement extends SyntaxKind
+  sealed trait EmptyStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EndOfFileToken extends SyntaxKind
+  sealed trait EndOfFileToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EnumDeclaration extends SyntaxKind
+  sealed trait EnumDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EnumElement extends SyntaxKind
+  sealed trait EnumElement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EnumKeyword extends SyntaxKind
+  sealed trait EnumKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsEqualsEqualsToken extends SyntaxKind
+  sealed trait EqualsEqualsEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsEqualsToken extends SyntaxKind
+  sealed trait EqualsEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsExpression extends SyntaxKind
+  sealed trait EqualsExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsGreaterThanToken extends SyntaxKind
+  sealed trait EqualsGreaterThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsToken extends SyntaxKind
+  sealed trait EqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsValueClause extends SyntaxKind
+  sealed trait EqualsValueClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait EqualsWithTypeConversionExpression extends SyntaxKind
+  sealed trait EqualsWithTypeConversionExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ErrorToken extends SyntaxKind
+  sealed trait ErrorToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExclamationEqualsEqualsToken extends SyntaxKind
+  sealed trait ExclamationEqualsEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExclamationEqualsToken extends SyntaxKind
+  sealed trait ExclamationEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExclamationToken extends SyntaxKind
+  sealed trait ExclamationToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExclusiveOrAssignmentExpression extends SyntaxKind
+  sealed trait ExclusiveOrAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExportAssignment extends SyntaxKind
+  sealed trait ExportAssignment
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExportKeyword extends SyntaxKind
+  sealed trait ExportKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExpressionStatement extends SyntaxKind
+  sealed trait ExpressionStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExtendsHeritageClause extends SyntaxKind
+  sealed trait ExtendsHeritageClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExtendsKeyword extends SyntaxKind
+  sealed trait ExtendsKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ExternalModuleReference extends SyntaxKind
+  sealed trait ExternalModuleReference
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FalseKeyword extends SyntaxKind
+  sealed trait FalseKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FinallyClause extends SyntaxKind
+  sealed trait FinallyClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FinallyKeyword extends SyntaxKind
+  sealed trait FinallyKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstFixedWidth extends SyntaxKind
+  sealed trait FirstFixedWidth
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstFutureReservedKeyword extends SyntaxKind
+  sealed trait FirstFutureReservedKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstFutureReservedStrictKeyword extends SyntaxKind
+  sealed trait FirstFutureReservedStrictKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstKeyword extends SyntaxKind
+  sealed trait FirstKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstPunctuation extends SyntaxKind
+  sealed trait FirstPunctuation
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstStandardKeyword extends SyntaxKind
+  sealed trait FirstStandardKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstToken extends SyntaxKind
+  sealed trait FirstToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstTrivia extends SyntaxKind
+  sealed trait FirstTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FirstTypeScriptKeyword extends SyntaxKind
+  sealed trait FirstTypeScriptKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ForInStatement extends SyntaxKind
+  sealed trait ForInStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ForKeyword extends SyntaxKind
+  sealed trait ForKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ForStatement extends SyntaxKind
+  sealed trait ForStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FunctionDeclaration extends SyntaxKind
+  sealed trait FunctionDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FunctionExpression extends SyntaxKind
+  sealed trait FunctionExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FunctionKeyword extends SyntaxKind
+  sealed trait FunctionKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FunctionPropertyAssignment extends SyntaxKind
+  sealed trait FunctionPropertyAssignment
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait FunctionType extends SyntaxKind
+  sealed trait FunctionType
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GenericType extends SyntaxKind
+  sealed trait GenericType
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GetAccessor extends SyntaxKind
+  sealed trait GetAccessor
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GetKeyword extends SyntaxKind
+  sealed trait GetKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanEqualsToken extends SyntaxKind
+  sealed trait GreaterThanEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanExpression extends SyntaxKind
+  sealed trait GreaterThanExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanGreaterThanEqualsToken extends SyntaxKind
+  sealed trait GreaterThanGreaterThanEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanGreaterThanGreaterThanEqualsToken extends SyntaxKind
+  sealed trait GreaterThanGreaterThanGreaterThanEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanGreaterThanGreaterThanToken extends SyntaxKind
+  sealed trait GreaterThanGreaterThanGreaterThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanGreaterThanToken extends SyntaxKind
+  sealed trait GreaterThanGreaterThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanOrEqualExpression extends SyntaxKind
+  sealed trait GreaterThanOrEqualExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait GreaterThanToken extends SyntaxKind
+  sealed trait GreaterThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait IdentifierName extends SyntaxKind
+  sealed trait IdentifierName
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait IfKeyword extends SyntaxKind
+  sealed trait IfKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait IfStatement extends SyntaxKind
+  sealed trait IfStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ImplementsHeritageClause extends SyntaxKind
+  sealed trait ImplementsHeritageClause
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ImplementsKeyword extends SyntaxKind
+  sealed trait ImplementsKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ImportDeclaration extends SyntaxKind
+  sealed trait ImportDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ImportKeyword extends SyntaxKind
+  sealed trait ImportKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InExpression extends SyntaxKind
+  sealed trait InExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InKeyword extends SyntaxKind
+  sealed trait InKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait IndexMemberDeclaration extends SyntaxKind
+  sealed trait IndexMemberDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait IndexSignature extends SyntaxKind
+  sealed trait IndexSignature
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InstanceOfExpression extends SyntaxKind
+  sealed trait InstanceOfExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InstanceOfKeyword extends SyntaxKind
+  sealed trait InstanceOfKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InterfaceDeclaration extends SyntaxKind
+  sealed trait InterfaceDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InterfaceKeyword extends SyntaxKind
+  sealed trait InterfaceKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait InvocationExpression extends SyntaxKind
+  sealed trait InvocationExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LabeledStatement extends SyntaxKind
+  sealed trait LabeledStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait Last extends SyntaxKind
+  sealed trait Last
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastFixedWidth extends SyntaxKind
+  sealed trait LastFixedWidth
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastFutureReservedKeyword extends SyntaxKind
+  sealed trait LastFutureReservedKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastFutureReservedStrictKeyword extends SyntaxKind
+  sealed trait LastFutureReservedStrictKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastKeyword extends SyntaxKind
+  sealed trait LastKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastPunctuation extends SyntaxKind
+  sealed trait LastPunctuation
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastStandardKeyword extends SyntaxKind
+  sealed trait LastStandardKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastToken extends SyntaxKind
+  sealed trait LastToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastTrivia extends SyntaxKind
+  sealed trait LastTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LastTypeScriptKeyword extends SyntaxKind
+  sealed trait LastTypeScriptKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LeftShiftAssignmentExpression extends SyntaxKind
+  sealed trait LeftShiftAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LeftShiftExpression extends SyntaxKind
+  sealed trait LeftShiftExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanEqualsToken extends SyntaxKind
+  sealed trait LessThanEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanExpression extends SyntaxKind
+  sealed trait LessThanExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanLessThanEqualsToken extends SyntaxKind
+  sealed trait LessThanLessThanEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanLessThanToken extends SyntaxKind
+  sealed trait LessThanLessThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanOrEqualExpression extends SyntaxKind
+  sealed trait LessThanOrEqualExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LessThanToken extends SyntaxKind
+  sealed trait LessThanToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LetKeyword extends SyntaxKind
+  sealed trait LetKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait List extends SyntaxKind
+  sealed trait List
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LogicalAndExpression extends SyntaxKind
+  sealed trait LogicalAndExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LogicalNotExpression extends SyntaxKind
+  sealed trait LogicalNotExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait LogicalOrExpression extends SyntaxKind
+  sealed trait LogicalOrExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MemberAccessExpression extends SyntaxKind
+  sealed trait MemberAccessExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MemberFunctionDeclaration extends SyntaxKind
+  sealed trait MemberFunctionDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MemberVariableDeclaration extends SyntaxKind
+  sealed trait MemberVariableDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MethodSignature extends SyntaxKind
+  sealed trait MethodSignature
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MinusEqualsToken extends SyntaxKind
+  sealed trait MinusEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MinusMinusToken extends SyntaxKind
+  sealed trait MinusMinusToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MinusToken extends SyntaxKind
+  sealed trait MinusToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ModuleDeclaration extends SyntaxKind
+  sealed trait ModuleDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ModuleKeyword extends SyntaxKind
+  sealed trait ModuleKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ModuleNameModuleReference extends SyntaxKind
+  sealed trait ModuleNameModuleReference
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ModuloAssignmentExpression extends SyntaxKind
+  sealed trait ModuloAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ModuloExpression extends SyntaxKind
+  sealed trait ModuloExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MultiLineCommentTrivia extends SyntaxKind
+  sealed trait MultiLineCommentTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MultiplyAssignmentExpression extends SyntaxKind
+  sealed trait MultiplyAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait MultiplyExpression extends SyntaxKind
+  sealed trait MultiplyExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NegateExpression extends SyntaxKind
+  sealed trait NegateExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NewKeyword extends SyntaxKind
+  sealed trait NewKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NewLineTrivia extends SyntaxKind
+  sealed trait NewLineTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait None extends SyntaxKind
+  sealed trait None
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NotEqualsExpression extends SyntaxKind
+  sealed trait NotEqualsExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NotEqualsWithTypeConversionExpression extends SyntaxKind
+  sealed trait NotEqualsWithTypeConversionExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NullKeyword extends SyntaxKind
+  sealed trait NullKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NumberKeyword extends SyntaxKind
+  sealed trait NumberKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait NumericLiteral extends SyntaxKind
+  sealed trait NumericLiteral
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ObjectCreationExpression extends SyntaxKind
+  sealed trait ObjectCreationExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ObjectLiteralExpression extends SyntaxKind
+  sealed trait ObjectLiteralExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ObjectType extends SyntaxKind
+  sealed trait ObjectType
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait OmittedExpression extends SyntaxKind
+  sealed trait OmittedExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait OpenBraceToken extends SyntaxKind
+  sealed trait OpenBraceToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait OpenBracketToken extends SyntaxKind
+  sealed trait OpenBracketToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait OpenParenToken extends SyntaxKind
+  sealed trait OpenParenToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait OrAssignmentExpression extends SyntaxKind
+  sealed trait OrAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PackageKeyword extends SyntaxKind
+  sealed trait PackageKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait Parameter extends SyntaxKind
+  sealed trait Parameter
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ParameterList extends SyntaxKind
+  sealed trait ParameterList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ParenthesizedArrowFunctionExpression extends SyntaxKind
+  sealed trait ParenthesizedArrowFunctionExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ParenthesizedExpression extends SyntaxKind
+  sealed trait ParenthesizedExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PercentEqualsToken extends SyntaxKind
+  sealed trait PercentEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PercentToken extends SyntaxKind
+  sealed trait PercentToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PlusEqualsToken extends SyntaxKind
+  sealed trait PlusEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PlusExpression extends SyntaxKind
+  sealed trait PlusExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PlusPlusToken extends SyntaxKind
+  sealed trait PlusPlusToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PlusToken extends SyntaxKind
+  sealed trait PlusToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PostDecrementExpression extends SyntaxKind
+  sealed trait PostDecrementExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PostIncrementExpression extends SyntaxKind
+  sealed trait PostIncrementExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PreDecrementExpression extends SyntaxKind
+  sealed trait PreDecrementExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PreIncrementExpression extends SyntaxKind
+  sealed trait PreIncrementExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PrivateKeyword extends SyntaxKind
+  sealed trait PrivateKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PropertySignature extends SyntaxKind
+  sealed trait PropertySignature
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ProtectedKeyword extends SyntaxKind
+  sealed trait ProtectedKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait PublicKeyword extends SyntaxKind
+  sealed trait PublicKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait QualifiedName extends SyntaxKind
+  sealed trait QualifiedName
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait QuestionToken extends SyntaxKind
+  sealed trait QuestionToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait RegularExpressionLiteral extends SyntaxKind
+  sealed trait RegularExpressionLiteral
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait RequireKeyword extends SyntaxKind
+  sealed trait RequireKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ReturnKeyword extends SyntaxKind
+  sealed trait ReturnKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ReturnStatement extends SyntaxKind
+  sealed trait ReturnStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SemicolonToken extends SyntaxKind
+  sealed trait SemicolonToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SeparatedList extends SyntaxKind
+  sealed trait SeparatedList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SetAccessor extends SyntaxKind
+  sealed trait SetAccessor
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SetKeyword extends SyntaxKind
+  sealed trait SetKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SignedRightShiftAssignmentExpression extends SyntaxKind
+  sealed trait SignedRightShiftAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SignedRightShiftExpression extends SyntaxKind
+  sealed trait SignedRightShiftExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SimpleArrowFunctionExpression extends SyntaxKind
+  sealed trait SimpleArrowFunctionExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SimplePropertyAssignment extends SyntaxKind
+  sealed trait SimplePropertyAssignment
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SingleLineCommentTrivia extends SyntaxKind
+  sealed trait SingleLineCommentTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SkippedTokenTrivia extends SyntaxKind
+  sealed trait SkippedTokenTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SlashEqualsToken extends SyntaxKind
+  sealed trait SlashEqualsToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SlashToken extends SyntaxKind
+  sealed trait SlashToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SourceUnit extends SyntaxKind
+  sealed trait SourceUnit
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait StaticKeyword extends SyntaxKind
+  sealed trait StaticKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait StringKeyword extends SyntaxKind
+  sealed trait StringKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait StringLiteral extends SyntaxKind
+  sealed trait StringLiteral
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SubtractAssignmentExpression extends SyntaxKind
+  sealed trait SubtractAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SubtractExpression extends SyntaxKind
+  sealed trait SubtractExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SuperKeyword extends SyntaxKind
+  sealed trait SuperKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SwitchKeyword extends SyntaxKind
+  sealed trait SwitchKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait SwitchStatement extends SyntaxKind
+  sealed trait SwitchStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ThisKeyword extends SyntaxKind
+  sealed trait ThisKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ThrowKeyword extends SyntaxKind
+  sealed trait ThrowKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait ThrowStatement extends SyntaxKind
+  sealed trait ThrowStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TildeToken extends SyntaxKind
+  sealed trait TildeToken
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TriviaList extends SyntaxKind
+  sealed trait TriviaList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TrueKeyword extends SyntaxKind
+  sealed trait TrueKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TryKeyword extends SyntaxKind
+  sealed trait TryKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TryStatement extends SyntaxKind
+  sealed trait TryStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeAnnotation extends SyntaxKind
+  sealed trait TypeAnnotation
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeArgumentList extends SyntaxKind
+  sealed trait TypeArgumentList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeOfExpression extends SyntaxKind
+  sealed trait TypeOfExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeOfKeyword extends SyntaxKind
+  sealed trait TypeOfKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeParameter extends SyntaxKind
+  sealed trait TypeParameter
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeParameterList extends SyntaxKind
+  sealed trait TypeParameterList
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait TypeQuery extends SyntaxKind
+  sealed trait TypeQuery
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait UnsignedRightShiftAssignmentExpression extends SyntaxKind
+  sealed trait UnsignedRightShiftAssignmentExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait UnsignedRightShiftExpression extends SyntaxKind
+  sealed trait UnsignedRightShiftExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VarKeyword extends SyntaxKind
+  sealed trait VarKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VariableDeclaration extends SyntaxKind
+  sealed trait VariableDeclaration
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VariableDeclarator extends SyntaxKind
+  sealed trait VariableDeclarator
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VariableStatement extends SyntaxKind
+  sealed trait VariableStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VoidExpression extends SyntaxKind
+  sealed trait VoidExpression
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait VoidKeyword extends SyntaxKind
+  sealed trait VoidKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait WhileKeyword extends SyntaxKind
+  sealed trait WhileKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait WhileStatement extends SyntaxKind
+  sealed trait WhileStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait WhitespaceTrivia extends SyntaxKind
+  sealed trait WhitespaceTrivia
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait WithKeyword extends SyntaxKind
+  sealed trait WithKeyword
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait WithStatement extends SyntaxKind
+  sealed trait WithStatement
+    extends StObject
+       with SyntaxKind
   
   @js.native
-  sealed trait YieldKeyword extends SyntaxKind
+  sealed trait YieldKeyword
+    extends StObject
+       with SyntaxKind
 }

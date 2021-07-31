@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSipMediaApplicationLoggingConfigurationRequest extends StObject {
   
   /**
     * The ID of the specified SIP media application
     */
-  var SipMediaApplicationId: NonEmptyString = js.native
+  var SipMediaApplicationId: NonEmptyString
   
   /**
     * The actual logging configuration.
     */
-  var SipMediaApplicationLoggingConfiguration: js.UndefOr[typings.awsSdk.chimeMod.SipMediaApplicationLoggingConfiguration] = js.native
+  var SipMediaApplicationLoggingConfiguration: js.UndefOr[typings.awsSdk.chimeMod.SipMediaApplicationLoggingConfiguration] = js.undefined
 }
 object PutSipMediaApplicationLoggingConfigurationRequest {
   

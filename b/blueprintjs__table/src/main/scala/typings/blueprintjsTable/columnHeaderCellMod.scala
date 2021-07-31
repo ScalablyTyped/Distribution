@@ -11,10 +11,13 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnHeaderCellMod {
+  
+  @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell")
   @js.native
@@ -65,34 +68,33 @@ object columnHeaderCellMod {
       * cells without worry of selection or resize operations from capturing
       * their mouse events.
       */
-    @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.isHeaderMouseTarget")
-    @js.native
-    def isHeaderMouseTarget(target: HTMLElement): Boolean = js.native
+    @scala.inline
+    def isHeaderMouseTarget(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderMouseTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "HorizontalCellDivider")
-  @js.native
-  def HorizontalCellDivider(): Element = js.native
+  @scala.inline
+  def HorizontalCellDivider(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HorizontalCellDivider")().asInstanceOf[Element]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.blueprintjsTable.columnHeaderCellMod.IColumnNameProps because var conflicts: name. Inlined nameRenderer */ @js.native
-  trait IColumnHeaderCellProps extends IHeaderCellProps {
+  - typings.blueprintjsTable.columnHeaderCellMod.IColumnNameProps because var conflicts: name. Inlined nameRenderer */ trait IColumnHeaderCellProps
+    extends StObject
+       with IHeaderCellProps {
     
     /**
       * Specifies if the column is reorderable.
       */
-    var enableColumnReordering: js.UndefOr[Boolean] = js.native
+    var enableColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if the full column is part of a selection.
       */
-    var isColumnSelected: js.UndefOr[Boolean] = js.native
+    var isColumnSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The icon name or element for the header's menu button.
       * @default "chevron-down"
       */
-    var menuIcon: js.UndefOr[IconName | Element] = js.native
+    var menuIcon: js.UndefOr[IconName | Element] = js.undefined
     
     /**
       * A callback to override the default name rendering behavior. The default
@@ -107,7 +109,7 @@ object columnHeaderCellMod {
       * The callback will also receive the column index if an `index` was originally
       * provided via props.
       */
-    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.native
+    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.undefined
   }
   object IColumnHeaderCellProps {
     
@@ -146,10 +148,9 @@ object columnHeaderCellMod {
     }
   }
   
-  @js.native
   trait IColumnHeaderCellState extends StObject {
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnHeaderCellState {
     
@@ -170,13 +171,12 @@ object columnHeaderCellMod {
     }
   }
   
-  @js.native
   trait IColumnNameProps extends StObject {
     
     /**
       * The name displayed in the header of the column.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A callback to override the default name rendering behavior. The default
@@ -191,7 +191,7 @@ object columnHeaderCellMod {
       * The callback will also receive the column index if an `index` was originally
       * provided via props.
       */
-    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.native
+    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.undefined
   }
   object IColumnNameProps {
     

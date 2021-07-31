@@ -2,14 +2,14 @@ package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMapField extends IField {
+trait IMapField
+  extends StObject
+     with IField {
   
   /** Key type */
-  var keyType: String = js.native
+  var keyType: String
 }
 object IMapField {
   

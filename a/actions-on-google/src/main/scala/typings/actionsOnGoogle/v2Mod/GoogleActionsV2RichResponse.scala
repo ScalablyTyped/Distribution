@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2RichResponse extends StObject {
   
   /**
@@ -24,20 +22,20 @@ trait GoogleActionsV2RichResponse extends StObject {
     *  ie ListSelect or
     *     CarouselSelect
     */
-  var items: js.UndefOr[js.Array[GoogleActionsV2RichResponseItem]] = js.native
+  var items: js.UndefOr[js.Array[GoogleActionsV2RichResponseItem]] = js.undefined
   
   /**
     * An additional suggestion chip that can link out to the associated app
     * or site.
     */
-  var linkOutSuggestion: js.UndefOr[GoogleActionsV2UiElementsLinkOutSuggestion] = js.native
+  var linkOutSuggestion: js.UndefOr[GoogleActionsV2UiElementsLinkOutSuggestion] = js.undefined
   
   /**
     * A list of suggested replies. These will always appear at the end of the
     * response. If used in a FinalResponse,
     * they will be ignored.
     */
-  var suggestions: js.UndefOr[js.Array[GoogleActionsV2UiElementsSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[GoogleActionsV2UiElementsSuggestion]] = js.undefined
 }
 object GoogleActionsV2RichResponse {
   

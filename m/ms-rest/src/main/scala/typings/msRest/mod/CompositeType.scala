@@ -3,14 +3,14 @@ package typings.msRest.mod
 import typings.msRest.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompositeType extends Mapper {
+trait CompositeType
+  extends StObject
+     with Mapper {
   
   @JSName("type")
-  var type_CompositeType: ClassName = js.native
+  var type_CompositeType: ClassName
 }
 object CompositeType {
   

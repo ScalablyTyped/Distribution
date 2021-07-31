@@ -2,24 +2,20 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InvalidTrackLanguageError extends Error {
+trait InvalidTrackLanguageError
+  extends StObject
+     with Error {
   
   @JSName("name")
-  var name_InvalidTrackLanguageError: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError = js.native
+  var name_InvalidTrackLanguageError: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError
 }
 object InvalidTrackLanguageError {
   
   @scala.inline
-  def apply(
-    message: String,
-    method: String,
-    name: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError
-  ): InvalidTrackLanguageError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(message: String, method: String): InvalidTrackLanguageError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "InvalidTrackLanguageError")
     __obj.asInstanceOf[InvalidTrackLanguageError]
   }
   

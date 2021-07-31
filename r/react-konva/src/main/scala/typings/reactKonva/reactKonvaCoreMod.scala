@@ -61,7 +61,6 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactKonvaCoreMod {
@@ -216,59 +215,60 @@ object reactKonvaCoreMod {
   def useStrictMode_=(x: js.Function1[/* useStrictMode */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useStrictMode")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait KonvaNodeComponent[Node /* <: Node */, Props] extends FunctionComponent[Props with KonvaNodeEvents with ClassAttributes[Node]] {
+  trait KonvaNodeComponent[Node /* <: Node */, Props]
+    extends StObject
+       with FunctionComponent[Props & KonvaNodeEvents & ClassAttributes[Node]] {
     
     def getNativeNode(): Node = js.native
     
     def getPublicInstance(): Node = js.native
   }
   
-  @js.native
   trait KonvaNodeEvents extends StObject {
     
-    var onClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
     
-    var onDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onDblTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onDblTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onDragMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTransform: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransform: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTransformEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransformEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTransformStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransformStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[WheelEvent], Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[WheelEvent], Unit]] = js.undefined
   }
   object KonvaNodeEvents {
     
@@ -418,137 +418,137 @@ object reactKonvaCoreMod {
   /* Inlined parent konva.konva.default.NodeConfig */
   /* Inlined parent react-konva.react-konva/lib/ReactKonvaCore.KonvaNodeEvents */
   /* Inlined parent std.Pick<react.react.HTMLProps<any>, 'className' | 'role' | 'style' | 'tabIndex' | 'title'> */
-  @js.native
   trait StageProps
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     var dragBoundFunc: js.UndefOr[
         js.ThisFunction1[/* this */ typings.konva.nodeMod.Node[this.type], /* pos */ Vector2d, Vector2d]
-      ] = js.native
+      ] = js.undefined
     
-    var dragDistance: js.UndefOr[Double] = js.native
+    var dragDistance: js.UndefOr[Double] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var filters: js.UndefOr[js.Array[Filter]] = js.native
+    var filters: js.UndefOr[js.Array[Filter]] = js.undefined
     
-    var globalCompositeOperation: js.UndefOr[globalCompositeOperationType] = js.native
+    var globalCompositeOperation: js.UndefOr[globalCompositeOperationType] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var listening: js.UndefOr[Boolean] = js.native
+    var listening: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var offset: js.UndefOr[Vector2d] = js.native
+    var offset: js.UndefOr[Vector2d] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onContentClick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentClick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentDblclick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentDblclick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentDbltap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentDbltap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentMousedown: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentMousedown: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentMousemove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentMousemove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentMouseout: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentMouseout: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentMouseover: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentMouseover: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentMouseup: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentMouseup: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentTap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentTap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentTouchend: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentTouchend: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentTouchmove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentTouchmove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentTouchstart: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentTouchstart: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContentWheel: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onContentWheel: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
     
-    var onDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onDblTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onDblTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onDragMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
-    var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[TouchEvent], Unit]] = js.undefined
     
-    var onTransform: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransform: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTransformEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransformEnd: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onTransformStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.native
+    var onTransformStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[WheelEvent], Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[WheelEvent], Unit]] = js.undefined
     
-    var opacity: js.UndefOr[Number] = js.native
+    var opacity: js.UndefOr[Number] = js.undefined
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var rotationDeg: js.UndefOr[Double] = js.native
+    var rotationDeg: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Vector2d] = js.native
+    var scale: js.UndefOr[Vector2d] = js.undefined
     
-    var scaleX: js.UndefOr[Double] = js.native
+    var scaleX: js.UndefOr[Double] = js.undefined
     
-    var scaleY: js.UndefOr[Double] = js.native
+    var scaleY: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object StageProps {
     

@@ -2,38 +2,36 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AttrValue {
   
   /** Properties of a ListValue. */
-  @js.native
   trait IListValue extends StObject {
     
     /** ListValue b */
-    var b: js.UndefOr[js.Array[Boolean] | Null] = js.native
+    var b: js.UndefOr[js.Array[Boolean] | Null] = js.undefined
     
     /** ListValue f */
-    var f: js.UndefOr[js.Array[Double] | Null] = js.native
+    var f: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
     /** ListValue func */
-    var func: js.UndefOr[js.Array[INameAttrList] | Null] = js.native
+    var func: js.UndefOr[js.Array[INameAttrList] | Null] = js.undefined
     
     /** ListValue i */
-    var i: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
+    var i: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
     
     /** ListValue s */
-    var s: js.UndefOr[js.Array[String] | Null] = js.native
+    var s: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** ListValue shape */
-    var shape: js.UndefOr[js.Array[ITensorShape] | Null] = js.native
+    var shape: js.UndefOr[js.Array[ITensorShape] | Null] = js.undefined
     
     /** ListValue tensor */
-    var tensor: js.UndefOr[js.Array[ITensor] | Null] = js.native
+    var tensor: js.UndefOr[js.Array[ITensor] | Null] = js.undefined
     
     /** ListValue type */
-    var `type`: js.UndefOr[js.Array[DataType] | Null] = js.native
+    var `type`: js.UndefOr[js.Array[DataType] | Null] = js.undefined
   }
   object IListValue {
     

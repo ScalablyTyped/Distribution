@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds and removes POSIX capabilities from running containers.
   */
-@js.native
 trait Capabilities extends StObject {
   
   /**
     * Added capabilities
     */
-  var add: js.Array[String] = js.native
+  var add: js.Array[String]
   
   /**
     * Removed capabilities
     */
-  var drop: js.Array[String] = js.native
+  var drop: js.Array[String]
 }
 object Capabilities {
   

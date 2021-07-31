@@ -2,31 +2,29 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OptionValueSpec extends StObject {
   
   /**
     * A select with a card carousel GUI, use collection_select instead.
     */
-  var carouselSelect: js.UndefOr[GoogleActionsV2UiElementsCarouselSelect] = js.native
+  var carouselSelect: js.UndefOr[GoogleActionsV2UiElementsCarouselSelect] = js.undefined
   
   /**
     * A select with a card collection GUI
     */
-  var collectionSelect: js.UndefOr[GoogleActionsV2UiElementsCollectionSelect] = js.native
+  var collectionSelect: js.UndefOr[GoogleActionsV2UiElementsCollectionSelect] = js.undefined
   
   /**
     * A select with a list card GUI
     */
-  var listSelect: js.UndefOr[GoogleActionsV2UiElementsListSelect] = js.native
+  var listSelect: js.UndefOr[GoogleActionsV2UiElementsListSelect] = js.undefined
   
   /**
     * A simple select with no associated GUI
     */
-  var simpleSelect: js.UndefOr[GoogleActionsV2SimpleSelect] = js.native
+  var simpleSelect: js.UndefOr[GoogleActionsV2SimpleSelect] = js.undefined
 }
 object GoogleActionsV2OptionValueSpec {
   

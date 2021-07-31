@@ -2,14 +2,12 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaInfo extends StObject {
   
   /** The capture date of the streetside scene. */
-  var cd: js.UndefOr[String] = js.native
+  var cd: js.UndefOr[String] = js.undefined
 }
 object IPanoramaInfo {
   

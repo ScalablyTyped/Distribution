@@ -23,78 +23,78 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a graphic which can be embedded in {@link Text} . */
-@js.native
-trait TextGraphicObject extends BaseFrame {
+trait TextGraphicObject
+  extends StObject
+     with BaseFrame {
   
   /** contains the original size of the bitmap in the graphic object. */
-  var ActualSize: Size = js.native
+  var ActualSize: Size
   
   /** changes the display of the blue color channel. It contains percentage values between -100 and +100. */
-  var AdjustBlue: Double = js.native
+  var AdjustBlue: Double
   
   /** changes the display of contrast. It contains percentage values between -100 and +100. */
-  var AdjustContrast: Double = js.native
+  var AdjustContrast: Double
   
   /** changes the display of the green color channel. It contains percentage values between -100 and +100. */
-  var AdjustGreen: Double = js.native
+  var AdjustGreen: Double
   
   /** changes the display of the luminance. It contains percentage values between -100 and +100. */
-  var AdjustLuminance: Double = js.native
+  var AdjustLuminance: Double
   
   /** changes the display of the red color channel. It contains percentage values between -100 and +100. */
-  var AdjustRed: Double = js.native
+  var AdjustRed: Double
   
   /** the text flows only around the contour of the object. */
-  var ContourOutside: Boolean = js.native
+  var ContourOutside: Boolean
   
   /** contains the contour of the object as PolyPolygon. */
-  var ContourPolyPolygon: PointSequenceSequence = js.native
+  var ContourPolyPolygon: PointSequenceSequence
   
   /** determines the gamma value of the graphic. */
-  var Gamma: Double = js.native
+  var Gamma: Double
   
   /** contains the graphic. */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** contains the ColorMode as {@link com.sun.star.drawing.ColorMode} . */
-  var GraphicColorMode: ColorMode = js.native
+  var GraphicColorMode: ColorMode
   
   /**
     * contains the cropping of the object.
     * @see GraphicCrop
     */
-  var GraphicCrop: typings.activexLibreoffice.com_.sun.star.text.GraphicCrop = js.native
+  var GraphicCrop: typings.activexLibreoffice.com_.sun.star.text.GraphicCrop
   
   /** contains the name of the filter of the background graphic of the object. */
-  var GraphicFilter: String = js.native
+  var GraphicFilter: String
   
   /** determines if the graphic is display in inverted colors. It contains percentage values between -100 and +100. */
-  var GraphicIsInverted: Boolean = js.native
+  var GraphicIsInverted: Boolean
   
   /** contains the URL of the background graphic of the object */
-  var GraphicURL: String = js.native
+  var GraphicURL: String
   
   /** determines if the object is horizontally mirrored on even pages. */
-  var HoriMirroredOnEvenPages: Boolean = js.native
+  var HoriMirroredOnEvenPages: Boolean
   
   /** determines if the object is horizontally mirrored on odd pages. */
-  var HoriMirroredOnOddPages: Boolean = js.native
+  var HoriMirroredOnOddPages: Boolean
   
   /** returns the client-side image map if one is assigned to the object. */
-  var ImageMap: XIndexContainer = js.native
+  var ImageMap: XIndexContainer
   
   /** determines if the text wraps around the contour of the object. */
-  var SurroundContour: Boolean = js.native
+  var SurroundContour: Boolean
   
   /** contains percentage values between -100 and +100. */
-  var Transparency: Double = js.native
+  var Transparency: Double
   
   /** determines if the object is mirrored vertically. */
-  var VertMirrored: Boolean = js.native
+  var VertMirrored: Boolean
 }
 object TextGraphicObject {
   

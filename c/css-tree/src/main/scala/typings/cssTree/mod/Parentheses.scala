@@ -2,25 +2,24 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parentheses
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode] = js.native
+  var children: List[CssNode]
   
   @JSName("type")
-  var type_Parentheses: typings.cssTree.cssTreeStrings.Parentheses = js.native
+  var type_Parentheses: typings.cssTree.cssTreeStrings.Parentheses
 }
 object Parentheses {
   
   @scala.inline
-  def apply(children: List[CssNode], `type`: typings.cssTree.cssTreeStrings.Parentheses): Parentheses = {
+  def apply(children: List[CssNode]): Parentheses = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Parentheses")
     __obj.asInstanceOf[Parentheses]
   }
   

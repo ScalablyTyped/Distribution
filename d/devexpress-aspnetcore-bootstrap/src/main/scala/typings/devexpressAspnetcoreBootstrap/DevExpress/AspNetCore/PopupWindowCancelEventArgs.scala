@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupWindowCancelEventArgs extends CancelEventArgs {
+trait PopupWindowCancelEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val closeReason: BootstrapPopupControlCloseReason = js.native
+  val closeReason: BootstrapPopupControlCloseReason
   
-  val window: BootstrapPopupWindow = js.native
+  val window: BootstrapPopupWindow
 }
 object PopupWindowCancelEventArgs {
   

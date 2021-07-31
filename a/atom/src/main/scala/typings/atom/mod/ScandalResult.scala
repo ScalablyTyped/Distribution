@@ -3,15 +3,13 @@ package typings.atom.mod
 import typings.atom.anon.LeadingContextLines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScandalResult extends StObject {
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var matches: js.Array[LeadingContextLines] = js.native
+  var matches: js.Array[LeadingContextLines]
 }
 object ScandalResult {
   

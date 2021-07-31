@@ -11,8 +11,8 @@ Beautiful and expressive Sparklines component for React
 | Full name          | react-sparklines |
 | Keywords           | react, component, react-component, charts, sparklines, visualization, jsx |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1009770 |
+| # dependents       | 22 |
+| # downloads        | 1323111 |
 | # stars            | 21 |
 
 ## Links

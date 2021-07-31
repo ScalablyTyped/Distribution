@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableAddOnRequest extends StObject {
   
   /**
     * The add-on type to disable.
     */
-  var addOnType: AddOnType = js.native
+  var addOnType: AddOnType
   
   /**
     * The name of the source resource for which to disable the add-on.
     */
-  var resourceName: ResourceName = js.native
+  var resourceName: ResourceName
 }
 object DisableAddOnRequest {
   

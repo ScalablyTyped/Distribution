@@ -2,217 +2,215 @@ package typings.xadesjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllDataObjectsTimeStamp extends StObject {
     
-    var AllDataObjectsTimeStamp: String = js.native
+    var AllDataObjectsTimeStamp: String
     
-    var AllSignedDataObjects: String = js.native
+    var AllSignedDataObjects: String
     
-    var Any: String = js.native
+    var Any: String
     
-    var ArchiveTimeStamp: String = js.native
+    var ArchiveTimeStamp: String
     
-    var AttrAuthoritiesCertValues: String = js.native
+    var AttrAuthoritiesCertValues: String
     
-    var AttributeCertificateRefs: String = js.native
+    var AttributeCertificateRefs: String
     
-    var AttributeRevocationRefs: String = js.native
+    var AttributeRevocationRefs: String
     
-    var AttributeRevocationValues: String = js.native
+    var AttributeRevocationValues: String
     
-    var ByKey: String = js.native
+    var ByKey: String
     
-    var ByName: String = js.native
+    var ByName: String
     
-    var CRLIdentifier: String = js.native
+    var CRLIdentifier: String
     
-    var CRLRef: String = js.native
+    var CRLRef: String
     
-    var CRLRefs: String = js.native
+    var CRLRefs: String
     
-    var CRLValues: String = js.native
+    var CRLValues: String
     
-    var Cert: String = js.native
+    var Cert: String
     
-    var CertDigest: String = js.native
+    var CertDigest: String
     
-    var CertRefs: String = js.native
+    var CertRefs: String
     
-    var CertificateValues: String = js.native
+    var CertificateValues: String
     
-    var CertifiedRole: String = js.native
+    var CertifiedRole: String
     
-    var CertifiedRoles: String = js.native
+    var CertifiedRoles: String
     
-    var City: String = js.native
+    var City: String
     
-    var ClaimedRole: String = js.native
+    var ClaimedRole: String
     
-    var ClaimedRoles: String = js.native
+    var ClaimedRoles: String
     
-    var CommitmentTypeId: String = js.native
+    var CommitmentTypeId: String
     
-    var CommitmentTypeIndication: String = js.native
+    var CommitmentTypeIndication: String
     
-    var CommitmentTypeQualifier: String = js.native
+    var CommitmentTypeQualifier: String
     
-    var CommitmentTypeQualifiers: String = js.native
+    var CommitmentTypeQualifiers: String
     
-    var CompleteCertificateRefs: String = js.native
+    var CompleteCertificateRefs: String
     
-    var CompleteRevocationRefs: String = js.native
+    var CompleteRevocationRefs: String
     
-    var CounterSignature: String = js.native
+    var CounterSignature: String
     
-    var CountryName: String = js.native
+    var CountryName: String
     
-    var DataObjectFormat: String = js.native
+    var DataObjectFormat: String
     
-    var Description: String = js.native
+    var Description: String
     
-    var DigestAlgAndValue: String = js.native
+    var DigestAlgAndValue: String
     
-    var DocumentationReference: String = js.native
+    var DocumentationReference: String
     
-    var DocumentationReferences: String = js.native
+    var DocumentationReferences: String
     
-    var EncapsulatedCRLValue: String = js.native
+    var EncapsulatedCRLValue: String
     
-    var EncapsulatedOCSPValue: String = js.native
+    var EncapsulatedOCSPValue: String
     
-    var EncapsulatedTimeStamp: String = js.native
+    var EncapsulatedTimeStamp: String
     
-    var EncapsulatedX509Certificate: String = js.native
+    var EncapsulatedX509Certificate: String
     
-    var Encoding: String = js.native
+    var Encoding: String
     
-    var ExplicitText: String = js.native
+    var ExplicitText: String
     
-    var HashDataInfo: String = js.native
+    var HashDataInfo: String
     
-    var Identifier: String = js.native
+    var Identifier: String
     
-    var Include: String = js.native
+    var Include: String
     
-    var IndividualDataObjectsTimeStamp: String = js.native
+    var IndividualDataObjectsTimeStamp: String
     
-    var Int: String = js.native
+    var Int: String
     
-    var IssueTime: String = js.native
+    var IssueTime: String
     
-    var Issuer: String = js.native
+    var Issuer: String
     
-    var IssuerSerial: String = js.native
+    var IssuerSerial: String
     
-    var IssuerSerialV2: String = js.native
+    var IssuerSerialV2: String
     
-    var MimeType: String = js.native
+    var MimeType: String
     
-    var NoticeNumbers: String = js.native
+    var NoticeNumbers: String
     
-    var NoticeRef: String = js.native
+    var NoticeRef: String
     
-    var Number: String = js.native
+    var Number: String
     
-    var OCSPIdentifier: String = js.native
+    var OCSPIdentifier: String
     
-    var OCSPRef: String = js.native
+    var OCSPRef: String
     
-    var OCSPRefs: String = js.native
+    var OCSPRefs: String
     
-    var OCSPValues: String = js.native
+    var OCSPValues: String
     
-    var ObjectIdentifier: String = js.native
+    var ObjectIdentifier: String
     
-    var ObjectReference: String = js.native
+    var ObjectReference: String
     
-    var Organization: String = js.native
+    var Organization: String
     
-    var OtherCertificate: String = js.native
+    var OtherCertificate: String
     
-    var OtherRef: String = js.native
+    var OtherRef: String
     
-    var OtherRefs: String = js.native
+    var OtherRefs: String
     
-    var OtherTimeStamp: String = js.native
+    var OtherTimeStamp: String
     
-    var OtherValue: String = js.native
+    var OtherValue: String
     
-    var OtherValues: String = js.native
+    var OtherValues: String
     
-    var PostalCode: String = js.native
+    var PostalCode: String
     
-    var ProducedAt: String = js.native
+    var ProducedAt: String
     
-    var QualifyingProperties: String = js.native
+    var QualifyingProperties: String
     
-    var QualifyingPropertiesReference: String = js.native
+    var QualifyingPropertiesReference: String
     
-    var ReferenceInfo: String = js.native
+    var ReferenceInfo: String
     
-    var RefsOnlyTimeStamp: String = js.native
+    var RefsOnlyTimeStamp: String
     
-    var ResponderID: String = js.native
+    var ResponderID: String
     
-    var RevocationValues: String = js.native
+    var RevocationValues: String
     
-    var SPURI: String = js.native
+    var SPURI: String
     
-    var SPUserNotice: String = js.native
+    var SPUserNotice: String
     
-    var SigAndRefsTimeStamp: String = js.native
+    var SigAndRefsTimeStamp: String
     
-    var SigPolicyHash: String = js.native
+    var SigPolicyHash: String
     
-    var SigPolicyId: String = js.native
+    var SigPolicyId: String
     
-    var SigPolicyQualifier: String = js.native
+    var SigPolicyQualifier: String
     
-    var SigPolicyQualifiers: String = js.native
+    var SigPolicyQualifiers: String
     
-    var SignaturePolicyId: String = js.native
+    var SignaturePolicyId: String
     
-    var SignaturePolicyIdentifier: String = js.native
+    var SignaturePolicyIdentifier: String
     
-    var SignaturePolicyImplied: String = js.native
+    var SignaturePolicyImplied: String
     
-    var SignatureProductionPlace: String = js.native
+    var SignatureProductionPlace: String
     
-    var SignatureTimeStamp: String = js.native
+    var SignatureTimeStamp: String
     
-    var SignedDataObjectProperties: String = js.native
+    var SignedDataObjectProperties: String
     
-    var SignedProperties: String = js.native
+    var SignedProperties: String
     
-    var SignedSignatureProperties: String = js.native
+    var SignedSignatureProperties: String
     
-    var SignerRole: String = js.native
+    var SignerRole: String
     
-    var SigningCertificate: String = js.native
+    var SigningCertificate: String
     
-    var SigningCertificateV2: String = js.native
+    var SigningCertificateV2: String
     
-    var SigningTime: String = js.native
+    var SigningTime: String
     
-    var StateOrProvince: String = js.native
+    var StateOrProvince: String
     
-    var UnsignedDataObjectProperties: String = js.native
+    var UnsignedDataObjectProperties: String
     
-    var UnsignedDataObjectProperty: String = js.native
+    var UnsignedDataObjectProperty: String
     
-    var UnsignedProperties: String = js.native
+    var UnsignedProperties: String
     
-    var UnsignedSignatureProperties: String = js.native
+    var UnsignedSignatureProperties: String
     
-    var XAdESTimeStamp: String = js.native
+    var XAdESTimeStamp: String
     
-    var XMLTimeStamp: String = js.native
+    var XMLTimeStamp: String
   }
   object AllDataObjectsTimeStamp {
     
@@ -636,24 +634,23 @@ object anon {
     }
   }
   
-  @js.native
   trait AttributeNames extends StObject {
     
-    var AttributeNames: Encoding = js.native
+    var AttributeNames: Encoding
     
-    var DefaultPrefix: String = js.native
+    var DefaultPrefix: String
     
-    var ElementNames: AllDataObjectsTimeStamp = js.native
+    var ElementNames: AllDataObjectsTimeStamp
     
     /**
       * The XAdES XML namespace URI
       */
-    var NamespaceURI: String = js.native
+    var NamespaceURI: String
     
     /**
       * Mandated type name for the Uri reference to the SignedProperties element
       */
-    var SignedPropertiesType: String = js.native
+    var SignedPropertiesType: String
   }
   object AttributeNames {
     
@@ -689,24 +686,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var Encoding: String = js.native
+    var Encoding: String
     
-    var Id: String = js.native
+    var Id: String
     
-    var ObjectReference: String = js.native
+    var ObjectReference: String
     
-    var Qualifier: String = js.native
+    var Qualifier: String
     
-    var ReferencedData: String = js.native
+    var ReferencedData: String
     
-    var Target: String = js.native
+    var Target: String
     
-    var URI: String = js.native
+    var URI: String
     
-    var Uri: String = js.native
+    var Uri: String
   }
   object Encoding {
     

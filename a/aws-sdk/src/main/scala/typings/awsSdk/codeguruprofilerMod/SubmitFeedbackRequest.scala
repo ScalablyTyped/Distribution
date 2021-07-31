@@ -2,31 +2,29 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitFeedbackRequest extends StObject {
   
   /**
     * The universally unique identifier (UUID) of the  AnomalyInstance  object that is included in the analysis data.
     */
-  var anomalyInstanceId: AnomalyInstanceId = js.native
+  var anomalyInstanceId: AnomalyInstanceId
   
   /**
     * Optional feedback about this anomaly.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the profiling group that is associated with the analysis data.
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
   
   /**
     *  The feedback tpye. Thee are two valid values, Positive and Negative. 
     */
-  var `type`: FeedbackType = js.native
+  var `type`: FeedbackType
 }
 object SubmitFeedbackRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentGroupList extends StObject {
   
   /**
     * An array that defines the set of segment criteria to evaluate when handling segment groups for the segment.
     */
-  var Groups: js.UndefOr[ListOfSegmentGroup] = js.native
+  var Groups: js.UndefOr[ListOfSegmentGroup] = js.undefined
   
   /**
     * Specifies how to handle multiple segment groups for the segment. For example, if the segment includes three segment groups, whether the resulting segment includes endpoints that match all, any, or none of the segment groups.
     */
-  var Include: js.UndefOr[typings.awsSdk.pinpointMod.Include] = js.native
+  var Include: js.UndefOr[typings.awsSdk.pinpointMod.Include] = js.undefined
 }
 object SegmentGroupList {
   

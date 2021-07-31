@@ -3,10 +3,8 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSourceInstanceProperties extends StObject {
   
   /**
@@ -17,49 +15,49 @@ trait SchemaSourceInstanceProperties extends StObject {
     * resource, specify true. If unsure, leave this set to false. See the
     * Enable IP forwarding documentation for more information.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.native
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the instance created from the machine image should be protected
     * against deletion.
     */
-  var deletionProtection: js.UndefOr[Boolean] = js.native
+  var deletionProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional text description for the instances that are created from this
     * machine image.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * An array of disks that are associated with the instances that are created
     * from this machine image.
     */
-  var disks: js.UndefOr[js.Array[SchemaSavedAttachedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaSavedAttachedDisk]] = js.undefined
   
   /**
     * A list of guest accelerator cards&#39; type and count to use for
     * instances created from the machine image.
     */
-  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
     * Labels to apply to instances that are created from this machine image.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The machine type to use for instances that are created from this machine
     * image.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs to assign to instances that are created from
     * this machine image. These pairs can consist of custom metadata or
     * predefined keys. See Project and instance metadata for more information.
     */
-  var metadata: js.UndefOr[SchemaMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
     * Minimum cpu/platform to be used by this instance. The instance may be
@@ -68,18 +66,18 @@ trait SchemaSourceInstanceProperties extends StObject {
     * Haswell&quot; or minCpuPlatform: &quot;Intel Sandy Bridge&quot;. For more
     * information, read Specifying a Minimum CPU Platform.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * An array of network access configurations for this interface.
     */
-  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.native
+  var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.undefined
   
   /**
     * Specifies the scheduling options for the instances that are created from
     * this machine image.
     */
-  var scheduling: js.UndefOr[SchemaScheduling] = js.native
+  var scheduling: js.UndefOr[SchemaScheduling] = js.undefined
   
   /**
     * A list of service accounts with specified scopes. Access tokens for these
@@ -87,7 +85,7 @@ trait SchemaSourceInstanceProperties extends StObject {
     * this machine image. Use metadata queries to obtain the access tokens for
     * these instances.
     */
-  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.native
+  var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
   /**
     * A list of tags to apply to the instances that are created from this
@@ -95,7 +93,7 @@ trait SchemaSourceInstanceProperties extends StObject {
     * firewalls. The setTags method can modify this list of tags. Each tag
     * within the list must comply with RFC1035.
     */
-  var tags: js.UndefOr[SchemaTags] = js.native
+  var tags: js.UndefOr[SchemaTags] = js.undefined
 }
 object SchemaSourceInstanceProperties {
   

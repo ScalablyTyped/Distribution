@@ -3,7 +3,6 @@ package typings.arrive
 import typings.arrive.mod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,436 +34,616 @@ object mod {
       def unbindAllLeave_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbindAllLeave")(x.asInstanceOf[js.Any])
     }
     
-    @js.native
     trait Document extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object Document {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): Document = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[Document]
+      }
+      
+      @scala.inline
+      implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
     
-    @js.native
     trait Element extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object Element {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): Element = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[Element]
+      }
+      
+      @scala.inline
+      implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
     
-    @js.native
     trait HTMLCollectionBase extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object HTMLCollectionBase {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): HTMLCollectionBase = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[HTMLCollectionBase]
+      }
+      
+      @scala.inline
+      implicit class HTMLCollectionBaseMutableBuilder[Self <: HTMLCollectionBase] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
     
-    @js.native
     trait JQuery extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object JQuery {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): JQuery = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[JQuery]
+      }
+      
+      @scala.inline
+      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
     
-    @js.native
     trait NodeList extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object NodeList {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): NodeList = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[NodeList]
+      }
+      
+      @scala.inline
+      implicit class NodeListMutableBuilder[Self <: NodeList] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
     
-    @js.native
     trait Window extends StObject {
       
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def arrive(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def arrive(element: String, handlerOrOptions: Options): Unit = js.native
+      ): Unit
+      def arrive(element: String, handlerOrOptions: Options): Unit
       def arrive(
         element: String,
         handlerOrOptions: Options,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       @JSName("arrive")
-      var arrive_Original: ArriveSignature = js.native
+      var arrive_Original: ArriveSignature
       
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
       def leave(
         element: String,
         handlerOrOptions: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction0[/* this */ Element, Unit]
-      ): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options): Unit = js.native
-      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit = js.native
+      ): Unit
+      def leave(element: String, handlerOrOptions: Options): Unit
+      def leave(element: String, handlerOrOptions: Options, handler: js.ThisFunction0[/* this */ Element, Unit]): Unit
       @JSName("leave")
-      var leave_Original: LeaveSignature = js.native
+      var leave_Original: LeaveSignature
       
-      def unbindArrive(): Unit = js.native
-      def unbindArrive(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: String): Unit = js.native
+      def unbindArrive(): Unit
+      def unbindArrive(elementOrHandler: String): Unit
       def unbindArrive(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindArrive(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindArrive(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindArrive")
-      var unbindArrive_Original: UnbindArriveSignature = js.native
+      var unbindArrive_Original: UnbindArriveSignature
       
-      def unbindLeave(): Unit = js.native
-      def unbindLeave(
-        elementOrHandler: js.UndefOr[scala.Nothing],
-        handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: String): Unit = js.native
+      def unbindLeave(): Unit
+      def unbindLeave(elementOrHandler: String): Unit
       def unbindLeave(
         elementOrHandler: String,
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
-      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       def unbindLeave(
         elementOrHandler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit],
         handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]
-      ): Unit = js.native
+      ): Unit
+      def unbindLeave(elementOrHandler: Unit, handler: js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]): Unit
       @JSName("unbindLeave")
-      var unbindLeave_Original: UnbindLeaveSignature = js.native
+      var unbindLeave_Original: UnbindLeaveSignature
+    }
+    object Window {
+      
+      @scala.inline
+      def apply(
+        arrive: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        leave: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit,
+        unbindArrive: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit,
+        unbindLeave: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+      ): Window = {
+        val __obj = js.Dynamic.literal(arrive = js.Any.fromFunction3(arrive), leave = js.Any.fromFunction3(leave), unbindArrive = js.Any.fromFunction2(unbindArrive), unbindLeave = js.Any.fromFunction2(unbindLeave))
+        __obj.asInstanceOf[Window]
+      }
+      
+      @scala.inline
+      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setArrive(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "arrive", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setLeave(
+          value: (/* element */ String, /* handlerOrOptions */ (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]) | Options, /* handler */ js.UndefOr[js.ThisFunction0[/* this */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setUnbindArrive(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindArrive", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setUnbindLeave(
+          value: (/* elementOrHandler */ js.UndefOr[String | (js.ThisFunction1[/* this */ Element, /* element */ Element, Unit])], /* handler */ js.UndefOr[js.ThisFunction1[/* this */ Element, /* element */ Element, Unit]]) => Unit
+        ): Self = StObject.set(x, "unbindLeave", js.Any.fromFunction2(value))
+      }
     }
   }
   
@@ -482,14 +661,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var existing: js.UndefOr[Boolean] = js.native
+    var existing: js.UndefOr[Boolean] = js.undefined
     
-    var fireOnAttributesModification: js.UndefOr[Boolean] = js.native
+    var fireOnAttributesModification: js.UndefOr[Boolean] = js.undefined
     
-    var onceOnly: js.UndefOr[Boolean] = js.native
+    var onceOnly: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

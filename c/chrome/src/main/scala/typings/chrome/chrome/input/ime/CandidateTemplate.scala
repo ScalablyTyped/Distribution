@@ -2,41 +2,39 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidateTemplate extends StObject {
   
   /**
     * Optional.
     * Additional text describing the candidate
     */
-  var annotation: js.UndefOr[String] = js.native
+  var annotation: js.UndefOr[String] = js.undefined
   
   /** The candidate */
-  var candidate: String = js.native
+  var candidate: String
   
   /** The candidate's id */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Optional.
     * Short string displayed to next to the candidate, often the shortcut key or index
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.
     * The id to add these candidates under
     */
-  var parentId: js.UndefOr[Double] = js.native
+  var parentId: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
     * The usage or detail description of word.
     */
-  var usage: js.UndefOr[CandidateUsage] = js.native
+  var usage: js.UndefOr[CandidateUsage] = js.undefined
 }
 object CandidateTemplate {
   

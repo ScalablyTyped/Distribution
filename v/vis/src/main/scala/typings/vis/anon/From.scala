@@ -3,17 +3,15 @@ package typings.vis.anon
 import typings.vis.mod.ArrowHead
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From extends StObject {
   
-  var from: js.UndefOr[Boolean | ArrowHead] = js.native
+  var from: js.UndefOr[Boolean | ArrowHead] = js.undefined
   
-  var middle: js.UndefOr[Boolean | ArrowHead] = js.native
+  var middle: js.UndefOr[Boolean | ArrowHead] = js.undefined
   
-  var to: js.UndefOr[Boolean | ArrowHead] = js.native
+  var to: js.UndefOr[Boolean | ArrowHead] = js.undefined
 }
 object From {
   

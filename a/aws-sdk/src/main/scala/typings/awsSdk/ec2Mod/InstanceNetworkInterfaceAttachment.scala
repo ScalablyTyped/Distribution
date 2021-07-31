@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceNetworkInterfaceAttachment extends StObject {
   
   /**
     * The time stamp when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[DateTime] = js.native
+  var AttachTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the network interface attachment.
     */
-  var AttachmentId: js.UndefOr[String] = js.native
+  var AttachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the network interface is deleted when the instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The index of the device on the instance for the network interface attachment.
     */
-  var DeviceIndex: js.UndefOr[Integer] = js.native
+  var DeviceIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The index of the network card.
     */
-  var NetworkCardIndex: js.UndefOr[Integer] = js.native
+  var NetworkCardIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The attachment state.
     */
-  var Status: js.UndefOr[AttachmentStatus] = js.native
+  var Status: js.UndefOr[AttachmentStatus] = js.undefined
 }
 object InstanceNetworkInterfaceAttachment {
   

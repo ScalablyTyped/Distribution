@@ -8,7 +8,6 @@ import typings.wordpressCustomizeBrowser.notificationsMod.Notifications
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
@@ -21,7 +20,7 @@ object containerMod {
     
     def _animateChangeExpanded(completeCallback: js.Function0[Unit]): Unit = js.native
     
-    def _children(parentType: String, childType: String): js.Array[_] = js.native
+    def _children(parentType: String, childType: String): js.Array[js.Any] = js.native
     
     def _toggleActive(active: Boolean): Boolean = js.native
     def _toggleActive(active: Boolean, params: ContainerArguments): Boolean = js.native
@@ -71,9 +70,9 @@ object containerMod {
     var headContainer: js.UndefOr[JQuery[HTMLElement]] = js.native
     
     def initialize(): Unit = js.native
-    def initialize(id: js.UndefOr[scala.Nothing], options: ContainerParams): Unit = js.native
     def initialize(id: String): Unit = js.native
     def initialize(id: String, options: ContainerParams): Unit = js.native
+    def initialize(id: Unit, options: ContainerParams): Unit = js.native
     
     def isContextuallyActive(): Boolean | scala.Nothing = js.native
     
@@ -106,14 +105,13 @@ object containerMod {
     def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ContainerArguments extends StObject {
     
-    var completeCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var completeCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var duration: js.UndefOr[String | Double] = js.native
+    var duration: js.UndefOr[String | Double] = js.undefined
     
-    var unchanged: js.UndefOr[Boolean] = js.native
+    var unchanged: js.UndefOr[Boolean] = js.undefined
   }
   object ContainerArguments {
     
@@ -146,15 +144,14 @@ object containerMod {
     }
   }
   
-  @js.native
   trait ContainerDeferred extends StObject {
     
-    var embedded: Deferred[_, _, _] = js.native
+    var embedded: Deferred[js.Any, js.Any, js.Any]
   }
   object ContainerDeferred {
     
     @scala.inline
-    def apply(embedded: Deferred[_, _, _]): ContainerDeferred = {
+    def apply(embedded: Deferred[js.Any, js.Any, js.Any]): ContainerDeferred = {
       val __obj = js.Dynamic.literal(embedded = embedded.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerDeferred]
     }
@@ -163,28 +160,27 @@ object containerMod {
     implicit class ContainerDeferredMutableBuilder[Self <: ContainerDeferred] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEmbedded(value: Deferred[_, _, _]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
+      def setEmbedded(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ContainerParams extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[String | Null] = js.native
+    var content: js.UndefOr[String | Null] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var instanceNumber: js.UndefOr[Double | Null] = js.native
+    var instanceNumber: js.UndefOr[Double | Null] = js.undefined
     
-    var params: js.UndefOr[ContainerParams] = js.native
+    var params: js.UndefOr[ContainerParams] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContainerParams {
     

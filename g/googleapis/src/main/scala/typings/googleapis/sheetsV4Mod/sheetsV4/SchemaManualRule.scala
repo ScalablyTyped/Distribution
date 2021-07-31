@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,14 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Central   |             106.3 |     | Eastern   |             151.9 |     |
   * Mountain  |              17.4 |     ... +-----------+-------------------+
   */
-@js.native
 trait SchemaManualRule extends StObject {
   
   /**
     * The list of group names and the corresponding items from the source data
     * that map to each group name.
     */
-  var groups: js.UndefOr[js.Array[SchemaManualRuleGroup]] = js.native
+  var groups: js.UndefOr[js.Array[SchemaManualRuleGroup]] = js.undefined
 }
 object SchemaManualRule {
   

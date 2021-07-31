@@ -2,32 +2,26 @@ package typings.cadesplugin.CAPICOM
 
 import typings.cadesplugin.cadespluginStrings.AddressBook
 import typings.cadesplugin.cadespluginStrings.Ca
-import typings.cadesplugin.cadespluginStrings.My
 import typings.cadesplugin.cadespluginStrings.Root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CAPICOM_STORE_NAME extends StoreNamePlugin {
+trait CAPICOM_STORE_NAME
+  extends StObject
+     with StoreNamePlugin {
   
-  val CAPICOM_CA_STORE: Ca = js.native
+  val CAPICOM_CA_STORE: Ca
   
-  val CAPICOM_OTHER_STORE: AddressBook = js.native
+  val CAPICOM_OTHER_STORE: AddressBook
   
-  val CAPICOM_ROOT_STORE: Root = js.native
+  val CAPICOM_ROOT_STORE: Root
 }
 object CAPICOM_STORE_NAME {
   
   @scala.inline
-  def apply(
-    CAPICOM_CA_STORE: Ca,
-    CAPICOM_MY_STORE: My,
-    CAPICOM_OTHER_STORE: AddressBook,
-    CAPICOM_ROOT_STORE: Root
-  ): CAPICOM_STORE_NAME = {
-    val __obj = js.Dynamic.literal(CAPICOM_CA_STORE = CAPICOM_CA_STORE.asInstanceOf[js.Any], CAPICOM_MY_STORE = CAPICOM_MY_STORE.asInstanceOf[js.Any], CAPICOM_OTHER_STORE = CAPICOM_OTHER_STORE.asInstanceOf[js.Any], CAPICOM_ROOT_STORE = CAPICOM_ROOT_STORE.asInstanceOf[js.Any])
+  def apply(): CAPICOM_STORE_NAME = {
+    val __obj = js.Dynamic.literal(CAPICOM_CA_STORE = "Ca", CAPICOM_MY_STORE = "My", CAPICOM_OTHER_STORE = "AddressBook", CAPICOM_ROOT_STORE = "Root")
     __obj.asInstanceOf[CAPICOM_STORE_NAME]
   }
   

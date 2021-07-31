@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DocListEntry...
   */
-@js.native
 trait IDocListEntry extends StObject {
   
   /**
     * Not used.
     */
-  var qConnectedUsers: Double = js.native
+  var qConnectedUsers: Double
   
   /**
     * Identifier of the app.
@@ -22,51 +20,51 @@ trait IDocListEntry extends StObject {
     * - In Qlik Sense Desktop, the identifier is the path and name of the app
     * - In Qlik Sense Enterprise, the identifier is the app's GUID.
     */
-  var qDocId: String = js.native
+  var qDocId: String
   
   /**
     * Name of the app.
     */
-  var qDocName: String = js.native
+  var qDocName: String
   
   /**
     * Size of remote app.
     * This property is used only with Qlik Sense Desktop.
     * It is set to 0 for Qlik Sense Enterprise.
     */
-  var qFileSize: Double = js.native
+  var qFileSize: Double
   
   /**
     * Last modified time stamp of the app.
     * This property is used only with Qlik Sense Desktop.
     * It is set to 0 for Qlik Sense Enterprise.
     */
-  var qFileTime: Double = js.native
+  var qFileTime: Double
   
   /**
     * Last reload time of the app.
     */
-  var qLastReloadTime: String = js.native
+  var qLastReloadTime: String
   
   /**
     * Meta data related to the app.
     */
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
   
   /**
     * If set to true, the app is read-only.
     */
-  var qReadOnly: Boolean = js.native
+  var qReadOnly: Boolean
   
   /**
     * Thumbnail of the app.
     */
-  var qThumbnail: IStaticContentUrl = js.native
+  var qThumbnail: IStaticContentUrl
   
   /**
     * Title of the app.
     */
-  var qTitle: String = js.native
+  var qTitle: String
 }
 object IDocListEntry {
   

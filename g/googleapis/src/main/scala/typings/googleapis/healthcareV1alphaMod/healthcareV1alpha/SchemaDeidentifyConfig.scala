@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://tools.ietf.org/html/rfc6838 media type or subtype. Configs are
   * applied in a nested manner at runtime.
   */
-@js.native
 trait SchemaDeidentifyConfig extends StObject {
   
   /**
     * Configures de-id of application/DICOM content.
     */
-  var dicom: js.UndefOr[SchemaDicomConfig] = js.native
+  var dicom: js.UndefOr[SchemaDicomConfig] = js.undefined
   
   /**
     * Configures de-id of application/FHIR content.
     */
-  var fhir: js.UndefOr[SchemaFhirConfig] = js.native
+  var fhir: js.UndefOr[SchemaFhirConfig] = js.undefined
   
   /**
     * Configures de-identification of image pixels wherever they are found in
     * the source_dataset.
     */
-  var image: js.UndefOr[SchemaImageConfig] = js.native
+  var image: js.UndefOr[SchemaImageConfig] = js.undefined
 }
 object SchemaDeidentifyConfig {
   

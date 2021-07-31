@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.UpdateShader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -271,7 +270,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * * useMorphNormal: if morphing code should be generated to morph normals.
   */
 @js.native
-trait StandardMaterial extends Material {
+trait StandardMaterial
+  extends StObject
+     with Material {
   
   /**
     * used to fade out materials when {@link pc.Material#opacityFadesSpecular} is set to false.

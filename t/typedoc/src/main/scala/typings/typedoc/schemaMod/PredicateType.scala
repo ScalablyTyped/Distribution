@@ -2,24 +2,24 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.PredicateType, 'type' | 'name' | 'asserts' | 'targetType'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait PredicateType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait PredicateType
+  extends StObject
+     with SomeType {
   
-  var asserts: ModelToObject[Boolean] | Boolean = js.native
+  var asserts: ModelToObject[Boolean] | Boolean
   
-  var name: ModelToObject[String] | String = js.native
+  var name: ModelToObject[String] | String
   
   var targetType: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
-  ] = js.native
+  ] = js.undefined
   
-  var `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String) = js.native
+  var `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
 }
 object PredicateType {
   

@@ -2,31 +2,29 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for the postal address of a building in Directory API.
   */
-@js.native
 trait SchemaBuildingAddress extends StObject {
   
   /**
     * Unstructured address lines describing the lower levels of an address.
     */
-  var addressLines: js.UndefOr[js.Array[String]] = js.native
+  var addressLines: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Highest administrative subdivision which is used for postal
     * addresses of a country or region.
     */
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. BCP-47 language code of the contents of this address (if
     * known).
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Generally refers to the city/town portion of the address.
@@ -34,22 +32,22 @@ trait SchemaBuildingAddress extends StObject {
     * localities are not well defined or do not fit into this structure well,
     * leave locality empty and use addressLines.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Postal code of the address.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. CLDR region code of the country/region of the address.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Sublocality of the address.
     */
-  var sublocality: js.UndefOr[String] = js.native
+  var sublocality: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildingAddress {
   

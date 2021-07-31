@@ -3,7 +3,6 @@ package typings.dot
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,25 +11,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("dot", "compile")
-  @js.native
-  def compile(tmpl: String): RenderFunction = js.native
-  @JSImport("dot", "compile")
-  @js.native
-  def compile(tmpl: String, `def`: js.Object): RenderFunction = js.native
+  @scala.inline
+  def compile(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
+  @scala.inline
+  def compile(tmpl: String, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
-  @JSImport("dot", "template")
-  @js.native
-  def template(tmpl: String): RenderFunction = js.native
-  @JSImport("dot", "template")
-  @js.native
-  def template(tmpl: String, c: js.UndefOr[scala.Nothing], `def`: js.Object): RenderFunction = js.native
-  @JSImport("dot", "template")
-  @js.native
-  def template(tmpl: String, c: TemplateSettings_): RenderFunction = js.native
-  @JSImport("dot", "template")
-  @js.native
-  def template(tmpl: String, c: TemplateSettings_, `def`: js.Object): RenderFunction = js.native
+  @scala.inline
+  def template(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
+  @scala.inline
+  def template(tmpl: String, c: Unit, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  @scala.inline
+  def template(tmpl: String, c: TemplateSettings_): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  @scala.inline
+  def template(tmpl: String, c: TemplateSettings_, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
   @JSImport("dot", "templateSettings")
   @js.native
@@ -42,36 +35,39 @@ object mod {
   @js.native
   val version: String = js.native
   
-  type RenderFunction = js.Function1[/* repeated */ js.Any, String]
-  
   @js.native
+  trait RenderFunction extends StObject {
+    
+    def apply(args: js.Any*): String = js.native
+  }
+  
   trait TemplateSettings_ extends StObject {
     
-    var append: Boolean = js.native
+    var append: Boolean
     
-    var conditional: RegExp = js.native
+    var conditional: RegExp
     
-    var define: RegExp = js.native
+    var define: RegExp
     
-    var defineParams: RegExp = js.native
+    var defineParams: RegExp
     
-    var encode: RegExp = js.native
+    var encode: RegExp
     
-    var evaluate: RegExp = js.native
+    var evaluate: RegExp
     
-    var interpolate: RegExp = js.native
+    var interpolate: RegExp
     
-    var iterate: RegExp = js.native
+    var iterate: RegExp
     
-    var selfcontained: Boolean = js.native
+    var selfcontained: Boolean
     
-    var strip: Boolean = js.native
+    var strip: Boolean
     
-    var use: RegExp = js.native
+    var use: RegExp
     
-    var useParams: RegExp = js.native
+    var useParams: RegExp
     
-    var varname: String = js.native
+    var varname: String
   }
   object TemplateSettings_ {
     
@@ -141,10 +137,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait String extends StObject {
       
-      def encodeHTML(): java.lang.String = js.native
+      def encodeHTML(): java.lang.String
     }
     object String {
       

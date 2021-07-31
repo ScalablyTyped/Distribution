@@ -2,41 +2,39 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current status of a Replica.
   */
-@js.native
 trait SchemaReplicaStatus extends StObject {
   
   /**
     * [Output Only] Human-readable details about the current state of the
     * replica
     */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The state of the Replica.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The template used to build the replica.
     */
-  var templateVersion: js.UndefOr[String] = js.native
+  var templateVersion: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Link to the virtual machine that this Replica represents.
     */
-  var vmLink: js.UndefOr[String] = js.native
+  var vmLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The time that this Replica got to the RUNNING state, in RFC
     * 3339 format. If the start time is unknown, UNKNOWN is returned.
     */
-  var vmStartTime: js.UndefOr[String] = js.native
+  var vmStartTime: js.UndefOr[String] = js.undefined
 }
 object SchemaReplicaStatus {
   

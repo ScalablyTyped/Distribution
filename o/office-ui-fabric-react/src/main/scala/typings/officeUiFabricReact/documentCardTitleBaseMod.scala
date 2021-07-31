@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleP
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardTitleBaseMod {
@@ -45,22 +44,21 @@ object documentCardTitleBaseMod {
     def componentWillUnmount_MDocumentCardTitleBase(): Unit = js.native
   }
   
-  @js.native
   trait IDocumentCardTitleState extends StObject {
     
-    var clientWidth: js.UndefOr[Double] = js.native
+    var clientWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * In measuring, it will render a same style text with whiteSpace: 'nowrap', to get overflow rate.
       * So that the logic can predict truncated text well.
       */
-    var needMeasurement: Boolean = js.native
+    var needMeasurement: Boolean
     
-    var previousTitle: String = js.native
+    var previousTitle: String
     
-    var truncatedTitleFirstPiece: js.UndefOr[String] = js.native
+    var truncatedTitleFirstPiece: js.UndefOr[String] = js.undefined
     
-    var truncatedTitleSecondPiece: js.UndefOr[String] = js.native
+    var truncatedTitleSecondPiece: js.UndefOr[String] = js.undefined
   }
   object IDocumentCardTitleState {
     

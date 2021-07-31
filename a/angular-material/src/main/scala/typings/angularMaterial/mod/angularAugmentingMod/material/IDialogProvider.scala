@@ -3,13 +3,11 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 import typings.angularMaterial.anon.Methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDialogProvider extends StObject {
   
-  def addPreset(presetName: String, presetOptions: Methods): IDialogProvider = js.native
+  def addPreset(presetName: String, presetOptions: Methods): IDialogProvider
 }
 object IDialogProvider {
   

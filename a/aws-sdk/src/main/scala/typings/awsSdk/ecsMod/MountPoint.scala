@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountPoint extends StObject {
   
   /**
     * The path on the container to mount the host volume at.
     */
-  var containerPath: js.UndefOr[String] = js.native
+  var containerPath: js.UndefOr[String] = js.undefined
   
   /**
     * If this value is true, the container has read-only access to the volume. If this value is false, then the container can write to the volume. The default value is false.
     */
-  var readOnly: js.UndefOr[BoxedBoolean] = js.native
+  var readOnly: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * The name of the volume to mount. Must be a volume name referenced in the name parameter of task definition volume.
     */
-  var sourceVolume: js.UndefOr[String] = js.native
+  var sourceVolume: js.UndefOr[String] = js.undefined
 }
 object MountPoint {
   

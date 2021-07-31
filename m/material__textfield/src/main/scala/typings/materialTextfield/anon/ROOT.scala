@@ -2,13 +2,11 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ROOT extends StObject {
   
-  var ROOT: String = js.native
+  var ROOT: String
 }
 object ROOT {
   

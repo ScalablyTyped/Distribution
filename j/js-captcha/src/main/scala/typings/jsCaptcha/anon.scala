@@ -2,25 +2,23 @@ package typings.jsCaptcha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FillStyle extends StObject {
     
-    var fillStyle: js.UndefOr[String] = js.native
+    var fillStyle: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textBaseline: js.UndefOr[String] = js.native
+    var textBaseline: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object FillStyle {
     

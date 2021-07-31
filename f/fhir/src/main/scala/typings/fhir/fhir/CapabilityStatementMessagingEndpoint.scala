@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Where messages should be sent
   */
-@js.native
-trait CapabilityStatementMessagingEndpoint extends BackboneElement {
+trait CapabilityStatementMessagingEndpoint
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'address'.
     */
-  var _address: js.UndefOr[Element] = js.native
+  var _address: js.UndefOr[Element] = js.undefined
   
   /**
     * Network address or identifier of the end-point
     */
-  var address: uri = js.native
+  var address: uri
   
   /**
     * http | ftp | mllp +
     */
-  var protocol: Coding = js.native
+  var protocol: Coding
 }
 object CapabilityStatementMessagingEndpoint {
   

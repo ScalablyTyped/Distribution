@@ -7,25 +7,27 @@ import typings.reactIcons.anon.IconBasePropsattrundefine
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconBaseMod {
   
-  @JSImport("react-icons/lib/esm/iconBase", "GenIcon")
+  @JSImport("react-icons/lib/esm/iconBase", JSImport.Namespace)
   @js.native
-  def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-icons/lib/esm/iconBase", "IconBase")
-  @js.native
-  def IconBase(props: IconBasePropsattrundefine): Element = js.native
+  @scala.inline
+  def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenIcon")(data.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ IconBaseProps, Element]]
   
-  @js.native
-  trait IconBaseProps extends SVGAttributes[SVGElement] {
+  @scala.inline
+  def IconBase(props: IconBasePropsattrundefine): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  trait IconBaseProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IconBaseProps {
     
@@ -52,14 +54,13 @@ object iconBaseMod {
     }
   }
   
-  @js.native
   trait IconTree extends StObject {
     
-    var attr: StringDictionary[String] = js.native
+    var attr: StringDictionary[String]
     
-    var child: js.Array[IconTree] = js.native
+    var child: js.Array[IconTree]
     
-    var tag: String = js.native
+    var tag: String
   }
   object IconTree {
     

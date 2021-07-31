@@ -11,8 +11,8 @@ jsreport recipe which is rendering pdf from html using headless chrome
 | Full name          | jsreport-chrome-pdf |
 | Keywords           | jsreport, pdf |
 | # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 127203 |
+| # dependents       | 5 |
+| # downloads        | 150553 |
 | # stars            | 0 |
 
 ## Links

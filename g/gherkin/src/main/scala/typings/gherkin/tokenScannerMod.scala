@@ -2,25 +2,34 @@ package typings.gherkin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenScannerMod {
   
   @JSImport("gherkin/dist/src/TokenScanner", JSImport.Default)
   @js.native
-  class default protected () extends TokenScanner {
+  class default protected ()
+    extends StObject
+       with TokenScanner {
     def this(source: String) = this()
-  }
-  
-  @js.native
-  trait TokenScanner extends StObject {
     
+    /* CompleteClass */
     var lineNumber: js.Any = js.native
     
+    /* CompleteClass */
     var lines: js.Any = js.native
     
-    def read(): typings.gherkin.tokenMod.default = js.native
+    /* CompleteClass */
+    override def read(): typings.gherkin.tokenMod.default = js.native
+  }
+  
+  trait TokenScanner extends StObject {
+    
+    var lineNumber: js.Any
+    
+    var lines: js.Any
+    
+    def read(): typings.gherkin.tokenMod.default
   }
   object TokenScanner {
     

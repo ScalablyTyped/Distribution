@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectClassesAdmin extends StObject {
   
-  def Add(Index: Double, ObjectClassAdmin: IObjectClassAdmin): Unit = js.native
+  def Add(Index: Double, ObjectClassAdmin: IObjectClassAdmin): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IObjectClassAdmin = js.native
+  def Item(Index: Double): IObjectClassAdmin
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IObjectClassesAdmin {
   

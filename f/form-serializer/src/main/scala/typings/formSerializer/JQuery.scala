@@ -2,21 +2,19 @@ package typings.formSerializer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
   /**
     * Serializes the selected form into JSON.
     */
-  def serializeJSON(): String = js.native
+  def serializeJSON(): String
   
   /**
     * Serializes the selected form into a JavaScript object.
     */
-  def serializeObject(): js.Object = js.native
+  def serializeObject(): js.Object
 }
 object JQuery {
   

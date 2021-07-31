@@ -2,24 +2,22 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to create a new role.
   */
-@js.native
 trait SchemaCreateRoleRequest extends StObject {
   
   /**
     * The Role resource to create.
     */
-  var role: js.UndefOr[SchemaRole] = js.native
+  var role: js.UndefOr[SchemaRole] = js.undefined
   
   /**
     * The role id to use for this role.
     */
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateRoleRequest {
   

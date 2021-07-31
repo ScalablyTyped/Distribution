@@ -13,7 +13,6 @@ import typings.react.mod.ReactNode
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod extends Shortcut {
@@ -25,7 +24,6 @@ object textMod extends Shortcut {
   @js.native
   val default: FC[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
     /**
@@ -33,52 +31,52 @@ object textMod extends Shortcut {
       */
     val backgroundColor: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ _, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ js.Any, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Make the text bold.
       */
-    val bold: js.UndefOr[Boolean] = js.native
+    val bold: js.UndefOr[Boolean] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Change text color. Ink uses chalk under the hood, so all its functionality is supported.
       */
     val color: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Dim the color (emit a small amount of light).
       */
-    val dimColor: js.UndefOr[Boolean] = js.native
+    val dimColor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Inverse background and foreground colors.
       */
-    val inverse: js.UndefOr[Boolean] = js.native
+    val inverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the text italic.
       */
-    val italic: js.UndefOr[Boolean] = js.native
+    val italic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the text crossed with a line.
       */
-    val strikethrough: js.UndefOr[Boolean] = js.native
+    val strikethrough: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the text underlined.
       */
-    val underline: js.UndefOr[Boolean] = js.native
+    val underline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This property tells Ink to wrap or truncate text if its width is larger than container.
@@ -87,7 +85,7 @@ object textMod extends Shortcut {
       */
     val wrap: js.UndefOr[
         typings.ink.inkStrings.wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
-      ] = js.native
+      ] = js.undefined
   }
   object Props {
     
@@ -103,7 +101,7 @@ object textMod extends Shortcut {
       @scala.inline
       def setBackgroundColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ _, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ js.Any, 
               String
             ]
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
@@ -126,7 +124,7 @@ object textMod extends Shortcut {
       @scala.inline
       def setColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
               String
             ]
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])

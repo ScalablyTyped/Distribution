@@ -2,16 +2,14 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConnectionInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the connection to be deleted.  The ARN is never reused if the connection is deleted. 
     */
-  var ConnectionArn: typings.awsSdk.codestarconnectionsMod.ConnectionArn = js.native
+  var ConnectionArn: typings.awsSdk.codestarconnectionsMod.ConnectionArn
 }
 object DeleteConnectionInput {
   

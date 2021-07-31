@@ -5,13 +5,14 @@ import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.ownerRefMod.OwnerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesUserMod {
   
   @js.native
-  trait MyUser extends User {
+  trait MyUser
+    extends StObject
+       with User {
     
     var collaborators: Double = js.native
     
@@ -29,7 +30,9 @@ object interfacesUserMod {
   }
   
   @js.native
-  trait User extends UserSummary {
+  trait User
+    extends StObject
+       with UserSummary {
     
     var blog: String = js.native
     
@@ -55,7 +58,9 @@ object interfacesUserMod {
   }
   
   @js.native
-  trait UserSummary extends OwnerRef {
+  trait UserSummary
+    extends StObject
+       with OwnerRef {
     
     var avatarUri: String = js.native
     

@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicalOfficeAddress extends StObject {
   
   // The city.
-  var city: js.UndefOr[NullableOption[String]] = js.native
+  var city: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The country or region. It's a free-format string value, for example, 'United States'.
-  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.native
+  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Office location such as building and office number for an organizational contact.
-  var officeLocation: js.UndefOr[NullableOption[String]] = js.native
+  var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The postal code.
-  var postalCode: js.UndefOr[NullableOption[String]] = js.native
+  var postalCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The state.
-  var state: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The street.
-  var street: js.UndefOr[NullableOption[String]] = js.native
+  var street: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PhysicalOfficeAddress {
   

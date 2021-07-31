@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "IPv4RangeAggregation")
 @js.native
-class IPv4RangeAggregation protected () extends Aggregation {
+class IPv4RangeAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     A dedicated range aggregation for IPv4 typed fields.
     */

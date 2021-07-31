@@ -6,7 +6,6 @@ import typings.twilioChat.networkMod.Network
 import typings.twilioChat.restpaginatorMod.RestPaginator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publicchannelsMod {
@@ -34,10 +33,9 @@ object publicchannelsMod {
     var url: js.Any = js.native
   }
   
-  @js.native
   trait PublicChannelServices extends StObject {
     
-    var network: Network = js.native
+    var network: Network
   }
   object PublicChannelServices {
     

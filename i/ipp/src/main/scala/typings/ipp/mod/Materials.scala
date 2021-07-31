@@ -2,43 +2,41 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Materials extends StObject {
   
-  var `material-amount`: js.UndefOr[Double] = js.native
+  var `material-amount`: js.UndefOr[Double] = js.undefined
   
-  var `material-amount-units`: js.UndefOr[MaterialAmountUnits] = js.native
+  var `material-amount-units`: js.UndefOr[MaterialAmountUnits] = js.undefined
   
-  var `material-color`: js.UndefOr[String] = js.native
+  var `material-color`: js.UndefOr[String] = js.undefined
   
-  var `material-diameter`: js.UndefOr[Double] = js.native
+  var `material-diameter`: js.UndefOr[Double] = js.undefined
   
-  var `material-diameter-tolerance`: js.UndefOr[Double] = js.native
+  var `material-diameter-tolerance`: js.UndefOr[Double] = js.undefined
   
-  var `material-fill-density`: js.UndefOr[Double] = js.native
+  var `material-fill-density`: js.UndefOr[Double] = js.undefined
   
-  var `material-key`: js.UndefOr[String] = js.native
+  var `material-key`: js.UndefOr[String] = js.undefined
   
-  var `material-name`: js.UndefOr[String] = js.native
+  var `material-name`: js.UndefOr[String] = js.undefined
   
-  var `material-nozzle-diameter`: js.UndefOr[Double] = js.native
+  var `material-nozzle-diameter`: js.UndefOr[Double] = js.undefined
   
-  var `material-purpose`: js.UndefOr[js.Array[MaterialPurpose]] = js.native
+  var `material-purpose`: js.UndefOr[js.Array[MaterialPurpose]] = js.undefined
   
-  var `material-rate`: js.UndefOr[Double] = js.native
+  var `material-rate`: js.UndefOr[Double] = js.undefined
   
-  var `material-rate-units`: js.UndefOr[MaterialRateUnits] = js.native
+  var `material-rate-units`: js.UndefOr[MaterialRateUnits] = js.undefined
   
-  var `material-retraction`: js.UndefOr[Boolean] = js.native
+  var `material-retraction`: js.UndefOr[Boolean] = js.undefined
   
-  var `material-shell-thickness`: js.UndefOr[Double] = js.native
+  var `material-shell-thickness`: js.UndefOr[Double] = js.undefined
   
-  var `material-temperature`: js.UndefOr[Double] = js.native
+  var `material-temperature`: js.UndefOr[Double] = js.undefined
   
-  var `material-type`: js.UndefOr[MaterialType] = js.native
+  var `material-type`: js.UndefOr[MaterialType] = js.undefined
 }
 object Materials {
   

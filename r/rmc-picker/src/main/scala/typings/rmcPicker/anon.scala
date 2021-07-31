@@ -41,7 +41,6 @@ import typings.rmcPicker.rmcPickerStrings.radiobutton_unchecked
 import typings.rmcPicker.rmcPickerStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -78,9 +77,9 @@ object anon {
     var context: js.Any = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callBack: js.Function0[_]): Unit = js.native
+    def forceUpdate(callBack: js.Function0[js.Any]): Unit = js.native
     
-    def getValue(): js.Array[_] = js.native
+    def getValue(): js.Array[js.Any] = js.native
     
     def onChange(i: js.Any, v: js.Any, cb: js.Any): Unit = js.native
     
@@ -95,7 +94,7 @@ object anon {
     def render(): Element = js.native
     
     def setState[K /* <: String | Double | js.Symbol */](state: js.Any): Unit = js.native
-    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[_]): Unit = js.native
+    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[js.Any]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[
@@ -147,7 +146,7 @@ object anon {
     def doScrollingComplete(top: js.Any, itemHeight: js.Any, fireValueChange: js.Any): Unit = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callBack: js.Function0[_]): Unit = js.native
+    def forceUpdate(callBack: js.Function0[js.Any]): Unit = js.native
     
     var props: ReadonlychildrenReactNodeChildren = js.native
     
@@ -160,7 +159,7 @@ object anon {
     def selectByIndex(index: js.Any, itemHeight: js.Any, zscrollTo: js.Any): Unit = js.native
     
     def setState[K /* <: String | Double | js.Symbol */](state: js.Any): Unit = js.native
-    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[_]): Unit = js.native
+    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[js.Any]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[
@@ -208,7 +207,7 @@ object anon {
     def fireVisibleChange(visible: js.Any): Unit = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callBack: js.Function0[_]): Unit = js.native
+    def forceUpdate(callBack: js.Function0[js.Any]): Unit = js.native
     
     def getContent(): String | ReactElement | SFCElement[Dictx] = js.native
     
@@ -235,7 +234,7 @@ object anon {
     def saveRef(picker: js.Any): Unit = js.native
     
     def setState[K /* <: String | Double | js.Symbol */](state: js.Any): Unit = js.native
-    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[_]): Unit = js.native
+    def setState[K /* <: String | Double | js.Symbol */](state: js.Any, callback: js.Function0[js.Any]): Unit = js.native
     
     def setVisibleState(visible: js.Any): Unit = js.native
     
@@ -253,16 +252,17 @@ object anon {
   
   @js.native
   trait DefaultProps
-    extends Instantiable1[/* props */ js.Any, ComponentWillMount] {
+    extends StObject
+       with Instantiable1[/* props */ js.Any, ComponentWillMount] {
     
     var defaultProps: js.Any = js.native
   }
   
-  @js.native
   trait Dictx
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    def ref(picker: js.Any): Unit = js.native
+    def ref(picker: js.Any): Unit
   }
   object Dictx {
     
@@ -282,28 +282,37 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable0[ComponentDidMount]
+    extends StObject
+       with Instantiable0[ComponentDidMount]
        with Instantiable1[/* props */ IMultiPickerProps, ComponentDidMount]
-       with Instantiable2[js.UndefOr[/* props */ IMultiPickerProps], /* context */ js.Any, ComponentDidMount] {
+       with Instantiable2[
+          (/* props */ IMultiPickerProps) | (/* props */ Unit), 
+          /* context */ js.Any, 
+          ComponentDidMount
+        ] {
     
     var defaultProps: OnValueChange = js.native
   }
   
   @js.native
   trait Item
-    extends Instantiable0[ComponentDidUpdate]
+    extends StObject
+       with Instantiable0[ComponentDidUpdate]
        with Instantiable1[/* props */ IPickerProps, ComponentDidUpdate]
-       with Instantiable2[js.UndefOr[/* props */ IPickerProps], /* context */ js.Any, ComponentDidUpdate] {
+       with Instantiable2[
+          (/* props */ IPickerProps) | (/* props */ Unit), 
+          /* context */ js.Any, 
+          ComponentDidUpdate
+        ] {
     
     def Item(_props: IItemProps): js.Any = js.native
   }
   
-  @js.native
   trait OnValueChange extends StObject {
     
-    def onValueChange(): Unit = js.native
+    def onValueChange(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object OnValueChange {
     
@@ -325,32 +334,31 @@ object anon {
   }
   
   /* Inlined std.Readonly<rmc-picker.rmc-picker/lib/PickerTypes.IPickerProps> */
-  @js.native
   trait ReadonlyIPickerProps extends StObject {
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val defaultSelectedValue: js.UndefOr[js.Any] = js.native
+    val defaultSelectedValue: js.UndefOr[js.Any] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val indicatorClassName: js.UndefOr[String] = js.native
+    val indicatorClassName: js.UndefOr[String] = js.undefined
     
-    val indicatorStyle: js.UndefOr[js.Any] = js.native
+    val indicatorStyle: js.UndefOr[js.Any] = js.undefined
     
-    val itemStyle: js.UndefOr[js.Any] = js.native
+    val itemStyle: js.UndefOr[js.Any] = js.undefined
     
-    val noAnimate: js.UndefOr[Boolean] = js.native
+    val noAnimate: js.UndefOr[Boolean] = js.undefined
     
-    val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val selectedValue: js.UndefOr[js.Any] = js.native
+    val selectedValue: js.UndefOr[js.Any] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
   }
   object ReadonlyIPickerProps {
     
@@ -438,58 +446,57 @@ object anon {
   }
   
   /* Inlined std.Readonly<rmc-picker.rmc-picker/lib/PopupPickerTypes.IPopupPickerProps> */
-  @js.native
   trait ReadonlyIPopupPickerProps extends StObject {
     
-    val WrapComponent: js.UndefOr[js.Any] = js.native
+    val WrapComponent: js.UndefOr[js.Any] = js.undefined
     
-    val actionTextActiveOpacity: js.UndefOr[Double] = js.native
+    val actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
     
-    val actionTextUnderlayColor: js.UndefOr[String] = js.native
+    val actionTextUnderlayColor: js.UndefOr[String] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val content: js.UndefOr[ReactElement | String] = js.native
+    val content: js.UndefOr[ReactElement | String] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val dismissText: js.UndefOr[String | ReactElement] = js.native
+    val dismissText: js.UndefOr[String | ReactElement] = js.undefined
     
-    val maskTransitionName: js.UndefOr[String] = js.native
+    val maskTransitionName: js.UndefOr[String] = js.undefined
     
-    val okText: js.UndefOr[String | ReactElement] = js.native
+    val okText: js.UndefOr[String | ReactElement] = js.undefined
     
-    val onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    val picker: js.UndefOr[js.Any] = js.native
+    val picker: js.UndefOr[js.Any] = js.undefined
     
-    val pickerValueChangeProp: js.UndefOr[String] = js.native
+    val pickerValueChangeProp: js.UndefOr[String] = js.undefined
     
-    val pickerValueProp: js.UndefOr[String] = js.native
+    val pickerValueProp: js.UndefOr[String] = js.undefined
     
-    val popupTransitionName: js.UndefOr[String] = js.native
+    val popupTransitionName: js.UndefOr[String] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
     
-    val styles: js.UndefOr[js.Any] = js.native
+    val styles: js.UndefOr[js.Any] = js.undefined
     
-    val title: js.UndefOr[String | ReactElement] = js.native
+    val title: js.UndefOr[String | ReactElement] = js.undefined
     
-    val transitionName: js.UndefOr[String] = js.native
+    val transitionName: js.UndefOr[String] = js.undefined
     
-    val triggerType: js.UndefOr[String] = js.native
+    val triggerType: js.UndefOr[String] = js.undefined
     
-    val value: js.UndefOr[js.Any] = js.native
+    val value: js.UndefOr[js.Any] = js.undefined
     
-    val visible: js.UndefOr[Boolean] = js.native
+    val visible: js.UndefOr[Boolean] = js.undefined
     
-    val wrapStyle: js.UndefOr[CSSProperties] = js.native
+    val wrapStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReadonlyIPopupPickerProps {
     
@@ -655,130 +662,129 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-native.react-native.PickerProps> */
-  @js.native
   trait ReadonlyPickerProps extends StObject {
     
-    val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+    val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+    val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
-    val accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+    val accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
-    val accessibilityHint: js.UndefOr[String] = js.native
+    val accessibilityHint: js.UndefOr[String] = js.undefined
     
-    val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+    val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
     
-    val accessibilityLabel: js.UndefOr[String] = js.native
+    val accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+    val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
-    val accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+    val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
-    val accessibilityState: js.UndefOr[AccessibilityState] = js.native
+    val accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
     
-    val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+    val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
-    val accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+    val accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
-    val accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+    val accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
     
-    val accessible: js.UndefOr[Boolean] = js.native
+    val accessible: js.UndefOr[Boolean] = js.undefined
     
-    val collapsable: js.UndefOr[Boolean] = js.native
+    val collapsable: js.UndefOr[Boolean] = js.undefined
     
-    val enabled: js.UndefOr[Boolean] = js.native
+    val enabled: js.UndefOr[Boolean] = js.undefined
     
-    val focusable: js.UndefOr[Boolean] = js.native
+    val focusable: js.UndefOr[Boolean] = js.undefined
     
-    val hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+    val hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
-    val hitSlop: js.UndefOr[Insets] = js.native
+    val hitSlop: js.UndefOr[Insets] = js.undefined
     
-    val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+    val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
     
-    val isTVSelectable: js.UndefOr[Boolean] = js.native
+    val isTVSelectable: js.UndefOr[Boolean] = js.undefined
     
-    val itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    val itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    val mode: js.UndefOr[dialog | dropdown] = js.native
+    val mode: js.UndefOr[dialog | dropdown] = js.undefined
     
-    val nativeID: js.UndefOr[String] = js.native
+    val nativeID: js.UndefOr[String] = js.undefined
     
-    val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+    val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
     
-    val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+    val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
     
-    val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+    val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+    val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+    val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
-    val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+    val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    val onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.native
+    val onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.undefined
     
-    val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    val prompt: js.UndefOr[String] = js.native
+    val prompt: js.UndefOr[String] = js.undefined
     
-    val removeClippedSubviews: js.UndefOr[Boolean] = js.native
+    val removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
     
-    val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+    val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
     
-    val selectedValue: js.UndefOr[js.Any] = js.native
+    val selectedValue: js.UndefOr[js.Any] = js.undefined
     
-    val shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+    val shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
     
-    val style: js.UndefOr[StyleProp[TextStyle]] = js.native
+    val style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    val testID: js.UndefOr[String] = js.native
+    val testID: js.UndefOr[String] = js.undefined
     
-    val testId: js.UndefOr[String] = js.native
+    val testId: js.UndefOr[String] = js.undefined
     
-    val tvParallaxMagnification: js.UndefOr[Double] = js.native
+    val tvParallaxMagnification: js.UndefOr[Double] = js.undefined
     
-    val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+    val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+    val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
     
-    val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+    val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
     
-    val tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+    val tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyPickerProps {
     
@@ -1166,29 +1172,28 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-picker.rmc-picker/lib/MultiPickerProps.default> */
-  @js.native
   trait ReadonlychildrenReactNode extends StObject {
     
-    val children: js.UndefOr[ReactNode] with js.UndefOr[js.Any] = js.native
+    val children: js.UndefOr[ReactNode] & js.UndefOr[js.Any]
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val rootNativeProps: js.UndefOr[js.Any] = js.native
+    val rootNativeProps: js.UndefOr[js.Any] = js.undefined
     
-    val selectedValue: js.UndefOr[js.Array[_]] = js.native
+    val selectedValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
   }
   object ReadonlychildrenReactNode {
     
     @scala.inline
-    def apply(children: js.UndefOr[ReactNode] with js.UndefOr[js.Any]): ReadonlychildrenReactNode = {
+    def apply(children: js.UndefOr[ReactNode] & js.UndefOr[js.Any]): ReadonlychildrenReactNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
@@ -1197,7 +1202,7 @@ object anon {
     implicit class ReadonlychildrenReactNodeMutableBuilder[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.UndefOr[ReactNode] with js.UndefOr[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -1230,7 +1235,7 @@ object anon {
       def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
       
       @scala.inline
-      def setSelectedValue(value: js.Array[_]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      def setSelectedValue(value: js.Array[js.Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
@@ -1247,60 +1252,59 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-picker.rmc-picker/lib/PopupPickerTypes.IPopupPickerProps> */
-  @js.native
   trait ReadonlychildrenReactNodeActionTextActiveOpacity extends StObject {
     
-    val WrapComponent: js.UndefOr[js.Any] = js.native
+    val WrapComponent: js.UndefOr[js.Any] = js.undefined
     
-    val actionTextActiveOpacity: js.UndefOr[Double] = js.native
+    val actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
     
-    val actionTextUnderlayColor: js.UndefOr[String] = js.native
+    val actionTextUnderlayColor: js.UndefOr[String] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val content: js.UndefOr[ReactElement | String] = js.native
+    val content: js.UndefOr[ReactElement | String] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val dismissText: js.UndefOr[String | ReactElement] = js.native
+    val dismissText: js.UndefOr[String | ReactElement] = js.undefined
     
-    val maskTransitionName: js.UndefOr[String] = js.native
+    val maskTransitionName: js.UndefOr[String] = js.undefined
     
-    val okText: js.UndefOr[String | ReactElement] = js.native
+    val okText: js.UndefOr[String | ReactElement] = js.undefined
     
-    val onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    val picker: js.UndefOr[js.Any] = js.native
+    val picker: js.UndefOr[js.Any] = js.undefined
     
-    val pickerValueChangeProp: js.UndefOr[String] = js.native
+    val pickerValueChangeProp: js.UndefOr[String] = js.undefined
     
-    val pickerValueProp: js.UndefOr[String] = js.native
+    val pickerValueProp: js.UndefOr[String] = js.undefined
     
-    val popupTransitionName: js.UndefOr[String] = js.native
+    val popupTransitionName: js.UndefOr[String] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
     
-    val styles: js.UndefOr[js.Any] = js.native
+    val styles: js.UndefOr[js.Any] = js.undefined
     
-    val title: js.UndefOr[String | ReactElement] = js.native
+    val title: js.UndefOr[String | ReactElement] = js.undefined
     
-    val transitionName: js.UndefOr[String] = js.native
+    val transitionName: js.UndefOr[String] = js.undefined
     
-    val triggerType: js.UndefOr[String] = js.native
+    val triggerType: js.UndefOr[String] = js.undefined
     
-    val value: js.UndefOr[js.Any] = js.native
+    val value: js.UndefOr[js.Any] = js.undefined
     
-    val visible: js.UndefOr[Boolean] = js.native
+    val visible: js.UndefOr[Boolean] = js.undefined
     
-    val wrapStyle: js.UndefOr[CSSProperties] = js.native
+    val wrapStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReadonlychildrenReactNodeActionTextActiveOpacity {
     
@@ -1472,34 +1476,33 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-picker.rmc-picker/lib/PickerTypes.IPickerProps> */
-  @js.native
   trait ReadonlychildrenReactNodeChildren extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val defaultSelectedValue: js.UndefOr[js.Any] = js.native
+    val defaultSelectedValue: js.UndefOr[js.Any] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val indicatorClassName: js.UndefOr[String] = js.native
+    val indicatorClassName: js.UndefOr[String] = js.undefined
     
-    val indicatorStyle: js.UndefOr[js.Any] = js.native
+    val indicatorStyle: js.UndefOr[js.Any] = js.undefined
     
-    val itemStyle: js.UndefOr[js.Any] = js.native
+    val itemStyle: js.UndefOr[js.Any] = js.undefined
     
-    val noAnimate: js.UndefOr[Boolean] = js.native
+    val noAnimate: js.UndefOr[Boolean] = js.undefined
     
-    val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val selectedValue: js.UndefOr[js.Any] = js.native
+    val selectedValue: js.UndefOr[js.Any] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
   }
   object ReadonlychildrenReactNodeChildren {
     
@@ -1593,24 +1596,23 @@ object anon {
   }
   
   /* Inlined std.Readonly<rmc-picker.rmc-picker/lib/MultiPickerProps.default> */
-  @js.native
   trait Readonlydefault extends StObject {
     
-    val children: js.UndefOr[js.Any] = js.native
+    val children: js.UndefOr[js.Any] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    val onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val rootNativeProps: js.UndefOr[js.Any] = js.native
+    val rootNativeProps: js.UndefOr[js.Any] = js.undefined
     
-    val selectedValue: js.UndefOr[js.Array[_]] = js.native
+    val selectedValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val style: js.UndefOr[js.Any] = js.native
+    val style: js.UndefOr[js.Any] = js.undefined
   }
   object Readonlydefault {
     
@@ -1660,7 +1662,7 @@ object anon {
       def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
       
       @scala.inline
-      def setSelectedValue(value: js.Array[_]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      def setSelectedValue(value: js.Array[js.Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)

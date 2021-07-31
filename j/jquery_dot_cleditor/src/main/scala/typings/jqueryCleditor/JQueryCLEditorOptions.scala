@@ -2,33 +2,31 @@ package typings.jqueryCleditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryCLEditorOptions extends StObject {
   
-  var bodyStyle: js.UndefOr[String] = js.native
+  var bodyStyle: js.UndefOr[String] = js.undefined
   
-  var colors: js.UndefOr[String] = js.native
+  var colors: js.UndefOr[String] = js.undefined
   
-  var controls: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[String] = js.undefined
   
-  var docCSSFile: js.UndefOr[String] = js.native
+  var docCSSFile: js.UndefOr[String] = js.undefined
   
-  var docType: js.UndefOr[String] = js.native
+  var docType: js.UndefOr[String] = js.undefined
   
-  var fonts: js.UndefOr[String] = js.native
+  var fonts: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var styles: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
-  var useCSS: js.UndefOr[Boolean] = js.native
+  var useCSS: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object JQueryCLEditorOptions {
   

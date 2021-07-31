@@ -2,13 +2,11 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentStack extends StObject {
   
-  var componentStack: js.UndefOr[String] = js.native
+  var componentStack: js.UndefOr[String] = js.undefined
 }
 object ComponentStack {
   

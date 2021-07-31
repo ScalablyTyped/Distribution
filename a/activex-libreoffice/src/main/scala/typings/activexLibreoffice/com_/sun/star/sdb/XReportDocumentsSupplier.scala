@@ -5,29 +5,29 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the access to a container of database reports.
   * @see Reports
   */
-@js.native
-trait XReportDocumentsSupplier extends XInterface {
+trait XReportDocumentsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of reports.
     * @returns the report documents
     * @see Reports
     */
-  val ReportDocuments: XNameAccess = js.native
+  val ReportDocuments: XNameAccess
   
   /**
     * returns the container of reports.
     * @returns the report documents
     * @see Reports
     */
-  def getReportDocuments(): XNameAccess = js.native
+  def getReportDocuments(): XNameAccess
 }
 object XReportDocumentsSupplier {
   

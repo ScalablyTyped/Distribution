@@ -3,15 +3,13 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.onEventsMod.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
-  var events: typings.vegaTypings.onEventsMod.Events | js.Array[EventListener] = js.native
+  var events: typings.vegaTypings.onEventsMod.Events | js.Array[EventListener]
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
 }
 object Events {
   

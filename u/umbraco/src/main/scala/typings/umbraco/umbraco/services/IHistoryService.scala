@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To use, simply inject the historyService into any controller that needs it, and make
   * sure the umbraco.services module is accesible - which it should be by default.
   */
-@js.native
 trait IHistoryService extends StObject {
   
   /**
@@ -41,7 +39,7 @@ trait IHistoryService extends StObject {
     * @param {String} item.name friendly name for the history listing
     * @returns {Object} history item object
     */
-  def add(item: IHistoryItem): IHistoryItem = js.native
+  def add(item: IHistoryItem): IHistoryItem
   
   /**
     * @ngdoc method
@@ -51,7 +49,7 @@ trait IHistoryService extends StObject {
     * @description
     * Method to return the current history collection.
     */
-  def getCurrent(): js.Array[IHistoryItem] = js.native
+  def getCurrent(): js.Array[IHistoryItem]
   
   /**
     * @ngdoc method
@@ -63,7 +61,7 @@ trait IHistoryService extends StObject {
     *
     * @param {Int} index index to remove item from
     */
-  def remove(index: Double): Unit = js.native
+  def remove(index: Double): Unit
   
   /**
     * @ngdoc method
@@ -73,7 +71,7 @@ trait IHistoryService extends StObject {
     * @description
     * Removes all history items from the users history collection
     */
-  def removeAll(): Unit = js.native
+  def removeAll(): Unit
 }
 object IHistoryService {
   

@@ -3,10 +3,8 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGlobalSetLabelsRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGlobalSetLabelsRequest extends StObject {
     * conditionNotMet. Make a get() request to the resource to get the latest
     * fingerprint.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * A list of labels to apply for this resource. Each label key &amp; value
@@ -30,7 +28,7 @@ trait SchemaGlobalSetLabelsRequest extends StObject {
     * &quot;webserver-frontend&quot;: &quot;images&quot;. A label value can
     * also be empty (e.g. &quot;my-label&quot;: &quot;&quot;).
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaGlobalSetLabelsRequest {
   

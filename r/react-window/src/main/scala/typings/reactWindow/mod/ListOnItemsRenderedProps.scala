@@ -2,19 +2,17 @@ package typings.reactWindow.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOnItemsRenderedProps extends StObject {
   
-  var overscanStartIndex: Double = js.native
+  var overscanStartIndex: Double
   
-  var overscanStopIndex: Double = js.native
+  var overscanStopIndex: Double
   
-  var visibleStartIndex: Double = js.native
+  var visibleStartIndex: Double
   
-  var visibleStopIndex: Double = js.native
+  var visibleStopIndex: Double
 }
 object ListOnItemsRenderedProps {
   

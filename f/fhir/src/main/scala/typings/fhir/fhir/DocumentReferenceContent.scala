@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Document referenced
   */
-@js.native
-trait DocumentReferenceContent extends BackboneElement {
+trait DocumentReferenceContent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Where to access the document
     */
-  var attachment: Attachment = js.native
+  var attachment: Attachment
   
   /**
     * Format/content rules for the document
     */
-  var format: js.UndefOr[Coding] = js.native
+  var format: js.UndefOr[Coding] = js.undefined
 }
 object DocumentReferenceContent {
   

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamNamesOptions extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait ParamNamesOptions extends StObject {
     *
     * @default `'qqchunksize'`
     */
-  var chunkSize: js.UndefOr[String] = js.native
+  var chunkSize: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the parameter passed with a chunked request that specifies the starting byte of the associated chunk
     *
     * @default `'qqpartbyteoffset'`
     */
-  var partByteOffset: js.UndefOr[String] = js.native
+  var partByteOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the parameter passed with a chunked request that specifies the index of the associated partition
     *
     * @default `'qqpartindex'`
     */
-  var partIndex: js.UndefOr[String] = js.native
+  var partIndex: js.UndefOr[String] = js.undefined
   
   /**
     * Sent with the first request of the resume with a value of `true`
     *
     * @default `'qqresume'`
     */
-  var resuming: js.UndefOr[String] = js.native
+  var resuming: js.UndefOr[String] = js.undefined
   
   /**
     * totalFileSize
     *
     * @default `'qqtotalfilesize'`
     */
-  var totalFileSize: js.UndefOr[String] = js.native
+  var totalFileSize: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the parameter passed with a chunked request that specifies the total number of chunks associated with the `File` or `Blob`
     *
     * @default `'qqtotalparts'`
     */
-  var totalParts: js.UndefOr[String] = js.native
+  var totalParts: js.UndefOr[String] = js.undefined
 }
 object ParamNamesOptions {
   

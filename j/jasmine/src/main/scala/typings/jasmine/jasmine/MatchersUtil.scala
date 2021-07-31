@@ -2,7 +2,6 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,9 +15,9 @@ trait MatchersUtil extends StObject {
   def contains[T](haystack: ArrayLike[T], needle: js.Any, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
   
   def equals(a: js.Any, b: js.Any): Boolean = js.native
-  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], diffBuilder: DiffBuilder): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[CustomEqualityTester], diffBuilder: DiffBuilder): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: Unit, diffBuilder: DiffBuilder): Boolean = js.native
   
   /**
     * Formats a value for use in matcher failure messages and similar

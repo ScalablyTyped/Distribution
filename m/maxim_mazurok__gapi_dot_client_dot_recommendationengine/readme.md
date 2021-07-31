@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201112
 
 ## Library description:
-TypeScript typings for Recommendations AI v1beta1
+TypeScript typings for Recommendations AI (Beta) v1beta1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.recommendationengine |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 1043 |
 | # stars            | 0 |
 
 ## Links

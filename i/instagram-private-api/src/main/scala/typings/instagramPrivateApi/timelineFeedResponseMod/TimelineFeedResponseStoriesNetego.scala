@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseStoriesNetego extends StObject {
   
-  var hide_unit_if_seen: String = js.native
+  var hide_unit_if_seen: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var tracking_token: String = js.native
+  var tracking_token: String
 }
 object TimelineFeedResponseStoriesNetego {
   

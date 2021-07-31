@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummarizedAttackVector extends StObject {
   
   /**
     * The list of counters that describe the details of the attack.
     */
-  var VectorCounters: js.UndefOr[SummarizedCounterList] = js.native
+  var VectorCounters: js.UndefOr[SummarizedCounterList] = js.undefined
   
   /**
     * The attack type, for example, SNMP reflection or SYN flood.
     */
-  var VectorType: String = js.native
+  var VectorType: String
 }
 object SummarizedAttackVector {
   

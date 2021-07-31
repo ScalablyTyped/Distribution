@@ -3,31 +3,29 @@ package typings.inversify.interfacesMod.interfaces
 import typings.inversify.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingToSyntax[T] extends StObject {
   
-  def to(constructor: Instantiable[T]): BindingInWhenOnSyntax[T] = js.native
+  def to(constructor: Instantiable[T]): BindingInWhenOnSyntax[T]
   
-  def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T] = js.native
+  def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T]
   
-  def toConstantValue(value: T): BindingWhenOnSyntax[T] = js.native
+  def toConstantValue(value: T): BindingWhenOnSyntax[T]
   
-  def toConstructor[T2](constructor: Newable[T2]): BindingWhenOnSyntax[T] = js.native
+  def toConstructor[T2](constructor: Newable[T2]): BindingWhenOnSyntax[T]
   
-  def toDynamicValue(func: js.Function1[/* context */ Context, T]): BindingInWhenOnSyntax[T] = js.native
+  def toDynamicValue(func: js.Function1[/* context */ Context, T]): BindingInWhenOnSyntax[T]
   
-  def toFactory[T2](factory: FactoryCreator[T2]): BindingWhenOnSyntax[T] = js.native
+  def toFactory[T2](factory: FactoryCreator[T2]): BindingWhenOnSyntax[T]
   
-  def toFunction(func: T): BindingWhenOnSyntax[T] = js.native
+  def toFunction(func: T): BindingWhenOnSyntax[T]
   
-  def toProvider[T2](provider: ProviderCreator[T2]): BindingWhenOnSyntax[T] = js.native
+  def toProvider[T2](provider: ProviderCreator[T2]): BindingWhenOnSyntax[T]
   
-  def toSelf(): BindingInWhenOnSyntax[T] = js.native
+  def toSelf(): BindingInWhenOnSyntax[T]
   
-  def toService(service: ServiceIdentifier[T]): Unit = js.native
+  def toService(service: ServiceIdentifier[T]): Unit
 }
 object BindingToSyntax {
   
@@ -49,7 +47,7 @@ object BindingToSyntax {
   }
   
   @scala.inline
-  implicit class BindingToSyntaxMutableBuilder[Self <: BindingToSyntax[_], T] (val x: Self with BindingToSyntax[T]) extends AnyVal {
+  implicit class BindingToSyntaxMutableBuilder[Self <: BindingToSyntax[?], T] (val x: Self & BindingToSyntax[T]) extends AnyVal {
     
     @scala.inline
     def setTo(value: Instantiable[T] => BindingInWhenOnSyntax[T]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))

@@ -2,13 +2,11 @@ package typings.rcMenu.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Find extends StObject {
   
-  var find: Boolean = js.native
+  var find: Boolean
 }
 object Find {
   

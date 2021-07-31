@@ -2,21 +2,19 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsResponse extends StObject {
   
   /**
     * When the list is truncated, this value is present and should be used for the NextToken parameter in a subsequent pagination request. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.undefined
   
   /**
     * The tags associated with your private CA.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ListTagsResponse {
   

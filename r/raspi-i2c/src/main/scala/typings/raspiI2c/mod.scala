@@ -5,7 +5,6 @@ import typings.raspiPeripheral.mod.Peripheral
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,9 +27,9 @@ object mod {
     def readByteSync(address: Double, register: Double): Double = js.native
     
     def readSync(address: Double): Buffer = js.native
-    def readSync(address: Double, registerOrLength: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
     def readSync(address: Double, registerOrLength: Double): Buffer = js.native
     def readSync(address: Double, registerOrLength: Double, length: Double): Buffer = js.native
+    def readSync(address: Double, registerOrLength: Unit, length: Double): Buffer = js.native
     
     def readWord(address: Double, cb: ReadCallback): Unit = js.native
     def readWord(address: Double, register: Double, cb: ReadCallback): Unit = js.native

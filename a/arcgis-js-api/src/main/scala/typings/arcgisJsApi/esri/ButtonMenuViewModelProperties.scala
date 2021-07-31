@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonMenuViewModelProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ButtonMenuViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html#items)
     */
-  var items: js.UndefOr[js.Array[ButtonMenuItemProperties]] = js.native
+  var items: js.UndefOr[js.Array[ButtonMenuItemProperties]] = js.undefined
   
   /**
     * Indicates if the menu content is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html#open)
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonMenuViewModelProperties {
   

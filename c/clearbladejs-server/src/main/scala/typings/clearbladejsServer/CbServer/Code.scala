@@ -2,21 +2,19 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  def execute(name: String, params: js.Object, loggingEnabled: Boolean, callback: CbCallback): Unit = js.native
+  def execute(name: String, params: js.Object, loggingEnabled: Boolean, callback: CbCallback): Unit
   
-  def getAllServices(callback: CbCallback): Unit = js.native
+  def getAllServices(callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Code {
   

@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Element values that are used to distinguish the slices
   */
-@js.native
-trait ElementDefinitionSlicingDiscriminator extends Element {
+trait ElementDefinitionSlicingDiscriminator
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.native
+  var _path: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Path to element value
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * value | exists | pattern | type | profile
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object ElementDefinitionSlicingDiscriminator {
   

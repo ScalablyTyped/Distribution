@@ -2,18 +2,16 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minChunkSizePluginMod {
   
-  @js.native
   trait MinChunkSizePluginOptions extends StObject {
     
     /**
     	 * Minimum number of characters
     	 */
-    var minChunkSize: Double = js.native
+    var minChunkSize: Double
   }
   object MinChunkSizePluginOptions {
     

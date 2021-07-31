@@ -8,7 +8,6 @@ import typings.antlr4.tokenMod.Token
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -35,13 +34,21 @@ object errorsMod {
   
   @JSImport("antlr4/error/Errors", "RecognitionException")
   @js.native
-  class RecognitionException () extends Error {
+  class RecognitionException ()
+    extends StObject
+       with Error {
     
     var ctx: ParserRuleContext = js.native
     
     def getExpectedTokens(): js.Array[Token] = js.native
     
     var input: InputStream = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var offendingState: `-1` = js.native
     

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "AvgAggregation")
 @js.native
-class AvgAggregation protected () extends Aggregation {
+class AvgAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that computes the average of numeric values that are extracted
     from the aggregated documents.

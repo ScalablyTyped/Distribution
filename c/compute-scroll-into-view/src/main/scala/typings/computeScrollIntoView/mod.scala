@@ -3,23 +3,24 @@ package typings.computeScrollIntoView
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("compute-scroll-into-view", JSImport.Default)
+  @JSImport("compute-scroll-into-view", JSImport.Namespace)
   @js.native
-  def default(target: Element, options: Options): js.Array[CustomScrollAction] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(target: Element, options: Options): js.Array[CustomScrollAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[CustomScrollAction]]
+  
   trait CustomScrollAction extends StObject {
     
-    var el: Element = js.native
+    var el: Element
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object CustomScrollAction {
     
@@ -47,18 +48,17 @@ object mod {
   
   type CustomScrollBoundaryCallback = js.Function1[/* parent */ Element, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var block: js.UndefOr[ScrollLogicalPosition] = js.native
+    var block: js.UndefOr[ScrollLogicalPosition] = js.undefined
     
-    var boundary: js.UndefOr[CustomScrollBoundary] = js.native
+    var boundary: js.UndefOr[CustomScrollBoundary] = js.undefined
     
-    var `inline`: js.UndefOr[ScrollLogicalPosition] = js.native
+    var `inline`: js.UndefOr[ScrollLogicalPosition] = js.undefined
     
-    var scrollMode: js.UndefOr[ScrollMode] = js.native
+    var scrollMode: js.UndefOr[ScrollMode] = js.undefined
     
-    var skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.native
+    var skipOverflowHiddenElements: js.UndefOr[SkipOverflowHiddenElements] = js.undefined
   }
   object Options {
     

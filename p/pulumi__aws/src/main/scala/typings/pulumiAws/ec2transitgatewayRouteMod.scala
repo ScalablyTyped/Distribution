@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2transitgatewayRouteMod {
@@ -48,6 +47,10 @@ object ec2transitgatewayRouteMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object ec2transitgatewayRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): Route = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/route", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ Boolean]
   }
   
-  @js.native
   trait RouteArgs extends StObject {
     
     /**
       * Indicates whether to drop traffic that matches this route (default to `false`).
       */
-    val blackhole: js.UndefOr[Input[Boolean]] = js.native
+    val blackhole: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * IPv4 or IPv6 RFC1924 CIDR used for destination matches. Routing decisions are based on the most specific match.
       */
-    val destinationCidrBlock: Input[String] = js.native
+    val destinationCidrBlock: Input[String]
     
     /**
       * Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).
       */
-    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway Route Table.
       */
-    val transitGatewayRouteTableId: Input[String] = js.native
+    val transitGatewayRouteTableId: Input[String]
   }
   object RouteArgs {
     
@@ -133,28 +130,27 @@ object ec2transitgatewayRouteMod {
     }
   }
   
-  @js.native
   trait RouteState extends StObject {
     
     /**
       * Indicates whether to drop traffic that matches this route (default to `false`).
       */
-    val blackhole: js.UndefOr[Input[Boolean]] = js.native
+    val blackhole: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * IPv4 or IPv6 RFC1924 CIDR used for destination matches. Routing decisions are based on the most specific match.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).
       */
-    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway Route Table.
       */
-    val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteState {
     

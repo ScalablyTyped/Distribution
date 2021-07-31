@@ -6,11 +6,11 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceChangeRequestedEventArgs extends ISourceChangeRequestedEventArgs
+trait SourceChangeRequestedEventArgs
+  extends StObject
+     with ISourceChangeRequestedEventArgs
 object SourceChangeRequestedEventArgs {
   
   @scala.inline
@@ -20,7 +20,7 @@ object SourceChangeRequestedEventArgs {
     date: Date,
     description: String,
     genre: String,
-    properties: IMapView[String, _],
+    properties: IMapView[String, js.Any],
     rating: Double,
     stream: IRandomAccessStreamWithContentType,
     thumbnail: IRandomAccessStreamReference,

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,29 +13,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface represents a security template, which is the super interface of the {@link XXMLSignatureTemplate} interface and the {@link
   * XXMLEncryptionTemplate} interface.
   */
-@js.native
-trait XXMLSecurityTemplate extends XInterface {
+trait XXMLSecurityTemplate
+  extends StObject
+     with XInterface {
   
   /** Get the template status */
-  var Status: SecurityOperationStatus = js.native
+  var Status: SecurityOperationStatus
   
   /** Get the XML signature element that represents the signature template */
-  var Template: XXMLElementWrapper = js.native
+  var Template: XXMLElementWrapper
   
   /** Get the template status */
-  def getStatus(): SecurityOperationStatus = js.native
+  def getStatus(): SecurityOperationStatus
   
   /** Get the XML signature element that represents the signature template */
-  def getTemplate(): XXMLElementWrapper = js.native
+  def getTemplate(): XXMLElementWrapper
   
   /** Set the template status */
-  def setStatus(status: SecurityOperationStatus): Unit = js.native
+  def setStatus(status: SecurityOperationStatus): Unit
   
   /** Load the target XML element, i.e. the element to be signed */
-  def setTarget(aXmlElement: XXMLElementWrapper): Unit = js.native
+  def setTarget(aXmlElement: XXMLElementWrapper): Unit
   
   /** Load a XML signature template from XML signature element */
-  def setTemplate(aXmlElement: XXMLElementWrapper): Unit = js.native
+  def setTemplate(aXmlElement: XXMLElementWrapper): Unit
 }
 object XXMLSecurityTemplate {
   

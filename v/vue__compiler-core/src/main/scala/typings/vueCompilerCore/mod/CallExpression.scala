@@ -3,24 +3,23 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallExpression
-  extends JSChildNode
+  extends StObject
      with Node2
      with InferCodegenNodeType[js.Any]
+     with JSChildNode
      with PropsExpression {
   
   var arguments: js.Array[
     String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
-  ] = js.native
+  ]
   
-  var callee: String | js.Symbol = js.native
+  var callee: String | js.Symbol
   
   @JSName("type")
-  var type_CallExpression: `14` = js.native
+  var type_CallExpression: `14`
 }
 object CallExpression {
   
@@ -30,11 +29,10 @@ object CallExpression {
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ],
     callee: String | js.Symbol,
-    loc: SourceLocation,
-    `type`: `14`
+    loc: SourceLocation
   ): CallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(14)
     __obj.asInstanceOf[CallExpression]
   }
   

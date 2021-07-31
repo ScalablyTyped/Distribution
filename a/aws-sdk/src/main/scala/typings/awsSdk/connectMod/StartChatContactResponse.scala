@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartChatContactResponse extends StObject {
   
   /**
     * The identifier of this contact within the Amazon Connect instance. 
     */
-  var ContactId: js.UndefOr[typings.awsSdk.connectMod.ContactId] = js.native
+  var ContactId: js.UndefOr[typings.awsSdk.connectMod.ContactId] = js.undefined
   
   /**
     * The identifier for a chat participant. The participantId for a chat participant is the same throughout the chat lifecycle.
     */
-  var ParticipantId: js.UndefOr[typings.awsSdk.connectMod.ParticipantId] = js.native
+  var ParticipantId: js.UndefOr[typings.awsSdk.connectMod.ParticipantId] = js.undefined
   
   /**
     * The token used by the chat participant to call CreateParticipantConnection. The participant token is valid for the lifetime of a chat participant.
     */
-  var ParticipantToken: js.UndefOr[typings.awsSdk.connectMod.ParticipantToken] = js.native
+  var ParticipantToken: js.UndefOr[typings.awsSdk.connectMod.ParticipantToken] = js.undefined
 }
 object StartChatContactResponse {
   

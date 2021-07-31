@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to move the cursor backwards and erase the character in that space.
   */
-@js.native
-trait BackspaceCommand extends CommandWithSimpleStateBase {
+trait BackspaceCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the BackspaceCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object BackspaceCommand {
   

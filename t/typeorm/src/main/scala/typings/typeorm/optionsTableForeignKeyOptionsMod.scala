@@ -2,51 +2,49 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsTableForeignKeyOptionsMod {
   
-  @js.native
   trait TableForeignKeyOptions extends StObject {
     
     /**
       * Column names which included by this foreign key.
       */
-    var columnNames: js.Array[String] = js.native
+    var columnNames: js.Array[String]
     
     /**
       * Set this foreign key constraint as "DEFERRABLE" e.g. check constraints at start
       * or at the end of a transaction
       */
-    var deferrable: js.UndefOr[String] = js.native
+    var deferrable: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the table which contains this foreign key.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * "ON DELETE" of this foreign key, e.g. what action database should perform when
       * referenced stuff is being deleted.
       */
-    var onDelete: js.UndefOr[String] = js.native
+    var onDelete: js.UndefOr[String] = js.undefined
     
     /**
       * "ON UPDATE" of this foreign key, e.g. what action database should perform when
       * referenced stuff is being updated.
       */
-    var onUpdate: js.UndefOr[String] = js.native
+    var onUpdate: js.UndefOr[String] = js.undefined
     
     /**
       * Column names which included by this foreign key.
       */
-    var referencedColumnNames: js.Array[String] = js.native
+    var referencedColumnNames: js.Array[String]
     
     /**
       * Table referenced in the foreign key.
       */
-    var referencedTableName: String = js.native
+    var referencedTableName: String
   }
   object TableForeignKeyOptions {
     

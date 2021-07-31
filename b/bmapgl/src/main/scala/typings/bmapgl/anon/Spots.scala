@@ -3,17 +3,15 @@ package typings.bmapgl.anon
 import typings.bmapgl.BMapGL.HotspotOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spots extends StObject {
   
-  var spots: HotspotOptions = js.native
+  var spots: HotspotOptions
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Spots {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningArtifactSummary extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[ProvisioningArtifactCreatedTime] = js.native
+  var CreatedTime: js.UndefOr[ProvisioningArtifactCreatedTime] = js.undefined
   
   /**
     * The description of the provisioning artifact.
     */
-  var Description: js.UndefOr[ProvisioningArtifactDescription] = js.native
+  var Description: js.UndefOr[ProvisioningArtifactDescription] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * The name of the provisioning artifact.
     */
-  var Name: js.UndefOr[ProvisioningArtifactName] = js.native
+  var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
     * The metadata for the provisioning artifact. This is used with AWS Marketplace products.
     */
-  var ProvisioningArtifactMetadata: js.UndefOr[ProvisioningArtifactInfo] = js.native
+  var ProvisioningArtifactMetadata: js.UndefOr[ProvisioningArtifactInfo] = js.undefined
 }
 object ProvisioningArtifactSummary {
   

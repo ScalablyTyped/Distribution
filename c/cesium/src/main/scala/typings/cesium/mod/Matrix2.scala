@@ -2,66 +2,26 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Matrix2")
 @js.native
 class Matrix2 () extends Packable {
   def this(column0Row0: Double) = this()
-  def this(column0Row0: js.UndefOr[scala.Nothing], column1Row0: Double) = this()
   def this(column0Row0: Double, column1Row0: Double) = this()
-  def this(
-    column0Row0: js.UndefOr[scala.Nothing],
-    column1Row0: js.UndefOr[scala.Nothing],
-    column0Row1: Double
-  ) = this()
-  def this(column0Row0: js.UndefOr[scala.Nothing], column1Row0: Double, column0Row1: Double) = this()
-  def this(column0Row0: Double, column1Row0: js.UndefOr[scala.Nothing], column0Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Double) = this()
   def this(column0Row0: Double, column1Row0: Double, column0Row1: Double) = this()
-  def this(
-    column0Row0: js.UndefOr[scala.Nothing],
-    column1Row0: js.UndefOr[scala.Nothing],
-    column0Row1: js.UndefOr[scala.Nothing],
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: js.UndefOr[scala.Nothing],
-    column1Row0: js.UndefOr[scala.Nothing],
-    column0Row1: Double,
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: js.UndefOr[scala.Nothing],
-    column1Row0: Double,
-    column0Row1: js.UndefOr[scala.Nothing],
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: js.UndefOr[scala.Nothing],
-    column1Row0: Double,
-    column0Row1: Double,
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: Double,
-    column1Row0: js.UndefOr[scala.Nothing],
-    column0Row1: js.UndefOr[scala.Nothing],
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: Double,
-    column1Row0: js.UndefOr[scala.Nothing],
-    column0Row1: Double,
-    column1Row1: Double
-  ) = this()
-  def this(
-    column0Row0: Double,
-    column1Row0: Double,
-    column0Row1: js.UndefOr[scala.Nothing],
-    column1Row1: Double
-  ) = this()
+  def this(column0Row0: Double, column1Row0: Unit, column0Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Double, column0Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Unit, column0Row1: Double) = this()
   def this(column0Row0: Double, column1Row0: Double, column0Row1: Double, column1Row1: Double) = this()
+  def this(column0Row0: Double, column1Row0: Double, column0Row1: Unit, column1Row1: Double) = this()
+  def this(column0Row0: Double, column1Row0: Unit, column0Row1: Double, column1Row1: Double) = this()
+  def this(column0Row0: Double, column1Row0: Unit, column0Row1: Unit, column1Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Double, column0Row1: Double, column1Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Double, column0Row1: Unit, column1Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Unit, column0Row1: Double, column1Row1: Double) = this()
+  def this(column0Row0: Unit, column1Row0: Unit, column0Row1: Unit, column1Row1: Double) = this()
   
   def clone(result: Matrix2): Matrix2 = js.native
   
@@ -112,188 +72,144 @@ object Matrix2 {
   def IDENTITY_=(x: Matrix2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "Matrix2.abs")
-  @js.native
-  def abs(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def abs(matrix: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("abs")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.add")
-  @js.native
-  def add(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def add(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.clone")
-  @js.native
-  def clone_(matrix: Matrix2): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.clone")
-  @js.native
-  def clone_(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def clone_(matrix: Matrix2): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(matrix.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def clone_(matrix: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.equalsEpsilon")
-  @js.native
-  def equalsEpsilon(left: Matrix2, right: Matrix2, epsilon: Double): Boolean = js.native
+  @scala.inline
+  def equalsEpsilon(left: Matrix2, right: Matrix2, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.equals")
-  @js.native
-  def equals_(): Boolean = js.native
-  @JSImport("cesium", "Matrix2.equals")
-  @js.native
-  def equals_(left: js.UndefOr[scala.Nothing], right: Matrix2): Boolean = js.native
-  @JSImport("cesium", "Matrix2.equals")
-  @js.native
-  def equals_(left: Matrix2): Boolean = js.native
-  @JSImport("cesium", "Matrix2.equals")
-  @js.native
-  def equals_(left: Matrix2, right: Matrix2): Boolean = js.native
+  @scala.inline
+  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Unit, right: Matrix2): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Matrix2): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(left: Matrix2, right: Matrix2): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double]): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix2): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: Double): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromArray")
-  @js.native
-  def fromArray(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromArray(array: js.Array[Double]): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Double): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromArray(array: js.Array[Double], startingIndex: Unit, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromColumnMajorArray")
-  @js.native
-  def fromColumnMajorArray(values: js.Array[Double]): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromColumnMajorArray")
-  @js.native
-  def fromColumnMajorArray(values: js.Array[Double], result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromColumnMajorArray(values: js.Array[Double]): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColumnMajorArray")(values.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromColumnMajorArray(values: js.Array[Double], result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromColumnMajorArray")(values.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromRotation")
-  @js.native
-  def fromRotation(angle: Double): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromRotation")
-  @js.native
-  def fromRotation(angle: Double, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromRotation(angle: Double): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRotation")(angle.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromRotation(angle: Double, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRotation")(angle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromRowMajorArray")
-  @js.native
-  def fromRowMajorArray(values: js.Array[Double]): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromRowMajorArray")
-  @js.native
-  def fromRowMajorArray(values: js.Array[Double], result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromRowMajorArray(values: js.Array[Double]): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRowMajorArray")(values.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromRowMajorArray(values: js.Array[Double], result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRowMajorArray")(values.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromScale")
-  @js.native
-  def fromScale(scale: Cartesian2): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromScale")
-  @js.native
-  def fromScale(scale: Cartesian2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromScale(scale: Cartesian2): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScale")(scale.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromScale(scale: Cartesian2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromScale")(scale.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.fromUniformScale")
-  @js.native
-  def fromUniformScale(scale: Double): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.fromUniformScale")
-  @js.native
-  def fromUniformScale(scale: Double, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def fromUniformScale(scale: Double): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUniformScale")(scale.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def fromUniformScale(scale: Double, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUniformScale")(scale.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.getColumn")
-  @js.native
-  def getColumn(matrix: Matrix2, index: Double, result: Cartesian2): Cartesian2 = js.native
+  @scala.inline
+  def getColumn(matrix: Matrix2, index: Double, result: Cartesian2): Cartesian2 = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumn")(matrix.asInstanceOf[js.Any], index.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.getElementIndex")
-  @js.native
-  def getElementIndex(row: Double, column: Double): Double = js.native
+  @scala.inline
+  def getElementIndex(row: Double, column: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementIndex")(row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.getMaximumScale")
-  @js.native
-  def getMaximumScale(matrix: Matrix2): Double = js.native
+  @scala.inline
+  def getMaximumScale(matrix: Matrix2): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaximumScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.getRow")
-  @js.native
-  def getRow(matrix: Matrix2, index: Double, result: Cartesian2): Cartesian2 = js.native
+  @scala.inline
+  def getRow(matrix: Matrix2, index: Double, result: Cartesian2): Cartesian2 = (^.asInstanceOf[js.Dynamic].applyDynamic("getRow")(matrix.asInstanceOf[js.Any], index.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.getScale")
-  @js.native
-  def getScale(matrix: Matrix2, result: Cartesian2): Cartesian2 = js.native
+  @scala.inline
+  def getScale(matrix: Matrix2, result: Cartesian2): Cartesian2 = (^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.multiply")
-  @js.native
-  def multiply(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def multiply(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.multiplyByScalar")
-  @js.native
-  def multiplyByScalar(matrix: Matrix2, scalar: Double, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def multiplyByScalar(matrix: Matrix2, scalar: Double, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(matrix.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.multiplyByVector")
-  @js.native
-  def multiplyByVector(matrix: Matrix2, cartesian: Cartesian2, result: Cartesian2): Cartesian2 = js.native
+  @scala.inline
+  def multiplyByVector(matrix: Matrix2, cartesian: Cartesian2, result: Cartesian2): Cartesian2 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByVector")(matrix.asInstanceOf[js.Any], cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.negate")
-  @js.native
-  def negate(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def negate(matrix: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("negate")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.pack")
-  @js.native
-  def pack(value: Matrix2, array: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("cesium", "Matrix2.pack")
-  @js.native
-  def pack(value: Matrix2, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
+  @scala.inline
+  def pack(value: Matrix2, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def pack(value: Matrix2, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.setColumn")
-  @js.native
-  def setColumn(matrix: Matrix2, index: Double, cartesian: Cartesian2, result: Cartesian2): Matrix2 = js.native
+  @scala.inline
+  def setColumn(matrix: Matrix2, index: Double, cartesian: Cartesian2, result: Cartesian2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("setColumn")(matrix.asInstanceOf[js.Any], index.asInstanceOf[js.Any], cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.setRow")
-  @js.native
-  def setRow(matrix: Matrix2, index: Double, cartesian: Cartesian2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def setRow(matrix: Matrix2, index: Double, cartesian: Cartesian2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("setRow")(matrix.asInstanceOf[js.Any], index.asInstanceOf[js.Any], cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.subtract")
-  @js.native
-  def subtract(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def subtract(left: Matrix2, right: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.toArray")
-  @js.native
-  def toArray(matrix: Matrix2): js.Array[Double] = js.native
-  @JSImport("cesium", "Matrix2.toArray")
-  @js.native
-  def toArray(matrix: Matrix2, result: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toArray(matrix: Matrix2): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def toArray(matrix: Matrix2, result: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.transpose")
-  @js.native
-  def transpose(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def transpose(matrix: Matrix2, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
   
   /* static member */
-  @JSImport("cesium", "Matrix2.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix2): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): Matrix2 = js.native
-  @JSImport("cesium", "Matrix2.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): Matrix2 = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Matrix2]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: Matrix2): Matrix2 = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix2]
 }

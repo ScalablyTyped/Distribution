@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -25,23 +24,22 @@ object printerProvider {
     ]
   ]
   
-  @js.native
   trait PrintJob extends StObject {
     
     /** The document content type. Supported formats are "application/pdf" and "image/pwg-raster". */
-    var contentType: String = js.native
+    var contentType: String
     
     /** Blob containing the document data to print. Format must match |contentType|. */
-    var document: Blob = js.native
+    var document: Blob
     
     /** ID of the printer which should handle the job. */
-    var printerId: String = js.native
+    var printerId: String
     
     /** Print ticket in  CJT format. */
-    var ticket: js.Object = js.native
+    var ticket: js.Object
     
     /** The print job title. */
-    var title: String = js.native
+    var title: String
   }
   object PrintJob {
     
@@ -79,11 +77,10 @@ object printerProvider {
     ]
   ]
   
-  @js.native
   trait PrinterCapabilities extends StObject {
     
     /** Device capabilities in CDD format. */
-    var capabilities: js.Any = js.native
+    var capabilities: js.Any
   }
   object PrinterCapabilities {
     
@@ -101,17 +98,16 @@ object printerProvider {
     }
   }
   
-  @js.native
   trait PrinterInfo extends StObject {
     
     /** Optional. Printer's human readable description. */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** Unique printer ID. */
-    var id: String = js.native
+    var id: String
     
     /** Printer's human readable name. */
-    var name: String = js.native
+    var name: String
   }
   object PrinterInfo {
     

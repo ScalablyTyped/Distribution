@@ -4,15 +4,13 @@ import typings.cassandraDriver.mod.Client
 import typings.cassandraDriver.mod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriverOptions extends StObject {
   
-  var connection: js.UndefOr[Client | ClientOptions] = js.native
+  var connection: js.UndefOr[Client | ClientOptions] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
 }
 object DriverOptions {
   

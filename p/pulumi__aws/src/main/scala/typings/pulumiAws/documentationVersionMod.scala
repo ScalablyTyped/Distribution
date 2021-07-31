@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentationVersionMod {
@@ -43,6 +42,10 @@ object documentationVersionMod {
   /* static members */
   object DocumentationVersion {
     
+    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DocumentationVersion resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object documentationVersionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DocumentationVersion = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DocumentationVersion = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentationVersionState): DocumentationVersion = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentationVersionState, opts: CustomResourceOptions): DocumentationVersion = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DocumentationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DocumentationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DocumentationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentationVersionState): DocumentationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DocumentationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentationVersionState, opts: CustomResourceOptions): DocumentationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationVersion]
     
     /**
       * Returns true if the given object is an instance of DocumentationVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ Boolean]
   }
   
-  @js.native
   trait DocumentationVersionArgs extends StObject {
     
     /**
       * The description of the API documentation version.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated Rest API
       */
-    val restApiId: Input[String] = js.native
+    val restApiId: Input[String]
     
     /**
       * The version identifier of the API documentation snapshot.
       */
-    val version: Input[String] = js.native
+    val version: Input[String]
   }
   object DocumentationVersionArgs {
     
@@ -117,23 +114,22 @@ object documentationVersionMod {
     }
   }
   
-  @js.native
   trait DocumentationVersionState extends StObject {
     
     /**
       * The description of the API documentation version.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated Rest API
       */
-    val restApiId: js.UndefOr[Input[String]] = js.native
+    val restApiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version identifier of the API documentation snapshot.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object DocumentationVersionState {
     

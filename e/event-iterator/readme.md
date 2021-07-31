@@ -11,8 +11,8 @@ Convert event emitters and event targets to ES async iterators
 | Full name          | event-iterator |
 | Keywords           | async, async-iterator, event-emitter, event-target, stream, await, for-await, esnext, node, browser |
 | # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 258630 |
+| # dependents       | 19 |
+| # downloads        | 405577 |
 | # stars            | 0 |
 
 ## Links

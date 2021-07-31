@@ -8,7 +8,6 @@ import typings.googleGax.operationsClientMod.OperationsClient
 import typings.googleGax.streamingMod.StreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptorMod {
@@ -78,10 +77,9 @@ object descriptorMod {
     def this(streamType: StreamType) = this()
   }
   
-  @js.native
   trait Descriptor extends StObject {
     
-    def getApiCaller(settings: CallSettings): APICaller = js.native
+    def getApiCaller(settings: CallSettings): APICaller
   }
   object Descriptor {
     

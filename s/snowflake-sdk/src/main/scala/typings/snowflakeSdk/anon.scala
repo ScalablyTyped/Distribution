@@ -9,7 +9,6 @@ import typings.snowflakeSdk.snowflakeSdkStrings.String
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -20,7 +19,7 @@ object anon {
     var binds: js.UndefOr[typings.snowflakeSdk.mod.Binds] = js.native
     
     def complete(err: Error, stmt: Statement): Unit = js.native
-    def complete(err: Error, stmt: Statement, rows: js.Array[_]): Unit = js.native
+    def complete(err: Error, stmt: Statement, rows: js.Array[js.Any]): Unit = js.native
     
     /**
       * ### Related Docs

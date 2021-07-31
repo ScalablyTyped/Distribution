@@ -2,29 +2,27 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Keyboard extends StObject {
   
-  var automaticScrollToTopOnHiding: Boolean = js.native
+  var automaticScrollToTopOnHiding: Boolean
   
-  def disableScrollingInShrinkView(disable: Boolean): Unit = js.native
+  def disableScrollingInShrinkView(disable: Boolean): Unit
   
-  def hideFormAccessoryBar(hide: Boolean): Unit = js.native
+  def hideFormAccessoryBar(hide: Boolean): Unit
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var onhide: js.Function = js.native
+  var onhide: js.Function
   
-  var onhiding: js.Function = js.native
+  var onhiding: js.Function
   
-  var onshow: js.Function = js.native
+  var onshow: js.Function
   
-  var onshowing: js.Function = js.native
+  var onshowing: js.Function
   
-  def shrinkView(shrink: Boolean): Unit = js.native
+  def shrinkView(shrink: Boolean): Unit
 }
 object Keyboard {
   

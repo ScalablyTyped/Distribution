@@ -2,27 +2,25 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreHelpers extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def go(nextIndex: Double): Unit = js.native
+  def go(nextIndex: Double): Unit
   
-  def info(): StoreState = js.native
+  def info(): StoreState
   
-  def next(): Unit = js.native
+  def next(): Unit
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  def prev(): Unit = js.native
+  def prev(): Unit
   
-  def reset(restart: Boolean): Unit = js.native
+  def reset(restart: Boolean): Unit
   
-  def skip(): Unit = js.native
+  def skip(): Unit
 }
 object StoreHelpers {
   

@@ -5,24 +5,22 @@ import typings.intercomClient.userMod.UserIdentifier
 import typings.intercomClient.visitorMod.VisitorIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var identifier: VisitorIdentifier = js.native
+  var identifier: VisitorIdentifier
   
-  var `type`: user = js.native
+  var `type`: user
   
-  var user: UserIdentifier = js.native
+  var user: UserIdentifier
 }
 object Type {
   
   @scala.inline
-  def apply(identifier: VisitorIdentifier, `type`: user, user: UserIdentifier): Type = {
+  def apply(identifier: VisitorIdentifier, user: UserIdentifier): Type = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[Type]
   }
   

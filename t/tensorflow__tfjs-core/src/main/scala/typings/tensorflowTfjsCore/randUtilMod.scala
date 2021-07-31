@@ -7,31 +7,27 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object randUtilMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "MPRandGauss")
   @js.native
-  class MPRandGauss protected () extends RandomBase {
+  class MPRandGauss protected ()
+    extends StObject
+       with RandomBase {
     def this(mean: Double, stdDeviation: Double) = this()
     def this(mean: Double, stdDeviation: Double, dtype: float32 | int32) = this()
-    def this(mean: Double, stdDeviation: Double, dtype: js.UndefOr[float32 | int32], truncated: Boolean) = this()
-    def this(
-      mean: Double,
-      stdDeviation: Double,
-      dtype: js.UndefOr[float32 | int32],
-      truncated: js.UndefOr[scala.Nothing],
-      seed: Double
-    ) = this()
-    def this(
-      mean: Double,
-      stdDeviation: Double,
-      dtype: js.UndefOr[float32 | int32],
-      truncated: Boolean,
-      seed: Double
-    ) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: float32 | int32, truncated: Boolean) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: Unit, truncated: Boolean) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: float32 | int32, truncated: Boolean, seed: Double) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: float32 | int32, truncated: Unit, seed: Double) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: Unit, truncated: Boolean, seed: Double) = this()
+    def this(mean: Double, stdDeviation: Double, dtype: Unit, truncated: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non-floating-point numbers. */
     var convertValue: js.Any = js.native
@@ -47,6 +43,9 @@ object randUtilMod {
     
     var nextVal: js.Any = js.native
     
+    /* CompleteClass */
+    override def nextValue(): Double = js.native
+    
     var random: js.Any = js.native
     
     var stdDev: js.Any = js.native
@@ -58,7 +57,9 @@ object randUtilMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "RandGamma")
   @js.native
-  class RandGamma protected () extends RandomGamma {
+  class RandGamma protected ()
+    extends StObject
+       with RandomGamma {
     def this(alpha: Double, beta: Double, dtype: float32) = this()
     def this(alpha: Double, beta: Double, dtype: int32) = this()
     def this(alpha: Double, beta: Double, dtype: float32, seed: Double) = this()
@@ -77,6 +78,9 @@ object randUtilMod {
     
     var dtype: js.Any = js.native
     
+    /* CompleteClass */
+    override def nextValue(): Double = js.native
+    
     var randn: js.Any = js.native
     
     var randu: js.Any = js.native
@@ -84,32 +88,32 @@ object randUtilMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "UniformRandom")
   @js.native
-  class UniformRandom () extends RandomBase {
+  class UniformRandom ()
+    extends StObject
+       with RandomBase {
     def this(min: Double) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Double) = this()
     def this(min: Double, max: Double) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dtype: float32 | int32) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: float32 | int32) = this()
-    def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: float32 | int32) = this()
+    def this(min: Unit, max: Double) = this()
     def this(min: Double, max: Double, dtype: float32 | int32) = this()
-    def this(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      dtype: js.UndefOr[float32 | int32],
-      seed: String
-    ) = this()
-    def this(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      dtype: js.UndefOr[float32 | int32],
-      seed: Double
-    ) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: js.UndefOr[float32 | int32], seed: String) = this()
-    def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: js.UndefOr[float32 | int32], seed: Double) = this()
-    def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: js.UndefOr[float32 | int32], seed: String) = this()
-    def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: js.UndefOr[float32 | int32], seed: Double) = this()
-    def this(min: Double, max: Double, dtype: js.UndefOr[float32 | int32], seed: String) = this()
-    def this(min: Double, max: Double, dtype: js.UndefOr[float32 | int32], seed: Double) = this()
+    def this(min: Double, max: Unit, dtype: float32 | int32) = this()
+    def this(min: Unit, max: Double, dtype: float32 | int32) = this()
+    def this(min: Unit, max: Unit, dtype: float32 | int32) = this()
+    def this(min: Double, max: Double, dtype: float32 | int32, seed: String) = this()
+    def this(min: Double, max: Double, dtype: float32 | int32, seed: Double) = this()
+    def this(min: Double, max: Double, dtype: Unit, seed: String) = this()
+    def this(min: Double, max: Double, dtype: Unit, seed: Double) = this()
+    def this(min: Double, max: Unit, dtype: float32 | int32, seed: String) = this()
+    def this(min: Double, max: Unit, dtype: float32 | int32, seed: Double) = this()
+    def this(min: Double, max: Unit, dtype: Unit, seed: String) = this()
+    def this(min: Double, max: Unit, dtype: Unit, seed: Double) = this()
+    def this(min: Unit, max: Double, dtype: float32 | int32, seed: String) = this()
+    def this(min: Unit, max: Double, dtype: float32 | int32, seed: Double) = this()
+    def this(min: Unit, max: Double, dtype: Unit, seed: String) = this()
+    def this(min: Unit, max: Double, dtype: Unit, seed: Double) = this()
+    def this(min: Unit, max: Unit, dtype: float32 | int32, seed: String) = this()
+    def this(min: Unit, max: Unit, dtype: float32 | int32, seed: Double) = this()
+    def this(min: Unit, max: Unit, dtype: Unit, seed: String) = this()
+    def this(min: Unit, max: Unit, dtype: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non floating point numbers. */
     var canReturnFloat: js.Any = js.native
@@ -120,37 +124,33 @@ object randUtilMod {
     
     var min: js.Any = js.native
     
+    /* CompleteClass */
+    override def nextValue(): Double = js.native
+    
     var random: js.Any = js.native
     
     var range: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "expectArrayInMeanStdRange")
-  @js.native
-  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "expectArrayInMeanStdRange")
-  @js.native
-  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "expectArrayInMeanStdRange")
-  @js.native
-  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "expectArrayInMeanStdRange")
-  @js.native
-  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = js.native
+  @scala.inline
+  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "jarqueBeraNormalityTest")
-  @js.native
-  def jarqueBeraNormalityTest(values: js.Array[Double]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "jarqueBeraNormalityTest")
-  @js.native
-  def jarqueBeraNormalityTest(values: TypedArray): Unit = js.native
+  @scala.inline
+  def jarqueBeraNormalityTest(values: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def jarqueBeraNormalityTest(values: TypedArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait RandGammaDataTypes extends StObject {
     
-    var float32: Float32Array = js.native
+    var float32: Float32Array
     
-    var int32: Int32Array = js.native
+    var int32: Int32Array
   }
   object RandGammaDataTypes {
     
@@ -171,12 +171,11 @@ object randUtilMod {
     }
   }
   
-  @js.native
   trait RandNormalDataTypes extends StObject {
     
-    var float32: Float32Array = js.native
+    var float32: Float32Array
     
-    var int32: Int32Array = js.native
+    var int32: Int32Array
   }
   object RandNormalDataTypes {
     
@@ -197,10 +196,9 @@ object randUtilMod {
     }
   }
   
-  @js.native
   trait RandomBase extends StObject {
     
-    def nextValue(): Double = js.native
+    def nextValue(): Double
   }
   object RandomBase {
     
@@ -218,10 +216,9 @@ object randUtilMod {
     }
   }
   
-  @js.native
   trait RandomGamma extends StObject {
     
-    def nextValue(): Double = js.native
+    def nextValue(): Double
   }
   object RandomGamma {
     

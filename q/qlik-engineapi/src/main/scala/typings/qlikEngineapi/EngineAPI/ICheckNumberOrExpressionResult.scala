@@ -2,16 +2,16 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CheckNumberOrExpressionResult width extend ExpressionResult
   */
-@js.native
-trait ICheckNumberOrExpressionResult extends IExpressionResult {
+trait ICheckNumberOrExpressionResult
+  extends StObject
+     with IExpressionResult {
   
-  var qErrorMsg: String = js.native
+  var qErrorMsg: String
 }
 object ICheckNumberOrExpressionResult {
   

@@ -2,17 +2,15 @@ package typings.codemirror.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changed extends StObject {
   
-  var changed: js.UndefOr[FromTo] = js.native
+  var changed: js.UndefOr[FromTo] = js.undefined
   
-  var doc: typings.codemirror.mod.Doc = js.native
+  var doc: typings.codemirror.mod.Doc
   
-  var name: String = js.native
+  var name: String
 }
 object Changed {
   

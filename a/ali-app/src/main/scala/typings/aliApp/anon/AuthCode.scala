@@ -3,19 +3,17 @@ package typings.aliApp.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthCode extends StObject {
   
-  var authCode: String = js.native
+  var authCode: String
   
   // 授权码
-  var authErrorScope: StringDictionary[Double] = js.native
+  var authErrorScope: StringDictionary[Double]
   
   // 失败的授权类型，key是授权失败的 scope，value 是对应的错误码
-  var authSucessScope: js.Array[String] = js.native
+  var authSucessScope: js.Array[String]
 }
 object AuthCode {
   

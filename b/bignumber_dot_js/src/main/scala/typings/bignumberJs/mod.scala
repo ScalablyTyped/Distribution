@@ -22,7 +22,6 @@ import typings.bignumberJs.mod.BigNumber.RoundingMode
 import typings.bignumberJs.mod.BigNumber.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -243,9 +242,8 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @JSImport("bignumber.js", "default.clone")
-    @js.native
-    def clone(`object`: Config): Constructor = js.native
+    @scala.inline
+    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -280,9 +278,8 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @JSImport("bignumber.js", "default.config")
-    @js.native
-    def config(`object`: Config): Config = js.native
+    @scala.inline
+    def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
@@ -305,9 +302,8 @@ object mod {
       *
       * @param value The value to test.
       */
-    @JSImport("bignumber.js", "default.isBigNumber")
-    @js.native
-    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = js.native
+    @scala.inline
+    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -324,9 +320,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "default.max")
-    @js.native
-    def max(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -343,9 +338,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "default.maximum")
-    @js.native
-    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -362,9 +356,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "default.min")
-    @js.native
-    def min(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -381,9 +374,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "default.minimum")
-    @js.native
-    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a new BigNumber with a pseudo-random value equal to or greater than 0 and less than 1.
@@ -417,12 +409,10 @@ object mod {
       *
       * @param [decimalPlaces] Decimal places, integer, 0 to 1e+9.
       */
-    @JSImport("bignumber.js", "default.random")
-    @js.native
-    def random(): typings.bignumberJs.mod.BigNumber = js.native
-    @JSImport("bignumber.js", "default.random")
-    @js.native
-    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    @scala.inline
+    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -457,9 +447,8 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @JSImport("bignumber.js", "default.set")
-    @js.native
-    def set(`object`: Config): Config = js.native
+    @scala.inline
+    def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns a BigNumber whose value is the sum of the arguments.
@@ -476,14 +465,15 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "default.sum")
-    @js.native
-    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
   }
   
   @JSImport("bignumber.js", "BigNumber")
   @js.native
-  class BigNumber protected () extends Instance {
+  class BigNumber protected ()
+    extends StObject
+       with Instance {
     /**
       * Returns a new instance of a BigNumber object with value `n`, where `n` is a numeric value in
       * the specified `base`, or base 10 if `base` is omitted or is `null` or `undefined`.
@@ -611,6 +601,10 @@ object mod {
       * ```
       */
     def absoluteValue(): BigNumber = js.native
+    
+    /** The coefficient of the value of this BigNumber, an array of base 1e14 integer numbers, or null. */
+    /* CompleteClass */
+    override val c: js.Array[Double] | Null = js.native
     
     /**
       *  Returns |                                                               |
@@ -757,27 +751,10 @@ object mod {
     def dp(decimalPlaces: Double): BigNumber = js.native
     def dp(decimalPlaces: Double, roundingMode: RoundingMode): BigNumber = js.native
     
-    /**
-      * Returns `true` if the value of this BigNumber is equal to the value of `n`, otherwise returns
-      * `false`.
-      *
-      * As with JavaScript, `NaN` does not equal `NaN`.
-      *
-      * ```ts
-      * 0 === 1e-324                    // true
-      * x = new BigNumber(0)
-      * x.eq('1e-324')                  // false
-      * BigNumber(-0).eq(x)             // true  ( -0 === 0 )
-      * BigNumber(255).eq('ff', 16)     // true
-      *
-      * y = new BigNumber(NaN)
-      * y.eq(NaN)                       // false
-      * ```
-      *
-      * @param n A numeric value.
-      * @param [base] The base of n.
-      */
-    def eq(n: Value): Boolean = js.native
+    /** The exponent of the value of this BigNumber, an integer number, -1000000000 to 1000000000, or null. */
+    /* CompleteClass */
+    override val e: Double | Null = js.native
+    
     def eq(n: Value, base: Double): Boolean = js.native
     
     def exponentiatedBy(n: Double): BigNumber = js.native
@@ -1297,6 +1274,10 @@ object mod {
     def precision(significantDigits: Double): BigNumber = js.native
     def precision(significantDigits: Double, roundingMode: RoundingMode): BigNumber = js.native
     
+    /** The sign of the value of this BigNumber, -1, 1, or null. */
+    /* CompleteClass */
+    override val s: Double | Null = js.native
+    
     /**
       * Returns the number of significant digits of the value of this BigNumber,
       * or `null` if the value of this BigNumber is ±`Infinity` or `NaN`.
@@ -1755,9 +1736,8 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @JSImport("bignumber.js", "BigNumber.clone")
-    @js.native
-    def clone(`object`: Config): Constructor = js.native
+    @scala.inline
+    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -1792,9 +1772,8 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @JSImport("bignumber.js", "BigNumber.config")
-    @js.native
-    def config(`object`: Config): Config = js.native
+    @scala.inline
+    def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
@@ -1817,9 +1796,8 @@ object mod {
       *
       * @param value The value to test.
       */
-    @JSImport("bignumber.js", "BigNumber.isBigNumber")
-    @js.native
-    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = js.native
+    @scala.inline
+    def isBigNumber(value: js.Any): /* is bignumber.js.bignumber.js.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is bignumber.js.bignumber.js.BigNumber */ Boolean]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -1836,9 +1814,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "BigNumber.max")
-    @js.native
-    def max(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def max(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the maximum of the arguments.
@@ -1855,9 +1832,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "BigNumber.maximum")
-    @js.native
-    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def maximum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -1874,9 +1850,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "BigNumber.min")
-    @js.native
-    def min(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def min(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a BigNumber whose value is the minimum of the arguments.
@@ -1893,9 +1868,8 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "BigNumber.minimum")
-    @js.native
-    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def minimum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Returns a new BigNumber with a pseudo-random value equal to or greater than 0 and less than 1.
@@ -1929,12 +1903,10 @@ object mod {
       *
       * @param [decimalPlaces] Decimal places, integer, 0 to 1e+9.
       */
-    @JSImport("bignumber.js", "BigNumber.random")
-    @js.native
-    def random(): typings.bignumberJs.mod.BigNumber = js.native
-    @JSImport("bignumber.js", "BigNumber.random")
-    @js.native
-    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def random(): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.bignumberJs.mod.BigNumber]
+    @scala.inline
+    def random(decimalPlaces: Double): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(decimalPlaces.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /**
       * Configures the settings that apply to this BigNumber constructor.
@@ -1969,9 +1941,8 @@ object mod {
       *
       * @param object The configuration object.
       */
-    @JSImport("bignumber.js", "BigNumber.set")
-    @js.native
-    def set(`object`: Config): Config = js.native
+    @scala.inline
+    def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
       * Returns a BigNumber whose value is the sum of the arguments.
@@ -1988,12 +1959,10 @@ object mod {
       *
       * @param n A numeric value.
       */
-    @JSImport("bignumber.js", "BigNumber.sum")
-    @js.native
-    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = js.native
+    @scala.inline
+    def sum(n: Value*): typings.bignumberJs.mod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bignumberJs.mod.BigNumber]
     
     /** See `BigNumber.config` (alias `BigNumber.set`) and `BigNumber.clone`. */
-    @js.native
     trait Config extends StObject {
       
       /**
@@ -2014,7 +1983,7 @@ object mod {
         * x.toString(12)              // 'T'
         * ```
         */
-      var ALPHABET: js.UndefOr[String] = js.native
+      var ALPHABET: js.UndefOr[String] = js.undefined
       
       /**
         * A boolean: `true` or `false`. Default value: `false`.
@@ -2041,7 +2010,7 @@ object mod {
         * BigNumber.random()              // 0.54340758610486147524
         * ```
         */
-      var CRYPTO: js.UndefOr[Boolean] = js.native
+      var CRYPTO: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An integer, 0 to 1e+9. Default value: 20.
@@ -2055,7 +2024,7 @@ object mod {
         * BigNumber.set({ DECIMAL_PLACES: 5 })
         * ```
         */
-      var DECIMAL_PLACES: js.UndefOr[Double] = js.native
+      var DECIMAL_PLACES: js.UndefOr[Double] = js.undefined
       
       /**
         * An integer, 0 to 1e+9, or an array, [-1e+9 to 0, 0 to 1e+9].
@@ -2095,7 +2064,7 @@ object mod {
         * Calling `toString` with a base argument, e.g. `toString(10)`, will also always return normal
         * notation.
         */
-      var EXPONENTIAL_AT: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+      var EXPONENTIAL_AT: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
       
       /**
         * An object including any number of the properties shown below.
@@ -2133,7 +2102,7 @@ object mod {
         * })
         * ```
         */
-      var FORMAT: js.UndefOr[Format] = js.native
+      var FORMAT: js.UndefOr[Format] = js.undefined
       
       /**
         * An integer, 0, 1, 3, 6 or 9. Default value: `BigNumber.ROUND_DOWN` (1).
@@ -2167,7 +2136,7 @@ object mod {
         * BigNumber.set({ MODULO_MODE: 9 })          // equivalent
         * ```
         */
-      var MODULO_MODE: js.UndefOr[ModuloMode] = js.native
+      var MODULO_MODE: js.UndefOr[ModuloMode] = js.undefined
       
       /**
         * An integer, 0 to 1e+9. Default value: 0.
@@ -2183,7 +2152,7 @@ object mod {
         * BigNumber.config({ POW_PRECISION: 100 })
         * ```
         */
-      var POW_PRECISION: js.UndefOr[Double] = js.native
+      var POW_PRECISION: js.UndefOr[Double] = js.undefined
       
       /**
         * An integer, magnitude 1 to 1e+9, or an array, [-1e+9 to -1, 1 to 1e+9].
@@ -2218,7 +2187,7 @@ object mod {
         * The largest possible magnitude of a finite BigNumber is 9.999...e+1000000000.
         * The smallest possible magnitude of a non-zero BigNumber is 1e-1000000000.
         */
-      var RANGE: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+      var RANGE: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
       
       /**
         * An integer, 0 to 8. Default value: `BigNumber.ROUND_HALF_UP` (4).
@@ -2234,7 +2203,7 @@ object mod {
         * BigNumber.set({ ROUNDING_MODE: BigNumber.ROUND_UP })
         * ```
         */
-      var ROUNDING_MODE: js.UndefOr[RoundingMode] = js.native
+      var ROUNDING_MODE: js.UndefOr[RoundingMode] = js.undefined
     }
     object Config {
       
@@ -2305,7 +2274,8 @@ object mod {
     
     @js.native
     trait Constructor
-      extends Instantiable1[/* n */ Value, typings.bignumberJs.mod.BigNumber]
+      extends StObject
+         with Instantiable1[/* n */ Value, typings.bignumberJs.mod.BigNumber]
          with Instantiable2[/* n */ Value, /* base */ Double, typings.bignumberJs.mod.BigNumber] {
       
       /** Helps ES6 import. */
@@ -2605,32 +2575,31 @@ object mod {
     }
     
     /** See `FORMAT` and `toFormat`. */
-    @js.native
     trait Format extends StObject {
       
       /** The decimal separator. */
-      var decimalSeparator: js.UndefOr[String] = js.native
+      var decimalSeparator: js.UndefOr[String] = js.undefined
       
       /** The grouping separator of the fraction part. */
-      var fractionGroupSeparator: js.UndefOr[String] = js.native
+      var fractionGroupSeparator: js.UndefOr[String] = js.undefined
       
       /** The grouping size of the fraction part. */
-      var fractionGroupSize: js.UndefOr[Double] = js.native
+      var fractionGroupSize: js.UndefOr[Double] = js.undefined
       
       /** The grouping separator of the integer part. */
-      var groupSeparator: js.UndefOr[String] = js.native
+      var groupSeparator: js.UndefOr[String] = js.undefined
       
       /** The primary grouping size of the integer part. */
-      var groupSize: js.UndefOr[Double] = js.native
+      var groupSize: js.UndefOr[Double] = js.undefined
       
       /** The string to prepend. */
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
       /** The secondary grouping size of the integer part. */
-      var secondaryGroupSize: js.UndefOr[Double] = js.native
+      var secondaryGroupSize: js.UndefOr[Double] = js.undefined
       
       /** The string to append. */
-      var suffix: js.UndefOr[String] = js.native
+      var suffix: js.UndefOr[String] = js.undefined
     }
     object Format {
       
@@ -2693,24 +2662,24 @@ object mod {
       }
     }
     
-    @js.native
     trait Instance
-      extends /* key */ StringDictionary[js.Any] {
+      extends StObject
+         with /* key */ StringDictionary[js.Any] {
       
       /** The coefficient of the value of this BigNumber, an array of base 1e14 integer numbers, or null. */
-      val c: js.Array[Double] | Null = js.native
+      val c: js.Array[Double] | Null
       
       /** The exponent of the value of this BigNumber, an integer number, -1000000000 to 1000000000, or null. */
-      val e: Double | Null = js.native
+      val e: Double | Null
       
       /** The sign of the value of this BigNumber, -1, 1, or null. */
-      val s: Double | Null = js.native
+      val s: Double | Null
     }
     object Instance {
       
       @scala.inline
       def apply(): Instance = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(c = null, e = null, s = null)
         __obj.asInstanceOf[Instance]
       }
       

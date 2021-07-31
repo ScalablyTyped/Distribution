@@ -4,24 +4,24 @@ import typings.marked.markedStrings.strong
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Strong extends Token {
+trait Strong
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: strong = js.native
+  var `type`: strong
 }
 object Strong {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: strong): Strong = {
+  def apply(raw: String, text: String): Strong = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("strong")
     __obj.asInstanceOf[Strong]
   }
   

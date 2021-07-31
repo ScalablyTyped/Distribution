@@ -2,22 +2,20 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLSelectionObject extends StObject {
   
   @JSName("MSHTML.IHTMLSelectionObject_typekey")
-  var MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject = js.native
+  var MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def createRange(): js.Any = js.native
+  def createRange(): js.Any
   
-  def empty(): Unit = js.native
+  def empty(): Unit
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object IHTMLSelectionObject {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response for listing creative and deal associations
   */
-@js.native
 trait SchemaListDealAssociationsResponse extends StObject {
   
   /**
     * The list of associations.
     */
-  var associations: js.UndefOr[js.Array[SchemaCreativeDealAssociation]] = js.native
+  var associations: js.UndefOr[js.Array[SchemaCreativeDealAssociation]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
@@ -22,7 +20,7 @@ trait SchemaListDealAssociationsResponse extends StObject {
     * &#39;ListDealAssociation&#39; method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListDealAssociationsResponse {
   

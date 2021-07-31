@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediastore {
@@ -27,11 +26,15 @@ object mediastore {
       */
     def this(name: String) = this()
     def this(name: String, args: ContainerArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ContainerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Container {
+    
+    @JSImport("@pulumi/aws", "mediastore.Container")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Container resource's state with the given name, ID, and optional extra
@@ -42,26 +45,21 @@ object mediastore {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "mediastore.Container.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.mediastoreContainerMod.Container = js.native
-    @JSImport("@pulumi/aws", "mediastore.Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mediastoreContainerMod.Container = js.native
-    @JSImport("@pulumi/aws", "mediastore.Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerState): typings.pulumiAws.mediastoreContainerMod.Container = js.native
-    @JSImport("@pulumi/aws", "mediastore.Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerState, opts: CustomResourceOptions): typings.pulumiAws.mediastoreContainerMod.Container = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.mediastoreContainerMod.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mediastoreContainerMod.Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.mediastoreContainerMod.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mediastoreContainerMod.Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerState): typings.pulumiAws.mediastoreContainerMod.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mediastoreContainerMod.Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerState, opts: CustomResourceOptions): typings.pulumiAws.mediastoreContainerMod.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mediastoreContainerMod.Container]
     
     /**
       * Returns true if the given object is an instance of Container.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "mediastore.Container.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "mediastore.ContainerPolicy")
@@ -81,6 +79,10 @@ object mediastore {
   /* static members */
   object ContainerPolicy {
     
+    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ContainerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,25 +92,20 @@ object mediastore {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.containerPolicyMod.ContainerPolicy = js.native
-    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.containerPolicyMod.ContainerPolicy = js.native
-    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerPolicyState): typings.pulumiAws.containerPolicyMod.ContainerPolicy = js.native
-    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.containerPolicyMod.ContainerPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.containerPolicyMod.ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.containerPolicyMod.ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.containerPolicyMod.ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.containerPolicyMod.ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerPolicyState): typings.pulumiAws.containerPolicyMod.ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.containerPolicyMod.ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.containerPolicyMod.ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.containerPolicyMod.ContainerPolicy]
     
     /**
       * Returns true if the given object is an instance of ContainerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "mediastore.ContainerPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean]
   }
 }

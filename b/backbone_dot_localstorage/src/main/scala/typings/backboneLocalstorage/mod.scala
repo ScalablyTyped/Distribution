@@ -4,7 +4,6 @@ import typings.backboneLocalstorage.mod.backboneAugmentingMod.LocalStorage
 import typings.backboneLocalstorage.mod.backboneAugmentingMod.Serializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,12 +51,11 @@ object mod {
       def update(model: js.Any): js.Any = js.native
     }
     
-    @js.native
     trait Serializer extends StObject {
       
-      def deserialize(data: js.Any): js.Any = js.native
+      def deserialize(data: js.Any): js.Any
       
-      def serialize(item: js.Any): js.Any = js.native
+      def serialize(item: js.Any): js.Any
     }
     object Serializer {
       

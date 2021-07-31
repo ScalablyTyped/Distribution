@@ -3,7 +3,6 @@ package typings.nodeIsbn
 import typings.nodeIsbn.mod.isbn.BookLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeIsbnStrings {
@@ -14,17 +13,23 @@ object nodeIsbnStrings {
   def BOOK: BOOK = "BOOK".asInstanceOf[BOOK]
   
   @js.native
-  sealed trait en extends BookLanguage
+  sealed trait en
+    extends StObject
+       with BookLanguage
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait es extends BookLanguage
+  sealed trait es
+    extends StObject
+       with BookLanguage
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   
   @js.native
-  sealed trait fr extends BookLanguage
+  sealed trait fr
+    extends StObject
+       with BookLanguage
   @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
   
@@ -44,7 +49,9 @@ object nodeIsbnStrings {
   def openlibrary: openlibrary = "openlibrary".asInstanceOf[openlibrary]
   
   @js.native
-  sealed trait unknown extends BookLanguage
+  sealed trait unknown
+    extends StObject
+       with BookLanguage
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   

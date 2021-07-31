@@ -2,36 +2,34 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IotSiteWiseAction extends StObject {
   
   /**
     * The ID of the asset that has the specified property. You can specify an expression.
     */
-  var assetId: js.UndefOr[AssetId] = js.native
+  var assetId: js.UndefOr[AssetId] = js.undefined
   
   /**
     * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier. You can also specify an expression.
     */
-  var entryId: js.UndefOr[AssetPropertyEntryId] = js.native
+  var entryId: js.UndefOr[AssetPropertyEntryId] = js.undefined
   
   /**
     * The alias of the asset property. You can also specify an expression.
     */
-  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.native
+  var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
   /**
     * The ID of the asset property. You can specify an expression.
     */
-  var propertyId: js.UndefOr[AssetPropertyId] = js.native
+  var propertyId: js.UndefOr[AssetPropertyId] = js.undefined
   
   /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information. 
     */
-  var propertyValue: AssetPropertyValue = js.native
+  var propertyValue: AssetPropertyValue
 }
 object IotSiteWiseAction {
   

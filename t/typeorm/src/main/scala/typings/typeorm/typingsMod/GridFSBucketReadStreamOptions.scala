@@ -2,31 +2,29 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFSBucketReadStreamOptions extends StObject {
   
   /**
     * Optional 0-based offset in bytes to stop streaming before.
     */
-  var end: js.UndefOr[scala.Double] = js.native
+  var end: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Optional skip for the file find query.
     */
-  var skip: js.UndefOr[scala.Double] = js.native
+  var skip: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Optional sort for the file find query.
     */
-  var sort: js.UndefOr[scala.Double] = js.native
+  var sort: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Optional 0-based offset in bytes to start streaming from.
     */
-  var start: js.UndefOr[scala.Double] = js.native
+  var start: js.UndefOr[scala.Double] = js.undefined
 }
 object GridFSBucketReadStreamOptions {
   

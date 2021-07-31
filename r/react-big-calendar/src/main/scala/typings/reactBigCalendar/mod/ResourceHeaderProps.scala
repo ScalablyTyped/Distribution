@@ -3,17 +3,15 @@ package typings.reactBigCalendar.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceHeaderProps extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var label: ReactNode = js.native
+  var label: ReactNode
   
-  var resource: js.Object = js.native
+  var resource: js.Object
 }
 object ResourceHeaderProps {
   

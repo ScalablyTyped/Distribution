@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQualificationRequestsResponse extends StObject {
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The number of Qualification requests on this page in the filtered results list, equivalent to the number of Qualification requests being returned by this call.
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Qualification request. The response includes one QualificationRequest element for each Qualification request returned by the query.
     */
-  var QualificationRequests: js.UndefOr[QualificationRequestList] = js.native
+  var QualificationRequests: js.UndefOr[QualificationRequestList] = js.undefined
 }
 object ListQualificationRequestsResponse {
   

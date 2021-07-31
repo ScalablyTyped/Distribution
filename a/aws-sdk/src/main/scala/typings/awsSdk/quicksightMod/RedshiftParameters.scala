@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftParameters extends StObject {
   
   /**
     * Cluster ID. This field can be blank if the Host and Port are provided.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.quicksightMod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.quicksightMod.ClusterId] = js.undefined
   
   /**
     * Database.
     */
-  var Database: typings.awsSdk.quicksightMod.Database = js.native
+  var Database: typings.awsSdk.quicksightMod.Database
   
   /**
     * Host. This field can be blank if ClusterId is provided.
     */
-  var Host: js.UndefOr[typings.awsSdk.quicksightMod.Host] = js.native
+  var Host: js.UndefOr[typings.awsSdk.quicksightMod.Host] = js.undefined
   
   /**
     * Port. This field can be blank if the ClusterId is provided.
     */
-  var Port: js.UndefOr[OptionalPort] = js.native
+  var Port: js.UndefOr[OptionalPort] = js.undefined
 }
 object RedshiftParameters {
   

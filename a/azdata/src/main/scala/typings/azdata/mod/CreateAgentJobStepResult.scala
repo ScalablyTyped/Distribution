@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateAgentJobStepResult extends ResultStatus {
+trait CreateAgentJobStepResult
+  extends StObject
+     with ResultStatus {
   
-  var step: AgentJobStepInfo = js.native
+  var step: AgentJobStepInfo
 }
 object CreateAgentJobStepResult {
   

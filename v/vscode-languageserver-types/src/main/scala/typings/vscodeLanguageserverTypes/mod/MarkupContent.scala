@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkupContent extends StObject {
   
   /**
     * The type of the Markup
     */
-  var kind: MarkupKind = js.native
+  var kind: MarkupKind
   
   /**
     * The content itself
     */
-  var value: String = js.native
+  var value: String
 }
 object MarkupContent {
   
@@ -26,12 +24,15 @@ object MarkupContent {
     __obj.asInstanceOf[MarkupContent]
   }
   
+  @JSImport("vscode-languageserver-types", "MarkupContent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
     */
-  @JSImport("vscode-languageserver-types", "MarkupContent.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean]
   
   @scala.inline
   implicit class MarkupContentMutableBuilder[Self <: MarkupContent] (val x: Self) extends AnyVal {

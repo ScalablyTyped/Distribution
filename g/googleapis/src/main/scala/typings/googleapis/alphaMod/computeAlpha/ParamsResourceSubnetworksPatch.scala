@@ -5,16 +5,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSubnetworksPatch extends StandardParameters {
+trait ParamsResourceSubnetworksPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The drain timeout specifies the upper bound in seconds on the amount of
@@ -26,22 +26,22 @@ trait ParamsResourceSubnetworksPatch extends StandardParameters {
     * that after this patch operation the roles of the ACTIVE and BACKUP
     * subnetworks will be swapped.
     */
-  var drainTimeoutSeconds: js.UndefOr[Double] = js.native
+  var drainTimeoutSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region scoping this request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSubnetwork] = js.native
+  var requestBody: js.UndefOr[SchemaSubnetwork] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -55,12 +55,12 @@ trait ParamsResourceSubnetworksPatch extends StandardParameters {
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the Subnetwork resource to patch.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSubnetworksPatch {
   

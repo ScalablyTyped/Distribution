@@ -14,7 +14,6 @@ import typings.antvDataSet.antvDataSetStrings.sumSimple
 import typings.antvDataSet.antvDataSetStrings.variance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aggregateMod {
@@ -32,20 +31,19 @@ object aggregateMod {
     def VALID_AGGREGATES_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALID_AGGREGATES")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Array[String]] = js.native
+    var as: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var groupBy: js.UndefOr[String | js.Array[String] | (js.Function1[/* item */ js.Any, String])] = js.native
+    var groupBy: js.UndefOr[String | js.Array[String] | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     var operations: js.UndefOr[
         js.Array[
           count | max | min | mean | average | median | mode | product | standardDeviation | sum | sumSimple | variance
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumeOptions extends StObject {
   
   /**
@@ -15,28 +13,28 @@ trait ResumeOptions extends StObject {
     * 
     * @default `function(fileId) { return [] }`
     */
-  var customKeys: js.UndefOr[js.Function] = js.native
+  var customKeys: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Enable or disable the ability to resume failed or stopped chunked uploads
     *
     * @default `false`
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * paramNames.resuming - Sent with the first request of the resume with a value of `true`.
     *
     * @default `'qqresume'`
     */
-  var paramNames: js.UndefOr[ParamNamesOptions] = js.native
+  var paramNames: js.UndefOr[ParamNamesOptions] = js.undefined
   
   /**
     * The number of days before a persistent resume record will expire
     *
     * @default `7`
     */
-  var recordsExpireIn: js.UndefOr[Double] = js.native
+  var recordsExpireIn: js.UndefOr[Double] = js.undefined
 }
 object ResumeOptions {
   

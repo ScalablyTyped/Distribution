@@ -7,7 +7,6 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DOMDebugger {
@@ -30,58 +29,57 @@ object DOMDebugger {
     def `subtree-modified`: typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified` = "subtree-modified".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified`]
   }
   
-  @js.native
   trait EventListener extends StObject {
     
     /**
       * Node the listener is added to (if any).
       */
-    var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+    var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
     
     /**
       * Column number in the script (0-based).
       */
-    var columnNumber: integer = js.native
+    var columnNumber: integer
     
     /**
       * Event handler function value.
       */
-    var handler: js.UndefOr[RemoteObject] = js.native
+    var handler: js.UndefOr[RemoteObject] = js.undefined
     
     /**
       * Line number in the script (0-based).
       */
-    var lineNumber: integer = js.native
+    var lineNumber: integer
     
     /**
       * `EventListener`'s once flag.
       */
-    var once: Boolean = js.native
+    var once: Boolean
     
     /**
       * Event original handler function value.
       */
-    var originalHandler: js.UndefOr[RemoteObject] = js.native
+    var originalHandler: js.UndefOr[RemoteObject] = js.undefined
     
     /**
       * `EventListener`'s passive flag.
       */
-    var passive: Boolean = js.native
+    var passive: Boolean
     
     /**
       * Script id of the handler code.
       */
-    var scriptId: ScriptId = js.native
+    var scriptId: ScriptId
     
     /**
       * `EventListener`'s type.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * `EventListener`'s useCapture.
       */
-    var useCapture: Boolean = js.native
+    var useCapture: Boolean
   }
   object EventListener {
     
@@ -144,25 +142,24 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait GetEventListenersRequest extends StObject {
     
     /**
       * The maximum depth at which Node children should be retrieved, defaults to 1. Use -1 for the
       * entire subtree or provide an integer larger than 0.
       */
-    var depth: js.UndefOr[integer] = js.native
+    var depth: js.UndefOr[integer] = js.undefined
     
     /**
       * Identifier of the object to return listeners for.
       */
-    var objectId: RemoteObjectId = js.native
+    var objectId: RemoteObjectId
     
     /**
       * Whether or not iframes and shadow roots should be traversed when returning the subtree
       * (default is false). Reports listeners for all contexts if pierce is enabled.
       */
-    var pierce: js.UndefOr[Boolean] = js.native
+    var pierce: js.UndefOr[Boolean] = js.undefined
   }
   object GetEventListenersRequest {
     
@@ -192,13 +189,12 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait GetEventListenersResponse extends StObject {
     
     /**
       * Array of relevant listeners.
       */
-    var listeners: js.Array[EventListener] = js.native
+    var listeners: js.Array[EventListener]
   }
   object GetEventListenersResponse {
     
@@ -219,18 +215,17 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait RemoveDOMBreakpointRequest extends StObject {
     
     /**
       * Identifier of the node to remove breakpoint from.
       */
-    var nodeId: NodeId = js.native
+    var nodeId: NodeId
     
     /**
       * Type of the breakpoint to remove.
       */
-    var `type`: DOMBreakpointType = js.native
+    var `type`: DOMBreakpointType
   }
   object RemoveDOMBreakpointRequest {
     
@@ -252,18 +247,17 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait RemoveEventListenerBreakpointRequest extends StObject {
     
     /**
       * Event name.
       */
-    var eventName: String = js.native
+    var eventName: String
     
     /**
       * EventTarget interface name.
       */
-    var targetName: js.UndefOr[String] = js.native
+    var targetName: js.UndefOr[String] = js.undefined
   }
   object RemoveEventListenerBreakpointRequest {
     
@@ -287,13 +281,12 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait RemoveInstrumentationBreakpointRequest extends StObject {
     
     /**
       * Instrumentation name to stop on.
       */
-    var eventName: String = js.native
+    var eventName: String
   }
   object RemoveInstrumentationBreakpointRequest {
     
@@ -311,13 +304,12 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait RemoveXHRBreakpointRequest extends StObject {
     
     /**
       * Resource URL substring.
       */
-    var url: String = js.native
+    var url: String
   }
   object RemoveXHRBreakpointRequest {
     
@@ -335,18 +327,17 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait SetDOMBreakpointRequest extends StObject {
     
     /**
       * Identifier of the node to set breakpoint on.
       */
-    var nodeId: NodeId = js.native
+    var nodeId: NodeId
     
     /**
       * Type of the operation to stop upon.
       */
-    var `type`: DOMBreakpointType = js.native
+    var `type`: DOMBreakpointType
   }
   object SetDOMBreakpointRequest {
     
@@ -368,19 +359,18 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait SetEventListenerBreakpointRequest extends StObject {
     
     /**
       * DOM Event name to stop on (any DOM event will do).
       */
-    var eventName: String = js.native
+    var eventName: String
     
     /**
       * EventTarget interface name to stop on. If equal to `"*"` or not provided, will stop on any
       * EventTarget.
       */
-    var targetName: js.UndefOr[String] = js.native
+    var targetName: js.UndefOr[String] = js.undefined
   }
   object SetEventListenerBreakpointRequest {
     
@@ -404,13 +394,12 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait SetInstrumentationBreakpointRequest extends StObject {
     
     /**
       * Instrumentation name to stop on.
       */
-    var eventName: String = js.native
+    var eventName: String
   }
   object SetInstrumentationBreakpointRequest {
     
@@ -428,13 +417,12 @@ object DOMDebugger {
     }
   }
   
-  @js.native
   trait SetXHRBreakpointRequest extends StObject {
     
     /**
       * Resource URL substring. All XHRs having this substring in the URL will get stopped upon.
       */
-    var url: String = js.native
+    var url: String
   }
   object SetXHRBreakpointRequest {
     

@@ -2,57 +2,57 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parent object for structure classes
   */
-@js.native
-trait Structure[T /* <: StructureConstant */] extends RoomObject {
+trait Structure[T /* <: StructureConstant */]
+  extends StObject
+     with RoomObject {
   
   /**
     * Destroy this structure immediately.
     */
-  def destroy(): ScreepsReturnCode = js.native
+  def destroy(): ScreepsReturnCode
   
   /**
     * The current amount of hit points of the structure.
     */
-  var hits: Double = js.native
+  var hits: Double
   
   /**
     * The total amount of hit points of the structure.
     */
-  var hitsMax: Double = js.native
+  var hitsMax: Double
   
   /**
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * Check whether this structure can be used. If the room controller level is not enough, then this method will return false, and the structure will be highlighted with red in the game.
     */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /**
     * Toggle auto notification when the structure is under attack. The notification will be sent to your account email. Turned on by default.
     * @param enabled Whether to enable notification or disable.
     */
-  def notifyWhenAttacked(enabled: Boolean): ScreepsReturnCode = js.native
+  def notifyWhenAttacked(enabled: Boolean): ScreepsReturnCode
   
   /**
     * If you can get an instance of a Structure, you can see it.
     * If you can see the Structure, you can see the room it's in.
     */
   @JSName("room")
-  var room_Structure: Room = js.native
+  var room_Structure: Room
   
   /**
     * One of the STRUCTURE_* constants.
     */
-  var structureType: T = js.native
+  var structureType: T
 }
 object Structure {
   
@@ -74,7 +74,7 @@ object Structure {
   }
   
   @scala.inline
-  implicit class StructureMutableBuilder[Self <: Structure[_], T /* <: StructureConstant */] (val x: Self with Structure[T]) extends AnyVal {
+  implicit class StructureMutableBuilder[Self <: Structure[?], T /* <: StructureConstant */] (val x: Self & Structure[T]) extends AnyVal {
     
     @scala.inline
     def setDestroy(value: () => ScreepsReturnCode): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))

@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Corner extends StObject {
   
-  var corner: Boolean = js.native
+  var corner: Boolean
   
-  var dot: Boolean = js.native
+  var dot: Boolean
   
-  var overflowCount: Double = js.native
+  var overflowCount: Double
   
-  var size: String = js.native
+  var size: String
 }
 object Corner {
   

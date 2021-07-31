@@ -2,21 +2,19 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The available logging options for the load balancer traffic served by this
   * backend service.
   */
-@js.native
 trait SchemaBackendServiceLogConfig extends StObject {
   
   /**
     * This field denotes whether to enable logging for the load balancer
     * traffic served by this backend service.
     */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field can only be specified if logging is enabled for this backend
@@ -25,7 +23,7 @@ trait SchemaBackendServiceLogConfig extends StObject {
     * requests are reported and 0.0 means no logged requests are reported. The
     * default value is 1.0.
     */
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
 }
 object SchemaBackendServiceLogConfig {
   

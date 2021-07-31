@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`dot-density`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DotDensityRenderer
-  extends Renderer
+  extends StObject
+     with Renderer
      with RendererWithVisualVariables
      with typings.arcgisJsApi.esri.renderers.RendererWithVisualVariables {
   

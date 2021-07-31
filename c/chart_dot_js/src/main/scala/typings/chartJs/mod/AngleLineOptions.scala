@@ -2,21 +2,19 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AngleLineOptions extends StObject {
   
-  var borderDash: js.UndefOr[js.Array[Double]] = js.native
+  var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var borderDashOffset: js.UndefOr[Double] = js.native
+  var borderDashOffset: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[ChartColor] = js.native
+  var color: js.UndefOr[ChartColor] = js.undefined
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
 }
 object AngleLineOptions {
   

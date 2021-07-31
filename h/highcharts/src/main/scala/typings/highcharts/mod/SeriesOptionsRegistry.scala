@@ -2,213 +2,211 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesOptionsRegistry extends StObject {
   
-  var SeriesAbandsOptions: typings.highcharts.mod.SeriesAbandsOptions = js.native
+  var SeriesAbandsOptions: typings.highcharts.mod.SeriesAbandsOptions
   
-  var SeriesAdOptions: typings.highcharts.mod.SeriesAdOptions = js.native
+  var SeriesAdOptions: typings.highcharts.mod.SeriesAdOptions
   
-  var SeriesAoOptions: typings.highcharts.mod.SeriesAoOptions = js.native
+  var SeriesAoOptions: typings.highcharts.mod.SeriesAoOptions
   
-  var SeriesApoOptions: typings.highcharts.mod.SeriesApoOptions = js.native
+  var SeriesApoOptions: typings.highcharts.mod.SeriesApoOptions
   
-  var SeriesAreaOptions: typings.highcharts.mod.SeriesAreaOptions = js.native
+  var SeriesAreaOptions: typings.highcharts.mod.SeriesAreaOptions
   
-  var SeriesArearangeOptions: typings.highcharts.mod.SeriesArearangeOptions = js.native
+  var SeriesArearangeOptions: typings.highcharts.mod.SeriesArearangeOptions
   
-  var SeriesAreasplineOptions: typings.highcharts.mod.SeriesAreasplineOptions = js.native
+  var SeriesAreasplineOptions: typings.highcharts.mod.SeriesAreasplineOptions
   
-  var SeriesAreasplinerangeOptions: typings.highcharts.mod.SeriesAreasplinerangeOptions = js.native
+  var SeriesAreasplinerangeOptions: typings.highcharts.mod.SeriesAreasplinerangeOptions
   
-  var SeriesAroonOptions: typings.highcharts.mod.SeriesAroonOptions = js.native
+  var SeriesAroonOptions: typings.highcharts.mod.SeriesAroonOptions
   
-  var SeriesAroonoscillatorOptions: typings.highcharts.mod.SeriesAroonoscillatorOptions = js.native
+  var SeriesAroonoscillatorOptions: typings.highcharts.mod.SeriesAroonoscillatorOptions
   
-  var SeriesAtrOptions: typings.highcharts.mod.SeriesAtrOptions = js.native
+  var SeriesAtrOptions: typings.highcharts.mod.SeriesAtrOptions
   
-  var SeriesBarOptions: typings.highcharts.mod.SeriesBarOptions = js.native
+  var SeriesBarOptions: typings.highcharts.mod.SeriesBarOptions
   
-  var SeriesBbOptions: typings.highcharts.mod.SeriesBbOptions = js.native
+  var SeriesBbOptions: typings.highcharts.mod.SeriesBbOptions
   
-  var SeriesBellcurveOptions: typings.highcharts.mod.SeriesBellcurveOptions = js.native
+  var SeriesBellcurveOptions: typings.highcharts.mod.SeriesBellcurveOptions
   
-  var SeriesBoxplotOptions: typings.highcharts.mod.SeriesBoxplotOptions = js.native
+  var SeriesBoxplotOptions: typings.highcharts.mod.SeriesBoxplotOptions
   
-  var SeriesBubbleOptions: typings.highcharts.mod.SeriesBubbleOptions = js.native
+  var SeriesBubbleOptions: typings.highcharts.mod.SeriesBubbleOptions
   
-  var SeriesBulletOptions: typings.highcharts.mod.SeriesBulletOptions = js.native
+  var SeriesBulletOptions: typings.highcharts.mod.SeriesBulletOptions
   
-  var SeriesCandlestickOptions: typings.highcharts.mod.SeriesCandlestickOptions = js.native
+  var SeriesCandlestickOptions: typings.highcharts.mod.SeriesCandlestickOptions
   
-  var SeriesCciOptions: typings.highcharts.mod.SeriesCciOptions = js.native
+  var SeriesCciOptions: typings.highcharts.mod.SeriesCciOptions
   
-  var SeriesChaikinOptions: typings.highcharts.mod.SeriesChaikinOptions = js.native
+  var SeriesChaikinOptions: typings.highcharts.mod.SeriesChaikinOptions
   
-  var SeriesCmfOptions: typings.highcharts.mod.SeriesCmfOptions = js.native
+  var SeriesCmfOptions: typings.highcharts.mod.SeriesCmfOptions
   
-  var SeriesColumnOptions: typings.highcharts.mod.SeriesColumnOptions = js.native
+  var SeriesColumnOptions: typings.highcharts.mod.SeriesColumnOptions
   
-  var SeriesColumnpyramidOptions: typings.highcharts.mod.SeriesColumnpyramidOptions = js.native
+  var SeriesColumnpyramidOptions: typings.highcharts.mod.SeriesColumnpyramidOptions
   
-  var SeriesColumnrangeOptions: typings.highcharts.mod.SeriesColumnrangeOptions = js.native
+  var SeriesColumnrangeOptions: typings.highcharts.mod.SeriesColumnrangeOptions
   
-  var SeriesCylinderOptions: typings.highcharts.mod.SeriesCylinderOptions = js.native
+  var SeriesCylinderOptions: typings.highcharts.mod.SeriesCylinderOptions
   
-  var SeriesDemaOptions: typings.highcharts.mod.SeriesDemaOptions = js.native
+  var SeriesDemaOptions: typings.highcharts.mod.SeriesDemaOptions
   
-  var SeriesDependencywheelOptions: typings.highcharts.mod.SeriesDependencywheelOptions = js.native
+  var SeriesDependencywheelOptions: typings.highcharts.mod.SeriesDependencywheelOptions
   
-  var SeriesDpoOptions: typings.highcharts.mod.SeriesDpoOptions = js.native
+  var SeriesDpoOptions: typings.highcharts.mod.SeriesDpoOptions
   
-  var SeriesDumbbellOptions: typings.highcharts.mod.SeriesDumbbellOptions = js.native
+  var SeriesDumbbellOptions: typings.highcharts.mod.SeriesDumbbellOptions
   
-  var SeriesEmaOptions: typings.highcharts.mod.SeriesEmaOptions = js.native
+  var SeriesEmaOptions: typings.highcharts.mod.SeriesEmaOptions
   
-  var SeriesErrorbarOptions: typings.highcharts.mod.SeriesErrorbarOptions = js.native
+  var SeriesErrorbarOptions: typings.highcharts.mod.SeriesErrorbarOptions
   
-  var SeriesFlagsOptions: typings.highcharts.mod.SeriesFlagsOptions = js.native
+  var SeriesFlagsOptions: typings.highcharts.mod.SeriesFlagsOptions
   
-  var SeriesFunnel3dOptions: typings.highcharts.mod.SeriesFunnel3dOptions = js.native
+  var SeriesFunnel3dOptions: typings.highcharts.mod.SeriesFunnel3dOptions
   
-  var SeriesFunnelOptions: typings.highcharts.mod.SeriesFunnelOptions = js.native
+  var SeriesFunnelOptions: typings.highcharts.mod.SeriesFunnelOptions
   
-  var SeriesGanttOptions: typings.highcharts.mod.SeriesGanttOptions = js.native
+  var SeriesGanttOptions: typings.highcharts.mod.SeriesGanttOptions
   
-  var SeriesGaugeOptions: typings.highcharts.mod.SeriesGaugeOptions = js.native
+  var SeriesGaugeOptions: typings.highcharts.mod.SeriesGaugeOptions
   
-  var SeriesHeatmapOptions: typings.highcharts.mod.SeriesHeatmapOptions = js.native
+  var SeriesHeatmapOptions: typings.highcharts.mod.SeriesHeatmapOptions
   
-  var SeriesHistogramOptions: typings.highcharts.mod.SeriesHistogramOptions = js.native
+  var SeriesHistogramOptions: typings.highcharts.mod.SeriesHistogramOptions
   
-  var SeriesIkhOptions: typings.highcharts.mod.SeriesIkhOptions = js.native
+  var SeriesIkhOptions: typings.highcharts.mod.SeriesIkhOptions
   
-  var SeriesItemOptions: typings.highcharts.mod.SeriesItemOptions = js.native
+  var SeriesItemOptions: typings.highcharts.mod.SeriesItemOptions
   
-  var SeriesKeltnerchannelsOptions: typings.highcharts.mod.SeriesKeltnerchannelsOptions = js.native
+  var SeriesKeltnerchannelsOptions: typings.highcharts.mod.SeriesKeltnerchannelsOptions
   
-  var SeriesLineOptions: typings.highcharts.mod.SeriesLineOptions = js.native
+  var SeriesLineOptions: typings.highcharts.mod.SeriesLineOptions
   
-  var SeriesLinearregressionOptions: typings.highcharts.mod.SeriesLinearregressionOptions = js.native
+  var SeriesLinearregressionOptions: typings.highcharts.mod.SeriesLinearregressionOptions
   
-  var SeriesLinearregressionangleOptions: typings.highcharts.mod.SeriesLinearregressionangleOptions = js.native
+  var SeriesLinearregressionangleOptions: typings.highcharts.mod.SeriesLinearregressionangleOptions
   
-  var SeriesLinearregressioninterceptOptions: typings.highcharts.mod.SeriesLinearregressioninterceptOptions = js.native
+  var SeriesLinearregressioninterceptOptions: typings.highcharts.mod.SeriesLinearregressioninterceptOptions
   
-  var SeriesLinearregressionslopeOptions: typings.highcharts.mod.SeriesLinearregressionslopeOptions = js.native
+  var SeriesLinearregressionslopeOptions: typings.highcharts.mod.SeriesLinearregressionslopeOptions
   
-  var SeriesLollipopOptions: typings.highcharts.mod.SeriesLollipopOptions = js.native
+  var SeriesLollipopOptions: typings.highcharts.mod.SeriesLollipopOptions
   
-  var SeriesMacdOptions: typings.highcharts.mod.SeriesMacdOptions = js.native
+  var SeriesMacdOptions: typings.highcharts.mod.SeriesMacdOptions
   
-  var SeriesMapOptions: typings.highcharts.mod.SeriesMapOptions = js.native
+  var SeriesMapOptions: typings.highcharts.mod.SeriesMapOptions
   
-  var SeriesMapbubbleOptions: typings.highcharts.mod.SeriesMapbubbleOptions = js.native
+  var SeriesMapbubbleOptions: typings.highcharts.mod.SeriesMapbubbleOptions
   
-  var SeriesMaplineOptions: typings.highcharts.mod.SeriesMaplineOptions = js.native
+  var SeriesMaplineOptions: typings.highcharts.mod.SeriesMaplineOptions
   
-  var SeriesMappointOptions: typings.highcharts.mod.SeriesMappointOptions = js.native
+  var SeriesMappointOptions: typings.highcharts.mod.SeriesMappointOptions
   
-  var SeriesMfiOptions: typings.highcharts.mod.SeriesMfiOptions = js.native
+  var SeriesMfiOptions: typings.highcharts.mod.SeriesMfiOptions
   
-  var SeriesMomentumOptions: typings.highcharts.mod.SeriesMomentumOptions = js.native
+  var SeriesMomentumOptions: typings.highcharts.mod.SeriesMomentumOptions
   
-  var SeriesNatrOptions: typings.highcharts.mod.SeriesNatrOptions = js.native
+  var SeriesNatrOptions: typings.highcharts.mod.SeriesNatrOptions
   
-  var SeriesNetworkgraphOptions: typings.highcharts.mod.SeriesNetworkgraphOptions = js.native
+  var SeriesNetworkgraphOptions: typings.highcharts.mod.SeriesNetworkgraphOptions
   
-  var SeriesOhlcOptions: typings.highcharts.mod.SeriesOhlcOptions = js.native
+  var SeriesOhlcOptions: typings.highcharts.mod.SeriesOhlcOptions
   
-  var SeriesOrganizationOptions: typings.highcharts.mod.SeriesOrganizationOptions = js.native
+  var SeriesOrganizationOptions: typings.highcharts.mod.SeriesOrganizationOptions
   
-  var SeriesPackedbubbleOptions: typings.highcharts.mod.SeriesPackedbubbleOptions = js.native
+  var SeriesPackedbubbleOptions: typings.highcharts.mod.SeriesPackedbubbleOptions
   
-  var SeriesParetoOptions: typings.highcharts.mod.SeriesParetoOptions = js.native
+  var SeriesParetoOptions: typings.highcharts.mod.SeriesParetoOptions
   
-  var SeriesPcOptions: typings.highcharts.mod.SeriesPcOptions = js.native
+  var SeriesPcOptions: typings.highcharts.mod.SeriesPcOptions
   
-  var SeriesPieOptions: typings.highcharts.mod.SeriesPieOptions = js.native
+  var SeriesPieOptions: typings.highcharts.mod.SeriesPieOptions
   
-  var SeriesPivotpointsOptions: typings.highcharts.mod.SeriesPivotpointsOptions = js.native
+  var SeriesPivotpointsOptions: typings.highcharts.mod.SeriesPivotpointsOptions
   
-  var SeriesPolygonOptions: typings.highcharts.mod.SeriesPolygonOptions = js.native
+  var SeriesPolygonOptions: typings.highcharts.mod.SeriesPolygonOptions
   
-  var SeriesPpoOptions: typings.highcharts.mod.SeriesPpoOptions = js.native
+  var SeriesPpoOptions: typings.highcharts.mod.SeriesPpoOptions
   
-  var SeriesPriceenvelopesOptions: typings.highcharts.mod.SeriesPriceenvelopesOptions = js.native
+  var SeriesPriceenvelopesOptions: typings.highcharts.mod.SeriesPriceenvelopesOptions
   
-  var SeriesPsarOptions: typings.highcharts.mod.SeriesPsarOptions = js.native
+  var SeriesPsarOptions: typings.highcharts.mod.SeriesPsarOptions
   
-  var SeriesPyramid3dOptions: typings.highcharts.mod.SeriesPyramid3dOptions = js.native
+  var SeriesPyramid3dOptions: typings.highcharts.mod.SeriesPyramid3dOptions
   
-  var SeriesPyramidOptions: typings.highcharts.mod.SeriesPyramidOptions = js.native
+  var SeriesPyramidOptions: typings.highcharts.mod.SeriesPyramidOptions
   
-  var SeriesRocOptions: typings.highcharts.mod.SeriesRocOptions = js.native
+  var SeriesRocOptions: typings.highcharts.mod.SeriesRocOptions
   
-  var SeriesRsiOptions: typings.highcharts.mod.SeriesRsiOptions = js.native
+  var SeriesRsiOptions: typings.highcharts.mod.SeriesRsiOptions
   
-  var SeriesSankeyOptions: typings.highcharts.mod.SeriesSankeyOptions = js.native
+  var SeriesSankeyOptions: typings.highcharts.mod.SeriesSankeyOptions
   
-  var SeriesScatter3dOptions: typings.highcharts.mod.SeriesScatter3dOptions = js.native
+  var SeriesScatter3dOptions: typings.highcharts.mod.SeriesScatter3dOptions
   
-  var SeriesScatterOptions: typings.highcharts.mod.SeriesScatterOptions = js.native
+  var SeriesScatterOptions: typings.highcharts.mod.SeriesScatterOptions
   
-  var SeriesSlowstochasticOptions: typings.highcharts.mod.SeriesSlowstochasticOptions = js.native
+  var SeriesSlowstochasticOptions: typings.highcharts.mod.SeriesSlowstochasticOptions
   
-  var SeriesSmaOptions: typings.highcharts.mod.SeriesSmaOptions = js.native
+  var SeriesSmaOptions: typings.highcharts.mod.SeriesSmaOptions
   
-  var SeriesSolidgaugeOptions: typings.highcharts.mod.SeriesSolidgaugeOptions = js.native
+  var SeriesSolidgaugeOptions: typings.highcharts.mod.SeriesSolidgaugeOptions
   
-  var SeriesSplineOptions: typings.highcharts.mod.SeriesSplineOptions = js.native
+  var SeriesSplineOptions: typings.highcharts.mod.SeriesSplineOptions
   
-  var SeriesStochasticOptions: typings.highcharts.mod.SeriesStochasticOptions = js.native
+  var SeriesStochasticOptions: typings.highcharts.mod.SeriesStochasticOptions
   
-  var SeriesStreamgraphOptions: typings.highcharts.mod.SeriesStreamgraphOptions = js.native
+  var SeriesStreamgraphOptions: typings.highcharts.mod.SeriesStreamgraphOptions
   
-  var SeriesSunburstOptions: typings.highcharts.mod.SeriesSunburstOptions = js.native
+  var SeriesSunburstOptions: typings.highcharts.mod.SeriesSunburstOptions
   
-  var SeriesSupertrendOptions: typings.highcharts.mod.SeriesSupertrendOptions = js.native
+  var SeriesSupertrendOptions: typings.highcharts.mod.SeriesSupertrendOptions
   
-  var SeriesTemaOptions: typings.highcharts.mod.SeriesTemaOptions = js.native
+  var SeriesTemaOptions: typings.highcharts.mod.SeriesTemaOptions
   
-  var SeriesTilemapOptions: typings.highcharts.mod.SeriesTilemapOptions = js.native
+  var SeriesTilemapOptions: typings.highcharts.mod.SeriesTilemapOptions
   
-  var SeriesTimelineOptions: typings.highcharts.mod.SeriesTimelineOptions = js.native
+  var SeriesTimelineOptions: typings.highcharts.mod.SeriesTimelineOptions
   
-  var SeriesTreemapOptions: typings.highcharts.mod.SeriesTreemapOptions = js.native
+  var SeriesTreemapOptions: typings.highcharts.mod.SeriesTreemapOptions
   
-  var SeriesTrendlineOptions: typings.highcharts.mod.SeriesTrendlineOptions = js.native
+  var SeriesTrendlineOptions: typings.highcharts.mod.SeriesTrendlineOptions
   
-  var SeriesTrixOptions: typings.highcharts.mod.SeriesTrixOptions = js.native
+  var SeriesTrixOptions: typings.highcharts.mod.SeriesTrixOptions
   
-  var SeriesVariablepieOptions: typings.highcharts.mod.SeriesVariablepieOptions = js.native
+  var SeriesVariablepieOptions: typings.highcharts.mod.SeriesVariablepieOptions
   
-  var SeriesVariwideOptions: typings.highcharts.mod.SeriesVariwideOptions = js.native
+  var SeriesVariwideOptions: typings.highcharts.mod.SeriesVariwideOptions
   
-  var SeriesVbpOptions: typings.highcharts.mod.SeriesVbpOptions = js.native
+  var SeriesVbpOptions: typings.highcharts.mod.SeriesVbpOptions
   
-  var SeriesVectorOptions: typings.highcharts.mod.SeriesVectorOptions = js.native
+  var SeriesVectorOptions: typings.highcharts.mod.SeriesVectorOptions
   
-  var SeriesVennOptions: typings.highcharts.mod.SeriesVennOptions = js.native
+  var SeriesVennOptions: typings.highcharts.mod.SeriesVennOptions
   
-  var SeriesVwapOptions: typings.highcharts.mod.SeriesVwapOptions = js.native
+  var SeriesVwapOptions: typings.highcharts.mod.SeriesVwapOptions
   
-  var SeriesWaterfallOptions: typings.highcharts.mod.SeriesWaterfallOptions = js.native
+  var SeriesWaterfallOptions: typings.highcharts.mod.SeriesWaterfallOptions
   
-  var SeriesWilliamsrOptions: typings.highcharts.mod.SeriesWilliamsrOptions = js.native
+  var SeriesWilliamsrOptions: typings.highcharts.mod.SeriesWilliamsrOptions
   
-  var SeriesWindbarbOptions: typings.highcharts.mod.SeriesWindbarbOptions = js.native
+  var SeriesWindbarbOptions: typings.highcharts.mod.SeriesWindbarbOptions
   
-  var SeriesWmaOptions: typings.highcharts.mod.SeriesWmaOptions = js.native
+  var SeriesWmaOptions: typings.highcharts.mod.SeriesWmaOptions
   
-  var SeriesWordcloudOptions: typings.highcharts.mod.SeriesWordcloudOptions = js.native
+  var SeriesWordcloudOptions: typings.highcharts.mod.SeriesWordcloudOptions
   
-  var SeriesXrangeOptions: typings.highcharts.mod.SeriesXrangeOptions = js.native
+  var SeriesXrangeOptions: typings.highcharts.mod.SeriesXrangeOptions
   
-  var SeriesZigzagOptions: typings.highcharts.mod.SeriesZigzagOptions = js.native
+  var SeriesZigzagOptions: typings.highcharts.mod.SeriesZigzagOptions
 }
 object SeriesOptionsRegistry {
   

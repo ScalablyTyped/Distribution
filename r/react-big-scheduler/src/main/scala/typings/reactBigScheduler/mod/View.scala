@@ -2,19 +2,17 @@ package typings.reactBigScheduler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait View extends StObject {
   
-  var isEventPerspective: Boolean = js.native
+  var isEventPerspective: Boolean
   
-  var showAgenda: Boolean = js.native
+  var showAgenda: Boolean
   
-  var viewName: js.UndefOr[String] = js.native
+  var viewName: js.UndefOr[String] = js.undefined
   
-  var viewType: ViewTypes = js.native
+  var viewType: ViewTypes
 }
 object View {
   

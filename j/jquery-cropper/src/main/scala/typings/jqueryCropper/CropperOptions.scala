@@ -2,89 +2,87 @@ package typings.jqueryCropper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropperOptions extends StObject {
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
-  var autoCrop: js.UndefOr[Boolean] = js.native
+  var autoCrop: js.UndefOr[Boolean] = js.undefined
   
-  var autoCropArea: js.UndefOr[Double] = js.native
+  var autoCropArea: js.UndefOr[Double] = js.undefined
   
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
-  var checkCrossOrigin: js.UndefOr[Boolean] = js.native
+  var checkCrossOrigin: js.UndefOr[Boolean] = js.undefined
   
-  var checkOrientation: js.UndefOr[String] = js.native
+  var checkOrientation: js.UndefOr[String] = js.undefined
   
-  var crop: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var crop: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var cropBoxMovable: js.UndefOr[Double] = js.native
+  var cropBoxMovable: js.UndefOr[Double] = js.undefined
   
-  var cropBoxResizable: js.UndefOr[Double] = js.native
+  var cropBoxResizable: js.UndefOr[Double] = js.undefined
   
-  var cropend: js.UndefOr[js.Function0[_]] = js.native
+  var cropend: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var cropmove: js.UndefOr[js.Function0[_]] = js.native
+  var cropmove: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var cropstart: js.UndefOr[js.Function0[_]] = js.native
+  var cropstart: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dragMode: js.UndefOr[String] = js.native
+  var dragMode: js.UndefOr[String] = js.undefined
   
-  var guides: js.UndefOr[Boolean] = js.native
+  var guides: js.UndefOr[Boolean] = js.undefined
   
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
   
-  var initialAspectRatio: js.UndefOr[Double] = js.native
+  var initialAspectRatio: js.UndefOr[Double] = js.undefined
   
-  var minCanvasHeight: js.UndefOr[Double] = js.native
+  var minCanvasHeight: js.UndefOr[Double] = js.undefined
   
-  var minCanvasWidth: js.UndefOr[Double] = js.native
+  var minCanvasWidth: js.UndefOr[Double] = js.undefined
   
-  var minContainerHeight: js.UndefOr[Double] = js.native
+  var minContainerHeight: js.UndefOr[Double] = js.undefined
   
-  var minContainerWidth: js.UndefOr[Double] = js.native
+  var minContainerWidth: js.UndefOr[Double] = js.undefined
   
-  var minCropBoxHeight: js.UndefOr[Double] = js.native
+  var minCropBoxHeight: js.UndefOr[Double] = js.undefined
   
-  var minCropBoxWidth: js.UndefOr[Double] = js.native
+  var minCropBoxWidth: js.UndefOr[Double] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var movable: js.UndefOr[Boolean] = js.native
+  var movable: js.UndefOr[Boolean] = js.undefined
   
-  var preview: js.UndefOr[js.Any] = js.native
+  var preview: js.UndefOr[js.Any] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[_]] = js.native
+  var ready: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var restore: js.UndefOr[Boolean] = js.native
+  var restore: js.UndefOr[Boolean] = js.undefined
   
-  var rotatable: js.UndefOr[Boolean] = js.native
+  var rotatable: js.UndefOr[Boolean] = js.undefined
   
-  var scalable: js.UndefOr[Boolean] = js.native
+  var scalable: js.UndefOr[Boolean] = js.undefined
   
-  var toggleDragModeOnDblclick: js.UndefOr[Double] = js.native
+  var toggleDragModeOnDblclick: js.UndefOr[Double] = js.undefined
   
-  var viewMode: js.UndefOr[Double] = js.native
+  var viewMode: js.UndefOr[Double] = js.undefined
   
-  var wheelZoomRatio: js.UndefOr[Double] = js.native
+  var wheelZoomRatio: js.UndefOr[Double] = js.undefined
   
-  var zoom: js.UndefOr[js.Function0[_]] = js.native
+  var zoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var zoomOnTouch: js.UndefOr[Boolean] = js.native
+  var zoomOnTouch: js.UndefOr[Boolean] = js.undefined
   
-  var zoomOnWheel: js.UndefOr[Boolean] = js.native
+  var zoomOnWheel: js.UndefOr[Boolean] = js.undefined
   
-  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomable: js.UndefOr[Boolean] = js.undefined
 }
 object CropperOptions {
   
@@ -158,19 +156,19 @@ object CropperOptions {
     def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
     @scala.inline
-    def setCropend(value: () => _): Self = StObject.set(x, "cropend", js.Any.fromFunction0(value))
+    def setCropend(value: () => js.Any): Self = StObject.set(x, "cropend", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCropendUndefined: Self = StObject.set(x, "cropend", js.undefined)
     
     @scala.inline
-    def setCropmove(value: () => _): Self = StObject.set(x, "cropmove", js.Any.fromFunction0(value))
+    def setCropmove(value: () => js.Any): Self = StObject.set(x, "cropmove", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCropmoveUndefined: Self = StObject.set(x, "cropmove", js.undefined)
     
     @scala.inline
-    def setCropstart(value: () => _): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
+    def setCropstart(value: () => js.Any): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCropstartUndefined: Self = StObject.set(x, "cropstart", js.undefined)
@@ -260,7 +258,7 @@ object CropperOptions {
     def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def setReady(value: () => _): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    def setReady(value: () => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -308,7 +306,7 @@ object CropperOptions {
     def setWheelZoomRatioUndefined: Self = StObject.set(x, "wheelZoomRatio", js.undefined)
     
     @scala.inline
-    def setZoom(value: () => _): Self = StObject.set(x, "zoom", js.Any.fromFunction0(value))
+    def setZoom(value: () => js.Any): Self = StObject.set(x, "zoom", js.Any.fromFunction0(value))
     
     @scala.inline
     def setZoomOnTouch(value: Boolean): Self = StObject.set(x, "zoomOnTouch", value.asInstanceOf[js.Any])

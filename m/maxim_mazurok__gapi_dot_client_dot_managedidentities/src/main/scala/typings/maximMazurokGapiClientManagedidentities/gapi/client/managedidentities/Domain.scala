@@ -3,60 +3,58 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
   /** Optional. The name of delegated administrator account used to perform Active Directory operations. If not specified, `setupadmin` will be used. */
-  var admin: js.UndefOr[String] = js.native
+  var admin: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using
     * UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail.
     */
-  var authorizedNetworks: js.UndefOr[js.Array[String]] = js.native
+  var authorizedNetworks: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The time the instance was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The fully-qualified domain name of the exposed domain used by clients to connect to the service. Similar to what would be chosen for an Active Directory set up on an
     * internal network.
     */
-  var fqdn: js.UndefOr[String] = js.native
+  var fqdn: js.UndefOr[String] = js.undefined
   
   /** Optional. Resource labels that can contain user-provided metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. Locations where domain needs to be provisioned. regions e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block. */
-  var locations: js.UndefOr[js.Array[String]] = js.native
+  var locations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The unique name of the domain using the form: `projects/{project_id}/locations/global/domains/{domain_name}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The CIDR range of internal addresses that are reserved for this domain. Reserved networks must be /24 or larger. Ranges must be unique and non-overlapping with existing
     * subnets in [Domain].[authorized_networks].
     */
-  var reservedIpRange: js.UndefOr[String] = js.native
+  var reservedIpRange: js.UndefOr[String] = js.undefined
   
   /** Output only. The current state of this domain. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Additional information about the current status of this domain, if available. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /** Output only. The current trusts associated with the domain. */
-  var trusts: js.UndefOr[js.Array[Trust]] = js.native
+  var trusts: js.UndefOr[js.Array[Trust]] = js.undefined
   
   /** Output only. The last update time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Domain {
   
@@ -100,7 +98,7 @@ object Domain {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

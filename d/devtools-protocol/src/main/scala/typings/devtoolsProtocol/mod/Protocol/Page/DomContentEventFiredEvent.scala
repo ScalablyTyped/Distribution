@@ -3,13 +3,11 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.Network.MonotonicTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomContentEventFiredEvent extends StObject {
   
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
 }
 object DomContentEventFiredEvent {
   

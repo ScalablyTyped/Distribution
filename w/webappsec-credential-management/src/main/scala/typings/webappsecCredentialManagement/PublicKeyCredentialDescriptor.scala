@@ -8,27 +8,25 @@ import typings.webappsecCredentialManagement.webappsecCredentialManagementString
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.usb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptor}
   */
-@js.native
 trait PublicKeyCredentialDescriptor extends StObject {
   
-  var id: BufferSource = js.native
+  var id: BufferSource
   
-  var transports: js.UndefOr[js.Array[usb | nfc | ble | internal]] = js.native
+  var transports: js.UndefOr[js.Array[usb | nfc | ble | internal]] = js.undefined
   
-  var `type`: `public-key` = js.native
+  var `type`: `public-key`
 }
 object PublicKeyCredentialDescriptor {
   
   @scala.inline
-  def apply(id: BufferSource, `type`: `public-key`): PublicKeyCredentialDescriptor = {
+  def apply(id: BufferSource): PublicKeyCredentialDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredentialDescriptor]
   }
   

@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuItemClickedEventArgs extends EventArgs {
+trait MenuItemClickedEventArgs
+  extends StObject
+     with EventArgs {
   
-  var handled: Boolean = js.native
+  var handled: Boolean
   
-  val itemName: String = js.native
+  val itemName: String
 }
 object MenuItemClickedEventArgs {
   

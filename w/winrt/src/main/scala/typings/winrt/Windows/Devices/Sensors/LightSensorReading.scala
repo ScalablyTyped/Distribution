@@ -3,11 +3,11 @@ package typings.winrt.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LightSensorReading extends ILightSensorReading
+trait LightSensorReading
+  extends StObject
+     with ILightSensorReading
 object LightSensorReading {
   
   @scala.inline

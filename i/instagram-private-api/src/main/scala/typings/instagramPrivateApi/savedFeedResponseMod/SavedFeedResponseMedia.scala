@@ -2,103 +2,101 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseMedia extends StObject {
   
-  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.native
+  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined
   
-  var can_view_more_preview_comments: Boolean = js.native
+  var can_view_more_preview_comments: Boolean
   
-  var can_viewer_reshare: Boolean = js.native
+  var can_viewer_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: SavedFeedResponseCaption = js.native
+  var caption: SavedFeedResponseCaption
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var carousel_media: js.UndefOr[js.Array[SavedFeedResponseCarouselMediaItem]] = js.native
+  var carousel_media: js.UndefOr[js.Array[SavedFeedResponseCarouselMediaItem]] = js.undefined
   
-  var carousel_media_count: js.UndefOr[Double] = js.native
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var comment_likes_enabled: Boolean = js.native
+  var comment_likes_enabled: Boolean
   
-  var comment_threading_enabled: Boolean = js.native
+  var comment_threading_enabled: Boolean
   
-  var device_timestamp: String | Double = js.native
+  var device_timestamp: String | Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_liked: Boolean = js.native
+  var has_liked: Boolean
   
-  var has_more_comments: Boolean = js.native
+  var has_more_comments: Boolean
   
-  var has_viewer_saved: Boolean = js.native
+  var has_viewer_saved: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: js.UndefOr[SavedFeedResponseImageVersions2] = js.native
+  var image_versions2: js.UndefOr[SavedFeedResponseImageVersions2] = js.undefined
   
-  var inline_composer_display_condition: String = js.native
+  var inline_composer_display_condition: String
   
-  var inline_composer_imp_trigger_time: Double = js.native
+  var inline_composer_imp_trigger_time: Double
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_external_share_disabled: js.UndefOr[Boolean] = js.native
+  var is_external_share_disabled: js.UndefOr[Boolean] = js.undefined
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var max_num_visible_preview_comments: Double = js.native
+  var max_num_visible_preview_comments: Double
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: js.UndefOr[Double] = js.native
+  var original_height: js.UndefOr[Double] = js.undefined
   
-  var original_width: js.UndefOr[Double] = js.native
+  var original_width: js.UndefOr[Double] = js.undefined
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.Array[SavedFeedResponsePreviewCommentsItem] = js.native
+  var preview_comments: js.Array[SavedFeedResponsePreviewCommentsItem]
   
-  var product_tags: js.UndefOr[SavedFeedResponseProductTags] = js.native
+  var product_tags: js.UndefOr[SavedFeedResponseProductTags] = js.undefined
   
-  var saved_collection_ids: js.Array[_] = js.native
+  var saved_collection_ids: js.Array[js.Any]
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var user: SavedFeedResponseUser = js.native
+  var user: SavedFeedResponseUser
   
-  var usertags: js.UndefOr[SavedFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[SavedFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[SavedFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[SavedFeedResponseVideoVersionsItem]] = js.undefined
   
-  var view_count: js.UndefOr[Double] = js.native
+  var view_count: js.UndefOr[Double] = js.undefined
 }
 object SavedFeedResponseMedia {
   
@@ -130,7 +128,7 @@ object SavedFeedResponseMedia {
     photo_of_you: Boolean,
     pk: String,
     preview_comments: js.Array[SavedFeedResponsePreviewCommentsItem],
-    saved_collection_ids: js.Array[_],
+    saved_collection_ids: js.Array[js.Any],
     taken_at: Double,
     user: SavedFeedResponseUser
   ): SavedFeedResponseMedia = {
@@ -292,7 +290,7 @@ object SavedFeedResponseMedia {
     def setProduct_tagsUndefined: Self = StObject.set(x, "product_tags", js.undefined)
     
     @scala.inline
-    def setSaved_collection_ids(value: js.Array[_]): Self = StObject.set(x, "saved_collection_ids", value.asInstanceOf[js.Any])
+    def setSaved_collection_ids(value: js.Array[js.Any]): Self = StObject.set(x, "saved_collection_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSaved_collection_idsVarargs(value: js.Any*): Self = StObject.set(x, "saved_collection_ids", js.Array(value :_*))

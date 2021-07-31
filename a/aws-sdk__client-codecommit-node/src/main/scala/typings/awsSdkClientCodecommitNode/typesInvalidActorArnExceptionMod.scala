@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.describePullRequestEventsExceptionsUnionMod.DescribePullRequestEventsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidActorArnExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidActorArnExceptionDetails> * / any */ @js.native
-  trait InvalidActorArnException extends DescribePullRequestEventsExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidActorArnExceptionDetails> * / any */ trait InvalidActorArnException
+    extends StObject
+       with DescribePullRequestEventsExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidActorArnException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidActorArnException
   }
   object InvalidActorArnException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidActorArnException
-    ): InvalidActorArnException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidActorArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidActorArnException")
       __obj.asInstanceOf[InvalidActorArnException]
     }
     
@@ -34,6 +32,5 @@ object typesInvalidActorArnExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidActorArnExceptionDetails extends StObject
 }

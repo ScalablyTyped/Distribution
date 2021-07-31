@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopRemoteAccessSessionResult extends StObject {
   
   /**
     * A container that represents the metadata from the service about the remote access session you are stopping.
     */
-  var remoteAccessSession: js.UndefOr[RemoteAccessSession] = js.native
+  var remoteAccessSession: js.UndefOr[RemoteAccessSession] = js.undefined
 }
 object StopRemoteAccessSessionResult {
   

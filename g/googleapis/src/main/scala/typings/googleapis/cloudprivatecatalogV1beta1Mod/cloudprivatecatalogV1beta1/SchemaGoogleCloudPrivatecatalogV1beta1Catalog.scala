@@ -2,41 +2,39 @@ package typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The readonly representation of a catalog computed with a given resource
   * context.
   */
-@js.native
 trait SchemaGoogleCloudPrivatecatalogV1beta1Catalog extends StObject {
   
   /**
     * Output only. The time when the catalog was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The description of the catalog.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The descriptive name of the catalog as it appears in UIs.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the target catalog, in the format of
     * `catalogs/{catalog_id}&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the catalog was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogV1beta1Catalog {
   

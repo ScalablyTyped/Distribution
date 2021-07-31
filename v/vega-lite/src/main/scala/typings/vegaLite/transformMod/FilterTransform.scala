@@ -4,11 +4,11 @@ import typings.vegaLite.logicalMod.LogicalComposition
 import typings.vegaLite.srcPredicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterTransform extends Transform {
+trait FilterTransform
+  extends StObject
+     with Transform {
   
   /**
     * The `filter` property must be a predication definition, which can take one of the following forms:
@@ -31,7 +31,7 @@ trait FilterTransform extends Transform {
     *
     * 4) a [logical composition](https://vega.github.io/vega-lite/docs/predicate.html#composition) of (1), (2), or (3).
     */
-  var filter: LogicalComposition[Predicate] = js.native
+  var filter: LogicalComposition[Predicate]
 }
 object FilterTransform {
   

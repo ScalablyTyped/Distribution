@@ -2,16 +2,14 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Autocomplete extends StObject {
   
   def search(
     keyword: String,
     callback: js.Function2[/* status */ String, /* result */ String | AutocompleteResult, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Autocomplete {
   

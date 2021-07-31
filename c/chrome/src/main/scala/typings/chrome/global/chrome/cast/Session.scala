@@ -2,13 +2,13 @@ package typings.chrome.global.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.Session")
 @js.native
 class Session protected ()
-  extends typings.chrome.chrome.cast.Session {
+  extends StObject
+     with typings.chrome.chrome.cast.Session {
   /**
     * @param {string} sessionId
     * @param {string} appId

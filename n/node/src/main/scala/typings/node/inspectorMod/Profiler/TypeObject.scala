@@ -2,20 +2,18 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a type collected during runtime.
   * @experimental
   */
-@js.native
 trait TypeObject extends StObject {
   
   /**
     * Name of a type collected with type profiling.
     */
-  var name: String = js.native
+  var name: String
 }
 object TypeObject {
   

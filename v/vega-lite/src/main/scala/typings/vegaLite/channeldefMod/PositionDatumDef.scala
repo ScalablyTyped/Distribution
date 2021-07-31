@@ -10,11 +10,9 @@ import typings.vegaLite.srcTypeMod.Type
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/channeldef.PositionDatumDefBase<F> & vega-lite.vega-lite/build/src/channeldef.PositionMixins */
-@js.native
 trait PositionDatumDef[F /* <: Field */] extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`axis`](https://vega.github.io/vega-lite/docs/axis.html) documentation.
     */
-  var axis: js.UndefOr[(Axis[ExprRef | SignalRef]) | Null] = js.native
+  var axis: js.UndefOr[(Axis[ExprRef | SignalRef]) | Null] = js.undefined
   
   /**
     * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
@@ -35,12 +33,12 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.native
+  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.undefined
   
   /**
     * An object defining the properties of the Impute Operation to be applied.
@@ -49,7 +47,7 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`impute`](https://vega.github.io/vega-lite/docs/impute.html) documentation.
     */
-  var impute: js.UndefOr[ImputeParams | Null] = js.native
+  var impute: js.UndefOr[ImputeParams | Null] = js.undefined
   
   /**
     * An object defining properties of the channel's scale, which is the function that transforms values in the data domain (numbers, dates, strings, etc) to visual values (pixels, colors, sizes) of the encoding channels.
@@ -60,7 +58,7 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`scale`](https://vega.github.io/vega-lite/docs/scale.html) documentation.
     */
-  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.native
+  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.undefined
   
   /**
     * Type of stacking offset if the field should be stacked.
@@ -80,9 +78,9 @@ trait PositionDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`stack`](https://vega.github.io/vega-lite/docs/stack.html) documentation.
     */
-  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.native
+  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object PositionDatumDef {
   
@@ -93,7 +91,7 @@ object PositionDatumDef {
   }
   
   @scala.inline
-  implicit class PositionDatumDefMutableBuilder[Self <: PositionDatumDef[_], F /* <: Field */] (val x: Self with PositionDatumDef[F]) extends AnyVal {
+  implicit class PositionDatumDefMutableBuilder[Self <: PositionDatumDef[?], F /* <: Field */] (val x: Self & PositionDatumDef[F]) extends AnyVal {
     
     @scala.inline
     def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])

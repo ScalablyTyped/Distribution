@@ -5,11 +5,12 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiscreteBarChart extends Chart {
+trait DiscreteBarChart
+  extends StObject
+     with Chart {
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
@@ -18,19 +19,19 @@ trait DiscreteBarChart extends Chart {
   
   def discretebar(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def discretebar(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -58,19 +59,19 @@ trait DiscreteBarChart extends Chart {
   
   def legend(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def legend(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -138,9 +139,9 @@ trait DiscreteBarChart extends Chart {
   def width(value: Double): this.type = js.native
   
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(): js.Function1[/* d */ js.Any, _] = js.native
+  def x(): js.Function1[/* d */ js.Any, js.Any] = js.native
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def x(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   var xAxis: Nvd3Axis = js.native
   

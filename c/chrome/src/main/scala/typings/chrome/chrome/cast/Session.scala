@@ -6,7 +6,6 @@ import typings.chrome.chrome.cast.media.Media
 import typings.chrome.chrome.cast.media.QueueLoadRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

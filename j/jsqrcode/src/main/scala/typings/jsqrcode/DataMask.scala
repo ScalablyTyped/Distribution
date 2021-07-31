@@ -2,15 +2,13 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataMask extends StObject {
   
-  def isMasked(i: Double, j: Double): Boolean = js.native
+  def isMasked(i: Double, j: Double): Boolean
   
-  def unmaskBitMatrix(bits: js.Array[Double], dimension: Double): Unit = js.native
+  def unmaskBitMatrix(bits: js.Array[Double], dimension: Double): Unit
 }
 object DataMask {
   

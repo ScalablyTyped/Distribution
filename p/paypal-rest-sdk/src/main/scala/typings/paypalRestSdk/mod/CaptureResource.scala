@@ -2,17 +2,17 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CaptureResource extends Resource {
+trait CaptureResource
+  extends StObject
+     with Resource {
   
-  var invoice_number: js.UndefOr[String] = js.native
+  var invoice_number: js.UndefOr[String] = js.undefined
   
-  var is_final_capture: js.UndefOr[Boolean] = js.native
+  var is_final_capture: js.UndefOr[Boolean] = js.undefined
   
-  var transaction_fee: js.UndefOr[Currency] = js.native
+  var transaction_fee: js.UndefOr[Currency] = js.undefined
 }
 object CaptureResource {
   

@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A word representation.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1Word extends StObject {
   
   /**
@@ -21,23 +19,23 @@ trait SchemaGoogleCloudVisionV1p3beta1Word extends StObject {
     * top-left corner it becomes:      2----3      |    |      1----0   and the
     * vertex order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1BoundingPoly] = js.native
+  var boundingBox: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1BoundingPoly] = js.undefined
   
   /**
     * Confidence of the OCR results for the word. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional information detected for the word.
     */
-  var property: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty] = js.native
+  var property: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty] = js.undefined
   
   /**
     * List of symbols in the word. The order of the symbols follows the natural
     * reading order.
     */
-  var symbols: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1Symbol]] = js.native
+  var symbols: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1Symbol]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1Word {
   

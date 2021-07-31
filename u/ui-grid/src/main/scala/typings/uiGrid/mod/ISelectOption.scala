@@ -2,15 +2,13 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISelectOption extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var value: Double | String = js.native
+  var value: Double | String
 }
 object ISelectOption {
   

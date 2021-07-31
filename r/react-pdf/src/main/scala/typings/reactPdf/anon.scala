@@ -2,15 +2,13 @@ package typings.reactPdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PageNumber extends StObject {
     
-    var pageNumber: String = js.native
+    var pageNumber: String
   }
   object PageNumber {
     

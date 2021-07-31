@@ -2,32 +2,30 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELangEdit
-@js.native
 trait IELangEditDelegates extends StObject {
   
-  var btnAddClickHandler: js.Function = js.native
+  var btnAddClickHandler: js.Function
   
-  var btnAddHandler: js.Function = js.native
+  var btnAddHandler: js.Function
   
-  var insertCallback: js.Function = js.native
+  var insertCallback: js.Function
   
-  var insertHandler: js.Function = js.native
+  var insertHandler: js.Function
   
-  var modifyCallback: js.Function = js.native
+  var modifyCallback: js.Function
   
-  var modifyHandler: js.Function = js.native
+  var modifyHandler: js.Function
   
-  var removeCallback: js.Function = js.native
+  var removeCallback: js.Function
   
-  var removeHandler: js.Function = js.native
+  var removeHandler: js.Function
   
-  var selectCallback: js.Function = js.native
+  var selectCallback: js.Function
   
-  var selectHandler: js.Function = js.native
+  var selectHandler: js.Function
 }
 object IELangEditDelegates {
   

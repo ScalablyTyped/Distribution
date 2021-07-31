@@ -2,61 +2,59 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingInstanceDetails extends StObject {
   
   /**
     * The name of the Auto Scaling group for the instance.
     */
-  var AutoScalingGroupName: XmlStringMaxLen255 = js.native
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The Availability Zone for the instance.
     */
-  var AvailabilityZone: XmlStringMaxLen255 = js.native
+  var AvailabilityZone: XmlStringMaxLen255
   
   /**
     * The last reported health status of this instance. "Healthy" means that the instance is healthy and should remain in service. "Unhealthy" means that the instance is unhealthy and Amazon EC2 Auto Scaling should terminate and replace it.
     */
-  var HealthStatus: XmlStringMaxLen32 = js.native
+  var HealthStatus: XmlStringMaxLen32
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: XmlStringMaxLen19 = js.native
+  var InstanceId: XmlStringMaxLen19
   
   /**
     * The instance type of the EC2 instance.
     */
-  var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.native
+  var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The launch configuration used to launch the instance. This value is not available if you attached the instance to the Auto Scaling group.
     */
-  var LaunchConfigurationName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var LaunchConfigurationName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The launch template for the instance.
     */
-  var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.native
+  var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
     * The lifecycle state for the instance.
     */
-  var LifecycleState: XmlStringMaxLen32 = js.native
+  var LifecycleState: XmlStringMaxLen32
   
   /**
     * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
     */
-  var ProtectedFromScaleIn: InstanceProtected = js.native
+  var ProtectedFromScaleIn: InstanceProtected
   
   /**
     * The number of capacity units contributed by the instance based on its instance type. Valid Range: Minimum value of 1. Maximum value of 999.
     */
-  var WeightedCapacity: js.UndefOr[XmlStringMaxLen32] = js.native
+  var WeightedCapacity: js.UndefOr[XmlStringMaxLen32] = js.undefined
 }
 object AutoScalingInstanceDetails {
   

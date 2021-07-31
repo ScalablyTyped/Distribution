@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interaction extends StObject {
   
   /** The time when the user acted on the item. If multiple actions of the same type exist for a single user, only the most recent action is recorded. */
-  var interactionTime: js.UndefOr[String] = js.native
+  var interactionTime: js.UndefOr[String] = js.undefined
   
   /** The user that acted on the item. */
-  var principal: js.UndefOr[Principal] = js.native
+  var principal: js.UndefOr[Principal] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Interaction {
   

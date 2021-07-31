@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Storage.Search.SortEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsSortEntry extends StObject {
   
-  /** The sort entries in the collection that start at startIndex. */ var items: SortEntry = js.native
+  /** The sort entries in the collection that start at startIndex. */ var items: SortEntry
   
-  /** The number of items retrieved. */ var returnValue: Double = js.native
+  /** The number of items retrieved. */ var returnValue: Double
 }
 object ItemsSortEntry {
   

@@ -10,17 +10,17 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expansionPanelHeaderMod {
   
   @JSImport("@react-md/expansion-panel/types/ExpansionPanelHeader", "ExpansionPanelHeader")
   @js.native
-  val ExpansionPanelHeader: ForwardRefExoticComponent[ExpansionPanelHeaderProps with RefAttributes[HTMLButtonElement]] = js.native
+  val ExpansionPanelHeader: ForwardRefExoticComponent[ExpansionPanelHeaderProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  @js.native
-  trait ExpansionPanelHeaderProps extends ButtonHTMLAttributes[HTMLButtonElement] {
+  trait ExpansionPanelHeaderProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
     /**
       * The children to display within the header.
@@ -29,36 +29,36 @@ object expansionPanelHeaderMod {
       * rendered within (so use `<span>` instead of `<div>` for children).
       */
     @JSName("children")
-    var children_ExpansionPanelHeaderProps: ReactNode = js.native
+    var children_ExpansionPanelHeaderProps: ReactNode
     
     /**
       * Boolean if the icon rotation transition should be disabled.
       */
-    var disableTransition: js.UndefOr[Boolean] = js.native
+    var disableTransition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the panel is currently expanded. This is just used to rotate the
       * icon as needed.
       */
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
     /**
       * The icon to use for the expander icon.
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The id for the header. This is required for a11y.
       */
     @JSName("id")
-    var id_ExpansionPanelHeaderProps: String = js.native
+    var id_ExpansionPanelHeaderProps: String
     
     /**
       * The click handler that should attempt to toggle the expansion state of the
       * panel.
       */
     @JSName("onClick")
-    var onClick_ExpansionPanelHeaderProps: MouseEventHandler[HTMLButtonElement] = js.native
+    var onClick_ExpansionPanelHeaderProps: MouseEventHandler[HTMLButtonElement]
   }
   object ExpansionPanelHeaderProps {
     

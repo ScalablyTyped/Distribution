@@ -2,17 +2,15 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cookie extends StObject {
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: String = js.native
+  var value: String
 }
 object Cookie {
   

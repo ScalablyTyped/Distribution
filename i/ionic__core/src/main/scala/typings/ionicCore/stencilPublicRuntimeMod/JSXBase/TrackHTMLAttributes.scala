@@ -2,23 +2,23 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrackHTMLAttributes[T] extends HTMLAttributes[T] {
+trait TrackHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcLang: js.UndefOr[String] = js.native
+  var srcLang: js.UndefOr[String] = js.undefined
   
-  var srclang: js.UndefOr[String] = js.native
+  var srclang: js.UndefOr[String] = js.undefined
 }
 object TrackHTMLAttributes {
   
@@ -29,7 +29,7 @@ object TrackHTMLAttributes {
   }
   
   @scala.inline
-  implicit class TrackHTMLAttributesMutableBuilder[Self <: TrackHTMLAttributes[_], T] (val x: Self with TrackHTMLAttributes[T]) extends AnyVal {
+  implicit class TrackHTMLAttributesMutableBuilder[Self <: TrackHTMLAttributes[?], T] (val x: Self & TrackHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

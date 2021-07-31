@@ -5,24 +5,22 @@ import typings.octokitTypes.octokitTypesStrings.billing_manager
 import typings.octokitTypes.octokitTypesStrings.direct_member
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsCreateInvitationEndpoint extends StObject {
   
   /**
     * **Required unless you provide `invitee_id`**. Email address of the person you are inviting, which can be an existing GitHub user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * **Required unless you provide `email`**. GitHub user ID for the person you are inviting.
     */
-  var invitee_id: js.UndefOr[Double] = js.native
+  var invitee_id: js.UndefOr[Double] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Specify role for new member. Can be one of:
@@ -30,12 +28,12 @@ trait OrgsCreateInvitationEndpoint extends StObject {
     * \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.
     * \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
     */
-  var role: js.UndefOr[admin | direct_member | billing_manager] = js.native
+  var role: js.UndefOr[admin | direct_member | billing_manager] = js.undefined
   
   /**
     * Specify IDs for the teams you want to invite new members to.
     */
-  var team_ids: js.UndefOr[js.Array[Double]] = js.native
+  var team_ids: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object OrgsCreateInvitationEndpoint {
   

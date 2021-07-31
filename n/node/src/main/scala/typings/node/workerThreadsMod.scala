@@ -18,10 +18,13 @@ import typings.std.ArrayBuffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workerThreadsMod {
+  
+  @JSImport("worker_threads", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("worker_threads", "MessageChannel")
   @js.native
@@ -260,9 +263,8 @@ object workerThreadsMod {
     *
     * This operation cannot be undone.
     */
-  @JSImport("worker_threads", "markAsUntransferable")
-  @js.native
-  def markAsUntransferable(`object`: js.Object): Unit = js.native
+  @scala.inline
+  def markAsUntransferable(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsUntransferable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transfer a `MessagePort` to a different `vm` Context. The original `port`
@@ -278,9 +280,8 @@ object workerThreadsMod {
     * `EventEmitter`, and only `port.onmessage()` can be used to receive
     * events using it.
     */
-  @JSImport("worker_threads", "moveMessagePortToContext")
-  @js.native
-  def moveMessagePortToContext(port: MessagePort, context: Context): MessagePort = js.native
+  @scala.inline
+  def moveMessagePortToContext(port: MessagePort, context: Context): MessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("moveMessagePortToContext")(port.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[MessagePort]
   
   @JSImport("worker_threads", "parentPort")
   @js.native
@@ -292,9 +293,8 @@ object workerThreadsMod {
     * that contains the message payload, corresponding to the oldest message in the
     * `MessagePort`’s queue.
     */
-  @JSImport("worker_threads", "receiveMessageOnPort")
-  @js.native
-  def receiveMessageOnPort(port: MessagePort): js.UndefOr[Message] = js.native
+  @scala.inline
+  def receiveMessageOnPort(port: MessagePort): js.UndefOr[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveMessageOnPort")(port.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Message]]
   
   @JSImport("worker_threads", "resourceLimits")
   @js.native
@@ -308,29 +308,28 @@ object workerThreadsMod {
   @js.native
   val workerData: js.Any = js.native
   
-  @js.native
   trait ResourceLimits_ extends StObject {
     
     /**
       * The size of a pre-allocated memory range used for generated code.
       */
-    var codeRangeSizeMb: js.UndefOr[Double] = js.native
+    var codeRangeSizeMb: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum size of the main heap in MB.
       */
-    var maxOldGenerationSizeMb: js.UndefOr[Double] = js.native
+    var maxOldGenerationSizeMb: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum size of a heap space for recently created objects.
       */
-    var maxYoungGenerationSizeMb: js.UndefOr[Double] = js.native
+    var maxYoungGenerationSizeMb: js.UndefOr[Double] = js.undefined
     
     /**
       * The default maximum stack size for the thread. Small values may lead to unusable Worker instances.
       * @default 4
       */
-    var stackSizeMb: js.UndefOr[Double] = js.native
+    var stackSizeMb: js.UndefOr[Double] = js.undefined
   }
   object ResourceLimits_ {
     
@@ -376,7 +375,6 @@ object workerThreadsMod {
   */
   type TransferListItem = _TransferListItem | ArrayBuffer
   
-  @js.native
   trait WorkerOptions extends StObject {
     
     /**
@@ -385,30 +383,30 @@ object workerThreadsMod {
       * but the values will be available on the global `process.argv` as if they
       * were passed as CLI options to the script.
       */
-    var argv: js.UndefOr[js.Array[_]] = js.native
+    var argv: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var env: js.UndefOr[Dict[java.lang.String] | js.Symbol] = js.native
+    var env: js.UndefOr[Dict[java.lang.String] | js.Symbol] = js.undefined
     
-    var eval: js.UndefOr[Boolean] = js.native
+    var eval: js.UndefOr[Boolean] = js.undefined
     
-    var execArgv: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var execArgv: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     
-    var resourceLimits: js.UndefOr[ResourceLimits_] = js.native
+    var resourceLimits: js.UndefOr[ResourceLimits_] = js.undefined
     
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
     
-    var stdin: js.UndefOr[Boolean] = js.native
+    var stdin: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
     
-    var trackUnmanagedFds: js.UndefOr[Boolean] = js.native
+    var trackUnmanagedFds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional data to send in the first worker message.
       */
-    var transferList: js.UndefOr[js.Array[TransferListItem]] = js.native
+    var transferList: js.UndefOr[js.Array[TransferListItem]] = js.undefined
     
-    var workerData: js.UndefOr[js.Any] = js.native
+    var workerData: js.UndefOr[js.Any] = js.undefined
   }
   object WorkerOptions {
     
@@ -422,7 +420,7 @@ object workerThreadsMod {
     implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgv(value: js.Array[_]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      def setArgv(value: js.Array[js.Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)

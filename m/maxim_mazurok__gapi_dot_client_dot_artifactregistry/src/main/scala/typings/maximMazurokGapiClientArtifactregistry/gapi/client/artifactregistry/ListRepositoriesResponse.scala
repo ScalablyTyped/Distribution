@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRepositoriesResponse extends StObject {
   
   /** The token to retrieve the next page of repositories, or empty if there are no more repositories to return. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The repositories returned. */
-  var repositories: js.UndefOr[js.Array[Repository]] = js.native
+  var repositories: js.UndefOr[js.Array[Repository]] = js.undefined
 }
 object ListRepositoriesResponse {
   

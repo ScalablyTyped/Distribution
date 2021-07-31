@@ -2,31 +2,29 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeContentDescription extends StObject {
   
   /**
     * The checksum that can be used to validate zip-format code.
     */
-  var CodeMD5: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeMD5] = js.native
+  var CodeMD5: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeMD5] = js.undefined
   
   /**
     * The size in bytes of the application code. Can be used to validate zip-format code.
     */
-  var CodeSize: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeSize] = js.native
+  var CodeSize: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CodeSize] = js.undefined
   
   /**
     * The S3 bucket Amazon Resource Name (ARN), file key, and object version of the application code stored in Amazon S3.
     */
-  var S3ApplicationCodeLocationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ApplicationCodeLocationDescription] = js.native
+  var S3ApplicationCodeLocationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ApplicationCodeLocationDescription] = js.undefined
   
   /**
     * The text-format code
     */
-  var TextContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.TextContent] = js.native
+  var TextContent: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.TextContent] = js.undefined
 }
 object CodeContentDescription {
   

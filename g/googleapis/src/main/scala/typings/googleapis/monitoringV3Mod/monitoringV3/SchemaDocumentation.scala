@@ -2,14 +2,12 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A content string and a MIME type that describes the content string&#39;s
   * format.
   */
-@js.native
 trait SchemaDocumentation extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaDocumentation extends StObject {
     * content may not exceed 8,192 Unicode characters and may not exceed more
     * than 10,240 bytes when encoded in UTF-8 format, whichever is smaller.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the content field. Presently, only the value
     * &quot;text/markdown&quot; is supported. See Markdown
     * (https://en.wikipedia.org/wiki/Markdown) for more information.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object SchemaDocumentation {
   

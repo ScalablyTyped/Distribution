@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextDataType extends StObject {
   
   /**
     * Encoded data containing device fingerprinting details, collected using the Amazon Cognito context data collection library.
     */
-  var EncodedData: js.UndefOr[StringType] = js.native
+  var EncodedData: js.UndefOr[StringType] = js.undefined
   
   /**
     * HttpHeaders received on your server in same order.
     */
-  var HttpHeaders: HttpHeaderList = js.native
+  var HttpHeaders: HttpHeaderList
   
   /**
     * Source IP address of your user.
     */
-  var IpAddress: StringType = js.native
+  var IpAddress: StringType
   
   /**
     * Your server endpoint where this API is invoked.
     */
-  var ServerName: StringType = js.native
+  var ServerName: StringType
   
   /**
     * Your server path where this API is invoked. 
     */
-  var ServerPath: StringType = js.native
+  var ServerPath: StringType
 }
 object ContextDataType {
   

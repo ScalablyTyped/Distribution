@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticValueMod extends Shortcut {
@@ -16,9 +15,9 @@ object statisticValueMod extends Shortcut {
   @js.native
   val default: StatelessComponent[StatisticValueProps] = js.native
   
-  @js.native
   trait StatisticValueProps
-    extends StrictStatisticValueProps
+    extends StObject
+       with StrictStatisticValueProps
        with /* key */ StringDictionary[js.Any]
   object StatisticValueProps {
     
@@ -29,23 +28,22 @@ object statisticValueMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStatisticValueProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Format the value with smaller font size to fit nicely beside number values. */
-    var text: js.UndefOr[Boolean] = js.native
+    var text: js.UndefOr[Boolean] = js.undefined
   }
   object StrictStatisticValueProps {
     

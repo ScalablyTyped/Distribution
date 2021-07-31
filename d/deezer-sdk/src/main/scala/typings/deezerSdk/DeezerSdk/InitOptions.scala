@@ -2,7 +2,6 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link https://developers.deezer.com/sdk/javascript/init | DZ.init}\
   * {@link https://developers.deezer.com/sdk/javascript/player | Initialize a player}
   */
-@js.native
 trait InitOptions extends StObject {
   
-  val appId: String = js.native
+  val appId: String
   
-  val channelUrl: String = js.native
+  val channelUrl: String
   
-  val player: js.UndefOr[PlayerOptions] = js.native
+  val player: js.UndefOr[PlayerOptions] = js.undefined
 }
 object InitOptions {
   

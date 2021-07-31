@@ -5,25 +5,23 @@ import typings.awsLambda.anon.AwsSdkVersion
 import typings.awsLambda.awsLambdaStrings.CUSTOM_CHALLENGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  @js.native
   trait BaseTriggerEvent[T /* <: String */] extends StObject {
     
-    var callerContext: AwsSdkVersion = js.native
+    var callerContext: AwsSdkVersion
     
-    var region: String = js.native
+    var region: String
     
-    var triggerSource: T = js.native
+    var triggerSource: T
     
-    var userName: String = js.native
+    var userName: String
     
-    var userPoolId: String = js.native
+    var userPoolId: String
     
-    var version: String = js.native
+    var version: String
   }
   object BaseTriggerEvent {
     
@@ -41,7 +39,7 @@ object commonMod {
     }
     
     @scala.inline
-    implicit class BaseTriggerEventMutableBuilder[Self <: BaseTriggerEvent[_], T /* <: String */] (val x: Self with BaseTriggerEvent[T]) extends AnyVal {
+    implicit class BaseTriggerEventMutableBuilder[Self <: BaseTriggerEvent[?], T /* <: String */] (val x: Self & BaseTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setCallerContext(value: AwsSdkVersion): Self = StObject.set(x, "callerContext", value.asInstanceOf[js.Any])
@@ -93,25 +91,27 @@ object commonMod {
     def SRP_A: typings.awsLambda.awsLambdaStrings.SRP_A = "SRP_A".asInstanceOf[typings.awsLambda.awsLambdaStrings.SRP_A]
   }
   
-  @js.native
   trait ChallengeResult extends StObject {
     
-    var challengeMetadata: js.UndefOr[scala.Nothing] = js.native
+    var challengeMetadata: Unit
     
-    var challengeName: ChallengeName = js.native
+    var challengeName: ChallengeName
     
-    var challengeResult: Boolean = js.native
+    var challengeResult: Boolean
   }
   object ChallengeResult {
     
     @scala.inline
-    def apply(challengeName: ChallengeName, challengeResult: Boolean): ChallengeResult = {
-      val __obj = js.Dynamic.literal(challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult.asInstanceOf[js.Any])
+    def apply(challengeMetadata: Unit, challengeName: ChallengeName, challengeResult: Boolean): ChallengeResult = {
+      val __obj = js.Dynamic.literal(challengeMetadata = challengeMetadata.asInstanceOf[js.Any], challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChallengeResult]
     }
     
     @scala.inline
     implicit class ChallengeResultMutableBuilder[Self <: ChallengeResult] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setChallengeMetadata(value: Unit): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChallengeName(value: ChallengeName): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
@@ -121,20 +121,19 @@ object commonMod {
     }
   }
   
-  @js.native
   trait CustomChallengeResult extends StObject {
     
-    var challengeMetadata: js.UndefOr[String] = js.native
+    var challengeMetadata: js.UndefOr[String] = js.undefined
     
-    var challengeName: CUSTOM_CHALLENGE = js.native
+    var challengeName: CUSTOM_CHALLENGE
     
-    var challengeResult: Boolean = js.native
+    var challengeResult: Boolean
   }
   object CustomChallengeResult {
     
     @scala.inline
-    def apply(challengeName: CUSTOM_CHALLENGE, challengeResult: Boolean): CustomChallengeResult = {
-      val __obj = js.Dynamic.literal(challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult.asInstanceOf[js.Any])
+    def apply(challengeResult: Boolean): CustomChallengeResult = {
+      val __obj = js.Dynamic.literal(challengeName = "CUSTOM_CHALLENGE", challengeResult = challengeResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomChallengeResult]
     }
     

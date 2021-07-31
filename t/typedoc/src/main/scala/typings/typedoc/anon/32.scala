@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `32` extends StObject {
   
-  var name: options = js.native
+  var name: options
 }
 object `32` {
   
   @scala.inline
-  def apply(name: options): `32` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `32` = {
+    val __obj = js.Dynamic.literal(name = "options")
     __obj.asInstanceOf[`32`]
   }
   

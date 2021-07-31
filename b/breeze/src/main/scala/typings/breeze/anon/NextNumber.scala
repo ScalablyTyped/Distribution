@@ -2,17 +2,15 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextNumber extends StObject {
   
-  var nextNumber: Double = js.native
+  var nextNumber: Double
   
-  var nextNumberIncrement: Double = js.native
+  var nextNumberIncrement: Double
   
-  var stringPrefix: String = js.native
+  var stringPrefix: String
 }
 object NextNumber {
   

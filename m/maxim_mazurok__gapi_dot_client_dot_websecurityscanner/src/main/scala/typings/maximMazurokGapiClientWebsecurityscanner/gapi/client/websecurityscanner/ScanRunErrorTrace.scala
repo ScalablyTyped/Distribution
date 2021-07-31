@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanRunErrorTrace extends StObject {
   
   /** Output only. Indicates the error reason code. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If the scan encounters TOO_MANY_HTTP_ERRORS, this field indicates the most common HTTP error code, if such is available. For example, if this code is 404, the scan has
     * encountered too many NOT_FOUND responses.
     */
-  var mostCommonHttpErrorCode: js.UndefOr[Double] = js.native
+  var mostCommonHttpErrorCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. If the scan encounters SCAN_CONFIG_ISSUE error, this field has the error message encountered during scan configuration validation that is performed before each scan
     * run.
     */
-  var scanConfigError: js.UndefOr[ScanConfigError] = js.native
+  var scanConfigError: js.UndefOr[ScanConfigError] = js.undefined
 }
 object ScanRunErrorTrace {
   

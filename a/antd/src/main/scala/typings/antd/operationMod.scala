@@ -9,41 +9,42 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationMod {
   
-  @JSImport("antd/lib/transfer/operation", JSImport.Default)
+  @JSImport("antd/lib/transfer/operation", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay: TransferOperationProps
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait TransferOperationProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var leftActive: js.UndefOr[Boolean] = js.native
+    var leftActive: js.UndefOr[Boolean] = js.undefined
     
-    var leftArrowText: js.UndefOr[String] = js.native
+    var leftArrowText: js.UndefOr[String] = js.undefined
     
-    var moveToLeft: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var moveToLeft: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var moveToRight: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var moveToRight: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var oneWay: js.UndefOr[Boolean] = js.native
+    var oneWay: js.UndefOr[Boolean] = js.undefined
     
-    var rightActive: js.UndefOr[Boolean] = js.native
+    var rightActive: js.UndefOr[Boolean] = js.undefined
     
-    var rightArrowText: js.UndefOr[String] = js.native
+    var rightArrowText: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TransferOperationProps {
     

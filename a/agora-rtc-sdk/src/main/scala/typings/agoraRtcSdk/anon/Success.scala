@@ -2,27 +2,25 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Success extends StObject {
   
   /**
     * - An empty string if `success` is `true`.
     * - The failure reason if `success` is `false`.
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * The result of republishing or re-subscribing to the stream.
     * - `true`: Success.
     * - `false`: Failure.
     */
-  var success: Boolean = js.native
+  var success: Boolean
   
   /** The corresponding uid of the stream being republished or re-subscribed to. */
-  var uid: Double | String = js.native
+  var uid: Double | String
 }
 object Success {
   

@@ -6,123 +6,168 @@ import typings.hummusRecipe.mod.AnnotSubtype
 import typings.hummusRecipe.mod.CommentOptionsFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hummusRecipeStrings {
   
   @js.native
-  sealed trait Caret extends AnnotSubtype
+  sealed trait Caret
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Caret: Caret = "Caret".asInstanceOf[Caret]
   
   @js.native
-  sealed trait Circle extends AnnotSubtype
+  sealed trait Circle
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Circle: Circle = "Circle".asInstanceOf[Circle]
   
   @js.native
-  sealed trait Comment extends AnnotOptionsIcon
+  sealed trait Comment
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Comment: Comment = "Comment".asInstanceOf[Comment]
   
   @js.native
-  sealed trait FileAttachment extends AnnotSubtype
+  sealed trait FileAttachment
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def FileAttachment: FileAttachment = "FileAttachment".asInstanceOf[FileAttachment]
   
   @js.native
-  sealed trait FreeText extends AnnotSubtype
+  sealed trait FreeText
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def FreeText: FreeText = "FreeText".asInstanceOf[FreeText]
   
   @js.native
-  sealed trait Help extends AnnotOptionsIcon
+  sealed trait Help
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Help: Help = "Help".asInstanceOf[Help]
   
   @js.native
-  sealed trait Highlight extends AnnotSubtype
+  sealed trait Highlight
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Highlight: Highlight = "Highlight".asInstanceOf[Highlight]
   
   @js.native
-  sealed trait Ink extends AnnotSubtype
+  sealed trait Ink
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Ink: Ink = "Ink".asInstanceOf[Ink]
   
   @js.native
-  sealed trait Insert extends AnnotOptionsIcon
+  sealed trait Insert
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Insert: Insert = "Insert".asInstanceOf[Insert]
   
   @js.native
-  sealed trait Key extends AnnotOptionsIcon
+  sealed trait Key
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Key: Key = "Key".asInstanceOf[Key]
   
   @js.native
-  sealed trait Line extends AnnotSubtype
+  sealed trait Line
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
   
   @js.native
-  sealed trait NewParagraph extends AnnotOptionsIcon
+  sealed trait NewParagraph
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def NewParagraph: NewParagraph = "NewParagraph".asInstanceOf[NewParagraph]
   
   @js.native
-  sealed trait Note extends AnnotOptionsIcon
+  sealed trait Note
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Note: Note = "Note".asInstanceOf[Note]
   
   @js.native
-  sealed trait Paragraph extends AnnotOptionsIcon
+  sealed trait Paragraph
+    extends StObject
+       with AnnotOptionsIcon
   @scala.inline
   def Paragraph: Paragraph = "Paragraph".asInstanceOf[Paragraph]
   
   @js.native
-  sealed trait PolyLine extends AnnotSubtype
+  sealed trait PolyLine
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def PolyLine: PolyLine = "PolyLine".asInstanceOf[PolyLine]
   
   @js.native
-  sealed trait Polygon extends AnnotSubtype
+  sealed trait Polygon
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait Sound extends AnnotSubtype
+  sealed trait Sound
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Sound: Sound = "Sound".asInstanceOf[Sound]
   
   @js.native
-  sealed trait Square extends AnnotSubtype
+  sealed trait Square
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Square: Square = "Square".asInstanceOf[Square]
   
   @js.native
-  sealed trait Squiggly extends AnnotSubtype
+  sealed trait Squiggly
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Squiggly: Squiggly = "Squiggly".asInstanceOf[Squiggly]
   
   @js.native
-  sealed trait Stamp extends AnnotSubtype
+  sealed trait Stamp
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Stamp: Stamp = "Stamp".asInstanceOf[Stamp]
   
   @js.native
-  sealed trait StrikeOut extends AnnotSubtype
+  sealed trait StrikeOut
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def StrikeOut: StrikeOut = "StrikeOut".asInstanceOf[StrikeOut]
   
   @js.native
-  sealed trait Text extends AnnotSubtype
+  sealed trait Text
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Text: Text = "Text".asInstanceOf[Text]
   
   @js.native
-  sealed trait Underline extends AnnotSubtype
+  sealed trait Underline
+    extends StObject
+       with AnnotSubtype
   @scala.inline
   def Underline: Underline = "Underline".asInstanceOf[Underline]
   
@@ -138,56 +183,64 @@ object hummusRecipeStrings {
   
   @js.native
   sealed trait hidden
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait invisible
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def invisible: invisible = "invisible".asInstanceOf[invisible]
   
   @js.native
   sealed trait locked
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   
   @js.native
   sealed trait norotate
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def norotate: norotate = "norotate".asInstanceOf[norotate]
   
   @js.native
   sealed trait noview
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def noview: noview = "noview".asInstanceOf[noview]
   
   @js.native
   sealed trait nozoom
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def nozoom: nozoom = "nozoom".asInstanceOf[nozoom]
   
   @js.native
   sealed trait print
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def print: print = "print".asInstanceOf[print]
   
   @js.native
   sealed trait readonly
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def readonly: readonly = "readonly".asInstanceOf[readonly]
@@ -199,7 +252,8 @@ object hummusRecipeStrings {
   
   @js.native
   sealed trait togglenoview
-    extends AnnotOptionsFlag
+    extends StObject
+       with AnnotOptionsFlag
        with CommentOptionsFlag
   @scala.inline
   def togglenoview: togglenoview = "togglenoview".asInstanceOf[togglenoview]

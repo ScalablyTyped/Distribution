@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceInfo extends StObject {
   
   /** The name of the resource referenced in the request. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The resource permission needed for this request. The format must be "{service}/{plural}.{verb}". */
-  var permission: js.UndefOr[String] = js.native
+  var permission: js.UndefOr[String] = js.undefined
   
   /** The resource type in the format of "{service}/{kind}". */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ResourceInfo {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReportCreationOutput extends StObject {
   
   /**
     * Details of the common errors that all operations return.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ErrorMessage] = js.undefined
   
   /**
     * The path to the Amazon S3 bucket where the report was stored on creation.
     */
-  var S3Location: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.S3Location] = js.native
+  var S3Location: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.S3Location] = js.undefined
   
   /**
     * Reports the status of the operation. The operation status can be one of the following:    RUNNING - Report creation is in progress.    SUCCEEDED - Report creation is complete. You can open the report from the Amazon S3 bucket that you specified when you ran StartReportCreation.    FAILED - Report creation timed out or the Amazon S3 bucket is not accessible.     NO REPORT - No report was generated in the last 90 days.  
     */
-  var Status: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.Status] = js.undefined
 }
 object DescribeReportCreationOutput {
   

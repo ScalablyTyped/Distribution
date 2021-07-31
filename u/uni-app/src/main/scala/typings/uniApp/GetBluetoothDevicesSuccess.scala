@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBluetoothDevicesSuccess extends StObject {
   
   /**
     * uuid 对应的的已连接设备列表
     */
-  var devices: js.UndefOr[js.Array[BluetoothDeviceInfo]] = js.native
+  var devices: js.UndefOr[js.Array[BluetoothDeviceInfo]] = js.undefined
   
   /**
     * 成功：ok，错误：详细信息
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
 }
 object GetBluetoothDevicesSuccess {
   

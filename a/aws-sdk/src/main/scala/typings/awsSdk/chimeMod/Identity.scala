@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
   /**
     * The ARN in an Identity.
     */
-  var Arn: js.UndefOr[ChimeArn] = js.native
+  var Arn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The name in an Identity.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
 }
 object Identity {
   

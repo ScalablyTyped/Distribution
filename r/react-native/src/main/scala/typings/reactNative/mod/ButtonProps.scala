@@ -2,26 +2,24 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonProps extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  def onPress(ev: NativeSyntheticEvent[NativeTouchEvent]): Unit = js.native
+  def onPress(ev: NativeSyntheticEvent[NativeTouchEvent]): Unit
   
   /**
     * Used to locate this button in end-to-end tests.
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object ButtonProps {
   

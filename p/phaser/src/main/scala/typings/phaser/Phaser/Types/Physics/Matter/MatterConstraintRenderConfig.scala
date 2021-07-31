@@ -2,51 +2,49 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterConstraintRenderConfig extends StObject {
   
   /**
     * The color value of constraint anchors.
     */
-  var anchorColor: js.UndefOr[Double] = js.native
+  var anchorColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the circles drawn as the constraint anchors.
     */
-  var anchorSize: js.UndefOr[Double] = js.native
+  var anchorSize: js.UndefOr[Double] = js.undefined
   
   /**
     * If this constraint has anchors, should they be rendered? Pin constraints never have anchors.
     */
-  var anchors: js.UndefOr[Boolean] = js.native
+  var anchors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color value of the line stroke when rendering this constraint.
     */
-  var lineColor: js.UndefOr[Double] = js.native
+  var lineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the line when rendering this constraint, a value between 0 and 1.
     */
-  var lineOpacity: js.UndefOr[Double] = js.native
+  var lineOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * If rendering lines, the thickness of the line.
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the circles drawn when rendering pin constraints.
     */
-  var pinSize: js.UndefOr[Double] = js.native
+  var pinSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Should this constraint be rendered by the Debug Renderer?
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object MatterConstraintRenderConfig {
   

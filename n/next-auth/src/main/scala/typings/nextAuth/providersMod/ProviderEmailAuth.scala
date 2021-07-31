@@ -2,15 +2,13 @@ package typings.nextAuth.providersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderEmailAuth extends StObject {
   
-  var pass: String = js.native
+  var pass: String
   
-  var user: String = js.native
+  var user: String
 }
 object ProviderEmailAuth {
   

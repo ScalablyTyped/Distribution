@@ -2,15 +2,13 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDefaultAudioDeviceChangedEventArgs extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var role: AudioDeviceRole = js.native
+  var role: AudioDeviceRole
 }
 object IDefaultAudioDeviceChangedEventArgs {
   

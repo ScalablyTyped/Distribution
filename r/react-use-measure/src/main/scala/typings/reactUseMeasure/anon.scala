@@ -5,20 +5,20 @@ import typings.reactUseMeasure.mod.ResizeObserver
 import typings.reactUseMeasure.mod.ResizeObserverCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait Instantiable extends Instantiable1[/* cb */ ResizeObserverCallback, ResizeObserver]
+  trait Instantiable
+    extends StObject
+       with Instantiable1[/* cb */ ResizeObserverCallback, ResizeObserver]
   
-  @js.native
   trait Resize extends StObject {
     
-    var resize: Double = js.native
+    var resize: Double
     
-    var scroll: Double = js.native
+    var scroll: Double
   }
   object Resize {
     

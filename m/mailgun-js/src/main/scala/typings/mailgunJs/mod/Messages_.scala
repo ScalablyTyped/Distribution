@@ -6,7 +6,6 @@ import typings.mailgunJs.mod.messages.SendResponse
 import typings.mailgunJs.mod.messages.SendTemplateData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -4,11 +4,12 @@ import typings.amapJsApi.AMap.Layer
 import typings.amapJsApiMap3d.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Object3DLayer extends Layer {
+trait Object3DLayer
+  extends StObject
+     with Layer {
   
   def add(object3d: Object3D): Unit = js.native
   
@@ -23,18 +24,17 @@ trait Object3DLayer extends Layer {
 }
 object Object3DLayer {
   
-  @js.native
   trait Options extends StObject {
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     

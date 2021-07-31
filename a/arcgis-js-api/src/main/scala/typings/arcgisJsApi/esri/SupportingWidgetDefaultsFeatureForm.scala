@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SupportingWidgetDefaultsFeatureForm extends Object {
+trait SupportingWidgetDefaultsFeatureForm
+  extends StObject
+     with Object {
   
   /**
     * An array of [FieldConfig](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html) objects to use within the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfig]] = js.native
+  var fieldConfig: js.UndefOr[js.Array[FieldConfig]] = js.undefined
   
   /**
     * String indicating the [groupDisplay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay) and how they will be displayed to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var groupDisplay: js.UndefOr[String] = js.native
+  var groupDisplay: js.UndefOr[String] = js.undefined
 }
 object SupportingWidgetDefaultsFeatureForm {
   

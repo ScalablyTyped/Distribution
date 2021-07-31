@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OsInfo extends StObject {
   
   /** The system architecture of the operating system. */
-  var architecture: js.UndefOr[String] = js.native
+  var architecture: js.UndefOr[String] = js.undefined
   
   /** The VM hostname. */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /** The kernel release of the operating system. */
-  var kernelRelease: js.UndefOr[String] = js.native
+  var kernelRelease: js.UndefOr[String] = js.undefined
   
   /** The kernel version of the operating system. */
-  var kernelVersion: js.UndefOr[String] = js.native
+  var kernelVersion: js.UndefOr[String] = js.undefined
   
   /** The operating system long name. For example 'Debian GNU/Linux 9' or 'Microsoft Window Server 2019 Datacenter'. */
-  var longName: js.UndefOr[String] = js.native
+  var longName: js.UndefOr[String] = js.undefined
   
   /** The current version of the OS Config agent running on the VM. */
-  var osconfigAgentVersion: js.UndefOr[String] = js.native
+  var osconfigAgentVersion: js.UndefOr[String] = js.undefined
   
   /** The operating system short name. For example, 'windows' or 'debian'. */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
   /** The version of the operating system. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object OsInfo {
   

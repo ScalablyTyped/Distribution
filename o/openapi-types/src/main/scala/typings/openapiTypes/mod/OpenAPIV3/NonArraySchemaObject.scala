@@ -2,15 +2,14 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonArraySchemaObject
-  extends BaseSchemaObject
+  extends StObject
+     with BaseSchemaObject
      with SchemaObject {
   
-  var `type`: js.UndefOr[NonArraySchemaObjectType] = js.native
+  var `type`: js.UndefOr[NonArraySchemaObjectType] = js.undefined
 }
 object NonArraySchemaObject {
   

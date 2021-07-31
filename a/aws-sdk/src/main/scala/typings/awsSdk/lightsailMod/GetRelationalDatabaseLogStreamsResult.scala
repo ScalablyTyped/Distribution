@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRelationalDatabaseLogStreamsResult extends StObject {
   
   /**
     * An object describing the result of your get relational database log streams request.
     */
-  var logStreams: js.UndefOr[StringList] = js.native
+  var logStreams: js.UndefOr[StringList] = js.undefined
 }
 object GetRelationalDatabaseLogStreamsResult {
   

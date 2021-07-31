@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TupleMemberCollapsingEventUIParam extends StObject {
   
   /**
     * Gets the name of axis, which holds the member and the tuple.
     */
-  var axisName: js.UndefOr[String] = js.native
+  var axisName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the data source.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the index of the member in the tuple.
     */
-  var memberIndex: js.UndefOr[Double] = js.native
+  var memberIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the index of the tuple in the axis.
     */
-  var tupleIndex: js.UndefOr[Double] = js.native
+  var tupleIndex: js.UndefOr[Double] = js.undefined
 }
 object TupleMemberCollapsingEventUIParam {
   

@@ -2,13 +2,15 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simplifyMod {
   
-  @JSImport("ol/geom/flat/simplify", "douglasPeucker")
+  @JSImport("ol/geom/flat/simplify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def douglasPeucker(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -17,10 +19,9 @@ object simplifyMod {
     squaredTolerance: Double,
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeucker")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "douglasPeuckerArray")
-  @js.native
+  @scala.inline
   def douglasPeuckerArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -30,10 +31,9 @@ object simplifyMod {
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double,
     simplifiedEnds: js.Array[Double]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeuckerArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEnds.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "douglasPeuckerMultiArray")
-  @js.native
+  @scala.inline
   def douglasPeuckerMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -43,10 +43,9 @@ object simplifyMod {
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double,
     simplifiedEndss: js.Array[js.Array[Double]]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("douglasPeuckerMultiArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEndss.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "quantize")
-  @js.native
+  @scala.inline
   def quantize(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -55,10 +54,9 @@ object simplifyMod {
     tolerance: Double,
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "quantizeArray")
-  @js.native
+  @scala.inline
   def quantizeArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -68,10 +66,9 @@ object simplifyMod {
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double,
     simplifiedEnds: js.Array[Double]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEnds.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "quantizeMultiArray")
-  @js.native
+  @scala.inline
   def quantizeMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -81,10 +78,9 @@ object simplifyMod {
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double,
     simplifiedEndss: js.Array[js.Array[Double]]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeMultiArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any], simplifiedEndss.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "radialDistance")
-  @js.native
+  @scala.inline
   def radialDistance(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -93,10 +89,9 @@ object simplifyMod {
     squaredTolerance: Double,
     simplifiedFlatCoordinates: js.Array[Double],
     simplifiedOffset: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radialDistance")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any], simplifiedOffset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/geom/flat/simplify", "simplifyLineString")
-  @js.native
+  @scala.inline
   def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -104,9 +99,8 @@ object simplifyMod {
     stride: Double,
     squaredTolerance: Double,
     highQuality: Boolean
-  ): js.Array[Double] = js.native
-  @JSImport("ol/geom/flat/simplify", "simplifyLineString")
-  @js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
   def simplifyLineString(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -115,9 +109,8 @@ object simplifyMod {
     squaredTolerance: Double,
     highQuality: Boolean,
     opt_simplifiedFlatCoordinates: js.Array[Double]
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any], opt_simplifiedFlatCoordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/geom/flat/simplify", "snap")
-  @js.native
-  def snap(value: Double, tolerance: Double): Double = js.native
+  @scala.inline
+  def snap(value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snap")(value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

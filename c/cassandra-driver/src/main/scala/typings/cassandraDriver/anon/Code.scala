@@ -3,15 +3,13 @@ package typings.cassandraDriver.anon
 import typings.cassandraDriver.typesMod.types.dataTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var code: dataTypes = js.native
+  var code: dataTypes
   
-  var info: js.Any = js.native
+  var info: js.Any
 }
 object Code {
   

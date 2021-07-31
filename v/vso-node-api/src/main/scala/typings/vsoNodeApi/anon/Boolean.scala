@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boolean extends StObject {
   
-  var boolean: scala.Double = js.native
+  var boolean: scala.Double
   
-  var branchFilter: scala.Double = js.native
+  var branchFilter: scala.Double
   
-  var multiLine: scala.Double = js.native
+  var multiLine: scala.Double
   
-  var pickList: scala.Double = js.native
+  var pickList: scala.Double
   
-  var radio: scala.Double = js.native
+  var radio: scala.Double
   
-  var string: scala.Double = js.native
+  var string: scala.Double
   
-  var stringList: scala.Double = js.native
+  var stringList: scala.Double
 }
 object Boolean {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientUser extends StObject {
   
   /**
     * Numerical account ID of the client buyer with which the user is associated; the buyer must be a client of the current sponsor buyer. The value of this field is ignored in an update
     * operation.
     */
-  var clientAccountId: js.UndefOr[String] = js.native
+  var clientAccountId: js.UndefOr[String] = js.undefined
   
   /** User's email address. The value of this field is ignored in an update operation. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** The status of the client user. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The unique numerical ID of the client user that has accepted an invitation. The value of this field is ignored in an update operation. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ClientUser {
   

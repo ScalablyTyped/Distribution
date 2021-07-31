@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamingStageLocation extends StObject {
   
   /** Identifies the particular stream within the streaming Dataflow job. */
-  var streamId: js.UndefOr[String] = js.native
+  var streamId: js.UndefOr[String] = js.undefined
 }
 object StreamingStageLocation {
   

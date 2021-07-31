@@ -9,24 +9,22 @@ import typings.electron.electronStrings.code
 import typings.electron.electronStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebPreferences extends StObject {
   
   /**
     * An alternative title string provided only to accessibility tools such as screen
     * readers. This string is not directly visible to users.
     */
-  var accessibleTitle: js.UndefOr[String] = js.native
+  var accessibleTitle: js.UndefOr[String] = js.undefined
   
   /**
     * A list of strings that will be appended to `process.argv` in the renderer
     * process of this app.  Useful for passing small bits of data down to renderer
     * process preload scripts.
     */
-  var additionalArguments: js.UndefOr[js.Array[String]] = js.native
+  var additionalArguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When specified, web pages with the same `affinity` will run in the same renderer
@@ -36,13 +34,13 @@ trait WebPreferences extends StObject {
     * `nodeIntegration`. So it is suggested to use exact same `webPreferences` for web
     * pages with the same `affinity`. _Deprecated_
     */
-  var affinity: js.UndefOr[String] = js.native
+  var affinity: js.UndefOr[String] = js.undefined
   
   /**
     * Allow an https page to run JavaScript, CSS or plugins from http URLs. Default is
     * `false`.
     */
-  var allowRunningInsecureContent: js.UndefOr[Boolean] = js.native
+  var allowRunningInsecureContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Autoplay policy to apply to content in the window, can be
@@ -51,13 +49,13 @@ trait WebPreferences extends StObject {
     */
   var autoplayPolicy: js.UndefOr[
     `no-user-gesture-required` | `user-gesture-required` | `document-user-activation-required`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Whether to throttle animations and timers when the page becomes background. This
     * also affects the Page Visibility API. Defaults to `true`.
     */
-  var backgroundThrottling: js.UndefOr[Boolean] = js.native
+  var backgroundThrottling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to run Electron APIs and the specified `preload` script in a separate
@@ -73,126 +71,126 @@ trait WebPreferences extends StObject {
     * tools by selecting the 'Electron Isolated Context' entry in the combo box at the
     * top of the Console tab.
     */
-  var contextIsolation: js.UndefOr[Boolean] = js.native
+  var contextIsolation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to `ISO-8859-1`.
     */
-  var defaultEncoding: js.UndefOr[String] = js.native
+  var defaultEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the default font for the font-family.
     */
-  var defaultFontFamily: js.UndefOr[DefaultFontFamily] = js.native
+  var defaultFontFamily: js.UndefOr[DefaultFontFamily] = js.undefined
   
   /**
     * Defaults to `16`.
     */
-  var defaultFontSize: js.UndefOr[Double] = js.native
+  var defaultFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to `13`.
     */
-  var defaultMonospaceFontSize: js.UndefOr[Double] = js.native
+  var defaultMonospaceFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to enable DevTools. If it is set to `false`, can not use
     * `BrowserWindow.webContents.openDevTools()` to open DevTools. Default is `true`.
     */
-  var devTools: js.UndefOr[Boolean] = js.native
+  var devTools: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey`
     * to disable. The full list of supported feature strings can be found in the
     * RuntimeEnabledFeatures.json5 file.
     */
-  var disableBlinkFeatures: js.UndefOr[String] = js.native
+  var disableBlinkFeatures: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to disable dialogs completely. Overrides `safeDialogs`. Default is
     * `false`.
     */
-  var disableDialogs: js.UndefOr[Boolean] = js.native
+  var disableDialogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to prevent the window from resizing when entering HTML Fullscreen.
     * Default is `false`.
     */
-  var disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.native
+  var disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of feature strings separated by `,`, like `CSSVariables,KeyboardEventKey`
     * to enable. The full list of supported feature strings can be found in the
     * RuntimeEnabledFeatures.json5 file.
     */
-  var enableBlinkFeatures: js.UndefOr[String] = js.native
+  var enableBlinkFeatures: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable the `remote` module. Default is `false`.
     */
-  var enableRemoteModule: js.UndefOr[Boolean] = js.native
+  var enableRemoteModule: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable the WebSQL api. Default is `true`.
     */
-  var enableWebSQL: js.UndefOr[Boolean] = js.native
+  var enableWebSQL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables Chromium's experimental features. Default is `false`.
     */
-  var experimentalFeatures: js.UndefOr[Boolean] = js.native
+  var experimentalFeatures: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables image support. Default is `true`.
     */
-  var images: js.UndefOr[Boolean] = js.native
+  var images: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables JavaScript support. Default is `true`.
     */
-  var javascript: js.UndefOr[Boolean] = js.native
+  var javascript: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to `0`.
     */
-  var minimumFontSize: js.UndefOr[Double] = js.native
+  var minimumFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to use native `window.open()`. Defaults to `false`. Child windows will
     * always have node integration disabled unless `nodeIntegrationInSubFrames` is
     * true. **Note:** This option is currently experimental.
     */
-  var nativeWindowOpen: js.UndefOr[Boolean] = js.native
+  var nativeWindowOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether dragging and dropping a file or link onto the page causes a navigation.
     * Default is `false`.
     */
-  var navigateOnDragDrop: js.UndefOr[Boolean] = js.native
+  var navigateOnDragDrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether node integration is enabled. Default is `false`.
     */
-  var nodeIntegration: js.UndefOr[Boolean] = js.native
+  var nodeIntegration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Experimental option for enabling Node.js support in sub-frames such as iframes
     * and child windows. All your preloads will load for every iframe, you can use
     * `process.isMainFrame` to determine if you are in the main frame or not.
     */
-  var nodeIntegrationInSubFrames: js.UndefOr[Boolean] = js.native
+  var nodeIntegrationInSubFrames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether node integration is enabled in web workers. Default is `false`. More
     * about this can be found in Multithreading.
     */
-  var nodeIntegrationInWorker: js.UndefOr[Boolean] = js.native
+  var nodeIntegrationInWorker: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable offscreen rendering for the browser window. Defaults to
     * `false`. See the offscreen rendering tutorial for more details.
     */
-  var offscreen: js.UndefOr[Boolean] = js.native
+  var offscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the session used by the page according to the session's partition string.
@@ -202,12 +200,12 @@ trait WebPreferences extends StObject {
     * `partition`, multiple pages can share the same session. Default is the default
     * session.
     */
-  var partition: js.UndefOr[String] = js.native
+  var partition: js.UndefOr[String] = js.undefined
   
   /**
     * Whether plugins should be enabled. Default is `false`.
     */
-  var plugins: js.UndefOr[Boolean] = js.native
+  var plugins: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a script that will be loaded before other scripts run in the page.
@@ -216,20 +214,20 @@ trait WebPreferences extends StObject {
     * the script. When node integration is turned off, the preload script can
     * reintroduce Node global symbols back to the global scope. See example here.
     */
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable browser style consecutive dialog protection. Default is
     * `false`.
     */
-  var safeDialogs: js.UndefOr[Boolean] = js.native
+  var safeDialogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The message to display when consecutive dialog protection is triggered. If not
     * defined the default message would be used, note that currently the default
     * message is in English and not localized.
     */
-  var safeDialogsMessage: js.UndefOr[String] = js.native
+  var safeDialogsMessage: js.UndefOr[String] = js.undefined
   
   /**
     * If set, this will sandbox the renderer associated with the window, making it
@@ -237,12 +235,12 @@ trait WebPreferences extends StObject {
     * This is not the same as the `nodeIntegration` option and the APIs available to
     * the preload script are more limited. Read more about the option here.
     */
-  var sandbox: js.UndefOr[Boolean] = js.native
+  var sandbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables scroll bounce (rubber banding) effect on macOS. Default is `false`.
     */
-  var scrollBounce: js.UndefOr[Boolean] = js.native
+  var scrollBounce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the session used by the page. Instead of passing the Session object
@@ -250,34 +248,34 @@ trait WebPreferences extends StObject {
     * accepts a partition string. When both `session` and `partition` are provided,
     * `session` will be preferred. Default is the default session.
     */
-  var session: js.UndefOr[Session_] = js.native
+  var session: js.UndefOr[Session_] = js.undefined
   
   /**
     * Whether to enable the builtin spellchecker. Default is `true`.
     */
-  var spellcheck: js.UndefOr[Boolean] = js.native
+  var spellcheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Make TextArea elements resizable. Default is `true`.
     */
-  var textAreasAreResizable: js.UndefOr[Boolean] = js.native
+  var textAreasAreResizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enforces the v8 code caching policy used by blink. Accepted values are
     */
-  var v8CacheOptions: js.UndefOr[none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile] = js.native
+  var v8CacheOptions: js.UndefOr[none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile] = js.undefined
   
   /**
     * When `false`, it will disable the same-origin policy (usually using testing
     * websites by people), and set `allowRunningInsecureContent` to `true` if this
     * options has not been set by user. Default is `true`.
     */
-  var webSecurity: js.UndefOr[Boolean] = js.native
+  var webSecurity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables WebGL support. Default is `true`.
     */
-  var webgl: js.UndefOr[Boolean] = js.native
+  var webgl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable the `<webview>` tag. Defaults to `false`. **Note:** The
@@ -287,7 +285,7 @@ trait WebPreferences extends StObject {
     * can use the `will-attach-webview` event on webContents to strip away the
     * `preload` script and to validate or alter the `<webview>`'s initial settings.
     */
-  var webviewTag: js.UndefOr[Boolean] = js.native
+  var webviewTag: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, values returned from `webFrame.executeJavaScript` will be sanitized to
@@ -295,12 +293,12 @@ trait WebPreferences extends StObject {
     * `contextIsolation`.  The default is `false`. In Electron 12, the default will be
     * changed to `true`. _Deprecated_
     */
-  var worldSafeExecuteJavaScript: js.UndefOr[Boolean] = js.native
+  var worldSafeExecuteJavaScript: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The default zoom factor of the page, `3.0` represents `300%`. Default is `1.0`.
     */
-  var zoomFactor: js.UndefOr[Double] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.undefined
 }
 object WebPreferences {
   

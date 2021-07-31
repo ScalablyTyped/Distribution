@@ -10,9 +10,9 @@ JSS plugin that gives you a better syntax than CSS.
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-expand |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, expand |
-| # releases         | 39 |
+| # releases         | 30 |
 | # dependents       | 5 |
-| # downloads        | 2562951 |
+| # downloads        | 3017377 |
 | # stars            | 0 |
 
 ## Links

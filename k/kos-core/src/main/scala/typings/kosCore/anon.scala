@@ -2,17 +2,15 @@ package typings.kosCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dispatch extends StObject {
     
-    var dispatch: js.Any = js.native
+    var dispatch: js.Any
     
-    var getState: js.Any = js.native
+    var getState: js.Any
   }
   object Dispatch {
     
@@ -33,18 +31,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Namespace extends StObject {
     
-    var namespace: String | Null = js.native
+    var namespace: String | Null
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Namespace {
     
     @scala.inline
     def apply(`type`: String): Namespace = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(namespace = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Namespace]
     }
@@ -63,10 +60,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Param extends StObject {
     
-    var param: js.Any = js.native
+    var param: js.Any
   }
   object Param {
     
@@ -84,10 +80,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload[T] extends StObject {
     
-    var payload: T = js.native
+    var payload: T
   }
   object Payload {
     
@@ -98,17 +93,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload[_], T] (val x: Self with Payload[T]) extends AnyVal {
+    implicit class PayloadMutableBuilder[Self <: Payload[?], T] (val x: Self & Payload[T]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PayloadParam extends StObject {
     
-    var payload: Param = js.native
+    var payload: Param
   }
   object PayloadParam {
     

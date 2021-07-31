@@ -11,8 +11,8 @@ Encode keys, values and range options, with built-in or custom encodings
 | Full name          | level-codec |
 | Keywords           | level |
 | # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 8482366 |
+| # dependents       | 20 |
+| # downloads        | 9856331 |
 | # stars            | 0 |
 
 ## Links

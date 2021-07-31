@@ -2,86 +2,84 @@ package typings.reactNativeElements.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.FullTheme> */
-@js.native
 trait RecursivePartialFullTheme extends StObject {
   
-  var Accessory: js.UndefOr[RecursivePartialPartialIc] = js.native
+  var Accessory: js.UndefOr[RecursivePartialPartialIc] = js.undefined
   
-  var AirbnbRating: js.UndefOr[RecursivePartialPartialAi] = js.native
+  var AirbnbRating: js.UndefOr[RecursivePartialPartialAi] = js.undefined
   
-  var Avatar: js.UndefOr[RecursivePartialPartialAv] = js.native
+  var Avatar: js.UndefOr[RecursivePartialPartialAv] = js.undefined
   
-  var Badge: js.UndefOr[RecursivePartialPartialBa] = js.native
+  var Badge: js.UndefOr[RecursivePartialPartialBa] = js.undefined
   
-  var BottomSheet: js.UndefOr[RecursivePartialPartialBo] = js.native
+  var BottomSheet: js.UndefOr[RecursivePartialPartialBo] = js.undefined
   
-  var Button: js.UndefOr[RecursivePartialPartialBu] = js.native
+  var Button: js.UndefOr[RecursivePartialPartialBu] = js.undefined
   
-  var ButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.native
+  var ButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.undefined
   
-  var Card: js.UndefOr[RecursivePartialPartialCa] = js.native
+  var Card: js.UndefOr[RecursivePartialPartialCa] = js.undefined
   
-  var CardDivider: js.UndefOr[RecursivePartialPartialDi] = js.native
+  var CardDivider: js.UndefOr[RecursivePartialPartialDi] = js.undefined
   
-  var CardFeaturedSubtitle: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var CardFeaturedSubtitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var CardFeaturedTitle: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var CardFeaturedTitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var CardImage: js.UndefOr[RecursivePartialPartialIm] = js.native
+  var CardImage: js.UndefOr[RecursivePartialPartialIm] = js.undefined
   
-  var CardTitle: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var CardTitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var CheckBox: js.UndefOr[RecursivePartialPartialCh] = js.native
+  var CheckBox: js.UndefOr[RecursivePartialPartialCh] = js.undefined
   
-  var Divider: js.UndefOr[RecursivePartialPartialDi] = js.native
+  var Divider: js.UndefOr[RecursivePartialPartialDi] = js.undefined
   
-  var Header: js.UndefOr[RecursivePartialPartialHe] = js.native
+  var Header: js.UndefOr[RecursivePartialPartialHe] = js.undefined
   
-  var Icon: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.native
+  var Icon: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.undefined
   
-  var Image: js.UndefOr[RecursivePartialPartialIm] = js.native
+  var Image: js.UndefOr[RecursivePartialPartialIm] = js.undefined
   
-  var Input: js.UndefOr[RecursivePartialPartialIn] = js.native
+  var Input: js.UndefOr[RecursivePartialPartialIn] = js.undefined
   
-  var ListItem: js.UndefOr[RecursivePartialPartialLi] = js.native
+  var ListItem: js.UndefOr[RecursivePartialPartialLi] = js.undefined
   
-  var ListItemButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.native
+  var ListItemButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.undefined
   
-  var ListItemCheckBox: js.UndefOr[RecursivePartialPartialCh] = js.native
+  var ListItemCheckBox: js.UndefOr[RecursivePartialPartialCh] = js.undefined
   
-  var ListItemChevron: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.native
+  var ListItemChevron: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.undefined
   
-  var ListItemContent: js.UndefOr[RecursivePartialPartialVi] = js.native
+  var ListItemContent: js.UndefOr[RecursivePartialPartialVi] = js.undefined
   
-  var ListItemInput: js.UndefOr[RecursivePartialPartialIn] = js.native
+  var ListItemInput: js.UndefOr[RecursivePartialPartialIn] = js.undefined
   
-  var ListItemSubtitle: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var ListItemSubtitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var ListItemTitle: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var ListItemTitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var Overlay: js.UndefOr[RecursivePartialPartialOv] = js.native
+  var Overlay: js.UndefOr[RecursivePartialPartialOv] = js.undefined
   
-  var PricingCard: js.UndefOr[RecursivePartialPartialPr] = js.native
+  var PricingCard: js.UndefOr[RecursivePartialPartialPr] = js.undefined
   
-  var Rating: js.UndefOr[RecursivePartialPartialRa] = js.native
+  var Rating: js.UndefOr[RecursivePartialPartialRa] = js.undefined
   
-  var SearchBar: js.UndefOr[RecursivePartialPartialSe] = js.native
+  var SearchBar: js.UndefOr[RecursivePartialPartialSe] = js.undefined
   
-  var Slider: js.UndefOr[RecursivePartialPartialSl] = js.native
+  var Slider: js.UndefOr[RecursivePartialPartialSl] = js.undefined
   
-  var SocialIcon: js.UndefOr[RecursivePartialPartialSo] = js.native
+  var SocialIcon: js.UndefOr[RecursivePartialPartialSo] = js.undefined
   
-  var Text: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var Text: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
-  var Tile: js.UndefOr[RecursivePartialPartialTi] = js.native
+  var Tile: js.UndefOr[RecursivePartialPartialTi] = js.undefined
   
-  var Tooltip: js.UndefOr[RecursivePartialPartialTo] = js.native
+  var Tooltip: js.UndefOr[RecursivePartialPartialTo] = js.undefined
   
-  var colors: js.UndefOr[RecursivePartialRecursive] = js.native
+  var colors: js.UndefOr[RecursivePartialRecursive] = js.undefined
 }
 object RecursivePartialFullTheme {
   

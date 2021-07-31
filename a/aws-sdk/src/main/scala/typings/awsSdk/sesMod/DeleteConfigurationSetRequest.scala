@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationSetRequest extends StObject {
   
   /**
     * The name of the configuration set to delete.
     */
-  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName
 }
 object DeleteConfigurationSetRequest {
   

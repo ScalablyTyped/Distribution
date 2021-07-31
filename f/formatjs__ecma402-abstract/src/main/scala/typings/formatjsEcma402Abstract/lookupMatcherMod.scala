@@ -4,16 +4,18 @@ import typings.formatjsEcma402Abstract.coreMod.LookupMatcherResult
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lookupMatcherMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/LookupMatcher", "LookupMatcher")
+  @JSImport("@formatjs/ecma402-abstract/lib/LookupMatcher", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def LookupMatcher(
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     getDefaultLocale: js.Function0[String]
-  ): LookupMatcherResult = js.native
+  ): LookupMatcherResult = (^.asInstanceOf[js.Dynamic].applyDynamic("LookupMatcher")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[LookupMatcherResult]
 }

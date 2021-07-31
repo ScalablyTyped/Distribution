@@ -12,7 +12,7 @@ Parse a string containing environment variables to a key/value object
 | Keywords           | parse, parser, env, environment, variable |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 377 |
+| # downloads        | 1074 |
 | # stars            | 0 |
 
 ## Links

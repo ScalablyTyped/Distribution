@@ -8,14 +8,15 @@ import typings.ionicCore.toggleInterfaceMod.ToggleChangeEventDetail
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleMod {
   
   @JSImport("@ionic/core/dist/types/components/toggle/toggle", "Toggle")
   @js.native
-  class Toggle () extends ComponentInterface {
+  class Toggle ()
+    extends StObject
+       with ComponentInterface {
     
     var activated: Boolean = js.native
     

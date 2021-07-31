@@ -2,21 +2,21 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenProductSpecificViewConfig extends WxBaseRequestConfig {
+trait OpenProductSpecificViewConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 商品id
     */
-  var productId: String = js.native
+  var productId: String
   
   /**
     * 0.默认值，普通商品详情页; 1.扫一扫商品详情页; 2.小店商品详情页
     */
-  var viewType: js.UndefOr[Double] = js.native
+  var viewType: js.UndefOr[Double] = js.undefined
 }
 object OpenProductSpecificViewConfig {
   

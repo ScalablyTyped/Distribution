@@ -9,42 +9,39 @@ import typings.request.mod.RequiredUriUrl
 import typings.retryRequest.anon.Abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("retry-request", JSImport.Namespace)
-  @js.native
-  def apply(requestOpts: typings.request.mod.Options): Abort = js.native
-  @JSImport("retry-request", JSImport.Namespace)
-  @js.native
-  def apply(requestOpts: typings.request.mod.Options, callback: RequestCallback): Abort = js.native
-  @JSImport("retry-request", JSImport.Namespace)
-  @js.native
-  def apply(requestOpts: typings.request.mod.Options, opts: Options): Abort = js.native
-  @JSImport("retry-request", JSImport.Namespace)
-  @js.native
-  def apply(requestOpts: typings.request.mod.Options, opts: Options, callback: RequestCallback): Abort = js.native
+  @scala.inline
+  def apply(requestOpts: typings.request.mod.Options): Abort = ^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any]).asInstanceOf[Abort]
+  @scala.inline
+  def apply(requestOpts: typings.request.mod.Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
+  @scala.inline
+  def apply(requestOpts: typings.request.mod.Options, opts: Options): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Abort]
+  @scala.inline
+  def apply(requestOpts: typings.request.mod.Options, opts: Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
   
-  @JSImport("retry-request", "getNextRetryDelay")
+  @JSImport("retry-request", JSImport.Namespace)
   @js.native
-  def getNextRetryDelay(retryNumber: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getNextRetryDelay(retryNumber: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextRetryDelay")(retryNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var currentRetryAttempt: js.UndefOr[Double] = js.native
+    var currentRetryAttempt: js.UndefOr[Double] = js.undefined
     
-    var noResponseRetries: js.UndefOr[Double] = js.native
+    var noResponseRetries: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.native
+    var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var shouldRetryFn: js.UndefOr[js.Function1[/* response */ RequestResponse, Boolean]] = js.native
+    var shouldRetryFn: js.UndefOr[js.Function1[/* response */ RequestResponse, Boolean]] = js.undefined
   }
   object Options {
     

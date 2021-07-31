@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupStopJob extends Generic {
+trait RollupStopJob
+  extends StObject
+     with Generic {
   
-  var id: String = js.native
+  var id: String
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_completion: js.UndefOr[Boolean] = js.native
+  var wait_for_completion: js.UndefOr[Boolean] = js.undefined
 }
 object RollupStopJob {
   

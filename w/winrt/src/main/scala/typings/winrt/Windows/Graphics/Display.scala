@@ -4,7 +4,6 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
@@ -16,19 +15,29 @@ object Display {
   object DisplayOrientations extends StObject {
     
     @js.native
-    sealed trait landscape extends DisplayOrientations
+    sealed trait landscape
+      extends StObject
+         with DisplayOrientations
     
     @js.native
-    sealed trait landscapeFlipped extends DisplayOrientations
+    sealed trait landscapeFlipped
+      extends StObject
+         with DisplayOrientations
     
     @js.native
-    sealed trait none extends DisplayOrientations
+    sealed trait none
+      extends StObject
+         with DisplayOrientations
     
     @js.native
-    sealed trait portrait extends DisplayOrientations
+    sealed trait portrait
+      extends StObject
+         with DisplayOrientations
     
     @js.native
-    sealed trait portraitFlipped extends DisplayOrientations
+    sealed trait portraitFlipped
+      extends StObject
+         with DisplayOrientations
   }
   
   @js.native
@@ -38,49 +47,55 @@ object Display {
   object ResolutionScale extends StObject {
     
     @js.native
-    sealed trait invalid extends ResolutionScale
+    sealed trait invalid
+      extends StObject
+         with ResolutionScale
     
     @js.native
-    sealed trait scale100Percent extends ResolutionScale
+    sealed trait scale100Percent
+      extends StObject
+         with ResolutionScale
     
     @js.native
-    sealed trait scale140Percent extends ResolutionScale
+    sealed trait scale140Percent
+      extends StObject
+         with ResolutionScale
     
     @js.native
-    sealed trait scale180Percent extends ResolutionScale
+    sealed trait scale180Percent
+      extends StObject
+         with ResolutionScale
   }
   
-  @js.native
   trait DisplayProperties extends StObject
   
   type DisplayPropertiesEventHandler = js.Function1[/* sender */ js.Any, Unit]
   
-  @js.native
   trait IDisplayPropertiesStatics extends StObject {
     
-    var autoRotationPreferences: DisplayOrientations = js.native
+    var autoRotationPreferences: DisplayOrientations
     
-    var currentOrientation: DisplayOrientations = js.native
+    var currentOrientation: DisplayOrientations
     
-    def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream] = js.native
+    def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream]
     
-    var logicalDpi: Double = js.native
+    var logicalDpi: Double
     
-    var nativeOrientation: DisplayOrientations = js.native
+    var nativeOrientation: DisplayOrientations
     
-    var oncolorprofilechanged: js.Any = js.native
+    var oncolorprofilechanged: js.Any
     
-    var ondisplaycontentsinvalidated: js.Any = js.native
+    var ondisplaycontentsinvalidated: js.Any
     
-    var onlogicaldpichanged: js.Any = js.native
+    var onlogicaldpichanged: js.Any
     
-    var onorientationchanged: js.Any = js.native
+    var onorientationchanged: js.Any
     
-    var onstereoenabledchanged: js.Any = js.native
+    var onstereoenabledchanged: js.Any
     
-    var resolutionScale: ResolutionScale = js.native
+    var resolutionScale: ResolutionScale
     
-    var stereoEnabled: Boolean = js.native
+    var stereoEnabled: Boolean
   }
   object IDisplayPropertiesStatics {
     

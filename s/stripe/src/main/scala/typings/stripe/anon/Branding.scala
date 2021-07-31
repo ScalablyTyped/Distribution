@@ -2,37 +2,35 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Branding extends StObject {
   
   /**
     * Settings used to apply the account’s branding to email receipts, invoices,
     * Checkout, and other products.
     */
-  var branding: js.UndefOr[Icon] = js.native
+  var branding: js.UndefOr[Icon] = js.undefined
   
   /**
     * Settings specific to card charging on the account.
     */
-  var card_payments: js.UndefOr[Declineon] = js.native
+  var card_payments: js.UndefOr[Declineon] = js.undefined
   
   /**
     * Settings used to configure the account within the Stripe dashboard.
     */
-  var dashboard: js.UndefOr[Displayname] = js.native
+  var dashboard: js.UndefOr[Displayname] = js.undefined
   
   /**
     * Settings that apply across payment methods for charging on the account.
     */
-  var payments: js.UndefOr[Statementdescriptor] = js.native
+  var payments: js.UndefOr[Statementdescriptor] = js.undefined
   
   /**
     * Settings specific to the account’s payouts.
     */
-  var payouts: js.UndefOr[Debitnegativebalances] = js.native
+  var payouts: js.UndefOr[Debitnegativebalances] = js.undefined
 }
 object Branding {
   

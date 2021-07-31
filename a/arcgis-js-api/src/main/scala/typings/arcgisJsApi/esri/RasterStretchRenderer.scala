@@ -9,12 +9,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.sigmoid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RasterStretchRenderer
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**
@@ -92,7 +92,7 @@ trait RasterStretchRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var statistics: (js.Array[_ | js.Array[Double]]) | RasterStretchRendererStatistics = js.native
+  var statistics: (js.Array[js.Any | js.Array[Double]]) | RasterStretchRendererStatistics = js.native
   
   /**
     * The stretch type defines a histogram stretch that will be applied to the rasters to enhance their appearance.

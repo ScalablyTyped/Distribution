@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketsOutput extends StObject {
   
   /**
     * The list of buckets owned by the requestor.
     */
-  var Buckets: js.UndefOr[typings.awsSdk.s3Mod.Buckets] = js.native
+  var Buckets: js.UndefOr[typings.awsSdk.s3Mod.Buckets] = js.undefined
   
   /**
     * The owner of the buckets listed.
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
 }
 object ListBucketsOutput {
   

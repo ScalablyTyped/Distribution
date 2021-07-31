@@ -2,34 +2,32 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A configuration that defines how a deployment is accessed externally.
   */
-@js.native
 trait SchemaEntryPoint extends StObject {
   
   /**
     * Add-on properties.
     */
-  var addOn: js.UndefOr[SchemaGoogleAppsScriptTypeAddOnEntryPoint] = js.native
+  var addOn: js.UndefOr[SchemaGoogleAppsScriptTypeAddOnEntryPoint] = js.undefined
   
   /**
     * The type of the entry point.
     */
-  var entryPointType: js.UndefOr[String] = js.native
+  var entryPointType: js.UndefOr[String] = js.undefined
   
   /**
     * An entry point specification for Apps Script API execution calls.
     */
-  var executionApi: js.UndefOr[SchemaGoogleAppsScriptTypeExecutionApiEntryPoint] = js.native
+  var executionApi: js.UndefOr[SchemaGoogleAppsScriptTypeExecutionApiEntryPoint] = js.undefined
   
   /**
     * An entry point specification for web apps.
     */
-  var webApp: js.UndefOr[SchemaGoogleAppsScriptTypeWebAppEntryPoint] = js.native
+  var webApp: js.UndefOr[SchemaGoogleAppsScriptTypeWebAppEntryPoint] = js.undefined
 }
 object SchemaEntryPoint {
   

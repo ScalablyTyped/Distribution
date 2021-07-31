@@ -3,14 +3,14 @@ package typings.azureSb.mod.Azure.ServiceBus
 import typings.azureSb.anon.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorResponse extends Response {
+trait ErrorResponse
+  extends StObject
+     with Response {
   
   @JSName("body")
-  var body_ErrorResponse: Error = js.native
+  var body_ErrorResponse: Error
 }
 object ErrorResponse {
   

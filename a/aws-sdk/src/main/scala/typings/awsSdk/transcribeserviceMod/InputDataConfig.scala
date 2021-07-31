@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that uniquely identifies the permissions you've given Amazon Transcribe to access your Amazon S3 buckets containing your media files or text data.
     */
-  var DataAccessRoleArn: typings.awsSdk.transcribeserviceMod.DataAccessRoleArn = js.native
+  var DataAccessRoleArn: typings.awsSdk.transcribeserviceMod.DataAccessRoleArn
   
   /**
     * The Amazon S3 prefix you specify to access the plain text files that you use to train your custom language model.
     */
-  var S3Uri: Uri = js.native
+  var S3Uri: Uri
   
   /**
     * The Amazon S3 prefix you specify to access the plain text files that you use to tune your custom language model.
     */
-  var TuningDataS3Uri: js.UndefOr[Uri] = js.native
+  var TuningDataS3Uri: js.UndefOr[Uri] = js.undefined
 }
 object InputDataConfig {
   

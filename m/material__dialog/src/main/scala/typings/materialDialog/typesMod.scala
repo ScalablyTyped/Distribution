@@ -3,21 +3,21 @@ package typings.materialDialog
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCDialogCloseEvent extends Event {
+  trait MDCDialogCloseEvent
+    extends StObject
+       with Event {
     
     val detail: MDCDialogCloseEventDetail = js.native
   }
   
-  @js.native
   trait MDCDialogCloseEventDetail extends StObject {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
   }
   object MDCDialogCloseEventDetail {
     

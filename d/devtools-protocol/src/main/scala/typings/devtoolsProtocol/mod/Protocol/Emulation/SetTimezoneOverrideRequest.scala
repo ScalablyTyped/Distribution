@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTimezoneOverrideRequest extends StObject {
   
   /**
     * The timezone identifier. If empty, disables the override and
     * restores default host system timezone.
     */
-  var timezoneId: String = js.native
+  var timezoneId: String
 }
 object SetTimezoneOverrideRequest {
   

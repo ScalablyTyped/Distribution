@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineObject extends StObject {
   
   /** The properties of this inline object. */
-  var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.native
+  var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.undefined
   
   /** The ID of this inline object. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The suggested deletion IDs. If empty, then there are no suggested deletions of this content. */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested changes to the inline object properties, keyed by suggestion ID. */
   var suggestedInlineObjectPropertiesChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The suggested insertion ID. If empty, then this is not a suggested insertion. */
-  var suggestedInsertionId: js.UndefOr[String] = js.native
+  var suggestedInsertionId: js.UndefOr[String] = js.undefined
 }
 object InlineObject {
   
@@ -64,7 +62,7 @@ object InlineObject {
     def setSuggestedInlineObjectPropertiesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[js.Any]
     ): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     @scala.inline

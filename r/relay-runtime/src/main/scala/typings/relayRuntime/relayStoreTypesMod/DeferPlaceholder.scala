@@ -4,36 +4,35 @@ import typings.relayRuntime.relayNetworkTypesMod.PayloadData
 import typings.relayRuntime.relayRuntimeStrings.defer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeferPlaceholder extends IncrementalDataPlaceholder {
+trait DeferPlaceholder
+  extends StObject
+     with IncrementalDataPlaceholder {
   
-  val data: PayloadData = js.native
+  val data: PayloadData
   
-  val kind: defer_ = js.native
+  val kind: defer_
   
-  val label: String = js.native
+  val label: String
   
-  val path: js.Array[String] = js.native
+  val path: js.Array[String]
   
-  val selector: NormalizationSelector = js.native
+  val selector: NormalizationSelector
   
-  val typeName: String = js.native
+  val typeName: String
 }
 object DeferPlaceholder {
   
   @scala.inline
   def apply(
     data: PayloadData,
-    kind: defer_,
     label: String,
     path: js.Array[String],
     selector: NormalizationSelector,
     typeName: String
   ): DeferPlaceholder = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], kind = "defer", label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeferPlaceholder]
   }
   

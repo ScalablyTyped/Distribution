@@ -12,7 +12,6 @@ import typings.firebase.mod.firebase.remoteConfig.RemoteConfig
 import typings.firebase.mod.firebase.storage.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
@@ -84,7 +83,7 @@ object app {
       *   });
       * ```
       */
-    def delete(): js.Promise[_] = js.native
+    def delete(): js.Promise[js.Any] = js.native
     
     def firestore(): Firestore = js.native
     

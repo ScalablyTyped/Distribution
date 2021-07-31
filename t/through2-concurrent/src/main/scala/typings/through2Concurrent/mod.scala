@@ -6,83 +6,65 @@ import typings.through2.mod.FlushCallback
 import typings.through2.mod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: Through2ConcurrentOptions): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: Through2ConcurrentOptions, transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: Through2ConcurrentOptions, transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", JSImport.Namespace)
-  @js.native
-  def apply(transform: TransformFunction, flush: FlushCallback): Transform = js.native
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Through2ConcurrentOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Through2ConcurrentOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Through2ConcurrentOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
-  @JSImport("through2-concurrent", "obj")
+  @JSImport("through2-concurrent", JSImport.Namespace)
   @js.native
-  def obj(): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: js.UndefOr[scala.Nothing], transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: js.UndefOr[scala.Nothing], transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: Through2ConcurrentOptions): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: Through2ConcurrentOptions, transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(transform: TransformFunction): Transform = js.native
-  @JSImport("through2-concurrent", "obj")
-  @js.native
-  def obj(transform: TransformFunction, flush: FlushCallback): Transform = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Through2ConcurrentOptions extends DuplexOptions {
+  @scala.inline
+  def obj(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Through2ConcurrentOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Through2ConcurrentOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(opts: Through2ConcurrentOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def obj(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def obj(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  
+  trait Through2ConcurrentOptions
+    extends StObject
+       with DuplexOptions {
     
-    var maxConcurrency: js.UndefOr[Double] = js.native
+    var maxConcurrency: js.UndefOr[Double] = js.undefined
   }
   object Through2ConcurrentOptions {
     

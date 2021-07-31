@@ -16,7 +16,6 @@ import typings.node.Buffer
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -63,16 +62,17 @@ object mod {
   /* static members */
   object Psbt {
     
-    @JSImport("bip174", "Psbt.fromBase64")
+    @JSImport("bip174", "Psbt")
     @js.native
-    def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bip174", "Psbt.fromBuffer")
-    @js.native
-    def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    @scala.inline
+    def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
     
-    @JSImport("bip174", "Psbt.fromHex")
-    @js.native
-    def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
+    @scala.inline
+    def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
+    
+    @scala.inline
+    def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
   }
 }

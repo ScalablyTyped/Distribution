@@ -11,8 +11,8 @@ A read/write lock implementation for Node.
 | Full name          | rwlock |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 415079 |
+| # dependents       | 47 |
+| # downloads        | 414863 |
 | # stars            | 4 |
 
 ## Links

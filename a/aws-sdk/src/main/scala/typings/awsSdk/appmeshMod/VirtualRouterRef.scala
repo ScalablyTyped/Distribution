@@ -2,51 +2,49 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterRef extends StObject {
   
   /**
     * The full Amazon Resource Name (ARN) for the virtual router.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The Unix epoch timestamp in seconds for when the resource was created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The Unix epoch timestamp in seconds for when the resource was last updated.
     */
-  var lastUpdatedAt: Timestamp = js.native
+  var lastUpdatedAt: Timestamp
   
   /**
     * The name of the service mesh that the virtual router resides in.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
   /**
     * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with shared meshes.
     */
-  var meshOwner: AccountId = js.native
+  var meshOwner: AccountId
   
   /**
     * The AWS IAM account ID of the resource owner. If the account ID is not your own, then it's the ID of the mesh owner or of another account that the mesh is shared with. For more information about mesh sharing, see Working with shared meshes.
     */
-  var resourceOwner: AccountId = js.native
+  var resourceOwner: AccountId
   
   /**
     * The version of the resource. Resources are created at version 1, and this version is incremented each time that they're updated.
     */
-  var version: Long = js.native
+  var version: Long
   
   /**
     * The name of the virtual router.
     */
-  var virtualRouterName: ResourceName = js.native
+  var virtualRouterName: ResourceName
 }
 object VirtualRouterRef {
   

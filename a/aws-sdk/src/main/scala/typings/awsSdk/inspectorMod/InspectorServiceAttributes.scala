@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectorServiceAttributes extends StObject {
   
   /**
     * The ARN of the assessment run during which the finding is generated.
     */
-  var assessmentRunArn: js.UndefOr[Arn] = js.native
+  var assessmentRunArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the rules package that is used to generate the finding.
     */
-  var rulesPackageArn: js.UndefOr[Arn] = js.native
+  var rulesPackageArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The schema version of this data type.
     */
-  var schemaVersion: NumericVersion = js.native
+  var schemaVersion: NumericVersion
 }
 object InspectorServiceAttributes {
   

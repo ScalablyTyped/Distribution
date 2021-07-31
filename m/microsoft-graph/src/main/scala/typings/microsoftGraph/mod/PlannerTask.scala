@@ -2,103 +2,103 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlannerTask extends Entity {
+trait PlannerTask
+  extends StObject
+     with Entity {
   
   // Number of checklist items with value set to false, representing incomplete items.
-  var activeChecklistItemCount: js.UndefOr[NullableOption[Double]] = js.native
+  var activeChecklistItemCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The categories to which the task has been applied. See applied Categories for possible values.
-  var appliedCategories: js.UndefOr[NullableOption[PlannerAppliedCategories]] = js.native
+  var appliedCategories: js.UndefOr[NullableOption[PlannerAppliedCategories]] = js.undefined
   
   // Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.
-  var assignedToTaskBoardFormat: js.UndefOr[NullableOption[PlannerAssignedToTaskBoardTaskFormat]] = js.native
+  var assignedToTaskBoardFormat: js.UndefOr[NullableOption[PlannerAssignedToTaskBoardTaskFormat]] = js.undefined
   
   // Hint used to order items of this type in a list view. The format is defined as outlined here.
-  var assigneePriority: js.UndefOr[NullableOption[String]] = js.native
+  var assigneePriority: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The set of assignees the task is assigned to.
-  var assignments: js.UndefOr[NullableOption[PlannerAssignments]] = js.native
+  var assignments: js.UndefOr[NullableOption[PlannerAssignments]] = js.undefined
   
   /**
     * Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long
     * and case-sensitive. Format validation is done on the service.
     */
-  var bucketId: js.UndefOr[NullableOption[String]] = js.native
+  var bucketId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.
-  var bucketTaskBoardFormat: js.UndefOr[NullableOption[PlannerBucketTaskBoardTaskFormat]] = js.native
+  var bucketTaskBoardFormat: js.UndefOr[NullableOption[PlannerBucketTaskBoardTaskFormat]] = js.undefined
   
   // Number of checklist items that are present on the task.
-  var checklistItemCount: js.UndefOr[NullableOption[Double]] = js.native
+  var checklistItemCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Identity of the user that completed the task.
-  var completedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var completedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date
     * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
     * look like this: '2014-01-01T00:00:00Z'
     */
-  var completedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var completedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
-  var conversationThreadId: js.UndefOr[NullableOption[String]] = js.native
+  var conversationThreadId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identity of the user that created the task.
-  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using
     * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'
     */
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable. Additional details about the task.
-  var details: js.UndefOr[NullableOption[PlannerTaskDetails]] = js.native
+  var details: js.UndefOr[NullableOption[PlannerTaskDetails]] = js.undefined
   
   /**
     * Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var dueDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var dueDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
-  var hasDescription: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasDescription: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Hint used to order items of this type in a list view. The format is defined as outlined here.
-  var orderHint: js.UndefOr[NullableOption[String]] = js.native
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Percentage of task completion. When set to 100, the task is considered completed.
-  var percentComplete: js.UndefOr[NullableOption[Double]] = js.native
+  var percentComplete: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Plan ID to which the task belongs.
-  var planId: js.UndefOr[NullableOption[String]] = js.native
+  var planId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist,
     * description, reference.
     */
-  var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.native
+  var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.undefined
   
   // Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.
-  var progressTaskBoardFormat: js.UndefOr[NullableOption[PlannerProgressTaskBoardTaskFormat]] = js.native
+  var progressTaskBoardFormat: js.UndefOr[NullableOption[PlannerProgressTaskBoardTaskFormat]] = js.undefined
   
   // Number of external references that exist on the task.
-  var referenceCount: js.UndefOr[NullableOption[Double]] = js.native
+  var referenceCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Title of the task.
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlannerTask {
   

@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isPassportNumberMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsPassportNumber", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsPassportNumber", "IS_PASSPORT_NUMBER")
   @js.native
   val IS_PASSPORT_NUMBER: /* "isPassportNumber" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsPassportNumber", "IsPassportNumber")
-  @js.native
-  def IsPassportNumber_(countryCode: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsPassportNumber", "IsPassportNumber")
-  @js.native
-  def IsPassportNumber_(countryCode: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsPassportNumber_(countryCode: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPassportNumber")(countryCode.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsPassportNumber_(countryCode: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPassportNumber")(countryCode.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsPassportNumber", "isPassportNumber")
-  @js.native
-  def isPassportNumber(value: js.Any, countryCode: String): Boolean = js.native
+  @scala.inline
+  def isPassportNumber(value: js.Any, countryCode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPassportNumber")(value.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

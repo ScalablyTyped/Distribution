@@ -2,18 +2,16 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeInfo extends StObject {
   
   /**
     * Informs who provides the children to a node, used by data explorer tree view api
     */
-  var childProvider: js.UndefOr[String] = js.native
+  var childProvider: js.UndefOr[String] = js.undefined
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
   /**
     * Optional iconType for the object in the tree. Currently this only supports
@@ -21,26 +19,26 @@ trait NodeInfo extends StObject {
     * If not defined, the nodeType + nodeStatus / nodeSubType values
     * will be used instead.
     */
-  var iconType: js.UndefOr[String | SqlThemeIcon] = js.native
+  var iconType: js.UndefOr[String | SqlThemeIcon] = js.undefined
   
-  var isLeaf: Boolean = js.native
+  var isLeaf: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var metadata: ObjectMetadata = js.native
+  var metadata: ObjectMetadata
   
-  var nodePath: String = js.native
+  var nodePath: String
   
-  var nodeStatus: String = js.native
+  var nodeStatus: String
   
-  var nodeSubType: String = js.native
+  var nodeSubType: String
   
-  var nodeType: String = js.native
+  var nodeType: String
   
   /**
     * Holds the connection profile for nodes, used by data explorer tree view api
     */
-  var payload: js.UndefOr[js.Any] = js.native
+  var payload: js.UndefOr[js.Any] = js.undefined
 }
 object NodeInfo {
   

@@ -3,21 +3,19 @@ package typings.sendcloud.mod
 import typings.sendcloud.sendcloudStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessResp extends StObject {
   
-  var email_id_list: js.Array[String] = js.native
+  var email_id_list: js.Array[String]
   
-  var message: success = js.native
+  var message: success
 }
 object SuccessResp {
   
   @scala.inline
-  def apply(email_id_list: js.Array[String], message: success): SuccessResp = {
-    val __obj = js.Dynamic.literal(email_id_list = email_id_list.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  def apply(email_id_list: js.Array[String]): SuccessResp = {
+    val __obj = js.Dynamic.literal(email_id_list = email_id_list.asInstanceOf[js.Any], message = "success")
     __obj.asInstanceOf[SuccessResp]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageByAccount extends StObject {
   
   /**
     * The type of currency that the value for the metric (estimatedCost) is reported in.
     */
-  var currency: js.UndefOr[Currency] = js.native
+  var currency: js.UndefOr[Currency] = js.undefined
   
   /**
     * The estimated value for the metric.
     */
-  var estimatedCost: js.UndefOr[string] = js.native
+  var estimatedCost: js.UndefOr[string] = js.undefined
   
   /**
     * The current value for the quota that corresponds to the metric specified by the type field.
     */
-  var serviceLimit: js.UndefOr[ServiceLimit] = js.native
+  var serviceLimit: js.UndefOr[ServiceLimit] = js.undefined
   
   /**
     * The name of the metric. Possible values are: DATA_INVENTORY_EVALUATION, for monitoring S3 buckets; and, SENSITIVE_DATA_DISCOVERY, for analyzing sensitive data.
     */
-  var `type`: js.UndefOr[UsageType] = js.native
+  var `type`: js.UndefOr[UsageType] = js.undefined
 }
 object UsageByAccount {
   

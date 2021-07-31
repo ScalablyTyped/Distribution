@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateFingerprint extends StObject {
   
   /** The SHA 256 hash, encoded in hexadecimal, of the DER x509 certificate. */
-  var sha256Hash: js.UndefOr[String] = js.native
+  var sha256Hash: js.UndefOr[String] = js.undefined
 }
 object CertificateFingerprint {
   

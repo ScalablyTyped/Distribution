@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessagePopoverItem extends Element {
+trait MessagePopoverItem
+  extends StObject
+     with Element {
   
   /**
     * Destroys the link in the aggregation <code>link</code>.

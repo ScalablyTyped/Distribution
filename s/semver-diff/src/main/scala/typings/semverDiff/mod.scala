@@ -2,7 +2,6 @@ package typings.semverDiff
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,9 +34,12 @@ object mod {
   //=> undefined
   ```
   */
+  @scala.inline
+  def apply(versionA: String, versionB: String): js.UndefOr[Result] = (^.asInstanceOf[js.Dynamic].apply(versionA.asInstanceOf[js.Any], versionB.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Result]]
+  
   @JSImport("semver-diff", JSImport.Namespace)
   @js.native
-  def apply(versionA: String, versionB: String): js.UndefOr[Result] = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.semverDiff.semverDiffStrings.major

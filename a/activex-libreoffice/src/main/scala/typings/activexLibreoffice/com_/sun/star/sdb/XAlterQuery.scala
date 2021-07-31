@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to alter the command of a query. */
-@js.native
-trait XAlterQuery extends XInterface {
+trait XAlterQuery
+  extends StObject
+     with XInterface {
   
   /**
     * is intended to alter the command of a query object.
@@ -17,7 +17,7 @@ trait XAlterQuery extends XInterface {
     * @param useEscapeProcessing `TRUE` when escape processing should be used
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def alterCommand(command: String, useEscapeProcessing: Boolean): Unit = js.native
+  def alterCommand(command: String, useEscapeProcessing: Boolean): Unit
 }
 object XAlterQuery {
   

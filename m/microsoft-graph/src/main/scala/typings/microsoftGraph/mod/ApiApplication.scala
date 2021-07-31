@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiApplication extends StObject {
   
   // When true, allows an application to use claims mapping without specifying a custom signing key.
-  var acceptMappedClaims: js.UndefOr[NullableOption[Boolean]] = js.native
+  var acceptMappedClaims: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app. If you
@@ -17,14 +15,14 @@ trait ApiApplication extends StObject {
     * consenting to the client means implicitly consenting to the web API and automatically provisions service principals for
     * both APIs at the same time. Both the client and the web API app must be registered in the same tenant.
     */
-  var knownClientApplications: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var knownClientApplications: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * The definition of the delegated permissions exposed by the web API represented by this application registration. These
     * delegated permissions may be requested by a client application, and may be granted by users or administrators during
     * consent. Delegated permissions are sometimes referred to as OAuth 2.0 scopes.
     */
-  var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.native
+  var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.undefined
   
   /**
     * Lists the client applications that are pre-authorized with the specified delegated permissions to access this
@@ -32,7 +30,7 @@ trait ApiApplication extends StObject {
     * specified). However, any additional permissions not listed in preAuthorizedApplications (requested through incremental
     * consent for example) will require user consent.
     */
-  var preAuthorizedApplications: js.UndefOr[NullableOption[js.Array[PreAuthorizedApplication]]] = js.native
+  var preAuthorizedApplications: js.UndefOr[NullableOption[js.Array[PreAuthorizedApplication]]] = js.undefined
   
   /**
     * Specifies the access token version expected by this resource. This changes the version and format of the JWT produced
@@ -43,7 +41,7 @@ trait ApiApplication extends StObject {
     * endpoint. If signInAudience on the application is configured as AzureADandPersonalMicrosoftAccount, the value for this
     * property must be 2
     */
-  var requestedAccessTokenVersion: js.UndefOr[NullableOption[Double]] = js.native
+  var requestedAccessTokenVersion: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object ApiApplication {
   

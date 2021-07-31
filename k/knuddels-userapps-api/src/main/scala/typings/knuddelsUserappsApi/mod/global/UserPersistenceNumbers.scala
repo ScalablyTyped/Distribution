@@ -8,7 +8,6 @@ import typings.knuddelsUserappsApi.anon.MaximumValue
 import typings.knuddelsUserappsApi.anon.MinimumValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,31 +18,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UserPersistenceNumbers () extends StObject
 object UserPersistenceNumbers {
   
+  @JSGlobal("UserPersistenceNumbers")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_addNumber
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.addNumber")
-  @js.native
-  def addNumber(key: java.lang.String, value: Double): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.addNumber")
-  @js.native
-  def addNumber(key: java.lang.String, value: Double, parameters: MinimumValue): Double = js.native
+  @scala.inline
+  def addNumber(key: java.lang.String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addNumber")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def addNumber(key: java.lang.String, value: Double, parameters: MinimumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addNumber")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_deleteAll
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.deleteAll")
-  @js.native
-  def deleteAll(key: java.lang.String): Double = js.native
+  @scala.inline
+  def deleteAll(key: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAll")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_each
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.each")
-  @js.native
+  @scala.inline
   def each(
     key: java.lang.String,
     callback: js.Function5[
@@ -54,9 +53,8 @@ object UserPersistenceNumbers {
       /* key */ java.lang.String, 
       Boolean
     ]
-  ): Unit = js.native
-  @JSGlobal("UserPersistenceNumbers.each")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def each(
     key: java.lang.String,
     callback: js.Function5[
@@ -68,114 +66,93 @@ object UserPersistenceNumbers {
       Boolean
     ],
     parameters: MaximumCount
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getAllKeys
   		 * @since AppServer 82483
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getAllKeys")
-  @js.native
-  def getAllKeys(): js.Array[java.lang.String] = js.native
-  @JSGlobal("UserPersistenceNumbers.getAllKeys")
-  @js.native
-  def getAllKeys(filterKey: java.lang.String): js.Array[java.lang.String] = js.native
+  @scala.inline
+  def getAllKeys(): js.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")().asInstanceOf[js.Array[java.lang.String]]
+  @scala.inline
+  def getAllKeys(filterKey: java.lang.String): js.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")(filterKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getCount
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getCount")
-  @js.native
-  def getCount(key: java.lang.String): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.getCount")
-  @js.native
-  def getCount(key: java.lang.String, parameters: MaximumValue): Double = js.native
+  @scala.inline
+  def getCount(key: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getCount(key: java.lang.String, parameters: MaximumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("UserPersistenceNumbers.getPosition")
-  @js.native
-  def getPosition(key: java.lang.String, user_or_userId: Double): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.getPosition")
-  @js.native
-  def getPosition(key: java.lang.String, user_or_userId: Double, parameters: AscendingMinimumValue): Double = js.native
+  @scala.inline
+  def getPosition(key: java.lang.String, user_or_userId: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getPosition(key: java.lang.String, user_or_userId: Double, parameters: AscendingMinimumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getPosition
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getPosition")
-  @js.native
-  def getPosition(key: java.lang.String, user_or_userId: User): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.getPosition")
-  @js.native
-  def getPosition(key: java.lang.String, user_or_userId: User, parameters: AscendingMinimumValue): Double = js.native
+  @scala.inline
+  def getPosition(key: java.lang.String, user_or_userId: User): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getPosition(key: java.lang.String, user_or_userId: User, parameters: AscendingMinimumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("UserPersistenceNumbers.getRank")
-  @js.native
-  def getRank(key: java.lang.String, user_or_userId: Double): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.getRank")
-  @js.native
-  def getRank(key: java.lang.String, user_or_userId: Double, parameters: AscendingMinimumValue): Double = js.native
+  @scala.inline
+  def getRank(key: java.lang.String, user_or_userId: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRank")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getRank(key: java.lang.String, user_or_userId: Double, parameters: AscendingMinimumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRank")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getRank
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getRank")
-  @js.native
-  def getRank(key: java.lang.String, user_or_userId: User): Double = js.native
-  @JSGlobal("UserPersistenceNumbers.getRank")
-  @js.native
-  def getRank(key: java.lang.String, user_or_userId: User, parameters: AscendingMinimumValue): Double = js.native
+  @scala.inline
+  def getRank(key: java.lang.String, user_or_userId: User): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRank")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getRank(key: java.lang.String, user_or_userId: User, parameters: AscendingMinimumValue): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRank")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntries
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getSortedEntries")
-  @js.native
-  def getSortedEntries(key: java.lang.String): js.Array[UserPersistenceNumberEntry] = js.native
-  @JSGlobal("UserPersistenceNumbers.getSortedEntries")
-  @js.native
-  def getSortedEntries(key: java.lang.String, parameters: Count): js.Array[UserPersistenceNumberEntry] = js.native
+  @scala.inline
+  def getSortedEntries(key: java.lang.String): js.Array[UserPersistenceNumberEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntries")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
+  @scala.inline
+  def getSortedEntries(key: java.lang.String, parameters: Count): js.Array[UserPersistenceNumberEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntries")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
   
-  @JSGlobal("UserPersistenceNumbers.getSortedEntriesAdjacent")
-  @js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double): js.Array[UserPersistenceNumberEntry] = js.native
-  @JSGlobal("UserPersistenceNumbers.getSortedEntriesAdjacent")
-  @js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double, parameters: AscendingCount): js.Array[UserPersistenceNumberEntry] = js.native
+  @scala.inline
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double): js.Array[UserPersistenceNumberEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntriesAdjacent")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
+  @scala.inline
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: Double, parameters: AscendingCount): js.Array[UserPersistenceNumberEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntriesAdjacent")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntriesAdjacent
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getSortedEntriesAdjacent")
-  @js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User): js.Array[UserPersistenceNumberEntry] = js.native
-  @JSGlobal("UserPersistenceNumbers.getSortedEntriesAdjacent")
-  @js.native
-  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User, parameters: AscendingCount): js.Array[UserPersistenceNumberEntry] = js.native
+  @scala.inline
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User): js.Array[UserPersistenceNumberEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntriesAdjacent")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any])).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
+  @scala.inline
+  def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: User, parameters: AscendingCount): js.Array[UserPersistenceNumberEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEntriesAdjacent")(key.asInstanceOf[js.Any], user_or_userId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Array[UserPersistenceNumberEntry]]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSum
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.getSum")
-  @js.native
-  def getSum(key: java.lang.String): Double = js.native
+  @scala.inline
+  def getSum(key: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSum")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_updateKey
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.updateKey")
-  @js.native
-  def updateKey(oldKeyName: java.lang.String, newKeyName: java.lang.String): Double = js.native
+  @scala.inline
+  def updateKey(oldKeyName: java.lang.String, newKeyName: java.lang.String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateKey")(oldKeyName.asInstanceOf[js.Any], newKeyName.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_updateValue
   		 */
   /* static member */
-  @JSGlobal("UserPersistenceNumbers.updateValue")
-  @js.native
-  def updateValue(key: java.lang.String, oldValue: Double, newValue: Double): Double = js.native
+  @scala.inline
+  def updateValue(key: java.lang.String, oldValue: Double, newValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateValue")(key.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

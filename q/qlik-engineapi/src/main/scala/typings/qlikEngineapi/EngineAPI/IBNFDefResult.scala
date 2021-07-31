@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBNFDefResult
   */
-@js.native
 trait IBNFDefResult extends StObject {
   
   /**
     * Description of the scripting language grammar.
     */
-  var qBnfDefs: js.Array[IBNFDef] = js.native
+  var qBnfDefs: js.Array[IBNFDef]
   
   /**
     * A string hash of the BNF definition.
     */
-  var qBnfHash: String = js.native
+  var qBnfHash: String
 }
 object IBNFDefResult {
   

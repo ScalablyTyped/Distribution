@@ -2,16 +2,14 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebviewOptions extends StObject {
   
   /**
     * Content settings for the webview created for this view.
     */
-  val webviewOptions: js.UndefOr[RetainContextWhenHidden] = js.native
+  val webviewOptions: js.UndefOr[RetainContextWhenHidden] = js.undefined
 }
 object WebviewOptions {
   

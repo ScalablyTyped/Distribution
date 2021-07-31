@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a data cue that can be included in a TimedMetadataTrack . */
-@js.native
 trait DataCue extends StObject {
   
   /** Gets the data associated with the cue. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
   /** Gets or sets the duration of the cue. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets the identifier for the timed metadata track. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the start time of the cue. */
-  var startTime: Double = js.native
+  var startTime: Double
 }
 object DataCue {
   

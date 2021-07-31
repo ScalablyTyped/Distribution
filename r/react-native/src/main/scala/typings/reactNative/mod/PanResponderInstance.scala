@@ -2,13 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanResponderInstance extends StObject {
   
-  var panHandlers: GestureResponderHandlers = js.native
+  var panHandlers: GestureResponderHandlers
 }
 object PanResponderInstance {
   

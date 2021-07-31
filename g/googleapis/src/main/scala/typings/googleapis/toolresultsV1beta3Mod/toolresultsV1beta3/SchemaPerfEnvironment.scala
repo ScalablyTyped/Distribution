@@ -2,24 +2,22 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates performance environment info
   */
-@js.native
 trait SchemaPerfEnvironment extends StObject {
   
   /**
     * CPU related environment info
     */
-  var cpuInfo: js.UndefOr[SchemaCPUInfo] = js.native
+  var cpuInfo: js.UndefOr[SchemaCPUInfo] = js.undefined
   
   /**
     * Memory related environment info
     */
-  var memoryInfo: js.UndefOr[SchemaMemoryInfo] = js.native
+  var memoryInfo: js.UndefOr[SchemaMemoryInfo] = js.undefined
 }
 object SchemaPerfEnvironment {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatedArtifact extends StObject {
   
   /**
     * A description that can be free-form text to record additional detail about the artifact for clarity or for later reference.
     */
-  var Description: js.UndefOr[CreatedArtifactDescription] = js.native
+  var Description: js.UndefOr[CreatedArtifactDescription] = js.undefined
   
   /**
     * An ARN that uniquely identifies the result of a migration task.
     */
-  var Name: CreatedArtifactName = js.native
+  var Name: CreatedArtifactName
 }
 object CreatedArtifact {
   

@@ -13,90 +13,88 @@ import typings.summernote.summernoteStrings.table
 import typings.summernote.summernoteStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var airMode: js.UndefOr[Boolean] = js.native
+  var airMode: js.UndefOr[Boolean] = js.undefined
   
-  var callbacks: js.UndefOr[js.Any] = js.native
+  var callbacks: js.UndefOr[js.Any] = js.undefined
   
   // todo
-  var codemirror: js.UndefOr[CodemirrorOptions] = js.native
+  var codemirror: js.UndefOr[CodemirrorOptions] = js.undefined
   
-  var codeviewFilter: js.UndefOr[Boolean] = js.native
+  var codeviewFilter: js.UndefOr[Boolean] = js.undefined
   
-  var codeviewFilterRegex: js.UndefOr[String] = js.native
+  var codeviewFilterRegex: js.UndefOr[String] = js.undefined
   
-  var codeviewIframeFilter: js.UndefOr[Boolean] = js.native
+  var codeviewIframeFilter: js.UndefOr[Boolean] = js.undefined
   
-  var codeviewIframeWhitelistSrc: js.UndefOr[js.Array[String]] = js.native
+  var codeviewIframeWhitelistSrc: js.UndefOr[js.Array[String]] = js.undefined
   
-  var colors: js.UndefOr[colorsDef] = js.native
+  var colors: js.UndefOr[colorsDef] = js.undefined
   
-  var dialogsFade: js.UndefOr[Boolean] = js.native
+  var dialogsFade: js.UndefOr[Boolean] = js.undefined
   
-  var dialogsInBody: js.UndefOr[Boolean] = js.native
+  var dialogsInBody: js.UndefOr[Boolean] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var disableDragAndDrop: js.UndefOr[Boolean] = js.native
+  var disableDragAndDrop: js.UndefOr[Boolean] = js.undefined
   
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var fontNames: js.UndefOr[js.Array[String]] = js.native
+  var fontNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fontNamesIgnoreCheck: js.UndefOr[js.Array[String]] = js.native
+  var fontNamesIgnoreCheck: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fontSizeUnits: js.UndefOr[js.Array[fontSizeUnitOptions]] = js.native
+  var fontSizeUnits: js.UndefOr[js.Array[fontSizeUnitOptions]] = js.undefined
   
-  var fontSizes: js.UndefOr[js.Array[String]] = js.native
+  var fontSizes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hint: js.UndefOr[HintOptions] = js.native
+  var hint: js.UndefOr[HintOptions] = js.undefined
   
-  var icons: js.UndefOr[IconsOptions] = js.native
+  var icons: js.UndefOr[IconsOptions] = js.undefined
   
-  var insertTableMaxSize: js.UndefOr[InsertTableMaxSizeOptions] = js.native
+  var insertTableMaxSize: js.UndefOr[InsertTableMaxSizeOptions] = js.undefined
   
-  var keyMap: js.UndefOr[KeyMapOptions] = js.native
+  var keyMap: js.UndefOr[KeyMapOptions] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var lineHeights: js.UndefOr[js.Array[String]] = js.native
+  var lineHeights: js.UndefOr[js.Array[String]] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maximumImageFileSize: js.UndefOr[js.Any] = js.native
+  var maximumImageFileSize: js.UndefOr[js.Any] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var modules: js.UndefOr[ModuleOptions] = js.native
+  var modules: js.UndefOr[ModuleOptions] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popover: js.UndefOr[PopoverOptions] = js.native
+  var popover: js.UndefOr[PopoverOptions] = js.undefined
   
-  var shortcuts: js.UndefOr[Boolean] = js.native
+  var shortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var styleTags: js.UndefOr[js.Array[styleTagsOptions]] = js.native
+  var styleTags: js.UndefOr[js.Array[styleTagsOptions]] = js.undefined
   
-  var styleWithSpan: js.UndefOr[Boolean] = js.native
+  var styleWithSpan: js.UndefOr[Boolean] = js.undefined
   
-  var tabDisable: js.UndefOr[Boolean] = js.native
+  var tabDisable: js.UndefOr[Boolean] = js.undefined
   
-  var tableClassName: js.UndefOr[String] = js.native
+  var tableClassName: js.UndefOr[String] = js.undefined
   
-  var tabsize: js.UndefOr[Double] = js.native
+  var tabsize: js.UndefOr[Double] = js.undefined
   
-  var textareaAutoSync: js.UndefOr[Boolean] = js.native
+  var textareaAutoSync: js.UndefOr[Boolean] = js.undefined
   
-  var toolbar: js.UndefOr[toolbarDef] = js.native
+  var toolbar: js.UndefOr[toolbarDef] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Options {
   

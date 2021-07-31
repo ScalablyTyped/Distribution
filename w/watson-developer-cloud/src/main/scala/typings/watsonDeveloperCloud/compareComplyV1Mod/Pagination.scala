@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Pagination details, if required by the length of the output. */
-@js.native
 trait Pagination extends StObject {
   
   /** A token identifying the next page of results. */
-  var next_cursor: js.UndefOr[String] = js.native
+  var next_cursor: js.UndefOr[String] = js.undefined
   
   /** The URL that returns the next page of results. */
-  var next_url: js.UndefOr[String] = js.native
+  var next_url: js.UndefOr[String] = js.undefined
   
   /** A token identifying the current page of results. */
-  var refresh_cursor: js.UndefOr[String] = js.native
+  var refresh_cursor: js.UndefOr[String] = js.undefined
   
   /** The URL that returns the current page of results. */
-  var refresh_url: js.UndefOr[String] = js.native
+  var refresh_url: js.UndefOr[String] = js.undefined
   
   /** Reserved for future use. */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object Pagination {
   

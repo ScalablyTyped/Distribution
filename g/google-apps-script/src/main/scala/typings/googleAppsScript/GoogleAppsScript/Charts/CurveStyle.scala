@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait CurveStyle extends StObject
 object CurveStyle extends StObject {
   
   @js.native
-  sealed trait NORMAL extends CurveStyle
+  sealed trait NORMAL
+    extends StObject
+       with CurveStyle
   
   @js.native
-  sealed trait SMOOTH extends CurveStyle
+  sealed trait SMOOTH
+    extends StObject
+       with CurveStyle
 }

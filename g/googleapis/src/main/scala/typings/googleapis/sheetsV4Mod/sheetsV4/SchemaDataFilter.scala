@@ -2,31 +2,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter that describes what data should be selected or returned from a
   * request.
   */
-@js.native
 trait SchemaDataFilter extends StObject {
   
   /**
     * Selects data that matches the specified A1 range.
     */
-  var a1Range: js.UndefOr[String] = js.native
+  var a1Range: js.UndefOr[String] = js.undefined
   
   /**
     * Selects data associated with the developer metadata matching the criteria
     * described by this DeveloperMetadataLookup.
     */
-  var developerMetadataLookup: js.UndefOr[SchemaDeveloperMetadataLookup] = js.native
+  var developerMetadataLookup: js.UndefOr[SchemaDeveloperMetadataLookup] = js.undefined
   
   /**
     * Selects data that matches the range described by the GridRange.
     */
-  var gridRange: js.UndefOr[SchemaGridRange] = js.native
+  var gridRange: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaDataFilter {
   

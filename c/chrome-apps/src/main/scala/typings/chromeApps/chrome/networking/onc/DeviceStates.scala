@@ -2,21 +2,19 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of devices and their state. */
-@js.native
 trait DeviceStates extends StObject {
   
   /** The SIM lock status if Type = Cellular and SIMPresent = True. */
-  var SIMLockStatus: js.UndefOr[typings.chromeApps.chrome.networking.onc.SIMLockStatus] = js.native
+  var SIMLockStatus: js.UndefOr[typings.chromeApps.chrome.networking.onc.SIMLockStatus] = js.undefined
   
   /** Set to the SIM present state if the device type is Cellular. */
-  var SIMPresent: js.UndefOr[Boolean] = js.native
+  var SIMPresent: js.UndefOr[Boolean] = js.undefined
   
   /** Set if the device is enabled. True if the device is currently scanning. */
-  var Scanning: js.UndefOr[Boolean] = js.native
+  var Scanning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current state of the device.
@@ -32,10 +30,10 @@ trait DeviceStates extends StObject {
     * **Prohibited**
     *  - Device is prohibited.
     */
-  var State: DeviceState = js.native
+  var State: DeviceState
   
   /** The network type associated with the device (Cellular, Ethernet, WiFi, or WiMAX). */
-  var Type: NetworkType = js.native
+  var Type: NetworkType
 }
 object DeviceStates {
   

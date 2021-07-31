@@ -4,29 +4,28 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRandomAccessStream
-  extends IInputStream
+  extends StObject
+     with IInputStream
      with IOutputStream {
   
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
-  var canWrite: Boolean = js.native
+  var canWrite: Boolean
   
-  def cloneStream(): IRandomAccessStream = js.native
+  def cloneStream(): IRandomAccessStream
   
-  def getInputStreamAt(position: Double): IInputStream = js.native
+  def getInputStreamAt(position: Double): IInputStream
   
-  def getOutputStreamAt(position: Double): IOutputStream = js.native
+  def getOutputStreamAt(position: Double): IOutputStream
   
-  var position: Double = js.native
+  var position: Double
   
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
-  var size: Double = js.native
+  var size: Double
 }
 object IRandomAccessStream {
   

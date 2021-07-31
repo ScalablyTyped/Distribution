@@ -1,9 +1,9 @@
 package typings.pulumiCloud.serviceMod
 
+import typings.pulumiCloud.serviceMod.^
 import typings.pulumiPulumi.outputMod.Output_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,9 +31,14 @@ trait Service extends StObject {
     * Only usable on the inside.
     */
   def getEndpoint(): js.Promise[Endpoint] = js.native
-  def getEndpoint(containerName: js.UndefOr[scala.Nothing], containerPort: Double): js.Promise[Endpoint] = js.native
   def getEndpoint(containerName: String): js.Promise[Endpoint] = js.native
   def getEndpoint(containerName: String, containerPort: Double): js.Promise[Endpoint] = js.native
+  def getEndpoint(containerName: Unit, containerPort: Double): js.Promise[Endpoint] = js.native
   
   var name: String = js.native
+}
+object Service {
+  
+  @scala.inline
+  def apply: ServiceConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Service").asInstanceOf[ServiceConstructor]
 }

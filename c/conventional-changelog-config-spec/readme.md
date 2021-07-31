@@ -11,8 +11,8 @@ a spec describing the config options supported by conventional-config for upstre
 | Full name          | conventional-changelog-config-spec |
 | Keywords           | conventional-changelog, conventional, changelog, spec |
 | # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 4343052 |
+| # dependents       | 7 |
+| # downloads        | 6872912 |
 | # stars            | 0 |
 
 ## Links

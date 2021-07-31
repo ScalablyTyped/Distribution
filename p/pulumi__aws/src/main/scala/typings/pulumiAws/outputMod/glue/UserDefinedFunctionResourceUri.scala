@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDefinedFunctionResourceUri extends StObject {
   
   /**
     * The type of the resource. can be one of `JAR`, `FILE`, and `ARCHIVE`.
     */
-  var resourceType: String = js.native
+  var resourceType: String
   
   /**
     * The URI for accessing the resource.
     */
-  var uri: String = js.native
+  var uri: String
 }
 object UserDefinedFunctionResourceUri {
   

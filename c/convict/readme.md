@@ -10,9 +10,9 @@ Featureful configuration management library for Node.js (nested structure, schem
 | ------------------ | :-------------: |
 | Full name          | convict |
 | Keywords           | configuration, config, key value store, schema, nested, validation |
-| # releases         | 7 |
-| # dependents       | 304 |
-| # downloads        | 7005242 |
+| # releases         | 5 |
+| # dependents       | 326 |
+| # downloads        | 8353236 |
 | # stars            | 30 |
 
 ## Links

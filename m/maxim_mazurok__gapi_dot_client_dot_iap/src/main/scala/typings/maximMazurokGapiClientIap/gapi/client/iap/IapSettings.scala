@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IapSettings extends StObject {
   
   /** Top level wrapper for all access related setting in IAP */
-  var accessSettings: js.UndefOr[AccessSettings] = js.native
+  var accessSettings: js.UndefOr[AccessSettings] = js.undefined
   
   /** Top level wrapper for all application related settings in IAP */
-  var applicationSettings: js.UndefOr[ApplicationSettings] = js.native
+  var applicationSettings: js.UndefOr[ApplicationSettings] = js.undefined
   
   /** Required. The resource name of the IAP protected resource. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object IapSettings {
   

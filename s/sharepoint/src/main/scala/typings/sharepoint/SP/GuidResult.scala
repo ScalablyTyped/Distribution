@@ -2,13 +2,11 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GuidResult extends StObject {
   
-  def get_value(): Guid = js.native
+  def get_value(): Guid
 }
 object GuidResult {
   

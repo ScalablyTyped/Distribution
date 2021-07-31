@@ -1,12 +1,15 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/definition/typescript/decorator/registerClass", JSImport.Namespace)
-@js.native
-object registerClassMod extends js.Object {
-  def registerClass(className: String): js.Function1[/* _class */ js.Any, Unit] = js.native
+object registerClassMod {
+  
+  @JSImport("wonder.js/dist/es2015/definition/typescript/decorator/registerClass", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def registerClass(className: String): js.Function1[/* _class */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(className.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* _class */ js.Any, Unit]]
 }
-

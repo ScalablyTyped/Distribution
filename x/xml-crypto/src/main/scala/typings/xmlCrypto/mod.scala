@@ -9,10 +9,13 @@ import typings.xmlCrypto.anon.CanonicalizationAlgorithm
 import typings.xpath.mod.SelectedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("xml-crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xml-crypto", "FileKeyInfo")
   @js.native
@@ -25,9 +28,9 @@ object mod {
     def getKey(keyInfo: Node): Buffer = js.native
     
     def getKeyInfo(): String = js.native
-    def getKeyInfo(key: js.UndefOr[scala.Nothing], prefix: String): String = js.native
     def getKeyInfo(key: String): String = js.native
     def getKeyInfo(key: String, prefix: String): String = js.native
+    def getKeyInfo(key: Unit, prefix: String): String = js.native
   }
   
   @JSImport("xml-crypto", "HashAlgorithm")
@@ -52,9 +55,9 @@ object mod {
   @js.native
   class SignedXml () extends StObject {
     def this(idMode: String) = this()
-    def this(idMode: js.UndefOr[scala.Nothing], options: CanonicalizationAlgorithm) = this()
     def this(idMode: String, options: CanonicalizationAlgorithm) = this()
     def this(idMode: Null, options: CanonicalizationAlgorithm) = this()
+    def this(idMode: Unit, options: CanonicalizationAlgorithm) = this()
     
     def addReference(
       xpath: String,
@@ -127,26 +130,24 @@ object mod {
     def process(node: Node): String = js.native
   }
   
-  @JSImport("xml-crypto", "xpath")
-  @js.native
-  def xpath(node: Node, xpath: String): js.Array[SelectedValue] = js.native
+  @scala.inline
+  def xpath(node: Node, xpath: String): js.Array[SelectedValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Array[SelectedValue]]
   
-  @js.native
   trait Reference extends StObject {
     
-    var digestAlgorithm: js.UndefOr[String] = js.native
+    var digestAlgorithm: js.UndefOr[String] = js.undefined
     
-    var digestValue: js.UndefOr[String] = js.native
+    var digestValue: js.UndefOr[String] = js.undefined
     
-    var inclusiveNamespacesPrefixList: js.UndefOr[String] = js.native
+    var inclusiveNamespacesPrefixList: js.UndefOr[String] = js.undefined
     
-    var isEmptyUri: js.UndefOr[Boolean] = js.native
+    var isEmptyUri: js.UndefOr[Boolean] = js.undefined
     
-    var transforms: js.UndefOr[js.Array[String]] = js.native
+    var transforms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var xpath: String = js.native
+    var xpath: String
   }
   object Reference {
     

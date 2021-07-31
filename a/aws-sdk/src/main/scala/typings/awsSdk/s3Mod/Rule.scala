@@ -2,42 +2,40 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
-  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3Mod.AbortIncompleteMultipartUpload] = js.native
+  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3Mod.AbortIncompleteMultipartUpload] = js.undefined
   
   /**
     * Specifies the expiration for the lifecycle of the object.
     */
-  var Expiration: js.UndefOr[LifecycleExpiration] = js.native
+  var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
   
   /**
     * Unique identifier for the rule. The value can't be longer than 255 characters.
     */
-  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.native
+  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.undefined
   
-  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionExpiration] = js.native
+  var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionExpiration] = js.undefined
   
-  var NoncurrentVersionTransition: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionTransition] = js.native
+  var NoncurrentVersionTransition: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionTransition] = js.undefined
   
   /**
     * Object key prefix that identifies one or more objects to which this rule applies.
     */
-  var Prefix: typings.awsSdk.s3Mod.Prefix = js.native
+  var Prefix: typings.awsSdk.s3Mod.Prefix
   
   /**
     * If Enabled, the rule is currently being applied. If Disabled, the rule is not currently being applied.
     */
-  var Status: ExpirationStatus = js.native
+  var Status: ExpirationStatus
   
   /**
     * Specifies when an object transitions to a specified storage class. For more information about Amazon S3 lifecycle configuration rules, see Transitioning Objects Using Amazon S3 Lifecycle in the Amazon Simple Storage Service Developer Guide.
     */
-  var Transition: js.UndefOr[typings.awsSdk.s3Mod.Transition] = js.native
+  var Transition: js.UndefOr[typings.awsSdk.s3Mod.Transition] = js.undefined
 }
 object Rule {
   

@@ -4,7 +4,6 @@ import typings.std.Event
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -13,27 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
 	 * Global options for preact
 	 */
-@js.native
 trait Options_ extends StObject {
   
-  var __suspenseDidResolve: js.UndefOr[js.Function2[/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit], Unit]] = js.native
+  var __suspenseDidResolve: js.UndefOr[js.Function2[/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit], Unit]] = js.undefined
   
-  var debounceRendering: js.UndefOr[js.Function1[/* cb */ js.Function0[Unit], Unit]] = js.native
+  var debounceRendering: js.UndefOr[js.Function1[/* cb */ js.Function0[Unit], Unit]] = js.undefined
   
   /** Attach a hook that is invoked after a vnode has rendered. */
-  var diffed: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.native
+  var diffed: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
   
-  var event: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+  var event: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
   
-  var requestAnimationFrame: js.UndefOr[js.Function1[/* callback */ FrameRequestCallback, Double]] = js.native
+  var requestAnimationFrame: js.UndefOr[js.Function1[/* callback */ FrameRequestCallback, Double]] = js.undefined
   
   /** Attach a hook that is invoked immediately before a vnode is unmounted. */
-  var unmount: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.native
+  var unmount: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
   
-  var useDebugValue: js.UndefOr[js.Function1[/* value */ String | Double, Unit]] = js.native
+  var useDebugValue: js.UndefOr[js.Function1[/* value */ String | Double, Unit]] = js.undefined
   
   /** Attach a hook that is invoked whenever a VNode is created. */
-  var vnode: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.native
+  var vnode: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
 }
 object Options_ {
   
@@ -59,7 +57,7 @@ object Options_ {
     def setDiffedUndefined: Self = StObject.set(x, "diffed", js.undefined)
     
     @scala.inline
-    def setEvent(value: /* e */ Event => _): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
+    def setEvent(value: /* e */ Event => js.Any): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
     
     @scala.inline
     def setEventUndefined: Self = StObject.set(x, "event", js.undefined)

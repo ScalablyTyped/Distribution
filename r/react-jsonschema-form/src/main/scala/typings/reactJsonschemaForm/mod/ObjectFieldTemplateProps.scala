@@ -7,33 +7,31 @@ import typings.reactJsonschemaForm.anon.Description
 import typings.reactJsonschemaForm.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectFieldTemplateProps[T] extends StObject {
   
-  var DescriptionField: StatelessComponent[Description] = js.native
+  var DescriptionField: StatelessComponent[Description]
   
-  var TitleField: StatelessComponent[Id] = js.native
+  var TitleField: StatelessComponent[Id]
   
-  var description: String = js.native
+  var description: String
   
-  var formContext: js.Any = js.native
+  var formContext: js.Any
   
-  var formData: T = js.native
+  var formData: T
   
-  var idSchema: IdSchema[_] = js.native
+  var idSchema: IdSchema[js.Any]
   
-  var properties: js.Array[Content] = js.native
+  var properties: js.Array[Content]
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var schema: JSONSchema6 = js.native
+  var schema: JSONSchema6
   
-  var title: String = js.native
+  var title: String
   
-  var uiSchema: UiSchema = js.native
+  var uiSchema: UiSchema
 }
 object ObjectFieldTemplateProps {
   
@@ -44,7 +42,7 @@ object ObjectFieldTemplateProps {
     description: String,
     formContext: js.Any,
     formData: T,
-    idSchema: IdSchema[_],
+    idSchema: IdSchema[js.Any],
     properties: js.Array[Content],
     required: Boolean,
     schema: JSONSchema6,
@@ -56,7 +54,7 @@ object ObjectFieldTemplateProps {
   }
   
   @scala.inline
-  implicit class ObjectFieldTemplatePropsMutableBuilder[Self <: ObjectFieldTemplateProps[_], T] (val x: Self with ObjectFieldTemplateProps[T]) extends AnyVal {
+  implicit class ObjectFieldTemplatePropsMutableBuilder[Self <: ObjectFieldTemplateProps[?], T] (val x: Self & ObjectFieldTemplateProps[T]) extends AnyVal {
     
     @scala.inline
     def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -71,7 +69,7 @@ object ObjectFieldTemplateProps {
     def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProperties(value: js.Array[Content]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])

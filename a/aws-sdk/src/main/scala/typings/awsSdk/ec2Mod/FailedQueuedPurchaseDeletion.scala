@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedQueuedPurchaseDeletion extends StObject {
   
   /**
     * The error.
     */
-  var Error: js.UndefOr[DeleteQueuedReservedInstancesError] = js.native
+  var Error: js.UndefOr[DeleteQueuedReservedInstancesError] = js.undefined
   
   /**
     * The ID of the Reserved Instance.
     */
-  var ReservedInstancesId: js.UndefOr[String] = js.native
+  var ReservedInstancesId: js.UndefOr[String] = js.undefined
 }
 object FailedQueuedPurchaseDeletion {
   

@@ -3,28 +3,35 @@ package typings.qrcode
 import typings.qrcode.mod.QRCodeErrorCorrectionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qrcodeStrings {
   
   @js.native
-  sealed trait H extends QRCodeErrorCorrectionLevel
+  sealed trait H
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait L extends QRCodeErrorCorrectionLevel
+  sealed trait L
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait M extends QRCodeErrorCorrectionLevel
+  sealed trait M
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait Q extends QRCodeErrorCorrectionLevel
+  sealed trait Q
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   
@@ -39,7 +46,9 @@ object qrcodeStrings {
   def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait high extends QRCodeErrorCorrectionLevel
+  sealed trait high
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
@@ -64,12 +73,16 @@ object qrcodeStrings {
   def kanji: kanji = "kanji".asInstanceOf[kanji]
   
   @js.native
-  sealed trait low extends QRCodeErrorCorrectionLevel
+  sealed trait low
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait medium extends QRCodeErrorCorrectionLevel
+  sealed trait medium
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -84,7 +97,9 @@ object qrcodeStrings {
   def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait quartile extends QRCodeErrorCorrectionLevel
+  sealed trait quartile
+    extends StObject
+       with QRCodeErrorCorrectionLevel
   @scala.inline
   def quartile: quartile = "quartile".asInstanceOf[quartile]
   

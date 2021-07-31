@@ -3,31 +3,31 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientDBEntry extends ResponseEntry {
+trait ClientDBEntry
+  extends StObject
+     with ResponseEntry {
   
-  var cldbid: String = js.native
+  var cldbid: String
   
-  var clientCreated: Double = js.native
+  var clientCreated: Double
   
-  var clientDescription: String = js.native
+  var clientDescription: String
   
-  var clientLastconnected: Double = js.native
+  var clientLastconnected: Double
   
-  var clientLastip: String = js.native
+  var clientLastip: String
   
-  var clientLoginName: String = js.native
+  var clientLoginName: String
   
-  var clientNickname: String = js.native
+  var clientNickname: String
   
-  var clientTotalconnections: Double = js.native
+  var clientTotalconnections: Double
   
-  var clientUniqueIdentifier: String = js.native
+  var clientUniqueIdentifier: String
   
-  var count: Double = js.native
+  var count: Double
 }
 object ClientDBEntry {
   

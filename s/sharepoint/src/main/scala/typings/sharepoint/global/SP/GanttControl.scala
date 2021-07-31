@@ -1,14 +1,19 @@
 package typings.sharepoint.global.SP
 
+import typings.sharepoint.SP.JsGrid.ColumnInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.GanttControl")
 @js.native
 class GanttControl ()
-  extends typings.sharepoint.SP.GanttControl
+  extends StObject
+     with typings.sharepoint.SP.GanttControl {
+  
+  /* CompleteClass */
+  override def get_Columns(): js.Array[ColumnInfo] = js.native
+}
 object GanttControl {
   
   @JSGlobal("SP.GanttControl")
@@ -30,7 +35,6 @@ object GanttControl {
   def Instances_=(x: js.Array[typings.sharepoint.SP.GanttControl]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("SP.GanttControl.WaitForGanttCreation")
-  @js.native
-  def WaitForGanttCreation(callack: js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]): Unit = js.native
+  @scala.inline
+  def WaitForGanttCreation(callack: js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForGanttCreation")(callack.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

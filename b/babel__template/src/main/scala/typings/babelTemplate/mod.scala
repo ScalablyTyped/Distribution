@@ -13,7 +13,6 @@ import typings.std.Set
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -42,39 +41,11 @@ object mod extends Shortcut {
   @js.native
   val statements: TemplateBuilder[js.Array[Statement]] = js.native
   
-  /* Inlined @babel/template.@babel/template.TemplateBuilder<@babel/types.@babel/types.Statement | std.Array<@babel/types.@babel/types.Statement>> & {  smart :@babel/template.@babel/template.TemplateBuilder<@babel/types.@babel/types.Statement | std.Array<@babel/types.@babel/types.Statement>>,   statement :@babel/template.@babel/template.TemplateBuilder<@babel/types.@babel/types.Statement>,   statements :@babel/template.@babel/template.TemplateBuilder<std.Array<@babel/types.@babel/types.Statement>>,   expression :@babel/template.@babel/template.TemplateBuilder<@babel/types.@babel/types.Expression>,   program :@babel/template.@babel/template.TemplateBuilder<@babel/types.@babel/types.Program>,   ast :{None (tpl : string, opts : @babel/template.@babel/template.TemplateBuilderOptions | undefined): @babel/types.@babel/types.Statement | std.Array<@babel/types.@babel/types.Statement>, None (tpl : std.TemplateStringsArray, args : ...unknown): @babel/types.@babel/types.Statement | std.Array<@babel/types.@babel/types.Statement>}} */
   @js.native
-  trait DefaultTemplateBuilder extends StObject {
+  trait DefaultTemplateBuilder
+    extends StObject
+       with TemplateBuilder[Statement | js.Array[Statement]] {
     
-    /**
-      * Building from a string produces an AST builder function by default.
-      */
-    def apply(code: String): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
-    def apply(code: String, opts: TemplateBuilderOptions): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
-    /**
-      * Build a new builder, merging the given options with the previous ones.
-      */
-    def apply(opts: TemplateBuilderOptions): TemplateBuilder[Statement | js.Array[Statement]] = js.native
-    /**
-      * Building from a template literal produces an AST builder function by default.
-      */
-    def apply(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
-    
-    /**
-      * Allow users to explicitly create templates that produce ASTs,
-      * skipping the need for an intermediate function.
-      *
-      * Does not allow `%%foo%%` style placeholders.
-      */
-    def ast(tpl: String): Statement | js.Array[Statement] = js.native
-    def ast(tpl: String, opts: TemplateBuilderOptions): Statement | js.Array[Statement] = js.native
-    /**
-      * Allow users to explicitly create templates that produce ASTs,
-      * skipping the need for an intermediate function.
-      *
-      * Does not allow `%%foo%%` style placeholders.
-      */
-    def ast(tpl: TemplateStringsArray, args: js.Any*): Statement | js.Array[Statement] = js.native
     @JSName("ast")
     var ast_Original: FnCall = js.native
     
@@ -195,8 +166,9 @@ object mod extends Shortcut {
     def ast(tpl: TemplateStringsArray, args: js.Any*): T = js.native
   }
   
-  @js.native
-  trait TemplateBuilderOptions extends ParserOptions {
+  trait TemplateBuilderOptions
+    extends StObject
+       with ParserOptions {
     
     /**
       * A pattern to search for when looking for `Identifier` and `StringLiteral`
@@ -209,7 +181,7 @@ object mod extends Shortcut {
       *
       * @default /^[_$A-Z0-9]+$/
       */
-    var placeholderPattern: js.UndefOr[RegExp | `false` | Null] = js.native
+    var placeholderPattern: js.UndefOr[RegExp | `false` | Null] = js.undefined
     
     /**
       * A set of placeholder names to automatically accept.
@@ -217,7 +189,7 @@ object mod extends Shortcut {
       *
       * This option cannot be used when using `%%foo%%` style placeholders.
       */
-    var placeholderWhitelist: js.UndefOr[Set[String] | Null] = js.native
+    var placeholderWhitelist: js.UndefOr[Set[String] | Null] = js.undefined
     
     /**
       * Set this to `true` to preserve comments from the template string
@@ -225,7 +197,7 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var preserveComments: js.UndefOr[Boolean | Null] = js.native
+    var preserveComments: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Set to `true` to use `%%foo%%` style placeholders, `false` to use legacy placeholders
@@ -235,7 +207,7 @@ object mod extends Shortcut {
       *
       * @since 7.4.0
       */
-    var syntacticPlaceholders: js.UndefOr[Boolean | Null] = js.native
+    var syntacticPlaceholders: js.UndefOr[Boolean | Null] = js.undefined
   }
   object TemplateBuilderOptions {
     

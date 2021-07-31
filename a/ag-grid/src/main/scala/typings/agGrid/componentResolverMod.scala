@@ -13,7 +13,6 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.utilsMod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentResolverMod {
@@ -48,55 +47,20 @@ object componentResolverMod {
       *  @param customInitParamsCb: A chance to customise the params passed to the init method. It receives what the current
       *  params are and the component that init is about to get called for
       */
-    def createAgGridComponent[A /* <: IComponent[_] */](
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
       holderOpt: ComponentHolder,
       agGridParams: js.Any,
       propertyName: String,
       dynamicComponentParams: DynamicComponentParams
     ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
-      holderOpt: ComponentHolder,
-      agGridParams: js.Any,
-      propertyName: String,
-      dynamicComponentParams: DynamicComponentParams,
-      defaultComponentName: js.UndefOr[scala.Nothing],
-      mandatory: js.UndefOr[scala.Nothing],
-      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
-    ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
-      holderOpt: ComponentHolder,
-      agGridParams: js.Any,
-      propertyName: String,
-      dynamicComponentParams: DynamicComponentParams,
-      defaultComponentName: js.UndefOr[scala.Nothing],
-      mandatory: Boolean
-    ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
-      holderOpt: ComponentHolder,
-      agGridParams: js.Any,
-      propertyName: String,
-      dynamicComponentParams: DynamicComponentParams,
-      defaultComponentName: js.UndefOr[scala.Nothing],
-      mandatory: Boolean,
-      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
-    ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
       holderOpt: ComponentHolder,
       agGridParams: js.Any,
       propertyName: String,
       dynamicComponentParams: DynamicComponentParams,
       defaultComponentName: String
     ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
-      holderOpt: ComponentHolder,
-      agGridParams: js.Any,
-      propertyName: String,
-      dynamicComponentParams: DynamicComponentParams,
-      defaultComponentName: String,
-      mandatory: js.UndefOr[scala.Nothing],
-      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
-    ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
       holderOpt: ComponentHolder,
       agGridParams: js.Any,
       propertyName: String,
@@ -104,14 +68,49 @@ object componentResolverMod {
       defaultComponentName: String,
       mandatory: Boolean
     ): Promise[A] = js.native
-    def createAgGridComponent[A /* <: IComponent[_] */](
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
       holderOpt: ComponentHolder,
       agGridParams: js.Any,
       propertyName: String,
       dynamicComponentParams: DynamicComponentParams,
       defaultComponentName: String,
       mandatory: Boolean,
-      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
+      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
+    ): Promise[A] = js.native
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
+      holderOpt: ComponentHolder,
+      agGridParams: js.Any,
+      propertyName: String,
+      dynamicComponentParams: DynamicComponentParams,
+      defaultComponentName: String,
+      mandatory: Unit,
+      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
+    ): Promise[A] = js.native
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
+      holderOpt: ComponentHolder,
+      agGridParams: js.Any,
+      propertyName: String,
+      dynamicComponentParams: DynamicComponentParams,
+      defaultComponentName: Unit,
+      mandatory: Boolean
+    ): Promise[A] = js.native
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
+      holderOpt: ComponentHolder,
+      agGridParams: js.Any,
+      propertyName: String,
+      dynamicComponentParams: DynamicComponentParams,
+      defaultComponentName: Unit,
+      mandatory: Boolean,
+      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
+    ): Promise[A] = js.native
+    def createAgGridComponent[A /* <: IComponent[js.Any] */](
+      holderOpt: ComponentHolder,
+      agGridParams: js.Any,
+      propertyName: String,
+      dynamicComponentParams: DynamicComponentParams,
+      defaultComponentName: Unit,
+      mandatory: Unit,
+      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
     ): Promise[A] = js.native
     
     /**
@@ -123,11 +122,11 @@ object componentResolverMod {
       *  @param customInitParamsCb: A chance to customise the params passed to the init method. It receives what the current
       *  params are and the component that init is about to get called for
       */
-    def createInternalAgGridComponent[A /* <: IComponent[_] */](clazz: InstantiableA[A], agGridParams: js.Any): A = js.native
-    def createInternalAgGridComponent[A /* <: IComponent[_] */](
+    def createInternalAgGridComponent[A /* <: IComponent[js.Any] */](clazz: InstantiableA[A], agGridParams: js.Any): A = js.native
+    def createInternalAgGridComponent[A /* <: IComponent[js.Any] */](
       clazz: InstantiableA[A],
       agGridParams: js.Any,
-      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
+      customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
     ): A = js.native
     
     var frameworkComponentWrapper: js.Any = js.native
@@ -149,8 +148,8 @@ object componentResolverMod {
       *      invoked
       *  @param defaultComponentName: The name of the component to load if there is no component specified
       */
-    def getComponentToUse[A /* <: IComponent[_] with B */, B](holder: ComponentHolder, propertyName: String, dynamicComponentParams: DynamicComponentParams): ResolvedComponent[A, B] = js.native
-    def getComponentToUse[A /* <: IComponent[_] with B */, B](
+    def getComponentToUse[A /* <: IComponent[js.Any] & B */, B](holder: ComponentHolder, propertyName: String, dynamicComponentParams: DynamicComponentParams): ResolvedComponent[A, B] = js.native
+    def getComponentToUse[A /* <: IComponent[js.Any] & B */, B](
       holder: ComponentHolder,
       propertyName: String,
       dynamicComponentParams: DynamicComponentParams,
@@ -200,19 +199,25 @@ object componentResolverMod {
   object ComponentSource extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ComponentSource with Double] = js.native
+    def apply(value: Double): js.UndefOr[ComponentSource & Double] = js.native
     
     @js.native
-    sealed trait DEFAULT extends ComponentSource
-    /* 0 */ val DEFAULT: typings.agGrid.componentResolverMod.ComponentSource.DEFAULT with Double = js.native
+    sealed trait DEFAULT
+      extends StObject
+         with ComponentSource
+    /* 0 */ val DEFAULT: typings.agGrid.componentResolverMod.ComponentSource.DEFAULT & Double = js.native
     
     @js.native
-    sealed trait HARDCODED extends ComponentSource
-    /* 2 */ val HARDCODED: typings.agGrid.componentResolverMod.ComponentSource.HARDCODED with Double = js.native
+    sealed trait HARDCODED
+      extends StObject
+         with ComponentSource
+    /* 2 */ val HARDCODED: typings.agGrid.componentResolverMod.ComponentSource.HARDCODED & Double = js.native
     
     @js.native
-    sealed trait REGISTERED_BY_NAME extends ComponentSource
-    /* 1 */ val REGISTERED_BY_NAME: typings.agGrid.componentResolverMod.ComponentSource.REGISTERED_BY_NAME with Double = js.native
+    sealed trait REGISTERED_BY_NAME
+      extends StObject
+         with ComponentSource
+    /* 1 */ val REGISTERED_BY_NAME: typings.agGrid.componentResolverMod.ComponentSource.REGISTERED_BY_NAME & Double = js.native
   }
   
   @js.native
@@ -222,18 +227,22 @@ object componentResolverMod {
   object ComponentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ComponentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ComponentType & Double] = js.native
     
     @js.native
-    sealed trait AG_GRID extends ComponentType
-    /* 0 */ val AG_GRID: typings.agGrid.componentResolverMod.ComponentType.AG_GRID with Double = js.native
+    sealed trait AG_GRID
+      extends StObject
+         with ComponentType
+    /* 0 */ val AG_GRID: typings.agGrid.componentResolverMod.ComponentType.AG_GRID & Double = js.native
     
     @js.native
-    sealed trait FRAMEWORK extends ComponentType
-    /* 1 */ val FRAMEWORK: typings.agGrid.componentResolverMod.ComponentType.FRAMEWORK with Double = js.native
+    sealed trait FRAMEWORK
+      extends StObject
+         with ComponentType
+    /* 1 */ val FRAMEWORK: typings.agGrid.componentResolverMod.ComponentType.FRAMEWORK & Double = js.native
   }
   
-  type AgComponentPropertyInput[A /* <: IComponent[_] */] = AgGridRegisteredComponentInput[A] | String
+  type AgComponentPropertyInput[A /* <: IComponent[js.Any] */] = AgGridRegisteredComponentInput[A] | String
   
   /* Rewritten from type alias, can be one of: 
     - typings.agGrid.gridOptionsMod.GridOptions
@@ -244,12 +253,11 @@ object componentResolverMod {
   */
   trait ComponentHolder extends StObject
   
-  @js.native
   trait DynamicComponentDef extends StObject {
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object DynamicComponentDef {
     
@@ -276,25 +284,24 @@ object componentResolverMod {
     }
   }
   
-  @js.native
   trait DynamicComponentParams extends StObject {
     
     @JSName("$scope")
-    var $scope: js.UndefOr[js.Any] = js.native
+    var $scope: js.UndefOr[js.Any] = js.undefined
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: js.UndefOr[ColDef] = js.native
+    var colDef: js.UndefOr[ColDef] = js.undefined
     
-    var column: js.UndefOr[Column] = js.native
+    var column: js.UndefOr[Column] = js.undefined
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var node: js.UndefOr[RowNode] = js.native
+    var node: js.UndefOr[RowNode] = js.undefined
     
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object DynamicComponentParams {
     
@@ -351,21 +358,20 @@ object componentResolverMod {
     }
   }
   
-  @js.native
-  trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends StObject {
+  trait ResolvedComponent[A /* <: IComponent[js.Any] & B */, B] extends StObject {
     
-    var component: (`1`[A, B]) | InstantiableB[B] = js.native
+    var component: (`1`[A, B]) | InstantiableB[B]
     
-    var dynamicParams: js.Any = js.native
+    var dynamicParams: js.Any
     
-    var source: ComponentSource = js.native
+    var source: ComponentSource
     
-    var `type`: ComponentType = js.native
+    var `type`: ComponentType
   }
   object ResolvedComponent {
     
     @scala.inline
-    def apply[A /* <: IComponent[_] with B */, B](
+    def apply[A /* <: IComponent[js.Any] & B */, B](
       component: (`1`[A, B]) | InstantiableB[B],
       dynamicParams: js.Any,
       source: ComponentSource,
@@ -377,7 +383,7 @@ object componentResolverMod {
     }
     
     @scala.inline
-    implicit class ResolvedComponentMutableBuilder[Self <: ResolvedComponent[_, _], A /* <: IComponent[_] with B */, B] (val x: Self with (ResolvedComponent[A, B])) extends AnyVal {
+    implicit class ResolvedComponentMutableBuilder[Self <: ResolvedComponent[?, ?], A /* <: IComponent[js.Any] & B */, B] (val x: Self & (ResolvedComponent[A, B])) extends AnyVal {
       
       @scala.inline
       def setComponent(value: (`1`[A, B]) | InstantiableB[B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

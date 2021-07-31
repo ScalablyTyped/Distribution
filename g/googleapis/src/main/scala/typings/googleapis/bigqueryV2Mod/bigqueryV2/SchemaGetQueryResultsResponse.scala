@@ -2,16 +2,14 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetQueryResultsResponse extends StObject {
   
   /**
     * Whether the query result was fetched from the query cache.
     */
-  var cacheHit: js.UndefOr[Boolean] = js.native
+  var cacheHit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output-only] The first errors or warnings encountered during the running
@@ -19,19 +17,19 @@ trait SchemaGetQueryResultsResponse extends StObject {
     * the process to stop. Errors here do not necessarily mean that the job has
     * completed or was unsuccessful.
     */
-  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.undefined
   
   /**
     * A hash of this response.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the query has completed or not. If rows or totalRows are present,
     * this will always be true. If this is false, totalRows will not be
     * available.
     */
-  var jobComplete: js.UndefOr[Boolean] = js.native
+  var jobComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reference to the BigQuery Job that was created to run the query. This
@@ -40,23 +38,23 @@ trait SchemaGetQueryResultsResponse extends StObject {
     * completed. Since this API only returns the first page of results,
     * subsequent pages can be fetched via the same mechanism (GetQueryResults).
     */
-  var jobReference: js.UndefOr[SchemaJobReference] = js.native
+  var jobReference: js.UndefOr[SchemaJobReference] = js.undefined
   
   /**
     * The resource type of the response.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The number of rows affected by a DML statement. Present
     * only for DML statements INSERT, UPDATE or DELETE.
     */
-  var numDmlAffectedRows: js.UndefOr[String] = js.native
+  var numDmlAffectedRows: js.UndefOr[String] = js.undefined
   
   /**
     * A token used for paging results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * An object with as many results as can be contained within the maximum
@@ -64,25 +62,25 @@ trait SchemaGetQueryResultsResponse extends StObject {
     * GetQueryResults and specify the jobReference returned above. Present only
     * when the query completes successfully.
     */
-  var rows: js.UndefOr[js.Array[SchemaTableRow]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaTableRow]] = js.undefined
   
   /**
     * The schema of the results. Present only when the query completes
     * successfully.
     */
-  var schema: js.UndefOr[SchemaTableSchema] = js.native
+  var schema: js.UndefOr[SchemaTableSchema] = js.undefined
   
   /**
     * The total number of bytes processed for this query.
     */
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of rows in the complete query result set, which can be
     * more than the number of rows in this single page of results. Present only
     * when the query completes successfully.
     */
-  var totalRows: js.UndefOr[String] = js.native
+  var totalRows: js.UndefOr[String] = js.undefined
 }
 object SchemaGetQueryResultsResponse {
   

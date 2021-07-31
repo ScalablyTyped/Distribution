@@ -10,9 +10,9 @@ A native C++ Node module for querying and subscribing to filesystem events. Used
 | ------------------ | :-------------: |
 | Full name          | @parcel/watcher |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 20 |
-| # downloads        | 7769655 |
+| # releases         | 12 |
+| # dependents       | 22 |
+| # downloads        | 9861391 |
 | # stars            | 0 |
 
 ## Links

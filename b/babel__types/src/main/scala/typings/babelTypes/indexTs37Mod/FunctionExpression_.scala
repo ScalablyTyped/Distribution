@@ -3,36 +3,35 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.FunctionExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait FunctionExpression_
-  extends BlockParent
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait FunctionExpression_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Expression
      with Function
      with FunctionParent
      with Pureish
      with Scopable {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var id: Identifier_ | Null = js.native
+  var id: Identifier_ | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_] = js.native
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   
-  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
-  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_FunctionExpression_ : FunctionExpression = js.native
+  var type_FunctionExpression_ : FunctionExpression
 }
 object FunctionExpression_ {
   
@@ -41,11 +40,10 @@ object FunctionExpression_ {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: FunctionExpression
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   ): FunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[FunctionExpression_]
   }
   

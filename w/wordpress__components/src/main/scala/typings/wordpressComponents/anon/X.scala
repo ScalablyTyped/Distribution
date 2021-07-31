@@ -6,15 +6,13 @@ import typings.wordpressComponents.wordpressComponentsStrings.right
 import typings.wordpressComponents.wordpressComponentsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  var x: left | right = js.native
+  var x: left | right
   
-  var y: top | bottom = js.native
+  var y: top | bottom
 }
 object X {
   

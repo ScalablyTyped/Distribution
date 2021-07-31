@@ -4,53 +4,51 @@ import typings.reactBootstrapTable.anon.PageList
 import typings.reactBootstrapTable.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationPanelProps extends StObject {
   
   /**
     * Callback function to use to change page.
     */
-  def changePage(pageNum: Double): Unit = js.native
+  def changePage(pageNum: Double): Unit
   
   /**
     * Callback function to use to set a new size per page.
     */
-  def changeSizePerPage(sizePerPage: Double): Unit = js.native
+  def changeSizePerPage(sizePerPage: Double): Unit
   
   /**
     * The basic components for the pagination panel, provided here so that you have the option to use some of them
     * if you don't want to customize all of them.
     */
-  var components: PageList = js.native
+  var components: PageList
   
   /**
     * Current page number
     */
-  var currPage: Double = js.native
+  var currPage: Double
   
   /**
     * Index number for the first page of data.
     * Comes from Options.pageStartIndex.
     */
-  var pageStartIndex: Double = js.native
+  var pageStartIndex: Double
   
   /**
     * Current number of rows to show per page
     */
-  var sizePerPage: Double = js.native
+  var sizePerPage: Double
   
   /**
     * Choices for size per page dropdown component
     */
-  var sizePerPageList: SizePerPageList = js.native
+  var sizePerPageList: SizePerPageList
   
   /**
     * Callback function to trigger the toggle on sizePerPage dropdown button
     */
-  def toggleDropDown(): Unit = js.native
+  def toggleDropDown(): Unit
 }
 object PaginationPanelProps {
   

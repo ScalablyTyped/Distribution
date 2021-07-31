@@ -18,7 +18,6 @@ import typings.nodeRedRuntime.mod.StorageModule
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,23 +26,22 @@ object mod extends Shortcut {
   @js.native
   val ^ : EditorAPIModule = js.native
   
-  @js.native
   trait Auth extends StObject {
     
     def needsPermission(permission: String): js.Function3[
-        /* req */ Request_[ParamsDictionary, _, _, Query], 
-        /* res */ Response_[_], 
+        /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+        /* res */ Response_[js.Any], 
         /* next */ NextFunction, 
         Unit
-      ] = js.native
+      ]
   }
   object Auth {
     
     @scala.inline
     def apply(
       needsPermission: String => js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           /* next */ NextFunction, 
           Unit
         ]
@@ -58,8 +56,8 @@ object mod extends Shortcut {
       @scala.inline
       def setNeedsPermission(
         value: String => js.Function3[
-              /* req */ Request_[ParamsDictionary, _, _, Query], 
-              /* res */ Response_[_], 
+              /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+              /* res */ Response_[js.Any], 
               /* next */ NextFunction, 
               Unit
             ]
@@ -67,10 +65,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait EditorAPIModule extends StObject {
     
-    var auth: Auth = js.native
+    var auth: Auth
     
     /**
       * Express instance itself is a request handler, which could be invoked without
@@ -79,24 +76,24 @@ object mod extends Shortcut {
     /**
       * The Express app used to serve the Node-RED Editor
       */
-    def httpAdmin(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
+    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
     /**
       * The Express app used to serve the Node-RED Editor
       */
-    def httpAdmin(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
+    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
     /**
       * The Express app used to serve the Node-RED Editor
       */
-    def httpAdmin(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
     /**
       * The Express app used to serve the Node-RED Editor
       */
-    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
     /**
       * The Express app used to serve the Node-RED Editor
       */
     @JSName("httpAdmin")
-    val httpAdmin_Original: Express = js.native
+    val httpAdmin_Original: Express
     
     /**
       * Initialise the module.
@@ -105,17 +102,50 @@ object mod extends Shortcut {
       * @param  storage    An instance of Node-RED Storage
       * @param  runtimeAPI An instance of Node-RED Runtime
       */
-    def init(settings: LocalSettings, _server: Server, storage: StorageModule, runtimeAPI: RuntimeModule): Unit = js.native
+    def init(settings: LocalSettings, _server: Server, storage: StorageModule, runtimeAPI: RuntimeModule): Unit
     
     /**
       * Start the module.
       */
-    def start(): js.Promise[Unit] = js.native
+    def start(): js.Promise[Unit]
     
     /**
       * Stop the module.
       */
-    def stop(): js.Promise[Unit] = js.native
+    def stop(): js.Promise[Unit]
+  }
+  object EditorAPIModule {
+    
+    @scala.inline
+    def apply(
+      auth: Auth,
+      httpAdmin: Express,
+      init: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit,
+      start: () => js.Promise[Unit],
+      stop: () => js.Promise[Unit]
+    ): EditorAPIModule = {
+      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], init = js.Any.fromFunction4(init), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+      __obj.asInstanceOf[EditorAPIModule]
+    }
+    
+    @scala.inline
+    implicit class EditorAPIModuleMutableBuilder[Self <: EditorAPIModule] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInit(value: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    }
   }
   
   type _To = EditorAPIModule

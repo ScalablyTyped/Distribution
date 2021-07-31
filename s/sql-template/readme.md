@@ -12,7 +12,7 @@ Template string (ES6) builder for SQL.
 | Keywords           | pg, pgsql, sql, sql-string, sql-builder, query-builder, sql query, ES6 template string, prepared statement, Let's have a beer and talk in Paris |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 11870 |
+| # downloads        | 14962 |
 | # stars            | 1 |
 
 ## Links

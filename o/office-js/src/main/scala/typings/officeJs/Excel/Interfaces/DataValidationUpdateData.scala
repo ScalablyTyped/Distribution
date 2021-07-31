@@ -5,11 +5,9 @@ import typings.officeJs.Excel.DataValidationPrompt
 import typings.officeJs.Excel.DataValidationRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
-@js.native
 trait DataValidationUpdateData extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait DataValidationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.native
+  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait DataValidationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var ignoreBlanks: js.UndefOr[Boolean] = js.native
+  var ignoreBlanks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait DataValidationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var prompt: js.UndefOr[DataValidationPrompt] = js.native
+  var prompt: js.UndefOr[DataValidationPrompt] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait DataValidationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var rule: js.UndefOr[DataValidationRule] = js.native
+  var rule: js.UndefOr[DataValidationRule] = js.undefined
 }
 object DataValidationUpdateData {
   

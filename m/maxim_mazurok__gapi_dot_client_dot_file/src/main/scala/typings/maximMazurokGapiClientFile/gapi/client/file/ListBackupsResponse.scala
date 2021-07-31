@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBackupsResponse extends StObject {
   
   /**
     * A list of backups in the project for the specified location. If the {location} value in the request is "-", the response contains a list of backups from all locations. If any
     * location is unreachable, the response will only return backups in reachable locations and the "unreachable" field will be populated with a list of unreachable locations.
     */
-  var backups: js.UndefOr[js.Array[Backup]] = js.native
+  var backups: js.UndefOr[js.Array[Backup]] = js.undefined
   
   /** The token you can use to retrieve the next page of results. Not returned if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListBackupsResponse {
   

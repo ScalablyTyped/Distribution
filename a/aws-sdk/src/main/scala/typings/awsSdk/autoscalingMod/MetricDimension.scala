@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricDimension extends StObject {
   
   /**
     * The name of the dimension.
     */
-  var Name: MetricDimensionName = js.native
+  var Name: MetricDimensionName
   
   /**
     * The value of the dimension.
     */
-  var Value: MetricDimensionValue = js.native
+  var Value: MetricDimensionValue
 }
 object MetricDimension {
   

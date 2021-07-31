@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CutoffTime extends StObject {
   
   /** Hour of the cutoff time until which an order has to be placed to be processed in the same day. Required. */
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
   /** Minute of the cutoff time until which an order has to be placed to be processed in the same day. Required. */
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
   /** Timezone identifier for the cutoff time. A list of identifiers can be found in the AdWords API documentation. E.g. "Europe/Zurich". Required. */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object CutoffTime {
   

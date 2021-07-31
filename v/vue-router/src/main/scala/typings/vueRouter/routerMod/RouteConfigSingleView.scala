@@ -7,17 +7,16 @@ import typings.vue.optionsMod.DefaultProps
 import typings.vue.optionsMod.EsModuleComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteConfigSingleView
-  extends RouteConfigBase
+  extends StObject
+     with RouteConfigBase
      with RouteConfig {
   
-  var component: js.UndefOr[Component] = js.native
+  var component: js.UndefOr[Component] = js.undefined
   
-  var props: js.UndefOr[Boolean | js.Object | RoutePropsFunction] = js.native
+  var props: js.UndefOr[Boolean | js.Object | RoutePropsFunction] = js.undefined
 }
 object RouteConfigSingleView {
   

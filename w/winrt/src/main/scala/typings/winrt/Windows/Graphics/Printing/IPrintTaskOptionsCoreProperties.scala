@@ -2,37 +2,35 @@ package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTaskOptionsCoreProperties extends StObject {
   
-  var binding: PrintBinding = js.native
+  var binding: PrintBinding
   
-  var collation: PrintCollation = js.native
+  var collation: PrintCollation
   
-  var colorMode: PrintColorMode = js.native
+  var colorMode: PrintColorMode
   
-  var duplex: PrintDuplex = js.native
+  var duplex: PrintDuplex
   
-  var holePunch: PrintHolePunch = js.native
+  var holePunch: PrintHolePunch
   
-  var maxCopies: Double = js.native
+  var maxCopies: Double
   
-  var mediaSize: PrintMediaSize = js.native
+  var mediaSize: PrintMediaSize
   
-  var mediaType: PrintMediaType = js.native
+  var mediaType: PrintMediaType
   
-  var minCopies: Double = js.native
+  var minCopies: Double
   
-  var numberOfCopies: Double = js.native
+  var numberOfCopies: Double
   
-  var orientation: PrintOrientation = js.native
+  var orientation: PrintOrientation
   
-  var printQuality: PrintQuality = js.native
+  var printQuality: PrintQuality
   
-  var staple: PrintStaple = js.native
+  var staple: PrintStaple
 }
 object IPrintTaskOptionsCoreProperties {
   

@@ -3,41 +3,39 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchPanelProps extends StObject {
   
   /**
     * Default clear search field button component.
     */
-  var clearBtn: ReactElement = js.native
+  var clearBtn: ReactElement
   
   /**
     * A callback to trigger the clear search field event.
     */
-  def clearBtnClick(): Unit = js.native
+  def clearBtnClick(): Unit
   
   /**
     * The default search text.
     */
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /**
     * The placeholder text for the search field.
     */
-  var placeholder: String = js.native
+  var placeholder: String
   
   /**
     * A callback to trigger a search, takes the search text as an input.
     */
-  def search(searchText: String): Unit = js.native
+  def search(searchText: String): Unit
   
   /**
     * Default search field component.
     */
-  var searchField: ReactElement = js.native
+  var searchField: ReactElement
 }
 object SearchPanelProps {
   

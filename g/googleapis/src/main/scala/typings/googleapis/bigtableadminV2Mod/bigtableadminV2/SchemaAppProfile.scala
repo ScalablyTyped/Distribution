@@ -2,20 +2,18 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A configuration object describing how Cloud Bigtable should treat traffic
   * from a particular end user application.
   */
-@js.native
 trait SchemaAppProfile extends StObject {
   
   /**
     * Optional long form description of the use case for this AppProfile.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Strongly validated etag for optimistic concurrency control. Preserve the
@@ -26,23 +24,23 @@ trait SchemaAppProfile extends StObject {
     * [RFC 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more
     * details.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Use a multi-cluster routing policy that may pick any cluster.
     */
-  var multiClusterRoutingUseAny: js.UndefOr[SchemaMultiClusterRoutingUseAny] = js.native
+  var multiClusterRoutingUseAny: js.UndefOr[SchemaMultiClusterRoutingUseAny] = js.undefined
   
   /**
     * (`OutputOnly`) The unique name of the app profile. Values are of the form
     * `projects/&lt;project&gt;/instances/&lt;instance&gt;/appProfiles/_a-zA-Z0-9*`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Use a single-cluster routing policy.
     */
-  var singleClusterRouting: js.UndefOr[SchemaSingleClusterRouting] = js.native
+  var singleClusterRouting: js.UndefOr[SchemaSingleClusterRouting] = js.undefined
 }
 object SchemaAppProfile {
   

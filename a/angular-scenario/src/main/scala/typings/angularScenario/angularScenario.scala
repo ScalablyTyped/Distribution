@@ -3,7 +3,6 @@ package typings.angularScenario
 import typings.angular.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularScenario {
@@ -76,8 +75,8 @@ object angularScenario {
     def query(
       callback: js.Function2[
           /* selectedDOMElements */ JQuery, 
-          /* callbackWhenDone */ js.Function2[/* objNull */ js.Any, /* futureValue */ js.Any, _], 
-          _
+          /* callbackWhenDone */ js.Function2[/* objNull */ js.Any, /* futureValue */ js.Any, js.Any], 
+          js.Any
         ]
     ): js.Any = js.native
     
@@ -97,10 +96,11 @@ object angularScenario {
     def width(value: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait Expect extends Matchers {
+  trait Expect
+    extends StObject
+       with Matchers {
     
-    def not(): CustomMatchers = js.native
+    def not(): CustomMatchers
   }
   object Expect {
     
@@ -130,19 +130,17 @@ object angularScenario {
     }
   }
   
-  @js.native
   trait Future extends StObject
   
-  @js.native
   trait Input extends StObject {
     
-    def check(): js.Any = js.native
+    def check(): js.Any
     
-    def enter(value: js.Any): js.Any = js.native
+    def enter(value: js.Any): js.Any
     
-    def select(radioButtonValue: js.Any): js.Any = js.native
+    def select(radioButtonValue: js.Any): js.Any
     
-    def `val`(): Future = js.native
+    def `val`(): Future
   }
   object Input {
     
@@ -170,28 +168,27 @@ object angularScenario {
     }
   }
   
-  @js.native
   trait Matchers extends StObject {
     
-    def toBe(value: js.Any): Unit = js.native
+    def toBe(value: js.Any): Unit
     
-    def toBeDefined(): Unit = js.native
+    def toBeDefined(): Unit
     
-    def toBeFalsy(): Unit = js.native
+    def toBeFalsy(): Unit
     
-    def toBeGreaterThan(value: js.Any): Unit = js.native
+    def toBeGreaterThan(value: js.Any): Unit
     
-    def toBeLessThan(value: js.Any): Unit = js.native
+    def toBeLessThan(value: js.Any): Unit
     
-    def toBeNull(): Unit = js.native
+    def toBeNull(): Unit
     
-    def toBeTruthy(): Unit = js.native
+    def toBeTruthy(): Unit
     
-    def toContain(value: js.Any): Unit = js.native
+    def toContain(value: js.Any): Unit
     
-    def toEqual(value: js.Any): Unit = js.native
+    def toEqual(value: js.Any): Unit
     
-    def toMatch(regularExpression: js.Any): Unit = js.native
+    def toMatch(regularExpression: js.Any): Unit
   }
   object Matchers {
     
@@ -249,14 +246,13 @@ object angularScenario {
   
   type PauseFunction = js.Function0[js.Any]
   
-  @js.native
   trait Repeater extends StObject {
     
-    def column(ngBindingExpression: String): Future = js.native
+    def column(ngBindingExpression: String): Future
     
-    def count(): Future = js.native
+    def count(): Future
     
-    def row(index: Double): Future = js.native
+    def row(index: Double): Future
   }
   object Repeater {
     
@@ -295,16 +291,15 @@ object angularScenario {
   
   type UsingFunction = js.Function2[/* selector */ String, /* selectorDescription */ js.UndefOr[String], Unit]
   
-  @js.native
   trait testLocation extends StObject {
     
-    def hash(): Future = js.native
+    def hash(): Future
     
-    def path(): Future = js.native
+    def path(): Future
     
-    def search(): Future = js.native
+    def search(): Future
     
-    def url(): Future = js.native
+    def url(): Future
   }
   object testLocation {
     
@@ -331,16 +326,15 @@ object angularScenario {
     }
   }
   
-  @js.native
   trait testWindow extends StObject {
     
-    def hash(): Future = js.native
+    def hash(): Future
     
-    def href(): Future = js.native
+    def href(): Future
     
-    def path(): Future = js.native
+    def path(): Future
     
-    def search(): Future = js.native
+    def search(): Future
   }
   object testWindow {
     

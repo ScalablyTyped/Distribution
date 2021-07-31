@@ -3,15 +3,15 @@ package typings.reactNative.mod.Animated
 import typings.reactNative.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecayAnimationConfig extends AnimationConfig {
+trait DecayAnimationConfig
+  extends StObject
+     with AnimationConfig {
   
-  var deceleration: js.UndefOr[Double] = js.native
+  var deceleration: js.UndefOr[Double] = js.undefined
   
-  var velocity: Double | X = js.native
+  var velocity: Double | X
 }
 object DecayAnimationConfig {
   

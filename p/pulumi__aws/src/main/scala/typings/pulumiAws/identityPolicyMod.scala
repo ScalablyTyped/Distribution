@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityPolicyMod {
@@ -43,6 +42,10 @@ object identityPolicyMod {
   /* static members */
   object IdentityPolicy {
     
+    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object identityPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IdentityPolicy = js.native
-    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPolicy = js.native
-    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPolicyState): IdentityPolicy = js.native
-    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPolicyState, opts: CustomResourceOptions): IdentityPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IdentityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPolicyState): IdentityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPolicyState, opts: CustomResourceOptions): IdentityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPolicy]
     
     /**
       * Returns true if the given object is an instance of IdentityPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/identityPolicy", "IdentityPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityPolicy.IdentityPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityPolicy.IdentityPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/identityPolicy.IdentityPolicy */ Boolean]
   }
   
-  @js.native
   trait IdentityPolicyArgs extends StObject {
     
     /**
       * Name or Amazon Resource Name (ARN) of the SES Identity.
       */
-    val identity: Input[String] = js.native
+    val identity: Input[String]
     
     /**
       * Name of the policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON string of the policy.
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object IdentityPolicyArgs {
     
@@ -117,23 +114,22 @@ object identityPolicyMod {
     }
   }
   
-  @js.native
   trait IdentityPolicyState extends StObject {
     
     /**
       * Name or Amazon Resource Name (ARN) of the SES Identity.
       */
-    val identity: js.UndefOr[Input[String]] = js.native
+    val identity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON string of the policy.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object IdentityPolicyState {
     

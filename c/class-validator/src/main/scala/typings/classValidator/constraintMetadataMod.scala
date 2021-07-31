@@ -3,7 +3,6 @@ package typings.classValidator
 import typings.classValidator.validatorConstraintInterfaceMod.ValidatorConstraintInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constraintMetadataMod {
@@ -13,8 +12,8 @@ object constraintMetadataMod {
   class ConstraintMetadata protected () extends StObject {
     def this(target: js.Function) = this()
     def this(target: js.Function, name: String) = this()
-    def this(target: js.Function, name: js.UndefOr[scala.Nothing], async: Boolean) = this()
     def this(target: js.Function, name: String, async: Boolean) = this()
+    def this(target: js.Function, name: Unit, async: Boolean) = this()
     
     /**
       * Indicates if this validation is asynchronous or not.

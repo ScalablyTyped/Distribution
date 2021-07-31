@@ -2,19 +2,17 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderedModule extends StObject {
   
-  var originalLength: Double = js.native
+  var originalLength: Double
   
-  var removedExports: js.Array[String] = js.native
+  var removedExports: js.Array[String]
   
-  var renderedExports: js.Array[String] = js.native
+  var renderedExports: js.Array[String]
   
-  var renderedLength: Double = js.native
+  var renderedLength: Double
 }
 object RenderedModule {
   

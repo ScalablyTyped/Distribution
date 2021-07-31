@@ -4,13 +4,11 @@ import typings.reactTable.mod.CellValue
 import typings.reactTable.mod.IdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1`[D /* <: js.Object */] extends StObject {
   
-  var accessor: js.UndefOr[typings.reactTable.mod.Accessor[D] | IdType[D]] = js.native
+  var accessor: js.UndefOr[typings.reactTable.mod.Accessor[D] | IdType[D]] = js.undefined
 }
 object `1` {
   
@@ -21,7 +19,7 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`[_], D /* <: js.Object */] (val x: Self with `1`[D]) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`[?], D /* <: js.Object */] (val x: Self & `1`[D]) extends AnyVal {
     
     @scala.inline
     def setAccessor(value: typings.reactTable.mod.Accessor[D] | IdType[D]): Self = StObject.set(x, "accessor", value.asInstanceOf[js.Any])

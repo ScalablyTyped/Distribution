@@ -2,17 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingOption extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var prices: js.Array[LabeledPrice] = js.native
+  var prices: js.Array[LabeledPrice]
   
-  var title: String = js.native
+  var title: String
 }
 object ShippingOption {
   

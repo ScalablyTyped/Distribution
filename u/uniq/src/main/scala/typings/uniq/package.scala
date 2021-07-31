@@ -1,11 +1,8 @@
-package typings
+package typings.uniq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object uniq {
-  
-  type Uniq = js.Function1[/* ip */ js.Array[js.Any], js.Array[js.Any]]
-}
+
+type Uniq = js.Function1[/* ip */ js.Array[js.Any], js.Array[js.Any]]

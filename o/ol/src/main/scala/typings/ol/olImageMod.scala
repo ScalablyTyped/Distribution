@@ -6,22 +6,17 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object olImageMod {
   
+  @JSImport("ol/Image", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/Image", JSImport.Default)
   @js.native
   class default protected () extends ImageWrapper {
-    def this(
-      extent: Extent,
-      resolution: js.UndefOr[scala.Nothing],
-      pixelRatio: Double,
-      src: String,
-      crossOrigin: String,
-      imageLoadFunction: LoadFunction
-    ) = this()
     def this(
       extent: Extent,
       resolution: Double,
@@ -30,17 +25,22 @@ object olImageMod {
       crossOrigin: String,
       imageLoadFunction: LoadFunction
     ) = this()
+    def this(
+      extent: Extent,
+      resolution: Unit,
+      pixelRatio: Double,
+      src: String,
+      crossOrigin: String,
+      imageLoadFunction: LoadFunction
+    ) = this()
   }
   
-  @JSImport("ol/Image", "listenImage")
-  @js.native
-  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
-  @JSImport("ol/Image", "listenImage")
-  @js.native
-  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
-  @JSImport("ol/Image", "listenImage")
-  @js.native
-  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  @scala.inline
+  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @js.native
   trait ImageWrapper

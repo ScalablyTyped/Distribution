@@ -11,8 +11,8 @@ Fastest Levenshtein distance implementation in JS.
 | Full name          | fastest-levenshtein |
 | Keywords           | levenshtein, distance, fast, fastest, edit, string, similarity, algorithm, match, comparison, fuzzy, search, string, matching, similar, node, difference |
 | # releases         | 15 |
-| # dependents       | 7 |
-| # downloads        | 468861 |
+| # dependents       | 24 |
+| # downloads        | 26355723 |
 | # stars            | 0 |
 
 ## Links

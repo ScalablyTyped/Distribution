@@ -4,11 +4,12 @@ import typings.nvd3.nvd3Strings.count
 import typings.nvd3.nvd3Strings.size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sunburst extends Nvd3Element {
+trait Sunburst
+  extends StObject
+     with Nvd3Element {
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native

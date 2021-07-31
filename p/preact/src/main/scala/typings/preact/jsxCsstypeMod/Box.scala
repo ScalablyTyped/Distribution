@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -11,9 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.`padding-box`
 */
 trait Box
-  extends _FinalBgLayer[js.Any]
+  extends StObject
      with _BackgroundClipProperty
      with _BackgroundOriginProperty
+     with _FinalBgLayer[js.Any]
      with _MaskOriginProperty
      with _ShapeOutsideProperty
      with _WebkitMaskClipProperty

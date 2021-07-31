@@ -7,25 +7,23 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveIndicatorTypesMod {
   
-  @js.native
   trait ILiveIndicator extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ILiveIndicator {
     
@@ -65,10 +63,9 @@ object liveIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait ILiveIndicatorViewCallbacks extends StObject {
     
-    var onClick: EventListenerOrEventListenerObject = js.native
+    var onClick: EventListenerOrEventListenerObject
   }
   object ILiveIndicatorViewCallbacks {
     
@@ -89,14 +86,13 @@ object liveIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait ILiveIndicatorViewConfig extends StObject {
     
-    var callbacks: ILiveIndicatorViewCallbacks = js.native
+    var callbacks: ILiveIndicatorViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object ILiveIndicatorViewConfig {
     
@@ -120,20 +116,19 @@ object liveIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait ILiveIndicatorViewStyles extends StObject {
     
-    var active: String = js.native
+    var active: String
     
-    var clickable: String = js.native
+    var clickable: String
     
-    var ended: String = js.native
+    var ended: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var liveIndicator: String = js.native
+    var liveIndicator: String
     
-    var liveIndicatorButton: String = js.native
+    var liveIndicatorButton: String
   }
   object ILiveIndicatorViewStyles {
     

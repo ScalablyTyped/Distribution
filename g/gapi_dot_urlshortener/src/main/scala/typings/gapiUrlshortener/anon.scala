@@ -2,38 +2,36 @@ package typings.gapiUrlshortener
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllTime extends StObject {
     
     /**
       * Click analytics over all time.
       */
-    var allTime: GoogleApiUrlShortenerUrlResourceAnalyticsObject = js.native
+    var allTime: GoogleApiUrlShortenerUrlResourceAnalyticsObject
     
     /**
       * Click analytics over the last day.
       */
-    var day: GoogleApiUrlShortenerUrlResourceAnalyticsObject = js.native
+    var day: GoogleApiUrlShortenerUrlResourceAnalyticsObject
     
     /**
       * Click analytics over the last month.
       */
-    var month: GoogleApiUrlShortenerUrlResourceAnalyticsObject = js.native
+    var month: GoogleApiUrlShortenerUrlResourceAnalyticsObject
     
     /**
       * Click analytics over the last two hours.
       */
-    var twoHours: GoogleApiUrlShortenerUrlResourceAnalyticsObject = js.native
+    var twoHours: GoogleApiUrlShortenerUrlResourceAnalyticsObject
     
     /**
       * Click analytics over the last week.
       */
-    var week: GoogleApiUrlShortenerUrlResourceAnalyticsObject = js.native
+    var week: GoogleApiUrlShortenerUrlResourceAnalyticsObject
   }
   object AllTime {
     
@@ -69,23 +67,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * Additional information to return. ANALYTICS_CLICKS, ANALYTICS_TOP_STRINGS, FULL
       */
-    var projection: js.UndefOr[String] = js.native
+    var projection: js.UndefOr[String] = js.undefined
     
     /**
       * The short URL, including the protocol.
       */
-    var shortUrl: String = js.native
+    var shortUrl: String
   }
   object Fields {
     
@@ -115,23 +112,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Projection extends StObject {
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * Additional information to return. ANALYTICS_CLICKS, FULL
       */
-    var projection: js.UndefOr[String] = js.native
+    var projection: js.UndefOr[String] = js.undefined
     
     /**
       * Token for requesting successive pages of results.
       */
-    var `start-token`: js.UndefOr[String] = js.native
+    var `start-token`: js.UndefOr[String] = js.undefined
   }
   object Projection {
     
@@ -164,18 +160,17 @@ object anon {
     }
   }
   
-  @js.native
   trait RequestBody extends StObject {
     
     /**
       * HTTP Request Body
       */
-    var RequestBody: js.UndefOr[String] = js.native
+    var RequestBody: js.UndefOr[String] = js.undefined
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
   }
   object RequestBody {
     

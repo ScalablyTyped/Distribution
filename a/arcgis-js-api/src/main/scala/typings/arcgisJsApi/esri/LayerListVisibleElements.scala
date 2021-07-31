@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerListVisibleElements extends Object {
+trait LayerListVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to the status indicators will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#VisibleElements)
     */
-  var statusIndicators: js.UndefOr[Boolean] = js.native
+  var statusIndicators: js.UndefOr[Boolean] = js.undefined
 }
 object LayerListVisibleElements {
   

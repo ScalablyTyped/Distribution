@@ -2,19 +2,17 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOrientationSensor extends StObject {
   
-  def getCurrentReading(): OrientationSensorReading = js.native
+  def getCurrentReading(): OrientationSensorReading
   
-  var minimumReportInterval: Double = js.native
+  var minimumReportInterval: Double
   
-  var onreadingchanged: js.Any = js.native
+  var onreadingchanged: js.Any
   
-  var reportInterval: Double = js.native
+  var reportInterval: Double
 }
 object IOrientationSensor {
   

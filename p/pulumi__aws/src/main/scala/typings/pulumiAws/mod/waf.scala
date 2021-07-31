@@ -38,10 +38,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object waf {
+  
+  @JSImport("@pulumi/aws", "waf")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "waf.ByteMatchSet")
   @js.native
@@ -56,11 +59,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: ByteMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ByteMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ByteMatchSet {
+    
+    @JSImport("@pulumi/aws", "waf.ByteMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ByteMatchSet resource's state with the given name, ID, and optional extra
@@ -71,26 +78,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.ByteMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.ByteMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.ByteMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ByteMatchSetState): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.ByteMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ByteMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ByteMatchSetState): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ByteMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafByteMatchSetMod.ByteMatchSet]
     
     /**
       * Returns true if the given object is an instance of ByteMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.ByteMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.GeoMatchSet")
@@ -106,11 +108,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: GeoMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: GeoMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object GeoMatchSet {
+    
+    @JSImport("@pulumi/aws", "waf.GeoMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing GeoMatchSet resource's state with the given name, ID, and optional extra
@@ -121,26 +127,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GeoMatchSetState): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.GeoMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GeoMatchSetState): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafGeoMatchSetMod.GeoMatchSet]
     
     /**
       * Returns true if the given object is an instance of GeoMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.GeoMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.IpSet")
@@ -156,11 +157,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: IpSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: IpSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object IpSet {
+    
+    @JSImport("@pulumi/aws", "waf.IpSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing IpSet resource's state with the given name, ID, and optional extra
@@ -171,26 +176,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafIpSetMod.IpSet = js.native
-    @JSImport("@pulumi/aws", "waf.IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafIpSetMod.IpSet = js.native
-    @JSImport("@pulumi/aws", "waf.IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState): typings.pulumiAws.wafIpSetMod.IpSet = js.native
-    @JSImport("@pulumi/aws", "waf.IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): typings.pulumiAws.wafIpSetMod.IpSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafIpSetMod.IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafIpSetMod.IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafIpSetMod.IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafIpSetMod.IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState): typings.pulumiAws.wafIpSetMod.IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafIpSetMod.IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): typings.pulumiAws.wafIpSetMod.IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafIpSetMod.IpSet]
     
     /**
       * Returns true if the given object is an instance of IpSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.IpSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.RateBasedRule")
@@ -210,6 +210,10 @@ object waf {
   /* static members */
   object RateBasedRule {
     
+    @JSImport("@pulumi/aws", "waf.RateBasedRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RateBasedRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -219,26 +223,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = js.native
-    @JSImport("@pulumi/aws", "waf.RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = js.native
-    @JSImport("@pulumi/aws", "waf.RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RateBasedRuleState): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = js.native
-    @JSImport("@pulumi/aws", "waf.RateBasedRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RateBasedRuleState): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRateBasedRuleMod.RateBasedRule]
     
     /**
       * Returns true if the given object is an instance of RateBasedRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.RateBasedRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.RegexMatchSet")
@@ -254,11 +253,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: RegexMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RegexMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object RegexMatchSet {
+    
+    @JSImport("@pulumi/aws", "waf.RegexMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing RegexMatchSet resource's state with the given name, ID, and optional extra
@@ -269,26 +272,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexMatchSetState): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexMatchSetState): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexMatchSetMod.RegexMatchSet]
     
     /**
       * Returns true if the given object is an instance of RegexMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.RegexMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.RegexPatternSet")
@@ -304,11 +302,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: RegexPatternSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RegexPatternSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object RegexPatternSet {
+    
+    @JSImport("@pulumi/aws", "waf.RegexPatternSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing RegexPatternSet resource's state with the given name, ID, and optional extra
@@ -319,26 +321,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexPatternSetState): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = js.native
-    @JSImport("@pulumi/aws", "waf.RegexPatternSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexPatternSetState): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRegexPatternSetMod.RegexPatternSet]
     
     /**
       * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.RegexPatternSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexPatternSet.RegexPatternSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexPatternSet.RegexPatternSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/regexPatternSet.RegexPatternSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.Rule")
@@ -358,6 +355,10 @@ object waf {
   /* static members */
   object Rule {
     
+    @JSImport("@pulumi/aws", "waf.Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Rule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -367,26 +368,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRuleMod.Rule = js.native
-    @JSImport("@pulumi/aws", "waf.Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafRuleMod.Rule = js.native
-    @JSImport("@pulumi/aws", "waf.Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState): typings.pulumiAws.wafRuleMod.Rule = js.native
-    @JSImport("@pulumi/aws", "waf.Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): typings.pulumiAws.wafRuleMod.Rule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRuleMod.Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleMod.Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafRuleMod.Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleMod.Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState): typings.pulumiAws.wafRuleMod.Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleMod.Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): typings.pulumiAws.wafRuleMod.Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleMod.Rule]
     
     /**
       * Returns true if the given object is an instance of Rule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.Rule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.RuleGroup")
@@ -406,6 +402,10 @@ object waf {
   /* static members */
   object RuleGroup {
     
+    @JSImport("@pulumi/aws", "waf.RuleGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -415,26 +415,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRuleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "waf.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafRuleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "waf.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState): typings.pulumiAws.wafRuleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "waf.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): typings.pulumiAws.wafRuleGroupMod.RuleGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafRuleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafRuleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState): typings.pulumiAws.wafRuleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): typings.pulumiAws.wafRuleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafRuleGroupMod.RuleGroup]
     
     /**
       * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.RuleGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ruleGroup.RuleGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ruleGroup.RuleGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/ruleGroup.RuleGroup */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.SizeConstraintSet")
@@ -450,11 +445,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: SizeConstraintSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SizeConstraintSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object SizeConstraintSet {
+    
+    @JSImport("@pulumi/aws", "waf.SizeConstraintSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing SizeConstraintSet resource's state with the given name, ID, and optional extra
@@ -465,26 +464,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.SizeConstraintSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = js.native
-    @JSImport("@pulumi/aws", "waf.SizeConstraintSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = js.native
-    @JSImport("@pulumi/aws", "waf.SizeConstraintSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SizeConstraintSetState): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = js.native
-    @JSImport("@pulumi/aws", "waf.SizeConstraintSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SizeConstraintSetState, opts: CustomResourceOptions): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SizeConstraintSetState): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SizeConstraintSetState, opts: CustomResourceOptions): typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSizeConstraintSetMod.SizeConstraintSet]
     
     /**
       * Returns true if the given object is an instance of SizeConstraintSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.SizeConstraintSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet")
@@ -500,11 +494,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: SqlInjectionMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SqlInjectionMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object SqlInjectionMatchSet {
+    
+    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing SqlInjectionMatchSet resource's state with the given name, ID, and optional extra
@@ -515,26 +513,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet]
     
     /**
       * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.SqlInjectionMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.WebAcl")
@@ -554,6 +547,10 @@ object waf {
   /* static members */
   object WebAcl {
     
+    @JSImport("@pulumi/aws", "waf.WebAcl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebAcl resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -563,26 +560,21 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafWebAclMod.WebAcl = js.native
-    @JSImport("@pulumi/aws", "waf.WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafWebAclMod.WebAcl = js.native
-    @JSImport("@pulumi/aws", "waf.WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState): typings.pulumiAws.wafWebAclMod.WebAcl = js.native
-    @JSImport("@pulumi/aws", "waf.WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): typings.pulumiAws.wafWebAclMod.WebAcl = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafWebAclMod.WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafWebAclMod.WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafWebAclMod.WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafWebAclMod.WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState): typings.pulumiAws.wafWebAclMod.WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafWebAclMod.WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): typings.pulumiAws.wafWebAclMod.WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafWebAclMod.WebAcl]
     
     /**
       * Returns true if the given object is an instance of WebAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.WebAcl.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "waf.XssMatchSet")
@@ -598,11 +590,15 @@ object waf {
       */
     def this(name: String) = this()
     def this(name: String, args: XssMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: XssMatchSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object XssMatchSet {
+    
+    @JSImport("@pulumi/aws", "waf.XssMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing XssMatchSet resource's state with the given name, ID, and optional extra
@@ -613,53 +609,40 @@ object waf {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "waf.XssMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.XssMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.XssMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: XssMatchSetState): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = js.native
-    @JSImport("@pulumi/aws", "waf.XssMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: XssMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafXssMatchSetMod.XssMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafXssMatchSetMod.XssMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: XssMatchSetState): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafXssMatchSetMod.XssMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: XssMatchSetState, opts: CustomResourceOptions): typings.pulumiAws.wafXssMatchSetMod.XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.wafXssMatchSetMod.XssMatchSet]
     
     /**
       * Returns true if the given object is an instance of XssMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "waf.XssMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "waf.getIpset")
-  @js.native
-  def getIpset(args: GetIpsetArgs): js.Promise[GetIpsetResult] = js.native
-  @JSImport("@pulumi/aws", "waf.getIpset")
-  @js.native
-  def getIpset(args: GetIpsetArgs, opts: InvokeOptions): js.Promise[GetIpsetResult] = js.native
+  @scala.inline
+  def getIpset(args: GetIpsetArgs): js.Promise[GetIpsetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpsetResult]]
+  @scala.inline
+  def getIpset(args: GetIpsetArgs, opts: InvokeOptions): js.Promise[GetIpsetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpset")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpsetResult]]
   
-  @JSImport("@pulumi/aws", "waf.getRateBasedRule")
-  @js.native
-  def getRateBasedRule(args: GetRateBasedRuleArgs): js.Promise[GetRateBasedRuleResult] = js.native
-  @JSImport("@pulumi/aws", "waf.getRateBasedRule")
-  @js.native
-  def getRateBasedRule(args: GetRateBasedRuleArgs, opts: InvokeOptions): js.Promise[GetRateBasedRuleResult] = js.native
+  @scala.inline
+  def getRateBasedRule(args: GetRateBasedRuleArgs): js.Promise[GetRateBasedRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
+  @scala.inline
+  def getRateBasedRule(args: GetRateBasedRuleArgs, opts: InvokeOptions): js.Promise[GetRateBasedRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedRuleResult]]
   
-  @JSImport("@pulumi/aws", "waf.getRule")
-  @js.native
-  def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = js.native
-  @JSImport("@pulumi/aws", "waf.getRule")
-  @js.native
-  def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = js.native
+  @scala.inline
+  def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleResult]]
+  @scala.inline
+  def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleResult]]
   
-  @JSImport("@pulumi/aws", "waf.getWebAcl")
-  @js.native
-  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = js.native
-  @JSImport("@pulumi/aws", "waf.getWebAcl")
-  @js.native
-  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = js.native
+  @scala.inline
+  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWebAclResult]]
+  @scala.inline
+  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWebAclResult]]
 }

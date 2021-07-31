@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The protocol for the ListUptimeCheckIps response.
   */
-@js.native
 trait SchemaListUptimeCheckIpsResponse extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaListUptimeCheckIpsResponse extends StObject {
     * request message&#39;s page_token field). NOTE: this field is not yet
     * implemented
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The returned list of IP addresses (including region and location) that
     * the checkers run from.
     */
-  var uptimeCheckIps: js.UndefOr[js.Array[SchemaUptimeCheckIp]] = js.native
+  var uptimeCheckIps: js.UndefOr[js.Array[SchemaUptimeCheckIp]] = js.undefined
 }
 object SchemaListUptimeCheckIpsResponse {
   

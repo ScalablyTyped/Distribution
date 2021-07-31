@@ -2,13 +2,11 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainsResponse extends StObject {
   
-  var DomainStatusList: typings.awsSdk.cloudsearchMod.DomainStatusList = js.native
+  var DomainStatusList: typings.awsSdk.cloudsearchMod.DomainStatusList
 }
 object DescribeDomainsResponse {
   

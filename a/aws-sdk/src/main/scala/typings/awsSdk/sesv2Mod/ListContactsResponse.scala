@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactsResponse extends StObject {
   
   /**
     * The contacts present in a specific contact list.
     */
-  var Contacts: js.UndefOr[ListOfContacts] = js.native
+  var Contacts: js.UndefOr[ListOfContacts] = js.undefined
   
   /**
     * A string token indicating that there might be additional contacts available to be listed. Copy this token to a subsequent call to ListContacts with the same parameters to retrieve the next page of contacts.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
 }
 object ListContactsResponse {
   

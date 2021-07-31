@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedLocation extends StObject {
   
   /** Output only. The unique ID of the assigned location. The ID is only unique within a location list. It may be reused in other contexts. */
-  var assignedLocationId: js.UndefOr[String] = js.native
+  var assignedLocationId: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the assigned location. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The ID of the targeting option assigned to the location list. Must be of type TARGETING_TYPE_GEO_REGION. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
 }
 object AssignedLocation {
   

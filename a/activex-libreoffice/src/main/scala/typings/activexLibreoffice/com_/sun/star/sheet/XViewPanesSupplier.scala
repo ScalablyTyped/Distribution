@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * enables access to the panes in a view.
   * @deprecated Deprecated
   */
-@js.native
-trait XViewPanesSupplier extends XInterface {
+trait XViewPanesSupplier
+  extends StObject
+     with XInterface {
   
   /** returns the collection of panes in the view. */
-  val ViewPanes: XIndexAccess = js.native
+  val ViewPanes: XIndexAccess
   
   /** returns the collection of panes in the view. */
-  def getViewPanes(): XIndexAccess = js.native
+  def getViewPanes(): XIndexAccess
 }
 object XViewPanesSupplier {
   

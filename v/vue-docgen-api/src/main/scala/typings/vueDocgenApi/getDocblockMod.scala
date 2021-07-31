@@ -4,19 +4,19 @@ import typings.astTypes.nodePathMod.NodePath
 import typings.vueDocgenApi.anon.CommentIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDocblockMod {
   
-  @JSImport("vue-docgen-api/dist/utils/getDocblock", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/utils/getDocblock", JSImport.Namespace)
   @js.native
-  def default(path: NodePath[_, _]): String | Null = js.native
-  @JSImport("vue-docgen-api/dist/utils/getDocblock", JSImport.Default)
-  @js.native
-  def default(path: NodePath[_, _], hasCommentIndex: CommentIndex): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/utils/getDocblock", "parseDocblock")
-  @js.native
-  def parseDocblock(str: String): String = js.native
+  @scala.inline
+  def default(path: NodePath[js.Any, js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def default(path: NodePath[js.Any, js.Any], hasCommentIndex: CommentIndex): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], hasCommentIndex.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  
+  @scala.inline
+  def parseDocblock(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocblock")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

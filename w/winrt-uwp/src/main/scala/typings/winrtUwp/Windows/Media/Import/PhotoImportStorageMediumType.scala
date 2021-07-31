@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PhotoImportStorageMediumType extends StObject {
   
   /** The storage medium is fixed. */
   @js.native
-  sealed trait fixed extends PhotoImportStorageMediumType
+  sealed trait fixed
+    extends StObject
+       with PhotoImportStorageMediumType
   
   /** The storage medium is removable. */
   @js.native
-  sealed trait removable extends PhotoImportStorageMediumType
+  sealed trait removable
+    extends StObject
+       with PhotoImportStorageMediumType
   
   /** The storage medium type is undefined. */
   @js.native
-  sealed trait undefined extends PhotoImportStorageMediumType
+  sealed trait undefined
+    extends StObject
+       with PhotoImportStorageMediumType
 }

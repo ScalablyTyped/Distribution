@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanPreventDefault extends StObject {
   
-  var canPreventDefault: js.UndefOr[Boolean] = js.native
+  var canPreventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
 }
 object CanPreventDefault {
   

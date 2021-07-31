@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,23 +37,7 @@ trait PlusShareShareService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def authorize(): Unit = js.native
-  def authorize(
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusShareAuthOptions
-  ): Unit = js.native
-  def authorize(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def authorize(
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
-    options: PlusShareAuthOptions
-  ): Unit = js.native
   def authorize(successCallback: js.Function1[/* result */ this.type, Unit]): Unit = js.native
-  def authorize(
-    successCallback: js.Function1[/* result */ this.type, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusShareAuthOptions
-  ): Unit = js.native
   def authorize(
     successCallback: js.Function1[/* result */ this.type, Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
@@ -64,6 +47,18 @@ trait PlusShareShareService extends StObject {
     errorCallback: js.Function1[/* result */ js.Any, Unit],
     options: PlusShareAuthOptions
   ): Unit = js.native
+  def authorize(
+    successCallback: js.Function1[/* result */ this.type, Unit],
+    errorCallback: Unit,
+    options: PlusShareAuthOptions
+  ): Unit = js.native
+  def authorize(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusShareAuthOptions
+  ): Unit = js.native
+  def authorize(successCallback: Unit, errorCallback: Unit, options: PlusShareAuthOptions): Unit = js.native
   
   /**
     * 分享服务描述
@@ -119,27 +114,15 @@ trait PlusShareShareService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def send(): Unit = js.native
-  def send(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def send(msg: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
-  def send(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def send(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
+  def send(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def send(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def send(msg: PlusShareShareMessage): Unit = js.native
-  def send(
-    msg: PlusShareShareMessage,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def send(msg: PlusShareShareMessage, successCB: js.Function0[Unit]): Unit = js.native
   def send(
     msg: PlusShareShareMessage,
     successCB: js.Function0[Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def send(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

@@ -7,7 +7,6 @@ import typings.node.streamMod.Readable
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,20 +16,23 @@ object mod {
     *
     * @returns a stream that emits inflated data from the given stream.
     */
-  @JSImport("inflation", JSImport.Namespace)
-  @js.native
-  def apply(req: Readable): Readable = js.native
-  @JSImport("inflation", JSImport.Namespace)
-  @js.native
-  def apply(req: Readable, options: Options): Readable = js.native
+  @scala.inline
+  def apply(req: Readable): Readable = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  @scala.inline
+  def apply(req: Readable, options: Options): Readable = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
+  @JSImport("inflation", JSImport.Namespace)
   @js.native
-  trait Options extends ZlibOptions {
+  val ^ : js.Any = js.native
+  
+  trait Options
+    extends StObject
+       with ZlibOptions {
     
     /**
       * The encoding of the stream. If not given, will look in `stream.headers['content-encoding']`.
       */
-    var gzip: js.UndefOr[deflate | typings.inflation.inflationStrings.gzip | identity] = js.native
+    var gzip: js.UndefOr[deflate | typings.inflation.inflationStrings.gzip | identity] = js.undefined
   }
   object Options {
     

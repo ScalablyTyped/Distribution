@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyDefOrObjectType extends StObject {
   
-  def Clone(): IPropertyDefOrObjectType = js.native
+  def Clone(): IPropertyDefOrObjectType
   
-  def GetAsExpression(): IExpression = js.native
+  def GetAsExpression(): IExpression
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var PropertyDef: Boolean = js.native
+  var PropertyDef: Boolean
 }
 object IPropertyDefOrObjectType {
   

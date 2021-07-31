@@ -2,7 +2,6 @@ package typings.chalkAnimation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,18 +30,17 @@ object mod {
   @js.native
   val rainbow: AnimationFn = js.native
   
-  @js.native
   trait Animation extends StObject {
     
-    def frame(): String = js.native
+    def frame(): String
     
-    def render(): Unit = js.native
+    def render(): Unit
     
-    def replace(text: String): Unit = js.native
+    def replace(text: String): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Animation {
     

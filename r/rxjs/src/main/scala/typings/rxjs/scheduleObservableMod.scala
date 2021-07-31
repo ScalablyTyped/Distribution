@@ -5,12 +5,14 @@ import typings.rxjs.typesMod.InteropObservable
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scheduleObservableMod {
   
-  @JSImport("rxjs/internal/scheduled/scheduleObservable", "scheduleObservable")
+  @JSImport("rxjs/internal/scheduled/scheduleObservable", JSImport.Namespace)
   @js.native
-  def scheduleObservable[T](input: InteropObservable[T], scheduler: SchedulerLike): Observable[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def scheduleObservable[T](input: InteropObservable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleObservable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

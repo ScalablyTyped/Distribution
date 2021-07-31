@@ -8,7 +8,6 @@ import typings.mongodb.mod.IndexOptions
 import typings.mongorito.anon.BatchSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongorito", "Model")
@@ -21,7 +20,7 @@ class Model () extends Query {
   def get(): js.Any = js.native
   def get(key: String): js.Any = js.native
   
-  def getCollection(): js.Promise[Collection[_]] = js.native
+  def getCollection(): js.Promise[Collection[js.Any]] = js.native
   
   def getConnection(): js.Promise[Db] = js.native
   
@@ -49,71 +48,61 @@ class Model () extends Query {
 /* static members */
 object Model {
   
+  @JSImport("mongorito", "Model")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @see mongodb.Collection#createIndex()
     */
-  @JSImport("mongorito", "Model.createIndex")
-  @js.native
-  def createIndex(fieldOrSpec: js.Any): js.Promise[String] = js.native
-  @JSImport("mongorito", "Model.createIndex")
-  @js.native
-  def createIndex(fieldOrSpec: js.Any, options: IndexOptions): js.Promise[String] = js.native
+  @scala.inline
+  def createIndex(fieldOrSpec: js.Any): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndex")(fieldOrSpec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def createIndex(fieldOrSpec: js.Any, options: IndexOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndex")(fieldOrSpec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * @see mongodb.Collection#dropIndex()
     */
-  @JSImport("mongorito", "Model.dropIndex")
-  @js.native
-  def dropIndex(indexName: String): js.Promise[js.Object] = js.native
-  @JSImport("mongorito", "Model.dropIndex")
-  @js.native
-  def dropIndex(indexName: String, options: CommonOptions): js.Promise[js.Object] = js.native
+  @scala.inline
+  def dropIndex(indexName: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropIndex")(indexName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def dropIndex(indexName: String, options: CommonOptions): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("dropIndex")(indexName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("mongorito", "Model.embeds")
-  @js.native
-  def embeds(key: String, model: ModelClass): Unit = js.native
+  @scala.inline
+  def embeds(key: String, model: ModelClass): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("embeds")(key.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @see Db#collection(string)
     */
-  @JSImport("mongorito", "Model.getCollection")
-  @js.native
-  def getCollection(): js.Promise[Collection[_]] = js.native
+  @scala.inline
+  def getCollection(): js.Promise[Collection[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCollection")().asInstanceOf[js.Promise[Collection[js.Any]]]
   
   /**
     * @see Model#database
     * @see Database#connection()
     */
-  @JSImport("mongorito", "Model.getConnection")
-  @js.native
-  def getConnection(): js.Promise[Db] = js.native
+  @scala.inline
+  def getConnection(): js.Promise[Db] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")().asInstanceOf[js.Promise[Db]]
   
   /**
     * @see mongodb.Collection#listIndexes()
     * @see mongodb.CommandCursor#toArray()
     */
-  @JSImport("mongorito", "Model.listIndexes")
-  @js.native
-  def listIndexes(): js.Promise[js.Array[_]] = js.native
-  @JSImport("mongorito", "Model.listIndexes")
-  @js.native
-  def listIndexes(options: BatchSize): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def listIndexes(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listIndexes")().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def listIndexes(options: BatchSize): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listIndexes")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
-  @JSImport("mongorito", "Model.modifyReducer")
-  @js.native
-  def modifyReducer(reducerModifier: ReducerModifier): Unit = js.native
+  @scala.inline
+  def modifyReducer(reducerModifier: ReducerModifier): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyReducer")(reducerModifier.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mongorito", "Model.query")
-  @js.native
-  def query(method: String, query: js.Array[js.Tuple2[String, _]]): js.Promise[js.Array[js.Object]] = js.native
+  @scala.inline
+  def query(method: String, query: js.Array[js.Tuple2[String, js.Any]]): js.Promise[js.Array[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(method.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @JSImport("mongorito", "Model.use")
-  @js.native
-  def use(): Unit = js.native
-  @JSImport("mongorito", "Model.use")
-  @js.native
-  def use(plugins: js.Array[Plugin]): Unit = js.native
-  @JSImport("mongorito", "Model.use")
-  @js.native
-  def use(plugins: Plugin): Unit = js.native
+  @scala.inline
+  def use(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")().asInstanceOf[Unit]
+  @scala.inline
+  def use(plugins: js.Array[Plugin]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(plugins: Plugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

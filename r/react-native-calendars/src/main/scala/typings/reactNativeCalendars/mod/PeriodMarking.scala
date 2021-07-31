@@ -2,23 +2,23 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeriodMarking extends Marking {
+trait PeriodMarking
+  extends StObject
+     with Marking {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var endingDay: js.UndefOr[Boolean] = js.native
+  var endingDay: js.UndefOr[Boolean] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var startingDay: js.UndefOr[Boolean] = js.native
+  var startingDay: js.UndefOr[Boolean] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object PeriodMarking {
   

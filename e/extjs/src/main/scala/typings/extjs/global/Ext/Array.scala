@@ -2,66 +2,59 @@ package typings.extjs.global.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Array")
 @js.native
 class Array ()
-  extends typings.extjs.Ext.Array
+  extends StObject
+     with typings.extjs.Ext.Array
 /* static members */
 object Array {
+  
+  @JSGlobal("Ext.Array")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** [Method] Filter through an array and remove empty item as defined in Ext isEmpty See filter
     * @param array Array
     * @returns Array results
     */
-  @JSGlobal("Ext.Array.clean")
-  @js.native
-  def clean(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.clean")
-  @js.native
-  def clean(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def clean(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def clean(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
-  @JSGlobal("Ext.Array.clone")
-  @js.native
-  def clone(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def clone(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Checks whether or not the given array contains the specified item
     * @param array Array The array to check
     * @param item Object The item to look for
     * @returns Boolean True if the array contains the item, false otherwise
     */
-  @JSGlobal("Ext.Array.contains")
-  @js.native
-  def contains(): Boolean = js.native
-  @JSGlobal("Ext.Array.contains")
-  @js.native
-  def contains(array: js.UndefOr[scala.Nothing], item: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.contains")
-  @js.native
-  def contains(array: typings.extjs.Ext.Array): Boolean = js.native
-  @JSGlobal("Ext.Array.contains")
-  @js.native
-  def contains(array: typings.extjs.Ext.Array, item: js.Any): Boolean = js.native
+  @scala.inline
+  def contains(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")().asInstanceOf[Boolean]
+  @scala.inline
+  def contains(array: Unit, item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains(array: typings.extjs.Ext.Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def contains(array: typings.extjs.Ext.Array, item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Perform a set difference A B by subtracting all items in array B from array A
     * @param arrayA Array
     * @param arrayB Array
     * @returns Array difference
     */
-  @JSGlobal("Ext.Array.difference")
-  @js.native
-  def difference(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.difference")
-  @js.native
-  def difference(arrayA: js.UndefOr[scala.Nothing], arrayB: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.difference")
-  @js.native
-  def difference(arrayA: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.difference")
-  @js.native
-  def difference(arrayA: typings.extjs.Ext.Array, arrayB: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def difference(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def difference(arrayA: Unit, arrayB: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def difference(arrayA: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arrayA.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def difference(arrayA: typings.extjs.Ext.Array, arrayB: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Iterates an array or an iterable value and invoke the given callback function for each item
     * @param iterable Array/NodeList/Object The value to be iterated. If this argument is not iterable, the callback function is called once.
@@ -70,92 +63,52 @@ object Array {
     * @param reverse Boolean Reverse the iteration order (loop from the end to the beginning) Defaults false
     * @returns Boolean See description for the fn parameter.
     */
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(
-    iterable: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(
-    iterable: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.Any,
-    reverse: Boolean
-  ): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.UndefOr[scala.Nothing], fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(
-    iterable: js.UndefOr[scala.Nothing],
-    fn: js.Any,
-    scope: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, reverse: Boolean): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(
-    iterable: js.Any,
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, reverse: Boolean): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], reverse: Boolean): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.Any, scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.each")
-  @js.native
-  def each(iterable: js.Any, fn: js.Any, scope: js.Any, reverse: Boolean): Boolean = js.native
+  @scala.inline
+  def each(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("each")().asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: js.Any, scope: js.Any, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: js.Any, scope: Unit, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: Unit, scope: js.Any, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: js.Any, fn: Unit, scope: Unit, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: js.Any, scope: js.Any, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: js.Any, scope: Unit, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: Unit, scope: js.Any, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def each(iterable: Unit, fn: Unit, scope: Unit, reverse: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Shallow compares the contents of 2 arrays using strict equality
     * @param array1 Array
     * @param array2 Array
     * @returns Boolean true if the arrays are equal.
     */
-  @JSGlobal("Ext.Array.equals")
-  @js.native
-  def equals(): Boolean = js.native
-  @JSGlobal("Ext.Array.equals")
-  @js.native
-  def equals(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array): Boolean = js.native
-  @JSGlobal("Ext.Array.equals")
-  @js.native
-  def equals(array1: typings.extjs.Ext.Array): Boolean = js.native
-  @JSGlobal("Ext.Array.equals")
-  @js.native
-  def equals(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): Boolean = js.native
+  @scala.inline
+  def equals(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  @scala.inline
+  def equals(array1: Unit, array2: typings.extjs.Ext.Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals(array1: typings.extjs.Ext.Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Removes items from an array
     * @param array Array The Array on which to replace.
@@ -163,30 +116,22 @@ object Array {
     * @param removeCount Number The number of items to remove at index.
     * @returns Array The array passed.
     */
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: js.UndefOr[scala.Nothing], index: js.UndefOr[scala.Nothing], removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: js.UndefOr[scala.Nothing], index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: js.UndefOr[scala.Nothing], index: Double, removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: typings.extjs.Ext.Array, index: js.UndefOr[scala.Nothing], removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.erase")
-  @js.native
-  def erase(array: typings.extjs.Ext.Array, index: Double, removeCount: Double): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def erase(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("erase")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: Unit, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: Unit, index: Double, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: Unit, index: Unit, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: typings.extjs.Ext.Array, index: Double, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def erase(array: typings.extjs.Ext.Array, index: Unit, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Executes the specified function for each array element until the function returns a falsy value
     * @param array Array
@@ -194,30 +139,22 @@ object Array {
     * @param scope Object Callback function scope
     * @returns Boolean True if no false value is returned by the callback function.
     */
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: js.UndefOr[scala.Nothing], fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: typings.extjs.Ext.Array): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: typings.extjs.Ext.Array, fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.every")
-  @js.native
-  def every(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Boolean = js.native
+  @scala.inline
+  def every(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")().asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: Unit, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: Unit, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: Unit, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: typings.extjs.Ext.Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: typings.extjs.Ext.Array, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def every(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Creates a new array with all of the elements of this array for which the provided filtering function returns true
     * @param array Array
@@ -225,30 +162,22 @@ object Array {
     * @param scope Object Callback function scope
     * @returns Array results
     */
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: js.UndefOr[scala.Nothing], fn: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: typings.extjs.Ext.Array, fn: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.filter")
-  @js.native
-  def filter(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def filter(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: Unit, fn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: Unit, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: Unit, fn: Unit, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: typings.extjs.Ext.Array, fn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def filter(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Returns the first item in the array which elicits a true return value from the passed selection function
     * @param array Array The array to search
@@ -256,106 +185,80 @@ object Array {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the array
     * @returns Object The first item in the array which returned true from the selection function, or null if none was found.
     */
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: typings.extjs.Ext.Array): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: typings.extjs.Ext.Array, fn: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.findBy")
-  @js.native
-  def findBy(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): js.Any = js.native
+  @scala.inline
+  def findBy(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")().asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: typings.extjs.Ext.Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: typings.extjs.Ext.Array, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def findBy(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Recursively flattens into 1 d Array
     * @param array Array The array to flatten
     * @returns Array The 1-d array.
     */
-  @JSGlobal("Ext.Array.flatten")
-  @js.native
-  def flatten(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.flatten")
-  @js.native
-  def flatten(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def flatten(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def flatten(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Iterates an array and invoke the given callback function for each item
     * @param array Array The array to iterate
     * @param fn Function The callback function.
     * @param scope Object The execution scope (this) in which the specified function is executed.
     */
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: typings.extjs.Ext.Array): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: typings.extjs.Ext.Array, fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.forEach")
-  @js.native
-  def forEach(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Unit = js.native
+  @scala.inline
+  def forEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")().asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: typings.extjs.Ext.Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: typings.extjs.Ext.Array, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forEach(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Converts a value to an array if it s not already an array returns An empty array if given value is undefined or n
     * @param value Object The value to convert to an array if it's not already is an array
     * @param newReference Boolean True to clone the given array and return a new reference if necessary, defaults to false
     * @returns Array array
     */
-  @JSGlobal("Ext.Array.from")
-  @js.native
-  def from(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.from")
-  @js.native
-  def from(value: js.UndefOr[scala.Nothing], newReference: Boolean): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.from")
-  @js.native
-  def from(value: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.from")
-  @js.native
-  def from(value: js.Any, newReference: Boolean): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def from(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def from(value: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def from(value: js.Any, newReference: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], newReference.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def from(value: Unit, newReference: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], newReference.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Push an item into the array only if the array doesn t contain it yet
     * @param array Array The array
     * @param item Object The item to include
     */
-  @JSGlobal("Ext.Array.include")
-  @js.native
-  def include(): Unit = js.native
-  @JSGlobal("Ext.Array.include")
-  @js.native
-  def include(array: js.UndefOr[scala.Nothing], item: js.Any): Unit = js.native
-  @JSGlobal("Ext.Array.include")
-  @js.native
-  def include(array: typings.extjs.Ext.Array): Unit = js.native
-  @JSGlobal("Ext.Array.include")
-  @js.native
-  def include(array: typings.extjs.Ext.Array, item: js.Any): Unit = js.native
+  @scala.inline
+  def include(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("include")().asInstanceOf[Unit]
+  @scala.inline
+  def include(array: Unit, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("include")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def include(array: typings.extjs.Ext.Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("include")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def include(array: typings.extjs.Ext.Array, item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("include")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Get the index of the provided item in the given array a supplement for the missing arrayPrototype indexOf in Interne
     * @param array Array The array to check
@@ -363,30 +266,22 @@ object Array {
     * @param from Number The index at which to begin the search
     * @returns Number The index of item in the array (or -1 if it is not found)
     */
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], from: Double): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: js.UndefOr[scala.Nothing], item: js.Any): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: js.UndefOr[scala.Nothing], item: js.Any, from: Double): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: typings.extjs.Ext.Array): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: typings.extjs.Ext.Array, item: js.UndefOr[scala.Nothing], from: Double): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: typings.extjs.Ext.Array, item: js.Any): Double = js.native
-  @JSGlobal("Ext.Array.indexOf")
-  @js.native
-  def indexOf(array: typings.extjs.Ext.Array, item: js.Any, from: Double): Double = js.native
+  @scala.inline
+  def indexOf(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")().asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: Unit, item: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: Unit, item: js.Any, from: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: Unit, item: Unit, from: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: typings.extjs.Ext.Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: typings.extjs.Ext.Array, item: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: typings.extjs.Ext.Array, item: js.Any, from: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(array: typings.extjs.Ext.Array, item: Unit, from: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** [Method] Inserts items in to an array
     * @param array Array The Array in which to insert.
@@ -394,30 +289,22 @@ object Array {
     * @param items Array The array of items to insert at index.
     * @returns Array The array passed.
     */
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: js.UndefOr[scala.Nothing], index: js.UndefOr[scala.Nothing], items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: js.UndefOr[scala.Nothing], index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: js.UndefOr[scala.Nothing], index: Double, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: typings.extjs.Ext.Array, index: js.UndefOr[scala.Nothing], items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.insert")
-  @js.native
-  def insert(array: typings.extjs.Ext.Array, index: Double, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def insert(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: Unit, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: Unit, index: Double, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: Unit, index: Unit, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: typings.extjs.Ext.Array, index: Double, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def insert(array: typings.extjs.Ext.Array, index: Unit, items: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Merge multiple arrays into one with unique items that exist in all of the arrays
     * @param array1 Array
@@ -425,30 +312,22 @@ object Array {
     * @param etc Array
     * @returns Array intersect
     */
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: js.UndefOr[scala.Nothing], array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: typings.extjs.Ext.Array, array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.intersect")
-  @js.native
-  def intersect(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def intersect(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: Unit, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: Unit, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: Unit, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: typings.extjs.Ext.Array, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def intersect(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Creates a new array with the results of calling a provided function on every element in this array
     * @param array Array
@@ -456,59 +335,45 @@ object Array {
     * @param scope Object Callback function scope
     * @returns Array results
     */
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: js.UndefOr[scala.Nothing], fn: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: typings.extjs.Ext.Array, fn: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.map")
-  @js.native
-  def map(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def map(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: Unit, fn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: Unit, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: Unit, fn: Unit, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: typings.extjs.Ext.Array, fn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def map(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Returns the maximum value in the Array
     * @param array Array/NodeList The Array from which to select the maximum value.
     * @param comparisonFn Function a function to perform the comparision which determines maximization. If omitted the ">" operator will be used. Note: gt = 1; eq = 0; lt = -1
     * @returns Object maxValue The maximum value
     */
-  @JSGlobal("Ext.Array.max")
-  @js.native
-  def max(): js.Any = js.native
-  @JSGlobal("Ext.Array.max")
-  @js.native
-  def max(array: js.UndefOr[scala.Nothing], comparisonFn: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.max")
-  @js.native
-  def max(array: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.max")
-  @js.native
-  def max(array: js.Any, comparisonFn: js.Any): js.Any = js.native
+  @scala.inline
+  def max(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[js.Any]
+  @scala.inline
+  def max(array: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def max(array: js.Any, comparisonFn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], comparisonFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def max(array: Unit, comparisonFn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], comparisonFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Calculates the mean of all items in the array
     * @param array Array The Array to calculate the mean value of.
     * @returns Number The mean.
     */
-  @JSGlobal("Ext.Array.mean")
-  @js.native
-  def mean(): Double = js.native
-  @JSGlobal("Ext.Array.mean")
-  @js.native
-  def mean(array: typings.extjs.Ext.Array): Double = js.native
+  @scala.inline
+  def mean(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")().asInstanceOf[Double]
+  @scala.inline
+  def mean(array: typings.extjs.Ext.Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(array.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /** [Method] Merge multiple arrays into one with unique items
     * @param array1 Array
@@ -516,93 +381,72 @@ object Array {
     * @param etc Array
     * @returns Array merged
     */
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: js.UndefOr[scala.Nothing], array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: typings.extjs.Ext.Array, array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.merge")
-  @js.native
-  def merge(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def merge(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: Unit, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: Unit, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: Unit, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: typings.extjs.Ext.Array, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def merge(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Returns the minimum value in the Array
     * @param array Array/NodeList The Array from which to select the minimum value.
     * @param comparisonFn Function a function to perform the comparision which determines minimization. If omitted the "&lt;" operator will be used. Note: gt = 1; eq = 0; lt = -1
     * @returns Object minValue The minimum value
     */
-  @JSGlobal("Ext.Array.min")
-  @js.native
-  def min(): js.Any = js.native
-  @JSGlobal("Ext.Array.min")
-  @js.native
-  def min(array: js.UndefOr[scala.Nothing], comparisonFn: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.min")
-  @js.native
-  def min(array: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.min")
-  @js.native
-  def min(array: js.Any, comparisonFn: js.Any): js.Any = js.native
+  @scala.inline
+  def min(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[js.Any]
+  @scala.inline
+  def min(array: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def min(array: js.Any, comparisonFn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any], comparisonFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def min(array: Unit, comparisonFn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any], comparisonFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Plucks the value of a property from each item in the Array
     * @param array Array/NodeList The Array of items to pluck the value from.
     * @param propertyName String The property name to pluck from each element.
     * @returns Array The value from each item in the Array.
     */
-  @JSGlobal("Ext.Array.pluck")
-  @js.native
-  def pluck(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.pluck")
-  @js.native
-  def pluck(array: js.UndefOr[scala.Nothing], propertyName: java.lang.String): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.pluck")
-  @js.native
-  def pluck(array: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.pluck")
-  @js.native
-  def pluck(array: js.Any, propertyName: java.lang.String): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def pluck(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pluck")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def pluck(array: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def pluck(array: js.Any, propertyName: java.lang.String): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(array.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def pluck(array: Unit, propertyName: java.lang.String): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pluck")(array.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Pushes new items onto the end of an Array
     * @param target Array The Array onto which to push new items
     * @param elements Object... The elements to add to the array. Each parameter may be an Array, in which case all the elements of that Array will be pushed into the end of the destination Array.
     * @returns Array An array containing all the new items push onto the end.
     */
-  @JSGlobal("Ext.Array.push")
-  @js.native
-  def push(target: typings.extjs.Ext.Array, elements: js.Any*): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def push(target: typings.extjs.Ext.Array, elements: js.Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(target.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Removes the specified item from the array if it exists
     * @param array Array The array
     * @param item Object The item to remove
     * @returns Array The passed array itself
     */
-  @JSGlobal("Ext.Array.remove")
-  @js.native
-  def remove(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.remove")
-  @js.native
-  def remove(array: js.UndefOr[scala.Nothing], item: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.remove")
-  @js.native
-  def remove(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.remove")
-  @js.native
-  def remove(array: typings.extjs.Ext.Array, item: js.Any): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def remove(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def remove(array: Unit, item: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def remove(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def remove(array: typings.extjs.Ext.Array, item: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Replaces items in an array
     * @param array Array The Array on which to replace.
@@ -611,94 +455,43 @@ object Array {
     * @param insert Array An array of items to insert at index.
     * @returns Array The array passed.
     */
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    removeCount: js.UndefOr[scala.Nothing],
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: js.UndefOr[scala.Nothing], index: js.UndefOr[scala.Nothing], removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: js.UndefOr[scala.Nothing],
-    index: js.UndefOr[scala.Nothing],
-    removeCount: Double,
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: js.UndefOr[scala.Nothing], index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: js.UndefOr[scala.Nothing],
-    index: Double,
-    removeCount: js.UndefOr[scala.Nothing],
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: js.UndefOr[scala.Nothing], index: Double, removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: js.UndefOr[scala.Nothing],
-    index: Double,
-    removeCount: Double,
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: typings.extjs.Ext.Array,
-    index: js.UndefOr[scala.Nothing],
-    removeCount: js.UndefOr[scala.Nothing],
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: typings.extjs.Ext.Array, index: js.UndefOr[scala.Nothing], removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: typings.extjs.Ext.Array,
-    index: js.UndefOr[scala.Nothing],
-    removeCount: Double,
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(
-    array: typings.extjs.Ext.Array,
-    index: Double,
-    removeCount: js.UndefOr[scala.Nothing],
-    insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
-  def replace(array: typings.extjs.Ext.Array, index: Double, removeCount: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.replace")
-  @js.native
+  @scala.inline
+  def replace(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Double, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Double, removeCount: Double, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Double, removeCount: Unit, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Unit, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Unit, removeCount: Double, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: Unit, index: Unit, removeCount: Unit, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Double, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
   def replace(
     array: typings.extjs.Ext.Array,
     index: Double,
     removeCount: Double,
     insert: typings.extjs.Ext.Array
-  ): typings.extjs.Ext.Array = js.native
+  ): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Double, removeCount: Unit, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Unit, removeCount: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Unit, removeCount: Double, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def replace(array: typings.extjs.Ext.Array, index: Unit, removeCount: Unit, insert: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Returns a shallow copy of a part of an array
     * @param array Array The array (or arguments object).
@@ -706,30 +499,22 @@ object Array {
     * @param end Number The index at which to end. The copied items do not include end. Negative values are offsets from the end of the array. If end is omitted, all items up to the end of the array are copied.
     * @returns Array The copied piece of the array.
     */
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: js.UndefOr[scala.Nothing], begin: js.UndefOr[scala.Nothing], end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: js.UndefOr[scala.Nothing], begin: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: js.UndefOr[scala.Nothing], begin: Double, end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: typings.extjs.Ext.Array, begin: js.UndefOr[scala.Nothing], end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: typings.extjs.Ext.Array, begin: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.slice")
-  @js.native
-  def slice(array: typings.extjs.Ext.Array, begin: Double, end: Double): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def slice(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: Unit, begin: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: Unit, begin: Double, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: Unit, begin: Unit, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: typings.extjs.Ext.Array, begin: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: typings.extjs.Ext.Array, begin: Double, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def slice(array: typings.extjs.Ext.Array, begin: Unit, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Executes the specified function for each array element until the function returns a truthy value
     * @param array Array
@@ -737,48 +522,36 @@ object Array {
     * @param scope Object Callback function scope
     * @returns Boolean True if the callback function returns a truthy value.
     */
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: js.UndefOr[scala.Nothing], fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: typings.extjs.Ext.Array): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: typings.extjs.Ext.Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: typings.extjs.Ext.Array, fn: js.Any): Boolean = js.native
-  @JSGlobal("Ext.Array.some")
-  @js.native
-  def some(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Boolean = js.native
+  @scala.inline
+  def some(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("some")().asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: Unit, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: Unit, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: Unit, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: typings.extjs.Ext.Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: typings.extjs.Ext.Array, fn: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: typings.extjs.Ext.Array, fn: js.Any, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def some(array: typings.extjs.Ext.Array, fn: Unit, scope: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Sorts the elements of an Array
     * @param array Array The array to sort.
     * @param sortFn Function The comparison function.
     * @returns Array The sorted array.
     */
-  @JSGlobal("Ext.Array.sort")
-  @js.native
-  def sort(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.sort")
-  @js.native
-  def sort(array: js.UndefOr[scala.Nothing], sortFn: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.sort")
-  @js.native
-  def sort(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.sort")
-  @js.native
-  def sort(array: typings.extjs.Ext.Array, sortFn: js.Any): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def sort(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def sort(array: Unit, sortFn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], sortFn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def sort(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def sort(array: typings.extjs.Ext.Array, sortFn: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], sortFn.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Replaces items in an array
     * @param array Array The Array on which to replace.
@@ -787,20 +560,17 @@ object Array {
     * @param elements Object... The elements to add to the array. If you don't specify any elements, splice simply removes elements from the array.
     * @returns Array An array containing the removed items.
     */
-  @JSGlobal("Ext.Array.splice")
-  @js.native
-  def splice(array: typings.extjs.Ext.Array, index: Double, removeCount: Double, elements: js.Any*): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def splice(array: typings.extjs.Ext.Array, index: Double, removeCount: Double, elements: js.Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Calculates the sum of all items in the given array
     * @param array Array The Array to calculate the sum value of.
     * @returns Number The sum.
     */
-  @JSGlobal("Ext.Array.sum")
-  @js.native
-  def sum(): Double = js.native
-  @JSGlobal("Ext.Array.sum")
-  @js.native
-  def sum(array: typings.extjs.Ext.Array): Double = js.native
+  @scala.inline
+  def sum(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")().asInstanceOf[Double]
+  @scala.inline
+  def sum(array: typings.extjs.Ext.Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(array.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /** [Method] Converts any iterable numeric indices and a length property into a true array
     * @param iterable Object the iterable object to be turned into a true Array.
@@ -808,30 +578,22 @@ object Array {
     * @param end Number a 1-based index that specifies the end of extraction. Defaults to the last index of the iterable value
     * @returns Array array
     */
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.UndefOr[scala.Nothing], start: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.UndefOr[scala.Nothing], start: Double, end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.Any): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.Any, start: js.UndefOr[scala.Nothing], end: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.Any, start: Double): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.toArray")
-  @js.native
-  def toArray(iterable: js.Any, start: Double, end: Double): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def toArray(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: js.Any, start: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: js.Any, start: Double, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: js.Any, start: Unit, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: Unit, start: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: Unit, start: Double, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def toArray(iterable: Unit, start: Unit, end: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(iterable.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Creates a map object keyed by the elements of the given array
     * @param array Array The Array to create the map from.
@@ -839,30 +601,22 @@ object Array {
     * @param scope Object Value of this inside callback.
     * @returns Object The resulting map.
     */
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: js.UndefOr[scala.Nothing], getKey: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: js.UndefOr[scala.Nothing], getKey: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: js.UndefOr[scala.Nothing], getKey: js.Any, scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: typings.extjs.Ext.Array): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: typings.extjs.Ext.Array, getKey: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: typings.extjs.Ext.Array, getKey: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toMap")
-  @js.native
-  def toMap(array: typings.extjs.Ext.Array, getKey: js.Any, scope: js.Any): js.Any = js.native
+  @scala.inline
+  def toMap(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toMap")().asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: Unit, getKey: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: Unit, getKey: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: Unit, getKey: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: typings.extjs.Ext.Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: typings.extjs.Ext.Array, getKey: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: typings.extjs.Ext.Array, getKey: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toMap(array: typings.extjs.Ext.Array, getKey: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Creates a map object keyed by a property of elements of the given array
     * @param array Array The Array to create the map from.
@@ -870,30 +624,22 @@ object Array {
     * @param scope Object Value of this inside callback.
     * @returns Object The resulting map.
     */
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: js.UndefOr[scala.Nothing], getKey: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: js.UndefOr[scala.Nothing], getKey: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: js.UndefOr[scala.Nothing], getKey: js.Any, scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: typings.extjs.Ext.Array): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: typings.extjs.Ext.Array, getKey: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: typings.extjs.Ext.Array, getKey: js.Any): js.Any = js.native
-  @JSGlobal("Ext.Array.toValueMap")
-  @js.native
-  def toValueMap(array: typings.extjs.Ext.Array, getKey: js.Any, scope: js.Any): js.Any = js.native
+  @scala.inline
+  def toValueMap(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")().asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: Unit, getKey: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: Unit, getKey: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: Unit, getKey: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: typings.extjs.Ext.Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: typings.extjs.Ext.Array, getKey: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: typings.extjs.Ext.Array, getKey: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toValueMap(array: typings.extjs.Ext.Array, getKey: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toValueMap")(array.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Merge multiple arrays into one with unique items
     * @param array1 Array
@@ -901,39 +647,29 @@ object Array {
     * @param etc Array
     * @returns Array merged
     */
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: js.UndefOr[scala.Nothing], array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: js.UndefOr[scala.Nothing], array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: typings.extjs.Ext.Array, array2: js.UndefOr[scala.Nothing], etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.union")
-  @js.native
-  def union(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def union(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("union")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: Unit, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: Unit, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: Unit, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: typings.extjs.Ext.Array, array2: Unit, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def union(array1: typings.extjs.Ext.Array, array2: typings.extjs.Ext.Array, etc: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], etc.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Returns a new array with unique items
     * @param array Array
     * @returns Array results
     */
-  @JSGlobal("Ext.Array.unique")
-  @js.native
-  def unique(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.Array.unique")
-  @js.native
-  def unique(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def unique(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def unique(array: typings.extjs.Ext.Array): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
 }

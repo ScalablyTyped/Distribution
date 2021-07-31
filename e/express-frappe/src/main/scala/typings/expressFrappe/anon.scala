@@ -8,17 +8,15 @@ import typings.socketIo.mod.Server
 import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Json extends StObject {
     
-    var json: js.UndefOr[Boolean | OptionsJson] = js.native
+    var json: js.UndefOr[Boolean | OptionsJson] = js.undefined
     
-    var urlencoded: js.UndefOr[Boolean | OptionsUrlencoded] = js.native
+    var urlencoded: js.UndefOr[Boolean | OptionsUrlencoded] = js.undefined
   }
   object Json {
     
@@ -45,12 +43,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.native
+    var options: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
     
-    var root: String = js.native
+    var root: String
   }
   object Options {
     
@@ -75,12 +72,11 @@ object anon {
   }
   
   /* Inlined std.Partial<{use (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket, next : (err : any | undefined): void): void, onConnect (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket): void, onDisconnect (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket): void, [eventHandler: string] : (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket, data : any, cb : std.Function): void}> */
-  @js.native
   trait PartialuseioServersocketS extends StObject {
     
-    var onConnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.undefined
     
-    var onDisconnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.native
+    var onDisconnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.undefined
     
     var use: js.UndefOr[
         js.Function3[
@@ -89,7 +85,7 @@ object anon {
           /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialuseioServersocketS {
     

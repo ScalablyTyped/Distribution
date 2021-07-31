@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceSnapshotInfo extends StObject {
   
   /**
     * The blueprint ID from which the source instance (e.g., os_debian_8_3).
     */
-  var fromBlueprintId: js.UndefOr[NonEmptyString] = js.native
+  var fromBlueprintId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The bundle ID from which the source instance was created (e.g., micro_1_0).
     */
-  var fromBundleId: js.UndefOr[NonEmptyString] = js.native
+  var fromBundleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of objects describing the disks that were attached to the source instance.
     */
-  var fromDiskInfo: js.UndefOr[DiskInfoList] = js.native
+  var fromDiskInfo: js.UndefOr[DiskInfoList] = js.undefined
 }
 object InstanceSnapshotInfo {
   

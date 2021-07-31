@@ -23,23 +23,18 @@ import typings.urijs.urijsStrings.url
 import typings.urijs.urijsStrings.urn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("urijs", JSImport.Namespace)
-  @js.native
-  def apply(): URI = js.native
-  @JSImport("urijs", JSImport.Namespace)
-  @js.native
-  def apply(value: String): URI = js.native
-  @JSImport("urijs", JSImport.Namespace)
-  @js.native
-  def apply(value: typings.urijs.mod.HTMLElement): URI = js.native
-  @JSImport("urijs", JSImport.Namespace)
-  @js.native
-  def apply(value: URIOptions): URI = js.native
+  @scala.inline
+  def apply(): URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URI]
+  @scala.inline
+  def apply(value: String): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
+  @scala.inline
+  def apply(value: typings.urijs.mod.HTMLElement): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
+  @scala.inline
+  def apply(value: URIOptions): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
   
   @JSImport("urijs", JSImport.Namespace)
   @js.native
@@ -48,53 +43,44 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("urijs", JSImport.Namespace)
   @js.native
-  class Class () extends URI {
+  class Class ()
+    extends StObject
+       with URI {
     def this(value: String) = this()
     def this(value: typings.urijs.mod.HTMLElement) = this()
     def this(value: URIOptions) = this()
   }
   
-  @JSImport("urijs", "addQuery")
-  @js.native
-  def addQuery(data: js.Object, prop: String, value: String): js.Object = js.native
-  @JSImport("urijs", "addQuery")
-  @js.native
-  def addQuery(data: js.Object, qryObj: js.Object): js.Object = js.native
+  @scala.inline
+  def addQuery(data: js.Object, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def addQuery(data: js.Object, qryObj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], qryObj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("urijs", "build")
-  @js.native
-  def build(parts: URIOptions): String = js.native
+  @scala.inline
+  def build(parts: URIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "buildAuthority")
-  @js.native
-  def buildAuthority(parts: Hostname): String = js.native
+  @scala.inline
+  def buildAuthority(parts: Hostname): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAuthority")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "buildHost")
-  @js.native
-  def buildHost(parts: Port): String = js.native
+  @scala.inline
+  def buildHost(parts: Port): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHost")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "buildQuery")
-  @js.native
-  def buildQuery(qry: js.Object): String = js.native
-  @JSImport("urijs", "buildQuery")
-  @js.native
-  def buildQuery(qry: js.Object, duplicates: Boolean): String = js.native
+  @scala.inline
+  def buildQuery(qry: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def buildQuery(qry: js.Object, duplicates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("urijs", "buildUserinfo")
-  @js.native
-  def buildUserinfo(parts: Password): String = js.native
+  @scala.inline
+  def buildUserinfo(parts: Password): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUserinfo")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "commonPath")
-  @js.native
-  def commonPath(path1: String, path2: String): String = js.native
+  @scala.inline
+  def commonPath(path1: String, path2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commonPath")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("urijs", "decode")
-  @js.native
-  def decode(str: String): String = js.native
+  @scala.inline
+  def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "decodeQuery")
-  @js.native
-  def decodeQuery(qry: String): String = js.native
+  @scala.inline
+  def decodeQuery(qry: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeQuery")(qry.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("urijs", "duplicateQueryParameters")
   @js.native
@@ -102,17 +88,14 @@ object mod {
   @scala.inline
   def duplicateQueryParameters_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicateQueryParameters")(x.asInstanceOf[js.Any])
   
-  @JSImport("urijs", "encode")
-  @js.native
-  def encode(str: String): String = js.native
+  @scala.inline
+  def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "encodeQuery")
-  @js.native
-  def encodeQuery(qry: String): String = js.native
+  @scala.inline
+  def encodeQuery(qry: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeQuery")(qry.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("urijs", "encodeReserved")
-  @js.native
-  def encodeReserved(str: String): String = js.native
+  @scala.inline
+  def encodeReserved(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeReserved")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("urijs", "escapeQuerySpace")
   @js.native
@@ -130,33 +113,26 @@ object mod {
   @scala.inline
   def expand_=(x: js.UndefOr[js.Function2[/* template */ String, /* vals */ js.Object, String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
   
-  @JSImport("urijs", "iso8859")
-  @js.native
-  def iso8859(): Unit = js.native
+  @scala.inline
+  def iso8859(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8859")().asInstanceOf[Unit]
   
-  @JSImport("urijs", "joinPaths")
-  @js.native
-  def joinPaths(paths: (String | URI)*): URI = js.native
+  @scala.inline
+  def joinPaths(paths: (String | URI)*): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[js.Any]).asInstanceOf[URI]
   
-  @JSImport("urijs", "parse")
-  @js.native
-  def parse(url: String): Parts = js.native
+  @scala.inline
+  def parse(url: String): Parts = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[Parts]
   
-  @JSImport("urijs", "parseAuthority")
-  @js.native
-  def parseAuthority(url: String, parts: Hostname): String = js.native
+  @scala.inline
+  def parseAuthority(url: String, parts: Hostname): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAuthority")(url.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("urijs", "parseHost")
-  @js.native
-  def parseHost(url: String, parts: Port): String = js.native
+  @scala.inline
+  def parseHost(url: String, parts: Port): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(url.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("urijs", "parseQuery")
-  @js.native
-  def parseQuery(url: String): QueryDataMap = js.native
+  @scala.inline
+  def parseQuery(url: String): QueryDataMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQuery")(url.asInstanceOf[js.Any]).asInstanceOf[QueryDataMap]
   
-  @JSImport("urijs", "parseUserinfo")
-  @js.native
-  def parseUserinfo(url: String, parts: Password): String = js.native
+  @scala.inline
+  def parseUserinfo(url: String, parts: Password): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUserinfo")(url.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("urijs", "preventInvalidHostname")
   @js.native
@@ -164,37 +140,32 @@ object mod {
   @scala.inline
   def preventInvalidHostname_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preventInvalidHostname")(x.asInstanceOf[js.Any])
   
-  @JSImport("urijs", "removeQuery")
-  @js.native
-  def removeQuery(data: js.Object, prop: String, value: String): js.Object = js.native
-  @JSImport("urijs", "removeQuery")
-  @js.native
-  def removeQuery(data: js.Object, props: js.Array[String]): js.Object = js.native
-  @JSImport("urijs", "removeQuery")
-  @js.native
-  def removeQuery(data: js.Object, props: js.Object): js.Object = js.native
+  @scala.inline
+  def removeQuery(data: js.Object, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def removeQuery(data: js.Object, props: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQuery")(data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def removeQuery(data: js.Object, props: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQuery")(data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("urijs", "unicode")
-  @js.native
-  def unicode(): Unit = js.native
+  @scala.inline
+  def unicode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unicode")().asInstanceOf[Unit]
   
-  @JSImport("urijs", "withinString")
-  @js.native
-  def withinString(source: String, func: js.Function1[/* url */ String, String]): String = js.native
+  @scala.inline
+  def withinString(source: String, func: js.Function1[/* url */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("withinString")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
   
   // Compatability with node.js
   // tslint:disable-next-line:no-empty-interface
-  @js.native
   trait HTMLElement extends StObject
   
-  @js.native
-  trait Parts extends URIOptions {
+  trait Parts
+    extends StObject
+       with URIOptions {
     
-    var duplicateQueryParameters: Boolean = js.native
+    var duplicateQueryParameters: Boolean
     
-    var escapeQuerySpace: Boolean = js.native
+    var escapeQuerySpace: Boolean
     
-    var preventInvalidHostname: Boolean = js.native
+    var preventInvalidHostname: Boolean
   }
   object Parts {
     
@@ -265,32 +236,40 @@ object mod {
     def fragmentPrefix(prefix: String): URI = js.native
     
     def hasQuery(name: /*string | */ js.Any): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.UndefOr[scala.Nothing], withinArray: Boolean): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: String): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _], withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, js.Any]): Boolean = js.native
+    def hasQuery(
+      name: /*string | */ js.Any,
+      value: js.Function1[/* repeated */ js.Any, js.Any],
+      withinArray: Boolean
+    ): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: Boolean): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: Boolean, withinArray: Boolean): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: Double): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ js.Any, value: Unit, withinArray: Boolean): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: RegExp): Boolean = js.native
     def hasQuery(name: /*string | */ js.Any, value: RegExp, withinArray: Boolean): Boolean = js.native
     
     def hasSearch(name: /*string | */ js.Any): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.UndefOr[scala.Nothing], withinArray: Boolean): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: String): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _], withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, js.Any]): Boolean = js.native
+    def hasSearch(
+      name: /*string | */ js.Any,
+      value: js.Function1[/* repeated */ js.Any, js.Any],
+      withinArray: Boolean
+    ): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: Boolean): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: Boolean, withinArray: Boolean): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: Double): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ js.Any, value: Unit, withinArray: Boolean): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: RegExp): Boolean = js.native
     def hasSearch(name: /*string | */ js.Any, value: RegExp, withinArray: Boolean): Boolean = js.native
     
@@ -454,26 +433,25 @@ object mod {
     def username(uname: String): URI = js.native
   }
   
-  @js.native
   trait URIOptions extends StObject {
     
-    var fragment: js.UndefOr[String] = js.native
+    var fragment: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var urn: js.UndefOr[Boolean] = js.native
+    var urn: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object URIOptions {
     
@@ -544,10 +522,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait JQuery extends StObject {
       
-      def uri(): URI = js.native
+      def uri(): URI
     }
     object JQuery {
       

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderror
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
   /** The source code filename, which can include a truncated relative path, or a full path from a production machine. */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /** Human-readable name of a function or method. The value can include optional context like the class or package name. For example, `my.package.MyClass.method` in case of Java. */
-  var functionName: js.UndefOr[String] = js.native
+  var functionName: js.UndefOr[String] = js.undefined
   
   /** 1-based. 0 indicates that the line number is unknown. */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
 }
 object SourceLocation {
   

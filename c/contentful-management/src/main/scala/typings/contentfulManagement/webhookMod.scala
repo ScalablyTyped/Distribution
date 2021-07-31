@@ -23,23 +23,23 @@ import typings.std.Record
 import typings.typeFest.basicMod.JsonValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhookMod {
   
-  @JSImport("contentful-management/dist/typings/entities/webhook", "wrapWebhook")
+  @JSImport("contentful-management/dist/typings/entities/webhook", JSImport.Namespace)
   @js.native
-  def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/webhook", "wrapWebhookCollection")
-  @js.native
-  def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps] = js.native
+  @scala.inline
+  def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhook")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebHooks]
   
-  @js.native
+  @scala.inline
+  def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhookCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[WebHooks, WebhookProps]]
+  
   trait Doc extends StObject {
     
-    var doc: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid = js.native
+    var doc: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid
   }
   object Doc {
     
@@ -57,11 +57,12 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait EqualityConstraint extends WebhookFilter {
+  trait EqualityConstraint
+    extends StObject
+       with WebhookFilter {
     
     @JSName("equals")
-    var equals_FEqualityConstraint: js.Tuple2[Doc, String] = js.native
+    var equals_FEqualityConstraint: js.Tuple2[Doc, String]
   }
   object EqualityConstraint {
     
@@ -80,10 +81,11 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait InConstraint extends WebhookFilter {
+  trait InConstraint
+    extends StObject
+       with WebhookFilter {
     
-    var in: js.Tuple2[Doc, Array[String]] = js.native
+    var in: js.Tuple2[Doc, Array[String]]
   }
   object InConstraint {
     
@@ -101,10 +103,11 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait NotConstraint extends WebhookFilter {
+  trait NotConstraint
+    extends StObject
+       with WebhookFilter {
     
-    var not: EqualityConstraint | InConstraint | RegexpConstraint = js.native
+    var not: EqualityConstraint | InConstraint | RegexpConstraint
   }
   object NotConstraint {
     
@@ -122,10 +125,9 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait Pattern extends StObject {
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object Pattern {
     
@@ -143,10 +145,11 @@ object webhookMod {
     }
   }
   
-  @js.native
-  trait RegexpConstraint extends WebhookFilter {
+  trait RegexpConstraint
+    extends StObject
+       with WebhookFilter {
     
-    var regexp: js.Tuple2[Doc, Pattern] = js.native
+    var regexp: js.Tuple2[Doc, Pattern]
   }
   object RegexpConstraint {
     
@@ -164,9 +167,9 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebHooks
-    extends WebhookProps
+    extends StObject
+       with WebhookProps
        with DefaultElements[WebhookProps] {
     
     /**
@@ -186,7 +189,7 @@ object webhookMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Webhook call with specific id. See https://www.contentful.com/developers/docs/references/content-management-api/#/reference/webhook-calls/webhook-call-overviews for more details
@@ -205,7 +208,7 @@ object webhookMod {
       * .catch(console.error)
       * ```
       */
-    def getCall(id: String): js.Promise[Record[String, _]] = js.native
+    def getCall(id: String): js.Promise[Record[String, js.Any]]
     
     /**
       * List of the most recent webhook calls. See https://www.contentful.com/developers/docs/references/content-management-api/#/reference/webhook-calls/webhook-call-overviews for more details.
@@ -224,7 +227,7 @@ object webhookMod {
       * .catch(console.error)
       * ```
       */
-    def getCalls(): js.Promise[Record[String, _]] = js.native
+    def getCalls(): js.Promise[Record[String, js.Any]]
     
     /**
       * Overview of the health of webhook calls. See https://www.contentful.com/developers/docs/references/content-management-api/#/reference/webhook-calls/webhook-call-overviews for more details.
@@ -243,7 +246,7 @@ object webhookMod {
       * .catch(console.error)
       * ```
       */
-    def getHealth(): js.Promise[Record[String, _]] = js.native
+    def getHealth(): js.Promise[Record[String, js.Any]]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -265,16 +268,16 @@ object webhookMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[WebHooks] = js.native
+    def update(): js.Promise[WebHooks]
   }
   object WebHooks {
     
     @scala.inline
     def apply(
       delete: () => js.Promise[Unit],
-      getCall: String => js.Promise[Record[String, _]],
-      getCalls: () => js.Promise[Record[String, _]],
-      getHealth: () => js.Promise[Record[String, _]],
+      getCall: String => js.Promise[Record[String, js.Any]],
+      getCalls: () => js.Promise[Record[String, js.Any]],
+      getHealth: () => js.Promise[Record[String, js.Any]],
       headers: js.Array[WebhookHeader],
       name: String,
       sys: MetaSysProps,
@@ -294,13 +297,13 @@ object webhookMod {
       def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetCall(value: String => js.Promise[Record[String, _]]): Self = StObject.set(x, "getCall", js.Any.fromFunction1(value))
+      def setGetCall(value: String => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCall", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetCalls(value: () => js.Promise[Record[String, _]]): Self = StObject.set(x, "getCalls", js.Any.fromFunction0(value))
+      def setGetCalls(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCalls", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetHealth(value: () => js.Promise[Record[String, _]]): Self = StObject.set(x, "getHealth", js.Any.fromFunction0(value))
+      def setGetHealth(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getHealth", js.Any.fromFunction0(value))
       
       @scala.inline
       def setUpdate(value: () => js.Promise[WebHooks]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
@@ -342,14 +345,13 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookHeader extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var secret: js.UndefOr[Boolean] = js.native
+    var secret: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object WebhookHeader {
     
@@ -376,53 +378,52 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookProps extends StObject {
     
     /**
       * Webhook filters
       */
-    var filters: js.UndefOr[js.Array[WebhookFilter]] = js.native
+    var filters: js.UndefOr[js.Array[WebhookFilter]] = js.undefined
     
     /**
       * Headers that should be appended to the webhook request
       */
-    var headers: js.Array[WebhookHeader] = js.native
+    var headers: js.Array[WebhookHeader]
     
     /**
       * Password for basic http auth
       */
-    var httpBasicPassword: js.UndefOr[String] = js.native
+    var httpBasicPassword: js.UndefOr[String] = js.undefined
     
     /**
       * Username for basic http auth
       */
-    var httpBasicUsername: js.UndefOr[String] = js.native
+    var httpBasicUsername: js.UndefOr[String] = js.undefined
     
     /**
       * Webhook name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
     
     /**
       * Topics the webhook wants to subscribe to
       */
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
     
     /**
       * Transformation to apply
       */
-    var transformation: js.UndefOr[WebhookTransformation] = js.native
+    var transformation: js.UndefOr[WebhookTransformation] = js.undefined
     
     /**
       * Webhook url
       */
-    var url: String = js.native
+    var url: String
   }
   object WebhookProps {
     
@@ -491,18 +492,17 @@ object webhookMod {
     }
   }
   
-  @js.native
   trait WebhookTransformation extends StObject {
     
-    var body: js.UndefOr[JsonValue] = js.native
+    var body: js.UndefOr[JsonValue] = js.undefined
     
     var contentType: js.UndefOr[
         Null | applicationSlashvndDotcontentfulDotmanagementDotv1Plussignjson | (`applicationSlashvndDotcontentfulDotmanagementDotv1PlussignjsonSemicolon charsetEqualssignutf-8`) | applicationSlashjson | (`applicationSlashjsonSemicolon charsetEqualssignutf-8`) | `applicationSlashx-www-form-urlencoded` | (`applicationSlashx-www-form-urlencodedSemicolon charsetEqualssignutf-8`)
-      ] = js.native
+      ] = js.undefined
     
-    var includeContentLength: js.UndefOr[Boolean | Null] = js.native
+    var includeContentLength: js.UndefOr[Boolean | Null] = js.undefined
     
-    var method: js.UndefOr[Null | POST | GET | PUT | PATCH | DELETE] = js.native
+    var method: js.UndefOr[Null | POST | GET | PUT | PATCH | DELETE] = js.undefined
   }
   object WebhookTransformation {
     

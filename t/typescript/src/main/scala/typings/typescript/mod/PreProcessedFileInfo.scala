@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreProcessedFileInfo extends StObject {
   
-  var ambientExternalModules: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var ambientExternalModules: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var importedFiles: js.Array[FileReference] = js.native
+  var importedFiles: js.Array[FileReference]
   
-  var isLibFile: Boolean = js.native
+  var isLibFile: Boolean
   
-  var libReferenceDirectives: js.Array[FileReference] = js.native
+  var libReferenceDirectives: js.Array[FileReference]
   
-  var referencedFiles: js.Array[FileReference] = js.native
+  var referencedFiles: js.Array[FileReference]
   
-  var typeReferenceDirectives: js.Array[FileReference] = js.native
+  var typeReferenceDirectives: js.Array[FileReference]
 }
 object PreProcessedFileInfo {
   

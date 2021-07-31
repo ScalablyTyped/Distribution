@@ -2,15 +2,13 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclSRPGroup extends StObject {
   
-  var N: BigNumber = js.native
+  var N: BigNumber
   
-  var g: BigNumber = js.native
+  var g: BigNumber
 }
 object SjclSRPGroup {
   

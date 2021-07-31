@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RtmpOutputSettings extends StObject {
   
   /**
     * If set to verifyAuthenticity, verify the tls certificate chain to a trusted Certificate Authority (CA).  This will cause rtmps outputs with self-signed certificates to fail.
     */
-  var CertificateMode: js.UndefOr[RtmpOutputCertificateMode] = js.native
+  var CertificateMode: js.UndefOr[RtmpOutputCertificateMode] = js.undefined
   
   /**
     * Number of seconds to wait before retrying a connection to the Flash Media server if the connection is lost.
     */
-  var ConnectionRetryInterval: js.UndefOr[integerMin1] = js.native
+  var ConnectionRetryInterval: js.UndefOr[integerMin1] = js.undefined
   
   /**
     * The RTMP endpoint excluding the stream name (eg. rtmp://host/appname). For connection to Akamai, a username and password must be supplied. URI fields accept format identifiers.
     */
-  var Destination: OutputLocationRef = js.native
+  var Destination: OutputLocationRef
   
   /**
     * Number of retry attempts.
     */
-  var NumRetries: js.UndefOr[integerMin0] = js.native
+  var NumRetries: js.UndefOr[integerMin0] = js.undefined
 }
 object RtmpOutputSettings {
   

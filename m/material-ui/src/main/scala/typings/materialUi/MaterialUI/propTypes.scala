@@ -3,7 +3,6 @@ package typings.materialUi.MaterialUI
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propTypes {
@@ -100,12 +99,11 @@ object propTypes {
     def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
   }
   
-  @js.native
   trait origin extends StObject {
     
-    var horizontal: typings.materialUi.MaterialUI.propTypes.horizontal = js.native
+    var horizontal: typings.materialUi.MaterialUI.propTypes.horizontal
     
-    var vertical: typings.materialUi.MaterialUI.propTypes.vertical = js.native
+    var vertical: typings.materialUi.MaterialUI.propTypes.vertical
   }
   object origin {
     
@@ -144,24 +142,23 @@ object propTypes {
     def right: typings.materialUi.materialUiStrings.right = "right".asInstanceOf[typings.materialUi.materialUiStrings.right]
   }
   
-  @js.native
   trait utils extends StObject {
     
-    def addDays(date: Date, days: Double): Date = js.native
+    def addDays(date: Date, days: Double): Date
     
-    def addMonths(date: Date, months: Double): Date = js.native
+    def addMonths(date: Date, months: Double): Date
     
-    def addYears(date: Date, years: Double): Date = js.native
+    def addYears(date: Date, years: Double): Date
     
-    def getFirstDayOfMonth(date: Date): Date = js.native
+    def getFirstDayOfMonth(date: Date): Date
     
-    def getWeekArray(date: Date, firstDayOfWeek: Double): js.Array[js.Array[Date | Null]] = js.native
+    def getWeekArray(date: Date, firstDayOfWeek: Double): js.Array[js.Array[Date | Null]]
     
-    def getYear(date: Date): Double = js.native
+    def getYear(date: Date): Double
     
-    def monthDiff(date1: Date, date2: Date): Double = js.native
+    def monthDiff(date1: Date, date2: Date): Double
     
-    def setYear(date: Date, year: Double): Date = js.native
+    def setYear(date: Date, year: Double): Date
   }
   object utils {
     

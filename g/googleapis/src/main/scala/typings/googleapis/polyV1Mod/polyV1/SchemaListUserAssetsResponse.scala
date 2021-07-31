@@ -2,13 +2,11 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response message from a request to list.
   */
-@js.native
 trait SchemaListUserAssetsResponse extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaListUserAssetsResponse extends StObject {
     * that there are no more pages. To get the next page, submit the same
     * request specifying this value as the page_token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of assets in the list, without pagination.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of UserAssets matching the request.
     */
-  var userAssets: js.UndefOr[js.Array[SchemaUserAsset]] = js.native
+  var userAssets: js.UndefOr[js.Array[SchemaUserAsset]] = js.undefined
 }
 object SchemaListUserAssetsResponse {
   

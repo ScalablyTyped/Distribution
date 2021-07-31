@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait DateTimeInputType extends StObject
 object DateTimeInputType extends StObject {
   
   @js.native
-  sealed trait Date extends DateTimeInputType
+  sealed trait Date
+    extends StObject
+       with DateTimeInputType
   
   @js.native
-  sealed trait DateTime extends DateTimeInputType
+  sealed trait DateTime
+    extends StObject
+       with DateTimeInputType
   
   @js.native
-  sealed trait Time extends DateTimeInputType
+  sealed trait Time
+    extends StObject
+       with DateTimeInputType
 }

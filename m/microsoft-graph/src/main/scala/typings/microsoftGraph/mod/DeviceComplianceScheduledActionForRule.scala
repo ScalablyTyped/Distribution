@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceComplianceScheduledActionForRule extends Entity {
+trait DeviceComplianceScheduledActionForRule
+  extends StObject
+     with Entity {
   
   // Name of the rule which this scheduled action applies to.
-  var ruleName: js.UndefOr[NullableOption[String]] = js.native
+  var ruleName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of scheduled action configurations for this compliance policy.
-  var scheduledActionConfigurations: js.UndefOr[NullableOption[js.Array[DeviceComplianceActionItem]]] = js.native
+  var scheduledActionConfigurations: js.UndefOr[NullableOption[js.Array[DeviceComplianceActionItem]]] = js.undefined
 }
 object DeviceComplianceScheduledActionForRule {
   

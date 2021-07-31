@@ -11,8 +11,8 @@ Typings are for version 1.0
 | Full name          | mockjs |
 | Keywords           | mock, mockJSON, mockAjax |
 | # releases         | 2 |
-| # dependents       | 720 |
-| # downloads        | 1743267 |
+| # dependents       | 881 |
+| # downloads        | 2009605 |
 | # stars            | 19 |
 
 ## Links

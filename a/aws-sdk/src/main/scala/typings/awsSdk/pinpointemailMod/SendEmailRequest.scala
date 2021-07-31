@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendEmailRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to use when sending the email.
     */
-  var ConfigurationSetName: js.UndefOr[typings.awsSdk.pinpointemailMod.ConfigurationSetName] = js.native
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.pinpointemailMod.ConfigurationSetName] = js.undefined
   
   /**
     * An object that contains the body of the message. You can send either a Simple message or a Raw message.
     */
-  var Content: EmailContent = js.native
+  var Content: EmailContent
   
   /**
     * An object that contains the recipients of the email message.
     */
-  var Destination: typings.awsSdk.pinpointemailMod.Destination = js.native
+  var Destination: typings.awsSdk.pinpointemailMod.Destination
   
   /**
     * A list of tags, in the form of name/value pairs, to apply to an email that you send using the SendEmail operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events. 
     */
-  var EmailTags: js.UndefOr[MessageTagList] = js.native
+  var EmailTags: js.UndefOr[MessageTagList] = js.undefined
   
   /**
     * The address that Amazon Pinpoint should send bounce and complaint notifications to.
     */
-  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The email address that you want to use as the "From" address for the email. The address that you specify has to be verified. 
     */
-  var FromEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The "Reply-to" email addresses for the message. When the recipient replies to the message, each Reply-to address receives the reply.
     */
-  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.native
+  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.undefined
 }
 object SendEmailRequest {
   

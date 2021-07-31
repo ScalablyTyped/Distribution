@@ -4,30 +4,30 @@ import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFloating extends IBase {
+trait IFloating
+  extends StObject
+     with IBase {
   
   /** [Method] Center this Component in its container
     * @returns Ext.Component this
     */
-  var center: js.UndefOr[js.Function0[IComponent]] = js.native
+  var center: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[Boolean] = js.native
+  var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Moves this floating Component into a constrain region
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
     */
-  var doConstrain: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], Unit]] = js.native
+  var doConstrain: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var focusOnToFront: js.UndefOr[Boolean] = js.native
+  var focusOnToFront: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] This method is called internally by Ext ZIndexManager to signal that a floating Component has either been moved to th
     * @param active Boolean True to activate the Component, false to deactivate it.
@@ -35,24 +35,24 @@ trait IFloating extends IBase {
     */
   var setActive: js.UndefOr[
     js.Function2[/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var shadow: js.UndefOr[js.Any] = js.native
+  var shadow: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var shadowOffset: js.UndefOr[Double] = js.native
+  var shadowOffset: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sends this Component to the back of lower z index than any other visible windows
     * @returns Ext.Component this
     */
-  var toBack: js.UndefOr[js.Function0[IComponent]] = js.native
+  var toBack: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Brings this floating Component to the front of any other visible floating Components managed by the same ZIndexManag
     * @param preventFocus Boolean Specify true to prevent the Component from being focused.
     * @returns Ext.Component this
     */
-  var toFront: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[Boolean], IComponent]] = js.native
+  var toFront: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[Boolean], IComponent]] = js.undefined
 }
 object IFloating {
   

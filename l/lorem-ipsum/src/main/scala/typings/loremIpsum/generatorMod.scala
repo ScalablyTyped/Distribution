@@ -3,14 +3,15 @@ package typings.loremIpsum
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorMod {
   
   @JSImport("lorem-ipsum/types/src/lib/generator", JSImport.Default)
   @js.native
-  class default () extends Generator {
+  class default ()
+    extends StObject
+       with Generator {
     def this(hasSentencesPerParagraphWordsPerSentenceRandomSeedWords: IGeneratorOptions) = this()
   }
   
@@ -41,12 +42,11 @@ object generatorMod {
     var wordsPerSentence: IBounds = js.native
   }
   
-  @js.native
   trait IBounds extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object IBounds {
     
@@ -67,18 +67,17 @@ object generatorMod {
     }
   }
   
-  @js.native
   trait IGeneratorOptions extends StObject {
     
-    var random: js.UndefOr[IPrng] = js.native
+    var random: js.UndefOr[IPrng] = js.undefined
     
-    var seed: js.UndefOr[String] = js.native
+    var seed: js.UndefOr[String] = js.undefined
     
-    var sentencesPerParagraph: js.UndefOr[IBounds] = js.native
+    var sentencesPerParagraph: js.UndefOr[IBounds] = js.undefined
     
-    var words: js.UndefOr[js.Array[String]] = js.native
+    var words: js.UndefOr[js.Array[String]] = js.undefined
     
-    var wordsPerSentence: js.UndefOr[IBounds] = js.native
+    var wordsPerSentence: js.UndefOr[IBounds] = js.undefined
   }
   object IGeneratorOptions {
     
@@ -126,10 +125,9 @@ object generatorMod {
     }
   }
   
-  @js.native
   trait IMath extends StObject {
     
-    var seedrandom: ISeedRandom = js.native
+    var seedrandom: ISeedRandom
   }
   object IMath {
     

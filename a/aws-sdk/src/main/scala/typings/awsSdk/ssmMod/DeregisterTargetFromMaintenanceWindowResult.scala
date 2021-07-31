@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterTargetFromMaintenanceWindowResult extends StObject {
   
   /**
     * The ID of the maintenance window the target was removed from.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   
   /**
     * The ID of the removed target definition.
     */
-  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.native
+  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.undefined
 }
 object DeregisterTargetFromMaintenanceWindowResult {
   

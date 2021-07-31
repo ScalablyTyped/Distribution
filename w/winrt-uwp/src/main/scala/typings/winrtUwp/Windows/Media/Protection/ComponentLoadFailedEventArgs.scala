@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Protection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for a MediaProtectionManager object when the load of binary data fails. */
-@js.native
 trait ComponentLoadFailedEventArgs extends StObject {
   
   /** Returns an indication of the completion of the event. */
-  var completion: MediaProtectionServiceCompletion = js.native
+  var completion: MediaProtectionServiceCompletion
   
   /** Returns a list of components in the RevocationAndRenewalInformation object that need to be revoked and renewed with updated components. */
-  var information: RevocationAndRenewalInformation = js.native
+  var information: RevocationAndRenewalInformation
 }
 object ComponentLoadFailedEventArgs {
   

@@ -2,29 +2,27 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartPointOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[ChartColor] = js.native
+  var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor] = js.native
+  var borderColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var hitRadius: js.UndefOr[Double] = js.native
+  var hitRadius: js.UndefOr[Double] = js.undefined
   
-  var hoverBorderWidth: js.UndefOr[Double] = js.native
+  var hoverBorderWidth: js.UndefOr[Double] = js.undefined
   
-  var hoverRadius: js.UndefOr[Double] = js.native
+  var hoverRadius: js.UndefOr[Double] = js.undefined
   
-  var pointStyle: js.UndefOr[PointStyle] = js.native
+  var pointStyle: js.UndefOr[PointStyle] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
 }
 object ChartPointOptions {
   

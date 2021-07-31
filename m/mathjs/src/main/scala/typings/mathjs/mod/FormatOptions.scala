@@ -6,10 +6,8 @@ import typings.mathjs.mathjsStrings.exponential
 import typings.mathjs.mathjsStrings.fixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatOptions extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait FormatOptions extends StObject {
     * format(fraction(1, 3)) will output '1/3' when 'ratio' is configured,
     * and will output 0.(3) when 'decimal' is configured.
     */
-  var fraction: js.UndefOr[String] = js.native
+  var fraction: js.UndefOr[String] = js.undefined
   
   /**
     * Exponent determining the lower boundary for formatting a value with
     * an exponent when notation='auto. Default value is -3.
     */
-  var lowerExp: js.UndefOr[Double] = js.native
+  var lowerExp: js.UndefOr[Double] = js.undefined
   
   /**
     * Number notation. Choose from: 'fixed' Always use regular number
@@ -34,7 +32,7 @@ trait FormatOptions extends StObject {
     * elsewhere. Lower bound is included, upper bound is excluded. For
     * example '123.4' and '1.4e7'.
     */
-  var notation: js.UndefOr[fixed | exponential | engineering | auto] = js.native
+  var notation: js.UndefOr[fixed | exponential | engineering | auto] = js.undefined
   
   /**
     * A number between 0 and 16 to round the digits of the number. In case
@@ -43,13 +41,13 @@ trait FormatOptions extends StObject {
     * case of notation 'fixed', precision defines the number of significant
     * digits after the decimal point, and is 0 by default.
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Exponent determining the upper boundary for formatting a value with
     * an exponent when notation='auto. Default value is 5.
     */
-  var upperExp: js.UndefOr[Double] = js.native
+  var upperExp: js.UndefOr[Double] = js.undefined
 }
 object FormatOptions {
   

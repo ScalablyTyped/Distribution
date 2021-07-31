@@ -2,27 +2,25 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a customer-supplied encryption key
   */
-@js.native
 trait SchemaCustomerEncryptionKey extends StObject {
   
   /**
     * The name of the encryption key that is stored in Google Cloud KMS.
     */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
-  var kmsKeyServiceAccount: js.UndefOr[String] = js.native
+  var kmsKeyServiceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648
     * base64 to either encrypt or decrypt this resource.
     */
-  var rawKey: js.UndefOr[String] = js.native
+  var rawKey: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
@@ -34,13 +32,13 @@ trait SchemaCustomerEncryptionKey extends StObject {
     * certificate provided by Google at:
     * https://cloud-certs.storage.googleapis.com/google-cloud-csek-ingress.pem
     */
-  var rsaEncryptedKey: js.UndefOr[String] = js.native
+  var rsaEncryptedKey: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The RFC 4648 base64 encoded SHA-256 hash of the
     * customer-supplied encryption key that protects this resource.
     */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerEncryptionKey {
   

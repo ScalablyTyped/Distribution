@@ -4,34 +4,34 @@ import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetMergeConflictsOutputMod {
   
-  @js.native
-  trait GetMergeConflictsOutput extends OutputTypesUnion {
+  trait GetMergeConflictsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The commit ID of the destination commit specifier that was used in the merge evaluation.</p>
       */
-    var destinationCommitId: String = js.native
+    var destinationCommitId: String
     
     /**
       * <p>A Boolean value that indicates whether the code is mergable by the specified merge option.</p>
       */
-    var mergeable: Boolean = js.native
+    var mergeable: Boolean
     
     /**
       * <p>The commit ID of the source commit specifier that was used in the merge evaluation.</p>
       */
-    var sourceCommitId: String = js.native
+    var sourceCommitId: String
   }
   object GetMergeConflictsOutput {
     

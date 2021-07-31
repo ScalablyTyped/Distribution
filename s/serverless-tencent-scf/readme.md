@@ -10,9 +10,9 @@ Provider plugin for the Serverless Framework v1.x which adds support for Tencent
 | ------------------ | :-------------: |
 | Full name          | serverless-tencent-scf |
 | Keywords           | serverless, serverless framework, serverless applications, serverless modules, tencent cloud functions, iot, internet of things, serverless.com |
-| # releases         | 37 |
+| # releases         | 34 |
 | # dependents       | 2 |
-| # downloads        | 9858 |
+| # downloads        | 20188 |
 | # stars            | 0 |
 
 ## Links

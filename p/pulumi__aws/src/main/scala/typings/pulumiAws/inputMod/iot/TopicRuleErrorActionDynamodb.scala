@@ -3,61 +3,59 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionDynamodb extends StObject {
   
   /**
     * The hash key name.
     */
-  var hashKeyField: Input[String] = js.native
+  var hashKeyField: Input[String]
   
   /**
     * The hash key type. Valid values are "STRING" or "NUMBER".
     */
-  var hashKeyType: js.UndefOr[Input[String]] = js.native
+  var hashKeyType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The hash key value.
     */
-  var hashKeyValue: Input[String] = js.native
+  var hashKeyValue: Input[String]
   
   /**
     * The operation. Valid values are "INSERT", "UPDATE", or "DELETE".
     */
-  var operation: js.UndefOr[Input[String]] = js.native
+  var operation: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The action payload.
     */
-  var payloadField: js.UndefOr[Input[String]] = js.native
+  var payloadField: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The range key name.
     */
-  var rangeKeyField: js.UndefOr[Input[String]] = js.native
+  var rangeKeyField: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The range key type. Valid values are "STRING" or "NUMBER".
     */
-  var rangeKeyType: js.UndefOr[Input[String]] = js.native
+  var rangeKeyType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The range key value.
     */
-  var rangeKeyValue: js.UndefOr[Input[String]] = js.native
+  var rangeKeyValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to the DynamoDB table.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * The name of the DynamoDB table.
     */
-  var tableName: Input[String] = js.native
+  var tableName: Input[String]
 }
 object TopicRuleErrorActionDynamodb {
   

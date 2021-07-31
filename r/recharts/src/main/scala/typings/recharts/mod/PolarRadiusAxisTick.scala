@@ -2,15 +2,13 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolarRadiusAxisTick extends StObject {
   
-  var coordinate: Double = js.native
+  var coordinate: Double
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object PolarRadiusAxisTick {
   

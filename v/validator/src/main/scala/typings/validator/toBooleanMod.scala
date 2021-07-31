@@ -2,10 +2,13 @@ package typings.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toBooleanMod {
+  
+  @JSImport("validator/lib/toBoolean", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Convert the input string to a boolean.
@@ -13,10 +16,8 @@ object toBooleanMod {
     *
     * @param [strict=false] - in `strict` mode, only `'1'` and `'true'` return `true`.
     */
-  @JSImport("validator/lib/toBoolean", JSImport.Default)
-  @js.native
-  def default(input: String): Boolean = js.native
-  @JSImport("validator/lib/toBoolean", JSImport.Default)
-  @js.native
-  def default(input: String, strict: Boolean): Boolean = js.native
+  @scala.inline
+  def default(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(input: String, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

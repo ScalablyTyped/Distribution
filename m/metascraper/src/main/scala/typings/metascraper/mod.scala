@@ -3,23 +3,24 @@ package typings.metascraper
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(rules: js.Array[Rule]): js.Function1[/* options */ Options, js.Promise[Record[String, String]]] = ^.asInstanceOf[js.Dynamic].apply(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ Options, js.Promise[Record[String, String]]]]
+  
   @JSImport("metascraper", JSImport.Namespace)
   @js.native
-  def apply(rules: js.Array[Rule]): js.Function1[/* options */ Options, js.Promise[Record[String, String]]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var html: String = js.native
+    var html: String
     
-    var rules: js.UndefOr[js.Array[Rule]] = js.native
+    var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     

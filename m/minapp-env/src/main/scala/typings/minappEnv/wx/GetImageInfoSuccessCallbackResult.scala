@@ -10,14 +10,12 @@ import typings.minappEnv.minappEnvStrings.right
 import typings.minappEnv.minappEnvStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImageInfoSuccessCallbackResult extends StObject {
   
   /** 图片原始高度，单位px。不考虑旋转。 */
-  var height: Double = js.native
+  var height: Double
   
   /** [拍照时设备方向](http://sylvana.net/jpegcrop/exif_orientation.html)
     *
@@ -32,18 +30,18 @@ trait GetImageInfoSuccessCallbackResult extends StObject {
     * - 'left': 逆时针旋转90度，对应 Exif 中的 8;
     *
     * 最低基础库： `1.9.90` */
-  var orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left = js.native
+  var orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left
   
   /** 图片的本地路径 */
-  var path: String = js.native
+  var path: String
   
   /** 图片格式
     *
     * 最低基础库： `1.9.90` */
-  var `type`: String = js.native
+  var `type`: String
   
   /** 图片原始宽度，单位px。不考虑旋转。 */
-  var width: Double = js.native
+  var width: Double
 }
 object GetImageInfoSuccessCallbackResult {
   

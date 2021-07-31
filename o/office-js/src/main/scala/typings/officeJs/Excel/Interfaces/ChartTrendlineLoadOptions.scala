@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait ChartTrendlineLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var backwardPeriod: js.UndefOr[Boolean] = js.native
+  var backwardPeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var format: js.UndefOr[ChartTrendlineFormatLoadOptions] = js.native
+  var format: js.UndefOr[ChartTrendlineFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var forwardPeriod: js.UndefOr[Boolean] = js.native
+  var forwardPeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var intercept: js.UndefOr[Boolean] = js.native
+  var intercept: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var label: js.UndefOr[ChartTrendlineLabelLoadOptions] = js.native
+  var label: js.UndefOr[ChartTrendlineLabelLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var movingAveragePeriod: js.UndefOr[Boolean] = js.native
+  var movingAveragePeriod: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var polynomialOrder: js.UndefOr[Boolean] = js.native
+  var polynomialOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showEquation: js.UndefOr[Boolean] = js.native
+  var showEquation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showRSquared: js.UndefOr[Boolean] = js.native
+  var showRSquared: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait ChartTrendlineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
 }
 object ChartTrendlineLoadOptions {
   

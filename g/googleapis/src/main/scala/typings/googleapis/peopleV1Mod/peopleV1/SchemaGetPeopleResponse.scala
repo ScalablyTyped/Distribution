@@ -2,16 +2,14 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetPeopleResponse extends StObject {
   
   /**
     * The response for each requested resource name.
     */
-  var responses: js.UndefOr[js.Array[SchemaPersonResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaPersonResponse]] = js.undefined
 }
 object SchemaGetPeopleResponse {
   

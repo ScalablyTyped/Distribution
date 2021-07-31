@@ -2,18 +2,16 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The patch service account request.
   */
-@js.native
 trait SchemaPatchServiceAccountRequest extends StObject {
   
-  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
   
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaPatchServiceAccountRequest {
   

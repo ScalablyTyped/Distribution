@@ -494,7 +494,6 @@ import typings.std.Window
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3 {
@@ -561,1522 +560,1394 @@ object d3 {
   @scala.inline
   def Voronoi_=(x: Instantiable0[typings.d3.mod.Voronoi[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Voronoi")(x.asInstanceOf[js.Any])
   
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("plotly.js", "d3.active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
   
-  @JSImport("plotly.js", "d3.arc")
-  @js.native
-  def arc(): Arc_[_, DefaultArcObject] = js.native
-  @JSImport("plotly.js", "d3.arc")
-  @js.native
-  def arc_Datum[Datum](): Arc_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.arc")
-  @js.native
-  def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = js.native
+  @scala.inline
+  def arc(): Arc_[js.Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, DefaultArcObject]]
   
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.UndefOr[scala.Nothing],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: Double,
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double, y1: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y0: js.UndefOr[scala.Nothing],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](
-    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y0: js.UndefOr[scala.Nothing],
-    y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  @scala.inline
+  def arc_Datum[Datum](): Arc_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, Datum]]
+  
+  @scala.inline
+  def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[This, Datum]]
+  
+  @scala.inline
+  def area[Datum](): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")().asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any]).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y0: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: Double,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: Double,
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
-    x: Double,
-    y0: js.UndefOr[scala.Nothing],
+    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y0: Unit,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: Double, y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: Double, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y0: Unit,
+    y1: Double
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any]).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: Double, y0: Double): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: Double,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("plotly.js", "d3.area")
-  @js.native
-  def area[Datum](x: Double, y0: Double, y1: Double): Area_[Datum] = js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Double, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Double,
+    y0: Unit,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Unit, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y1: Double
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: Double,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Double, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: Unit,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Unit, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
   
-  @JSImport("plotly.js", "d3.areaRadial")
-  @js.native
-  def areaRadial(): AreaRadial_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.areaRadial")
-  @js.native
-  def areaRadial_Datum[Datum](): AreaRadial_[Datum] = js.native
+  @scala.inline
+  def areaRadial(): AreaRadial_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("areaRadial")().asInstanceOf[AreaRadial_[js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.ascending")
-  @js.native
-  def ascending(): Double = js.native
-  @JSImport("plotly.js", "d3.ascending")
-  @js.native
-  def ascending(a: js.UndefOr[Primitive], b: Primitive): Double = js.native
-  @JSImport("plotly.js", "d3.ascending")
-  @js.native
-  def ascending(a: Primitive): Double = js.native
+  @scala.inline
+  def areaRadial_Datum[Datum](): AreaRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("areaRadial")().asInstanceOf[AreaRadial_[Datum]]
   
-  @JSImport("plotly.js", "d3.autoType")
-  @js.native
+  @scala.inline
+  def ascending(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ascending")().asInstanceOf[Double]
+  @scala.inline
+  def ascending(a: Unit, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def ascending(a: Primitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def ascending(a: Primitive, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
-  `object`: js.Array[String]): ParsedRow = js.native
-  @JSImport("plotly.js", "d3.autoType")
-  @js.native
+  `object`: js.Array[String]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
+  @scala.inline
   def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
-  `object`: DSVRowString[Columns]): ParsedRow = js.native
+  `object`: DSVRowString[Columns]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
   
-  @JSImport("plotly.js", "d3.axisBottom")
-  @js.native
-  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = js.native
+  @scala.inline
+  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.d3Axis.mod.Axis[Domain]]
   
-  @JSImport("plotly.js", "d3.axisLeft")
-  @js.native
-  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = js.native
+  @scala.inline
+  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.d3Axis.mod.Axis[Domain]]
   
-  @JSImport("plotly.js", "d3.axisRight")
-  @js.native
-  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = js.native
+  @scala.inline
+  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisRight")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.d3Axis.mod.Axis[Domain]]
   
-  @JSImport("plotly.js", "d3.axisTop")
-  @js.native
-  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = js.native
+  @scala.inline
+  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): typings.d3Axis.mod.Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisTop")(scale.asInstanceOf[js.Any]).asInstanceOf[typings.d3Axis.mod.Axis[Domain]]
   
-  @JSImport("plotly.js", "d3.bin")
-  @js.native
-  def bin(): HistogramGeneratorNumber[Double, Double] = js.native
+  @scala.inline
+  def bin(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
+  
+  @scala.inline
+  def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+  
+  @scala.inline
+  def `bin_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
   
   @JSImport("plotly.js", "d3.bisect")
   @js.native
   val bisect: Typeofbisect = js.native
   
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[String], x: String): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[String], x: String, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Double], x: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Double], x: Double, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Date], x: Date): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectCenter")
-  @js.native
-  def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+  @scala.inline
+  def bisectCenter(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectCenter(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[String], x: String): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[String], x: String, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Double], x: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Double], x: Double, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Date], x: Date): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectLeft")
-  @js.native
-  def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+  @scala.inline
+  def bisectLeft(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectLeft(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[String], x: String): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[String], x: String, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[String], x: String, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Double], x: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Double], x: Double, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Double], x: Double, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Date], x: Date): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Date], x: Date, lo: js.UndefOr[scala.Nothing], hi: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Date], x: Date, lo: Double): Double = js.native
-  @JSImport("plotly.js", "d3.bisectRight")
-  @js.native
-  def bisectRight(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = js.native
+  @scala.inline
+  def bisectRight(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def bisectRight(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.bisector")
-  @js.native
-  def bisector[T, U](accessor: js.Function1[/* x */ T, U]): Bisector_[T, U] = js.native
-  @JSImport("plotly.js", "d3.bisector")
-  @js.native
-  def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, Double]): Bisector_[T, U] = js.native
+  @scala.inline
+  def bisector[T, U](accessor: js.Function1[/* x */ T, U]): Bisector_[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("bisector")(accessor.asInstanceOf[js.Any]).asInstanceOf[Bisector_[T, U]]
+  @scala.inline
+  def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, Double]): Bisector_[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("bisector")(comparator.asInstanceOf[js.Any]).asInstanceOf[Bisector_[T, U]]
   
-  @JSImport("plotly.js", "d3.blob")
-  @js.native
-  def blob(url: String): js.Promise[Blob] = js.native
-  @JSImport("plotly.js", "d3.blob")
-  @js.native
-  def blob(url: String, init: RequestInit): js.Promise[Blob] = js.native
+  @scala.inline
+  def blob(url: String): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  @scala.inline
+  def blob(url: String, init: RequestInit): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("blob")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   
-  @JSImport("plotly.js", "d3.brush")
-  @js.native
-  def brush[Datum](): BrushBehavior[Datum] = js.native
+  @scala.inline
+  def brush[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brush")().asInstanceOf[BrushBehavior[Datum]]
   
-  @JSImport("plotly.js", "d3.brushSelection")
-  @js.native
-  def brushSelection(node: SVGGElement): BrushSelection_ | Null = js.native
+  @scala.inline
+  def brushSelection(node: SVGGElement): BrushSelection_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("brushSelection")(node.asInstanceOf[js.Any]).asInstanceOf[BrushSelection_ | Null]
   
-  @JSImport("plotly.js", "d3.brushX")
-  @js.native
-  def brushX[Datum](): BrushBehavior[Datum] = js.native
+  @scala.inline
+  def brushX[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushX")().asInstanceOf[BrushBehavior[Datum]]
   
-  @JSImport("plotly.js", "d3.brushY")
-  @js.native
-  def brushY[Datum](): BrushBehavior[Datum] = js.native
+  @scala.inline
+  def brushY[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushY")().asInstanceOf[BrushBehavior[Datum]]
   
-  @JSImport("plotly.js", "d3.buffer")
-  @js.native
-  def buffer(url: String): js.Promise[ArrayBuffer] = js.native
-  @JSImport("plotly.js", "d3.buffer")
-  @js.native
-  def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = js.native
+  @scala.inline
+  def buffer(url: String): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  @scala.inline
+  def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
   
-  @JSImport("plotly.js", "d3.chord")
-  @js.native
-  def chord(): ChordLayout = js.native
+  @scala.inline
+  def chord(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chord")().asInstanceOf[ChordLayout]
   
-  @JSImport("plotly.js", "d3.chordDirected")
-  @js.native
-  def chordDirected(): ChordLayout = js.native
+  @scala.inline
+  def chordDirected(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordDirected")().asInstanceOf[ChordLayout]
   
-  @JSImport("plotly.js", "d3.chordTranspose")
-  @js.native
-  def chordTranspose(): ChordLayout = js.native
+  @scala.inline
+  def chordTranspose(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordTranspose")().asInstanceOf[ChordLayout]
   
-  @JSImport("plotly.js", "d3.cluster")
-  @js.native
-  def cluster[Datum](): ClusterLayout[Datum] = js.native
+  @scala.inline
+  def cluster[Datum](): ClusterLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("cluster")().asInstanceOf[ClusterLayout[Datum]]
   
   @JSImport("plotly.js", "d3.color")
   @js.native
   val color: ColorFactory = js.native
-  @JSImport("plotly.js", "d3.color")
-  @js.native
-  def color(color: ColorCommonInstance): RGBColor | HSLColor = js.native
+  @scala.inline
+  def color(color: ColorCommonInstance): RGBColor | HSLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[RGBColor | HSLColor]
   /**
     * Converts the provided color instance and returns an RGB or HSL color.
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.color")
-  @js.native
-  def color(color: ColorSpaceObject): RGBColor | HSLColor = js.native
+  @scala.inline
+  def color(color: ColorSpaceObject): RGBColor | HSLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[RGBColor | HSLColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an RGB or HSL color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.color")
-  @js.native
-  def color(cssColorSpecifier: String): RGBColor | HSLColor | Null = js.native
+  @scala.inline
+  def color(cssColorSpecifier: String): RGBColor | HSLColor | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[RGBColor | HSLColor | Null]
   
-  @JSImport("plotly.js", "d3.contourDensity")
-  @js.native
-  def contourDensity[Datum](): ContourDensity_[Datum] = js.native
+  @scala.inline
+  def contourDensity[Datum](): ContourDensity_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("contourDensity")().asInstanceOf[ContourDensity_[Datum]]
   
-  @JSImport("plotly.js", "d3.contours")
-  @js.native
-  def contours(): Contours_ = js.native
+  @scala.inline
+  def contours(): Contours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("contours")().asInstanceOf[Contours_]
   
-  @JSImport("plotly.js", "d3.count")
-  @js.native
-  def count[TObject](iterable: Iterable[TObject]): Double = js.native
-  @JSImport("plotly.js", "d3.count")
-  @js.native
+  @scala.inline
+  def count[TObject](iterable: Iterable[TObject]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def count[TObject](
     iterable: Iterable[TObject],
     accessor: js.Function2[/* a */ TObject, /* b */ TObject, js.UndefOr[Double | Null]]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_a(name: a): Selection_[HTMLAnchorElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_abbr(name: abbr): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_address(name: address): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_applet(name: applet): Selection_[HTMLAppletElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_area(name: area): Selection_[HTMLAreaElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_article(name: article): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_aside(name: aside): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_audio(name: audio): Selection_[HTMLAudioElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_b(name: b_): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_base(name: base): Selection_[HTMLBaseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_basefont(name: basefont): Selection_[HTMLBaseFontElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_bdi(name: bdi): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_bdo(name: bdo): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_blockquote(name: blockquote): Selection_[HTMLQuoteElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_body(name: body): Selection_[HTMLBodyElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_br(name: br): Selection_[HTMLBRElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_button(name: button): Selection_[HTMLButtonElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_canvas(name: canvas): Selection_[HTMLCanvasElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_caption(name: caption): Selection_[HTMLTableCaptionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_circle(name: circle): Selection_[SVGCircleElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_cite(name: cite): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_clipPath(name: clipPath): Selection_[SVGClipPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_code(name: code): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_col(name: col): Selection_[HTMLTableColElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_colgroup(name: colgroup): Selection_[HTMLTableColElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_data(name: data): Selection_[HTMLDataElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_datalist(name: datalist): Selection_[HTMLDataListElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dd(name: dd): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_defs(name: defs): Selection_[SVGDefsElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_del(name: del): Selection_[HTMLModElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_desc(name: desc): Selection_[SVGDescElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_details(name: details): Selection_[HTMLDetailsElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dfn(name: dfn): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dialog(name: dialog): Selection_[HTMLDialogElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dir(name: dir): Selection_[HTMLDirectoryElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_div(name: div): Selection_[HTMLDivElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dl(name: dl): Selection_[HTMLDListElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_dt(name: dt): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_ellipse(name: ellipse): Selection_[SVGEllipseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_em(name: em): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_embed(name: embed): Selection_[HTMLEmbedElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feBlend(name: feBlend): Selection_[SVGFEBlendElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feColorMatrix(name: feColorMatrix): Selection_[SVGFEColorMatrixElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feComponentTransfer(name: feComponentTransfer): Selection_[
-    SVGFEComponentTransferElement, 
-    js.UndefOr[scala.Nothing], 
-    Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feComposite(name: feComposite): Selection_[SVGFECompositeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feConvolveMatrix(name: feConvolveMatrix): Selection_[SVGFEConvolveMatrixElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feDiffuseLighting(name: feDiffuseLighting): Selection_[
-    SVGFEDiffuseLightingElement, 
-    js.UndefOr[scala.Nothing], 
-    Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feDisplacementMap(name: feDisplacementMap): Selection_[
-    SVGFEDisplacementMapElement, 
-    js.UndefOr[scala.Nothing], 
-    Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feDistantLight(name: feDistantLight): Selection_[SVGFEDistantLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feFlood(name: feFlood): Selection_[SVGFEFloodElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feFuncA(name: feFuncA): Selection_[SVGFEFuncAElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feFuncB(name: feFuncB): Selection_[SVGFEFuncBElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feFuncG(name: feFuncG): Selection_[SVGFEFuncGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feFuncR(name: feFuncR): Selection_[SVGFEFuncRElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feGaussianBlur(name: feGaussianBlur): Selection_[SVGFEGaussianBlurElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feImage(name: feImage): Selection_[SVGFEImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feMerge(name: feMerge): Selection_[SVGFEMergeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feMergeNode(name: feMergeNode): Selection_[SVGFEMergeNodeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feMorphology(name: feMorphology): Selection_[SVGFEMorphologyElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feOffset(name: feOffset): Selection_[SVGFEOffsetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_fePointLight(name: fePointLight): Selection_[SVGFEPointLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feSpecularLighting(name: feSpecularLighting): Selection_[
-    SVGFESpecularLightingElement, 
-    js.UndefOr[scala.Nothing], 
-    Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feSpotLight(name: feSpotLight): Selection_[SVGFESpotLightElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feTile(name: feTile): Selection_[SVGFETileElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_feTurbulence(name: feTurbulence): Selection_[SVGFETurbulenceElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_fieldset(name: fieldset): Selection_[HTMLFieldSetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_figcaption(name: figcaption): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_figure(name: figure): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_filter(name: filter): Selection_[SVGFilterElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_font(name: font): Selection_[HTMLFontElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_footer(name: footer): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_foreignObject(name: foreignObject): Selection_[SVGForeignObjectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_form(name: form): Selection_[HTMLFormElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_frame(name: frame): Selection_[HTMLFrameElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_frameset(name: frameset): Selection_[HTMLFrameSetElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_g(name: g): Selection_[SVGGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h1(name: h1): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h2(name: h2): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h3(name: h3): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h4(name: h4): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h5(name: h5): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_h6(name: h6): Selection_[HTMLHeadingElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_head(name: head): Selection_[HTMLHeadElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_header(name: header): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_hgroup(name: hgroup): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_hr(name: hr): Selection_[HTMLHRElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_html(name: html): Selection_[HTMLHtmlElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_i(name: i): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_iframe(name: iframe): Selection_[HTMLIFrameElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_image(name: image): Selection_[SVGImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_img(name: img): Selection_[HTMLImageElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_input(name: input): Selection_[HTMLInputElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_ins(name: ins): Selection_[HTMLModElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_kbd(name: kbd): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_label(name: label): Selection_[HTMLLabelElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_legend(name: legend): Selection_[HTMLLegendElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_li(name: li): Selection_[HTMLLIElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_line(name: line): Selection_[SVGLineElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_linearGradient(name: linearGradient): Selection_[SVGLinearGradientElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_link(name: link): Selection_[HTMLLinkElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_main(name: main): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_map(name: map): Selection_[HTMLMapElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_mark(name: mark): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_marker(name: marker): Selection_[SVGMarkerElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_marquee(name: marquee): Selection_[HTMLMarqueeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_mask(name: mask): Selection_[SVGMaskElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_menu(name: menu): Selection_[HTMLMenuElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_meta(name: meta): Selection_[HTMLMetaElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_metadata(name: metadata): Selection_[SVGMetadataElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_meter(name: meter): Selection_[HTMLMeterElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_nav(name: nav): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_noscript(name: noscript): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_object(name: `object`): Selection_[HTMLObjectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_ol(name: ol): Selection_[HTMLOListElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_optgroup(name: optgroup): Selection_[HTMLOptGroupElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_option(name: option): Selection_[HTMLOptionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_output(name: output): Selection_[HTMLOutputElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_p(name: p): Selection_[HTMLParagraphElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_param(name: param): Selection_[HTMLParamElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_path(name: path): Selection_[SVGPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_pattern(name: pattern): Selection_[SVGPatternElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_picture(name: picture): Selection_[HTMLPictureElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_polygon(name: polygon): Selection_[SVGPolygonElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_polyline(name: polyline): Selection_[SVGPolylineElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_pre(name: pre): Selection_[HTMLPreElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_progress(name: progress): Selection_[HTMLProgressElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_q(name: q): Selection_[HTMLQuoteElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_radialGradient(name: radialGradient): Selection_[SVGRadialGradientElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_rect(name: rect): Selection_[SVGRectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_rp(name: rp): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_rt(name: rt): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_ruby(name: ruby): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_s(name: s): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_samp(name: samp): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_script(name: script): Selection_[HTMLScriptElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_section(name: section): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_select(name: select): Selection_[HTMLSelectElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_slot(name: slot): Selection_[HTMLSlotElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_small(name: small): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_source(name: source): Selection_[HTMLSourceElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_span(name: span): Selection_[HTMLSpanElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_stop(name: stop): Selection_[SVGStopElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_strong(name: strong): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_style(name: style): Selection_[HTMLStyleElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_sub(name: sub): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_summary(name: summary): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_sup(name: sup): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_svg(name: svg): Selection_[SVGSVGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_switch(name: switch): Selection_[SVGSwitchElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_symbol(name: symbol): Selection_[SVGSymbolElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_table(name: table): Selection_[HTMLTableElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_tbody(name: tbody): Selection_[HTMLTableSectionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_td(name: td): Selection_[HTMLTableDataCellElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_template(name: template): Selection_[HTMLTemplateElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_text(name: text): Selection_[SVGTextElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_textPath(name: textPath): Selection_[SVGTextPathElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_textarea(name: textarea): Selection_[HTMLTextAreaElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_tfoot(name: tfoot): Selection_[HTMLTableSectionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_th(name: th): Selection_[HTMLTableHeaderCellElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_thead(name: thead): Selection_[HTMLTableSectionElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_time(name: time): Selection_[HTMLTimeElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_title(name: title): Selection_[HTMLTitleElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_tr(name: tr): Selection_[HTMLTableRowElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_track(name: track): Selection_[HTMLTrackElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_tspan(name: tspan): Selection_[SVGTSpanElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_u(name: u): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_ul(name: ul): Selection_[HTMLUListElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_use(name: use): Selection_[SVGUseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_var(name: `var`): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_video(name: video): Selection_[HTMLVideoElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_view(name: view): Selection_[SVGViewElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.create")
-  @js.native
-  def create_wbr(name: wbr): Selection_[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_a(name: a): js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_abbr(name: abbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_address(name: address): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_applet(name: applet): js.ThisFunction0[/* this */ BaseType, HTMLAppletElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_area(name: area): js.ThisFunction0[/* this */ BaseType, HTMLAreaElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_article(name: article): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_aside(name: aside): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_audio(name: audio): js.ThisFunction0[/* this */ BaseType, HTMLAudioElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_b(name: b_): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_base(name: base): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_basefont(name: basefont): js.ThisFunction0[/* this */ BaseType, HTMLBaseFontElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_bdi(name: bdi): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_bdo(name: bdo): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_blockquote(name: blockquote): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_body(name: body): js.ThisFunction0[/* this */ BaseType, HTMLBodyElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_br(name: br): js.ThisFunction0[/* this */ BaseType, HTMLBRElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_button(name: button): js.ThisFunction0[/* this */ BaseType, HTMLButtonElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_canvas(name: canvas): js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_caption(name: caption): js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_circle(name: circle): js.ThisFunction0[/* this */ BaseType, SVGCircleElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_cite(name: cite): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_clipPath(name: clipPath): js.ThisFunction0[/* this */ BaseType, SVGClipPathElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_code(name: code): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_col(name: col): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_colgroup(name: colgroup): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_data(name: data): js.ThisFunction0[/* this */ BaseType, HTMLDataElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_datalist(name: datalist): js.ThisFunction0[/* this */ BaseType, HTMLDataListElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dd(name: dd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_defs(name: defs): js.ThisFunction0[/* this */ BaseType, SVGDefsElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_del(name: del): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_desc(name: desc): js.ThisFunction0[/* this */ BaseType, SVGDescElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_details(name: details): js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dfn(name: dfn): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dialog(name: dialog): js.ThisFunction0[/* this */ BaseType, HTMLDialogElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dir(name: dir): js.ThisFunction0[/* this */ BaseType, HTMLDirectoryElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_div(name: div): js.ThisFunction0[/* this */ BaseType, HTMLDivElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dl(name: dl): js.ThisFunction0[/* this */ BaseType, HTMLDListElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_dt(name: dt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_ellipse(name: ellipse): js.ThisFunction0[/* this */ BaseType, SVGEllipseElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_em(name: em): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_embed(name: embed): js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feBlend(name: feBlend): js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feColorMatrix(name: feColorMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feComponentTransfer(name: feComponentTransfer): js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feComposite(name: feComposite): js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feConvolveMatrix(name: feConvolveMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feDiffuseLighting(name: feDiffuseLighting): js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feDisplacementMap(name: feDisplacementMap): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feDistantLight(name: feDistantLight): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feFlood(name: feFlood): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feFuncA(name: feFuncA): js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feFuncB(name: feFuncB): js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feFuncG(name: feFuncG): js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feFuncR(name: feFuncR): js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feGaussianBlur(name: feGaussianBlur): js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feImage(name: feImage): js.ThisFunction0[/* this */ BaseType, SVGFEImageElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feMerge(name: feMerge): js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feMergeNode(name: feMergeNode): js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feMorphology(name: feMorphology): js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feOffset(name: feOffset): js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_fePointLight(name: fePointLight): js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feSpecularLighting(name: feSpecularLighting): js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feSpotLight(name: feSpotLight): js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feTile(name: feTile): js.ThisFunction0[/* this */ BaseType, SVGFETileElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_feTurbulence(name: feTurbulence): js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_fieldset(name: fieldset): js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_figcaption(name: figcaption): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_figure(name: figure): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_filter(name: filter): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_font(name: font): js.ThisFunction0[/* this */ BaseType, HTMLFontElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_footer(name: footer): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_foreignObject(name: foreignObject): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_form(name: form): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_frame(name: frame): js.ThisFunction0[/* this */ BaseType, HTMLFrameElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_frameset(name: frameset): js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_g(name: g): js.ThisFunction0[/* this */ BaseType, SVGGElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h1(name: h1): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h2(name: h2): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h3(name: h3): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h4(name: h4): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h5(name: h5): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_h6(name: h6): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_head(name: head): js.ThisFunction0[/* this */ BaseType, HTMLHeadElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_header(name: header): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_hgroup(name: hgroup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_hr(name: hr): js.ThisFunction0[/* this */ BaseType, HTMLHRElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_html(name: html): js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_i(name: i): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_iframe(name: iframe): js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_image(name: image): js.ThisFunction0[/* this */ BaseType, SVGImageElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_img(name: img): js.ThisFunction0[/* this */ BaseType, HTMLImageElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_input(name: input): js.ThisFunction0[/* this */ BaseType, HTMLInputElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_ins(name: ins): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_kbd(name: kbd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_label(name: label): js.ThisFunction0[/* this */ BaseType, HTMLLabelElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_legend(name: legend): js.ThisFunction0[/* this */ BaseType, HTMLLegendElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_li(name: li): js.ThisFunction0[/* this */ BaseType, HTMLLIElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_line(name: line): js.ThisFunction0[/* this */ BaseType, SVGLineElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_linearGradient(name: linearGradient): js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_link(name: link): js.ThisFunction0[/* this */ BaseType, HTMLLinkElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_main(name: main): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_map(name: map): js.ThisFunction0[/* this */ BaseType, HTMLMapElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_mark(name: mark): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_marker(name: marker): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_marquee(name: marquee): js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_mask(name: mask): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_menu(name: menu): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_meta(name: meta): js.ThisFunction0[/* this */ BaseType, HTMLMetaElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_metadata(name: metadata): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_meter(name: meter): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_nav(name: nav): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_noscript(name: noscript): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_object(name: `object`): js.ThisFunction0[/* this */ BaseType, HTMLObjectElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_ol(name: ol): js.ThisFunction0[/* this */ BaseType, HTMLOListElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_optgroup(name: optgroup): js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_option(name: option): js.ThisFunction0[/* this */ BaseType, HTMLOptionElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_output(name: output): js.ThisFunction0[/* this */ BaseType, HTMLOutputElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_p(name: p): js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_param(name: param): js.ThisFunction0[/* this */ BaseType, HTMLParamElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_path(name: path): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_pattern(name: pattern): js.ThisFunction0[/* this */ BaseType, SVGPatternElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_picture(name: picture): js.ThisFunction0[/* this */ BaseType, HTMLPictureElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_polygon(name: polygon): js.ThisFunction0[/* this */ BaseType, SVGPolygonElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_polyline(name: polyline): js.ThisFunction0[/* this */ BaseType, SVGPolylineElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_pre(name: pre): js.ThisFunction0[/* this */ BaseType, HTMLPreElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_progress(name: progress): js.ThisFunction0[/* this */ BaseType, HTMLProgressElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_q(name: q): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_radialGradient(name: radialGradient): js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_rect(name: rect): js.ThisFunction0[/* this */ BaseType, SVGRectElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_rp(name: rp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_rt(name: rt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_ruby(name: ruby): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_s(name: s): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_samp(name: samp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_script(name: script): js.ThisFunction0[/* this */ BaseType, HTMLScriptElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_section(name: section): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_select(name: select): js.ThisFunction0[/* this */ BaseType, HTMLSelectElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_slot(name: slot): js.ThisFunction0[/* this */ BaseType, HTMLSlotElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_small(name: small): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_source(name: source): js.ThisFunction0[/* this */ BaseType, HTMLSourceElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_span(name: span): js.ThisFunction0[/* this */ BaseType, HTMLSpanElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_stop(name: stop): js.ThisFunction0[/* this */ BaseType, SVGStopElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_strong(name: strong): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_style(name: style): js.ThisFunction0[/* this */ BaseType, HTMLStyleElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_sub(name: sub): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_summary(name: summary): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_sup(name: sup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_svg(name: svg): js.ThisFunction0[/* this */ BaseType, SVGSVGElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_switch(name: switch): js.ThisFunction0[/* this */ BaseType, SVGSwitchElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_symbol(name: symbol): js.ThisFunction0[/* this */ BaseType, SVGSymbolElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_table(name: table): js.ThisFunction0[/* this */ BaseType, HTMLTableElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_tbody(name: tbody): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_template(name: template): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_text(name: text): js.ThisFunction0[/* this */ BaseType, SVGTextElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_textPath(name: textPath): js.ThisFunction0[/* this */ BaseType, SVGTextPathElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_textarea(name: textarea): js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_tfoot(name: tfoot): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_th(name: th): js.ThisFunction0[/* this */ BaseType, HTMLTableHeaderCellElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_thead(name: thead): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_time(name: time): js.ThisFunction0[/* this */ BaseType, HTMLTimeElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_title(name: title): js.ThisFunction0[/* this */ BaseType, HTMLTitleElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_tr(name: tr): js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_track(name: track): js.ThisFunction0[/* this */ BaseType, HTMLTrackElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_tspan(name: tspan): js.ThisFunction0[/* this */ BaseType, SVGTSpanElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_u(name: u): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_ul(name: ul): js.ThisFunction0[/* this */ BaseType, HTMLUListElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_use(name: use): js.ThisFunction0[/* this */ BaseType, SVGUseElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_var(name: `var`): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_video(name: video): js.ThisFunction0[/* this */ BaseType, HTMLVideoElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_view(name: view): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = js.native
-  @JSImport("plotly.js", "d3.creator")
-  @js.native
-  def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
+  @scala.inline
+  def create_a(name: a): Selection_[HTMLAnchorElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAnchorElement, Unit, Null, Unit]]
   
-  @JSImport("plotly.js", "d3.cross")
-  @js.native
-  def cross[S, T](a: Iterable[S], b: Iterable[T]): js.Array[js.Tuple2[S, T]] = js.native
-  @JSImport("plotly.js", "d3.cross")
-  @js.native
-  def cross[S, T, U](a: Iterable[S], b: Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
+  @scala.inline
+  def create_abbr(name: abbr): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
   
-  @JSImport("plotly.js", "d3.csv")
-  @js.native
-  def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.csv")
-  @js.native
-  def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.csv")
-  @js.native
+  @scala.inline
+  def create_address(name: address): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_applet(name: applet): Selection_[HTMLAppletElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAppletElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_area(name: area): Selection_[HTMLAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAreaElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_article(name: article): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_aside(name: aside): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_audio(name: audio): Selection_[HTMLAudioElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAudioElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_b(name: b_): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_base(name: base): Selection_[HTMLBaseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_basefont(name: basefont): Selection_[HTMLBaseFontElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseFontElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_bdi(name: bdi): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_bdo(name: bdo): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_blockquote(name: blockquote): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_body(name: body): Selection_[HTMLBodyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBodyElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_br(name: br): Selection_[HTMLBRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBRElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_button(name: button): Selection_[HTMLButtonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLButtonElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_canvas(name: canvas): Selection_[HTMLCanvasElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLCanvasElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_caption(name: caption): Selection_[HTMLTableCaptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCaptionElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_circle(name: circle): Selection_[SVGCircleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGCircleElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_cite(name: cite): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_clipPath(name: clipPath): Selection_[SVGClipPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGClipPathElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_code(name: code): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_col(name: col): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_colgroup(name: colgroup): Selection_[HTMLTableColElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableColElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_data(name: data): Selection_[HTMLDataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_datalist(name: datalist): Selection_[HTMLDataListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDataListElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dd(name: dd): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_defs(name: defs): Selection_[SVGDefsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDefsElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_del(name: del): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_desc(name: desc): Selection_[SVGDescElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGDescElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_details(name: details): Selection_[HTMLDetailsElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDetailsElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dfn(name: dfn): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dialog(name: dialog): Selection_[HTMLDialogElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDialogElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dir(name: dir): Selection_[HTMLDirectoryElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDirectoryElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_div(name: div): Selection_[HTMLDivElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDivElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dl(name: dl): Selection_[HTMLDListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDListElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_dt(name: dt): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_ellipse(name: ellipse): Selection_[SVGEllipseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGEllipseElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_em(name: em): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_embed(name: embed): Selection_[HTMLEmbedElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLEmbedElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feBlend(name: feBlend): Selection_[SVGFEBlendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEBlendElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feColorMatrix(name: feColorMatrix): Selection_[SVGFEColorMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEColorMatrixElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feComponentTransfer(name: feComponentTransfer): Selection_[SVGFEComponentTransferElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEComponentTransferElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feComposite(name: feComposite): Selection_[SVGFECompositeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFECompositeElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feConvolveMatrix(name: feConvolveMatrix): Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEConvolveMatrixElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feDiffuseLighting(name: feDiffuseLighting): Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDiffuseLightingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feDisplacementMap(name: feDisplacementMap): Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feDistantLight(name: feDistantLight): Selection_[SVGFEDistantLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDistantLightElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feFlood(name: feFlood): Selection_[SVGFEFloodElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFloodElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feFuncA(name: feFuncA): Selection_[SVGFEFuncAElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncAElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feFuncB(name: feFuncB): Selection_[SVGFEFuncBElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncBElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feFuncG(name: feFuncG): Selection_[SVGFEFuncGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncGElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feFuncR(name: feFuncR): Selection_[SVGFEFuncRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFuncRElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feGaussianBlur(name: feGaussianBlur): Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEGaussianBlurElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feImage(name: feImage): Selection_[SVGFEImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEImageElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feMerge(name: feMerge): Selection_[SVGFEMergeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feMergeNode(name: feMergeNode): Selection_[SVGFEMergeNodeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMergeNodeElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feMorphology(name: feMorphology): Selection_[SVGFEMorphologyElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEMorphologyElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feOffset(name: feOffset): Selection_[SVGFEOffsetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEOffsetElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_fePointLight(name: fePointLight): Selection_[SVGFEPointLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEPointLightElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feSpecularLighting(name: feSpecularLighting): Selection_[SVGFESpecularLightingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpecularLightingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feSpotLight(name: feSpotLight): Selection_[SVGFESpotLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFESpotLightElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feTile(name: feTile): Selection_[SVGFETileElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETileElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_feTurbulence(name: feTurbulence): Selection_[SVGFETurbulenceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFETurbulenceElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_fieldset(name: fieldset): Selection_[HTMLFieldSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFieldSetElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_figcaption(name: figcaption): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_figure(name: figure): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_filter(name: filter): Selection_[SVGFilterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFilterElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_font(name: font): Selection_[HTMLFontElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFontElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_footer(name: footer): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_foreignObject(name: foreignObject): Selection_[SVGForeignObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGForeignObjectElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_form(name: form): Selection_[HTMLFormElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFormElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_frame(name: frame): Selection_[HTMLFrameElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFrameElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_frameset(name: frameset): Selection_[HTMLFrameSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFrameSetElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_g(name: g): Selection_[SVGGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGGElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h1(name: h1): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h2(name: h2): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h3(name: h3): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h4(name: h4): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h5(name: h5): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_h6(name: h6): Selection_[HTMLHeadingElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadingElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_head(name: head): Selection_[HTMLHeadElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHeadElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_header(name: header): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_hgroup(name: hgroup): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_hr(name: hr): Selection_[HTMLHRElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHRElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_html(name: html): Selection_[HTMLHtmlElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLHtmlElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_i(name: i): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_iframe(name: iframe): Selection_[HTMLIFrameElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLIFrameElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_image(name: image): Selection_[SVGImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGImageElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_img(name: img): Selection_[HTMLImageElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLImageElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_input(name: input): Selection_[HTMLInputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLInputElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_ins(name: ins): Selection_[HTMLModElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLModElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_kbd(name: kbd): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_label(name: label): Selection_[HTMLLabelElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLabelElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_legend(name: legend): Selection_[HTMLLegendElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLegendElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_li(name: li): Selection_[HTMLLIElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLIElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_line(name: line): Selection_[SVGLineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLineElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_linearGradient(name: linearGradient): Selection_[SVGLinearGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGLinearGradientElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_link(name: link): Selection_[HTMLLinkElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLLinkElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_main(name: main): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_map(name: map): Selection_[HTMLMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMapElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_mark(name: mark): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_marker(name: marker): Selection_[SVGMarkerElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMarkerElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_marquee(name: marquee): Selection_[HTMLMarqueeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMarqueeElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_mask(name: mask): Selection_[SVGMaskElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMaskElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_menu(name: menu): Selection_[HTMLMenuElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMenuElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_meta(name: meta): Selection_[HTMLMetaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMetaElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_metadata(name: metadata): Selection_[SVGMetadataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMetadataElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_meter(name: meter): Selection_[HTMLMeterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMeterElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_nav(name: nav): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_noscript(name: noscript): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_object(name: `object`): Selection_[HTMLObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLObjectElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_ol(name: ol): Selection_[HTMLOListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOListElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_optgroup(name: optgroup): Selection_[HTMLOptGroupElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptGroupElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_option(name: option): Selection_[HTMLOptionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOptionElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_output(name: output): Selection_[HTMLOutputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOutputElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_p(name: p): Selection_[HTMLParagraphElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParagraphElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_param(name: param): Selection_[HTMLParamElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParamElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_path(name: path): Selection_[SVGPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPathElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_pattern(name: pattern): Selection_[SVGPatternElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPatternElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_picture(name: picture): Selection_[HTMLPictureElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPictureElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_polygon(name: polygon): Selection_[SVGPolygonElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolygonElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_polyline(name: polyline): Selection_[SVGPolylineElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPolylineElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_pre(name: pre): Selection_[HTMLPreElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLPreElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_progress(name: progress): Selection_[HTMLProgressElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLProgressElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_q(name: q): Selection_[HTMLQuoteElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLQuoteElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_radialGradient(name: radialGradient): Selection_[SVGRadialGradientElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRadialGradientElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_rect(name: rect): Selection_[SVGRectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGRectElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_rp(name: rp): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_rt(name: rt): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_ruby(name: ruby): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_s(name: s): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_samp(name: samp): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_script(name: script): Selection_[HTMLScriptElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLScriptElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_section(name: section): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_select(name: select): Selection_[HTMLSelectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSelectElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_slot(name: slot): Selection_[HTMLSlotElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSlotElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_small(name: small): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_source(name: source): Selection_[HTMLSourceElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSourceElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_span(name: span): Selection_[HTMLSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSpanElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_stop(name: stop): Selection_[SVGStopElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGStopElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_strong(name: strong): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_style(name: style): Selection_[HTMLStyleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLStyleElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_sub(name: sub): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_summary(name: summary): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_sup(name: sup): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_svg(name: svg): Selection_[SVGSVGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSVGElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_switch(name: switch): Selection_[SVGSwitchElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSwitchElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_symbol(name: symbol): Selection_[SVGSymbolElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSymbolElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_table(name: table): Selection_[HTMLTableElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_tbody(name: tbody): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_td(name: td): Selection_[HTMLTableDataCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableDataCellElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_template(name: template): Selection_[HTMLTemplateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTemplateElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_text(name: text): Selection_[SVGTextElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_textPath(name: textPath): Selection_[SVGTextPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTextPathElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_textarea(name: textarea): Selection_[HTMLTextAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTextAreaElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_tfoot(name: tfoot): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_th(name: th): Selection_[HTMLTableHeaderCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableHeaderCellElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_thead(name: thead): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_time(name: time): Selection_[HTMLTimeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTimeElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_title(name: title): Selection_[HTMLTitleElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTitleElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_tr(name: tr): Selection_[HTMLTableRowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableRowElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_track(name: track): Selection_[HTMLTrackElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTrackElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_tspan(name: tspan): Selection_[SVGTSpanElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGTSpanElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_u(name: u): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_ul(name: ul): Selection_[HTMLUListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLUListElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_use(name: use): Selection_[SVGUseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGUseElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_var(name: `var`): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_video(name: video): Selection_[HTMLVideoElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLVideoElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_view(name: view): Selection_[SVGViewElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGViewElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def create_wbr(name: wbr): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
+  @scala.inline
+  def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NewGElement]]
+  
+  @scala.inline
+  def creator_a(name: a): js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAnchorElement]]
+  
+  @scala.inline
+  def creator_abbr(name: abbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_address(name: address): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_applet(name: applet): js.ThisFunction0[/* this */ BaseType, HTMLAppletElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAppletElement]]
+  
+  @scala.inline
+  def creator_area(name: area): js.ThisFunction0[/* this */ BaseType, HTMLAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAreaElement]]
+  
+  @scala.inline
+  def creator_article(name: article): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_aside(name: aside): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_audio(name: audio): js.ThisFunction0[/* this */ BaseType, HTMLAudioElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAudioElement]]
+  
+  @scala.inline
+  def creator_b(name: b_): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_base(name: base): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseElement]]
+  
+  @scala.inline
+  def creator_basefont(name: basefont): js.ThisFunction0[/* this */ BaseType, HTMLBaseFontElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseFontElement]]
+  
+  @scala.inline
+  def creator_bdi(name: bdi): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_bdo(name: bdo): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_blockquote(name: blockquote): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
+  
+  @scala.inline
+  def creator_body(name: body): js.ThisFunction0[/* this */ BaseType, HTMLBodyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBodyElement]]
+  
+  @scala.inline
+  def creator_br(name: br): js.ThisFunction0[/* this */ BaseType, HTMLBRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBRElement]]
+  
+  @scala.inline
+  def creator_button(name: button): js.ThisFunction0[/* this */ BaseType, HTMLButtonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLButtonElement]]
+  
+  @scala.inline
+  def creator_canvas(name: canvas): js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLCanvasElement]]
+  
+  @scala.inline
+  def creator_caption(name: caption): js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCaptionElement]]
+  
+  @scala.inline
+  def creator_circle(name: circle): js.ThisFunction0[/* this */ BaseType, SVGCircleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGCircleElement]]
+  
+  @scala.inline
+  def creator_cite(name: cite): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_clipPath(name: clipPath): js.ThisFunction0[/* this */ BaseType, SVGClipPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGClipPathElement]]
+  
+  @scala.inline
+  def creator_code(name: code): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_col(name: col): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
+  
+  @scala.inline
+  def creator_colgroup(name: colgroup): js.ThisFunction0[/* this */ BaseType, HTMLTableColElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableColElement]]
+  
+  @scala.inline
+  def creator_data(name: data): js.ThisFunction0[/* this */ BaseType, HTMLDataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataElement]]
+  
+  @scala.inline
+  def creator_datalist(name: datalist): js.ThisFunction0[/* this */ BaseType, HTMLDataListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDataListElement]]
+  
+  @scala.inline
+  def creator_dd(name: dd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_defs(name: defs): js.ThisFunction0[/* this */ BaseType, SVGDefsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDefsElement]]
+  
+  @scala.inline
+  def creator_del(name: del): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
+  
+  @scala.inline
+  def creator_desc(name: desc): js.ThisFunction0[/* this */ BaseType, SVGDescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGDescElement]]
+  
+  @scala.inline
+  def creator_details(name: details): js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDetailsElement]]
+  
+  @scala.inline
+  def creator_dfn(name: dfn): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_dialog(name: dialog): js.ThisFunction0[/* this */ BaseType, HTMLDialogElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDialogElement]]
+  
+  @scala.inline
+  def creator_dir(name: dir): js.ThisFunction0[/* this */ BaseType, HTMLDirectoryElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDirectoryElement]]
+  
+  @scala.inline
+  def creator_div(name: div): js.ThisFunction0[/* this */ BaseType, HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDivElement]]
+  
+  @scala.inline
+  def creator_dl(name: dl): js.ThisFunction0[/* this */ BaseType, HTMLDListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDListElement]]
+  
+  @scala.inline
+  def creator_dt(name: dt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_ellipse(name: ellipse): js.ThisFunction0[/* this */ BaseType, SVGEllipseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGEllipseElement]]
+  
+  @scala.inline
+  def creator_em(name: em): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_embed(name: embed): js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLEmbedElement]]
+  
+  @scala.inline
+  def creator_feBlend(name: feBlend): js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEBlendElement]]
+  
+  @scala.inline
+  def creator_feColorMatrix(name: feColorMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEColorMatrixElement]]
+  
+  @scala.inline
+  def creator_feComponentTransfer(name: feComponentTransfer): js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEComponentTransferElement]]
+  
+  @scala.inline
+  def creator_feComposite(name: feComposite): js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFECompositeElement]]
+  
+  @scala.inline
+  def creator_feConvolveMatrix(name: feConvolveMatrix): js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEConvolveMatrixElement]]
+  
+  @scala.inline
+  def creator_feDiffuseLighting(name: feDiffuseLighting): js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDiffuseLightingElement]]
+  
+  @scala.inline
+  def creator_feDisplacementMap(name: feDisplacementMap): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement]]
+  
+  @scala.inline
+  def creator_feDistantLight(name: feDistantLight): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement]]
+  
+  @scala.inline
+  def creator_feFlood(name: feFlood): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement]]
+  
+  @scala.inline
+  def creator_feFuncA(name: feFuncA): js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncAElement]]
+  
+  @scala.inline
+  def creator_feFuncB(name: feFuncB): js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncBElement]]
+  
+  @scala.inline
+  def creator_feFuncG(name: feFuncG): js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncGElement]]
+  
+  @scala.inline
+  def creator_feFuncR(name: feFuncR): js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFuncRElement]]
+  
+  @scala.inline
+  def creator_feGaussianBlur(name: feGaussianBlur): js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEGaussianBlurElement]]
+  
+  @scala.inline
+  def creator_feImage(name: feImage): js.ThisFunction0[/* this */ BaseType, SVGFEImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEImageElement]]
+  
+  @scala.inline
+  def creator_feMerge(name: feMerge): js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeElement]]
+  
+  @scala.inline
+  def creator_feMergeNode(name: feMergeNode): js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMergeNodeElement]]
+  
+  @scala.inline
+  def creator_feMorphology(name: feMorphology): js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEMorphologyElement]]
+  
+  @scala.inline
+  def creator_feOffset(name: feOffset): js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEOffsetElement]]
+  
+  @scala.inline
+  def creator_fePointLight(name: fePointLight): js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEPointLightElement]]
+  
+  @scala.inline
+  def creator_feSpecularLighting(name: feSpecularLighting): js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpecularLightingElement]]
+  
+  @scala.inline
+  def creator_feSpotLight(name: feSpotLight): js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFESpotLightElement]]
+  
+  @scala.inline
+  def creator_feTile(name: feTile): js.ThisFunction0[/* this */ BaseType, SVGFETileElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETileElement]]
+  
+  @scala.inline
+  def creator_feTurbulence(name: feTurbulence): js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFETurbulenceElement]]
+  
+  @scala.inline
+  def creator_fieldset(name: fieldset): js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFieldSetElement]]
+  
+  @scala.inline
+  def creator_figcaption(name: figcaption): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_figure(name: figure): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_filter(name: filter): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFilterElement]]
+  
+  @scala.inline
+  def creator_font(name: font): js.ThisFunction0[/* this */ BaseType, HTMLFontElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFontElement]]
+  
+  @scala.inline
+  def creator_footer(name: footer): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_foreignObject(name: foreignObject): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement]]
+  
+  @scala.inline
+  def creator_form(name: form): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFormElement]]
+  
+  @scala.inline
+  def creator_frame(name: frame): js.ThisFunction0[/* this */ BaseType, HTMLFrameElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFrameElement]]
+  
+  @scala.inline
+  def creator_frameset(name: frameset): js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement]]
+  
+  @scala.inline
+  def creator_g(name: g): js.ThisFunction0[/* this */ BaseType, SVGGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGGElement]]
+  
+  @scala.inline
+  def creator_h1(name: h1): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_h2(name: h2): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_h3(name: h3): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_h4(name: h4): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_h5(name: h5): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_h6(name: h6): js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadingElement]]
+  
+  @scala.inline
+  def creator_head(name: head): js.ThisFunction0[/* this */ BaseType, HTMLHeadElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHeadElement]]
+  
+  @scala.inline
+  def creator_header(name: header): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_hgroup(name: hgroup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_hr(name: hr): js.ThisFunction0[/* this */ BaseType, HTMLHRElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHRElement]]
+  
+  @scala.inline
+  def creator_html(name: html): js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLHtmlElement]]
+  
+  @scala.inline
+  def creator_i(name: i): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_iframe(name: iframe): js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLIFrameElement]]
+  
+  @scala.inline
+  def creator_image(name: image): js.ThisFunction0[/* this */ BaseType, SVGImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGImageElement]]
+  
+  @scala.inline
+  def creator_img(name: img): js.ThisFunction0[/* this */ BaseType, HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLImageElement]]
+  
+  @scala.inline
+  def creator_input(name: input): js.ThisFunction0[/* this */ BaseType, HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLInputElement]]
+  
+  @scala.inline
+  def creator_ins(name: ins): js.ThisFunction0[/* this */ BaseType, HTMLModElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLModElement]]
+  
+  @scala.inline
+  def creator_kbd(name: kbd): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_label(name: label): js.ThisFunction0[/* this */ BaseType, HTMLLabelElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLabelElement]]
+  
+  @scala.inline
+  def creator_legend(name: legend): js.ThisFunction0[/* this */ BaseType, HTMLLegendElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLegendElement]]
+  
+  @scala.inline
+  def creator_li(name: li): js.ThisFunction0[/* this */ BaseType, HTMLLIElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLIElement]]
+  
+  @scala.inline
+  def creator_line(name: line): js.ThisFunction0[/* this */ BaseType, SVGLineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLineElement]]
+  
+  @scala.inline
+  def creator_linearGradient(name: linearGradient): js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGLinearGradientElement]]
+  
+  @scala.inline
+  def creator_link(name: link): js.ThisFunction0[/* this */ BaseType, HTMLLinkElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLLinkElement]]
+  
+  @scala.inline
+  def creator_main(name: main): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_map(name: map): js.ThisFunction0[/* this */ BaseType, HTMLMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMapElement]]
+  
+  @scala.inline
+  def creator_mark(name: mark): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_marker(name: marker): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMarkerElement]]
+  
+  @scala.inline
+  def creator_marquee(name: marquee): js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement]]
+  
+  @scala.inline
+  def creator_mask(name: mask): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMaskElement]]
+  
+  @scala.inline
+  def creator_menu(name: menu): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMenuElement]]
+  
+  @scala.inline
+  def creator_meta(name: meta): js.ThisFunction0[/* this */ BaseType, HTMLMetaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMetaElement]]
+  
+  @scala.inline
+  def creator_metadata(name: metadata): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMetadataElement]]
+  
+  @scala.inline
+  def creator_meter(name: meter): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMeterElement]]
+  
+  @scala.inline
+  def creator_nav(name: nav): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_noscript(name: noscript): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_object(name: `object`): js.ThisFunction0[/* this */ BaseType, HTMLObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLObjectElement]]
+  
+  @scala.inline
+  def creator_ol(name: ol): js.ThisFunction0[/* this */ BaseType, HTMLOListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOListElement]]
+  
+  @scala.inline
+  def creator_optgroup(name: optgroup): js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptGroupElement]]
+  
+  @scala.inline
+  def creator_option(name: option): js.ThisFunction0[/* this */ BaseType, HTMLOptionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOptionElement]]
+  
+  @scala.inline
+  def creator_output(name: output): js.ThisFunction0[/* this */ BaseType, HTMLOutputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOutputElement]]
+  
+  @scala.inline
+  def creator_p(name: p): js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement]]
+  
+  @scala.inline
+  def creator_param(name: param): js.ThisFunction0[/* this */ BaseType, HTMLParamElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParamElement]]
+  
+  @scala.inline
+  def creator_path(name: path): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPathElement]]
+  
+  @scala.inline
+  def creator_pattern(name: pattern): js.ThisFunction0[/* this */ BaseType, SVGPatternElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPatternElement]]
+  
+  @scala.inline
+  def creator_picture(name: picture): js.ThisFunction0[/* this */ BaseType, HTMLPictureElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPictureElement]]
+  
+  @scala.inline
+  def creator_polygon(name: polygon): js.ThisFunction0[/* this */ BaseType, SVGPolygonElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolygonElement]]
+  
+  @scala.inline
+  def creator_polyline(name: polyline): js.ThisFunction0[/* this */ BaseType, SVGPolylineElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPolylineElement]]
+  
+  @scala.inline
+  def creator_pre(name: pre): js.ThisFunction0[/* this */ BaseType, HTMLPreElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLPreElement]]
+  
+  @scala.inline
+  def creator_progress(name: progress): js.ThisFunction0[/* this */ BaseType, HTMLProgressElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLProgressElement]]
+  
+  @scala.inline
+  def creator_q(name: q): js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLQuoteElement]]
+  
+  @scala.inline
+  def creator_radialGradient(name: radialGradient): js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRadialGradientElement]]
+  
+  @scala.inline
+  def creator_rect(name: rect): js.ThisFunction0[/* this */ BaseType, SVGRectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGRectElement]]
+  
+  @scala.inline
+  def creator_rp(name: rp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_rt(name: rt): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_ruby(name: ruby): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_s(name: s): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_samp(name: samp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_script(name: script): js.ThisFunction0[/* this */ BaseType, HTMLScriptElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLScriptElement]]
+  
+  @scala.inline
+  def creator_section(name: section): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_select(name: select): js.ThisFunction0[/* this */ BaseType, HTMLSelectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSelectElement]]
+  
+  @scala.inline
+  def creator_slot(name: slot): js.ThisFunction0[/* this */ BaseType, HTMLSlotElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSlotElement]]
+  
+  @scala.inline
+  def creator_small(name: small): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_source(name: source): js.ThisFunction0[/* this */ BaseType, HTMLSourceElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSourceElement]]
+  
+  @scala.inline
+  def creator_span(name: span): js.ThisFunction0[/* this */ BaseType, HTMLSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSpanElement]]
+  
+  @scala.inline
+  def creator_stop(name: stop): js.ThisFunction0[/* this */ BaseType, SVGStopElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGStopElement]]
+  
+  @scala.inline
+  def creator_strong(name: strong): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_style(name: style): js.ThisFunction0[/* this */ BaseType, HTMLStyleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLStyleElement]]
+  
+  @scala.inline
+  def creator_sub(name: sub): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_summary(name: summary): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_sup(name: sup): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_svg(name: svg): js.ThisFunction0[/* this */ BaseType, SVGSVGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSVGElement]]
+  
+  @scala.inline
+  def creator_switch(name: switch): js.ThisFunction0[/* this */ BaseType, SVGSwitchElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSwitchElement]]
+  
+  @scala.inline
+  def creator_symbol(name: symbol): js.ThisFunction0[/* this */ BaseType, SVGSymbolElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSymbolElement]]
+  
+  @scala.inline
+  def creator_table(name: table): js.ThisFunction0[/* this */ BaseType, HTMLTableElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableElement]]
+  
+  @scala.inline
+  def creator_tbody(name: tbody): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  
+  @scala.inline
+  def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement]]
+  
+  @scala.inline
+  def creator_template(name: template): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement]]
+  
+  @scala.inline
+  def creator_text(name: text): js.ThisFunction0[/* this */ BaseType, SVGTextElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextElement]]
+  
+  @scala.inline
+  def creator_textPath(name: textPath): js.ThisFunction0[/* this */ BaseType, SVGTextPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTextPathElement]]
+  
+  @scala.inline
+  def creator_textarea(name: textarea): js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTextAreaElement]]
+  
+  @scala.inline
+  def creator_tfoot(name: tfoot): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  
+  @scala.inline
+  def creator_th(name: th): js.ThisFunction0[/* this */ BaseType, HTMLTableHeaderCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableHeaderCellElement]]
+  
+  @scala.inline
+  def creator_thead(name: thead): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
+  
+  @scala.inline
+  def creator_time(name: time): js.ThisFunction0[/* this */ BaseType, HTMLTimeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTimeElement]]
+  
+  @scala.inline
+  def creator_title(name: title): js.ThisFunction0[/* this */ BaseType, HTMLTitleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTitleElement]]
+  
+  @scala.inline
+  def creator_tr(name: tr): js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableRowElement]]
+  
+  @scala.inline
+  def creator_track(name: track): js.ThisFunction0[/* this */ BaseType, HTMLTrackElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTrackElement]]
+  
+  @scala.inline
+  def creator_tspan(name: tspan): js.ThisFunction0[/* this */ BaseType, SVGTSpanElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGTSpanElement]]
+  
+  @scala.inline
+  def creator_u(name: u): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_ul(name: ul): js.ThisFunction0[/* this */ BaseType, HTMLUListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLUListElement]]
+  
+  @scala.inline
+  def creator_use(name: use): js.ThisFunction0[/* this */ BaseType, SVGUseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGUseElement]]
+  
+  @scala.inline
+  def creator_var(name: `var`): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def creator_video(name: video): js.ThisFunction0[/* this */ BaseType, HTMLVideoElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLVideoElement]]
+  
+  @scala.inline
+  def creator_view(name: view): js.ThisFunction0[/* this */ BaseType, SVGViewElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGViewElement]]
+  
+  @scala.inline
+  def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
+  
+  @scala.inline
+  def cross[S, T](a: Iterable[S], b: Iterable[T]): js.Array[js.Tuple2[S, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[S, T]]]
+  @scala.inline
+  def cross[S, T, U](a: Iterable[S], b: Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  
+  @scala.inline
+  def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def csv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     init: RequestInit,
@@ -2086,9 +1957,8 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("plotly.js", "d3.csv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def csv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     row: js.Function3[
@@ -2097,39 +1967,30 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("plotly.js", "d3.csvFormat")
-  @js.native
-  def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  @JSImport("plotly.js", "d3.csvFormat")
-  @js.native
-  def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+  @scala.inline
+  def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormat")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("csvFormat")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.csvFormatBody")
-  @js.native
-  def csvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  @JSImport("plotly.js", "d3.csvFormatBody")
-  @js.native
-  def csvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+  @scala.inline
+  def csvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatBody")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def csvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatBody")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.csvFormatRow")
-  @js.native
-  def csvFormatRow(row: js.Array[String]): String = js.native
+  @scala.inline
+  def csvFormatRow(row: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatRow")(row.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.csvFormatRows")
-  @js.native
-  def csvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
+  @scala.inline
+  def csvFormatRows(rows: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatRows")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.csvFormatValue")
-  @js.native
-  def csvFormatValue(value: String): String = js.native
+  @scala.inline
+  def csvFormatValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.csvParse")
-  @js.native
-  def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = js.native
-  @JSImport("plotly.js", "d3.csvParse")
-  @js.native
+  @scala.inline
+  def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = ^.asInstanceOf[js.Dynamic].applyDynamic("csvParse")(csvString.asInstanceOf[js.Any]).asInstanceOf[DSVRowArray[Columns]]
+  @scala.inline
   def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
     csvString: String,
     row: js.Function3[
@@ -2138,24 +1999,21 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): DSVParsedArray[ParsedRow] = js.native
+  ): DSVParsedArray[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("csvParse")(csvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[DSVParsedArray[ParsedRow]]
   
-  @JSImport("plotly.js", "d3.csvParseRows")
-  @js.native
-  def csvParseRows(csvString: String): js.Array[js.Array[String]] = js.native
-  @JSImport("plotly.js", "d3.csvParseRows")
-  @js.native
+  @scala.inline
+  def csvParseRows(csvString: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csvParseRows")(csvString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  @scala.inline
   def csvParseRows[ParsedRow /* <: js.Object */](
     csvString: String,
     row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
-  ): js.Array[ParsedRow] = js.native
+  ): js.Array[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("csvParseRows")(csvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedRow]]
   
   @JSImport("plotly.js", "d3.cubehelix")
   @js.native
   val cubehelix: CubehelixColorFactory = js.native
-  @JSImport("plotly.js", "d3.cubehelix")
-  @js.native
-  def cubehelix(color: ColorCommonInstance): CubehelixColor = js.native
+  @scala.inline
+  def cubehelix(color: ColorCommonInstance): CubehelixColor = ^.asInstanceOf[js.Dynamic].applyDynamic("cubehelix")(color.asInstanceOf[js.Any]).asInstanceOf[CubehelixColor]
   /**
     * Converts the provided color instance and returns a Cubehelix color.
     * The color instance is specified, it is converted to the RGB color space using color.rgb and then converted to Cubehelix.
@@ -2163,18 +2021,16 @@ object d3 {
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.cubehelix")
-  @js.native
-  def cubehelix(color: ColorSpaceObject): CubehelixColor = js.native
+  @scala.inline
+  def cubehelix(color: ColorSpaceObject): CubehelixColor = ^.asInstanceOf[js.Dynamic].applyDynamic("cubehelix")(color.asInstanceOf[js.Any]).asInstanceOf[CubehelixColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an Cubehelix color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.cubehelix")
-  @js.native
-  def cubehelix(cssColorSpecifier: String): CubehelixColor = js.native
+  @scala.inline
+  def cubehelix(cssColorSpecifier: String): CubehelixColor = ^.asInstanceOf[js.Dynamic].applyDynamic("cubehelix")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[CubehelixColor]
   /**
     * Constructs a new Cubehelix color based on the specified channel values and opacity.
     *
@@ -2183,73 +2039,63 @@ object d3 {
     * @param l Lightness channel value.
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.cubehelix")
-  @js.native
-  def cubehelix(h: Double, s: Double, l: Double): CubehelixColor = js.native
-  @JSImport("plotly.js", "d3.cubehelix")
-  @js.native
-  def cubehelix(h: Double, s: Double, l: Double, opacity: Double): CubehelixColor = js.native
+  @scala.inline
+  def cubehelix(h: Double, s: Double, l: Double): CubehelixColor = (^.asInstanceOf[js.Dynamic].applyDynamic("cubehelix")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[CubehelixColor]
+  @scala.inline
+  def cubehelix(h: Double, s: Double, l: Double, opacity: Double): CubehelixColor = (^.asInstanceOf[js.Dynamic].applyDynamic("cubehelix")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[CubehelixColor]
   
-  @JSImport("plotly.js", "d3.cumsum")
-  @js.native
-  def cumsum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Float64Array = js.native
-  @JSImport("plotly.js", "d3.cumsum")
-  @js.native
+  @scala.inline
+  def cumsum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
+  @scala.inline
   def cumsum[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): Float64Array = js.native
+  ): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasis")
-  @js.native
-  def curveBasis(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveBasis(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasis")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasis")
-  @js.native
-  def curveBasis(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveBasis(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasis")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasisClosed")
-  @js.native
-  def curveBasisClosed(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveBasisClosed(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasisClosed")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasisClosed")
-  @js.native
-  def curveBasisClosed(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveBasisClosed(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasisClosed")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasisOpen")
-  @js.native
-  def curveBasisOpen(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveBasisOpen(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasisOpen")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveBasisOpen")
-  @js.native
-  def curveBasisOpen(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveBasisOpen(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveBasisOpen")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   @JSImport("plotly.js", "d3.curveBundle")
   @js.native
@@ -2284,196 +2130,166 @@ object d3 {
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveLinear")
-  @js.native
-  def curveLinear(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveLinear(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveLinear")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveLinear")
-  @js.native
-  def curveLinear(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveLinear(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveLinear")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveLinearClosed")
-  @js.native
-  def curveLinearClosed(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveLinearClosed(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveLinearClosed")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveLinearClosed")
-  @js.native
-  def curveLinearClosed(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveLinearClosed(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveLinearClosed")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveMonotoneX")
-  @js.native
-  def curveMonotoneX(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveMonotoneX(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveMonotoneX")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveMonotoneX")
-  @js.native
-  def curveMonotoneX(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveMonotoneX(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveMonotoneX")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveMonotoneY")
-  @js.native
-  def curveMonotoneY(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveMonotoneY(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveMonotoneY")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveMonotoneY")
-  @js.native
-  def curveMonotoneY(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveMonotoneY(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveMonotoneY")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveNatural")
-  @js.native
-  def curveNatural(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveNatural(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveNatural")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveNatural")
-  @js.native
-  def curveNatural(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveNatural(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveNatural")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStep")
-  @js.native
-  def curveStep(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveStep(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStep")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStep")
-  @js.native
-  def curveStep(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveStep(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStep")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStepAfter")
-  @js.native
-  def curveStepAfter(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveStepAfter(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStepAfter")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStepAfter")
-  @js.native
-  def curveStepAfter(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveStepAfter(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStepAfter")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStepBefore")
-  @js.native
-  def curveStepBefore(context: Path_): CurveGenerator = js.native
+  @scala.inline
+  def curveStepBefore(context: Path_): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStepBefore")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   /**
     * Returns a curve generator which renders to the specified context.
     *
     * @param context A rendering context.
     */
-  @JSImport("plotly.js", "d3.curveStepBefore")
-  @js.native
-  def curveStepBefore(context: CanvasRenderingContext2D): CurveGenerator = js.native
+  @scala.inline
+  def curveStepBefore(context: CanvasRenderingContext2D): CurveGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("curveStepBefore")(context.asInstanceOf[js.Any]).asInstanceOf[CurveGenerator]
   
-  @JSImport("plotly.js", "d3.descending")
-  @js.native
-  def descending(): Double = js.native
-  @JSImport("plotly.js", "d3.descending")
-  @js.native
-  def descending(a: js.UndefOr[Primitive], b: Primitive): Double = js.native
-  @JSImport("plotly.js", "d3.descending")
-  @js.native
-  def descending(a: Primitive): Double = js.native
+  @scala.inline
+  def descending(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("descending")().asInstanceOf[Double]
+  @scala.inline
+  def descending(a: Unit, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("descending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def descending(a: Primitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("descending")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def descending(a: Primitive, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("descending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.deviation")
-  @js.native
-  def deviation[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.deviation")
-  @js.native
+  @scala.inline
+  def deviation[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def deviation[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.difference")
-  @js.native
-  def difference[T](iterable: Iterable[T], others: Iterable[T]*): Set[T] = js.native
+  @scala.inline
+  def difference[T](iterable: Iterable[T], others: Iterable[T]*): Set[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(iterable.asInstanceOf[js.Any], others.asInstanceOf[js.Any])).asInstanceOf[Set[T]]
   
-  @JSImport("plotly.js", "d3.disjoint")
-  @js.native
-  def disjoint[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def disjoint[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.dispatch")
-  @js.native
-  def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
+  @scala.inline
+  def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(types.asInstanceOf[js.Any]).asInstanceOf[Dispatch_[T]]
   
-  @JSImport("plotly.js", "d3.drag")
-  @js.native
-  def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = js.native
+  @scala.inline
+  def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Datum | SubjectPosition]]
   
-  @JSImport("plotly.js", "d3.dragDisable")
-  @js.native
-  def dragDisable(window: Window): Unit = js.native
+  @scala.inline
+  def dragDisable(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragDisable")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.dragEnable")
-  @js.native
-  def dragEnable(window: Window): Unit = js.native
-  @JSImport("plotly.js", "d3.dragEnable")
-  @js.native
-  def dragEnable(window: Window, noClick: Boolean): Unit = js.native
+  @scala.inline
+  def dragEnable(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def dragEnable(window: Window, noClick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any], noClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.drag")
-  @js.native
-  def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = js.native
+  @scala.inline
+  def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Subject]]
   
-  @JSImport("plotly.js", "d3.dsv")
-  @js.native
-  def dsv[Columns /* <: String */](delimiter: String, url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.dsv")
-  @js.native
-  def dsv[Columns /* <: String */](delimiter: String, url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.dsv")
-  @js.native
+  @scala.inline
+  def dsv[Columns /* <: String */](delimiter: String, url: String): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def dsv[Columns /* <: String */](delimiter: String, url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def dsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     delimiter: String,
     url: String,
@@ -2484,9 +2300,8 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("plotly.js", "d3.dsv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def dsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     delimiter: String,
     url: String,
@@ -2496,11 +2311,10 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dsv")(delimiter.asInstanceOf[js.Any], url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("plotly.js", "d3.dsvFormat")
-  @js.native
-  def dsvFormat(delimiter: String): DSV = js.native
+  @scala.inline
+  def dsvFormat(delimiter: String): DSV = ^.asInstanceOf[js.Dynamic].applyDynamic("dsvFormat")(delimiter.asInstanceOf[js.Any]).asInstanceOf[DSV]
   
   @JSImport("plotly.js", "d3.easeBack")
   @js.native
@@ -2509,9 +2323,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeBack")
-  @js.native
-  def easeBack(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBack(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBack")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeBackIn")
   @js.native
@@ -2520,9 +2333,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeBackIn")
-  @js.native
-  def easeBackIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBackIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBackIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeBackInOut")
   @js.native
@@ -2531,9 +2343,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeBackInOut")
-  @js.native
-  def easeBackInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBackInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBackInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeBackOut")
   @js.native
@@ -2542,57 +2353,44 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeBackOut")
-  @js.native
-  def easeBackOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBackOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBackOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeBounce")
-  @js.native
-  def easeBounce(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBounce(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounce")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeBounceIn")
-  @js.native
-  def easeBounceIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBounceIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeBounceInOut")
-  @js.native
-  def easeBounceInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBounceInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeBounceOut")
-  @js.native
-  def easeBounceOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeBounceOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCircle")
-  @js.native
-  def easeCircle(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCircle(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircle")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCircleIn")
-  @js.native
-  def easeCircleIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCircleIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCircleInOut")
-  @js.native
-  def easeCircleInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCircleInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCircleOut")
-  @js.native
-  def easeCircleOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCircleOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCubic")
-  @js.native
-  def easeCubic(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCubic(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubic")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCubicIn")
-  @js.native
-  def easeCubicIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCubicIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCubicInOut")
-  @js.native
-  def easeCubicInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCubicInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeCubicOut")
-  @js.native
-  def easeCubicOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeCubicOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeElastic")
   @js.native
@@ -2601,9 +2399,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeElastic")
-  @js.native
-  def easeElastic(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeElastic(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeElastic")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeElasticIn")
   @js.native
@@ -2612,9 +2409,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeElasticIn")
-  @js.native
-  def easeElasticIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeElasticIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeElasticIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeElasticInOut")
   @js.native
@@ -2623,9 +2419,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeElasticInOut")
-  @js.native
-  def easeElasticInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeElasticInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeElasticInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easeElasticOut")
   @js.native
@@ -2634,29 +2429,23 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easeElasticOut")
-  @js.native
-  def easeElasticOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeElasticOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeElasticOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeExp")
-  @js.native
-  def easeExp(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeExp(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExp")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeExpIn")
-  @js.native
-  def easeExpIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeExpIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeExpInOut")
-  @js.native
-  def easeExpInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeExpInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeExpOut")
-  @js.native
-  def easeExpOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeExpOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeLinear")
-  @js.native
-  def easeLinear(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeLinear(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeLinear")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easePoly")
   @js.native
@@ -2665,9 +2454,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easePoly")
-  @js.native
-  def easePoly(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easePoly(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easePoly")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easePolyIn")
   @js.native
@@ -2676,9 +2464,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easePolyIn")
-  @js.native
-  def easePolyIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easePolyIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easePolyIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easePolyInOut")
   @js.native
@@ -2687,9 +2474,8 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easePolyInOut")
-  @js.native
-  def easePolyInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easePolyInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easePolyInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("plotly.js", "d3.easePolyOut")
   @js.native
@@ -2698,601 +2484,459 @@ object d3 {
     * Calculate eased time.
     * @param normalizedTime Normalized time typically in the range [0, 1]
     */
-  @JSImport("plotly.js", "d3.easePolyOut")
-  @js.native
-  def easePolyOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easePolyOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easePolyOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeQuad")
-  @js.native
-  def easeQuad(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeQuad(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuad")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeQuadIn")
-  @js.native
-  def easeQuadIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeQuadIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeQuadInOut")
-  @js.native
-  def easeQuadInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeQuadInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeQuadOut")
-  @js.native
-  def easeQuadOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeQuadOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeSin")
-  @js.native
-  def easeSin(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeSin(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSin")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeSinIn")
-  @js.native
-  def easeSinIn(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeSinIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeSinInOut")
-  @js.native
-  def easeSinInOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeSinInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.easeSinOut")
-  @js.native
-  def easeSinOut(normalizedTime: Double): Double = js.native
+  @scala.inline
+  def easeSinOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.every")
-  @js.native
+  @scala.inline
   def every[T](
     iterable: Iterable[T],
-    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
-  ): Boolean = js.native
+    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.extent")
-  @js.native
-  def extent(iterable: Iterable[String]): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
-  @JSImport("plotly.js", "d3.extent")
-  @js.native
+  @scala.inline
+  def extent(iterable: Iterable[String]): js.Tuple2[String | Unit, String | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
+  @scala.inline
   def extent[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
-  ): js.Tuple2[js.UndefOr[String], js.UndefOr[String]] = js.native
-  @JSImport("plotly.js", "d3.extent")
-  @js.native
+  ): js.Tuple2[String | Unit, String | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
+  
+  @scala.inline
   def extent_TU_Numeric[T, U /* <: Numeric */](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
-  ): js.Tuple2[js.UndefOr[U], js.UndefOr[U]] = js.native
-  @JSImport("plotly.js", "d3.extent")
-  @js.native
-  def extent_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.Tuple2[js.UndefOr[T], js.UndefOr[T]] = js.native
+  ): js.Tuple2[U | Unit, U | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[U | Unit, U | Unit]]
   
-  @JSImport("plotly.js", "d3.filter")
-  @js.native
+  @scala.inline
+  def extent_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.Tuple2[T | Unit, T | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T | Unit, T | Unit]]
+  
+  @scala.inline
   def filter[T](
     iterable: Iterable[T],
-    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
-  ): js.Array[T] = js.native
+    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: js.UndefOr[scala.Nothing], y: Double): ForceCenter_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = js.native
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")().asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any]).asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Unit, y: Double): ForceCenter_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceCenter_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.forceCollide")
-  @js.native
-  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceCollide")
-  @js.native
+  @scala.inline
+  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")().asInstanceOf[ForceCollide_[NodeDatum]]
+  @scala.inline
   def forceCollide[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double]
-  ): ForceCollide_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceCollide")
-  @js.native
-  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide_[NodeDatum] = js.native
+  ): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceCollide_[NodeDatum]]
+  @scala.inline
+  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceCollide_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.forceLink")
-  @js.native
-  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink_[NodeDatum, LinksDatum] = js.native
-  @JSImport("plotly.js", "d3.forceLink")
-  @js.native
-  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink_[NodeDatum, LinksDatum] = js.native
+  @scala.inline
+  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink_[NodeDatum, LinksDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLink")().asInstanceOf[ForceLink_[NodeDatum, LinksDatum]]
+  @scala.inline
+  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink_[NodeDatum, LinksDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLink")(links.asInstanceOf[js.Any]).asInstanceOf[ForceLink_[NodeDatum, LinksDatum]]
   
-  @JSImport("plotly.js", "d3.forceManyBody")
-  @js.native
-  def forceManyBody[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody_[NodeDatum] = js.native
+  @scala.inline
+  def forceManyBody[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceManyBody")().asInstanceOf[ForceManyBody_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
-    x: js.UndefOr[scala.Nothing],
-    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
-    x: js.UndefOr[scala.Nothing],
-    y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double,
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: Double,
-    x: js.UndefOr[scala.Nothing],
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: Unit,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: js.UndefOr[scala.Nothing], y: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: Unit,
+    y: Double
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceRadial_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: Double,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
+    radius: Double,
+    x: Unit,
+    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Unit, y: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.forceSimulation")
-  @js.native
-  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.forceSimulation")
-  @js.native
-  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.forceSimulation")
-  @js.native
-  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = js.native
-  @JSImport("plotly.js", "d3.forceSimulation")
-  @js.native
-  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = js.native
+  @scala.inline
+  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, Unit]]
+  @scala.inline
+  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, Unit]]
   
-  @JSImport("plotly.js", "d3.forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceX_[NodeDatum] = js.native
+  @scala.inline
+  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, LinkDatum]]
+  @scala.inline
+  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, LinkDatum]]
   
-  @JSImport("plotly.js", "d3.forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](): ForceY_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY_[NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY_[NodeDatum] = js.native
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")().asInstanceOf[ForceX_[NodeDatum]]
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")(x.asInstanceOf[js.Any]).asInstanceOf[ForceX_[NodeDatum]]
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")(x.asInstanceOf[js.Any]).asInstanceOf[ForceX_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.format")
-  @js.native
-  def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = js.native
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")().asInstanceOf[ForceY_[NodeDatum]]
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")(y.asInstanceOf[js.Any]).asInstanceOf[ForceY_[NodeDatum]]
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")(y.asInstanceOf[js.Any]).asInstanceOf[ForceY_[NodeDatum]]
   
-  @JSImport("plotly.js", "d3.formatDefaultLocale")
-  @js.native
-  def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = js.native
+  @scala.inline
+  def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @JSImport("plotly.js", "d3.formatLocale")
-  @js.native
-  def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = js.native
+  @scala.inline
+  def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDefaultLocale")(defaultLocale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @JSImport("plotly.js", "d3.formatPrefix")
-  @js.native
-  def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = js.native
+  @scala.inline
+  def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @JSImport("plotly.js", "d3.formatSpecifier")
-  @js.native
-  def formatSpecifier(specifier: String): typings.d3Format.mod.FormatSpecifier_ = js.native
+  @scala.inline
+  def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPrefix")(specifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @JSImport("plotly.js", "d3.fsum")
-  @js.native
-  def fsum[T /* <: Numeric */](values: Iterable[js.UndefOr[T | Null]]): Double = js.native
-  @JSImport("plotly.js", "d3.fsum")
-  @js.native
+  @scala.inline
+  def formatSpecifier(specifier: String): typings.d3Format.mod.FormatSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSpecifier")(specifier.asInstanceOf[js.Any]).asInstanceOf[typings.d3Format.mod.FormatSpecifier_]
+  
+  @scala.inline
+  def fsum[T /* <: Numeric */](values: Iterable[js.UndefOr[T | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fsum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def fsum[T](
     values: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fsum")(values.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.geoAlbers")
-  @js.native
-  def geoAlbers(): GeoConicProjection = js.native
+  @scala.inline
+  def geoAlbers(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbers")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("plotly.js", "d3.geoAlbersUsa")
-  @js.native
-  def geoAlbersUsa(): GeoProjection_ = js.native
+  @scala.inline
+  def geoAlbersUsa(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbersUsa")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
-  @JSImport("plotly.js", "d3.geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
-  @JSImport("plotly.js", "d3.geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
-  @JSImport("plotly.js", "d3.geoArea")
-  @js.native
-  def geoArea(`object`: GeoGeometryObjects): Double = js.native
+  @scala.inline
+  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.geoAzimuthalEqualArea")
-  @js.native
-  def geoAzimuthalEqualArea(): GeoProjection_ = js.native
+  @scala.inline
+  def geoAzimuthalEqualArea(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualArea")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoAzimuthalEqualAreaRaw")
-  @js.native
-  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualAreaRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoAzimuthalEquidistant")
-  @js.native
-  def geoAzimuthalEquidistant(): GeoProjection_ = js.native
+  @scala.inline
+  def geoAzimuthalEquidistant(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistant")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoAzimuthalEquidistantRaw")
-  @js.native
-  def geoAzimuthalEquidistantRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoAzimuthalEquidistantRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistantRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.geoBounds")
-  @js.native
-  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = js.native
-  @JSImport("plotly.js", "d3.geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = js.native
-  @JSImport("plotly.js", "d3.geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = js.native
-  @JSImport("plotly.js", "d3.geoCentroid")
-  @js.native
-  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("plotly.js", "d3.geoCircle")
-  @js.native
-  def geoCircle(): GeoCircleGenerator[_, _] = js.native
-  @JSImport("plotly.js", "d3.geoCircle")
-  @js.native
-  def geoCircle_Datum[Datum](): GeoCircleGenerator[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.geoCircle")
-  @js.native
-  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = js.native
+  @scala.inline
+  def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
   
-  @JSImport("plotly.js", "d3.geoClipAntimeridian")
-  @js.native
-  def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = js.native
+  @scala.inline
+  def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
   
-  @JSImport("plotly.js", "d3.geoClipCircle")
-  @js.native
-  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+  @scala.inline
+  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
   
-  @JSImport("plotly.js", "d3.geoClipRectangle")
-  @js.native
-  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+  @scala.inline
+  def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipAntimeridian")(stream.asInstanceOf[js.Any]).asInstanceOf[GeoStream_]
   
-  @JSImport("plotly.js", "d3.geoConicConformal")
-  @js.native
-  def geoConicConformal(): GeoConicProjection = js.native
+  @scala.inline
+  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipCircle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @JSImport("plotly.js", "d3.geoConicConformalRaw")
-  @js.native
-  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoClipRectangle")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @JSImport("plotly.js", "d3.geoConicEqualArea")
-  @js.native
-  def geoConicEqualArea(): GeoConicProjection = js.native
+  @scala.inline
+  def geoConicConformal(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformal")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("plotly.js", "d3.geoConicEqualAreaRaw")
-  @js.native
-  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformalRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoConicEquidistant")
-  @js.native
-  def geoConicEquidistant(): GeoConicProjection = js.native
+  @scala.inline
+  def geoConicEqualArea(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualArea")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("plotly.js", "d3.geoConicEquidistantRaw")
-  @js.native
-  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualAreaRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoContains")
-  @js.native
+  @scala.inline
+  def geoConicEquidistant(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistant")().asInstanceOf[GeoConicProjection]
+  
+  @scala.inline
+  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistantRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  
+  @scala.inline
   def geoContains(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     point: js.Tuple2[Double, Double]
-  ): Boolean = js.native
-  @JSImport("plotly.js", "d3.geoContains")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def geoContains(
     `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties],
     point: js.Tuple2[Double, Double]
-  ): Boolean = js.native
-  @JSImport("plotly.js", "d3.geoContains")
-  @js.native
-  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = js.native
-  @JSImport("plotly.js", "d3.geoContains")
-  @js.native
-  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.geoDistance")
-  @js.native
-  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = js.native
+  @scala.inline
+  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.geoEqualEarth")
-  @js.native
-  def geoEqualEarth(): GeoProjection_ = js.native
+  @scala.inline
+  def geoEqualEarth(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarth")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoEqualEarthRaw")
-  @js.native
-  def geoEqualEarthRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoEqualEarthRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarthRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoEquirectangular")
-  @js.native
-  def geoEquirectangular(): GeoProjection_ = js.native
+  @scala.inline
+  def geoEquirectangular(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangular")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoEquirectangularRaw")
-  @js.native
-  def geoEquirectangularRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoEquirectangularRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangularRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoGnomonic")
-  @js.native
-  def geoGnomonic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoGnomonic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonic")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoGnomonicRaw")
-  @js.native
-  def geoGnomonicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoGnomonicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonicRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoGraticule")
-  @js.native
-  def geoGraticule(): GeoGraticuleGenerator = js.native
+  @scala.inline
+  def geoGraticule(): GeoGraticuleGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule")().asInstanceOf[GeoGraticuleGenerator]
   
-  @JSImport("plotly.js", "d3.geoGraticule10")
-  @js.native
-  def geoGraticule10(): MultiLineString = js.native
+  @scala.inline
+  def geoGraticule10(): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule10")().asInstanceOf[MultiLineString]
   
-  @JSImport("plotly.js", "d3.geoIdentity")
-  @js.native
-  def geoIdentity(): GeoIdentityTransform = js.native
+  @scala.inline
+  def geoIdentity(): GeoIdentityTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("geoIdentity")().asInstanceOf[GeoIdentityTransform]
   
-  @JSImport("plotly.js", "d3.geoInterpolate")
-  @js.native
-  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoInterpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
-  @JSImport("plotly.js", "d3.geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
-  @JSImport("plotly.js", "d3.geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
-  @JSImport("plotly.js", "d3.geoLength")
-  @js.native
-  def geoLength(`object`: GeoGeometryObjects): Double = js.native
+  @scala.inline
+  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.geoMercator")
-  @js.native
-  def geoMercator(): GeoProjection_ = js.native
+  @scala.inline
+  def geoMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercator")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoMercatorRaw")
-  @js.native
-  def geoMercatorRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercatorRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoNaturalEarth1")
-  @js.native
-  def geoNaturalEarth1(): GeoProjection_ = js.native
+  @scala.inline
+  def geoNaturalEarth1(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoNaturalEarth1Raw")
-  @js.native
-  def geoNaturalEarth1Raw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoNaturalEarth1Raw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1Raw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoOrthographic")
-  @js.native
-  def geoOrthographic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoOrthographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographic")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoOrthographicRaw")
-  @js.native
-  def geoOrthographicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: Null, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: GeoProjection_): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: GeoStreamWrapper): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = js.native
-  @JSImport("plotly.js", "d3.geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = js.native
+  @scala.inline
+  def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
   
-  @JSImport("plotly.js", "d3.geoProjection")
-  @js.native
-  def geoProjection(project: GeoRawProjection): GeoProjection_ = js.native
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
   
-  @JSImport("plotly.js", "d3.geoProjectionMutator")
-  @js.native
-  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = js.native
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
   
-  @JSImport("plotly.js", "d3.geoRotation")
-  @js.native
-  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = js.native
-  @JSImport("plotly.js", "d3.geoRotation")
-  @js.native
-  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = js.native
+  @scala.inline
+  def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoStereographic")
-  @js.native
-  def geoStereographic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
   
-  @JSImport("plotly.js", "d3.geoStereographicRaw")
-  @js.native
-  def geoStereographicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
+  @scala.inline
+  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
   
-  @JSImport("plotly.js", "d3.geoStream")
-  @js.native
+  @scala.inline
+  def geoStereographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographic")().asInstanceOf[GeoProjection_]
+  
+  @scala.inline
+  def geoStereographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographicRaw")().asInstanceOf[GeoRawProjection]
+  
+  @scala.inline
   def geoStream(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     stream: GeoStream_
-  ): Unit = js.native
-  @JSImport("plotly.js", "d3.geoStream")
-  @js.native
-  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = js.native
-  @JSImport("plotly.js", "d3.geoStream")
-  @js.native
-  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = js.native
-  @JSImport("plotly.js", "d3.geoStream")
-  @js.native
-  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.geoTransform")
-  @js.native
-  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = js.native
+  @scala.inline
+  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransform")(methods.asInstanceOf[js.Any]).asInstanceOf[`0`[T]]
   
-  @JSImport("plotly.js", "d3.geoTransverseMercator")
-  @js.native
-  def geoTransverseMercator(): GeoProjection_ = js.native
+  @scala.inline
+  def geoTransverseMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercator")().asInstanceOf[GeoProjection_]
   
-  @JSImport("plotly.js", "d3.geoTransverseMercatorRaw")
-  @js.native
-  def geoTransverseMercatorRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoTransverseMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercatorRaw")().asInstanceOf[GeoRawProjection]
   
   /**
     * Constructs a new CIELAB color with the specified l value and a = b = 0.
@@ -3300,70 +2944,56 @@ object d3 {
     * @param l Lightness typically in the range [0, 100].
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.gray")
-  @js.native
-  def gray(l: Double): LabColor = js.native
+  @scala.inline
+  def gray(l: Double): LabColor = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(l.asInstanceOf[js.Any]).asInstanceOf[LabColor]
   /**
     * Constructs a new CIELAB color with the specified l value and a = b = 0.
     *
     * @param l Lightness typically in the range [0, 100].
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.gray")
-  @js.native
-  def gray(l: Double, opacity: Double): LabColor = js.native
+  @scala.inline
+  def gray(l: Double, opacity: Double): LabColor = (^.asInstanceOf[js.Dynamic].applyDynamic("gray")(l.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[LabColor]
   
-  @JSImport("plotly.js", "d3.greatest")
-  @js.native
-  def greatest[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
-  @JSImport("plotly.js", "d3.greatest")
-  @js.native
-  def greatest[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = js.native
-  @JSImport("plotly.js", "d3.greatest")
-  @js.native
-  def greatest[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = js.native
+  @scala.inline
+  def greatest[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def greatest[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def greatest[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("plotly.js", "d3.greatestIndex")
-  @js.native
-  def greatestIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.greatestIndex")
-  @js.native
-  def greatestIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.greatestIndex")
-  @js.native
-  def greatestIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = js.native
+  @scala.inline
+  def greatestIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def greatestIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def greatestIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.group")
-  @js.native
-  def group[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, js.Array[TObject]] = js.native
-  @JSImport("plotly.js", "d3.group")
-  @js.native
+  @scala.inline
+  def group[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, js.Array[TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, js.Array[TObject]]]
+  @scala.inline
   def group[TObject, TKey1, TKey2](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): Map[TKey1, Map[TKey2, js.Array[TObject]]] = js.native
-  @JSImport("plotly.js", "d3.group")
-  @js.native
+  ): Map[TKey1, Map[TKey2, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, js.Array[TObject]]]]
+  @scala.inline
   def group[TObject, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2],
     key3: js.Function1[/* value */ TObject, TKey3]
-  ): Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]] = js.native
+  ): Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]]]
   
-  @JSImport("plotly.js", "d3.groups")
-  @js.native
-  def groups[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = js.native
-  @JSImport("plotly.js", "d3.groups")
-  @js.native
+  @scala.inline
+  def groups[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, js.Array[TObject]]]]
+  @scala.inline
   def groups[TObject, TKey1, TKey2](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]] = js.native
-  @JSImport("plotly.js", "d3.groups")
-  @js.native
+  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]]]
+  @scala.inline
   def groups[TObject, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
@@ -3371,14 +3001,15 @@ object d3 {
     key3: js.Function1[/* value */ TObject, TKey3]
   ): js.Array[
     js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, js.Array[TObject]]]]]]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, js.Array[TObject]]]]]]
+  ]]
   
   @JSImport("plotly.js", "d3.hcl")
   @js.native
   val hcl: HCLColorFactory = js.native
-  @JSImport("plotly.js", "d3.hcl")
-  @js.native
-  def hcl(color: ColorCommonInstance): HCLColor = js.native
+  @scala.inline
+  def hcl(color: ColorCommonInstance): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hcl")(color.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Converts the provided color instance and returns an HCL color.
     * The color instance is converted to the RGB color space using color.rgb and then converted to HCL.
@@ -3387,18 +3018,16 @@ object d3 {
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.hcl")
-  @js.native
-  def hcl(color: ColorSpaceObject): HCLColor = js.native
+  @scala.inline
+  def hcl(color: ColorSpaceObject): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hcl")(color.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an HCL color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.hcl")
-  @js.native
-  def hcl(cssColorSpecifier: String): HCLColor = js.native
+  @scala.inline
+  def hcl(cssColorSpecifier: String): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hcl")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Constructs a new HCL color based on the specified channel values and opacity.
     *
@@ -3407,30 +3036,30 @@ object d3 {
     * @param l Luminance channel value typically in the range [0, 100].
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.hcl")
-  @js.native
-  def hcl(h: Double, c: Double, l: Double): HCLColor = js.native
-  @JSImport("plotly.js", "d3.hcl")
-  @js.native
-  def hcl(h: Double, c: Double, l: Double, opacity: Double): HCLColor = js.native
+  @scala.inline
+  def hcl(h: Double, c: Double, l: Double): HCLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("hcl")(h.asInstanceOf[js.Any], c.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[HCLColor]
+  @scala.inline
+  def hcl(h: Double, c: Double, l: Double, opacity: Double): HCLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("hcl")(h.asInstanceOf[js.Any], c.asInstanceOf[js.Any], l.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[HCLColor]
   
-  @JSImport("plotly.js", "d3.hierarchy")
-  @js.native
-  def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = js.native
-  @JSImport("plotly.js", "d3.hierarchy")
-  @js.native
-  def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = js.native
+  @scala.inline
+  def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
+  @scala.inline
+  def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
   
-  @JSImport("plotly.js", "d3.histogram")
-  @js.native
-  def histogram(): HistogramGeneratorNumber[Double, Double] = js.native
+  @scala.inline
+  def histogram(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
+  
+  @scala.inline
+  def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+  
+  @scala.inline
+  def `histogram_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
   
   @JSImport("plotly.js", "d3.hsl")
   @js.native
   val hsl: HSLColorFactory = js.native
-  @JSImport("plotly.js", "d3.hsl")
-  @js.native
-  def hsl(color: ColorCommonInstance): HSLColor = js.native
+  @scala.inline
+  def hsl(color: ColorCommonInstance): HSLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(color.asInstanceOf[js.Any]).asInstanceOf[HSLColor]
   /**
     * Converts the provided color instance and returns an HSL color.
     * The color instance is converted to the RGB color space using color.rgb and then converted to HSL.
@@ -3438,18 +3067,16 @@ object d3 {
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.hsl")
-  @js.native
-  def hsl(color: ColorSpaceObject): HSLColor = js.native
+  @scala.inline
+  def hsl(color: ColorSpaceObject): HSLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(color.asInstanceOf[js.Any]).asInstanceOf[HSLColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an HSL color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.hsl")
-  @js.native
-  def hsl(cssColorSpecifier: String): HSLColor = js.native
+  @scala.inline
+  def hsl(cssColorSpecifier: String): HSLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[HSLColor]
   /**
     * Constructs a new HSL color based on the specified channel values and opacity.
     *
@@ -3458,58 +3085,46 @@ object d3 {
     * @param l Lightness channel value.
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.hsl")
-  @js.native
-  def hsl(h: Double, s: Double, l: Double): HSLColor = js.native
-  @JSImport("plotly.js", "d3.hsl")
-  @js.native
-  def hsl(h: Double, s: Double, l: Double, opacity: Double): HSLColor = js.native
+  @scala.inline
+  def hsl(h: Double, s: Double, l: Double): HSLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[HSLColor]
+  @scala.inline
+  def hsl(h: Double, s: Double, l: Double, opacity: Double): HSLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[HSLColor]
   
-  @JSImport("plotly.js", "d3.html")
-  @js.native
-  def html(url: String): js.Promise[Document] = js.native
-  @JSImport("plotly.js", "d3.html")
-  @js.native
-  def html(url: String, init: RequestInit): js.Promise[Document] = js.native
+  @scala.inline
+  def html(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def html(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   
-  @JSImport("plotly.js", "d3.image")
-  @js.native
-  def image(url: String): js.Promise[HTMLImageElement] = js.native
-  @JSImport("plotly.js", "d3.image")
-  @js.native
-  def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = js.native
+  @scala.inline
+  def image(url: String): js.Promise[HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLImageElement]]
+  @scala.inline
+  def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLImageElement]]
   
-  @JSImport("plotly.js", "d3.index")
-  @js.native
-  def index[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, TObject] = js.native
-  @JSImport("plotly.js", "d3.index")
-  @js.native
+  @scala.inline
+  def index[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, TObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, TObject]]
+  @scala.inline
   def index[TObject, TKey1, TKey2](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): Map[TKey1, Map[TKey2, TObject]] = js.native
-  @JSImport("plotly.js", "d3.index")
-  @js.native
+  ): Map[TKey1, Map[TKey2, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, TObject]]]
+  @scala.inline
   def index[TObject, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2],
     key3: js.Function1[/* value */ TObject, TKey3]
-  ): Map[TKey1, Map[TKey2, Map[TKey3, TObject]]] = js.native
+  ): Map[TKey1, Map[TKey2, Map[TKey3, TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, TObject]]]]
   
-  @JSImport("plotly.js", "d3.indexes")
-  @js.native
-  def indexes[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, TObject]] = js.native
-  @JSImport("plotly.js", "d3.indexes")
-  @js.native
+  @scala.inline
+  def indexes[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TObject]]]
+  @scala.inline
   def indexes[TObject, TKey1, TKey2](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]] = js.native
-  @JSImport("plotly.js", "d3.indexes")
-  @js.native
+  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]]]
+  @scala.inline
   def indexes[TObject, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     key1: js.Function1[/* value */ TObject, TKey1],
@@ -3517,632 +3132,453 @@ object d3 {
     key3: js.Function1[/* value */ TObject, TKey3]
   ): js.Array[
     js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TObject]]]]]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TObject]]]]]
+  ]]
   
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
-  @JSImport("plotly.js", "d3.interpolate")
-  @js.native
-  def interpolate[U /* <: js.Array[_] */](a: js.Array[_], b: U): js.Function1[/* t */ Double, U] = js.native
+  @scala.inline
+  def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Boolean]]
+  @scala.inline
+  def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Null]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
+  @scala.inline
+  def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
+  @scala.inline
+  def interpolate[U /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
   
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("plotly.js", "d3.interpolateArray")
-  @js.native
-  def interpolateArray[A /* <: js.Array[_] */](a: js.Array[_], b: A): ArrayInterpolator[A] = js.native
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateArray[A /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: A): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
   
-  @JSImport("plotly.js", "d3.interpolateBasis")
-  @js.native
-  def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBasis")(splineNodes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("plotly.js", "d3.interpolateBasisClosed")
-  @js.native
-  def interpolateBasisClosed(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateBasisClosed(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBasisClosed")(splineNodes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("plotly.js", "d3.interpolateBlues")
-  @js.native
-  def interpolateBlues(t: Double): String = js.native
+  @scala.inline
+  def interpolateBlues(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBlues")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateBrBG")
-  @js.native
-  def interpolateBrBG(t: Double): String = js.native
+  @scala.inline
+  def interpolateBrBG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBrBG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateBuGn")
-  @js.native
-  def interpolateBuGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateBuPu")
-  @js.native
-  def interpolateBuPu(t: Double): String = js.native
+  @scala.inline
+  def interpolateBuPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBuPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateCividis")
-  @js.native
-  def interpolateCividis(t: Double): String = js.native
+  @scala.inline
+  def interpolateCividis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCividis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateCool")
-  @js.native
-  def interpolateCool(t: Double): String = js.native
+  @scala.inline
+  def interpolateCool(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCool")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("plotly.js", "d3.interpolateCubehelix")
   @js.native
   val interpolateCubehelix: ColorGammaInterpolationFactory = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelix")
-  @js.native
-  def interpolateCubehelix(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelix")
-  @js.native
-  def interpolateCubehelix(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelix")
-  @js.native
-  def interpolateCubehelix(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelix")
-  @js.native
-  def interpolateCubehelix(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateCubehelix(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelix(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelix(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelix(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateCubehelixDefault")
-  @js.native
-  def interpolateCubehelixDefault(t: Double): String = js.native
+  @scala.inline
+  def interpolateCubehelixDefault(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixDefault")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("plotly.js", "d3.interpolateCubehelixLong")
   @js.native
   val interpolateCubehelixLong: ColorGammaInterpolationFactory = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelixLong")
-  @js.native
-  def interpolateCubehelixLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelixLong")
-  @js.native
-  def interpolateCubehelixLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelixLong")
-  @js.native
-  def interpolateCubehelixLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateCubehelixLong")
-  @js.native
-  def interpolateCubehelixLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateCubehelixLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelixLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelixLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateCubehelixLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateCubehelixLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateDate")
-  @js.native
-  def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = js.native
+  @scala.inline
+  def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
   
-  @JSImport("plotly.js", "d3.interpolateDiscrete")
-  @js.native
-  def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = js.native
+  @scala.inline
+  def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDiscrete")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, T]]
   
-  @JSImport("plotly.js", "d3.interpolateGnBu")
-  @js.native
-  def interpolateGnBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateGreens")
-  @js.native
-  def interpolateGreens(t: Double): String = js.native
+  @scala.inline
+  def interpolateGreens(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreens")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateGreys")
-  @js.native
-  def interpolateGreys(t: Double): String = js.native
+  @scala.inline
+  def interpolateGreys(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateGreys")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateHcl")
-  @js.native
-  def interpolateHcl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHcl")
-  @js.native
-  def interpolateHcl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHcl")
-  @js.native
-  def interpolateHcl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHcl")
-  @js.native
-  def interpolateHcl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHcl(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHcl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHcl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHclLong")
-  @js.native
-  def interpolateHclLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHclLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHclLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHclLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateHsl")
-  @js.native
-  def interpolateHsl(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHsl")
-  @js.native
-  def interpolateHsl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHsl")
-  @js.native
-  def interpolateHsl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHsl")
-  @js.native
-  def interpolateHsl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHsl(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsl(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsl")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateHslLong")
-  @js.native
-  def interpolateHslLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHslLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHslLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHslLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateHue")
-  @js.native
-  def interpolateHue(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateHue(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHue")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("plotly.js", "d3.interpolateInferno")
-  @js.native
-  def interpolateInferno(t: Double): String = js.native
+  @scala.inline
+  def interpolateInferno(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateInferno")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateLab")
-  @js.native
-  def interpolateLab(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateLab")
-  @js.native
-  def interpolateLab(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateLab")
-  @js.native
-  def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateLab")
-  @js.native
-  def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateLab(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateLab(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateLab")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateMagma")
-  @js.native
-  def interpolateMagma(t: Double): String = js.native
+  @scala.inline
+  def interpolateMagma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateMagma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateNumber")
-  @js.native
-  def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumber")
-  @js.native
-  def interpolateNumber(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumber")
-  @js.native
-  def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumber")
-  @js.native
-  def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateNumber(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = js.native
-  @JSImport("plotly.js", "d3.interpolateNumberArray")
-  @js.native
-  def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = js.native
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
+  @scala.inline
+  def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
   
-  @JSImport("plotly.js", "d3.interpolateObject")
-  @js.native
-  def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = js.native
+  @scala.inline
+  def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateObject")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
   
-  @JSImport("plotly.js", "d3.interpolateOrRd")
-  @js.native
-  def interpolateOrRd(t: Double): String = js.native
+  @scala.inline
+  def interpolateOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateOranges")
-  @js.native
-  def interpolateOranges(t: Double): String = js.native
+  @scala.inline
+  def interpolateOranges(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOranges")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePRGn")
-  @js.native
-  def interpolatePRGn(t: Double): String = js.native
+  @scala.inline
+  def interpolatePRGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePRGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePiYG")
-  @js.native
-  def interpolatePiYG(t: Double): String = js.native
+  @scala.inline
+  def interpolatePiYG(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePiYG")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePlasma")
-  @js.native
-  def interpolatePlasma(t: Double): String = js.native
+  @scala.inline
+  def interpolatePlasma(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePlasma")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePuBu")
-  @js.native
-  def interpolatePuBu(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePuBuGn")
-  @js.native
-  def interpolatePuBuGn(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuBuGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuBuGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePuOr")
-  @js.native
-  def interpolatePuOr(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuOr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuOr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePuRd")
-  @js.native
-  def interpolatePuRd(t: Double): String = js.native
+  @scala.inline
+  def interpolatePuRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePuRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolatePurples")
-  @js.native
-  def interpolatePurples(t: Double): String = js.native
+  @scala.inline
+  def interpolatePurples(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePurples")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRainbow")
-  @js.native
-  def interpolateRainbow(t: Double): String = js.native
+  @scala.inline
+  def interpolateRainbow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRainbow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRdBu")
-  @js.native
-  def interpolateRdBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRdGy")
-  @js.native
-  def interpolateRdGy(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdGy(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdGy")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRdPu")
-  @js.native
-  def interpolateRdPu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdPu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdPu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRdYlBu")
-  @js.native
-  def interpolateRdYlBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdYlBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateRdYlGn")
-  @js.native
-  def interpolateRdYlGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateRdYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRdYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateReds")
-  @js.native
-  def interpolateReds(t: Double): String = js.native
+  @scala.inline
+  def interpolateReds(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateReds")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("plotly.js", "d3.interpolateRgb")
   @js.native
   val interpolateRgb: ColorGammaInterpolationFactory = js.native
-  @JSImport("plotly.js", "d3.interpolateRgb")
-  @js.native
-  def interpolateRgb(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateRgb")
-  @js.native
-  def interpolateRgb(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateRgb")
-  @js.native
-  def interpolateRgb(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateRgb")
-  @js.native
-  def interpolateRgb(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateRgb(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateRgb(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateRgb(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateRgb(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateRgbBasis")
-  @js.native
-  def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateRgbBasis(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgbBasis")(colors.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateRgbBasisClosed")
-  @js.native
-  def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateRgbBasisClosed(colors: js.Array[String | ColorCommonInstance]): js.Function1[/* t */ Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRgbBasisClosed")(colors.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateRound")
-  @js.native
-  def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateRound")
-  @js.native
-  def interpolateRound(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateRound")
-  @js.native
-  def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = js.native
-  @JSImport("plotly.js", "d3.interpolateRound")
-  @js.native
-  def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def interpolateRound(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
+  @scala.inline
+  def interpolateRound(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRound")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("plotly.js", "d3.interpolateSinebow")
-  @js.native
-  def interpolateSinebow(t: Double): String = js.native
+  @scala.inline
+  def interpolateSinebow(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSinebow")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateSpectral")
-  @js.native
-  def interpolateSpectral(t: Double): String = js.native
+  @scala.inline
+  def interpolateSpectral(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSpectral")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateString")
-  @js.native
-  def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateString")
-  @js.native
-  def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateString")
-  @js.native
-  def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("plotly.js", "d3.interpolateString")
-  @js.native
-  def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateString(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: String, b: ToString): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: ToString, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateString(a: ToString, b: ToString): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateTransformCss")
-  @js.native
-  def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTransformCss")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateTransformSvg")
-  @js.native
-  def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTransformSvg")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("plotly.js", "d3.interpolateTurbo")
-  @js.native
-  def interpolateTurbo(t: Double): String = js.native
+  @scala.inline
+  def interpolateTurbo(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateTurbo")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateViridis")
-  @js.native
-  def interpolateViridis(t: Double): String = js.native
+  @scala.inline
+  def interpolateViridis(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateViridis")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateWarm")
-  @js.native
-  def interpolateWarm(t: Double): String = js.native
+  @scala.inline
+  def interpolateWarm(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateWarm")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateYlGn")
-  @js.native
-  def interpolateYlGn(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlGn(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGn")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateYlGnBu")
-  @js.native
-  def interpolateYlGnBu(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlGnBu(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlGnBu")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateYlOrBr")
-  @js.native
-  def interpolateYlOrBr(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlOrBr(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrBr")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateYlOrRd")
-  @js.native
-  def interpolateYlOrRd(t: Double): String = js.native
+  @scala.inline
+  def interpolateYlOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateYlOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.interpolateZoom")
-  @js.native
-  def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = js.native
+  @scala.inline
+  def interpolateZoom(a: ZoomView, b: ZoomView): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateZoom")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
   
-  @JSImport("plotly.js", "d3.interrupt")
-  @js.native
-  def interrupt(node: BaseType): Unit = js.native
-  @JSImport("plotly.js", "d3.interrupt")
-  @js.native
-  def interrupt(node: BaseType, name: String): Unit = js.native
+  @scala.inline
+  def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.intersection")
-  @js.native
-  def intersection[T](iterables: Iterable[T]*): Set[T] = js.native
+  @scala.inline
+  def intersection[T](iterables: Iterable[T]*): Set[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(iterables.asInstanceOf[js.Any]).asInstanceOf[Set[T]]
   
-  @JSImport("plotly.js", "d3.interval")
-  @js.native
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
-  @JSImport("plotly.js", "d3.interval")
-  @js.native
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.interval")
-  @js.native
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.interval")
-  @js.native
-  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+  @scala.inline
+  def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  @scala.inline
+  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @JSImport("plotly.js", "d3.isoFormat")
-  @js.native
-  def isoFormat(date: Date): String = js.native
+  @scala.inline
+  def isoFormat(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.isoParse")
-  @js.native
-  def isoParse(dateString: String): Date | Null = js.native
+  @scala.inline
+  def isoParse(dateString: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
   
-  @JSImport("plotly.js", "d3.json")
-  @js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
-  @JSImport("plotly.js", "d3.json")
-  @js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = js.native
+  @scala.inline
+  def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+  @scala.inline
+  def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
   
   @JSImport("plotly.js", "d3.lab")
   @js.native
   val lab: LabColorFactory = js.native
-  @JSImport("plotly.js", "d3.lab")
-  @js.native
-  def lab(color: ColorCommonInstance): LabColor = js.native
+  @scala.inline
+  def lab(color: ColorCommonInstance): LabColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(color.asInstanceOf[js.Any]).asInstanceOf[LabColor]
   /**
     * Converts the provided color instance and returns a Lab color.
     * The color instance is converted to the RGB color space using color.rgb and then converted to CIELAB.
@@ -4151,18 +3587,16 @@ object d3 {
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.lab")
-  @js.native
-  def lab(color: ColorSpaceObject): LabColor = js.native
+  @scala.inline
+  def lab(color: ColorSpaceObject): LabColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(color.asInstanceOf[js.Any]).asInstanceOf[LabColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning a Lab color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.lab")
-  @js.native
-  def lab(cssColorSpecifier: String): LabColor = js.native
+  @scala.inline
+  def lab(cssColorSpecifier: String): LabColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[LabColor]
   /**
     * Constructs a new CIELAB color based on the specified channel values and opacity.
     *
@@ -4171,16 +3605,13 @@ object d3 {
     * @param b Position between yellow and blue typically in [-160, +160].
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.lab")
-  @js.native
-  def lab(l: Double, a: Double, b: Double): LabColor = js.native
-  @JSImport("plotly.js", "d3.lab")
-  @js.native
-  def lab(l: Double, a: Double, b: Double, opacity: Double): LabColor = js.native
+  @scala.inline
+  def lab(l: Double, a: Double, b: Double): LabColor = (^.asInstanceOf[js.Dynamic].applyDynamic("lab")(l.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[LabColor]
+  @scala.inline
+  def lab(l: Double, a: Double, b: Double, opacity: Double): LabColor = (^.asInstanceOf[js.Dynamic].applyDynamic("lab")(l.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[LabColor]
   
-  @JSImport("plotly.js", "d3.lch")
-  @js.native
-  def lch(color: ColorCommonInstance): HCLColor = js.native
+  @scala.inline
+  def lch(color: ColorCommonInstance): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lch")(color.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Converts the provided color instance and returns an HCL color.
     * The color instance is converted to the RGB color space using color.rgb and then converted to HCL.
@@ -4189,18 +3620,16 @@ object d3 {
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.lch")
-  @js.native
-  def lch(color: ColorSpaceObject): HCLColor = js.native
+  @scala.inline
+  def lch(color: ColorSpaceObject): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lch")(color.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an HCL color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.lch")
-  @js.native
-  def lch(cssColorSpecifier: String): HCLColor = js.native
+  @scala.inline
+  def lch(cssColorSpecifier: String): HCLColor = ^.asInstanceOf[js.Dynamic].applyDynamic("lch")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[HCLColor]
   /**
     * Constructs a new HCL color based on the specified channel values and opacity.
     *
@@ -4209,134 +3638,103 @@ object d3 {
     * @param h Hue channel value typically in [0, 360).
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.lch")
-  @js.native
-  def lch(l: Double, c: Double, h: Double): HCLColor = js.native
-  @JSImport("plotly.js", "d3.lch")
-  @js.native
-  def lch(l: Double, c: Double, h: Double, opacity: Double): HCLColor = js.native
+  @scala.inline
+  def lch(l: Double, c: Double, h: Double): HCLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("lch")(l.asInstanceOf[js.Any], c.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[HCLColor]
+  @scala.inline
+  def lch(l: Double, c: Double, h: Double, opacity: Double): HCLColor = (^.asInstanceOf[js.Dynamic].applyDynamic("lch")(l.asInstanceOf[js.Any], c.asInstanceOf[js.Any], h.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[HCLColor]
   
-  @JSImport("plotly.js", "d3.least")
-  @js.native
-  def least[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
-  @JSImport("plotly.js", "d3.least")
-  @js.native
-  def least[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = js.native
-  @JSImport("plotly.js", "d3.least")
-  @js.native
-  def least[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = js.native
+  @scala.inline
+  def least[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def least[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def least[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("plotly.js", "d3.leastIndex")
-  @js.native
-  def leastIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.leastIndex")
-  @js.native
-  def leastIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.leastIndex")
-  @js.native
-  def leastIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = js.native
+  @scala.inline
+  def leastIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def leastIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def leastIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: js.UndefOr[scala.Nothing], y: Double): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
+  @scala.inline
+  def line[Datum](): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")().asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any]).asInstanceOf[Line_[Datum]]
+  @scala.inline
   def line[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y: Double): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: Double): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: Double, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
-  @JSImport("plotly.js", "d3.line")
-  @js.native
-  def line[Datum](x: Double, y: Double): Line_[Datum] = js.native
+  ): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any]).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double, y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Unit, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Unit, y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
   
-  @JSImport("plotly.js", "d3.lineRadial")
-  @js.native
-  def lineRadial(): LineRadial_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.lineRadial")
-  @js.native
-  def lineRadial_Datum[Datum](): LineRadial_[Datum] = js.native
+  @scala.inline
+  def lineRadial(): LineRadial_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.linkHorizontal")
-  @js.native
-  def linkHorizontal(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.linkHorizontal")
-  @js.native
-  def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.linkHorizontal")
-  @js.native
-  def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def lineRadial_Datum[Datum](): LineRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[Datum]]
   
-  @JSImport("plotly.js", "d3.linkRadial")
-  @js.native
-  def linkRadial(): LinkRadial_[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.linkRadial")
-  @js.native
-  def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.linkRadial")
-  @js.native
-  def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def linkHorizontal(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.linkVertical")
-  @js.native
-  def linkVertical(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.linkVertical")
-  @js.native
-  def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("plotly.js", "d3.linkVertical")
-  @js.native
-  def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
   
-  @JSImport("plotly.js", "d3.local")
-  @js.native
-  def local[T](): Local_[T] = js.native
+  @scala.inline
+  def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
   
-  @JSImport("plotly.js", "d3.map")
-  @js.native
+  @scala.inline
+  def linkRadial(): LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  
+  @scala.inline
+  def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, LinkDatum, NodeDatum]]
+  
+  @scala.inline
+  def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[This, LinkDatum, NodeDatum]]
+  
+  @scala.inline
+  def linkVertical(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  
+  @scala.inline
+  def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
+  
+  @scala.inline
+  def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
+  
+  @scala.inline
+  def local[T](): Local_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[Local_[T]]
+  
+  @scala.inline
   def map[T, U](
     iterable: Iterable[T],
     mapper: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], U]
-  ): js.Array[U] = js.native
+  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(iterable.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
-  @JSImport("plotly.js", "d3.matcher")
-  @js.native
-  def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = js.native
+  @scala.inline
+  def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, Boolean]]
   
-  @JSImport("plotly.js", "d3.max")
-  @js.native
-  def max(iterable: Iterable[String]): js.UndefOr[String] = js.native
-  @JSImport("plotly.js", "d3.max")
-  @js.native
+  @scala.inline
+  def max(iterable: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def max[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
-  ): js.UndefOr[String] = js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("plotly.js", "d3.maxIndex")
-  @js.native
-  def maxIndex[T](iterable: Iterable[T]): Double = js.native
-  @JSImport("plotly.js", "d3.maxIndex")
-  @js.native
+  @scala.inline
+  def maxIndex[T](iterable: Iterable[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def maxIndex[TDatum, U](
     iterable: Iterable[TDatum],
     accessor: js.Function3[
@@ -4345,57 +3743,47 @@ object d3 {
       /* array */ Iterable[TDatum], 
       js.UndefOr[U | Null]
     ]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.max")
-  @js.native
+  @scala.inline
   def max_TU_Numeric[T, U /* <: Numeric */](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
-  ): js.UndefOr[U] = js.native
-  @JSImport("plotly.js", "d3.max")
-  @js.native
-  def max_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = js.native
+  ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
   
-  @JSImport("plotly.js", "d3.mean")
-  @js.native
-  def mean[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.mean")
-  @js.native
+  @scala.inline
+  def max_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
+  @scala.inline
+  def mean[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def mean[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.median")
-  @js.native
-  def median[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.median")
-  @js.native
+  @scala.inline
+  def median[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("median")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def median[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("median")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.merge")
-  @js.native
-  def merge[T](iterables: Iterable[Iterable[T]]): js.Array[T] = js.native
+  @scala.inline
+  def merge[T](iterables: Iterable[Iterable[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(iterables.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.min")
-  @js.native
-  def min(iterable: Iterable[String]): js.UndefOr[String] = js.native
-  @JSImport("plotly.js", "d3.min")
-  @js.native
+  @scala.inline
+  def min(iterable: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def min[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
-  ): js.UndefOr[String] = js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("plotly.js", "d3.minIndex")
-  @js.native
-  def minIndex[T](iterable: Iterable[T]): Double = js.native
-  @JSImport("plotly.js", "d3.minIndex")
-  @js.native
+  @scala.inline
+  def minIndex[T](iterable: Iterable[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def minIndex[TDatum, U](
     iterable: Iterable[TDatum],
     accessor: js.Function3[
@@ -4404,229 +3792,185 @@ object d3 {
       /* array */ Iterable[TDatum], 
       js.UndefOr[U | Null]
     ]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.min")
-  @js.native
+  @scala.inline
   def min_TU_Numeric[T, U /* <: Numeric */](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
-  ): js.UndefOr[U] = js.native
-  @JSImport("plotly.js", "d3.min")
-  @js.native
-  def min_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = js.native
+  ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
   
-  @JSImport("plotly.js", "d3.namespace")
-  @js.native
-  def namespace(prefixedLocal: String): NamespaceLocalObject | String = js.native
+  @scala.inline
+  def min_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
+  @scala.inline
+  def namespace(prefixedLocal: String): NamespaceLocalObject | String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(prefixedLocal.asInstanceOf[js.Any]).asInstanceOf[NamespaceLocalObject | String]
   
   @JSImport("plotly.js", "d3.namespaces")
   @js.native
   val namespaces: NamespaceMap = js.native
   
-  @JSImport("plotly.js", "d3.nice")
-  @js.native
-  def nice(start: Double, stop: Double, count: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def nice(start: Double, stop: Double, count: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("plotly.js", "d3.now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.pack")
-  @js.native
-  def pack[Datum](): PackLayout[Datum] = js.native
+  @scala.inline
+  def pack[Datum](): PackLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[PackLayout[Datum]]
   
-  @JSImport("plotly.js", "d3.packEnclose")
-  @js.native
-  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = js.native
+  @scala.inline
+  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = ^.asInstanceOf[js.Dynamic].applyDynamic("packEnclose")(circles.asInstanceOf[js.Any]).asInstanceOf[PackCircle]
   
-  @JSImport("plotly.js", "d3.packSiblings")
-  @js.native
-  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum with PackCircle] = js.native
+  @scala.inline
+  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum & PackCircle] = ^.asInstanceOf[js.Dynamic].applyDynamic("packSiblings")(circles.asInstanceOf[js.Any]).asInstanceOf[js.Array[Datum & PackCircle]]
   
-  @JSImport("plotly.js", "d3.pairs")
-  @js.native
-  def pairs[T](iterable: Iterable[T]): js.Array[js.Tuple2[T, T]] = js.native
-  @JSImport("plotly.js", "d3.pairs")
-  @js.native
-  def pairs[T, U](iterable: Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
+  @scala.inline
+  def pairs[T](iterable: Iterable[T]): js.Array[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[T, T]]]
+  @scala.inline
+  def pairs[T, U](iterable: Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
-  @JSImport("plotly.js", "d3.partition")
-  @js.native
-  def partition[Datum](): PartitionLayout[Datum] = js.native
+  @scala.inline
+  def partition[Datum](): PartitionLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")().asInstanceOf[PartitionLayout[Datum]]
   
-  @JSImport("plotly.js", "d3.path")
-  @js.native
-  def path(): Path_ = js.native
+  @scala.inline
+  def path(): Path_ = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[Path_]
   
-  @JSImport("plotly.js", "d3.permute")
-  @js.native
-  def permute[T](source: NumberDictionary[T], keys: Iterable[Double]): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.permute")
-  @js.native
+  @scala.inline
+  def permute[T](source: NumberDictionary[T], keys: Iterable[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("permute")(source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
   def permute[T, K /* <: /* keyof T */ String */](source: T, keys: Iterable[K]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("permute")(source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ]]
   
-  @JSImport("plotly.js", "d3.pie")
-  @js.native
-  def pie(): Pie_[_, Double | typings.d3Shape.anon.ValueOf] = js.native
-  @JSImport("plotly.js", "d3.pie")
-  @js.native
-  def pie_Datum[Datum](): Pie_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.pie")
-  @js.native
-  def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = js.native
+  @scala.inline
+  def pie(): Pie_[js.Any, Double | typings.d3Shape.anon.ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Double | typings.d3Shape.anon.ValueOf]]
   
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
+  @scala.inline
+  def pie_Datum[Datum](): Pie_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Datum]]
+  
+  @scala.inline
+  def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[This, Datum]]
+  
+  @scala.inline
   def piecewise(
     interpolate: js.Function2[/* a */ ZoomView, /* b */ ZoomView, ZoomInterpolator],
     values: js.Array[ZoomView]
-  ): ZoomInterpolator = js.native
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
-  def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = js.native
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
-  def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](
-    interpolate: js.Function2[/* a */ js.Array[_], /* b */ A, ArrayInterpolator[A]],
+  ): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
+  @scala.inline
+  def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ZoomInterpolator]
+  
+  @scala.inline
+  def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](
+    interpolate: js.Function2[/* a */ js.Array[js.Any], /* b */ A, ArrayInterpolator[A]],
     values: js.Array[A]
-  ): ArrayInterpolator[A] = js.native
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
-  def piecewise_A_ArrayWildcard_ArrayInterpolator[A /* <: js.Array[_] */](values: js.Array[A]): ArrayInterpolator[A] = js.native
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
-  def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
-  @JSImport("plotly.js", "d3.piecewise")
-  @js.native
-  def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, _] = js.native
+  ): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
+  @scala.inline
+  def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
   
-  @JSImport("plotly.js", "d3.pointRadial")
-  @js.native
-  def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
   
-  @JSImport("plotly.js", "d3.pointer")
-  @js.native
-  def pointer(event: js.Any): js.Tuple2[Double, Double] = js.native
-  @JSImport("plotly.js", "d3.pointer")
-  @js.native
-  def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
   
-  @JSImport("plotly.js", "d3.pointers")
-  @js.native
-  def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.pointers")
-  @js.native
-  def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRadial")(angle.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("plotly.js", "d3.polygonArea")
-  @js.native
-  def polygonArea(polygon: js.Array[js.Tuple2[Double, Double]]): Double = js.native
+  @scala.inline
+  def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("plotly.js", "d3.polygonCentroid")
-  @js.native
-  def polygonCentroid(polygon: js.Array[js.Tuple2[Double, Double]]): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  @scala.inline
+  def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.polygonContains")
-  @js.native
-  def polygonContains(polygon: js.Array[js.Tuple2[Double, Double]], point: js.Tuple2[Double, Double]): Boolean = js.native
+  @scala.inline
+  def polygonArea(polygon: js.Array[js.Tuple2[Double, Double]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonArea")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.polygonHull")
-  @js.native
-  def polygonHull(points: js.Array[js.Tuple2[Double, Double]]): (js.Array[js.Tuple2[Double, Double]]) | Null = js.native
+  @scala.inline
+  def polygonCentroid(polygon: js.Array[js.Tuple2[Double, Double]]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonCentroid")(polygon.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("plotly.js", "d3.polygonLength")
-  @js.native
-  def polygonLength(polygon: js.Array[js.Tuple2[Double, Double]]): Double = js.native
+  @scala.inline
+  def polygonContains(polygon: js.Array[js.Tuple2[Double, Double]], point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonContains")(polygon.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.precisionFixed")
-  @js.native
-  def precisionFixed(step: Double): Double = js.native
+  @scala.inline
+  def polygonHull(points: js.Array[js.Tuple2[Double, Double]]): (js.Array[js.Tuple2[Double, Double]]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonHull")(points.asInstanceOf[js.Any]).asInstanceOf[(js.Array[js.Tuple2[Double, Double]]) | Null]
   
-  @JSImport("plotly.js", "d3.precisionPrefix")
-  @js.native
-  def precisionPrefix(step: Double, value: Double): Double = js.native
+  @scala.inline
+  def polygonLength(polygon: js.Array[js.Tuple2[Double, Double]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonLength")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.precisionRound")
-  @js.native
-  def precisionRound(step: Double, max: Double): Double = js.native
+  @scala.inline
+  def precisionFixed(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("precisionFixed")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.quadtree")
-  @js.native
-  def quadtree[T](): Quadtree_[T] = js.native
-  @JSImport("plotly.js", "d3.quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T]): Quadtree_[T] = js.native
-  @JSImport("plotly.js", "d3.quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.UndefOr[scala.Nothing], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
-  @JSImport("plotly.js", "d3.quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
-  @JSImport("plotly.js", "d3.quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
+  @scala.inline
+  def precisionPrefix(step: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionPrefix")(step.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.quantile")
-  @js.native
-  def quantile[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.quantile")
-  @js.native
+  @scala.inline
+  def precisionRound(step: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(step.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def quadtree[T](): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")().asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T]): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any]).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: Unit, y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
+  
+  @scala.inline
+  def quantile[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(iterable.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def quantile[T](
     iterable: Iterable[T],
     p: Double,
     accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(iterable.asInstanceOf[js.Any], p.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.quantileSorted")
-  @js.native
-  def quantileSorted[T /* <: Numeric */](array: js.Array[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.quantileSorted")
-  @js.native
+  @scala.inline
+  def quantileSorted[T /* <: Numeric */](array: js.Array[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantileSorted")(array.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def quantileSorted[T](
     array: js.Array[T],
     p: Double,
     accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ js.Array[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantileSorted")(array.asInstanceOf[js.Any], p.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("plotly.js", "d3.quantize")
-  @js.native
-  def quantize[T](interpolator: js.Function1[/* t */ Double, T], n: Double): js.Array[T] = js.native
+  @scala.inline
+  def quantize[T](interpolator: js.Function1[/* t */ Double, T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(interpolator.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.quickselect")
-  @js.native
-  def quickselect[T](array: ArrayLike[T], k: Double): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.quickselect")
-  @js.native
-  def quickselect[T](array: ArrayLike[T], k: Double, left: Double): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.quickselect")
-  @js.native
-  def quickselect[T](array: ArrayLike[T], k: Double, left: Double, right: Double): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.quickselect")
-  @js.native
+  @scala.inline
+  def quickselect[T](array: ArrayLike[T], k: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def quickselect[T](array: ArrayLike[T], k: Double, left: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def quickselect[T](array: ArrayLike[T], k: Double, left: Double, right: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
   def quickselect[T](
     array: ArrayLike[T],
     k: Double,
     left: Double,
     right: Double,
     compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
-  ): js.Array[T] = js.native
+  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.radialArea")
-  @js.native
-  def radialArea(): RadialArea_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.radialArea")
-  @js.native
-  def radialArea_Datum[Datum](): RadialArea_[Datum] = js.native
+  @scala.inline
+  def radialArea(): RadialArea_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialArea")().asInstanceOf[RadialArea_[js.Tuple2[Double, Double]]]
   
-  @JSImport("plotly.js", "d3.radialLine")
-  @js.native
-  def radialLine(): RadialLine_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("plotly.js", "d3.radialLine")
-  @js.native
-  def radialLine_Datum[Datum](): RadialLine_[Datum] = js.native
+  @scala.inline
+  def radialArea_Datum[Datum](): RadialArea_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialArea")().asInstanceOf[RadialArea_[Datum]]
+  
+  @scala.inline
+  def radialLine(): RadialLine_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialLine")().asInstanceOf[RadialLine_[js.Tuple2[Double, Double]]]
+  
+  @scala.inline
+  def radialLine_Datum[Datum](): RadialLine_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialLine")().asInstanceOf[RadialLine_[Datum]]
   
   @JSImport("plotly.js", "d3.randomBates")
   @js.native
@@ -4637,9 +3981,8 @@ object d3 {
     *
     * @param n Number of independent random variables to use.
     */
-  @JSImport("plotly.js", "d3.randomBates")
-  @js.native
-  def randomBates(n: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomBates(n: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBates")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomBernoulli")
   @js.native
@@ -4650,9 +3993,8 @@ object d3 {
     *
     * @param p p
     */
-  @JSImport("plotly.js", "d3.randomBernoulli")
-  @js.native
-  def randomBernoulli(p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomBernoulli(p: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBernoulli")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomBeta")
   @js.native
@@ -4663,9 +4005,8 @@ object d3 {
     * @param alpha Shape parameter
     * @param beta Shape paramter
     */
-  @JSImport("plotly.js", "d3.randomBeta")
-  @js.native
-  def randomBeta(alpha: Double, beta: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomBeta(alpha: Double, beta: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBeta")(alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomBinomial")
   @js.native
@@ -4676,9 +4017,8 @@ object d3 {
     *
     * @param p Success probability
     */
-  @JSImport("plotly.js", "d3.randomBinomial")
-  @js.native
-  def randomBinomial(p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomBinomial(p: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBinomial")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   /**
     * Returns a function for generating random numbers with a Cauchy distribution.
@@ -4687,18 +4027,14 @@ object d3 {
     * @param a Location parameter
     * @param b Scale parameter
     */
-  @JSImport("plotly.js", "d3.randomCauchy")
-  @js.native
-  def randomCauchy(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomCauchy")
-  @js.native
-  def randomCauchy(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomCauchy")
-  @js.native
-  def randomCauchy(a: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomCauchy")
-  @js.native
-  def randomCauchy(a: Double, b: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomCauchy(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomCauchy")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomCauchy(a: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomCauchy")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomCauchy(a: Double, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomCauchy")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomCauchy(a: Unit, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomCauchy")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   @JSImport("plotly.js", "d3.randomCauchy")
   @js.native
   val randomCauchy_Fd3: RandomCauchy_ = js.native
@@ -4712,9 +4048,8 @@ object d3 {
     *
     * @param lambda Expected time between events.
     */
-  @JSImport("plotly.js", "d3.randomExponential")
-  @js.native
-  def randomExponential(lambda: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomExponential(lambda: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomExponential")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomGamma")
   @js.native
@@ -4726,12 +4061,10 @@ object d3 {
     * @param k Shape parameter
     * @param theta Scale paramter
     */
-  @JSImport("plotly.js", "d3.randomGamma")
-  @js.native
-  def randomGamma(k: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomGamma")
-  @js.native
-  def randomGamma(k: Double, theta: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomGamma(k: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomGamma(k: Double, theta: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(k.asInstanceOf[js.Any], theta.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomGeometric")
   @js.native
@@ -4742,9 +4075,8 @@ object d3 {
     *
     * @param p Success probability
     */
-  @JSImport("plotly.js", "d3.randomGeometric")
-  @js.native
-  def randomGeometric(p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomGeometric(p: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomGeometric")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomInt")
   @js.native
@@ -4756,9 +4088,8 @@ object d3 {
     *
     * @param max The maximum allowed value of a returned number.
     */
-  @JSImport("plotly.js", "d3.randomInt")
-  @js.native
-  def randomInt(max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomInt(max: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(max.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   /**
     * Returns a function for generating random integers with a uniform distribution.
     * The minimum allowed value of a returned number is ⌊min⌋ (inclusive), and the maximum is ⌊max - 1⌋ (inclusive)
@@ -4767,9 +4098,8 @@ object d3 {
     * @param max The maximum allowed value of a returned number.
     */
   // tslint:disable-next-line:unified-signatures
-  @JSImport("plotly.js", "d3.randomInt")
-  @js.native
-  def randomInt(min: Double, max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomInt(min: Double, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomIrwinHall")
   @js.native
@@ -4780,16 +4110,13 @@ object d3 {
     *
     * @param n Number of independent random variables to use.
     */
-  @JSImport("plotly.js", "d3.randomIrwinHall")
-  @js.native
-  def randomIrwinHall(n: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomIrwinHall(n: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomIrwinHall")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("plotly.js", "d3.randomLcg")
-  @js.native
-  def randomLcg(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLcg")
-  @js.native
-  def randomLcg(seed: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomLcg(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLcg(seed: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   /**
     * Returns a function for generating random numbers with a log-normal distribution. The expected value of the random variable’s natural logarithm is mu,
@@ -4798,18 +4125,14 @@ object d3 {
     * @param mu Expected value, defaults to 0.
     * @param sigma Standard deviation, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.randomLogNormal")
-  @js.native
-  def randomLogNormal(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogNormal")
-  @js.native
-  def randomLogNormal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogNormal")
-  @js.native
-  def randomLogNormal(mu: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogNormal")
-  @js.native
-  def randomLogNormal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomLogNormal(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLogNormal")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogNormal(mu: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLogNormal")(mu.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogNormal(mu: Double, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomLogNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogNormal(mu: Unit, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomLogNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   @JSImport("plotly.js", "d3.randomLogNormal")
   @js.native
   val randomLogNormal_Fd3: RandomLogNormal_ = js.native
@@ -4821,18 +4144,14 @@ object d3 {
     * @param a Location parameter
     * @param b Scale parameter
     */
-  @JSImport("plotly.js", "d3.randomLogistic")
-  @js.native
-  def randomLogistic(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogistic")
-  @js.native
-  def randomLogistic(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogistic")
-  @js.native
-  def randomLogistic(a: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomLogistic")
-  @js.native
-  def randomLogistic(a: Double, b: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomLogistic(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLogistic")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogistic(a: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLogistic")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogistic(a: Double, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomLogistic")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLogistic(a: Unit, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomLogistic")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   @JSImport("plotly.js", "d3.randomLogistic")
   @js.native
   val randomLogistic_Fd3: RandomLogistic_ = js.native
@@ -4845,18 +4164,14 @@ object d3 {
     * @param mu Expected value, defaults to 0.
     * @param sigma Standard deviation, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.randomNormal")
-  @js.native
-  def randomNormal(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomNormal")
-  @js.native
-  def randomNormal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomNormal")
-  @js.native
-  def randomNormal(mu: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomNormal")
-  @js.native
-  def randomNormal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomNormal(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomNormal(mu: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(mu.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomNormal(mu: Double, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomNormal(mu: Unit, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   @JSImport("plotly.js", "d3.randomNormal")
   @js.native
   val randomNormal_Fd3: RandomNormal_ = js.native
@@ -4870,9 +4185,8 @@ object d3 {
     *
     * @param alpha alpha
     */
-  @JSImport("plotly.js", "d3.randomPareto")
-  @js.native
-  def randomPareto(alpha: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomPareto(alpha: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomPareto")(alpha.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("plotly.js", "d3.randomPoisson")
   @js.native
@@ -4882,9 +4196,8 @@ object d3 {
     *
     * @param lambda Mean
     */
-  @JSImport("plotly.js", "d3.randomPoisson")
-  @js.native
-  def randomPoisson(lambda: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomPoisson(lambda: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomPoisson")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   /**
     * Returns a function for generating random numbers with a uniform distribution.
@@ -4893,12 +4206,10 @@ object d3 {
     *
     * @param max The maximum allowed value of a returned number, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.randomUniform")
-  @js.native
-  def randomUniform(): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomUniform")
-  @js.native
-  def randomUniform(max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomUniform(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomUniform(max: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(max.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   /**
     * Returns a function for generating random numbers with a uniform distribution.
     * The minimum allowed value of a returned number is min (inclusive), and the maximum is max (exclusive).
@@ -4907,9 +4218,8 @@ object d3 {
     * @param max The maximum allowed value of a returned number.
     */
   // tslint:disable-next-line:unified-signatures
-  @JSImport("plotly.js", "d3.randomUniform")
-  @js.native
-  def randomUniform(min: Double, max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomUniform(min: Double, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   @JSImport("plotly.js", "d3.randomUniform")
   @js.native
   val randomUniform_Fd3: RandomUniform_ = js.native
@@ -4929,31 +4239,23 @@ object d3 {
     * @param a Location parameter
     * @param b Scale parameter
     */
-  @JSImport("plotly.js", "d3.randomWeibull")
-  @js.native
-  def randomWeibull(k: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomWeibull")
-  @js.native
-  def randomWeibull(k: Double, a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomWeibull")
-  @js.native
-  def randomWeibull(k: Double, a: Double): js.Function0[Double] = js.native
-  @JSImport("plotly.js", "d3.randomWeibull")
-  @js.native
-  def randomWeibull(k: Double, a: Double, b: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomWeibull(k: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomWeibull")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomWeibull(k: Double, a: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomWeibull")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomWeibull(k: Double, a: Double, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomWeibull")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomWeibull(k: Double, a: Unit, b: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomWeibull")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("plotly.js", "d3.range")
-  @js.native
-  def range(start: Double, stop: Double): js.Array[Double] = js.native
-  @JSImport("plotly.js", "d3.range")
-  @js.native
-  def range(start: Double, stop: Double, step: Double): js.Array[Double] = js.native
-  @JSImport("plotly.js", "d3.range")
-  @js.native
-  def range(stop: Double): js.Array[Double] = js.native
+  @scala.inline
+  def range(start: Double, stop: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def range(start: Double, stop: Double, step: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def range(stop: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(stop.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.reduce")
-  @js.native
+  @scala.inline
   def reduce[T](
     iterable: Iterable[T],
     reducer: js.Function4[
@@ -4963,9 +4265,8 @@ object d3 {
       /* iterable */ Iterable[T], 
       T
     ]
-  ): T = js.native
-  @JSImport("plotly.js", "d3.reduce")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def reduce[T](
     iterable: Iterable[T],
     reducer: js.Function4[
@@ -4976,9 +4277,9 @@ object d3 {
       T
     ],
     initialValue: T
-  ): T = js.native
-  @JSImport("plotly.js", "d3.reduce")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
   def reduce_TU_U[T, U](
     iterable: Iterable[T],
     reducer: js.Function4[
@@ -4989,36 +4290,32 @@ object d3 {
       U
     ],
     initialValue: U
-  ): U = js.native
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
   
-  @JSImport("plotly.js", "d3.reverse")
-  @js.native
-  def reverse[T](iterable: Iterable[T]): js.Array[T] = js.native
+  @scala.inline
+  def reverse[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   @JSImport("plotly.js", "d3.rgb")
   @js.native
   val rgb: RGBColorFactory = js.native
-  @JSImport("plotly.js", "d3.rgb")
-  @js.native
-  def rgb(color: ColorCommonInstance): RGBColor = js.native
+  @scala.inline
+  def rgb(color: ColorCommonInstance): RGBColor = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(color.asInstanceOf[js.Any]).asInstanceOf[RGBColor]
   /**
     * Converts the provided color instance and returns an RGB color. The color instance is converted to the RGB color space using color.rgb.
     * Note that unlike color.rgb this method always returns a new instance, even if color is already an RGB color.
     *
     * @param color A permissible color space instance.
     */
-  @JSImport("plotly.js", "d3.rgb")
-  @js.native
-  def rgb(color: ColorSpaceObject): RGBColor = js.native
+  @scala.inline
+  def rgb(color: ColorSpaceObject): RGBColor = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(color.asInstanceOf[js.Any]).asInstanceOf[RGBColor]
   /**
     * Parses the specified CSS Color Module Level 3 specifier string, returning an RGB color.
     * If the specifier was not valid, null is returned.
     *
     * @param cssColorSpecifier A CSS Color Module Level 3 specifier string.
     */
-  @JSImport("plotly.js", "d3.rgb")
-  @js.native
-  def rgb(cssColorSpecifier: String): RGBColor = js.native
+  @scala.inline
+  def rgb(cssColorSpecifier: String): RGBColor = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(cssColorSpecifier.asInstanceOf[js.Any]).asInstanceOf[RGBColor]
   /**
     * Constructs a new RGB color based on the specified channel values and opacity.
     *
@@ -5027,65 +4324,56 @@ object d3 {
     * @param b Blue channel value.
     * @param opacity Optional opacity value, defaults to 1.
     */
-  @JSImport("plotly.js", "d3.rgb")
-  @js.native
-  def rgb(r: Double, g: Double, b: Double): RGBColor = js.native
-  @JSImport("plotly.js", "d3.rgb")
-  @js.native
-  def rgb(r: Double, g: Double, b: Double, opacity: Double): RGBColor = js.native
+  @scala.inline
+  def rgb(r: Double, g: Double, b: Double): RGBColor = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[RGBColor]
+  @scala.inline
+  def rgb(r: Double, g: Double, b: Double, opacity: Double): RGBColor = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[RGBColor]
   
-  @JSImport("plotly.js", "d3.ribbon")
-  @js.native
-  def ribbon(): RibbonGenerator[_, Ribbon_, RibbonSubgroup] = js.native
-  @JSImport("plotly.js", "d3.ribbon")
-  @js.native
-  def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[_, Datum, SubgroupDatum] = js.native
-  @JSImport("plotly.js", "d3.ribbon")
-  @js.native
-  def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = js.native
+  @scala.inline
+  def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
   
-  @JSImport("plotly.js", "d3.rollup")
-  @js.native
+  @scala.inline
+  def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
+  
+  @scala.inline
+  def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
+  
+  @scala.inline
   def rollup[TObject, TReduce, TKey](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
     key: js.Function1[/* value */ TObject, TKey]
-  ): Map[TKey, TReduce] = js.native
-  @JSImport("plotly.js", "d3.rollup")
-  @js.native
+  ): Map[TKey, TReduce] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, TReduce]]
+  @scala.inline
   def rollup[TObject, TReduce, TKey1, TKey2](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): Map[TKey1, Map[TKey2, TReduce]] = js.native
-  @JSImport("plotly.js", "d3.rollup")
-  @js.native
+  ): Map[TKey1, Map[TKey2, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, TReduce]]]
+  @scala.inline
   def rollup[TObject, TReduce, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2],
     key3: js.Function1[/* value */ TObject, TKey3]
-  ): Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]] = js.native
+  ): Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]]]
   
-  @JSImport("plotly.js", "d3.rollups")
-  @js.native
+  @scala.inline
   def rollups[TObject, TReduce, TKey](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
     key: js.Function1[/* value */ TObject, TKey]
-  ): js.Array[js.Tuple2[TKey, TReduce]] = js.native
-  @JSImport("plotly.js", "d3.rollups")
-  @js.native
+  ): js.Array[js.Tuple2[TKey, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollups")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TReduce]]]
+  @scala.inline
   def rollups[TObject, TReduce, TKey1, TKey2](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
     key1: js.Function1[/* value */ TObject, TKey1],
     key2: js.Function1[/* value */ TObject, TKey2]
-  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]] = js.native
-  @JSImport("plotly.js", "d3.rollups")
-  @js.native
+  ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollups")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]]]
+  @scala.inline
   def rollups[TObject, TReduce, TKey1, TKey2, TKey3](
     iterable: Iterable[TObject],
     reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
@@ -5094,286 +4382,206 @@ object d3 {
     key3: js.Function1[/* value */ TObject, TKey3]
   ): js.Array[
     js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TReduce]]]]]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollups")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[js.Tuple2[TKey3, TReduce]]]]]
+  ]]
   
-  @JSImport("plotly.js", "d3.scaleBand")
-  @js.native
-  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](): ScaleBand_[Domain] = js.native
-  @JSImport("plotly.js", "d3.scaleBand")
-  @js.native
-  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
-  @JSImport("plotly.js", "d3.scaleBand")
-  @js.native
-  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = js.native
+  @scala.inline
+  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")().asInstanceOf[ScaleBand_[Domain]]
+  @scala.inline
+  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleBand_[Domain]]
+  @scala.inline
+  def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleBand_[Domain]]
   
-  @JSImport("plotly.js", "d3.scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDiverging")
-  @js.native
-  def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingLog")
-  @js.native
-  def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingPow")
-  @js.native
-  def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingSqrt")
-  @js.native
-  def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleDivergingSymlog")
-  @js.native
-  def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  @scala.inline
+  def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleIdentity")
-  @js.native
-  def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleIdentity")
-  @js.native
-  def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = js.native
+  @scala.inline
+  def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")().asInstanceOf[ScaleIdentity_[Unknown]]
+  @scala.inline
+  def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleIdentity_[Unknown]]
   
   @JSImport("plotly.js", "d3.scaleImplicit")
   @js.native
   val scaleImplicit: TypeofscaleImplicit = js.native
   
-  @JSImport("plotly.js", "d3.scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleLinear")
-  @js.native
-  def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleLog")
-  @js.native
-  def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")().asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  @scala.inline
+  def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
-  @JSImport("plotly.js", "d3.scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = js.native
-  @JSImport("plotly.js", "d3.scaleOrdinal")
-  @js.native
-  def scaleOrdinal[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleOrdinal")
-  @js.native
-  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleOrdinal")
-  @js.native
-  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = js.native
+  @scala.inline
+  def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  @scala.inline
+  def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  @scala.inline
+  def scaleOrdinal[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](): ScalePoint_[Domain] = js.native
-  @JSImport("plotly.js", "d3.scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
-  @JSImport("plotly.js", "d3.scalePoint")
-  @js.native
-  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = js.native
+  @scala.inline
+  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scalePow")
-  @js.native
-  def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")().asInstanceOf[ScalePoint_[Domain]]
+  @scala.inline
+  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]
+  @scala.inline
+  def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePoint_[Domain]]
   
-  @JSImport("plotly.js", "d3.scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleQuantile")
-  @js.native
-  def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = js.native
+  @scala.inline
+  def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleQuantize")
-  @js.native
-  def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = js.native
+  @scala.inline
+  def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")().asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantile_[Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleRadial")
-  @js.native
-  def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = js.native
+  @scala.inline
+  def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")().asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  @scala.inline
+  def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantize_[Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequential")
-  @js.native
-  def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")().asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  @scala.inline
+  def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  @scala.inline
+  def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialLog")
-  @js.native
-  def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialPow")
-  @js.native
-  def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialQuantile")
-  @js.native
-  def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialSqrt")
-  @js.native
-  def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")().asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSequentialSymlog")
-  @js.native
-  def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSqrt")
-  @js.native
-  def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  @scala.inline
+  def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleSymlog")
-  @js.native
-  def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleThreshold")
-  @js.native
-  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = js.native
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")().asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleTime")
-  @js.native
-  def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")().asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  @scala.inline
+  def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
   
-  @JSImport("plotly.js", "d3.scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
-  @JSImport("plotly.js", "d3.scaleUtc")
-  @js.native
-  def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = js.native
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  @scala.inline
+  def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
   
   @JSImport("plotly.js", "d3.schemeAccent")
   @js.native
@@ -5523,328 +4731,238 @@ object d3 {
   @js.native
   val schemeYlOrRd: js.Array[js.Array[String]] = js.native
   
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.select")
-  @js.native
-  def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+  @scala.inline
+  def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[EnterElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll(): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll(selector: js.UndefOr[scala.Nothing]): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll(selector: Null): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: typings.d3Selection.mod.ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+  @scala.inline
+  def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: typings.d3Selection.mod.ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
-  @JSImport("plotly.js", "d3.selection")
-  @js.native
-  def selection(): Selection_[HTMLElement, _, Null, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def selection(): Selection_[HTMLElement, js.Any, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selection")().asInstanceOf[Selection_[HTMLElement, js.Any, Null, Unit]]
   
-  @JSImport("plotly.js", "d3.selector")
-  @js.native
-  def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = js.native
+  @scala.inline
+  def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, DescElement]]
   
-  @JSImport("plotly.js", "d3.selectorAll")
-  @js.native
-  def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = js.native
+  @scala.inline
+  def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAll")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]]]
   
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float32Array): Float32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Float32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float32Array, lo: Double): Float32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float32Array, lo: Double, hi: Double): Float32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float64Array): Float64Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float64Array, lo: js.UndefOr[scala.Nothing], hi: Double): Float64Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float64Array, lo: Double): Float64Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Float64Array, lo: Double, hi: Double): Float64Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int16Array): Int16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int16Array, lo: js.UndefOr[scala.Nothing], hi: Double): Int16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int16Array, lo: Double): Int16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int16Array, lo: Double, hi: Double): Int16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int32Array): Int32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Int32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int32Array, lo: Double): Int32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int32Array, lo: Double, hi: Double): Int32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int8Array): Int8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int8Array, lo: js.UndefOr[scala.Nothing], hi: Double): Int8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int8Array, lo: Double): Int8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Int8Array, lo: Double, hi: Double): Int8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint16Array): Uint16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint16Array, lo: js.UndefOr[scala.Nothing], hi: Double): Uint16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint16Array, lo: Double): Uint16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint16Array, lo: Double, hi: Double): Uint16Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint32Array): Uint32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Uint32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint32Array, lo: Double): Uint32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint32Array, lo: Double, hi: Double): Uint32Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8Array): Uint8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8Array, lo: js.UndefOr[scala.Nothing], hi: Double): Uint8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8Array, lo: Double): Uint8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8Array, lo: Double, hi: Double): Uint8Array = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8ClampedArray): Uint8ClampedArray = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8ClampedArray, lo: js.UndefOr[scala.Nothing], hi: Double): Uint8ClampedArray = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8ClampedArray, lo: Double): Uint8ClampedArray = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle(array: Uint8ClampedArray, lo: Double, hi: Double): Uint8ClampedArray = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle[T](array: js.Array[T], lo: js.UndefOr[scala.Nothing], hi: Double): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle[T](array: js.Array[T], lo: Double): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.shuffle")
-  @js.native
-  def shuffle[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = js.native
+  @scala.inline
+  def shuffle(array: Float32Array): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+  @scala.inline
+  def shuffle(array: Float32Array, lo: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def shuffle(array: Float32Array, lo: Double, hi: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def shuffle(array: Float32Array, lo: Unit, hi: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def shuffle(array: Float64Array): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
+  @scala.inline
+  def shuffle(array: Float64Array, lo: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def shuffle(array: Float64Array, lo: Double, hi: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def shuffle(array: Float64Array, lo: Unit, hi: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def shuffle(array: Int16Array): Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int16Array]
+  @scala.inline
+  def shuffle(array: Int16Array, lo: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def shuffle(array: Int16Array, lo: Double, hi: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def shuffle(array: Int16Array, lo: Unit, hi: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def shuffle(array: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
+  @scala.inline
+  def shuffle(array: Int32Array, lo: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def shuffle(array: Int32Array, lo: Double, hi: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def shuffle(array: Int32Array, lo: Unit, hi: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def shuffle(array: Int8Array): Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int8Array]
+  @scala.inline
+  def shuffle(array: Int8Array, lo: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def shuffle(array: Int8Array, lo: Double, hi: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def shuffle(array: Int8Array, lo: Unit, hi: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def shuffle(array: Uint16Array): Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint16Array]
+  @scala.inline
+  def shuffle(array: Uint16Array, lo: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def shuffle(array: Uint16Array, lo: Double, hi: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def shuffle(array: Uint16Array, lo: Unit, hi: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def shuffle(array: Uint32Array): Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint32Array]
+  @scala.inline
+  def shuffle(array: Uint32Array, lo: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def shuffle(array: Uint32Array, lo: Double, hi: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def shuffle(array: Uint32Array, lo: Unit, hi: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def shuffle(array: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def shuffle(array: Uint8Array, lo: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def shuffle(array: Uint8Array, lo: Double, hi: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def shuffle(array: Uint8Array, lo: Unit, hi: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def shuffle(array: Uint8ClampedArray): Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def shuffle(array: Uint8ClampedArray, lo: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def shuffle(array: Uint8ClampedArray, lo: Double, hi: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def shuffle(array: Uint8ClampedArray, lo: Unit, hi: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def shuffle[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def shuffle[T](array: js.Array[T], lo: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def shuffle[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def shuffle[T](array: js.Array[T], lo: Unit, hi: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.shuffler")
-  @js.native
-  def shuffler(random: js.Function0[Double]): FnCall = js.native
+  @scala.inline
+  def shuffler(random: js.Function0[Double]): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffler")(random.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   
-  @JSImport("plotly.js", "d3.some")
-  @js.native
+  @scala.inline
   def some[T](
     iterable: Iterable[T],
-    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], _]
-  ): Boolean = js.native
+    test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.sort")
-  @js.native
-  def sort[T](iterable: Iterable[T]): js.Array[T] = js.native
-  @JSImport("plotly.js", "d3.sort")
-  @js.native
-  def sort[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
+  @scala.inline
+  def sort[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def sort[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("plotly.js", "d3.stack")
-  @js.native
-  def stack(): Stack_[_, StringDictionary[Double], String] = js.native
+  @scala.inline
+  def stack(): Stack_[js.Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, StringDictionary[Double], String]]
   
-  @JSImport("plotly.js", "d3.stackOffsetDiverging")
-  @js.native
-  def stackOffsetDiverging(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def stackOffsetDiverging(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.stackOffsetExpand")
-  @js.native
-  def stackOffsetExpand(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def stackOffsetExpand(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.stackOffsetNone")
-  @js.native
-  def stackOffsetNone(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def stackOffsetNone(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.stackOffsetSilhouette")
-  @js.native
-  def stackOffsetSilhouette(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def stackOffsetSilhouette(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.stackOffsetWiggle")
-  @js.native
-  def stackOffsetWiggle(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def stackOffsetWiggle(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.stackOrderAppearance")
-  @js.native
-  def stackOrderAppearance(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderAppearance(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stackOrderAscending")
-  @js.native
-  def stackOrderAscending(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderAscending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stackOrderDescending")
-  @js.native
-  def stackOrderDescending(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderDescending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stackOrderInsideOut")
-  @js.native
-  def stackOrderInsideOut(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderInsideOut(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stackOrderNone")
-  @js.native
-  def stackOrderNone(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderNone(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stackOrderReverse")
-  @js.native
-  def stackOrderReverse(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stackOrderReverse(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plotly.js", "d3.stack")
-  @js.native
-  def stack_Datum[Datum](): Stack_[_, Datum, String] = js.native
-  @JSImport("plotly.js", "d3.stack")
-  @js.native
-  def stack_DatumKey[Datum, Key](): Stack_[_, Datum, Key] = js.native
-  @JSImport("plotly.js", "d3.stack")
-  @js.native
-  def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = js.native
+  @scala.inline
+  def stack_Datum[Datum](): Stack_[js.Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, String]]
   
-  @JSImport("plotly.js", "d3.stratify")
-  @js.native
-  def stratify[Datum](): StratifyOperator[Datum] = js.native
+  @scala.inline
+  def stack_DatumKey[Datum, Key](): Stack_[js.Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, Key]]
   
-  @JSImport("plotly.js", "d3.style")
-  @js.native
-  def style(node: Element, name: String): String = js.native
+  @scala.inline
+  def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[This, Datum, Key]]
   
-  @JSImport("plotly.js", "d3.subset")
-  @js.native
-  def subset[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def stratify[Datum](): StratifyOperator[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("stratify")().asInstanceOf[StratifyOperator[Datum]]
   
-  @JSImport("plotly.js", "d3.sum")
-  @js.native
-  def sum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Double = js.native
-  @JSImport("plotly.js", "d3.sum")
-  @js.native
+  @scala.inline
+  def style(node: Element, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def subset[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def sum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def sum[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.superset")
-  @js.native
-  def superset[T](a: Iterable[T], b: Iterable[T]): Boolean = js.native
+  @scala.inline
+  def superset[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("superset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plotly.js", "d3.svg")
-  @js.native
-  def svg(url: String): js.Promise[Document] = js.native
-  @JSImport("plotly.js", "d3.svg")
-  @js.native
-  def svg(url: String, init: RequestInit): js.Promise[Document] = js.native
+  @scala.inline
+  def svg(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
+  @scala.inline
+  def svg(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
   
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](
-    `type`: js.UndefOr[scala.Nothing],
-    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  @scala.inline
+  def symbol[Datum](): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: Double
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](`type`: SymbolType): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](
+    `type`: Unit,
+    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: Unit, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: SymbolType): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: SymbolType,
     size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[_, Datum] = js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
   
   @JSImport("plotly.js", "d3.symbolCircle")
   @js.native
@@ -5874,87 +4992,68 @@ object d3 {
   @js.native
   val symbolWye: SymbolType = js.native
   
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](
-    `type`: js.UndefOr[scala.Nothing],
-    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: Double
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](
+    `type`: Unit,
+    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: Unit, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: SymbolType,
     size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("plotly.js", "d3.symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   
   @JSImport("plotly.js", "d3.symbols")
   @js.native
   val symbols: js.Array[SymbolType] = js.native
   
-  @JSImport("plotly.js", "d3.text")
-  @js.native
-  def text(url: String): js.Promise[String] = js.native
-  @JSImport("plotly.js", "d3.text")
-  @js.native
-  def text(url: String, init: RequestInit): js.Promise[String] = js.native
+  @scala.inline
+  def text(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def text(url: String, init: RequestInit): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("plotly.js", "d3.thresholdFreedmanDiaconis")
-  @js.native
-  def thresholdFreedmanDiaconis(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = js.native
+  @scala.inline
+  def thresholdFreedmanDiaconis(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("thresholdFreedmanDiaconis")(values.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.thresholdScott")
-  @js.native
-  def thresholdScott(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = js.native
+  @scala.inline
+  def thresholdScott(values: ArrayLike[js.UndefOr[Double]], min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("thresholdScott")(values.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.thresholdSturges")
-  @js.native
-  def thresholdSturges(values: ArrayLike[js.UndefOr[Double]]): Double = js.native
+  @scala.inline
+  def thresholdSturges(values: ArrayLike[js.UndefOr[Double]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdSturges")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.tickFormat")
-  @js.native
-  def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = js.native
-  @JSImport("plotly.js", "d3.tickFormat")
-  @js.native
-  def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+  @scala.inline
+  def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
+  @scala.inline
+  def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any], specifier.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
   
-  @JSImport("plotly.js", "d3.tickIncrement")
-  @js.native
-  def tickIncrement(start: Double, stop: Double, count: Double): Double = js.native
+  @scala.inline
+  def tickIncrement(start: Double, stop: Double, count: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickIncrement")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.tickStep")
-  @js.native
-  def tickStep(start: Double, stop: Double, count: Double): Double = js.native
+  @scala.inline
+  def tickStep(start: Double, stop: Double, count: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickStep")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("plotly.js", "d3.ticks")
-  @js.native
-  def ticks(start: Double, stop: Double, count: Double): js.Array[Double] = js.native
+  @scala.inline
+  def ticks(start: Double, stop: Double, count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ticks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -5976,34 +5075,27 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeDay")
-  @js.native
-  def timeDay(): Date = js.native
-  @JSImport("plotly.js", "d3.timeDay")
-  @js.native
-  def timeDay(date: Date): Date = js.native
+  @scala.inline
+  def timeDay(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeDay")().asInstanceOf[Date]
+  @scala.inline
+  def timeDay(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeDay")
   @js.native
   val timeDay_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeDays")
-  @js.native
-  def timeDays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeDays")
-  @js.native
-  def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.timeFormat")
-  @js.native
-  def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+  @scala.inline
+  def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
-  @JSImport("plotly.js", "d3.timeFormatDefaultLocale")
-  @js.native
-  def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+  @scala.inline
+  def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatDefaultLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
-  @JSImport("plotly.js", "d3.timeFormatLocale")
-  @js.native
-  def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+  @scala.inline
+  def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6025,22 +5117,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeFriday")
-  @js.native
-  def timeFriday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeFriday")
-  @js.native
-  def timeFriday(date: Date): Date = js.native
+  @scala.inline
+  def timeFriday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFriday")().asInstanceOf[Date]
+  @scala.inline
+  def timeFriday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFriday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeFriday")
   @js.native
   val timeFriday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeFridays")
-  @js.native
-  def timeFridays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeFridays")
-  @js.native
-  def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6062,44 +5150,37 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeHour")
-  @js.native
-  def timeHour(): Date = js.native
-  @JSImport("plotly.js", "d3.timeHour")
-  @js.native
-  def timeHour(date: Date): Date = js.native
+  @scala.inline
+  def timeHour(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeHour")().asInstanceOf[Date]
+  @scala.inline
+  def timeHour(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeHour")
   @js.native
   val timeHour_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeHours")
-  @js.native
-  def timeHours(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeHours")
-  @js.native
-  def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.timeInterval")
-  @js.native
+  @scala.inline
   def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
-  ): TimeInterval_ = js.native
-  @JSImport("plotly.js", "d3.timeInterval")
-  @js.native
+  ): TimeInterval_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[TimeInterval_]
+  @scala.inline
   def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
     count: js.Function2[/* start */ Date, /* end */ Date, Double]
-  ): CountableTimeInterval = js.native
-  @JSImport("plotly.js", "d3.timeInterval")
-  @js.native
+  ): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
+  @scala.inline
   def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
     count: js.Function2[/* start */ Date, /* end */ Date, Double],
     field: js.Function1[/* date */ Date, Double]
-  ): CountableTimeInterval = js.native
+  ): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6121,22 +5202,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeMillisecond")
-  @js.native
-  def timeMillisecond(): Date = js.native
-  @JSImport("plotly.js", "d3.timeMillisecond")
-  @js.native
-  def timeMillisecond(date: Date): Date = js.native
+  @scala.inline
+  def timeMillisecond(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMillisecond")().asInstanceOf[Date]
+  @scala.inline
+  def timeMillisecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMillisecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeMillisecond")
   @js.native
   val timeMillisecond_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeMilliseconds")
-  @js.native
-  def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeMilliseconds")
-  @js.native
-  def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6158,22 +5235,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeMinute")
-  @js.native
-  def timeMinute(): Date = js.native
-  @JSImport("plotly.js", "d3.timeMinute")
-  @js.native
-  def timeMinute(date: Date): Date = js.native
+  @scala.inline
+  def timeMinute(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMinute")().asInstanceOf[Date]
+  @scala.inline
+  def timeMinute(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeMinute")
   @js.native
   val timeMinute_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeMinutes")
-  @js.native
-  def timeMinutes(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeMinutes")
-  @js.native
-  def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6195,22 +5268,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeMonday")
-  @js.native
-  def timeMonday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeMonday")
-  @js.native
-  def timeMonday(date: Date): Date = js.native
+  @scala.inline
+  def timeMonday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMonday")().asInstanceOf[Date]
+  @scala.inline
+  def timeMonday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMonday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeMonday")
   @js.native
   val timeMonday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeMondays")
-  @js.native
-  def timeMondays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeMondays")
-  @js.native
-  def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6232,26 +5301,21 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeMonth")
-  @js.native
-  def timeMonth(): Date = js.native
-  @JSImport("plotly.js", "d3.timeMonth")
-  @js.native
-  def timeMonth(date: Date): Date = js.native
+  @scala.inline
+  def timeMonth(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMonth")().asInstanceOf[Date]
+  @scala.inline
+  def timeMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeMonth")
   @js.native
   val timeMonth_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeMonths")
-  @js.native
-  def timeMonths(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeMonths")
-  @js.native
-  def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.timeParse")
-  @js.native
-  def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+  @scala.inline
+  def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6273,22 +5337,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeSaturday")
-  @js.native
-  def timeSaturday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeSaturday")
-  @js.native
-  def timeSaturday(date: Date): Date = js.native
+  @scala.inline
+  def timeSaturday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturday")().asInstanceOf[Date]
+  @scala.inline
+  def timeSaturday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeSaturday")
   @js.native
   val timeSaturday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeSaturdays")
-  @js.native
-  def timeSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeSaturdays")
-  @js.native
-  def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6310,22 +5370,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeSecond")
-  @js.native
-  def timeSecond(): Date = js.native
-  @JSImport("plotly.js", "d3.timeSecond")
-  @js.native
-  def timeSecond(date: Date): Date = js.native
+  @scala.inline
+  def timeSecond(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSecond")().asInstanceOf[Date]
+  @scala.inline
+  def timeSecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeSecond")
   @js.native
   val timeSecond_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeSeconds")
-  @js.native
-  def timeSeconds(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeSeconds")
-  @js.native
-  def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6347,22 +5403,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeSunday")
-  @js.native
-  def timeSunday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeSunday")
-  @js.native
-  def timeSunday(date: Date): Date = js.native
+  @scala.inline
+  def timeSunday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSunday")().asInstanceOf[Date]
+  @scala.inline
+  def timeSunday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeSunday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeSunday")
   @js.native
   val timeSunday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeSundays")
-  @js.native
-  def timeSundays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeSundays")
-  @js.native
-  def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6384,22 +5436,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeThursday")
-  @js.native
-  def timeThursday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeThursday")
-  @js.native
-  def timeThursday(date: Date): Date = js.native
+  @scala.inline
+  def timeThursday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeThursday")().asInstanceOf[Date]
+  @scala.inline
+  def timeThursday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeThursday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeThursday")
   @js.native
   val timeThursday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeThursdays")
-  @js.native
-  def timeThursdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeThursdays")
-  @js.native
-  def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6421,22 +5469,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeTuesday")
-  @js.native
-  def timeTuesday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeTuesday")
-  @js.native
-  def timeTuesday(date: Date): Date = js.native
+  @scala.inline
+  def timeTuesday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesday")().asInstanceOf[Date]
+  @scala.inline
+  def timeTuesday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeTuesday")
   @js.native
   val timeTuesday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeTuesdays")
-  @js.native
-  def timeTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeTuesdays")
-  @js.native
-  def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6458,22 +5502,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeWednesday")
-  @js.native
-  def timeWednesday(): Date = js.native
-  @JSImport("plotly.js", "d3.timeWednesday")
-  @js.native
-  def timeWednesday(date: Date): Date = js.native
+  @scala.inline
+  def timeWednesday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesday")().asInstanceOf[Date]
+  @scala.inline
+  def timeWednesday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeWednesday")
   @js.native
   val timeWednesday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeWednesdays")
-  @js.native
-  def timeWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeWednesdays")
-  @js.native
-  def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6495,22 +5535,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeWeek")
-  @js.native
-  def timeWeek(): Date = js.native
-  @JSImport("plotly.js", "d3.timeWeek")
-  @js.native
-  def timeWeek(date: Date): Date = js.native
+  @scala.inline
+  def timeWeek(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeWeek")().asInstanceOf[Date]
+  @scala.inline
+  def timeWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeWeek")
   @js.native
   val timeWeek_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeWeeks")
-  @js.native
-  def timeWeeks(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeWeeks")
-  @js.native
-  def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6532,113 +5568,85 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.timeYear")
-  @js.native
-  def timeYear(): Date = js.native
-  @JSImport("plotly.js", "d3.timeYear")
-  @js.native
-  def timeYear(date: Date): Date = js.native
+  @scala.inline
+  def timeYear(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeYear")().asInstanceOf[Date]
+  @scala.inline
+  def timeYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("timeYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.timeYear")
   @js.native
   val timeYear_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.timeYears")
-  @js.native
-  def timeYears(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.timeYears")
-  @js.native
-  def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def timeYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.timeout")
-  @js.native
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timeout")
-  @js.native
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timeout")
-  @js.native
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timeout")
-  @js.native
-  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+  @scala.inline
+  def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  @scala.inline
+  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @JSImport("plotly.js", "d3.timer")
-  @js.native
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timer")
-  @js.native
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timer")
-  @js.native
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
-  @JSImport("plotly.js", "d3.timer")
-  @js.native
-  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
+  @scala.inline
+  def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
+  @scala.inline
+  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
+  @scala.inline
+  def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
   
-  @JSImport("plotly.js", "d3.timerFlush")
-  @js.native
-  def timerFlush(): Unit = js.native
+  @scala.inline
+  def timerFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timerFlush")().asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.transition")
-  @js.native
-  def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.transition")
-  @js.native
-  def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("plotly.js", "d3.transition")
-  @js.native
-  def transition[OldDatum](transition: Transition_[BaseType, _, BaseType, _]): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
   
-  @JSImport("plotly.js", "d3.transpose")
-  @js.native
-  def transpose[T](matrix: ArrayLike[ArrayLike[T]]): js.Array[js.Array[T]] = js.native
+  @scala.inline
+  def transpose[T](matrix: ArrayLike[ArrayLike[T]]): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
   
-  @JSImport("plotly.js", "d3.tree")
-  @js.native
-  def tree[Datum](): TreeLayout[Datum] = js.native
+  @scala.inline
+  def tree[Datum](): TreeLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")().asInstanceOf[TreeLayout[Datum]]
   
-  @JSImport("plotly.js", "d3.treemap")
-  @js.native
-  def treemap[Datum](): TreemapLayout[Datum] = js.native
+  @scala.inline
+  def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
   
-  @JSImport("plotly.js", "d3.treemapBinary")
-  @js.native
-  def treemapBinary(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.treemapDice")
-  @js.native
-  def treemapDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("plotly.js", "d3.treemapResquarify")
   @js.native
   val treemapResquarify: RatioSquarifyTilingFactory = js.native
-  @JSImport("plotly.js", "d3.treemapResquarify")
-  @js.native
-  def treemapResquarify(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapResquarify(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapResquarify")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.treemapSlice")
-  @js.native
-  def treemapSlice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.treemapSliceDice")
-  @js.native
-  def treemapSliceDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("plotly.js", "d3.treemapSquarify")
   @js.native
   val treemapSquarify: RatioSquarifyTilingFactory = js.native
-  @JSImport("plotly.js", "d3.treemapSquarify")
-  @js.native
-  def treemapSquarify(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapSquarify(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSquarify")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plotly.js", "d3.tsv")
-  @js.native
-  def tsv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.tsv")
-  @js.native
-  def tsv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = js.native
-  @JSImport("plotly.js", "d3.tsv")
-  @js.native
+  @scala.inline
+  def tsv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
+  def tsv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
+  @scala.inline
   def tsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     init: RequestInit,
@@ -6648,9 +5656,8 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
-  @JSImport("plotly.js", "d3.tsv")
-  @js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
+  @scala.inline
   def tsv[ParsedRow /* <: js.Object */, Columns /* <: String */](
     url: String,
     row: js.Function3[
@@ -6659,39 +5666,30 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[DSVParsedArray[ParsedRow]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVParsedArray[ParsedRow]]]
   
-  @JSImport("plotly.js", "d3.tsvFormat")
-  @js.native
-  def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  @JSImport("plotly.js", "d3.tsvFormat")
-  @js.native
-  def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+  @scala.inline
+  def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormat")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormat")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.tsvFormatBody")
-  @js.native
-  def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  @JSImport("plotly.js", "d3.tsvFormatBody")
-  @js.native
-  def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+  @scala.inline
+  def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatBody")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatBody")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.tsvFormatRow")
-  @js.native
-  def tsvFormatRow(row: js.Array[String]): String = js.native
+  @scala.inline
+  def tsvFormatRow(row: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatRow")(row.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.tsvFormatRows")
-  @js.native
-  def tsvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
+  @scala.inline
+  def tsvFormatRows(rows: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatRows")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.tsvFormatValue")
-  @js.native
-  def tsvFormatValue(value: String): String = js.native
+  @scala.inline
+  def tsvFormatValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("plotly.js", "d3.tsvParse")
-  @js.native
-  def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = js.native
-  @JSImport("plotly.js", "d3.tsvParse")
-  @js.native
+  @scala.inline
+  def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvParse")(tsvString.asInstanceOf[js.Any]).asInstanceOf[DSVRowArray[Columns]]
+  @scala.inline
   def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
     tsvString: String,
     row: js.Function3[
@@ -6700,21 +5698,18 @@ object d3 {
       /* columns */ js.Array[Columns], 
       js.UndefOr[ParsedRow | Null]
     ]
-  ): DSVParsedArray[ParsedRow] = js.native
+  ): DSVParsedArray[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvParse")(tsvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[DSVParsedArray[ParsedRow]]
   
-  @JSImport("plotly.js", "d3.tsvParseRows")
-  @js.native
-  def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = js.native
-  @JSImport("plotly.js", "d3.tsvParseRows")
-  @js.native
+  @scala.inline
+  def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvParseRows")(tsvString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  @scala.inline
   def tsvParseRows[ParsedRow /* <: js.Object */](
     tsvString: String,
     row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
-  ): js.Array[ParsedRow] = js.native
+  ): js.Array[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvParseRows")(tsvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedRow]]
   
-  @JSImport("plotly.js", "d3.union")
-  @js.native
-  def union[T](iterables: Iterable[T]*): Set[T] = js.native
+  @scala.inline
+  def union[T](iterables: Iterable[T]*): Set[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(iterables.asInstanceOf[js.Any]).asInstanceOf[Set[T]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6736,26 +5731,21 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcDay")
-  @js.native
-  def utcDay(): Date = js.native
-  @JSImport("plotly.js", "d3.utcDay")
-  @js.native
-  def utcDay(date: Date): Date = js.native
+  @scala.inline
+  def utcDay(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcDay")().asInstanceOf[Date]
+  @scala.inline
+  def utcDay(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcDay")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcDay")
   @js.native
   val utcDay_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcDays")
-  @js.native
-  def utcDays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcDays")
-  @js.native
-  def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.utcFormat")
-  @js.native
-  def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+  @scala.inline
+  def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6777,22 +5767,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcFriday")
-  @js.native
-  def utcFriday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcFriday")
-  @js.native
-  def utcFriday(date: Date): Date = js.native
+  @scala.inline
+  def utcFriday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFriday")().asInstanceOf[Date]
+  @scala.inline
+  def utcFriday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFriday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcFriday")
   @js.native
   val utcFriday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcFridays")
-  @js.native
-  def utcFridays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcFridays")
-  @js.native
-  def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6814,22 +5800,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcHour")
-  @js.native
-  def utcHour(): Date = js.native
-  @JSImport("plotly.js", "d3.utcHour")
-  @js.native
-  def utcHour(date: Date): Date = js.native
+  @scala.inline
+  def utcHour(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcHour")().asInstanceOf[Date]
+  @scala.inline
+  def utcHour(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcHour")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcHour")
   @js.native
   val utcHour_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcHours")
-  @js.native
-  def utcHours(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcHours")
-  @js.native
-  def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6851,22 +5833,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcMillisecond")
-  @js.native
-  def utcMillisecond(): Date = js.native
-  @JSImport("plotly.js", "d3.utcMillisecond")
-  @js.native
-  def utcMillisecond(date: Date): Date = js.native
+  @scala.inline
+  def utcMillisecond(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMillisecond")().asInstanceOf[Date]
+  @scala.inline
+  def utcMillisecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMillisecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcMillisecond")
   @js.native
   val utcMillisecond_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcMilliseconds")
-  @js.native
-  def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcMilliseconds")
-  @js.native
-  def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6888,22 +5866,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcMinute")
-  @js.native
-  def utcMinute(): Date = js.native
-  @JSImport("plotly.js", "d3.utcMinute")
-  @js.native
-  def utcMinute(date: Date): Date = js.native
+  @scala.inline
+  def utcMinute(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMinute")().asInstanceOf[Date]
+  @scala.inline
+  def utcMinute(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMinute")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcMinute")
   @js.native
   val utcMinute_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcMinutes")
-  @js.native
-  def utcMinutes(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcMinutes")
-  @js.native
-  def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6925,22 +5899,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcMonday")
-  @js.native
-  def utcMonday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcMonday")
-  @js.native
-  def utcMonday(date: Date): Date = js.native
+  @scala.inline
+  def utcMonday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMonday")().asInstanceOf[Date]
+  @scala.inline
+  def utcMonday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMonday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcMonday")
   @js.native
   val utcMonday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcMondays")
-  @js.native
-  def utcMondays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcMondays")
-  @js.native
-  def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -6962,26 +5932,21 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcMonth")
-  @js.native
-  def utcMonth(): Date = js.native
-  @JSImport("plotly.js", "d3.utcMonth")
-  @js.native
-  def utcMonth(date: Date): Date = js.native
+  @scala.inline
+  def utcMonth(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMonth")().asInstanceOf[Date]
+  @scala.inline
+  def utcMonth(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcMonth")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcMonth")
   @js.native
   val utcMonth_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcMonths")
-  @js.native
-  def utcMonths(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcMonths")
-  @js.native
-  def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.utcParse")
-  @js.native
-  def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+  @scala.inline
+  def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7003,22 +5968,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcSaturday")
-  @js.native
-  def utcSaturday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcSaturday")
-  @js.native
-  def utcSaturday(date: Date): Date = js.native
+  @scala.inline
+  def utcSaturday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturday")().asInstanceOf[Date]
+  @scala.inline
+  def utcSaturday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcSaturday")
   @js.native
   val utcSaturday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcSaturdays")
-  @js.native
-  def utcSaturdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcSaturdays")
-  @js.native
-  def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7040,22 +6001,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcSecond")
-  @js.native
-  def utcSecond(): Date = js.native
-  @JSImport("plotly.js", "d3.utcSecond")
-  @js.native
-  def utcSecond(date: Date): Date = js.native
+  @scala.inline
+  def utcSecond(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSecond")().asInstanceOf[Date]
+  @scala.inline
+  def utcSecond(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSecond")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcSecond")
   @js.native
   val utcSecond_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcSeconds")
-  @js.native
-  def utcSeconds(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcSeconds")
-  @js.native
-  def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7077,22 +6034,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcSunday")
-  @js.native
-  def utcSunday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcSunday")
-  @js.native
-  def utcSunday(date: Date): Date = js.native
+  @scala.inline
+  def utcSunday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSunday")().asInstanceOf[Date]
+  @scala.inline
+  def utcSunday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcSunday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcSunday")
   @js.native
   val utcSunday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcSundays")
-  @js.native
-  def utcSundays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcSundays")
-  @js.native
-  def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7114,22 +6067,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcThursday")
-  @js.native
-  def utcThursday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcThursday")
-  @js.native
-  def utcThursday(date: Date): Date = js.native
+  @scala.inline
+  def utcThursday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcThursday")().asInstanceOf[Date]
+  @scala.inline
+  def utcThursday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcThursday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcThursday")
   @js.native
   val utcThursday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcThursdays")
-  @js.native
-  def utcThursdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcThursdays")
-  @js.native
-  def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7151,22 +6100,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcTuesday")
-  @js.native
-  def utcTuesday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcTuesday")
-  @js.native
-  def utcTuesday(date: Date): Date = js.native
+  @scala.inline
+  def utcTuesday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesday")().asInstanceOf[Date]
+  @scala.inline
+  def utcTuesday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcTuesday")
   @js.native
   val utcTuesday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcTuesdays")
-  @js.native
-  def utcTuesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcTuesdays")
-  @js.native
-  def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7188,22 +6133,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcWednesday")
-  @js.native
-  def utcWednesday(): Date = js.native
-  @JSImport("plotly.js", "d3.utcWednesday")
-  @js.native
-  def utcWednesday(date: Date): Date = js.native
+  @scala.inline
+  def utcWednesday(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesday")().asInstanceOf[Date]
+  @scala.inline
+  def utcWednesday(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesday")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcWednesday")
   @js.native
   val utcWednesday_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcWednesdays")
-  @js.native
-  def utcWednesdays(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcWednesdays")
-  @js.native
-  def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7225,22 +6166,18 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcWeek")
-  @js.native
-  def utcWeek(): Date = js.native
-  @JSImport("plotly.js", "d3.utcWeek")
-  @js.native
-  def utcWeek(date: Date): Date = js.native
+  @scala.inline
+  def utcWeek(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcWeek")().asInstanceOf[Date]
+  @scala.inline
+  def utcWeek(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcWeek")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcWeek")
   @js.native
   val utcWeek_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcWeeks")
-  @js.native
-  def utcWeeks(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcWeeks")
-  @js.native
-  def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   /**
     * Returns a new date representing the latest interval boundary date before or equal to date.
@@ -7262,81 +6199,53 @@ object d3 {
     *
     * @param date A date object.
     */
-  @JSImport("plotly.js", "d3.utcYear")
-  @js.native
-  def utcYear(): Date = js.native
-  @JSImport("plotly.js", "d3.utcYear")
-  @js.native
-  def utcYear(date: Date): Date = js.native
+  @scala.inline
+  def utcYear(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcYear")().asInstanceOf[Date]
+  @scala.inline
+  def utcYear(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("utcYear")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   @JSImport("plotly.js", "d3.utcYear")
   @js.native
   val utcYear_Fd3: CountableTimeInterval = js.native
   
-  @JSImport("plotly.js", "d3.utcYears")
-  @js.native
-  def utcYears(start: Date, stop: Date): js.Array[Date] = js.native
-  @JSImport("plotly.js", "d3.utcYears")
-  @js.native
-  def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+  @scala.inline
+  def utcYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("plotly.js", "d3.variance")
-  @js.native
-  def variance[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = js.native
-  @JSImport("plotly.js", "d3.variance")
-  @js.native
+  @scala.inline
+  def variance[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
   def variance[T](
     iterable: Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-  ): js.UndefOr[Double] = js.native
+  ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("variance")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
   @JSImport("plotly.js", "d3.version")
   @js.native
   val version: String = js.native
   
-  @JSImport("plotly.js", "d3.window")
-  @js.native
-  def window(DOMNode: Document): Window = js.native
-  @JSImport("plotly.js", "d3.window")
-  @js.native
-  def window(DOMNode: Element): Window = js.native
-  @JSImport("plotly.js", "d3.window")
-  @js.native
-  def window(DOMNode: Window): Window = js.native
+  @scala.inline
+  def window(DOMNode: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  @scala.inline
+  def window(DOMNode: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  @scala.inline
+  def window(DOMNode: Window): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
   
-  @JSImport("plotly.js", "d3.xml")
-  @js.native
-  def xml(url: String): js.Promise[XMLDocument] = js.native
-  @JSImport("plotly.js", "d3.xml")
-  @js.native
-  def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = js.native
+  @scala.inline
+  def xml(url: String): js.Promise[XMLDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[XMLDocument]]
+  @scala.inline
+  def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[XMLDocument]]
   
-  @JSImport("plotly.js", "d3.zip")
-  @js.native
-  def zip[T](arrays: ArrayLike[T]*): js.Array[js.Array[T]] = js.native
+  @scala.inline
+  def zip[T](arrays: ArrayLike[T]*): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(arrays.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
   
-  @JSImport("plotly.js", "d3.zoom")
-  @js.native
-  def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = js.native
+  @scala.inline
+  def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[ZoomBehavior[ZoomRefElement, Datum]]
   
   @JSImport("plotly.js", "d3.zoomIdentity")
   @js.native
   val zoomIdentity: ZoomTransform_ = js.native
   
-  @JSImport("plotly.js", "d3.zoomTransform")
-  @js.native
-  def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = js.native
-  
-  @JSImport("plotly.js", "d3.bin")
-  @js.native
-  def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
-  @JSImport("plotly.js", "d3.bin")
-  @js.native
-  def `bin_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
-  
-  @JSImport("plotly.js", "d3.histogram")
-  @js.native
-  def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
-  @JSImport("plotly.js", "d3.histogram")
-  @js.native
-  def `histogram_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
+  @scala.inline
+  def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[ZoomTransform_]
 }

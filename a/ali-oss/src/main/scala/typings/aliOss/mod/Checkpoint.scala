@@ -3,25 +3,23 @@ package typings.aliOss.mod
 import typings.aliOss.anon.Etag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checkpoint extends StObject {
   
-  var doneParts: js.Array[Etag] = js.native
+  var doneParts: js.Array[Etag]
   
-  var file: js.Any = js.native
+  var file: js.Any
   
   //  object key
-  var fileSize: Double = js.native
+  var fileSize: Double
   
   // The file object selected by the user, if the browser is restarted, it needs the user to manually trigger the settings
-  var name: String = js.native
+  var name: String
   
-  var partSize: Double = js.native
+  var partSize: Double
   
-  var uploadId: String = js.native
+  var uploadId: String
 }
 object Checkpoint {
   

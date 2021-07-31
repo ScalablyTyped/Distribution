@@ -2,22 +2,28 @@ package typings.wonderFrp
 
 import typings.wonderFrp.iobserverMod.IObserver
 import typings.wonderFrp.observerMod.Observer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/observer/AutoDetachObserver", JSImport.Namespace)
-@js.native
-object autoDetachObserverMod extends js.Object {
-  @js.native
-  class AutoDetachObserver () extends Observer
+object autoDetachObserverMod {
   
-  /* static members */
+  @JSImport("wonder-frp/dist/commonjs/observer/AutoDetachObserver", "AutoDetachObserver")
   @js.native
-  object AutoDetachObserver extends js.Object {
-    def create(observer: IObserver): js.Any = js.native
-    def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): js.Any = js.native
+  class AutoDetachObserver protected () extends Observer {
+    def this(observer: IObserver) = this()
+    def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
   }
-  
+  /* static members */
+  object AutoDetachObserver {
+    
+    @JSImport("wonder-frp/dist/commonjs/observer/AutoDetachObserver", "AutoDetachObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(observer: IObserver): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  }
 }
-

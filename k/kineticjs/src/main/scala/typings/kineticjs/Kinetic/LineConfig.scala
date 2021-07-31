@@ -2,19 +2,18 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var dash: js.UndefOr[js.Array[Double]] = js.native
+  var dash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineCap: js.UndefOr[String] = js.native
+  var lineCap: js.UndefOr[String] = js.undefined
   
-  var points: js.Any = js.native
+  var points: js.Any
 }
 object LineConfig {
   

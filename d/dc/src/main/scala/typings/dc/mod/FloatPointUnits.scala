@@ -2,13 +2,11 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloatPointUnits extends StObject {
   
-  def precision(precision: Double): UnitFunction = js.native
+  def precision(precision: Double): UnitFunction
 }
 object FloatPointUnits {
   

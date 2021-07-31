@@ -2,33 +2,31 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remarketing List Population Rule.
   */
-@js.native
 trait SchemaListPopulationRule extends StObject {
   
   /**
     * Floodlight activity ID associated with this rule. This field can be left
     * blank.
     */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of floodlight activity associated with this rule. This is a
     * read-only, auto-generated field.
     */
-  var floodlightActivityName: js.UndefOr[String] = js.native
+  var floodlightActivityName: js.UndefOr[String] = js.undefined
   
   /**
     * Clauses that make up this list population rule. Clauses are joined by
     * ANDs, and the clauses themselves are made up of list population terms
     * which are joined by ORs.
     */
-  var listPopulationClauses: js.UndefOr[js.Array[SchemaListPopulationClause]] = js.native
+  var listPopulationClauses: js.UndefOr[js.Array[SchemaListPopulationClause]] = js.undefined
 }
 object SchemaListPopulationRule {
   

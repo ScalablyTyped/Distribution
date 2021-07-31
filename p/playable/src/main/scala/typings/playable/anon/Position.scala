@@ -4,13 +4,11 @@ import typings.playable.playableStrings.left
 import typings.playable.playableStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var position: js.UndefOr[left | right] = js.native
+  var position: js.UndefOr[left | right] = js.undefined
 }
 object Position {
   

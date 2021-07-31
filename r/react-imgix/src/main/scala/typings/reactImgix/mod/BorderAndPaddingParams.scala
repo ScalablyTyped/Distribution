@@ -2,19 +2,17 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderAndPaddingParams extends StObject {
   
-  var border: js.UndefOr[ImgixParamType] = js.native
+  var border: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `border-radius`: js.UndefOr[ImgixParamType] = js.native
+  var `border-radius`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `border-radius-inner`: js.UndefOr[ImgixParamType] = js.native
+  var `border-radius-inner`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var pad: js.UndefOr[ImgixParamType] = js.native
+  var pad: js.UndefOr[ImgixParamType] = js.undefined
 }
 object BorderAndPaddingParams {
   

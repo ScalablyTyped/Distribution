@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.AwaitExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait AwaitExpression_
-  extends Expression
+- typings.babelTypes.mod._Node because Already inherited */ trait AwaitExpression_
+  extends StObject
      with BaseNode
+     with Expression
      with Terminatorless {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_AwaitExpression_ : AwaitExpression = js.native
+  var type_AwaitExpression_ : AwaitExpression
 }
 object AwaitExpression_ {
   
   @scala.inline
-  def apply(argument: Expression, `type`: AwaitExpression): AwaitExpression_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: Expression): AwaitExpression_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("AwaitExpression")
     __obj.asInstanceOf[AwaitExpression_]
   }
   

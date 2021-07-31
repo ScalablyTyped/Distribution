@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOnDemandReplicationRunRequest extends StObject {
   
   /**
     * The description of the replication run.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the replication job.
     */
-  var replicationJobId: ReplicationJobId = js.native
+  var replicationJobId: ReplicationJobId
 }
 object StartOnDemandReplicationRunRequest {
   

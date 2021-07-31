@@ -4,26 +4,27 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeMod {
   
-  @JSImport("antd/lib/_util/type", "tuple")
+  @JSImport("antd/lib/_util/type", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def tuple[T /* <: js.Array[String] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): T = js.native
+  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(args.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("antd/lib/_util/type", "tupleNum")
-  @js.native
+  @scala.inline
   def tupleNum[T /* <: js.Array[Double] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): T = js.native
+  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleNum")(args.asInstanceOf[js.Any]).asInstanceOf[T]
   
   type ElementOf[T] = js.Any
   
-  type LiteralUnion[T /* <: U */, U] = T | (U with js.Object)
+  type LiteralUnion[T /* <: U */, U] = T | (U & js.Object)
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

@@ -3,59 +3,57 @@ package typings.hafasClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadarOptions extends StObject {
   
   /**
     * compute frames for the next n seconds
     * @default 20
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * nr of frames to compute
     * @default 3
     */
-  var frames: js.UndefOr[Double] = js.native
+  var frames: js.UndefOr[Double] = js.undefined
   
   /**
     * return a shape for the trip?
     * @default false
     */
-  var polylines: js.UndefOr[Boolean] = js.native
+  var polylines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * optionally an object of booleans
     * @default null
     */
-  var products: js.UndefOr[Boolean | js.Object] = js.native
+  var products: js.UndefOr[Boolean | js.Object] = js.undefined
   
   /**
     * maximum number of vehicles
     * @default 256
     */
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.native
+  var when: js.UndefOr[Date] = js.undefined
 }
 object RadarOptions {
   

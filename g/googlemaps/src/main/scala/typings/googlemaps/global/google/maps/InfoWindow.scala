@@ -3,7 +3,6 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.InfoWindowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,6 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow.constructor Maps JavaScript API}
   */
 class InfoWindow ()
-  extends typings.googlemaps.google.maps.InfoWindow {
+  extends StObject
+     with typings.googlemaps.google.maps.InfoWindow {
   def this(opts: InfoWindowOptions) = this()
 }

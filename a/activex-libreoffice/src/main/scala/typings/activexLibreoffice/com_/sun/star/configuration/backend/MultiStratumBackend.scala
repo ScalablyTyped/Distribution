@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements {@link Backend} provides access to a configuration database composed of one or more storage backends containing settings used by software
   * modules.
   */
-@js.native
 trait MultiStratumBackend
-  extends Backend
+  extends StObject
+     with Backend
      with XInitialization
 object MultiStratumBackend {
   
@@ -29,7 +28,7 @@ object MultiStratumBackend {
     getOwnUpdateHandler: String => XUpdateHandler,
     getOwnerEntity: () => String,
     getUpdateHandler: (String, String) => XUpdateHandler,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isEqualEntity: (String, String) => Boolean,
     listLayers: (String, String) => SafeArray[XLayer],
     listOwnLayers: String => SafeArray[XLayer],

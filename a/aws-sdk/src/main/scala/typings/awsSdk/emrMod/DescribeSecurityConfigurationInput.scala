@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSecurityConfigurationInput extends StObject {
   
   /**
     * The name of the security configuration.
     */
-  var Name: XmlString = js.native
+  var Name: XmlString
 }
 object DescribeSecurityConfigurationInput {
   

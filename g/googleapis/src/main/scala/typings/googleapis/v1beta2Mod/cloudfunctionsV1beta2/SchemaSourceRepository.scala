@@ -2,19 +2,17 @@ package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the location of the function source in a remote repository.
   */
-@js.native
 trait SchemaSourceRepository extends StObject {
   
   /**
     * The name of the branch from which the function should be fetched.
     */
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The id of the revision that was resolved at the moment of
@@ -23,20 +21,20 @@ trait SchemaSourceRepository extends StObject {
     * that time. If user deployed from revision then this value will be always
     * equal to the revision specified by the user.
     */
-  var deployedRevision: js.UndefOr[String] = js.native
+  var deployedRevision: js.UndefOr[String] = js.undefined
   
   /**
     * URL to the hosted repository where the function is defined. Only paths in
     * https://source.developers.google.com domain are supported. The path
     * should contain the name of the repository.
     */
-  var repositoryUrl: js.UndefOr[String] = js.native
+  var repositoryUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the revision that captures the state of the repository from
     * which the function should be fetched.
     */
-  var revision: js.UndefOr[String] = js.native
+  var revision: js.UndefOr[String] = js.undefined
   
   /**
     * The path within the repository where the function is defined. The path
@@ -44,13 +42,13 @@ trait SchemaSourceRepository extends StObject {
     * Use &quot;/&quot; if the function is defined directly in the root
     * directory of a repository.
     */
-  var sourcePath: js.UndefOr[String] = js.native
+  var sourcePath: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the tag that captures the state of the repository from which
     * the function should be fetched.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceRepository {
   

@@ -2,17 +2,15 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyHyphenFallback extends StObject {
   
-  var inherits: js.UndefOr[PropertyInheritsProperty | js.Array[PropertyInheritsProperty]] = js.native
+  var inherits: js.UndefOr[PropertyInheritsProperty | js.Array[PropertyInheritsProperty]] = js.undefined
   
-  var `initial-value`: js.UndefOr[String | js.Array[String]] = js.native
+  var `initial-value`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var syntax: js.UndefOr[String | js.Array[String]] = js.native
+  var syntax: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object PropertyHyphenFallback {
   

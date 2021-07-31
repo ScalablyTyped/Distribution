@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Settings")
@@ -30,7 +29,7 @@ class ResourceSettings protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSetting] = js.native
   def get(callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetting] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet, callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceSettings protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSettings] = js.native
   def list(callback: BodyResponseCallback[SchemaSettings]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSettings] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSettings] = js.native
   def list(params: ParamsResourceSettingsList): GaxiosPromise[SchemaSettings] = js.native
   def list(params: ParamsResourceSettingsList, callback: BodyResponseCallback[SchemaSettings]): Unit = js.native
   def list(
@@ -93,7 +92,7 @@ class ResourceSettings protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceSettingsWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceSettingsWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

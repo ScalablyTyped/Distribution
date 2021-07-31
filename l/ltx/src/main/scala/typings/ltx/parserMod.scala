@@ -7,7 +7,6 @@ import typings.ltx.elementMod.Element
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -22,7 +21,6 @@ object parserMod {
     def write(data: String): Unit = js.native
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
     var Element: js.UndefOr[
@@ -31,11 +29,11 @@ object parserMod {
           /* attrs */ js.UndefOr[String | StringDictionary[js.Any]], 
           typings.ltx.elementMod.Element
         ]
-      ] = js.native
+      ] = js.undefined
     
     var Parser: js.UndefOr[
         Instantiable1[/* options */ js.UndefOr[ParserOptions], typings.ltx.parserMod.Parser]
-      ] = js.native
+      ] = js.undefined
   }
   object ParserOptions {
     

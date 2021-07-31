@@ -4,7 +4,6 @@ import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFMetadataSyncFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,39 +13,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def ApproveOrRejectAssignment(
     ObjVer: IObjVer,
     Approve: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignment(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignment(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignment(
-    ObjVer: IObjVer,
-    Approve: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignment(
     ObjVer: IObjVer,
     Approve: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignment(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignment(
@@ -54,6 +26,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Approve: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -62,29 +61,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Approve: Boolean,
     UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignmentByUser(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignmentByUser(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignmentByUser(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignmentByUser(
@@ -92,14 +68,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Approve: Boolean,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def ApproveOrRejectAssignmentByUser(
-    ObjVer: IObjVer,
-    Approve: Boolean,
-    UserID: Double,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignmentByUser(
@@ -108,27 +76,41 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def CreatePropertiesFromFileInformation(FileInformation: IFileInformation): Unit = js.native
-  def CreatePropertiesFromFileInformation(
-    FileInformation: IFileInformation,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def CreatePropertiesFromFileInformation(
-    FileInformation: IFileInformation,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def CreatePropertiesFromFileInformation(
-    FileInformation: IFileInformation,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit]
@@ -136,39 +118,39 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def CreatePropertiesFromFileInformation(
-    FileInformation: IFileInformation,
-    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GenerateAutomaticPermissionsFromPropertyValues(PropertyValues: IPropertyValues): Unit = js.native
-  def GenerateAutomaticPermissionsFromPropertyValues(
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GenerateAutomaticPermissionsFromPropertyValues(
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GenerateAutomaticPermissionsFromPropertyValues(
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IAccessControlList, Unit]
@@ -176,42 +158,39 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IAccessControlList, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GenerateAutomaticPermissionsFromPropertyValues(
-    PropertyValues: IPropertyValues,
-    successCallback: js.Function1[/* result */ IAccessControlList, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IAccessControlList, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IAccessControlList, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetProperties(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
-  def GetProperties(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetProperties(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetProperties(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetProperties(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
@@ -221,13 +200,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetProperties(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetProperties(
@@ -235,30 +207,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesAsXML(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
-  def GetPropertiesAsXML(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesAsXML(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesAsXML(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesAsXML(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
@@ -268,13 +247,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesAsXML(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.Function1[/* result */ String, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesAsXML(
@@ -282,30 +254,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ String, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ String, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesForDisplay(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
-  def GetPropertiesForDisplay(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesForDisplay(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesForDisplay(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesForDisplay(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
@@ -315,13 +294,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesForDisplay(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesForDisplay(
@@ -329,30 +301,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesForMetadataSync(ObjVer: IObjVer, Format: MFMetadataSyncFormat): Unit = js.native
-  def GetPropertiesForMetadataSync(
-    ObjVer: IObjVer,
-    Format: MFMetadataSyncFormat,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesForMetadataSync(
-    ObjVer: IObjVer,
-    Format: MFMetadataSyncFormat,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesForMetadataSync(
-    ObjVer: IObjVer,
-    Format: MFMetadataSyncFormat,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesForMetadataSync(
     ObjVer: IObjVer,
     Format: MFMetadataSyncFormat,
@@ -362,13 +341,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Format: MFMetadataSyncFormat,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesForMetadataSync(
-    ObjVer: IObjVer,
-    Format: MFMetadataSyncFormat,
-    successCallback: js.Function1[/* result */ INamedValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesForMetadataSync(
@@ -376,27 +348,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Format: MFMetadataSyncFormat,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: js.Function1[/* result */ INamedValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesOfMultipleObjects(ObjectVersions: IObjVers): Unit = js.native
-  def GetPropertiesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit]
@@ -404,42 +386,39 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesWithIconClues(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
-  def GetPropertiesWithIconClues(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconClues(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconClues(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesWithIconClues(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
@@ -449,13 +428,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconClues(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesWithIconClues(
@@ -463,27 +435,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetPropertiesWithIconCluesOfMultipleObjects(ObjectVersions: IObjVers): Unit = js.native
-  def GetPropertiesWithIconCluesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconCluesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconCluesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit]
@@ -491,42 +473,39 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetPropertiesWithIconCluesOfMultipleObjects(
-    ObjectVersions: IObjVers,
-    successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetProperty(ObjVer: IObjVer, Property: Double): Unit = js.native
-  def GetProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetProperty(
     ObjVer: IObjVer,
     Property: Double,
@@ -536,13 +515,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IPropertyValue, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.Function1[/* result */ IPropertyValue, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetProperty(
@@ -550,37 +522,41 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Property: Double,
     successCallback: js.Function1[/* result */ IPropertyValue, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: js.Function1[/* result */ IPropertyValue, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def GetVersionComment(ObjVer: IObjVer): Unit = js.native
-  def GetVersionComment(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetVersionComment(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetVersionComment(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetVersionComment(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IVersionComment, Unit]): Unit = js.native
   def GetVersionComment(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComment, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetVersionComment(
-    ObjVer: IObjVer,
-    successCallback: js.Function1[/* result */ IVersionComment, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetVersionComment(
@@ -589,35 +565,30 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IVersionComment, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionComment(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
   
   def GetVersionCommentHistory(ObjVer: IObjVer): Unit = js.native
-  def GetVersionCommentHistory(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetVersionCommentHistory(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetVersionCommentHistory(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetVersionCommentHistory(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IVersionComments, Unit]): Unit = js.native
   def GetVersionCommentHistory(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComments, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetVersionCommentHistory(
-    ObjVer: IObjVer,
-    successCallback: js.Function1[/* result */ IVersionComments, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetVersionCommentHistory(
@@ -626,28 +597,26 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IVersionComments, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
   
   def GetWorkflowState(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
-  def GetWorkflowState(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetWorkflowState(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def GetWorkflowState(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def GetWorkflowState(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
@@ -657,13 +626,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def GetWorkflowState(
-    ObjVer: IObjVer,
-    UpdateFromServer: Boolean,
-    successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def GetWorkflowState(
@@ -671,37 +633,41 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def MarkAssignmentComplete(ObjVer: IObjVer): Unit = js.native
-  def MarkAssignmentComplete(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def MarkAssignmentComplete(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def MarkAssignmentComplete(
-    ObjVer: IObjVer,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def MarkAssignmentComplete(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]): Unit = js.native
   def MarkAssignmentComplete(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def MarkAssignmentComplete(
-    ObjVer: IObjVer,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def MarkAssignmentComplete(
@@ -710,28 +676,26 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
   
   def MarkAssignmentCompleteByUser(ObjVer: IObjVer, UserID: Double): Unit = js.native
-  def MarkAssignmentCompleteByUser(
-    ObjVer: IObjVer,
-    UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def MarkAssignmentCompleteByUser(
-    ObjVer: IObjVer,
-    UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def MarkAssignmentCompleteByUser(
-    ObjVer: IObjVer,
-    UserID: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def MarkAssignmentCompleteByUser(
     ObjVer: IObjVer,
     UserID: Double,
@@ -741,13 +705,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def MarkAssignmentCompleteByUser(
-    ObjVer: IObjVer,
-    UserID: Double,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def MarkAssignmentCompleteByUser(
@@ -755,6 +712,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -762,39 +746,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def RemoveProperty(
     ObjVer: IObjVer,
     Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def RemoveProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def RemoveProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def RemoveProperty(
-    ObjVer: IObjVer,
-    Property: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def RemoveProperty(
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def RemoveProperty(
-    ObjVer: IObjVer,
-    Property: Double,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def RemoveProperty(
@@ -802,6 +759,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Property: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -810,29 +794,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     AllowModifyingCheckedInObject: Boolean,
     PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllProperties(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetAllProperties(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllProperties(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetAllProperties(
@@ -840,14 +801,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     AllowModifyingCheckedInObject: Boolean,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllProperties(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetAllProperties(
@@ -856,6 +809,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -872,35 +856,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissions(
@@ -910,16 +865,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissions(
@@ -930,6 +875,45 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -948,38 +932,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissionsEx(
@@ -990,17 +942,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetAllPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    AllowModifyingCheckedInObject: Boolean,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissionsEx(
@@ -1012,6 +953,49 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1028,35 +1012,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     CreatedBy: ITypedValue,
     UpdateCreated: Boolean,
     CreatedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetCreationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateCreatedBy: Boolean,
-    CreatedBy: ITypedValue,
-    UpdateCreated: Boolean,
-    CreatedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetCreationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateCreatedBy: Boolean,
-    CreatedBy: ITypedValue,
-    UpdateCreated: Boolean,
-    CreatedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetCreationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateCreatedBy: Boolean,
-    CreatedBy: ITypedValue,
-    UpdateCreated: Boolean,
-    CreatedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetCreationInfoAdmin(
@@ -1066,16 +1021,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateCreated: Boolean,
     CreatedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetCreationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateCreatedBy: Boolean,
-    CreatedBy: ITypedValue,
-    UpdateCreated: Boolean,
-    CreatedUtc: ITypedValue,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetCreationInfoAdmin(
@@ -1086,6 +1031,45 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     CreatedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1102,35 +1086,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     LastModifiedBy: ITypedValue,
     UpdateLastModified: Boolean,
     LastModifiedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetLastModificationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateLastModifiedBy: Boolean,
-    LastModifiedBy: ITypedValue,
-    UpdateLastModified: Boolean,
-    LastModifiedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetLastModificationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateLastModifiedBy: Boolean,
-    LastModifiedBy: ITypedValue,
-    UpdateLastModified: Boolean,
-    LastModifiedUtc: ITypedValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetLastModificationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateLastModifiedBy: Boolean,
-    LastModifiedBy: ITypedValue,
-    UpdateLastModified: Boolean,
-    LastModifiedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetLastModificationInfoAdmin(
@@ -1140,16 +1095,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     UpdateLastModified: Boolean,
     LastModifiedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetLastModificationInfoAdmin(
-    ObjVer: IObjVer,
-    UpdateLastModifiedBy: Boolean,
-    LastModifiedBy: ITypedValue,
-    UpdateLastModified: Boolean,
-    LastModifiedUtc: ITypedValue,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetLastModificationInfoAdmin(
@@ -1160,6 +1105,45 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     LastModifiedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1167,39 +1151,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def SetProperties(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperties(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetProperties(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperties(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetProperties(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperties(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetProperties(
@@ -1207,27 +1164,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
   def SetPropertiesOfMultipleObjects(SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects): Unit = js.native
-  def SetPropertiesOfMultipleObjects(
-    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesOfMultipleObjects(
-    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetPropertiesOfMultipleObjects(
-    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit]
@@ -1235,18 +1202,35 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesOfMultipleObjects(
-    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
-    successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1261,32 +1245,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissions(
@@ -1295,15 +1253,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissions(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissions(
@@ -1313,6 +1262,41 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1329,35 +1313,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissionsEx(
@@ -1367,16 +1322,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetPropertiesWithPermissionsEx(
-    ObjVer: IObjVer,
-    PropertyValues: IPropertyValues,
-    ACLEnforcingMode: MFACLEnforcingMode,
-    ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissionsEx(
@@ -1387,6 +1332,45 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1394,39 +1378,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def SetProperty(
     ObjVer: IObjVer,
     PropertyValue: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperty(
-    ObjVer: IObjVer,
-    PropertyValue: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetProperty(
-    ObjVer: IObjVer,
-    PropertyValue: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperty(
-    ObjVer: IObjVer,
-    PropertyValue: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetProperty(
     ObjVer: IObjVer,
     PropertyValue: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetProperty(
-    ObjVer: IObjVer,
-    PropertyValue: IPropertyValue,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetProperty(
@@ -1434,6 +1391,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     PropertyValue: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1441,39 +1425,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def SetVersionComment(
     ObjVer: IObjVer,
     VersionComment: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetVersionComment(
-    ObjVer: IObjVer,
-    VersionComment: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetVersionComment(
-    ObjVer: IObjVer,
-    VersionComment: IPropertyValue,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetVersionComment(
-    ObjVer: IObjVer,
-    VersionComment: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetVersionComment(
     ObjVer: IObjVer,
     VersionComment: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetVersionComment(
-    ObjVer: IObjVer,
-    VersionComment: IPropertyValue,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetVersionComment(
@@ -1481,6 +1438,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     VersionComment: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1488,39 +1472,12 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
   def SetWorkflowState(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowState(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetWorkflowState(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowState(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowState(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowState(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetWorkflowState(
@@ -1528,6 +1485,33 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     WorkflowState: IObjectVersionWorkflowState,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1536,29 +1520,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
     ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateEx(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetWorkflowStateEx(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateEx(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowStateEx(
@@ -1566,14 +1527,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     WorkflowState: IObjectVersionWorkflowState,
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateEx(
-    ObjVer: IObjVer,
-    WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateEx(
@@ -1582,6 +1535,37 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: js.Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1591,32 +1575,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     Workflow: Double,
     lStateTransition: Double,
     lVersionComment: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransition(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    lStateTransition: Double,
-    lVersionComment: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransition(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    lStateTransition: Double,
-    lVersionComment: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransition(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    lStateTransition: Double,
-    lVersionComment: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransition(
@@ -1625,15 +1583,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     lStateTransition: Double,
     lVersionComment: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransition(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    lStateTransition: Double,
-    lVersionComment: String,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransition(
@@ -1643,6 +1592,41 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     lVersionComment: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -1659,35 +1643,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     StateTransition: Double,
     VersionComment: String,
     ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransitionEx(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    StateTransition: Double,
-    VersionComment: String,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransitionEx(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    StateTransition: Double,
-    VersionComment: String,
-    ElectronicSignature: js.Any,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransitionEx(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    StateTransition: Double,
-    VersionComment: String,
-    ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransitionEx(
@@ -1697,16 +1652,6 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     VersionComment: String,
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    finallyCallback: js.Function0[Unit]
-  ): Unit = js.native
-  def SetWorkflowStateTransitionEx(
-    ObjVer: IObjVer,
-    Workflow: Double,
-    StateTransition: Double,
-    VersionComment: String,
-    ElectronicSignature: js.Any,
-    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransitionEx(
@@ -1717,6 +1662,45 @@ trait IVaultObjectPropertyOperationsAsync extends StObject {
     ElectronicSignature: js.Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
     errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: js.Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: js.Any,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }

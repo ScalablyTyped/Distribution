@@ -3,14 +3,15 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileUploaderMod {
   
   @JSImport("carbon-components/components/file-uploader/file-uploader", JSImport.Default)
   @js.native
-  class default protected () extends FileUploader {
+  class default protected ()
+    extends StObject
+       with FileUploader {
     def this(element: js.Any) = this()
     def this(element: js.Any, options: js.Object) = this()
   }
@@ -43,7 +44,7 @@ object fileUploaderMod {
     
     def _filenamesHTML(name: js.Any, id: js.Any): String = js.native
     
-    def _getStateContainers(): js.Array[_] = js.native
+    def _getStateContainers(): js.Array[js.Any] = js.native
     
     def _handleDeleteButton(evt: js.Any): Unit = js.native
     

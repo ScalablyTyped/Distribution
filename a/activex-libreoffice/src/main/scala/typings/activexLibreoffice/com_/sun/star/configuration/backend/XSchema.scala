@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handles access to the elements of a component schema, i.e its templates and its component definition.
   * @since OOo 1.1.2
   */
-@js.native
-trait XSchema extends XInterface {
+trait XSchema
+  extends StObject
+     with XInterface {
   
   /**
     * Describes only the component definition to a {@link XSchemaHandler} .
@@ -21,7 +21,7 @@ trait XSchema extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the access to or processing of the data or if a subsequent call to any of the
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XSchemaHandler} .
     */
-  def readComponent(aHandler: XSchemaHandler): Unit = js.native
+  def readComponent(aHandler: XSchemaHandler): Unit
   
   /**
     * Describes the full schema (templates + component) to a {@link XSchemaHandler} .
@@ -30,7 +30,7 @@ trait XSchema extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the access to or processing of the data or if a subsequent call to any of the
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XSchemaHandler} .
     */
-  def readSchema(aHandler: XSchemaHandler): Unit = js.native
+  def readSchema(aHandler: XSchemaHandler): Unit
   
   /**
     * Describes the component templates to a {@link XSchemaHandler} .
@@ -39,7 +39,7 @@ trait XSchema extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the access to or processing of the data or if a subsequent call to any of the
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XSchemaHandler} .
     */
-  def readTemplates(aHandler: XSchemaHandler): Unit = js.native
+  def readTemplates(aHandler: XSchemaHandler): Unit
 }
 object XSchema {
   

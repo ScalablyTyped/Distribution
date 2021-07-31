@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterface extends StObject {
   
   /**
     * The ID of the network interface.
     */
-  var networkInterfaceId: js.UndefOr[GenericString] = js.native
+  var networkInterfaceId: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The IPv4 address of the network interface within the subnet.
     */
-  var privateIpAddress: js.UndefOr[GenericString] = js.native
+  var privateIpAddress: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The IPv4 public address of the network interface.
     */
-  var publicIpAddress: js.UndefOr[GenericString] = js.native
+  var publicIpAddress: js.UndefOr[GenericString] = js.undefined
 }
 object NetworkInterface {
   

@@ -2,17 +2,15 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseLinkDestination extends StObject {
   
-  var parseLinkDestination: js.Any = js.native
+  var parseLinkDestination: js.Any
   
-  var parseLinkLabel: js.Any = js.native
+  var parseLinkLabel: js.Any
   
-  var parseLinkTitle: js.Any = js.native
+  var parseLinkTitle: js.Any
 }
 object ParseLinkDestination {
   

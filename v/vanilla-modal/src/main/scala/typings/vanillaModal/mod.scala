@@ -5,14 +5,15 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vanilla-modal", JSImport.Default)
   @js.native
-  class default () extends VanillaModal {
+  class default ()
+    extends StObject
+       with VanillaModal {
     def this(settings: VanillaModalConfig) = this()
   }
   
@@ -56,40 +57,39 @@ object mod {
     def setOpenId(id: String): Unit = js.native
   }
   
-  @js.native
   trait VanillaModalConfig extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var clickOutside: js.UndefOr[Boolean] = js.native
+    var clickOutside: js.UndefOr[Boolean] = js.undefined
     
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
-    var closeKeys: js.UndefOr[js.Array[js.UndefOr[Double]] | Boolean] = js.native
+    var closeKeys: js.UndefOr[(js.Array[Double | Unit]) | Boolean] = js.undefined
     
-    var loadClass: js.UndefOr[String] = js.native
+    var loadClass: js.UndefOr[String] = js.undefined
     
-    var modal: js.UndefOr[String | HTMLElement] = js.native
+    var modal: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var modalContent: js.UndefOr[String] = js.native
+    var modalContent: js.UndefOr[String] = js.undefined
     
-    var modalInner: js.UndefOr[String] = js.native
+    var modalInner: js.UndefOr[String] = js.undefined
     
-    var onBeforeClose: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.native
+    var onBeforeClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBeforeOpen: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.native
+    var onBeforeOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var open: js.UndefOr[String] = js.native
+    var open: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[String] = js.native
+    var page: js.UndefOr[String] = js.undefined
     
-    var transitionEnd: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.native
+    var transitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var transitions: js.UndefOr[String] = js.native
+    var transitions: js.UndefOr[String] = js.undefined
   }
   object VanillaModalConfig {
     
@@ -118,13 +118,13 @@ object mod {
       def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCloseKeys(value: js.Array[js.UndefOr[Double]] | Boolean): Self = StObject.set(x, "closeKeys", value.asInstanceOf[js.Any])
+      def setCloseKeys(value: (js.Array[Double | Unit]) | Boolean): Self = StObject.set(x, "closeKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCloseKeysUndefined: Self = StObject.set(x, "closeKeys", js.undefined)
       
       @scala.inline
-      def setCloseKeysVarargs(value: js.UndefOr[Double]*): Self = StObject.set(x, "closeKeys", js.Array(value :_*))
+      def setCloseKeysVarargs(value: (Double | Unit)*): Self = StObject.set(x, "closeKeys", js.Array(value :_*))
       
       @scala.inline
       def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
@@ -154,25 +154,25 @@ object mod {
       def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
       @scala.inline
-      def setOnBeforeClose(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onBeforeClose", js.Any.fromFunction0(value))
+      def setOnBeforeClose(value: () => Unit): Self = StObject.set(x, "onBeforeClose", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBeforeCloseUndefined: Self = StObject.set(x, "onBeforeClose", js.undefined)
       
       @scala.inline
-      def setOnBeforeOpen(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onBeforeOpen", js.Any.fromFunction0(value))
+      def setOnBeforeOpen(value: () => Unit): Self = StObject.set(x, "onBeforeOpen", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBeforeOpenUndefined: Self = StObject.set(x, "onBeforeOpen", js.undefined)
       
       @scala.inline
-      def setOnClose(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnOpen(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
@@ -190,7 +190,7 @@ object mod {
       def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       @scala.inline
-      def setTransitionEnd(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction0(value))
+      def setTransitionEnd(value: () => Unit): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
@@ -203,16 +203,15 @@ object mod {
     }
   }
   
-  @js.native
   trait VanillaModalDomNodes extends StObject {
     
-    var modal: HTMLElement = js.native
+    var modal: HTMLElement
     
-    var modalContent: HTMLElement = js.native
+    var modalContent: HTMLElement
     
-    var modalInner: HTMLElement = js.native
+    var modalInner: HTMLElement
     
-    var page: HTMLElement = js.native
+    var page: HTMLElement
   }
   object VanillaModalDomNodes {
     

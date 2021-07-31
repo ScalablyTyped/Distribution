@@ -2,36 +2,34 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the claim author.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends StObject {
   
   /**
     * Corresponds to `ClaimReview.itemReviewed.author.image`.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to `ClaimReview.itemReviewed.author.jobTitle`.
     */
-  var jobTitle: js.UndefOr[String] = js.native
+  var jobTitle: js.UndefOr[String] = js.undefined
   
   /**
     * A person or organization stating the claim. For instance, &quot;John
     * Doe&quot;.&lt;br&gt; Corresponds to
     * `ClaimReview.itemReviewed.author.name`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to `ClaimReview.itemReviewed.author.sameAs`.
     */
-  var sameAs: js.UndefOr[String] = js.native
+  var sameAs: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor {
   

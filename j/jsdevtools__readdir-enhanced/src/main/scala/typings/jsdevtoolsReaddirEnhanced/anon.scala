@@ -10,7 +10,6 @@ import typings.std.AsyncIterableIterator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -44,7 +43,7 @@ object anon {
     
     def apply(dir: String): js.Promise[js.Array[String]] = js.native
     def apply(dir: String, callback: Callback[js.Array[String]]): Unit = js.native
-    def apply(dir: String, options: js.UndefOr[scala.Nothing], callback: Callback[js.Array[String]]): Unit = js.native
+    def apply(dir: String, options: Unit, callback: Callback[js.Array[String]]): Unit = js.native
     def apply(dir: String, options: Optionsstatsfalseundefine): js.Promise[js.Array[String]] = js.native
     def apply(dir: String, options: Optionsstatsfalseundefine, callback: Callback[js.Array[String]]): Unit = js.native
     def apply(dir: String, options: Optionsstatstrue): js.Promise[js.Array[Stats]] = js.native
@@ -52,7 +51,6 @@ object anon {
   }
   
   /* Inlined @jsdevtools/readdir-enhanced.@jsdevtools/readdir-enhanced/lib/types-public.Options & {  stats :false | undefined} */
-  @js.native
   trait Optionsstatsfalseundefine extends StObject {
     
     /**
@@ -60,7 +58,7 @@ object anon {
       *
       * Defaults to an empty string, which means results will be relative to the directory path.
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * The depth to crawl. Can be `true` to crawl indefinitely, a number to crawl only to that
@@ -68,46 +66,46 @@ object anon {
       *
       * Defaults to zero, which will not crawl subdirectories.
       */
-    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.native
+    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Filter critiera. Can be a glob pattern, a regular expression, or a filter function.
       *
       * Defaults to returning all files.
       */
-    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.native
+    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Custom implementations of filesystem methods.
       *
       * Defaults to the Node "fs" module.
       */
-    var fs: js.UndefOr[PartialFileSystem] = js.native
+    var fs: js.UndefOr[PartialFileSystem] = js.undefined
     
     /**
       * The path separator to use.
       *
       * Defaults to "\" on Windows and "/" on other platforms.
       */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
     
     /**
       * Return `Stats` objects instead of just path strings.
       *
       * Defaults to `false`.
       */
-    var stats: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var stats: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * Alias for the `stats` option. This property is supported for compatibility with the Node.js
       * built-in `fs.readdir()` function.
       */
-    var withFileTypes: js.UndefOr[Boolean] = js.native
+    var withFileTypes: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsstatsfalseundefine {
     
     @scala.inline
-    def apply(stats: js.UndefOr[Boolean] with js.UndefOr[`false`]): Optionsstatsfalseundefine = {
+    def apply(stats: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsstatsfalseundefine = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstatsfalseundefine]
     }
@@ -152,7 +150,7 @@ object anon {
       def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
       @scala.inline
-      def setStats(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      def setStats(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
@@ -163,7 +161,6 @@ object anon {
   }
   
   /* Inlined @jsdevtools/readdir-enhanced.@jsdevtools/readdir-enhanced/lib/types-public.Options & {  stats :true} */
-  @js.native
   trait Optionsstatstrue extends StObject {
     
     /**
@@ -171,7 +168,7 @@ object anon {
       *
       * Defaults to an empty string, which means results will be relative to the directory path.
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * The depth to crawl. Can be `true` to crawl indefinitely, a number to crawl only to that
@@ -179,46 +176,46 @@ object anon {
       *
       * Defaults to zero, which will not crawl subdirectories.
       */
-    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.native
+    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Filter critiera. Can be a glob pattern, a regular expression, or a filter function.
       *
       * Defaults to returning all files.
       */
-    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.native
+    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Custom implementations of filesystem methods.
       *
       * Defaults to the Node "fs" module.
       */
-    var fs: js.UndefOr[PartialFileSystem] = js.native
+    var fs: js.UndefOr[PartialFileSystem] = js.undefined
     
     /**
       * The path separator to use.
       *
       * Defaults to "\" on Windows and "/" on other platforms.
       */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
     
     /**
       * Return `Stats` objects instead of just path strings.
       *
       * Defaults to `false`.
       */
-    var stats: js.UndefOr[Boolean] with `true` = js.native
+    var stats: js.UndefOr[Boolean] & `true`
     
     /**
       * Alias for the `stats` option. This property is supported for compatibility with the Node.js
       * built-in `fs.readdir()` function.
       */
-    var withFileTypes: js.UndefOr[Boolean] = js.native
+    var withFileTypes: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsstatstrue {
     
     @scala.inline
-    def apply(stats: js.UndefOr[Boolean] with `true`): Optionsstatstrue = {
+    def apply(stats: js.UndefOr[Boolean] & `true`): Optionsstatstrue = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstatstrue]
     }
@@ -263,7 +260,7 @@ object anon {
       def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
       @scala.inline
-      def setStats(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      def setStats(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
@@ -274,18 +271,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@jsdevtools/readdir-enhanced.@jsdevtools/readdir-enhanced/lib/types-public.FileSystem> */
-  @js.native
   trait PartialFileSystem extends StObject {
     
     var lstat: js.UndefOr[
         js.Function2[/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var readdir: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[js.Array[String]], Unit]] = js.native
+    var readdir: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[js.Array[String]], Unit]] = js.undefined
     
     var stat: js.UndefOr[
         js.Function2[/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialFileSystem {
     

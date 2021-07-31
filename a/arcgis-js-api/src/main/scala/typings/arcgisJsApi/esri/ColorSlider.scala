@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorSlider extends SmartMappingSliderBase {
+trait ColorSlider
+  extends StObject
+     with SmartMappingSliderBase {
   
   /**
     * Only applicable when three thumbs (i.e.

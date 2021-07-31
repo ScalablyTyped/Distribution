@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceCommitment extends StObject {
   
   /** Name of the accelerator type resource. Applicable only when the type is ACCELERATOR. */
-  var acceleratorType: js.UndefOr[String] = js.native
+  var acceleratorType: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of the resource purchased (in a type-dependent unit, such as bytes). For vCPUs, this can just be an integer. For memory, this must be provided in MB. Memory must be a
     * multiple of 256 MB, with up to 6.5GB of memory per every vCPU.
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /** Type of resource for which this commitment applies. Possible values are VCPU and MEMORY */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ResourceCommitment {
   

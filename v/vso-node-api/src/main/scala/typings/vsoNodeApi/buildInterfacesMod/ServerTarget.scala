@@ -2,16 +2,16 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerTarget extends PhaseTarget {
+trait ServerTarget
+  extends StObject
+     with PhaseTarget {
   
   /**
     * The execution options.
     */
-  var executionOptions: ServerTargetExecutionOptions = js.native
+  var executionOptions: ServerTargetExecutionOptions
 }
 object ServerTarget {
   

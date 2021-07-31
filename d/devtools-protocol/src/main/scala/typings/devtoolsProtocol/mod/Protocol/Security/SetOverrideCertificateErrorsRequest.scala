@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetOverrideCertificateErrorsRequest extends StObject {
   
   /**
     * If true, certificate errors will be overridden.
     */
-  var `override`: Boolean = js.native
+  var `override`: Boolean
 }
 object SetOverrideCertificateErrorsRequest {
   

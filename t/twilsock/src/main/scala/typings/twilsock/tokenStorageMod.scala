@@ -2,7 +2,6 @@ package typings.twilsock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenStorageMod {
@@ -17,9 +16,8 @@ object tokenStorageMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("twilsock/lib/tokenStorage", "TokenStorage.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /* static member */
     @JSImport("twilsock/lib/tokenStorage", "TokenStorage.getKeyName")
@@ -29,14 +27,12 @@ object tokenStorageMod {
     def getKeyName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getKeyName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("twilsock/lib/tokenStorage", "TokenStorage.getStoredToken")
-    @js.native
-    def getStoredToken(productId: String): js.Any = js.native
+    @scala.inline
+    def getStoredToken(productId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoredToken")(productId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @JSImport("twilsock/lib/tokenStorage", "TokenStorage.initialize")
-    @js.native
-    def initialize(): Unit = js.native
+    @scala.inline
+    def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
     
     /* static member */
     @JSImport("twilsock/lib/tokenStorage", "TokenStorage.initializedFlag")
@@ -44,9 +40,8 @@ object tokenStorageMod {
     val initializedFlag: js.Any = js.native
     
     /* static member */
-    @JSImport("twilsock/lib/tokenStorage", "TokenStorage.storeToken")
-    @js.native
-    def storeToken(continuationToken: String, productId: String): Unit = js.native
+    @scala.inline
+    def storeToken(continuationToken: String, productId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("storeToken")(continuationToken.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     @JSImport("twilsock/lib/tokenStorage", "TokenStorage.tokenStoragePrefix")

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * For example, this can be used to select a font.
   */
-@js.native
 trait FontDescriptor extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait FontDescriptor extends StObject {
     *
     * Use one value out of the constant group {@link com.sun.star.awt.CharSet} .
     */
-  var CharSet: Double = js.native
+  var CharSet: Double
   
   /**
     * specifies the character width.
@@ -27,64 +25,64 @@ trait FontDescriptor extends StObject {
     *
     * The value is expressed as a percentage.
     */
-  var CharacterWidth: Double = js.native
+  var CharacterWidth: Double
   
   /**
     * specifies the general style of the font.
     *
     * Use one value out of the constant group {@link com.sun.star.awt.FontFamily} .
     */
-  var Family: Double = js.native
+  var Family: Double
   
   /** specifies the height of the font in the measure of the destination. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** For requesting, it specifies if there is a kerning table available. For selecting, it specifies if the kerning table is to be used. */
-  var Kerning: Boolean = js.native
+  var Kerning: Boolean
   
   /** specifies the exact name of the font. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * specifies the rotation of the font.
     *
     * The unit of measure is degrees; 0 is the baseline.
     */
-  var Orientation: Double = js.native
+  var Orientation: Double
   
   /**
     * specifies the pitch of the font.
     *
     * Use one value out of the constant group {@link com.sun.star.awt.FontPitch} .
     */
-  var Pitch: Double = js.native
+  var Pitch: Double
   
   /** specifies the slant of the font. */
-  var Slant: FontSlant = js.native
+  var Slant: FontSlant
   
   /**
     * specifies the kind of strikeout.
     *
     * Use one value out of the constant group {@link com.sun.star.awt.FontStrikeout} .
     */
-  var Strikeout: Double = js.native
+  var Strikeout: Double
   
   /** specifies the style name of the font. */
-  var StyleName: String = js.native
+  var StyleName: String
   
   /**
     * specifies the technology of the font representation.
     *
     * One or more values out of the constant group {@link com.sun.star.awt.FontType} can be combined by an arithmetical or-operation.
     */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * specifies the kind of underlining.
     *
     * Use one value out of the constant group {@link com.sun.star.awt.FontUnderline} .
     */
-  var Underline: Double = js.native
+  var Underline: Double
   
   /**
     * specifies the thickness of the line.
@@ -93,10 +91,10 @@ trait FontDescriptor extends StObject {
     *
     * The value is expressed as a percentage.
     */
-  var Weight: Double = js.native
+  var Weight: Double
   
   /** specifies the width of the font in the measure of the destination. */
-  var Width: Double = js.native
+  var Width: Double
   
   /**
     * specifies if only words get underlined.
@@ -105,7 +103,7 @@ trait FontDescriptor extends StObject {
     *
     * This property is only valid if the property {@link com.sun.star.awt.FontDescriptor.Underline} is not {@link FontUnderline.NONE} .
     */
-  var WordLineMode: Boolean = js.native
+  var WordLineMode: Boolean
 }
 object FontDescriptor {
   

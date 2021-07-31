@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Viewing extends Accessor {
+trait Viewing
+  extends StObject
+     with Accessor {
   
   /**
     * An object specifying the search parameters set within the web scene or web map.

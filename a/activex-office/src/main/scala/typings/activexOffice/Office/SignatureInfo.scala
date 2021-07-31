@@ -3,50 +3,48 @@ package typings.activexOffice.Office
 import typings.activexStdole.stdole.IPictureDisp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureInfo extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val CertificateVerificationResults: typings.activexOffice.Office.CertificateVerificationResults = js.native
+  val CertificateVerificationResults: typings.activexOffice.Office.CertificateVerificationResults
   
-  val ContentVerificationResults: typings.activexOffice.Office.ContentVerificationResults = js.native
+  val ContentVerificationResults: typings.activexOffice.Office.ContentVerificationResults
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def GetCertificateDetail(certdet: CertificateDetail): js.Any = js.native
+  def GetCertificateDetail(certdet: CertificateDetail): js.Any
   
-  def GetSignatureDetail(sigdet: SignatureDetail): js.Any = js.native
+  def GetSignatureDetail(sigdet: SignatureDetail): js.Any
   
-  val IsCertificateExpired: Boolean = js.native
+  val IsCertificateExpired: Boolean
   
-  val IsCertificateRevoked: Boolean = js.native
+  val IsCertificateRevoked: Boolean
   
-  val IsCertificateUntrusted: Boolean = js.native
+  val IsCertificateUntrusted: Boolean
   
-  val IsValid: Boolean = js.native
+  val IsValid: Boolean
   
   @JSName("Office.SignatureInfo_typekey")
-  var OfficeDotSignatureInfo_typekey: SignatureInfo = js.native
+  var OfficeDotSignatureInfo_typekey: SignatureInfo
   
-  val ReadOnly: Boolean = js.native
+  val ReadOnly: Boolean
   
-  def SelectCertificateDetailByThumbprint(bstrThumbprint: String): Unit = js.native
+  def SelectCertificateDetailByThumbprint(bstrThumbprint: String): Unit
   
-  def SelectSignatureCertificate(ParentWindow: js.Any): Unit = js.native
+  def SelectSignatureCertificate(ParentWindow: js.Any): Unit
   
-  def ShowSignatureCertificate(ParentWindow: js.Any): Unit = js.native
+  def ShowSignatureCertificate(ParentWindow: js.Any): Unit
   
-  var SignatureComment: String = js.native
+  var SignatureComment: String
   
-  var SignatureImage: IPictureDisp = js.native
+  var SignatureImage: IPictureDisp
   
-  val SignatureProvider: String = js.native
+  val SignatureProvider: String
   
-  var SignatureText: String = js.native
+  var SignatureText: String
 }
 object SignatureInfo {
   

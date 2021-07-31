@@ -2,29 +2,29 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationStateAdapter extends AnimationStateListener {
+trait AnimationStateAdapter
+  extends StObject
+     with AnimationStateListener {
   
   @JSName("complete")
-  def complete_MAnimationStateAdapter(entry: TrackEntry): Unit = js.native
+  def complete_MAnimationStateAdapter(entry: TrackEntry): Unit
   
   @JSName("dispose")
-  def dispose_MAnimationStateAdapter(entry: TrackEntry): Unit = js.native
+  def dispose_MAnimationStateAdapter(entry: TrackEntry): Unit
   
   @JSName("end")
-  def end_MAnimationStateAdapter(entry: TrackEntry): Unit = js.native
+  def end_MAnimationStateAdapter(entry: TrackEntry): Unit
   
   @JSName("event")
-  def event_MAnimationStateAdapter(entry: TrackEntry, event: Event): Unit = js.native
+  def event_MAnimationStateAdapter(entry: TrackEntry, event: Event): Unit
   
   @JSName("interrupt")
-  def interrupt_MAnimationStateAdapter(entry: TrackEntry): Unit = js.native
+  def interrupt_MAnimationStateAdapter(entry: TrackEntry): Unit
   
   @JSName("start")
-  def start_MAnimationStateAdapter(entry: TrackEntry): Unit = js.native
+  def start_MAnimationStateAdapter(entry: TrackEntry): Unit
 }
 object AnimationStateAdapter {
   

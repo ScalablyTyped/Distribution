@@ -3,7 +3,6 @@ package typings.webpackEntryManifestPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,36 +12,37 @@ object mod {
     */
   @JSImport("webpack-entry-manifest-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends WebpackEntryManifestPlugin {
+  class ^ ()
+    extends StObject
+       with WebpackEntryManifestPlugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Assets manifest filename
       * @default 'manifest.json'
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * Assets path filter function
       * @default () => true
       */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* chunk */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* chunk */ String, Boolean]] = js.undefined
     
     /**
       * Assets path map function
       * @default path => path
       */
-    var map: js.UndefOr[js.Function2[/* path */ String, /* chunk */ String, String]] = js.native
+    var map: js.UndefOr[js.Function2[/* path */ String, /* chunk */ String, String]] = js.undefined
     
     /**
       * Assets manifest serialize function
       * @default manifest => JSON.stringify(manifest)
       */
-    var serialize: js.UndefOr[js.Function1[/* manifest */ js.Any, String]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* manifest */ js.Any, String]] = js.undefined
   }
   object Options {
     
@@ -85,7 +85,9 @@ object mod {
     * Webpack plugin for generating an asset manifest with grouped entry chunks
     */
   @js.native
-  trait WebpackEntryManifestPlugin extends Plugin {
+  trait WebpackEntryManifestPlugin
+    extends StObject
+       with Plugin {
     
     @JSName("name")
     var name_WebpackEntryManifestPlugin: typings.webpackEntryManifestPlugin.webpackEntryManifestPluginStrings.WebpackEntryManifestPlugin = js.native

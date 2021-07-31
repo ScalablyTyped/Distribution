@@ -2,10 +2,8 @@ package typings.stremioAddonSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountryWhitelist extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CountryWhitelist extends StObject {
     *
     * Array of ISO 3166-1 alpha-3 country codes in lowercase in which the stream is accessible.
     */
-  var countryWhitelist: js.UndefOr[js.Array[String]] = js.native
+  var countryWhitelist: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If defined, addons with the same behaviorHints.group will be chosen automatically for binge watching.
@@ -22,7 +20,7 @@ trait CountryWhitelist extends StObject {
     * For example, if your addon is called "gobsAddon", and the stream is 720p, the group should be "gobsAddon-720p".
     * If the next episode has a stream with the same group, stremio should select that stream implicitly.
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * **Not implemented yet!**
@@ -33,14 +31,14 @@ trait CountryWhitelist extends StObject {
     * @readonly
     * @ignore
     */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Applies if the protocol of the url is http(s).
     *
     * Needs to be set to true if the URL does not support https or is not an MP4 file.
     */
-  var notWebReady: js.UndefOr[Boolean] = js.native
+  var notWebReady: js.UndefOr[Boolean] = js.undefined
 }
 object CountryWhitelist {
   

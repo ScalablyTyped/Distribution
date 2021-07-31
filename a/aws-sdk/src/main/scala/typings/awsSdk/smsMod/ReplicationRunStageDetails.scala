@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationRunStageDetails extends StObject {
   
   /**
     * The current stage of a replication run.
     */
-  var stage: js.UndefOr[ReplicationRunStage] = js.native
+  var stage: js.UndefOr[ReplicationRunStage] = js.undefined
   
   /**
     * The progress of the current stage of a replication run.
     */
-  var stageProgress: js.UndefOr[ReplicationRunStageProgress] = js.native
+  var stageProgress: js.UndefOr[ReplicationRunStageProgress] = js.undefined
 }
 object ReplicationRunStageDetails {
   

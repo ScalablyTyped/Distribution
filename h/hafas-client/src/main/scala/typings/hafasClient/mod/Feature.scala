@@ -2,24 +2,22 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feature extends StObject {
   
-  var geometry: Geometry = js.native
+  var geometry: Geometry
   
-  var properties: js.UndefOr[Station | Stop | js.Object] = js.native
+  var properties: js.UndefOr[Station | Stop | js.Object] = js.undefined
   
-  var `type`: typings.hafasClient.hafasClientStrings.Feature = js.native
+  var `type`: typings.hafasClient.hafasClientStrings.Feature
 }
 object Feature {
   
   @scala.inline
-  def apply(geometry: Geometry, `type`: typings.hafasClient.hafasClientStrings.Feature): Feature = {
+  def apply(geometry: Geometry): Feature = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Feature")
     __obj.asInstanceOf[Feature]
   }
   

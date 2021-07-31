@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateSshScriptRequest extends StObject {
   
   /** Required. Bastion VM Instance name to use or to create. */
-  var vm: js.UndefOr[String] = js.native
+  var vm: js.UndefOr[String] = js.undefined
   
   /** The VM creation configuration */
-  var vmCreationConfig: js.UndefOr[VmCreationConfig] = js.native
+  var vmCreationConfig: js.UndefOr[VmCreationConfig] = js.undefined
   
   /** The port that will be open on the bastion host */
-  var vmPort: js.UndefOr[Double] = js.native
+  var vmPort: js.UndefOr[Double] = js.undefined
   
   /** The VM selection configuration */
-  var vmSelectionConfig: js.UndefOr[VmSelectionConfig] = js.native
+  var vmSelectionConfig: js.UndefOr[VmSelectionConfig] = js.undefined
 }
 object GenerateSshScriptRequest {
   

@@ -2,69 +2,67 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExplainQueryStage extends StObject {
   
-  var completedParallelInputs: js.UndefOr[String] = js.native
+  var completedParallelInputs: js.UndefOr[String] = js.undefined
   
-  var computeMsAvg: js.UndefOr[String] = js.native
+  var computeMsAvg: js.UndefOr[String] = js.undefined
   
-  var computeMsMax: js.UndefOr[String] = js.native
+  var computeMsMax: js.UndefOr[String] = js.undefined
   
-  var computeRatioAvg: js.UndefOr[Double] = js.native
+  var computeRatioAvg: js.UndefOr[Double] = js.undefined
   
-  var computeRatioMax: js.UndefOr[Double] = js.native
+  var computeRatioMax: js.UndefOr[Double] = js.undefined
   
-  var endMs: js.UndefOr[String] = js.native
+  var endMs: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputStages: js.UndefOr[js.Array[String]] = js.native
+  var inputStages: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parallelInputs: js.UndefOr[String] = js.native
+  var parallelInputs: js.UndefOr[String] = js.undefined
   
-  var readMsAvg: js.UndefOr[String] = js.native
+  var readMsAvg: js.UndefOr[String] = js.undefined
   
-  var readMsMax: js.UndefOr[String] = js.native
+  var readMsMax: js.UndefOr[String] = js.undefined
   
-  var readRatioAvg: js.UndefOr[Double] = js.native
+  var readRatioAvg: js.UndefOr[Double] = js.undefined
   
-  var readRatioMax: js.UndefOr[Double] = js.native
+  var readRatioMax: js.UndefOr[Double] = js.undefined
   
-  var recordsRead: js.UndefOr[String] = js.native
+  var recordsRead: js.UndefOr[String] = js.undefined
   
-  var recordsWritten: js.UndefOr[String] = js.native
+  var recordsWritten: js.UndefOr[String] = js.undefined
   
-  var shuffleOutputBytes: js.UndefOr[String] = js.native
+  var shuffleOutputBytes: js.UndefOr[String] = js.undefined
   
-  var shuffleOutputBytesSpilled: js.UndefOr[String] = js.native
+  var shuffleOutputBytesSpilled: js.UndefOr[String] = js.undefined
   
-  var startMs: js.UndefOr[String] = js.native
+  var startMs: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var steps: js.UndefOr[js.Array[ExplainQueryStep]] = js.native
+  var steps: js.UndefOr[js.Array[ExplainQueryStep]] = js.undefined
   
-  var waitMsAvg: js.UndefOr[String] = js.native
+  var waitMsAvg: js.UndefOr[String] = js.undefined
   
-  var waitMsMax: js.UndefOr[String] = js.native
+  var waitMsMax: js.UndefOr[String] = js.undefined
   
-  var waitRatioAvg: js.UndefOr[Double] = js.native
+  var waitRatioAvg: js.UndefOr[Double] = js.undefined
   
-  var waitRatioMax: js.UndefOr[Double] = js.native
+  var waitRatioMax: js.UndefOr[Double] = js.undefined
   
-  var writeMsAvg: js.UndefOr[String] = js.native
+  var writeMsAvg: js.UndefOr[String] = js.undefined
   
-  var writeMsMax: js.UndefOr[String] = js.native
+  var writeMsMax: js.UndefOr[String] = js.undefined
   
-  var writeRatioAvg: js.UndefOr[Double] = js.native
+  var writeRatioAvg: js.UndefOr[Double] = js.undefined
   
-  var writeRatioMax: js.UndefOr[Double] = js.native
+  var writeRatioMax: js.UndefOr[Double] = js.undefined
 }
 object ExplainQueryStage {
   

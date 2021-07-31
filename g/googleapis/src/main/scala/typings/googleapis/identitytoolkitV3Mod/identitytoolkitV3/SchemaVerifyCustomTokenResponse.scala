@@ -2,40 +2,38 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from verifying a custom token
   */
-@js.native
 trait SchemaVerifyCustomTokenResponse extends StObject {
   
   /**
     * If idToken is STS id token, then this field will be expiration time of
     * STS id token in seconds.
     */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /**
     * The GITKit token for authenticated user.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * True if it&#39;s a new user sign-in, false if it&#39;s a returning user.
     */
-  var isNewUser: js.UndefOr[Boolean] = js.native
+  var isNewUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#VerifyCustomTokenResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object SchemaVerifyCustomTokenResponse {
   

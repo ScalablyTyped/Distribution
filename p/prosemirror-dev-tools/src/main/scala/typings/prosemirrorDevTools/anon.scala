@@ -8,19 +8,19 @@ import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait TypeofEditorState
-    extends Instantiable0[EditorState[Schema[js.Any, js.Any]]] {
+    extends StObject
+       with Instantiable0[EditorState[Schema[js.Any, js.Any]]] {
     
     /**
       * Create a new state.
       */
-    def create[S /* <: Schema[_, _] */](config: Doc[S]): EditorState[S] = js.native
+    def create[S /* <: Schema[js.Any, js.Any] */](config: Doc[S]): EditorState[S] = js.native
     
     /**
       * Deserialize a JSON representation of a state. `config` should
@@ -29,11 +29,11 @@ object anon {
       * to deserialize the state of plugins, by associating plugin
       * instances with the property names they use in the JSON object.
       */
-    def fromJSON[S /* <: Schema[_, _] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
-    def fromJSON[S /* <: Schema[_, _] */](
+    def fromJSON[S /* <: Schema[js.Any, js.Any] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = js.native
+    def fromJSON[S /* <: Schema[js.Any, js.Any] */](
       config: typings.prosemirrorState.anon.Schema[S],
       json: StringDictionary[js.Any],
-      pluginFields: StringDictionary[Plugin[_, S]]
+      pluginFields: StringDictionary[Plugin[js.Any, S]]
     ): EditorState[S] = js.native
   }
 }

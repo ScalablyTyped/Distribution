@@ -14,7 +14,6 @@ import typings.jointjs.mod.shapes.basic.Generic
 import typings.jointjs.mod.shapes.basic.PolygonSelectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object erd {
@@ -23,7 +22,7 @@ object erd {
   @js.native
   class Attribute () extends Element {
     def this(attributes: GenericAttributes[EllipsoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipsoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -31,7 +30,7 @@ object erd {
   @js.native
   class Derived () extends Attribute {
     def this(attributes: GenericAttributes[EllipsoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipsoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -39,7 +38,7 @@ object erd {
   @js.native
   class Entity () extends Generic {
     def this(attributes: GenericAttributes[PolygonalSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonalSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -47,7 +46,7 @@ object erd {
   @js.native
   class ISA () extends Element {
     def this(attributes: GenericAttributes[PolygonSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -55,7 +54,7 @@ object erd {
   @js.native
   class IdentifyingRelationship () extends Relationship {
     def this(attributes: GenericAttributes[PolygonalSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonalSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -63,7 +62,7 @@ object erd {
   @js.native
   class Key () extends Attribute {
     def this(attributes: GenericAttributes[EllipsoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipsoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -72,7 +71,7 @@ object erd {
   // default label props
   class Line () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
     
     def cardinality(value: String): Unit = js.native
@@ -83,7 +82,7 @@ object erd {
   @js.native
   class Multivalued () extends Attribute {
     def this(attributes: GenericAttributes[EllipsoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipsoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -91,7 +90,7 @@ object erd {
   @js.native
   class Normal () extends Attribute {
     def this(attributes: GenericAttributes[EllipsoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipsoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -99,7 +98,7 @@ object erd {
   @js.native
   class Relationship () extends Element {
     def this(attributes: GenericAttributes[PolygonalSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonalSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -107,20 +106,21 @@ object erd {
   @js.native
   class WeakEntity () extends Entity {
     def this(attributes: GenericAttributes[PolygonalSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonalSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
-  @js.native
-  trait EllipsoidSelectors extends Selectors {
+  trait EllipsoidSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGEllipseAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGEllipseAttributes] = js.undefined
     
     @JSName(".label")
-    var Dotlabel: js.UndefOr[SVGEllipseAttributes] = js.native
+    var Dotlabel: js.UndefOr[SVGEllipseAttributes] = js.undefined
     
-    var text: js.UndefOr[SVGTextAttributes] = js.native
+    var text: js.UndefOr[SVGTextAttributes] = js.undefined
   }
   object EllipsoidSelectors {
     
@@ -153,16 +153,17 @@ object erd {
     }
   }
   
-  @js.native
-  trait PolygonalSelectors extends Selectors {
+  trait PolygonalSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGPolygonAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGPolygonAttributes] = js.undefined
     
     @JSName(".label")
-    var Dotlabel: js.UndefOr[SVGPolygonAttributes] = js.native
+    var Dotlabel: js.UndefOr[SVGPolygonAttributes] = js.undefined
     
-    var text: js.UndefOr[SVGTextAttributes] = js.native
+    var text: js.UndefOr[SVGTextAttributes] = js.undefined
   }
   object PolygonalSelectors {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationProperty extends StObject {
   
   /**
     * After a job run starts, the number of minutes to wait before sending a job run delay notification.
     */
-  var NotifyDelayAfter: js.UndefOr[typings.awsSdk.glueMod.NotifyDelayAfter] = js.native
+  var NotifyDelayAfter: js.UndefOr[typings.awsSdk.glueMod.NotifyDelayAfter] = js.undefined
 }
 object NotificationProperty {
   

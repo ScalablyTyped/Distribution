@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "DateTimeFormatterBuilder")
@@ -24,18 +23,13 @@ class DateTimeFormatterBuilder () extends StObject {
   def appendPattern(pattern: String): DateTimeFormatterBuilder = js.native
   
   def appendValue(field: TemporalField): DateTimeFormatterBuilder = js.native
-  def appendValue(
-    field: TemporalField,
-    width: js.UndefOr[scala.Nothing],
-    maxWidth: js.UndefOr[scala.Nothing],
-    signStyle: SignStyle
-  ): DateTimeFormatterBuilder = js.native
-  def appendValue(field: TemporalField, width: js.UndefOr[scala.Nothing], maxWidth: Double): DateTimeFormatterBuilder = js.native
-  def appendValue(field: TemporalField, width: js.UndefOr[scala.Nothing], maxWidth: Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double): DateTimeFormatterBuilder = js.native
-  def appendValue(field: TemporalField, width: Double, maxWidth: js.UndefOr[scala.Nothing], signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double, maxWidth: Double): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double, maxWidth: Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: Double, maxWidth: Unit, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: Unit, maxWidth: Double): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: Unit, maxWidth: Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: Unit, maxWidth: Unit, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   
   def appendValueReduced(field: TemporalField, width: Double, maxWidth: Double, base: Double): DateTimeFormatterBuilder = js.native
   def appendValueReduced(field: TemporalField, width: Double, maxWidth: Double, base: ChronoLocalDate): DateTimeFormatterBuilder = js.native

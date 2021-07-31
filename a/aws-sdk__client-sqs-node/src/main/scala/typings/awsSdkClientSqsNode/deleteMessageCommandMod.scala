@@ -7,16 +7,18 @@ import typings.awsSdkClientSqsNode.typesDeleteMessageInputMod.DeleteMessageInput
 import typings.awsSdkClientSqsNode.typesDeleteMessageOutputMod.DeleteMessageOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteMessageCommandMod {
   
   @JSImport("@aws-sdk/client-sqs-node/commands/DeleteMessageCommand", "DeleteMessageCommand")
   @js.native
-  class DeleteMessageCommand protected () extends Command[
+  class DeleteMessageCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DeleteMessageInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object deleteMessageCommandMod {
         ] {
     def this(input: DeleteMessageInput) = this()
     
+    /* CompleteClass */
+    override val input: DeleteMessageInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteMessageInput, DeleteMessageOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: SQSResolvedConfiguration
+    ): Handler[DeleteMessageInput, DeleteMessageOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: SQSResolvedConfiguration,
+      options: js.Any
     ): Handler[DeleteMessageInput, DeleteMessageOutput] = js.native
   }
 }

@@ -8,17 +8,15 @@ import typings.nodeTlv.nodeTlvStrings.primitive
 import typings.nodeTlv.nodeTlvStrings.universal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clazz extends StObject {
     
-    var clazz: js.UndefOr[universal | application | (`context specific`) | `private`] = js.native
+    var clazz: js.UndefOr[universal | application | (`context specific`) | `private`] = js.undefined
     
-    var encoding: primitive | constructed = js.native
+    var encoding: primitive | constructed
   }
   object Clazz {
     

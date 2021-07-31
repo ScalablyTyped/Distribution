@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 import typings.activexLibreoffice.com_.sun.star.xml.dom.XElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects of this type are used as elements of the enumeration returned by {@link XUpdateInformationProvider} .
   * @since OOo 2.3
   */
-@js.native
 trait UpdateInformationEntry extends StObject {
   
   /** the (optional) description for an update information entry extracted from the update feed container */
-  var Description: String = js.native
+  var Description: String
   
   /** the DOM representation of an update information entry */
-  var UpdateDocument: XElement = js.native
+  var UpdateDocument: XElement
 }
 object UpdateInformationEntry {
   

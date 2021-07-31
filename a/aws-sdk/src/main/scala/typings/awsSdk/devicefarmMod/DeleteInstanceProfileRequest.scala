@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInstanceProfileRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the instance profile you are requesting to delete.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object DeleteInstanceProfileRequest {
   

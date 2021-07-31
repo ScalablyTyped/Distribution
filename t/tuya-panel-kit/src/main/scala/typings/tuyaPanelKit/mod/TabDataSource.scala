@@ -4,21 +4,21 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabDataSource extends ViewProps {
+trait TabDataSource
+  extends StObject
+     with ViewProps {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   var renderTab: js.UndefOr[
     js.Function3[/* isActive */ Boolean, /* state */ js.Object, /* props */ js.Object, ReactNode]
-  ] = js.native
+  ] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object TabDataSource {
   

@@ -4,61 +4,124 @@ import typings.ethereumjsVm.stateManagerMod.StorageDump
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promisifiedMod {
   
   @JSImport("ethereumjs-vm/dist/state/promisified", JSImport.Default)
   @js.native
-  class default protected () extends PStateManager {
+  class default protected ()
+    extends StObject
+       with PStateManager {
     def this(wrapped: typings.ethereumjsVm.stateManagerMod.default) = this()
-  }
-  
-  @js.native
-  trait PStateManager extends StObject {
     
+    /* CompleteClass */
     var _wrapped: typings.ethereumjsVm.stateManagerMod.default = js.native
     
-    def accountIsEmpty(address: Buffer): js.Promise[Boolean] = js.native
+    /* CompleteClass */
+    override def accountIsEmpty(address: Buffer): js.Promise[Boolean] = js.native
     
-    def checkpoint(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def checkpoint(): js.Promise[Unit] = js.native
     
-    def cleanupTouchedAccounts(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def cleanupTouchedAccounts(): js.Promise[Unit] = js.native
     
-    def clearContractStorage(addr: Buffer): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def clearContractStorage(addr: Buffer): js.Promise[Unit] = js.native
     
-    def commit(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def commit(): js.Promise[Unit] = js.native
     
-    def copy(): PStateManager = js.native
+    /* CompleteClass */
+    override def copy(): PStateManager = js.native
     
-    def dumpStorage(address: Buffer): js.Promise[StorageDump] = js.native
+    /* CompleteClass */
+    override def dumpStorage(address: Buffer): js.Promise[StorageDump] = js.native
     
-    def generateCanonicalGenesis(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def generateCanonicalGenesis(): js.Promise[Unit] = js.native
     
-    def generateGenesis(initState: js.Any): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def generateGenesis(initState: js.Any): js.Promise[Unit] = js.native
     
-    def getAccount(addr: Buffer): js.Promise[typings.ethereumjsAccount.mod.default] = js.native
+    /* CompleteClass */
+    override def getAccount(addr: Buffer): js.Promise[typings.ethereumjsAccount.mod.default] = js.native
     
-    def getContractCode(addr: Buffer): js.Promise[Buffer] = js.native
+    /* CompleteClass */
+    override def getContractCode(addr: Buffer): js.Promise[Buffer] = js.native
     
-    def getContractStorage(addr: Buffer, key: Buffer): js.Promise[_] = js.native
+    /* CompleteClass */
+    override def getContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any] = js.native
     
-    def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[_] = js.native
+    /* CompleteClass */
+    override def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any] = js.native
     
-    def getStateRoot(): js.Promise[Buffer] = js.native
+    /* CompleteClass */
+    override def getStateRoot(): js.Promise[Buffer] = js.native
     
-    def hasGenesisState(): js.Promise[Boolean] = js.native
+    /* CompleteClass */
+    override def hasGenesisState(): js.Promise[Boolean] = js.native
     
-    def putAccount(addr: Buffer, account: typings.ethereumjsAccount.mod.default): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def putAccount(addr: Buffer, account: typings.ethereumjsAccount.mod.default): js.Promise[Unit] = js.native
     
-    def putContractCode(addr: Buffer, code: Buffer): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def putContractCode(addr: Buffer, code: Buffer): js.Promise[Unit] = js.native
     
-    def putContractStorage(addr: Buffer, key: Buffer, value: Buffer): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def putContractStorage(addr: Buffer, key: Buffer, value: Buffer): js.Promise[Unit] = js.native
     
-    def revert(): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def revert(): js.Promise[Unit] = js.native
     
-    def setStateRoot(root: Buffer): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def setStateRoot(root: Buffer): js.Promise[Unit] = js.native
+  }
+  
+  trait PStateManager extends StObject {
+    
+    var _wrapped: typings.ethereumjsVm.stateManagerMod.default
+    
+    def accountIsEmpty(address: Buffer): js.Promise[Boolean]
+    
+    def checkpoint(): js.Promise[Unit]
+    
+    def cleanupTouchedAccounts(): js.Promise[Unit]
+    
+    def clearContractStorage(addr: Buffer): js.Promise[Unit]
+    
+    def commit(): js.Promise[Unit]
+    
+    def copy(): PStateManager
+    
+    def dumpStorage(address: Buffer): js.Promise[StorageDump]
+    
+    def generateCanonicalGenesis(): js.Promise[Unit]
+    
+    def generateGenesis(initState: js.Any): js.Promise[Unit]
+    
+    def getAccount(addr: Buffer): js.Promise[typings.ethereumjsAccount.mod.default]
+    
+    def getContractCode(addr: Buffer): js.Promise[Buffer]
+    
+    def getContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any]
+    
+    def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any]
+    
+    def getStateRoot(): js.Promise[Buffer]
+    
+    def hasGenesisState(): js.Promise[Boolean]
+    
+    def putAccount(addr: Buffer, account: typings.ethereumjsAccount.mod.default): js.Promise[Unit]
+    
+    def putContractCode(addr: Buffer, code: Buffer): js.Promise[Unit]
+    
+    def putContractStorage(addr: Buffer, key: Buffer, value: Buffer): js.Promise[Unit]
+    
+    def revert(): js.Promise[Unit]
+    
+    def setStateRoot(root: Buffer): js.Promise[Unit]
   }
   object PStateManager {
     
@@ -76,8 +139,8 @@ object promisifiedMod {
       generateGenesis: js.Any => js.Promise[Unit],
       getAccount: Buffer => js.Promise[typings.ethereumjsAccount.mod.default],
       getContractCode: Buffer => js.Promise[Buffer],
-      getContractStorage: (Buffer, Buffer) => js.Promise[_],
-      getOriginalContractStorage: (Buffer, Buffer) => js.Promise[_],
+      getContractStorage: (Buffer, Buffer) => js.Promise[js.Any],
+      getOriginalContractStorage: (Buffer, Buffer) => js.Promise[js.Any],
       getStateRoot: () => js.Promise[Buffer],
       hasGenesisState: () => js.Promise[Boolean],
       putAccount: (Buffer, typings.ethereumjsAccount.mod.default) => js.Promise[Unit],
@@ -127,10 +190,10 @@ object promisifiedMod {
       def setGetContractCode(value: Buffer => js.Promise[Buffer]): Self = StObject.set(x, "getContractCode", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetContractStorage(value: (Buffer, Buffer) => js.Promise[_]): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction2(value))
+      def setGetContractStorage(value: (Buffer, Buffer) => js.Promise[js.Any]): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetOriginalContractStorage(value: (Buffer, Buffer) => js.Promise[_]): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction2(value))
+      def setGetOriginalContractStorage(value: (Buffer, Buffer) => js.Promise[js.Any]): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetStateRoot(value: () => js.Promise[Buffer]): Self = StObject.set(x, "getStateRoot", js.Any.fromFunction0(value))

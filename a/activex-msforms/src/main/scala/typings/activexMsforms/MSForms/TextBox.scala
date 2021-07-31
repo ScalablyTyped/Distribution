@@ -3,128 +3,126 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBox extends StObject {
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var AutoTab: Boolean = js.native
+  var AutoTab: Boolean
   
-  var AutoWordSelect: Boolean = js.native
+  var AutoWordSelect: Boolean
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var BackStyle: fmBackStyle = js.native
+  var BackStyle: fmBackStyle
   
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
-  var BorderStyle: fmBorderStyle = js.native
+  var BorderStyle: fmBorderStyle
   
-  var BordersSuppress: Boolean = js.native
+  var BordersSuppress: Boolean
   
-  val CanPaste: Boolean = js.native
+  val CanPaste: Boolean
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  var CurLine: Double = js.native
+  var CurLine: Double
   
-  val CurTargetX: Double = js.native
+  val CurTargetX: Double
   
-  val CurTargetY: Double = js.native
+  val CurTargetY: Double
   
-  var CurX: Double = js.native
+  var CurX: Double
   
-  var CurY: Double = js.native
+  var CurY: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  val DisplayStyle: fmDisplayStyle = js.native
+  val DisplayStyle: fmDisplayStyle
   
-  var DragBehavior: fmDragBehavior = js.native
+  var DragBehavior: fmDragBehavior
   
-  var DropButtonStyle: fmDropButtonStyle = js.native
+  var DropButtonStyle: fmDropButtonStyle
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var EnterFieldBehavior: fmEnterFieldBehavior = js.native
+  var EnterFieldBehavior: fmEnterFieldBehavior
   
-  var EnterKeyBehavior: Boolean = js.native
+  var EnterKeyBehavior: Boolean
   
-  var Font: NewFont = js.native
+  var Font: NewFont
   
-  var FontBold: Boolean = js.native
+  var FontBold: Boolean
   
-  var FontItalic: Boolean = js.native
+  var FontItalic: Boolean
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var FontSize: Double = js.native
+  var FontSize: Double
   
-  var FontStrikethru: Boolean = js.native
+  var FontStrikethru: Boolean
   
-  var FontUnderline: Boolean = js.native
+  var FontUnderline: Boolean
   
-  var FontWeight: Double = js.native
+  var FontWeight: Double
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
-  var HideSelection: Boolean = js.native
+  var HideSelection: Boolean
   
-  var IMEMode: fmIMEMode = js.native
+  var IMEMode: fmIMEMode
   
-  var IntegralHeight: Boolean = js.native
+  var IntegralHeight: Boolean
   
-  val LineCount: Double = js.native
+  val LineCount: Double
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
   @JSName("MSForms.TextBox_typekey")
-  var MSFormsDotTextBox_typekey: TextBox = js.native
+  var MSFormsDotTextBox_typekey: TextBox
   
-  var MaxLength: Double = js.native
+  var MaxLength: Double
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: fmMousePointer = js.native
+  var MousePointer: fmMousePointer
   
-  var MultiLine: Boolean = js.native
+  var MultiLine: Boolean
   
-  var PasswordChar: String = js.native
+  var PasswordChar: String
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var ScrollBars: fmScrollBars = js.native
+  var ScrollBars: fmScrollBars
   
-  var SelLength: Double = js.native
+  var SelLength: Double
   
-  var SelStart: Double = js.native
+  var SelStart: Double
   
-  var SelText: String = js.native
+  var SelText: String
   
-  var SelectionMargin: Boolean = js.native
+  var SelectionMargin: Boolean
   
-  var ShowDropButtonWhen: fmShowDropButtonWhen = js.native
+  var ShowDropButtonWhen: fmShowDropButtonWhen
   
-  var SpecialEffect: fmSpecialEffect = js.native
+  var SpecialEffect: fmSpecialEffect
   
-  var TabKeyBehavior: Boolean = js.native
+  var TabKeyBehavior: Boolean
   
-  var Text: String = js.native
+  var Text: String
   
-  var TextAlign: fmTextAlign = js.native
+  var TextAlign: fmTextAlign
   
-  val TextLength: Double = js.native
+  val TextLength: Double
   
-  val Valid: Boolean = js.native
+  val Valid: Boolean
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var WordWrap: Boolean = js.native
+  var WordWrap: Boolean
   
-  val _Font_Reserved: NewFont = js.native
+  val _Font_Reserved: NewFont
 }
 object TextBox {
   

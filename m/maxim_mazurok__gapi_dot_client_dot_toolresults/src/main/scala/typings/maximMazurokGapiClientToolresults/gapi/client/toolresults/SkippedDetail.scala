@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkippedDetail extends StObject {
   
   /** If the App doesn't support the specific API level. */
-  var incompatibleAppVersion: js.UndefOr[Boolean] = js.native
+  var incompatibleAppVersion: js.UndefOr[Boolean] = js.undefined
   
   /** If the App doesn't run on the specific architecture, for example, x86. */
-  var incompatibleArchitecture: js.UndefOr[Boolean] = js.native
+  var incompatibleArchitecture: js.UndefOr[Boolean] = js.undefined
   
   /** If the requested OS version doesn't run on the specific device model. */
-  var incompatibleDevice: js.UndefOr[Boolean] = js.native
+  var incompatibleDevice: js.UndefOr[Boolean] = js.undefined
 }
 object SkippedDetail {
   

@@ -11,11 +11,14 @@ A port of inflection-js to node.js module
 | Full name          | inflection |
 | Keywords           | inflection, inflections, inflection-js, pluralize, singularize, camelize, underscore, humanize, capitalize, dasherize, titleize, demodulize, tableize, classify, foreign_key, ordinalize |
 | # releases         | 0 |
-| # dependents       | 808 |
-| # downloads        | 74420809 |
+| # dependents       | 842 |
+| # downloads        | 84174873 |
 | # stars            | 16 |
 
 ## Links
+- [Homepage](https://github.com/dreamerslab/node.inflection#readme)
+- [Bugs](https://github.com/dreamerslab/node.inflection/issues)
+- [Repository](https://github.com/dreamerslab/node.inflection)
 - [Npm](https://www.npmjs.com/package/inflection)
     
 

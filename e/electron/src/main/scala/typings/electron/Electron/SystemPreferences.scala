@@ -35,11 +35,12 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemPreferences extends EventEmitter {
+trait SystemPreferences
+  extends StObject
+     with EventEmitter {
   
   @JSName("addListener")
   def addListener_accentcolorchanged(
@@ -376,7 +377,7 @@ trait SystemPreferences extends EventEmitter {
     *
     * @platform darwin
     */
-  def postLocalNotification(event: String, userInfo: Record[String, _]): Unit = js.native
+  def postLocalNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
   
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
@@ -384,8 +385,8 @@ trait SystemPreferences extends EventEmitter {
     *
     * @platform darwin
     */
-  def postNotification(event: String, userInfo: Record[String, _]): Unit = js.native
-  def postNotification(event: String, userInfo: Record[String, _], deliverImmediately: Boolean): Unit = js.native
+  def postNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
+  def postNotification(event: String, userInfo: Record[String, js.Any], deliverImmediately: Boolean): Unit = js.native
   
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
@@ -393,7 +394,7 @@ trait SystemPreferences extends EventEmitter {
     *
     * @platform darwin
     */
-  def postWorkspaceNotification(event: String, userInfo: Record[String, _]): Unit = js.native
+  def postWorkspaceNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
   
   /**
     * resolves if the user has successfully authenticated with Touch ID.
@@ -497,7 +498,7 @@ trait SystemPreferences extends EventEmitter {
     */
   def subscribeLocalNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
   ): Double = js.native
   
   /**
@@ -524,7 +525,7 @@ trait SystemPreferences extends EventEmitter {
     */
   def subscribeNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
   ): Double = js.native
   
   /**
@@ -536,7 +537,7 @@ trait SystemPreferences extends EventEmitter {
     */
   def subscribeWorkspaceNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, _], /* object */ String, Unit]
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
   ): Unit = js.native
   
   /**

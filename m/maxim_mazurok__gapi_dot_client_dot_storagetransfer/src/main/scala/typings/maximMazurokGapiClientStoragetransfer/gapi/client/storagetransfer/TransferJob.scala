@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferJob extends StObject {
   
   /** Output only. The time that the transfer job was created. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time that the transfer job was deleted. */
-  var deletionTime: js.UndefOr[String] = js.native
+  var deletionTime: js.UndefOr[String] = js.undefined
   
   /** A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Output only. The time that the transfer job was last modified. */
-  var lastModificationTime: js.UndefOr[String] = js.native
+  var lastModificationTime: js.UndefOr[String] = js.undefined
   
   /** The name of the most recently started TransferOperation of this JobConfig. Present if and only if at least one TransferOperation has been created for this JobConfig. */
-  var latestOperationName: js.UndefOr[String] = js.native
+  var latestOperationName: js.UndefOr[String] = js.undefined
   
   /**
     * A unique name (within the transfer project) assigned when the job is created. If this field is empty in a CreateTransferJobRequest, Storage Transfer Service will assign a unique
@@ -29,25 +27,25 @@ trait TransferJob extends StObject {
     * name must start with `"transferJobs/"` prefix and end with a letter or a number, and should be no more than 128 characters. Example: `"transferJobs/[A-Za-z0-9-._~]*[A-Za-z0-9]$"`
     * Invalid job names will fail with an INVALID_ARGUMENT error.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Notification configuration. */
-  var notificationConfig: js.UndefOr[NotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
   /** The ID of the Google Cloud Platform Project that owns the job. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Schedule specification. */
-  var schedule: js.UndefOr[Schedule] = js.native
+  var schedule: js.UndefOr[Schedule] = js.undefined
   
   /**
     * Status of the job. This value MUST be specified for `CreateTransferJobRequests`. **Note:** The effect of the new job status takes place during a subsequent job run. For example, if
     * you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Transfer specification. */
-  var transferSpec: js.UndefOr[TransferSpec] = js.native
+  var transferSpec: js.UndefOr[TransferSpec] = js.undefined
 }
 object TransferJob {
   

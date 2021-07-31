@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait RecycleBinItemState extends StObject
 object RecycleBinItemState extends StObject {
   
   @js.native
-  sealed trait firstStageRecycleBin extends RecycleBinItemState
+  sealed trait firstStageRecycleBin
+    extends StObject
+       with RecycleBinItemState
   
   @js.native
-  sealed trait none extends RecycleBinItemState
+  sealed trait none
+    extends StObject
+       with RecycleBinItemState
   
   @js.native
-  sealed trait secondStageRecycleBin extends RecycleBinItemState
+  sealed trait secondStageRecycleBin
+    extends StObject
+       with RecycleBinItemState
 }

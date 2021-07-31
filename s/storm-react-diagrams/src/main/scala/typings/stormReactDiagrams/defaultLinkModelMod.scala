@@ -6,7 +6,6 @@ import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultLinkModelMod {
@@ -29,12 +28,13 @@ object defaultLinkModelMod {
     var width: Double = js.native
   }
   
-  @js.native
-  trait DefaultLinkModelListener extends LinkModelListener {
+  trait DefaultLinkModelListener
+    extends StObject
+       with LinkModelListener {
     
-    var colorChanged: js.UndefOr[js.Function1[/* event */ BaseEventDefaultLinkModel, Unit]] = js.native
+    var colorChanged: js.UndefOr[js.Function1[/* event */ BaseEventDefaultLinkModel, Unit]] = js.undefined
     
-    var widthChanged: js.UndefOr[js.Function1[/* event */ BaseEventDefaultLinkModelEntity, Unit]] = js.native
+    var widthChanged: js.UndefOr[js.Function1[/* event */ BaseEventDefaultLinkModelEntity, Unit]] = js.undefined
   }
   object DefaultLinkModelListener {
     

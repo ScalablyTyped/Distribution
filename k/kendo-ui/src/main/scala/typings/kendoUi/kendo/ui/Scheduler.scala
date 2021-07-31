@@ -8,11 +8,12 @@ import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scheduler extends Widget {
+trait Scheduler
+  extends StObject
+     with Widget {
   
   def addEvent(data: js.Any): Unit = js.native
   
@@ -50,7 +51,7 @@ trait Scheduler extends Widget {
   
   def resourcesBySlot(slot: js.Any): js.Any = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def saveEvent(): Unit = js.native
   

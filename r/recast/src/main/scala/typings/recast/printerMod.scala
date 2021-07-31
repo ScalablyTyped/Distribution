@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printerMod {
@@ -12,19 +11,26 @@ object printerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("recast/lib/printer", "Printer")
   @js.native
-  class Printer () extends PrinterType {
+  class Printer ()
+    extends StObject
+       with PrinterType {
     def this(config: js.Any) = this()
+    
+    /* CompleteClass */
+    override def print(ast: js.Any): PrintResultType = js.native
+    
+    /* CompleteClass */
+    override def printGenerically(ast: js.Any): PrintResultType = js.native
   }
   @JSImport("recast/lib/printer", "Printer")
   @js.native
   val Printer: PrinterConstructor = js.native
   
-  @js.native
   trait PrintResultType extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var map: js.UndefOr[js.Any] = js.native
+    var map: js.UndefOr[js.Any] = js.undefined
   }
   object PrintResultType {
     
@@ -50,15 +56,15 @@ object printerMod {
   
   @js.native
   trait PrinterConstructor
-    extends Instantiable0[PrinterType]
+    extends StObject
+       with Instantiable0[PrinterType]
        with Instantiable1[/* config */ js.Any, PrinterType]
   
-  @js.native
   trait PrinterType extends StObject {
     
-    def print(ast: js.Any): PrintResultType = js.native
+    def print(ast: js.Any): PrintResultType
     
-    def printGenerically(ast: js.Any): PrintResultType = js.native
+    def printGenerically(ast: js.Any): PrintResultType
   }
   object PrinterType {
     

@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nanoflowsMod {
@@ -64,9 +63,8 @@ object nanoflowsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nanoflows", "nanoflows.NanoflowParameterValue.create")
-      @js.native
-      def create(model: IModel): NanoflowParameterValue = js.native
+      @scala.inline
+      def create(model: IModel): NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NanoflowParameterValue]
       
       /**
         * Creates and returns a new NanoflowParameterValue instance in the SDK and on the server.
@@ -77,9 +75,8 @@ object nanoflowsMod {
         *  8.4.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nanoflows", "nanoflows.NanoflowParameterValue.createInJavaActionParameterMappingUnderParameterValue")
-      @js.native
-      def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): NanoflowParameterValue = js.native
+      @scala.inline
+      def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[NanoflowParameterValue]
       
       /**
         * Creates and returns a new NanoflowParameterValue instance in the SDK and on the server.
@@ -90,9 +87,8 @@ object nanoflowsMod {
         *  8.4.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nanoflows", "nanoflows.NanoflowParameterValue.createInJavaScriptActionParameterMappingUnderParameterValue")
-      @js.native
-      def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): NanoflowParameterValue = js.native
+      @scala.inline
+      def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[NanoflowParameterValue]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nanoflows", "nanoflows.NanoflowParameterValue.structureTypeName")

@@ -18,32 +18,30 @@ import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.ThicknessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dash extends StObject {
   
-  var color: js.UndefOr[ColorType | js.Array[Color] | Opacity] = js.native
+  var color: js.UndefOr[ColorType | js.Array[Color] | Opacity] = js.undefined
   
-  var dash: js.UndefOr[Boolean] = js.native
+  var dash: js.UndefOr[Boolean] = js.undefined
   
   // defaults to undefined
-  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.native
+  var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
   
-  var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.native
+  var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.undefined
   
   // default across points
   // property to get values from objects in data
-  var property: String | (js.Array[Property | String]) | Thickness = js.native
+  var property: String | (js.Array[Property | String]) | Thickness
   
-  var round: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.undefined
   
   // defaults to undefined
-  var thickness: js.UndefOr[ThicknessType] = js.native
+  var thickness: js.UndefOr[ThicknessType] = js.undefined
   
   // defaults to auto assigned based on available space and amount of data
-  var `type`: js.UndefOr[bar | line | area | point | bars] = js.native
+  var `type`: js.UndefOr[bar | line | area | point | bars] = js.undefined
 }
 object Dash {
   

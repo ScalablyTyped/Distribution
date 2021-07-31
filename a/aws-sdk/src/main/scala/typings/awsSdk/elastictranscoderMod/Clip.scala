@@ -2,16 +2,14 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clip extends StObject {
   
   /**
     * Settings that determine when a clip begins and how long it lasts.
     */
-  var TimeSpan: js.UndefOr[typings.awsSdk.elastictranscoderMod.TimeSpan] = js.native
+  var TimeSpan: js.UndefOr[typings.awsSdk.elastictranscoderMod.TimeSpan] = js.undefined
 }
 object Clip {
   

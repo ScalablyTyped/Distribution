@@ -10,9 +10,9 @@ S3 Compatible Cloud Storage client
 | ------------------ | :-------------: |
 | Full name          | minio |
 | Keywords           | api, amazon, minio, cloud, s3, storage |
-| # releases         | 17 |
-| # dependents       | 116 |
-| # downloads        | 1345931 |
+| # releases         | 15 |
+| # dependents       | 138 |
+| # downloads        | 1823589 |
 | # stars            | 3 |
 
 ## Links

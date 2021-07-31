@@ -5,17 +5,18 @@ import typings.htmlToText.anon.IsAttributeValue
 import typings.htmlToText.htmlToTextBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html-to-text", "fromString")
+  @JSImport("html-to-text", JSImport.Namespace)
   @js.native
-  def fromString(str: String): String = js.native
-  @JSImport("html-to-text", "fromString")
-  @js.native
-  def fromString(str: String, options: HtmlToTextOptions): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fromString(str: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Formatter[T] = js.Function3[
     /* el */ T, 
@@ -24,32 +25,31 @@ object mod {
     String
   ]
   
-  @js.native
   trait Formatters extends StObject {
     
-    var anchor: js.UndefOr[Formatter[_]] = js.native
+    var anchor: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var blockquote: js.UndefOr[Formatter[_]] = js.native
+    var blockquote: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var heading: js.UndefOr[Formatter[_]] = js.native
+    var heading: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var horizontalLine: js.UndefOr[Formatter[_]] = js.native
+    var horizontalLine: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var image: js.UndefOr[LeafFormatter[_]] = js.native
+    var image: js.UndefOr[LeafFormatter[js.Any]] = js.undefined
     
-    var lineBreak: js.UndefOr[Formatter[_]] = js.native
+    var lineBreak: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var listItem: js.UndefOr[Formatter[_]] = js.native
+    var listItem: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var orderedList: js.UndefOr[Formatter[_]] = js.native
+    var orderedList: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var paragraph: js.UndefOr[Formatter[_]] = js.native
+    var paragraph: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var table: js.UndefOr[Formatter[_]] = js.native
+    var table: js.UndefOr[Formatter[js.Any]] = js.undefined
     
-    var text: js.UndefOr[LeafFormatter[_]] = js.native
+    var text: js.UndefOr[LeafFormatter[js.Any]] = js.undefined
     
-    var unorderedList: js.UndefOr[Formatter[_]] = js.native
+    var unorderedList: js.UndefOr[Formatter[js.Any]] = js.undefined
   }
   object Formatters {
     
@@ -64,7 +64,7 @@ object mod {
       
       @scala.inline
       def setAnchor(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "anchor", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -72,7 +72,7 @@ object mod {
       
       @scala.inline
       def setBlockquote(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "blockquote", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -80,7 +80,7 @@ object mod {
       
       @scala.inline
       def setHeading(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "heading", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -88,21 +88,21 @@ object mod {
       
       @scala.inline
       def setHorizontalLine(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "horizontalLine", js.Any.fromFunction3(value))
       
       @scala.inline
       def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
       
       @scala.inline
-      def setImage(value: (_, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
+      def setImage(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
       
       @scala.inline
       def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
       @scala.inline
       def setLineBreak(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "lineBreak", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -110,7 +110,7 @@ object mod {
       
       @scala.inline
       def setListItem(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "listItem", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -118,7 +118,7 @@ object mod {
       
       @scala.inline
       def setOrderedList(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "orderedList", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -126,7 +126,7 @@ object mod {
       
       @scala.inline
       def setParagraph(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "paragraph", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -134,21 +134,21 @@ object mod {
       
       @scala.inline
       def setTable(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "table", js.Any.fromFunction3(value))
       
       @scala.inline
       def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
       @scala.inline
-      def setText(value: (_, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
+      def setText(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       @scala.inline
       def setUnorderedList(
-        value: (_, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
+        value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "unorderedList", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -156,7 +156,6 @@ object mod {
     }
   }
   
-  @js.native
   trait HtmlToTextOptions extends StObject {
     
     /**
@@ -167,18 +166,18 @@ object mod {
       * parameters e.g. `[p.class1.class2#id1#id2, p.class1.class2#id1#id2]`.
       * Default: `"body"`
       */
-    var baseElement: js.UndefOr[String | js.Array[String]] = js.native
+    var baseElement: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * defines the text decoding options given to `he.decode`
       * For more information see the [he](https://github.com/mathiasbynens/he) module
       */
-    var decodeOptions: js.UndefOr[IsAttributeValue] = js.native
+    var decodeOptions: js.UndefOr[IsAttributeValue] = js.undefined
     
     /**
       * Customize the formatting of individual element types.
       */
-    var format: js.UndefOr[Formatters] = js.native
+    var format: js.UndefOr[Formatters] = js.undefined
     
     /**
       *  By default links are translated the following
@@ -186,17 +185,17 @@ object mod {
       *  If this option is set to true and link and text are the same,
       *  [link] will be hidden and only text visible.
       */
-    var hideLinkHrefIfSameAsText: js.UndefOr[Boolean] = js.native
+    var hideLinkHrefIfSameAsText: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Ignore all document links if true.
       */
-    var ignoreHref: js.UndefOr[Boolean] = js.native
+    var ignoreHref: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Ignore all document images if true.
       */
-    var ignoreImage: js.UndefOr[Boolean] = js.native
+    var ignoreImage: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Allows you to specify the server host for href attributes, where the links start at the root (/).
@@ -204,35 +203,35 @@ object mod {
       *  the link in the text will be http://asdf.com/dir/subdir.
       *  Keep in mind that linkHrefBaseUrl shouldn't end with a /.
       */
-    var linkHrefBaseUrl: js.UndefOr[String] = js.native
+    var linkHrefBaseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * describes how to wrap long words
       */
-    var longWordSplit: js.UndefOr[ForceWrapOnLimit] = js.native
+    var longWordSplit: js.UndefOr[ForceWrapOnLimit] = js.undefined
     
     /**
       *  Dont print brackets around the link if true
       */
-    var noLinkBrackets: js.UndefOr[Boolean] = js.native
+    var noLinkBrackets: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  By default, any newlines \n in a block of text will be removed.
       *  If true, these newlines will not be removed.
       */
-    var preserveNewlines: js.UndefOr[Boolean] = js.native
+    var preserveNewlines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * convert the entire document if we don't find the tag we're looking for
       * if true
       */
-    var returnDomByDefault: js.UndefOr[Boolean] = js.native
+    var returnDomByDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  By default, paragraphs are converted with two newlines (\n\n).
       *  Set to true to convert to a single newline.
       */
-    var singleNewLineParagraphs: js.UndefOr[Boolean] = js.native
+    var singleNewLineParagraphs: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Allows to select certain tables by the class or id attribute from the HTML
@@ -241,25 +240,25 @@ object mod {
       *  and with a # for the id attribute. All other tables are ignored.
       *  You can assign true to this attribute to select all tables. Default: []
       */
-    var tables: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var tables: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
     /**
       * defines the string that is used as item prefix for unordered lists `<ol>`.
       * Default: ' * '
       */
-    var unorderedListItemPrefix: js.UndefOr[String] = js.native
+    var unorderedListItemPrefix: js.UndefOr[String] = js.undefined
     
     /**
       *  By default, headings (<h1>, <h2>, etc) are upper-cased.
       *  Set to false to leave headings as they are.
       */
-    var uppercaseHeadings: js.UndefOr[Boolean] = js.native
+    var uppercaseHeadings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines after how many chars a line break should follow in p elements.
       * Set to null or false to disable word-wrapping. Default: 80
       */
-    var wordwrap: js.UndefOr[Double | `false` | Null] = js.native
+    var wordwrap: js.UndefOr[Double | `false` | Null] = js.undefined
   }
   object HtmlToTextOptions {
     

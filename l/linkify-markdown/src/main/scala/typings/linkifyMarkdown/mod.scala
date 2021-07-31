@@ -2,24 +2,24 @@ package typings.linkifyMarkdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("linkify-markdown", "linkify")
+  @JSImport("linkify-markdown", JSImport.Namespace)
   @js.native
-  def linkify(source: String): String = js.native
-  @JSImport("linkify-markdown", "linkify")
-  @js.native
-  def linkify(source: String, options: LinkifyOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def linkify(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def linkify(source: String, options: LinkifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait LinkifyOptions extends StObject {
     
-    var repository: js.UndefOr[String] = js.native
+    var repository: js.UndefOr[String] = js.undefined
     
-    var strong: js.UndefOr[Boolean] = js.native
+    var strong: js.UndefOr[Boolean] = js.undefined
   }
   object LinkifyOptions {
     

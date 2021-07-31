@@ -2,15 +2,13 @@ package typings.testingLibraryUserEvent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
   }
   object Delay {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialSelectionEnd extends StObject {
     
-    var initialSelectionEnd: js.UndefOr[Double] = js.native
+    var initialSelectionEnd: js.UndefOr[Double] = js.undefined
     
-    var initialSelectionStart: js.UndefOr[Double] = js.native
+    var initialSelectionStart: js.UndefOr[Double] = js.undefined
   }
   object InitialSelectionEnd {
     

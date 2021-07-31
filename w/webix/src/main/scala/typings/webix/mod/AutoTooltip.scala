@@ -4,20 +4,18 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoTooltip extends StObject {
   
   @JSName("$tooltipIn")
-  def $tooltipIn(node: HTMLElement): HTMLElement = js.native
+  def $tooltipIn(node: HTMLElement): HTMLElement
   
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit
   
   @JSName("$tooltipOut")
-  var $tooltipOut: Unit = js.native
+  var $tooltipOut: Unit
 }
 object AutoTooltip {
   

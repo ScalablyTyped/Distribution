@@ -2,29 +2,27 @@ package typings.agGrid.iExcelCreatorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelStyle extends StObject {
   
-  var alignment: js.UndefOr[ExcelAlignment] = js.native
+  var alignment: js.UndefOr[ExcelAlignment] = js.undefined
   
-  var borders: js.UndefOr[ExcelBorders] = js.native
+  var borders: js.UndefOr[ExcelBorders] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[ExcelFont] = js.native
+  var font: js.UndefOr[ExcelFont] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var interior: js.UndefOr[ExcelInterior] = js.native
+  var interior: js.UndefOr[ExcelInterior] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var numberFormat: js.UndefOr[ExcelNumberFormat] = js.native
+  var numberFormat: js.UndefOr[ExcelNumberFormat] = js.undefined
   
-  var protection: js.UndefOr[ExcelProtection] = js.native
+  var protection: js.UndefOr[ExcelProtection] = js.undefined
 }
 object ExcelStyle {
   

@@ -2,13 +2,11 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononPageEventObject extends StObject {
   
-  def addEvent(event: String, callback: js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def addEvent(event: String, callback: js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]): Unit
 }
 object PhononPageEventObject {
   

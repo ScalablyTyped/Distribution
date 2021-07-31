@@ -2,37 +2,35 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An axis of the chart. A chart may not have more than one axis per axis
   * position.
   */
-@js.native
 trait SchemaBasicChartAxis extends StObject {
   
   /**
     * The format of the title. Only valid if the axis is not associated with
     * the domain.
     */
-  var format: js.UndefOr[SchemaTextFormat] = js.native
+  var format: js.UndefOr[SchemaTextFormat] = js.undefined
   
   /**
     * The position of this axis.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this axis. If set, this overrides any title inferred from
     * headers of the data.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The axis title text position.
     */
-  var titleTextPosition: js.UndefOr[SchemaTextPosition] = js.native
+  var titleTextPosition: js.UndefOr[SchemaTextPosition] = js.undefined
 }
 object SchemaBasicChartAxis {
   

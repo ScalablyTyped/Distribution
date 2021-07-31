@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmimeInfo extends StObject {
   
   /** Encrypted key password, when key is encrypted. */
-  var encryptedKeyPassword: js.UndefOr[String] = js.native
+  var encryptedKeyPassword: js.UndefOr[String] = js.undefined
   
   /** When the certificate expires (in milliseconds since epoch). */
-  var expiration: js.UndefOr[String] = js.native
+  var expiration: js.UndefOr[String] = js.undefined
   
   /** The immutable ID for the SmimeInfo. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Whether this SmimeInfo is the default one for this user's send-as address. */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /** The S/MIME certificate issuer's common name. */
-  var issuerCn: js.UndefOr[String] = js.native
+  var issuerCn: js.UndefOr[String] = js.undefined
   
   /**
     * PEM formatted X509 concatenated certificate string (standard base64 encoding). Format used for returning key, which includes public key as well as certificate chain (not private
     * key).
     */
-  var pem: js.UndefOr[String] = js.native
+  var pem: js.UndefOr[String] = js.undefined
   
   /**
     * PKCS#12 format containing a single private/public key pair and certificate chain. This format is only accepted from client for creating a new SmimeInfo and is never returned,
     * because the private key is not intended to be exported. PKCS#12 may be encrypted, in which case encryptedKeyPassword should be set appropriately.
     */
-  var pkcs12: js.UndefOr[String] = js.native
+  var pkcs12: js.UndefOr[String] = js.undefined
 }
 object SmimeInfo {
   

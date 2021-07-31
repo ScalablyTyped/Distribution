@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncBatchAnnotateFilesRequest extends StObject {
   
   /**
     * Optional. Target project and location to make a call. Format: `projects/{project-id}/locations/{location-id}`. If no parent is specified, a region will be chosen automatically.
     * Supported location-ids: `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The European Union. Example: `projects/project-A/locations/eu`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Required. Individual async file annotation requests for this batch. */
-  var requests: js.UndefOr[js.Array[AsyncAnnotateFileRequest]] = js.native
+  var requests: js.UndefOr[js.Array[AsyncAnnotateFileRequest]] = js.undefined
 }
 object AsyncBatchAnnotateFilesRequest {
   

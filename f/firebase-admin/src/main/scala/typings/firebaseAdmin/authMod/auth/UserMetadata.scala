@@ -2,36 +2,34 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a user's metadata.
   */
-@js.native
 trait UserMetadata extends StObject {
   
   /**
     * The date the user was created, formatted as a UTC string.
     */
-  var creationTime: String = js.native
+  var creationTime: String
   
   /**
     * The time at which the user was last active (ID token refreshed),
     * formatted as a UTC Date string (eg 'Sat, 03 Feb 2001 04:05:06 GMT').
     * Returns null if the user was never active.
     */
-  var lastRefreshTime: js.UndefOr[String | Null] = js.native
+  var lastRefreshTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The date the user last signed in, formatted as a UTC string.
     */
-  var lastSignInTime: String = js.native
+  var lastSignInTime: String
   
   /**
     * @return A JSON-serializable representation of this object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
 }
 object UserMetadata {
   

@@ -3,23 +3,23 @@ package typings.envCi.mod
 import typings.envCi.envCiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NonCiEnv extends CiEnv {
+trait NonCiEnv
+  extends StObject
+     with CiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var commit: js.UndefOr[String] = js.native
+  var commit: js.UndefOr[String] = js.undefined
   
-  var isCi: `false` = js.native
+  var isCi: `false`
 }
 object NonCiEnv {
   
   @scala.inline
-  def apply(isCi: `false`): NonCiEnv = {
-    val __obj = js.Dynamic.literal(isCi = isCi.asInstanceOf[js.Any])
+  def apply(): NonCiEnv = {
+    val __obj = js.Dynamic.literal(isCi = false)
     __obj.asInstanceOf[NonCiEnv]
   }
   

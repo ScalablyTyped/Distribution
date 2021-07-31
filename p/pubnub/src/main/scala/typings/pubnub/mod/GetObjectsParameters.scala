@@ -4,17 +4,15 @@ import typings.pubnub.anon.CustomFields
 import typings.pubnub.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectsParameters extends StObject {
   
-  var include: js.UndefOr[CustomFields] = js.native
+  var include: js.UndefOr[CustomFields] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var page: js.UndefOr[Next] = js.native
+  var page: js.UndefOr[Next] = js.undefined
 }
 object GetObjectsParameters {
   

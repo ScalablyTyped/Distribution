@@ -4,16 +4,16 @@ import typings.xstate.typesMod.ActionTypes.Start
 import typings.xstate.typesMod.ActionTypes.Stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivityActionObject[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait ActivityActionObject[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var activity: js.UndefOr[ActivityDefinition[TContext, TEvent]] = js.native
+  var activity: js.UndefOr[ActivityDefinition[TContext, TEvent]] = js.undefined
   
   @JSName("type")
-  var type_ActivityActionObject: Start | Stop = js.native
+  var type_ActivityActionObject: Start | Stop
 }
 object ActivityActionObject {
   
@@ -25,7 +25,7 @@ object ActivityActionObject {
   }
   
   @scala.inline
-  implicit class ActivityActionObjectMutableBuilder[Self <: ActivityActionObject[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ActivityActionObject[TContext, TEvent])) extends AnyVal {
+  implicit class ActivityActionObjectMutableBuilder[Self <: ActivityActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActivityActionObject[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActivity(value: ActivityDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])

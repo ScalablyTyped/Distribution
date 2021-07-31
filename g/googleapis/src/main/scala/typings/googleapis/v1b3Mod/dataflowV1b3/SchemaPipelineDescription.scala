@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * form.  This data is provided by the Dataflow service for ease of
   * visualizing the pipeline and interpreting Dataflow provided metrics.
   */
-@js.native
 trait SchemaPipelineDescription extends StObject {
   
   /**
     * Pipeline level display data.
     */
-  var displayData: js.UndefOr[js.Array[SchemaDisplayData]] = js.native
+  var displayData: js.UndefOr[js.Array[SchemaDisplayData]] = js.undefined
   
   /**
     * Description of each stage of execution of the pipeline.
     */
-  var executionPipelineStage: js.UndefOr[js.Array[SchemaExecutionStageSummary]] = js.native
+  var executionPipelineStage: js.UndefOr[js.Array[SchemaExecutionStageSummary]] = js.undefined
   
   /**
     * Description of each transform in the pipeline and collections between
     * them.
     */
-  var originalPipelineTransform: js.UndefOr[js.Array[SchemaTransformSummary]] = js.native
+  var originalPipelineTransform: js.UndefOr[js.Array[SchemaTransformSummary]] = js.undefined
 }
 object SchemaPipelineDescription {
   

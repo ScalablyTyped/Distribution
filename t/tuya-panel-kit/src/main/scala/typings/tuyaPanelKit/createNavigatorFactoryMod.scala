@@ -8,14 +8,16 @@ import typings.tuyaPanelKit.typesMod.EventMapBase
 import typings.tuyaPanelKit.typesMod.TypedNavigator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createNavigatorFactoryMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/core/createNavigatorFactory", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/core/createNavigatorFactory", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[_] */](Navigator: NavigatorComponent): js.Function0[
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
     TypedNavigator[
       Record[String, js.UndefOr[js.Object]], 
       State, 
@@ -23,5 +25,13 @@ object createNavigatorFactoryMod {
       EventMap, 
       NavigatorComponent
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Navigator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+    TypedNavigator[
+      Record[String, js.UndefOr[js.Object]], 
+      State, 
+      ScreenOptions, 
+      EventMap, 
+      NavigatorComponent
+    ]
+  ]]
 }

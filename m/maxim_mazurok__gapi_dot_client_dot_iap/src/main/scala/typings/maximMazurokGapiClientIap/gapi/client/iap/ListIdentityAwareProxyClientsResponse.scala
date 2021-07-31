@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityAwareProxyClientsResponse extends StObject {
   
   /** Clients existing in the brand. */
-  var identityAwareProxyClients: js.UndefOr[js.Array[IdentityAwareProxyClient]] = js.native
+  var identityAwareProxyClients: js.UndefOr[js.Array[IdentityAwareProxyClient]] = js.undefined
   
   /** A token, which can be send as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListIdentityAwareProxyClientsResponse {
   

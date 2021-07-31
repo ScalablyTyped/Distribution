@@ -8,7 +8,6 @@ import typings.protractor.pluginsMod.Plugins
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runnerMod {
@@ -90,7 +89,7 @@ object runnerMod {
     
     var ready_ : js.UndefOr[js.Promise[Unit]] = js.native
     
-    var restartPromise: Promise[_] = js.native
+    var restartPromise: Promise[js.Any] = js.native
     
     /**
       * The primary workhorse interface. Kicks off the test running process.
@@ -98,7 +97,7 @@ object runnerMod {
       * @return {q.Promise} A promise which resolves to the exit code of the tests.
       * @public
       */
-    def run(): Promise[_] = js.native
+    def run(): Promise[js.Any] = js.native
     
     /**
       * Executor of testPreparer
@@ -107,8 +106,8 @@ object runnerMod {
       * @return {q.Promise} A promise that will resolve when the test preparers
       *     are finished.
       */
-    def runTestPreparer(): Promise[_] = js.native
-    def runTestPreparer(extraFlags: js.Array[String]): Promise[_] = js.native
+    def runTestPreparer(): Promise[js.Any] = js.native
+    def runTestPreparer(extraFlags: js.Array[String]): Promise[js.Any] = js.native
     
     /**
       * Registrar for testPreparers - executed right before tests run.

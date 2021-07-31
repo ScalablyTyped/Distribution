@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledActionFilter extends StObject {
   
   /**
     * The type of element to filter. 
     */
-  var Name: ScheduledActionFilterName = js.native
+  var Name: ScheduledActionFilterName
   
   /**
     * List of values. Compare if the value (of type defined by Name) equals an item in the list of scheduled actions. 
     */
-  var Values: ValueStringList = js.native
+  var Values: ValueStringList
 }
 object ScheduledActionFilter {
   

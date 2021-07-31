@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleContext
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleContext
-  extends XAccessibleContext
+  extends StObject
+     with XAccessibleContext
      with XAccessibleEventBroadcaster
 object AccessibleContext {
   

@@ -4,17 +4,15 @@ import typings.pubnub.pubnubStrings.development
 import typings.pubnub.pubnubStrings.production
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APNS2Target extends StObject {
   
-  var environment: js.UndefOr[development | production] = js.native
+  var environment: js.UndefOr[development | production] = js.undefined
   
-  var excludedDevices: js.UndefOr[js.Array[String]] = js.native
+  var excludedDevices: js.UndefOr[js.Array[String]] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object APNS2Target {
   

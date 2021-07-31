@@ -7,18 +7,16 @@ import typings.winrtUwp.Windows.Graphics.Imaging.BitmapSize
 import typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for face detection in bitmaps or video frames. */
 object FaceAnalysis {
   
   /** Represents a face that was detected in a SoftwareBitmap or a VideoFrame . */
-  @js.native
   trait DetectedFace extends StObject {
     
     /** Gets the bounds the detected face occupies in the SoftwareBitmap or VideoFrame . */
-    var faceBox: BitmapBounds = js.native
+    var faceBox: BitmapBounds
   }
   object DetectedFace {
     
@@ -45,14 +43,14 @@ object FaceAnalysis {
       * @param image The image data to be processed for face detection.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def detectFacesAsync(image: SoftwareBitmap): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+    def detectFacesAsync(image: SoftwareBitmap): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
     /**
       * Asynchronously detects faces in the provided SoftwareBitmap within the specified search area.
       * @param image The image data to be processed for face detection.
       * @param searchArea The bounds within the SoftwareBitmap in which face detection will be performed.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def detectFacesAsync(image: SoftwareBitmap, searchArea: BitmapBounds): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+    def detectFacesAsync(image: SoftwareBitmap, searchArea: BitmapBounds): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
     
     /** Gets or sets the maximum detectable face size, in pixels. */
     var maxDetectableFaceSize: BitmapSize = js.native
@@ -62,21 +60,20 @@ object FaceAnalysis {
   }
   
   /** Detects faces in VideoFrame objects and tracks faces across subsequent video frames. */
-  @js.native
   trait FaceTracker extends StObject {
     
     /** Gets or sets the maximum detectable face size, in pixels. */
-    var maxDetectableFaceSize: BitmapSize = js.native
+    var maxDetectableFaceSize: BitmapSize
     
     /** Gets or sets the minimum detectable face size, in pixels. */
-    var minDetectableFaceSize: BitmapSize = js.native
+    var minDetectableFaceSize: BitmapSize
     
     /**
       * Asynchronously processes a VideoFrame for face detection.
       * @param videoFrame The VideoFrame in which faces are detected or tracked.
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
-    def processNextFrameAsync(videoFrame: VideoFrame): IPromiseWithIAsyncOperation[IVector[_]] = js.native
+    def processNextFrameAsync(videoFrame: VideoFrame): IPromiseWithIAsyncOperation[IVector[js.Any]]
   }
   object FaceTracker {
     
@@ -84,7 +81,7 @@ object FaceAnalysis {
     def apply(
       maxDetectableFaceSize: BitmapSize,
       minDetectableFaceSize: BitmapSize,
-      processNextFrameAsync: VideoFrame => IPromiseWithIAsyncOperation[IVector[_]]
+      processNextFrameAsync: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]
     ): FaceTracker = {
       val __obj = js.Dynamic.literal(maxDetectableFaceSize = maxDetectableFaceSize.asInstanceOf[js.Any], minDetectableFaceSize = minDetectableFaceSize.asInstanceOf[js.Any], processNextFrameAsync = js.Any.fromFunction1(processNextFrameAsync))
       __obj.asInstanceOf[FaceTracker]
@@ -100,7 +97,7 @@ object FaceAnalysis {
       def setMinDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "minDetectableFaceSize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[_]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
+      def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
     }
   }
 }

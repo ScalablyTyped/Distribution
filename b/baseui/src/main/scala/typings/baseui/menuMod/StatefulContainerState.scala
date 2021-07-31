@@ -2,17 +2,15 @@ package typings.baseui.menuMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulContainerState extends StObject {
   
-  var activedescendantId: js.UndefOr[String] = js.native
+  var activedescendantId: js.UndefOr[String] = js.undefined
   
-  var highlightedIndex: Double = js.native
+  var highlightedIndex: Double
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
 }
 object StatefulContainerState {
   

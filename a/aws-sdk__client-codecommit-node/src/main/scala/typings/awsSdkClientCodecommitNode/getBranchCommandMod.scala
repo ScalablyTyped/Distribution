@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesGetBranchInputMod.GetBranchInput
 import typings.awsSdkClientCodecommitNode.typesGetBranchOutputMod.GetBranchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBranchCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/GetBranchCommand", "GetBranchCommand")
   @js.native
-  class GetBranchCommand protected () extends Command[
+  class GetBranchCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetBranchInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object getBranchCommandMod {
         ] {
     def this(input: GetBranchInput) = this()
     
+    /* CompleteClass */
+    override val input: GetBranchInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetBranchInput, GetBranchOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[GetBranchInput, GetBranchOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[GetBranchInput, GetBranchOutput] = js.native
   }
 }

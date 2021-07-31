@@ -2,66 +2,64 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewPrivateVirtualInterface extends StObject {
   
   /**
     * The address family for the BGP peer.
     */
-  var addressFamily: js.UndefOr[AddressFamily] = js.native
+  var addressFamily: js.UndefOr[AddressFamily] = js.undefined
   
   /**
     * The IP address assigned to the Amazon interface.
     */
-  var amazonAddress: js.UndefOr[AmazonAddress] = js.native
+  var amazonAddress: js.UndefOr[AmazonAddress] = js.undefined
   
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration. The valid values are 1-2147483647.
     */
-  var asn: ASN = js.native
+  var asn: ASN
   
   /**
     * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
-  var authKey: js.UndefOr[BGPAuthKey] = js.native
+  var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   
   /**
     * The IP address assigned to the customer interface.
     */
-  var customerAddress: js.UndefOr[CustomerAddress] = js.native
+  var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
-  var mtu: js.UndefOr[MTU] = js.native
+  var mtu: js.UndefOr[MTU] = js.undefined
   
   /**
     * The tags associated with the private virtual interface.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the virtual private gateway.
     */
-  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.native
+  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   
   /**
     * The name of the virtual interface assigned by the customer network. The name has a maximum of 100 characters. The following are valid characters: a-z, 0-9 and a hyphen (-).
     */
-  var virtualInterfaceName: VirtualInterfaceName = js.native
+  var virtualInterfaceName: VirtualInterfaceName
   
   /**
     * The ID of the VLAN.
     */
-  var vlan: VLAN = js.native
+  var vlan: VLAN
 }
 object NewPrivateVirtualInterface {
   

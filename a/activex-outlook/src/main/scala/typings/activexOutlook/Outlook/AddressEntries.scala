@@ -2,16 +2,15 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AddressEntries extends StObject {
   
   def Add(Type: String): AddressEntry = js.native
-  def Add(Type: String, Name: js.UndefOr[scala.Nothing], Address: js.Any): AddressEntry = js.native
   def Add(Type: String, Name: js.Any): AddressEntry = js.native
   def Add(Type: String, Name: js.Any, Address: js.Any): AddressEntry = js.native
+  def Add(Type: String, Name: Unit, Address: js.Any): AddressEntry = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -39,7 +38,7 @@ trait AddressEntries extends StObject {
   val Session: NameSpace = js.native
   
   def Sort(): Unit = js.native
-  def Sort(Property: js.UndefOr[scala.Nothing], Order: js.Any): Unit = js.native
   def Sort(Property: js.Any): Unit = js.native
   def Sort(Property: js.Any, Order: js.Any): Unit = js.native
+  def Sort(Property: Unit, Order: js.Any): Unit = js.native
 }

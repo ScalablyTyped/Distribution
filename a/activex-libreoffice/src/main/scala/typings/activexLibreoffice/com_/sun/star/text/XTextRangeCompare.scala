@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Only {@link TextRange} instances within the same {@link Text} can be compared.
   */
-@js.native
-trait XTextRangeCompare extends XInterface {
+trait XTextRangeCompare
+  extends StObject
+     with XInterface {
   
   /**
     * @returns 1, if **xR1** ends before **xR2** , 0, if **xR1** ends at the same position as **xR2** and -1, if **xR1** ends behind **xR2** .
     * @throws com::sun::star::lang::IllegalArgumentException if either **xR1** or **xR2** is not within this text.
     */
-  def compareRegionEnds(xR1: XTextRange, xR2: XTextRange): Double = js.native
+  def compareRegionEnds(xR1: XTextRange, xR2: XTextRange): Double
   
   /**
     * @returns 1 if **xR1** starts before **xR2** , 0 if **xR1** starts at the same position as **xR2** and -1 if **xR1** starts behind **xR2** .
     * @throws com::sun::star::lang::IllegalArgumentException if either **xR1** or **xR2** is not within this text.
     */
-  def compareRegionStarts(xR1: XTextRange, xR2: XTextRange): Double = js.native
+  def compareRegionStarts(xR1: XTextRange, xR2: XTextRange): Double
 }
 object XTextRangeCompare {
   

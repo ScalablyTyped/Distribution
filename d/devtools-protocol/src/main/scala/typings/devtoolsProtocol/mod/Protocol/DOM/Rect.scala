@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rect extends StObject {
   
   /**
     * Rectangle height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Rectangle width
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * X coordinate
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y coordinate
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Rect {
   

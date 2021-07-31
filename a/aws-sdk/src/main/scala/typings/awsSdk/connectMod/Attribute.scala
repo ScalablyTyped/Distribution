@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * The type of attribute.
     */
-  var AttributeType: js.UndefOr[InstanceAttributeType] = js.native
+  var AttributeType: js.UndefOr[InstanceAttributeType] = js.undefined
   
   /**
     * The value of the attribute.
     */
-  var Value: js.UndefOr[InstanceAttributeValue] = js.native
+  var Value: js.UndefOr[InstanceAttributeValue] = js.undefined
 }
 object Attribute {
   

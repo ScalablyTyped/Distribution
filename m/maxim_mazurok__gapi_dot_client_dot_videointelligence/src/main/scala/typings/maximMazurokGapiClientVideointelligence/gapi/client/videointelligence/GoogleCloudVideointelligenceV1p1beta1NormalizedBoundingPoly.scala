@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly extends StObject {
   
   /** Normalized vertices of the bounding polygon. */
-  var vertices: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1NormalizedVertex]] = js.native
+  var vertices: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1NormalizedVertex]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly {
   

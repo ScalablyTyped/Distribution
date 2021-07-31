@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFilterControl.Applied event.
   */
-@js.native
-trait ASPxClientFilterAppliedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFilterAppliedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the filter expression currently being applied.
     */
-  var filterExpression: String = js.native
+  var filterExpression: String
 }
 object ASPxClientFilterAppliedEventArgs {
   

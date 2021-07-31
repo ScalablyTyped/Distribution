@@ -2,15 +2,13 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerRiskData extends StObject {
   
-  var customerBrowser: js.UndefOr[String] = js.native
+  var customerBrowser: js.UndefOr[String] = js.undefined
   
-  var customerIp: js.UndefOr[String] = js.native
+  var customerIp: js.UndefOr[String] = js.undefined
 }
 object CustomerRiskData {
   

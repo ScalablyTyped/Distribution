@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableSelectDialog extends Control {
+trait TableSelectDialog
+  extends StObject
+     with Control {
   
   /**
     * Sets the binding context for the internal table AND the current control so that both controls can be

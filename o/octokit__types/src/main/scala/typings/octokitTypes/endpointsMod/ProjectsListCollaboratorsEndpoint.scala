@@ -1,17 +1,17 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.direct
+import typings.octokitTypes.octokitTypesStrings.inertia
 import typings.octokitTypes.octokitTypesStrings.outside
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  project_id :number,   affiliation :'outside' | 'direct' | 'all' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsListCollaboratorsEndpoint extends StObject {
+trait ProjectsListCollaboratorsEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   /**
     * Filters the collaborators by their affiliation. Can be one of:
@@ -19,26 +19,24 @@ trait ProjectsListCollaboratorsEndpoint extends StObject {
     * \* `direct`: Collaborators with permissions to a project, regardless of organization membership status.
     * \* `all`: All collaborators the authenticated user can see.
     */
-  var affiliation: js.UndefOr[outside | direct | all] = js.native
-  
-  var mediaType: `7` = js.native
+  var affiliation: js.UndefOr[outside | direct | all] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var project_id: Double = js.native
+  var project_id: Double
 }
 object ProjectsListCollaboratorsEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, project_id: Double): ProjectsListCollaboratorsEndpoint = {
+  def apply(mediaType: `0`[inertia], project_id: Double): ProjectsListCollaboratorsEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListCollaboratorsEndpoint]
   }
@@ -51,9 +49,6 @@ object ProjectsListCollaboratorsEndpoint {
     
     @scala.inline
     def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

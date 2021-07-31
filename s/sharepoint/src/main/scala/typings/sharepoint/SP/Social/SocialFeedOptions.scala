@@ -3,11 +3,12 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocialFeedOptions extends ClientObject {
+trait SocialFeedOptions
+  extends StObject
+     with ClientObject {
   
   def get_maxThreadCount(): Double = js.native
   

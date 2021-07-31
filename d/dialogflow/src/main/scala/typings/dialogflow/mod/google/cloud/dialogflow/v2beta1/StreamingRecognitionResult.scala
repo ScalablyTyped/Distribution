@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a StreamingRecognitionResult. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StreamingRecognitionResult.
   * @param [properties] Properties to set
   */
-class StreamingRecognitionResult () extends IStreamingRecognitionResult {
+class StreamingRecognitionResult ()
+  extends StObject
+     with IStreamingRecognitionResult {
   def this(properties: IStreamingRecognitionResult) = this()
   
   /** StreamingRecognitionResult confidence. */
@@ -53,6 +54,10 @@ class StreamingRecognitionResult () extends IStreamingRecognitionResult {
 }
 object StreamingRecognitionResult {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait MessageType extends StObject
   /** MessageType enum. */
@@ -61,19 +66,25 @@ object StreamingRecognitionResult {
   object MessageType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
+    def apply(value: Double): js.UndefOr[MessageType & Double] = js.native
     
     @js.native
-    sealed trait END_OF_SINGLE_UTTERANCE extends MessageType
-    /* 2 */ val END_OF_SINGLE_UTTERANCE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.END_OF_SINGLE_UTTERANCE with Double = js.native
+    sealed trait END_OF_SINGLE_UTTERANCE
+      extends StObject
+         with MessageType
+    /* 2 */ val END_OF_SINGLE_UTTERANCE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.END_OF_SINGLE_UTTERANCE & Double = js.native
     
     @js.native
-    sealed trait MESSAGE_TYPE_UNSPECIFIED extends MessageType
-    /* 0 */ val MESSAGE_TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.MESSAGE_TYPE_UNSPECIFIED with Double = js.native
+    sealed trait MESSAGE_TYPE_UNSPECIFIED
+      extends StObject
+         with MessageType
+    /* 0 */ val MESSAGE_TYPE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.MESSAGE_TYPE_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait TRANSCRIPT extends MessageType
-    /* 1 */ val TRANSCRIPT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.TRANSCRIPT with Double = js.native
+    sealed trait TRANSCRIPT
+      extends StObject
+         with MessageType
+    /* 1 */ val TRANSCRIPT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType.TRANSCRIPT & Double = js.native
   }
   
   /**
@@ -82,12 +93,10 @@ object StreamingRecognitionResult {
     * @returns StreamingRecognitionResult instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.create")
-  @js.native
-  def create(): StreamingRecognitionResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.create")
-  @js.native
-  def create(properties: IStreamingRecognitionResult): StreamingRecognitionResult = js.native
+  @scala.inline
+  def create(): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StreamingRecognitionResult]
+  @scala.inline
+  def create(properties: IStreamingRecognitionResult): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
   
   /**
     * Decodes a StreamingRecognitionResult message from the specified reader or buffer.
@@ -98,18 +107,14 @@ object StreamingRecognitionResult {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decode")
-  @js.native
-  def decode(reader: Reader): StreamingRecognitionResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): StreamingRecognitionResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decode")
-  @js.native
-  def decode(reader: Uint8Array): StreamingRecognitionResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): StreamingRecognitionResult = js.native
+  @scala.inline
+  def decode(reader: Reader): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
+  @scala.inline
+  def decode(reader: Reader, length: Double): StreamingRecognitionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingRecognitionResult]
+  @scala.inline
+  def decode(reader: Uint8Array): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): StreamingRecognitionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingRecognitionResult]
   
   /**
     * Decodes a StreamingRecognitionResult message from the specified reader or buffer, length delimited.
@@ -119,12 +124,10 @@ object StreamingRecognitionResult {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): StreamingRecognitionResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): StreamingRecognitionResult = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
   
   /**
     * Encodes the specified StreamingRecognitionResult message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.verify|verify} messages.
@@ -133,12 +136,10 @@ object StreamingRecognitionResult {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.encode")
-  @js.native
-  def encode(message: IStreamingRecognitionResult): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.encode")
-  @js.native
-  def encode(message: IStreamingRecognitionResult, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStreamingRecognitionResult): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStreamingRecognitionResult, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StreamingRecognitionResult message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.verify|verify} messages.
@@ -147,12 +148,10 @@ object StreamingRecognitionResult {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingRecognitionResult): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingRecognitionResult, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStreamingRecognitionResult): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStreamingRecognitionResult, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StreamingRecognitionResult message from a plain object. Also converts values to their respective internal types.
@@ -160,9 +159,8 @@ object StreamingRecognitionResult {
     * @returns StreamingRecognitionResult
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): StreamingRecognitionResult = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): StreamingRecognitionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StreamingRecognitionResult]
   
   /**
     * Creates a plain object from a StreamingRecognitionResult message. Also converts values to other types if specified.
@@ -171,12 +169,10 @@ object StreamingRecognitionResult {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.toObject")
-  @js.native
-  def toObject(message: StreamingRecognitionResult): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.toObject")
-  @js.native
-  def toObject(message: StreamingRecognitionResult, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: StreamingRecognitionResult): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: StreamingRecognitionResult, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StreamingRecognitionResult message.
@@ -184,7 +180,6 @@ object StreamingRecognitionResult {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

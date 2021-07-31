@@ -2,30 +2,28 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlannerExternalReference extends StObject {
   
   // A name alias to describe the reference.
-  var alias: js.UndefOr[NullableOption[String]] = js.native
+  var alias: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. User ID by which this is last modified.
-  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using
     * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'
     */
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Used to set the relative priority order in which the reference will be shown as a preview on the task.
-  var previewPriority: js.UndefOr[NullableOption[String]] = js.native
+  var previewPriority: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Used to describe the type of the reference. Types include: PowerPoint, Word, Excel, Other.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PlannerExternalReference {
   

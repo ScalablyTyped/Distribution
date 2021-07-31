@@ -2,16 +2,16 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogElse extends ModalProps {
+trait DialogElse
+  extends StObject
+     with ModalProps {
   
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("onShow")
-  var onShow_DialogElse: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow_DialogElse: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object DialogElse {
   

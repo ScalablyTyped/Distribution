@@ -2,30 +2,30 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Guidance or advice relating to an immunization
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ImmunizationRecommendation extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ImmunizationRecommendation
+  extends StObject
+     with DomainResource {
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Who this profile is for
     */
-  var patient: Reference = js.native
+  var patient: Reference
   
   /**
     * Vaccine administration recommendations
     */
-  var recommendation: js.Array[ImmunizationRecommendationRecommendation] = js.native
+  var recommendation: js.Array[ImmunizationRecommendationRecommendation]
 }
 object ImmunizationRecommendation {
   

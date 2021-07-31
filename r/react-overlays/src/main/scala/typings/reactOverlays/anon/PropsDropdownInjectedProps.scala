@@ -3,13 +3,11 @@ package typings.reactOverlays.anon
 import typings.reactOverlays.esmDropdownMod.DropdownInjectedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropsDropdownInjectedProps extends StObject {
   
-  var props: DropdownInjectedProps = js.native
+  var props: DropdownInjectedProps
 }
 object PropsDropdownInjectedProps {
   

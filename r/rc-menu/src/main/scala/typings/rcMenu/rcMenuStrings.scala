@@ -4,7 +4,6 @@ import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcMenuStrings {
@@ -45,7 +44,9 @@ object rcMenuStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait click extends TriggerSubMenuAction
+  sealed trait click
+    extends StObject
+       with TriggerSubMenuAction
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   
@@ -100,12 +101,16 @@ object rcMenuStrings {
   def hack: hack = "hack".asInstanceOf[hack]
   
   @js.native
-  sealed trait horizontal extends MenuMode
+  sealed trait horizontal
+    extends StObject
+       with MenuMode
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hover extends TriggerSubMenuAction
+  sealed trait hover
+    extends StObject
+       with TriggerSubMenuAction
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   
@@ -115,7 +120,9 @@ object rcMenuStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait `inline` extends MenuMode
+  sealed trait `inline`
+    extends StObject
+       with MenuMode
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
@@ -275,17 +282,23 @@ object rcMenuStrings {
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait vertical extends MenuMode
+  sealed trait vertical
+    extends StObject
+       with MenuMode
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait `vertical-left` extends MenuMode
+  sealed trait `vertical-left`
+    extends StObject
+       with MenuMode
   @scala.inline
   def `vertical-left`: `vertical-left` = "vertical-left".asInstanceOf[`vertical-left`]
   
   @js.native
-  sealed trait `vertical-right` extends MenuMode
+  sealed trait `vertical-right`
+    extends StObject
+       with MenuMode
   @scala.inline
   def `vertical-right`: `vertical-right` = "vertical-right".asInstanceOf[`vertical-right`]
   

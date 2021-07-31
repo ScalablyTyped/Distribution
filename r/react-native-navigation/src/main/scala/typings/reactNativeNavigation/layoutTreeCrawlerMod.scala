@@ -6,7 +6,6 @@ import typings.reactNativeNavigation.optionsProcessorMod.OptionsProcessor
 import typings.reactNativeNavigation.storeMod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutTreeCrawlerMod {
@@ -35,14 +34,13 @@ object layoutTreeCrawlerMod {
     val store: Store = js.native
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var passProps: js.UndefOr[js.Any] = js.native
+    var passProps: js.UndefOr[js.Any] = js.undefined
   }
   object Data {
     
@@ -75,16 +73,15 @@ object layoutTreeCrawlerMod {
     }
   }
   
-  @js.native
   trait LayoutNode extends StObject {
     
-    var children: js.Array[LayoutNode] = js.native
+    var children: js.Array[LayoutNode]
     
-    var data: Data = js.native
+    var data: Data
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: LayoutType = js.native
+    var `type`: LayoutType
   }
   object LayoutNode {
     

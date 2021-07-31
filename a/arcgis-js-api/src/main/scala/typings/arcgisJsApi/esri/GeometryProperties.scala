@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeometryProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait GeometryProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
     */
-  var hasM: js.UndefOr[Boolean] = js.native
+  var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the geometry has z-values (elevation).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
     */
-  var hasZ: js.UndefOr[Boolean] = js.native
+  var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The spatial reference of the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object GeometryProperties {
   

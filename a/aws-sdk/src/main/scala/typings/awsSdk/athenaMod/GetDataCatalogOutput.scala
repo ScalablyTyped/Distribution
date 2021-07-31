@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataCatalogOutput extends StObject {
   
   /**
     * The data catalog returned.
     */
-  var DataCatalog: js.UndefOr[typings.awsSdk.athenaMod.DataCatalog] = js.native
+  var DataCatalog: js.UndefOr[typings.awsSdk.athenaMod.DataCatalog] = js.undefined
 }
 object GetDataCatalogOutput {
   

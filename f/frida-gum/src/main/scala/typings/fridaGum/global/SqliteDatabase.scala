@@ -3,7 +3,6 @@ package typings.fridaGum.global
 import typings.fridaGum.SqliteOpenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("SqliteDatabase")
 @js.native
 class SqliteDatabase ()
-  extends typings.fridaGum.SqliteDatabase
+  extends StObject
+     with typings.fridaGum.SqliteDatabase {
+  
+  /**
+    * Closes the database. You should call this function when you're done with
+    * the database, unless you are fine with this happening when the object is
+    * garbage-collected or the script is unloaded.
+    */
+  /* CompleteClass */
+  override def close(): Unit = js.native
+  
+  /**
+    * Dumps the database to a gzip-compressed blob encoded as Base64.
+    *
+    * This is useful for inlining a cache in your agent's code, loaded by
+    * calling `SqliteDatabase.openInline()`.
+    */
+  /* CompleteClass */
+  override def dump(): String = js.native
+  
+  /**
+    * Executes a raw SQL query. Throws an exception if the query is invalid.
+    *
+    * The query's result is ignored, so this should only be used for queries
+    * for setting up the database, e.g. table creation.
+    *
+    * @param sql Text-representation of the SQL query.
+    */
+  /* CompleteClass */
+  override def exec(sql: String): Unit = js.native
+  
+  /**
+    * Compiles the provided SQL into a `SqliteStatement` object. Throws an
+    * exception if the query is invalid.
+    *
+    * @param sql Text-representation of the SQL query.
+    */
+  /* CompleteClass */
+  override def prepare(sql: String): typings.fridaGum.SqliteStatement = js.native
+}
 object SqliteDatabase {
+  
+  @JSGlobal("SqliteDatabase")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Opens the SQLite v3 database at `path` on the filesystem. The database
@@ -26,12 +68,10 @@ object SqliteDatabase {
     * @param options Options to customize how the database should be opened.
     */
   /* static member */
-  @JSGlobal("SqliteDatabase.open")
-  @js.native
-  def open(path: String): typings.fridaGum.SqliteDatabase = js.native
-  @JSGlobal("SqliteDatabase.open")
-  @js.native
-  def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = js.native
+  @scala.inline
+  def open(path: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
+  @scala.inline
+  def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.SqliteDatabase]
   
   /**
     * Just like `open()` but the contents of the database is provided as a
@@ -47,7 +87,6 @@ object SqliteDatabase {
     * @param encodedContents Base64-encoded database contents.
     */
   /* static member */
-  @JSGlobal("SqliteDatabase.openInline")
-  @js.native
-  def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = js.native
+  @scala.inline
+  def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openInline")(encodedContents.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
 }

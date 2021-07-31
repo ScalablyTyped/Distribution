@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewTransition extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusWebviewWebviewTransition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * 产生变换效果的属性
@@ -27,7 +25,7 @@ trait PlusWebviewWebviewTransition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口变换效果
@@ -40,7 +38,7 @@ trait PlusWebviewWebviewTransition extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var timingfunction: js.UndefOr[String] = js.native
+  var timingfunction: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewTransition {
   

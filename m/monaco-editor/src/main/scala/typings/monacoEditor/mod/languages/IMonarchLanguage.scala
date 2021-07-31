@@ -3,46 +3,44 @@ package typings.monacoEditor.mod.languages
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMonarchLanguage extends StObject {
   
   /**
     * for example [['{','}','delimiter.curly']]
     */
-  var brackets: js.UndefOr[js.Array[IMonarchLanguageBracket]] = js.native
+  var brackets: js.UndefOr[js.Array[IMonarchLanguageBracket]] = js.undefined
   
   /**
     * if no match in the tokenizer assign this token class (default 'source')
     */
-  var defaultToken: js.UndefOr[String] = js.native
+  var defaultToken: js.UndefOr[String] = js.undefined
   
   /**
     * is the language case insensitive?
     */
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * start symbol in the tokenizer (by default the first entry is used)
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
   /**
     * attach this to every token class (by default '.' + name)
     */
-  var tokenPostfix: js.UndefOr[String] = js.native
+  var tokenPostfix: js.UndefOr[String] = js.undefined
   
   /**
     * map from string to ILanguageRule[]
     */
-  var tokenizer: StringDictionary[js.Array[IMonarchLanguageRule]] = js.native
+  var tokenizer: StringDictionary[js.Array[IMonarchLanguageRule]]
   
   /**
     * is the language unicode-aware? (i.e., /\\u{1D306}/)
     */
-  var unicode: js.UndefOr[Boolean] = js.native
+  var unicode: js.UndefOr[Boolean] = js.undefined
 }
 object IMonarchLanguage {
   

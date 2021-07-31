@@ -2,26 +2,24 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntitiesDir extends StObject {
   
   /**
     * Directory where entities should be created by default.
     */
-  val entitiesDir: js.UndefOr[String] = js.native
+  val entitiesDir: js.UndefOr[String] = js.undefined
   
   /**
     * Directory where migrations should be created by default.
     */
-  val migrationsDir: js.UndefOr[String] = js.native
+  val migrationsDir: js.UndefOr[String] = js.undefined
   
   /**
     * Directory where subscribers should be created by default.
     */
-  val subscribersDir: js.UndefOr[String] = js.native
+  val subscribersDir: js.UndefOr[String] = js.undefined
 }
 object EntitiesDir {
   

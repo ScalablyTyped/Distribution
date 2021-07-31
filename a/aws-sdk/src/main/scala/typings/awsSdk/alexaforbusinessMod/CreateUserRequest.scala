@@ -2,41 +2,39 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * A unique, user-specified identifier for this request that ensures idempotency. 
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The email address for the user.
     */
-  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Email] = js.undefined
   
   /**
     * The first name for the user.
     */
-  var FirstName: js.UndefOr[userFirstName] = js.native
+  var FirstName: js.UndefOr[userFirstName] = js.undefined
   
   /**
     * The last name for the user.
     */
-  var LastName: js.UndefOr[userLastName] = js.native
+  var LastName: js.UndefOr[userLastName] = js.undefined
   
   /**
     * The tags for the user.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ARN for the user.
     */
-  var UserId: userUserId = js.native
+  var UserId: userUserId
 }
 object CreateUserRequest {
   

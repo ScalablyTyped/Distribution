@@ -2,37 +2,36 @@ package typings.envEditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("env-editor", "allEditors")
+  @JSImport("env-editor", JSImport.Namespace)
   @js.native
-  def allEditors(): js.Array[Editor] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("env-editor", "defaultEditor")
-  @js.native
-  def defaultEditor(): Editor = js.native
+  @scala.inline
+  def allEditors(): js.Array[Editor] = ^.asInstanceOf[js.Dynamic].applyDynamic("allEditors")().asInstanceOf[js.Array[Editor]]
   
-  @JSImport("env-editor", "getEditor")
-  @js.native
-  def getEditor(editor: String): Editor = js.native
+  @scala.inline
+  def defaultEditor(): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultEditor")().asInstanceOf[Editor]
   
-  @js.native
+  @scala.inline
+  def getEditor(editor: String): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditor")(editor.asInstanceOf[js.Any]).asInstanceOf[Editor]
+  
   trait Editor extends StObject {
     
-    var binary: String = js.native
+    var binary: String
     
-    var id: String = js.native
+    var id: String
     
-    var isTerminalEditor: Boolean = js.native
+    var isTerminalEditor: Boolean
     
-    var keywords: js.Array[String] = js.native
+    var keywords: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
   }
   object Editor {
     

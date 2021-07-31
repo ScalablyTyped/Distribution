@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HivePartitioningOptions extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait HivePartitioningOptions extends StObject {
     * STRINGS: automatically infer partition key name(s). All types are interpreted as strings. (3) CUSTOM: partition key schema is encoded in the source URI prefix. Not all storage
     * formats support hive partitioning. Requesting hive partitioning on an unsupported format will lead to an error. Currently supported types include: AVRO, CSV, JSON, ORC and Parquet.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. Note that this field should only be true
     * when creating a permanent external table or querying a temporary external table. Hive-partitioned loads with requirePartitionFilter explicitly set to true will fail.
     */
-  var requirePartitionFilter: js.UndefOr[Boolean] = js.native
+  var requirePartitionFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] When hive partition detection is requested, a common prefix for all source uris should be supplied. The prefix must end immediately before the partition key encoding
@@ -27,7 +25,7 @@ trait HivePartitioningOptions extends StObject {
     * gs://bucket/path_to_table/dt=2018-12-31/country=CA/id=3/file.avro When hive partitioning is requested with either AUTO or STRINGS detection, the common prefix can be either of
     * gs://bucket/path_to_table or gs://bucket/path_to_table/ (trailing slash does not matter).
     */
-  var sourceUriPrefix: js.UndefOr[String] = js.native
+  var sourceUriPrefix: js.UndefOr[String] = js.undefined
 }
 object HivePartitioningOptions {
   

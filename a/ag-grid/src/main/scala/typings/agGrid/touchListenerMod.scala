@@ -7,14 +7,15 @@ import typings.std.Touch
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchListenerMod {
   
   @JSImport("ag-grid/dist/lib/widgets/touchListener", "TouchListener")
   @js.native
-  class TouchListener protected () extends IEventEmitter {
+  class TouchListener protected ()
+    extends StObject
+       with IEventEmitter {
     def this(eElement: HTMLElement) = this()
     def this(eElement: HTMLElement, preventMouseClick: Boolean) = this()
     
@@ -78,12 +79,13 @@ object touchListenerMod {
     def EVENT_TAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_TAP")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait LongTapEvent extends AgEvent {
+  trait LongTapEvent
+    extends StObject
+       with AgEvent {
     
-    var touchEvent: TouchEvent = js.native
+    var touchEvent: TouchEvent
     
-    var touchStart: Touch = js.native
+    var touchStart: Touch
   }
   object LongTapEvent {
     
@@ -105,10 +107,11 @@ object touchListenerMod {
     }
   }
   
-  @js.native
-  trait TapEvent extends AgEvent {
+  trait TapEvent
+    extends StObject
+       with AgEvent {
     
-    var touchStart: Touch = js.native
+    var touchStart: Touch
   }
   object TapEvent {
     

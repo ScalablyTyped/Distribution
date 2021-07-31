@@ -3,7 +3,6 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.nodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object changeMod {
@@ -13,30 +12,12 @@ object changeMod {
   class Change protected () extends StObject {
     def this(`type`: String, snapshotNode: Node) = this()
     def this(`type`: String, snapshotNode: Node, childName: String) = this()
-    def this(`type`: String, snapshotNode: Node, childName: js.UndefOr[scala.Nothing], oldSnap: Node) = this()
     def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node) = this()
-    def this(
-      `type`: String,
-      snapshotNode: Node,
-      childName: js.UndefOr[scala.Nothing],
-      oldSnap: js.UndefOr[scala.Nothing],
-      prevName: String
-    ) = this()
-    def this(
-      `type`: String,
-      snapshotNode: Node,
-      childName: js.UndefOr[scala.Nothing],
-      oldSnap: Node,
-      prevName: String
-    ) = this()
-    def this(
-      `type`: String,
-      snapshotNode: Node,
-      childName: String,
-      oldSnap: js.UndefOr[scala.Nothing],
-      prevName: String
-    ) = this()
+    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Node) = this()
+    def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Unit, prevName: String) = this()
     def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node, prevName: String) = this()
+    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Unit, prevName: String) = this()
+    def this(`type`: String, snapshotNode: Node, childName: Unit, oldSnap: Node, prevName: String) = this()
     
     var childName: js.UndefOr[String] = js.native
     
@@ -95,9 +76,8 @@ object changeMod {
       * @param {!Node} snapshot
       * @return {!Change}
       */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.childAddedChange")
-    @js.native
-    def childAddedChange(childKey: String, snapshot: Node): Change = js.native
+    @scala.inline
+    def childAddedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childAddedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
     
     /**
       * @param {string} childKey
@@ -105,34 +85,30 @@ object changeMod {
       * @param {!Node} oldSnapshot
       * @return {!Change}
       */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.childChangedChange")
-    @js.native
-    def childChangedChange(childKey: String, newSnapshot: Node, oldSnapshot: Node): Change = js.native
+    @scala.inline
+    def childChangedChange(childKey: String, newSnapshot: Node, oldSnapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childChangedChange")(childKey.asInstanceOf[js.Any], newSnapshot.asInstanceOf[js.Any], oldSnapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
     
     /**
       * @param {string} childKey
       * @param {!Node} snapshot
       * @return {!Change}
       */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.childMovedChange")
-    @js.native
-    def childMovedChange(childKey: String, snapshot: Node): Change = js.native
+    @scala.inline
+    def childMovedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childMovedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
     
     /**
       * @param {string} childKey
       * @param {!Node} snapshot
       * @return {!Change}
       */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.childRemovedChange")
-    @js.native
-    def childRemovedChange(childKey: String, snapshot: Node): Change = js.native
+    @scala.inline
+    def childRemovedChange(childKey: String, snapshot: Node): Change = (^.asInstanceOf[js.Dynamic].applyDynamic("childRemovedChange")(childKey.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Change]
     
     /**
       * @param {!Node} snapshot
       * @return {!Change}
       */
-    @JSImport("@firebase/database/dist/src/core/view/Change", "Change.valueChange")
-    @js.native
-    def valueChange(snapshot: Node): Change = js.native
+    @scala.inline
+    def valueChange(snapshot: Node): Change = ^.asInstanceOf[js.Dynamic].applyDynamic("valueChange")(snapshot.asInstanceOf[js.Any]).asInstanceOf[Change]
   }
 }

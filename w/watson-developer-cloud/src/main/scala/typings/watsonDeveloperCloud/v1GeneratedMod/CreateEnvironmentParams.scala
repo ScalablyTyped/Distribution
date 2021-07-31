@@ -3,28 +3,26 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.CreateEnvironmentConstants.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * request interfaces
   ************************/
 /** Parameters for the `createEnvironment` operation. */
-@js.native
 trait CreateEnvironmentParams extends StObject {
   
   /** Description of the environment. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Name that identifies the environment. */
-  var name: String = js.native
+  var name: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Size of the environment. In the Lite plan the default and only accepted value is `LT`, in all other plans the default is `S`. */
-  var size: js.UndefOr[Size | String] = js.native
+  var size: js.UndefOr[Size | String] = js.undefined
 }
 object CreateEnvironmentParams {
   

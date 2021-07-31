@@ -5,24 +5,23 @@ import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.Organic
 import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.`Non-organic`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var af_referrer_customer_id: js.UndefOr[String] = js.native
+    var af_referrer_customer_id: js.UndefOr[String] = js.undefined
     
-    var af_referrer_uid: js.UndefOr[String] = js.native
+    var af_referrer_uid: js.UndefOr[String] = js.undefined
     
-    var af_status: Organic | `Non-organic` = js.native
+    var af_status: Organic | `Non-organic`
     
-    var is_first_launch: Boolean = js.native
+    var is_first_launch: Boolean
     
-    var media_source: String = js.native
+    var media_source: String
   }
   object Dictkey {
     

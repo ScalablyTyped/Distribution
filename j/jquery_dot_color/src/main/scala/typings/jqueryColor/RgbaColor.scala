@@ -2,19 +2,17 @@ package typings.jqueryColor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RgbaColor extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var blue: js.UndefOr[Double] = js.native
+  var blue: js.UndefOr[Double] = js.undefined
   
-  var green: js.UndefOr[Double] = js.native
+  var green: js.UndefOr[Double] = js.undefined
   
-  var red: js.UndefOr[Double] = js.native
+  var red: js.UndefOr[Double] = js.undefined
 }
 object RgbaColor {
   

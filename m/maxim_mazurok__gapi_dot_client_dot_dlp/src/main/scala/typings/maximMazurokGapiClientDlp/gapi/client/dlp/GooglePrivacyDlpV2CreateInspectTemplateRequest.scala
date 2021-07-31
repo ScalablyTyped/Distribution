@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2CreateInspectTemplateRequest extends StObject {
   
   /** Required. The InspectTemplate to create. */
-  var inspectTemplate: js.UndefOr[GooglePrivacyDlpV2InspectTemplate] = js.native
+  var inspectTemplate: js.UndefOr[GooglePrivacyDlpV2InspectTemplate] = js.undefined
   
   /** Deprecated. This field has no effect. */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * The template id can contain uppercase and lowercase letters, numbers, and hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`. The maximum length is 100
     * characters. Can be empty to allow the system to generate one.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2CreateInspectTemplateRequest {
   

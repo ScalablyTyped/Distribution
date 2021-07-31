@@ -26,21 +26,24 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(format: Format): Archiver = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
+  @scala.inline
+  def apply(format: Format, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
+  
   @JSImport("archiver", JSImport.Namespace)
   @js.native
-  def apply(format: Format): Archiver = js.native
-  @JSImport("archiver", JSImport.Namespace)
-  @js.native
-  def apply(format: Format, options: ArchiverOptions): Archiver = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("archiver", "ArchiverError")
   @js.native
-  class ArchiverError protected () extends Error {
+  class ArchiverError protected ()
+    extends StObject
+       with Error {
     def this(code: String, data: js.Any) = this()
     
     var code: String = js.native
@@ -48,24 +51,26 @@ object mod {
     // Since archiver format support is modular, we cannot enumerate all possible error codes, as the modules can throw arbitrary ones.
     var data: js.Any = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     var path: js.UndefOr[js.Any] = js.native
   }
   
-  @JSImport("archiver", "create")
-  @js.native
-  def create(format: String): Archiver = js.native
-  @JSImport("archiver", "create")
-  @js.native
-  def create(format: String, options: ArchiverOptions): Archiver = js.native
+  @scala.inline
+  def create(format: String): Archiver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any]).asInstanceOf[Archiver]
+  @scala.inline
+  def create(format: String, options: ArchiverOptions): Archiver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Archiver]
   
   /** Check if the format is already registered. */
-  @JSImport("archiver", "isRegisteredFormat")
-  @js.native
-  def isRegisteredFormat(format: String): Boolean = js.native
+  @scala.inline
+  def isRegisteredFormat(format: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegisteredFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("archiver", "registerFormat")
-  @js.native
-  def registerFormat(format: String, module: js.Function): Unit = js.native
+  @scala.inline
+  def registerFormat(format: String, module: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormat")(format.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Archiver extends Transform {
@@ -96,7 +101,7 @@ object mod {
     def file(filename: String, data: EntryData): this.type = js.native
     
     def glob(pattern: String): this.type = js.native
-    def glob(pattern: String, options: js.UndefOr[scala.Nothing], data: PartialEntryData): this.type = js.native
+    def glob(pattern: String, options: Unit, data: PartialEntryData): this.type = js.native
     def glob(pattern: String, options: IOptions): this.type = js.native
     def glob(pattern: String, options: IOptions, data: PartialEntryData): this.type = js.native
     
@@ -133,15 +138,27 @@ object mod {
     def use(plugin: js.Function): this.type = js.native
   }
   
-  type ArchiverOptions = CoreOptions with TransformOptions with ZipOptions with TarOptions
+  trait ArchiverOptions
+    extends StObject
+       with CoreOptions
+       with TransformOptions
+       with ZipOptions
+       with TarOptions
+  object ArchiverOptions {
+    
+    @scala.inline
+    def apply(): ArchiverOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ArchiverOptions]
+    }
+  }
   
   // tslint:disable-next-line:ban-types support for ConstructorFn function and classes
   type ConstructorFn[T] = js.Function | (Instantiable1[/* params (repeated) */ js.Any, T])
   
-  @js.native
   trait CoreOptions extends StObject {
     
-    var statConcurrency: js.UndefOr[Double] = js.native
+    var statConcurrency: js.UndefOr[Double] = js.undefined
   }
   object CoreOptions {
     
@@ -162,29 +179,28 @@ object mod {
     }
   }
   
-  @js.native
   trait EntryData extends StObject {
     
     /** Sets the entry date */
-    var date: js.UndefOr[Date | String] = js.native
+    var date: js.UndefOr[Date | String] = js.undefined
     
     /** Sets the entry permissions */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /** Sets the entry name including internal path */
-    var name: String = js.native
+    var name: String
     
     /**
       * Sets a path prefix for the entry name.
       * Useful when working with methods like `directory` or `glob`
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the fs stat data for this entry allowing
       * for reduction of fs stat calls when stat data is already known
       */
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
   }
   object EntryData {
     
@@ -245,14 +261,13 @@ object mod {
   
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
-    */ typings.archiver.archiverStrings.Partial with TopLevel[T]
+    */ typings.archiver.archiverStrings.Partial & TopLevel[T]
   
-  @js.native
   trait ProgressData extends StObject {
     
-    var entries: Processed = js.native
+    var entries: Processed
     
-    var fs: ProcessedBytes = js.native
+    var fs: ProcessedBytes
   }
   object ProgressData {
     
@@ -275,12 +290,11 @@ object mod {
   
   type TarEntryData = EntryData
   
-  @js.native
   trait TarOptions extends StObject {
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var gzipOptions: js.UndefOr[ZlibOptions] = js.native
+    var gzipOptions: js.UndefOr[ZlibOptions] = js.undefined
   }
   object TarOptions {
     
@@ -307,22 +321,21 @@ object mod {
     }
   }
   
-  @js.native
   trait TransformOptions extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectmode: js.UndefOr[Boolean] = js.native
+    var objectmode: js.UndefOr[Boolean] = js.undefined
     
-    var readableObjectMode: js.UndefOr[Boolean] = js.native
+    var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
-    var writeableObjectMode: js.UndefOr[Boolean] = js.native
+    var writeableObjectMode: js.UndefOr[Boolean] = js.undefined
   }
   object TransformOptions {
     
@@ -379,11 +392,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait ZipEntryData extends EntryData {
+  trait ZipEntryData
+    extends StObject
+       with EntryData {
     
     /** Sets the compression method to STORE */
-    var store: js.UndefOr[Boolean] = js.native
+    var store: js.UndefOr[Boolean] = js.undefined
   }
   object ZipEntryData {
     
@@ -404,18 +418,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ZipOptions extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var forceLocalTime: js.UndefOr[Boolean] = js.native
+    var forceLocalTime: js.UndefOr[Boolean] = js.undefined
     
-    var forceZip64: js.UndefOr[Boolean] = js.native
+    var forceZip64: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[Boolean] = js.native
+    var store: js.UndefOr[Boolean] = js.undefined
     
-    var zlib: js.UndefOr[ZlibOptions] = js.native
+    var zlib: js.UndefOr[ZlibOptions] = js.undefined
   }
   object ZipOptions {
     

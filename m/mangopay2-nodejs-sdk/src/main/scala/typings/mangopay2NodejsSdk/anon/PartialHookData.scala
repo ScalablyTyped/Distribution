@@ -5,26 +5,24 @@ import typings.mangopay2NodejsSdk.mod.hook.HookStatus
 import typings.mangopay2NodejsSdk.mod.hook.HookValidity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.hook.HookData> */
-@js.native
 trait PartialHookData extends StObject {
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var EventType: js.UndefOr[typings.mangopay2NodejsSdk.mod.event.EventType] = js.native
+  var EventType: js.UndefOr[typings.mangopay2NodejsSdk.mod.event.EventType] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var Status: js.UndefOr[HookStatus] = js.native
+  var Status: js.UndefOr[HookStatus] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
   
-  var Validity: js.UndefOr[HookValidity] = js.native
+  var Validity: js.UndefOr[HookValidity] = js.undefined
 }
 object PartialHookData {
   

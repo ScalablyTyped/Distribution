@@ -3,16 +3,15 @@ package typings.next.anon
 import typings.next.mod.GetStaticPropsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Redirect
-  extends GetStaticPropsResult[js.Any] {
+  extends StObject
+     with GetStaticPropsResult[js.Any] {
   
-  var redirect: typings.next.mod.Redirect = js.native
+  var redirect: typings.next.mod.Redirect
   
-  var revalidate: js.UndefOr[Double | Boolean] = js.native
+  var revalidate: js.UndefOr[Double | Boolean] = js.undefined
 }
 object Redirect {
   

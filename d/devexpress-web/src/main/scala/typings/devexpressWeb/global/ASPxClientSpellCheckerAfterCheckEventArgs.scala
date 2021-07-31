@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSpellCheckerAfterCheckEventArgs")
 @js.native
 class ASPxClientSpellCheckerAfterCheckEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSpellCheckerAfterCheckEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSpellCheckerAfterCheckEventArgs {
   /**
     * Initializes a new instance of the class.
     * @param controlId The control ID.
@@ -20,4 +20,22 @@ class ASPxClientSpellCheckerAfterCheckEventArgs protected ()
     */
   def this(controlId: String, checkedText: String) = this()
   def this(controlId: String, checkedText: String, reason: String) = this()
+  
+  /**
+    * Gets the text that has been checked.
+    */
+  /* CompleteClass */
+  var checkedText: String = js.native
+  
+  /**
+    * Gets the programmatic identifier assigned to the control which has been checked.
+    */
+  /* CompleteClass */
+  var controlId: String = js.native
+  
+  /**
+    * Gets a value specifying whether spell checking is finished or stopped by the user.
+    */
+  /* CompleteClass */
+  var reason: String = js.native
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceMetadata extends StObject {
   
   /**
     * The identifier of the identity store that is connected to the SSO instance.
     */
-  var IdentityStoreId: js.UndefOr[Id] = js.native
+  var IdentityStoreId: js.UndefOr[Id] = js.undefined
   
   /**
     * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var InstanceArn: js.UndefOr[typings.awsSdk.ssoadminMod.InstanceArn] = js.native
+  var InstanceArn: js.UndefOr[typings.awsSdk.ssoadminMod.InstanceArn] = js.undefined
 }
 object InstanceMetadata {
   

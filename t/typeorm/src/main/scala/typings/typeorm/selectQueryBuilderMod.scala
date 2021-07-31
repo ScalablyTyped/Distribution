@@ -32,7 +32,6 @@ import typings.typeorm.typeormStrings.pessimistic_write_or_fail
 import typings.typeorm.whereExpressionMod.WhereExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectQueryBuilderMod {
@@ -49,7 +48,7 @@ object selectQueryBuilderMod {
     /**
       * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
       */
-    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(queryBuilder: QueryBuilder[js.Any]) = this()
     def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**
@@ -57,7 +56,7 @@ object selectQueryBuilderMod {
       * Also sets a main string alias of the selection data.
       */
     def addFrom[T](
-      entityTarget: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      entityTarget: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       aliasName: String
     ): SelectQueryBuilder[T] = js.native
     /**
@@ -84,9 +83,9 @@ object selectQueryBuilderMod {
     @JSName("addOrderBy")
     def addOrderBy_DESC(sort: String, order: DESC): this.type = js.native
     @JSName("addOrderBy")
-    def addOrderBy_NULLSFIRST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS FIRST`): this.type = js.native
+    def addOrderBy_NULLSFIRST(sort: String, order: Unit, nulls: `NULLS FIRST`): this.type = js.native
     @JSName("addOrderBy")
-    def addOrderBy_NULLSLAST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS LAST`): this.type = js.native
+    def addOrderBy_NULLSLAST(sort: String, order: Unit, nulls: `NULLS LAST`): this.type = js.native
     
     /**
       * Adds new selection to the SELECT query.
@@ -100,9 +99,9 @@ object selectQueryBuilderMod {
     /**
       * Adds new selection to the SELECT query.
       */
-    def addSelect(selection: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]): this.type = js.native
+    def addSelect(selection: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]): this.type = js.native
     def addSelect(
-      selection: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      selection: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       selectionAliasName: String
     ): this.type = js.native
     
@@ -200,7 +199,7 @@ object selectQueryBuilderMod {
       * Removes all previously set from-s.
       */
     def from[T](
-      entityTarget: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      entityTarget: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       aliasName: String
     ): SelectQueryBuilder[T] = js.native
     /**
@@ -280,14 +279,9 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoin(entity: js.Function, alias: String): this.type = js.native
-    def innerJoin(
-      entity: js.Function,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     def innerJoin(entity: js.Function, alias: String, condition: String): this.type = js.native
     def innerJoin(entity: js.Function, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def innerJoin(entity: js.Function, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs (without selection) entity's property.
       * Given entity property should be a relation.
@@ -295,33 +289,33 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoin(property: String, alias: String): this.type = js.native
-    def innerJoin(property: String, alias: String, condition: js.UndefOr[scala.Nothing], parameters: ObjectLiteral): this.type = js.native
     def innerJoin(property: String, alias: String, condition: String): this.type = js.native
     def innerJoin(property: String, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def innerJoin(property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs (without selection) given subquery.
       * You also need to specify an alias of the joined data.
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def innerJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def innerJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def innerJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def innerJoin(
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -349,13 +343,6 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoinAndMapMany(mapToProperty: String, property: String, alias: String): this.type = js.native
-    def innerJoinAndMapMany(
-      mapToProperty: String,
-      property: String,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     /**
       * INNER JOINs table, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -371,6 +358,7 @@ object selectQueryBuilderMod {
       condition: String,
       parameters: ObjectLiteral
     ): this.type = js.native
+    def innerJoinAndMapMany(mapToProperty: String, property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs given subquery, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -381,27 +369,27 @@ object selectQueryBuilderMod {
       */
     def innerJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def innerJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def innerJoinAndMapMany(
-      mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def innerJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def innerJoinAndMapMany(
+      mapToProperty: String,
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -429,13 +417,6 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoinAndMapOne(mapToProperty: String, property: String, alias: String): this.type = js.native
-    def innerJoinAndMapOne(
-      mapToProperty: String,
-      property: String,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     /**
       * INNER JOINs table, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -451,6 +432,7 @@ object selectQueryBuilderMod {
       condition: String,
       parameters: ObjectLiteral
     ): this.type = js.native
+    def innerJoinAndMapOne(mapToProperty: String, property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs given subquery, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -461,27 +443,27 @@ object selectQueryBuilderMod {
       */
     def innerJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def innerJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def innerJoinAndMapOne(
-      mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def innerJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def innerJoinAndMapOne(
+      mapToProperty: String,
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -491,14 +473,9 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoinAndSelect(entity: js.Function, alias: String): this.type = js.native
-    def innerJoinAndSelect(
-      entity: js.Function,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     def innerJoinAndSelect(entity: js.Function, alias: String, condition: String): this.type = js.native
     def innerJoinAndSelect(entity: js.Function, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def innerJoinAndSelect(entity: js.Function, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs entity's property and adds all selection properties to SELECT.
       * Given entity property should be a relation.
@@ -506,39 +483,39 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoinAndSelect(property: String, alias: String): this.type = js.native
-    def innerJoinAndSelect(property: String, alias: String, condition: js.UndefOr[scala.Nothing], parameters: ObjectLiteral): this.type = js.native
     def innerJoinAndSelect(property: String, alias: String, condition: String): this.type = js.native
     def innerJoinAndSelect(property: String, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def innerJoinAndSelect(property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * INNER JOINs given subquery and adds all selection properties to SELECT..
       * You also need to specify an alias of the joined data.
       * Optionally, you can add condition and parameters used in condition.
       */
     def innerJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def innerJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def innerJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def innerJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def innerJoinAndSelect(
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
     /* protected */ def join(
       direction: INNER | LEFT,
-      entityOrProperty: js.Function | String | (js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]),
+      entityOrProperty: js.Function | String | (js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]),
       aliasName: String,
       condition: js.UndefOr[String],
       parameters: js.UndefOr[ObjectLiteral],
@@ -552,14 +529,9 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoin(entity: js.Function, alias: String): this.type = js.native
-    def leftJoin(
-      entity: js.Function,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     def leftJoin(entity: js.Function, alias: String, condition: String): this.type = js.native
     def leftJoin(entity: js.Function, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def leftJoin(entity: js.Function, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * LEFT JOINs (without selection) entity's property.
       * Given entity property should be a relation.
@@ -567,33 +539,33 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoin(property: String, alias: String): this.type = js.native
-    def leftJoin(property: String, alias: String, condition: js.UndefOr[scala.Nothing], parameters: ObjectLiteral): this.type = js.native
     def leftJoin(property: String, alias: String, condition: String): this.type = js.native
     def leftJoin(property: String, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def leftJoin(property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * LEFT JOINs (without selection) given subquery.
       * You also need to specify an alias of the joined data.
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def leftJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def leftJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def leftJoin(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def leftJoin(
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -621,13 +593,6 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoinAndMapMany(mapToProperty: String, property: String, alias: String): this.type = js.native
-    def leftJoinAndMapMany(
-      mapToProperty: String,
-      property: String,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     /**
       * LEFT JOINs table, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -643,6 +608,7 @@ object selectQueryBuilderMod {
       condition: String,
       parameters: ObjectLiteral
     ): this.type = js.native
+    def leftJoinAndMapMany(mapToProperty: String, property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * LEFT JOINs given subquery, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -653,27 +619,27 @@ object selectQueryBuilderMod {
       */
     def leftJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def leftJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def leftJoinAndMapMany(
-      mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def leftJoinAndMapMany(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def leftJoinAndMapMany(
+      mapToProperty: String,
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -701,13 +667,6 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoinAndMapOne(mapToProperty: String, property: String, alias: String): this.type = js.native
-    def leftJoinAndMapOne(
-      mapToProperty: String,
-      property: String,
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
     /**
       * LEFT JOINs table, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -723,6 +682,7 @@ object selectQueryBuilderMod {
       condition: String,
       parameters: ObjectLiteral
     ): this.type = js.native
+    def leftJoinAndMapOne(mapToProperty: String, property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * LEFT JOINs given subquery, SELECTs the data returned by a join and MAPs all that data to some entity's property.
       * This is extremely useful when you want to select some data and map it to some virtual property.
@@ -733,27 +693,27 @@ object selectQueryBuilderMod {
       */
     def leftJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def leftJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def leftJoinAndMapOne(
-      mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def leftJoinAndMapOne(
       mapToProperty: String,
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def leftJoinAndMapOne(
+      mapToProperty: String,
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -771,33 +731,33 @@ object selectQueryBuilderMod {
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoinAndSelect(property: String, alias: String): this.type = js.native
-    def leftJoinAndSelect(property: String, alias: String, condition: js.UndefOr[scala.Nothing], parameters: ObjectLiteral): this.type = js.native
     def leftJoinAndSelect(property: String, alias: String, condition: String): this.type = js.native
     def leftJoinAndSelect(property: String, alias: String, condition: String, parameters: ObjectLiteral): this.type = js.native
+    def leftJoinAndSelect(property: String, alias: String, condition: Unit, parameters: ObjectLiteral): this.type = js.native
     /**
       * LEFT JOINs given subquery and adds all selection properties to SELECT..
       * You also need to specify an alias of the joined data.
       * Optionally, you can add condition and parameters used in condition.
       */
     def leftJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String
     ): this.type = js.native
     def leftJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
-      alias: String,
-      condition: js.UndefOr[scala.Nothing],
-      parameters: ObjectLiteral
-    ): this.type = js.native
-    def leftJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String
     ): this.type = js.native
     def leftJoinAndSelect(
-      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       alias: String,
       condition: String,
+      parameters: ObjectLiteral
+    ): this.type = js.native
+    def leftJoinAndSelect(
+      subQueryFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
+      alias: String,
+      condition: Unit,
       parameters: ObjectLiteral
     ): this.type = js.native
     
@@ -821,25 +781,25 @@ object selectQueryBuilderMod {
     /**
       * Loads raw results from the database.
       */
-    /* protected */ def loadRawResults(queryRunner: QueryRunner): js.Promise[_] = js.native
+    /* protected */ def loadRawResults(queryRunner: QueryRunner): js.Promise[js.Any] = js.native
     
     /**
       * Counts number of entities of entity's relation and maps the value into some entity's property.
       * Optionally, you can add condition and parameters used in condition.
       */
     def loadRelationCountAndMap(mapToProperty: String, relationName: String): this.type = js.native
-    def loadRelationCountAndMap(
-      mapToProperty: String,
-      relationName: String,
-      aliasName: js.UndefOr[scala.Nothing],
-      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]
-    ): this.type = js.native
     def loadRelationCountAndMap(mapToProperty: String, relationName: String, aliasName: String): this.type = js.native
     def loadRelationCountAndMap(
       mapToProperty: String,
       relationName: String,
       aliasName: String,
-      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]
+      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
+    ): this.type = js.native
+    def loadRelationCountAndMap(
+      mapToProperty: String,
+      relationName: String,
+      aliasName: Unit,
+      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
     ): this.type = js.native
     
     /**
@@ -863,7 +823,7 @@ object selectQueryBuilderMod {
       mapToProperty: String,
       relationName: String,
       alias: String,
-      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]
+      queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
     ): this.type = js.native
     def loadRelationIdAndMap(mapToProperty: String, relationName: String, options: `4`): this.type = js.native
     
@@ -922,17 +882,17 @@ object selectQueryBuilderMod {
     @JSName("orderBy")
     def orderBy_DESC(sort: String, order: DESC): this.type = js.native
     @JSName("orderBy")
-    def orderBy_NULLSFIRST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS FIRST`): this.type = js.native
+    def orderBy_NULLSFIRST(sort: String, order: Unit, nulls: `NULLS FIRST`): this.type = js.native
     @JSName("orderBy")
-    def orderBy_NULLSLAST(sort: String, order: js.UndefOr[scala.Nothing], nulls: `NULLS LAST`): this.type = js.native
+    def orderBy_NULLSLAST(sort: String, order: Unit, nulls: `NULLS LAST`): this.type = js.native
     
     /**
       * Creates SELECT query.
       * Replaces all previous selections if they exist.
       */
-    def select(selection: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]]): this.type = js.native
+    def select(selection: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]): this.type = js.native
     def select(
-      selection: js.Function1[/* qb */ SelectQueryBuilder[_], SelectQueryBuilder[_]],
+      selection: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]],
       selectionAliasName: String
     ): this.type = js.native
     
@@ -981,7 +941,7 @@ object selectQueryBuilderMod {
     /**
       * Creates a subquery - query that can be used inside other queries.
       */
-    def subQuery(): SelectQueryBuilder[_] = js.native
+    def subQuery(): SelectQueryBuilder[js.Any] = js.native
     
     /**
       * Sets maximal number of entities to take.

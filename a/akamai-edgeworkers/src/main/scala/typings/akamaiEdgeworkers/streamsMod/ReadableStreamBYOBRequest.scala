@@ -3,17 +3,15 @@ package typings.akamaiEdgeworkers.streamsMod
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadableStreamBYOBRequest extends StObject {
   
-  def respond(bytesWritten: Double): Unit = js.native
+  def respond(bytesWritten: Double): Unit
   
-  def respondWithNewView(view: ArrayBufferView): Unit = js.native
+  def respondWithNewView(view: ArrayBufferView): Unit
   
-  val view: ArrayBufferView = js.native
+  val view: ArrayBufferView
 }
 object ReadableStreamBYOBRequest {
   

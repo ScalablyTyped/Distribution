@@ -15,41 +15,39 @@ import typings.videoJs.videoJsStrings.json
 import typings.videoJs.videoJsStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XhrOptions extends StObject {
   
-  var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ XMLHttpRequest, Unit]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ XMLHttpRequest, Unit]] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.native
+  var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.native
+  var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.undefined
   
-  var sync: js.UndefOr[Boolean] = js.native
+  var sync: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var useXDR: js.UndefOr[Boolean] = js.native
+  var useXDR: js.UndefOr[Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var xhr: js.UndefOr[XMLHttpRequest] = js.native
+  var xhr: js.UndefOr[XMLHttpRequest] = js.undefined
 }
 object XhrOptions {
   

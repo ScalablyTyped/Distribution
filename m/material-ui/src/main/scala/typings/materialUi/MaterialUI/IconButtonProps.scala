@@ -7,59 +7,58 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.materialUi.MaterialUI.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ @js.native
-trait IconButtonProps
-  extends HTMLAttributes[js.Object] {
+- typings.materialUi.MaterialUI.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait IconButtonProps
+  extends StObject
+     with HTMLAttributes[js.Object] {
   
-  var centerRipple: js.UndefOr[Boolean] = js.native
+  var centerRipple: js.UndefOr[Boolean] = js.undefined
   
-  var containerElement: js.UndefOr[ReactNode | String] = js.native
+  var containerElement: js.UndefOr[ReactNode | String] = js.undefined
   
-  var disableFocusRipple: js.UndefOr[Boolean] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disableKeyboardFocus: js.UndefOr[Boolean] = js.native
+  var disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disableTouchRipple: js.UndefOr[Boolean] = js.native
+  var disableTouchRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var focusRippleColor: js.UndefOr[String] = js.native
+  var focusRippleColor: js.UndefOr[String] = js.undefined
   
-  var focusRippleOpacity: js.UndefOr[Double] = js.native
+  var focusRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var hoveredStyle: js.UndefOr[CSSProperties] = js.native
+  var hoveredStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var iconClassName: js.UndefOr[String] = js.native
+  var iconClassName: js.UndefOr[String] = js.undefined
   
-  var iconStyle: js.UndefOr[CSSProperties] = js.native
+  var iconStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var keyboardFocused: js.UndefOr[Boolean] = js.native
+  var keyboardFocused: js.UndefOr[Boolean] = js.undefined
   
   var onKeyboardFocus: js.UndefOr[
     js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[ReactNode | String] = js.native
+  var tooltip: js.UndefOr[ReactNode | String] = js.undefined
   
-  var tooltipPosition: js.UndefOr[cornersAndCenter] = js.native
+  var tooltipPosition: js.UndefOr[cornersAndCenter] = js.undefined
   
-  var tooltipStyles: js.UndefOr[CSSProperties] = js.native
+  var tooltipStyles: js.UndefOr[CSSProperties] = js.undefined
   
-  var touch: js.UndefOr[Boolean] = js.native
+  var touch: js.UndefOr[Boolean] = js.undefined
   
-  var touchRippleColor: js.UndefOr[String] = js.native
+  var touchRippleColor: js.UndefOr[String] = js.undefined
   
-  var touchRippleOpacity: js.UndefOr[Double] = js.native
+  var touchRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IconButtonProps {
   

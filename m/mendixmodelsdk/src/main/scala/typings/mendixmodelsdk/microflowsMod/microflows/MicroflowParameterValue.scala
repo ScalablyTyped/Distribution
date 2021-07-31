@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,9 +44,8 @@ object MicroflowParameterValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameterValue.create")
-  @js.native
-  def create(model: IModel): MicroflowParameterValue = js.native
+  @scala.inline
+  def create(model: IModel): MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowParameterValue]
   
   /**
     * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object MicroflowParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameterValue.createInJavaActionParameterMappingUnderParameterValue")
-  @js.native
-  def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): MicroflowParameterValue = js.native
+  @scala.inline
+  def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowParameterValue]
   
   /**
     * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
@@ -71,9 +68,8 @@ object MicroflowParameterValue {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameterValue.createInJavaScriptActionParameterMappingUnderParameterValue")
-  @js.native
-  def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): MicroflowParameterValue = js.native
+  @scala.inline
+  def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowParameterValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameterValue.structureTypeName")

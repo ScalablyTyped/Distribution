@@ -3,25 +3,26 @@ package typings.gatsbyCli
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
   
-  @JSImport("gatsby-cli/lib/reporter/loggers/ink/components/progress-bar", "ProgressBar")
+  @JSImport("gatsby-cli/lib/reporter/loggers/ink/components/progress-bar", JSImport.Namespace)
   @js.native
-  def ProgressBar(hasMessageCurrentTotalStartTime: IProgressbarProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def ProgressBar(hasMessageCurrentTotalStartTime: IProgressbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(hasMessageCurrentTotalStartTime.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait IProgressbarProps extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var message: String = js.native
+    var message: String
     
-    var startTime: js.Tuple2[Double, Double] = js.native
+    var startTime: js.Tuple2[Double, Double]
     
-    var total: Double = js.native
+    var total: Double
   }
   object IProgressbarProps {
     

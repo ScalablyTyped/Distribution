@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing a joined collection of PageElements.
   */
-@js.native
 trait SchemaGroup extends StObject {
   
   /**
     * The collection of elements in the group. The minimum size of a group
     * is 2.
     */
-  var children: js.UndefOr[js.Array[SchemaPageElement]] = js.native
+  var children: js.UndefOr[js.Array[SchemaPageElement]] = js.undefined
 }
 object SchemaGroup {
   

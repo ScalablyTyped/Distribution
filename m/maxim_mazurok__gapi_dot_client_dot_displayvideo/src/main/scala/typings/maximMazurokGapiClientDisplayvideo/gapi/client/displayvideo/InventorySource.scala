@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySource extends StObject {
   
   /** Whether the inventory source has a guaranteed or non-guaranteed delivery. */
-  var commitment: js.UndefOr[String] = js.native
+  var commitment: js.UndefOr[String] = js.undefined
   
   /** The creative requirements of the inventory source. Not applicable for auction packages. */
-  var creativeConfigs: js.UndefOr[js.Array[CreativeConfig]] = js.native
+  var creativeConfigs: js.UndefOr[js.Array[CreativeConfig]] = js.undefined
   
   /** The ID in the exchange space that uniquely identifies the inventory source. Must be unique across buyers within each exchange but not necessarily unique across exchanges. */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
   
   /**
     * The delivery method of the inventory source. * For non-guaranteed inventory sources, the only acceptable value is `INVENTORY_SOURCE_DELIVERY_METHOD_PROGRAMMATIC`. * For guaranteed
     * inventory sources, acceptable values are `INVENTORY_SOURCE_DELIVERY_METHOD_TAG` and `INVENTORY_SOURCE_DELIVERY_METHOD_PROGRAMMATIC`.
     */
-  var deliveryMethod: js.UndefOr[String] = js.native
+  var deliveryMethod: js.UndefOr[String] = js.undefined
   
   /** The display name of the inventory source. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The exchange to which the inventory source belongs. */
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the inventory source. Assigned by the system. */
-  var inventorySourceId: js.UndefOr[String] = js.native
+  var inventorySourceId: js.UndefOr[String] = js.undefined
   
   /** Denotes the type of the inventory source. */
-  var inventorySourceType: js.UndefOr[String] = js.native
+  var inventorySourceType: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the inventory source. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The publisher/seller name of the inventory source. */
-  var publisherName: js.UndefOr[String] = js.native
+  var publisherName: js.UndefOr[String] = js.undefined
   
   /** Required. The rate details of the inventory source. */
-  var rateDetails: js.UndefOr[RateDetails] = js.native
+  var rateDetails: js.UndefOr[RateDetails] = js.undefined
   
   /** The status settings of the inventory source. */
-  var status: js.UndefOr[InventorySourceStatus] = js.native
+  var status: js.UndefOr[InventorySourceStatus] = js.undefined
   
   /** The time range when this inventory source starts and stops serving. */
-  var timeRange: js.UndefOr[TimeRange] = js.native
+  var timeRange: js.UndefOr[TimeRange] = js.undefined
   
   /** Output only. The timestamp when the inventory source was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object InventorySource {
   

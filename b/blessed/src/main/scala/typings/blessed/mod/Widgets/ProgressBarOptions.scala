@@ -2,43 +2,43 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressBarOptions extends BoxOptions {
+trait ProgressBarOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * the amount filled (0 - 100).
     */
-  var filled: js.UndefOr[Double] = js.native
+  var filled: js.UndefOr[Double] = js.undefined
   
   /**
     * enable key support.
     */
   @JSName("keys")
-  var keys_ProgressBarOptions: js.UndefOr[Boolean] = js.native
+  var keys_ProgressBarOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * enable mouse support.
     */
   @JSName("mouse")
-  var mouse_ProgressBarOptions: js.UndefOr[Boolean] = js.native
+  var mouse_ProgressBarOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * can be `horizontal` or `vertical`.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * the character to fill the bar with (default is space).
     */
-  var pch: js.UndefOr[String] = js.native
+  var pch: js.UndefOr[String] = js.undefined
   
   /**
     * same as `filled`.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object ProgressBarOptions {
   

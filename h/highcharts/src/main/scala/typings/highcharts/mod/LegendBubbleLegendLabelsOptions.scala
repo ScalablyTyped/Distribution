@@ -2,36 +2,34 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendBubbleLegendLabelsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps) The alignment of the labels compared to
     * the bubble legend. Can be one of `left`, `center` or `right`.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to allow data labels to
     * overlap.
     */
-  var allowOverlap: js.UndefOr[Boolean] = js.native
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An additional class name to apply to
     * the bubble legend label graphical elements. This option does not replace
     * default class names of the graphical element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A format string for the bubble legend
     * labels. Available variables are the same as for `formatter`.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Available `this` properties are:
@@ -42,24 +40,24 @@ trait LegendBubbleLegendLabelsOptions extends StObject {
     *
     * - `this.center`: The center y position of the range.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[BubbleLegendFormatterContextObject]] = js.native
+  var formatter: js.UndefOr[FormatterCallbackFunction[BubbleLegendFormatterContextObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) CSS styles for the labels.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The x position offset of the label
     * relative to the connector.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The y position offset of the label
     * relative to the connector.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object LegendBubbleLegendLabelsOptions {
   

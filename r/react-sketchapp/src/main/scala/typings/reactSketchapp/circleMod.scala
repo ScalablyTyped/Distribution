@@ -5,7 +5,6 @@ import typings.reactSketchapp.propsMod.NumberProp
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod {
@@ -17,14 +16,15 @@ object circleMod {
   
   type Circle = Component[CircleProps, js.Object, js.Any]
   
-  @js.native
-  trait CircleProps extends PathProps {
+  trait CircleProps
+    extends StObject
+       with PathProps {
     
-    var cx: NumberProp = js.native
+    var cx: NumberProp
     
-    var cy: NumberProp = js.native
+    var cy: NumberProp
     
-    var r: NumberProp = js.native
+    var r: NumberProp
   }
   object CircleProps {
     

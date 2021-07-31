@@ -53,7 +53,6 @@ import typings.activexAdodb.anon.PError
 import typings.activexAdodb.anon.PRecordset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -184,5 +183,5 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   
   @JSName("set")
-  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[_], newValue: js.Any): Unit = js.native
+  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[js.Any], newValue: js.Any): Unit = js.native
 }

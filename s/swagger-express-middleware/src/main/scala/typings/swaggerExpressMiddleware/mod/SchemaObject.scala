@@ -3,23 +3,22 @@ package typings.swaggerExpressMiddleware.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaObject
-  extends IJsonSchema
+  extends StObject
+     with IJsonSchema
      with /* index */ StringDictionary[js.Any] {
   
-  var discriminator: js.UndefOr[String] = js.native
+  var discriminator: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.native
+  var example: js.UndefOr[js.Any] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var xml: js.UndefOr[XMLObject] = js.native
+  var xml: js.UndefOr[XMLObject] = js.undefined
 }
 object SchemaObject {
   

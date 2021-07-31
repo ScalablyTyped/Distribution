@@ -2,21 +2,19 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BShowIndicator extends StObject {
   
   /**
     * Whether to show the indicator of the device.
     */
-  var bShowIndicator: js.UndefOr[Boolean] = js.native
+  var bShowIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to show the UI of the device.
     */
-  var bShowUI: js.UndefOr[Boolean] = js.native
+  var bShowUI: js.UndefOr[Boolean] = js.undefined
 }
 object BShowIndicator {
   

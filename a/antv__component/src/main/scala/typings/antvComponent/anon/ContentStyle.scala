@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentStyle extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var style: FontSize = js.native
+  var style: FontSize
 }
 object ContentStyle {
   

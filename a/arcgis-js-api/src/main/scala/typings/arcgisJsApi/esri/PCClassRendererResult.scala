@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PCClassRendererResult extends Object {
+trait PCClassRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The renderer object configured to represent the class codes in the point cloud.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#PCClassRendererResult)
     */
-  var renderer: PointCloudUniqueValueRenderer = js.native
+  var renderer: PointCloudUniqueValueRenderer
 }
 object PCClassRendererResult {
   

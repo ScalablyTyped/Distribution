@@ -7,7 +7,6 @@ import typings.reactSketchapp.reactSketchappStrings.objectBoundingBox
 import typings.reactSketchapp.reactSketchappStrings.userSpaceOnUse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radialGradientMod {
@@ -19,28 +18,27 @@ object radialGradientMod {
   
   type RadialGradient = Component[RadialGradientProps, js.Object, js.Any]
   
-  @js.native
   trait RadialGradientProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var cx: NumberProp = js.native
+    var cx: NumberProp
     
-    var cy: NumberProp = js.native
+    var cy: NumberProp
     
-    var fx: NumberProp = js.native
+    var fx: NumberProp
     
-    var fy: NumberProp = js.native
+    var fy: NumberProp
     
-    var gradientUnits: js.UndefOr[objectBoundingBox | userSpaceOnUse] = js.native
+    var gradientUnits: js.UndefOr[objectBoundingBox | userSpaceOnUse] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var r: js.UndefOr[NumberProp] = js.native
+    var r: js.UndefOr[NumberProp] = js.undefined
     
-    var rx: js.UndefOr[NumberProp] = js.native
+    var rx: js.UndefOr[NumberProp] = js.undefined
     
-    var ry: js.UndefOr[NumberProp] = js.native
+    var ry: js.UndefOr[NumberProp] = js.undefined
   }
   object RadialGradientProps {
     

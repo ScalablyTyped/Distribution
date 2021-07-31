@@ -2,17 +2,15 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TotalBytesExpectedToSend extends StObject {
   
-  var progress: Double = js.native
+  var progress: Double
   
-  var totalBytesExpectedToSend: Double = js.native
+  var totalBytesExpectedToSend: Double
   
-  var totalBytesSent: Double = js.native
+  var totalBytesSent: Double
 }
 object TotalBytesExpectedToSend {
   

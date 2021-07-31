@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinInstruction extends StObject {
   
   /**
     * Left operand.
     */
-  var LeftOperand: LogicalTableId = js.native
+  var LeftOperand: LogicalTableId
   
   /**
     * On Clause.
     */
-  var OnClause: typings.awsSdk.quicksightMod.OnClause = js.native
+  var OnClause: typings.awsSdk.quicksightMod.OnClause
   
   /**
     * Right operand.
     */
-  var RightOperand: LogicalTableId = js.native
+  var RightOperand: LogicalTableId
   
   /**
     * Type.
     */
-  var Type: JoinType = js.native
+  var Type: JoinType
 }
 object JoinInstruction {
   

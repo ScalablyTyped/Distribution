@@ -11,7 +11,6 @@ import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.viewViewMod.ViewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathUtilsMod {
@@ -22,23 +21,24 @@ object pathUtilsMod {
   /* static members */
   object PathUtils {
     
+    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates ViewConfig objects and adds to nodes.
       *
       * On each [[PathNode]], creates ViewConfig objects from the views: property of the node's state
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.applyViewConfigs")
-    @js.native
-    def applyViewConfigs($view: ViewService, path: js.Array[PathNode], states: js.Array[StateObject]): Unit = js.native
+    @scala.inline
+    def applyViewConfigs($view: ViewService, path: js.Array[PathNode], states: js.Array[StateObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyViewConfigs")($view.asInstanceOf[js.Any], path.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.buildPath")
-    @js.native
-    def buildPath(targetState: TargetState): js.Array[PathNode] = js.native
+    @scala.inline
+    def buildPath(targetState: TargetState): js.Array[PathNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(targetState.asInstanceOf[js.Any]).asInstanceOf[js.Array[PathNode]]
     
     /** Given a fromPath: PathNode[] and a TargetState, builds a toPath: PathNode[] */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.buildToPath")
-    @js.native
-    def buildToPath(fromPath: js.Array[PathNode], targetState: TargetState): js.Array[PathNode] = js.native
+    @scala.inline
+    def buildToPath(fromPath: js.Array[PathNode], targetState: TargetState): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToPath")(fromPath.asInstanceOf[js.Any], targetState.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
     
     /**
       * Returns true if two paths are identical.
@@ -48,12 +48,10 @@ object pathUtilsMod {
       * @param paramsFn a function which returns the parameters to consider when comparing
       * @returns true if the the states and parameter values for both paths are identical
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.equals")
-    @js.native
-    def equals(pathA: js.Array[PathNode], pathB: js.Array[PathNode]): Boolean = js.native
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.equals")
-    @js.native
-    def equals(pathA: js.Array[PathNode], pathB: js.Array[PathNode], paramsFn: GetParamsFn): Boolean = js.native
+    @scala.inline
+    def equals(pathA: js.Array[PathNode], pathB: js.Array[PathNode]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def equals(pathA: js.Array[PathNode], pathB: js.Array[PathNode], paramsFn: GetParamsFn): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any], paramsFn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Given a fromPath and a toPath, returns a new to path which inherits parameters from the fromPath
@@ -66,17 +64,14 @@ object pathUtilsMod {
       * caller, for instance, $state.transitionTo(..., toParams).  If a key was found in toParams,
       * it is not inherited from the fromPath.
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.inheritParams")
-    @js.native
-    def inheritParams(fromPath: js.Array[PathNode], toPath: js.Array[PathNode]): js.Array[PathNode] = js.native
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.inheritParams")
-    @js.native
-    def inheritParams(fromPath: js.Array[PathNode], toPath: js.Array[PathNode], toKeys: js.Array[String]): js.Array[PathNode] = js.native
+    @scala.inline
+    def inheritParams(fromPath: js.Array[PathNode], toPath: js.Array[PathNode]): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritParams")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
+    @scala.inline
+    def inheritParams(fromPath: js.Array[PathNode], toPath: js.Array[PathNode], toKeys: js.Array[String]): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritParams")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any], toKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
     
     /** Given a PathNode[], create an TargetState */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.makeTargetState")
-    @js.native
-    def makeTargetState(registry: StateRegistry, path: js.Array[PathNode]): TargetState = js.native
+    @scala.inline
+    def makeTargetState(registry: StateRegistry, path: js.Array[PathNode]): TargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTargetState")(registry.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[TargetState]
     
     /**
       * Returns a new path which is: the subpath of the first path which matches the second path.
@@ -93,21 +88,17 @@ object pathUtilsMod {
       *
       * @returns an array of PathNodes from the first path which match the nodes in the second path
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.matching")
-    @js.native
-    def matching(pathA: js.Array[PathNode], pathB: js.Array[PathNode]): js.Array[PathNode] = js.native
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.matching")
-    @js.native
-    def matching(pathA: js.Array[PathNode], pathB: js.Array[PathNode], paramsFn: GetParamsFn): js.Array[PathNode] = js.native
+    @scala.inline
+    def matching(pathA: js.Array[PathNode], pathB: js.Array[PathNode]): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("matching")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
+    @scala.inline
+    def matching(pathA: js.Array[PathNode], pathB: js.Array[PathNode], paramsFn: GetParamsFn): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("matching")(pathA.asInstanceOf[js.Any], pathB.asInstanceOf[js.Any], paramsFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
     
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.nonDynamicParams")
-    @js.native
-    def nonDynamicParams(node: PathNode): js.Array[Param] = js.native
+    @scala.inline
+    def nonDynamicParams(node: PathNode): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
     
     /** Gets the raw parameter values from a path */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.paramValues")
-    @js.native
-    def paramValues(path: js.Array[PathNode]): js.Any = js.native
+    @scala.inline
+    def paramValues(path: js.Array[PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Return a subpath of a path, which stops at the first matching node
@@ -119,15 +110,13 @@ object pathUtilsMod {
       * @param predicate a [[Predicate]] fn that matches [[PathNode]]s
       * @returns a subpath up to the matching node, or undefined if no match is found
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.subPath")
-    @js.native
-    def subPath(path: js.Array[PathNode], predicate: Predicate[PathNode]): js.Array[PathNode] = js.native
+    @scala.inline
+    def subPath(path: js.Array[PathNode], predicate: Predicate[PathNode]): js.Array[PathNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("subPath")(path.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[PathNode]]
     
     /**
       * Computes the tree changes (entering, exiting) between a fromPath and toPath.
       */
-    @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils.treeChanges")
-    @js.native
-    def treeChanges(fromPath: js.Array[PathNode], toPath: js.Array[PathNode], reloadState: StateObject): TreeChanges = js.native
+    @scala.inline
+    def treeChanges(fromPath: js.Array[PathNode], toPath: js.Array[PathNode], reloadState: StateObject): TreeChanges = (^.asInstanceOf[js.Dynamic].applyDynamic("treeChanges")(fromPath.asInstanceOf[js.Any], toPath.asInstanceOf[js.Any], reloadState.asInstanceOf[js.Any])).asInstanceOf[TreeChanges]
   }
 }

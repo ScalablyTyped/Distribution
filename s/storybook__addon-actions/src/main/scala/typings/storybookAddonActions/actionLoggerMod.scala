@@ -7,25 +7,26 @@ import typings.storybookAddonActions.actionDisplayMod.ActionDisplay
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionLoggerMod {
   
-  @JSImport("@storybook/addon-actions/dist/components/ActionLogger", "ActionLogger")
+  @JSImport("@storybook/addon-actions/dist/components/ActionLogger", JSImport.Namespace)
   @js.native
-  def ActionLogger(hasActionsOnClear: ActionLoggerProps): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ActionLogger(hasActionsOnClear: ActionLoggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionLogger")(hasActionsOnClear.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/addon-actions/dist/components/ActionLogger", "Wrapper")
   @js.native
   val Wrapper: StyledComponent[js.Any, Pick[js.Any, String | Double | js.Symbol], Theme] = js.native
   
-  @js.native
   trait ActionLoggerProps extends StObject {
     
-    var actions: js.Array[ActionDisplay] = js.native
+    var actions: js.Array[ActionDisplay]
     
-    def onClear(): Unit = js.native
+    def onClear(): Unit
   }
   object ActionLoggerProps {
     

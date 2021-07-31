@@ -11,151 +11,147 @@ import typings.node.streamMod.Readable
 import typings.nodelibFsScandir.typesMod.Dirent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
   object array {
     
-    @JSImport("fast-glob/out/utils", "array.flatten")
+    @JSImport("fast-glob/out/utils", "array")
     @js.native
-    def flatten[T](items: js.Array[js.Array[T]]): js.Array[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("fast-glob/out/utils", "array.splitWhen")
-    @js.native
-    def splitWhen[T](items: js.Array[T], predicate: js.Function1[/* item */ T, Boolean]): js.Array[js.Array[T]] = js.native
+    @scala.inline
+    def flatten[T](items: js.Array[js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def splitWhen[T](items: js.Array[T], predicate: js.Function1[/* item */ T, Boolean]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitWhen")(items.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
   }
   
   object errno {
     
-    @JSImport("fast-glob/out/utils", "errno.isEnoentCodeError")
+    @JSImport("fast-glob/out/utils", "errno")
     @js.native
-    def isEnoentCodeError(error: ErrnoException): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isEnoentCodeError(error: ErrnoException): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnoentCodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object fs {
     
-    @JSImport("fast-glob/out/utils", "fs.createDirentFromStats")
+    @JSImport("fast-glob/out/utils", "fs")
     @js.native
-    def createDirentFromStats(name: String, stats: Stats): Dirent = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createDirentFromStats(name: String, stats: Stats): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("createDirentFromStats")(name.asInstanceOf[js.Any], stats.asInstanceOf[js.Any])).asInstanceOf[Dirent]
   }
   
   object path {
     
-    @JSImport("fast-glob/out/utils", "path.escape")
+    @JSImport("fast-glob/out/utils", "path")
     @js.native
-    def escape(pattern: Pattern): Pattern = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("fast-glob/out/utils", "path.makeAbsolute")
-    @js.native
-    def makeAbsolute(cwd: String, filepath: String): String = js.native
+    @scala.inline
+    def escape(pattern: Pattern): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(pattern.asInstanceOf[js.Any]).asInstanceOf[Pattern]
     
-    @JSImport("fast-glob/out/utils", "path.removeLeadingDotSegment")
-    @js.native
-    def removeLeadingDotSegment(entry: String): String = js.native
+    @scala.inline
+    def makeAbsolute(cwd: String, filepath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAbsolute")(cwd.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("fast-glob/out/utils", "path.unixify")
-    @js.native
-    def unixify(filepath: String): String = js.native
+    @scala.inline
+    def removeLeadingDotSegment(entry: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLeadingDotSegment")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def unixify(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unixify")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object pattern {
     
-    @JSImport("fast-glob/out/utils", "pattern.convertPatternsToRe")
+    @JSImport("fast-glob/out/utils", "pattern")
     @js.native
-    def convertPatternsToRe(patterns: js.Array[Pattern], options: MicromatchOptions): js.Array[PatternRe] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("fast-glob/out/utils", "pattern.convertToNegativePattern")
-    @js.native
-    def convertToNegativePattern(pattern: Pattern): Pattern = js.native
+    @scala.inline
+    def convertPatternsToRe(patterns: js.Array[Pattern], options: MicromatchOptions): js.Array[PatternRe] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPatternsToRe")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[PatternRe]]
     
-    @JSImport("fast-glob/out/utils", "pattern.convertToPositivePattern")
-    @js.native
-    def convertToPositivePattern(pattern: Pattern): Pattern = js.native
+    @scala.inline
+    def convertToNegativePattern(pattern: Pattern): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToNegativePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Pattern]
     
-    @JSImport("fast-glob/out/utils", "pattern.endsWithSlashGlobStar")
-    @js.native
-    def endsWithSlashGlobStar(pattern: Pattern): Boolean = js.native
+    @scala.inline
+    def convertToPositivePattern(pattern: Pattern): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPositivePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Pattern]
     
-    @JSImport("fast-glob/out/utils", "pattern.expandBraceExpansion")
-    @js.native
-    def expandBraceExpansion(pattern: Pattern): js.Array[Pattern] = js.native
+    @scala.inline
+    def endsWithSlashGlobStar(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsWithSlashGlobStar")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.expandPatternsWithBraceExpansion")
-    @js.native
-    def expandPatternsWithBraceExpansion(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+    @scala.inline
+    def expandBraceExpansion(pattern: Pattern): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandBraceExpansion")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
     
-    @JSImport("fast-glob/out/utils", "pattern.getBaseDirectory")
-    @js.native
-    def getBaseDirectory(pattern: Pattern): String = js.native
+    @scala.inline
+    def expandPatternsWithBraceExpansion(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandPatternsWithBraceExpansion")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
     
-    @JSImport("fast-glob/out/utils", "pattern.getNegativePatterns")
-    @js.native
-    def getNegativePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+    @scala.inline
+    def getBaseDirectory(pattern: Pattern): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseDirectory")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("fast-glob/out/utils", "pattern.getPatternParts")
-    @js.native
-    def getPatternParts(pattern: Pattern, options: MicromatchOptions): js.Array[Pattern] = js.native
+    @scala.inline
+    def getNegativePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNegativePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
     
-    @JSImport("fast-glob/out/utils", "pattern.getPositivePatterns")
-    @js.native
-    def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+    @scala.inline
+    def getPatternParts(pattern: Pattern, options: MicromatchOptions): js.Array[Pattern] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPatternParts")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Pattern]]
     
-    @JSImport("fast-glob/out/utils", "pattern.hasGlobStar")
-    @js.native
-    def hasGlobStar(pattern: Pattern): Boolean = js.native
+    @scala.inline
+    def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositivePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
     
-    @JSImport("fast-glob/out/utils", "pattern.isAffectDepthOfReadingPattern")
-    @js.native
-    def isAffectDepthOfReadingPattern(pattern: Pattern): Boolean = js.native
+    @scala.inline
+    def hasGlobStar(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGlobStar")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.isDynamicPattern")
-    @js.native
-    def isDynamicPattern(pattern: Pattern): Boolean = js.native
-    @JSImport("fast-glob/out/utils", "pattern.isDynamicPattern")
-    @js.native
-    def isDynamicPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = js.native
+    @scala.inline
+    def isAffectDepthOfReadingPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAffectDepthOfReadingPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.isNegativePattern")
-    @js.native
-    def isNegativePattern(pattern: Pattern): Boolean = js.native
+    @scala.inline
+    def isDynamicPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isDynamicPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.isPositivePattern")
-    @js.native
-    def isPositivePattern(pattern: Pattern): Boolean = js.native
+    @scala.inline
+    def isNegativePattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegativePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.isStaticPattern")
-    @js.native
-    def isStaticPattern(pattern: Pattern): Boolean = js.native
-    @JSImport("fast-glob/out/utils", "pattern.isStaticPattern")
-    @js.native
-    def isStaticPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = js.native
+    @scala.inline
+    def isPositivePattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositivePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.makeRe")
-    @js.native
-    def makeRe(pattern: Pattern, options: MicromatchOptions): PatternRe = js.native
+    @scala.inline
+    def isStaticPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isStaticPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPattern")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("fast-glob/out/utils", "pattern.matchAny")
-    @js.native
-    def matchAny(entry: String, patternsRe: js.Array[PatternRe]): Boolean = js.native
+    @scala.inline
+    def makeRe(pattern: Pattern, options: MicromatchOptions): PatternRe = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PatternRe]
+    
+    @scala.inline
+    def matchAny(entry: String, patternsRe: js.Array[PatternRe]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchAny")(entry.asInstanceOf[js.Any], patternsRe.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object stream {
     
-    @JSImport("fast-glob/out/utils", "stream.merge")
+    @JSImport("fast-glob/out/utils", "stream")
     @js.native
-    def merge(streams: js.Array[Readable]): ReadableStream = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def merge(streams: js.Array[Readable]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   }
   
   object string {
     
-    @JSImport("fast-glob/out/utils", "string.isEmpty")
+    @JSImport("fast-glob/out/utils", "string")
     @js.native
-    def isEmpty(input: String): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("fast-glob/out/utils", "string.isString")
-    @js.native
-    def isString(input: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isEmpty(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isString(input: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(input.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
 }

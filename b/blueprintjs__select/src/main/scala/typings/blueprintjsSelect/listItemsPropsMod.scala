@@ -18,32 +18,39 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemsPropsMod {
   
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
+  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", JSImport.Namespace)
   @js.native
-  def executeItemsEqual[T](): Boolean = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
-  @js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T): Boolean = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
-  @js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T, itemB: T): Boolean = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
-  @js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: js.UndefOr[scala.Nothing], itemB: T): Boolean = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
-  @js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
-  @JSImport("@blueprintjs/select/lib/esm/common/listItemsProps", "executeItemsEqual")
-  @js.native
-  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def executeItemsEqual[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")().asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: Unit, itemA: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: Unit, itemA: T, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: Unit, itemA: Null, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: Unit, itemA: Unit, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Null, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Unit, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
-  trait IListItemsProps[T] extends IProps {
+  trait IListItemsProps[T]
+    extends StObject
+       with IProps {
     
     /**
       * The currently focused item for keyboard interactions, or `null` to

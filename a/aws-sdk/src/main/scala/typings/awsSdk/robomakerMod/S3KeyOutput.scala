@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3KeyOutput extends StObject {
   
   /**
     * The etag for the object.
     */
-  var etag: js.UndefOr[S3Etag] = js.native
+  var etag: js.UndefOr[S3Etag] = js.undefined
   
   /**
     * The S3 key.
     */
-  var s3Key: js.UndefOr[S3Key] = js.native
+  var s3Key: js.UndefOr[S3Key] = js.undefined
 }
 object S3KeyOutput {
   

@@ -3,36 +3,35 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSMethodSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSMethodSignature_
-  extends TSTypeElement
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSMethodSignature_
+  extends StObject
+     with BaseNode
+     with TSTypeElement {
   
-  var computed: Boolean | Null = js.native
+  var computed: Boolean | Null
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var parameters: js.Array[Identifier_ | RestElement_] = js.native
+  var parameters: js.Array[Identifier_ | RestElement_]
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
-  var typeParameters: TSTypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSMethodSignature_ : TSMethodSignature = js.native
+  var type_TSMethodSignature_ : TSMethodSignature
 }
 object TSMethodSignature_ {
   
   @scala.inline
-  def apply(key: Expression, parameters: js.Array[Identifier_ | RestElement_], `type`: TSMethodSignature): TSMethodSignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(key: Expression, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], computed = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSMethodSignature")
     __obj.asInstanceOf[TSMethodSignature_]
   }
   

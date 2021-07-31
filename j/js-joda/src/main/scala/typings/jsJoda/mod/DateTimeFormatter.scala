@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "DateTimeFormatter")
@@ -80,17 +79,14 @@ object DateTimeFormatter {
   def ISO_ZONED_DATE_TIME_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_ZONED_DATE_TIME")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "DateTimeFormatter.ofPattern")
-  @js.native
-  def ofPattern(pattern: String): DateTimeFormatter = js.native
+  @scala.inline
+  def ofPattern(pattern: String): DateTimeFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("ofPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[DateTimeFormatter]
   
   /* static member */
-  @JSImport("js-joda", "DateTimeFormatter.parsedExcessDays")
-  @js.native
-  def parsedExcessDays(): TemporalQuery = js.native
+  @scala.inline
+  def parsedExcessDays(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("parsedExcessDays")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "DateTimeFormatter.parsedLeapSecond")
-  @js.native
-  def parsedLeapSecond(): Boolean = js.native
+  @scala.inline
+  def parsedLeapSecond(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parsedLeapSecond")().asInstanceOf[Boolean]
 }

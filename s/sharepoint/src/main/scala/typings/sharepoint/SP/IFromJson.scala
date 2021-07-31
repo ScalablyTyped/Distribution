@@ -2,15 +2,13 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFromJson extends StObject {
   
-  def customFromJson(initValue: js.Any): Boolean = js.native
+  def customFromJson(initValue: js.Any): Boolean
   
-  def fromJson(initValue: js.Any): Unit = js.native
+  def fromJson(initValue: js.Any): Unit
 }
 object IFromJson {
   

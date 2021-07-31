@@ -4,29 +4,28 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.ordinal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdinalScale
-  extends BaseScale
+  extends StObject
+     with BaseScale
      with Scale {
   
-  var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.native
+  var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   
-  var range: js.UndefOr[RangeScheme | ScaleData] = js.native
+  var range: js.UndefOr[RangeScheme | ScaleData] = js.undefined
   
   @JSName("type")
-  var type_OrdinalScale: ordinal = js.native
+  var type_OrdinalScale: ordinal
 }
 object OrdinalScale {
   
   @scala.inline
-  def apply(name: String, `type`: ordinal): OrdinalScale = {
+  def apply(name: String): OrdinalScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ordinal")
     __obj.asInstanceOf[OrdinalScale]
   }
   

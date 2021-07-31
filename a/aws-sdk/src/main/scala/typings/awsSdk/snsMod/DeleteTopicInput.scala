@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTopicInput extends StObject {
   
   /**
     * The ARN of the topic you want to delete.
     */
-  var TopicArn: topicARN = js.native
+  var TopicArn: topicARN
 }
 object DeleteTopicInput {
   

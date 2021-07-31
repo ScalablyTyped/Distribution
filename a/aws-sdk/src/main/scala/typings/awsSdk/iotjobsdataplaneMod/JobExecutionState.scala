@@ -2,26 +2,24 @@ package typings.awsSdk.iotjobsdataplaneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecutionState extends StObject {
   
   /**
     * The status of the job execution. Can be one of: "QUEUED", "IN_PROGRESS", "FAILED", "SUCCESS", "CANCELED", "REJECTED", or "REMOVED".
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.native
+  var status: js.UndefOr[JobExecutionStatus] = js.undefined
   
   /**
     * A collection of name/value pairs that describe the status of the job execution.
     */
-  var statusDetails: js.UndefOr[DetailsMap] = js.native
+  var statusDetails: js.UndefOr[DetailsMap] = js.undefined
   
   /**
     * The version of the job execution. Job execution versions are incremented each time they are updated by a device.
     */
-  var versionNumber: js.UndefOr[VersionNumber] = js.native
+  var versionNumber: js.UndefOr[VersionNumber] = js.undefined
 }
 object JobExecutionState {
   

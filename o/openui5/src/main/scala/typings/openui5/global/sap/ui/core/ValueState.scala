@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ValueState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.ValueState with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.ValueState & Double] = js.native
   
-  /* 0 */ val Error: typings.openui5.sap.ui.core.ValueState.Error with Double = js.native
+  /* 0 */ val Error: typings.openui5.sap.ui.core.ValueState.Error & Double = js.native
   
-  /* 1 */ val None: typings.openui5.sap.ui.core.ValueState.None with Double = js.native
+  /* 1 */ val None: typings.openui5.sap.ui.core.ValueState.None & Double = js.native
   
-  /* 2 */ val Success: typings.openui5.sap.ui.core.ValueState.Success with Double = js.native
+  /* 2 */ val Success: typings.openui5.sap.ui.core.ValueState.Success & Double = js.native
   
-  /* 3 */ val Warning: typings.openui5.sap.ui.core.ValueState.Warning with Double = js.native
+  /* 3 */ val Warning: typings.openui5.sap.ui.core.ValueState.Warning & Double = js.native
 }

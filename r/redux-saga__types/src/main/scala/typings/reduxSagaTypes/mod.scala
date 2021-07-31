@@ -9,46 +9,44 @@ import typings.std.IterableIterator
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  type ActionMatchingPattern[P /* <: ActionPattern[Action[_]] */] = ActionMatchingSubPattern[
+  type ActionMatchingPattern[P /* <: ActionPattern[Action[js.Any]] */] = ActionMatchingSubPattern[
     (/* import warning: importer.ImportType#apply Failed type conversion: P[number] */ js.Any) | P
   ]
   
-  type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[_]] */] = Action[js.Any]
+  type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[js.Any]] */] = Action[js.Any]
   
-  type ActionPattern[Guard /* <: Action[_] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
+  type ActionPattern[Guard /* <: Action[js.Any] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
   
-  type ActionSubPattern[Guard /* <: Action[_] */] = (GuardPredicate[Guard, Action[js.Any]]) | StringableActionCreator[Guard] | Predicate[Action[js.Any]] | ActionType
+  type ActionSubPattern[Guard /* <: Action[js.Any] */] = (GuardPredicate[Guard, Action[js.Any]]) | StringableActionCreator[Guard] | Predicate[Action[js.Any]] | ActionType
   
   type ActionType = String | Double | js.Symbol
   
-  @js.native
   trait Buffer[T] extends StObject {
     
-    def flush(): js.Array[T] = js.native
+    def flush(): js.Array[T]
     
     /**
       * Returns true if there are no messages on the buffer. A channel calls this
       * method whenever a new taker is registered
       */
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
     /**
       * Used to put new message in the buffer. Note the Buffer can choose to not
       * store the message (e.g. a dropping buffer can drop any new message
       * exceeding a given limit)
       */
-    def put(message: T): Unit = js.native
+    def put(message: T): Unit
     
     /**
       * used to retrieve any buffered message. Note the behavior of this method has
       * to be consistent with `isEmpty`
       */
-    def take(): js.UndefOr[T] = js.native
+    def take(): js.UndefOr[T]
   }
   object Buffer {
     
@@ -59,7 +57,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer[_], T] (val x: Self with Buffer[T]) extends AnyVal {
+    implicit class BufferMutableBuilder[Self <: Buffer[?], T] (val x: Self & Buffer[T]) extends AnyVal {
       
       @scala.inline
       def setFlush(value: () => js.Array[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
@@ -119,35 +117,29 @@ object mod {
     def take(cb: js.Function1[/* message */ T | END, Unit]): Unit = js.native
   }
   
-  @js.native
   trait CombinatorEffect[T, E] extends StObject {
     
     @JSName("@@redux-saga/IO")
-    var `@@redux-sagaSlashIO`: `true` = js.native
+    var `@@redux-sagaSlashIO`: `true`
     
-    var combinator: `true` = js.native
+    var combinator: `true`
     
-    var payload: CombinatorEffectDescriptor[E] = js.native
+    var payload: CombinatorEffectDescriptor[E]
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object CombinatorEffect {
     
     @scala.inline
-    def apply[T, E](
-      `@@redux-sagaSlashIO`: `true`,
-      combinator: `true`,
-      payload: CombinatorEffectDescriptor[E],
-      `type`: T
-    ): CombinatorEffect[T, E] = {
-      val __obj = js.Dynamic.literal(combinator = combinator.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("@@redux-saga/IO")(`@@redux-sagaSlashIO`.asInstanceOf[js.Any])
+    def apply[T, E](payload: CombinatorEffectDescriptor[E], `type`: T): CombinatorEffect[T, E] = {
+      val __obj = js.Dynamic.literal(combinator = true, payload = payload.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CombinatorEffect[T, E]]
     }
     
     @scala.inline
-    implicit class CombinatorEffectMutableBuilder[Self <: CombinatorEffect[_, _], T, E] (val x: Self with (CombinatorEffect[T, E])) extends AnyVal {
+    implicit class CombinatorEffectMutableBuilder[Self <: CombinatorEffect[?, ?], T, E] (val x: Self & (CombinatorEffect[T, E])) extends AnyVal {
       
       @scala.inline
       def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
@@ -168,17 +160,16 @@ object mod {
   
   type CombinatorEffectDescriptor[E] = StringDictionary[E] | js.Array[E]
   
-  @js.native
   trait END extends StObject {
     
-    var `type`: `@@redux-sagaSlashCHANNEL_END` = js.native
+    var `type`: `@@redux-sagaSlashCHANNEL_END`
   }
   object END {
     
     @scala.inline
-    def apply(`type`: `@@redux-sagaSlashCHANNEL_END`): END = {
+    def apply(): END = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("@@redux-saga/CHANNEL_END")
       __obj.asInstanceOf[END]
     }
     
@@ -198,34 +189,33 @@ object mod {
   
   type Predicate[T] = js.Function1[/* arg */ T, Boolean]
   
-  type Saga[Args /* <: js.Array[_] */] = js.Function1[/* args */ Args, IterableIterator[js.Any]]
+  type Saga[Args /* <: js.Array[js.Any] */] = js.Function1[/* args */ Args, IterableIterator[js.Any]]
   
   type SagaIterator = IterableIterator[StrictEffect[js.Any]]
   
-  @js.native
   trait SimpleEffect[T, P] extends StObject {
     
     @JSName("@@redux-saga/IO")
-    var `@@redux-sagaSlashIO`: `true` = js.native
+    var `@@redux-sagaSlashIO`: `true`
     
-    var combinator: `false` = js.native
+    var combinator: `false`
     
-    var payload: P = js.native
+    var payload: P
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object SimpleEffect {
     
     @scala.inline
-    def apply[T, P](`@@redux-sagaSlashIO`: `true`, combinator: `false`, payload: P, `type`: T): SimpleEffect[T, P] = {
-      val __obj = js.Dynamic.literal(combinator = combinator.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("@@redux-saga/IO")(`@@redux-sagaSlashIO`.asInstanceOf[js.Any])
+    def apply[T, P](payload: P, `type`: T): SimpleEffect[T, P] = {
+      val __obj = js.Dynamic.literal(combinator = false, payload = payload.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleEffect[T, P]]
     }
     
     @scala.inline
-    implicit class SimpleEffectMutableBuilder[Self <: SimpleEffect[_, _], T, P] (val x: Self with (SimpleEffect[T, P])) extends AnyVal {
+    implicit class SimpleEffectMutableBuilder[Self <: SimpleEffect[?, ?], T, P] (val x: Self & (SimpleEffect[T, P])) extends AnyVal {
       
       @scala.inline
       def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
@@ -241,19 +231,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrictCombinatorEffect[T] extends CombinatorEffect[T, StrictEffect[T]]
+  trait StrictCombinatorEffect[T]
+    extends StObject
+       with CombinatorEffect[T, StrictEffect[T]]
   object StrictCombinatorEffect {
     
     @scala.inline
-    def apply[T](
-      `@@redux-sagaSlashIO`: `true`,
-      combinator: `true`,
-      payload: CombinatorEffectDescriptor[StrictEffect[T]],
-      `type`: T
-    ): StrictCombinatorEffect[T] = {
-      val __obj = js.Dynamic.literal(combinator = combinator.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("@@redux-saga/IO")(`@@redux-sagaSlashIO`.asInstanceOf[js.Any])
+    def apply[T](payload: CombinatorEffectDescriptor[StrictEffect[T]], `type`: T): StrictCombinatorEffect[T] = {
+      val __obj = js.Dynamic.literal(combinator = true, payload = payload.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@redux-saga/IO")(true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictCombinatorEffect[T]]
     }
@@ -262,49 +248,48 @@ object mod {
   type StrictEffect[T] = (SimpleEffect[T, js.Any]) | StrictCombinatorEffect[T]
   
   @js.native
-  trait StringableActionCreator[A /* <: Action[_] */] extends StObject {
+  trait StringableActionCreator[A /* <: Action[js.Any] */] extends StObject {
     
     def apply(args: js.Any*): A = js.native
   }
   
   type SubPattern[T] = Predicate[T] | StringableActionCreator[Action[js.Any]] | ActionType
   
-  @js.native
   trait Task extends StObject {
     
     /**
       * Cancels the task (If it is still running)
       */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     /**
       * Returns task thrown error. `undefined` if task is still running
       */
-    def error(): js.UndefOr[js.Any] = js.native
+    def error(): js.UndefOr[js.Any]
     
     /**
       * Returns true if the task has been cancelled
       */
-    def isCancelled(): Boolean = js.native
+    def isCancelled(): Boolean
     
     /**
       * Returns true if the task hasn't yet returned or thrown an error
       */
-    def isRunning(): Boolean = js.native
+    def isRunning(): Boolean
     
     /**
       * Returns task return value. `undefined` if task is still running
       */
-    def result[T](): js.UndefOr[T] = js.native
+    def result[T](): js.UndefOr[T]
     
-    def setContext[C /* <: js.Object */](props: Partial[C]): Unit = js.native
+    def setContext[C /* <: js.Object */](props: Partial[C]): Unit
     
     /**
       * Returns a Promise which is either:
       * - resolved with task's return value
       * - rejected with task's thrown error
       */
-    def toPromise[T](): js.Promise[T] = js.native
+    def toPromise[T](): js.Promise[T]
   }
   object Task {
     

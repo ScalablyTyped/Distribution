@@ -4,21 +4,19 @@ import typings.plottable.plottableStrings.horizontal
 import typings.plottable.plottableStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Horizontal extends StObject {
   
-  var horizontal: typings.plottable.plottableStrings.horizontal = js.native
+  var horizontal: typings.plottable.plottableStrings.horizontal
   
-  var vertical: typings.plottable.plottableStrings.vertical = js.native
+  var vertical: typings.plottable.plottableStrings.vertical
 }
 object Horizontal {
   
   @scala.inline
-  def apply(horizontal: horizontal, vertical: vertical): Horizontal = {
-    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+  def apply(): Horizontal = {
+    val __obj = js.Dynamic.literal(horizontal = "horizontal", vertical = "vertical")
     __obj.asInstanceOf[Horizontal]
   }
   

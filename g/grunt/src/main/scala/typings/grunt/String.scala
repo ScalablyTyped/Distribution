@@ -2,30 +2,28 @@ package typings.grunt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * {@link https://github.com/marak/colors.js/}
   */
-@js.native
 trait String extends StObject {
   
-  var blue: java.lang.String = js.native
+  var blue: java.lang.String
   
-  var cyan: java.lang.String = js.native
+  var cyan: java.lang.String
   
-  var green: java.lang.String = js.native
+  var green: java.lang.String
   
-  var grey: java.lang.String = js.native
+  var grey: java.lang.String
   
-  var magenta: java.lang.String = js.native
+  var magenta: java.lang.String
   
-  var red: java.lang.String = js.native
+  var red: java.lang.String
   
-  var white: java.lang.String = js.native
+  var white: java.lang.String
   
-  var yellow: java.lang.String = js.native
+  var yellow: java.lang.String
 }
 object String {
   

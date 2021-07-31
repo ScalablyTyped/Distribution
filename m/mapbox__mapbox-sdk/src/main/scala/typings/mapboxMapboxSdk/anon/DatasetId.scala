@@ -2,13 +2,11 @@ package typings.mapboxMapboxSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetId extends StObject {
   
-  var datasetId: String = js.native
+  var datasetId: String
 }
 object DatasetId {
   

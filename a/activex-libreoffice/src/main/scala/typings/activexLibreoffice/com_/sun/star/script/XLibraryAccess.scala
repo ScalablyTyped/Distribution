@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,46 +14,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the whole code of a module with all functions in it.
   * @deprecated Deprecated
   */
-@js.native
-trait XLibraryAccess extends XInterface {
+trait XLibraryAccess
+  extends StObject
+     with XInterface {
   
   /** Return all module names which contain code. e.g., { "UtilLibrary.ModuleDate", "UtilLibrary.Output", ... } */
-  val ModuleNames: SafeArray[String] = js.native
+  val ModuleNames: SafeArray[String]
   
   /**
     * Get the compiled code of a function.
     * @param FunctionName the full qualified name of a function. (e.g., "UtilLibrary.ModuleDate.Function.CurrentDate")
     * @returns an empty sequence, if this function is not found.
     */
-  def getFunctionCode(FunctionName: String): SafeArray[Double] = js.native
+  def getFunctionCode(FunctionName: String): SafeArray[Double]
   
   /** get the source code of a function. */
-  def getFunctionSource(aFunctionName: String): String = js.native
+  def getFunctionSource(aFunctionName: String): String
   
   /**
     * Get the hole compiled code of a module.
     * @param aModuleName the full qualified name of a module. (e.g., "UtilLibrary.ModuleDate")
     * @returns an empty sequence, if this module is not found or the code is not compiled.
     */
-  def getModuleCode(aModuleName: String): SafeArray[Double] = js.native
+  def getModuleCode(aModuleName: String): SafeArray[Double]
   
   /** Return all module names which contain code. e.g., { "UtilLibrary.ModuleDate", "UtilLibrary.Output", ... } */
-  def getModuleNames(): SafeArray[String] = js.native
+  def getModuleNames(): SafeArray[String]
   
   /** get the source code of a module. */
-  def getModuleSource(aModulName: String): String = js.native
+  def getModuleSource(aModulName: String): String
   
   /**
     * returns `TRUE` , if the function is accessible through this library; otherwise it returns `FALSE` .
     * @@param aFunctionName    the fully qualified name of a function.      (e.g., "UtilLibrary.ModuleDate.FunctionCurrentDate")
     */
-  def isFunction(aFunctionName: String): Boolean = js.native
+  def isFunction(aFunctionName: String): Boolean
   
   /**
     * returns `TRUE` if a fully qualified function name begins with this name.
     * @@param aPathName    a part of a function name (e.g., "UtilLibrary").
     */
-  def isValidPath(aPathName: String): Boolean = js.native
+  def isValidPath(aPathName: String): Boolean
 }
 object XLibraryAccess {
   

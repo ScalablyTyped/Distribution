@@ -3,26 +3,25 @@ package typings.wordpressRichText
 import typings.wordpressRichText.mod.NamedFormatConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("@wordpress/rich-text/store/selectors", "getFormatType")
+  @JSImport("@wordpress/rich-text/store/selectors", JSImport.Namespace)
   @js.native
-  def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/rich-text/store/selectors", "getFormatTypeForBareElement")
-  @js.native
+  @scala.inline
+  def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
+  
+  @scala.inline
   def getFormatTypeForBareElement(
     bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
-  ): js.UndefOr[NamedFormatConfiguration] = js.native
+  ): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatTypeForBareElement")(bareElementTagName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
-  @JSImport("@wordpress/rich-text/store/selectors", "getFormatTypeForClassName")
-  @js.native
-  def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration] = js.native
+  @scala.inline
+  def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatTypeForClassName")(elementClassName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
-  @JSImport("@wordpress/rich-text/store/selectors", "getFormatTypes")
-  @js.native
-  def getFormatTypes(): js.Array[NamedFormatConfiguration] = js.native
+  @scala.inline
+  def getFormatTypes(): js.Array[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatTypes")().asInstanceOf[js.Array[NamedFormatConfiguration]]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRepositoryEndpointRequest extends StObject {
   
   /**
     *  The name of the domain that contains the repository. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  Returns which endpoint of a repository to return. A repository has one endpoint for each package format:     npm     pypi     maven   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The name of the repository. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object GetRepositoryEndpointRequest {
   

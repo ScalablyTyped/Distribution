@@ -6,23 +6,21 @@ import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gap extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[BorderType] = js.native
+  var border: js.UndefOr[BorderType] = js.undefined
   
-  var font: js.UndefOr[SizeWeight] = js.native
+  var font: js.UndefOr[SizeWeight] = js.undefined
   
-  var gap: js.UndefOr[GapType] = js.native
+  var gap: js.UndefOr[GapType] = js.undefined
   
-  var hover: js.UndefOr[`5`] = js.native
+  var hover: js.UndefOr[`5`] = js.undefined
   
-  var pad: js.UndefOr[PadType] = js.native
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object Gap {
   

@@ -2,14 +2,12 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An `OutputDirectory` is the output in an `ActionResult` corresponding to a
   * directory&#39;s full contents rather than a single file.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2OutputDirectory extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaBuildBazelRemoteExecutionV2OutputDirectory extends StObject {
     * MUST NOT begin with a leading forward slash. The empty string value is
     * allowed, and it denotes the entire working directory.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The digest of the encoded Tree proto containing the directory&#39;s
     * contents.
     */
-  var treeDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var treeDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2OutputDirectory {
   

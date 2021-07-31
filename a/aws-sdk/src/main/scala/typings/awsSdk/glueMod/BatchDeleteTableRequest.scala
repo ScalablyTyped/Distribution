@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteTableRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database in which the tables to delete reside. For Hive compatibility, this name is entirely lowercase.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of the table to delete.
     */
-  var TablesToDelete: BatchDeleteTableNameList = js.native
+  var TablesToDelete: BatchDeleteTableNameList
 }
 object BatchDeleteTableRequest {
   

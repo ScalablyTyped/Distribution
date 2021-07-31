@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 使用方法：,```JavaScript,var crypto = require('crypto');,```
   */
 object cryptoMod {
+  
+  @JSImport("crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("crypto", "AES")
   @js.native
@@ -50,7 +53,9 @@ object cryptoMod {
   
   @JSImport("crypto", "Cipher")
   @js.native
-  class Cipher () extends ClassCipher
+  class Cipher ()
+    extends StObject
+       with ClassCipher
   
   @JSImport("crypto", "DES")
   @js.native
@@ -90,7 +95,9 @@ object cryptoMod {
   
   @JSImport("crypto", "PKey")
   @js.native
-  class PKey () extends ClassPKey
+  class PKey ()
+    extends StObject
+       with ClassPKey
   
   @JSImport("crypto", "STREAM")
   @js.native
@@ -98,15 +105,21 @@ object cryptoMod {
   
   @JSImport("crypto", "X509Cert")
   @js.native
-  class X509Cert () extends ClassX509Cert
+  class X509Cert ()
+    extends StObject
+       with ClassX509Cert
   
   @JSImport("crypto", "X509Crl")
   @js.native
-  class X509Crl () extends ClassX509Crl
+  class X509Crl ()
+    extends StObject
+       with ClassX509Crl
   
   @JSImport("crypto", "X509Req")
   @js.native
-  class X509Req () extends ClassX509Req
+  class X509Req ()
+    extends StObject
+       with ClassX509Req
   
   @JSImport("crypto", "ZEROS")
   @js.native
@@ -116,63 +129,47 @@ object cryptoMod {
   @js.native
   val ZEROS_AND_LEN: /* 2 */ Double = js.native
   
-  @JSImport("crypto", "createHash")
-  @js.native
-  def createHash(algo: String): ClassDigest = js.native
+  @scala.inline
+  def createHash(algo: String): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algo.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
   
-  @JSImport("crypto", "createHmac")
-  @js.native
-  def createHmac(algo: String, key: ClassBuffer): ClassDigest = js.native
+  @scala.inline
+  def createHmac(algo: String, key: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
   
-  @JSImport("crypto", "loadCert")
-  @js.native
-  def loadCert(filename: String): ClassX509Cert = js.native
+  @scala.inline
+  def loadCert(filename: String): ClassX509Cert = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCert")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Cert]
   
-  @JSImport("crypto", "loadCrl")
-  @js.native
-  def loadCrl(filename: String): ClassX509Crl = js.native
+  @scala.inline
+  def loadCrl(filename: String): ClassX509Crl = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCrl")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Crl]
   
-  @JSImport("crypto", "loadPKey")
-  @js.native
-  def loadPKey(filename: String): ClassPKey = js.native
-  @JSImport("crypto", "loadPKey")
-  @js.native
-  def loadPKey(filename: String, password: String): ClassPKey = js.native
+  @scala.inline
+  def loadPKey(filename: String): ClassPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassPKey]
+  @scala.inline
+  def loadPKey(filename: String, password: String): ClassPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadPKey")(filename.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ClassPKey]
   
-  @JSImport("crypto", "loadReq")
-  @js.native
-  def loadReq(filename: String): ClassX509Req = js.native
+  @scala.inline
+  def loadReq(filename: String): ClassX509Req = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReq")(filename.asInstanceOf[js.Any]).asInstanceOf[ClassX509Req]
   
-  @JSImport("crypto", "pbkdf1")
-  @js.native
-  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = js.native
-  @JSImport("crypto", "pbkdf1")
-  @js.native
-  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = js.native
+  @scala.inline
+  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  @scala.inline
+  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @JSImport("crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = js.native
-  @JSImport("crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = js.native
+  @scala.inline
+  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algoName.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
+  @scala.inline
+  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], size.asInstanceOf[js.Any], algo.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @JSImport("crypto", "pseudoRandomBytes")
-  @js.native
-  def pseudoRandomBytes(size: Double): ClassBuffer = js.native
+  @scala.inline
+  def pseudoRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
   
-  @JSImport("crypto", "randomArt")
-  @js.native
-  def randomArt(data: ClassBuffer, title: String): String = js.native
-  @JSImport("crypto", "randomArt")
-  @js.native
-  def randomArt(data: ClassBuffer, title: String, size: Double): String = js.native
+  @scala.inline
+  def randomArt(data: ClassBuffer, title: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def randomArt(data: ClassBuffer, title: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomArt")(data.asInstanceOf[js.Any], title.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double): ClassBuffer = js.native
+  @scala.inline
+  def randomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
   
-  @JSImport("crypto", "simpleRandomBytes")
-  @js.native
-  def simpleRandomBytes(size: Double): ClassBuffer = js.native
+  @scala.inline
+  def simpleRandomBytes(size: Double): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
 }

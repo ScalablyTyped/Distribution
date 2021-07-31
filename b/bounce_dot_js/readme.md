@@ -12,7 +12,7 @@ Generate beautiful CSS3 powered animations
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 22056 |
+| # downloads        | 30530 |
 | # stars            | 1 |
 
 ## Links

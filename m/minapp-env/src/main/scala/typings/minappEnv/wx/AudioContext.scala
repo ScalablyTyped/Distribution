@@ -2,33 +2,31 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioContext extends StObject {
   
   /** [AudioContext.pause()](AudioContext.pause.md)
     *
     * 暂停音频。 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** [AudioContext.play()](AudioContext.play.md)
     *
     * 播放音频。 */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /** [AudioContext.seek(number position)](AudioContext.seek.md)
     *
     * 跳转到指定位置。 */
   def seek(/** 跳转位置，单位 s */
-  position: Double): Unit = js.native
+  position: Double): Unit
   
   /** [AudioContext.setSrc(string src)](AudioContext.setSrc.md)
     *
     * 设置音频地址 */
   def setSrc(/** 音频地址 */
-  src: String): Unit = js.native
+  src: String): Unit
 }
 object AudioContext {
   

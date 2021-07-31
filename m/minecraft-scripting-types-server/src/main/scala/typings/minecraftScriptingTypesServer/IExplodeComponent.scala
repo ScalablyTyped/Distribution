@@ -3,62 +3,60 @@ package typings.minecraftScriptingTypesServer
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Controls the entity's explosion, timer until the explosion, and whether the timer is counting down or not.
   */
-@js.native
 trait IExplodeComponent extends StObject {
   
   /**
     * If true, the explosion will destroy blocks in the explosion radius
     * @default true
     */
-  var breaks_blocks: Boolean = js.native
+  var breaks_blocks: Boolean
   
   /**
     * If true, blocks in the explosion radius will be set on fire
     * @default false
     */
-  var causesFire: Boolean = js.native
+  var causesFire: Boolean
   
   /**
     * If true, whether the explosion breaks blocks is affected by the mob griefing game rule
     * @default false
     */
-  var destroyAffectedByGriefing: Boolean = js.native
+  var destroyAffectedByGriefing: Boolean
   
   /**
     * If true, whether the explosion causes fire is affected by the mob griefing game rule
     * @default false
     */
-  var fireAffectedByGriefing: Boolean = js.native
+  var fireAffectedByGriefing: Boolean
   
   /**
     * The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate
     * @default [0.0, 0.0]
     */
-  var fuseLength: Range = js.native
+  var fuseLength: Range
   
   /**
     * If true, the fuse is already lit when this component is added to the entity
     * @default false
     */
-  var fuseLit: Boolean = js.native
+  var fuseLit: Boolean
   
   /**
     * A blocks explosion resistance will be capped at this value when an explosion occurs
     * @default Infinite
     */
-  var maxResistance: Double = js.native
+  var maxResistance: Double
   
   /**
     * The radius of the explosion in blocks and the amount of damage the explosion deals
     * @default 3.0
     */
-  var power: Double = js.native
+  var power: Double
 }
 object IExplodeComponent {
   

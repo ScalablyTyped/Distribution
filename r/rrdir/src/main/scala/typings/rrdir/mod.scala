@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,90 +12,89 @@ object mod extends Shortcut {
   @js.native
   val ^ : typings.rrdir.mod.rrdir = js.native
   
-  @js.native
   trait PicomatchOptions extends StObject {
     
-    var basename: js.UndefOr[Boolean] = js.native
+    var basename: js.UndefOr[Boolean] = js.undefined
     
-    var bash: js.UndefOr[Boolean] = js.native
+    var bash: js.UndefOr[Boolean] = js.undefined
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
-    var contains: js.UndefOr[Boolean] = js.native
+    var contains: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var expandRange: js.UndefOr[js.Function2[/* a */ String, /* b */ String, String]] = js.native
+    var expandRange: js.UndefOr[js.Function2[/* a */ String, /* b */ String, String]] = js.undefined
     
-    var failglob: js.UndefOr[Boolean] = js.native
+    var failglob: js.UndefOr[Boolean] = js.undefined
     
-    var fastpaths: js.UndefOr[Boolean] = js.native
+    var fastpaths: js.UndefOr[Boolean] = js.undefined
     
-    var flags: js.UndefOr[Boolean] = js.native
+    var flags: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[js.Function1[/* str */ String, String]] = js.native
+    var format: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keepQuotes: js.UndefOr[Boolean] = js.native
+    var keepQuotes: js.UndefOr[Boolean] = js.undefined
     
-    var literalBrackets: js.UndefOr[Boolean] = js.native
+    var literalBrackets: js.UndefOr[Boolean] = js.undefined
     
-    var lookbehinds: js.UndefOr[Boolean] = js.native
+    var lookbehinds: js.UndefOr[Boolean] = js.undefined
     
-    var matchBase: js.UndefOr[Boolean] = js.native
+    var matchBase: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Boolean] = js.native
+    var maxLength: js.UndefOr[Boolean] = js.undefined
     
-    var nobrace: js.UndefOr[Boolean] = js.native
+    var nobrace: js.UndefOr[Boolean] = js.undefined
     
-    var nobracket: js.UndefOr[Boolean] = js.native
+    var nobracket: js.UndefOr[Boolean] = js.undefined
     
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
     
-    var nodupes: js.UndefOr[Boolean] = js.native
+    var nodupes: js.UndefOr[Boolean] = js.undefined
     
-    var noext: js.UndefOr[Boolean] = js.native
+    var noext: js.UndefOr[Boolean] = js.undefined
     
-    var noextglob: js.UndefOr[Boolean] = js.native
+    var noextglob: js.UndefOr[Boolean] = js.undefined
     
-    var noglobstar: js.UndefOr[Boolean] = js.native
+    var noglobstar: js.UndefOr[Boolean] = js.undefined
     
-    var nonegate: js.UndefOr[Boolean] = js.native
+    var nonegate: js.UndefOr[Boolean] = js.undefined
     
-    var noquantifiers: js.UndefOr[Boolean] = js.native
+    var noquantifiers: js.UndefOr[Boolean] = js.undefined
     
     var onIgnore: js.UndefOr[
         js.Function4[/* glob */ js.Any, /* regex */ js.Any, /* input */ js.Any, /* output */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onMatch: js.UndefOr[
         js.Function4[/* glob */ js.Any, /* regex */ js.Any, /* input */ js.Any, /* output */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onResult: js.UndefOr[
         js.Function4[/* glob */ js.Any, /* regex */ js.Any, /* input */ js.Any, /* output */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var posix: js.UndefOr[Boolean] = js.native
+    var posix: js.UndefOr[Boolean] = js.undefined
     
-    var posixSlashes: js.UndefOr[Boolean] = js.native
+    var posixSlashes: js.UndefOr[Boolean] = js.undefined
     
-    var prepend: js.UndefOr[Boolean] = js.native
+    var prepend: js.UndefOr[Boolean] = js.undefined
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
     
-    var strictBrackets: js.UndefOr[Boolean] = js.native
+    var strictBrackets: js.UndefOr[Boolean] = js.undefined
     
-    var strictSlashes: js.UndefOr[Boolean] = js.native
+    var strictSlashes: js.UndefOr[Boolean] = js.undefined
     
-    var unescape: js.UndefOr[Boolean] = js.native
+    var unescape: js.UndefOr[Boolean] = js.undefined
     
-    var unixify: js.UndefOr[Boolean] = js.native
+    var unixify: js.UndefOr[Boolean] = js.undefined
   }
   object PicomatchOptions {
     
@@ -347,18 +345,17 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: typings.rrdir.mod.rrdir = ^
   
-  @js.native
   trait entry extends StObject {
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var err: js.UndefOr[Error] = js.native
+    var err: js.UndefOr[Error] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var stats: js.UndefOr[js.Object] = js.native
+    var stats: js.UndefOr[js.Object] = js.undefined
     
-    var symlink: js.UndefOr[Boolean] = js.native
+    var symlink: js.UndefOr[Boolean] = js.undefined
   }
   object entry {
     
@@ -400,20 +397,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait options extends StObject {
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var followSymlinks: js.UndefOr[Boolean] = js.native
+    var followSymlinks: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `match`: js.UndefOr[PicomatchOptions] = js.native
+    var `match`: js.UndefOr[PicomatchOptions] = js.undefined
     
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object options {
     

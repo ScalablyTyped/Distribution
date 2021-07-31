@@ -2,37 +2,37 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomTableLayout extends _TableLayout {
+trait CustomTableLayout
+  extends StObject
+     with _TableLayout {
   
-  var defaultBorder: js.UndefOr[Boolean] = js.native
+  var defaultBorder: js.UndefOr[Boolean] = js.undefined
   
-  var fillColor: js.UndefOr[String | DynamicLayout[String]] = js.native
+  var fillColor: js.UndefOr[String | DynamicLayout[String]] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double | DynamicLayout[Double]] = js.native
+  var fillOpacity: js.UndefOr[Double | DynamicLayout[Double]] = js.undefined
   
-  var hLineColor: js.UndefOr[String | DynamicLayout[String]] = js.native
+  var hLineColor: js.UndefOr[String | DynamicLayout[String]] = js.undefined
   
-  var hLineStyle: js.UndefOr[DynamicLayout[LineStyle]] = js.native
+  var hLineStyle: js.UndefOr[DynamicLayout[LineStyle]] = js.undefined
   
-  var hLineWidth: js.UndefOr[DynamicLayout[Double]] = js.native
+  var hLineWidth: js.UndefOr[DynamicLayout[Double]] = js.undefined
   
-  var paddingBottom: js.UndefOr[DynamicLayout[Double]] = js.native
+  var paddingBottom: js.UndefOr[DynamicLayout[Double]] = js.undefined
   
-  var paddingLeft: js.UndefOr[DynamicLayout[Double]] = js.native
+  var paddingLeft: js.UndefOr[DynamicLayout[Double]] = js.undefined
   
-  var paddingRight: js.UndefOr[DynamicLayout[Double]] = js.native
+  var paddingRight: js.UndefOr[DynamicLayout[Double]] = js.undefined
   
-  var paddingTop: js.UndefOr[DynamicLayout[Double]] = js.native
+  var paddingTop: js.UndefOr[DynamicLayout[Double]] = js.undefined
   
-  var vLineColor: js.UndefOr[String | DynamicLayout[String]] = js.native
+  var vLineColor: js.UndefOr[String | DynamicLayout[String]] = js.undefined
   
-  var vLineStyle: js.UndefOr[DynamicLayout[LineStyle]] = js.native
+  var vLineStyle: js.UndefOr[DynamicLayout[LineStyle]] = js.undefined
   
-  var vLineWidth: js.UndefOr[DynamicLayout[Double]] = js.native
+  var vLineWidth: js.UndefOr[DynamicLayout[Double]] = js.undefined
 }
 object CustomTableLayout {
   

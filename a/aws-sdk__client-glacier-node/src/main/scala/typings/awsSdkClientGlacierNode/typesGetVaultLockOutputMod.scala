@@ -4,39 +4,39 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetVaultLockOutputMod {
   
-  @js.native
-  trait GetVaultLockOutput extends _OutputTypesUnion {
+  trait GetVaultLockOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The UTC date and time at which the vault lock was put into the <code>InProgress</code> state.</p>
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The UTC date and time at which the lock ID expires. This value can be <code>null</code> if the vault lock is in a <code>Locked</code> state.</p>
       */
-    var ExpirationDate: js.UndefOr[String] = js.native
+    var ExpirationDate: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The vault lock policy as a JSON string, which uses "\" as an escape character.</p>
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The state of the vault lock. <code>InProgress</code> or <code>Locked</code>.</p>
       */
-    var State: js.UndefOr[String] = js.native
+    var State: js.UndefOr[String] = js.undefined
   }
   object GetVaultLockOutput {
     

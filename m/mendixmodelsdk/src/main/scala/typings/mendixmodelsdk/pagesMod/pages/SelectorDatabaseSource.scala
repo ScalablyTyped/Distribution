@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object SelectorDatabaseSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource.create")
-  @js.native
-  def create(model: IModel): SelectorDatabaseSource = js.native
+  @scala.inline
+  def create(model: IModel): SelectorDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SelectorDatabaseSource]
   
   /**
     * Creates and returns a new SelectorDatabaseSource instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object SelectorDatabaseSource {
     *  6.1.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource.createIn")
-  @js.native
-  def createIn(container: AssociationWidget): SelectorDatabaseSource = js.native
+  @scala.inline
+  def createIn(container: AssociationWidget): SelectorDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SelectorDatabaseSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource.structureTypeName")

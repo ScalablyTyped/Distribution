@@ -2,42 +2,40 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for GroupsService.ListGroups.
   */
-@js.native
 trait SchemaListGroupsResponse extends StObject {
   
   /**
     * Apiary error details
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * A list of groups that match the API request parameters. Each item in the
     * list represents a `group` resource.
     */
-  var items: js.UndefOr[js.Array[SchemaGroup]] = js.native
+  var items: js.UndefOr[js.Array[SchemaGroup]] = js.undefined
   
   /**
     * Identifies the API resource&#39;s type. The value will be
     * `youtube#groupListResponse`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The token that can be used as the value of the `pageToken` parameter to
     * retrieve the next page in the result set.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListGroupsResponse {
   

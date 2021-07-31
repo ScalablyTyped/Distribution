@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EducationRoot extends Entity {
+trait EducationRoot
+  extends StObject
+     with Entity {
   
   // Read-only. Nullable.
-  var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.native
+  var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.undefined
   
   // Read-only. Nullable.
-  var me: js.UndefOr[NullableOption[EducationUser]] = js.native
+  var me: js.UndefOr[NullableOption[EducationUser]] = js.undefined
   
   // Read-only. Nullable.
-  var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.native
+  var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.undefined
   
   // Read-only. Nullable.
-  var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.native
+  var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
 }
 object EducationRoot {
   

@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortAZMod extends Shortcut {
@@ -15,10 +14,11 @@ object sortAZMod extends Shortcut {
   @js.native
   val default: SFC[SortAZProps] = js.native
   
-  @js.native
-  trait SortAZProps extends SVGAttributes[SVGElement] {
+  trait SortAZProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SortAZProps {
     

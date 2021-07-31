@@ -2,17 +2,17 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMapPanOptions extends IMapPositionOptions {
+trait IMapPanOptions
+  extends StObject
+     with IMapPositionOptions {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var flying: js.UndefOr[Boolean] = js.native
+  var flying: js.UndefOr[Boolean] = js.undefined
   
-  var safe: js.UndefOr[Boolean] = js.native
+  var safe: js.UndefOr[Boolean] = js.undefined
 }
 object IMapPanOptions {
   

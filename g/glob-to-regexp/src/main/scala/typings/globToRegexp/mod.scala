@@ -3,26 +3,26 @@ package typings.globToRegexp
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glob-to-regexp", JSImport.Namespace)
-  @js.native
-  def apply(glob: String): RegExp = js.native
-  @JSImport("glob-to-regexp", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: Options): RegExp = js.native
+  @scala.inline
+  def apply(glob: String): RegExp = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  @scala.inline
+  def apply(glob: String, options: Options): RegExp = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
+  @JSImport("glob-to-regexp", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var extended: js.UndefOr[Boolean] = js.native
+    var extended: js.UndefOr[Boolean] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var globstar: js.UndefOr[Boolean] = js.native
+    var globstar: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

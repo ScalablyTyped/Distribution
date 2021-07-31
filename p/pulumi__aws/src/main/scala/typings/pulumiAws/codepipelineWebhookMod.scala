@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepipelineWebhookMod {
@@ -71,6 +70,10 @@ object codepipelineWebhookMod {
   /* static members */
   object Webhook {
     
+    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Webhook resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -80,67 +83,61 @@ object codepipelineWebhookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Webhook = js.native
-    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Webhook = js.native
-    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState): Webhook = js.native
-    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
     
     /**
       * Returns true if the given object is an instance of Webhook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean]
   }
   
-  @js.native
   trait WebhookArgs extends StObject {
     
     /**
       * The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
       */
-    val authentication: Input[String] = js.native
+    val authentication: Input[String]
     
     /**
       * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
       */
     val authenticationConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more `filter` blocks. Filter blocks are documented below.
       */
-    val filters: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]] = js.native
+    val filters: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]
     
     /**
       * The name of the webhook.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
       */
-    val targetAction: Input[String] = js.native
+    val targetAction: Input[String]
     
     /**
       * The name of the pipeline.
       */
-    val targetPipeline: Input[String] = js.native
+    val targetPipeline: Input[String]
   }
   object WebhookArgs {
     
@@ -193,50 +190,49 @@ object codepipelineWebhookMod {
     }
   }
   
-  @js.native
   trait WebhookState extends StObject {
     
     /**
       * The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
       */
-    val authentication: js.UndefOr[Input[String]] = js.native
+    val authentication: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
       */
     val authenticationConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more `filter` blocks. Filter blocks are documented below.
       */
-    val filters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]] = js.native
+    val filters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]] = js.undefined
     
     /**
       * The name of the webhook.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
       */
-    val targetAction: js.UndefOr[Input[String]] = js.native
+    val targetAction: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the pipeline.
       */
-    val targetPipeline: js.UndefOr[Input[String]] = js.native
+    val targetPipeline: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CodePipeline webhook's URL. POST events to this endpoint to trigger the target.
       */
-    val url: js.UndefOr[Input[String]] = js.native
+    val url: js.UndefOr[Input[String]] = js.undefined
   }
   object WebhookState {
     

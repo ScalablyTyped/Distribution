@@ -3,10 +3,8 @@ package typings.vscode.anon
 import typings.vscode.mod.CodeActionKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait Command extends StObject {
     *
     * The title of this documentation code action is taken from [`Command.title`](#Command.title)
     */
-  val command: typings.vscode.mod.Command = js.native
+  val command: typings.vscode.mod.Command
   
   /**
     * The kind of the code action being documented.
@@ -25,7 +23,7 @@ trait Command extends StObject {
     * refactorings are returned. If the kind if more specific, such as `CodeActionKind.RefactorExtract`, the
     * documentation will only be shown when extract refactoring code actions are returned.
     */
-  val kind: CodeActionKind = js.native
+  val kind: CodeActionKind
 }
 object Command {
   

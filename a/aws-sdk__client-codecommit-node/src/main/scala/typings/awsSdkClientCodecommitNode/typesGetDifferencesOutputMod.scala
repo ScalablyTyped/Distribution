@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesDifferenceMod.UnmarshalledDiffere
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetDifferencesOutputMod {
   
-  @js.native
-  trait GetDifferencesOutput extends OutputTypesUnion {
+  trait GetDifferencesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An enumeration token that can be used in a request to return the next batch of the results.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A differences data type object that contains information about the differences, including whether the difference is added, modified, or deleted (A, D, M).</p>
       */
-    var differences: js.UndefOr[js.Array[UnmarshalledDifference]] = js.native
+    var differences: js.UndefOr[js.Array[UnmarshalledDifference]] = js.undefined
   }
   object GetDifferencesOutput {
     

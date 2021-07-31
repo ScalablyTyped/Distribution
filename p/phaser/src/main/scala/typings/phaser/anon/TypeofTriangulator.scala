@@ -2,20 +2,18 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTriangulator extends StObject {
   
   /* static member */
-  var isConcave: js.Any = js.native
+  var isConcave: js.Any
   
   /* static member */
-  var positiveArea: js.Any = js.native
+  var positiveArea: js.Any
   
   /* static member */
-  var winding: js.Any = js.native
+  var winding: js.Any
 }
 object TypeofTriangulator {
   

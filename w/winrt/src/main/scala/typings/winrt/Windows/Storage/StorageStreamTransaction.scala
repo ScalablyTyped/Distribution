@@ -4,13 +4,13 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StorageStreamTransaction extends IStorageStreamTransaction {
+trait StorageStreamTransaction
+  extends StObject
+     with IStorageStreamTransaction {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object StorageStreamTransaction {
   

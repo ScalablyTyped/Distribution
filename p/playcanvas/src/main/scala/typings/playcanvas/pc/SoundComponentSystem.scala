@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param manager - The sound manager.
   */
 @js.native
-trait SoundComponentSystem extends EventHandler {
+trait SoundComponentSystem
+  extends StObject
+     with EventHandler {
   
   /**
     * Gets the AudioContext currently used by the sound manager. Requires Web Audio API support.

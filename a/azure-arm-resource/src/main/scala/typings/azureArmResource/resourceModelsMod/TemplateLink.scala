@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateLink extends StObject {
   
   /**
     * If included, must match the ContentVersion in the template.
     */
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the template to deploy.
     */
-  var uri: String = js.native
+  var uri: String
 }
 object TemplateLink {
   

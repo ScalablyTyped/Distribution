@@ -2,13 +2,11 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Earcon configuration, specifying an Earcon and when to play it.
   */
-@js.native
 trait EarconConfiguration extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait EarconConfiguration extends StObject {
     * not to play the earcon, or a new Earcon instance - in which case the
     * new Earcon will be played.
     */
-  var condition: js.UndefOr[js.Function] = js.native
+  var condition: js.UndefOr[js.Function] = js.undefined
   
   /**
     * An Earcon instance.
     */
-  var earcon: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon = js.native
+  var earcon: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon
   
   /**
     * The ID of the point to play the Earcon on.
     */
-  var onPoint: js.UndefOr[String] = js.native
+  var onPoint: js.UndefOr[String] = js.undefined
 }
 object EarconConfiguration {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingMaintenanceAction extends StObject {
   
   /**
     * The type of pending maintenance action that is available for the resource.
     */
-  var Action: js.UndefOr[String] = js.native
+  var Action: js.UndefOr[String] = js.undefined
   
   /**
     * The date of the maintenance window when the action is applied. The maintenance action is applied to the resource during its first maintenance window after this date. If this date is specified, any next-maintenance opt-in requests are ignored.
     */
-  var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.native
+  var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The effective date when the pending maintenance action is applied to the resource.
     */
-  var CurrentApplyDate: js.UndefOr[TStamp] = js.native
+  var CurrentApplyDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A description providing more detail about the maintenance action.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the maintenance action is automatically applied. The maintenance action is applied to the resource on this date regardless of the maintenance window for the resource. If this date is specified, any immediate opt-in requests are ignored.
     */
-  var ForcedApplyDate: js.UndefOr[TStamp] = js.native
+  var ForcedApplyDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Indicates the type of opt-in request that has been received for the resource.
     */
-  var OptInStatus: js.UndefOr[String] = js.native
+  var OptInStatus: js.UndefOr[String] = js.undefined
 }
 object PendingMaintenanceAction {
   

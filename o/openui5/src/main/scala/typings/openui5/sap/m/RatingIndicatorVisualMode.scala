@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait RatingIndicatorVisualMode extends StObject
 object RatingIndicatorVisualMode extends StObject {
   
   @js.native
-  sealed trait Full extends RatingIndicatorVisualMode
+  sealed trait Full
+    extends StObject
+       with RatingIndicatorVisualMode
   
   @js.native
-  sealed trait Half extends RatingIndicatorVisualMode
+  sealed trait Half
+    extends StObject
+       with RatingIndicatorVisualMode
 }

@@ -6,45 +6,38 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.internal
 import typings.solidityParserAntlr.solidityParserAntlrStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableDeclaration
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var expression: js.UndefOr[Expression] = js.native
+  var expression: js.UndefOr[Expression] = js.undefined
   
-  var isDeclaredConst: js.UndefOr[Boolean] = js.native
+  var isDeclaredConst: js.UndefOr[Boolean] = js.undefined
   
-  var isIndexed: Boolean = js.native
+  var isIndexed: Boolean
   
-  var isStateVar: Boolean = js.native
+  var isStateVar: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var storageLocation: js.UndefOr[String] = js.native
+  var storageLocation: js.UndefOr[String] = js.undefined
   
-  var typeName: TypeName = js.native
+  var typeName: TypeName
   
   @JSName("type")
-  var type_VariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration = js.native
+  var type_VariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration
   
-  var visibility: js.UndefOr[public | `private` | internal | default] = js.native
+  var visibility: js.UndefOr[public | `private` | internal | default] = js.undefined
 }
 object VariableDeclaration {
   
   @scala.inline
-  def apply(
-    isIndexed: Boolean,
-    isStateVar: Boolean,
-    name: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration,
-    typeName: TypeName
-  ): VariableDeclaration = {
+  def apply(isIndexed: Boolean, isStateVar: Boolean, name: String, typeName: TypeName): VariableDeclaration = {
     val __obj = js.Dynamic.literal(isIndexed = isIndexed.asInstanceOf[js.Any], isStateVar = isStateVar.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration]
   }
   

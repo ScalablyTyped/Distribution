@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AliasPathType extends StObject {
   
   /**
     * The API versions.
     */
-  var apiVersions: js.UndefOr[js.Array[String]] = js.native
+  var apiVersions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The path of an alias.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object AliasPathType {
   

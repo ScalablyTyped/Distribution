@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -72,7 +71,6 @@ object Net {
     * Manages the flow of the Web requests issued by the Sys.Net.WebRequest object to the associated executor object.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397435(v=vs.100).aspx}
     */
-  @js.native
   trait IWebRequestManager extends StObject {
     
     //#endregion
@@ -82,7 +80,7 @@ object Net {
       * @param handler
       *      The function registered to handle the completed request event.
       */
-    def add_completedRequest(handler: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit]): Unit = js.native
+    def add_completedRequest(handler: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit]): Unit
     
     /**
       * Registers a handler for processing the invoking request event of the WebRequestManager.
@@ -95,7 +93,7 @@ object Net {
           /* networkRequestEventArgs */ NetworkRequestEventArgs, 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Sends Web requests to the default network executor.
@@ -103,7 +101,7 @@ object Net {
       * @param WebRequest
       *      An instance of the Sys.Net.WebRequest class.
       */
-    def executeRequest(WebRequest: WebRequest): Unit = js.native
+    def executeRequest(WebRequest: WebRequest): Unit
     
     //#endregion
     //#region Properties
@@ -112,14 +110,14 @@ object Net {
       * @return
       *      The object that represents the default Web request executor.
       */
-    def get_defaultExecutorType(): WebRequestExecutor = js.native
+    def get_defaultExecutorType(): WebRequestExecutor
     
     /**
       * Gets or sets the time-out for the default network executor.
       * @return
       *      An integer value that indicates the current time-out for the default executor.
       */
-    def get_defaultTimeout(): Double = js.native
+    def get_defaultTimeout(): Double
     
     /**
       * Removes the event handler set by the add_completedRequest method.
@@ -127,7 +125,7 @@ object Net {
       * @param handler
       *      The function that handles the completed request event.
       */
-    def remove_completedRequest(handler: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit]): Unit = js.native
+    def remove_completedRequest(handler: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit]): Unit
     
     /**
       * Removes the event handler set by the add_invokingRequest method.
@@ -141,14 +139,14 @@ object Net {
           /* networkRequestEventArgs */ NetworkRequestEventArgs, 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Gets or sets the default network executor type that is used to make network requests.
       * @param value
       *          A reference to an implementation of the WebRequestExecutor class.
       */
-    def set_defaultExecutorType(value: WebRequestExecutor): Unit = js.native
+    def set_defaultExecutorType(value: WebRequestExecutor): Unit
     
     /**
       * Gets or sets the time-out for the default network executor.
@@ -157,7 +155,7 @@ object Net {
       * @param value
       *          The time in milliseconds that the default executor should wait before timing out a Web request. This value must be 0 or a positive integer.
       */
-    def set_defaultTimeout(value: Double): Unit = js.native
+    def set_defaultTimeout(value: Double): Unit
   }
   object IWebRequestManager {
     
@@ -236,7 +234,6 @@ object Net {
     *
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397488(v=vs.100).aspx}
     */
-  @js.native
   trait NetworkRequestEventArgs extends StObject {
     
     //#endregion
@@ -251,7 +248,7 @@ object Net {
       * @return
       *      The WebRequest.
       */
-    def get_webRequest(): WebRequest = js.native
+    def get_webRequest(): WebRequest
   }
   object NetworkRequestEventArgs {
     
@@ -273,66 +270,65 @@ object Net {
     * Provides the script API to make a Web request.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310979(v=vs.100).aspx}
     */
-  @js.native
   trait WebRequest extends StObject {
     
     /**
       * Registers a handler for the completed request event of the Web request.
       * @see {@link http://msdn.microsoft.com/en-us/library/bb310841(v=vs.100).aspx}
       */
-    def add_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit = js.native
+    def add_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit
     
     /**
       * Raises the completed event for the associated Sys.Net.WebRequest instance.
       * @param eventArgs
       *           The value to pass to the Web request completed event handler.
       */
-    def completed(eventArgs: EventArgs): Unit = js.native
+    def completed(eventArgs: EventArgs): Unit
     
     /**
       * Gets the resolved URL of the Sys.Net.WebRequest instance.
       * @returns The resolved URL that the Web request is directed to.
       */
-    def getResolvedUrl(): String = js.native
+    def getResolvedUrl(): String
     
-    def get_body(): String = js.native
+    def get_body(): String
     
-    def get_executor(): WebRequestExecutor = js.native
+    def get_executor(): WebRequestExecutor
     
-    def get_headers(): StringDictionary[String] = js.native
+    def get_headers(): StringDictionary[String]
     
-    def get_httpVerb(): String = js.native
+    def get_httpVerb(): String
     
-    def get_timeout(): Double = js.native
+    def get_timeout(): Double
     
     //#endregion
     //#region Members
-    def get_url(): String = js.native
+    def get_url(): String
     
-    def get_userContext(): js.Any = js.native
+    def get_userContext(): js.Any
     
     /**
       * Executes a Web request.
       */
-    def invoke(): Unit = js.native
+    def invoke(): Unit
     
     /**
       * Removes the event handler added by the add_completed method.
       * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
       */
-    def remove_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit = js.native
+    def remove_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit
     
-    def set_body(value: String): Unit = js.native
+    def set_body(value: String): Unit
     
-    def set_executor(value: WebRequestExecutor): Unit = js.native
+    def set_executor(value: WebRequestExecutor): Unit
     
-    def set_httpVerb(value: String): Unit = js.native
+    def set_httpVerb(value: String): Unit
     
-    def set_timeout(value: Double): Unit = js.native
+    def set_timeout(value: Double): Unit
     
-    def set_url(value: String): Unit = js.native
+    def set_url(value: String): Unit
     
-    def set_userContext(value: js.Any): Unit = js.native
+    def set_userContext(value: js.Any): Unit
   }
   object WebRequest {
     
@@ -424,7 +420,6 @@ object Net {
     * Provides the abstract base class from which network executors derive.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397434(v=vs.100).aspx}
     */
-  @js.native
   trait WebRequestExecutor extends StObject {
     
     //#endregion
@@ -435,7 +430,7 @@ object Net {
       * However, all executors that derive from WebRequestExecutor must set their state to aborted and must raise the completed event of the associated Sys.Net.WebRequest object.
       * The executor properties do not contain consistent data after abort has been called.
       */
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     /**
       * Instructs the executor to execute a Web request.
@@ -443,7 +438,7 @@ object Net {
       * This method is intended to be used by a custom executor. If you are implementing a custom executor, you instantiate the executor, assign it to the Web request instance, and then invoke the method on the executor instance.
       * @see {@link http://msdn.microsoft.com/en-us/library/bb383834(v=vs.100).aspx}
       */
-    def executeRequest(): Unit = js.native
+    def executeRequest(): Unit
     
     /**
       * Gets all the response headers for the current request.
@@ -451,20 +446,20 @@ object Net {
       * @return All the response headers
       * @see {@link http://msdn.microsoft.com/en-us/library/bb310805(v=vs.100).aspx}
       */
-    def getAllResponseHeaders(): String = js.native
+    def getAllResponseHeaders(): String
     
     /**
       * Gets the value of the specified response header.
       * @return The specified response header.
       */
-    def getResponseHeader(key: String): String = js.native
+    def getResponseHeader(key: String): String
     
     /**
       * Gets a value indicating whether the request associated with the executor was aborted.
       * When the current instance of the Sys.Net.WebRequestExecutor class is aborted, it must set its state to aborted and it must raise the completed event of the associated request object.
       * @return true if the request associated with the executor was aborted; otherwise, false.
       */
-    def get_aborted(): Boolean = js.native
+    def get_aborted(): Boolean
     
     /**
       * Gets a value indicating whether the request completed successfully.
@@ -473,53 +468,53 @@ object Net {
       * It must also raise the completed event of the associated request object.
       * @return true if the request completed successfully; otherwise, false.
       */
-    def get_responseAvailable(): Boolean = js.native
+    def get_responseAvailable(): Boolean
     
     /**
       * Gets the text representation of the response body. When a request has completed successfully with valid response data, this property returns the text that is contained in the response body.
       * @return The text representation of the response body.
       */
-    def get_responseData(): String = js.native
+    def get_responseData(): String
     
     /**
       * Returns a value indicating whether the executor has started processing the request.
       * The executor returns true if substantial processing of the request has started. For executors that make network calls, substantial processing means that a network call has been started.
       * @return true if the executor has started processing the request; otherwise, false.
       */
-    def get_started(): Boolean = js.native
+    def get_started(): Boolean
     
     /**
       * Gets a success status code.
       * The statusCode property returns an integer that specifies that a request completed successfully and with valid response data.
       * @return An integer that represents a status code.
       */
-    def get_statusCode(): Double = js.native
+    def get_statusCode(): Double
     
     /**
       * Gets status information about a request that completed successfully.
       * The statusText property returns status information if a request completed successfully and with valid response data.
       * @return the status text
       */
-    def get_statusText(): String = js.native
+    def get_statusText(): String
     
     /**
       * Gets a value indicating whether the request timed out.
       * Executors use the time-out information associated with the request to raise the completed event on the associated WebRequest object.
       * @return true if the request timed out; otherwise, false.
       */
-    def get_timedOut(): Boolean = js.native
+    def get_timedOut(): Boolean
     
     /**
       * Gets the WebRequest object associated with the executor.
       * @return The WebRequest object associated with the current executor instance.
       */
-    def get_webRequest(): WebRequest = js.native
+    def get_webRequest(): WebRequest
     
     /**
       * Attempts to get the response to the current request as an XMLDOM object.
       * If a request finished successfully with valid response data, this method tries to get the response as an XMLDOM object.
       */
-    def get_xml(): XMLDocument = js.native
+    def get_xml(): XMLDocument
     
     //#endregion
     //#region Properties
@@ -527,7 +522,7 @@ object Net {
       * Gets the JSON-evaluated object from the response.
       * @return The JSON-evaluated response object.
       */
-    def `object`(): js.Any = js.native
+    def `object`(): js.Any
   }
   object WebRequestExecutor {
     
@@ -600,20 +595,19 @@ object Net {
     }
   }
   
-  @js.native
   trait WebServiceError extends StObject {
     
-    def get_errorObject(): js.Any = js.native
+    def get_errorObject(): js.Any
     
-    def get_exceptionType(): js.Any = js.native
+    def get_exceptionType(): js.Any
     
-    def get_message(): String = js.native
+    def get_message(): String
     
-    def get_stackTrace(): String = js.native
+    def get_stackTrace(): String
     
-    def get_statusCode(): Double = js.native
+    def get_statusCode(): Double
     
-    def get_timedOut(): Boolean = js.native
+    def get_timedOut(): Boolean
   }
   object WebServiceError {
     
@@ -658,6 +652,5 @@ object Net {
     * Enables your application to call Web services asynchronously by using ECMAScript (JavaScript).
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310823(v=vs.100).aspx}
     */
-  @js.native
   trait WebServiceProxy extends StObject
 }

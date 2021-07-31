@@ -2,25 +2,23 @@ package typings.winrtUwp.Windows.UI.Input.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialInteractionSourceState extends StObject {
   
-  var isPressed: js.Any = js.native
+  var isPressed: js.Any
   
   /* unmapped type */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /* unmapped type */
-  var source: js.Any = js.native
+  var source: js.Any
   
   /* unmapped type */
-  var timestamp: js.Any = js.native
+  var timestamp: js.Any
   
   /* unmapped type */
-  var tryGetPointerPose: js.Any = js.native
+  var tryGetPointerPose: js.Any
 }
 object SpatialInteractionSourceState {
   

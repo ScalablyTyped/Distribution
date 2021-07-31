@@ -2,26 +2,26 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorProperties extends ComponentProperties {
+trait EditorProperties
+  extends StObject
+     with ComponentProperties {
   
   /**
     * The content inside the text editor
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The languge mode for this text editor. The language mode is SQL by default.
     */
-  var languageMode: js.UndefOr[String] = js.native
+  var languageMode: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum height for editor component
     */
-  var minimumHeight: js.UndefOr[Double] = js.native
+  var minimumHeight: js.UndefOr[Double] = js.undefined
 }
 object EditorProperties {
   

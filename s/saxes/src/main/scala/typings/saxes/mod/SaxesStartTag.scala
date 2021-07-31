@@ -3,19 +3,18 @@ package typings.saxes.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<saxes.saxes.SaxesTag, 'name' | 'attributes' | 'ns'> */
-@js.native
 trait SaxesStartTag
-  extends StartTagForOptions[js.Any] {
+  extends StObject
+     with StartTagForOptions[js.Any] {
   
-  var attributes: Record[String, SaxesAttributeNS | String] = js.native
+  var attributes: Record[String, SaxesAttributeNS | String]
   
-  var name: String = js.native
+  var name: String
   
-  var ns: js.UndefOr[Record[String, String]] = js.native
+  var ns: js.UndefOr[Record[String, String]] = js.undefined
 }
 object SaxesStartTag {
   

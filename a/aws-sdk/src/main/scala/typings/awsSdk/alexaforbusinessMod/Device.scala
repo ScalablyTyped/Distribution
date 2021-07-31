@@ -2,61 +2,59 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * The ARN of a device.
     */
-  var DeviceArn: js.UndefOr[Arn] = js.native
+  var DeviceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of a device.
     */
-  var DeviceName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceName] = js.native
+  var DeviceName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceName] = js.undefined
   
   /**
     * The serial number of a device.
     */
-  var DeviceSerialNumber: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceSerialNumber] = js.native
+  var DeviceSerialNumber: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceSerialNumber] = js.undefined
   
   /**
     * The status of a device. If the status is not READY, check the DeviceStatusInfo value for details.
     */
-  var DeviceStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatus] = js.native
+  var DeviceStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatus] = js.undefined
   
   /**
     * Detailed information about a device's status.
     */
-  var DeviceStatusInfo: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatusInfo] = js.native
+  var DeviceStatusInfo: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatusInfo] = js.undefined
   
   /**
     * The type of a device.
     */
-  var DeviceType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceType] = js.native
+  var DeviceType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceType] = js.undefined
   
   /**
     * The MAC address of a device.
     */
-  var MacAddress: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MacAddress] = js.native
+  var MacAddress: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MacAddress] = js.undefined
   
   /**
     * Detailed information about a device's network profile.
     */
-  var NetworkProfileInfo: js.UndefOr[DeviceNetworkProfileInfo] = js.native
+  var NetworkProfileInfo: js.UndefOr[DeviceNetworkProfileInfo] = js.undefined
   
   /**
     * The room ARN of a device.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The software version of a device.
     */
-  var SoftwareVersion: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SoftwareVersion] = js.native
+  var SoftwareVersion: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SoftwareVersion] = js.undefined
 }
 object Device {
   

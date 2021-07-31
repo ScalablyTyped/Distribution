@@ -29,65 +29,63 @@ import typings.googleAppsScript.GoogleAppsScript.Mirror.Schema.UserAction
 import typings.googleAppsScript.GoogleAppsScript.Mirror.Schema.UserData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mirror extends StObject {
   
-  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
   
-  var Contacts: js.UndefOr[ContactsCollection] = js.native
+  var Contacts: js.UndefOr[ContactsCollection] = js.undefined
   
-  var Locations: js.UndefOr[LocationsCollection] = js.native
+  var Locations: js.UndefOr[LocationsCollection] = js.undefined
   
-  var Settings: js.UndefOr[SettingsCollection] = js.native
+  var Settings: js.UndefOr[SettingsCollection] = js.undefined
   
-  var Subscriptions: js.UndefOr[SubscriptionsCollection] = js.native
+  var Subscriptions: js.UndefOr[SubscriptionsCollection] = js.undefined
   
-  var Timeline: js.UndefOr[TimelineCollection] = js.native
+  var Timeline: js.UndefOr[TimelineCollection] = js.undefined
   
   // Create a new instance of Account
-  def newAccount(): Account = js.native
+  def newAccount(): Account
   
   // Create a new instance of Attachment
-  def newAttachment(): Attachment = js.native
+  def newAttachment(): Attachment
   
   // Create a new instance of AuthToken
-  def newAuthToken(): AuthToken = js.native
+  def newAuthToken(): AuthToken
   
   // Create a new instance of Command
-  def newCommand(): Command = js.native
+  def newCommand(): Command
   
   // Create a new instance of Contact
-  def newContact(): Contact = js.native
+  def newContact(): Contact
   
   // Create a new instance of Location
-  def newLocation(): Location = js.native
+  def newLocation(): Location
   
   // Create a new instance of MenuItem
-  def newMenuItem(): MenuItem = js.native
+  def newMenuItem(): MenuItem
   
   // Create a new instance of MenuValue
-  def newMenuValue(): MenuValue = js.native
+  def newMenuValue(): MenuValue
   
   // Create a new instance of Notification
-  def newNotification(): Notification = js.native
+  def newNotification(): Notification
   
   // Create a new instance of NotificationConfig
-  def newNotificationConfig(): NotificationConfig = js.native
+  def newNotificationConfig(): NotificationConfig
   
   // Create a new instance of Subscription
-  def newSubscription(): Subscription = js.native
+  def newSubscription(): Subscription
   
   // Create a new instance of TimelineItem
-  def newTimelineItem(): TimelineItem = js.native
+  def newTimelineItem(): TimelineItem
   
   // Create a new instance of UserAction
-  def newUserAction(): UserAction = js.native
+  def newUserAction(): UserAction
   
   // Create a new instance of UserData
-  def newUserData(): UserData = js.native
+  def newUserData(): UserData
 }
 object Mirror {
   
@@ -114,11 +112,10 @@ object Mirror {
   
   object Collection {
     
-    @js.native
     trait AccountsCollection extends StObject {
       
       // Inserts a new account for a user
-      def insert(resource: Account, userToken: String, accountType: String, accountName: String): Account = js.native
+      def insert(resource: Account, userToken: String, accountType: String, accountName: String): Account
     }
     object AccountsCollection {
       
@@ -136,26 +133,25 @@ object Mirror {
       }
     }
     
-    @js.native
     trait ContactsCollection extends StObject {
       
       // Gets a single contact by ID.
-      def get(id: String): Contact = js.native
+      def get(id: String): Contact
       
       // Inserts a new contact.
-      def insert(resource: Contact): Contact = js.native
+      def insert(resource: Contact): Contact
       
       // Retrieves a list of contacts for the authenticated user.
-      def list(): ContactsListResponse = js.native
+      def list(): ContactsListResponse
       
       // Updates a contact in place. This method supports patch semantics.
-      def patch(resource: Contact, id: String): Contact = js.native
+      def patch(resource: Contact, id: String): Contact
       
       // Deletes a contact.
-      def remove(id: String): Unit = js.native
+      def remove(id: String): Unit
       
       // Updates a contact in place.
-      def update(resource: Contact, id: String): Contact = js.native
+      def update(resource: Contact, id: String): Contact
     }
     object ContactsCollection {
       
@@ -195,14 +191,13 @@ object Mirror {
       }
     }
     
-    @js.native
     trait LocationsCollection extends StObject {
       
       // Gets a single location by ID.
-      def get(id: String): Location = js.native
+      def get(id: String): Location
       
       // Retrieves a list of locations for the user.
-      def list(): LocationsListResponse = js.native
+      def list(): LocationsListResponse
     }
     object LocationsCollection {
       
@@ -223,11 +218,10 @@ object Mirror {
       }
     }
     
-    @js.native
     trait SettingsCollection extends StObject {
       
       // Gets a single setting by ID.
-      def get(id: String): Setting = js.native
+      def get(id: String): Setting
     }
     object SettingsCollection {
       
@@ -245,20 +239,19 @@ object Mirror {
       }
     }
     
-    @js.native
     trait SubscriptionsCollection extends StObject {
       
       // Creates a new subscription.
-      def insert(resource: Subscription): Subscription = js.native
+      def insert(resource: Subscription): Subscription
       
       // Retrieves a list of subscriptions for the authenticated user and service.
-      def list(): SubscriptionsListResponse = js.native
+      def list(): SubscriptionsListResponse
       
       // Deletes a subscription.
-      def remove(id: String): Unit = js.native
+      def remove(id: String): Unit
       
       // Updates an existing subscription in place.
-      def update(resource: Subscription, id: String): Subscription = js.native
+      def update(resource: Subscription, id: String): Subscription
     }
     object SubscriptionsCollection {
       
@@ -426,16 +419,15 @@ object Mirror {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var authTokens: js.UndefOr[js.Array[AuthToken]] = js.native
+      var authTokens: js.UndefOr[js.Array[AuthToken]] = js.undefined
       
-      var features: js.UndefOr[js.Array[String]] = js.native
+      var features: js.UndefOr[js.Array[String]] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var userData: js.UndefOr[js.Array[UserData]] = js.native
+      var userData: js.UndefOr[js.Array[UserData]] = js.undefined
     }
     object Account {
       
@@ -483,16 +475,15 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Attachment extends StObject {
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var contentUrl: js.UndefOr[String] = js.native
+      var contentUrl: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isProcessingContent: js.UndefOr[Boolean] = js.native
+      var isProcessingContent: js.UndefOr[Boolean] = js.undefined
     }
     object Attachment {
       
@@ -531,12 +522,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait AttachmentsListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Attachment]] = js.native
+      var items: js.UndefOr[js.Array[Attachment]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AttachmentsListResponse {
       
@@ -566,12 +556,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait AuthToken extends StObject {
       
-      var authToken: js.UndefOr[String] = js.native
+      var authToken: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AuthToken {
       
@@ -598,10 +587,9 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Command extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Command {
       
@@ -622,32 +610,31 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Contact extends StObject {
       
-      var acceptCommands: js.UndefOr[js.Array[Command]] = js.native
+      var acceptCommands: js.UndefOr[js.Array[Command]] = js.undefined
       
-      var acceptTypes: js.UndefOr[js.Array[String]] = js.native
+      var acceptTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var imageUrls: js.UndefOr[js.Array[String]] = js.native
+      var imageUrls: js.UndefOr[js.Array[String]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
       
-      var priority: js.UndefOr[Double] = js.native
+      var priority: js.UndefOr[Double] = js.undefined
       
-      var sharingFeatures: js.UndefOr[js.Array[String]] = js.native
+      var sharingFeatures: js.UndefOr[js.Array[String]] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var speakableName: js.UndefOr[String] = js.native
+      var speakableName: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Contact {
       
@@ -746,12 +733,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait ContactsListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Contact]] = js.native
+      var items: js.UndefOr[js.Array[Contact]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ContactsListResponse {
       
@@ -781,24 +767,23 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Location extends StObject {
       
-      var accuracy: js.UndefOr[Double] = js.native
+      var accuracy: js.UndefOr[Double] = js.undefined
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var latitude: js.UndefOr[Double] = js.native
+      var latitude: js.UndefOr[Double] = js.undefined
       
-      var longitude: js.UndefOr[Double] = js.native
+      var longitude: js.UndefOr[Double] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object Location {
       
@@ -861,12 +846,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait LocationsListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Location]] = js.native
+      var items: js.UndefOr[js.Array[Location]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object LocationsListResponse {
       
@@ -896,20 +880,19 @@ object Mirror {
       }
     }
     
-    @js.native
     trait MenuItem extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var contextual_command: js.UndefOr[String] = js.native
+      var contextual_command: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var payload: js.UndefOr[String] = js.native
+      var payload: js.UndefOr[String] = js.undefined
       
-      var removeWhenSelected: js.UndefOr[Boolean] = js.native
+      var removeWhenSelected: js.UndefOr[Boolean] = js.undefined
       
-      var values: js.UndefOr[js.Array[MenuValue]] = js.native
+      var values: js.UndefOr[js.Array[MenuValue]] = js.undefined
     }
     object MenuItem {
       
@@ -963,14 +946,13 @@ object Mirror {
       }
     }
     
-    @js.native
     trait MenuValue extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var iconUrl: js.UndefOr[String] = js.native
+      var iconUrl: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
     }
     object MenuValue {
       
@@ -1003,20 +985,19 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Notification extends StObject {
       
-      var collection: js.UndefOr[String] = js.native
+      var collection: js.UndefOr[String] = js.undefined
       
-      var itemId: js.UndefOr[String] = js.native
+      var itemId: js.UndefOr[String] = js.undefined
       
-      var operation: js.UndefOr[String] = js.native
+      var operation: js.UndefOr[String] = js.undefined
       
-      var userActions: js.UndefOr[js.Array[UserAction]] = js.native
+      var userActions: js.UndefOr[js.Array[UserAction]] = js.undefined
       
-      var userToken: js.UndefOr[String] = js.native
+      var userToken: js.UndefOr[String] = js.undefined
       
-      var verifyToken: js.UndefOr[String] = js.native
+      var verifyToken: js.UndefOr[String] = js.undefined
     }
     object Notification {
       
@@ -1070,12 +1051,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait NotificationConfig extends StObject {
       
-      var deliveryTime: js.UndefOr[String] = js.native
+      var deliveryTime: js.UndefOr[String] = js.undefined
       
-      var level: js.UndefOr[String] = js.native
+      var level: js.UndefOr[String] = js.undefined
     }
     object NotificationConfig {
       
@@ -1102,14 +1082,13 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Setting extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Setting {
       
@@ -1142,26 +1121,25 @@ object Mirror {
       }
     }
     
-    @js.native
     trait Subscription extends StObject {
       
-      var callbackUrl: js.UndefOr[String] = js.native
+      var callbackUrl: js.UndefOr[String] = js.undefined
       
-      var collection: js.UndefOr[String] = js.native
+      var collection: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var notification: js.UndefOr[Notification] = js.native
+      var notification: js.UndefOr[Notification] = js.undefined
       
-      var operation: js.UndefOr[js.Array[String]] = js.native
+      var operation: js.UndefOr[js.Array[String]] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
       
-      var userToken: js.UndefOr[String] = js.native
+      var userToken: js.UndefOr[String] = js.undefined
       
-      var verifyToken: js.UndefOr[String] = js.native
+      var verifyToken: js.UndefOr[String] = js.undefined
     }
     object Subscription {
       
@@ -1233,12 +1211,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait SubscriptionsListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Subscription]] = js.native
+      var items: js.UndefOr[js.Array[Subscription]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SubscriptionsListResponse {
       
@@ -1268,60 +1245,59 @@ object Mirror {
       }
     }
     
-    @js.native
     trait TimelineItem extends StObject {
       
-      var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+      var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
       
-      var bundleId: js.UndefOr[String] = js.native
+      var bundleId: js.UndefOr[String] = js.undefined
       
-      var canonicalUrl: js.UndefOr[String] = js.native
+      var canonicalUrl: js.UndefOr[String] = js.undefined
       
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
-      var creator: js.UndefOr[Contact] = js.native
+      var creator: js.UndefOr[Contact] = js.undefined
       
-      var displayTime: js.UndefOr[String] = js.native
+      var displayTime: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var html: js.UndefOr[String] = js.native
+      var html: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var inReplyTo: js.UndefOr[String] = js.native
+      var inReplyTo: js.UndefOr[String] = js.undefined
       
-      var isBundleCover: js.UndefOr[Boolean] = js.native
+      var isBundleCover: js.UndefOr[Boolean] = js.undefined
       
-      var isDeleted: js.UndefOr[Boolean] = js.native
+      var isDeleted: js.UndefOr[Boolean] = js.undefined
       
-      var isPinned: js.UndefOr[Boolean] = js.native
+      var isPinned: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[Location] = js.native
+      var location: js.UndefOr[Location] = js.undefined
       
-      var menuItems: js.UndefOr[js.Array[MenuItem]] = js.native
+      var menuItems: js.UndefOr[js.Array[MenuItem]] = js.undefined
       
-      var notification: js.UndefOr[NotificationConfig] = js.native
+      var notification: js.UndefOr[NotificationConfig] = js.undefined
       
-      var pinScore: js.UndefOr[Double] = js.native
+      var pinScore: js.UndefOr[Double] = js.undefined
       
-      var recipients: js.UndefOr[js.Array[Contact]] = js.native
+      var recipients: js.UndefOr[js.Array[Contact]] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var sourceItemId: js.UndefOr[String] = js.native
+      var sourceItemId: js.UndefOr[String] = js.undefined
       
-      var speakableText: js.UndefOr[String] = js.native
+      var speakableText: js.UndefOr[String] = js.undefined
       
-      var speakableType: js.UndefOr[String] = js.native
+      var speakableType: js.UndefOr[String] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var updated: js.UndefOr[String] = js.native
+      var updated: js.UndefOr[String] = js.undefined
     }
     object TimelineItem {
       
@@ -1501,14 +1477,13 @@ object Mirror {
       }
     }
     
-    @js.native
     trait TimelineListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[TimelineItem]] = js.native
+      var items: js.UndefOr[js.Array[TimelineItem]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object TimelineListResponse {
       
@@ -1544,12 +1519,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait UserAction extends StObject {
       
-      var payload: js.UndefOr[String] = js.native
+      var payload: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object UserAction {
       
@@ -1576,12 +1550,11 @@ object Mirror {
       }
     }
     
-    @js.native
     trait UserData extends StObject {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserData {
       

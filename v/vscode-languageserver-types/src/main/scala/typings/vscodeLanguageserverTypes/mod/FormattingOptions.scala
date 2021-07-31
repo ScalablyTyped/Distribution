@@ -3,12 +3,11 @@ package typings.vscodeLanguageserverTypes.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattingOptions
-  extends /**
+  extends StObject
+     with /**
   * Signature for further properties.
   */
 /* key */ StringDictionary[js.UndefOr[Boolean | Double | String]] {
@@ -18,31 +17,31 @@ trait FormattingOptions
     *
     * @since 3.15.0
     */
-  var insertFinalNewline: js.UndefOr[Boolean] = js.native
+  var insertFinalNewline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prefer spaces over tabs.
     */
-  var insertSpaces: Boolean = js.native
+  var insertSpaces: Boolean
   
   /**
     * Size of a tab in spaces.
     */
-  var tabSize: Double = js.native
+  var tabSize: Double
   
   /**
     * Trim all newlines after the final newline at the end of the file.
     *
     * @since 3.15.0
     */
-  var trimFinalNewlines: js.UndefOr[Boolean] = js.native
+  var trimFinalNewlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Trim trailing whitespaces on a line.
     *
     * @since 3.15.0
     */
-  var trimTrailingWhitespace: js.UndefOr[Boolean] = js.native
+  var trimTrailingWhitespace: js.UndefOr[Boolean] = js.undefined
 }
 object FormattingOptions {
   
@@ -52,19 +51,21 @@ object FormattingOptions {
     __obj.asInstanceOf[FormattingOptions]
   }
   
+  @JSImport("vscode-languageserver-types", "FormattingOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new FormattingOptions literal.
     */
-  @JSImport("vscode-languageserver-types", "FormattingOptions.create")
-  @js.native
-  def create(tabSize: Double, insertSpaces: Boolean): FormattingOptions = js.native
+  @scala.inline
+  def create(tabSize: Double, insertSpaces: Boolean): FormattingOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tabSize.asInstanceOf[js.Any], insertSpaces.asInstanceOf[js.Any])).asInstanceOf[FormattingOptions]
   
   /**
     * Checks whether the given literal conforms to the [FormattingOptions](#FormattingOptions) interface.
     */
-  @JSImport("vscode-languageserver-types", "FormattingOptions.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean]
   
   @scala.inline
   implicit class FormattingOptionsMutableBuilder[Self <: FormattingOptions] (val x: Self) extends AnyVal {

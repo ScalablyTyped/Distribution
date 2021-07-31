@@ -2,15 +2,13 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsanaAuthorizeUrlOptions extends StObject {
   
-  var asanaBaseUrl: js.UndefOr[String] = js.native
+  var asanaBaseUrl: js.UndefOr[String] = js.undefined
   
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
 }
 object AsanaAuthorizeUrlOptions {
   

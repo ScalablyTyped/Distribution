@@ -12,7 +12,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinnerTypesMod {
@@ -24,35 +23,43 @@ object spinnerTypesMod {
   object SpinnerSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SpinnerSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[SpinnerSize & Double] = js.native
     
     /**
       * 28px Spinner diameter
       */
     @js.native
-    sealed trait large extends SpinnerSize
-    /* 3 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.large with Double = js.native
+    sealed trait large
+      extends StObject
+         with SpinnerSize
+    /* 3 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.large & Double = js.native
     
     /**
       * 20px Spinner diameter
       */
     @js.native
-    sealed trait medium extends SpinnerSize
-    /* 2 */ val medium: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.medium with Double = js.native
+    sealed trait medium
+      extends StObject
+         with SpinnerSize
+    /* 2 */ val medium: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.medium & Double = js.native
     
     /**
       * 16px Spinner diameter
       */
     @js.native
-    sealed trait small extends SpinnerSize
-    /* 1 */ val small: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.small with Double = js.native
+    sealed trait small
+      extends StObject
+         with SpinnerSize
+    /* 1 */ val small: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.small & Double = js.native
     
     /**
       * 12px Spinner diameter
       */
     @js.native
-    sealed trait xSmall extends SpinnerSize
-    /* 0 */ val xSmall: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.xSmall with Double = js.native
+    sealed trait xSmall
+      extends StObject
+         with SpinnerSize
+    /* 0 */ val xSmall: typings.officeUiFabricReact.spinnerTypesMod.SpinnerSize.xSmall & Double = js.native
   }
   
   @js.native
@@ -62,81 +69,85 @@ object spinnerTypesMod {
   object SpinnerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SpinnerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SpinnerType & Double] = js.native
     
     /**
       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize.large` instead.
       * @deprecated Use `SpinnerSize.large` instead.
       */
     @js.native
-    sealed trait large extends SpinnerType
-    /* 1 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.large with Double = js.native
+    sealed trait large
+      extends StObject
+         with SpinnerType
+    /* 1 */ val large: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.large & Double = js.native
     
     /**
       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize.medium` instead.
       * @deprecated Use `SpinnerSize.medium` instead.
       */
     @js.native
-    sealed trait normal extends SpinnerType
-    /* 0 */ val normal: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with SpinnerType
+    /* 0 */ val normal: typings.officeUiFabricReact.spinnerTypesMod.SpinnerType.normal & Double = js.native
   }
   
-  @js.native
   trait ISpinner extends StObject
   
-  @js.native
-  trait ISpinnerProps extends HTMLAttributes[HTMLElement] {
+  trait ISpinnerProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Alternative status label for screen reader
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Politeness setting for label update announcement.
       * @defaultvalue polite
       */
-    var ariaLive: js.UndefOr[assertive | polite | off] = js.native
+    var ariaLive: js.UndefOr[assertive | polite | off] = js.undefined
     
     /**
       * Optional callback to access the ISpinner interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ISpinner]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ISpinner]] = js.undefined
     
     /**
       * The label to show next to the Spinner. Label updates will be announced to the screen readers.
       * Use ariaLive to control politeness level.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * The position of the label in regards of the spinner animation.
       * @defaultvalue SpinnerLabelPosition.bottom
       */
-    var labelPosition: js.UndefOr[SpinnerLabelPosition] = js.native
+    var labelPosition: js.UndefOr[SpinnerLabelPosition] = js.undefined
     
     /**
       * The size of Spinner to render. \{ extraSmall, small, medium, large \}
       * @defaultvalue SpinnerType.medium
       */
-    var size: js.UndefOr[SpinnerSize] = js.native
+    var size: js.UndefOr[SpinnerSize] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ISpinnerStyleProps, ISpinnerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ISpinnerStyleProps, ISpinnerStyles]] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize` instead.
       * @deprecated Use `SpinnerSize` instead.
       */
-    var `type`: js.UndefOr[SpinnerType] = js.native
+    var `type`: js.UndefOr[SpinnerType] = js.undefined
   }
   object ISpinnerProps {
     
@@ -211,20 +222,19 @@ object spinnerTypesMod {
     }
   }
   
-  @js.native
   trait ISpinnerStyleProps extends StObject {
     
     /** CSS class name for the component attached to the root stylable area. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Position of the label in regards to the spinner animation. */
-    var labelPosition: js.UndefOr[SpinnerLabelPosition] = js.native
+    var labelPosition: js.UndefOr[SpinnerLabelPosition] = js.undefined
     
     /** Size of the spinner animation. */
-    var size: js.UndefOr[SpinnerSize] = js.native
+    var size: js.UndefOr[SpinnerSize] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ISpinnerStyleProps {
     
@@ -260,20 +270,19 @@ object spinnerTypesMod {
     }
   }
   
-  @js.native
   trait ISpinnerStyles extends StObject {
     
     /** Styles for the spinner circle animation. */
-    var circle: js.UndefOr[IStyle] = js.native
+    var circle: js.UndefOr[IStyle] = js.undefined
     
     /** Styles for the label accompanying the circle. */
-    var label: js.UndefOr[IStyle] = js.native
+    var label: js.UndefOr[IStyle] = js.undefined
     
     /** Styles for the root element. Refers to the wrapper containing both the circle and the label. */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /** Styles for the hidden helper element to aid with screen readers. */
-    var screenReaderText: js.UndefOr[IStyle] = js.native
+    var screenReaderText: js.UndefOr[IStyle] = js.undefined
   }
   object ISpinnerStyles {
     

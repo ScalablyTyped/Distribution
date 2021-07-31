@@ -5,35 +5,36 @@ import typings.rcPicker.interfaceMod.Locale
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quarterBodyMod {
   
-  @JSImport("rc-picker/es/panels/QuarterPanel/QuarterBody", JSImport.Default)
+  @JSImport("rc-picker/es/panels/QuarterPanel/QuarterBody", JSImport.Namespace)
   @js.native
-  def default[DateType](props: QuarterBodyProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[DateType](props: QuarterBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-picker/es/panels/QuarterPanel/QuarterBody", "QUARTER_COL_COUNT")
   @js.native
   val QUARTER_COL_COUNT: /* 4 */ Double = js.native
   
-  @js.native
   trait QuarterBodyProps[DateType] extends StObject {
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    def onSelect(value: DateType): Unit = js.native
+    def onSelect(value: DateType): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object QuarterBodyProps {
     
@@ -50,7 +51,7 @@ object quarterBodyMod {
     }
     
     @scala.inline
-    implicit class QuarterBodyPropsMutableBuilder[Self <: QuarterBodyProps[_], DateType] (val x: Self with QuarterBodyProps[DateType]) extends AnyVal {
+    implicit class QuarterBodyPropsMutableBuilder[Self <: QuarterBodyProps[?], DateType] (val x: Self & QuarterBodyProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))

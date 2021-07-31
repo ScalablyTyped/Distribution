@@ -3,19 +3,20 @@ package typings.flatpickr
 import typings.flatpickr.optionsMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentPluginMod {
   
-  @JSImport("flatpickr/dist/plugins/momentPlugin", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/momentPlugin", JSImport.Namespace)
   @js.native
-  def default(config: Config): Plugin[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  
   trait Config extends StObject {
     
-    var moment: js.Function = js.native
+    var moment: js.Function
   }
   object Config {
     

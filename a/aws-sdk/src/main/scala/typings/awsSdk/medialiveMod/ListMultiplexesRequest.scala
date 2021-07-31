@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMultiplexesRequest extends StObject {
   
   /**
     * The maximum number of items to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.medialiveMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.medialiveMod.MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListMultiplexesRequest {
   

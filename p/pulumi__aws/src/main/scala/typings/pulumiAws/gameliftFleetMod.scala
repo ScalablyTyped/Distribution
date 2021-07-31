@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gameliftFleetMod {
@@ -104,6 +103,10 @@ object gameliftFleetMod {
   /* static members */
   object Fleet {
     
+    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Fleet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -113,92 +116,86 @@ object gameliftFleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Fleet = js.native
-    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Fleet = js.native
-    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = js.native
-    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/gamelift/fleet", "Fleet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean]
   }
   
-  @js.native
   trait FleetArgs extends StObject {
     
     /**
       * ID of the Gamelift Build to be deployed on the fleet.
       */
-    val buildId: Input[String] = js.native
+    val buildId: Input[String]
     
     /**
       * Human-readable description of the fleet.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
       */
     val ec2InboundPermissions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of an EC2 instance type. e.g. `t2.micro`
       */
-    val ec2InstanceType: Input[String] = js.native
+    val ec2InstanceType: Input[String]
     
     /**
       * Type of fleet. This value must be `ON_DEMAND` or `SPOT`. Defaults to `ON_DEMAND`.
       */
-    val fleetType: js.UndefOr[Input[String]] = js.native
+    val fleetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN of an IAM role that instances in the fleet can assume.
       */
-    val instanceRoleArn: js.UndefOr[Input[String]] = js.native
+    val instanceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.
       */
-    val metricGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val metricGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Game session protection policy to apply to all instances in this fleet. e.g. `FullProtection`. Defaults to `NoProtection`.
       */
-    val newGameSessionProtectionPolicy: js.UndefOr[Input[String]] = js.native
+    val newGameSessionProtectionPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
       */
-    val resourceCreationLimitPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]] = js.native
+    val resourceCreationLimitPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]] = js.undefined
     
     /**
       * Instructions for launching server processes on each instance in the fleet. See below.
       */
-    val runtimeConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]] = js.native
+    val runtimeConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FleetArgs {
     
@@ -285,82 +282,81 @@ object gameliftFleetMod {
     }
   }
   
-  @js.native
   trait FleetState extends StObject {
     
     /**
       * Fleet ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the Gamelift Build to be deployed on the fleet.
       */
-    val buildId: js.UndefOr[Input[String]] = js.native
+    val buildId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Human-readable description of the fleet.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
       */
     val ec2InboundPermissions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of an EC2 instance type. e.g. `t2.micro`
       */
-    val ec2InstanceType: js.UndefOr[Input[String]] = js.native
+    val ec2InstanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of fleet. This value must be `ON_DEMAND` or `SPOT`. Defaults to `ON_DEMAND`.
       */
-    val fleetType: js.UndefOr[Input[String]] = js.native
+    val fleetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN of an IAM role that instances in the fleet can assume.
       */
-    val instanceRoleArn: js.UndefOr[Input[String]] = js.native
+    val instanceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
-    val logPaths: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val logPaths: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.
       */
-    val metricGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val metricGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Game session protection policy to apply to all instances in this fleet. e.g. `FullProtection`. Defaults to `NoProtection`.
       */
-    val newGameSessionProtectionPolicy: js.UndefOr[Input[String]] = js.native
+    val newGameSessionProtectionPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Operating system of the fleet's computing resources.
       */
-    val operatingSystem: js.UndefOr[Input[String]] = js.native
+    val operatingSystem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
       */
-    val resourceCreationLimitPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]] = js.native
+    val resourceCreationLimitPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]] = js.undefined
     
     /**
       * Instructions for launching server processes on each instance in the fleet. See below.
       */
-    val runtimeConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]] = js.native
+    val runtimeConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FleetState {
     

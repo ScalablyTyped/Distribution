@@ -2,23 +2,21 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTemplateRequest extends StObject {
   
   /**
     * The export template options. Supported values include 'IncludeParameterDefaultValue',
     * 'IncludeComments' or 'IncludeParameterDefaultValue, IncludeComments
     */
-  var options: js.UndefOr[String] = js.native
+  var options: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the resources. The only supported string currently is '*' (all resources). Future
     * updates will support exporting specific resources.
     */
-  var resources: js.UndefOr[js.Array[String]] = js.native
+  var resources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExportTemplateRequest {
   

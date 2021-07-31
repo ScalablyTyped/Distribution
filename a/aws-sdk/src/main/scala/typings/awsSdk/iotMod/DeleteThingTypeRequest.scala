@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteThingTypeRequest extends StObject {
   
   /**
     * The name of the thing type.
     */
-  var thingTypeName: ThingTypeName = js.native
+  var thingTypeName: ThingTypeName
 }
 object DeleteThingTypeRequest {
   

@@ -3,10 +3,13 @@ package typings.awsSdkCredentialProviderEnv
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/credential-provider-env", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-env", "ENV_EXPIRATION")
   @js.native
@@ -24,7 +27,6 @@ object mod {
   @js.native
   val ENV_SESSION: /* "AWS_SESSION_TOKEN" */ String = js.native
   
-  @JSImport("@aws-sdk/credential-provider-env", "fromEnv")
-  @js.native
-  def fromEnv(): CredentialProvider = js.native
+  @scala.inline
+  def fromEnv(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[CredentialProvider]
 }

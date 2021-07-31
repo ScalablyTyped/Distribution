@@ -2,19 +2,17 @@ package typings.socketcluster
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientCount extends StObject {
     
-    var clientCount: js.Any = js.native
+    var clientCount: js.Any
     
-    var httpRPM: Double = js.native
+    var httpRPM: Double
     
-    var wsRPM: Double = js.native
+    var wsRPM: Double
   }
   object ClientCount {
     

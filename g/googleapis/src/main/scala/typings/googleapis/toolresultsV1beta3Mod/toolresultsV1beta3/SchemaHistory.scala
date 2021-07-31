@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * multiple histories will need to be used in order to order Executions per
   * branch.
   */
-@js.native
 trait SchemaHistory extends StObject {
   
   /**
@@ -21,20 +19,20 @@ trait SchemaHistory extends StObject {
     * 100 characters.  - In response: present if set during create. - In create
     * request: optional
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier within a project for this History.  Returns
     * INVALID_ARGUMENT if this field is set or overwritten by the caller.  - In
     * response always set - In create request: never set
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * A name to uniquely identify a history within a project. Maximum of 200
     * characters.  - In response always set - In create request: always set
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaHistory {
   

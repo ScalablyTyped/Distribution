@@ -3,15 +3,31 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadingMod {
   
   @JSImport("carbon-components/components/loading/loading", JSImport.Default)
   @js.native
-  class default protected () extends Loading {
+  class default protected ()
+    extends StObject
+       with Loading {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _deleteElement(): Unit = js.native
+    
+    /* CompleteClass */
+    override def end(): Unit = js.native
+    
+    /* CompleteClass */
+    override def isActive(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set(active: js.Any): this.type = js.native
+    
+    /* CompleteClass */
+    override def toggle(): this.type = js.native
   }
   object default {
     
@@ -28,18 +44,17 @@ object loadingMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Loading extends StObject {
+  - Dropped any */ trait Loading extends StObject {
     
-    def _deleteElement(): Unit = js.native
+    def _deleteElement(): Unit
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def isActive(): js.Any = js.native
+    def isActive(): js.Any
     
-    def set(active: js.Any): this.type = js.native
+    def set(active: js.Any): this.type
     
-    def toggle(): this.type = js.native
+    def toggle(): this.type
   }
   object Loading {
     

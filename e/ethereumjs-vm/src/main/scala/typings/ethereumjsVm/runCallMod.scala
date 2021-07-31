@@ -5,50 +5,51 @@ import typings.ethereumjsVm.evmMod.EVMResult
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runCallMod {
   
-  @JSImport("ethereumjs-vm/dist/runCall", JSImport.Default)
+  @JSImport("ethereumjs-vm/dist/runCall", JSImport.Namespace)
   @js.native
-  def default(opts: RunCallOpts): js.Promise[EVMResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(opts: RunCallOpts): js.Promise[EVMResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EVMResult]]
+  
   trait RunCallOpts extends StObject {
     
-    var block: js.UndefOr[js.Any] = js.native
+    var block: js.UndefOr[js.Any] = js.undefined
     
-    var caller: js.UndefOr[Buffer] = js.native
+    var caller: js.UndefOr[Buffer] = js.undefined
     
     /**
       * This is for CALLCODE where the code to load is different than the code from the to account
       */
-    var code: js.UndefOr[Buffer] = js.native
+    var code: js.UndefOr[Buffer] = js.undefined
     
-    var compiled: js.UndefOr[Boolean] = js.native
+    var compiled: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[Buffer] = js.native
+    var data: js.UndefOr[Buffer] = js.undefined
     
-    var delegatecall: js.UndefOr[Boolean] = js.native
+    var delegatecall: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var gasLimit: js.UndefOr[Buffer] = js.native
+    var gasLimit: js.UndefOr[Buffer] = js.undefined
     
-    var gasPrice: js.UndefOr[Buffer] = js.native
+    var gasPrice: js.UndefOr[Buffer] = js.undefined
     
-    var origin: js.UndefOr[Buffer] = js.native
+    var origin: js.UndefOr[Buffer] = js.undefined
     
-    var salt: js.UndefOr[Buffer] = js.native
+    var salt: js.UndefOr[Buffer] = js.undefined
     
-    var selfdestruct: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var selfdestruct: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[Buffer] = js.native
+    var to: js.UndefOr[Buffer] = js.undefined
     
-    var value: js.UndefOr[Buffer] = js.native
+    var value: js.UndefOr[Buffer] = js.undefined
   }
   object RunCallOpts {
     

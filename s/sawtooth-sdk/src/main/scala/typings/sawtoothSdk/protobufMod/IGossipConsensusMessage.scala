@@ -3,20 +3,18 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGossipConsensusMessage extends StObject {
   
   /** GossipConsensusMessage message */
-  var message: js.UndefOr[Uint8Array | Null] = js.native
+  var message: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** GossipConsensusMessage senderId */
-  var senderId: js.UndefOr[Uint8Array | Null] = js.native
+  var senderId: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** GossipConsensusMessage timeToLive */
-  var timeToLive: js.UndefOr[Double | Null] = js.native
+  var timeToLive: js.UndefOr[Double | Null] = js.undefined
 }
 object IGossipConsensusMessage {
   

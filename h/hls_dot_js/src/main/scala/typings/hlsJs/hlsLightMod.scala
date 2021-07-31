@@ -88,7 +88,6 @@ import typings.hlsJs.mod.K_SUBTITLE_TRACK_SWITCH
 import typings.hlsJs.mod.LoaderConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hlsLightMod {
@@ -1012,9 +1011,8 @@ object hlsLightMod {
     * checks whether your browser is supporting MediaSource Extensions
     */
   /* static member */
-  @JSImport("hls.js/dist/hls.light", "isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
   /**
     * returns hls.js dist version number

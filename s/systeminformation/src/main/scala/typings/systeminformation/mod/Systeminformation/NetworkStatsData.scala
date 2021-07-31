@@ -2,33 +2,31 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkStatsData extends StObject {
   
-  var iface: String = js.native
+  var iface: String
   
-  var ms: Double = js.native
+  var ms: Double
   
-  var operstate: String = js.native
+  var operstate: String
   
-  var rx_bytes: Double = js.native
+  var rx_bytes: Double
   
-  var rx_dropped: Double = js.native
+  var rx_dropped: Double
   
-  var rx_errors: Double = js.native
+  var rx_errors: Double
   
-  var rx_sec: Double = js.native
+  var rx_sec: Double
   
-  var tx_bytes: Double = js.native
+  var tx_bytes: Double
   
-  var tx_dropped: Double = js.native
+  var tx_dropped: Double
   
-  var tx_errors: Double = js.native
+  var tx_errors: Double
   
-  var tx_sec: Double = js.native
+  var tx_sec: Double
 }
 object NetworkStatsData {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasedynamiclinks/v1", "firebasedynamiclinks_v1.Resource$Shortlinks")
@@ -35,7 +34,7 @@ class ResourceShortlinks protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateShortDynamicLinkResponse]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(params: ParamsResourceShortlinksCreate): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(
     params: ParamsResourceShortlinksCreate,

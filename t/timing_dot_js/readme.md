@@ -12,7 +12,7 @@ Navigation Timing API measurement helpers
 | Keywords           | user-timing, user, timing |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 90883 |
+| # downloads        | 65591 |
 | # stars            | 0 |
 
 ## Links

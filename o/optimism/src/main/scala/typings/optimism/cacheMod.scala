@@ -2,7 +2,6 @@ package typings.optimism
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
@@ -11,8 +10,8 @@ object cacheMod {
   @js.native
   class Cache[K, V] () extends StObject {
     def this(max: Double) = this()
-    def this(max: js.UndefOr[scala.Nothing], dispose: js.Function2[/* value */ V, /* key */ K, Unit]) = this()
     def this(max: Double, dispose: js.Function2[/* value */ V, /* key */ K, Unit]) = this()
+    def this(max: Unit, dispose: js.Function2[/* value */ V, /* key */ K, Unit]) = this()
     
     def clean(): Unit = js.native
     

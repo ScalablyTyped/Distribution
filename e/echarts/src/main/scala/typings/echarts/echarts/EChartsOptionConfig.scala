@@ -1,17 +1,16 @@
 package typings.echarts.echarts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EChartsOptionConfig extends js.Object {
+trait EChartsOptionConfig extends StObject {
   
-  var lazyUpdate: js.UndefOr[Boolean] = js.native
+  var lazyUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var notMerge: js.UndefOr[Boolean] = js.native
+  var notMerge: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object EChartsOptionConfig {
   
@@ -22,36 +21,24 @@ object EChartsOptionConfig {
   }
   
   @scala.inline
-  implicit class EChartsOptionConfigOps[Self <: EChartsOptionConfig] (val x: Self) extends AnyVal {
+  implicit class EChartsOptionConfigMutableBuilder[Self <: EChartsOptionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLazyUpdate(value: Boolean): Self = StObject.set(x, "lazyUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLazyUpdateUndefined: Self = StObject.set(x, "lazyUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotMerge(value: Boolean): Self = StObject.set(x, "notMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazyUpdate(value: Boolean): Self = this.set("lazyUpdate", value.asInstanceOf[js.Any])
+    def setNotMergeUndefined: Self = StObject.set(x, "notMerge", js.undefined)
     
     @scala.inline
-    def deleteLazyUpdate: Self = this.set("lazyUpdate", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotMerge(value: Boolean): Self = this.set("notMerge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotMerge: Self = this.set("notMerge", js.undefined)
-    
-    @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationNode extends ClientObject {
+trait NavigationNode
+  extends StObject
+     with ClientObject {
   
   def deleteObject(): Unit = js.native
   

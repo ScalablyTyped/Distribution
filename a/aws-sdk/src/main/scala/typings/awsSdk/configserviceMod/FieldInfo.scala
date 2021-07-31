@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldInfo extends StObject {
   
   /**
     * Name of the field.
     */
-  var Name: js.UndefOr[FieldName] = js.native
+  var Name: js.UndefOr[FieldName] = js.undefined
 }
 object FieldInfo {
   

@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMylibraryBookshelvesAddvolume extends StandardParameters {
+trait ParamsResourceMylibraryBookshelvesAddvolume
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The reason for which the book is added to the library.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * ID of bookshelf to which to add a volume.
     */
-  var shelf: js.UndefOr[String] = js.native
+  var shelf: js.UndefOr[String] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * ID of volume to add.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMylibraryBookshelvesAddvolume {
   

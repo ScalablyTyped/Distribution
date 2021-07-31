@@ -4,22 +4,23 @@ import typings.jsreportCore.mod.ExtensionDefinition
 import typings.jsreportHtmlEmbeddedInDocx.jsreportHtmlEmbeddedInDocxStrings.`html-embedded-in-docx`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  
   @JSImport("jsreport-html-embedded-in-docx", JSImport.Namespace)
   @js.native
-  def apply(): ExtensionDefinition = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var recipe: `html-embedded-in-docx` | String = js.native
+      var recipe: `html-embedded-in-docx` | String
     }
     object Template {
       

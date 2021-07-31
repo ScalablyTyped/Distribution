@@ -4,34 +4,30 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: String): String = js.native
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: String, options: Options): String = js.native
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: StatsLike): String = js.native
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: StatsLike, options: Options): String = js.native
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: Buffer): String = js.native
-  @JSImport("etag", JSImport.Namespace)
-  @js.native
-  def apply(entity: Buffer, options: Options): String = js.native
+  @scala.inline
+  def apply(entity: String): String = ^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(entity: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(entity: StatsLike): String = ^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(entity: StatsLike, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(entity: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(entity: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("etag", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var weak: js.UndefOr[Boolean] = js.native
+    var weak: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -52,16 +48,15 @@ object mod {
     }
   }
   
-  @js.native
   trait StatsLike extends StObject {
     
-    var ctime: Date = js.native
+    var ctime: Date
     
-    var ino: Double = js.native
+    var ino: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var size: Double = js.native
+    var size: Double
   }
   object StatsLike {
     

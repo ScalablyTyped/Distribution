@@ -3,24 +3,22 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.awsSdkClientDynamodbBrowser.updateGlobalTableSettingsExceptionsUnionMod.UpdateGlobalTableSettingsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIndexNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IndexNotFoundExceptionDetails> * / any */ @js.native
-  trait IndexNotFoundException extends UpdateGlobalTableSettingsExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IndexNotFoundExceptionDetails> * / any */ trait IndexNotFoundException
+    extends StObject
+       with UpdateGlobalTableSettingsExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.IndexNotFoundException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.IndexNotFoundException
   }
   object IndexNotFoundException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.IndexNotFoundException
-    ): IndexNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): IndexNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "IndexNotFoundException")
       __obj.asInstanceOf[IndexNotFoundException]
     }
     
@@ -34,13 +32,12 @@ object typesIndexNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait IndexNotFoundExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object IndexNotFoundExceptionDetails {
     

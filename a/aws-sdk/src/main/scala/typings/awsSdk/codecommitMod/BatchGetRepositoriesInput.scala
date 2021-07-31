@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetRepositoriesInput extends StObject {
   
   /**
     * The names of the repositories to get information about.  The length constraint limit is for each string in the array. The array itself can be empty. 
     */
-  var repositoryNames: RepositoryNameList = js.native
+  var repositoryNames: RepositoryNameList
 }
 object BatchGetRepositoriesInput {
   

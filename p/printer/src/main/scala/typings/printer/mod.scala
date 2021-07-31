@@ -14,82 +14,73 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("printer", "getDefaultPrinterName")
+  @JSImport("printer", JSImport.Namespace)
   @js.native
-  def getDefaultPrinterName(): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("printer", "getJob")
-  @js.native
-  def getJob(printerName: String, jobId: Double): JobDetails = js.native
+  @scala.inline
+  def getDefaultPrinterName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultPrinterName")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("printer", "getPrinter")
-  @js.native
-  def getPrinter(printerName: String): PrinterDetails = js.native
+  @scala.inline
+  def getJob(printerName: String, jobId: Double): JobDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("getJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any])).asInstanceOf[JobDetails]
   
-  @JSImport("printer", "getPrinterDriverOptions")
-  @js.native
-  def getPrinterDriverOptions(printerName: String): PrinterDriverOptions = js.native
+  @scala.inline
+  def getPrinter(printerName: String): PrinterDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinter")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDetails]
   
-  @JSImport("printer", "getPrinters")
-  @js.native
-  def getPrinters(): js.Array[PrinterDetails] = js.native
+  @scala.inline
+  def getPrinterDriverOptions(printerName: String): PrinterDriverOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinterDriverOptions")(printerName.asInstanceOf[js.Any]).asInstanceOf[PrinterDriverOptions]
   
-  @JSImport("printer", "getSelectedPaperSize")
-  @js.native
-  def getSelectedPaperSize(printerName: String): String = js.native
+  @scala.inline
+  def getPrinters(): js.Array[PrinterDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Array[PrinterDetails]]
   
-  @JSImport("printer", "getSupportedJobCommands")
-  @js.native
-  def getSupportedJobCommands(): js.Array[String] = js.native
+  @scala.inline
+  def getSelectedPaperSize(printerName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedPaperSize")(printerName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("printer", "getSupportedPrintFormats")
-  @js.native
-  def getSupportedPrintFormats(): js.Array[String] = js.native
+  @scala.inline
+  def getSupportedJobCommands(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedJobCommands")().asInstanceOf[js.Array[String]]
   
-  @JSImport("printer", "printDirect")
-  @js.native
-  def printDirect(options: PrintDirectOptions): Unit = js.native
+  @scala.inline
+  def getSupportedPrintFormats(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedPrintFormats")().asInstanceOf[js.Array[String]]
   
-  @JSImport("printer", "printFile")
-  @js.native
-  def printFile(options: PrintFileOptions): Unit = js.native
+  @scala.inline
+  def printDirect(options: PrintDirectOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDirect")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("printer", "setJob")
-  @js.native
-  def setJob(printerName: String, jobId: Double, command: String): Unit = js.native
-  @JSImport("printer", "setJob")
-  @js.native
-  def setJob_CANCEL(printerName: String, jobId: Double, command: CANCEL): Unit = js.native
+  @scala.inline
+  def printFile(options: PrintFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setJob(printerName: String, jobId: Double, command: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setJob_CANCEL(printerName: String, jobId: Double, command: CANCEL): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setJob")(printerName.asInstanceOf[js.Any], jobId.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait JobDetails extends StObject {
     
-    var completedTime: Date = js.native
+    var completedTime: Date
     
-    var creationTime: Date = js.native
+    var creationTime: Date
     
-    var format: String = js.native
+    var format: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var printerName: String = js.native
+    var printerName: String
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var processingTime: Date = js.native
+    var processingTime: Date
     
-    var size: Double = js.native
+    var size: Double
     
-    var status: js.Array[JobStatus] = js.native
+    var status: js.Array[JobStatus]
     
-    var user: String = js.native
+    var user: String
   }
   object JobDetails {
     
@@ -182,20 +173,19 @@ object mod {
     def PRINTING: typings.printer.printerStrings.PRINTING = "PRINTING".asInstanceOf[typings.printer.printerStrings.PRINTING]
   }
   
-  @js.native
   trait PrintDirectOptions extends StObject {
     
-    var data: String | Buffer = js.native
+    var data: String | Buffer
     
-    var error: js.UndefOr[PrintOnErrorFunction] = js.native
+    var error: js.UndefOr[PrintOnErrorFunction] = js.undefined
     
-    var options: js.UndefOr[StringDictionary[String]] = js.native
+    var options: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var printer: js.UndefOr[String] = js.native
+    var printer: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[PrintOnSuccessFunction] = js.native
+    var success: js.UndefOr[PrintOnSuccessFunction] = js.undefined
     
-    var `type`: js.UndefOr[RAW | TEXT | PDF | JPEG | POSTSCRIPT | COMMAND | AUTO] = js.native
+    var `type`: js.UndefOr[RAW | TEXT | PDF | JPEG | POSTSCRIPT | COMMAND | AUTO] = js.undefined
   }
   object PrintDirectOptions {
     
@@ -243,16 +233,15 @@ object mod {
     }
   }
   
-  @js.native
   trait PrintFileOptions extends StObject {
     
-    var error: js.UndefOr[PrintOnErrorFunction] = js.native
+    var error: js.UndefOr[PrintOnErrorFunction] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
     
-    var printer: js.UndefOr[String] = js.native
+    var printer: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[PrintOnSuccessFunction] = js.native
+    var success: js.UndefOr[PrintOnSuccessFunction] = js.undefined
   }
   object PrintFileOptions {
     
@@ -292,14 +281,13 @@ object mod {
   
   type PrintOnSuccessFunction = js.Function1[/* jobId */ String, js.Any]
   
-  @js.native
   trait PrinterDetails extends StObject {
     
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var options: StringDictionary[String] = js.native
+    var options: StringDictionary[String]
   }
   object PrinterDetails {
     

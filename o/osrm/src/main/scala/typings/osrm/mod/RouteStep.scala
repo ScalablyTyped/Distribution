@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,78 +9,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#routestep-object
   */
-@js.native
 trait RouteStep extends StObject {
   
   /**
     * The destinations of the way. Will be undefined if there are no destinations.
     */
-  var destinations: String = js.native
+  var destinations: String
   
   /**
     * The distance of travel from the maneuver to the subsequent step, in float meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The estimated travel time, in float number of seconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * The exit numbers or names of the way. Will be undefined if there are no exit numbers or names.
     */
-  var exits: String = js.native
+  var exits: String
   
   /**
     * The unsimplified geometry of the route segment, depending on the geometries parameter.
     */
-  var geometry: Polyline | LineString = js.native
+  var geometry: Polyline | LineString
   
   /**
     * A list of Intersection objects that are passed along the segment, the very first belonging to the StepManeuver
     */
-  var intersections: js.Array[Intersection] = js.native
+  var intersections: js.Array[Intersection]
   
   /**
     * A StepManeuver object representing the maneuver.
     */
-  var maneuver: StepManeuver = js.native
+  var maneuver: StepManeuver
   
   /**
     * A string signifying the mode of transportation.
     */
-  var mode: String = js.native
+  var mode: String
   
   /**
     * The name of the way along which travel proceeds.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The pronunciation hint of the way name. Will be undefined if there is no pronunciation hit.
     */
-  var pronunciation: String = js.native
+  var pronunciation: String
   
   /**
     * A reference number or code for the way. Optionally included, if ref data is available for the given way.
     */
-  var ref: String = js.native
+  var ref: String
   
   /**
     * The name for the rotary. Optionally included, if the step is a rotary and a rotary name is available.
     */
-  var rotary_name: String = js.native
+  var rotary_name: String
   
   /**
     * The pronunciation hint of the rotary name. Optionally included, if the step is a rotary and a rotary pronunciation is available.
     */
-  var rotary_pronunciation: String = js.native
+  var rotary_pronunciation: String
   
   /**
     * The calculated weight of the step.
     */
-  var weight: Double = js.native
+  var weight: Double
 }
 object RouteStep {
   

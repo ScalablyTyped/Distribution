@@ -7,7 +7,6 @@ import typings.materialSegmentedButton.segmentFoundationMod.MDCSegmentedButtonSe
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentComponentMod {
@@ -16,7 +15,7 @@ object segmentComponentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/segmented-button/segment/component", "MDCSegmentedButtonSegment")
   @js.native
   class MDCSegmentedButtonSegment protected () extends MDCComponent[MDCSegmentedButtonSegmentFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCSegmentedButtonSegmentFoundation, args: js.Any*) = this()
     
     var disabled: js.UndefOr[Boolean] = js.native
@@ -74,9 +73,12 @@ object segmentComponentMod {
   /* static members */
   object MDCSegmentedButtonSegment {
     
-    @JSImport("@material/segmented-button/segment/component", "MDCSegmentedButtonSegment.attachTo")
+    @JSImport("@material/segmented-button/segment/component", "MDCSegmentedButtonSegment")
     @js.native
-    def attachTo(root: Element): MDCSegmentedButtonSegment = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButtonSegment]
   }
   
   type MDCSegmentedButtonSegmentFactory = js.Function2[

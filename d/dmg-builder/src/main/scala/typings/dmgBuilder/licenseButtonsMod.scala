@@ -3,29 +3,29 @@ package typings.dmgBuilder
 import typings.appBuilderLib.mod.PlatformPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object licenseButtonsMod {
   
-  @JSImport("dmg-builder/out/licenseButtons", "getLicenseButtons")
+  @JSImport("dmg-builder/out/licenseButtons", JSImport.Namespace)
   @js.native
-  def getLicenseButtons(licenseButtonFiles: js.Array[LicenseButtonsFile], langWithRegion: String, id: Double, name: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dmg-builder/out/licenseButtons", "getLicenseButtonsFile")
-  @js.native
-  def getLicenseButtonsFile(packager: PlatformPackager[_]): js.Promise[js.Array[LicenseButtonsFile]] = js.native
+  @scala.inline
+  def getLicenseButtons(licenseButtonFiles: js.Array[LicenseButtonsFile], langWithRegion: String, id: Double, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtons")(licenseButtonFiles.asInstanceOf[js.Any], langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def getLicenseButtonsFile(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseButtonsFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtonsFile")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseButtonsFile]]]
+  
   trait LicenseButtonsFile extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var lang: String = js.native
+    var lang: String
     
-    var langName: String = js.native
+    var langName: String
     
-    var langWithRegion: String = js.native
+    var langWithRegion: String
   }
   object LicenseButtonsFile {
     

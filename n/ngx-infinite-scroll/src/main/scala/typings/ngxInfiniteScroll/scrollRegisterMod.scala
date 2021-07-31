@@ -9,10 +9,13 @@ import typings.ngxInfiniteScroll.modelsMod.IScrollerDistance
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollRegisterMod {
+  
+  @JSImport("ngx-infinite-scroll/src/services/scroll-register", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object InfiniteScrollActions {
     
@@ -33,19 +36,15 @@ object scrollRegisterMod {
     def UP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-register", "attachScrollEvent")
-  @js.native
-  def attachScrollEvent(options: IScrollRegisterConfig): Observable_[js.Object] = js.native
+  @scala.inline
+  def attachScrollEvent(options: IScrollRegisterConfig): Observable_[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachScrollEvent")(options.asInstanceOf[js.Any]).asInstanceOf[Observable_[js.Object]]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-register", "createScroller")
-  @js.native
-  def createScroller(config: IScroller): Observable_[IInfiniteScrollAction] = js.native
+  @scala.inline
+  def createScroller(config: IScroller): Observable_[IInfiniteScrollAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createScroller")(config.asInstanceOf[js.Any]).asInstanceOf[Observable_[IInfiniteScrollAction]]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-register", "toInfiniteScrollAction")
-  @js.native
-  def toInfiniteScrollAction(response: IScrollParams): IInfiniteScrollAction = js.native
+  @scala.inline
+  def toInfiniteScrollAction(response: IScrollParams): IInfiniteScrollAction = ^.asInstanceOf[js.Dynamic].applyDynamic("toInfiniteScrollAction")(response.asInstanceOf[js.Any]).asInstanceOf[IInfiniteScrollAction]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-register", "toInfiniteScrollParams")
-  @js.native
-  def toInfiniteScrollParams(lastScrollPosition: Double, stats: IPositionStats, distance: IScrollerDistance): IScrollParams = js.native
+  @scala.inline
+  def toInfiniteScrollParams(lastScrollPosition: Double, stats: IPositionStats, distance: IScrollerDistance): IScrollParams = (^.asInstanceOf[js.Dynamic].applyDynamic("toInfiniteScrollParams")(lastScrollPosition.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IScrollParams]
 }

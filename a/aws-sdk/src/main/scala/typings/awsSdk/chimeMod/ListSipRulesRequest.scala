@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSipRulesRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call. Defaults to 100.
     */
-  var MaxResults: js.UndefOr[ResultMax] = js.native
+  var MaxResults: js.UndefOr[ResultMax] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * The SIP media application ID.
     */
-  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.native
+  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ListSipRulesRequest {
   

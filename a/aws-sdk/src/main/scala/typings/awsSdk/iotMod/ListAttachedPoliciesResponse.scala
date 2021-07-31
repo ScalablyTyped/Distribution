@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAttachedPoliciesResponse extends StObject {
   
   /**
     * The token to retrieve the next set of results, or ``null`` if there are no more results.
     */
-  var nextMarker: js.UndefOr[Marker] = js.native
+  var nextMarker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The policies.
     */
-  var policies: js.UndefOr[Policies] = js.native
+  var policies: js.UndefOr[Policies] = js.undefined
 }
 object ListAttachedPoliciesResponse {
   

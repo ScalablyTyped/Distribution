@@ -5,13 +5,13 @@ import typings.easeljs.anon.HandleEvent
 import typings.easeljs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Ticker")
 @js.native
 class Ticker ()
-  extends typings.easeljs.createjs.Ticker
+  extends StObject
+     with typings.easeljs.createjs.Ticker
 /* static members */
 object Ticker {
   
@@ -37,54 +37,40 @@ object Ticker {
   @scala.inline
   def TIMEOUT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def addEventListener(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: HandleEvent): js.Object = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): js.Object = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: `0`): js.Object = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: `0`, useCapture: Boolean): js.Object = js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def addEventListener(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def addEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def addEventListener(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def addEventListener(`type`: String, listener: `0`, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   // EventDispatcher mixins
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: typings.easeljs.createjs.Stage): typings.easeljs.createjs.Stage = js.native
-  @JSGlobal("createjs.Ticker.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: typings.easeljs.createjs.Stage, useCapture: Boolean): typings.easeljs.createjs.Stage = js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: typings.easeljs.createjs.Stage): typings.easeljs.createjs.Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.easeljs.createjs.Stage]
+  @scala.inline
+  def addEventListener(`type`: String, listener: typings.easeljs.createjs.Stage, useCapture: Boolean): typings.easeljs.createjs.Stage = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.easeljs.createjs.Stage]
   
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: String): Boolean = js.native
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: String, target: js.Object): Boolean = js.native
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: js.Object): Boolean = js.native
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: js.Object, target: js.Object): Boolean = js.native
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: Event): Boolean = js.native
-  @JSGlobal("createjs.Ticker.dispatchEvent")
-  @js.native
-  def dispatchEvent(eventObj: Event, target: js.Object): Boolean = js.native
+  @scala.inline
+  def dispatchEvent(eventObj: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def dispatchEvent(eventObj: String, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def dispatchEvent(eventObj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def dispatchEvent(eventObj: js.Object, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def dispatchEvent(eventObj: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def dispatchEvent(eventObj: Event, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventObj.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   // properties
   @JSGlobal("createjs.Ticker.framerate")
@@ -94,69 +80,54 @@ object Ticker {
   def framerate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framerate")(x.asInstanceOf[js.Any])
   
   // methods
-  @JSGlobal("createjs.Ticker.getEventTime")
-  @js.native
-  def getEventTime(): Double = js.native
-  @JSGlobal("createjs.Ticker.getEventTime")
-  @js.native
-  def getEventTime(runTime: Boolean): Double = js.native
+  @scala.inline
+  def getEventTime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventTime")().asInstanceOf[Double]
+  @scala.inline
+  def getEventTime(runTime: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventTime")(runTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * @deprecated - use the 'framerate' property instead
     */
-  @JSGlobal("createjs.Ticker.getFPS")
-  @js.native
-  def getFPS(): Double = js.native
+  @scala.inline
+  def getFPS(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFPS")().asInstanceOf[Double]
   
   /**
     * @deprecated - use the 'interval' property instead
     */
-  @JSGlobal("createjs.Ticker.getInterval")
-  @js.native
-  def getInterval(): Double = js.native
+  @scala.inline
+  def getInterval(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterval")().asInstanceOf[Double]
   
-  @JSGlobal("createjs.Ticker.getMeasuredFPS")
-  @js.native
-  def getMeasuredFPS(): Double = js.native
-  @JSGlobal("createjs.Ticker.getMeasuredFPS")
-  @js.native
-  def getMeasuredFPS(ticks: Double): Double = js.native
+  @scala.inline
+  def getMeasuredFPS(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasuredFPS")().asInstanceOf[Double]
+  @scala.inline
+  def getMeasuredFPS(ticks: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasuredFPS")(ticks.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("createjs.Ticker.getMeasuredTickTime")
-  @js.native
-  def getMeasuredTickTime(): Double = js.native
-  @JSGlobal("createjs.Ticker.getMeasuredTickTime")
-  @js.native
-  def getMeasuredTickTime(ticks: Double): Double = js.native
+  @scala.inline
+  def getMeasuredTickTime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasuredTickTime")().asInstanceOf[Double]
+  @scala.inline
+  def getMeasuredTickTime(ticks: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasuredTickTime")(ticks.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * @deprecated - use the 'paused' property instead
     */
-  @JSGlobal("createjs.Ticker.getPaused")
-  @js.native
-  def getPaused(): Boolean = js.native
+  @scala.inline
+  def getPaused(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getPaused")().asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.Ticker.getTicks")
-  @js.native
-  def getTicks(): Double = js.native
-  @JSGlobal("createjs.Ticker.getTicks")
-  @js.native
-  def getTicks(pauseable: Boolean): Double = js.native
+  @scala.inline
+  def getTicks(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicks")().asInstanceOf[Double]
+  @scala.inline
+  def getTicks(pauseable: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicks")(pauseable.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("createjs.Ticker.getTime")
-  @js.native
-  def getTime(): Double = js.native
-  @JSGlobal("createjs.Ticker.getTime")
-  @js.native
-  def getTime(runTime: Boolean): Double = js.native
+  @scala.inline
+  def getTime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTime")().asInstanceOf[Double]
+  @scala.inline
+  def getTime(runTime: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTime")(runTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("createjs.Ticker.hasEventListener")
-  @js.native
-  def hasEventListener(`type`: String): Boolean = js.native
+  @scala.inline
+  def hasEventListener(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEventListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.Ticker.init")
-  @js.native
-  def init(): Unit = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   
   @JSGlobal("createjs.Ticker.interval")
   @js.native
@@ -170,166 +141,48 @@ object Ticker {
   @scala.inline
   def maxDelta_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxDelta")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: js.Function): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
+  @scala.inline
+  def off(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def off(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     useCapture: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: HandleEvent): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: `0`): Unit = js.native
-  @JSGlobal("createjs.Ticker.off")
-  @js.native
-  def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // It is necessary for "arguments.callee"
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  @scala.inline
+  def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Boolean,
     data: js.Any
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
@@ -337,232 +190,200 @@ object Ticker {
     once: Boolean,
     data: js.Any,
     useCapture: Boolean
-  ): js.Function = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: HandleEvent): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Boolean,
+    data: Unit,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
     data: js.Any
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
     data: js.Any,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
+    data: Unit,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
     once: Boolean,
     data: js.Any
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
     once: Boolean,
     data: js.Any,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean,
+    data: Unit,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
   def on(
     `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
     data: js.Any
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def on(
     `type`: String,
     listener: HandleEvent,
     scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
+    once: Boolean,
     data: js.Any,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def on(
     `type`: String,
     listener: HandleEvent,
     scope: js.Object,
     once: Boolean,
-    data: js.UndefOr[scala.Nothing],
+    data: Unit,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def on(
     `type`: String,
     listener: HandleEvent,
     scope: js.Object,
-    once: Boolean,
+    once: Unit,
     data: js.Any,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def on(
     `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean, data: js.Any): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.Object): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
+    listener: HandleEvent,
     scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
+    once: Unit,
+    data: Unit,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: js.UndefOr[scala.Nothing], data: js.Any): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
   def on(
     `type`: String,
-    listener: `0`,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
+    listener: HandleEvent,
+    scope: Unit,
+    once: Boolean,
     data: js.Any,
     useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.Object,
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
-  @JSGlobal("createjs.Ticker.on")
-  @js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], once.asInstanceOf[js.Any], data.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   @JSGlobal("createjs.Ticker.paused")
   @js.native
@@ -570,66 +391,52 @@ object Ticker {
   @scala.inline
   def paused_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paused")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("createjs.Ticker.removeAllEventListeners")
-  @js.native
-  def removeAllEventListeners(): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeAllEventListeners")
-  @js.native
-  def removeAllEventListeners(`type`: String): Unit = js.native
+  @scala.inline
+  def removeAllEventListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")().asInstanceOf[Unit]
+  @scala.inline
+  def removeAllEventListeners(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEventListeners")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
+  @scala.inline
+  def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def removeEventListener(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     useCapture: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: HandleEvent): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: `0`): Unit = js.native
-  @JSGlobal("createjs.Ticker.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: HandleEvent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: HandleEvent, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: `0`, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("createjs.Ticker.reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   /**
     * @deprecated - use the 'framerate' property instead
     */
-  @JSGlobal("createjs.Ticker.setFPS")
-  @js.native
-  def setFPS(value: Double): Unit = js.native
+  @scala.inline
+  def setFPS(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFPS")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @deprecated - use the 'interval' property instead
     */
-  @JSGlobal("createjs.Ticker.setInterval")
-  @js.native
-  def setInterval(interval: Double): Unit = js.native
+  @scala.inline
+  def setInterval(interval: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @deprecated - use the 'paused' property instead
     */
-  @JSGlobal("createjs.Ticker.setPaused")
-  @js.native
-  def setPaused(value: Boolean): Unit = js.native
+  @scala.inline
+  def setPaused(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("createjs.Ticker.timingMode")
   @js.native
@@ -646,7 +453,6 @@ object Ticker {
   @scala.inline
   def useRAF_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useRAF")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("createjs.Ticker.willTrigger")
-  @js.native
-  def willTrigger(`type`: String): Boolean = js.native
+  @scala.inline
+  def willTrigger(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("willTrigger")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

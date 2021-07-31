@@ -8,74 +8,72 @@ import typings.apolloReportingProtobuf.protobufMod.Trace.IQueryPlanNode
 import typings.apolloReportingProtobuf.protobufMod.google.protobuf.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITrace extends StObject {
   
   /** Trace cachePolicy */
-  var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.native
+  var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.undefined
   
   /** Trace clientAddress */
-  var clientAddress: js.UndefOr[String | Null] = js.native
+  var clientAddress: js.UndefOr[String | Null] = js.undefined
   
   /** Trace clientName */
-  var clientName: js.UndefOr[String | Null] = js.native
+  var clientName: js.UndefOr[String | Null] = js.undefined
   
   /** Trace clientReferenceId */
-  var clientReferenceId: js.UndefOr[String | Null] = js.native
+  var clientReferenceId: js.UndefOr[String | Null] = js.undefined
   
   /** Trace clientVersion */
-  var clientVersion: js.UndefOr[String | Null] = js.native
+  var clientVersion: js.UndefOr[String | Null] = js.undefined
   
   /** Trace details */
-  var details: js.UndefOr[IDetails | Null] = js.native
+  var details: js.UndefOr[IDetails | Null] = js.undefined
   
   /** Trace durationNs */
-  var durationNs: js.UndefOr[Double | Null] = js.native
+  var durationNs: js.UndefOr[Double | Null] = js.undefined
   
   /** Trace endTime */
-  var endTime: js.UndefOr[ITimestamp | Null] = js.native
+  var endTime: js.UndefOr[ITimestamp | Null] = js.undefined
   
   /** Trace forbiddenOperation */
-  var forbiddenOperation: js.UndefOr[Boolean | Null] = js.native
+  var forbiddenOperation: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Trace fullQueryCacheHit */
-  var fullQueryCacheHit: js.UndefOr[Boolean | Null] = js.native
+  var fullQueryCacheHit: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Trace http */
-  var http: js.UndefOr[IHTTP | Null] = js.native
+  var http: js.UndefOr[IHTTP | Null] = js.undefined
   
   /** Trace legacySignatureNeedsResigning */
-  var legacySignatureNeedsResigning: js.UndefOr[String | Null] = js.native
+  var legacySignatureNeedsResigning: js.UndefOr[String | Null] = js.undefined
   
   /** Trace persistedQueryHit */
-  var persistedQueryHit: js.UndefOr[Boolean | Null] = js.native
+  var persistedQueryHit: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Trace persistedQueryRegister */
-  var persistedQueryRegister: js.UndefOr[Boolean | Null] = js.native
+  var persistedQueryRegister: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Trace queryPlan */
-  var queryPlan: js.UndefOr[IQueryPlanNode | Null] = js.native
+  var queryPlan: js.UndefOr[IQueryPlanNode | Null] = js.undefined
   
   /** Trace registeredOperation */
-  var registeredOperation: js.UndefOr[Boolean | Null] = js.native
+  var registeredOperation: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Trace root */
-  var root: js.UndefOr[INode | Null] = js.native
+  var root: js.UndefOr[INode | Null] = js.undefined
   
   /** Trace signature */
-  var signature: js.UndefOr[String | Null] = js.native
+  var signature: js.UndefOr[String | Null] = js.undefined
   
   /** Trace startTime */
-  var startTime: js.UndefOr[ITimestamp | Null] = js.native
+  var startTime: js.UndefOr[ITimestamp | Null] = js.undefined
   
   /** Trace unexecutedOperationBody */
-  var unexecutedOperationBody: js.UndefOr[String | Null] = js.native
+  var unexecutedOperationBody: js.UndefOr[String | Null] = js.undefined
   
   /** Trace unexecutedOperationName */
-  var unexecutedOperationName: js.UndefOr[String | Null] = js.native
+  var unexecutedOperationName: js.UndefOr[String | Null] = js.undefined
 }
 object ITrace {
   

@@ -12,7 +12,7 @@ timing safe equals, but for the browser
 | Keywords           | timing |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 1639 |
+| # downloads        | 2112 |
 | # stars            | 0 |
 
 ## Links

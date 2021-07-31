@@ -3,31 +3,29 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionEvents extends StObject {
   
   /**
     * Generic container for events data. The dictionary key denotes the type of event and the list contains properties related to that event
     */
-  var events: StringDictionary[js.Array[ExtensionEvent]] = js.native
+  var events: StringDictionary[js.Array[ExtensionEvent]]
   
   /**
     * Id of the extension, this will never be sent back to the client. This field will mainly be used when EMS calls into Gallery REST API to update install/uninstall events for various extensions in one go.
     */
-  var extensionId: String = js.native
+  var extensionId: String
   
   /**
     * Name of the extension
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * Name of the publisher
     */
-  var publisherName: String = js.native
+  var publisherName: String
 }
 object ExtensionEvents {
   

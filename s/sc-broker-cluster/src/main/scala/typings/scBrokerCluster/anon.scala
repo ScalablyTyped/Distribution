@@ -3,17 +3,15 @@ package typings.scBrokerCluster
 import typings.scBrokerCluster.mod.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Targets extends StObject {
     
-    var targets: js.Array[Client] = js.native
+    var targets: js.Array[Client]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Targets {
     

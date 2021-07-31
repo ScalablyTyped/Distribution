@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.reactPortalTooltip.cardMod.Card.CardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolTipMod {
@@ -18,21 +17,22 @@ object toolTipMod {
   
   type Tooltip = Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
-  trait TooltipProps extends CardProps {
+  trait TooltipProps
+    extends StObject
+       with CardProps {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var parent: String | Element | RefObject[_] = js.native
+    var parent: String | Element | RefObject[js.Any]
     
-    var tooltipTimeout: js.UndefOr[Double] = js.native
+    var tooltipTimeout: js.UndefOr[Double] = js.undefined
   }
   object TooltipProps {
     
     @scala.inline
-    def apply(parent: String | Element | RefObject[_]): TooltipProps = {
+    def apply(parent: String | Element | RefObject[js.Any]): TooltipProps = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
@@ -53,7 +53,7 @@ object toolTipMod {
       def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       @scala.inline
-      def setParent(value: String | Element | RefObject[_]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      def setParent(value: String | Element | RefObject[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTooltipTimeout(value: Double): Self = StObject.set(x, "tooltipTimeout", value.asInstanceOf[js.Any])

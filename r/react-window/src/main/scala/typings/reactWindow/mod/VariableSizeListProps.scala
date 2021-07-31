@@ -3,11 +3,11 @@ package typings.reactWindow.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableSizeListProps extends ListProps {
+trait VariableSizeListProps
+  extends StObject
+     with ListProps {
   
   /**
     * Estimated size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
@@ -15,12 +15,12 @@ trait VariableSizeListProps extends ListProps {
     * This value is used to calculated the estimated total size of a list before its items have all been measured. The total size impacts user scrolling behavior.
     * It is updated whenever new items are measured.
     */
-  var estimatedItemSize: js.UndefOr[Double] = js.native
+  var estimatedItemSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Returns the size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
     */
-  def itemSize(index: Double): Double = js.native
+  def itemSize(index: Double): Double
 }
 object VariableSizeListProps {
   

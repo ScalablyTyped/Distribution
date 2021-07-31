@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,16 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .addWidget(image)
   *         .addWidget(textParagraph);
   */
-@js.native
 trait CardSection extends StObject {
   
-  def addWidget(widget: Widget): CardSection = js.native
+  def addWidget(widget: Widget): CardSection
   
-  def setCollapsible(collapsible: Boolean): CardSection = js.native
+  def setCollapsible(collapsible: Boolean): CardSection
   
-  def setHeader(header: String): CardSection = js.native
+  def setHeader(header: String): CardSection
   
-  def setNumUncollapsibleWidgets(numUncollapsibleWidgets: Integer): CardSection = js.native
+  def setNumUncollapsibleWidgets(numUncollapsibleWidgets: Integer): CardSection
 }
 object CardSection {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckDomainTransferabilityResponse extends StObject {
   
   /**
     * A complex type that contains information about whether the specified domain can be transferred to Route 53.
     */
-  var Transferability: DomainTransferability = js.native
+  var Transferability: DomainTransferability
 }
 object CheckDomainTransferabilityResponse {
   

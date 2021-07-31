@@ -5,7 +5,6 @@ import typings.firebaseAppTypes.anon.Components
 import typings.firebaseAppTypes.anon.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object privateMod {
@@ -45,10 +44,9 @@ object privateMod {
     def removeAuthTokenListener(fn: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FirebaseAuthTokenData extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
   }
   object FirebaseAuthTokenData {
     
@@ -68,17 +66,17 @@ object privateMod {
   
   @js.native
   trait FirebaseNamespace
-    extends typings.firebaseAppTypes.mod.FirebaseNamespace {
+    extends StObject
+       with typings.firebaseAppTypes.mod.FirebaseNamespace {
     
     var INTERNAL: Components = js.native
   }
   
-  @js.native
   trait FirebaseService extends StObject {
     
-    var INTERNAL: js.UndefOr[FirebaseServiceInternals] = js.native
+    var INTERNAL: js.UndefOr[FirebaseServiceInternals] = js.undefined
     
-    var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
+    var app: typings.firebaseAppTypes.mod.FirebaseApp
   }
   object FirebaseService {
     
@@ -109,14 +107,13 @@ object privateMod {
     FirebaseService
   ]
   
-  @js.native
   trait FirebaseServiceInternals extends StObject {
     
     /**
       * Delete the service and free it's resources - called from
       * app.delete().
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
   }
   object FirebaseServiceInternals {
     
@@ -136,10 +133,9 @@ object privateMod {
   
   type FirebaseServiceNamespace[T /* <: FirebaseService */] = js.Function1[/* app */ js.UndefOr[typings.firebaseAppTypes.mod.FirebaseApp], T]
   
-  @js.native
   trait PlatformLoggerService extends StObject {
     
-    def getPlatformInfoString(): String = js.native
+    def getPlatformInfoString(): String
   }
   object PlatformLoggerService {
     
@@ -160,10 +156,9 @@ object privateMod {
   /* augmented module */
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var `platform-logger`: PlatformLoggerService = js.native
+      var `platform-logger`: PlatformLoggerService
     }
     object NameServiceMapping {
       

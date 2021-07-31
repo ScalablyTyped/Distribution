@@ -3,14 +3,15 @@ package typings.sipJs
 import typings.sipJs.anon.Once
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterMod {
   
   @JSImport("sip.js/lib/api/emitter", "EmitterImpl")
   @js.native
-  class EmitterImpl[T] () extends Emitter[T] {
+  class EmitterImpl[T] ()
+    extends StObject
+       with Emitter[T] {
     
     /**
       * Emit change.

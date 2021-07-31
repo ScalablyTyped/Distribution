@@ -7,7 +7,6 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -289,21 +288,11 @@ object mod {
   class MultiDictionary[K, V] ()
     extends typings.typescriptCollections.multiDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
-    def this(toStrFunction: js.UndefOr[scala.Nothing], valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
-    def this(
-      toStrFunction: js.UndefOr[scala.Nothing],
-      valuesEqualsFunction: js.UndefOr[scala.Nothing],
-      allowDuplicateValues: Boolean
-    ) = this()
-    def this(
-      toStrFunction: js.UndefOr[scala.Nothing],
-      valuesEqualsFunction: IEqualsFunction[V],
-      allowDuplicateValues: Boolean
-    ) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(
       toStrFunction: js.Function1[/* key */ K, String],
-      valuesEqualsFunction: js.UndefOr[scala.Nothing],
+      valuesEqualsFunction: Unit,
       allowDuplicateValues: Boolean
     ) = this()
     def this(
@@ -311,6 +300,8 @@ object mod {
       valuesEqualsFunction: IEqualsFunction[V],
       allowDuplicateValues: Boolean
     ) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: Unit, allowDuplicateValues: Boolean) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V], allowDuplicateValues: Boolean) = this()
   }
   
   @JSImport("typescript-collections", "MultiRootTree")
@@ -318,8 +309,8 @@ object mod {
   class MultiRootTree ()
     extends typings.typescriptCollections.multiRootTreeMod.default {
     def this(rootIds: js.Array[String]) = this()
-    def this(rootIds: js.UndefOr[scala.Nothing], nodes: StringDictionary[js.Array[String]]) = this()
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
+    def this(rootIds: Unit, nodes: StringDictionary[js.Array[String]]) = this()
   }
   
   @JSImport("typescript-collections", "PriorityQueue")
@@ -404,111 +395,91 @@ object mod {
   
   object arrays {
     
-    @JSImport("typescript-collections", "arrays.contains")
+    @JSImport("typescript-collections", "arrays")
     @js.native
-    def contains[T](array: js.Array[T], item: T): Boolean = js.native
-    @JSImport("typescript-collections", "arrays.contains")
-    @js.native
-    def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typescript-collections", "arrays.copy")
-    @js.native
-    def copy[T](array: js.Array[T]): js.Array[T] = js.native
+    @scala.inline
+    def contains[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "arrays.equals")
-    @js.native
-    def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
-    @JSImport("typescript-collections", "arrays.equals")
-    @js.native
-    def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    @scala.inline
+    def copy[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    @JSImport("typescript-collections", "arrays.forEach")
-    @js.native
-    def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = js.native
+    @scala.inline
+    def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "arrays.frequency")
-    @js.native
-    def frequency[T](array: js.Array[T], item: T): Double = js.native
-    @JSImport("typescript-collections", "arrays.frequency")
-    @js.native
-    def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    @scala.inline
+    def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typescript-collections", "arrays.indexOf")
-    @js.native
-    def indexOf[T](array: js.Array[T], item: T): Double = js.native
-    @JSImport("typescript-collections", "arrays.indexOf")
-    @js.native
-    def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    @scala.inline
+    def frequency[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("typescript-collections", "arrays.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: js.Array[T], item: T): Double = js.native
-    @JSImport("typescript-collections", "arrays.lastIndexOf")
-    @js.native
-    def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+    @scala.inline
+    def indexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("typescript-collections", "arrays.remove")
-    @js.native
-    def remove[T](array: js.Array[T], item: T): Boolean = js.native
-    @JSImport("typescript-collections", "arrays.remove")
-    @js.native
-    def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    @scala.inline
+    def lastIndexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("typescript-collections", "arrays.swap")
-    @js.native
-    def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = js.native
+    @scala.inline
+    def remove[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "arrays.toString")
-    @js.native
-    def toString_[T](array: js.Array[T]): String = js.native
+    @scala.inline
+    def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(array.asInstanceOf[js.Any], i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def toString_[T](array: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object util {
     
-    @JSImport("typescript-collections", "util.compareToEquals")
+    @JSImport("typescript-collections", "util")
     @js.native
-    def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typescript-collections", "util.defaultCompare")
-    @js.native
-    def defaultCompare[T](a: T, b: T): Double = js.native
+    @scala.inline
+    def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compareToEquals")(compareFunction.asInstanceOf[js.Any]).asInstanceOf[IEqualsFunction[T]]
     
-    @JSImport("typescript-collections", "util.defaultEquals")
-    @js.native
-    def defaultEquals[T](a: T, b: T): Boolean = js.native
+    @scala.inline
+    def defaultCompare[T](a: T, b: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("typescript-collections", "util.defaultToString")
-    @js.native
-    def defaultToString(item: js.Any): String = js.native
+    @scala.inline
+    def defaultEquals[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "util.has")
-    @js.native
-    def has(obj: js.Any, prop: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultToString(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultToString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typescript-collections", "util.isFunction")
-    @js.native
-    def isFunction(func: js.Any): Boolean = js.native
+    @scala.inline
+    def has(obj: js.Any, prop: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("typescript-collections", "util.isString")
-    @js.native
-    def isString(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isFunction(func: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "util.isUndefined")
-    @js.native
-    def isUndefined(obj: js.Any): /* is undefined */ Boolean = js.native
+    @scala.inline
+    def isString(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("typescript-collections", "util.makeString")
-    @js.native
-    def makeString[T](item: T): String = js.native
-    @JSImport("typescript-collections", "util.makeString")
-    @js.native
-    def makeString[T](item: T, join: String): String = js.native
+    @scala.inline
+    def isUndefined(obj: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
     
-    @JSImport("typescript-collections", "util.reverseCompareFunction")
-    @js.native
-    def reverseCompareFunction[T](): ICompareFunction[T] = js.native
-    @JSImport("typescript-collections", "util.reverseCompareFunction")
-    @js.native
-    def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = js.native
+    @scala.inline
+    def makeString[T](item: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def makeString[T](item: T, join: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def reverseCompareFunction[T](): ICompareFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCompareFunction")().asInstanceOf[ICompareFunction[T]]
+    @scala.inline
+    def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCompareFunction")(compareFunction.asInstanceOf[js.Any]).asInstanceOf[ICompareFunction[T]]
   }
 }

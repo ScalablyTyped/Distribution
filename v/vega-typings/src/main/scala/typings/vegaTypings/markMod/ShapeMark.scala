@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.ShapeEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[ShapeEncodeEntry]
      with Mark {
   
-  var `type`: shape = js.native
+  var `type`: shape
 }
 object ShapeMark {
   
   @scala.inline
-  def apply(`type`: shape): ShapeMark = {
+  def apply(): ShapeMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("shape")
     __obj.asInstanceOf[ShapeMark]
   }
   

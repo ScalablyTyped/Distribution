@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static class that provides known USIM file paths. */
 @JSGlobal("Windows.Networking.NetworkOperators.KnownUSimFilePaths")
 @js.native
 abstract class KnownUSimFilePaths ()
-  extends typings.winrtUwp.Windows.Networking.NetworkOperators.KnownUSimFilePaths
+  extends StObject
+     with typings.winrtUwp.Windows.Networking.NetworkOperators.KnownUSimFilePaths
 object KnownUSimFilePaths {
   
   @JSGlobal("Windows.Networking.NetworkOperators.KnownUSimFilePaths")

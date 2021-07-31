@@ -13,14 +13,13 @@ import typings.levelup.mod.LevelUp
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("datastore-level", JSImport.Namespace)
   @js.native
-  val ^ : LevelDatastoreConstructor = js.native
+  val ^ : js.Object & LevelDatastoreConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("datastore-level", JSImport.Namespace)
@@ -40,31 +39,34 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait LevelDatastoreBatch[Value] extends Batch[Value] {
+  trait LevelDatastoreBatch[Value]
+    extends StObject
+       with Batch[Value] {
     
     var ops: js.Array[AbstractBatch[String, Value]] = js.native
   }
   
   @js.native
   trait LevelDatastoreConstructor
-    extends Instantiable1[/* path */ String, LevelDatastore[Buffer]]
+    extends StObject
+       with Instantiable1[/* path */ String, LevelDatastore[Buffer]]
        with Instantiable2[/* path */ String, /* options */ LevelDatastoreOptions, LevelDatastore[Buffer]] {
     
     def apply(path: String): LevelDatastore[Buffer] = js.native
     def apply(path: String, options: LevelDatastoreOptions): LevelDatastore[Buffer] = js.native
   }
   
-  @js.native
   trait LevelDatastoreOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var db: js.UndefOr[
         js.Function2[
           /* location */ String, 
           /* options */ js.UndefOr[js.Any], 
-          LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]
+          LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object LevelDatastoreOptions {
     
@@ -79,7 +81,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setDb(
-        value: (/* location */ String, /* options */ js.UndefOr[js.Any]) => LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]
+        value: (/* location */ String, /* options */ js.UndefOr[js.Any]) => LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
       ): Self = StObject.set(x, "db", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -87,8 +89,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = LevelDatastoreConstructor
+  type _To = js.Object & LevelDatastoreConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: LevelDatastoreConstructor = ^
+  override def _to: js.Object & LevelDatastoreConstructor = ^
 }

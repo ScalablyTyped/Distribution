@@ -2,28 +2,28 @@ package typings.isBase64
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-base64", JSImport.Namespace)
-  @js.native
-  def apply(string: String): Boolean = js.native
-  @JSImport("is-base64", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: IsBase64Options): Boolean = js.native
+  @scala.inline
+  def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(string: String, options: IsBase64Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  @JSImport("is-base64", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IsBase64Options extends StObject {
     
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var allowMime: js.UndefOr[Boolean] = js.native
+    var allowMime: js.UndefOr[Boolean] = js.undefined
     
-    var mimeRequired: js.UndefOr[Boolean] = js.native
+    var mimeRequired: js.UndefOr[Boolean] = js.undefined
     
-    var paddingRequired: js.UndefOr[Boolean] = js.native
+    var paddingRequired: js.UndefOr[Boolean] = js.undefined
   }
   object IsBase64Options {
     

@@ -2,21 +2,19 @@ package typings.reveal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/hakimel/reveal.js/#multiplexing
-@js.native
 trait MultiplexConfig extends StObject {
   
   // Obtained from the socket.io server
-  var id: String = js.native
+  var id: String
   
   // Obtained from the socket.io server. Gives this (the master) control of the presentation
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
   // Location of socket.io server
-  var url: String = js.native
+  var url: String
 }
 object MultiplexConfig {
   

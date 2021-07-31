@@ -2,41 +2,39 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specification of a set of documents to listen to.
   */
-@js.native
 trait SchemaTarget extends StObject {
   
   /**
     * A target specified by a set of document names.
     */
-  var documents: js.UndefOr[SchemaDocumentsTarget] = js.native
+  var documents: js.UndefOr[SchemaDocumentsTarget] = js.undefined
   
   /**
     * If the target should be removed once it is current and consistent.
     */
-  var once: js.UndefOr[Boolean] = js.native
+  var once: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A target specified by a query.
     */
-  var query: js.UndefOr[SchemaQueryTarget] = js.native
+  var query: js.UndefOr[SchemaQueryTarget] = js.undefined
   
   /**
     * Start listening after a specific `read_time`.  The client must know the
     * state of matching documents at this time.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * A resume token from a prior TargetChange for an identical target.  Using
     * a resume token with a different target is unsupported and may fail.
     */
-  var resumeToken: js.UndefOr[String] = js.native
+  var resumeToken: js.UndefOr[String] = js.undefined
   
   /**
     * A client provided target ID.  If not set, the server will assign an ID
@@ -45,7 +43,7 @@ trait SchemaTarget extends StObject {
     * All targets with client provided IDs must be added before adding a target
     * that needs a server-assigned id.
     */
-  var targetId: js.UndefOr[Double] = js.native
+  var targetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaTarget {
   

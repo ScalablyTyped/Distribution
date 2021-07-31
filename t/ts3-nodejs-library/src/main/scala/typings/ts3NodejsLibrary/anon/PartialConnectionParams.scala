@@ -3,38 +3,36 @@ package typings.ts3NodejsLibrary.anon
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/TeamSpeak.TeamSpeak.ConnectionParams> */
-@js.native
 trait PartialConnectionParams extends StObject {
   
-  var autoConnect: js.UndefOr[Boolean] = js.native
+  var autoConnect: js.UndefOr[Boolean] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var ignoreQueries: js.UndefOr[Boolean] = js.native
+  var ignoreQueries: js.UndefOr[Boolean] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var keepAliveTimeout: js.UndefOr[Double] = js.native
+  var keepAliveTimeout: js.UndefOr[Double] = js.undefined
   
-  var localAddress: js.UndefOr[String] = js.native
+  var localAddress: js.UndefOr[String] = js.undefined
   
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[QueryProtocol] = js.native
+  var protocol: js.UndefOr[QueryProtocol] = js.undefined
   
-  var queryport: js.UndefOr[Double] = js.native
+  var queryport: js.UndefOr[Double] = js.undefined
   
-  var readyTimeout: js.UndefOr[Double] = js.native
+  var readyTimeout: js.UndefOr[Double] = js.undefined
   
-  var serverport: js.UndefOr[Double] = js.native
+  var serverport: js.UndefOr[Double] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object PartialConnectionParams {
   

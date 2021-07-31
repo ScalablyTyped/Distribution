@@ -14,32 +14,30 @@ import typings.react.mod.FC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeightHover extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
   var extend: js.UndefOr[
     ExtendType[
       PropsOf[
         FC[
-          AnchorProps with (Omit[
+          AnchorProps & (Omit[
             DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
             color
           ])
         ]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[TextDecoration] = js.native
+  var hover: js.UndefOr[TextDecoration] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object FontWeightHover {
   
@@ -63,7 +61,7 @@ object FontWeightHover {
       value: ExtendType[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])
@@ -77,7 +75,7 @@ object FontWeightHover {
       value: /* props */ ExtendProps[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])
@@ -86,7 +84,7 @@ object FontWeightHover {
         ] => ExtendValue[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])

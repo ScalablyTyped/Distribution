@@ -13,12 +13,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.arcgisJsApi.arcgisJsApiStrings.values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SliderViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented {
   
   /**
@@ -55,7 +55,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getLabelForValue)
     */
   def getLabelForValue(value: Double): String = js.native
-  def getLabelForValue(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def getLabelForValue(value: Double, `type`: Unit, index: Double): String = js.native
   @JSName("getLabelForValue")
   def getLabelForValue_max(value: Double, `type`: max): String = js.native
   @JSName("getLabelForValue")
@@ -79,7 +79,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -114,7 +114,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction).
     *
@@ -149,7 +149,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *

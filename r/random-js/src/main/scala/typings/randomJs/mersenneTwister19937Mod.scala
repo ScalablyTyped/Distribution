@@ -4,7 +4,6 @@ import typings.randomJs.typesMod.Engine
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mersenneTwister19937Mod {
@@ -15,7 +14,9 @@ object mersenneTwister19937Mod {
     * MersenneTwister19937 should not be instantiated directly.
     * Instead, use the static methods `seed`, `seedWithArray`, or `autoSeed`.
     */
-  class MersenneTwister19937 protected () extends Engine {
+  class MersenneTwister19937 protected ()
+    extends StObject
+       with Engine {
     
     val data: js.Any = js.native
     
@@ -35,6 +36,9 @@ object mersenneTwister19937Mod {
     
     var index: js.Any = js.native
     
+    /* CompleteClass */
+    override def next(): Double = js.native
+    
     var seed: js.Any = js.native
     
     var seedWithArray: js.Any = js.native
@@ -44,28 +48,29 @@ object mersenneTwister19937Mod {
   /* static members */
   object MersenneTwister19937 {
     
+    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a MersenneTwister19937 seeded with the current time and
       * a series of natively-generated random values
       */
-    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.autoSeed")
-    @js.native
-    def autoSeed(): MersenneTwister19937 = js.native
+    @scala.inline
+    def autoSeed(): MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("autoSeed")().asInstanceOf[MersenneTwister19937]
     
     /**
       * Returns a MersenneTwister19937 seeded with an initial int32 value
       * @param initial the initial seed value
       */
-    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.seed")
-    @js.native
-    def seed(initial: Double): MersenneTwister19937 = js.native
+    @scala.inline
+    def seed(initial: Double): MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(initial.asInstanceOf[js.Any]).asInstanceOf[MersenneTwister19937]
     
     /**
       * Returns a MersenneTwister19937 seeded with zero or more int32 values
       * @param source A series of int32 values
       */
-    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.seedWithArray")
-    @js.native
-    def seedWithArray(source: ArrayLike[Double]): MersenneTwister19937 = js.native
+    @scala.inline
+    def seedWithArray(source: ArrayLike[Double]): MersenneTwister19937 = ^.asInstanceOf[js.Dynamic].applyDynamic("seedWithArray")(source.asInstanceOf[js.Any]).asInstanceOf[MersenneTwister19937]
   }
 }

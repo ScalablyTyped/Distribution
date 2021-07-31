@@ -2,17 +2,15 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationControlDataArrayReplyCallback extends StObject {
   
   /**
     * Called when the callee application calls `RequestedApplicationControl.replyFailure()`.
     *
     */
-  var onfailure: js.UndefOr[js.Function0[Unit]] = js.native
+  var onfailure: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called when the callee application calls `RequestedApplicationControl.replyResult()`.
@@ -20,7 +18,7 @@ trait ApplicationControlDataArrayReplyCallback extends StObject {
     *
     * @param data An array of `ApplicationControlData` objects.
     */
-  var onsuccess: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Array[ApplicationControlData]], Unit]] = js.native
+  var onsuccess: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Array[ApplicationControlData]], Unit]] = js.undefined
 }
 object ApplicationControlDataArrayReplyCallback {
   

@@ -6,41 +6,41 @@ import typings.extjs.Ext.draw.ISprite
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object series {
   
-  @js.native
-  trait IArea extends ICartesian {
+  trait IArea
+    extends StObject
+       with ICartesian {
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Highlight the specified item
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("highlightItem")
-    var highlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var highlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Highlight this entire series
       * @param item Object Info about the item; same format as returned by getItemForPoint.
       */
-    var highlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var highlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Un highlights the specified item
       * @param item Object Info about the item; same format as returned by getItemForPoint
       */
     @JSName("unHighlightItem")
-    var unHighlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var unHighlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] UnHighlight this entire series
       * @param item Object Info about the item; same format as returned by getItemForPoint.
       */
-    var unHighlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var unHighlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IArea {
     
@@ -91,42 +91,43 @@ object series {
     }
   }
   
-  @js.native
-  trait IBar extends ICartesian {
+  trait IBar
+    extends StObject
+       with ICartesian {
     
     /** [Config Option] (Boolean) */
-    var column: js.UndefOr[Boolean] = js.native
+    var column: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var groupGutter: js.UndefOr[Double] = js.native
+    var groupGutter: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var gutter: js.UndefOr[Double] = js.native
+    var gutter: js.UndefOr[Double] = js.undefined
     
     /** [Method] Highlight the given series item
       * @param item Object
       */
     @JSName("highlightItem")
-    var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Un highlight any existing highlights */
     @JSName("unHighlightItem")
-    var unHighlightItem_IBar: js.UndefOr[js.Function0[Unit]] = js.native
+    var unHighlightItem_IBar: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var xPadding: js.UndefOr[js.Any] = js.native
+    var xPadding: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var yPadding: js.UndefOr[js.Any] = js.native
+    var yPadding: js.UndefOr[js.Any] = js.undefined
   }
   object IBar {
     
@@ -201,11 +202,12 @@ object series {
     }
   }
   
-  @js.native
-  trait ICartesian extends ISeries {
+  trait ICartesian
+    extends StObject
+       with ISeries {
     
     /** [Config Option] (String/String[]) */
-    var axis: js.UndefOr[js.Any] = js.native
+    var axis: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Iterates over a given record s values for each of this series s yFields executing a given function for each value
       * @param record Ext.data.Model
@@ -219,33 +221,33 @@ object series {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Calculate the min and max values for this series s xField
       * @returns Array [min, max]
       */
-    var getMinMaxXValues: js.UndefOr[js.Function0[Array]] = js.native
+    var getMinMaxXValues: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Calculate the min and max values for this series s yField s
       * @returns Array [min, max]
       */
-    var getMinMaxYValues: js.UndefOr[js.Function0[Array]] = js.native
+    var getMinMaxYValues: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns an array of functions each of which returns the value of the yField corresponding to function s index in the
       * @returns Array array of accessor functions
       */
-    var getYValueAccessors: js.UndefOr[js.Function0[Array]] = js.native
+    var getYValueAccessors: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the number of yField values taking into account fields combined via legend drag drop
       * @returns Number
       */
-    var getYValueCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getYValueCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (String) */
-    var xField: js.UndefOr[String] = js.native
+    var xField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var yField: js.UndefOr[js.Any] = js.native
+    var yField: js.UndefOr[js.Any] = js.undefined
   }
   object ICartesian {
     
@@ -310,12 +312,13 @@ object series {
     }
   }
   
-  @js.native
-  trait IColumn extends IBar {
+  trait IColumn
+    extends StObject
+       with IBar {
     
     /** [Config Option] (String) */
     @JSName("axis")
-    var axis_IColumn: js.UndefOr[String] = js.native
+    var axis_IColumn: js.UndefOr[String] = js.undefined
   }
   object IColumn {
     
@@ -336,31 +339,32 @@ object series {
     }
   }
   
-  @js.native
-  trait IGauge extends ISeries {
+  trait IGauge
+    extends StObject
+       with ISeries {
     
     /** [Config Option] (String) */
-    var angleField: js.UndefOr[String] = js.native
+    var angleField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var donut: js.UndefOr[js.Any] = js.native
+    var donut: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var highlightDuration: js.UndefOr[Double] = js.native
+    var highlightDuration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var needle: js.UndefOr[Boolean] = js.native
+    var needle: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the Gauge chart to the current specified value
       * @param value Object
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object IGauge {
     
@@ -417,29 +421,30 @@ object series {
     }
   }
   
-  @js.native
-  trait ILine extends ICartesian {
+  trait ILine
+    extends StObject
+       with ICartesian {
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.native
+    var markerConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var selectionTolerance: js.UndefOr[Double] = js.native
+    var selectionTolerance: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showMarkers: js.UndefOr[Boolean] = js.native
+    var showMarkers: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var smooth: js.UndefOr[js.Any] = js.native
+    var smooth: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object ILine {
     
@@ -496,47 +501,48 @@ object series {
     }
   }
   
-  @js.native
-  trait IPie extends ISeries {
+  trait IPie
+    extends StObject
+       with ISeries {
     
     /** [Config Option] (String) */
-    var angleField: js.UndefOr[String] = js.native
+    var angleField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Array) */
-    var colorSet: js.UndefOr[Array] = js.native
+    var colorSet: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var donut: js.UndefOr[js.Any] = js.native
+    var donut: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var highlightDuration: js.UndefOr[Double] = js.native
+    var highlightDuration: js.UndefOr[Double] = js.undefined
     
     /** [Method] Highlight the specified item
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("highlightItem")
-    var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var lengthField: js.UndefOr[String] = js.native
+    var lengthField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Un highlights the specified item
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("unHighlightItem")
-    var unHighlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+    var unHighlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var xField: js.UndefOr[String] = js.native
+    var xField: js.UndefOr[String] = js.undefined
   }
   object IPie {
     
@@ -617,26 +623,27 @@ object series {
     }
   }
   
-  @js.native
-  trait IRadar extends ISeries {
+  trait IRadar
+    extends StObject
+       with ISeries {
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.native
+    var markerConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showMarkers: js.UndefOr[Boolean] = js.native
+    var showMarkers: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var xField: js.UndefOr[String] = js.native
+    var xField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var yField: js.UndefOr[String] = js.native
+    var yField: js.UndefOr[String] = js.undefined
   }
   object IRadar {
     
@@ -687,17 +694,18 @@ object series {
     }
   }
   
-  @js.native
-  trait IScatter extends ICartesian {
+  trait IScatter
+    extends StObject
+       with ICartesian {
     
     /** [Method] Draws the series for the current chart  */
-    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+    var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.native
+    var markerConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object IScatter {
     
@@ -734,51 +742,52 @@ object series {
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
   - typings.extjs.Ext.chart.IHighlight because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined highlight, highlightCfg, highlightItem, unHighlightItem
-  - typings.extjs.Ext.chart.ILabel because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined label, onCreateLabel, onPlaceLabel */ @js.native
-  trait ISeries extends IObservable {
+  - typings.extjs.Ext.chart.ILabel because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined label, onCreateLabel, onPlaceLabel */ trait ISeries
+    extends StObject
+       with IObservable {
     
     /** [Method] Iterate over each of the records for this series
       * @param fn Function The function to execute for each record.
       * @param scope Object Scope for the fn.
       */
-    var eachRecord: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var eachRecord: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] For a given x y point relative to the Surface find a corresponding item from this series if any
       * @param x Number
       * @param y Number
       * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain the following:
       */
-    var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], _]] = js.native
+    var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], js.Any]] = js.undefined
     
     /** [Method] Returns a string with the color to be used for the series legend item
       * @param index Object
       */
-    var getLegendColor: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.native
+    var getLegendColor: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Return the number of records being displayed in this series  */
-    var getRecordCount: js.UndefOr[js.Function0[Unit]] = js.native
+    var getRecordCount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Hides all the elements in the series  */
-    var hideAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var highlight: js.UndefOr[js.Any] = js.native
+    var highlight: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var highlightCfg: js.UndefOr[js.Any] = js.native
+    var highlightCfg: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Highlight the given series item
       * @param item Object Info about the item; same format as returned by #getItemForPoint.
       */
-    var highlightItem: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+    var highlightItem: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Determines whether the series item at the given index has been excluded i e
       * @param index Object
       */
-    var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.native
+    var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Called each time a new label is created
       * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
@@ -789,7 +798,7 @@ object series {
       */
     var onCreateLabel: js.UndefOr[
         js.Function4[js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], ISprite]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Called for updating the position of the label
       * @param label Ext.draw.Sprite The sprite that draws the label.
@@ -811,10 +820,10 @@ object series {
           js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Function) */
-    var renderer: js.UndefOr[js.Any] = js.native
+    var renderer: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Changes the value of the title for the series
       * @param index Number
@@ -822,28 +831,28 @@ object series {
       */
     var setTitle: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* title */ js.UndefOr[String], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Array) */
-    var shadowAttributes: js.UndefOr[Array] = js.native
+    var shadowAttributes: js.UndefOr[Array] = js.undefined
     
     /** [Method] Shows all the elements in the series  */
-    var showAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var showAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showInLegend: js.UndefOr[Boolean] = js.native
+    var showInLegend: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var tips: js.UndefOr[js.Any] = js.native
+    var tips: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** [Method] Un highlight any existing highlights */
-    var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISeries {
     
@@ -863,7 +872,7 @@ object series {
       def setEachRecordUndefined: Self = StObject.set(x, "eachRecord", js.undefined)
       
       @scala.inline
-      def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => _): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+      def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)

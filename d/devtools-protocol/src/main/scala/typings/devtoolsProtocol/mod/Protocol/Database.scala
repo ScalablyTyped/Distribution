@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Database {
   
-  @js.native
   trait AddDatabaseEvent extends StObject {
     
-    var database: typings.devtoolsProtocol.mod.Protocol.Database.Database = js.native
+    var database: typings.devtoolsProtocol.mod.Protocol.Database.Database
   }
   object AddDatabaseEvent {
     
@@ -28,28 +26,27 @@ object Database {
     }
   }
   
-  @js.native
   trait Database extends StObject {
     
     /**
       * Database domain.
       */
-    var domain: String = js.native
+    var domain: String
     
     /**
       * Database ID.
       */
-    var id: DatabaseId = js.native
+    var id: DatabaseId
     
     /**
       * Database name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Database version.
       */
-    var version: String = js.native
+    var version: String
   }
   object Database {
     
@@ -78,18 +75,17 @@ object Database {
   
   type DatabaseId = String
   
-  @js.native
   trait Error extends StObject {
     
     /**
       * Error code.
       */
-    var code: integer = js.native
+    var code: integer
     
     /**
       * Error message.
       */
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -110,12 +106,11 @@ object Database {
     }
   }
   
-  @js.native
   trait ExecuteSQLRequest extends StObject {
     
-    var databaseId: DatabaseId = js.native
+    var databaseId: DatabaseId
     
-    var query: String = js.native
+    var query: String
   }
   object ExecuteSQLRequest {
     
@@ -136,14 +131,13 @@ object Database {
     }
   }
   
-  @js.native
   trait ExecuteSQLResponse extends StObject {
     
-    var columnNames: js.UndefOr[js.Array[String]] = js.native
+    var columnNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sqlError: js.UndefOr[Error] = js.native
+    var sqlError: js.UndefOr[Error] = js.undefined
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ExecuteSQLResponse {
     
@@ -172,7 +166,7 @@ object Database {
       def setSqlErrorUndefined: Self = StObject.set(x, "sqlError", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -182,10 +176,9 @@ object Database {
     }
   }
   
-  @js.native
   trait GetDatabaseTableNamesRequest extends StObject {
     
-    var databaseId: DatabaseId = js.native
+    var databaseId: DatabaseId
   }
   object GetDatabaseTableNamesRequest {
     
@@ -203,10 +196,9 @@ object Database {
     }
   }
   
-  @js.native
   trait GetDatabaseTableNamesResponse extends StObject {
     
-    var tableNames: js.Array[String] = js.native
+    var tableNames: js.Array[String]
   }
   object GetDatabaseTableNamesResponse {
     

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ciphertextMod {
@@ -49,6 +48,10 @@ object ciphertextMod {
   /* static members */
   object Ciphertext {
     
+    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Ciphertext resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,45 +61,39 @@ object ciphertextMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Ciphertext = js.native
-    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Ciphertext = js.native
-    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CiphertextState): Ciphertext = js.native
-    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): Ciphertext = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CiphertextState): Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Ciphertext]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): Ciphertext = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Ciphertext]
     
     /**
       * Returns true if the given object is an instance of Ciphertext.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kms/ciphertext", "Ciphertext.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ Boolean]
   }
   
-  @js.native
   trait CiphertextArgs extends StObject {
     
     /**
       * An optional mapping that makes up the encryption context.
       */
-    val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Globally unique key ID for the customer master key.
       */
-    val keyId: Input[String] = js.native
+    val keyId: Input[String]
     
     /**
       * Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.
       */
-    val plaintext: Input[String] = js.native
+    val plaintext: Input[String]
   }
   object CiphertextArgs {
     
@@ -123,28 +120,27 @@ object ciphertextMod {
     }
   }
   
-  @js.native
   trait CiphertextState extends StObject {
     
     /**
       * Base64 encoded ciphertext
       */
-    val ciphertextBlob: js.UndefOr[Input[String]] = js.native
+    val ciphertextBlob: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An optional mapping that makes up the encryption context.
       */
-    val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Globally unique key ID for the customer master key.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.
       */
-    val plaintext: js.UndefOr[Input[String]] = js.native
+    val plaintext: js.UndefOr[Input[String]] = js.undefined
   }
   object CiphertextState {
     

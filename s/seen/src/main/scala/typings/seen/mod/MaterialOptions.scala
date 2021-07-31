@@ -2,21 +2,19 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaterialOptions extends StObject {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var metallic: js.UndefOr[Boolean] = js.native
+  var metallic: js.UndefOr[Boolean] = js.undefined
   
-  var shader: js.UndefOr[Shader] = js.native
+  var shader: js.UndefOr[Shader] = js.undefined
   
-  var specularColor: js.UndefOr[Color] = js.native
+  var specularColor: js.UndefOr[Color] = js.undefined
   
-  var specularExponent: js.UndefOr[Double] = js.native
+  var specularExponent: js.UndefOr[Double] = js.undefined
 }
 object MaterialOptions {
   

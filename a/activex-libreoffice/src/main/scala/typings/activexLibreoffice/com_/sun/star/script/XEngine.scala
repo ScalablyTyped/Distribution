@@ -5,69 +5,69 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to control a scripting engine.
   * @deprecated Deprecated
   */
-@js.native
-trait XEngine extends XInterface {
+trait XEngine
+  extends StObject
+     with XInterface {
   
   /** gets an interface to the object which is the scripting root. */
-  var Root: XInterface = js.native
+  var Root: XInterface
   
   /**
     * adds an engine listener.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def addEngineListener(Listener: XEngineListener): Unit = js.native
+  def addEngineListener(Listener: XEngineListener): Unit
   
   /**
     * terminates the execution of the running script.
     *
     * The waiting queue is cleared too.
     */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** compiles a script module in the scope of the root object. */
-  def compile(ModuleName: String, Script: String, CreateDebugInfo: Boolean): Boolean = js.native
+  def compile(ModuleName: String, Script: String, CreateDebugInfo: Boolean): Boolean
   
   /** gets an interface to the object which is the scripting root. */
-  def getRoot(): XInterface = js.native
+  def getRoot(): XInterface
   
   /**
     * removes an engine listener.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def removeEngineListener(Listener: XEngineListener): Unit = js.native
+  def removeEngineListener(Listener: XEngineListener): Unit
   
   /**
     * runs a script specified by a string.
     *
     * The arguments given in **aArgs** can be ignored by the engine. The Script is executed synchronously.
     */
-  def run(aScript: String, xThis: XInterface, aArgs: SeqEquiv[_]): js.Any = js.native
+  def run(aScript: String, xThis: XInterface, aArgs: SeqEquiv[js.Any]): js.Any
   
   /**
     * runs the script specified by a string and makes callbacks.
     *
     * The arguments given in **aArgs** can be ignored by the engine. The script is executed asynchronously.
     */
-  def runAsync(acript: String, xThis: XInterface, args: SeqEquiv[_], xCallback: XEngineListener): Unit = js.native
+  def runAsync(acript: String, xThis: XInterface, args: SeqEquiv[js.Any], xCallback: XEngineListener): Unit
   
   /** sets an access object to get external functions. */
-  def setLibraryAccess(Library: XLibraryAccess): Unit = js.native
+  def setLibraryAccess(Library: XLibraryAccess): Unit
   
   /**
     * sets an interface to an object as a scripting root.
     *
     * If the root object implements the {@link XInvocation} interface, then the engine uses this interface to set/get properties and call methods.
     */
-  def setRoot(xRoot: XInterface): Unit = js.native
+  def setRoot(xRoot: XInterface): Unit
 }
 object XEngine {
   
@@ -82,8 +82,8 @@ object XEngine {
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEngineListener: XEngineListener => Unit,
-    run: (String, XInterface, SeqEquiv[_]) => js.Any,
-    runAsync: (String, XInterface, SeqEquiv[_], XEngineListener) => Unit,
+    run: (String, XInterface, SeqEquiv[js.Any]) => js.Any,
+    runAsync: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit,
     setLibraryAccess: XLibraryAccess => Unit,
     setRoot: XInterface => Unit
   ): XEngine = {
@@ -113,10 +113,10 @@ object XEngine {
     def setRoot(value: XInterface): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: (String, XInterface, SeqEquiv[_]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+    def setRun(value: (String, XInterface, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRunAsync(value: (String, XInterface, SeqEquiv[_], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
+    def setRunAsync(value: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
     
     @scala.inline
     def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = StObject.set(x, "setLibraryAccess", js.Any.fromFunction1(value))

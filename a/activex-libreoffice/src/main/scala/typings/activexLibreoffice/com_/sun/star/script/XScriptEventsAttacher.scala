@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface can be used to attach script events to a number of objects that give access to the definition of events that should be attached to
   * them, e.g., by supporting XEventsSupplier
   */
-@js.native
-trait XScriptEventsAttacher extends XInterface {
+trait XScriptEventsAttacher
+  extends StObject
+     with XInterface {
   
   /**
     * Attaches the events defined by {@link XScriptEventsSupplier} to the corresponding object implementing {@link XScriptEventsSupplier} .
@@ -21,7 +21,7 @@ trait XScriptEventsAttacher extends XInterface {
     * @param xListener All events (if defined by {@link XScriptEventsSupplier} ) that are fired by one of the objects are mapped into a {@link ScriptEvent} an
     * @param Helper Helper object for the implementation. This value will be passed to the {@link XScriptListener} as Helper property in the {@link ScriptEvent} .
     */
-  def attachEvents(Objects: SeqEquiv[XInterface], xListener: XScriptListener, Helper: js.Any): Unit = js.native
+  def attachEvents(Objects: SeqEquiv[XInterface], xListener: XScriptListener, Helper: js.Any): Unit
 }
 object XScriptEventsAttacher {
   

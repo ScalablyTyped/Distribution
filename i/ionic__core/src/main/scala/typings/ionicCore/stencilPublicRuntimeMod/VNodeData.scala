@@ -3,16 +3,15 @@ package typings.ionicCore.stencilPublicRuntimeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VNodeData
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var `class`: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var `class`: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
 }
 object VNodeData {
   

@@ -5,65 +5,66 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/steps/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/steps/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): StepsStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): StepsStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[StepsStyle]
+  
   trait StepsStyle extends StObject {
     
-    var content_l: ViewStyle = js.native
+    var content_l: ViewStyle
     
-    var content_s: ViewStyle = js.native
+    var content_s: ViewStyle
     
-    var content_s_h: ViewStyle = js.native
+    var content_s_h: ViewStyle
     
-    var description_l: TextStyle = js.native
+    var description_l: TextStyle
     
-    var description_s: TextStyle = js.native
+    var description_s: TextStyle
     
-    var head_blue_l: ViewStyle = js.native
+    var head_blue_l: ViewStyle
     
-    var head_blue_s: ViewStyle = js.native
+    var head_blue_s: ViewStyle
     
-    var head_default_l: ViewStyle = js.native
+    var head_default_l: ViewStyle
     
-    var head_default_s: ViewStyle = js.native
+    var head_default_s: ViewStyle
     
-    var head_gray_l: ViewStyle = js.native
+    var head_gray_l: ViewStyle
     
-    var head_gray_s: ViewStyle = js.native
+    var head_gray_s: ViewStyle
     
-    var head_red_l: ViewStyle = js.native
+    var head_red_l: ViewStyle
     
-    var head_red_s: ViewStyle = js.native
+    var head_red_s: ViewStyle
     
-    var icon_l: TextStyle = js.native
+    var icon_l: TextStyle
     
-    var icon_s: TextStyle = js.native
+    var icon_s: TextStyle
     
-    var tail_blue: ViewStyle = js.native
+    var tail_blue: ViewStyle
     
-    var tail_default_l: ViewStyle = js.native
+    var tail_default_l: ViewStyle
     
-    var tail_default_s: ViewStyle = js.native
+    var tail_default_s: ViewStyle
     
-    var tail_default_s_h: ViewStyle = js.native
+    var tail_default_s_h: ViewStyle
     
-    var tail_error: ViewStyle = js.native
+    var tail_error: ViewStyle
     
-    var tail_gray: ViewStyle = js.native
+    var tail_gray: ViewStyle
     
-    var tail_last: ViewStyle = js.native
+    var tail_last: ViewStyle
     
-    var title_l: TextStyle = js.native
+    var title_l: TextStyle
     
-    var title_s: TextStyle = js.native
+    var title_s: TextStyle
   }
   object StepsStyle {
     

@@ -6,7 +6,6 @@ import typings.typeorm.relationCountAttributeMod.RelationCountAttribute
 import typings.typeorm.relationCountLoadResultMod.RelationCountLoadResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationCountLoaderMod {
@@ -16,7 +15,7 @@ object relationCountLoaderMod {
   class RelationCountLoader protected () extends StObject {
     def this(
       connection: Connection,
-      queryRunner: js.UndefOr[scala.Nothing],
+      queryRunner: Unit,
       relationCountAttributes: js.Array[RelationCountAttribute]
     ) = this()
     def this(
@@ -27,7 +26,7 @@ object relationCountLoaderMod {
     
     var connection: Connection = js.native
     
-    def load(rawEntities: js.Array[_]): js.Promise[js.Array[RelationCountLoadResult]] = js.native
+    def load(rawEntities: js.Array[js.Any]): js.Promise[js.Array[RelationCountLoadResult]] = js.native
     
     var queryRunner: js.UndefOr[QueryRunner] = js.native
     

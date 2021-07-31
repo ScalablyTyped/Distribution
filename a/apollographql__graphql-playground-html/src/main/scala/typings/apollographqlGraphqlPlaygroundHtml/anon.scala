@@ -2,17 +2,15 @@ package typings.apollographqlGraphqlPlaygroundHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Container extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var script: String = js.native
+    var script: String
   }
   object Container {
     

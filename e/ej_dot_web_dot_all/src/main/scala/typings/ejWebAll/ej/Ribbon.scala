@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ribbon extends Widget_ {
+trait Ribbon
+  extends StObject
+     with Widget_ {
   
   /** Add new option to Backstage page.
     * @param {any} select the object to add the backstage item
@@ -31,8 +32,8 @@ trait Ribbon extends Widget_ {
     * @param {number} index of the ribbon tab,this is optional.
     * @returns {void}
     */
-  def addTab(tabText: String, ribbonGroups: js.Array[_]): Unit = js.native
-  def addTab(tabText: String, ribbonGroups: js.Array[_], index: Double): Unit = js.native
+  def addTab(tabText: String, ribbonGroups: js.Array[js.Any]): Unit = js.native
+  def addTab(tabText: String, ribbonGroups: js.Array[js.Any], index: Double): Unit = js.native
   
   /** Adds tab group dynamically in the ribbon control with given tab index, tab group object and group index position. When group index is null, ribbon group is added at the last index.
     * @param {number} ribbon tab index.
@@ -53,15 +54,9 @@ trait Ribbon extends Widget_ {
     * @returns {void}
     */
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any): Unit = js.native
-  def addTabGroupContent(
-    tabIndex: Double,
-    groupIndex: Double,
-    content: js.Any,
-    contentIndex: js.UndefOr[scala.Nothing],
-    subGroupIndex: Double
-  ): Unit = js.native
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double): Unit = js.native
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double, subGroupIndex: Double): Unit = js.native
+  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Unit, subGroupIndex: Double): Unit = js.native
   
   /** Collapses the ribbon tab content.
     * @returns {void}
@@ -127,14 +122,9 @@ trait Ribbon extends Widget_ {
     * @returns {void}
     */
   def removeTabGroupContent(tabIndex: Double, groupText: String): Unit = js.native
-  def removeTabGroupContent(
-    tabIndex: Double,
-    groupText: String,
-    contentIndex: js.UndefOr[scala.Nothing],
-    subGroupIndex: Double
-  ): Unit = js.native
   def removeTabGroupContent(tabIndex: Double, groupText: String, contentIndex: Double): Unit = js.native
   def removeTabGroupContent(tabIndex: Double, groupText: String, contentIndex: Double, subGroupIndex: Double): Unit = js.native
+  def removeTabGroupContent(tabIndex: Double, groupText: String, contentIndex: Unit, subGroupIndex: Double): Unit = js.native
   
   /** Sets new text to the given text tab in the ribbon control.
     * @param {string} current text of the tab item.
@@ -181,11 +171,15 @@ object Ribbon {
     
     ///To align group content's in columns
     @js.native
-    sealed trait Columns extends AlignType
+    sealed trait Columns
+      extends StObject
+         with AlignType
     
     ///To align the group content's in row
     @js.native
-    sealed trait Rows extends AlignType
+    sealed trait Rows
+      extends StObject
+         with AlignType
   }
   
   @js.native
@@ -196,11 +190,15 @@ object Ribbon {
     
     ///applicationTab display as backstage
     @js.native
-    sealed trait Backstage extends ApplicationTabType
+    sealed trait Backstage
+      extends StObject
+         with ApplicationTabType
     
     ///applicationTab display as menu
     @js.native
-    sealed trait Menu extends ApplicationTabType
+    sealed trait Menu
+      extends StObject
+         with ApplicationTabType
   }
   
   @js.native
@@ -211,11 +209,15 @@ object Ribbon {
     
     ///Specifies the button type in customGalleryItems
     @js.native
-    sealed trait Button extends CustomItemType
+    sealed trait Button
+      extends StObject
+         with CustomItemType
     
     ///Specifies the menu type in customGalleryItems
     @js.native
-    sealed trait Menu extends CustomItemType
+    sealed trait Menu
+      extends StObject
+         with CustomItemType
   }
   
   @js.native
@@ -226,11 +228,15 @@ object Ribbon {
     
     ///To render the button for ribbon backstage pageâ€™s contents
     @js.native
-    sealed trait Button extends ItemType
+    sealed trait Button
+      extends StObject
+         with ItemType
     
     ///To render the tab for ribbon backstage pageâ€™s contents
     @js.native
-    sealed trait Tab extends ItemType
+    sealed trait Tab
+      extends StObject
+         with ItemType
   }
   
   @js.native
@@ -241,15 +247,21 @@ object Ribbon {
     
     ///Add controls in menu
     @js.native
-    sealed trait Menu extends QuickAccessMode
+    sealed trait Menu
+      extends StObject
+         with QuickAccessMode
     
     ///Controls are hidden in Quick Access toolbar
     @js.native
-    sealed trait None extends QuickAccessMode
+    sealed trait None
+      extends StObject
+         with QuickAccessMode
     
     ///Add controls in toolBar
     @js.native
-    sealed trait ToolBar extends QuickAccessMode
+    sealed trait ToolBar
+      extends StObject
+         with QuickAccessMode
   }
   
   @js.native
@@ -261,57 +273,62 @@ object Ribbon {
     ///Specifies the button control
     @js.native
     sealed trait Button
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
     
     ///To append external element's
     @js.native
     sealed trait Custom
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
     
     ///Specifies the dropDown
     @js.native
     sealed trait DropDownList
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
     
     ///Specifies the ribbon gallery
     @js.native
     sealed trait Gallery
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
     
     ///Specifies the split button
     @js.native
     sealed trait SplitButton
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
     
     ///Specifies the toggle button
     @js.native
     sealed trait ToggleButton
-      extends typings.ejWebAll.ej.Ribbon.Type
+      extends StObject
+         with typings.ejWebAll.ej.Ribbon.Type
   }
   
-  @js.native
   trait ApplicationTab extends StObject {
     
     /** Specifies the ribbon backstage page items.
       * @Default {Object}
       */
-    var backstageSettings: js.UndefOr[ApplicationTabBackstageSettings] = js.native
+    var backstageSettings: js.UndefOr[ApplicationTabBackstageSettings] = js.undefined
     
     /** Specifies the ID of ul list to create application menu in the ribbon control.
       * @Default {null}
       */
-    var menuItemID: js.UndefOr[String] = js.native
+    var menuItemID: js.UndefOr[String] = js.undefined
     
     /** Specifies the menu members, events by using the menu settings for the menu in the application tab.
       * @Default {Object}
       */
-    var menuSettings: js.UndefOr[js.Any] = js.native
+    var menuSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the application menu or backstage page. Specify the type of application tab as &quot;ej.Ribbon.ApplicationTabType.Menu&quot; to render the application menu or
       * &quot;ej.Ribbon.ApplicationTabType.Backstage&quot; to render backstage page in the ribbon control.
       * @Default {ej.Ribbon.ApplicationTabType.Menu}
       */
-    var `type`: js.UndefOr[ApplicationTabType | String] = js.native
+    var `type`: js.UndefOr[ApplicationTabType | String] = js.undefined
   }
   object ApplicationTab {
     
@@ -350,33 +367,32 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ApplicationTabBackstageSettings extends StObject {
     
     /** Specifies the width of backstage page header that contains tabs and buttons.
       * @Default {null}
       */
-    var headerWidth: js.UndefOr[String | Double] = js.native
+    var headerWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the height of ribbon backstage page.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the ribbon backstage page with its tab and button elements.
       * @Default {Array}
       */
-    var pages: js.UndefOr[js.Array[ApplicationTabBackstageSettingsPage]] = js.native
+    var pages: js.UndefOr[js.Array[ApplicationTabBackstageSettingsPage]] = js.undefined
     
     /** Specifies the display text of application tab.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of ribbon backstage page.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object ApplicationTabBackstageSettings {
     
@@ -424,34 +440,33 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ApplicationTabBackstageSettingsPage extends StObject {
     
     /** Specifies the id of HTML elements like div,ul, etc., as ribbon backstage page's tab content.
       * @Default {null}
       */
-    var contentID: js.UndefOr[String] = js.native
+    var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the separator between backstage page's tab and button elements.
       * @Default {false}
       */
-    var enableSeparator: js.UndefOr[Boolean] = js.native
+    var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the id for ribbon backstage page's tab and button elements.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the type for ribbon backstage page's contents. Set &quot;ej.Ribbon.BackStageItemType.Tab&quot; to render the tab or &quot;ej.Ribbon.BackStageItemType.Button&quot; to
       * render the button.
       * @Default {ej.Ribbon.ItemType.Tab}
       */
-    var itemType: js.UndefOr[ItemType | String] = js.native
+    var itemType: js.UndefOr[ItemType | String] = js.undefined
     
     /** Specifies the text for ribbon backstage page's tab header and button elements.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ApplicationTabBackstageSettingsPage {
     
@@ -496,32 +511,31 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait BackstageItemClickEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the id of the target item.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the item clicked in the gallery.
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /** returns the text of the target item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BackstageItemClickEventArgs {
     
@@ -572,24 +586,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait BeforeTabRemoveEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns current tab item index in the ribbon control.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeTabRemoveEventArgs {
     
@@ -628,20 +641,19 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait CollapseEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CollapseEventArgs {
     
@@ -674,18 +686,17 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait CollapsePinSettings extends StObject {
     
     /** Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.native
+    var customToolTip: js.UndefOr[js.Any] = js.undefined
     
     /** Sets tooltip for the collapse pin .
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
   }
   object CollapsePinSettings {
     
@@ -712,23 +723,22 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ContextualTab extends StObject {
     
     /** Specifies the backgroundColor of the contextual tabs and tab set in the ribbon control.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor of the contextual tabs and tab set in the ribbon control.
       * @Default {null}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the tabs to present in the contextual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
       * @Default {Array}
       */
-    var tabs: js.UndefOr[js.Array[_]] = js.native
+    var tabs: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ContextualTab {
     
@@ -754,7 +764,7 @@ object Ribbon {
       def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
       @scala.inline
-      def setTabs(value: js.Array[_]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      def setTabs(value: js.Array[js.Any]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
@@ -764,20 +774,19 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -810,24 +819,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns current ribbon tab item index
       */
-    var deleteIndex: js.UndefOr[Double] = js.native
+    var deleteIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -866,20 +874,19 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ExpandEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ExpandEventArgs {
     
@@ -912,18 +919,17 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ExpandPinSettings extends StObject {
     
     /** Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.native
+    var customToolTip: js.UndefOr[js.Any] = js.undefined
     
     /** Sets tooltip for the expand pin.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
   }
   object ExpandPinSettings {
     
@@ -950,28 +956,27 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait GalleryItemClickEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the gallery model.
       */
-    var galleryModel: js.UndefOr[js.Any] = js.native
+    var galleryModel: js.UndefOr[js.Any] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the item clicked in the gallery.
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GalleryItemClickEventArgs {
     
@@ -1016,24 +1021,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait GroupClickEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the control clicked in the group.
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GroupClickEventArgs {
     
@@ -1072,24 +1076,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait GroupExpandEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the clicked group expander.
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GroupExpandEventArgs {
     
@@ -1128,20 +1131,19 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1174,168 +1176,167 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Enables the ribbon resize feature.allowResizing is a deprecated property of isResponsive.
       * @Default {false}
       */
-    var allowResizing: js.UndefOr[Boolean] = js.native
+    var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the application tab to contain application menu or backstage page in the ribbon control.
       * @Default {Object}
       */
-    var applicationTab: js.UndefOr[ApplicationTab] = js.native
+    var applicationTab: js.UndefOr[ApplicationTab] = js.undefined
     
     /** Triggered when a tab or button in the backstage page is clicked successfully.
       */
-    var backstageItemClick: js.UndefOr[js.Function1[/* e */ BackstageItemClickEventArgs, Unit]] = js.native
+    var backstageItemClick: js.UndefOr[js.Function1[/* e */ BackstageItemClickEventArgs, Unit]] = js.undefined
     
     /** Triggered before the ribbon tab item is removed.
       */
-    var beforeTabRemove: js.UndefOr[js.Function1[/* e */ BeforeTabRemoveEventArgs, Unit]] = js.native
+    var beforeTabRemove: js.UndefOr[js.Function1[/* e */ BeforeTabRemoveEventArgs, Unit]] = js.undefined
     
     /** Specifies the height, width, enableRTL, showRoundedCorner,enabled,cssClass property to the controls in the ribbon commonly andit will work only when those properties are not
       * defined in buttonSettings and content defaults.
       * @Default {Object}
       */
-    var buttonDefaults: js.UndefOr[js.Any] = js.native
+    var buttonDefaults: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered when the ribbon control is collapsed.
       */
-    var collapse: js.UndefOr[js.Function1[/* e */ CollapseEventArgs, Unit]] = js.native
+    var collapse: js.UndefOr[js.Function1[/* e */ CollapseEventArgs, Unit]] = js.undefined
     
     /** Sets custom setting to the collapsible pin in the ribbon.
       * @Default {Object}
       */
-    var collapsePinSettings: js.UndefOr[CollapsePinSettings] = js.native
+    var collapsePinSettings: js.UndefOr[CollapsePinSettings] = js.undefined
     
     /** Set collapsible property as true to render ribbon in initially collapsed state.
       * @Default {false}
       */
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the contextual tabs and tab set to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and
       * contextual tab set.
       * @Default {Array}
       */
-    var contextualTabs: js.UndefOr[js.Array[ContextualTab]] = js.native
+    var contextualTabs: js.UndefOr[js.Array[ContextualTab]] = js.undefined
     
     /** Triggered before the ribbon control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for Ribbon which allow us to customize the appearance.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Triggered before the ribbon control is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
       * @Default {0}
       */
-    var disabledItemIndex: js.UndefOr[js.Array[_]] = js.native
+    var disabledItemIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Set enableOnDemand as true to load ribbon tab and backstage contents while corresponding item clicked.
       * @Default {false}
       */
-    var enableOnDemand: js.UndefOr[Boolean] = js.native
+    var enableOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Align content in the ribbon control from right to left by setting the property as true.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
       * @Default {null}
       */
-    var enabledItemIndex: js.UndefOr[js.Array[_]] = js.native
+    var enabledItemIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggered when the ribbon control is expanded.
       */
-    var expand: js.UndefOr[js.Function1[/* e */ ExpandEventArgs, Unit]] = js.native
+    var expand: js.UndefOr[js.Function1[/* e */ ExpandEventArgs, Unit]] = js.undefined
     
     /** Sets custom setting to the expandable pin in the ribbon.
       * @Default {Object}
       */
-    var expandPinSettings: js.UndefOr[ExpandPinSettings] = js.native
+    var expandPinSettings: js.UndefOr[ExpandPinSettings] = js.undefined
     
     /** Triggered when an item in the Gallery control is clicked successfully.
       */
-    var galleryItemClick: js.UndefOr[js.Function1[/* e */ GalleryItemClickEventArgs, Unit]] = js.native
+    var galleryItemClick: js.UndefOr[js.Function1[/* e */ GalleryItemClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when the control in the group is clicked successfully.
       */
-    var groupClick: js.UndefOr[js.Function1[/* e */ GroupClickEventArgs, Unit]] = js.native
+    var groupClick: js.UndefOr[js.Function1[/* e */ GroupClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when the group expander in the group is clicked successfully.
       */
-    var groupExpand: js.UndefOr[js.Function1[/* e */ GroupExpandEventArgs, Unit]] = js.native
+    var groupExpand: js.UndefOr[js.Function1[/* e */ GroupExpandEventArgs, Unit]] = js.undefined
     
     /** When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered before the ribbon control is load.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to
       * a particular country or region and  it will need to use the user's preference.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Triggered when the QAT menu item is clicked successfully .
       */
-    var qatMenuItemClick: js.UndefOr[js.Function1[/* e */ QatMenuItemClickEventArgs, Unit]] = js.native
+    var qatMenuItemClick: js.UndefOr[js.Function1[/* e */ QatMenuItemClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the index of the ribbon tab to select the given index tab item in the ribbon control.
       * @Default {1}
       */
-    var selectedItemIndex: js.UndefOr[Double] = js.native
+    var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Property to enable the ribbon quick access toolbar.
       * @Default {false}
       */
-    var showQAT: js.UndefOr[Boolean] = js.native
+    var showQAT: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered after adding the new ribbon tab item.
       */
-    var tabAdd: js.UndefOr[js.Function1[/* e */ TabAddEventArgs, Unit]] = js.native
+    var tabAdd: js.UndefOr[js.Function1[/* e */ TabAddEventArgs, Unit]] = js.undefined
     
     /** Triggered when tab is clicked successfully in the ribbon control.
       */
-    var tabClick: js.UndefOr[js.Function1[/* e */ TabClickEventArgs, Unit]] = js.native
+    var tabClick: js.UndefOr[js.Function1[/* e */ TabClickEventArgs, Unit]] = js.undefined
     
     /** Triggered before the ribbon tab is created.
       */
-    var tabCreate: js.UndefOr[js.Function1[/* e */ TabCreateEventArgs, Unit]] = js.native
+    var tabCreate: js.UndefOr[js.Function1[/* e */ TabCreateEventArgs, Unit]] = js.undefined
     
     /** Triggered after the tab item is removed from the ribbon control.
       */
-    var tabRemove: js.UndefOr[js.Function1[/* e */ TabRemoveEventArgs, Unit]] = js.native
+    var tabRemove: js.UndefOr[js.Function1[/* e */ TabRemoveEventArgs, Unit]] = js.undefined
     
     /** Triggered after the ribbon tab item is selected in the ribbon control.
       */
-    var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.native
+    var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.undefined
     
     /** Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
       * @Default {Array}
       */
-    var tabs: js.UndefOr[js.Array[typings.ejWebAll.ej.Ribbon.Tab]] = js.native
+    var tabs: js.UndefOr[js.Array[typings.ejWebAll.ej.Ribbon.Tab]] = js.undefined
     
     /** Triggered when the expand/collapse button is clicked successfully .
       */
-    var toggleButtonClick: js.UndefOr[js.Function1[/* e */ ToggleButtonClickEventArgs, Unit]] = js.native
+    var toggleButtonClick: js.UndefOr[js.Function1[/* e */ ToggleButtonClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the width to the ribbon control. You can set width in string or number format.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1424,7 +1425,7 @@ object Ribbon {
       def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       @scala.inline
-      def setDisabledItemIndex(value: js.Array[_]): Self = StObject.set(x, "disabledItemIndex", value.asInstanceOf[js.Any])
+      def setDisabledItemIndex(value: js.Array[js.Any]): Self = StObject.set(x, "disabledItemIndex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisabledItemIndexUndefined: Self = StObject.set(x, "disabledItemIndex", js.undefined)
@@ -1445,7 +1446,7 @@ object Ribbon {
       def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
       @scala.inline
-      def setEnabledItemIndex(value: js.Array[_]): Self = StObject.set(x, "enabledItemIndex", value.asInstanceOf[js.Any])
+      def setEnabledItemIndex(value: js.Array[js.Any]): Self = StObject.set(x, "enabledItemIndex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnabledItemIndexUndefined: Self = StObject.set(x, "enabledItemIndex", js.undefined)
@@ -1572,24 +1573,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait QatMenuItemClickEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the clicked menu item text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object QatMenuItemClickEventArgs {
     
@@ -1628,23 +1628,22 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait Tab extends StObject {
     
     /** Specifies single group or multiple groups and its contents to each tab in the ribbon control.
       * @Default {Array}
       */
-    var groups: js.UndefOr[js.Array[TabsGroup]] = js.native
+    var groups: js.UndefOr[js.Array[TabsGroup]] = js.undefined
     
     /** Specifies the ID for each tab's content panel.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the text of the tab in the ribbon control.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Tab {
     
@@ -1680,28 +1679,27 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabAddEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns new added tab content panel.
       */
-    var tabContent: js.UndefOr[js.Any] = js.native
+    var tabContent: js.UndefOr[js.Any] = js.undefined
     
     /** returns new added tab header.
       */
-    var tabHeader: js.UndefOr[js.Any] = js.native
+    var tabHeader: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabAddEventArgs {
     
@@ -1746,36 +1744,35 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabClickEventArgs extends StObject {
     
     /** returns current active tab header .
       */
-    var activeHeader: js.UndefOr[js.Any] = js.native
+    var activeHeader: js.UndefOr[js.Any] = js.undefined
     
     /** returns current active index.
       */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns previous active tab header.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.native
+    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
     
     /** returns previous active index.
       */
-    var prevActiveIndex: js.UndefOr[Double] = js.native
+    var prevActiveIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabClickEventArgs {
     
@@ -1832,24 +1829,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabCreateEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns current ribbon tab item index
       */
-    var deleteIndex: js.UndefOr[Double] = js.native
+    var deleteIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabCreateEventArgs {
     
@@ -1888,24 +1884,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabRemoveEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the removed index.
       */
-    var removedIndex: js.UndefOr[Double] = js.native
+    var removedIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabRemoveEventArgs {
     
@@ -1944,36 +1939,35 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabSelectEventArgs extends StObject {
     
     /** returns current active tab header .
       */
-    var activeHeader: js.UndefOr[js.Any] = js.native
+    var activeHeader: js.UndefOr[js.Any] = js.undefined
     
     /** returns current active index.
       */
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns previous active tab header.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.native
+    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
     
     /** returns previous active index.
       */
-    var prevActiveIndex: js.UndefOr[Double] = js.native
+    var prevActiveIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabSelectEventArgs {
     
@@ -2030,49 +2024,48 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroup extends StObject {
     
     /** Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is &quot;ej.Ribbon.AlignType.Rows&quot; and for column type is
       * &quot;ej.Ribbon.alignType.columns&quot;.
       * @Default {ej.Ribbon.AlignType.Rows}
       */
-    var alignType: js.UndefOr[AlignType | String] = js.native
+    var alignType: js.UndefOr[AlignType | String] = js.undefined
     
     /** Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
       * @Default {Array}
       */
-    var content: js.UndefOr[js.Array[TabsGroupsContent]] = js.native
+    var content: js.UndefOr[js.Array[TabsGroupsContent]] = js.undefined
     
     /** Specifies the ID of custom items to be placed in the groups.
       * @Default {null}
       */
-    var contentID: js.UndefOr[String] = js.native
+    var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML contents to place into the groups.
       * @Default {null}
       */
-    var customContent: js.UndefOr[String] = js.native
+    var customContent: js.UndefOr[String] = js.undefined
     
     /** Specifies the group expander for groups in the ribbon control. Set &quot;true&quot; to enable the group expander.
       * @Default {false}
       */
-    var enableGroupExpander: js.UndefOr[Boolean] = js.native
+    var enableGroupExpander: js.UndefOr[Boolean] = js.undefined
     
     /** Sets custom setting to the groups in the ribbon control.
       * @Default {Object}
       */
-    var groupExpanderSettings: js.UndefOr[TabsGroupsGroupExpanderSettings] = js.native
+    var groupExpanderSettings: js.UndefOr[TabsGroupsGroupExpanderSettings] = js.undefined
     
     /** Specifies the text to the groups in the ribbon control.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the custom items such as div, table, controls by using the &quot;custom&quot; type.
       * @Default {null}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TabsGroup {
     
@@ -2138,18 +2131,17 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContent extends StObject {
     
     /** Specifies the height, width, type, isBig property to the controls in the group commonly.
       * @Default {Object}
       */
-    var defaults: js.UndefOr[TabsGroupsContentDefaults] = js.native
+    var defaults: js.UndefOr[TabsGroupsContentDefaults] = js.undefined
     
     /** Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
       * @Default {Array}
       */
-    var groups: js.UndefOr[js.Array[TabsGroupsContentGroup]] = js.native
+    var groups: js.UndefOr[js.Array[TabsGroupsContentGroup]] = js.undefined
   }
   object TabsGroupsContent {
     
@@ -2179,28 +2171,27 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContentDefaults extends StObject {
     
     /** Specifies the controls height such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the controls size such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
       * @Default {false}
       */
-    var isBig: js.UndefOr[Boolean] = js.native
+    var isBig: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the controls type such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
       * @Default {ej.Ribbon.Type.Button}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Specifies the controls width such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object TabsGroupsContentDefaults {
     
@@ -2239,116 +2230,115 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContentGroup extends StObject {
     
     /** Specifies the Syncfusion button members, events by using this buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.native
+    var buttonSettings: js.UndefOr[js.Any] = js.undefined
     
     /** It is used to set the count of gallery contents in a row.
       * @Default {null}
       */
-    var columns: js.UndefOr[Double] = js.native
+    var columns: js.UndefOr[Double] = js.undefined
     
     /** Specifies the custom items such as div, table, controls as custom controls with the type &quot;ej.Ribbon.Type.Custom&quot; in the groups.
       * @Default {null}
       */
-    var contentID: js.UndefOr[String] = js.native
+    var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the CSS class property to apply styles to the button, split, dropdown controls in the groups.
       * @Default {null}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion button and menu as gallery extra items.
       * @Default {Array}
       */
-    var customGalleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsCustomGalleryItem]] = js.native
+    var customGalleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsCustomGalleryItem]] = js.undefined
     
     /** Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and HTML support are also provided for title and content.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[TabsGroupsContentGroupsCustomToolTip] = js.native
+    var customToolTip: js.UndefOr[TabsGroupsContentGroupsCustomToolTip] = js.undefined
     
     /** Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
       * @Default {Object}
       */
-    var dropdownSettings: js.UndefOr[js.Any] = js.native
+    var dropdownSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set &quot;true&quot; to enable the
       * separator.
       * @Default {false}
       */
-    var enableSeparator: js.UndefOr[Boolean] = js.native
+    var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the count of gallery contents in a row, when the gallery is in expanded state.
       * @Default {null}
       */
-    var expandedColumns: js.UndefOr[Double] = js.native
+    var expandedColumns: js.UndefOr[Double] = js.undefined
     
     /** Defines each gallery content.
       * @Default {Array}
       */
-    var galleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsGalleryItem]] = js.native
+    var galleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsGalleryItem]] = js.undefined
     
     /** Specifies the Id for button, split button, dropdown list, toggle button, gallery, custom controls in the sub groups.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the size for button, split button controls. Set &quot;true&quot; for big size and &quot;false&quot; for small size.
       * @Default {null}
       */
-    var isBig: js.UndefOr[Boolean] = js.native
+    var isBig: js.UndefOr[Boolean] = js.undefined
     
     /** When isMobileOnly is true,its shows in mobile toolbar.isResponsive should be true for using this property.
       * @Default {false}
       */
-    var isMobileOnly: js.UndefOr[Boolean] = js.native
+    var isMobileOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of each gallery content.
       * @Default {null}
       */
-    var itemHeight: js.UndefOr[String | Double] = js.native
+    var itemHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the width of each gallery content.
       * @Default {null}
       */
-    var itemWidth: js.UndefOr[String | Double] = js.native
+    var itemWidth: js.UndefOr[String | Double] = js.undefined
     
     /** To add,show and hide controls in Quick Access toolbar.
       * @Default {ej.Ribbon.QuickAccessMode.None}
       */
-    var quickAccessMode: js.UndefOr[QuickAccessMode | String] = js.native
+    var quickAccessMode: js.UndefOr[QuickAccessMode | String] = js.undefined
     
     /** Specifies the Syncfusion split button members, events by using this splitButtonSettings.
       * @Default {Object}
       */
-    var splitButtonSettings: js.UndefOr[js.Any] = js.native
+    var splitButtonSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the text for button, split button, toggle button controls in the sub groups.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
       * @Default {Object}
       */
-    var toggleButtonSettings: js.UndefOr[js.Any] = js.native
+    var toggleButtonSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
     
     /** Specifies the type as &quot;ej.Ribbon.Type.Button&quot; or &quot;ej.Ribbon.Type.SplitButton&quot; or &quot;ej.Ribbon.Type.DropDownList&quot; or
       * &quot;ej.Ribbon.Type.ToggleButton&quot; or &quot;ej.Ribbon.Type.Custom&quot; or &quot;ej.Ribbon.Type.Gallery&quot; to render button, split, dropdown, toggle button, gallery,
       * custom controls.
       * @Default {ej.Ribbon.Type.Button}
       */
-    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.native
+    var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
   }
   object TabsGroupsContentGroup {
     
@@ -2495,43 +2485,42 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContentGroupsCustomGalleryItem extends StObject {
     
     /** Specifies the Syncfusion button members, events by using buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.native
+    var buttonSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.Button to render Syncfusion button and menu.
       * @Default {ej.Ribbon.CustomItemType.Button}
       */
-    var customItemType: js.UndefOr[CustomItemType | String] = js.native
+    var customItemType: js.UndefOr[CustomItemType | String] = js.undefined
     
     /** Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.native
+    var customToolTip: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the UL list id to render menu as gallery extra item.
       * @Default {null}
       */
-    var menuId: js.UndefOr[String] = js.native
+    var menuId: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion menu members, events by using menuSettings.
       * @Default {Object}
       */
-    var menuSettings: js.UndefOr[js.Any] = js.native
+    var menuSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the text for gallery extra item's button.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the tooltip for gallery extra item's button.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
   }
   object TabsGroupsContentGroupsCustomGalleryItem {
     
@@ -2588,23 +2577,22 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContentGroupsCustomToolTip extends StObject {
     
     /** Sets content to the custom tooltip. Text and HTML support are provided for content.
       * @Default {null}
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** Sets icon to the custom tooltip content.
       * @Default {null}
       */
-    var prefixIcon: js.UndefOr[String] = js.native
+    var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Sets title to the custom tooltip. Text and HTML support are provided for title and the title is in bold for text format.
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object TabsGroupsContentGroupsCustomToolTip {
     
@@ -2637,28 +2625,27 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsContentGroupsGalleryItem extends StObject {
     
     /** Specifies the Syncfusion button members, events by using buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.native
+    var buttonSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.native
+    var customToolTip: js.UndefOr[js.Any] = js.undefined
     
     /** Sets text for the gallery content.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Sets tooltip for the gallery content.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
   }
   object TabsGroupsContentGroupsGalleryItem {
     
@@ -2697,18 +2684,17 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait TabsGroupsGroupExpanderSettings extends StObject {
     
     /** Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.native
+    var customToolTip: js.UndefOr[js.Any] = js.undefined
     
     /** Sets tooltip for the group expander of the group.
       * @Default {null}
       */
-    var toolTip: js.UndefOr[String] = js.native
+    var toolTip: js.UndefOr[String] = js.undefined
   }
   object TabsGroupsGroupExpanderSettings {
     
@@ -2735,24 +2721,23 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait ToggleButtonClickEventArgs extends StObject {
     
     /** Set to true when the event has to be canceled, else false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the expand/collapse button.
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToggleButtonClickEventArgs {
     

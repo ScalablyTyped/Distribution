@@ -6,7 +6,6 @@ import typings.nodegit.mergeOptionsMod.MergeOptions
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cherryPickMod {
@@ -17,34 +16,33 @@ object cherryPickMod {
   /* static members */
   object Cherrypick {
     
+    @JSImport("nodegit/cherry-pick", "Cherrypick")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Cherrypick a commit and, changing the index and working directory
       */
-    @JSImport("nodegit/cherry-pick", "Cherrypick.cherrypick")
-    @js.native
-    def cherrypick(repo: Repository, commit: Commit): js.Promise[Double] = js.native
-    @JSImport("nodegit/cherry-pick", "Cherrypick.cherrypick")
-    @js.native
-    def cherrypick(repo: Repository, commit: Commit, options: CherrypickOptions): js.Promise[Double] = js.native
+    @scala.inline
+    def cherrypick(repo: Repository, commit: Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def cherrypick(repo: Repository, commit: Commit, options: CherrypickOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
     /**
       * Cherrypicks the given commit against "our" commit, producing an index that reflects the result of the cherrypick. The index is not backed by a repo.
       */
-    @JSImport("nodegit/cherry-pick", "Cherrypick.commit")
-    @js.native
-    def commit(repo: Repository, cherrypickCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Double] = js.native
-    @JSImport("nodegit/cherry-pick", "Cherrypick.commit")
-    @js.native
+    @scala.inline
+    def commit(repo: Repository, cherrypickCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], cherrypickCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    @scala.inline
     def commit(
       repo: Repository,
       cherrypickCommit: Commit,
       ourCommit: Commit,
       mainline: Double,
       mergeOptions: MergeOptions
-    ): js.Promise[Double] = js.native
+    ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], cherrypickCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any], mergeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/cherry-pick", "Cherrypick.initOptions")
-    @js.native
-    def initOptions(opts: CherrypickOptions, version: Double): Double = js.native
+    @scala.inline
+    def initOptions(opts: CherrypickOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

@@ -3,78 +3,76 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionButton extends StObject {
   
-  var Accelerator: String = js.native
+  var Accelerator: String
   
-  var Alignment: fmAlignment = js.native
+  var Alignment: fmAlignment
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var BackStyle: fmBackStyle = js.native
+  var BackStyle: fmBackStyle
   
-  var BordersSuppress: Boolean = js.native
+  var BordersSuppress: Boolean
   
-  var Caption: String = js.native
+  var Caption: String
   
-  val DisplayStyle: fmDisplayStyle = js.native
+  val DisplayStyle: fmDisplayStyle
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Font: NewFont = js.native
+  var Font: NewFont
   
-  var FontBold: Boolean = js.native
+  var FontBold: Boolean
   
-  var FontItalic: Boolean = js.native
+  var FontItalic: Boolean
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var FontSize: Double = js.native
+  var FontSize: Double
   
-  var FontStrikethru: Boolean = js.native
+  var FontStrikethru: Boolean
   
-  var FontUnderline: Boolean = js.native
+  var FontUnderline: Boolean
   
-  var FontWeight: Double = js.native
+  var FontWeight: Double
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
-  var GroupName: String = js.native
+  var GroupName: String
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
   @JSName("MSForms.OptionButton_typekey")
-  var MSFormsDotOptionButton_typekey: OptionButton = js.native
+  var MSFormsDotOptionButton_typekey: OptionButton
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: fmMousePointer = js.native
+  var MousePointer: fmMousePointer
   
-  var MultiSelect: fmMultiSelect = js.native
+  var MultiSelect: fmMultiSelect
   
-  var Picture: StdPicture = js.native
+  var Picture: StdPicture
   
-  var PicturePosition: fmPicturePosition = js.native
+  var PicturePosition: fmPicturePosition
   
-  var SpecialEffect: fmButtonEffect = js.native
+  var SpecialEffect: fmButtonEffect
   
-  var TextAlign: fmTextAlign = js.native
+  var TextAlign: fmTextAlign
   
-  var TripleState: Boolean = js.native
+  var TripleState: Boolean
   
-  val Valid: Boolean = js.native
+  val Valid: Boolean
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var WordWrap: Boolean = js.native
+  var WordWrap: Boolean
   
-  val _Font_Reserved: NewFont = js.native
+  val _Font_Reserved: NewFont
 }
 object OptionButton {
   

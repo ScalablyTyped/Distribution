@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactDetail extends StObject {
   
   /**
     * The artifact object name for the action execution.
     */
-  var name: js.UndefOr[ArtifactName] = js.native
+  var name: js.UndefOr[ArtifactName] = js.undefined
   
   /**
     * The Amazon S3 artifact location for the action execution.
     */
-  var s3location: js.UndefOr[S3Location] = js.native
+  var s3location: js.UndefOr[S3Location] = js.undefined
 }
 object ArtifactDetail {
   

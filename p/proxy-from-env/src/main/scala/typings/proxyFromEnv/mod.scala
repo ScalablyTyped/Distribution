@@ -3,15 +3,16 @@ package typings.proxyFromEnv
 import typings.node.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("proxy-from-env", "getProxyForUrl")
+  @JSImport("proxy-from-env", JSImport.Namespace)
   @js.native
-  def getProxyForUrl(url: String): String = js.native
-  @JSImport("proxy-from-env", "getProxyForUrl")
-  @js.native
-  def getProxyForUrl(url: Url): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getProxyForUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getProxyForUrl(url: Url): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

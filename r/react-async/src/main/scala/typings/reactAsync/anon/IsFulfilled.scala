@@ -6,61 +6,46 @@ import typings.reactAsync.reactAsyncStrings.rejected
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFulfilled[T] extends StObject {
   
-  var data: js.UndefOr[T] = js.native
+  var data: js.UndefOr[T] = js.undefined
   
-  var error: typings.std.Error = js.native
+  var error: typings.std.Error
   
-  var finishedAt: Date = js.native
+  var finishedAt: Date
   
-  var isFulfilled: `false` = js.native
+  var isFulfilled: `false`
   
-  var isInitial: `false` = js.native
+  var isInitial: `false`
   
-  var isLoading: `false` = js.native
+  var isLoading: `false`
   
-  var isPending: `false` = js.native
+  var isPending: `false`
   
-  var isRejected: `true` = js.native
+  var isRejected: `true`
   
-  var isResolved: `false` = js.native
+  var isResolved: `false`
   
-  var isSettled: `true` = js.native
+  var isSettled: `true`
   
-  var startedAt: Date = js.native
+  var startedAt: Date
   
-  var status: rejected = js.native
+  var status: rejected
   
-  var value: typings.std.Error = js.native
+  var value: typings.std.Error
 }
 object IsFulfilled {
   
   @scala.inline
-  def apply[T](
-    error: typings.std.Error,
-    finishedAt: Date,
-    isFulfilled: `false`,
-    isInitial: `false`,
-    isLoading: `false`,
-    isPending: `false`,
-    isRejected: `true`,
-    isResolved: `false`,
-    isSettled: `true`,
-    startedAt: Date,
-    status: rejected,
-    value: typings.std.Error
-  ): IsFulfilled[T] = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], finishedAt = finishedAt.asInstanceOf[js.Any], isFulfilled = isFulfilled.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isPending = isPending.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], isResolved = isResolved.asInstanceOf[js.Any], isSettled = isSettled.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply[T](error: typings.std.Error, finishedAt: Date, startedAt: Date, value: typings.std.Error): IsFulfilled[T] = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], finishedAt = finishedAt.asInstanceOf[js.Any], isFulfilled = false, isInitial = false, isLoading = false, isPending = false, isRejected = true, isResolved = false, isSettled = true, startedAt = startedAt.asInstanceOf[js.Any], status = "rejected", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsFulfilled[T]]
   }
   
   @scala.inline
-  implicit class IsFulfilledMutableBuilder[Self <: IsFulfilled[_], T] (val x: Self with IsFulfilled[T]) extends AnyVal {
+  implicit class IsFulfilledMutableBuilder[Self <: IsFulfilled[?], T] (val x: Self & IsFulfilled[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

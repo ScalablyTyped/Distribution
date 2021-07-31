@@ -3,7 +3,6 @@ package typings.mongodb.mod
 import typings.mongodb.mongodbStrings.majority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * requested from MongoDB for write operations.
   * http://mongodb.github.io/node-mongodb-native/3.1/api/global.html#WriteConcern
   */
-@js.native
 trait WriteConcern extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait WriteConcern extends StObject {
     * been written to the journal
     * @default false
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * requests acknowledgement that the write operation has
     * propagated to a specified number of mongod hosts
     * @default 1
     */
-  var w: js.UndefOr[scala.Double | majority | String] = js.native
+  var w: js.UndefOr[scala.Double | majority | String] = js.undefined
   
   /**
     * a time limit, in milliseconds, for the write concern
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object WriteConcern {
   

@@ -4,7 +4,6 @@ import typings.angular.mod.IHttpPromise
 import typings.angular.mod.IRequestShortcutConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Httpi {
@@ -17,20 +16,21 @@ object Httpi {
     def resource(url: String): HttpiResource = js.native
   }
   
-  @js.native
-  trait HttpiPayload extends IRequestShortcutConfig {
+  trait HttpiPayload
+    extends StObject
+       with IRequestShortcutConfig {
     
     @JSName("data")
-    var data_HttpiPayload: js.UndefOr[js.Object] = js.native
+    var data_HttpiPayload: js.UndefOr[js.Object] = js.undefined
     
-    var keepTrailingSlash: js.UndefOr[Boolean] = js.native
+    var keepTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     @JSName("params")
-    var params_HttpiPayload: js.UndefOr[js.Object] = js.native
+    var params_HttpiPayload: js.UndefOr[js.Object] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object HttpiPayload {
     
@@ -75,22 +75,21 @@ object Httpi {
     }
   }
   
-  @js.native
   trait HttpiResource extends StObject {
     
-    def delete[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def delete[T](config: HttpiPayload): IHttpPromise[T]
     
-    def get[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def get[T](config: HttpiPayload): IHttpPromise[T]
     
-    def head[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def head[T](config: HttpiPayload): IHttpPromise[T]
     
-    def jsonp[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def jsonp[T](config: HttpiPayload): IHttpPromise[T]
     
-    def post[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def post[T](config: HttpiPayload): IHttpPromise[T]
     
-    def put[T](config: HttpiPayload): IHttpPromise[T] = js.native
+    def put[T](config: HttpiPayload): IHttpPromise[T]
     
-    def setKeepTrailingSlash(newKeepTrailingSlash: Boolean): HttpiResource = js.native
+    def setKeepTrailingSlash(newKeepTrailingSlash: Boolean): HttpiResource
   }
   object HttpiResource {
     

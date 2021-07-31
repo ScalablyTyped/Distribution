@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropDownList extends Widget_ {
+trait DropDownList
+  extends StObject
+     with Widget_ {
   
   /** Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those
     * items.Grouping and sorting will not be supported when we add items through this method.
@@ -14,7 +15,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def addItem(data: js.Any): Unit = js.native
-  def addItem(data: js.Array[_]): Unit = js.native
+  def addItem(data: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to select all the items in the DropDownList.
     * @returns {void}
@@ -38,7 +39,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def disableItemsByIndices(index: String): Unit = js.native
-  def disableItemsByIndices(index: js.Array[_]): Unit = js.native
+  def disableItemsByIndices(index: js.Array[js.Any]): Unit = js.native
   def disableItemsByIndices(index: Double): Unit = js.native
   
   /** This property enables the DropDownList control.
@@ -51,16 +52,16 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def enableItemsByIndices(index: String): Unit = js.native
-  def enableItemsByIndices(index: js.Array[_]): Unit = js.native
+  def enableItemsByIndices(index: js.Array[js.Any]): Unit = js.native
   def enableItemsByIndices(index: Double): Unit = js.native
   
   /** This method retrieves the items using given value.
     * @param {string|number|any}  Return the whole object of data based on given value
     * @returns {any[]}
     */
-  def getItemDataByValue(value: String): js.Array[_] = js.native
-  def getItemDataByValue(value: js.Any): js.Array[_] = js.native
-  def getItemDataByValue(value: Double): js.Array[_] = js.native
+  def getItemDataByValue(value: String): js.Array[js.Any] = js.native
+  def getItemDataByValue(value: js.Any): js.Array[js.Any] = js.native
+  def getItemDataByValue(value: Double): js.Array[js.Any] = js.native
   
   /** This method is used to retrieve the items that are bound with the DropDownList.
     * @returns {any}
@@ -70,7 +71,7 @@ trait DropDownList extends Widget_ {
   /** This method is used to get the selected items in the DropDownList.
     * @returns {any[]}
     */
-  def getSelectedItem(): js.Array[_] = js.native
+  def getSelectedItem(): js.Array[js.Any] = js.native
   
   /** This method is used to retrieve the items value that are selected in the DropDownList.
     * @returns {string}
@@ -90,7 +91,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def selectItemByText(index: String): Unit = js.native
-  def selectItemByText(index: js.Array[_]): Unit = js.native
+  def selectItemByText(index: js.Array[js.Any]): Unit = js.native
   def selectItemByText(index: Double): Unit = js.native
   
   /** This method is used to select an item in the DropDownList by using the given value.
@@ -98,7 +99,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def selectItemByValue(index: String): Unit = js.native
-  def selectItemByValue(index: js.Array[_]): Unit = js.native
+  def selectItemByValue(index: js.Array[js.Any]): Unit = js.native
   def selectItemByValue(index: Double): Unit = js.native
   
   /** This method is used to select the list of items in the DropDownList through the Index of the items.
@@ -106,7 +107,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def selectItemsByIndices(index: String): Unit = js.native
-  def selectItemsByIndices(index: js.Array[_]): Unit = js.native
+  def selectItemsByIndices(index: js.Array[js.Any]): Unit = js.native
   def selectItemsByIndices(index: Double): Unit = js.native
   
   /** This method shows the DropDownList control with the suggestion popup.
@@ -124,7 +125,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def unselectItemByText(index: String): Unit = js.native
-  def unselectItemByText(index: js.Array[_]): Unit = js.native
+  def unselectItemByText(index: js.Array[js.Any]): Unit = js.native
   def unselectItemByText(index: Double): Unit = js.native
   
   /** This method is used to unselect an item in the DropDownList by using the given value.
@@ -132,7 +133,7 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def unselectItemByValue(index: String): Unit = js.native
-  def unselectItemByValue(index: js.Array[_]): Unit = js.native
+  def unselectItemByValue(index: js.Array[js.Any]): Unit = js.native
   def unselectItemByValue(index: Double): Unit = js.native
   
   /** This method is used to unselect the list of items in the DropDownList through Index of the items.
@@ -140,25 +141,24 @@ trait DropDownList extends Widget_ {
     * @returns {void}
     */
   def unselectItemsByIndices(index: String): Unit = js.native
-  def unselectItemsByIndices(index: js.Array[_]): Unit = js.native
+  def unselectItemsByIndices(index: js.Array[js.Any]): Unit = js.native
   def unselectItemsByIndices(index: Double): Unit = js.native
 }
 object DropDownList {
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -191,40 +191,39 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -268,7 +267,7 @@ object DropDownList {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -290,28 +289,27 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -356,40 +354,39 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait ActionSuccessEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -433,7 +430,7 @@ object DropDownList {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -455,28 +452,27 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait BeforePopupHideEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the selected text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the selected value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforePopupHideEventArgs {
     
@@ -521,28 +517,27 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait BeforePopupShownEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the selected text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the selected value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforePopupShownEventArgs {
     
@@ -587,32 +582,31 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait CascadeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cascading dropdown model.
       */
-    var cascadeModel: js.UndefOr[js.Any] = js.native
+    var cascadeModel: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current selected value in first dropdown.
       */
-    var cascadeValue: js.UndefOr[String] = js.native
+    var cascadeValue: js.UndefOr[String] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the default filter action for second dropdown data should happen or not.
       */
-    var requiresDefaultFilter: js.UndefOr[Boolean] = js.native
+    var requiresDefaultFilter: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CascadeEventArgs {
     
@@ -663,40 +657,39 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selected item text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** Returns the selected text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the selected value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -759,40 +752,39 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait CheckChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selected item text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** Returns the selected text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the selected value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CheckChangeEventArgs {
     
@@ -855,20 +847,19 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -901,24 +892,23 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait DataBoundEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the data that is bound to DropDownList
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DataBoundEventArgs {
     
@@ -957,20 +947,19 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -1003,48 +992,47 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Used to group the items.
       */
-    var groupBy: js.UndefOr[String] = js.native
+    var groupBy: js.UndefOr[String] = js.undefined
     
     /** Defines the HTML attributes such as ID, class, and styles for the item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the ID for the tag.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Defines the image attributes such as height, width, styles, and so on.
       */
-    var imageAttributes: js.UndefOr[String] = js.native
+    var imageAttributes: js.UndefOr[String] = js.undefined
     
     /** Defines the imageURL for the image location.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Defines the tag value to be selected initially.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the sprite CSS for the image tag.
       */
-    var spriteCssClass: js.UndefOr[String] = js.native
+    var spriteCssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the table name for tag value or display text while rendering remote data.
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
     /** Defines the text content for the tag.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines the tag value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -1119,20 +1107,19 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait FocusInEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusInEventArgs {
     
@@ -1165,20 +1152,19 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait FocusOutEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusOutEventArgs {
     
@@ -1211,341 +1197,340 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires the action before the XHR request.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the list of items is bound to the DropDownList by xhr post calling
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the xhr post calling failed on remote data binding with the DropDownList control.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the xhr post calling succeed on remote data binding with the DropDownList control
       */
-    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.native
+    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.undefined
     
     /** The Virtual Scrolling(lazy loading) feature is used to display a large amount of data that you require without buffering the entire load of a huge database records in the
       * DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the
       * allowVirtualScrolling to true.
       * @Default {false}
       */
-    var allowVirtualScrolling: js.UndefOr[Boolean] = js.native
+    var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Fires the action before the popup is ready to hide.
       */
-    var beforePopupHide: js.UndefOr[js.Function1[/* e */ BeforePopupHideEventArgs, Unit]] = js.native
+    var beforePopupHide: js.UndefOr[js.Function1[/* e */ BeforePopupHideEventArgs, Unit]] = js.undefined
     
     /** Fires the action before the popup is ready to be displayed.
       */
-    var beforePopupShown: js.UndefOr[js.Function1[/* e */ BeforePopupShownEventArgs, Unit]] = js.native
+    var beforePopupShown: js.UndefOr[js.Function1[/* e */ BeforePopupShownEventArgs, Unit]] = js.undefined
     
     /** Fires when the cascading happens between two DropDownList exactly after the value changes in the first dropdown and before filtering in the second Dropdown.
       */
-    var cascade: js.UndefOr[js.Function1[/* e */ CascadeEventArgs, Unit]] = js.native
+    var cascade: js.UndefOr[js.Function1[/* e */ CascadeEventArgs, Unit]] = js.undefined
     
     /** The cascading DropDownLists is a series of two or more DropDownLists in which each DropDownList is filtered according to the previous DropDownListâ€™s value.
       * @Default {null}
       */
-    var cascadeTo: js.UndefOr[String] = js.native
+    var cascadeTo: js.UndefOr[String] = js.undefined
     
     /** Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
       * @Default {false}
       */
-    var caseSensitiveSearch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Fires the action when the DropDownList controlâ€™s value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the list item checkbox value is changed.
       */
-    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.native
+    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.undefined
     
     /** Fires the action once the DropDownList is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Dropdown widget's style and appearance can be controlled based on 13 different default built-in themes.You can customize the appearance of the dropdown by using the cssClass
       * property. You need to specify a class name in the cssClass property and the same class name is used before the class definitions wherever the custom styles are applied.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires the action when the list items is bound to the DropDownList.
       */
-    var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.native
+    var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.undefined
     
     /** This property is used to serve data from the data services based on the query provided. To bind the data to the dropdown widget, the dataSource property is assigned with the
       * instance of the ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are
       * considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or
       * any other special character.
       * @Default {','}
       */
-    var delimiterChar: js.UndefOr[String] = js.native
+    var delimiterChar: js.UndefOr[String] = js.undefined
     
     /** Fires the action when the DropDownList is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** This property selects the item in the DropDownList when the item is entered in the Search textbox.
       * @Default {false}
       */
-    var enableFilterSearch: js.UndefOr[Boolean] = js.native
+    var enableFilterSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to perform incremental search for the selection of items from the DropDownList with the help of this property. This helps in selecting the item by using the typed
       * character.
       * @Default {true}
       */
-    var enableIncrementalSearch: js.UndefOr[Boolean] = js.native
+    var enableIncrementalSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Saves the current model value to the browser cookies for state maintenance. While refreshing the DropDownList control page, it retains the model value and it is applied from the
       * browser cookies.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** This enables the resize handler to resize the popup to any size.
       * @Default {false}
       */
-    var enablePopupResize: js.UndefOr[Boolean] = js.native
+    var enablePopupResize: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DropDownList textbox direction from right to left align.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** The serverfiltering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire
       * datasource. Serverfiltering will be done based on the entire items in DataSource.
       * @Default {false}
       */
-    var enableServerFiltering: js.UndefOr[Boolean] = js.native
+    var enableServerFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to sort the Items in the DropDownList. By default, it sorts the items in an ascending order.
       * @Default {false}
       */
-    var enableSorting: js.UndefOr[Boolean] = js.native
+    var enableSorting: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to indicate whether the DropDownList control responds to the user interaction or not. By default, the control is in the enabled mode and you can disable it
       * by setting it to false.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mapping fields for the data items of the DropDownList.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search
       * textbox.
       * @Default {ej.FilterType.Contains}
       */
-    var filterType: js.UndefOr[FilterType_ | String] = js.native
+    var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Fires the action when the DropDownList is focused.
       */
-    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.undefined
     
     /** Fires the action when the DropDownList is about to lose focus.
       */
-    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Used to create visualized header for dropdown items
       * @Default {null}
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the DropDownList textbox.
       * @Default {null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** It sets the given HTML attributes for the DropDownList control such as ID, name, disabled, etc.
       * @Default {null}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Data can be fetched in the DropDownList control by using the DataSource, specifying the number of items.
       * @Default {5}
       */
-    var itemsCount: js.UndefOr[Double] = js.native
+    var itemsCount: js.UndefOr[Double] = js.undefined
     
     /** The property is used to determine whether the popup list is generated dynamically.
       * @Default {false}
       */
-    var loadOnDemand: js.UndefOr[Boolean] = js.native
+    var loadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to set the particular country or region language for the DropDownList.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Defines the maximum height of the suggestion box. This property restricts the maximum height of the popup when resize is enabled.
       * @Default {null}
       */
-    var maxPopupHeight: js.UndefOr[String | Double] = js.native
+    var maxPopupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the maximum width of the suggestion box. This property restricts the maximum width of the popup when resize is enabled.
       * @Default {null}
       */
-    var maxPopupWidth: js.UndefOr[String | Double] = js.native
+    var maxPopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled.
       * @Default {null}
       */
-    var minPopupHeight: js.UndefOr[String | Double] = js.native
+    var minPopupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled.
       * @Default {0}
       */
-    var minPopupWidth: js.UndefOr[String | Double] = js.native
+    var minPopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** With the help of this property, you can make a single or multi selection with the DropDownList and display the text in two modes, delimiter and visual mode. In delimiter mode, you
       * can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes
       * with close icon in the textbox.
       * @Default {ej.MultiSelectMode.None}
       */
-    var multiSelectMode: js.UndefOr[MultiSelectMode | String] = js.native
+    var multiSelectMode: js.UndefOr[MultiSelectMode | String] = js.undefined
     
     /** Defines the height of the suggestion popup box in the DropDownList control.
       * @Default {152px}
       */
-    var popupHeight: js.UndefOr[String | Double] = js.native
+    var popupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Fires the action, once the popup is closed
       */
-    var popupHide: js.UndefOr[js.Function1[/* e */ PopupHideEventArgs, Unit]] = js.native
+    var popupHide: js.UndefOr[js.Function1[/* e */ PopupHideEventArgs, Unit]] = js.undefined
     
     /** Fires the action, when the popup is resized.
       */
-    var popupResize: js.UndefOr[js.Function1[/* e */ PopupResizeEventArgs, Unit]] = js.native
+    var popupResize: js.UndefOr[js.Function1[/* e */ PopupResizeEventArgs, Unit]] = js.undefined
     
     /** Fires the action, when resizing a popup starts.
       */
-    var popupResizeStart: js.UndefOr[js.Function1[/* e */ PopupResizeStartEventArgs, Unit]] = js.native
+    var popupResizeStart: js.UndefOr[js.Function1[/* e */ PopupResizeStartEventArgs, Unit]] = js.undefined
     
     /** Fires the action, when the popup resizing is stopped.
       */
-    var popupResizeStop: js.UndefOr[js.Function1[/* e */ PopupResizeStopEventArgs, Unit]] = js.native
+    var popupResizeStop: js.UndefOr[js.Function1[/* e */ PopupResizeStopEventArgs, Unit]] = js.undefined
     
     /** Fires the action, once the popup is opened.
       */
-    var popupShown: js.UndefOr[js.Function1[/* e */ PopupShownEventArgs, Unit]] = js.native
+    var popupShown: js.UndefOr[js.Function1[/* e */ PopupShownEventArgs, Unit]] = js.undefined
     
     /** Defines the width of the suggestion popup box in the DropDownList control.
       * @Default {auto}
       */
-    var popupWidth: js.UndefOr[String | Double] = js.native
+    var popupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the query to retrieve the data from the DataSource.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies that the DropDownList textbox values should be read-only.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Fires the action before filtering the list items that starts in the DropDownList when the enableFilterSearch is enabled.
       */
-    var search: js.UndefOr[js.Function1[/* e */ SearchEventArgs, Unit]] = js.native
+    var search: js.UndefOr[js.Function1[/* e */ SearchEventArgs, Unit]] = js.undefined
     
     /** Fires the action, when the list of item is selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Specifies an item to be selected in the DropDownList.
       * @Default {null}
       */
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the selectedItems for the DropDownList.
       * @Default {[]}
       */
-    var selectedIndices: js.UndefOr[js.Array[_]] = js.native
+    var selectedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Selects multiple items in the DropDownList with the help of the checkbox control. To achieve this, enable the showCheckbox option to true.
       * @Default {false}
       */
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownList control is displayed with the popup seen.
       * @Default {false}
       */
-    var showPopupOnLoad: js.UndefOr[Boolean] = js.native
+    var showPopupOnLoad: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownList textbox displayed with the rounded corner style.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
       * @Default {ej.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder_ | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** Specifies the targetID for the DropDownListâ€™s items.
       * @Default {null}
       */
-    var targetID: js.UndefOr[String] = js.native
+    var targetID: js.UndefOr[String] = js.undefined
     
     /** By default, you can add any text or image to the DropDownList item. To customize the item layout or to create your own visualized elements, you can use this template support.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Defines the text value that is displayed in the DropDownList textbox.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Sets the jQuery validation error message in the DropDownList
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.native
+    var validationMessage: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the jQuery validation rules in the Dropdownlist.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownList control.
       * @Default {null}
       */
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
     
     /** The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from
       * the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items
       * to be fetched from the server on every AJAX request.
       * @Default {normal}
       */
-    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.native
+    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
     
     /** Specifies a short hint that describes the expected value of the DropDownList control.
       * @Default {null}
       */
-    var watermarkText: js.UndefOr[String] = js.native
+    var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DropDownList textbox.
       * @Default {null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -1883,7 +1868,7 @@ object DropDownList {
       def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
       @scala.inline
-      def setSelectedIndices(value: js.Array[_]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      def setSelectedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
@@ -1971,28 +1956,27 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait PopupHideEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the selected text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the selected value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PopupHideEventArgs {
     
@@ -2037,24 +2021,23 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait PopupResizeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PopupResizeEventArgs {
     
@@ -2093,24 +2076,23 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait PopupResizeStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PopupResizeStartEventArgs {
     
@@ -2149,24 +2131,23 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait PopupResizeStopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PopupResizeStopEventArgs {
     
@@ -2205,28 +2186,27 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait PopupShownEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the selected text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the selected value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PopupShownEventArgs {
     
@@ -2271,32 +2251,31 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait SearchEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data bound to the DropDownList.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the search string typed in search box.
       */
-    var searchString: js.UndefOr[String] = js.native
+    var searchString: js.UndefOr[String] = js.undefined
     
     /** Returns the selected item text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SearchEventArgs {
     
@@ -2347,40 +2326,39 @@ object DropDownList {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item with checkbox checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selected item ID.
       */
-    var itemId: js.UndefOr[String] = js.native
+    var itemId: js.UndefOr[String] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selected item text.
       */
-    var selectedText: js.UndefOr[String] = js.native
+    var selectedText: js.UndefOr[String] = js.undefined
     
     /** Returns the selected text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the selected value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     

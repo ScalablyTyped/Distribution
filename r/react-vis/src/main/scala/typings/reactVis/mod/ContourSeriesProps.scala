@@ -2,18 +2,18 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContourSeriesProps extends AbstractSeriesProps[ContourSeriesPoint] {
+trait ContourSeriesProps
+  extends StObject
+     with AbstractSeriesProps[ContourSeriesPoint] {
   
-  var bandwidth: js.UndefOr[Double] = js.native
+  var bandwidth: js.UndefOr[Double] = js.undefined
   
   // default: 40
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
 }
 object ContourSeriesProps {
   

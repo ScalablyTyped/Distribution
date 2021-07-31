@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogSetup extends StObject {
   
   /**
     * If a log type is enabled, that log type exports its control plane logs to CloudWatch Logs. If a log type isn't enabled, that log type doesn't export its control plane logs. Each individual log type can be enabled or disabled independently.
     */
-  var enabled: js.UndefOr[BoxedBoolean] = js.native
+  var enabled: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * The available cluster control plane log types.
     */
-  var types: js.UndefOr[LogTypes] = js.native
+  var types: js.UndefOr[LogTypes] = js.undefined
 }
 object LogSetup {
   

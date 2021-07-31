@@ -2,19 +2,17 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service account keys list response.
   */
-@js.native
 trait SchemaListServiceAccountKeysResponse extends StObject {
   
   /**
     * The public keys for the service account.
     */
-  var keys: js.UndefOr[js.Array[SchemaServiceAccountKey]] = js.native
+  var keys: js.UndefOr[js.Array[SchemaServiceAccountKey]] = js.undefined
 }
 object SchemaListServiceAccountKeysResponse {
   

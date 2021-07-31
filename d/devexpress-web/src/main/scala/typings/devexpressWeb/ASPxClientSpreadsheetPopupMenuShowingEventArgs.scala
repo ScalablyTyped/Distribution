@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.PopupMenuShowing event.
   */
-@js.native
-trait ASPxClientSpreadsheetPopupMenuShowingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientSpreadsheetPopupMenuShowingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides access to a collection of menu items in the context menu being invoked.
     */
-  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection = js.native
+  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection
   
   /**
     * Gets the currently displayed context menu's type.
     */
-  var menuType: ASPxClientSpreadsheetPopupMenuType = js.native
+  var menuType: ASPxClientSpreadsheetPopupMenuType
 }
 object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
   

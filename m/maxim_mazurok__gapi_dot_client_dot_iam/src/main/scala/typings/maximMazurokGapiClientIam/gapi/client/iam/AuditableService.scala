@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditableService extends StObject {
   
   /** Public name of the service. For example, the service name for Cloud IAM is 'iam.googleapis.com'. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object AuditableService {
   

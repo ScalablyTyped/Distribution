@@ -12,7 +12,7 @@ Universal Module Definition for use in automated build systems
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 29685681 |
+| # downloads        | 34667991 |
 | # stars            | 5 |
 
 ## Links

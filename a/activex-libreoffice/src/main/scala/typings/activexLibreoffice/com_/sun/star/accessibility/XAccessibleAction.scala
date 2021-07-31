@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * actions that it can perform. Each action can be performed or be queried for a description or associated key bindings.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleAction extends XInterface {
+trait XAccessibleAction
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the number of accessible actions available in this object.
@@ -23,7 +23,7 @@ trait XAccessibleAction extends XInterface {
     * If there are more than one, the first one is considered the "default" action of the object.
     * @returns The returned value of the number of actions is zero if there are no actions.
     */
-  val AccessibleActionCount: Double = js.native
+  val AccessibleActionCount: Double
   
   /**
     * Perform the specified Action on the object.
@@ -31,7 +31,7 @@ trait XAccessibleAction extends XInterface {
     * @returns Returns `TRUE` if the action was successfully performed. If the action could not be performed successfully `FALSE` is returned.
     * @throws IndexOutOfBoundsException If no action with the given index exists then an {@link com.sun.star.lang.IndexOutOfBoundsException} exception is thrown.
     */
-  def doAccessibleAction(nIndex: Double): Boolean = js.native
+  def doAccessibleAction(nIndex: Double): Boolean
   
   /**
     * Returns the number of accessible actions available in this object.
@@ -39,7 +39,7 @@ trait XAccessibleAction extends XInterface {
     * If there are more than one, the first one is considered the "default" action of the object.
     * @returns The returned value of the number of actions is zero if there are no actions.
     */
-  def getAccessibleActionCount(): Double = js.native
+  def getAccessibleActionCount(): Double
   
   /**
     * Returns a description of the specified action of the object.
@@ -47,7 +47,7 @@ trait XAccessibleAction extends XInterface {
     * @returns The returned value is a localized string of the specified action.
     * @throws IndexOutOfBoundsException If the given index lies not in the valid range then an {@link com.sun.star.lang.IndexOutOfBoundsException} exception is
     */
-  def getAccessibleActionDescription(nIndex: Double): String = js.native
+  def getAccessibleActionDescription(nIndex: Double): String
   
   /**
     * Returns a key binding object, if there is one, associated with the specified action. Note that there can be several alternative key bindings for an
@@ -56,7 +56,7 @@ trait XAccessibleAction extends XInterface {
     * @returns The returned object describes a set of key bindings associated with the specified action.
     * @throws IndexOutOfBoundsException if the given index is not valid.
     */
-  def getAccessibleActionKeyBinding(nIndex: Double): XAccessibleKeyBinding = js.native
+  def getAccessibleActionKeyBinding(nIndex: Double): XAccessibleKeyBinding
 }
 object XAccessibleAction {
   

@@ -2,39 +2,39 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformConstraintData extends ConstraintData {
+trait TransformConstraintData
+  extends StObject
+     with ConstraintData {
   
-  var bones: js.Array[BoneData] = js.native
+  var bones: js.Array[BoneData]
   
-  var local: Boolean = js.native
+  var local: Boolean
   
-  var offsetRotation: Double = js.native
+  var offsetRotation: Double
   
-  var offsetScaleX: Double = js.native
+  var offsetScaleX: Double
   
-  var offsetScaleY: Double = js.native
+  var offsetScaleY: Double
   
-  var offsetShearY: Double = js.native
+  var offsetShearY: Double
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var relative: Boolean = js.native
+  var relative: Boolean
   
-  var rotateMix: Double = js.native
+  var rotateMix: Double
   
-  var scaleMix: Double = js.native
+  var scaleMix: Double
   
-  var shearMix: Double = js.native
+  var shearMix: Double
   
-  var target: BoneData = js.native
+  var target: BoneData
   
-  var translateMix: Double = js.native
+  var translateMix: Double
 }
 object TransformConstraintData {
   

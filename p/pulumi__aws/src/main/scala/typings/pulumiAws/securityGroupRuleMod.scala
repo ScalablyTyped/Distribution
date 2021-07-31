@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securityGroupRuleMod {
@@ -87,6 +86,10 @@ object securityGroupRuleMod {
   /* static members */
   object SecurityGroupRule {
     
+    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecurityGroupRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -96,89 +99,83 @@ object securityGroupRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SecurityGroupRule = js.native
-    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SecurityGroupRule = js.native
-    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityGroupRuleState): SecurityGroupRule = js.native
-    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityGroupRuleState, opts: CustomResourceOptions): SecurityGroupRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SecurityGroupRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecurityGroupRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecurityGroupRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityGroupRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityGroupRuleState): SecurityGroupRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecurityGroupRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityGroupRuleState, opts: CustomResourceOptions): SecurityGroupRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityGroupRule]
     
     /**
       * Returns true if the given object is an instance of SecurityGroupRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/securityGroupRule.SecurityGroupRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/securityGroupRule.SecurityGroupRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/securityGroupRule.SecurityGroupRule */ Boolean]
   }
   
-  @js.native
   trait SecurityGroupRuleArgs extends StObject {
     
     /**
       * List of CIDR blocks. Cannot be specified with `sourceSecurityGroupId`.
       */
-    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Description of the rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The start port (or ICMP type number if protocol is "icmp" or "icmpv6").
       */
-    val fromPort: Input[Double] = js.native
+    val fromPort: Input[Double]
     
     /**
       * List of IPv6 CIDR blocks.
       */
-    val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of prefix list IDs (for allowing access to VPC endpoints).
       * Only valid with `egress`.
       */
-    val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The protocol. If not icmp, icmpv6, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
       */
-    val protocol: Input[String] = js.native
+    val protocol: Input[String]
     
     /**
       * The security group to apply this rule to.
       */
-    val securityGroupId: Input[String] = js.native
+    val securityGroupId: Input[String]
     
     /**
       * If true, the security group itself will be added as
       * a source to this ingress rule. Cannot be specified with `sourceSecurityGroupId`.
       */
-    val self: js.UndefOr[Input[Boolean]] = js.native
+    val self: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The security group id to allow access to/from,
       * depending on the `type`. Cannot be specified with `cidrBlocks` and `self`.
       */
-    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The end port (or ICMP code if protocol is "icmp").
       */
-    val toPort: Input[Double] = js.native
+    val toPort: Input[Double]
     
     /**
       * The type of rule being created. Valid options are `ingress` (inbound)
       * or `egress` (outbound).
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object SecurityGroupRuleArgs {
     
@@ -260,67 +257,66 @@ object securityGroupRuleMod {
     }
   }
   
-  @js.native
   trait SecurityGroupRuleState extends StObject {
     
     /**
       * List of CIDR blocks. Cannot be specified with `sourceSecurityGroupId`.
       */
-    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Description of the rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The start port (or ICMP type number if protocol is "icmp" or "icmpv6").
       */
-    val fromPort: js.UndefOr[Input[Double]] = js.native
+    val fromPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of IPv6 CIDR blocks.
       */
-    val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of prefix list IDs (for allowing access to VPC endpoints).
       * Only valid with `egress`.
       */
-    val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The protocol. If not icmp, icmpv6, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The security group to apply this rule to.
       */
-    val securityGroupId: js.UndefOr[Input[String]] = js.native
+    val securityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true, the security group itself will be added as
       * a source to this ingress rule. Cannot be specified with `sourceSecurityGroupId`.
       */
-    val self: js.UndefOr[Input[Boolean]] = js.native
+    val self: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The security group id to allow access to/from,
       * depending on the `type`. Cannot be specified with `cidrBlocks` and `self`.
       */
-    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    val sourceSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The end port (or ICMP code if protocol is "icmp").
       */
-    val toPort: js.UndefOr[Input[Double]] = js.native
+    val toPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of rule being created. Valid options are `ingress` (inbound)
       * or `egress` (outbound).
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object SecurityGroupRuleState {
     

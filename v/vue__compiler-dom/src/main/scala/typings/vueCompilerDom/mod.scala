@@ -77,10 +77,13 @@ import typings.vueCompilerDom.vueCompilerDomStrings.component
 import typings.vueCompilerDom.vueCompilerDomStrings.directive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@vue/compiler-dom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@vue/compiler-dom", "BASE_TRANSITION")
   @js.native
@@ -246,315 +249,230 @@ object mod {
   @js.native
   val WITH_SCOPE_ID: js.Symbol = js.native
   
-  @JSImport("@vue/compiler-dom", "advancePositionWithClone")
-  @js.native
-  def advancePositionWithClone(pos: Position2, source: String): Position2 = js.native
-  @JSImport("@vue/compiler-dom", "advancePositionWithClone")
-  @js.native
-  def advancePositionWithClone(pos: Position2, source: String, numberOfCharacters: Double): Position2 = js.native
+  @scala.inline
+  def advancePositionWithClone(pos: Position2, source: String): Position2 = (^.asInstanceOf[js.Dynamic].applyDynamic("advancePositionWithClone")(pos.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Position2]
+  @scala.inline
+  def advancePositionWithClone(pos: Position2, source: String, numberOfCharacters: Double): Position2 = (^.asInstanceOf[js.Dynamic].applyDynamic("advancePositionWithClone")(pos.asInstanceOf[js.Any], source.asInstanceOf[js.Any], numberOfCharacters.asInstanceOf[js.Any])).asInstanceOf[Position2]
   
-  @JSImport("@vue/compiler-dom", "advancePositionWithMutation")
-  @js.native
-  def advancePositionWithMutation(pos: Position2, source: String): Position2 = js.native
-  @JSImport("@vue/compiler-dom", "advancePositionWithMutation")
-  @js.native
-  def advancePositionWithMutation(pos: Position2, source: String, numberOfCharacters: Double): Position2 = js.native
+  @scala.inline
+  def advancePositionWithMutation(pos: Position2, source: String): Position2 = (^.asInstanceOf[js.Dynamic].applyDynamic("advancePositionWithMutation")(pos.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Position2]
+  @scala.inline
+  def advancePositionWithMutation(pos: Position2, source: String, numberOfCharacters: Double): Position2 = (^.asInstanceOf[js.Dynamic].applyDynamic("advancePositionWithMutation")(pos.asInstanceOf[js.Any], source.asInstanceOf[js.Any], numberOfCharacters.asInstanceOf[js.Any])).asInstanceOf[Position2]
   
-  @JSImport("@vue/compiler-dom", "assert")
-  @js.native
-  def assert(condition: Boolean): Unit = js.native
-  @JSImport("@vue/compiler-dom", "assert")
-  @js.native
-  def assert(condition: Boolean, msg: String): Unit = js.native
+  @scala.inline
+  def assert(condition: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def assert(condition: Boolean, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@vue/compiler-dom", "baseCompile")
-  @js.native
-  def baseCompile(template: String): CodegenResult = js.native
-  @JSImport("@vue/compiler-dom", "baseCompile")
-  @js.native
-  def baseCompile(template: String, options: CompilerOptions): CodegenResult = js.native
-  @JSImport("@vue/compiler-dom", "baseCompile")
-  @js.native
-  def baseCompile(template: RootNode): CodegenResult = js.native
-  @JSImport("@vue/compiler-dom", "baseCompile")
-  @js.native
-  def baseCompile(template: RootNode, options: CompilerOptions): CodegenResult = js.native
+  @scala.inline
+  def baseCompile(template: String): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("baseCompile")(template.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
+  @scala.inline
+  def baseCompile(template: String, options: CompilerOptions): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("baseCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
+  @scala.inline
+  def baseCompile(template: RootNode): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("baseCompile")(template.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
+  @scala.inline
+  def baseCompile(template: RootNode, options: CompilerOptions): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("baseCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
   
-  @JSImport("@vue/compiler-dom", "baseParse")
-  @js.native
-  def baseParse(content: String): RootNode = js.native
-  @JSImport("@vue/compiler-dom", "baseParse")
-  @js.native
-  def baseParse(content: String, options: ParserOptions): RootNode = js.native
+  @scala.inline
+  def baseParse(content: String): RootNode = ^.asInstanceOf[js.Dynamic].applyDynamic("baseParse")(content.asInstanceOf[js.Any]).asInstanceOf[RootNode]
+  @scala.inline
+  def baseParse(content: String, options: ParserOptions): RootNode = (^.asInstanceOf[js.Dynamic].applyDynamic("baseParse")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RootNode]
   
-  @JSImport("@vue/compiler-dom", "buildProps")
-  @js.native
-  def buildProps(node: ElementNode, context: TransformContext): Directives = js.native
-  @JSImport("@vue/compiler-dom", "buildProps")
-  @js.native
-  def buildProps(node: ElementNode, context: TransformContext, props: js.UndefOr[scala.Nothing], ssr: Boolean): Directives = js.native
-  @JSImport("@vue/compiler-dom", "buildProps")
-  @js.native
-  def buildProps(node: ElementNode, context: TransformContext, props: js.Array[AttributeNode | DirectiveNode]): Directives = js.native
-  @JSImport("@vue/compiler-dom", "buildProps")
-  @js.native
+  @scala.inline
+  def buildProps(node: ElementNode, context: TransformContext): Directives = (^.asInstanceOf[js.Dynamic].applyDynamic("buildProps")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Directives]
+  @scala.inline
+  def buildProps(node: ElementNode, context: TransformContext, props: js.Array[AttributeNode | DirectiveNode]): Directives = (^.asInstanceOf[js.Dynamic].applyDynamic("buildProps")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Directives]
+  @scala.inline
   def buildProps(
     node: ElementNode,
     context: TransformContext,
     props: js.Array[AttributeNode | DirectiveNode],
     ssr: Boolean
-  ): Directives = js.native
+  ): Directives = (^.asInstanceOf[js.Dynamic].applyDynamic("buildProps")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[Directives]
+  @scala.inline
+  def buildProps(node: ElementNode, context: TransformContext, props: Unit, ssr: Boolean): Directives = (^.asInstanceOf[js.Dynamic].applyDynamic("buildProps")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[Directives]
   
-  @JSImport("@vue/compiler-dom", "buildSlots")
-  @js.native
-  def buildSlots(node: ElementNode, context: TransformContext): HasDynamicSlots = js.native
-  @JSImport("@vue/compiler-dom", "buildSlots")
-  @js.native
-  def buildSlots(node: ElementNode, context: TransformContext, buildSlotFn: SlotFnBuilder): HasDynamicSlots = js.native
+  @scala.inline
+  def buildSlots(node: ElementNode, context: TransformContext): HasDynamicSlots = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSlots")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[HasDynamicSlots]
+  @scala.inline
+  def buildSlots(node: ElementNode, context: TransformContext, buildSlotFn: SlotFnBuilder): HasDynamicSlots = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSlots")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], buildSlotFn.asInstanceOf[js.Any])).asInstanceOf[HasDynamicSlots]
   
-  @JSImport("@vue/compiler-dom", "compile")
-  @js.native
-  def compile(template: String): CodegenResult = js.native
-  @JSImport("@vue/compiler-dom", "compile")
-  @js.native
-  def compile(template: String, options: CompilerOptions): CodegenResult = js.native
+  @scala.inline
+  def compile(template: String): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
+  @scala.inline
+  def compile(template: String, options: CompilerOptions): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
   
-  @JSImport("@vue/compiler-dom", "createArrayExpression")
-  @js.native
-  def createArrayExpression(elements: js.Array[String | JSChildNode]): ArrayExpression = js.native
-  @JSImport("@vue/compiler-dom", "createArrayExpression")
-  @js.native
-  def createArrayExpression(elements: js.Array[String | JSChildNode], loc: SourceLocation): ArrayExpression = js.native
+  @scala.inline
+  def createArrayExpression(elements: js.Array[String | JSChildNode]): ArrayExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression]
+  @scala.inline
+  def createArrayExpression(elements: js.Array[String | JSChildNode], loc: SourceLocation): ArrayExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[ArrayExpression]
   
-  @JSImport("@vue/compiler-dom", "createAssignmentExpression")
-  @js.native
-  def createAssignmentExpression(left: SimpleExpressionNode, right: JSChildNode): AssignmentExpression = js.native
+  @scala.inline
+  def createAssignmentExpression(left: SimpleExpressionNode, right: JSChildNode): AssignmentExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createAssignmentExpression")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentExpression]
   
-  @JSImport("@vue/compiler-dom", "createBlockStatement")
-  @js.native
-  def createBlockStatement(body: js.Array[JSChildNode | IfStatement]): BlockStatement = js.native
+  @scala.inline
+  def createBlockStatement(body: js.Array[JSChildNode | IfStatement]): BlockStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlockStatement")(body.asInstanceOf[js.Any]).asInstanceOf[BlockStatement]
   
-  @JSImport("@vue/compiler-dom", "createCacheExpression")
-  @js.native
-  def createCacheExpression(index: Double, value: JSChildNode): CacheExpression = js.native
-  @JSImport("@vue/compiler-dom", "createCacheExpression")
-  @js.native
-  def createCacheExpression(index: Double, value: JSChildNode, isVNode: Boolean): CacheExpression = js.native
+  @scala.inline
+  def createCacheExpression(index: Double, value: JSChildNode): CacheExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createCacheExpression")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[CacheExpression]
+  @scala.inline
+  def createCacheExpression(index: Double, value: JSChildNode, isVNode: Boolean): CacheExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createCacheExpression")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any], isVNode.asInstanceOf[js.Any])).asInstanceOf[CacheExpression]
   
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
-  def createCallExpression(callee: String): InferCodegenNodeType[String] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
-  def createCallExpression(callee: String, args: js.UndefOr[scala.Nothing], loc: SourceLocation): InferCodegenNodeType[String] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
+  @scala.inline
+  def createCallExpression(callee: String): InferCodegenNodeType[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any]).asInstanceOf[InferCodegenNodeType[String]]
+  @scala.inline
   def createCallExpression(
     callee: String,
     args: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ]
-  ): InferCodegenNodeType[String] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
+  ): InferCodegenNodeType[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[String]]
+  @scala.inline
   def createCallExpression(
     callee: String,
     args: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ],
     loc: SourceLocation
-  ): InferCodegenNodeType[String] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
-  def createCallExpression(callee: js.Symbol): InferCodegenNodeType[js.Symbol] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
-  def createCallExpression(callee: js.Symbol, args: js.UndefOr[scala.Nothing], loc: SourceLocation): InferCodegenNodeType[js.Symbol] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
+  ): InferCodegenNodeType[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[String]]
+  @scala.inline
+  def createCallExpression(callee: String, args: Unit, loc: SourceLocation): InferCodegenNodeType[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[String]]
+  @scala.inline
+  def createCallExpression(callee: js.Symbol): InferCodegenNodeType[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any]).asInstanceOf[InferCodegenNodeType[js.Symbol]]
+  @scala.inline
   def createCallExpression(
     callee: js.Symbol,
     args: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ]
-  ): InferCodegenNodeType[js.Symbol] = js.native
-  @JSImport("@vue/compiler-dom", "createCallExpression")
-  @js.native
+  ): InferCodegenNodeType[js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[js.Symbol]]
+  @scala.inline
   def createCallExpression(
     callee: js.Symbol,
     args: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ],
     loc: SourceLocation
-  ): InferCodegenNodeType[js.Symbol] = js.native
+  ): InferCodegenNodeType[js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[js.Symbol]]
+  @scala.inline
+  def createCallExpression(callee: js.Symbol, args: Unit, loc: SourceLocation): InferCodegenNodeType[js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallExpression")(callee.asInstanceOf[js.Any], args.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InferCodegenNodeType[js.Symbol]]
   
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](
-    code: T,
-    loc: js.UndefOr[scala.Nothing],
-    messages: js.UndefOr[scala.Nothing],
-    additionalMessage: String
-  ): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T, loc: js.UndefOr[scala.Nothing], messages: NumberDictionary[String]): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](
-    code: T,
-    loc: js.UndefOr[scala.Nothing],
-    messages: NumberDictionary[String],
-    additionalMessage: String
-  ): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: js.UndefOr[scala.Nothing], additionalMessage: String): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: NumberDictionary[String]): CompilerError | CoreCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createCompilerError")
-  @js.native
-  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: NumberDictionary[String], additionalMessage: String): CompilerError | CoreCompilerError = js.native
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T): CompilerError | CoreCompilerError = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any]).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: Unit, messages: NumberDictionary[String]): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: Unit, messages: NumberDictionary[String], additionalMessage: String): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], additionalMessage.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: Unit, messages: Unit, additionalMessage: String): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], additionalMessage.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: NumberDictionary[String]): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: NumberDictionary[String], additionalMessage: String): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], additionalMessage.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
+  @scala.inline
+  def createCompilerError[T /* <: Double */](code: T, loc: SourceLocation, messages: Unit, additionalMessage: String): CompilerError | CoreCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], additionalMessage.asInstanceOf[js.Any])).asInstanceOf[CompilerError | CoreCompilerError]
   
-  @JSImport("@vue/compiler-dom", "createCompoundExpression")
-  @js.native
+  @scala.inline
   def createCompoundExpression(
     children: js.Array[
       SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ]
-  ): CompoundExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "createCompoundExpression")
-  @js.native
+  ): CompoundExpressionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompoundExpression")(children.asInstanceOf[js.Any]).asInstanceOf[CompoundExpressionNode]
+  @scala.inline
   def createCompoundExpression(
     children: js.Array[
       SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
     loc: SourceLocation
-  ): CompoundExpressionNode = js.native
+  ): CompoundExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompoundExpression")(children.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[CompoundExpressionNode]
   
-  @JSImport("@vue/compiler-dom", "createConditionalExpression")
-  @js.native
-  def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode): ConditionalExpression = js.native
-  @JSImport("@vue/compiler-dom", "createConditionalExpression")
-  @js.native
-  def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode, newline: Boolean): ConditionalExpression = js.native
+  @scala.inline
+  def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditionalExpression")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
+  @scala.inline
+  def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode, newline: Boolean): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditionalExpression")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any], newline.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
   
-  @JSImport("@vue/compiler-dom", "createDOMCompilerError")
-  @js.native
-  def createDOMCompilerError(code: DOMErrorCodes): DOMCompilerError = js.native
-  @JSImport("@vue/compiler-dom", "createDOMCompilerError")
-  @js.native
-  def createDOMCompilerError(code: DOMErrorCodes, loc: SourceLocation): DOMCompilerError = js.native
+  @scala.inline
+  def createDOMCompilerError(code: DOMErrorCodes): DOMCompilerError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDOMCompilerError")(code.asInstanceOf[js.Any]).asInstanceOf[DOMCompilerError]
+  @scala.inline
+  def createDOMCompilerError(code: DOMErrorCodes, loc: SourceLocation): DOMCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createDOMCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[DOMCompilerError]
   
-  @JSImport("@vue/compiler-dom", "createForLoopParams")
-  @js.native
-  def createForLoopParams(hasValueKeyIndex: ForParseResult): js.Array[ExpressionNode] = js.native
+  @scala.inline
+  def createForLoopParams(hasValueKeyIndex: ForParseResult): js.Array[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(hasValueKeyIndex.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExpressionNode]]
   
-  @JSImport("@vue/compiler-dom", "createFunctionExpression")
-  @js.native
+  @scala.inline
   def createFunctionExpression(
     params: js.UndefOr[ExpressionNode | String | (js.Array[ExpressionNode | String])],
     returns: js.UndefOr[TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode],
     newline: js.UndefOr[Boolean],
     isSlot: js.UndefOr[Boolean],
     loc: js.UndefOr[SourceLocation]
-  ): FunctionExpression = js.native
+  ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionExpression")(params.asInstanceOf[js.Any], returns.asInstanceOf[js.Any], newline.asInstanceOf[js.Any], isSlot.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
   
-  @JSImport("@vue/compiler-dom", "createIfStatement")
-  @js.native
-  def createIfStatement(test: ExpressionNode, consequent: BlockStatement): IfStatement = js.native
-  @JSImport("@vue/compiler-dom", "createIfStatement")
-  @js.native
-  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: BlockStatement): IfStatement = js.native
-  @JSImport("@vue/compiler-dom", "createIfStatement")
-  @js.native
-  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: IfStatement): IfStatement = js.native
-  @JSImport("@vue/compiler-dom", "createIfStatement")
-  @js.native
-  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: ReturnStatement): IfStatement = js.native
+  @scala.inline
+  def createIfStatement(test: ExpressionNode, consequent: BlockStatement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIfStatement")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
+  @scala.inline
+  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: BlockStatement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIfStatement")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
+  @scala.inline
+  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: IfStatement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIfStatement")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
+  @scala.inline
+  def createIfStatement(test: ExpressionNode, consequent: BlockStatement, alternate: ReturnStatement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIfStatement")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
   
-  @JSImport("@vue/compiler-dom", "createInterpolation")
-  @js.native
-  def createInterpolation(content: String, loc: SourceLocation): InterpolationNode = js.native
-  @JSImport("@vue/compiler-dom", "createInterpolation")
-  @js.native
-  def createInterpolation(content: ExpressionNode, loc: SourceLocation): InterpolationNode = js.native
+  @scala.inline
+  def createInterpolation(content: String, loc: SourceLocation): InterpolationNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterpolation")(content.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InterpolationNode]
+  @scala.inline
+  def createInterpolation(content: ExpressionNode, loc: SourceLocation): InterpolationNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterpolation")(content.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[InterpolationNode]
   
-  @JSImport("@vue/compiler-dom", "createObjectExpression")
-  @js.native
-  def createObjectExpression(properties: js.Array[Property]): ObjectExpression = js.native
-  @JSImport("@vue/compiler-dom", "createObjectExpression")
-  @js.native
-  def createObjectExpression(properties: js.Array[Property], loc: SourceLocation): ObjectExpression = js.native
+  @scala.inline
+  def createObjectExpression(properties: js.Array[Property]): ObjectExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectExpression")(properties.asInstanceOf[js.Any]).asInstanceOf[ObjectExpression]
+  @scala.inline
+  def createObjectExpression(properties: js.Array[Property], loc: SourceLocation): ObjectExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectExpression")(properties.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[ObjectExpression]
   
-  @JSImport("@vue/compiler-dom", "createObjectProperty")
-  @js.native
-  def createObjectProperty(key: String, value: JSChildNode): Property = js.native
-  @JSImport("@vue/compiler-dom", "createObjectProperty")
-  @js.native
-  def createObjectProperty(key: ExpressionNode, value: JSChildNode): Property = js.native
+  @scala.inline
+  def createObjectProperty(key: String, value: JSChildNode): Property = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Property]
+  @scala.inline
+  def createObjectProperty(key: ExpressionNode, value: JSChildNode): Property = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Property]
   
-  @JSImport("@vue/compiler-dom", "createReturnStatement")
-  @js.native
-  def createReturnStatement(returns: js.Array[TemplateChildNode]): ReturnStatement = js.native
-  @JSImport("@vue/compiler-dom", "createReturnStatement")
-  @js.native
-  def createReturnStatement(returns: JSChildNode): ReturnStatement = js.native
-  @JSImport("@vue/compiler-dom", "createReturnStatement")
-  @js.native
-  def createReturnStatement(returns: TemplateChildNode): ReturnStatement = js.native
+  @scala.inline
+  def createReturnStatement(returns: js.Array[TemplateChildNode]): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
+  @scala.inline
+  def createReturnStatement(returns: JSChildNode): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
+  @scala.inline
+  def createReturnStatement(returns: TemplateChildNode): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturnStatement")(returns.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
   
-  @JSImport("@vue/compiler-dom", "createRoot")
-  @js.native
-  def createRoot(children: js.Array[TemplateChildNode]): RootNode = js.native
-  @JSImport("@vue/compiler-dom", "createRoot")
-  @js.native
-  def createRoot(children: js.Array[TemplateChildNode], loc: SourceLocation): RootNode = js.native
+  @scala.inline
+  def createRoot(children: js.Array[TemplateChildNode]): RootNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")(children.asInstanceOf[js.Any]).asInstanceOf[RootNode]
+  @scala.inline
+  def createRoot(children: js.Array[TemplateChildNode], loc: SourceLocation): RootNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")(children.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[RootNode]
   
-  @JSImport("@vue/compiler-dom", "createSequenceExpression")
-  @js.native
-  def createSequenceExpression(expressions: js.Array[JSChildNode]): SequenceExpression = js.native
+  @scala.inline
+  def createSequenceExpression(expressions: js.Array[JSChildNode]): SequenceExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createSequenceExpression")(expressions.asInstanceOf[js.Any]).asInstanceOf[SequenceExpression]
   
-  @JSImport("@vue/compiler-dom", "createSimpleExpression")
-  @js.native
-  def createSimpleExpression(content: String, isStatic: Boolean): SimpleExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "createSimpleExpression")
-  @js.native
-  def createSimpleExpression(content: String, isStatic: Boolean, loc: js.UndefOr[scala.Nothing], isConstant: Boolean): SimpleExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "createSimpleExpression")
-  @js.native
-  def createSimpleExpression(content: String, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "createSimpleExpression")
-  @js.native
-  def createSimpleExpression(content: String, isStatic: Boolean, loc: SourceLocation, isConstant: Boolean): SimpleExpressionNode = js.native
+  @scala.inline
+  def createSimpleExpression(content: String, isStatic: Boolean): SimpleExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleExpression")(content.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[SimpleExpressionNode]
+  @scala.inline
+  def createSimpleExpression(content: String, isStatic: Boolean, loc: Unit, isConstant: Boolean): SimpleExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleExpression")(content.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], isConstant.asInstanceOf[js.Any])).asInstanceOf[SimpleExpressionNode]
+  @scala.inline
+  def createSimpleExpression(content: String, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleExpression")(content.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[SimpleExpressionNode]
+  @scala.inline
+  def createSimpleExpression(content: String, isStatic: Boolean, loc: SourceLocation, isConstant: Boolean): SimpleExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleExpression")(content.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], isConstant.asInstanceOf[js.Any])).asInstanceOf[SimpleExpressionNode]
   
-  @JSImport("@vue/compiler-dom", "createStructuralDirectiveTransform")
-  @js.native
-  def createStructuralDirectiveTransform(name: String, fn: StructuralDirectiveTransform): NodeTransform = js.native
-  @JSImport("@vue/compiler-dom", "createStructuralDirectiveTransform")
-  @js.native
-  def createStructuralDirectiveTransform(name: RegExp, fn: StructuralDirectiveTransform): NodeTransform = js.native
+  @scala.inline
+  def createStructuralDirectiveTransform(name: String, fn: StructuralDirectiveTransform): NodeTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("createStructuralDirectiveTransform")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[NodeTransform]
+  @scala.inline
+  def createStructuralDirectiveTransform(name: RegExp, fn: StructuralDirectiveTransform): NodeTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("createStructuralDirectiveTransform")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[NodeTransform]
   
-  @JSImport("@vue/compiler-dom", "createTemplateLiteral")
-  @js.native
-  def createTemplateLiteral(elements: js.Array[String | JSChildNode]): TemplateLiteral = js.native
+  @scala.inline
+  def createTemplateLiteral(elements: js.Array[String | JSChildNode]): TemplateLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateLiteral")(elements.asInstanceOf[js.Any]).asInstanceOf[TemplateLiteral]
   
-  @JSImport("@vue/compiler-dom", "createTransformContext")
-  @js.native
+  @scala.inline
   def createTransformContext(
     root: RootNode,
     hasPrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSsrSsrCssVarsBindingMetadataOnError: TransformOptions
-  ): TransformContext = js.native
+  ): TransformContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformContext")(root.asInstanceOf[js.Any], hasPrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSsrSsrCssVarsBindingMetadataOnError.asInstanceOf[js.Any])).asInstanceOf[TransformContext]
   
-  @JSImport("@vue/compiler-dom", "createVNodeCall")
-  @js.native
+  @scala.inline
   def createVNodeCall(
     context: TransformContext | Null,
     tag: String | js.Symbol | CallExpression,
@@ -568,154 +486,124 @@ object mod {
     isBlock: js.UndefOr[Boolean],
     disableTracking: js.UndefOr[Boolean],
     loc: js.UndefOr[SourceLocation]
-  ): VNodeCall = js.native
+  ): VNodeCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createVNodeCall")(context.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any], patchFlag.asInstanceOf[js.Any], dynamicProps.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], isBlock.asInstanceOf[js.Any], disableTracking.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[VNodeCall]
   
-  @JSImport("@vue/compiler-dom", "findDir")
-  @js.native
-  def findDir(node: ElementNode, name: String): js.UndefOr[DirectiveNode] = js.native
-  @JSImport("@vue/compiler-dom", "findDir")
-  @js.native
-  def findDir(node: ElementNode, name: String, allowEmpty: Boolean): js.UndefOr[DirectiveNode] = js.native
-  @JSImport("@vue/compiler-dom", "findDir")
-  @js.native
-  def findDir(node: ElementNode, name: RegExp): js.UndefOr[DirectiveNode] = js.native
-  @JSImport("@vue/compiler-dom", "findDir")
-  @js.native
-  def findDir(node: ElementNode, name: RegExp, allowEmpty: Boolean): js.UndefOr[DirectiveNode] = js.native
+  @scala.inline
+  def findDir(node: ElementNode, name: String): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
+  @scala.inline
+  def findDir(node: ElementNode, name: String, allowEmpty: Boolean): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
+  @scala.inline
+  def findDir(node: ElementNode, name: RegExp): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
+  @scala.inline
+  def findDir(node: ElementNode, name: RegExp, allowEmpty: Boolean): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
   
-  @JSImport("@vue/compiler-dom", "findProp")
-  @js.native
+  @scala.inline
   def findProp(node: ElementNode, name: String): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
-  ] = js.native
-  @JSImport("@vue/compiler-dom", "findProp")
-  @js.native
-  def findProp(node: ElementNode, name: String, dynamicOnly: js.UndefOr[scala.Nothing], allowEmpty: Boolean): js.UndefOr[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("findProp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
-  ] = js.native
-  @JSImport("@vue/compiler-dom", "findProp")
-  @js.native
+  ]]
+  @scala.inline
   def findProp(node: ElementNode, name: String, dynamicOnly: Boolean): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
-  ] = js.native
-  @JSImport("@vue/compiler-dom", "findProp")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("findProp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dynamicOnly.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
+  ]]
+  @scala.inline
   def findProp(node: ElementNode, name: String, dynamicOnly: Boolean, allowEmpty: Boolean): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("findProp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dynamicOnly.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
+  ]]
+  @scala.inline
+  def findProp(node: ElementNode, name: String, dynamicOnly: Unit, allowEmpty: Boolean): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("findProp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dynamicOnly.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
+  ]]
   
-  @JSImport("@vue/compiler-dom", "generate")
-  @js.native
-  def generate(ast: RootNode): CodegenResult = js.native
-  @JSImport("@vue/compiler-dom", "generate")
-  @js.native
-  def generate(ast: RootNode, options: CodegenOptionsonContextCr): CodegenResult = js.native
+  @scala.inline
+  def generate(ast: RootNode): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
+  @scala.inline
+  def generate(ast: RootNode, options: CodegenOptionsonContextCr): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
   
-  @JSImport("@vue/compiler-dom", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String): String = js.native
-  @JSImport("@vue/compiler-dom", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: js.UndefOr[scala.Nothing], end: Double): String = js.native
-  @JSImport("@vue/compiler-dom", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: Double): String = js.native
-  @JSImport("@vue/compiler-dom", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: Double, end: Double): String = js.native
+  @scala.inline
+  def generateCodeFrame(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Unit, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@vue/compiler-dom", "getBaseTransformPreset")
-  @js.native
-  def getBaseTransformPreset(): TransformPreset = js.native
-  @JSImport("@vue/compiler-dom", "getBaseTransformPreset")
-  @js.native
-  def getBaseTransformPreset(prefixIdentifiers: Boolean): TransformPreset = js.native
+  @scala.inline
+  def getBaseTransformPreset(): TransformPreset = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseTransformPreset")().asInstanceOf[TransformPreset]
+  @scala.inline
+  def getBaseTransformPreset(prefixIdentifiers: Boolean): TransformPreset = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseTransformPreset")(prefixIdentifiers.asInstanceOf[js.Any]).asInstanceOf[TransformPreset]
   
-  @JSImport("@vue/compiler-dom", "getInnerRange")
-  @js.native
-  def getInnerRange(loc: SourceLocation, offset: Double): SourceLocation = js.native
-  @JSImport("@vue/compiler-dom", "getInnerRange")
-  @js.native
-  def getInnerRange(loc: SourceLocation, offset: Double, length: Double): SourceLocation = js.native
+  @scala.inline
+  def getInnerRange(loc: SourceLocation, offset: Double): SourceLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("getInnerRange")(loc.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[SourceLocation]
+  @scala.inline
+  def getInnerRange(loc: SourceLocation, offset: Double, length: Double): SourceLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("getInnerRange")(loc.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourceLocation]
   
-  @JSImport("@vue/compiler-dom", "hasDynamicKeyVBind")
-  @js.native
-  def hasDynamicKeyVBind(node: ElementNode): Boolean = js.native
+  @scala.inline
+  def hasDynamicKeyVBind(node: ElementNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDynamicKeyVBind")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "hasScopeRef")
-  @js.native
-  def hasScopeRef(node: js.UndefOr[scala.Nothing], ids: StringDictionary[js.UndefOr[Double]]): Boolean = js.native
-  @JSImport("@vue/compiler-dom", "hasScopeRef")
-  @js.native
-  def hasScopeRef(node: ExpressionNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = js.native
-  @JSImport("@vue/compiler-dom", "hasScopeRef")
-  @js.native
-  def hasScopeRef(node: IfBranchNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = js.native
-  @JSImport("@vue/compiler-dom", "hasScopeRef")
-  @js.native
-  def hasScopeRef(node: TemplateChildNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = js.native
+  @scala.inline
+  def hasScopeRef(node: Unit, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasScopeRef(node: ExpressionNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasScopeRef(node: IfBranchNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasScopeRef(node: TemplateChildNode, ids: StringDictionary[js.UndefOr[Double]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasScopeRef")(node.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@vue/compiler-dom", "helperNameMap")
   @js.native
   val helperNameMap: js.Any = js.native
   
-  @JSImport("@vue/compiler-dom", "injectProp")
-  @js.native
-  def injectProp(node: RenderSlotCall, prop: Property, context: TransformContext): Unit = js.native
-  @JSImport("@vue/compiler-dom", "injectProp")
-  @js.native
-  def injectProp(node: VNodeCall, prop: Property, context: TransformContext): Unit = js.native
+  @scala.inline
+  def injectProp(node: RenderSlotCall, prop: Property, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectProp")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def injectProp(node: VNodeCall, prop: Property, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectProp")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@vue/compiler-dom", "isBindKey")
-  @js.native
-  def isBindKey(arg: js.UndefOr[scala.Nothing], name: String): Boolean = js.native
-  @JSImport("@vue/compiler-dom", "isBindKey")
-  @js.native
-  def isBindKey(arg: ExpressionNode, name: String): Boolean = js.native
+  @scala.inline
+  def isBindKey(arg: Unit, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBindKey")(arg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBindKey(arg: ExpressionNode, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBindKey")(arg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "isBuiltInType")
-  @js.native
-  def isBuiltInType(tag: String, expected: String): Boolean = js.native
+  @scala.inline
+  def isBuiltInType(tag: String, expected: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltInType")(tag.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "isCoreComponent")
-  @js.native
-  def isCoreComponent(tag: String): js.Symbol | Unit = js.native
+  @scala.inline
+  def isCoreComponent(tag: String): js.Symbol | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoreComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Symbol | Unit]
   
-  @JSImport("@vue/compiler-dom", "isMemberExpression")
-  @js.native
-  def isMemberExpression(path: String): Boolean = js.native
+  @scala.inline
+  def isMemberExpression(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMemberExpression")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "isSimpleIdentifier")
-  @js.native
-  def isSimpleIdentifier(name: String): Boolean = js.native
+  @scala.inline
+  def isSimpleIdentifier(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "isSlotOutlet")
-  @js.native
-  def isSlotOutlet(node: RootNode): /* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean = js.native
-  @JSImport("@vue/compiler-dom", "isSlotOutlet")
-  @js.native
-  def isSlotOutlet(node: TemplateChildNode): /* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean = js.native
+  @scala.inline
+  def isSlotOutlet(node: RootNode): /* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSlotOutlet")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean]
+  @scala.inline
+  def isSlotOutlet(node: TemplateChildNode): /* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSlotOutlet")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.SlotOutletNode */ Boolean]
   
-  @JSImport("@vue/compiler-dom", "isStaticExp")
-  @js.native
-  def isStaticExp(p: JSChildNode): /* is @vue/compiler-core.@vue/compiler-core.SimpleExpressionNode */ Boolean = js.native
+  @scala.inline
+  def isStaticExp(p: JSChildNode): /* is @vue/compiler-core.@vue/compiler-core.SimpleExpressionNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticExp")(p.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.SimpleExpressionNode */ Boolean]
   
-  @JSImport("@vue/compiler-dom", "isTemplateNode")
-  @js.native
-  def isTemplateNode(node: RootNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = js.native
-  @JSImport("@vue/compiler-dom", "isTemplateNode")
-  @js.native
-  def isTemplateNode(node: TemplateChildNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = js.native
+  @scala.inline
+  def isTemplateNode(node: RootNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean]
+  @scala.inline
+  def isTemplateNode(node: TemplateChildNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean]
   
-  @JSImport("@vue/compiler-dom", "isText")
-  @js.native
-  def isText(node: TemplateChildNode): Boolean = js.native
+  @scala.inline
+  def isText(node: TemplateChildNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/compiler-dom", "isVSlot")
-  @js.native
+  @scala.inline
   def isVSlot_0(
     p: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode> | std.Array<@vue/compiler-core.@vue/compiler-core.AttributeNode | @vue/compiler-core.@vue/compiler-core.DirectiveNode>[0] */ js.Any
-  ): /* is @vue/compiler-core.@vue/compiler-core.DirectiveNode */ Boolean = js.native
+  ): /* is @vue/compiler-core.@vue/compiler-core.DirectiveNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVSlot")(p.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.DirectiveNode */ Boolean]
   
   @JSImport("@vue/compiler-dom", "locStub")
   @js.native
@@ -725,52 +613,37 @@ object mod {
   @js.native
   val noopDirectiveTransform: DirectiveTransform = js.native
   
-  @JSImport("@vue/compiler-dom", "parse")
-  @js.native
-  def parse(template: String): RootNode = js.native
-  @JSImport("@vue/compiler-dom", "parse")
-  @js.native
-  def parse(template: String, options: ParserOptions): RootNode = js.native
+  @scala.inline
+  def parse(template: String): RootNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(template.asInstanceOf[js.Any]).asInstanceOf[RootNode]
+  @scala.inline
+  def parse(template: String, options: ParserOptions): RootNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RootNode]
   
   @JSImport("@vue/compiler-dom", "parserOptions")
   @js.native
   val parserOptions: ParserOptions = js.native
   
-  @JSImport("@vue/compiler-dom", "processExpression")
-  @js.native
-  def processExpression(node: SimpleExpressionNode, context: TransformContext): ExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "processExpression")
-  @js.native
-  def processExpression(
-    node: SimpleExpressionNode,
-    context: TransformContext,
-    asParams: js.UndefOr[scala.Nothing],
-    asRawStatements: Boolean
-  ): ExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "processExpression")
-  @js.native
-  def processExpression(node: SimpleExpressionNode, context: TransformContext, asParams: Boolean): ExpressionNode = js.native
-  @JSImport("@vue/compiler-dom", "processExpression")
-  @js.native
-  def processExpression(node: SimpleExpressionNode, context: TransformContext, asParams: Boolean, asRawStatements: Boolean): ExpressionNode = js.native
+  @scala.inline
+  def processExpression(node: SimpleExpressionNode, context: TransformContext): ExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("processExpression")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ExpressionNode]
+  @scala.inline
+  def processExpression(node: SimpleExpressionNode, context: TransformContext, asParams: Boolean): ExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("processExpression")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], asParams.asInstanceOf[js.Any])).asInstanceOf[ExpressionNode]
+  @scala.inline
+  def processExpression(node: SimpleExpressionNode, context: TransformContext, asParams: Boolean, asRawStatements: Boolean): ExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("processExpression")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], asParams.asInstanceOf[js.Any], asRawStatements.asInstanceOf[js.Any])).asInstanceOf[ExpressionNode]
+  @scala.inline
+  def processExpression(node: SimpleExpressionNode, context: TransformContext, asParams: Unit, asRawStatements: Boolean): ExpressionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("processExpression")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], asParams.asInstanceOf[js.Any], asRawStatements.asInstanceOf[js.Any])).asInstanceOf[ExpressionNode]
   
-  @JSImport("@vue/compiler-dom", "processFor")
-  @js.native
-  def processFor(node: ElementNode, dir: DirectiveNode, context: TransformContext): js.UndefOr[js.Function0[Unit]] = js.native
-  @JSImport("@vue/compiler-dom", "processFor")
-  @js.native
+  @scala.inline
+  def processFor(node: ElementNode, dir: DirectiveNode, context: TransformContext): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("processFor")(node.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
+  @scala.inline
   def processFor(
     node: ElementNode,
     dir: DirectiveNode,
     context: TransformContext,
     processCodegen: js.Function1[/* forNode */ ForNode, js.UndefOr[js.Function0[Unit]]]
-  ): js.UndefOr[js.Function0[Unit]] = js.native
+  ): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("processFor")(node.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], context.asInstanceOf[js.Any], processCodegen.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
   
-  @JSImport("@vue/compiler-dom", "processIf")
-  @js.native
-  def processIf(node: ElementNode, dir: DirectiveNode, context: TransformContext): js.UndefOr[js.Function0[Unit]] = js.native
-  @JSImport("@vue/compiler-dom", "processIf")
-  @js.native
+  @scala.inline
+  def processIf(node: ElementNode, dir: DirectiveNode, context: TransformContext): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("processIf")(node.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
+  @scala.inline
   def processIf(
     node: ElementNode,
     dir: DirectiveNode,
@@ -781,29 +654,24 @@ object mod {
       /* isRoot */ Boolean, 
       js.UndefOr[js.Function0[Unit]]
     ]
-  ): js.UndefOr[js.Function0[Unit]] = js.native
+  ): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("processIf")(node.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], context.asInstanceOf[js.Any], processCodegen.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
   
-  @JSImport("@vue/compiler-dom", "processSlotOutlet")
-  @js.native
-  def processSlotOutlet(node: SlotOutletNode, context: TransformContext): SlotOutletProcessResult = js.native
+  @scala.inline
+  def processSlotOutlet(node: SlotOutletNode, context: TransformContext): SlotOutletProcessResult = (^.asInstanceOf[js.Dynamic].applyDynamic("processSlotOutlet")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[SlotOutletProcessResult]
   
-  @JSImport("@vue/compiler-dom", "registerRuntimeHelpers")
-  @js.native
-  def registerRuntimeHelpers(helpers: js.Any): Unit = js.native
+  @scala.inline
+  def registerRuntimeHelpers(helpers: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRuntimeHelpers")(helpers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@vue/compiler-dom", "resolveComponentType")
-  @js.native
-  def resolveComponentType(node: ComponentNode, context: TransformContext): String | js.Symbol | CallExpression = js.native
-  @JSImport("@vue/compiler-dom", "resolveComponentType")
-  @js.native
-  def resolveComponentType(node: ComponentNode, context: TransformContext, ssr: Boolean): String | js.Symbol | CallExpression = js.native
+  @scala.inline
+  def resolveComponentType(node: ComponentNode, context: TransformContext): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]
+  @scala.inline
+  def resolveComponentType(node: ComponentNode, context: TransformContext, ssr: Boolean): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]
   
-  @JSImport("@vue/compiler-dom", "toValidAssetId")
-  @js.native
-  def toValidAssetId_component(name: String, `type`: component): String = js.native
-  @JSImport("@vue/compiler-dom", "toValidAssetId")
-  @js.native
-  def toValidAssetId_directive(name: String, `type`: directive): String = js.native
+  @scala.inline
+  def toValidAssetId_component(name: String, `type`: component): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toValidAssetId")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def toValidAssetId_directive(name: String, `type`: directive): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toValidAssetId")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@vue/compiler-dom", "trackSlotScopes")
   @js.native
@@ -813,9 +681,8 @@ object mod {
   @js.native
   val trackVForSlotScopes: NodeTransform = js.native
   
-  @JSImport("@vue/compiler-dom", "transform")
-  @js.native
-  def transform(root: RootNode, options: TransformOptions): Unit = js.native
+  @scala.inline
+  def transform(root: RootNode, options: TransformOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@vue/compiler-dom", "transformBind")
   @js.native
@@ -841,18 +708,17 @@ object mod {
   @js.native
   val transformStyle: NodeTransform = js.native
   
-  @JSImport("@vue/compiler-dom", "traverseNode")
-  @js.native
-  def traverseNode(node: RootNode, context: TransformContext): Unit = js.native
-  @JSImport("@vue/compiler-dom", "traverseNode")
-  @js.native
-  def traverseNode(node: TemplateChildNode, context: TransformContext): Unit = js.native
+  @scala.inline
+  def traverseNode(node: RootNode, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def traverseNode(node: TemplateChildNode, context: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait DOMCompilerError extends CompilerError {
+  trait DOMCompilerError
+    extends StObject
+       with CompilerError {
     
     @JSName("code")
-    var code_DOMCompilerError: DOMErrorCodes = js.native
+    var code_DOMCompilerError: DOMErrorCodes
   }
   object DOMCompilerError {
     

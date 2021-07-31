@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAppIcon extends StObject {
   
   /**
     * The actual bytes of the image in a base64url encoded string (c.f. RFC4648, section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The image type can be png or jpg. -
     * The image should ideally be square. - The image should ideally have a size of 512x512.
     */
-  var imageData: js.UndefOr[String] = js.native
+  var imageData: js.UndefOr[String] = js.undefined
 }
 object WebAppIcon {
   

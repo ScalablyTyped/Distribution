@@ -6,17 +6,15 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.SpreadElementKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsElements extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var elements: js.Array[PatternKind | SpreadElementKind | Null] = js.native
+  var elements: js.Array[PatternKind | SpreadElementKind | Null]
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object CommentsElements {
   

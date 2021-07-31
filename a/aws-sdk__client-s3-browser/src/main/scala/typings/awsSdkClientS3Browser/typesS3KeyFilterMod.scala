@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Browser.typesFilterRuleMod.UnmarshalledFilterRule
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesS3KeyFilterMod {
   
-  @js.native
   trait S3KeyFilter extends StObject {
     
     /**
       * <p>A list of containers for key value pair that defines the criteria for the filter rule.</p>
       */
-    var FilterRules: js.UndefOr[js.Array[FilterRule] | Iterable[FilterRule]] = js.native
+    var FilterRules: js.UndefOr[js.Array[FilterRule] | Iterable[FilterRule]] = js.undefined
   }
   object S3KeyFilter {
     
@@ -40,14 +38,15 @@ object typesS3KeyFilterMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledS3KeyFilter extends S3KeyFilter {
+  trait UnmarshalledS3KeyFilter
+    extends StObject
+       with S3KeyFilter {
     
     /**
       * <p>A list of containers for key value pair that defines the criteria for the filter rule.</p>
       */
     @JSName("FilterRules")
-    var FilterRules_UnmarshalledS3KeyFilter: js.UndefOr[js.Array[UnmarshalledFilterRule]] = js.native
+    var FilterRules_UnmarshalledS3KeyFilter: js.UndefOr[js.Array[UnmarshalledFilterRule]] = js.undefined
   }
   object UnmarshalledS3KeyFilter {
     

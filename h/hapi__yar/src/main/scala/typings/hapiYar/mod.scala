@@ -8,7 +8,6 @@ import typings.hapiHapi.mod.Plugin
 import typings.hapiYar.anon.ClearInvalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,10 +16,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[YarOptions] = js.native
   
-  @js.native
   trait ServerYar extends StObject {
     
-    def revoke(id: Id): js.Promise[Unit] = js.native
+    def revoke(id: Id): js.Promise[Unit]
   }
   object ServerYar {
     
@@ -54,10 +52,10 @@ object mod extends Shortcut {
       * 'isOverride' used to indicate that the message provided should replace
       * any existing value instead of being appended to it (defaults to false).
       */
-    def flash(`type`: String): js.Array[_] = js.native
-    def flash(`type`: String, message: js.UndefOr[scala.Nothing], isOverride: Boolean): js.Array[_] = js.native
-    def flash(`type`: String, message: js.Any): js.Array[_] = js.native
-    def flash(`type`: String, message: js.Any, isOverride: Boolean): js.Array[_] = js.native
+    def flash(`type`: String): js.Array[js.Any] = js.native
+    def flash(`type`: String, message: js.Any): js.Array[js.Any] = js.native
+    def flash(`type`: String, message: js.Any, isOverride: Boolean): js.Array[js.Any] = js.native
+    def flash(`type`: String, message: Unit, isOverride: Boolean): js.Array[js.Any] = js.native
     
     /**
       * retrieve value using a key. If 'clear' is 'true', key is cleared on return.
@@ -100,43 +98,42 @@ object mod extends Shortcut {
     def touch(): Unit = js.native
   }
   
-  @js.native
   trait YarOptions extends StObject {
     
     /**
       * hapi cache options which includes (among other options):
       */
-    var cache: js.UndefOr[CachePolicyOptions[_]] = js.native
+    var cache: js.UndefOr[CachePolicyOptions[js.Any]] = js.undefined
     
     /**
       * the configuration for cookie-specific features:
       */
-    var cookieOptions: ClearInvalid = js.native
+    var cookieOptions: ClearInvalid
     
     /**
       * will cause yar to throw an exception if trying to persist to cache when the cache is unavailable.
       * Setting this to false will allow applications using yar to run uninterrupted if the cache is not ready (however sessions will not be saving).
       * Defaults to true.
       */
-    var errorOnCacheNotReady: js.UndefOr[Boolean] = js.native
+    var errorOnCacheNotReady: js.UndefOr[Boolean] = js.undefined
     
     /**
       * maximum cookie size before using server-side storage.
       * Defaults to 1K. Set to zero to always use server-side storage.
       */
-    var maxCookieSize: js.UndefOr[Double] = js.native
+    var maxCookieSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines the name of the cookie used to store session information.
       * Defaults to session.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * determines whether to store empty session before they've been modified.
       * Defaults to true.
       */
-    var storeBlank: js.UndefOr[Boolean] = js.native
+    var storeBlank: js.UndefOr[Boolean] = js.undefined
   }
   object YarOptions {
     
@@ -150,7 +147,7 @@ object mod extends Shortcut {
     implicit class YarOptionsMutableBuilder[Self <: YarOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCache(value: CachePolicyOptions[_]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
@@ -192,10 +189,9 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var yar: Yar = js.native
+      var yar: Yar
     }
     object Request {
       
@@ -213,10 +209,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Server extends StObject {
       
-      var yar: ServerYar = js.native
+      var yar: ServerYar
     }
     object Server {
       

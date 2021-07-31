@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If you want to be able to also read the data set here, your component must also implement {@link XDataSource} .
   */
-@js.native
-trait XDataSink extends XInterface {
+trait XDataSink
+  extends StObject
+     with XInterface {
   
   /**
     * sets new data sequences. The elements set here must support the service {@link DataSequence} .
@@ -25,7 +25,7 @@ trait XDataSink extends XInterface {
     *
     * If one of the derived services is supported by one element of the sequence, it should be available for all elements in the sequence.
     */
-  def setData(aData: SeqEquiv[XLabeledDataSequence]): Unit = js.native
+  def setData(aData: SeqEquiv[XLabeledDataSequence]): Unit
 }
 object XDataSink {
   

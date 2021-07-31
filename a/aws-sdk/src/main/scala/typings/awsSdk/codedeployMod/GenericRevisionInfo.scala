@@ -2,36 +2,34 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericRevisionInfo extends StObject {
   
   /**
     * The deployment groups for which this is the current target revision.
     */
-  var deploymentGroups: js.UndefOr[DeploymentGroupsList] = js.native
+  var deploymentGroups: js.UndefOr[DeploymentGroupsList] = js.undefined
   
   /**
     * A comment about the revision.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * When the revision was first used by AWS CodeDeploy.
     */
-  var firstUsedTime: js.UndefOr[Timestamp] = js.native
+  var firstUsedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * When the revision was last used by AWS CodeDeploy.
     */
-  var lastUsedTime: js.UndefOr[Timestamp] = js.native
+  var lastUsedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * When the revision was registered with AWS CodeDeploy.
     */
-  var registerTime: js.UndefOr[Timestamp] = js.native
+  var registerTime: js.UndefOr[Timestamp] = js.undefined
 }
 object GenericRevisionInfo {
   

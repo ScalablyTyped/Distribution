@@ -3,16 +3,14 @@ package typings.protobufjs.mod.common
 import typings.protobufjs.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Duration message. */
-@js.native
 trait IDuration extends StObject {
   
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
-  var seconds: js.UndefOr[Double | Long] = js.native
+  var seconds: js.UndefOr[Double | Long] = js.undefined
 }
 object IDuration {
   

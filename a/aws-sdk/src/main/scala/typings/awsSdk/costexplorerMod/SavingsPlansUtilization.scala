@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansUtilization extends StObject {
   
   /**
     * The total amount of Savings Plans commitment that's been purchased in an account (or set of accounts).
     */
-  var TotalCommitment: js.UndefOr[GenericString] = js.native
+  var TotalCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amount of your Savings Plans commitment that was not consumed from Savings Plans eligible usage in a specific period.
     */
-  var UnusedCommitment: js.UndefOr[GenericString] = js.native
+  var UnusedCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amount of your Savings Plans commitment that was consumed from Savings Plans eligible usage in a specific period.
     */
-  var UsedCommitment: js.UndefOr[GenericString] = js.native
+  var UsedCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amount of UsedCommitment divided by the TotalCommitment for your Savings Plans.
     */
-  var UtilizationPercentage: js.UndefOr[GenericString] = js.native
+  var UtilizationPercentage: js.UndefOr[GenericString] = js.undefined
 }
 object SavingsPlansUtilization {
   

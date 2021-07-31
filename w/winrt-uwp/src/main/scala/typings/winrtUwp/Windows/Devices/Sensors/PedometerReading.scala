@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a pedometer reading. */
-@js.native
 trait PedometerReading extends StObject {
   
   /** Gets the total number of steps taken for this pedometer reading. */
-  var cumulativeSteps: Double = js.native
+  var cumulativeSteps: Double
   
   /** Gets the amount of time that has elapsed for this pedometer reading. */
-  var cumulativeStepsDuration: Double = js.native
+  var cumulativeStepsDuration: Double
   
   /** Indicates the type of steps taken for this pedometer reading. */
-  var stepKind: PedometerStepKind = js.native
+  var stepKind: PedometerStepKind
   
   /** Gets the time for the most recent pedometer reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object PedometerReading {
   

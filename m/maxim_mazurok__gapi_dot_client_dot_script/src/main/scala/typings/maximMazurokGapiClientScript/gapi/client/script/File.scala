@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /** Creation date timestamp. This read-only field is only visible to users who have WRITER permission for the script project. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The defined set of functions in the script file, if any. */
-  var functionSet: js.UndefOr[GoogleAppsScriptTypeFunctionSet] = js.native
+  var functionSet: js.UndefOr[GoogleAppsScriptTypeFunctionSet] = js.undefined
   
   /** The user who modified the file most recently. This read-only field is only visible to users who have WRITER permission for the script project. */
-  var lastModifyUser: js.UndefOr[GoogleAppsScriptTypeUser] = js.native
+  var lastModifyUser: js.UndefOr[GoogleAppsScriptTypeUser] = js.undefined
   
   /** The name of the file. The file extension is not part of the file name, which can be identified from the type field. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The file content. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** The type of the file. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Last modified date timestamp. This read-only field is only visible to users who have WRITER permission for the script project. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object File {
   

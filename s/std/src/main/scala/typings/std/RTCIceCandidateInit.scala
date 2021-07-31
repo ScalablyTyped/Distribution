@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceCandidateInit extends StObject {
   
-  var candidate: js.UndefOr[java.lang.String] = js.native
+  var candidate: js.UndefOr[java.lang.String] = js.undefined
   
-  var sdpMLineIndex: js.UndefOr[Double | Null] = js.native
+  var sdpMLineIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var sdpMid: js.UndefOr[java.lang.String | Null] = js.native
+  var sdpMid: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var usernameFragment: js.UndefOr[java.lang.String | Null] = js.native
+  var usernameFragment: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 object RTCIceCandidateInit {
   

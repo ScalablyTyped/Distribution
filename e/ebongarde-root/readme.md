@@ -12,7 +12,7 @@ Utilize your package root directory from anywhere in your module.
 | Keywords           | application, root, ebongarde |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 613 |
+| # downloads        | 715 |
 | # stars            | 1 |
 
 ## Links

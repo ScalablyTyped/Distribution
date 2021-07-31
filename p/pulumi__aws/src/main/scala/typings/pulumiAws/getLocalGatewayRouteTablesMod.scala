@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ec2.GetLocalGatewayRouteTablesFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalGatewayRouteTablesMod {
   
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTables", "getLocalGatewayRouteTables")
+  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTables", JSImport.Namespace)
   @js.native
-  def getLocalGatewayRouteTables(): js.Promise[GetLocalGatewayRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTables", "getLocalGatewayRouteTables")
-  @js.native
-  def getLocalGatewayRouteTables(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTables", "getLocalGatewayRouteTables")
-  @js.native
-  def getLocalGatewayRouteTables(args: GetLocalGatewayRouteTablesArgs): js.Promise[GetLocalGatewayRouteTablesResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGatewayRouteTables", "getLocalGatewayRouteTables")
-  @js.native
-  def getLocalGatewayRouteTables(args: GetLocalGatewayRouteTablesArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTablesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalGatewayRouteTables(): js.Promise[GetLocalGatewayRouteTablesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTables")().asInstanceOf[js.Promise[GetLocalGatewayRouteTablesResult]]
+  @scala.inline
+  def getLocalGatewayRouteTables(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTablesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTables")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTablesResult]]
+  @scala.inline
+  def getLocalGatewayRouteTables(args: GetLocalGatewayRouteTablesArgs): js.Promise[GetLocalGatewayRouteTablesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTables")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayRouteTablesResult]]
+  @scala.inline
+  def getLocalGatewayRouteTables(args: GetLocalGatewayRouteTablesArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTablesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTables")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTablesResult]]
+  
   trait GetLocalGatewayRouteTablesArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetLocalGatewayRouteTablesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLocalGatewayRouteTablesFilter]] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired local gateway route table.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLocalGatewayRouteTablesArgs {
     
@@ -65,22 +63,21 @@ object getLocalGatewayRouteTablesMod {
     }
   }
   
-  @js.native
   trait GetLocalGatewayRouteTablesResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTablesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTablesFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of Local Gateway Route Table identifiers
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLocalGatewayRouteTablesResult {
     

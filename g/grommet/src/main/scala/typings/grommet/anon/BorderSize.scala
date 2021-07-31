@@ -5,19 +5,17 @@ import typings.grommet.utilsMod.BreakpointEdgeSize
 import typings.grommet.utilsMod.BreakpointSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderSize extends StObject {
   
-  var borderSize: js.UndefOr[BreakpointBorderSize] = js.native
+  var borderSize: js.UndefOr[BreakpointBorderSize] = js.undefined
   
-  var edgeSize: js.UndefOr[BreakpointEdgeSize] = js.native
+  var edgeSize: js.UndefOr[BreakpointEdgeSize] = js.undefined
   
-  var size: js.UndefOr[BreakpointSize] = js.native
+  var size: js.UndefOr[BreakpointSize] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object BorderSize {
   

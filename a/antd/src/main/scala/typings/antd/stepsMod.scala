@@ -5,7 +5,6 @@ import typings.antd.progressProgressMod.ProgressProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod extends Shortcut {
@@ -14,14 +13,15 @@ object stepsMod extends Shortcut {
   @js.native
   val default: FC[StepsProps] = js.native
   
-  @js.native
-  trait StepsProps extends ProgressProps {
+  trait StepsProps
+    extends StObject
+       with ProgressProps {
     
     @JSName("steps")
-    var steps_StepsProps: Double = js.native
+    var steps_StepsProps: Double
     
     @JSName("strokeColor")
-    var strokeColor_StepsProps: js.UndefOr[String] = js.native
+    var strokeColor_StepsProps: js.UndefOr[String] = js.undefined
   }
   object StepsProps {
     

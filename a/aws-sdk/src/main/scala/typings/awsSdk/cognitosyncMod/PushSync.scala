@@ -2,21 +2,19 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushSync extends StObject {
   
   /**
     * List of SNS platform application ARNs that could be used by clients.
     */
-  var ApplicationArns: js.UndefOr[ApplicationArnList] = js.native
+  var ApplicationArns: js.UndefOr[ApplicationArnList] = js.undefined
   
   /**
     * A role configured to allow Cognito to call SNS on behalf of the developer.
     */
-  var RoleArn: js.UndefOr[AssumeRoleArn] = js.native
+  var RoleArn: js.UndefOr[AssumeRoleArn] = js.undefined
 }
 object PushSync {
   

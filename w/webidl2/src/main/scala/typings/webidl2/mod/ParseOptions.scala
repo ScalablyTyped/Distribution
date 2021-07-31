@@ -2,17 +2,15 @@ package typings.webidl2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseOptions extends StObject {
   
   /** Boolean indicating whether the result should include EOF node or not. */
-  var concrete: js.UndefOr[Boolean] = js.native
+  var concrete: js.UndefOr[Boolean] = js.undefined
   
   /** The source name, typically a filename. Errors and validation objects can indicate their origin if you pass a value. */
-  var sourceName: js.UndefOr[String] = js.native
+  var sourceName: js.UndefOr[String] = js.undefined
 }
 object ParseOptions {
   

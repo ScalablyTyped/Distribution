@@ -5,10 +5,13 @@ import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.modelMod.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizeMod {
+  
+  @JSImport("vega-lite/build/src/compile/data/optimize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/data/optimize", "FACET_SCALE_PREFIX")
   @js.native
@@ -18,11 +21,9 @@ object optimizeMod {
   @js.native
   val MAX_OPTIMIZATION_RUNS: /* 5 */ Double = js.native
   
-  @JSImport("vega-lite/build/src/compile/data/optimize", "checkLinks")
-  @js.native
-  def checkLinks(nodes: js.Array[DataFlowNode]): Boolean = js.native
+  @scala.inline
+  def checkLinks(nodes: js.Array[DataFlowNode]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLinks")(nodes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/compile/data/optimize", "optimizeDataflow")
-  @js.native
-  def optimizeDataflow(data: DataComponent, model: Model): Unit = js.native
+  @scala.inline
+  def optimizeDataflow(data: DataComponent, model: Model): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("optimizeDataflow")(data.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

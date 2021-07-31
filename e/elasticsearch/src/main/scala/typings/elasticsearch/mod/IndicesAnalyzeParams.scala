@@ -3,33 +3,33 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.elasticsearchStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesAnalyzeParams extends GenericParams {
+trait IndicesAnalyzeParams
+  extends StObject
+     with GenericParams {
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var attributes: js.UndefOr[NameList] = js.native
+  var attributes: js.UndefOr[NameList] = js.undefined
   
-  var charFilter: js.UndefOr[NameList] = js.native
+  var charFilter: js.UndefOr[NameList] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[NameList] = js.native
+  var filter: js.UndefOr[NameList] = js.undefined
   
-  var format: js.UndefOr[_empty] = js.native
+  var format: js.UndefOr[_empty] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var perferLocal: js.UndefOr[Boolean] = js.native
+  var perferLocal: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[NameList] = js.native
+  var text: js.UndefOr[NameList] = js.undefined
   
-  var tokenizer: js.UndefOr[String] = js.native
+  var tokenizer: js.UndefOr[String] = js.undefined
 }
 object IndicesAnalyzeParams {
   

@@ -2,14 +2,12 @@ package typings.semanticUiAccordion.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.AccordionSettings._Impl, 'closeNested'> */
-@js.native
 trait PickImplcloseNested extends StObject {
   
-  var closeNested: Boolean = js.native
+  var closeNested: Boolean
 }
 object PickImplcloseNested {
   

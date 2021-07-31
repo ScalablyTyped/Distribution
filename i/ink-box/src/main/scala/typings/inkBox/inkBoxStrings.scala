@@ -3,13 +3,14 @@ package typings.inkBox
 import typings.inkBox.mod.Alignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inkBoxStrings {
   
   @js.native
-  sealed trait center extends Alignment
+  sealed trait center
+    extends StObject
+       with Alignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -29,12 +30,16 @@ object inkBoxStrings {
   def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
   @js.native
-  sealed trait left extends Alignment
+  sealed trait left
+    extends StObject
+       with Alignment
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends Alignment
+  sealed trait right
+    extends StObject
+       with Alignment
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   

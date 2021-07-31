@@ -3,27 +3,26 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionNodePlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var children: js.Array[CssNodePlain] = js.native
+  var children: js.Array[CssNodePlain]
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_FunctionNodePlain: Function = js.native
+  var type_FunctionNodePlain: Function
 }
 object FunctionNodePlain {
   
   @scala.inline
-  def apply(children: js.Array[CssNodePlain], name: String, `type`: Function): FunctionNodePlain = {
+  def apply(children: js.Array[CssNodePlain], name: String): FunctionNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Function")
     __obj.asInstanceOf[FunctionNodePlain]
   }
   

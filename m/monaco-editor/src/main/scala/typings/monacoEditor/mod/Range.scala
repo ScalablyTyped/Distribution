@@ -2,7 +2,6 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Range")
@@ -95,156 +94,133 @@ class Range protected () extends StObject {
 /* static members */
 object Range {
   
+  @JSImport("monaco-editor", "Range")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Test if the two ranges are intersecting. If the ranges are touching it returns true.
     */
-  @JSImport("monaco-editor", "Range.areIntersecting")
-  @js.native
-  def areIntersecting(a: IRange, b: IRange): Boolean = js.native
+  @scala.inline
+  def areIntersecting(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersecting")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if the two ranges are touching in any way.
     */
-  @JSImport("monaco-editor", "Range.areIntersectingOrTouching")
-  @js.native
-  def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = js.native
+  @scala.inline
+  def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersectingOrTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a new empty range using this range's start position.
     */
-  @JSImport("monaco-editor", "Range.collapseToStart")
-  @js.native
-  def collapseToStart(range: IRange): Range = js.native
+  @scala.inline
+  def collapseToStart(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   /**
     * A function that compares ranges, useful for sorting ranges
     * It will first compare ranges on the endPosition and then on the startPosition
     */
-  @JSImport("monaco-editor", "Range.compareRangesUsingEnds")
-  @js.native
-  def compareRangesUsingEnds(a: IRange, b: IRange): Double = js.native
+  @scala.inline
+  def compareRangesUsingEnds(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingEnds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * A function that compares ranges, useful for sorting ranges
     * It will first compare ranges on the startPosition and then on the endPosition
     */
-  @JSImport("monaco-editor", "Range.compareRangesUsingStarts")
-  @js.native
-  def compareRangesUsingStarts(): Double = js.native
-  @JSImport("monaco-editor", "Range.compareRangesUsingStarts")
-  @js.native
-  def compareRangesUsingStarts(a: js.UndefOr[scala.Nothing], b: IRange): Double = js.native
-  @JSImport("monaco-editor", "Range.compareRangesUsingStarts")
-  @js.native
-  def compareRangesUsingStarts(a: Null, b: IRange): Double = js.native
-  @JSImport("monaco-editor", "Range.compareRangesUsingStarts")
-  @js.native
-  def compareRangesUsingStarts(a: IRange): Double = js.native
-  @JSImport("monaco-editor", "Range.compareRangesUsingStarts")
-  @js.native
-  def compareRangesUsingStarts(a: IRange, b: IRange): Double = js.native
+  @scala.inline
+  def compareRangesUsingStarts(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")().asInstanceOf[Double]
+  @scala.inline
+  def compareRangesUsingStarts(a: Null, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareRangesUsingStarts(a: Unit, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareRangesUsingStarts(a: IRange): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def compareRangesUsingStarts(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Test if `position` is in `range`. If the position is at the edges, will return true.
     */
-  @JSImport("monaco-editor", "Range.containsPosition")
-  @js.native
-  def containsPosition(range: IRange, position: IPosition): Boolean = js.native
+  @scala.inline
+  def containsPosition(range: IRange, position: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPosition")(range.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if `otherRange` is in `range`. If the ranges are equal, will return true.
     */
-  @JSImport("monaco-editor", "Range.containsRange")
-  @js.native
-  def containsRange(range: IRange, otherRange: IRange): Boolean = js.native
+  @scala.inline
+  def containsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if range `a` equals `b`.
     */
-  @JSImport("monaco-editor", "Range.equalsRange")
-  @js.native
-  def equalsRange(): Boolean = js.native
-  @JSImport("monaco-editor", "Range.equalsRange")
-  @js.native
-  def equalsRange(a: Null, b: IRange): Boolean = js.native
-  @JSImport("monaco-editor", "Range.equalsRange")
-  @js.native
-  def equalsRange(a: IRange): Boolean = js.native
-  @JSImport("monaco-editor", "Range.equalsRange")
-  @js.native
-  def equalsRange(a: IRange, b: IRange): Boolean = js.native
+  @scala.inline
+  def equalsRange(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")().asInstanceOf[Boolean]
+  @scala.inline
+  def equalsRange(a: Null, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equalsRange(a: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equalsRange(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("monaco-editor", "Range.fromPositions")
-  @js.native
-  def fromPositions(start: IPosition): Range = js.native
-  @JSImport("monaco-editor", "Range.fromPositions")
-  @js.native
-  def fromPositions(start: IPosition, end: IPosition): Range = js.native
+  @scala.inline
+  def fromPositions(start: IPosition): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Range]
+  @scala.inline
+  def fromPositions(start: IPosition, end: IPosition): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Return the end position (which will be after or equal to the start position)
     */
-  @JSImport("monaco-editor", "Range.getEndPosition")
-  @js.native
-  def getEndPosition(range: IRange): Position = js.native
+  @scala.inline
+  def getEndPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /**
     * Return the start position (which will be before or equal to the end position)
     */
-  @JSImport("monaco-editor", "Range.getStartPosition")
-  @js.native
-  def getStartPosition(range: IRange): Position = js.native
+  @scala.inline
+  def getStartPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getStartPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /**
     * A intersection of the two ranges.
     */
-  @JSImport("monaco-editor", "Range.intersectRanges")
-  @js.native
-  def intersectRanges(a: IRange, b: IRange): Range | Null = js.native
+  @scala.inline
+  def intersectRanges(a: IRange, b: IRange): Range | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectRanges")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range | Null]
   
   /**
     * Test if `range` is empty.
     */
-  @JSImport("monaco-editor", "Range.isEmpty")
-  @js.native
-  def isEmpty(range: IRange): Boolean = js.native
+  @scala.inline
+  def isEmpty(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Test if `obj` is an `IRange`.
     */
-  @JSImport("monaco-editor", "Range.isIRange")
-  @js.native
-  def isIRange(obj: js.Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = js.native
+  @scala.inline
+  def isIRange(obj: js.Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIRange")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IRange */ Boolean]
   
   /**
     * Create a `Range` from an `IRange`.
     */
-  @JSImport("monaco-editor", "Range.lift")
-  @js.native
-  def lift(): Null = js.native
-  @JSImport("monaco-editor", "Range.lift")
-  @js.native
-  def lift(range: IRange): Range = js.native
+  @scala.inline
+  def lift(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")().asInstanceOf[Null]
+  @scala.inline
+  def lift(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   /**
     * A reunion of the two ranges.
     * The smallest position will be used as the start point, and the largest one as the end point.
     */
-  @JSImport("monaco-editor", "Range.plusRange")
-  @js.native
-  def plusRange(a: IRange, b: IRange): Range = js.native
+  @scala.inline
+  def plusRange(a: IRange, b: IRange): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("plusRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Test if the range spans multiple lines.
     */
-  @JSImport("monaco-editor", "Range.spansMultipleLines")
-  @js.native
-  def spansMultipleLines(range: IRange): Boolean = js.native
+  @scala.inline
+  def spansMultipleLines(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("spansMultipleLines")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Test if `otherRange` is strinctly in `range` (must start after, and end before). If the ranges are equal, will return false.
     */
-  @JSImport("monaco-editor", "Range.strictContainsRange")
-  @js.native
-  def strictContainsRange(range: IRange, otherRange: IRange): Boolean = js.native
+  @scala.inline
+  def strictContainsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictContainsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

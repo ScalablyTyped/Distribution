@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MultiMatchQuery")
 @js.native
-class MultiMatchQuery protected () extends Query {
+class MultiMatchQuery protected ()
+  extends StObject
+     with Query {
   /*
     A Query that allow to more easily build a MatchQuery
     over multiple fields

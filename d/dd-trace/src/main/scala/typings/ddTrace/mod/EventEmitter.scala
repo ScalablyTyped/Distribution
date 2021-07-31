@@ -2,7 +2,6 @@ package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
@@ -12,8 +11,8 @@ trait EventEmitter extends StObject {
   var addListener: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
-      /* listener */ js.Function1[/* repeated */ js.Any, _], 
-      _
+      /* listener */ js.Function1[/* repeated */ js.Any, js.Any], 
+      js.Any
     ]
   ] = js.native
   
@@ -23,24 +22,24 @@ trait EventEmitter extends StObject {
   var off: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
-      /* listener */ js.Function1[/* repeated */ js.Any, _], 
-      _
+      /* listener */ js.Function1[/* repeated */ js.Any, js.Any], 
+      js.Any
     ]
   ] = js.native
   
   var on: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
-      /* listener */ js.Function1[/* repeated */ js.Any, _], 
-      _
+      /* listener */ js.Function1[/* repeated */ js.Any, js.Any], 
+      js.Any
     ]
   ] = js.native
   
   var removeListener: js.UndefOr[
     js.Function2[
       /* eventName */ String | js.Symbol, 
-      /* listener */ js.Function1[/* repeated */ js.Any, _], 
-      _
+      /* listener */ js.Function1[/* repeated */ js.Any, js.Any], 
+      js.Any
     ]
   ] = js.native
 }

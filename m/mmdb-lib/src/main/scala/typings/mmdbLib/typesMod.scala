@@ -2,7 +2,6 @@ package typings.mmdbLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -17,10 +16,9 @@ object typesMod {
     def set(key: Double, value: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait ReaderOptions extends StObject {
     
-    var cache: js.UndefOr[Cache] = js.native
+    var cache: js.UndefOr[Cache] = js.undefined
   }
   object ReaderOptions {
     

@@ -2,37 +2,35 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISurveyElement extends StObject {
   
-  var containsErrors: Boolean = js.native
+  var containsErrors: Boolean
   
-  def delete(): js.Any = js.native
+  def delete(): js.Any
   
-  def getType(): String = js.native
+  def getType(): String
   
-  var isPage: Boolean = js.native
+  var isPage: Boolean
   
-  var isPanel: Boolean = js.native
+  var isPanel: Boolean
   
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  def locStrsChanged(): js.Any = js.native
+  def locStrsChanged(): js.Any
   
-  var name: String = js.native
+  var name: String
   
-  def onFirstRendering(): js.Any = js.native
+  def onFirstRendering(): js.Any
   
-  def onSurveyLoad(): js.Any = js.native
+  def onSurveyLoad(): js.Any
   
-  def setSurveyImpl(value: ISurveyImpl): js.Any = js.native
+  def setSurveyImpl(value: ISurveyImpl): js.Any
   
-  def setVisibleIndex(value: Double): Double = js.native
+  def setVisibleIndex(value: Double): Double
 }
 object ISurveyElement {
   

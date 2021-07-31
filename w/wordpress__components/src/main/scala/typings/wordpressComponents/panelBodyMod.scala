@@ -7,7 +7,6 @@ import typings.wordpressComponents.iconMod.Icon.IconType
 import typings.wordpressComponents.panelBodyMod.PanelBody.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelBodyMod {
@@ -26,10 +25,9 @@ object panelBodyMod {
   
   object PanelBody {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * The class that will be added with `components-panel__body`, if the
@@ -37,36 +35,36 @@ object panelBodyMod {
         * to the classes of the wrapper div. If no `className` is passed then
         * only `components-panel__body` and `is-opened` is used.
         */
-      var className: js.UndefOr[js.Any] = js.native
+      var className: js.UndefOr[js.Any] = js.undefined
       
       /**
         * An icon to be shown next to the `PanelBody` title.
         */
-      var icon: js.UndefOr[IconType[js.Object]] = js.native
+      var icon: js.UndefOr[IconType[js.Object]] = js.undefined
       
       /**
         * Whether or not the panel will start open.
         * @defaultValue true
         */
-      var initialOpen: js.UndefOr[Boolean] = js.native
+      var initialOpen: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function that is called when the user clicks on the `PanelBody`
         * title after the open state is changed.
         */
-      var onToggle: js.UndefOr[js.Function0[Unit]] = js.native
+      var onToggle: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * If opened is true then the `Panel` will remain open regardless of
         * the `initialOpen` prop and the panel will be prevented from being
         * closed.
         */
-      var opened: js.UndefOr[Boolean] = js.native
+      var opened: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Title of the `PanelBody`. This shows even when it is closed.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Props {
       

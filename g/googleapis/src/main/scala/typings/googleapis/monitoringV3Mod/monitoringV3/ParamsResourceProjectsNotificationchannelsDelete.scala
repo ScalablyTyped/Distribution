@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsNotificationchannelsDelete extends StandardParameters {
+trait ParamsResourceProjectsNotificationchannelsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If true, the notification channel will be deleted regardless of its use
@@ -23,13 +23,13 @@ trait ParamsResourceProjectsNotificationchannelsDelete extends StandardParameter
     * If false, channels that are still referenced by an existing alerting
     * policy will fail to be deleted in a delete operation.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The channel for which to execute the request. The format is
     * projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID].
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsNotificationchannelsDelete {
   

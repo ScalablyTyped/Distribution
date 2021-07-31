@@ -22,10 +22,13 @@ import typings.std.HTMLElement
 import typings.std.TouchList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-addons-test-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Simulate {
     
@@ -257,82 +260,62 @@ object mod {
     def wheel_=(x: EventSimulator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wheel")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-addons-test-utils", "createRenderer")
-  @js.native
-  def createRenderer(): ShallowRenderer = js.native
+  @scala.inline
+  def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   
-  @JSImport("react-addons-test-utils", "findAllInRenderedTree")
-  @js.native
-  def findAllInRenderedTree(root: Component[_, js.Object, _], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = js.native
+  @scala.inline
+  def findAllInRenderedTree(root: Component[js.Any, js.Object, js.Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllInRenderedTree")(root.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactInstance]]
   
-  @JSImport("react-addons-test-utils", "findRenderedComponentWithType")
-  @js.native
-  def findRenderedComponentWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](root: Component[_, js.Object, _], `type`: ClassType[_, T, C]): T = js.native
+  @scala.inline
+  def findRenderedComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedComponentWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("react-addons-test-utils", "findRenderedDOMComponentWithClass")
-  @js.native
-  def findRenderedDOMComponentWithClass(root: Component[_, js.Object, _], className: String): Element = js.native
+  @scala.inline
+  def findRenderedDOMComponentWithClass(root: Component[js.Any, js.Object, js.Any], className: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("react-addons-test-utils", "findRenderedDOMComponentWithTag")
-  @js.native
-  def findRenderedDOMComponentWithTag(root: Component[_, js.Object, _], tagName: String): Element = js.native
+  @scala.inline
+  def findRenderedDOMComponentWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSImport("react-addons-test-utils", "isCompositeComponent")
-  @js.native
-  def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = js.native
+  @scala.inline
+  def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.Component<any, {}, any> */ Boolean]
   
-  @JSImport("react-addons-test-utils", "isCompositeComponentWithType")
-  @js.native
-  def isCompositeComponentWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](instance: ReactInstance, `type`: ClassType[_, T, C]): T = js.native
+  @scala.inline
+  def isCompositeComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[js.Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponentWithType")(instance.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("react-addons-test-utils", "isDOMComponent")
-  @js.native
-  def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = js.native
+  @scala.inline
+  def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
   
-  @JSImport("react-addons-test-utils", "isElementOfType")
-  @js.native
-  def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = js.native
-  @JSImport("react-addons-test-utils", "isElementOfType")
-  @js.native
-  def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = js.native
-  @JSImport("react-addons-test-utils", "isElementOfType")
-  @js.native
-  def isElementOfType[P, T /* <: Component[P, js.Object, _] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
-  @JSImport("react-addons-test-utils", "isElementOfType")
-  @js.native
-  def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = js.native
+  @scala.inline
+  def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactHTMLElement<T> */ Boolean]
+  @scala.inline
+  def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.SFCElement<P> */ Boolean]
+  @scala.inline
+  def isElementOfType[P, T /* <: Component[P, js.Object, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.CElement<P, T> */ Boolean]
   
-  @JSImport("react-addons-test-utils", "mockComponent")
-  @js.native
-  def mockComponent(mocked: MockedComponentClass): js.Any = js.native
-  @JSImport("react-addons-test-utils", "mockComponent")
-  @js.native
-  def mockComponent(mocked: MockedComponentClass, mockTagName: String): js.Any = js.native
+  @scala.inline
+  def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.DOMElement<P, T> */ Boolean]
   
-  @JSImport("react-addons-test-utils", "renderIntoDocument")
-  @js.native
-  def renderIntoDocument(element: SFCElement[_]): Unit = js.native
-  @JSImport("react-addons-test-utils", "renderIntoDocument")
-  @js.native
-  def renderIntoDocument[T /* <: Component[_, js.Object, _] */](element: CElement[_, T]): T = js.native
-  @JSImport("react-addons-test-utils", "renderIntoDocument")
-  @js.native
-  def renderIntoDocument[T /* <: Element */](element: DOMElement[_, T]): T = js.native
-  @JSImport("react-addons-test-utils", "renderIntoDocument")
-  @js.native
-  def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, _]) | Element | Unit = js.native
+  @scala.inline
+  def mockComponent(mocked: MockedComponentClass): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def mockComponent(mocked: MockedComponentClass, mockTagName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any], mockTagName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-addons-test-utils", "scryRenderedComponentsWithType")
-  @js.native
-  def scryRenderedComponentsWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](root: Component[_, js.Object, _], `type`: ClassType[_, T, C]): js.Array[T] = js.native
+  @scala.inline
+  def renderIntoDocument(element: SFCElement[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def renderIntoDocument[T /* <: Component[js.Any, js.Object, js.Any] */](element: CElement[js.Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def renderIntoDocument[T /* <: Element */](element: DOMElement[js.Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, js.Any]) | Element | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[(Component[P, js.Object, js.Any]) | Element | Unit]
   
-  @JSImport("react-addons-test-utils", "scryRenderedDOMComponentsWithClass")
-  @js.native
-  def scryRenderedDOMComponentsWithClass(root: Component[_, js.Object, _], className: String): js.Array[Element] = js.native
+  @scala.inline
+  def scryRenderedComponentsWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedComponentsWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("react-addons-test-utils", "scryRenderedDOMComponentsWithTag")
-  @js.native
-  def scryRenderedDOMComponentsWithTag(root: Component[_, js.Object, _], tagName: String): js.Array[Element] = js.native
+  @scala.inline
+  def scryRenderedDOMComponentsWithClass(root: Component[js.Any, js.Object, js.Any], className: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  
+  @scala.inline
+  def scryRenderedDOMComponentsWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
   type EventSimulator = js.Function2[
     /* element */ Element | (Component[js.Any, js.Object, js.Any]), 
@@ -342,34 +325,34 @@ object mod {
   
   @js.native
   trait MockedComponentClass
-    extends Instantiable0[js.Any]
+    extends StObject
+       with Instantiable0[js.Any]
   
-  @js.native
   trait OptionalEventProperties extends StObject {
     
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var currentTarget: js.UndefOr[EventTarget] = js.native
+    var currentTarget: js.UndefOr[EventTarget] = js.undefined
     
-    var defaultPrevented: js.UndefOr[Boolean] = js.native
+    var defaultPrevented: js.UndefOr[Boolean] = js.undefined
     
-    var eventPhase: js.UndefOr[Double] = js.native
+    var eventPhase: js.UndefOr[Double] = js.undefined
     
-    var isTrusted: js.UndefOr[Boolean] = js.native
+    var isTrusted: js.UndefOr[Boolean] = js.undefined
     
-    var nativeEvent: js.UndefOr[Event] = js.native
+    var nativeEvent: js.UndefOr[Event] = js.undefined
     
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var target: js.UndefOr[EventTarget] = js.native
+    var target: js.UndefOr[EventTarget] = js.undefined
     
-    var timeStamp: js.UndefOr[Date] = js.native
+    var timeStamp: js.UndefOr[Date] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OptionalEventProperties {
     
@@ -467,70 +450,71 @@ object mod {
     def unmount(): Unit = js.native
   }
   
-  @js.native
-  trait SyntheticEventData extends OptionalEventProperties {
+  trait SyntheticEventData
+    extends StObject
+       with OptionalEventProperties {
     
-    var altKey: js.UndefOr[Boolean] = js.native
+    var altKey: js.UndefOr[Boolean] = js.undefined
     
-    var button: js.UndefOr[Double] = js.native
+    var button: js.UndefOr[Double] = js.undefined
     
-    var buttons: js.UndefOr[Double] = js.native
+    var buttons: js.UndefOr[Double] = js.undefined
     
-    var changedTouches: js.UndefOr[TouchList] = js.native
+    var changedTouches: js.UndefOr[TouchList] = js.undefined
     
-    var charCode: js.UndefOr[Boolean] = js.native
+    var charCode: js.UndefOr[Boolean] = js.undefined
     
-    var clientX: js.UndefOr[Double] = js.native
+    var clientX: js.UndefOr[Double] = js.undefined
     
-    var clientY: js.UndefOr[Double] = js.native
+    var clientY: js.UndefOr[Double] = js.undefined
     
-    var clipboardData: js.UndefOr[DataTransfer] = js.native
+    var clipboardData: js.UndefOr[DataTransfer] = js.undefined
     
-    var ctrlKey: js.UndefOr[Boolean] = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
     
-    var deltaMode: js.UndefOr[Double] = js.native
+    var deltaMode: js.UndefOr[Double] = js.undefined
     
-    var deltaX: js.UndefOr[Double] = js.native
+    var deltaX: js.UndefOr[Double] = js.undefined
     
-    var deltaY: js.UndefOr[Double] = js.native
+    var deltaY: js.UndefOr[Double] = js.undefined
     
-    var deltaZ: js.UndefOr[Double] = js.native
+    var deltaZ: js.UndefOr[Double] = js.undefined
     
-    var detail: js.UndefOr[Double] = js.native
+    var detail: js.UndefOr[Double] = js.undefined
     
-    var getModifierState: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.native
+    var getModifierState: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[Double] = js.native
+    var location: js.UndefOr[Double] = js.undefined
     
-    var metaKey: js.UndefOr[Boolean] = js.native
+    var metaKey: js.UndefOr[Boolean] = js.undefined
     
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
     
-    var relatedTarget: js.UndefOr[EventTarget] = js.native
+    var relatedTarget: js.UndefOr[EventTarget] = js.undefined
     
-    var repeat: js.UndefOr[Boolean] = js.native
+    var repeat: js.UndefOr[Boolean] = js.undefined
     
-    var screenX: js.UndefOr[Double] = js.native
+    var screenX: js.UndefOr[Double] = js.undefined
     
-    var screenY: js.UndefOr[Double] = js.native
+    var screenY: js.UndefOr[Double] = js.undefined
     
-    var shiftKey: js.UndefOr[Boolean] = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
     
-    var targetTouches: js.UndefOr[TouchList] = js.native
+    var targetTouches: js.UndefOr[TouchList] = js.undefined
     
-    var touches: js.UndefOr[TouchList] = js.native
+    var touches: js.UndefOr[TouchList] = js.undefined
     
-    var view: js.UndefOr[AbstractView] = js.native
+    var view: js.UndefOr[AbstractView] = js.undefined
     
-    var which: js.UndefOr[Double] = js.native
+    var which: js.UndefOr[Double] = js.undefined
   }
   object SyntheticEventData {
     

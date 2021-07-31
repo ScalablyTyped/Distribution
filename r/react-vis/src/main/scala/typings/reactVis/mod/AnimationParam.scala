@@ -2,17 +2,15 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationParam extends StObject {
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var nonAnimatedProps: js.UndefOr[js.Array[String]] = js.native
+  var nonAnimatedProps: js.UndefOr[js.Array[String]] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
 }
 object AnimationParam {
   

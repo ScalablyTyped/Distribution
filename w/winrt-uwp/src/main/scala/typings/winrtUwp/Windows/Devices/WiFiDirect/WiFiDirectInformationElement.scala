@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents information elements in a Wi-Fi Direct packet. */
-@js.native
 trait WiFiDirectInformationElement extends StObject {
   
   /** A three-byte organization identifier used to indicate the organization which defined a vendor extension information element (IE). */
-  var oui: IBuffer = js.native
+  var oui: IBuffer
   
   /** A one byte type value used in a vendor extension information element (IE) to distinguish between different IE formats defined by the same organization. */
-  var ouiType: Double = js.native
+  var ouiType: Double
   
   /** The value of the information element. */
-  var value: IBuffer = js.native
+  var value: IBuffer
 }
 object WiFiDirectInformationElement {
   

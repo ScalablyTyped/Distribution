@@ -2,19 +2,17 @@ package typings.earcut
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var dimensions: Double = js.native
+    var dimensions: Double
     
-    var holes: js.Array[Double] = js.native
+    var holes: js.Array[Double]
     
-    var vertices: js.Array[Double] = js.native
+    var vertices: js.Array[Double]
   }
   object Dimensions {
     

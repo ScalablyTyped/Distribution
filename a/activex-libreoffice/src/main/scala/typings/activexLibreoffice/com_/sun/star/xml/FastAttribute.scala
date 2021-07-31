@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.xml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A struct to keep information of an element's attribute. */
-@js.native
 trait FastAttribute extends StObject {
   
   /** the token corresponding to the attribute */
-  var Token: Double = js.native
+  var Token: Double
   
   /** the attribute value */
-  var Value: String = js.native
+  var Value: String
 }
 object FastAttribute {
   

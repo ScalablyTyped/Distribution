@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutFileOutput extends StObject {
   
   /**
     * The ID of the blob, which is its SHA-1 pointer.
     */
-  var blobId: ObjectId = js.native
+  var blobId: ObjectId
   
   /**
     * The full SHA ID of the commit that contains this file change.
     */
-  var commitId: ObjectId = js.native
+  var commitId: ObjectId
   
   /**
     * The full SHA-1 pointer of the tree information for the commit that contains this file change.
     */
-  var treeId: ObjectId = js.native
+  var treeId: ObjectId
 }
 object PutFileOutput {
   

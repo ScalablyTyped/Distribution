@@ -12,7 +12,7 @@ Plain text awesomizer. A hybrid npm module and CLI for turning plain text into a
 | Keywords           | ascii, art, figlet, banner, text |
 | # releases         | 0 |
 | # dependents       | 81 |
-| # downloads        | 217606 |
+| # downloads        | 269938 |
 | # stars            | 9 |
 
 ## Links

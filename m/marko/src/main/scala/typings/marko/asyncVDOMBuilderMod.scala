@@ -5,7 +5,6 @@ import typings.marko.componentMod.Component
 import typings.marko.markoBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncVDOMBuilderMod {
@@ -14,13 +13,13 @@ object asyncVDOMBuilderMod {
   trait AsyncVDOMBuilder extends Async {
     
     def apply(): this.type = js.native
-    def apply(globalData: js.UndefOr[scala.Nothing], parentNode: js.UndefOr[scala.Nothing], parentOut: js.Any): this.type = js.native
-    def apply(globalData: js.UndefOr[scala.Nothing], parentNode: js.Any): this.type = js.native
-    def apply(globalData: js.UndefOr[scala.Nothing], parentNode: js.Any, parentOut: js.Any): this.type = js.native
     def apply(globalData: js.Any): this.type = js.native
-    def apply(globalData: js.Any, parentNode: js.UndefOr[scala.Nothing], parentOut: js.Any): this.type = js.native
     def apply(globalData: js.Any, parentNode: js.Any): this.type = js.native
     def apply(globalData: js.Any, parentNode: js.Any, parentOut: js.Any): this.type = js.native
+    def apply(globalData: js.Any, parentNode: Unit, parentOut: js.Any): this.type = js.native
+    def apply(globalData: Unit, parentNode: js.Any): this.type = js.native
+    def apply(globalData: Unit, parentNode: js.Any, parentOut: js.Any): this.type = js.native
+    def apply(globalData: Unit, parentNode: Unit, parentOut: js.Any): this.type = js.native
     
     def bc(component: Component): js.Any = js.native
     
@@ -31,15 +30,6 @@ object asyncVDOMBuilderMod {
       key: String,
       component: Component,
       childCount: Double,
-      flags: js.UndefOr[scala.Nothing],
-      props: js.Any
-    ): this.type = js.native
-    def be(
-      tagName: String,
-      attrs: js.Any,
-      key: String,
-      component: Component,
-      childCount: Double,
       flags: Double
     ): this.type = js.native
     def be(
@@ -49,6 +39,15 @@ object asyncVDOMBuilderMod {
       component: Component,
       childCount: Double,
       flags: Double,
+      props: js.Any
+    ): this.type = js.native
+    def be(
+      tagName: String,
+      attrs: js.Any,
+      key: String,
+      component: Component,
+      childCount: Double,
+      flags: Unit,
       props: js.Any
     ): this.type = js.native
     
@@ -59,15 +58,6 @@ object asyncVDOMBuilderMod {
       key: String,
       component: Component,
       childCount: Double,
-      flags: js.UndefOr[scala.Nothing],
-      props: js.Any
-    ): this.type = js.native
-    def bed(
-      tagName: String,
-      attrs: js.Any,
-      key: String,
-      component: Component,
-      childCount: Double,
       flags: Double
     ): this.type = js.native
     def bed(
@@ -77,6 +67,15 @@ object asyncVDOMBuilderMod {
       component: Component,
       childCount: Double,
       flags: Double,
+      props: js.Any
+    ): this.type = js.native
+    def bed(
+      tagName: String,
+      attrs: js.Any,
+      key: String,
+      component: Component,
+      childCount: Double,
+      flags: Unit,
       props: js.Any
     ): this.type = js.native
     
@@ -87,15 +86,6 @@ object asyncVDOMBuilderMod {
       key: String,
       component: Component,
       childCount: Double,
-      flags: js.UndefOr[scala.Nothing],
-      props: js.Any
-    ): this.type = js.native
-    def beginElement(
-      tagName: String,
-      attrs: js.Any,
-      key: String,
-      component: Component,
-      childCount: Double,
       flags: Double
     ): this.type = js.native
     def beginElement(
@@ -105,6 +95,15 @@ object asyncVDOMBuilderMod {
       component: Component,
       childCount: Double,
       flags: Double,
+      props: js.Any
+    ): this.type = js.native
+    def beginElement(
+      tagName: String,
+      attrs: js.Any,
+      key: String,
+      component: Component,
+      childCount: Double,
+      flags: Unit,
       props: js.Any
     ): this.type = js.native
     
@@ -119,15 +118,6 @@ object asyncVDOMBuilderMod {
       key: String,
       component: Component,
       childCount: Double,
-      flags: js.UndefOr[scala.Nothing],
-      props: js.Any
-    ): js.Any = js.native
-    def ed(
-      tagName: String,
-      attrs: js.Any,
-      key: String,
-      component: Component,
-      childCount: Double,
       flags: Double
     ): js.Any = js.native
     def ed(
@@ -137,6 +127,15 @@ object asyncVDOMBuilderMod {
       component: Component,
       childCount: Double,
       flags: Double,
+      props: js.Any
+    ): js.Any = js.native
+    def ed(
+      tagName: String,
+      attrs: js.Any,
+      key: String,
+      component: Component,
+      childCount: Double,
+      flags: Unit,
       props: js.Any
     ): js.Any = js.native
     
@@ -149,15 +148,6 @@ object asyncVDOMBuilderMod {
       key: String,
       component: Component,
       childCount: Double,
-      flags: js.UndefOr[scala.Nothing],
-      props: js.Any
-    ): js.Any = js.native
-    def element(
-      tagName: String,
-      attrs: js.Any,
-      key: String,
-      component: Component,
-      childCount: Double,
       flags: Double
     ): js.Any = js.native
     def element(
@@ -167,6 +157,15 @@ object asyncVDOMBuilderMod {
       component: Component,
       childCount: Double,
       flags: Double,
+      props: js.Any
+    ): js.Any = js.native
+    def element(
+      tagName: String,
+      attrs: js.Any,
+      key: String,
+      component: Component,
+      childCount: Double,
+      flags: Unit,
       props: js.Any
     ): js.Any = js.native
     

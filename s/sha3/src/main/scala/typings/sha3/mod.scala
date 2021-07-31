@@ -10,7 +10,6 @@ import typings.sha3.sha3Numbers.`512`
 import typings.sha3.sha3Strings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha3", "Keccak")
   @js.native
-  class Keccak () extends Hasher {
+  class Keccak ()
+    extends StObject
+       with Hasher {
     def this(size: `224`) = this()
     def this(size: `256`) = this()
     def this(size: `384`) = this()
@@ -47,7 +48,9 @@ object mod {
   
   @JSImport("sha3", "SHA3")
   @js.native
-  class SHA3 () extends Hasher
+  class SHA3 ()
+    extends StObject
+       with Hasher
   /* static members */
   object SHA3 {
     
@@ -65,7 +68,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha3", "SHA3Hash")
   @js.native
-  class SHA3Hash () extends Hasher {
+  class SHA3Hash ()
+    extends StObject
+       with Hasher {
     def this(size: `224`) = this()
     def this(size: `256`) = this()
     def this(size: `384`) = this()
@@ -78,7 +83,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha3", "SHAKE")
   @js.native
-  class SHAKE () extends Hasher {
+  class SHAKE ()
+    extends StObject
+       with Hasher {
     def this(size: `224`) = this()
     def this(size: `256`) = this()
     def this(size: `384`) = this()

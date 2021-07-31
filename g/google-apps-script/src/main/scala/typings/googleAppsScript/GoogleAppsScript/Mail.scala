@@ -4,46 +4,44 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Mail {
   
-  @js.native
   trait MailAdvancedParameters extends StObject {
     
     /** an array of files to send with the email */
-    var attachments: js.UndefOr[js.Array[BlobSource]] = js.native
+    var attachments: js.UndefOr[js.Array[BlobSource]] = js.undefined
     
     /** a comma-separated list of email addresses to BCC */
-    var bcc: js.UndefOr[String] = js.native
+    var bcc: js.UndefOr[String] = js.undefined
     
     /** the body of the email */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /** a comma-separated list of email addresses to CC */
-    var cc: js.UndefOr[String] = js.native
+    var cc: js.UndefOr[String] = js.undefined
     
     /** if set, devices capable of rendering HTML will use it instead of the required body argument; you can add an optional inlineImages field in HTML body if you have inlined images for your email */
-    var htmlBody: js.UndefOr[String] = js.native
+    var htmlBody: js.UndefOr[String] = js.undefined
     
     /** a JavaScript object containing a mapping from image key (String) to image data (BlobSource); this assumes that the htmlBody parameter is used and contains references to these images in the format <img src="cid:imageKey" /> */
-    var inlineImages: js.UndefOr[StringDictionary[BlobSource]] = js.native
+    var inlineImages: js.UndefOr[StringDictionary[BlobSource]] = js.undefined
     
     /** the name of the sender of the email (default: the user's name) */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** true if the email should be sent from a generic no-reply email address to discourage recipients from responding to emails; this option is only possible for G Suite accounts, not Gmail users */
-    var noReply: js.UndefOr[Boolean] = js.native
+    var noReply: js.UndefOr[Boolean] = js.undefined
     
     /** an email address to use as the default reply-to address (default: the user's email address) */
-    var replyTo: js.UndefOr[String] = js.native
+    var replyTo: js.UndefOr[String] = js.undefined
     
     /** the subject of the email */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /** the address of the recipient */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object MailAdvancedParameters {
     

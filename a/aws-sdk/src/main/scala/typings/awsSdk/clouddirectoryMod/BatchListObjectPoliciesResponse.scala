@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchListObjectPoliciesResponse extends StObject {
   
   /**
     * A list of policy ObjectIdentifiers, that are attached to the object.
     */
-  var AttachedPolicyIds: js.UndefOr[ObjectIdentifierList] = js.native
+  var AttachedPolicyIds: js.UndefOr[ObjectIdentifierList] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
 }
 object BatchListObjectPoliciesResponse {
   

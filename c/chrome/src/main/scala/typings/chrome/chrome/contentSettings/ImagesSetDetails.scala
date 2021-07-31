@@ -4,14 +4,14 @@ import typings.chrome.chromeStrings.allow
 import typings.chrome.chromeStrings.block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImagesSetDetails extends SetDetails {
+trait ImagesSetDetails
+  extends StObject
+     with SetDetails {
   
   @JSName("setting")
-  var setting_ImagesSetDetails: allow | block = js.native
+  var setting_ImagesSetDetails: allow | block
 }
 object ImagesSetDetails {
   

@@ -7,27 +7,24 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domFetchMod {
   
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
+  @JSImport("rxjs/internal/observable/dom/fetch", JSImport.Namespace)
   @js.native
-  def fromFetch(input: String): Observable[Response] = js.native
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
-  @js.native
-  def fromFetch(input: String, init: RequestInit): Observable[Response] = js.native
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
-  @js.native
-  def fromFetch(input: Request): Observable[Response] = js.native
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
-  @js.native
-  def fromFetch(input: Request, init: RequestInit): Observable[Response] = js.native
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
-  @js.native
-  def fromFetch_T[T](input: String, init: RequestInit with Selector[T]): Observable[T] = js.native
-  @JSImport("rxjs/internal/observable/dom/fetch", "fromFetch")
-  @js.native
-  def fromFetch_T[T](input: Request, init: RequestInit with Selector[T]): Observable[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromFetch(input: String): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
+  @scala.inline
+  def fromFetch(input: String, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
+  @scala.inline
+  def fromFetch(input: Request): Observable[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[Response]]
+  @scala.inline
+  def fromFetch(input: Request, init: RequestInit): Observable[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[Response]]
+  @scala.inline
+  def fromFetch[T](input: String, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromFetch[T](input: Request, init: RequestInit & Selector[T]): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

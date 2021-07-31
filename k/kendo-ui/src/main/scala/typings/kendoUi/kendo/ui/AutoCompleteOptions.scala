@@ -3,77 +3,75 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCompleteOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | AutoCompleteAnimation] = js.native
+  var animation: js.UndefOr[Boolean | AutoCompleteAnimation] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ AutoCompleteChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ AutoCompleteChangeEvent, Unit]] = js.undefined
   
-  var clearButton: js.UndefOr[Boolean] = js.native
+  var clearButton: js.UndefOr[Boolean] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ AutoCompleteCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ AutoCompleteCloseEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ AutoCompleteDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ AutoCompleteDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var enforceMinLength: js.UndefOr[Boolean] = js.native
+  var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var filtering: js.UndefOr[js.Function1[/* e */ AutoCompleteFilteringEvent, Unit]] = js.native
+  var filtering: js.UndefOr[js.Function1[/* e */ AutoCompleteFilteringEvent, Unit]] = js.undefined
   
-  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.native
+  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var groupTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var highlightFirst: js.UndefOr[Boolean] = js.native
+  var highlightFirst: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.native
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ AutoCompleteOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ AutoCompleteOpenEvent, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popup: js.UndefOr[js.Any] = js.native
+  var popup: js.UndefOr[js.Any] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ AutoCompleteSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ AutoCompleteSelectEvent, Unit]] = js.undefined
   
-  var separator: js.UndefOr[String | js.Any] = js.native
+  var separator: js.UndefOr[String | js.Any] = js.undefined
   
-  var suggest: js.UndefOr[Boolean] = js.native
+  var suggest: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var valuePrimitive: js.UndefOr[Boolean] = js.native
+  var valuePrimitive: js.UndefOr[Boolean] = js.undefined
   
-  var virtual: js.UndefOr[Boolean | AutoCompleteVirtual] = js.native
+  var virtual: js.UndefOr[Boolean | AutoCompleteVirtual] = js.undefined
 }
 object AutoCompleteOptions {
   

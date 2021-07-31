@@ -3,37 +3,35 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynthesizePinchGestureRequest extends StObject {
   
   /**
     * Which type of input events to be generated (default: 'default', which queries the platform
     * for the preferred input type).
     */
-  var gestureSourceType: js.UndefOr[GestureSourceType] = js.native
+  var gestureSourceType: js.UndefOr[GestureSourceType] = js.undefined
   
   /**
     * Relative pointer speed in pixels per second (default: 800).
     */
-  var relativeSpeed: js.UndefOr[integer] = js.native
+  var relativeSpeed: js.UndefOr[integer] = js.undefined
   
   /**
     * Relative scale factor after zooming (>1.0 zooms in, <1.0 zooms out).
     */
-  var scaleFactor: Double = js.native
+  var scaleFactor: Double
   
   /**
     * X coordinate of the start of the gesture in CSS pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y coordinate of the start of the gesture in CSS pixels.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object SynthesizePinchGestureRequest {
   

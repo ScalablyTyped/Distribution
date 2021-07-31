@@ -7,7 +7,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object marqueeNativeMod {
@@ -85,24 +84,23 @@ object marqueeNativeMod {
     var width: Double = js.native
   }
   
-  @js.native
   trait MarqueeProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fps: js.UndefOr[Double] = js.native
+    var fps: js.UndefOr[Double] = js.undefined
     
-    var leading: js.UndefOr[Double] = js.native
+    var leading: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var text: ReactNode = js.native
+    var text: ReactNode
     
-    var trailing: js.UndefOr[Double] = js.native
+    var trailing: js.UndefOr[Double] = js.undefined
   }
   object MarqueeProps {
     

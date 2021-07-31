@@ -17,25 +17,23 @@ import typings.std.Range
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MediumEditor {
   
-  @js.native
   trait AnchorFormOptions extends StObject {
     
-    var customClassOption: js.UndefOr[String] = js.native
+    var customClassOption: js.UndefOr[String] = js.undefined
     
-    var customClassOptionText: js.UndefOr[String] = js.native
+    var customClassOptionText: js.UndefOr[String] = js.undefined
     
-    var linkValidation: js.UndefOr[Boolean] = js.native
+    var linkValidation: js.UndefOr[Boolean] = js.undefined
     
-    var placeholderText: js.UndefOr[String] = js.native
+    var placeholderText: js.UndefOr[String] = js.undefined
     
-    var targetCheckbox: js.UndefOr[Boolean] = js.native
+    var targetCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    var targetCheckboxText: js.UndefOr[String] = js.native
+    var targetCheckboxText: js.UndefOr[String] = js.undefined
   }
   object AnchorFormOptions {
     
@@ -86,16 +84,15 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait AnchorPreviewOptions extends StObject {
     
-    var hideDelay: js.UndefOr[Double] = js.native
+    var hideDelay: js.UndefOr[Double] = js.undefined
     
-    var previewValueSelector: js.UndefOr[String] = js.native
+    var previewValueSelector: js.UndefOr[String] = js.undefined
     
-    var showOnEmptyLinks: js.UndefOr[Boolean] = js.native
+    var showOnEmptyLinks: js.UndefOr[Boolean] = js.undefined
     
-    var showWhenToolbarIsVisible: js.UndefOr[Boolean] = js.native
+    var showWhenToolbarIsVisible: js.UndefOr[Boolean] = js.undefined
   }
   object AnchorPreviewOptions {
     
@@ -136,28 +133,27 @@ object MediumEditor {
   
   type Button = String | ButtonOptions
   
-  @js.native
   trait ButtonOptions extends StObject {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
-    var aria: js.UndefOr[String] = js.native
+    var aria: js.UndefOr[String] = js.undefined
     
-    var attrs: js.UndefOr[StringDictionary[String]] = js.native
+    var attrs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var classList: js.UndefOr[js.Array[String]] = js.native
+    var classList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var contentDefault: js.UndefOr[String] = js.native
+    var contentDefault: js.UndefOr[String] = js.undefined
     
-    var contentFA: js.UndefOr[String] = js.native
+    var contentFA: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[Prop] = js.native
+    var style: js.UndefOr[Prop] = js.undefined
     
-    var tagNames: js.UndefOr[js.Array[String]] = js.native
+    var tagNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var useQueryState: js.UndefOr[Boolean] = js.native
+    var useQueryState: js.UndefOr[Boolean] = js.undefined
   }
   object ButtonOptions {
     
@@ -238,52 +234,51 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait CoreOptions extends StObject {
     
-    var activeButtonClass: js.UndefOr[String] = js.native
+    var activeButtonClass: js.UndefOr[String] = js.undefined
     
-    var allowMultiParagraphSelection: js.UndefOr[Boolean] = js.native
+    var allowMultiParagraphSelection: js.UndefOr[Boolean] = js.undefined
     
-    var anchor: js.UndefOr[AnchorFormOptions] = js.native
+    var anchor: js.UndefOr[AnchorFormOptions] = js.undefined
     
-    var anchorPreview: js.UndefOr[AnchorPreviewOptions | Boolean] = js.native
+    var anchorPreview: js.UndefOr[AnchorPreviewOptions | Boolean] = js.undefined
     
-    var autoLink: js.UndefOr[Boolean] = js.native
+    var autoLink: js.UndefOr[Boolean] = js.undefined
     
-    var buttonLabels: js.UndefOr[String | Boolean] = js.native
+    var buttonLabels: js.UndefOr[String | Boolean] = js.undefined
     
-    var contentWindow: js.UndefOr[Window] = js.native
+    var contentWindow: js.UndefOr[Window] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var disableDoubleReturn: js.UndefOr[Boolean] = js.native
+    var disableDoubleReturn: js.UndefOr[Boolean] = js.undefined
     
-    var disableEditing: js.UndefOr[Boolean] = js.native
+    var disableEditing: js.UndefOr[Boolean] = js.undefined
     
-    var disableExtraSpaces: js.UndefOr[Boolean] = js.native
+    var disableExtraSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var disableReturn: js.UndefOr[Boolean] = js.native
+    var disableReturn: js.UndefOr[Boolean] = js.undefined
     
-    var elementsContainer: js.UndefOr[HTMLElement] = js.native
+    var elementsContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var extensions: js.UndefOr[js.Any] = js.native
+    var extensions: js.UndefOr[js.Any] = js.undefined
     
-    var imageDragging: js.UndefOr[Boolean] = js.native
+    var imageDragging: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardCommands: js.UndefOr[KeyboardCommandsOptions | Boolean] = js.native
+    var keyboardCommands: js.UndefOr[KeyboardCommandsOptions | Boolean] = js.undefined
     
-    var ownerDocument: js.UndefOr[Document] = js.native
+    var ownerDocument: js.UndefOr[Document] = js.undefined
     
-    var paste: js.UndefOr[PasteOptions] = js.native
+    var paste: js.UndefOr[PasteOptions] = js.undefined
     
-    var placeholder: js.UndefOr[PlaceholderOptions | Boolean] = js.native
+    var placeholder: js.UndefOr[PlaceholderOptions | Boolean] = js.undefined
     
-    var spellcheck: js.UndefOr[Boolean] = js.native
+    var spellcheck: js.UndefOr[Boolean] = js.undefined
     
-    var targetBlank: js.UndefOr[Boolean] = js.native
+    var targetBlank: js.UndefOr[Boolean] = js.undefined
     
-    var toolbar: js.UndefOr[ToolbarOptions | Boolean] = js.native
+    var toolbar: js.UndefOr[ToolbarOptions | Boolean] = js.undefined
   }
   object CoreOptions {
     
@@ -430,14 +425,13 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait CreateLinkOptions extends StObject {
     
-    var buttonClass: js.UndefOr[String] = js.native
+    var buttonClass: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object CreateLinkOptions {
     
@@ -467,18 +461,17 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait KeyboardCommandOptions extends StObject {
     
-    var alt: Boolean = js.native
+    var alt: Boolean
     
-    var command: String = js.native
+    var command: String
     
-    var key: String = js.native
+    var key: String
     
-    var meta: Boolean = js.native
+    var meta: Boolean
     
-    var shift: Boolean = js.native
+    var shift: Boolean
   }
   object KeyboardCommandOptions {
     
@@ -508,10 +501,9 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait KeyboardCommandsOptions extends StObject {
     
-    var commands: js.UndefOr[js.Array[KeyboardCommandOptions]] = js.native
+    var commands: js.UndefOr[js.Array[KeyboardCommandOptions]] = js.undefined
   }
   object KeyboardCommandsOptions {
     
@@ -537,7 +529,8 @@ object MediumEditor {
   
   @js.native
   trait MediumEditor
-    extends // Initialization Functions
+    extends StObject
+       with // Initialization Functions
   Instantiable1[/* elements */ elementType, typings.mediumEditor.MediumEditor.MediumEditor]
        with Instantiable2[
           /* elements */ elementType, 
@@ -559,7 +552,7 @@ object MediumEditor {
     
     def createLink(opts: CreateLinkOptions): Unit = js.native
     
-    def delay(fn: js.Function0[_]): Unit = js.native
+    def delay(fn: js.Function0[js.Any]): Unit = js.native
     
     def destroy(): Unit = js.native
     
@@ -649,14 +642,13 @@ object MediumEditor {
     var version: Major = js.native
   }
   
-  @js.native
   trait PasteHTMLOptions extends StObject {
     
-    var cleanAttrs: js.UndefOr[js.Array[String]] = js.native
+    var cleanAttrs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cleanTags: js.UndefOr[js.Array[String]] = js.native
+    var cleanTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var unwrapTags: js.UndefOr[js.Array[String]] = js.native
+    var unwrapTags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PasteHTMLOptions {
     
@@ -698,22 +690,21 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait PasteOptions extends StObject {
     
-    var cleanAttrs: js.UndefOr[js.Array[String]] = js.native
+    var cleanAttrs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cleanPastedHTML: js.UndefOr[Boolean] = js.native
+    var cleanPastedHTML: js.UndefOr[Boolean] = js.undefined
     
-    var cleanReplacements: js.UndefOr[js.Array[_]] = js.native
+    var cleanReplacements: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var cleanTags: js.UndefOr[js.Array[String]] = js.native
+    var cleanTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var forcePlainText: js.UndefOr[Boolean] = js.native
+    var forcePlainText: js.UndefOr[Boolean] = js.undefined
     
-    var preCleanReplacements: js.UndefOr[js.Array[_]] = js.native
+    var preCleanReplacements: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var unwrapTags: js.UndefOr[js.Array[String]] = js.native
+    var unwrapTags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PasteOptions {
     
@@ -742,7 +733,7 @@ object MediumEditor {
       def setCleanPastedHTMLUndefined: Self = StObject.set(x, "cleanPastedHTML", js.undefined)
       
       @scala.inline
-      def setCleanReplacements(value: js.Array[_]): Self = StObject.set(x, "cleanReplacements", value.asInstanceOf[js.Any])
+      def setCleanReplacements(value: js.Array[js.Any]): Self = StObject.set(x, "cleanReplacements", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCleanReplacementsUndefined: Self = StObject.set(x, "cleanReplacements", js.undefined)
@@ -766,7 +757,7 @@ object MediumEditor {
       def setForcePlainTextUndefined: Self = StObject.set(x, "forcePlainText", js.undefined)
       
       @scala.inline
-      def setPreCleanReplacements(value: js.Array[_]): Self = StObject.set(x, "preCleanReplacements", value.asInstanceOf[js.Any])
+      def setPreCleanReplacements(value: js.Array[js.Any]): Self = StObject.set(x, "preCleanReplacements", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreCleanReplacementsUndefined: Self = StObject.set(x, "preCleanReplacements", js.undefined)
@@ -785,12 +776,11 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait PlaceholderOptions extends StObject {
     
-    var hideOnClick: js.UndefOr[Boolean] = js.native
+    var hideOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object PlaceholderOptions {
     
@@ -817,34 +807,33 @@ object MediumEditor {
     }
   }
   
-  @js.native
   trait ToolbarOptions extends StObject {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var allowMultiParagraphSelection: js.UndefOr[Boolean] = js.native
+    var allowMultiParagraphSelection: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[Button]] = js.native
+    var buttons: js.UndefOr[js.Array[Button]] = js.undefined
     
-    var diffLeft: js.UndefOr[Double] = js.native
+    var diffLeft: js.UndefOr[Double] = js.undefined
     
-    var diffTop: js.UndefOr[Double] = js.native
+    var diffTop: js.UndefOr[Double] = js.undefined
     
-    var firstButtonClass: js.UndefOr[String] = js.native
+    var firstButtonClass: js.UndefOr[String] = js.undefined
     
-    var lastButtonClass: js.UndefOr[String] = js.native
+    var lastButtonClass: js.UndefOr[String] = js.undefined
     
-    var relativeContainer: js.UndefOr[Node] = js.native
+    var relativeContainer: js.UndefOr[Node] = js.undefined
     
-    var standardizeSelectionStart: js.UndefOr[Boolean] = js.native
+    var standardizeSelectionStart: js.UndefOr[Boolean] = js.undefined
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
-    var stickyTopOffset: js.UndefOr[Double] = js.native
+    var stickyTopOffset: js.UndefOr[Double] = js.undefined
     
-    var updateOnEmptySelection: js.UndefOr[Boolean] = js.native
+    var updateOnEmptySelection: js.UndefOr[Boolean] = js.undefined
   }
   object ToolbarOptions {
     
@@ -942,12 +931,11 @@ object MediumEditor {
   
   type elementType = String | HTMLElement | js.Array[HTMLElement] | NodeList | NodeListOf[Element] | HTMLCollection
   
-  @js.native
   trait selectionObject extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object selectionObject {
     

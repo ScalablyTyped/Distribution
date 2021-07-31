@@ -6,25 +6,25 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentGroupListMod.SegmentGroup
 import typings.awsSdkClientPinpointBrowser.typesSegmentGroupListMod.UnmarshalledSegmentGroupList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteSegmentRequestMod {
   
-  @js.native
-  trait UnmarshalledWriteSegmentRequest extends WriteSegmentRequest {
+  trait UnmarshalledWriteSegmentRequest
+    extends StObject
+       with WriteSegmentRequest {
     
     /**
       * The segment dimensions attributes.
       */
     @JSName("Dimensions")
-    var Dimensions_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentDimensions] = js.native
+    var Dimensions_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentDimensions] = js.undefined
     
     /**
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
       */
     @JSName("SegmentGroups")
-    var SegmentGroups_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentGroupList] = js.native
+    var SegmentGroups_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentGroupList] = js.undefined
   }
   object UnmarshalledWriteSegmentRequest {
     
@@ -51,23 +51,22 @@ object typesWriteSegmentRequestMod {
     }
   }
   
-  @js.native
   trait WriteSegmentRequest extends StObject {
     
     /**
       * The segment dimensions attributes.
       */
-    var Dimensions: js.UndefOr[SegmentDimensions] = js.native
+    var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
     
     /**
       * The name of segment
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
       */
-    var SegmentGroups: js.UndefOr[SegmentGroupList] = js.native
+    var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
   }
   object WriteSegmentRequest {
     

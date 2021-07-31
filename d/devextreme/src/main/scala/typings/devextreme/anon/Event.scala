@@ -4,25 +4,23 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.events.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var itemIndex: js.UndefOr[Double] = js.native
+  var itemIndex: js.UndefOr[Double] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object Event {
   
@@ -33,7 +31,7 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventMutableBuilder[Self <: Event[_], T] (val x: Self with Event[T]) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event[?], T] (val x: Self & Event[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

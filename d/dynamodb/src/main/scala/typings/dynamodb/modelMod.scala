@@ -1,7 +1,6 @@
 package typings.dynamodb
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bunyan.mod.^
 import typings.dynamodb.anon.Dynamodb
 import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.queryMod.Query
@@ -10,7 +9,6 @@ import typings.dynamodb.scanMod.Scan
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
@@ -20,19 +18,19 @@ object modelMod {
   class Item protected () extends EventEmitter {
     def this(attrs: js.Object, table: js.Any) = this()
     
-    def destroy(options: js.Any): js.Promise[_] = js.native
+    def destroy(options: js.Any): js.Promise[js.Any] = js.native
     def destroy(options: js.Any, callback: Callback): Unit = js.native
     
     def get(name: String): js.Any = js.native
     
-    def save(): js.Promise[_] = js.native
+    def save(): js.Promise[js.Any] = js.native
     def save(callback: Callback): Unit = js.native
     
     def set(params: js.Any): this.type = js.native
     
     def toJSON(): js.Object = js.native
     
-    def update(options: js.Any): js.Promise[_] = js.native
+    def update(options: js.Any): js.Promise[js.Any] = js.native
     def update(options: js.Any, callback: Callback): Unit = js.native
   }
   
@@ -43,49 +41,44 @@ object modelMod {
   }
   object Model {
     
+    @JSImport("dynamodb/Model", "Model")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("dynamodb/Model", "Model.after")
     @js.native
     val after: js.Any = js.native
     
-    @JSImport("dynamodb/Model", "Model.batchGetItems")
-    @js.native
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb/Model", "Model.batchGetItems")
-    @js.native
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb/Model", "Model.before")
     @js.native
     val before: js.Any = js.native
     
-    @JSImport("dynamodb/Model", "Model.config")
-    @js.native
-    def config(config: Dynamodb): js.Any = js.native
+    @scala.inline
+    def config(config: Dynamodb): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("dynamodb/Model", "Model.create")
     @js.native
     val create: CreateOperation = js.native
     
-    @JSImport("dynamodb/Model", "Model.createTable")
-    @js.native
-    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb/Model", "Model.createTable")
-    @js.native
-    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
-    @JSImport("dynamodb/Model", "Model.deleteTable")
-    @js.native
-    def deleteTable(): js.Promise[_] = js.native
-    @JSImport("dynamodb/Model", "Model.deleteTable")
-    @js.native
-    def deleteTable(callback: Callback): Unit = js.native
+    @scala.inline
+    def deleteTable(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def deleteTable(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("dynamodb/Model", "Model.describeTable")
-    @js.native
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb/Model", "Model.describeTable")
-    @js.native
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb/Model", "Model.destroy")
     @js.native
@@ -105,44 +98,37 @@ object modelMod {
     
     @JSImport("dynamodb/Model", "Model.log")
     @js.native
-    val log: ^ = js.native
+    val log: typings.bunyan.mod.^ = js.native
     
-    @JSImport("dynamodb/Model", "Model.parallelScan")
-    @js.native
-    def parallelScan(totalSegments: Double): ParallelScan = js.native
+    @scala.inline
+    def parallelScan(totalSegments: Double): ParallelScan = ^.asInstanceOf[js.Dynamic].applyDynamic("parallelScan")(totalSegments.asInstanceOf[js.Any]).asInstanceOf[ParallelScan]
     
-    @JSImport("dynamodb/Model", "Model.query")
-    @js.native
-    def query(hashKey: String): Query = js.native
+    @scala.inline
+    def query(hashKey: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(hashKey.asInstanceOf[js.Any]).asInstanceOf[Query]
     
-    @JSImport("dynamodb/Model", "Model.scan")
-    @js.native
-    def scan(): Scan = js.native
+    @scala.inline
+    def scan(): Scan = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")().asInstanceOf[Scan]
     
-    @JSImport("dynamodb/Model", "Model.tableName")
-    @js.native
-    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] = js.native
-    @JSImport("dynamodb/Model", "Model.tableName")
-    @js.native
-    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = js.native
+    @scala.inline
+    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("dynamodb/Model", "Model.update")
     @js.native
     val update: UpdateOperation = js.native
     
-    @JSImport("dynamodb/Model", "Model.updateTable")
-    @js.native
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
-    @JSImport("dynamodb/Model", "Model.updateTable")
-    @js.native
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
+    @scala.inline
+    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    @scala.inline
+    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @js.native
     trait CreateOperation extends StObject {
       
-      def apply(doc: js.Any): js.Promise[_] = js.native
+      def apply(doc: js.Any): js.Promise[js.Any] = js.native
       def apply(doc: js.Any, callback: Callback): Unit = js.native
-      def apply(doc: js.Any, params: OperationOptions): js.Promise[_] = js.native
+      def apply(doc: js.Any, params: OperationOptions): js.Promise[js.Any] = js.native
       def apply(doc: js.Any, params: OperationOptions, callback: Callback): Unit = js.native
     }
     
@@ -153,21 +139,21 @@ object modelMod {
       def apply(data: String, options: OperationOptions, callback: Callback): Unit = js.native
       def apply(data: StringDictionary[js.Any], callback: Callback): Unit = js.native
       def apply(data: StringDictionary[js.Any], options: OperationOptions, callback: Callback): Unit = js.native
-      def apply(hashKey: String): js.Promise[_] = js.native
-      def apply(hashKey: String, options: String): js.Promise[_] = js.native
-      def apply(hashKey: String, options: OperationOptions): js.Promise[_] = js.native
+      def apply(hashKey: String): js.Promise[js.Any] = js.native
+      def apply(hashKey: String, options: String): js.Promise[js.Any] = js.native
+      def apply(hashKey: String, options: OperationOptions): js.Promise[js.Any] = js.native
       def apply(hashKey: String, rangeKey: String, callback: Callback): Unit = js.native
-      def apply(hashKey: String, rangeKey: String, options: OperationOptions): js.Promise[_] = js.native
+      def apply(hashKey: String, rangeKey: String, options: OperationOptions): js.Promise[js.Any] = js.native
       def apply(hashKey: String, rangeKey: String, options: OperationOptions, callback: Callback): Unit = js.native
     }
     
     @js.native
     trait GetItemsOperation extends StObject {
       
-      def apply(keys: js.Array[_]): js.Promise[_] = js.native
-      def apply(keys: js.Array[_], callback: Callback): Unit = js.native
-      def apply(keys: js.Array[_], options: js.Any): js.Promise[_] = js.native
-      def apply(keys: js.Array[_], options: js.Any, callback: Callback): Unit = js.native
+      def apply(keys: js.Array[js.Any]): js.Promise[js.Any] = js.native
+      def apply(keys: js.Array[js.Any], callback: Callback): Unit = js.native
+      def apply(keys: js.Array[js.Any], options: js.Any): js.Promise[js.Any] = js.native
+      def apply(keys: js.Array[js.Any], options: js.Any, callback: Callback): Unit = js.native
     }
     
     @js.native
@@ -179,29 +165,28 @@ object modelMod {
       def apply(data: js.Object, callback: Callback): Unit = js.native
       def apply(data: js.Object, options: String, callback: Callback): Unit = js.native
       def apply(data: js.Object, options: js.Object, callback: Callback): Unit = js.native
-      def apply(hashKey: String): js.Promise[_] = js.native
-      def apply(hashKey: String, options: String): js.Promise[_] = js.native
-      def apply(hashKey: String, options: js.Object): js.Promise[_] = js.native
-      def apply(hashKey: String, rangeKey: String, options: js.Object): js.Promise[_] = js.native
+      def apply(hashKey: String): js.Promise[js.Any] = js.native
+      def apply(hashKey: String, options: String): js.Promise[js.Any] = js.native
+      def apply(hashKey: String, options: js.Object): js.Promise[js.Any] = js.native
+      def apply(hashKey: String, rangeKey: String, options: js.Object): js.Promise[js.Any] = js.native
       def apply(hashKey: String, rangeKey: String, options: js.Object, callback: Callback): Unit = js.native
     }
     
-    @js.native
     trait OperationOptions extends StObject {
       
-      var ConditionExpression: js.UndefOr[js.Any] = js.native
+      var ConditionExpression: js.UndefOr[js.Any] = js.undefined
       
-      var ExpressionAttributeNames: js.UndefOr[js.Any] = js.native
+      var ExpressionAttributeNames: js.UndefOr[js.Any] = js.undefined
       
-      var ExpressionAttributeValues: js.UndefOr[js.Any] = js.native
+      var ExpressionAttributeValues: js.UndefOr[js.Any] = js.undefined
       
-      var ReturnValues: js.UndefOr[String | Boolean] = js.native
+      var ReturnValues: js.UndefOr[String | Boolean] = js.undefined
       
-      var UpdateExpression: js.UndefOr[js.Any] = js.native
+      var UpdateExpression: js.UndefOr[js.Any] = js.undefined
       
-      var expected: js.UndefOr[js.Any] = js.native
+      var expected: js.UndefOr[js.Any] = js.undefined
       
-      var overwrite: js.UndefOr[Boolean] = js.native
+      var overwrite: js.UndefOr[Boolean] = js.undefined
     }
     object OperationOptions {
       
@@ -258,10 +243,9 @@ object modelMod {
       }
     }
     
-    @js.native
     trait OperationResult extends StObject {
       
-      def get(name: String): js.Any = js.native
+      def get(name: String): js.Any
     }
     object OperationResult {
       
@@ -282,9 +266,9 @@ object modelMod {
     @js.native
     trait UpdateOperation extends StObject {
       
-      def apply(item: js.Any): js.Promise[_] = js.native
+      def apply(item: js.Any): js.Promise[js.Any] = js.native
       def apply(item: js.Any, callback: Callback): Unit = js.native
-      def apply(item: js.Any, options: OperationOptions): js.Promise[_] = js.native
+      def apply(item: js.Any, options: OperationOptions): js.Promise[js.Any] = js.native
       def apply(item: js.Any, options: OperationOptions, callback: Callback): Unit = js.native
     }
   }

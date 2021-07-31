@@ -3,53 +3,53 @@ package typings.senchaTouch.Ext.util
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object translatable {
   
-  @js.native
-  trait IAbstract extends IEvented {
+  trait IAbstract
+    extends StObject
+       with IEvented {
     
     /** [Method] Returns the value of easing
       * @returns Object
       */
-    var getEasing: js.UndefOr[js.Function0[_]] = js.native
+    var getEasing: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of easingX
       * @returns Object
       */
-    var getEasingX: js.UndefOr[js.Function0[_]] = js.native
+    var getEasingX: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of easingY
       * @returns Object
       */
-    var getEasingY: js.UndefOr[js.Function0[_]] = js.native
+    var getEasingY: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of useWrapper
       * @returns Object
       */
-    var getUseWrapper: js.UndefOr[js.Function0[_]] = js.native
+    var getUseWrapper: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of easing
       * @param easing Object The new value.
       */
-    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of easingX
       * @param easingX Object The new value.
       */
-    var setEasingX: js.UndefOr[js.Function1[/* easingX */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEasingX: js.UndefOr[js.Function1[/* easingX */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of easingY
       * @param easingY Object The new value.
       */
-    var setEasingY: js.UndefOr[js.Function1[/* easingY */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEasingY: js.UndefOr[js.Function1[/* easingY */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of useWrapper
       * @param useWrapper Object The new value.
       */
-    var setUseWrapper: js.UndefOr[js.Function1[/* useWrapper */ js.UndefOr[js.Any], Unit]] = js.native
+    var setUseWrapper: js.UndefOr[js.Function1[/* useWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -63,25 +63,25 @@ object translatable {
     implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetEasing(value: () => _): Self = StObject.set(x, "getEasing", js.Any.fromFunction0(value))
+      def setGetEasing(value: () => js.Any): Self = StObject.set(x, "getEasing", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEasingUndefined: Self = StObject.set(x, "getEasing", js.undefined)
       
       @scala.inline
-      def setGetEasingX(value: () => _): Self = StObject.set(x, "getEasingX", js.Any.fromFunction0(value))
+      def setGetEasingX(value: () => js.Any): Self = StObject.set(x, "getEasingX", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEasingXUndefined: Self = StObject.set(x, "getEasingX", js.undefined)
       
       @scala.inline
-      def setGetEasingY(value: () => _): Self = StObject.set(x, "getEasingY", js.Any.fromFunction0(value))
+      def setGetEasingY(value: () => js.Any): Self = StObject.set(x, "getEasingY", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEasingYUndefined: Self = StObject.set(x, "getEasingY", js.undefined)
       
       @scala.inline
-      def setGetUseWrapper(value: () => _): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
+      def setGetUseWrapper(value: () => js.Any): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetUseWrapperUndefined: Self = StObject.set(x, "getUseWrapper", js.undefined)
@@ -112,8 +112,9 @@ object translatable {
     }
   }
   
-  @js.native
-  trait ICssPosition extends IDom
+  trait ICssPosition
+    extends StObject
+       with IDom
   object ICssPosition {
     
     @scala.inline
@@ -123,8 +124,9 @@ object translatable {
     }
   }
   
-  @js.native
-  trait ICssTransform extends IDom
+  trait ICssTransform
+    extends StObject
+       with IDom
   object ICssTransform {
     
     @scala.inline
@@ -134,18 +136,19 @@ object translatable {
     }
   }
   
-  @js.native
-  trait IDom extends IAbstract {
+  trait IDom
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of element
       * @returns Object
       */
-    var getElement: js.UndefOr[js.Function0[_]] = js.native
+    var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of element
       * @param element Object The new value.
       */
-    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IDom {
     
@@ -159,7 +162,7 @@ object translatable {
     implicit class IDomMutableBuilder[Self <: IDom] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
@@ -172,20 +175,21 @@ object translatable {
     }
   }
   
-  @js.native
-  trait IScrollPosition extends IDom {
+  trait IScrollPosition
+    extends StObject
+       with IDom {
     
     /** [Method] Returns the value of useWrapper
       * @returns Boolean
       */
     @JSName("getUseWrapper")
-    var getUseWrapper_IScrollPosition: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseWrapper_IScrollPosition: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Sets the value of useWrapper
       * @param useWrapper Boolean The new value.
       */
     @JSName("setUseWrapper")
-    var setUseWrapper_IScrollPosition: js.UndefOr[js.Function1[/* useWrapper */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseWrapper_IScrollPosition: js.UndefOr[js.Function1[/* useWrapper */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IScrollPosition {
     

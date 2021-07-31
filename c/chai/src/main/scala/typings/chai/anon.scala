@@ -2,15 +2,13 @@ package typings.chai
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Length extends StObject {
     
-    val length: js.UndefOr[Double] = js.native
+    val length: js.UndefOr[Double] = js.undefined
   }
   object Length {
     

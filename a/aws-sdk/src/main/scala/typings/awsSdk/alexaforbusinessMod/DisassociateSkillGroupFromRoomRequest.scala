@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateSkillGroupFromRoomRequest extends StObject {
   
   /**
     * The ARN of the room from which the skill group is to be disassociated. Required.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the skill group to disassociate from a room. Required.
     */
-  var SkillGroupArn: js.UndefOr[Arn] = js.native
+  var SkillGroupArn: js.UndefOr[Arn] = js.undefined
 }
 object DisassociateSkillGroupFromRoomRequest {
   

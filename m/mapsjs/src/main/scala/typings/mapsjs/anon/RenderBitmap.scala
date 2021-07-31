@@ -6,10 +6,8 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderBitmap extends StObject {
   
   var renderBitmap: js.UndefOr[
@@ -20,11 +18,11 @@ trait RenderBitmap extends StObject {
       /* bleed */ Double, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var renderGeometry: js.UndefOr[js.Function2[/* shape */ geometry, /* context */ CanvasRenderingContext2D, Unit]] = js.native
+  var renderGeometry: js.UndefOr[js.Function2[/* shape */ geometry, /* context */ CanvasRenderingContext2D, Unit]] = js.undefined
   
-  var renderPoint: js.UndefOr[js.Function2[/* pt */ point, /* context */ CanvasRenderingContext2D, Unit]] = js.native
+  var renderPoint: js.UndefOr[js.Function2[/* pt */ point, /* context */ CanvasRenderingContext2D, Unit]] = js.undefined
 }
 object RenderBitmap {
   

@@ -7,7 +7,6 @@ import typings.uirouterCore.coreservicesMod.QLike
 import typings.uirouterCore.interfaceMod.UIRouterPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vanillaInterfaceMod {
@@ -22,24 +21,23 @@ object vanillaInterfaceMod {
     def forward(distance: js.Any): Unit = js.native
     
     def pushState(statedata: js.Any): Unit = js.native
-    def pushState(statedata: js.Any, title: js.UndefOr[scala.Nothing], url: String): Unit = js.native
     def pushState(statedata: js.Any, title: String): Unit = js.native
     def pushState(statedata: js.Any, title: String, url: String): Unit = js.native
+    def pushState(statedata: js.Any, title: Unit, url: String): Unit = js.native
     
     def replaceState(statedata: js.Any): Unit = js.native
-    def replaceState(statedata: js.Any, title: js.UndefOr[scala.Nothing], url: String): Unit = js.native
     def replaceState(statedata: js.Any, title: String): Unit = js.native
     def replaceState(statedata: js.Any, title: String, url: String): Unit = js.native
+    def replaceState(statedata: js.Any, title: Unit, url: String): Unit = js.native
   }
   
-  @js.native
   trait LocationLike extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var search: String = js.native
+    var search: String
   }
   object LocationLike {
     
@@ -64,7 +62,9 @@ object vanillaInterfaceMod {
   }
   
   @js.native
-  trait LocationPlugin extends UIRouterPlugin {
+  trait LocationPlugin
+    extends StObject
+       with UIRouterPlugin {
     
     var configuration: LocationConfig = js.native
     
@@ -72,7 +72,9 @@ object vanillaInterfaceMod {
   }
   
   @js.native
-  trait ServicesPlugin extends UIRouterPlugin {
+  trait ServicesPlugin
+    extends StObject
+       with UIRouterPlugin {
     
     @JSName("$injector")
     var $injector: InjectorLike = js.native

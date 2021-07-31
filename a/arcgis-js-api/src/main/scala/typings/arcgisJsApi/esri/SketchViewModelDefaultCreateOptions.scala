@@ -7,32 +7,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchViewModelDefaultCreateOptions extends Object {
+trait SketchViewModelDefaultCreateOptions
+  extends StObject
+     with Object {
   
   /**
     * The default z-value of the newly created geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
     */
-  var defaultZ: js.UndefOr[Double] = js.native
+  var defaultZ: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls whether the created geometry has z-values or not.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
     */
-  var hasZ: js.UndefOr[Boolean] = js.native
+  var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Create operation mode how the graphic can be created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
     */
-  var mode: js.UndefOr[hybrid | freehand | click] = js.native
+  var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 object SketchViewModelDefaultCreateOptions {
   

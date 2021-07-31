@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignGoal extends StObject {
   
   /** Required. The type of the campaign goal. */
-  var campaignGoalType: js.UndefOr[String] = js.native
+  var campaignGoalType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The performance goal of the campaign. Acceptable values for performance_goal_type are: * `PERFORMANCE_GOAL_TYPE_CPM` * `PERFORMANCE_GOAL_TYPE_CPC` *
     * `PERFORMANCE_GOAL_TYPE_CPA` * `PERFORMANCE_GOAL_TYPE_CPIAVC` * `PERFORMANCE_GOAL_TYPE_CTR` * `PERFORMANCE_GOAL_TYPE_VIEWABILITY` * `PERFORMANCE_GOAL_TYPE_OTHER`
     */
-  var performanceGoal: js.UndefOr[PerformanceGoal] = js.native
+  var performanceGoal: js.UndefOr[PerformanceGoal] = js.undefined
 }
 object CampaignGoal {
   

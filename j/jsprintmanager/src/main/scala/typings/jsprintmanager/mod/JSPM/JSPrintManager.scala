@@ -2,7 +2,6 @@ package typings.jsprintmanager.mod.JSPM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JSPrintManager {
@@ -24,50 +23,37 @@ object JSPrintManager {
   @scala.inline
   def autoReconnect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto_reconnect")(x.asInstanceOf[js.Any])
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.getPrinters")
-  @js.native
-  def getPrinters(): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getPrinters(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrinters")().asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.getPrintersInfo")
-  @js.native
-  def getPrintersInfo(): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getPrintersInfo(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrintersInfo")().asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.showAbout")
-  @js.native
-  def showAbout(): js.Promise[_] = js.native
+  @scala.inline
+  def showAbout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showAbout")().asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: js.UndefOr[scala.Nothing], host: js.UndefOr[scala.Nothing], port: Double): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: js.UndefOr[scala.Nothing], host: String): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: js.UndefOr[scala.Nothing], host: String, port: Double): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: Boolean): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: Boolean, host: js.UndefOr[scala.Nothing], port: Double): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: Boolean, host: String): js.Promise[Unit] = js.native
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.start")
-  @js.native
-  def start(secure: Boolean, host: String, port: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def start(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Boolean, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Boolean, host: String, port: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Boolean, host: Unit, port: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Unit, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Unit, host: String, port: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def start(secure: Unit, host: Unit, port: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.stop")
-  @js.native
-  def stop(): Unit = js.native
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
-  @JSImport("jsprintmanager", "JSPM.JSPrintManager.updateClient")
-  @js.native
-  def updateClient(): js.Promise[_] = js.native
+  @scala.inline
+  def updateClient(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateClient")().asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("jsprintmanager", "JSPM.JSPrintManager.websocket_status")
   @js.native

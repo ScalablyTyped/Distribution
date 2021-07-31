@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,7 +11,7 @@ sealed trait ViewEncapsulation extends StObject
 object ViewEncapsulation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewEncapsulation with Double] = js.native
+  def apply(value: Double): js.UndefOr[ViewEncapsulation & Double] = js.native
   
   /**
     * Emulate `Native` scoping of styles by adding an attribute containing surrogate id to the Host
@@ -23,15 +22,19 @@ object ViewEncapsulation extends StObject {
     * This is the default option.
     */
   @js.native
-  sealed trait Emulated extends ViewEncapsulation
-  /* 0 */ val Emulated: typings.angularCore.mod.ViewEncapsulation.Emulated with Double = js.native
+  sealed trait Emulated
+    extends StObject
+       with ViewEncapsulation
+  /* 0 */ val Emulated: typings.angularCore.mod.ViewEncapsulation.Emulated & Double = js.native
   
   /**
     * Don't provide any template or style encapsulation.
     */
   @js.native
-  sealed trait None extends ViewEncapsulation
-  /* 2 */ val None: typings.angularCore.mod.ViewEncapsulation.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with ViewEncapsulation
+  /* 2 */ val None: typings.angularCore.mod.ViewEncapsulation.None & Double = js.native
   
   /**
     * Use Shadow DOM to encapsulate styles.
@@ -41,6 +44,8 @@ object ViewEncapsulation extends StObject {
     * creating a ShadowRoot for Component's Host Element.
     */
   @js.native
-  sealed trait ShadowDom extends ViewEncapsulation
-  /* 3 */ val ShadowDom: typings.angularCore.mod.ViewEncapsulation.ShadowDom with Double = js.native
+  sealed trait ShadowDom
+    extends StObject
+       with ViewEncapsulation
+  /* 3 */ val ShadowDom: typings.angularCore.mod.ViewEncapsulation.ShadowDom & Double = js.native
 }

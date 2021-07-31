@@ -3,20 +3,18 @@ package typings.apolloReportingProtobuf.protobufMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContextualizedStats extends StObject {
   
   /** ContextualizedStats context */
-  var context: js.UndefOr[IStatsContext | Null] = js.native
+  var context: js.UndefOr[IStatsContext | Null] = js.undefined
   
   /** ContextualizedStats perTypeStat */
-  var perTypeStat: js.UndefOr[StringDictionary[ITypeStat] | Null] = js.native
+  var perTypeStat: js.UndefOr[StringDictionary[ITypeStat] | Null] = js.undefined
   
   /** ContextualizedStats queryLatencyStats */
-  var queryLatencyStats: js.UndefOr[IQueryLatencyStats | Null] = js.native
+  var queryLatencyStats: js.UndefOr[IQueryLatencyStats | Null] = js.undefined
 }
 object IContextualizedStats {
   

@@ -2,10 +2,13 @@ package typings.googleAuthLibrary
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
+  
+  @JSImport("google-auth-library/build/src/messages", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait WarningTypes extends StObject
@@ -14,31 +17,33 @@ object messagesMod {
   object WarningTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WarningTypes with String] = js.native
+    def apply(value: String): js.UndefOr[WarningTypes & String] = js.native
     
     @js.native
-    sealed trait DEPRECATION extends WarningTypes
-    /* "DeprecationWarning" */ val DEPRECATION: typings.googleAuthLibrary.messagesMod.WarningTypes.DEPRECATION with String = js.native
+    sealed trait DEPRECATION
+      extends StObject
+         with WarningTypes
+    /* "DeprecationWarning" */ val DEPRECATION: typings.googleAuthLibrary.messagesMod.WarningTypes.DEPRECATION & String = js.native
     
     @js.native
-    sealed trait WARNING extends WarningTypes
-    /* "Warning" */ val WARNING: typings.googleAuthLibrary.messagesMod.WarningTypes.WARNING with String = js.native
+    sealed trait WARNING
+      extends StObject
+         with WarningTypes
+    /* "Warning" */ val WARNING: typings.googleAuthLibrary.messagesMod.WarningTypes.WARNING & String = js.native
   }
   
-  @JSImport("google-auth-library/build/src/messages", "warn")
-  @js.native
-  def warn(warning: Warning): Unit = js.native
+  @scala.inline
+  def warn(warning: Warning): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Warning extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: WarningTypes = js.native
+    var `type`: WarningTypes
     
-    var warned: js.UndefOr[Boolean] = js.native
+    var warned: js.UndefOr[Boolean] = js.undefined
   }
   object Warning {
     

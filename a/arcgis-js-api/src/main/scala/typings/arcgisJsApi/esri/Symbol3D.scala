@@ -7,11 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`point-3d`
 import typings.arcgisJsApi.arcgisJsApiStrings.`polygon-3d`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Symbol3D extends Symbol {
+trait Symbol3D
+  extends StObject
+     with Symbol {
   
   /**
     * The origin of the style from which the symbol was originally referenced.

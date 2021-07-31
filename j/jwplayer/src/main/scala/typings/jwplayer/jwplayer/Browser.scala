@@ -2,27 +2,25 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browser extends StObject {
   
-  var chrome: Boolean = js.native
+  var chrome: Boolean
   
-  var edge: Boolean = js.native
+  var edge: Boolean
   
-  var facebook: Boolean = js.native
+  var facebook: Boolean
   
-  var firefox: Boolean = js.native
+  var firefox: Boolean
   
-  var ie: Boolean = js.native
+  var ie: Boolean
   
-  var msie: Boolean = js.native
+  var msie: Boolean
   
-  var safari: Boolean = js.native
+  var safari: Boolean
   
-  var version: Version = js.native
+  var version: Version
 }
 object Browser {
   

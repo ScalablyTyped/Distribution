@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecyclePolicyRuleAction extends StObject {
   
   /**
     * The type of action to be taken.
     */
-  var `type`: js.UndefOr[ImageActionType] = js.native
+  var `type`: js.UndefOr[ImageActionType] = js.undefined
 }
 object LifecyclePolicyRuleAction {
   

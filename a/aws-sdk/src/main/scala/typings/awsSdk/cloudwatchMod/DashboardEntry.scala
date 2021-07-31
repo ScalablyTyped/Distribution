@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardEntry extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
     */
-  var DashboardArn: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardArn] = js.native
+  var DashboardArn: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardArn] = js.undefined
   
   /**
     * The name of the dashboard.
     */
-  var DashboardName: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardName] = js.native
+  var DashboardName: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardName] = js.undefined
   
   /**
     * The time stamp of when the dashboard was last modified, either by an API call or through the console. This number is expressed as the number of milliseconds since Jan 1, 1970 00:00:00 UTC.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.cloudwatchMod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.cloudwatchMod.LastModified] = js.undefined
   
   /**
     * The size of the dashboard, in bytes.
     */
-  var Size: js.UndefOr[typings.awsSdk.cloudwatchMod.Size] = js.native
+  var Size: js.UndefOr[typings.awsSdk.cloudwatchMod.Size] = js.undefined
 }
 object DashboardEntry {
   

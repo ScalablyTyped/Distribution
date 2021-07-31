@@ -3,36 +3,34 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRegionMod {
   
-  @JSImport("@pulumi/aws/getRegion", "getRegion")
+  @JSImport("@pulumi/aws/getRegion", JSImport.Namespace)
   @js.native
-  def getRegion(): js.Promise[GetRegionResult] = js.native
-  @JSImport("@pulumi/aws/getRegion", "getRegion")
-  @js.native
-  def getRegion(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRegionResult] = js.native
-  @JSImport("@pulumi/aws/getRegion", "getRegion")
-  @js.native
-  def getRegion(args: GetRegionArgs): js.Promise[GetRegionResult] = js.native
-  @JSImport("@pulumi/aws/getRegion", "getRegion")
-  @js.native
-  def getRegion(args: GetRegionArgs, opts: InvokeOptions): js.Promise[GetRegionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRegion(): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")().asInstanceOf[js.Promise[GetRegionResult]]
+  @scala.inline
+  def getRegion(args: Unit, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
+  @scala.inline
+  def getRegion(args: GetRegionArgs): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionResult]]
+  @scala.inline
+  def getRegion(args: GetRegionArgs, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
+  
   trait GetRegionArgs extends StObject {
     
     /**
       * The EC2 endpoint of the region to select.
       */
-    val endpoint: js.UndefOr[String] = js.native
+    val endpoint: js.UndefOr[String] = js.undefined
     
     /**
       * The full name of the region to select.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object GetRegionArgs {
     
@@ -59,28 +57,27 @@ object getRegionMod {
     }
   }
   
-  @js.native
   trait GetRegionResult extends StObject {
     
     /**
       * The region's description in this format: "Location (Region name)".
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The EC2 endpoint for the selected region.
       */
-    val endpoint: String = js.native
+    val endpoint: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the selected region.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetRegionResult {
     

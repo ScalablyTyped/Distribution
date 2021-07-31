@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,7 @@ trait PlusMapsPolygon extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def getPath(): js.Array[_] = js.native
+  def getPath(): js.Array[js.Any] = js.native
   
   /**
     * 获取多边形边框的颜色
@@ -93,7 +92,7 @@ trait PlusMapsPolygon extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setPath(): Unit = js.native
-  def setPath(points: js.Array[_]): Unit = js.native
+  def setPath(points: js.Array[js.Any]): Unit = js.native
   
   /**
     * 设置多边形的颜色

@@ -13,41 +13,39 @@ import typings.jqueryColorpicker.JQueryColorpickerStatic.LAB
 import typings.jqueryColorpicker.JQueryColorpickerStatic.RGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var A: Double = js.native
+    var A: Double
     
-    var B: Double = js.native
+    var B: Double
     
-    var L: Double = js.native
+    var L: Double
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var k: Double = js.native
+    var k: Double
     
-    var m: Double = js.native
+    var m: Double
     
-    var r: Double = js.native
+    var r: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object A {
     
@@ -113,18 +111,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Cmyk extends StObject {
     
-    var cmyk: CMYK = js.native
+    var cmyk: CMYK
     
-    var hsl: HSL = js.native
+    var hsl: HSL
     
-    var hsv: HSV = js.native
+    var hsv: HSV
     
-    var lab: LAB = js.native
+    var lab: LAB
     
-    var rgb: RGB = js.native
+    var rgb: RGB
   }
   object Cmyk {
     
@@ -156,14 +153,20 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable0[Color]
+    extends StObject
+       with Instantiable0[Color]
        with Instantiable1[/* r */ Double, Color]
-       with Instantiable2[js.UndefOr[/* r */ Double], /* g */ Double, Color]
-       with Instantiable3[js.UndefOr[/* r */ Double], js.UndefOr[/* g */ Double], /* b */ Double, Color]
+       with Instantiable2[(/* r */ Double) | (/* r */ Unit), /* g */ Double, Color]
+       with Instantiable3[
+          (/* r */ Double) | (/* r */ Unit), 
+          (/* g */ Double) | (/* g */ Unit), 
+          /* b */ Double, 
+          Color
+        ]
        with Instantiable4[
-          js.UndefOr[/* r */ Double], 
-          js.UndefOr[/* g */ Double], 
-          js.UndefOr[/* b */ Double], 
+          (/* r */ Double) | (/* r */ Unit), 
+          (/* g */ Double) | (/* g */ Unit), 
+          (/* b */ Double) | (/* b */ Unit), 
           /* a */ Double, 
           Color
         ]

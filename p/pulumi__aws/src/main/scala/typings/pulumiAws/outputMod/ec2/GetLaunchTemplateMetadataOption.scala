@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateMetadataOption extends StObject {
   
   /**
     * The state of the metadata service: `enabled`, `disabled`.
     */
-  var httpEndpoint: String = js.native
+  var httpEndpoint: String
   
   /**
     * The desired HTTP PUT response hop limit for instance metadata requests.
     */
-  var httpPutResponseHopLimit: Double = js.native
+  var httpPutResponseHopLimit: Double
   
   /**
     * If session tokens are required: `optional`, `required`.
     */
-  var httpTokens: String = js.native
+  var httpTokens: String
 }
 object GetLaunchTemplateMetadataOption {
   

@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardSqlStructType extends StObject {
   
-  var fields: js.UndefOr[js.Array[StandardSqlField]] = js.native
+  var fields: js.UndefOr[js.Array[StandardSqlField]] = js.undefined
 }
 object StandardSqlStructType {
   

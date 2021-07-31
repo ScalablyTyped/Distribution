@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsHistoriesExecutionsList extends StandardParameters {
+trait ParamsResourceProjectsHistoriesExecutionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A History id.  Required.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of Executions to fetch.  Default value: 25. The server
     * will use this default if the field is not set or has a value of 0.
     * Optional.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token to resume the query at the next item.  Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A Project id.  Required.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsHistoriesExecutionsList {
   

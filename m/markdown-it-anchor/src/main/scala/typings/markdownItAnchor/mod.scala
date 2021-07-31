@@ -1,24 +1,24 @@
 package typings.markdownItAnchor
 
 import typings.markdownIt.libMod.MarkdownIt
-import typings.markdownIt.tokenMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(md: MarkdownIt, opts: AnchorOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("markdown-it-anchor", JSImport.Namespace)
   @js.native
-  def apply(md: MarkdownIt, opts: AnchorOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AnchorInfo extends StObject {
     
-    var slug: String = js.native
+    var slug: String
     
-    var title: String = js.native
+    var title: String
   }
   object AnchorInfo {
     
@@ -39,22 +39,23 @@ object mod {
     }
   }
   
-  @js.native
   trait AnchorOptions extends StObject {
     
-    var callback: js.UndefOr[js.Function2[/* token */ ^, /* anchor_info */ AnchorInfo, Unit]] = js.native
+    var callback: js.UndefOr[
+        js.Function2[/* token */ typings.markdownIt.tokenMod.^, /* anchor_info */ AnchorInfo, Unit]
+      ] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var permalink: js.UndefOr[Boolean] = js.native
+    var permalink: js.UndefOr[Boolean] = js.undefined
     
-    var permalinkBefore: js.UndefOr[Boolean] = js.native
+    var permalinkBefore: js.UndefOr[Boolean] = js.undefined
     
-    var permalinkClass: js.UndefOr[String] = js.native
+    var permalinkClass: js.UndefOr[String] = js.undefined
     
-    var permalinkHref: js.UndefOr[js.Function1[/* slug */ String, String]] = js.native
+    var permalinkHref: js.UndefOr[js.Function1[/* slug */ String, String]] = js.undefined
     
-    var permalinkSymbol: js.UndefOr[String] = js.native
+    var permalinkSymbol: js.UndefOr[String] = js.undefined
     
     var renderPermalink: js.UndefOr[
         js.Function4[
@@ -64,9 +65,9 @@ object mod {
           /* idx */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var slugify: js.UndefOr[js.Function1[/* str */ String, String]] = js.native
+    var slugify: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
   }
   object AnchorOptions {
     
@@ -80,7 +81,7 @@ object mod {
     implicit class AnchorOptionsMutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: (/* token */ ^, /* anchor_info */ AnchorInfo) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      def setCallback(value: (/* token */ typings.markdownIt.tokenMod.^, /* anchor_info */ AnchorInfo) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

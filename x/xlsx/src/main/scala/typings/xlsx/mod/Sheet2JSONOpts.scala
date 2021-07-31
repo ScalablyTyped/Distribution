@@ -3,29 +3,29 @@ package typings.xlsx.mod
 import typings.xlsx.xlsxStrings.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Sheet2JSONOpts extends DateNFOption {
+trait Sheet2JSONOpts
+  extends StObject
+     with DateNFOption {
   
   /** Include or omit blank lines in the output */
-  var blankrows: js.UndefOr[Boolean] = js.native
+  var blankrows: js.UndefOr[Boolean] = js.undefined
   
   /** Default value for null/undefined values */
-  var defval: js.UndefOr[js.Any] = js.native
+  var defval: js.UndefOr[js.Any] = js.undefined
   
   /** Output format */
-  var header: js.UndefOr[A | Double | js.Array[String]] = js.native
+  var header: js.UndefOr[A | Double | js.Array[String]] = js.undefined
   
   /** Override worksheet range */
-  var range: js.UndefOr[js.Any] = js.native
+  var range: js.UndefOr[js.Any] = js.undefined
   
   /** if true, return raw data; if false, return formatted text */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /** if true, return raw numbers; if false, return formatted numbers */
-  var rawNumbers: js.UndefOr[Boolean] = js.native
+  var rawNumbers: js.UndefOr[Boolean] = js.undefined
 }
 object Sheet2JSONOpts {
   

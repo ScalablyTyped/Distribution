@@ -3,7 +3,6 @@ package typings.jestCucumber
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportEventGeneratorMod {
@@ -20,7 +19,9 @@ object reportEventGeneratorMod {
     
     var featureFileEventGenerator: js.Any = js.native
     
-    def onScenarioComplete(jestTestResult: js.Any): js.Promise[js.Tuple10[_, _, _, _, _, _, _, _, _, _]] = js.native
+    def onScenarioComplete(jestTestResult: js.Any): js.Promise[
+        js.Tuple10[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
+      ] = js.native
     
     def onTestRunComplete(jestTestResult: js.Any): Unit = js.native
     

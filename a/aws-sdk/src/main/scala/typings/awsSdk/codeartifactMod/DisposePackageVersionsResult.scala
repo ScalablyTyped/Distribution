@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisposePackageVersionsResult extends StObject {
   
   /**
     *  A PackageVersionError object that contains a map of errors codes for the disposed package versions that failed. The possible error codes are:     ALREADY_EXISTS     MISMATCHED_REVISION     MISMATCHED_STATUS     NOT_ALLOWED     NOT_FOUND     SKIPPED   
     */
-  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.native
+  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.undefined
   
   /**
     *  A list of the package versions that were successfully disposed. 
     */
-  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.native
+  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.undefined
 }
 object DisposePackageVersionsResult {
   

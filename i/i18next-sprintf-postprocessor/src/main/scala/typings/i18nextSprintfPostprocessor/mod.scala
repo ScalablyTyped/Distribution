@@ -6,7 +6,6 @@ import typings.i18nextSprintfPostprocessor.anon.PostProcess
 import typings.i18nextSprintfPostprocessor.i18nextSprintfPostprocessorStrings.postProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,15 +14,16 @@ object mod extends Shortcut {
   @js.native
   val ^ : I18nextSprintfPostProcessor = js.native
   
-  @js.native
-  trait I18nextSprintfPostProcessor extends PostProcessorModule {
+  trait I18nextSprintfPostProcessor
+    extends StObject
+       with PostProcessorModule {
     
-    def overloadTranslationOptionHandler(args: js.Array[String]): PostProcess = js.native
+    def overloadTranslationOptionHandler(args: js.Array[String]): PostProcess
     
-    def process(value: js.Any, key: String, options: js.Any): js.Any = js.native
+    def process(value: js.Any, key: String, options: js.Any): js.Any
     
     @JSName("type")
-    var type_I18nextSprintfPostProcessor: postProcessor = js.native
+    var type_I18nextSprintfPostProcessor: postProcessor
   }
   object I18nextSprintfPostProcessor {
     
@@ -31,11 +31,10 @@ object mod extends Shortcut {
     def apply(
       name: String,
       overloadTranslationOptionHandler: js.Array[String] => PostProcess,
-      process: (js.Any, String, js.Any) => js.Any,
-      `type`: postProcessor
+      process: (js.Any, String, js.Any) => js.Any
     ): I18nextSprintfPostProcessor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("postProcessor")
       __obj.asInstanceOf[I18nextSprintfPostProcessor]
     }
     

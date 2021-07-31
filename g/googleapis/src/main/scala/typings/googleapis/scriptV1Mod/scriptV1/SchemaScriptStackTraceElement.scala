@@ -2,24 +2,22 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A stack trace through the script that shows where the execution failed.
   */
-@js.native
 trait SchemaScriptStackTraceElement extends StObject {
   
   /**
     * The name of the function that failed.
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * The line number where the script failed.
     */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
 }
 object SchemaScriptStackTraceElement {
   

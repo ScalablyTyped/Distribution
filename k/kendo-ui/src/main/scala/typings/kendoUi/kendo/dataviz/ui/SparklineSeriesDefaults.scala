@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineSeriesDefaults extends StObject {
   
-  var area: js.UndefOr[js.Any] = js.native
+  var area: js.UndefOr[js.Any] = js.undefined
   
-  var bar: js.UndefOr[js.Any] = js.native
+  var bar: js.UndefOr[js.Any] = js.undefined
   
-  var border: js.UndefOr[SparklineSeriesDefaultsBorder] = js.native
+  var border: js.UndefOr[SparklineSeriesDefaultsBorder] = js.undefined
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var labels: js.UndefOr[SparklineSeriesDefaultsLabels] = js.native
+  var labels: js.UndefOr[SparklineSeriesDefaultsLabels] = js.undefined
   
-  var line: js.UndefOr[js.Any] = js.native
+  var line: js.UndefOr[js.Any] = js.undefined
   
-  var overlay: js.UndefOr[js.Any] = js.native
+  var overlay: js.UndefOr[js.Any] = js.undefined
   
-  var pie: js.UndefOr[js.Any] = js.native
+  var pie: js.UndefOr[js.Any] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[Boolean | SparklineSeriesDefaultsStack] = js.native
+  var stack: js.UndefOr[Boolean | SparklineSeriesDefaultsStack] = js.undefined
   
-  var tooltip: js.UndefOr[SparklineSeriesDefaultsTooltip] = js.native
+  var tooltip: js.UndefOr[SparklineSeriesDefaultsTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SparklineSeriesDefaults {
   

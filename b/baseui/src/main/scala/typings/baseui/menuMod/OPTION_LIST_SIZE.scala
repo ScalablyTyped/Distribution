@@ -4,15 +4,13 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OPTION_LIST_SIZE extends StObject {
   
-  var default: default_ = js.native
+  var default: default_
   
-  var compact: typings.baseui.baseuiStrings.compact = js.native
+  var compact: typings.baseui.baseuiStrings.compact
 }
 object OPTION_LIST_SIZE {
   

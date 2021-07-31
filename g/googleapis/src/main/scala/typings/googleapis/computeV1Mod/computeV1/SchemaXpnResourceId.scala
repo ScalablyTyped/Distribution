@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Service resource (a.k.a service project) ID.
   */
-@js.native
 trait SchemaXpnResourceId extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaXpnResourceId extends StObject {
     * supports project id (e.g., my-project-123) and project number (e.g.
     * 12345678).
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the service resource.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaXpnResourceId {
   

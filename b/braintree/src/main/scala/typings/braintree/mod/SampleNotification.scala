@@ -2,15 +2,13 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SampleNotification extends StObject {
   
-  var bt_payload: String = js.native
+  var bt_payload: String
   
-  var bt_signature: String = js.native
+  var bt_signature: String
 }
 object SampleNotification {
   

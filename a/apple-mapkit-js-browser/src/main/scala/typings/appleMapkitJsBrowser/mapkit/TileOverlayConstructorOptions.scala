@@ -2,35 +2,33 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attributes used when initializing a tile overlay, including minimum and
   * maximum zoom, opacity, and custom data.
   */
-@js.native
 trait TileOverlayConstructorOptions extends StObject {
   
   /**
     * Custom data used to populate the URL template.
     */
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Maximum zoom level of the overlay.
     */
-  var maximumZ: js.UndefOr[Double] = js.native
+  var maximumZ: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum zoom level of the overlay.
     */
-  var minimumZ: js.UndefOr[Double] = js.native
+  var minimumZ: js.UndefOr[Double] = js.undefined
   
   /**
     * Opacity level of the overlay.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object TileOverlayConstructorOptions {
   

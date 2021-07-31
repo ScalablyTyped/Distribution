@@ -6,17 +6,18 @@ import typings.koa.mod.Middleware
 import typings.koaViews.anon.AutoRender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(dir: String, opts: AutoRender): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-views", JSImport.Namespace)
   @js.native
-  def apply(dir: String): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-views", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, opts: AutoRender): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object koaAugmentingMod {

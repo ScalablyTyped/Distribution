@@ -7,7 +7,6 @@ import typings.stripe.stripeStrings.once
 import typings.stripe.stripeStrings.repeating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coupons {
@@ -16,71 +15,72 @@ object coupons {
     * A coupon contains information about a percent-off or amount-off discount you might want to apply to a customer.
     * Coupons only apply to invoices; they do not apply to one-off charges.
     */
-  @js.native
-  trait ICoupon extends IResourceObject {
+  trait ICoupon
+    extends StObject
+       with IResourceObject {
     
     /**
       * Amount (in the currency specified) that will be taken off the subtotal of any invoices for this customer.
       */
-    var amount_off: Double = js.native
+    var amount_off: Double
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * If amount_off has been set, the currency of the amount to take off.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * One of "forever", "once", and "repeating". Describes how long a customer who applies this coupon will get the discount.
       */
-    var duration: forever | once | repeating = js.native
+    var duration: forever | once | repeating
     
     /**
       * If duration is repeating, the number of months the coupon applies. Null if coupon duration is forever or once.
       */
-    var duration_in_months: Double = js.native
+    var duration_in_months: Double
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Maximum number of times this coupon can be redeemed, in total, before it is no longer valid.
       */
-    var max_redemptions: Double = js.native
+    var max_redemptions: Double
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Name of the coupon displayed to customers on for instance invoices or receipts.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Value is 'coupon'
       */
     @JSName("object")
-    var object_ICoupon: coupon = js.native
+    var object_ICoupon: coupon
     
     /**
       * Percent that will be taken off the subtotal of any invoices for this customer for the duration
       * of the coupon. For example, a coupon with percent_off of 50 will make a $100 invoice $50 instead.
       */
-    var percent_off: Double = js.native
+    var percent_off: Double
     
     /**
       * Date after which the coupon can no longer be redeemed
       */
-    var redeem_by: Double = js.native
+    var redeem_by: Double
     
     /**
       * Number of times this coupon has been applied to a customer.
       */
-    var times_redeemed: Double = js.native
+    var times_redeemed: Double
     
     /**
       * Taking account of the above properties, whether this coupon can still be applied to a customer
       */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object ICoupon {
     
@@ -96,14 +96,13 @@ object coupons {
       max_redemptions: Double,
       metadata: IMetadata,
       name: String,
-      `object`: coupon,
       percent_off: Double,
       redeem_by: Double,
       times_redeemed: Double,
       valid: Boolean
     ): ICoupon = {
       val __obj = js.Dynamic.literal(amount_off = amount_off.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], max_redemptions = max_redemptions.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percent_off = percent_off.asInstanceOf[js.Any], redeem_by = redeem_by.asInstanceOf[js.Any], times_redeemed = times_redeemed.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("coupon")
       __obj.asInstanceOf[ICoupon]
     }
     
@@ -154,59 +153,60 @@ object coupons {
     }
   }
   
-  @js.native
-  trait ICouponCreationOptions extends IDataOptionsWithMetadata {
+  trait ICouponCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer representing the amount to subtract from an invoice total (required if percent_off is not passed)
       */
-    var amount_off: js.UndefOr[Double] = js.native
+    var amount_off: js.UndefOr[Double] = js.undefined
     
     /**
       * Currency of the amount_off parameter (required if amount_off is passed)
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies how long the discount will be in effect. Can be forever, once, or repeating.
       */
-    var duration: forever | once | repeating = js.native
+    var duration: forever | once | repeating
     
     /**
       * Required only if duration is repeating, in which case it must be a positive integer that specifies the number of months
       * the discount will be in effect.
       */
-    var duration_in_months: js.UndefOr[Double] = js.native
+    var duration_in_months: js.UndefOr[Double] = js.undefined
     
     /**
       * Unique string of your choice that will be used to identify this coupon when applying it to a customer. This is often a specific
       * code you’ll give to your customer to use when signing up (e.g. FALL25OFF). If you don’t want to specify a particular code, you
       * can leave the ID blank and we’ll generate a random code for you.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * A positive integer specifying the number of times the coupon can be redeemed before it’s no longer valid.
       *
       * For example, you might have a 50% off coupon that the first 20 readers of your blog can use.
       */
-    var max_redemptions: js.UndefOr[Double] = js.native
+    var max_redemptions: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of the coupon displayed to customers on, for instance invoices, or receipts. By default the id is shown if name is not set.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A positive integer between 1 and 100 that represents the discount the coupon will apply (required if amount_off is not passed)
       */
-    var percent_off: js.UndefOr[Double] = js.native
+    var percent_off: js.UndefOr[Double] = js.undefined
     
     /**
       * Unix timestamp specifying the last time at which the coupon can be redeemed.
       * After the redeem_by date, the coupon can no longer be applied to new customers.
       */
-    var redeem_by: js.UndefOr[Double] = js.native
+    var redeem_by: js.UndefOr[Double] = js.undefined
   }
   object ICouponCreationOptions {
     
@@ -276,51 +276,45 @@ object coupons {
     * A discount represents the actual application of a coupon to a particular customer. It contains information
     * about when the discount began and when it will end.
     */
-  @js.native
-  trait IDiscount extends IObject {
+  trait IDiscount
+    extends StObject
+       with IObject {
     
     /**
       * Hash describing the coupon applied to create this discount
       */
-    var coupon: ICoupon = js.native
+    var coupon: ICoupon
     
-    var customer: String = js.native
+    var customer: String
     
     /**
       * If the coupon has a duration of once or repeating, the date that this discount will end. If the coupon
       * used has a forever duration, this attribute will be null.
       */
-    var end: Double = js.native
+    var end: Double
     
     /**
       * Value is 'discount'
       */
     @JSName("object")
-    var object_IDiscount: discount = js.native
+    var object_IDiscount: discount
     
     /**
       * Date that the coupon was applied
       */
-    var start: Double = js.native
+    var start: Double
     
     /**
       * The subscription that this coupon is applied to, if it is applied to a particular subscription
       */
-    var subscription: String = js.native
+    var subscription: String
   }
   object IDiscount {
     
     @scala.inline
-    def apply(
-      coupon: ICoupon,
-      customer: String,
-      end: Double,
-      `object`: discount,
-      start: Double,
-      subscription: String
-    ): IDiscount = {
+    def apply(coupon: ICoupon, customer: String, end: Double, start: Double, subscription: String): IDiscount = {
       val __obj = js.Dynamic.literal(coupon = coupon.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("discount")
       __obj.asInstanceOf[IDiscount]
     }
     

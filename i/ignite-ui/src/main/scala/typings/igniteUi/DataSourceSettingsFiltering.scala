@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSettingsFiltering
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,55 +16,55 @@ trait DataSourceSettingsFiltering
     * If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect.
     *
     */
-  var applyToAllData: js.UndefOr[Boolean] = js.native
+  var applyToAllData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables or disables case sensitive filtering on the data. Works only for local filtering
     *
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object containing custom defined filtering conditions as objects.
     *
     */
-  var customConditions: js.UndefOr[js.Any] = js.native
+  var customConditions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data
     *
     */
-  var customFunc: js.UndefOr[js.Any] = js.native
+  var customFunc: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Data will be initially filtered accordingly, directly after dataBind()
     *
     */
-  var defaultFields: js.UndefOr[js.Array[_]] = js.native
+  var defaultFields: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An "SQL-like' encoded expressions string. Takes precedence over "expressions". Example: col2 > 100; col2 LIKE %test%
     *
     */
-  var exprString: js.UndefOr[String] = js.native
+  var exprString: js.UndefOr[String] = js.undefined
   
   /**
     * A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)
     *
     */
-  var expressions: js.UndefOr[js.Array[_]] = js.native
+  var expressions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details
     *
     */
-  var filterExprUrlKey: js.UndefOr[String] = js.native
+  var filterExprUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR
     *
     */
-  var filterLogicUrlKey: js.UndefOr[String] = js.native
+  var filterLogicUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Filtering type.
@@ -74,7 +73,7 @@ trait DataSourceSettingsFiltering
     * "remote" Parameters will be encoded and it's up to the backend to interpred them from the response.
     * "local" The data will be filtered automatically client-side
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourceSettingsFiltering {
   
@@ -112,7 +111,7 @@ object DataSourceSettingsFiltering {
     def setCustomFuncUndefined: Self = StObject.set(x, "customFunc", js.undefined)
     
     @scala.inline
-    def setDefaultFields(value: js.Array[_]): Self = StObject.set(x, "defaultFields", value.asInstanceOf[js.Any])
+    def setDefaultFields(value: js.Array[js.Any]): Self = StObject.set(x, "defaultFields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultFieldsUndefined: Self = StObject.set(x, "defaultFields", js.undefined)
@@ -127,7 +126,7 @@ object DataSourceSettingsFiltering {
     def setExprStringUndefined: Self = StObject.set(x, "exprString", js.undefined)
     
     @scala.inline
-    def setExpressions(value: js.Array[_]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    def setExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)

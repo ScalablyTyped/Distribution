@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing an image.
   */
-@js.native
 trait SchemaImage extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaImage extends StObject {
     * accesses the image as the original requester. Access to the image may be
     * lost if the presentation&#39;s sharing settings change.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The properties of the image.
     */
-  var imageProperties: js.UndefOr[SchemaImageProperties] = js.native
+  var imageProperties: js.UndefOr[SchemaImageProperties] = js.undefined
   
   /**
     * The source URL is the URL used to insert the image. The source URL can be
     * empty.
     */
-  var sourceUrl: js.UndefOr[String] = js.native
+  var sourceUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaImage {
   

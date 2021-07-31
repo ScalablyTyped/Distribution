@@ -5,7 +5,6 @@ import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.builderUtil.archMod.Arch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteBuilderMod {
@@ -13,17 +12,17 @@ object remoteBuilderMod {
   @JSImport("app-builder-lib/out/remoteBuilder/RemoteBuilder", "RemoteBuilder")
   @js.native
   class RemoteBuilder protected () extends StObject {
-    def this(packager: PlatformPackager[_]) = this()
+    def this(packager: PlatformPackager[js.Any]) = this()
     
     var _build: js.Any = js.native
     
     var artifactInfoToArtifactCreatedEvent: js.Any = js.native
     
-    def build(): js.Promise[_] = js.native
+    def build(): js.Promise[js.Any] = js.native
     
     var buildStarted: js.Any = js.native
     
-    val packager: PlatformPackager[_] = js.native
+    val packager: PlatformPackager[js.Any] = js.native
     
     def scheduleBuild(target: Target, arch: Arch, unpackedDirectory: String): Unit = js.native
     

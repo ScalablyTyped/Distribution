@@ -13,62 +13,62 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseCardTypesMod {
   
-  @js.native
-  trait IBaseCardProps[TComponent, TStyles, TStyleProps] extends HTMLAttributes[HTMLDivElement] {
+  trait IBaseCardProps[TComponent, TStyles, TStyleProps]
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Custom overriding props to Callout
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Optional callback to access the TComponent interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[TComponent]] = js.native
+    var componentRef: js.UndefOr[IRefObject[TComponent]] = js.undefined
     
     /**
       * How the element should be positioned
       * @defaultvalue DirectionalHint.bottomLeftEdge
       */
-    var directionalHint: js.UndefOr[DirectionalHint] = js.native
+    var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * Make callout content show on the set side
       * @defaultvalue true
       */
-    var directionalHintFixed: js.UndefOr[Boolean] = js.native
+    var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Focus on first element by default on card or not
       */
-    var firstFocus: js.UndefOr[Boolean] = js.native
+    var firstFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The gap between the card and the target
       * @defaultvalue 0
       */
-    var gapSpace: js.UndefOr[Double] = js.native
+    var gapSpace: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback upon focus or mouse enter event
       */
-    var onEnter: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onEnter: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * Callback upon blur or mouse leave event
       */
-    var onLeave: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onLeave: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       *  Item to be returned with onRender functions
       */
-    var renderData: js.UndefOr[js.Any] = js.native
+    var renderData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Custom styles for this component
@@ -78,24 +78,24 @@ object baseCardTypesMod {
           TStyleProps, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-      */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps with TopLevel[js.Any]
+      */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Element to anchor the card to.
       */
-    var targetElement: js.UndefOr[HTMLElement] = js.native
+    var targetElement: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Trap focus or not
       */
-    var trapFocus: js.UndefOr[Boolean] = js.native
+    var trapFocus: js.UndefOr[Boolean] = js.undefined
   }
   object IBaseCardProps {
     
@@ -106,7 +106,7 @@ object baseCardTypesMod {
     }
     
     @scala.inline
-    implicit class IBaseCardPropsMutableBuilder[Self <: IBaseCardProps[_, _, _], TComponent, TStyles, TStyleProps] (val x: Self with (IBaseCardProps[TComponent, TStyles, TStyleProps])) extends AnyVal {
+    implicit class IBaseCardPropsMutableBuilder[Self <: IBaseCardProps[?, ?, ?], TComponent, TStyles, TStyleProps] (val x: Self & (IBaseCardProps[TComponent, TStyles, TStyleProps])) extends AnyVal {
       
       @scala.inline
       def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
@@ -171,7 +171,7 @@ object baseCardTypesMod {
               TStyleProps, 
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps with TopLevel[js.Any]
+        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
             ]
       ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -180,7 +180,7 @@ object baseCardTypesMod {
         value: TStyleProps => DeepPartial[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps with TopLevel[js.Any]
+        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
             ]
       ): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
@@ -207,18 +207,17 @@ object baseCardTypesMod {
     }
   }
   
-  @js.native
   trait IBaseCardStyleProps extends StObject {
     
     /**
       * ClassName to inject into wrapper div of the content.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IBaseCardStyleProps {
     
@@ -242,13 +241,12 @@ object baseCardTypesMod {
     }
   }
   
-  @js.native
   trait IBaseCardStyles extends StObject {
     
     /**
       * Style for the root element in the default enabled, non-toggled state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IBaseCardStyles {
     

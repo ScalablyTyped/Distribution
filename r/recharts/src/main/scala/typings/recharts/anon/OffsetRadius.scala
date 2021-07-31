@@ -2,13 +2,11 @@ package typings.recharts.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetRadius extends StObject {
   
-  var offsetRadius: Double = js.native
+  var offsetRadius: Double
 }
 object OffsetRadius {
   

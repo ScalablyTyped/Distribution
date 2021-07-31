@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometryLayoutMod {
@@ -12,15 +11,15 @@ object geometryLayoutMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[GeometryLayout with String] = js.native
+    def apply(value: String): js.UndefOr[GeometryLayout & String] = js.native
     
-    /* "XY" */ val XY: typings.ol.geometryLayoutMod.GeometryLayout.XY with String = js.native
+    /* "XY" */ val XY: typings.ol.geometryLayoutMod.GeometryLayout.XY & String = js.native
     
-    /* "XYM" */ val XYM: typings.ol.geometryLayoutMod.GeometryLayout.XYM with String = js.native
+    /* "XYM" */ val XYM: typings.ol.geometryLayoutMod.GeometryLayout.XYM & String = js.native
     
-    /* "XYZ" */ val XYZ: typings.ol.geometryLayoutMod.GeometryLayout.XYZ with String = js.native
+    /* "XYZ" */ val XYZ: typings.ol.geometryLayoutMod.GeometryLayout.XYZ & String = js.native
     
-    /* "XYZM" */ val XYZM: typings.ol.geometryLayoutMod.GeometryLayout.XYZM with String = js.native
+    /* "XYZM" */ val XYZM: typings.ol.geometryLayoutMod.GeometryLayout.XYZM & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object geometryLayoutMod {
   object GeometryLayout extends StObject {
     
     @js.native
-    sealed trait XY extends GeometryLayout
+    sealed trait XY
+      extends StObject
+         with GeometryLayout
     
     @js.native
-    sealed trait XYM extends GeometryLayout
+    sealed trait XYM
+      extends StObject
+         with GeometryLayout
     
     @js.native
-    sealed trait XYZ extends GeometryLayout
+    sealed trait XYZ
+      extends StObject
+         with GeometryLayout
     
     @js.native
-    sealed trait XYZM extends GeometryLayout
+    sealed trait XYZM
+      extends StObject
+         with GeometryLayout
   }
 }

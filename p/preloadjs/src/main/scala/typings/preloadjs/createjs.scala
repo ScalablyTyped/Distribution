@@ -3,13 +3,14 @@ package typings.preloadjs
 import typings.createjsLib.createjs.EventDispatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createjs {
   
   @js.native
-  trait AbstractLoader extends EventDispatcher {
+  trait AbstractLoader
+    extends StObject
+       with EventDispatcher {
     
     // methods
     def cancel(): Unit = js.native
@@ -24,9 +25,9 @@ object createjs {
     def getLoadedItems(): js.Array[js.Object] = js.native
     
     def getResult(): js.Object = js.native
-    def getResult(value: js.UndefOr[scala.Nothing], rawResult: Boolean): js.Object = js.native
     def getResult(value: js.Any): js.Object = js.native
     def getResult(value: js.Any, rawResult: Boolean): js.Object = js.native
+    def getResult(value: Unit, rawResult: Boolean): js.Object = js.native
     
     def getTag(): js.Object = js.native
     
@@ -43,17 +44,15 @@ object createjs {
     var `type`: String = js.native
   }
   
-  @js.native
   trait AbstractMediaLoader extends StObject
   
-  @js.native
   trait AbstractRequest extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def load(): Unit = js.native
+    def load(): Unit
   }
   object AbstractRequest {
     
@@ -80,21 +79,22 @@ object createjs {
   type BinaryLoader = AbstractLoader
   
   @js.native
-  trait CSSLoader extends AbstractLoader {
+  trait CSSLoader
+    extends StObject
+       with AbstractLoader {
     
     // methods
     def canLoadItem(item: js.Object): Boolean = js.native
   }
   
-  @js.native
   trait ErrorEvent extends StObject {
     
     // properties
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var message: String = js.native
+    var message: String
     
-    var title: String = js.native
+    var title: String
   }
   object ErrorEvent {
     
@@ -126,37 +126,36 @@ object createjs {
   
   type JavaScriptLoader = AbstractLoader
   
-  @js.native
   trait LoadItem extends StObject {
     
     // properties
-    var callback: String = js.native
+    var callback: String
     
-    var crossOrigin: Boolean = js.native
+    var crossOrigin: Boolean
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var id: String = js.native
+    var id: String
     
-    var loadTimeout: Double = js.native
+    var loadTimeout: Double
     
-    var maintainOrder: Boolean = js.native
+    var maintainOrder: Boolean
     
-    var method: String = js.native
+    var method: String
     
-    var mimeType: String = js.native
+    var mimeType: String
     
-    def set(props: js.Object): LoadItem = js.native
+    def set(props: js.Object): LoadItem
     
-    var src: String = js.native
+    var src: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var values: js.Object = js.native
+    var values: js.Object
     
-    var withCredentials: Boolean = js.native
+    var withCredentials: Boolean
   }
   object LoadItem {
     
@@ -230,7 +229,9 @@ object createjs {
   }
   
   @js.native
-  trait LoadQueue extends AbstractLoader {
+  trait LoadQueue
+    extends StObject
+       with AbstractLoader {
     
     // methods
     def close(): Unit = js.native
@@ -240,26 +241,26 @@ object createjs {
     def installPlugin(plugin: js.Any): Unit = js.native
     
     def loadFile(file: String): Unit = js.native
-    def loadFile(file: String, loadNow: js.UndefOr[scala.Nothing], basePath: String): Unit = js.native
     def loadFile(file: String, loadNow: Boolean): Unit = js.native
     def loadFile(file: String, loadNow: Boolean, basePath: String): Unit = js.native
+    def loadFile(file: String, loadNow: Unit, basePath: String): Unit = js.native
     def loadFile(file: js.Object): Unit = js.native
-    def loadFile(file: js.Object, loadNow: js.UndefOr[scala.Nothing], basePath: String): Unit = js.native
     def loadFile(file: js.Object, loadNow: Boolean): Unit = js.native
     def loadFile(file: js.Object, loadNow: Boolean, basePath: String): Unit = js.native
+    def loadFile(file: js.Object, loadNow: Unit, basePath: String): Unit = js.native
     
     def loadManifest(manifest: String): Unit = js.native
-    def loadManifest(manifest: String, loadNow: js.UndefOr[scala.Nothing], basePath: String): Unit = js.native
     def loadManifest(manifest: String, loadNow: Boolean): Unit = js.native
     def loadManifest(manifest: String, loadNow: Boolean, basePath: String): Unit = js.native
-    def loadManifest(manifest: js.Array[_]): Unit = js.native
-    def loadManifest(manifest: js.Array[_], loadNow: js.UndefOr[scala.Nothing], basePath: String): Unit = js.native
-    def loadManifest(manifest: js.Array[_], loadNow: Boolean): Unit = js.native
-    def loadManifest(manifest: js.Array[_], loadNow: Boolean, basePath: String): Unit = js.native
+    def loadManifest(manifest: String, loadNow: Unit, basePath: String): Unit = js.native
+    def loadManifest(manifest: js.Array[js.Any]): Unit = js.native
+    def loadManifest(manifest: js.Array[js.Any], loadNow: Boolean): Unit = js.native
+    def loadManifest(manifest: js.Array[js.Any], loadNow: Boolean, basePath: String): Unit = js.native
+    def loadManifest(manifest: js.Array[js.Any], loadNow: Unit, basePath: String): Unit = js.native
     def loadManifest(manifest: js.Object): Unit = js.native
-    def loadManifest(manifest: js.Object, loadNow: js.UndefOr[scala.Nothing], basePath: String): Unit = js.native
     def loadManifest(manifest: js.Object, loadNow: Boolean): Unit = js.native
     def loadManifest(manifest: js.Object, loadNow: Boolean, basePath: String): Unit = js.native
+    def loadManifest(manifest: js.Object, loadNow: Unit, basePath: String): Unit = js.native
     
     // properties
     var maintainScriptOrder: Boolean = js.native
@@ -269,7 +270,7 @@ object createjs {
     def registerLoader(loader: AbstractLoader): Unit = js.native
     
     def remove(idsOrUrls: String): Unit = js.native
-    def remove(idsOrUrls: js.Array[_]): Unit = js.native
+    def remove(idsOrUrls: js.Array[js.Any]): Unit = js.native
     
     def removeAll(): Unit = js.native
     
@@ -293,21 +294,18 @@ object createjs {
   
   type ManifestLoader = AbstractLoader
   
-  @js.native
   trait MediaTagRequest extends StObject
   
-  @js.native
   trait PreloadJS extends StObject
   
-  @js.native
   trait ProgressEvent extends StObject {
     
     // properties
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object ProgressEvent {
     
@@ -331,7 +329,6 @@ object createjs {
     }
   }
   
-  @js.native
   trait RequestUtils extends StObject
   
   type SVGLoader = AbstractLoader
@@ -340,7 +337,6 @@ object createjs {
   
   type SpriteSheetLoader = AbstractLoader
   
-  @js.native
   trait TagRequest extends StObject
   
   type TextLoader = AbstractLoader
@@ -348,7 +344,9 @@ object createjs {
   type VideoLoader = AbstractLoader
   
   @js.native
-  trait XHRRequest extends AbstractLoader {
+  trait XHRRequest
+    extends StObject
+       with AbstractLoader {
     
     // methods
     def getAllResponseHeaders(): String = js.native

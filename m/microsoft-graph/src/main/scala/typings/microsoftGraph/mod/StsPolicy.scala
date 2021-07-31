@@ -2,25 +2,25 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StsPolicy extends PolicyBase {
+trait StsPolicy
+  extends StObject
+     with PolicyBase {
   
-  var appliesTo: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var appliesTo: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the
     * definition differs for each derived policy type. Required.
     */
-  var definition: js.UndefOr[js.Array[String]] = js.native
+  var definition: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set to true, activates this policy. There can be many policies for the same policy type, but only one can be
     * activated as the organization default. Optional, default value is false.
     */
-  var isOrganizationDefault: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isOrganizationDefault: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object StsPolicy {
   

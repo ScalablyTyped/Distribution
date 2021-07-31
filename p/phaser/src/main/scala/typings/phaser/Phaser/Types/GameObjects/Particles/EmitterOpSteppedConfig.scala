@@ -2,29 +2,29 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines an operation yielding a value incremented by steps across a range.
   */
-@js.native
-trait EmitterOpSteppedConfig extends _EmitterOpOnEmitType {
+trait EmitterOpSteppedConfig
+  extends StObject
+     with _EmitterOpOnEmitType {
   
   /**
     * The ending value.
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * The starting value.
     */
-  var start: Double = js.native
+  var start: Double
   
   /**
     * The number of steps between start and end.
     */
-  var steps: Double = js.native
+  var steps: Double
 }
 object EmitterOpSteppedConfig {
   

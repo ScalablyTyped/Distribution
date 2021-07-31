@@ -2,15 +2,13 @@ package typings.paystack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var token: String = js.native
+  var token: String
 }
 object Code {
   

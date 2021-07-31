@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,11 +21,15 @@ object ItemType extends StObject {
     * An appointment item.
     */
   @js.native
-  sealed trait Appointment extends ItemType
+  sealed trait Appointment
+    extends StObject
+       with ItemType
   
   /**
     * An email, meeting request, meeting response, or meeting cancellation.
     */
   @js.native
-  sealed trait Message extends ItemType
+  sealed trait Message
+    extends StObject
+       with ItemType
 }

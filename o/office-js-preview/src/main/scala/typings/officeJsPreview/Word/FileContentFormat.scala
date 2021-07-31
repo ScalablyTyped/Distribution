@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait FileContentFormat extends StObject
 object FileContentFormat extends StObject {
   
   @js.native
-  sealed trait base64 extends FileContentFormat
+  sealed trait base64
+    extends StObject
+       with FileContentFormat
   
   @js.native
-  sealed trait html extends FileContentFormat
+  sealed trait html
+    extends StObject
+       with FileContentFormat
   
   @js.native
-  sealed trait ooxml extends FileContentFormat
+  sealed trait ooxml
+    extends StObject
+       with FileContentFormat
 }

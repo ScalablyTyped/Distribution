@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransitionEventInit extends EventInit {
+trait TransitionEventInit
+  extends StObject
+     with EventInit {
   
-  var elapsedTime: js.UndefOr[Double] = js.native
+  var elapsedTime: js.UndefOr[Double] = js.undefined
   
-  var propertyName: js.UndefOr[java.lang.String] = js.native
+  var propertyName: js.UndefOr[java.lang.String] = js.undefined
   
-  var pseudoElement: js.UndefOr[java.lang.String] = js.native
+  var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
 }
 object TransitionEventInit {
   

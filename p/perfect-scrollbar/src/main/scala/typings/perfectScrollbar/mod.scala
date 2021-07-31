@@ -6,98 +6,209 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("perfect-scrollbar", JSImport.Default)
   @js.native
-  class default protected () extends PerfectScrollbar {
+  class default protected ()
+    extends StObject
+       with PerfectScrollbar {
     def this(element: String) = this()
     def this(element: Element) = this()
     def this(element: String, options: Options) = this()
     def this(element: Element, options: Options) = this()
-  }
-  
-  @js.native
-  trait PerfectScrollbar extends StObject {
     
+    /* CompleteClass */
     var containerHeight: Double = js.native
     
+    /* CompleteClass */
     var containerWidth: Double = js.native
     
+    /* CompleteClass */
     var contentHeight: Double = js.native
     
+    /* CompleteClass */
     var contentWidth: Double = js.native
     
-    def destroy(): Unit = js.native
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
     
+    /* CompleteClass */
     var element: HTMLElement = js.native
     
+    /* CompleteClass */
     var isAlive: Boolean = js.native
     
+    /* CompleteClass */
     var isNegativeScroll: Boolean = js.native
     
+    /* CompleteClass */
     var isRtl: Boolean = js.native
     
+    /* CompleteClass */
     var isScrollbarXUsingBottom: Boolean = js.native
     
+    /* CompleteClass */
     var isScrollbarYUsingBottom: Boolean = js.native
     
+    /* CompleteClass */
     var lastScrollLeft: Boolean = js.native
     
+    /* CompleteClass */
     var lastScrollTop: Boolean = js.native
     
+    /* CompleteClass */
     var negativeScrollAdjustment: Double = js.native
     
+    /* CompleteClass */
     var railBorderXWidth: Double = js.native
     
+    /* CompleteClass */
     var railBorderYWidth: Double = js.native
     
+    /* CompleteClass */
     var railXMarginWidth: Double = js.native
     
+    /* CompleteClass */
     var railXRatio: Double = js.native
     
+    /* CompleteClass */
     var railXWidth: Double = js.native
     
+    /* CompleteClass */
     var railYHeight: Double = js.native
     
+    /* CompleteClass */
     var railYMarginHeight: Double = js.native
     
+    /* CompleteClass */
     var railYRatio: Double = js.native
     
+    /* CompleteClass */
     var reach: X = js.native
     
+    /* CompleteClass */
     var scrollbarX: HTMLElement = js.native
     
+    /* CompleteClass */
     var scrollbarXActive: Boolean = js.native
     
+    /* CompleteClass */
     var scrollbarXBottom: Double = js.native
     
+    /* CompleteClass */
     var scrollbarXLeft: Double = js.native
     
+    /* CompleteClass */
     var scrollbarXRail: HTMLElement = js.native
     
+    /* CompleteClass */
     var scrollbarXWidth: Double = js.native
     
+    /* CompleteClass */
     var scrollbarY: HTMLElement = js.native
     
+    /* CompleteClass */
     var scrollbarYActive: Boolean = js.native
     
+    /* CompleteClass */
     var scrollbarYHeight: Double = js.native
     
-    var scrollbarYOuterWidth: js.UndefOr[Double] = js.native
-    
+    /* CompleteClass */
     var scrollbarYRail: HTMLElement = js.native
     
+    /* CompleteClass */
     var scrollbarYRight: Double = js.native
     
+    /* CompleteClass */
     var scrollbarYTop: Double = js.native
     
+    /* CompleteClass */
     var settings: Options = js.native
     
-    def update(): Unit = js.native
+    /* CompleteClass */
+    override def update(): Unit = js.native
+  }
+  
+  trait PerfectScrollbar extends StObject {
+    
+    var containerHeight: Double
+    
+    var containerWidth: Double
+    
+    var contentHeight: Double
+    
+    var contentWidth: Double
+    
+    def destroy(): Unit
+    
+    var element: HTMLElement
+    
+    var isAlive: Boolean
+    
+    var isNegativeScroll: Boolean
+    
+    var isRtl: Boolean
+    
+    var isScrollbarXUsingBottom: Boolean
+    
+    var isScrollbarYUsingBottom: Boolean
+    
+    var lastScrollLeft: Boolean
+    
+    var lastScrollTop: Boolean
+    
+    var negativeScrollAdjustment: Double
+    
+    var railBorderXWidth: Double
+    
+    var railBorderYWidth: Double
+    
+    var railXMarginWidth: Double
+    
+    var railXRatio: Double
+    
+    var railXWidth: Double
+    
+    var railYHeight: Double
+    
+    var railYMarginHeight: Double
+    
+    var railYRatio: Double
+    
+    var reach: X
+    
+    var scrollbarX: HTMLElement
+    
+    var scrollbarXActive: Boolean
+    
+    var scrollbarXBottom: Double
+    
+    var scrollbarXLeft: Double
+    
+    var scrollbarXRail: HTMLElement
+    
+    var scrollbarXWidth: Double
+    
+    var scrollbarY: HTMLElement
+    
+    var scrollbarYActive: Boolean
+    
+    var scrollbarYHeight: Double
+    
+    var scrollbarYOuterWidth: js.UndefOr[Double] = js.undefined
+    
+    var scrollbarYRail: HTMLElement
+    
+    var scrollbarYRight: Double
+    
+    var scrollbarYTop: Double
+    
+    var settings: Options
+    
+    def update(): Unit
   }
   object PerfectScrollbar {
     
@@ -145,32 +256,31 @@ object mod {
       __obj.asInstanceOf[PerfectScrollbar]
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var handlers: js.UndefOr[js.Array[String]] = js.native
+      var handlers: js.UndefOr[js.Array[String]] = js.undefined
       
-      var maxScrollbarLength: js.UndefOr[Double] = js.native
+      var maxScrollbarLength: js.UndefOr[Double] = js.undefined
       
-      var minScrollbarLength: js.UndefOr[Double] = js.native
+      var minScrollbarLength: js.UndefOr[Double] = js.undefined
       
-      var scrollXMarginOffset: js.UndefOr[Double] = js.native
+      var scrollXMarginOffset: js.UndefOr[Double] = js.undefined
       
-      var scrollYMarginOffset: js.UndefOr[Double] = js.native
+      var scrollYMarginOffset: js.UndefOr[Double] = js.undefined
       
-      var scrollingThreshold: js.UndefOr[Double] = js.native
+      var scrollingThreshold: js.UndefOr[Double] = js.undefined
       
-      var suppressScrollX: js.UndefOr[Boolean] = js.native
+      var suppressScrollX: js.UndefOr[Boolean] = js.undefined
       
-      var suppressScrollY: js.UndefOr[Boolean] = js.native
+      var suppressScrollY: js.UndefOr[Boolean] = js.undefined
       
-      var swipeEasing: js.UndefOr[Boolean] = js.native
+      var swipeEasing: js.UndefOr[Boolean] = js.undefined
       
-      var useBothWheelAxes: js.UndefOr[Boolean] = js.native
+      var useBothWheelAxes: js.UndefOr[Boolean] = js.undefined
       
-      var wheelPropagation: js.UndefOr[Boolean] = js.native
+      var wheelPropagation: js.UndefOr[Boolean] = js.undefined
       
-      var wheelSpeed: js.UndefOr[Double] = js.native
+      var wheelSpeed: js.UndefOr[Double] = js.undefined
     }
     object Options {
       

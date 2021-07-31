@@ -2,107 +2,107 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProtectInfo extends _WSKeys {
+trait ProtectInfo
+  extends StObject
+     with _WSKeys {
   
   /**
     * Filter
     * @default: false
     */
-  var autoFilter: js.UndefOr[Boolean] = js.native
+  var autoFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Delete columns
     * @default: false
     */
-  var deleteColumns: js.UndefOr[Boolean] = js.native
+  var deleteColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Delete rows
     * @default: false
     */
-  var deleteRows: js.UndefOr[Boolean] = js.native
+  var deleteRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Format cells
     * @default: false
     */
-  var formatCells: js.UndefOr[Boolean] = js.native
+  var formatCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Format columns
     * @default: false
     */
-  var formatColumns: js.UndefOr[Boolean] = js.native
+  var formatColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Format rows
     * @default: false
     */
-  var formatRows: js.UndefOr[Boolean] = js.native
+  var formatRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Insert columns
     * @default: false
     */
-  var insertColumns: js.UndefOr[Boolean] = js.native
+  var insertColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Insert hyperlinks
     * @default: false
     */
-  var insertHyperlinks: js.UndefOr[Boolean] = js.native
+  var insertHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Insert rows
     * @default: false
     */
-  var insertRows: js.UndefOr[Boolean] = js.native
+  var insertRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Edit objects
     * @default: true
     */
-  var objects: js.UndefOr[Boolean] = js.native
+  var objects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The password for formats that support password-protected sheets
     * (XLSX/XLSB/XLS). The writer uses the XOR obfuscation method.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Use PivotTable reports
     * @default: false
     */
-  var pivotTables: js.UndefOr[Boolean] = js.native
+  var pivotTables: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Edit scenarios
     * @default: true
     */
-  var scenarios: js.UndefOr[Boolean] = js.native
+  var scenarios: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select locked cells
     * @default: true
     */
-  var selectLockedCells: js.UndefOr[Boolean] = js.native
+  var selectLockedCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select unlocked cells
     * @default: true
     */
-  var selectUnlockedCells: js.UndefOr[Boolean] = js.native
+  var selectUnlockedCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sort
     * @default: false
     */
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object ProtectInfo {
   

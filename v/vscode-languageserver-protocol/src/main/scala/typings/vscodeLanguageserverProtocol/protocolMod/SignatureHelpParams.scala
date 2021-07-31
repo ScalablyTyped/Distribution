@@ -4,12 +4,11 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpParams
-  extends TextDocumentPositionParams
+  extends StObject
+     with TextDocumentPositionParams
      with WorkDoneProgressParams {
   
   /**
@@ -18,7 +17,7 @@ trait SignatureHelpParams
     *
     * @since 3.15.0
     */
-  var context: js.UndefOr[SignatureHelpContext] = js.native
+  var context: js.UndefOr[SignatureHelpContext] = js.undefined
 }
 object SignatureHelpParams {
   

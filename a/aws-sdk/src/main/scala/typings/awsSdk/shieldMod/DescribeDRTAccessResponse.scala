@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDRTAccessResponse extends StObject {
   
   /**
     * The list of Amazon S3 buckets accessed by the DRT.
     */
-  var LogBucketList: js.UndefOr[typings.awsSdk.shieldMod.LogBucketList] = js.native
+  var LogBucketList: js.UndefOr[typings.awsSdk.shieldMod.LogBucketList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role the DRT used to access your AWS account.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.shieldMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.shieldMod.RoleArn] = js.undefined
 }
 object DescribeDRTAccessResponse {
   

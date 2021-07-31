@@ -2,17 +2,15 @@ package typings.tizenCommonWeb.tizenMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAPIError extends StObject {
   
   /**
     * 16-bit error code.
     * Possible values are defined in [DOMException](http://www.w3.org/TR/dom/#domexception).
     */
-  val code: Double = js.native
+  val code: Double
   
   /**
     * An error message that describes the details of the error encountered.
@@ -20,7 +18,7 @@ trait WebAPIError extends StObject {
     * This attribute is not intended to be used directly in the user interfaces
     * as it is mainly intended to be useful for developers rather than end users.
     */
-  val message: String = js.native
+  val message: String
   
   /**
     * An error type. The name attribute must return the value it had been initialized with.
@@ -33,7 +31,7 @@ trait WebAPIError extends StObject {
     * - VerificationError  An error occurred in authentication and so the requested method cannot be completed
     *  For other possible values of this attribute, see the values defined in [DOM error names](http://www.w3.org/TR/dom/#error-names-0)
     */
-  val name: String = js.native
+  val name: String
 }
 object WebAPIError {
   

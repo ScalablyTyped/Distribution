@@ -2,31 +2,29 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProgressCircularConfig extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var durationIndeterminate: js.UndefOr[Double] = js.native
+  var durationIndeterminate: js.UndefOr[Double] = js.undefined
   
   var easeFn: js.UndefOr[
     js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
-  ] = js.native
+  ] = js.undefined
   
   var easeFnIndeterminate: js.UndefOr[
     js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
-  ] = js.native
+  ] = js.undefined
   
-  var endIndeterminate: js.UndefOr[Double] = js.native
+  var endIndeterminate: js.UndefOr[Double] = js.undefined
   
-  var progressSize: js.UndefOr[Double] = js.native
+  var progressSize: js.UndefOr[Double] = js.undefined
   
-  var startIndeterminate: js.UndefOr[Double] = js.native
+  var startIndeterminate: js.UndefOr[Double] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object IProgressCircularConfig {
   

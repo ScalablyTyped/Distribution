@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * An Amazon DynamoDB table location.
     */
-  var DynamoDB: js.UndefOr[CodeGenNodeArgs] = js.native
+  var DynamoDB: js.UndefOr[CodeGenNodeArgs] = js.undefined
   
   /**
     * A JDBC location.
     */
-  var Jdbc: js.UndefOr[CodeGenNodeArgs] = js.native
+  var Jdbc: js.UndefOr[CodeGenNodeArgs] = js.undefined
   
   /**
     * An Amazon Simple Storage Service (Amazon S3) location.
     */
-  var S3: js.UndefOr[CodeGenNodeArgs] = js.native
+  var S3: js.UndefOr[CodeGenNodeArgs] = js.undefined
 }
 object Location {
   

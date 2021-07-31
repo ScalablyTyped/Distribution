@@ -4,22 +4,22 @@ import typings.marked.markedStrings.br
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Br extends Token {
+trait Br
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var `type`: br = js.native
+  var `type`: br
 }
 object Br {
   
   @scala.inline
-  def apply(raw: String, `type`: br): Br = {
+  def apply(raw: String): Br = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("br")
     __obj.asInstanceOf[Br]
   }
   

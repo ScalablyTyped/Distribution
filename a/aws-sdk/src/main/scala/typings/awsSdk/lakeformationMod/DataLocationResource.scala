@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataLocationResource extends StObject {
   
   /**
     * The identifier for the Data Catalog where the location is registered with AWS Lake Formation. By default, it is the account ID of the caller.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that uniquely identifies the data location resource.
     */
-  var ResourceArn: ResourceArnString = js.native
+  var ResourceArn: ResourceArnString
 }
 object DataLocationResource {
   

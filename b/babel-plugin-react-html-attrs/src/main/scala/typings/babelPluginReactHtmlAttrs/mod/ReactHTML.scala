@@ -61,246 +61,244 @@ import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // React.DOM
 // ----------------------------------------------------------------------
-@js.native
 trait ReactHTML extends StObject {
   
-  var a: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement] = js.native
+  var a: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]
   
-  var abbr: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var abbr: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var address: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var address: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var area: DetailedHTMLFactory[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement] = js.native
+  var area: DetailedHTMLFactory[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]
   
-  var article: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var article: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var aside: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var aside: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var audio: DetailedHTMLFactory[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement] = js.native
+  var audio: DetailedHTMLFactory[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]
   
-  var b: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var b: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var base: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement] = js.native
+  var base: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]
   
-  var bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
   
-  var body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement] = js.native
+  var body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
   
-  var br: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement] = js.native
+  var br: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement]
   
-  var button: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement] = js.native
+  var button: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
   
-  var canvas: DetailedHTMLFactory[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement] = js.native
+  var canvas: DetailedHTMLFactory[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]
   
-  var caption: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var caption: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var cite: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var cite: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var code: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var code: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var col: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+  var col: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
   
-  var colgroup: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement] = js.native
+  var colgroup: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
   
-  var data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement] = js.native
+  var data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]
   
-  var datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement] = js.native
+  var datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
   
-  var dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]
   
-  var details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement]
   
-  var dfn: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var dfn: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var dialog: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement] = js.native
+  var dialog: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]
   
-  var div: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
+  var div: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement]
   
-  var dl: DetailedHTMLFactory[HTMLAttributes[HTMLDListElement], HTMLDListElement] = js.native
+  var dl: DetailedHTMLFactory[HTMLAttributes[HTMLDListElement], HTMLDListElement]
   
-  var dt: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var dt: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var em: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var em: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var embed: DetailedHTMLFactory[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement] = js.native
+  var embed: DetailedHTMLFactory[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]
   
-  var fieldset: DetailedHTMLFactory[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement] = js.native
+  var fieldset: DetailedHTMLFactory[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]
   
-  var figcaption: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var figcaption: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var figure: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var figure: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var footer: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var footer: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var form: DetailedHTMLFactory[FormHTMLAttributes[HTMLFormElement], HTMLFormElement] = js.native
+  var form: DetailedHTMLFactory[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]
   
-  var h1: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h1: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var h2: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h2: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var h3: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h3: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var h4: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h4: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var h5: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h5: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var h6: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement] = js.native
+  var h6: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
   
-  var head: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLHeadElement] = js.native
+  var head: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLHeadElement]
   
-  var header: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var header: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var hgroup: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var hgroup: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var hr: DetailedHTMLFactory[HTMLAttributes[HTMLHRElement], HTMLHRElement] = js.native
+  var hr: DetailedHTMLFactory[HTMLAttributes[HTMLHRElement], HTMLHRElement]
   
-  var html: DetailedHTMLFactory[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement] = js.native
+  var html: DetailedHTMLFactory[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]
   
-  var i: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var i: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var iframe: DetailedHTMLFactory[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement] = js.native
+  var iframe: DetailedHTMLFactory[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]
   
-  var img: DetailedHTMLFactory[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement] = js.native
+  var img: DetailedHTMLFactory[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
   
-  var input: DetailedHTMLFactory[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  var input: DetailedHTMLFactory[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]
   
-  var ins: DetailedHTMLFactory[InsHTMLAttributes[HTMLModElement], HTMLModElement] = js.native
+  var ins: DetailedHTMLFactory[InsHTMLAttributes[HTMLModElement], HTMLModElement]
   
-  var kbd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var kbd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var keygen: DetailedHTMLFactory[KeygenHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var keygen: DetailedHTMLFactory[KeygenHTMLAttributes[HTMLElement], HTMLElement]
   
-  var label: DetailedHTMLFactory[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement] = js.native
+  var label: DetailedHTMLFactory[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]
   
-  var legend: DetailedHTMLFactory[HTMLAttributes[HTMLLegendElement], HTMLLegendElement] = js.native
+  var legend: DetailedHTMLFactory[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]
   
-  var li: DetailedHTMLFactory[LiHTMLAttributes[HTMLLIElement], HTMLLIElement] = js.native
+  var li: DetailedHTMLFactory[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]
   
-  var link: DetailedHTMLFactory[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement] = js.native
+  var link: DetailedHTMLFactory[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
   
-  var main: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var main: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var map: DetailedHTMLFactory[MapHTMLAttributes[HTMLMapElement], HTMLMapElement] = js.native
+  var map: DetailedHTMLFactory[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
   
-  var mark: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var mark: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var menu: DetailedHTMLFactory[MenuHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var menu: DetailedHTMLFactory[MenuHTMLAttributes[HTMLElement], HTMLElement]
   
-  var menuitem: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var menuitem: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var meta: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement] = js.native
+  var meta: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
   
-  var meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement]
   
-  var nav: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var nav: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var noscript: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var noscript: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var `object`: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement] = js.native
+  var `object`: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]
   
-  var ol: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement] = js.native
+  var ol: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]
   
-  var optgroup: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement] = js.native
+  var optgroup: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]
   
-  var option: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement] = js.native
+  var option: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
   
-  var output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement]
   
-  var p: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement] = js.native
+  var p: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
   
-  var param: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement] = js.native
+  var param: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]
   
-  var picture: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var picture: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var pre: DetailedHTMLFactory[HTMLAttributes[HTMLPreElement], HTMLPreElement] = js.native
+  var pre: DetailedHTMLFactory[HTMLAttributes[HTMLPreElement], HTMLPreElement]
   
-  var progress: DetailedHTMLFactory[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement] = js.native
+  var progress: DetailedHTMLFactory[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]
   
-  var q: DetailedHTMLFactory[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement] = js.native
+  var q: DetailedHTMLFactory[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
   
-  var rp: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var rp: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var rt: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var rt: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var ruby: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var ruby: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var s: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var s: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var samp: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var samp: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var script: DetailedHTMLFactory[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement] = js.native
+  var script: DetailedHTMLFactory[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]
   
-  var section: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var section: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var select: DetailedHTMLFactory[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement] = js.native
+  var select: DetailedHTMLFactory[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
   
-  var slot: DetailedHTMLFactory[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement] = js.native
+  var slot: DetailedHTMLFactory[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]
   
-  var small: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var small: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var source: DetailedHTMLFactory[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement] = js.native
+  var source: DetailedHTMLFactory[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]
   
-  var span: DetailedHTMLFactory[HTMLAttributes[HTMLSpanElement], HTMLSpanElement] = js.native
+  var span: DetailedHTMLFactory[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]
   
-  var strong: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var strong: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var style: DetailedHTMLFactory[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement] = js.native
+  var style: DetailedHTMLFactory[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]
   
-  var sub: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var sub: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var summary: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var summary: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var sup: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var sup: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var table: DetailedHTMLFactory[TableHTMLAttributes[HTMLTableElement], HTMLTableElement] = js.native
+  var table: DetailedHTMLFactory[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
   
-  var tbody: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  var tbody: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
   
-  var td: DetailedHTMLFactory[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement] = js.native
+  var td: DetailedHTMLFactory[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]
   
-  var template: DetailedHTMLFactory[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement] = js.native
+  var template: DetailedHTMLFactory[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]
   
-  var textarea: DetailedHTMLFactory[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement] = js.native
+  var textarea: DetailedHTMLFactory[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]
   
-  var tfoot: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  var tfoot: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
   
-  var th: DetailedHTMLFactory[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement] = js.native
+  var th: DetailedHTMLFactory[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]
   
-  var thead: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement] = js.native
+  var thead: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
   
-  var time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement]
   
-  var title: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement] = js.native
+  var title: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
   
-  var tr: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement] = js.native
+  var tr: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]
   
-  var track: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement] = js.native
+  var track: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]
   
-  var u: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var u: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var ul: DetailedHTMLFactory[HTMLAttributes[HTMLUListElement], HTMLUListElement] = js.native
+  var ul: DetailedHTMLFactory[HTMLAttributes[HTMLUListElement], HTMLUListElement]
   
-  var `var`: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var `var`: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var video: DetailedHTMLFactory[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement] = js.native
+  var video: DetailedHTMLFactory[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]
   
-  var wbr: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement] = js.native
+  var wbr: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var webview: DetailedHTMLFactory[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement] = js.native
+  var webview: DetailedHTMLFactory[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]
 }
 object ReactHTML {
   

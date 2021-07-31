@@ -4,29 +4,29 @@ import typings.actionsOnGoogle.argumentArgumentMod._Argument
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleRpcStatus extends _Argument {
+trait GoogleRpcStatus
+  extends StObject
+     with _Argument {
   
   /**
     * The status code, which should be an enum value of google.rpc.Code.
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of messages that carry the error details.  There is a common set of
     * message types for APIs to use.
     */
-  var details: js.UndefOr[js.Array[ApiClientObjectMap[_]]] = js.native
+  var details: js.UndefOr[js.Array[ApiClientObjectMap[js.Any]]] = js.undefined
   
   /**
     * A developer-facing error message, which should be in English. Any
     * user-facing error message should be localized and sent in the
     * google.rpc.Status.details field, or localized by the client.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object GoogleRpcStatus {
   
@@ -46,7 +46,7 @@ object GoogleRpcStatus {
     def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setDetails(value: js.Array[ApiClientObjectMap[_]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    def setDetails(value: js.Array[ApiClientObjectMap[js.Any]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)

@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,36 +12,50 @@ sealed trait EnumDWTCapImageFilter extends StObject
 object EnumDWTCapImageFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapImageFilter with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumDWTCapImageFilter & Double] = js.native
   
   @js.native
-  sealed trait TWIF_AUTO extends EnumDWTCapImageFilter
-  /* 1 */ val TWIF_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_AUTO with Double = js.native
+  sealed trait TWIF_AUTO
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 1 */ val TWIF_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_AUTO & Double = js.native
   
   /** Good for improving text. */
   @js.native
-  sealed trait TWIF_BANDPASS extends EnumDWTCapImageFilter
-  /* 3 */ val TWIF_BANDPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_BANDPASS with Double = js.native
+  sealed trait TWIF_BANDPASS
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 3 */ val TWIF_BANDPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_BANDPASS & Double = js.native
   
   @js.native
-  sealed trait TWIF_FINELINE extends EnumDWTCapImageFilter
-  /* 4 */ val TWIF_FINELINE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_FINELINE with Double = js.native
+  sealed trait TWIF_FINELINE
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 4 */ val TWIF_FINELINE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_FINELINE & Double = js.native
   
   /** Good for improving fine lines. */
   @js.native
-  sealed trait TWIF_HIGHPASS extends EnumDWTCapImageFilter
-  /* 4 */ val TWIF_HIGHPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_HIGHPASS with Double = js.native
+  sealed trait TWIF_HIGHPASS
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 4 */ val TWIF_HIGHPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_HIGHPASS & Double = js.native
   
   /** Good for halftone images. */
   @js.native
-  sealed trait TWIF_LOWPASS extends EnumDWTCapImageFilter
-  /* 2 */ val TWIF_LOWPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_LOWPASS with Double = js.native
+  sealed trait TWIF_LOWPASS
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 2 */ val TWIF_LOWPASS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_LOWPASS & Double = js.native
   
   @js.native
-  sealed trait TWIF_NONE extends EnumDWTCapImageFilter
-  /* 0 */ val TWIF_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_NONE with Double = js.native
+  sealed trait TWIF_NONE
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 0 */ val TWIF_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_NONE & Double = js.native
   
   @js.native
-  sealed trait TWIF_TEXT extends EnumDWTCapImageFilter
-  /* 3 */ val TWIF_TEXT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_TEXT with Double = js.native
+  sealed trait TWIF_TEXT
+    extends StObject
+       with EnumDWTCapImageFilter
+  /* 3 */ val TWIF_TEXT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapImageFilter.TWIF_TEXT & Double = js.native
 }

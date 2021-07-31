@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartData extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  def BreakLink(): Unit = js.native
+  def BreakLink(): Unit
   
-  val IsLinked: Boolean = js.native
+  val IsLinked: Boolean
   
   @JSName("PowerPoint.ChartData_typekey")
-  var PowerPointDotChartData_typekey: ChartData = js.native
+  var PowerPointDotChartData_typekey: ChartData
   
-  val Workbook: js.Any = js.native
+  val Workbook: js.Any
 }
 object ChartData {
   

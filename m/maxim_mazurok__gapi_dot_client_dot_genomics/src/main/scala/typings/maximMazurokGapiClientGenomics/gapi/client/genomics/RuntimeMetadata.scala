@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeMetadata extends StObject {
   
   /** Execution information specific to Google Compute Engine. */
-  var computeEngine: js.UndefOr[ComputeEngine] = js.native
+  var computeEngine: js.UndefOr[ComputeEngine] = js.undefined
 }
 object RuntimeMetadata {
   

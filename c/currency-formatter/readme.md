@@ -10,9 +10,9 @@ A simple Javascript utility that helps you to display currency properly
 | ------------------ | :-------------: |
 | Full name          | currency-formatter |
 | Keywords           | format, currency, money |
-| # releases         | 6 |
-| # dependents       | 61 |
-| # downloads        | 3222408 |
+| # releases         | 4 |
+| # dependents       | 64 |
+| # downloads        | 3556065 |
 | # stars            | 8 |
 
 ## Links

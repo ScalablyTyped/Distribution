@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFilter extends StObject {
   
   /** Optional. The address name, such as "Mountain View" or "Bay Area". */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The distance_in_miles is applied when the location being searched for is identified as a city or smaller. When the location being searched for is a state or larger, this
     * field is ignored.
     */
-  var distanceInMiles: js.UndefOr[Double] = js.native
+  var distanceInMiles: js.UndefOr[Double] = js.undefined
   
   /** Optional. The latitude and longitude of the geographic center from which to search. This field's ignored if `address` is provided. */
-  var latLng: js.UndefOr[LatLng] = js.native
+  var latLng: js.UndefOr[LatLng] = js.undefined
   
   /**
     * Optional. CLDR region code of the country/region of the address. This is used to address ambiguity of the user-input location, for example, "Liverpool" against "Liverpool, NY, US"
     * or "Liverpool, UK". Set this field if all the jobs to search against are from a same region, or jobs are world-wide, but the job seeker is from a specific region. See
     * http://cldr.unicode.org/ and http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html for details. Example: "CH" for Switzerland.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Allows the client to return jobs without a set location, specifically, telecommuting jobs (telecommuting is considered by the service as a special location.
@@ -34,7 +32,7 @@ trait LocationFilter extends StObject {
     * telecommuting jobs, or it can be combined with another location filter to search for a combination of job locations, such as "Mountain View" or "telecommuting" jobs. However, when
     * used in combination with other location filters, telecommuting jobs can be treated as less relevant than other jobs in the search response.
     */
-  var telecommutePreference: js.UndefOr[String] = js.native
+  var telecommutePreference: js.UndefOr[String] = js.undefined
 }
 object LocationFilter {
   

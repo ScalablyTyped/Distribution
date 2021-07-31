@@ -3,23 +3,28 @@ package typings.minio
 import typings.minio.mod._Region
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minioStrings {
   
   @js.native
-  sealed trait `ap-northeast-1` extends _Region
+  sealed trait `ap-northeast-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   
   @js.native
-  sealed trait `ap-southeast-1` extends _Region
+  sealed trait `ap-southeast-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `ap-southeast-1`: `ap-southeast-1` = "ap-southeast-1".asInstanceOf[`ap-southeast-1`]
   
   @js.native
-  sealed trait `ap-southeast-2` extends _Region
+  sealed trait `ap-southeast-2`
+    extends StObject
+       with _Region
   @scala.inline
   def `ap-southeast-2`: `ap-southeast-2` = "ap-southeast-2".asInstanceOf[`ap-southeast-2`]
   
@@ -29,7 +34,9 @@ object minioStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait `cn-north-1` extends _Region
+  sealed trait `cn-north-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `cn-north-1`: `cn-north-1` = "cn-north-1".asInstanceOf[`cn-north-1`]
   
@@ -49,12 +56,16 @@ object minioStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `eu-central-1` extends _Region
+  sealed trait `eu-central-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
   
   @js.native
-  sealed trait `eu-west-1` extends _Region
+  sealed trait `eu-west-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
   
@@ -89,22 +100,30 @@ object minioStrings {
   def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
-  sealed trait `sa-east-1` extends _Region
+  sealed trait `sa-east-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   
   @js.native
-  sealed trait `us-east-1` extends _Region
+  sealed trait `us-east-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `us-east-1`: `us-east-1` = "us-east-1".asInstanceOf[`us-east-1`]
   
   @js.native
-  sealed trait `us-west-1` extends _Region
+  sealed trait `us-west-1`
+    extends StObject
+       with _Region
   @scala.inline
   def `us-west-1`: `us-west-1` = "us-west-1".asInstanceOf[`us-west-1`]
   
   @js.native
-  sealed trait `us-west-2` extends _Region
+  sealed trait `us-west-2`
+    extends StObject
+       with _Region
   @scala.inline
   def `us-west-2`: `us-west-2` = "us-west-2".asInstanceOf[`us-west-2`]
   

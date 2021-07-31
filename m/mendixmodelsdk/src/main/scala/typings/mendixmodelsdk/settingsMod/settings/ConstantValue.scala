@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ConstantValue")
@@ -49,9 +48,8 @@ object ConstantValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ConstantValue.create")
-  @js.native
-  def create(model: IModel): ConstantValue = js.native
+  @scala.inline
+  def create(model: IModel): ConstantValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConstantValue]
   
   /**
     * Creates and returns a new ConstantValue instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object ConstantValue {
     * of the parent Configuration element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ConstantValue.createIn")
-  @js.native
-  def createIn(container: Configuration): ConstantValue = js.native
+  @scala.inline
+  def createIn(container: Configuration): ConstantValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConstantValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ConstantValue.structureTypeName")

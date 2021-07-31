@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventResult extends StObject {
   
   /**
     * Date/time of the event.
     */
-  var eventTimestamp: js.UndefOr[String] = js.native
+  var eventTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Reason for failure, if the event failed.
     */
-  var failureDescription: js.UndefOr[String] = js.native
+  var failureDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Event status.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Failure status code, if the event failed.
     */
-  var vendorFailureStatusCode: js.UndefOr[String] = js.native
+  var vendorFailureStatusCode: js.UndefOr[String] = js.undefined
 }
 object EventResult {
   

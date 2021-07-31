@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Media.Protection.PlayReady.NDMediaStreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamType extends StObject {
   
-  /** The stream identifier for the media stream. */ var returnValue: Double = js.native
+  /** The stream identifier for the media stream. */ var returnValue: Double
   
-  /** The type of the media stream. This type can be either Audio or Video. */ var streamType: NDMediaStreamType = js.native
+  /** The type of the media stream. This type can be either Audio or Video. */ var streamType: NDMediaStreamType
 }
 object StreamType {
   

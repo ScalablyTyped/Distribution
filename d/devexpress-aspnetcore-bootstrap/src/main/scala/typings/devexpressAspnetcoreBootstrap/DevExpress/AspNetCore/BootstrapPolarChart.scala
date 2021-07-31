@@ -20,11 +20,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tooltipShown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapPolarChart extends Control {
+trait BootstrapPolarChart
+  extends StObject
+     with Control {
   
   def exportTo(format: String, fileName: String): Unit = js.native
   
@@ -33,7 +34,7 @@ trait BootstrapPolarChart extends Control {
   def getInstance(): js.Any = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[

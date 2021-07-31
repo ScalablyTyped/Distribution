@@ -2,14 +2,16 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createBreakpointsMod {
   
-  @JSImport("@material-ui/core/styles/createBreakpoints", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createBreakpoints", JSImport.Namespace)
   @js.native
-  def default(options: BreakpointsOptions): Breakpoints = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(options: BreakpointsOptions): Breakpoints = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Breakpoints]
   
   @JSImport("@material-ui/core/styles/createBreakpoints", "keys")
   @js.native
@@ -42,18 +44,17 @@ object createBreakpointsMod {
   }
   
   /* Inlined {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number} */
-  @js.native
   trait BreakpointValues extends StObject {
     
-    var lg: Double = js.native
+    var lg: Double
     
-    var md: Double = js.native
+    var md: Double
     
-    var sm: Double = js.native
+    var sm: Double
     
-    var xl: Double = js.native
+    var xl: Double
     
-    var xs: Double = js.native
+    var xs: Double
   }
   object BreakpointValues {
     
@@ -104,26 +105,25 @@ object createBreakpointsMod {
   }
   
   /* Inlined std.Partial<{  unit :string,   step :number} & @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoints> */
-  @js.native
   trait BreakpointsOptions extends StObject {
     
-    var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.native
+    var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.undefined
     
-    var down: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.native
+    var down: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
     
-    var keys: js.UndefOr[js.Array[Breakpoint]] = js.native
+    var keys: js.UndefOr[js.Array[Breakpoint]] = js.undefined
     
-    var only: js.UndefOr[js.Function1[/* key */ Breakpoint, String]] = js.native
+    var only: js.UndefOr[js.Function1[/* key */ Breakpoint, String]] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
     
-    var up: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.native
+    var up: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
     
-    var values: js.UndefOr[BreakpointValues] = js.native
+    var values: js.UndefOr[BreakpointValues] = js.undefined
     
-    var width: js.UndefOr[js.Function1[/* key */ Breakpoint, Double]] = js.native
+    var width: js.UndefOr[js.Function1[/* key */ Breakpoint, Double]] = js.undefined
   }
   object BreakpointsOptions {
     

@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceParameter extends BaseElement {
+trait ResourceParameter
+  extends StObject
+     with BaseElement {
   
-  var isRequired: Boolean = js.native
+  var isRequired: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: ItemDefinition = js.native
+  var `type`: ItemDefinition
 }
 object ResourceParameter {
   

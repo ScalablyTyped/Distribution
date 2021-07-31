@@ -4,18 +4,16 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the result of a network scan operation. */
-@js.native
 trait WiFiNetworkReport extends StObject {
   
   /** A list of available networks. */
-  var availableNetworks: IVectorView[WiFiAvailableNetwork] = js.native
+  var availableNetworks: IVectorView[WiFiAvailableNetwork]
   
   /** Contains the result of a network scan operation. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object WiFiNetworkReport {
   

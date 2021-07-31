@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectAttributesResponse extends StObject {
   
   /**
     * Attributes map that is associated with the object. AttributeArn is the key, and attribute value is the value.
     */
-  var Attributes: js.UndefOr[AttributeKeyAndValueList] = js.native
+  var Attributes: js.UndefOr[AttributeKeyAndValueList] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
 }
 object ListObjectAttributesResponse {
   

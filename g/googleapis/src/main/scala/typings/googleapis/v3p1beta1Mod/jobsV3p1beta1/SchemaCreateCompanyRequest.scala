@@ -2,19 +2,17 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  The Request of the CreateCompany method.
   */
-@js.native
 trait SchemaCreateCompanyRequest extends StObject {
   
   /**
     * Required.  The company to be created.
     */
-  var company: js.UndefOr[SchemaCompany] = js.native
+  var company: js.UndefOr[SchemaCompany] = js.undefined
 }
 object SchemaCreateCompanyRequest {
   

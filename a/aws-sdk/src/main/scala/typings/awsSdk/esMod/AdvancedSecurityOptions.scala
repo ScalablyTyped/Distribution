@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvancedSecurityOptions extends StObject {
   
   /**
     * True if advanced security is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the internal user database is enabled.
     */
-  var InternalUserDatabaseEnabled: js.UndefOr[Boolean] = js.native
+  var InternalUserDatabaseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes the SAML application configured for a domain.
     */
-  var SAMLOptions: js.UndefOr[SAMLOptionsOutput] = js.native
+  var SAMLOptions: js.UndefOr[SAMLOptionsOutput] = js.undefined
 }
 object AdvancedSecurityOptions {
   

@@ -5,27 +5,25 @@ import typings.reactNative.mod.ImageRequireSource
 import typings.reactNative.mod.ImageURISource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarPropsTypeMod {
   
   type TabBarIcon = ImageURISource | js.Array[ImageURISource] | ImageRequireSource | ReactNode
   
-  @js.native
   trait TabBarItemProps extends StObject {
     
-    var badge: js.UndefOr[String | Double] = js.native
+    var badge: js.UndefOr[String | Double] = js.undefined
     
-    var icon: js.UndefOr[TabBarIcon] = js.native
+    var icon: js.UndefOr[TabBarIcon] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var selectedIcon: js.UndefOr[TabBarIcon] = js.native
+    var selectedIcon: js.UndefOr[TabBarIcon] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object TabBarItemProps {
     
@@ -79,18 +77,17 @@ object tabBarPropsTypeMod {
     }
   }
   
-  @js.native
   trait TabBarProps extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var barTintColor: js.UndefOr[String] = js.native
+    var barTintColor: js.UndefOr[String] = js.undefined
     
-    var swipeable: js.UndefOr[Boolean] = js.native
+    var swipeable: js.UndefOr[Boolean] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var unselectedTintColor: js.UndefOr[String] = js.native
+    var unselectedTintColor: js.UndefOr[String] = js.undefined
   }
   object TabBarProps {
     

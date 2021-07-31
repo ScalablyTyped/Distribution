@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Partner extends StObject {
   
   /** Ad server related settings of the partner. */
-  var adServerConfig: js.UndefOr[PartnerAdServerConfig] = js.native
+  var adServerConfig: js.UndefOr[PartnerAdServerConfig] = js.undefined
   
   /** Settings that control how partner data may be accessed. */
-  var dataAccessConfig: js.UndefOr[PartnerDataAccessConfig] = js.native
+  var dataAccessConfig: js.UndefOr[PartnerDataAccessConfig] = js.undefined
   
   /** The display name of the partner. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The status of the partner. */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Settings that control which exchanges are enabled for the partner. */
-  var exchangeConfig: js.UndefOr[ExchangeConfig] = js.native
+  var exchangeConfig: js.UndefOr[ExchangeConfig] = js.undefined
   
   /** General settings of the partner. */
-  var generalConfig: js.UndefOr[PartnerGeneralConfig] = js.native
+  var generalConfig: js.UndefOr[PartnerGeneralConfig] = js.undefined
   
   /** Output only. The resource name of the partner. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the partner. Assigned by the system. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when the partner was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Partner {
   

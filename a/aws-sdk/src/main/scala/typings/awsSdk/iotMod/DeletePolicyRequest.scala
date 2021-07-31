@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePolicyRequest extends StObject {
   
   /**
     * The name of the policy to delete.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
 }
 object DeletePolicyRequest {
   

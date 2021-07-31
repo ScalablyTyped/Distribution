@@ -3,7 +3,6 @@ package typings.cliColor
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eraseMod extends Shortcut {
@@ -12,38 +11,37 @@ object eraseMod extends Shortcut {
   @js.native
   val ^ : Erase = js.native
   
-  @js.native
   trait Erase extends StObject {
     
     /**
       * Current line
       */
-    val line: String = js.native
+    val line: String
     
     /**
       * Right portion of current line
       */
-    val lineLeft: String = js.native
+    val lineLeft: String
     
     /**
       * Left portion of current line
       */
-    val lineRight: String = js.native
+    val lineRight: String
     
     /**
       * Entire screen
       */
-    val screen: String = js.native
+    val screen: String
     
     /**
       * Left portion of a screen
       */
-    val screenLeft: String = js.native
+    val screenLeft: String
     
     /**
       * Right portion of a screen
       */
-    val screenRight: String = js.native
+    val screenRight: String
   }
   object Erase {
     

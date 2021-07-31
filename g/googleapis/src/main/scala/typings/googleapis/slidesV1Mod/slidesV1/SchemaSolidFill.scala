@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specified color value.  If any field is unset, its value may be inherited
   * from a parent placeholder if it exists.
   */
-@js.native
 trait SchemaSolidFill extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait SchemaSolidFill extends StObject {
     * value of 1.0 corresponds to a solid color, whereas a value of 0.0
     * corresponds to a completely transparent color.
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the solid fill.
     */
-  var color: js.UndefOr[SchemaOpaqueColor] = js.native
+  var color: js.UndefOr[SchemaOpaqueColor] = js.undefined
 }
 object SchemaSolidFill {
   

@@ -2,14 +2,12 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetFlagOptions extends StObject {
   
   @JSName("clone")
-  var clone_FSetFlagOptions: Boolean = js.native
+  var clone_FSetFlagOptions: Boolean
 }
 object SetFlagOptions {
   

@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.NotBetween
 import typings.officeJs.officeJsStrings.NotEqualTo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalCellValueRule extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait ConditionalCellValueRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula1: String = js.native
+  var formula1: String
   
   /**
     *
@@ -37,7 +35,7 @@ trait ConditionalCellValueRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula2: js.UndefOr[String] = js.native
+  var formula2: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ConditionalCellValueRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var operator: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual = js.native
+  var operator: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual
 }
 object ConditionalCellValueRule {
   

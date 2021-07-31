@@ -2,499 +2,410 @@ package typings.proclaim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def apply(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  
   @JSImport("proclaim", JSImport.Namespace)
   @js.native
-  def apply(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any, msg: String): AssertionError | Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Assert that Math.abs(actual - expected) < (0.5 * Math.pow(10, -precision)).
     */
-  @JSImport("proclaim", "almostEqual")
-  @js.native
-  def almostEqual(actual: js.Any, expected: js.Any, precision: Double): AssertionError | Unit = js.native
-  @JSImport("proclaim", "almostEqual")
-  @js.native
-  def almostEqual(actual: js.Any, expected: js.Any, precision: Double, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def almostEqual(actual: js.Any, expected: js.Any, precision: Double): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("almostEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def almostEqual(actual: js.Any, expected: js.Any, precision: Double, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("almostEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that fn.length === expected.
     */
-  @JSImport("proclaim", "arity")
-  @js.native
-  def arity(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "arity")
-  @js.native
-  def arity(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def arity(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arity")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def arity(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arity")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual is deeply equal to expected.
     */
-  @JSImport("proclaim", "deepEqual")
-  @js.native
-  def deepEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "deepEqual")
-  @js.native
-  def deepEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def deepEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def deepEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual is deeply equal to expected, as determined by the strict equality operator ===.
     */
-  @JSImport("proclaim", "deepStrictEqual")
-  @js.native
-  def deepStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "deepStrictEqual")
-  @js.native
-  def deepStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def deepStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def deepStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that haystack does not contain needle.
     */
-  @JSImport("proclaim", "doesNotInclude")
-  @js.native
-  def doesNotInclude(haystack: js.Any, needle: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "doesNotInclude")
-  @js.native
-  def doesNotInclude(haystack: js.Any, needle: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def doesNotInclude(haystack: js.Any, needle: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotInclude")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def doesNotInclude(haystack: js.Any, needle: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotInclude")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that fn does not throw an error.
     */
-  @JSImport("proclaim", "doesNotThrow")
-  @js.native
-  def doesNotThrow(fn: js.Function0[Unit]): AssertionError | Unit = js.native
-  @JSImport("proclaim", "doesNotThrow")
-  @js.native
-  def doesNotThrow(fn: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], msg: String): AssertionError | Unit = js.native
-  @JSImport("proclaim", "doesNotThrow")
-  @js.native
-  def doesNotThrow(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "doesNotThrow")
-  @js.native
-  def doesNotThrow(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def doesNotThrow(fn: js.Function0[Unit]): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(fn.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def doesNotThrow(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def doesNotThrow(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def doesNotThrow(fn: js.Function0[Unit], expected: Unit, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual == expected.
     */
-  @JSImport("proclaim", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "equal")
-  @js.native
-  def equal(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def equal(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Throw an assertion error.
     */
-  @JSImport("proclaim", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any): AssertionError = js.native
-  @JSImport("proclaim", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, msg: js.UndefOr[scala.Nothing], operator: String): AssertionError = js.native
-  @JSImport("proclaim", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, msg: String): AssertionError = js.native
-  @JSImport("proclaim", "fail")
-  @js.native
-  def fail(actual: js.Any, expected: js.Any, msg: String, operator: String): AssertionError = js.native
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any): AssertionError = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, msg: String): AssertionError = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, msg: String, operator: String): AssertionError = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[AssertionError]
+  @scala.inline
+  def fail(actual: js.Any, expected: js.Any, msg: Unit, operator: String): AssertionError = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[AssertionError]
   
   /**
     * Assert that actual > expected.
     */
-  @JSImport("proclaim", "greaterThan")
-  @js.native
-  def greaterThan(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "greaterThan")
-  @js.native
-  def greaterThan(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def greaterThan(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def greaterThan(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual >= expected.
     */
-  @JSImport("proclaim", "greaterThanOrEqual")
-  @js.native
-  def greaterThanOrEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "greaterThanOrEqual")
-  @js.native
-  def greaterThanOrEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def greaterThanOrEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def greaterThanOrEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that fn.name === expected.
     */
-  @JSImport("proclaim", "hasName")
-  @js.native
-  def hasName(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "hasName")
-  @js.native
-  def hasName(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def hasName(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hasName")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def hasName(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hasName")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that haystack contains needle.
     */
-  @JSImport("proclaim", "include")
-  @js.native
-  def include(haystack: js.Any, needle: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "include")
-  @js.native
-  def include(haystack: js.Any, needle: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def include(haystack: js.Any, needle: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("include")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def include(haystack: js.Any, needle: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("include")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is an array.
     */
-  @JSImport("proclaim", "isArray")
-  @js.native
-  def isArray(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isArray")
-  @js.native
-  def isArray(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isArray(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isArray(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is a boolean.
     */
-  @JSImport("proclaim", "isBoolean")
-  @js.native
-  def isBoolean(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isBoolean")
-  @js.native
-  def isBoolean(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isBoolean(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isBoolean(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value !== undefined.
     */
-  @JSImport("proclaim", "isDefined")
-  @js.native
-  def isDefined(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isDefined")
-  @js.native
-  def isDefined(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isDefined(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isDefined(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that obj[property] is enumerable.
     */
-  @JSImport("proclaim", "isEnumerable")
-  @js.native
-  def isEnumerable(`object`: js.Object, property: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isEnumerable")
-  @js.native
-  def isEnumerable(`object`: js.Object, property: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isEnumerable(`object`: js.Object, property: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnumerable")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isEnumerable(`object`: js.Object, property: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnumerable")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value === false.
     */
-  @JSImport("proclaim", "isFalse")
-  @js.native
-  def isFalse(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isFalse")
-  @js.native
-  def isFalse(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isFalse(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isFalse")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isFalse(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isFalse")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is a function.
     */
-  @JSImport("proclaim", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isFunction")
-  @js.native
-  def isFunction(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isFunction(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isFunction(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual instanceof expected.
     */
-  @JSImport("proclaim", "isInstanceOf")
-  @js.native
-  def isInstanceOf(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isInstanceOf")
-  @js.native
-  def isInstanceOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isInstanceOf(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isInstanceOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is NaN.
     */
-  @JSImport("proclaim", "isNaN")
-  @js.native
-  def isNaN(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNaN")
-  @js.native
-  def isNaN(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNaN(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNaN(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not an array.
     */
-  @JSImport("proclaim", "isNotArray")
-  @js.native
-  def isNotArray(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotArray")
-  @js.native
-  def isNotArray(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotArray(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotArray")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotArray(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotArray")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not a boolean.
     */
-  @JSImport("proclaim", "isNotBoolean")
-  @js.native
-  def isNotBoolean(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotBoolean")
-  @js.native
-  def isNotBoolean(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotBoolean(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotBoolean(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotBoolean")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that obj[property] is not enumerable.
     */
-  @JSImport("proclaim", "isNotEnumerable")
-  @js.native
-  def isNotEnumerable(`object`: js.Object, property: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotEnumerable")
-  @js.native
-  def isNotEnumerable(`object`: js.Object, property: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotEnumerable(`object`: js.Object, property: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotEnumerable")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotEnumerable(`object`: js.Object, property: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotEnumerable")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not a function.
     */
-  @JSImport("proclaim", "isNotFunction")
-  @js.native
-  def isNotFunction(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotFunction")
-  @js.native
-  def isNotFunction(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotFunction(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotFunction")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotFunction(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotFunction")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that !(actual instanceof expected).
     */
-  @JSImport("proclaim", "isNotInstanceOf")
-  @js.native
-  def isNotInstanceOf(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotInstanceOf")
-  @js.native
-  def isNotInstanceOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotInstanceOf(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotInstanceOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotInstanceOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotInstanceOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not NaN.
     */
-  @JSImport("proclaim", "isNotNaN")
-  @js.native
-  def isNotNaN(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotNaN")
-  @js.native
-  def isNotNaN(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotNaN(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNaN")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotNaN(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotNaN")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value !== null.
     */
-  @JSImport("proclaim", "isNotNull")
-  @js.native
-  def isNotNull(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotNull")
-  @js.native
-  def isNotNull(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotNull(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNull")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotNull(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotNull")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not a number.
     */
-  @JSImport("proclaim", "isNotNumber")
-  @js.native
-  def isNotNumber(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotNumber")
-  @js.native
-  def isNotNumber(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotNumber(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNumber")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotNumber(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotNumber")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not an object.
     */
-  @JSImport("proclaim", "isNotObject")
-  @js.native
-  def isNotObject(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotObject")
-  @js.native
-  def isNotObject(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotObject(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotObject")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotObject(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotObject")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is not a string.
     */
-  @JSImport("proclaim", "isNotString")
-  @js.native
-  def isNotString(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotString")
-  @js.native
-  def isNotString(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotString(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotString")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotString(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotString")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that typeof actual !== expected.
     */
-  @JSImport("proclaim", "isNotTypeOf")
-  @js.native
-  def isNotTypeOf(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNotTypeOf")
-  @js.native
-  def isNotTypeOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNotTypeOf(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotTypeOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNotTypeOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotTypeOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value === null.
     */
-  @JSImport("proclaim", "isNull")
-  @js.native
-  def isNull(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNull")
-  @js.native
-  def isNull(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNull(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNull(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is a number.
     */
-  @JSImport("proclaim", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isNumber")
-  @js.native
-  def isNumber(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isNumber(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isNumber(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is an object.
     */
-  @JSImport("proclaim", "isObject")
-  @js.native
-  def isObject(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isObject")
-  @js.native
-  def isObject(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isObject(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isObject(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is a string.
     */
-  @JSImport("proclaim", "isString")
-  @js.native
-  def isString(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isString")
-  @js.native
-  def isString(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isString(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isString(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value === true.
     */
-  @JSImport("proclaim", "isTrue")
-  @js.native
-  def isTrue(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isTrue")
-  @js.native
-  def isTrue(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isTrue(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isTrue(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that typeof actual === expected.
     */
-  @JSImport("proclaim", "isTypeOf")
-  @js.native
-  def isTypeOf(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isTypeOf")
-  @js.native
-  def isTypeOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isTypeOf(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isTypeOf(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOf")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value === undefined.
     */
-  @JSImport("proclaim", "isUndefined")
-  @js.native
-  def isUndefined(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "isUndefined")
-  @js.native
-  def isUndefined(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def isUndefined(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def isUndefined(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value.length === expected.
     */
-  @JSImport("proclaim", "lengthEquals")
-  @js.native
-  def lengthEquals(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "lengthEquals")
-  @js.native
-  def lengthEquals(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def lengthEquals(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthEquals")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def lengthEquals(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lengthEquals")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual < expected.
     */
-  @JSImport("proclaim", "lessThan")
-  @js.native
-  def lessThan(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "lessThan")
-  @js.native
-  def lessThan(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def lessThan(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def lessThan(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual <= expected.
     */
-  @JSImport("proclaim", "lessThanOrEqual")
-  @js.native
-  def lessThanOrEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "lessThanOrEqual")
-  @js.native
-  def lessThanOrEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def lessThanOrEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def lessThanOrEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  
+  /**
+    * Assert that actual matches the RegExp in expected.
+    */
+  @scala.inline
+  def `match`(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def `match`(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual is not deeply equal to expected.
     */
-  @JSImport("proclaim", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notDeepEqual")
-  @js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notDeepEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual is not deeply equal to expected, as determined by the strict not equal operator !==.
     */
-  @JSImport("proclaim", "notDeepStrictEqual")
-  @js.native
-  def notDeepStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notDeepStrictEqual")
-  @js.native
-  def notDeepStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notDeepStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notDeepStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual != expected.
     */
-  @JSImport("proclaim", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notEqual")
-  @js.native
-  def notEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual does not match the RegExp in expected.
     */
-  @JSImport("proclaim", "notMatch")
-  @js.native
-  def notMatch(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notMatch")
-  @js.native
-  def notMatch(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notMatch(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notMatch")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notMatch(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notMatch")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is falsy.
     */
-  @JSImport("proclaim", "notOk")
-  @js.native
-  def notOk(value: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notOk")
-  @js.native
-  def notOk(value: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notOk(value: js.Any): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notOk")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notOk(value: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notOk")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that actual !== expected.
     */
-  @JSImport("proclaim", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "notStrictEqual")
-  @js.native
-  def notStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def notStrictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that value is truthy.
@@ -506,41 +417,34 @@ object mod {
   /**
     * Assert that actual === expected.
     */
-  @JSImport("proclaim", "strictEqual")
-  @js.native
-  def strictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "strictEqual")
-  @js.native
-  def strictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def strictEqual(actual: js.Any, expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def strictEqual(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
   /**
     * Assert that fn throws an error.
     */
-  @JSImport("proclaim", "throws")
-  @js.native
-  def throws(fn: js.Function0[Unit]): AssertionError | Unit = js.native
-  @JSImport("proclaim", "throws")
-  @js.native
-  def throws(fn: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], msg: String): AssertionError | Unit = js.native
-  @JSImport("proclaim", "throws")
-  @js.native
-  def throws(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "throws")
-  @js.native
-  def throws(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = js.native
+  @scala.inline
+  def throws(fn: js.Function0[Unit]): AssertionError | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throws")(fn.asInstanceOf[js.Any]).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def throws(fn: js.Function0[Unit], expected: js.Any): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def throws(fn: js.Function0[Unit], expected: js.Any, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
+  @scala.inline
+  def throws(fn: js.Function0[Unit], expected: Unit, msg: String): AssertionError | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(fn.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AssertionError | Unit]
   
-  @js.native
   trait AssertionError extends StObject {
     
-    var actual: js.Any = js.native
+    var actual: js.Any
     
-    var expected: js.Any = js.native
+    var expected: js.Any
     
-    var msg: String = js.native
+    var msg: String
     
-    var operator: String = js.native
+    var operator: String
     
-    var stackStartFunction: js.Any = js.native
+    var stackStartFunction: js.Any
   }
   object AssertionError {
     
@@ -569,14 +473,4 @@ object mod {
       def setStackStartFunction(value: js.Any): Self = StObject.set(x, "stackStartFunction", value.asInstanceOf[js.Any])
     }
   }
-  
-  /**
-    * Assert that actual matches the RegExp in expected.
-    */
-  @JSImport("proclaim", "match")
-  @js.native
-  def `match`(actual: js.Any, expected: js.Any): AssertionError | Unit = js.native
-  @JSImport("proclaim", "match")
-  @js.native
-  def `match`(actual: js.Any, expected: js.Any, msg: String): AssertionError | Unit = js.native
 }

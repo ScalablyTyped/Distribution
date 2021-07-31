@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explicit extends StObject {
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var value: String | js.Array[String] | SignalRef = js.native
+  var value: String | js.Array[String] | SignalRef
 }
 object Explicit {
   

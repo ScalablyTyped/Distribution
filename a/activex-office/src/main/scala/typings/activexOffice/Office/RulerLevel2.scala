@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulerLevel2 extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var FirstMargin: Double = js.native
+  var FirstMargin: Double
   
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   @JSName("Office.RulerLevel2_typekey")
-  var OfficeDotRulerLevel2_typekey: RulerLevel2 = js.native
+  var OfficeDotRulerLevel2_typekey: RulerLevel2
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object RulerLevel2 {
   

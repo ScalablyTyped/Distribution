@@ -2,26 +2,24 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBSubnetGroupMessage extends StObject {
   
   /**
     * The description for the subnet group.
     */
-  var DBSubnetGroupDescription: js.UndefOr[String] = js.native
+  var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name for the subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
     */
-  var DBSubnetGroupName: String = js.native
+  var DBSubnetGroupName: String
   
   /**
     * The Amazon EC2 subnet IDs for the subnet group.
     */
-  var SubnetIds: SubnetIdentifierList = js.native
+  var SubnetIds: SubnetIdentifierList
 }
 object ModifyDBSubnetGroupMessage {
   

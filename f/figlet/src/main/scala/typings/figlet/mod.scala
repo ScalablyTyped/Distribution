@@ -4,72 +4,66 @@ import typings.figlet.anon.PartialDefaults
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("figlet", JSImport.Namespace)
-  @js.native
-  def apply(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = js.native
-  @JSImport("figlet", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     txt: String,
     font: Fonts_,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSImport("figlet", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     txt: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
     */
   // tslint:disable-next-line: unified-signatures
-  @JSImport("figlet", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     txt: String,
     options: Options,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("figlet", "defaults")
+  @JSImport("figlet", JSImport.Namespace)
   @js.native
-  def defaults(): Defaults_ = js.native
-  @JSImport("figlet", "defaults")
-  @js.native
-  def defaults(opt: PartialDefaults): Defaults_ = js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * @warn
-    * This method exists in node environment only.
-    * In browser environment, this method does not exist.
-    */
-  @JSImport("figlet", "fonts")
-  @js.native
-  def fonts(cb: js.Function2[/* error */ Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = js.native
+  @scala.inline
+  def defaults(): Defaults_ = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Defaults_]
+  @scala.inline
+  def defaults(opt: PartialDefaults): Defaults_ = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt.asInstanceOf[js.Any]).asInstanceOf[Defaults_]
   
   /**
     * @warn
     * This method exists in node environment only.
     * In browser environment, this method does not exist.
     */
-  @JSImport("figlet", "fontsSync")
-  @js.native
-  def fontsSync(): js.Array[Fonts_] = js.native
+  @scala.inline
+  def fonts(cb: js.Function2[/* error */ Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fonts")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("figlet", "loadFont")
-  @js.native
+  /**
+    * @warn
+    * This method exists in node environment only.
+    * In browser environment, this method does not exist.
+    */
+  @scala.inline
+  def fontsSync(): js.Array[Fonts_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontsSync")().asInstanceOf[js.Array[Fonts_]]
+  
+  @scala.inline
   def loadFont(
     font: Fonts_,
     cb: js.Function2[/* error */ Error | Null, /* fontOptions */ js.UndefOr[FontOptions], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @todo
@@ -80,12 +74,10 @@ object mod {
     * This method works in node environment only.
     * In browser environment, this method does not work.
     */
-  @JSImport("figlet", "loadFontSync")
-  @js.native
-  def loadFontSync(font: Fonts_): FontOptions = js.native
+  @scala.inline
+  def loadFontSync(font: Fonts_): FontOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFontSync")(font.asInstanceOf[js.Any]).asInstanceOf[FontOptions]
   
-  @JSImport("figlet", "metadata")
-  @js.native
+  @scala.inline
   def metadata(
     font: Fonts_,
     cb: js.Function3[
@@ -94,58 +86,50 @@ object mod {
       /* headerComment */ js.UndefOr[String], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("figlet", "text")
-  @js.native
-  def text(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = js.native
-  @JSImport("figlet", "text")
-  @js.native
+  @scala.inline
+  def text(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def text(
     txt: String,
     font: Fonts_,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSImport("figlet", "text")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def text(
     txt: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
     */
   // tslint:disable-next-line: unified-signatures
-  @JSImport("figlet", "text")
-  @js.native
+  @scala.inline
   def text(
     txt: String,
     options: Options,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("figlet", "textSync")
-  @js.native
-  def textSync(txt: String): String = js.native
-  @JSImport("figlet", "textSync")
-  @js.native
-  def textSync(txt: String, font: Fonts_): String = js.native
+  @scala.inline
+  def textSync(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def textSync(txt: String, font: Fonts_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
     */
-  @JSImport("figlet", "textSync")
-  @js.native
-  def textSync(txt: String, options: Options): String = js.native
+  @scala.inline
+  def textSync(txt: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Defaults_ extends StObject {
     
-    var font: Fonts_ = js.native
+    var font: Fonts_
     
-    var fontPath: String = js.native
+    var fontPath: String
   }
   object Defaults_ {
     
@@ -166,34 +150,33 @@ object mod {
     }
   }
   
-  @js.native
   trait FittingRules extends StObject {
     
-    var hLayout: Double = js.native
+    var hLayout: Double
     
-    var hRule1: Boolean = js.native
+    var hRule1: Boolean
     
-    var hRule2: Boolean = js.native
+    var hRule2: Boolean
     
-    var hRule3: Boolean = js.native
+    var hRule3: Boolean
     
-    var hRule4: Boolean = js.native
+    var hRule4: Boolean
     
-    var hRule5: Boolean = js.native
+    var hRule5: Boolean
     
-    var hRule6: Boolean = js.native
+    var hRule6: Boolean
     
-    var vLayout: Double = js.native
+    var vLayout: Double
     
-    var vRule1: Boolean = js.native
+    var vRule1: Boolean
     
-    var vRule2: Boolean = js.native
+    var vRule2: Boolean
     
-    var vRule3: Boolean = js.native
+    var vRule3: Boolean
     
-    var vRule4: Boolean = js.native
+    var vRule4: Boolean
     
-    var vRule5: Boolean = js.native
+    var vRule5: Boolean
   }
   object FittingRules {
     
@@ -261,28 +244,27 @@ object mod {
     }
   }
   
-  @js.native
   trait FontOptions extends StObject {
     
-    var baseline: Double = js.native
+    var baseline: Double
     
-    var codeTagCount: Double | Null = js.native
+    var codeTagCount: Double | Null
     
-    var fittingRules: FittingRules = js.native
+    var fittingRules: FittingRules
     
-    var fullLayout: Double | Null = js.native
+    var fullLayout: Double | Null
     
-    var hardBlank: String = js.native
+    var hardBlank: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var maxLength: Double = js.native
+    var maxLength: Double
     
-    var numCommentLines: Double = js.native
+    var numCommentLines: Double
     
-    var oldLayout: Double = js.native
+    var oldLayout: Double
     
-    var printDirection: PrintDirection = js.native
+    var printDirection: PrintDirection
   }
   object FontOptions {
     
@@ -297,7 +279,7 @@ object mod {
       oldLayout: Double,
       printDirection: PrintDirection
     ): FontOptions = {
-      val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], fittingRules = fittingRules.asInstanceOf[js.Any], hardBlank = hardBlank.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], numCommentLines = numCommentLines.asInstanceOf[js.Any], oldLayout = oldLayout.asInstanceOf[js.Any], printDirection = printDirection.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], fittingRules = fittingRules.asInstanceOf[js.Any], hardBlank = hardBlank.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], numCommentLines = numCommentLines.asInstanceOf[js.Any], oldLayout = oldLayout.asInstanceOf[js.Any], printDirection = printDirection.asInstanceOf[js.Any], codeTagCount = null, fullLayout = null)
       __obj.asInstanceOf[FontOptions]
     }
     
@@ -1522,18 +1504,17 @@ object mod {
     def `universal smushing`: typings.figlet.figletStrings.`universal smushing` = ("universal smushing").asInstanceOf[typings.figlet.figletStrings.`universal smushing`]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var font: js.UndefOr[Fonts_] = js.native
+    var font: js.UndefOr[Fonts_] = js.undefined
     
-    var horizontalLayout: js.UndefOr[KerningMethods] = js.native
+    var horizontalLayout: js.UndefOr[KerningMethods] = js.undefined
     
-    var printDirection: js.UndefOr[PrintDirection] = js.native
+    var printDirection: js.UndefOr[PrintDirection] = js.undefined
     
-    var showHardBlanks: js.UndefOr[Boolean] = js.native
+    var showHardBlanks: js.UndefOr[Boolean] = js.undefined
     
-    var verticalLayout: js.UndefOr[KerningMethods] = js.native
+    var verticalLayout: js.UndefOr[KerningMethods] = js.undefined
   }
   object Options {
     

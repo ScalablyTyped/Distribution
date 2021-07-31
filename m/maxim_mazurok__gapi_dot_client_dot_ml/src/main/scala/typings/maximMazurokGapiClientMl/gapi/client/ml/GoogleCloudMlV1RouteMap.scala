@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1RouteMap extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait GoogleCloudMlV1RouteMap extends StObject {
     * VERSION: The name of the model version. This does not include the "projects/PROJECT_ID/models/MODEL/versions/" prefix that the API returns in output; it is the bare version name, as
     * provided to projects.models.versions.create.
     */
-  var health: js.UndefOr[String] = js.native
+  var health: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP path on the container to send prediction requests to. AI Platform Prediction forwards requests sent using projects.predict to this path on the container's IP address and port.
@@ -28,7 +26,7 @@ trait GoogleCloudMlV1RouteMap extends StObject {
     * provided to projects.models.create. * VERSION: The name of the model version. This does not include the "projects/PROJECT_ID/models/MODEL/versions/" prefix that the API returns in
     * output; it is the bare version name, as provided to projects.models.versions.create.
     */
-  var predict: js.UndefOr[String] = js.native
+  var predict: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1RouteMap {
   

@@ -11,8 +11,8 @@ The assert module from Node.js, for the browser.
 | Full name          | assert |
 | Keywords           | assert, browser |
 | # releases         | 3 |
-| # dependents       | 1323 |
-| # downloads        | 463157188 |
+| # dependents       | 1467 |
+| # downloads        | 568450264 |
 | # stars            | 75 |
 
 ## Links

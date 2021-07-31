@@ -2,32 +2,30 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insert Conversions Request.
   */
-@js.native
 trait SchemaConversionsBatchInsertRequest extends StObject {
   
   /**
     * The set of conversions to insert.
     */
-  var conversions: js.UndefOr[js.Array[SchemaConversion]] = js.native
+  var conversions: js.UndefOr[js.Array[SchemaConversion]] = js.undefined
   
   /**
     * Describes how encryptedUserId or encryptedUserIdCandidates[] is
     * encrypted. This is a required field if encryptedUserId or
     * encryptedUserIdCandidates[] is used.
     */
-  var encryptionInfo: js.UndefOr[SchemaEncryptionInfo] = js.native
+  var encryptionInfo: js.UndefOr[SchemaEncryptionInfo] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#conversionsBatchInsertRequest&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaConversionsBatchInsertRequest {
   

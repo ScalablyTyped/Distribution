@@ -16,21 +16,19 @@ import typings.node.NodeJS.WritableStream
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Failed extends StObject {
     
-    var failed: String = js.native
+    var failed: String
     
-    var pending: String = js.native
+    var pending: String
     
-    var success: String = js.native
+    var success: String
     
-    var todo: String = js.native
+    var todo: String
   }
   object Failed {
     
@@ -60,21 +58,17 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(descriptor: js.UndefOr[scala.Nothing]): js.UndefOr[String] = js.native
     def apply(descriptor: String): String = js.native
     def apply(descriptor: js.Function): js.Function | String = js.native
     def apply(descriptor: Double): Double | String = js.native
+    def apply(descriptor: Unit): js.UndefOr[String] = js.native
   }
   
   @js.native
   trait FnCallResultsCodeCoverageFormatterReporter extends StObject {
     
     def apply(results: AggregatedResult): FormattedTestResults = js.native
-    def apply(
-      results: AggregatedResult,
-      codeCoverageFormatter: js.UndefOr[scala.Nothing],
-      reporter: CodeCoverageReporter
-    ): FormattedTestResults = js.native
+    def apply(results: AggregatedResult, codeCoverageFormatter: Unit, reporter: CodeCoverageReporter): FormattedTestResults = js.native
     def apply(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = js.native
     def apply(
       results: AggregatedResult,
@@ -87,26 +81,20 @@ object anon {
   trait FnCallValueOptionsCycles extends StObject {
     
     def apply[T](value: T): T = js.native
-    def apply[T](value: T, options: js.UndefOr[scala.Nothing], cycles: WeakMap[_, _]): T = js.native
+    def apply[T](value: T, options: Unit, cycles: WeakMap[js.Any, js.Any]): T = js.native
     def apply[T](value: T, options: DeepCyclicCopyOptions): T = js.native
-    def apply[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[_, _]): T = js.native
+    def apply[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[js.Any, js.Any]): T = js.native
   }
   
   @js.native
   trait TypeofBufferedConsole
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* getSourceMaps */ js.Function0[js.UndefOr[SourceMapRegistry | Null]], 
           BufferedConsole
         ] {
     
     def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: js.UndefOr[scala.Nothing],
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
     def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
     def write(
       buffer: ConsoleBuffer,
@@ -122,14 +110,20 @@ object anon {
       level: Null,
       sourceMaps: SourceMapRegistry
     ): js.Array[LogEntry] = js.native
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: Unit,
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = js.native
   }
   
-  @js.native
   trait TypeofpreRunMessage extends StObject {
     
-    def print(stream: WritableStream): Unit = js.native
+    def print(stream: WritableStream): Unit
     
-    def remove(stream: WritableStream): Unit = js.native
+    def remove(stream: WritableStream): Unit
   }
   object TypeofpreRunMessage {
     
@@ -150,14 +144,13 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofspecialChars extends StObject {
     
-    val ARROW: /* " \\u203A " */ String = js.native
+    val ARROW: /* " \\u203A " */ String
     
-    val CLEAR: String = js.native
+    val CLEAR: String
     
-    val ICONS: Failed = js.native
+    val ICONS: Failed
   }
   object TypeofspecialChars {
     

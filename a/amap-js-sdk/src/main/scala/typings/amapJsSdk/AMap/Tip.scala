@@ -2,17 +2,15 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tip extends StObject {
   
-  var adcode: String = js.native
+  var adcode: String
   
-  var district: String = js.native
+  var district: String
   
-  var name: String = js.native
+  var name: String
 }
 object Tip {
   

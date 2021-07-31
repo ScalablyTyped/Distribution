@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownTreeMessages extends StObject {
   
-  var clear: js.UndefOr[String] = js.native
+  var clear: js.UndefOr[String] = js.undefined
   
-  var deleteTag: js.UndefOr[String] = js.native
+  var deleteTag: js.UndefOr[String] = js.undefined
   
-  var singleTag: js.UndefOr[String] = js.native
+  var singleTag: js.UndefOr[String] = js.undefined
 }
 object DropDownTreeMessages {
   

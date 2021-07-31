@@ -2,13 +2,11 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateHibernationOption extends StObject {
   
-  var configured: Boolean = js.native
+  var configured: Boolean
 }
 object GetLaunchTemplateHibernationOption {
   

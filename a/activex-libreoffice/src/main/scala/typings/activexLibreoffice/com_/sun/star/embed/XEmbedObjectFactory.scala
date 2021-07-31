@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface provides user with full control over object creation.
   */
-@js.native
-trait XEmbedObjectFactory extends XInterface {
+trait XEmbedObjectFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object and transport parameters for persistent initialization.
@@ -43,7 +43,7 @@ trait XEmbedObjectFactory extends XInterface {
     nEntryConnectionMode: Double,
     aArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
 }
 object XEmbedObjectFactory {
   

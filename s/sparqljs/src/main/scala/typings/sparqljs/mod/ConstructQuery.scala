@@ -2,27 +2,25 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.CONSTRUCT
-import typings.sparqljs.sparqljsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructQuery
-  extends Query
-     with BaseQuery {
+  extends StObject
+     with BaseQuery
+     with Query {
   
-  var queryType: CONSTRUCT = js.native
+  var queryType: CONSTRUCT
   
-  var template: js.UndefOr[js.Array[Triple]] = js.native
+  var template: js.UndefOr[js.Array[Triple]] = js.undefined
 }
 object ConstructQuery {
   
   @scala.inline
-  def apply(prefixes: StringDictionary[String], queryType: CONSTRUCT, `type`: query): ConstructQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(prefixes: StringDictionary[String]): ConstructQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "CONSTRUCT")
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[ConstructQuery]
   }
   

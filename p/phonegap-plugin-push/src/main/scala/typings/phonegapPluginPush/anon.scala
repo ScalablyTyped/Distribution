@@ -3,12 +3,10 @@ package typings.phonegapPluginPush
 import typings.phonegapPluginPush.PhonegapPluginPush.CategoryArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alert extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object anon {
     			 * Once this is set programmatically in the init method it can only be changed manually by the user in Settings>Notifications>App Name.
     			 * This is normal iOS behaviour.
     			 */
-    var alert: js.UndefOr[Boolean | String] = js.native
+    var alert: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     			 * If true|"true" the device sets the badge number on receipt of notification.
@@ -27,23 +25,23 @@ object anon {
     			 * Once this is set programmatically in the init method it can only be changed manually by the user in Settings>Notifications>App Name.
     			 * This is normal iOS behaviour.
     			 */
-    var badge: js.UndefOr[Boolean | String] = js.native
+    var badge: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     			 * The data required in order to enable Action Buttons for iOS.
     			 * Action Buttons on iOS - https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/PAYLOAD.md#action-buttons-1
     			 */
-    var categories: js.UndefOr[CategoryArray] = js.native
+    var categories: js.UndefOr[CategoryArray] = js.undefined
     
     /**
     			 * If true|"true" the badge will be cleared on app startup. Defaults to false|"false".
     			 */
-    var clearBadge: js.UndefOr[Boolean | String] = js.native
+    var clearBadge: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     			 * Whether to use prod or sandbox GCM setting. Defaults to false.
     			 */
-    var fcmSandbox: js.UndefOr[Boolean] = js.native
+    var fcmSandbox: js.UndefOr[Boolean] = js.undefined
     
     /**
     			 * If true|"true" the device plays a sound on receipt of notification.
@@ -52,19 +50,19 @@ object anon {
     			 * Once this is set programmatically in the init method it can only be changed manually by the user in Settings>Notifications>App Name.
     			 * This is normal iOS behaviour.
     			 */
-    var sound: js.UndefOr[Boolean | String] = js.native
+    var sound: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     			 * If the array contains one or more strings each string will be used to subscribe to a FcmPubSub topic. Defaults to [].
     			 */
-    var topics: js.UndefOr[js.Array[String]] = js.native
+    var topics: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     			 * If true|"true" the device will be set up to receive VoIP Push notifications and the other options will be ignored
     			 * since VoIP notifications are silent notifications that should be handled in the "notification" event.
     			 * Default is false|"false".
     			 */
-    var voip: js.UndefOr[Boolean | String] = js.native
+    var voip: js.UndefOr[Boolean | String] = js.undefined
   }
   object Alert {
     
@@ -130,18 +128,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ApplicationServerKey extends StObject {
     
     /**
     			 * Your GCM API key if you are using VAPID keys.
     			 */
-    var applicationServerKey: js.UndefOr[String] = js.native
+    var applicationServerKey: js.UndefOr[String] = js.undefined
     
     /**
     			 * URL for the push server you want to use. Default is 'http://push.api.phonegap.com/v1/push'.
     			 */
-    var pushServiceURL: js.UndefOr[String] = js.native
+    var pushServiceURL: js.UndefOr[String] = js.undefined
   }
   object ApplicationServerKey {
     
@@ -168,59 +165,58 @@ object anon {
     }
   }
   
-  @js.native
   trait ClearBadge extends StObject {
     
     /**
     			 * If true the icon badge will be cleared on init and before push messages are processed. Default is false.
     			 */
-    var clearBadge: js.UndefOr[Boolean] = js.native
+    var clearBadge: js.UndefOr[Boolean] = js.undefined
     
     /**
     			 * If true the app clears all pending notifications when it is closed. Default is true.
     			 */
-    var clearNotifications: js.UndefOr[Boolean] = js.native
+    var clearNotifications: js.UndefOr[Boolean] = js.undefined
     
     /**
     			 * If true will always show a notification, even when the app is on the foreground. Default is false.
     			 */
-    var forceShow: js.UndefOr[Boolean] = js.native
+    var forceShow: js.UndefOr[Boolean] = js.undefined
     
     /**
     			 * The name of a drawable resource to use as the small-icon. The name should not include the extension.
     			 */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
     			 * Sets the background color of the small icon on Android 5.0 and greater.
     			 * Supported Formats - http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)
     			 */
-    var iconColor: js.UndefOr[String] = js.native
+    var iconColor: js.UndefOr[String] = js.undefined
     
     /**
     			 * The key to search for text of notification. Default is 'message'.
     			 */
-    var messageKey: js.UndefOr[String] = js.native
+    var messageKey: js.UndefOr[String] = js.undefined
     
     /**
     			 * If true it plays the sound specified in the push data or the default system sound. Default is true.
     			 */
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
     
     /**
     			 * The key to search for title of notification. Default is 'title'.
     			 */
-    var titleKey: js.UndefOr[String] = js.native
+    var titleKey: js.UndefOr[String] = js.undefined
     
     /**
     			 * If the array contains one or more strings each string will be used to subscribe to a GcmPubSub topic.
     			 */
-    var topics: js.UndefOr[js.Array[String]] = js.native
+    var topics: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     			 * If true the device vibrates on receipt of notification. Default is true.
     			 */
-    var vibrate: js.UndefOr[Boolean] = js.native
+    var vibrate: js.UndefOr[Boolean] = js.undefined
   }
   object ClearBadge {
     

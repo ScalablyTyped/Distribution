@@ -3,32 +3,32 @@ package typings.reactMdUtils
 import typings.reactMdUtils.sizingConstantsMod.QuerySize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useAppSizeMediaMod {
+  
+  @JSImport("@react-md/utils/types/sizing/useAppSizeMedia", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/sizing/useAppSizeMedia", "DEFAULT_APP_SIZE")
   @js.native
   val DEFAULT_APP_SIZE: AppSize = js.native
   
-  @JSImport("@react-md/utils/types/sizing/useAppSizeMedia", "useAppSizeMedia")
-  @js.native
-  def useAppSizeMedia(): AppSize = js.native
-  @JSImport("@react-md/utils/types/sizing/useAppSizeMedia", "useAppSizeMedia")
-  @js.native
+  @scala.inline
+  def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
+  @scala.inline
   def useAppSizeMedia(
     hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeOptions
-  ): AppSize = js.native
+  ): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[AppSize]
   
-  @js.native
   trait AppSize extends StObject {
     
     /**
       * Boolean if currently matching a desktop screen by comparing the max width
       * of the device.
       */
-    var isDesktop: Boolean = js.native
+    var isDesktop: Boolean
     
     /**
       * Boolean if the app is considered to be in landscape mode. This will just
@@ -39,25 +39,25 @@ object useAppSizeMediaMod {
       * recommended to use the `useOrientation` hook as well if you'd like to get
       * the current orientation type.
       */
-    var isLandscape: Boolean = js.native
+    var isLandscape: Boolean
     
     /**
       * Boolean if currently matching a large desktop screen by comparing the max
       * width of the device.
       */
-    var isLargeDesktop: Boolean = js.native
+    var isLargeDesktop: Boolean
     
     /**
       * Boolean if currently matching a phone by comparing the max width of the
       * device.
       */
-    var isPhone: Boolean = js.native
+    var isPhone: Boolean
     
     /**
       * Boolean if currently matching a tablet by comparing the max width of the
       * device.
       */
-    var isTablet: Boolean = js.native
+    var isTablet: Boolean
   }
   object AppSize {
     
@@ -93,7 +93,6 @@ object useAppSizeMediaMod {
     }
   }
   
-  @js.native
   trait AppSizeOptions extends StObject {
     
     /**
@@ -101,35 +100,35 @@ object useAppSizeMediaMod {
       * when trying to do server side rendering or initial page render since the
       * default behavior is to check and update the size once mounted in the DOM.
       */
-    var defaultSize: js.UndefOr[AppSize] = js.native
+    var defaultSize: js.UndefOr[AppSize] = js.undefined
     
     /**
       * The min width for a large desktop screen.
       */
-    var desktopLargeMinWidth: js.UndefOr[QuerySize] = js.native
+    var desktopLargeMinWidth: js.UndefOr[QuerySize] = js.undefined
     
     /**
       * The min width for a desktop screen.
       */
-    var desktopMinWidth: js.UndefOr[QuerySize] = js.native
+    var desktopMinWidth: js.UndefOr[QuerySize] = js.undefined
     
     /**
       * The max width to use for phones. This one is a max width unline the others
       * since everything from 0 to this value will be considered a phone.
       */
-    var phoneMaxWidth: js.UndefOr[QuerySize] = js.native
+    var phoneMaxWidth: js.UndefOr[QuerySize] = js.undefined
     
     /**
       * The max width for a tablet device. This should normally be `1px` less than
       * the `desktopMinWidth`, but it can be any value if needed. The tablet has a
       * range of min to max so that you can have a bit more control.
       */
-    var tabletMaxWidth: js.UndefOr[QuerySize] = js.native
+    var tabletMaxWidth: js.UndefOr[QuerySize] = js.undefined
     
     /**
       * The min width for a tablet device.
       */
-    var tabletMinWidth: js.UndefOr[QuerySize] = js.native
+    var tabletMinWidth: js.UndefOr[QuerySize] = js.undefined
   }
   object AppSizeOptions {
     

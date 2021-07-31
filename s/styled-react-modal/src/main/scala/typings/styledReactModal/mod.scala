@@ -16,7 +16,6 @@ import typings.styledComponents.styledComponentsMod.StyledComponent
 import typings.styledReactModal.styledReactModalStrings.div
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,17 +26,18 @@ object mod {
     extends Component[ModalProps, js.Object, js.Any]
   object default {
     
+    @JSImport("styled-react-modal", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("styled-react-modal", "default.styled")
-    @js.native
-    def styled(`object`: CSSObject): StyledComponent[ComponentClass[ModalProps, ComponentState], _, js.Object, scala.Nothing] = js.native
-    @JSImport("styled-react-modal", "default.styled")
-    @js.native
-    def styled(`object`: InterpolationFunction[_]): StyledComponent[ComponentClass[ModalProps, ComponentState], _, js.Object, scala.Nothing] = js.native
+    @scala.inline
+    def styled(`object`: CSSObject): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    @scala.inline
+    def styled(`object`: InterpolationFunction[js.Any]): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
     /* static member */
-    @JSImport("styled-react-modal", "default.styled")
-    @js.native
-    def styled(strings: TemplateStringsArray, interpolations: js.Any*): StyledComponent[ComponentClass[ModalProps, ComponentState], _, js.Object, scala.Nothing] = js.native
+    @scala.inline
+    def styled(strings: TemplateStringsArray, interpolations: js.Any*): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
   }
   
   @JSImport("styled-react-modal", "BaseModalBackground")
@@ -58,28 +58,27 @@ object mod {
   
   type Modal = Component[ModalProps, js.Object, js.Any]
   
-  @js.native
   trait ModalProps extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var allowScroll: js.UndefOr[Boolean] = js.native
+    var allowScroll: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundProps: js.UndefOr[js.Object] = js.native
+    var backgroundProps: js.UndefOr[js.Object] = js.undefined
     
-    var beforeClose: js.UndefOr[js.Promise[Unit] | js.Function0[Unit]] = js.native
+    var beforeClose: js.UndefOr[js.Promise[Unit] | js.Function0[Unit]] = js.undefined
     
-    var beforeOpen: js.UndefOr[js.Promise[Unit] | js.Function0[Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Promise[Unit] | js.Function0[Unit]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var onBackgroundClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onBackgroundClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onEscapeKeydown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onEscapeKeydown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   }
   object ModalProps {
     
@@ -157,12 +156,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ModalProviderProps extends StObject {
     
-    var backgroundComponent: js.UndefOr[AnyStyledComponent] = js.native
+    var backgroundComponent: js.UndefOr[AnyStyledComponent] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object ModalProviderProps {
     

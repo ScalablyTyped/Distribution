@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object namedQueryMod {
@@ -53,6 +52,10 @@ object namedQueryMod {
   /* static members */
   object NamedQuery {
     
+    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NamedQuery resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,55 +65,49 @@ object namedQueryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NamedQuery = js.native
-    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NamedQuery = js.native
-    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NamedQueryState): NamedQuery = js.native
-    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): NamedQuery = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NamedQueryState): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NamedQueryState, opts: CustomResourceOptions): NamedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NamedQuery]
     
     /**
       * Returns true if the given object is an instance of NamedQuery.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ Boolean]
   }
   
-  @js.native
   trait NamedQueryArgs extends StObject {
     
     /**
       * The database to which the query belongs.
       */
-    val database: Input[String] = js.native
+    val database: Input[String]
     
     /**
       * A brief explanation of the query. Maximum length of 1024.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The plain language name for the query. Maximum length of 128.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The text of the query itself. In other words, all query statements. Maximum length of 262144.
       */
-    val query: Input[String] = js.native
+    val query: Input[String]
     
     /**
       * The workgroup to which the query belongs. Defaults to `primary`
       */
-    val workgroup: js.UndefOr[Input[String]] = js.native
+    val workgroup: js.UndefOr[Input[String]] = js.undefined
   }
   object NamedQueryArgs {
     
@@ -149,33 +146,32 @@ object namedQueryMod {
     }
   }
   
-  @js.native
   trait NamedQueryState extends StObject {
     
     /**
       * The database to which the query belongs.
       */
-    val database: js.UndefOr[Input[String]] = js.native
+    val database: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A brief explanation of the query. Maximum length of 1024.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The plain language name for the query. Maximum length of 128.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The text of the query itself. In other words, all query statements. Maximum length of 262144.
       */
-    val query: js.UndefOr[Input[String]] = js.native
+    val query: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The workgroup to which the query belongs. Defaults to `primary`
       */
-    val workgroup: js.UndefOr[Input[String]] = js.native
+    val workgroup: js.UndefOr[Input[String]] = js.undefined
   }
   object NamedQueryState {
     

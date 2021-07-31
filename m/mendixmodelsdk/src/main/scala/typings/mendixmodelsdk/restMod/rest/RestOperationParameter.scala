@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -82,9 +81,8 @@ object RestOperationParameter {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.RestOperationParameter.create")
-  @js.native
-  def create(model: IModel): RestOperationParameter = js.native
+  @scala.inline
+  def create(model: IModel): RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RestOperationParameter]
   
   /**
     * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -95,9 +93,8 @@ object RestOperationParameter {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.RestOperationParameter.createInPublishedRestServiceOperationUnderParameters")
-  @js.native
-  def createInPublishedRestServiceOperationUnderParameters(container: PublishedRestServiceOperation): RestOperationParameter = js.native
+  @scala.inline
+  def createInPublishedRestServiceOperationUnderParameters(container: PublishedRestServiceOperation): RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceOperationUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[RestOperationParameter]
   
   /**
     * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -108,9 +105,8 @@ object RestOperationParameter {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.RestOperationParameter.createInPublishedRestServiceUnderParameters")
-  @js.native
-  def createInPublishedRestServiceUnderParameters(container: PublishedRestService): RestOperationParameter = js.native
+  @scala.inline
+  def createInPublishedRestServiceUnderParameters(container: PublishedRestService): RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[RestOperationParameter]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.RestOperationParameter.structureTypeName")

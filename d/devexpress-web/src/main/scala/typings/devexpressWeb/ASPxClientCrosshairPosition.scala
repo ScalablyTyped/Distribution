@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the CrosshairLabelPosition class.
   */
-@js.native
 trait ASPxClientCrosshairPosition extends StObject {
   
   /**
     * Gets the horizontal offset of a crosshair cursor.
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     * Gets the vertical offset of a crosshair cursor.
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
 }
 object ASPxClientCrosshairPosition {
   

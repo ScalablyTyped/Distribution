@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceRefreshWeeklySchedule extends StObject {
   
   /** Days of the week to refresh. At least one day must be specified. */
-  var daysOfWeek: js.UndefOr[js.Array[String]] = js.native
+  var daysOfWeek: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The start time of a time interval in which a data source refresh is scheduled. Only `hours` part is used. The time interval size defaults to that in the Sheets editor. */
-  var startTime: js.UndefOr[TimeOfDay] = js.native
+  var startTime: js.UndefOr[TimeOfDay] = js.undefined
 }
 object DataSourceRefreshWeeklySchedule {
   

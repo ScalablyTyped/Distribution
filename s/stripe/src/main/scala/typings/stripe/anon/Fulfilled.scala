@@ -3,35 +3,33 @@ package typings.stripe.anon
 import typings.stripe.mod.IDateFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fulfilled extends StObject {
   
   /**
     * A filter on the list based on the object canceled field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var canceled: js.UndefOr[IDateFilter] = js.native
+  var canceled: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * A filter on the list based on the object fulfilled field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var fulfilled: js.UndefOr[IDateFilter] = js.native
+  var fulfilled: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * A filter on the list based on the object paid field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var paid: js.UndefOr[IDateFilter] = js.native
+  var paid: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * A filter on the list based on the object returned field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var returned: js.UndefOr[IDateFilter] = js.native
+  var returned: js.UndefOr[IDateFilter] = js.undefined
 }
 object Fulfilled {
   

@@ -5,23 +5,23 @@ import typings.awsSdkRoute53IdNormalizerMiddleware.anon.Changes
 import typings.awsSdkTypes.middlewareMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/route53-id-normalizer-middleware", "changeBatchAliasTargetIdNormalizerMiddleware")
+  @JSImport("@aws-sdk/route53-id-normalizer-middleware", JSImport.Namespace)
   @js.native
-  def changeBatchAliasTargetIdNormalizerMiddleware[Input /* <: ChangeBatchBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/route53-id-normalizer-middleware", "idNormalizerMiddleware")
-  @js.native
-  def idNormalizerMiddleware[Input /* <: IdentifierBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = js.native
+  @scala.inline
+  def changeBatchAliasTargetIdNormalizerMiddleware[Input /* <: ChangeBatchBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeBatchAliasTargetIdNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
   
-  @js.native
+  @scala.inline
+  def idNormalizerMiddleware[Input /* <: IdentifierBearer */, Output /* <: js.Object */](next: Handler[Input, Output]): Handler[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("idNormalizerMiddleware")(next.asInstanceOf[js.Any]).asInstanceOf[Handler[Input, Output]]
+  
   trait Change extends StObject {
     
-    var ResourceRecordSet: AliasTarget = js.native
+    var ResourceRecordSet: AliasTarget
   }
   object Change {
     
@@ -39,10 +39,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeBatchBearer extends StObject {
     
-    var ChangeBatch: Changes = js.native
+    var ChangeBatch: Changes
   }
   object ChangeBatchBearer {
     
@@ -60,14 +59,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IdentifierBearer extends StObject {
     
-    var DelegationSetId: js.UndefOr[String] = js.native
+    var DelegationSetId: js.UndefOr[String] = js.undefined
     
-    var HostedZoneId: js.UndefOr[String] = js.native
+    var HostedZoneId: js.UndefOr[String] = js.undefined
     
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
   }
   object IdentifierBearer {
     

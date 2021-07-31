@@ -2,10 +2,13 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extent {
+  
+  @JSImport("openlayers", "extent")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Apply a transform function to the extent.
@@ -16,12 +19,10 @@ object extent {
     * @return Extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.applyTransform")
-  @js.native
-  def applyTransform(extent: Extent_, transformFn: TransformFunction): Extent_ = js.native
-  @JSImport("openlayers", "extent.applyTransform")
-  @js.native
-  def applyTransform(extent: Extent_, transformFn: TransformFunction, opt_extent: Extent_): Extent_ = js.native
+  @scala.inline
+  def applyTransform(extent: Extent_, transformFn: TransformFunction): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[Extent_]
+  @scala.inline
+  def applyTransform(extent: Extent_, transformFn: TransformFunction, opt_extent: Extent_): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(extent.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Build an extent that includes all given coordinates.
@@ -30,9 +31,8 @@ object extent {
     * @return Bounding extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.boundingExtent")
-  @js.native
-  def boundingExtent(coordinates: js.Array[Coordinate_]): Extent_ = js.native
+  @scala.inline
+  def boundingExtent(coordinates: js.Array[Coordinate_]): Extent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("boundingExtent")(coordinates.asInstanceOf[js.Any]).asInstanceOf[Extent_]
   
   /**
     * Return extent increased by the provided value.
@@ -42,12 +42,10 @@ object extent {
     * @return Extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.buffer")
-  @js.native
-  def buffer(extent: Extent_, value: Double): Extent_ = js.native
-  @JSImport("openlayers", "extent.buffer")
-  @js.native
-  def buffer(extent: Extent_, value: Double, opt_extent: Extent_): Extent_ = js.native
+  @scala.inline
+  def buffer(extent: Extent_, value: Double): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(extent.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Extent_]
+  @scala.inline
+  def buffer(extent: Extent_, value: Double, opt_extent: Extent_): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(extent.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Check if the passed coordinate is contained or on the edge of the extent.
@@ -57,9 +55,8 @@ object extent {
     * @return The coordinate is contained in the extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.containsCoordinate")
-  @js.native
-  def containsCoordinate(extent: Extent_, coordinate: Coordinate_): Boolean = js.native
+  @scala.inline
+  def containsCoordinate(extent: Extent_, coordinate: Coordinate_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsCoordinate")(extent.asInstanceOf[js.Any], coordinate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if one extent contains another.
@@ -73,9 +70,8 @@ object extent {
     *     first.
     * @api stable
     */
-  @JSImport("openlayers", "extent.containsExtent")
-  @js.native
-  def containsExtent(extent1: Extent_, extent2: Extent_): Boolean = js.native
+  @scala.inline
+  def containsExtent(extent1: Extent_, extent2: Extent_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsExtent")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the passed coordinate is contained or on the edge of the extent.
@@ -86,18 +82,16 @@ object extent {
     * @return The x, y values are contained in the extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.containsXY")
-  @js.native
-  def containsXY(extent: Extent_, x: Double, y: Double): Boolean = js.native
+  @scala.inline
+  def containsXY(extent: Extent_, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsXY")(extent.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create an empty extent.
     * @return Empty extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.createEmpty")
-  @js.native
-  def createEmpty(): Extent_ = js.native
+  @scala.inline
+  def createEmpty(): Extent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[Extent_]
   
   /**
     * Determine if two extents are equivalent.
@@ -106,9 +100,8 @@ object extent {
     * @return The two extents are equivalent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.equals")
-  @js.native
-  def equals_(extent1: Extent_, extent2: Extent_): Boolean = js.native
+  @scala.inline
+  def equals_(extent1: Extent_, extent2: Extent_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Modify an extent to include another extent.
@@ -117,9 +110,8 @@ object extent {
     * @return A reference to the first (extended) extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.extend")
-  @js.native
-  def extend(extent1: Extent_, extent2: Extent_): Extent_ = js.native
+  @scala.inline
+  def extend(extent1: Extent_, extent2: Extent_): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Get the bottom left coordinate of an extent.
@@ -127,9 +119,8 @@ object extent {
     * @return Bottom left coordinate.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getBottomLeft")
-  @js.native
-  def getBottomLeft(extent: Extent_): Coordinate_ = js.native
+  @scala.inline
+  def getBottomLeft(extent: Extent_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomLeft")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
   
   /**
     * Get the bottom right coordinate of an extent.
@@ -137,9 +128,8 @@ object extent {
     * @return Bottom right coordinate.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getBottomRight")
-  @js.native
-  def getBottomRight(extent: Extent_): Coordinate_ = js.native
+  @scala.inline
+  def getBottomRight(extent: Extent_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomRight")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
   
   /**
     * Get the center coordinate of an extent.
@@ -147,9 +137,8 @@ object extent {
     * @return Center.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getCenter")
-  @js.native
-  def getCenter(extent: Extent_): Coordinate_ = js.native
+  @scala.inline
+  def getCenter(extent: Extent_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenter")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
   
   /**
     * Get the height of an extent.
@@ -157,9 +146,8 @@ object extent {
     * @return Height.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getHeight")
-  @js.native
-  def getHeight(extent: Extent_): Double = js.native
+  @scala.inline
+  def getHeight(extent: Extent_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeight")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get the intersection of two extents.
@@ -169,12 +157,10 @@ object extent {
     * @return Intersecting extent.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getIntersection")
-  @js.native
-  def getIntersection(extent1: Extent_, extent2: Extent_): Extent_ = js.native
-  @JSImport("openlayers", "extent.getIntersection")
-  @js.native
-  def getIntersection(extent1: Extent_, extent2: Extent_, opt_extent: Extent_): Extent_ = js.native
+  @scala.inline
+  def getIntersection(extent1: Extent_, extent2: Extent_): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Extent_]
+  @scala.inline
+  def getIntersection(extent1: Extent_, extent2: Extent_, opt_extent: Extent_): Extent_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[Extent_]
   
   /**
     * Get the size (width, height) of an extent.
@@ -182,9 +168,8 @@ object extent {
     * @return The extent size.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getSize")
-  @js.native
-  def getSize(extent: Extent_): Size = js.native
+  @scala.inline
+  def getSize(extent: Extent_): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(extent.asInstanceOf[js.Any]).asInstanceOf[Size]
   
   /**
     * Get the top left coordinate of an extent.
@@ -192,9 +177,8 @@ object extent {
     * @return Top left coordinate.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getTopLeft")
-  @js.native
-  def getTopLeft(extent: Extent_): Coordinate_ = js.native
+  @scala.inline
+  def getTopLeft(extent: Extent_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopLeft")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
   
   /**
     * Get the top right coordinate of an extent.
@@ -202,9 +186,8 @@ object extent {
     * @return Top right coordinate.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getTopRight")
-  @js.native
-  def getTopRight(extent: Extent_): Coordinate_ = js.native
+  @scala.inline
+  def getTopRight(extent: Extent_): Coordinate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopRight")(extent.asInstanceOf[js.Any]).asInstanceOf[Coordinate_]
   
   /**
     * Get the width of an extent.
@@ -212,9 +195,8 @@ object extent {
     * @return Width.
     * @api stable
     */
-  @JSImport("openlayers", "extent.getWidth")
-  @js.native
-  def getWidth(extent: Extent_): Double = js.native
+  @scala.inline
+  def getWidth(extent: Extent_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWidth")(extent.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Determine if one extent intersects another.
@@ -223,9 +205,8 @@ object extent {
     * @return The two extents intersect.
     * @api stable
     */
-  @JSImport("openlayers", "extent.intersects")
-  @js.native
-  def intersects(extent1: Extent_, extent2: Extent_): Boolean = js.native
+  @scala.inline
+  def intersects(extent1: Extent_, extent2: Extent_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(extent1.asInstanceOf[js.Any], extent2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Determine if an extent is empty.
@@ -233,7 +214,6 @@ object extent {
     * @return Is empty.
     * @api stable
     */
-  @JSImport("openlayers", "extent.isEmpty")
-  @js.native
-  def isEmpty(extent: Extent_): Boolean = js.native
+  @scala.inline
+  def isEmpty(extent: Extent_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(extent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

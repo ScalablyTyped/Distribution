@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataChangedEventUIParam extends StObject {
   
   /**
     * Used to obtain the new data.
     */
-  var newData: js.UndefOr[js.Any] = js.native
+  var newData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to the barcode widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DataChangedEventUIParam {
   

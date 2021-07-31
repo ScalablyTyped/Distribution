@@ -2,17 +2,15 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var checks: js.UndefOr[CheckLocale] = js.native
+  var checks: js.UndefOr[CheckLocale] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var rules: js.UndefOr[RuleLocale] = js.native
+  var rules: js.UndefOr[RuleLocale] = js.undefined
 }
 object Locale {
   

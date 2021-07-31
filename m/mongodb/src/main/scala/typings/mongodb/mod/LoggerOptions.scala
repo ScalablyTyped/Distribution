@@ -2,21 +2,19 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggerOptions extends StObject {
   
   /**
     * Override default global log level.
     */
-  var logger: js.UndefOr[log] = js.native
+  var logger: js.UndefOr[log] = js.undefined
   
   /**
     * Custom logger function
     */
-  var loggerLevel: js.UndefOr[String] = js.native
+  var loggerLevel: js.UndefOr[String] = js.undefined
 }
 object LoggerOptions {
   

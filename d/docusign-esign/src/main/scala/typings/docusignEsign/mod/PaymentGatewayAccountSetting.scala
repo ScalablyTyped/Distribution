@@ -2,19 +2,17 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentGatewayAccountSetting extends StObject {
   
-  var apiFields: js.UndefOr[String] = js.native
+  var apiFields: js.UndefOr[String] = js.undefined
   
-  var authorizationCode: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.undefined
   
-  var credentialStatus: js.UndefOr[String] = js.native
+  var credentialStatus: js.UndefOr[String] = js.undefined
   
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object PaymentGatewayAccountSetting {
   

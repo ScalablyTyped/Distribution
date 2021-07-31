@@ -2,19 +2,17 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for SubmitConfigSource method.
   */
-@js.native
 trait SchemaSubmitConfigSourceResponse extends StObject {
   
   /**
     * The generated service configuration.
     */
-  var serviceConfig: js.UndefOr[SchemaService] = js.native
+  var serviceConfig: js.UndefOr[SchemaService] = js.undefined
 }
 object SchemaSubmitConfigSourceResponse {
   

@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Math {
@@ -17,6 +16,10 @@ object Math {
   
   object Angle {
     
+    @JSGlobal("Phaser.Math.Angle")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Find the angle of a segment from (x1, y1) -> (x2, y2).
       * @param x1 The x coordinate of the first point.
@@ -24,9 +27,8 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Angle.Between")
-    @js.native
-    def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
@@ -35,9 +37,8 @@ object Math {
       * @param point1 The first point.
       * @param point2 The second point.
       */
-    @JSGlobal("Phaser.Math.Angle.BetweenPoints")
-    @js.native
-    def BetweenPoints(point1: Vector2Like, point2: Vector2Like): Double = js.native
+    @scala.inline
+    def BetweenPoints(point1: Vector2Like, point2: Vector2Like): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
@@ -47,9 +48,8 @@ object Math {
       * @param point1 The first point.
       * @param point2 The second point.
       */
-    @JSGlobal("Phaser.Math.Angle.BetweenPointsY")
-    @js.native
-    def BetweenPointsY(point1: Vector2Like, point2: Vector2Like): Double = js.native
+    @scala.inline
+    def BetweenPointsY(point1: Vector2Like, point2: Vector2Like): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenPointsY")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Find the angle of a segment from (x1, y1) -> (x2, y2).
@@ -61,9 +61,8 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Angle.BetweenY")
-    @js.native
-    def BetweenY(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def BetweenY(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenY")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Takes an angle in Phasers default clockwise format and converts it so that
@@ -79,39 +78,34 @@ object Math {
       * All values for this function are in radians.
       * @param angle The angle to convert, in radians.
       */
-    @JSGlobal("Phaser.Math.Angle.CounterClockwise")
-    @js.native
-    def CounterClockwise(angle: Double): Double = js.native
+    @scala.inline
+    def CounterClockwise(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("CounterClockwise")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Normalize an angle to the [0, 2pi] range.
       * @param angle The angle to normalize, in radians.
       */
-    @JSGlobal("Phaser.Math.Angle.Normalize")
-    @js.native
-    def Normalize(angle: Double): Double = js.native
+    @scala.inline
+    def Normalize(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a random angle in the range [-pi, pi].
       */
-    @JSGlobal("Phaser.Math.Angle.Random")
-    @js.native
-    def Random(): Double = js.native
+    @scala.inline
+    def Random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Double]
     
     /**
       * Returns a random angle in the range [-180, 180].
       */
-    @JSGlobal("Phaser.Math.Angle.RandomDegrees")
-    @js.native
-    def RandomDegrees(): Double = js.native
+    @scala.inline
+    def RandomDegrees(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomDegrees")().asInstanceOf[Double]
     
     /**
       * Reverse the given angle.
       * @param angle The angle to reverse, in radians.
       */
-    @JSGlobal("Phaser.Math.Angle.Reverse")
-    @js.native
-    def Reverse(angle: Double): Double = js.native
+    @scala.inline
+    def Reverse(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Reverse")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Rotates `currentAngle` towards `targetAngle`, taking the shortest rotation distance. The `lerp` argument is the amount to rotate by in this call.
@@ -119,12 +113,10 @@ object Math {
       * @param targetAngle The target angle to rotate to, in radians.
       * @param lerp The lerp value to add to the current angle. Default 0.05.
       */
-    @JSGlobal("Phaser.Math.Angle.RotateTo")
-    @js.native
-    def RotateTo(currentAngle: Double, targetAngle: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Angle.RotateTo")
-    @js.native
-    def RotateTo(currentAngle: Double, targetAngle: Double, lerp: Double): Double = js.native
+    @scala.inline
+    def RotateTo(currentAngle: Double, targetAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateTo")(currentAngle.asInstanceOf[js.Any], targetAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def RotateTo(currentAngle: Double, targetAngle: Double, lerp: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateTo")(currentAngle.asInstanceOf[js.Any], targetAngle.asInstanceOf[js.Any], lerp.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Gets the shortest angle between `angle1` and `angle2`.
@@ -141,9 +133,8 @@ object Math {
       * @param angle1 The first angle in the range -180 to 180.
       * @param angle2 The second angle in the range -180 to 180.
       */
-    @JSGlobal("Phaser.Math.Angle.ShortestBetween")
-    @js.native
-    def ShortestBetween(angle1: Double, angle2: Double): Double = js.native
+    @scala.inline
+    def ShortestBetween(angle1: Double, angle2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ShortestBetween")(angle1.asInstanceOf[js.Any], angle2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Wrap an angle.
@@ -151,9 +142,8 @@ object Math {
       * Wraps the angle to a value in the range of -PI to PI.
       * @param angle The angle to wrap, in radians.
       */
-    @JSGlobal("Phaser.Math.Angle.Wrap")
-    @js.native
-    def Wrap(angle: Double): Double = js.native
+    @scala.inline
+    def Wrap(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Wrap an angle in degrees.
@@ -161,36 +151,32 @@ object Math {
       * Wraps the angle to a value in the range of -180 to 180.
       * @param angle The angle to wrap, in degrees.
       */
-    @JSGlobal("Phaser.Math.Angle.WrapDegrees")
-    @js.native
-    def WrapDegrees(angle: Double): Double = js.native
+    @scala.inline
+    def WrapDegrees(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("WrapDegrees")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   /**
     * Calculate the mean average of the given values.
     * @param values The values to average.
     */
-  @JSGlobal("Phaser.Math.Average")
-  @js.native
-  def Average(values: js.Array[Double]): Double = js.native
+  @scala.inline
+  def Average(values: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Average")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the Bernstein basis from the three factorial coefficients.
     * @param n The first value.
     * @param i The second value.
     */
-  @JSGlobal("Phaser.Math.Bernstein")
-  @js.native
-  def Bernstein(n: Double, i: Double): Double = js.native
+  @scala.inline
+  def Bernstein(n: Double, i: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Bernstein")(n.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Compute a random integer between the `min` and `max` values, inclusive.
     * @param min The minimum value.
     * @param max The maximum value.
     */
-  @JSGlobal("Phaser.Math.Between")
-  @js.native
-  def Between(min: integer, max: integer): integer = js.native
+  @scala.inline
+  def Between(min: integer, max: integer): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[integer]
   
   /**
     * Calculates a Catmull-Rom value from the given points, based on an alpha of 0.5.
@@ -200,9 +186,8 @@ object Math {
     * @param p2 The third control point.
     * @param p3 The fourth control point.
     */
-  @JSGlobal("Phaser.Math.CatmullRom")
-  @js.native
-  def CatmullRom(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+  @scala.inline
+  def CatmullRom(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CatmullRom")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Ceils to some place comparative to a `base`, default is 10 for decimal place.
@@ -212,18 +197,14 @@ object Math {
     * @param place The place to round to. Default 0.
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
-  @JSGlobal("Phaser.Math.CeilTo")
-  @js.native
-  def CeilTo(value: Double): Double = js.native
-  @JSGlobal("Phaser.Math.CeilTo")
-  @js.native
-  def CeilTo(value: Double, place: js.UndefOr[scala.Nothing], base: integer): Double = js.native
-  @JSGlobal("Phaser.Math.CeilTo")
-  @js.native
-  def CeilTo(value: Double, place: Double): Double = js.native
-  @JSGlobal("Phaser.Math.CeilTo")
-  @js.native
-  def CeilTo(value: Double, place: Double, base: integer): Double = js.native
+  @scala.inline
+  def CeilTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def CeilTo(value: Double, place: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def CeilTo(value: Double, place: Double, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def CeilTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Force a value within the boundaries by clamping it to the range `min`, `max`.
@@ -231,9 +212,8 @@ object Math {
     * @param min The minimum bounds.
     * @param max The maximum bounds.
     */
-  @JSGlobal("Phaser.Math.Clamp")
-  @js.native
-  def Clamp(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def Clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * For converting degrees to radians (PI / 180)
@@ -248,20 +228,22 @@ object Math {
     * Convert the given angle from degrees, to the equivalent angle in radians.
     * @param degrees The angle (in degrees) to convert to radians.
     */
-  @JSGlobal("Phaser.Math.DegToRad")
-  @js.native
-  def DegToRad(degrees: integer): Double = js.native
+  @scala.inline
+  def DegToRad(degrees: integer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DegToRad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the positive difference of two given numbers.
     * @param a The first number in the calculation.
     * @param b The second number in the calculation.
     */
-  @JSGlobal("Phaser.Math.Difference")
-  @js.native
-  def Difference(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def Difference(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Difference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Distance {
+    
+    @JSGlobal("Phaser.Math.Distance")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Calculate the distance between two sets of coordinates (points).
@@ -270,27 +252,24 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Distance.Between")
-    @js.native
-    def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the distance between two points.
       * @param a The first point.
       * @param b The second point.
       */
-    @JSGlobal("Phaser.Math.Distance.BetweenPoints")
-    @js.native
-    def BetweenPoints(a: Vector2Like, b: Vector2Like): Double = js.native
+    @scala.inline
+    def BetweenPoints(a: Vector2Like, b: Vector2Like): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the squared distance between two points.
       * @param a The first point.
       * @param b The second point.
       */
-    @JSGlobal("Phaser.Math.Distance.BetweenPointsSquared")
-    @js.native
-    def BetweenPointsSquared(a: Vector2Like, b: Vector2Like): Double = js.native
+    @scala.inline
+    def BetweenPointsSquared(a: Vector2Like, b: Vector2Like): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenPointsSquared")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the Chebyshev distance between two sets of coordinates (points).
@@ -302,9 +281,8 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Distance.Chebyshev")
-    @js.native
-    def Chebyshev(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def Chebyshev(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Chebyshev")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the distance between two sets of coordinates (points) to the power of `pow`.
@@ -314,9 +292,8 @@ object Math {
       * @param y2 The y coordinate of the second point.
       * @param pow The exponent.
       */
-    @JSGlobal("Phaser.Math.Distance.Power")
-    @js.native
-    def Power(x1: Double, y1: Double, x2: Double, y2: Double, pow: Double): Double = js.native
+    @scala.inline
+    def Power(x1: Double, y1: Double, x2: Double, y2: Double, pow: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Power")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], pow.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the snake distance between two sets of coordinates (points).
@@ -328,9 +305,8 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Distance.Snake")
-    @js.native
-    def Snake(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def Snake(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Snake")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Calculate the distance between two sets of coordinates (points), squared.
@@ -339,9 +315,8 @@ object Math {
       * @param x2 The x coordinate of the second point.
       * @param y2 The y coordinate of the second point.
       */
-    @JSGlobal("Phaser.Math.Distance.Squared")
-    @js.native
-    def Squared(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def Squared(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Squared")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /**
@@ -355,127 +330,136 @@ object Math {
   
   object Easing {
     
+    @JSGlobal("Phaser.Math.Easing")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object Back {
+      
+      @JSGlobal("Phaser.Math.Easing.Back")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Back ease-in.
         * @param v The value to be tweened.
         * @param overshoot The overshoot amount. Default 1.70158.
         */
-      @JSGlobal("Phaser.Math.Easing.Back.In")
-      @js.native
-      def In(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Back.In")
-      @js.native
-      def In(v: Double, overshoot: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def In(v: Double, overshoot: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any], overshoot.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Back ease-in/out.
         * @param v The value to be tweened.
         * @param overshoot The overshoot amount. Default 1.70158.
         */
-      @JSGlobal("Phaser.Math.Easing.Back.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Back.InOut")
-      @js.native
-      def InOut(v: Double, overshoot: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def InOut(v: Double, overshoot: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any], overshoot.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Back ease-out.
         * @param v The value to be tweened.
         * @param overshoot The overshoot amount. Default 1.70158.
         */
-      @JSGlobal("Phaser.Math.Easing.Back.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Back.Out")
-      @js.native
-      def Out(v: Double, overshoot: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def Out(v: Double, overshoot: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any], overshoot.asInstanceOf[js.Any])).asInstanceOf[Double]
     }
     
     object Bounce {
+      
+      @JSGlobal("Phaser.Math.Easing.Bounce")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Bounce ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Bounce.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Bounce ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Bounce.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Bounce ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Bounce.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Circular {
+      
+      @JSGlobal("Phaser.Math.Easing.Circular")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Circular ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Circular.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Circular ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Circular.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Circular ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Circular.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Cubic {
+      
+      @JSGlobal("Phaser.Math.Easing.Cubic")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Cubic ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Cubic.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Cubic ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Cubic.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Cubic ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Cubic.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Elastic {
+      
+      @JSGlobal("Phaser.Math.Easing.Elastic")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Elastic ease-in.
@@ -483,18 +467,14 @@ object Math {
         * @param amplitude The amplitude of the elastic ease. Default 0.1.
         * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
         */
-      @JSGlobal("Phaser.Math.Easing.Elastic.In")
-      @js.native
-      def In(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.In")
-      @js.native
-      def In(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.In")
-      @js.native
-      def In(v: Double, amplitude: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.In")
-      @js.native
-      def In(v: Double, amplitude: Double, period: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def In(v: Double, amplitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def In(v: Double, amplitude: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def In(v: Double, amplitude: Unit, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Elastic ease-in/out.
@@ -502,18 +482,14 @@ object Math {
         * @param amplitude The amplitude of the elastic ease. Default 0.1.
         * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
         */
-      @JSGlobal("Phaser.Math.Easing.Elastic.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.InOut")
-      @js.native
-      def InOut(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.InOut")
-      @js.native
-      def InOut(v: Double, amplitude: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.InOut")
-      @js.native
-      def InOut(v: Double, amplitude: Double, period: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def InOut(v: Double, amplitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def InOut(v: Double, amplitude: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def InOut(v: Double, amplitude: Unit, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Elastic ease-out.
@@ -521,161 +497,161 @@ object Math {
         * @param amplitude The amplitude of the elastic ease. Default 0.1.
         * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
         */
-      @JSGlobal("Phaser.Math.Easing.Elastic.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.Out")
-      @js.native
-      def Out(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.Out")
-      @js.native
-      def Out(v: Double, amplitude: Double): Double = js.native
-      @JSGlobal("Phaser.Math.Easing.Elastic.Out")
-      @js.native
-      def Out(v: Double, amplitude: Double, period: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def Out(v: Double, amplitude: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def Out(v: Double, amplitude: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def Out(v: Double, amplitude: Unit, period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any], amplitude.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
     }
     
     object Expo {
+      
+      @JSGlobal("Phaser.Math.Easing.Expo")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Exponential ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Expo.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Exponential ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Expo.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Exponential ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Expo.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     /**
       * Linear easing (no variation).
       * @param v The value to be tweened.
       */
-    @JSGlobal("Phaser.Math.Easing.Linear")
-    @js.native
-    def Linear(v: Double): Double = js.native
+    @scala.inline
+    def Linear(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     object Quadratic {
+      
+      @JSGlobal("Phaser.Math.Easing.Quadratic")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Quadratic ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quadratic.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quadratic ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quadratic.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quadratic ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quadratic.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Quartic {
+      
+      @JSGlobal("Phaser.Math.Easing.Quartic")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Quartic ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quartic.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quartic ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quartic.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quartic ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quartic.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Quintic {
+      
+      @JSGlobal("Phaser.Math.Easing.Quintic")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Quintic ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quintic.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quintic ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quintic.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Quintic ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Quintic.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     object Sine {
+      
+      @JSGlobal("Phaser.Math.Easing.Sine")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Sinusoidal ease-in.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Sine.In")
-      @js.native
-      def In(v: Double): Double = js.native
+      @scala.inline
+      def In(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("In")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Sinusoidal ease-in/out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Sine.InOut")
-      @js.native
-      def InOut(v: Double): Double = js.native
+      @scala.inline
+      def InOut(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("InOut")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Sinusoidal ease-out.
         * @param v The value to be tweened.
         */
-      @JSGlobal("Phaser.Math.Easing.Sine.Out")
-      @js.native
-      def Out(v: Double): Double = js.native
+      @scala.inline
+      def Out(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Out")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
     
     /**
@@ -683,30 +659,26 @@ object Math {
       * @param v The value to be tweened.
       * @param steps The number of steps in the ease. Default 1.
       */
-    @JSGlobal("Phaser.Math.Easing.Stepped")
-    @js.native
-    def Stepped(v: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Easing.Stepped")
-    @js.native
-    def Stepped(v: Double, steps: Double): Double = js.native
+    @scala.inline
+    def Stepped(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Stepped")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def Stepped(v: Double, steps: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Stepped")(v.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /**
     * Calculates the factorial of a given number for integer values greater than 0.
     * @param value A positive integer to calculate the factorial of.
     */
-  @JSGlobal("Phaser.Math.Factorial")
-  @js.native
-  def Factorial(value: Double): Double = js.native
+  @scala.inline
+  def Factorial(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Factorial")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Generate a random floating point number between the two given bounds, minimum inclusive, maximum exclusive.
     * @param min The lower bound for the float, inclusive.
     * @param max The upper bound for the float exclusive.
     */
-  @JSGlobal("Phaser.Math.FloatBetween")
-  @js.native
-  def FloatBetween(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def FloatBetween(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloatBetween")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Floors to some place comparative to a `base`, default is 10 for decimal place.
@@ -716,18 +688,14 @@ object Math {
     * @param place The place to round to. Default 0.
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
-  @JSGlobal("Phaser.Math.FloorTo")
-  @js.native
-  def FloorTo(value: Double): Double = js.native
-  @JSGlobal("Phaser.Math.FloorTo")
-  @js.native
-  def FloorTo(value: Double, place: js.UndefOr[scala.Nothing], base: integer): Double = js.native
-  @JSGlobal("Phaser.Math.FloorTo")
-  @js.native
-  def FloorTo(value: Double, place: integer): Double = js.native
-  @JSGlobal("Phaser.Math.FloorTo")
-  @js.native
-  def FloorTo(value: Double, place: integer, base: integer): Double = js.native
+  @scala.inline
+  def FloorTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def FloorTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def FloorTo(value: Double, place: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def FloorTo(value: Double, place: integer, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Return a value based on the range between `min` and `max` and the percentage given.
@@ -735,26 +703,26 @@ object Math {
     * @param min The minimum value.
     * @param max The maximum value.
     */
-  @JSGlobal("Phaser.Math.FromPercent")
-  @js.native
-  def FromPercent(percent: Double, min: Double): Double = js.native
-  @JSGlobal("Phaser.Math.FromPercent")
-  @js.native
-  def FromPercent(percent: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def FromPercent(percent: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPercent")(percent.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def FromPercent(percent: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPercent")(percent.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Fuzzy {
+    
+    @JSGlobal("Phaser.Math.Fuzzy")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Calculate the fuzzy ceiling of the given value.
       * @param value The value.
       * @param epsilon The epsilon. Default 0.0001.
       */
-    @JSGlobal("Phaser.Math.Fuzzy.Ceil")
-    @js.native
-    def Ceil(value: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Fuzzy.Ceil")
-    @js.native
-    def Ceil(value: Double, epsilon: Double): Double = js.native
+    @scala.inline
+    def Ceil(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def Ceil(value: Double, epsilon: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Check whether the given values are fuzzily equal.
@@ -764,24 +732,20 @@ object Math {
       * @param b The second value.
       * @param epsilon The epsilon. Default 0.0001.
       */
-    @JSGlobal("Phaser.Math.Fuzzy.Equal")
-    @js.native
-    def Equal(a: Double, b: Double): Boolean = js.native
-    @JSGlobal("Phaser.Math.Fuzzy.Equal")
-    @js.native
-    def Equal(a: Double, b: Double, epsilon: Double): Boolean = js.native
+    @scala.inline
+    def Equal(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def Equal(a: Double, b: Double, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Calculate the fuzzy floor of the given value.
       * @param value The value.
       * @param epsilon The epsilon. Default 0.0001.
       */
-    @JSGlobal("Phaser.Math.Fuzzy.Floor")
-    @js.native
-    def Floor(value: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Fuzzy.Floor")
-    @js.native
-    def Floor(value: Double, epsilon: Double): Double = js.native
+    @scala.inline
+    def Floor(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def Floor(value: Double, epsilon: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Check whether `a` is fuzzily greater than `b`.
@@ -791,12 +755,10 @@ object Math {
       * @param b The second value.
       * @param epsilon The epsilon. Default 0.0001.
       */
-    @JSGlobal("Phaser.Math.Fuzzy.GreaterThan")
-    @js.native
-    def GreaterThan(a: Double, b: Double): Boolean = js.native
-    @JSGlobal("Phaser.Math.Fuzzy.GreaterThan")
-    @js.native
-    def GreaterThan(a: Double, b: Double, epsilon: Double): Boolean = js.native
+    @scala.inline
+    def GreaterThan(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GreaterThan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def GreaterThan(a: Double, b: Double, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("GreaterThan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Check whether `a` is fuzzily less than `b`.
@@ -806,12 +768,10 @@ object Math {
       * @param b The second value.
       * @param epsilon The epsilon. Default 0.0001.
       */
-    @JSGlobal("Phaser.Math.Fuzzy.LessThan")
-    @js.native
-    def LessThan(a: Double, b: Double): Boolean = js.native
-    @JSGlobal("Phaser.Math.Fuzzy.LessThan")
-    @js.native
-    def LessThan(a: Double, b: Double, epsilon: Double): Boolean = js.native
+    @scala.inline
+    def LessThan(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LessThan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def LessThan(a: Double, b: Double, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LessThan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -819,29 +779,30 @@ object Math {
     * @param distance The distance.
     * @param time The time, in seconds.
     */
-  @JSGlobal("Phaser.Math.GetSpeed")
-  @js.native
-  def GetSpeed(distance: Double, time: integer): Double = js.native
+  @scala.inline
+  def GetSpeed(distance: Double, time: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSpeed")(distance.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Interpolation {
+    
+    @JSGlobal("Phaser.Math.Interpolation")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A bezier interpolation method.
       * @param v The input array of values to interpolate between.
       * @param k The percentage of interpolation, between 0 and 1.
       */
-    @JSGlobal("Phaser.Math.Interpolation.Bezier")
-    @js.native
-    def Bezier(v: js.Array[Double], k: Double): Double = js.native
+    @scala.inline
+    def Bezier(v: js.Array[Double], k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Bezier")(v.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A Catmull-Rom interpolation method.
       * @param v The input array of values to interpolate between.
       * @param k The percentage of interpolation, between 0 and 1.
       */
-    @JSGlobal("Phaser.Math.Interpolation.CatmullRom")
-    @js.native
-    def CatmullRom(v: js.Array[Double], k: Double): Double = js.native
+    @scala.inline
+    def CatmullRom(v: js.Array[Double], k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CatmullRom")(v.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A cubic bezier interpolation method.
@@ -853,18 +814,16 @@ object Math {
       * @param p2 The second control point.
       * @param p3 The end point.
       */
-    @JSGlobal("Phaser.Math.Interpolation.CubicBezier")
-    @js.native
-    def CubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+    @scala.inline
+    def CubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CubicBezier")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A linear interpolation method.
       * @param v The input array of values to interpolate between.
       * @param k The percentage of interpolation, between 0 and 1.
       */
-    @JSGlobal("Phaser.Math.Interpolation.Linear")
-    @js.native
-    def Linear(v: js.Array[Double], k: Double): Double = js.native
+    @scala.inline
+    def Linear(v: js.Array[Double], k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(v.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A quadratic bezier interpolation method.
@@ -873,9 +832,8 @@ object Math {
       * @param p1 The control point.
       * @param p2 The end point.
       */
-    @JSGlobal("Phaser.Math.Interpolation.QuadraticBezier")
-    @js.native
-    def QuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = js.native
+    @scala.inline
+    def QuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("QuadraticBezier")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A Smooth Step interpolation method.
@@ -883,9 +841,8 @@ object Math {
       * @param min The minimum value, also known as the 'left edge', assumed smaller than the 'right edge'.
       * @param max The maximum value, also known as the 'right edge', assumed greater than the 'left edge'.
       */
-    @JSGlobal("Phaser.Math.Interpolation.SmoothStep")
-    @js.native
-    def SmoothStep(t: Double, min: Double, max: Double): Double = js.native
+    @scala.inline
+    def SmoothStep(t: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothStep")(t.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * A Smoother Step interpolation method.
@@ -893,26 +850,23 @@ object Math {
       * @param min The minimum value, also known as the 'left edge', assumed smaller than the 'right edge'.
       * @param max The maximum value, also known as the 'right edge', assumed greater than the 'left edge'.
       */
-    @JSGlobal("Phaser.Math.Interpolation.SmootherStep")
-    @js.native
-    def SmootherStep(t: Double, min: Double, max: Double): Double = js.native
+    @scala.inline
+    def SmootherStep(t: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmootherStep")(t.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /**
     * Check if a given value is an even number.
     * @param value The number to perform the check with.
     */
-  @JSGlobal("Phaser.Math.IsEven")
-  @js.native
-  def IsEven(value: Double): Boolean = js.native
+  @scala.inline
+  def IsEven(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEven")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Check if a given value is an even number using a strict type check.
     * @param value The number to perform the check with.
     */
-  @JSGlobal("Phaser.Math.IsEvenStrict")
-  @js.native
-  def IsEvenStrict(value: Double): Boolean = js.native
+  @scala.inline
+  def IsEvenStrict(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEvenStrict")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Calculates a linear (interpolation) value over t.
@@ -920,9 +874,8 @@ object Math {
     * @param p1 The second point.
     * @param t The percentage between p0 and p1 to return, represented as a number between 0 and 1.
     */
-  @JSGlobal("Phaser.Math.Linear")
-  @js.native
-  def Linear(p0: Double, p1: Double, t: Double): Double = js.native
+  @scala.inline
+  def Linear(p0: Double, p1: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * The maximum safe integer this browser supports.
@@ -956,7 +909,8 @@ object Math {
     * @param m Optional Matrix3 to copy values from.
     */
   class Matrix3 ()
-    extends typings.phaser.Phaser.Math.Matrix3 {
+    extends StObject
+       with typings.phaser.Phaser.Math.Matrix3 {
     def this(m: typings.phaser.Phaser.Math.Matrix3) = this()
   }
   
@@ -970,7 +924,8 @@ object Math {
     * @param m Optional Matrix4 to copy values from.
     */
   class Matrix4 ()
-    extends typings.phaser.Phaser.Math.Matrix4 {
+    extends StObject
+       with typings.phaser.Phaser.Math.Matrix4 {
     def this(m: typings.phaser.Phaser.Math.Matrix4) = this()
   }
   
@@ -980,9 +935,8 @@ object Math {
     * @param amount The amount to add.
     * @param max The maximum value to return.
     */
-  @JSGlobal("Phaser.Math.MaxAdd")
-  @js.native
-  def MaxAdd(value: Double, amount: Double, max: Double): Double = js.native
+  @scala.inline
+  def MaxAdd(value: Double, amount: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxAdd")(value.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Subtract an `amount` from `value`, limiting the minimum result to `min`.
@@ -990,9 +944,8 @@ object Math {
     * @param amount The amount to subtract.
     * @param min The minimum value to return.
     */
-  @JSGlobal("Phaser.Math.MinSub")
-  @js.native
-  def MinSub(value: Double, amount: Double, min: Double): Double = js.native
+  @scala.inline
+  def MinSub(value: Double, amount: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MinSub")(value.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * The value of PI * 2.
@@ -1013,28 +966,27 @@ object Math {
     * @param max The maximum value.
     * @param upperMax The mid-way point in the range that represents 100%.
     */
-  @JSGlobal("Phaser.Math.Percent")
-  @js.native
-  def Percent(value: Double, min: Double): Double = js.native
-  @JSGlobal("Phaser.Math.Percent")
-  @js.native
-  def Percent(value: Double, min: Double, max: js.UndefOr[scala.Nothing], upperMax: Double): Double = js.native
-  @JSGlobal("Phaser.Math.Percent")
-  @js.native
-  def Percent(value: Double, min: Double, max: Double): Double = js.native
-  @JSGlobal("Phaser.Math.Percent")
-  @js.native
-  def Percent(value: Double, min: Double, max: Double, upperMax: Double): Double = js.native
+  @scala.inline
+  def Percent(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Percent")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def Percent(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Percent")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def Percent(value: Double, min: Double, max: Double, upperMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Percent")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], upperMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def Percent(value: Double, min: Double, max: Unit, upperMax: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Percent")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], upperMax.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Pow2 {
+    
+    @JSGlobal("Phaser.Math.Pow2")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns the nearest power of 2 to the given `value`.
       * @param value The value.
       */
-    @JSGlobal("Phaser.Math.Pow2.GetNext")
-    @js.native
-    def GetNext(value: Double): integer = js.native
+    @scala.inline
+    def GetNext(value: Double): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNext")(value.asInstanceOf[js.Any]).asInstanceOf[integer]
     
     /**
       * Checks if the given `width` and `height` are a power of two.
@@ -1042,17 +994,15 @@ object Math {
       * @param width The width.
       * @param height The height.
       */
-    @JSGlobal("Phaser.Math.Pow2.IsSize")
-    @js.native
-    def IsSize(width: Double, height: Double): Boolean = js.native
+    @scala.inline
+    def IsSize(width: Double, height: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Tests the value and returns `true` if it is a power of two.
       * @param value The value to check if it's a power of two.
       */
-    @JSGlobal("Phaser.Math.Pow2.IsValue")
-    @js.native
-    def IsValue(value: Double): Boolean = js.native
+    @scala.inline
+    def IsValue(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1068,27 +1018,23 @@ object Math {
     * @param w The w component.
     */
   class Quaternion ()
-    extends typings.phaser.Phaser.Math.Quaternion {
+    extends StObject
+       with typings.phaser.Phaser.Math.Quaternion {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: Unit, w: Double) = this()
+    def this(x: Double, y: Unit, z: Double, w: Double) = this()
+    def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Double, z: Double, w: Double) = this()
+    def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
   }
   
   /**
@@ -1114,9 +1060,8 @@ object Math {
     * Convert the given angle in radians, to the equivalent angle in degrees.
     * @param radians The angle in radians to convert ot degrees.
     */
-  @JSGlobal("Phaser.Math.RadToDeg")
-  @js.native
-  def RadToDeg(radians: Double): integer = js.native
+  @scala.inline
+  def RadToDeg(radians: Double): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("RadToDeg")(radians.asInstanceOf[js.Any]).asInstanceOf[integer]
   
   /**
     * A seeded Random Data Generator.
@@ -1137,7 +1082,8 @@ object Math {
     * @param seeds The seeds to use for the random number generator.
     */
   class RandomDataGenerator ()
-    extends typings.phaser.Phaser.Math.RandomDataGenerator {
+    extends StObject
+       with typings.phaser.Phaser.Math.RandomDataGenerator {
     def this(seeds: String) = this()
     def this(seeds: js.Array[String]) = this()
   }
@@ -1151,48 +1097,40 @@ object Math {
     * @param vector The Vector to compute random values for.
     * @param scale The scale of the random values. Default 1.
     */
-  @JSGlobal("Phaser.Math.RandomXY")
-  @js.native
-  def RandomXY(vector: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = js.native
-  @JSGlobal("Phaser.Math.RandomXY")
-  @js.native
-  def RandomXY(vector: typings.phaser.Phaser.Math.Vector2, scale: Double): typings.phaser.Phaser.Math.Vector2 = js.native
+  @scala.inline
+  def RandomXY(vector: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomXY")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  @scala.inline
+  def RandomXY(vector: typings.phaser.Phaser.Math.Vector2, scale: Double): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomXY")(vector.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
   
   /**
     * Compute a random position vector in a spherical area, optionally defined by the given radius.
     * @param vec3 The Vector to compute random values for.
     * @param radius The radius. Default 1.
     */
-  @JSGlobal("Phaser.Math.RandomXYZ")
-  @js.native
-  def RandomXYZ(vec3: typings.phaser.Phaser.Math.Vector3): typings.phaser.Phaser.Math.Vector3 = js.native
-  @JSGlobal("Phaser.Math.RandomXYZ")
-  @js.native
-  def RandomXYZ(vec3: typings.phaser.Phaser.Math.Vector3, radius: Double): typings.phaser.Phaser.Math.Vector3 = js.native
+  @scala.inline
+  def RandomXYZ(vec3: typings.phaser.Phaser.Math.Vector3): typings.phaser.Phaser.Math.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomXYZ")(vec3.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Math.Vector3]
+  @scala.inline
+  def RandomXYZ(vec3: typings.phaser.Phaser.Math.Vector3, radius: Double): typings.phaser.Phaser.Math.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomXYZ")(vec3.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector3]
   
   /**
     * Compute a random four-dimensional vector.
     * @param vec4 The Vector to compute random values for.
     * @param scale The scale of the random values. Default 1.
     */
-  @JSGlobal("Phaser.Math.RandomXYZW")
-  @js.native
-  def RandomXYZW(vec4: typings.phaser.Phaser.Math.Vector4): typings.phaser.Phaser.Math.Vector4 = js.native
-  @JSGlobal("Phaser.Math.RandomXYZW")
-  @js.native
-  def RandomXYZW(vec4: typings.phaser.Phaser.Math.Vector4, scale: Double): typings.phaser.Phaser.Math.Vector4 = js.native
+  @scala.inline
+  def RandomXYZW(vec4: typings.phaser.Phaser.Math.Vector4): typings.phaser.Phaser.Math.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomXYZW")(vec4.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Math.Vector4]
+  @scala.inline
+  def RandomXYZW(vec4: typings.phaser.Phaser.Math.Vector4, scale: Double): typings.phaser.Phaser.Math.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomXYZW")(vec4.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector4]
   
-  @JSGlobal("Phaser.Math.Rotate")
-  @js.native
-  def Rotate(point: js.Object, angle: Double): Point = js.native
+  @scala.inline
+  def Rotate(point: js.Object, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
   /**
     * Rotate a given point by a given angle around the origin (0, 0), in an anti-clockwise direction.
     * @param point The point to be rotated.
     * @param angle The angle to be rotated by in an anticlockwise direction.
     */
-  @JSGlobal("Phaser.Math.Rotate")
-  @js.native
-  def Rotate(point: Point, angle: Double): Point = js.native
+  @scala.inline
+  def Rotate(point: Point, angle: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Point]
   
   /**
     * Rotate a `point` around `x` and `y` to the given `angle`, at the same distance.
@@ -1203,9 +1141,8 @@ object Math {
     * @param y The vertical coordinate to rotate around.
     * @param angle The angle of rotation in radians.
     */
-  @JSGlobal("Phaser.Math.RotateAround")
-  @js.native
-  def RotateAround[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double): T = js.native
+  @scala.inline
+  def RotateAround[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAround")(point.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Rotate a `point` around `x` and `y` by the given `angle` and `distance`.
@@ -1217,9 +1154,8 @@ object Math {
     * @param angle The angle of rotation in radians.
     * @param distance The distance from (x, y) to place the point at.
     */
-  @JSGlobal("Phaser.Math.RotateAroundDistance")
-  @js.native
-  def RotateAroundDistance[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = js.native
+  @scala.inline
+  def RotateAroundDistance[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundDistance")(point.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Position a `point` at the given `angle` and `distance` to (`x`, `y`).
@@ -1229,9 +1165,8 @@ object Math {
     * @param angle The angle of rotation in radians.
     * @param distance The distance from (x, y) to place the point at.
     */
-  @JSGlobal("Phaser.Math.RotateTo")
-  @js.native
-  def RotateTo[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = js.native
+  @scala.inline
+  def RotateTo[T /* <: Vector2Like */](point: T, x: Double, y: Double, angle: Double, distance: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateTo")(point.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Rotates a vector in place by axis angle.
@@ -1242,17 +1177,15 @@ object Math {
     * @param axis The axis to rotate around.
     * @param radians The angle of rotation in radians.
     */
-  @JSGlobal("Phaser.Math.RotateVec3")
-  @js.native
-  def RotateVec3(vec: typings.phaser.Phaser.Math.Vector3, axis: typings.phaser.Phaser.Math.Vector3, radians: Double): typings.phaser.Phaser.Math.Vector3 = js.native
+  @scala.inline
+  def RotateVec3(vec: typings.phaser.Phaser.Math.Vector3, axis: typings.phaser.Phaser.Math.Vector3, radians: Double): typings.phaser.Phaser.Math.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateVec3")(vec.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], radians.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector3]
   
   /**
     * Round a given number so it is further away from zero. That is, positive numbers are rounded up, and negative numbers are rounded down.
     * @param value The number to round.
     */
-  @JSGlobal("Phaser.Math.RoundAwayFromZero")
-  @js.native
-  def RoundAwayFromZero(value: Double): Double = js.native
+  @scala.inline
+  def RoundAwayFromZero(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("RoundAwayFromZero")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Round a value to the given precision.
@@ -1277,18 +1210,14 @@ object Math {
     * @param place The place to round to. Positive to round the units, negative to round the decimal. Default 0.
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
-  @JSGlobal("Phaser.Math.RoundTo")
-  @js.native
-  def RoundTo(value: Double): Double = js.native
-  @JSGlobal("Phaser.Math.RoundTo")
-  @js.native
-  def RoundTo(value: Double, place: js.UndefOr[scala.Nothing], base: integer): Double = js.native
-  @JSGlobal("Phaser.Math.RoundTo")
-  @js.native
-  def RoundTo(value: Double, place: integer): Double = js.native
-  @JSGlobal("Phaser.Math.RoundTo")
-  @js.native
-  def RoundTo(value: Double, place: integer, base: integer): Double = js.native
+  @scala.inline
+  def RoundTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def RoundTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def RoundTo(value: Double, place: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def RoundTo(value: Double, place: integer, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Generate a series of sine and cosine values.
@@ -1297,35 +1226,22 @@ object Math {
     * @param cosAmp The cosine value amplitude. Default 1.
     * @param frequency The frequency of the values. Default 1.
     */
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(
-    length: Double,
-    sinAmp: js.UndefOr[scala.Nothing],
-    cosAmp: js.UndefOr[scala.Nothing],
-    frequency: Double
-  ): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: js.UndefOr[scala.Nothing], cosAmp: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: js.UndefOr[scala.Nothing], cosAmp: Double, frequency: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: js.UndefOr[scala.Nothing], frequency: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: Double): SinCosTable = js.native
-  @JSGlobal("Phaser.Math.SinCosTableGenerator")
-  @js.native
-  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: Double, frequency: Double): SinCosTable = js.native
+  @scala.inline
+  def SinCosTableGenerator(length: Double): SinCosTable = ^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any]).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: Double, frequency: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Double, cosAmp: Unit, frequency: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Unit, cosAmp: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Unit, cosAmp: Double, frequency: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
+  @scala.inline
+  def SinCosTableGenerator(length: Double, sinAmp: Unit, cosAmp: Unit, frequency: Double): SinCosTable = (^.asInstanceOf[js.Dynamic].applyDynamic("SinCosTableGenerator")(length.asInstanceOf[js.Any], sinAmp.asInstanceOf[js.Any], cosAmp.asInstanceOf[js.Any], frequency.asInstanceOf[js.Any])).asInstanceOf[SinCosTable]
   
   /**
     * Calculate a smooth interpolation percentage of `x` between `min` and `max`.
@@ -1337,9 +1253,8 @@ object Math {
     * @param min The minimum value, also known as the 'left edge', assumed smaller than the 'right edge'.
     * @param max The maximum value, also known as the 'right edge', assumed greater than the 'left edge'.
     */
-  @JSGlobal("Phaser.Math.SmoothStep")
-  @js.native
-  def SmoothStep(x: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def SmoothStep(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothStep")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Calculate a smoother interpolation percentage of `x` between `min` and `max`.
@@ -1353,11 +1268,14 @@ object Math {
     * @param min The minimum value, also known as the 'left edge', assumed smaller than the 'right edge'.
     * @param max The maximum value, also known as the 'right edge', assumed greater than the 'left edge'.
     */
-  @JSGlobal("Phaser.Math.SmootherStep")
-  @js.native
-  def SmootherStep(x: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def SmootherStep(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmootherStep")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Snap {
+    
+    @JSGlobal("Phaser.Math.Snap")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Snap a value to nearest grid slice, using ceil.
@@ -1369,18 +1287,14 @@ object Math {
       * @param start Optional starting offset for gap. Default 0.
       * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
       */
-    @JSGlobal("Phaser.Math.Snap.Ceil")
-    @js.native
-    def Ceil(value: Double, gap: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Ceil")
-    @js.native
-    def Ceil(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Ceil")
-    @js.native
-    def Ceil(value: Double, gap: Double, start: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Ceil")
-    @js.native
-    def Ceil(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
+    @scala.inline
+    def Ceil(value: Double, gap: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Ceil(value: Double, gap: Double, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Ceil(value: Double, gap: Double, start: Double, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Ceil(value: Double, gap: Double, start: Unit, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Snap a value to nearest grid slice, using floor.
@@ -1392,18 +1306,14 @@ object Math {
       * @param start Optional starting offset for gap. Default 0.
       * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
       */
-    @JSGlobal("Phaser.Math.Snap.Floor")
-    @js.native
-    def Floor(value: Double, gap: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Floor")
-    @js.native
-    def Floor(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Floor")
-    @js.native
-    def Floor(value: Double, gap: Double, start: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.Floor")
-    @js.native
-    def Floor(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
+    @scala.inline
+    def Floor(value: Double, gap: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Floor(value: Double, gap: Double, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Floor(value: Double, gap: Double, start: Double, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Floor(value: Double, gap: Double, start: Unit, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Snap a value to nearest grid slice, using rounding.
@@ -1414,18 +1324,14 @@ object Math {
       * @param start Optional starting offset for gap. Default 0.
       * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
       */
-    @JSGlobal("Phaser.Math.Snap.To")
-    @js.native
-    def To(value: Double, gap: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.To")
-    @js.native
-    def To(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.To")
-    @js.native
-    def To(value: Double, gap: Double, start: Double): Double = js.native
-    @JSGlobal("Phaser.Math.Snap.To")
-    @js.native
-    def To(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
+    @scala.inline
+    def To(value: Double, gap: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("To")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def To(value: Double, gap: Double, start: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("To")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def To(value: Double, gap: Double, start: Double, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("To")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def To(value: Double, gap: Double, start: Unit, divide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("To")(value.asInstanceOf[js.Any], gap.asInstanceOf[js.Any], start.asInstanceOf[js.Any], divide.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /**
@@ -1448,12 +1354,10 @@ object Math {
     * @param height The height of the grid.
     * @param out An optional Vector2 to store the result in. If not given, a new Vector2 instance will be created.
     */
-  @JSGlobal("Phaser.Math.ToXY")
-  @js.native
-  def ToXY(index: integer, width: integer, height: integer): typings.phaser.Phaser.Math.Vector2 = js.native
-  @JSGlobal("Phaser.Math.ToXY")
-  @js.native
-  def ToXY(index: integer, width: integer, height: integer, out: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = js.native
+  @scala.inline
+  def ToXY(index: integer, width: integer, height: integer): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  @scala.inline
+  def ToXY(index: integer, width: integer, height: integer, out: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
   
   /**
     * Takes the `x` and `y` coordinates and transforms them into the same space as
@@ -1467,8 +1371,7 @@ object Math {
     * @param scaleY Vertical scale of the transform point.
     * @param output The output vector, point or object for the translated coordinates.
     */
-  @JSGlobal("Phaser.Math.TransformXY")
-  @js.native
+  @scala.inline
   def TransformXY(
     x: Double,
     y: Double,
@@ -1477,9 +1380,8 @@ object Math {
     rotation: Double,
     scaleX: Double,
     scaleY: Double
-  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = js.native
-  @JSGlobal("Phaser.Math.TransformXY")
-  @js.native
+  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], positionX.asInstanceOf[js.Any], positionY.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2 | Point | js.Object]
+  @scala.inline
   def TransformXY(
     x: Double,
     y: Double,
@@ -1489,9 +1391,8 @@ object Math {
     scaleX: Double,
     scaleY: Double,
     output: js.Object
-  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = js.native
-  @JSGlobal("Phaser.Math.TransformXY")
-  @js.native
+  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], positionX.asInstanceOf[js.Any], positionY.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2 | Point | js.Object]
+  @scala.inline
   def TransformXY(
     x: Double,
     y: Double,
@@ -1501,9 +1402,8 @@ object Math {
     scaleX: Double,
     scaleY: Double,
     output: Point
-  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = js.native
-  @JSGlobal("Phaser.Math.TransformXY")
-  @js.native
+  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], positionX.asInstanceOf[js.Any], positionY.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2 | Point | js.Object]
+  @scala.inline
   def TransformXY(
     x: Double,
     y: Double,
@@ -1513,7 +1413,7 @@ object Math {
     scaleX: Double,
     scaleY: Double,
     output: typings.phaser.Phaser.Math.Vector2
-  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = js.native
+  ): typings.phaser.Phaser.Math.Vector2 | Point | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], positionX.asInstanceOf[js.Any], positionY.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2 | Point | js.Object]
   
   /**
     * A representation of a vector in 2D space.
@@ -1528,11 +1428,12 @@ object Math {
     * @param y The y component.
     */
   class Vector2 ()
-    extends typings.phaser.Phaser.Math.Vector2 {
+    extends StObject
+       with typings.phaser.Phaser.Math.Vector2 {
     def this(x: Double) = this()
     def this(x: Vector2Like) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Vector2Like, y: Double) = this()
   }
   object Vector2 {
@@ -1612,14 +1513,15 @@ object Math {
     * @param z The z component.
     */
   class Vector3 ()
-    extends typings.phaser.Phaser.Math.Vector3 {
+    extends StObject
+       with typings.phaser.Phaser.Math.Vector3 {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
   }
   object Vector3 {
     
@@ -1719,27 +1621,23 @@ object Math {
     * @param w The w component.
     */
   class Vector4 ()
-    extends typings.phaser.Phaser.Math.Vector4 {
+    extends StObject
+       with typings.phaser.Phaser.Math.Vector4 {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: Unit, w: Double) = this()
+    def this(x: Double, y: Unit, z: Double, w: Double) = this()
+    def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Double, z: Double, w: Double) = this()
+    def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
   }
   
   /**
@@ -1748,9 +1646,8 @@ object Math {
     * @param b The second value to use in the calculation.
     * @param tolerance The tolerance. Anything equal to or less than this value is considered as being within range.
     */
-  @JSGlobal("Phaser.Math.Within")
-  @js.native
-  def Within(a: Double, b: Double, tolerance: Double): Boolean = js.native
+  @scala.inline
+  def Within(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Within")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Wrap the given `value` between `min` and `max.
@@ -1758,7 +1655,6 @@ object Math {
     * @param min The minimum value.
     * @param max The maximum value.
     */
-  @JSGlobal("Phaser.Math.Wrap")
-  @js.native
-  def Wrap(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def Wrap(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsUpdateColumnRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PATCH = js.native
+  var method: PATCH
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashprojectsSlashcolumnsSlashColoncolumn_id = js.native
+  var url: SlashprojectsSlashcolumnsSlashColoncolumn_id
 }
 object ProjectsUpdateColumnRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PATCH,
-    request: RequestRequestOptions,
-    url: SlashprojectsSlashcolumnsSlashColoncolumn_id
-  ): ProjectsUpdateColumnRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsUpdateColumnRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/projects/columns/:column_id")
     __obj.asInstanceOf[ProjectsUpdateColumnRequestOptions]
   }
   

@@ -6,21 +6,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.WheelEventHandler
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollRect extends StObject {
   
   /**
     * Rectangle itself.
     */
-  var rect: Rect = js.native
+  var rect: Rect
   
   /**
     * Reason for rectangle to force scrolling on the main thread (ScrollRectType enum)
     */
-  var `type`: RepaintsOnScroll | TouchEventHandler | WheelEventHandler = js.native
+  var `type`: RepaintsOnScroll | TouchEventHandler | WheelEventHandler
 }
 object ScrollRect {
   

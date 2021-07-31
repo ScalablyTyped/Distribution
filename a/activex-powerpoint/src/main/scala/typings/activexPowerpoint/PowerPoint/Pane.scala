@@ -3,24 +3,22 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pane extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  val Active: MsoTriState = js.native
+  val Active: MsoTriState
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Pane_typekey")
-  var PowerPointDotPane_typekey: Pane = js.native
+  var PowerPointDotPane_typekey: Pane
   
-  val ViewType: PpViewType = js.native
+  val ViewType: PpViewType
 }
 object Pane {
   

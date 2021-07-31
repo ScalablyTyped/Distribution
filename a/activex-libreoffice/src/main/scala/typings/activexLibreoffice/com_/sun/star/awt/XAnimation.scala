@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows controlling an animation.
   * @since OOo 3.4
   */
-@js.native
 trait XAnimation extends StObject {
   
   /** determines whether the animation is currently running */
-  def isAnimationRunning(): Boolean = js.native
+  def isAnimationRunning(): Boolean
   
   /** starts the animation */
-  def startAnimation(): Unit = js.native
+  def startAnimation(): Unit
   
   /** stops the animation */
-  def stopAnimation(): Unit = js.native
+  def stopAnimation(): Unit
 }
 object XAnimation {
   

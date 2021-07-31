@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.TableColumn")
@@ -37,9 +36,8 @@ object TableColumn {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.TableColumn.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.TableColumn = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.TableColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TableColumn]
   
   /**
     * Creates and returns a new TableColumn instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object TableColumn {
     * of the parent Table element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.TableColumn.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.Table): typings.mendixmodelsdk.pagesMod.pages.TableColumn = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.Table): typings.mendixmodelsdk.pagesMod.pages.TableColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TableColumn]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.TableColumn.structureTypeName")

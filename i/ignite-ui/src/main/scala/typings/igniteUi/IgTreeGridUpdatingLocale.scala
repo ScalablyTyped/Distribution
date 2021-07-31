@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridUpdatingLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgTreeGridUpdatingLocale
     * Specifies the label of the add child button in touch environment.
     *
     */
-  var addChildButtonLabel: js.UndefOr[String] = js.native
+  var addChildButtonLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the add child tooltip text.
     *
     */
-  var addChildTooltip: js.UndefOr[String] = js.native
+  var addChildTooltip: js.UndefOr[String] = js.undefined
 }
 object IgTreeGridUpdatingLocale {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharacterMaskConfig extends StObject {
   
   /** Character to mask the sensitive values. If not supplied, defaults to "*". */
-  var maskingCharacter: js.UndefOr[String] = js.native
+  var maskingCharacter: js.UndefOr[String] = js.undefined
 }
 object CharacterMaskConfig {
   

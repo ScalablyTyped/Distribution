@@ -18,7 +18,6 @@ import typings.stripe.mod.transfers.ITransferListOptions
 import typings.stripe.mod.transfers.ITransferUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Transfers")

@@ -3,26 +3,24 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.vsoNodeApi.formInputInterfacesMod.InputValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDefinition extends StObject {
   
   /**
     * Gets or sets the data source.
     */
-  var dataSource: js.Array[InputValue] = js.native
+  var dataSource: js.Array[InputValue]
   
   /**
     * Gets or sets the rest end point.
     */
-  var endPoint: String = js.native
+  var endPoint: String
   
   /**
     * Gets or sets the result template.
     */
-  var resultTemplate: String = js.native
+  var resultTemplate: String
 }
 object ValueDefinition {
   

@@ -7,36 +7,29 @@ import typings.polished.polishedStrings.Exclamationmark
 import typings.polished.polishedStrings.postfix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgCount extends StObject {
   
-  var argCount: `1` = js.native
+  var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify factorial */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify factorial */ js.Any
   
-  var notation: postfix = js.native
+  var notation: postfix
   
-  var precedence: `6` = js.native
+  var precedence: `6`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Exclamationmark = js.native
+  var symbol: Exclamationmark
 }
 object ArgCount {
   
   @scala.inline
   def apply(
-    argCount: `1`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify factorial */ js.Any,
-    notation: postfix,
-    precedence: `6`,
-    rightToLeft: `0`,
-    symbol: Exclamationmark
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify factorial */ js.Any
   ): ArgCount = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "postfix", precedence = 6, rightToLeft = 0, symbol = "!")
     __obj.asInstanceOf[ArgCount]
   }
   

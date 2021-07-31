@@ -15,29 +15,27 @@ import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.normal
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.relative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardTitleStyle extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   var fontWeight: js.UndefOr[
     normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ] = js.native
+  ] = js.undefined
   
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.native
+  var position: js.UndefOr[absolute | relative] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object CardTitleStyle {
   

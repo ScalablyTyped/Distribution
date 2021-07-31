@@ -4,7 +4,6 @@ import typings.fabric.fabricImplMod.TextOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Text")
@@ -40,18 +39,14 @@ object Text {
     * @param {Function} callback callback function invoked after parsing
     * @param {Object} [options] Options object
     */
-  @JSImport("fabric", "fabric.Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Text = js.native
-  @JSImport("fabric", "fabric.Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
-  @JSImport("fabric", "fabric.Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Text = js.native
-  @JSImport("fabric", "fabric.Text.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
+  @scala.inline
+  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: Unit, options: TextOptions): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
   
   /**
     * Returns fabric.Text instance from an object representation
@@ -60,10 +55,8 @@ object Text {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */
-  @JSImport("fabric", "fabric.Text.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Text = js.native
-  @JSImport("fabric", "fabric.Text.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Text = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
 }

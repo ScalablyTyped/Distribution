@@ -8,7 +8,6 @@ import typings.stylableRuntime.keyedListRendererMod.DOMListRenderer
 import typings.stylableRuntime.typesMod.RenderableStylesheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssRuntimeRendererMod {
@@ -51,10 +50,9 @@ object cssRuntimeRendererMod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var __stylable_renderer_global_counter: js.UndefOr[Double] = js.native
+      var __stylable_renderer_global_counter: js.UndefOr[Double] = js.undefined
     }
     object Window {
       

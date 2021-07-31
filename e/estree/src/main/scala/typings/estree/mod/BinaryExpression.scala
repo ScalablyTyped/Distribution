@@ -2,34 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: BinaryOperator = js.native
+  var operator: BinaryOperator
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_BinaryExpression: typings.estree.estreeStrings.BinaryExpression = js.native
+  var type_BinaryExpression: typings.estree.estreeStrings.BinaryExpression
 }
 object BinaryExpression {
   
   @scala.inline
-  def apply(
-    left: Expression,
-    operator: BinaryOperator,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.BinaryExpression
-  ): BinaryExpression = {
+  def apply(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BinaryExpression")
     __obj.asInstanceOf[BinaryExpression]
   }
   

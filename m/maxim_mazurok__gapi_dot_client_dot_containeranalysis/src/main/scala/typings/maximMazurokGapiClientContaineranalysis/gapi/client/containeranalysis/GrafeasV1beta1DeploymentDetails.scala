@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrafeasV1beta1DeploymentDetails extends StObject {
   
   /** Required. Deployment history for the resource. */
-  var deployment: js.UndefOr[Deployment] = js.native
+  var deployment: js.UndefOr[Deployment] = js.undefined
 }
 object GrafeasV1beta1DeploymentDetails {
   

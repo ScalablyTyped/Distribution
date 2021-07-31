@@ -2,13 +2,11 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volume extends StObject {
   
-  var volume: Double = js.native
+  var volume: Double
 }
 object Volume {
   

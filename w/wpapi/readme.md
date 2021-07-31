@@ -10,9 +10,9 @@ An isomorphic JavaScript client for interacting with the WordPress REST API
 | ------------------ | :-------------: |
 | Full name          | wpapi |
 | Keywords           | api, client, cms, wordpress |
-| # releases         | 5 |
-| # dependents       | 34 |
-| # downloads        | 779235 |
+| # releases         | 0 |
+| # dependents       | 35 |
+| # downloads        | 736291 |
 | # stars            | 18 |
 
 ## Links

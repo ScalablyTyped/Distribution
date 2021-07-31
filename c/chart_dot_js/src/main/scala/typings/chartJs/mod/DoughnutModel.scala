@@ -2,34 +2,32 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Model used with the doughnut chart
-@js.native
 trait DoughnutModel extends StObject {
   
-  var backgroundColor: ChartColor = js.native
+  var backgroundColor: ChartColor
   
-  var borderAlign: BorderAlignment = js.native
+  var borderAlign: BorderAlignment
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var circumference: Double = js.native
+  var circumference: Double
   
-  var endAngle: Double = js.native
+  var endAngle: Double
   
-  var innerRadius: Double = js.native
+  var innerRadius: Double
   
-  var outerRadius: Double = js.native
+  var outerRadius: Double
   
-  var startAngle: Double = js.native
+  var startAngle: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object DoughnutModel {
   

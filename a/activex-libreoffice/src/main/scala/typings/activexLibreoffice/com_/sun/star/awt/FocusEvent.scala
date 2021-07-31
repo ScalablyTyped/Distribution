@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * window is reactivated. Both permanent and temporary focus events are delivered using the FOCUS_GAINED and FOCUS_LOST event ids; the levels may be
   * distinguished in the event using the isTemporary() method.
   */
-@js.native
-trait FocusEvent extends EventObject {
+trait FocusEvent
+  extends StObject
+     with EventObject {
   
   /**
     * specifies the reason for the focus change as an arithmetic-or combination of {@link FocusChangeReason} .
     * @see FocusChangeReason
     */
-  var FocusFlags: Double = js.native
+  var FocusFlags: Double
   
   /** contains the window which gets the focus on a lose focus event. */
-  var NextFocus: XInterface = js.native
+  var NextFocus: XInterface
   
   /** specifies if this focus change event is a temporary change. */
-  var Temporary: Boolean = js.native
+  var Temporary: Boolean
 }
 object FocusEvent {
   

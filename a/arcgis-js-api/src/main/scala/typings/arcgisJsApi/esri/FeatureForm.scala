@@ -7,11 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.sequential
 import typings.arcgisJsApi.arcgisJsApiStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureForm extends Widget_ {
+trait FeatureForm
+  extends StObject
+     with Widget_ {
   
   /**
     * The description of the form.

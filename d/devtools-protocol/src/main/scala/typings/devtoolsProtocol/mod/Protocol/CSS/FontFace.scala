@@ -2,56 +2,54 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFace extends StObject {
   
   /**
     * The font-family.
     */
-  var fontFamily: String = js.native
+  var fontFamily: String
   
   /**
     * The font-stretch.
     */
-  var fontStretch: String = js.native
+  var fontStretch: String
   
   /**
     * The font-style.
     */
-  var fontStyle: String = js.native
+  var fontStyle: String
   
   /**
     * The font-variant.
     */
-  var fontVariant: String = js.native
+  var fontVariant: String
   
   /**
     * Available variation settings (a.k.a. "axes").
     */
-  var fontVariationAxes: js.UndefOr[js.Array[FontVariationAxis]] = js.native
+  var fontVariationAxes: js.UndefOr[js.Array[FontVariationAxis]] = js.undefined
   
   /**
     * The font-weight.
     */
-  var fontWeight: String = js.native
+  var fontWeight: String
   
   /**
     * The resolved platform font family
     */
-  var platformFontFamily: String = js.native
+  var platformFontFamily: String
   
   /**
     * The src.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * The unicode-range.
     */
-  var unicodeRange: String = js.native
+  var unicodeRange: String
 }
 object FontFace {
   

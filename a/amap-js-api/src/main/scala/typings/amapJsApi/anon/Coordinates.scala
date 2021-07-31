@@ -3,23 +3,22 @@ package typings.amapJsApi.anon
 import typings.amapJsApi.amapJsApiStrings.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coordinates
-  extends typings.amapJsApi.AMap.GeoJSON.Geometry {
+  extends StObject
+     with typings.amapJsApi.AMap.GeoJSON.Geometry {
   
-  var coordinates: js.Tuple2[Double, Double] = js.native
+  var coordinates: js.Tuple2[Double, Double]
   
-  var `type`: Point = js.native
+  var `type`: Point
 }
 object Coordinates {
   
   @scala.inline
-  def apply(coordinates: js.Tuple2[Double, Double], `type`: Point): Coordinates = {
+  def apply(coordinates: js.Tuple2[Double, Double]): Coordinates = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Point")
     __obj.asInstanceOf[Coordinates]
   }
   

@@ -7,16 +7,17 @@ import typings.vegaLite.vegaSchemaMod.VgEncodeEntry
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object definedMod {
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/defined", "defined")
+  @JSImport("vega-lite/build/src/compile/mark/encode/defined", JSImport.Namespace)
   @js.native
-  def defined(model: UnitModel): VgEncodeEntry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/defined", "valueIfDefined")
-  @js.native
-  def valueIfDefined(prop: String, value: Value[ExprRef | SignalRef]): VgEncodeEntry = js.native
+  @scala.inline
+  def defined(model: UnitModel): VgEncodeEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(model.asInstanceOf[js.Any]).asInstanceOf[VgEncodeEntry]
+  
+  @scala.inline
+  def valueIfDefined(prop: String, value: Value[ExprRef | SignalRef]): VgEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("valueIfDefined")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[VgEncodeEntry]
 }

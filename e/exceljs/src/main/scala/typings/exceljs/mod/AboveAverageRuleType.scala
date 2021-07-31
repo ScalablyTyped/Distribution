@@ -3,24 +3,23 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.aboveAverage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AboveAverageRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var aboveAverage: Boolean = js.native
+  var aboveAverage: Boolean
   
-  var `type`: aboveAverage = js.native
+  var `type`: aboveAverage
 }
 object AboveAverageRuleType {
   
   @scala.inline
-  def apply(aboveAverage: Boolean, priority: Double, `type`: aboveAverage): AboveAverageRuleType = {
+  def apply(aboveAverage: Boolean, priority: Double): AboveAverageRuleType = {
     val __obj = js.Dynamic.literal(aboveAverage = aboveAverage.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("aboveAverage")
     __obj.asInstanceOf[AboveAverageRuleType]
   }
   

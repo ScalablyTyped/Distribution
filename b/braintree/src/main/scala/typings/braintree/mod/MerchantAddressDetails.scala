@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantAddressDetails extends StObject {
   
-  var locality: String = js.native
+  var locality: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var region: String = js.native
+  var region: String
   
-  var streetAddress: String = js.native
+  var streetAddress: String
 }
 object MerchantAddressDetails {
   

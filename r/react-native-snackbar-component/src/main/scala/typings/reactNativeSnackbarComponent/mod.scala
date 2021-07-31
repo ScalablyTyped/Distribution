@@ -3,7 +3,6 @@ package typings.reactNativeSnackbarComponent
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,34 +14,33 @@ object mod {
   
   type SnackbarComponent = Component[SnackbarComponentProps, js.Object, js.Any]
   
-  @js.native
   trait SnackbarComponentProps extends StObject {
     
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
-    var actionHandler: js.UndefOr[js.Function0[Unit]] = js.native
+    var actionHandler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var actionText: js.UndefOr[String] = js.native
+    var actionText: js.UndefOr[String] = js.undefined
     
-    var autoHidingTime: js.UndefOr[Double] = js.native
+    var autoHidingTime: js.UndefOr[Double] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var distanceCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var distanceCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var messageColor: js.UndefOr[String] = js.native
+    var messageColor: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var textMessage: js.UndefOr[String] = js.native
+    var textMessage: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SnackbarComponentProps {
     

@@ -11,8 +11,8 @@ ZIP compress files
 | Full name          | gulp-zip |
 | Keywords           | gulpplugin, zip, archive, archiver, compress, compression, file |
 | # releases         | 4 |
-| # dependents       | 244 |
-| # downloads        | 3702707 |
+| # dependents       | 250 |
+| # downloads        | 4001252 |
 | # stars            | 65 |
 
 ## Links

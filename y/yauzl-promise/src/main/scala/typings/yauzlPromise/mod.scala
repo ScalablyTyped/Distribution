@@ -9,10 +9,13 @@ import typings.yauzl.mod.Options
 import typings.yauzl.mod.ZipFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("yauzl-promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yauzl-promise", "Entry")
   @js.native
@@ -83,39 +86,29 @@ object mod {
     def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[Unit] | Unit], numEntries: Double): js.Promise[Unit] = js.native
   }
   
-  @JSImport("yauzl-promise", "dosDateTimeToDate")
-  @js.native
-  def dosDateTimeToDate(date: Double, time: Double): Date = js.native
+  @scala.inline
+  def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("yauzl-promise", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = js.native
-  @JSImport("yauzl-promise", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = js.native
+  @scala.inline
+  def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  @scala.inline
+  def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @JSImport("yauzl-promise", "fromFd")
-  @js.native
-  def fromFd(fd: Double): js.Promise[ZipFile] = js.native
-  @JSImport("yauzl-promise", "fromFd")
-  @js.native
-  def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = js.native
+  @scala.inline
+  def fromFd(fd: Double): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  @scala.inline
+  def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @JSImport("yauzl-promise", "fromRandomAccessReader")
-  @js.native
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = js.native
-  @JSImport("yauzl-promise", "fromRandomAccessReader")
-  @js.native
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = js.native
+  @scala.inline
+  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  @scala.inline
+  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @JSImport("yauzl-promise", "open")
-  @js.native
-  def open(path: String): js.Promise[ZipFile] = js.native
-  @JSImport("yauzl-promise", "open")
-  @js.native
-  def open(path: String, options: Options): js.Promise[ZipFile] = js.native
+  @scala.inline
+  def open(path: String): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  @scala.inline
+  def open(path: String, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @JSImport("yauzl-promise", "validateFileName")
-  @js.native
-  def validateFileName(fileName: String): String | Null = js.native
+  @scala.inline
+  def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

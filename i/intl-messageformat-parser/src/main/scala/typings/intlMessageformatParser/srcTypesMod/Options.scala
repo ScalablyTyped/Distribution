@@ -2,17 +2,15 @@ package typings.intlMessageformatParser.srcTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Capture location info in AST
     * Default is false
     */
-  var captureLocation: js.UndefOr[Boolean] = js.native
+  var captureLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to treat HTML/XML tags as string literal
@@ -20,20 +18,20 @@ trait Options extends StObject {
     * When this is false we only allow simple tags without
     * any attributes
     */
-  var ignoreTag: js.UndefOr[Boolean] = js.native
+  var ignoreTag: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to convert `#` in plural rule options
     * to `{var, number}`
     * Default is true
     */
-  var normalizeHashtagInPlural: js.UndefOr[Boolean] = js.native
+  var normalizeHashtagInPlural: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to parse number/datetime skeleton
     * into Intl.NumberFormatOptions & Intl.DateTimeFormatOptions
     */
-  var shouldParseSkeletons: js.UndefOr[Boolean] = js.native
+  var shouldParseSkeletons: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

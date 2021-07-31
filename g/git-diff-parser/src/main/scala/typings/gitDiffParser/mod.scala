@@ -6,22 +6,22 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("git-diff-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: String): Result = js.native
-  @JSImport("git-diff-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): Result = js.native
+  @scala.inline
+  def apply(input: String): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @scala.inline
+  def apply(input: Buffer): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
   
+  @JSImport("git-diff-parser", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Commit extends StObject {
     
-    var files: js.Array[File] = js.native
+    var files: js.Array[File]
   }
   object Commit {
     
@@ -42,18 +42,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait DetailedCommit extends Commit {
+  trait DetailedCommit
+    extends StObject
+       with Commit {
     
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var sha: js.UndefOr[String] = js.native
+    var sha: js.UndefOr[String] = js.undefined
   }
   object DetailedCommit {
     
@@ -98,20 +99,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait DetailedResult extends Result {
+  trait DetailedResult
+    extends StObject
+       with Result {
     
     @JSName("commits")
-    var commits_DetailedResult: js.Array[DetailedCommit] = js.native
+    var commits_DetailedResult: js.Array[DetailedCommit]
     
     @JSName("detailed")
-    var detailed_DetailedResult: `true` = js.native
+    var detailed_DetailedResult: `true`
   }
   object DetailedResult {
     
     @scala.inline
-    def apply(commits: js.Array[DetailedCommit], detailed: `true`): DetailedResult = {
-      val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = detailed.asInstanceOf[js.Any])
+    def apply(commits: js.Array[DetailedCommit]): DetailedResult = {
+      val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = true)
       __obj.asInstanceOf[DetailedResult]
     }
     
@@ -129,17 +131,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait DryResult extends Result {
+  trait DryResult
+    extends StObject
+       with Result {
     
     @JSName("detailed")
-    var detailed_DryResult: `false` = js.native
+    var detailed_DryResult: `false`
   }
   object DryResult {
     
     @scala.inline
-    def apply(commits: js.Array[Commit], detailed: `false`): DryResult = {
-      val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = detailed.asInstanceOf[js.Any])
+    def apply(commits: js.Array[Commit]): DryResult = {
+      val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = false)
       __obj.asInstanceOf[DryResult]
     }
     
@@ -151,24 +154,23 @@ object mod {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
-    var added: Boolean = js.native
+    var added: Boolean
     
-    var binary: Boolean = js.native
+    var binary: Boolean
     
-    var deleted: Boolean = js.native
+    var deleted: Boolean
     
-    var index: js.UndefOr[js.Array[String]] = js.native
+    var index: js.UndefOr[js.Array[String]] = js.undefined
     
-    var lines: js.Array[Line] = js.native
+    var lines: js.Array[Line]
     
-    var name: String = js.native
+    var name: String
     
-    var oldName: js.UndefOr[String] = js.native
+    var oldName: js.UndefOr[String] = js.undefined
     
-    var renamed: Boolean = js.native
+    var renamed: Boolean
   }
   object File {
     
@@ -226,22 +228,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Line extends StObject {
     
     /** Has line break. Always false for added failes */
-    var break: Boolean = js.native
+    var break: Boolean
     
     /** The main line number */
-    var ln1: Double = js.native
+    var ln1: Double
     
     /** New line number (for type normal) */
-    var ln2: js.UndefOr[Double] = js.native
+    var ln2: js.UndefOr[Double] = js.undefined
     
     /** Content of removed or added string */
-    var text: String = js.native
+    var text: String
     
-    var `type`: LineType = js.native
+    var `type`: LineType
   }
   object Line {
     
@@ -294,12 +295,11 @@ object mod {
     def normal: typings.gitDiffParser.gitDiffParserStrings.normal = "normal".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.normal]
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var commits: js.Array[Commit] = js.native
+    var commits: js.Array[Commit]
     
-    var detailed: Boolean = js.native
+    var detailed: Boolean
   }
   object Result {
     

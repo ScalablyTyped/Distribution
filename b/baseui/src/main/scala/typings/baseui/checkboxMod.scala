@@ -25,7 +25,6 @@ import typings.std.HTMLInputElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod {
@@ -54,16 +53,15 @@ object checkboxMod {
     def onMouseUp(event: MouseEvent[HTMLInputElement, NativeMouseEvent]): Unit = js.native
   }
   
-  @js.native
   trait LABEL_PLACEMENT extends StObject {
     
-    var bottom: typings.baseui.baseuiStrings.bottom = js.native
+    var bottom: typings.baseui.baseuiStrings.bottom
     
-    var left: typings.baseui.baseuiStrings.left = js.native
+    var left: typings.baseui.baseuiStrings.left
     
-    var right: typings.baseui.baseuiStrings.right = js.native
+    var right: typings.baseui.baseuiStrings.right
     
-    var top: typings.baseui.baseuiStrings.top = js.native
+    var top: typings.baseui.baseuiStrings.top
   }
   object LABEL_PLACEMENT {
     
@@ -88,10 +86,9 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait STATE_TYPE extends StObject {
     
-    var change: CHANGE = js.native
+    var change: CHANGE
   }
   object STATE_TYPE {
     
@@ -107,14 +104,13 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait STYLE_TYPE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var toggle: typings.baseui.baseuiStrings.toggle = js.native
+    var toggle: typings.baseui.baseuiStrings.toggle
     
-    var toggle_round: typings.baseui.baseuiStrings.toggle_round = js.native
+    var toggle_round: typings.baseui.baseuiStrings.toggle_round
   }
   object STYLE_TYPE {
     
@@ -172,36 +168,35 @@ object checkboxMod {
   @js.native
   val StyledToggleTrack: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait CheckboxOverrides extends StObject {
     
     var Checkmark: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Input: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Label: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Toggle: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ToggleInner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ToggleTrack: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object CheckboxOverrides {
     
@@ -272,58 +267,57 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait CheckboxProps extends StObject {
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.native
+    var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var isError: js.UndefOr[Boolean] = js.native
+    var isError: js.UndefOr[Boolean] = js.undefined
     
-    var isIndeterminate: js.UndefOr[Boolean] = js.native
+    var isIndeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.native
+    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[CheckboxOverrides] = js.native
+    var overrides: js.UndefOr[CheckboxOverrides] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CheckboxProps {
     
@@ -494,14 +488,13 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait CheckboxState extends StObject {
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
-    var isHovered: Boolean = js.native
+    var isHovered: Boolean
   }
   object CheckboxState {
     
@@ -533,40 +526,39 @@ object checkboxMod {
     CheckboxState
   ]
   
-  @js.native
   trait StatefulCheckboxProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.native
+    var checkmarkType: js.UndefOr[default_ | toggle | toggle_round] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var initialState: js.UndefOr[typings.baseui.checkboxMod.initialState] = js.native
+    var initialState: js.UndefOr[typings.baseui.checkboxMod.initialState] = js.undefined
     
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var isError: js.UndefOr[Boolean] = js.native
+    var isError: js.UndefOr[Boolean] = js.undefined
     
-    var isIndeterminate: js.UndefOr[Boolean] = js.native
+    var isIndeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.native
+    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[CheckboxOverrides] = js.native
+    var overrides: js.UndefOr[CheckboxOverrides] = js.undefined
   }
   object StatefulCheckboxProps {
     
@@ -683,28 +675,27 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait StatefulContainerProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var initialState: js.UndefOr[CheckboxState] = js.native
+    var initialState: js.UndefOr[CheckboxState] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[CheckboxOverrides] = js.native
+    var overrides: js.UndefOr[CheckboxOverrides] = js.undefined
     
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulContainerProps {
     
@@ -781,12 +772,11 @@ object checkboxMod {
     }
   }
   
-  @js.native
   trait initialState extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var isIndeterminate: js.UndefOr[Boolean] = js.native
+    var isIndeterminate: js.UndefOr[Boolean] = js.undefined
   }
   object initialState {
     

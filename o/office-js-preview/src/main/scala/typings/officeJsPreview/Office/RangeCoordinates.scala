@@ -2,25 +2,23 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
   * (zero-based) row in the 4th (zero-based) column.
   */
-@js.native
 trait RangeCoordinates extends StObject {
   
   /**
     * The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.
     */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.
     */
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
 }
 object RangeCoordinates {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBudgetsResponse extends StObject {
   
   /**
     * A list of budgets.
     */
-  var Budgets: js.UndefOr[typings.awsSdk.budgetsMod.Budgets] = js.native
+  var Budgets: js.UndefOr[typings.awsSdk.budgetsMod.Budgets] = js.undefined
   
   /**
     * The pagination token in the service response that indicates the next set of results that you can retrieve.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object DescribeBudgetsResponse {
   

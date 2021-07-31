@@ -2,19 +2,17 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var isCallbackWidget: Boolean = js.native
+  var isCallbackWidget: Boolean
   
-  var isHidden: Boolean = js.native
+  var isHidden: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object Description {
   

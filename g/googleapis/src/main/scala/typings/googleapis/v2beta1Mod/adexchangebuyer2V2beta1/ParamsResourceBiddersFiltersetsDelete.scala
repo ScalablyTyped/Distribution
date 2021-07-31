@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBiddersFiltersetsDelete extends StandardParameters {
+trait ParamsResourceBiddersFiltersetsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Full name of the resource to delete. For example:  - For a bidder-level
@@ -25,7 +25,7 @@ trait ParamsResourceBiddersFiltersetsDelete extends StandardParameters {
     * set for the child seat buyer account 456   whose bidder is 123:
     * `bidders/123/accounts/456/filterSets/abc`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBiddersFiltersetsDelete {
   

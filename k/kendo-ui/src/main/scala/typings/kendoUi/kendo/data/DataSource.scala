@@ -4,11 +4,12 @@ import typings.kendoUi.JQueryPromise
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends Observable {
+trait DataSource
+  extends StObject
+     with Observable {
   
   def add(model: js.Object): Model = js.native
   def add(model: Model): Model = js.native
@@ -26,8 +27,8 @@ trait DataSource extends Observable {
   def data(): ObservableArray = js.native
   def data(value: js.Any): Unit = js.native
   
-  def fetch(): JQueryPromise[_] = js.native
-  def fetch(callback: js.Function): JQueryPromise[_] = js.native
+  def fetch(): JQueryPromise[js.Any] = js.native
+  def fetch(callback: js.Function): JQueryPromise[js.Any] = js.native
   
   def filter(): DataSourceFilters = js.native
   def filter(filters: js.Array[DataSourceFilterItem]): Unit = js.native
@@ -51,8 +52,8 @@ trait DataSource extends Observable {
   def insert(index: Double, model: js.Object): Model = js.native
   def insert(index: Double, model: Model): Model = js.native
   
-  def offlineData(): js.Array[_] = js.native
-  def offlineData(data: js.Array[_]): Unit = js.native
+  def offlineData(): js.Array[js.Any] = js.native
+  def offlineData(data: js.Array[js.Any]): Unit = js.native
   
   def online(): Boolean = js.native
   def online(value: Boolean): Unit = js.native
@@ -66,22 +67,22 @@ trait DataSource extends Observable {
   def pageSize(size: Double): Unit = js.native
   
   def pushCreate(model: js.Object): Unit = js.native
-  def pushCreate(models: js.Array[_]): Unit = js.native
+  def pushCreate(models: js.Array[js.Any]): Unit = js.native
   
   def pushDestroy(model: js.Object): Unit = js.native
-  def pushDestroy(models: js.Array[_]): Unit = js.native
+  def pushDestroy(models: js.Array[js.Any]): Unit = js.native
   
   def pushInsert(index: Double, model: js.Object): Unit = js.native
-  def pushInsert(index: Double, models: js.Array[_]): Unit = js.native
+  def pushInsert(index: Double, models: js.Array[js.Any]): Unit = js.native
   
   def pushUpdate(model: js.Object): Unit = js.native
-  def pushUpdate(models: js.Array[_]): Unit = js.native
+  def pushUpdate(models: js.Array[js.Any]): Unit = js.native
   
-  def query(): JQueryPromise[_] = js.native
-  def query(options: js.Any): JQueryPromise[_] = js.native
+  def query(): JQueryPromise[js.Any] = js.native
+  def query(options: js.Any): JQueryPromise[js.Any] = js.native
   
-  def read(): JQueryPromise[_] = js.native
-  def read(data: js.Any): JQueryPromise[_] = js.native
+  def read(): JQueryPromise[js.Any] = js.native
+  def read(data: js.Any): JQueryPromise[js.Any] = js.native
   
   def remove(model: ObservableObject): Unit = js.native
   
@@ -91,7 +92,7 @@ trait DataSource extends Observable {
   def sort(sort: js.Array[DataSourceSortItem]): Unit = js.native
   def sort(sort: DataSourceSortItem): Unit = js.native
   
-  def sync(): JQueryPromise[_] = js.native
+  def sync(): JQueryPromise[js.Any] = js.native
   
   def total(): Double = js.native
   

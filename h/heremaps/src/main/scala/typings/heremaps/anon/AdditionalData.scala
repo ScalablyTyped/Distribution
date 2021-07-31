@@ -2,31 +2,29 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalData extends StObject {
   
-  var AdditionalData: js.Array[Key] = js.native
+  var AdditionalData: js.Array[Key]
   
-  var City: String = js.native
+  var City: String
   
-  var Country: String = js.native
+  var Country: String
   
-  var County: String = js.native
+  var County: String
   
-  var District: String = js.native
+  var District: String
   
-  var HouseNumber: String = js.native
+  var HouseNumber: String
   
-  var Label: String = js.native
+  var Label: String
   
-  var PostalCode: String = js.native
+  var PostalCode: String
   
-  var State: String = js.native
+  var State: String
   
-  var Street: String = js.native
+  var Street: String
 }
 object AdditionalData {
   

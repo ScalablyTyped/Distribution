@@ -11,37 +11,36 @@ import typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayDeclarativeMutationConfigMod {
   
-  @JSImport("relay-runtime/lib/mutations/RelayDeclarativeMutationConfig", "convert")
+  @JSImport("relay-runtime/lib/mutations/RelayDeclarativeMutationConfig", JSImport.Namespace)
   @js.native
-  def convert(configs: js.Array[DeclarativeMutationConfig], request: ConcreteRequest): OptimisticUpdater = js.native
-  @JSImport("relay-runtime/lib/mutations/RelayDeclarativeMutationConfig", "convert")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convert(configs: js.Array[DeclarativeMutationConfig], request: ConcreteRequest): OptimisticUpdater = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(configs.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[OptimisticUpdater]
+  @scala.inline
   def convert(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
-    optimisticUpdater: js.UndefOr[scala.Nothing],
+    optimisticUpdater: Unit,
     updater: SelectorStoreUpdater[js.Object]
-  ): OptimisticUpdater = js.native
-  @JSImport("relay-runtime/lib/mutations/RelayDeclarativeMutationConfig", "convert")
-  @js.native
+  ): OptimisticUpdater = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(configs.asInstanceOf[js.Any], request.asInstanceOf[js.Any], optimisticUpdater.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[OptimisticUpdater]
+  @scala.inline
   def convert(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
     optimisticUpdater: SelectorStoreUpdater[js.Object]
-  ): OptimisticUpdater = js.native
-  @JSImport("relay-runtime/lib/mutations/RelayDeclarativeMutationConfig", "convert")
-  @js.native
+  ): OptimisticUpdater = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(configs.asInstanceOf[js.Any], request.asInstanceOf[js.Any], optimisticUpdater.asInstanceOf[js.Any])).asInstanceOf[OptimisticUpdater]
+  @scala.inline
   def convert(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
     optimisticUpdater: SelectorStoreUpdater[js.Object],
     updater: SelectorStoreUpdater[js.Object]
-  ): OptimisticUpdater = js.native
+  ): OptimisticUpdater = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(configs.asInstanceOf[js.Any], request.asInstanceOf[js.Any], optimisticUpdater.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[OptimisticUpdater]
   
   /* Rewritten from type alias, can be one of: 
     - typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeAddConfig
@@ -52,27 +51,23 @@ object relayDeclarativeMutationConfigMod {
   object DeclarativeMutationConfig {
     
     @scala.inline
-    def NodeDeleteConfig(deletedIDFieldName: String, `type`: NODE_DELETE): typings.relayRuntime.relayDeclarativeMutationConfigMod.NodeDeleteConfig = {
+    def NodeDeleteConfig(deletedIDFieldName: String): typings.relayRuntime.relayDeclarativeMutationConfigMod.NodeDeleteConfig = {
       val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("NODE_DELETE")
       __obj.asInstanceOf[typings.relayRuntime.relayDeclarativeMutationConfigMod.NodeDeleteConfig]
     }
     
     @scala.inline
-    def RangeAddConfig(edgeName: String, `type`: RANGE_ADD): typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeAddConfig = {
+    def RangeAddConfig(edgeName: String): typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeAddConfig = {
       val __obj = js.Dynamic.literal(edgeName = edgeName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RANGE_ADD")
       __obj.asInstanceOf[typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeAddConfig]
     }
     
     @scala.inline
-    def RangeDeleteConfig(
-      deletedIDFieldName: String | js.Array[String],
-      pathToConnection: js.Array[String],
-      `type`: RANGE_DELETE
-    ): typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeDeleteConfig = {
+    def RangeDeleteConfig(deletedIDFieldName: String | js.Array[String], pathToConnection: js.Array[String]): typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeDeleteConfig = {
       val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RANGE_DELETE")
       __obj.asInstanceOf[typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeDeleteConfig]
     }
   }
@@ -95,25 +90,26 @@ object relayDeclarativeMutationConfigMod {
     def RANGE_DELETE: typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE = "RANGE_DELETE".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE]
   }
   
-  @js.native
-  trait NodeDeleteConfig extends DeclarativeMutationConfig {
+  trait NodeDeleteConfig
+    extends StObject
+       with DeclarativeMutationConfig {
     
-    var connectionName: js.UndefOr[String] = js.native
+    var connectionName: js.UndefOr[String] = js.undefined
     
-    var deletedIDFieldName: String = js.native
+    var deletedIDFieldName: String
     
-    var parentID: js.UndefOr[String] = js.native
+    var parentID: js.UndefOr[String] = js.undefined
     
-    var parentName: js.UndefOr[String] = js.native
+    var parentName: js.UndefOr[String] = js.undefined
     
-    var `type`: NODE_DELETE = js.native
+    var `type`: NODE_DELETE
   }
   object NodeDeleteConfig {
     
     @scala.inline
-    def apply(deletedIDFieldName: String, `type`: NODE_DELETE): NodeDeleteConfig = {
+    def apply(deletedIDFieldName: String): NodeDeleteConfig = {
       val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("NODE_DELETE")
       __obj.asInstanceOf[NodeDeleteConfig]
     }
     
@@ -146,29 +142,30 @@ object relayDeclarativeMutationConfigMod {
     }
   }
   
-  @js.native
-  trait RangeAddConfig extends DeclarativeMutationConfig {
+  trait RangeAddConfig
+    extends StObject
+       with DeclarativeMutationConfig {
     
-    var connectionInfo: js.UndefOr[js.Array[Filters]] = js.native
+    var connectionInfo: js.UndefOr[js.Array[Filters]] = js.undefined
     
-    var connectionName: js.UndefOr[String] = js.native
+    var connectionName: js.UndefOr[String] = js.undefined
     
-    var edgeName: String = js.native
+    var edgeName: String
     
-    var parentID: js.UndefOr[String] = js.native
+    var parentID: js.UndefOr[String] = js.undefined
     
-    var parentName: js.UndefOr[String] = js.native
+    var parentName: js.UndefOr[String] = js.undefined
     
-    var rangeBehaviors: js.UndefOr[RangeBehaviors] = js.native
+    var rangeBehaviors: js.UndefOr[RangeBehaviors] = js.undefined
     
-    var `type`: RANGE_ADD = js.native
+    var `type`: RANGE_ADD
   }
   object RangeAddConfig {
     
     @scala.inline
-    def apply(edgeName: String, `type`: RANGE_ADD): RangeAddConfig = {
+    def apply(edgeName: String): RangeAddConfig = {
       val __obj = js.Dynamic.literal(edgeName = edgeName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RANGE_ADD")
       __obj.asInstanceOf[RangeAddConfig]
     }
     
@@ -225,33 +222,30 @@ object relayDeclarativeMutationConfigMod {
   
   type RangeBehaviorsObject = StringDictionary[RangeOperations]
   
-  @js.native
-  trait RangeDeleteConfig extends DeclarativeMutationConfig {
+  trait RangeDeleteConfig
+    extends StObject
+       with DeclarativeMutationConfig {
     
-    var connectionKeys: js.UndefOr[js.Array[Key]] = js.native
+    var connectionKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var connectionName: js.UndefOr[String] = js.native
+    var connectionName: js.UndefOr[String] = js.undefined
     
-    var deletedIDFieldName: String | js.Array[String] = js.native
+    var deletedIDFieldName: String | js.Array[String]
     
-    var parentID: js.UndefOr[String] = js.native
+    var parentID: js.UndefOr[String] = js.undefined
     
-    var parentName: js.UndefOr[String] = js.native
+    var parentName: js.UndefOr[String] = js.undefined
     
-    var pathToConnection: js.Array[String] = js.native
+    var pathToConnection: js.Array[String]
     
-    var `type`: RANGE_DELETE = js.native
+    var `type`: RANGE_DELETE
   }
   object RangeDeleteConfig {
     
     @scala.inline
-    def apply(
-      deletedIDFieldName: String | js.Array[String],
-      pathToConnection: js.Array[String],
-      `type`: RANGE_DELETE
-    ): RangeDeleteConfig = {
+    def apply(deletedIDFieldName: String | js.Array[String], pathToConnection: js.Array[String]): RangeDeleteConfig = {
       val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("RANGE_DELETE")
       __obj.asInstanceOf[RangeDeleteConfig]
     }
     

@@ -19,7 +19,6 @@ import typings.observeJs.mod.observejs.PathObserverInstance
 import typings.observeJs.mod.observejs.PathObserverStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,12 +30,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ArrayObserver")
   @js.native
-  class ArrayObserver protected () extends ArrayObserverInstance {
+  class ArrayObserver protected ()
+    extends StObject
+       with ArrayObserverInstance {
     /**
       * Constructor
       * @param receiver the target for observation
       */
-    def this(receiver: js.Array[_]) = this()
+    def this(receiver: js.Array[js.Any]) = this()
   }
   /**
     * ArrayObserver observes the index-positions of an Array and reports changes as the minimal set of "splices" which would have had the same effect.
@@ -54,7 +55,9 @@ object mod {
   /**
     * Constructor
     */
-  class CompoundObserver () extends CompoundObserverInstance
+  class CompoundObserver ()
+    extends StObject
+       with CompoundObserverInstance
   /**
     * CompoundObserver allows simultaneous observation of multiple paths and/or Observables.
     */
@@ -68,7 +71,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObjectObserver")
   @js.native
-  class ObjectObserver protected () extends ObjectObserverInstance {
+  class ObjectObserver protected ()
+    extends StObject
+       with ObjectObserverInstance {
     /**
       * Constructor
       * @param receiver the target for observation
@@ -88,13 +93,15 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "ObserverTransform")
   @js.native
-  class ObserverTransform protected () extends ObserverTransformInstance {
+  class ObserverTransform protected ()
+    extends StObject
+       with ObserverTransformInstance {
     /**
       * Constructor
       * @param observer the observer to transform
       * @param valueFn function that gets invoked with all observed values. May return a single new value.
       */
-    def this(observer: Observable, valueFn: js.Function1[/* values */ js.Array[_], _]) = this()
+    def this(observer: Observable, valueFn: js.Function1[/* values */ js.Array[js.Any], js.Any]) = this()
     /**
       * Constructor
       * @param observer the observer to transform
@@ -103,8 +110,8 @@ object mod {
       */
     def this(
       observer: Observable,
-      getValue: js.Function1[/* value */ js.Any, _],
-      setValue: js.Function1[/* value */ js.Any, _]
+      getValue: js.Function1[/* value */ js.Any, js.Any],
+      setValue: js.Function1[/* value */ js.Any, js.Any]
     ) = this()
   }
   /**
@@ -124,7 +131,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("observe-js", "PathObserver")
   @js.native
-  class PathObserver protected () extends PathObserverInstance {
+  class PathObserver protected ()
+    extends StObject
+       with PathObserverInstance {
     /**
       * Constructor
       * @param receiver the target for observation
@@ -150,11 +159,14 @@ object mod {
   object observejs {
     
     @js.native
-    trait ArrayObserverInstance extends Observable
+    trait ArrayObserverInstance
+      extends StObject
+         with Observable
     
     @js.native
     trait ArrayObserverStatic
-      extends /**
+      extends StObject
+         with /**
       * Constructor
       * @param receiver the target for observation
       */
@@ -166,11 +178,13 @@ object mod {
         * @param current array of current state
         * @param splices  splices to apply
         */
-      def applySplices(previous: js.Array[_], current: js.Array[_], splices: js.Array[splice]): Unit = js.native
+      def applySplices(previous: js.Array[js.Any], current: js.Array[js.Any], splices: js.Array[splice]): Unit = js.native
     }
     
     @js.native
-    trait CompoundObserverInstance extends Observable {
+    trait CompoundObserverInstance
+      extends StObject
+         with Observable {
       
       /**
         * Adds an Observer to the list of observables.
@@ -189,28 +203,33 @@ object mod {
       CompounObserver
       ----------------------*/
     @js.native
-    trait CompoundObserverStatic extends /**
+    trait CompoundObserverStatic
+      extends StObject
+         with /**
       * Constructor
       */
     Instantiable0[CompoundObserverInstance]
     
     @js.native
-    trait ObjectObserverInstance extends Observable {
+    trait ObjectObserverInstance
+      extends StObject
+         with Observable {
       
       def open(
         onChange: js.Function4[
               /* added */ Properties, 
               /* removed */ Properties, 
               /* changed */ Properties, 
-              /* getOldValueFn */ js.Function1[/* property */ String, _], 
-              _
+              /* getOldValueFn */ js.Function1[/* property */ String, js.Any], 
+              js.Any
             ]
       ): Unit = js.native
     }
     
     @js.native
     trait ObjectObserverStatic
-      extends /**
+      extends StObject
+         with /**
       * Constructor
       * @param receiver the target for observation
       */
@@ -242,12 +261,14 @@ object mod {
         * @param onChange the function that gets invoked if a change is detected
         * @param the target of observation
         */
-      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, _]): Unit = js.native
-      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, _], receiver: js.Any): Unit = js.native
+      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, js.Any]): Unit = js.native
+      def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, js.Any], receiver: js.Any): Unit = js.native
     }
     
     @js.native
-    trait ObserverTransformInstance extends Observable {
+    trait ObserverTransformInstance
+      extends StObject
+         with Observable {
       
       /**
         * sets the observed value without notifying about the change.
@@ -261,7 +282,8 @@ object mod {
       ----------------------*/
     @js.native
     trait ObserverTransformStatic
-      extends /**
+      extends StObject
+         with /**
       * Constructor
       * @param observer the observer to transform
       * @param getValue function that proxys getting a value
@@ -287,7 +309,6 @@ object mod {
     /*----------------------
       Path
       ----------------------*/
-    @js.native
     trait Path extends StObject {
       
       /**
@@ -295,7 +316,7 @@ object mod {
         * a compiled getter will be used for better performance. Like PathObserver above, undefined
         * is returned unless you provide an overriding defaultValue.
         */
-      def getValueFrom(`object`: js.Any, defaultValue: js.Any): js.Any = js.native
+      def getValueFrom(`object`: js.Any, defaultValue: js.Any): js.Any
     }
     object Path {
       
@@ -314,7 +335,9 @@ object mod {
     }
     
     @js.native
-    trait PathObserverInstance extends Observable {
+    trait PathObserverInstance
+      extends StObject
+         with Observable {
       
       /**
         * sets the observed value without notifying about the change.
@@ -328,7 +351,8 @@ object mod {
       ----------------------*/
     @js.native
     trait PathObserverStatic
-      extends /**
+      extends StObject
+         with /**
       * Constructor
       * @param receiver the target for observation
       * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
@@ -350,28 +374,27 @@ object mod {
     /*----------------------
       ArrayObserver
       ----------------------*/
-    @js.native
     trait splice extends StObject {
       
       /**
         * the number of element which were inserted
         */
-      var addedCount: Double = js.native
+      var addedCount: Double
       
       /**
         * the index position that the change occured
         */
-      var index: Double = js.native
+      var index: Double
       
       /**
         * an array of values representing the sequence of removed elements
         */
-      var removed: js.Array[_] = js.native
+      var removed: js.Array[js.Any]
     }
     object splice {
       
       @scala.inline
-      def apply(addedCount: Double, index: Double, removed: js.Array[_]): splice = {
+      def apply(addedCount: Double, index: Double, removed: js.Array[js.Any]): splice = {
         val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
         __obj.asInstanceOf[splice]
       }
@@ -386,7 +409,7 @@ object mod {
         def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setRemoved(value: js.Array[_]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+        def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))

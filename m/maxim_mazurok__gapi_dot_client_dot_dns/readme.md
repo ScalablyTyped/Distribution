@@ -10,9 +10,9 @@ TypeScript typings for Cloud DNS API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dns |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 73 |
+| # releases         | 13 |
+| # dependents       | 1 |
+| # downloads        | 1224 |
 | # stars            | 0 |
 
 ## Links

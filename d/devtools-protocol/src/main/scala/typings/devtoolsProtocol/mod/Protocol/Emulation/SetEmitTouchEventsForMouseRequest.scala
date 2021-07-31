@@ -4,21 +4,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetEmitTouchEventsForMouseRequest extends StObject {
   
   /**
     * Touch/gesture events configuration. Default: current platform. (SetEmitTouchEventsForMouseRequestConfiguration enum)
     */
-  var configuration: js.UndefOr[mobile | desktop] = js.native
+  var configuration: js.UndefOr[mobile | desktop] = js.undefined
   
   /**
     * Whether touch emulation based on mouse input should be enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object SetEmitTouchEventsForMouseRequest {
   

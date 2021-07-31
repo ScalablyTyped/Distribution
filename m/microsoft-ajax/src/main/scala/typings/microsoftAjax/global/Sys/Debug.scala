@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes a new instance of the Sys.Debug class.
   */
 class Debug ()
-  extends typings.microsoftAjax.Sys.Debug
+  extends StObject
+     with typings.microsoftAjax.Sys.Debug
 object Debug {
+  
+  @JSGlobal("Sys.Debug")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion
   //#region Methods
@@ -35,26 +39,21 @@ object Debug {
     *      (Optional) true to indicate that the name of the function that is calling assert should be displayed in the message. The default is false.
     */
   /* static member */
-  @JSGlobal("Sys.Debug.assert")
-  @js.native
-  def assert(condition: Boolean): Unit = js.native
-  @JSGlobal("Sys.Debug.assert")
-  @js.native
-  def assert(condition: Boolean, message: js.UndefOr[scala.Nothing], displayCaller: Boolean): Unit = js.native
-  @JSGlobal("Sys.Debug.assert")
-  @js.native
-  def assert(condition: Boolean, message: String): Unit = js.native
-  @JSGlobal("Sys.Debug.assert")
-  @js.native
-  def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = js.native
+  @scala.inline
+  def assert(condition: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def assert(condition: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def assert(condition: Boolean, message: Unit, displayCaller: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], displayCaller.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Clears all trace messages from the trace console.
     */
   /* static member */
-  @JSGlobal("Sys.Debug.clearTrace")
-  @js.native
-  def clearTrace(): Unit = js.native
+  @scala.inline
+  def clearTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTrace")().asInstanceOf[Unit]
   
   /**
     * Displays a message in the debugger's output window and breaks into the debugger.
@@ -62,9 +61,8 @@ object Debug {
     *           The message to display.
     */
   /* static member */
-  @JSGlobal("Sys.Debug.fail")
-  @js.native
-  def fail(message: String): Unit = js.native
+  @scala.inline
+  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Appends a text line to the debugger console and to the trace console, if available.
@@ -72,9 +70,8 @@ object Debug {
     *       The text to display.
     */
   /* static member */
-  @JSGlobal("Sys.Debug.trace")
-  @js.native
-  def trace(text: String): Unit = js.native
+  @scala.inline
+  def trace(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Dumps an object to the debugger console and to the trace console, if available.
@@ -84,10 +81,8 @@ object Debug {
     *      (Optional) The name of the object.
     */
   /* static member */
-  @JSGlobal("Sys.Debug.traceDump")
-  @js.native
-  def traceDump(`object`: js.Any): Unit = js.native
-  @JSGlobal("Sys.Debug.traceDump")
-  @js.native
-  def traceDump(`object`: js.Any, name: String): Unit = js.native
+  @scala.inline
+  def traceDump(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def traceDump(`object`: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceDump")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

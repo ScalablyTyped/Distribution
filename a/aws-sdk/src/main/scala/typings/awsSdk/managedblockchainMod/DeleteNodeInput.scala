@@ -2,26 +2,24 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNodeInput extends StObject {
   
   /**
     * The unique identifier of the member that owns this node.
     */
-  var MemberId: ResourceIdString = js.native
+  var MemberId: ResourceIdString
   
   /**
     * The unique identifier of the network that the node belongs to.
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
   
   /**
     * The unique identifier of the node.
     */
-  var NodeId: ResourceIdString = js.native
+  var NodeId: ResourceIdString
 }
 object DeleteNodeInput {
   

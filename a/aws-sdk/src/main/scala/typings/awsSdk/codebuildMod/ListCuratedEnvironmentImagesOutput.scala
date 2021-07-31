@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCuratedEnvironmentImagesOutput extends StObject {
   
   /**
     * Information about supported platforms for Docker images that are managed by AWS CodeBuild.
     */
-  var platforms: js.UndefOr[EnvironmentPlatforms] = js.native
+  var platforms: js.UndefOr[EnvironmentPlatforms] = js.undefined
 }
 object ListCuratedEnvironmentImagesOutput {
   

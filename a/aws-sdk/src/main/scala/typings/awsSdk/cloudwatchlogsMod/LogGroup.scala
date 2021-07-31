@@ -2,43 +2,41 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the log group.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The creation time of the log group, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the CMK to use when encrypting log data.
     */
-  var kmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * The name of the log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The number of metric filters.
     */
-  var metricFilterCount: js.UndefOr[FilterCount] = js.native
+  var metricFilterCount: js.UndefOr[FilterCount] = js.undefined
   
-  var retentionInDays: js.UndefOr[Days] = js.native
+  var retentionInDays: js.UndefOr[Days] = js.undefined
   
   /**
     * The number of bytes stored.
     */
-  var storedBytes: js.UndefOr[StoredBytes] = js.native
+  var storedBytes: js.UndefOr[StoredBytes] = js.undefined
 }
 object LogGroup {
   

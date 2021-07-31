@@ -2,66 +2,64 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSubscription extends StObject {
   
   /**
     * The name of the Amazon Redshift event notification subscription.
     */
-  var CustSubscriptionId: js.UndefOr[String] = js.native
+  var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS customer account associated with the Amazon Redshift event notification subscription.
     */
-  var CustomerAwsId: js.UndefOr[String] = js.native
+  var CustomerAwsId: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean value indicating whether the subscription is enabled; true indicates that the subscription is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The list of Amazon Redshift event categories specified in the event notification subscription. Values: Configuration, Management, Monitoring, Security
     */
-  var EventCategoriesList: js.UndefOr[typings.awsSdk.redshiftMod.EventCategoriesList] = js.native
+  var EventCategoriesList: js.UndefOr[typings.awsSdk.redshiftMod.EventCategoriesList] = js.undefined
   
   /**
     * The event severity specified in the Amazon Redshift event notification subscription. Values: ERROR, INFO
     */
-  var Severity: js.UndefOr[String] = js.native
+  var Severity: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic used by the event notification subscription.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.native
+  var SnsTopicArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the sources that publish events to the Amazon Redshift event notification subscription.
     */
-  var SourceIdsList: js.UndefOr[typings.awsSdk.redshiftMod.SourceIdsList] = js.native
+  var SourceIdsList: js.UndefOr[typings.awsSdk.redshiftMod.SourceIdsList] = js.undefined
   
   /**
     * The source type of the events returned by the Amazon Redshift event notification, such as cluster, cluster-snapshot, cluster-parameter-group, cluster-security-group, or scheduled-action. 
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the Amazon Redshift event notification subscription. Constraints:   Can be one of the following: active | no-permission | topic-not-exist   The status "no-permission" indicates that Amazon Redshift no longer has permission to post to the Amazon SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the Amazon Redshift event notification subscription was created.
     */
-  var SubscriptionCreationTime: js.UndefOr[TStamp] = js.native
+  var SubscriptionCreationTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The list of tags for the event subscription.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object EventSubscription {
   

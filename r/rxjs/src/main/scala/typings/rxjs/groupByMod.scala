@@ -5,10 +5,13 @@ import typings.rxjs.subjectMod.Subject
 import typings.rxjs.typesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupByMod {
+  
+  @JSImport("rxjs/internal/operators/groupBy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rxjs/internal/operators/groupBy", "GroupedObservable")
   @js.native
@@ -24,79 +27,69 @@ object groupByMod {
     var refCountSubscription: js.Any = js.native
   }
   
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, T]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
+  @scala.inline
+  def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[K, T]]]
+  @scala.inline
   def groupBy[T, K](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
-    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, T], Observable[_]]
-  ): OperatorFunction[T, GroupedObservable[K, T]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy[T, K, R](
-    keySelector: js.Function1[/* value */ T, K],
-    elementSelector: js.UndefOr[scala.Nothing],
-    durationSelector: js.UndefOr[scala.Nothing],
-    subjectSelector: js.Function0[Subject[R]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy[T, K, R](
-    keySelector: js.Function1[/* value */ T, K],
-    elementSelector: js.UndefOr[scala.Nothing],
-    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy[T, K, R](
-    keySelector: js.Function1[/* value */ T, K],
-    elementSelector: js.UndefOr[scala.Nothing],
-    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]],
-    subjectSelector: js.Function0[Subject[R]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, T], Observable[js.Any]]
+  ): OperatorFunction[T, GroupedObservable[K, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, T]]]
+  @scala.inline
+  def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
-    durationSelector: js.UndefOr[scala.Nothing],
-    subjectSelector: js.Function0[Subject[R]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[js.Any]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
-    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[js.Any]],
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
-    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]],
+    durationSelector: Unit,
     subjectSelector: js.Function0[Subject[R]]
-  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
-  @JSImport("rxjs/internal/operators/groupBy", "groupBy")
-  @js.native
-  def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, R]] = js.native
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: Unit,
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[js.Any]],
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: Unit,
+    durationSelector: Unit,
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any], subjectSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
   
-  @js.native
+  @scala.inline
+  def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  @scala.inline
+  def groupBy_TKR[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: Unit,
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[js.Any]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(keySelector.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], durationSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
+  
   trait RefCountSubscription extends StObject {
     
-    var attemptedToUnsubscribe: Boolean = js.native
+    var attemptedToUnsubscribe: Boolean
     
-    var closed: Boolean = js.native
+    var closed: Boolean
     
-    var count: Double = js.native
+    var count: Double
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object RefCountSubscription {
     

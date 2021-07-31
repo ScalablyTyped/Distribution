@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait BhxBrowser extends StObject {
   ): Unit = js.native
   
   def genericFunction(functionId: Double, destination: js.Any): Unit = js.native
-  def genericFunction(functionId: Double, destination: js.Any, parameters: js.UndefOr[scala.Nothing], callbackId: Double): Unit = js.native
   def genericFunction(functionId: Double, destination: js.Any, parameters: java.lang.String): Unit = js.native
   def genericFunction(functionId: Double, destination: js.Any, parameters: java.lang.String, callbackId: Double): Unit = js.native
+  def genericFunction(functionId: Double, destination: js.Any, parameters: Unit, callbackId: Double): Unit = js.native
   
   def genericSynchronousFunction(functionId: Double): java.lang.String = js.native
   def genericSynchronousFunction(functionId: Double, parameters: java.lang.String): java.lang.String = js.native
@@ -44,7 +43,7 @@ trait BhxBrowser extends StObject {
   def setLastError(parameters: java.lang.String): Unit = js.native
   
   def webPlatformGenericFunction(destination: js.Any): Unit = js.native
-  def webPlatformGenericFunction(destination: js.Any, parameters: js.UndefOr[scala.Nothing], callbackId: Double): Unit = js.native
   def webPlatformGenericFunction(destination: js.Any, parameters: java.lang.String): Unit = js.native
   def webPlatformGenericFunction(destination: js.Any, parameters: java.lang.String, callbackId: Double): Unit = js.native
+  def webPlatformGenericFunction(destination: js.Any, parameters: Unit, callbackId: Double): Unit = js.native
 }

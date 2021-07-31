@@ -2,30 +2,28 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewUser extends StObject {
   
   /**
     * Contains a token that can be used for authentication in API calls instead of using the user name and password.
     */
-  var apiPassword: js.UndefOr[String] = js.native
+  var apiPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the item was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The ID of the permission profile. Possible values include:
@@ -36,29 +34,29 @@ trait NewUser extends StObject {
     *
     * In addition, any custom permission profiles associated with your account will have an automatically generated `permissionProfileId`.
     */
-  var permissionProfileId: js.UndefOr[String] = js.native
+  var permissionProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the account permission profile.
     *
     * Example: `Account Administrator`
     */
-  var permissionProfileName: js.UndefOr[String] = js.native
+  var permissionProfileName: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user ID for the new user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the user's account. One of:
@@ -70,7 +68,7 @@ trait NewUser extends StObject {
     * - `Disabled`
     *
     */
-  var userStatus: js.UndefOr[String] = js.native
+  var userStatus: js.UndefOr[String] = js.undefined
 }
 object NewUser {
   

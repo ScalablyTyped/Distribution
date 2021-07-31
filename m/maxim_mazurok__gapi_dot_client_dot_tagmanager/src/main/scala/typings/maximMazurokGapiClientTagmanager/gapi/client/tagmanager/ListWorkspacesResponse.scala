@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkspacesResponse extends StObject {
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** All Workspaces of a GTM Container. */
-  var workspace: js.UndefOr[js.Array[Workspace]] = js.native
+  var workspace: js.UndefOr[js.Array[Workspace]] = js.undefined
 }
 object ListWorkspacesResponse {
   

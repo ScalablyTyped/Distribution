@@ -6,21 +6,21 @@ import typings.authmosphere.anon.RefreshToken
 import typings.authmosphere.anon.TokenInfoEndpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauthconfigMod {
   
-  type AuthorizationCodeGrantConfig = CredentialsConfig with GrantConfigBase with Code
+  type AuthorizationCodeGrantConfig = CredentialsConfig & GrantConfigBase & Code
   
-  type ClientCredentialsGrantConfig = CredentialsConfig with GrantConfigBase
+  type ClientCredentialsGrantConfig = CredentialsConfig & GrantConfigBase
   
-  @js.native
-  trait CredentialsClientConfig extends CredentialsConfig {
+  trait CredentialsClientConfig
+    extends StObject
+       with CredentialsConfig {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
   }
   object CredentialsClientConfig {
     
@@ -61,10 +61,12 @@ object oauthconfigMod {
     }
   }
   
-  @js.native
-  trait CredentialsDirConfig extends CredentialsConfig {
+  trait CredentialsDirConfig
+    extends StObject
+       with CredentialsConfig
+       with CredentialsPasswordConfig {
     
-    var credentialsDir: String = js.native
+    var credentialsDir: String
   }
   object CredentialsDirConfig {
     
@@ -82,16 +84,45 @@ object oauthconfigMod {
     }
   }
   
-  type CredentialsPasswordConfig = CredentialsDirConfig | CredentialsUserClientConfig
+  /* Rewritten from type alias, can be one of: 
+    - typings.authmosphere.oauthconfigMod.CredentialsDirConfig
+    - typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig
+  */
+  trait CredentialsPasswordConfig extends StObject
+  object CredentialsPasswordConfig {
+    
+    @scala.inline
+    def CredentialsDirConfig(credentialsDir: String): typings.authmosphere.oauthconfigMod.CredentialsDirConfig = {
+      val __obj = js.Dynamic.literal(credentialsDir = credentialsDir.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsDirConfig]
+    }
+    
+    @scala.inline
+    def CredentialsUserClientConfig(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig = {
+      val __obj = js.Dynamic.literal(applicationPassword = applicationPassword.asInstanceOf[js.Any], applicationUsername = applicationUsername.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig]
+    }
+  }
   
-  type CredentialsUserClientConfig = CredentialsClientConfig with CredentialsUserConfig
+  trait CredentialsUserClientConfig
+    extends StObject
+       with CredentialsClientConfig
+       with CredentialsUserConfig
+       with CredentialsPasswordConfig
+  object CredentialsUserClientConfig {
+    
+    @scala.inline
+    def apply(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): CredentialsUserClientConfig = {
+      val __obj = js.Dynamic.literal(applicationPassword = applicationPassword.asInstanceOf[js.Any], applicationUsername = applicationUsername.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CredentialsUserClientConfig]
+    }
+  }
   
-  @js.native
   trait CredentialsUserConfig extends StObject {
     
-    var applicationPassword: String = js.native
+    var applicationPassword: String
     
-    var applicationUsername: String = js.native
+    var applicationUsername: String
   }
   object CredentialsUserConfig {
     
@@ -112,18 +143,17 @@ object oauthconfigMod {
     }
   }
   
-  @js.native
   trait GrantConfigBase extends StObject {
     
-    var accessTokenEndpoint: String = js.native
+    var accessTokenEndpoint: String
     
-    var bodyParams: js.UndefOr[StringDictionary[String]] = js.native
+    var bodyParams: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var grantType: String = js.native
+    var grantType: String
     
-    var queryParams: js.UndefOr[StringDictionary[String]] = js.native
+    var queryParams: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GrantConfigBase {
     
@@ -167,9 +197,9 @@ object oauthconfigMod {
   
   type OAuthConfig = ClientCredentialsGrantConfig | AuthorizationCodeGrantConfig | PasswordCredentialsGrantConfig | RefreshGrantConfig
   
-  type PasswordCredentialsGrantConfig = CredentialsPasswordConfig with GrantConfigBase
+  type PasswordCredentialsGrantConfig = CredentialsPasswordConfig & GrantConfigBase
   
-  type RefreshGrantConfig = CredentialsConfig with GrantConfigBase with RefreshToken
+  type RefreshGrantConfig = CredentialsConfig & GrantConfigBase & RefreshToken
   
-  type TokenCacheOAuthConfig = (ClientCredentialsGrantConfig | PasswordCredentialsGrantConfig) with TokenInfoEndpoint
+  type TokenCacheOAuthConfig = (ClientCredentialsGrantConfig | PasswordCredentialsGrantConfig) & TokenInfoEndpoint
 }

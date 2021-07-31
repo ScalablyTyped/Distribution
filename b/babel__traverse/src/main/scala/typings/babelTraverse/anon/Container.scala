@@ -5,34 +5,32 @@ import typings.babelTraverse.mod.NodePath
 import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container[C /* <: Node */, K /* <: /* keyof C */ String */] extends StObject {
   
-  var container: C = js.native
+  var container: C
   
-  var hub: HubInterface = js.native
+  var hub: HubInterface
   
-  var key: K = js.native
+  var key: K
   
-  var listKey: js.UndefOr[String] = js.native
+  var listKey: js.UndefOr[String] = js.undefined
   
-  var parent: Node = js.native
+  var parent: Node
   
-  var parentPath: NodePath[Node] | Null = js.native
+  var parentPath: NodePath[Node] | Null
 }
 object Container {
   
   @scala.inline
   def apply[C /* <: Node */, K /* <: /* keyof C */ String */](container: C, hub: HubInterface, key: K, parent: Node): Container[C, K] = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], hub = hub.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], hub = hub.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentPath = null)
     __obj.asInstanceOf[Container[C, K]]
   }
   
   @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container[_, _], C /* <: Node */, K /* <: /* keyof C */ String */] (val x: Self with (Container[C, K])) extends AnyVal {
+  implicit class ContainerMutableBuilder[Self <: Container[?, ?], C /* <: Node */, K /* <: /* keyof C */ String */] (val x: Self & (Container[C, K])) extends AnyVal {
     
     @scala.inline
     def setContainer(value: C): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])

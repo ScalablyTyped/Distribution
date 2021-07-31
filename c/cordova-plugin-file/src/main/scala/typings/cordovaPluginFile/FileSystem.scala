@@ -2,18 +2,16 @@ package typings.cordovaPluginFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents a file system. */
-@js.native
 trait FileSystem extends StObject {
   
   /* The name of the file system, unique across the list of exposed file systems. */
-  var name: String = js.native
+  var name: String
   
   /** The root directory of the file system. */
-  var root: DirectoryEntry = js.native
+  var root: DirectoryEntry
 }
 object FileSystem {
   

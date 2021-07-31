@@ -6,7 +6,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.PropertyDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryDefinitionMod {
@@ -18,15 +17,19 @@ object queryDefinitionMod {
   object QueryTiming extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[QueryTiming with Double] = js.native
+    def apply(value: Double): js.UndefOr[QueryTiming & Double] = js.native
     
     @js.native
-    sealed trait DYNAMIC extends QueryTiming
-    /* 1 */ val DYNAMIC: typings.angularCore.queryDefinitionMod.QueryTiming.DYNAMIC with Double = js.native
+    sealed trait DYNAMIC
+      extends StObject
+         with QueryTiming
+    /* 1 */ val DYNAMIC: typings.angularCore.queryDefinitionMod.QueryTiming.DYNAMIC & Double = js.native
     
     @js.native
-    sealed trait STATIC extends QueryTiming
-    /* 0 */ val STATIC: typings.angularCore.queryDefinitionMod.QueryTiming.STATIC with Double = js.native
+    sealed trait STATIC
+      extends StObject
+         with QueryTiming
+    /* 0 */ val STATIC: typings.angularCore.queryDefinitionMod.QueryTiming.STATIC & Double = js.native
   }
   
   @js.native
@@ -36,46 +39,49 @@ object queryDefinitionMod {
   object QueryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[QueryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[QueryType & Double] = js.native
     
     @js.native
-    sealed trait ContentChild extends QueryType
-    /* 1 */ val ContentChild: typings.angularCore.queryDefinitionMod.QueryType.ContentChild with Double = js.native
+    sealed trait ContentChild
+      extends StObject
+         with QueryType
+    /* 1 */ val ContentChild: typings.angularCore.queryDefinitionMod.QueryType.ContentChild & Double = js.native
     
     @js.native
-    sealed trait ViewChild extends QueryType
-    /* 0 */ val ViewChild: typings.angularCore.queryDefinitionMod.QueryType.ViewChild with Double = js.native
+    sealed trait ViewChild
+      extends StObject
+         with QueryType
+    /* 0 */ val ViewChild: typings.angularCore.queryDefinitionMod.QueryType.ViewChild & Double = js.native
   }
   
-  @js.native
   trait NgQueryDefinition extends StObject {
     
     /** Class declaration that holds this query. */
-    var container: ClassDeclaration = js.native
+    var container: ClassDeclaration
     
     /** Decorator that declares this as a query. */
-    var decorator: NgDecorator = js.native
+    var decorator: NgDecorator
     
     /** Name of the query. Set to "null" in case the query name is not statically analyzable. */
-    var name: String | Null = js.native
+    var name: String | Null
     
     /** Node that declares this query. */
-    var node: Node = js.native
+    var node: Node
     
     /**
       * Property declaration that refers to the query value. For accessors there
       * is no property that is guaranteed to access the query value.
       */
-    var property: PropertyDeclaration | Null = js.native
+    var property: PropertyDeclaration | Null
     
     /** Type of the query definition. */
-    var `type`: QueryType = js.native
+    var `type`: QueryType
   }
   object NgQueryDefinition {
     
     @scala.inline
     def apply(container: ClassDeclaration, decorator: NgDecorator, node: Node, `type`: QueryType): NgQueryDefinition = {
-      val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], decorator = decorator.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], decorator = decorator.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], name = null, property = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NgQueryDefinition]
     }

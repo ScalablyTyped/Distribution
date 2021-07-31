@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.ReplyDeleted
 import typings.officeJs.officeJsStrings.ReplyEdited
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait CommentChangedEventArgs extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait CommentChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var changeType: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited = js.native
+  var changeType: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited
   
   /**
     *
@@ -37,7 +35,7 @@ trait CommentChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var commentDetails: js.Array[CommentDetail] = js.native
+  var commentDetails: js.Array[CommentDetail]
   
   /**
     *
@@ -45,7 +43,7 @@ trait CommentChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -53,7 +51,7 @@ trait CommentChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var `type`: CommentChanged = js.native
+  var `type`: CommentChanged
   
   /**
     *
@@ -61,7 +59,7 @@ trait CommentChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object CommentChangedEventArgs {
   
@@ -70,11 +68,10 @@ object CommentChangedEventArgs {
     changeType: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited,
     commentDetails: js.Array[CommentDetail],
     source: EventSource | Local | Remote,
-    `type`: CommentChanged,
     worksheetId: String
   ): CommentChangedEventArgs = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], commentDetails = commentDetails.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CommentChanged")
     __obj.asInstanceOf[CommentChangedEventArgs]
   }
   

@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileNameCasingRuleMod {
@@ -34,9 +33,8 @@ object fileNameCasingRuleMod {
     @scala.inline
     def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.showWarning")
-    @js.native
-    def showWarning(message: String): Unit = js.native
+    @scala.inline
+    def showWarning(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarning")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.stylizedNameForCasing")
     @js.native

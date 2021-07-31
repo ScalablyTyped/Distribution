@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the events related to opening and saving reports in the Web Report Designer.
   */
-@js.native
-trait ASPxClientReportDesignerDialogCancelEventArgs extends ASPxClientReportDesignerDialogEventArgs {
+trait ASPxClientReportDesignerDialogCancelEventArgs
+  extends StObject
+     with ASPxClientReportDesignerDialogEventArgs {
   
   /**
     * Specifies whether or not the operation performed with a report should be canceled.
     */
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
 }
 object ASPxClientReportDesignerDialogCancelEventArgs {
   

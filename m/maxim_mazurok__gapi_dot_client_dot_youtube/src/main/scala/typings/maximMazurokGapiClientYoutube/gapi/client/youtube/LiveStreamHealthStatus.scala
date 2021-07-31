@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveStreamHealthStatus extends StObject {
   
   /** The configurations issues on this stream */
-  var configurationIssues: js.UndefOr[js.Array[LiveStreamConfigurationIssue]] = js.native
+  var configurationIssues: js.UndefOr[js.Array[LiveStreamConfigurationIssue]] = js.undefined
   
   /** The last time this status was updated (in seconds) */
-  var lastUpdateTimeSeconds: js.UndefOr[String] = js.native
+  var lastUpdateTimeSeconds: js.UndefOr[String] = js.undefined
   
   /** The status code of this stream */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object LiveStreamHealthStatus {
   

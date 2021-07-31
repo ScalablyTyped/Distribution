@@ -10,10 +10,13 @@ import typings.mobx.modifiersMod.IEnhancer
 import typings.mobx.utilsMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observablevalueMod {
+  
+  @JSImport("mobx/lib/types/observablevalue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx/lib/types/observablevalue", "ObservableValue")
   @js.native
@@ -24,37 +27,25 @@ object observablevalueMod {
        with IListenable {
     def this(value: T, enhancer: IEnhancer[T]) = this()
     def this(value: T, enhancer: IEnhancer[T], name: String) = this()
-    def this(value: T, enhancer: IEnhancer[T], name: js.UndefOr[scala.Nothing], notifySpy: Boolean) = this()
     def this(value: T, enhancer: IEnhancer[T], name: String, notifySpy: Boolean) = this()
-    def this(
-      value: T,
-      enhancer: IEnhancer[T],
-      name: js.UndefOr[scala.Nothing],
-      notifySpy: js.UndefOr[scala.Nothing],
-      equals: IEqualsComparer[_]
-    ) = this()
-    def this(
-      value: T,
-      enhancer: IEnhancer[T],
-      name: js.UndefOr[scala.Nothing],
-      notifySpy: Boolean,
-      equals: IEqualsComparer[_]
-    ) = this()
+    def this(value: T, enhancer: IEnhancer[T], name: Unit, notifySpy: Boolean) = this()
     def this(
       value: T,
       enhancer: IEnhancer[T],
       name: String,
-      notifySpy: js.UndefOr[scala.Nothing],
-      equals: IEqualsComparer[_]
+      notifySpy: Boolean,
+      equals: IEqualsComparer[js.Any]
     ) = this()
-    def this(value: T, enhancer: IEnhancer[T], name: String, notifySpy: Boolean, equals: IEqualsComparer[_]) = this()
+    def this(value: T, enhancer: IEnhancer[T], name: String, notifySpy: Unit, equals: IEqualsComparer[js.Any]) = this()
+    def this(value: T, enhancer: IEnhancer[T], name: Unit, notifySpy: Boolean, equals: IEqualsComparer[js.Any]) = this()
+    def this(value: T, enhancer: IEnhancer[T], name: Unit, notifySpy: Unit, equals: IEqualsComparer[js.Any]) = this()
     
     var dehanceValue: js.Any = js.native
     
     var dehancer: js.Any = js.native
     
     def enhancer(newValue: T, oldValue: T, name: String): T = js.native
-    def enhancer(newValue: T, oldValue: js.UndefOr[scala.Nothing], name: String): T = js.native
+    def enhancer(newValue: T, oldValue: Unit, name: String): T = js.native
     @JSName("enhancer")
     var enhancer_Original: IEnhancer[T] = js.native
     
@@ -78,9 +69,8 @@ object observablevalueMod {
     var value: js.Any = js.native
   }
   
-  @JSImport("mobx/lib/types/observablevalue", "isObservableValue")
-  @js.native
-  def isObservableValue(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean = js.native
+  @scala.inline
+  def isObservableValue(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean]
   
   @js.native
   trait IObservableValue[T] extends StObject {
@@ -95,23 +85,24 @@ object observablevalueMod {
     def set(value: T): Unit = js.native
   }
   
-  @js.native
-  trait IValueDidChange[T] extends IValueWillChange[T] {
+  trait IValueDidChange[T]
+    extends StObject
+       with IValueWillChange[T] {
     
-    var oldValue: js.UndefOr[T] = js.native
+    var oldValue: js.UndefOr[T] = js.undefined
   }
   object IValueDidChange {
     
     @scala.inline
-    def apply[T](newValue: T, `object`: js.Any, `type`: update): IValueDidChange[T] = {
+    def apply[T](newValue: T, `object`: js.Any): IValueDidChange[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IValueDidChange[T]]
     }
     
     @scala.inline
-    implicit class IValueDidChangeMutableBuilder[Self <: IValueDidChange[_], T] (val x: Self with IValueDidChange[T]) extends AnyVal {
+    implicit class IValueDidChangeMutableBuilder[Self <: IValueDidChange[?], T] (val x: Self & IValueDidChange[T]) extends AnyVal {
       
       @scala.inline
       def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
@@ -121,27 +112,26 @@ object observablevalueMod {
     }
   }
   
-  @js.native
   trait IValueWillChange[T] extends StObject {
     
-    var newValue: T = js.native
+    var newValue: T
     
-    var `object`: js.Any = js.native
+    var `object`: js.Any
     
-    var `type`: update = js.native
+    var `type`: update
   }
   object IValueWillChange {
     
     @scala.inline
-    def apply[T](newValue: T, `object`: js.Any, `type`: update): IValueWillChange[T] = {
+    def apply[T](newValue: T, `object`: js.Any): IValueWillChange[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IValueWillChange[T]]
     }
     
     @scala.inline
-    implicit class IValueWillChangeMutableBuilder[Self <: IValueWillChange[_], T] (val x: Self with IValueWillChange[T]) extends AnyVal {
+    implicit class IValueWillChangeMutableBuilder[Self <: IValueWillChange[?], T] (val x: Self & IValueWillChange[T]) extends AnyVal {
       
       @scala.inline
       def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])

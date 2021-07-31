@@ -2,41 +2,39 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMergeConflictsOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
     */
-  var baseCommitId: js.UndefOr[ObjectId] = js.native
+  var baseCommitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * A list of metadata for any conflicting files. If the specified merge strategy is FAST_FORWARD_MERGE, this list is always empty.
     */
-  var conflictMetadataList: ConflictMetadataList = js.native
+  var conflictMetadataList: ConflictMetadataList
   
   /**
     * The commit ID of the destination commit specifier that was used in the merge evaluation.
     */
-  var destinationCommitId: ObjectId = js.native
+  var destinationCommitId: ObjectId
   
   /**
     * A Boolean value that indicates whether the code is mergeable by the specified merge option.
     */
-  var mergeable: IsMergeable = js.native
+  var mergeable: IsMergeable
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The commit ID of the source commit specifier that was used in the merge evaluation.
     */
-  var sourceCommitId: ObjectId = js.native
+  var sourceCommitId: ObjectId
 }
 object GetMergeConflictsOutput {
   

@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIdentity extends StObject {
   
   // The identity's display name. Note that this may not always be available or up-to-date.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique identifier for the identity.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the client IP address used by user performing the activity (audit log only).
-  var ipAddress: js.UndefOr[NullableOption[String]] = js.native
+  var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The userPrincipalName attribute of the user.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UserIdentity {
   

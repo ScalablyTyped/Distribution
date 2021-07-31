@@ -3,20 +3,20 @@ package typings.isMyJsonValid.mod
 import typings.isMyJsonValid.isMyJsonValidStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberSchema extends _AnySchema {
+trait NumberSchema
+  extends StObject
+     with _AnySchema {
   
-  var `type`: number = js.native
+  var `type`: number
 }
 object NumberSchema {
   
   @scala.inline
-  def apply(`type`: number): NumberSchema = {
+  def apply(): NumberSchema = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberSchema]
   }
   

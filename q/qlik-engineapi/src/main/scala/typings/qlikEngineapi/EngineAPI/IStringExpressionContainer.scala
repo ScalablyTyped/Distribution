@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * - StringExpressionContainer
   */
-@js.native
 trait IStringExpressionContainer extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait IStringExpressionContainer extends StObject {
     *
     * Result is:  stringValue = myTable.Title;
     */
-  var qStringExpression: String = js.native
+  var qStringExpression: String
 }
 object IStringExpressionContainer {
   

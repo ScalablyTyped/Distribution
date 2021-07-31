@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaModelDefinition extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaModelDefinition extends StObject {
     * options are immutable for subsequent training runs. Default values are
     * used for any options not specified in the input query.
     */
-  var modelOptions: js.UndefOr[Labels] = js.native
+  var modelOptions: js.UndefOr[Labels] = js.undefined
   
   /**
     * [Output-only, Beta] Information about ml training runs, each training run
@@ -22,7 +20,7 @@ trait SchemaModelDefinition extends StObject {
     * for the model if warm start is used or if a user decides to continue a
     * previously cancelled query.
     */
-  var trainingRuns: js.UndefOr[js.Array[SchemaBqmlTrainingRun]] = js.native
+  var trainingRuns: js.UndefOr[js.Array[SchemaBqmlTrainingRun]] = js.undefined
 }
 object SchemaModelDefinition {
   

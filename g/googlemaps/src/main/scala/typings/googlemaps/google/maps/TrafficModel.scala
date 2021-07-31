@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait TrafficModel extends StObject
 object TrafficModel extends StObject {
   
   @js.native
-  sealed trait BEST_GUESS extends TrafficModel
+  sealed trait BEST_GUESS
+    extends StObject
+       with TrafficModel
   
   @js.native
-  sealed trait OPTIMISTIC extends TrafficModel
+  sealed trait OPTIMISTIC
+    extends StObject
+       with TrafficModel
   
   @js.native
-  sealed trait PESSIMISTIC extends TrafficModel
+  sealed trait PESSIMISTIC
+    extends StObject
+       with TrafficModel
 }

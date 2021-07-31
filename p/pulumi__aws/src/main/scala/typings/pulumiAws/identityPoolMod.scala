@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityPoolMod {
@@ -76,6 +75,10 @@ object identityPoolMod {
   /* static members */
   object IdentityPool {
     
+    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IdentityPool resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -85,35 +88,29 @@ object identityPoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState): IdentityPool = js.native
-    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): IdentityPool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolState): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IdentityPoolState, opts: CustomResourceOptions): IdentityPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPool]
     
     /**
       * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ Boolean]
   }
   
-  @js.native
   trait IdentityPoolArgs extends StObject {
     
     /**
       * Whether the identity pool supports unauthenticated logins or not.
       */
-    val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.native
+    val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * An array of Amazon Cognito Identity user pools and their client IDs.
@@ -122,38 +119,38 @@ object identityPoolMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
       * backend and the Cognito service to communicate about the developer provider.
       */
-    val developerProviderName: js.UndefOr[Input[String]] = js.native
+    val developerProviderName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Cognito Identity Pool name.
       */
-    val identityPoolName: Input[String] = js.native
+    val identityPoolName: Input[String]
     
     /**
       * Set of OpendID Connect provider ARNs.
       */
-    val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
       */
-    val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-Value pairs mapping provider names to provider app IDs.
       */
-    val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the Identity Pool.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IdentityPoolArgs {
     
@@ -226,18 +223,17 @@ object identityPoolMod {
     }
   }
   
-  @js.native
   trait IdentityPoolState extends StObject {
     
     /**
       * Whether the identity pool supports unauthenticated logins or not.
       */
-    val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.native
+    val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the identity pool.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of Amazon Cognito Identity user pools and their client IDs.
@@ -246,38 +242,38 @@ object identityPoolMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolCognitoIdentityProvider]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
       * backend and the Cognito service to communicate about the developer provider.
       */
-    val developerProviderName: js.UndefOr[Input[String]] = js.native
+    val developerProviderName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Cognito Identity Pool name.
       */
-    val identityPoolName: js.UndefOr[Input[String]] = js.native
+    val identityPoolName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of OpendID Connect provider ARNs.
       */
-    val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
       */
-    val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-Value pairs mapping provider names to provider app IDs.
       */
-    val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the Identity Pool.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IdentityPoolState {
     

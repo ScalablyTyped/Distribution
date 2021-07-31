@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Storage.Streams
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads data from a file. */
-@js.native
 trait FileInputStream extends StObject {
   
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Returns an asynchronous byte reader object.
@@ -20,7 +18,7 @@ trait FileInputStream extends StObject {
     * @param options Specifies the type of the asynchronous read operation.
     * @return The asynchronous operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
 }
 object FileInputStream {
   

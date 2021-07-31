@@ -2,17 +2,15 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionFile extends StObject {
   
-  var assetType: String = js.native
+  var assetType: String
   
-  var language: String = js.native
+  var language: String
   
-  var source: String = js.native
+  var source: String
 }
 object ExtensionFile {
   

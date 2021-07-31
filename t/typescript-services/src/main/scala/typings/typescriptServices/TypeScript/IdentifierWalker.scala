@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentifierWalker extends SyntaxWalker {
+trait IdentifierWalker
+  extends StObject
+     with SyntaxWalker {
   
-  var list: IIndexable[Boolean] = js.native
+  var list: IIndexable[Boolean]
 }
 object IdentifierWalker {
   

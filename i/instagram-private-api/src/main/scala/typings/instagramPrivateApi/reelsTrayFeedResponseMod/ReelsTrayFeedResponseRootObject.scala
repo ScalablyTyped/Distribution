@@ -2,27 +2,25 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseRootObject extends StObject {
   
-  var broadcasts: js.Array[ReelsTrayFeedResponseBroadcastsItem] = js.native
+  var broadcasts: js.Array[ReelsTrayFeedResponseBroadcastsItem]
   
-  var face_filter_nux_version: Double = js.native
+  var face_filter_nux_version: Double
   
-  var has_new_nux_story: Boolean = js.native
+  var has_new_nux_story: Boolean
   
-  var status: String = js.native
+  var status: String
   
-  var sticker_version: Double = js.native
+  var sticker_version: Double
   
-  var stories_viewer_gestures_nux_eligible: Boolean = js.native
+  var stories_viewer_gestures_nux_eligible: Boolean
   
-  var story_ranking_token: String = js.native
+  var story_ranking_token: String
   
-  var tray: js.Array[ReelsTrayFeedResponseTrayItem] = js.native
+  var tray: js.Array[ReelsTrayFeedResponseTrayItem]
 }
 object ReelsTrayFeedResponseRootObject {
   

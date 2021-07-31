@@ -3,16 +3,15 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_END
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowEventEnd
-  extends FlowEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with FlowEvent {
   
   @JSName("ph")
-  var ph_FlowEventEnd: FLOW_EVENTS_END = js.native
+  var ph_FlowEventEnd: FLOW_EVENTS_END
 }
 object FlowEventEnd {
   

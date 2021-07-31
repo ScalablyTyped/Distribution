@@ -2,16 +2,16 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPathOptions extends IObjectOptions {
+trait IPathOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * Array of path points
     */
-  var path: js.UndefOr[js.Array[Point]] = js.native
+  var path: js.UndefOr[js.Array[Point]] = js.undefined
 }
 object IPathOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetUserSettingsRequest extends StObject {
   
   /**
     * The access token for the set user settings request.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * You can use this parameter only to set an SMS configuration that uses SMS for delivery.
     */
-  var MFAOptions: MFAOptionListType = js.native
+  var MFAOptions: MFAOptionListType
 }
 object SetUserSettingsRequest {
   

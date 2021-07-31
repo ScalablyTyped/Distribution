@@ -6,7 +6,6 @@ import typings.aframe.anon.IsCoordinate
 import typings.aframe.anon.Parse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressEditor.postVisibilityCheckMod.PostVisibilityCheck.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postVisibilityCheckMod {
@@ -25,12 +24,11 @@ object postVisibilityCheckMod {
   
   object PostVisibilityCheck {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      def render(props: RenderProps): Element = js.native
+      def render(props: RenderProps): Element
     }
     object Props {
       
@@ -48,10 +46,9 @@ object postVisibilityCheckMod {
       }
     }
     
-    @js.native
     trait RenderProps extends StObject {
       
-      var canEdit: Boolean = js.native
+      var canEdit: Boolean
     }
     object RenderProps {
       

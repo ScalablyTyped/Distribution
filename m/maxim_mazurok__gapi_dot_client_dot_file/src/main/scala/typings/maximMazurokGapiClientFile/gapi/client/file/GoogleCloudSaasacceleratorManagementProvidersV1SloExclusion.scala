@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends StObje
     * updated by extending the duration. This is supported by the subsystem exporting eligibility data as long as such extension is committed at least 10 minutes before the original
     * exclusion expiration - otherwise it is possible that there will be "gaps" in the exclusion application in the exported timeseries.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable reason for the exclusion. This should be a static string (e.g. "Disruptive update in progress") and should not contain dynamically generated data (e.g. instance
     * name). Can be left empty.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /** Name of an SLI that this exclusion applies to. Can be left empty, signaling that the instance should be excluded from all SLIs defined in the service SLO configuration. */
-  var sliName: js.UndefOr[String] = js.native
+  var sliName: js.UndefOr[String] = js.undefined
   
   /** Start time of the exclusion. No alignment (e.g. to a full minute) needed. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion {
   

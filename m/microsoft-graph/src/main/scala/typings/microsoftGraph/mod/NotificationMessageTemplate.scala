@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationMessageTemplate extends Entity {
+trait NotificationMessageTemplate
+  extends StObject
+     with Entity {
   
   /**
     * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none,
     * includeCompanyLogo, includeCompanyName, includeContactInformation.
     */
-  var brandingOptions: js.UndefOr[NotificationTemplateBrandingOptions] = js.native
+  var brandingOptions: js.UndefOr[NotificationTemplateBrandingOptions] = js.undefined
   
   // The default locale to fallback onto when the requested locale is not available.
-  var defaultLocale: js.UndefOr[NullableOption[String]] = js.native
+  var defaultLocale: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display name for the Notification Message Template.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The list of localized messages for this Notification Message Template.
-  var localizedNotificationMessages: js.UndefOr[NullableOption[js.Array[LocalizedNotificationMessage]]] = js.native
+  var localizedNotificationMessages: js.UndefOr[NullableOption[js.Array[LocalizedNotificationMessage]]] = js.undefined
 }
 object NotificationMessageTemplate {
   

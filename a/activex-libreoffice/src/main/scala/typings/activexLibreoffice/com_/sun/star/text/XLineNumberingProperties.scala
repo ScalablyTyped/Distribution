@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the settings of the line numbering in a text document. */
-@js.native
-trait XLineNumberingProperties extends XInterface {
+trait XLineNumberingProperties
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link LineNumberingProperties} of the object. */
-  val LineNumberingProperties: XPropertySet = js.native
+  val LineNumberingProperties: XPropertySet
   
   /** @returns the {@link LineNumberingProperties} of the object. */
-  def getLineNumberingProperties(): XPropertySet = js.native
+  def getLineNumberingProperties(): XPropertySet
 }
 object XLineNumberingProperties {
   

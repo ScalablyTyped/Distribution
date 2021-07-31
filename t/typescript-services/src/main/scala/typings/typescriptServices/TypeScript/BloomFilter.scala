@@ -2,32 +2,30 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BloomFilter extends StObject {
   
-  def add(value: String): Unit = js.native
+  def add(value: String): Unit
   
-  def addKeys(keys: IIndexable[_]): Unit = js.native
+  def addKeys(keys: IIndexable[js.Any]): Unit
   
-  var bitArray: js.Any = js.native
+  var bitArray: js.Any
   
-  /* private */ def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
+  /* private */ def computeHash(key: js.Any, seed: js.Any): js.Any
   
-  var hashFunctionCount: js.Any = js.native
+  var hashFunctionCount: js.Any
   
-  def isEquivalent(filter: BloomFilter): Boolean = js.native
+  def isEquivalent(filter: BloomFilter): Boolean
   
-  def probablyContains(value: String): Boolean = js.native
+  def probablyContains(value: String): Boolean
 }
 object BloomFilter {
   
   @scala.inline
   def apply(
     add: String => Unit,
-    addKeys: IIndexable[_] => Unit,
+    addKeys: IIndexable[js.Any] => Unit,
     bitArray: js.Any,
     computeHash: (js.Any, js.Any) => js.Any,
     hashFunctionCount: js.Any,
@@ -45,7 +43,7 @@ object BloomFilter {
     def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddKeys(value: IIndexable[_] => Unit): Self = StObject.set(x, "addKeys", js.Any.fromFunction1(value))
+    def setAddKeys(value: IIndexable[js.Any] => Unit): Self = StObject.set(x, "addKeys", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBitArray(value: js.Any): Self = StObject.set(x, "bitArray", value.asInstanceOf[js.Any])

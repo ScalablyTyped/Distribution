@@ -3,15 +3,37 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
   
   @JSImport("carbon-components/components/modal/modal", JSImport.Default)
   @js.native
-  class default protected () extends Modal {
+  class default protected ()
+    extends StObject
+       with Modal {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleFocusin(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var _handleFocusinListener: js.Any = js.native
+    
+    /* CompleteClass */
+    var _handleKeydownListener: js.Any = js.native
+    
+    /* CompleteClass */
+    override def _hookCloseActions(): Unit = js.native
+    
+    /* CompleteClass */
+    override def createdByLauncher(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def shouldStateBeChanged(state: js.Any): js.Any = js.native
   }
   object default {
     
@@ -28,22 +50,21 @@ object modalMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Modal extends StObject {
+  - Dropped any */ trait Modal extends StObject {
     
-    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
     
-    def _handleFocusin(evt: js.Any): Unit = js.native
+    def _handleFocusin(evt: js.Any): Unit
     
-    var _handleFocusinListener: js.Any = js.native
+    var _handleFocusinListener: js.Any
     
-    var _handleKeydownListener: js.Any = js.native
+    var _handleKeydownListener: js.Any
     
-    def _hookCloseActions(): Unit = js.native
+    def _hookCloseActions(): Unit
     
-    def createdByLauncher(evt: js.Any): Unit = js.native
+    def createdByLauncher(evt: js.Any): Unit
     
-    def shouldStateBeChanged(state: js.Any): js.Any = js.native
+    def shouldStateBeChanged(state: js.Any): js.Any
   }
   object Modal {
     

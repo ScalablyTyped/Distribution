@@ -2,14 +2,12 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'precision'> */
-@js.native
 trait PickImplprecision extends StObject {
   
-  var precision: Double = js.native
+  var precision: Double
 }
 object PickImplprecision {
   

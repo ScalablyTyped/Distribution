@@ -9,48 +9,40 @@ import typings.micromark.typesMod.Type
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: String): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: String, encoding: js.UndefOr[scala.Nothing], options: Options): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: String, encoding: BufferEncoding): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: String, encoding: BufferEncoding, options: Options): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: String, options: Options): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: Buffer): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: Buffer, encoding: js.UndefOr[scala.Nothing], options: Options): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: Buffer, encoding: BufferEncoding): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: Buffer, encoding: BufferEncoding, options: Options): Root = js.native
-  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
-  @js.native
-  def apply(value: Buffer, options: Options): Root = js.native
+  @scala.inline
+  def apply(value: String): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: String, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: String, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: String, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: String, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: Buffer): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: Buffer, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: Buffer, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: Buffer, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  @scala.inline
+  def apply(value: Buffer, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
   
+  @JSImport("mdast-util-from-markdown", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait MdastExtension extends StObject {
     
-    var enter: Record[Type, js.Function1[/* token */ Token, Unit]] = js.native
+    var enter: Record[Type, js.Function1[/* token */ Token, Unit]]
     
-    var exit: Record[Type, js.Function1[/* token */ Token, Unit]] = js.native
+    var exit: Record[Type, js.Function1[/* token */ Token, Unit]]
   }
   object MdastExtension {
     
@@ -74,12 +66,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var extensions: js.UndefOr[js.Array[SyntaxExtension]] = js.native
+    var extensions: js.UndefOr[js.Array[SyntaxExtension]] = js.undefined
     
-    var mdastExtensions: js.UndefOr[js.Array[MdastExtension]] = js.native
+    var mdastExtensions: js.UndefOr[js.Array[MdastExtension]] = js.undefined
   }
   object Options {
     

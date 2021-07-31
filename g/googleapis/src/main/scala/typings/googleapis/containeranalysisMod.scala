@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containeranalysisMod {
+  
+  @JSImport("googleapis/build/src/apis/containeranalysis", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object containeranalysisMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/containeranalysis", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/containeranalysis", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object containeranalysisMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/containeranalysis", "containeranalysis")
-  @js.native
-  def containeranalysis(options: Options): Containeranalysis = js.native
-  @JSImport("googleapis/build/src/apis/containeranalysis", "containeranalysis")
-  @js.native
-  def containeranalysis(options: typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Options): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
-  @JSImport("googleapis/build/src/apis/containeranalysis", "containeranalysis")
-  @js.native
-  def containeranalysis_v1alpha1(version: v1alpha1): Containeranalysis = js.native
-  @JSImport("googleapis/build/src/apis/containeranalysis", "containeranalysis")
-  @js.native
-  def containeranalysis_v1beta1(version: v1beta1): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
+  @scala.inline
+  def containeranalysis(options: Options): Containeranalysis = ^.asInstanceOf[js.Dynamic].applyDynamic("containeranalysis")(options.asInstanceOf[js.Any]).asInstanceOf[Containeranalysis]
+  @scala.inline
+  def containeranalysis(options: typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Options): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = ^.asInstanceOf[js.Dynamic].applyDynamic("containeranalysis")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis]
+  
+  @scala.inline
+  def containeranalysis_v1alpha1(version: v1alpha1): Containeranalysis = ^.asInstanceOf[js.Dynamic].applyDynamic("containeranalysis")(version.asInstanceOf[js.Any]).asInstanceOf[Containeranalysis]
+  
+  @scala.inline
+  def containeranalysis_v1beta1(version: v1beta1): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = ^.asInstanceOf[js.Dynamic].applyDynamic("containeranalysis")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis]
 }

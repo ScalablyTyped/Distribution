@@ -2,17 +2,15 @@ package typings.protocolBuffersSchema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var to: String = js.native
+    var to: String
   }
   object From {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: typings.protocolBuffersSchema.typesMod.Options = js.native
+    var options: typings.protocolBuffersSchema.typesMod.Options
     
-    var value: Double = js.native
+    var value: Double
   }
   object Options {
     

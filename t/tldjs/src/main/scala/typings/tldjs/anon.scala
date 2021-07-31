@@ -3,27 +3,25 @@ package typings.tldjs
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: ReturnType[js.Function1[/* host */ String, String | Null]] = js.native
+    var domain: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var hostname: ReturnType[js.Function1[/* host */ String, String | Null]] = js.native
+    var hostname: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var isIp: Boolean = js.native
+    var isIp: Boolean
     
-    var isValid: ReturnType[js.Function1[/* host */ String, Boolean]] = js.native
+    var isValid: ReturnType[js.Function1[/* host */ String, Boolean]]
     
-    var publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]] = js.native
+    var publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var subdomain: ReturnType[js.Function1[/* host */ String, String | Null]] = js.native
+    var subdomain: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var tldExists: ReturnType[js.Function1[/* host */ String, Boolean]] = js.native
+    var tldExists: ReturnType[js.Function1[/* host */ String, Boolean]]
   }
   object Domain {
     
@@ -67,14 +65,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ExtractHostname extends StObject {
     
-    var extractHostname: js.UndefOr[ReturnType[js.Function1[/* host */ String, String | Null]]] = js.native
+    var extractHostname: js.UndefOr[ReturnType[js.Function1[/* host */ String, String | Null]]] = js.undefined
     
-    var rules: js.UndefOr[js.Any] = js.native
+    var rules: js.UndefOr[js.Any] = js.undefined
     
-    var validHosts: js.UndefOr[js.Array[String]] = js.native
+    var validHosts: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ExtractHostname {
     
@@ -110,78 +107,124 @@ object anon {
     }
   }
   
-  @js.native
   trait FromUserSettings extends StObject
   
-  @js.native
   trait GetDomain extends StObject {
     
-    def extractHostname(host: String): String | Null = js.native
+    def extractHostname(host: String): String | Null
     @JSName("extractHostname")
-    var extractHostname_Original: js.Function1[/* host */ String, String | Null] = js.native
+    var extractHostname_Original: js.Function1[/* host */ String, String | Null]
     
-    def fromUserSettings(options: Rules): FromUserSettings = js.native
+    def fromUserSettings(options: Rules): FromUserSettings
     @JSName("fromUserSettings")
-    var fromUserSettings_Original: js.Function1[/* options */ Rules, FromUserSettings] = js.native
+    var fromUserSettings_Original: js.Function1[/* options */ Rules, FromUserSettings]
     
-    def getDomain(host: String): String | Null = js.native
+    def getDomain(host: String): String | Null
     @JSName("getDomain")
-    var getDomain_Original: js.Function1[/* host */ String, String | Null] = js.native
+    var getDomain_Original: js.Function1[/* host */ String, String | Null]
     
-    def getPublicSuffix(host: String): String | Null = js.native
+    def getPublicSuffix(host: String): String | Null
     @JSName("getPublicSuffix")
-    var getPublicSuffix_Original: js.Function1[/* host */ String, String | Null] = js.native
+    var getPublicSuffix_Original: js.Function1[/* host */ String, String | Null]
     
-    def getSubdomain(host: String): String | Null = js.native
+    def getSubdomain(host: String): String | Null
     @JSName("getSubdomain")
-    var getSubdomain_Original: js.Function1[/* host */ String, String | Null] = js.native
+    var getSubdomain_Original: js.Function1[/* host */ String, String | Null]
     
-    def isValid(host: String): Boolean = js.native
+    def isValid(host: String): Boolean
     
-    def isValidHostname(host: String): Boolean = js.native
+    def isValidHostname(host: String): Boolean
     @JSName("isValidHostname")
-    var isValidHostname_Original: js.Function1[/* host */ String, Boolean] = js.native
+    var isValidHostname_Original: js.Function1[/* host */ String, Boolean]
     
     @JSName("isValid")
-    var isValid_Original: js.Function1[/* host */ String, Boolean] = js.native
+    var isValid_Original: js.Function1[/* host */ String, Boolean]
     
-    def parse(host: String): Hostname = js.native
+    def parse(host: String): Hostname
     @JSName("parse")
-    var parse_Original: js.Function1[/* host */ String, Hostname] = js.native
+    var parse_Original: js.Function1[/* host */ String, Hostname]
     
-    def tldExists(host: String): Boolean = js.native
+    def tldExists(host: String): Boolean
     @JSName("tldExists")
-    var tldExists_Original: js.Function1[/* host */ String, Boolean] = js.native
+    var tldExists_Original: js.Function1[/* host */ String, Boolean]
+  }
+  object GetDomain {
+    
+    @scala.inline
+    def apply(
+      extractHostname: /* host */ String => String | Null,
+      fromUserSettings: /* options */ Rules => FromUserSettings,
+      getDomain: /* host */ String => String | Null,
+      getPublicSuffix: /* host */ String => String | Null,
+      getSubdomain: /* host */ String => String | Null,
+      isValid: /* host */ String => Boolean,
+      isValidHostname: /* host */ String => Boolean,
+      parse: /* host */ String => Hostname,
+      tldExists: /* host */ String => Boolean
+    ): GetDomain = {
+      val __obj = js.Dynamic.literal(extractHostname = js.Any.fromFunction1(extractHostname), fromUserSettings = js.Any.fromFunction1(fromUserSettings), getDomain = js.Any.fromFunction1(getDomain), getPublicSuffix = js.Any.fromFunction1(getPublicSuffix), getSubdomain = js.Any.fromFunction1(getSubdomain), isValid = js.Any.fromFunction1(isValid), isValidHostname = js.Any.fromFunction1(isValidHostname), parse = js.Any.fromFunction1(parse), tldExists = js.Any.fromFunction1(tldExists))
+      __obj.asInstanceOf[GetDomain]
+    }
+    
+    @scala.inline
+    implicit class GetDomainMutableBuilder[Self <: GetDomain] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setExtractHostname(value: /* host */ String => String | Null): Self = StObject.set(x, "extractHostname", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setFromUserSettings(value: /* options */ Rules => FromUserSettings): Self = StObject.set(x, "fromUserSettings", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetDomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getDomain", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetPublicSuffix(value: /* host */ String => String | Null): Self = StObject.set(x, "getPublicSuffix", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetSubdomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getSubdomain", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIsValid(value: /* host */ String => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIsValidHostname(value: /* host */ String => Boolean): Self = StObject.set(x, "isValidHostname", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setParse(value: /* host */ String => Hostname): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setTldExists(value: /* host */ String => Boolean): Self = StObject.set(x, "tldExists", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
     var domain: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
-      ] = js.native
+      ]
     
     var hostname: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
-      ] = js.native
+      ]
     
-    var isIp: Boolean = js.native
+    var isIp: Boolean
     
     var isValid: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
-      ] = js.native
+      ]
     
     var publicSuffix: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
-      ] = js.native
+      ]
     
     var subdomain: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
-      ] = js.native
+      ]
     
     var tldExists: ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
-      ] = js.native
+      ]
   }
   object Hostname {
     
@@ -261,18 +304,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Rules extends StObject {
     
     var extractHostname: js.UndefOr[
         ReturnType[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rules: js.UndefOr[js.Any] = js.native
+    var rules: js.UndefOr[js.Any] = js.undefined
     
-    var validHosts: js.UndefOr[js.Array[String]] = js.native
+    var validHosts: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Rules {
     

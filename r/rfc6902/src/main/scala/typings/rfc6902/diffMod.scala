@@ -10,58 +10,53 @@ import typings.rfc6902.rfc6902Strings.test
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffMod {
   
-  @JSImport("rfc6902/diff", "diffAny")
+  @JSImport("rfc6902/diff", JSImport.Namespace)
   @js.native
-  def diffAny(input: js.Any, output: js.Any, ptr: Pointer): js.Array[Operation] = js.native
-  @JSImport("rfc6902/diff", "diffAny")
-  @js.native
-  def diffAny(input: js.Any, output: js.Any, ptr: Pointer, diff: Diff): js.Array[Operation] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rfc6902/diff", "diffArrays")
-  @js.native
-  def diffArrays[T](input: js.Array[T], output: js.Array[T], ptr: Pointer): js.Array[Operation] = js.native
-  @JSImport("rfc6902/diff", "diffArrays")
-  @js.native
-  def diffArrays[T](input: js.Array[T], output: js.Array[T], ptr: Pointer, diff: Diff): js.Array[Operation] = js.native
+  @scala.inline
+  def diffAny(input: js.Any, output: js.Any, ptr: Pointer): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffAny")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def diffAny(input: js.Any, output: js.Any, ptr: Pointer, diff: Diff): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffAny")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("rfc6902/diff", "diffObjects")
-  @js.native
-  def diffObjects(input: js.Any, output: js.Any, ptr: Pointer): js.Array[Operation] = js.native
-  @JSImport("rfc6902/diff", "diffObjects")
-  @js.native
-  def diffObjects(input: js.Any, output: js.Any, ptr: Pointer, diff: Diff): js.Array[Operation] = js.native
+  @scala.inline
+  def diffArrays[T](input: js.Array[T], output: js.Array[T], ptr: Pointer): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffArrays")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def diffArrays[T](input: js.Array[T], output: js.Array[T], ptr: Pointer, diff: Diff): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffArrays")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("rfc6902/diff", "intersection")
-  @js.native
-  def intersection(objects: ArrayLike[js.Object]): js.Array[String] = js.native
+  @scala.inline
+  def diffObjects(input: js.Any, output: js.Any, ptr: Pointer): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def diffObjects(input: js.Any, output: js.Any, ptr: Pointer, diff: Diff): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("rfc6902/diff", "isDestructive")
-  @js.native
-  def isDestructive(hasOp: Operation): Boolean = js.native
+  @scala.inline
+  def intersection(objects: ArrayLike[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("rfc6902/diff", "subtract")
-  @js.native
-  def subtract(minuend: js.Object, subtrahend: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def isDestructive(hasOp: Operation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDestructive")(hasOp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
-  trait AddOperation extends Operation {
+  @scala.inline
+  def subtract(minuend: js.Object, subtrahend: js.Object): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(minuend.asInstanceOf[js.Any], subtrahend.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  trait AddOperation
+    extends StObject
+       with Operation {
     
-    var op: add = js.native
+    var op: add
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object AddOperation {
     
     @scala.inline
-    def apply(op: add, path: String, value: js.Any): AddOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): AddOperation = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddOperation]
     }
     
@@ -79,20 +74,21 @@ object diffMod {
     }
   }
   
-  @js.native
-  trait CopyOperation extends Operation {
+  trait CopyOperation
+    extends StObject
+       with Operation {
     
-    var from: String = js.native
+    var from: String
     
-    var op: copy = js.native
+    var op: copy
     
-    var path: String = js.native
+    var path: String
   }
   object CopyOperation {
     
     @scala.inline
-    def apply(from: String, op: copy, path: String): CopyOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: String, path: String): CopyOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyOperation]
     }
     
@@ -112,20 +108,21 @@ object diffMod {
   
   type Diff = js.Function3[/* input */ js.Any, /* output */ js.Any, /* ptr */ Pointer, js.Array[Operation]]
   
-  @js.native
-  trait MoveOperation extends Operation {
+  trait MoveOperation
+    extends StObject
+       with Operation {
     
-    var from: String = js.native
+    var from: String
     
-    var op: move = js.native
+    var op: move
     
-    var path: String = js.native
+    var path: String
   }
   object MoveOperation {
     
     @scala.inline
-    def apply(from: String, op: move, path: String): MoveOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: String, path: String): MoveOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MoveOperation]
     }
     
@@ -155,54 +152,55 @@ object diffMod {
   object Operation {
     
     @scala.inline
-    def AddOperation(op: add, path: String, value: js.Any): typings.rfc6902.diffMod.AddOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def AddOperation(path: String, value: js.Any): typings.rfc6902.diffMod.AddOperation = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.AddOperation]
     }
     
     @scala.inline
-    def CopyOperation(from: String, op: copy, path: String): typings.rfc6902.diffMod.CopyOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def CopyOperation(from: String, path: String): typings.rfc6902.diffMod.CopyOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.CopyOperation]
     }
     
     @scala.inline
-    def MoveOperation(from: String, op: move, path: String): typings.rfc6902.diffMod.MoveOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def MoveOperation(from: String, path: String): typings.rfc6902.diffMod.MoveOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.MoveOperation]
     }
     
     @scala.inline
-    def RemoveOperation(op: remove, path: String): typings.rfc6902.diffMod.RemoveOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def RemoveOperation(path: String): typings.rfc6902.diffMod.RemoveOperation = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.RemoveOperation]
     }
     
     @scala.inline
-    def ReplaceOperation(op: replace, path: String, value: js.Any): typings.rfc6902.diffMod.ReplaceOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def ReplaceOperation(path: String, value: js.Any): typings.rfc6902.diffMod.ReplaceOperation = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.ReplaceOperation]
     }
     
     @scala.inline
-    def TestOperation(op: test, path: String, value: js.Any): typings.rfc6902.diffMod.TestOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def TestOperation(path: String, value: js.Any): typings.rfc6902.diffMod.TestOperation = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rfc6902.diffMod.TestOperation]
     }
   }
   
-  @js.native
-  trait RemoveOperation extends Operation {
+  trait RemoveOperation
+    extends StObject
+       with Operation {
     
-    var op: remove = js.native
+    var op: remove
     
-    var path: String = js.native
+    var path: String
   }
   object RemoveOperation {
     
     @scala.inline
-    def apply(op: remove, path: String): RemoveOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): RemoveOperation = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveOperation]
     }
     
@@ -217,20 +215,21 @@ object diffMod {
     }
   }
   
-  @js.native
-  trait ReplaceOperation extends Operation {
+  trait ReplaceOperation
+    extends StObject
+       with Operation {
     
-    var op: replace = js.native
+    var op: replace
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ReplaceOperation {
     
     @scala.inline
-    def apply(op: replace, path: String, value: js.Any): ReplaceOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): ReplaceOperation = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplaceOperation]
     }
     
@@ -248,20 +247,21 @@ object diffMod {
     }
   }
   
-  @js.native
-  trait TestOperation extends Operation {
+  trait TestOperation
+    extends StObject
+       with Operation {
     
-    var op: test = js.native
+    var op: test
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object TestOperation {
     
     @scala.inline
-    def apply(op: test, path: String, value: js.Any): TestOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): TestOperation = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestOperation]
     }
     

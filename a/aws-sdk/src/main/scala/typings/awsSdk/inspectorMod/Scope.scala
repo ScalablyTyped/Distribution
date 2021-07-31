@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
   /**
     * The type of the scope.
     */
-  var key: js.UndefOr[ScopeType] = js.native
+  var key: js.UndefOr[ScopeType] = js.undefined
   
   /**
     * The resource identifier for the specified scope type.
     */
-  var value: js.UndefOr[ScopeValue] = js.native
+  var value: js.UndefOr[ScopeValue] = js.undefined
 }
 object Scope {
   

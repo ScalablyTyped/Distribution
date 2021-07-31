@@ -2,16 +2,14 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyRequest extends StObject {
   
   /**
     * The ID of the AWS Firewall Manager policy that you want the details for.
     */
-  var PolicyId: typings.awsSdk.fmsMod.PolicyId = js.native
+  var PolicyId: typings.awsSdk.fmsMod.PolicyId
 }
 object GetPolicyRequest {
   

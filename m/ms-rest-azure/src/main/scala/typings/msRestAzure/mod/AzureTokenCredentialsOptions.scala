@@ -4,33 +4,31 @@ import typings.msRestAzure.msRestAzureStrings.batch
 import typings.msRestAzure.msRestAzureStrings.graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureTokenCredentialsOptions extends StObject {
   
   /**
     * The authorization scheme. Default value is 'Bearer'.
     */
-  var authorizationScheme: js.UndefOr[String] = js.native
+  var authorizationScheme: js.UndefOr[String] = js.undefined
   
   /**
     * The Azure environment to authenticate with.
     */
-  var environment: js.UndefOr[AzureEnvironment] = js.native
+  var environment: js.UndefOr[AzureEnvironment] = js.undefined
   
   /**
     * The audience for which the token is requested. Valid values are 'graph', 'batch' or any other resource like 'https://vault.azure.com'.
     * If tokenAudience is 'graph' then domain should also be provided and its value should not be the default 'common' tenant. 
     * It must be a string (preferrably in a guid format).
     */
-  var tokenAudience: js.UndefOr[graph | batch | String] = js.native
+  var tokenAudience: js.UndefOr[graph | batch | String] = js.undefined
   
   /**
     * The token cache. Default value is MemoryCache from adal.
     */
-  var tokenCache: js.UndefOr[js.Any] = js.native
+  var tokenCache: js.UndefOr[js.Any] = js.undefined
 }
 object AzureTokenCredentialsOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldFailure extends StObject {
   
   /**
     * The failure code of the world export job if it failed:  InternalServiceError  Internal service error.  LimitExceeded  The requested resource exceeds the maximum number allowed, or the number of concurrent stream requests exceeds the maximum number allowed.   ResourceNotFound  The specified resource could not be found.   RequestThrottled  The request was throttled.  InvalidInput  An input parameter in the request is not valid.  
     */
-  var failureCode: js.UndefOr[WorldGenerationJobErrorCode] = js.native
+  var failureCode: js.UndefOr[WorldGenerationJobErrorCode] = js.undefined
   
   /**
     * The number of failed worlds.
     */
-  var failureCount: js.UndefOr[Integer] = js.native
+  var failureCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The sample reason why the world failed. World errors are aggregated. A sample is used as the sampleFailureReason. 
     */
-  var sampleFailureReason: js.UndefOr[GenericString] = js.native
+  var sampleFailureReason: js.UndefOr[GenericString] = js.undefined
 }
 object WorldFailure {
   

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildingExplorerVisibleElements extends Object {
+trait BuildingExplorerVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * When set to `false`, the disciplines and categories sublayer list is not displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
     */
-  var disciplines: js.UndefOr[Boolean] = js.native
+  var disciplines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to `false`, the building levels filter is not displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
     */
-  var levels: js.UndefOr[Boolean] = js.native
+  var levels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to `false`, the construction phases filter is not displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
     */
-  var phases: js.UndefOr[Boolean] = js.native
+  var phases: js.UndefOr[Boolean] = js.undefined
 }
 object BuildingExplorerVisibleElements {
   

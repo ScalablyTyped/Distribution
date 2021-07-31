@@ -2,21 +2,19 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the frame to retrieve information about. */
-@js.native
 trait GetFrameDetails extends StObject {
   
   /** The ID of the frame in the given tab. */
-  var frameId: Double = js.native
+  var frameId: Double
   
   /** The ID of the process runs the renderer for this tab. */
-  var processId: js.UndefOr[Double] = js.native
+  var processId: js.UndefOr[Double] = js.undefined
   
   /** The ID of the tab in which the frame is. */
-  var tabId: Double = js.native
+  var tabId: Double
 }
 object GetFrameDetails {
   

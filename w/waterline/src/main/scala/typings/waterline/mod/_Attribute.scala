@@ -1,85 +1,72 @@
 package typings.waterline.mod
 
-import typings.waterline.waterlineStrings.array
-import typings.waterline.waterlineStrings.binary
-import typings.waterline.waterlineStrings.boolean
-import typings.waterline.waterlineStrings.date
-import typings.waterline.waterlineStrings.datetime
-import typings.waterline.waterlineStrings.email
-import typings.waterline.waterlineStrings.float
-import typings.waterline.waterlineStrings.integer
-import typings.waterline.waterlineStrings.json
-import typings.waterline.waterlineStrings.number
-import typings.waterline.waterlineStrings.string
-import typings.waterline.waterlineStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Attribute extends StObject
 object _Attribute {
   
   @scala.inline
-  def ArrayAttribute(`type`: js.UndefOr[String] with array): typings.waterline.mod.ArrayAttribute = {
+  def ArrayAttribute(): typings.waterline.mod.ArrayAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[typings.waterline.mod.ArrayAttribute]
   }
   
   @scala.inline
-  def BinaryAttribute(`type`: js.UndefOr[String] with binary): typings.waterline.mod.BinaryAttribute = {
+  def BinaryAttribute(): typings.waterline.mod.BinaryAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("binary")
     __obj.asInstanceOf[typings.waterline.mod.BinaryAttribute]
   }
   
   @scala.inline
-  def BooleanAttribute(`type`: js.UndefOr[String] with boolean): typings.waterline.mod.BooleanAttribute = {
+  def BooleanAttribute(): typings.waterline.mod.BooleanAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[typings.waterline.mod.BooleanAttribute]
   }
   
   @scala.inline
-  def DateAttribute(`type`: js.UndefOr[String] with date): typings.waterline.mod.DateAttribute = {
+  def DateAttribute(): typings.waterline.mod.DateAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("date")
     __obj.asInstanceOf[typings.waterline.mod.DateAttribute]
   }
   
   @scala.inline
-  def DatetimeAttribute(`type`: js.UndefOr[String] with datetime): typings.waterline.mod.DatetimeAttribute = {
+  def DatetimeAttribute(): typings.waterline.mod.DatetimeAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("datetime")
     __obj.asInstanceOf[typings.waterline.mod.DatetimeAttribute]
   }
   
   @scala.inline
-  def EmailAttribute(`type`: js.UndefOr[String] with email): typings.waterline.mod.EmailAttribute = {
+  def EmailAttribute(): typings.waterline.mod.EmailAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("email")
     __obj.asInstanceOf[typings.waterline.mod.EmailAttribute]
   }
   
   @scala.inline
-  def FloatAttribute(`type`: js.UndefOr[String] with float): typings.waterline.mod.FloatAttribute = {
+  def FloatAttribute(): typings.waterline.mod.FloatAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("float")
     __obj.asInstanceOf[typings.waterline.mod.FloatAttribute]
   }
   
   @scala.inline
-  def IntegerAttribute(`type`: js.UndefOr[String] with integer): typings.waterline.mod.IntegerAttribute = {
+  def IntegerAttribute(): typings.waterline.mod.IntegerAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[typings.waterline.mod.IntegerAttribute]
   }
   
   @scala.inline
-  def JsonAttribute(`type`: js.UndefOr[String] with json): typings.waterline.mod.JsonAttribute = {
+  def JsonAttribute(): typings.waterline.mod.JsonAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("json")
     __obj.asInstanceOf[typings.waterline.mod.JsonAttribute]
   }
   
@@ -90,9 +77,9 @@ object _Attribute {
   }
   
   @scala.inline
-  def NumberAttribute(`type`: js.UndefOr[String] with number): typings.waterline.mod.NumberAttribute = {
+  def NumberAttribute(): typings.waterline.mod.NumberAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[typings.waterline.mod.NumberAttribute]
   }
   
@@ -109,16 +96,16 @@ object _Attribute {
   }
   
   @scala.inline
-  def StringAttribute(`type`: js.UndefOr[String] with string): typings.waterline.mod.StringAttribute = {
+  def StringAttribute(): typings.waterline.mod.StringAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[typings.waterline.mod.StringAttribute]
   }
   
   @scala.inline
-  def TimeAttribute(`type`: js.UndefOr[String] with time): typings.waterline.mod.TimeAttribute = {
+  def TimeAttribute(): typings.waterline.mod.TimeAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("time")
     __obj.asInstanceOf[typings.waterline.mod.TimeAttribute]
   }
 }

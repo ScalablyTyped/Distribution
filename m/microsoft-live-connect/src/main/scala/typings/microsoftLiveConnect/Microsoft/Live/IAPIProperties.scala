@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion REST Object Information
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * 'Properties' object passed into the WL.api method.
   */
-@js.native
 trait IAPIProperties extends StObject {
   
   /**
     * A JSON object that specifies the REST API request body. The body
     * property is used only for "POST" and "PUT" requests.
     */
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An HTTP method that specifies the action required for the API call.
@@ -25,14 +23,14 @@ trait IAPIProperties extends StObject {
     * "PUT", "POST", and "DELETE".
     * @default "GET"
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the path to the REST API object. For information on
     * specifying paths for REST objects, see REST reference.
     * http://msdn.microsoft.com/en-us/library/live/hh243648.aspx
     */
-  var path: String = js.native
+  var path: String
 }
 object IAPIProperties {
   

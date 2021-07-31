@@ -12,7 +12,7 @@ JS Port from Snowball Stemmers http://snowball.tartarus.org/
 | Keywords           | Snowball, Stemmer |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 7863 |
+| # downloads        | 5683 |
 | # stars            | 0 |
 
 ## Links

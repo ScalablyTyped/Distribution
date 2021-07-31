@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssessmentReportResponse extends StObject {
   
   /**
     * Specifies the status of the request to generate an assessment report. 
     */
-  var status: ReportStatus = js.native
+  var status: ReportStatus
   
   /**
     * Specifies the URL where you can find the generated assessment report. This parameter is only returned if the report is successfully generated.
     */
-  var url: js.UndefOr[Url] = js.native
+  var url: js.UndefOr[Url] = js.undefined
 }
 object GetAssessmentReportResponse {
   

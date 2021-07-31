@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserInfo extends StObject {
   
   /**
     * 用户头像
     */
-  var avatarUrl: js.UndefOr[String] = js.native
+  var avatarUrl: js.UndefOr[String] = js.undefined
   
   /**
     * 用户昵称
     */
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   /**
     * 该服务商唯一用户标识
     */
-  var openid: js.UndefOr[String] = js.native
+  var openid: js.UndefOr[String] = js.undefined
 }
 object UserInfo {
   

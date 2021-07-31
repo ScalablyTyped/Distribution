@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object Index {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Index.create")
-  @js.native
-  def create(model: IModel): Index = js.native
+  @scala.inline
+  def create(model: IModel): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Index]
   
   /**
     * Creates and returns a new Index instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object Index {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Index.createIn")
-  @js.native
-  def createIn(container: Entity): Index = js.native
+  @scala.inline
+  def createIn(container: Entity): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Index]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Index.structureTypeName")

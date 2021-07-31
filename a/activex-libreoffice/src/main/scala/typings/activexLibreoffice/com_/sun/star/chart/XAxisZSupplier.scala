@@ -6,63 +6,63 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to the **z** -axis of a chart.
   * @see XDiagram
   */
-@js.native
-trait XAxisZSupplier extends XInterface {
+trait XAxisZSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the properties of the **z** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  val ZAxis: XPropertySet = js.native
+  val ZAxis: XPropertySet
   
   /**
     * @returns the **z** -axis title shape.
     * @see ChartTitle
     */
-  val ZAxisTitle: XShape = js.native
+  val ZAxisTitle: XShape
   
   /**
     * @returns the properties of the help grid (minor grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  val ZHelpGrid: XPropertySet = js.native
+  val ZHelpGrid: XPropertySet
   
   /**
     * @returns the properties of the main grid (major grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  val ZMainGrid: XPropertySet = js.native
+  val ZMainGrid: XPropertySet
   
   /**
     * @returns the properties of the **z** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  def getZAxis(): XPropertySet = js.native
+  def getZAxis(): XPropertySet
   
   /**
     * @returns the **z** -axis title shape.
     * @see ChartTitle
     */
-  def getZAxisTitle(): XShape = js.native
+  def getZAxisTitle(): XShape
   
   /**
     * @returns the properties of the help grid (minor grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  def getZHelpGrid(): XPropertySet = js.native
+  def getZHelpGrid(): XPropertySet
   
   /**
     * @returns the properties of the main grid (major grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  def getZMainGrid(): XPropertySet = js.native
+  def getZMainGrid(): XPropertySet
 }
 object XAxisZSupplier {
   

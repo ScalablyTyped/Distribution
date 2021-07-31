@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerQueryStats extends StObject {
   
   /** Date for which query stats were calculated. Stats calculated on the next day close to midnight are returned. */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var queryCountByStatus: js.UndefOr[js.Array[QueryCountByStatus]] = js.native
+  var queryCountByStatus: js.UndefOr[js.Array[QueryCountByStatus]] = js.undefined
 }
 object CustomerQueryStats {
   

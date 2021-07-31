@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Predicate extends StObject {
   
   /**
     * A list of the conditions that determine when the trigger will fire.
     */
-  var Conditions: js.UndefOr[ConditionList] = js.native
+  var Conditions: js.UndefOr[ConditionList] = js.undefined
   
   /**
     * An optional field if only one condition is listed. If multiple conditions are listed, then this field is required.
     */
-  var Logical: js.UndefOr[typings.awsSdk.glueMod.Logical] = js.native
+  var Logical: js.UndefOr[typings.awsSdk.glueMod.Logical] = js.undefined
 }
 object Predicate {
   

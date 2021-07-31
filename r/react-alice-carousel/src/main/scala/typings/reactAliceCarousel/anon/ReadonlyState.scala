@@ -3,60 +3,58 @@ package typings.reactAliceCarousel.anon
 import typings.reactAliceCarousel.typesMod.TransformationSetItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-alice-carousel.react-alice-carousel/lib/types.State> */
-@js.native
 trait ReadonlyState extends StObject {
   
-  val activeIndex: Double = js.native
+  val activeIndex: Double
   
-  val animationDuration: js.UndefOr[Double] = js.native
+  val animationDuration: js.UndefOr[Double] = js.undefined
   
-  val autoWidth: Boolean = js.native
+  val autoWidth: Boolean
   
-  val clones: js.Array[_] = js.native
+  val clones: js.Array[js.Any]
   
-  val fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.native
+  val fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
-  val fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.native
+  val fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.undefined
   
-  val fadeoutAnimationProcessing: Boolean = js.native
+  val fadeoutAnimationProcessing: Boolean
   
-  val infinite: js.UndefOr[Boolean] = js.native
+  val infinite: js.UndefOr[Boolean] = js.undefined
   
-  val initialStageHeight: Double = js.native
+  val initialStageHeight: Double
   
-  val isAutoPlayCanceledOnAction: Boolean = js.native
+  val isAutoPlayCanceledOnAction: Boolean
   
-  val isAutoPlaying: Boolean = js.native
+  val isAutoPlaying: Boolean
   
-  val isStageContentPartial: Boolean = js.native
+  val isStageContentPartial: Boolean
   
-  val itemsCount: Double = js.native
+  val itemsCount: Double
   
-  val itemsInSlide: Double = js.native
+  val itemsInSlide: Double
   
-  val itemsOffset: Double = js.native
+  val itemsOffset: Double
   
-  val stageContentWidth: Double = js.native
+  val stageContentWidth: Double
   
-  val stageWidth: Double = js.native
+  val stageWidth: Double
   
-  val swipeAllowedPositionMax: Double = js.native
+  val swipeAllowedPositionMax: Double
   
-  val swipeLimitMax: Double = js.native
+  val swipeLimitMax: Double
   
-  val swipeLimitMin: Double = js.native
+  val swipeLimitMin: Double
   
-  val swipeShiftValue: Double = js.native
+  val swipeShiftValue: Double
   
-  val transformationSet: js.Array[TransformationSetItem] = js.native
+  val transformationSet: js.Array[TransformationSetItem]
   
-  val transition: String = js.native
+  val transition: String
   
-  val translate3d: Double = js.native
+  val translate3d: Double
 }
 object ReadonlyState {
   
@@ -64,7 +62,7 @@ object ReadonlyState {
   def apply(
     activeIndex: Double,
     autoWidth: Boolean,
-    clones: js.Array[_],
+    clones: js.Array[js.Any],
     fadeoutAnimationProcessing: Boolean,
     initialStageHeight: Double,
     isAutoPlayCanceledOnAction: Boolean,
@@ -103,7 +101,7 @@ object ReadonlyState {
     def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClones(value: js.Array[_]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    def setClones(value: js.Array[js.Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))

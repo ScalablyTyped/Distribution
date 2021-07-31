@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,99 +22,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link com.sun.star.sdbc.XSQLData.readSQL()} , which in turn calls the `XSQLInput.readXXX` methods in its implementation for reading the attributes
   * from the input stream.
   */
-@js.native
-trait XSQLInput extends XInterface {
+trait XSQLInput
+  extends StObject
+     with XInterface {
   
   /**
     * reads an array from the stream.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readArray(): XArray = js.native
+  def readArray(): XArray
   
   /**
     * reads the next attribute in the stream as sequence of bytes.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readBinaryStream(): XInputStream = js.native
+  def readBinaryStream(): XInputStream
   
   /**
     * reads a BLOB from the stream.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readBlob(): XBlob = js.native
+  def readBlob(): XBlob
   
   /**
     * reads the next attribute in the stream as boolean.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readBoolean(): Boolean = js.native
+  def readBoolean(): Boolean
   
   /**
     * reads the next attribute in the stream as byte.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readByte(): Double = js.native
+  def readByte(): Double
   
   /**
     * reads the next attribute in the stream as sequence of bytes.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readBytes(): SafeArray[Double] = js.native
+  def readBytes(): SafeArray[Double]
   
   /**
     * reads the next attribute in the stream as a Unicode string.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readCharacterStream(): XInputStream = js.native
+  def readCharacterStream(): XInputStream
   
   /**
     * reads a CLOB from the stream.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readClob(): XClob = js.native
+  def readClob(): XClob
   
   /**
     * reads the next attribute in the stream as date.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readDate(): Date = js.native
+  def readDate(): Date
   
   /**
     * reads the next attribute in the stream as double.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readDouble(): Double = js.native
+  def readDouble(): Double
   
   /**
     * reads the next attribute in the stream as float.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readFloat(): Double = js.native
+  def readFloat(): Double
   
   /**
     * reads the next attribute in the stream as long.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readInt(): Double = js.native
+  def readInt(): Double
   
   /**
     * reads the next attribute in the stream as hyper.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readLong(): Double = js.native
+  def readLong(): Double
   
   /**
     * returns the datum at the head of the stream as an any.
@@ -130,49 +130,49 @@ trait XSQLInput extends XInterface {
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readObject(): js.Any = js.native
+  def readObject(): js.Any
   
   /**
     * reads a REF(&lt;structured-type&gt;) from the stream.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readRef(): XRef = js.native
+  def readRef(): XRef
   
   /**
     * reads the next attribute in the stream as short.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readShort(): Double = js.native
+  def readShort(): Double
   
   /**
     * reads the next attribute in the stream as string.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readString(): String = js.native
+  def readString(): String
   
   /**
     * reads the next attribute in the stream as time.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readTime(): Time = js.native
+  def readTime(): Time
   
   /**
     * reads the next attribute in the stream as datetime.
     * @returns the attribute; if the value is SQL NULL, return null.
     * @throws SQLException if a database access error occurs.
     */
-  def readTimestamp(): DateTime = js.native
+  def readTimestamp(): DateTime
   
   /**
     * determines whether the last value read was null.
     * @returns `TRUE` if the most recently gotten SQL value was null; otherwise, `FALSE`
     * @throws SQLException if a database access error occurs.
     */
-  def wasNull(): Boolean = js.native
+  def wasNull(): Boolean
 }
 object XSQLInput {
   

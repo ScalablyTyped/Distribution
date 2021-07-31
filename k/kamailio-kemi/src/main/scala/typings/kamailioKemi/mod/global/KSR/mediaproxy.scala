@@ -2,20 +2,20 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaproxy {
   
-  @JSGlobal("KSR.mediaproxy.end_media_session")
+  @JSGlobal("KSR.mediaproxy")
   @js.native
-  def endMediaSession(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.mediaproxy.engage_media_proxy")
-  @js.native
-  def engageMediaProxy(): Double = js.native
+  @scala.inline
+  def endMediaSession(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("end_media_session")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.mediaproxy.use_media_proxy")
-  @js.native
-  def useMediaProxy(): Double = js.native
+  @scala.inline
+  def engageMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("engage_media_proxy")().asInstanceOf[Double]
+  
+  @scala.inline
+  def useMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("use_media_proxy")().asInstanceOf[Double]
 }

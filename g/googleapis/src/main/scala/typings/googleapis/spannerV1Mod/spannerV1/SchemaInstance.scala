@@ -3,14 +3,12 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An isolated set of Cloud Spanner resources on which databases can be
   * hosted.
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaInstance extends StObject {
     * form `projects/&lt;project&gt;/instanceConfigs/&lt;configuration&gt;`.
     * See also InstanceConfig and ListInstanceConfigs.
     */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The descriptive name for this instance as it appears in UIs.
     * Must be unique per project and between 4 and 30 characters in length.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud Labels are a flexible and lightweight mechanism for organizing
@@ -46,7 +44,7 @@ trait SchemaInstance extends StObject {
     * as the string:  name + &quot;_&quot; + value  would prove problematic if
     * we were to allow &quot;_&quot; in a future release.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. A unique identifier for the instance, which cannot be changed
@@ -54,7 +52,7 @@ trait SchemaInstance extends StObject {
     * `projects/&lt;project&gt;/instances/a-z*[a-z0-9]`. The final segment of
     * the name must be between 6 and 30 characters in length.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The number of nodes allocated to this instance. This may be
@@ -63,14 +61,14 @@ trait SchemaInstance extends StObject {
     * documentation](https://cloud.google.com/spanner/docs/instances#node_count)
     * for more information about nodes.
     */
-  var nodeCount: js.UndefOr[Double] = js.native
+  var nodeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. The current instance state. For CreateInstance, the state
     * must be either omitted or set to `CREATING`. For UpdateInstance, the
     * state must be either omitted or set to `READY`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaInstance {
   

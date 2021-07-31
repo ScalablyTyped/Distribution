@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.JulianDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsStopIncluded extends StObject {
   
-  var isStartIncluded: js.UndefOr[Boolean] = js.native
+  var isStartIncluded: js.UndefOr[Boolean] = js.undefined
   
-  var isStopIncluded: js.UndefOr[Boolean] = js.native
+  var isStopIncluded: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[JulianDate] = js.native
+  var start: js.UndefOr[JulianDate] = js.undefined
   
-  var stop: js.UndefOr[JulianDate] = js.native
+  var stop: js.UndefOr[JulianDate] = js.undefined
 }
 object IsStopIncluded {
   

@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -29,7 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     segment
   */
 class Segment ()
-  extends typings.paper.paper.Segment {
+  extends StObject
+     with typings.paper.paper.Segment {
   /** 
     * Creates a new Segment object.
     * 
@@ -38,23 +38,11 @@ class Segment ()
     */
   def this(`object`: js.Object) = this()
   def this(point: typings.paper.paper.Point) = this()
-  def this(point: js.UndefOr[scala.Nothing], handleIn: typings.paper.paper.Point) = this()
+  def this(point: Unit, handleIn: typings.paper.paper.Point) = this()
   def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
-  def this(
-    point: js.UndefOr[scala.Nothing],
-    handleIn: js.UndefOr[scala.Nothing],
-    handleOut: typings.paper.paper.Point
-  ) = this()
-  def this(
-    point: js.UndefOr[scala.Nothing],
-    handleIn: typings.paper.paper.Point,
-    handleOut: typings.paper.paper.Point
-  ) = this()
-  def this(
-    point: typings.paper.paper.Point,
-    handleIn: js.UndefOr[scala.Nothing],
-    handleOut: typings.paper.paper.Point
-  ) = this()
+  def this(point: Unit, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
+  def this(point: Unit, handleIn: typings.paper.paper.Point, handleOut: typings.paper.paper.Point) = this()
+  def this(point: typings.paper.paper.Point, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
   def this(
     point: typings.paper.paper.Point,
     handleIn: typings.paper.paper.Point,

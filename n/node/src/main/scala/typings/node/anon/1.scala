@@ -4,13 +4,11 @@ import typings.node.nodeStrings.pkcs8
 import typings.node.nodeStrings.sec1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var `type`: sec1 | pkcs8 = js.native
+  var `type`: sec1 | pkcs8
 }
 object `1` {
   

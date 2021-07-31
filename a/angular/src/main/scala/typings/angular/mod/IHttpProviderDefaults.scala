@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://docs.angularjs.org/api/ng/service/$http#usage
   * https://docs.angularjs.org/api/ng/provider/$httpProvider The properties section
   */
-@js.native
 trait IHttpProviderDefaults extends StObject {
   
   /**
     * {boolean|Cache}
     * If true, a default $http cache will be used to cache the GET request, otherwise if a cache instance built with $cacheFactory, this cache will be used for caching.
     */
-  var cache: js.UndefOr[js.Any] = js.native
+  var cache: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Map of strings or functions which return strings representing HTTP headers to send to the server. If the
@@ -27,38 +25,38 @@ trait IHttpProviderDefaults extends StObject {
     * The key of the map is the request verb in lower case. The "common" key applies to all requests.
     * @see {@link https://docs.angularjs.org/api/ng/service/$http#setting-http-headers}
     */
-  var headers: js.UndefOr[IHttpRequestConfigHeaders] = js.native
+  var headers: js.UndefOr[IHttpRequestConfigHeaders] = js.undefined
   
   /**
     * A function used to the prepare string representation of request parameters (specified as an object). If
     * specified as string, it is interpreted as a function registered with the $injector. Defaults to
     * $httpParamSerializer.
     */
-  var paramSerializer: js.UndefOr[String | (js.Function1[/* obj */ js.Any, String])] = js.native
+  var paramSerializer: js.UndefOr[String | (js.Function1[/* obj */ js.Any, String])] = js.undefined
   
   /**
     * Transform function or an array of such functions. The transform function takes the http request body and
     * headers and returns its transformed (typically serialized) version.
     * @see {@link https://docs.angularjs.org/api/ng/service/$http#transforming-requests-and-responses}
     */
-  var transformRequest: js.UndefOr[IHttpRequestTransformer | js.Array[IHttpRequestTransformer]] = js.native
+  var transformRequest: js.UndefOr[IHttpRequestTransformer | js.Array[IHttpRequestTransformer]] = js.undefined
   
   /**
     * Transform function or an array of such functions. The transform function takes the http response body and
     * headers and returns its transformed (typically deserialized) version.
     */
-  var transformResponse: js.UndefOr[IHttpResponseTransformer | js.Array[IHttpResponseTransformer]] = js.native
+  var transformResponse: js.UndefOr[IHttpResponseTransformer | js.Array[IHttpResponseTransformer]] = js.undefined
   
   /**
     * whether to to set the withCredentials flag on the XHR object. See [requests with credentials]https://developer.mozilla.org/en/http_access_control#section_5 for more information.
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
   
   /** Name of cookie containing the XSRF token. */
-  var xsrfCookieName: js.UndefOr[String] = js.native
+  var xsrfCookieName: js.UndefOr[String] = js.undefined
   
   /** Name of HTTP header to populate with the XSRF token. */
-  var xsrfHeaderName: js.UndefOr[String] = js.native
+  var xsrfHeaderName: js.UndefOr[String] = js.undefined
 }
 object IHttpProviderDefaults {
   

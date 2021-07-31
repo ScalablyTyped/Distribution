@@ -5,14 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Implement this interface to give access to the attributes of a text.
   * @since OOo 2.0.4
   */
-@js.native
 trait XAccessibleTextAttributes extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait XAccessibleTextAttributes extends StObject {
     * @param RequestedAttributes This string sequence defines the set of attributes that the caller is interested in. When there are requested attributes that
     * @returns Returns the requested attributes of the text. Each attribute is represented by a {@link com.sun.star.beans.PropertyValue} object.
     */
-  def getDefaultAttributes(RequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue] = js.native
+  def getDefaultAttributes(RequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue]
   
   /**
     * Get the run attribute set for the specified position.
@@ -35,7 +33,7 @@ trait XAccessibleTextAttributes extends StObject {
     * @returns Returns the requested attributes of the specified character. Each attribute is represented by a {@link com.sun.star.beans.PropertyValue} object.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     */
-  def getRunAttributes(Index: Double, RequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue] = js.native
+  def getRunAttributes(Index: Double, RequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue]
 }
 object XAccessibleTextAttributes {
   

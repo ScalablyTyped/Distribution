@@ -11,47 +11,49 @@ import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useBlockingPaginationFragmentMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useBlockingPaginationFragment", "useBlockingPaginationFragment")
+  @JSImport("react-relay/lib/relay-experimental/useBlockingPaginationFragment", JSImport.Namespace)
   @js.native
-  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useBlockingPaginationFragment", "useBlockingPaginationFragment")
-  @js.native
-  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, _]] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useBlockingPaginationFragment", "useBlockingPaginationFragment")
-  @js.native
-  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, _]] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useBlockingPaginationFragment", "useBlockingPaginationFragment")
-  @js.native
-  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: Null, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[_] | Null */, TFragmentData] extends StObject {
+  @scala.inline
+  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBlockingPaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null]]
+  @scala.inline
+  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useBlockingPaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]]]
+  @scala.inline
+  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useBlockingPaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, KeyTypeData[TKey, js.Any]]]
+  @scala.inline
+  def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: Null, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useBlockingPaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, js.Any]) | Null]]
+  
+  trait ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData] extends StObject {
     
-    var data: TFragmentData = js.native
+    var data: TFragmentData
     
-    var hasNext: Boolean = js.native
+    var hasNext: Boolean
     
-    var hasPrevious: Boolean = js.native
+    var hasPrevious: Boolean
     
-    var loadNext: LoadMoreFn[TQuery] = js.native
+    var loadNext: LoadMoreFn[TQuery]
     
-    var loadPrevious: LoadMoreFn[TQuery] = js.native
+    var loadPrevious: LoadMoreFn[TQuery]
     
-    var refetch: RefetchFnDynamic[TQuery, TKey, Options] = js.native
+    var refetch: RefetchFnDynamic[TQuery, TKey, Options]
   }
   object ReturnTypeNode {
     
     @scala.inline
-    def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[_] | Null */, TFragmentData](
+    def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData](
       data: TFragmentData,
       hasNext: Boolean,
       hasPrevious: Boolean,
@@ -64,7 +66,7 @@ object useBlockingPaginationFragmentMod {
     }
     
     @scala.inline
-    implicit class ReturnTypeNodeMutableBuilder[Self <: ReturnTypeNode[_, _, _], TQuery /* <: OperationType */, TKey /* <: KeyType[_] | Null */, TFragmentData] (val x: Self with (ReturnTypeNode[TQuery, TKey, TFragmentData])) extends AnyVal {
+    implicit class ReturnTypeNodeMutableBuilder[Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TFragmentData] (val x: Self & (ReturnTypeNode[TQuery, TKey, TFragmentData])) extends AnyVal {
       
       @scala.inline
       def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

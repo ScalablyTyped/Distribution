@@ -14,7 +14,6 @@ import typings.gitlab.usersMod.UserSchema
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobsMod {
@@ -106,16 +105,15 @@ object jobsMod {
     def showPipelineJobs(projectId: Double, pipelineId: Double, options: scopeJobScopeundefinedSud): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait ArtifactSchema extends StObject {
     
-    var file_format: js.UndefOr[String] = js.native
+    var file_format: js.UndefOr[String] = js.undefined
     
-    var file_type: String = js.native
+    var file_type: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object ArtifactSchema {
     
@@ -145,46 +143,45 @@ object jobsMod {
     }
   }
   
-  @js.native
   trait JobSchema extends StObject {
     
-    var allow_failure: Boolean = js.native
+    var allow_failure: Boolean
     
-    var artifacts: js.Array[ArtifactSchema] = js.native
+    var artifacts: js.Array[ArtifactSchema]
     
-    var artifacts_expire_at: js.UndefOr[Date] = js.native
+    var artifacts_expire_at: js.UndefOr[Date] = js.undefined
     
-    var commit: CommitSchema = js.native
+    var commit: CommitSchema
     
-    var coverage: js.UndefOr[String] = js.native
+    var coverage: js.UndefOr[String] = js.undefined
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var finished_at: js.UndefOr[Date] = js.native
+    var finished_at: js.UndefOr[Date] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pipeline: PipelineSchema = js.native
+    var pipeline: PipelineSchema
     
-    var ref: String = js.native
+    var ref: String
     
-    var runner: RunnerSchema = js.native
+    var runner: RunnerSchema
     
-    var stage: String = js.native
+    var stage: String
     
-    var started_at: js.UndefOr[Date] = js.native
+    var started_at: js.UndefOr[Date] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var tag: Boolean = js.native
+    var tag: Boolean
     
-    var user: UserSchema = js.native
+    var user: UserSchema
     
-    var web_url: String = js.native
+    var web_url: String
   }
   object JobSchema {
     

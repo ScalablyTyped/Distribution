@@ -2,13 +2,11 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistData extends StObject {
   
-  var items: js.UndefOr[js.Array[PlaylistItem]] = js.native
+  var items: js.UndefOr[js.Array[PlaylistItem]] = js.undefined
 }
 object PlaylistData {
   

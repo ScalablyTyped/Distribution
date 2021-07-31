@@ -2,13 +2,13 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlotHTMLAttributes[T] extends HTMLAttributes[T] {
+trait SlotHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SlotHTMLAttributes {
   
@@ -19,7 +19,7 @@ object SlotHTMLAttributes {
   }
   
   @scala.inline
-  implicit class SlotHTMLAttributesMutableBuilder[Self <: SlotHTMLAttributes[_], T] (val x: Self with SlotHTMLAttributes[T]) extends AnyVal {
+  implicit class SlotHTMLAttributesMutableBuilder[Self <: SlotHTMLAttributes[?], T] (val x: Self & SlotHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

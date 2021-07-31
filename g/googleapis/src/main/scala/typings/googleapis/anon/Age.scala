@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Age extends StObject {
   
-  var age: js.UndefOr[Double] = js.native
+  var age: js.UndefOr[Double] = js.undefined
   
-  var createdBefore: js.UndefOr[String] = js.native
+  var createdBefore: js.UndefOr[String] = js.undefined
   
-  var isLive: js.UndefOr[Boolean] = js.native
+  var isLive: js.UndefOr[Boolean] = js.undefined
   
-  var matchesPattern: js.UndefOr[String] = js.native
+  var matchesPattern: js.UndefOr[String] = js.undefined
   
-  var matchesStorageClass: js.UndefOr[js.Array[String]] = js.native
+  var matchesStorageClass: js.UndefOr[js.Array[String]] = js.undefined
   
-  var numNewerVersions: js.UndefOr[Double] = js.native
+  var numNewerVersions: js.UndefOr[Double] = js.undefined
 }
 object Age {
   

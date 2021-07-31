@@ -7,10 +7,13 @@ import typings.react.mod.Component
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuBaseMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", "ContextualMenuBase")
   @js.native
@@ -218,9 +221,9 @@ object contextualMenuBaseMod {
     def componentWillUnmount_MContextualMenuBase(): Unit = js.native
     
     def dismiss(): Unit = js.native
-    def dismiss(ev: js.UndefOr[scala.Nothing], dismissAll: Boolean): Unit = js.native
     def dismiss(ev: js.Any): Unit = js.native
     def dismiss(ev: js.Any, dismissAll: Boolean): Unit = js.native
+    def dismiss(ev: Unit, dismissAll: Boolean): Unit = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MContextualMenuBase(newProps: IContextualMenuProps, newState: IContextualMenuState): Boolean = js.native
@@ -239,37 +242,34 @@ object contextualMenuBaseMod {
     def defaultProps_=(x: IContextualMenuProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", "canAnyMenuItemsCheck")
-  @js.native
-  def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = js.native
+  @scala.inline
+  def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAnyMenuItemsCheck")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", "getSubmenuItems")
-  @js.native
-  def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = js.native
+  @scala.inline
+  def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
   
-  @js.native
   trait IContextualMenuState extends StObject {
     
-    var contextualMenuItems: js.UndefOr[js.Array[IContextualMenuItem]] = js.native
+    var contextualMenuItems: js.UndefOr[js.Array[IContextualMenuItem]] = js.undefined
     
-    var contextualMenuTarget: js.UndefOr[Element] = js.native
+    var contextualMenuTarget: js.UndefOr[Element] = js.undefined
     
-    var dismissedMenuItemKey: js.UndefOr[String] = js.native
+    var dismissedMenuItemKey: js.UndefOr[String] = js.undefined
     
     /** True if the menu was expanded by mouse click OR hover (as opposed to by keyboard) */
-    var expandedByMouseClick: js.UndefOr[Boolean] = js.native
+    var expandedByMouseClick: js.UndefOr[Boolean] = js.undefined
     
-    var expandedMenuItemKey: js.UndefOr[String] = js.native
+    var expandedMenuItemKey: js.UndefOr[String] = js.undefined
     
-    var positions: js.UndefOr[js.Any] = js.native
+    var positions: js.UndefOr[js.Any] = js.undefined
     
-    var slideDirectionalClassName: js.UndefOr[String] = js.native
+    var slideDirectionalClassName: js.UndefOr[String] = js.undefined
     
-    var subMenuId: js.UndefOr[String] = js.native
+    var subMenuId: js.UndefOr[String] = js.undefined
     
-    var submenuDirection: js.UndefOr[DirectionalHint] = js.native
+    var submenuDirection: js.UndefOr[DirectionalHint] = js.undefined
     
-    var submenuTarget: js.UndefOr[Element] = js.native
+    var submenuTarget: js.UndefOr[Element] = js.undefined
   }
   object IContextualMenuState {
     

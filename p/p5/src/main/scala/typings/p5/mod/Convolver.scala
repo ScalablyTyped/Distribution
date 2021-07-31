@@ -3,11 +3,12 @@ package typings.p5.mod
 import typings.std.ConvolverNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Convolver extends Effect {
+trait Convolver
+  extends StObject
+     with Effect {
   
   /**
     *   Load and assign a new Impulse Response to the
@@ -20,8 +21,8 @@ trait Convolver extends Effect {
     */
   def addImpulse(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   /**
@@ -43,17 +44,13 @@ trait Convolver extends Effect {
     *   in as the argument to the callback function.
     */
   def createConvolver(path: String): Convolver = js.native
+  def createConvolver(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Convolver = js.native
   def createConvolver(
     path: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Convolver = js.native
-  def createConvolver(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Convolver = js.native
-  def createConvolver(
-    path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): Convolver = js.native
+  def createConvolver(path: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): Convolver = js.native
   
   /**
     *   If you load multiple impulse files using the
@@ -61,7 +58,7 @@ trait Convolver extends Effect {
     *   in this Array. Toggle between them with the
     *   toggleImpulse(id) method.
     */
-  var impulses: js.Array[_] = js.native
+  var impulses: js.Array[js.Any] = js.native
   
   /**
     *   Connect a source to the reverb, and assign reverb
@@ -82,8 +79,8 @@ trait Convolver extends Effect {
     */
   def resetImpulse(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   /**

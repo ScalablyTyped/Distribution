@@ -2,49 +2,47 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Domain object in Directory API.
   */
-@js.native
 trait SchemaDomains extends StObject {
   
   /**
     * Creation time of the domain. (Read-only).
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * List of domain alias objects. (Read-only)
     */
-  var domainAliases: js.UndefOr[js.Array[SchemaDomainAlias]] = js.native
+  var domainAliases: js.UndefOr[js.Array[SchemaDomainAlias]] = js.undefined
   
   /**
     * The domain name of the customer.
     */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the domain is a primary domain (Read-only).
     */
-  var isPrimary: js.UndefOr[Boolean] = js.native
+  var isPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the verification state of a domain. (Read-only).
     */
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDomains {
   

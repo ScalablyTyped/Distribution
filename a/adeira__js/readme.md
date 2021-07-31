@@ -10,9 +10,9 @@ Useful JS functions used in Adeira ecosystem
 | ------------------ | :-------------: |
 | Full name          | @adeira/js |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 15 |
-| # downloads        | 508515 |
+| # releases         | 12 |
+| # dependents       | 16 |
+| # downloads        | 795074 |
 | # stars            | 0 |
 
 ## Links

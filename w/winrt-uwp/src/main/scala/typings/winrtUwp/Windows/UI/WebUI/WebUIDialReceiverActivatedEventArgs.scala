@@ -5,36 +5,34 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecution
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated from another app by using the DIAL protocol. */
-@js.native
 trait WebUIDialReceiverActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the name of the app that invoked the dial receiver app. */
-  var appName: String = js.native
+  var appName: String
   
   /** Gets the arguments that are passed to the app during its launch activation. */
-  var arguments: String = js.native
+  var arguments: String
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object, which provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the identifier of the source tile that launched the app. */
-  var tileId: String = js.native
+  var tileId: String
 }
 object WebUIDialReceiverActivatedEventArgs {
   

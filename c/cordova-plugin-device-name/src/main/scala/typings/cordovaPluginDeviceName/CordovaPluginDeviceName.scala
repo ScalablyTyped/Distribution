@@ -2,7 +2,6 @@ package typings.cordovaPluginDeviceName
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object CordovaPluginDeviceName {
   
-  @js.native
   trait CordovaPluginDeviceName extends StObject {
     
     /**
       * User-friendly name of the device.
       * @example cordova.plugins.deviceName.name // e.g: Larry's Android
       */
-    var name: String = js.native
+    var name: String
   }
   object CordovaPluginDeviceName {
     

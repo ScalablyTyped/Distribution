@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceOperation extends Entity {
+trait ResourceOperation
+  extends StObject
+     with Entity {
   
   /**
     * Type of action this operation is going to perform. The actionName should be concise and limited to as few words as
     * possible.
     */
-  var actionName: js.UndefOr[NullableOption[String]] = js.native
+  var actionName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Description of the resource operation. The description is used in mouse-over text for the operation when shown in the
     * Azure Portal.
     */
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the Resource this operation is performed on.
-  var resourceName: js.UndefOr[NullableOption[String]] = js.native
+  var resourceName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResourceOperation {
   

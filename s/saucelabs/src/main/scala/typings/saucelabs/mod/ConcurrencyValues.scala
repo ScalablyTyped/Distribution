@@ -3,20 +3,19 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConcurrencyValues
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var mac_vms: js.UndefOr[Double] = js.native
+  var mac_vms: js.UndefOr[Double] = js.undefined
   
-  var rds: js.UndefOr[Double] = js.native
+  var rds: js.UndefOr[Double] = js.undefined
   
-  var vms: js.UndefOr[Double] = js.native
+  var vms: js.UndefOr[Double] = js.undefined
 }
 object ConcurrencyValues {
   

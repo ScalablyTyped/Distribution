@@ -2,48 +2,46 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of an iOS device tests may be run on.
   */
-@js.native
 trait SchemaIosModel extends StObject {
   
   /**
     * Device capabilities. Copied from
     * https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html
     */
-  var deviceCapabilities: js.UndefOr[js.Array[String]] = js.native
+  var deviceCapabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether this device is a phone, tablet, wearable, etc.
     */
-  var formFactor: js.UndefOr[String] = js.native
+  var formFactor: js.UndefOr[String] = js.undefined
   
   /**
     * The unique opaque id for this model. Use this for invoking the
     * TestExecutionService.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable name for this device model. Examples: &quot;iPhone
     * 4s&quot;, &quot;iPad Mini 2&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The set of iOS major software versions this device supports.
     */
-  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Tags for this dimension. Examples: &quot;default&quot;,
     * &quot;preview&quot;, &quot;deprecated&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaIosModel {
   

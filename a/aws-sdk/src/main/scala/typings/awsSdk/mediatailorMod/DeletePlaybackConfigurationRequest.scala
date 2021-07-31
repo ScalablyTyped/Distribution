@@ -2,16 +2,14 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePlaybackConfigurationRequest extends StObject {
   
   /**
     * The identifier for the playback configuration.
     */
-  var Name: string = js.native
+  var Name: string
 }
 object DeletePlaybackConfigurationRequest {
   

@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.viz.PolarChartSeries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomizeSeriesNameField extends StObject {
   
-  var customizeSeries: js.UndefOr[js.Function1[/* seriesName */ js.Any, PolarChartSeries]] = js.native
+  var customizeSeries: js.UndefOr[js.Function1[/* seriesName */ js.Any, PolarChartSeries]] = js.undefined
   
-  var nameField: js.UndefOr[String] = js.native
+  var nameField: js.UndefOr[String] = js.undefined
 }
 object CustomizeSeriesNameField {
   

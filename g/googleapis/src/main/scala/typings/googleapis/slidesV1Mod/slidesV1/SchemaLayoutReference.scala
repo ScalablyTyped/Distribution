@@ -2,25 +2,23 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Slide layout reference. This may reference either:  - A predefined layout -
   * One of the layouts in the presentation.
   */
-@js.native
 trait SchemaLayoutReference extends StObject {
   
   /**
     * Layout ID: the object ID of one of the layouts in the presentation.
     */
-  var layoutId: js.UndefOr[String] = js.native
+  var layoutId: js.UndefOr[String] = js.undefined
   
   /**
     * Predefined layout.
     */
-  var predefinedLayout: js.UndefOr[String] = js.native
+  var predefinedLayout: js.UndefOr[String] = js.undefined
 }
 object SchemaLayoutReference {
   

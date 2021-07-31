@@ -3,12 +3,12 @@ package typings.rx.Rx
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotificationStatic
-  extends Instantiable6[
+  extends StObject
+     with Instantiable6[
       /* kind */ js.Any, 
       /* value */ js.Any, 
       /* exception */ js.Any, 

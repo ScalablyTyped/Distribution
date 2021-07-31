@@ -2,17 +2,15 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BEGINCELLEDIT extends StObject {
   
-  var BEGIN_CELL_EDIT: String = js.native
+  var BEGIN_CELL_EDIT: String
   
-  var CANCEL_CELL_EDIT: String = js.native
+  var CANCEL_CELL_EDIT: String
   
-  var END_CELL_EDIT: String = js.native
+  var END_CELL_EDIT: String
 }
 object BEGINCELLEDIT {
   

@@ -11,8 +11,8 @@ A JS library for finding optimal label position inside a polygon
 | Full name          | polylabel |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 31 |
-| # downloads        | 1907656 |
+| # dependents       | 32 |
+| # downloads        | 2575263 |
 | # stars            | 3 |
 
 ## Links

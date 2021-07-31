@@ -12,7 +12,7 @@ Powerful and customizable application health monitoring
 | Keywords           | health, check, monitor, express, cpu, memory, application |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 88935 |
+| # downloads        | 74292 |
 | # stars            | 2 |
 
 ## Links

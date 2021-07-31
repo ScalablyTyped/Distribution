@@ -12,11 +12,9 @@ import typings.officeJs.officeJsStrings.Workbook
 import typings.officeJs.officeJsStrings.Worksheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `namedItem.toJSON()`. */
-@js.native
 trait NamedItemData extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var arrayValues: js.UndefOr[NamedItemArrayValuesData] = js.native
+  var arrayValues: js.UndefOr[NamedItemArrayValuesData] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var formula: js.UndefOr[js.Any] = js.native
+  var formula: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var scope: js.UndefOr[NamedItemScope | Worksheet | Workbook] = js.native
+  var scope: js.UndefOr[NamedItemScope | Worksheet | Workbook] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait NamedItemData extends StObject {
     */
   var `type`: js.UndefOr[
     NamedItemType | typings.officeJs.officeJsStrings.String | Integer | Double | Boolean | Range | Error | Array
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait NamedItemData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var visible: js.UndefOr[scala.Boolean] = js.native
+  var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 object NamedItemData {
   

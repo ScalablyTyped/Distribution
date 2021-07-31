@@ -10,9 +10,9 @@ Load config with ease.
 | ------------------ | :-------------: |
 | Full name          | joycon |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 58 |
-| # downloads        | 6865638 |
+| # releases         | 2 |
+| # dependents       | 72 |
+| # downloads        | 12510790 |
 | # stars            | 0 |
 
 ## Links

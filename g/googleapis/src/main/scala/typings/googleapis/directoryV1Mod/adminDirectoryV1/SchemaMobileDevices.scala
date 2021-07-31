@@ -2,34 +2,32 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List Mobile Devices operation in Directory API.
   */
-@js.native
 trait SchemaMobileDevices extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * List of Mobile Device objects.
     */
-  var mobiledevices: js.UndefOr[js.Array[SchemaMobileDevice]] = js.native
+  var mobiledevices: js.UndefOr[js.Array[SchemaMobileDevice]] = js.undefined
   
   /**
     * Token used to access next page of this result.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaMobileDevices {
   

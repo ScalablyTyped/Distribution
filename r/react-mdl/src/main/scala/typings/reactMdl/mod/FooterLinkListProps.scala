@@ -3,17 +3,16 @@ package typings.reactMdl.mod
 import typings.react.mod.DOMAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FooterLinkListProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[FooterLinkList] {
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object FooterLinkListProps {
   

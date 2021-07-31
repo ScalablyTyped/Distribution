@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
@@ -401,13 +400,13 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def ambientMaterial(v1: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
+  def ambientMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
   
   /**
     *   Sets the current mode of p5 to given mode. Default
@@ -423,7 +422,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param value to be added to the Array
     *   @return the array that was appended to
     */
-  def append(array: js.Array[_], value: js.Any): js.Array[_] = js.native
+  def append(array: js.Array[js.Any], value: js.Any): js.Array[js.Any] = js.native
   
   /**
     *   Multiplies the current matrix by the one specified
@@ -491,10 +490,20 @@ trait p5InstanceExtensions extends StObject {
     h: Double,
     start: Double,
     stop: Double,
-    mode: js.UndefOr[ARC_MODE],
+    mode: Unit,
     detail: Double
   ): p5 = js.native
   def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): p5 = js.native
+  def arc(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    start: Double,
+    stop: Double,
+    mode: ARC_MODE,
+    detail: Double
+  ): p5 = js.native
   
   /**
     *   Copies an array (or part of an array) to another
@@ -520,8 +529,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [length] number of Array elements to be
     *   copied
     */
-  def arrayCopy(src: js.Array[_], dst: js.Array[_]): Unit = js.native
-  def arrayCopy(src: js.Array[_], dst: js.Array[_], length: Double): Unit = js.native
+  def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any]): Unit = js.native
+  def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any], length: Double): Unit = js.native
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -550,7 +559,13 @@ trait p5InstanceExtensions extends StObject {
     *   @param length number of Array elements to be
     *   copied
     */
-  def arrayCopy(src: js.Array[_], srcPosition: Double, dst: js.Array[_], dstPosition: Double, length: Double): Unit = js.native
+  def arrayCopy(
+    src: js.Array[js.Any],
+    srcPosition: Double,
+    dst: js.Array[js.Any],
+    dstPosition: Double,
+    length: Double
+  ): Unit = js.native
   
   /**
     *   The inverse of sin(), returns the arc sine of a
@@ -1190,7 +1205,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return boolean representation of value
     */
   def boolean(n: String): Boolean = js.native
-  def boolean(n: js.Array[_]): Boolean = js.native
+  def boolean(n: js.Array[js.Any]): Boolean = js.native
   def boolean(n: Boolean): Boolean = js.native
   def boolean(n: Double): Boolean = js.native
   
@@ -1206,123 +1221,37 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def box(): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def box(width: js.UndefOr[scala.Nothing], Height: js.UndefOr[scala.Nothing], depth: Double): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: Double,
-    detailX: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    depth: Double,
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def box(width: js.UndefOr[scala.Nothing], Height: Double): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: Double,
-    depth: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: Double,
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: Double,
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double): p5 = js.native
-  def box(
-    width: js.UndefOr[scala.Nothing],
-    Height: Double,
-    depth: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double): p5 = js.native
-  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
   def box(width: Double): p5 = js.native
-  def box(
-    width: Double,
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(
-    width: Double,
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def box(
-    width: Double,
-    Height: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double): p5 = js.native
-  def box(
-    width: Double,
-    Height: js.UndefOr[scala.Nothing],
-    depth: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double): p5 = js.native
-  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double, detailY: Double): p5 = js.native
   def box(width: Double, Height: Double): p5 = js.native
-  def box(
-    width: Double,
-    Height: Double,
-    depth: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): p5 = js.native
   def box(width: Double, Height: Double, depth: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double): p5 = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   def brightness(color: String): Double = js.native
   def brightness(color: js.Array[Double]): Double = js.native
@@ -1362,7 +1291,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return array of byte representation of values
     */
-  def byte(ns: js.Array[_]): js.Array[Double] = js.native
+  def byte(ns: js.Array[js.Any]): js.Array[Double] = js.native
   
   /**
     *   Sets the camera position for a 3D sketch.
@@ -1422,7 +1351,7 @@ trait p5InstanceExtensions extends StObject {
     *   fire.
     *   @chainable
     */
-  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5 = js.native
+  def changed(fxn: js.Function1[/* repeated */ js.Any, js.Any]): p5 = js.native
   def changed(fxn: Boolean): p5 = js.native
   
   /**
@@ -1451,7 +1380,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return array of string representation of values
     */
-  def char(ns: js.Array[_]): js.Array[String] = js.native
+  def char(ns: js.Array[js.Any]): js.Array[String] = js.native
   
   /**
     *   Draws a circle to the screen. A circle is a simple
@@ -1681,7 +1610,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param b second Array to concatenate
     *   @return concatenated array
     */
-  def concat(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+  def concat(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     *   Draw a cone with given radius and height
@@ -1695,123 +1624,37 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def cone(): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double,
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double,
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: js.UndefOr[scala.Nothing], height: Double): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double,
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double): p5 = js.native
-  def cone(
-    radius: js.UndefOr[scala.Nothing],
-    height: Double,
-    detailX: Double,
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): p5 = js.native
-  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
   def cone(radius: Double): p5 = js.native
-  def cone(
-    radius: Double,
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(
-    radius: Double,
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def cone(
-    radius: Double,
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double,
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def cone(
-    radius: Double,
-    height: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): p5 = js.native
-  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
   def cone(radius: Double, height: Double): p5 = js.native
-  def cone(
-    radius: Double,
-    height: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: js.UndefOr[scala.Nothing],
-    cap: Boolean
-  ): p5 = js.native
-  def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
-  def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double, cap: Boolean): p5 = js.native
   def cone(radius: Double, height: Double, detailX: Double): p5 = js.native
-  def cone(radius: Double, height: Double, detailX: Double, detailY: js.UndefOr[scala.Nothing], cap: Boolean): p5 = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double): p5 = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Double, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Unit, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Double, detailX: Unit, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Double): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Double, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Unit, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Double, height: Unit, detailX: Unit, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Double): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Double): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Double, detailY: Double): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Double, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Unit, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Double, detailX: Unit, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Double): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Double, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Double, detailY: Unit, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Double, cap: Boolean): p5 = js.native
+  def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Unit, cap: Boolean): p5 = js.native
   
   /**
     *   Constrains a value between a minimum and maximum
@@ -1935,11 +1778,11 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to audio p5.Element
     */
   def createAudio(): MediaElement = js.native
-  def createAudio(src: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
   def createAudio(src: String): MediaElement = js.native
-  def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
   def createAudio(src: js.Array[String]): MediaElement = js.native
-  def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def createAudio(src: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
   
   /**
     *   Creates a <button></button> element in the DOM.
@@ -2011,11 +1854,11 @@ trait p5InstanceExtensions extends StObject {
     *   @return capture video p5.Element
     */
   def createCapture(`type`: String): Element = js.native
-  def createCapture(`type`: String, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def createCapture(`type`: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def createCapture(`type`: js.Object): Element = js.native
-  def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def createCapture(`type`: TYPE): Element = js.native
-  def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   
   /**
     *   Creates a checkbox <input></input> element in the
@@ -2027,9 +1870,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to p5.Element holding created node
     */
   def createCheckbox(): Element = js.native
-  def createCheckbox(label: js.UndefOr[scala.Nothing], value: Boolean): Element = js.native
   def createCheckbox(label: String): Element = js.native
   def createCheckbox(label: String, value: Boolean): Element = js.native
+  def createCheckbox(label: Unit, value: Boolean): Element = js.native
   
   /**
     *   Creates a colorPicker element in the DOM for color
@@ -2078,9 +1921,9 @@ trait p5InstanceExtensions extends StObject {
     *   element
     */
   def createFileInput(): Element = js.native
-  def createFileInput(callback: js.UndefOr[scala.Nothing], multiple: String): Element = js.native
-  def createFileInput(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-  def createFileInput(callback: js.Function1[/* repeated */ js.Any, _], multiple: String): Element = js.native
+  def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any], multiple: String): Element = js.native
+  def createFileInput(callback: Unit, multiple: String): Element = js.native
   
   /**
     *   Creates and returns a new p5.Renderer object. Use
@@ -2135,13 +1978,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to p5.Element holding created node
     */
   def createImg(src: String): Element = js.native
-  def createImg(
-    src: String,
-    alt: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* repeated */ js.Any, _]
-  ): Element = js.native
   def createImg(src: String, alt: String): Element = js.native
-  def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def createImg(src: String, alt: Unit, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   /**
     *   Creates an <img> element in the DOM with given src
     *   and alternate text. Appends to the container node
@@ -2150,7 +1989,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param successCallback callback to be called once
     *   image data is loaded
     */
-  def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, _]): js.Object | Element = js.native
+  def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | Element = js.native
   
   /**
     *   Creates an <input></input> element in the DOM for
@@ -2163,9 +2002,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to p5.Element holding created node
     */
   def createInput(): Element = js.native
-  def createInput(value: js.UndefOr[scala.Nothing], `type`: String): Element = js.native
   def createInput(value: String): Element = js.native
   def createInput(value: String, `type`: String): Element = js.native
+  def createInput(value: Unit, `type`: String): Element = js.native
   
   /**
     *   Creates a new instance of p5.NumberDict using the
@@ -2239,9 +2078,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to p5.Element holding created node
     */
   def createSlider(min: Double, max: Double): Element = js.native
-  def createSlider(min: Double, max: Double, value: js.UndefOr[scala.Nothing], step: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double, step: Double): Element = js.native
+  def createSlider(min: Double, max: Double, value: Unit, step: Double): Element = js.native
   
   /**
     *   Creates a <span></span> element in the DOM with
@@ -2276,13 +2115,13 @@ trait p5InstanceExtensions extends StObject {
     *   @param [z] z component of the vector
     */
   def createVector(): Vector = js.native
-  def createVector(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
-  def createVector(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
-  def createVector(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vector = js.native
   def createVector(x: Double): Vector = js.native
-  def createVector(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def createVector(x: Double, y: Double): Vector = js.native
   def createVector(x: Double, y: Double, z: Double): Vector = js.native
+  def createVector(x: Double, y: Unit, z: Double): Vector = js.native
+  def createVector(x: Unit, y: Double): Vector = js.native
+  def createVector(x: Unit, y: Double, z: Double): Vector = js.native
+  def createVector(x: Unit, y: Unit, z: Double): Vector = js.native
   
   /**
     *   Creates an HTML5 <video> element in the DOM for
@@ -2308,12 +2147,12 @@ trait p5InstanceExtensions extends StObject {
     *   @return pointer to video p5.Element
     */
   def createVideo(src: String): MediaElement = js.native
-  def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
   def createVideo(src: js.Array[String]): MediaElement = js.native
-  def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
   
   def createWriter(name: String): PrintWriter = js.native
-  def createWriter(name: String, extension: String): PrintWriter = js.native
+  def createWriter(name: String, `extension`: String): PrintWriter = js.native
   
   /**
     *   Sets the cursor to a predefined symbol or an
@@ -2335,13 +2174,13 @@ trait p5InstanceExtensions extends StObject {
     *   (must be less than 32)
     */
   def cursor(`type`: String): Unit = js.native
-  def cursor(`type`: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def cursor(`type`: String, x: Double): Unit = js.native
   def cursor(`type`: String, x: Double, y: Double): Unit = js.native
+  def cursor(`type`: String, x: Unit, y: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE): Unit = js.native
-  def cursor(`type`: CURSOR_TYPE, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE, x: Unit, y: Double): Unit = js.native
   
   /**
     *   Draws a curved line on the screen between two
@@ -2650,197 +2489,9 @@ trait p5InstanceExtensions extends StObject {
     *   @param [zOff] Z axis offset from origin (0,0,0)
     */
   def debugMode(mode: UNKNOWN_P5_CONSTANT): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: js.UndefOr[scala.Nothing], gridDivisions: Double): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: Double,
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: Double,
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: js.UndefOr[scala.Nothing],
-    gridDivisions: Double,
-    xOff: Double,
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: js.UndefOr[scala.Nothing],
-    xOff: Double,
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double
-  ): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: Double,
-    xOff: js.UndefOr[scala.Nothing],
-    yOff: Double,
-    zOff: Double
-  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double): Unit = js.native
-  def debugMode(
-    mode: UNKNOWN_P5_CONSTANT,
-    gridSize: Double,
-    gridDivisions: Double,
-    xOff: Double,
-    yOff: js.UndefOr[scala.Nothing],
-    zOff: Double
-  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double, yOff: Double): Unit = js.native
   def debugMode(
     mode: UNKNOWN_P5_CONSTANT,
@@ -2848,6 +2499,137 @@ trait p5InstanceExtensions extends StObject {
     gridDivisions: Double,
     xOff: Double,
     yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Unit, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: Unit,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: Unit,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Double): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Double, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Unit,
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Unit,
+    xOff: Double,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Unit, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Unit,
+    xOff: Unit,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Unit,
+    xOff: Unit,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Double): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Double, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Unit, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Double,
+    xOff: Unit,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Double,
+    xOff: Unit,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Double): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Double, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Unit,
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Unit,
+    xOff: Double,
+    yOff: Unit,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Unit, yOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Unit,
+    xOff: Unit,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Unit,
+    gridDivisions: Unit,
+    xOff: Unit,
+    yOff: Unit,
     zOff: Double
   ): Unit = js.native
   
@@ -3117,147 +2899,37 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def ellipsoid(): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: js.UndefOr[scala.Nothing], radiusz: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: Double,
-    detailX: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: Double,
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: Double,
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: Double,
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: Double,
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: Double,
-    radiusz: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double, detailX: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: js.UndefOr[scala.Nothing],
-    radiusy: Double,
-    radiusz: Double,
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
   def ellipsoid(radiusx: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double
-  ): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double, detailX: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: js.UndefOr[scala.Nothing],
-    radiusz: Double,
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
   def ellipsoid(radiusx: Double, radiusy: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: Double,
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: Double,
-    radiusz: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): p5 = js.native
-  def ellipsoid(
-    radiusx: Double,
-    radiusy: Double,
-    radiusz: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): p5 = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   /**
     *   Use the beginContour() and endContour() functions
@@ -3834,203 +3506,198 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpDo(path: String): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String, data: js.Object): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: js.UndefOr[scala.Nothing],
-    datatype: String,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: String): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: String, datatype: String): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(
-    path: String,
-    method: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+  def httpDo(path: String): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: String): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: String, datatype: String): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: Unit,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: String): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: String,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpDo(
+    path: String,
+    method: Unit,
+    datatype: Unit,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   /**
     *   Method for executing an HTTP request. If data type
     *   is not specified, p5 will try to guess based on
@@ -4051,20 +3718,20 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpDo(path: String, options: js.Object): js.Promise[_] = js.native
+  def httpDo(path: String, options: js.Object): js.Promise[js.Any] = js.native
+  def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpDo(
     path: String,
     options: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpDo(
     path: String,
     options: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   
   /**
     *   Method for executing an HTTP GET request. If data
@@ -4089,7 +3756,7 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpGet(path: String): js.Promise[_] = js.native
+  def httpGet(path: String): js.Promise[js.Any] = js.native
   /**
     *   Method for executing an HTTP GET request. If data
     *   type is not specified, p5 will try to guess based
@@ -4107,12 +3774,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpGet(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+  def httpGet(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   /**
     *   Method for executing an HTTP GET request. If data
     *   type is not specified, p5 will try to guess based
@@ -4131,149 +3798,144 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpGet(path: String, data: js.Object): js.Promise[_] = js.native
+  def httpGet(path: String, data: js.Object): js.Promise[js.Any] = js.native
+  def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, data: Boolean): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, data: Boolean): js.Promise[js.Any] = js.native
+  def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: String): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: String): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpGet(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: Boolean,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: Boolean,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpGet(
+    path: String,
+    datatype: Unit,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   
   /**
     *   Method for executing an HTTP POST request. If data
@@ -4294,7 +3956,7 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpPost(path: String): js.Promise[_] = js.native
+  def httpPost(path: String): js.Promise[js.Any] = js.native
   /**
     *   Method for executing an HTTP POST request. If data
     *   type is not specified, p5 will try to guess based
@@ -4308,12 +3970,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpPost(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+  def httpPost(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   /**
     *   Method for executing an HTTP POST request. If data
     *   type is not specified, p5 will try to guess based
@@ -4328,149 +3990,144 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpPost(path: String, data: js.Object): js.Promise[_] = js.native
+  def httpPost(path: String, data: js.Object): js.Promise[js.Any] = js.native
+  def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, data: Boolean): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, data: Boolean): js.Promise[js.Any] = js.native
+  def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: js.UndefOr[scala.Nothing],
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: String): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(
-    path: String,
-    datatype: String,
-    data: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: String): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
-  def httpPost(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: Boolean,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: js.Object,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: Boolean,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
+  def httpPost(
+    path: String,
+    datatype: Unit,
+    data: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Promise[js.Any] = js.native
   
   def hue(color: String): Double = js.native
   def hue(color: js.Array[Double]): Double = js.native
@@ -4499,17 +4156,6 @@ trait p5InstanceExtensions extends StObject {
     dHeight: Double,
     sx: Double,
     sy: Double,
-    sWidth: js.UndefOr[scala.Nothing],
-    sHeight: Double
-  ): Unit = js.native
-  def image(
-    img: Element,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
     sWidth: Double
   ): Unit = js.native
   def image(
@@ -4523,10 +4169,21 @@ trait p5InstanceExtensions extends StObject {
     sWidth: Double,
     sHeight: Double
   ): Unit = js.native
+  def image(
+    img: Element,
+    dx: Double,
+    dy: Double,
+    dWidth: Double,
+    dHeight: Double,
+    sx: Double,
+    sy: Double,
+    sWidth: Unit,
+    sHeight: Double
+  ): Unit = js.native
   def image(img: Element, x: Double, y: Double): Unit = js.native
-  def image(img: Element, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def image(img: Element, x: Double, y: Double, width: Double): Unit = js.native
   def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def image(img: Element, x: Double, y: Double, width: Unit, height: Double): Unit = js.native
   /**
     *   Draw an image to the p5.js canvas. This function
     *   can be used with different numbers of parameters.
@@ -4576,17 +4233,6 @@ trait p5InstanceExtensions extends StObject {
     dHeight: Double,
     sx: Double,
     sy: Double,
-    sWidth: js.UndefOr[scala.Nothing],
-    sHeight: Double
-  ): Unit = js.native
-  def image(
-    img: Image,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
     sWidth: Double
   ): Unit = js.native
   def image(
@@ -4598,6 +4244,17 @@ trait p5InstanceExtensions extends StObject {
     sx: Double,
     sy: Double,
     sWidth: Double,
+    sHeight: Double
+  ): Unit = js.native
+  def image(
+    img: Image,
+    dx: Double,
+    dy: Double,
+    dWidth: Double,
+    dHeight: Double,
+    sx: Double,
+    sy: Double,
+    sWidth: Unit,
     sHeight: Double
   ): Unit = js.native
   /**
@@ -4627,9 +4284,9 @@ trait p5InstanceExtensions extends StObject {
     *   @param [height] the height to draw the image
     */
   def image(img: Image, x: Double, y: Double): Unit = js.native
-  def image(img: Image, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def image(img: Image, x: Double, y: Double, width: Unit, height: Double): Unit = js.native
   
   /**
     *   Set image mode. Modifies the location from which
@@ -4667,7 +4324,7 @@ trait p5InstanceExtensions extends StObject {
     *   will no longer fire.
     *   @chainable
     */
-  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5 = js.native
+  def input(fxn: js.Function1[/* repeated */ js.Any, js.Any]): p5 = js.native
   def input(fxn: Boolean): p5 = js.native
   
   /**
@@ -4694,7 +4351,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return integer representation of values
     */
-  def int(ns: js.Array[_]): js.Array[Double] = js.native
+  def int(ns: js.Array[js.Any]): js.Array[Double] = js.native
   
   /**
     *   Combines an array of Strings into one String, each
@@ -4707,7 +4364,7 @@ trait p5InstanceExtensions extends StObject {
     *   item
     *   @return joined String
     */
-  def join(list: js.Array[_], separator: String): String = js.native
+  def join(list: js.Array[js.Any], separator: String): String = js.native
   
   /**
     *   The system variable key always contains the value
@@ -4945,17 +4602,13 @@ trait p5InstanceExtensions extends StObject {
     *   the loaded buffer
     */
   def loadBytes(file: String): js.Object = js.native
+  def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   def loadBytes(
     file: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Object = js.native
-  def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-  def loadBytes(
-    file: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object = js.native
+  def loadBytes(file: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   
   /**
     *   Loads an opentype font file (.otf, .ttf) from a
@@ -4974,13 +4627,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return p5.Font object
     */
   def loadFont(path: String): Font = js.native
-  def loadFont(path: String, callback: js.UndefOr[scala.Nothing], onError: js.Function1[/* repeated */ js.Any, _]): Font = js.native
-  def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Font = js.native
+  def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Font = js.native
   def loadFont(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    onError: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    onError: js.Function1[/* repeated */ js.Any, js.Any]
   ): Font = js.native
+  def loadFont(path: String, callback: Unit, onError: js.Function1[/* repeated */ js.Any, js.Any]): Font = js.native
   
   /**
     *   Loads an image from a path and creates a p5.Image
@@ -5005,17 +4658,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return the p5.Image object
     */
   def loadImage(path: String): Image = js.native
+  def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, js.Any]): Image = js.native
   def loadImage(
     path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: js.Function1[/* p1 */ Event, _]
+    successCallback: js.Function1[/* p1 */ Image, js.Any],
+    failureCallback: js.Function1[/* p1 */ Event, js.Any]
   ): Image = js.native
-  def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, _]): Image = js.native
-  def loadImage(
-    path: String,
-    successCallback: js.Function1[/* p1 */ Image, _],
-    failureCallback: js.Function1[/* p1 */ Event, _]
-  ): Image = js.native
+  def loadImage(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Image = js.native
   
   /**
     *   Loads a JSON file from a file or a URL, and
@@ -5043,7 +4692,7 @@ trait p5InstanceExtensions extends StObject {
     *   argument
     *   @return JSON data
     */
-  def loadJSON(path: String): js.Object | js.Array[_] = js.native
+  def loadJSON(path: String): js.Object | js.Array[js.Any] = js.native
   /**
     *   Loads a JSON file from a file or a URL, and
     *   returns an Object. Note that even if the JSON file
@@ -5066,12 +4715,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def loadJSON(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object | js.Array[_] = js.native
+  def loadJSON(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
   /**
     *   Loads a JSON file from a file or a URL, and
     *   returns an Object. Note that even if the JSON file
@@ -5095,103 +4744,103 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def loadJSON(path: String, datatype: String): js.Object | js.Array[_] = js.native
+  def loadJSON(path: String, datatype: String): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
     datatype: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object | js.Array[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(path: String, jsonpOptions: js.UndefOr[scala.Nothing], datatype: String): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.UndefOr[scala.Nothing],
-    datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
-    datatype: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
-  def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object | js.Array[_] = js.native
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, jsonpOptions: Unit, datatype: String): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: String,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: String,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: String,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: Unit,
+    datatype: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): js.Object | js.Array[js.Any] = js.native
   
   /**
     *   Load a 3d model from an OBJ or STL file.  One of
@@ -5243,30 +4892,26 @@ trait p5InstanceExtensions extends StObject {
     *   @return the p5.Geometry object
     */
   def loadModel(path: String, normalize: Boolean): Geometry = js.native
+  def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = js.native
   def loadModel(
     path: String,
     normalize: Boolean,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: js.Function1[/* p1 */ Event, _]
+    successCallback: js.Function1[/* p1 */ Geometry, js.Any],
+    failureCallback: js.Function1[/* p1 */ Event, js.Any]
   ): Geometry = js.native
-  def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
   def loadModel(
     path: String,
     normalize: Boolean,
-    successCallback: js.Function1[/* p1 */ Geometry, _],
-    failureCallback: js.Function1[/* p1 */ Event, _]
+    successCallback: Unit,
+    failureCallback: js.Function1[/* p1 */ Event, js.Any]
   ): Geometry = js.native
+  def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = js.native
   def loadModel(
     path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: js.Function1[/* p1 */ Event, _]
+    successCallback: js.Function1[/* p1 */ Geometry, js.Any],
+    failureCallback: js.Function1[/* p1 */ Event, js.Any]
   ): Geometry = js.native
-  def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
-  def loadModel(
-    path: String,
-    successCallback: js.Function1[/* p1 */ Geometry, _],
-    failureCallback: js.Function1[/* p1 */ Event, _]
-  ): Geometry = js.native
+  def loadModel(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Geometry = js.native
   
   /**
     *   Loads the pixel data for the display window into
@@ -5300,18 +4945,18 @@ trait p5InstanceExtensions extends StObject {
     *   vertex and fragment shader files.
     */
   def loadShader(vertFilename: String, fragFilename: String): Shader = js.native
+  def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Shader = js.native
   def loadShader(
     vertFilename: String,
     fragFilename: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Shader = js.native
-  def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, _]): Shader = js.native
   def loadShader(
     vertFilename: String,
     fragFilename: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Shader = js.native
   
   /**
@@ -5343,17 +4988,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return Array of Strings
     */
   def loadStrings(filename: String): js.Array[String] = js.native
+  def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
   def loadStrings(
     filename: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Array[String] = js.native
-  def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
-  def loadStrings(
-    filename: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Array[String] = js.native
+  def loadStrings(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
   
   /**
     *   Reads the contents of a file or URL and creates a
@@ -5403,17 +5044,13 @@ trait p5InstanceExtensions extends StObject {
     *   argument
     */
   def loadTable(filename: String): js.Object = js.native
+  def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   def loadTable(
     filename: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Object = js.native
-  def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-  def loadTable(
-    filename: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object = js.native
+  def loadTable(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   /**
     *   Reads the contents of a file or URL and creates a
     *   p5.Table object with its values. If a file is
@@ -5464,18 +5101,18 @@ trait p5InstanceExtensions extends StObject {
     *   @return Table object containing data
     */
   def loadTable(filename: String, options: String): js.Object = js.native
+  def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   def loadTable(
     filename: String,
     options: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Object = js.native
-  def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
   def loadTable(
     filename: String,
     options: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Object = js.native
   
   /**
@@ -5511,17 +5148,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return XML object containing data
     */
   def loadXML(filename: String): js.Object = js.native
+  def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   def loadXML(
     filename: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): js.Object = js.native
-  def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-  def loadXML(
-    filename: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Object = js.native
+  def loadXML(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
   
   /**
     *   Calculates the natural logarithm (the base-e
@@ -5864,14 +5497,14 @@ trait p5InstanceExtensions extends StObject {
   var mouseY: Double = js.native
   
   def nf(num: String): String = js.native
-  def nf(num: String, left: js.UndefOr[scala.Nothing], right: String): String = js.native
-  def nf(num: String, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nf(num: String, left: String): String = js.native
   def nf(num: String, left: String, right: String): String = js.native
   def nf(num: String, left: String, right: Double): String = js.native
   def nf(num: String, left: Double): String = js.native
   def nf(num: String, left: Double, right: String): String = js.native
   def nf(num: String, left: Double, right: Double): String = js.native
+  def nf(num: String, left: Unit, right: String): String = js.native
+  def nf(num: String, left: Unit, right: Double): String = js.native
   /**
     *   Utility function for formatting numbers into
     *   strings. There are two versions: one for
@@ -5894,14 +5527,14 @@ trait p5InstanceExtensions extends StObject {
     *   @return formatted String
     */
   def nf(num: Double): String = js.native
-  def nf(num: Double, left: js.UndefOr[scala.Nothing], right: String): String = js.native
-  def nf(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nf(num: Double, left: String): String = js.native
   def nf(num: Double, left: String, right: String): String = js.native
   def nf(num: Double, left: String, right: Double): String = js.native
   def nf(num: Double, left: Double): String = js.native
   def nf(num: Double, left: Double, right: String): String = js.native
   def nf(num: Double, left: Double, right: Double): String = js.native
+  def nf(num: Double, left: Unit, right: String): String = js.native
+  def nf(num: Double, left: Unit, right: Double): String = js.native
   /**
     *   Utility function for formatting numbers into
     *   strings. There are two versions: one for
@@ -5923,15 +5556,15 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nf(nums: js.Array[_]): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: String): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: String, right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: String, right: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: Double, right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any]): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: String): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: String, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: String, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: Double, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: Unit, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = js.native
   
   def nfc(num: String): String = js.native
   def nfc(num: String, right: String): String = js.native
@@ -5963,9 +5596,9 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nfc(nums: js.Array[_]): js.Array[String] = js.native
-  def nfc(nums: js.Array[_], right: String): js.Array[String] = js.native
-  def nfc(nums: js.Array[_], right: Double): js.Array[String] = js.native
+  def nfc(nums: js.Array[js.Any]): js.Array[String] = js.native
+  def nfc(nums: js.Array[js.Any], right: String): js.Array[String] = js.native
+  def nfc(nums: js.Array[js.Any], right: Double): js.Array[String] = js.native
   
   /**
     *   Utility function for formatting numbers into
@@ -5983,9 +5616,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return formatted String
     */
   def nfp(num: Double): String = js.native
-  def nfp(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nfp(num: Double, left: Double): String = js.native
   def nfp(num: Double, left: Double, right: Double): String = js.native
+  def nfp(num: Double, left: Unit, right: Double): String = js.native
   /**
     *   Utility function for formatting numbers into
     *   strings. Similar to nf() but puts a "+" in front
@@ -6002,9 +5635,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return formatted Strings
     */
   def nfp(nums: js.Array[Double]): js.Array[String] = js.native
-  def nfp(nums: js.Array[Double], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double, right: Double): js.Array[String] = js.native
+  def nfp(nums: js.Array[Double], left: Unit, right: Double): js.Array[String] = js.native
   
   /**
     *   Utility function for formatting numbers into
@@ -6037,9 +5670,9 @@ trait p5InstanceExtensions extends StObject {
     *   @return formatted String
     */
   def nfs(num: Double): String = js.native
-  def nfs(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nfs(num: Double, left: Double): String = js.native
   def nfs(num: Double, left: Double, right: Double): String = js.native
+  def nfs(num: Double, left: Unit, right: Double): String = js.native
   /**
     *   Utility function for formatting numbers into
     *   strings. Similar to nf() but puts an additional
@@ -6070,10 +5703,10 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nfs(nums: js.Array[_]): js.Array[String] = js.native
-  def nfs(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
-  def nfs(nums: js.Array[_], left: Double): js.Array[String] = js.native
-  def nfs(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[js.Any]): js.Array[String] = js.native
+  def nfs(nums: js.Array[js.Any], left: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = js.native
   
   /**
     *   Removes the default canvas for a p5 sketch that
@@ -6197,9 +5830,9 @@ trait p5InstanceExtensions extends StObject {
     *   specified coordinates
     */
   def noise(x: Double): Double = js.native
-  def noise(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def noise(x: Double, y: Double): Double = js.native
   def noise(x: Double, y: Double, z: Double): Double = js.native
+  def noise(x: Double, y: Unit, z: Double): Double = js.native
   
   /**
     *   Adjusts the character and level of detail produced
@@ -6286,9 +5919,9 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def orbitControl(): p5 = js.native
-  def orbitControl(sensitivityX: js.UndefOr[scala.Nothing], sensitivityY: Double): p5 = js.native
   def orbitControl(sensitivityX: Double): p5 = js.native
   def orbitControl(sensitivityX: Double, sensitivityY: Double): p5 = js.native
+  def orbitControl(sensitivityX: Unit, sensitivityY: Double): p5 = js.native
   
   /**
     *   Sets an orthographic projection for the camera in
@@ -6399,26 +6032,21 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def perspective(): p5 = js.native
-  def perspective(
-    fovy: js.UndefOr[scala.Nothing],
-    aspect: js.UndefOr[scala.Nothing],
-    near: js.UndefOr[scala.Nothing],
-    far: Double
-  ): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double): p5 = js.native
-  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double, far: Double): p5 = js.native
   def perspective(fovy: Double): p5 = js.native
-  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double): p5 = js.native
-  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double): p5 = js.native
-  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): p5 = js.native
   def perspective(fovy: Double, aspect: Double): p5 = js.native
-  def perspective(fovy: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): p5 = js.native
   def perspective(fovy: Double, aspect: Double, near: Double): p5 = js.native
   def perspective(fovy: Double, aspect: Double, near: Double, far: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Double, near: Unit, far: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Unit, near: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Unit, near: Double, far: Double): p5 = js.native
+  def perspective(fovy: Double, aspect: Unit, near: Unit, far: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Double, near: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Double, near: Double, far: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Double, near: Unit, far: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Unit, near: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Unit, near: Double, far: Double): p5 = js.native
+  def perspective(fovy: Unit, aspect: Unit, near: Unit, far: Double): p5 = js.native
   
   /**
     *   Sets the pixel scaling for high pixel density
@@ -6498,41 +6126,21 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def plane(): p5 = js.native
-  def plane(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def plane(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def plane(
-    width: js.UndefOr[scala.Nothing],
-    height: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def plane(width: js.UndefOr[scala.Nothing], height: Double): p5 = js.native
-  def plane(
-    width: js.UndefOr[scala.Nothing],
-    height: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double): p5 = js.native
-  def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): p5 = js.native
   def plane(width: Double): p5 = js.native
-  def plane(
-    width: Double,
-    height: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): p5 = js.native
   def plane(width: Double, height: Double): p5 = js.native
-  def plane(width: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
   def plane(width: Double, height: Double, detailX: Double): p5 = js.native
   def plane(width: Double, height: Double, detailX: Double, detailY: Double): p5 = js.native
+  def plane(width: Double, height: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def plane(width: Double, height: Unit, detailX: Double): p5 = js.native
+  def plane(width: Double, height: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def plane(width: Double, height: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def plane(width: Unit, height: Double): p5 = js.native
+  def plane(width: Unit, height: Double, detailX: Double): p5 = js.native
+  def plane(width: Unit, height: Double, detailX: Double, detailY: Double): p5 = js.native
+  def plane(width: Unit, height: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def plane(width: Unit, height: Unit, detailX: Double): p5 = js.native
+  def plane(width: Unit, height: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def plane(width: Unit, height: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   /**
     *   The system variable pmouseX always contains the
@@ -6895,10 +6503,10 @@ trait p5InstanceExtensions extends StObject {
     *   @param choices the array to choose from
     *   @return the random element from the array
     */
-  def random(choices: js.Array[_]): js.Any = js.native
-  def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  def random(choices: js.Array[js.Any]): js.Any = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
+  def random(min: Unit, max: Double): Double = js.native
   
   /**
     *   Returns a random number fitting a Gaussian, or
@@ -6960,92 +6568,21 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def rect(x: Double, y: Double, w: Double, h: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: Double
-  ): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: Double,
-    bl: Double
-  ): p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: Double,
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: Double,
-    br: Double,
-    bl: Double
-  ): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: Double,
-    tr: js.UndefOr[scala.Nothing],
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: Double,
-    tr: js.UndefOr[scala.Nothing],
-    br: Double,
-    bl: Double
-  ): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): p5 = js.native
-  def rect(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    tl: Double,
-    tr: Double,
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Unit, bl: Double): p5 = js.native
   
   /**
     *   Modifies the location from which rectangles are
@@ -7168,7 +6705,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param list Array to reverse
     *   @return the reversed list
     */
-  def reverse(list: js.Array[_]): js.Array[_] = js.native
+  def reverse(list: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     *   Rotates a shape the amount specified by the angle
@@ -7350,23 +6887,23 @@ trait p5InstanceExtensions extends StObject {
     *   filesize, rather than readability.
     */
   def save(): Unit = js.native
-  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: String): Unit = js.native
-  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: Boolean): Unit = js.native
   def save(objectOrFilename: String): Unit = js.native
-  def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-  def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def save(objectOrFilename: String, filename: String): Unit = js.native
   def save(objectOrFilename: String, filename: String, options: String): Unit = js.native
   def save(objectOrFilename: String, filename: String, options: Boolean): Unit = js.native
+  def save(objectOrFilename: String, filename: Unit, options: String): Unit = js.native
+  def save(objectOrFilename: String, filename: Unit, options: Boolean): Unit = js.native
   def save(objectOrFilename: js.Object): Unit = js.native
-  def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-  def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: Boolean): Unit = js.native
+  def save(objectOrFilename: js.Object, filename: Unit, options: String): Unit = js.native
+  def save(objectOrFilename: js.Object, filename: Unit, options: Boolean): Unit = js.native
+  def save(objectOrFilename: Unit, filename: String): Unit = js.native
+  def save(objectOrFilename: Unit, filename: String, options: String): Unit = js.native
+  def save(objectOrFilename: Unit, filename: String, options: Boolean): Unit = js.native
+  def save(objectOrFilename: Unit, filename: Unit, options: String): Unit = js.native
+  def save(objectOrFilename: Unit, filename: Unit, options: Boolean): Unit = js.native
   
   /**
     *   Save the current canvas as an image. The browser
@@ -7375,9 +6912,9 @@ trait p5InstanceExtensions extends StObject {
     *   @param [extension] 'jpg' or 'png'
     */
   def saveCanvas(): Unit = js.native
-  def saveCanvas(filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(filename: String): Unit = js.native
-  def saveCanvas(filename: String, extension: String): Unit = js.native
+  def saveCanvas(filename: String, `extension`: String): Unit = js.native
+  def saveCanvas(filename: Unit, `extension`: String): Unit = js.native
   /**
     *   Save the current canvas as an image. The browser
     *   will either save the file immediately, or prompt
@@ -7387,13 +6924,13 @@ trait p5InstanceExtensions extends StObject {
     *   @param [extension] 'jpg' or 'png'
     */
   def saveCanvas(selectedCanvas: Element): Unit = js.native
-  def saveCanvas(selectedCanvas: Element, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: Element, filename: String): Unit = js.native
-  def saveCanvas(selectedCanvas: Element, filename: String, extension: String): Unit = js.native
+  def saveCanvas(selectedCanvas: Element, filename: String, `extension`: String): Unit = js.native
+  def saveCanvas(selectedCanvas: Element, filename: Unit, `extension`: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement): Unit = js.native
-  def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String): Unit = js.native
-  def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, extension: String): Unit = js.native
+  def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, `extension`: String): Unit = js.native
+  def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: Unit, `extension`: String): Unit = js.native
   
   /**
     *   Capture a sequence of frames that can be used to
@@ -7422,13 +6959,13 @@ trait p5InstanceExtensions extends StObject {
     *   Each object has three properties: imageData - an
     *   image/octet-stream, filename and extension.
     */
-  def saveFrames(filename: String, extension: String, duration: Double, framerate: Double): Unit = js.native
+  def saveFrames(filename: String, `extension`: String, duration: Double, framerate: Double): Unit = js.native
   def saveFrames(
     filename: String,
-    extension: String,
+    `extension`: String,
     duration: Double,
     framerate: Double,
-    callback: js.Function1[/* p1 */ js.Array[_], _]
+    callback: js.Function1[/* p1 */ js.Array[js.Any], js.Any]
   ): Unit = js.native
   
   /**
@@ -7440,8 +6977,8 @@ trait p5InstanceExtensions extends StObject {
     *   spaces from the output file to optimize filesize
     *   (but not readability).
     */
-  def saveJSON(json: js.Array[_], filename: String): Unit = js.native
-  def saveJSON(json: js.Array[_], filename: String, optimize: Boolean): Unit = js.native
+  def saveJSON(json: js.Array[js.Any], filename: String): Unit = js.native
+  def saveJSON(json: js.Array[js.Any], filename: String, optimize: Boolean): Unit = js.native
   def saveJSON(json: js.Object, filename: String): Unit = js.native
   def saveJSON(json: js.Object, filename: String, optimize: Boolean): Unit = js.native
   
@@ -7466,7 +7003,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param [extension] the filename's extension
     */
   def saveStrings(list: js.Array[String], filename: String): Unit = js.native
-  def saveStrings(list: js.Array[String], filename: String, extension: String): Unit = js.native
+  def saveStrings(list: js.Array[String], filename: String, `extension`: String): Unit = js.native
   
   /**
     *   Writes the contents of a Table object to a file.
@@ -7485,9 +7022,9 @@ trait p5InstanceExtensions extends StObject {
   def saveTable(Table: Table, filename: String, options: String): Unit = js.native
   
   def scale(s: js.Array[Double]): p5 = js.native
-  def scale(s: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double): p5 = js.native
   def scale(s: js.Array[Double], y: Double): p5 = js.native
   def scale(s: js.Array[Double], y: Double, z: Double): p5 = js.native
+  def scale(s: js.Array[Double], y: Unit, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -7517,9 +7054,9 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def scale(s: Double): p5 = js.native
-  def scale(s: Double, y: js.UndefOr[scala.Nothing], z: Double): p5 = js.native
   def scale(s: Double, y: Double): p5 = js.native
   def scale(s: Double, y: Double, z: Double): p5 = js.native
+  def scale(s: Double, y: Unit, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -7544,9 +7081,9 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def scale(s: Vector): p5 = js.native
-  def scale(s: Vector, y: js.UndefOr[scala.Nothing], z: Double): p5 = js.native
   def scale(s: Vector, y: Double): p5 = js.native
   def scale(s: Vector, y: Double, z: Double): p5 = js.native
+  def scale(s: Vector, y: Unit, z: Double): p5 = js.native
   
   /**
     *   p5.js communicates with the clock on your
@@ -7834,7 +7371,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param list Array to shorten
     *   @return shortened Array
     */
-  def shorten(list: js.Array[_]): js.Array[_] = js.native
+  def shorten(list: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     *   Randomizes the order of the elements of an array.
@@ -7843,8 +7380,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [bool] modify passed array
     *   @return shuffled Array
     */
-  def shuffle(array: js.Array[_]): js.Array[_] = js.native
-  def shuffle(array: js.Array[_], bool: Boolean): js.Array[_] = js.native
+  def shuffle(array: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def shuffle(array: js.Array[js.Any], bool: Boolean): js.Array[js.Any] = js.native
   
   /**
     *   Calculates the sine of an angle. This function
@@ -7882,8 +7419,8 @@ trait p5InstanceExtensions extends StObject {
     *   starting from 0
     *   @return the sorted list
     */
-  def sort(list: js.Array[_]): js.Array[_] = js.native
-  def sort(list: js.Array[_], count: Double): js.Array[_] = js.native
+  def sort(list: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def sort(list: js.Array[js.Any], count: Double): js.Array[js.Any] = js.native
   
   /**
     *   List the SoundFile formats that you will include.
@@ -7918,13 +7455,13 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def specularMaterial(v1: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): p5 = js.native
   def specularMaterial(v1: Double, v2: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): p5 = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
   
   /**
     *   Draw a sphere with given radius
@@ -7936,13 +7473,13 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def sphere(): p5 = js.native
-  def sphere(radius: js.UndefOr[scala.Nothing], detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
-  def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): p5 = js.native
   def sphere(radius: Double): p5 = js.native
-  def sphere(radius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
   def sphere(radius: Double, detailX: Double): p5 = js.native
   def sphere(radius: Double, detailX: Double, detailY: Double): p5 = js.native
+  def sphere(radius: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def sphere(radius: Unit, detailX: Double): p5 = js.native
+  def sphere(radius: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def sphere(radius: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   /**
     *   Inserts a value or an array of values into an
@@ -7960,7 +7497,7 @@ trait p5InstanceExtensions extends StObject {
     *   data
     *   @return the list
     */
-  def splice(list: js.Array[_], value: js.Any, position: Double): js.Array[_] = js.native
+  def splice(list: js.Array[js.Any], value: js.Any, position: Double): js.Array[js.Any] = js.native
   
   /**
     *   The split() function maps to String.split(), it
@@ -8046,60 +7583,21 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def square(x: Double, y: Double, s: Double): p5 = js.native
-  def square(
-    x: Double,
-    y: Double,
-    s: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def square(
-    x: Double,
-    y: Double,
-    s: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: Double
-  ): p5 = js.native
-  def square(
-    x: Double,
-    y: Double,
-    s: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: js.UndefOr[scala.Nothing],
-    br: Double,
-    bl: Double
-  ): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double): p5 = js.native
-  def square(
-    x: Double,
-    y: Double,
-    s: Double,
-    tl: js.UndefOr[scala.Nothing],
-    tr: Double,
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double, bl: Double): p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double): p5 = js.native
-  def square(
-    x: Double,
-    y: Double,
-    s: Double,
-    tl: Double,
-    tr: js.UndefOr[scala.Nothing],
-    br: js.UndefOr[scala.Nothing],
-    bl: Double
-  ): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double, bl: Double): p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): p5 = js.native
-  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: js.UndefOr[scala.Nothing], bl: Double): p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): p5 = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Unit, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Double, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Unit, bl: Double): p5 = js.native
   
   /**
     *   Stores a value in local storage under the key
@@ -8126,7 +7624,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return string representation of value
     */
   def str(n: String): String = js.native
-  def str(n: js.Array[_]): String = js.native
+  def str(n: js.Array[js.Any]): String = js.native
   def str(n: Boolean): String = js.native
   def str(n: Double): String = js.native
   
@@ -8285,8 +7783,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [count] number of values to extract
     *   @return Array of extracted elements
     */
-  def subset(list: js.Array[_], start: Double): js.Array[_] = js.native
-  def subset(list: js.Array[_], start: Double, count: Double): js.Array[_] = js.native
+  def subset(list: js.Array[js.Any], start: Double): js.Array[js.Any] = js.native
+  def subset(list: js.Array[js.Any], start: Double, count: Double): js.Array[js.Any] = js.native
   
   /**
     *   Calculates the tangent of an angle. This function
@@ -8339,25 +7837,25 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def text(str: String, x: Double, y: Double): p5 = js.native
-  def text(str: String, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): p5 = js.native
   def text(str: String, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: String, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double): p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double, x2: Double): p5 = js.native
-  def text(str: js.Array[_], x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: String, x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
+  def text(str: js.Array[js.Any], x: Double, y: Double): p5 = js.native
+  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double): p5 = js.native
-  def text(str: js.Object, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: js.Object, x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
   def text(str: Boolean, x: Double, y: Double): p5 = js.native
-  def text(str: Boolean, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): p5 = js.native
   def text(str: Boolean, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: Boolean, x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
   def text(str: Double, x: Double, y: Double): p5 = js.native
-  def text(str: Double, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): p5 = js.native
   def text(str: Double, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: Double, x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
   
   /**
     *   Sets the current alignment for drawing text.
@@ -8662,41 +8160,21 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def torus(): p5 = js.native
-  def torus(
-    radius: js.UndefOr[scala.Nothing],
-    tubeRadius: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def torus(
-    radius: js.UndefOr[scala.Nothing],
-    tubeRadius: js.UndefOr[scala.Nothing],
-    detailX: Double,
-    detailY: Double
-  ): p5 = js.native
-  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double): p5 = js.native
-  def torus(
-    radius: js.UndefOr[scala.Nothing],
-    tubeRadius: Double,
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double): p5 = js.native
-  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double, detailY: Double): p5 = js.native
   def torus(radius: Double): p5 = js.native
-  def torus(
-    radius: Double,
-    tubeRadius: js.UndefOr[scala.Nothing],
-    detailX: js.UndefOr[scala.Nothing],
-    detailY: Double
-  ): p5 = js.native
-  def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): p5 = js.native
-  def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): p5 = js.native
   def torus(radius: Double, tubeRadius: Double): p5 = js.native
-  def torus(radius: Double, tubeRadius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): p5 = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double): p5 = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Unit, detailX: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def torus(radius: Double, tubeRadius: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Double, detailX: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Double, detailX: Double, detailY: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Unit, detailX: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def torus(radius: Unit, tubeRadius: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   /**
     *   The touchEnded() function is called every time a
@@ -8829,7 +8307,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param strs an Array of Strings to be trimmed
     *   @return an Array of trimmed Strings
     */
-  def trim(strs: js.Array[_]): js.Array[String] = js.native
+  def trim(strs: js.Array[js.Any]): js.Array[String] = js.native
   
   /**
     *   When a device is rotated, the axis that triggers
@@ -8858,7 +8336,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return integer representation of values
     */
-  def unchar(ns: js.Array[_]): js.Array[Double] = js.native
+  def unchar(ns: js.Array[js.Any]): js.Array[Double] = js.native
   
   /**
     *   Converts a string representation of a hexadecimal
@@ -8881,7 +8359,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return integer representations of hexadecimal
     *   value
     */
-  def unhex(ns: js.Array[_]): js.Array[Double] = js.native
+  def unhex(ns: js.Array[js.Any]): js.Array[Double] = js.native
   
   /**
     *   Updates the display window with the data in the
@@ -8901,26 +8379,21 @@ trait p5InstanceExtensions extends StObject {
     *   @param [h] height of region to update
     */
   def updatePixels(): Unit = js.native
-  def updatePixels(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    w: js.UndefOr[scala.Nothing],
-    h: Double
-  ): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double): Unit = js.native
-  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): Unit = js.native
   def updatePixels(x: Double): Unit = js.native
-  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
-  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
   def updatePixels(x: Double, y: Double): Unit = js.native
-  def updatePixels(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def updatePixels(x: Double, y: Double, w: Unit, h: Double): Unit = js.native
+  def updatePixels(x: Double, y: Unit, w: Double): Unit = js.native
+  def updatePixels(x: Double, y: Unit, w: Double, h: Double): Unit = js.native
+  def updatePixels(x: Double, y: Unit, w: Unit, h: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Double, w: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Double, w: Double, h: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Double, w: Unit, h: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Unit, w: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Unit, w: Double, h: Double): Unit = js.native
+  def updatePixels(x: Unit, y: Unit, w: Unit, h: Double): Unit = js.native
   
   /**
     *   All shapes are constructed by connecting a series
@@ -8947,9 +8420,9 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def vertex(x: Double, y: Double, z: Double): p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: js.UndefOr[scala.Nothing], v: Double): p5 = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double): p5 = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Unit, v: Double): p5 = js.native
   
   /**
     *   System variable that stores the width of the

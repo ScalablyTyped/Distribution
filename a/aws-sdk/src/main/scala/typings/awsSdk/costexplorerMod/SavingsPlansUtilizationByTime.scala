@@ -2,28 +2,26 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansUtilizationByTime extends StObject {
   
   /**
     * The total amortized commitment for a Savings Plans. This includes the sum of the upfront and recurring Savings Plans fees.
     */
-  var AmortizedCommitment: js.UndefOr[SavingsPlansAmortizedCommitment] = js.native
+  var AmortizedCommitment: js.UndefOr[SavingsPlansAmortizedCommitment] = js.undefined
   
   /**
     * The amount saved by using existing Savings Plans. Savings returns both net savings from Savings Plans as well as the onDemandCostEquivalent of the Savings Plans when considering the utilization rate.
     */
-  var Savings: js.UndefOr[SavingsPlansSavings] = js.native
+  var Savings: js.UndefOr[SavingsPlansSavings] = js.undefined
   
-  var TimePeriod: DateInterval = js.native
+  var TimePeriod: DateInterval
   
   /**
     * A ratio of your effectiveness of using existing Savings Plans to apply to workloads that are Savings Plans eligible.
     */
-  var Utilization: SavingsPlansUtilization = js.native
+  var Utilization: SavingsPlansUtilization
 }
 object SavingsPlansUtilizationByTime {
   

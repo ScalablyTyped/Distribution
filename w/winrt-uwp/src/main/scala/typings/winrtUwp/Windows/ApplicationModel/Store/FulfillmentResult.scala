@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object FulfillmentResult extends StObject {
   
   /** The specified transaction ID has been passed or the consumable in-app product has already been fulfilled. */
   @js.native
-  sealed trait nothingToFulfill extends FulfillmentResult
+  sealed trait nothingToFulfill
+    extends StObject
+       with FulfillmentResult
   
   /** The purchase is not complete. At this point it is still possible for the transaction to be reversed due to provider failures and/or risk checks. */
   @js.native
-  sealed trait purchasePending extends FulfillmentResult
+  sealed trait purchasePending
+    extends StObject
+       with FulfillmentResult
   
   /** The purchase request has been reverted. */
   @js.native
-  sealed trait purchaseReverted extends FulfillmentResult
+  sealed trait purchaseReverted
+    extends StObject
+       with FulfillmentResult
   
   /** There was an issue receiving fulfillment status. */
   @js.native
-  sealed trait serverError extends FulfillmentResult
+  sealed trait serverError
+    extends StObject
+       with FulfillmentResult
   
   /** The purchased consumable in-app product was fulfilled. */
   @js.native
-  sealed trait succeeded extends FulfillmentResult
+  sealed trait succeeded
+    extends StObject
+       with FulfillmentResult
 }

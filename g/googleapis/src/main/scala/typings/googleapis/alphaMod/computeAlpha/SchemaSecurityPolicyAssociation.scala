@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSecurityPolicyAssociation extends StObject {
   
   /**
     * The resource that the security policy is attached to.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The name for an association.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The security policy ID of the association.
     */
-  var securityPolicyId: js.UndefOr[String] = js.native
+  var securityPolicyId: js.UndefOr[String] = js.undefined
 }
 object SchemaSecurityPolicyAssociation {
   

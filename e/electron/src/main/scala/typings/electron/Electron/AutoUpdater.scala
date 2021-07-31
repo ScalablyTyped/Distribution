@@ -11,11 +11,12 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoUpdater extends EventEmitter {
+trait AutoUpdater
+  extends StObject
+     with EventEmitter {
   
   @JSName("addListener")
   def addListener_beforequitforupdate(event: `before-quit-for-update`, listener: js.Function): this.type = js.native

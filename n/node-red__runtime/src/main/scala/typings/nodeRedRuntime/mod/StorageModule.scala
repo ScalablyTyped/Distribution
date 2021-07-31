@@ -5,31 +5,29 @@ import typings.nodeRedRuntime.anon.CredentialsFlows
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageModule extends StObject {
   
-  def getFlows(): js.Promise[CredentialsFlows] = js.native
+  def getFlows(): js.Promise[CredentialsFlows]
   
-  def getLibraryEntry(`type`: String, path: String): js.Promise[String | js.Array[String]] = js.native
+  def getLibraryEntry(`type`: String, path: String): js.Promise[String | js.Array[String]]
   
-  def getSessions(): js.Promise[js.Object | Null] = js.native
+  def getSessions(): js.Promise[js.Object | Null]
   
-  def getSettings(): js.Promise[js.Object | Null] = js.native
+  def getSettings(): js.Promise[js.Object | Null]
   
-  def init(runtime: InternalRuntimeAPI): Unit = js.native
+  def init(runtime: InternalRuntimeAPI): Unit
   
-  def saveCredentials(credentials: js.Object): js.Promise[Unit] = js.native
+  def saveCredentials(credentials: js.Object): js.Promise[Unit]
   
-  def saveFlows(config: CredentialsDirty): js.Promise[Unit] = js.native
+  def saveFlows(config: CredentialsDirty): js.Promise[Unit]
   
-  def saveLibraryEntry(`type`: String, path: String, meta: Record[String, String], body: String): js.Promise[Unit] = js.native
+  def saveLibraryEntry(`type`: String, path: String, meta: Record[String, String], body: String): js.Promise[Unit]
   
-  def saveSessions(sessions: js.Object): js.Promise[Unit] = js.native
+  def saveSessions(sessions: js.Object): js.Promise[Unit]
   
-  def saveSettings(settings: js.Object): js.Promise[Unit] = js.native
+  def saveSettings(settings: js.Object): js.Promise[Unit]
 }
 object StorageModule {
   

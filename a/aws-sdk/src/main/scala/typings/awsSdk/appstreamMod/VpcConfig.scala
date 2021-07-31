@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfig extends StObject {
   
   /**
     * The identifiers of the security groups for the fleet or image builder.
     */
-  var SecurityGroupIds: js.UndefOr[SecurityGroupIdList] = js.native
+  var SecurityGroupIds: js.UndefOr[SecurityGroupIdList] = js.undefined
   
   /**
     * The identifiers of the subnets to which a network interface is attached from the fleet instance or image builder instance. Fleet instances use one or more subnets. Image builder instances use one subnet.
     */
-  var SubnetIds: js.UndefOr[SubnetIdList] = js.native
+  var SubnetIds: js.UndefOr[SubnetIdList] = js.undefined
 }
 object VpcConfig {
   

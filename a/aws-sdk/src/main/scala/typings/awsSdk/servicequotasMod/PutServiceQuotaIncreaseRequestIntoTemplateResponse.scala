@@ -2,16 +2,14 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutServiceQuotaIncreaseRequestIntoTemplateResponse extends StObject {
   
   /**
     * A structure that contains information about one service quota increase request.
     */
-  var ServiceQuotaIncreaseRequestInTemplate: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceQuotaIncreaseRequestInTemplate] = js.native
+  var ServiceQuotaIncreaseRequestInTemplate: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceQuotaIncreaseRequestInTemplate] = js.undefined
 }
 object PutServiceQuotaIncreaseRequestIntoTemplateResponse {
   

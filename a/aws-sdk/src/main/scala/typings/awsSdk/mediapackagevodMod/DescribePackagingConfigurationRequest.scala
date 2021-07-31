@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePackagingConfigurationRequest extends StObject {
   
   /**
     * The ID of a MediaPackage VOD PackagingConfiguration resource.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object DescribePackagingConfigurationRequest {
   

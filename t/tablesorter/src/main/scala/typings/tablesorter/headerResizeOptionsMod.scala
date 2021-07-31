@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerResizeOptionsMod {
   
-  @js.native
   trait HeaderResizeOptions extends StObject {
     
     /**
       * The interval to look for header-changes in miliseconds.
       */
-    var timer: Double = js.native
+    var timer: Double
   }
   object HeaderResizeOptions {
     

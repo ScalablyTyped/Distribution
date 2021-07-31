@@ -11,7 +11,6 @@ import typings.simpleOauth2.simpleOauth2Strings.force
 import typings.simpleOauth2.simpleOauth2Strings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,7 +32,7 @@ object mod {
       */
     def authorizeURL(): String = js.native
     def authorizeURL(
-      params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode with TopLevel[js.Any] with Redirecturi
+      params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode & TopLevel[js.Any] & Redirecturi
     ): String = js.native
     
     /**
@@ -131,17 +130,16 @@ object mod {
     var token: Token = js.native
   }
   
-  @js.native
   trait AuthorizationTokenConfig extends StObject {
     
     /** Authorization code received by the callback URL */
-    var code: String = js.native
+    var code: String
     
     /** String representing the registered application URI where the user is redirected after authentication */
-    var redirect_uri: String = js.native
+    var redirect_uri: String
     
     /** String or array of strings representing the application privileges */
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object AuthorizationTokenConfig {
     
@@ -171,15 +169,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientCredentialTokenConfig
-    extends /**
+    extends StObject
+       with /**
     * Additional options will be automatically serialized as params for the token request.
     */
   /* key */ StringDictionary[js.Any] {
     
     /** A string that represents the application privileges */
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ClientCredentialTokenConfig {
     
@@ -203,21 +201,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ModuleOptions[ClientIdName /* <: String */] extends StObject {
     
-    var auth: AuthorizeHost = js.native
+    var auth: AuthorizeHost
     
-    var client: Id[ClientIdName] = js.native
+    var client: Id[ClientIdName]
     
     /**
       * Used to set global options to the internal http library (wreck).
       * All options except baseUrl are allowed
       * Defaults to header.Accept = "application/json"
       */
-    var http: js.UndefOr[js.Object] = js.native
+    var http: js.UndefOr[js.Object] = js.undefined
     
-    var options: js.UndefOr[AuthorizationMethod] = js.native
+    var options: js.UndefOr[AuthorizationMethod] = js.undefined
   }
   object ModuleOptions {
     
@@ -228,7 +225,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions[_], ClientIdName /* <: String */] (val x: Self with ModuleOptions[ClientIdName]) extends AnyVal {
+    implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions[?], ClientIdName /* <: String */] (val x: Self & ModuleOptions[ClientIdName]) extends AnyVal {
       
       @scala.inline
       def setAuth(value: AuthorizeHost): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
@@ -250,21 +247,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PasswordTokenConfig
-    extends /**
+    extends StObject
+       with /**
     * Additional options will be automatically serialized as params for the token request.
     */
   /* key */ StringDictionary[js.Any] {
     
     /** A string that represents the registered password. */
-    var password: String = js.native
+    var password: String
     
     /** A string or array of strings that represents the application privileges */
-    var scope: String | js.Array[String] = js.native
+    var scope: String | js.Array[String]
     
     /** A string that represents the registered username */
-    var username: String = js.native
+    var username: String
   }
   object PasswordTokenConfig {
     
@@ -307,12 +304,11 @@ object mod {
     def refresh_token: typings.simpleOauth2.simpleOauth2Strings.refresh_token = "refresh_token".asInstanceOf[typings.simpleOauth2.simpleOauth2Strings.refresh_token]
   }
   
-  @js.native
   trait WreckHttpOptions extends StObject {
     
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     var beforeRedirect: js.UndefOr[
         js.Function6[
@@ -324,39 +320,39 @@ object mod {
           /* next */ js.Function0[js.Object], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.native
+    var downstreamRes: js.UndefOr[js.Any] = js.undefined
     
-    var events: js.UndefOr[Boolean] = js.native
+    var events: js.UndefOr[Boolean] = js.undefined
     
-    var gunzip: js.UndefOr[Boolean | force] = js.native
+    var gunzip: js.UndefOr[Boolean | force] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var json: js.UndefOr[`true` | strict | force] = js.native
+    var json: js.UndefOr[`true` | strict | force] = js.undefined
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
-    var redirect303: js.UndefOr[Boolean] = js.native
+    var redirect303: js.UndefOr[Boolean] = js.undefined
     
     var redirected: js.UndefOr[
         js.Function3[/* statusCode */ Double, /* location */ String, /* req */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object WreckHttpOptions {
     

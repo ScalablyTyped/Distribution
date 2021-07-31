@@ -5,7 +5,6 @@ import typings.storybookAddonActions.actionOptionsMod.ActionOptions
 import typings.storybookAddonActions.actionsMapMod.ActionsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsFunctionMod {

@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specification of accepted payment method for use in `isReadyToPay`.
   */
-@js.native
 trait IsReadyToPayPaymentMethodSpecification extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IsReadyToPayPaymentMethodSpecification extends StObject {
     * The parameters set here affect which payment methods will be
     * available for the user to choose from.
     */
-  var parameters: CardParameters = js.native
+  var parameters: CardParameters
   
   /**
     * Tokenization parameters.
@@ -26,14 +24,14 @@ trait IsReadyToPayPaymentMethodSpecification extends StObject {
     * payment method returned to you in a format you can charge or
     * reference.
     */
-  var tokenizationSpecification: js.UndefOr[PaymentMethodTokenizationSpecification] = js.native
+  var tokenizationSpecification: js.UndefOr[PaymentMethodTokenizationSpecification] = js.undefined
   
   /**
     * Type of payment method.
     *
     * This field is required.
     */
-  var `type`: PaymentMethodType = js.native
+  var `type`: PaymentMethodType
 }
 object IsReadyToPayPaymentMethodSpecification {
   

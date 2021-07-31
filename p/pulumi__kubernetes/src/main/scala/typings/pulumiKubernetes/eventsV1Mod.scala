@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsV1Mod {
@@ -25,11 +24,15 @@ object eventsV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: EventArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EventArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Event {
+    
+    @JSImport("@pulumi/kubernetes/events/v1", "Event")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Event resource's state with the given name, ID, and optional extra
@@ -39,20 +42,17 @@ object eventsV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/events/v1", "Event.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1EventMod.Event = js.native
-    @JSImport("@pulumi/kubernetes/events/v1", "Event.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1EventMod.Event = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1EventMod.Event = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1EventMod.Event]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1EventMod.Event = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1EventMod.Event]
     
     /**
       * Returns true if the given object is an instance of Event.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/events/v1", "Event.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/event.Event */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/event.Event */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/event.Event */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/events/v1", "EventList")
@@ -68,11 +68,15 @@ object eventsV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: EventListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EventListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object EventList {
+    
+    @JSImport("@pulumi/kubernetes/events/v1", "EventList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing EventList resource's state with the given name, ID, and optional extra
@@ -82,19 +86,16 @@ object eventsV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/events/v1", "EventList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1EventListMod.EventList = js.native
-    @JSImport("@pulumi/kubernetes/events/v1", "EventList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1EventListMod.EventList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1EventListMod.EventList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1EventListMod.EventList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1EventListMod.EventList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1EventListMod.EventList]
     
     /**
       * Returns true if the given object is an instance of EventList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/events/v1", "EventList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/eventList.EventList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/eventList.EventList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/events/v1/eventList.EventList */ Boolean]
   }
 }

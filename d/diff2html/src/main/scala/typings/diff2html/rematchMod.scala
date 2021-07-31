@@ -3,31 +3,30 @@ package typings.diff2html
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rematchMod {
   
-  @JSImport("diff2html/lib/rematch", "levenshtein")
+  @JSImport("diff2html/lib/rematch", JSImport.Namespace)
   @js.native
-  def levenshtein(a: String, b: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("diff2html/lib/rematch", "newDistanceFn")
-  @js.native
-  def newDistanceFn[T](str: js.Function1[/* value */ T, String]): DistanceFn[T] = js.native
+  @scala.inline
+  def levenshtein(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("diff2html/lib/rematch", "newMatcherFn")
-  @js.native
-  def newMatcherFn[T](distance: js.Function2[/* x */ T, /* y */ T, Double]): MatcherFn[T] = js.native
+  @scala.inline
+  def newDistanceFn[T](str: js.Function1[/* value */ T, String]): DistanceFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newDistanceFn")(str.asInstanceOf[js.Any]).asInstanceOf[DistanceFn[T]]
   
-  @js.native
+  @scala.inline
+  def newMatcherFn[T](distance: js.Function2[/* x */ T, /* y */ T, Double]): MatcherFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newMatcherFn")(distance.asInstanceOf[js.Any]).asInstanceOf[MatcherFn[T]]
+  
   trait BestMatch extends StObject {
     
-    var indexA: Double = js.native
+    var indexA: Double
     
-    var indexB: Double = js.native
+    var indexB: Double
     
-    var score: Double = js.native
+    var score: Double
   }
   object BestMatch {
     

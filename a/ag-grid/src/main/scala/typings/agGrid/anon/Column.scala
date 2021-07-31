@@ -6,21 +6,19 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.UndefOr[typings.agGrid.columnMod.Column] = js.native
+  var column: js.UndefOr[typings.agGrid.columnMod.Column] = js.undefined
   
-  var ePopup: HTMLElement = js.native
+  var ePopup: HTMLElement
   
-  var mouseEvent: MouseEvent | Touch = js.native
+  var mouseEvent: MouseEvent | Touch
   
-  var rowNode: js.UndefOr[RowNode] = js.native
+  var rowNode: js.UndefOr[RowNode] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Column {
   

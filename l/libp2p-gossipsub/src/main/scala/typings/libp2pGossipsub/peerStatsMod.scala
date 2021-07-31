@@ -6,56 +6,53 @@ import typings.libp2pGossipsub.peerScoreParamsMod.PeerScoreParams
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerStatsMod {
   
-  @JSImport("libp2p-gossipsub/src/score/peer-stats", "createPeerStats")
+  @JSImport("libp2p-gossipsub/src/score/peer-stats", JSImport.Namespace)
   @js.native
-  def createPeerStats(): PeerStats = js.native
-  @JSImport("libp2p-gossipsub/src/score/peer-stats", "createPeerStats")
-  @js.native
-  def createPeerStats(ps: PartialPeerStats): PeerStats = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-gossipsub/src/score/peer-stats", "createTopicStats")
-  @js.native
-  def createTopicStats(): TopicStats = js.native
-  @JSImport("libp2p-gossipsub/src/score/peer-stats", "createTopicStats")
-  @js.native
-  def createTopicStats(ts: PartialTopicStats): TopicStats = js.native
+  @scala.inline
+  def createPeerStats(): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")().asInstanceOf[PeerStats]
+  @scala.inline
+  def createPeerStats(ps: PartialPeerStats): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")(ps.asInstanceOf[js.Any]).asInstanceOf[PeerStats]
   
-  @JSImport("libp2p-gossipsub/src/score/peer-stats", "ensureTopicStats")
-  @js.native
-  def ensureTopicStats(topic: String, ps: PeerStats, params: PeerScoreParams): js.UndefOr[TopicStats] = js.native
+  @scala.inline
+  def createTopicStats(): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")().asInstanceOf[TopicStats]
+  @scala.inline
+  def createTopicStats(ts: PartialTopicStats): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")(ts.asInstanceOf[js.Any]).asInstanceOf[TopicStats]
   
-  @js.native
+  @scala.inline
+  def ensureTopicStats(topic: String, ps: PeerStats, params: PeerScoreParams): js.UndefOr[TopicStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureTopicStats")(topic.asInstanceOf[js.Any], ps.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TopicStats]]
+  
   trait PeerStats extends StObject {
     
     /**
       * behavioural pattern penalties (applied by the router)
       */
-    var behaviourPenalty: Double = js.native
+    var behaviourPenalty: Double
     
     /**
       * true if the peer is currently connected
       */
-    var connected: Boolean = js.native
+    var connected: Boolean
     
     /**
       * expiration time of the score stats for disconnected peers
       */
-    var expire: Double = js.native
+    var expire: Double
     
     /**
       * IP tracking; store as string for easy processing
       */
-    var ips: js.Array[String] = js.native
+    var ips: js.Array[String]
     
     /**
       * per topic stats
       */
-    var topics: Record[String, TopicStats] = js.native
+    var topics: Record[String, TopicStats]
   }
   object PeerStats {
     
@@ -94,49 +91,48 @@ object peerStatsMod {
     }
   }
   
-  @js.native
   trait TopicStats extends StObject {
     
     /**
       * first message deliveries
       */
-    var firstMessageDeliveries: Double = js.native
+    var firstMessageDeliveries: Double
     
     /**
       * time when the peer was (last) GRAFTed; valid only when in mesh
       */
-    var graftTime: Double = js.native
+    var graftTime: Double
     
     /**
       * true if the peer is in the mesh
       */
-    var inMesh: Boolean = js.native
+    var inMesh: Boolean
     
     /**
       * invalid message counter
       */
-    var invalidMessageDeliveries: Double = js.native
+    var invalidMessageDeliveries: Double
     
     /**
       * sticky mesh rate failure penalty counter
       */
-    var meshFailurePenalty: Double = js.native
+    var meshFailurePenalty: Double
     
     /**
       * mesh message deliveries
       */
-    var meshMessageDeliveries: Double = js.native
+    var meshMessageDeliveries: Double
     
     /**
       * true if the peer has been enough time in the mesh to activate mess message deliveries
       */
-    var meshMessageDeliveriesActive: Boolean = js.native
+    var meshMessageDeliveriesActive: Boolean
     
     /**
       * time in mesh (updated during refresh/decay to avoid calling gettimeofday on
       * every score invocation)
       */
-    var meshTime: Double = js.native
+    var meshTime: Double
   }
   object TopicStats {
     

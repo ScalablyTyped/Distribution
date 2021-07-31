@@ -3,23 +3,23 @@ package typings.phaser
 import typings.phaser.Phaser.Types.GameObjects.GameObjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpineGameObjectConfig extends GameObjectConfig {
+trait SpineGameObjectConfig
+  extends StObject
+     with GameObjectConfig {
   
-  var animationName: js.UndefOr[String] = js.native
+  var animationName: js.UndefOr[String] = js.undefined
   
-  var attachmentName: js.UndefOr[String] = js.native
+  var attachmentName: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var skinName: js.UndefOr[String] = js.native
+  var skinName: js.UndefOr[String] = js.undefined
   
-  var slotName: js.UndefOr[String] = js.native
+  var slotName: js.UndefOr[String] = js.undefined
 }
 object SpineGameObjectConfig {
   

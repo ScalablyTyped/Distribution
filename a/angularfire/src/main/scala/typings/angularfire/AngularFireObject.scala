@@ -5,14 +5,15 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates and maintains a synchronized object, with 2-way bindings between Angular and Firebase.
   */
 @js.native
-trait AngularFireObject extends AngularFireSimpleObject {
+trait AngularFireObject
+  extends StObject
+     with AngularFireSimpleObject {
   
   /**
     * Creates a 3-way data sync between this object, the Firebase server, and a
@@ -31,7 +32,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
     * @returns a promise which resolves to an unbind method after data is set in scope
     */
   @JSName("$bindTo")
-  def $bindTo(scope: IScope, varName: String): IPromise[_] = js.native
+  def $bindTo(scope: IScope, varName: String): IPromise[js.Any] = js.native
   
   /**
     * Informs $firebase to stop sending events and clears memory being used
@@ -55,14 +56,14 @@ trait AngularFireObject extends AngularFireSimpleObject {
   @JSName("$loaded")
   def $loaded(): IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
-  def $loaded(resolve: js.UndefOr[scala.Nothing], reject: js.Function1[/* err */ js.Any, _]): IPromise[AngularFireObject] = js.native
-  @JSName("$loaded")
   def $loaded(resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit]): IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
-    reject: js.Function1[/* err */ js.Any, _]
+    reject: js.Function1[/* err */ js.Any, js.Any]
   ): IPromise[AngularFireObject] = js.native
+  @JSName("$loaded")
+  def $loaded(resolve: Unit, reject: js.Function1[/* err */ js.Any, js.Any]): IPromise[AngularFireObject] = js.native
   
   /**
     * @returns {Firebase} the original Firebase instance used to create this object.
@@ -78,7 +79,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
     */
   @JSName("$remove")
   def $remove(): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   /**
@@ -87,7 +88,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
     */
   @JSName("$save")
   def $save(): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   /**

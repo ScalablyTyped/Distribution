@@ -3,18 +3,18 @@ package typings.zdog.mod
 import typings.zdog.zdogBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShapeOptions extends AnchorOptions {
+trait ShapeOptions
+  extends StObject
+     with AnchorOptions {
   
   /**
     * Shows or hides the shape when its backface is visible.
     * @default true
     * @see {@link https://zzz.dog/api#shape-backface Zdog API}
     */
-  val backface: js.UndefOr[Boolean | String] = js.native
+  val backface: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * Closes the path from the last point back to the first.
@@ -22,7 +22,7 @@ trait ShapeOptions extends AnchorOptions {
     * @see {@link https://zzz.dog/api#shape-closed Zdog API}
     * @see {@link https://zzz.dog/shapes#shape-closed Zdog Shapes API}
     */
-  val closed: js.UndefOr[Boolean] = js.native
+  val closed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets shape stroke and fill color.
@@ -30,14 +30,14 @@ trait ShapeOptions extends AnchorOptions {
     * @default '#333'
     * @see {@link https://zzz.dog/api#shape-color Zdog API}
     */
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
   /**
     * Renders the inner shape area.
     * @default false
     * @see {@link https://zzz.dog/api#shape-fill Zdog API}
     */
-  val fill: js.UndefOr[Boolean] = js.native
+  val fill: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A {@link Vector} used to determine where the front of the shape is.
@@ -45,13 +45,13 @@ trait ShapeOptions extends AnchorOptions {
     * @default {z: 1}
     * @see {@link https://zzz.dog/api#shape-front Zdog API}
     */
-  val front: js.UndefOr[VectorOptions] = js.native
+  val front: js.UndefOr[VectorOptions] = js.undefined
   
   /**
     * Defines the shape.
     * @see {@link https://zzz.dog/shapes#shape-path Zdog Shape API}
     */
-  val path: js.UndefOr[js.Array[PathCommand]] = js.native
+  val path: js.UndefOr[js.Array[PathCommand]] = js.undefined
   
   /**
     * Renders the shape line and sets line width.
@@ -59,14 +59,14 @@ trait ShapeOptions extends AnchorOptions {
     * @default 1
     * @see {@link https://zzz.dog/api#shape-stroke Zdog API}
     */
-  val stroke: js.UndefOr[Double | `false`] = js.native
+  val stroke: js.UndefOr[Double | `false`] = js.undefined
   
   /**
     * Shows or hides shape. Does not affect child items.
     * @default true
     * @see {@link https://zzz.dog/api#shape-visible Zdog API}
     */
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
 }
 object ShapeOptions {
   

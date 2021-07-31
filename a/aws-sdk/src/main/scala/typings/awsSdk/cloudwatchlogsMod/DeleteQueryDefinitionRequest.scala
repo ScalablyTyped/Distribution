@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteQueryDefinitionRequest extends StObject {
   
   /**
     * The ID of the query definition that you want to delete. You can use DescribeQueryDefinitions to retrieve the IDs of your saved query definitions.
     */
-  var queryDefinitionId: QueryId = js.native
+  var queryDefinitionId: QueryId
 }
 object DeleteQueryDefinitionRequest {
   

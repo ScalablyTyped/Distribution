@@ -4,41 +4,31 @@ import typings.apicalypse.mod.Apicalypse
 import typings.apicalypse.mod.ApicalypseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("igdb-api-node", JSImport.Default)
+  @JSImport("igdb-api-node", JSImport.Namespace)
   @js.native
-  def default(): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(
-    clientId: js.UndefOr[scala.Nothing],
-    appAccessToken: js.UndefOr[scala.Nothing],
-    opts: ApicalypseConfig
-  ): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: js.UndefOr[scala.Nothing], appAccessToken: String): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: js.UndefOr[scala.Nothing], appAccessToken: String, opts: ApicalypseConfig): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: String): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: String, appAccessToken: js.UndefOr[scala.Nothing], opts: ApicalypseConfig): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: String, appAccessToken: String): Apicalypse = js.native
-  @JSImport("igdb-api-node", JSImport.Default)
-  @js.native
-  def default(clientId: String, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("igdb-api-node", "getTagNumber")
-  @js.native
-  def getTagNumber(category: Double, id: Double): Double = js.native
+  @scala.inline
+  def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: String, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: String, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: String, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: Unit, appAccessToken: String): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: Unit, appAccessToken: String, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(clientId: Unit, appAccessToken: Unit, opts: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(clientId.asInstanceOf[js.Any], appAccessToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
+  
+  @scala.inline
+  def getTagNumber(category: Double, id: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTagNumber")(category.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

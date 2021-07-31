@@ -3,15 +3,13 @@ package typings.atom.anon
 import typings.atom.mod.Invisibles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueInvisibles extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: Invisibles = js.native
+  var value: Invisibles
 }
 object ValueInvisibles {
   

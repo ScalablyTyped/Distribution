@@ -7,74 +7,74 @@ import typings.arcgisJsApi.arcgisJsApiStrings.update
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchProperties extends WidgetProperties {
+trait SketchProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Property controlling the visibility and order of create tool buttons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
     */
-  var availableCreateTools: js.UndefOr[js.Array[String]] = js.native
+  var availableCreateTools: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
     */
-  var creationMode: js.UndefOr[single | continuous | update] = js.native
+  var creationMode: js.UndefOr[single | continuous | update] = js.undefined
   
   /**
     * Default create options set for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
     */
-  var defaultCreateOptions: js.UndefOr[SketchDefaultCreateOptions] = js.native
+  var defaultCreateOptions: js.UndefOr[SketchDefaultCreateOptions] = js.undefined
   
   /**
     * Default update options set for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
     */
-  var defaultUpdateOptions: js.UndefOr[SketchDefaultUpdateOptions] = js.native
+  var defaultUpdateOptions: js.UndefOr[SketchDefaultUpdateOptions] = js.undefined
   
   /**
     * The Sketch widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer)
     */
-  var layer: js.UndefOr[GraphicsLayerProperties] = js.native
+  var layer: js.UndefOr[GraphicsLayerProperties] = js.undefined
   
   /**
     * Determines the layout/orientation of the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
     */
-  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#viewModel)
     */
-  var viewModel: js.UndefOr[SketchViewModelProperties] = js.native
+  var viewModel: js.UndefOr[SketchViewModelProperties] = js.undefined
 }
 object SketchProperties {
   

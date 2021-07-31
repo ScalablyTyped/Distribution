@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientAdmin.anon
 import typings.maximMazurokGapiClientAdmin.gapi.client.admin.NestedParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /** Parameter values */
-  var parameter: js.UndefOr[js.Array[NestedParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[NestedParameter]] = js.undefined
 }
 object Parameter {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,10 +40,7 @@ trait From extends StObject {
     *                  The `value` property of the result is the item's from value, as an `EmailAddressDetails` object.
     */
   def getAsync(): Unit = js.native
-  def getAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[EmailAddressDetails], Unit]
-  ): Unit = js.native
+  def getAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[EmailAddressDetails], Unit]): Unit = js.native
   def getAsync(options: AsyncContextOptions): Unit = js.native
   def getAsync(
     options: AsyncContextOptions,

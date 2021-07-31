@@ -2,15 +2,15 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnixSystemFunctionResult extends SystemFunctionResult {
+trait UnixSystemFunctionResult
+  extends StObject
+     with SystemFunctionResult {
   
-  var errno: Double = js.native
+  var errno: Double
   
-  var value: NativeReturnValue = js.native
+  var value: NativeReturnValue
 }
 object UnixSystemFunctionResult {
   

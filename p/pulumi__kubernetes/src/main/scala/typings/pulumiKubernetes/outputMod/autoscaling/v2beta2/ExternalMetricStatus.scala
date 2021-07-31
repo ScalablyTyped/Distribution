@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExternalMetricStatus indicates the current value of a global metric not associated with any Kubernetes object.
   */
-@js.native
 trait ExternalMetricStatus extends StObject {
   
   /**
     * current contains the current value for the given metric
     */
-  var current: MetricValueStatus = js.native
+  var current: MetricValueStatus
   
   /**
     * metric identifies the target metric by name and selector
     */
-  var metric: MetricIdentifier = js.native
+  var metric: MetricIdentifier
 }
 object ExternalMetricStatus {
   

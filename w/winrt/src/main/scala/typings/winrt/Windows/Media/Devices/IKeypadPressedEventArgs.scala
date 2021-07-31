@@ -2,13 +2,11 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeypadPressedEventArgs extends StObject {
   
-  var telephonyKey: TelephonyKey = js.native
+  var telephonyKey: TelephonyKey
 }
 object IKeypadPressedEventArgs {
   

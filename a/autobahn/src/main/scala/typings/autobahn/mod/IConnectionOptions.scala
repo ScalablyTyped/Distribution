@@ -3,42 +3,40 @@ package typings.autobahn.mod
 import typings.when.When.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnectionOptions extends StObject {
   
-  var authid: js.UndefOr[String] = js.native
+  var authid: js.UndefOr[String] = js.undefined
   
-  var authmethods: js.UndefOr[js.Array[String]] = js.native
+  var authmethods: js.UndefOr[js.Array[String]] = js.undefined
   
-  var initial_retry_delay: js.UndefOr[Double] = js.native
+  var initial_retry_delay: js.UndefOr[Double] = js.undefined
   
-  var max_retries: js.UndefOr[Double] = js.native
+  var max_retries: js.UndefOr[Double] = js.undefined
   
-  var max_retry_delay: js.UndefOr[Double] = js.native
+  var max_retry_delay: js.UndefOr[Double] = js.undefined
   
-  var onchallenge: js.UndefOr[OnChallengeHandler] = js.native
+  var onchallenge: js.UndefOr[OnChallengeHandler] = js.undefined
   
-  var protocols: js.UndefOr[js.Array[String]] = js.native
+  var protocols: js.UndefOr[js.Array[String]] = js.undefined
   
-  var realm: String = js.native
+  var realm: String
   
-  var retry_delay_growth: js.UndefOr[Double] = js.native
+  var retry_delay_growth: js.UndefOr[Double] = js.undefined
   
-  var retry_delay_jitter: js.UndefOr[Double] = js.native
+  var retry_delay_jitter: js.UndefOr[Double] = js.undefined
   
-  var retry_if_unreachable: js.UndefOr[Boolean] = js.native
+  var retry_if_unreachable: js.UndefOr[Boolean] = js.undefined
   
-  var transports: js.UndefOr[js.Array[ITransportDefinition]] = js.native
+  var transports: js.UndefOr[js.Array[ITransportDefinition]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   // use explicit deferred factory, e.g. jQuery.Deferred or Q.defer
-  var use_deferred: js.UndefOr[DeferFactory] = js.native
+  var use_deferred: js.UndefOr[DeferFactory] = js.undefined
   
-  var use_es6_promises: js.UndefOr[Boolean] = js.native
+  var use_es6_promises: js.UndefOr[Boolean] = js.undefined
 }
 object IConnectionOptions {
   

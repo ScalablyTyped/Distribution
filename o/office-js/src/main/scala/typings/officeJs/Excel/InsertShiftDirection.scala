@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait InsertShiftDirection extends StObject
 object InsertShiftDirection extends StObject {
   
   @js.native
-  sealed trait down extends InsertShiftDirection
+  sealed trait down
+    extends StObject
+       with InsertShiftDirection
   
   @js.native
-  sealed trait right extends InsertShiftDirection
+  sealed trait right
+    extends StObject
+       with InsertShiftDirection
 }

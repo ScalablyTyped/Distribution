@@ -4,16 +4,14 @@ import typings.exceljs.exceljsStrings.False
 import typings.exceljs.exceljsStrings.True
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CommentProtection> */
-@js.native
 trait PartialCommentProtection extends StObject {
   
-  var lockText: js.UndefOr[True | False] = js.native
+  var lockText: js.UndefOr[True | False] = js.undefined
   
-  var locked: js.UndefOr[True | False] = js.native
+  var locked: js.UndefOr[True | False] = js.undefined
 }
 object PartialCommentProtection {
   

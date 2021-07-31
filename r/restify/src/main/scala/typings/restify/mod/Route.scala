@@ -3,21 +3,19 @@ package typings.restify.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
-  var chain: Chain = js.native
+  var chain: Chain
   
-  var method: String = js.native
+  var method: String
   
-  var name: String = js.native
+  var name: String
   
-  var path: String | RegExp = js.native
+  var path: String | RegExp
   
-  var spec: RouteSpec = js.native
+  var spec: RouteSpec
 }
 object Route {
   

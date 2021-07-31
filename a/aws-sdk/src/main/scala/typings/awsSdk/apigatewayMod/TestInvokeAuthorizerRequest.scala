@@ -2,51 +2,49 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeAuthorizerRequest extends StObject {
   
   /**
     * [Optional] A key-value map of additional context variables.
     */
-  var additionalContext: js.UndefOr[MapOfStringToString] = js.native
+  var additionalContext: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Required] Specifies a test invoke authorizer request's Authorizer ID.
     */
-  var authorizerId: String = js.native
+  var authorizerId: String
   
   /**
     * [Optional] The simulated request body of an incoming invocation request.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] A key-value map of headers to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, should be specified.
     */
-  var headers: js.UndefOr[MapOfStringToString] = js.native
+  var headers: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Optional] The headers as a map from string to list of values to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, may be specified.
     */
-  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.native
+  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**
     * [Optional] The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
     */
-  var pathWithQueryString: js.UndefOr[String] = js.native
+  var pathWithQueryString: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * A key-value map of stage variables to simulate an invocation on a deployed Stage.
     */
-  var stageVariables: js.UndefOr[MapOfStringToString] = js.native
+  var stageVariables: js.UndefOr[MapOfStringToString] = js.undefined
 }
 object TestInvokeAuthorizerRequest {
   

@@ -4,36 +4,34 @@ import typings.pulumiAws.inputMod.GetRegionsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRegionsMod {
   
-  @JSImport("@pulumi/aws/getRegions", "getRegions")
+  @JSImport("@pulumi/aws/getRegions", JSImport.Namespace)
   @js.native
-  def getRegions(): js.Promise[GetRegionsResult] = js.native
-  @JSImport("@pulumi/aws/getRegions", "getRegions")
-  @js.native
-  def getRegions(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRegionsResult] = js.native
-  @JSImport("@pulumi/aws/getRegions", "getRegions")
-  @js.native
-  def getRegions(args: GetRegionsArgs): js.Promise[GetRegionsResult] = js.native
-  @JSImport("@pulumi/aws/getRegions", "getRegions")
-  @js.native
-  def getRegions(args: GetRegionsArgs, opts: InvokeOptions): js.Promise[GetRegionsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRegions(): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")().asInstanceOf[js.Promise[GetRegionsResult]]
+  @scala.inline
+  def getRegions(args: Unit, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
+  @scala.inline
+  def getRegions(args: GetRegionsArgs): js.Promise[GetRegionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionsResult]]
+  @scala.inline
+  def getRegions(args: GetRegionsArgs, opts: InvokeOptions): js.Promise[GetRegionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionsResult]]
+  
   trait GetRegionsArgs extends StObject {
     
     /**
       * If true the source will query all regions regardless of availability.
       */
-    val allRegions: js.UndefOr[Boolean] = js.native
+    val allRegions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration block(s) to use as filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetRegionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetRegionsFilter]] = js.undefined
   }
   object GetRegionsArgs {
     
@@ -63,22 +61,21 @@ object getRegionsMod {
     }
   }
   
-  @js.native
   trait GetRegionsResult extends StObject {
     
-    val allRegions: js.UndefOr[Boolean] = js.native
+    val allRegions: js.UndefOr[Boolean] = js.undefined
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetRegionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetRegionsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Names of regions that meets the criteria.
       */
-    val names: js.Array[String] = js.native
+    val names: js.Array[String]
   }
   object GetRegionsResult {
     

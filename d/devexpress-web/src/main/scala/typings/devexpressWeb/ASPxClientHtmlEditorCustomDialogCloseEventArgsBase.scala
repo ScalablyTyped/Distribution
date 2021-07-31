@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events that relate to closing a custom dialog.
   */
-@js.native
-trait ASPxClientHtmlEditorCustomDialogCloseEventArgsBase extends ASPxClientHtmlEditorCustomDialogEventArgs {
+trait ASPxClientHtmlEditorCustomDialogCloseEventArgsBase
+  extends StObject
+     with ASPxClientHtmlEditorCustomDialogEventArgs {
   
   /**
     * Gets the status of the closed custom dialog.
     */
-  var status: js.Any = js.native
+  var status: js.Any
 }
 object ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
   

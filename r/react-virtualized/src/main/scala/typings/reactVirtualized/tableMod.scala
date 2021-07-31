@@ -18,10 +18,13 @@ import typings.reactVirtualized.esTableMod.TableProps
 import typings.reactVirtualized.esTableMod.TableRowRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
+  
+  @JSImport("react-virtualized/dist/commonjs/Table", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-virtualized/dist/commonjs/Table", "Column")
   @js.native
@@ -93,12 +96,10 @@ object tableMod {
     def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-virtualized/dist/commonjs/Table", "createMultiSort")
-  @js.native
-  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit]): MultiSortReturn = js.native
-  @JSImport("react-virtualized/dist/commonjs/Table", "createMultiSort")
-  @js.native
-  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit], options: MultiSortOptions): MultiSortReturn = js.native
+  @scala.inline
+  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit]): MultiSortReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any]).asInstanceOf[MultiSortReturn]
+  @scala.inline
+  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit], options: MultiSortOptions): MultiSortReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiSortReturn]
   
   @JSImport("react-virtualized/dist/commonjs/Table", "defaultCellDataGetter")
   @js.native
@@ -108,9 +109,8 @@ object tableMod {
   @js.native
   val defaultCellRenderer: TableCellRenderer = js.native
   
-  @JSImport("react-virtualized/dist/commonjs/Table", "defaultHeaderRenderer")
-  @js.native
-  def defaultHeaderRenderer(): js.Array[ReactElement] = js.native
+  @scala.inline
+  def defaultHeaderRenderer(): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderRenderer")().asInstanceOf[js.Array[ReactElement]]
   
   @JSImport("react-virtualized/dist/commonjs/Table", "defaultHeaderRowRenderer")
   @js.native

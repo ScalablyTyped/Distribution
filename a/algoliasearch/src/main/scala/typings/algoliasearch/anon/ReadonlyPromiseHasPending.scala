@@ -3,18 +3,16 @@ package typings.algoliasearch.anon
 import typings.algoliaClientSearch.mod.HasPendingMappingsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.HasPendingMappingsResponse>> */
-@js.native
 trait ReadonlyPromiseHasPending extends StObject {
   
-  def `catch`[TResult](): js.Promise[HasPendingMappingsResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[HasPendingMappingsResponse | TResult]
   
-  def `finally`(): js.Promise[HasPendingMappingsResponse] = js.native
+  def `finally`(): js.Promise[HasPendingMappingsResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseHasPending {
   

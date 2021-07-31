@@ -7,14 +7,74 @@ import typings.antvEventEmitter.mod.EventType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryMod {
   
   @JSImport("@antv/component/lib/legend/category", JSImport.Default)
   @js.native
-  class default () extends Category
+  class default () extends Category {
+    
+    /**
+      * 清空列表
+      */
+    /* CompleteClass */
+    override def clearItems(): js.Any = js.native
+    
+    /**
+      * 清楚所有列表项的状态
+      * @param {string} state 状态值
+      */
+    /* CompleteClass */
+    override def clearItemsState(state: String): js.Any = js.native
+    
+    /**
+      * 获取列表项
+      * @return {ListItem[]} 列表项集合
+      */
+    /* CompleteClass */
+    override def getItems(): js.Array[ListItem] = js.native
+    
+    /**
+      * 根据状态获取
+      * @param  {state}     state 状态名
+      * @return {ListItem[]} 列表项
+      */
+    /* CompleteClass */
+    override def getItemsByState(state: js.Any): js.Array[ListItem] = js.native
+    
+    /**
+      * 是否存在指定的状态
+      * @param {ListItem} item  列表项
+      * @param {string} state 状态名
+      */
+    /* CompleteClass */
+    override def hasState(item: ListItem, state: String): Boolean = js.native
+    
+    /**
+      * 设置列表项的状态
+      * @param {ListItem} item  列表项
+      * @param {string}   state 状态名
+      * @param {boolean}  value 状态值, true, false
+      */
+    /* CompleteClass */
+    override def setItemState(item: ListItem, state: String, value: Boolean): js.Any = js.native
+    
+    /**
+      * 设置列表项
+      * @param {ListItem[]} items 列表项集合
+      */
+    /* CompleteClass */
+    override def setItems(items: js.Array[ListItem]): js.Any = js.native
+    
+    /**
+      * 更新列表项
+      * @param {ListItem} item 列表项
+      * @param {object}   cfg  列表项
+      */
+    /* CompleteClass */
+    override def updateItem(item: ListItem, cfg: js.Object): js.Any = js.native
+  }
   
   @js.native
   trait Category
@@ -43,7 +103,7 @@ object categoryMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     var getItemHeight: js.Any = js.native
     
@@ -65,13 +125,13 @@ object categoryMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -81,7 +141,7 @@ object categoryMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     var onNavigationAfter: js.Any = js.native
     

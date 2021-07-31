@@ -10,10 +10,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudtrailMod {
+  
+  @JSImport("@pulumi/aws/cloudtrail", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/cloudtrail", "Trail")
   @js.native
@@ -32,6 +35,10 @@ object cloudtrailMod {
   /* static members */
   object Trail {
     
+    @JSImport("@pulumi/aws/cloudtrail", "Trail")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Trail resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -41,38 +48,29 @@ object cloudtrailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudtrail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.trailMod.Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrailState): typings.pulumiAws.trailMod.Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.trailMod.Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.trailMod.Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.trailMod.Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrailState): typings.pulumiAws.trailMod.Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.trailMod.Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.trailMod.Trail]
     
     /**
       * Returns true if the given object is an instance of Trail.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudtrail", "Trail.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/cloudtrail", "getServiceAccount")
-  @js.native
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/cloudtrail", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/cloudtrail", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/cloudtrail", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  @scala.inline
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")().asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: Unit, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceAccountResult]]
 }

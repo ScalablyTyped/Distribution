@@ -8,7 +8,6 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Category
 import typings.reactNativeFirebase.mod.RNFirebase.perf.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeFirebaseStrings {
@@ -19,22 +18,30 @@ object reactNativeFirebaseStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait ASC extends QueryDirection
+  sealed trait ASC
+    extends StObject
+       with QueryDirection
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait CONNECT extends HttpMethod
+  sealed trait CONNECT
+    extends StObject
+       with HttpMethod
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait DELETE extends HttpMethod
+  sealed trait DELETE
+    extends StObject
+       with HttpMethod
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait DESC extends QueryDirection
+  sealed trait DESC
+    extends StObject
+       with QueryDirection
   @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   
@@ -49,47 +56,65 @@ object reactNativeFirebaseStrings {
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait Equalssign extends QueryOperator
+  sealed trait Equalssign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait EqualssignEqualssign extends QueryOperator
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait GET
+    extends StObject
+       with HttpMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait Greaterthansign extends QueryOperator
+  sealed trait Greaterthansign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends QueryOperator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait HEAD extends HttpMethod
+  sealed trait HEAD
+    extends StObject
+       with HttpMethod
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait Lessthansign extends QueryOperator
+  sealed trait Lessthansign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends QueryOperator
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with QueryOperator
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait OPTIONS extends HttpMethod
+  sealed trait OPTIONS
+    extends StObject
+       with HttpMethod
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
@@ -99,17 +124,23 @@ object reactNativeFirebaseStrings {
   def PASSWORD_RESET: PASSWORD_RESET = "PASSWORD_RESET".asInstanceOf[PASSWORD_RESET]
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends HttpMethod
+  sealed trait POST
+    extends StObject
+       with HttpMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
@@ -124,7 +155,9 @@ object reactNativeFirebaseStrings {
   def SHORT: SHORT = "SHORT".asInstanceOf[SHORT]
   
   @js.native
-  sealed trait TRACE extends HttpMethod
+  sealed trait TRACE
+    extends StObject
+       with HttpMethod
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
@@ -139,7 +172,9 @@ object reactNativeFirebaseStrings {
   def VERIFY_EMAIL: VERIFY_EMAIL = "VERIFY_EMAIL".asInstanceOf[VERIFY_EMAIL]
   
   @js.native
-  sealed trait aborted extends FunctionsErrorCode
+  sealed trait aborted
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   
@@ -149,12 +184,16 @@ object reactNativeFirebaseStrings {
   def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait alarm extends Category
+  sealed trait alarm
+    extends StObject
+       with Category
   @scala.inline
   def alarm: alarm = "alarm".asInstanceOf[alarm]
   
   @js.native
-  sealed trait `already-exists` extends FunctionsErrorCode
+  sealed trait `already-exists`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
   
@@ -164,12 +203,16 @@ object reactNativeFirebaseStrings {
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait `array-contains` extends QueryOperator
+  sealed trait `array-contains`
+    extends StObject
+       with QueryOperator
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   
   @js.native
-  sealed trait asc_ extends QueryDirection
+  sealed trait asc_
+    extends StObject
+       with QueryDirection
   @scala.inline
   def asc_ : asc_ = "asc".asInstanceOf[asc_]
   
@@ -184,37 +227,51 @@ object reactNativeFirebaseStrings {
   def cache: cache = "cache".asInstanceOf[cache]
   
   @js.native
-  sealed trait call extends Category
+  sealed trait call
+    extends StObject
+       with Category
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   
   @js.native
-  sealed trait cancelled extends FunctionsErrorCode
+  sealed trait cancelled
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait child_added extends QueryEventType
+  sealed trait child_added
+    extends StObject
+       with QueryEventType
   @scala.inline
   def child_added: child_added = "child_added".asInstanceOf[child_added]
   
   @js.native
-  sealed trait child_changed extends QueryEventType
+  sealed trait child_changed
+    extends StObject
+       with QueryEventType
   @scala.inline
   def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
   
   @js.native
-  sealed trait child_moved extends QueryEventType
+  sealed trait child_moved
+    extends StObject
+       with QueryEventType
   @scala.inline
   def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
   
   @js.native
-  sealed trait child_removed extends QueryEventType
+  sealed trait child_removed
+    extends StObject
+       with QueryEventType
   @scala.inline
   def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
   
   @js.native
-  sealed trait `data-loss` extends FunctionsErrorCode
+  sealed trait `data-loss`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
   
@@ -229,7 +286,9 @@ object reactNativeFirebaseStrings {
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait `deadline-exceeded` extends FunctionsErrorCode
+  sealed trait `deadline-exceeded`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
   
@@ -239,7 +298,9 @@ object reactNativeFirebaseStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait desc_ extends QueryDirection
+  sealed trait desc_
+    extends StObject
+       with QueryDirection
   @scala.inline
   def desc_ : desc_ = "desc".asInstanceOf[desc_]
   
@@ -249,12 +310,16 @@ object reactNativeFirebaseStrings {
   def documentid: documentid = "documentid".asInstanceOf[documentid]
   
   @js.native
-  sealed trait email extends Category
+  sealed trait email
+    extends StObject
+       with Category
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait err extends Category
+  sealed trait err
+    extends StObject
+       with Category
   @scala.inline
   def err: err = "err".asInstanceOf[err]
   
@@ -264,12 +329,16 @@ object reactNativeFirebaseStrings {
   def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
-  sealed trait event extends Category
+  sealed trait event
+    extends StObject
+       with Category
   @scala.inline
   def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait `failed-precondition` extends FunctionsErrorCode
+  sealed trait `failed-precondition`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
   
@@ -294,12 +363,16 @@ object reactNativeFirebaseStrings {
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait internal extends FunctionsErrorCode
+  sealed trait internal
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait `invalid-argument` extends FunctionsErrorCode
+  sealed trait `invalid-argument`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
   
@@ -314,12 +387,16 @@ object reactNativeFirebaseStrings {
   def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
-  sealed trait msg extends Category
+  sealed trait msg
+    extends StObject
+       with Category
   @scala.inline
   def msg: msg = "msg".asInstanceOf[msg]
   
   @js.native
-  sealed trait `not-found` extends FunctionsErrorCode
+  sealed trait `not-found`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
   
@@ -339,32 +416,44 @@ object reactNativeFirebaseStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait ok extends FunctionsErrorCode
+  sealed trait ok
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait `out-of-range` extends FunctionsErrorCode
+  sealed trait `out-of-range`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
   
   @js.native
-  sealed trait `permission-denied` extends FunctionsErrorCode
+  sealed trait `permission-denied`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
   
   @js.native
-  sealed trait progress extends Category
+  sealed trait progress
+    extends StObject
+       with Category
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait promo extends Category
+  sealed trait promo
+    extends StObject
+       with Category
   @scala.inline
   def promo: promo = "promo".asInstanceOf[promo]
   
   @js.native
-  sealed trait recommendation extends Category
+  sealed trait recommendation
+    extends StObject
+       with Category
   @scala.inline
   def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
   
@@ -374,7 +463,9 @@ object reactNativeFirebaseStrings {
   def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
-  sealed trait reminder extends Category
+  sealed trait reminder
+    extends StObject
+       with Category
   @scala.inline
   def reminder: reminder = "reminder".asInstanceOf[reminder]
   
@@ -384,7 +475,9 @@ object reactNativeFirebaseStrings {
   def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait `resource-exhausted` extends FunctionsErrorCode
+  sealed trait `resource-exhausted`
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
   
@@ -399,7 +492,9 @@ object reactNativeFirebaseStrings {
   def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait service extends Category
+  sealed trait service
+    extends StObject
+       with Category
   @scala.inline
   def service: service = "service".asInstanceOf[service]
   
@@ -409,12 +504,16 @@ object reactNativeFirebaseStrings {
   def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait social extends Category
+  sealed trait social
+    extends StObject
+       with Category
   @scala.inline
   def social: social = "social".asInstanceOf[social]
   
   @js.native
-  sealed trait status extends Category
+  sealed trait status
+    extends StObject
+       with Category
   @scala.inline
   def status: status = "status".asInstanceOf[status]
   
@@ -424,7 +523,9 @@ object reactNativeFirebaseStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait system extends Category
+  sealed trait system
+    extends StObject
+       with Category
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   
@@ -434,32 +535,44 @@ object reactNativeFirebaseStrings {
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
-  sealed trait transport extends Category
+  sealed trait transport
+    extends StObject
+       with Category
   @scala.inline
   def transport: transport = "transport".asInstanceOf[transport]
   
   @js.native
-  sealed trait unauthenticated extends FunctionsErrorCode
+  sealed trait unauthenticated
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
   
   @js.native
-  sealed trait unavailable extends FunctionsErrorCode
+  sealed trait unavailable
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
-  sealed trait unimplemented extends FunctionsErrorCode
+  sealed trait unimplemented
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
   
   @js.native
-  sealed trait unknown extends FunctionsErrorCode
+  sealed trait unknown
+    extends StObject
+       with FunctionsErrorCode
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait value extends QueryEventType
+  sealed trait value
+    extends StObject
+       with QueryEventType
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   

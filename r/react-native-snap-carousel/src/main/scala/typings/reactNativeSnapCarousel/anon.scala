@@ -2,17 +2,15 @@ package typings.reactNativeSnapCarousel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var item: T = js.native
+    var item: T
   }
   object Index {
     
@@ -49,7 +46,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[_], T] (val x: Self with Index[T]) extends AnyVal {
+    implicit class IndexMutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InputRange extends StObject {
     
-    var inputRange: js.Array[Double] = js.native
+    var inputRange: js.Array[Double]
     
-    var outputRange: js.Array[Double] = js.native
+    var outputRange: js.Array[Double]
   }
   object InputRange {
     

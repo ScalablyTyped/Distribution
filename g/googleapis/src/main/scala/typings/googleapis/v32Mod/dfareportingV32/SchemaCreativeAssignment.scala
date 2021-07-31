@@ -2,20 +2,18 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Assignment.
   */
-@js.native
 trait SchemaCreativeAssignment extends StObject {
   
   /**
     * Whether this creative assignment is active. When true, the creative will
     * be included in the ad&#39;s rotation.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether applicable event tags should fire when this creative assignment
@@ -23,42 +21,42 @@ trait SchemaCreativeAssignment extends StObject {
     * it will default to true for all creative types EXCEPT for
     * INTERNAL_REDIRECT, INTERSTITIAL_INTERNAL_REDIRECT, and INSTREAM_VIDEO.
     */
-  var applyEventTags: js.UndefOr[Boolean] = js.native
+  var applyEventTags: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Click-through URL of the creative assignment.
     */
-  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.native
+  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.undefined
   
   /**
     * Companion creative overrides for this creative assignment. Applicable to
     * video ads.
     */
-  var companionCreativeOverrides: js.UndefOr[js.Array[SchemaCompanionClickThroughOverride]] = js.native
+  var companionCreativeOverrides: js.UndefOr[js.Array[SchemaCompanionClickThroughOverride]] = js.undefined
   
   /**
     * Creative group assignments for this creative assignment. Only one
     * assignment per creative group number is allowed for a maximum of two
     * assignments.
     */
-  var creativeGroupAssignments: js.UndefOr[js.Array[SchemaCreativeGroupAssignment]] = js.native
+  var creativeGroupAssignments: js.UndefOr[js.Array[SchemaCreativeGroupAssignment]] = js.undefined
   
   /**
     * ID of the creative to be assigned. This is a required field.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the creative. This is a read-only,
     * auto-generated field.
     */
-  var creativeIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var creativeIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Date and time that the assigned creative should stop serving. Must be
     * later than the start time.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Rich media exit overrides for this creative assignment. Applicable when
@@ -68,31 +66,31 @@ trait SchemaCreativeAssignment extends StObject {
     * RICH_MEDIA_MOBILE_IN_APP - RICH_MEDIA_MULTI_FLOATING -
     * RICH_MEDIA_PEEL_DOWN - VPAID_LINEAR - VPAID_NON_LINEAR
     */
-  var richMediaExitOverrides: js.UndefOr[js.Array[SchemaRichMediaExitOverride]] = js.native
+  var richMediaExitOverrides: js.UndefOr[js.Array[SchemaRichMediaExitOverride]] = js.undefined
   
   /**
     * Sequence number of the creative assignment, applicable when the rotation
     * type is CREATIVE_ROTATION_TYPE_SEQUENTIAL. Acceptable values are 1 to
     * 65535, inclusive.
     */
-  var sequence: js.UndefOr[Double] = js.native
+  var sequence: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the creative to be assigned is SSL-compliant. This is a read-only
     * field that is auto-generated when the ad is inserted or updated.
     */
-  var sslCompliant: js.UndefOr[Boolean] = js.native
+  var sslCompliant: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Date and time that the assigned creative should start serving.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Weight of the creative assignment, applicable when the rotation type is
     * CREATIVE_ROTATION_TYPE_RANDOM. Value must be greater than or equal to 1.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object SchemaCreativeAssignment {
   

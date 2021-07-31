@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Billingaccounts")
@@ -37,7 +36,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaBillingAccount] = js.native
   def create(callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
   def create(params: ParamsResourceBillingaccountsCreate): GaxiosPromise[SchemaBillingAccount] = js.native
   def create(params: ParamsResourceBillingaccountsCreate, callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
   def create(
@@ -123,7 +122,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBillingAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
   def get(params: ParamsResourceBillingaccountsGet): GaxiosPromise[SchemaBillingAccount] = js.native
   def get(params: ParamsResourceBillingaccountsGet, callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
   def get(
@@ -155,7 +154,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBillingaccountsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBillingaccountsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -252,7 +251,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListBillingAccountsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBillingAccountsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBillingAccountsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListBillingAccountsResponse] = js.native
   def list(params: ParamsResourceBillingaccountsList): GaxiosPromise[SchemaListBillingAccountsResponse] = js.native
   def list(
     params: ParamsResourceBillingaccountsList,
@@ -291,7 +290,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaBillingAccount] = js.native
   def patch(callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBillingAccount] = js.native
   def patch(params: ParamsResourceBillingaccountsPatch): GaxiosPromise[SchemaBillingAccount] = js.native
   def patch(params: ParamsResourceBillingaccountsPatch, callback: BodyResponseCallback[SchemaBillingAccount]): Unit = js.native
   def patch(
@@ -326,7 +325,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBillingaccountsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBillingaccountsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -359,7 +358,7 @@ class ResourceBillingaccounts protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceBillingaccountsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceBillingaccountsTestiampermissions,

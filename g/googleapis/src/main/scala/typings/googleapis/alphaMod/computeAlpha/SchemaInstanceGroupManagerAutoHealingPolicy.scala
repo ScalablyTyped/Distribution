@@ -2,16 +2,14 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerAutoHealingPolicy extends StObject {
   
   /**
     * The URL for the health check that signals autohealing.
     */
-  var healthCheck: js.UndefOr[String] = js.native
+  var healthCheck: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seconds that the managed instance group waits before it
@@ -21,7 +19,7 @@ trait SchemaInstanceGroupManagerAutoHealingPolicy extends StObject {
     * UNHEALTHY. This prevents the managed instance group from recreating its
     * instances prematurely. This value must be from range [0, 3600].
     */
-  var initialDelaySec: js.UndefOr[Double] = js.native
+  var initialDelaySec: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of instances that can be unavailable when autohealing.
@@ -37,7 +35,7 @@ trait SchemaInstanceGroupManagerAutoHealingPolicy extends StObject {
     * per zone, autohealing will recreate these instances when they become
     * unhealthy.
     */
-  var maxUnavailable: js.UndefOr[SchemaFixedOrPercent] = js.native
+  var maxUnavailable: js.UndefOr[SchemaFixedOrPercent] = js.undefined
 }
 object SchemaInstanceGroupManagerAutoHealingPolicy {
   

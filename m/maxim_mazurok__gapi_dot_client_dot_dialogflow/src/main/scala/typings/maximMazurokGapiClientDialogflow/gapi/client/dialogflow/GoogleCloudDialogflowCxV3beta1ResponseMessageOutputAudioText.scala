@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText extends StObject {
   
   /** Output only. Whether the playback of this message can be interrupted by the end user's speech and the client can then starts the next Dialogflow request. */
-  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.native
+  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.undefined
   
   /** The SSML text to be synthesized. For more information, see [SSML](/speech/text-to-speech/docs/ssml). */
-  var ssml: js.UndefOr[String] = js.native
+  var ssml: js.UndefOr[String] = js.undefined
   
   /** The raw text to be synthesized. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText {
   

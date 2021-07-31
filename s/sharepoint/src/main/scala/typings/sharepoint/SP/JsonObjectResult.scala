@@ -2,13 +2,11 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonObjectResult extends StObject {
   
-  def get_value(): js.Any = js.native
+  def get_value(): js.Any
 }
 object JsonObjectResult {
   

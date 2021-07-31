@@ -5,10 +5,8 @@ import typings.minappEnv.minappEnvNumbers.`15`
 import typings.minappEnv.minappEnvNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnMemoryWarningCallbackResult extends StObject {
   
   /** 内存告警等级，只有 Android 才有，对应系统宏定义
@@ -17,7 +15,7 @@ trait OnMemoryWarningCallbackResult extends StObject {
     * - 5: TRIM_MEMORY_RUNNING_MODERATE;
     * - 10: TRIM_MEMORY_RUNNING_LOW;
     * - 15: TRIM_MEMORY_RUNNING_CRITICAL; */
-  var level: `5` | `10` | `15` = js.native
+  var level: `5` | `10` | `15`
 }
 object OnMemoryWarningCallbackResult {
   

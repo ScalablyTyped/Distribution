@@ -2,17 +2,15 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var id: Double | String = js.native
+  var id: Double | String
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Attribute {
   

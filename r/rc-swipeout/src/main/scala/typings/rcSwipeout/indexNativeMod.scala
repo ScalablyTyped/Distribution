@@ -3,7 +3,6 @@ package typings.rcSwipeout
 import typings.rcSwipeout.anon.AutoClose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexNativeMod {

@@ -11,8 +11,8 @@ Check if a DOM element matches a given selector
 | Full name          | dom-matches |
 | Keywords           | browser, dom, element, matches, selector |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 12826370 |
+| # dependents       | 8 |
+| # downloads        | 11908103 |
 | # stars            | 1 |
 
 ## Links

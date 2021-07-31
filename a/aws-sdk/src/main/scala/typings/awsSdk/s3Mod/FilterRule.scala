@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterRule extends StObject {
   
   /**
     * The object key name prefix or suffix identifying one or more objects to which the filtering rule applies. The maximum length is 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, see Configuring Event Notifications in the Amazon Simple Storage Service Developer Guide.
     */
-  var Name: js.UndefOr[FilterRuleName] = js.native
+  var Name: js.UndefOr[FilterRuleName] = js.undefined
   
   /**
     * The value that the filter searches for in object key names.
     */
-  var Value: js.UndefOr[FilterRuleValue] = js.native
+  var Value: js.UndefOr[FilterRuleValue] = js.undefined
 }
 object FilterRule {
   

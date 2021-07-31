@@ -503,1552 +503,1550 @@ import typings.csstype.mod.ZIndexProperty
 import typings.csstype.mod.ZoomProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react.react.CSSProperties, 'background' | 'backgroundAttachment' | 'backgroundClip' | 'backgroundColor' | 'backgroundPosition' | 'backgroundRepeat' | 'backgroundSize'> */
-@js.native
 trait CSSPropsWithoutBackground extends StObject {
   
-  var KhtmlBoxAlign: js.UndefOr[BoxAlignProperty] = js.native
+  var KhtmlBoxAlign: js.UndefOr[BoxAlignProperty] = js.undefined
   
-  var KhtmlBoxDirection: js.UndefOr[BoxDirectionProperty] = js.native
+  var KhtmlBoxDirection: js.UndefOr[BoxDirectionProperty] = js.undefined
   
-  var KhtmlBoxFlex: js.UndefOr[GlobalsNumber] = js.native
+  var KhtmlBoxFlex: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var KhtmlBoxFlexGroup: js.UndefOr[GlobalsNumber] = js.native
+  var KhtmlBoxFlexGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var KhtmlBoxLines: js.UndefOr[BoxLinesProperty] = js.native
+  var KhtmlBoxLines: js.UndefOr[BoxLinesProperty] = js.undefined
   
-  var KhtmlBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.native
+  var KhtmlBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var KhtmlBoxOrient: js.UndefOr[BoxOrientProperty] = js.native
+  var KhtmlBoxOrient: js.UndefOr[BoxOrientProperty] = js.undefined
   
-  var KhtmlBoxPack: js.UndefOr[BoxPackProperty] = js.native
+  var KhtmlBoxPack: js.UndefOr[BoxPackProperty] = js.undefined
   
-  var KhtmlLineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var KhtmlLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
-  var KhtmlOpacity: js.UndefOr[OpacityProperty] = js.native
+  var KhtmlOpacity: js.UndefOr[OpacityProperty] = js.undefined
   
-  var KhtmlUserSelect: js.UndefOr[UserSelectProperty] = js.native
+  var KhtmlUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
-  var MozAnimation: js.UndefOr[AnimationProperty] = js.native
+  var MozAnimation: js.UndefOr[AnimationProperty] = js.undefined
   
-  var MozAnimationDelay: js.UndefOr[GlobalsString] = js.native
+  var MozAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var MozAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var MozAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
-  var MozAnimationDuration: js.UndefOr[GlobalsString] = js.native
+  var MozAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var MozAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var MozAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
-  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
-  var MozAnimationName: js.UndefOr[AnimationNameProperty] = js.native
+  var MozAnimationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
-  var MozAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var MozAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
-  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
-  var MozAppearance: js.UndefOr[MozAppearanceProperty] = js.native
+  var MozAppearance: js.UndefOr[MozAppearanceProperty] = js.undefined
   
-  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.native
+  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   
-  var MozBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.native
+  var MozBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.undefined
   
-  var MozBackgroundInlinePolicy: js.UndefOr[BoxDecorationBreakProperty] = js.native
+  var MozBackgroundInlinePolicy: js.UndefOr[BoxDecorationBreakProperty] = js.undefined
   
-  var MozBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.native
+  var MozBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.undefined
   
-  var MozBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.native
+  var MozBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
   
-  var MozBinding: js.UndefOr[MozBindingProperty] = js.native
+  var MozBinding: js.UndefOr[MozBindingProperty] = js.undefined
   
-  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty] = js.native
+  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty] = js.undefined
   
-  var MozBorderEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.native
+  var MozBorderEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.undefined
   
-  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.native
+  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.undefined
   
-  var MozBorderEndWidth: js.UndefOr[BorderInlineEndWidthProperty[String | Double]] = js.native
+  var MozBorderEndWidth: js.UndefOr[BorderInlineEndWidthProperty[String | Double]] = js.undefined
   
-  var MozBorderImage: js.UndefOr[BorderImageProperty] = js.native
+  var MozBorderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
-  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty] = js.native
+  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty] = js.undefined
   
-  var MozBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.native
+  var MozBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.undefined
   
-  var MozBorderRadiusBottomleft: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.native
+  var MozBorderRadiusBottomleft: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.undefined
   
-  var MozBorderRadiusBottomright: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.native
+  var MozBorderRadiusBottomright: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.undefined
   
-  var MozBorderRadiusTopleft: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.native
+  var MozBorderRadiusTopleft: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.undefined
   
-  var MozBorderRadiusTopright: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.native
+  var MozBorderRadiusTopright: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.undefined
   
-  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty] = js.native
+  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty] = js.undefined
   
-  var MozBorderStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.native
+  var MozBorderStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.undefined
   
-  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.native
+  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.undefined
   
-  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty] = js.native
+  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty] = js.undefined
   
-  var MozBoxAlign: js.UndefOr[BoxAlignProperty] = js.native
+  var MozBoxAlign: js.UndefOr[BoxAlignProperty] = js.undefined
   
-  var MozBoxDirection: js.UndefOr[BoxDirectionProperty] = js.native
+  var MozBoxDirection: js.UndefOr[BoxDirectionProperty] = js.undefined
   
-  var MozBoxFlex: js.UndefOr[GlobalsNumber] = js.native
+  var MozBoxFlex: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var MozBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.native
+  var MozBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var MozBoxOrient: js.UndefOr[BoxOrientProperty] = js.native
+  var MozBoxOrient: js.UndefOr[BoxOrientProperty] = js.undefined
   
-  var MozBoxPack: js.UndefOr[BoxPackProperty] = js.native
+  var MozBoxPack: js.UndefOr[BoxPackProperty] = js.undefined
   
-  var MozBoxShadow: js.UndefOr[BoxShadowProperty] = js.native
+  var MozBoxShadow: js.UndefOr[BoxShadowProperty] = js.undefined
   
-  var MozBoxSizing: js.UndefOr[BoxSizingProperty] = js.native
+  var MozBoxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
   
-  var MozColumnCount: js.UndefOr[ColumnCountProperty] = js.native
+  var MozColumnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   
-  var MozColumnFill: js.UndefOr[ColumnFillProperty] = js.native
+  var MozColumnFill: js.UndefOr[ColumnFillProperty] = js.undefined
   
-  var MozColumnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.native
+  var MozColumnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.undefined
   
-  var MozColumnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.native
+  var MozColumnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.undefined
   
-  var MozColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.native
+  var MozColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
   
-  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.native
+  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
   
-  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.native
+  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.undefined
   
-  var MozColumnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.native
+  var MozColumnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.undefined
   
-  var MozColumns: js.UndefOr[ColumnsProperty[String | Double]] = js.native
+  var MozColumns: js.UndefOr[ColumnsProperty[String | Double]] = js.undefined
   
-  var MozContextProperties: js.UndefOr[MozContextPropertiesProperty] = js.native
+  var MozContextProperties: js.UndefOr[MozContextPropertiesProperty] = js.undefined
   
-  var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty] = js.native
+  var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty] = js.undefined
   
-  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.native
+  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
   
-  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.native
+  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.undefined
   
-  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber] = js.native
+  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var MozHyphens: js.UndefOr[HyphensProperty] = js.native
+  var MozHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
-  var MozImageRegion: js.UndefOr[MozImageRegionProperty] = js.native
+  var MozImageRegion: js.UndefOr[MozImageRegionProperty] = js.undefined
   
-  var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.native
+  var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.undefined
   
-  var MozMarginStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.native
+  var MozMarginStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.undefined
   
-  var MozOpacity: js.UndefOr[OpacityProperty] = js.native
+  var MozOpacity: js.UndefOr[OpacityProperty] = js.undefined
   
-  var MozOrient: js.UndefOr[MozOrientProperty] = js.native
+  var MozOrient: js.UndefOr[MozOrientProperty] = js.undefined
   
-  var MozOsxFontSmoothing: js.UndefOr[FontSmoothProperty[String | Double]] = js.native
+  var MozOsxFontSmoothing: js.UndefOr[FontSmoothProperty[String | Double]] = js.undefined
   
-  var MozOutline: js.UndefOr[OutlineProperty[String | Double]] = js.native
+  var MozOutline: js.UndefOr[OutlineProperty[String | Double]] = js.undefined
   
-  var MozOutlineColor: js.UndefOr[OutlineColorProperty] = js.native
+  var MozOutlineColor: js.UndefOr[OutlineColorProperty] = js.undefined
   
-  var MozOutlineRadius: js.UndefOr[MozOutlineRadiusProperty[String | Double]] = js.native
+  var MozOutlineRadius: js.UndefOr[MozOutlineRadiusProperty[String | Double]] = js.undefined
   
-  var MozOutlineRadiusBottomleft: js.UndefOr[MozOutlineRadiusBottomleftProperty[String | Double]] = js.native
+  var MozOutlineRadiusBottomleft: js.UndefOr[MozOutlineRadiusBottomleftProperty[String | Double]] = js.undefined
   
-  var MozOutlineRadiusBottomright: js.UndefOr[MozOutlineRadiusBottomrightProperty[String | Double]] = js.native
+  var MozOutlineRadiusBottomright: js.UndefOr[MozOutlineRadiusBottomrightProperty[String | Double]] = js.undefined
   
-  var MozOutlineRadiusTopleft: js.UndefOr[MozOutlineRadiusTopleftProperty[String | Double]] = js.native
+  var MozOutlineRadiusTopleft: js.UndefOr[MozOutlineRadiusTopleftProperty[String | Double]] = js.undefined
   
-  var MozOutlineRadiusTopright: js.UndefOr[MozOutlineRadiusToprightProperty[String | Double]] = js.native
+  var MozOutlineRadiusTopright: js.UndefOr[MozOutlineRadiusToprightProperty[String | Double]] = js.undefined
   
-  var MozOutlineStyle: js.UndefOr[OutlineStyleProperty] = js.native
+  var MozOutlineStyle: js.UndefOr[OutlineStyleProperty] = js.undefined
   
-  var MozOutlineWidth: js.UndefOr[OutlineWidthProperty[String | Double]] = js.native
+  var MozOutlineWidth: js.UndefOr[OutlineWidthProperty[String | Double]] = js.undefined
   
-  var MozPaddingEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.native
+  var MozPaddingEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.undefined
   
-  var MozPaddingStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.native
+  var MozPaddingStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.undefined
   
-  var MozPerspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.native
+  var MozPerspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.undefined
   
-  var MozPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.native
+  var MozPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.undefined
   
-  var MozStackSizing: js.UndefOr[MozStackSizingProperty] = js.native
+  var MozStackSizing: js.UndefOr[MozStackSizingProperty] = js.undefined
   
-  var MozTabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.native
+  var MozTabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.undefined
   
-  var MozTextAlignLast: js.UndefOr[TextAlignLastProperty] = js.native
+  var MozTextAlignLast: js.UndefOr[TextAlignLastProperty] = js.undefined
   
-  var MozTextBlink: js.UndefOr[MozTextBlinkProperty] = js.native
+  var MozTextBlink: js.UndefOr[MozTextBlinkProperty] = js.undefined
   
-  var MozTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.native
+  var MozTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
   
-  var MozTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.native
+  var MozTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
   
-  var MozTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.native
+  var MozTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
   
-  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.native
+  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   
-  var MozTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.native
+  var MozTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.undefined
   
-  var MozTransformStyle: js.UndefOr[TransformStyleProperty] = js.native
+  var MozTransformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
   
-  var MozTransition: js.UndefOr[TransitionProperty] = js.native
+  var MozTransition: js.UndefOr[TransitionProperty] = js.undefined
   
-  var MozTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var MozTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var MozTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var MozTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var MozTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var MozTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
-  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
-  var MozUserFocus: js.UndefOr[MozUserFocusProperty] = js.native
+  var MozUserFocus: js.UndefOr[MozUserFocusProperty] = js.undefined
   
-  var MozUserInput: js.UndefOr[MozUserInputProperty] = js.native
+  var MozUserInput: js.UndefOr[MozUserInputProperty] = js.undefined
   
-  var MozUserModify: js.UndefOr[MozUserModifyProperty] = js.native
+  var MozUserModify: js.UndefOr[MozUserModifyProperty] = js.undefined
   
-  var MozUserSelect: js.UndefOr[UserSelectProperty] = js.native
+  var MozUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
-  var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty] = js.native
+  var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty] = js.undefined
   
-  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.native
+  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.undefined
   
-  var OAnimation: js.UndefOr[AnimationProperty] = js.native
+  var OAnimation: js.UndefOr[AnimationProperty] = js.undefined
   
-  var OAnimationDelay: js.UndefOr[GlobalsString] = js.native
+  var OAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var OAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var OAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
-  var OAnimationDuration: js.UndefOr[GlobalsString] = js.native
+  var OAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var OAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var OAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
-  var OAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var OAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
-  var OAnimationName: js.UndefOr[AnimationNameProperty] = js.native
+  var OAnimationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
-  var OAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var OAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
-  var OAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var OAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
-  var OBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.native
+  var OBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
   
-  var OBorderImage: js.UndefOr[BorderImageProperty] = js.native
+  var OBorderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
-  var OObjectFit: js.UndefOr[ObjectFitProperty] = js.native
+  var OObjectFit: js.UndefOr[ObjectFitProperty] = js.undefined
   
-  var OObjectPosition: js.UndefOr[ObjectPositionProperty[String | Double]] = js.native
+  var OObjectPosition: js.UndefOr[ObjectPositionProperty[String | Double]] = js.undefined
   
-  var OTabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.native
+  var OTabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.undefined
   
-  var OTextOverflow: js.UndefOr[TextOverflowProperty] = js.native
+  var OTextOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   
-  var OTransform: js.UndefOr[TransformProperty] = js.native
+  var OTransform: js.UndefOr[TransformProperty] = js.undefined
   
-  var OTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.native
+  var OTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.undefined
   
-  var OTransition: js.UndefOr[TransitionProperty] = js.native
+  var OTransition: js.UndefOr[TransitionProperty] = js.undefined
   
-  var OTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var OTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var OTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var OTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var OTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var OTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
-  var OTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var OTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
-  var WebkitAlignContent: js.UndefOr[AlignContentProperty] = js.native
+  var WebkitAlignContent: js.UndefOr[AlignContentProperty] = js.undefined
   
-  var WebkitAlignItems: js.UndefOr[AlignItemsProperty] = js.native
+  var WebkitAlignItems: js.UndefOr[AlignItemsProperty] = js.undefined
   
-  var WebkitAlignSelf: js.UndefOr[AlignSelfProperty] = js.native
+  var WebkitAlignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
   
-  var WebkitAnimation: js.UndefOr[AnimationProperty] = js.native
+  var WebkitAnimation: js.UndefOr[AnimationProperty] = js.undefined
   
-  var WebkitAnimationDelay: js.UndefOr[GlobalsString] = js.native
+  var WebkitAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var WebkitAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var WebkitAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
-  var WebkitAnimationDuration: js.UndefOr[GlobalsString] = js.native
+  var WebkitAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var WebkitAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var WebkitAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
-  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
-  var WebkitAnimationName: js.UndefOr[AnimationNameProperty] = js.native
+  var WebkitAnimationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
-  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
-  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
-  var WebkitAppearance: js.UndefOr[WebkitAppearanceProperty] = js.native
+  var WebkitAppearance: js.UndefOr[WebkitAppearanceProperty] = js.undefined
   
-  var WebkitBackdropFilter: js.UndefOr[BackdropFilterProperty] = js.native
+  var WebkitBackdropFilter: js.UndefOr[BackdropFilterProperty] = js.undefined
   
-  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.native
+  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   
-  var WebkitBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.native
+  var WebkitBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.undefined
   
-  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.native
+  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.undefined
   
-  var WebkitBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.native
+  var WebkitBackgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
   
-  var WebkitBorderBefore: js.UndefOr[WebkitBorderBeforeProperty[String | Double]] = js.native
+  var WebkitBorderBefore: js.UndefOr[WebkitBorderBeforeProperty[String | Double]] = js.undefined
   
-  var WebkitBorderBeforeColor: js.UndefOr[WebkitBorderBeforeColorProperty] = js.native
+  var WebkitBorderBeforeColor: js.UndefOr[WebkitBorderBeforeColorProperty] = js.undefined
   
-  var WebkitBorderBeforeStyle: js.UndefOr[WebkitBorderBeforeStyleProperty] = js.native
+  var WebkitBorderBeforeStyle: js.UndefOr[WebkitBorderBeforeStyleProperty] = js.undefined
   
-  var WebkitBorderBeforeWidth: js.UndefOr[WebkitBorderBeforeWidthProperty[String | Double]] = js.native
+  var WebkitBorderBeforeWidth: js.UndefOr[WebkitBorderBeforeWidthProperty[String | Double]] = js.undefined
   
-  var WebkitBorderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.native
+  var WebkitBorderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.undefined
   
-  var WebkitBorderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.native
+  var WebkitBorderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.undefined
   
-  var WebkitBorderImage: js.UndefOr[BorderImageProperty] = js.native
+  var WebkitBorderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
-  var WebkitBorderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.native
+  var WebkitBorderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.undefined
   
-  var WebkitBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.native
+  var WebkitBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.undefined
   
-  var WebkitBorderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.native
+  var WebkitBorderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.undefined
   
-  var WebkitBorderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.native
+  var WebkitBorderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.undefined
   
-  var WebkitBoxAlign: js.UndefOr[BoxAlignProperty] = js.native
+  var WebkitBoxAlign: js.UndefOr[BoxAlignProperty] = js.undefined
   
-  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.native
+  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.undefined
   
-  var WebkitBoxDirection: js.UndefOr[BoxDirectionProperty] = js.native
+  var WebkitBoxDirection: js.UndefOr[BoxDirectionProperty] = js.undefined
   
-  var WebkitBoxFlex: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitBoxFlex: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitBoxFlexGroup: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitBoxFlexGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitBoxLines: js.UndefOr[BoxLinesProperty] = js.native
+  var WebkitBoxLines: js.UndefOr[BoxLinesProperty] = js.undefined
   
-  var WebkitBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitBoxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitBoxOrient: js.UndefOr[BoxOrientProperty] = js.native
+  var WebkitBoxOrient: js.UndefOr[BoxOrientProperty] = js.undefined
   
-  var WebkitBoxPack: js.UndefOr[BoxPackProperty] = js.native
+  var WebkitBoxPack: js.UndefOr[BoxPackProperty] = js.undefined
   
-  var WebkitBoxReflect: js.UndefOr[WebkitBoxReflectProperty[String | Double]] = js.native
+  var WebkitBoxReflect: js.UndefOr[WebkitBoxReflectProperty[String | Double]] = js.undefined
   
-  var WebkitBoxShadow: js.UndefOr[BoxShadowProperty] = js.native
+  var WebkitBoxShadow: js.UndefOr[BoxShadowProperty] = js.undefined
   
-  var WebkitBoxSizing: js.UndefOr[BoxSizingProperty] = js.native
+  var WebkitBoxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
   
-  var WebkitClipPath: js.UndefOr[ClipPathProperty] = js.native
+  var WebkitClipPath: js.UndefOr[ClipPathProperty] = js.undefined
   
-  var WebkitColumnCount: js.UndefOr[ColumnCountProperty] = js.native
+  var WebkitColumnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   
-  var WebkitColumnFill: js.UndefOr[ColumnFillProperty] = js.native
+  var WebkitColumnFill: js.UndefOr[ColumnFillProperty] = js.undefined
   
-  var WebkitColumnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.native
+  var WebkitColumnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.undefined
   
-  var WebkitColumnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.native
+  var WebkitColumnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.undefined
   
-  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.native
+  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
   
-  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.native
+  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
   
-  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.native
+  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.undefined
   
-  var WebkitColumnSpan: js.UndefOr[ColumnSpanProperty] = js.native
+  var WebkitColumnSpan: js.UndefOr[ColumnSpanProperty] = js.undefined
   
-  var WebkitColumnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.native
+  var WebkitColumnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.undefined
   
-  var WebkitColumns: js.UndefOr[ColumnsProperty[String | Double]] = js.native
+  var WebkitColumns: js.UndefOr[ColumnsProperty[String | Double]] = js.undefined
   
-  var WebkitFilter: js.UndefOr[FilterProperty] = js.native
+  var WebkitFilter: js.UndefOr[FilterProperty] = js.undefined
   
-  var WebkitFlex: js.UndefOr[FlexProperty[String | Double]] = js.native
+  var WebkitFlex: js.UndefOr[FlexProperty[String | Double]] = js.undefined
   
-  var WebkitFlexBasis: js.UndefOr[FlexBasisProperty[String | Double]] = js.native
+  var WebkitFlexBasis: js.UndefOr[FlexBasisProperty[String | Double]] = js.undefined
   
-  var WebkitFlexDirection: js.UndefOr[FlexDirectionProperty] = js.native
+  var WebkitFlexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
   
-  var WebkitFlexFlow: js.UndefOr[FlexFlowProperty] = js.native
+  var WebkitFlexFlow: js.UndefOr[FlexFlowProperty] = js.undefined
   
-  var WebkitFlexGrow: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitFlexGrow: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitFlexShrink: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitFlexShrink: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitFlexWrap: js.UndefOr[FlexWrapProperty] = js.native
+  var WebkitFlexWrap: js.UndefOr[FlexWrapProperty] = js.undefined
   
-  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.native
+  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
   
-  var WebkitFontKerning: js.UndefOr[FontKerningProperty] = js.native
+  var WebkitFontKerning: js.UndefOr[FontKerningProperty] = js.undefined
   
-  var WebkitFontSmoothing: js.UndefOr[FontSmoothProperty[String | Double]] = js.native
+  var WebkitFontSmoothing: js.UndefOr[FontSmoothProperty[String | Double]] = js.undefined
   
-  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.native
+  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.undefined
   
-  var WebkitHyphens: js.UndefOr[HyphensProperty] = js.native
+  var WebkitHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
-  var WebkitJustifyContent: js.UndefOr[JustifyContentProperty] = js.native
+  var WebkitJustifyContent: js.UndefOr[JustifyContentProperty] = js.undefined
   
-  var WebkitLineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var WebkitLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
-  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.native
+  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.undefined
   
-  var WebkitMarginEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.native
+  var WebkitMarginEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.undefined
   
-  var WebkitMarginStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.native
+  var WebkitMarginStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.undefined
   
-  var WebkitMask: js.UndefOr[WebkitMaskProperty[String | Double]] = js.native
+  var WebkitMask: js.UndefOr[WebkitMaskProperty[String | Double]] = js.undefined
   
-  var WebkitMaskAttachment: js.UndefOr[WebkitMaskAttachmentProperty] = js.native
+  var WebkitMaskAttachment: js.UndefOr[WebkitMaskAttachmentProperty] = js.undefined
   
-  var WebkitMaskClip: js.UndefOr[WebkitMaskClipProperty] = js.native
+  var WebkitMaskClip: js.UndefOr[WebkitMaskClipProperty] = js.undefined
   
-  var WebkitMaskComposite: js.UndefOr[WebkitMaskCompositeProperty] = js.native
+  var WebkitMaskComposite: js.UndefOr[WebkitMaskCompositeProperty] = js.undefined
   
-  var WebkitMaskImage: js.UndefOr[WebkitMaskImageProperty] = js.native
+  var WebkitMaskImage: js.UndefOr[WebkitMaskImageProperty] = js.undefined
   
-  var WebkitMaskOrigin: js.UndefOr[WebkitMaskOriginProperty] = js.native
+  var WebkitMaskOrigin: js.UndefOr[WebkitMaskOriginProperty] = js.undefined
   
-  var WebkitMaskPosition: js.UndefOr[WebkitMaskPositionProperty[String | Double]] = js.native
+  var WebkitMaskPosition: js.UndefOr[WebkitMaskPositionProperty[String | Double]] = js.undefined
   
-  var WebkitMaskPositionX: js.UndefOr[WebkitMaskPositionXProperty[String | Double]] = js.native
+  var WebkitMaskPositionX: js.UndefOr[WebkitMaskPositionXProperty[String | Double]] = js.undefined
   
-  var WebkitMaskPositionY: js.UndefOr[WebkitMaskPositionYProperty[String | Double]] = js.native
+  var WebkitMaskPositionY: js.UndefOr[WebkitMaskPositionYProperty[String | Double]] = js.undefined
   
-  var WebkitMaskRepeat: js.UndefOr[WebkitMaskRepeatProperty] = js.native
+  var WebkitMaskRepeat: js.UndefOr[WebkitMaskRepeatProperty] = js.undefined
   
-  var WebkitMaskRepeatX: js.UndefOr[WebkitMaskRepeatXProperty] = js.native
+  var WebkitMaskRepeatX: js.UndefOr[WebkitMaskRepeatXProperty] = js.undefined
   
-  var WebkitMaskRepeatY: js.UndefOr[WebkitMaskRepeatYProperty] = js.native
+  var WebkitMaskRepeatY: js.UndefOr[WebkitMaskRepeatYProperty] = js.undefined
   
-  var WebkitMaskSize: js.UndefOr[WebkitMaskSizeProperty[String | Double]] = js.native
+  var WebkitMaskSize: js.UndefOr[WebkitMaskSizeProperty[String | Double]] = js.undefined
   
-  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSizeProperty[String | Double]] = js.native
+  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSizeProperty[String | Double]] = js.undefined
   
-  var WebkitOrder: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitOrder: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var WebkitOverflowScrolling: js.UndefOr[WebkitOverflowScrollingProperty] = js.native
+  var WebkitOverflowScrolling: js.UndefOr[WebkitOverflowScrollingProperty] = js.undefined
   
-  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.native
+  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.undefined
   
-  var WebkitPaddingStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.native
+  var WebkitPaddingStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.undefined
   
-  var WebkitPerspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.native
+  var WebkitPerspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.undefined
   
-  var WebkitPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.native
+  var WebkitPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.undefined
   
-  var WebkitPrintColorAdjust: js.UndefOr[ColorAdjustProperty] = js.native
+  var WebkitPrintColorAdjust: js.UndefOr[ColorAdjustProperty] = js.undefined
   
-  var WebkitRubyPosition: js.UndefOr[RubyPositionProperty] = js.native
+  var WebkitRubyPosition: js.UndefOr[RubyPositionProperty] = js.undefined
   
-  var WebkitScrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty] = js.native
+  var WebkitScrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty] = js.undefined
   
-  var WebkitScrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty] = js.native
+  var WebkitScrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty] = js.undefined
   
-  var WebkitScrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.native
+  var WebkitScrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.undefined
   
-  var WebkitShapeMargin: js.UndefOr[ShapeMarginProperty[String | Double]] = js.native
+  var WebkitShapeMargin: js.UndefOr[ShapeMarginProperty[String | Double]] = js.undefined
   
-  var WebkitTapHighlightColor: js.UndefOr[WebkitTapHighlightColorProperty] = js.native
+  var WebkitTapHighlightColor: js.UndefOr[WebkitTapHighlightColorProperty] = js.undefined
   
-  var WebkitTextCombine: js.UndefOr[TextCombineUprightProperty] = js.native
+  var WebkitTextCombine: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
-  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.native
+  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
   
-  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.native
+  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
   
-  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.native
+  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.undefined
   
-  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.native
+  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
   
-  var WebkitTextEmphasis: js.UndefOr[TextEmphasisProperty] = js.native
+  var WebkitTextEmphasis: js.UndefOr[TextEmphasisProperty] = js.undefined
   
-  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.native
+  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.undefined
   
-  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString] = js.native
+  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
   
-  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.native
+  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.undefined
   
-  var WebkitTextFillColor: js.UndefOr[WebkitTextFillColorProperty] = js.native
+  var WebkitTextFillColor: js.UndefOr[WebkitTextFillColorProperty] = js.undefined
   
-  var WebkitTextOrientation: js.UndefOr[TextOrientationProperty] = js.native
+  var WebkitTextOrientation: js.UndefOr[TextOrientationProperty] = js.undefined
   
-  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.native
+  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   
-  var WebkitTextStroke: js.UndefOr[WebkitTextStrokeProperty[String | Double]] = js.native
+  var WebkitTextStroke: js.UndefOr[WebkitTextStrokeProperty[String | Double]] = js.undefined
   
-  var WebkitTextStrokeColor: js.UndefOr[WebkitTextStrokeColorProperty] = js.native
+  var WebkitTextStrokeColor: js.UndefOr[WebkitTextStrokeColorProperty] = js.undefined
   
-  var WebkitTextStrokeWidth: js.UndefOr[WebkitTextStrokeWidthProperty[String | Double]] = js.native
+  var WebkitTextStrokeWidth: js.UndefOr[WebkitTextStrokeWidthProperty[String | Double]] = js.undefined
   
-  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.native
+  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.undefined
   
-  var WebkitTouchCallout: js.UndefOr[WebkitTouchCalloutProperty] = js.native
+  var WebkitTouchCallout: js.UndefOr[WebkitTouchCalloutProperty] = js.undefined
   
-  var WebkitTransform: js.UndefOr[TransformProperty] = js.native
+  var WebkitTransform: js.UndefOr[TransformProperty] = js.undefined
   
-  var WebkitTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.native
+  var WebkitTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.undefined
   
-  var WebkitTransformStyle: js.UndefOr[TransformStyleProperty] = js.native
+  var WebkitTransformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
   
-  var WebkitTransition: js.UndefOr[TransitionProperty] = js.native
+  var WebkitTransition: js.UndefOr[TransitionProperty] = js.undefined
   
-  var WebkitTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var WebkitTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var WebkitTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var WebkitTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var WebkitTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var WebkitTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
-  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
-  var WebkitUserModify: js.UndefOr[WebkitUserModifyProperty] = js.native
+  var WebkitUserModify: js.UndefOr[WebkitUserModifyProperty] = js.undefined
   
-  var WebkitUserSelect: js.UndefOr[UserSelectProperty] = js.native
+  var WebkitUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
-  var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.native
+  var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
   
-  var alignContent: js.UndefOr[AlignContentProperty] = js.native
+  var alignContent: js.UndefOr[AlignContentProperty] = js.undefined
   
-  var alignItems: js.UndefOr[AlignItemsProperty] = js.native
+  var alignItems: js.UndefOr[AlignItemsProperty] = js.undefined
   
-  var alignSelf: js.UndefOr[AlignSelfProperty] = js.native
+  var alignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
   
-  var alignTracks: js.UndefOr[AlignTracksProperty] = js.native
+  var alignTracks: js.UndefOr[AlignTracksProperty] = js.undefined
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.native
+  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   
-  var all: js.UndefOr[Globals] = js.native
+  var all: js.UndefOr[Globals] = js.undefined
   
-  var animation: js.UndefOr[AnimationProperty] = js.native
+  var animation: js.UndefOr[AnimationProperty] = js.undefined
   
-  var animationDelay: js.UndefOr[GlobalsString] = js.native
+  var animationDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var animationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var animationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
-  var animationDuration: js.UndefOr[GlobalsString] = js.native
+  var animationDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var animationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var animationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
-  var animationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var animationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
-  var animationName: js.UndefOr[AnimationNameProperty] = js.native
+  var animationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
-  var animationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var animationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
-  var animationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var animationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
-  var appearance: js.UndefOr[AppearanceProperty] = js.native
+  var appearance: js.UndefOr[AppearanceProperty] = js.undefined
   
-  var aspectRatio: js.UndefOr[AspectRatioProperty] = js.native
+  var aspectRatio: js.UndefOr[AspectRatioProperty] = js.undefined
   
-  var azimuth: js.UndefOr[AzimuthProperty] = js.native
+  var azimuth: js.UndefOr[AzimuthProperty] = js.undefined
   
-  var backdropFilter: js.UndefOr[BackdropFilterProperty] = js.native
+  var backdropFilter: js.UndefOr[BackdropFilterProperty] = js.undefined
   
-  var backfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.native
+  var backfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   
-  var backgroundBlendMode: js.UndefOr[BackgroundBlendModeProperty] = js.native
+  var backgroundBlendMode: js.UndefOr[BackgroundBlendModeProperty] = js.undefined
   
-  var backgroundImage: js.UndefOr[BackgroundImageProperty] = js.native
+  var backgroundImage: js.UndefOr[BackgroundImageProperty] = js.undefined
   
-  var backgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.native
+  var backgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.undefined
   
-  var backgroundPositionX: js.UndefOr[BackgroundPositionXProperty[String | Double]] = js.native
+  var backgroundPositionX: js.UndefOr[BackgroundPositionXProperty[String | Double]] = js.undefined
   
-  var backgroundPositionY: js.UndefOr[BackgroundPositionYProperty[String | Double]] = js.native
+  var backgroundPositionY: js.UndefOr[BackgroundPositionYProperty[String | Double]] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShiftProperty[String | Double]] = js.native
+  var baselineShift: js.UndefOr[BaselineShiftProperty[String | Double]] = js.undefined
   
-  var blockOverflow: js.UndefOr[BlockOverflowProperty] = js.native
+  var blockOverflow: js.UndefOr[BlockOverflowProperty] = js.undefined
   
-  var blockSize: js.UndefOr[BlockSizeProperty[String | Double]] = js.native
+  var blockSize: js.UndefOr[BlockSizeProperty[String | Double]] = js.undefined
   
-  var border: js.UndefOr[BorderProperty[String | Double]] = js.native
+  var border: js.UndefOr[BorderProperty[String | Double]] = js.undefined
   
-  var borderBlock: js.UndefOr[BorderBlockProperty[String | Double]] = js.native
+  var borderBlock: js.UndefOr[BorderBlockProperty[String | Double]] = js.undefined
   
-  var borderBlockColor: js.UndefOr[BorderBlockColorProperty] = js.native
+  var borderBlockColor: js.UndefOr[BorderBlockColorProperty] = js.undefined
   
-  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[String | Double]] = js.native
+  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[String | Double]] = js.undefined
   
-  var borderBlockEndColor: js.UndefOr[BorderBlockEndColorProperty] = js.native
+  var borderBlockEndColor: js.UndefOr[BorderBlockEndColorProperty] = js.undefined
   
-  var borderBlockEndStyle: js.UndefOr[BorderBlockEndStyleProperty] = js.native
+  var borderBlockEndStyle: js.UndefOr[BorderBlockEndStyleProperty] = js.undefined
   
-  var borderBlockEndWidth: js.UndefOr[BorderBlockEndWidthProperty[String | Double]] = js.native
+  var borderBlockEndWidth: js.UndefOr[BorderBlockEndWidthProperty[String | Double]] = js.undefined
   
-  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[String | Double]] = js.native
+  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[String | Double]] = js.undefined
   
-  var borderBlockStartColor: js.UndefOr[BorderBlockStartColorProperty] = js.native
+  var borderBlockStartColor: js.UndefOr[BorderBlockStartColorProperty] = js.undefined
   
-  var borderBlockStartStyle: js.UndefOr[BorderBlockStartStyleProperty] = js.native
+  var borderBlockStartStyle: js.UndefOr[BorderBlockStartStyleProperty] = js.undefined
   
-  var borderBlockStartWidth: js.UndefOr[BorderBlockStartWidthProperty[String | Double]] = js.native
+  var borderBlockStartWidth: js.UndefOr[BorderBlockStartWidthProperty[String | Double]] = js.undefined
   
-  var borderBlockStyle: js.UndefOr[BorderBlockStyleProperty] = js.native
+  var borderBlockStyle: js.UndefOr[BorderBlockStyleProperty] = js.undefined
   
-  var borderBlockWidth: js.UndefOr[BorderBlockWidthProperty[String | Double]] = js.native
+  var borderBlockWidth: js.UndefOr[BorderBlockWidthProperty[String | Double]] = js.undefined
   
-  var borderBottom: js.UndefOr[BorderBottomProperty[String | Double]] = js.native
+  var borderBottom: js.UndefOr[BorderBottomProperty[String | Double]] = js.undefined
   
-  var borderBottomColor: js.UndefOr[BorderBottomColorProperty] = js.native
+  var borderBottomColor: js.UndefOr[BorderBottomColorProperty] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.native
+  var borderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[String | Double]] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.native
+  var borderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[String | Double]] = js.undefined
   
-  var borderBottomStyle: js.UndefOr[BorderBottomStyleProperty] = js.native
+  var borderBottomStyle: js.UndefOr[BorderBottomStyleProperty] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[BorderBottomWidthProperty[String | Double]] = js.native
+  var borderBottomWidth: js.UndefOr[BorderBottomWidthProperty[String | Double]] = js.undefined
   
-  var borderCollapse: js.UndefOr[BorderCollapseProperty] = js.native
+  var borderCollapse: js.UndefOr[BorderCollapseProperty] = js.undefined
   
-  var borderColor: js.UndefOr[BorderColorProperty] = js.native
+  var borderColor: js.UndefOr[BorderColorProperty] = js.undefined
   
-  var borderEndEndRadius: js.UndefOr[BorderEndEndRadiusProperty[String | Double]] = js.native
+  var borderEndEndRadius: js.UndefOr[BorderEndEndRadiusProperty[String | Double]] = js.undefined
   
-  var borderEndStartRadius: js.UndefOr[BorderEndStartRadiusProperty[String | Double]] = js.native
+  var borderEndStartRadius: js.UndefOr[BorderEndStartRadiusProperty[String | Double]] = js.undefined
   
-  var borderImage: js.UndefOr[BorderImageProperty] = js.native
+  var borderImage: js.UndefOr[BorderImageProperty] = js.undefined
   
-  var borderImageOutset: js.UndefOr[BorderImageOutsetProperty[String | Double]] = js.native
+  var borderImageOutset: js.UndefOr[BorderImageOutsetProperty[String | Double]] = js.undefined
   
-  var borderImageRepeat: js.UndefOr[BorderImageRepeatProperty] = js.native
+  var borderImageRepeat: js.UndefOr[BorderImageRepeatProperty] = js.undefined
   
-  var borderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.native
+  var borderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.undefined
   
-  var borderImageSource: js.UndefOr[BorderImageSourceProperty] = js.native
+  var borderImageSource: js.UndefOr[BorderImageSourceProperty] = js.undefined
   
-  var borderImageWidth: js.UndefOr[BorderImageWidthProperty[String | Double]] = js.native
+  var borderImageWidth: js.UndefOr[BorderImageWidthProperty[String | Double]] = js.undefined
   
-  var borderInline: js.UndefOr[BorderInlineProperty[String | Double]] = js.native
+  var borderInline: js.UndefOr[BorderInlineProperty[String | Double]] = js.undefined
   
-  var borderInlineColor: js.UndefOr[BorderInlineColorProperty] = js.native
+  var borderInlineColor: js.UndefOr[BorderInlineColorProperty] = js.undefined
   
-  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[String | Double]] = js.native
+  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[String | Double]] = js.undefined
   
-  var borderInlineEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.native
+  var borderInlineEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.undefined
   
-  var borderInlineEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.native
+  var borderInlineEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.undefined
   
-  var borderInlineEndWidth: js.UndefOr[BorderInlineEndWidthProperty[String | Double]] = js.native
+  var borderInlineEndWidth: js.UndefOr[BorderInlineEndWidthProperty[String | Double]] = js.undefined
   
-  var borderInlineStart: js.UndefOr[BorderInlineStartProperty[String | Double]] = js.native
+  var borderInlineStart: js.UndefOr[BorderInlineStartProperty[String | Double]] = js.undefined
   
-  var borderInlineStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.native
+  var borderInlineStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.undefined
   
-  var borderInlineStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.native
+  var borderInlineStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.undefined
   
-  var borderInlineStartWidth: js.UndefOr[BorderInlineStartWidthProperty[String | Double]] = js.native
+  var borderInlineStartWidth: js.UndefOr[BorderInlineStartWidthProperty[String | Double]] = js.undefined
   
-  var borderInlineStyle: js.UndefOr[BorderInlineStyleProperty] = js.native
+  var borderInlineStyle: js.UndefOr[BorderInlineStyleProperty] = js.undefined
   
-  var borderInlineWidth: js.UndefOr[BorderInlineWidthProperty[String | Double]] = js.native
+  var borderInlineWidth: js.UndefOr[BorderInlineWidthProperty[String | Double]] = js.undefined
   
-  var borderLeft: js.UndefOr[BorderLeftProperty[String | Double]] = js.native
+  var borderLeft: js.UndefOr[BorderLeftProperty[String | Double]] = js.undefined
   
-  var borderLeftColor: js.UndefOr[BorderLeftColorProperty] = js.native
+  var borderLeftColor: js.UndefOr[BorderLeftColorProperty] = js.undefined
   
-  var borderLeftStyle: js.UndefOr[BorderLeftStyleProperty] = js.native
+  var borderLeftStyle: js.UndefOr[BorderLeftStyleProperty] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[BorderLeftWidthProperty[String | Double]] = js.native
+  var borderLeftWidth: js.UndefOr[BorderLeftWidthProperty[String | Double]] = js.undefined
   
-  var borderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.native
+  var borderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.undefined
   
-  var borderRight: js.UndefOr[BorderRightProperty[String | Double]] = js.native
+  var borderRight: js.UndefOr[BorderRightProperty[String | Double]] = js.undefined
   
-  var borderRightColor: js.UndefOr[BorderRightColorProperty] = js.native
+  var borderRightColor: js.UndefOr[BorderRightColorProperty] = js.undefined
   
-  var borderRightStyle: js.UndefOr[BorderRightStyleProperty] = js.native
+  var borderRightStyle: js.UndefOr[BorderRightStyleProperty] = js.undefined
   
-  var borderRightWidth: js.UndefOr[BorderRightWidthProperty[String | Double]] = js.native
+  var borderRightWidth: js.UndefOr[BorderRightWidthProperty[String | Double]] = js.undefined
   
-  var borderSpacing: js.UndefOr[BorderSpacingProperty[String | Double]] = js.native
+  var borderSpacing: js.UndefOr[BorderSpacingProperty[String | Double]] = js.undefined
   
-  var borderStartEndRadius: js.UndefOr[BorderStartEndRadiusProperty[String | Double]] = js.native
+  var borderStartEndRadius: js.UndefOr[BorderStartEndRadiusProperty[String | Double]] = js.undefined
   
-  var borderStartStartRadius: js.UndefOr[BorderStartStartRadiusProperty[String | Double]] = js.native
+  var borderStartStartRadius: js.UndefOr[BorderStartStartRadiusProperty[String | Double]] = js.undefined
   
-  var borderStyle: js.UndefOr[BorderStyleProperty] = js.native
+  var borderStyle: js.UndefOr[BorderStyleProperty] = js.undefined
   
-  var borderTop: js.UndefOr[BorderTopProperty[String | Double]] = js.native
+  var borderTop: js.UndefOr[BorderTopProperty[String | Double]] = js.undefined
   
-  var borderTopColor: js.UndefOr[BorderTopColorProperty] = js.native
+  var borderTopColor: js.UndefOr[BorderTopColorProperty] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.native
+  var borderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[String | Double]] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.native
+  var borderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[String | Double]] = js.undefined
   
-  var borderTopStyle: js.UndefOr[BorderTopStyleProperty] = js.native
+  var borderTopStyle: js.UndefOr[BorderTopStyleProperty] = js.undefined
   
-  var borderTopWidth: js.UndefOr[BorderTopWidthProperty[String | Double]] = js.native
+  var borderTopWidth: js.UndefOr[BorderTopWidthProperty[String | Double]] = js.undefined
   
-  var borderWidth: js.UndefOr[BorderWidthProperty[String | Double]] = js.native
+  var borderWidth: js.UndefOr[BorderWidthProperty[String | Double]] = js.undefined
   
-  var bottom: js.UndefOr[BottomProperty[String | Double]] = js.native
+  var bottom: js.UndefOr[BottomProperty[String | Double]] = js.undefined
   
-  var boxAlign: js.UndefOr[BoxAlignProperty] = js.native
+  var boxAlign: js.UndefOr[BoxAlignProperty] = js.undefined
   
-  var boxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.native
+  var boxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.undefined
   
-  var boxDirection: js.UndefOr[BoxDirectionProperty] = js.native
+  var boxDirection: js.UndefOr[BoxDirectionProperty] = js.undefined
   
-  var boxFlex: js.UndefOr[GlobalsNumber] = js.native
+  var boxFlex: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var boxFlexGroup: js.UndefOr[GlobalsNumber] = js.native
+  var boxFlexGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var boxLines: js.UndefOr[BoxLinesProperty] = js.native
+  var boxLines: js.UndefOr[BoxLinesProperty] = js.undefined
   
-  var boxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.native
+  var boxOrdinalGroup: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var boxOrient: js.UndefOr[BoxOrientProperty] = js.native
+  var boxOrient: js.UndefOr[BoxOrientProperty] = js.undefined
   
-  var boxPack: js.UndefOr[BoxPackProperty] = js.native
+  var boxPack: js.UndefOr[BoxPackProperty] = js.undefined
   
-  var boxShadow: js.UndefOr[BoxShadowProperty] = js.native
+  var boxShadow: js.UndefOr[BoxShadowProperty] = js.undefined
   
-  var boxSizing: js.UndefOr[BoxSizingProperty] = js.native
+  var boxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
   
-  var breakAfter: js.UndefOr[BreakAfterProperty] = js.native
+  var breakAfter: js.UndefOr[BreakAfterProperty] = js.undefined
   
-  var breakBefore: js.UndefOr[BreakBeforeProperty] = js.native
+  var breakBefore: js.UndefOr[BreakBeforeProperty] = js.undefined
   
-  var breakInside: js.UndefOr[BreakInsideProperty] = js.native
+  var breakInside: js.UndefOr[BreakInsideProperty] = js.undefined
   
-  var captionSide: js.UndefOr[CaptionSideProperty] = js.native
+  var captionSide: js.UndefOr[CaptionSideProperty] = js.undefined
   
-  var caretColor: js.UndefOr[CaretColorProperty] = js.native
+  var caretColor: js.UndefOr[CaretColorProperty] = js.undefined
   
-  var clear: js.UndefOr[ClearProperty] = js.native
+  var clear: js.UndefOr[ClearProperty] = js.undefined
   
-  var clip: js.UndefOr[ClipProperty] = js.native
+  var clip: js.UndefOr[ClipProperty] = js.undefined
   
-  var clipPath: js.UndefOr[ClipPathProperty] = js.native
+  var clipPath: js.UndefOr[ClipPathProperty] = js.undefined
   
-  var clipRule: js.UndefOr[ClipRuleProperty] = js.native
+  var clipRule: js.UndefOr[ClipRuleProperty] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.native
+  var color: js.UndefOr[ColorProperty] = js.undefined
   
-  var colorAdjust: js.UndefOr[ColorAdjustProperty] = js.native
+  var colorAdjust: js.UndefOr[ColorAdjustProperty] = js.undefined
   
-  var colorInterpolation: js.UndefOr[ColorInterpolationProperty] = js.native
+  var colorInterpolation: js.UndefOr[ColorInterpolationProperty] = js.undefined
   
-  var colorRendering: js.UndefOr[ColorRenderingProperty] = js.native
+  var colorRendering: js.UndefOr[ColorRenderingProperty] = js.undefined
   
-  var columnCount: js.UndefOr[ColumnCountProperty] = js.native
+  var columnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   
-  var columnFill: js.UndefOr[ColumnFillProperty] = js.native
+  var columnFill: js.UndefOr[ColumnFillProperty] = js.undefined
   
-  var columnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.native
+  var columnGap: js.UndefOr[ColumnGapProperty[String | Double]] = js.undefined
   
-  var columnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.native
+  var columnRule: js.UndefOr[ColumnRuleProperty[String | Double]] = js.undefined
   
-  var columnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.native
+  var columnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
   
-  var columnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.native
+  var columnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
   
-  var columnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.native
+  var columnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[String | Double]] = js.undefined
   
-  var columnSpan: js.UndefOr[ColumnSpanProperty] = js.native
+  var columnSpan: js.UndefOr[ColumnSpanProperty] = js.undefined
   
-  var columnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.native
+  var columnWidth: js.UndefOr[ColumnWidthProperty[String | Double]] = js.undefined
   
-  var columns: js.UndefOr[ColumnsProperty[String | Double]] = js.native
+  var columns: js.UndefOr[ColumnsProperty[String | Double]] = js.undefined
   
-  var contain: js.UndefOr[ContainProperty] = js.native
+  var contain: js.UndefOr[ContainProperty] = js.undefined
   
-  var content: js.UndefOr[ContentProperty] = js.native
+  var content: js.UndefOr[ContentProperty] = js.undefined
   
-  var counterIncrement: js.UndefOr[CounterIncrementProperty] = js.native
+  var counterIncrement: js.UndefOr[CounterIncrementProperty] = js.undefined
   
-  var counterReset: js.UndefOr[CounterResetProperty] = js.native
+  var counterReset: js.UndefOr[CounterResetProperty] = js.undefined
   
-  var counterSet: js.UndefOr[CounterSetProperty] = js.native
+  var counterSet: js.UndefOr[CounterSetProperty] = js.undefined
   
-  var cursor: js.UndefOr[CursorProperty] = js.native
+  var cursor: js.UndefOr[CursorProperty] = js.undefined
   
-  var direction: js.UndefOr[DirectionProperty] = js.native
+  var direction: js.UndefOr[DirectionProperty] = js.undefined
   
-  var display: js.UndefOr[DisplayProperty] = js.native
+  var display: js.UndefOr[DisplayProperty] = js.undefined
   
-  var dominantBaseline: js.UndefOr[DominantBaselineProperty] = js.native
+  var dominantBaseline: js.UndefOr[DominantBaselineProperty] = js.undefined
   
-  var emptyCells: js.UndefOr[EmptyCellsProperty] = js.native
+  var emptyCells: js.UndefOr[EmptyCellsProperty] = js.undefined
   
-  var fill: js.UndefOr[FillProperty] = js.native
+  var fill: js.UndefOr[FillProperty] = js.undefined
   
-  var fillOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var fillOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var fillRule: js.UndefOr[FillRuleProperty] = js.native
+  var fillRule: js.UndefOr[FillRuleProperty] = js.undefined
   
-  var filter: js.UndefOr[FilterProperty] = js.native
+  var filter: js.UndefOr[FilterProperty] = js.undefined
   
-  var flex: js.UndefOr[FlexProperty[String | Double]] = js.native
+  var flex: js.UndefOr[FlexProperty[String | Double]] = js.undefined
   
-  var flexBasis: js.UndefOr[FlexBasisProperty[String | Double]] = js.native
+  var flexBasis: js.UndefOr[FlexBasisProperty[String | Double]] = js.undefined
   
-  var flexDirection: js.UndefOr[FlexDirectionProperty] = js.native
+  var flexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
   
-  var flexFlow: js.UndefOr[FlexFlowProperty] = js.native
+  var flexFlow: js.UndefOr[FlexFlowProperty] = js.undefined
   
-  var flexGrow: js.UndefOr[GlobalsNumber] = js.native
+  var flexGrow: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var flexShrink: js.UndefOr[GlobalsNumber] = js.native
+  var flexShrink: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var flexWrap: js.UndefOr[FlexWrapProperty] = js.native
+  var flexWrap: js.UndefOr[FlexWrapProperty] = js.undefined
   
-  var float: js.UndefOr[FloatProperty] = js.native
+  var float: js.UndefOr[FloatProperty] = js.undefined
   
-  var floodColor: js.UndefOr[FloodColorProperty] = js.native
+  var floodColor: js.UndefOr[FloodColorProperty] = js.undefined
   
-  var floodOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var floodOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var font: js.UndefOr[FontProperty] = js.native
+  var font: js.UndefOr[FontProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+  var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.native
+  var fontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
   
-  var fontKerning: js.UndefOr[FontKerningProperty] = js.native
+  var fontKerning: js.UndefOr[FontKerningProperty] = js.undefined
   
-  var fontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.native
+  var fontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.undefined
   
-  var fontOpticalSizing: js.UndefOr[FontOpticalSizingProperty] = js.native
+  var fontOpticalSizing: js.UndefOr[FontOpticalSizingProperty] = js.undefined
   
-  var fontSize: js.UndefOr[FontSizeProperty[String | Double]] = js.native
+  var fontSize: js.UndefOr[FontSizeProperty[String | Double]] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty] = js.native
+  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty] = js.undefined
   
-  var fontSmooth: js.UndefOr[FontSmoothProperty[String | Double]] = js.native
+  var fontSmooth: js.UndefOr[FontSmoothProperty[String | Double]] = js.undefined
   
-  var fontStretch: js.UndefOr[FontStretchProperty] = js.native
+  var fontStretch: js.UndefOr[FontStretchProperty] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyleProperty] = js.native
+  var fontStyle: js.UndefOr[FontStyleProperty] = js.undefined
   
-  var fontSynthesis: js.UndefOr[FontSynthesisProperty] = js.native
+  var fontSynthesis: js.UndefOr[FontSynthesisProperty] = js.undefined
   
-  var fontVariant: js.UndefOr[FontVariantProperty] = js.native
+  var fontVariant: js.UndefOr[FontVariantProperty] = js.undefined
   
-  var fontVariantAlternates: js.UndefOr[FontVariantAlternatesProperty] = js.native
+  var fontVariantAlternates: js.UndefOr[FontVariantAlternatesProperty] = js.undefined
   
-  var fontVariantCaps: js.UndefOr[FontVariantCapsProperty] = js.native
+  var fontVariantCaps: js.UndefOr[FontVariantCapsProperty] = js.undefined
   
-  var fontVariantEastAsian: js.UndefOr[FontVariantEastAsianProperty] = js.native
+  var fontVariantEastAsian: js.UndefOr[FontVariantEastAsianProperty] = js.undefined
   
-  var fontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.native
+  var fontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.undefined
   
-  var fontVariantNumeric: js.UndefOr[FontVariantNumericProperty] = js.native
+  var fontVariantNumeric: js.UndefOr[FontVariantNumericProperty] = js.undefined
   
-  var fontVariantPosition: js.UndefOr[FontVariantPositionProperty] = js.native
+  var fontVariantPosition: js.UndefOr[FontVariantPositionProperty] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[FontVariationSettingsProperty] = js.native
+  var fontVariationSettings: js.UndefOr[FontVariationSettingsProperty] = js.undefined
   
-  var fontWeight: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeight: js.UndefOr[FontWeightProperty] = js.undefined
   
-  var gap: js.UndefOr[GapProperty[String | Double]] = js.native
+  var gap: js.UndefOr[GapProperty[String | Double]] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty] = js.native
+  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty] = js.undefined
   
-  var grid: js.UndefOr[GridProperty] = js.native
+  var grid: js.UndefOr[GridProperty] = js.undefined
   
-  var gridArea: js.UndefOr[GridAreaProperty] = js.native
+  var gridArea: js.UndefOr[GridAreaProperty] = js.undefined
   
-  var gridAutoColumns: js.UndefOr[GridAutoColumnsProperty[String | Double]] = js.native
+  var gridAutoColumns: js.UndefOr[GridAutoColumnsProperty[String | Double]] = js.undefined
   
-  var gridAutoFlow: js.UndefOr[GridAutoFlowProperty] = js.native
+  var gridAutoFlow: js.UndefOr[GridAutoFlowProperty] = js.undefined
   
-  var gridAutoRows: js.UndefOr[GridAutoRowsProperty[String | Double]] = js.native
+  var gridAutoRows: js.UndefOr[GridAutoRowsProperty[String | Double]] = js.undefined
   
-  var gridColumn: js.UndefOr[GridColumnProperty] = js.native
+  var gridColumn: js.UndefOr[GridColumnProperty] = js.undefined
   
-  var gridColumnEnd: js.UndefOr[GridColumnEndProperty] = js.native
+  var gridColumnEnd: js.UndefOr[GridColumnEndProperty] = js.undefined
   
-  var gridColumnGap: js.UndefOr[GridColumnGapProperty[String | Double]] = js.native
+  var gridColumnGap: js.UndefOr[GridColumnGapProperty[String | Double]] = js.undefined
   
-  var gridColumnStart: js.UndefOr[GridColumnStartProperty] = js.native
+  var gridColumnStart: js.UndefOr[GridColumnStartProperty] = js.undefined
   
-  var gridGap: js.UndefOr[GridGapProperty[String | Double]] = js.native
+  var gridGap: js.UndefOr[GridGapProperty[String | Double]] = js.undefined
   
-  var gridRow: js.UndefOr[GridRowProperty] = js.native
+  var gridRow: js.UndefOr[GridRowProperty] = js.undefined
   
-  var gridRowEnd: js.UndefOr[GridRowEndProperty] = js.native
+  var gridRowEnd: js.UndefOr[GridRowEndProperty] = js.undefined
   
-  var gridRowGap: js.UndefOr[GridRowGapProperty[String | Double]] = js.native
+  var gridRowGap: js.UndefOr[GridRowGapProperty[String | Double]] = js.undefined
   
-  var gridRowStart: js.UndefOr[GridRowStartProperty] = js.native
+  var gridRowStart: js.UndefOr[GridRowStartProperty] = js.undefined
   
-  var gridTemplate: js.UndefOr[GridTemplateProperty] = js.native
+  var gridTemplate: js.UndefOr[GridTemplateProperty] = js.undefined
   
-  var gridTemplateAreas: js.UndefOr[GridTemplateAreasProperty] = js.native
+  var gridTemplateAreas: js.UndefOr[GridTemplateAreasProperty] = js.undefined
   
-  var gridTemplateColumns: js.UndefOr[GridTemplateColumnsProperty[String | Double]] = js.native
+  var gridTemplateColumns: js.UndefOr[GridTemplateColumnsProperty[String | Double]] = js.undefined
   
-  var gridTemplateRows: js.UndefOr[GridTemplateRowsProperty[String | Double]] = js.native
+  var gridTemplateRows: js.UndefOr[GridTemplateRowsProperty[String | Double]] = js.undefined
   
-  var hack: js.UndefOr[js.Any] = js.native
+  var hack: js.UndefOr[js.Any] = js.undefined
   
-  var hangingPunctuation: js.UndefOr[HangingPunctuationProperty] = js.native
+  var hangingPunctuation: js.UndefOr[HangingPunctuationProperty] = js.undefined
   
-  var height: js.UndefOr[HeightProperty[String | Double]] = js.native
+  var height: js.UndefOr[HeightProperty[String | Double]] = js.undefined
   
-  var hyphens: js.UndefOr[HyphensProperty] = js.native
+  var hyphens: js.UndefOr[HyphensProperty] = js.undefined
   
-  var imageOrientation: js.UndefOr[ImageOrientationProperty] = js.native
+  var imageOrientation: js.UndefOr[ImageOrientationProperty] = js.undefined
   
-  var imageRendering: js.UndefOr[ImageRenderingProperty] = js.native
+  var imageRendering: js.UndefOr[ImageRenderingProperty] = js.undefined
   
-  var imageResolution: js.UndefOr[ImageResolutionProperty] = js.native
+  var imageResolution: js.UndefOr[ImageResolutionProperty] = js.undefined
   
-  var imeMode: js.UndefOr[ImeModeProperty] = js.native
+  var imeMode: js.UndefOr[ImeModeProperty] = js.undefined
   
-  var initialLetter: js.UndefOr[InitialLetterProperty] = js.native
+  var initialLetter: js.UndefOr[InitialLetterProperty] = js.undefined
   
-  var inlineSize: js.UndefOr[InlineSizeProperty[String | Double]] = js.native
+  var inlineSize: js.UndefOr[InlineSizeProperty[String | Double]] = js.undefined
   
-  var inset: js.UndefOr[InsetProperty[String | Double]] = js.native
+  var inset: js.UndefOr[InsetProperty[String | Double]] = js.undefined
   
-  var insetBlock: js.UndefOr[InsetBlockProperty[String | Double]] = js.native
+  var insetBlock: js.UndefOr[InsetBlockProperty[String | Double]] = js.undefined
   
-  var insetBlockEnd: js.UndefOr[InsetBlockEndProperty[String | Double]] = js.native
+  var insetBlockEnd: js.UndefOr[InsetBlockEndProperty[String | Double]] = js.undefined
   
-  var insetBlockStart: js.UndefOr[InsetBlockStartProperty[String | Double]] = js.native
+  var insetBlockStart: js.UndefOr[InsetBlockStartProperty[String | Double]] = js.undefined
   
-  var insetInline: js.UndefOr[InsetInlineProperty[String | Double]] = js.native
+  var insetInline: js.UndefOr[InsetInlineProperty[String | Double]] = js.undefined
   
-  var insetInlineEnd: js.UndefOr[InsetInlineEndProperty[String | Double]] = js.native
+  var insetInlineEnd: js.UndefOr[InsetInlineEndProperty[String | Double]] = js.undefined
   
-  var insetInlineStart: js.UndefOr[InsetInlineStartProperty[String | Double]] = js.native
+  var insetInlineStart: js.UndefOr[InsetInlineStartProperty[String | Double]] = js.undefined
   
-  var isolation: js.UndefOr[IsolationProperty] = js.native
+  var isolation: js.UndefOr[IsolationProperty] = js.undefined
   
-  var justifyContent: js.UndefOr[JustifyContentProperty] = js.native
+  var justifyContent: js.UndefOr[JustifyContentProperty] = js.undefined
   
-  var justifyItems: js.UndefOr[JustifyItemsProperty] = js.native
+  var justifyItems: js.UndefOr[JustifyItemsProperty] = js.undefined
   
-  var justifySelf: js.UndefOr[JustifySelfProperty] = js.native
+  var justifySelf: js.UndefOr[JustifySelfProperty] = js.undefined
   
-  var justifyTracks: js.UndefOr[JustifyTracksProperty] = js.native
+  var justifyTracks: js.UndefOr[JustifyTracksProperty] = js.undefined
   
-  var left: js.UndefOr[LeftProperty[String | Double]] = js.native
+  var left: js.UndefOr[LeftProperty[String | Double]] = js.undefined
   
-  var letterSpacing: js.UndefOr[LetterSpacingProperty[String | Double]] = js.native
+  var letterSpacing: js.UndefOr[LetterSpacingProperty[String | Double]] = js.undefined
   
-  var lightingColor: js.UndefOr[LightingColorProperty] = js.native
+  var lightingColor: js.UndefOr[LightingColorProperty] = js.undefined
   
-  var lineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var lineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
-  var lineClamp: js.UndefOr[LineClampProperty] = js.native
+  var lineClamp: js.UndefOr[LineClampProperty] = js.undefined
   
-  var lineHeight: js.UndefOr[LineHeightProperty[String | Double]] = js.native
+  var lineHeight: js.UndefOr[LineHeightProperty[String | Double]] = js.undefined
   
-  var lineHeightStep: js.UndefOr[LineHeightStepProperty[String | Double]] = js.native
+  var lineHeightStep: js.UndefOr[LineHeightStepProperty[String | Double]] = js.undefined
   
-  var listStyle: js.UndefOr[ListStyleProperty] = js.native
+  var listStyle: js.UndefOr[ListStyleProperty] = js.undefined
   
-  var listStyleImage: js.UndefOr[ListStyleImageProperty] = js.native
+  var listStyleImage: js.UndefOr[ListStyleImageProperty] = js.undefined
   
-  var listStylePosition: js.UndefOr[ListStylePositionProperty] = js.native
+  var listStylePosition: js.UndefOr[ListStylePositionProperty] = js.undefined
   
-  var listStyleType: js.UndefOr[ListStyleTypeProperty] = js.native
+  var listStyleType: js.UndefOr[ListStyleTypeProperty] = js.undefined
   
-  var margin: js.UndefOr[MarginProperty[String | Double]] = js.native
+  var margin: js.UndefOr[MarginProperty[String | Double]] = js.undefined
   
-  var marginBlock: js.UndefOr[MarginBlockProperty[String | Double]] = js.native
+  var marginBlock: js.UndefOr[MarginBlockProperty[String | Double]] = js.undefined
   
-  var marginBlockEnd: js.UndefOr[MarginBlockEndProperty[String | Double]] = js.native
+  var marginBlockEnd: js.UndefOr[MarginBlockEndProperty[String | Double]] = js.undefined
   
-  var marginBlockStart: js.UndefOr[MarginBlockStartProperty[String | Double]] = js.native
+  var marginBlockStart: js.UndefOr[MarginBlockStartProperty[String | Double]] = js.undefined
   
-  var marginBottom: js.UndefOr[MarginBottomProperty[String | Double]] = js.native
+  var marginBottom: js.UndefOr[MarginBottomProperty[String | Double]] = js.undefined
   
-  var marginInline: js.UndefOr[MarginInlineProperty[String | Double]] = js.native
+  var marginInline: js.UndefOr[MarginInlineProperty[String | Double]] = js.undefined
   
-  var marginInlineEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.native
+  var marginInlineEnd: js.UndefOr[MarginInlineEndProperty[String | Double]] = js.undefined
   
-  var marginInlineStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.native
+  var marginInlineStart: js.UndefOr[MarginInlineStartProperty[String | Double]] = js.undefined
   
-  var marginLeft: js.UndefOr[MarginLeftProperty[String | Double]] = js.native
+  var marginLeft: js.UndefOr[MarginLeftProperty[String | Double]] = js.undefined
   
-  var marginRight: js.UndefOr[MarginRightProperty[String | Double]] = js.native
+  var marginRight: js.UndefOr[MarginRightProperty[String | Double]] = js.undefined
   
-  var marginTop: js.UndefOr[MarginTopProperty[String | Double]] = js.native
+  var marginTop: js.UndefOr[MarginTopProperty[String | Double]] = js.undefined
   
-  var marker: js.UndefOr[MarkerProperty] = js.native
+  var marker: js.UndefOr[MarkerProperty] = js.undefined
   
-  var markerEnd: js.UndefOr[MarkerEndProperty] = js.native
+  var markerEnd: js.UndefOr[MarkerEndProperty] = js.undefined
   
-  var markerMid: js.UndefOr[MarkerMidProperty] = js.native
+  var markerMid: js.UndefOr[MarkerMidProperty] = js.undefined
   
-  var markerStart: js.UndefOr[MarkerStartProperty] = js.native
+  var markerStart: js.UndefOr[MarkerStartProperty] = js.undefined
   
-  var mask: js.UndefOr[MaskProperty[String | Double]] = js.native
+  var mask: js.UndefOr[MaskProperty[String | Double]] = js.undefined
   
-  var maskBorder: js.UndefOr[MaskBorderProperty] = js.native
+  var maskBorder: js.UndefOr[MaskBorderProperty] = js.undefined
   
-  var maskBorderMode: js.UndefOr[MaskBorderModeProperty] = js.native
+  var maskBorderMode: js.UndefOr[MaskBorderModeProperty] = js.undefined
   
-  var maskBorderOutset: js.UndefOr[MaskBorderOutsetProperty[String | Double]] = js.native
+  var maskBorderOutset: js.UndefOr[MaskBorderOutsetProperty[String | Double]] = js.undefined
   
-  var maskBorderRepeat: js.UndefOr[MaskBorderRepeatProperty] = js.native
+  var maskBorderRepeat: js.UndefOr[MaskBorderRepeatProperty] = js.undefined
   
-  var maskBorderSlice: js.UndefOr[MaskBorderSliceProperty] = js.native
+  var maskBorderSlice: js.UndefOr[MaskBorderSliceProperty] = js.undefined
   
-  var maskBorderSource: js.UndefOr[MaskBorderSourceProperty] = js.native
+  var maskBorderSource: js.UndefOr[MaskBorderSourceProperty] = js.undefined
   
-  var maskBorderWidth: js.UndefOr[MaskBorderWidthProperty[String | Double]] = js.native
+  var maskBorderWidth: js.UndefOr[MaskBorderWidthProperty[String | Double]] = js.undefined
   
-  var maskClip: js.UndefOr[MaskClipProperty] = js.native
+  var maskClip: js.UndefOr[MaskClipProperty] = js.undefined
   
-  var maskComposite: js.UndefOr[MaskCompositeProperty] = js.native
+  var maskComposite: js.UndefOr[MaskCompositeProperty] = js.undefined
   
-  var maskImage: js.UndefOr[MaskImageProperty] = js.native
+  var maskImage: js.UndefOr[MaskImageProperty] = js.undefined
   
-  var maskMode: js.UndefOr[MaskModeProperty] = js.native
+  var maskMode: js.UndefOr[MaskModeProperty] = js.undefined
   
-  var maskOrigin: js.UndefOr[MaskOriginProperty] = js.native
+  var maskOrigin: js.UndefOr[MaskOriginProperty] = js.undefined
   
-  var maskPosition: js.UndefOr[MaskPositionProperty[String | Double]] = js.native
+  var maskPosition: js.UndefOr[MaskPositionProperty[String | Double]] = js.undefined
   
-  var maskRepeat: js.UndefOr[MaskRepeatProperty] = js.native
+  var maskRepeat: js.UndefOr[MaskRepeatProperty] = js.undefined
   
-  var maskSize: js.UndefOr[MaskSizeProperty[String | Double]] = js.native
+  var maskSize: js.UndefOr[MaskSizeProperty[String | Double]] = js.undefined
   
-  var maskType: js.UndefOr[MaskTypeProperty] = js.native
+  var maskType: js.UndefOr[MaskTypeProperty] = js.undefined
   
-  var masonryAutoFlow: js.UndefOr[MasonryAutoFlowProperty] = js.native
+  var masonryAutoFlow: js.UndefOr[MasonryAutoFlowProperty] = js.undefined
   
-  var mathStyle: js.UndefOr[MathStyleProperty] = js.native
+  var mathStyle: js.UndefOr[MathStyleProperty] = js.undefined
   
-  var maxBlockSize: js.UndefOr[MaxBlockSizeProperty[String | Double]] = js.native
+  var maxBlockSize: js.UndefOr[MaxBlockSizeProperty[String | Double]] = js.undefined
   
-  var maxHeight: js.UndefOr[MaxHeightProperty[String | Double]] = js.native
+  var maxHeight: js.UndefOr[MaxHeightProperty[String | Double]] = js.undefined
   
-  var maxInlineSize: js.UndefOr[MaxInlineSizeProperty[String | Double]] = js.native
+  var maxInlineSize: js.UndefOr[MaxInlineSizeProperty[String | Double]] = js.undefined
   
-  var maxLines: js.UndefOr[MaxLinesProperty] = js.native
+  var maxLines: js.UndefOr[MaxLinesProperty] = js.undefined
   
-  var maxWidth: js.UndefOr[MaxWidthProperty[String | Double]] = js.native
+  var maxWidth: js.UndefOr[MaxWidthProperty[String | Double]] = js.undefined
   
-  var minBlockSize: js.UndefOr[MinBlockSizeProperty[String | Double]] = js.native
+  var minBlockSize: js.UndefOr[MinBlockSizeProperty[String | Double]] = js.undefined
   
-  var minHeight: js.UndefOr[MinHeightProperty[String | Double]] = js.native
+  var minHeight: js.UndefOr[MinHeightProperty[String | Double]] = js.undefined
   
-  var minInlineSize: js.UndefOr[MinInlineSizeProperty[String | Double]] = js.native
+  var minInlineSize: js.UndefOr[MinInlineSizeProperty[String | Double]] = js.undefined
   
-  var minWidth: js.UndefOr[MinWidthProperty[String | Double]] = js.native
+  var minWidth: js.UndefOr[MinWidthProperty[String | Double]] = js.undefined
   
-  var mixBlendMode: js.UndefOr[MixBlendModeProperty] = js.native
+  var mixBlendMode: js.UndefOr[MixBlendModeProperty] = js.undefined
   
-  var motion: js.UndefOr[OffsetProperty[String | Double]] = js.native
+  var motion: js.UndefOr[OffsetProperty[String | Double]] = js.undefined
   
-  var motionDistance: js.UndefOr[OffsetDistanceProperty[String | Double]] = js.native
+  var motionDistance: js.UndefOr[OffsetDistanceProperty[String | Double]] = js.undefined
   
-  var motionPath: js.UndefOr[OffsetPathProperty] = js.native
+  var motionPath: js.UndefOr[OffsetPathProperty] = js.undefined
   
-  var motionRotation: js.UndefOr[OffsetRotateProperty] = js.native
+  var motionRotation: js.UndefOr[OffsetRotateProperty] = js.undefined
   
-  var msAccelerator: js.UndefOr[MsAcceleratorProperty] = js.native
+  var msAccelerator: js.UndefOr[MsAcceleratorProperty] = js.undefined
   
-  var msAlignSelf: js.UndefOr[AlignSelfProperty] = js.native
+  var msAlignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
   
-  var msBlockProgression: js.UndefOr[MsBlockProgressionProperty] = js.native
+  var msBlockProgression: js.UndefOr[MsBlockProgressionProperty] = js.undefined
   
-  var msContentZoomChaining: js.UndefOr[MsContentZoomChainingProperty] = js.native
+  var msContentZoomChaining: js.UndefOr[MsContentZoomChainingProperty] = js.undefined
   
-  var msContentZoomLimit: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimit: js.UndefOr[GlobalsString] = js.undefined
   
-  var msContentZoomLimitMax: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimitMax: js.UndefOr[GlobalsString] = js.undefined
   
-  var msContentZoomLimitMin: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimitMin: js.UndefOr[GlobalsString] = js.undefined
   
-  var msContentZoomSnap: js.UndefOr[MsContentZoomSnapProperty] = js.native
+  var msContentZoomSnap: js.UndefOr[MsContentZoomSnapProperty] = js.undefined
   
-  var msContentZoomSnapPoints: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomSnapPoints: js.UndefOr[GlobalsString] = js.undefined
   
-  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapTypeProperty] = js.native
+  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapTypeProperty] = js.undefined
   
-  var msContentZooming: js.UndefOr[MsContentZoomingProperty] = js.native
+  var msContentZooming: js.UndefOr[MsContentZoomingProperty] = js.undefined
   
-  var msFilter: js.UndefOr[GlobalsString] = js.native
+  var msFilter: js.UndefOr[GlobalsString] = js.undefined
   
-  var msFlex: js.UndefOr[FlexProperty[String | Double]] = js.native
+  var msFlex: js.UndefOr[FlexProperty[String | Double]] = js.undefined
   
-  var msFlexDirection: js.UndefOr[FlexDirectionProperty] = js.native
+  var msFlexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
   
-  var msFlexPositive: js.UndefOr[GlobalsNumber] = js.native
+  var msFlexPositive: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var msFlowFrom: js.UndefOr[MsFlowFromProperty] = js.native
+  var msFlowFrom: js.UndefOr[MsFlowFromProperty] = js.undefined
   
-  var msFlowInto: js.UndefOr[MsFlowIntoProperty] = js.native
+  var msFlowInto: js.UndefOr[MsFlowIntoProperty] = js.undefined
   
-  var msGridColumns: js.UndefOr[MsGridColumnsProperty[String | Double]] = js.native
+  var msGridColumns: js.UndefOr[MsGridColumnsProperty[String | Double]] = js.undefined
   
-  var msGridRows: js.UndefOr[MsGridRowsProperty[String | Double]] = js.native
+  var msGridRows: js.UndefOr[MsGridRowsProperty[String | Double]] = js.undefined
   
-  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjustProperty] = js.native
+  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjustProperty] = js.undefined
   
-  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitCharsProperty] = js.native
+  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitCharsProperty] = js.undefined
   
-  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLinesProperty] = js.native
+  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLinesProperty] = js.undefined
   
-  var msHyphenateLimitZone: js.UndefOr[MsHyphenateLimitZoneProperty[String | Double]] = js.native
+  var msHyphenateLimitZone: js.UndefOr[MsHyphenateLimitZoneProperty[String | Double]] = js.undefined
   
-  var msHyphens: js.UndefOr[HyphensProperty] = js.native
+  var msHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
-  var msImeAlign: js.UndefOr[MsImeAlignProperty] = js.native
+  var msImeAlign: js.UndefOr[MsImeAlignProperty] = js.undefined
   
-  var msImeMode: js.UndefOr[ImeModeProperty] = js.native
+  var msImeMode: js.UndefOr[ImeModeProperty] = js.undefined
   
-  var msJustifySelf: js.UndefOr[JustifySelfProperty] = js.native
+  var msJustifySelf: js.UndefOr[JustifySelfProperty] = js.undefined
   
-  var msLineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var msLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
-  var msOrder: js.UndefOr[GlobalsNumber] = js.native
+  var msOrder: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var msOverflowStyle: js.UndefOr[MsOverflowStyleProperty] = js.native
+  var msOverflowStyle: js.UndefOr[MsOverflowStyleProperty] = js.undefined
   
-  var msOverflowX: js.UndefOr[OverflowXProperty] = js.native
+  var msOverflowX: js.UndefOr[OverflowXProperty] = js.undefined
   
-  var msOverflowY: js.UndefOr[OverflowYProperty] = js.native
+  var msOverflowY: js.UndefOr[OverflowYProperty] = js.undefined
   
-  var msScrollChaining: js.UndefOr[MsScrollChainingProperty] = js.native
+  var msScrollChaining: js.UndefOr[MsScrollChainingProperty] = js.undefined
   
-  var msScrollLimit: js.UndefOr[GlobalsString] = js.native
+  var msScrollLimit: js.UndefOr[GlobalsString] = js.undefined
   
-  var msScrollLimitXMax: js.UndefOr[MsScrollLimitXMaxProperty[String | Double]] = js.native
+  var msScrollLimitXMax: js.UndefOr[MsScrollLimitXMaxProperty[String | Double]] = js.undefined
   
-  var msScrollLimitXMin: js.UndefOr[MsScrollLimitXMinProperty[String | Double]] = js.native
+  var msScrollLimitXMin: js.UndefOr[MsScrollLimitXMinProperty[String | Double]] = js.undefined
   
-  var msScrollLimitYMax: js.UndefOr[MsScrollLimitYMaxProperty[String | Double]] = js.native
+  var msScrollLimitYMax: js.UndefOr[MsScrollLimitYMaxProperty[String | Double]] = js.undefined
   
-  var msScrollLimitYMin: js.UndefOr[MsScrollLimitYMinProperty[String | Double]] = js.native
+  var msScrollLimitYMin: js.UndefOr[MsScrollLimitYMinProperty[String | Double]] = js.undefined
   
-  var msScrollRails: js.UndefOr[MsScrollRailsProperty] = js.native
+  var msScrollRails: js.UndefOr[MsScrollRailsProperty] = js.undefined
   
-  var msScrollSnapPointsX: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapPointsX: js.UndefOr[GlobalsString] = js.undefined
   
-  var msScrollSnapPointsY: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapPointsY: js.UndefOr[GlobalsString] = js.undefined
   
-  var msScrollSnapType: js.UndefOr[MsScrollSnapTypeProperty] = js.native
+  var msScrollSnapType: js.UndefOr[MsScrollSnapTypeProperty] = js.undefined
   
-  var msScrollSnapX: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapX: js.UndefOr[GlobalsString] = js.undefined
   
-  var msScrollSnapY: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapY: js.UndefOr[GlobalsString] = js.undefined
   
-  var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty] = js.native
+  var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty] = js.undefined
   
-  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.native
+  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.undefined
   
-  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.native
+  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.undefined
   
-  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.native
+  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.undefined
   
-  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.native
+  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.undefined
   
-  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.native
+  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.undefined
   
-  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.native
+  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.undefined
   
-  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.native
+  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
   
-  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.native
+  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
   
-  var msTextAutospace: js.UndefOr[MsTextAutospaceProperty] = js.native
+  var msTextAutospace: js.UndefOr[MsTextAutospaceProperty] = js.undefined
   
-  var msTextCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.native
+  var msTextCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
-  var msTextOverflow: js.UndefOr[TextOverflowProperty] = js.native
+  var msTextOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   
-  var msTouchAction: js.UndefOr[TouchActionProperty] = js.native
+  var msTouchAction: js.UndefOr[TouchActionProperty] = js.undefined
   
-  var msTouchSelect: js.UndefOr[MsTouchSelectProperty] = js.native
+  var msTouchSelect: js.UndefOr[MsTouchSelectProperty] = js.undefined
   
-  var msTransform: js.UndefOr[TransformProperty] = js.native
+  var msTransform: js.UndefOr[TransformProperty] = js.undefined
   
-  var msTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.native
+  var msTransformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.undefined
   
-  var msTransition: js.UndefOr[TransitionProperty] = js.native
+  var msTransition: js.UndefOr[TransitionProperty] = js.undefined
   
-  var msTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var msTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var msTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var msTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
-  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
-  var msUserSelect: js.UndefOr[MsUserSelectProperty] = js.native
+  var msUserSelect: js.UndefOr[MsUserSelectProperty] = js.undefined
   
-  var msWordBreak: js.UndefOr[WordBreakProperty] = js.native
+  var msWordBreak: js.UndefOr[WordBreakProperty] = js.undefined
   
-  var msWrapFlow: js.UndefOr[MsWrapFlowProperty] = js.native
+  var msWrapFlow: js.UndefOr[MsWrapFlowProperty] = js.undefined
   
-  var msWrapMargin: js.UndefOr[MsWrapMarginProperty[String | Double]] = js.native
+  var msWrapMargin: js.UndefOr[MsWrapMarginProperty[String | Double]] = js.undefined
   
-  var msWrapThrough: js.UndefOr[MsWrapThroughProperty] = js.native
+  var msWrapThrough: js.UndefOr[MsWrapThroughProperty] = js.undefined
   
-  var msWritingMode: js.UndefOr[WritingModeProperty] = js.native
+  var msWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
   
-  var objectFit: js.UndefOr[ObjectFitProperty] = js.native
+  var objectFit: js.UndefOr[ObjectFitProperty] = js.undefined
   
-  var objectPosition: js.UndefOr[ObjectPositionProperty[String | Double]] = js.native
+  var objectPosition: js.UndefOr[ObjectPositionProperty[String | Double]] = js.undefined
   
-  var offset: js.UndefOr[OffsetProperty[String | Double]] = js.native
+  var offset: js.UndefOr[OffsetProperty[String | Double]] = js.undefined
   
-  var offsetAnchor: js.UndefOr[OffsetAnchorProperty[String | Double]] = js.native
+  var offsetAnchor: js.UndefOr[OffsetAnchorProperty[String | Double]] = js.undefined
   
-  var offsetBlock: js.UndefOr[InsetBlockProperty[String | Double]] = js.native
+  var offsetBlock: js.UndefOr[InsetBlockProperty[String | Double]] = js.undefined
   
-  var offsetBlockEnd: js.UndefOr[InsetBlockEndProperty[String | Double]] = js.native
+  var offsetBlockEnd: js.UndefOr[InsetBlockEndProperty[String | Double]] = js.undefined
   
-  var offsetBlockStart: js.UndefOr[InsetBlockStartProperty[String | Double]] = js.native
+  var offsetBlockStart: js.UndefOr[InsetBlockStartProperty[String | Double]] = js.undefined
   
-  var offsetDistance: js.UndefOr[OffsetDistanceProperty[String | Double]] = js.native
+  var offsetDistance: js.UndefOr[OffsetDistanceProperty[String | Double]] = js.undefined
   
-  var offsetInline: js.UndefOr[InsetInlineProperty[String | Double]] = js.native
+  var offsetInline: js.UndefOr[InsetInlineProperty[String | Double]] = js.undefined
   
-  var offsetInlineEnd: js.UndefOr[InsetInlineEndProperty[String | Double]] = js.native
+  var offsetInlineEnd: js.UndefOr[InsetInlineEndProperty[String | Double]] = js.undefined
   
-  var offsetInlineStart: js.UndefOr[InsetInlineStartProperty[String | Double]] = js.native
+  var offsetInlineStart: js.UndefOr[InsetInlineStartProperty[String | Double]] = js.undefined
   
-  var offsetPath: js.UndefOr[OffsetPathProperty] = js.native
+  var offsetPath: js.UndefOr[OffsetPathProperty] = js.undefined
   
-  var offsetRotate: js.UndefOr[OffsetRotateProperty] = js.native
+  var offsetRotate: js.UndefOr[OffsetRotateProperty] = js.undefined
   
-  var offsetRotation: js.UndefOr[OffsetRotateProperty] = js.native
+  var offsetRotation: js.UndefOr[OffsetRotateProperty] = js.undefined
   
-  var opacity: js.UndefOr[OpacityProperty] = js.native
+  var opacity: js.UndefOr[OpacityProperty] = js.undefined
   
-  var order: js.UndefOr[GlobalsNumber] = js.native
+  var order: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var orphans: js.UndefOr[GlobalsNumber] = js.native
+  var orphans: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var outline: js.UndefOr[OutlineProperty[String | Double]] = js.native
+  var outline: js.UndefOr[OutlineProperty[String | Double]] = js.undefined
   
-  var outlineColor: js.UndefOr[OutlineColorProperty] = js.native
+  var outlineColor: js.UndefOr[OutlineColorProperty] = js.undefined
   
-  var outlineOffset: js.UndefOr[OutlineOffsetProperty[String | Double]] = js.native
+  var outlineOffset: js.UndefOr[OutlineOffsetProperty[String | Double]] = js.undefined
   
-  var outlineStyle: js.UndefOr[OutlineStyleProperty] = js.native
+  var outlineStyle: js.UndefOr[OutlineStyleProperty] = js.undefined
   
-  var outlineWidth: js.UndefOr[OutlineWidthProperty[String | Double]] = js.native
+  var outlineWidth: js.UndefOr[OutlineWidthProperty[String | Double]] = js.undefined
   
-  var overflow: js.UndefOr[OverflowProperty] = js.native
+  var overflow: js.UndefOr[OverflowProperty] = js.undefined
   
-  var overflowAnchor: js.UndefOr[OverflowAnchorProperty] = js.native
+  var overflowAnchor: js.UndefOr[OverflowAnchorProperty] = js.undefined
   
-  var overflowBlock: js.UndefOr[OverflowBlockProperty] = js.native
+  var overflowBlock: js.UndefOr[OverflowBlockProperty] = js.undefined
   
-  var overflowClipBox: js.UndefOr[OverflowClipBoxProperty] = js.native
+  var overflowClipBox: js.UndefOr[OverflowClipBoxProperty] = js.undefined
   
-  var overflowInline: js.UndefOr[OverflowInlineProperty] = js.native
+  var overflowInline: js.UndefOr[OverflowInlineProperty] = js.undefined
   
-  var overflowWrap: js.UndefOr[OverflowWrapProperty] = js.native
+  var overflowWrap: js.UndefOr[OverflowWrapProperty] = js.undefined
   
-  var overflowX: js.UndefOr[OverflowXProperty] = js.native
+  var overflowX: js.UndefOr[OverflowXProperty] = js.undefined
   
-  var overflowY: js.UndefOr[OverflowYProperty] = js.native
+  var overflowY: js.UndefOr[OverflowYProperty] = js.undefined
   
-  var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty] = js.native
+  var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty] = js.undefined
   
-  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty] = js.native
+  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty] = js.undefined
   
-  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty] = js.native
+  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty] = js.undefined
   
-  var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorXProperty] = js.native
+  var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorXProperty] = js.undefined
   
-  var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorYProperty] = js.native
+  var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorYProperty] = js.undefined
   
-  var padding: js.UndefOr[PaddingProperty[String | Double]] = js.native
+  var padding: js.UndefOr[PaddingProperty[String | Double]] = js.undefined
   
-  var paddingBlock: js.UndefOr[PaddingBlockProperty[String | Double]] = js.native
+  var paddingBlock: js.UndefOr[PaddingBlockProperty[String | Double]] = js.undefined
   
-  var paddingBlockEnd: js.UndefOr[PaddingBlockEndProperty[String | Double]] = js.native
+  var paddingBlockEnd: js.UndefOr[PaddingBlockEndProperty[String | Double]] = js.undefined
   
-  var paddingBlockStart: js.UndefOr[PaddingBlockStartProperty[String | Double]] = js.native
+  var paddingBlockStart: js.UndefOr[PaddingBlockStartProperty[String | Double]] = js.undefined
   
-  var paddingBottom: js.UndefOr[PaddingBottomProperty[String | Double]] = js.native
+  var paddingBottom: js.UndefOr[PaddingBottomProperty[String | Double]] = js.undefined
   
-  var paddingInline: js.UndefOr[PaddingInlineProperty[String | Double]] = js.native
+  var paddingInline: js.UndefOr[PaddingInlineProperty[String | Double]] = js.undefined
   
-  var paddingInlineEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.native
+  var paddingInlineEnd: js.UndefOr[PaddingInlineEndProperty[String | Double]] = js.undefined
   
-  var paddingInlineStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.native
+  var paddingInlineStart: js.UndefOr[PaddingInlineStartProperty[String | Double]] = js.undefined
   
-  var paddingLeft: js.UndefOr[PaddingLeftProperty[String | Double]] = js.native
+  var paddingLeft: js.UndefOr[PaddingLeftProperty[String | Double]] = js.undefined
   
-  var paddingRight: js.UndefOr[PaddingRightProperty[String | Double]] = js.native
+  var paddingRight: js.UndefOr[PaddingRightProperty[String | Double]] = js.undefined
   
-  var paddingTop: js.UndefOr[PaddingTopProperty[String | Double]] = js.native
+  var paddingTop: js.UndefOr[PaddingTopProperty[String | Double]] = js.undefined
   
-  var pageBreakAfter: js.UndefOr[PageBreakAfterProperty] = js.native
+  var pageBreakAfter: js.UndefOr[PageBreakAfterProperty] = js.undefined
   
-  var pageBreakBefore: js.UndefOr[PageBreakBeforeProperty] = js.native
+  var pageBreakBefore: js.UndefOr[PageBreakBeforeProperty] = js.undefined
   
-  var pageBreakInside: js.UndefOr[PageBreakInsideProperty] = js.native
+  var pageBreakInside: js.UndefOr[PageBreakInsideProperty] = js.undefined
   
-  var paintOrder: js.UndefOr[PaintOrderProperty] = js.native
+  var paintOrder: js.UndefOr[PaintOrderProperty] = js.undefined
   
-  var perspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.native
+  var perspective: js.UndefOr[PerspectiveProperty[String | Double]] = js.undefined
   
-  var perspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.native
+  var perspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[String | Double]] = js.undefined
   
-  var placeContent: js.UndefOr[PlaceContentProperty] = js.native
+  var placeContent: js.UndefOr[PlaceContentProperty] = js.undefined
   
-  var placeItems: js.UndefOr[PlaceItemsProperty] = js.native
+  var placeItems: js.UndefOr[PlaceItemsProperty] = js.undefined
   
-  var placeSelf: js.UndefOr[PlaceSelfProperty] = js.native
+  var placeSelf: js.UndefOr[PlaceSelfProperty] = js.undefined
   
-  var pointerEvents: js.UndefOr[PointerEventsProperty] = js.native
+  var pointerEvents: js.UndefOr[PointerEventsProperty] = js.undefined
   
-  var position: js.UndefOr[PositionProperty] = js.native
+  var position: js.UndefOr[PositionProperty] = js.undefined
   
-  var quotes: js.UndefOr[QuotesProperty] = js.native
+  var quotes: js.UndefOr[QuotesProperty] = js.undefined
   
-  var resize: js.UndefOr[ResizeProperty] = js.native
+  var resize: js.UndefOr[ResizeProperty] = js.undefined
   
-  var right: js.UndefOr[RightProperty[String | Double]] = js.native
+  var right: js.UndefOr[RightProperty[String | Double]] = js.undefined
   
-  var rotate: js.UndefOr[RotateProperty] = js.native
+  var rotate: js.UndefOr[RotateProperty] = js.undefined
   
-  var rowGap: js.UndefOr[RowGapProperty[String | Double]] = js.native
+  var rowGap: js.UndefOr[RowGapProperty[String | Double]] = js.undefined
   
-  var rubyAlign: js.UndefOr[RubyAlignProperty] = js.native
+  var rubyAlign: js.UndefOr[RubyAlignProperty] = js.undefined
   
-  var rubyMerge: js.UndefOr[RubyMergeProperty] = js.native
+  var rubyMerge: js.UndefOr[RubyMergeProperty] = js.undefined
   
-  var rubyPosition: js.UndefOr[RubyPositionProperty] = js.native
+  var rubyPosition: js.UndefOr[RubyPositionProperty] = js.undefined
   
-  var scale: js.UndefOr[ScaleProperty] = js.native
+  var scale: js.UndefOr[ScaleProperty] = js.undefined
   
-  var scrollBehavior: js.UndefOr[ScrollBehaviorProperty] = js.native
+  var scrollBehavior: js.UndefOr[ScrollBehaviorProperty] = js.undefined
   
-  var scrollMargin: js.UndefOr[ScrollMarginProperty[String | Double]] = js.native
+  var scrollMargin: js.UndefOr[ScrollMarginProperty[String | Double]] = js.undefined
   
-  var scrollMarginBlock: js.UndefOr[ScrollMarginBlockProperty[String | Double]] = js.native
+  var scrollMarginBlock: js.UndefOr[ScrollMarginBlockProperty[String | Double]] = js.undefined
   
-  var scrollMarginBlockEnd: js.UndefOr[ScrollMarginBlockEndProperty[String | Double]] = js.native
+  var scrollMarginBlockEnd: js.UndefOr[ScrollMarginBlockEndProperty[String | Double]] = js.undefined
   
-  var scrollMarginBlockStart: js.UndefOr[ScrollMarginBlockStartProperty[String | Double]] = js.native
+  var scrollMarginBlockStart: js.UndefOr[ScrollMarginBlockStartProperty[String | Double]] = js.undefined
   
-  var scrollMarginBottom: js.UndefOr[ScrollMarginBottomProperty[String | Double]] = js.native
+  var scrollMarginBottom: js.UndefOr[ScrollMarginBottomProperty[String | Double]] = js.undefined
   
-  var scrollMarginInline: js.UndefOr[ScrollMarginInlineProperty[String | Double]] = js.native
+  var scrollMarginInline: js.UndefOr[ScrollMarginInlineProperty[String | Double]] = js.undefined
   
-  var scrollMarginInlineEnd: js.UndefOr[ScrollMarginInlineEndProperty[String | Double]] = js.native
+  var scrollMarginInlineEnd: js.UndefOr[ScrollMarginInlineEndProperty[String | Double]] = js.undefined
   
-  var scrollMarginInlineStart: js.UndefOr[ScrollMarginInlineStartProperty[String | Double]] = js.native
+  var scrollMarginInlineStart: js.UndefOr[ScrollMarginInlineStartProperty[String | Double]] = js.undefined
   
-  var scrollMarginLeft: js.UndefOr[ScrollMarginLeftProperty[String | Double]] = js.native
+  var scrollMarginLeft: js.UndefOr[ScrollMarginLeftProperty[String | Double]] = js.undefined
   
-  var scrollMarginRight: js.UndefOr[ScrollMarginRightProperty[String | Double]] = js.native
+  var scrollMarginRight: js.UndefOr[ScrollMarginRightProperty[String | Double]] = js.undefined
   
-  var scrollMarginTop: js.UndefOr[ScrollMarginTopProperty[String | Double]] = js.native
+  var scrollMarginTop: js.UndefOr[ScrollMarginTopProperty[String | Double]] = js.undefined
   
-  var scrollPadding: js.UndefOr[ScrollPaddingProperty[String | Double]] = js.native
+  var scrollPadding: js.UndefOr[ScrollPaddingProperty[String | Double]] = js.undefined
   
-  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlockProperty[String | Double]] = js.native
+  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlockProperty[String | Double]] = js.undefined
   
-  var scrollPaddingBlockEnd: js.UndefOr[ScrollPaddingBlockEndProperty[String | Double]] = js.native
+  var scrollPaddingBlockEnd: js.UndefOr[ScrollPaddingBlockEndProperty[String | Double]] = js.undefined
   
-  var scrollPaddingBlockStart: js.UndefOr[ScrollPaddingBlockStartProperty[String | Double]] = js.native
+  var scrollPaddingBlockStart: js.UndefOr[ScrollPaddingBlockStartProperty[String | Double]] = js.undefined
   
-  var scrollPaddingBottom: js.UndefOr[ScrollPaddingBottomProperty[String | Double]] = js.native
+  var scrollPaddingBottom: js.UndefOr[ScrollPaddingBottomProperty[String | Double]] = js.undefined
   
-  var scrollPaddingInline: js.UndefOr[ScrollPaddingInlineProperty[String | Double]] = js.native
+  var scrollPaddingInline: js.UndefOr[ScrollPaddingInlineProperty[String | Double]] = js.undefined
   
-  var scrollPaddingInlineEnd: js.UndefOr[ScrollPaddingInlineEndProperty[String | Double]] = js.native
+  var scrollPaddingInlineEnd: js.UndefOr[ScrollPaddingInlineEndProperty[String | Double]] = js.undefined
   
-  var scrollPaddingInlineStart: js.UndefOr[ScrollPaddingInlineStartProperty[String | Double]] = js.native
+  var scrollPaddingInlineStart: js.UndefOr[ScrollPaddingInlineStartProperty[String | Double]] = js.undefined
   
-  var scrollPaddingLeft: js.UndefOr[ScrollPaddingLeftProperty[String | Double]] = js.native
+  var scrollPaddingLeft: js.UndefOr[ScrollPaddingLeftProperty[String | Double]] = js.undefined
   
-  var scrollPaddingRight: js.UndefOr[ScrollPaddingRightProperty[String | Double]] = js.native
+  var scrollPaddingRight: js.UndefOr[ScrollPaddingRightProperty[String | Double]] = js.undefined
   
-  var scrollPaddingTop: js.UndefOr[ScrollPaddingTopProperty[String | Double]] = js.native
+  var scrollPaddingTop: js.UndefOr[ScrollPaddingTopProperty[String | Double]] = js.undefined
   
-  var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty] = js.native
+  var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty] = js.undefined
   
-  var scrollSnapCoordinate: js.UndefOr[ScrollSnapCoordinateProperty[String | Double]] = js.native
+  var scrollSnapCoordinate: js.UndefOr[ScrollSnapCoordinateProperty[String | Double]] = js.undefined
   
-  var scrollSnapDestination: js.UndefOr[ScrollSnapDestinationProperty[String | Double]] = js.native
+  var scrollSnapDestination: js.UndefOr[ScrollSnapDestinationProperty[String | Double]] = js.undefined
   
-  var scrollSnapMargin: js.UndefOr[ScrollMarginProperty[String | Double]] = js.native
+  var scrollSnapMargin: js.UndefOr[ScrollMarginProperty[String | Double]] = js.undefined
   
-  var scrollSnapMarginBottom: js.UndefOr[ScrollMarginBottomProperty[String | Double]] = js.native
+  var scrollSnapMarginBottom: js.UndefOr[ScrollMarginBottomProperty[String | Double]] = js.undefined
   
-  var scrollSnapMarginLeft: js.UndefOr[ScrollMarginLeftProperty[String | Double]] = js.native
+  var scrollSnapMarginLeft: js.UndefOr[ScrollMarginLeftProperty[String | Double]] = js.undefined
   
-  var scrollSnapMarginRight: js.UndefOr[ScrollMarginRightProperty[String | Double]] = js.native
+  var scrollSnapMarginRight: js.UndefOr[ScrollMarginRightProperty[String | Double]] = js.undefined
   
-  var scrollSnapMarginTop: js.UndefOr[ScrollMarginTopProperty[String | Double]] = js.native
+  var scrollSnapMarginTop: js.UndefOr[ScrollMarginTopProperty[String | Double]] = js.undefined
   
-  var scrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty] = js.native
+  var scrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty] = js.undefined
   
-  var scrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty] = js.native
+  var scrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty] = js.undefined
   
-  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty] = js.native
+  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty] = js.undefined
   
-  var scrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.native
+  var scrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.undefined
   
-  var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeXProperty] = js.native
+  var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeXProperty] = js.undefined
   
-  var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty] = js.native
+  var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty] = js.undefined
   
-  var scrollbarColor: js.UndefOr[ScrollbarColorProperty] = js.native
+  var scrollbarColor: js.UndefOr[ScrollbarColorProperty] = js.undefined
   
-  var scrollbarGutter: js.UndefOr[ScrollbarGutterProperty] = js.native
+  var scrollbarGutter: js.UndefOr[ScrollbarGutterProperty] = js.undefined
   
-  var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.native
+  var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
   
-  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty] = js.native
+  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty] = js.undefined
   
-  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty] = js.native
+  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty] = js.undefined
   
-  var shapeMargin: js.UndefOr[ShapeMarginProperty[String | Double]] = js.native
+  var shapeMargin: js.UndefOr[ShapeMarginProperty[String | Double]] = js.undefined
   
-  var shapeOutside: js.UndefOr[ShapeOutsideProperty] = js.native
+  var shapeOutside: js.UndefOr[ShapeOutsideProperty] = js.undefined
   
-  var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.native
+  var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.undefined
   
-  var stopColor: js.UndefOr[StopColorProperty] = js.native
+  var stopColor: js.UndefOr[StopColorProperty] = js.undefined
   
-  var stopOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var stopOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var stroke: js.UndefOr[StrokeProperty] = js.native
+  var stroke: js.UndefOr[StrokeProperty] = js.undefined
   
-  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[String | Double]] = js.native
+  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[String | Double]] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[String | Double]] = js.native
+  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[String | Double]] = js.undefined
   
-  var strokeLinecap: js.UndefOr[StrokeLinecapProperty] = js.native
+  var strokeLinecap: js.UndefOr[StrokeLinecapProperty] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty] = js.native
+  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[GlobalsNumber] = js.native
+  var strokeMiterlimit: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var strokeOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var strokeOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var strokeWidth: js.UndefOr[StrokeWidthProperty[String | Double]] = js.native
+  var strokeWidth: js.UndefOr[StrokeWidthProperty[String | Double]] = js.undefined
   
-  var tabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.native
+  var tabSize: js.UndefOr[TabSizeProperty[String | Double]] = js.undefined
   
-  var tableLayout: js.UndefOr[TableLayoutProperty] = js.native
+  var tableLayout: js.UndefOr[TableLayoutProperty] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlignProperty] = js.native
+  var textAlign: js.UndefOr[TextAlignProperty] = js.undefined
   
-  var textAlignLast: js.UndefOr[TextAlignLastProperty] = js.native
+  var textAlignLast: js.UndefOr[TextAlignLastProperty] = js.undefined
   
-  var textAnchor: js.UndefOr[TextAnchorProperty] = js.native
+  var textAnchor: js.UndefOr[TextAnchorProperty] = js.undefined
   
-  var textCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.native
+  var textCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
-  var textCombineUpright: js.UndefOr[TextCombineUprightProperty] = js.native
+  var textCombineUpright: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
-  var textDecoration: js.UndefOr[TextDecorationProperty[String | Double]] = js.native
+  var textDecoration: js.UndefOr[TextDecorationProperty[String | Double]] = js.undefined
   
-  var textDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.native
+  var textDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
   
-  var textDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.native
+  var textDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
   
-  var textDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.native
+  var textDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.undefined
   
-  var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInkProperty] = js.native
+  var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInkProperty] = js.undefined
   
-  var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.native
+  var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
   
-  var textDecorationThickness: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.native
+  var textDecorationThickness: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.undefined
   
-  var textDecorationWidth: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.native
+  var textDecorationWidth: js.UndefOr[TextDecorationThicknessProperty[String | Double]] = js.undefined
   
-  var textEmphasis: js.UndefOr[TextEmphasisProperty] = js.native
+  var textEmphasis: js.UndefOr[TextEmphasisProperty] = js.undefined
   
-  var textEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.native
+  var textEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.undefined
   
-  var textEmphasisPosition: js.UndefOr[GlobalsString] = js.native
+  var textEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
   
-  var textEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.native
+  var textEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.undefined
   
-  var textIndent: js.UndefOr[TextIndentProperty[String | Double]] = js.native
+  var textIndent: js.UndefOr[TextIndentProperty[String | Double]] = js.undefined
   
-  var textJustify: js.UndefOr[TextJustifyProperty] = js.native
+  var textJustify: js.UndefOr[TextJustifyProperty] = js.undefined
   
-  var textOrientation: js.UndefOr[TextOrientationProperty] = js.native
+  var textOrientation: js.UndefOr[TextOrientationProperty] = js.undefined
   
-  var textOverflow: js.UndefOr[TextOverflowProperty] = js.native
+  var textOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   
-  var textRendering: js.UndefOr[TextRenderingProperty] = js.native
+  var textRendering: js.UndefOr[TextRenderingProperty] = js.undefined
   
-  var textShadow: js.UndefOr[TextShadowProperty] = js.native
+  var textShadow: js.UndefOr[TextShadowProperty] = js.undefined
   
-  var textSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.native
+  var textSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   
-  var textTransform: js.UndefOr[TextTransformProperty] = js.native
+  var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
   
-  var textUnderlineOffset: js.UndefOr[TextUnderlineOffsetProperty[String | Double]] = js.native
+  var textUnderlineOffset: js.UndefOr[TextUnderlineOffsetProperty[String | Double]] = js.undefined
   
-  var textUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.native
+  var textUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.undefined
   
-  var top: js.UndefOr[TopProperty[String | Double]] = js.native
+  var top: js.UndefOr[TopProperty[String | Double]] = js.undefined
   
-  var touchAction: js.UndefOr[TouchActionProperty] = js.native
+  var touchAction: js.UndefOr[TouchActionProperty] = js.undefined
   
-  var transform: js.UndefOr[TransformProperty] = js.native
+  var transform: js.UndefOr[TransformProperty] = js.undefined
   
-  var transformBox: js.UndefOr[TransformBoxProperty] = js.native
+  var transformBox: js.UndefOr[TransformBoxProperty] = js.undefined
   
-  var transformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.native
+  var transformOrigin: js.UndefOr[TransformOriginProperty[String | Double]] = js.undefined
   
-  var transformStyle: js.UndefOr[TransformStyleProperty] = js.native
+  var transformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
   
-  var transition: js.UndefOr[TransitionProperty] = js.native
+  var transition: js.UndefOr[TransitionProperty] = js.undefined
   
-  var transitionDelay: js.UndefOr[GlobalsString] = js.native
+  var transitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
-  var transitionDuration: js.UndefOr[GlobalsString] = js.native
+  var transitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
-  var transitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var transitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
-  var transitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var transitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
-  var translate: js.UndefOr[TranslateProperty[String | Double]] = js.native
+  var translate: js.UndefOr[TranslateProperty[String | Double]] = js.undefined
   
-  var unicodeBidi: js.UndefOr[UnicodeBidiProperty] = js.native
+  var unicodeBidi: js.UndefOr[UnicodeBidiProperty] = js.undefined
   
-  var userSelect: js.UndefOr[UserSelectProperty] = js.native
+  var userSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
-  var vectorEffect: js.UndefOr[VectorEffectProperty] = js.native
+  var vectorEffect: js.UndefOr[VectorEffectProperty] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
   
-  var visibility: js.UndefOr[VisibilityProperty] = js.native
+  var visibility: js.UndefOr[VisibilityProperty] = js.undefined
   
-  var whiteSpace: js.UndefOr[WhiteSpaceProperty] = js.native
+  var whiteSpace: js.UndefOr[WhiteSpaceProperty] = js.undefined
   
-  var widows: js.UndefOr[GlobalsNumber] = js.native
+  var widows: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var width: js.UndefOr[WidthProperty[String | Double]] = js.native
+  var width: js.UndefOr[WidthProperty[String | Double]] = js.undefined
   
-  var willChange: js.UndefOr[WillChangeProperty] = js.native
+  var willChange: js.UndefOr[WillChangeProperty] = js.undefined
   
-  var wordBreak: js.UndefOr[WordBreakProperty] = js.native
+  var wordBreak: js.UndefOr[WordBreakProperty] = js.undefined
   
-  var wordSpacing: js.UndefOr[WordSpacingProperty[String | Double]] = js.native
+  var wordSpacing: js.UndefOr[WordSpacingProperty[String | Double]] = js.undefined
   
-  var wordWrap: js.UndefOr[WordWrapProperty] = js.native
+  var wordWrap: js.UndefOr[WordWrapProperty] = js.undefined
   
-  var writingMode: js.UndefOr[WritingModeProperty] = js.native
+  var writingMode: js.UndefOr[WritingModeProperty] = js.undefined
   
-  var zIndex: js.UndefOr[ZIndexProperty] = js.native
+  var zIndex: js.UndefOr[ZIndexProperty] = js.undefined
   
-  var zoom: js.UndefOr[ZoomProperty] = js.native
+  var zoom: js.UndefOr[ZoomProperty] = js.undefined
 }
 object CSSPropsWithoutBackground {
   

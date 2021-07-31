@@ -2,60 +2,58 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExecutionOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that id entifies the execution.
     */
-  var executionArn: Arn = js.native
+  var executionArn: Arn
   
   /**
     * The string that contains the JSON input data of the execution. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var input: js.UndefOr[SensitiveData] = js.native
+  var input: js.UndefOr[SensitiveData] = js.undefined
   
-  var inputDetails: js.UndefOr[CloudWatchEventsExecutionDataDetails] = js.native
+  var inputDetails: js.UndefOr[CloudWatchEventsExecutionDataDetails] = js.undefined
   
   /**
     * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The JSON output data of the execution. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.  This field is set only if the execution succeeds. If the execution fails, this field is null. 
     */
-  var output: js.UndefOr[SensitiveData] = js.native
+  var output: js.UndefOr[SensitiveData] = js.undefined
   
-  var outputDetails: js.UndefOr[CloudWatchEventsExecutionDataDetails] = js.native
+  var outputDetails: js.UndefOr[CloudWatchEventsExecutionDataDetails] = js.undefined
   
   /**
     * The date the execution is started.
     */
-  var startDate: Timestamp = js.native
+  var startDate: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the executed stated machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * The current status of the execution.
     */
-  var status: ExecutionStatus = js.native
+  var status: ExecutionStatus
   
   /**
     * If the execution has already ended, the date the execution stopped.
     */
-  var stopDate: js.UndefOr[Timestamp] = js.native
+  var stopDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The AWS X-Ray trace header which was passed to the execution.
     */
-  var traceHeader: js.UndefOr[TraceHeader] = js.native
+  var traceHeader: js.UndefOr[TraceHeader] = js.undefined
 }
 object DescribeExecutionOutput {
   

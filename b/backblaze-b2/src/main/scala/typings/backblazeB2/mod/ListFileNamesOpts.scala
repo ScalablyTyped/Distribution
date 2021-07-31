@@ -2,21 +2,21 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListFileNamesOpts extends CommonArgs {
+trait ListFileNamesOpts
+  extends StObject
+     with CommonArgs {
   
-  var bucketId: String = js.native
+  var bucketId: String
   
-  var delimiter: String = js.native
+  var delimiter: String
   
-  var maxFileCount: Double = js.native
+  var maxFileCount: Double
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var startFileName: String = js.native
+  var startFileName: String
 }
 object ListFileNamesOpts {
   

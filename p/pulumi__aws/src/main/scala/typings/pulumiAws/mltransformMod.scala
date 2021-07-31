@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mltransformMod {
@@ -107,6 +106,10 @@ object mltransformMod {
   /* static members */
   object MLTransform {
     
+    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MLTransform resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -116,90 +119,84 @@ object mltransformMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MLTransform = js.native
-    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MLTransform = js.native
-    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MLTransformState): MLTransform = js.native
-    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MLTransformState, opts: CustomResourceOptions): MLTransform = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MLTransformState): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MLTransformState, opts: CustomResourceOptions): MLTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MLTransform]
     
     /**
       * Returns true if the given object is an instance of MLTransform.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/mltransform", "MLTransform.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/mltransform.MLTransform */ Boolean]
   }
   
-  @js.native
   trait MLTransformArgs extends StObject {
     
     /**
       * Description of the ML Transform.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of glue to use, for example "1.0". For information about available versions, see the [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of AWS Glue table definitions used by the transform. see Input Record Tables.
       */
-    val inputRecordTables: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]] = js.native
+    val inputRecordTables: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]
     
     /**
       * The number of AWS Glue data processing units (DPUs) that are allocated to task runs for this transform. You can allocate from `2` to `100` DPUs; the default is `10`. `maxCapacity` is a mutually exclusive option with `numberOfWorkers` and `workerType`.
       */
-    val maxCapacity: js.UndefOr[Input[Double]] = js.native
+    val maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum number of times to retry this ML Transform if it fails.
       */
-    val maxRetries: js.UndefOr[Input[Double]] = js.native
+    val maxRetries: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this ML Transform. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of workers of a defined `workerType` that are allocated when an ML Transform runs. Required with `workerType`.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The algorithmic parameters that are specific to the transform type used. Conditionally dependent on the transform type. see Parameters.
       */
-    val parameters: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters] = js.native
+    val parameters: Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]
     
     /**
       * The ARN of the IAM role associated with this ML Transform.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ML Transform timeout in minutes. The default is 2880 minutes (48 hours).
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated when an ML Transform runs. Accepts a value of `Standard`, `G.1X`, or `G.2X`. Required with `numberOfWorkers`.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
   }
   object MLTransformArgs {
     
@@ -284,85 +281,84 @@ object mltransformMod {
     }
   }
   
-  @js.native
   trait MLTransformState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Glue ML Transform.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the ML Transform.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of glue to use, for example "1.0". For information about available versions, see the [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of AWS Glue table definitions used by the transform. see Input Record Tables.
       */
     val inputRecordTables: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformInputRecordTable]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The number of labels available for this transform.
       */
-    val labelCount: js.UndefOr[Input[Double]] = js.native
+    val labelCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of AWS Glue data processing units (DPUs) that are allocated to task runs for this transform. You can allocate from `2` to `100` DPUs; the default is `10`. `maxCapacity` is a mutually exclusive option with `numberOfWorkers` and `workerType`.
       */
-    val maxCapacity: js.UndefOr[Input[Double]] = js.native
+    val maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum number of times to retry this ML Transform if it fails.
       */
-    val maxRetries: js.UndefOr[Input[Double]] = js.native
+    val maxRetries: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this ML Transform. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of workers of a defined `workerType` that are allocated when an ML Transform runs. Required with `workerType`.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The algorithmic parameters that are specific to the transform type used. Conditionally dependent on the transform type. see Parameters.
       */
-    val parameters: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]] = js.native
+    val parameters: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.MLTransformParameters]] = js.undefined
     
     /**
       * The ARN of the IAM role associated with this ML Transform.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object that represents the schema that this transform accepts. see Schema.
       */
-    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]]]] = js.native
+    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.MLTransformSchema]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ML Transform timeout in minutes. The default is 2880 minutes (48 hours).
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated when an ML Transform runs. Accepts a value of `Standard`, `G.1X`, or `G.2X`. Required with `numberOfWorkers`.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
   }
   object MLTransformState {
     

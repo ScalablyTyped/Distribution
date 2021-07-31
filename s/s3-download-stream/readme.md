@@ -12,7 +12,7 @@ s3 download streams
 | Keywords           | s3 |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 483732 |
+| # downloads        | 536305 |
 | # stars            | 0 |
 
 ## Links

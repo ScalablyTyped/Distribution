@@ -10,9 +10,9 @@ A well-tested UTF-8 encoder/decoder written in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | utf8 |
 | Keywords           | charset, encoding, unicode, utf8 |
-| # releases         | 1 |
-| # dependents       | 541 |
-| # downloads        | 24081966 |
+| # releases         | 0 |
+| # dependents       | 593 |
+| # downloads        | 26421219 |
 | # stars            | 15 |
 
 ## Links

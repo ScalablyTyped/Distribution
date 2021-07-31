@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,17 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.form.component.GridControl
   * @see com.sun.star.form.control.GridControl
   */
-@js.native
-trait XGrid extends XInterface {
+trait XGrid
+  extends StObject
+     with XInterface {
   
   /** retrieves the current column position. */
-  var CurrentColumnPosition: Double = js.native
+  var CurrentColumnPosition: Double
   
   /** retrieves the current column position. */
-  def getCurrentColumnPosition(): Double = js.native
+  def getCurrentColumnPosition(): Double
   
   /** sets the current column position. */
-  def setCurrentColumnPosition(nPos: Double): Unit = js.native
+  def setCurrentColumnPosition(nPos: Double): Unit
 }
 object XGrid {
   

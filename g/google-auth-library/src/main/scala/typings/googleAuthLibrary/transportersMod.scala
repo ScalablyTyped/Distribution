@@ -7,7 +7,6 @@ import typings.gaxios.mod.GaxiosError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportersMod {
@@ -63,8 +62,8 @@ object transportersMod {
   @js.native
   trait Transporter extends StObject {
     
-    def request[T](opts: GaxiosOptions): GaxiosPromise[_] | Unit = js.native
-    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): GaxiosPromise[_] | Unit = js.native
+    def request[T](opts: GaxiosOptions): GaxiosPromise[js.Any] | Unit = js.native
+    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): GaxiosPromise[js.Any] | Unit = js.native
     @JSName("request")
     def request_T_GaxiosPromise[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
     @JSName("request")

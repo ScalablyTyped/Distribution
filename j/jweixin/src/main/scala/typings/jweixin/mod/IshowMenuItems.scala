@@ -2,13 +2,13 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IshowMenuItems extends BaseParams {
+trait IshowMenuItems
+  extends StObject
+     with BaseParams {
   
-  var menuList: typings.jweixin.mod.menuList = js.native
+  var menuList: typings.jweixin.mod.menuList
 }
 object IshowMenuItems {
   

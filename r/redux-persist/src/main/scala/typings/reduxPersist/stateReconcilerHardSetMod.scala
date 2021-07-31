@@ -2,12 +2,14 @@ package typings.reduxPersist
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateReconcilerHardSetMod {
   
-  @JSImport("redux-persist/lib/stateReconciler/hardSet", JSImport.Default)
+  @JSImport("redux-persist/lib/stateReconciler/hardSet", JSImport.Namespace)
   @js.native
-  def default[S](inboundState: S): S = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[S](inboundState: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any]).asInstanceOf[S]
 }

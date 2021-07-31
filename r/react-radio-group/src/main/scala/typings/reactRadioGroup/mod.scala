@@ -17,7 +17,6 @@ import typings.std.HTMLInputElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,17 +34,17 @@ object mod {
     
     @JSImport("react-radio-group", "Radio")
     @js.native
-    val ^ : ComponentClass[RadioProps, ComponentState] = js.native
+    val ^ : js.Object & (ComponentClass[RadioProps, ComponentState]) = js.native
     
     type RadioProps = (Omit[
         InputHTMLAttributes[HTMLInputElement], 
         value | name | role | `type` | `aria-checked`
-      ]) with Value
+      ]) & Value
     
-    type _To = ComponentClass[RadioProps, ComponentState]
+    type _To = js.Object & (ComponentClass[RadioProps, ComponentState])
     
     /* This means you don't have to write `^`, but can instead just say `Radio.foo` */
-    override def _to: ComponentClass[RadioProps, ComponentState] = ^
+    override def _to: js.Object & (ComponentClass[RadioProps, ComponentState]) = ^
   }
   
   object RadioGroup extends Shortcut {
@@ -61,14 +60,14 @@ object mod {
     
     @JSImport("react-radio-group", "RadioGroup")
     @js.native
-    val ^ : ComponentClass[RadioGroupProps, ComponentState] = js.native
+    val ^ : js.Object & (ComponentClass[RadioGroupProps, ComponentState]) = js.native
     
-    type RadioGroupProps = (Omit[HTMLProps[_], onChange]) with typings.reactRadioGroup.anon.Component
+    type RadioGroupProps = (Omit[HTMLProps[js.Any], onChange]) & typings.reactRadioGroup.anon.Component
     
-    type _To = ComponentClass[RadioGroupProps, ComponentState]
+    type _To = js.Object & (ComponentClass[RadioGroupProps, ComponentState])
     
     /* This means you don't have to write `^`, but can instead just say `RadioGroup.foo` */
-    override def _to: ComponentClass[RadioGroupProps, ComponentState] = ^
+    override def _to: js.Object & (ComponentClass[RadioGroupProps, ComponentState]) = ^
   }
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[

@@ -2,30 +2,28 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of downloading accounts in batch.
   */
-@js.native
 trait SchemaDownloadAccountResponse extends StObject {
   
   /**
     * The fixed string &quot;identitytoolkit#DownloadAccountResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The next page token. To be used in a subsequent request to return the
     * next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The user accounts data.
     */
-  var users: js.UndefOr[js.Array[SchemaUserInfo]] = js.native
+  var users: js.UndefOr[js.Array[SchemaUserInfo]] = js.undefined
 }
 object SchemaDownloadAccountResponse {
   

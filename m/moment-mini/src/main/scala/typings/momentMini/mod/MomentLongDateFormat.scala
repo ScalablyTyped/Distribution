@@ -2,35 +2,33 @@ package typings.momentMini.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentLongDateFormat extends StObject {
   
-  var L: String = js.native
+  var L: String
   
-  var LL: String = js.native
+  var LL: String
   
-  var LLL: String = js.native
+  var LLL: String
   
-  var LLLL: String = js.native
+  var LLLL: String
   
-  var LT: String = js.native
+  var LT: String
   
-  var LTS: String = js.native
+  var LTS: String
   
-  var l: js.UndefOr[String] = js.native
+  var l: js.UndefOr[String] = js.undefined
   
-  var ll: js.UndefOr[String] = js.native
+  var ll: js.UndefOr[String] = js.undefined
   
-  var lll: js.UndefOr[String] = js.native
+  var lll: js.UndefOr[String] = js.undefined
   
-  var llll: js.UndefOr[String] = js.native
+  var llll: js.UndefOr[String] = js.undefined
   
-  var lt: js.UndefOr[String] = js.native
+  var lt: js.UndefOr[String] = js.undefined
   
-  var lts: js.UndefOr[String] = js.native
+  var lts: js.UndefOr[String] = js.undefined
 }
 object MomentLongDateFormat {
   

@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object java_ {
@@ -64,14 +63,15 @@ object java_ {
     * ( _exit), the shared library is corrupted, so that the symbols for JNI_GetDefaultVMInitArgs or JNI_CreateJavaVM cannot be found, etc.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait JavaVMCreationFailureException extends Exception {
+  trait JavaVMCreationFailureException
+    extends StObject
+       with Exception {
     
     /**
       * contains an error code that reflects the returned error code of JNI_CreateJavaVM or other errors. A negative value represents the returned error code
       * of JNI_CreateJavaVM. All other values indicate a different cause.
       */
-    var ErrorCode: Double = js.native
+    var ErrorCode: Double
   }
   object JavaVMCreationFailureException {
     
@@ -101,11 +101,12 @@ object java_ {
     * This happens when a user moves or deletes a Java installation after the office has been configured to use that Java installation.
     * @since OOo 1.1.2
     */
-  @js.native
-  trait MissingJavaRuntimeException extends Exception {
+  trait MissingJavaRuntimeException
+    extends StObject
+       with Exception {
     
     /** contains the path to the runtime lib as file URL. */
-    var URLRuntimeLib: String = js.native
+    var URLRuntimeLib: String
   }
   object MissingJavaRuntimeException {
     
@@ -130,17 +131,18 @@ object java_ {
   type RestartRequiredException = JavaInitializationException
   
   /** indicates that an operation involving Java (probably executing Java code) failed due to a wrong Java version. */
-  @js.native
-  trait WrongJavaVersionException extends Exception {
+  trait WrongJavaVersionException
+    extends StObject
+       with Exception {
     
     /** contains the Java version that has been detected, or is left empty if this is unknown. */
-    var DetectedVersion: String = js.native
+    var DetectedVersion: String
     
     /** contains the highest Java version for which the operation would succeed, or is left empty if this is unknown. */
-    var HighestSupportedVersion: String = js.native
+    var HighestSupportedVersion: String
     
     /** contains the lowest Java version for which the operation would succeed, or is left empty if this is unknown. */
-    var LowestSupportedVersion: String = js.native
+    var LowestSupportedVersion: String
   }
   object WrongJavaVersionException {
     
@@ -174,25 +176,26 @@ object java_ {
     * must be implemented by the user of the {@link XJavaThreadRegister_11} .
     * @deprecated Deprecated
     */
-  @js.native
-  trait XJavaThreadRegister11 extends XInterface {
+  trait XJavaThreadRegister11
+    extends StObject
+       with XInterface {
     
     /** returns `TRUE` if the current thread is already attached to the VM otherwise `FALSE` . */
-    def isThreadAttached(): Boolean = js.native
+    def isThreadAttached(): Boolean
     
     /**
       * registers the current thread.
       *
       * This method should be called every time a JNI function is called from Java.
       */
-    def registerThread(): Unit = js.native
+    def registerThread(): Unit
     
     /**
       * revokes the current thread from the list of registered threads.
       *
       * This method should be called at the end of every JNI call from Java.
       */
-    def revokeThread(): Unit = js.native
+    def revokeThread(): Unit
   }
   object XJavaThreadRegister11 {
     
@@ -227,8 +230,9 @@ object java_ {
     * must be implemented by the user of the {@link XJavaVM} .
     * @deprecated DeprecatedA UNO interface seems to be at the wrong abstraction level for this functionality (also, the C++ classes jvmaccess::VirtualMachine and
     */
-  @js.native
-  trait XJavaVM extends XInterface {
+  trait XJavaVM
+    extends StObject
+       with XInterface {
     
     /**
       * returns the address of the Java Virtual Machine.
@@ -257,17 +261,17 @@ object java_ {
       * @param processID The process ID of the caller's process, possibly extended by a 17th byte of value `0` or  `1` .
       * @returns On success, the `any` contains a pointer represented as `long` or `hyper` , otherwise the `any` is `VOID` .
       */
-    def getJavaVM(processID: SeqEquiv[Double]): js.Any = js.native
+    def getJavaVM(processID: SeqEquiv[Double]): js.Any
     
     /**
       * Returns `TRUE` if the VM is enabled.
       *
       * It is only possible to get the VM, if this method return 0.
       */
-    def isVMEnabled(): Boolean = js.native
+    def isVMEnabled(): Boolean
     
     /** returns `TRUE` if the VM is started successfully, otherwise `FALSE` . */
-    def isVMStarted(): Boolean = js.native
+    def isVMStarted(): Boolean
   }
   object XJavaVM {
     

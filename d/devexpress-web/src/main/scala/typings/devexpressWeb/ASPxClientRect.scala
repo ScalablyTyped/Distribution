@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client rectangle object.
   */
-@js.native
 trait ASPxClientRect extends StObject {
   
   /**
     * Gets the Y-coordinate of the rectangle's bottom edge.
     */
-  def GetBottom(): Double = js.native
+  def GetBottom(): Double
   
   /**
     * Gets the rectangle's height.
     */
-  def GetHeight(): Double = js.native
+  def GetHeight(): Double
   
   /**
     * Gets the X-coordinate of the rectangle's left edge.
     */
-  def GetLeft(): Double = js.native
+  def GetLeft(): Double
   
   /**
     * Gets the X-coordinate of the rectangle's right edge.
     */
-  def GetRight(): Double = js.native
+  def GetRight(): Double
   
   /**
     * Gets the Y-coordinate of the rectangle's top edge.
     */
-  def GetTop(): Double = js.native
+  def GetTop(): Double
   
   /**
     * Gets the rectangle's width.
     */
-  def GetWidth(): Double = js.native
+  def GetWidth(): Double
 }
 object ASPxClientRect {
   

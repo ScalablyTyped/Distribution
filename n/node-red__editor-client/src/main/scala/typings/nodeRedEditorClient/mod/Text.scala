@@ -2,15 +2,13 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  var bidi: TextBidi = js.native
+  var bidi: TextBidi
   
-  var format: TextFormat = js.native
+  var format: TextFormat
 }
 object Text {
   

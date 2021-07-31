@@ -7,35 +7,36 @@ import typings.rest.mod.Response
 import typings.when.When.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interceptorMod {
   
+  @scala.inline
+  def apply[T, U](config: Config[T, U]): Interceptor[T] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Interceptor[T]]
+  
   @JSImport("rest/interceptor", JSImport.Namespace)
   @js.native
-  def apply[T, U](config: Config[T, U]): Interceptor[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Config[T, U] extends StObject {
     
     var error: js.UndefOr[
         js.Function3[/* response */ Response, /* config */ U, /* meta */ Meta, Response | Promise[Response]]
-      ] = js.native
+      ] = js.undefined
     
-    var init: js.UndefOr[js.Function1[/* config */ T, U]] = js.native
+    var init: js.UndefOr[js.Function1[/* config */ T, U]] = js.undefined
     
     var request: js.UndefOr[
         js.Function3[/* request */ Request, /* config */ U, /* meta */ Meta, Request | Promise[Request]]
-      ] = js.native
+      ] = js.undefined
     
     var response: js.UndefOr[
         js.Function3[/* response */ Response, /* config */ U, /* meta */ Meta, Response | Promise[Response]]
-      ] = js.native
+      ] = js.undefined
     
     var success: js.UndefOr[
         js.Function3[/* response */ Response, /* config */ U, /* meta */ Meta, Response | Promise[Response]]
-      ] = js.native
+      ] = js.undefined
   }
   object Config {
     
@@ -46,7 +47,7 @@ object interceptorMod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_, _], T, U] (val x: Self with (Config[T, U])) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?, ?], T, U] (val x: Self & (Config[T, U])) extends AnyVal {
       
       @scala.inline
       def setError(value: (/* response */ Response, /* config */ U, /* meta */ Meta) => Response | Promise[Response]): Self = StObject.set(x, "error", js.Any.fromFunction3(value))

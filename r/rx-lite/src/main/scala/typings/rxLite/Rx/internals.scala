@@ -3,32 +3,30 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internals {
   
   // Priority Queue for Scheduling
-  @js.native
   trait PriorityQueue[TTime] extends StObject {
     
-    def dequeue(): ScheduledItem[TTime] = js.native
+    def dequeue(): ScheduledItem[TTime]
     
-    def enqueue(item: ScheduledItem[TTime]): Unit = js.native
+    def enqueue(item: ScheduledItem[TTime]): Unit
     
-    def heapify(index: Double): Unit = js.native
+    def heapify(index: Double): Unit
     
-    def isHigherPriority(left: Double, right: Double): Boolean = js.native
+    def isHigherPriority(left: Double, right: Double): Boolean
     
-    var length: Double = js.native
+    var length: Double
     
-    def peek(): ScheduledItem[TTime] = js.native
+    def peek(): ScheduledItem[TTime]
     
-    def percolate(index: Double): Unit = js.native
+    def percolate(index: Double): Unit
     
-    def remove(item: ScheduledItem[TTime]): Boolean = js.native
+    def remove(item: ScheduledItem[TTime]): Boolean
     
-    def removeAt(index: Double): Unit = js.native
+    def removeAt(index: Double): Unit
   }
   object PriorityQueue {
     
@@ -49,7 +47,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[_], TTime] (val x: Self with PriorityQueue[TTime]) extends AnyVal {
+    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], TTime] (val x: Self & PriorityQueue[TTime]) extends AnyVal {
       
       @scala.inline
       def setDequeue(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
@@ -80,28 +78,27 @@ object internals {
     }
   }
   
-  @js.native
   trait ScheduledItem[TTime] extends StObject {
     
-    def action(scheduler: IScheduler, state: js.Any): IDisposable = js.native
+    def action(scheduler: IScheduler, state: js.Any): IDisposable
     
-    def compareTo(other: ScheduledItem[TTime]): Double = js.native
+    def compareTo(other: ScheduledItem[TTime]): Double
     
-    def comparer(x: TTime, y: TTime): Double = js.native
+    def comparer(x: TTime, y: TTime): Double
     
-    var disposable: SingleAssignmentDisposable = js.native
+    var disposable: SingleAssignmentDisposable
     
-    var dueTime: TTime = js.native
+    var dueTime: TTime
     
-    def invoke(): Unit = js.native
+    def invoke(): Unit
     
-    def invokeCore(): IDisposable = js.native
+    def invokeCore(): IDisposable
     
-    def isCancelled(): Boolean = js.native
+    def isCancelled(): Boolean
     
-    var scheduler: IScheduler = js.native
+    var scheduler: IScheduler
     
-    var state: TTime = js.native
+    var state: TTime
   }
   object ScheduledItem {
     
@@ -123,7 +120,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[_], TTime] (val x: Self with ScheduledItem[TTime]) extends AnyVal {
+    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[?], TTime] (val x: Self & ScheduledItem[TTime]) extends AnyVal {
       
       @scala.inline
       def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))

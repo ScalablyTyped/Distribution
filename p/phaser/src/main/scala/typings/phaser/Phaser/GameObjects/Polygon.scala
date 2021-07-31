@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on the coordinates of the points provided, the final shape may be rendered offset from its origin.
   */
 @js.native
-trait Polygon extends Shape {
+trait Polygon
+  extends StObject
+     with Shape {
   
   /**
     * Smooths the polygon over the number of iterations specified.

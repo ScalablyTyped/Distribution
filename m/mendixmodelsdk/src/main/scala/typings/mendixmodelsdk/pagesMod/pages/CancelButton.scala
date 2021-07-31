@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object CancelButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.create")
-  @js.native
-  def create(model: IModel): CancelButton = js.native
+  @scala.inline
+  def create(model: IModel): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object CancelButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): CancelButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -74,9 +71,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): CancelButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -87,9 +83,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): CancelButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -100,9 +95,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): CancelButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -113,9 +107,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): CancelButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -126,9 +119,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): CancelButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -139,9 +131,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): CancelButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -152,9 +143,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): CancelButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -165,9 +155,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): CancelButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -178,9 +167,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): CancelButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -191,9 +179,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): CancelButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -204,9 +191,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): CancelButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -217,9 +203,8 @@ object CancelButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): CancelButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -230,9 +215,8 @@ object CancelButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): CancelButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -243,9 +227,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): CancelButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -256,9 +239,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): CancelButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -269,9 +251,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): CancelButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -282,9 +263,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): CancelButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -295,9 +275,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): CancelButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -308,9 +287,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): CancelButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -321,9 +299,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): CancelButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
@@ -334,9 +311,8 @@ object CancelButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): CancelButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): CancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CancelButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.structureTypeName")

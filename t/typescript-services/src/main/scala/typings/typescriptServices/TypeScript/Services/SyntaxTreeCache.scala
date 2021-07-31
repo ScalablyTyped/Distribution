@@ -3,25 +3,23 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.SyntaxTree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyntaxTreeCache extends StObject {
   
-  var _currentFileName: js.Any = js.native
+  var _currentFileName: js.Any
   
-  var _currentFileScriptSnapshot: js.Any = js.native
+  var _currentFileScriptSnapshot: js.Any
   
-  var _currentFileSyntaxTree: js.Any = js.native
+  var _currentFileSyntaxTree: js.Any
   
-  var _currentFileVersion: js.Any = js.native
+  var _currentFileVersion: js.Any
   
-  var _host: js.Any = js.native
+  var _host: js.Any
   
-  var _hostCache: js.Any = js.native
+  var _hostCache: js.Any
   
-  /* private */ def createSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any): js.Any = js.native
+  /* private */ def createSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any): js.Any
   
   /* private */ def ensureInvariants(
     fileName: js.Any,
@@ -29,11 +27,11 @@ trait SyntaxTreeCache extends StObject {
     incrementalTree: js.Any,
     oldScriptSnapshot: js.Any,
     newScriptSnapshot: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
-  def getCurrentFileSyntaxTree(fileName: String): SyntaxTree = js.native
+  def getCurrentFileSyntaxTree(fileName: String): SyntaxTree
   
-  /* private */ def updateSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any, previousSyntaxTree: js.Any, previousFileVersion: js.Any): js.Any = js.native
+  /* private */ def updateSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any, previousSyntaxTree: js.Any, previousFileVersion: js.Any): js.Any
 }
 object SyntaxTreeCache {
   

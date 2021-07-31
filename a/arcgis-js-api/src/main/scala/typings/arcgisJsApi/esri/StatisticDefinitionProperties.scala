@@ -11,10 +11,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.stddev
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatisticDefinitionProperties extends StObject {
   
   /**
@@ -22,21 +20,21 @@ trait StatisticDefinitionProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#onStatisticField)
     */
-  var onStatisticField: js.UndefOr[String] = js.native
+  var onStatisticField: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the output field name for the requested statistic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#outStatisticFieldName)
     */
-  var outStatisticFieldName: js.UndefOr[String] = js.native
+  var outStatisticFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
     */
-  var statisticParameters: js.UndefOr[StatisticDefinitionStatisticParameters] = js.native
+  var statisticParameters: js.UndefOr[StatisticDefinitionStatisticParameters] = js.undefined
   
   /**
     * Defines the type of statistic.
@@ -45,7 +43,7 @@ trait StatisticDefinitionProperties extends StObject {
     */
   var statisticType: js.UndefOr[
     count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete`
-  ] = js.native
+  ] = js.undefined
 }
 object StatisticDefinitionProperties {
   

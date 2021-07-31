@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.oauthShim.oauthShimBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -34,14 +33,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.UndefOr[Accesstoken] = js.native
+    var data: js.UndefOr[Accesstoken] = js.undefined
     
-    var options: js.UndefOr[Dictkey] = js.native
+    var options: js.UndefOr[Dictkey] = js.undefined
     
-    var redirect: js.UndefOr[String] = js.native
+    var redirect: js.UndefOr[String] = js.undefined
   }
   object Data {
     
@@ -74,11 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -99,11 +97,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
     @JSName("get")
-    def get_false(query: js.Any, cb: js.Function1[/* success */ `false` | js.Object, Unit]): Unit = js.native
+    def get_false(query: js.Any, cb: js.Function1[/* success */ `false` | js.Object, Unit]): Unit
   }
   object Get {
     

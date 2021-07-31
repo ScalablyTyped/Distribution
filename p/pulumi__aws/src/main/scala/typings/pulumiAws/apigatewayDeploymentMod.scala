@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayDeploymentMod {
@@ -78,6 +77,10 @@ object apigatewayDeploymentMod {
   /* static members */
   object Deployment {
     
+    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Deployment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,60 +90,54 @@ object apigatewayDeploymentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Deployment = js.native
-    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Deployment = js.native
-    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentState): Deployment = js.native
-    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentState): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
     
     /**
       * Returns true if the given object is an instance of Deployment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/deployment", "Deployment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/deployment.Deployment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/deployment.Deployment */ Boolean]
   }
   
-  @js.native
   trait DeploymentArgs extends StObject {
     
     /**
       * The description of the deployment
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The description of the stage
       */
-    val stageDescription: js.UndefOr[Input[String]] = js.native
+    val stageDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of arbitrary keys and values that, when changed, will trigger a redeployment.
       */
-    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map that defines variables for the stage
       */
-    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DeploymentArgs {
     
@@ -188,56 +185,55 @@ object apigatewayDeploymentMod {
     }
   }
   
-  @js.native
   trait DeploymentState extends StObject {
     
     /**
       * The creation date of the deployment
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the deployment
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The execution ARN to be used in `lambdaPermission` resource's `sourceArn`
       * when allowing API Gateway to invoke a Lambda function,
       * e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
       */
-    val executionArn: js.UndefOr[Input[String]] = js.native
+    val executionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to invoke the API pointing to the stage,
       * e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
       */
-    val invokeUrl: js.UndefOr[Input[String]] = js.native
+    val invokeUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The description of the stage
       */
-    val stageDescription: js.UndefOr[Input[String]] = js.native
+    val stageDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of arbitrary keys and values that, when changed, will trigger a redeployment.
       */
-    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map that defines variables for the stage
       */
-    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DeploymentState {
     

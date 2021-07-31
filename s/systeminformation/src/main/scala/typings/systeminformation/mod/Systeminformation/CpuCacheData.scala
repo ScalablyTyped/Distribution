@@ -2,19 +2,17 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuCacheData extends StObject {
   
-  var l1d: Double = js.native
+  var l1d: Double
   
-  var l1i: Double = js.native
+  var l1i: Double
   
-  var l2: Double = js.native
+  var l2: Double
   
-  var l3: Double = js.native
+  var l3: Double
 }
 object CpuCacheData {
   

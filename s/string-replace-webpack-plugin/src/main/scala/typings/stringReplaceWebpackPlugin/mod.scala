@@ -4,34 +4,34 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin
+  class ^ ()
+    extends StObject
+       with Plugin
+  @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("string-replace-webpack-plugin", "replace")
-  @js.native
-  def replace(options: Options): js.Any = js.native
-  @JSImport("string-replace-webpack-plugin", "replace")
-  @js.native
+  @scala.inline
+  def replace(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def replace(options: Options, /**
     * loaders to follow the replacement
     */
-  nextLoaders: String): js.Any = js.native
+  nextLoaders: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], nextLoaders.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   /* static member */
-  @JSImport("string-replace-webpack-plugin", "replace")
-  @js.native
+  @scala.inline
   def replace(/**
     * loaders to apply prior to the replacement
     */
-  prevLoaders: String, options: Options): js.Any = js.native
-  @JSImport("string-replace-webpack-plugin", "replace")
-  @js.native
+  prevLoaders: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(prevLoaders.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def replace(
     /**
     * loaders to apply prior to the replacement
@@ -42,12 +42,11 @@ object mod {
     * loaders to follow the replacement
     */
   nextLoaders: String
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(prevLoaders.asInstanceOf[js.Any], options.asInstanceOf[js.Any], nextLoaders.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var replacements: js.Array[ReplacementItem] = js.native
+    var replacements: js.Array[ReplacementItem]
   }
   object Options {
     
@@ -68,19 +67,18 @@ object mod {
     }
   }
   
-  @js.native
   trait ReplacementItem extends StObject {
     
     /**
       * a regex to match against the file contents
       */
-    var pattern: RegExp = js.native
+    var pattern: RegExp
     
     /**
       * an ECMAScript string replacement function
       * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Specifying_a_function_as_a_parameter
       */
-    def replacement(substring: String, args: js.Any*): String = js.native
+    def replacement(substring: String, args: js.Any*): String
   }
   object ReplacementItem {
     

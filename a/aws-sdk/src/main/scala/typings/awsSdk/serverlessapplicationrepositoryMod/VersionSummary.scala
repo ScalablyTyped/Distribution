@@ -2,33 +2,31 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionSummary extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The date and time this resource was created.
     */
-  var CreationTime: string = js.native
+  var CreationTime: string
   
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: string = js.native
+  var SemanticVersion: string
   
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[string] = js.native
+  var SourceCodeUrl: js.UndefOr[string] = js.undefined
 }
 object VersionSummary {
   

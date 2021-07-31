@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Customer-level settings.
   */
-@js.native
 trait SchemaSettings extends StObject {
   
   /**
     * The list of notifications.
     */
-  var notifications: js.UndefOr[js.Array[SchemaNotification]] = js.native
+  var notifications: js.UndefOr[js.Array[SchemaNotification]] = js.undefined
 }
 object SchemaSettings {
   

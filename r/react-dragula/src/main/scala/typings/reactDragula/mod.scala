@@ -5,15 +5,16 @@ import typings.dragula.mod.Drake
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(containers: js.Array[HTMLElement]): Drake = ^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any]).asInstanceOf[Drake]
+  @scala.inline
+  def apply(containers: js.Array[HTMLElement], options: DragulaOptions): Drake = (^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Drake]
+  
   @JSImport("react-dragula", JSImport.Namespace)
   @js.native
-  def apply(containers: js.Array[HTMLElement]): Drake = js.native
-  @JSImport("react-dragula", JSImport.Namespace)
-  @js.native
-  def apply(containers: js.Array[HTMLElement], options: DragulaOptions): Drake = js.native
+  val ^ : js.Any = js.native
 }

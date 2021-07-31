@@ -3,7 +3,6 @@ package typings.tuyaPanelKit.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "Popup")
@@ -20,68 +19,54 @@ class Popup protected ()
 /* static members */
 object Popup {
   
-  @JSImport("tuya-panel-kit", "Popup.close")
+  @JSImport("tuya-panel-kit", "Popup")
   @js.native
-  def close(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tuya-panel-kit", "Popup.countdown")
-  @js.native
-  def countdown(option: PopUpCountdownProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.countdown")
-  @js.native
-  def countdown(option: PopUpCountdownProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.custom")
-  @js.native
-  def custom(option: PopupCustomProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.custom")
-  @js.native
-  def custom(option: PopupCustomProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def countdown(option: PopUpCountdownProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def countdown(option: PopUpCountdownProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("countdown")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.datePicker")
-  @js.native
-  def datePicker(option: PopupDatePickerProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.datePicker")
-  @js.native
-  def datePicker(option: PopupDatePickerProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def custom(option: PopupCustomProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def custom(option: PopupCustomProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("custom")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.dropdown")
-  @js.native
-  def dropdown(option: PopupDropdownProps): Unit = js.native
+  @scala.inline
+  def datePicker(option: PopupDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("datePicker")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def datePicker(option: PopupDatePickerProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("datePicker")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.list")
-  @js.native
-  def list(option: PopUpListProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.list")
-  @js.native
-  def list(option: PopUpListProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def dropdown(option: PopupDropdownProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdown")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.numberSelector")
-  @js.native
-  def numberSelector(option: PopupNumberSelectorProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.numberSelector")
-  @js.native
-  def numberSelector(option: PopupNumberSelectorProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def list(option: PopUpListProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(option: PopUpListProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.picker")
-  @js.native
-  def picker(option: PopupPickerProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.picker")
-  @js.native
-  def picker(option: PopupPickerProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def numberSelector(option: PopupNumberSelectorProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("numberSelector")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def numberSelector(option: PopupNumberSelectorProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSelector")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.timerPicker")
-  @js.native
-  def timerPicker(option: PopupTimerPickerProps): Unit = js.native
-  @JSImport("tuya-panel-kit", "Popup.timerPicker")
-  @js.native
-  def timerPicker(option: PopupTimerPickerProps, option2: DialogElse): Unit = js.native
+  @scala.inline
+  def picker(option: PopupPickerProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("picker")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def picker(option: PopupPickerProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("picker")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.tips")
-  @js.native
-  def tips(option: PopupTipsProps): Unit = js.native
+  @scala.inline
+  def timerPicker(option: PopupTimerPickerProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timerPicker")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def timerPicker(option: PopupTimerPickerProps, option2: DialogElse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("timerPicker")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Popup.toast")
-  @js.native
-  def toast(option: PopupToastProps): Unit = js.native
+  @scala.inline
+  def tips(option: PopupTipsProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tips")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def toast(option: PopupToastProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcludeDeleted extends StObject {
   
-  var excludeDeleted: scala.Double = js.native
+  var excludeDeleted: scala.Double
   
-  var includeDeleted: scala.Double = js.native
+  var includeDeleted: scala.Double
   
-  var onlyDeleted: scala.Double = js.native
+  var onlyDeleted: scala.Double
 }
 object ExcludeDeleted {
   

@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** DeleteModelResult. */
-@js.native
 trait DeleteModelResult extends StObject {
   
   /** "OK" indicates that the model was successfully deleted. */
-  var status: String = js.native
+  var status: String
 }
 object DeleteModelResult {
   

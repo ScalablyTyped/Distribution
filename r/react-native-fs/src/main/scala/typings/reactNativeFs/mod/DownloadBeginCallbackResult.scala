@@ -2,22 +2,20 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadBeginCallbackResult extends StObject {
   
   // The HTTP status code
-  var contentLength: Double = js.native
+  var contentLength: Double
   
   // The total size in bytes of the download resource
-  var headers: Headers = js.native
+  var headers: Headers
   
-  var jobId: Double = js.native
+  var jobId: Double
   
   // The download job ID, required if one wishes to cancel the download. See `stopDownload`.
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object DownloadBeginCallbackResult {
   

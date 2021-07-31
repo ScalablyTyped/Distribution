@@ -3,7 +3,6 @@ package typings.micromodal
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,38 +12,36 @@ object mod {
     */
   object default {
     
+    @JSImport("micromodal", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Closes the active modal
       */
-    @JSImport("micromodal", "default.close")
-    @js.native
-    def close(): Unit = js.native
-    @JSImport("micromodal", "default.close")
-    @js.native
-    def close(targetModal: String): Unit = js.native
+    @scala.inline
+    def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+    @scala.inline
+    def close(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Binds click handlers to all modal triggers
       * @param config configuration options
       */
-    @JSImport("micromodal", "default.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSImport("micromodal", "default.init")
-    @js.native
-    def init(config: MicroModalConfig): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(config: MicroModalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Shows a particular modal
       * @param targetModal The id of the modal to display
       * @param config configuration options
       */
-    @JSImport("micromodal", "default.show")
-    @js.native
-    def show(targetModal: String): Unit = js.native
-    @JSImport("micromodal", "default.show")
-    @js.native
-    def show(targetModal: String, config: MicroModalConfig): Unit = js.native
+    @scala.inline
+    def show(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def show(targetModal: String, config: MicroModalConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -52,44 +49,43 @@ object mod {
     */
   object MicroModal
   
-  @js.native
   trait MicroModalConfig extends StObject {
     
     /**
       * Set this to true if using css animations to hide the modal.
       * This allows it to wait for the animation to finish before removing it from the DOM. Default is false
       */
-    var awaitCloseAnimation: js.UndefOr[Boolean] = js.native
+    var awaitCloseAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set this to true if using css animations to open the modal.
       * This allows it to wait for the animation to finish before focusing on an element inside the modal. Default is false
       */
-    var awaitOpenAnimation: js.UndefOr[Boolean] = js.native
+    var awaitOpenAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Custom data attribute to close modal. Default is data-micromodal-close. */
-    var closeTrigger: js.UndefOr[String] = js.native
+    var closeTrigger: js.UndefOr[String] = js.undefined
     
     /** This option suppresses the console warnings if passed as true. The default value is false. */
-    var debugMode: js.UndefOr[Boolean] = js.native
+    var debugMode: js.UndefOr[Boolean] = js.undefined
     
     /** Disable auto focus on first focusable element. Default is false */
-    var disableFocus: js.UndefOr[Boolean] = js.native
+    var disableFocus: js.UndefOr[Boolean] = js.undefined
     
     /** This disables scrolling on the page while the modal is open. The default value is false. */
-    var disableScroll: js.UndefOr[Boolean] = js.native
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
     
     /** This is fired when the modal is closing. */
-    var onClose: js.UndefOr[js.Function1[/* modal */ js.UndefOr[HTMLElement], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* modal */ js.UndefOr[HTMLElement], Unit]] = js.undefined
     
     /** This is fired when the modal is opening. */
-    var onShow: js.UndefOr[js.Function1[/* modal */ js.UndefOr[HTMLElement], Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* modal */ js.UndefOr[HTMLElement], Unit]] = js.undefined
     
     /** Custom class to be applied when modal is open. Default class is is-open. */
-    var openClass: js.UndefOr[String] = js.native
+    var openClass: js.UndefOr[String] = js.undefined
     
     /** Custom data attribute to open modal. Default is data-micromodal-trigger. */
-    var openTrigger: js.UndefOr[String] = js.native
+    var openTrigger: js.UndefOr[String] = js.undefined
   }
   object MicroModalConfig {
     

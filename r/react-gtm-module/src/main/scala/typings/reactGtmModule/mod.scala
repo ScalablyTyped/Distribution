@@ -2,34 +2,34 @@ package typings.reactGtmModule
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-gtm-module", "default.dataLayer")
+    @JSImport("react-gtm-module", JSImport.Default)
     @js.native
-    def dataLayer(dataLayerArgs: DataLayerArgs): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-gtm-module", "default.initialize")
-    @js.native
-    def initialize(tagManagerArgs: TagManagerArgs): Unit = js.native
+    @scala.inline
+    def dataLayer(dataLayerArgs: DataLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dataLayer")(dataLayerArgs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def initialize(tagManagerArgs: TagManagerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(tagManagerArgs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait DataLayerArgs extends StObject {
     
     /**
       * Object that contains all of the information that you want to pass to Google Tag Manager.
       */
-    var dataLayer: js.UndefOr[js.Object] = js.native
+    var dataLayer: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Custom name for dataLayer object.
       */
-    var dataLayerName: js.UndefOr[String] = js.native
+    var dataLayerName: js.UndefOr[String] = js.undefined
   }
   object DataLayerArgs {
     
@@ -56,28 +56,29 @@ object mod {
     }
   }
   
-  @js.native
-  trait TagManagerArgs extends DataLayerArgs {
+  trait TagManagerArgs
+    extends StObject
+       with DataLayerArgs {
     
     /**
       * Used to set environments.
       */
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
     /**
       * Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.
       */
-    var events: js.UndefOr[js.Object] = js.native
+    var events: js.UndefOr[js.Object] = js.undefined
     
     /**
       * GTM id, must be something like GTM-000000.
       */
-    var gtmId: String = js.native
+    var gtmId: String
     
     /**
       * Used to set environments, something like env-00.
       */
-    var preview: js.UndefOr[String] = js.native
+    var preview: js.UndefOr[String] = js.undefined
   }
   object TagManagerArgs {
     

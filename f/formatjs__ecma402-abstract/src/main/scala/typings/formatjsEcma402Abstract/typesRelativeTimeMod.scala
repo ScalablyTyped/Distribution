@@ -3,7 +3,6 @@ package typings.formatjsEcma402Abstract
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrow
@@ -15,31 +14,29 @@ import typings.std.Intl.NumberFormatPartTypes
 import typings.std.Intl.PluralRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRelativeTimeMod {
   
-  @js.native
   trait FieldData extends StObject {
     
-    var `-1`: js.UndefOr[String] = js.native
+    var `-1`: js.UndefOr[String] = js.undefined
     
-    var `-2`: js.UndefOr[String] = js.native
+    var `-2`: js.UndefOr[String] = js.undefined
     
-    var `-3`: js.UndefOr[String] = js.native
+    var `-3`: js.UndefOr[String] = js.undefined
     
-    var `0`: js.UndefOr[String] = js.native
+    var `0`: js.UndefOr[String] = js.undefined
     
-    var `1`: js.UndefOr[String] = js.native
+    var `1`: js.UndefOr[String] = js.undefined
     
-    var `2`: js.UndefOr[String] = js.native
+    var `2`: js.UndefOr[String] = js.undefined
     
-    var `3`: js.UndefOr[String] = js.native
+    var `3`: js.UndefOr[String] = js.undefined
     
-    var future: RelativeTimeData = js.native
+    var future: RelativeTimeData
     
-    var past: RelativeTimeData = js.native
+    var past: RelativeTimeData
   }
   object FieldData {
     
@@ -102,7 +99,6 @@ object typesRelativeTimeMod {
     }
   }
   
-  @js.native
   trait IntlRelativeTimeFormatOptions extends StObject {
     
     /**
@@ -111,7 +107,7 @@ object typesRelativeTimeMod {
       * For information about this option, see
       * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation.
       */
-    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.native
+    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
     
     /**
       * The format of output message. Possible values are:
@@ -120,7 +116,7 @@ object typesRelativeTimeMod {
       * The "auto" value allows to not always have to
       * use numeric values in the output.
       */
-    var numeric: js.UndefOr[always | auto] = js.native
+    var numeric: js.UndefOr[always | auto] = js.undefined
     
     /**
       * The length of the internationalized message. Possible values are:
@@ -129,7 +125,7 @@ object typesRelativeTimeMod {
       * - or "narrow" (e.g., in 1 mo.).
       * The narrow style could be similar to the short style for some locales.
       */
-    var style: js.UndefOr[long | short | narrow] = js.native
+    var style: js.UndefOr[long | short | narrow] = js.undefined
   }
   object IntlRelativeTimeFormatOptions {
     
@@ -163,58 +159,57 @@ object typesRelativeTimeMod {
   }
   
   /* Inlined {[ f in @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.RelativeTimeField ]:? @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.FieldData} & {  nu :std.Array<string | null> | undefined} */
-  @js.native
   trait LocaleFieldsData extends StObject {
     
-    var day: js.UndefOr[FieldData] = js.native
+    var day: js.UndefOr[FieldData] = js.undefined
     
-    var `day-narrow`: js.UndefOr[FieldData] = js.native
+    var `day-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `day-short`: js.UndefOr[FieldData] = js.native
+    var `day-short`: js.UndefOr[FieldData] = js.undefined
     
-    var hour: js.UndefOr[FieldData] = js.native
+    var hour: js.UndefOr[FieldData] = js.undefined
     
-    var `hour-narrow`: js.UndefOr[FieldData] = js.native
+    var `hour-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `hour-short`: js.UndefOr[FieldData] = js.native
+    var `hour-short`: js.UndefOr[FieldData] = js.undefined
     
-    var minute: js.UndefOr[FieldData] = js.native
+    var minute: js.UndefOr[FieldData] = js.undefined
     
-    var `minute-narrow`: js.UndefOr[FieldData] = js.native
+    var `minute-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `minute-short`: js.UndefOr[FieldData] = js.native
+    var `minute-short`: js.UndefOr[FieldData] = js.undefined
     
-    var month: js.UndefOr[FieldData] = js.native
+    var month: js.UndefOr[FieldData] = js.undefined
     
-    var `month-narrow`: js.UndefOr[FieldData] = js.native
+    var `month-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `month-short`: js.UndefOr[FieldData] = js.native
+    var `month-short`: js.UndefOr[FieldData] = js.undefined
     
-    var nu: js.UndefOr[js.Array[String | Null]] = js.native
+    var nu: js.UndefOr[js.Array[String | Null]] = js.undefined
     
-    var quarter: js.UndefOr[FieldData] = js.native
+    var quarter: js.UndefOr[FieldData] = js.undefined
     
-    var `quarter-narrow`: js.UndefOr[FieldData] = js.native
+    var `quarter-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `quarter-short`: js.UndefOr[FieldData] = js.native
+    var `quarter-short`: js.UndefOr[FieldData] = js.undefined
     
-    var second: js.UndefOr[FieldData] = js.native
+    var second: js.UndefOr[FieldData] = js.undefined
     
-    var `second-narrow`: js.UndefOr[FieldData] = js.native
+    var `second-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `second-short`: js.UndefOr[FieldData] = js.native
+    var `second-short`: js.UndefOr[FieldData] = js.undefined
     
-    var week: js.UndefOr[FieldData] = js.native
+    var week: js.UndefOr[FieldData] = js.undefined
     
-    var `week-narrow`: js.UndefOr[FieldData] = js.native
+    var `week-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `week-short`: js.UndefOr[FieldData] = js.native
+    var `week-short`: js.UndefOr[FieldData] = js.undefined
     
-    var year: js.UndefOr[FieldData] = js.native
+    var year: js.UndefOr[FieldData] = js.undefined
     
-    var `year-narrow`: js.UndefOr[FieldData] = js.native
+    var `year-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `year-short`: js.UndefOr[FieldData] = js.native
+    var `year-short`: js.UndefOr[FieldData] = js.undefined
   }
   object LocaleFieldsData {
     
@@ -383,20 +378,19 @@ object typesRelativeTimeMod {
   }
   
   /* Inlined {[ u in @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/plural-rules.LDMLPluralRule ]:? string} */
-  @js.native
   trait RelativeTimeData extends StObject {
     
-    var few: js.UndefOr[String] = js.native
+    var few: js.UndefOr[String] = js.undefined
     
-    var many: js.UndefOr[String] = js.native
+    var many: js.UndefOr[String] = js.undefined
     
-    var one: js.UndefOr[String] = js.native
+    var one: js.UndefOr[String] = js.undefined
     
-    var other: js.UndefOr[String] = js.native
+    var other: js.UndefOr[String] = js.undefined
     
-    var two: js.UndefOr[String] = js.native
+    var two: js.UndefOr[String] = js.undefined
     
-    var zero: js.UndefOr[String] = js.native
+    var zero: js.UndefOr[String] = js.undefined
   }
   object RelativeTimeData {
     
@@ -549,14 +543,13 @@ object typesRelativeTimeMod {
     def `year-short`: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`year-short` = "year-short".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`year-short`]
   }
   
-  @js.native
   trait RelativeTimeFormat extends StObject {
     
-    def format(value: Double, unit: RelativeTimeFormattableUnit): String = js.native
+    def format(value: Double, unit: RelativeTimeFormattableUnit): String
     
-    def formatToParts(value: Double, unit: RelativeTimeFormattableUnit): js.Array[RelativeTimePart] = js.native
+    def formatToParts(value: Double, unit: RelativeTimeFormattableUnit): js.Array[RelativeTimePart]
     
-    def resolvedOptions(): ResolvedIntlRelativeTimeFormatOptions = js.native
+    def resolvedOptions(): ResolvedIntlRelativeTimeFormatOptions
   }
   object RelativeTimeFormat {
     
@@ -584,24 +577,23 @@ object typesRelativeTimeMod {
     }
   }
   
-  @js.native
   trait RelativeTimeFormatInternal extends StObject {
     
-    var fields: LocaleFieldsData = js.native
+    var fields: LocaleFieldsData
     
-    var initializedRelativeTimeFormat: Boolean = js.native
+    var initializedRelativeTimeFormat: Boolean
     
-    var locale: String = js.native
+    var locale: String
     
-    var numberFormat: NumberFormat = js.native
+    var numberFormat: NumberFormat
     
-    var numberingSystem: String = js.native
+    var numberingSystem: String
     
-    var numeric: js.UndefOr[always | auto] = js.native
+    var numeric: js.UndefOr[always | auto] = js.undefined
     
-    var pluralRules: PluralRules = js.native
+    var pluralRules: PluralRules
     
-    var style: js.UndefOr[long | short | narrow] = js.native
+    var style: js.UndefOr[long | short | narrow] = js.undefined
   }
   object RelativeTimeFormatInternal {
     
@@ -653,12 +645,12 @@ object typesRelativeTimeMod {
     }
   }
   
-  @js.native
   trait RelativeTimeFormatNumberPart
-    extends NumberFormatPart
+    extends StObject
+       with NumberFormatPart
        with RelativeTimePart {
     
-    var unit: RelativeTimeUnit = js.native
+    var unit: RelativeTimeUnit
   }
   object RelativeTimeFormatNumberPart {
     
@@ -757,9 +749,9 @@ object typesRelativeTimeMod {
   object RelativeTimePart {
     
     @scala.inline
-    def LiteralPart(`type`: literal, value: String): typings.formatjsEcma402Abstract.formatjsEcma402AbstractUtilsMod.LiteralPart = {
+    def LiteralPart(value: String): typings.formatjsEcma402Abstract.formatjsEcma402AbstractUtilsMod.LiteralPart = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("literal")
       __obj.asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractUtilsMod.LiteralPart]
     }
     
@@ -848,7 +840,6 @@ object typesRelativeTimeMod {
   }
   
   /* Inlined parent std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.IntlRelativeTimeFormatOptions, 'style' | 'numeric'> */
-  @js.native
   trait ResolvedIntlRelativeTimeFormatOptions extends StObject {
     
     /**
@@ -858,17 +849,17 @@ object typesRelativeTimeMod {
       * the key-value pairs that were requested and are
       * supported for this locale are included in locale.
       */
-    var locale: String = js.native
+    var locale: String
     
     /**
       * The value requested using the Unicode
       * extension key "nu" or filled in as a default.
       */
-    var numberingSystem: String = js.native
+    var numberingSystem: String
     
-    var numeric: js.UndefOr[always | auto] = js.native
+    var numeric: js.UndefOr[always | auto] = js.undefined
     
-    var style: js.UndefOr[long | short | narrow] = js.native
+    var style: js.UndefOr[long | short | narrow] = js.undefined
   }
   object ResolvedIntlRelativeTimeFormatOptions {
     
@@ -902,58 +893,57 @@ object typesRelativeTimeMod {
   }
   
   /* Inlined {[ f in @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.RelativeTimeField ]:? @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.FieldData} & {  nu :std.Array<string | null>} */
-  @js.native
   trait UnpackedLocaleFieldsData extends StObject {
     
-    var day: js.UndefOr[FieldData] = js.native
+    var day: js.UndefOr[FieldData] = js.undefined
     
-    var `day-narrow`: js.UndefOr[FieldData] = js.native
+    var `day-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `day-short`: js.UndefOr[FieldData] = js.native
+    var `day-short`: js.UndefOr[FieldData] = js.undefined
     
-    var hour: js.UndefOr[FieldData] = js.native
+    var hour: js.UndefOr[FieldData] = js.undefined
     
-    var `hour-narrow`: js.UndefOr[FieldData] = js.native
+    var `hour-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `hour-short`: js.UndefOr[FieldData] = js.native
+    var `hour-short`: js.UndefOr[FieldData] = js.undefined
     
-    var minute: js.UndefOr[FieldData] = js.native
+    var minute: js.UndefOr[FieldData] = js.undefined
     
-    var `minute-narrow`: js.UndefOr[FieldData] = js.native
+    var `minute-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `minute-short`: js.UndefOr[FieldData] = js.native
+    var `minute-short`: js.UndefOr[FieldData] = js.undefined
     
-    var month: js.UndefOr[FieldData] = js.native
+    var month: js.UndefOr[FieldData] = js.undefined
     
-    var `month-narrow`: js.UndefOr[FieldData] = js.native
+    var `month-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `month-short`: js.UndefOr[FieldData] = js.native
+    var `month-short`: js.UndefOr[FieldData] = js.undefined
     
-    var nu: js.Array[String | Null] = js.native
+    var nu: js.Array[String | Null]
     
-    var quarter: js.UndefOr[FieldData] = js.native
+    var quarter: js.UndefOr[FieldData] = js.undefined
     
-    var `quarter-narrow`: js.UndefOr[FieldData] = js.native
+    var `quarter-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `quarter-short`: js.UndefOr[FieldData] = js.native
+    var `quarter-short`: js.UndefOr[FieldData] = js.undefined
     
-    var second: js.UndefOr[FieldData] = js.native
+    var second: js.UndefOr[FieldData] = js.undefined
     
-    var `second-narrow`: js.UndefOr[FieldData] = js.native
+    var `second-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `second-short`: js.UndefOr[FieldData] = js.native
+    var `second-short`: js.UndefOr[FieldData] = js.undefined
     
-    var week: js.UndefOr[FieldData] = js.native
+    var week: js.UndefOr[FieldData] = js.undefined
     
-    var `week-narrow`: js.UndefOr[FieldData] = js.native
+    var `week-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `week-short`: js.UndefOr[FieldData] = js.native
+    var `week-short`: js.UndefOr[FieldData] = js.undefined
     
-    var year: js.UndefOr[FieldData] = js.native
+    var year: js.UndefOr[FieldData] = js.undefined
     
-    var `year-narrow`: js.UndefOr[FieldData] = js.native
+    var `year-narrow`: js.UndefOr[FieldData] = js.undefined
     
-    var `year-short`: js.UndefOr[FieldData] = js.native
+    var `year-short`: js.UndefOr[FieldData] = js.undefined
   }
   object UnpackedLocaleFieldsData {
     

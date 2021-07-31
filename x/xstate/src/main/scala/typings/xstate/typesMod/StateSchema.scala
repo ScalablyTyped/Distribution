@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateSchema[TC] extends StObject {
   
-  var context: js.UndefOr[Partial[TC]] = js.native
+  var context: js.UndefOr[Partial[TC]] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var states: js.UndefOr[StringDictionary[StateSchema[TC]]] = js.native
+  var states: js.UndefOr[StringDictionary[StateSchema[TC]]] = js.undefined
 }
 object StateSchema {
   
@@ -25,7 +23,7 @@ object StateSchema {
   }
   
   @scala.inline
-  implicit class StateSchemaMutableBuilder[Self <: StateSchema[_], TC] (val x: Self with StateSchema[TC]) extends AnyVal {
+  implicit class StateSchemaMutableBuilder[Self <: StateSchema[?], TC] (val x: Self & StateSchema[TC]) extends AnyVal {
     
     @scala.inline
     def setContext(value: Partial[TC]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

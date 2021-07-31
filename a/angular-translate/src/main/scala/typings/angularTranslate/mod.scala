@@ -9,7 +9,6 @@ import typings.angularTranslate.anon.Files
 import typings.angularTranslate.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -43,14 +42,13 @@ object mod extends Shortcut {
         def isPartAvailable(name: String): Boolean = js.native
       }
       
-      @js.native
       trait IStaticFilesLoaderOptions extends StObject {
         
-        var key: js.UndefOr[String] = js.native
+        var key: js.UndefOr[String] = js.undefined
         
-        var prefix: String = js.native
+        var prefix: String
         
-        var suffix: String = js.native
+        var suffix: String
       }
       object IStaticFilesLoaderOptions {
         
@@ -77,12 +75,11 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IStorage extends StObject {
         
-        def get(name: String): String = js.native
+        def get(name: String): String
         
-        def put(name: String, value: String): Unit = js.native
+        def put(name: String, value: String): Unit
       }
       object IStorage {
         
@@ -105,14 +102,17 @@ object mod extends Shortcut {
       
       @js.native
       trait ITranslatePartialLoaderProvider
-        extends IServiceProvider
+        extends StObject
+           with IServiceProvider
            with IPartialLoader[ITranslatePartialLoaderProvider] {
         
         def setPart(lang: String, part: String, table: ITranslationTable): ITranslatePartialLoaderProvider = js.native
       }
       
       @js.native
-      trait ITranslatePartialLoaderService extends IPartialLoader[ITranslatePartialLoaderService] {
+      trait ITranslatePartialLoaderService
+        extends StObject
+           with IPartialLoader[ITranslatePartialLoaderService] {
         
         def getRegisteredParts(): js.Array[String] = js.native
         
@@ -120,7 +120,9 @@ object mod extends Shortcut {
       }
       
       @js.native
-      trait ITranslateProvider extends IServiceProvider {
+      trait ITranslateProvider
+        extends StObject
+           with IServiceProvider {
         
         def addInterpolation(factory: js.Any): ITranslateProvider = js.native
         
@@ -207,192 +209,12 @@ object mod extends Shortcut {
       trait ITranslateService extends StObject {
         
         def apply(translationId: String): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(translationId: String, interpolateParams: js.UndefOr[scala.Nothing], interpolationId: String): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
         def apply(translationId: String, interpolateParams: js.Any): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
         def apply(translationId: String, interpolateParams: js.Any, interpolationId: String): IPromise[String] = js.native
         def apply(
           translationId: String,
           interpolateParams: js.Any,
           interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: String,
           defaultTranslationText: String
         ): IPromise[String] = js.native
         def apply(
@@ -400,14 +222,6 @@ object mod extends Shortcut {
           interpolateParams: js.Any,
           interpolationId: String,
           defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[String] = js.native
-        def apply(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[String] = js.native
         def apply(
@@ -416,199 +230,203 @@ object mod extends Shortcut {
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(translationId: String, interpolateParams: Unit, interpolationId: String): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[String] = js.native
+        def apply(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
           sanitizeStrategy: String
         ): IPromise[String] = js.native
         def apply(translationId: js.Array[String]): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
         def apply(translationId: js.Array[String], interpolateParams: js.Any): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          defaultTranslationText: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
         def apply(translationId: js.Array[String], interpolateParams: js.Any, interpolationId: String): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
           interpolateParams: js.Any,
           interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: String,
           defaultTranslationText: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
@@ -616,14 +434,6 @@ object mod extends Shortcut {
           interpolateParams: js.Any,
           interpolationId: String,
           defaultTranslationText: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): IPromise[StringDictionary[String]] = js.native
-        def apply(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: String,
-          defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
@@ -632,6 +442,194 @@ object mod extends Shortcut {
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(translationId: js.Array[String], interpolateParams: Unit, interpolationId: String): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): IPromise[StringDictionary[String]] = js.native
+        def apply(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          defaultTranslationText: Unit,
+          forceLanguage: Unit,
           sanitizeStrategy: String
         ): IPromise[StringDictionary[String]] = js.native
         
@@ -645,76 +643,8 @@ object mod extends Shortcut {
         def getAvailableLanguageKeys(): js.Array[String] = js.native
         
         def instant(translationId: String): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): String = js.native
-        def instant(translationId: String, interpolateParams: js.UndefOr[scala.Nothing], interpolationId: String): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): String = js.native
         def instant(translationId: String, interpolateParams: js.Any): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): String = js.native
         def instant(translationId: String, interpolateParams: js.Any, interpolationId: String): String = js.native
-        def instant(
-          translationId: String,
-          interpolateParams: js.Any,
-          interpolationId: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): String = js.native
         def instant(translationId: String, interpolateParams: js.Any, interpolationId: String, forceLanguage: String): String = js.native
         def instant(
           translationId: String,
@@ -723,85 +653,66 @@ object mod extends Shortcut {
           forceLanguage: String,
           sanitizeStrategy: String
         ): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(translationId: String, interpolateParams: js.Any, interpolationId: Unit, forceLanguage: String): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(translationId: String, interpolateParams: Unit, interpolationId: String): String = js.native
+        def instant(translationId: String, interpolateParams: Unit, interpolationId: String, forceLanguage: String): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(translationId: String, interpolateParams: Unit, interpolationId: Unit, forceLanguage: String): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): String = js.native
+        def instant(
+          translationId: String,
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): String = js.native
         def instant(translationId: js.Array[String]): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.UndefOr[scala.Nothing],
-          interpolationId: String,
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
         def instant(translationId: js.Array[String], interpolateParams: js.Any): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: js.UndefOr[scala.Nothing],
-          forceLanguage: String,
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
         def instant(translationId: js.Array[String], interpolateParams: js.Any, interpolationId: String): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
           interpolateParams: js.Any,
           interpolationId: String,
-          forceLanguage: js.UndefOr[scala.Nothing],
-          sanitizeStrategy: String
-        ): StringDictionary[String] = js.native
-        def instant(
-          translationId: js.Array[String],
-          interpolateParams: js.Any,
-          interpolationId: String,
           forceLanguage: String
         ): StringDictionary[String] = js.native
         def instant(
@@ -809,6 +720,74 @@ object mod extends Shortcut {
           interpolateParams: js.Any,
           interpolationId: String,
           forceLanguage: String,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          forceLanguage: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: js.Any,
+          interpolationId: Unit,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(translationId: js.Array[String], interpolateParams: Unit, interpolationId: String): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          forceLanguage: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: String,
+          forceLanguage: Unit,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          forceLanguage: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          forceLanguage: String,
+          sanitizeStrategy: String
+        ): StringDictionary[String] = js.native
+        def instant(
+          translationId: js.Array[String],
+          interpolateParams: Unit,
+          interpolationId: Unit,
+          forceLanguage: Unit,
           sanitizeStrategy: String
         ): StringDictionary[String] = js.native
         
@@ -861,8 +840,9 @@ object mod extends Shortcut {
         def versionInfo(): String = js.native
       }
       
-      @js.native
-      trait ITranslationTable extends /* key */ StringDictionary[String | ITranslationTable]
+      trait ITranslationTable
+        extends StObject
+           with /* key */ StringDictionary[String | ITranslationTable]
       object ITranslationTable {
         
         @scala.inline

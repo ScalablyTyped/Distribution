@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorProto extends StObject {
   
   /** Debugging information. This property is internal to Google and should not be used. */
-  var debugInfo: js.UndefOr[String] = js.native
+  var debugInfo: js.UndefOr[String] = js.undefined
   
   /** Specifies where the error occurred, if present. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** A human-readable description of the error. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** A short error code that summarizes the error. */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object ErrorProto {
   

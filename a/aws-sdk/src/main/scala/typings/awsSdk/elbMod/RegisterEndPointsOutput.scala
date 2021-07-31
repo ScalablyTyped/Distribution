@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterEndPointsOutput extends StObject {
   
   /**
     * The updated list of instances for the load balancer.
     */
-  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.undefined
 }
 object RegisterEndPointsOutput {
   

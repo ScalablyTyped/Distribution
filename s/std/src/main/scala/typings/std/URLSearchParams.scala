@@ -2,11 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait URLSearchParams extends _BodyInit {
+trait URLSearchParams
+  extends StObject
+     with _BodyInit {
   
   /**
     * Appends a specified key/value pair as a new search parameter.

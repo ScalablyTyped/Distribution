@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAppPolicyDeploymentSummary extends Entity {
+trait ManagedAppPolicyDeploymentSummary
+  extends StObject
+     with Entity {
   
   // Not yet documented
-  var configurationDeployedUserCount: js.UndefOr[Double] = js.native
+  var configurationDeployedUserCount: js.UndefOr[Double] = js.undefined
   
   // Not yet documented
-  var configurationDeploymentSummaryPerApp: js.UndefOr[NullableOption[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]]] = js.native
+  var configurationDeploymentSummaryPerApp: js.UndefOr[NullableOption[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]]] = js.undefined
   
   // Not yet documented
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   // Version of the entity.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAppPolicyDeploymentSummary {
   

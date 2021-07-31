@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provide special data of a {@link TextSection} .
   * @see TextSection
   */
-@js.native
-trait XTextSection extends XTextContent {
+trait XTextSection
+  extends StObject
+     with XTextContent {
   
   /** @returns all text sections that are children of this text section (recursive). */
-  val ChildSections: SafeArray[XTextSection] = js.native
+  val ChildSections: SafeArray[XTextSection]
   
   /** If the object is a child section, then this method returns the parent text section. */
-  val ParentSection: XTextSection = js.native
+  val ParentSection: XTextSection
   
   /** @returns all text sections that are children of this text section (recursive). */
-  def getChildSections(): SafeArray[XTextSection] = js.native
+  def getChildSections(): SafeArray[XTextSection]
   
   /** If the object is a child section, then this method returns the parent text section. */
-  def getParentSection(): XTextSection = js.native
+  def getParentSection(): XTextSection
 }
 object XTextSection {
   

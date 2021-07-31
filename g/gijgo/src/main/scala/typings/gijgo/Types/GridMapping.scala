@@ -2,15 +2,13 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridMapping extends StObject {
   
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
-  var totalRecordsField: js.UndefOr[String] = js.native
+  var totalRecordsField: js.UndefOr[String] = js.undefined
 }
 object GridMapping {
   

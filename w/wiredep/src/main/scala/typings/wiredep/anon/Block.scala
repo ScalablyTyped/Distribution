@@ -3,20 +3,18 @@ package typings.wiredep.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block extends StObject {
   
   /**
     *  match the beginning-to-end of a bower block in this type of file
     */
-  var block: RegExp = js.native
+  var block: RegExp
   
-  var detect: TypeOfBowerFile = js.native
+  var detect: TypeOfBowerFile
   
-  var replace: AnotherTypeOfBowerFile = js.native
+  var replace: AnotherTypeOfBowerFile
 }
 object Block {
   

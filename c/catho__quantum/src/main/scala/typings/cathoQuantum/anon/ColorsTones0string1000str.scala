@@ -2,26 +2,24 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @catho/quantum.@catho/quantum/Colors.ColorsTones & {  0 :string,   1000 :string} */
-@js.native
 trait ColorsTones0string1000str extends StObject {
   
-  var `0`: String = js.native
+  var `0`: String
   
-  var `100`: String = js.native
+  var `100`: String
   
-  var `1000`: String = js.native
+  var `1000`: String
   
-  var `300`: String = js.native
+  var `300`: String
   
-  var `500`: String = js.native
+  var `500`: String
   
-  var `700`: String = js.native
+  var `700`: String
   
-  var `900`: String = js.native
+  var `900`: String
 }
 object ColorsTones0string1000str {
   

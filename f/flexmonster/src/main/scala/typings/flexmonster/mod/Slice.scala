@@ -5,29 +5,27 @@ import typings.flexmonster.anon.DrillAll
 import typings.flexmonster.anon.ExpandAll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slice extends StObject {
   
-  var columns: js.UndefOr[js.Array[Hierarchy]] = js.native
+  var columns: js.UndefOr[js.Array[Hierarchy]] = js.undefined
   
-  var drillThrough: js.UndefOr[js.Array[String]] = js.native
+  var drillThrough: js.UndefOr[js.Array[String]] = js.undefined
   
-  var drills: js.UndefOr[DrillAll] = js.native
+  var drills: js.UndefOr[DrillAll] = js.undefined
   
-  var expands: js.UndefOr[ExpandAll] = js.native
+  var expands: js.UndefOr[ExpandAll] = js.undefined
   
-  var flatOrder: js.UndefOr[js.Array[String]] = js.native
+  var flatOrder: js.UndefOr[js.Array[String]] = js.undefined
   
-  var measures: js.UndefOr[js.Array[Measure]] = js.native
+  var measures: js.UndefOr[js.Array[Measure]] = js.undefined
   
-  var reportFilters: js.UndefOr[js.Array[Hierarchy]] = js.native
+  var reportFilters: js.UndefOr[js.Array[Hierarchy]] = js.undefined
   
-  var rows: js.UndefOr[js.Array[Hierarchy]] = js.native
+  var rows: js.UndefOr[js.Array[Hierarchy]] = js.undefined
   
-  var sorting: js.UndefOr[Column] = js.native
+  var sorting: js.UndefOr[Column] = js.undefined
 }
 object Slice {
   

@@ -12,7 +12,7 @@ A LALR Javascript LaTeX-to-MathML converter compatible with Unicode.
 | Keywords           | mathml,tex,latex,unicode |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1192 |
+| # downloads        | 1039 |
 | # stars            | 0 |
 
 ## Links

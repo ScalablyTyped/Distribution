@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseNode extends StObject {
   
-  var dom: StringDictionary[HTMLElement] = js.native
+  var dom: StringDictionary[HTMLElement]
   
-  var editable: js.UndefOr[FieldEditable] = js.native
+  var editable: js.UndefOr[FieldEditable] = js.undefined
   
-  var editor: JSONEditor = js.native
+  var editor: JSONEditor
   
-  var parent: Node | Null = js.native
+  var parent: Node | Null
 }
 object BaseNode {
   
   @scala.inline
   def apply(dom: StringDictionary[HTMLElement], editor: JSONEditor): BaseNode = {
-    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[BaseNode]
   }
   

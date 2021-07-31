@@ -3,7 +3,6 @@ package typings.japanPostalCode
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,24 +11,37 @@ object mod extends Shortcut {
   @js.native
   val ^ : API = js.native
   
-  @js.native
   trait API extends StObject {
     
-    def get(stringifiedPostalCode: String, callback: Callback): Unit = js.native
+    def get(stringifiedPostalCode: String, callback: Callback): Unit
     @JSName("get")
-    var get_Original: FetchPostalCodeMethod = js.native
+    var get_Original: FetchPostalCodeMethod
+  }
+  object API {
+    
+    @scala.inline
+    def apply(get: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): API = {
+      val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
+      __obj.asInstanceOf[API]
+    }
+    
+    @scala.inline
+    implicit class APIMutableBuilder[Self <: API] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGet(value: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait AddressData extends StObject {
     
-    var area: String = js.native
+    var area: String
     
-    var city: String = js.native
+    var city: String
     
-    var prefecture: String = js.native
+    var prefecture: String
     
-    var street: String = js.native
+    var street: String
   }
   object AddressData {
     

@@ -15,7 +15,6 @@ import typings.maximMazurokGapiClientHealthcare.anon.SourceStore
 import typings.maximMazurokGapiClientHealthcare.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,8 +40,8 @@ trait FhirStoresResource extends StObject {
     * Immediate fatal errors appear in the error field, errors are also logged to Cloud Logging (see [Viewing logs](/healthcare/docs/how-tos/logging)). Otherwise, when the operation
     * finishes, a detailed response of type ExportResourcesResponse is returned in the response field. The metadata field type for this operation is OperationMetadata.
     */
-  def export(request: CallbackFields): Request[Operation] = js.native
-  def export(request: Name, body: ExportResourcesRequest): Request[Operation] = js.native
+  def `export`(request: CallbackFields): Request[Operation] = js.native
+  def `export`(request: Name, body: ExportResourcesRequest): Request[Operation] = js.native
   
   var fhir: FhirResource = js.native
   

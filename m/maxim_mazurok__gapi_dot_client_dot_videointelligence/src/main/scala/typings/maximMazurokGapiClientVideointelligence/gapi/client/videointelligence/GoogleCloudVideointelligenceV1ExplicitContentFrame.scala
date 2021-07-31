@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1ExplicitContentFrame extends StObject {
   
   /** Likelihood of the pornography content.. */
-  var pornographyLikelihood: js.UndefOr[String] = js.native
+  var pornographyLikelihood: js.UndefOr[String] = js.undefined
   
   /** Time-offset, relative to the beginning of the video, corresponding to the video frame for this location. */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1ExplicitContentFrame {
   

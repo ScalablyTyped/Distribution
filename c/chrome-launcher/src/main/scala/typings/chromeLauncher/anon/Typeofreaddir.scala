@@ -12,7 +12,6 @@ import typings.node.fsMod.Dirent
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,12 +23,12 @@ trait Typeofreaddir extends StObject {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: Null,
     callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: Null,
+    options: Unit,
     callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
   ): Unit = js.native
   def apply(

@@ -5,7 +5,6 @@ import typings.d3Geo.mod.GeoGeometryObjects
 import typings.geojson.mod.GeoJsonProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geoMod {

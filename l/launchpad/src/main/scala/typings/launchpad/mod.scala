@@ -2,20 +2,25 @@ package typings.launchpad
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("launchpad", "browserstack")
+  @JSImport("launchpad", JSImport.Namespace)
   @js.native
-  def browserstack(authCreds: BrowserstackAuth, cb: js.Function2[/* err */ js.Any, /* browserstack */ Launcher, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def browserstack(authCreds: BrowserstackAuth, cb: js.Function2[/* err */ js.Any, /* browserstack */ Launcher, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("browserstack")(authCreds.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object local {
     
+    @scala.inline
+    def apply(cb: js.Function2[/* err */ js.Any, /* localBrowsers */ Launcher, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
     @JSImport("launchpad", "local")
     @js.native
-    def apply(cb: js.Function2[/* err */ js.Any, /* localBrowsers */ Launcher, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
     object platform {
       
@@ -91,14 +96,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Browser extends StObject {
     
-    var binPath: String = js.native
+    var binPath: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Browser {
     
@@ -128,34 +132,33 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait BrowserPlatformDetails extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var defaultLocation: js.UndefOr[String] = js.native
+    var defaultLocation: js.UndefOr[String] = js.undefined
     
     var getCommand: js.UndefOr[
         js.Function3[/* browser */ this.type, /* url */ String, /* args */ js.Array[String], String]
-      ] = js.native
+      ] = js.undefined
     
-    var imageName: js.UndefOr[String] = js.native
+    var imageName: js.UndefOr[String] = js.undefined
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var opensTab: js.UndefOr[Boolean] = js.native
+    var opensTab: js.UndefOr[Boolean] = js.undefined
     
-    var pathQuery: js.UndefOr[String] = js.native
+    var pathQuery: js.UndefOr[String] = js.undefined
     
-    var plistPath: js.UndefOr[String] = js.native
+    var plistPath: js.UndefOr[String] = js.undefined
     
-    var process: js.UndefOr[String] = js.native
+    var process: js.UndefOr[String] = js.undefined
     
-    var versionKey: js.UndefOr[String] = js.native
+    var versionKey: js.UndefOr[String] = js.undefined
   }
   object BrowserPlatformDetails {
     
@@ -245,12 +248,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BrowserstackAuth extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object BrowserstackAuth {
     
@@ -298,12 +300,11 @@ object mod {
     def stop(cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait LaunchOptions extends StObject {
     
-    var browser: String = js.native
+    var browser: String
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object LaunchOptions {
     

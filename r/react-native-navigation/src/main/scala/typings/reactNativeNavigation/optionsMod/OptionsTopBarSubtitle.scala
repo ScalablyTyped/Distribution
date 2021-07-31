@@ -3,48 +3,46 @@ package typings.reactNativeNavigation.optionsMod
 import typings.reactNativeNavigation.reactNativeNavigationStrings.center
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarSubtitle extends StObject {
   
   /**
     * Set subtitle alignment
     */
-  var alignment: js.UndefOr[center] = js.native
+  var alignment: js.UndefOr[center] = js.undefined
   
   /**
     * Set subtitle color
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the font family for the subtitle
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Set subtitle font size
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style for a text
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Set subtitle text
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object OptionsTopBarSubtitle {
   

@@ -2,23 +2,23 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageOverlayOptions extends InteractiveLayerOptions {
+trait ImageOverlayOptions
+  extends StObject
+     with InteractiveLayerOptions {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.native
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   
-  var errorOverlayUrl: js.UndefOr[String] = js.native
+  var errorOverlayUrl: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ImageOverlayOptions {
   

@@ -3,7 +3,6 @@ package typings.diLite
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DiLite {
@@ -25,7 +24,7 @@ object DiLite {
     
     def inject[T](name: String, o: T, dependencies: String): T = js.native
     
-    var map: Dictionary[_] = js.native
+    var map: Dictionary[js.Any] = js.native
     
     def ready[T](o: js.Any): T = js.native
     def ready[T](o: js.Function): T = js.native
@@ -33,22 +32,21 @@ object DiLite {
     def register[T](name: String, service: T): Entry = js.native
   }
   
-  @js.native
   trait DiLiteStatic extends StObject {
     
-    def createContext(): CreateContext = js.native
+    def createContext(): CreateContext
     
-    def dependencyExpression(depExp: String): String = js.native
+    def dependencyExpression(depExp: String): String
     
-    def entry(name: String, ctx: CreateContext): js.Any = js.native
+    def entry(name: String, ctx: CreateContext): js.Any
     
-    var factory: FactoryEnum = js.native
+    var factory: FactoryEnum
     
-    var strategy: StrategyEnum = js.native
+    var strategy: StrategyEnum
     
-    var utils: Utils = js.native
+    var utils: Utils
     
-    var version: String = js.native
+    var version: String
   }
   object DiLiteStatic {
     
@@ -118,10 +116,9 @@ object DiLite {
     def `type`[T](t: T): Entry = js.native
   }
   
-  @js.native
   trait FactoryEnum extends StObject {
     
-    def func[T](`type`: T, args: js.Any): T = js.native
+    def func[T](`type`: T, args: js.Any): T
   }
   object FactoryEnum {
     
@@ -152,14 +149,7 @@ object DiLite {
     ): TObject = js.native
     
     def singleton[TObject, TType](name: String, `object`: TObject, `type`: TType, args: js.Any): TObject = js.native
-    def singleton[TObject, TType](
-      name: String,
-      `object`: TObject,
-      `type`: TType,
-      args: js.Any,
-      ctx: js.UndefOr[scala.Nothing],
-      dependencies: js.Any
-    ): TObject = js.native
+    def singleton[TObject, TType](name: String, `object`: TObject, `type`: TType, args: js.Any, ctx: Unit, dependencies: js.Any): TObject = js.native
     def singleton[TObject, TType](name: String, `object`: TObject, `type`: TType, args: js.Any, ctx: CreateContext): TObject = js.native
     def singleton[TObject, TType](
       name: String,
@@ -171,10 +161,9 @@ object DiLite {
     ): TObject = js.native
   }
   
-  @js.native
   trait Utils extends StObject {
     
-    def invokeStmt(args: js.Any, op: String): String = js.native
+    def invokeStmt(args: js.Any, op: String): String
   }
   object Utils {
     

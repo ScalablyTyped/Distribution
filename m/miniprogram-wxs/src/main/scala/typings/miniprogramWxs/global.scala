@@ -6,9 +6,10 @@ import typings.miniprogramWxs.Intl.DateTimeFormat
 import typings.miniprogramWxs.Intl.DateTimeFormatOptions
 import typings.miniprogramWxs.Intl.NumberFormat
 import typings.miniprogramWxs.Intl.NumberFormatOptions
+import typings.miniprogramWxs.Intl.ResolvedCollatorOptions
+import typings.miniprogramWxs.Intl.ResolvedNumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -23,8 +24,15 @@ object global {
   @JSGlobal("Error")
   @js.native
   class Error ()
-    extends typings.miniprogramWxs.Error {
+    extends StObject
+       with typings.miniprogramWxs.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("Error")
   @js.native
@@ -36,8 +44,15 @@ object global {
   @JSGlobal("EvalError")
   @js.native
   class EvalError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("EvalError")
   @js.native
@@ -58,140 +73,140 @@ object global {
     
     object Collator {
       
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(): typings.miniprogramWxs.Intl.Collator = js.native
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(locales: js.UndefOr[scala.Nothing], options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = js.native
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.Collator = js.native
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(locales: java.lang.String, options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = js.native
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.Collator = js.native
-      @JSGlobal("Intl.Collator")
-      @js.native
-      def apply(locales: Array[java.lang.String], options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = js.native
+      @scala.inline
+      def apply(): typings.miniprogramWxs.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.miniprogramWxs.Intl.Collator]
+      @scala.inline
+      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.Collator]
+      @scala.inline
+      def apply(locales: java.lang.String, options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.Collator]
+      @scala.inline
+      def apply(locales: Unit, options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.Collator]
+      @scala.inline
+      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.Collator]
+      @scala.inline
+      def apply(locales: Array[java.lang.String], options: CollatorOptions): typings.miniprogramWxs.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.Collator]
       
-      @JSGlobal("Intl.Collator.supportedLocalesOf")
+      @JSGlobal("Intl.Collator")
       @js.native
-      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.Collator.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: java.lang.String, options: CollatorOptions): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.Collator.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.Collator.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String], options: CollatorOptions): Array[java.lang.String] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String, options: CollatorOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String], options: CollatorOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.Collator")
     @js.native
-    class CollatorCls () extends Collator {
+    class CollatorCls ()
+      extends StObject
+         with Collator {
       def this(locales: java.lang.String) = this()
       def this(locales: Array[java.lang.String]) = this()
-      def this(locales: js.UndefOr[scala.Nothing], options: CollatorOptions) = this()
       def this(locales: java.lang.String, options: CollatorOptions) = this()
+      def this(locales: Unit, options: CollatorOptions) = this()
       def this(locales: Array[java.lang.String], options: CollatorOptions) = this()
+      
+      /* CompleteClass */
+      override def compare(x: java.lang.String, y: java.lang.String): Double = js.native
+      
+      /* CompleteClass */
+      override def resolvedOptions(): ResolvedCollatorOptions = js.native
     }
     
     object DateTimeFormat {
       
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(locales: java.lang.String, options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
-      @JSGlobal("Intl.DateTimeFormat")
-      @js.native
-      def apply(locales: Array[java.lang.String], options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
+      @scala.inline
+      def apply(): typings.miniprogramWxs.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
+      @scala.inline
+      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
+      @scala.inline
+      def apply(locales: java.lang.String, options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
+      @scala.inline
+      def apply(locales: Unit, options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
+      @scala.inline
+      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
+      @scala.inline
+      def apply(locales: Array[java.lang.String], options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.DateTimeFormat]
       
-      @JSGlobal("Intl.DateTimeFormat.supportedLocalesOf")
+      @JSGlobal("Intl.DateTimeFormat")
       @js.native
-      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.DateTimeFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: java.lang.String, options: DateTimeFormatOptions): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.DateTimeFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.DateTimeFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String], options: DateTimeFormatOptions): Array[java.lang.String] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String, options: DateTimeFormatOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String], options: DateTimeFormatOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.DateTimeFormat")
     @js.native
-    class DateTimeFormatCls () extends DateTimeFormat {
+    class DateTimeFormatCls ()
+      extends StObject
+         with DateTimeFormat {
       def this(locales: java.lang.String) = this()
       def this(locales: Array[java.lang.String]) = this()
-      def this(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions) = this()
       def this(locales: java.lang.String, options: DateTimeFormatOptions) = this()
+      def this(locales: Unit, options: DateTimeFormatOptions) = this()
       def this(locales: Array[java.lang.String], options: DateTimeFormatOptions) = this()
     }
     
     object NumberFormat {
       
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(): typings.miniprogramWxs.Intl.NumberFormat = js.native
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.NumberFormat = js.native
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(locales: java.lang.String, options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.NumberFormat = js.native
-      @JSGlobal("Intl.NumberFormat")
-      @js.native
-      def apply(locales: Array[java.lang.String], options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = js.native
+      @scala.inline
+      def apply(): typings.miniprogramWxs.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
+      @scala.inline
+      def apply(locales: java.lang.String): typings.miniprogramWxs.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
+      @scala.inline
+      def apply(locales: java.lang.String, options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
+      @scala.inline
+      def apply(locales: Unit, options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
+      @scala.inline
+      def apply(locales: Array[java.lang.String]): typings.miniprogramWxs.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
+      @scala.inline
+      def apply(locales: Array[java.lang.String], options: NumberFormatOptions): typings.miniprogramWxs.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.miniprogramWxs.Intl.NumberFormat]
       
-      @JSGlobal("Intl.NumberFormat.supportedLocalesOf")
+      @JSGlobal("Intl.NumberFormat")
       @js.native
-      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.NumberFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: java.lang.String, options: NumberFormatOptions): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.NumberFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = js.native
-      @JSGlobal("Intl.NumberFormat.supportedLocalesOf")
-      @js.native
-      def supportedLocalesOf(locales: Array[java.lang.String], options: NumberFormatOptions): Array[java.lang.String] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: java.lang.String, options: NumberFormatOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String]): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+      @scala.inline
+      def supportedLocalesOf(locales: Array[java.lang.String], options: NumberFormatOptions): Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Array[java.lang.String]]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Intl.NumberFormat")
     @js.native
-    class NumberFormatCls () extends NumberFormat {
+    class NumberFormatCls ()
+      extends StObject
+         with NumberFormat {
       def this(locales: java.lang.String) = this()
       def this(locales: Array[java.lang.String]) = this()
-      def this(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions) = this()
       def this(locales: java.lang.String, options: NumberFormatOptions) = this()
+      def this(locales: Unit, options: NumberFormatOptions) = this()
       def this(locales: Array[java.lang.String], options: NumberFormatOptions) = this()
+      
+      /* CompleteClass */
+      override def format(value: Double): java.lang.String = js.native
+      
+      /* CompleteClass */
+      override def resolvedOptions(): ResolvedNumberFormatOptions = js.native
     }
   }
   
@@ -231,8 +246,15 @@ object global {
   @JSGlobal("RangeError")
   @js.native
   class RangeError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("RangeError")
   @js.native
@@ -244,8 +266,15 @@ object global {
   @JSGlobal("ReferenceError")
   @js.native
   class ReferenceError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("ReferenceError")
   @js.native
@@ -257,8 +286,15 @@ object global {
   @JSGlobal("SyntaxError")
   @js.native
   class SyntaxError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("SyntaxError")
   @js.native
@@ -270,8 +306,15 @@ object global {
   @JSGlobal("TypeError")
   @js.native
   class TypeError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("TypeError")
   @js.native
@@ -283,8 +326,15 @@ object global {
   @JSGlobal("URIError")
   @js.native
   class URIError ()
-    extends typings.std.Error {
+    extends StObject
+       with typings.std.Error {
     def this(message: java.lang.String) = this()
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   @JSGlobal("URIError")
   @js.native
@@ -297,340 +347,74 @@ object global {
     */
   object console {
     
-    @JSGlobal("console.log")
+    @JSGlobal("console")
     @js.native
-    def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
-    @JSGlobal("console.log")
-    @js.native
-    def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
     * Gets the unencoded version of an encoded Uniform Resource Identifier (URI).
     * @param encodedURI A value representing an encoded URI.
     */
-  @JSGlobal("decodeURI")
-  @js.native
-  def decodeURI(encodedURI: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def decodeURI(encodedURI: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("decodeURI")(encodedURI.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * Gets the unencoded version of an encoded component of a Uniform Resource Identifier (URI).
     * @param encodedURIComponent A value representing an encoded URI component.
     */
-  @JSGlobal("decodeURIComponent")
-  @js.native
-  def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("decodeURIComponent")(encodedURIComponent.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * Encodes a text string as a valid Uniform Resource Identifier (URI)
     * @param uri A value representing an encoded URI.
     */
-  @JSGlobal("encodeURI")
-  @js.native
-  def encodeURI(uri: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def encodeURI(uri: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("encodeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * Encodes a text string as a valid component of a Uniform Resource Identifier (URI).
     * @param uriComponent A value representing an encoded URI component.
     */
-  @JSGlobal("encodeURIComponent")
-  @js.native
-  def encodeURIComponent(uriComponent: java.lang.String): java.lang.String = js.native
-  @JSGlobal("encodeURIComponent")
-  @js.native
-  def encodeURIComponent(uriComponent: scala.Boolean): java.lang.String = js.native
-  @JSGlobal("encodeURIComponent")
-  @js.native
-  def encodeURIComponent(uriComponent: Double): java.lang.String = js.native
+  @scala.inline
+  def encodeURIComponent(uriComponent: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("encodeURIComponent")(uriComponent.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  @scala.inline
+  def encodeURIComponent(uriComponent: scala.Boolean): java.lang.String = js.Dynamic.global.applyDynamic("encodeURIComponent")(uriComponent.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  @scala.inline
+  def encodeURIComponent(uriComponent: Double): java.lang.String = js.Dynamic.global.applyDynamic("encodeURIComponent")(uriComponent.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * 返回一个当前时间的对象。
     */
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(value: java.lang.String): Date = js.native
+  @scala.inline
+  def getDate(): Date = js.Dynamic.global.applyDynamic("getDate")().asInstanceOf[Date]
+  @scala.inline
+  def getDate(value: java.lang.String): Date = js.Dynamic.global.applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
   /**
     * 获取时间
     * @param value  时间
     * milliseconds: 从1970年1月1日00:00:00 UTC开始计算的毫秒数
     * datestring: 日期字符串，其格式为："month day, year hours:minutes:seconds"
     */
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(value: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double, minutes: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: Double,
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: js.UndefOr[scala.Nothing],
-    hours: Double,
-    minutes: Double,
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: Double, hours: js.UndefOr[scala.Nothing], minutes: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: Double, hours: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
-  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Date = js.native
-  @JSGlobal("getDate")
-  @js.native
+  @scala.inline
+  def getDate(value: Double): Date = js.Dynamic.global.applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
   def getDate(
     year: Double,
     month: Double,
@@ -639,35 +423,115 @@ object global {
     minutes: Double,
     seconds: Double,
     ms: Double
-  ): Date = js.native
+  ): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: Unit,
+    ms: Double
+  ): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    ms: Double
+  ): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Double, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(
+    year: Double,
+    month: Double,
+    date: Unit,
+    hours: Double,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Double, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Double, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Double, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def getDate(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Date = (js.Dynamic.global.applyDynamic("getDate")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Date]
   
   /**
     * 生成 regexp 对象需要使用 getRegExp函数。
     * @param pattern : 正则表达式的内容
     * @param flags ：修饰符`g`: global;`i`: ignoreCase; `m`: multiline
     */
-  @JSGlobal("getRegExp")
-  @js.native
-  def getRegExp(pattern: java.lang.String): RegExp = js.native
-  @JSGlobal("getRegExp")
-  @js.native
-  def getRegExp(pattern: java.lang.String, flags: java.lang.String): RegExp = js.native
+  @scala.inline
+  def getRegExp(pattern: java.lang.String): RegExp = js.Dynamic.global.applyDynamic("getRegExp")(pattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  @scala.inline
+  def getRegExp(pattern: java.lang.String, flags: java.lang.String): RegExp = (js.Dynamic.global.applyDynamic("getRegExp")(pattern.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
   /**
     * Determines whether a supplied number is finite.
     * @param number Any numeric value.
     */
-  @JSGlobal("isFinite")
-  @js.native
-  def isFinite(number: Double): scala.Boolean = js.native
+  @scala.inline
+  def isFinite(number: Double): scala.Boolean = js.Dynamic.global.applyDynamic("isFinite")(number.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   /**
     * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number).
     * @param number A numeric value.
     */
-  @JSGlobal("isNaN")
-  @js.native
-  def isNaN(number: Double): scala.Boolean = js.native
+  @scala.inline
+  def isNaN(number: Double): scala.Boolean = js.Dynamic.global.applyDynamic("isNaN")(number.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   /**
     * 模块
@@ -680,9 +544,8 @@ object global {
     * Converts a string to a floating-point number.
     * @param string A string that contains a floating-point number.
     */
-  @JSGlobal("parseFloat")
-  @js.native
-  def parseFloat(string: java.lang.String): Double = js.native
+  @scala.inline
+  def parseFloat(string: java.lang.String): Double = js.Dynamic.global.applyDynamic("parseFloat")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Converts A string to an integer.
@@ -691,10 +554,8 @@ object global {
     * If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal.
     * All other strings are considered decimal.
     */
-  @JSGlobal("parseInt")
-  @js.native
-  def parseInt(s: java.lang.String): Double = js.native
-  @JSGlobal("parseInt")
-  @js.native
-  def parseInt(s: java.lang.String, radix: Double): Double = js.native
+  @scala.inline
+  def parseInt(s: java.lang.String): Double = js.Dynamic.global.applyDynamic("parseInt")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def parseInt(s: java.lang.String, radix: Double): Double = (js.Dynamic.global.applyDynamic("parseInt")(s.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

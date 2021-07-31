@@ -4,23 +4,21 @@ import typings.stripeV3.stripeV3Strings.company
 import typings.stripeV3.stripeV3Strings.individual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchDebitDetails extends StObject {
   
-  var account_holder_type: individual | company = js.native
+  var account_holder_type: individual | company
   
-  var bank_name: String = js.native
+  var bank_name: String
   
-  var country: String = js.native
+  var country: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var last4: String = js.native
+  var last4: String
   
-  var routing_number: String = js.native
+  var routing_number: String
 }
 object AchDebitDetails {
   

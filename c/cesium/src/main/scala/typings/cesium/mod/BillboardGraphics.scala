@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.AlignedAxis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BillboardGraphics")
@@ -17,7 +16,7 @@ class BillboardGraphics () extends StObject {
   
   var color: js.UndefOr[Property] = js.native
   
-  var definitionChanged: js.UndefOr[Event[js.Array[_]]] = js.native
+  var definitionChanged: js.UndefOr[Event[js.Array[js.Any]]] = js.native
   
   var disableDepthTestDistance: js.UndefOr[Property] = js.native
   

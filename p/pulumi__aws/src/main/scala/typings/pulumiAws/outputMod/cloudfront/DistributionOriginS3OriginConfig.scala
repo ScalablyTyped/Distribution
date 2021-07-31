@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginS3OriginConfig extends StObject {
   
   /**
     * The [CloudFront origin access
     * identity][5] to associate with the origin.
     */
-  var originAccessIdentity: String = js.native
+  var originAccessIdentity: String
 }
 object DistributionOriginS3OriginConfig {
   

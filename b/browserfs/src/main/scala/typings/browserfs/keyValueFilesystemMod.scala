@@ -15,7 +15,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyValueFilesystemMod {
@@ -81,7 +80,7 @@ object keyValueFilesystemMod {
       * @return [Number] The current file position.
       */
     /* InferMemberOverrides */
-    override def getPos(): Double with js.UndefOr[Double] = js.native
+    override def getPos(): Double & js.UndefOr[Double] = js.native
     
     /**
       * Read data from the file.
@@ -302,15 +301,48 @@ object keyValueFilesystemMod {
   /* static members */
   object AsyncKeyValueFileSystem {
     
-    @JSImport("browserfs/dist/node/generic/key_value_filesystem", "AsyncKeyValueFileSystem.isAvailable")
+    @JSImport("browserfs/dist/node/generic/key_value_filesystem", "AsyncKeyValueFileSystem")
     @js.native
-    def isAvailable(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SimpleSyncRWTransaction")
   @js.native
-  class SimpleSyncRWTransaction protected () extends SyncKeyValueRWTransaction {
+  class SimpleSyncRWTransaction protected ()
+    extends StObject
+       with SyncKeyValueRWTransaction {
     def this(store: SimpleSyncStore) = this()
+    
+    /**
+      * Aborts and rolls back the transaction.
+      */
+    /* CompleteClass */
+    override def abort(): Unit = js.native
+    
+    /**
+      * Commits the transaction.
+      */
+    /* CompleteClass */
+    override def commit(): Unit = js.native
+    
+    /**
+      * Deletes the data at the given key.
+      * @param key The key to delete from the store.
+      */
+    /* CompleteClass */
+    override def del(key: String): Unit = js.native
+    
+    /**
+      * Retrieves the data at the given key. Throws an ApiError if an error occurs
+      * or if the key does not exist.
+      * @param key The key to look under for data.
+      * @return The data stored under the key, or undefined if not present.
+      */
+    /* CompleteClass */
+    override def get(key: String): js.UndefOr[Buffer] = js.native
     
     /**
       * Marks the given key as modified, and stashes its value if it has not been
@@ -328,6 +360,17 @@ object keyValueFilesystemMod {
       * Allows us to roll back commits.
       */
     var originalData: js.Any = js.native
+    
+    /**
+      * Adds the data to the store under the given key.
+      * @param key The key to add the data under.
+      * @param data The data to add to the store.
+      * @param overwrite If 'true', overwrite any existing data. If 'false',
+      *   avoids storing the data if the key exists.
+      * @return True if storage succeeded, false otherwise.
+      */
+    /* CompleteClass */
+    override def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
     
     /**
       * Stashes given key value pair into `originalData` if it doesn't already
@@ -401,7 +444,7 @@ object keyValueFilesystemMod {
       * @return [Number] The current file position.
       */
     /* InferMemberOverrides */
-    override def getPos(): Double with js.UndefOr[Double] = js.native
+    override def getPos(): Double & js.UndefOr[Double] = js.native
     
     /**
       * Read data from the file.
@@ -610,19 +653,21 @@ object keyValueFilesystemMod {
   /* static members */
   object SyncKeyValueFileSystem {
     
-    @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SyncKeyValueFileSystem.isAvailable")
+    @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SyncKeyValueFileSystem")
     @js.native
-    def isAvailable(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
-  @js.native
   trait AsyncKeyValueROTransaction extends StObject {
     
     /**
       * Retrieves the data at the given key.
       * @param key The key to look under for data.
       */
-    def get(key: String, cb: BFSCallback[Buffer]): Unit = js.native
+    def get(key: String, cb: BFSCallback[Buffer]): Unit
   }
   object AsyncKeyValueROTransaction {
     
@@ -640,24 +685,25 @@ object keyValueFilesystemMod {
     }
   }
   
-  @js.native
-  trait AsyncKeyValueRWTransaction extends AsyncKeyValueROTransaction {
+  trait AsyncKeyValueRWTransaction
+    extends StObject
+       with AsyncKeyValueROTransaction {
     
     /**
       * Aborts and rolls back the transaction.
       */
-    def abort(cb: BFSOneArgCallback): Unit = js.native
+    def abort(cb: BFSOneArgCallback): Unit
     
     /**
       * Commits the transaction.
       */
-    def commit(cb: BFSOneArgCallback): Unit = js.native
+    def commit(cb: BFSOneArgCallback): Unit
     
     /**
       * Deletes the data at the given key.
       * @param key The key to delete from the store.
       */
-    def del(key: String, cb: BFSOneArgCallback): Unit = js.native
+    def del(key: String, cb: BFSOneArgCallback): Unit
     
     /**
       * Adds the data to the store under the given key. Overwrites any existing
@@ -674,7 +720,7 @@ object keyValueFilesystemMod {
       data: Buffer,
       overwrite: Boolean,
       cb: js.Function2[/* e */ ApiError, /* committed */ js.UndefOr[Boolean], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object AsyncKeyValueRWTransaction {
     
@@ -735,14 +781,13 @@ object keyValueFilesystemMod {
     def name(): String = js.native
   }
   
-  @js.native
   trait SimpleSyncStore extends StObject {
     
-    def del(key: String): Unit = js.native
+    def del(key: String): Unit
     
-    def get(key: String): js.UndefOr[Buffer] = js.native
+    def get(key: String): js.UndefOr[Buffer]
     
-    def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
+    def put(key: String, data: Buffer, overwrite: Boolean): Boolean
   }
   object SimpleSyncStore {
     
@@ -766,13 +811,12 @@ object keyValueFilesystemMod {
     }
   }
   
-  @js.native
   trait SyncKeyValueFileSystemOptions extends StObject {
     
     /**
       * The actual key-value store to read from/write to.
       */
-    var store: SyncKeyValueStore = js.native
+    var store: SyncKeyValueStore
   }
   object SyncKeyValueFileSystemOptions {
     
@@ -790,7 +834,6 @@ object keyValueFilesystemMod {
     }
   }
   
-  @js.native
   trait SyncKeyValueROTransaction extends StObject {
     
     /**
@@ -799,7 +842,7 @@ object keyValueFilesystemMod {
       * @param key The key to look under for data.
       * @return The data stored under the key, or undefined if not present.
       */
-    def get(key: String): js.UndefOr[Buffer] = js.native
+    def get(key: String): js.UndefOr[Buffer]
   }
   object SyncKeyValueROTransaction {
     
@@ -817,24 +860,25 @@ object keyValueFilesystemMod {
     }
   }
   
-  @js.native
-  trait SyncKeyValueRWTransaction extends SyncKeyValueROTransaction {
+  trait SyncKeyValueRWTransaction
+    extends StObject
+       with SyncKeyValueROTransaction {
     
     /**
       * Aborts and rolls back the transaction.
       */
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     /**
       * Commits the transaction.
       */
-    def commit(): Unit = js.native
+    def commit(): Unit
     
     /**
       * Deletes the data at the given key.
       * @param key The key to delete from the store.
       */
-    def del(key: String): Unit = js.native
+    def del(key: String): Unit
     
     /**
       * Adds the data to the store under the given key.
@@ -844,7 +888,7 @@ object keyValueFilesystemMod {
       *   avoids storing the data if the key exists.
       * @return True if storage succeeded, false otherwise.
       */
-    def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
+    def put(key: String, data: Buffer, overwrite: Boolean): Boolean
   }
   object SyncKeyValueRWTransaction {
     

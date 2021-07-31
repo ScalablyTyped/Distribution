@@ -2,37 +2,35 @@ package typings.googleapis.dnsV1Mod.dnsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaQuota extends StObject {
   
-  var dnsKeysPerManagedZone: js.UndefOr[Double] = js.native
+  var dnsKeysPerManagedZone: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#quota&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var managedZones: js.UndefOr[Double] = js.native
+  var managedZones: js.UndefOr[Double] = js.undefined
   
-  var managedZonesPerNetwork: js.UndefOr[Double] = js.native
+  var managedZonesPerNetwork: js.UndefOr[Double] = js.undefined
   
-  var networksPerManagedZone: js.UndefOr[Double] = js.native
+  var networksPerManagedZone: js.UndefOr[Double] = js.undefined
   
-  var resourceRecordsPerRrset: js.UndefOr[Double] = js.native
+  var resourceRecordsPerRrset: js.UndefOr[Double] = js.undefined
   
-  var rrsetAdditionsPerChange: js.UndefOr[Double] = js.native
+  var rrsetAdditionsPerChange: js.UndefOr[Double] = js.undefined
   
-  var rrsetDeletionsPerChange: js.UndefOr[Double] = js.native
+  var rrsetDeletionsPerChange: js.UndefOr[Double] = js.undefined
   
-  var rrsetsPerManagedZone: js.UndefOr[Double] = js.native
+  var rrsetsPerManagedZone: js.UndefOr[Double] = js.undefined
   
-  var totalRrdataSizePerChange: js.UndefOr[Double] = js.native
+  var totalRrdataSizePerChange: js.UndefOr[Double] = js.undefined
   
-  var whitelistedKeySpecs: js.UndefOr[js.Array[SchemaDnsKeySpec]] = js.native
+  var whitelistedKeySpecs: js.UndefOr[js.Array[SchemaDnsKeySpec]] = js.undefined
 }
 object SchemaQuota {
   

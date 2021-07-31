@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLabelsResponse extends StObject {
   
   /**
     * List of labels. Note that each label resource only contains an `id`, `name`, `messageListVisibility`, `labelListVisibility`, and `type`. The labels.get method can fetch additional
     * label details.
     */
-  var labels: js.UndefOr[js.Array[Label]] = js.native
+  var labels: js.UndefOr[js.Array[Label]] = js.undefined
 }
 object ListLabelsResponse {
   

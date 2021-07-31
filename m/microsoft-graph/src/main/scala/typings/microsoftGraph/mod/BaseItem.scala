@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseItem extends Entity {
+trait BaseItem
+  extends StObject
+     with Entity {
   
   // Identity of the user, device, or application which created the item. Read-only.
-  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Identity of the user who created the item. Read-only.
-  var createdByUser: js.UndefOr[NullableOption[User]] = js.native
+  var createdByUser: js.UndefOr[NullableOption[User]] = js.undefined
   
   // Date and time of item creation. Read-only.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Provides a user-visible description of the item. Optional.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ETag for the item. Read-only.
-  var eTag: js.UndefOr[NullableOption[String]] = js.native
+  var eTag: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identity of the user, device, and application which last modified the item. Read-only.
-  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Identity of the user who last modified the item. Read-only.
-  var lastModifiedByUser: js.UndefOr[NullableOption[User]] = js.native
+  var lastModifiedByUser: js.UndefOr[NullableOption[User]] = js.undefined
   
   // Date and time the item was last modified. Read-only.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The name of the item. Read-write.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Parent information, if the item has a parent. Read-write.
-  var parentReference: js.UndefOr[NullableOption[ItemReference]] = js.native
+  var parentReference: js.UndefOr[NullableOption[ItemReference]] = js.undefined
   
   // URL that displays the resource in the browser. Read-only.
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object BaseItem {
   

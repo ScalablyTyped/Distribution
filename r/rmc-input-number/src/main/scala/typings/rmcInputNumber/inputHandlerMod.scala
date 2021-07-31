@@ -3,7 +3,6 @@ package typings.rmcInputNumber
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputHandlerMod {
@@ -16,22 +15,21 @@ object inputHandlerMod {
   trait InputHandler
     extends Component[PropsType, js.Object, js.Any]
   
-  @js.native
   trait PropsType extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    def onTouchEnd(e: js.Any): Unit = js.native
+    def onTouchEnd(e: js.Any): Unit
     
-    def onTouchStart(e: js.Any): Unit = js.native
+    def onTouchStart(e: js.Any): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
   }
   object PropsType {
     

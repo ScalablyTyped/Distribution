@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `213` extends StObject {
   
-  var `type`: JSXOpeningFragment = js.native
+  var `type`: JSXOpeningFragment
 }
 object `213` {
   
   @scala.inline
-  def apply(`type`: JSXOpeningFragment): `213` = {
+  def apply(): `213` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXOpeningFragment")
     __obj.asInstanceOf[`213`]
   }
   

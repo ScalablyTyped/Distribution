@@ -2,23 +2,21 @@ package typings.cliTable2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Border extends StObject {
     
-    var border: js.Array[String] = js.native
+    var border: js.Array[String]
     
-    var compact: Boolean = js.native
+    var compact: Boolean
     
-    var head: js.Array[String] = js.native
+    var head: js.Array[String]
     
-    var `padding-left`: Double = js.native
+    var `padding-left`: Double
     
-    var `padding-right`: Double = js.native
+    var `padding-right`: Double
   }
   object Border {
     
@@ -62,16 +60,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Head extends StObject {
     
-    var border: js.UndefOr[js.Array[String]] = js.native
+    var border: js.UndefOr[js.Array[String]] = js.undefined
     
-    var head: js.UndefOr[js.Array[String]] = js.native
+    var head: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `padding-left`: js.UndefOr[Double] = js.native
+    var `padding-left`: js.UndefOr[Double] = js.undefined
     
-    var `padding-right`: js.UndefOr[Double] = js.native
+    var `padding-right`: js.UndefOr[Double] = js.undefined
   }
   object Head {
     
@@ -117,38 +114,37 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<cli-table2.cli-table2.CharName, string>> */
-  @js.native
   trait PartialRecordCharNamestri extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var `bottom-left`: js.UndefOr[String] = js.native
+    var `bottom-left`: js.UndefOr[String] = js.undefined
     
-    var `bottom-mid`: js.UndefOr[String] = js.native
+    var `bottom-mid`: js.UndefOr[String] = js.undefined
     
-    var `bottom-right`: js.UndefOr[String] = js.native
+    var `bottom-right`: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var `left-mid`: js.UndefOr[String] = js.native
+    var `left-mid`: js.UndefOr[String] = js.undefined
     
-    var mid: js.UndefOr[String] = js.native
+    var mid: js.UndefOr[String] = js.undefined
     
-    var `mid-mid`: js.UndefOr[String] = js.native
+    var `mid-mid`: js.UndefOr[String] = js.undefined
     
-    var middle: js.UndefOr[String] = js.native
+    var middle: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var `right-mid`: js.UndefOr[String] = js.native
+    var `right-mid`: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var `top-left`: js.UndefOr[String] = js.native
+    var `top-left`: js.UndefOr[String] = js.undefined
     
-    var `top-mid`: js.UndefOr[String] = js.native
+    var `top-mid`: js.UndefOr[String] = js.undefined
     
-    var `top-right`: js.UndefOr[String] = js.native
+    var `top-right`: js.UndefOr[String] = js.undefined
   }
   object PartialRecordCharNamestri {
     
@@ -254,38 +250,37 @@ object anon {
   }
   
   /* Inlined std.Record<cli-table2.cli-table2.CharName, string> */
-  @js.native
   trait RecordCharNamestring extends StObject {
     
-    var bottom: String = js.native
+    var bottom: String
     
-    var `bottom-left`: String = js.native
+    var `bottom-left`: String
     
-    var `bottom-mid`: String = js.native
+    var `bottom-mid`: String
     
-    var `bottom-right`: String = js.native
+    var `bottom-right`: String
     
-    var left: String = js.native
+    var left: String
     
-    var `left-mid`: String = js.native
+    var `left-mid`: String
     
-    var mid: String = js.native
+    var mid: String
     
-    var `mid-mid`: String = js.native
+    var `mid-mid`: String
     
-    var middle: String = js.native
+    var middle: String
     
-    var right: String = js.native
+    var right: String
     
-    var `right-mid`: String = js.native
+    var `right-mid`: String
     
-    var top: String = js.native
+    var top: String
     
-    var `top-left`: String = js.native
+    var `top-left`: String
     
-    var `top-mid`: String = js.native
+    var `top-mid`: String
     
-    var `top-right`: String = js.native
+    var `top-right`: String
   }
   object RecordCharNamestring {
     

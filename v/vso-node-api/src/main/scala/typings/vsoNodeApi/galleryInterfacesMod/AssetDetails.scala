@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetDetails extends StObject {
   
   /**
     * Gets or sets the Answers, which contains vs marketplace extension name and publisher name
     */
-  var answers: Answers = js.native
+  var answers: Answers
   
   /**
     * Gets or sets the VS publisher Id
     */
-  var publisherNaturalIdentifier: String = js.native
+  var publisherNaturalIdentifier: String
 }
 object AssetDetails {
   

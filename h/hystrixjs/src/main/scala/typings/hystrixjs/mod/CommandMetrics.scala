@@ -2,37 +2,35 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandMetrics extends StObject {
   
-  def addExecutionTime(value: Double): Unit = js.native
+  def addExecutionTime(value: Double): Unit
   
-  def decrementExecutionCount(): Unit = js.native
+  def decrementExecutionCount(): Unit
   
-  def getCurrentExecutionCount(): Double = js.native
+  def getCurrentExecutionCount(): Double
   
-  def getExecutionTime(percentile: js.Any): Double = js.native
+  def getExecutionTime(percentile: js.Any): Double
   
-  def getHealthCounts(): HealthCounts = js.native
+  def getHealthCounts(): HealthCounts
   
-  def getRollingCount(`type`: js.Any): Double = js.native
+  def getRollingCount(`type`: js.Any): Double
   
-  def incrementExecutionCount(): Unit = js.native
+  def incrementExecutionCount(): Unit
   
-  def markFailure(): Unit = js.native
+  def markFailure(): Unit
   
-  def markRejected(): Unit = js.native
+  def markRejected(): Unit
   
-  def markShortCircuited(): Unit = js.native
+  def markShortCircuited(): Unit
   
-  def markSuccess(): Unit = js.native
+  def markSuccess(): Unit
   
-  def markTimeout(): Unit = js.native
+  def markTimeout(): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object CommandMetrics {
   

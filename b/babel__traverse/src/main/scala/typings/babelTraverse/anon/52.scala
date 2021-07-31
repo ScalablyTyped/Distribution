@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSBigIntKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `52` extends StObject {
   
-  var `type`: TSBigIntKeyword = js.native
+  var `type`: TSBigIntKeyword
 }
 object `52` {
   
   @scala.inline
-  def apply(`type`: TSBigIntKeyword): `52` = {
+  def apply(): `52` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSBigIntKeyword")
     __obj.asInstanceOf[`52`]
   }
   

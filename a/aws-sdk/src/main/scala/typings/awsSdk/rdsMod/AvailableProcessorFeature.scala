@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailableProcessorFeature extends StObject {
   
   /**
     * The allowed values for the processor feature of the DB instance class.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * The default value for the processor feature of the DB instance class.
     */
-  var DefaultValue: js.UndefOr[String] = js.native
+  var DefaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the processor feature. Valid names are coreCount and threadsPerCore.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object AvailableProcessorFeature {
   

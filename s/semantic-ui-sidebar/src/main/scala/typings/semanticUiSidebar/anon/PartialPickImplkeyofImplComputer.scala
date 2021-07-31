@@ -4,16 +4,14 @@ import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.Co
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplComputer extends StObject {
   
-  var computer: js.UndefOr[ComputerSettings] = js.native
+  var computer: js.UndefOr[ComputerSettings] = js.undefined
   
-  var mobile: js.UndefOr[MobileSettings] = js.native
+  var mobile: js.UndefOr[MobileSettings] = js.undefined
 }
 object PartialPickImplkeyofImplComputer {
   

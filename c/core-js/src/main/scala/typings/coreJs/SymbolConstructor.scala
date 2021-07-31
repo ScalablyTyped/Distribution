@@ -2,21 +2,19 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolConstructor extends StObject {
   
   /**
     * Non-standard. Use simple mode for core-js symbols. See https://github.com/zloirock/core-js/#caveats-when-using-symbol-polyfill
     */
-  def useSimple(): Unit = js.native
+  def useSimple(): Unit
   
   /**
     * Non-standard. Use setter mode for core-js symbols. See https://github.com/zloirock/core-js/#caveats-when-using-symbol-polyfill
     */
-  def userSetter(): Unit = js.native
+  def userSetter(): Unit
 }
 object SymbolConstructor {
   

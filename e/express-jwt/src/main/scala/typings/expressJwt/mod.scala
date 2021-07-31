@@ -10,24 +10,33 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): RequestHandler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  
   @JSImport("express-jwt", JSImport.Namespace)
   @js.native
-  def apply(options: Options): RequestHandler = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-jwt", "UnauthorizedError")
   @js.native
-  class UnauthorizedError protected () extends Error {
+  class UnauthorizedError protected ()
+    extends StObject
+       with Error {
     def this(code: ErrorCode, error: Message) = this()
     
     var code: ErrorCode = js.native
     
     var inner: Message = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_UnauthorizedError: typings.expressJwt.expressJwtStrings.UnauthorizedError = js.native
     
@@ -69,21 +78,21 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Options
-    extends /* property */ StringDictionary[js.Any] {
+    extends StObject
+       with /* property */ StringDictionary[js.Any] {
     
-    var credentialsRequired: js.UndefOr[Boolean] = js.native
+    var credentialsRequired: js.UndefOr[Boolean] = js.undefined
     
-    var getToken: js.UndefOr[GetTokenCallback] = js.native
+    var getToken: js.UndefOr[GetTokenCallback] = js.undefined
     
-    var isRevoked: js.UndefOr[IsRevokedCallback] = js.native
+    var isRevoked: js.UndefOr[IsRevokedCallback] = js.undefined
     
-    var requestProperty: js.UndefOr[String] = js.native
+    var requestProperty: js.UndefOr[String] = js.undefined
     
-    var secret: secretType | SecretCallback | SecretCallbackLong = js.native
+    var secret: secretType | SecretCallback | SecretCallbackLong
     
-    var userProperty: js.UndefOr[String] = js.native
+    var userProperty: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -147,9 +156,9 @@ object mod {
   trait RequestHandler
     extends typings.expressServeStaticCore.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
     
-    def unless(): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def unless(options: js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Boolean]): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def unless(options: typings.expressUnless.mod.Options): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def unless(): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def unless(options: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def unless(options: typings.expressUnless.mod.Options): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     @JSName("unless")
     var unless_Original: FnCall = js.native
   }

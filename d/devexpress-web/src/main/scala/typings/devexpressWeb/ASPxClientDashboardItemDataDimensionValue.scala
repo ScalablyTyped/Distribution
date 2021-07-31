@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides dimension values at the specified axis point.
   */
-@js.native
 trait ASPxClientDashboardItemDataDimensionValue extends StObject {
   
   /**
     * Gets the display text for the current dimension value.
     */
-  def GetDisplayText(): String = js.native
+  def GetDisplayText(): String
   
   /**
     * Gets the unique value for the current dimension value.
     */
-  def GetUniqueValue(): js.Any = js.native
+  def GetUniqueValue(): js.Any
   
   /**
     * Gets the current dimension value.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
 }
 object ASPxClientDashboardItemDataDimensionValue {
   

@@ -12,7 +12,7 @@ Diva.js
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1012 |
+| # downloads        | 1297 |
 | # stars            | 0 |
 
 ## Links

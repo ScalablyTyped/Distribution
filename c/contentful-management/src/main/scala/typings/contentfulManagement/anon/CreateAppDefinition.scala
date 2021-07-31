@@ -19,7 +19,6 @@ import typings.contentfulManagement.userMod.User
 import typings.contentfulManagement.userMod.UserProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

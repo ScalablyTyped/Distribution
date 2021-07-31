@@ -4,27 +4,25 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Web.Http.HttpResponseMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DownloadFailed event. */
-@js.native
 trait AdaptiveMediaSourceDownloadFailedEventArgs extends StObject {
   
   /** Gets the http response message, if any, returned from the failed media download request. */
-  var httpResponseMessage: HttpResponseMessage = js.native
+  var httpResponseMessage: HttpResponseMessage
   
   /** Gets the byte range length of the failed media download request. */
-  var resourceByteRangeLength: Double = js.native
+  var resourceByteRangeLength: Double
   
   /** Gets the byte range offset of the failed media download request. */
-  var resourceByteRangeOffset: Double = js.native
+  var resourceByteRangeOffset: Double
   
   /** Gets the resource type of the failed media download request. */
-  var resourceType: AdaptiveMediaSourceResourceType = js.native
+  var resourceType: AdaptiveMediaSourceResourceType
   
   /** Gets the resource URI of the failed media download request. */
-  var resourceUri: Uri = js.native
+  var resourceUri: Uri
 }
 object AdaptiveMediaSourceDownloadFailedEventArgs {
   

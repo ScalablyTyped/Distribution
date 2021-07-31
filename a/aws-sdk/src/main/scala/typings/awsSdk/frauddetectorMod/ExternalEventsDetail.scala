@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalEventsDetail extends StObject {
   
   /**
     * The ARN of the role that provides Amazon Fraud Detector access to the data location.
     */
-  var dataAccessRoleArn: iamRoleArn = js.native
+  var dataAccessRoleArn: iamRoleArn
   
   /**
     * The Amazon S3 bucket location for the data.
     */
-  var dataLocation: s3BucketLocation = js.native
+  var dataLocation: s3BucketLocation
 }
 object ExternalEventsDetail {
   

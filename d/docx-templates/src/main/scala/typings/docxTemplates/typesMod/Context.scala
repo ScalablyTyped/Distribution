@@ -4,57 +4,55 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.docxTemplates.anon.Wp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var buffers: Wp = js.native
+  var buffers: Wp
   
-  var cmd: String = js.native
+  var cmd: String
   
-  var fCmd: Boolean = js.native
+  var fCmd: Boolean
   
-  var fJump: Boolean = js.native
+  var fJump: Boolean
   
-  var fSeekQuery: Boolean = js.native
+  var fSeekQuery: Boolean
   
-  var gCntIf: Double = js.native
+  var gCntIf: Double
   
-  var htmlId: Double = js.native
+  var htmlId: Double
   
-  var htmls: Htmls = js.native
+  var htmls: Htmls
   
-  var imageId: Double = js.native
+  var imageId: Double
   
-  var images: Images = js.native
+  var images: Images
   
-  var jsSandbox: js.UndefOr[js.Object] = js.native
+  var jsSandbox: js.UndefOr[js.Object] = js.undefined
   
-  var level: Double = js.native
+  var level: Double
   
-  var linkId: Double = js.native
+  var linkId: Double
   
-  var links: Links = js.native
+  var links: Links
   
-  var loops: js.Array[LoopStatus] = js.native
+  var loops: js.Array[LoopStatus]
   
-  var options: CreateReportOptions = js.native
+  var options: CreateReportOptions
   
-  var pendingHtmlNode: js.UndefOr[TextNode | NonTextNode] = js.native
+  var pendingHtmlNode: js.UndefOr[TextNode | NonTextNode] = js.undefined
   
-  var pendingImageNode: js.UndefOr[NonTextNode] = js.native
+  var pendingImageNode: js.UndefOr[NonTextNode] = js.undefined
   
-  var pendingLinkNode: js.UndefOr[NonTextNode] = js.native
+  var pendingLinkNode: js.UndefOr[NonTextNode] = js.undefined
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var shorthands: StringDictionary[String] = js.native
+  var shorthands: StringDictionary[String]
   
-  var textRunPropsNode: js.UndefOr[NonTextNode] = js.native
+  var textRunPropsNode: js.UndefOr[NonTextNode] = js.undefined
   
-  var vars: StringDictionary[VarValue] = js.native
+  var vars: StringDictionary[VarValue]
 }
 object Context {
   

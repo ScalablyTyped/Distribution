@@ -2,17 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyle extends StObject {
   
-  var slant: js.UndefOr[FontSlant] = js.native
+  var slant: js.UndefOr[FontSlant] = js.undefined
   
-  var weight: js.UndefOr[FontWeight] = js.native
+  var weight: js.UndefOr[FontWeight] = js.undefined
   
-  var width: js.UndefOr[FontWidth] = js.native
+  var width: js.UndefOr[FontWidth] = js.undefined
 }
 object FontStyle {
   

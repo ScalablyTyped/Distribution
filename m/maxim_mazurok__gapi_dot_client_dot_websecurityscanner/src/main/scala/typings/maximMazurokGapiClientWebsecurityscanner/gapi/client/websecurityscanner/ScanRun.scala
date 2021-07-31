@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanRun extends StObject {
   
   /** Output only. The time at which the ScanRun reached termination state - that the ScanRun is either finished or stopped by user. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. If result_state is an ERROR, this field provides the primary reason for scan's termination and more details, if such are available. */
-  var errorTrace: js.UndefOr[ScanRunErrorTrace] = js.native
+  var errorTrace: js.UndefOr[ScanRunErrorTrace] = js.undefined
   
   /** Output only. The execution state of the ScanRun. */
-  var executionState: js.UndefOr[String] = js.native
+  var executionState: js.UndefOr[String] = js.undefined
   
   /** Output only. Whether the scan run has found any vulnerabilities. */
-  var hasVulnerabilities: js.UndefOr[Boolean] = js.native
+  var hasVulnerabilities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. The resource name of the ScanRun. The name follows the format of 'projects/{projectId}/scanConfigs/{scanConfigId}/scanRuns/{scanRunId}'. The ScanRun IDs are generated
     * by the system.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The percentage of total completion ranging from 0 to 100. If the scan is in queue, the value is 0. If the scan is running, the value ranges from 0 to 100. If the scan
     * is finished, the value is 100.
     */
-  var progressPercent: js.UndefOr[Double] = js.native
+  var progressPercent: js.UndefOr[Double] = js.undefined
   
   /** Output only. The result state of the ScanRun. This field is only available after the execution state reaches "FINISHED". */
-  var resultState: js.UndefOr[String] = js.native
+  var resultState: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which the ScanRun started. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of URLs crawled during this ScanRun. If the scan is in progress, the value represents the number of URLs crawled up to now. */
-  var urlsCrawledCount: js.UndefOr[String] = js.native
+  var urlsCrawledCount: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The number of URLs tested during this ScanRun. If the scan is in progress, the value represents the number of URLs tested up to now. The number of URLs tested is
     * usually larger than the number URLS crawled because typically a crawled URL is tested with multiple test payloads.
     */
-  var urlsTestedCount: js.UndefOr[String] = js.native
+  var urlsTestedCount: js.UndefOr[String] = js.undefined
   
   /** Output only. A list of warnings, if such are encountered during this scan run. */
-  var warningTraces: js.UndefOr[js.Array[ScanRunWarningTrace]] = js.native
+  var warningTraces: js.UndefOr[js.Array[ScanRunWarningTrace]] = js.undefined
 }
 object ScanRun {
   

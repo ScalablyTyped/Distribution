@@ -15,11 +15,12 @@ import typings.applepayjs.ApplePayJS.Event
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplePaySession extends EventTarget {
+trait ApplePaySession
+  extends StObject
+     with EventTarget {
   
   /**
     * Aborts the current Apple Pay session.

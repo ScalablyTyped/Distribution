@@ -11,26 +11,26 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLTableCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableSortableHeaderCellProps extends TableHeaderCellProps {
+trait TableSortableHeaderCellProps
+  extends StObject
+     with TableHeaderCellProps {
   
   var onSortChange: AbstractEventHandler[
     (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement], 
     js.Object
-  ] = js.native
+  ]
   
-  var sortOrder: asc | desc = js.native
+  var sortOrder: asc | desc
   
-  var status: active | inactive = js.native
+  var status: active | inactive
 }
 object TableSortableHeaderCellProps {
   
   @scala.inline
   def apply(
-    onSortChange: /* arg */ js.Object with (Event[
+    onSortChange: /* arg */ js.Object & (Event[
       (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement]
     ]) => Unit,
     sortOrder: asc | desc,
@@ -45,7 +45,7 @@ object TableSortableHeaderCellProps {
     
     @scala.inline
     def setOnSortChange(
-      value: /* arg */ js.Object with (Event[
+      value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLTableCellElement, NativeMouseEvent]) | KeyboardEvent[HTMLTableCellElement]
         ]) => Unit
     ): Self = StObject.set(x, "onSortChange", js.Any.fromFunction1(value))

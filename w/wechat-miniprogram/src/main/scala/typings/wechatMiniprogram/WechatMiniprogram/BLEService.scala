@@ -2,18 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 设备服务列表 */
-@js.native
 trait BLEService extends StObject {
   
   /** 该服务是否为主服务 */
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
   /** 蓝牙设备服务的 uuid */
-  var uuid: String = js.native
+  var uuid: String
 }
 object BLEService {
   

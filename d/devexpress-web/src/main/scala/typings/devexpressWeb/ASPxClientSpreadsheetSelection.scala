@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the selection in the Spreadsheet.
   */
-@js.native
 trait ASPxClientSpreadsheetSelection extends StObject {
   
   /**
     * Gets the column index of the active cell.
     */
-  var activeCellColumnIndex: Double = js.native
+  var activeCellColumnIndex: Double
   
   /**
     * Gets the row index of the active cell.
     */
-  var activeCellRowIndex: Double = js.native
+  var activeCellRowIndex: Double
   
   /**
     * Gets the index of the selection's bottom row.
     */
-  var bottomRowIndex: Double = js.native
+  var bottomRowIndex: Double
   
   /**
     * Gets the index of the selection's left column.
     */
-  var leftColumnIndex: Double = js.native
+  var leftColumnIndex: Double
   
   /**
     * Gets the index of the selection's right column.
     */
-  var rightColumnIndex: Double = js.native
+  var rightColumnIndex: Double
   
   /**
     * Gets the index of the selection's top row.
     */
-  var topRowIndex: Double = js.native
+  var topRowIndex: Double
 }
 object ASPxClientSpreadsheetSelection {
   

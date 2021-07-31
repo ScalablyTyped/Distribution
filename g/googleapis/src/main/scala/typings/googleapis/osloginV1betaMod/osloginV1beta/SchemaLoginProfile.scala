@@ -3,30 +3,28 @@ package typings.googleapis.osloginV1betaMod.osloginV1beta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The user profile information used for logging in to a virtual machine on
   * Google Compute Engine.
   */
-@js.native
 trait SchemaLoginProfile extends StObject {
   
   /**
     * A unique user ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of POSIX accounts associated with the user.
     */
-  var posixAccounts: js.UndefOr[js.Array[SchemaPosixAccount]] = js.native
+  var posixAccounts: js.UndefOr[js.Array[SchemaPosixAccount]] = js.undefined
   
   /**
     * A map from SSH public key fingerprint to the associated key object.
     */
-  var sshPublicKeys: js.UndefOr[StringDictionary[SchemaSshPublicKey]] = js.native
+  var sshPublicKeys: js.UndefOr[StringDictionary[SchemaSshPublicKey]] = js.undefined
 }
 object SchemaLoginProfile {
   

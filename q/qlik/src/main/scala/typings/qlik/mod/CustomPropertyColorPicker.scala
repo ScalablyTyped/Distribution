@@ -4,27 +4,26 @@ import typings.qlik.qlikStrings.`color-picker`
 import typings.qlik.qlikStrings.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyColorPicker
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: `color-picker` = js.native
+  var component: `color-picker`
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyColorPicker: integer = js.native
+  var type_CustomPropertyColorPicker: integer
 }
 object CustomPropertyColorPicker {
   
   @scala.inline
-  def apply(component: `color-picker`, `type`: integer): CustomPropertyColorPicker = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertyColorPicker = {
+    val __obj = js.Dynamic.literal(component = "color-picker")
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[CustomPropertyColorPicker]
   }
   

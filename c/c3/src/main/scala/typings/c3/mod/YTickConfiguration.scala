@@ -2,16 +2,16 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YTickConfiguration extends TickConfiguration {
+trait YTickConfiguration
+  extends StObject
+     with TickConfiguration {
   
   /**
     * A function to format y-axis tick values.
     */
-  var format: js.UndefOr[js.Function1[/* x */ Double, String | Double]] = js.native
+  var format: js.UndefOr[js.Function1[/* x */ Double, String | Double]] = js.undefined
 }
 object YTickConfiguration {
   

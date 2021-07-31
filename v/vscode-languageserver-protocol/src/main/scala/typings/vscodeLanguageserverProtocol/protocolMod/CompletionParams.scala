@@ -4,12 +4,11 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionParams
-  extends TextDocumentPositionParams
+  extends StObject
+     with TextDocumentPositionParams
      with WorkDoneProgressParams
      with PartialResultParams {
   
@@ -17,7 +16,7 @@ trait CompletionParams
     * The completion context. This is only available it the client specifies
     * to send this using the client capability `textDocument.completion.contextSupport === true`
     */
-  var context: js.UndefOr[CompletionContext] = js.native
+  var context: js.UndefOr[CompletionContext] = js.undefined
 }
 object CompletionParams {
   

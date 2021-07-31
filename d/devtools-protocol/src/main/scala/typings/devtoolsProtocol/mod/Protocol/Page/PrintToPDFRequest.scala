@@ -4,21 +4,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsBase64
 import typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintToPDFRequest extends StObject {
   
   /**
     * Display header and footer. Defaults to false.
     */
-  var displayHeaderFooter: js.UndefOr[Boolean] = js.native
+  var displayHeaderFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTML template for the print footer. Should use the same format as the `headerTemplate`.
     */
-  var footerTemplate: js.UndefOr[String] = js.native
+  var footerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * HTML template for the print header. Should be valid HTML markup with following
@@ -31,75 +29,75 @@ trait PrintToPDFRequest extends StObject {
     * 
     * For example, `<span class=title></span>` would generate span containing the title.
     */
-  var headerTemplate: js.UndefOr[String] = js.native
+  var headerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to silently ignore invalid but successfully parsed page ranges, such as '3-2'.
     * Defaults to false.
     */
-  var ignoreInvalidPageRanges: js.UndefOr[Boolean] = js.native
+  var ignoreInvalidPageRanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Paper orientation. Defaults to false.
     */
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Bottom margin in inches. Defaults to 1cm (~0.4 inches).
     */
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Left margin in inches. Defaults to 1cm (~0.4 inches).
     */
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Right margin in inches. Defaults to 1cm (~0.4 inches).
     */
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
   /**
     * Top margin in inches. Defaults to 1cm (~0.4 inches).
     */
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty string, which means
     * print all pages.
     */
-  var pageRanges: js.UndefOr[String] = js.native
+  var pageRanges: js.UndefOr[String] = js.undefined
   
   /**
     * Paper height in inches. Defaults to 11 inches.
     */
-  var paperHeight: js.UndefOr[Double] = js.native
+  var paperHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Paper width in inches. Defaults to 8.5 inches.
     */
-  var paperWidth: js.UndefOr[Double] = js.native
+  var paperWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not to prefer page size as defined by css. Defaults to false,
     * in which case the content will be scaled to fit the paper size.
     */
-  var preferCSSPageSize: js.UndefOr[Boolean] = js.native
+  var preferCSSPageSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Print background graphics. Defaults to false.
     */
-  var printBackground: js.UndefOr[Boolean] = js.native
+  var printBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scale of the webpage rendering. Defaults to 1.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * return as stream (PrintToPDFRequestTransferMode enum)
     */
-  var transferMode: js.UndefOr[ReturnAsBase64 | ReturnAsStream] = js.native
+  var transferMode: js.UndefOr[ReturnAsBase64 | ReturnAsStream] = js.undefined
 }
 object PrintToPDFRequest {
   

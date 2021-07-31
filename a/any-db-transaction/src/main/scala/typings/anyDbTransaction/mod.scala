@@ -5,7 +5,6 @@ import typings.anyDb.mod.Queryable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,77 +12,68 @@ object mod {
   /**
     * Start a transaction
     */
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable, beginStatement: String): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(q: Queryable): Transaction = ^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(q: Queryable, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(q: Queryable, options: Unit, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
-    options: js.UndefOr[scala.Nothing],
-    beginStatement: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable, options: js.UndefOr[scala.Nothing], beginStatement: String): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(
-    q: Queryable,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
+    beginStatement: Unit,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable, options: TransactionOptions): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
-    options: TransactionOptions,
-    beginStatement: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
-  def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(q: Queryable, options: TransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
     options: TransactionOptions,
     beginStatement: String,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
-  @JSImport("any-db-transaction", JSImport.Namespace)
-  @js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
+  def apply(
+    q: Queryable,
+    options: TransactionOptions,
+    beginStatement: Unit,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], beginStatement.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  @scala.inline
   def apply(
     q: Queryable,
     options: TransactionOptions,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
-  ): Transaction = js.native
+  ): Transaction = (^.asInstanceOf[js.Dynamic].apply(q.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  
+  @JSImport("any-db-transaction", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Transaction objects are are simple wrappers around a Connection that also implement the Queryable API,
@@ -129,38 +119,37 @@ object mod {
     def rollback(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   }
   
-  @js.native
   trait TransactionOptions extends StObject {
     
     /**
       * Adapter name e.g. 'mysql'
       */
-    var adapter: js.UndefOr[Adapter] = js.native
+    var adapter: js.UndefOr[Adapter] = js.undefined
     
     /**
       * Rollback automatically on error, default true
       */
-    var autoRollback: js.UndefOr[Boolean] = js.native
+    var autoRollback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * SQL statement for beginning a transaction, default 'BEGIN'
       */
-    var begin: js.UndefOr[String] = js.native
+    var begin: js.UndefOr[String] = js.undefined
     
     /**
       * Callback for transaction
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]] = js.undefined
     
     /**
       * SQL statement for committing a transaction, default 'COMMIT'
       */
-    var commit: js.UndefOr[String] = js.native
+    var commit: js.UndefOr[String] = js.undefined
     
     /**
       * SQL statement for rolling back a transaction, default 'ROLLBACK'
       */
-    var rollback: js.UndefOr[String] = js.native
+    var rollback: js.UndefOr[String] = js.undefined
   }
   object TransactionOptions {
     

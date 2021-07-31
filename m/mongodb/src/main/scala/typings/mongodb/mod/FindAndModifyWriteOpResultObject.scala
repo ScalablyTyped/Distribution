@@ -2,20 +2,18 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindAndModifyWriteOpResultObject[TSchema] extends StObject {
   
   //The raw lastErrorObject returned from the command.
-  var lastErrorObject: js.UndefOr[js.Any] = js.native
+  var lastErrorObject: js.UndefOr[js.Any] = js.undefined
   
   //Is 1 if the command executed correctly.
-  var ok: js.UndefOr[scala.Double] = js.native
+  var ok: js.UndefOr[scala.Double] = js.undefined
   
   //Document returned from findAndModify command.
-  var value: js.UndefOr[TSchema] = js.native
+  var value: js.UndefOr[TSchema] = js.undefined
 }
 object FindAndModifyWriteOpResultObject {
   
@@ -26,7 +24,7 @@ object FindAndModifyWriteOpResultObject {
   }
   
   @scala.inline
-  implicit class FindAndModifyWriteOpResultObjectMutableBuilder[Self <: FindAndModifyWriteOpResultObject[_], TSchema] (val x: Self with FindAndModifyWriteOpResultObject[TSchema]) extends AnyVal {
+  implicit class FindAndModifyWriteOpResultObjectMutableBuilder[Self <: FindAndModifyWriteOpResultObject[?], TSchema] (val x: Self & FindAndModifyWriteOpResultObject[TSchema]) extends AnyVal {
     
     @scala.inline
     def setLastErrorObject(value: js.Any): Self = StObject.set(x, "lastErrorObject", value.asInstanceOf[js.Any])

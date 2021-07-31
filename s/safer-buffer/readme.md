@@ -11,8 +11,8 @@ Modern Buffer API polyfill without footguns
 | Full name          | safer-buffer |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 787766465 |
+| # dependents       | 155 |
+| # downloads        | 957200488 |
 | # stars            | 0 |
 
 ## Links

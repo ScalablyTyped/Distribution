@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) A custom `Date` class for advanced date
     * handling. For example, JDate can be hooked in to handle Jalali dates.
     */
-  var Date: js.UndefOr[js.Any] = js.native
+  var Date: js.UndefOr[js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A callback to return the time zone offset
@@ -22,7 +20,7 @@ trait TimeOptions extends StObject {
     * using their local DST crossover dates, with the help of external
     * libraries.
     */
-  var getTimezoneOffset: js.UndefOr[TimezoneOffsetCallbackFunction] = js.native
+  var getTimezoneOffset: js.UndefOr[TimezoneOffsetCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allows to manually load the
@@ -30,7 +28,7 @@ trait TimeOptions extends StObject {
     * case of loading the library from a `script` tag, this option is not
     * needed, it will be loaded from there by default.
     */
-  var moment: js.UndefOr[js.Function] = js.native
+  var moment: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Requires moment.js. If the timezone option
@@ -39,7 +37,7 @@ trait TimeOptions extends StObject {
     * this throws a Highcharts error in the console, but does not crash the
     * chart.
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The timezone offset in minutes. Positive
@@ -47,7 +45,7 @@ trait TimeOptions extends StObject {
     * getTimezoneOffset method. Use this to display UTC based data in a
     * predefined time zone.
     */
-  var timezoneOffset: js.UndefOr[Double] = js.native
+  var timezoneOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use UTC time for axis
@@ -57,7 +55,7 @@ trait TimeOptions extends StObject {
     * is loaded in real time or when correct Daylight Saving Time transitions
     * are required.
     */
-  var useUTC: js.UndefOr[Boolean] = js.native
+  var useUTC: js.UndefOr[Boolean] = js.undefined
 }
 object TimeOptions {
   

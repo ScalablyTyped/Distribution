@@ -3,15 +3,15 @@ package typings.grammarkdown.grammarkdownMod
 import typings.grammarkdown.grammarkdownBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncHostOptions extends HostBaseOptions {
+trait AsyncHostOptions
+  extends StObject
+     with HostBaseOptions {
   
-  var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.native
+  var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.undefined
   
-  var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.native
+  var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.undefined
 }
 object AsyncHostOptions {
   

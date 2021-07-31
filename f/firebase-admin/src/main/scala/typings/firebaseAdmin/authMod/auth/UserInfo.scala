@@ -2,50 +2,48 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a user's info from a third-party identity provider
   * such as Google or Facebook.
   */
-@js.native
 trait UserInfo extends StObject {
   
   /**
     * The display name for the linked provider.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The email for the linked provider.
     */
-  var email: String = js.native
+  var email: String
   
   /**
     * The phone number for the linked provider.
     */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
   /**
     * The photo URL for the linked provider.
     */
-  var photoURL: String = js.native
+  var photoURL: String
   
   /**
     * The linked provider ID (for example, "google.com" for the Google provider).
     */
-  var providerId: String = js.native
+  var providerId: String
   
   /**
     * @return A JSON-serializable representation of this object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
   
   /**
     * The user identifier for the linked provider.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object UserInfo {
   

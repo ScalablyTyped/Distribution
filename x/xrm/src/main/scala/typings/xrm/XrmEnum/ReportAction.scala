@@ -4,7 +4,6 @@ import typings.xrm.xrmStrings.filter
 import typings.xrm.xrmStrings.run
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

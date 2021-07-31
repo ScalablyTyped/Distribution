@@ -2,23 +2,23 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UsageInfo extends ClientValueObject {
+trait UsageInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_bandwidth(): Double = js.native
+  def get_bandwidth(): Double
   
-  def get_discussionStorage(): Double = js.native
+  def get_discussionStorage(): Double
   
-  def get_hits(): Double = js.native
+  def get_hits(): Double
   
-  def get_storage(): Double = js.native
+  def get_storage(): Double
   
-  def get_storagePercentageUsed(): Double = js.native
+  def get_storagePercentageUsed(): Double
   
-  def get_visits(): Double = js.native
+  def get_visits(): Double
 }
 object UsageInfo {
   

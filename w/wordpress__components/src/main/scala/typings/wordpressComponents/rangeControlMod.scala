@@ -77,7 +77,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import typings.wordpressComponents.wordpressComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeControlMod {

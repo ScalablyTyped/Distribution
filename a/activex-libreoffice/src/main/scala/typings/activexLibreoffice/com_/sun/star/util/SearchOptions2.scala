@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.util.XTextSearch2}
   * @since LibreOffice 5.2
   */
-@js.native
-trait SearchOptions2 extends SearchOptions {
+trait SearchOptions2
+  extends StObject
+     with SearchOptions {
   
   /**
     * Search type, one of {@link com.sun.star.util.SearchAlgorithms2} constants. This is preferred over the content of the SearchAlgorithms {@link
     * SearchOptions.algorithmType} enum field.
     */
-  var AlgorithmType2: Double = js.native
+  var AlgorithmType2: Double
   
   /**
     * The escape character to be used with a {@link com.sun.star.util.SearchAlgorithms2.WILDCARD} search.
@@ -28,7 +28,7 @@ trait SearchOptions2 extends SearchOptions {
     *
     * Common values are '\' (U+005C REVERSE SOLIDUS) aka backslash in text processing context, or '~' (U+007E TILDE) in spreadsheet processing context.
     */
-  var WildcardEscapeCharacter: Double = js.native
+  var WildcardEscapeCharacter: Double
 }
 object SearchOptions2 {
   

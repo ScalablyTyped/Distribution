@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncreaseStreamRetentionPeriodInput extends StObject {
   
   /**
     * The new retention period of the stream, in hours. Must be more than the current retention period.
     */
-  var RetentionPeriodHours: typings.awsSdk.kinesisMod.RetentionPeriodHours = js.native
+  var RetentionPeriodHours: typings.awsSdk.kinesisMod.RetentionPeriodHours
   
   /**
     * The name of the stream to modify.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
 }
 object IncreaseStreamRetentionPeriodInput {
   

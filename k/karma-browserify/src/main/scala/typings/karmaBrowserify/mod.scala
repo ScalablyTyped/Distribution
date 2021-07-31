@@ -4,21 +4,21 @@ import typings.browserify.mod.BrowserifyObject
 import typings.browserify.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
-  trait BrowserifyOptions extends Options {
+  trait BrowserifyOptions
+    extends StObject
+       with Options {
     
     /**
       * You may perform additional configuration in a function passed as the configure option
       * and that receives the browserify instance as an argument.
       * See {@link https://github.com/nikku/karma-browserify#additional-bundle-configuration}
       */
-    var configure: js.UndefOr[js.Function1[/* bundle */ BrowserifyObject, Unit]] = js.native
+    var configure: js.UndefOr[js.Function1[/* bundle */ BrowserifyObject, Unit]] = js.undefined
   }
   object BrowserifyOptions {
     
@@ -39,20 +39,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Config entry to configure how the bundle gets created
       * see {@link https://github.com/nikku/karma-browserify#usage}
       */
-    var browserify: js.UndefOr[BrowserifyOptions] = js.native
+    var browserify: js.UndefOr[BrowserifyOptions] = js.undefined
     
     /**
       * You can configure the underlying watchify instance
       * see {@link https://github.com/nikku/karma-browserify#watchify-config}
       */
-    var watchify: js.UndefOr[WatchifyOptions] = js.native
+    var watchify: js.UndefOr[WatchifyOptions] = js.undefined
   }
   object ConfigOptions {
     

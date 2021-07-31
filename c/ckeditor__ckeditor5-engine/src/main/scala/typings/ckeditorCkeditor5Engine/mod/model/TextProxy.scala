@@ -5,14 +5,14 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/textproxy
 @JSImport("@ckeditor/ckeditor5-engine", "model.TextProxy")
 @js.native
 class TextProxy protected ()
-  extends Item
+  extends StObject
+     with Item
      with _NodeSet {
   protected def this(textNode: Text, offsetInText: Double, length: Double) = this()
   
@@ -28,7 +28,7 @@ class TextProxy protected ()
   
   def getAttributeKeys(): Iterable[String] = js.native
   
-  def getAttributes(): Iterable[_] = js.native
+  def getAttributes(): Iterable[js.Any] = js.native
   
   def getPath(): js.Array[Double] = js.native
   

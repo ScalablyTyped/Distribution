@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsModelsVersionsPatch extends StandardParameters {
+trait ParamsResourceProjectsModelsVersionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The name of the model.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.native
+  var requestBody: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.undefined
   
   /**
     * Required. Specifies the path, relative to `Version`, of the field to
@@ -36,7 +36,7 @@ trait ParamsResourceProjectsModelsVersionsPatch extends StandardParameters {
     * Currently the only supported update mask fields are `description` and
     * `autoScaling.minNodes`.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsModelsVersionsPatch {
   

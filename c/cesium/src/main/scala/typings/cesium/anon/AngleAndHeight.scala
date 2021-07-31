@@ -2,15 +2,13 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AngleAndHeight extends StObject {
   
-  var angleAndHeight: EndPosition = js.native
+  var angleAndHeight: EndPosition
   
-  var distance: EndPosition = js.native
+  var distance: EndPosition
 }
 object AngleAndHeight {
   

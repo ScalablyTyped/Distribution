@@ -3,15 +3,13 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.NONE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorPath extends StObject {
   
-  val data: String = js.native
+  val data: String
   
-  val windingRule: WindingRule | NONE = js.native
+  val windingRule: WindingRule | NONE
 }
 object VectorPath {
   

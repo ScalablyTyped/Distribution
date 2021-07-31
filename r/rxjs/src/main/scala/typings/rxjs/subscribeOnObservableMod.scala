@@ -6,7 +6,6 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscribeOnObservableMod {
@@ -16,8 +15,8 @@ object subscribeOnObservableMod {
   class SubscribeOnObservable[T] protected () extends Observable[T] {
     def this(source: Observable[T]) = this()
     def this(source: Observable[T], delayTime: Double) = this()
-    def this(source: Observable[T], delayTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike) = this()
     def this(source: Observable[T], delayTime: Double, scheduler: SchedulerLike) = this()
+    def this(source: Observable[T], delayTime: Unit, scheduler: SchedulerLike) = this()
     
     var delayTime: js.Any = js.native
     
@@ -29,32 +28,30 @@ object subscribeOnObservableMod {
   /* static members */
   object SubscribeOnObservable {
     
-    /** @nocollapse */
-    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable.create")
+    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable")
     @js.native
-    def create[T](source: Observable[T]): Observable[T] = js.native
-    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[T] = js.native
-    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: Double): Observable[T] = js.native
-    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = js.native
+    val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @JSImport("rxjs/internal/observable/SubscribeOnObservable", "SubscribeOnObservable.dispatch")
-    @js.native
-    def dispatch[T](arg: DispatchArg[T]): Subscription = js.native
+    @scala.inline
+    def create[T](source: Observable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Double): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Unit, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    
+    /** @nocollapse */
+    @scala.inline
+    def dispatch[T](arg: DispatchArg[T]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   }
   
-  @js.native
   trait DispatchArg[T] extends StObject {
     
-    var source: Observable[T] = js.native
+    var source: Observable[T]
     
-    var subscriber: Subscriber[T] = js.native
+    var subscriber: Subscriber[T]
   }
   object DispatchArg {
     
@@ -65,7 +62,7 @@ object subscribeOnObservableMod {
     }
     
     @scala.inline
-    implicit class DispatchArgMutableBuilder[Self <: DispatchArg[_], T] (val x: Self with DispatchArg[T]) extends AnyVal {
+    implicit class DispatchArgMutableBuilder[Self <: DispatchArg[?], T] (val x: Self & DispatchArg[T]) extends AnyVal {
       
       @scala.inline
       def setSource(value: Observable[T]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])

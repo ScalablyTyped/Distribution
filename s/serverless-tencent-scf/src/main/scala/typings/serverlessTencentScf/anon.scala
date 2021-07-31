@@ -3,19 +3,17 @@ package typings.serverlessTencentScf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Appid extends StObject {
     
-    var appid: String = js.native
+    var appid: String
     
-    var name: String = js.native
+    var name: String
     
-    var region: String = js.native
+    var region: String
   }
   object Appid {
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CosBucket extends StObject {
     
-    var cosBucket: Appid = js.native
+    var cosBucket: Appid
     
-    var cosNotificationId: String = js.native
+    var cosNotificationId: String
     
-    var cosObject: Key = js.native
+    var cosObject: Key
     
-    var cosSchemaVersion: String = js.native
+    var cosSchemaVersion: String
   }
   object CosBucket {
     
@@ -75,24 +72,23 @@ object anon {
     }
   }
   
-  @js.native
   trait EventName extends StObject {
     
-    var eventName: String = js.native
+    var eventName: String
     
-    var eventQueue: String = js.native
+    var eventQueue: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventTime: Double = js.native
+    var eventTime: Double
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var reqid: Double = js.native
+    var reqid: Double
     
-    var requestParameters: RequestHeaders = js.native
+    var requestParameters: RequestHeaders
     
-    var reservedInfo: String = js.native
+    var reservedInfo: String
   }
   object EventName {
     
@@ -140,18 +136,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var meta: StringDictionary[String] = js.native
+    var meta: StringDictionary[String]
     
-    var size: Double = js.native
+    var size: Double
     
-    var url: String = js.native
+    var url: String
     
-    var vid: String = js.native
+    var vid: String
   }
   object Key {
     
@@ -181,26 +176,25 @@ object anon {
     }
   }
   
-  @js.native
   trait MsgBody extends StObject {
     
-    var msgBody: String = js.native
+    var msgBody: String
     
-    var msgId: String = js.native
+    var msgId: String
     
-    var msgTag: String = js.native
+    var msgTag: String
     
-    var publishTime: String = js.native
+    var publishTime: String
     
-    var requestId: String = js.native
+    var requestId: String
     
-    var subscriptionName: String = js.native
+    var subscriptionName: String
     
-    var topicName: String = js.native
+    var topicName: String
     
-    var topicOwner: Double = js.native
+    var topicOwner: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MsgBody {
     
@@ -253,18 +247,17 @@ object anon {
     }
   }
   
-  @js.native
   trait MsgKey extends StObject {
     
-    var msgBody: String = js.native
+    var msgBody: String
     
-    var msgKey: String = js.native
+    var msgKey: String
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var partition: Double = js.native
+    var partition: Double
     
-    var topic: String = js.native
+    var topic: String
   }
   object MsgKey {
     
@@ -294,12 +287,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RequestHeaders extends StObject {
     
-    var requestHeaders: StringDictionary[String] = js.native
+    var requestHeaders: StringDictionary[String]
     
-    var requestSourceIP: String = js.native
+    var requestSourceIP: String
   }
   object RequestHeaders {
     
@@ -320,10 +312,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SecretId extends StObject {
     
-    var secretId: js.UndefOr[String] = js.native
+    var secretId: js.UndefOr[String] = js.undefined
   }
   object SecretId {
     
@@ -344,10 +335,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stage extends StObject {
     
-    var stage: String = js.native
+    var stage: String
   }
   object Stage {
     

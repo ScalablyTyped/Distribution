@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to access information specific to a WWAN connection. */
-@js.native
 trait WwanConnectionProfileDetails extends StObject {
   
   /** Indicates the name of the access point used to establish the WWAN connection. */
-  var accessPointName: String = js.native
+  var accessPointName: String
   
   /**
     * Indicates the class of data service offered by the network currently in use for the WWAN connection.
     * @return The class of data service currently provided.
     */
-  def getCurrentDataClass(): WwanDataClass = js.native
+  def getCurrentDataClass(): WwanDataClass
   
   /**
     * Retrieves the current network registration state for the WWAN connection.
     * @return The current network registration state.
     */
-  def getNetworkRegistrationState(): WwanNetworkRegistrationState = js.native
+  def getNetworkRegistrationState(): WwanNetworkRegistrationState
   
   /** Indicates the Home Network Provider ID. */
-  var homeProviderId: String = js.native
+  var homeProviderId: String
 }
 object WwanConnectionProfileDetails {
   

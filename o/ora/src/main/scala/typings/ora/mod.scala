@@ -4,7 +4,6 @@ import typings.cliSpinners.mod.SpinnerName
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,15 +21,16 @@ object mod {
   	}, 1000);
   	```
   	*/
+  @scala.inline
+  def apply(): Ora = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ora]
+  @scala.inline
+  def apply(options: String): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  @scala.inline
+  def apply(options: Options): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  
   @JSImport("ora", JSImport.Namespace)
   @js.native
-  def apply(): Ora = js.native
-  @JSImport("ora", JSImport.Namespace)
-  @js.native
-  def apply(options: String): Ora = js.native
-  @JSImport("ora", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Ora = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Starts a spinner for a promise. The spinner is stopped with `.succeed()` if the promise fulfills or with `.fail()` if it rejects.
@@ -38,15 +38,12 @@ object mod {
   	@param options - If a string is provided, it is treated as a shortcut for `options.text`.
   	@returns The spinner instance.
   	*/
-  @JSImport("ora", "promise")
-  @js.native
-  def promise(action: js.Thenable[_]): Ora = js.native
-  @JSImport("ora", "promise")
-  @js.native
-  def promise(action: js.Thenable[_], options: String): Ora = js.native
-  @JSImport("ora", "promise")
-  @js.native
-  def promise(action: js.Thenable[_], options: Options): Ora = js.native
+  @scala.inline
+  def promise(action: js.Thenable[js.Any]): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  @scala.inline
+  def promise(action: js.Thenable[js.Any], options: String): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
+  @scala.inline
+  def promise(action: js.Thenable[js.Any], options: Options): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ora.oraStrings.black
@@ -90,57 +87,56 @@ object mod {
     def yellow: typings.ora.oraStrings.yellow = "yellow".asInstanceOf[typings.ora.oraStrings.yellow]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Color of the spinner.
     		@default 'cyan'
     		*/
-    val color: js.UndefOr[Color] = js.native
+    val color: js.UndefOr[Color] = js.undefined
     
     /**
     		Discard stdin input (except Ctrl+C) while running if it's TTY. This prevents the spinner from twitching on input, outputting broken lines on `Enter` key presses, and prevents buffering of input while the spinner is running.
     		This has no effect on Windows as there's no good way to implement discarding stdin properly there.
     		@default true
     		*/
-    val discardStdin: js.UndefOr[Boolean] = js.native
+    val discardStdin: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Set to `false` to stop Ora from hiding the cursor.
     		@default true
     		*/
-    val hideCursor: js.UndefOr[Boolean] = js.native
+    val hideCursor: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Indent the spinner with the given number of spaces.
     		@default 0
     		*/
-    val indent: js.UndefOr[Double] = js.native
+    val indent: js.UndefOr[Double] = js.undefined
     
     /**
     		Interval between each frame.
     		Spinners provide their own recommended interval, so you don't really need to specify this.
     		Default: Provided by the spinner or `100`.
     		*/
-    val interval: js.UndefOr[Double] = js.native
+    val interval: js.UndefOr[Double] = js.undefined
     
     /**
     		Force enable/disable the spinner. If not specified, the spinner will be enabled if the `stream` is being run inside a TTY context (not spawned or piped) and/or not in a CI environment.
     		Note that `{isEnabled: false}` doesn't mean it won't output anything. It just means it won't output the spinner, colors, and other ansi escape codes. It will still log text.
     		*/
-    val isEnabled: js.UndefOr[Boolean] = js.native
+    val isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Disable the spinner and all log text. All output is suppressed and `isEnabled` will be considered `false`.
     		@default false
     		*/
-    val isSilent: js.UndefOr[Boolean] = js.native
+    val isSilent: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Text or a function that returns text to display before the spinner. No prefix text will be displayed if set to an empty string.
     		*/
-    val prefixText: js.UndefOr[String | PrefixTextGenerator] = js.native
+    val prefixText: js.UndefOr[String | PrefixTextGenerator] = js.undefined
     
     /**
     		Name of one of the provided spinners. See [`example.js`](https://github.com/BendingBender/ora/blob/master/example.js) in this repo if you want to test out different spinners. On Windows, it will always use the line spinner as the Windows command-line doesn't have proper Unicode support.
@@ -154,19 +150,19 @@ object mod {
     		}
     		```
     		*/
-    val spinner: js.UndefOr[SpinnerName | Spinner] = js.native
+    val spinner: js.UndefOr[SpinnerName | Spinner] = js.undefined
     
     /**
     		Stream to write the output.
     		You could for example set this to `process.stdout` instead.
     		@default process.stderr
     		*/
-    val stream: js.UndefOr[WritableStream] = js.native
+    val stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
     		Text to display after the spinner.
     		*/
-    val text: js.UndefOr[String] = js.native
+    val text: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -355,26 +351,25 @@ object mod {
     def warn(text: String): Ora = js.native
   }
   
-  @js.native
   trait PersistOptions extends StObject {
     
     /**
     		Text or a function that returns text to be persisted before the symbol. No prefix text will be displayed if set to an empty string.
     		Default: Current `prefixText`.
     		*/
-    val prefixText: js.UndefOr[String | PrefixTextGenerator] = js.native
+    val prefixText: js.UndefOr[String | PrefixTextGenerator] = js.undefined
     
     /**
     		Symbol to replace the spinner with.
     		@default ' '
     		*/
-    val symbol: js.UndefOr[String] = js.native
+    val symbol: js.UndefOr[String] = js.undefined
     
     /**
     		Text to be persisted after the symbol.
     		Default: Current `text`.
     		*/
-    val text: js.UndefOr[String] = js.native
+    val text: js.UndefOr[String] = js.undefined
   }
   object PersistOptions {
     
@@ -412,12 +407,11 @@ object mod {
   
   type PrefixTextGenerator = js.Function0[String]
   
-  @js.native
   trait Spinner extends StObject {
     
-    val frames: js.Array[String] = js.native
+    val frames: js.Array[String]
     
-    val interval: js.UndefOr[Double] = js.native
+    val interval: js.UndefOr[Double] = js.undefined
   }
   object Spinner {
     

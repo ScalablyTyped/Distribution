@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLogsLogGroup extends StObject {
   
   /**
     * The ARN of the the CloudWatch log group to which you want your logs emitted to. The ARN must end with :* 
     */
-  var logGroupArn: js.UndefOr[Arn] = js.native
+  var logGroupArn: js.UndefOr[Arn] = js.undefined
 }
 object CloudWatchLogsLogGroup {
   

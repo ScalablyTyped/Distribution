@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserManagedStatus extends StObject {
   
   /** Output only. The list of replica statuses for the SecretVersion. */
-  var replicas: js.UndefOr[js.Array[ReplicaStatus]] = js.native
+  var replicas: js.UndefOr[js.Array[ReplicaStatus]] = js.undefined
 }
 object UserManagedStatus {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
   /**
     * The unique of the node within the workflow where the edge ends.
     */
-  var DestinationId: js.UndefOr[NameString] = js.native
+  var DestinationId: js.UndefOr[NameString] = js.undefined
   
   /**
     * The unique of the node within the workflow where the edge starts.
     */
-  var SourceId: js.UndefOr[NameString] = js.native
+  var SourceId: js.UndefOr[NameString] = js.undefined
 }
 object Edge {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetStyleTextsResponse extends StObject {
   
   /**
     * The resulting styles after modification.
     */
-  var styles: js.Array[CSSStyle] = js.native
+  var styles: js.Array[CSSStyle]
 }
 object SetStyleTextsResponse {
   

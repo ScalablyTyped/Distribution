@@ -5,69 +5,61 @@ import typings.falcorJsonGraph.falcorJsonGraphStrings.error
 import typings.falcorJsonGraph.falcorJsonGraphStrings.reference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("falcor-json-graph", "atom")
+  @JSImport("falcor-json-graph", JSImport.Namespace)
   @js.native
-  def atom(value: js.Any): Atom_ = js.native
-  @JSImport("falcor-json-graph", "atom")
-  @js.native
-  def atom(value: js.Any, props: Sentinel): Atom_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("falcor-json-graph", "error")
-  @js.native
-  def error(errorValue: js.Any): Error_ = js.native
-  @JSImport("falcor-json-graph", "error")
-  @js.native
-  def error(errorValue: js.Any, props: Sentinel): Error_ = js.native
+  @scala.inline
+  def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
+  @scala.inline
+  def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
   
-  @JSImport("falcor-json-graph", "pathInvalidation")
-  @js.native
-  def pathInvalidation(path: String): InvalidPath = js.native
-  @JSImport("falcor-json-graph", "pathInvalidation")
-  @js.native
-  def pathInvalidation(path: PathSet): InvalidPath = js.native
+  @scala.inline
+  def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
+  @scala.inline
+  def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
   
-  @JSImport("falcor-json-graph", "pathValue")
-  @js.native
-  def pathValue(path: String, value: js.Any): PathValue_ = js.native
-  @JSImport("falcor-json-graph", "pathValue")
-  @js.native
-  def pathValue(path: PathSet, value: js.Any): PathValue_ = js.native
+  @scala.inline
+  def pathInvalidation(path: String): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
+  @scala.inline
+  def pathInvalidation(path: PathSet): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
   
-  @JSImport("falcor-json-graph", "ref")
-  @js.native
-  def ref(path: String): Reference = js.native
-  @JSImport("falcor-json-graph", "ref")
-  @js.native
-  def ref(path: String, props: Sentinel): Reference = js.native
-  @JSImport("falcor-json-graph", "ref")
-  @js.native
-  def ref(path: PathSet): Reference = js.native
-  @JSImport("falcor-json-graph", "ref")
-  @js.native
-  def ref(path: PathSet, props: Sentinel): Reference = js.native
+  @scala.inline
+  def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  @scala.inline
+  def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  
+  @scala.inline
+  def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  @scala.inline
+  def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  @scala.inline
+  def ref(path: PathSet): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  @scala.inline
+  def ref(path: PathSet, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
   
   // NOTE: The following types are described at https://github.com/Netflix/falcor/tree/master/lib/typedefs .
   /**
     * An atom allows you to treat a JSON value as atomic regardless of its type, ensuring that a JSON object or array is always returned in its entirety. The JSON value must be treated as immutable. Atoms can also be used to associate metadata with a JSON value. This metadata can be used to influence the way values are handled.
     **/
-  @js.native
-  trait Atom_ extends Sentinel {
+  trait Atom_
+    extends StObject
+       with Sentinel {
     
     @JSName("$type")
-    var $type: atom = js.native
+    var $type: atom
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Atom_ {
     
     @scala.inline
-    def apply($type: atom, value: js.Any): Atom_ = {
-      val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(value: js.Any): Atom_ = {
+      val __obj = js.Dynamic.literal($type = "atom", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Atom_]
     }
     
@@ -82,19 +74,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait Error_ extends Sentinel {
+  trait Error_
+    extends StObject
+       with Sentinel {
     
     @JSName("$type")
-    var $type: error = js.native
+    var $type: error
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Error_ {
     
     @scala.inline
-    def apply($type: error, value: js.Any): Error_ = {
-      val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(value: js.Any): Error_ = {
+      val __obj = js.Dynamic.literal($type = "error", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error_]
     }
     
@@ -109,12 +102,11 @@ object mod {
     }
   }
   
-  @js.native
   trait InvalidPath extends StObject {
     
-    var invalidate: Boolean = js.native
+    var invalidate: Boolean
     
-    var path: PathSet = js.native
+    var path: PathSet
   }
   object InvalidPath {
     
@@ -141,10 +133,9 @@ object mod {
   /**
     * An envelope that wraps a JSON object.
     **/
-  @js.native
   trait JSONEnvelope[T] extends StObject {
     
-    var json: T = js.native
+    var json: T
   }
   object JSONEnvelope {
     
@@ -155,7 +146,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class JSONEnvelopeMutableBuilder[Self <: JSONEnvelope[_], T] (val x: Self with JSONEnvelope[T]) extends AnyVal {
+    implicit class JSONEnvelopeMutableBuilder[Self <: JSONEnvelope[?], T] (val x: Self & JSONEnvelope[T]) extends AnyVal {
       
       @scala.inline
       def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
@@ -170,14 +161,13 @@ object mod {
   /**
     * An envelope that wraps a {@link JSONGraph} fragment.
     **/
-  @js.native
   trait JSONGraphEnvelope extends StObject {
     
-    var invalidate: js.UndefOr[js.Array[PathSet]] = js.native
+    var invalidate: js.UndefOr[js.Array[PathSet]] = js.undefined
     
-    var jsonGraph: JSONGraph = js.native
+    var jsonGraph: JSONGraph
     
-    var paths: js.UndefOr[js.Array[PathSet]] = js.native
+    var paths: js.UndefOr[js.Array[PathSet]] = js.undefined
   }
   object JSONGraphEnvelope {
     
@@ -236,12 +226,11 @@ object mod {
   /**
     * A wrapper around a path and its value.
     **/
-  @js.native
   trait PathValue_ extends StObject {
     
-    var path: String | PathSet = js.native
+    var path: String | PathSet
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PathValue_ {
     
@@ -268,14 +257,13 @@ object mod {
   /**
     * Describe a range of integers. Must contain either a "to" or "length" property.
     **/
-  @js.native
   trait Range extends StObject {
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object Range {
     
@@ -308,19 +296,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait Reference extends Sentinel {
+  trait Reference
+    extends StObject
+       with Sentinel {
     
     @JSName("$type")
-    var $type: reference = js.native
+    var $type: reference
     
-    var value: Path = js.native
+    var value: Path
   }
   object Reference {
     
     @scala.inline
-    def apply($type: reference, value: Path): Reference = {
-      val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(value: Path): Reference = {
+      val __obj = js.Dynamic.literal($type = "reference", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reference]
     }
     
@@ -338,11 +327,10 @@ object mod {
     }
   }
   
-  @js.native
   trait Sentinel extends StObject {
     
     @JSName("$expires")
-    var $expires: js.UndefOr[Double] = js.native
+    var $expires: js.UndefOr[Double] = js.undefined
   }
   object Sentinel {
     

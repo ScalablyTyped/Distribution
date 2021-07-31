@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupsMod {
@@ -70,14 +69,15 @@ object groupsMod {
     def syncLDAP(groupId: Double, options: Sudo): js.Promise[js.Object] = js.native
   }
   
-  @js.native
-  trait GroupDetailSchema extends GroupSchema {
+  trait GroupDetailSchema
+    extends StObject
+       with GroupSchema {
     
-    var projects: js.Array[ProjectSchema] = js.native
+    var projects: js.Array[ProjectSchema]
     
-    var runners_token: String = js.native
+    var runners_token: String
     
-    var shared_projects: js.Array[ProjectSchema] = js.native
+    var shared_projects: js.Array[ProjectSchema]
   }
   object GroupDetailSchema {
     
@@ -127,46 +127,45 @@ object groupsMod {
     }
   }
   
-  @js.native
   trait GroupSchema extends StObject {
     
-    var auto_devops_enabled: js.UndefOr[Boolean] = js.native
+    var auto_devops_enabled: js.UndefOr[Boolean] = js.undefined
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var description: String = js.native
+    var description: String
     
-    var emails_disabled: js.UndefOr[Boolean] = js.native
+    var emails_disabled: js.UndefOr[Boolean] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var full_path: String = js.native
+    var full_path: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var lfs_enabled: Boolean = js.native
+    var lfs_enabled: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var parent_id: js.UndefOr[Double] = js.native
+    var parent_id: js.UndefOr[Double] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var project_creation_level: String = js.native
+    var project_creation_level: String
     
-    var request_access_enabled: Boolean = js.native
+    var request_access_enabled: Boolean
     
-    var require_two_factor_authentication: Boolean = js.native
+    var require_two_factor_authentication: Boolean
     
-    var share_with_group_lock: Boolean = js.native
+    var share_with_group_lock: Boolean
     
-    var subgroup_creation_level: String = js.native
+    var subgroup_creation_level: String
     
-    var two_factor_grace_period: Double = js.native
+    var two_factor_grace_period: Double
     
-    var visibility: String = js.native
+    var visibility: String
     
-    var web_url: String = js.native
+    var web_url: String
   }
   object GroupSchema {
     

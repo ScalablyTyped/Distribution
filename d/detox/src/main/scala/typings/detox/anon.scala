@@ -3,12 +3,10 @@ package typings.detox
 import typings.detox.mod.global.Detox_.CircusTestEventListenerBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddEventsListener extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object anon {
       * detoxCircus.getEnv().addEventsListener(adapter)
       * detoxCircus.getEnv().addEventsListener(assignReporter)
       */
-    def addEventsListener(listener: CircusTestEventListenerBase): Unit = js.native
+    def addEventsListener(listener: CircusTestEventListenerBase): Unit
   }
   object AddEventsListener {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SourceApp extends StObject {
     
-    var sourceApp: js.UndefOr[String] = js.native
+    var sourceApp: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object SourceApp {
     
@@ -65,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

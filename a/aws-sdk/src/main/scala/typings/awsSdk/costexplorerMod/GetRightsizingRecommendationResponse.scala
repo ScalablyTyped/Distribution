@@ -2,36 +2,34 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRightsizingRecommendationResponse extends StObject {
   
   /**
     *  Enables you to customize recommendations across two attributes. You can choose to view recommendations for instances within the same instance families or across different instance families. You can also choose to view your estimated savings associated with recommendations with consideration of existing Savings Plans or RI benefits, or neither. 
     */
-  var Configuration: js.UndefOr[RightsizingRecommendationConfiguration] = js.native
+  var Configuration: js.UndefOr[RightsizingRecommendationConfiguration] = js.undefined
   
   /**
     * Information regarding this specific recommendation set.
     */
-  var Metadata: js.UndefOr[RightsizingRecommendationMetadata] = js.native
+  var Metadata: js.UndefOr[RightsizingRecommendationMetadata] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * Recommendations to rightsize resources.
     */
-  var RightsizingRecommendations: js.UndefOr[RightsizingRecommendationList] = js.native
+  var RightsizingRecommendations: js.UndefOr[RightsizingRecommendationList] = js.undefined
   
   /**
     * Summary of this recommendation set.
     */
-  var Summary: js.UndefOr[RightsizingRecommendationSummary] = js.native
+  var Summary: js.UndefOr[RightsizingRecommendationSummary] = js.undefined
 }
 object GetRightsizingRecommendationResponse {
   

@@ -2,24 +2,22 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rectangle determined by min and max `LatLng` pairs.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1LatLongRect extends StObject {
   
   /**
     * Max lat/long pair.
     */
-  var maxLatLng: js.UndefOr[SchemaLatLng] = js.native
+  var maxLatLng: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Min lat/long pair.
     */
-  var minLatLng: js.UndefOr[SchemaLatLng] = js.native
+  var minLatLng: js.UndefOr[SchemaLatLng] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1LatLongRect {
   

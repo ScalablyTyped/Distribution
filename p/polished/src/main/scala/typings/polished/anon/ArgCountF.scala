@@ -7,36 +7,29 @@ import typings.polished.polishedStrings.Plussign
 import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgCountF extends StObject {
   
-  var argCount: `1` = js.native
+  var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any
   
-  var notation: prefix = js.native
+  var notation: prefix
   
-  var precedence: `3` = js.native
+  var precedence: `3`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Plussign = js.native
+  var symbol: Plussign
 }
 object ArgCountF {
   
   @scala.inline
   def apply(
-    argCount: `1`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any,
-    notation: prefix,
-    precedence: `3`,
-    rightToLeft: `0`,
-    symbol: Plussign
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any
   ): ArgCountF = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "prefix", precedence = 3, rightToLeft = 0, symbol = "+")
     __obj.asInstanceOf[ArgCountF]
   }
   

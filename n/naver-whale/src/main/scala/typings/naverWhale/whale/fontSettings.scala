@@ -3,7 +3,6 @@ package typings.naverWhale.whale
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -24,11 +23,10 @@ object fontSettings {
     js.Function1[/* details */ typings.chrome.chrome.fontSettings.FontSizeDetails, Unit]
   ]
   
-  @js.native
   trait DefaultFontSizeDetails extends StObject {
     
     /** The font size in pixels. */
-    var pixelSize: Double = js.native
+    var pixelSize: Double
   }
   object DefaultFontSizeDetails {
     
@@ -50,14 +48,13 @@ object fontSettings {
     js.Function1[/* details */ typings.chrome.chrome.fontSettings.FullFontDetails, Unit]
   ]
   
-  @js.native
   trait FontDetails extends StObject {
     
     /** The generic font family for the font. */
-    var genericFamily: String = js.native
+    var genericFamily: String
     
     /** Optional. The script for the font. If omitted, the global script font setting is affected.  */
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
   }
   object FontDetails {
     
@@ -81,14 +78,13 @@ object fontSettings {
     }
   }
   
-  @js.native
   trait FontDetailsResult extends StObject {
     
     /** The font ID. Rather than the literal font ID preference value, this may be the ID of the font that the system resolves the preference value to. So, fontId can differ from the font passed to setFont, if, for example, the font is not available on the system. The empty string signifies fallback to the global script font setting. */
-    var fontId: String = js.native
+    var fontId: String
     
     /** The level of control this extension has over the setting. */
-    var levelOfControl: String = js.native
+    var levelOfControl: String
   }
   object FontDetailsResult {
     
@@ -109,14 +105,13 @@ object fontSettings {
     }
   }
   
-  @js.native
   trait FontName extends StObject {
     
     /** The display name of the font. */
-    var displayName: String = js.native
+    var displayName: String
     
     /** The font ID. */
-    var fontId: String = js.native
+    var fontId: String
   }
   object FontName {
     
@@ -137,14 +132,13 @@ object fontSettings {
     }
   }
   
-  @js.native
   trait FontSizeDetails extends StObject {
     
     /** The level of control this extension has over the setting. */
-    var levelOfControl: String = js.native
+    var levelOfControl: String
     
     /** The font size in pixels. */
-    var pixelSize: Double = js.native
+    var pixelSize: Double
   }
   object FontSizeDetails {
     
@@ -165,20 +159,19 @@ object fontSettings {
     }
   }
   
-  @js.native
   trait FullFontDetails extends StObject {
     
     /** The font ID. See the description in getFont. */
-    var fontId: String = js.native
+    var fontId: String
     
     /** The generic font family for which the font setting has changed. */
-    var genericFamily: String = js.native
+    var genericFamily: String
     
     /** The level of control this extension has over the setting. */
-    var levelOfControl: String = js.native
+    var levelOfControl: String
     
     /** Optional. The script code for which the font setting has changed.  */
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
   }
   object FullFontDetails {
     
@@ -212,12 +205,12 @@ object fontSettings {
     js.Function1[/* details */ typings.chrome.chrome.fontSettings.FontSizeDetails, Unit]
   ]
   
-  @js.native
   trait SetFontDetails
-    extends typings.chrome.chrome.fontSettings.FontDetails {
+    extends StObject
+       with typings.chrome.chrome.fontSettings.FontDetails {
     
     /** The font ID. The empty string means to fallback to the global script font setting. */
-    var fontId: String = js.native
+    var fontId: String
   }
   object SetFontDetails {
     
@@ -235,11 +228,10 @@ object fontSettings {
     }
   }
   
-  @js.native
   trait SetFontSizeDetails extends StObject {
     
     /** The font size in pixels. */
-    var pixelSize: Double = js.native
+    var pixelSize: Double
   }
   object SetFontSizeDetails {
     

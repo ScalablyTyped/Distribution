@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about a ResultSet or PartialResultSet.
   */
-@js.native
 trait SchemaResultSetMetadata extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait SchemaResultSetMetadata extends StObject {
     * &quot;UserName&quot;, &quot;type&quot;: { &quot;code&quot;:
     * &quot;STRING&quot; } },     ]
     */
-  var rowType: js.UndefOr[SchemaStructType] = js.native
+  var rowType: js.UndefOr[SchemaStructType] = js.undefined
   
   /**
     * If the read or SQL query began a transaction as a side-effect, the
     * information about the new transaction is yielded here.
     */
-  var transaction: js.UndefOr[SchemaTransaction] = js.native
+  var transaction: js.UndefOr[SchemaTransaction] = js.undefined
 }
 object SchemaResultSetMetadata {
   

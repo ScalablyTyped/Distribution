@@ -3,7 +3,6 @@ package typings.appBuilderLib
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileMatcherMod {
@@ -16,16 +15,15 @@ object fileMatcherMod {
   @js.native
   val excludedNames: String = js.native
   
-  @js.native
   trait GetFileMatchersOptions extends StObject {
     
-    val customBuildOptions: PlatformSpecificBuildOptions = js.native
+    val customBuildOptions: PlatformSpecificBuildOptions
     
-    val defaultSrc: String = js.native
+    val defaultSrc: String
     
-    val globalOutDir: String = js.native
+    val globalOutDir: String
     
-    def macroExpander(pattern: String): String = js.native
+    def macroExpander(pattern: String): String
   }
   object GetFileMatchersOptions {
     

@@ -6,17 +6,15 @@ import typings.jwplayer.jwplayerStrings.auto
 import typings.jwplayer.jwplayerStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QualityLevel extends StObject {
   
-  var level: Level = js.native
+  var level: Level
   
-  var mode: auto | manual = js.native
+  var mode: auto | manual
   
-  var reason: auto | api | (`initial choice`) = js.native
+  var reason: auto | api | (`initial choice`)
 }
 object QualityLevel {
   

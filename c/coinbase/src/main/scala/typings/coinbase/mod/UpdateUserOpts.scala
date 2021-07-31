@@ -2,26 +2,24 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserOpts extends StObject {
   
   /**
     * User’s name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Local currency used to display amounts converted from BTC
     */
-  var native_currency: js.UndefOr[String] = js.native
+  var native_currency: js.UndefOr[String] = js.undefined
   
   /**
     * Time zone
     */
-  var time_zone: js.UndefOr[String] = js.native
+  var time_zone: js.UndefOr[String] = js.undefined
 }
 object UpdateUserOpts {
   

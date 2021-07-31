@@ -6,23 +6,23 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RowEvent extends AgGridEvent {
+trait RowEvent
+  extends StObject
+     with AgGridEvent {
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var event: js.UndefOr[Event] = js.native
+  var event: js.UndefOr[Event] = js.undefined
   
-  var node: RowNode = js.native
+  var node: RowNode
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var rowPinned: String = js.native
+  var rowPinned: String
 }
 object RowEvent {
   

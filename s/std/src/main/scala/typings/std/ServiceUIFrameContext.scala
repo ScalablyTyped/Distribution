@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceUIFrameContext extends StObject {
   
-  def getCachedFrameMessage(key: java.lang.String): java.lang.String = js.native
+  def getCachedFrameMessage(key: java.lang.String): java.lang.String
   
-  def postFrameMessage(key: java.lang.String, data: java.lang.String): Unit = js.native
+  def postFrameMessage(key: java.lang.String, data: java.lang.String): Unit
 }
 object ServiceUIFrameContext {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firewallPolicyMod {
@@ -60,6 +59,10 @@ object firewallPolicyMod {
   /* static members */
   object FirewallPolicy {
     
+    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FirewallPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,50 +72,44 @@ object firewallPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): FirewallPolicy = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FirewallPolicy = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallPolicyState): FirewallPolicy = js.native
-    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallPolicyState, opts: CustomResourceOptions): FirewallPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallPolicyState): FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallPolicyState, opts: CustomResourceOptions): FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirewallPolicy]
     
     /**
       * Returns true if the given object is an instance of FirewallPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/networkfirewall/firewallPolicy", "FirewallPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean]
   }
   
-  @js.native
   trait FirewallPolicyArgs extends StObject {
     
     /**
       * A friendly description of the firewall policy.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block describing the rule groups and policy actions to use in the firewall policy. See Firewall Policy below for details.
       */
-    val firewallPolicy: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallPolicyFirewallPolicy] = js.native
+    val firewallPolicy: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallPolicyFirewallPolicy]
     
     /**
       * A friendly name of the firewall policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object FirewallPolicyArgs {
     
@@ -148,38 +145,37 @@ object firewallPolicyMod {
     }
   }
   
-  @js.native
   trait FirewallPolicyState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the firewall policy.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly description of the firewall policy.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block describing the rule groups and policy actions to use in the firewall policy. See Firewall Policy below for details.
       */
-    val firewallPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallPolicyFirewallPolicy]] = js.native
+    val firewallPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallPolicyFirewallPolicy]] = js.undefined
     
     /**
       * A friendly name of the firewall policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A string token used when updating a firewall policy.
       */
-    val updateToken: js.UndefOr[Input[String]] = js.native
+    val updateToken: js.UndefOr[Input[String]] = js.undefined
   }
   object FirewallPolicyState {
     

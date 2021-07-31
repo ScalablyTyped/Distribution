@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,18 +24,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XDispatchProvider
   * @since OOo 2.0
   */
-@js.native
 trait XStatusbarController
-  extends XStatusListener
+  extends StObject
      with XComponent
      with XInitialization
+     with XStatusListener
      with XUpdatable {
   
   /**
     * is called by a status bar if the user clicked with mouse into the field of the corresponding control.
     * @param aPos the current mouse position in pixel.
     */
-  def click(aPos: Point): Unit = js.native
+  def click(aPos: Point): Unit
   
   /**
     * is called by a status bar if a command event is available for a controller.
@@ -45,13 +44,13 @@ trait XStatusbarController
     * @param bMouseEvent `TRUE` if the command is based on a mouse event, otherwise `FALSE` .
     * @param aData for future use only.
     */
-  def command(aPos: Point, nCommand: Double, bMouseEvent: Boolean, aData: js.Any): Unit = js.native
+  def command(aPos: Point, nCommand: Double, bMouseEvent: Boolean, aData: js.Any): Unit
   
   /**
     * is called by a status bar if the user double-clicked with mouse into the field of the corresponding control.
     * @param aPos the current mouse position in pixel.
     */
-  def doubleClick(aPos: Point): Unit = js.native
+  def doubleClick(aPos: Point): Unit
   
   /**
     * is called by a status bar if the mouse position is within the controller and a mouse button has been pressed. If the controller has captured the mouse
@@ -59,7 +58,7 @@ trait XStatusbarController
     * @param aMouseEvent current information about the mouse pointer.
     * @returns return `TRUE` if the event should not be processed and `FALSE` if the event should be processed by the status bar.
     */
-  def mouseButtonDown(aMouseEvent: MouseEvent): Boolean = js.native
+  def mouseButtonDown(aMouseEvent: MouseEvent): Boolean
   
   /**
     * is called by a status bar if the mouse position is within the controller and a mouse button has been released. If the controller has captured the
@@ -67,7 +66,7 @@ trait XStatusbarController
     * @param aMouseEvent current information about the mouse pointer.
     * @returns return `TRUE` if the event should not be processed and `FALSE` if the event should be processed by the status bar.
     */
-  def mouseButtonUp(aMouseEvent: MouseEvent): Boolean = js.native
+  def mouseButtonUp(aMouseEvent: MouseEvent): Boolean
   
   /**
     * is called by a status bar if the mouse position is within the controller and a mouse has been moved. If the controller has captured the mouse input
@@ -75,7 +74,7 @@ trait XStatusbarController
     * @param aMouseEvent current information about the mouse pointer.
     * @returns return `TRUE` if the event should not be processed and `FALSE` if the event should be processed by the status bar.
     */
-  def mouseMove(aMouseEvent: MouseEvent): Boolean = js.native
+  def mouseMove(aMouseEvent: MouseEvent): Boolean
   
   /**
     * is called by a status bar if the controller has to update the visual representation.
@@ -83,7 +82,7 @@ trait XStatusbarController
     * @param OutputRectangle a {@link com.sun.star.awt.Rectangle} which determine the output rectangle for all drawing operations
     * @param nStyle reserved for future use.
     */
-  def paint(xGraphics: XGraphics, OutputRectangle: Rectangle, nStyle: Double): Unit = js.native
+  def paint(xGraphics: XGraphics, OutputRectangle: Rectangle, nStyle: Double): Unit
 }
 object XStatusbarController {
   
@@ -96,7 +95,7 @@ object XStatusbarController {
     dispose: () => Unit,
     disposing: EventObject => Unit,
     doubleClick: Point => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     mouseButtonDown: MouseEvent => Boolean,
     mouseButtonUp: MouseEvent => Boolean,
     mouseMove: MouseEvent => Boolean,

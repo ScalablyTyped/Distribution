@@ -16,33 +16,42 @@ import typings.amapJsApi.AMap.convertFrom.SearchStatus
 import typings.amapJsApi.AMap.convertFrom.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiStrings {
   
   @js.native
-  sealed trait `2D` extends ViewMode
+  sealed trait `2D`
+    extends StObject
+       with ViewMode
   @scala.inline
   def `2D`: `2D` = "2D".asInstanceOf[`2D`]
   
   @js.native
-  sealed trait `3D` extends ViewMode
+  sealed trait `3D`
+    extends StObject
+       with ViewMode
   @scala.inline
   def `3D`: `3D` = "3D".asInstanceOf[`3D`]
   
   @js.native
-  sealed trait AMAP_ANIMATION_BOUNCE extends AnimationName
+  sealed trait AMAP_ANIMATION_BOUNCE
+    extends StObject
+       with AnimationName
   @scala.inline
   def AMAP_ANIMATION_BOUNCE: AMAP_ANIMATION_BOUNCE = "AMAP_ANIMATION_BOUNCE".asInstanceOf[AMAP_ANIMATION_BOUNCE]
   
   @js.native
-  sealed trait AMAP_ANIMATION_DROP extends AnimationName
+  sealed trait AMAP_ANIMATION_DROP
+    extends StObject
+       with AnimationName
   @scala.inline
   def AMAP_ANIMATION_DROP: AMAP_ANIMATION_DROP = "AMAP_ANIMATION_DROP".asInstanceOf[AMAP_ANIMATION_DROP]
   
   @js.native
-  sealed trait AMAP_ANIMATION_NONE extends AnimationName
+  sealed trait AMAP_ANIMATION_NONE
+    extends StObject
+       with AnimationName
   @scala.inline
   def AMAP_ANIMATION_NONE: AMAP_ANIMATION_NONE = "AMAP_ANIMATION_NONE".asInstanceOf[AMAP_ANIMATION_NONE]
   
@@ -222,7 +231,9 @@ object amapJsApiStrings {
   def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait baidu extends Type
+  sealed trait baidu
+    extends StObject
+       with Type
   @scala.inline
   def baidu: baidu = "baidu".asInstanceOf[baidu]
   
@@ -247,13 +258,16 @@ object amapJsApiStrings {
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
-  sealed trait bevel extends StrokeLineJoin
+  sealed trait bevel
+    extends StObject
+       with StrokeLineJoin
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
   sealed trait bg
-    extends typings.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typings.amapJsApi.AMap.Map.Feature
   @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
   
@@ -273,13 +287,16 @@ object amapJsApiStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait bold
+    extends StObject
+       with FontWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
   sealed trait bottom
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextDirection
        with VerticalAlign
   @scala.inline
@@ -287,7 +304,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `bottom-center`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -295,7 +313,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `bottom-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -303,7 +322,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `bottom-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -316,12 +336,15 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait building
-    extends typings.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typings.amapJsApi.AMap.Map.Feature
   @scala.inline
   def building: building = "building".asInstanceOf[building]
   
   @js.native
-  sealed trait butt extends StrokeLineCap
+  sealed trait butt
+    extends StObject
+       with StrokeLineCap
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -362,7 +385,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait center
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
        with LabelDirection
@@ -412,7 +436,9 @@ object amapJsApiStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
@@ -442,7 +468,9 @@ object amapJsApiStrings {
   def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait dashed extends StrokeStyle
+  sealed trait dashed
+    extends StObject
+       with StrokeStyle
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   
@@ -577,7 +605,9 @@ object amapJsApiStrings {
   def emptied: emptied = "emptied".asInstanceOf[emptied]
   
   @js.native
-  sealed trait en extends Lang
+  sealed trait en
+    extends StObject
+       with Lang
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
@@ -587,7 +617,9 @@ object amapJsApiStrings {
   def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait error
+    extends StObject
+       with SearchStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -662,7 +694,9 @@ object amapJsApiStrings {
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   
   @js.native
-  sealed trait gps extends Type
+  sealed trait gps
+    extends StObject
+       with Type
   @scala.inline
   def gps: gps = "gps".asInstanceOf[gps]
   
@@ -808,7 +842,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait left
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextAlign
        with TextDirection
   @scala.inline
@@ -875,7 +910,9 @@ object amapJsApiStrings {
   def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait mapbar extends Type
+  sealed trait mapbar
+    extends StObject
+       with Type
   @scala.inline
   def mapbar: mapbar = "mapbar".asInstanceOf[mapbar]
   
@@ -915,13 +952,16 @@ object amapJsApiStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait middle extends VerticalAlign
+  sealed trait middle
+    extends StObject
+       with VerticalAlign
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait `middle-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -929,14 +969,17 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `middle-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
   def `middle-right`: `middle-right` = "middle-right".asInstanceOf[`middle-right`]
   
   @js.native
-  sealed trait miter extends StrokeLineJoin
+  sealed trait miter
+    extends StObject
+       with StrokeLineJoin
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
@@ -1011,7 +1054,9 @@ object amapJsApiStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait normal extends FontWeight
+  sealed trait normal
+    extends StObject
+       with FontWeight
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -1097,7 +1142,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait point_
-    extends typings.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typings.amapJsApi.AMap.Map.Feature
   @scala.inline
   def point_ : point_ = "point".asInstanceOf[point_]
   
@@ -1203,7 +1249,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait right
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextAlign
        with TextDirection
   @scala.inline
@@ -1216,13 +1263,15 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait road
-    extends typings.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typings.amapJsApi.AMap.Map.Feature
   @scala.inline
   def road: road = "road".asInstanceOf[road]
   
   @js.native
   sealed trait round
-    extends StrokeLineCap
+    extends StObject
+       with StrokeLineCap
        with StrokeLineJoin
   @scala.inline
   def round: round = "round".asInstanceOf[round]
@@ -1333,7 +1382,9 @@ object amapJsApiStrings {
   def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait solid extends StrokeStyle
+  sealed trait solid
+    extends StObject
+       with StrokeStyle
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   
@@ -1348,7 +1399,9 @@ object amapJsApiStrings {
   def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait square extends StrokeLineCap
+  sealed trait square
+    extends StObject
+       with StrokeLineCap
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
@@ -1433,7 +1486,9 @@ object amapJsApiStrings {
   def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
-  sealed trait thin extends FontWeight
+  sealed trait thin
+    extends StObject
+       with FontWeight
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   
@@ -1459,7 +1514,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait top
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextDirection
        with VerticalAlign
   @scala.inline
@@ -1467,7 +1523,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `top-center`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -1475,7 +1532,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `top-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -1483,7 +1541,8 @@ object amapJsApiStrings {
   
   @js.native
   sealed trait `top-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typings.amapJsApi.AMap.Marker.Anchor
        with typings.amapJsApi.AMap.InfoWindow.Anchor
   @scala.inline
@@ -1595,12 +1654,16 @@ object amapJsApiStrings {
   def windows: windows = "windows".asInstanceOf[windows]
   
   @js.native
-  sealed trait zh_cn extends Lang
+  sealed trait zh_cn
+    extends StObject
+       with Lang
   @scala.inline
   def zh_cn: zh_cn = "zh_cn".asInstanceOf[zh_cn]
   
   @js.native
-  sealed trait zh_en extends Lang
+  sealed trait zh_en
+    extends StObject
+       with Lang
   @scala.inline
   def zh_en: zh_en = "zh_en".asInstanceOf[zh_en]
   

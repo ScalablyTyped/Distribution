@@ -2,21 +2,19 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisDependency extends StObject {
   
-  var axisDependency: js.UndefOr[typings.reactNativeChartsWrapper.mod.AxisDependency] = js.native
+  var axisDependency: js.UndefOr[typings.reactNativeChartsWrapper.mod.AxisDependency] = js.undefined
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var xValue: Double = js.native
+  var xValue: Double
   
-  var yValue: Double = js.native
+  var yValue: Double
 }
 object AxisDependency {
   

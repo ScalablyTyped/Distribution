@@ -3,17 +3,16 @@ package typings.typeorm.anon
 import typings.typeorm.commonEntityTargetMod._EntityTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name[Entity]
-  extends _EntityTarget[Entity]
+  extends StObject
+     with _EntityTarget[Entity]
      with typings.typeorm.entityTargetMod._EntityTarget[Entity] {
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: Entity = js.native
+  var `type`: Entity
 }
 object Name {
   
@@ -25,7 +24,7 @@ object Name {
   }
   
   @scala.inline
-  implicit class NameMutableBuilder[Self <: Name[_], Entity] (val x: Self with Name[Entity]) extends AnyVal {
+  implicit class NameMutableBuilder[Self <: Name[?], Entity] (val x: Self & Name[Entity]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

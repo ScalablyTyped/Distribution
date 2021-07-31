@@ -2,14 +2,12 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataDOM extends StObject {
   
   @JSName("InfoPath.DataDOM_typekey")
-  var InfoPathDotDataDOM_typekey: DataDOM = js.native
+  var InfoPathDotDataDOM_typekey: DataDOM
 }
 object DataDOM {
   

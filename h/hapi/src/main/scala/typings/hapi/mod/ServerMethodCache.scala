@@ -4,15 +4,14 @@ import typings.catbox.mod.PolicyOptions
 import typings.hapi.hapiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerMethodCache
-  extends PolicyOptions[js.Any] {
+  extends StObject
+     with PolicyOptions[js.Any] {
   
   @JSName("generateTimeout")
-  var generateTimeout_ServerMethodCache: Double | `false` = js.native
+  var generateTimeout_ServerMethodCache: Double | `false`
 }
 object ServerMethodCache {
   

@@ -2,25 +2,23 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseComboboxActions[Item] extends StObject {
   
-  def closeMenu(): Unit = js.native
+  def closeMenu(): Unit
   
-  def openMenu(): Unit = js.native
+  def openMenu(): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def selectItem(item: Item): Unit = js.native
+  def selectItem(item: Item): Unit
   
-  def setHighlightedIndex(index: Double): Unit = js.native
+  def setHighlightedIndex(index: Double): Unit
   
-  def setInputValue(inputValue: String): Unit = js.native
+  def setInputValue(inputValue: String): Unit
   
-  def toggleMenu(): Unit = js.native
+  def toggleMenu(): Unit
 }
 object UseComboboxActions {
   
@@ -39,7 +37,7 @@ object UseComboboxActions {
   }
   
   @scala.inline
-  implicit class UseComboboxActionsMutableBuilder[Self <: UseComboboxActions[_], Item] (val x: Self with UseComboboxActions[Item]) extends AnyVal {
+  implicit class UseComboboxActionsMutableBuilder[Self <: UseComboboxActions[?], Item] (val x: Self & UseComboboxActions[Item]) extends AnyVal {
     
     @scala.inline
     def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))

@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,12 +31,10 @@ object mod {
   	});
   	```
   	*/
-  @JSImport("image-type", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): ImageTypeResult | Null = js.native
-  @JSImport("image-type", JSImport.Namespace)
-  @js.native
-  def apply(input: Uint8Array): ImageTypeResult | Null = js.native
+  @scala.inline
+  def apply(input: Buffer): ImageTypeResult | Null = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ImageTypeResult | Null]
+  @scala.inline
+  def apply(input: Uint8Array): ImageTypeResult | Null = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ImageTypeResult | Null]
   
   @JSImport("image-type", JSImport.Namespace)
   @js.native
@@ -135,18 +132,17 @@ object mod {
     def webp: typings.imageType.imageTypeStrings.webp = "webp".asInstanceOf[typings.imageType.imageTypeStrings.webp]
   }
   
-  @js.native
   trait ImageTypeResult extends StObject {
     
     /**
     		One of the supported [file types](https://github.com/sindresorhus/image-type#supported-file-types).
     		*/
-    var ext: ImageType = js.native
+    var ext: ImageType
     
     /**
     		The detected [MIME type](https://en.wikipedia.org/wiki/Internet_media_type).
     		*/
-    var mime: String = js.native
+    var mime: String
   }
   object ImageTypeResult {
     

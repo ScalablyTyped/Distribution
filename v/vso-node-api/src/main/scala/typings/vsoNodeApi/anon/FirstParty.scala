@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstParty extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var firstParty: scala.Double = js.native
+  var firstParty: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var preview: scala.Double = js.native
+  var preview: scala.Double
   
-  var `private`: scala.Double = js.native
+  var `private`: scala.Double
   
-  var public: scala.Double = js.native
+  var public: scala.Double
   
-  var released: scala.Double = js.native
+  var released: scala.Double
 }
 object FirstParty {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
   */
-@js.native
 trait PlusRuntimeOpenFileOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusRuntimeOpenFileOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var pname: js.UndefOr[String] = js.native
+  var pname: js.UndefOr[String] = js.undefined
   
   /**
     * 弹出系统选择程序界面指示区域
@@ -28,7 +26,7 @@ trait PlusRuntimeOpenFileOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var popover: js.UndefOr[js.Any] = js.native
+  var popover: js.UndefOr[js.Any] = js.undefined
 }
 object PlusRuntimeOpenFileOptions {
   

@@ -4,7 +4,6 @@ import typings.adalAngular.mod.RequestType
 import typings.adalAngular.mod.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adalAngularStrings {
@@ -40,17 +39,23 @@ object adalAngularStrings {
   def `In Progress`: `In Progress` = ("In Progress").asInstanceOf[`In Progress`]
   
   @js.native
-  sealed trait LOGIN extends RequestType
+  sealed trait LOGIN
+    extends StObject
+       with RequestType
   @scala.inline
   def LOGIN: LOGIN = "LOGIN".asInstanceOf[LOGIN]
   
   @js.native
-  sealed trait RENEW_TOKEN extends RequestType
+  sealed trait RENEW_TOKEN
+    extends StObject
+       with RequestType
   @scala.inline
   def RENEW_TOKEN: RENEW_TOKEN = "RENEW_TOKEN".asInstanceOf[RENEW_TOKEN]
   
   @js.native
-  sealed trait UNKNOWN extends RequestType
+  sealed trait UNKNOWN
+    extends StObject
+       with RequestType
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
@@ -160,7 +165,9 @@ object adalAngularStrings {
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   
   @js.native
-  sealed trait `id_token token` extends ResponseType
+  sealed trait `id_token token`
+    extends StObject
+       with ResponseType
   @scala.inline
   def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
@@ -180,7 +187,9 @@ object adalAngularStrings {
   def session_state: session_state = "session_state".asInstanceOf[session_state]
   
   @js.native
-  sealed trait token extends ResponseType
+  sealed trait token
+    extends StObject
+       with ResponseType
   @scala.inline
   def token: token = "token".asInstanceOf[token]
 }

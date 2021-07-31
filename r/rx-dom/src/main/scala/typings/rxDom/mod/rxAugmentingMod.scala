@@ -17,7 +17,6 @@ import typings.std.UIEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -25,586 +24,427 @@ object rxAugmentingMod {
   
   object DOM {
     
-    @JSImport("rx", "DOM.ajax")
+    @JSImport("rx", "DOM")
     @js.native
-    def ajax(settingsOrUrl: String): typings.rx.Rx.Observable[AjaxSuccessResponse] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def ajax(settingsOrUrl: String): typings.rx.Rx.Observable[AjaxSuccessResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(settingsOrUrl.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[AjaxSuccessResponse]]
     // Ajax
-    @JSImport("rx", "DOM.ajax")
-    @js.native
-    def ajax(settingsOrUrl: AjaxSettings): typings.rx.Rx.Observable[AjaxSuccessResponse] = js.native
+    @scala.inline
+    def ajax(settingsOrUrl: AjaxSettings): typings.rx.Rx.Observable[AjaxSuccessResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(settingsOrUrl.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[AjaxSuccessResponse]]
     
     // Event Shortcuts
-    @JSImport("rx", "DOM.blur")
-    @js.native
-    def blur(element: Element): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.blur")
-    @js.native
-    def blur(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.blur")
-    @js.native
-    def blur(element: Element, selector: js.Function): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.blur")
-    @js.native
-    def blur(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = js.native
+    @scala.inline
+    def blur(element: Element): typings.rx.Rx.Observable[FocusEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("blur")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def blur(element: Element, selector: js.Function): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def blur(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def blur(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
     
-    @JSImport("rx", "DOM.change")
-    @js.native
-    def change(element: Element): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.change")
-    @js.native
-    def change(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = js.native
+    @scala.inline
+    def change(element: Element): typings.rx.Rx.Observable[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def change(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
     
-    @JSImport("rx", "DOM.click")
-    @js.native
-    def click(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.click")
-    @js.native
-    def click(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.click")
-    @js.native
-    def click(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.click")
-    @js.native
-    def click(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def click(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def click(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def click(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def click(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.contextmenu")
-    @js.native
-    def contextmenu(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.contextmenu")
-    @js.native
-    def contextmenu(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.contextmenu")
-    @js.native
-    def contextmenu(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.contextmenu")
-    @js.native
-    def contextmenu(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def contextmenu(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("contextmenu")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def contextmenu(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("contextmenu")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def contextmenu(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("contextmenu")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def contextmenu(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("contextmenu")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.dblclick")
-    @js.native
-    def dblclick(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.dblclick")
-    @js.native
-    def dblclick(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.dblclick")
-    @js.native
-    def dblclick(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.dblclick")
-    @js.native
-    def dblclick(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def dblclick(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("dblclick")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def dblclick(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("dblclick")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def dblclick(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("dblclick")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def dblclick(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("dblclick")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.error")
-    @js.native
-    def error(element: Element): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.error")
-    @js.native
-    def error(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.error")
-    @js.native
-    def error(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.error")
-    @js.native
-    def error(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
+    @scala.inline
+    def error(element: Element): typings.rx.Rx.Observable[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def error(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def error(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def error(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
     
-    @JSImport("rx", "DOM.focus")
-    @js.native
-    def focus(element: Element): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.focus")
-    @js.native
-    def focus(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.focus")
-    @js.native
-    def focus(element: Element, selector: js.Function): typings.rx.Rx.Observable[FocusEvent] = js.native
-    @JSImport("rx", "DOM.focus")
-    @js.native
-    def focus(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = js.native
+    @scala.inline
+    def focus(element: Element): typings.rx.Rx.Observable[FocusEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def focus(element: Element, selector: js.Function): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def focus(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
+    @scala.inline
+    def focus(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[FocusEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[FocusEvent]]
     
-    @JSImport("rx", "DOM.focusin")
-    @js.native
-    def focusin(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusin")
-    @js.native
-    def focusin(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusin")
-    @js.native
-    def focusin(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusin")
-    @js.native
-    def focusin(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def focusin(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusin")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusin(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusin")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusin(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusin")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusin(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusin")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.focusout")
-    @js.native
-    def focusout(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusout")
-    @js.native
-    def focusout(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusout")
-    @js.native
-    def focusout(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.focusout")
-    @js.native
-    def focusout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def focusout(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusout")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusout(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def focusout(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
     // Events
-    @JSImport("rx", "DOM.fromEvent")
-    @js.native
-    def fromEvent[T](element: js.Any, eventName: String): typings.rx.Rx.Observable[T] = js.native
-    @JSImport("rx", "DOM.fromEvent")
-    @js.native
-    def fromEvent[T](element: js.Any, eventName: String, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[T] = js.native
-    @JSImport("rx", "DOM.fromEvent")
-    @js.native
-    def fromEvent[T](element: js.Any, eventName: String, selector: js.Function): typings.rx.Rx.Observable[T] = js.native
-    @JSImport("rx", "DOM.fromEvent")
-    @js.native
-    def fromEvent[T](element: js.Any, eventName: String, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[T] = js.native
+    @scala.inline
+    def fromEvent[T](element: js.Any, eventName: String): typings.rx.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[T]]
+    @scala.inline
+    def fromEvent[T](element: js.Any, eventName: String, selector: js.Function): typings.rx.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[T]]
+    @scala.inline
+    def fromEvent[T](element: js.Any, eventName: String, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[T]]
+    @scala.inline
+    def fromEvent[T](element: js.Any, eventName: String, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[T]]
     
     // Server-Sent Events
-    @JSImport("rx", "DOM.fromEventSource")
-    @js.native
-    def fromEventSource[T](url: String): typings.rx.Rx.Observable[T] = js.native
-    @JSImport("rx", "DOM.fromEventSource")
-    @js.native
-    def fromEventSource[T](url: String, openObservable: typings.rx.Rx.Observer[T]): typings.rx.Rx.Observable[T] = js.native
+    @scala.inline
+    def fromEventSource[T](url: String): typings.rx.Rx.Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEventSource")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[T]]
+    @scala.inline
+    def fromEventSource[T](url: String, openObservable: typings.rx.Rx.Observer[T]): typings.rx.Rx.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventSource")(url.asInstanceOf[js.Any], openObservable.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[T]]
     
     // Mutation Observers
-    @JSImport("rx", "DOM.fromMutationObserver")
-    @js.native
-    def fromMutationObserver(target: Node, options: MutationObserverInit): typings.rx.Rx.Observable[MutationEvent] = js.native
+    @scala.inline
+    def fromMutationObserver(target: Node, options: MutationObserverInit): typings.rx.Rx.Observable[MutationEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMutationObserver")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MutationEvent]]
     
     // Web Sockets
-    @JSImport("rx", "DOM.fromWebSocket")
-    @js.native
-    def fromWebSocket(url: String, protocol: String): typings.rx.Rx.Subject[MessageEvent[_]] = js.native
-    @JSImport("rx", "DOM.fromWebSocket")
-    @js.native
+    @scala.inline
+    def fromWebSocket(url: String, protocol: String): typings.rx.Rx.Subject[MessageEvent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocket")(url.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Subject[MessageEvent[js.Any]]]
+    @scala.inline
     def fromWebSocket(
       url: String,
       protocol: String,
-      openObserver: js.UndefOr[scala.Nothing],
+      openObserver: Unit,
       closingObserver: typings.rx.Rx.Observer[CloseEvent]
-    ): typings.rx.Rx.Subject[MessageEvent[_]] = js.native
-    @JSImport("rx", "DOM.fromWebSocket")
-    @js.native
-    def fromWebSocket(url: String, protocol: String, openObserver: typings.rx.Rx.Observer[Event]): typings.rx.Rx.Subject[MessageEvent[_]] = js.native
-    @JSImport("rx", "DOM.fromWebSocket")
-    @js.native
+    ): typings.rx.Rx.Subject[MessageEvent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocket")(url.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any], openObserver.asInstanceOf[js.Any], closingObserver.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Subject[MessageEvent[js.Any]]]
+    @scala.inline
+    def fromWebSocket(url: String, protocol: String, openObserver: typings.rx.Rx.Observer[Event]): typings.rx.Rx.Subject[MessageEvent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocket")(url.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any], openObserver.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Subject[MessageEvent[js.Any]]]
+    @scala.inline
     def fromWebSocket(
       url: String,
       protocol: String,
       openObserver: typings.rx.Rx.Observer[Event],
       closingObserver: typings.rx.Rx.Observer[CloseEvent]
-    ): typings.rx.Rx.Subject[MessageEvent[_]] = js.native
+    ): typings.rx.Rx.Subject[MessageEvent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocket")(url.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any], openObserver.asInstanceOf[js.Any], closingObserver.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Subject[MessageEvent[js.Any]]]
     
     // Web Workers
-    @JSImport("rx", "DOM.fromWebWorker")
-    @js.native
-    def fromWebWorker(url: String): typings.rx.Rx.Subject[String] = js.native
+    @scala.inline
+    def fromWebWorker(url: String): typings.rx.Rx.Subject[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebWorker")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Subject[String]]
     
     // Geolocation
     object geolocation {
       
-      @JSImport("rx", "DOM.geolocation.getCurrentPosition")
+      @JSImport("rx", "DOM.geolocation")
       @js.native
-      def getCurrentPosition(): typings.rx.Rx.Observable[GeolocationPosition] = js.native
-      @JSImport("rx", "DOM.geolocation.getCurrentPosition")
-      @js.native
-      def getCurrentPosition(geolocationOptions: GeolocationOptions): typings.rx.Rx.Observable[GeolocationPosition] = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("rx", "DOM.geolocation.watchPosition")
-      @js.native
-      def watchPosition(): typings.rx.Rx.Observable[GeolocationPosition] = js.native
-      @JSImport("rx", "DOM.geolocation.watchPosition")
-      @js.native
-      def watchPosition(geolocationOptions: GeolocationOptions): typings.rx.Rx.Observable[GeolocationPosition] = js.native
+      @scala.inline
+      def getCurrentPosition(): typings.rx.Rx.Observable[GeolocationPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPosition")().asInstanceOf[typings.rx.Rx.Observable[GeolocationPosition]]
+      @scala.inline
+      def getCurrentPosition(geolocationOptions: GeolocationOptions): typings.rx.Rx.Observable[GeolocationPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPosition")(geolocationOptions.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[GeolocationPosition]]
+      
+      @scala.inline
+      def watchPosition(): typings.rx.Rx.Observable[GeolocationPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("watchPosition")().asInstanceOf[typings.rx.Rx.Observable[GeolocationPosition]]
+      @scala.inline
+      def watchPosition(geolocationOptions: GeolocationOptions): typings.rx.Rx.Observable[GeolocationPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("watchPosition")(geolocationOptions.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[GeolocationPosition]]
     }
     
-    @JSImport("rx", "DOM.get")
-    @js.native
-    def get(url: String): typings.rx.Rx.Observable[AjaxSuccessResponse] = js.native
+    @scala.inline
+    def get(url: String): typings.rx.Rx.Observable[AjaxSuccessResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[AjaxSuccessResponse]]
     
-    @JSImport("rx", "DOM.getJSON")
-    @js.native
-    def getJSON(url: String): typings.rx.Rx.Observable[String] = js.native
+    @scala.inline
+    def getJSON(url: String): typings.rx.Rx.Observable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[String]]
     
-    @JSImport("rx", "DOM.jsonpRequest")
-    @js.native
-    def jsonpRequest(settings: JsonpSettings): typings.rx.Rx.Observable[JsonpSuccessResponse] = js.native
-    @JSImport("rx", "DOM.jsonpRequest")
-    @js.native
-    def jsonpRequest(url: String): typings.rx.Rx.Observable[String] = js.native
+    @scala.inline
+    def jsonpRequest(settings: JsonpSettings): typings.rx.Rx.Observable[JsonpSuccessResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonpRequest")(settings.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[JsonpSuccessResponse]]
+    @scala.inline
+    def jsonpRequest(url: String): typings.rx.Rx.Observable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[String]]
     
-    @JSImport("rx", "DOM.keydown")
-    @js.native
-    def keydown(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keydown")
-    @js.native
-    def keydown(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keydown")
-    @js.native
-    def keydown(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keydown")
-    @js.native
-    def keydown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
+    @scala.inline
+    def keydown(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("keydown")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keydown(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keydown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keydown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keydown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keydown(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keydown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
     
-    @JSImport("rx", "DOM.keypress")
-    @js.native
-    def keypress(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keypress")
-    @js.native
-    def keypress(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keypress")
-    @js.native
-    def keypress(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keypress")
-    @js.native
-    def keypress(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
+    @scala.inline
+    def keypress(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("keypress")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keypress(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keypress")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keypress(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keypress")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keypress(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keypress")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
     
-    @JSImport("rx", "DOM.keyup")
-    @js.native
-    def keyup(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keyup")
-    @js.native
-    def keyup(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keyup")
-    @js.native
-    def keyup(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = js.native
-    @JSImport("rx", "DOM.keyup")
-    @js.native
-    def keyup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = js.native
+    @scala.inline
+    def keyup(element: Element): typings.rx.Rx.Observable[KeyboardEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyup")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keyup(element: Element, selector: js.Function): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keyup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
+    @scala.inline
+    def keyup(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[KeyboardEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[KeyboardEvent]]
     
-    @JSImport("rx", "DOM.load")
-    @js.native
-    def load(element: Element): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.load")
-    @js.native
-    def load(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.load")
-    @js.native
-    def load(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.load")
-    @js.native
-    def load(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
+    @scala.inline
+    def load(element: Element): typings.rx.Rx.Observable[UIEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def load(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def load(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def load(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
     
-    @JSImport("rx", "DOM.mousedown")
-    @js.native
-    def mousedown(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousedown")
-    @js.native
-    def mousedown(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousedown")
-    @js.native
-    def mousedown(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousedown")
-    @js.native
-    def mousedown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mousedown(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mousedown")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousedown(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousedown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousedown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousedown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousedown(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousedown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mouseenter")
-    @js.native
-    def mouseenter(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseenter")
-    @js.native
-    def mouseenter(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseenter")
-    @js.native
-    def mouseenter(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseenter")
-    @js.native
-    def mouseenter(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mouseenter(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseenter")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseenter(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseenter(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseenter(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mouseleave")
-    @js.native
-    def mouseleave(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseleave")
-    @js.native
-    def mouseleave(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseleave")
-    @js.native
-    def mouseleave(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseleave")
-    @js.native
-    def mouseleave(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mouseleave(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseleave")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseleave(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseleave(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseleave(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mousemove")
-    @js.native
-    def mousemove(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousemove")
-    @js.native
-    def mousemove(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousemove")
-    @js.native
-    def mousemove(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mousemove")
-    @js.native
-    def mousemove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mousemove(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mousemove")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousemove(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousemove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousemove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousemove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mousemove(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mousemove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mouseout")
-    @js.native
-    def mouseout(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseout")
-    @js.native
-    def mouseout(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseout")
-    @js.native
-    def mouseout(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseout")
-    @js.native
-    def mouseout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mouseout(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseout")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseout(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseout(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mouseover")
-    @js.native
-    def mouseover(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseover")
-    @js.native
-    def mouseover(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseover")
-    @js.native
-    def mouseover(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseover")
-    @js.native
-    def mouseover(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mouseover(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseover")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseover(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseover(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseover(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
-    @JSImport("rx", "DOM.mouseup")
-    @js.native
-    def mouseup(element: Element): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseup")
-    @js.native
-    def mouseup(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseup")
-    @js.native
-    def mouseup(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = js.native
-    @JSImport("rx", "DOM.mouseup")
-    @js.native
-    def mouseup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = js.native
+    @scala.inline
+    def mouseup(element: Element): typings.rx.Rx.Observable[MouseEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseup")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseup(element: Element, selector: js.Function): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
+    @scala.inline
+    def mouseup(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[MouseEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("mouseup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[MouseEvent]]
     
     // Pointer Events
-    @JSImport("rx", "DOM.pointerdown")
-    @js.native
-    def pointerdown(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerdown")
-    @js.native
-    def pointerdown(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerdown")
-    @js.native
-    def pointerdown(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerdown")
-    @js.native
-    def pointerdown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerdown(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerdown")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerdown(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerdown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerdown(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerdown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerdown(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerdown")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointerenter")
-    @js.native
-    def pointerenter(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerenter")
-    @js.native
-    def pointerenter(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerenter")
-    @js.native
-    def pointerenter(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerenter")
-    @js.native
-    def pointerenter(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerenter(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerenter")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerenter(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerenter(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerenter(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerenter")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointerleave")
-    @js.native
-    def pointerleave(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerleave")
-    @js.native
-    def pointerleave(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerleave")
-    @js.native
-    def pointerleave(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerleave")
-    @js.native
-    def pointerleave(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerleave(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerleave")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerleave(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerleave(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerleave(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerleave")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointermove")
-    @js.native
-    def pointermove(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointermove")
-    @js.native
-    def pointermove(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointermove")
-    @js.native
-    def pointermove(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointermove")
-    @js.native
-    def pointermove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointermove(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointermove")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointermove(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointermove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointermove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointermove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointermove(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointermove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointerout")
-    @js.native
-    def pointerout(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerout")
-    @js.native
-    def pointerout(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerout")
-    @js.native
-    def pointerout(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerout")
-    @js.native
-    def pointerout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerout(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerout")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerout(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerout(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerout(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerout")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointerover")
-    @js.native
-    def pointerover(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerover")
-    @js.native
-    def pointerover(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerover")
-    @js.native
-    def pointerover(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerover")
-    @js.native
-    def pointerover(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerover(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerover")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerover(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerover(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerover(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerover")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.pointerup")
-    @js.native
-    def pointerup(element: Element): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerup")
-    @js.native
-    def pointerup(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerup")
-    @js.native
-    def pointerup(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = js.native
-    @JSImport("rx", "DOM.pointerup")
-    @js.native
-    def pointerup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = js.native
+    @scala.inline
+    def pointerup(element: Element): typings.rx.Rx.Observable[PointerEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerup")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerup(element: Element, selector: js.Function): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerup(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
+    @scala.inline
+    def pointerup(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[PointerEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerup")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[PointerEvent]]
     
-    @JSImport("rx", "DOM.post")
-    @js.native
-    def post(url: String, body: js.Any): typings.rx.Rx.Observable[AjaxSuccessResponse] = js.native
+    @scala.inline
+    def post(url: String, body: js.Any): typings.rx.Rx.Observable[AjaxSuccessResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[AjaxSuccessResponse]]
     
-    @JSImport("rx", "DOM.ready")
-    @js.native
-    def ready(): typings.rx.Rx.Observable[_] = js.native
+    @scala.inline
+    def ready(): typings.rx.Rx.Observable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[typings.rx.Rx.Observable[js.Any]]
     
-    @JSImport("rx", "DOM.resize")
-    @js.native
-    def resize(element: Element): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.resize")
-    @js.native
-    def resize(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.resize")
-    @js.native
-    def resize(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.resize")
-    @js.native
-    def resize(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
+    @scala.inline
+    def resize(element: Element): typings.rx.Rx.Observable[UIEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("resize")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def resize(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def resize(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def resize(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
     
-    @JSImport("rx", "DOM.scroll")
-    @js.native
-    def scroll(element: Element): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.scroll")
-    @js.native
-    def scroll(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.scroll")
-    @js.native
-    def scroll(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = js.native
-    @JSImport("rx", "DOM.scroll")
-    @js.native
-    def scroll(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = js.native
+    @scala.inline
+    def scroll(element: Element): typings.rx.Rx.Observable[UIEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def scroll(element: Element, selector: js.Function): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def scroll(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
+    @scala.inline
+    def scroll(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[UIEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[UIEvent]]
     
-    @JSImport("rx", "DOM.select")
-    @js.native
-    def select(element: Element): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.select")
-    @js.native
-    def select(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.select")
-    @js.native
-    def select(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.select")
-    @js.native
-    def select(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
+    @scala.inline
+    def select(element: Element): typings.rx.Rx.Observable[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def select(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def select(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def select(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
     
-    @JSImport("rx", "DOM.submit")
-    @js.native
-    def submit(element: Element): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.submit")
-    @js.native
-    def submit(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.submit")
-    @js.native
-    def submit(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.submit")
-    @js.native
-    def submit(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
+    @scala.inline
+    def submit(element: Element): typings.rx.Rx.Observable[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("submit")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def submit(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("submit")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def submit(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("submit")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def submit(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("submit")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
     
     // Touch Events
-    @JSImport("rx", "DOM.touchcancel")
-    @js.native
-    def touchcancel(element: Element): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchcancel")
-    @js.native
-    def touchcancel(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchcancel")
-    @js.native
-    def touchcancel(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchcancel")
-    @js.native
-    def touchcancel(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
+    @scala.inline
+    def touchcancel(element: Element): typings.rx.Rx.Observable[TouchEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("touchcancel")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchcancel(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchcancel")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchcancel(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchcancel")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchcancel(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchcancel")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
     
-    @JSImport("rx", "DOM.touchend")
-    @js.native
-    def touchend(element: Element): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchend")
-    @js.native
-    def touchend(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchend")
-    @js.native
-    def touchend(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchend")
-    @js.native
-    def touchend(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
+    @scala.inline
+    def touchend(element: Element): typings.rx.Rx.Observable[TouchEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("touchend")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchend(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchend")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchend(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchend")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchend(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchend")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
     
-    @JSImport("rx", "DOM.touchmove")
-    @js.native
-    def touchmove(element: Element): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchmove")
-    @js.native
-    def touchmove(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchmove")
-    @js.native
-    def touchmove(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchmove")
-    @js.native
-    def touchmove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
+    @scala.inline
+    def touchmove(element: Element): typings.rx.Rx.Observable[TouchEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("touchmove")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchmove(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchmove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchmove(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchmove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchmove(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchmove")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
     
-    @JSImport("rx", "DOM.touchstart")
-    @js.native
-    def touchstart(element: Element): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchstart")
-    @js.native
-    def touchstart(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchstart")
-    @js.native
-    def touchstart(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = js.native
-    @JSImport("rx", "DOM.touchstart")
-    @js.native
-    def touchstart(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = js.native
+    @scala.inline
+    def touchstart(element: Element): typings.rx.Rx.Observable[TouchEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("touchstart")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchstart(element: Element, selector: js.Function): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchstart")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchstart(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchstart")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
+    @scala.inline
+    def touchstart(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[TouchEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("touchstart")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[TouchEvent]]
     
-    @JSImport("rx", "DOM.unload")
-    @js.native
-    def unload(element: Element): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.unload")
-    @js.native
-    def unload(element: Element, selector: js.UndefOr[scala.Nothing], useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.unload")
-    @js.native
-    def unload(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = js.native
-    @JSImport("rx", "DOM.unload")
-    @js.native
-    def unload(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = js.native
+    @scala.inline
+    def unload(element: Element): typings.rx.Rx.Observable[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(element.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def unload(element: Element, selector: js.Function): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def unload(element: Element, selector: js.Function, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
+    @scala.inline
+    def unload(element: Element, selector: Unit, useCapture: Boolean): typings.rx.Rx.Observable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Observable[Event]]
     
-    @js.native
     trait AjaxErrorResponse extends StObject {
       
-      var originalEvent: Event = js.native
+      var originalEvent: Event
       
-      var status: Double = js.native
+      var status: Double
       
-      var `type`: String = js.native
+      var `type`: String
       
-      var xhr: XMLHttpRequest = js.native
+      var xhr: XMLHttpRequest
     }
     object AjaxErrorResponse {
       
@@ -632,30 +472,29 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait AjaxSettings extends StObject {
       
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
-      var body: js.UndefOr[String] = js.native
+      var body: js.UndefOr[String] = js.undefined
       
       // This options does not seem to be used in the code yet
       // contentType?: string;
-      var crossDomain: js.UndefOr[Boolean] = js.native
+      var crossDomain: js.UndefOr[Boolean] = js.undefined
       
-      var headers: js.UndefOr[js.Any] = js.native
+      var headers: js.UndefOr[js.Any] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var progressObserver: js.UndefOr[typings.rx.Rx.Observer[_]] = js.native
+      var progressObserver: js.UndefOr[typings.rx.Rx.Observer[js.Any]] = js.undefined
       
-      var responseType: js.UndefOr[String] = js.native
+      var responseType: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var user: js.UndefOr[String] = js.native
+      var user: js.UndefOr[String] = js.undefined
     }
     object AjaxSettings {
       
@@ -705,7 +544,7 @@ object rxAugmentingMod {
         def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
         @scala.inline
-        def setProgressObserver(value: typings.rx.Rx.Observer[_]): Self = StObject.set(x, "progressObserver", value.asInstanceOf[js.Any])
+        def setProgressObserver(value: typings.rx.Rx.Observer[js.Any]): Self = StObject.set(x, "progressObserver", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setProgressObserverUndefined: Self = StObject.set(x, "progressObserver", js.undefined)
@@ -730,18 +569,17 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait AjaxSuccessResponse extends StObject {
       
-      var originalEvent: Event = js.native
+      var originalEvent: Event
       
-      var response: js.Any = js.native
+      var response: js.Any
       
-      var responseType: String = js.native
+      var responseType: String
       
-      var status: Double = js.native
+      var status: Double
       
-      var xhr: XMLHttpRequest = js.native
+      var xhr: XMLHttpRequest
     }
     object AjaxSuccessResponse {
       
@@ -771,14 +609,13 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait GeolocationOptions extends StObject {
       
-      var enableHighAccuracy: js.UndefOr[Boolean] = js.native
+      var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
       
-      var maximumAge: js.UndefOr[Double] = js.native
+      var maximumAge: js.UndefOr[Double] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object GeolocationOptions {
       
@@ -811,14 +648,13 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait JsonpErrorResponse extends StObject {
       
-      var originalEvent: Event = js.native
+      var originalEvent: Event
       
-      var status: Double = js.native
+      var status: Double
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object JsonpErrorResponse {
       
@@ -843,16 +679,15 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait JsonpSettings extends StObject {
       
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
-      var jsonp: js.UndefOr[String] = js.native
+      var jsonp: js.UndefOr[String] = js.undefined
       
-      var jsonpCallback: js.UndefOr[String] = js.native
+      var jsonpCallback: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object JsonpSettings {
       
@@ -891,16 +726,15 @@ object rxAugmentingMod {
       }
     }
     
-    @js.native
     trait JsonpSuccessResponse extends StObject {
       
-      var originalEvent: Event = js.native
+      var originalEvent: Event
       
-      var response: js.Any = js.native
+      var response: js.Any
       
-      var responseType: String = js.native
+      var responseType: String
       
-      var status: Double = js.native
+      var status: Double
     }
     object JsonpSuccessResponse {
       

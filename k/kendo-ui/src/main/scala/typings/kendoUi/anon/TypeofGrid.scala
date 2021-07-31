@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofGrid extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Grid = js.native
+  def extend(proto: js.Object): Grid
   
   /* static member */
-  var fn: Grid = js.native
+  var fn: Grid
 }
 object TypeofGrid {
   

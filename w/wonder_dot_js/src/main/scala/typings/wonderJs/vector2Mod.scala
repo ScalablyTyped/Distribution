@@ -1,31 +1,41 @@
 package typings.wonderJs
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/math/Vector2", JSImport.Namespace)
-@js.native
-object vector2Mod extends js.Object {
+object vector2Mod {
+  
+  @JSImport("wonder.js/dist/es2015/math/Vector2", "Vector2")
   @js.native
-  class Vector2 () extends js.Object {
+  class Vector2 () extends StObject {
     def this(x: js.Any, y: js.Any) = this()
-    var values: Float32Array = js.native
-    var x: Double = js.native
-    var y: Double = js.native
+    
     def add(v: Vector2): this.type = js.native
+    
     def isEqual(v: Vector2): Boolean = js.native
+    
     def mul(v: Vector2): this.type = js.native
+    
     def set(x: Double, y: Double): Unit = js.native
+    
+    var values: Float32Array = js.native
+    
+    var x: Double = js.native
+    
+    var y: Double = js.native
   }
-  
   /* static members */
-  @js.native
-  object Vector2 extends js.Object {
-    def create(): Vector2 = js.native
-    def create(x: js.Any, y: js.Any): Vector2 = js.native
+  object Vector2 {
+    
+    @JSImport("wonder.js/dist/es2015/math/Vector2", "Vector2")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Vector2]
+    @scala.inline
+    def create(x: js.Any, y: js.Any): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Vector2]
   }
-  
 }
-

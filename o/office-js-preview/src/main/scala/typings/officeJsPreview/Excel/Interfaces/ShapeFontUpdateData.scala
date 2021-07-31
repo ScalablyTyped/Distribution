@@ -19,11 +19,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.WavyDouble
 import typings.officeJsPreview.officeJsPreviewStrings.WavyHeavy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
-@js.native
 trait ShapeFontUpdateData extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait ShapeFontUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait ShapeFontUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait ShapeFontUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait ShapeFontUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait ShapeFontUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ShapeFontUpdateData extends StObject {
     */
   var underline: js.UndefOr[
     ShapeFontUnderlineStyle | None | Single | typings.officeJsPreview.officeJsPreviewStrings.Double | Heavy | Dotted | DottedHeavy | Dash | DashHeavy | DashLong | DashLongHeavy | DotDash | DotDashHeavy | DotDotDash | DotDotDashHeavy | Wavy | WavyHeavy | WavyDouble
-  ] = js.native
+  ] = js.undefined
 }
 object ShapeFontUpdateData {
   

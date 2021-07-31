@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest extends StObject {
   
   /** Required. Specifies the area to search within for playable locations. */
-  var areaFilter: js.UndefOr[GoogleMapsPlayablelocationsV3SampleAreaFilter] = js.native
+  var areaFilter: js.UndefOr[GoogleMapsPlayablelocationsV3SampleAreaFilter] = js.undefined
   
   /** Required. Specifies one or more (up to 5) criteria for filtering the returned playable locations. */
-  var criteria: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3SampleCriterion]] = js.native
+  var criteria: js.UndefOr[js.Array[GoogleMapsPlayablelocationsV3SampleCriterion]] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest {
   

@@ -3,21 +3,19 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.mod.DpValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DpId extends StObject {
   
-  var dpId: String = js.native
+  var dpId: String
   
-  var dpName: String = js.native
+  var dpName: String
   
-  var rangeKeys: js.Array[DpValue] = js.native
+  var rangeKeys: js.Array[DpValue]
   
-  var rangeValues: js.Array[String] = js.native
+  var rangeValues: js.Array[String]
   
-  var selected: Double = js.native
+  var selected: Double
 }
 object DpId {
   

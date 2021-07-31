@@ -3,20 +3,21 @@ package typings.routeRecognizer
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dslMod {
   
-  @JSImport("route-recognizer/dist/route-recognizer/dsl", JSImport.Default)
+  @JSImport("route-recognizer/dist/route-recognizer/dsl", JSImport.Namespace)
   @js.native
-  def default[T /* <: RouteRecognizer */](callback: MatchCallback): Unit = js.native
-  @JSImport("route-recognizer/dist/route-recognizer/dsl", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T /* <: RouteRecognizer */](callback: MatchCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def default[T /* <: RouteRecognizer */](
     callback: MatchCallback,
     addRouteCallback: js.Function2[/* routeRecognizer */ T, /* routes */ js.Array[Route], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], addRouteCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("route-recognizer/dist/route-recognizer/dsl", "Matcher")
   @js.native
@@ -35,12 +36,11 @@ object dslMod {
     var target: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Delegate extends StObject {
     
-    var contextEntered: js.UndefOr[js.Function2[/* context */ String, /* route */ MatchDSL, Unit]] = js.native
+    var contextEntered: js.UndefOr[js.Function2[/* context */ String, /* route */ MatchDSL, Unit]] = js.undefined
     
-    var willAddRoute: js.UndefOr[js.Function2[/* context */ js.UndefOr[String], /* route */ String, String]] = js.native
+    var willAddRoute: js.UndefOr[js.Function2[/* context */ js.UndefOr[String], /* route */ String, String]] = js.undefined
   }
   object Delegate {
     
@@ -82,14 +82,13 @@ object dslMod {
   
   type Opaque = js.UndefOr[js.Object | Unit | Null]
   
-  @js.native
   trait Route extends StObject {
     
-    var handler: Opaque = js.native
+    var handler: Opaque
     
-    var path: String = js.native
+    var path: String
     
-    var queryParams: js.UndefOr[js.Array[String]] = js.native
+    var queryParams: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Route {
     
@@ -125,12 +124,11 @@ object dslMod {
     }
   }
   
-  @js.native
   trait RouteRecognizer extends StObject {
     
-    def add(routes: js.Array[Route]): Unit = js.native
+    def add(routes: js.Array[Route]): Unit
     
-    var delegate: js.UndefOr[Delegate] = js.native
+    var delegate: js.UndefOr[Delegate] = js.undefined
   }
   object RouteRecognizer {
     

@@ -3,105 +3,103 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   /**
     * The activation policy specifies when the instance is activated; it is applicable only when the instance state is RUNNABLE. Valid values: *ALWAYS*: The instance is on, and remains so
     * even in the absence of connection requests. *NEVER*: The instance is off; it is not activated, even if a connection request arrives.
     */
-  var activationPolicy: js.UndefOr[String] = js.native
+  var activationPolicy: js.UndefOr[String] = js.undefined
   
   /** Active Directory configuration, relevant only for Cloud SQL for SQL Server. */
-  var activeDirectoryConfig: js.UndefOr[SqlActiveDirectoryConfig] = js.native
+  var activeDirectoryConfig: js.UndefOr[SqlActiveDirectoryConfig] = js.undefined
   
   /** The App Engine app IDs that can access this instance. (Deprecated) Applied to First Generation instances only. */
-  var authorizedGaeApplications: js.UndefOr[js.Array[String]] = js.native
+  var authorizedGaeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Availability type. Potential values: *ZONAL*: The instance serves data from only one zone. Outages in that zone affect data accessibility. *REGIONAL*: The instance can serve data
     * from more than one zone in a region (it is highly available). For more information, see Overview of the High Availability Configuration.
     */
-  var availabilityType: js.UndefOr[String] = js.native
+  var availabilityType: js.UndefOr[String] = js.undefined
   
   /** The daily backup configuration for the instance. */
-  var backupConfiguration: js.UndefOr[BackupConfiguration] = js.native
+  var backupConfiguration: js.UndefOr[BackupConfiguration] = js.undefined
   
   /** The name of server Instance collation. */
-  var collation: js.UndefOr[String] = js.native
+  var collation: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration specific to read replica instances. Indicates whether database flags for crash-safe replication are enabled. This property was only applicable to First Generation
     * instances.
     */
-  var crashSafeReplicationEnabled: js.UndefOr[Boolean] = js.native
+  var crashSafeReplicationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** The size of data disk, in GB. The data disk size minimum is 10GB. */
-  var dataDiskSizeGb: js.UndefOr[String] = js.native
+  var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /** The type of data disk: PD_SSD (default) or PD_HDD. Not used for First Generation instances. */
-  var dataDiskType: js.UndefOr[String] = js.native
+  var dataDiskType: js.UndefOr[String] = js.undefined
   
   /** The database flags passed to the instance at startup. */
-  var databaseFlags: js.UndefOr[js.Array[DatabaseFlags]] = js.native
+  var databaseFlags: js.UndefOr[js.Array[DatabaseFlags]] = js.undefined
   
   /** Configuration specific to read replica instances. Indicates whether replication is enabled or not. */
-  var databaseReplicationEnabled: js.UndefOr[Boolean] = js.native
+  var databaseReplicationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Deny maintenance periods */
-  var denyMaintenancePeriods: js.UndefOr[js.Array[DenyMaintenancePeriod]] = js.native
+  var denyMaintenancePeriods: js.UndefOr[js.Array[DenyMaintenancePeriod]] = js.undefined
   
   /** Insights configuration, for now relevant only for Postgres. */
-  var insightsConfig: js.UndefOr[InsightsConfig] = js.native
+  var insightsConfig: js.UndefOr[InsightsConfig] = js.undefined
   
   /**
     * The settings for IP Management. This allows to enable or disable the instance IP and manage which external networks can connect to the instance. The IPv4 address cannot be disabled
     * for Second Generation instances.
     */
-  var ipConfiguration: js.UndefOr[IpConfiguration] = js.native
+  var ipConfiguration: js.UndefOr[IpConfiguration] = js.undefined
   
   /** This is always *sql#settings*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The location preference settings. This allows the instance to be located as near as possible to either an App Engine app or Compute Engine zone for better performance. App Engine
     * co-location was only applicable to First Generation instances.
     */
-  var locationPreference: js.UndefOr[LocationPreference] = js.native
+  var locationPreference: js.UndefOr[LocationPreference] = js.undefined
   
   /** The maintenance window for this instance. This specifies when the instance can be restarted for maintenance purposes. */
-  var maintenanceWindow: js.UndefOr[MaintenanceWindow] = js.native
+  var maintenanceWindow: js.UndefOr[MaintenanceWindow] = js.undefined
   
   /** The pricing plan for this instance. This can be either *PER_USE* or *PACKAGE*. Only *PER_USE* is supported for Second Generation instances. */
-  var pricingPlan: js.UndefOr[String] = js.native
+  var pricingPlan: js.UndefOr[String] = js.undefined
   
   /** The type of replication this instance uses. This can be either *ASYNCHRONOUS* or *SYNCHRONOUS*. (Deprecated_ This property was only applicable to First Generation instances. */
-  var replicationType: js.UndefOr[String] = js.native
+  var replicationType: js.UndefOr[String] = js.undefined
   
   /**
     * The version of instance settings. This is a required field for update method to make sure concurrent updates are handled properly. During update, use the most recent settingsVersion
     * value for this instance and do not try to update this value.
     */
-  var settingsVersion: js.UndefOr[String] = js.native
+  var settingsVersion: js.UndefOr[String] = js.undefined
   
   /** Configuration to increase storage size automatically. The default value is true. */
-  var storageAutoResize: js.UndefOr[Boolean] = js.native
+  var storageAutoResize: js.UndefOr[Boolean] = js.undefined
   
   /** The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit. */
-  var storageAutoResizeLimit: js.UndefOr[String] = js.native
+  var storageAutoResizeLimit: js.UndefOr[String] = js.undefined
   
   /** The tier (or machine type) for this instance, for example *db-n1-standard-1* (MySQL instances) or *db-custom-1-3840* (PostgreSQL instances). */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
   
   /** User-provided labels, represented as a dictionary where each label is a single key value pair. */
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Settings {
   
@@ -265,7 +263,7 @@ object Settings {
     def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     @scala.inline

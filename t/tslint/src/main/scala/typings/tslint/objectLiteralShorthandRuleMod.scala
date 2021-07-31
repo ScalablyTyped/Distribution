@@ -8,7 +8,6 @@ import typings.tslint.tslintStrings.`Shorthand property and method assignments h
 import typings.tslint.tslintStrings.`Shorthand property assignments have been disallowedDot`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectLiteralShorthandRuleMod {
@@ -45,17 +44,14 @@ object objectLiteralShorthandRuleMod {
     @scala.inline
     def SHORTHAND_ASSIGNMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTHAND_ASSIGNMENT")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.getDisallowedShorthandErrorMessage")
-    @js.native
-    def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`) = js.native
+    @scala.inline
+    def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisallowedShorthandErrorMessage")(options.asInstanceOf[js.Any]).asInstanceOf[(`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`)]
     
-    @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.getLonghandMethodErrorMessage")
-    @js.native
-    def getLonghandMethodErrorMessage(nodeText: String): String = js.native
+    @scala.inline
+    def getLonghandMethodErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandMethodErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.getLonghandPropertyErrorMessage")
-    @js.native
-    def getLonghandPropertyErrorMessage(nodeText: String): String = js.native
+    @scala.inline
+    def getLonghandPropertyErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandPropertyErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.metadata")
     @js.native
@@ -64,12 +60,11 @@ object objectLiteralShorthandRuleMod {
     def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var enforceShorthandMethods: Boolean = js.native
+    var enforceShorthandMethods: Boolean
     
-    var enforceShorthandProperties: Boolean = js.native
+    var enforceShorthandProperties: Boolean
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecGrpcRouteAction extends StObject {
   
   /**
     * The targets that traffic is routed to when a request matches the route.
     * You can specify one or more targets and their relative weights with which to distribute traffic.
     */
-  var weightedTargets: js.Array[RouteSpecGrpcRouteActionWeightedTarget] = js.native
+  var weightedTargets: js.Array[RouteSpecGrpcRouteActionWeightedTarget]
 }
 object RouteSpecGrpcRouteAction {
   

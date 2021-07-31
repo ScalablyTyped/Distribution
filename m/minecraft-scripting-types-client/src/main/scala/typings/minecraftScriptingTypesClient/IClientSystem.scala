@@ -9,12 +9,12 @@ import typings.minecraftScriptingTypesShared.ITickingArea
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IClientSystem[TSystem]
-  extends ISystem[TSystem]
+  extends StObject
+     with ISystem[TSystem]
      with IVanillaClientSystemBase {
   
   /**

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clearFixMod {
@@ -19,10 +18,11 @@ object clearFixMod {
   trait ClearFix
     extends Component[ClearFixProps, js.Object, js.Any]
   
-  @js.native
-  trait ClearFixProps extends Props[ClearFix] {
+  trait ClearFixProps
+    extends StObject
+       with Props[ClearFix] {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ClearFixProps {
     

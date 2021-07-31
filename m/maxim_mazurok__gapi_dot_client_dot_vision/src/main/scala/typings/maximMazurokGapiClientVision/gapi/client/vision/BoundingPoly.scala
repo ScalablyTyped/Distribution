@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingPoly extends StObject {
   
   /** The bounding polygon normalized vertices. */
-  var normalizedVertices: js.UndefOr[js.Array[NormalizedVertex]] = js.native
+  var normalizedVertices: js.UndefOr[js.Array[NormalizedVertex]] = js.undefined
   
   /** The bounding polygon vertices. */
-  var vertices: js.UndefOr[js.Array[Vertex]] = js.native
+  var vertices: js.UndefOr[js.Array[Vertex]] = js.undefined
 }
 object BoundingPoly {
   

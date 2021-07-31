@@ -5,25 +5,23 @@ import typings.braintree.anon.Content
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisputeGateway extends StObject {
   
-  def accept(disputeId: String): js.Promise[ValidatedResponse[Dispute]] = js.native
+  def accept(disputeId: String): js.Promise[ValidatedResponse[Dispute]]
   
-  def addFileEvidence(disputeId: String, evidence: Category): js.Promise[ValidatedResponse[Evidence]] = js.native
+  def addFileEvidence(disputeId: String, evidence: Category): js.Promise[ValidatedResponse[Evidence]]
   
-  def addTextEvidence(disputeId: String, evidence: Content): js.Promise[ValidatedResponse[Evidence]] = js.native
+  def addTextEvidence(disputeId: String, evidence: Content): js.Promise[ValidatedResponse[Evidence]]
   
-  def finalize(disputeId: String): js.Promise[ValidatedResponse[Dispute]] = js.native
+  def finalize(disputeId: String): js.Promise[ValidatedResponse[Dispute]]
   
-  def find(disputeId: String): js.Promise[Dispute] = js.native
+  def find(disputeId: String): js.Promise[Dispute]
   
-  def removeEvidence(disputeId: String, evidenceId: String): js.Promise[ValidatedResponse[Dispute]] = js.native
+  def removeEvidence(disputeId: String, evidenceId: String): js.Promise[ValidatedResponse[Dispute]]
   
-  def search(searchFn: js.Any): Readable = js.native
+  def search(searchFn: js.Any): Readable
 }
 object DisputeGateway {
   

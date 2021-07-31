@@ -2,17 +2,15 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRTransientInputHitTestOptionsInit extends StObject {
   
-  var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.native
+  var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.undefined
   
-  var offsetRay: js.UndefOr[XRRay] = js.native
+  var offsetRay: js.UndefOr[XRRay] = js.undefined
   
-  var profile: String = js.native
+  var profile: String
 }
 object XRTransientInputHitTestOptionsInit {
   

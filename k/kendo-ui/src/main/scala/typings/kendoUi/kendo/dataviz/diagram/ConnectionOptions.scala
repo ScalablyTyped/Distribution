@@ -2,41 +2,39 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionOptions extends StObject {
   
-  var content: js.UndefOr[ConnectionContent] = js.native
+  var content: js.UndefOr[ConnectionContent] = js.undefined
   
-  var endCap: js.UndefOr[String | ConnectionEndCap] = js.native
+  var endCap: js.UndefOr[String | ConnectionEndCap] = js.undefined
   
-  var fromConnector: js.UndefOr[String] = js.native
+  var fromConnector: js.UndefOr[String] = js.undefined
   
-  var fromX: js.UndefOr[Double] = js.native
+  var fromX: js.UndefOr[Double] = js.undefined
   
-  var fromY: js.UndefOr[Double] = js.native
+  var fromY: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[ConnectionHover] = js.native
+  var hover: js.UndefOr[ConnectionHover] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var points: js.UndefOr[js.Array[ConnectionPoint]] = js.native
+  var points: js.UndefOr[js.Array[ConnectionPoint]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var startCap: js.UndefOr[String | ConnectionStartCap] = js.native
+  var startCap: js.UndefOr[String | ConnectionStartCap] = js.undefined
   
-  var stroke: js.UndefOr[ConnectionStroke] = js.native
+  var stroke: js.UndefOr[ConnectionStroke] = js.undefined
   
-  var toConnector: js.UndefOr[String] = js.native
+  var toConnector: js.UndefOr[String] = js.undefined
   
-  var toX: js.UndefOr[Double] = js.native
+  var toX: js.UndefOr[Double] = js.undefined
   
-  var toY: js.UndefOr[Double] = js.native
+  var toY: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ConnectionOptions {
   

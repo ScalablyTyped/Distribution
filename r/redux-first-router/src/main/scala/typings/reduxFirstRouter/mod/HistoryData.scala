@@ -3,17 +3,15 @@ package typings.reduxFirstRouter.mod
 import typings.reduxFirstRouter.anon.Pathname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryData extends StObject {
   
-  var entries: HistoryEntries = js.native
+  var entries: HistoryEntries
   
-  var index: Double = js.native
+  var index: Double
   
-  var length: Double = js.native
+  var length: Double
 }
 object HistoryData {
   

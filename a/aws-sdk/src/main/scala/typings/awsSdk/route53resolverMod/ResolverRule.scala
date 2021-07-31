@@ -2,81 +2,79 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolverRule extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the Resolver rule specified by Id.
     */
-  var Arn: js.UndefOr[typings.awsSdk.route53resolverMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.route53resolverMod.Arn] = js.undefined
   
   /**
     * The date and time that the Resolver rule was created, in Unix time format and Coordinated Universal Time (UTC).
     */
-  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.native
+  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
     * A unique string that you specified when you created the Resolver rule. CreatorRequestId identifies the request and allows failed requests to be retried without the risk of executing the operation twice. 
     */
-  var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.native
+  var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.undefined
   
   /**
     * DNS queries for this domain name are forwarded to the IP addresses that are specified in TargetIps. If a query matches multiple Resolver rules (example.com and www.example.com), the query is routed using the Resolver rule that contains the most specific domain name (www.example.com).
     */
-  var DomainName: js.UndefOr[typings.awsSdk.route53resolverMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.route53resolverMod.DomainName] = js.undefined
   
   /**
     * The ID that Resolver assigned to the Resolver rule when you created it.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The date and time that the Resolver rule was last updated, in Unix time format and Coordinated Universal Time (UTC).
     */
-  var ModificationTime: js.UndefOr[Rfc3339TimeString] = js.native
+  var ModificationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
     * The name for the Resolver rule, which you specified when you created the Resolver rule.
     */
-  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
     * When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
     */
-  var OwnerId: js.UndefOr[AccountId] = js.native
+  var OwnerId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The ID of the endpoint that the rule is associated with.
     */
-  var ResolverEndpointId: js.UndefOr[ResourceId] = js.native
+  var ResolverEndpointId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * When you want to forward DNS queries for specified domain name to resolvers on your network, specify FORWARD. When you have a forwarding rule to forward DNS queries for a domain to your network and you want Resolver to process queries for a subdomain of that domain, specify SYSTEM. For example, to forward DNS queries for example.com to resolvers on your network, you create a rule and specify FORWARD for RuleType. To then have Resolver process queries for apex.example.com, you create a rule and specify SYSTEM for RuleType. Currently, only Resolver can create rules that have a value of RECURSIVE for RuleType.
     */
-  var RuleType: js.UndefOr[RuleTypeOption] = js.native
+  var RuleType: js.UndefOr[RuleTypeOption] = js.undefined
   
   /**
     * Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
     */
-  var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.native
+  var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.undefined
   
   /**
     * A code that specifies the current status of the Resolver rule.
     */
-  var Status: js.UndefOr[ResolverRuleStatus] = js.native
+  var Status: js.UndefOr[ResolverRuleStatus] = js.undefined
   
   /**
     * A detailed description of the status of a Resolver rule.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.undefined
   
   /**
     * An array that contains the IP addresses and ports that an outbound endpoint forwards DNS queries to. Typically, these are the IP addresses of DNS resolvers on your network. Specify IPv4 addresses. IPv6 is not supported.
     */
-  var TargetIps: js.UndefOr[TargetList] = js.native
+  var TargetIps: js.UndefOr[TargetList] = js.undefined
 }
 object ResolverRule {
   

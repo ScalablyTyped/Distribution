@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGlobalTableInput extends StObject {
   
   /**
     * The global table name.
     */
-  var GlobalTableName: TableName = js.native
+  var GlobalTableName: TableName
   
   /**
     * A list of Regions that should be added or removed from the global table.
     */
-  var ReplicaUpdates: ReplicaUpdateList = js.native
+  var ReplicaUpdates: ReplicaUpdateList
 }
 object UpdateGlobalTableInput {
   

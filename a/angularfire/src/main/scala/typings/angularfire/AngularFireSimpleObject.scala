@@ -3,21 +3,20 @@ package typings.angularfire
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AngularFireSimpleObject
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   @JSName("$id")
-  var $id: String = js.native
+  var $id: String
   
   @JSName("$priority")
-  var $priority: Double = js.native
+  var $priority: Double
   
   @JSName("$value")
-  var $value: js.Any = js.native
+  var $value: js.Any
 }
 object AngularFireSimpleObject {
   

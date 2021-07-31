@@ -4,16 +4,14 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngBounds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO add BusinessStatus https://developers.google.com/maps/documentation/javascript/reference/places-service#BusinessStatus
-@js.native
 trait PlaceGeometry extends StObject {
   
-  var location: LatLng = js.native
+  var location: LatLng
   
-  var viewport: LatLngBounds = js.native
+  var viewport: LatLngBounds
 }
 object PlaceGeometry {
   

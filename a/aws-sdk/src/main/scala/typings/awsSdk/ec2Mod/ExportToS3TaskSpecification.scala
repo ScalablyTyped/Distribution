@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportToS3TaskSpecification extends StObject {
   
   /**
     * The container format used to combine disk images with metadata (such as OVF). If absent, only the disk image is exported.
     */
-  var ContainerFormat: js.UndefOr[typings.awsSdk.ec2Mod.ContainerFormat] = js.native
+  var ContainerFormat: js.UndefOr[typings.awsSdk.ec2Mod.ContainerFormat] = js.undefined
   
   /**
     * The format for the exported image.
     */
-  var DiskImageFormat: js.UndefOr[typings.awsSdk.ec2Mod.DiskImageFormat] = js.native
+  var DiskImageFormat: js.UndefOr[typings.awsSdk.ec2Mod.DiskImageFormat] = js.undefined
   
   /**
     * The Amazon S3 bucket for the destination image. The destination bucket must exist and grant WRITE and READ_ACP permissions to the AWS account vm-import-export@amazon.com.
     */
-  var S3Bucket: js.UndefOr[String] = js.native
+  var S3Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The image is written to a single object in the Amazon S3 bucket at the S3 key s3prefix + exportTaskId + '.' + diskImageFormat.
     */
-  var S3Prefix: js.UndefOr[String] = js.native
+  var S3Prefix: js.UndefOr[String] = js.undefined
 }
 object ExportToS3TaskSpecification {
   

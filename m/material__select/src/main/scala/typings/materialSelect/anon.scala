@@ -8,31 +8,29 @@ import typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIVATED extends StObject {
     
-    var ACTIVATED: String = js.native
+    var ACTIVATED: String
     
-    var DISABLED: String = js.native
+    var DISABLED: String
     
-    var FOCUSED: String = js.native
+    var FOCUSED: String
     
-    var INVALID: String = js.native
+    var INVALID: String
     
-    var MENU_INVALID: String = js.native
+    var MENU_INVALID: String
     
-    var OUTLINED: String = js.native
+    var OUTLINED: String
     
-    var REQUIRED: String = js.native
+    var REQUIRED: String
     
-    var ROOT: String = js.native
+    var ROOT: String
     
-    var WITH_LEADING_ICON: String = js.native
+    var WITH_LEADING_ICON: String
   }
   object ACTIVATED {
     
@@ -84,34 +82,33 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIACONTROLS extends StObject {
     
-    var ARIA_CONTROLS: String = js.native
+    var ARIA_CONTROLS: String
     
-    var ARIA_DESCRIBEDBY: String = js.native
+    var ARIA_DESCRIBEDBY: String
     
-    var ARIA_SELECTED_ATTR: String = js.native
+    var ARIA_SELECTED_ATTR: String
     
-    var CHANGE_EVENT: String = js.native
+    var CHANGE_EVENT: String
     
-    var HIDDEN_INPUT_SELECTOR: String = js.native
+    var HIDDEN_INPUT_SELECTOR: String
     
-    var LABEL_SELECTOR: String = js.native
+    var LABEL_SELECTOR: String
     
-    var LEADING_ICON_SELECTOR: String = js.native
+    var LEADING_ICON_SELECTOR: String
     
-    var LINE_RIPPLE_SELECTOR: String = js.native
+    var LINE_RIPPLE_SELECTOR: String
     
-    var MENU_SELECTOR: String = js.native
+    var MENU_SELECTOR: String
     
-    var OUTLINE_SELECTOR: String = js.native
+    var OUTLINE_SELECTOR: String
     
-    var SELECTED_TEXT_SELECTOR: String = js.native
+    var SELECTED_TEXT_SELECTOR: String
     
-    var SELECT_ANCHOR_SELECTOR: String = js.native
+    var SELECT_ANCHOR_SELECTOR: String
     
-    var VALUE_ATTR: String = js.native
+    var VALUE_ATTR: String
   }
   object ARIACONTROLS {
     
@@ -179,12 +176,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIAHIDDEN extends StObject {
     
-    var ARIA_HIDDEN: String = js.native
+    var ARIA_HIDDEN: String
     
-    var ROLE: String = js.native
+    var ROLE: String
   }
   object ARIAHIDDEN {
     
@@ -205,12 +201,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HELPERTEXTVALIDATIONMSG extends StObject {
     
-    var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    var HELPER_TEXT_VALIDATION_MSG: String
     
-    var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
+    var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String
   }
   object HELPERTEXTVALIDATIONMSG {
     
@@ -231,12 +226,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ICONEVENT extends StObject {
     
-    var ICON_EVENT: String = js.native
+    var ICON_EVENT: String
     
-    var ICON_ROLE: String = js.native
+    var ICON_ROLE: String
   }
   object ICONEVENT {
     
@@ -257,12 +251,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LABELSCALE extends StObject {
     
-    var LABEL_SCALE: Double = js.native
+    var LABEL_SCALE: Double
     
-    var UNSET_INDEX: Double = js.native
+    var UNSET_INDEX: Double
   }
   object LABELSCALE {
     
@@ -284,78 +277,77 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/select.@material/select/adapter.MDCSelectAdapter> */
-  @js.native
   trait PartialMDCSelectAdapter extends StObject {
     
-    var activateBottomLine: js.UndefOr[js.Function0[Unit]] = js.native
+    var activateBottomLine: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addMenuClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addMenuClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var closeMenu: js.UndefOr[js.Function0[Unit]] = js.native
+    var closeMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var closeOutline: js.UndefOr[js.Function0[Unit]] = js.native
+    var closeOutline: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var deactivateBottomLine: js.UndefOr[js.Function0[Unit]] = js.native
+    var deactivateBottomLine: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var floatLabel: js.UndefOr[js.Function1[/* shouldFloat */ Boolean, Unit]] = js.native
+    var floatLabel: js.UndefOr[js.Function1[/* shouldFloat */ Boolean, Unit]] = js.undefined
     
-    var focusMenuItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusMenuItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var getAnchorElement: js.UndefOr[js.Function0[Element | Null]] = js.native
+    var getAnchorElement: js.UndefOr[js.Function0[Element | Null]] = js.undefined
     
-    var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getMenuItemCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getMenuItemCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getMenuItemTextAtIndex: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+    var getMenuItemTextAtIndex: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
     
-    var getMenuItemValues: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var getMenuItemValues: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var getSelectAnchorAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getSelectAnchorAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var getSelectedIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getSelectedIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var hasLabel: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasLabel: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var hasOutline: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasOutline: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isSelectAnchorFocused: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isSelectAnchorFocused: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isTypeaheadInProgress: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isTypeaheadInProgress: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notchOutline: js.UndefOr[js.Function1[/* labelWidth */ Double, Unit]] = js.native
+    var notchOutline: js.UndefOr[js.Function1[/* labelWidth */ Double, Unit]] = js.undefined
     
-    var notifyChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var notifyChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var openMenu: js.UndefOr[js.Function0[Unit]] = js.native
+    var openMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeMenuClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeMenuClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeSelectAnchorAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+    var removeSelectAnchorAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
     
-    var setLabelRequired: js.UndefOr[js.Function1[/* isRequired */ Boolean, Unit]] = js.native
+    var setLabelRequired: js.UndefOr[js.Function1[/* isRequired */ Boolean, Unit]] = js.undefined
     
-    var setMenuAnchorCorner: js.UndefOr[js.Function1[/* anchorCorner */ Corner, Unit]] = js.native
+    var setMenuAnchorCorner: js.UndefOr[js.Function1[/* anchorCorner */ Corner, Unit]] = js.undefined
     
-    var setMenuAnchorElement: js.UndefOr[js.Function1[/* anchorEl */ Element, Unit]] = js.native
+    var setMenuAnchorElement: js.UndefOr[js.Function1[/* anchorEl */ Element, Unit]] = js.undefined
     
-    var setMenuWrapFocus: js.UndefOr[js.Function1[/* wrapFocus */ Boolean, Unit]] = js.native
+    var setMenuWrapFocus: js.UndefOr[js.Function1[/* wrapFocus */ Boolean, Unit]] = js.undefined
     
-    var setRippleCenter: js.UndefOr[js.Function1[/* normalizedX */ Double, Unit]] = js.native
+    var setRippleCenter: js.UndefOr[js.Function1[/* normalizedX */ Double, Unit]] = js.undefined
     
-    var setSelectAnchorAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setSelectAnchorAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setSelectedIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var setSelectedIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var setSelectedText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+    var setSelectedText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
     
-    var typeaheadMatchItem: js.UndefOr[js.Function2[/* nextChar */ String, /* startingIndex */ Double, Double]] = js.native
+    var typeaheadMatchItem: js.UndefOr[js.Function2[/* nextChar */ String, /* startingIndex */ Double, Double]] = js.undefined
   }
   object PartialMDCSelectAdapter {
     
@@ -581,12 +573,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/select.@material/select/types.MDCSelectFoundationMap> */
-  @js.native
   trait PartialMDCSelectFoundatio extends StObject {
     
-    var helperText: js.UndefOr[MDCSelectHelperTextFoundation] = js.native
+    var helperText: js.UndefOr[MDCSelectHelperTextFoundation] = js.undefined
     
-    var leadingIcon: js.UndefOr[MDCSelectIconFoundation] = js.native
+    var leadingIcon: js.UndefOr[MDCSelectIconFoundation] = js.undefined
   }
   object PartialMDCSelectFoundatio {
     
@@ -614,22 +605,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/select.@material/select/helper-text/adapter.MDCSelectHelperTextAdapter> */
-  @js.native
   trait PartialMDCSelectHelperTex extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+    var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
   }
   object PartialMDCSelectHelperTex {
     
@@ -687,26 +677,25 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/select.@material/select/icon/adapter.MDCSelectIconAdapter> */
-  @js.native
   trait PartialMDCSelectIconAdapt extends StObject {
     
     var deregisterInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var notifyIconAction: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyIconAction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var registerInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+    var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
     
-    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
   }
   object PartialMDCSelectIconAdapt {
     

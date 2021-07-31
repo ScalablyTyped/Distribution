@@ -3,47 +3,45 @@ package typings.hafasClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReachableFromOptions extends StObject {
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * maximum travel duration in minutes, pass `null` for infinite
     * @default 20
     */
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * maximum of transfers
     * @default 5
     */
-  var maxTransfers: js.UndefOr[Double] = js.native
+  var maxTransfers: js.UndefOr[Double] = js.undefined
   
   /**
     * products
     * @default undefined
     */
-  var products: js.UndefOr[Products] = js.native
+  var products: js.UndefOr[Products] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.native
+  var when: js.UndefOr[Date] = js.undefined
 }
 object ReachableFromOptions {
   

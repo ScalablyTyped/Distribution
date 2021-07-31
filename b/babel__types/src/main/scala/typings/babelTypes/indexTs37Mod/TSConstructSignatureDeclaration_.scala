@@ -3,30 +3,29 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSConstructSignatureDeclaration_
-  extends TSTypeElement
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSConstructSignatureDeclaration_
+  extends StObject
+     with BaseNode
+     with TSTypeElement {
   
-  var parameters: js.Array[Identifier_ | RestElement_] = js.native
+  var parameters: js.Array[Identifier_ | RestElement_]
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
-  var typeParameters: TSTypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSConstructSignatureDeclaration_ : TSConstructSignatureDeclaration = js.native
+  var type_TSConstructSignatureDeclaration_ : TSConstructSignatureDeclaration
 }
 object TSConstructSignatureDeclaration_ {
   
   @scala.inline
-  def apply(parameters: js.Array[Identifier_ | RestElement_], `type`: TSConstructSignatureDeclaration): TSConstructSignatureDeclaration_ = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration_ = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSConstructSignatureDeclaration")
     __obj.asInstanceOf[TSConstructSignatureDeclaration_]
   }
   

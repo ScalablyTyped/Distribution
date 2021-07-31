@@ -10,9 +10,9 @@ An infinite scroll directive for Angular
 | ------------------ | :-------------: |
 | Full name          | ngx-infinite-scroll |
 | Keywords           | angular, javascript, typescript |
-| # releases         | 10 |
-| # dependents       | 48 |
-| # downloads        | 5354653 |
+| # releases         | 13 |
+| # dependents       | 51 |
+| # downloads        | 5892290 |
 | # stars            | 6 |
 
 ## Links

@@ -11,8 +11,8 @@ steps ui component for react
 | Full name          | rc-steps |
 | Keywords           | react, react-component, react-steps |
 | # releases         | 10 |
-| # dependents       | 230 |
-| # downloads        | 16112931 |
+| # dependents       | 246 |
+| # downloads        | 20717952 |
 | # stars            | 2 |
 
 ## Links

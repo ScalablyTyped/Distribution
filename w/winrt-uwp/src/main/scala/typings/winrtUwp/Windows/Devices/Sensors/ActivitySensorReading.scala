@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the reading of an activity sensor that provides readings for the sensor. */
-@js.native
 trait ActivitySensorReading extends StObject {
   
   /** Gets the activity type for the sensor. */
-  var activity: ActivityType = js.native
+  var activity: ActivityType
   
   /** Gets the reading confidence for the sensor. */
-  var confidence: ActivitySensorReadingConfidence = js.native
+  var confidence: ActivitySensorReadingConfidence
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object ActivitySensorReading {
   

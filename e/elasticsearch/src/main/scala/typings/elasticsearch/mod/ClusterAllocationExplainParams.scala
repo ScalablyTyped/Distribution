@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterAllocationExplainParams extends GenericParams {
+trait ClusterAllocationExplainParams
+  extends StObject
+     with GenericParams {
   
-  var includeDiskInfo: js.UndefOr[Boolean] = js.native
+  var includeDiskInfo: js.UndefOr[Boolean] = js.undefined
   
-  var includeYesDecisions: js.UndefOr[Boolean] = js.native
+  var includeYesDecisions: js.UndefOr[Boolean] = js.undefined
 }
 object ClusterAllocationExplainParams {
   

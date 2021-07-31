@@ -2,13 +2,14 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collection extends Query {
+trait Collection
+  extends StObject
+     with Query {
   
-  def add(options: CommonOption[_]): js.Promise[AddCollectionResult] = js.native
+  def add(options: CommonOption[js.Any]): js.Promise[AddCollectionResult] = js.native
   
   def aggregate(): Aggregate = js.native
   

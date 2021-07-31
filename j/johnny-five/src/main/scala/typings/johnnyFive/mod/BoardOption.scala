@@ -2,23 +2,21 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardOption extends StObject {
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
-  var io: js.UndefOr[js.Any] = js.native
+  var io: js.UndefOr[js.Any] = js.undefined
   
-  var port: js.UndefOr[String | js.Any] = js.native
+  var port: js.UndefOr[String | js.Any] = js.undefined
   
-  var repl: js.UndefOr[Boolean] = js.native
+  var repl: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object BoardOption {
   

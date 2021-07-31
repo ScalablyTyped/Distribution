@@ -2,17 +2,15 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoNotInheritAddOnsOrDiscounts extends StObject {
   
-  var doNotInheritAddOnsOrDiscounts: js.UndefOr[Boolean] = js.native
+  var doNotInheritAddOnsOrDiscounts: js.UndefOr[Boolean] = js.undefined
   
-  var paypal: js.UndefOr[Description] = js.native
+  var paypal: js.UndefOr[Description] = js.undefined
   
-  var startImmediately: js.UndefOr[Boolean] = js.native
+  var startImmediately: js.UndefOr[Boolean] = js.undefined
 }
 object DoNotInheritAddOnsOrDiscounts {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagInfoForResource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceARN: js.UndefOr[ResourceArn] = js.native
+  var ResourceARN: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The array of Tag objects defined for the resource. 
     */
-  var TagList: js.UndefOr[typings.awsSdk.wafv2Mod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.wafv2Mod.TagList] = js.undefined
 }
 object TagInfoForResource {
   

@@ -3,83 +3,81 @@ package typings.colorbrewer
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColorBrewer {
   
-  @js.native
   trait Base extends StObject {
     
-    var Accent: EightColorScheme = js.native
+    var Accent: EightColorScheme
     
-    var Blues: NineColorScheme = js.native
+    var Blues: NineColorScheme
     
-    var BrBG: ElevenColorScheme = js.native
+    var BrBG: ElevenColorScheme
     
-    var BuGn: NineColorScheme = js.native
+    var BuGn: NineColorScheme
     
-    var BuPu: NineColorScheme = js.native
+    var BuPu: NineColorScheme
     
-    var Dark2: EightColorScheme = js.native
+    var Dark2: EightColorScheme
     
-    var GnBu: NineColorScheme = js.native
+    var GnBu: NineColorScheme
     
-    var Greens: NineColorScheme = js.native
+    var Greens: NineColorScheme
     
-    var Greys: NineColorScheme = js.native
+    var Greys: NineColorScheme
     
-    var OrRd: NineColorScheme = js.native
+    var OrRd: NineColorScheme
     
-    var Oranges: NineColorScheme = js.native
+    var Oranges: NineColorScheme
     
-    var PRGn: ElevenColorScheme = js.native
+    var PRGn: ElevenColorScheme
     
-    var Paired: TwelveColorScheme = js.native
+    var Paired: TwelveColorScheme
     
-    var Pastel1: NineColorScheme = js.native
+    var Pastel1: NineColorScheme
     
-    var Pastel2: EightColorScheme = js.native
+    var Pastel2: EightColorScheme
     
-    var PiYG: ElevenColorScheme = js.native
+    var PiYG: ElevenColorScheme
     
-    var PuBu: NineColorScheme = js.native
+    var PuBu: NineColorScheme
     
-    var PuBuGn: NineColorScheme = js.native
+    var PuBuGn: NineColorScheme
     
-    var PuOr: ElevenColorScheme = js.native
+    var PuOr: ElevenColorScheme
     
-    var PuRd: NineColorScheme = js.native
+    var PuRd: NineColorScheme
     
-    var Purples: NineColorScheme = js.native
+    var Purples: NineColorScheme
     
-    var RdBu: ElevenColorScheme = js.native
+    var RdBu: ElevenColorScheme
     
-    var RdGy: ElevenColorScheme = js.native
+    var RdGy: ElevenColorScheme
     
-    var RdPu: NineColorScheme = js.native
+    var RdPu: NineColorScheme
     
-    var RdYlBu: ElevenColorScheme = js.native
+    var RdYlBu: ElevenColorScheme
     
-    var RdYlGn: ElevenColorScheme = js.native
+    var RdYlGn: ElevenColorScheme
     
-    var Reds: NineColorScheme = js.native
+    var Reds: NineColorScheme
     
-    var Set1: NineColorScheme = js.native
+    var Set1: NineColorScheme
     
-    var Set2: EightColorScheme = js.native
+    var Set2: EightColorScheme
     
-    var Set3: TwelveColorScheme = js.native
+    var Set3: TwelveColorScheme
     
-    var Spectral: ElevenColorScheme = js.native
+    var Spectral: ElevenColorScheme
     
-    var YlGn: NineColorScheme = js.native
+    var YlGn: NineColorScheme
     
-    var YlGnBu: NineColorScheme = js.native
+    var YlGnBu: NineColorScheme
     
-    var YlOrBr: NineColorScheme = js.native
+    var YlOrBr: NineColorScheme
     
-    var YlOrRd: NineColorScheme = js.native
+    var YlOrRd: NineColorScheme
   }
   object Base {
     
@@ -237,20 +235,21 @@ object ColorBrewer {
   
   type ColorScheme = NumberDictionary[js.Array[String]]
   
-  @js.native
-  trait EightColorScheme extends ColorScheme {
+  trait EightColorScheme
+    extends StObject
+       with ColorScheme {
     
-    var `3`: js.Tuple3[String, String, String] = js.native
+    var `3`: js.Tuple3[String, String, String]
     
-    var `4`: js.Tuple4[String, String, String, String] = js.native
+    var `4`: js.Tuple4[String, String, String, String]
     
-    var `5`: js.Tuple5[String, String, String, String, String] = js.native
+    var `5`: js.Tuple5[String, String, String, String, String]
     
-    var `6`: js.Tuple6[String, String, String, String, String, String] = js.native
+    var `6`: js.Tuple6[String, String, String, String, String, String]
     
-    var `7`: js.Tuple7[String, String, String, String, String, String, String] = js.native
+    var `7`: js.Tuple7[String, String, String, String, String, String, String]
     
-    var `8`: js.Tuple8[String, String, String, String, String, String, String, String] = js.native
+    var `8`: js.Tuple8[String, String, String, String, String, String, String, String]
   }
   object EightColorScheme {
     
@@ -296,12 +295,13 @@ object ColorBrewer {
     }
   }
   
-  @js.native
-  trait ElevenColorScheme extends NineColorScheme {
+  trait ElevenColorScheme
+    extends StObject
+       with NineColorScheme {
     
-    var `10`: js.Tuple10[String, String, String, String, String, String, String, String, String, String] = js.native
+    var `10`: js.Tuple10[String, String, String, String, String, String, String, String, String, String]
     
-    var `11`: js.Tuple11[String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var `11`: js.Tuple11[String, String, String, String, String, String, String, String, String, String, String]
   }
   object ElevenColorScheme {
     
@@ -343,10 +343,11 @@ object ColorBrewer {
     }
   }
   
-  @js.native
-  trait NineColorScheme extends EightColorScheme {
+  trait NineColorScheme
+    extends StObject
+       with EightColorScheme {
     
-    var `9`: js.Tuple9[String, String, String, String, String, String, String, String, String] = js.native
+    var `9`: js.Tuple9[String, String, String, String, String, String, String, String, String]
   }
   object NineColorScheme {
     
@@ -379,10 +380,11 @@ object ColorBrewer {
     }
   }
   
-  @js.native
-  trait TwelveColorScheme extends ElevenColorScheme {
+  trait TwelveColorScheme
+    extends StObject
+       with ElevenColorScheme {
     
-    var `12`: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var `12`: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
   }
   object TwelveColorScheme {
     

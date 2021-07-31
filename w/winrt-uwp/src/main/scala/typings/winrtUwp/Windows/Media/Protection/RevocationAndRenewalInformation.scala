@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Media.Protection
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about components that need to be revoked and renewed. */
-@js.native
 trait RevocationAndRenewalInformation extends StObject {
   
   /** Returns a list of components that need to be revoked and renewed with updated components. */
-  var items: IVector[RevocationAndRenewalItem] = js.native
+  var items: IVector[RevocationAndRenewalItem]
 }
 object RevocationAndRenewalInformation {
   

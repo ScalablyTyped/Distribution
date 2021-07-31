@@ -2,19 +2,17 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSizeAxis extends StObject {
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
 }
 object ChartSizeAxis {
   

@@ -10,9 +10,9 @@ Write cucumber test as part of a jest run (including coverage)
 | ------------------ | :-------------: |
 | Full name          | jest-cucumber-fusion |
 | Keywords           | jest, cucumber, BDD, gherkin |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 3163 |
+| # downloads        | 19687 |
 | # stars            | 0 |
 
 ## Links

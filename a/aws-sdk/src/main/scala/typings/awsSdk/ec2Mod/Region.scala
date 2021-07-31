@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
   /**
     * The Region service endpoint.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The Region opt-in status. The possible values are opt-in-not-required, opted-in, and not-opted-in.
     */
-  var OptInStatus: js.UndefOr[String] = js.native
+  var OptInStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Region.
     */
-  var RegionName: js.UndefOr[String] = js.native
+  var RegionName: js.UndefOr[String] = js.undefined
 }
 object Region {
   

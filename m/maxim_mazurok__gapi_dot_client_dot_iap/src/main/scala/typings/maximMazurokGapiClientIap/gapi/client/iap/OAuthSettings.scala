@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuthSettings extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait OAuthSettings extends StObject {
     * https://developers.google.com/identity/protocols/OpenIDConnect#hd-param Note: IAP does not verify that the id token's hd claim matches this value since access behavior is managed by
     * IAM policies.
     */
-  var loginHint: js.UndefOr[String] = js.native
+  var loginHint: js.UndefOr[String] = js.undefined
 }
 object OAuthSettings {
   

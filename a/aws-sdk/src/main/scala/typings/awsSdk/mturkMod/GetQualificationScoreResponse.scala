@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQualificationScoreResponse extends StObject {
   
   /**
     *  The Qualification data structure of the Qualification assigned to a user, including the Qualification type and the value (score). 
     */
-  var Qualification: js.UndefOr[typings.awsSdk.mturkMod.Qualification] = js.native
+  var Qualification: js.UndefOr[typings.awsSdk.mturkMod.Qualification] = js.undefined
 }
 object GetQualificationScoreResponse {
   

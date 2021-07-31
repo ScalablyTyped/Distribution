@@ -2,13 +2,11 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetDetails extends StObject {
   
-  var S3SnapshotAsset: js.UndefOr[typings.awsSdk.dataexchangeMod.S3SnapshotAsset] = js.native
+  var S3SnapshotAsset: js.UndefOr[typings.awsSdk.dataexchangeMod.S3SnapshotAsset] = js.undefined
 }
 object AssetDetails {
   

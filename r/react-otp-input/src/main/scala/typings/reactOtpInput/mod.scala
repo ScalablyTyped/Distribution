@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,34 +21,33 @@ object mod {
     def this(props: OTPInputProps, context: js.Any) = this()
   }
   
-  @js.native
   trait OTPInputProps extends StObject {
     
-    var containerStyle: js.UndefOr[String | CSSProperties] = js.native
+    var containerStyle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var disabledStyle: js.UndefOr[String | CSSProperties] = js.native
+    var disabledStyle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var errorStyle: js.UndefOr[String | CSSProperties] = js.native
+    var errorStyle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var focusStyle: js.UndefOr[String | CSSProperties] = js.native
+    var focusStyle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var hasErrored: js.UndefOr[Boolean] = js.native
+    var hasErrored: js.UndefOr[Boolean] = js.undefined
     
-    var inputStyle: js.UndefOr[String | CSSProperties] = js.native
+    var inputStyle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var isInputNum: js.UndefOr[Boolean] = js.native
+    var isInputNum: js.UndefOr[Boolean] = js.undefined
     
-    var numInputs: Double = js.native
+    var numInputs: Double
     
-    var onChange: js.Any = js.native
+    var onChange: js.Any
     
-    var separator: js.UndefOr[Element] = js.native
+    var separator: js.UndefOr[Element] = js.undefined
     
-    var shouldAutoFocus: js.UndefOr[Boolean] = js.native
+    var shouldAutoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var value: Double | String = js.native
+    var value: Double | String
   }
   object OTPInputProps {
     

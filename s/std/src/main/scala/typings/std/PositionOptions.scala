@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionOptions extends StObject {
   
-  var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.native
+  var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.undefined
   
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object PositionOptions {
   

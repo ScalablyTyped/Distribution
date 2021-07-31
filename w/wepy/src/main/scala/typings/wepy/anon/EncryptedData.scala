@@ -2,17 +2,15 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedData extends StObject {
   
-  var encryptedData: String = js.native
+  var encryptedData: String
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var iv: String = js.native
+  var iv: String
 }
 object EncryptedData {
   

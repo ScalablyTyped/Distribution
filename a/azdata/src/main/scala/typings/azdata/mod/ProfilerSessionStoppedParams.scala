@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfilerSessionStoppedParams extends StObject {
   
-  var ownerUri: String = js.native
+  var ownerUri: String
   
-  var sessionId: Double = js.native
+  var sessionId: Double
 }
 object ProfilerSessionStoppedParams {
   

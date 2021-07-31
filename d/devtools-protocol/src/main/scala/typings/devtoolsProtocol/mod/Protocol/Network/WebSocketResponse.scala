@@ -3,41 +3,39 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebSocketResponse extends StObject {
   
   /**
     * HTTP response headers.
     */
-  var headers: Headers = js.native
+  var headers: Headers
   
   /**
     * HTTP response headers text.
     */
-  var headersText: js.UndefOr[String] = js.native
+  var headersText: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP request headers.
     */
-  var requestHeaders: js.UndefOr[Headers] = js.native
+  var requestHeaders: js.UndefOr[Headers] = js.undefined
   
   /**
     * HTTP request headers text.
     */
-  var requestHeadersText: js.UndefOr[String] = js.native
+  var requestHeadersText: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP response status code.
     */
-  var status: integer = js.native
+  var status: integer
   
   /**
     * HTTP response status text.
     */
-  var statusText: String = js.native
+  var statusText: String
 }
 object WebSocketResponse {
   

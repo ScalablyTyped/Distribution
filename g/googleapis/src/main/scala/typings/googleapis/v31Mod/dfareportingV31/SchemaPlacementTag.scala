@@ -2,24 +2,22 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Placement Tag
   */
-@js.native
 trait SchemaPlacementTag extends StObject {
   
   /**
     * Placement ID
     */
-  var placementId: js.UndefOr[String] = js.native
+  var placementId: js.UndefOr[String] = js.undefined
   
   /**
     * Tags generated for this placement.
     */
-  var tagDatas: js.UndefOr[js.Array[SchemaTagData]] = js.native
+  var tagDatas: js.UndefOr[js.Array[SchemaTagData]] = js.undefined
 }
 object SchemaPlacementTag {
   

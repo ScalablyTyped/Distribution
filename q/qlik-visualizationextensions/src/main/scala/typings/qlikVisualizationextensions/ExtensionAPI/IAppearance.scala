@@ -3,25 +3,23 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAppearance extends StObject {
   
-  var items: js.Any = js.native
+  var items: js.Any
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var uses: settings = js.native
+  var uses: settings
 }
 object IAppearance {
   
   @scala.inline
-  def apply(items: js.Any, uses: settings): IAppearance = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], uses = uses.asInstanceOf[js.Any])
+  def apply(items: js.Any): IAppearance = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], uses = "settings")
     __obj.asInstanceOf[IAppearance]
   }
   

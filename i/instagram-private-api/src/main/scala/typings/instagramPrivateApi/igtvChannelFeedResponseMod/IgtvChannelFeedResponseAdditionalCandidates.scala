@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.igtvChannelFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvChannelFeedResponseAdditionalCandidates extends StObject {
   
-  var igtv_first_frame: IgtvChannelFeedResponseIgtvFirstFrame = js.native
+  var igtv_first_frame: IgtvChannelFeedResponseIgtvFirstFrame
 }
 object IgtvChannelFeedResponseAdditionalCandidates {
   

@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ShowGeometryInstanceAttribute")
@@ -21,11 +20,13 @@ class ShowGeometryInstanceAttribute () extends StObject {
 }
 object ShowGeometryInstanceAttribute {
   
+  @JSImport("cesium", "ShowGeometryInstanceAttribute")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("cesium", "ShowGeometryInstanceAttribute.toValue")
-  @js.native
-  def toValue(show: Boolean): Uint8Array = js.native
-  @JSImport("cesium", "ShowGeometryInstanceAttribute.toValue")
-  @js.native
-  def toValue(show: Boolean, result: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def toValue(show: Boolean): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def toValue(show: Boolean, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

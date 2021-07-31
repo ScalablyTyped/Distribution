@@ -5,7 +5,6 @@ import typings.estreeWalker.walkerMod.WalkerBase
 import typings.estreeWalker.walkerMod.WalkerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncMod {
@@ -20,14 +19,6 @@ object syncMod {
     var leave: js.UndefOr[WalkerHandler] = js.native
     
     def visit(node: BaseNode, parent: BaseNode, enter: WalkerHandler, leave: WalkerHandler): BaseNode = js.native
-    def visit(
-      node: BaseNode,
-      parent: BaseNode,
-      enter: WalkerHandler,
-      leave: WalkerHandler,
-      prop: js.UndefOr[scala.Nothing],
-      index: Double
-    ): BaseNode = js.native
     def visit(node: BaseNode, parent: BaseNode, enter: WalkerHandler, leave: WalkerHandler, prop: String): BaseNode = js.native
     def visit(
       node: BaseNode,
@@ -37,14 +28,21 @@ object syncMod {
       prop: String,
       index: Double
     ): BaseNode = js.native
+    def visit(
+      node: BaseNode,
+      parent: BaseNode,
+      enter: WalkerHandler,
+      leave: WalkerHandler,
+      prop: Unit,
+      index: Double
+    ): BaseNode = js.native
   }
   
-  @js.native
   trait SyncWalker extends StObject {
     
-    var enter: js.UndefOr[WalkerHandler] = js.native
+    var enter: js.UndefOr[WalkerHandler] = js.undefined
     
-    var leave: js.UndefOr[WalkerHandler] = js.native
+    var leave: js.UndefOr[WalkerHandler] = js.undefined
   }
   object SyncWalker {
     

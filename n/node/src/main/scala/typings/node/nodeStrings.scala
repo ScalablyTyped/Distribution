@@ -27,7 +27,6 @@ import typings.node.utilMod.Style
 import typings.node.vmMod.MeasureMemoryMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeStrings {
@@ -633,187 +632,261 @@ object nodeStrings {
   def RuntimeDotsetCustomObjectFormatterEnabled: RuntimeDotsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDotsetCustomObjectFormatterEnabled]
   
   @js.native
-  sealed trait SIGABRT extends Signals
+  sealed trait SIGABRT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
   
   @js.native
-  sealed trait SIGALRM extends Signals
+  sealed trait SIGALRM
+    extends StObject
+       with Signals
   @scala.inline
   def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
   
   @js.native
-  sealed trait SIGBREAK extends Signals
+  sealed trait SIGBREAK
+    extends StObject
+       with Signals
   @scala.inline
   def SIGBREAK: SIGBREAK = "SIGBREAK".asInstanceOf[SIGBREAK]
   
   @js.native
-  sealed trait SIGBUS extends Signals
+  sealed trait SIGBUS
+    extends StObject
+       with Signals
   @scala.inline
   def SIGBUS: SIGBUS = "SIGBUS".asInstanceOf[SIGBUS]
   
   @js.native
-  sealed trait SIGCHLD extends Signals
+  sealed trait SIGCHLD
+    extends StObject
+       with Signals
   @scala.inline
   def SIGCHLD: SIGCHLD = "SIGCHLD".asInstanceOf[SIGCHLD]
   
   @js.native
-  sealed trait SIGCONT extends Signals
+  sealed trait SIGCONT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGCONT: SIGCONT = "SIGCONT".asInstanceOf[SIGCONT]
   
   @js.native
-  sealed trait SIGFPE extends Signals
+  sealed trait SIGFPE
+    extends StObject
+       with Signals
   @scala.inline
   def SIGFPE: SIGFPE = "SIGFPE".asInstanceOf[SIGFPE]
   
   @js.native
-  sealed trait SIGHUP extends Signals
+  sealed trait SIGHUP
+    extends StObject
+       with Signals
   @scala.inline
   def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
   
   @js.native
-  sealed trait SIGILL extends Signals
+  sealed trait SIGILL
+    extends StObject
+       with Signals
   @scala.inline
   def SIGILL: SIGILL = "SIGILL".asInstanceOf[SIGILL]
   
   @js.native
-  sealed trait SIGINFO extends Signals
+  sealed trait SIGINFO
+    extends StObject
+       with Signals
   @scala.inline
   def SIGINFO: SIGINFO = "SIGINFO".asInstanceOf[SIGINFO]
   
   @js.native
-  sealed trait SIGINT extends Signals
+  sealed trait SIGINT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
   
   @js.native
-  sealed trait SIGIO extends Signals
+  sealed trait SIGIO
+    extends StObject
+       with Signals
   @scala.inline
   def SIGIO: SIGIO = "SIGIO".asInstanceOf[SIGIO]
   
   @js.native
-  sealed trait SIGIOT extends Signals
+  sealed trait SIGIOT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGIOT: SIGIOT = "SIGIOT".asInstanceOf[SIGIOT]
   
   @js.native
-  sealed trait SIGKILL extends Signals
+  sealed trait SIGKILL
+    extends StObject
+       with Signals
   @scala.inline
   def SIGKILL: SIGKILL = "SIGKILL".asInstanceOf[SIGKILL]
   
   @js.native
-  sealed trait SIGLOST extends Signals
+  sealed trait SIGLOST
+    extends StObject
+       with Signals
   @scala.inline
   def SIGLOST: SIGLOST = "SIGLOST".asInstanceOf[SIGLOST]
   
   @js.native
-  sealed trait SIGPIPE extends Signals
+  sealed trait SIGPIPE
+    extends StObject
+       with Signals
   @scala.inline
   def SIGPIPE: SIGPIPE = "SIGPIPE".asInstanceOf[SIGPIPE]
   
   @js.native
-  sealed trait SIGPOLL extends Signals
+  sealed trait SIGPOLL
+    extends StObject
+       with Signals
   @scala.inline
   def SIGPOLL: SIGPOLL = "SIGPOLL".asInstanceOf[SIGPOLL]
   
   @js.native
-  sealed trait SIGPROF extends Signals
+  sealed trait SIGPROF
+    extends StObject
+       with Signals
   @scala.inline
   def SIGPROF: SIGPROF = "SIGPROF".asInstanceOf[SIGPROF]
   
   @js.native
-  sealed trait SIGPWR extends Signals
+  sealed trait SIGPWR
+    extends StObject
+       with Signals
   @scala.inline
   def SIGPWR: SIGPWR = "SIGPWR".asInstanceOf[SIGPWR]
   
   @js.native
-  sealed trait SIGQUIT extends Signals
+  sealed trait SIGQUIT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGQUIT: SIGQUIT = "SIGQUIT".asInstanceOf[SIGQUIT]
   
   @js.native
-  sealed trait SIGSEGV extends Signals
+  sealed trait SIGSEGV
+    extends StObject
+       with Signals
   @scala.inline
   def SIGSEGV: SIGSEGV = "SIGSEGV".asInstanceOf[SIGSEGV]
   
   @js.native
-  sealed trait SIGSTKFLT extends Signals
+  sealed trait SIGSTKFLT
+    extends StObject
+       with Signals
   @scala.inline
   def SIGSTKFLT: SIGSTKFLT = "SIGSTKFLT".asInstanceOf[SIGSTKFLT]
   
   @js.native
-  sealed trait SIGSTOP extends Signals
+  sealed trait SIGSTOP
+    extends StObject
+       with Signals
   @scala.inline
   def SIGSTOP: SIGSTOP = "SIGSTOP".asInstanceOf[SIGSTOP]
   
   @js.native
-  sealed trait SIGSYS extends Signals
+  sealed trait SIGSYS
+    extends StObject
+       with Signals
   @scala.inline
   def SIGSYS: SIGSYS = "SIGSYS".asInstanceOf[SIGSYS]
   
   @js.native
-  sealed trait SIGTERM extends Signals
+  sealed trait SIGTERM
+    extends StObject
+       with Signals
   @scala.inline
   def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
   
   @js.native
-  sealed trait SIGTRAP extends Signals
+  sealed trait SIGTRAP
+    extends StObject
+       with Signals
   @scala.inline
   def SIGTRAP: SIGTRAP = "SIGTRAP".asInstanceOf[SIGTRAP]
   
   @js.native
-  sealed trait SIGTSTP extends Signals
+  sealed trait SIGTSTP
+    extends StObject
+       with Signals
   @scala.inline
   def SIGTSTP: SIGTSTP = "SIGTSTP".asInstanceOf[SIGTSTP]
   
   @js.native
-  sealed trait SIGTTIN extends Signals
+  sealed trait SIGTTIN
+    extends StObject
+       with Signals
   @scala.inline
   def SIGTTIN: SIGTTIN = "SIGTTIN".asInstanceOf[SIGTTIN]
   
   @js.native
-  sealed trait SIGTTOU extends Signals
+  sealed trait SIGTTOU
+    extends StObject
+       with Signals
   @scala.inline
   def SIGTTOU: SIGTTOU = "SIGTTOU".asInstanceOf[SIGTTOU]
   
   @js.native
-  sealed trait SIGUNUSED extends Signals
+  sealed trait SIGUNUSED
+    extends StObject
+       with Signals
   @scala.inline
   def SIGUNUSED: SIGUNUSED = "SIGUNUSED".asInstanceOf[SIGUNUSED]
   
   @js.native
-  sealed trait SIGURG extends Signals
+  sealed trait SIGURG
+    extends StObject
+       with Signals
   @scala.inline
   def SIGURG: SIGURG = "SIGURG".asInstanceOf[SIGURG]
   
   @js.native
-  sealed trait SIGUSR1 extends Signals
+  sealed trait SIGUSR1
+    extends StObject
+       with Signals
   @scala.inline
   def SIGUSR1: SIGUSR1 = "SIGUSR1".asInstanceOf[SIGUSR1]
   
   @js.native
-  sealed trait SIGUSR2 extends Signals
+  sealed trait SIGUSR2
+    extends StObject
+       with Signals
   @scala.inline
   def SIGUSR2: SIGUSR2 = "SIGUSR2".asInstanceOf[SIGUSR2]
   
   @js.native
-  sealed trait SIGVTALRM extends Signals
+  sealed trait SIGVTALRM
+    extends StObject
+       with Signals
   @scala.inline
   def SIGVTALRM: SIGVTALRM = "SIGVTALRM".asInstanceOf[SIGVTALRM]
   
   @js.native
-  sealed trait SIGWINCH extends Signals
+  sealed trait SIGWINCH
+    extends StObject
+       with Signals
   @scala.inline
   def SIGWINCH: SIGWINCH = "SIGWINCH".asInstanceOf[SIGWINCH]
   
   @js.native
-  sealed trait SIGXCPU extends Signals
+  sealed trait SIGXCPU
+    extends StObject
+       with Signals
   @scala.inline
   def SIGXCPU: SIGXCPU = "SIGXCPU".asInstanceOf[SIGXCPU]
   
   @js.native
-  sealed trait SIGXFSZ extends Signals
+  sealed trait SIGXFSZ
+    extends StObject
+       with Signals
   @scala.inline
   def SIGXFSZ: SIGXFSZ = "SIGXFSZ".asInstanceOf[SIGXFSZ]
   
@@ -833,22 +906,30 @@ object nodeStrings {
   def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
   
   @js.native
-  sealed trait TLSv1 extends SecureVersion
+  sealed trait TLSv1
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   
   @js.native
-  sealed trait TLSv1Dot1 extends SecureVersion
+  sealed trait TLSv1Dot1
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   
   @js.native
-  sealed trait TLSv1Dot2 extends SecureVersion
+  sealed trait TLSv1Dot2
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   
   @js.native
-  sealed trait TLSv1Dot3 extends SecureVersion
+  sealed trait TLSv1Dot3
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
   
@@ -873,37 +954,51 @@ object nodeStrings {
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
-  sealed trait advanced extends SerializationType
+  sealed trait advanced
+    extends StObject
+       with SerializationType
   @scala.inline
   def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
-  sealed trait `aes-128-ccm` extends CipherCCMTypes
+  sealed trait `aes-128-ccm`
+    extends StObject
+       with CipherCCMTypes
   @scala.inline
   def `aes-128-ccm`: `aes-128-ccm` = "aes-128-ccm".asInstanceOf[`aes-128-ccm`]
   
   @js.native
-  sealed trait `aes-128-gcm` extends CipherGCMTypes
+  sealed trait `aes-128-gcm`
+    extends StObject
+       with CipherGCMTypes
   @scala.inline
   def `aes-128-gcm`: `aes-128-gcm` = "aes-128-gcm".asInstanceOf[`aes-128-gcm`]
   
   @js.native
-  sealed trait `aes-192-ccm` extends CipherCCMTypes
+  sealed trait `aes-192-ccm`
+    extends StObject
+       with CipherCCMTypes
   @scala.inline
   def `aes-192-ccm`: `aes-192-ccm` = "aes-192-ccm".asInstanceOf[`aes-192-ccm`]
   
   @js.native
-  sealed trait `aes-192-gcm` extends CipherGCMTypes
+  sealed trait `aes-192-gcm`
+    extends StObject
+       with CipherGCMTypes
   @scala.inline
   def `aes-192-gcm`: `aes-192-gcm` = "aes-192-gcm".asInstanceOf[`aes-192-gcm`]
   
   @js.native
-  sealed trait `aes-256-ccm` extends CipherCCMTypes
+  sealed trait `aes-256-ccm`
+    extends StObject
+       with CipherCCMTypes
   @scala.inline
   def `aes-256-ccm`: `aes-256-ccm` = "aes-256-ccm".asInstanceOf[`aes-256-ccm`]
   
   @js.native
-  sealed trait `aes-256-gcm` extends CipherGCMTypes
+  sealed trait `aes-256-gcm`
+    extends StObject
+       with CipherGCMTypes
   @scala.inline
   def `aes-256-gcm`: `aes-256-gcm` = "aes-256-gcm".asInstanceOf[`aes-256-gcm`]
   
@@ -913,7 +1008,9 @@ object nodeStrings {
   def afterEvaluate: afterEvaluate = "afterEvaluate".asInstanceOf[afterEvaluate]
   
   @js.native
-  sealed trait aix extends Platform
+  sealed trait aix
+    extends StObject
+       with Platform
   @scala.inline
   def aix: aix = "aix".asInstanceOf[aix]
   
@@ -923,13 +1020,16 @@ object nodeStrings {
   def altsvc: altsvc = "altsvc".asInstanceOf[altsvc]
   
   @js.native
-  sealed trait android extends Platform
+  sealed trait android
+    extends StObject
+       with Platform
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   
   @js.native
   sealed trait ascii
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with TranscodeEncoding
        with Utf8AsciiBinaryEncoding
        with Utf8AsciiLatin1Encoding
@@ -943,7 +1043,8 @@ object nodeStrings {
   
   @js.native
   sealed trait base64
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with HexBase64BinaryEncoding
        with HexBase64Latin1Encoding
   @scala.inline
@@ -955,13 +1056,16 @@ object nodeStrings {
   def beforeExit: beforeExit = "beforeExit".asInstanceOf[beforeExit]
   
   @js.native
-  sealed trait bigint extends Style
+  sealed trait bigint
+    extends StObject
+       with Style
   @scala.inline
   def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
   sealed trait binary
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with HexBase64BinaryEncoding
        with TranscodeEncoding
        with Utf8AsciiBinaryEncoding
@@ -969,17 +1073,23 @@ object nodeStrings {
   def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait boolean extends Style
+  sealed trait boolean
+    extends StObject
+       with Style
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait buffer_ extends BufferEncodingOption
+  sealed trait buffer_
+    extends StObject
+       with BufferEncodingOption
   @scala.inline
   def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
   
   @js.native
-  sealed trait `chacha20-poly1305` extends CipherCCMTypes
+  sealed trait `chacha20-poly1305`
+    extends StObject
+       with CipherCCMTypes
   @scala.inline
   def `chacha20-poly1305`: `chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[`chacha20-poly1305`]
   
@@ -999,7 +1109,9 @@ object nodeStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait compressed extends ECDHKeyFormat
+  sealed trait compressed
+    extends StObject
+       with ECDHKeyFormat
   @scala.inline
   def compressed: compressed = "compressed".asInstanceOf[compressed]
   
@@ -1019,12 +1131,16 @@ object nodeStrings {
   def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait cygwin extends Platform
+  sealed trait cygwin
+    extends StObject
+       with Platform
   @scala.inline
   def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
   
   @js.native
-  sealed trait darwin extends Platform
+  sealed trait darwin
+    extends StObject
+       with Platform
   @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   
@@ -1034,7 +1150,9 @@ object nodeStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait date extends Style
+  sealed trait date
+    extends StObject
+       with Style
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -1050,18 +1168,23 @@ object nodeStrings {
   
   @js.native
   sealed trait der
-    extends DSAEncoding
+    extends StObject
+       with DSAEncoding
        with KeyFormat
   @scala.inline
   def der: der = "der".asInstanceOf[der]
   
   @js.native
-  sealed trait detailed extends MeasureMemoryMode
+  sealed trait detailed
+    extends StObject
+       with MeasureMemoryMode
   @scala.inline
   def detailed: detailed = "detailed".asInstanceOf[detailed]
   
   @js.native
-  sealed trait dir extends Type
+  sealed trait dir
+    extends StObject
+       with Type
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   
@@ -1076,22 +1199,30 @@ object nodeStrings {
   def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
-  sealed trait dsa extends KeyType
+  sealed trait dsa
+    extends StObject
+       with KeyType
   @scala.inline
   def dsa: dsa = "dsa".asInstanceOf[dsa]
   
   @js.native
-  sealed trait ec extends KeyType
+  sealed trait ec
+    extends StObject
+       with KeyType
   @scala.inline
   def ec: ec = "ec".asInstanceOf[ec]
   
   @js.native
-  sealed trait ed25519 extends KeyType
+  sealed trait ed25519
+    extends StObject
+       with KeyType
   @scala.inline
   def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
   
   @js.native
-  sealed trait ed448 extends KeyType
+  sealed trait ed448
+    extends StObject
+       with KeyType
   @scala.inline
   def ed448: ed448 = "ed448".asInstanceOf[ed448]
   
@@ -1121,7 +1252,9 @@ object nodeStrings {
   def fifo: fifo = "fifo".asInstanceOf[fifo]
   
   @js.native
-  sealed trait file extends Type
+  sealed trait file
+    extends StObject
+       with Type
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
@@ -1141,17 +1274,23 @@ object nodeStrings {
   def frameError: frameError = "frameError".asInstanceOf[frameError]
   
   @js.native
-  sealed trait freebsd extends Platform
+  sealed trait freebsd
+    extends StObject
+       with Platform
   @scala.inline
   def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
   
   @js.native
-  sealed trait function extends EntryType
+  sealed trait function
+    extends StObject
+       with EntryType
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait gc extends EntryType
+  sealed trait gc
+    extends StObject
+       with EntryType
   @scala.inline
   def gc: gc = "gc".asInstanceOf[gc]
   
@@ -1172,19 +1311,24 @@ object nodeStrings {
   
   @js.native
   sealed trait hex
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with HexBase64BinaryEncoding
        with HexBase64Latin1Encoding
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait http extends EntryType
+  sealed trait http
+    extends StObject
+       with EntryType
   @scala.inline
   def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait http2 extends EntryType
+  sealed trait http2
+    extends StObject
+       with EntryType
   @scala.inline
   def http2: http2 = "http2".asInstanceOf[http2]
   
@@ -1199,12 +1343,16 @@ object nodeStrings {
   def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
   
   @js.native
-  sealed trait hybrid extends ECDHKeyFormat
+  sealed trait hybrid
+    extends StObject
+       with ECDHKeyFormat
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
-  sealed trait `ieee-p1363` extends DSAEncoding
+  sealed trait `ieee-p1363`
+    extends StObject
+       with DSAEncoding
   @scala.inline
   def `ieee-p1363`: `ieee-p1363` = "ieee-p1363".asInstanceOf[`ieee-p1363`]
   
@@ -1215,7 +1363,8 @@ object nodeStrings {
   
   @js.native
   sealed trait ignore
-    extends StdioNull
+    extends StObject
+       with StdioNull
        with _StdioOptions
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
@@ -1227,7 +1376,8 @@ object nodeStrings {
   
   @js.native
   sealed trait inherit
-    extends StdioNull
+    extends StObject
+       with StdioNull
        with _StdioOptions
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
@@ -1243,12 +1393,16 @@ object nodeStrings {
   def ipc: ipc = "ipc".asInstanceOf[ipc]
   
   @js.native
-  sealed trait json extends SerializationType
+  sealed trait json
+    extends StObject
+       with SerializationType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait junction extends Type
+  sealed trait junction
+    extends StObject
+       with Type
   @scala.inline
   def junction: junction = "junction".asInstanceOf[junction]
   
@@ -1259,7 +1413,8 @@ object nodeStrings {
   
   @js.native
   sealed trait latin1
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with HexBase64Latin1Encoding
        with TranscodeEncoding
        with Utf8AsciiLatin1Encoding
@@ -1277,7 +1432,9 @@ object nodeStrings {
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait linux extends Platform
+  sealed trait linux
+    extends StObject
+       with Platform
   @scala.inline
   def linux: linux = "linux".asInstanceOf[linux]
   
@@ -1297,12 +1454,16 @@ object nodeStrings {
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
-  sealed trait mark extends EntryType
+  sealed trait mark
+    extends StObject
+       with EntryType
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait measure extends EntryType
+  sealed trait measure
+    extends StObject
+       with EntryType
   @scala.inline
   def measure: measure = "measure".asInstanceOf[measure]
   
@@ -1317,7 +1478,9 @@ object nodeStrings {
   def messageerror: messageerror = "messageerror".asInstanceOf[messageerror]
   
   @js.native
-  sealed trait module extends Style
+  sealed trait module
+    extends StObject
+       with Style
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   
@@ -1327,7 +1490,9 @@ object nodeStrings {
   def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
   
   @js.native
-  sealed trait netbsd extends Platform
+  sealed trait netbsd
+    extends StObject
+       with Platform
   @scala.inline
   def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
   
@@ -1342,7 +1507,9 @@ object nodeStrings {
   def newSession: newSession = "newSession".asInstanceOf[newSession]
   
   @js.native
-  sealed trait node extends EntryType
+  sealed trait node
+    extends StObject
+       with EntryType
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   
@@ -1357,12 +1524,16 @@ object nodeStrings {
   def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
   
   @js.native
-  sealed trait `null` extends Style
+  sealed trait `null`
+    extends StObject
+       with Style
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait number extends Style
+  sealed trait number
+    extends StObject
+       with Style
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -1382,7 +1553,9 @@ object nodeStrings {
   def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait openbsd extends Platform
+  sealed trait openbsd
+    extends StObject
+       with Platform
   @scala.inline
   def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
   
@@ -1397,7 +1570,9 @@ object nodeStrings {
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait pem extends KeyFormat
+  sealed trait pem
+    extends StObject
+       with KeyFormat
   @scala.inline
   def pem: pem = "pem".asInstanceOf[pem]
   
@@ -1407,7 +1582,9 @@ object nodeStrings {
   def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
-  sealed trait pipe extends _StdioOptions
+  sealed trait pipe
+    extends StObject
+       with _StdioOptions
   @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   
@@ -1422,12 +1599,16 @@ object nodeStrings {
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
-  sealed trait `private` extends KeyObjectType
+  sealed trait `private`
+    extends StObject
+       with KeyObjectType
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait public extends KeyObjectType
+  sealed trait public
+    extends StObject
+       with KeyObjectType
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
@@ -1447,12 +1628,16 @@ object nodeStrings {
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait regexp extends Style
+  sealed trait regexp
+    extends StObject
+       with Style
   @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait reject extends MultipleResolveType
+  sealed trait reject
+    extends StObject
+       with MultipleResolveType
   @scala.inline
   def reject: reject = "reject".asInstanceOf[reject]
   
@@ -1487,7 +1672,9 @@ object nodeStrings {
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait resolve extends MultipleResolveType
+  sealed trait resolve
+    extends StObject
+       with MultipleResolveType
   @scala.inline
   def resolve: resolve = "resolve".asInstanceOf[resolve]
   
@@ -1507,7 +1694,9 @@ object nodeStrings {
   def resumeSession: resumeSession = "resumeSession".asInstanceOf[resumeSession]
   
   @js.native
-  sealed trait rsa extends KeyType
+  sealed trait rsa
+    extends StObject
+       with KeyType
   @scala.inline
   def rsa: rsa = "rsa".asInstanceOf[rsa]
   
@@ -1517,7 +1706,9 @@ object nodeStrings {
   def sec1: sec1 = "sec1".asInstanceOf[sec1]
   
   @js.native
-  sealed trait secret extends KeyObjectType
+  sealed trait secret
+    extends StObject
+       with KeyObjectType
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   
@@ -1557,7 +1748,9 @@ object nodeStrings {
   def socket: socket = "socket".asInstanceOf[socket]
   
   @js.native
-  sealed trait special extends Style
+  sealed trait special
+    extends StObject
+       with Style
   @scala.inline
   def special: special = "special".asInstanceOf[special]
   
@@ -1587,22 +1780,30 @@ object nodeStrings {
   def strictEqual: strictEqual = "strictEqual".asInstanceOf[strictEqual]
   
   @js.native
-  sealed trait string extends Style
+  sealed trait string
+    extends StObject
+       with Style
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait summary extends MeasureMemoryMode
+  sealed trait summary
+    extends StObject
+       with MeasureMemoryMode
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait sunos extends Platform
+  sealed trait sunos
+    extends StObject
+       with Platform
   @scala.inline
   def sunos: sunos = "sunos".asInstanceOf[sunos]
   
   @js.native
-  sealed trait symbol extends Style
+  sealed trait symbol
+    extends StObject
+       with Style
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
@@ -1622,24 +1823,31 @@ object nodeStrings {
   def trailers: trailers = "trailers".asInstanceOf[trailers]
   
   @js.native
-  sealed trait `ucs-2` extends BufferEncoding
+  sealed trait `ucs-2`
+    extends StObject
+       with BufferEncoding
   @scala.inline
   def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
   
   @js.native
   sealed trait ucs2
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with TranscodeEncoding
   @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
-  sealed trait udp4 extends SocketType
+  sealed trait udp4
+    extends StObject
+       with SocketType
   @scala.inline
   def udp4: udp4 = "udp4".asInstanceOf[udp4]
   
   @js.native
-  sealed trait udp6 extends SocketType
+  sealed trait udp6
+    extends StObject
+       with SocketType
   @scala.inline
   def udp6: udp6 = "udp6".asInstanceOf[udp6]
   
@@ -1654,12 +1862,16 @@ object nodeStrings {
   def uncaughtExceptionMonitor: uncaughtExceptionMonitor = "uncaughtExceptionMonitor".asInstanceOf[uncaughtExceptionMonitor]
   
   @js.native
-  sealed trait uncompressed extends ECDHKeyFormat
+  sealed trait uncompressed
+    extends StObject
+       with ECDHKeyFormat
   @scala.inline
   def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
   
   @js.native
-  sealed trait undefined extends Style
+  sealed trait undefined
+    extends StObject
+       with Style
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
   
@@ -1684,20 +1896,24 @@ object nodeStrings {
   def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   
   @js.native
-  sealed trait `utf-8` extends BufferEncoding
+  sealed trait `utf-8`
+    extends StObject
+       with BufferEncoding
   @scala.inline
   def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
   sealed trait utf16le
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with TranscodeEncoding
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
   sealed trait utf8
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
        with TranscodeEncoding
        with Utf8AsciiBinaryEncoding
        with Utf8AsciiLatin1Encoding
@@ -1715,17 +1931,23 @@ object nodeStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait win32 extends Platform
+  sealed trait win32
+    extends StObject
+       with Platform
   @scala.inline
   def win32: win32 = "win32".asInstanceOf[win32]
   
   @js.native
-  sealed trait x25519 extends KeyType
+  sealed trait x25519
+    extends StObject
+       with KeyType
   @scala.inline
   def x25519: x25519 = "x25519".asInstanceOf[x25519]
   
   @js.native
-  sealed trait x448 extends KeyType
+  sealed trait x448
+    extends StObject
+       with KeyType
   @scala.inline
   def x448: x448 = "x448".asInstanceOf[x448]
 }

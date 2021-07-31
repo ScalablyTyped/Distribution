@@ -58,10 +58,13 @@ import typings.vegaTypings.scaleMod.TimeIntervalStep
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleMod {
+  
+  @JSImport("vega-lite/build/src/scale", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/scale", "CONTINUOUS_DOMAIN_SCALES")
   @js.native
@@ -295,74 +298,59 @@ object scaleMod {
   @js.native
   val TIME_SCALE_TYPES: js.Array[ScaleType] = js.native
   
-  @JSImport("vega-lite/build/src/scale", "channelScalePropertyIncompatability")
-  @js.native
+  @scala.inline
   def channelScalePropertyIncompatability(
     channel: Channel,
     propName: /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("channelScalePropertyIncompatability")(channel.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/scale", "channelSupportScaleType")
-  @js.native
-  def channelSupportScaleType(channel: Channel, scaleType: ScaleType): Boolean = js.native
+  @scala.inline
+  def channelSupportScaleType(channel: Channel, scaleType: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelSupportScaleType")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("vega-lite/build/src/scale", "defaultScaleConfig")
   @js.native
   val defaultScaleConfig: ScaleConfig[SignalRef] = js.native
   
-  @JSImport("vega-lite/build/src/scale", "hasContinuousDomain")
-  @js.native
-  def hasContinuousDomain(`type`: ScaleType): Boolean = js.native
+  @scala.inline
+  def hasContinuousDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContinuousDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "hasDiscreteDomain")
-  @js.native
-  def hasDiscreteDomain(`type`: ScaleType): Boolean = js.native
+  @scala.inline
+  def hasDiscreteDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDiscreteDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isContinuousToContinuous")
-  @js.native
-  def isContinuousToContinuous(`type`: ScaleType): Boolean = js.native
+  @scala.inline
+  def isContinuousToContinuous(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToContinuous")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isContinuousToDiscrete")
-  @js.native
-  def isContinuousToDiscrete(`type`: ScaleType): Boolean = js.native
+  @scala.inline
+  def isContinuousToDiscrete(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToDiscrete")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isDomainUnionWith")
-  @js.native
-  def isDomainUnionWith(domain: Domain): /* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean = js.native
+  @scala.inline
+  def isDomainUnionWith(domain: Domain): /* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomainUnionWith")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isExtendedScheme")
-  @js.native
-  def isExtendedScheme(scheme: Scheme): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = js.native
-  @JSImport("vega-lite/build/src/scale", "isExtendedScheme")
-  @js.native
-  def isExtendedScheme(scheme: SignalRef): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = js.native
+  @scala.inline
+  def isExtendedScheme(scheme: Scheme): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
+  @scala.inline
+  def isExtendedScheme(scheme: SignalRef): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isQuantitative")
-  @js.native
-  def isQuantitative(`type`: ScaleType): Boolean = js.native
+  @scala.inline
+  def isQuantitative(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitative")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "isSelectionDomain")
-  @js.native
-  def isSelectionDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = js.native
+  @scala.inline
+  def isSelectionDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "scaleCompatible")
-  @js.native
-  def scaleCompatible(scaleType1: ScaleType, scaleType2: ScaleType): Boolean = js.native
+  @scala.inline
+  def scaleCompatible(scaleType1: ScaleType, scaleType2: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleCompatible")(scaleType1.asInstanceOf[js.Any], scaleType2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "scaleTypePrecedence")
-  @js.native
-  def scaleTypePrecedence(scaleType: ScaleType): Double = js.native
+  @scala.inline
+  def scaleTypePrecedence(scaleType: ScaleType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypePrecedence")(scaleType.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("vega-lite/build/src/scale", "scaleTypeSupportDataType")
-  @js.native
-  def scaleTypeSupportDataType(specifiedType: ScaleType, fieldDefType: Type): Boolean = js.native
+  @scala.inline
+  def scaleTypeSupportDataType(specifiedType: ScaleType, fieldDefType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeSupportDataType")(specifiedType.asInstanceOf[js.Any], fieldDefType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/scale", "scaleTypeSupportProperty")
-  @js.native
+  @scala.inline
   def scaleTypeSupportProperty(
     scaleType: ScaleType,
     propName: /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeSupportProperty")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - js.Array[
@@ -374,8 +362,9 @@ object scaleMod {
   */
   type Domain = _Domain | (js.Array[Null | String | Double | Boolean | DateTime | SignalRef]) | SignalRef
   
-  @js.native
-  trait DomainUnionWith extends _Domain {
+  trait DomainUnionWith
+    extends StObject
+       with _Domain {
     
     /**
       * Customized domain values to be union with the field's values.
@@ -390,7 +379,7 @@ object scaleMod {
       *
       * 3) `domain` for _ordinal_ and _nominal_ fields can be an array that lists valid input values.
       */
-    var unionWith: js.Array[Boolean | DateTime | Double | String] = js.native
+    var unionWith: js.Array[Boolean | DateTime | Double | String]
   }
   object DomainUnionWith {
     
@@ -411,7 +400,6 @@ object scaleMod {
     }
   }
   
-  @js.native
   trait Scale[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
@@ -421,12 +409,12 @@ object scaleMod {
       *
       * __Default value:__ `0.5`
       */
-    var align: js.UndefOr[Double | ES] = js.native
+    var align: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The logarithm base of the `log` scale (default `10`).
       */
-    var base: js.UndefOr[Double | ES] = js.native
+    var base: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Bin boundaries can be provided to scales as either an explicit array of bin boundaries or as a bin specification object. The legal values are:
@@ -434,21 +422,21 @@ object scaleMod {
       * - A [bin specification object](https://vega.github.io/vega-lite/docs/scale.html#bins) that indicates the bin _step_ size, and optionally the _start_ and _stop_ boundaries.
       * - An array of bin boundaries over the scale domain. If provided, axes and legends will use the bin boundaries to inform the choice of tick marks and text labels.
       */
-    var bins: js.UndefOr[ScaleBins] = js.native
+    var bins: js.UndefOr[ScaleBins] = js.undefined
     
     /**
       * If `true`, values that exceed the data domain are clamped to either the minimum or maximum range value
       *
       * __Default value:__ derived from the [scale config](https://vega.github.io/vega-lite/docs/config.html#scale-config)'s `clamp` (`true` by default).
       */
-    var clamp: js.UndefOr[Boolean | ES] = js.native
+    var clamp: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
       * A constant determining the slope of the symlog function around zero. Only used for `symlog` scales.
       *
       * __Default value:__ `1`
       */
-    var constant: js.UndefOr[Double | ES] = js.native
+    var constant: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Customized domain values in the form of constant values or dynamic values driven by a selection.
@@ -469,34 +457,34 @@ object scaleMod {
       */
     var domain: js.UndefOr[
         (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | SelectionExtent | DomainUnionWith | ES
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Sets the maximum value in the scale domain, overriding the `domain` property. This property is only intended for use with scales having continuous domains.
       */
-    var domainMax: js.UndefOr[Double | DateTime | ES] = js.native
+    var domainMax: js.UndefOr[Double | DateTime | ES] = js.undefined
     
     /**
       * Inserts a single mid-point value into a two-element domain. The mid-point value must lie between the domain minimum and maximum values. This property can be useful for setting a midpoint for [diverging color scales](https://vega.github.io/vega-lite/docs/scale.html#piecewise). The domainMid property is only intended for use with scales supporting continuous, piecewise domains.
       */
-    var domainMid: js.UndefOr[Double | ES] = js.native
+    var domainMid: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Sets the minimum value in the scale domain, overriding the domain property. This property is only intended for use with scales having continuous domains.
       */
-    var domainMin: js.UndefOr[Double | DateTime | ES] = js.native
+    var domainMin: js.UndefOr[Double | DateTime | ES] = js.undefined
     
     /**
       * The exponent of the `pow` scale.
       */
-    var exponent: js.UndefOr[Double | ES] = js.native
+    var exponent: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The interpolation method for range values. By default, a general interpolator for numbers, dates, strings and colors (in HCL space) is used. For color ranges, this property allows interpolation in alternative color spaces. Legal values include `rgb`, `hsl`, `hsl-long`, `lab`, `hcl`, `hcl-long`, `cubehelix` and `cubehelix-long` ('-long' variants use longer paths in polar coordinate spaces). If object-valued, this property accepts an object with a string-valued _type_ property and an optional numeric _gamma_ property applicable to rgb and cubehelix interpolators. For more, see the [d3-interpolate documentation](https://github.com/d3/d3-interpolate).
       *
       * * __Default value:__ `hcl`
       */
-    var interpolate: js.UndefOr[ScaleInterpolateEnum | ES | ScaleInterpolateParams] = js.native
+    var interpolate: js.UndefOr[ScaleInterpolateEnum | ES | ScaleInterpolateParams] = js.undefined
     
     /**
       * Extending the domain so that it starts and ends on nice round values. This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of _[0.201479…, 0.996679…]_, a nice domain might be _[0.2, 1.0]_.
@@ -508,7 +496,7 @@ object scaleMod {
       * __Default value:__ `true` for unbinned _quantitative_ fields; `false` otherwise.
       *
       */
-    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | ES] = js.native
+    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | ES] = js.undefined
     
     /**
       * For _[continuous](https://vega.github.io/vega-lite/docs/scale.html#continuous)_ scales, expands the scale domain to accommodate the specified number of pixels on each of the scale range. The scale range must represent pixels for this parameter to function as intended. Padding adjustment is performed prior to all other adjustments, including the effects of the `zero`, `nice`, `domainMin`, and `domainMax` properties.
@@ -522,7 +510,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var padding: js.UndefOr[Double | ES] = js.native
+    var padding: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The inner padding (spacing) within each band step of band scales, as a fraction of the step size. This value must lie in the range [0,1].
@@ -534,7 +522,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var paddingInner: js.UndefOr[Double | ES] = js.native
+    var paddingInner: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The outer padding (spacing) at the ends of the range of band and point scales,
@@ -546,7 +534,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var paddingOuter: js.UndefOr[Double | ES] = js.native
+    var paddingOuter: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The range of the scale. One of:
@@ -563,30 +551,30 @@ object scaleMod {
       *
       * 2) Any directly specified `range` for `x` and `y` channels will be ignored. Range can be customized via the view's corresponding [size](https://vega.github.io/vega-lite/docs/size.html) (`width` and `height`).
       */
-    var range: js.UndefOr[RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString] = js.native
+    var range: js.UndefOr[RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString] = js.undefined
     
     /**
       * Sets the maximum value in the scale range, overriding the `range` property or the default range. This property is only intended for use with scales having continuous ranges.
       */
-    var rangeMax: js.UndefOr[Double | String | ES] = js.native
+    var rangeMax: js.UndefOr[Double | String | ES] = js.undefined
     
     /**
       * Sets the minimum value in the scale range, overriding the `range` property or the default range. This property is only intended for use with scales having continuous ranges.
       */
-    var rangeMin: js.UndefOr[Double | String | ES] = js.native
+    var rangeMin: js.UndefOr[Double | String | ES] = js.undefined
     
     /**
       * If true, reverses the order of the scale range.
       * __Default value:__ `false`.
       */
-    var reverse: js.UndefOr[Boolean | ES] = js.native
+    var reverse: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
       * If `true`, rounds numeric output values to integers. This can be helpful for snapping to the pixel grid.
       *
       * __Default value:__ `false`.
       */
-    var round: js.UndefOr[Boolean | ES] = js.native
+    var round: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
       * A string indicating a color [scheme](https://vega.github.io/vega-lite/docs/scale.html#scheme) name (e.g., `"category10"` or `"blues"`) or a [scheme parameter object](https://vega.github.io/vega-lite/docs/scale.html#scheme-params).
@@ -595,7 +583,7 @@ object scaleMod {
       *
       * For the full list of supported schemes, please refer to the [Vega Scheme](https://vega.github.io/vega/docs/schemes/#reference) reference.
       */
-    var scheme: js.UndefOr[String | SchemeParams | ES] = js.native
+    var scheme: js.UndefOr[String | SchemeParams | ES] = js.undefined
     
     /**
       * The type of scale. Vega-Lite supports the following categories of scale types:
@@ -608,7 +596,7 @@ object scaleMod {
       *
       * __Default value:__ please see the [scale type table](https://vega.github.io/vega-lite/docs/scale.html#type).
       */
-    var `type`: js.UndefOr[ScaleType] = js.native
+    var `type`: js.UndefOr[ScaleType] = js.undefined
     
     /**
       * If `true`, ensures that a zero baseline value is included in the scale domain.
@@ -617,7 +605,7 @@ object scaleMod {
       *
       * __Note:__ Log, time, and utc scales do not support `zero`.
       */
-    var zero: js.UndefOr[Boolean | ES] = js.native
+    var zero: js.UndefOr[Boolean | ES] = js.undefined
   }
   object Scale {
     
@@ -628,7 +616,7 @@ object scaleMod {
     }
     
     @scala.inline
-    implicit class ScaleMutableBuilder[Self <: Scale[_], ES /* <: ExprRef | SignalRef */] (val x: Self with Scale[ES]) extends AnyVal {
+    implicit class ScaleMutableBuilder[Self <: Scale[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Scale[ES]) extends AnyVal {
       
       @scala.inline
       def setAlign(value: Double | ES): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
@@ -781,7 +769,6 @@ object scaleMod {
     }
   }
   
-  @js.native
   trait ScaleConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
@@ -794,7 +781,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var bandPaddingInner: js.UndefOr[Double | ES] = js.native
+    var bandPaddingInner: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Default outer padding for `x` and `y` band-ordinal scales.
@@ -804,7 +791,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var bandPaddingOuter: js.UndefOr[Double | ES] = js.native
+    var bandPaddingOuter: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Default inner padding for `x` and `y` band-ordinal scales of `"bar"` marks.
@@ -814,12 +801,12 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var barBandPaddingInner: js.UndefOr[Double | ES] = js.native
+    var barBandPaddingInner: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * If true, values that exceed the data domain are clamped to either the minimum or maximum range value
       */
-    var clamp: js.UndefOr[Boolean | ES] = js.native
+    var clamp: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
       * Default padding for continuous scales.
@@ -828,7 +815,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var continuousPadding: js.UndefOr[Double | ES] = js.native
+    var continuousPadding: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * The default max value for mapping quantitative fields to bar's size/bandSize.
@@ -836,7 +823,7 @@ object scaleMod {
       * If undefined (default), we will use the axis's size (width or height) - 1.
       * @minimum 0
       */
-    var maxBandSize: js.UndefOr[Double] = js.native
+    var maxBandSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The default max value for mapping quantitative fields to text's size/fontSize.
@@ -845,7 +832,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var maxFontSize: js.UndefOr[Double] = js.native
+    var maxFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Default max opacity for mapping a field to opacity.
@@ -855,13 +842,13 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var maxOpacity: js.UndefOr[Double] = js.native
+    var maxOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Default max value for point size scale.
       * @minimum 0
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Default max strokeWidth for the scale of strokeWidth for rule and line marks and of size for trail marks.
@@ -870,7 +857,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var maxStrokeWidth: js.UndefOr[Double] = js.native
+    var maxStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The default min value for mapping quantitative fields to bar and tick's size/bandSize scale with zero=false.
@@ -879,7 +866,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var minBandSize: js.UndefOr[Double] = js.native
+    var minBandSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The default min value for mapping quantitative fields to tick's size/fontSize scale with zero=false
@@ -888,7 +875,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var minFontSize: js.UndefOr[Double] = js.native
+    var minFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Default minimum opacity for mapping a field to opacity.
@@ -898,7 +885,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var minOpacity: js.UndefOr[Double] = js.native
+    var minOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Default minimum value for point size scale with zero=false.
@@ -907,7 +894,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Default minimum strokeWidth for the scale of strokeWidth for rule and line marks and of size for trail marks with zero=false.
@@ -916,7 +903,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var minStrokeWidth: js.UndefOr[Double] = js.native
+    var minStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Default outer padding for `x` and `y` point-ordinal scales.
@@ -926,7 +913,7 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var pointPadding: js.UndefOr[Double | ES] = js.native
+    var pointPadding: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Default range cardinality for [`quantile`](https://vega.github.io/vega-lite/docs/scale.html#quantile) scale.
@@ -935,7 +922,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var quantileCount: js.UndefOr[Double] = js.native
+    var quantileCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Default range cardinality for [`quantize`](https://vega.github.io/vega-lite/docs/scale.html#quantize) scale.
@@ -944,7 +931,7 @@ object scaleMod {
       *
       * @minimum 0
       */
-    var quantizeCount: js.UndefOr[Double] = js.native
+    var quantizeCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Default inner padding for `x` and `y` band-ordinal scales of `"rect"` marks.
@@ -954,14 +941,14 @@ object scaleMod {
       * @minimum 0
       * @maximum 1
       */
-    var rectBandPaddingInner: js.UndefOr[Double | ES] = js.native
+    var rectBandPaddingInner: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * If true, rounds numeric output values to integers.
       * This can be helpful for snapping to the pixel grid.
       * (Only available for `x`, `y`, and `size` scales.)
       */
-    var round: js.UndefOr[Boolean | ES] = js.native
+    var round: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
       * Use the source data range before aggregation as scale domain instead of aggregated data for aggregate axis.
@@ -972,12 +959,12 @@ object scaleMod {
       *
       * __Default value:__ `false`
       */
-    var useUnaggregatedDomain: js.UndefOr[Boolean] = js.native
+    var useUnaggregatedDomain: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reverse x-scale by default (useful for right-to-left charts).
       */
-    var xReverse: js.UndefOr[Boolean | ES] = js.native
+    var xReverse: js.UndefOr[Boolean | ES] = js.undefined
   }
   object ScaleConfig {
     
@@ -988,7 +975,7 @@ object scaleMod {
     }
     
     @scala.inline
-    implicit class ScaleConfigMutableBuilder[Self <: ScaleConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with ScaleConfig[ES]) extends AnyVal {
+    implicit class ScaleConfigMutableBuilder[Self <: ScaleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ScaleConfig[ES]) extends AnyVal {
       
       @scala.inline
       def setBandPaddingInner(value: Double | ES): Self = StObject.set(x, "bandPaddingInner", value.asInstanceOf[js.Any])
@@ -1126,25 +1113,24 @@ object scaleMod {
   
   type Scheme = String | SchemeParams
   
-  @js.native
   trait SchemeParams extends StObject {
     
     /**
       * The number of colors to use in the scheme. This can be useful for scale types such as `"quantize"`, which use the length of the scale range to determine the number of discrete bins for the scale domain.
       */
-    var count: js.UndefOr[Double | SignalRef] = js.native
+    var count: js.UndefOr[Double | SignalRef] = js.undefined
     
     /**
       * The extent of the color range to use. For example `[0.2, 1]` will rescale the color scheme such that color values in the range _[0, 0.2)_ are excluded from the scheme.
       */
-    var extent: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+    var extent: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
     
     /**
       * A color scheme name for ordinal scales (e.g., `"category10"` or `"blues"`).
       *
       * For the full list of supported schemes, please refer to the [Vega Scheme](https://vega.github.io/vega/docs/schemes/#reference) reference.
       */
-    var name: String | SignalRef = js.native
+    var name: String | SignalRef
   }
   object SchemeParams {
     

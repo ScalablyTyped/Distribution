@@ -8,21 +8,19 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseButtonAriaLabel extends StObject {
   
-  var closeButtonAriaLabel: String = js.native
+  var closeButtonAriaLabel: String
   
-  var keyboardShortcuts: js.Array[Recordunicodelabelactions] = js.native
+  var keyboardShortcuts: js.Array[Recordunicodelabelactions]
   
-  var onCloseButtonClick: MouseEventHandler[Element] = js.native
+  var onCloseButtonClick: MouseEventHandler[Element]
   
-  var onKeyDown: KeyboardEventHandler[Element] = js.native
+  var onKeyDown: KeyboardEventHandler[Element]
   
-  var title: String = js.native
+  var title: String
 }
 object CloseButtonAriaLabel {
   

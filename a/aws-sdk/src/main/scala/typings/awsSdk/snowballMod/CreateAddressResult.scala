@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAddressResult extends StObject {
   
   /**
     * The automatically generated ID for a specific address. You'll use this ID when you create a job to specify which address you want the Snow device for that job shipped to.
     */
-  var AddressId: js.UndefOr[String] = js.native
+  var AddressId: js.UndefOr[String] = js.undefined
 }
 object CreateAddressResult {
   

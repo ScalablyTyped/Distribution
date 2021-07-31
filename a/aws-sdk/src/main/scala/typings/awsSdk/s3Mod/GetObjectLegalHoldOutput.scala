@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectLegalHoldOutput extends StObject {
   
   /**
     * The current Legal Hold status for the specified object.
     */
-  var LegalHold: js.UndefOr[ObjectLockLegalHold] = js.native
+  var LegalHold: js.UndefOr[ObjectLockLegalHold] = js.undefined
 }
 object GetObjectLegalHoldOutput {
   

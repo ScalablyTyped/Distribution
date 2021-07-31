@@ -2,33 +2,31 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 接口
-@js.native
 trait Logger extends StObject {
   
   /**
     * 写debug日志，参数同log方法
     */
-  def debug(args: js.Any*): Unit = js.native
+  def debug(args: js.Any*): Unit
   
   /**
     * 写info日志，参数同log方法
     */
-  def info(args: js.Any*): Unit = js.native
+  def info(args: js.Any*): Unit
   
   /**
     * 写log日志，可以提供任意个参数，每个参数的类型为Object/Array/Number/String，参数p1到pN的内容会写入日志
     */
-  def log(args: js.Any*): Unit = js.native
+  def log(args: js.Any*): Unit
   
   /**
     * 写warn日志，参数同log方法
     */
-  def warn(args: js.Any*): Unit = js.native
+  def warn(args: js.Any*): Unit
 }
 object Logger {
   

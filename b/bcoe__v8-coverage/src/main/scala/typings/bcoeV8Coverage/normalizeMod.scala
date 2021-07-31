@@ -6,32 +6,29 @@ import typings.bcoeV8Coverage.typesMod.ProcessCov
 import typings.bcoeV8Coverage.typesMod.ScriptCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object normalizeMod {
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "deepNormalizeProcessCov")
+  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", JSImport.Namespace)
   @js.native
-  def deepNormalizeProcessCov(processCov: ProcessCov): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "deepNormalizeScriptCov")
-  @js.native
-  def deepNormalizeScriptCov(scriptCov: ScriptCov): Unit = js.native
+  @scala.inline
+  def deepNormalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "normalizeFunctionCov")
-  @js.native
-  def normalizeFunctionCov(funcCov: FunctionCov): Unit = js.native
+  @scala.inline
+  def deepNormalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "normalizeProcessCov")
-  @js.native
-  def normalizeProcessCov(processCov: ProcessCov): Unit = js.native
+  @scala.inline
+  def normalizeFunctionCov(funcCov: FunctionCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeFunctionCov")(funcCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "normalizeRangeTree")
-  @js.native
-  def normalizeRangeTree(tree: RangeTree): Unit = js.native
+  @scala.inline
+  def normalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/normalize", "normalizeScriptCov")
-  @js.native
-  def normalizeScriptCov(scriptCov: ScriptCov): Unit = js.native
+  @scala.inline
+  def normalizeRangeTree(tree: RangeTree): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRangeTree")(tree.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def normalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

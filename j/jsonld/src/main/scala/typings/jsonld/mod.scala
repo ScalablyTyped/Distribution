@@ -24,7 +24,6 @@ import typings.jsonld.mod.Options.ToRdf
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,113 +38,85 @@ object mod {
   @scala.inline
   def JsonLdProcessor_=(x: JsonLdProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonLdProcessor")(x.asInstanceOf[js.Any])
   
-  @JSImport("jsonld", "compact")
-  @js.native
-  def compact(input: Document): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "compact")
-  @js.native
-  def compact(input: Document, ctx: js.UndefOr[Context], options: Compact): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "compact")
-  @js.native
-  def compact(input: Document, ctx: Context): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "compact")
-  @js.native
-  def compact(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = js.native
-  @JSImport("jsonld", "compact")
-  @js.native
-  def compact(input: Document, ctx: Context, options: Compact, callback: Callback[JsonLdObj]): Unit = js.native
+  @scala.inline
+  def compact(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def compact(input: Document, ctx: Unit, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def compact(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def compact(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compact(input: Document, ctx: Context, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def compact(input: Document, ctx: Context, options: Compact, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "expand")
-  @js.native
-  def expand(input: Document): js.Promise[JsonLdArray] = js.native
-  @JSImport("jsonld", "expand")
-  @js.native
-  def expand(input: Document, callback: Callback[JsonLdArray]): Unit = js.native
-  @JSImport("jsonld", "expand")
-  @js.native
-  def expand(input: Document, options: Expand): js.Promise[JsonLdArray] = js.native
-  @JSImport("jsonld", "expand")
-  @js.native
-  def expand(input: Document, options: Expand, callback: Callback[JsonLdArray]): Unit = js.native
+  @scala.inline
+  def expand(input: Document): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
+  @scala.inline
+  def expand(input: Document, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expand(input: Document, options: Expand): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
+  @scala.inline
+  def expand(input: Document, options: Expand, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: js.UndefOr[Context], options: Flatten): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: Context): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = js.native
-  @JSImport("jsonld", "flatten")
-  @js.native
-  def flatten(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = js.native
+  @scala.inline
+  def flatten(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def flatten(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def flatten(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def flatten(input: Document, ctx: Unit, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def flatten(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def flatten(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def flatten(input: Document, ctx: Context, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def flatten(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "frame")
-  @js.native
-  def frame(input: Document, frame: Frame): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "frame")
-  @js.native
-  def frame(input: Document, frame: Frame, callback: Callback[JsonLdObj]): Unit = js.native
-  @JSImport("jsonld", "frame")
-  @js.native
-  def frame(input: Document, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = js.native
-  @JSImport("jsonld", "frame")
-  @js.native
+  @scala.inline
+  def frame(input: Document, frame: Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
+  def frame(input: Document, frame: Frame, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def frame(input: Document, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  @scala.inline
   def frame(
     input: Document,
     frame: Frame,
     options: typings.jsonld.mod.Options.Frame,
     callback: Callback[JsonLdObj]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "fromRDF")
-  @js.native
-  def fromRDF(dataset: RdfDataSet): js.Promise[JsonLdArray] = js.native
-  @JSImport("jsonld", "fromRDF")
-  @js.native
-  def fromRDF(dataset: RdfDataSet, callback: Callback[JsonLdArray]): Unit = js.native
-  @JSImport("jsonld", "fromRDF")
-  @js.native
-  def fromRDF(dataset: RdfDataSet, options: FromRdf): js.Promise[JsonLdArray] = js.native
-  @JSImport("jsonld", "fromRDF")
-  @js.native
-  def fromRDF(dataset: RdfDataSet, options: FromRdf, callback: Callback[JsonLdArray]): Unit = js.native
+  @scala.inline
+  def fromRDF(dataset: RdfDataSet): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
+  @scala.inline
+  def fromRDF(dataset: RdfDataSet, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fromRDF(dataset: RdfDataSet, options: FromRdf): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
+  @scala.inline
+  def fromRDF(dataset: RdfDataSet, options: FromRdf, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "normalize")
-  @js.native
-  def normalize(input: Document): js.Promise[String] = js.native
-  @JSImport("jsonld", "normalize")
-  @js.native
-  def normalize(input: Document, callback: Callback[String]): Unit = js.native
-  @JSImport("jsonld", "normalize")
-  @js.native
-  def normalize(input: Document, options: Normalize): js.Promise[String] = js.native
-  @JSImport("jsonld", "normalize")
-  @js.native
-  def normalize(input: Document, options: Normalize, callback: Callback[String]): Unit = js.native
+  @scala.inline
+  def normalize(input: Document): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def normalize(input: Document, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def normalize(input: Document, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def normalize(input: Document, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsonld", "toRDF")
-  @js.native
-  def toRDF(input: Document): js.Promise[RdfDataSet] = js.native
-  @JSImport("jsonld", "toRDF")
-  @js.native
-  def toRDF(input: Document, callback: Callback[RdfDataSet]): Unit = js.native
-  @JSImport("jsonld", "toRDF")
-  @js.native
-  def toRDF(input: Document, options: ToRdf): js.Promise[RdfDataSet] = js.native
-  @JSImport("jsonld", "toRDF")
-  @js.native
-  def toRDF(input: Document, options: ToRdf, callback: Callback[RdfDataSet]): Unit = js.native
+  @scala.inline
+  def toRDF(input: Document): js.Promise[RdfDataSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RdfDataSet]]
+  @scala.inline
+  def toRDF(input: Document, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toRDF(input: Document, options: ToRdf): js.Promise[RdfDataSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfDataSet]]
+  @scala.inline
+  def toRDF(input: Document, options: ToRdf, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Placeholder
   type Callback[T] = js.Function2[/* err */ Error, /* res */ T, Unit]
@@ -155,12 +126,13 @@ object mod {
   
   object Options {
     
-    @js.native
-    trait Common extends DocLoader {
+    trait Common
+      extends StObject
+         with DocLoader {
       
-      var base: js.UndefOr[String] = js.native
+      var base: js.UndefOr[String] = js.undefined
       
-      var expandContext: js.UndefOr[Context] = js.native
+      var expandContext: js.UndefOr[Context] = js.undefined
     }
     object Common {
       
@@ -190,27 +162,27 @@ object mod {
       }
     }
     
-    @js.native
     trait Compact
-      extends Common
+      extends StObject
+         with Common
          with ExpMap {
       
-      var appropriate: js.UndefOr[Boolean] = js.native
+      var appropriate: js.UndefOr[Boolean] = js.undefined
       
-      var compactArrays: js.UndefOr[Boolean] = js.native
+      var compactArrays: js.UndefOr[Boolean] = js.undefined
       
-      var compactToRelative: js.UndefOr[Boolean] = js.native
+      var compactToRelative: js.UndefOr[Boolean] = js.undefined
       
       // TODO: Figure out type of info
-      var compactionMap: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.native
+      var compactionMap: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.undefined
       
-      var expansion: js.UndefOr[Boolean] = js.native
+      var expansion: js.UndefOr[Boolean] = js.undefined
       
-      var framing: js.UndefOr[Boolean] = js.native
+      var framing: js.UndefOr[Boolean] = js.undefined
       
-      var graph: js.UndefOr[Boolean] = js.native
+      var graph: js.UndefOr[Boolean] = js.undefined
       
-      var skipExpansion: js.UndefOr[Boolean] = js.native
+      var skipExpansion: js.UndefOr[Boolean] = js.undefined
     }
     object Compact {
       
@@ -273,7 +245,6 @@ object mod {
       }
     }
     
-    @js.native
     trait DocLoader extends StObject {
       
       var documentLoader: js.UndefOr[
@@ -282,7 +253,7 @@ object mod {
               /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit], 
               js.Promise[RemoteDocument]
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object DocLoader {
       
@@ -305,11 +276,10 @@ object mod {
       }
     }
     
-    @js.native
     trait ExpMap extends StObject {
       
       // TODO: Figure out type of info
-      var expansionMap: js.UndefOr[js.Function1[/* info */ js.Any, _]] = js.native
+      var expansionMap: js.UndefOr[js.Function1[/* info */ js.Any, js.Any]] = js.undefined
     }
     object ExpMap {
       
@@ -323,19 +293,19 @@ object mod {
       implicit class ExpMapMutableBuilder[Self <: ExpMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setExpansionMap(value: /* info */ js.Any => _): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
+        def setExpansionMap(value: /* info */ js.Any => js.Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
         
         @scala.inline
         def setExpansionMapUndefined: Self = StObject.set(x, "expansionMap", js.undefined)
       }
     }
     
-    @js.native
     trait Expand
-      extends Common
+      extends StObject
+         with Common
          with ExpMap {
       
-      var keepFreeFloatingNodes: js.UndefOr[Boolean] = js.native
+      var keepFreeFloatingNodes: js.UndefOr[Boolean] = js.undefined
     }
     object Expand {
       
@@ -358,16 +328,15 @@ object mod {
     
     type Flatten = Common
     
-    @js.native
     trait Frame extends StObject {
       
-      var embed: js.UndefOr[`@last` | `@always` | `@never` | `@link`] = js.native
+      var embed: js.UndefOr[`@last` | `@always` | `@never` | `@link`] = js.undefined
       
-      var explicit: js.UndefOr[Boolean] = js.native
+      var explicit: js.UndefOr[Boolean] = js.undefined
       
-      var omitDefault: js.UndefOr[Boolean] = js.native
+      var omitDefault: js.UndefOr[Boolean] = js.undefined
       
-      var requireAll: js.UndefOr[Boolean] = js.native
+      var requireAll: js.UndefOr[Boolean] = js.undefined
     }
     object Frame {
       
@@ -406,16 +375,15 @@ object mod {
       }
     }
     
-    @js.native
     trait FromRdf extends StObject {
       
-      var format: js.UndefOr[MimeNQuad] = js.native
+      var format: js.UndefOr[MimeNQuad] = js.undefined
       
-      var rdfParser: js.UndefOr[js.Any] = js.native
+      var rdfParser: js.UndefOr[js.Any] = js.undefined
       
-      var useNativeTypes: js.UndefOr[Boolean] = js.native
+      var useNativeTypes: js.UndefOr[Boolean] = js.undefined
       
-      var useRdfType: js.UndefOr[Boolean] = js.native
+      var useRdfType: js.UndefOr[Boolean] = js.undefined
     }
     object FromRdf {
       
@@ -454,20 +422,21 @@ object mod {
       }
     }
     
-    @js.native
-    trait Normalize extends Common {
+    trait Normalize
+      extends StObject
+         with Common {
       
-      var algorithm: js.UndefOr[URDNA2015 | URGNA2012] = js.native
+      var algorithm: js.UndefOr[URDNA2015 | URGNA2012] = js.undefined
       
-      var expansion: js.UndefOr[Boolean] = js.native
+      var expansion: js.UndefOr[Boolean] = js.undefined
       
-      var format: js.UndefOr[MimeNQuad] = js.native
+      var format: js.UndefOr[MimeNQuad] = js.undefined
       
-      var inputFormat: js.UndefOr[MimeNQuad] = js.native
+      var inputFormat: js.UndefOr[MimeNQuad] = js.undefined
       
-      var skipExpansion: js.UndefOr[Boolean] = js.native
+      var skipExpansion: js.UndefOr[Boolean] = js.undefined
       
-      var useNative: js.UndefOr[Boolean] = js.native
+      var useNative: js.UndefOr[Boolean] = js.undefined
     }
     object Normalize {
       
@@ -518,14 +487,15 @@ object mod {
       }
     }
     
-    @js.native
-    trait ToRdf extends Common {
+    trait ToRdf
+      extends StObject
+         with Common {
       
-      var format: js.UndefOr[MimeNQuad] = js.native
+      var format: js.UndefOr[MimeNQuad] = js.undefined
       
-      var produceGeneralizedRdf: js.UndefOr[Boolean] = js.native
+      var produceGeneralizedRdf: js.UndefOr[Boolean] = js.undefined
       
-      var skipExpansion: js.UndefOr[Boolean] = js.native
+      var skipExpansion: js.UndefOr[Boolean] = js.undefined
     }
     object ToRdf {
       

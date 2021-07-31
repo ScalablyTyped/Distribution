@@ -2,51 +2,49 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the resource was associated with the resource share.
     */
-  var creationTime: js.UndefOr[DateTime] = js.native
+  var creationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time when the association was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.native
+  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ARN of the resource group. This value is returned only if the resource is a resource group.
     */
-  var resourceGroupArn: js.UndefOr[String] = js.native
+  var resourceGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  var resourceShareArn: js.UndefOr[String] = js.native
+  var resourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the resource.
     */
-  var status: js.UndefOr[ResourceStatus] = js.native
+  var status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * A message about the status of the resource.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The resource type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Resource {
   

@@ -2,14 +2,12 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/environment.EnvironmentProps, 'sys'> */
-@js.native
 trait OmitEnvironmentPropssys extends StObject {
   
-  var name: String = js.native
+  var name: String
 }
 object OmitEnvironmentPropssys {
   

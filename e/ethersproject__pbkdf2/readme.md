@@ -10,9 +10,9 @@ The PBKDF2 password-pbased key derivation function for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/pbkdf2 |
 | Keywords           | Ethereum, ethers, pbkdf2 |
-| # releases         | 26 |
+| # releases         | 29 |
 | # dependents       | 8 |
-| # downloads        | 530289 |
+| # downloads        | 1123969 |
 | # stars            | 0 |
 
 ## Links

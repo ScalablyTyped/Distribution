@@ -2,31 +2,29 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance demote master context.
   */
-@js.native
 trait SchemaDemoteMasterContext extends StObject {
   
   /**
     * This is always sql#demoteMasterContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the instance which will act as on-premises master in the
     * replication setup.
     */
-  var masterInstanceName: js.UndefOr[String] = js.native
+  var masterInstanceName: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration specific to read-replicas replicating from the on-premises
     * master.
     */
-  var replicaConfiguration: js.UndefOr[SchemaDemoteMasterConfiguration] = js.native
+  var replicaConfiguration: js.UndefOr[SchemaDemoteMasterConfiguration] = js.undefined
   
   /**
     * Verify GTID consistency for demote operation. Default value: True. Second
@@ -37,7 +35,7 @@ trait SchemaDemoteMasterContext extends StObject {
     * reason for the GTID divergence and are confident that doing so will not
     * cause any replication issues.
     */
-  var verifyGtidConsistency: js.UndefOr[Boolean] = js.native
+  var verifyGtidConsistency: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDemoteMasterContext {
   

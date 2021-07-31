@@ -3,25 +3,23 @@ package typings.consola.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolaLogObject extends StObject {
   
-  var additional: js.UndefOr[String | js.Array[String]] = js.native
+  var additional: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var args: js.UndefOr[js.Array[_]] = js.native
+  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var level: js.UndefOr[LogLevel] = js.native
+  var level: js.UndefOr[LogLevel] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[logType] = js.native
+  var `type`: js.UndefOr[logType] = js.undefined
 }
 object ConsolaLogObject {
   
@@ -44,7 +42,7 @@ object ConsolaLogObject {
     def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

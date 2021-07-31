@@ -2,36 +2,34 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLogPatternRequest extends StObject {
   
   /**
     * The log pattern.
     */
-  var Pattern: LogPatternRegex = js.native
+  var Pattern: LogPatternRegex
   
   /**
     * The name of the log pattern.
     */
-  var PatternName: LogPatternName = js.native
+  var PatternName: LogPatternName
   
   /**
     * The name of the log pattern set.
     */
-  var PatternSetName: LogPatternSetName = js.native
+  var PatternSetName: LogPatternSetName
   
   /**
     * Rank of the log pattern.
     */
-  var Rank: LogPatternRank = js.native
+  var Rank: LogPatternRank
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
 }
 object CreateLogPatternRequest {
   

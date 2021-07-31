@@ -3,24 +3,22 @@ package typings.semanticUiProgress.anon
 import typings.semanticUiProgress.semanticUiProgressBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-progress.SemanticUI.Progress.TextSettings._Impl, keyof semantic-ui-progress.SemanticUI.Progress.TextSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplActive extends StObject {
   
-  var active: js.UndefOr[`false` | String] = js.native
+  var active: js.UndefOr[`false` | String] = js.undefined
   
-  var error: js.UndefOr[`false` | String] = js.native
+  var error: js.UndefOr[`false` | String] = js.undefined
   
-  var percent: js.UndefOr[`false` | String] = js.native
+  var percent: js.UndefOr[`false` | String] = js.undefined
   
-  var ratio: js.UndefOr[`false` | String] = js.native
+  var ratio: js.UndefOr[`false` | String] = js.undefined
   
-  var success: js.UndefOr[`false` | String] = js.native
+  var success: js.UndefOr[`false` | String] = js.undefined
   
-  var warning: js.UndefOr[`false` | String] = js.native
+  var warning: js.UndefOr[`false` | String] = js.undefined
 }
 object PartialPickImplkeyofImplActive {
   

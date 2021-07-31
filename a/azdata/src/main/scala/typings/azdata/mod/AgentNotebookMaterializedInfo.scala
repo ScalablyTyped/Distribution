@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentNotebookMaterializedInfo extends StObject {
   
-  var favorite: Boolean = js.native
+  var favorite: Boolean
   
-  var materializedId: Double = js.native
+  var materializedId: Double
   
-  var materializedName: String = js.native
+  var materializedName: String
   
-  var targetDatabase: String = js.native
+  var targetDatabase: String
 }
 object AgentNotebookMaterializedInfo {
   

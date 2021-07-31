@@ -3,31 +3,29 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecrGetAuthorizationTokenMod {
   
-  @JSImport("@pulumi/aws/ecr/getAuthorizationToken", "getAuthorizationToken")
+  @JSImport("@pulumi/aws/ecr/getAuthorizationToken", JSImport.Namespace)
   @js.native
-  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getAuthorizationToken", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getAuthorizationToken", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getAuthorizationToken", "getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")().asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: Unit, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  
   trait GetAuthorizationTokenArgs extends StObject {
     
     /**
       * AWS account ID of the ECR Repository. If not specified the default account is assumed.
       */
-    val registryId: js.UndefOr[String] = js.native
+    val registryId: js.UndefOr[String] = js.undefined
   }
   object GetAuthorizationTokenArgs {
     
@@ -48,40 +46,39 @@ object ecrGetAuthorizationTokenMod {
     }
   }
   
-  @js.native
   trait GetAuthorizationTokenResult extends StObject {
     
     /**
       * Temporary IAM authentication credentials to access the ECR repository encoded in base64 in the form of `user_name:password`.
       */
-    val authorizationToken: String = js.native
+    val authorizationToken: String
     
     /**
       * The time in UTC RFC3339 format when the authorization token expires.
       */
-    val expiresAt: String = js.native
+    val expiresAt: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Password decoded from the authorization token.
       */
-    val password: String = js.native
+    val password: String
     
     /**
       * The registry URL to use in the docker login command.
       */
-    val proxyEndpoint: String = js.native
+    val proxyEndpoint: String
     
-    val registryId: js.UndefOr[String] = js.native
+    val registryId: js.UndefOr[String] = js.undefined
     
     /**
       * User name decoded from the authorization token.
       */
-    val userName: String = js.native
+    val userName: String
   }
   object GetAuthorizationTokenResult {
     

@@ -10,10 +10,13 @@ import typings.officeUiFabricReact.suggestionsStoreMod.SuggestionsStoreOptions
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libFloatingPickerMod {
+  
+  @JSImport("office-ui-fabric-react/lib/FloatingPicker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "BaseFloatingPeoplePicker")
   @js.native
@@ -54,13 +57,13 @@ object libFloatingPickerMod {
   object SuggestionItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType & Double] = js.native
     
-    /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer with Double = js.native
+    /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer & Double = js.native
     
-    /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header with Double = js.native
+    /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header & Double = js.native
     
-    /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion with Double = js.native
+    /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "SuggestionsControl")
@@ -91,7 +94,6 @@ object libFloatingPickerMod {
     def this(options: SuggestionsStoreOptions[T]) = this()
   }
   
-  @JSImport("office-ui-fabric-react/lib/FloatingPicker", "createItem")
-  @js.native
-  def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = js.native
+  @scala.inline
+  def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("createItem")(name.asInstanceOf[js.Any], isValid.asInstanceOf[js.Any])).asInstanceOf[ISuggestionModel[IPersonaProps]]
 }

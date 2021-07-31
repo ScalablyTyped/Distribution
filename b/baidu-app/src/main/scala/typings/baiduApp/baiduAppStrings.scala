@@ -16,23 +16,28 @@ import typings.baiduApp.swan.networkType
 import typings.baiduApp.swan.scanType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baiduAppStrings {
   
   @js.native
-  sealed trait `2g` extends networkType
+  sealed trait `2g`
+    extends StObject
+       with networkType
   @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
-  sealed trait `3g` extends networkType
+  sealed trait `3g`
+    extends StObject
+       with networkType
   @scala.inline
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
-  sealed trait `4g` extends networkType
+  sealed trait `4g`
+    extends StObject
+       with networkType
   @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
@@ -57,12 +62,16 @@ object baiduAppStrings {
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait `HMAC-SHA256` extends PaymentSignType
+  sealed trait `HMAC-SHA256`
+    extends StObject
+       with PaymentSignType
   @scala.inline
   def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
   
   @js.native
-  sealed trait MD5 extends PaymentSignType
+  sealed trait MD5
+    extends StObject
+       with PaymentSignType
   @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
   
@@ -98,7 +107,8 @@ object baiduAppStrings {
   
   @js.native
   sealed trait album
-    extends ImageSourceType
+    extends StObject
+       with ImageSourceType
        with VideoSourceType
   @scala.inline
   def album: album = "album".asInstanceOf[album]
@@ -110,37 +120,46 @@ object baiduAppStrings {
   
   @js.native
   sealed trait animationend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationend: animationend = "animationend".asInstanceOf[animationend]
   
   @js.native
   sealed trait animationiteration
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
   
   @js.native
   sealed trait animationstart
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
-  sealed trait back extends CameraDevice
+  sealed trait back
+    extends StObject
+       with CameraDevice
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   
   @js.native
-  sealed trait barCode extends scanType
+  sealed trait barCode
+    extends StObject
+       with scanType
   @scala.inline
   def barCode: barCode = "barCode".asInstanceOf[barCode]
   
   @js.native
-  sealed trait bevel extends LineJoinType
+  sealed trait bevel
+    extends StObject
+       with LineJoinType
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
@@ -150,7 +169,9 @@ object baiduAppStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait butt extends LineCapType
+  sealed trait butt
+    extends StObject
+       with LineCapType
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -161,7 +182,8 @@ object baiduAppStrings {
   
   @js.native
   sealed trait camera
-    extends ImageSourceType
+    extends StObject
+       with ImageSourceType
        with VideoSourceType
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
@@ -177,7 +199,9 @@ object baiduAppStrings {
   def child: child = "child".asInstanceOf[child]
   
   @js.native
-  sealed trait compressed extends ImageSizeType
+  sealed trait compressed
+    extends StObject
+       with ImageSizeType
   @scala.inline
   def compressed: compressed = "compressed".asInstanceOf[compressed]
   
@@ -197,22 +221,30 @@ object baiduAppStrings {
   def docx: docx = "docx".asInstanceOf[docx]
   
   @js.native
-  sealed trait ease extends TimingFunction
+  sealed trait ease
+    extends StObject
+       with TimingFunction
   @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
   
   @js.native
-  sealed trait `ease-in` extends TimingFunction
+  sealed trait `ease-in`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
   
   @js.native
-  sealed trait `ease-in-out` extends TimingFunction
+  sealed trait `ease-in-out`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
   
   @js.native
-  sealed trait `ease-out` extends TimingFunction
+  sealed trait `ease-out`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   
@@ -232,12 +264,16 @@ object baiduAppStrings {
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
   @js.native
-  sealed trait form extends EventType
+  sealed trait form
+    extends StObject
+       with EventType
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait front extends CameraDevice
+  sealed trait front
+    extends StObject
+       with CameraDevice
   @scala.inline
   def front: front = "front".asInstanceOf[front]
   
@@ -252,7 +288,9 @@ object baiduAppStrings {
   def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
   
   @js.native
-  sealed trait input extends EventType
+  sealed trait input
+    extends StObject
+       with EventType
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
@@ -262,7 +300,9 @@ object baiduAppStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait linear extends TimingFunction
+  sealed trait linear
+    extends StObject
+       with TimingFunction
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -272,7 +312,9 @@ object baiduAppStrings {
   def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait longpress extends EventType
+  sealed trait longpress
+    extends StObject
+       with EventType
   @scala.inline
   def longpress: longpress = "longpress".asInstanceOf[longpress]
   
@@ -287,12 +329,16 @@ object baiduAppStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait miter extends LineJoinType
+  sealed trait miter
+    extends StObject
+       with LineJoinType
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait none extends networkType
+  sealed trait none
+    extends StObject
+       with networkType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -307,7 +353,9 @@ object baiduAppStrings {
   def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait original extends ImageSizeType
+  sealed trait original
+    extends StObject
+       with ImageSizeType
   @scala.inline
   def original: original = "original".asInstanceOf[original]
   
@@ -332,7 +380,9 @@ object baiduAppStrings {
   def pptx: pptx = "pptx".asInstanceOf[pptx]
   
   @js.native
-  sealed trait qrCode extends scanType
+  sealed trait qrCode
+    extends StObject
+       with scanType
   @scala.inline
   def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
   
@@ -343,68 +393,93 @@ object baiduAppStrings {
   
   @js.native
   sealed trait round
-    extends LineCapType
+    extends StObject
+       with LineCapType
        with LineJoinType
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait scopeDotaddress extends Scope
+  sealed trait scopeDotaddress
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotaddress: scopeDotaddress = "scope.address".asInstanceOf[scopeDotaddress]
   
   @js.native
-  sealed trait scopeDotinvoiceTitle extends Scope
+  sealed trait scopeDotinvoiceTitle
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotinvoiceTitle: scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDotinvoiceTitle]
   
   @js.native
-  sealed trait scopeDotrecord extends Scope
+  sealed trait scopeDotrecord
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotrecord: scopeDotrecord = "scope.record".asInstanceOf[scopeDotrecord]
   
   @js.native
-  sealed trait scopeDotuserInfo extends Scope
+  sealed trait scopeDotuserInfo
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotuserInfo: scopeDotuserInfo = "scope.userInfo".asInstanceOf[scopeDotuserInfo]
   
   @js.native
-  sealed trait scopeDotuserLocation extends Scope
+  sealed trait scopeDotuserLocation
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotuserLocation: scopeDotuserLocation = "scope.userLocation".asInstanceOf[scopeDotuserLocation]
   
   @js.native
-  sealed trait scopeDotwerun extends Scope
+  sealed trait scopeDotwerun
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotwerun: scopeDotwerun = "scope.werun".asInstanceOf[scopeDotwerun]
   
   @js.native
-  sealed trait scopeDotwritePhotosAlbum extends Scope
+  sealed trait scopeDotwritePhotosAlbum
+    extends StObject
+       with Scope
   @scala.inline
   def scopeDotwritePhotosAlbum: scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDotwritePhotosAlbum]
   
   @js.native
-  sealed trait scroll extends EventType
+  sealed trait scroll
+    extends StObject
+       with EventType
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait square extends LineCapType
+  sealed trait square
+    extends StObject
+       with LineCapType
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait `step-end` extends TimingFunction
+  sealed trait `step-end`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
   
   @js.native
-  sealed trait `step-start` extends TimingFunction
+  sealed trait `step-start`
+    extends StObject
+       with TimingFunction
   @scala.inline
   def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
   
   @js.native
-  sealed trait submit extends EventType
+  sealed trait submit
+    extends StObject
+       with EventType
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   
@@ -415,7 +490,8 @@ object baiduAppStrings {
   
   @js.native
   sealed trait tap
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
@@ -427,42 +503,48 @@ object baiduAppStrings {
   
   @js.native
   sealed trait touchcancel
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   
   @js.native
   sealed trait touchend
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
   sealed trait touchforcechange
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchforcechange: touchforcechange = "touchforcechange".asInstanceOf[touchforcechange]
   
   @js.native
   sealed trait touchmove
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
   sealed trait touchstart
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
   @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
   sealed trait transitionend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
   @scala.inline
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
@@ -473,7 +555,9 @@ object baiduAppStrings {
   def ui: ui = "ui".asInstanceOf[ui]
   
   @js.native
-  sealed trait unknown extends networkType
+  sealed trait unknown
+    extends StObject
+       with networkType
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
@@ -483,7 +567,9 @@ object baiduAppStrings {
   def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
   
   @js.native
-  sealed trait wifi extends networkType
+  sealed trait wifi
+    extends StObject
+       with networkType
   @scala.inline
   def wifi: wifi = "wifi".asInstanceOf[wifi]
   

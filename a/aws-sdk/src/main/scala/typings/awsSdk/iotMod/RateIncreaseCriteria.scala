@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateIncreaseCriteria extends StObject {
   
   /**
     * The threshold for number of notified things that will initiate the increase in rate of rollout.
     */
-  var numberOfNotifiedThings: js.UndefOr[NumberOfThings] = js.native
+  var numberOfNotifiedThings: js.UndefOr[NumberOfThings] = js.undefined
   
   /**
     * The threshold for number of succeeded things that will initiate the increase in rate of rollout.
     */
-  var numberOfSucceededThings: js.UndefOr[NumberOfThings] = js.native
+  var numberOfSucceededThings: js.UndefOr[NumberOfThings] = js.undefined
 }
 object RateIncreaseCriteria {
   

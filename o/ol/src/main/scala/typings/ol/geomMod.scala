@@ -5,7 +5,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geomMod {
@@ -15,8 +14,8 @@ object geomMod {
   class Circle protected () extends default {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
-    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
+    def this(center: Coordinate, opt_radius: Unit, opt_layout: GeometryLayout) = this()
   }
   
   @JSImport("ol/geom", "Geometry")
@@ -58,7 +57,7 @@ object geomMod {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
-      opt_layout: js.UndefOr[scala.Nothing],
+      opt_layout: Unit,
       opt_ends: js.Array[Double]
     ) = this()
     def this(
@@ -87,7 +86,7 @@ object geomMod {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
-      opt_layout: js.UndefOr[scala.Nothing],
+      opt_layout: Unit,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
     def this(
@@ -111,11 +110,7 @@ object geomMod {
     extends typings.ol.polygonMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
-    def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double],
-      opt_layout: js.UndefOr[scala.Nothing],
-      opt_ends: js.Array[Double]
-    ) = this()
+    def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: Unit, opt_ends: js.Array[Double]) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double],
       opt_layout: GeometryLayout,

@@ -2,13 +2,11 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of columns within a table which share a common configuration.
   */
-@js.native
 trait SchemaColumnFamily extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaColumnFamily extends StObject {
     * the background, and so it&#39;s possible for reads to return a cell even
     * if it matches the active GC expression for its family.
     */
-  var gcRule: js.UndefOr[SchemaGcRule] = js.native
+  var gcRule: js.UndefOr[SchemaGcRule] = js.undefined
 }
 object SchemaColumnFamily {
   

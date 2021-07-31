@@ -5,7 +5,6 @@ import typings.sentryTypes.optionsMod.Options
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendMod {
@@ -17,34 +16,35 @@ object backendMod {
     def this(options: BrowserOptions) = this()
   }
   
-  @js.native
-  trait BrowserOptions extends Options {
+  trait BrowserOptions
+    extends StObject
+       with Options {
     
     /**
       * A pattern for error URLs which should exclusively be sent to Sentry.
       * This is the opposite of {@link Options.denyUrls}.
       * By default, all errors will be sent.
       */
-    var allowUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var allowUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * A flag enabling Sessions Tracking feature.
       * By default Sessions Tracking is disabled.
       */
-    var autoSessionTracking: js.UndefOr[Boolean] = js.native
+    var autoSessionTracking: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated use {@link Options.denyUrls} instead. */
-    var blacklistUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var blacklistUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * A pattern for error URLs which should not be sent to Sentry.
       * To allow certain errors instead, use {@link Options.allowUrls}.
       * By default, all errors will be sent.
       */
-    var denyUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var denyUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /** @deprecated use {@link Options.allowUrls} instead. */
-    var whitelistUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var whitelistUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   }
   object BrowserOptions {
     

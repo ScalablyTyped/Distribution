@@ -3,30 +3,28 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
   /**
     * Absolute path to deploy button image or `null` to remove image
     */
-  var icon: String = js.native
+  var icon: String
   
   /**
     * Deploy button label
     */
-  var label: String = js.native
+  var label: String
   
-  var `type`: simple = js.native
+  var `type`: simple
 }
 object Label {
   
   @scala.inline
-  def apply(icon: String, label: String, `type`: simple): Label = {
+  def apply(icon: String, label: String): Label = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("simple")
     __obj.asInstanceOf[Label]
   }
   

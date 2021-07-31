@@ -2,21 +2,19 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTag extends StObject {
   
   /**
     * Specifies the ARN of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of tags.
     */
-  var TagsList: js.UndefOr[typings.awsSdk.cloudtrailMod.TagsList] = js.native
+  var TagsList: js.UndefOr[typings.awsSdk.cloudtrailMod.TagsList] = js.undefined
 }
 object ResourceTag {
   

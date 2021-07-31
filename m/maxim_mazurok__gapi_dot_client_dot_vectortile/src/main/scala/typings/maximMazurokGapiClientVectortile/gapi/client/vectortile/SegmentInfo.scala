@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentInfo extends StObject {
   
   /** Metadata for features with the ROAD FeatureType. */
-  var roadInfo: js.UndefOr[RoadInfo] = js.native
+  var roadInfo: js.UndefOr[RoadInfo] = js.undefined
 }
 object SegmentInfo {
   

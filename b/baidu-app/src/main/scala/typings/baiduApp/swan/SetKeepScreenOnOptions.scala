@@ -3,18 +3,17 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetKeepScreenOnOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 是否保持屏幕常亮 */
-  var keepScreenOn: Boolean = js.native
+  var keepScreenOn: Boolean
   
   @JSName("success")
-  var success_SetKeepScreenOnOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.native
+  var success_SetKeepScreenOnOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
 }
 object SetKeepScreenOnOptions {
   

@@ -2,7 +2,6 @@ package typings.ukCoWorkingedgePhonegapPluginLaunchnavigator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,11 @@ object mod {
   @scala.inline
   def launchnavigator_=(x: LaunchNavigator_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchnavigator")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AppSelection extends StObject {
     
-    var userChoice: UserChoice = js.native
+    var userChoice: UserChoice
     
-    var userPrompted: UserPrompted = js.native
+    var userPrompted: UserPrompted
   }
   object AppSelection {
     
@@ -43,44 +41,43 @@ object mod {
     }
   }
   
-  @js.native
   trait AppSelectionOptions extends StObject {
     
     /**
       * (Android only) native picker theme. Specify using `actionsheet.ANDROID_THEMES` constants.
       * Default `actionsheet.ANDROID_THEMES.THEME_HOLO_LIGHT`
       */
-    var androidTheme: js.UndefOr[Double] = js.native
+    var androidTheme: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback to invoke when the user selects an app in the native picker.
       * A single string argument is passed which is the app what was selected defined as a `launchnavigator.APP` constant.
       */
-    var callback: js.UndefOr[js.Function1[/* app */ String, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* app */ String, Unit]] = js.undefined
     
     /**
       * text to display for the cancel button in the native picker which enables user to select which navigation app to launch.
       * Defaults to "Cancel" if not specified.
       */
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * text to display in the native picker which enables user to select which navigation app to launch.
       * Defaults to "Select app for navigation" if not specified.
       */
-    var dialogHeaderText: js.UndefOr[String] = js.native
+    var dialogHeaderText: js.UndefOr[String] = js.undefined
     
     /**
       * List of apps, defined as `launchnavigator.APP` constants, which should be displayed in the picker if the app is available.
       * This can be used to restrict which apps are displayed, even if they are installed.
       * By default, all available apps will be displayed.
       */
-    var list: js.UndefOr[js.Array[String]] = js.native
+    var list: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * options related to whether to remember user choice of app for next time, instead of asking again for user choice.
       */
-    var rememberChoice: js.UndefOr[RememberChoiceOptions] = js.native
+    var rememberChoice: js.UndefOr[RememberChoiceOptions] = js.undefined
   }
   object AppSelectionOptions {
     
@@ -134,7 +131,6 @@ object mod {
     }
   }
   
-  @js.native
   trait LaunchNavigatorOptions extends StObject {
     
     /**
@@ -143,52 +139,52 @@ object mod {
       * e.g. `launchnavigator.APP.GOOGLE_MAPS`.
       * If not specified, defaults to User Selection.
       */
-    var app: js.UndefOr[String] = js.native
+    var app: js.UndefOr[String] = js.undefined
     
     /**
       * options related to the default native actionsheet picker which enables user to select which navigation app to launch if `app` is not specified.
       */
-    var appSelection: js.UndefOr[AppSelectionOptions] = js.native
+    var appSelection: js.UndefOr[AppSelectionOptions] = js.undefined
     
     /**
       * nickname to display in app for destination. e.g. "Bob's House".
       */
-    var destinationName: js.UndefOr[String] = js.native
+    var destinationName: js.UndefOr[String] = js.undefined
     
     /**
       * (Android and iOS only) If true, and input location type(s) doesn't match those required by the app, use geocoding to obtain the address/coords as required. Defaults to true.
       */
-    var enableGeocoding: js.UndefOr[Boolean] = js.native
+    var enableGeocoding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (Windows only) If false, the plugin will NOT attempt to use the geolocation plugin to determine the current device position when the start location parameter is omitted. Defaults to true.
       */
-    var enableGeolocation: js.UndefOr[Boolean] = js.native
+    var enableGeolocation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback to invoke if an error is encountered while launching the app.
       * A single string argument containing the error message will be passed in.
       */
-    var errorCallback: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
+    var errorCallback: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
     
     /**
       * a key/value map of extra app-specific parameters. For example, to tell Google Maps on Android to display Satellite view in "maps" launch mode: `{"t": "k"}`
       */
-    var extras: js.UndefOr[js.Any] = js.native
+    var extras: js.UndefOr[js.Any] = js.undefined
     
     /**
       * (iOS only) method to use to open Apple Maps app.
       * `launchnavigator.LAUNCH_MODE.URI_SCHEME` or `launchnavigator.LAUNCH_MODE.MAPKIT`
       * Defaults to `launchnavigator.LAUNCH_MODE.URI_SCHEME` if not specified.
       */
-    var launchModeAppleMaps: js.UndefOr[String] = js.native
+    var launchModeAppleMaps: js.UndefOr[String] = js.undefined
     
     /**
       * (Android only) mode in which to open Google Maps app.
       * `launchnavigator.LAUNCH_MODE.MAPS` or `launchnavigator.LAUNCH_MODE.TURN_BY_TURN`
       * Defaults to `launchnavigator.LAUNCH_MODE.MAPS` if not specified.
       */
-    var launchModeGoogleMaps: js.UndefOr[String] = js.native
+    var launchModeGoogleMaps: js.UndefOr[String] = js.undefined
     
     /**
       * Start point of the navigation.
@@ -198,22 +194,22 @@ object mod {
       *  - a {string} containing a latitude/longitude coordinate. e.g. "50.1. -4.0"
       *  - an {array}, where the first element is the latitude and the second element is a longitude, as decimal numbers. e.g. [50.1, -4.0]
       */
-    var start: js.UndefOr[String | js.Array[Double]] = js.native
+    var start: js.UndefOr[String | js.Array[Double]] = js.undefined
     
     /**
       * nickname to display in app for start . e.g. "My House".
       */
-    var startName: js.UndefOr[String] = js.native
+    var startName: js.UndefOr[String] = js.undefined
     
     /**
       * A callback to invoke when the navigation app is successfully launched.
       */
-    var successCallback: js.UndefOr[js.Function] = js.native
+    var successCallback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Transportation mode for navigation: "driving", "walking" or "transit". Defaults to "driving" if not specified.
       */
-    var transportMode: js.UndefOr[String] = js.native
+    var transportMode: js.UndefOr[String] = js.undefined
   }
   object LaunchNavigatorOptions {
     
@@ -390,9 +386,9 @@ object mod {
     ): Unit = js.native
     
     def logEvent(name: String): Unit = js.native
-    def logEvent(name: String, params: js.UndefOr[scala.Nothing], valueToSum: Double): Unit = js.native
     def logEvent(name: String, params: js.Any): Unit = js.native
     def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
+    def logEvent(name: String, params: Unit, valueToSum: Double): Unit = js.native
     
     /**
       * Launches navigator app
@@ -461,39 +457,38 @@ object mod {
     def userSelect(destination: js.Array[Double], options: LaunchNavigatorOptions): Unit = js.native
   }
   
-  @js.native
   trait PromptsOptions extends StObject {
     
     /**
       * text to display in the native prompt body asking user whether to remember their choice.
       * Defaults to "Use the same app for navigating next time?" if not specified.
       */
-    var bodyText: js.UndefOr[String] = js.native
+    var bodyText: js.UndefOr[String] = js.undefined
     
     /**
       * a function to pass the user's decision whether to remember their choice of app.
       * This will be passed a single boolean value indicating the user's decision.
       * @param rememberChoice
       */
-    var callback: js.UndefOr[js.Function1[/* rememberChoice */ Boolean, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* rememberChoice */ Boolean, Unit]] = js.undefined
     
     /**
       * text to display in the native prompt header asking user whether to remember their choice.
       * Defaults to "Remember your choice?" if not specified.
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /**
       * text to display for the No button.
       * Defaults to "No" if not specified.
       */
-    var noButtonText: js.UndefOr[String] = js.native
+    var noButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * text to display for the Yes button.
       * Defaults to "Yes" if not specified.
       */
-    var yesButtonText: js.UndefOr[String] = js.native
+    var yesButtonText: js.UndefOr[String] = js.undefined
   }
   object PromptsOptions {
     
@@ -538,7 +533,6 @@ object mod {
     }
   }
   
-  @js.native
   trait RememberChoiceOptions extends StObject {
     
     /**
@@ -550,12 +544,12 @@ object mod {
       * `false` - Do not remember user choice.
       * `true` - Remember user choice.
       */
-    var enabled: js.UndefOr[Boolean | String] = js.native
+    var enabled: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * options related to the default dialog prompt used to ask the user whether to remember their choice of app.
       */
-    var prompt: js.UndefOr[PromptsOptions] = js.native
+    var prompt: js.UndefOr[PromptsOptions] = js.undefined
     
     /**
       * a function which asks the user whether to remember their choice of app.
@@ -565,7 +559,7 @@ object mod {
       */
     var promptFn: js.UndefOr[
         js.Function1[/* callback */ js.Function1[/* rememberChoice */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object RememberChoiceOptions {
     
@@ -598,33 +592,32 @@ object mod {
     }
   }
   
-  @js.native
   trait UserChoice extends StObject {
     
     /**
       * Clears the current user choice of preferred navigator app.
       * @param callback - function to call once operation is complete.
       */
-    def clear(callback: js.Function0[Unit]): Unit = js.native
+    def clear(callback: js.Function0[Unit]): Unit
     
     /**
       * Indicates whether a user choice exists for a preferred navigator app.
       * @param callback - function to pass result to: will receive a boolean argument.
       */
-    def exists(callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
+    def exists(callback: js.Function1[/* exists */ Boolean, Unit]): Unit
     
     /**
       * Returns current user choice of preferred navigator app.
       * @param callback - function to pass result to: will receive a string argument indicating the app, which is a constant in `launchnavigator.APP`.
       */
-    def get(callback: js.Function1[/* app */ String, Unit]): Unit = js.native
+    def get(callback: js.Function1[/* app */ String, Unit]): Unit
     
     /**
       * Sets the current user choice of preferred navigator app.
       * @param app - app to set as preferred choice as a constant in `launchnavigator.APP`.
       * @param callback - function to call once operation is complete.
       */
-    def set(app: String, callback: js.Function0[Unit]): Unit = js.native
+    def set(app: String, callback: js.Function0[Unit]): Unit
   }
   object UserChoice {
     
@@ -656,26 +649,25 @@ object mod {
     }
   }
   
-  @js.native
   trait UserPrompted extends StObject {
     
     /**
       * Clears flag which indicates if user has already been prompted whether to remember their choice a preferred navigator app.
       * @param callback - function to call once operation is complete.
       */
-    def clear(callback: js.Function0[Unit]): Unit = js.native
+    def clear(callback: js.Function0[Unit]): Unit
     
     /**
       * Indicates whether user has already been prompted whether to remember their choice a preferred navigator app.
       * @param callback - function to pass result to: will receive a boolean argument.
       */
-    def get(callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
+    def get(callback: js.Function1[/* exists */ Boolean, Unit]): Unit
     
     /**
       * Sets flag indicating user has already been prompted whether to remember their choice a preferred navigator app.
       * @param callback - function to call once operation is complete.
       */
-    def set(callback: js.Function0[Unit]): Unit = js.native
+    def set(callback: js.Function0[Unit]): Unit
   }
   object UserPrompted {
     

@@ -3,14 +3,14 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerGroupCopy extends ResponseEntry {
+trait ServerGroupCopy
+  extends StObject
+     with ResponseEntry {
   
   /** only available when a new group gets created */
-  var sgid: js.UndefOr[String] = js.native
+  var sgid: js.UndefOr[String] = js.undefined
 }
 object ServerGroupCopy {
   

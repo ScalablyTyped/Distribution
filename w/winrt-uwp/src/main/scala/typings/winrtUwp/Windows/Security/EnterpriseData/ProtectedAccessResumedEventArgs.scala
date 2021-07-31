@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when content protection is resumed. */
-@js.native
 trait ProtectedAccessResumedEventArgs extends StObject {
   
   /** Contains the enterprise identities for which content protection is being resumed. */
-  var identities: IVectorView[String] = js.native
+  var identities: IVectorView[String]
 }
 object ProtectedAccessResumedEventArgs {
   

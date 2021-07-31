@@ -2,14 +2,12 @@ package typings.knockoutViewmodel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Extend ko global
-@js.native
 trait KnockoutStatic extends StObject {
   
-  var viewmodel: KnockoutViewModelStatic = js.native
+  var viewmodel: KnockoutViewModelStatic
 }
 object KnockoutStatic {
   

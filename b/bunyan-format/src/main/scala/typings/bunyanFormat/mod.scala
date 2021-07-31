@@ -1,7 +1,5 @@
 package typings.bunyanFormat
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import typings.bunyanFormat.bunyanFormatStrings.bunyan
@@ -13,7 +11,6 @@ import typings.bunyanFormat.mod.BunyanFormatWritable.Options
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,12 +28,19 @@ object mod extends Shortcut {
   val ^ : BunyanFormatWritable = js.native
   
   /** Creates a writable stream that formats bunyan records written to it. */
-  @js.native
-  trait BunyanFormatWritable
-    extends Writable
-       with // tslint:disable-next-line no-misused-new
-  Instantiable1[/* options */ Options, BunyanFormatWritable]
-       with Instantiable2[/* options */ Options, /* output */ Writable, BunyanFormatWritable] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
+  trait BunyanFormatWritable extends Writable {
     
     def apply(options: Options): BunyanFormatWritable = js.native
     def apply(options: Options, output: Writable): BunyanFormatWritable = js.native
@@ -45,18 +49,17 @@ object mod extends Shortcut {
     
     type ColorFromLevel = NumberDictionary[String]
     
-    @js.native
     trait Options extends StObject {
       
-      var color: js.UndefOr[Boolean] = js.native
+      var color: js.UndefOr[Boolean] = js.undefined
       
-      var colorFromLevel: js.UndefOr[ColorFromLevel] = js.native
+      var colorFromLevel: js.UndefOr[ColorFromLevel] = js.undefined
       
-      var jsonIndent: js.UndefOr[String | Double] = js.native
+      var jsonIndent: js.UndefOr[String | Double] = js.undefined
       
-      var levelInString: js.UndefOr[Boolean] = js.native
+      var levelInString: js.UndefOr[Boolean] = js.undefined
       
-      var outputMode: js.UndefOr[short | long | simple | json | bunyan] = js.native
+      var outputMode: js.UndefOr[short | long | simple | json | bunyan] = js.undefined
     }
     object Options {
       

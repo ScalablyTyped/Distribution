@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientCallbackErrorEventArgs")
 @js.native
 class ASPxClientCallbackErrorEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientCallbackErrorEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientCallbackErrorEventArgs {
   /**
     * Initializes a new ASPxClientCallbackErrorEventArgs object with the specified settings.
     * @param message A string value that specifies the error message.
     */
   def this(message: String) = this()
+  
+  /**
+    * Gets or sets whether the event is handled and the default error handling actions are not required.
+    */
+  /* CompleteClass */
+  var handled: Boolean = js.native
+  
+  /**
+    * Gets the error message that describes the server error that occurred.
+    */
+  /* CompleteClass */
+  var message: String = js.native
 }

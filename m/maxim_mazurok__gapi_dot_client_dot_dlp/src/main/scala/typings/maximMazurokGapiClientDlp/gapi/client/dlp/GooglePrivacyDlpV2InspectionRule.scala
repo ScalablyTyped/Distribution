@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2InspectionRule extends StObject {
   
   /** Exclusion rule. */
-  var exclusionRule: js.UndefOr[GooglePrivacyDlpV2ExclusionRule] = js.native
+  var exclusionRule: js.UndefOr[GooglePrivacyDlpV2ExclusionRule] = js.undefined
   
   /** Hotword-based detection rule. */
-  var hotwordRule: js.UndefOr[GooglePrivacyDlpV2HotwordRule] = js.native
+  var hotwordRule: js.UndefOr[GooglePrivacyDlpV2HotwordRule] = js.undefined
 }
 object GooglePrivacyDlpV2InspectionRule {
   

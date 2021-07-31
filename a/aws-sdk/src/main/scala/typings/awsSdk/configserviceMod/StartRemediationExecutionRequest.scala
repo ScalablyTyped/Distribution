@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartRemediationExecutionRequest extends StObject {
   
   /**
     * The list of names of AWS Config rules that you want to run remediation execution for.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * A list of resource keys to be processed with the current request. Each element in the list consists of the resource type and resource ID. 
     */
-  var ResourceKeys: typings.awsSdk.configserviceMod.ResourceKeys = js.native
+  var ResourceKeys: typings.awsSdk.configserviceMod.ResourceKeys
 }
 object StartRemediationExecutionRequest {
   

@@ -2,23 +2,23 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SSEConnect extends SSECommand {
+trait SSEConnect
+  extends StObject
+     with SSECommand {
   
-  var heartbeatIntervalMs: Double = js.native
+  var heartbeatIntervalMs: Double
   
-  var heartbeatUrl: String = js.native
+  var heartbeatUrl: String
   
-  var id: String = js.native
+  var id: String
   
-  var idleTimeoutMs: Double = js.native
+  var idleTimeoutMs: Double
   
-  var unRegisterUrl: String = js.native
+  var unRegisterUrl: String
   
-  var updateSubscriberUrl: String = js.native
+  var updateSubscriberUrl: String
 }
 object SSEConnect {
   

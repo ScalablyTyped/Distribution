@@ -2,20 +2,18 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON request template for firing commands on Mobile Device in Directory
   * Devices API.
   */
-@js.native
 trait SchemaMobileDeviceAction extends StObject {
   
   /**
     * Action to be taken on the Mobile Device
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
 }
 object SchemaMobileDeviceAction {
   

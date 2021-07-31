@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.stopped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information regarding availability of and updates to Mobile Broadband Accounts. */
 @js.native
 trait MobileBroadbandAccountWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_accountadded(
     `type`: accountadded,
@@ -34,41 +33,41 @@ trait MobileBroadbandAccountWatcher extends StObject {
     listener: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, _]): Unit = js.native
+  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, _]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
   
   /** Occurs when a Mobile Broadband Account is added to the client. */
-  def onaccountadded(ev: MobileBroadbandAccountEventArgs with WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onaccountadded(ev: MobileBroadbandAccountEventArgs & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when a Mobile Broadband Account is added to the client. */
   @JSName("onaccountadded")
   var onaccountadded_Original: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountEventArgs] = js.native
   
   /** Occurs when a Mobile Broadband Account is removed from the client. */
-  def onaccountremoved(ev: MobileBroadbandAccountEventArgs with WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onaccountremoved(ev: MobileBroadbandAccountEventArgs & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when a Mobile Broadband Account is removed from the client. */
   @JSName("onaccountremoved")
   var onaccountremoved_Original: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountEventArgs] = js.native
   
   /** Occurs when a Mobile Broadband Account is updated on the client. */
-  def onaccountupdated(ev: MobileBroadbandAccountUpdatedEventArgs with WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onaccountupdated(ev: MobileBroadbandAccountUpdatedEventArgs & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when a Mobile Broadband Account is updated on the client. */
   @JSName("onaccountupdated")
   var onaccountupdated_Original: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs] = js.native
   
   /** Occurs when the account watcher has finished enumerating accounts for the client. */
-  def onenumerationcompleted(ev: js.Any with WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: js.Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when the account watcher has finished enumerating accounts for the client. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[MobileBroadbandAccountWatcher, _] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any] = js.native
   
   /** Occurs when the MobileBroadbandAccountWatcher has stopped. */
-  def onstopped(ev: js.Any with WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onstopped(ev: js.Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when the MobileBroadbandAccountWatcher has stopped. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[MobileBroadbandAccountWatcher, _] = js.native
+  var onstopped_Original: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_accountadded(
     `type`: accountadded,
@@ -85,9 +84,9 @@ trait MobileBroadbandAccountWatcher extends StObject {
     listener: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, _]): Unit = js.native
+  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, _]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
   
   /** Starts the account watcher. */
   def start(): Unit = js.native

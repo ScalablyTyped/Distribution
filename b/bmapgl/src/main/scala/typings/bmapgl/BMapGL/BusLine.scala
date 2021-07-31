@@ -2,27 +2,25 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusLine extends StObject {
   
-  var company: String = js.native
+  var company: String
   
-  var endTime: String = js.native
+  var endTime: String
   
-  def getBusStation(i: Double): BusStation = js.native
+  def getBusStation(i: Double): BusStation
   
-  def getNumBusStations(): String = js.native
+  def getNumBusStations(): String
   
-  def getPath(): js.Array[Point] = js.native
+  def getPath(): js.Array[Point]
   
-  def getPolyline(): Polyline = js.native
+  def getPolyline(): Polyline
   
-  var name: String = js.native
+  var name: String
   
-  var startTime: String = js.native
+  var startTime: String
 }
 object BusLine {
   

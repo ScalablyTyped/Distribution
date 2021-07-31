@@ -2,25 +2,23 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CORSRule extends StObject {
   
   // configure for Access-Control-Allow-Methods header
-  var allowedHeader: js.UndefOr[String | js.Array[String]] = js.native
+  var allowedHeader: js.UndefOr[String | js.Array[String]] = js.undefined
   
   // configure for Access-Control-Allow-Origin header
-  var allowedMethod: String | js.Array[String] = js.native
+  var allowedMethod: String | js.Array[String]
   
-  var allowedOrigin: String | js.Array[String] = js.native
+  var allowedOrigin: String | js.Array[String]
   
   // configure for Access-Control-Allow-Headers header
-  var exposeHeader: js.UndefOr[String | js.Array[String]] = js.native
+  var exposeHeader: js.UndefOr[String | js.Array[String]] = js.undefined
   
   // configure for Access-Control-Expose-Headers header
-  var maxAgeSeconds: js.UndefOr[String | js.Array[String]] = js.native
+  var maxAgeSeconds: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object CORSRule {
   

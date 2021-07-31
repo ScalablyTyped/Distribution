@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPair extends StObject {
   
   /**
     * The private key.
     */
-  var PrivateKey: js.UndefOr[typings.awsSdk.iotMod.PrivateKey] = js.native
+  var PrivateKey: js.UndefOr[typings.awsSdk.iotMod.PrivateKey] = js.undefined
   
   /**
     * The public key.
     */
-  var PublicKey: js.UndefOr[typings.awsSdk.iotMod.PublicKey] = js.native
+  var PublicKey: js.UndefOr[typings.awsSdk.iotMod.PublicKey] = js.undefined
 }
 object KeyPair {
   

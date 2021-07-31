@@ -4,23 +4,21 @@ import typings.meteor.Mongo.DispatchTransform
 import typings.meteor.Mongo.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Insert[Fn /* <: Transform[T] */, T, U] extends StObject {
   
-  var fetch: js.UndefOr[js.Array[String]] = js.native
+  var fetch: js.UndefOr[js.Array[String]] = js.undefined
   
   var insert: js.UndefOr[
     js.Function2[/* userId */ String, /* doc */ DispatchTransform[Fn, T, U], Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var remove: js.UndefOr[
     js.Function2[/* userId */ String, /* doc */ DispatchTransform[Fn, T, U], Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var transform: js.UndefOr[Fn] = js.native
+  var transform: js.UndefOr[Fn] = js.undefined
   
   var update: js.UndefOr[
     js.Function4[
@@ -30,7 +28,7 @@ trait Insert[Fn /* <: Transform[T] */, T, U] extends StObject {
       /* modifier */ js.Any, 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Insert {
   
@@ -41,7 +39,7 @@ object Insert {
   }
   
   @scala.inline
-  implicit class InsertMutableBuilder[Self <: Insert[_, _, _], Fn /* <: Transform[T] */, T, U] (val x: Self with (Insert[Fn, T, U])) extends AnyVal {
+  implicit class InsertMutableBuilder[Self <: Insert[?, ?, ?], Fn /* <: Transform[T] */, T, U] (val x: Self & (Insert[Fn, T, U])) extends AnyVal {
     
     @scala.inline
     def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])

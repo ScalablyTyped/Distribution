@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitPaneMod {
   
   @JSImport("@ionic/core/dist/types/components/split-pane/split-pane", "SplitPane")
   @js.native
-  class SplitPane () extends ComponentInterface {
+  class SplitPane ()
+    extends StObject
+       with ComponentInterface {
     
     @JSName("connectedCallback")
     def connectedCallback_MSplitPane(): Unit = js.native

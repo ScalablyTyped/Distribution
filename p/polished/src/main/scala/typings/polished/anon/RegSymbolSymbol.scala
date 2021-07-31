@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.sqrt
 import typings.polished.polishedStrings.sqrtBackslashb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegSymbolSymbol extends StObject {
   
-  var func: PrecedenceRightToLeftSymbol = js.native
+  var func: PrecedenceRightToLeftSymbol
   
-  var regSymbol: sqrtBackslashb = js.native
+  var regSymbol: sqrtBackslashb
   
-  var symbol: sqrt = js.native
+  var symbol: sqrt
 }
 object RegSymbolSymbol {
   
   @scala.inline
-  def apply(func: PrecedenceRightToLeftSymbol, regSymbol: sqrtBackslashb, symbol: sqrt): RegSymbolSymbol = {
-    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(func: PrecedenceRightToLeftSymbol): RegSymbolSymbol = {
+    val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "sqrt\\b", symbol = "sqrt")
     __obj.asInstanceOf[RegSymbolSymbol]
   }
   

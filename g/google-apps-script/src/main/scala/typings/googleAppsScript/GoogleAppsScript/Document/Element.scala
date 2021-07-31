@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,68 +57,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * UnsupportedElementAn element representing a region that is unknown or cannot be affected by a script, such as a
   * page number.
   */
-@js.native
 trait Element extends StObject {
   
-  def asBody(): Body = js.native
+  def asBody(): Body
   
-  def asEquation(): Equation = js.native
+  def asEquation(): Equation
   
-  def asEquationFunction(): EquationFunction = js.native
+  def asEquationFunction(): EquationFunction
   
-  def asEquationFunctionArgumentSeparator(): EquationFunctionArgumentSeparator = js.native
+  def asEquationFunctionArgumentSeparator(): EquationFunctionArgumentSeparator
   
-  def asEquationSymbol(): EquationSymbol = js.native
+  def asEquationSymbol(): EquationSymbol
   
-  def asFooterSection(): FooterSection = js.native
+  def asFooterSection(): FooterSection
   
-  def asFootnote(): Footnote = js.native
+  def asFootnote(): Footnote
   
-  def asFootnoteSection(): FootnoteSection = js.native
+  def asFootnoteSection(): FootnoteSection
   
-  def asHeaderSection(): HeaderSection = js.native
+  def asHeaderSection(): HeaderSection
   
-  def asHorizontalRule(): HorizontalRule = js.native
+  def asHorizontalRule(): HorizontalRule
   
-  def asInlineDrawing(): InlineDrawing = js.native
+  def asInlineDrawing(): InlineDrawing
   
-  def asInlineImage(): InlineImage = js.native
+  def asInlineImage(): InlineImage
   
-  def asListItem(): ListItem = js.native
+  def asListItem(): ListItem
   
-  def asPageBreak(): PageBreak = js.native
+  def asPageBreak(): PageBreak
   
-  def asParagraph(): Paragraph = js.native
+  def asParagraph(): Paragraph
   
-  def asTable(): Table = js.native
+  def asTable(): Table
   
-  def asTableCell(): TableCell = js.native
+  def asTableCell(): TableCell
   
-  def asTableOfContents(): TableOfContents = js.native
+  def asTableOfContents(): TableOfContents
   
-  def asTableRow(): TableRow = js.native
+  def asTableRow(): TableRow
   
-  def asText(): Text = js.native
+  def asText(): Text
   
-  def copy(): Element = js.native
+  def copy(): Element
   
-  def getAttributes(): js.Any = js.native
+  def getAttributes(): js.Any
   
-  def getNextSibling(): Element = js.native
+  def getNextSibling(): Element
   
-  def getParent(): ContainerElement = js.native
+  def getParent(): ContainerElement
   
-  def getPreviousSibling(): Element = js.native
+  def getPreviousSibling(): Element
   
-  def getType(): ElementType = js.native
+  def getType(): ElementType
   
-  def isAtDocumentEnd(): Boolean = js.native
+  def isAtDocumentEnd(): Boolean
   
-  def merge(): Element = js.native
+  def merge(): Element
   
-  def removeFromParent(): Element = js.native
+  def removeFromParent(): Element
   
-  def setAttributes(attributes: js.Any): Element = js.native
+  def setAttributes(attributes: js.Any): Element
 }
 object Element {
   

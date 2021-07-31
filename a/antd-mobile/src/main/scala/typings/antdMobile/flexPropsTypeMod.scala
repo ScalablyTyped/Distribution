@@ -16,15 +16,13 @@ import typings.antdMobile.antdMobileStrings.stretch
 import typings.antdMobile.antdMobileStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexPropsTypeMod {
   
-  @js.native
   trait FlexItemPropsType extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object FlexItemPropsType {
     
@@ -45,18 +43,17 @@ object flexPropsTypeMod {
     }
   }
   
-  @js.native
   trait FlexPropsType extends StObject {
     
-    var align: js.UndefOr[start | center | end | baseline | stretch] = js.native
+    var align: js.UndefOr[start | center | end | baseline | stretch] = js.undefined
     
-    var direction: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.native
+    var direction: js.UndefOr[row | `row-reverse` | column | `column-reverse`] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var justify: js.UndefOr[start | end | center | between | around] = js.native
+    var justify: js.UndefOr[start | end | center | between | around] = js.undefined
     
-    var wrap: js.UndefOr[nowrap | typings.antdMobile.antdMobileStrings.wrap | `wrap-reverse`] = js.native
+    var wrap: js.UndefOr[nowrap | typings.antdMobile.antdMobileStrings.wrap | `wrap-reverse`] = js.undefined
   }
   object FlexPropsType {
     

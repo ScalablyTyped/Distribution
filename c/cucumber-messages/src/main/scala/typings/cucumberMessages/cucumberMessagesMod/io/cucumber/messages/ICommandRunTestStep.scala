@@ -2,27 +2,25 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandRunTestStep. */
-@js.native
 trait ICommandRunTestStep extends StObject {
   
   /** CommandRunTestStep actionId */
-  var actionId: js.UndefOr[String | Null] = js.native
+  var actionId: js.UndefOr[String | Null] = js.undefined
   
   /** CommandRunTestStep pickleStepArgument */
-  var pickleStepArgument: js.UndefOr[IPickleStepArgument | Null] = js.native
+  var pickleStepArgument: js.UndefOr[IPickleStepArgument | Null] = js.undefined
   
   /** CommandRunTestStep stepDefinitionId */
-  var stepDefinitionId: js.UndefOr[String | Null] = js.native
+  var stepDefinitionId: js.UndefOr[String | Null] = js.undefined
   
   /** CommandRunTestStep stepMatchArguments */
-  var stepMatchArguments: js.UndefOr[js.Array[IStepMatchArgument] | Null] = js.native
+  var stepMatchArguments: js.UndefOr[js.Array[IStepMatchArgument] | Null] = js.undefined
   
   /** CommandRunTestStep testCaseId */
-  var testCaseId: js.UndefOr[String | Null] = js.native
+  var testCaseId: js.UndefOr[String | Null] = js.undefined
 }
 object ICommandRunTestStep {
   

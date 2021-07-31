@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasFilters extends StObject {
   
-  var filter: java.lang.String = js.native
+  var filter: java.lang.String
 }
 object CanvasFilters {
   

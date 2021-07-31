@@ -9,10 +9,8 @@ import typings.googleapis.anon.Layers
 import typings.googleapis.anon.TextSnippet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVolume extends StObject {
   
   /**
@@ -20,33 +18,33 @@ trait SchemaVolume extends StObject {
     * volume text. This information can depend on country (books may be public
     * domain in one country but not in another, e.g.).
     */
-  var accessInfo: js.UndefOr[AccessViewStatus] = js.native
+  var accessInfo: js.UndefOr[AccessViewStatus] = js.undefined
   
   /**
     * Opaque identifier for a specific version of a volume resource. (In LITE
     * projection)
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for a volume. (In LITE projection.)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for a volume. (In LITE projection.)
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * What layers exist in this volume and high level information about them.
     */
-  var layerInfo: js.UndefOr[Layers] = js.native
+  var layerInfo: js.UndefOr[Layers] = js.undefined
   
   /**
     * Recommendation related information for this volume.
     */
-  var recommendedInfo: js.UndefOr[Explanation] = js.native
+  var recommendedInfo: js.UndefOr[Explanation] = js.undefined
   
   /**
     * Any information about a volume related to the eBookstore and/or
@@ -54,28 +52,28 @@ trait SchemaVolume extends StObject {
     * request originates from (i.e. books may not be for sale in certain
     * countries).
     */
-  var saleInfo: js.UndefOr[BuyLink] = js.native
+  var saleInfo: js.UndefOr[BuyLink] = js.undefined
   
   /**
     * Search result information related to this volume.
     */
-  var searchInfo: js.UndefOr[TextSnippet] = js.native
+  var searchInfo: js.UndefOr[TextSnippet] = js.undefined
   
   /**
     * URL to this resource. (In LITE projection.)
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * User specific information related to this volume. (e.g. page this user
     * last read or whether they purchased this book)
     */
-  var userInfo: js.UndefOr[AcquiredTime] = js.native
+  var userInfo: js.UndefOr[AcquiredTime] = js.undefined
   
   /**
     * General volume information.
     */
-  var volumeInfo: js.UndefOr[AllowAnonLogging] = js.native
+  var volumeInfo: js.UndefOr[AllowAnonLogging] = js.undefined
 }
 object SchemaVolume {
   

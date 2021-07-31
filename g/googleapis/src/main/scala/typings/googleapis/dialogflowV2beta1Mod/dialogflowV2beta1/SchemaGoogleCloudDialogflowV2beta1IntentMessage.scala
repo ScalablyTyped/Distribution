@@ -3,91 +3,89 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Corresponds to the `Response` field in the Dialogflow console.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessage extends StObject {
   
   /**
     * Displays a basic card for Actions on Google.
     */
-  var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCard] = js.native
+  var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCard] = js.undefined
   
   /**
     * Displays a card.
     */
-  var card: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageCard] = js.native
+  var card: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageCard] = js.undefined
   
   /**
     * Displays a carousel card for Actions on Google.
     */
-  var carouselSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelect] = js.native
+  var carouselSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageCarouselSelect] = js.undefined
   
   /**
     * Displays an image.
     */
-  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageImage] = js.native
+  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageImage] = js.undefined
   
   /**
     * Displays a link out suggestion chip for Actions on Google.
     */
-  var linkOutSuggestion: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion] = js.native
+  var linkOutSuggestion: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion] = js.undefined
   
   /**
     * Displays a list card for Actions on Google.
     */
-  var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect] = js.native
+  var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect] = js.undefined
   
   /**
     * Returns a response containing a custom, platform-specific payload. See
     * the Intent.Message.Platform type for a description of the structure that
     * may be required for your platform.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. The platform that this message is intended for.
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * Displays quick replies.
     */
-  var quickReplies: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies] = js.native
+  var quickReplies: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies] = js.undefined
   
   /**
     * Returns a voice or text-only response for Actions on Google.
     */
-  var simpleResponses: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses] = js.native
+  var simpleResponses: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses] = js.undefined
   
   /**
     * Displays suggestion chips for Actions on Google.
     */
-  var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions] = js.native
+  var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions] = js.undefined
   
   /**
     * Plays audio from a file in Telephony Gateway.
     */
-  var telephonyPlayAudio: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] = js.native
+  var telephonyPlayAudio: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] = js.undefined
   
   /**
     * Synthesizes speech in Telephony Gateway.
     */
-  var telephonySynthesizeSpeech: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech] = js.native
+  var telephonySynthesizeSpeech: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech] = js.undefined
   
   /**
     * Transfers the call in Telephony Gateway.
     */
-  var telephonyTransferCall: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall] = js.native
+  var telephonyTransferCall: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall] = js.undefined
   
   /**
     * Returns a text response.
     */
-  var text: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageText] = js.native
+  var text: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageText] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessage {
   

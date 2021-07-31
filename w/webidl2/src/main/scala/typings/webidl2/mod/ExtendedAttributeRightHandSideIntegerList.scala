@@ -3,22 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`integer-list`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttributeRightHandSideIntegerList extends ExtendedAttributeRightHandSideList {
+trait ExtendedAttributeRightHandSideIntegerList
+  extends StObject
+     with ExtendedAttributeRightHandSideList {
   
-  var `type`: `integer-list` = js.native
+  var `type`: `integer-list`
   
-  var value: js.Array[ExtendedAttributeRightHandSideInteger] = js.native
+  var value: js.Array[ExtendedAttributeRightHandSideInteger]
 }
 object ExtendedAttributeRightHandSideIntegerList {
   
   @scala.inline
-  def apply(`type`: `integer-list`, value: js.Array[ExtendedAttributeRightHandSideInteger]): ExtendedAttributeRightHandSideIntegerList = {
+  def apply(value: js.Array[ExtendedAttributeRightHandSideInteger]): ExtendedAttributeRightHandSideIntegerList = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer-list")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIntegerList]
   }
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderPickupDetails extends StObject {
   
   /** Address of the pickup location where the shipment should be sent. Note that `recipientName` in the address is the name of the business at the pickup location. */
-  var address: js.UndefOr[OrderAddress] = js.native
+  var address: js.UndefOr[OrderAddress] = js.undefined
   
   /** Collectors authorized to pick up shipment from the pickup location. */
-  var collectors: js.UndefOr[js.Array[OrderPickupDetailsCollector]] = js.native
+  var collectors: js.UndefOr[js.Array[OrderPickupDetailsCollector]] = js.undefined
   
   /** ID of the pickup location. */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /** The pickup type of this order. Acceptable values are: - "`merchantStore`" - "`merchantStoreCurbside`" - "`merchantStoreLocker`" - "`thirdPartyPickupPoint`" - "`thirdPartyLocker`" */
-  var pickupType: js.UndefOr[String] = js.native
+  var pickupType: js.UndefOr[String] = js.undefined
 }
 object OrderPickupDetails {
   

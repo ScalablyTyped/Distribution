@@ -3,11 +3,12 @@ package typings.baidumapWebSdk.BMap
 import typings.baidumapWebSdk.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Marker extends Overlay {
+trait Marker
+  extends StObject
+     with Overlay {
   
   def addContextMenu(menu: ContextMenu): Unit = js.native
   

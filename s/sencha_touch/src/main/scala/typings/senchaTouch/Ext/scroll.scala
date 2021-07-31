@@ -2,82 +2,82 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scroll {
   
   type IIndicator = IBase
   
-  @js.native
-  trait IScroller extends IEvented {
+  trait IScroller
+    extends StObject
+       with IEvented {
     
     /** [Config Option] (Number) */
-    var acceleration: js.UndefOr[Double] = js.native
+    var acceleration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[java.lang.String] = js.native
+    var direction: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var directionLock: js.UndefOr[Boolean] = js.native
+    var directionLock: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
     /** [Method] Returns the value of direction
       * @returns String
       */
-    var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of directionLock
       * @returns Boolean
       */
-    var getDirectionLock: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDirectionLock: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of disabled
       * @returns Boolean
       */
-    var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of initialOffset
       * @returns Object/Number
       */
-    var getInitialOffset: js.UndefOr[js.Function0[_]] = js.native
+    var getInitialOffset: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of momentumEasing
       * @returns Object
       */
-    var getMomentumEasing: js.UndefOr[js.Function0[_]] = js.native
+    var getMomentumEasing: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of slotSnapEasing
       * @returns Object
       */
-    var getSlotSnapEasing: js.UndefOr[js.Function0[_]] = js.native
+    var getSlotSnapEasing: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of slotSnapSize
       * @returns Number/Object
       */
-    var getSlotSnapSize: js.UndefOr[js.Function0[_]] = js.native
+    var getSlotSnapSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[_]] = js.native
+    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Object/Number) */
-    var initialOffset: js.UndefOr[js.Any] = js.native
+    var initialOffset: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns true if a specified axis is enabled
       * @param axis String The axis to check (x or y).
       * @returns Boolean true if the axis is enabled.
       */
-    var isAxisEnabled: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var isAxisEnabled: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var momentumEasing: js.UndefOr[js.Any] = js.native
+    var momentumEasing: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Change the scroll offset by the given amount
       * @param x Number The offset to scroll by on the x axis.
@@ -92,7 +92,7 @@ object scroll {
           /* animation */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls to the given location
       * @param x Number The scroll position on the x axis.
@@ -107,67 +107,67 @@ object scroll {
           /* animation */ js.UndefOr[js.Any], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Scrolls to the end of the scrollable view
       * @param animation Object
       * @returns Ext.scroll.Scroller this
       */
-    var scrollToEnd: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.native
+    var scrollToEnd: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
       */
-    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of directionLock
       * @param directionLock Boolean The new value.
       */
-    var setDirectionLock: js.UndefOr[js.Function1[/* directionLock */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDirectionLock: js.UndefOr[js.Function1[/* directionLock */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of disabled
       * @param disabled Boolean The new value.
       */
-    var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of initialOffset
       * @param initialOffset Object/Number The new value.
       */
-    var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.native
+    var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of momentumEasing
       * @param momentumEasing Object The new value.
       */
-    var setMomentumEasing: js.UndefOr[js.Function1[/* momentumEasing */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMomentumEasing: js.UndefOr[js.Function1[/* momentumEasing */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the offset of this scroller
       * @param offset Object The offset to move to.
       * @returns Ext.scroll.Scroller this
       */
-    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[js.Any], this.type]] = js.native
+    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Sets the value of slotSnapEasing
       * @param slotSnapEasing Object The new value.
       */
-    var setSlotSnapEasing: js.UndefOr[js.Function1[/* slotSnapEasing */ js.UndefOr[js.Any], Unit]] = js.native
+    var setSlotSnapEasing: js.UndefOr[js.Function1[/* slotSnapEasing */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of slotSnapSize
       * @param slotSnapSize Number/Object The new value.
       */
-    var setSlotSnapSize: js.UndefOr[js.Function1[/* slotSnapSize */ js.UndefOr[js.Any], Unit]] = js.native
+    var setSlotSnapSize: js.UndefOr[js.Function1[/* slotSnapSize */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var slotSnapSize: js.UndefOr[js.Any] = js.native
+    var slotSnapSize: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Updates the boundary information for this scroller
       * @returns Ext.scroll.Scroller this
       */
-    var updateBoundary: js.UndefOr[js.Function0[this.type]] = js.native
+    var updateBoundary: js.UndefOr[js.Function0[this.type]] = js.undefined
   }
   object IScroller {
     
@@ -229,31 +229,31 @@ object scroll {
       def setGetDisabledUndefined: Self = StObject.set(x, "getDisabled", js.undefined)
       
       @scala.inline
-      def setGetInitialOffset(value: () => _): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
+      def setGetInitialOffset(value: () => js.Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetInitialOffsetUndefined: Self = StObject.set(x, "getInitialOffset", js.undefined)
       
       @scala.inline
-      def setGetMomentumEasing(value: () => _): Self = StObject.set(x, "getMomentumEasing", js.Any.fromFunction0(value))
+      def setGetMomentumEasing(value: () => js.Any): Self = StObject.set(x, "getMomentumEasing", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMomentumEasingUndefined: Self = StObject.set(x, "getMomentumEasing", js.undefined)
       
       @scala.inline
-      def setGetSlotSnapEasing(value: () => _): Self = StObject.set(x, "getSlotSnapEasing", js.Any.fromFunction0(value))
+      def setGetSlotSnapEasing(value: () => js.Any): Self = StObject.set(x, "getSlotSnapEasing", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSlotSnapEasingUndefined: Self = StObject.set(x, "getSlotSnapEasing", js.undefined)
       
       @scala.inline
-      def setGetSlotSnapSize(value: () => _): Self = StObject.set(x, "getSlotSnapSize", js.Any.fromFunction0(value))
+      def setGetSlotSnapSize(value: () => js.Any): Self = StObject.set(x, "getSlotSnapSize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSlotSnapSizeUndefined: Self = StObject.set(x, "getSlotSnapSize", js.undefined)
       
       @scala.inline
-      def setGetTranslatable(value: () => _): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
@@ -366,71 +366,72 @@ object scroll {
     }
   }
   
-  @js.native
-  trait IView extends IEvented {
+  trait IView
+    extends StObject
+       with IEvented {
     
     /** [Method] Returns the value of cls
       * @returns String
       */
-    var getCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of element
       * @returns Object
       */
-    var getElement: js.UndefOr[js.Function0[_]] = js.native
+    var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of indicators
       * @returns Object
       */
-    var getIndicators: js.UndefOr[js.Function0[_]] = js.native
+    var getIndicators: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of indicatorsHidingDelay
       * @returns Number
       */
-    var getIndicatorsHidingDelay: js.UndefOr[js.Function0[Double]] = js.native
+    var getIndicatorsHidingDelay: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of indicatorsUi
       * @returns String
       */
-    var getIndicatorsUi: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getIndicatorsUi: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the scroller instance in this view
       * @returns Ext.scroll.View The scroller
       */
-    var getScroller: js.UndefOr[js.Function0[this.type]] = js.native
+    var getScroller: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (String) */
-    var indicatorsUi: js.UndefOr[java.lang.String] = js.native
+    var indicatorsUi: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value of cls
       * @param cls String The new value.
       */
-    var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of element
       * @param element Object The new value.
       */
-    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of indicators
       * @param indicators Object The new value.
       */
-    var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.native
+    var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of indicatorsHidingDelay
       * @param indicatorsHidingDelay Number The new value.
       */
-    var setIndicatorsHidingDelay: js.UndefOr[js.Function1[/* indicatorsHidingDelay */ js.UndefOr[Double], Unit]] = js.native
+    var setIndicatorsHidingDelay: js.UndefOr[js.Function1[/* indicatorsHidingDelay */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of indicatorsUi
       * @param indicatorsUi String The new value.
       */
-    var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of scroller
       * @param scroller Object The new value.
       */
-    var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.native
+    var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IView {
     
@@ -450,13 +451,13 @@ object scroll {
       def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
       
       @scala.inline
-      def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
       @scala.inline
-      def setGetIndicators(value: () => _): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
+      def setGetIndicators(value: () => js.Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetIndicatorsHidingDelay(value: () => Double): Self = StObject.set(x, "getIndicatorsHidingDelay", js.Any.fromFunction0(value))
@@ -525,91 +526,92 @@ object scroll {
   
   object indicator {
     
-    @js.native
-    trait IAbstract extends IComponent {
+    trait IAbstract
+      extends StObject
+         with IComponent {
       
       /** [Config Option] (Boolean) */
-      var autoHide: js.UndefOr[Boolean] = js.native
+      var autoHide: js.UndefOr[Boolean] = js.undefined
       
       /** [Method] Returns the value of active
         * @returns Boolean
         */
-      var getActive: js.UndefOr[js.Function0[Boolean]] = js.native
+      var getActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
       /** [Method] Returns the value of autoHide
         * @returns Boolean
         */
-      var getAutoHide: js.UndefOr[js.Function0[Boolean]] = js.native
+      var getAutoHide: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
       /** [Method] Returns the value of axis
         * @returns String
         */
-      var getAxis: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getAxis: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Returns the value of barCls
         * @returns String
         */
-      var getBarCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getBarCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Returns the value of length
         * @returns Object
         */
-      var getLength: js.UndefOr[js.Function0[_]] = js.native
+      var getLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Returns the value of minLength
         * @returns Number
         */
-      var getMinLength: js.UndefOr[js.Function0[Double]] = js.native
+      var getMinLength: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Returns the value of ratio
         * @returns Number
         */
-      var getRatio: js.UndefOr[js.Function0[Double]] = js.native
+      var getRatio: js.UndefOr[js.Function0[Double]] = js.undefined
       
       /** [Method] Returns the value of value
         * @returns Object
         */
-      var getValue: js.UndefOr[js.Function0[_]] = js.native
+      var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       /** [Method] Sets the value of active
         * @param active Boolean The new value.
         */
-      var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.native
+      var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.undefined
       
       /** [Method] Sets the value of autoHide
         * @param autoHide Boolean The new value.
         */
-      var setAutoHide: js.UndefOr[js.Function1[/* autoHide */ js.UndefOr[Boolean], Unit]] = js.native
+      var setAutoHide: js.UndefOr[js.Function1[/* autoHide */ js.UndefOr[Boolean], Unit]] = js.undefined
       
       /** [Method] Sets the value of axis
         * @param axis String The new value.
         */
-      var setAxis: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setAxis: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Unit]] = js.undefined
       
       /** [Method] Sets the value of barCls
         * @param barCls String The new value.
         */
-      var setBarCls: js.UndefOr[js.Function1[/* barCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setBarCls: js.UndefOr[js.Function1[/* barCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
       
       /** [Method] Sets the value of length
         * @param length Object The new value.
         */
-      var setLength: js.UndefOr[js.Function1[/* length */ js.UndefOr[js.Any], Unit]] = js.native
+      var setLength: js.UndefOr[js.Function1[/* length */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of minLength
         * @param minLength Number The new value.
         */
-      var setMinLength: js.UndefOr[js.Function1[/* minLength */ js.UndefOr[Double], Unit]] = js.native
+      var setMinLength: js.UndefOr[js.Function1[/* minLength */ js.UndefOr[Double], Unit]] = js.undefined
       
       /** [Method] Sets the value of ratio
         * @param ratio Number The new value.
         */
-      var setRatio: js.UndefOr[js.Function1[/* ratio */ js.UndefOr[Double], Unit]] = js.native
+      var setRatio: js.UndefOr[js.Function1[/* ratio */ js.UndefOr[Double], Unit]] = js.undefined
       
       /** [Method] Sets the value of value
         * @param value Object The new value.
         */
-      var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+      var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     }
     object IAbstract {
       
@@ -653,7 +655,7 @@ object scroll {
         def setGetBarClsUndefined: Self = StObject.set(x, "getBarCls", js.undefined)
         
         @scala.inline
-        def setGetLength(value: () => _): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+        def setGetLength(value: () => js.Any): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
@@ -671,7 +673,7 @@ object scroll {
         def setGetRatioUndefined: Self = StObject.set(x, "getRatio", js.undefined)
         
         @scala.inline
-        def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+        def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
@@ -726,20 +728,21 @@ object scroll {
       }
     }
     
-    @js.native
-    trait ICssTransform extends IAbstract {
+    trait ICssTransform
+      extends StObject
+         with IAbstract {
       
       /** [Method] Returns the value of cls
         * @returns String
         */
       @JSName("getCls")
-      var getCls_ICssTransform: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getCls_ICssTransform: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Sets the value of cls
         * @param cls String The new value.
         */
       @JSName("setCls")
-      var setCls_ICssTransform: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setCls_ICssTransform: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     }
     object ICssTransform {
       
@@ -766,20 +769,21 @@ object scroll {
       }
     }
     
-    @js.native
-    trait IRounded extends IAbstract {
+    trait IRounded
+      extends StObject
+         with IAbstract {
       
       /** [Method] Returns the value of cls
         * @returns String
         */
       @JSName("getCls")
-      var getCls_IRounded: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getCls_IRounded: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Sets the value of cls
         * @param cls String The new value.
         */
       @JSName("setCls")
-      var setCls_IRounded: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setCls_IRounded: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     }
     object IRounded {
       
@@ -806,20 +810,21 @@ object scroll {
       }
     }
     
-    @js.native
-    trait IScrollPosition extends IAbstract {
+    trait IScrollPosition
+      extends StObject
+         with IAbstract {
       
       /** [Method] Returns the value of cls
         * @returns String
         */
       @JSName("getCls")
-      var getCls_IScrollPosition: js.UndefOr[js.Function0[java.lang.String]] = js.native
+      var getCls_IScrollPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
       
       /** [Method] Sets the value of cls
         * @param cls String The new value.
         */
       @JSName("setCls")
-      var setCls_IScrollPosition: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+      var setCls_IScrollPosition: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     }
     object IScrollPosition {
       

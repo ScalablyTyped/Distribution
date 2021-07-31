@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSigningCertificateResponse extends StObject {
   
   /**
     * The signing certificate.
     */
-  var Certificate: js.UndefOr[StringType] = js.native
+  var Certificate: js.UndefOr[StringType] = js.undefined
 }
 object GetSigningCertificateResponse {
   

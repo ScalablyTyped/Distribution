@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Interface to define a geographic shape. */
-@js.native
 trait IGeoshape extends StObject {
   
   /** The altitude reference system of the geographic shape. */
-  var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
+  var altitudeReferenceSystem: AltitudeReferenceSystem
   
   /** The type of geographic shape. */
-  var geoshapeType: GeoshapeType = js.native
+  var geoshapeType: GeoshapeType
   
   /** The spatial reference identifier for the geographic shape, corresponding to a spatial reference system based on the specific ellipsoid used for either flat-earth mapping or round-earth mapping. */
-  var spatialReferenceId: Double = js.native
+  var spatialReferenceId: Double
 }
 object IGeoshape {
   

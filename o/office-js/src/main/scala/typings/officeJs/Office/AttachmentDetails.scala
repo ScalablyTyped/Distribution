@@ -3,7 +3,6 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.AttachmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,29 +18,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait AttachmentDetails extends StObject {
   
   /**
     * Gets a value that indicates the type of an attachment.
     */
-  var attachmentType: AttachmentType | String = js.native
+  var attachmentType: AttachmentType | String
   
   /**
     * Gets the MIME content type of the attachment.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Gets the Exchange attachment ID of the attachment.
     * However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Gets a value that indicates whether the attachment should be displayed in the body of the item.
     */
-  var isInline: Boolean = js.native
+  var isInline: Boolean
   
   /**
     * Gets the name of the attachment.
@@ -49,12 +47,12 @@ trait AttachmentDetails extends StObject {
     * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
     * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the size of the attachment in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object AttachmentDetails {
   

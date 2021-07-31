@@ -2,13 +2,11 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message to pause serving for an already-finalized proposal.
   */
-@js.native
 trait SchemaPauseProposalRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaPauseProposalRequest extends StObject {
     * will be displayed in the seller&#39;s UI. (Max length: 1000 unicode code
     * units.)
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaPauseProposalRequest {
   

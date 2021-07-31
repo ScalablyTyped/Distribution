@@ -3,13 +3,11 @@ package typings.twit.mod.Twitter
 import typings.twit.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
-  var errors: js.Array[Code] = js.native
+  var errors: js.Array[Code]
 }
 object Errors {
   

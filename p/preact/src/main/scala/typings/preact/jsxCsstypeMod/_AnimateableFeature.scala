@@ -2,7 +2,8 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _AnimateableFeature extends _WillChangeProperty
+trait _AnimateableFeature
+  extends StObject
+     with _WillChangeProperty

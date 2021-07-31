@@ -25,7 +25,6 @@ import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,9 +84,8 @@ object VoidType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.create")
-  @js.native
-  def create(model: IModel): VoidType = js.native
+  @scala.inline
+  def create(model: IModel): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -98,9 +96,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInAppServiceActionParameterUnderParameterType")
-  @js.native
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): VoidType = js.native
+  @scala.inline
+  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -111,9 +108,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInAppServiceActionUnderActionReturnType")
-  @js.native
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): VoidType = js.native
+  @scala.inline
+  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -124,9 +120,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInConstantUnderType")
-  @js.native
-  def createInConstantUnderType(container: Constant): VoidType = js.native
+  @scala.inline
+  def createInConstantUnderType(container: Constant): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -137,9 +132,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInCreateVariableActionUnderVariableType")
-  @js.native
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): VoidType = js.native
+  @scala.inline
+  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -150,9 +144,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInDataSetColumnUnderColumnType")
-  @js.native
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): VoidType = js.native
+  @scala.inline
+  def createInDataSetColumnUnderColumnType(container: DataSetColumn): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -163,9 +156,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInDataSetParameterUnderParameterType")
-  @js.native
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): VoidType = js.native
+  @scala.inline
+  def createInDataSetParameterUnderParameterType(container: DataSetParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -176,9 +168,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInDocumentTemplateParameterUnderParameterType")
-  @js.native
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): VoidType = js.native
+  @scala.inline
+  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -189,9 +180,8 @@ object VoidType {
     *  7.16.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInImportMappingUnderParameterType")
-  @js.native
-  def createInImportMappingUnderParameterType(container: ImportMapping): VoidType = js.native
+  @scala.inline
+  def createInImportMappingUnderParameterType(container: ImportMapping): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -202,9 +192,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInMicroflowBaseUnderMicroflowReturnType")
-  @js.native
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): VoidType = js.native
+  @scala.inline
+  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -215,9 +204,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInMicroflowParameterBaseUnderParameterType")
-  @js.native
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): VoidType = js.native
+  @scala.inline
+  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -228,9 +216,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInMicroflowParameterObjectUnderVariableType")
-  @js.native
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): VoidType = js.native
+  @scala.inline
+  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -241,9 +228,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInPublishedOperationUnderOperationReturnType")
-  @js.native
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): VoidType = js.native
+  @scala.inline
+  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -254,9 +240,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInPublishedParameterUnderParameterType")
-  @js.native
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): VoidType = js.native
+  @scala.inline
+  def createInPublishedParameterUnderParameterType(container: PublishedParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -267,9 +252,8 @@ object VoidType {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInRestOperationParameterUnderType")
-  @js.native
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): VoidType = js.native
+  @scala.inline
+  def createInRestOperationParameterUnderType(container: RestOperationParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -280,9 +264,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInResultHandlingUnderVariableType")
-  @js.native
-  def createInResultHandlingUnderVariableType(container: ResultHandling): VoidType = js.native
+  @scala.inline
+  def createInResultHandlingUnderVariableType(container: ResultHandling): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -293,9 +276,8 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.createInValueMappingElementUnderType")
-  @js.native
-  def createInValueMappingElementUnderType(container: ValueMappingElement): VoidType = js.native
+  @scala.inline
+  def createInValueMappingElementUnderType(container: ValueMappingElement): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.structureTypeName")

@@ -2,45 +2,43 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BGO extends StObject {
   
-  var ATS: js.Array[String] = js.native
+  var ATS: js.Array[String]
   
-  var AUD: js.Array[String] = js.native
+  var AUD: js.Array[String]
   
-  var BGM: js.Array[String] = js.native
+  var BGM: js.Array[String]
   
-  var BGO: js.Array[String] = js.native
+  var BGO: js.Array[String]
   
-  var CUC: js.Array[js.UndefOr[String]] = js.native
+  var CUC: js.Array[js.UndefOr[String]]
   
-  var DEM: js.Array[String] = js.native
+  var DEM: js.Array[String]
   
-  var EUR: js.Array[js.UndefOr[String]] = js.native
+  var EUR: js.Array[js.UndefOr[String]]
   
-  var FKP: js.Array[js.UndefOr[String]] = js.native
+  var FKP: js.Array[js.UndefOr[String]]
   
-  var GNF: js.Array[js.UndefOr[String]] = js.native
+  var GNF: js.Array[js.UndefOr[String]]
   
-  var KMF: js.Array[js.UndefOr[String]] = js.native
+  var KMF: js.Array[js.UndefOr[String]]
   
-  var RON: js.Array[js.UndefOr[String]] = js.native
+  var RON: js.Array[js.UndefOr[String]]
   
-  var RWF: js.Array[js.UndefOr[String]] = js.native
+  var RWF: js.Array[js.UndefOr[String]]
   
-  var SYP: js.Array[scala.Nothing] = js.native
+  var SYP: js.Array[scala.Nothing]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TWD: js.Array[String] = js.native
+  var TWD: js.Array[String]
   
-  var XXX: js.Array[scala.Nothing] = js.native
+  var XXX: js.Array[scala.Nothing]
   
-  var ZMW: js.Array[js.UndefOr[String]] = js.native
+  var ZMW: js.Array[js.UndefOr[String]]
 }
 object BGO {
   

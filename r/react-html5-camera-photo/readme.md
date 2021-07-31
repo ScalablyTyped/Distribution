@@ -10,9 +10,9 @@ React.js HTML5 Camera Photo
 | ------------------ | :-------------: |
 | Full name          | react-html5-camera-photo |
 | Keywords           | react, reactjs, html5, camera, photo, component |
-| # releases         | 13 |
-| # dependents       | 3 |
-| # downloads        | 210408 |
+| # releases         | 12 |
+| # dependents       | 6 |
+| # downloads        | 325888 |
 | # stars            | 0 |
 
 ## Links

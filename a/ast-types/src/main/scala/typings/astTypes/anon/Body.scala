@@ -7,21 +7,19 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.StatementKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  var body: js.Array[StatementKind] = js.native
+  var body: js.Array[StatementKind]
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var directives: js.UndefOr[js.Array[DirectiveKind]] = js.native
+  var directives: js.UndefOr[js.Array[DirectiveKind]] = js.undefined
   
-  var interpreter: js.UndefOr[InterpreterDirectiveKind | Null] = js.native
+  var interpreter: js.UndefOr[InterpreterDirectiveKind | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object Body {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackupPlanFromJSONInput extends StObject {
   
   /**
     * A customer-supplied backup plan document in JSON format.
     */
-  var BackupPlanTemplateJson: String = js.native
+  var BackupPlanTemplateJson: String
 }
 object GetBackupPlanFromJSONInput {
   

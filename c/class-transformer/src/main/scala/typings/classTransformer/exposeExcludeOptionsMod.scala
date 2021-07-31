@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exposeExcludeOptionsMod {
   
-  @js.native
   trait Discriminator extends StObject {
     
-    var property: String = js.native
+    var property: String
     
-    var subTypes: js.Array[JsonSubType] = js.native
+    var subTypes: js.Array[JsonSubType]
   }
   object Discriminator {
     
@@ -38,12 +36,11 @@ object exposeExcludeOptionsMod {
     }
   }
   
-  @js.native
   trait ExcludeOptions extends StObject {
     
-    var toClassOnly: js.UndefOr[Boolean] = js.native
+    var toClassOnly: js.UndefOr[Boolean] = js.undefined
     
-    var toPlainOnly: js.UndefOr[Boolean] = js.native
+    var toPlainOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ExcludeOptions {
     
@@ -70,20 +67,19 @@ object exposeExcludeOptionsMod {
     }
   }
   
-  @js.native
   trait ExposeOptions extends StObject {
     
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var since: js.UndefOr[Double] = js.native
+    var since: js.UndefOr[Double] = js.undefined
     
-    var toClassOnly: js.UndefOr[Boolean] = js.native
+    var toClassOnly: js.UndefOr[Boolean] = js.undefined
     
-    var toPlainOnly: js.UndefOr[Boolean] = js.native
+    var toPlainOnly: js.UndefOr[Boolean] = js.undefined
     
-    var until: js.UndefOr[Double] = js.native
+    var until: js.UndefOr[Double] = js.undefined
   }
   object ExposeOptions {
     
@@ -137,12 +133,11 @@ object exposeExcludeOptionsMod {
     }
   }
   
-  @js.native
   trait JsonSubType extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: Instantiable1[/* args (repeated) */ js.Any, js.Any] = js.native
+    var value: Instantiable1[/* args (repeated) */ js.Any, js.Any]
   }
   object JsonSubType {
     
@@ -163,18 +158,17 @@ object exposeExcludeOptionsMod {
     }
   }
   
-  @js.native
   trait TransformOptions extends StObject {
     
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
-    var since: js.UndefOr[Double] = js.native
+    var since: js.UndefOr[Double] = js.undefined
     
-    var toClassOnly: js.UndefOr[Boolean] = js.native
+    var toClassOnly: js.UndefOr[Boolean] = js.undefined
     
-    var toPlainOnly: js.UndefOr[Boolean] = js.native
+    var toPlainOnly: js.UndefOr[Boolean] = js.undefined
     
-    var until: js.UndefOr[Double] = js.native
+    var until: js.UndefOr[Double] = js.undefined
   }
   object TransformOptions {
     
@@ -222,19 +216,18 @@ object exposeExcludeOptionsMod {
     }
   }
   
-  @js.native
   trait TypeHelpOptions extends StObject {
     
-    var newObject: js.Any = js.native
+    var newObject: js.Any
     
-    var `object`: Record[String, _] = js.native
+    var `object`: Record[String, js.Any]
     
-    var property: String = js.native
+    var property: String
   }
   object TypeHelpOptions {
     
     @scala.inline
-    def apply(newObject: js.Any, `object`: Record[String, _], property: String): TypeHelpOptions = {
+    def apply(newObject: js.Any, `object`: Record[String, js.Any], property: String): TypeHelpOptions = {
       val __obj = js.Dynamic.literal(newObject = newObject.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeHelpOptions]
@@ -247,22 +240,21 @@ object exposeExcludeOptionsMod {
       def setNewObject(value: js.Any): Self = StObject.set(x, "newObject", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: Record[String, _]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: Record[String, js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TypeOptions extends StObject {
     
-    var discriminator: js.UndefOr[Discriminator] = js.native
+    var discriminator: js.UndefOr[Discriminator] = js.undefined
     
     /**
       * Is false by default.
       */
-    var keepDiscriminatorProperty: js.UndefOr[Boolean] = js.native
+    var keepDiscriminatorProperty: js.UndefOr[Boolean] = js.undefined
   }
   object TypeOptions {
     

@@ -5,20 +5,18 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpProvider extends StObject {
   
   /**
     * Provide help for the signature at the given position and document.
     */
-  def provideSignatureHelp(model: ITextModel, position: Position, token: CancellationToken, context: SignatureHelpContext): ProviderResult[SignatureHelpResult] = js.native
+  def provideSignatureHelp(model: ITextModel, position: Position, token: CancellationToken, context: SignatureHelpContext): ProviderResult[SignatureHelpResult]
   
-  val signatureHelpRetriggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  val signatureHelpRetriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
-  val signatureHelpTriggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  val signatureHelpTriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SignatureHelpProvider {
   

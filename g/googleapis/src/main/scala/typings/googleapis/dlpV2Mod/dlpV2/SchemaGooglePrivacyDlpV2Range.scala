@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Generic half-open interval [start, end)
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Range extends StObject {
   
   /**
     * Index of the last character of the range (exclusive).
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * Index of the first character of the range (inclusive).
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Range {
   

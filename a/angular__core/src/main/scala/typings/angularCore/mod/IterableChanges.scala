@@ -2,29 +2,27 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterableChanges[V] extends StObject {
   
   /** Iterate over all added items. */
-  def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   
   /**
     * Iterate over all items which had their identity (as computed by the `TrackByFunction`)
     * changed.
     */
-  def forEachIdentityChange(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachIdentityChange(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   
   /**
     * Iterate over all changes. `IterableChangeRecord` will contain information about changes
     * to each item.
     */
-  def forEachItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   
   /** Iterate over all moved items. */
-  def forEachMovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachMovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   
   /**
     * Iterate over a set of operations which when applied to the original `Iterable` will produce the
@@ -49,16 +47,16 @@ trait IterableChanges[V] extends StObject {
       /* currentIndex */ Double | Null, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Iterate over changes in the order of original `Iterable` showing where the original items
     * have moved.
     */
-  def forEachPreviousItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachPreviousItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   
   /** Iterate over all removed items. */
-  def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
+  def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
 }
 object IterableChanges {
   
@@ -82,7 +80,7 @@ object IterableChanges {
   }
   
   @scala.inline
-  implicit class IterableChangesMutableBuilder[Self <: IterableChanges[_], V] (val x: Self with IterableChanges[V]) extends AnyVal {
+  implicit class IterableChangesMutableBuilder[Self <: IterableChanges[?], V] (val x: Self & IterableChanges[V]) extends AnyVal {
     
     @scala.inline
     def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))

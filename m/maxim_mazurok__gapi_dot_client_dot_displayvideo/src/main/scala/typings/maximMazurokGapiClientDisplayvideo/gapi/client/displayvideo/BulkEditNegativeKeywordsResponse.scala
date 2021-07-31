@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditNegativeKeywordsResponse extends StObject {
   
   /** The list of negative keywords that have been successfully created. This list will be absent if empty. */
-  var negativeKeywords: js.UndefOr[js.Array[NegativeKeyword]] = js.native
+  var negativeKeywords: js.UndefOr[js.Array[NegativeKeyword]] = js.undefined
 }
 object BulkEditNegativeKeywordsResponse {
   

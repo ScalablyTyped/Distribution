@@ -2,13 +2,11 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtSettings extends StObject {
   
-  var buttons: ExtButtonsSettings = js.native
+  var buttons: ExtButtonsSettings
 }
 object ExtSettings {
   

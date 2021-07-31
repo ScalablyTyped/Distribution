@@ -2,26 +2,24 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanCodeData extends StObject {
   
   /**
     * 扫描条形码时返回条形码数据
     */
-  var barCode: String = js.native
+  var barCode: String
   
   /**
     * 扫描二维码时返回二维码数据
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * 所扫码的类型
     */
-  var qrCode: String = js.native
+  var qrCode: String
 }
 object ScanCodeData {
   

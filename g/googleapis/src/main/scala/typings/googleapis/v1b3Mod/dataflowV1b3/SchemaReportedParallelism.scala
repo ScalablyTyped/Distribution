@@ -2,14 +2,12 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the level of parallelism in a WorkItem&#39;s input, reported by
   * the worker.
   */
-@js.native
 trait SchemaReportedParallelism extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaReportedParallelism extends StObject {
     * splitting. This is a work-around for lack of support for infinity by the
     * current JSON-based Java RPC stack.
     */
-  var isInfinite: js.UndefOr[Boolean] = js.native
+  var isInfinite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the level of parallelism in case it is finite.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SchemaReportedParallelism {
   

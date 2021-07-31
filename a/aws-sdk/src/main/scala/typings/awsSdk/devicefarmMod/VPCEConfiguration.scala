@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPCEConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the VPC endpoint configuration.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The DNS name that maps to the private IP address of the service you want to access.
     */
-  var serviceDnsName: js.UndefOr[ServiceDnsName] = js.native
+  var serviceDnsName: js.UndefOr[ServiceDnsName] = js.undefined
   
   /**
     * An optional description that provides details about your VPC endpoint configuration.
     */
-  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.native
+  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.undefined
   
   /**
     * The friendly name you give to your VPC endpoint configuration to manage your configurations more easily.
     */
-  var vpceConfigurationName: js.UndefOr[VPCEConfigurationName] = js.native
+  var vpceConfigurationName: js.UndefOr[VPCEConfigurationName] = js.undefined
   
   /**
     * The name of the VPC endpoint service running in your AWS account that you want Device Farm to test.
     */
-  var vpceServiceName: js.UndefOr[VPCEServiceName] = js.native
+  var vpceServiceName: js.UndefOr[VPCEServiceName] = js.undefined
 }
 object VPCEConfiguration {
   

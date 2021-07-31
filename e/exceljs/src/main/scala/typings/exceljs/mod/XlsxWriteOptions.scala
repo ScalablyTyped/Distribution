@@ -5,16 +5,16 @@ import typings.exceljs.mod.stream.xlsx.WorkbookWriterOptions
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XlsxWriteOptions extends WorkbookWriterOptions {
+trait XlsxWriteOptions
+  extends StObject
+     with WorkbookWriterOptions {
   
   /**
   	 * The option passed to JsZip#generateAsync(options)
   	 */
-  var zip: PartialJSZipGeneratorOpti = js.native
+  var zip: PartialJSZipGeneratorOpti
 }
 object XlsxWriteOptions {
   

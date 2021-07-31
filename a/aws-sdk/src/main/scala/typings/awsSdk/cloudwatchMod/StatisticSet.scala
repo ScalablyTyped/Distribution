@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatisticSet extends StObject {
   
   /**
     * The maximum value of the sample set.
     */
-  var Maximum: DatapointValue = js.native
+  var Maximum: DatapointValue
   
   /**
     * The minimum value of the sample set.
     */
-  var Minimum: DatapointValue = js.native
+  var Minimum: DatapointValue
   
   /**
     * The number of samples used for the statistic set.
     */
-  var SampleCount: DatapointValue = js.native
+  var SampleCount: DatapointValue
   
   /**
     * The sum of values for the sample set.
     */
-  var Sum: DatapointValue = js.native
+  var Sum: DatapointValue
 }
 object StatisticSet {
   

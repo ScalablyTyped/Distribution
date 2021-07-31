@@ -6,7 +6,6 @@ import typings.luminoDatagrid.datamodelMod.DataModel.Metadata
 import typings.luminoDatagrid.graphicscontextMod.GraphicsContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellrendererMod {
@@ -36,6 +35,10 @@ object cellrendererMod {
   }
   object CellRenderer {
     
+    @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Resolve a config option for a cell renderer.
       *
@@ -45,60 +48,58 @@ object cellrendererMod {
       *
       * @returns The resolved value for the option.
       */
-    @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer.resolveOption")
-    @js.native
-    def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = js.native
+    @scala.inline
+    def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * An object which holds the configuration data for a cell.
       */
-    @js.native
     trait CellConfig extends StObject {
       
       /**
         * The column index of the cell.
         */
-      val column: Double = js.native
+      val column: Double
       
       /**
         * The height of the cell rectangle, in viewport pixels.
         */
-      val height: Double = js.native
+      val height: Double
       
       /**
         * The metadata for the cell.
         */
-      val metadata: Metadata = js.native
+      val metadata: Metadata
       
       /**
         * The region for the cell.
         */
-      val region: CellRegion = js.native
+      val region: CellRegion
       
       /**
         * The row index of the cell.
         */
-      val row: Double = js.native
+      val row: Double
       
       /**
         * The value for the cell.
         */
-      val value: js.Any = js.native
+      val value: js.Any
       
       /**
         * The width of the cell rectangle, in viewport pixels.
         */
-      val width: Double = js.native
+      val width: Double
       
       /**
         * The X position of the cell rectangle, in viewport coordinates.
         */
-      val x: Double = js.native
+      val x: Double
       
       /**
         * The Y position of the cell rectangle, in viewport coordinates.
         */
-      val y: Double = js.native
+      val y: Double
     }
     object CellConfig {
       

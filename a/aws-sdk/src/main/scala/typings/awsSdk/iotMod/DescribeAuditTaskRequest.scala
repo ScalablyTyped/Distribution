@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAuditTaskRequest extends StObject {
   
   /**
     * The ID of the audit whose information you want to get.
     */
-  var taskId: AuditTaskId = js.native
+  var taskId: AuditTaskId
 }
 object DescribeAuditTaskRequest {
   

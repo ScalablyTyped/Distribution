@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.showAddDialog
 import typings.chromeApps.chromeAppsStrings.showConfigureDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SHOWADDDIALOG extends StObject {
   
-  var SHOW_ADD_DIALOG: showAddDialog = js.native
+  var SHOW_ADD_DIALOG: showAddDialog
   
-  var SHOW_CONFIGURE_DIALOG: showConfigureDialog = js.native
+  var SHOW_CONFIGURE_DIALOG: showConfigureDialog
 }
 object SHOWADDDIALOG {
   
   @scala.inline
-  def apply(SHOW_ADD_DIALOG: showAddDialog, SHOW_CONFIGURE_DIALOG: showConfigureDialog): SHOWADDDIALOG = {
-    val __obj = js.Dynamic.literal(SHOW_ADD_DIALOG = SHOW_ADD_DIALOG.asInstanceOf[js.Any], SHOW_CONFIGURE_DIALOG = SHOW_CONFIGURE_DIALOG.asInstanceOf[js.Any])
+  def apply(): SHOWADDDIALOG = {
+    val __obj = js.Dynamic.literal(SHOW_ADD_DIALOG = "showAddDialog", SHOW_CONFIGURE_DIALOG = "showConfigureDialog")
     __obj.asInstanceOf[SHOWADDDIALOG]
   }
   

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMatchmakingOutput extends StObject {
   
   /**
     * A collection of existing matchmaking ticket objects matching the request.
     */
-  var TicketList: js.UndefOr[MatchmakingTicketList] = js.native
+  var TicketList: js.UndefOr[MatchmakingTicketList] = js.undefined
 }
 object DescribeMatchmakingOutput {
   

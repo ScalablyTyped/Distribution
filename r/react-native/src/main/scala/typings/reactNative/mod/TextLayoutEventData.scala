@@ -2,13 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextLayoutEventData extends TargetedEvent {
+trait TextLayoutEventData
+  extends StObject
+     with TargetedEvent {
   
-  var lines: js.Array[TextLayoutLine] = js.native
+  var lines: js.Array[TextLayoutLine]
 }
 object TextLayoutEventData {
   

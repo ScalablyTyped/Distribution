@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines an enumeration for type descriptions.
   * @since OOo 1.1.2
   */
-@js.native
-trait XTypeDescriptionEnumeration extends XEnumeration {
+trait XTypeDescriptionEnumeration
+  extends StObject
+     with XEnumeration {
   
   /**
     * Returns the next element of the enumeration.
     * @returns the next element of this enumeration.
     * @throws com::sun::star::container::NoSuchElementException if no more elements exist.
     */
-  def nextTypeDescription(): XTypeDescription = js.native
+  def nextTypeDescription(): XTypeDescription
 }
 object XTypeDescriptionEnumeration {
   

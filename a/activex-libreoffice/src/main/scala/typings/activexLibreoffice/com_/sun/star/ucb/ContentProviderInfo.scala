@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure for content provider information.
   * @see XContentProviderManager
   */
-@js.native
 trait ContentProviderInfo extends StObject {
   
   /** The content provider. */
-  var ContentProvider: XContentProvider = js.native
+  var ContentProvider: XContentProvider
   
   /** The scheme the Provider is registered for. */
-  var Scheme: String = js.native
+  var Scheme: String
 }
 object ContentProviderInfo {
   

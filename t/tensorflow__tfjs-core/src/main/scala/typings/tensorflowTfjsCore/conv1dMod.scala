@@ -13,13 +13,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conv1dMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/conv1d", "conv1d")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/conv1d", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def conv1d[T /* <: Tensor2D | Tensor3D */](
     x: T | TensorLike,
     filter: Tensor3D | TensorLike,
@@ -28,5 +30,5 @@ object conv1dMod {
     dataFormat: js.UndefOr[NWC | NCW],
     dilation: js.UndefOr[Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
 }

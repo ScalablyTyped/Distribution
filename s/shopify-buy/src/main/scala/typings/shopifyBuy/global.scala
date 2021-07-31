@@ -4,7 +4,6 @@ import typings.shopifyBuy.ShopifyBuy.Client
 import typings.shopifyBuy.ShopifyBuy.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -21,8 +20,7 @@ object global {
     @scala.inline
     def NO_IMAGE_URI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_IMAGE_URI")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("ShopifyBuy.buildClient")
-    @js.native
-    def buildClient(config: Config): Client = js.native
+    @scala.inline
+    def buildClient(config: Config): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClient")(config.asInstanceOf[js.Any]).asInstanceOf[Client]
   }
 }

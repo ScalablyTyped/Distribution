@@ -3,15 +3,15 @@ package typings.googleAdwordsScripts
 import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageBuilder[Media] extends AdWordsBuilder[Media] {
+trait ImageBuilder[Media]
+  extends StObject
+     with AdWordsBuilder[Media] {
   
-  def withData(data: Blob): ImageBuilder[Media] = js.native
+  def withData(data: Blob): ImageBuilder[Media]
   
-  def withName(name: String): ImageBuilder[Media] = js.native
+  def withName(name: String): ImageBuilder[Media]
 }
 object ImageBuilder {
   
@@ -26,7 +26,7 @@ object ImageBuilder {
   }
   
   @scala.inline
-  implicit class ImageBuilderMutableBuilder[Self <: ImageBuilder[_], Media] (val x: Self with ImageBuilder[Media]) extends AnyVal {
+  implicit class ImageBuilderMutableBuilder[Self <: ImageBuilder[?], Media] (val x: Self & ImageBuilder[Media]) extends AnyVal {
     
     @scala.inline
     def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))

@@ -5,24 +5,22 @@ import typings.qlik.qlikStrings.accordion
 import typings.qlik.qlikStrings.items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Definition extends StObject {
   
-  var component: accordion = js.native
+  var component: accordion
   
-  var items: Data = js.native
+  var items: Data
   
-  var `type`: items = js.native
+  var `type`: items
 }
 object Definition {
   
   @scala.inline
-  def apply(component: accordion, items: Data, `type`: items): Definition = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(items: Data): Definition = {
+    val __obj = js.Dynamic.literal(component = "accordion", items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("items")
     __obj.asInstanceOf[Definition]
   }
   

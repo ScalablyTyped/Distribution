@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,22 +18,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Commonly a notation similar to filesystem paths (separated by '/' slashes) or nested module names (separated by dots '.' or '::') is used.
   */
-@js.native
-trait XHierarchicalPropertySet extends XInterface {
+trait XHierarchicalPropertySet
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve information about the hierarchy of properties
     * @returns the {@link XHierarchicalPropertySetInfo} interface, which describes the property hierarchy of the object which supplies this interface.
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     */
-  val HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo = js.native
+  val HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo
   
   /**
     * retrieve information about the hierarchy of properties
     * @returns the {@link XHierarchicalPropertySetInfo} interface, which describes the property hierarchy of the object which supplies this interface.
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     */
-  def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo = js.native
+  def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo
   
   /**
     * @param aHierarchicalPropertyName This parameter specifies the name of the property.
@@ -44,7 +44,7 @@ trait XHierarchicalPropertySet extends XInterface {
     * @throws com::sun::star::uno::lang::IllegalArgumentException if **aHierarchicalPropertyName** is not a well-formed nested name for this hierarchy. An impl
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getHierarchicalPropertyValue(aHierarchicalPropertyName: String): js.Any = js.native
+  def getHierarchicalPropertyValue(aHierarchicalPropertyName: String): js.Any
   
   /**
     * sets the value of the property with the specified nested name.
@@ -56,7 +56,7 @@ trait XHierarchicalPropertySet extends XInterface {
     * @throws com::sun::star::uno::lang::IllegalArgumentException if **aValue** is not a legal value for this property or if **aHierarchicalPropertyName** is n
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def setHierarchicalPropertyValue(aHierarchicalPropertyName: String, aValue: js.Any): Unit = js.native
+  def setHierarchicalPropertyValue(aHierarchicalPropertyName: String, aValue: js.Any): Unit
 }
 object XHierarchicalPropertySet {
   

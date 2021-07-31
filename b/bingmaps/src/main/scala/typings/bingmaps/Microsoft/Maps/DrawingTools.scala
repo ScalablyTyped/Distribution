@@ -3,7 +3,6 @@ package typings.bingmaps.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,47 +57,69 @@ object DrawingTools {
     
     /** All items */
     @js.native
-    sealed trait all extends DrawingBarAction
+    sealed trait all
+      extends StObject
+         with DrawingBarAction
     
     /** All shape creation items */
     @js.native
-    sealed trait createShapes extends DrawingBarAction
+    sealed trait createShapes
+      extends StObject
+         with DrawingBarAction
     
     /** Edit existing primitive */
     @js.native
-    sealed trait edit extends DrawingBarAction
+    sealed trait edit
+      extends StObject
+         with DrawingBarAction
     
     /** All shape editing items */
     @js.native
-    sealed trait editShapes extends DrawingBarAction
+    sealed trait editShapes
+      extends StObject
+         with DrawingBarAction
     
     /** Erase existing primitive */
     @js.native
-    sealed trait erase extends DrawingBarAction
+    sealed trait erase
+      extends StObject
+         with DrawingBarAction
     
     /** Change fill style */
     @js.native
-    sealed trait fillStyle extends DrawingBarAction
+    sealed trait fillStyle
+      extends StObject
+         with DrawingBarAction
     
     /** Create point primitive */
     @js.native
-    sealed trait point extends DrawingBarAction
+    sealed trait point
+      extends StObject
+         with DrawingBarAction
     
     /** Create polygon primitive */
     @js.native
-    sealed trait polygon extends DrawingBarAction
+    sealed trait polygon
+      extends StObject
+         with DrawingBarAction
     
     /** Create polyline primitive */
     @js.native
-    sealed trait polyline extends DrawingBarAction
+    sealed trait polyline
+      extends StObject
+         with DrawingBarAction
     
     /** Change stroke style */
     @js.native
-    sealed trait strokeStyle extends DrawingBarAction
+    sealed trait strokeStyle
+      extends StObject
+         with DrawingBarAction
     
     /** All shape styling items */
     @js.native
-    sealed trait styleShapes extends DrawingBarAction
+    sealed trait styleShapes
+      extends StObject
+         with DrawingBarAction
   }
   
   @js.native
@@ -109,27 +130,39 @@ object DrawingTools {
     
     /** Edit an existing shape. Click on a shape to edit it. */
     @js.native
-    sealed trait edit extends DrawingMode
+    sealed trait edit
+      extends StObject
+         with DrawingMode
     
     /** Erase and existing shape. Click on the shapes to erase them. */
     @js.native
-    sealed trait erase extends DrawingMode
+    sealed trait erase
+      extends StObject
+         with DrawingMode
     
     /** Sets the drawing manager into an idle mode. */
     @js.native
-    sealed trait none extends DrawingMode
+    sealed trait none
+      extends StObject
+         with DrawingMode
     
     /** Allow the user to draw a polygon. */
     @js.native
-    sealed trait polygon extends DrawingMode
+    sealed trait polygon
+      extends StObject
+         with DrawingMode
     
     /** Allow the user to draw a polyline. */
     @js.native
-    sealed trait polyline extends DrawingMode
+    sealed trait polyline
+      extends StObject
+         with DrawingMode
     
     /** Allow the user to draw a pushpin. */
     @js.native
-    sealed trait pushpin extends DrawingMode
+    sealed trait pushpin
+      extends StObject
+         with DrawingMode
   }
   
   @js.native
@@ -140,10 +173,14 @@ object DrawingTools {
     
     /** A polygon shape type. */
     @js.native
-    sealed trait polygon extends ShapeType
+    sealed trait polygon
+      extends StObject
+         with ShapeType
     
     /** A polyline shape type. */
     @js.native
-    sealed trait polyline extends ShapeType
+    sealed trait polyline
+      extends StObject
+         with ShapeType
   }
 }

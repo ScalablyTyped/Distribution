@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chromeAppsStrings.Disabled_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* The current state of the device. */

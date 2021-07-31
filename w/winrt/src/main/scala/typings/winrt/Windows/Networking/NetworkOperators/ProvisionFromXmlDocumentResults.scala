@@ -2,11 +2,11 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProvisionFromXmlDocumentResults extends IProvisionFromXmlDocumentResults
+trait ProvisionFromXmlDocumentResults
+  extends StObject
+     with IProvisionFromXmlDocumentResults
 object ProvisionFromXmlDocumentResults {
   
   @scala.inline

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,50 +12,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Rfc2046]{@link url="ftp://ftp.isi.edu/in-notes/rfc2046.txt"} . Instances that implement this interface could be created using the interface {@link
   * XMimeContentTypeFactory} .
   */
-@js.native
-trait XMimeContentType extends XInterface {
+trait XMimeContentType
+  extends StObject
+     with XInterface {
   
   /**
     * To get the full media/submedia type of the MIME content-type.
     * @returns The full media/submedia type of the MIME content-type.
     */
-  val FullMediaType: String = js.native
+  val FullMediaType: String
   
   /**
     * To get the media subtype of the MIME content-type.
     * @returns The media subtype of the MIME content-type.
     */
-  val MediaSubtype: String = js.native
+  val MediaSubtype: String
   
   /**
     * To get the media type of the MIME content-type.
     * @returns The media type of the MIME content-type.
     */
-  val MediaType: String = js.native
+  val MediaType: String
   
   /**
     * To get a list of parameters that the MIME content-type contains.
     * @returns A list of the names of all parameters of the MIME content-type.
     */
-  val Parameters: SafeArray[String] = js.native
+  val Parameters: SafeArray[String]
   
   /**
     * To get the full media/submedia type of the MIME content-type.
     * @returns The full media/submedia type of the MIME content-type.
     */
-  def getFullMediaType(): String = js.native
+  def getFullMediaType(): String
   
   /**
     * To get the media subtype of the MIME content-type.
     * @returns The media subtype of the MIME content-type.
     */
-  def getMediaSubtype(): String = js.native
+  def getMediaSubtype(): String
   
   /**
     * To get the media type of the MIME content-type.
     * @returns The media type of the MIME content-type.
     */
-  def getMediaType(): String = js.native
+  def getMediaType(): String
   
   /**
     * To get the value of a specified parameter.
@@ -64,20 +64,20 @@ trait XMimeContentType extends XInterface {
     * @returns The value of the specified parameter.
     * @throws com::sun::star::container::NoSuchElementException if the specified parameter doesn't exist.
     */
-  def getParameterValue(aName: String): String = js.native
+  def getParameterValue(aName: String): String
   
   /**
     * To get a list of parameters that the MIME content-type contains.
     * @returns A list of the names of all parameters of the MIME content-type.
     */
-  def getParameters(): SafeArray[String] = js.native
+  def getParameters(): SafeArray[String]
   
   /**
     * To query if a specific parameter is supported.
     * @param aName The name of the parameter to query for.
     * @returns A value of `TRUE` if the MIME content-type has the specified parameter. A value of `FALSE` if the MIME content-type has not the specified parameter.
     */
-  def hasParameter(aName: String): Boolean = js.native
+  def hasParameter(aName: String): Boolean
 }
 object XMimeContentType {
   

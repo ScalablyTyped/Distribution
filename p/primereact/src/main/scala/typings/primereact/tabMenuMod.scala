@@ -5,7 +5,6 @@ import typings.primereact.menuItemMod.MenuItem
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMenuMod {
@@ -22,20 +21,19 @@ object tabMenuMod {
     def this(props: TabMenuProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabMenuProps extends StObject {
     
-    var activeItem: js.UndefOr[js.Any] = js.native
+    var activeItem: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.UndefOr[js.Array[MenuItem]] = js.native
+    var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object TabMenuProps {
     

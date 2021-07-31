@@ -4,19 +4,19 @@ import typings.vexflow.anon.Bpm
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StaveTempo extends StaveModifier {
+trait StaveTempo
+  extends StObject
+     with StaveModifier {
   
-  def draw(stave: Stave, shift_x: Double): StaveTempo = js.native
+  def draw(stave: Stave, shift_x: Double): StaveTempo
   
-  def setShiftX(x: Double): StaveTempo = js.native
+  def setShiftX(x: Double): StaveTempo
   
-  def setShiftY(y: Double): StaveTempo = js.native
+  def setShiftY(y: Double): StaveTempo
   
-  def setTempo(tempo: Bpm): StaveTempo = js.native
+  def setTempo(tempo: Bpm): StaveTempo
 }
 object StaveTempo {
   

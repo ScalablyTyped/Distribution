@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cast {
   
-  @js.native
   trait EnableRequest extends StObject {
     
-    var presentationUrl: js.UndefOr[String] = js.native
+    var presentationUrl: js.UndefOr[String] = js.undefined
   }
   object EnableRequest {
     
@@ -31,10 +29,9 @@ object Cast {
     }
   }
   
-  @js.native
   trait IssueUpdatedEvent extends StObject {
     
-    var issueMessage: String = js.native
+    var issueMessage: String
   }
   object IssueUpdatedEvent {
     
@@ -52,10 +49,9 @@ object Cast {
     }
   }
   
-  @js.native
   trait SetSinkToUseRequest extends StObject {
     
-    var sinkName: String = js.native
+    var sinkName: String
   }
   object SetSinkToUseRequest {
     
@@ -73,18 +69,17 @@ object Cast {
     }
   }
   
-  @js.native
   trait Sink extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
     /**
       * Text describing the current session. Present only if there is an active
       * session on the sink.
       */
-    var session: js.UndefOr[String] = js.native
+    var session: js.UndefOr[String] = js.undefined
   }
   object Sink {
     
@@ -111,10 +106,9 @@ object Cast {
     }
   }
   
-  @js.native
   trait SinksUpdatedEvent extends StObject {
     
-    var sinks: js.Array[Sink] = js.native
+    var sinks: js.Array[Sink]
   }
   object SinksUpdatedEvent {
     
@@ -135,10 +129,9 @@ object Cast {
     }
   }
   
-  @js.native
   trait StartTabMirroringRequest extends StObject {
     
-    var sinkName: String = js.native
+    var sinkName: String
   }
   object StartTabMirroringRequest {
     
@@ -156,10 +149,9 @@ object Cast {
     }
   }
   
-  @js.native
   trait StopCastingRequest extends StObject {
     
-    var sinkName: String = js.native
+    var sinkName: String
   }
   object StopCastingRequest {
     

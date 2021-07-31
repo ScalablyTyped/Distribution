@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFileNameConflictsWithDirectoryNameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FileNameConflictsWithDirectoryNameExceptionDetails> * / any */ @js.native
-  trait FileNameConflictsWithDirectoryNameException extends PutFileExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FileNameConflictsWithDirectoryNameExceptionDetails> * / any */ trait FileNameConflictsWithDirectoryNameException
+    extends StObject
+       with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileNameConflictsWithDirectoryNameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileNameConflictsWithDirectoryNameException
   }
   object FileNameConflictsWithDirectoryNameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileNameConflictsWithDirectoryNameException
-    ): FileNameConflictsWithDirectoryNameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): FileNameConflictsWithDirectoryNameException = {
+      val __obj = js.Dynamic.literal(name = "FileNameConflictsWithDirectoryNameException")
       __obj.asInstanceOf[FileNameConflictsWithDirectoryNameException]
     }
     
@@ -34,6 +32,5 @@ object typesFileNameConflictsWithDirectoryNameExceptionMod {
     }
   }
   
-  @js.native
   trait FileNameConflictsWithDirectoryNameExceptionDetails extends StObject
 }

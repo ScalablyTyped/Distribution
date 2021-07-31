@@ -2,24 +2,22 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Leaflet.Map.MapOptions * / any */ @js.native
-trait MapOptions extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Leaflet.Map.MapOptions * / any */ trait MapOptions extends StObject {
   
-  var featureLayer: js.UndefOr[FeatureLayerOptions] = js.native
+  var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
   
-  var gridLayer: js.UndefOr[js.Any] = js.native
+  var gridLayer: js.UndefOr[js.Any] = js.undefined
   
-  var infoControl: js.UndefOr[ControlOptions] = js.native
+  var infoControl: js.UndefOr[ControlOptions] = js.undefined
   
-  var legendControl: js.UndefOr[ControlOptions] = js.native
+  var legendControl: js.UndefOr[ControlOptions] = js.undefined
   
-  var shareControl: js.UndefOr[ShareControlOptions] = js.native
+  var shareControl: js.UndefOr[ShareControlOptions] = js.undefined
   
-  var tileLayer: js.UndefOr[TileLayerOptions] = js.native
+  var tileLayer: js.UndefOr[TileLayerOptions] = js.undefined
 }
 object MapOptions {
   

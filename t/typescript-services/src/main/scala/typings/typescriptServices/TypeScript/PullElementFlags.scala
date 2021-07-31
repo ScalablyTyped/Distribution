@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,68 +11,112 @@ sealed trait PullElementFlags extends StObject
 object PullElementFlags extends StObject {
   
   @js.native
-  sealed trait Ambient extends PullElementFlags
+  sealed trait Ambient
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait ArrowFunction extends PullElementFlags
+  sealed trait ArrowFunction
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait ClassConstructorVariable extends PullElementFlags
+  sealed trait ClassConstructorVariable
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait ConstructorParameter extends PullElementFlags
+  sealed trait ConstructorParameter
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait DeclaredInAWithBlock extends PullElementFlags
+  sealed trait DeclaredInAWithBlock
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Enum extends PullElementFlags
+  sealed trait Enum
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Exported extends PullElementFlags
+  sealed trait Exported
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait HasDefaultArgs extends PullElementFlags
+  sealed trait HasDefaultArgs
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait HasReturnStatement extends PullElementFlags
+  sealed trait HasReturnStatement
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait ImplicitVariable extends PullElementFlags
+  sealed trait ImplicitVariable
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait InitializedDynamicModule extends PullElementFlags
+  sealed trait InitializedDynamicModule
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait InitializedModule extends PullElementFlags
+  sealed trait InitializedModule
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait IsAnnotatedWithAny extends PullElementFlags
+  sealed trait IsAnnotatedWithAny
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait MustCaptureThis extends PullElementFlags
+  sealed trait MustCaptureThis
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait None extends PullElementFlags
+  sealed trait None
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Optional extends PullElementFlags
+  sealed trait Optional
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Private extends PullElementFlags
+  sealed trait Private
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait PropertyParameter extends PullElementFlags
+  sealed trait PropertyParameter
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Public extends PullElementFlags
+  sealed trait Public
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Signature extends PullElementFlags
+  sealed trait Signature
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait SomeInitializedModule extends PullElementFlags
+  sealed trait SomeInitializedModule
+    extends StObject
+       with PullElementFlags
   
   @js.native
-  sealed trait Static extends PullElementFlags
+  sealed trait Static
+    extends StObject
+       with PullElementFlags
 }

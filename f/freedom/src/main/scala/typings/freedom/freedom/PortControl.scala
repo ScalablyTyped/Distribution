@@ -3,7 +3,6 @@ package typings.freedom.freedom
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PortControl {
@@ -11,26 +10,25 @@ object PortControl {
   // A collection of Mappings
   type ActiveMappings = StringDictionary[Mapping]
   
-  @js.native
   trait Mapping extends StObject {
     
-    var errInfo: js.UndefOr[String] = js.native
+    var errInfo: js.UndefOr[String] = js.undefined
     
-    var externalIp: js.UndefOr[String] = js.native
+    var externalIp: js.UndefOr[String] = js.undefined
     
-    var externalPort: Double = js.native
+    var externalPort: Double
     
-    var internalIp: String = js.native
+    var internalIp: String
     
-    var internalPort: Double = js.native
+    var internalPort: Double
     
-    var lifetime: Double = js.native
+    var lifetime: Double
     
-    var nonce: js.UndefOr[js.Array[Double]] = js.native
+    var nonce: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var timeoutId: js.UndefOr[Double] = js.native
+    var timeoutId: js.UndefOr[Double] = js.undefined
   }
   object Mapping {
     
@@ -124,14 +122,13 @@ object PortControl {
   }
   
   // An object returned by probeProtocolSupport()
-  @js.native
   trait ProtocolSupport extends StObject {
     
-    var natPmp: Boolean = js.native
+    var natPmp: Boolean
     
-    var pcp: Boolean = js.native
+    var pcp: Boolean
     
-    var upnp: Boolean = js.native
+    var upnp: Boolean
   }
   object ProtocolSupport {
     

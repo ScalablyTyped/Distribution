@@ -11,7 +11,6 @@ import typings.node.nodeStrings.wantTrailers
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,9 +37,9 @@ trait Http2Stream extends Duplex {
   val bufferSize: Double = js.native
   
   def close(): Unit = js.native
-  def close(code: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, callback: js.Function0[Unit]): Unit = js.native
+  def close(code: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   val closed: Boolean = js.native
   

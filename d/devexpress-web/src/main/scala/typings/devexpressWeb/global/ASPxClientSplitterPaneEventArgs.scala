@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSplitterPaneEventArgs")
 @js.native
 class ASPxClientSplitterPaneEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSplitterPaneEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSplitterPaneEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSplitterPaneEventArgs class.
     * @param pane A ASPxClientSplitterPane object representing a splitter pane related to the generated event.
     */
   def this(pane: typings.devexpressWeb.ASPxClientSplitterPane) = this()
+  
+  /**
+    * Gets the pane object related to the event.
+    */
+  /* CompleteClass */
+  var pane: typings.devexpressWeb.ASPxClientSplitterPane = js.native
 }

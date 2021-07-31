@@ -2,11 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToolbarAndroidProps extends ViewProps {
+trait ToolbarAndroidProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Sets possible actions on the toolbar as part of the action menu. These are displayed as icons
@@ -21,7 +21,7 @@ trait ToolbarAndroidProps extends ViewProps {
     * `ifRoom` or `never`
     * * `showWithText`: boolean, whether to show text alongside the icon or not
     */
-  var actions: js.UndefOr[js.Array[ToolbarAndroidAction]] = js.native
+  var actions: js.UndefOr[js.Array[ToolbarAndroidAction]] = js.undefined
   
   /**
     * Sets the content inset for the toolbar ending edge.
@@ -30,7 +30,7 @@ trait ToolbarAndroidProps extends ViewProps {
     * margin for these components and can be used to effectively align
     * Toolbar content along well-known gridlines.
     */
-  var contentInsetEnd: js.UndefOr[Double] = js.native
+  var contentInsetEnd: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the content inset for the toolbar starting edge.
@@ -39,34 +39,34 @@ trait ToolbarAndroidProps extends ViewProps {
     * minimum margin for these components and can be used to effectively
     * align Toolbar content along well-known gridlines.
     */
-  var contentInsetStart: js.UndefOr[Double] = js.native
+  var contentInsetStart: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the toolbar logo.
     */
-  var logo: js.UndefOr[ImageURISource] = js.native
+  var logo: js.UndefOr[ImageURISource] = js.undefined
   
   /**
     * Sets the navigation icon.
     */
-  var navIcon: js.UndefOr[ImageURISource] = js.native
+  var navIcon: js.UndefOr[ImageURISource] = js.undefined
   
   /**
     * Callback that is called when an action is selected. The only
     * argument that is passed to the callback is the position of the
     * action in the actions array.
     */
-  var onActionSelected: js.UndefOr[js.Function1[/* position */ Double, Unit]] = js.native
+  var onActionSelected: js.UndefOr[js.Function1[/* position */ Double, Unit]] = js.undefined
   
   /**
     * Callback called when the icon is selected.
     */
-  var onIconClicked: js.UndefOr[js.Function0[Unit]] = js.native
+  var onIconClicked: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Sets the overflow icon.
     */
-  var overflowIcon: js.UndefOr[ImageURISource] = js.native
+  var overflowIcon: js.UndefOr[ImageURISource] = js.undefined
   
   /**
     * Used to set the toolbar direction to RTL.
@@ -76,27 +76,27 @@ trait ToolbarAndroidProps extends ViewProps {
     * setLayoutDirection(LayoutDirection.RTL) in your MainActivity
     * onCreate method.
     */
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the toolbar subtitle.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the toolbar subtitle color.
     */
-  var subtitleColor: js.UndefOr[ColorValue] = js.native
+  var subtitleColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Sets the toolbar title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the toolbar title color.
     */
-  var titleColor: js.UndefOr[ColorValue] = js.native
+  var titleColor: js.UndefOr[ColorValue] = js.undefined
 }
 object ToolbarAndroidProps {
   

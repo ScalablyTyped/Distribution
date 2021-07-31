@@ -2,107 +2,105 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var axisDefaults: js.UndefOr[js.Any] = js.native
+  var axisDefaults: js.UndefOr[js.Any] = js.undefined
   
-  var axisLabelClick: js.UndefOr[js.Function1[/* e */ StockChartAxisLabelClickEvent, Unit]] = js.native
+  var axisLabelClick: js.UndefOr[js.Function1[/* e */ StockChartAxisLabelClickEvent, Unit]] = js.undefined
   
-  var categoryAxis: js.UndefOr[StockChartCategoryAxisItem | js.Array[StockChartCategoryAxisItem]] = js.native
+  var categoryAxis: js.UndefOr[StockChartCategoryAxisItem | js.Array[StockChartCategoryAxisItem]] = js.undefined
   
-  var chartArea: js.UndefOr[StockChartChartArea] = js.native
+  var chartArea: js.UndefOr[StockChartChartArea] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ StockChartEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ StockChartEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var dateField: js.UndefOr[String] = js.native
+  var dateField: js.UndefOr[String] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ StockChartDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ StockChartDragEvent, Unit]] = js.undefined
   
-  var dragEnd: js.UndefOr[js.Function1[/* e */ StockChartDragEndEvent, Unit]] = js.native
+  var dragEnd: js.UndefOr[js.Function1[/* e */ StockChartDragEndEvent, Unit]] = js.undefined
   
-  var dragStart: js.UndefOr[js.Function1[/* e */ StockChartDragStartEvent, Unit]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ StockChartDragStartEvent, Unit]] = js.undefined
   
-  var legend: js.UndefOr[StockChartLegend] = js.native
+  var legend: js.UndefOr[StockChartLegend] = js.undefined
   
-  var legendItemClick: js.UndefOr[js.Function1[/* e */ StockChartLegendItemClickEvent, Unit]] = js.native
+  var legendItemClick: js.UndefOr[js.Function1[/* e */ StockChartLegendItemClickEvent, Unit]] = js.undefined
   
-  var legendItemHover: js.UndefOr[js.Function1[/* e */ StockChartLegendItemHoverEvent, Unit]] = js.native
+  var legendItemHover: js.UndefOr[js.Function1[/* e */ StockChartLegendItemHoverEvent, Unit]] = js.undefined
   
-  var legendItemLeave: js.UndefOr[js.Function1[/* e */ StockChartLegendItemLeaveEvent, Unit]] = js.native
+  var legendItemLeave: js.UndefOr[js.Function1[/* e */ StockChartLegendItemLeaveEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigator: js.UndefOr[StockChartNavigator] = js.native
+  var navigator: js.UndefOr[StockChartNavigator] = js.undefined
   
-  var noteClick: js.UndefOr[js.Function1[/* e */ StockChartNoteClickEvent, Unit]] = js.native
+  var noteClick: js.UndefOr[js.Function1[/* e */ StockChartNoteClickEvent, Unit]] = js.undefined
   
-  var noteHover: js.UndefOr[js.Function1[/* e */ StockChartNoteHoverEvent, Unit]] = js.native
+  var noteHover: js.UndefOr[js.Function1[/* e */ StockChartNoteHoverEvent, Unit]] = js.undefined
   
-  var noteLeave: js.UndefOr[js.Function1[/* e */ StockChartNoteLeaveEvent, Unit]] = js.native
+  var noteLeave: js.UndefOr[js.Function1[/* e */ StockChartNoteLeaveEvent, Unit]] = js.undefined
   
-  var paneRender: js.UndefOr[js.Function1[/* e */ StockChartPaneRenderEvent, Unit]] = js.native
+  var paneRender: js.UndefOr[js.Function1[/* e */ StockChartPaneRenderEvent, Unit]] = js.undefined
   
-  var panes: js.UndefOr[js.Array[StockChartPane]] = js.native
+  var panes: js.UndefOr[js.Array[StockChartPane]] = js.undefined
   
-  var pdf: js.UndefOr[StockChartPdf] = js.native
+  var pdf: js.UndefOr[StockChartPdf] = js.undefined
   
-  var persistSeriesVisibility: js.UndefOr[Boolean] = js.native
+  var persistSeriesVisibility: js.UndefOr[Boolean] = js.undefined
   
-  var plotArea: js.UndefOr[StockChartPlotArea] = js.native
+  var plotArea: js.UndefOr[StockChartPlotArea] = js.undefined
   
-  var plotAreaClick: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaClickEvent, Unit]] = js.native
+  var plotAreaClick: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaClickEvent, Unit]] = js.undefined
   
-  var plotAreaHover: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaHoverEvent, Unit]] = js.native
+  var plotAreaHover: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaHoverEvent, Unit]] = js.undefined
   
-  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaLeaveEvent, Unit]] = js.native
+  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ StockChartPlotAreaLeaveEvent, Unit]] = js.undefined
   
-  var render: js.UndefOr[js.Function1[/* e */ StockChartRenderEvent, Unit]] = js.native
+  var render: js.UndefOr[js.Function1[/* e */ StockChartRenderEvent, Unit]] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ StockChartSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ StockChartSelectEvent, Unit]] = js.undefined
   
-  var selectEnd: js.UndefOr[js.Function1[/* e */ StockChartSelectEndEvent, Unit]] = js.native
+  var selectEnd: js.UndefOr[js.Function1[/* e */ StockChartSelectEndEvent, Unit]] = js.undefined
   
-  var selectStart: js.UndefOr[js.Function1[/* e */ StockChartSelectStartEvent, Unit]] = js.native
+  var selectStart: js.UndefOr[js.Function1[/* e */ StockChartSelectStartEvent, Unit]] = js.undefined
   
-  var series: js.UndefOr[js.Array[StockChartSeriesItem]] = js.native
+  var series: js.UndefOr[js.Array[StockChartSeriesItem]] = js.undefined
   
-  var seriesClick: js.UndefOr[js.Function1[/* e */ StockChartSeriesClickEvent, Unit]] = js.native
+  var seriesClick: js.UndefOr[js.Function1[/* e */ StockChartSeriesClickEvent, Unit]] = js.undefined
   
-  var seriesColors: js.UndefOr[js.Any] = js.native
+  var seriesColors: js.UndefOr[js.Any] = js.undefined
   
-  var seriesDefaults: js.UndefOr[StockChartSeriesDefaults] = js.native
+  var seriesDefaults: js.UndefOr[StockChartSeriesDefaults] = js.undefined
   
-  var seriesHover: js.UndefOr[js.Function1[/* e */ StockChartSeriesHoverEvent, Unit]] = js.native
+  var seriesHover: js.UndefOr[js.Function1[/* e */ StockChartSeriesHoverEvent, Unit]] = js.undefined
   
-  var seriesLeave: js.UndefOr[js.Function1[/* e */ StockChartSeriesLeaveEvent, Unit]] = js.native
+  var seriesLeave: js.UndefOr[js.Function1[/* e */ StockChartSeriesLeaveEvent, Unit]] = js.undefined
   
-  var seriesOver: js.UndefOr[js.Function1[/* e */ StockChartSeriesOverEvent, Unit]] = js.native
+  var seriesOver: js.UndefOr[js.Function1[/* e */ StockChartSeriesOverEvent, Unit]] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[StockChartTitle] = js.native
+  var title: js.UndefOr[StockChartTitle] = js.undefined
   
-  var tooltip: js.UndefOr[StockChartTooltip] = js.native
+  var tooltip: js.UndefOr[StockChartTooltip] = js.undefined
   
-  var transitions: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.undefined
   
-  var valueAxis: js.UndefOr[StockChartValueAxisItem | js.Array[StockChartValueAxisItem]] = js.native
+  var valueAxis: js.UndefOr[StockChartValueAxisItem | js.Array[StockChartValueAxisItem]] = js.undefined
   
-  var zoom: js.UndefOr[js.Function1[/* e */ StockChartZoomEvent, Unit]] = js.native
+  var zoom: js.UndefOr[js.Function1[/* e */ StockChartZoomEvent, Unit]] = js.undefined
   
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ StockChartZoomEndEvent, Unit]] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ StockChartZoomEndEvent, Unit]] = js.undefined
   
-  var zoomStart: js.UndefOr[js.Function1[/* e */ StockChartZoomStartEvent, Unit]] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ StockChartZoomStartEvent, Unit]] = js.undefined
 }
 object StockChartOptions {
   

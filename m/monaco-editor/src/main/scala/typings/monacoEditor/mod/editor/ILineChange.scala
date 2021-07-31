@@ -2,13 +2,13 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILineChange extends IChange {
+trait ILineChange
+  extends StObject
+     with IChange {
   
-  val charChanges: js.UndefOr[js.Array[ICharChange]] = js.native
+  val charChanges: js.UndefOr[js.Array[ICharChange]] = js.undefined
 }
 object ILineChange {
   

@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reasons extends StObject {
   
-  var reasons: js.UndefOr[js.Array[String]] = js.native
+  var reasons: js.UndefOr[js.Array[String]] = js.undefined
   
-  var unreliable: Boolean = js.native
+  var unreliable: Boolean
 }
 object Reasons {
   

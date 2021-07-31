@@ -8,7 +8,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -269,23 +268,22 @@ object mod {
     def system(callback: js.Function2[/* error */ Error, /* OS */ String, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FilePermissions extends StObject {
     
     /**
       * An empty string or any combination of 'r', 'w', 'x'.
       */
-    var group: String = js.native
+    var group: String
     
     /**
       * An empty string or any combination of 'r', 'w', 'x'.
       */
-    var other: String = js.native
+    var other: String
     
     /**
       * An empty string or any combination of 'r', 'w', 'x'.
       */
-    var user: String = js.native
+    var user: String
   }
   object FilePermissions {
     
@@ -309,53 +307,52 @@ object mod {
     }
   }
   
-  @js.native
   trait ListingElement extends StObject {
     
     /**
       * The last modified date of the entry
       */
-    var date: Date = js.native
+    var date: Date
     
     /**
       * The group name or ID that this entry belongs to **(*NIX only)**.
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the entry
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The user name or ID that this entry belongs to **(*NIX only)**.
       */
-    var owner: js.UndefOr[String] = js.native
+    var owner: js.UndefOr[String] = js.undefined
     
     /**
       * The various permissions for this entry **(*NIX only)**
       */
-    var rights: js.UndefOr[FilePermissions] = js.native
+    var rights: js.UndefOr[FilePermissions] = js.undefined
     
     /**
       * The size of the entry in bytes
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * True if the sticky bit is set for this entry **(*NIX only)**.
       */
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
     
     /**
       * For symlink entries, this is the symlink's target **(*NIX only)**.
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * A single character denoting the entry type: 'd' for directory, '-' for file (or 'l' for symlink on **\*NIX only**).
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ListingElement {
     
@@ -413,59 +410,58 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * How long (in milliseconds) to wait for the control connection to be established. Default: 10000
       */
-    var connTimeout: js.UndefOr[Double] = js.native
+    var connTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Debug function to invoke to enable debug logging.
       */
-    var debug: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var debug: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
     /**
       * The hostname or IP address of the FTP server. Default: 'localhost'
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * How often (in milliseconds) to send a 'dummy' (NOOP) command to keep the connection alive. Default: 10000
       */
-    var keepalive: js.UndefOr[Double] = js.native
+    var keepalive: js.UndefOr[Double] = js.undefined
     
     /**
       * Password for authentication. Default: 'anonymous@'
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * How long (in milliseconds) to wait for a PASV data connection to be established. Default: 10000
       */
-    var pasvTimeout: js.UndefOr[Double] = js.native
+    var pasvTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The port of the FTP server. Default: 21
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to true for both control and data connection encryption, 'control' for control connection encryption only, or 'implicit' for
       * implicitly encrypted control connection (this mode is deprecated in modern times, but usually uses port 990) Default: false
       */
-    var secure: js.UndefOr[String | Boolean] = js.native
+    var secure: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Additional options to be passed to tls.connect(). Default: (none)
       */
-    var secureOptions: js.UndefOr[ConnectionOptions] = js.native
+    var secureOptions: js.UndefOr[ConnectionOptions] = js.undefined
     
     /**
       * Username for authentication. Default: 'anonymous'
       */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object Options {
     

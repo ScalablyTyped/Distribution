@@ -2,63 +2,61 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsCrookedLineShapeOptions extends StObject {
   
   /**
     * (Highstock) Name of the dash style to use for the shape's stroke.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) The color of the shape's fill.
     */
-  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) The height of the shape.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The radius of the shape.
     */
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Defines additional snapping area around an annotation making
     * this annotation to focus. Defined in pixels.
     */
-  var snap: js.UndefOr[Double] = js.native
+  var snap: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The URL for an image to use as the annotation shape. Note,
     * type has to be set to `'image'`.
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The color of the shape's stroke.
     */
-  var stroke: js.UndefOr[ColorString] = js.native
+  var stroke: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highstock) The pixel stroke width of the shape.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The type of the shape, e.g. circle or rectangle.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The width of the shape.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsCrookedLineShapeOptions {
   

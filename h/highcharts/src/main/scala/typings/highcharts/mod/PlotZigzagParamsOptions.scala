@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotZigzagParamsOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait PlotZigzagParamsOptions extends StObject {
     * For example deviation=1 means the indicator will ignore all price
     * movements less than 1%.
     */
-  var deviation: js.UndefOr[Double] = js.native
+  var deviation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The point index which indicator calculations will base - high
@@ -23,7 +21,7 @@ trait PlotZigzagParamsOptions extends StObject {
     * For example using OHLC data, index=1 means the indicator will be
     * calculated using High values.
     */
-  var highIndex: js.UndefOr[Double] = js.native
+  var highIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The point index which indicator calculations will base - low
@@ -32,7 +30,7 @@ trait PlotZigzagParamsOptions extends StObject {
     * For example using OHLC data, index=2 means the indicator will be
     * calculated using Low values.
     */
-  var lowIndex: js.UndefOr[Double] = js.native
+  var lowIndex: js.UndefOr[Double] = js.undefined
 }
 object PlotZigzagParamsOptions {
   

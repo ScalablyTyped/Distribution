@@ -4,17 +4,15 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: String = js.native
+  var align: String
   
-  var icon: Icon | Element = js.native
+  var icon: Icon | Element
   
-  var title: String = js.native
+  var title: String
 }
 object Align {
   

@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.typesInventoryS3BucketDestinationMod.Invent
 import typings.awsSdkClientS3Browser.typesInventoryS3BucketDestinationMod.UnmarshalledInventoryS3BucketDestination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInventoryDestinationMod {
   
-  @js.native
   trait InventoryDestination extends StObject {
     
     /**
       * <p>Contains the bucket name, file format, bucket owner (optional), and prefix (optional) where inventory results are published.</p>
       */
-    var S3BucketDestination: InventoryS3BucketDestination = js.native
+    var S3BucketDestination: InventoryS3BucketDestination
   }
   object InventoryDestination {
     
@@ -33,14 +31,15 @@ object typesInventoryDestinationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledInventoryDestination extends InventoryDestination {
+  trait UnmarshalledInventoryDestination
+    extends StObject
+       with InventoryDestination {
     
     /**
       * <p>Contains the bucket name, file format, bucket owner (optional), and prefix (optional) where inventory results are published.</p>
       */
     @JSName("S3BucketDestination")
-    var S3BucketDestination_UnmarshalledInventoryDestination: UnmarshalledInventoryS3BucketDestination = js.native
+    var S3BucketDestination_UnmarshalledInventoryDestination: UnmarshalledInventoryS3BucketDestination
   }
   object UnmarshalledInventoryDestination {
     

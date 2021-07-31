@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoHashGridAggregation")
 @js.native
-class GeoHashGridAggregation protected () extends Aggregation {
+class GeoHashGridAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that works on geo_point fields and groups points into buckets
     that represent cells in a grid.

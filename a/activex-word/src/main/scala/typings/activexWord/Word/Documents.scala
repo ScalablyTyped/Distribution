@@ -2,71 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Documents extends StObject {
   
   def Add(): Document = js.native
-  def Add(
-    Template: js.UndefOr[scala.Nothing],
-    NewTemplate: js.UndefOr[scala.Nothing],
-    DocumentType: js.UndefOr[scala.Nothing],
-    Visible: Boolean
-  ): Document = js.native
-  def Add(
-    Template: js.UndefOr[scala.Nothing],
-    NewTemplate: js.UndefOr[scala.Nothing],
-    DocumentType: WdNewDocumentType
-  ): Document = js.native
-  def Add(
-    Template: js.UndefOr[scala.Nothing],
-    NewTemplate: js.UndefOr[scala.Nothing],
-    DocumentType: WdNewDocumentType,
-    Visible: Boolean
-  ): Document = js.native
-  def Add(Template: js.UndefOr[scala.Nothing], NewTemplate: Boolean): Document = js.native
-  def Add(
-    Template: js.UndefOr[scala.Nothing],
-    NewTemplate: Boolean,
-    DocumentType: js.UndefOr[scala.Nothing],
-    Visible: Boolean
-  ): Document = js.native
-  def Add(Template: js.UndefOr[scala.Nothing], NewTemplate: Boolean, DocumentType: WdNewDocumentType): Document = js.native
-  def Add(
-    Template: js.UndefOr[scala.Nothing],
-    NewTemplate: Boolean,
-    DocumentType: WdNewDocumentType,
-    Visible: Boolean
-  ): Document = js.native
   def Add(Template: String): Document = js.native
-  def Add(
-    Template: String,
-    NewTemplate: js.UndefOr[scala.Nothing],
-    DocumentType: js.UndefOr[scala.Nothing],
-    Visible: Boolean
-  ): Document = js.native
-  def Add(Template: String, NewTemplate: js.UndefOr[scala.Nothing], DocumentType: WdNewDocumentType): Document = js.native
-  def Add(
-    Template: String,
-    NewTemplate: js.UndefOr[scala.Nothing],
-    DocumentType: WdNewDocumentType,
-    Visible: Boolean
-  ): Document = js.native
   def Add(Template: String, NewTemplate: Boolean): Document = js.native
-  def Add(Template: String, NewTemplate: Boolean, DocumentType: js.UndefOr[scala.Nothing], Visible: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Boolean, DocumentType: Unit, Visible: Boolean): Document = js.native
   def Add(Template: String, NewTemplate: Boolean, DocumentType: WdNewDocumentType): Document = js.native
   def Add(Template: String, NewTemplate: Boolean, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
   
   /** @param string [PostID=''] */
   def AddBlogDocument(ProviderID: String, PostURL: String, BlogName: String): Document = js.native
   def AddBlogDocument(ProviderID: String, PostURL: String, BlogName: String, PostID: String): Document = js.native
   
   def AddOld(): Document = js.native
-  def AddOld(Template: js.UndefOr[scala.Nothing], NewTemplate: js.Any): Document = js.native
   def AddOld(Template: js.Any): Document = js.native
   def AddOld(Template: js.Any, NewTemplate: js.Any): Document = js.native
+  def AddOld(Template: Unit, NewTemplate: js.Any): Document = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -75,17 +40,13 @@ trait Documents extends StObject {
   def CheckOut(FileName: String): Unit = js.native
   
   def Close(): Unit = js.native
-  def Close(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    OriginalFormat: js.UndefOr[scala.Nothing],
-    RouteDocument: js.Any
-  ): Unit = js.native
-  def Close(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any): Unit = js.native
-  def Close(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: js.UndefOr[scala.Nothing], RouteDocument: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: js.Any, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: js.Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
   
   val Count: Double = js.native
   
@@ -181,9 +142,9 @@ trait Documents extends StObject {
   val Parent: js.Any = js.native
   
   def Save(): Unit = js.native
-  def Save(NoPrompt: js.UndefOr[scala.Nothing], OriginalFormat: js.Any): Unit = js.native
   def Save(NoPrompt: js.Any): Unit = js.native
   def Save(NoPrompt: js.Any, OriginalFormat: js.Any): Unit = js.native
+  def Save(NoPrompt: Unit, OriginalFormat: js.Any): Unit = js.native
   
   @JSName("Word.Documents_typekey")
   var WordDotDocuments_typekey: Documents = js.native

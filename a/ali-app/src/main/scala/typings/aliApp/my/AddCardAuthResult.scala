@@ -3,12 +3,10 @@ package typings.aliApp.my
 import typings.aliApp.anon.Appid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 会员开卡授权 https://docs.alipay.com/mini/api/add-card-auth
-@js.native
 trait AddCardAuthResult extends StObject {
   
   // false 表示领卡失败
@@ -21,15 +19,15 @@ trait AddCardAuthResult extends StObject {
     * JSAPI_PARAM_INVALID | String | url 为空或非法参数
     * JSAPI_SYSTEM_ERROR | String | 系统错误
     */
-  var code: String = js.native
+  var code: String
   
   // 9000 表示成功
-  var result: Appid = js.native
+  var result: Appid
   
   // true 表示领卡成功
-  var resultStatus: String = js.native
+  var resultStatus: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object AddCardAuthResult {
   

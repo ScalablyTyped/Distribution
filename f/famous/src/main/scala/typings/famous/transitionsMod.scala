@@ -2,7 +2,6 @@ package typings.famous
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionsMod {
@@ -13,140 +12,110 @@ object transitionsMod {
   /* static members */
   object Curves {
     
-    @JSImport("famous/transitions", "Curves.easeIn")
+    @JSImport("famous/transitions", "Curves")
     @js.native
-    def easeIn(t: Double): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("famous/transitions", "Curves.easeInOut")
-    @js.native
-    def easeInOut(t: Double): Double = js.native
+    @scala.inline
+    def easeIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.easeOut")
-    @js.native
-    def easeOut(t: Double): Double = js.native
+    @scala.inline
+    def easeInOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeInOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.easeOutBounce")
-    @js.native
-    def easeOutBounce(t: Double): Double = js.native
+    @scala.inline
+    def easeOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.flat")
-    @js.native
-    def flat(t: Double): Double = js.native
+    @scala.inline
+    def easeOutBounce(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOutBounce")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inBounce")
-    @js.native
-    def inBounce(t: Double): Double = js.native
+    @scala.inline
+    def flat(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("flat")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inCirc")
-    @js.native
-    def inCirc(t: Double): Double = js.native
+    @scala.inline
+    def inBounce(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inBounce")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inCubic")
-    @js.native
-    def inCubic(t: Double): Double = js.native
+    @scala.inline
+    def inCirc(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inCirc")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inElastic")
-    @js.native
-    def inElastic(t: Double): Double = js.native
+    @scala.inline
+    def inCubic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inCubic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inExpo")
-    @js.native
-    def inExpo(t: Double): Double = js.native
+    @scala.inline
+    def inElastic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inElastic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutBounce")
-    @js.native
-    def inOutBounce(t: Double): Double = js.native
+    @scala.inline
+    def inExpo(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inExpo")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutCirc")
-    @js.native
-    def inOutCirc(t: Double): Double = js.native
+    @scala.inline
+    def inOutBounce(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutBounce")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutCubic")
-    @js.native
-    def inOutCubic(t: Double): Double = js.native
+    @scala.inline
+    def inOutCirc(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutCirc")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutElastic")
-    @js.native
-    def inOutElastic(t: Double): Double = js.native
+    @scala.inline
+    def inOutCubic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutCubic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutExp")
-    @js.native
-    def inOutExp(t: Double): Double = js.native
+    @scala.inline
+    def inOutElastic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutElastic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutQuad")
-    @js.native
-    def inOutQuad(t: Double): Double = js.native
+    @scala.inline
+    def inOutExp(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutExp")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutQuart")
-    @js.native
-    def inOutQuart(t: Double): Double = js.native
+    @scala.inline
+    def inOutQuad(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutQuad")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutQuint")
-    @js.native
-    def inOutQuint(t: Double): Double = js.native
+    @scala.inline
+    def inOutQuart(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutQuart")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inOutSine")
-    @js.native
-    def inOutSine(t: Double): Double = js.native
+    @scala.inline
+    def inOutQuint(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutQuint")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inQuad")
-    @js.native
-    def inQuad(t: Double): Double = js.native
+    @scala.inline
+    def inOutSine(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inOutSine")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inQuart")
-    @js.native
-    def inQuart(t: Double): Double = js.native
+    @scala.inline
+    def inQuad(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inQuad")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inQuint")
-    @js.native
-    def inQuint(t: Double): Double = js.native
+    @scala.inline
+    def inQuart(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inQuart")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.inSine")
-    @js.native
-    def inSine(t: Double): Double = js.native
+    @scala.inline
+    def inQuint(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inQuint")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.linear")
-    @js.native
-    def linear(t: Double): Double = js.native
+    @scala.inline
+    def inSine(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inSine")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outBounce")
-    @js.native
-    def outBounce(t: Double): Double = js.native
+    @scala.inline
+    def linear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outCirc")
-    @js.native
-    def outCirc(t: Double): Double = js.native
+    @scala.inline
+    def outBounce(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outBounce")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outCubic")
-    @js.native
-    def outCubic(t: Double): Double = js.native
+    @scala.inline
+    def outCirc(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outCirc")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outElastic")
-    @js.native
-    def outElastic(t: Double): Double = js.native
+    @scala.inline
+    def outCubic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outCubic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outExpo")
-    @js.native
-    def outExpo(t: Double): Double = js.native
+    @scala.inline
+    def outElastic(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outElastic")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outQuad")
-    @js.native
-    def outQuad(t: Double): Double = js.native
+    @scala.inline
+    def outExpo(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outExpo")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outQuart")
-    @js.native
-    def outQuart(t: Double): Double = js.native
+    @scala.inline
+    def outQuad(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outQuad")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outQuint")
-    @js.native
-    def outQuint(t: Double): Double = js.native
+    @scala.inline
+    def outQuart(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outQuart")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.outSine")
-    @js.native
-    def outSine(t: Double): Double = js.native
+    @scala.inline
+    def outQuint(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outQuint")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("famous/transitions", "Curves.spring")
-    @js.native
-    def spring(t: Double): Double = js.native
+    @scala.inline
+    def outSine(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outSine")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def spring(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("spring")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
 }

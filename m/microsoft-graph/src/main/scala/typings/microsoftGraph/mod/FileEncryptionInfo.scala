@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileEncryptionInfo extends StObject {
   
   // The key used to encrypt the file content.
-  var encryptionKey: js.UndefOr[NullableOption[Double]] = js.native
+  var encryptionKey: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The file digest prior to encryption.
-  var fileDigest: js.UndefOr[NullableOption[Double]] = js.native
+  var fileDigest: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The file digest algorithm.
-  var fileDigestAlgorithm: js.UndefOr[NullableOption[String]] = js.native
+  var fileDigestAlgorithm: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The initialization vector used for the encryption algorithm.
-  var initializationVector: js.UndefOr[NullableOption[Double]] = js.native
+  var initializationVector: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The hash of the encrypted file content + IV (content hash).
-  var mac: js.UndefOr[NullableOption[Double]] = js.native
+  var mac: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The key used to get mac.
-  var macKey: js.UndefOr[NullableOption[Double]] = js.native
+  var macKey: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The profile identifier.
-  var profileIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var profileIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileEncryptionInfo {
   

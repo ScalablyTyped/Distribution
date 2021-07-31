@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcClassicLinkResult extends StObject {
   
   /**
     * The ClassicLink status of one or more VPCs.
     */
-  var Vpcs: js.UndefOr[VpcClassicLinkList] = js.native
+  var Vpcs: js.UndefOr[VpcClassicLinkList] = js.undefined
 }
 object DescribeVpcClassicLinkResult {
   

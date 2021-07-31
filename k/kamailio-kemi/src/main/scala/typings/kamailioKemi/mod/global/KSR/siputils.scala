@@ -2,56 +2,47 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siputils {
   
-  @JSGlobal("KSR.siputils.has_totag")
+  @JSGlobal("KSR.siputils")
   @js.native
-  def hasTotag(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.siputils.is_alphanum")
-  @js.native
-  def isAlphanum(tval: String): Double = js.native
+  @scala.inline
+  def hasTotag(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("has_totag")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_alphanumex")
-  @js.native
-  def isAlphanumex(tval: String, eset: String): Double = js.native
+  @scala.inline
+  def isAlphanum(tval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_alphanum")(tval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_first_hop")
-  @js.native
-  def isFirstHop(): Double = js.native
+  @scala.inline
+  def isAlphanumex(tval: String, eset: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_alphanumex")(tval.asInstanceOf[js.Any], eset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_numeric")
-  @js.native
-  def isNumeric(tval: String): Double = js.native
+  @scala.inline
+  def isFirstHop(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_first_hop")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_reply")
-  @js.native
-  def isReply(): Double = js.native
+  @scala.inline
+  def isNumeric(tval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_numeric")(tval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_request")
-  @js.native
-  def isRequest(): Double = js.native
+  @scala.inline
+  def isReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_reply")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_tel_number")
-  @js.native
-  def isTelNumber(tval: String): Double = js.native
+  @scala.inline
+  def isRequest(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_request")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_uri")
-  @js.native
-  def isUri(suri: String): Double = js.native
+  @scala.inline
+  def isTelNumber(tval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_tel_number")(tval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.is_user")
-  @js.native
-  def isUser(suser: String): Double = js.native
+  @scala.inline
+  def isUri(suri: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_uri")(suri.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.uri_param")
-  @js.native
-  def uriParam(sparam: String): Double = js.native
+  @scala.inline
+  def isUser(suser: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_user")(suser.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.siputils.uri_param_value")
-  @js.native
-  def uriParamValue(sparam: String, svalue: String): Double = js.native
+  @scala.inline
+  def uriParam(sparam: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uri_param")(sparam.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def uriParamValue(sparam: String, svalue: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("uri_param_value")(sparam.asInstanceOf[js.Any], svalue.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

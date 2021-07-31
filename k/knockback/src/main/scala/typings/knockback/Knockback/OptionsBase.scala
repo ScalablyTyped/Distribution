@@ -2,22 +2,20 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsBase extends StObject {
   
   // a store used to cache and share view models.
-  var factory: js.UndefOr[Factory] = js.native
+  var factory: js.UndefOr[Factory] = js.undefined
   
   // a factory used to create view models.
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   // the path to the value (used to create related observables from the factory).
-  var store: js.UndefOr[Store] = js.native
+  var store: js.UndefOr[Store] = js.undefined
 }
 object OptionsBase {
   

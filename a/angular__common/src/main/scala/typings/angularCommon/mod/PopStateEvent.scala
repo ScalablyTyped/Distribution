@@ -2,19 +2,17 @@ package typings.angularCommon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopStateEvent extends StObject {
   
-  var pop: js.UndefOr[Boolean] = js.native
+  var pop: js.UndefOr[Boolean] = js.undefined
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PopStateEvent {
   

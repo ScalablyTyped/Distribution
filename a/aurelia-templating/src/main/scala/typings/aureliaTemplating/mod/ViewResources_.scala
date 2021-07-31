@@ -4,7 +4,6 @@ import typings.aureliaBinding.mod.BindingBehaviorResource
 import typings.aureliaBinding.mod.ValueConverterResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewResources")
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class ViewResources_ () extends StObject {
   def this(parent: ViewResources_) = this()
-  def this(parent: js.UndefOr[scala.Nothing], viewUrl: String) = this()
+  def this(parent: Unit, viewUrl: String) = this()
   def this(parent: ViewResources_, viewUrl: String) = this()
   
   /**
@@ -30,9 +29,9 @@ class ViewResources_ () extends StObject {
     * @returns {HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource}
     */
   def autoRegister(): js.Any = js.native
-  def autoRegister(container: js.UndefOr[scala.Nothing], impl: js.Any): js.Any = js.native
   def autoRegister(container: js.Any): js.Any = js.native
   def autoRegister(container: js.Any, impl: js.Any): js.Any = js.native
+  def autoRegister(container: Unit, impl: js.Any): js.Any = js.native
   
   /**
     * A custom binding language used in the view.
@@ -146,15 +145,17 @@ class ViewResources_ () extends StObject {
 /* static members */
 object ViewResources_ {
   
+  @JSImport("aurelia-templating", "ViewResources")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks whether the provided class contains any resource conventions
     * @param target Target class to extract metadata based on convention
     * @param existing If supplied, all custom element / attribute metadata extracted from convention will be apply to this instance
     */
-  @JSImport("aurelia-templating", "ViewResources.convention")
-  @js.native
-  def convention(target: js.Function): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = js.native
-  @JSImport("aurelia-templating", "ViewResources.convention")
-  @js.native
-  def convention(target: js.Function, existing: HtmlBehaviorResource): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = js.native
+  @scala.inline
+  def convention(target: js.Function): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
+  @scala.inline
+  def convention(target: js.Function, existing: HtmlBehaviorResource): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
 }

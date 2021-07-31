@@ -2,31 +2,29 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchData extends StObject {
   
   /**
     * 触发此次事件的触摸点列表
     */
-  var changedTouches: js.Array[Touch] = js.native
+  var changedTouches: js.Array[Touch]
   
   /**
     * 事件触发时的时间戳
     */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
   /**
     * 当前所有触摸点的列表
     */
-  var touches: js.Array[Touch] = js.native
+  var touches: js.Array[Touch]
   
   /**
     * 当前事件的类型
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TouchData {
   

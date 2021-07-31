@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * over time, multiple series may exist, one for the &quot;Open Price&quot;,
   * &quot;High Price&quot;, &quot;Low Price&quot; and &quot;Close Price&quot;.
   */
-@js.native
 trait SchemaBasicChartSeries extends StObject {
   
   /**
     * The color for elements (i.e. bars, lines, points) associated with this
     * series.  If empty, a default color is used.
     */
-  var color: js.UndefOr[SchemaColor] = js.native
+  var color: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The line style of this series. Valid only if the chartType is AREA, LINE,
     * or SCATTER. COMBO charts are also supported if the series chart type is
     * AREA or LINE.
     */
-  var lineStyle: js.UndefOr[SchemaLineStyle] = js.native
+  var lineStyle: js.UndefOr[SchemaLineStyle] = js.undefined
   
   /**
     * The data being visualized in this chart series.
     */
-  var series: js.UndefOr[SchemaChartData] = js.native
+  var series: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The minor axis that will specify the range of values for this series. For
@@ -39,14 +37,14 @@ trait SchemaBasicChartSeries extends StObject {
     * prices. It is an error to specify an axis that isn&#39;t a valid minor
     * axis for the chart&#39;s type.
     */
-  var targetAxis: js.UndefOr[String] = js.native
+  var targetAxis: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this series. Valid only if the chartType is COMBO. Different
     * types will change the way the series is visualized. Only LINE, AREA, and
     * COLUMN are supported.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaBasicChartSeries {
   

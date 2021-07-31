@@ -3,13 +3,13 @@ package typings.phaser.global
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SpineGameObject")
 @js.native
 class SpineGameObject protected ()
-  extends typings.phaser.SpineGameObject {
+  extends StObject
+     with typings.phaser.SpineGameObject {
   def this(scene: Scene, pluginManager: typings.phaser.SpinePlugin, x: Double, y: Double) = this()
   def this(scene: Scene, pluginManager: typings.phaser.SpinePlugin, x: Double, y: Double, key: String) = this()
   def this(
@@ -17,14 +17,6 @@ class SpineGameObject protected ()
     pluginManager: typings.phaser.SpinePlugin,
     x: Double,
     y: Double,
-    key: js.UndefOr[scala.Nothing],
-    animationName: String
-  ) = this()
-  def this(
-    scene: Scene,
-    pluginManager: typings.phaser.SpinePlugin,
-    x: Double,
-    y: Double,
     key: String,
     animationName: String
   ) = this()
@@ -33,16 +25,15 @@ class SpineGameObject protected ()
     pluginManager: typings.phaser.SpinePlugin,
     x: Double,
     y: Double,
-    key: js.UndefOr[scala.Nothing],
-    animationName: js.UndefOr[scala.Nothing],
-    loop: Boolean
+    key: Unit,
+    animationName: String
   ) = this()
   def this(
     scene: Scene,
     pluginManager: typings.phaser.SpinePlugin,
     x: Double,
     y: Double,
-    key: js.UndefOr[scala.Nothing],
+    key: String,
     animationName: String,
     loop: Boolean
   ) = this()
@@ -52,7 +43,7 @@ class SpineGameObject protected ()
     x: Double,
     y: Double,
     key: String,
-    animationName: js.UndefOr[scala.Nothing],
+    animationName: Unit,
     loop: Boolean
   ) = this()
   def this(
@@ -60,8 +51,17 @@ class SpineGameObject protected ()
     pluginManager: typings.phaser.SpinePlugin,
     x: Double,
     y: Double,
-    key: String,
+    key: Unit,
     animationName: String,
+    loop: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    pluginManager: typings.phaser.SpinePlugin,
+    x: Double,
+    y: Double,
+    key: Unit,
+    animationName: Unit,
     loop: Boolean
   ) = this()
 }

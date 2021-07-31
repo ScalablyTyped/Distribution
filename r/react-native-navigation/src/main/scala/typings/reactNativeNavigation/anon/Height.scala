@@ -2,36 +2,34 @@ package typings.reactNativeNavigation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   /**
     * (Android only) component height
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Component reference id, Auto generated if empty
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of your component
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Properties to pass down to the component
     */
-  var passProps: js.UndefOr[js.Object] = js.native
+  var passProps: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Android only) component width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Height {
   

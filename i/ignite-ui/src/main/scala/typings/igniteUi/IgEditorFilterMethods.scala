@@ -2,23 +2,21 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgEditorFilterMethods extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def exitEditMode(): Unit = js.native
+  def exitEditMode(): Unit
   
-  def hasInvalidMessage(): Unit = js.native
+  def hasInvalidMessage(): Unit
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setFocus(delay: js.Object, toggle: js.Object): Unit = js.native
+  def setFocus(delay: js.Object, toggle: js.Object): Unit
   
-  def validator(): Unit = js.native
+  def validator(): Unit
 }
 object IgEditorFilterMethods {
   

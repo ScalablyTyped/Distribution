@@ -11,7 +11,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelBaseMod {
@@ -96,9 +95,8 @@ object panelBaseMod {
     @scala.inline
     def defaultProps_=(x: IPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIPanelState | Null]
   }
   
   @js.native
@@ -108,26 +106,33 @@ object panelBaseMod {
   object PanelVisibilityState extends StObject {
     
     @js.native
-    sealed trait animatingClosed extends PanelVisibilityState
+    sealed trait animatingClosed
+      extends StObject
+         with PanelVisibilityState
     
     @js.native
-    sealed trait animatingOpen extends PanelVisibilityState
+    sealed trait animatingOpen
+      extends StObject
+         with PanelVisibilityState
     
     @js.native
-    sealed trait closed extends PanelVisibilityState
+    sealed trait closed
+      extends StObject
+         with PanelVisibilityState
     
     @js.native
-    sealed trait open extends PanelVisibilityState
+    sealed trait open
+      extends StObject
+         with PanelVisibilityState
   }
   
-  @js.native
   trait IPanelState extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isFooterSticky: js.UndefOr[Boolean] = js.native
+    var isFooterSticky: js.UndefOr[Boolean] = js.undefined
     
-    var visibility: PanelVisibilityState = js.native
+    var visibility: PanelVisibilityState
   }
   object IPanelState {
     

@@ -2,47 +2,45 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedSubscription extends StObject {
   
   /**
     * The authorization source of the subscription: 'RoleBased' , 'Legacy', 'Bypassed',' Direct', 'Management'. 
     * It could also be a comma separated string containing more values 'Bypassed, Direct, Management'.
     */
-  var authorizationSource: String = js.native
+  var authorizationSource: String
   
   /**
     * The environment name For example: AzureCloud, AzureChina, USGovernment, GermanCloud, or your own Dogfood environment
     */
-  var environmentName: String = js.native
+  var environmentName: String
   
   /**
     * The subscriptionId (usually a GUID).
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Display name of the subscription.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The state of the subscription. Example values: 'Enabled', 'Disabled', 'Warned', 'PastDue', 'Deleted'.
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * The tenant that the subscription belongs to.
     */
-  var tenantId: String = js.native
+  var tenantId: String
   
   /**
     * The user associated with the subscription. This could be a user or a serviceprincipal.
     */
-  var user: LinkedUser = js.native
+  var user: LinkedUser
 }
 object LinkedSubscription {
   

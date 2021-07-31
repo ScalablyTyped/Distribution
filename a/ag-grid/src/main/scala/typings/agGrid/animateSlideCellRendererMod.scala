@@ -4,7 +4,6 @@ import typings.agGrid.componentMod.Component
 import typings.agGrid.iCellRendererMod.ICellRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animateSlideCellRendererMod {
@@ -27,6 +26,11 @@ object animateSlideCellRendererMod {
     var lastValue: js.Any = js.native
     
     var params: js.Any = js.native
+    
+    /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
+      * then the grid will refresh the cell for you. */
+    /* CompleteClass */
+    override def refresh(params: js.Any): Boolean = js.native
     
     var refreshCount: js.Any = js.native
   }

@@ -2,61 +2,59 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimateOption extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
   /**
     * @private
     * 是否初始状态，一旦 render，update 后，这个状态就变成 false, clear 后恢复
     */
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
   /**
     * @private 组件或者图形是否允许注册
     * @type {false}
     */
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
   /**
     * @private 是否正在更新
     * @type {false}
     */
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
   /**
     * @private 组件或者图形是否允许注册
     * @type {false}
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object AnimateOption {
   

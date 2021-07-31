@@ -7,7 +7,6 @@ import typings.passportGoogleOauth2.anon.Accesstoken
 import typings.passportGoogleOauth2.passportGoogleOauth2Booleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,26 +19,25 @@ object mod {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequestAndParams) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     var name: String = js.native
   }
   
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var passReqToCallback: js.UndefOr[`true`] = js.native
+    var passReqToCallback: js.UndefOr[`true`] = js.undefined
     
-    var proxy: js.UndefOr[Boolean] = js.native
+    var proxy: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StrategyOptions {
     
@@ -84,24 +82,23 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsWithRequest extends StObject {
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
     
-    var scope: js.UndefOr[js.Array[String]] = js.native
+    var scope: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -165,10 +162,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object VerifyOptions {
     

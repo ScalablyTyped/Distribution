@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DOMStorage {
   
-  @js.native
   trait ClearRequest extends StObject {
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object ClearRequest {
     
@@ -28,14 +26,13 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait DomStorageItemAddedEvent extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var newValue: String = js.native
+    var newValue: String
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object DomStorageItemAddedEvent {
     
@@ -59,12 +56,11 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait DomStorageItemRemovedEvent extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object DomStorageItemRemovedEvent {
     
@@ -85,16 +81,15 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait DomStorageItemUpdatedEvent extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var newValue: String = js.native
+    var newValue: String
     
-    var oldValue: String = js.native
+    var oldValue: String
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object DomStorageItemUpdatedEvent {
     
@@ -121,10 +116,9 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait DomStorageItemsClearedEvent extends StObject {
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object DomStorageItemsClearedEvent {
     
@@ -142,10 +136,9 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait GetDOMStorageItemsRequest extends StObject {
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object GetDOMStorageItemsRequest {
     
@@ -163,10 +156,9 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait GetDOMStorageItemsResponse extends StObject {
     
-    var entries: js.Array[Item] = js.native
+    var entries: js.Array[Item]
   }
   object GetDOMStorageItemsResponse {
     
@@ -189,12 +181,11 @@ object DOMStorage {
   
   type Item = js.Array[String]
   
-  @js.native
   trait RemoveDOMStorageItemRequest extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
   }
   object RemoveDOMStorageItemRequest {
     
@@ -215,14 +206,13 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait SetDOMStorageItemRequest extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var storageId: StorageId = js.native
+    var storageId: StorageId
     
-    var value: String = js.native
+    var value: String
   }
   object SetDOMStorageItemRequest {
     
@@ -246,18 +236,17 @@ object DOMStorage {
     }
   }
   
-  @js.native
   trait StorageId extends StObject {
     
     /**
       * Whether the storage is local storage (not session storage).
       */
-    var isLocalStorage: Boolean = js.native
+    var isLocalStorage: Boolean
     
     /**
       * Security origin for the storage.
       */
-    var securityOrigin: String = js.native
+    var securityOrigin: String
   }
   object StorageId {
     

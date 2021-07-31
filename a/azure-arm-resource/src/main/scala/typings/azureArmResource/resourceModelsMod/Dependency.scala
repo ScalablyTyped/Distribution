@@ -2,31 +2,29 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dependency extends StObject {
   
   /**
     * The list of dependencies.
     */
-  var dependsOn: js.UndefOr[js.Array[BasicDependency]] = js.native
+  var dependsOn: js.UndefOr[js.Array[BasicDependency]] = js.undefined
   
   /**
     * The ID of the dependency.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The dependency resource name.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The dependency resource type.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object Dependency {
   

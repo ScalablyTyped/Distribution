@@ -2,26 +2,24 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Click Through URL Suffix settings.
   */
-@js.native
 trait SchemaClickThroughUrlSuffixProperties extends StObject {
   
   /**
     * Click-through URL suffix to apply to all ads in this entity&#39;s scope.
     * Must be less than 128 characters long.
     */
-  var clickThroughUrlSuffix: js.UndefOr[String] = js.native
+  var clickThroughUrlSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this entity should override the inherited click-through URL
     * suffix with its own defined value.
     */
-  var overrideInheritedSuffix: js.UndefOr[Boolean] = js.native
+  var overrideInheritedSuffix: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaClickThroughUrlSuffixProperties {
   

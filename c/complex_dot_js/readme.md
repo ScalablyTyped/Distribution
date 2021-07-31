@@ -11,8 +11,8 @@ A complex number library
 | Full name          | complex.js |
 | Keywords           | complex numbers, math, complex, number, calculus, parser, arithmetic |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 9313057 |
+| # dependents       | 9 |
+| # downloads        | 10838492 |
 | # stars            | 4 |
 
 ## Links

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.OnServerError, ASPxClientReportDesigner.OnServerError and ASPxClientQueryBuilder.OnServerError events.
   */
-@js.native
-trait ASPxClientErrorEventArgs extends ASPxClientEventArgs {
+trait ASPxClientErrorEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to information about a server-side error.
     */
-  var Error: js.Any = js.native
+  var Error: js.Any
 }
 object ASPxClientErrorEventArgs {
   

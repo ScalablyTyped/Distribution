@@ -2,27 +2,25 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cflags extends StObject {
   
-  var cflags: js.Array[_] = js.native
+  var cflags: js.Array[js.Any]
   
-  var default_configuration: String = js.native
+  var default_configuration: String
   
-  var defines: js.Array[String] = js.native
+  var defines: js.Array[String]
   
-  var include_dirs: js.Array[String] = js.native
+  var include_dirs: js.Array[String]
   
-  var libraries: js.Array[String] = js.native
+  var libraries: js.Array[String]
 }
 object Cflags {
   
   @scala.inline
   def apply(
-    cflags: js.Array[_],
+    cflags: js.Array[js.Any],
     default_configuration: String,
     defines: js.Array[String],
     include_dirs: js.Array[String],
@@ -36,7 +34,7 @@ object Cflags {
   implicit class CflagsMutableBuilder[Self <: Cflags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCflags(value: js.Array[_]): Self = StObject.set(x, "cflags", value.asInstanceOf[js.Any])
+    def setCflags(value: js.Array[js.Any]): Self = StObject.set(x, "cflags", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCflagsVarargs(value: js.Any*): Self = StObject.set(x, "cflags", js.Array(value :_*))

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseDebugInfo extends StObject {
   
   /** General debug info formatted for display. */
-  var formattedDebugInfo: js.UndefOr[String] = js.native
+  var formattedDebugInfo: js.UndefOr[String] = js.undefined
 }
 object ResponseDebugInfo {
   

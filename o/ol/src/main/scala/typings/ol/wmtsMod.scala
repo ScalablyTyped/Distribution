@@ -9,10 +9,13 @@ import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wmtsMod {
+  
+  @JSImport("ol/source/WMTS", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/source/WMTS", JSImport.Default)
   @js.native
@@ -20,54 +23,52 @@ object wmtsMod {
     def this(options: Options) = this()
   }
   
-  @JSImport("ol/source/WMTS", "optionsFromCapabilities")
-  @js.native
-  def optionsFromCapabilities(wmtsCap: js.Any, config: js.Any): Options = js.native
+  @scala.inline
+  def optionsFromCapabilities(wmtsCap: js.Any, config: js.Any): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var dimensions: js.UndefOr[js.Any] = js.native
+    var dimensions: js.UndefOr[js.Any] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var layer: String = js.native
+    var layer: String
     
-    var matrixSet: String = js.native
+    var matrixSet: String
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var requestEncoding: js.UndefOr[WMTSRequestEncoding | String] = js.native
+    var requestEncoding: js.UndefOr[WMTSRequestEncoding | String] = js.undefined
     
-    var style: String = js.native
+    var style: String
     
-    var tileClass: js.UndefOr[typings.ol.imageTileMod.default] = js.native
+    var tileClass: js.UndefOr[typings.ol.imageTileMod.default] = js.undefined
     
-    var tileGrid: typings.ol.tilegridWmtsMod.default = js.native
+    var tileGrid: typings.ol.tilegridWmtsMod.default
     
-    var tileLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var tilePixelRatio: js.UndefOr[Double] = js.native
+    var tilePixelRatio: js.UndefOr[Double] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

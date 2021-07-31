@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionLogOptions extends StObject {
   
   /**
     * The name of the CloudWatch Logs log group. Required if connection logging is enabled.
     */
-  var CloudwatchLogGroup: js.UndefOr[String] = js.native
+  var CloudwatchLogGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the CloudWatch Logs log stream to which the connection data is published.
     */
-  var CloudwatchLogStream: js.UndefOr[String] = js.native
+  var CloudwatchLogStream: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether connection logging is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
 }
 object ConnectionLogOptions {
   

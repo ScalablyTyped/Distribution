@@ -5,7 +5,6 @@ import typings.rotJs.anon.PartialOptions
 import typings.rotJs.pathPathMod.PassableCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object astarMod {
@@ -35,24 +34,23 @@ object astarMod {
     var _todo: js.Array[Item] = js.native
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var g: Double = js.native
+    var g: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var prev: Item | Null = js.native
+    var prev: Item | Null
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Item {
     
     @scala.inline
     def apply(g: Double, h: Double, x: Double, y: Double): Item = {
-      val __obj = js.Dynamic.literal(g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], prev = null)
       __obj.asInstanceOf[Item]
     }
     

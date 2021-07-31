@@ -3,13 +3,11 @@ package typings.slickgrid.Slick
 import typings.slickgrid.Slick.Editors.Editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorFactory extends StObject {
   
-  def getEditor[T](column: Column[T]): Editor[T] = js.native
+  def getEditor[T](column: Column[T]): Editor[T]
 }
 object EditorFactory {
   

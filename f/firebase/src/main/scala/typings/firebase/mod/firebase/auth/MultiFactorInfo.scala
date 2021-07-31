@@ -2,34 +2,32 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A structure containing the information of a second factor entity.
   */
-@js.native
 trait MultiFactorInfo extends StObject {
   
   /**
     * The user friendly name of the current second factor.
     */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The enrollment date of the second factor formatted as a UTC string.
     */
-  var enrollmentTime: String = js.native
+  var enrollmentTime: String
   
   /**
     * The identifier of the second factor.
     */
-  var factorId: String = js.native
+  var factorId: String
   
   /**
     * The multi-factor enrollment ID.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object MultiFactorInfo {
   

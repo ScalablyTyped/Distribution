@@ -1,9 +1,10 @@
 package typings.sentryBrowser
 
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalhandlersMod {
@@ -11,7 +12,9 @@ object globalhandlersMod {
   @JSImport("@sentry/browser/dist/integrations/globalhandlers", "GlobalHandlers")
   @js.native
   /** JSDoc */
-  class GlobalHandlers () extends Integration {
+  class GlobalHandlers ()
+    extends StObject
+       with Integration {
     def this(options: GlobalHandlersIntegrations) = this()
     
     /** JSDoc */
@@ -43,9 +46,24 @@ object globalhandlersMod {
     val _options: js.Any = js.native
     
     /**
+      * Returns {@link IntegrationClass.id}
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
       * @inheritDoc
       */
     def setupOnce(): Unit = js.native
+    /**
+      * Sets the integration up only once.
+      * This takes no options on purpose, options should be passed in the constructor
+      */
+    /* CompleteClass */
+    override def setupOnce(
+      addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
+      getCurrentHub: js.Function0[Hub]
+    ): Unit = js.native
   }
   /* static members */
   object GlobalHandlers {
@@ -65,12 +83,11 @@ object globalhandlersMod {
   }
   
   /** JSDoc */
-  @js.native
   trait GlobalHandlersIntegrations extends StObject {
     
-    var onerror: Boolean = js.native
+    var onerror: Boolean
     
-    var onunhandledrejection: Boolean = js.native
+    var onunhandledrejection: Boolean
   }
   object GlobalHandlersIntegrations {
     

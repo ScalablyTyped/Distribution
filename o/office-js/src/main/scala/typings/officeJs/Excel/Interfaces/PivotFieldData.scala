@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.Subtotals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotField.toJSON()`. */
-@js.native
 trait PivotFieldData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait PivotFieldData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait PivotFieldData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var items: js.UndefOr[js.Array[PivotItemData]] = js.native
+  var items: js.UndefOr[js.Array[PivotItemData]] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait PivotFieldData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait PivotFieldData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAllItems: js.UndefOr[Boolean] = js.native
+  var showAllItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait PivotFieldData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var subtotals: js.UndefOr[Subtotals] = js.native
+  var subtotals: js.UndefOr[Subtotals] = js.undefined
 }
 object PivotFieldData {
   

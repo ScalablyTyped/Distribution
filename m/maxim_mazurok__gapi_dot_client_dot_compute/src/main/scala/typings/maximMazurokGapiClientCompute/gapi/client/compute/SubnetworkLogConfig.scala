@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetworkLogConfig extends StObject {
   
   /**
     * Can only be specified if VPC flow logging for this subnetwork is enabled. Toggles the aggregation interval for collecting flow logs. Increasing the interval time will reduce the
     * amount of generated flow logs for long lasting connections. Default is an interval of 5 seconds per connection.
     */
-  var aggregationInterval: js.UndefOr[String] = js.native
+  var aggregationInterval: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable flow logging for this subnetwork. If this field is not explicitly set, it will not appear in get listings. If not set the default behavior is to disable flow
     * logging.
     */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /** Can only be specified if VPC flow logs for this subnetwork is enabled. Export filter used to define which VPC flow logs should be logged. */
-  var filterExpr: js.UndefOr[String] = js.native
+  var filterExpr: js.UndefOr[String] = js.undefined
   
   /**
     * Can only be specified if VPC flow logging for this subnetwork is enabled. The value of the field must be in [0, 1]. Set the sampling rate of VPC flow logs within the subnetwork
     * where 1.0 means all collected logs are reported and 0.0 means no logs are reported. Default is 0.5, which means half of all collected logs are reported.
     */
-  var flowSampling: js.UndefOr[Double] = js.native
+  var flowSampling: js.UndefOr[Double] = js.undefined
   
   /**
     * Can only be specified if VPC flow logs for this subnetwork is enabled. Configures whether all, none or a subset of metadata fields should be added to the reported VPC flow logs.
     * Default is INCLUDE_ALL_METADATA.
     */
-  var metadata: js.UndefOr[String] = js.native
+  var metadata: js.UndefOr[String] = js.undefined
   
   /** Can only be specified if VPC flow logs for this subnetwork is enabled and "metadata" was set to CUSTOM_METADATA. */
-  var metadataFields: js.UndefOr[js.Array[String]] = js.native
+  var metadataFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SubnetworkLogConfig {
   

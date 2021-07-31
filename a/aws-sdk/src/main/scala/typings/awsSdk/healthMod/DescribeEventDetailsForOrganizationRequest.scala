@@ -2,21 +2,19 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventDetailsForOrganizationRequest extends StObject {
   
   /**
     * The locale (language) to return information in. English (en) is the default and the only supported value at this time.
     */
-  var locale: js.UndefOr[typings.awsSdk.healthMod.locale] = js.native
+  var locale: js.UndefOr[typings.awsSdk.healthMod.locale] = js.undefined
   
   /**
     * A set of JSON elements that includes the awsAccountId and the eventArn.
     */
-  var organizationEventDetailFilters: OrganizationEventDetailFiltersList = js.native
+  var organizationEventDetailFilters: OrganizationEventDetailFiltersList
 }
 object DescribeEventDetailsForOrganizationRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecisionTaskStartedEventAttributes extends StObject {
   
   /**
     * Identity of the decider making the request. This enables diagnostic tracing when problems arise. The form of this identity is user defined.
     */
-  var identity: js.UndefOr[Identity] = js.native
+  var identity: js.UndefOr[Identity] = js.undefined
   
   /**
     * The ID of the DecisionTaskScheduled event that was recorded when this decision task was scheduled. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var scheduledEventId: EventId = js.native
+  var scheduledEventId: EventId
 }
 object DecisionTaskStartedEventAttributes {
   

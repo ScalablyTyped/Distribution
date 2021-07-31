@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityPoliciesResponse extends StObject {
   
   /**
     * A list of names of policies that apply to the specified identity.
     */
-  var PolicyNames: PolicyNameList = js.native
+  var PolicyNames: PolicyNameList
 }
 object ListIdentityPoliciesResponse {
   

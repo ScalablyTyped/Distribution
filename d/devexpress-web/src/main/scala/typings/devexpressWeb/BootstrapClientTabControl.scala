@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapTabControl control.
   */
-@js.native
-trait BootstrapClientTabControl extends ASPxClientTabControlBase {
+trait BootstrapClientTabControl
+  extends StObject
+     with ASPxClientTabControlBase {
   
   /**
     * Makes the specified tab active within the Tab Control on the client side.
     * @param tab A BootstrapClientTab object specifying the tab to select.
     */
-  def SetActiveTab(tab: BootstrapClientTab): Unit = js.native
+  def SetActiveTab(tab: BootstrapClientTab): Unit
 }
 object BootstrapClientTabControl {
   

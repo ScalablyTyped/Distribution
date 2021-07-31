@@ -10,9 +10,9 @@ Watch an object or array for changes
 | ------------------ | :-------------: |
 | Full name          | on-change |
 | Keywords           | on, change, watch, object, array, changes, observe, watcher, observer, proxy, proxies, es2015, event, listener |
-| # releases         | 23 |
-| # dependents       | 43 |
-| # downloads        | 176060 |
+| # releases         | 27 |
+| # dependents       | 45 |
+| # downloads        | 659054 |
 | # stars            | 0 |
 
 ## Links

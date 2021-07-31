@@ -1,20 +1,20 @@
 package typings.dtsGenerator
 
-import typings.bluebird.mod.^
 import typings.typescript.mod.ModuleResolutionKind
 import typings.typescript.mod.ScriptTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: DtsGeneratorOptions): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  
   @JSImport("dts-generator", JSImport.Namespace)
   @js.native
-  def apply(options: DtsGeneratorOptions): ^[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait DtsGeneratorOptions extends StObject {
     
     /**
@@ -22,68 +22,68 @@ object mod {
       * from the bundle.
       * Note this is no longer the preferred way to configure dts-generator, please see project.
       */
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
     /** The end-of-line character that should be used when outputting code. Defaults to os.EOL. */
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
     /**
       * A list of glob patterns, relative to baseDir, that should be excluded from the bundle.
       * Use the --exclude flag one or more times on the command-line. Defaults to [ "node_modules\/ **\/ *.d.ts" ].
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A list of external module reference paths that should be inserted as reference comments.
       * Use the --extern flag one or more times on the command-line.
       */
-    var externs: js.UndefOr[js.Array[String]] = js.native
+    var externs: js.UndefOr[js.Array[String]] = js.undefined
     
     /** A list of files from the baseDir to bundle. */
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The character(s) that should be used to indent the declarations in the output. Defaults to \t. */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /** The module ID that should be used as the exported value of the package’s “main” module. */
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
     
     /** The type of module resolution to use when generating the bundle. */
-    var moduleResolution: js.UndefOr[ModuleResolutionKind] = js.native
+    var moduleResolution: js.UndefOr[ModuleResolutionKind] = js.undefined
     
     /** The name of the package. Used to determine the correct exported package name for modules. */
-    var name: String = js.native
+    var name: String
     
     /** The filename where the generated bundle will be created. */
-    var out: String = js.native
+    var out: String
     
     /**
       * The base directory for the project being bundled. It is assumed that this directory contains a
       * tsconfig.json which will be parsed to determine the files that should be bundled as well as
       * other configuration information like target
       */
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
     /**
       * An optional callback provided by the invoker to customize the declared module ids the output d.ts files.
       * @see {@link https://github.com/SitePen/dts-generator/blob/master/docs/resolving-module-ids.md Resolving Module Ids}
       */
-    var resolveModuleId: js.UndefOr[js.Function1[/* params */ ResolveModuleIdParams, String]] = js.native
+    var resolveModuleId: js.UndefOr[js.Function1[/* params */ ResolveModuleIdParams, String]] = js.undefined
     
     /**
       * An optional callback provided by the invoker to customize the imported module ids in the output d.ts files.
       * @see {@link https://github.com/SitePen/dts-generator/blob/master/docs/resolving-module-ids.md Resolving Module Ids}
       */
-    var resolveModuleImport: js.UndefOr[js.Function1[/* params */ ResolveModuleImportParams, String]] = js.native
+    var resolveModuleImport: js.UndefOr[js.Function1[/* params */ ResolveModuleImportParams, String]] = js.undefined
     
     /** The target environment for generated code. Defaults to ts.ScriptTarget.Latest. */
-    var target: js.UndefOr[ScriptTarget] = js.native
+    var target: js.UndefOr[ScriptTarget] = js.undefined
     
     /**
       * A list of external @types package dependencies that should be inserted as reference comments.
       * Use the --types flag one or more times on the command-line.
       */
-    var types: js.UndefOr[js.Array[String]] = js.native
+    var types: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DtsGeneratorOptions {
     
@@ -194,11 +194,10 @@ object mod {
     }
   }
   
-  @js.native
   trait ResolveModuleIdParams extends StObject {
     
     /** The identifier of the module being declared in the generated d.ts */
-    var currentModuleId: String = js.native
+    var currentModuleId: String
   }
   object ResolveModuleIdParams {
     
@@ -216,17 +215,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ResolveModuleImportParams extends StObject {
     
     /** The identifier of the enclosing module currently being declared in the generated d.ts */
-    var currentModuleId: String = js.native
+    var currentModuleId: String
     
     /** The identifier of the module currently being imported in the generated d.ts */
-    var importedModuleId: String = js.native
+    var importedModuleId: String
     
     /** True if the imported module id is declared as a module in the input files. */
-    var isDeclaredExternalModule: Boolean = js.native
+    var isDeclaredExternalModule: Boolean
   }
   object ResolveModuleImportParams {
     

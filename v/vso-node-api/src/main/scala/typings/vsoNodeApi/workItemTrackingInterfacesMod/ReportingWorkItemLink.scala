@@ -4,29 +4,27 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportingWorkItemLink extends StObject {
   
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
-  var changedDate: Date = js.native
+  var changedDate: Date
   
-  var changedOperation: LinkChangeType = js.native
+  var changedOperation: LinkChangeType
   
-  var comment: String = js.native
+  var comment: String
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var linkType: String = js.native
+  var linkType: String
   
-  var rel: String = js.native
+  var rel: String
   
-  var sourceId: Double = js.native
+  var sourceId: Double
   
-  var targetId: Double = js.native
+  var targetId: Double
 }
 object ReportingWorkItemLink {
   

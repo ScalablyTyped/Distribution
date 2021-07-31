@@ -3,23 +3,23 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.signal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignalChannelRequest extends ChannelRequest {
+trait SignalChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: signal = js.native
+  var request: signal
   
-  var signal: String = js.native
+  var signal: String
 }
 object SignalChannelRequest {
   
   @scala.inline
-  def apply(recipient: Double, request: signal, signal: String): SignalChannelRequest = {
-    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
+  def apply(recipient: Double, signal: String): SignalChannelRequest = {
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "signal", signal = signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalChannelRequest]
   }
   

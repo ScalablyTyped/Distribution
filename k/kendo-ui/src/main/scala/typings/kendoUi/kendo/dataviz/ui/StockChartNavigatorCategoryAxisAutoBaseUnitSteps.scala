@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigatorCategoryAxisAutoBaseUnitSteps extends StObject {
   
-  var days: js.UndefOr[js.Any] = js.native
+  var days: js.UndefOr[js.Any] = js.undefined
   
-  var hours: js.UndefOr[js.Any] = js.native
+  var hours: js.UndefOr[js.Any] = js.undefined
   
-  var minutes: js.UndefOr[js.Any] = js.native
+  var minutes: js.UndefOr[js.Any] = js.undefined
   
-  var months: js.UndefOr[js.Any] = js.native
+  var months: js.UndefOr[js.Any] = js.undefined
   
-  var seconds: js.UndefOr[js.Any] = js.native
+  var seconds: js.UndefOr[js.Any] = js.undefined
   
-  var weeks: js.UndefOr[js.Any] = js.native
+  var weeks: js.UndefOr[js.Any] = js.undefined
   
-  var years: js.UndefOr[js.Any] = js.native
+  var years: js.UndefOr[js.Any] = js.undefined
 }
 object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
   

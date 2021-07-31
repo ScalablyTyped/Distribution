@@ -2,41 +2,39 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cookie extends StObject {
   
   /** The cookie domain. */
-  var domain: String = js.native
+  var domain: String
   
   /** The cookie Unix expiration time in seconds. */
-  var expires: Double = js.native
+  var expires: Double
   
   /** The cookie http only flag. */
-  var httpOnly: Boolean = js.native
+  var httpOnly: Boolean
   
   /** The cookie name. */
-  var name: String = js.native
+  var name: String
   
   /** The cookie path. */
-  var path: String = js.native
+  var path: String
   
   /** The cookie same site definition. */
-  var sameSite: SameSiteSetting = js.native
+  var sameSite: SameSiteSetting
   
   /** The cookie secure flag. */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /** The session cookie flag. */
-  var session: Boolean = js.native
+  var session: Boolean
   
   /** The cookie size */
-  var size: Double = js.native
+  var size: Double
   
   /** The cookie value. */
-  var value: String = js.native
+  var value: String
 }
 object Cookie {
   

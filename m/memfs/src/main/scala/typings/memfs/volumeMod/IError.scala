@@ -3,13 +3,13 @@ package typings.memfs.volumeMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IError extends Error {
+trait IError
+  extends StObject
+     with Error {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object IError {
   

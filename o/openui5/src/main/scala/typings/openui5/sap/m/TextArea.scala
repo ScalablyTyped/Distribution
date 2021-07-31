@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextArea extends InputBase {
+trait TextArea
+  extends StObject
+     with InputBase {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>liveChange</code> event of this

@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEngineDefinition extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IEngineDefinition extends StObject {
     * @type number
     * @default 2
     */
-  var constraintIterations: js.UndefOr[Double] = js.native
+  var constraintIterations: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
@@ -27,7 +25,7 @@ trait IEngineDefinition extends StObject {
     * @type boolean
     * @default false
     */
-  var enableSleeping: js.UndefOr[Boolean] = js.native
+  var enableSleeping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
@@ -36,7 +34,7 @@ trait IEngineDefinition extends StObject {
     * @type grid
     * @default a Matter.Grid instance
     */
-  var grid: js.UndefOr[Grid] = js.native
+  var grid: js.UndefOr[Grid] = js.undefined
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
@@ -46,7 +44,7 @@ trait IEngineDefinition extends StObject {
     * @type number
     * @default 6
     */
-  var positionIterations: js.UndefOr[Double] = js.native
+  var positionIterations: js.UndefOr[Double] = js.undefined
   
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
@@ -54,7 +52,7 @@ trait IEngineDefinition extends StObject {
     * @property timing
     * @type object
     */
-  var timing: js.UndefOr[IEngineTimingOptions] = js.native
+  var timing: js.UndefOr[IEngineTimingOptions] = js.undefined
   
   /**
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
@@ -64,7 +62,7 @@ trait IEngineDefinition extends StObject {
     * @type number
     * @default 4
     */
-  var velocityIterations: js.UndefOr[Double] = js.native
+  var velocityIterations: js.UndefOr[Double] = js.undefined
   
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
@@ -73,7 +71,7 @@ trait IEngineDefinition extends StObject {
     * @type world
     * @default a Matter.World instance
     */
-  var world: js.UndefOr[World] = js.native
+  var world: js.UndefOr[World] = js.undefined
 }
 object IEngineDefinition {
   

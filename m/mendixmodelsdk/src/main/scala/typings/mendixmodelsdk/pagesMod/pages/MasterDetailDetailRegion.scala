@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,9 +53,8 @@ object MasterDetailDetailRegion {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion.create")
-  @js.native
-  def create(model: IModel): MasterDetailDetailRegion = js.native
+  @scala.inline
+  def create(model: IModel): MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MasterDetailDetailRegion]
   
   /**
     * Creates and returns a new MasterDetailDetailRegion instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object MasterDetailDetailRegion {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion.createIn")
-  @js.native
-  def createIn(container: MasterDetail): MasterDetailDetailRegion = js.native
+  @scala.inline
+  def createIn(container: MasterDetail): MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetailDetailRegion]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion.structureTypeName")

@@ -2,86 +2,84 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledInstance extends StObject {
   
   /**
     * The Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the Scheduled Instance was purchased.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.native
+  var CreateDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The hourly price for a single instance.
     */
-  var HourlyPrice: js.UndefOr[String] = js.native
+  var HourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The number of instances.
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The network platform (EC2-Classic or EC2-VPC).
     */
-  var NetworkPlatform: js.UndefOr[String] = js.native
+  var NetworkPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * The time for the next schedule to start.
     */
-  var NextSlotStartTime: js.UndefOr[DateTime] = js.native
+  var NextSlotStartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The platform (Linux/UNIX or Windows).
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the previous schedule ended or will end.
     */
-  var PreviousSlotEndTime: js.UndefOr[DateTime] = js.native
+  var PreviousSlotEndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The schedule recurrence.
     */
-  var Recurrence: js.UndefOr[ScheduledInstanceRecurrence] = js.native
+  var Recurrence: js.UndefOr[ScheduledInstanceRecurrence] = js.undefined
   
   /**
     * The Scheduled Instance ID.
     */
-  var ScheduledInstanceId: js.UndefOr[String] = js.native
+  var ScheduledInstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of hours in the schedule.
     */
-  var SlotDurationInHours: js.UndefOr[Integer] = js.native
+  var SlotDurationInHours: js.UndefOr[Integer] = js.undefined
   
   /**
     * The end date for the Scheduled Instance.
     */
-  var TermEndDate: js.UndefOr[DateTime] = js.native
+  var TermEndDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The start date for the Scheduled Instance.
     */
-  var TermStartDate: js.UndefOr[DateTime] = js.native
+  var TermStartDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The total number of hours for a single instance for the entire term.
     */
-  var TotalScheduledInstanceHours: js.UndefOr[Integer] = js.native
+  var TotalScheduledInstanceHours: js.UndefOr[Integer] = js.undefined
 }
 object ScheduledInstance {
   

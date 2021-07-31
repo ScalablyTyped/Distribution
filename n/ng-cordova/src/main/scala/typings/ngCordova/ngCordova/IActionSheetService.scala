@@ -3,15 +3,13 @@ package typings.ngCordova.ngCordova
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionSheetService extends StObject {
   
-  def hide(): IPromise[Unit] = js.native
+  def hide(): IPromise[Unit]
   
-  def show(options: ShowOptions): IPromise[Double] = js.native
+  def show(options: ShowOptions): IPromise[Double]
 }
 object IActionSheetService {
   

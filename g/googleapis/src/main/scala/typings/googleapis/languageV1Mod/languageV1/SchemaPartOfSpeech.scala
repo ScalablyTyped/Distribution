@@ -2,75 +2,73 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents part of speech information for a token. Parts of speech are as
   * defined in http://www.lrec-conf.org/proceedings/lrec2012/pdf/274_Paper.pdf
   */
-@js.native
 trait SchemaPartOfSpeech extends StObject {
   
   /**
     * The grammatical aspect.
     */
-  var aspect: js.UndefOr[String] = js.native
+  var aspect: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical case.
     */
-  var `case`: js.UndefOr[String] = js.native
+  var `case`: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical form.
     */
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical gender.
     */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical mood.
     */
-  var mood: js.UndefOr[String] = js.native
+  var mood: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical number.
     */
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical person.
     */
-  var person: js.UndefOr[String] = js.native
+  var person: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical properness.
     */
-  var proper: js.UndefOr[String] = js.native
+  var proper: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical reciprocity.
     */
-  var reciprocity: js.UndefOr[String] = js.native
+  var reciprocity: js.UndefOr[String] = js.undefined
   
   /**
     * The part of speech tag.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical tense.
     */
-  var tense: js.UndefOr[String] = js.native
+  var tense: js.UndefOr[String] = js.undefined
   
   /**
     * The grammatical voice.
     */
-  var voice: js.UndefOr[String] = js.native
+  var voice: js.UndefOr[String] = js.undefined
 }
 object SchemaPartOfSpeech {
   

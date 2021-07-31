@@ -4,45 +4,43 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sendgrid.anon.Cc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Personalization extends StObject {
   
-  def addBcc(email: Email): Unit = js.native
+  def addBcc(email: Email): Unit
   
-  def addCc(email: Email): Unit = js.native
+  def addCc(email: Email): Unit
   
-  def addCustomArg(substitution: CustomArgs): Unit = js.native
+  def addCustomArg(substitution: CustomArgs): Unit
   
-  def addHeader(header: Header): Unit = js.native
+  def addHeader(header: Header): Unit
   
-  def addSubstitution(substitution: Substitution): Unit = js.native
+  def addSubstitution(substitution: Substitution): Unit
   
-  def addTo(email: Email): Unit = js.native
+  def addTo(email: Email): Unit
   
-  def getBccs(): js.Array[Email] = js.native
+  def getBccs(): js.Array[Email]
   
-  def getCcs(): js.Array[Email] = js.native
+  def getCcs(): js.Array[Email]
   
-  def getCustomArgs(): js.Array[CustomArgs] = js.native
+  def getCustomArgs(): js.Array[CustomArgs]
   
-  def getHeaders(): js.Array[Header] = js.native
+  def getHeaders(): js.Array[Header]
   
-  def getSendAt(): Double = js.native
+  def getSendAt(): Double
   
-  def getSubject(): String = js.native
+  def getSubject(): String
   
-  def getSubstitutions(): StringDictionary[String] = js.native
+  def getSubstitutions(): StringDictionary[String]
   
-  def getTos(): js.Array[Email] = js.native
+  def getTos(): js.Array[Email]
   
-  def setSendAt(sendAt: Double): Unit = js.native
+  def setSendAt(sendAt: Double): Unit
   
-  def setSubject(subject: String): Unit = js.native
+  def setSubject(subject: String): Unit
   
-  def toJSON(): Cc = js.native
+  def toJSON(): Cc
 }
 object Personalization {
   

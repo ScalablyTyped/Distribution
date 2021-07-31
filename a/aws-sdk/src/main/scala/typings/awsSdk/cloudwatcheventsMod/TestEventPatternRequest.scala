@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestEventPatternRequest extends StObject {
   
   /**
     * The event, in JSON format, to test against the event pattern.
     */
-  var Event: String = js.native
+  var Event: String
   
   /**
     * The event pattern. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
-  var EventPattern: typings.awsSdk.cloudwatcheventsMod.EventPattern = js.native
+  var EventPattern: typings.awsSdk.cloudwatcheventsMod.EventPattern
 }
 object TestEventPatternRequest {
   

@@ -3,72 +3,70 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineView extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View
   
-  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting = js.native
+  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var EndField: String = js.native
+  var EndField: String
   
-  var Filter: String = js.native
+  var Filter: String
   
-  def GoToDate(Date: VarDate): Unit = js.native
+  def GoToDate(Date: VarDate): Unit
   
-  val GroupByFields: OrderFields = js.native
+  val GroupByFields: OrderFields
   
-  val ItemFont: ViewFont = js.native
+  val ItemFont: ViewFont
   
-  var Language: String = js.native
+  var Language: String
   
-  var LockUserChanges: Boolean = js.native
+  var LockUserChanges: Boolean
   
-  val LowerScaleFont: ViewFont = js.native
+  val LowerScaleFont: ViewFont
   
-  var MaxLabelWidth: Double = js.native
+  var MaxLabelWidth: Double
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.TimelineView_typekey")
-  var OutlookDotTimelineView_typekey: TimelineView = js.native
+  var OutlookDotTimelineView_typekey: TimelineView
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val SaveOption: OlViewSaveOption = js.native
+  val SaveOption: OlViewSaveOption
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var ShowLabelWhenViewingByMonth: Boolean = js.native
+  var ShowLabelWhenViewingByMonth: Boolean
   
-  var ShowWeekNumbers: Boolean = js.native
+  var ShowWeekNumbers: Boolean
   
-  val Standard: Boolean = js.native
+  val Standard: Boolean
   
-  var StartField: String = js.native
+  var StartField: String
   
-  var TimelineViewMode: OlTimelineViewMode = js.native
+  var TimelineViewMode: OlTimelineViewMode
   
-  val UpperScaleFont: ViewFont = js.native
+  val UpperScaleFont: ViewFont
   
-  val ViewType: OlViewType = js.native
+  val ViewType: OlViewType
   
-  var XML: String = js.native
+  var XML: String
 }
 object TimelineView {
   

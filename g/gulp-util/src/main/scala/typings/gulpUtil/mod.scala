@@ -15,23 +15,28 @@ import typings.vinyl.mod.FileConstructor
 import typings.vinyl.mod.NullFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gulp-util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object File extends Shortcut {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("gulp-util", "File")
     @js.native
-    class ^ protected () extends NullFile {
+    class ^ protected ()
+      extends StObject
+         with NullFile {
       def this(options: ConstructorOptionscontent) = this()
     }
     
     @JSImport("gulp-util", "File")
     @js.native
-    val ^ : FileConstructor = js.native
+    val ^ : js.Object & FileConstructor = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("gulp-util", "File.Class")
@@ -41,16 +46,18 @@ object mod {
       def this(options: ConstructorOptionscontent) = this()
     }
     
-    type _To = FileConstructor
+    type _To = js.Object & FileConstructor
     
     /* This means you don't have to write `^`, but can instead just say `File.foo` */
-    override def _to: FileConstructor = ^
+    override def _to: js.Object & FileConstructor = ^
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.gulpUtil.mod.PluginErrorOptions because var conflicts: message, name, stack. Inlined fileName, lineNumber, showStack, showProperties, plugin, error */ @JSImport("gulp-util", "PluginError")
   @js.native
-  class PluginError () extends Error {
+  class PluginError ()
+    extends StObject
+       with Error {
     def this(options: PluginErrorOptions) = this()
     def this(pluginName: String) = this()
     def this(pluginName: String, message: String) = this()
@@ -64,6 +71,12 @@ object mod {
     var fileName: js.UndefOr[String] = js.native
     
     var lineNumber: js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var plugin: js.UndefOr[String] = js.native
     
@@ -88,66 +101,50 @@ object mod {
     var stack_PluginError: String = js.native
   }
   
-  @JSImport("gulp-util", "beep")
-  @js.native
-  def beep(): Unit = js.native
+  @scala.inline
+  def beep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beep")().asInstanceOf[Unit]
   
-  @JSImport("gulp-util", "buffer")
-  @js.native
-  def buffer(): ReadWriteStream = js.native
-  @JSImport("gulp-util", "buffer")
-  @js.native
-  def buffer(cb: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]): ReadWriteStream = js.native
+  @scala.inline
+  def buffer(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def buffer(cb: js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-util", "colors")
   @js.native
   val colors: Typeof = js.native
   
-  @JSImport("gulp-util", "combine")
-  @js.native
-  def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = js.native
-  @JSImport("gulp-util", "combine")
-  @js.native
-  def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = js.native
+  @scala.inline
+  def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
+  @scala.inline
+  def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
   
   object date {
     
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], convertLocalTimeToUTC: Boolean): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: js.UndefOr[scala.Nothing], mask: String): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: js.UndefOr[scala.Nothing], mask: String, convertLocalTimeToUTC: Boolean): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: String): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: String, mask: js.UndefOr[scala.Nothing], convertLocalTimeToUTC: Boolean): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: String, mask: String): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: Date): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: Date, mask: js.UndefOr[scala.Nothing], convertLocalTimeToUTC: Boolean): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: Date, mask: String): js.Any = js.native
-    @JSImport("gulp-util", "date")
-    @js.native
-    def apply(now: Date, mask: String, convertLocalTimeToUTC: Boolean): js.Any = js.native
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: String, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: String, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Unit, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Unit, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Unit, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Date): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Date, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Date, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(now: Date, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     @JSImport("gulp-util", "date")
     @js.native
     val ^ : js.Any = js.native
@@ -163,113 +160,93 @@ object mod {
   @js.native
   val env: js.Any = js.native
   
-  @JSImport("gulp-util", "isBuffer")
-  @js.native
-  def isBuffer(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("gulp-util", "isNull")
-  @js.native
-  def isNull(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNull(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("gulp-util", "isStream")
-  @js.native
-  def isStream(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isStream(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("gulp-util", "linefeed")
   @js.native
   val linefeed: String = js.native
   
-  @JSImport("gulp-util", "log")
-  @js.native
-  def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
-  @JSImport("gulp-util", "log")
-  @js.native
-  def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  @scala.inline
+  def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: js.UndefOr[scala.Nothing], transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: js.UndefOr[scala.Nothing], transform: TransformFunction): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: js.UndefOr[scala.Nothing], transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: DuplexOptions): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: DuplexOptions, transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: DuplexOptions, transform: TransformFunction): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(transform: js.UndefOr[scala.Nothing], flush: FlushCallback): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(transform: TransformFunction): Transform = js.native
-  @JSImport("gulp-util", "noop")
-  @js.native
-  def noop(transform: TransformFunction, flush: FlushCallback): Transform = js.native
+  @scala.inline
+  def noop(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: DuplexOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def noop(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def noop(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
-  @JSImport("gulp-util", "replaceExtension")
-  @js.native
-  def replaceExtension(npath: String, ext: String): String = js.native
+  @scala.inline
+  def replaceExtension(npath: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceExtension")(npath.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("gulp-util", "template")
-  @js.native
-  def template(tmpl: String): js.Function1[/* opt */ File, String] = js.native
-  @JSImport("gulp-util", "template")
-  @js.native
-  def template(tmpl: String, opt: File): String = js.native
+  @scala.inline
+  def template(tmpl: String): js.Function1[/* opt */ File, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* opt */ File, String]]
+  @scala.inline
+  def template(tmpl: String, opt: File): String = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait PluginErrorOptions extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
     /**
       * Can be a string or an existing error.
       */
-    var message: js.UndefOr[js.Any] = js.native
+    var message: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The module name of your plugin.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var plugin: js.UndefOr[String] = js.native
+    var plugin: js.UndefOr[String] = js.undefined
     
     /**
       * Error properties will be included in err.toString(). Can be omitted by
       * setting this to false.
       */
-    var showProperties: js.UndefOr[Boolean] = js.native
+    var showProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default the stack will not be shown. Set this to true if you think the
       * stack is important for your error.
       */
-    var showStack: js.UndefOr[Boolean] = js.native
+    var showStack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You need to include the message along with this stack. If you pass an
       * error in as the message the stack will be pulled from that, otherwise one
       * will be created.
       */
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object PluginErrorOptions {
     

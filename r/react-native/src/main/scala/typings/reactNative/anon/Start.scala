@@ -2,15 +2,13 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Start extends StObject {
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object Start {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeCapacityCommitmentsRequest extends StObject {
   
   /**
     * Ids of capacity commitments to merge. These capacity commitments must exist under admin project and location specified in the parent. ID is the last portion of capacity commitment
     * name e.g., 'abc' for projects/myproject/locations/US/capacityCommitments/abc
     */
-  var capacityCommitmentIds: js.UndefOr[js.Array[String]] = js.native
+  var capacityCommitmentIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object MergeCapacityCommitmentsRequest {
   

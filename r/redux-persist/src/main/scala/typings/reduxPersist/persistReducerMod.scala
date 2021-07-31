@@ -6,19 +6,20 @@ import typings.reduxPersist.typesMod.PersistConfig
 import typings.reduxPersist.typesMod.PersistState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object persistReducerMod {
   
-  @JSImport("redux-persist/es/persistReducer", JSImport.Default)
+  @JSImport("redux-persist/es/persistReducer", JSImport.Namespace)
   @js.native
-  def default[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], baseReducer: Reducer[S, A]): Reducer[S with PersistPartial, A] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[S, A /* <: Action[js.Any] */](config: PersistConfig[S, js.Any, js.Any, js.Any], baseReducer: Reducer[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], baseReducer.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
+  
   trait PersistPartial extends StObject {
     
-    var _persist: PersistState = js.native
+    var _persist: PersistState
   }
   object PersistPartial {
     

@@ -3,13 +3,11 @@ package typings.naverWhale
 import typings.naverWhale.anon.Typeofwhale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var whale: Typeofwhale = js.native
+  var whale: Typeofwhale
 }
 object Window {
   

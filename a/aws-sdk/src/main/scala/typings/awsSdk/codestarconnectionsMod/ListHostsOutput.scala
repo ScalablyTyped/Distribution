@@ -2,21 +2,19 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHostsOutput extends StObject {
   
   /**
     * A list of hosts and the details for each host, such as status, endpoint, and provider type.
     */
-  var Hosts: js.UndefOr[HostList] = js.native
+  var Hosts: js.UndefOr[HostList] = js.undefined
   
   /**
     * A token that can be used in the next ListHosts call. To view all items in the list, continue to call this operation with each subsequent token until no more nextToken values are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codestarconnectionsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codestarconnectionsMod.NextToken] = js.undefined
 }
 object ListHostsOutput {
   

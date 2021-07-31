@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
   
   /** True if the result was served from cache, false if it was executed. */
-  var cachedResult: js.UndefOr[Boolean] = js.native
+  var cachedResult: js.UndefOr[Boolean] = js.undefined
   
   /** Freeform informational message with details on the execution of the action that may be displayed to the user upon failure or when requested explicitly. */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** The result of the action. */
-  var result: js.UndefOr[BuildBazelRemoteExecutionV2ActionResult] = js.native
+  var result: js.UndefOr[BuildBazelRemoteExecutionV2ActionResult] = js.undefined
   
   /**
     * An optional list of additional log outputs the server wishes to provide. A server can use this to return execution-specific logs however it wishes. This is intended primarily to
@@ -26,8 +24,8 @@ trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
   var serverLogs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * If the status has a code other than `OK`, it indicates that the action did not finish execution. For example, if the operation times out during execution, the status will have a
@@ -35,7 +33,7 @@ trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
     * result MUST NOT be cached. For an error status, the `result` field is optional; the server may populate the output-, stdout-, and stderr-related fields if it has any information
     * available, such as the stdout and stderr of a timed-out action.
     */
-  var status: js.UndefOr[GoogleRpcStatus] = js.native
+  var status: js.UndefOr[GoogleRpcStatus] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecuteResponse {
   
@@ -70,7 +68,7 @@ object BuildBazelRemoteExecutionV2ExecuteResponse {
     def setServerLogs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,17 +2,15 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextText extends StObject {
   
   /** 下一页 */
-  var nextText: String = js.native
+  var nextText: String
   
   /** 上一页 */
-  var prevText: String = js.native
+  var prevText: String
 }
 object NextText {
   

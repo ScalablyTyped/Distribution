@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ContactCardHeaderKind extends StObject {
   
   /** Display the default header. */
   @js.native
-  sealed trait default extends ContactCardHeaderKind
+  sealed trait default
+    extends StObject
+       with ContactCardHeaderKind
   
   /** Display a basic header. */
   @js.native
-  sealed trait basic extends ContactCardHeaderKind
+  sealed trait basic
+    extends StObject
+       with ContactCardHeaderKind
   
   /** Display an enterprise header. */
   @js.native
-  sealed trait enterprise extends ContactCardHeaderKind
+  sealed trait enterprise
+    extends StObject
+       with ContactCardHeaderKind
 }

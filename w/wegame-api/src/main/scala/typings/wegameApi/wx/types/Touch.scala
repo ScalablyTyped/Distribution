@@ -2,37 +2,35 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --触摸对象
-@js.native
 trait Touch extends StObject {
   
   /**
     * 触点相对于游戏窗口的 X 轴距离。
     */
-  var clientX: Double = js.native
+  var clientX: Double
   
   /**
     * 触点相对于游戏窗口的 Y 轴距离。
     */
-  var clientY: Double = js.native
+  var clientY: Double
   
   /**
     * Touch 对象的唯一标识符，只读属性。一次触摸动作(我们值的是手指的触摸)在平面上移动的整个过程中, 该标识符不变。可以根据它来判断跟踪的是否是同一次触摸过程。
     */
-  var identifier: Double = js.native
+  var identifier: Double
   
   /**
     * 触点相对于整体页面的 X 轴距离。
     */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /**
     * 触点相对于整体页面的 Y 轴距离。
     */
-  var pageY: Double = js.native
+  var pageY: Double
 }
 object Touch {
   

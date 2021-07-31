@@ -5,21 +5,19 @@ import typings.evernote.mod.NoteStore.MemberShareRelationship
 import typings.evernote.mod.Types.UserIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvitationsToCreateOrUpdate extends StObject {
   
-  var invitationsToCreateOrUpdate: js.UndefOr[js.Array[InvitationShareRelationship]] = js.native
+  var invitationsToCreateOrUpdate: js.UndefOr[js.Array[InvitationShareRelationship]] = js.undefined
   
-  var inviteMessage: js.UndefOr[String] = js.native
+  var inviteMessage: js.UndefOr[String] = js.undefined
   
-  var membershipsToUpdate: js.UndefOr[js.Array[MemberShareRelationship]] = js.native
+  var membershipsToUpdate: js.UndefOr[js.Array[MemberShareRelationship]] = js.undefined
   
-  var notebookGuid: js.UndefOr[String] = js.native
+  var notebookGuid: js.UndefOr[String] = js.undefined
   
-  var unshares: js.UndefOr[js.Array[UserIdentity]] = js.native
+  var unshares: js.UndefOr[js.Array[UserIdentity]] = js.undefined
 }
 object InvitationsToCreateOrUpdate {
   

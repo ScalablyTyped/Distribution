@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InAppProductListing extends StObject {
   
   /** Localized entitlement benefits for a subscription. */
-  var benefits: js.UndefOr[js.Array[String]] = js.native
+  var benefits: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Description for the store listing. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Title for the store listing. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object InAppProductListing {
   

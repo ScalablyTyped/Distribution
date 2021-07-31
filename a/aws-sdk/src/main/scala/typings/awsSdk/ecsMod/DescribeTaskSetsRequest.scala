@@ -2,31 +2,29 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTaskSetsRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task sets exist in.
     */
-  var cluster: String = js.native
+  var cluster: String
   
   /**
     * Specifies whether to see the resource tags for the task set. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
     */
-  var include: js.UndefOr[TaskSetFieldList] = js.native
+  var include: js.UndefOr[TaskSetFieldList] = js.undefined
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the service that the task sets exist in.
     */
-  var service: String = js.native
+  var service: String
   
   /**
     * The ID or full Amazon Resource Name (ARN) of task sets to describe.
     */
-  var taskSets: js.UndefOr[StringList] = js.native
+  var taskSets: js.UndefOr[StringList] = js.undefined
 }
 object DescribeTaskSetsRequest {
   

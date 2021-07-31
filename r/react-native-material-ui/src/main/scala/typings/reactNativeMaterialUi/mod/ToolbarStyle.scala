@@ -2,25 +2,23 @@ package typings.reactNativeMaterialUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarStyle extends StObject {
   
-  var centerElementContainer: js.UndefOr[ViewStyle] = js.native
+  var centerElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var leftElement: js.UndefOr[TextStyle] = js.native
+  var leftElement: js.UndefOr[TextStyle] = js.undefined
   
-  var leftElementContainer: js.UndefOr[ViewStyle] = js.native
+  var leftElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var rightElement: js.UndefOr[TextStyle] = js.native
+  var rightElement: js.UndefOr[TextStyle] = js.undefined
   
-  var rightElementContainer: js.UndefOr[ViewStyle] = js.native
+  var rightElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var titleText: js.UndefOr[TextStyle] = js.native
+  var titleText: js.UndefOr[TextStyle] = js.undefined
 }
 object ToolbarStyle {
   

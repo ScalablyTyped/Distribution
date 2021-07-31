@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedAttributeValueRange extends StObject {
   
   /**
     * The inclusive or exclusive range end.
     */
-  var EndMode: RangeMode = js.native
+  var EndMode: RangeMode
   
   /**
     * The attribute value to terminate the range at.
     */
-  var EndValue: js.UndefOr[TypedAttributeValue] = js.native
+  var EndValue: js.UndefOr[TypedAttributeValue] = js.undefined
   
   /**
     * The inclusive or exclusive range start.
     */
-  var StartMode: RangeMode = js.native
+  var StartMode: RangeMode
   
   /**
     * The value to start the range at.
     */
-  var StartValue: js.UndefOr[TypedAttributeValue] = js.native
+  var StartValue: js.UndefOr[TypedAttributeValue] = js.undefined
 }
 object TypedAttributeValueRange {
   

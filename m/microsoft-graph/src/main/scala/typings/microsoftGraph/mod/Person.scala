@@ -2,72 +2,72 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Person extends Entity {
+trait Person
+  extends StObject
+     with Entity {
   
   // The person's birthday.
-  var birthday: js.UndefOr[NullableOption[String]] = js.native
+  var birthday: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the person's company.
-  var companyName: js.UndefOr[NullableOption[String]] = js.native
+  var companyName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The person's department.
-  var department: js.UndefOr[NullableOption[String]] = js.native
+  var department: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The person's display name.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The person's given name.
-  var givenName: js.UndefOr[NullableOption[String]] = js.native
+  var givenName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.
-  var imAddress: js.UndefOr[NullableOption[String]] = js.native
+  var imAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true if the user has flagged this person as a favorite.
-  var isFavorite: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isFavorite: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The person's job title.
-  var jobTitle: js.UndefOr[NullableOption[String]] = js.native
+  var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The location of the person's office.
-  var officeLocation: js.UndefOr[NullableOption[String]] = js.native
+  var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Free-form notes that the user has taken about this person.
-  var personNotes: js.UndefOr[NullableOption[String]] = js.native
+  var personNotes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of person.
-  var personType: js.UndefOr[NullableOption[PersonType]] = js.native
+  var personType: js.UndefOr[NullableOption[PersonType]] = js.undefined
   
   // The person's phone numbers.
-  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.native
+  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.undefined
   
   // The person's addresses.
-  var postalAddresses: js.UndefOr[NullableOption[js.Array[Location]]] = js.native
+  var postalAddresses: js.UndefOr[NullableOption[js.Array[Location]]] = js.undefined
   
   // The person's profession.
-  var profession: js.UndefOr[NullableOption[String]] = js.native
+  var profession: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The person's email addresses.
-  var scoredEmailAddresses: js.UndefOr[NullableOption[js.Array[ScoredEmailAddress]]] = js.native
+  var scoredEmailAddresses: js.UndefOr[NullableOption[js.Array[ScoredEmailAddress]]] = js.undefined
   
   // The person's surname.
-  var surname: js.UndefOr[NullableOption[String]] = js.native
+  var surname: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the
     * Internet standard RFC 822. By convention, this should map to the person's email name. The general format is
     * alias@domain.
     */
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The person's websites.
-  var websites: js.UndefOr[NullableOption[js.Array[Website]]] = js.native
+  var websites: js.UndefOr[NullableOption[js.Array[Website]]] = js.undefined
   
   // The phonetic Japanese name of the person's company.
-  var yomiCompany: js.UndefOr[NullableOption[String]] = js.native
+  var yomiCompany: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Person {
   

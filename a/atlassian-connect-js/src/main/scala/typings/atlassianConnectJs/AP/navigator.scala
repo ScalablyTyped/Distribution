@@ -6,7 +6,6 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.current
 import typings.atlassianConnectJs.atlassianConnectJsStrings.page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,55 +23,73 @@ object navigator {
       * The module page within a specific add-on. Takes an `addonKey` and a `moduleKey` to identify the correct module.
       */
     @js.native
-    sealed trait addonModule extends NavigatorTargetConfluence
+    sealed trait addonModule
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The edit page for pages, blogs and custom content. Takes a `contentId` to identify the content.
       */
     @js.native
-    sealed trait contentedit extends NavigatorTargetConfluence
+    sealed trait contentedit
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The list/collector page for pages, blogs and custom content contained in a space. Takes a `spaceKey` and a `contentType` to identify the content type.
       */
     @js.native
-    sealed trait contentlist extends NavigatorTargetConfluence
+    sealed trait contentlist
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The view page for pages, blogs and custom content. Takes a `contentId` to identify the content.
       */
     @js.native
-    sealed trait contentview extends NavigatorTargetConfluence
+    sealed trait contentview
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The dashboard of Confluence.
       */
     @js.native
-    sealed trait dashboard extends NavigatorTargetConfluence
+    sealed trait dashboard
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * A specific location contained within a site. Takes a `relativeUrl` to identify the path.
       */
     @js.native
-    sealed trait site extends NavigatorTargetConfluence
+    sealed trait site
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The space tools page. Takes a `spaceKey` to identify the space.
       */
     @js.native
-    sealed trait spacetools extends NavigatorTargetConfluence
+    sealed trait spacetools
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The space view page. Takes a `spaceKey` to identify the space.
       */
     @js.native
-    sealed trait spaceview extends NavigatorTargetConfluence
+    sealed trait spaceview
+      extends StObject
+         with NavigatorTargetConfluence
     
     /**
       * The profile page for a specific user. Takes a `username` or `userAccountId` to identify the user.
       */
     @js.native
-    sealed trait userProfile extends NavigatorTargetConfluence
+    sealed trait userProfile
+      extends StObject
+         with NavigatorTargetConfluence
   }
   
   @js.native
@@ -85,83 +102,96 @@ object navigator {
       * The module page within a specific add-on. Takes an `addonKey` and a `moduleKey` to identify the correct module.
       */
     @js.native
-    sealed trait addonModule extends NavigatorTargetJira
+    sealed trait addonModule
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * A specific dashboard in Jira. Takes a `dashboardId` to identify the dashboard.
       */
     @js.native
-    sealed trait dashboard extends NavigatorTargetJira
+    sealed trait dashboard
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * A specific Issue in Jira. Takes an `issueKey` to identify the issue.
       */
     @js.native
-    sealed trait issue extends NavigatorTargetJira
+    sealed trait issue
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * The admin details of a specific Jira Project. Takes a `projectKey` to identify the project. Only accessible to administrators.
       */
     @js.native
-    sealed trait projectAdminSummary extends NavigatorTargetJira
+    sealed trait projectAdminSummary
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * The admin panel definted by a connect addon. Takes an `addonKey`, `adminPageKey`, `projectKey` and `projectId`. Only accessible to administrators.
       */
     @js.native
-    sealed trait projectAdminTabPanel extends NavigatorTargetJira
+    sealed trait projectAdminTabPanel
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * A specific location contained within the site. Takes either a `relativeUrl` or `absoluteUrl` to identify the path.
       */
     @js.native
-    sealed trait site extends NavigatorTargetJira
+    sealed trait site
+      extends StObject
+         with NavigatorTargetJira
     
     /**
       * The profile page for a Jira User. Takes a `username` or `userAccountId` to identify the user.
       */
     @js.native
-    sealed trait userProfile extends NavigatorTargetJira
+    sealed trait userProfile
+      extends StObject
+         with NavigatorTargetJira
   }
   
-  @js.native
   trait NavigatorContext extends StObject {
     
     /**
       * Identifies a specific page within a site. Required for the `site` target and must be within the site's domain.
       */
-    var absoluteUrl: String = js.native
+    var absoluteUrl: String
     
     /**
       * Identifies a connect add-on. Required for the `addonModule` and `projectAdminTabPanel` targets.
       */
-    var addonKey: String = js.native
+    var addonKey: String
     
     /**
       * Identifies a Jira Project Admin Tab Panels module key. Required for the `projectAdminTabPanel` target.
       */
-    var adminPageKey: String = js.native
+    var adminPageKey: String
     
     /**
       * Identifies a piece of content. Required for the `contentView` target.
       */
-    var contentId: String = js.native
+    var contentId: String
     
     /**
       * Identifies the type of content. Can be either `page` or `blogpost`. Required for the `contentEdit` target.
       */
-    var contentType: page | blogpost = js.native
+    var contentType: page | blogpost
     
     /**
       * Contains parameters that will be added as query parameters to the product url with "ac." prepended.
       * Used only in `addonModule` target. See Add-on specific context parameters for more info.
       */
-    var customData: String = js.native
+    var customData: String
     
     /**
       * Identifies a Jira dashboard. Required for the `dashboard` target in Jira.
       */
-    var dashboardId: String = js.native
+    var dashboardId: String
     
     /**
       * Identifies the mode for rendering embedded content in Confluence, such as attachments embedded in a page. This only applies to the `contentView` target.
@@ -171,52 +201,52 @@ object navigator {
       *
       * This parameter is optional and defaults to `current`.
       */
-    var embeddedContentRender: js.UndefOr[current | `version-at-save`] = js.native
+    var embeddedContentRender: js.UndefOr[current | `version-at-save`] = js.undefined
     
     /**
       * Identifies a Jira issue. Required for the `issue` target.
       */
-    var issueKey: String = js.native
+    var issueKey: String
     
     /**
       * Identifies a connect add-on module. Required for the `addonModule` target.
       */
-    var moduleKey: String = js.native
+    var moduleKey: String
     
     /**
       * Identifies a Jira Project by its ID number. Required for the `projectAdminTabPanel` target.
       */
-    var projectId: String = js.native
+    var projectId: String
     
     /**
       * Identifies a Jira project. Required for the `projectSummary`, `projectAdminSummary` and `projectAdminTabPanel` targets.
       */
-    var projectKey: String = js.native
+    var projectKey: String
     
     /**
       * Identifies a specific page within a site. Required for the `site` target and must begin with `/`.
       */
-    var relativeUrl: String = js.native
+    var relativeUrl: String
     
     /**
       * Identifies a space. Required for the `spaceView` and `spaceTools` targets.
       */
-    var spaceKey: String = js.native
+    var spaceKey: String
     
     /**
       * Identifies a user. One of this or `username` required for the `userProfile` target.
       */
-    var userAccountId: String = js.native
+    var userAccountId: String
     
     /**
       * Identifies a user. One of this or `userAccountId` required for the `userProfile` target.
       */
-    var username: String = js.native
+    var username: String
     
     /**
       * Identifies a version of a piece of content in Confluence. This parameter is optional, and only applies to the `contentView` target, allowing navigation to a specific version.
       */
-    var versionOverride: String = js.native
+    var versionOverride: String
   }
   object NavigatorContext {
     

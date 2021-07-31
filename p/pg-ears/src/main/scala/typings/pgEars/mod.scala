@@ -4,14 +4,16 @@ import typings.pgEars.anon.ClientConfigmaxAttemptsnu
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: ClientConfigmaxAttemptsnu): PgEars = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[PgEars]
+  
   @JSImport("pg-ears", JSImport.Namespace)
   @js.native
-  def apply(opts: ClientConfigmaxAttemptsnu): PgEars = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait PgEars extends StObject {

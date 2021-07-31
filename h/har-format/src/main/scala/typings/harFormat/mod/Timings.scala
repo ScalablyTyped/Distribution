@@ -2,10 +2,8 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timings extends StObject {
   
   /**
@@ -13,38 +11,38 @@ trait Timings extends StObject {
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var blocked: js.UndefOr[Double] = js.native
+  var blocked: js.UndefOr[Double] = js.undefined
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Time required to create TCP connection.
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var connect: js.UndefOr[Double] = js.native
+  var connect: js.UndefOr[Double] = js.undefined
   
   /**
     * DNS resolution time. The time required to resolve a host name.
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var dns: js.UndefOr[Double] = js.native
+  var dns: js.UndefOr[Double] = js.undefined
   
   /**
     * Time required to read entire response from the server (or cache).
     *
     * _Not optional and must have non-negative values._
     */
-  var receive: Double = js.native
+  var receive: Double
   
   /**
     * Time required to send HTTP request to the server.
     *
     * _Not optional and must have non-negative values._
     */
-  var send: js.UndefOr[Double] = js.native
+  var send: js.UndefOr[Double] = js.undefined
   
   /**
     * Time required for SSL/TLS negotiation.
@@ -54,7 +52,7 @@ trait Timings extends StObject {
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var ssl: js.UndefOr[Double] = js.native
+  var ssl: js.UndefOr[Double] = js.undefined
   
   /**
     * Waiting for a response from the server.
@@ -62,7 +60,7 @@ trait Timings extends StObject {
     * _Not optional and must have non-negative values._
     */
   @JSName("wait")
-  var wait_FTimings: Double = js.native
+  var wait_FTimings: Double
 }
 object Timings {
   

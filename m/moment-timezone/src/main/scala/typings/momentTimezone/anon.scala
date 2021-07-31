@@ -2,19 +2,17 @@ package typings.momentTimezone
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Links extends StObject {
     
-    var links: js.Array[String] = js.native
+    var links: js.Array[String]
     
-    var version: String = js.native
+    var version: String
     
-    var zones: js.Array[String] = js.native
+    var zones: js.Array[String]
   }
   object Links {
     

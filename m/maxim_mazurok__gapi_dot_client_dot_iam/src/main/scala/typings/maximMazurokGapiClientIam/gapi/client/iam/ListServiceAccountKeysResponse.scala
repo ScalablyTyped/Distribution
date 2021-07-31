@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServiceAccountKeysResponse extends StObject {
   
   /** The public keys for the service account. */
-  var keys: js.UndefOr[js.Array[ServiceAccountKey]] = js.native
+  var keys: js.UndefOr[js.Array[ServiceAccountKey]] = js.undefined
 }
 object ListServiceAccountKeysResponse {
   

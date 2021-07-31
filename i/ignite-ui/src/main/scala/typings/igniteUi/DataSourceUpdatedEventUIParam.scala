@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceUpdatedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the data source.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * See if an error has occured during update.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the data selector.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the result of the update operation.
     */
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
 }
 object DataSourceUpdatedEventUIParam {
   

@@ -4,41 +4,39 @@ import typings.pulumiAws.inputMod.GetPrefixListFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPrefixListMod {
   
-  @JSImport("@pulumi/aws/getPrefixList", "getPrefixList")
+  @JSImport("@pulumi/aws/getPrefixList", JSImport.Namespace)
   @js.native
-  def getPrefixList(): js.Promise[GetPrefixListResult] = js.native
-  @JSImport("@pulumi/aws/getPrefixList", "getPrefixList")
-  @js.native
-  def getPrefixList(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetPrefixListResult] = js.native
-  @JSImport("@pulumi/aws/getPrefixList", "getPrefixList")
-  @js.native
-  def getPrefixList(args: GetPrefixListArgs): js.Promise[GetPrefixListResult] = js.native
-  @JSImport("@pulumi/aws/getPrefixList", "getPrefixList")
-  @js.native
-  def getPrefixList(args: GetPrefixListArgs, opts: InvokeOptions): js.Promise[GetPrefixListResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPrefixList(): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")().asInstanceOf[js.Promise[GetPrefixListResult]]
+  @scala.inline
+  def getPrefixList(args: Unit, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
+  @scala.inline
+  def getPrefixList(args: GetPrefixListArgs): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrefixListResult]]
+  @scala.inline
+  def getPrefixList(args: GetPrefixListArgs, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
+  
   trait GetPrefixListArgs extends StObject {
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetPrefixListFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetPrefixListFilter]] = js.undefined
     
     /**
       * The name of the filter field. Valid values can be found in the [EC2 DescribePrefixLists API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePrefixLists.html).
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the prefix list to select.
       */
-    val prefixListId: js.UndefOr[String] = js.native
+    val prefixListId: js.UndefOr[String] = js.undefined
   }
   object GetPrefixListArgs {
     
@@ -74,27 +72,26 @@ object getPrefixListMod {
     }
   }
   
-  @js.native
   trait GetPrefixListResult extends StObject {
     
     /**
       * The list of CIDR blocks for the AWS service associated with the prefix list.
       */
-    val cidrBlocks: js.Array[String] = js.native
+    val cidrBlocks: js.Array[String]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetPrefixListFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetPrefixListFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the selected prefix list.
       */
-    val name: String = js.native
+    val name: String
     
-    val prefixListId: js.UndefOr[String] = js.native
+    val prefixListId: js.UndefOr[String] = js.undefined
   }
   object GetPrefixListResult {
     

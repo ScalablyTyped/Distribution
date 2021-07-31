@@ -5,25 +5,24 @@ import typings.awsSdkClientSqsNode.deleteMessageBatchExceptionsUnionMod.DeleteMe
 import typings.awsSdkClientSqsNode.sendMessageBatchExceptionsUnionMod.SendMessageBatchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTooManyEntriesInBatchRequestMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TooManyEntriesInBatchRequestDetails> * / any */ @js.native
-  trait TooManyEntriesInBatchRequest
-    extends ChangeMessageVisibilityBatchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TooManyEntriesInBatchRequestDetails> * / any */ trait TooManyEntriesInBatchRequest
+    extends StObject
+       with ChangeMessageVisibilityBatchExceptionsUnion
        with DeleteMessageBatchExceptionsUnion
        with SendMessageBatchExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest
   }
   object TooManyEntriesInBatchRequest {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest): TooManyEntriesInBatchRequest = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TooManyEntriesInBatchRequest = {
+      val __obj = js.Dynamic.literal(name = "TooManyEntriesInBatchRequest")
       __obj.asInstanceOf[TooManyEntriesInBatchRequest]
     }
     
@@ -35,6 +34,5 @@ object typesTooManyEntriesInBatchRequestMod {
     }
   }
   
-  @js.native
   trait TooManyEntriesInBatchRequestDetails extends StObject
 }

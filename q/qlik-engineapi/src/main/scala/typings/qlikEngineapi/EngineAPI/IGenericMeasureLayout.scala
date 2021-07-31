@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is the layout for GenericMeasureProperties extend of GenericBaseLayout
   */
-@js.native
-trait IGenericMeasureLayout extends IGenericBaseLayout {
+trait IGenericMeasureLayout
+  extends StObject
+     with IGenericBaseLayout {
   
   /**
     * Information about the measure.
     */
-  var qMeasure: INxLibraryMeasureDef = js.native
+  var qMeasure: INxLibraryMeasureDef
 }
 object IGenericMeasureLayout {
   

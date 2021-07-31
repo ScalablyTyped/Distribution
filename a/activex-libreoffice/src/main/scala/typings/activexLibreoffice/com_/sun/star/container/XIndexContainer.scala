@@ -3,25 +3,25 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the generic interface for supporting the insertion and removal of indexed elements.
   * @see XContainer
   */
-@js.native
-trait XIndexContainer extends XIndexReplace {
+trait XIndexContainer
+  extends StObject
+     with XIndexReplace {
   
   /**
     * inserts the given element at the specified index.
     *
     * To append an element, use the index "last index +1".
     */
-  def insertByIndex(Index: Double, Element: js.Any): Unit = js.native
+  def insertByIndex(Index: Double, Element: js.Any): Unit
   
   /** removes the element at the specified index. */
-  def removeByIndex(Index: Double): Unit = js.native
+  def removeByIndex(Index: Double): Unit
 }
 object XIndexContainer {
   

@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait CodeGuruReviewer extends Service {
   ): Request[AssociateRepositoryResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeGuruReviewer: ConfigBase with ClientConfiguration = js.native
+  var config_CodeGuruReviewer: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Use to create a code review with a  CodeReviewType  of RepositoryAnalysis. This type of code review analyzes all code under a specified branch in an associated repository. PullRequest code reviews are automatically triggered by a pull request so cannot be created using this method. 

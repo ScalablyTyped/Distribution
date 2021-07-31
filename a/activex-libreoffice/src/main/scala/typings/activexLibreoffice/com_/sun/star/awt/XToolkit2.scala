@@ -10,16 +10,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link Toolkit} to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XToolkit2
-  extends XToolkit
+  extends StObject
+     with XToolkit
      with XDataTransferProviderAccess
      with XSystemChildFactory
      with XMessageBoxFactory

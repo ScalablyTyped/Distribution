@@ -4,31 +4,29 @@ import typings.googleCloudTextToSpeech.mod.google.api.IHttpRule
 import typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a MethodOptions. */
-@js.native
 trait IMethodOptions extends StObject {
   
   /** MethodOptions .google.api.http */
   @JSName(".google.api.http")
-  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.native
+  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.undefined
   
   /** MethodOptions .google.api.methodSignature */
   @JSName(".google.api.methodSignature")
-  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.native
+  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** MethodOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MethodOptions idempotencyLevel */
   var idempotencyLevel: js.UndefOr[
     IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** MethodOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IMethodOptions {
   

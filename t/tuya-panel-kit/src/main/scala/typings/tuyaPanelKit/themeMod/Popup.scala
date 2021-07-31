@@ -2,62 +2,60 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :string,   basic :tuya-panel-kit.tuya-panel-kit/theme.PopupTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.PopupTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.PopupTheme> */
-@js.native
 trait Popup extends StObject {
   
-  var backIconColor: js.UndefOr[String] = js.native
+  var backIconColor: js.UndefOr[String] = js.undefined
   
-  var basic: PopupTheme = js.native
+  var basic: PopupTheme
   
-  var bottomBg: js.UndefOr[String] = js.native
+  var bottomBg: js.UndefOr[String] = js.undefined
   
-  var cancelFontColor: js.UndefOr[String] = js.native
+  var cancelFontColor: js.UndefOr[String] = js.undefined
   
-  var cancelFontSize: js.UndefOr[Double] = js.native
+  var cancelFontSize: js.UndefOr[Double] = js.undefined
   
-  var cellBg: js.UndefOr[String] = js.native
+  var cellBg: js.UndefOr[String] = js.undefined
   
-  var cellFontColor: js.UndefOr[String] = js.native
+  var cellFontColor: js.UndefOr[String] = js.undefined
   
-  var cellFontSize: js.UndefOr[Double] = js.native
+  var cellFontSize: js.UndefOr[Double] = js.undefined
   
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
-  var checkboxColor: js.UndefOr[String] = js.native
+  var checkboxColor: js.UndefOr[String] = js.undefined
   
-  var confirmFontColor: js.UndefOr[String] = js.native
+  var confirmFontColor: js.UndefOr[String] = js.undefined
   
-  var confirmFontSize: js.UndefOr[Double] = js.native
+  var confirmFontSize: js.UndefOr[Double] = js.undefined
   
-  var dark: PopupTheme = js.native
+  var dark: PopupTheme
   
-  var footerRadius: js.UndefOr[Double] = js.native
+  var footerRadius: js.UndefOr[Double] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[PopupListTheme] = js.native
+  var list: js.UndefOr[PopupListTheme] = js.undefined
   
-  var numberSelector: js.UndefOr[PopupNumberSelectorTheme] = js.native
+  var numberSelector: js.UndefOr[PopupNumberSelectorTheme] = js.undefined
   
-  var subTitleFontColor: js.UndefOr[String] = js.native
+  var subTitleFontColor: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
-  var titleBg: js.UndefOr[String] = js.native
+  var titleBg: js.UndefOr[String] = js.undefined
   
-  var titleFontColor: js.UndefOr[String] = js.native
+  var titleFontColor: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
   
-  var titleHeight: js.UndefOr[Double] = js.native
+  var titleHeight: js.UndefOr[Double] = js.undefined
   
-  var titleRadius: js.UndefOr[Double] = js.native
+  var titleRadius: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Popup {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides gesture and manipulation recognition, event listeners, and settings. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Initializes a new instance of a GestureRecognizer object. */
 class GestureRecognizer ()
-  extends typings.winrtUwp.Windows.UI.Input.GestureRecognizer
+  extends StObject
+     with typings.winrtUwp.Windows.UI.Input.GestureRecognizer

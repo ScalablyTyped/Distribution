@@ -3,7 +3,6 @@ package typings.reactNativeFirebaseApp.mod
 import typings.reactNativeFirebaseApp.mod.ReactNativeFirebase.FirebaseModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Utils_ {
@@ -97,94 +96,135 @@ object Utils_ {
   object PlayServicesAvailabilityStatusCodes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PlayServicesAvailabilityStatusCodes with Double] = js.native
+    def apply(value: Double): js.UndefOr[PlayServicesAvailabilityStatusCodes & Double] = js.native
     
     @js.native
-    sealed trait API_UNAVAILABLE extends PlayServicesAvailabilityStatusCodes
-    /* 16 */ val API_UNAVAILABLE: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.API_UNAVAILABLE with Double = js.native
+    sealed trait API_UNAVAILABLE
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 16 */ val API_UNAVAILABLE: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.API_UNAVAILABLE & Double = js.native
     
     @js.native
-    sealed trait CANCELED extends PlayServicesAvailabilityStatusCodes
-    /* 13 */ val CANCELED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.CANCELED with Double = js.native
+    sealed trait CANCELED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 13 */ val CANCELED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.CANCELED & Double = js.native
     
     @js.native
-    sealed trait DEVELOPER_ERROR extends PlayServicesAvailabilityStatusCodes
-    /* 10 */ val DEVELOPER_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.DEVELOPER_ERROR with Double = js.native
+    sealed trait DEVELOPER_ERROR
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 10 */ val DEVELOPER_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.DEVELOPER_ERROR & Double = js.native
     
     @js.native
-    sealed trait DRIVE_EXTERNAL_STORAGE_REQUIRED extends PlayServicesAvailabilityStatusCodes
-    /* 1500 */ val DRIVE_EXTERNAL_STORAGE_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.DRIVE_EXTERNAL_STORAGE_REQUIRED with Double = js.native
+    sealed trait DRIVE_EXTERNAL_STORAGE_REQUIRED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 1500 */ val DRIVE_EXTERNAL_STORAGE_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.DRIVE_EXTERNAL_STORAGE_REQUIRED & Double = js.native
     
     @js.native
-    sealed trait INTERNAL_ERROR extends PlayServicesAvailabilityStatusCodes
-    /* 8 */ val INTERNAL_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INTERNAL_ERROR with Double = js.native
+    sealed trait INTERNAL_ERROR
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 8 */ val INTERNAL_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INTERNAL_ERROR & Double = js.native
     
     @js.native
-    sealed trait INTERRUPTED extends PlayServicesAvailabilityStatusCodes
-    /* 15 */ val INTERRUPTED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INTERRUPTED with Double = js.native
+    sealed trait INTERRUPTED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 15 */ val INTERRUPTED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INTERRUPTED & Double = js.native
     
     @js.native
-    sealed trait INVALID_ACCOUNT extends PlayServicesAvailabilityStatusCodes
-    /* 5 */ val INVALID_ACCOUNT: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INVALID_ACCOUNT with Double = js.native
+    sealed trait INVALID_ACCOUNT
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 5 */ val INVALID_ACCOUNT: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.INVALID_ACCOUNT & Double = js.native
     
     @js.native
-    sealed trait LICENSE_CHECK_FAILED extends PlayServicesAvailabilityStatusCodes
-    /* 11 */ val LICENSE_CHECK_FAILED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.LICENSE_CHECK_FAILED with Double = js.native
+    sealed trait LICENSE_CHECK_FAILED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 11 */ val LICENSE_CHECK_FAILED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.LICENSE_CHECK_FAILED & Double = js.native
     
     @js.native
-    sealed trait NETWORK_ERROR extends PlayServicesAvailabilityStatusCodes
-    /* 7 */ val NETWORK_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.NETWORK_ERROR with Double = js.native
+    sealed trait NETWORK_ERROR
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 7 */ val NETWORK_ERROR: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.NETWORK_ERROR & Double = js.native
     
     @js.native
-    sealed trait RESOLUTION_REQUIRED extends PlayServicesAvailabilityStatusCodes
-    /* 6 */ val RESOLUTION_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.RESOLUTION_REQUIRED with Double = js.native
+    sealed trait RESOLUTION_REQUIRED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 6 */ val RESOLUTION_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.RESOLUTION_REQUIRED & Double = js.native
     
     @js.native
-    sealed trait RESTRICTED_PROFILE extends PlayServicesAvailabilityStatusCodes
-    /* 20 */ val RESTRICTED_PROFILE: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.RESTRICTED_PROFILE with Double = js.native
+    sealed trait RESTRICTED_PROFILE
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 20 */ val RESTRICTED_PROFILE: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.RESTRICTED_PROFILE & Double = js.native
     
     @js.native
-    sealed trait SERVICE_DISABLED extends PlayServicesAvailabilityStatusCodes
-    /* 3 */ val SERVICE_DISABLED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_DISABLED with Double = js.native
+    sealed trait SERVICE_DISABLED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 3 */ val SERVICE_DISABLED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_DISABLED & Double = js.native
     
     @js.native
-    sealed trait SERVICE_INVALID extends PlayServicesAvailabilityStatusCodes
-    /* 9 */ val SERVICE_INVALID: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_INVALID with Double = js.native
+    sealed trait SERVICE_INVALID
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 9 */ val SERVICE_INVALID: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_INVALID & Double = js.native
     
     @js.native
-    sealed trait SERVICE_MISSING extends PlayServicesAvailabilityStatusCodes
-    /* 1 */ val SERVICE_MISSING: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_MISSING with Double = js.native
+    sealed trait SERVICE_MISSING
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 1 */ val SERVICE_MISSING: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_MISSING & Double = js.native
     
     @js.native
-    sealed trait SERVICE_MISSING_PERMISSION extends PlayServicesAvailabilityStatusCodes
-    /* 19 */ val SERVICE_MISSING_PERMISSION: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_MISSING_PERMISSION with Double = js.native
+    sealed trait SERVICE_MISSING_PERMISSION
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 19 */ val SERVICE_MISSING_PERMISSION: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_MISSING_PERMISSION & Double = js.native
     
     @js.native
-    sealed trait SERVICE_UPDATING extends PlayServicesAvailabilityStatusCodes
-    /* 18 */ val SERVICE_UPDATING: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_UPDATING with Double = js.native
+    sealed trait SERVICE_UPDATING
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 18 */ val SERVICE_UPDATING: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_UPDATING & Double = js.native
     
     @js.native
-    sealed trait SERVICE_VERSION_UPDATE_REQUIRED extends PlayServicesAvailabilityStatusCodes
-    /* 2 */ val SERVICE_VERSION_UPDATE_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_VERSION_UPDATE_REQUIRED with Double = js.native
+    sealed trait SERVICE_VERSION_UPDATE_REQUIRED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 2 */ val SERVICE_VERSION_UPDATE_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SERVICE_VERSION_UPDATE_REQUIRED & Double = js.native
     
     @js.native
-    sealed trait SIGN_IN_FAILED extends PlayServicesAvailabilityStatusCodes
-    /* 17 */ val SIGN_IN_FAILED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SIGN_IN_FAILED with Double = js.native
+    sealed trait SIGN_IN_FAILED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 17 */ val SIGN_IN_FAILED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SIGN_IN_FAILED & Double = js.native
     
     @js.native
-    sealed trait SIGN_IN_REQUIRED extends PlayServicesAvailabilityStatusCodes
-    /* 4 */ val SIGN_IN_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SIGN_IN_REQUIRED with Double = js.native
+    sealed trait SIGN_IN_REQUIRED
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 4 */ val SIGN_IN_REQUIRED: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SIGN_IN_REQUIRED & Double = js.native
     
     @js.native
-    sealed trait SUCCESS extends PlayServicesAvailabilityStatusCodes
-    /* 0 */ val SUCCESS: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SUCCESS with Double = js.native
+    sealed trait SUCCESS
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 0 */ val SUCCESS: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.SUCCESS & Double = js.native
     
     @js.native
-    sealed trait TIMEOUT extends PlayServicesAvailabilityStatusCodes
-    /* 14 */ val TIMEOUT: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.TIMEOUT with Double = js.native
+    sealed trait TIMEOUT
+      extends StObject
+         with PlayServicesAvailabilityStatusCodes
+    /* 14 */ val TIMEOUT: typings.reactNativeFirebaseApp.mod.Utils_.PlayServicesAvailabilityStatusCodes.TIMEOUT & Double = js.native
   }
   
-  @js.native
   trait FilePath extends StObject {
     
     /**
@@ -196,7 +236,7 @@ object Utils_ {
       * firebase.utils.FilePath.CACHES_DIRECTORY;
       * ```
       */
-    var CACHES_DIRECTORY: String = js.native
+    var CACHES_DIRECTORY: String
     
     /**
       * Returns an absolute path to the users Documents directory.
@@ -207,7 +247,7 @@ object Utils_ {
       * firebase.utils.FilePath.DOCUMENT_DIRECTORY;
       * ```
       */
-    var DOCUMENT_DIRECTORY: String = js.native
+    var DOCUMENT_DIRECTORY: String
     
     /**
       * Returns an absolute path to the directory on the primary shared/external storage device.
@@ -222,7 +262,7 @@ object Utils_ {
       *
       * @android Android only - iOS returns null
       */
-    var EXTERNAL_DIRECTORY: String | Null = js.native
+    var EXTERNAL_DIRECTORY: String | Null
     
     /**
       * Returns an absolute path to the primary shared/external storage directory.
@@ -237,7 +277,7 @@ object Utils_ {
       *
       * @android Android only - iOS returns null
       */
-    var EXTERNAL_STORAGE_DIRECTORY: String | Null = js.native
+    var EXTERNAL_STORAGE_DIRECTORY: String | Null
     
     /**
       * Returns an absolute path to the apps library/resources directory.
@@ -248,7 +288,7 @@ object Utils_ {
       * firebase.utils.FilePath.LIBRARY_DIRECTORY;
       * ```
       */
-    var LIBRARY_DIRECTORY: String = js.native
+    var LIBRARY_DIRECTORY: String
     
     /**
       * Returns an absolute path to the applications main bundle.
@@ -259,7 +299,7 @@ object Utils_ {
       *
       * @ios iOS only
       */
-    var MAIN_BUNDLE: String = js.native
+    var MAIN_BUNDLE: String
     
     /**
       * Returns an absolute path to a directory in which to place movies that are available to the user.
@@ -268,7 +308,7 @@ object Utils_ {
       * firebase.utils.FilePath.MOVIES_DIRECTORY;
       * ```
       */
-    var MOVIES_DIRECTORY: String = js.native
+    var MOVIES_DIRECTORY: String
     
     /**
       * Returns an absolute path to a directory in which to place pictures that are available to the user.
@@ -277,7 +317,7 @@ object Utils_ {
       * firebase.utils.FilePath.PICTURES_DIRECTORY;
       * ```
       */
-    var PICTURES_DIRECTORY: String = js.native
+    var PICTURES_DIRECTORY: String
     
     /**
       * Returns an absolute path to a temporary directory.
@@ -288,7 +328,7 @@ object Utils_ {
       * firebase.utils.FilePath.TEMP_DIRECTORY;
       * ```
       */
-    var TEMP_DIRECTORY: String = js.native
+    var TEMP_DIRECTORY: String
   }
   object FilePath {
     
@@ -302,7 +342,7 @@ object Utils_ {
       PICTURES_DIRECTORY: String,
       TEMP_DIRECTORY: String
     ): FilePath = {
-      val __obj = js.Dynamic.literal(CACHES_DIRECTORY = CACHES_DIRECTORY.asInstanceOf[js.Any], DOCUMENT_DIRECTORY = DOCUMENT_DIRECTORY.asInstanceOf[js.Any], LIBRARY_DIRECTORY = LIBRARY_DIRECTORY.asInstanceOf[js.Any], MAIN_BUNDLE = MAIN_BUNDLE.asInstanceOf[js.Any], MOVIES_DIRECTORY = MOVIES_DIRECTORY.asInstanceOf[js.Any], PICTURES_DIRECTORY = PICTURES_DIRECTORY.asInstanceOf[js.Any], TEMP_DIRECTORY = TEMP_DIRECTORY.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(CACHES_DIRECTORY = CACHES_DIRECTORY.asInstanceOf[js.Any], DOCUMENT_DIRECTORY = DOCUMENT_DIRECTORY.asInstanceOf[js.Any], LIBRARY_DIRECTORY = LIBRARY_DIRECTORY.asInstanceOf[js.Any], MAIN_BUNDLE = MAIN_BUNDLE.asInstanceOf[js.Any], MOVIES_DIRECTORY = MOVIES_DIRECTORY.asInstanceOf[js.Any], PICTURES_DIRECTORY = PICTURES_DIRECTORY.asInstanceOf[js.Any], TEMP_DIRECTORY = TEMP_DIRECTORY.asInstanceOf[js.Any], EXTERNAL_DIRECTORY = null, EXTERNAL_STORAGE_DIRECTORY = null)
       __obj.asInstanceOf[FilePath]
     }
     
@@ -344,7 +384,6 @@ object Utils_ {
     }
   }
   
-  @js.native
   trait PlayServicesAvailability extends StObject {
     
     /**
@@ -355,7 +394,7 @@ object Utils_ {
       * ```
       * @android Android only - iOS returns undefined
       */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /**
       * If Play Services is not available on the device, hasResolution indicates
@@ -366,7 +405,7 @@ object Utils_ {
       * ```
       * @android Android only - iOS returns undefined
       */
-    var hasResolution: js.UndefOr[Boolean] = js.native
+    var hasResolution: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns a boolean indicating whether Play Store is available on the device
@@ -377,7 +416,7 @@ object Utils_ {
       *
       * @android Android only - iOS returns true
       */
-    var isAvailable: Boolean = js.native
+    var isAvailable: Boolean
     
     /**
       * If an error was received, this indicates whether the error is resolvable
@@ -387,7 +426,7 @@ object Utils_ {
       * ```
       * @android Android only - iOS returns undefined
       */
-    var isUserResolvableError: js.UndefOr[Boolean] = js.native
+    var isUserResolvableError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns a numeric status code. Please refer to Android documentation
@@ -400,7 +439,7 @@ object Utils_ {
       *
       * @android Android only - iOS returns 0
       */
-    var status: PlayServicesAvailabilityStatusCodes = js.native
+    var status: PlayServicesAvailabilityStatusCodes
   }
   object PlayServicesAvailability {
     
@@ -439,10 +478,9 @@ object Utils_ {
     }
   }
   
-  @js.native
   trait Statics extends StObject {
     
-    var FilePath: typings.reactNativeFirebaseApp.mod.Utils_.FilePath = js.native
+    var FilePath: typings.reactNativeFirebaseApp.mod.Utils_.FilePath
   }
   object Statics {
     

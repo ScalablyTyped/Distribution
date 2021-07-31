@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GAUGE metrics, but not for DELTA and CUMULATIVE metrics, which cover a span
   * of time.
   */
-@js.native
 trait SchemaTimeInterval extends StObject {
   
   /**
     * Required. The end of the time interval.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The beginning of the time interval. The default value for the
     * start time is the end time. The start time must not be later than the end
     * time.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeInterval {
   

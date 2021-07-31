@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLStorage extends StObject {
   
   @JSName("MSHTML.IHTMLStorage_typekey")
-  var MSHTMLDotIHTMLStorage_typekey: IHTMLStorage = js.native
+  var MSHTMLDotIHTMLStorage_typekey: IHTMLStorage
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def getItem(bstrKey: String): js.Any = js.native
+  def getItem(bstrKey: String): js.Any
   
-  def key(lIndex: Double): String = js.native
+  def key(lIndex: Double): String
   
-  val length: Double = js.native
+  val length: Double
   
-  val remainingSpace: Double = js.native
+  val remainingSpace: Double
   
-  def removeItem(bstrKey: String): Unit = js.native
+  def removeItem(bstrKey: String): Unit
   
-  def setItem(bstrKey: String, bstrValue: String): Unit = js.native
+  def setItem(bstrKey: String, bstrValue: String): Unit
 }
 object IHTMLStorage {
   

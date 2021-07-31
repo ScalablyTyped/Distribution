@@ -4,7 +4,6 @@ import typings.vsoNodeApi.anon.EnumValuesAssignedInherited
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securityRolesInterfacesMod {
@@ -16,21 +15,25 @@ object securityRolesInterfacesMod {
   object RoleAccess extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RoleAccess with Double] = js.native
+    def apply(value: Double): js.UndefOr[RoleAccess & Double] = js.native
     
     /**
       * Access has been explicitly set.
       */
     @js.native
-    sealed trait Assigned extends RoleAccess
-    /* 1 */ val Assigned: typings.vsoNodeApi.securityRolesInterfacesMod.RoleAccess.Assigned with Double = js.native
+    sealed trait Assigned
+      extends StObject
+         with RoleAccess
+    /* 1 */ val Assigned: typings.vsoNodeApi.securityRolesInterfacesMod.RoleAccess.Assigned & Double = js.native
     
     /**
       * Access has been inherited from a higher scope.
       */
     @js.native
-    sealed trait Inherited extends RoleAccess
-    /* 2 */ val Inherited: typings.vsoNodeApi.securityRolesInterfacesMod.RoleAccess.Inherited with Double = js.native
+    sealed trait Inherited
+      extends StObject
+         with RoleAccess
+    /* 2 */ val Inherited: typings.vsoNodeApi.securityRolesInterfacesMod.RoleAccess.Inherited & Double = js.native
   }
   
   object TypeInfo {
@@ -52,28 +55,27 @@ object securityRolesInterfacesMod {
     def RoleAssignment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoleAssignment")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait RoleAssignment extends StObject {
     
     /**
       * Designates the role as explicitly assigned or inherited.
       */
-    var access: RoleAccess = js.native
+    var access: RoleAccess
     
     /**
       * User friendly description of access assignment.
       */
-    var accessDisplayName: String = js.native
+    var accessDisplayName: String
     
     /**
       * The user to whom the role is assigned.
       */
-    var identity: IdentityRef = js.native
+    var identity: IdentityRef
     
     /**
       * The role assigned to the user.
       */
-    var role: SecurityRole = js.native
+    var role: SecurityRole
   }
   object RoleAssignment {
     
@@ -100,43 +102,42 @@ object securityRolesInterfacesMod {
     }
   }
   
-  @js.native
   trait SecurityRole extends StObject {
     
     /**
       * Permissions the role is allowed.
       */
-    var allowPermissions: Double = js.native
+    var allowPermissions: Double
     
     /**
       * Permissions the role is denied.
       */
-    var denyPermissions: Double = js.native
+    var denyPermissions: Double
     
     /**
       * Description of user access defined by the role
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * User friendly name of the role.
       */
-    var displayName: String = js.native
+    var displayName: String
     
     /**
       * Globally unique identifier for the role.
       */
-    var identifier: String = js.native
+    var identifier: String
     
     /**
       * Unique name of the role in the scope.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Returns the id of the ParentScope.
       */
-    var scope: String = js.native
+    var scope: String
   }
   object SecurityRole {
     
@@ -180,23 +181,22 @@ object securityRolesInterfacesMod {
     }
   }
   
-  @js.native
   trait UserRoleAssignmentRef extends StObject {
     
     /**
       * The name of the role assigned.
       */
-    var roleName: String = js.native
+    var roleName: String
     
     /**
       * Identifier of the user given the role assignment.
       */
-    var uniqueName: String = js.native
+    var uniqueName: String
     
     /**
       * Unique id of the user given the role assignment.
       */
-    var userId: String = js.native
+    var userId: String
   }
   object UserRoleAssignmentRef {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventCategoriesMessage extends StObject {
   
   /**
     * The source type, such as cluster or parameter group, to which the described event categories apply. Valid values: cluster, cluster-snapshot, cluster-parameter-group, cluster-security-group, and scheduled-action.
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
 }
 object DescribeEventCategoriesMessage {
   

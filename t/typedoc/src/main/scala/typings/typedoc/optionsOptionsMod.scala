@@ -101,287 +101,445 @@ import typings.typedoc.typedocStrings.version
 import typings.typescript.mod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsOptionsMod {
   
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
+  @JSImport("typedoc/dist/lib/utils/options/options", JSImport.Namespace)
   @js.native
-  def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def BindOption(name: NeverIfInternal[String]): js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Application | typings.typedoc.anon.Options, /* key */ PropertyKey, Unit]]
+  
+  @scala.inline
   def BindOption_categorizeByGroup(name: categorizeByGroup): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_categoryOrder(name: categoryOrder): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_defaultCategory(name: defaultCategory): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_disableOutputCheck(name: disableOutputCheck): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_disableSources(name: disableSources): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_entryPoint(name: entryPoint): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_exclude(name: exclude): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeExternals(name: excludeExternals): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeNotDocumented(name: excludeNotDocumented): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeNotExported(name: excludeNotExported): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludePrivate(name: excludePrivate): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeProtected(name: excludeProtected): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_excludeTags(name: excludeTags): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_externalPattern(name: externalPattern): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gaID(name: gaID): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gaSite(name: gaSite): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gitRemote(name: gitRemote): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_gitRevision(name: gitRevision): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_help(name: help): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_hideGenerator(name: hideGenerator): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_ignoreCompilerErrors(name: ignoreCompilerErrors): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includeDeclarations(name: includeDeclarations): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includeVersion(name: includeVersion): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_includes(name: includes): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_inputFiles(name: inputFiles): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_json(name: json): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_logger(name: logger): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_media(name: media): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_mode(name: mode): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_name(name: name): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_options(name: options): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_out(name: out): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_plugin(name: plugin): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_readme(name: readme): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_theme(name: theme): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_toc(name: toc): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_tsconfig(name: tsconfig): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
-  @JSImport("typedoc/dist/lib/utils/options/options", "BindOption")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
+  
+  @scala.inline
   def BindOption_version(name: version): js.Function2[
-    /* target */ (Application | typings.typedoc.anon.Options) with BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* target */ (Application | typings.typedoc.anon.Options) & BindOption & TopLevel[js.Any], 
+    /* key */ PropertyKey, 
+    Unit
+  ]]
   
   @JSImport("typedoc/dist/lib/utils/options/options", "Options")
   @js.native
@@ -400,83 +558,83 @@ object optionsOptionsMod {
     
     def addDeclaration(declaration: NeverIfInternal[DeclarationOption]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_categorizeByGroup(declaration: `33` with KeyToDeclaration[categorizeByGroup]): Unit = js.native
+    def addDeclaration_categorizeByGroup(declaration: `33` & KeyToDeclaration[categorizeByGroup]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_categoryOrder(declaration: `24` with KeyToDeclaration[categoryOrder]): Unit = js.native
+    def addDeclaration_categoryOrder(declaration: `24` & KeyToDeclaration[categoryOrder]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_defaultCategory(declaration: `9` with KeyToDeclaration[defaultCategory]): Unit = js.native
+    def addDeclaration_defaultCategory(declaration: `9` & KeyToDeclaration[defaultCategory]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_disableOutputCheck(declaration: `27` with KeyToDeclaration[disableOutputCheck]): Unit = js.native
+    def addDeclaration_disableOutputCheck(declaration: `27` & KeyToDeclaration[disableOutputCheck]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_disableSources(declaration: `18` with KeyToDeclaration[disableSources]): Unit = js.native
+    def addDeclaration_disableSources(declaration: `18` & KeyToDeclaration[disableSources]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_entryPoint(declaration: `28` with KeyToDeclaration[entryPoint]): Unit = js.native
+    def addDeclaration_entryPoint(declaration: `28` & KeyToDeclaration[entryPoint]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_exclude(declaration: `8` with KeyToDeclaration[exclude]): Unit = js.native
+    def addDeclaration_exclude(declaration: `8` & KeyToDeclaration[exclude]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludeExternals(declaration: `36` with KeyToDeclaration[excludeExternals]): Unit = js.native
+    def addDeclaration_excludeExternals(declaration: `36` & KeyToDeclaration[excludeExternals]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludeNotDocumented(declaration: `15` with KeyToDeclaration[excludeNotDocumented]): Unit = js.native
+    def addDeclaration_excludeNotDocumented(declaration: `15` & KeyToDeclaration[excludeNotDocumented]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludeNotExported(declaration: `20` with KeyToDeclaration[excludeNotExported]): Unit = js.native
+    def addDeclaration_excludeNotExported(declaration: `20` & KeyToDeclaration[excludeNotExported]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludePrivate(declaration: `22` with KeyToDeclaration[excludePrivate]): Unit = js.native
+    def addDeclaration_excludePrivate(declaration: `22` & KeyToDeclaration[excludePrivate]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludeProtected(declaration: `14` with KeyToDeclaration[excludeProtected]): Unit = js.native
+    def addDeclaration_excludeProtected(declaration: `14` & KeyToDeclaration[excludeProtected]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_excludeTags(declaration: `23` with KeyToDeclaration[excludeTags]): Unit = js.native
+    def addDeclaration_excludeTags(declaration: `23` & KeyToDeclaration[excludeTags]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_externalPattern(declaration: `35` with KeyToDeclaration[externalPattern]): Unit = js.native
+    def addDeclaration_externalPattern(declaration: `35` & KeyToDeclaration[externalPattern]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_gaID(declaration: `1` with KeyToDeclaration[gaID]): Unit = js.native
+    def addDeclaration_gaID(declaration: `1` & KeyToDeclaration[gaID]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_gaSite(declaration: `31` with KeyToDeclaration[gaSite]): Unit = js.native
+    def addDeclaration_gaSite(declaration: `31` & KeyToDeclaration[gaSite]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_gitRemote(declaration: `4` with KeyToDeclaration[gitRemote]): Unit = js.native
+    def addDeclaration_gitRemote(declaration: `4` & KeyToDeclaration[gitRemote]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_gitRevision(declaration: `26` with KeyToDeclaration[gitRevision]): Unit = js.native
+    def addDeclaration_gitRevision(declaration: `26` & KeyToDeclaration[gitRevision]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_help(declaration: `21` with KeyToDeclaration[help]): Unit = js.native
+    def addDeclaration_help(declaration: `21` & KeyToDeclaration[help]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_hideGenerator(declaration: `2` with KeyToDeclaration[hideGenerator]): Unit = js.native
+    def addDeclaration_hideGenerator(declaration: `2` & KeyToDeclaration[hideGenerator]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_ignoreCompilerErrors(declaration: `29` with KeyToDeclaration[ignoreCompilerErrors]): Unit = js.native
+    def addDeclaration_ignoreCompilerErrors(declaration: `29` & KeyToDeclaration[ignoreCompilerErrors]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_includeDeclarations(declaration: `16` with KeyToDeclaration[includeDeclarations]): Unit = js.native
+    def addDeclaration_includeDeclarations(declaration: `16` & KeyToDeclaration[includeDeclarations]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_includeVersion(declaration: `7` with KeyToDeclaration[includeVersion]): Unit = js.native
+    def addDeclaration_includeVersion(declaration: `7` & KeyToDeclaration[includeVersion]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_includes(declaration: `11` with KeyToDeclaration[includes]): Unit = js.native
+    def addDeclaration_includes(declaration: `11` & KeyToDeclaration[includes]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_inputFiles(declaration: `10` with KeyToDeclaration[inputFiles]): Unit = js.native
+    def addDeclaration_inputFiles(declaration: `10` & KeyToDeclaration[inputFiles]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_json(declaration: `5` with KeyToDeclaration[json]): Unit = js.native
+    def addDeclaration_json(declaration: `5` & KeyToDeclaration[json]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_listInvalidSymbolLinks(declaration: `6` with KeyToDeclaration[listInvalidSymbolLinks]): Unit = js.native
+    def addDeclaration_listInvalidSymbolLinks(declaration: `6` & KeyToDeclaration[listInvalidSymbolLinks]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_logger(declaration: `3` with KeyToDeclaration[typings.typedoc.typedocStrings.logger]): Unit = js.native
+    def addDeclaration_logger(declaration: `3` & KeyToDeclaration[typings.typedoc.typedocStrings.logger]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_media(declaration: `17` with KeyToDeclaration[media]): Unit = js.native
+    def addDeclaration_media(declaration: `17` & KeyToDeclaration[media]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_mode(declaration: `30` with KeyToDeclaration[mode]): Unit = js.native
+    def addDeclaration_mode(declaration: `30` & KeyToDeclaration[mode]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_name(declaration: `34` with KeyToDeclaration[name]): Unit = js.native
+    def addDeclaration_name(declaration: `34` & KeyToDeclaration[name]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_options(declaration: `32` with KeyToDeclaration[options]): Unit = js.native
+    def addDeclaration_options(declaration: `32` & KeyToDeclaration[options]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_out(declaration: `0` with KeyToDeclaration[out]): Unit = js.native
+    def addDeclaration_out(declaration: `0` & KeyToDeclaration[out]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_plugin(declaration: `13` with KeyToDeclaration[plugin]): Unit = js.native
+    def addDeclaration_plugin(declaration: `13` & KeyToDeclaration[plugin]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_readme(declaration: `37` with KeyToDeclaration[readme]): Unit = js.native
+    def addDeclaration_readme(declaration: `37` & KeyToDeclaration[readme]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_theme(declaration: `12` with KeyToDeclaration[theme]): Unit = js.native
+    def addDeclaration_theme(declaration: `12` & KeyToDeclaration[theme]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_toc(declaration: `25` with KeyToDeclaration[toc]): Unit = js.native
+    def addDeclaration_toc(declaration: `25` & KeyToDeclaration[toc]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_tsconfig(declaration: `19` with KeyToDeclaration[tsconfig]): Unit = js.native
+    def addDeclaration_tsconfig(declaration: `19` & KeyToDeclaration[tsconfig]): Unit = js.native
     @JSName("addDeclaration")
-    def addDeclaration_version(declaration: Name with KeyToDeclaration[version]): Unit = js.native
+    def addDeclaration_version(declaration: Name & KeyToDeclaration[version]): Unit = js.native
     
     def addDeclarations(declarations: js.Array[DeclarationOption]): Unit = js.native
     
@@ -498,83 +656,83 @@ object optionsOptionsMod {
     
     def getValue(name: NeverIfInternal[String]): js.Any = js.native
     @JSName("getValue")
-    def getValue_categorizeByGroup(name: categorizeByGroup): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_categorizeByGroup(name: categorizeByGroup): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_categoryOrder(name: categoryOrder): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_categoryOrder(name: categoryOrder): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_defaultCategory(name: defaultCategory): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_defaultCategory(name: defaultCategory): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_disableOutputCheck(name: disableOutputCheck): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_disableOutputCheck(name: disableOutputCheck): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_disableSources(name: disableSources): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_disableSources(name: disableSources): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_entryPoint(name: entryPoint): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_entryPoint(name: entryPoint): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_exclude(name: exclude): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_exclude(name: exclude): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludeExternals(name: excludeExternals): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludeExternals(name: excludeExternals): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludeNotDocumented(name: excludeNotDocumented): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludeNotDocumented(name: excludeNotDocumented): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludeNotExported(name: excludeNotExported): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludeNotExported(name: excludeNotExported): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludePrivate(name: excludePrivate): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludePrivate(name: excludePrivate): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludeProtected(name: excludeProtected): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludeProtected(name: excludeProtected): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_excludeTags(name: excludeTags): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_excludeTags(name: excludeTags): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_externalPattern(name: externalPattern): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_externalPattern(name: externalPattern): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_gaID(name: gaID): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_gaID(name: gaID): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_gaSite(name: gaSite): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_gaSite(name: gaSite): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_gitRemote(name: gitRemote): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_gitRemote(name: gitRemote): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_gitRevision(name: gitRevision): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_gitRevision(name: gitRevision): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_help(name: help): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_help(name: help): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_hideGenerator(name: hideGenerator): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_hideGenerator(name: hideGenerator): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_ignoreCompilerErrors(name: ignoreCompilerErrors): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_ignoreCompilerErrors(name: ignoreCompilerErrors): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_includeDeclarations(name: includeDeclarations): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_includeDeclarations(name: includeDeclarations): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_includeVersion(name: includeVersion): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_includeVersion(name: includeVersion): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_includes(name: includes): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_includes(name: includes): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_inputFiles(name: inputFiles): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_inputFiles(name: inputFiles): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_json(name: json): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_json(name: json): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_logger(name: typings.typedoc.typedocStrings.logger): js.UndefOr[js.Any | (Exclude[_, String])] = js.native
+    def getValue_logger(name: typings.typedoc.typedocStrings.logger): js.UndefOr[js.Any | (Exclude[js.Any, String])] = js.native
     @JSName("getValue")
-    def getValue_media(name: media): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_media(name: media): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_mode(name: mode): js.UndefOr[File | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_mode(name: mode): js.UndefOr[File | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_name(name: name): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_name(name: name): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_options(name: options): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_options(name: options): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_out(name: out): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_out(name: out): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_plugin(name: plugin): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_plugin(name: plugin): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_readme(name: readme): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_readme(name: readme): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_theme(name: theme): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_theme(name: theme): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_toc(name: toc): js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_toc(name: toc): js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_tsconfig(name: tsconfig): js.UndefOr[String | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_tsconfig(name: tsconfig): js.UndefOr[String | (Exclude[js.Any, String]) | js.Any] = js.native
     @JSName("getValue")
-    def getValue_version(name: version): js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
+    def getValue_version(name: version): js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any] = js.native
     
     def isDefault(name: NeverIfInternal[String]): Boolean = js.native
     @JSName("isDefault")
@@ -668,97 +826,96 @@ object optionsOptionsMod {
     
     var setOptionValueToDefault: js.Any = js.native
     
-    def setValue(name: NeverIfInternal[String], value: NeverIfInternal[_]): Unit = js.native
+    def setValue(name: NeverIfInternal[String], value: NeverIfInternal[js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_categorizeByGroup(name: categorizeByGroup, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_categorizeByGroup(name: categorizeByGroup, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_categoryOrder(name: categoryOrder, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_categoryOrder(name: categoryOrder, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_defaultCategory(name: defaultCategory, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_defaultCategory(name: defaultCategory, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_disableOutputCheck(name: disableOutputCheck, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_disableOutputCheck(name: disableOutputCheck, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_disableSources(name: disableSources, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_disableSources(name: disableSources, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_entryPoint(name: entryPoint, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_entryPoint(name: entryPoint, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_exclude(name: exclude, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_exclude(name: exclude, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludeExternals(name: excludeExternals, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludeExternals(name: excludeExternals, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludeNotDocumented(name: excludeNotDocumented, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludeNotDocumented(name: excludeNotDocumented, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludeNotExported(name: excludeNotExported, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludeNotExported(name: excludeNotExported, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludePrivate(name: excludePrivate, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludePrivate(name: excludePrivate, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludeProtected(name: excludeProtected, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludeProtected(name: excludeProtected, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_excludeTags(name: excludeTags, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_excludeTags(name: excludeTags, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_externalPattern(name: externalPattern, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_externalPattern(name: externalPattern, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_gaID(name: gaID, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_gaID(name: gaID, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_gaSite(name: gaSite, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_gaSite(name: gaSite, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_gitRemote(name: gitRemote, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_gitRemote(name: gitRemote, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_gitRevision(name: gitRevision, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_gitRevision(name: gitRevision, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_help(name: help, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_help(name: help, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_hideGenerator(name: hideGenerator, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_hideGenerator(name: hideGenerator, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_ignoreCompilerErrors(name: ignoreCompilerErrors, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_ignoreCompilerErrors(name: ignoreCompilerErrors, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_includeDeclarations(name: includeDeclarations, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_includeDeclarations(name: includeDeclarations, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_includeVersion(name: includeVersion, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_includeVersion(name: includeVersion, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_includes(name: includes, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_includes(name: includes, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_inputFiles(name: inputFiles, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_inputFiles(name: inputFiles, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_json(name: json, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_json(name: json, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_listInvalidSymbolLinks(name: listInvalidSymbolLinks, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_listInvalidSymbolLinks(name: listInvalidSymbolLinks, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_logger(name: typings.typedoc.typedocStrings.logger, value: js.UndefOr[js.Any | (Exclude[_, String])]): Unit = js.native
+    def setValue_logger(name: typings.typedoc.typedocStrings.logger, value: js.UndefOr[js.Any | (Exclude[js.Any, String])]): Unit = js.native
     @JSName("setValue")
-    def setValue_media(name: media, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_media(name: media, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_mode(name: mode, value: js.UndefOr[File | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_mode(name: mode, value: js.UndefOr[File | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_name(name: name, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_name(name: name, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_options(name: options, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_options(name: options, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_out(name: out, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_out(name: out, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_plugin(name: plugin, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_plugin(name: plugin, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_readme(name: readme, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_readme(name: readme, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_theme(name: theme, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_theme(name: theme, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_toc(name: toc, value: js.UndefOr[js.Array[String] | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_toc(name: toc, value: js.UndefOr[js.Array[String] | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_tsconfig(name: tsconfig, value: js.UndefOr[String | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_tsconfig(name: tsconfig, value: js.UndefOr[String | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     @JSName("setValue")
-    def setValue_version(name: version, value: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any]): Unit = js.native
+    def setValue_version(name: version, value: js.UndefOr[Boolean | (Exclude[js.Any, String]) | js.Any]): Unit = js.native
     
     def setValues(obj: NeverIfInternal[Partial[TypeDocAndTSOptions]]): Unit = js.native
   }
   
-  @js.native
   trait OptionsReader extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var priority: Double = js.native
+    var priority: Double
     
-    def read(container: Options, logger: Logger): Unit = js.native
+    def read(container: Options, logger: Logger): Unit
   }
   object OptionsReader {
     

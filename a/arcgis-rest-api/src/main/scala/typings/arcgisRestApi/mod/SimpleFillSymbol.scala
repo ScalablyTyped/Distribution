@@ -3,28 +3,28 @@ package typings.arcgisRestApi.mod
 import typings.arcgisRestApi.arcgisRestApiStrings.esriSFS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleFillSymbol extends Symbol {
+trait SimpleFillSymbol
+  extends StObject
+     with Symbol {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var outline: js.UndefOr[SimpleLineSymbol] = js.native
+  var outline: js.UndefOr[SimpleLineSymbol] = js.undefined
   
   @JSName("style")
-  var style_SimpleFillSymbol: js.UndefOr[SimpleFillSymbolStyle] = js.native
+  var style_SimpleFillSymbol: js.UndefOr[SimpleFillSymbolStyle] = js.undefined
   
   @JSName("type")
-  var type_SimpleFillSymbol: esriSFS = js.native
+  var type_SimpleFillSymbol: esriSFS
 }
 object SimpleFillSymbol {
   
   @scala.inline
-  def apply(`type`: esriSFS): SimpleFillSymbol = {
+  def apply(): SimpleFillSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriSFS")
     __obj.asInstanceOf[SimpleFillSymbol]
   }
   

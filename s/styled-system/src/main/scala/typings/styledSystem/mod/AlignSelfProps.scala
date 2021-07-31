@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignSelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait AlignSelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     */
   var alignSelf: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object AlignSelfProps {
   
@@ -32,12 +30,12 @@ object AlignSelfProps {
   }
   
   @scala.inline
-  implicit class AlignSelfPropsMutableBuilder[Self <: AlignSelfProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with AlignSelfProps[ThemeType]) extends AnyVal {
+  implicit class AlignSelfPropsMutableBuilder[Self <: AlignSelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & AlignSelfProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setAlignSelf(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
@@ -49,6 +47,8 @@ object AlignSelfProps {
     def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
     @scala.inline
-    def setAlignSelfVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+    def setAlignSelfVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
+    ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
   }
 }

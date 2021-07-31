@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * changed with applicable advice about potential consequences for the change,
   * such as backwards-incompatibility.
   */
-@js.native
 trait SchemaConfigChange extends StObject {
   
   /**
     * Collection of advice provided for this change, useful for determining the
     * possible impact of this change.
     */
-  var advices: js.UndefOr[js.Array[SchemaAdvice]] = js.native
+  var advices: js.UndefOr[js.Array[SchemaAdvice]] = js.undefined
   
   /**
     * The type for this change, either ADDED, REMOVED, or MODIFIED.
     */
-  var changeType: js.UndefOr[String] = js.native
+  var changeType: js.UndefOr[String] = js.undefined
   
   /**
     * Object hierarchy path to the change, with levels separated by a
@@ -36,19 +34,19 @@ trait SchemaConfigChange extends StObject {
     * quota.metric_rules[selector==&quot;google&quot;].metric_costs[key==&quot;reads&quot;].value
     * - logging.producer_destinations[0]
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the changed object in the new Service configuration, in JSON
     * format. This field will not be populated if ChangeType == REMOVED.
     */
-  var newValue: js.UndefOr[String] = js.native
+  var newValue: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the changed object in the old Service configuration, in JSON
     * format. This field will not be populated if ChangeType == ADDED.
     */
-  var oldValue: js.UndefOr[String] = js.native
+  var oldValue: js.UndefOr[String] = js.undefined
 }
 object SchemaConfigChange {
   

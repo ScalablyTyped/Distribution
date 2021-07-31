@@ -4,25 +4,24 @@ import typings.mdast.mdastStrings.imageReference
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageReference
-  extends StaticPhrasingContent
+  extends StObject
      with Node
      with Reference
-     with Alternative {
+     with Alternative
+     with StaticPhrasingContent {
   
   @JSName("type")
-  var type_ImageReference: imageReference = js.native
+  var type_ImageReference: imageReference
 }
 object ImageReference {
   
   @scala.inline
-  def apply(identifier: String, referenceType: ReferenceType, `type`: imageReference): ImageReference = {
+  def apply(identifier: String, referenceType: ReferenceType): ImageReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("imageReference")
     __obj.asInstanceOf[ImageReference]
   }
   

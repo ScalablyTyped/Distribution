@@ -7,13 +7,13 @@ import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsArray
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.TreeListModel")
 @js.native
 class TreeListModel ()
-  extends typings.kendoUi.kendo.data.TreeListModel {
+  extends StObject
+     with typings.kendoUi.kendo.data.TreeListModel {
   def this(data: js.Any) = this()
 }
 object TreeListModel {
@@ -23,13 +23,11 @@ object TreeListModel {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.data.TreeListModel.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofTreeListModel with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofTreeListModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofTreeListModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel])]
   /* static member */
-  @JSGlobal("kendo.data.TreeListModel.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofTreeListModel with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofTreeListModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofTreeListModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.TreeListModel])]
   
   /* static member */
   @JSGlobal("kendo.data.TreeListModel.fields")

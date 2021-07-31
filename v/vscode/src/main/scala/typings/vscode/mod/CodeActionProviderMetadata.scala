@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionProviderMetadata extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait CodeActionProviderMetadata extends StObject {
     *
     * At most one documentation entry will be shown per provider.
     */
-  val documentation: js.UndefOr[js.Array[typings.vscode.anon.Command]] = js.native
+  val documentation: js.UndefOr[js.Array[typings.vscode.anon.Command]] = js.undefined
   
   /**
     * List of [CodeActionKinds](#CodeActionKind) that a [CodeActionProvider](#CodeActionProvider) may return.
@@ -32,7 +30,7 @@ trait CodeActionProviderMetadata extends StObject {
     * list of kinds may either be generic, such as `[CodeActionKind.Refactor]`, or list out every kind provided,
     * such as `[CodeActionKind.Refactor.Extract.append('function'), CodeActionKind.Refactor.Extract.append('constant'), ...]`.
     */
-  val providedCodeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.native
+  val providedCodeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
 }
 object CodeActionProviderMetadata {
   

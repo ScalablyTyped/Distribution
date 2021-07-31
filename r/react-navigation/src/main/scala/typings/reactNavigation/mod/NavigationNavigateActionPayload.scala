@@ -2,20 +2,18 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationNavigateActionPayload extends StObject {
   
   // The action to run inside the sub-router
-  var action: js.UndefOr[NavigationNavigateAction] = js.native
+  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[NavigationParams] = js.native
+  var params: js.UndefOr[NavigationParams] = js.undefined
   
-  var routeName: String = js.native
+  var routeName: String
 }
 object NavigationNavigateActionPayload {
   

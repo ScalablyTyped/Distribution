@@ -3,40 +3,40 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAssociation extends IBase {
+trait IAssociation
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var associatedModel: js.UndefOr[String] = js.native
+  var associatedModel: js.UndefOr[String] = js.undefined
   
   /** [Property] (String) */
-  var associatedName: js.UndefOr[String] = js.native
+  var associatedName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var associationKey: js.UndefOr[String] = js.native
+  var associationKey: js.UndefOr[String] = js.undefined
   
   /** [Method] Get a specialized reader for reading associated data
     * @returns Ext.data.reader.Reader The reader, null if not supplied
     */
-  var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.native
+  var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.undefined
   
   /** [Config Option] (String) */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var ownerModel: js.UndefOr[String] = js.native
+  var ownerModel: js.UndefOr[String] = js.undefined
   
   /** [Property] (String) */
-  var ownerName: js.UndefOr[String] = js.native
+  var ownerName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.data.reader.Reader) */
-  var reader: js.UndefOr[typings.extjs.Ext.data.reader.IReader] = js.native
+  var reader: js.UndefOr[typings.extjs.Ext.data.reader.IReader] = js.undefined
 }
 object IAssociation {
   

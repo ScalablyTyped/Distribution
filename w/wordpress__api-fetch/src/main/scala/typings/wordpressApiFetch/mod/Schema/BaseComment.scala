@@ -8,45 +8,45 @@ import typings.wordpressApiFetch.wordpressApiFetchStrings.spam
 import typings.wordpressApiFetch.wordpressApiFetchStrings.trash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseComment[T /* <: Context */] extends BaseResponse {
+trait BaseComment[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var author: Double = js.native
+  var author: Double
   
-  var author_avatar_urls: Record[Double, String] = js.native
+  var author_avatar_urls: Record[Double, String]
   
-  var author_email: String = js.native
+  var author_email: String
   
-  var author_ip: String = js.native
+  var author_ip: String
   
-  var author_name: String = js.native
+  var author_name: String
   
-  var author_url: String = js.native
+  var author_url: String
   
-  var author_user_agent: String = js.native
+  var author_user_agent: String
   
-  var content: Contextual[T, js.Object, js.Object] = js.native
+  var content: Contextual[T, js.Object, js.Object]
   
-  var date: String = js.native
+  var date: String
   
-  var date_gmt: String = js.native
+  var date_gmt: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var parent: Double = js.native
+  var parent: Double
   
-  var post: Double = js.native
+  var post: Double
   
-  var status: approved | hold | spam | trash = js.native
+  var status: approved | hold | spam | trash
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseComment {
   
@@ -65,7 +65,7 @@ object BaseComment {
     date_gmt: String,
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     parent: Double,
     post: Double,
     status: approved | hold | spam | trash,
@@ -77,7 +77,7 @@ object BaseComment {
   }
   
   @scala.inline
-  implicit class BaseCommentMutableBuilder[Self <: BaseComment[_], T /* <: Context */] (val x: Self with BaseComment[T]) extends AnyVal {
+  implicit class BaseCommentMutableBuilder[Self <: BaseComment[?], T /* <: Context */] (val x: Self & BaseComment[T]) extends AnyVal {
     
     @scala.inline
     def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
@@ -116,7 +116,7 @@ object BaseComment {
     def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))

@@ -3,51 +3,49 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /** Output only. A structured description of the issued X.509 certificate. */
-  var certificateDescription: js.UndefOr[CertificateDescription] = js.native
+  var certificateDescription: js.UndefOr[CertificateDescription] = js.undefined
   
   /** Immutable. A description of the certificate and key that does not require X.509 or ASN.1. */
-  var config: js.UndefOr[CertificateConfig] = js.native
+  var config: js.UndefOr[CertificateConfig] = js.undefined
   
   /** Output only. The time at which this Certificate was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. Immutable. The desired lifetime of a certificate. Used to create the "not_before_time" and "not_after_time" fields inside an X.509 certificate. Note that the lifetime may
     * be truncated if it would extend past the life of any certificate authority in the issuing chain.
     */
-  var lifetime: js.UndefOr[String] = js.native
+  var lifetime: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource path for this Certificate in the format `projects/∗/locations/∗/certificateAuthorities/∗/certificates/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The pem-encoded, signed X.509 certificate. */
-  var pemCertificate: js.UndefOr[String] = js.native
+  var pemCertificate: js.UndefOr[String] = js.undefined
   
   /** Output only. The chain that may be used to verify the X.509 certificate. Expected to be in issuer-to-root order according to RFC 5246. */
-  var pemCertificateChain: js.UndefOr[js.Array[String]] = js.native
+  var pemCertificateChain: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Immutable. A pem-encoded X.509 certificate signing request (CSR). */
-  var pemCsr: js.UndefOr[String] = js.native
+  var pemCsr: js.UndefOr[String] = js.undefined
   
   /** Output only. Details regarding the revocation of this Certificate. This Certificate is considered revoked if and only if this field is present. */
-  var revocationDetails: js.UndefOr[RevocationDetails] = js.native
+  var revocationDetails: js.UndefOr[RevocationDetails] = js.undefined
   
   /** Output only. The time at which this Certificate was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Certificate {
   
@@ -82,7 +80,7 @@ object Certificate {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.Certificate & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

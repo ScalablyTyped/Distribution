@@ -3,7 +3,6 @@ package typings.layuiSrc.layui
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* 服务端返回数据不固定
@@ -15,13 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   [propName: string]: any;
   }
   */
-@js.native
 trait TableRequest
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[js.Any] {
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var page: Double = js.native
+  var page: Double
 }
 object TableRequest {
   

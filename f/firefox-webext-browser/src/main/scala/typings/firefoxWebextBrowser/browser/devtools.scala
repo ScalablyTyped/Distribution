@@ -6,7 +6,6 @@ import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,26 +23,25 @@ object devtools {
   object inspectedWindow {
     
     /** The options parameter can contain one or more options. */
-    @js.native
     trait EvalOptions extends StObject {
       
       /**
         * Evaluate the expression in the context of a content script of an extension that matches the specified origin. If given, contextSecurityOrigin overrides the 'true' setting on userContentScriptContext.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var contextSecurityOrigin: js.UndefOr[String] = js.native
+      var contextSecurityOrigin: js.UndefOr[String] = js.undefined
       
       /**
         * If specified, the expression is evaluated on the iframe whose URL matches the one specified. By default, the expression is evaluated in the top frame of the inspected page.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var frameURL: js.UndefOr[String] = js.native
+      var frameURL: js.UndefOr[String] = js.undefined
       
       /**
         * Evaluate the expression in the context of the content script of the calling extension, provided that the content script is already injected into the inspected page. If not, the expression is not evaluated and the callback is invoked with the exception parameter set to an object that has the `isError` field set to true and the `code` field set to `E_NOTFOUND`.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var useContentScriptContext: js.UndefOr[Boolean] = js.native
+      var useContentScriptContext: js.UndefOr[Boolean] = js.undefined
     }
     object EvalOptions {
       
@@ -77,28 +75,27 @@ object devtools {
     }
     
     /** An object providing details if an exception occurred while evaluating the expression. */
-    @js.native
     trait EvalReturnExceptionInfo extends StObject {
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var code: String = js.native
+      var code: String
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var description: String = js.native
+      var description: String
       
       /**
         * Set if the error occurred on the DevTools side before the expression is evaluated, contains the array of the values that may be substituted into the description string to provide more information about the cause of the error.
         */
-      var details: js.Array[_] = js.native
+      var details: js.Array[js.Any]
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var isError: Boolean = js.native
+      var isError: Boolean
       
       /** Set if the evaluated code produces an unhandled exception. */
-      var isException: Boolean = js.native
+      var isException: Boolean
       
       /** Set if the evaluated code produces an unhandled exception. */
-      var value: String = js.native
+      var value: String
     }
     object EvalReturnExceptionInfo {
       
@@ -106,7 +103,7 @@ object devtools {
       def apply(
         code: String,
         description: String,
-        details: js.Array[_],
+        details: js.Array[js.Any],
         isError: Boolean,
         isException: Boolean,
         value: String
@@ -125,7 +122,7 @@ object devtools {
         def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDetails(value: js.Array[_]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
@@ -141,29 +138,28 @@ object devtools {
       }
     }
     
-    @js.native
     trait ReloadReloadOptions extends StObject {
       
       /**
         * When true, the loader will bypass the cache for all inspected page resources loaded before the `load` event is fired. The effect is similar to pressing Ctrl+Shift+R in the inspected window or within the Developer Tools window.
         */
-      var ignoreCache: js.UndefOr[Boolean] = js.native
+      var ignoreCache: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If specified, the script will be injected into every frame of the inspected page immediately upon load, before any of the frame's scripts. The script will not be injected after subsequent reloads—for example, if the user presses Ctrl+R.
         */
-      var injectedScript: js.UndefOr[String] = js.native
+      var injectedScript: js.UndefOr[String] = js.undefined
       
       /**
         * If specified, this script evaluates into a function that accepts three string arguments: the source to preprocess, the URL of the source, and a function name if the source is an DOM event handler. The preprocessorerScript function should return a string to be compiled by Chrome in place of the input source. In the case that the source is a DOM event handler, the returned source must compile to a single JS function.
         * @deprecated Please avoid using this parameter, it will be removed soon.
         */
-      var preprocessorScript: js.UndefOr[String] = js.native
+      var preprocessorScript: js.UndefOr[String] = js.undefined
       
       /**
         * If specified, the string will override the value of the `User-Agent` HTTP header that's sent while loading the resources of the inspected page. The string will also override the value of the `navigator.userAgent` property that's returned to any scripts that are running within the inspected page.
         */
-      var userAgent: js.UndefOr[String] = js.native
+      var userAgent: js.UndefOr[String] = js.undefined
     }
     object ReloadReloadOptions {
       
@@ -204,14 +200,13 @@ object devtools {
     
     /* devtools.inspectedWindow types */
     /** A resource within the inspected page, such as a document, a script, or an image. */
-    @js.native
     trait Resource extends StObject {
       
       /**
         * Gets the content of the resource.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var getContent: js.UndefOr[js.Function0[js.Promise[js.Object]]] = js.native
+      var getContent: js.UndefOr[js.Function0[js.Promise[js.Object]]] = js.undefined
       
       /**
         * Sets the content of the resource.
@@ -220,11 +215,11 @@ object devtools {
         * @deprecated Unsupported on Firefox at this time.
         */
       var setContent: js.UndefOr[
-            js.Function2[/* content */ String, /* commit */ Boolean, js.Promise[StringDictionary[_]]]
-          ] = js.native
+            js.Function2[/* content */ String, /* commit */ Boolean, js.Promise[StringDictionary[js.Any]]]
+          ] = js.undefined
       
       /** The URL of the resource. */
-      var url: String = js.native
+      var url: String
     }
     object Resource {
       
@@ -244,7 +239,7 @@ object devtools {
         def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
         
         @scala.inline
-        def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[_]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
+        def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
         
         @scala.inline
         def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
@@ -266,11 +261,10 @@ object devtools {
     /**
       * Represents a network request for a document resource (script, image and so on). See HAR Specification for reference.
       */
-    @js.native
     trait Request extends StObject {
       
       /** Returns content of the response body. */
-      def getContent(): js.Promise[js.Object] = js.native
+      def getContent(): js.Promise[js.Object]
     }
     object Request {
       
@@ -297,14 +291,13 @@ object devtools {
   object panels {
     
     /** A button created by the extension. */
-    @js.native
     trait Button extends StObject {
       
       /**
         * Fired when the button is clicked.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var onClicked: WebExtEvent[js.Function0[Unit]] = js.native
+      var onClicked: WebExtEvent[js.Function0[Unit]]
       
       /**
         * Updates the attributes of the button. If some of the arguments are omitted or `null`, the corresponding attributes are not updated.
@@ -328,28 +321,28 @@ object devtools {
         * @param disabled Whether the button is disabled.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var update: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[
+      var update: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
             js.Function3[
               /* iconPath */ String, 
               /* tooltipText */ js.UndefOr[String], 
               /* disabled */ js.UndefOr[Boolean], 
               Unit
             ]
-          ]) with (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) with (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]]) = js.native
+          ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
     }
     object Button {
       
       @scala.inline
       def apply(
         onClicked: WebExtEvent[js.Function0[Unit]],
-        update: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[
+        update: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
               js.Function3[
                 /* iconPath */ String, 
                 /* tooltipText */ js.UndefOr[String], 
                 /* disabled */ js.UndefOr[Boolean], 
                 Unit
               ]
-            ]) with (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) with (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
+            ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
       ): Button = {
         val __obj = js.Dynamic.literal(onClicked = onClicked.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
         __obj.asInstanceOf[Button]
@@ -363,31 +356,30 @@ object devtools {
         
         @scala.inline
         def setUpdate(
-          value: js.UndefOr[js.Function0[Unit]] with (js.UndefOr[
+          value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
                   js.Function3[
                     /* iconPath */ String, 
                     /* tooltipText */ js.UndefOr[String], 
                     /* disabled */ js.UndefOr[Boolean], 
                     Unit
                   ]
-                ]) with (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) with (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
+                ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
         ): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       }
     }
     
     /* devtools.panels types */
     /** Represents the Elements panel. */
-    @js.native
     trait ElementsPanel extends StObject {
       
       /**
         * Creates a pane within panel's sidebar.
         * @param title Text that is displayed in sidebar caption.
         */
-      def createSidebarPane(title: String): js.Promise[ExtensionSidebarPane] = js.native
+      def createSidebarPane(title: String): js.Promise[ExtensionSidebarPane]
       
       /** Fired when an object is selected in the panel. */
-      var onSelectionChanged: WebExtEvent[js.Function0[Unit]] = js.native
+      var onSelectionChanged: WebExtEvent[js.Function0[Unit]]
     }
     object ElementsPanel {
       
@@ -412,7 +404,6 @@ object devtools {
     }
     
     /** Represents a panel created by extension. */
-    @js.native
     trait ExtensionPanel extends StObject {
       
       /**
@@ -424,10 +415,10 @@ object devtools {
         */
       var createStatusBarButton: js.UndefOr[
             js.Function3[/* iconPath */ String, /* tooltipText */ String, /* disabled */ Boolean, Button]
-          ] = js.native
+          ] = js.undefined
       
       /** Fired when the user switches away from the panel. */
-      var onHidden: WebExtEvent[js.Function0[Unit]] = js.native
+      var onHidden: WebExtEvent[js.Function0[Unit]]
       
       /**
         * Fired upon a search action (start of a new search, search result navigation, or search being canceled).
@@ -435,13 +426,13 @@ object devtools {
         * @param [queryString] Query string (only for 'performSearch').
         * @deprecated Unsupported on Firefox at this time.
         */
-      var onSearch: WebExtEvent[js.Function2[/* action */ String, /* queryString */ js.UndefOr[String], Unit]] = js.native
+      var onSearch: WebExtEvent[js.Function2[/* action */ String, /* queryString */ js.UndefOr[String], Unit]]
       
       /**
         * Fired when the user switches to the panel.
         * @param window The JavaScript `window` object of panel's page.
         */
-      var onShown: WebExtEvent[js.Function1[/* window */ Window, Unit]] = js.native
+      var onShown: WebExtEvent[js.Function1[/* window */ Window, Unit]]
     }
     object ExtensionPanel {
       
@@ -517,11 +508,10 @@ object devtools {
         * Sets an HTML page to be displayed in the sidebar pane.
         * @param path Relative path of an extension page to display within the sidebar.
         */
-      def setPage(path: ExtensionURL): js.Promise[_] = js.native
+      def setPage(path: ExtensionURL): js.Promise[js.Any] = js.native
     }
     
     /** Represents the Sources panel. */
-    @js.native
     trait SourcesPanel extends StObject {
       
       /**
@@ -529,13 +519,13 @@ object devtools {
         * @param title Text that is displayed in sidebar caption.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var createSidebarPane: js.UndefOr[js.Function1[/* title */ String, js.Promise[ExtensionSidebarPane]]] = js.native
+      var createSidebarPane: js.UndefOr[js.Function1[/* title */ String, js.Promise[ExtensionSidebarPane]]] = js.undefined
       
       /**
         * Fired when an object is selected in the panel.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var onSelectionChanged: WebExtEvent[js.Function0[Unit]] = js.native
+      var onSelectionChanged: WebExtEvent[js.Function0[Unit]]
     }
     object SourcesPanel {
       

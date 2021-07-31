@@ -2,25 +2,24 @@ package typings.sharepoint.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object SPThemeUtils {
   
-  @JSGlobal("SPThemeUtils.ApplyCurrentTheme")
+  @JSGlobal("SPThemeUtils")
   @js.native
-  def ApplyCurrentTheme(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("SPThemeUtils.Suspend")
-  @js.native
-  def Suspend(): Unit = js.native
+  @scala.inline
+  def ApplyCurrentTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ApplyCurrentTheme")().asInstanceOf[Unit]
   
-  @JSGlobal("SPThemeUtils.UseClientSideTheming")
-  @js.native
-  def UseClientSideTheming(): Boolean = js.native
+  @scala.inline
+  def Suspend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Suspend")().asInstanceOf[Unit]
   
-  @JSGlobal("SPThemeUtils.WithCurrentTheme")
-  @js.native
-  def WithCurrentTheme(resultCallback: js.Function1[/* themesCache */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def UseClientSideTheming(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UseClientSideTheming")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def WithCurrentTheme(resultCallback: js.Function1[/* themesCache */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WithCurrentTheme")(resultCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

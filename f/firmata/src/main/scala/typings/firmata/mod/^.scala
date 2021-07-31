@@ -2,7 +2,6 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,14 +18,10 @@ class ^ protected () extends Board {
   def this(serialPort: js.Any, optionsOrCallback: Options) = this()
   def this(
     serialPort: js.Any,
-    optionsOrCallback: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* error */ js.Any, Unit]
-  ) = this()
-  def this(
-    serialPort: js.Any,
     optionsOrCallback: js.Function1[/* error */ js.Any, Unit],
     callback: js.Function1[/* error */ js.Any, Unit]
   ) = this()
+  def this(serialPort: js.Any, optionsOrCallback: Unit, callback: js.Function1[/* error */ js.Any, Unit]) = this()
   def this(serialPort: js.Any, optionsOrCallback: Options, callback: js.Function1[/* error */ js.Any, Unit]) = this()
 }
 @JSImport("firmata", JSImport.Namespace)

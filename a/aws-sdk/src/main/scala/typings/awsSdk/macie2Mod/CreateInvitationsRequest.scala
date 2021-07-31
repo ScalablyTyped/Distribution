@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInvitationsRequest extends StObject {
   
   /**
     * An array that lists AWS account IDs, one for each account to send the invitation to.
     */
-  var accountIds: listOfString = js.native
+  var accountIds: listOfString
   
   /**
     * Specifies whether to send an email notification to the root user of each account that the invitation will be sent to. This notification is in addition to an alert that the root user receives in AWS Personal Health Dashboard. To send an email notification to the root user of each account, set this value to true.
     */
-  var disableEmailNotification: js.UndefOr[boolean] = js.native
+  var disableEmailNotification: js.UndefOr[boolean] = js.undefined
   
   /**
     * A custom message to include in the invitation. Amazon Macie adds this message to the standard content that it sends for an invitation.
     */
-  var message: js.UndefOr[string] = js.native
+  var message: js.UndefOr[string] = js.undefined
 }
 object CreateInvitationsRequest {
   

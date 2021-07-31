@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a discovery occurrence.
   */
-@js.native
 trait SchemaGrafeasV1beta1DiscoveryDetails extends StObject {
   
   /**
     * Required. Analysis status for the discovered resource.
     */
-  var discovered: js.UndefOr[SchemaDiscovered] = js.native
+  var discovered: js.UndefOr[SchemaDiscovered] = js.undefined
 }
 object SchemaGrafeasV1beta1DiscoveryDetails {
   

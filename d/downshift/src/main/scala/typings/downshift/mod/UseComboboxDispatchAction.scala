@@ -3,27 +3,25 @@ package typings.downshift.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseComboboxDispatchAction[Item] extends StObject {
   
-  var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.native
+  var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.undefined
   
-  var highlightedIndex: js.UndefOr[Double] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var selectItem: js.UndefOr[Boolean] = js.native
+  var selectItem: js.UndefOr[Boolean] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: UseComboboxStateChangeTypes = js.native
+  var `type`: UseComboboxStateChangeTypes
 }
 object UseComboboxDispatchAction {
   
@@ -35,7 +33,7 @@ object UseComboboxDispatchAction {
   }
   
   @scala.inline
-  implicit class UseComboboxDispatchActionMutableBuilder[Self <: UseComboboxDispatchAction[_], Item] (val x: Self with UseComboboxDispatchAction[Item]) extends AnyVal {
+  implicit class UseComboboxDispatchActionMutableBuilder[Self <: UseComboboxDispatchAction[?], Item] (val x: Self & UseComboboxDispatchAction[Item]) extends AnyVal {
     
     @scala.inline
     def setGetItemNodeFromIndex(value: /* index */ Double => HTMLElement): Self = StObject.set(x, "getItemNodeFromIndex", js.Any.fromFunction1(value))

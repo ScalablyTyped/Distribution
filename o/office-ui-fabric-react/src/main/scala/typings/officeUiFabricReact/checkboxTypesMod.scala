@@ -18,22 +18,20 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxTypesMod {
   
-  @js.native
   trait ICheckbox extends StObject {
     
     /** Gets the current checked state. */
-    var checked: Boolean = js.native
+    var checked: Boolean
     
     /** Sets focus to the checkbox. */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /** Gets the current indeterminate state. */
-    var indeterminate: Boolean = js.native
+    var indeterminate: Boolean
   }
   object ICheckbox {
     
@@ -57,56 +55,57 @@ object checkboxTypesMod {
     }
   }
   
-  @js.native
-  trait ICheckboxProps extends ButtonHTMLAttributes[HTMLElement | HTMLInputElement] {
+  trait ICheckboxProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLElement | HTMLInputElement] {
     
     /**
       * ID for element that provides extended information for the checkbox.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Accessible label for the checkbox.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * ID for element that contains label information for the checkbox.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * The position in the parent set (if in a set) for aria-posinset.
       */
-    var ariaPositionInSet: js.UndefOr[Double] = js.native
+    var ariaPositionInSet: js.UndefOr[Double] = js.undefined
     
     /**
       * The total size of the parent set (if in a set) for aria-setsize.
       */
-    var ariaSetSize: js.UndefOr[Double] = js.native
+    var ariaSetSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Allows you to set the checkbox to be at the before (start) or after (end) the label.
       * @defaultvalue 'start'
       */
-    var boxSide: js.UndefOr[start | end] = js.native
+    var boxSide: js.UndefOr[start | end] = js.undefined
     
     /**
       * Checked state. Mutually exclusive to "defaultChecked". Use this if you control the checked state at a higher
       * level and plan to pass in the correct value based on handling onChange events and re-rendering.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom icon props for the check mark rendered by the checkbox
       */
-    var checkmarkIconProps: js.UndefOr[IIconProps] = js.native
+    var checkmarkIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Optional callback to access the ICheckbox interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ICheckbox]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ICheckbox]] = js.undefined
     
     /**
       * Optional uncontrolled indeterminate visual state for checkbox. Setting indeterminate state takes visual precedence
@@ -114,7 +113,7 @@ object checkboxTypesMod {
       * This is not a toggleable state. On load the checkbox will receive indeterminate visual state
       * and after the user's first click it will be removed exposing the true state of the checkbox.
       */
-    var defaultIndeterminate: js.UndefOr[Boolean] = js.native
+    var defaultIndeterminate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional controlled indeterminate visual state for checkbox. Setting indeterminate state takes visual precedence
@@ -123,7 +122,7 @@ object checkboxTypesMod {
       * and after the first user click it should be removed by your supplied onChange callback
       * function exposing the true state of the checkbox.
       */
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional input props that will be mixed into the input element, *before* other props are applied. This allows
@@ -131,17 +130,17 @@ object checkboxTypesMod {
       * Note that if you provide, for example, "disabled" as well as "inputProps.disabled", the former will take
       * precedence over the later.
       */
-    var inputProps: js.UndefOr[ButtonHTMLAttributes[HTMLElement | HTMLButtonElement]] = js.native
+    var inputProps: js.UndefOr[ButtonHTMLAttributes[HTMLElement | HTMLButtonElement]] = js.undefined
     
     /**
       * Optional keytip for this checkbox
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * Label to display next to the checkbox.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Callback that is called when the checked value has changed.
@@ -153,22 +152,22 @@ object checkboxTypesMod {
           /* checked */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom render function for the label.
       */
-    var onRenderLabel: js.UndefOr[IRenderFunction[ICheckboxProps]] = js.native
+    var onRenderLabel: js.UndefOr[IRenderFunction[ICheckboxProps]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ICheckboxStyleProps, ICheckboxStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ICheckboxStyleProps, ICheckboxStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ICheckboxProps {
     
@@ -301,22 +300,21 @@ object checkboxTypesMod {
     }
   }
   
-  @js.native
   trait ICheckboxStyleProps extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var isUsingCustomLabelRender: Boolean = js.native
+    var isUsingCustomLabelRender: Boolean
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ICheckboxStyleProps {
     
@@ -367,39 +365,38 @@ object checkboxTypesMod {
     }
   }
   
-  @js.native
   trait ICheckboxStyles extends StObject {
     
     /**
       * Style for checkbox in its default unchecked/enabled state.
       */
-    var checkbox: js.UndefOr[IStyle] = js.native
+    var checkbox: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the checkmark in the default enabled/unchecked state.
       */
-    var checkmark: js.UndefOr[IStyle] = js.native
+    var checkmark: js.UndefOr[IStyle] = js.undefined
     
     /**
       * INTERNAL: This is mostly an internal implementation detail which you should avoid styling.
       * This refers to the <input type="checkbox"> element that is typically hidden and not rendered on screen.
       */
-    var input: js.UndefOr[IStyle] = js.native
+    var input: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the label part (contains the customized checkbox + text) when enabled.
       */
-    var label: js.UndefOr[IStyle] = js.native
+    var label: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element (a button) of the checkbox component in the default enabled/unchecked state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for text appearing with the checkbox in its default enabled state.
       */
-    var text: js.UndefOr[IStyle] = js.native
+    var text: js.UndefOr[IStyle] = js.undefined
   }
   object ICheckboxStyles {
     

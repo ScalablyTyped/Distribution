@@ -9,36 +9,36 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getActionFromStateMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/getActionFromState", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/getActionFromState", JSImport.Namespace)
   @js.native
-  def default(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = js.native
-  @JSImport("@react-navigation/core/lib/typescript/src/getActionFromState", JSImport.Default)
-  @js.native
-  def default(state: PartialStateNavigationSta, options: Options): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
+  @scala.inline
+  def default(state: PartialStateNavigationSta, options: Options): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
+  
   trait NavigateAction[State /* <: NavigationState[ParamListBase] */] extends StObject {
     
-    var payload: Name[State] = js.native
+    var payload: Name[State]
     
-    var `type`: NAVIGATE = js.native
+    var `type`: NAVIGATE
   }
   object NavigateAction {
     
     @scala.inline
-    def apply[State /* <: NavigationState[ParamListBase] */](payload: Name[State], `type`: NAVIGATE): NavigateAction[State] = {
+    def apply[State /* <: NavigationState[ParamListBase] */](payload: Name[State]): NavigateAction[State] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("NAVIGATE")
       __obj.asInstanceOf[NavigateAction[State]]
     }
     
     @scala.inline
-    implicit class NavigateActionMutableBuilder[Self <: NavigateAction[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with NavigateAction[State]) extends AnyVal {
+    implicit class NavigateActionMutableBuilder[Self <: NavigateAction[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & NavigateAction[State]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: Name[State]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
@@ -48,12 +48,11 @@ object getActionFromStateMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap = js.native
+    var screens: PathConfigMap
   }
   object Options {
     

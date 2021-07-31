@@ -3,19 +3,17 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalBaseBlockParams extends StObject {
   
-  var blockLength: js.UndefOr[Double] = js.native
+  var blockLength: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var valueBeforeDecode: js.UndefOr[ArrayBuffer] = js.native
+  var valueBeforeDecode: js.UndefOr[ArrayBuffer] = js.undefined
   
-  var warnings: js.UndefOr[js.Array[String]] = js.native
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LocalBaseBlockParams {
   

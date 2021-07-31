@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,89 +21,115 @@ object AggregationFunction extends StObject {
     *
     */
   @js.native
-  sealed trait automatic extends AggregationFunction
+  sealed trait automatic
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the average of the data, equivalent to the AVERAGE function.
     *
     */
   @js.native
-  sealed trait average extends AggregationFunction
+  sealed trait average
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the count of items in the data, equivalent to the COUNTA function.
     *
     */
   @js.native
-  sealed trait count extends AggregationFunction
+  sealed trait count
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the count of numbers in the data, equivalent to the COUNT function.
     *
     */
   @js.native
-  sealed trait countNumbers extends AggregationFunction
+  sealed trait countNumbers
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the maximum value of the data, equivalent to the MAX function.
     *
     */
   @js.native
-  sealed trait max extends AggregationFunction
+  sealed trait max
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the minimum value of the data, equivalent to the MIN function.
     *
     */
   @js.native
-  sealed trait min extends AggregationFunction
+  sealed trait min
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the product of the data, equivalent to the PRODUCT function.
     *
     */
   @js.native
-  sealed trait product extends AggregationFunction
+  sealed trait product
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the standard deviation of the data, equivalent to the STDEV function.
     *
     */
   @js.native
-  sealed trait standardDeviation extends AggregationFunction
+  sealed trait standardDeviation
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the standard deviation of the data, equivalent to the STDEVP function.
     *
     */
   @js.native
-  sealed trait standardDeviationP extends AggregationFunction
+  sealed trait standardDeviationP
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the sum of the data, equivalent to the SUM function.
     *
     */
   @js.native
-  sealed trait sum extends AggregationFunction
+  sealed trait sum
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregation function is unknown or unsupported.
     *
     */
   @js.native
-  sealed trait unknown extends AggregationFunction
+  sealed trait unknown
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the variance of the data, equivalent to the VAR function.
     *
     */
   @js.native
-  sealed trait variance extends AggregationFunction
+  sealed trait variance
+    extends StObject
+       with AggregationFunction
   
   /**
     * Aggregate using the variance of the data, equivalent to the VARP function.
     *
     */
   @js.native
-  sealed trait varianceP extends AggregationFunction
+  sealed trait varianceP
+    extends StObject
+       with AggregationFunction
 }

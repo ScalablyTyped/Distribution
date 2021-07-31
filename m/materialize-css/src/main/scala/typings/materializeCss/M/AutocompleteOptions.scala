@@ -2,38 +2,36 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteOptions extends StObject {
   
   /**
     * Data object defining autocomplete options with optional icon strings.
     */
-  var data: AutocompleteData = js.native
+  var data: AutocompleteData
   
   /**
     * Limit of results the autocomplete shows.
     * @default infinity
     */
-  var limit: Double = js.native
+  var limit: Double
   
   /**
     * Minimum number of characters before autocomplete starts.
     * @default 1
     */
-  var minLength: Double = js.native
+  var minLength: Double
   
   /**
     * Callback for when autocompleted.
     */
-  def onAutocomplete(text: String): Unit = js.native
+  def onAutocomplete(text: String): Unit
   
   /**
     * Sort function that defines the order of the list of autocomplete options.
     */
-  def sortFunction(a: String, b: String, inputText: String): Double = js.native
+  def sortFunction(a: String, b: String, inputText: String): Double
 }
 object AutocompleteOptions {
   

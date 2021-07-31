@@ -2,22 +2,20 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.4.1
-@js.native
 trait WebCLImageDescriptor extends StObject {
   
-  var channelOrder: ChannelOrder = js.native
+  var channelOrder: ChannelOrder
   
-  var channelType: ChannelType = js.native
+  var channelType: ChannelType
   
-  var height: Double = js.native
+  var height: Double
   
-  var rowPitch: Double = js.native
+  var rowPitch: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object WebCLImageDescriptor {
   

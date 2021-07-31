@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeKey extends StObject {
   
   /**
     * The name of the facet that the attribute exists within.
     */
-  var FacetName: typings.awsSdk.clouddirectoryMod.FacetName = js.native
+  var FacetName: typings.awsSdk.clouddirectoryMod.FacetName
   
   /**
     * The name of the attribute.
     */
-  var Name: AttributeName = js.native
+  var Name: AttributeName
   
   /**
     * The Amazon Resource Name (ARN) of the schema that contains the facet and attribute.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object AttributeKey {
   

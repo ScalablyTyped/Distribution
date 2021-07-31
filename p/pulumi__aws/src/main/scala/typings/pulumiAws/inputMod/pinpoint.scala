@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinpoint {
   
-  @js.native
   trait AppCampaignHook extends StObject {
     
     /**
       * Lambda function name or ARN to be called for delivery. Conflicts with `webUrl`
       */
-    var lambdaFunctionName: js.UndefOr[Input[String]] = js.native
+    var lambdaFunctionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.
       */
-    var mode: js.UndefOr[Input[String]] = js.native
+    var mode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambdaFunctionName`
       */
-    var webUrl: js.UndefOr[Input[String]] = js.native
+    var webUrl: js.UndefOr[Input[String]] = js.undefined
   }
   object AppCampaignHook {
     
@@ -57,28 +55,27 @@ object pinpoint {
     }
   }
   
-  @js.native
   trait AppLimits extends StObject {
     
     /**
       * The maximum number of messages that the campaign can send daily.
       */
-    var daily: js.UndefOr[Input[Double]] = js.native
+    var daily: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.
       */
-    var maximumDuration: js.UndefOr[Input[Double]] = js.native
+    var maximumDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
       */
-    var messagesPerSecond: js.UndefOr[Input[Double]] = js.native
+    var messagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum total number of messages that the campaign can send.
       */
-    var total: js.UndefOr[Input[Double]] = js.native
+    var total: js.UndefOr[Input[Double]] = js.undefined
   }
   object AppLimits {
     
@@ -117,18 +114,17 @@ object pinpoint {
     }
   }
   
-  @js.native
   trait AppQuietTime extends StObject {
     
     /**
       * The default end time for quiet time in ISO 8601 format. Required if `start` is set
       */
-    var end: js.UndefOr[Input[String]] = js.native
+    var end: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default start time for quiet time in ISO 8601 format. Required if `end` is set
       */
-    var start: js.UndefOr[Input[String]] = js.native
+    var start: js.UndefOr[Input[String]] = js.undefined
   }
   object AppQuietTime {
     

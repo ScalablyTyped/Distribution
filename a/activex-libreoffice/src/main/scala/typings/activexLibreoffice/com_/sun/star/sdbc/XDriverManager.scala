@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,15 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriver
   * @see com.sun.star.sdbc.XConnection
   */
-@js.native
-trait XDriverManager extends XInterface {
+trait XDriverManager
+  extends StObject
+     with XInterface {
   
   /**
     * gets the maximum time in seconds that a driver can wait when attempting to login to a database.
     * @returns the driver login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  var LoginTimeout: Double = js.native
+  var LoginTimeout: Double
   
   /**
     * attempts to establish a connection to the given database URL. The {@link DriverManager} attempts to select an appropriate driver from the set of
@@ -34,7 +34,7 @@ trait XDriverManager extends XInterface {
     * @returns the {@link Connection} object
     * @throws SQLException if a database access error occurs.
     */
-  def getConnection(url: String): XConnection = js.native
+  def getConnection(url: String): XConnection
   
   /**
     * attempts to establish a connection to the given database URL. The {@link DriverManager} attempts to select an appropriate driver from the set of
@@ -45,21 +45,21 @@ trait XDriverManager extends XInterface {
     * @see com.sun.star.sdbc.ConnectionProperties
     * @throws SQLException if a database access error occurs.
     */
-  def getConnectionWithInfo(url: String, info: SeqEquiv[PropertyValue]): XConnection = js.native
+  def getConnectionWithInfo(url: String, info: SeqEquiv[PropertyValue]): XConnection
   
   /**
     * gets the maximum time in seconds that a driver can wait when attempting to login to a database.
     * @returns the driver login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  def getLoginTimeout(): Double = js.native
+  def getLoginTimeout(): Double
   
   /**
     * sets the maximum time in seconds that a driver will wait while attempting to connect to a database.
     * @param seconds the login time limit in seconds
     * @throws SQLException if a database access error occurs.
     */
-  def setLoginTimeout(seconds: Double): Unit = js.native
+  def setLoginTimeout(seconds: Double): Unit
 }
 object XDriverManager {
   

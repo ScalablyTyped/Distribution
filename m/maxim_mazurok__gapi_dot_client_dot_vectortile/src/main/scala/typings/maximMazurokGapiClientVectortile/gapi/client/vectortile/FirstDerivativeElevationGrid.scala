@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstDerivativeElevationGrid extends StObject {
   
   /** A multiplier applied to the altitude fields below to extract the actual altitudes in meters from the elevation grid. */
-  var altitudeMultiplier: js.UndefOr[Double] = js.native
+  var altitudeMultiplier: js.UndefOr[Double] = js.undefined
   
   /**
     * Rows of points containing altitude data making up the elevation grid. Each row is the same length. Rows are ordered from north to south. E.g: rows[0] is the north-most row, and
     * rows[n] is the south-most row.
     */
-  var rows: js.UndefOr[js.Array[Row]] = js.native
+  var rows: js.UndefOr[js.Array[Row]] = js.undefined
 }
 object FirstDerivativeElevationGrid {
   

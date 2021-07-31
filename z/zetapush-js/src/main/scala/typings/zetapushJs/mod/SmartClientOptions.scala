@@ -2,13 +2,13 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SmartClientOptions extends Options {
+trait SmartClientOptions
+  extends StObject
+     with Options {
   
-  var deployment: js.UndefOr[SmartClientDeployment] = js.native
+  var deployment: js.UndefOr[SmartClientDeployment] = js.undefined
 }
 object SmartClientOptions {
   

@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     chart = chart.modify().setPosition(5, 5, 0, 0).build();
   *     sheet.updateChart(chart);
   */
-@js.native
 trait ContainerInfo extends StObject {
   
-  def getAnchorColumn(): Integer = js.native
+  def getAnchorColumn(): Integer
   
-  def getAnchorRow(): Integer = js.native
+  def getAnchorRow(): Integer
   
-  def getOffsetX(): Integer = js.native
+  def getOffsetX(): Integer
   
-  def getOffsetY(): Integer = js.native
+  def getOffsetY(): Integer
 }
 object ContainerInfo {
   

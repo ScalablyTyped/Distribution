@@ -1,34 +1,34 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.anon.PartialEnumCommon
-import typings.iobroker.iobrokerStrings.enum
+import typings.iobroker.iobrokerStrings.`enum`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.EnumObject, 'common'>> */
-@js.native
-trait PartialEnumObject extends PartialObject {
+trait PartialEnumObject
+  extends StObject
+     with PartialObject {
   
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
   
-  var acl: js.UndefOr[ObjectACL] = js.native
+  var acl: js.UndefOr[ObjectACL] = js.undefined
   
-  var common: js.UndefOr[PartialEnumCommon] = js.native
+  var common: js.UndefOr[PartialEnumCommon] = js.undefined
   
-  var enums: js.UndefOr[Record[String, String]] = js.native
+  var enums: js.UndefOr[Record[String, String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[Record[String, _]] = js.native
+  var native: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[enum] = js.native
+  var `type`: js.UndefOr[`enum`] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object PartialEnumObject {
   
@@ -66,7 +66,7 @@ object PartialEnumObject {
     def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setNative(value: Record[String, _]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
@@ -78,7 +78,7 @@ object PartialEnumObject {
     def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
     @scala.inline
-    def setType(value: enum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

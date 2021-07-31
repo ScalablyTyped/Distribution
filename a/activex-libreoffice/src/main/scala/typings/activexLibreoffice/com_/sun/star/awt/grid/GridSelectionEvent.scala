@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XGridRowSelection
   * @see XGridSelectionListener
   */
-@js.native
-trait GridSelectionEvent extends EventObject {
+trait GridSelectionEvent
+  extends StObject
+     with EventObject {
   
   /** denotes the indexes of the columns being selected at the time the event was fired. */
-  var SelectedColumnIndexes: SafeArray[Double] = js.native
+  var SelectedColumnIndexes: SafeArray[Double]
   
   /** denotes the indexes of the rows being selected at the time the event was fired. */
-  var SelectedRowIndexes: SafeArray[Double] = js.native
+  var SelectedRowIndexes: SafeArray[Double]
 }
 object GridSelectionEvent {
   

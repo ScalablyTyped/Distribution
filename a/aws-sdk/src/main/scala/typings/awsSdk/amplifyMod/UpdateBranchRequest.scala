@@ -2,96 +2,94 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBranchRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app. 
     */
-  var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.native
+  var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.undefined
   
   /**
     *  The basic authorization credentials for the branch. 
     */
-  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
+  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
   /**
     *  The name for the branch. 
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     *  The build specification (build spec) for the branch. 
     */
-  var buildSpec: js.UndefOr[BuildSpec] = js.native
+  var buildSpec: js.UndefOr[BuildSpec] = js.undefined
   
   /**
     *  The description for the branch. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  The display name for a branch. This is used as the default domain prefix. 
     */
-  var displayName: js.UndefOr[DisplayName] = js.native
+  var displayName: js.UndefOr[DisplayName] = js.undefined
   
   /**
     *  Enables auto building for the branch. 
     */
-  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
+  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined
   
   /**
     *  Enables basic authorization for the branch. 
     */
-  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
+  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined
   
   /**
     *  Enables notifications for the branch. 
     */
-  var enableNotification: js.UndefOr[EnableNotification] = js.native
+  var enableNotification: js.UndefOr[EnableNotification] = js.undefined
   
   /**
     * Enables performance mode for the branch. Performance mode optimizes for faster hosting performance by keeping content cached at the edge for a longer interval. When performance mode is enabled, hosting configuration or code changes can take up to 10 minutes to roll out. 
     */
-  var enablePerformanceMode: js.UndefOr[EnablePerformanceMode] = js.native
+  var enablePerformanceMode: js.UndefOr[EnablePerformanceMode] = js.undefined
   
   /**
     *  Enables pull request previews for this branch. 
     */
-  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.native
+  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined
   
   /**
     *  The environment variables for the branch. 
     */
-  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
+  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
     *  The framework for the branch. 
     */
-  var framework: js.UndefOr[Framework] = js.native
+  var framework: js.UndefOr[Framework] = js.undefined
   
   /**
     *  The Amplify environment name for the pull request. 
     */
-  var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
+  var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.undefined
   
   /**
     *  Describes the current stage for the branch. 
     */
-  var stage: js.UndefOr[Stage] = js.native
+  var stage: js.UndefOr[Stage] = js.undefined
   
   /**
     *  The content Time to Live (TTL) for the website in seconds. 
     */
-  var ttl: js.UndefOr[TTL] = js.native
+  var ttl: js.UndefOr[TTL] = js.undefined
 }
 object UpdateBranchRequest {
   

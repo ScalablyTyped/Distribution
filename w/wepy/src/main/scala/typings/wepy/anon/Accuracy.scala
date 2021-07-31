@@ -2,25 +2,23 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accuracy extends StObject {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var altitude: Double = js.native
+  var altitude: Double
   
-  var horizontalAccuracy: Double = js.native
+  var horizontalAccuracy: Double
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var speed: Double = js.native
+  var speed: Double
   
-  var verticalAccuracy: Double = js.native
+  var verticalAccuracy: Double
 }
 object Accuracy {
   

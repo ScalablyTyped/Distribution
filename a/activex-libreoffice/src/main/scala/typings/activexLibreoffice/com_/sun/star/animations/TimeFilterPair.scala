@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.animations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeFilterPair extends StObject {
   
-  var Progress: Double = js.native
+  var Progress: Double
   
-  var Time: Double = js.native
+  var Time: Double
 }
 object TimeFilterPair {
   

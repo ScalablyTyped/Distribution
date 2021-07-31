@@ -2,23 +2,21 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualOptions extends StObject {
   
-  var addSlidesAfter: js.UndefOr[Double] = js.native
+  var addSlidesAfter: js.UndefOr[Double] = js.undefined
   
-  var addSlidesBefore: js.UndefOr[Double] = js.native
+  var addSlidesBefore: js.UndefOr[Double] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var renderExternal: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+  var renderExternal: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
   
-  var renderSlide: js.UndefOr[js.Function2[/* slide */ js.Any, /* index */ js.Any, _]] = js.native
+  var renderSlide: js.UndefOr[js.Function2[/* slide */ js.Any, /* index */ js.Any, js.Any]] = js.undefined
   
-  var slides: js.UndefOr[js.Array[_]] = js.native
+  var slides: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object VirtualOptions {
   
@@ -50,19 +48,19 @@ object VirtualOptions {
     def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def setRenderExternal(value: /* data */ js.Any => _): Self = StObject.set(x, "renderExternal", js.Any.fromFunction1(value))
+    def setRenderExternal(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "renderExternal", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRenderExternalUndefined: Self = StObject.set(x, "renderExternal", js.undefined)
     
     @scala.inline
-    def setRenderSlide(value: (/* slide */ js.Any, /* index */ js.Any) => _): Self = StObject.set(x, "renderSlide", js.Any.fromFunction2(value))
+    def setRenderSlide(value: (/* slide */ js.Any, /* index */ js.Any) => js.Any): Self = StObject.set(x, "renderSlide", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderSlideUndefined: Self = StObject.set(x, "renderSlide", js.undefined)
     
     @scala.inline
-    def setSlides(value: js.Array[_]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+    def setSlides(value: js.Array[js.Any]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)

@@ -5,27 +5,25 @@ import typings.reactOnsenui.reactOnsenuiStrings.lift
 import typings.reactOnsenui.reactOnsenuiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsOpen extends StObject {
   
-  var animation: js.UndefOr[fade | lift | none] = js.native
+  var animation: js.UndefOr[fade | lift | none] = js.undefined
   
-  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.native
+  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IsOpen {
   

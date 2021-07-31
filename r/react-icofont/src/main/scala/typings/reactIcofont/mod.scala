@@ -18,7 +18,6 @@ import typings.reactIcofont.reactIcofontStrings.h
 import typings.reactIcofont.reactIcofontStrings.v
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,20 +29,19 @@ object mod {
   
   type Icofont = Component[IcofontProps, js.Object, js.Any]
   
-  @js.native
   trait IcofontProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var flip: js.UndefOr[h | v] = js.native
+    var flip: js.UndefOr[h | v] = js.undefined
     
-    var icon: String = js.native
+    var icon: String
     
-    var rotate: js.UndefOr[`90` | `180` | `270`] = js.native
+    var rotate: js.UndefOr[`90` | `180` | `270`] = js.undefined
     
-    var size: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`] = js.native
+    var size: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`] = js.undefined
     
-    var spin: js.UndefOr[Boolean] = js.native
+    var spin: js.UndefOr[Boolean] = js.undefined
   }
   object IcofontProps {
     

@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,56 +17,21 @@ trait CustomXMLSchemaCollection extends StObject {
     * @param InstallForAllUsers [InstallForAllUsers=false]
     */
   def Add(): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    Alias: js.UndefOr[scala.Nothing],
-    FileName: js.UndefOr[scala.Nothing],
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
-  def Add(NamespaceURI: js.UndefOr[scala.Nothing], Alias: js.UndefOr[scala.Nothing], FileName: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    Alias: js.UndefOr[scala.Nothing],
-    FileName: String,
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
-  def Add(NamespaceURI: js.UndefOr[scala.Nothing], Alias: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    Alias: String,
-    FileName: js.UndefOr[scala.Nothing],
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
-  def Add(NamespaceURI: js.UndefOr[scala.Nothing], Alias: String, FileName: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: js.UndefOr[scala.Nothing],
-    Alias: String,
-    FileName: String,
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
   def Add(NamespaceURI: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: String,
-    Alias: js.UndefOr[scala.Nothing],
-    FileName: js.UndefOr[scala.Nothing],
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
-  def Add(NamespaceURI: String, Alias: js.UndefOr[scala.Nothing], FileName: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: String,
-    Alias: js.UndefOr[scala.Nothing],
-    FileName: String,
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
   def Add(NamespaceURI: String, Alias: String): CustomXMLSchema = js.native
-  def Add(
-    NamespaceURI: String,
-    Alias: String,
-    FileName: js.UndefOr[scala.Nothing],
-    InstallForAllUsers: Boolean
-  ): CustomXMLSchema = js.native
   def Add(NamespaceURI: String, Alias: String, FileName: String): CustomXMLSchema = js.native
   def Add(NamespaceURI: String, Alias: String, FileName: String, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: String, Alias: String, FileName: Unit, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: String, Alias: Unit, FileName: String): CustomXMLSchema = js.native
+  def Add(NamespaceURI: String, Alias: Unit, FileName: String, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: String, Alias: Unit, FileName: Unit, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: String): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: String, FileName: String): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: String, FileName: String, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: String, FileName: Unit, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: Unit, FileName: String): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: Unit, FileName: String, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
+  def Add(NamespaceURI: Unit, Alias: Unit, FileName: Unit, InstallForAllUsers: Boolean): CustomXMLSchema = js.native
   
   def AddCollection(SchemaCollection: CustomXMLSchemaCollection): Unit = js.native
   

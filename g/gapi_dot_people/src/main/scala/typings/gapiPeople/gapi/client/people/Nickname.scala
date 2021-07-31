@@ -2,17 +2,15 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nickname extends StObject {
   
-  var metadata: FieldMetadata = js.native
+  var metadata: FieldMetadata
   
-  var `type`: NicknameType = js.native
+  var `type`: NicknameType
   
-  var value: String = js.native
+  var value: String
 }
 object Nickname {
   

@@ -3,7 +3,6 @@ package typings.rbx
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalContextMod {
@@ -16,14 +15,13 @@ object modalContextMod {
   @js.native
   val initialValue: ModalContextValue = js.native
   
-  @js.native
   trait ModalContextValue extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var closeOnBlur: Boolean = js.native
+    var closeOnBlur: Boolean
     
-    var closeOnEsc: Boolean = js.native
+    var closeOnEsc: Boolean
   }
   object ModalContextValue {
     

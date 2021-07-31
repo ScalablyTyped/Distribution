@@ -4,15 +4,13 @@ import typings.inboxsdk.mod.Conversations.ContentPanelDescriptor
 import typings.inboxsdk.mod.Conversations.ContentPanelView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Global {
   
-  @js.native
   trait GlobalInstance extends StObject {
     
-    def addSidebarContentPanel(contentPanelDescriptor: ContentPanelDescriptor): js.Promise[ContentPanelView] = js.native
+    def addSidebarContentPanel(contentPanelDescriptor: ContentPanelDescriptor): js.Promise[ContentPanelView]
   }
   object GlobalInstance {
     

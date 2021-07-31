@@ -3,7 +3,6 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,7 +20,7 @@ trait DataView extends StObject {
   
   def getColumnType(columnIndex: Double): String = js.native
   
-  def getDistinctValues(columnIndex: Double): js.Array[_] = js.native
+  def getDistinctValues(columnIndex: Double): js.Array[js.Any] = js.native
   
   def getFilteredRows(filters: js.Array[DataTableCellFilter]): js.Array[Double] = js.native
   
@@ -62,7 +61,7 @@ trait DataView extends StObject {
   def hideRows(min: Double, max: Double): Unit = js.native
   def hideRows(rowIndexes: js.Array[Double]): Unit = js.native
   
-  def setColumns(columnIndexes: js.Array[_ | ColumnSpec | Double]): Unit = js.native
+  def setColumns(columnIndexes: js.Array[js.Any | ColumnSpec | Double]): Unit = js.native
   
   def setRows(min: Double, max: Double): Unit = js.native
   def setRows(rowIndexes: js.Array[Double]): Unit = js.native

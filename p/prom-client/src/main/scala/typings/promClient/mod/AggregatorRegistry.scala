@@ -3,7 +3,6 @@ package typings.promClient.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "AggregatorRegistry")
@@ -18,10 +17,14 @@ class AggregatorRegistry () extends Registry {
   	 *   metrics.
   	 */
   def clusterMetrics(): js.Promise[String] = js.native
-  def clusterMetrics(cb: js.Function2[/* err */ Error | Null, /* metrics */ js.UndefOr[String], _]): js.Promise[String] = js.native
+  def clusterMetrics(cb: js.Function2[/* err */ Error | Null, /* metrics */ js.UndefOr[String], js.Any]): js.Promise[String] = js.native
 }
 /* static members */
 object AggregatorRegistry {
+  
+  @JSImport("prom-client", "AggregatorRegistry")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	 * Creates a new Registry instance from an array of metrics that were
@@ -32,9 +35,8 @@ object AggregatorRegistry {
   	 *   `registry.getMetricsAsJSON()`.
   	 * @return {Registry} aggregated registry.
   	 */
-  @JSImport("prom-client", "AggregatorRegistry.aggregate")
-  @js.native
-  def aggregate(metricsArr: js.Array[js.Object]): Registry = js.native
+  @scala.inline
+  def aggregate(metricsArr: js.Array[js.Object]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregate")(metricsArr.asInstanceOf[js.Any]).asInstanceOf[Registry]
   
   /**
   	 * Sets the registry or registries to be aggregated. Call from workers to
@@ -43,10 +45,8 @@ object AggregatorRegistry {
   	 *   aggregated.
   	 * @return {void}
   	 */
-  @JSImport("prom-client", "AggregatorRegistry.setRegistries")
-  @js.native
-  def setRegistries(regs: js.Array[Registry]): Unit = js.native
-  @JSImport("prom-client", "AggregatorRegistry.setRegistries")
-  @js.native
-  def setRegistries(regs: Registry): Unit = js.native
+  @scala.inline
+  def setRegistries(regs: js.Array[Registry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setRegistries(regs: Registry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

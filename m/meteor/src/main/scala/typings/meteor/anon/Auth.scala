@@ -2,31 +2,29 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth extends StObject {
   
-  var auth: js.UndefOr[String] = js.native
+  var auth: js.UndefOr[String] = js.undefined
   
-  var beforeSend: js.UndefOr[js.Function] = js.native
+  var beforeSend: js.UndefOr[js.Function] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
-  var followRedirects: js.UndefOr[Boolean] = js.native
+  var followRedirects: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var npmRequestOptions: js.UndefOr[js.Object] = js.native
+  var npmRequestOptions: js.UndefOr[js.Object] = js.undefined
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object Auth {
   

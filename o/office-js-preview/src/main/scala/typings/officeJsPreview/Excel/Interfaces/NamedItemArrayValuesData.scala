@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.RangeValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `namedItemArrayValues.toJSON()`. */
-@js.native
 trait NamedItemArrayValuesData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait NamedItemArrayValuesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var types: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.native
+  var types: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait NamedItemArrayValuesData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object NamedItemArrayValuesData {
   
@@ -47,7 +45,7 @@ object NamedItemArrayValuesData {
     def setTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

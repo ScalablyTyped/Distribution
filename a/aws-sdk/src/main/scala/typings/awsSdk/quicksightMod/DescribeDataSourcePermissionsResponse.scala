@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDataSourcePermissionsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the data source.
     */
-  var DataSourceArn: js.UndefOr[Arn] = js.native
+  var DataSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID of the data source. This ID is unique per AWS Region for each AWS account.
     */
-  var DataSourceId: js.UndefOr[ResourceId] = js.native
+  var DataSourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A list of resource permissions on the data source.
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DescribeDataSourcePermissionsResponse {
   

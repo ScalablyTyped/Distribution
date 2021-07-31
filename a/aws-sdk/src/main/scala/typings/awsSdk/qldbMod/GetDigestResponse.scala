@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDigestResponse extends StObject {
   
   /**
     * The 256-bit hash value representing the digest returned by a GetDigest request.
     */
-  var Digest: typings.awsSdk.qldbMod.Digest = js.native
+  var Digest: typings.awsSdk.qldbMod.Digest
   
   /**
     * The latest block location covered by the digest that you requested. An address is an Amazon Ion structure that has two fields: strandId and sequenceNo.
     */
-  var DigestTipAddress: ValueHolder = js.native
+  var DigestTipAddress: ValueHolder
 }
 object GetDigestResponse {
   

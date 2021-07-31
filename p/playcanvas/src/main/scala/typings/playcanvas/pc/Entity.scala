@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -62,7 +61,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [app] - The application the entity belongs to, default is the current application.
   */
 @js.native
-trait Entity extends GraphNode {
+trait Entity
+  extends StObject
+     with GraphNode {
   
   /**
     * Create a new component and add it to the entity.

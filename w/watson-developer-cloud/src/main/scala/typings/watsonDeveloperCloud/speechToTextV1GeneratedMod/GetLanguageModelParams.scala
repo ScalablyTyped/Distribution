@@ -2,19 +2,17 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getLanguageModel` operation. */
-@js.native
 trait GetLanguageModelParams extends StObject {
   
   /** The customization ID (GUID) of the custom language model that is to be used for the request. You must make the request with credentials for the instance of the service that owns the custom model. */
-  var customization_id: String = js.native
+  var customization_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object GetLanguageModelParams {
   

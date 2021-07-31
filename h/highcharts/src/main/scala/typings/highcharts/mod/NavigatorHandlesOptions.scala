@@ -2,38 +2,36 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorHandlesOptions extends StObject {
   
   /**
     * (Highstock, Gantt) The fill for the handle.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock, Gantt) The stroke for the handle border and the stripes
     * inside.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock, Gantt) Allows to enable/disable handles.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Height for handles.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The width for the handle border and the stripes
     * inside.
     */
-  var lineWidth: js.UndefOr[js.Object] = js.native
+  var lineWidth: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Highstock, Gantt) Array to define shapes of handles. 0-index for left,
@@ -47,12 +45,12 @@ trait NavigatorHandlesOptions extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols`. The callback is then used by
     * its method name, as shown in the demo.
     */
-  var symbols: js.UndefOr[js.Array[String]] = js.native
+  var symbols: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highstock, Gantt) Width for handles.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object NavigatorHandlesOptions {
   

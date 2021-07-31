@@ -2,14 +2,12 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Components
-@js.native
 trait UIkitCountdownOptions extends StObject {
   
-  var date: js.UndefOr[String | Boolean] = js.native
+  var date: js.UndefOr[String | Boolean] = js.undefined
 }
 object UIkitCountdownOptions {
   

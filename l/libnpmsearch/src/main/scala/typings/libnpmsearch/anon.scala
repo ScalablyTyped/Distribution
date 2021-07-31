@@ -17,19 +17,17 @@ import typings.ssri.mod.Integrity
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Maintenance extends StObject {
     
-    var maintenance: Double = js.native
+    var maintenance: Double
     
-    var popularity: Double = js.native
+    var popularity: Double
     
-    var quality: Double = js.native
+    var quality: Double
   }
   object Maintenance {
     
@@ -54,26 +52,26 @@ object anon {
   }
   
   /* Inlined libnpmsearch.libnpmsearch.Options & {  detailed :true} */
-  @js.native
   trait Optionsdetailedtrue
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * @deprecated
       * This is a legacy authentication token supported only for
       * compatibility. Please use `opts.token` instead.
       */
-    var _auth: js.UndefOr[String] = js.native
+    var _auth: js.UndefOr[String] = js.undefined
     
     /**
       * Alias for `token`.
       */
-    var _authToken: js.UndefOr[String] = js.native
+    var _authToken: js.UndefOr[String] = js.undefined
     
     /**
       * Alias for `password`
       */
-    var _password: js.UndefOr[String] = js.native
+    var _password: js.UndefOr[String] = js.undefined
     
     /**
       * An `Agent` instance to be shared across requests. This allows
@@ -84,11 +82,11 @@ object anon {
       * agents are already automatically managed internally when this option
       * is not passed through.
       */
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var `always-auth`: js.UndefOr[Boolean] = js.native
+    var `always-auth`: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysAuth: js.UndefOr[Boolean] = js.native
+    var alwaysAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Request body to send through the outgoing request. Buffers and
@@ -99,7 +97,7 @@ object anon {
       *
       * Use `opts.headers` to set the content-type to something else.
       */
-    var body: js.UndefOr[Buffer | Stream | js.Object | String] = js.native
+    var body: js.UndefOr[Buffer | Stream | js.Object | String] = js.undefined
     
     /**
       * The Certificate Authority signing certificate that is trusted for SSL
@@ -121,7 +119,7 @@ object anon {
       *
       * See also `opts.strictSSL`, `opts.ca` and `opts.key`
       */
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer]) | Null] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer]) | Null] = js.undefined
     
     /**
       * The location of the http cache directory. If provided, certain
@@ -132,7 +130,7 @@ object anon {
       *
       * See also `offline`, `preferOffline`, and `preferOnline`.
       */
-    var cache: js.UndefOr[String] = js.native
+    var cache: js.UndefOr[String] = js.undefined
     
     /**
       * A client certificate to pass when accessing the registry. Values
@@ -150,7 +148,7 @@ object anon {
       *
       * See also: `opts.ca` and `opts.key`
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /**
       * If true, returns an object with `package`, `score`, and `searchScore`
@@ -158,9 +156,9 @@ object anon {
       * other two containing details about how that package scored. Useful
       * for UIs. Default: `false`
       */
-    var detailed: js.UndefOr[Boolean] with `true` = js.native
+    var detailed: js.UndefOr[Boolean] & `true`
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The "retries" config for `retry` to use when fetching packages from
@@ -168,7 +166,7 @@ object anon {
       *
       * See also `opts.retry` to provide all retry options as a single object.
       */
-    var fetchRetries: js.UndefOr[Double] = js.native
+    var fetchRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * The "factor" config for `retry` to use when fetching packages.
@@ -176,7 +174,7 @@ object anon {
       * See also `opts.retry` to provide all retry options as a single
       * object.
       */
-    var fetchRetryFactor: js.UndefOr[Double] = js.native
+    var fetchRetryFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * The "maxTimeout" config for `retry` to use when fetching packages.
@@ -184,7 +182,7 @@ object anon {
       * See also `opts.retry` to provide all retry options as a single
       * object.
       */
-    var fetchRetryMaxtimeout: js.UndefOr[Double] = js.native
+    var fetchRetryMaxtimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The "minTimeout" config for `retry` to use when fetching packages.
@@ -192,7 +190,7 @@ object anon {
       * See also `opts.retry` to provide all retry options as a single
       * object.
       */
-    var fetchRetryMintimeout: js.UndefOr[Double] = js.native
+    var fetchRetryMintimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * If present, other auth-related values in `opts` will be completely
@@ -200,34 +198,34 @@ object anon {
       * auth for a request, and the auth details in `opts.forceAuth` will be
       * used instead.
       */
-    var forceAuth: js.UndefOr[PartialAuthOptions] = js.native
+    var forceAuth: js.UndefOr[PartialAuthOptions] = js.undefined
     
     /**
       * Offset number for results. Used with `opts.limit` for pagination.
       * Default: `0`
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, `npm-registry-fetch` will set the `Content-Encoding` header
       * to `gzip` and use `zlib.gzip()` or `zlib.createGzip()` to gzip-encode
       * `opts.body`.
       */
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional headers for the outgoing request. This option can also be
       * used to override headers automatically generated by
       * `npm-registry-fetch`, such as `Content-Type`.
       */
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * If true, the response body will be thrown away and `res.body` set to
       * `null`. This will prevent dangling response sockets for requests
       * where you don't usually care what the response body is.
       */
-    var ignoreBody: js.UndefOr[Boolean] = js.native
+    var ignoreBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, the response body's will be verified against this
@@ -245,13 +243,13 @@ object anon {
       * information, so `EINTEGRITY` errors can happen if `opts.cache` is
       * used, even if `opts.integrity` is not passed in.
       */
-    var integrity: js.UndefOr[String | Integrity] = js.native
+    var integrity: js.UndefOr[String | Integrity] = js.undefined
     
     /**
       * This is used to populate the `npm-in-ci` request header sent to the
       * registry.
       */
-    var isFromCI: js.UndefOr[Boolean] = js.native
+    var isFromCI: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A client key to pass when accessing the registry. Values should be in
@@ -268,12 +266,12 @@ object anon {
       *
       * See also: `opts.ca` and `opts.cert`
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Number of results to limit the query to. Default: `20`
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The IP address of the local interface to use when making connections
@@ -281,19 +279,19 @@ object anon {
       *
       * See also `opts.proxy`
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Logger object to use for logging operation details.
       */
-    var log: js.UndefOr[Logger] = js.native
+    var log: js.UndefOr[Logger] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `maintenance` metrics when scoring and sorting packages.
       * Default: `0.65` (same as `opts.sortBy: 'optimal'`)
       */
-    var maintenance: js.UndefOr[Double] = js.native
+    var maintenance: js.UndefOr[Double] = js.undefined
     
     /**
       * When using `fetch.json.stream()` (NOT `fetch.json()`), this will be
@@ -301,30 +299,30 @@ object anon {
       * `JSONStream.parse`, and can be used to transform stream data before
       * output.
       */
-    var mapJSON: js.UndefOr[js.Function1[/* v */ js.Any, _]] = js.native
+    var mapJSON: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
     
     /**
       * Maximum number of sockets to keep open during requests. Has no effect
       * if `opts.agent` is used.
       */
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
     /**
       * HTTP method to use for the outgoing request. Case-insensitive.
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * If true, proxying will be disabled even if `opts.proxy` is used.
       */
-    var noproxy: js.UndefOr[Boolean] = js.native
+    var noproxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, will be sent in the `npm-session` header. This header is
       * used by the npm registry to identify individual user sessions
       * (usually individual invocations of the CLI).
       */
-    var npmSession: js.UndefOr[String] = js.native
+    var npmSession: js.UndefOr[String] = js.undefined
     
     /**
       * Force offline mode: no network requests will be done during install.
@@ -333,14 +331,14 @@ object anon {
       *
       * This option is only really useful if you're also using `opts.cache`.
       */
-    var offline: js.UndefOr[Boolean] = js.native
+    var offline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is a one-time password from a two-factor authenticator. It is
       * required for certain registry interactions when two-factor auth is
       * enabled for a user account.
       */
-    var otp: js.UndefOr[Double | String] = js.native
+    var otp: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Password used for basic authentication. For the more modern
@@ -357,14 +355,14 @@ object anon {
       *
       * See also `opts.username`
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `popularity` metrics when scoring and sorting packages.
       * Default: `0.98` (same as `opts.sortBy: 'optimal'`)
       */
-    var popularity: js.UndefOr[Double] = js.native
+    var popularity: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, staleness checks for cached data will be bypassed, but
@@ -373,7 +371,7 @@ object anon {
       *
       * This option is generally only useful if you're also using `opts.cache`.
       */
-    var preferOffline: js.UndefOr[Boolean] = js.native
+    var preferOffline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, staleness checks for cached data will be forced, making the
@@ -381,27 +379,27 @@ object anon {
       *
       * This option is generally only useful if you're also using `opts.cache`.
       */
-    var preferOnline: js.UndefOr[Boolean] = js.native
+    var preferOnline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, will be sent in the npm-scope header. This header is
       * used by the npm registry to identify the toplevel package scope that
       * a particular project installation is using.
       */
-    var projectScope: js.UndefOr[String] = js.native
+    var projectScope: js.UndefOr[String] = js.undefined
     
     /**
       * A proxy to use for outgoing http requests. If not passed in, the
       * `HTTP(S)_PROXY` environment variable will be used.
       */
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     /**
       * Decimal number between `0` and `1` that defines the weight of
       * `quality` metrics when scoring and sorting packages.
       * Default: `0.5` (same as `opts.sortBy: 'optimal'`)
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * If provided, the request URI will have a query string appended to it
@@ -411,7 +409,7 @@ object anon {
       * If the request URI already has a query string, it will be merged with
       * `opts.query`, preferring `opts.query` values.
       */
-    var query: js.UndefOr[String | js.Object] = js.native
+    var query: js.UndefOr[String | js.Object] = js.undefined
     
     /**
       * Registry configuration for a request. If a request URL only includes
@@ -424,13 +422,13 @@ object anon {
       * See also `opts.scope`, `opts.spec`, and `opts.<scope>:registry` which
       * can all affect the actual registry URL used by the outgoing request.
       */
-    var registry: js.UndefOr[String] = js.native
+    var registry: js.UndefOr[String] = js.undefined
     
     /**
       * Single-object configuration for request retry settings. If passed in,
       * will override individually-passed `fetchRetry*` settings.
       */
-    var retry: js.UndefOr[PartialFetchRetryOptions] = js.native
+    var retry: js.UndefOr[PartialFetchRetryOptions] = js.undefined
     
     /**
       * Associate an operation with a scope for a scoped registry. This
@@ -440,20 +438,20 @@ object anon {
       * See also `opts.<scope>:registry` and `opts.spec` for interactions
       * with this option.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /**
       * Used as a shorthand to set `opts.quality`, `opts.maintenance`, and
       * `opts.popularity` with values that prioritize each one.
       */
-    var sortBy: js.UndefOr[optimal | quality | maintenance | popularity] = js.native
+    var sortBy: js.UndefOr[optimal | quality | maintenance | popularity] = js.undefined
     
     /**
       * If provided, can be used to automatically configure `opts.scope`
       * based on a specific package name. Non-registry package specs will
       * throw an error.
       */
-    var spec: js.UndefOr[String | Result] = js.native
+    var spec: js.UndefOr[String | Result] = js.undefined
     
     /**
       * Whether or not to do SSL key validation when making requests to the
@@ -461,12 +459,12 @@ object anon {
       *
       * See also `opts.ca`.
       */
-    var strictSSL: js.UndefOr[Boolean] = js.native
+    var strictSSL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Time before a hanging request times out.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Authentication token string.
@@ -480,12 +478,12 @@ object anon {
       * }
       * ```
       */
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
     /**
       * User agent string to send in the `User-Agent` header.
       */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
     /**
       * Username used for basic authentication. For the more modern
@@ -502,12 +500,12 @@ object anon {
       *
       * See also `opts.password`
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Optionsdetailedtrue {
     
     @scala.inline
-    def apply(detailed: js.UndefOr[Boolean] with `true`): Optionsdetailedtrue = {
+    def apply(detailed: js.UndefOr[Boolean] & `true`): Optionsdetailedtrue = {
       val __obj = js.Dynamic.literal(detailed = detailed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdetailedtrue]
     }
@@ -564,7 +562,7 @@ object anon {
       def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
       @scala.inline
-      def setDetailed(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      def setDetailed(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
@@ -669,7 +667,7 @@ object anon {
       def setMaintenanceUndefined: Self = StObject.set(x, "maintenance", js.undefined)
       
       @scala.inline
-      def setMapJSON(value: /* v */ js.Any => _): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
+      def setMapJSON(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMapJSONUndefined: Self = StObject.set(x, "mapJSON", js.undefined)

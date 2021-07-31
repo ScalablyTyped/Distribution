@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "vue__compiler-ssr"
-version := "3.0.2-ef5e98"
-scalaVersion := "2.13.3"
+version := "3.0.2-03ec34"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "babel__parser" % "7.12.7-cda1da",
-  "org.scalablytyped" %%% "babel__types" % "7.12.7-2e813b",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-475dad",
-  "org.scalablytyped" %%% "std" % "4.1-40053c",
-  "org.scalablytyped" %%% "vue__compiler-core" % "3.0.2-e84d2a")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "babel__parser" % "7.12.7-e54b91",
+  "org.scalablytyped" %%% "babel__types" % "7.12.7-b1a5d6",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-755fd4",
+  "org.scalablytyped" %%% "std" % "4.1-044efb",
+  "org.scalablytyped" %%% "vue__compiler-core" % "3.0.2-a067ba")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

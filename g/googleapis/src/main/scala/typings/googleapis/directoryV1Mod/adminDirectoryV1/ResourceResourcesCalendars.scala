@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Resources$Calendars")
@@ -31,7 +30,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceResourcesCalendarsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceResourcesCalendarsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCalendarResource] = js.native
   def get(callback: BodyResponseCallback[SchemaCalendarResource]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
   def get(params: ParamsResourceResourcesCalendarsGet): GaxiosPromise[SchemaCalendarResource] = js.native
   def get(
     params: ParamsResourceResourcesCalendarsGet,
@@ -94,7 +93,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCalendarResource] = js.native
   def insert(callback: BodyResponseCallback[SchemaCalendarResource]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
   def insert(params: ParamsResourceResourcesCalendarsInsert): GaxiosPromise[SchemaCalendarResource] = js.native
   def insert(
     params: ParamsResourceResourcesCalendarsInsert,
@@ -130,7 +129,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCalendarResources] = js.native
   def list(callback: BodyResponseCallback[SchemaCalendarResources]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarResources] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendarResources] = js.native
   def list(params: ParamsResourceResourcesCalendarsList): GaxiosPromise[SchemaCalendarResources] = js.native
   def list(
     params: ParamsResourceResourcesCalendarsList,
@@ -167,7 +166,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCalendarResource] = js.native
   def patch(callback: BodyResponseCallback[SchemaCalendarResource]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
   def patch(params: ParamsResourceResourcesCalendarsPatch): GaxiosPromise[SchemaCalendarResource] = js.native
   def patch(
     params: ParamsResourceResourcesCalendarsPatch,
@@ -203,7 +202,7 @@ class ResourceResourcesCalendars protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCalendarResource] = js.native
   def update(callback: BodyResponseCallback[SchemaCalendarResource]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCalendarResource] = js.native
   def update(params: ParamsResourceResourcesCalendarsUpdate): GaxiosPromise[SchemaCalendarResource] = js.native
   def update(
     params: ParamsResourceResourcesCalendarsUpdate,

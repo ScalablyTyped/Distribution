@@ -17,10 +17,13 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("urllib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("urllib", "HttpClient")
   @js.native
@@ -73,105 +76,78 @@ object mod {
   @js.native
   val agent: Agent = js.native
   
-  @JSImport("urllib", "create")
-  @js.native
-  def create(): HttpClient[RequestOptions] = js.native
-  @JSImport("urllib", "create")
-  @js.native
-  def create(options: RequestOptions): HttpClient[RequestOptions] = js.native
+  @scala.inline
+  def create(): HttpClient[RequestOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HttpClient[RequestOptions]]
+  @scala.inline
+  def create(options: RequestOptions): HttpClient[RequestOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[HttpClient[RequestOptions]]
   
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: String): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: String, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: String, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: URL_): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: URL_, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: URL_, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "curl")
-  @js.native
-  def curl[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = js.native
+  @scala.inline
+  def curl[T](url: String): js.Promise[HttpClientResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def curl[T](url: String, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def curl[T](url: String, options: RequestOptions): js.Promise[HttpClientResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def curl[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def curl[T](url: URL_): js.Promise[HttpClientResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def curl[T](url: URL_, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def curl[T](url: URL_, options: RequestOptions): js.Promise[HttpClientResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def curl[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("curl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("urllib", "httpsAgent")
   @js.native
   val httpsAgent: typings.node.httpsMod.Agent = js.native
   
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: String): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: String, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: String, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: URL_): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: URL_, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: URL_, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
-  @JSImport("urllib", "request")
-  @js.native
-  def request[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = js.native
+  @scala.inline
+  def request[T](url: String): js.Promise[HttpClientResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def request[T](url: String, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request[T](url: String, options: RequestOptions): js.Promise[HttpClientResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def request[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request[T](url: URL_): js.Promise[HttpClientResponse[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def request[T](url: URL_, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request[T](url: URL_, options: RequestOptions): js.Promise[HttpClientResponse[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpClientResponse[T]]]
+  @scala.inline
+  def request[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("urllib", "requestThunk")
-  @js.native
-  def requestThunk[T](url: String): js.Function1[/* callback */ Callback[T], Unit] = js.native
-  @JSImport("urllib", "requestThunk")
-  @js.native
-  def requestThunk[T](url: String, options: RequestOptions): js.Function1[/* callback */ Callback[T], Unit] = js.native
-  @JSImport("urllib", "requestThunk")
-  @js.native
-  def requestThunk[T](url: URL_): js.Function1[/* callback */ Callback[T], Unit] = js.native
-  @JSImport("urllib", "requestThunk")
-  @js.native
-  def requestThunk[T](url: URL_, options: RequestOptions): js.Function1[/* callback */ Callback[T], Unit] = js.native
+  @scala.inline
+  def requestThunk[T](url: String): js.Function1[/* callback */ Callback[T], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestThunk")(url.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ Callback[T], Unit]]
+  @scala.inline
+  def requestThunk[T](url: String, options: RequestOptions): js.Function1[/* callback */ Callback[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestThunk")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* callback */ Callback[T], Unit]]
+  @scala.inline
+  def requestThunk[T](url: URL_): js.Function1[/* callback */ Callback[T], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestThunk")(url.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ Callback[T], Unit]]
+  @scala.inline
+  def requestThunk[T](url: URL_, options: RequestOptions): js.Function1[/* callback */ Callback[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestThunk")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* callback */ Callback[T], Unit]]
   
-  @JSImport("urllib", "requestWithCallback")
-  @js.native
-  def requestWithCallback[T](url: String, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "requestWithCallback")
-  @js.native
-  def requestWithCallback[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "requestWithCallback")
-  @js.native
-  def requestWithCallback[T](url: URL_, callback: Callback[T]): Unit = js.native
-  @JSImport("urllib", "requestWithCallback")
-  @js.native
-  def requestWithCallback[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = js.native
+  @scala.inline
+  def requestWithCallback[T](url: String, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestWithCallback")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def requestWithCallback[T](url: String, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestWithCallback")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def requestWithCallback[T](url: URL_, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestWithCallback")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def requestWithCallback[T](url: URL_, options: RequestOptions, callback: Callback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestWithCallback")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback[T] = js.Function3[/* err */ Error, /* data */ T, /* res */ IncomingMessage, Unit]
   
-  @js.native
   trait HttpClientResponse[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var headers: OutgoingHttpHeaders = js.native
+    var headers: OutgoingHttpHeaders
     
-    var res: IncomingMessage = js.native
+    var res: IncomingMessage
     
-    var status: Double = js.native
+    var status: Double
   }
   object HttpClientResponse {
     
@@ -182,7 +158,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HttpClientResponseMutableBuilder[Self <: HttpClientResponse[_], T] (val x: Self with HttpClientResponse[T]) extends AnyVal {
+    implicit class HttpClientResponseMutableBuilder[Self <: HttpClientResponse[?], T] (val x: Self & HttpClientResponse[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -240,17 +216,16 @@ object mod {
     def TRACE: typings.urllib.urllibStrings.TRACE = "TRACE".asInstanceOf[typings.urllib.urllibStrings.TRACE]
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
     /** HTTP Agent object.Set false if you does not use agent. */
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
     /** username:password used in HTTP Basic Authorization. */
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
     /** Before request hook, you can change every thing here. */
-    var beforeRequest: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var beforeRequest: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     /**
       * An array of strings or Buffers of trusted certificates.
@@ -258,38 +233,38 @@ object mod {
       * These are used to authorize connections.
       * Notes: This is necessary only if the server uses the self - signed certificate
       */
-    var ca: js.UndefOr[String | Buffer | (js.Array[Buffer | String])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[Buffer | String])] = js.undefined
     
     /**
       * A string or Buffer containing the certificate key of the client in PEM format.
       * Notes: This is necessary only if using the client certificate authentication
       */
-    var cert: js.UndefOr[String | Buffer] = js.native
+    var cert: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * check request address to protect from SSRF and similar attacks.
       * It receive two arguments(ip and family) and should return true or false to identified the address is legal or not.
       * It rely on lookup and have the same version requirement.
       */
-    var checkAddress: js.UndefOr[js.Function2[/* ip */ String, /* family */ Double | String, Boolean]] = js.native
+    var checkAddress: js.UndefOr[js.Function2[/* ip */ String, /* family */ Double | String, Boolean]] = js.undefined
     
     /** A string describing the ciphers to use or exclude. */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     /** consume the writeStream, invoke the callback after writeStream close. */
-    var consumeWriteStream: js.UndefOr[Boolean] = js.native
+    var consumeWriteStream: js.UndefOr[Boolean] = js.undefined
     
     /** Manually set the content of payload. If set, data will be ignored. */
-    var content: js.UndefOr[String | Buffer] = js.native
+    var content: js.UndefOr[String | Buffer] = js.undefined
     
     /** Type of request data.Could be json.If it's json, will auto set Content-Type: application/json header. */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** Data to be sent. Will be stringify automatically. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Force convert data to query string. */
-    var dataAsQueryString: js.UndefOr[Boolean] = js.native
+    var dataAsQueryString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type of response data. Could be text or json.
@@ -297,88 +272,88 @@ object mod {
       * If it's json, the data of callback would be a parsed JSON Object
       * and will auto set Accept: application/json header. Default callbacked data would be a Buffer.
       */
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     /** username:password used in HTTP Digest Authorization. */
-    var digestAuth: js.UndefOr[String] = js.native
+    var digestAuth: js.UndefOr[String] = js.undefined
     
     /** Enable proxy request, default is false. */
-    var enableProxy: js.UndefOr[Boolean] = js.native
+    var enableProxy: js.UndefOr[Boolean] = js.undefined
     
     /** 
       * The files will send with multipart/form-data format, base on formstream.
       * If method not set, will use POST method by default.
       */
-    var files: js.UndefOr[(js.Array[Readable | Buffer | String]) | js.Object | Readable | Buffer | String] = js.native
+    var files: js.UndefOr[(js.Array[Readable | Buffer | String]) | js.Object | Readable | Buffer | String] = js.undefined
     
     /** Fix the control characters (U+0000 through U+001F) before JSON parse response. Default is false. */
-    var fixJSONCtlChars: js.UndefOr[Boolean] = js.native
+    var fixJSONCtlChars: js.UndefOr[Boolean] = js.undefined
     
     /** follow HTTP 3xx responses as redirects. defaults to false. */
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
     /** Format the redirect url by your self. Default is url.resolve(from, to). */
-    var formatRedirectUrl: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Unit]] = js.native
+    var formatRedirectUrl: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Unit]] = js.undefined
     
     /** Accept gzip response content and auto decode it, default is false. */
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
     /** Request headers. */
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
     /** HTTPS Agent object. Set false if you does not use agent. */
-    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
     
     /** by default will convert header keys to lowercase */
-    var keepHeaderCase: js.UndefOr[Boolean] = js.native
+    var keepHeaderCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string or Buffer containing the private key of the client in PEM format.
       * Notes: This is necessary only if using the client certificate authentication
       */
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Custom DNS lookup function, default is dns.lookup.
       * Require node >= 4.0.0(for http protocol) and node >=8(for https protocol)
       */
-    var lookup: js.UndefOr[LookupFunction] = js.native
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
     
     /** The maximum number of redirects to follow, defaults to 10. */
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
     /** Request method, defaults to GET. Could be GET, POST, DELETE or PUT. Alias 'type'. */
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
     /**
       * urllib default use querystring to stringify form data which don't support nested object,
       * will use qs instead of querystring to support nested object by set this option to true.
       */
-    var nestedQuerystring: js.UndefOr[Boolean] = js.native
+    var nestedQuerystring: js.UndefOr[Boolean] = js.undefined
     
     /** A string of passphrase for the private key or pfx. */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /** A string or Buffer containing the private key, certificate and CA certs of the server in PFX or PKCS12 format. */
-    var pfx: js.UndefOr[String | Buffer] = js.native
+    var pfx: js.UndefOr[String | Buffer] = js.undefined
     
     /** proxy agent uri or options, default is null. */
-    var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+    var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
       * An 'error' event is emitted if verification fails.Default: true.
       */
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /** The SSL method to use, e.g.SSLv3_method to force SSL version 3. */
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
     /** Stream to be pipe to the remote.If set, data and content will be ignored. */
-    var stream: js.UndefOr[Readable] = js.native
+    var stream: js.UndefOr[Readable] = js.undefined
     
     /** let you get the res object when request connected, default false. alias customResponse */
-    var streaming: js.UndefOr[Boolean] = js.native
+    var streaming: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Request timeout in milliseconds for connecting phase and response receiving phase.
@@ -386,20 +361,20 @@ object mod {
       * TIMEOUT, both are 5s.You can use timeout: 5000 to tell urllib use same timeout on two phase or set them seperately such as
       * timeout: [3000, 5000], which will set connecting timeout to 3s and response 5s.
       */
-    var timeout: js.UndefOr[Double | js.Array[Double]] = js.native
+    var timeout: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /** Enable timing or not, default is false. */
-    var timing: js.UndefOr[Boolean] = js.native
+    var timing: js.UndefOr[Boolean] = js.undefined
     
     /** Alias method  */
-    var `type`: js.UndefOr[HttpMethod] = js.native
+    var `type`: js.UndefOr[HttpMethod] = js.undefined
     
     /**
       * A writable stream to be piped by the response stream.
       * Responding data will be write to this stream and callback
       * will be called with data set null after finished writing.
       */
-    var writeStream: js.UndefOr[Writable] = js.native
+    var writeStream: js.UndefOr[Writable] = js.undefined
   }
   object RequestOptions {
     
@@ -659,14 +634,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequestOptions2 extends RequestOptions {
+  trait RequestOptions2
+    extends StObject
+       with RequestOptions {
     
-    var isRetry: js.UndefOr[js.Function1[/* res */ HttpClientResponse[_], Boolean]] = js.native
+    var isRetry: js.UndefOr[js.Function1[/* res */ HttpClientResponse[js.Any], Boolean]] = js.undefined
     
-    var retry: js.UndefOr[Double] = js.native
+    var retry: js.UndefOr[Double] = js.undefined
     
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
   }
   object RequestOptions2 {
     
@@ -680,7 +656,7 @@ object mod {
     implicit class RequestOptions2MutableBuilder[Self <: RequestOptions2] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIsRetry(value: /* res */ HttpClientResponse[_] => Boolean): Self = StObject.set(x, "isRetry", js.Any.fromFunction1(value))
+      def setIsRetry(value: /* res */ HttpClientResponse[js.Any] => Boolean): Self = StObject.set(x, "isRetry", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIsRetryUndefined: Self = StObject.set(x, "isRetry", js.undefined)

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -101,6 +100,10 @@ object componentMod {
   /* static members */
   object Component {
     
+    @JSImport("@pulumi/aws/imagebuilder/component", "Component")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Component resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -110,77 +113,71 @@ object componentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/imagebuilder/component", "Component.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Component = js.native
-    @JSImport("@pulumi/aws/imagebuilder/component", "Component.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Component = js.native
-    @JSImport("@pulumi/aws/imagebuilder/component", "Component.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComponentState): Component = js.native
-    @JSImport("@pulumi/aws/imagebuilder/component", "Component.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComponentState, opts: CustomResourceOptions): Component = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Component]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Component]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComponentState): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Component]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComponentState, opts: CustomResourceOptions): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Component]
     
     /**
       * Returns true if the given object is an instance of Component.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/imagebuilder/component", "Component.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean]
   }
   
-  @js.native
   trait ComponentArgs extends StObject {
     
     /**
       * Change description of the component.
       */
-    val changeDescription: js.UndefOr[Input[String]] = js.native
+    val changeDescription: js.UndefOr[Input[String]] = js.undefined
     
-    val data: js.UndefOr[Input[String]] = js.native
+    val data: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the component.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the component.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Platform of the component.
       */
-    val platform: Input[String] = js.native
+    val platform: Input[String]
     
     /**
       * Set of Operating Systems (OS) supported by the component.
       */
-    val supportedOsVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val supportedOsVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of resource tags for the component.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * S3 URI with data of the component. Exactly one of `data` and `uri` can be specified.
       */
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version of the component.
       */
-    val version: Input[String] = js.native
+    val version: Input[String]
   }
   object ComponentArgs {
     
@@ -252,80 +249,79 @@ object componentMod {
     }
   }
   
-  @js.native
   trait ComponentState extends StObject {
     
     /**
       * (Required) Amazon Resource Name (ARN) of the component.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Change description of the component.
       */
-    val changeDescription: js.UndefOr[Input[String]] = js.native
+    val changeDescription: js.UndefOr[Input[String]] = js.undefined
     
-    val data: js.UndefOr[Input[String]] = js.native
+    val data: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Date the component was created.
       */
-    val dateCreated: js.UndefOr[Input[String]] = js.native
+    val dateCreated: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the component.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Encryption status of the component.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the component.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Owner of the component.
       */
-    val owner: js.UndefOr[Input[String]] = js.native
+    val owner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Platform of the component.
       */
-    val platform: js.UndefOr[Input[String]] = js.native
+    val platform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of Operating Systems (OS) supported by the component.
       */
-    val supportedOsVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val supportedOsVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of resource tags for the component.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Type of the component.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 URI with data of the component. Exactly one of `data` and `uri` can be specified.
       */
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version of the component.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object ComponentState {
     

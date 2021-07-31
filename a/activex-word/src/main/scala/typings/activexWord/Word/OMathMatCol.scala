@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathMatCol extends StObject {
   
-  var Align: WdOMathHorizAlignType = js.native
+  var Align: WdOMathHorizAlignType
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Args: OMathArgs = js.native
+  val Args: OMathArgs
   
-  val ColIndex: Double = js.native
+  val ColIndex: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.OMathMatCol_typekey")
-  var WordDotOMathMatCol_typekey: OMathMatCol = js.native
+  var WordDotOMathMatCol_typekey: OMathMatCol
 }
 object OMathMatCol {
   

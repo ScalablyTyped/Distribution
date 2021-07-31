@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/language/v1beta2", "language_v1beta2.Resource$Documents")
@@ -30,7 +29,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def analyzeEntities(): GaxiosPromise[SchemaAnalyzeEntitiesResponse] = js.native
   def analyzeEntities(callback: BodyResponseCallback[SchemaAnalyzeEntitiesResponse]): Unit = js.native
-  def analyzeEntities(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnalyzeEntitiesResponse] = js.native
+  def analyzeEntities(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnalyzeEntitiesResponse] = js.native
   def analyzeEntities(params: ParamsResourceDocumentsAnalyzeentities): GaxiosPromise[SchemaAnalyzeEntitiesResponse] = js.native
   def analyzeEntities(
     params: ParamsResourceDocumentsAnalyzeentities,
@@ -63,7 +62,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def analyzeEntitySentiment(): GaxiosPromise[SchemaAnalyzeEntitySentimentResponse] = js.native
   def analyzeEntitySentiment(callback: BodyResponseCallback[SchemaAnalyzeEntitySentimentResponse]): Unit = js.native
-  def analyzeEntitySentiment(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnalyzeEntitySentimentResponse] = js.native
+  def analyzeEntitySentiment(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnalyzeEntitySentimentResponse] = js.native
   def analyzeEntitySentiment(params: ParamsResourceDocumentsAnalyzeentitysentiment): GaxiosPromise[SchemaAnalyzeEntitySentimentResponse] = js.native
   def analyzeEntitySentiment(
     params: ParamsResourceDocumentsAnalyzeentitysentiment,
@@ -95,7 +94,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def analyzeSentiment(): GaxiosPromise[SchemaAnalyzeSentimentResponse] = js.native
   def analyzeSentiment(callback: BodyResponseCallback[SchemaAnalyzeSentimentResponse]): Unit = js.native
-  def analyzeSentiment(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnalyzeSentimentResponse] = js.native
+  def analyzeSentiment(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnalyzeSentimentResponse] = js.native
   def analyzeSentiment(params: ParamsResourceDocumentsAnalyzesentiment): GaxiosPromise[SchemaAnalyzeSentimentResponse] = js.native
   def analyzeSentiment(
     params: ParamsResourceDocumentsAnalyzesentiment,
@@ -129,7 +128,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def analyzeSyntax(): GaxiosPromise[SchemaAnalyzeSyntaxResponse] = js.native
   def analyzeSyntax(callback: BodyResponseCallback[SchemaAnalyzeSyntaxResponse]): Unit = js.native
-  def analyzeSyntax(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnalyzeSyntaxResponse] = js.native
+  def analyzeSyntax(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnalyzeSyntaxResponse] = js.native
   def analyzeSyntax(params: ParamsResourceDocumentsAnalyzesyntax): GaxiosPromise[SchemaAnalyzeSyntaxResponse] = js.native
   def analyzeSyntax(
     params: ParamsResourceDocumentsAnalyzesyntax,
@@ -162,7 +161,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def annotateText(): GaxiosPromise[SchemaAnnotateTextResponse] = js.native
   def annotateText(callback: BodyResponseCallback[SchemaAnnotateTextResponse]): Unit = js.native
-  def annotateText(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotateTextResponse] = js.native
+  def annotateText(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotateTextResponse] = js.native
   def annotateText(params: ParamsResourceDocumentsAnnotatetext): GaxiosPromise[SchemaAnnotateTextResponse] = js.native
   def annotateText(
     params: ParamsResourceDocumentsAnnotatetext,
@@ -194,7 +193,7 @@ class ResourceDocuments protected () extends StObject {
     */
   def classifyText(): GaxiosPromise[SchemaClassifyTextResponse] = js.native
   def classifyText(callback: BodyResponseCallback[SchemaClassifyTextResponse]): Unit = js.native
-  def classifyText(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClassifyTextResponse] = js.native
+  def classifyText(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClassifyTextResponse] = js.native
   def classifyText(params: ParamsResourceDocumentsClassifytext): GaxiosPromise[SchemaClassifyTextResponse] = js.native
   def classifyText(
     params: ParamsResourceDocumentsClassifytext,

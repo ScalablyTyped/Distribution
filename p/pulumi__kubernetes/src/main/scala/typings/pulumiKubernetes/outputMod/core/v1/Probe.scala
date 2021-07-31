@@ -2,54 +2,52 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
   */
-@js.native
 trait Probe extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the action to take.
     */
-  var exec: ExecAction = js.native
+  var exec: ExecAction
   
   /**
     * Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
     */
-  var failureThreshold: Double = js.native
+  var failureThreshold: Double
   
   /**
     * HTTPGet specifies the http request to perform.
     */
-  var httpGet: HTTPGetAction = js.native
+  var httpGet: HTTPGetAction
   
   /**
     * Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var initialDelaySeconds: Double = js.native
+  var initialDelaySeconds: Double
   
   /**
     * How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
     */
-  var periodSeconds: Double = js.native
+  var periodSeconds: Double
   
   /**
     * Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
     */
-  var successThreshold: Double = js.native
+  var successThreshold: Double
   
   /**
     * TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
     */
-  var tcpSocket: TCPSocketAction = js.native
+  var tcpSocket: TCPSocketAction
   
   /**
     * Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var timeoutSeconds: Double = js.native
+  var timeoutSeconds: Double
 }
 object Probe {
   

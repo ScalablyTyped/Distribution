@@ -3,29 +3,27 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever a piston moves a block.
   */
-@js.native
 trait IPistonMovedBlockEventData extends StObject {
   
   /**
     * The position of the block that was moved
     */
-  var block_position: VectorXYZ = js.native
+  var block_position: VectorXYZ
   
   /**
     * The action the piston took, "extended" or "retracted"
     */
-  var piston_action: String = js.native
+  var piston_action: String
   
   /**
     * The position of the piston that moved the block
     */
-  var piston_position: VectorXYZ = js.native
+  var piston_position: VectorXYZ
 }
 object IPistonMovedBlockEventData {
   

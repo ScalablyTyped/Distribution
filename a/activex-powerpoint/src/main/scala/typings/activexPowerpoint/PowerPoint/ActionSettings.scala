@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSettings extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: PpMouseActivation): ActionSetting = js.native
+  def Item(Index: PpMouseActivation): ActionSetting
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ActionSettings_typekey")
-  var PowerPointDotActionSettings_typekey: ActionSettings = js.native
+  var PowerPointDotActionSettings_typekey: ActionSettings
 }
 object ActionSettings {
   

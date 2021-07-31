@@ -3,7 +3,6 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,31 +11,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * connections between clients and the HTTPS or SSL proxy load balancer. They
   * do not affect the connection between the load balancers and the backends.
   */
-@js.native
 trait SchemaSslPolicy extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * A list of features enabled when the selected profile is CUSTOM. The -
     * method returns the set of features that can be specified in this list.
     * This field must be empty if the profile is not CUSTOM.
     */
-  var customFeatures: js.UndefOr[js.Array[String]] = js.native
+  var customFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The list of features enabled in the SSL policy.
     */
-  var enabledFeatures: js.UndefOr[js.Array[String]] = js.native
+  var enabledFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
@@ -46,26 +44,26 @@ trait SchemaSslPolicy extends StObject {
     * fail with error 412 conditionNotMet.  To see the latest fingerprint, make
     * a get() request to retrieve an SslPolicy.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Type of the resource. Always compute#sslPolicyfor SSL
     * policies.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum version of SSL protocol that can be used by the clients to
     * establish a connection with the load balancer. This can be one of
     * TLS_1_0, TLS_1_1, TLS_1_2.
     */
-  var minTlsVersion: js.UndefOr[String] = js.native
+  var minTlsVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. The name must be 1-63 characters long, and comply
@@ -75,7 +73,7 @@ trait SchemaSslPolicy extends StObject {
     * must be a dash, lowercase letter, or digit, except the last character,
     * which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Profile specifies the set of SSL features that can be used by the load
@@ -83,30 +81,30 @@ trait SchemaSslPolicy extends StObject {
     * COMPATIBLE, MODERN, RESTRICTED, or CUSTOM. If using CUSTOM, the set of
     * SSL features to enable must be specified in the customFeatures field.
     */
-  var profile: js.UndefOr[String] = js.native
+  var profile: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * Security settings for the proxy. This field is only applicable to a
     * global backend service with the loadBalancingScheme set to
     * INTERNAL_SELF_MANAGED.
     */
-  var tlsSettings: js.UndefOr[SchemaServerTlsSettings] = js.native
+  var tlsSettings: js.UndefOr[SchemaServerTlsSettings] = js.undefined
   
   /**
     * [Output Only] If potential misconfigurations are detected for this SSL
     * policy, this field will be populated with warning messages.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 object SchemaSslPolicy {
   

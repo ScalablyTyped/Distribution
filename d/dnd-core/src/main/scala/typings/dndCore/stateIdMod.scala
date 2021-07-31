@@ -2,17 +2,18 @@ package typings.dndCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateIdMod {
   
-  @JSImport("dnd-core/lib/reducers/stateId", "reduce")
+  @JSImport("dnd-core/lib/reducers/stateId", JSImport.Namespace)
   @js.native
-  def reduce(): State = js.native
-  @JSImport("dnd-core/lib/reducers/stateId", "reduce")
-  @js.native
-  def reduce(state: State): State = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reduce(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")().asInstanceOf[State]
+  @scala.inline
+  def reduce(state: State): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any]).asInstanceOf[State]
   
   type State = Double
 }

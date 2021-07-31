@@ -2,10 +2,8 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofsystem extends StObject {
   
   ////////////////////
@@ -16,7 +14,7 @@ trait Typeofsystem extends StObject {
     * Permissions: "system.cpu"
     * @since Chrome 32.
     */
-  val cpu: Typeofcpu = js.native
+  val cpu: Typeofcpu
   
   ////////////////////
   // System Display //
@@ -26,7 +24,7 @@ trait Typeofsystem extends StObject {
     * Permissions: 'system.display'
     * @since Chrome 30.
     */
-  val display: Typeofdisplay = js.native
+  val display: Typeofdisplay
   
   ////////////////////
   // System Memory
@@ -36,7 +34,7 @@ trait Typeofsystem extends StObject {
     * Permissions:  "system.memory"
     * @since Chrome 32.
     */
-  val memory: Typeofmemory = js.native
+  val memory: Typeofmemory
   
   ////////////////////
   // System Storage
@@ -46,7 +44,7 @@ trait Typeofsystem extends StObject {
     * Permissions:  "system.storage"
     * @since Chrome 30.
     */
-  val storage: TypeofstorageEjectDevice = js.native
+  val storage: TypeofstorageEjectDevice
 }
 object Typeofsystem {
   

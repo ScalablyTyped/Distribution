@@ -6,12 +6,15 @@ import typings.std.Node
 import typings.std.ParentNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object childrenMod {
   
   object default {
+    
+    @JSImport("@wordpress/blocks/api/children", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given two or more block nodes, returns a new block node representing a
@@ -19,9 +22,8 @@ object childrenMod {
       *
       * @param blockNodes - Block nodes to concatenate.
       */
-    @JSImport("@wordpress/blocks/api/children", "default.concat")
-    @js.native
-    def concat(blockNodes: ReactChild*): js.Array[ReactChild] = js.native
+    @scala.inline
+    def concat(blockNodes: ReactChild*): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(blockNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
     
     /**
       * Given an iterable set of DOM nodes, returns equivalent block children.
@@ -29,18 +31,16 @@ object childrenMod {
       *
       * @param domNodes - list of DOM nodes to convert.
       */
-    @JSImport("@wordpress/blocks/api/children", "default.fromDOM")
-    @js.native
-    def fromDOM(domNodes: ArrayLike[Node]): js.Array[ReactChild] = js.native
+    @scala.inline
+    def fromDOM(domNodes: ArrayLike[Node]): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
     
     /**
       * Given block children, returns an array of block nodes.
       *
       * @param children - Block children object to convert.
       */
-    @JSImport("@wordpress/blocks/api/children", "default.getChildrenArray")
-    @js.native
-    def getChildrenArray(children: js.Array[ReactChild]): js.Array[ReactChild] = js.native
+    @scala.inline
+    def getChildrenArray(children: js.Array[ReactChild]): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildrenArray")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
     
     /**
       * Given a selector, returns an hpq matcher generating a WPBlockChildren value
@@ -48,17 +48,15 @@ object childrenMod {
       *
       * @param selector - DOM selector.
       */
-    @JSImport("@wordpress/blocks/api/children", "default.matcher")
-    @js.native
-    def matcher(selector: String): js.Function1[/* domNode */ Node with ParentNode, js.Array[ReactChild]] = js.native
+    @scala.inline
+    def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
     
     /**
       * Given a block node, returns its HTML string representation.
       *
       * @param children - Block node(s) to convert to string.
       */
-    @JSImport("@wordpress/blocks/api/children", "default.toHTML")
-    @js.native
-    def toHTML(children: js.Array[ReactChild]): String = js.native
+    @scala.inline
+    def toHTML(children: js.Array[ReactChild]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(children.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SplitterContentLoadEvent extends SplitterEvent {
+trait SplitterContentLoadEvent
+  extends StObject
+     with SplitterEvent {
   
-  var pane: js.UndefOr[Element] = js.native
+  var pane: js.UndefOr[Element] = js.undefined
 }
 object SplitterContentLoadEvent {
   

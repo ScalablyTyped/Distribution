@@ -2,22 +2,20 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.9.1
-@js.native
 trait WebCLKernelArgInfo extends StObject {
   
   // 'global', 'local', 'constant', or 'private'
-  var accessQualifier: String = js.native
+  var accessQualifier: String
   
   // 'char', 'float', 'uint4', 'image2d_t', 'sampler_t', etc.
-  var addressQualifier: String = js.native
+  var addressQualifier: String
   
-  var name: String = js.native
+  var name: String
   
-  var typeName: String = js.native
+  var typeName: String
 }
 object WebCLKernelArgInfo {
   

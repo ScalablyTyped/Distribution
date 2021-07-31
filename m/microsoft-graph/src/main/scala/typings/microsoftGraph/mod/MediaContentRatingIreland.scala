@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaContentRatingIreland extends StObject {
   
   /**
     * Movies rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, parentalGuidance,
     * agesAbove12, agesAbove15, agesAbove16, adults.
     */
-  var movieRating: js.UndefOr[RatingIrelandMoviesType] = js.native
+  var movieRating: js.UndefOr[RatingIrelandMoviesType] = js.undefined
   
   /**
     * TV rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, children, youngAdults,
     * parentalSupervision, mature.
     */
-  var tvRating: js.UndefOr[RatingIrelandTelevisionType] = js.native
+  var tvRating: js.UndefOr[RatingIrelandTelevisionType] = js.undefined
 }
 object MediaContentRatingIreland {
   

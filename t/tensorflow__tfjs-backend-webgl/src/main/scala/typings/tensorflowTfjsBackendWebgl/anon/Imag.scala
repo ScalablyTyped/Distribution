@@ -3,15 +3,13 @@ package typings.tensorflowTfjsBackendWebgl.anon
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Imag extends StObject {
   
-  var imag: TensorInfo = js.native
+  var imag: TensorInfo
   
-  var real: TensorInfo = js.native
+  var real: TensorInfo
 }
 object Imag {
   

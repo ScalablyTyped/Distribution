@@ -3,23 +3,21 @@ package typings.victory.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisLabel extends StObject {
   
-  var axis: js.UndefOr[CSSProperties] = js.native
+  var axis: js.UndefOr[CSSProperties] = js.undefined
   
-  var axisLabel: js.UndefOr[CSSProperties] = js.native
+  var axisLabel: js.UndefOr[CSSProperties] = js.undefined
   
-  var grid: js.UndefOr[KinkeyofCSSPropertiesstri] = js.native
+  var grid: js.UndefOr[KinkeyofCSSPropertiesstri] = js.undefined
   
-  var parent: js.UndefOr[CSSProperties] = js.native
+  var parent: js.UndefOr[CSSProperties] = js.undefined
   
-  var tickLabels: js.UndefOr[KinkeyofCSSPropertiesstri] = js.native
+  var tickLabels: js.UndefOr[KinkeyofCSSPropertiesstri] = js.undefined
   
-  var ticks: js.UndefOr[KinkeyofCSSPropertiesstri] = js.native
+  var ticks: js.UndefOr[KinkeyofCSSPropertiesstri] = js.undefined
 }
 object AxisLabel {
   

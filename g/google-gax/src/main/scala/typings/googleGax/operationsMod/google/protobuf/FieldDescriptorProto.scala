@@ -9,7 +9,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FieldDescriptorProto. */
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FieldDescriptorProto.
   * @param [properties] Properties to set
   */
-class FieldDescriptorProto () extends IFieldDescriptorProto {
+class FieldDescriptorProto ()
+  extends StObject
+     with IFieldDescriptorProto {
   def this(properties: IFieldDescriptorProto) = this()
   
   /** FieldDescriptorProto defaultValue. */
@@ -66,6 +67,10 @@ class FieldDescriptorProto () extends IFieldDescriptorProto {
 }
 object FieldDescriptorProto {
   
+  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Label extends StObject
   /** Label enum. */
@@ -74,19 +79,25 @@ object FieldDescriptorProto {
   object Label extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Label with Double] = js.native
+    def apply(value: Double): js.UndefOr[Label & Double] = js.native
     
     @js.native
-    sealed trait LABEL_OPTIONAL extends Label
-    /* 1 */ val LABEL_OPTIONAL: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL with Double = js.native
+    sealed trait LABEL_OPTIONAL
+      extends StObject
+         with Label
+    /* 1 */ val LABEL_OPTIONAL: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait LABEL_REPEATED extends Label
-    /* 3 */ val LABEL_REPEATED: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED with Double = js.native
+    sealed trait LABEL_REPEATED
+      extends StObject
+         with Label
+    /* 3 */ val LABEL_REPEATED: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED & Double = js.native
     
     @js.native
-    sealed trait LABEL_REQUIRED extends Label
-    /* 2 */ val LABEL_REQUIRED: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED with Double = js.native
+    sealed trait LABEL_REQUIRED
+      extends StObject
+         with Label
+    /* 2 */ val LABEL_REQUIRED: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED & Double = js.native
   }
   
   @js.native
@@ -97,79 +108,115 @@ object FieldDescriptorProto {
   object Type extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Type with Double] = js.native
+    def apply(value: Double): js.UndefOr[Type & Double] = js.native
     
     @js.native
-    sealed trait TYPE_BOOL extends Type
-    /* 8 */ val TYPE_BOOL: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL with Double = js.native
+    sealed trait TYPE_BOOL
+      extends StObject
+         with Type
+    /* 8 */ val TYPE_BOOL: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL & Double = js.native
     
     @js.native
-    sealed trait TYPE_BYTES extends Type
-    /* 12 */ val TYPE_BYTES: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES with Double = js.native
+    sealed trait TYPE_BYTES
+      extends StObject
+         with Type
+    /* 12 */ val TYPE_BYTES: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES & Double = js.native
     
     @js.native
-    sealed trait TYPE_DOUBLE extends Type
-    /* 1 */ val TYPE_DOUBLE: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE with Double = js.native
+    sealed trait TYPE_DOUBLE
+      extends StObject
+         with Type
+    /* 1 */ val TYPE_DOUBLE: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE & Double = js.native
     
     @js.native
-    sealed trait TYPE_ENUM extends Type
-    /* 14 */ val TYPE_ENUM: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM with Double = js.native
+    sealed trait TYPE_ENUM
+      extends StObject
+         with Type
+    /* 14 */ val TYPE_ENUM: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED32 extends Type
-    /* 7 */ val TYPE_FIXED32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32 with Double = js.native
+    sealed trait TYPE_FIXED32
+      extends StObject
+         with Type
+    /* 7 */ val TYPE_FIXED32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED64 extends Type
-    /* 6 */ val TYPE_FIXED64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64 with Double = js.native
+    sealed trait TYPE_FIXED64
+      extends StObject
+         with Type
+    /* 6 */ val TYPE_FIXED64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FLOAT extends Type
-    /* 2 */ val TYPE_FLOAT: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT with Double = js.native
+    sealed trait TYPE_FLOAT
+      extends StObject
+         with Type
+    /* 2 */ val TYPE_FLOAT: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT & Double = js.native
     
     @js.native
-    sealed trait TYPE_GROUP extends Type
-    /* 10 */ val TYPE_GROUP: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP with Double = js.native
+    sealed trait TYPE_GROUP
+      extends StObject
+         with Type
+    /* 10 */ val TYPE_GROUP: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT32 extends Type
-    /* 5 */ val TYPE_INT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32 with Double = js.native
+    sealed trait TYPE_INT32
+      extends StObject
+         with Type
+    /* 5 */ val TYPE_INT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT64 extends Type
-    /* 3 */ val TYPE_INT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64 with Double = js.native
+    sealed trait TYPE_INT64
+      extends StObject
+         with Type
+    /* 3 */ val TYPE_INT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_MESSAGE extends Type
-    /* 11 */ val TYPE_MESSAGE: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE with Double = js.native
+    sealed trait TYPE_MESSAGE
+      extends StObject
+         with Type
+    /* 11 */ val TYPE_MESSAGE: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED32 extends Type
-    /* 15 */ val TYPE_SFIXED32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32 with Double = js.native
+    sealed trait TYPE_SFIXED32
+      extends StObject
+         with Type
+    /* 15 */ val TYPE_SFIXED32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED64 extends Type
-    /* 16 */ val TYPE_SFIXED64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64 with Double = js.native
+    sealed trait TYPE_SFIXED64
+      extends StObject
+         with Type
+    /* 16 */ val TYPE_SFIXED64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT32 extends Type
-    /* 17 */ val TYPE_SINT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32 with Double = js.native
+    sealed trait TYPE_SINT32
+      extends StObject
+         with Type
+    /* 17 */ val TYPE_SINT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT64 extends Type
-    /* 18 */ val TYPE_SINT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64 with Double = js.native
+    sealed trait TYPE_SINT64
+      extends StObject
+         with Type
+    /* 18 */ val TYPE_SINT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_STRING extends Type
-    /* 9 */ val TYPE_STRING: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING with Double = js.native
+    sealed trait TYPE_STRING
+      extends StObject
+         with Type
+    /* 9 */ val TYPE_STRING: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT32 extends Type
-    /* 13 */ val TYPE_UINT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32 with Double = js.native
+    sealed trait TYPE_UINT32
+      extends StObject
+         with Type
+    /* 13 */ val TYPE_UINT32: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT64 extends Type
-    /* 4 */ val TYPE_UINT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64 with Double = js.native
+    sealed trait TYPE_UINT64
+      extends StObject
+         with Type
+    /* 4 */ val TYPE_UINT64: typings.googleGax.operationsMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64 & Double = js.native
   }
   
   /**
@@ -178,12 +225,10 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.create")
-  @js.native
-  def create(): FieldDescriptorProto = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.create")
-  @js.native
-  def create(properties: IFieldDescriptorProto): FieldDescriptorProto = js.native
+  @scala.inline
+  def create(): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FieldDescriptorProto]
+  @scala.inline
+  def create(properties: IFieldDescriptorProto): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer.
@@ -194,18 +239,14 @@ object FieldDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader): FieldDescriptorProto = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): FieldDescriptorProto = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array): FieldDescriptorProto = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): FieldDescriptorProto = js.native
+  @scala.inline
+  def decode(reader: Reader): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Reader, length: Double): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
   
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer, length delimited.
@@ -215,12 +256,10 @@ object FieldDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): FieldDescriptorProto = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): FieldDescriptorProto = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
   /**
     * Encodes the specified FieldDescriptorProto message. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -229,12 +268,10 @@ object FieldDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: IFieldDescriptorProto): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: IFieldDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFieldDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFieldDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FieldDescriptorProto message, length delimited. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -243,12 +280,10 @@ object FieldDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldDescriptorProto): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFieldDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFieldDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FieldDescriptorProto message from a plain object. Also converts values to their respective internal types.
@@ -256,9 +291,8 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): FieldDescriptorProto = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
   /**
     * Creates a plain object from a FieldDescriptorProto message. Also converts values to other types if specified.
@@ -267,12 +301,10 @@ object FieldDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(message: FieldDescriptorProto): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(message: FieldDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: FieldDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: FieldDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FieldDescriptorProto message.
@@ -280,7 +312,6 @@ object FieldDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.FieldDescriptorProto.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

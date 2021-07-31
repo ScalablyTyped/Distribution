@@ -2,18 +2,16 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/role.RoleProps, 'sys'> */
-@js.native
 trait OmitRolePropssys extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var permissions: ContentDelivery = js.native
+  var permissions: ContentDelivery
   
-  var policies: js.Array[Actions] = js.native
+  var policies: js.Array[Actions]
 }
 object OmitRolePropssys {
   

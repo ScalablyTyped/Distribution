@@ -3,25 +3,25 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reader {
   
-  @js.native
-  trait IArray extends IJson {
+  trait IArray
+    extends StObject
+       with IJson {
     
     /** [Method] Sets the value of successProperty
       * @param successProperty Object The new value.
       */
     @JSName("setSuccessProperty")
-    var setSuccessProperty_IArray: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.native
+    var setSuccessProperty_IArray: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of totalProperty
       * @param totalProperty Object The new value.
       */
     @JSName("setTotalProperty")
-    var setTotalProperty_IArray: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTotalProperty_IArray: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IArray {
     
@@ -48,35 +48,35 @@ object reader {
     }
   }
   
-  @js.native
   trait IJson
-    extends typings.senchaTouch.Ext.data.reader.IReader {
+    extends StObject
+       with typings.senchaTouch.Ext.data.reader.IReader {
     
     /** [Method] Returns the value of record
       * @returns String
       */
-    var getRecord: js.UndefOr[js.Function0[String]] = js.native
+    var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of useSimpleAccessors
       * @returns Boolean
       */
-    var getUseSimpleAccessors: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseSimpleAccessors: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var record: js.UndefOr[String] = js.native
+    var record: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of record
       * @param record String The new value.
       */
-    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of useSimpleAccessors
       * @param useSimpleAccessors Boolean The new value.
       */
-    var setUseSimpleAccessors: js.UndefOr[js.Function1[/* useSimpleAccessors */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseSimpleAccessors: js.UndefOr[js.Function1[/* useSimpleAccessors */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var useSimpleAccessors: js.UndefOr[Boolean] = js.native
+    var useSimpleAccessors: js.UndefOr[Boolean] = js.undefined
   }
   object IJson {
     
@@ -127,84 +127,85 @@ object reader {
     }
   }
   
-  @js.native
-  trait IReader extends IObservable {
+  trait IReader
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (String) */
-    var clientIdProperty: js.UndefOr[String] = js.native
+    var clientIdProperty: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of clientIdProperty
       * @returns String
       */
-    var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of idProperty
       * @returns String
       */
-    var getIdProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of implicitIncludes
       * @returns Boolean
       */
-    var getImplicitIncludes: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getImplicitIncludes: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of messageProperty
       * @returns String
       */
-    var getMessageProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getMessageProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of model
       * @returns Object
       */
-    var getModel: js.UndefOr[js.Function0[_]] = js.native
+    var getModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Takes a raw response object as passed to this read and returns the useful data segment of it
       * @param response Object The response object
       * @returns Object The useful data from the response
       */
-    var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], _]] = js.native
+    var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Returns the value of rootProperty
       * @returns String
       */
-    var getRootProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of successProperty
       * @returns any
       */
-    var getSuccessProperty: js.UndefOr[js.Function0[_]] = js.native
+    var getSuccessProperty: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of totalProperty
       * @returns any
       */
-    var getTotalProperty: js.UndefOr[js.Function0[_]] = js.native
+    var getTotalProperty: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var idProperty: js.UndefOr[String] = js.native
+    var idProperty: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var implicitIncludes: js.UndefOr[Boolean] = js.native
+    var implicitIncludes: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var messageProperty: js.UndefOr[String] = js.native
+    var messageProperty: js.UndefOr[String] = js.undefined
     
     /** [Property] (Object) */
-    var metaData: js.UndefOr[js.Any] = js.native
+    var metaData: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var rawData: js.UndefOr[js.Any] = js.native
+    var rawData: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Reads the given response object
       * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
       * @returns Ext.data.ResultSet The parsed ResultSet object
       */
-    var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.native
+    var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
     
     /** [Method] Abstracts common functionality used by all Reader subclasses
       * @param data Object The raw data object
       * @returns Ext.data.ResultSet A ResultSet object
       */
-    var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.native
+    var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -214,59 +215,59 @@ object reader {
     @JSName("relayEvents")
     var relayEvents_IReader: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var rootProperty: js.UndefOr[String] = js.native
+    var rootProperty: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of clientIdProperty
       * @param clientIdProperty String The new value.
       */
-    var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.native
+    var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of idProperty
       * @param idProperty String The new value.
       */
-    var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.native
+    var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of implicitIncludes
       * @param implicitIncludes Boolean The new value.
       */
-    var setImplicitIncludes: js.UndefOr[js.Function1[/* implicitIncludes */ js.UndefOr[Boolean], Unit]] = js.native
+    var setImplicitIncludes: js.UndefOr[js.Function1[/* implicitIncludes */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of messageProperty
       * @param messageProperty String The new value.
       */
-    var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[String], Unit]] = js.native
+    var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of model
       * @param model Object The new value.
       */
-    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.native
+    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of rootProperty
       * @param rootProperty String The new value.
       */
-    var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.native
+    var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of successProperty
       * @param successProperty String The new value.
       */
-    var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[String], Unit]] = js.native
+    var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of totalProperty
       * @param totalProperty String The new value.
       */
-    var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[String], Unit]] = js.native
+    var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var successProperty: js.UndefOr[String] = js.native
+    var successProperty: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var totalProperty: js.UndefOr[String] = js.native
+    var totalProperty: js.UndefOr[String] = js.undefined
   }
   object IReader {
     
@@ -310,13 +311,13 @@ object reader {
       def setGetMessagePropertyUndefined: Self = StObject.set(x, "getMessageProperty", js.undefined)
       
       @scala.inline
-      def setGetModel(value: () => _): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+      def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
       
       @scala.inline
-      def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+      def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
@@ -328,13 +329,13 @@ object reader {
       def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
       
       @scala.inline
-      def setGetSuccessProperty(value: () => _): Self = StObject.set(x, "getSuccessProperty", js.Any.fromFunction0(value))
+      def setGetSuccessProperty(value: () => js.Any): Self = StObject.set(x, "getSuccessProperty", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSuccessPropertyUndefined: Self = StObject.set(x, "getSuccessProperty", js.undefined)
       
       @scala.inline
-      def setGetTotalProperty(value: () => _): Self = StObject.set(x, "getTotalProperty", js.Any.fromFunction0(value))
+      def setGetTotalProperty(value: () => js.Any): Self = StObject.set(x, "getTotalProperty", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTotalPropertyUndefined: Self = StObject.set(x, "getTotalProperty", js.undefined)
@@ -461,28 +462,28 @@ object reader {
     }
   }
   
-  @js.native
   trait IXml
-    extends typings.senchaTouch.Ext.data.reader.IReader {
+    extends StObject
+       with typings.senchaTouch.Ext.data.reader.IReader {
     
     /** [Method] Normalizes the data object
       * @param data Object The raw data object.
       * @returns Object Returns the documentElement property of the data object if present, or the same object if not.
       */
-    var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], _]] = js.native
+    var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Returns the value of record
       * @returns String
       */
-    var getRecord: js.UndefOr[js.Function0[String]] = js.native
+    var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var record: js.UndefOr[String] = js.native
+    var record: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of record
       * @param record String The new value.
       */
-    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IXml {
     
@@ -496,7 +497,7 @@ object reader {
     implicit class IXmlMutableBuilder[Self <: IXml] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetData(value: /* data */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)

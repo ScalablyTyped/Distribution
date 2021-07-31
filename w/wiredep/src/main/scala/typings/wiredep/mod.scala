@@ -11,7 +11,6 @@ import typings.wiredep.anon.DetectReplace
 import typings.wiredep.anon.Replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,31 +29,32 @@ object mod {
     *     // etc.
     *   }
     */
+  @scala.inline
+  def apply(config: WiredepParams): PathFiles = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[PathFiles]
+  
   @JSImport("wiredep", JSImport.Namespace)
   @js.native
-  def apply(config: WiredepParams): PathFiles = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wiredep", "stream")
-  @js.native
-  def stream(config: WiredepParams): ReadWriteStream = js.native
+  @scala.inline
+  def stream(config: WiredepParams): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @js.native
   trait FileObject extends StObject {
     
     /**
       * type of wiredep block ('js', 'css', etc)
       */
-    var block: String = js.native
+    var block: String
     
     /**
       * name of file that was updated
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * path to file that was injected
       */
-    var path: String = js.native
+    var path: String
   }
   object FileObject {
     
@@ -78,23 +78,22 @@ object mod {
     }
   }
   
-  @js.native
   trait FileTypes extends StObject {
     
-    var fileExtension: Block = js.native
+    var fileExtension: Block
     
     // defaults:
-    var html: Detect = js.native
+    var html: Detect
     
-    var jade: Detect = js.native
+    var jade: Detect
     
-    var less: Replace = js.native
+    var less: Replace
     
-    var scss: BlockDetect = js.native
+    var scss: BlockDetect
     
-    var styl: DetectReplace = js.native
+    var styl: DetectReplace
     
-    var yaml: Detect = js.native
+    var yaml: Detect
   }
   object FileTypes {
     
@@ -140,14 +139,13 @@ object mod {
   
   type PathFiles = StringDictionary[js.Array[String]]
   
-  @js.native
   trait WiredepParams extends StObject {
     
     /**
       * your bower.json file contents.
       * Default: require('./bower.json')
       */
-    var bowerJson: js.UndefOr[String] = js.native
+    var bowerJson: js.UndefOr[String] = js.undefined
     
     // ----- Advanced Configuration -----
     // All of the below settings are for advanced configuration, to
@@ -159,43 +157,43 @@ object mod {
     /**
       * path to where we are pretending to be
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Default: true
       */
-    var dependencies: js.UndefOr[Boolean] = js.native
+    var dependencies: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       */
-    var devDependencies: js.UndefOr[Boolean] = js.native
+    var devDependencies: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the directory of your Bower packages.
       * Default: '.bowerrc'.directory || bower_components
       */
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
     /**
       * @example:
       *  [ /jquery/, 'bower_components/modernizr/modernizr.js' ]
       */
-    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
-    var fileTypes: js.UndefOr[FileTypes] = js.native
+    var fileTypes: js.UndefOr[FileTypes] = js.undefined
     
     /**
       * string or regexp to ignore from the injected filepath
       * @example:
       *  [ /jquery/, 'bower_components/modernizr/modernizr.js' ]
       */
-    var ignorePath: js.UndefOr[String | RegExp] = js.native
+    var ignorePath: js.UndefOr[String | RegExp] = js.undefined
     
     /**
       * Default: false
       */
-    var includeSelf: js.UndefOr[Boolean] = js.native
+    var includeSelf: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If not overridden, an error will throw
@@ -204,30 +202,30 @@ object mod {
       *  - "PKG_NOT_INSTALLED" (a Bower package was not found)
       *  - "BOWER_COMPONENTS_MISSING" (cannot find the `bower_components` directory)
       */
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
     /**
       * @param {string} filePath name of file that was updated
       */
-    var onFileUpdated: js.UndefOr[js.Function1[/* filePath */ String, Unit]] = js.native
+    var onFileUpdated: js.UndefOr[js.Function1[/* filePath */ String, Unit]] = js.undefined
     
     /**
       * @param {string} pkg name of bower package without main
       */
-    var onMainNotFound: js.UndefOr[js.Function1[/* pkg */ String, Unit]] = js.native
+    var onMainNotFound: js.UndefOr[js.Function1[/* pkg */ String, Unit]] = js.undefined
     
     /**
       * @param {FileObject} fileObject
       */
-    var onPathInjected: js.UndefOr[js.Function1[/* fileObject */ FileObject, Unit]] = js.native
+    var onPathInjected: js.UndefOr[js.Function1[/* fileObject */ FileObject, Unit]] = js.undefined
     
     /**
       *  This inline object offers another way to define your overrides if
       *  modifying your project's `bower.json` isn't an option.
       */
-    var overrides: js.UndefOr[js.Object] = js.native
+    var overrides: js.UndefOr[js.Object] = js.undefined
     
-    var src: js.UndefOr[String | js.Array[String]] = js.native
+    var src: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object WiredepParams {
     

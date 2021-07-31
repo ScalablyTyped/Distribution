@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "ExistsFilter")
 @js.native
-class ExistsFilter protected () extends Filter {
+class ExistsFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filters documents where a specified field exists and contains a value.
     */

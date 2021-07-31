@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueuesResponse extends StObject {
   
   /**
     * Use this string to request the next batch of queues.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * List of queues.
     */
-  var Queues: js.UndefOr[listOfQueue] = js.native
+  var Queues: js.UndefOr[listOfQueue] = js.undefined
 }
 object ListQueuesResponse {
   

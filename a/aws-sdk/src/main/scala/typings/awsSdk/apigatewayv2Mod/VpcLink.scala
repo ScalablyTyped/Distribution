@@ -2,56 +2,54 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcLink extends StObject {
   
   /**
     * The timestamp when the VPC link was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.native
+  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The name of the VPC link.
     */
-  var Name: StringWithLengthBetween1And128 = js.native
+  var Name: StringWithLengthBetween1And128
   
   /**
     * A list of security group IDs for the VPC link.
     */
-  var SecurityGroupIds: SecurityGroupIdList = js.native
+  var SecurityGroupIds: SecurityGroupIdList
   
   /**
     * A list of subnet IDs to include in the VPC link.
     */
-  var SubnetIds: SubnetIdList = js.native
+  var SubnetIds: SubnetIdList
   
   /**
     * Tags for the VPC link.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
   
   /**
     * The ID of the VPC link.
     */
-  var VpcLinkId: Id = js.native
+  var VpcLinkId: Id
   
   /**
     * The status of the VPC link.
     */
-  var VpcLinkStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.VpcLinkStatus] = js.native
+  var VpcLinkStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.VpcLinkStatus] = js.undefined
   
   /**
     * A message summarizing the cause of the status of the VPC link.
     */
-  var VpcLinkStatusMessage: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var VpcLinkStatusMessage: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
   
   /**
     * The version of the VPC link.
     */
-  var VpcLinkVersion: js.UndefOr[typings.awsSdk.apigatewayv2Mod.VpcLinkVersion] = js.native
+  var VpcLinkVersion: js.UndefOr[typings.awsSdk.apigatewayv2Mod.VpcLinkVersion] = js.undefined
 }
 object VpcLink {
   

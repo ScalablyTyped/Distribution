@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageBatchResult extends StObject {
   
   /**
     * A list of  BatchResultErrorEntry  items with error details about each message that can't be enqueued.
     */
-  var Failed: BatchResultErrorEntryList = js.native
+  var Failed: BatchResultErrorEntryList
   
   /**
     * A list of  SendMessageBatchResultEntry  items.
     */
-  var Successful: SendMessageBatchResultEntryList = js.native
+  var Successful: SendMessageBatchResultEntryList
 }
 object SendMessageBatchResult {
   

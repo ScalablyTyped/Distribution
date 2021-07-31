@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachments extends StObject {
   
-  var attachments: scala.Double = js.native
+  var attachments: scala.Double
   
-  var custom: scala.Double = js.native
+  var custom: scala.Double
   
-  var history: scala.Double = js.native
+  var history: scala.Double
   
-  var links: scala.Double = js.native
+  var links: scala.Double
 }
 object Attachments {
   

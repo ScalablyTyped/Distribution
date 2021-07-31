@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchViewModelSearchResult extends Object {
+trait SearchViewModelSearchResult
+  extends StObject
+     with Object {
   
   /**
     * The extent, or bounding box, of the returned feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
     */
-  var extent: Extent = js.native
+  var extent: Extent
   
   /**
     * The resulting feature or location obtained from the search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
     */
-  var feature: Graphic = js.native
+  var feature: Graphic
   
   /**
     * The name of the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
     */
-  var name: String = js.native
+  var name: String
 }
 object SearchViewModelSearchResult {
   

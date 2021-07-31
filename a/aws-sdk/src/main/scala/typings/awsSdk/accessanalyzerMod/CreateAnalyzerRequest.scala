@@ -2,36 +2,34 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnalyzerRequest extends StObject {
   
   /**
     * The name of the analyzer to create.
     */
-  var analyzerName: Name = js.native
+  var analyzerName: Name
   
   /**
     * Specifies the archive rules to add for the analyzer. Archive rules automatically archive findings that meet the criteria you define for the rule.
     */
-  var archiveRules: js.UndefOr[InlineArchiveRulesList] = js.native
+  var archiveRules: js.UndefOr[InlineArchiveRulesList] = js.undefined
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The tags to apply to the analyzer.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
     * The type of analyzer to create. Only ACCOUNT analyzers are supported. You can create only one analyzer per account per Region.
     */
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object CreateAnalyzerRequest {
   

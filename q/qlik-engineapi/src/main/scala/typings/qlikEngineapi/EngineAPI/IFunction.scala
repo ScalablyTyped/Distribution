@@ -2,30 +2,28 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Function...
   */
-@js.native
 trait IFunction extends StObject {
   
   /**
     * Group of the script function.
     */
-  var qGroup: FunctionGroupType = js.native
+  var qGroup: FunctionGroupType
   
   /**
     * Name of the script function.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Signature of the script function.
     * Gives general information about the function.
     */
-  var qSignature: String = js.native
+  var qSignature: String
 }
 object IFunction {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalSecondaryIndexAutoScalingUpdate extends StObject {
   
   /**
     * The name of the global secondary index.
     */
-  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.native
+  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.undefined
   
-  var ProvisionedWriteCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+  var ProvisionedWriteCapacityAutoScalingUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
 }
 object GlobalSecondaryIndexAutoScalingUpdate {
   

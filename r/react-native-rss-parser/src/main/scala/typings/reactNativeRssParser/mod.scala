@@ -8,43 +8,44 @@ import typings.reactNativeRssParser.anon.Name
 import typings.reactNativeRssParser.anon.Rel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-rss-parser", "parse")
+  @JSImport("react-native-rss-parser", JSImport.Namespace)
   @js.native
-  def parse(feedUrl: String): js.Promise[Feed] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(feedUrl: String): js.Promise[Feed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(feedUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Feed]]
+  
   trait Feed extends StObject {
     
-    var authors: js.Array[Maybe[Name]] = js.native
+    var authors: js.Array[Maybe[Name]]
     
-    var categories: js.Array[Maybe[Name]] = js.native
+    var categories: js.Array[Maybe[Name]]
     
-    var copyright: Maybe[String] = js.native
+    var copyright: Maybe[String]
     
-    var description: String = js.native
+    var description: String
     
-    var image: Description = js.native
+    var image: Description
     
-    var items: js.Array[FeedItem] = js.native
+    var items: js.Array[FeedItem]
     
-    var itunes: Block = js.native
+    var itunes: Block
     
-    var language: String = js.native
+    var language: String
     
-    var lastPublished: String = js.native
+    var lastPublished: String
     
-    var lastUpdated: String = js.native
+    var lastUpdated: String
     
-    var links: js.Array[Rel] = js.native
+    var links: js.Array[Rel]
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Feed {
     
@@ -127,28 +128,27 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedItem extends StObject {
     
-    var authors: js.Array[Maybe[Name]] = js.native
+    var authors: js.Array[Maybe[Name]]
     
-    var categories: js.Array[Maybe[Name]] = js.native
+    var categories: js.Array[Maybe[Name]]
     
-    var content: String = js.native
+    var content: String
     
-    var description: String = js.native
+    var description: String
     
-    var enclosures: js.Array[Length] = js.native
+    var enclosures: js.Array[Length]
     
-    var id: String = js.native
+    var id: String
     
-    var itunes: Authors = js.native
+    var itunes: Authors
     
-    var links: js.Array[Rel] = js.native
+    var links: js.Array[Rel]
     
-    var published: String = js.native
+    var published: String
     
-    var title: String = js.native
+    var title: String
   }
   object FeedItem {
     

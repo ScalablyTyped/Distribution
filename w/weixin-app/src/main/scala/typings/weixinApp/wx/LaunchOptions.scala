@@ -3,26 +3,24 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.ExtraData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchOptions extends StObject {
   
   /**
     * 打开小程序的路径
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * 打开小程序的query
     */
-  var query: js.Object = js.native
+  var query: js.Object
   
   /**
     * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
     */
-  var referrerInfo: ExtraData = js.native
+  var referrerInfo: ExtraData
   
   /**
     * 打开小程序的[场景值](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/scene.html)
@@ -97,12 +95,12 @@ trait LaunchOptions extends StObject {
     * - 1103: 发现栏小程序主入口，「我的小程序」列表（基础库2.2.4版本起废弃）
     * - 1104: 微信聊天主界面下拉，「我的小程序」栏（基础库2.2.4版本起废弃）
     */
-  var scene: SceneValues = js.native
+  var scene: SceneValues
   
   /**
     * shareTicket，详见 获取更多[转发信息](https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#获取更多转发信息)
     */
-  var shareTicket: String = js.native
+  var shareTicket: String
 }
 object LaunchOptions {
   

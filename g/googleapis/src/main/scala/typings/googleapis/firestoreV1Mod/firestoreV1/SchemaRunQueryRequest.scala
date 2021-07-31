@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Firestore.RunQuery.
   */
-@js.native
 trait SchemaRunQueryRequest extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait SchemaRunQueryRequest extends StObject {
     * transaction. The new transaction ID will be returned as the first
     * response in the stream.
     */
-  var newTransaction: js.UndefOr[SchemaTransactionOptions] = js.native
+  var newTransaction: js.UndefOr[SchemaTransactionOptions] = js.undefined
   
   /**
     * Reads documents as they were at the given time. This may not be older
     * than 60 seconds.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * A structured query.
     */
-  var structuredQuery: js.UndefOr[SchemaStructuredQuery] = js.native
+  var structuredQuery: js.UndefOr[SchemaStructuredQuery] = js.undefined
   
   /**
     * Reads documents in a transaction.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaRunQueryRequest {
   

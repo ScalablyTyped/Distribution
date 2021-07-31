@@ -3,23 +3,21 @@ package typings.karmaMochaReporter
 import typings.karmaMochaReporter.karmaMochaReporterBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
   /* Inlined {[ K in karma-mocha-reporter.karma.ReporterColor ]:? string} */
-  @js.native
   trait ColorOptions extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
   }
   object ColorOptions {
     
@@ -58,13 +56,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * {@link https://github.com/litixsoft/karma-mocha-reporter#options}
       */
-    var mochaReporter: js.UndefOr[MochaReporterOptions] = js.native
+    var mochaReporter: js.UndefOr[MochaReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -88,53 +85,52 @@ object mod {
   /**
     * Reporter options
     */
-  @js.native
   trait MochaReporterOptions extends StObject {
     
     /**
       * Lets you overwrite the default colors.
       * Possible values are all colors and background colors from chalk.
       */
-    var colors: js.UndefOr[ColorOptions] = js.native
+    var colors: js.UndefOr[ColorOptions] = js.undefined
     
     /** The string to output between multiple test runs. Set to false or empty string to disable */
-    var divider: js.UndefOr[String | `false`] = js.native
+    var divider: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * When setting the ignoreSkipped flag to true, the reporter will ignore the skipped tests in the output
       * and you will see only the tests that where really executed.
       * The summary will still contain the number of skipped tests.
       */
-    var ignoreSkipped: js.UndefOr[Boolean] = js.native
+    var ignoreSkipped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Lets you set the maximum number of lines which are printed for a failure.
       * The default value is 999. Helps to cut long stack traces. Set the value to -1 to disable stack traces.
       */
-    var maxLogLines: js.UndefOr[Double] = js.native
+    var maxLogLines: js.UndefOr[Double] = js.undefined
     
     /**
       * output type printed to the console
       */
-    var output: js.UndefOr[OutputOptions] = js.native
+    var output: js.UndefOr[OutputOptions] = js.undefined
     
     /**
       * Prints the result of an it block after it is run in one browser.
       * This options is useful when you have tests which are conditionally run in one browser only.
       * Otherwise the result of the it block would not be printed because it was not run in all browsers.
       */
-    var printFirstSuccess: js.UndefOr[Boolean] = js.native
+    var printFirstSuccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows a diff output. Is disabled by default.
       * All credits to the contributors of mocha, since the diff logic is used from there and customized for this modul
       */
-    var showDiff: js.UndefOr[ShowDiffOptions] = js.native
+    var showDiff: js.UndefOr[ShowDiffOptions] = js.undefined
     
     /**
       * Lets you overwrite the default symbols.
       */
-    var symbols: js.UndefOr[SymbolOptions] = js.native
+    var symbols: js.UndefOr[SymbolOptions] = js.undefined
   }
   object MochaReporterOptions {
     
@@ -260,16 +256,15 @@ object mod {
   }
   
   /* Inlined {[ K in karma-mocha-reporter.karma.ReporterColor ]:? string} */
-  @js.native
   trait SymbolOptions extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
   }
   object SymbolOptions {
     

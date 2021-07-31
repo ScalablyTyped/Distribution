@@ -2,17 +2,15 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepIntoParameterType extends StObject {
   
   /**
     * Debugger will issue additional Debugger.paused notification if any async task is scheduled before next pause.
     * @experimental
     */
-  var breakOnAsyncCall: js.UndefOr[Boolean] = js.native
+  var breakOnAsyncCall: js.UndefOr[Boolean] = js.undefined
 }
 object StepIntoParameterType {
   

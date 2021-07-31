@@ -3,38 +3,36 @@ package typings.sharp.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayOptions extends StObject {
   
   /** how to blend this image with the image below. (optional, default `'over'`) */
-  var blend: js.UndefOr[Blend] = js.native
+  var blend: js.UndefOr[Blend] = js.undefined
   
   /** number representing the DPI for vector overlay image. (optional, default 72) */
-  var density: js.UndefOr[Double] = js.native
+  var density: js.UndefOr[Double] = js.undefined
   
   /** gravity at which to place the overlay. (optional, default 'centre') */
-  var gravity: js.UndefOr[Gravity_] = js.native
+  var gravity: js.UndefOr[Gravity_] = js.undefined
   
   /** Buffer containing image data, String containing the path to an image file, or Create object  */
-  var input: js.UndefOr[String | Buffer | typings.sharp.anon.Create] = js.native
+  var input: js.UndefOr[String | Buffer | typings.sharp.anon.Create] = js.undefined
   
   /** the pixel offset from the left edge. */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /** Set to true to avoid premultipling the image below. Equivalent to the --premultiplied vips option. */
-  var premultiplied: js.UndefOr[Boolean] = js.native
+  var premultiplied: js.UndefOr[Boolean] = js.undefined
   
   /** describes overlay when using raw pixel data. */
-  var raw: js.UndefOr[Raw] = js.native
+  var raw: js.UndefOr[Raw] = js.undefined
   
   /** set to true to repeat the overlay image across the entire image with the given  gravity. (optional, default false) */
-  var tile: js.UndefOr[Boolean] = js.native
+  var tile: js.UndefOr[Boolean] = js.undefined
   
   /** the pixel offset from the top edge. */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object OverlayOptions {
   

@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.inputMod.apps.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DaemonSetCondition describes the state of a DaemonSet at a certain point.
   */
-@js.native
 trait DaemonSetCondition extends StObject {
   
   /**
     * Last time the condition transitioned from one status to another.
     */
-  var lastTransitionTime: js.UndefOr[Input[String]] = js.native
+  var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A human readable message indicating details about the transition.
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The reason for the condition's last transition.
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: Input[String] = js.native
+  var status: Input[String]
   
   /**
     * Type of DaemonSet condition.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object DaemonSetCondition {
   

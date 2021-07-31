@@ -12,26 +12,24 @@ import typings.rfc6902.rfc6902Strings.symbol
 import typings.rfc6902.rfc6902Strings.undefined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("rfc6902/util", "clone")
+  @JSImport("rfc6902/util", JSImport.Namespace)
   @js.native
-  def clone_[T /* <: js.Any */](source: T): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rfc6902/util", "hasOwnProperty")
-  @js.native
-  def hasOwnProperty_(v: String): Boolean = js.native
-  @JSImport("rfc6902/util", "hasOwnProperty")
-  @js.native
-  def hasOwnProperty_(v: js.Symbol): Boolean = js.native
-  @JSImport("rfc6902/util", "hasOwnProperty")
-  @js.native
-  def hasOwnProperty_(v: Double): Boolean = js.native
+  @scala.inline
+  def clone_[T /* <: js.Any */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("rfc6902/util", "objectType")
-  @js.native
-  def objectType(`object`: js.Any): string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array = js.native
+  @scala.inline
+  def hasOwnProperty_(v: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasOwnProperty_(v: js.Symbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasOwnProperty_(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def objectType(`object`: js.Any): string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array = ^.asInstanceOf[js.Dynamic].applyDynamic("objectType")(`object`.asInstanceOf[js.Any]).asInstanceOf[string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array]
 }

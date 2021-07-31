@@ -2,15 +2,14 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Point")
 @js.native
 class Point () extends StObject {
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
   
   @JSName("apply")
   def apply(func: js.Function1[/* v */ Double, Double]): Point = js.native

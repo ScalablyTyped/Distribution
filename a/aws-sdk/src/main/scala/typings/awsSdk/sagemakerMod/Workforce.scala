@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workforce extends StObject {
   
   /**
     * The configuration of an Amazon Cognito workforce. A single Cognito workforce is created using and corresponds to a single  Amazon Cognito user pool.
     */
-  var CognitoConfig: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoConfig] = js.native
+  var CognitoConfig: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoConfig] = js.undefined
   
   /**
     * The date that the workforce is created.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The most recent date that was used to successfully add one or more IP address ranges (CIDRs) to a private workforce's allow list.
     */
-  var LastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The configuration of an OIDC Identity Provider (IdP) private workforce.
     */
-  var OidcConfig: js.UndefOr[OidcConfigForResponse] = js.native
+  var OidcConfig: js.UndefOr[OidcConfigForResponse] = js.undefined
   
   /**
     * A list of one to ten IP address ranges (CIDRs) to be added to the workforce allow list. By default, a workforce isn't restricted to specific IP addresses.
     */
-  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.native
+  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.undefined
   
   /**
     * The subdomain for your OIDC Identity Provider.
     */
-  var SubDomain: js.UndefOr[String] = js.native
+  var SubDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the private workforce.
     */
-  var WorkforceArn: typings.awsSdk.sagemakerMod.WorkforceArn = js.native
+  var WorkforceArn: typings.awsSdk.sagemakerMod.WorkforceArn
   
   /**
     * The name of the private workforce.
     */
-  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
+  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
 }
 object Workforce {
   

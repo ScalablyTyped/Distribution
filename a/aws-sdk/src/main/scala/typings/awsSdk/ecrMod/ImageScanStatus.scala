@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageScanStatus extends StObject {
   
   /**
     * The description of the image scan status.
     */
-  var description: js.UndefOr[ScanStatusDescription] = js.native
+  var description: js.UndefOr[ScanStatusDescription] = js.undefined
   
   /**
     * The current state of an image scan.
     */
-  var status: js.UndefOr[ScanStatus] = js.native
+  var status: js.UndefOr[ScanStatus] = js.undefined
 }
 object ImageScanStatus {
   

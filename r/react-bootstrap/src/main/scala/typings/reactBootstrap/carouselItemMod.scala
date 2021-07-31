@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselItemMod {
@@ -18,21 +17,22 @@ object carouselItemMod {
   trait CarouselItem
     extends Component[CarouselItemProps, js.Object, js.Any]
   
-  @js.native
-  trait CarouselItemProps extends HTMLProps[CarouselItem] {
+  trait CarouselItemProps
+    extends StObject
+       with HTMLProps[CarouselItem] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var animateOut: js.UndefOr[Boolean] = js.native
+    var animateOut: js.UndefOr[Boolean] = js.undefined
     
-    var animtateIn: js.UndefOr[Boolean] = js.native
+    var animtateIn: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     // TODO: Add more specific type
-    var onAnimateOutEnd: js.UndefOr[js.Function] = js.native
+    var onAnimateOutEnd: js.UndefOr[js.Function] = js.undefined
   }
   object CarouselItemProps {
     

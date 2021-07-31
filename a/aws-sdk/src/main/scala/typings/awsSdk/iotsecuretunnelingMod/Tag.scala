@@ -2,21 +2,19 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key of the tag.
     */
-  var key: TagKey = js.native
+  var key: TagKey
   
   /**
     * The value of the tag.
     */
-  var value: TagValue = js.native
+  var value: TagValue
 }
 object Tag {
   

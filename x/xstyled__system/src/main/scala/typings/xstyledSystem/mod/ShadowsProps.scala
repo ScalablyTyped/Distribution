@@ -2,12 +2,11 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowsProps
-  extends BoxShadowProps
+  extends StObject
+     with BoxShadowProps
      with TextShadowProps
 object ShadowsProps {
   

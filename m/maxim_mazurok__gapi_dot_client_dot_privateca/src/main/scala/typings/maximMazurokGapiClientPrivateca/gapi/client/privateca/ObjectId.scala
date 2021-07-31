@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectId extends StObject {
   
   /** Required. The parts of an OID path. The most significant parts of the path come first. */
-  var objectIdPath: js.UndefOr[js.Array[Double]] = js.native
+  var objectIdPath: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ObjectId {
   

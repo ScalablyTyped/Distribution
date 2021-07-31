@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateServiceLastAccessedDetailsRequest extends StObject {
   
   /**
     * The ARN of the IAM resource (user, group, role, or managed policy) used to generate information about when the resource was last used in an attempt to access an AWS service.
     */
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The level of detail that you want to generate. You can specify whether you want to generate information about the last attempt to access services or actions. If you specify service-level granularity, this operation generates only service data. If you specify action-level granularity, it generates service and action data. If you don't include this optional parameter, the operation generates service data.
     */
-  var Granularity: js.UndefOr[AccessAdvisorUsageGranularityType] = js.native
+  var Granularity: js.UndefOr[AccessAdvisorUsageGranularityType] = js.undefined
 }
 object GenerateServiceLastAccessedDetailsRequest {
   

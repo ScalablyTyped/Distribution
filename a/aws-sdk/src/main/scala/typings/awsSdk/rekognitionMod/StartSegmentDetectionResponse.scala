@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSegmentDetectionResponse extends StObject {
   
   /**
     * Unique identifier for the segment detection job. The JobId is returned from StartSegmentDetection. 
     */
-  var JobId: js.UndefOr[typings.awsSdk.rekognitionMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.rekognitionMod.JobId] = js.undefined
 }
 object StartSegmentDetectionResponse {
   

@@ -4,25 +4,23 @@ import typings.ssri.mod.HashLike
 import typings.ssri.mod.IntegrityLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Integrity extends StObject {
   
-  var algorithms: js.UndefOr[js.Array[String]] = js.native
+  var algorithms: js.UndefOr[js.Array[String]] = js.undefined
   
-  var integrity: js.UndefOr[String | IntegrityLike | HashLike] = js.native
+  var integrity: js.UndefOr[String | IntegrityLike | HashLike] = js.undefined
   
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pickAlgorithm: js.UndefOr[js.Function2[/* algo1 */ String, /* algo2 */ String, String]] = js.native
+  var pickAlgorithm: js.UndefOr[js.Function2[/* algo1 */ String, /* algo2 */ String, String]] = js.undefined
   
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object Integrity {
   

@@ -6,29 +6,27 @@ import typings.antvDataSet.antvDataSetStrings.sankeyLeft
 import typings.antvDataSet.antvDataSetStrings.sankeyRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sankeyMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var nodeAlign: js.UndefOr[sankeyLeft | sankeyRight | sankeyCenter | sankeyJustify] = js.native
+    var nodeAlign: js.UndefOr[sankeyLeft | sankeyRight | sankeyCenter | sankeyJustify] = js.undefined
     
-    var nodeId: js.UndefOr[js.Function1[/* node */ js.Any, _]] = js.native
+    var nodeId: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
     
-    var nodePadding: js.UndefOr[Double] = js.native
+    var nodePadding: js.UndefOr[Double] = js.undefined
     
-    var nodeWidth: js.UndefOr[Double] = js.native
+    var nodeWidth: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[Null | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.native
+    var sort: js.UndefOr[Null | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
     
-    var source: js.UndefOr[js.Function1[/* edge */ js.Any, _]] = js.native
+    var source: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
     
-    var target: js.UndefOr[js.Function1[/* edge */ js.Any, _]] = js.native
+    var target: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
     
-    var value: js.UndefOr[js.Function1[/* node */ js.Any, _]] = js.native
+    var value: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
   }
   object Options {
     
@@ -48,7 +46,7 @@ object sankeyMod {
       def setNodeAlignUndefined: Self = StObject.set(x, "nodeAlign", js.undefined)
       
       @scala.inline
-      def setNodeId(value: /* node */ js.Any => _): Self = StObject.set(x, "nodeId", js.Any.fromFunction1(value))
+      def setNodeId(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "nodeId", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
@@ -75,19 +73,19 @@ object sankeyMod {
       def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
       @scala.inline
-      def setSource(value: /* edge */ js.Any => _): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
+      def setSource(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
       @scala.inline
-      def setTarget(value: /* edge */ js.Any => _): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
+      def setTarget(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
       @scala.inline
-      def setValue(value: /* node */ js.Any => _): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      def setValue(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

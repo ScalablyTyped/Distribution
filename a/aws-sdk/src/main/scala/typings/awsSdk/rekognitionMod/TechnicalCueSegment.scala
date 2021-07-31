@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TechnicalCueSegment extends StObject {
   
   /**
     * The confidence that Amazon Rekognition Video has in the accuracy of the detected segment.
     */
-  var Confidence: js.UndefOr[SegmentConfidence] = js.native
+  var Confidence: js.UndefOr[SegmentConfidence] = js.undefined
   
   /**
     * The type of the technical cue.
     */
-  var Type: js.UndefOr[TechnicalCueType] = js.native
+  var Type: js.UndefOr[TechnicalCueType] = js.undefined
 }
 object TechnicalCueSegment {
   

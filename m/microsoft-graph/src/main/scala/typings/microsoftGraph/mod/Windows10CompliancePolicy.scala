@@ -2,71 +2,71 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10CompliancePolicy extends DeviceCompliancePolicy {
+trait Windows10CompliancePolicy
+  extends StObject
+     with DeviceCompliancePolicy {
   
   // Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled
-  var bitLockerEnabled: js.UndefOr[Boolean] = js.native
+  var bitLockerEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Require devices to be reported as healthy by Windows Device Health Attestation.
-  var codeIntegrityEnabled: js.UndefOr[Boolean] = js.native
+  var codeIntegrityEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is
     * enabled.
     */
-  var earlyLaunchAntiMalwareDriverEnabled: js.UndefOr[Boolean] = js.native
+  var earlyLaunchAntiMalwareDriverEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Maximum Windows Phone version.
-  var mobileOsMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var mobileOsMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum Windows Phone version.
-  var mobileOsMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var mobileOsMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Maximum Windows 10 version.
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum Windows 10 version.
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to block simple password.
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // The password expiration in days.
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minimum password length.
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of previous passwords to prevent re-use of.
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Require a password to unlock Windows device.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // Require a password to unlock an idle device.
-  var passwordRequiredToUnlockFromIdle: js.UndefOr[Boolean] = js.native
+  var passwordRequiredToUnlockFromIdle: js.UndefOr[Boolean] = js.undefined
   
   // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // Require devices to be reported as healthy by Windows Device Health Attestation.
-  var requireHealthyDeviceReport: js.UndefOr[Boolean] = js.native
+  var requireHealthyDeviceReport: js.UndefOr[Boolean] = js.undefined
   
   // Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.
-  var secureBootEnabled: js.UndefOr[Boolean] = js.native
+  var secureBootEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Require encryption on windows devices.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
 }
 object Windows10CompliancePolicy {
   

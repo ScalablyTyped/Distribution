@@ -4,7 +4,6 @@ import typings.ol.extentMod.Extent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomToExtentMod {
@@ -15,18 +14,17 @@ object zoomToExtentMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var label: js.UndefOr[String | HTMLElement] = js.native
+    var label: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

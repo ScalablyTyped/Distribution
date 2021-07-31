@@ -2,84 +2,82 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetterContent extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AttentionLine: String = js.native
+  var AttentionLine: String
   
-  var CCList: String = js.native
+  var CCList: String
   
-  var Closing: String = js.native
+  var Closing: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DateFormat: String = js.native
+  var DateFormat: String
   
-  val Duplicate: LetterContent = js.native
+  val Duplicate: LetterContent
   
-  var EnclosureNumber: Double = js.native
+  var EnclosureNumber: Double
   
-  var IncludeHeaderFooter: Boolean = js.native
+  var IncludeHeaderFooter: Boolean
   
-  var InfoBlock: Boolean = js.native
+  var InfoBlock: Boolean
   
-  var LetterStyle: WdLetterStyle = js.native
+  var LetterStyle: WdLetterStyle
   
-  var Letterhead: Boolean = js.native
+  var Letterhead: Boolean
   
-  var LetterheadLocation: WdLetterheadLocation = js.native
+  var LetterheadLocation: WdLetterheadLocation
   
-  var LetterheadSize: Double = js.native
+  var LetterheadSize: Double
   
-  var MailingInstructions: String = js.native
+  var MailingInstructions: String
   
-  var PageDesign: String = js.native
+  var PageDesign: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RecipientAddress: String = js.native
+  var RecipientAddress: String
   
-  var RecipientCode: String = js.native
+  var RecipientCode: String
   
-  var RecipientGender: WdSalutationGender = js.native
+  var RecipientGender: WdSalutationGender
   
-  var RecipientName: String = js.native
+  var RecipientName: String
   
-  var RecipientReference: String = js.native
+  var RecipientReference: String
   
-  var ReturnAddress: String = js.native
+  var ReturnAddress: String
   
-  var ReturnAddressShortForm: String = js.native
+  var ReturnAddressShortForm: String
   
-  var Salutation: String = js.native
+  var Salutation: String
   
-  var SalutationType: WdSalutationType = js.native
+  var SalutationType: WdSalutationType
   
-  var SenderCity: String = js.native
+  var SenderCity: String
   
-  var SenderCode: String = js.native
+  var SenderCode: String
   
-  var SenderCompany: String = js.native
+  var SenderCompany: String
   
-  var SenderGender: WdSalutationGender = js.native
+  var SenderGender: WdSalutationGender
   
-  var SenderInitials: String = js.native
+  var SenderInitials: String
   
-  var SenderJobTitle: String = js.native
+  var SenderJobTitle: String
   
-  var SenderName: String = js.native
+  var SenderName: String
   
-  var SenderReference: String = js.native
+  var SenderReference: String
   
-  var Subject: String = js.native
+  var Subject: String
   
   @JSName("Word.LetterContent_typekey")
-  var WordDotLetterContent_typekey: LetterContent = js.native
+  var WordDotLetterContent_typekey: LetterContent
 }
 object LetterContent {
   

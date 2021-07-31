@@ -3,7 +3,6 @@ package typings.angularNotifications
 import typings.angular.mod.IModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,12 +10,11 @@ object mod {
   
   object notifications {
     
-    @js.native
     trait IAnimation extends StObject {
       
-      var duration: Double = js.native
+      var duration: Double
       
-      var enabled: Boolean = js.native
+      var enabled: Boolean
     }
     object IAnimation {
       
@@ -37,22 +35,21 @@ object mod {
       }
     }
     
-    @js.native
     trait INotification extends StObject {
       
-      var content: String = js.native
+      var content: String
       
-      var icon: String = js.native
+      var icon: String
       
-      var image: String = js.native
+      var image: String
       
-      var timestamp: String = js.native
+      var timestamp: String
       
-      var title: String = js.native
+      var title: String
       
-      var `type`: String = js.native
+      var `type`: String
       
-      var userData: String = js.native
+      var userData: String
     }
     object INotification {
       
@@ -98,7 +95,9 @@ object mod {
     }
     
     @js.native
-    trait INotificationFactory extends IModule {
+    trait INotificationFactory
+      extends StObject
+         with IModule {
       
       def awesomeNotify(`type`: String, icon: String, title: String, content: String, userData: js.Any): INotification = js.native
       
@@ -153,28 +152,27 @@ object mod {
       def warning(title: String, content: String, userData: js.Any): INotification = js.native
     }
     
-    @js.native
     trait ISettings extends StObject {
       
-      var custom: IAnimation = js.native
+      var custom: IAnimation
       
-      var details: Boolean = js.native
+      var details: Boolean
       
-      var error: IAnimation = js.native
+      var error: IAnimation
       
-      var html5DefaultIcon: String = js.native
+      var html5DefaultIcon: String
       
-      var html5Mode: Boolean = js.native
+      var html5Mode: Boolean
       
-      var info: IAnimation = js.native
+      var info: IAnimation
       
-      var localStorage: Boolean = js.native
+      var localStorage: Boolean
       
-      var progress: IAnimation = js.native
+      var progress: IAnimation
       
-      var success: IAnimation = js.native
+      var success: IAnimation
       
-      var warning: IAnimation = js.native
+      var warning: IAnimation
     }
     object ISettings {
       

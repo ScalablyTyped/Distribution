@@ -2,25 +2,23 @@ package typings.domSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialPortInfoBase extends StObject {
   
-  var locationId: String = js.native
+  var locationId: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var product: String = js.native
+  var product: String
   
-  var productId: String = js.native
+  var productId: String
   
-  var serialNumber: String = js.native
+  var serialNumber: String
   
-  var vendor: String = js.native
+  var vendor: String
   
-  var vendorId: String = js.native
+  var vendorId: String
 }
 object SerialPortInfoBase {
   

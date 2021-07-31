@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersTime extends StObject {
   
   /**
     * ISO 8601 representation of time indicator: could be a duration, date or
     * exact datetime.
     */
-  var timeIso8601: js.UndefOr[String] = js.native
+  var timeIso8601: js.UndefOr[String] = js.undefined
   
   /**
     * Type of time indicator.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersTimeType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersTimeType] = js.undefined
 }
 object GoogleActionsV2OrdersTime {
   

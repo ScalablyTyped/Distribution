@@ -2,13 +2,11 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEngineDefaultClusterParametersResult extends StObject {
   
-  var EngineDefaults: js.UndefOr[typings.awsSdk.neptuneMod.EngineDefaults] = js.native
+  var EngineDefaults: js.UndefOr[typings.awsSdk.neptuneMod.EngineDefaults] = js.undefined
 }
 object DescribeEngineDefaultClusterParametersResult {
   

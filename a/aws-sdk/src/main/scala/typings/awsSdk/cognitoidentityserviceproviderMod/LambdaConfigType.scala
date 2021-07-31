@@ -2,61 +2,59 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaConfigType extends StObject {
   
   /**
     * Creates an authentication challenge.
     */
-  var CreateAuthChallenge: js.UndefOr[ArnType] = js.native
+  var CreateAuthChallenge: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A custom Message AWS Lambda trigger.
     */
-  var CustomMessage: js.UndefOr[ArnType] = js.native
+  var CustomMessage: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Defines the authentication challenge.
     */
-  var DefineAuthChallenge: js.UndefOr[ArnType] = js.native
+  var DefineAuthChallenge: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A post-authentication AWS Lambda trigger.
     */
-  var PostAuthentication: js.UndefOr[ArnType] = js.native
+  var PostAuthentication: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A post-confirmation AWS Lambda trigger.
     */
-  var PostConfirmation: js.UndefOr[ArnType] = js.native
+  var PostConfirmation: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A pre-authentication AWS Lambda trigger.
     */
-  var PreAuthentication: js.UndefOr[ArnType] = js.native
+  var PreAuthentication: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A pre-registration AWS Lambda trigger.
     */
-  var PreSignUp: js.UndefOr[ArnType] = js.native
+  var PreSignUp: js.UndefOr[ArnType] = js.undefined
   
   /**
     * A Lambda trigger that is invoked before token generation.
     */
-  var PreTokenGeneration: js.UndefOr[ArnType] = js.native
+  var PreTokenGeneration: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The user migration Lambda config type.
     */
-  var UserMigration: js.UndefOr[ArnType] = js.native
+  var UserMigration: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Verifies the authentication challenge response.
     */
-  var VerifyAuthChallengeResponse: js.UndefOr[ArnType] = js.native
+  var VerifyAuthChallengeResponse: js.UndefOr[ArnType] = js.undefined
 }
 object LambdaConfigType {
   

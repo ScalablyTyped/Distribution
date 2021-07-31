@@ -2,26 +2,24 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing all details associated with a given filtered
   * bid reason.
   */
-@js.native
 trait SchemaListCreativeStatusBreakdownByDetailResponse extends StObject {
   
   /**
     * The type of detail that the detail IDs represent.
     */
-  var detailType: js.UndefOr[String] = js.native
+  var detailType: js.UndefOr[String] = js.undefined
   
   /**
     * List of rows, with counts of bids with a given creative status aggregated
     * by detail.
     */
-  var filteredBidDetailRows: js.UndefOr[js.Array[SchemaFilteredBidDetailRow]] = js.native
+  var filteredBidDetailRows: js.UndefOr[js.Array[SchemaFilteredBidDetailRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
@@ -29,7 +27,7 @@ trait SchemaListCreativeStatusBreakdownByDetailResponse extends StObject {
     * subsequent call to the filteredBids.details.list method to retrieve the
     * next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListCreativeStatusBreakdownByDetailResponse {
   

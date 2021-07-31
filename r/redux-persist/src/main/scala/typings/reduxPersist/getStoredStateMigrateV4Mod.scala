@@ -4,27 +4,34 @@ import typings.reduxPersist.typesMod.PersistConfig
 import typings.reduxPersist.typesMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getStoredStateMigrateV4Mod {
   
-  @JSImport("redux-persist/es/integration/getStoredStateMigrateV4", JSImport.Default)
+  @JSImport("redux-persist/es/integration/getStoredStateMigrateV4", JSImport.Namespace)
   @js.native
-  def default(v4Config: V4Config): js.Function1[/* config */ PersistConfig[_, _, _, _], js.Promise[js.UndefOr[js.Object]]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(v4Config: V4Config): js.Function1[
+    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
+    js.Promise[js.UndefOr[js.Object]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v4Config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
+    js.Promise[js.UndefOr[js.Object]]
+  ]]
+  
   trait V4Config extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keyPrefix: js.UndefOr[String] = js.native
+    var keyPrefix: js.UndefOr[String] = js.undefined
     
-    var storage: js.UndefOr[V4Storage] = js.native
+    var storage: js.UndefOr[V4Storage] = js.undefined
     
-    var transforms: js.UndefOr[js.Array[Transform[_, _, _, _]]] = js.native
+    var transforms: js.UndefOr[js.Array[Transform[js.Any, js.Any, js.Any, js.Any]]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object V4Config {
     
@@ -59,7 +66,7 @@ object getStoredStateMigrateV4Mod {
       def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
       @scala.inline
-      def setTransforms(value: js.Array[Transform[_, _, _, _]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      def setTransforms(value: js.Array[Transform[js.Any, js.Any, js.Any, js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
@@ -78,23 +85,28 @@ object getStoredStateMigrateV4Mod {
     }
   }
   
-  @js.native
   trait V4Storage extends StObject {
     
     var getAllKeys: js.UndefOr[
-        js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], _], _]
-      ] = js.native
+        js.Function1[
+          /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
     
     var getItem: js.UndefOr[
         js.Function1[
-          /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], _], 
-          _
+          /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], js.Any], 
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var keys: js.UndefOr[
-        js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], _], _]
-      ] = js.native
+        js.Function1[
+          /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
   }
   object V4Storage {
     
@@ -108,19 +120,21 @@ object getStoredStateMigrateV4Mod {
     implicit class V4StorageMutableBuilder[Self <: V4Storage] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetAllKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], _] => _): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction1(value))
+      def setGetAllKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any] => js.Any): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetAllKeysUndefined: Self = StObject.set(x, "getAllKeys", js.undefined)
       
       @scala.inline
-      def setGetItem(value: /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], _] => _): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      def setGetItem(
+        value: /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], js.Any] => js.Any
+      ): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetItemUndefined: Self = StObject.set(x, "getItem", js.undefined)
       
       @scala.inline
-      def setKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], _] => _): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+      def setKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any] => js.Any): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
       
       @scala.inline
       def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)

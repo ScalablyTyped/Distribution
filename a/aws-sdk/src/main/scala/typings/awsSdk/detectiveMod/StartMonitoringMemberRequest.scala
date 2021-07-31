@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMonitoringMemberRequest extends StObject {
   
   /**
     * The account ID of the member account to try to enable. The account must be an invited member account with a status of ACCEPTED_BUT_DISABLED. 
     */
-  var AccountId: typings.awsSdk.detectiveMod.AccountId = js.native
+  var AccountId: typings.awsSdk.detectiveMod.AccountId
   
   /**
     * The ARN of the behavior graph.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
 object StartMonitoringMemberRequest {
   

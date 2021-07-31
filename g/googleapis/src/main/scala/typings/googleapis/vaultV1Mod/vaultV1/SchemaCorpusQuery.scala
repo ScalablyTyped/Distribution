@@ -2,35 +2,33 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Corpus specific queries.
   */
-@js.native
 trait SchemaCorpusQuery extends StObject {
   
   /**
     * Details pertaining to Drive holds. If set, corpus must be Drive.
     */
-  var driveQuery: js.UndefOr[SchemaHeldDriveQuery] = js.native
+  var driveQuery: js.UndefOr[SchemaHeldDriveQuery] = js.undefined
   
   /**
     * Details pertaining to Groups holds. If set, corpus must be Groups.
     */
-  var groupsQuery: js.UndefOr[SchemaHeldGroupsQuery] = js.native
+  var groupsQuery: js.UndefOr[SchemaHeldGroupsQuery] = js.undefined
   
   /**
     * Details pertaining to Hangouts Chat holds. If set, corpus must be
     * Hangouts Chat.
     */
-  var hangoutsChatQuery: js.UndefOr[SchemaHeldHangoutsChatQuery] = js.native
+  var hangoutsChatQuery: js.UndefOr[SchemaHeldHangoutsChatQuery] = js.undefined
   
   /**
     * Details pertaining to mail holds. If set, corpus must be mail.
     */
-  var mailQuery: js.UndefOr[SchemaHeldMailQuery] = js.native
+  var mailQuery: js.UndefOr[SchemaHeldMailQuery] = js.undefined
 }
 object SchemaCorpusQuery {
   

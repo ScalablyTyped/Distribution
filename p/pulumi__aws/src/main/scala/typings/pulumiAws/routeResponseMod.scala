@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeResponseMod {
@@ -54,6 +53,10 @@ object routeResponseMod {
   /* static members */
   object RouteResponse {
     
+    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteResponse resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object routeResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RouteResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RouteResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteResponseState): RouteResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteResponseState, opts: CustomResourceOptions): RouteResponse = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteResponseState): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteResponseState, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
     
     /**
       * Returns true if the given object is an instance of RouteResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/routeResponse", "RouteResponse.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean]
   }
   
-  @js.native
   trait RouteResponseArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions) for the route response.
       */
-    val modelSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val modelSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The response models for the route response.
       */
-    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Route`.
       */
-    val routeId: Input[String] = js.native
+    val routeId: Input[String]
     
     /**
       * The route response key.
       */
-    val routeResponseKey: Input[String] = js.native
+    val routeResponseKey: Input[String]
   }
   object RouteResponseArgs {
     
@@ -147,33 +144,32 @@ object routeResponseMod {
     }
   }
   
-  @js.native
   trait RouteResponseState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions) for the route response.
       */
-    val modelSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val modelSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The response models for the route response.
       */
-    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Route`.
       */
-    val routeId: js.UndefOr[Input[String]] = js.native
+    val routeId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The route response key.
       */
-    val routeResponseKey: js.UndefOr[Input[String]] = js.native
+    val routeResponseKey: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteResponseState {
     

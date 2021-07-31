@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,103 +16,102 @@ object mod {
   trait EdiText
     extends Component[EdiTextProps, js.Any, js.Any]
   
-  @js.native
   trait EdiTextProps extends StObject {
     
     /**
       * Custom class name for CANCEL button.
       */
-    var cancelButtonClassName: js.UndefOr[String] = js.native
+    var cancelButtonClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Content for CANCEL button. Any valid element and node are allowed.
       */
-    var cancelButtonContent: js.UndefOr[js.Any] = js.native
+    var cancelButtonContent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Custom class name for EDIT button.
       */
-    var editButtonClassName: js.UndefOr[String] = js.native
+    var editButtonClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Content for EDIT button. Any valid element and node are allowed.
       */
-    var editButtonContent: js.UndefOr[js.Any] = js.native
+    var editButtonContent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set it to `true` if you don't want to see default icons
       * on action buttons.See Examples page for more details.
       */
-    var hideIcons: js.UndefOr[Boolean] = js.native
+    var hideIcons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A simple hint message appears at the bottom of input element.
       * Any valid element is allowed.
       */
-    var hint: js.UndefOr[ReactNode] = js.native
+    var hint: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Props to be passed to input element.
       * Any kind of valid DOM attributes are welcome
       */
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * will be called when user clicked cancel button
       */
-    var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
     /**
       * will be called when user clicked save button.
       * takes one param <value> which is the current value of input
       */
-    def onSave(args: String*): js.Any = js.native
+    def onSave(args: String*): js.Any
     
     /**
       * will be called when validation fails.
       * takes one param <value> which is the current value of input
       */
-    var onValidationFail: js.UndefOr[js.Function1[/* repeated */ String, _]] = js.native
+    var onValidationFail: js.UndefOr[js.Function1[/* repeated */ String, js.Any]] = js.undefined
     
     /**
       * Custom class name for SAVE button.
       */
-    var saveButtonClassName: js.UndefOr[String] = js.native
+    var saveButtonClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Content for SAVE button. Any valid element and node are allowed.
       */
-    var saveButtonContent: js.UndefOr[js.Any] = js.native
+    var saveButtonContent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Input type. Possible options are:
       * `text`, `number`, `email`, `textarea`, `date`,
       * `datetime-local`, `time`, `month`, `url`, `week`, `tel`
       */
-    var `type`: EdiTextType = js.native
+    var `type`: EdiTextType
     
     /**
       * Pass your own validation function.
       * takes one param -> `value`.
       * It must return `true` or `false`
       */
-    var validation: js.UndefOr[js.Function1[/* repeated */ String, Boolean]] = js.native
+    var validation: js.UndefOr[js.Function1[/* repeated */ String, Boolean]] = js.undefined
     
     /**
       * If validation fails this message will appear
       */
-    var validationMessage: js.UndefOr[String] = js.native
+    var validationMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Value of the content [in view mode] and input [in edit mode]
       */
-    var value: String = js.native
+    var value: String
     
     /**
       * Props to be passed to div element that shows the text.
       * You can specify your own `styles` or `className`
       */
-    var viewProps: js.UndefOr[js.Object] = js.native
+    var viewProps: js.UndefOr[js.Object] = js.undefined
   }
   object EdiTextProps {
     
@@ -170,7 +168,7 @@ object mod {
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
       @scala.inline
-      def setOnCancel(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      def setOnCancel(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
@@ -179,7 +177,7 @@ object mod {
       def setOnSave(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnValidationFail(value: /* repeated */ String => _): Self = StObject.set(x, "onValidationFail", js.Any.fromFunction1(value))
+      def setOnValidationFail(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onValidationFail", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValidationFailUndefined: Self = StObject.set(x, "onValidationFail", js.undefined)

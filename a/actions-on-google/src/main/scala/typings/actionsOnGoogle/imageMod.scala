@@ -3,14 +3,15 @@ package typings.actionsOnGoogle
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/image", "Image")
   @js.native
-  class Image protected () extends GoogleActionsV2UiElementsImage {
+  class Image protected ()
+    extends StObject
+       with GoogleActionsV2UiElementsImage {
     /**
       * @param options Image options
       * @public
@@ -18,32 +19,31 @@ object imageMod {
     def this(option: ImageOptions) = this()
   }
   
-  @js.native
   trait ImageOptions extends StObject {
     
     /**
       * Text to replace for image for accessibility.
       * @public
       */
-    var alt: String = js.native
+    var alt: String
     
     /**
       * Height of the image.
       * @public
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Image source URL.
       * @public
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * Width of the image.
       * @public
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ImageOptions {
     

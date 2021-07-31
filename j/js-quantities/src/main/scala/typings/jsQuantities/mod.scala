@@ -5,19 +5,20 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("js-quantities", JSImport.Namespace)
   @js.native
-  val ^ : Type = js.native
+  val ^ : js.Object & Type = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("js-quantities", JSImport.Namespace)
   @js.native
-  class Class protected () extends Qty {
+  class Class protected ()
+    extends StObject
+       with Qty {
     def this(value: Source) = this()
     def this(value: Double, unit: String) = this()
   }
@@ -61,8 +62,6 @@ object mod extends Shortcut {
     val denominator: js.Array[String] = js.native
     
     def div(value: Source): Qty = js.native
-    
-    def eq(value: UnitSource): Boolean = js.native
     
     def format(): String = js.native
     def format(formatter: Formatter): String = js.native
@@ -117,7 +116,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Type
-    extends Instantiable1[/* value */ Source, Qty]
+    extends StObject
+       with Instantiable1[/* value */ Source, Qty]
        with Instantiable2[/* value */ Double, /* unit */ String, Qty] {
     
     def apply(value: Double, unit: String): Qty = js.native
@@ -147,8 +147,8 @@ object mod extends Shortcut {
   
   type UnitSource = Qty | String
   
-  type _To = Type
+  type _To = js.Object & Type
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Type = ^
+  override def _to: js.Object & Type = ^
 }

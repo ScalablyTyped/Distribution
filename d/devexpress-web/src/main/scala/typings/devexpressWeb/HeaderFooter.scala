@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings defining a header or footer in a document.
   */
-@js.native
 trait HeaderFooter extends StObject {
   
   /**
     * Provides access to an object implementing the basic document functionality that is common to the header, footer and the main document body.
     */
-  val subDocument: SubDocument = js.native
+  val subDocument: SubDocument
   
   /**
     * Gets the type of the header (footer).
     */
-  val `type`: HeaderFooterType = js.native
+  val `type`: HeaderFooterType
 }
 object HeaderFooter {
   

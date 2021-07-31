@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientUpdateResponse extends StObject {
   
   /**
@@ -13,31 +11,31 @@ trait RecipientUpdateResponse extends StObject {
     * When set to **true**, it indicates that the recipient has been combined or merged with a matching recipient. Recipient matching occurs as part of template matching,
     * and is based on Recipient Role and Routing Order.
     */
-  var combined: js.UndefOr[String] = js.native
+  var combined: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId` must be
     * unique, but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The globally-unique identifier (GUID) for a specific recipient on a specific envelope. If the same recipient is associated with multiple envelopes,
     * they will have a different GUID for each one. Read only.
     */
-  var recipientIdGuid: js.UndefOr[String] = js.native
+  var recipientIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * All of the tabs associated with the recipient.
     */
-  var tabs: js.UndefOr[EnvelopeRecipientTabs] = js.native
+  var tabs: js.UndefOr[EnvelopeRecipientTabs] = js.undefined
 }
 object RecipientUpdateResponse {
   

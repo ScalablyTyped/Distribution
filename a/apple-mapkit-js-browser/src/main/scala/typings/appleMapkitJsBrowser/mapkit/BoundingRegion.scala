@@ -2,45 +2,43 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rectangular area on a map, defined by coordinates of the rectangle's
   * northeast and southwest corners.
   */
-@js.native
 trait BoundingRegion extends StObject {
   
   /**
     * Returns a copy of the calling bounding region.
     */
-  def copy(): BoundingRegion = js.native
+  def copy(): BoundingRegion
   
   /**
     * The east longitude of the bounding region.
     */
-  var eastLongitude: Double = js.native
+  var eastLongitude: Double
   
   /**
     * The north latitude of the bounding region.
     */
-  var northLatitude: Double = js.native
+  var northLatitude: Double
   
   /**
     * The south latitude of the bounding region.
     */
-  var southLatitude: Double = js.native
+  var southLatitude: Double
   
   /**
     * Returns the coordinate region that corresponds to the calling bounding region.
     */
-  def toCoordinateRegion(): CoordinateRegion = js.native
+  def toCoordinateRegion(): CoordinateRegion
   
   /**
     * The west longitude of the bounding region.
     */
-  var westLongitude: Double = js.native
+  var westLongitude: Double
 }
 object BoundingRegion {
   

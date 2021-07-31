@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SymbolKeepAspect extends js.Object {
+trait SymbolKeepAspect extends StObject {
   
   /**
     * Mark point style.
@@ -13,12 +12,12 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.native
+  var itemStyle: js.UndefOr[Emphasis] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.label
     */
-  var label: js.UndefOr[FontFamily] = js.native
+  var label: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Mark point name.
@@ -28,7 +27,7 @@ trait SymbolKeepAspect extends js.Object {
     * ''
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Symbol of .
@@ -69,7 +68,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbol
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
@@ -77,7 +76,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Offset of symbol relative to original position.
@@ -100,7 +99,7 @@ trait SymbolKeepAspect extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Rotate degree of symbol.
@@ -111,7 +110,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.native
+  var symbolRotate: js.UndefOr[Double] = js.undefined
   
   /**
     * symbol size.
@@ -123,7 +122,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
   
   /**
     * Label value, which can be ignored.
@@ -131,7 +130,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.value
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * X position according to container, in pixel.
@@ -139,7 +138,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.x
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Y position according to container, in pixel.
@@ -147,7 +146,7 @@ trait SymbolKeepAspect extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data.y
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object SymbolKeepAspect {
   
@@ -158,90 +157,78 @@ object SymbolKeepAspect {
   }
   
   @scala.inline
-  implicit class SymbolKeepAspectOps[Self <: SymbolKeepAspect] (val x: Self) extends AnyVal {
+  implicit class SymbolKeepAspectMutableBuilder[Self <: SymbolKeepAspect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: Emphasis): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: FontFamily): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSymbolKeepAspect(value: Boolean): Self = StObject.set(x, "symbolKeepAspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
     
     @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
     
     @scala.inline
-    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
     
     @scala.inline
-    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
     @scala.inline
-    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolSize(value: js.Array[_] | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

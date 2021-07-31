@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseEnvironmentDefinitionReference extends StObject {
   
-  var definitionId: Double = js.native
+  var definitionId: Double
   
-  var environmentDefinitionId: Double = js.native
+  var environmentDefinitionId: Double
 }
 object ReleaseEnvironmentDefinitionReference {
   

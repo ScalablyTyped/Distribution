@@ -3,46 +3,85 @@ package typings.whatwgUrl
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlImplMod {
   
   @JSImport("whatwg-url/lib/URL-impl", "implementation")
   @js.native
-  class implementation protected () extends URLImpl {
+  class implementation protected ()
+    extends StObject
+       with URLImpl {
     def this(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]]) = this()
     def this(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]], privateData: js.Object) = this()
-  }
-  
-  @js.native
-  trait URLImpl extends StObject {
     
+    /* CompleteClass */
     var hash: String = js.native
     
+    /* CompleteClass */
     var host: String = js.native
     
+    /* CompleteClass */
     var hostname: String = js.native
     
+    /* CompleteClass */
     var href: String = js.native
     
-    val origin: String = js.native
+    /* CompleteClass */
+    override val origin: String = js.native
     
+    /* CompleteClass */
     var password: String = js.native
     
+    /* CompleteClass */
     var pathname: String = js.native
     
+    /* CompleteClass */
     var port: String = js.native
     
+    /* CompleteClass */
     var protocol: String = js.native
     
+    /* CompleteClass */
     var search: String = js.native
     
-    val searchParams: URLSearchParams = js.native
+    /* CompleteClass */
+    override val searchParams: URLSearchParams = js.native
     
-    def toJSON(): String = js.native
+    /* CompleteClass */
+    override def toJSON(): String = js.native
     
+    /* CompleteClass */
     var username: String = js.native
+  }
+  
+  trait URLImpl extends StObject {
+    
+    var hash: String
+    
+    var host: String
+    
+    var hostname: String
+    
+    var href: String
+    
+    val origin: String
+    
+    var password: String
+    
+    var pathname: String
+    
+    var port: String
+    
+    var protocol: String
+    
+    var search: String
+    
+    val searchParams: URLSearchParams
+    
+    def toJSON(): String
+    
+    var username: String
   }
   object URLImpl {
     

@@ -2,58 +2,56 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAclEgress extends StObject {
   
   /**
     * The action to take.
     */
-  var action: String = js.native
+  var action: String
   
   /**
     * The CIDR block to match. This must be a
     * valid network mask.
     */
-  var cidrBlock: js.UndefOr[String] = js.native
+  var cidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The from port to match.
     */
-  var fromPort: Double = js.native
+  var fromPort: Double
   
   /**
     * The ICMP type code to be used. Default 0.
     */
-  var icmpCode: js.UndefOr[Double] = js.native
+  var icmpCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The ICMP type to be used. Default 0.
     */
-  var icmpType: js.UndefOr[Double] = js.native
+  var icmpType: js.UndefOr[Double] = js.undefined
   
   /**
     * The IPv6 CIDR block.
     */
-  var ipv6CidrBlock: js.UndefOr[String] = js.native
+  var ipv6CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The protocol to match. If using the -1 'all'
     * protocol, you must specify a from and to port of 0.
     */
-  var protocol: String = js.native
+  var protocol: String
   
   /**
     * The rule number. Used for ordering.
     */
-  var ruleNo: Double = js.native
+  var ruleNo: Double
   
   /**
     * The to port to match.
     */
-  var toPort: Double = js.native
+  var toPort: Double
 }
 object NetworkAclEgress {
   

@@ -11,15 +11,13 @@ import typings.reactVis.reactVisStrings.top
 import typings.reactVis.reactVisStrings.topEdge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vertical extends StObject {
   
-  var horizontal: js.UndefOr[auto | left | right | leftEdge | rightEdge] = js.native
+  var horizontal: js.UndefOr[auto | left | right | leftEdge | rightEdge] = js.undefined
   
-  var vertical: js.UndefOr[auto | bottom | top | bottomEdge | topEdge] = js.native
+  var vertical: js.UndefOr[auto | bottom | top | bottomEdge | topEdge] = js.undefined
 }
 object Vertical {
   

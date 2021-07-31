@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firestoreMod {
+  
+  @JSImport("googleapis/build/src/apis/firestore", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -118,9 +121,12 @@ object firestoreMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/firestore", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/firestore", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -164,22 +170,19 @@ object firestoreMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore(options: Options): Firestore = js.native
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore(options: typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Options): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = js.native
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore(options: typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Options): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = js.native
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore_v1(version: v1): Firestore = js.native
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore_v1beta1(version: v1beta1): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = js.native
-  @JSImport("googleapis/build/src/apis/firestore", "firestore")
-  @js.native
-  def firestore_v1beta2(version: v1beta2): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = js.native
+  @scala.inline
+  def firestore(options: Options): Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(options.asInstanceOf[js.Any]).asInstanceOf[Firestore]
+  @scala.inline
+  def firestore(options: typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Options): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore]
+  @scala.inline
+  def firestore(options: typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Options): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore]
+  
+  @scala.inline
+  def firestore_v1(version: v1): Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(version.asInstanceOf[js.Any]).asInstanceOf[Firestore]
+  
+  @scala.inline
+  def firestore_v1beta1(version: v1beta1): typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore]
+  
+  @scala.inline
+  def firestore_v1beta2(version: v1beta2): typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore = ^.asInstanceOf[js.Dynamic].applyDynamic("firestore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore]
 }

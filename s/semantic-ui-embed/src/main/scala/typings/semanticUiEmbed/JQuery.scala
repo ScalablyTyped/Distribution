@@ -48,138 +48,146 @@ import typings.semanticUiEmbed.semanticUiEmbedStrings.url
 import typings.semanticUiEmbed.semanticUiEmbedStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def embed(): JQuery = js.native
-  def embed(behavior: setting, name: autoplay, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
-  def embed(behavior: setting, name: autoplay, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: autoplay, value: auto): JQuery = js.native
-  def embed(behavior: setting, name: brandedUI, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: brandedUI, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def embed(behavior: setting, name: color, value: js.UndefOr[scala.Nothing]): String = js.native
-  def embed(behavior: setting, name: color, value: String): JQuery = js.native
-  def embed(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def embed(behavior: setting, name: hd, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: hd, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: icon, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def embed(behavior: setting, name: icon, value: String): JQuery = js.native
-  def embed(behavior: setting, name: icon, value: `false`): JQuery = js.native
-  def embed(behavior: setting, name: id, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def embed(behavior: setting, name: id, value: String): JQuery = js.native
-  def embed(behavior: setting, name: id, value: `false`): JQuery = js.native
-  def embed(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def embed(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def embed(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def embed(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def embed(behavior: setting, name: name, value: String): JQuery = js.native
-  def embed(behavior: setting, name: onCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit] = js.native
+  def embed(): JQuery
+  def embed(behavior: setting, name: autoplay, value: Boolean): JQuery
+  def embed(behavior: setting, name: autoplay, value: Unit): auto | Boolean
+  def embed(behavior: setting, name: autoplay, value: auto): JQuery
+  def embed(behavior: setting, name: brandedUI, value: Boolean): JQuery
+  def embed(behavior: setting, name: brandedUI, value: Unit): Boolean
+  def embed(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def embed(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def embed(behavior: setting, name: color, value: String): JQuery
+  def embed(behavior: setting, name: color, value: Unit): String
+  def embed(behavior: setting, name: debug, value: Boolean): JQuery
+  def embed(behavior: setting, name: debug, value: Unit): Boolean
+  def embed(behavior: setting, name: error, value: Unit): ErrorSettings
+  def embed(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def embed(behavior: setting, name: hd, value: Boolean): JQuery
+  def embed(behavior: setting, name: hd, value: Unit): Boolean
+  def embed(behavior: setting, name: icon, value: String): JQuery
+  def embed(behavior: setting, name: icon, value: Unit): `false` | String
+  def embed(behavior: setting, name: icon, value: `false`): JQuery
+  def embed(behavior: setting, name: id, value: String): JQuery
+  def embed(behavior: setting, name: id, value: Unit): `false` | String
+  def embed(behavior: setting, name: id, value: `false`): JQuery
+  def embed(behavior: setting, name: metadata, value: Unit): MetadataSettings
+  def embed(behavior: setting, name: metadata, value: MetadataSettings): JQuery
+  def embed(behavior: setting, name: namespace, value: String): JQuery
+  def embed(behavior: setting, name: namespace, value: Unit): String
+  def embed(behavior: setting, name: name, value: String): JQuery
+  def embed(behavior: setting, name: name, value: Unit): String
   def embed(
     behavior: setting,
     name: onCreate,
     value: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
-  ): JQuery = js.native
-  def embed(behavior: setting, name: onDisplay, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def embed(behavior: setting, name: onDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def embed(behavior: setting, name: onEmbed, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings] = js.native
+  ): JQuery
+  def embed(behavior: setting, name: onCreate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
+  def embed(behavior: setting, name: onDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def embed(behavior: setting, name: onDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
   def embed(
     behavior: setting,
     name: onEmbed,
     value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-  ): JQuery = js.native
-  def embed(behavior: setting, name: onPlaceholderDisplay, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def embed(behavior: setting, name: onPlaceholderDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def embed(behavior: setting, name: parameters, value: js.UndefOr[scala.Nothing]): `false` | ParametersSettings = js.native
-  def embed(behavior: setting, name: parameters, value: ParametersSettings): JQuery = js.native
-  def embed(behavior: setting, name: parameters, value: `false`): JQuery = js.native
-  def embed(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def embed(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def embed(behavior: setting, name: source, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def embed(behavior: setting, name: source, value: String): JQuery = js.native
-  def embed(behavior: setting, name: source, value: `false`): JQuery = js.native
-  def embed(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
-  def embed(behavior: setting, name: url, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def embed(behavior: setting, name: url, value: String): JQuery = js.native
-  def embed(behavior: setting, name: url, value: `false`): JQuery = js.native
-  def embed(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def embed(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def embed(settings: EmbedSettings): JQuery = js.native
+  ): JQuery
+  def embed(behavior: setting, name: onEmbed, value: Unit): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
+  def embed(behavior: setting, name: onPlaceholderDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def embed(behavior: setting, name: onPlaceholderDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def embed(behavior: setting, name: parameters, value: Unit): `false` | ParametersSettings
+  def embed(behavior: setting, name: parameters, value: ParametersSettings): JQuery
+  def embed(behavior: setting, name: parameters, value: `false`): JQuery
+  def embed(behavior: setting, name: performance, value: Boolean): JQuery
+  def embed(behavior: setting, name: performance, value: Unit): Boolean
+  def embed(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def embed(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def embed(behavior: setting, name: silent, value: Boolean): JQuery
+  def embed(behavior: setting, name: silent, value: Unit): Boolean
+  def embed(behavior: setting, name: source, value: String): JQuery
+  def embed(behavior: setting, name: source, value: Unit): `false` | String
+  def embed(behavior: setting, name: source, value: `false`): JQuery
+  def embed(behavior: setting, name: templates, value: Unit): TemplatesSettings
+  def embed(behavior: setting, name: templates, value: TemplatesSettings): JQuery
+  def embed(behavior: setting, name: url, value: String): JQuery
+  def embed(behavior: setting, name: url, value: Unit): `false` | String
+  def embed(behavior: setting, name: url, value: `false`): JQuery
+  def embed(behavior: setting, name: verbose, value: Boolean): JQuery
+  def embed(behavior: setting, name: verbose, value: Unit): Boolean
+  def embed(settings: EmbedSettings): JQuery
   @JSName("embed")
-  def embed_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  @JSName("embed")
-  def embed_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  @JSName("embed")
-  def embed_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  @JSName("embed")
-  def embed_JQuery(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-  @JSName("embed")
-  def embed_MetadataSettings(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-  @JSName("embed")
-  var embed_Original: Embed = js.native
+  var embed_Original: Embed
   /**
     * Changes iframe to a new content source
     */
   @JSName("embed")
-  def embed_change(behavior: change, source: String, id: String, url: String): JQuery = js.native
+  def embed_change(behavior: change, source: String, id: String, url: String): JQuery
   /**
     * Destroys instance and removes all events
     */
   @JSName("embed")
-  def embed_destroy(behavior: destroy): JQuery = js.native
+  def embed_destroy(behavior: destroy): JQuery
   /**
     * Returns current content id
     */
   @JSName("embed")
-  def embed_getid(behavior: `get id`): String = js.native
+  def embed_getid(behavior: `get id`): String
   /**
     * Returns placeholder image url
     */
   @JSName("embed")
-  def embed_getplaceholder(behavior: `get placeholder`): String = js.native
+  def embed_getplaceholder(behavior: `get placeholder`): String
   /**
     * Returns source name
     */
   @JSName("embed")
-  def embed_getsources(behavior: `get sources`): String = js.native
+  def embed_getsources(behavior: `get sources`): String
   /**
     * Returns source type
     */
   @JSName("embed")
-  def embed_gettype(behavior: `get type`): String = js.native
+  def embed_gettype(behavior: `get type`): String
   /**
     * Returns URL with all parameters added
     */
   @JSName("embed")
-  def embed_geturl(behavior: `get url`): String = js.native
+  def embed_geturl(behavior: `get url`): String
   /**
     * Returns whether embed content has placeholder
     */
   @JSName("embed")
-  def embed_hasplaceholder(behavior: `has placeholder`): Boolean = js.native
+  def embed_hasplaceholder(behavior: `has placeholder`): Boolean
   /**
     * Hides embed content and shows placeholder content
     */
   @JSName("embed")
-  def embed_hide(behavior: hide): JQuery = js.native
+  def embed_hide(behavior: hide): JQuery
   /**
     * Removes embed and shows placeholder content if available
     */
   @JSName("embed")
-  def embed_reset(behavior: reset): JQuery = js.native
+  def embed_reset(behavior: reset): JQuery
   @JSName("embed")
-  def embed_setting(behavior: setting, value: EmbedSettings): JQuery = js.native
+  def embed_setting(behavior: setting, value: EmbedSettings): JQuery
   /**
     * Shows embed content
     */
   @JSName("embed")
-  def embed_show(behavior: show): JQuery = js.native
+  def embed_show(behavior: show): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(embed: Embed): JQuery = {
+    val __obj = js.Dynamic.literal(embed = embed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEmbed(value: Embed): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+  }
 }

@@ -2,19 +2,17 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indices extends StObject {
   
-  var detail: Double = js.native
+  var detail: Double
   
-  var indices: js.Array[Double] = js.native
+  var indices: js.Array[Double]
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var vertices: js.Array[Double] = js.native
+  var vertices: js.Array[Double]
 }
 object Indices {
   

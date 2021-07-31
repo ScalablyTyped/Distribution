@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpacitySliderViewModelProperties extends SmartMappingSliderViewModelProperties {
+trait OpacitySliderViewModelProperties
+  extends StObject
+     with SmartMappingSliderViewModelProperties {
   
   /**
     * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#stops)
     */
-  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.native
+  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
 }
 object OpacitySliderViewModelProperties {
   

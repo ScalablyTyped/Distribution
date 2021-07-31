@@ -3,14 +3,12 @@ package typings.blissfuljs
 import typings.blissfuljs.BlissNS.BlissBindedElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
   @JSName("_")
-  var _underscore: BlissBindedElement[Element] = js.native
+  var _underscore: BlissBindedElement[Element]
 }
 object Element {
   

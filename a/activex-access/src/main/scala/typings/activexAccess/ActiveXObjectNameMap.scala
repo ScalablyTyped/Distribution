@@ -6,22 +6,20 @@ import typings.activexAccess.AccWizObjects.WizShellLinkA
 import typings.activexAccess.Access.Application
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ACCWIZ.FieldListCtrl")
-  var ACCWIZDotFieldListCtrl: FieldList = js.native
+  var ACCWIZDotFieldListCtrl: FieldList
   
   @JSName("ACCWIZ.ImexGridCtrl")
-  var ACCWIZDotImexGridCtrl: ImexGrid = js.native
+  var ACCWIZDotImexGridCtrl: ImexGrid
   
   @JSName("Access.Application")
-  var AccessDotApplication: Application = js.native
+  var AccessDotApplication: Application
   
-  var lnkfile: WizShellLinkA = js.native
+  var lnkfile: WizShellLinkA
 }
 object ActiveXObjectNameMap {
   

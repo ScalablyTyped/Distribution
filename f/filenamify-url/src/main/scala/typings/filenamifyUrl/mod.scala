@@ -2,7 +2,6 @@ package typings.filenamifyUrl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,10 @@ object mod {
   	//=> 'sindresorhus.com🐴foo'
   	```
   	*/
-  @JSImport("filenamify-url", JSImport.Namespace)
-  @js.native
-  def apply(url: String): String = js.native
-  @JSImport("filenamify-url", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): String = js.native
+  @scala.inline
+  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("filenamify-url", JSImport.Namespace)
   @js.native

@@ -2,44 +2,44 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
 - typings.bpmnModdle.mod.BaseElement because Already inherited
-- typings.bpmnModdle.mod.CallableElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, ioSpecification, supportedInterfaceRef, ioBinding */ @js.native
-trait Process extends FlowElementsContainer {
+- typings.bpmnModdle.mod.CallableElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, ioSpecification, supportedInterfaceRef, ioBinding */ trait Process
+  extends StObject
+     with FlowElementsContainer {
   
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
-  var auditing: Auditing = js.native
+  var auditing: Auditing
   
-  var correlationSubscriptions: js.Array[CorrelationSubscription] = js.native
+  var correlationSubscriptions: js.Array[CorrelationSubscription]
   
-  var definitionalCollaborationRef: Collaboration = js.native
+  var definitionalCollaborationRef: Collaboration
   
-  var ioBinding: InputOutputBinding = js.native
+  var ioBinding: InputOutputBinding
   
-  var ioSpecification: InputOutputSpecification = js.native
+  var ioSpecification: InputOutputSpecification
   
-  var isClosed: Boolean = js.native
+  var isClosed: Boolean
   
-  var isExecutable: Boolean = js.native
+  var isExecutable: Boolean
   
-  var monitoring: Monitoring = js.native
+  var monitoring: Monitoring
   
-  var name: String = js.native
+  var name: String
   
-  var processType: String = js.native
+  var processType: String
   
-  var properties: js.Array[Property] = js.native
+  var properties: js.Array[Property]
   
-  var resources: js.Array[ResourceRole] = js.native
+  var resources: js.Array[ResourceRole]
   
-  var supportedInterfaceRef: Interface = js.native
+  var supportedInterfaceRef: Interface
   
-  var supports: js.Array[Process] = js.native
+  var supports: js.Array[Process]
 }
 object Process {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the position of the axis labels with respect to the axis on the scale of the crossing axis. */

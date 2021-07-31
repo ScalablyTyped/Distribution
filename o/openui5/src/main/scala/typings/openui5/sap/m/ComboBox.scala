@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBox extends ComboBoxBase {
+trait ComboBox
+  extends StObject
+     with ComboBoxBase {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>selectionChange</code> event of this

@@ -3,14 +3,12 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object or callback function called when performing a search or autocomplete
   * request.
   */
-@js.native
 trait SearchDelegate extends StObject {
   
   /**
@@ -18,23 +16,23 @@ trait SearchDelegate extends StObject {
     * a data array that is the same as the one passed to the autocomplete
     * callback function.
     */
-  var autocompleteDidComplete: js.UndefOr[js.Function1[/* data */ SearchAutocompleteResponse, Unit]] = js.native
+  var autocompleteDidComplete: js.UndefOr[js.Function1[/* data */ SearchAutocompleteResponse, Unit]] = js.undefined
   
   /**
     * Invoked when an autocomplete request fails.
     */
-  var autocompleteDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var autocompleteDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
   
   /**
     * Upon successful completion of a search request, this method returns a data
     * object that is the same as the one passed to the search callback function.
     */
-  var searchDidComplete: js.UndefOr[js.Function1[/* data */ SearchResponse, Unit]] = js.native
+  var searchDidComplete: js.UndefOr[js.Function1[/* data */ SearchResponse, Unit]] = js.undefined
   
   /**
     * Called when the search request fails.
     */
-  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
 }
 object SearchDelegate {
   

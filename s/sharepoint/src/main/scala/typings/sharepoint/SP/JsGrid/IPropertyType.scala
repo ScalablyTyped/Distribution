@@ -3,10 +3,8 @@ package typings.sharepoint.SP.JsGrid
 import typings.sharepoint.anon.DataValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyType extends StObject {
   
   def BeginValidateNormalizeConvert(
@@ -16,9 +14,9 @@ trait IPropertyType extends StObject {
     bIsLocalized: Boolean,
     fnCallback: js.Function1[/* args */ DataValue, Unit],
     fnError: js.Any
-  ): Unit = js.native
+  ): Unit
   
-  var ID: String = js.native
+  var ID: String
 }
 object IPropertyType {
   

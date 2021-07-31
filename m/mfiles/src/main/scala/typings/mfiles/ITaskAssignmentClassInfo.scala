@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITaskAssignmentClassInfo extends StObject {
   
-  var AnyAssigneeCompletes: Boolean = js.native
+  var AnyAssigneeCompletes: Boolean
   
-  def Clone(): ITaskAssignmentClassInfo = js.native
+  def Clone(): ITaskAssignmentClassInfo
   
-  var SignatureForCompletion: ISignatureSettings = js.native
+  var SignatureForCompletion: ISignatureSettings
 }
 object ITaskAssignmentClassInfo {
   

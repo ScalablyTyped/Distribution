@@ -2,23 +2,21 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollParams extends StObject {
   
-  var clientHeight: Double = js.native
+  var clientHeight: Double
   
-  var clientWidth: Double = js.native
+  var clientWidth: Double
   
-  var scrollHeight: Double = js.native
+  var scrollHeight: Double
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
   
-  var scrollWidth: Double = js.native
+  var scrollWidth: Double
 }
 object ScrollParams {
   

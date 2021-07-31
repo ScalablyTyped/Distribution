@@ -2,7 +2,6 @@ package typings.nodePhpass
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,12 +18,12 @@ object mod {
   @js.native
   class PasswordHash () extends StObject {
     def this(length: Double) = this()
-    def this(length: js.UndefOr[scala.Nothing], portable: Boolean) = this()
     def this(length: Double, portable: Boolean) = this()
-    def this(length: js.UndefOr[scala.Nothing], portable: js.UndefOr[scala.Nothing], phpVersion: Double) = this()
-    def this(length: js.UndefOr[scala.Nothing], portable: Boolean, phpVersion: Double) = this()
-    def this(length: Double, portable: js.UndefOr[scala.Nothing], phpVersion: Double) = this()
+    def this(length: Unit, portable: Boolean) = this()
     def this(length: Double, portable: Boolean, phpVersion: Double) = this()
+    def this(length: Double, portable: Unit, phpVersion: Double) = this()
+    def this(length: Unit, portable: Boolean, phpVersion: Double) = this()
+    def this(length: Unit, portable: Unit, phpVersion: Double) = this()
     
     def CheckPassword(password: String, hash: String): Boolean = js.native
     

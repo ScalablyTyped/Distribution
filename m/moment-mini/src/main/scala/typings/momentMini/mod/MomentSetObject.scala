@@ -2,59 +2,59 @@ package typings.momentMini.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MomentSetObject extends MomentInputObject {
+trait MomentSetObject
+  extends StObject
+     with MomentInputObject {
   
-  var DDD: js.UndefOr[Double] = js.native
+  var DDD: js.UndefOr[Double] = js.undefined
   
-  var E: js.UndefOr[Double] = js.native
+  var E: js.UndefOr[Double] = js.undefined
   
-  var GG: js.UndefOr[Double] = js.native
+  var GG: js.UndefOr[Double] = js.undefined
   
-  var Q: js.UndefOr[Double] = js.native
+  var Q: js.UndefOr[Double] = js.undefined
   
-  var W: js.UndefOr[Double] = js.native
+  var W: js.UndefOr[Double] = js.undefined
   
-  var dayOfYear: js.UndefOr[Double] = js.native
+  var dayOfYear: js.UndefOr[Double] = js.undefined
   
-  var dayOfYears: js.UndefOr[Double] = js.native
+  var dayOfYears: js.UndefOr[Double] = js.undefined
   
-  var e: js.UndefOr[Double] = js.native
+  var e: js.UndefOr[Double] = js.undefined
   
-  var gg: js.UndefOr[Double] = js.native
+  var gg: js.UndefOr[Double] = js.undefined
   
-  var isoWeek: js.UndefOr[Double] = js.native
+  var isoWeek: js.UndefOr[Double] = js.undefined
   
-  var isoWeekYear: js.UndefOr[Double] = js.native
+  var isoWeekYear: js.UndefOr[Double] = js.undefined
   
-  var isoWeekYears: js.UndefOr[Double] = js.native
+  var isoWeekYears: js.UndefOr[Double] = js.undefined
   
-  var isoWeekday: js.UndefOr[Double] = js.native
+  var isoWeekday: js.UndefOr[Double] = js.undefined
   
-  var isoWeekdays: js.UndefOr[Double] = js.native
+  var isoWeekdays: js.UndefOr[Double] = js.undefined
   
-  var isoWeeks: js.UndefOr[Double] = js.native
+  var isoWeeks: js.UndefOr[Double] = js.undefined
   
-  var quarter: js.UndefOr[Double] = js.native
+  var quarter: js.UndefOr[Double] = js.undefined
   
-  var quarters: js.UndefOr[Double] = js.native
+  var quarters: js.UndefOr[Double] = js.undefined
   
-  var w: js.UndefOr[Double] = js.native
+  var w: js.UndefOr[Double] = js.undefined
   
-  var week: js.UndefOr[Double] = js.native
+  var week: js.UndefOr[Double] = js.undefined
   
-  var weekYear: js.UndefOr[Double] = js.native
+  var weekYear: js.UndefOr[Double] = js.undefined
   
-  var weekYears: js.UndefOr[Double] = js.native
+  var weekYears: js.UndefOr[Double] = js.undefined
   
-  var weekday: js.UndefOr[Double] = js.native
+  var weekday: js.UndefOr[Double] = js.undefined
   
-  var weekdays: js.UndefOr[Double] = js.native
+  var weekdays: js.UndefOr[Double] = js.undefined
   
-  var weeks: js.UndefOr[Double] = js.native
+  var weeks: js.UndefOr[Double] = js.undefined
 }
 object MomentSetObject {
   

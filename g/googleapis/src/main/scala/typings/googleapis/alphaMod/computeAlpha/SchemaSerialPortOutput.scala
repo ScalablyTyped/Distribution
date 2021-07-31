@@ -2,37 +2,35 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instance&#39;s serial console output.
   */
-@js.native
 trait SchemaSerialPortOutput extends StObject {
   
   /**
     * [Output Only] The contents of the console output.
     */
-  var contents: js.UndefOr[String] = js.native
+  var contents: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#serialPortOutput for
     * serial port output.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The position of the next byte of content from the serial
     * console output. Use this value in the next request as the start
     * parameter.
     */
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The starting byte position of the output that was returned. This should
@@ -40,7 +38,7 @@ trait SchemaSerialPortOutput extends StObject {
     * output exceeds the size of the buffer, older output will be overwritten
     * by newer content and the start values will be mismatched.
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object SchemaSerialPortOutput {
   

@@ -3,23 +3,22 @@ package typings.sharepoint.CUI
 import typings.microsoftAjax.Sys.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Control
-  extends IDisposable
+  extends StObject
+     with IDisposable
      with IMenuItem {
   
-  def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+  def createComponentForDisplayMode(displayMode: String): js.Any
   
-  def get_enabled(): Boolean = js.native
+  def get_enabled(): Boolean
   
-  def get_id(): String = js.native
+  def get_id(): String
   
-  def get_root(): Root = js.native
+  def get_root(): Root
   
-  def set_enabled(enabled: Boolean): Boolean = js.native
+  def set_enabled(enabled: Boolean): Boolean
 }
 object Control {
   

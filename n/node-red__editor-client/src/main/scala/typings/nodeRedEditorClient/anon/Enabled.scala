@@ -4,20 +4,18 @@ import typings.nodeRedEditorClient.mod.NodeInstance
 import typings.nodeRedEditorClient.mod.NodeProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled[TInstProps /* <: TProps */, TProps /* <: NodeProperties */] extends StObject {
   
   /** Function to dynamically enable and disable the button based on the node’s current configuration. */
-  var enabled: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]] = js.native
+  var enabled: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]] = js.undefined
   
   /** Called when the button is clicked */
-  def onclick(): Unit = js.native
+  def onclick(): Unit
   
   /** Function to determine whether the button should be shown at all. */
-  var visible: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]] = js.native
+  var visible: js.UndefOr[js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]] = js.undefined
 }
 object Enabled {
   
@@ -28,7 +26,7 @@ object Enabled {
   }
   
   @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled[_, _], TInstProps /* <: TProps */, TProps /* <: NodeProperties */] (val x: Self with (Enabled[TInstProps, TProps])) extends AnyVal {
+  implicit class EnabledMutableBuilder[Self <: Enabled[?, ?], TInstProps /* <: TProps */, TProps /* <: NodeProperties */] (val x: Self & (Enabled[TInstProps, TProps])) extends AnyVal {
     
     @scala.inline
     def setEnabled(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])

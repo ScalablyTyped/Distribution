@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SslCerts create ephemeral certificate request.
   */
-@js.native
 trait SchemaSslCertsCreateEphemeralRequest extends StObject {
   
   /**
     * PEM encoded public key to include in the signed certificate.
     */
-  var public_key: js.UndefOr[String] = js.native
+  var public_key: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertsCreateEphemeralRequest {
   

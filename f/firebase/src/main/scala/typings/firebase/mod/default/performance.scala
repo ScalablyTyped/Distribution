@@ -5,7 +5,6 @@ import typings.firebase.anon.Attributes
 import typings.firebase.mod.firebase.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,25 +32,26 @@ object performance {
     * the default app.
     * If not passed, uses the default app.
     */
-  @JSImport("firebase", "default.performance")
-  @js.native
-  def apply(): typings.firebase.mod.firebase.performance.Performance = js.native
-  @JSImport("firebase", "default.performance")
-  @js.native
-  def apply(app: App): typings.firebase.mod.firebase.performance.Performance = js.native
+  @scala.inline
+  def apply(): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
+  @scala.inline
+  def apply(app: App): typings.firebase.mod.firebase.performance.Performance = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.performance.Performance]
   
+  @JSImport("firebase", "default.performance")
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Performance extends StObject {
     
     /**
       * Controls the logging of custom traces.
       */
-    var dataCollectionEnabled: Boolean = js.native
+    var dataCollectionEnabled: Boolean
     
     /**
       * Controls the logging of automatic traces and HTTP/S network monitoring.
       */
-    var instrumentationEnabled: Boolean = js.native
+    var instrumentationEnabled: Boolean
     
     /**
       * Creates an uninitialized instance of {@link firebase.performance.Trace `trace`} and returns
@@ -60,7 +60,7 @@ object performance {
       * @param traceName The name of the trace instance.
       * @return The Trace instance.
       */
-    def trace(traceName: String): typings.firebase.mod.firebase.performance.Trace = js.native
+    def trace(traceName: String): typings.firebase.mod.firebase.performance.Trace
   }
   object Performance {
     

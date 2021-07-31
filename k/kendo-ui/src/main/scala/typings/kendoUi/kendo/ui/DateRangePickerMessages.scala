@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRangePickerMessages extends StObject {
   
-  var endLabel: js.UndefOr[String] = js.native
+  var endLabel: js.UndefOr[String] = js.undefined
   
-  var startLabel: js.UndefOr[String] = js.native
+  var startLabel: js.UndefOr[String] = js.undefined
 }
 object DateRangePickerMessages {
   

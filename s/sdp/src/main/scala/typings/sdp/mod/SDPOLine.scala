@@ -2,23 +2,21 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPOLine extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var addressType: String = js.native
+  var addressType: String
   
-  var netType: String = js.native
+  var netType: String
   
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var sessionVersion: Double = js.native
+  var sessionVersion: Double
   
-  var username: String = js.native
+  var username: String
 }
 object SDPOLine {
   

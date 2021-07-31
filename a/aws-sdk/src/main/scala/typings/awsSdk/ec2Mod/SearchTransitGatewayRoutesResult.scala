@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchTransitGatewayRoutesResult extends StObject {
   
   /**
     * Indicates whether there are additional routes available.
     */
-  var AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.native
+  var AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the routes.
     */
-  var Routes: js.UndefOr[TransitGatewayRouteList] = js.native
+  var Routes: js.UndefOr[TransitGatewayRouteList] = js.undefined
 }
 object SearchTransitGatewayRoutesResult {
   

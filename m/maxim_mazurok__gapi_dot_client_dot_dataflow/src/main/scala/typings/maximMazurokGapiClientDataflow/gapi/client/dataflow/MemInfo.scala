@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemInfo extends StObject {
   
   /** Instantenous memory limit in bytes. */
-  var currentLimitBytes: js.UndefOr[String] = js.native
+  var currentLimitBytes: js.UndefOr[String] = js.undefined
   
   /** Instantenous memory (RSS) size in bytes. */
-  var currentRssBytes: js.UndefOr[String] = js.native
+  var currentRssBytes: js.UndefOr[String] = js.undefined
   
   /** Timestamp of the measurement. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /** Total memory (RSS) usage since start up in GB * ms. */
-  var totalGbMs: js.UndefOr[String] = js.native
+  var totalGbMs: js.UndefOr[String] = js.undefined
 }
 object MemInfo {
   

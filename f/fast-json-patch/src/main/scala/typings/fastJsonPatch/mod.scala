@@ -10,10 +10,13 @@ import typings.fastJsonPatch.moduleHelpersMod.JsonPatchErrorName
 import typings.fastJsonPatch.moduleHelpersMod.PatchError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fast-json-patch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -38,30 +41,12 @@ object mod {
     class JsonPatchErrorCls protected () extends PatchError {
       def this(message: String, name: JsonPatchErrorName) = this()
       def this(message: String, name: JsonPatchErrorName, index: Double) = this()
-      def this(message: String, name: JsonPatchErrorName, index: js.UndefOr[scala.Nothing], operation: js.Any) = this()
       def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any) = this()
-      def this(
-        message: String,
-        name: JsonPatchErrorName,
-        index: js.UndefOr[scala.Nothing],
-        operation: js.UndefOr[scala.Nothing],
-        tree: js.Any
-      ) = this()
-      def this(
-        message: String,
-        name: JsonPatchErrorName,
-        index: js.UndefOr[scala.Nothing],
-        operation: js.Any,
-        tree: js.Any
-      ) = this()
-      def this(
-        message: String,
-        name: JsonPatchErrorName,
-        index: Double,
-        operation: js.UndefOr[scala.Nothing],
-        tree: js.Any
-      ) = this()
+      def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any) = this()
       def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any, tree: js.Any) = this()
+      def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: js.Any) = this()
+      def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any, tree: js.Any) = this()
+      def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: js.Any) = this()
     }
     
     @scala.inline
@@ -76,131 +61,21 @@ object mod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonPatchError")(x.asInstanceOf[js.Any])
     
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean,
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean,
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean,
-      banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean,
-      banPrototypeModifications: Boolean,
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: Boolean,
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: Boolean,
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: Boolean,
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean,
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](
-      document: T,
-      operation: Operation,
-      validateOperation: Boolean,
-      mutateDocument: Boolean,
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
-      index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
       validateOperation: Boolean,
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
@@ -208,272 +83,298 @@ object mod {
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean,
       index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T]): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
+      validateOperation: Boolean,
+      mutateDocument: Boolean,
+      banPrototypeModifications: Unit,
       index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
-      mutateDocument: js.UndefOr[scala.Nothing],
+      validateOperation: Boolean,
+      mutateDocument: Unit,
       banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
-      mutateDocument: js.UndefOr[scala.Nothing],
+      validateOperation: Boolean,
+      mutateDocument: Unit,
       banPrototypeModifications: Boolean,
       index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
-    def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T], mutateDocument: Boolean): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
-      mutateDocument: Boolean,
-      banPrototypeModifications: js.UndefOr[scala.Nothing],
+      validateOperation: Boolean,
+      mutateDocument: Unit,
+      banPrototypeModifications: Unit,
       index: Double
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation, validateOperation: Unit, mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
+      validateOperation: Unit,
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean
-    ): OperationResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyOperation")
-    @js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
     def applyOperation[T](
       document: T,
       operation: Operation,
-      validateOperation: Validator_[T],
+      validateOperation: Unit,
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean,
       index: Double
-    ): OperationResult[T] = js.native
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Unit,
+      mutateDocument: Boolean,
+      banPrototypeModifications: Unit,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Unit,
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Unit,
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Unit,
+      mutateDocument: Unit,
+      banPrototypeModifications: Unit,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T]): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T], mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Boolean,
+      banPrototypeModifications: Boolean
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Boolean,
+      banPrototypeModifications: Boolean,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Boolean,
+      banPrototypeModifications: Unit,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+    @scala.inline
+    def applyOperation[T](
+      document: T,
+      operation: Operation,
+      validateOperation: Validator_[T],
+      mutateDocument: Unit,
+      banPrototypeModifications: Unit,
+      index: Double
+    ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
     
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](
-      document: T,
-      patch: js.Array[Operation],
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](
-      document: T,
-      patch: js.Array[Operation],
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](
-      document: T,
-      patch: js.Array[Operation],
-      validateOperation: js.UndefOr[scala.Nothing],
-      mutateDocument: Boolean,
-      banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](
-      document: T,
-      patch: js.Array[Operation],
-      validateOperation: Boolean,
-      mutateDocument: js.UndefOr[scala.Nothing],
-      banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean, mutateDocument: Boolean): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean, mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
     def applyPatch[T](
       document: T,
       patch: js.Array[Operation],
       validateOperation: Boolean,
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T]): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
     def applyPatch[T](
       document: T,
       patch: js.Array[Operation],
-      validateOperation: Validator_[T],
-      mutateDocument: js.UndefOr[scala.Nothing],
+      validateOperation: Boolean,
+      mutateDocument: Unit,
       banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
-    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T], mutateDocument: Boolean): PatchResult[T] = js.native
-    @JSImport("fast-json-patch", "default.applyPatch")
-    @js.native
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Unit, mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](
+      document: T,
+      patch: js.Array[Operation],
+      validateOperation: Unit,
+      mutateDocument: Boolean,
+      banPrototypeModifications: Boolean
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](
+      document: T,
+      patch: js.Array[Operation],
+      validateOperation: Unit,
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T]): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T], mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
     def applyPatch[T](
       document: T,
       patch: js.Array[Operation],
       validateOperation: Validator_[T],
       mutateDocument: Boolean,
       banPrototypeModifications: Boolean
-    ): PatchResult[T] = js.native
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+    @scala.inline
+    def applyPatch[T](
+      document: T,
+      patch: js.Array[Operation],
+      validateOperation: Validator_[T],
+      mutateDocument: Unit,
+      banPrototypeModifications: Boolean
+    ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
     
-    @JSImport("fast-json-patch", "default.applyReducer")
-    @js.native
-    def applyReducer[T](document: T, operation: Operation, index: Double): T = js.native
+    @scala.inline
+    def applyReducer[T](document: T, operation: Operation, index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReducer")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("fast-json-patch", "default._areEquals")
-    @js.native
-    def areEquals(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def areEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_areEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Array[_], tree2: js.Array[_]): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Array[_], tree2: js.Array[_], invertible: Boolean): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Array[_], tree2: js.Object): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Array[_], tree2: js.Object, invertible: Boolean): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Object, tree2: js.Array[_]): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Object, tree2: js.Array[_], invertible: Boolean): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Object, tree2: js.Object): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.compare")
-    @js.native
-    def compare(tree1: js.Object, tree2: js.Object, invertible: Boolean): js.Array[Operation] = js.native
+    @scala.inline
+    def compare(tree1: js.Array[js.Any], tree2: js.Array[js.Any]): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Array[js.Any], tree2: js.Array[js.Any], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Array[js.Any], tree2: js.Object): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Array[js.Any], tree2: js.Object, invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Object, tree2: js.Array[js.Any]): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Object, tree2: js.Array[js.Any], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Object, tree2: js.Object): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def compare(tree1: js.Object, tree2: js.Object, invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
     
     @JSImport("fast-json-patch", "default.deepClone")
     @js.native
     def deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native
-    @JSImport("fast-json-patch", "default.deepClone")
-    @js.native
-    def deepClone(obj: js.Any): js.Any = js.native
+    @scala.inline
+    def deepClone(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def deepClone_=(x: js.Function1[/* obj */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deepClone")(x.asInstanceOf[js.Any])
     
     @JSImport("fast-json-patch", "default.escapePathComponent")
     @js.native
     def escapePathComponent: js.Function1[/* path */ String, String] = js.native
-    @JSImport("fast-json-patch", "default.escapePathComponent")
-    @js.native
-    def escapePathComponent(path: String): String = js.native
+    @scala.inline
+    def escapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def escapePathComponent_=(x: js.Function1[/* path */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escapePathComponent")(x.asInstanceOf[js.Any])
     
-    @JSImport("fast-json-patch", "default.generate")
-    @js.native
-    def generate[T](observer: Observer[js.Object]): js.Array[Operation] = js.native
-    @JSImport("fast-json-patch", "default.generate")
-    @js.native
-    def generate[T](observer: Observer[js.Object], invertible: Boolean): js.Array[Operation] = js.native
+    @scala.inline
+    def generate[T](observer: Observer[js.Object]): js.Array[Operation] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(observer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Operation]]
+    @scala.inline
+    def generate[T](observer: Observer[js.Object], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(observer.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
     
-    @JSImport("fast-json-patch", "default.getValueByPointer")
-    @js.native
-    def getValueByPointer(document: js.Any, pointer: String): js.Any = js.native
+    @scala.inline
+    def getValueByPointer(document: js.Any, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPointer")(document.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("fast-json-patch", "default.observe")
-    @js.native
-    def observe[T](obj: js.Array[T]): Observer[T] = js.native
-    @JSImport("fast-json-patch", "default.observe")
-    @js.native
-    def observe[T](obj: js.Array[T], callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = js.native
-    @JSImport("fast-json-patch", "default.observe")
-    @js.native
-    def observe[T](obj: js.Object): Observer[T] = js.native
-    @JSImport("fast-json-patch", "default.observe")
-    @js.native
-    def observe[T](obj: js.Object, callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = js.native
+    @scala.inline
+    def observe[T](obj: js.Array[T]): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+    @scala.inline
+    def observe[T](obj: js.Array[T], callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+    @scala.inline
+    def observe[T](obj: js.Object): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+    @scala.inline
+    def observe[T](obj: js.Object, callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
     
     @JSImport("fast-json-patch", "default.unescapePathComponent")
     @js.native
     def unescapePathComponent: js.Function1[/* path */ String, String] = js.native
-    @JSImport("fast-json-patch", "default.unescapePathComponent")
-    @js.native
-    def unescapePathComponent(path: String): String = js.native
+    @scala.inline
+    def unescapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     @scala.inline
     def unescapePathComponent_=(x: js.Function1[/* path */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unescapePathComponent")(x.asInstanceOf[js.Any])
     
-    @JSImport("fast-json-patch", "default.unobserve")
-    @js.native
-    def unobserve[T](root: T, observer: Observer[T]): Unit = js.native
+    @scala.inline
+    def unobserve[T](root: T, observer: Observer[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(root.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("fast-json-patch", "default.validate")
-    @js.native
-    def validate[T](sequence: js.Array[Operation]): PatchError = js.native
-    @JSImport("fast-json-patch", "default.validate")
-    @js.native
-    def validate[T](sequence: js.Array[Operation], document: T): PatchError = js.native
-    @JSImport("fast-json-patch", "default.validate")
-    @js.native
-    def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator_[T]): PatchError = js.native
-    @JSImport("fast-json-patch", "default.validate")
-    @js.native
-    def validate[T](
-      sequence: js.Array[Operation],
-      document: js.UndefOr[scala.Nothing],
-      externalValidator: Validator_[T]
-    ): PatchError = js.native
+    @scala.inline
+    def validate[T](sequence: js.Array[Operation]): PatchError = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any]).asInstanceOf[PatchError]
+    @scala.inline
+    def validate[T](sequence: js.Array[Operation], document: T): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[PatchError]
+    @scala.inline
+    def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator_[T]): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any], externalValidator.asInstanceOf[js.Any])).asInstanceOf[PatchError]
+    @scala.inline
+    def validate[T](sequence: js.Array[Operation], document: Unit, externalValidator: Validator_[T]): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any], externalValidator.asInstanceOf[js.Any])).asInstanceOf[PatchError]
     
-    @JSImport("fast-json-patch", "default.validator")
-    @js.native
-    def validator(operation: Operation, index: Double): Unit = js.native
-    @JSImport("fast-json-patch", "default.validator")
-    @js.native
-    def validator(
-      operation: Operation,
-      index: Double,
-      document: js.UndefOr[scala.Nothing],
-      existingPathFragment: String
-    ): Unit = js.native
-    @JSImport("fast-json-patch", "default.validator")
-    @js.native
-    def validator(operation: Operation, index: Double, document: js.Any): Unit = js.native
-    @JSImport("fast-json-patch", "default.validator")
-    @js.native
-    def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = js.native
+    @scala.inline
+    def validator(operation: Operation, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def validator(operation: Operation, index: Double, document: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def validator(operation: Operation, index: Double, document: Unit, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("fast-json-patch", "JsonPatchError")
@@ -481,157 +382,29 @@ object mod {
   class JsonPatchError protected () extends PatchError {
     def this(message: String, name: JsonPatchErrorName) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double) = this()
-    def this(message: String, name: JsonPatchErrorName, index: js.UndefOr[scala.Nothing], operation: js.Any) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: js.UndefOr[scala.Nothing],
-      operation: js.UndefOr[scala.Nothing],
-      tree: js.Any
-    ) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: js.UndefOr[scala.Nothing],
-      operation: js.Any,
-      tree: js.Any
-    ) = this()
-    def this(
-      message: String,
-      name: JsonPatchErrorName,
-      index: Double,
-      operation: js.UndefOr[scala.Nothing],
-      tree: js.Any
-    ) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: js.Any) = this()
   }
   
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: Boolean,
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean,
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean,
-    banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean,
-    banPrototypeModifications: Boolean,
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: Boolean,
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: Boolean,
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: Boolean,
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: Boolean,
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](
-    document: T,
-    operation: Operation,
-    validateOperation: Boolean,
-    mutateDocument: Boolean,
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
-    index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean, mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
     validateOperation: Boolean,
     mutateDocument: Boolean,
     banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
@@ -639,255 +412,281 @@ object mod {
     mutateDocument: Boolean,
     banPrototypeModifications: Boolean,
     index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T]): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
+    validateOperation: Boolean,
+    mutateDocument: Boolean,
+    banPrototypeModifications: Unit,
     index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
-    mutateDocument: js.UndefOr[scala.Nothing],
+    validateOperation: Boolean,
+    mutateDocument: Unit,
     banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
-    mutateDocument: js.UndefOr[scala.Nothing],
+    validateOperation: Boolean,
+    mutateDocument: Unit,
     banPrototypeModifications: Boolean,
     index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
-  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T], mutateDocument: Boolean): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
-    mutateDocument: Boolean,
-    banPrototypeModifications: js.UndefOr[scala.Nothing],
+    validateOperation: Boolean,
+    mutateDocument: Unit,
+    banPrototypeModifications: Unit,
     index: Double
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Unit, mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
+    validateOperation: Unit,
     mutateDocument: Boolean,
     banPrototypeModifications: Boolean
-  ): OperationResult[T] = js.native
-  @JSImport("fast-json-patch", "applyOperation")
-  @js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
   def applyOperation[T](
     document: T,
     operation: Operation,
-    validateOperation: Validator_[T],
+    validateOperation: Unit,
     mutateDocument: Boolean,
     banPrototypeModifications: Boolean,
     index: Double
-  ): OperationResult[T] = js.native
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Unit,
+    mutateDocument: Boolean,
+    banPrototypeModifications: Unit,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Unit,
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Unit,
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Unit,
+    mutateDocument: Unit,
+    banPrototypeModifications: Unit,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T]): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](document: T, operation: Operation, validateOperation: Validator_[T], mutateDocument: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Boolean,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Boolean,
+    banPrototypeModifications: Unit,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
+  @scala.inline
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator_[T],
+    mutateDocument: Unit,
+    banPrototypeModifications: Unit,
+    index: Double
+  ): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
   
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[Operation],
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: js.UndefOr[scala.Nothing],
-    banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[Operation],
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](
-    document: T,
-    patch: js.Array[Operation],
-    validateOperation: js.UndefOr[scala.Nothing],
-    mutateDocument: Boolean,
-    banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean, mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
   def applyPatch[T](
     document: T,
     patch: js.Array[Operation],
     validateOperation: Boolean,
-    mutateDocument: js.UndefOr[scala.Nothing],
+    mutateDocument: Boolean,
     banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Boolean, mutateDocument: Boolean): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
   def applyPatch[T](
     document: T,
     patch: js.Array[Operation],
     validateOperation: Boolean,
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Unit, mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: Unit,
     mutateDocument: Boolean,
     banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T]): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: Unit,
+    mutateDocument: Unit,
+    banPrototypeModifications: Boolean
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T]): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
+  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T], mutateDocument: Boolean): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
   def applyPatch[T](
     document: T,
     patch: js.Array[Operation],
     validateOperation: Validator_[T],
-    mutateDocument: js.UndefOr[scala.Nothing],
+    mutateDocument: Boolean,
     banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
-  def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator_[T], mutateDocument: Boolean): PatchResult[T] = js.native
-  @JSImport("fast-json-patch", "applyPatch")
-  @js.native
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
+  @scala.inline
   def applyPatch[T](
     document: T,
     patch: js.Array[Operation],
     validateOperation: Validator_[T],
-    mutateDocument: Boolean,
+    mutateDocument: Unit,
     banPrototypeModifications: Boolean
-  ): PatchResult[T] = js.native
+  ): PatchResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(document.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any], mutateDocument.asInstanceOf[js.Any], banPrototypeModifications.asInstanceOf[js.Any])).asInstanceOf[PatchResult[T]]
   
-  @JSImport("fast-json-patch", "applyReducer")
-  @js.native
-  def applyReducer[T](document: T, operation: Operation, index: Double): T = js.native
+  @scala.inline
+  def applyReducer[T](document: T, operation: Operation, index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReducer")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("fast-json-patch", "_areEquals")
-  @js.native
-  def areEquals(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def areEquals(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_areEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Array[_], tree2: js.Array[_]): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Array[_], tree2: js.Array[_], invertible: Boolean): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Array[_], tree2: js.Object): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Array[_], tree2: js.Object, invertible: Boolean): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Object, tree2: js.Array[_]): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Object, tree2: js.Array[_], invertible: Boolean): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Object, tree2: js.Object): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "compare")
-  @js.native
-  def compare(tree1: js.Object, tree2: js.Object, invertible: Boolean): js.Array[Operation] = js.native
+  @scala.inline
+  def compare(tree1: js.Array[js.Any], tree2: js.Array[js.Any]): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Array[js.Any], tree2: js.Array[js.Any], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Array[js.Any], tree2: js.Object): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Array[js.Any], tree2: js.Object, invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Object, tree2: js.Array[js.Any]): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Object, tree2: js.Array[js.Any], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Object, tree2: js.Object): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def compare(tree1: js.Object, tree2: js.Object, invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("fast-json-patch", "deepClone")
-  @js.native
-  def deepClone(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def deepClone(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("fast-json-patch", "escapePathComponent")
-  @js.native
-  def escapePathComponent(path: String): String = js.native
+  @scala.inline
+  def escapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fast-json-patch", "generate")
-  @js.native
-  def generate[T](observer: Observer[js.Object]): js.Array[Operation] = js.native
-  @JSImport("fast-json-patch", "generate")
-  @js.native
-  def generate[T](observer: Observer[js.Object], invertible: Boolean): js.Array[Operation] = js.native
+  @scala.inline
+  def generate[T](observer: Observer[js.Object]): js.Array[Operation] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(observer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Operation]]
+  @scala.inline
+  def generate[T](observer: Observer[js.Object], invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(observer.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("fast-json-patch", "getValueByPointer")
-  @js.native
-  def getValueByPointer(document: js.Any, pointer: String): js.Any = js.native
+  @scala.inline
+  def getValueByPointer(document: js.Any, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPointer")(document.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fast-json-patch", "observe")
-  @js.native
-  def observe[T](obj: js.Array[T]): Observer[T] = js.native
-  @JSImport("fast-json-patch", "observe")
-  @js.native
-  def observe[T](obj: js.Array[T], callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = js.native
-  @JSImport("fast-json-patch", "observe")
-  @js.native
-  def observe[T](obj: js.Object): Observer[T] = js.native
-  @JSImport("fast-json-patch", "observe")
-  @js.native
-  def observe[T](obj: js.Object, callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = js.native
+  @scala.inline
+  def observe[T](obj: js.Array[T]): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+  @scala.inline
+  def observe[T](obj: js.Array[T], callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  @scala.inline
+  def observe[T](obj: js.Object): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+  @scala.inline
+  def observe[T](obj: js.Object, callback: js.Function1[/* patches */ js.Array[Operation], Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
   
-  @JSImport("fast-json-patch", "unescapePathComponent")
-  @js.native
-  def unescapePathComponent(path: String): String = js.native
+  @scala.inline
+  def unescapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fast-json-patch", "unobserve")
-  @js.native
-  def unobserve[T](root: T, observer: Observer[T]): Unit = js.native
+  @scala.inline
+  def unobserve[T](root: T, observer: Observer[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(root.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fast-json-patch", "validate")
-  @js.native
-  def validate[T](sequence: js.Array[Operation]): PatchError = js.native
-  @JSImport("fast-json-patch", "validate")
-  @js.native
-  def validate[T](sequence: js.Array[Operation], document: T): PatchError = js.native
-  @JSImport("fast-json-patch", "validate")
-  @js.native
-  def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator_[T]): PatchError = js.native
-  @JSImport("fast-json-patch", "validate")
-  @js.native
-  def validate[T](
-    sequence: js.Array[Operation],
-    document: js.UndefOr[scala.Nothing],
-    externalValidator: Validator_[T]
-  ): PatchError = js.native
+  @scala.inline
+  def validate[T](sequence: js.Array[Operation]): PatchError = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any]).asInstanceOf[PatchError]
+  @scala.inline
+  def validate[T](sequence: js.Array[Operation], document: T): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[PatchError]
+  @scala.inline
+  def validate[T](sequence: js.Array[Operation], document: T, externalValidator: Validator_[T]): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any], externalValidator.asInstanceOf[js.Any])).asInstanceOf[PatchError]
+  @scala.inline
+  def validate[T](sequence: js.Array[Operation], document: Unit, externalValidator: Validator_[T]): PatchError = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(sequence.asInstanceOf[js.Any], document.asInstanceOf[js.Any], externalValidator.asInstanceOf[js.Any])).asInstanceOf[PatchError]
   
-  @JSImport("fast-json-patch", "validator")
-  @js.native
-  def validator(operation: Operation, index: Double): Unit = js.native
-  @JSImport("fast-json-patch", "validator")
-  @js.native
-  def validator(
-    operation: Operation,
-    index: Double,
-    document: js.UndefOr[scala.Nothing],
-    existingPathFragment: String
-  ): Unit = js.native
-  @JSImport("fast-json-patch", "validator")
-  @js.native
-  def validator(operation: Operation, index: Double, document: js.Any): Unit = js.native
-  @JSImport("fast-json-patch", "validator")
-  @js.native
-  def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = js.native
+  @scala.inline
+  def validator(operation: Operation, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validator(operation: Operation, index: Double, document: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validator(operation: Operation, index: Double, document: js.Any, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validator(operation: Operation, index: Double, document: Unit, existingPathFragment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validator")(operation.asInstanceOf[js.Any], index.asInstanceOf[js.Any], document.asInstanceOf[js.Any], existingPathFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

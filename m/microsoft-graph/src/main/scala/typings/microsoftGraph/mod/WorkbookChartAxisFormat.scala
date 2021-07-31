@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartAxisFormat extends Entity {
+trait WorkbookChartAxisFormat
+  extends StObject
+     with Entity {
   
   // Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
-  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.native
+  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.undefined
   
   // Represents chart line formatting. Read-only.
-  var line: js.UndefOr[NullableOption[WorkbookChartLineFormat]] = js.native
+  var line: js.UndefOr[NullableOption[WorkbookChartLineFormat]] = js.undefined
 }
 object WorkbookChartAxisFormat {
   

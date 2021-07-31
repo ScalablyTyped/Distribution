@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupButton extends Widget_ {
+trait GroupButton
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -93,44 +94,43 @@ trait GroupButton extends Widget_ {
 }
 object GroupButton {
   
-  @js.native
   trait BeforeSelectEventArgs extends StObject {
     
     /** Boolean value based on whether the button element is disabled or not.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selection button element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Return the button element ID.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Button item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Boolean value based on whether the button element is selected or not.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** return the button state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeSelectEventArgs {
     
@@ -199,20 +199,19 @@ object GroupButton {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the GroupButton model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -245,20 +244,19 @@ object GroupButton {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the GroupButton model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -291,44 +289,43 @@ object GroupButton {
     }
   }
   
-  @js.native
   trait KeyPressEventArgs extends StObject {
     
     /** Boolean value based on whether the button element is disabled or not.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selection button element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Return the button element ID.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Button item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Boolean value based on whether the button element is selected or not.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** return the button state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeyPressEventArgs {
     
@@ -397,97 +394,96 @@ object GroupButton {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered before any button element in the GroupButton get selected.
       */
-    var beforeSelect: js.UndefOr[js.Function1[/* e */ BeforeSelectEventArgs, Unit]] = js.native
+    var beforeSelect: js.UndefOr[js.Function1[/* e */ BeforeSelectEventArgs, Unit]] = js.undefined
     
     /** Fires after GroupButton control is created.If the user want to perform any operation after the button control creation then the user can make use of this create event.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the specified class to GroupButton wrapper element, which allows for custom skinning option in ejGroupButton control.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** To set the local JSON data, define a JSON array and initialize the GroupButton with dataSource property. Specify the column names in the fields property.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Fires when the GroupButton is destroyed successfully.If the user want to perform any operation after the destroy button control then the user can make use of this destroy event.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Displays the ejGroupButton in Right to Left direction.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Used to enable or disable the ejGroupButton control.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to display the values of the data.
       * @Default {null}
       */
-    var fields: js.UndefOr[js.Any] = js.native
+    var fields: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the GroupButton behavior to works as Checkbox mode/ radio button mode based on the specified option.
       * @Default {ej.GroupButtonMode.RadioButton}
       */
-    var groupButtonMode: js.UndefOr[GroupButtonMode | String] = js.native
+    var groupButtonMode: js.UndefOr[GroupButtonMode | String] = js.undefined
     
     /** Used to sets the height of the ejGroupButton control.
       * @Default {28}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the characteristics of the ejGroupButton control and extend the capability of an HTML element by adding specified attributes to element tag and by performing the related
       * actions
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered once the key is pressed, when the control is in focused state.
       */
-    var keyPress: js.UndefOr[js.Function1[/* e */ KeyPressEventArgs, Unit]] = js.native
+    var keyPress: js.UndefOr[js.Function1[/* e */ KeyPressEventArgs, Unit]] = js.undefined
     
     /** Specify the orientation of the GroupButton. See below to get available orientations
       * @Default {ej.Orientation.Horizontal}
       */
-    var orientation: js.UndefOr[Orientation | String] = js.native
+    var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Query the dataSource from the table for Groupbutton
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered when the button element get selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Sets the list of button elements to be selected. To enable this option groupButtonMode should be in â€œcheckboxâ€ mode.
       * @Default {[]}
       */
-    var selectedItemIndex: js.UndefOr[js.Array[Double | String]] = js.native
+    var selectedItemIndex: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     /** Sets the rounder corner to the GroupButton, if sets as true.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the button. See available size
       * @Default {ej.ButtonSize.Normal}
       */
-    var size: js.UndefOr[ButtonSize | String] = js.native
+    var size: js.UndefOr[ButtonSize | String] = js.undefined
     
     /** Defines the width of the ejGroupButton control.
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -619,44 +615,43 @@ object GroupButton {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** Boolean value based on whether the selected button element is disabled or not.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selection button element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Return the selected button element ID.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Selected button item index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Boolean value based on whether the button element is selected or not.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /** return the button state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     

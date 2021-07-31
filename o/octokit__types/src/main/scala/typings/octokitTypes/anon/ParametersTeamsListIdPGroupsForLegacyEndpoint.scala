@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.TeamsListIdPGroupsForLegacyResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsListIdPGroupsForLegacyEndpoint extends StObject {
   
-  var parameters: TeamsListIdPGroupsForLegacyEndpoint = js.native
+  var parameters: TeamsListIdPGroupsForLegacyEndpoint
   
-  var request: TeamsListIdPGroupsForLegacyRequestOptions = js.native
+  var request: TeamsListIdPGroupsForLegacyRequestOptions
   
-  var response: OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] = js.native
+  var response: OctokitResponse[TeamsListIdPGroupsForLegacyResponseData]
 }
 object ParametersTeamsListIdPGroupsForLegacyEndpoint {
   

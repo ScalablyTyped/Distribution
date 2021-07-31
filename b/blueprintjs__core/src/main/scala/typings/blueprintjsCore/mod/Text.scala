@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.PartialITextProps
 import typings.blueprintjsCore.textMod.ITextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Text")

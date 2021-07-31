@@ -7,10 +7,13 @@ import typings.skiaCanvas.skiaCanvasStrings.`2d`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("skia-canvas", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("skia-canvas", "Canvas")
   @js.native
@@ -107,23 +110,20 @@ object mod {
   @js.native
   class Path2D () extends StObject
   
-  @JSImport("skia-canvas", "loadImage")
-  @js.native
-  def loadImage(src: String): js.Promise[Image] = js.native
-  @JSImport("skia-canvas", "loadImage")
-  @js.native
-  def loadImage(src: Buffer): js.Promise[Image] = js.native
+  @scala.inline
+  def loadImage(src: String): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
+  @scala.inline
+  def loadImage(src: Buffer): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
   
-  @js.native
   trait FontFamily extends StObject {
     
-    var family: String = js.native
+    var family: String
     
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
     
-    var weights: js.Array[Double] = js.native
+    var weights: js.Array[Double]
     
-    var widths: js.Array[String] = js.native
+    var widths: js.Array[String]
   }
   object FontFamily {
     
@@ -159,18 +159,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FontVariant extends StObject {
     
-    var family: String = js.native
+    var family: String
     
-    var file: String = js.native
+    var file: String
     
-    var style: String = js.native
+    var style: String
     
-    var weight: Double = js.native
+    var weight: Double
     
-    var width: String = js.native
+    var width: String
   }
   object FontVariant {
     
@@ -201,10 +200,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.TextMetrics * / any */ @js.native
-  trait TextMetrics extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.TextMetrics * / any */ trait TextMetrics extends StObject {
     
-    var lines: js.Array[TextMetricsLine] = js.native
+    var lines: js.Array[TextMetricsLine]
   }
   object TextMetrics {
     
@@ -225,20 +223,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TextMetricsLine extends StObject {
     
-    var baseline: Double = js.native
+    var baseline: Double
     
-    var endIndex: Double = js.native
+    var endIndex: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var startIndex: Double = js.native
+    var startIndex: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object TextMetricsLine {
     

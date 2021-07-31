@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpanContext extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SpanContext extends StObject {
     * is a 32-character hexadecimal encoding of a 16-byte array. `[SPAN_ID]` is a unique identifier for a span within a trace; it is a 16-character hexadecimal encoding of an 8-byte
     * array.
     */
-  var spanName: js.UndefOr[String] = js.native
+  var spanName: js.UndefOr[String] = js.undefined
 }
 object SpanContext {
   

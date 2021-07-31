@@ -3,28 +3,27 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestReportWithArtifacts
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var deviceContextId: js.UndefOr[String] = js.native
+  var deviceContextId: js.UndefOr[String] = js.undefined
   
-  var deviceLog: js.UndefOr[String] = js.native
+  var deviceLog: js.UndefOr[String] = js.undefined
   
-  var frameworkLog: js.UndefOr[String] = js.native
+  var frameworkLog: js.UndefOr[String] = js.undefined
   
-  var report: js.UndefOr[TestReport] = js.native
+  var report: js.UndefOr[TestReport] = js.undefined
   
-  var screenshots: js.UndefOr[js.Array[Entity]] = js.native
+  var screenshots: js.UndefOr[js.Array[Entity]] = js.undefined
   
-  var testResult: js.UndefOr[String] = js.native
+  var testResult: js.UndefOr[String] = js.undefined
   
-  var video: js.UndefOr[Entity] = js.native
+  var video: js.UndefOr[Entity] = js.undefined
   
-  var vitalsLog: js.UndefOr[String] = js.native
+  var vitalsLog: js.UndefOr[String] = js.undefined
 }
 object TestReportWithArtifacts {
   

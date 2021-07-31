@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsDeviceInformation extends StObject {
   
-  /** The array of DeviceInformation objects starting at the index specified by startIndex. */ var items: DeviceInformation = js.native
+  /** The array of DeviceInformation objects starting at the index specified by startIndex. */ var items: DeviceInformation
   
-  /** The number of DeviceInformation objects returned. */ var returnValue: Double = js.native
+  /** The number of DeviceInformation objects returned. */ var returnValue: Double
 }
 object ItemsDeviceInformation {
   

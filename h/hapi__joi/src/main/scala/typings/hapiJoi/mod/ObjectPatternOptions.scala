@@ -2,21 +2,19 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectPatternOptions extends StObject {
   
-  var fallthrough: js.UndefOr[Boolean] = js.native
+  var fallthrough: js.UndefOr[Boolean] = js.undefined
   
-  var matches: SchemaLike | Reference = js.native
+  var matches: SchemaLike | Reference
 }
 object ObjectPatternOptions {
   
   @scala.inline
   def apply(): ObjectPatternOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(matches = null)
     __obj.asInstanceOf[ObjectPatternOptions]
   }
   

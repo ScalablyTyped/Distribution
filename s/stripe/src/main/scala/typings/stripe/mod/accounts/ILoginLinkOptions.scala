@@ -2,16 +2,14 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoginLinkOptions extends StObject {
   
   /**
     * Where to redirect the user after they log out of their dashboard.
     */
-  var redirect_url: String = js.native
+  var redirect_url: String
 }
 object ILoginLinkOptions {
   

@@ -2,14 +2,12 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListUsableSubnetworksResponse is the response of
   * ListUsableSubnetworksRequest.
   */
-@js.native
 trait SchemaListUsableSubnetworksResponse extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaListUsableSubnetworksResponse extends StObject {
     * `next_page_token` as a value for the query parameter `page_token` in the
     * next request. The value will become empty when there are no more pages.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of usable subnetworks in the specified network project.
     */
-  var subnetworks: js.UndefOr[js.Array[SchemaUsableSubnetwork]] = js.native
+  var subnetworks: js.UndefOr[js.Array[SchemaUsableSubnetwork]] = js.undefined
 }
 object SchemaListUsableSubnetworksResponse {
   

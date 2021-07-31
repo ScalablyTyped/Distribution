@@ -2,17 +2,15 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WordOptions extends StObject {
   
-  var capitalize: Boolean = js.native
+  var capitalize: Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  var syllables: Double = js.native
+  var syllables: Double
 }
 object WordOptions {
   

@@ -3,19 +3,19 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RestoreProvider extends DataProvider {
+trait RestoreProvider
+  extends StObject
+     with DataProvider {
   
-  def cancelRestorePlan(connectionUri: String, restoreInfo: RestoreInfo): Thenable[Boolean] = js.native
+  def cancelRestorePlan(connectionUri: String, restoreInfo: RestoreInfo): Thenable[Boolean]
   
-  def getRestoreConfigInfo(connectionUri: String): Thenable[RestoreConfigInfo] = js.native
+  def getRestoreConfigInfo(connectionUri: String): Thenable[RestoreConfigInfo]
   
-  def getRestorePlan(connectionUri: String, restoreInfo: RestoreInfo): Thenable[RestorePlanResponse] = js.native
+  def getRestorePlan(connectionUri: String, restoreInfo: RestoreInfo): Thenable[RestorePlanResponse]
   
-  def restore(connectionUri: String, restoreInfo: RestoreInfo): Thenable[RestoreResponse] = js.native
+  def restore(connectionUri: String, restoreInfo: RestoreInfo): Thenable[RestoreResponse]
 }
 object RestoreProvider {
   

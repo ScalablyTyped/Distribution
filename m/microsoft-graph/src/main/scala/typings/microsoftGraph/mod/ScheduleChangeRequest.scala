@@ -2,27 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScheduleChangeRequest extends ChangeTrackedEntity {
+trait ScheduleChangeRequest
+  extends StObject
+     with ChangeTrackedEntity {
   
-  var assignedTo: js.UndefOr[NullableOption[ScheduleChangeRequestActor]] = js.native
+  var assignedTo: js.UndefOr[NullableOption[ScheduleChangeRequestActor]] = js.undefined
   
-  var managerActionDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var managerActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var managerActionMessage: js.UndefOr[NullableOption[String]] = js.native
+  var managerActionMessage: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var managerUserId: js.UndefOr[NullableOption[String]] = js.native
+  var managerUserId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var senderDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var senderDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var senderMessage: js.UndefOr[NullableOption[String]] = js.native
+  var senderMessage: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var senderUserId: js.UndefOr[NullableOption[String]] = js.native
+  var senderUserId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var state: js.UndefOr[NullableOption[ScheduleChangeState]] = js.native
+  var state: js.UndefOr[NullableOption[ScheduleChangeState]] = js.undefined
 }
 object ScheduleChangeRequest {
   

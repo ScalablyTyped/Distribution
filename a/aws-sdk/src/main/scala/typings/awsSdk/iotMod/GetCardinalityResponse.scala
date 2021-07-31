@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCardinalityResponse extends StObject {
   
   /**
     * The approximate count of unique values that match the query.
     */
-  var cardinality: js.UndefOr[Count] = js.native
+  var cardinality: js.UndefOr[Count] = js.undefined
 }
 object GetCardinalityResponse {
   

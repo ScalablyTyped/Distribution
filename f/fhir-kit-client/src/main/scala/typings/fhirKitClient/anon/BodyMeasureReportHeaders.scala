@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.MeasureReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyMeasureReportHeaders extends StObject {
   
-  var body: MeasureReport = js.native
+  var body: MeasureReport
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MeasureReport = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MeasureReport
 }
 object BodyMeasureReportHeaders {
   
   @scala.inline
-  def apply(
-    body: MeasureReport,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.MeasureReport
-  ): BodyMeasureReportHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: MeasureReport, id: String): BodyMeasureReportHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "MeasureReport")
     __obj.asInstanceOf[BodyMeasureReportHeaders]
   }
   

@@ -3,21 +3,19 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnimationDescription extends StObject {
   
-  var animations: IVectorView[IPropertyAnimation] = js.native
+  var animations: IVectorView[IPropertyAnimation]
   
-  var delayLimit: Double = js.native
+  var delayLimit: Double
   
-  var staggerDelay: Double = js.native
+  var staggerDelay: Double
   
-  var staggerDelayFactor: Double = js.native
+  var staggerDelayFactor: Double
   
-  var zOrder: Double = js.native
+  var zOrder: Double
 }
 object IAnimationDescription {
   

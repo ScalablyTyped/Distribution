@@ -3,17 +3,16 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineEncodeEntry
-  extends EncodeEntry
+  extends StObject
+     with EncodeEntry
      with DefinedProperty {
   
-  var interpolate: js.UndefOr[ProductionRule[ScaledValueRef[Interpolate]]] = js.native
+  var interpolate: js.UndefOr[ProductionRule[ScaledValueRef[Interpolate]]] = js.undefined
   
-  var tension: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var tension: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 object LineEncodeEntry {
   
@@ -33,7 +32,7 @@ object LineEncodeEntry {
     def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
     @scala.inline
-    def setInterpolateVarargs(value: (Test with ScaledValueRef[Interpolate])*): Self = StObject.set(x, "interpolate", js.Array(value :_*))
+    def setInterpolateVarargs(value: (Test & ScaledValueRef[Interpolate])*): Self = StObject.set(x, "interpolate", js.Array(value :_*))
     
     @scala.inline
     def setTension(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
@@ -42,6 +41,6 @@ object LineEncodeEntry {
     def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
     @scala.inline
-    def setTensionVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "tension", js.Array(value :_*))
+    def setTensionVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "tension", js.Array(value :_*))
   }
 }

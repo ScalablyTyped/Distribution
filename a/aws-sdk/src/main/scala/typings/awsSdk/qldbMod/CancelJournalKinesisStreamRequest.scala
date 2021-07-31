@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelJournalKinesisStreamRequest extends StObject {
   
   /**
     * The name of the ledger.
     */
-  var LedgerName: typings.awsSdk.qldbMod.LedgerName = js.native
+  var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
     * The unique ID that QLDB assigns to each QLDB journal stream.
     */
-  var StreamId: UniqueId = js.native
+  var StreamId: UniqueId
 }
 object CancelJournalKinesisStreamRequest {
   

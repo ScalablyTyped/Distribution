@@ -10,9 +10,9 @@ React Masonry Layout ====================
 | ------------------ | :-------------: |
 | Full name          | react-masonry-layout |
 | Keywords           | react, masonry, infinite scroll, bricks |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 23143 |
+| # downloads        | 27911 |
 | # stars            | 0 |
 
 ## Links

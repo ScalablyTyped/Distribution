@@ -6,7 +6,6 @@ import typings.reactMathjax.anon.Children
 import typings.reactMathjax.anon.Formula
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,12 +30,11 @@ object mod {
     type Provider = Component[Children, MathJaxContextValue, js.Any]
   }
   
-  @js.native
   trait MathJaxContextValue extends StObject {
     
-    var MathJax: js.UndefOr[js.Object] = js.native
+    var MathJax: js.UndefOr[js.Object] = js.undefined
     
-    def registerNode(): Unit = js.native
+    def registerNode(): Unit
   }
   object MathJaxContextValue {
     

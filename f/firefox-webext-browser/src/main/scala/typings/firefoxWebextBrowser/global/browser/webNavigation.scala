@@ -24,7 +24,6 @@ import typings.firefoxWebextBrowser.browser.webNavigation.WebNavigationOnHistory
 import typings.firefoxWebextBrowser.browser.webNavigation.WebNavigationOnReferenceFragmentUpdatedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,22 +35,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object webNavigation {
   
+  @JSGlobal("browser.webNavigation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Retrieves information about all frames of a given tab.
     * @param details Information about the tab to retrieve all frames from.
     */
-  @JSGlobal("browser.webNavigation.getAllFrames")
-  @js.native
-  def getAllFrames(details: GetAllFramesDetails): js.Promise[js.Array[GetAllFramesReturnDetails]] = js.native
+  @scala.inline
+  def getAllFrames(details: GetAllFramesDetails): js.Promise[js.Array[GetAllFramesReturnDetails]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllFrames")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GetAllFramesReturnDetails]]]
   
   /* webNavigation functions */
   /**
     * Retrieves information about the given frame. A frame refers to an <iframe> or a <frame> of a web page and is identified by a tab ID and a frame ID.
     * @param details Information about the frame to retrieve information about.
     */
-  @JSGlobal("browser.webNavigation.getFrame")
-  @js.native
-  def getFrame(details: GetFrameDetails): js.Promise[GetFrameReturnDetails] = js.native
+  @scala.inline
+  def getFrame(details: GetFrameDetails): js.Promise[GetFrameReturnDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrame")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFrameReturnDetails]]
   
   /* webNavigation events */
   /** Fired when a navigation is about to occur. */

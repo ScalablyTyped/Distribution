@@ -13,59 +13,59 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the properties that are provided by all text frames, graphic objects, embedded objects and frame styles. */
-@js.native
-trait BaseFrameProperties extends UserDefinedAttributesSupplier {
+trait BaseFrameProperties
+  extends StObject
+     with UserDefinedAttributesSupplier {
   
   /**
     * contains the text frame the current frame is anchored to.
     *
     * The value is valid only if the AnchorType is TextContentAnchorType::AT_FRAME.
     */
-  var AnchorFrame: XTextFrame = js.native
+  var AnchorFrame: XTextFrame
   
   /**
     * contains the number of the page where the objects are anchored.
     *
     * The value is valid only if the AnchorType is TextContentAnchorType::AT_PAGE.
     */
-  var AnchorPageNo: Double = js.native
+  var AnchorPageNo: Double
   
   /** contains the color of the background of the object. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the name of the file filter for the background graphic. */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /** determines the position of the background graphic. */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL for the background graphic. */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /** If TRUE, the "BackColor" is ignored. */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** contains the distance from the border to the object. */
-  var BorderDistance: Double = js.native
+  var BorderDistance: Double
   
   /**
     * contains the bottom border of the object.
     * @see BaseFrame.com.sun.star.table.BorderLine
     */
-  var BottomBorder: BorderLine = js.native
+  var BottomBorder: BorderLine
   
   /** contains the distance from the bottom border to the object. */
-  var BottomBorderDistance: Double = js.native
+  var BottomBorderDistance: Double
   
   /** contains the bottom margin of the object. */
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
   /** determines if the content is protected. */
-  var ContentProtected: Boolean = js.native
+  var ContentProtected: Boolean
   
   /**
     * contains description for the object
@@ -74,19 +74,19 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * alternative tag for accessibility tools.
     * @since OOo 3.2
     */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * If the property {@link FillStyle} is set to FillStyle::GRADIENT, this describes the gradient used.
     * @since LibreOffice 4.1
     */
-  var FillGradient: Gradient = js.native
+  var FillGradient: Gradient
   
   /**
     * If the property {@link FillStyle} is set to FillStyle::GRADIENT, this is the name of the gradient used.
     * @since LibreOffice 4.1
     */
-  var FillGradientName: String = js.native
+  var FillGradientName: String
   
   /**
     * This enumeration selects the style the area will be filled with.
@@ -94,54 +94,54 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * Currently only set for gradients.
     * @since LibreOffice 4.1
     */
-  var FillStyle: typings.activexLibreoffice.com_.sun.star.drawing.FillStyle = js.native
+  var FillStyle: typings.activexLibreoffice.com_.sun.star.drawing.FillStyle
   
   /**
     * Grab bag of frame properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.2  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var FrameInteropGrabBag: SafeArray[PropertyValue] = js.native
+  var FrameInteropGrabBag: SafeArray[PropertyValue]
   
   /**
     * contains the height of the object (1/100 mm).
     *
     * It is only valid if {@link TextEmbeddedObject.RelativeHeight} is zero.
     */
-  var Height: Double = js.native
+  var Height: Double
   
   /**
     * determines the horizontal orientation of the object.
     * @see BaseFrame.HoriOrientation
     */
-  var HoriOrient: Double = js.native
+  var HoriOrient: Double
   
   /**
     * contains the horizontal position of the object (1/100 mm).
     *
     * It is only valid if "HoriOrient" is HoriOrientation_NONE.
     */
-  var HoriOrientPosition: Double = js.native
+  var HoriOrientPosition: Double
   
   /**
     * determines the environment of the object to which the orientation is related.
     * @see BaseFrame.RelOrientation
     */
-  var HoriOrientRelation: Double = js.native
+  var HoriOrientRelation: Double
   
   /** contains the name of the hyperlink that is set at the object. */
-  var HyperLinkName: String = js.native
+  var HyperLinkName: String
   
   /** contains the name of the target for a hyperlink that is set at the object. */
-  var HyperLinkTarget: String = js.native
+  var HyperLinkTarget: String
   
   /** contains the URL of a hyperlink that is set at the object. */
-  var HyperLinkURL: String = js.native
+  var HyperLinkURL: String
   
   /** determines whether the height follows the width. */
-  var IsSyncHeightToWidth: Boolean = js.native
+  var IsSyncHeightToWidth: Boolean
   
   /** determines whether the width follows the height. */
-  var IsSyncWidthToHeight: Boolean = js.native
+  var IsSyncWidthToHeight: Boolean
   
   /**
     * returns the actual size of the object.
@@ -150,38 +150,38 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * formatted as well. Thus if that was not done previously it may take some while to retrieve this value.
     * @since OOo 2.0.4
     */
-  var LayoutSize: Size = js.native
+  var LayoutSize: Size
   
   /**
     * contains the left border of the object.
     * @see BaseFrame.com.sun.star.table.BorderLine
     */
-  var LeftBorder: BorderLine = js.native
+  var LeftBorder: BorderLine
   
   /** contains the distance from the left border to the object. */
-  var LeftBorderDistance: Double = js.native
+  var LeftBorderDistance: Double
   
   /** contains the left margin of the object. */
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   /** determines if the object is opaque or transparent for text. */
-  var Opaque: Boolean = js.native
+  var Opaque: Boolean
   
   /** determines if the object is mirrored on even pages. */
-  var PageToggle: Boolean = js.native
+  var PageToggle: Boolean
   
   /** determines if the position is protected. */
-  var PositionProtected: Boolean = js.native
+  var PositionProtected: Boolean
   
   /** determines if the object is included in printing. */
-  var Print: Boolean = js.native
+  var Print: Boolean
   
   /**
     * contains the relative height of the object.
     *
     * It is only valid if it is greater than zero.
     */
-  var RelativeHeight: Double = js.native
+  var RelativeHeight: Double
   
   /**
     * contains the relation of the relative height of the object.
@@ -190,14 +190,14 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * @see com.sun.star.text.RelOrientation
     * @since LibreOffice 4.3
     */
-  var RelativeHeightRelation: Double = js.native
+  var RelativeHeightRelation: Double
   
   /**
     * contains the relative width of the object.
     *
     * It is only valid if it is greater than zero.
     */
-  var RelativeWidth: Double = js.native
+  var RelativeWidth: Double
   
   /**
     * contains the relation of the relative width of the object.
@@ -206,25 +206,25 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * @see com.sun.star.text.RelOrientation
     * @since LibreOffice 4.3
     */
-  var RelativeWidthRelation: Double = js.native
+  var RelativeWidthRelation: Double
   
   /**
     * contains the right border of the object.
     * @see BaseFrame.com.sun.star.table.BorderLine
     */
-  var RightBorder: BorderLine = js.native
+  var RightBorder: BorderLine
   
   /** contains the distance from the right border to the object. */
-  var RightBorderDistance: Double = js.native
+  var RightBorderDistance: Double
   
   /** contains the right margin of the object. */
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
   /** determines if the object gets an image map from a server. */
-  var ServerMap: Boolean = js.native
+  var ServerMap: Boolean
   
   /** contains the type of the shadow of the object. */
-  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat = js.native
+  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
   
   /**
     * This defines the degree of transparence of the shadow in percent.
@@ -232,26 +232,26 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * This is the same as setting the Color member of the {@link ShadowFormat} property to an ARGB color.
     * @since LibreOffice 4.2
     */
-  var ShadowTransparence: Double = js.native
+  var ShadowTransparence: Double
   
   /**
     * contains the size of the object.
     * @see BaseFrame.Height
     * @see BaseFrame.Width
     */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** determines if the size is protected. */
-  var SizeProtected: Boolean = js.native
+  var SizeProtected: Boolean
   
   /**
     * determines the type of the surrounding text.
     * @deprecated Deprecated
     */
-  var Surround: WrapTextMode = js.native
+  var Surround: WrapTextMode
   
   /** determines if the text of the paragraph in which the object is anchored, wraps around the object. */
-  var SurroundAnchorOnly: Boolean = js.native
+  var SurroundAnchorOnly: Boolean
   
   /**
     * contains short title for the object
@@ -259,45 +259,45 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * This short title is visible as an alternative tag in HTML format. Accessibility tools can read this text.
     * @since OOo 3.2
     */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * contains the top border of the object.
     * @see BaseFrame.com.sun.star.table.BorderLine
     */
-  var TopBorder: BorderLine = js.native
+  var TopBorder: BorderLine
   
   /** contains the distance from the top border to the object. */
-  var TopBorderDistance: Double = js.native
+  var TopBorderDistance: Double
   
   /** contains the top margin of the object. */
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
   /**
     * determines the vertical orientation of the object.
     * @see BaseFrame.VertOrientation
     */
-  var VertOrient: Double = js.native
+  var VertOrient: Double
   
   /**
     * contains the vertical position of the object (1/100 mm).
     *
     * It is only valid if {@link TextEmbeddedObject.VertOrient} is {@link VertOrientation.NONE} .
     */
-  var VertOrientPosition: Double = js.native
+  var VertOrientPosition: Double
   
   /**
     * determines the environment of the object to which the orientation is related.
     * @see BaseFrame.RelOrientation
     */
-  var VertOrientRelation: Double = js.native
+  var VertOrientRelation: Double
   
   /**
     * contains the width of the object (1/100 mm).
     *
     * It is only valid if {@link TextEmbeddedObject.RelativeWidth} is zero.
     */
-  var Width: Double = js.native
+  var Width: Double
   
   /**
     * determines the influence of the text wrap on the positioning of the shape
@@ -306,7 +306,7 @@ trait BaseFrameProperties extends UserDefinedAttributesSupplier {
     * values are given by {@link WrapInfluenceOnPosition}
     * @since OOo 2.0
     */
-  var WrapInfluenceOnPosition: Double = js.native
+  var WrapInfluenceOnPosition: Double
 }
 object BaseFrameProperties {
   

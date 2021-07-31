@@ -2,24 +2,23 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContractDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var baseContracts: js.Array[InheritanceSpecifier] = js.native
+  var baseContracts: js.Array[InheritanceSpecifier]
   
-  var kind: String = js.native
+  var kind: String
   
-  var name: String = js.native
+  var name: String
   
-  var subNodes: js.Array[ASTNode] = js.native
+  var subNodes: js.Array[ASTNode]
   
   @JSName("type")
-  var type_ContractDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition = js.native
+  var type_ContractDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition
 }
 object ContractDefinition {
   
@@ -28,11 +27,10 @@ object ContractDefinition {
     baseContracts: js.Array[InheritanceSpecifier],
     kind: String,
     name: String,
-    subNodes: js.Array[ASTNode],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition
+    subNodes: js.Array[ASTNode]
   ): ContractDefinition = {
     val __obj = js.Dynamic.literal(baseContracts = baseContracts.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subNodes = subNodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContractDefinition")
     __obj.asInstanceOf[ContractDefinition]
   }
   

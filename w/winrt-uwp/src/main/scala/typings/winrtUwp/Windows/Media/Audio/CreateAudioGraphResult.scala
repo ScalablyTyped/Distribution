@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of creating an audio graph. */
-@js.native
 trait CreateAudioGraphResult extends StObject {
   
   /** Gets the audio graph object. */
-  var graph: AudioGraph = js.native
+  var graph: AudioGraph
   
   /** Gets the status of audio graph creation. */
-  var status: AudioGraphCreationStatus = js.native
+  var status: AudioGraphCreationStatus
 }
 object CreateAudioGraphResult {
   

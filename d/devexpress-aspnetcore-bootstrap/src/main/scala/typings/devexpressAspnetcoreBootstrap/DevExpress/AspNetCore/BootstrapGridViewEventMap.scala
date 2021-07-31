@@ -2,75 +2,75 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapGridViewEventMap extends BootstrapGridBaseEventMap {
+trait BootstrapGridViewEventMap
+  extends StObject
+     with BootstrapGridBaseEventMap {
   
-  var batchEditChangesCanceling: GridViewBatchEditChangesCancelingEventArgs = js.native
+  var batchEditChangesCanceling: GridViewBatchEditChangesCancelingEventArgs
   
-  var batchEditChangesSaving: GridViewBatchEditChangesSavingEventArgs = js.native
+  var batchEditChangesSaving: GridViewBatchEditChangesSavingEventArgs
   
-  var batchEditConfirmShowing: GridViewBatchEditConfirmShowingEventArgs = js.native
+  var batchEditConfirmShowing: GridViewBatchEditConfirmShowingEventArgs
   
-  var batchEditEndEditing: GridViewBatchEditEndEditingEventArgs = js.native
+  var batchEditEndEditing: GridViewBatchEditEndEditingEventArgs
   
-  var batchEditRowDeleting: GridViewBatchEditRowDeletingEventArgs = js.native
+  var batchEditRowDeleting: GridViewBatchEditRowDeletingEventArgs
   
-  var batchEditRowInserting: GridViewBatchEditRowInsertingEventArgs = js.native
+  var batchEditRowInserting: GridViewBatchEditRowInsertingEventArgs
   
-  var batchEditRowValidating: GridViewBatchEditRowValidatingEventArgs = js.native
+  var batchEditRowValidating: GridViewBatchEditRowValidatingEventArgs
   
-  var batchEditStartEditing: GridViewBatchEditStartEditingEventArgs = js.native
+  var batchEditStartEditing: GridViewBatchEditStartEditingEventArgs
   
-  var batchEditTemplateCellFocused: GridViewBatchEditTemplateCellFocusedEventArgs = js.native
+  var batchEditTemplateCellFocused: GridViewBatchEditTemplateCellFocusedEventArgs
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var columnGrouping: GridViewColumnCancelEventArgs = js.native
+  var columnGrouping: GridViewColumnCancelEventArgs
   
-  var columnMoving: GridViewColumnMovingEventArgs = js.native
+  var columnMoving: GridViewColumnMovingEventArgs
   
-  var columnResized: GridViewColumnProcessingModeEventArgs = js.native
+  var columnResized: GridViewColumnProcessingModeEventArgs
   
-  var columnResizing: GridViewColumnCancelEventArgs = js.native
+  var columnResizing: GridViewColumnCancelEventArgs
   
-  var columnSorting: GridViewColumnCancelEventArgs = js.native
+  var columnSorting: GridViewColumnCancelEventArgs
   
-  var columnStartDragging: GridViewColumnCancelEventArgs = js.native
+  var columnStartDragging: GridViewColumnCancelEventArgs
   
-  var contextMenu: GridViewContextMenuEventArgs = js.native
+  var contextMenu: GridViewContextMenuEventArgs
   
-  var contextMenuItemClick: GridViewContextMenuItemClickEventArgs = js.native
+  var contextMenuItemClick: GridViewContextMenuItemClickEventArgs
   
-  var customButtonClick: GridViewCustomButtonEventArgs = js.native
+  var customButtonClick: GridViewCustomButtonEventArgs
   
-  var customizationWindowCloseUp: EventArgs = js.native
+  var customizationWindowCloseUp: EventArgs
   
-  var detailRowCollapsing: GridViewRowCancelEventArgs = js.native
+  var detailRowCollapsing: GridViewRowCancelEventArgs
   
-  var detailRowExpanding: GridViewRowCancelEventArgs = js.native
+  var detailRowExpanding: GridViewRowCancelEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var focusedCellChanging: GridViewFocusedCellChangingEventArgs = js.native
+  var focusedCellChanging: GridViewFocusedCellChangingEventArgs
   
-  var focusedRowChanged: GridViewFocusEventArgs = js.native
+  var focusedRowChanged: GridViewFocusEventArgs
   
-  var rowClick: GridViewRowClickEventArgs = js.native
+  var rowClick: GridViewRowClickEventArgs
   
-  var rowCollapsing: GridViewRowCancelEventArgs = js.native
+  var rowCollapsing: GridViewRowCancelEventArgs
   
-  var rowDblClick: GridViewRowClickEventArgs = js.native
+  var rowDblClick: GridViewRowClickEventArgs
   
-  var rowExpanding: GridViewRowCancelEventArgs = js.native
+  var rowExpanding: GridViewRowCancelEventArgs
   
-  var rowFocusing: GridViewRowFocusingEventArgs = js.native
+  var rowFocusing: GridViewRowFocusingEventArgs
   
-  var selectionChanged: GridViewSelectionEventArgs = js.native
+  var selectionChanged: GridViewSelectionEventArgs
 }
 object BootstrapGridViewEventMap {
   

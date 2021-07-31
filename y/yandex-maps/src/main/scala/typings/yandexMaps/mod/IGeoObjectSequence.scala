@@ -2,12 +2,12 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGeoObjectSequence
-  extends ICustomizable
+  extends StObject
+     with ICustomizable
      with IParentOnMap {
   
   def each(callback: js.Function1[/* geoObject */ IGeoObject[IGeometry], Unit]): Unit = js.native

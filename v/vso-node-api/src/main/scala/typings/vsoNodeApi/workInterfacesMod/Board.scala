@@ -3,27 +3,27 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Board extends BoardReference {
+trait Board
+  extends StObject
+     with BoardReference {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var allowedMappings: StringDictionary[StringDictionary[js.Array[String]]] = js.native
+  var allowedMappings: StringDictionary[StringDictionary[js.Array[String]]]
   
-  var canEdit: Boolean = js.native
+  var canEdit: Boolean
   
-  var columns: js.Array[BoardColumn] = js.native
+  var columns: js.Array[BoardColumn]
   
-  var fields: BoardFields = js.native
+  var fields: BoardFields
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var rows: js.Array[BoardRow] = js.native
+  var rows: js.Array[BoardRow]
 }
 object Board {
   

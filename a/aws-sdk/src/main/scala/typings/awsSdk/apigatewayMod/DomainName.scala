@@ -2,91 +2,89 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainName extends StObject {
   
   /**
     * The reference to an AWS-managed certificate that will be used by edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
     */
-  var certificateArn: js.UndefOr[String] = js.native
+  var certificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the certificate that will be used by edge-optimized endpoint for this domain name.
     */
-  var certificateName: js.UndefOr[String] = js.native
+  var certificateName: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the certificate that was used by edge-optimized endpoint for this domain name was uploaded.
     */
-  var certificateUploadDate: js.UndefOr[Timestamp] = js.native
+  var certificateUploadDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The domain name of the Amazon CloudFront distribution associated with this custom domain name for an edge-optimized endpoint. You set up this association when adding a DNS record pointing the custom domain name to this distribution name. For more information about CloudFront distributions, see the Amazon CloudFront documentation.
     */
-  var distributionDomainName: js.UndefOr[String] = js.native
+  var distributionDomainName: js.UndefOr[String] = js.undefined
   
   /**
     * The region-agnostic Amazon Route 53 Hosted Zone ID of the edge-optimized endpoint. The valid value is Z2FDTNDATAQYW2 for all the regions. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway. 
     */
-  var distributionHostedZoneId: js.UndefOr[String] = js.native
+  var distributionHostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The custom domain name as an API host name, for example, my-api.example.com.
     */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the DomainName migration. The valid values are AVAILABLE and UPDATING. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete. If it is AVAILABLE, the domain can be updated.
     */
-  var domainNameStatus: js.UndefOr[DomainNameStatus] = js.native
+  var domainNameStatus: js.UndefOr[DomainNameStatus] = js.undefined
   
   /**
     * An optional text message containing detailed information about status of the DomainName migration.
     */
-  var domainNameStatusMessage: js.UndefOr[String] = js.native
+  var domainNameStatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The endpoint configuration of this DomainName showing the endpoint types of the domain name.
     */
-  var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.native
+  var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.undefined
   
   /**
     * The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway performs two-way authentication between the client and the server. Clients must present a trusted certificate to access your API.
     */
-  var mutualTlsAuthentication: js.UndefOr[MutualTlsAuthentication] = js.native
+  var mutualTlsAuthentication: js.UndefOr[MutualTlsAuthentication] = js.undefined
   
   /**
     * The reference to an AWS-managed certificate that will be used for validating the regional domain name. AWS Certificate Manager is the only supported source.
     */
-  var regionalCertificateArn: js.UndefOr[String] = js.native
+  var regionalCertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the certificate that will be used for validating the regional domain name.
     */
-  var regionalCertificateName: js.UndefOr[String] = js.native
+  var regionalCertificateName: js.UndefOr[String] = js.undefined
   
   /**
     * The domain name associated with the regional endpoint for this custom domain name. You set up this association by adding a DNS record that points the custom domain name to this regional domain name. The regional domain name is returned by API Gateway when you create a regional endpoint.
     */
-  var regionalDomainName: js.UndefOr[String] = js.native
+  var regionalDomainName: js.UndefOr[String] = js.undefined
   
   /**
     * The region-specific Amazon Route 53 Hosted Zone ID of the regional endpoint. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway. 
     */
-  var regionalHostedZoneId: js.UndefOr[String] = js.native
+  var regionalHostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are TLS_1_0 and TLS_1_2.
     */
-  var securityPolicy: js.UndefOr[SecurityPolicy] = js.native
+  var securityPolicy: js.UndefOr[SecurityPolicy] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
 }
 object DomainName {
   

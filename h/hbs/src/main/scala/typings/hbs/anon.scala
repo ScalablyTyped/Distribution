@@ -5,15 +5,13 @@ import typings.handlebars.HandlebarsTemplateDelegate
 import typings.handlebars.hbs.AST.helpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofAST extends StObject {
     
-    val helpers: typings.handlebars.hbs.AST.helpers = js.native
+    val helpers: typings.handlebars.hbs.AST.helpers
   }
   object TypeofAST {
     
@@ -31,30 +29,29 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofUtils extends StObject {
     
-    def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
+    def blockParams(obj: js.Array[js.Any], ids: js.Array[js.Any]): js.Array[js.Any]
     
-    def createFrame(`object`: js.Any): js.Any = js.native
+    def createFrame(`object`: js.Any): js.Any
     
-    def escapeExpression(str: String): String = js.native
+    def escapeExpression(str: String): String
     
-    def extend(obj: js.Any, source: js.Any*): js.Any = js.native
+    def extend(obj: js.Any, source: js.Any*): js.Any
     
-    def isArray(obj: js.Any): Boolean = js.native
+    def isArray(obj: js.Any): Boolean
     
-    def isEmpty(obj: js.Any): Boolean = js.native
+    def isEmpty(obj: js.Any): Boolean
     
-    def isFunction(obj: js.Any): Boolean = js.native
+    def isFunction(obj: js.Any): Boolean
     
-    def toString(obj: js.Any): String = js.native
+    def toString(obj: js.Any): String
   }
   object TypeofUtils {
     
     @scala.inline
     def apply(
-      blockParams: (js.Array[_], js.Array[_]) => js.Array[_],
+      blockParams: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
       createFrame: js.Any => js.Any,
       escapeExpression: String => String,
       extend: (js.Any, /* repeated */ js.Any) => js.Any,
@@ -72,7 +69,7 @@ object anon {
     implicit class TypeofUtilsMutableBuilder[Self <: TypeofUtils] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBlockParams(value: (js.Array[_], js.Array[_]) => js.Array[_]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
+      def setBlockParams(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCreateFrame(value: js.Any => js.Any): Self = StObject.set(x, "createFrame", js.Any.fromFunction1(value))
@@ -100,7 +97,7 @@ object anon {
   @js.native
   trait TypeofVM extends StObject {
     
-    def resolvePartial[T](partial: js.UndefOr[scala.Nothing], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
+    def resolvePartial[T](partial: Unit, context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
     def resolvePartial[T](partial: HandlebarsTemplateDelegate[T], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
   }
 }

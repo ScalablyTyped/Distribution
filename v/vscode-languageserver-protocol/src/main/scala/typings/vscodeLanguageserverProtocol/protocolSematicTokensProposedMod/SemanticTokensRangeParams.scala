@@ -6,23 +6,22 @@ import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensRangeParams
-  extends WorkDoneProgressParams
+  extends StObject
+     with WorkDoneProgressParams
      with PartialResultParams {
   
   /**
     * The range the semantic tokens are requested for.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The text document.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object SemanticTokensRangeParams {
   

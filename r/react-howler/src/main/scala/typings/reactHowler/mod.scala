@@ -4,7 +4,6 @@ import typings.howler.mod.Howl
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,47 +19,52 @@ object mod {
   object HOWLER_STATE extends StObject {
     
     @js.native
-    sealed trait LOADED extends HOWLER_STATE
+    sealed trait LOADED
+      extends StObject
+         with HOWLER_STATE
     
     @js.native
-    sealed trait LOADING extends HOWLER_STATE
+    sealed trait LOADING
+      extends StObject
+         with HOWLER_STATE
     
     @js.native
-    sealed trait UNLOADED extends HOWLER_STATE
+    sealed trait UNLOADED
+      extends StObject
+         with HOWLER_STATE
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var format: js.UndefOr[js.Array[String]] = js.native
+    var format: js.UndefOr[js.Array[String]] = js.undefined
     
-    var html5: js.UndefOr[Boolean] = js.native
+    var html5: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoadError: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.native
+    var onLoadError: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.native
+    var onStop: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
     
-    var onVolume: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.native
+    var onVolume: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
     
-    var playing: js.UndefOr[Boolean] = js.native
+    var playing: js.UndefOr[Boolean] = js.undefined
     
-    var preload: js.UndefOr[Boolean] = js.native
+    var preload: js.UndefOr[Boolean] = js.undefined
     
-    var src: String | js.Array[String] = js.native
+    var src: String | js.Array[String]
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object Props {
     

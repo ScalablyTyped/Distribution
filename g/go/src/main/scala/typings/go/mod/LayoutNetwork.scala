@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,13 +44,9 @@ class LayoutNetwork () extends StObject {
     *        default ignores link label nodes or links connecting with them
     */
   def addParts(parts: Iterable[Part]): Unit = js.native
-  def addParts(
-    parts: Iterable[Part],
-    toplevelonly: js.UndefOr[scala.Nothing],
-    pred: js.Function1[/* part */ Part, Boolean]
-  ): Unit = js.native
   def addParts(parts: Iterable[Part], toplevelonly: Boolean): Unit = js.native
   def addParts(parts: Iterable[Part], toplevelonly: Boolean, pred: js.Function1[/* part */ Part, Boolean]): Unit = js.native
+  def addParts(parts: Iterable[Part], toplevelonly: Unit, pred: js.Function1[/* part */ Part, Boolean]): Unit = js.native
   
   /**
     * Adds a LayoutVertex to the network.

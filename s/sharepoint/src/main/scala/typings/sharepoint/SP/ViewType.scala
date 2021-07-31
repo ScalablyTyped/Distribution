@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait ViewType extends StObject
 object ViewType extends StObject {
   
   @js.native
-  sealed trait calendar extends ViewType
+  sealed trait calendar
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait chart extends ViewType
+  sealed trait chart
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait gantt extends ViewType
+  sealed trait gantt
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait grid extends ViewType
+  sealed trait grid
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait html extends ViewType
+  sealed trait html
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait none extends ViewType
+  sealed trait none
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait recurrence extends ViewType
+  sealed trait recurrence
+    extends StObject
+       with ViewType
 }

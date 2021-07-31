@@ -4,29 +4,29 @@ import typings.std.Plugin
 import typings.unusedFilesWebpackPlugin.anon.Ignore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("unused-files-webpack-plugin", "UnusedFilesWebpackPlugin")
   @js.native
-  class UnusedFilesWebpackPlugin protected () extends Plugin {
+  class UnusedFilesWebpackPlugin protected ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var failOnUnused: Boolean = js.native
+    var failOnUnused: Boolean
     
-    var globOptions: js.UndefOr[Ignore] = js.native
+    var globOptions: js.UndefOr[Ignore] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var patterns: js.UndefOr[js.Array[String]] = js.native
+    var patterns: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

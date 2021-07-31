@@ -2,61 +2,59 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
   /**
     * @default 'dynatable'
     */
-  var dynatable: js.UndefOr[String] = js.native
+  var dynatable: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'offset'
     */
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'page'
     */
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'perPage'
     */
-  var perPage: js.UndefOr[String] = js.native
+  var perPage: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'queries'
     */
-  var queries: js.UndefOr[String] = js.native
+  var queries: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'queryRecordCount'
     */
-  var queryRecordCount: js.UndefOr[String] = js.native
+  var queryRecordCount: js.UndefOr[String] = js.undefined
   
   /**
     * @default null
     */
-  var record: js.UndefOr[js.Object] = js.native
+  var record: js.UndefOr[js.Object] = js.undefined
   
   /**
     * @default 'records'
     */
-  var records: js.UndefOr[String] = js.native
+  var records: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'sorts'
     */
-  var sorts: js.UndefOr[String] = js.native
+  var sorts: js.UndefOr[String] = js.undefined
   
   /**
     * @default 'totalRecordCount'
     */
-  var totalRecordCount: js.UndefOr[String] = js.native
+  var totalRecordCount: js.UndefOr[String] = js.undefined
 }
 object Params {
   

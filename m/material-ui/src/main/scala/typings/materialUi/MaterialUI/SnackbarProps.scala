@@ -7,31 +7,29 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnackbarProps extends StObject {
   
-  var action: js.UndefOr[ReactNode] = js.native
+  var action: js.UndefOr[ReactNode] = js.undefined
   
-  var autoHideDuration: js.UndefOr[Double] = js.native
+  var autoHideDuration: js.UndefOr[Double] = js.undefined
   
-  var bodyStyle: js.UndefOr[CSSProperties] = js.native
+  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var message: ReactNode = js.native
+  var message: ReactNode
   
-  var onActionClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onActionClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+  var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
   
-  var open: Boolean = js.native
+  var open: Boolean
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object SnackbarProps {
   

@@ -2,10 +2,13 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MathUtils {
+  
+  @JSImport("three", "MathUtils")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("three", "MathUtils.DEG2RAD")
   @js.native
@@ -15,86 +18,65 @@ object MathUtils {
   @js.native
   val RAD2DEG: Double = js.native
   
-  @JSImport("three", "MathUtils.ceilPowerOfTwo")
-  @js.native
-  def ceilPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def ceilPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ceilPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.clamp")
-  @js.native
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.degToRad")
-  @js.native
-  def degToRad(degrees: Double): Double = js.native
+  @scala.inline
+  def degToRad(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degToRad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.euclideanModulo")
-  @js.native
-  def euclideanModulo(n: Double, m: Double): Double = js.native
+  @scala.inline
+  def euclideanModulo(n: Double, m: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclideanModulo")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.floorPowerOfTwo")
-  @js.native
-  def floorPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def floorPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("floorPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.generateUUID")
-  @js.native
-  def generateUUID(): String = js.native
+  @scala.inline
+  def generateUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[String]
   
-  @JSImport("three", "MathUtils.isPowerOfTwo")
-  @js.native
-  def isPowerOfTwo(value: Double): Boolean = js.native
+  @scala.inline
+  def isPowerOfTwo(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("three", "MathUtils.lerp")
-  @js.native
-  def lerp(x: Double, y: Double, t: Double): Double = js.native
+  @scala.inline
+  def lerp(x: Double, y: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.mapLinear")
-  @js.native
-  def mapLinear(x: Double, a1: Double, a2: Double, b1: Double, b2: Double): Double = js.native
+  @scala.inline
+  def mapLinear(x: Double, a1: Double, a2: Double, b1: Double, b2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mapLinear")(x.asInstanceOf[js.Any], a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.nearestPowerOfTwo")
-  @js.native
-  def nearestPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def nearestPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nearestPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.nextPowerOfTwo")
-  @js.native
-  def nextPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def nextPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.radToDeg")
-  @js.native
-  def radToDeg(radians: Double): Double = js.native
+  @scala.inline
+  def radToDeg(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radToDeg")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.randFloat")
-  @js.native
-  def randFloat(low: Double, high: Double): Double = js.native
+  @scala.inline
+  def randFloat(low: Double, high: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randFloat")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.randFloatSpread")
-  @js.native
-  def randFloatSpread(range: Double): Double = js.native
+  @scala.inline
+  def randFloatSpread(range: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randFloatSpread")(range.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.randInt")
-  @js.native
-  def randInt(low: Double, high: Double): Double = js.native
+  @scala.inline
+  def randInt(low: Double, high: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randInt")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.random16")
-  @js.native
-  def random16(): Double = js.native
+  @scala.inline
+  def random16(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random16")().asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.seededRandom")
-  @js.native
-  def seededRandom(): Double = js.native
-  @JSImport("three", "MathUtils.seededRandom")
-  @js.native
-  def seededRandom(seed: Double): Double = js.native
+  @scala.inline
+  def seededRandom(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seededRandom")().asInstanceOf[Double]
+  @scala.inline
+  def seededRandom(seed: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seededRandom")(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.setQuaternionFromProperEuler")
-  @js.native
-  def setQuaternionFromProperEuler(q: typings.three.quaternionMod.Quaternion, a: Double, b: Double, c: Double, order: String): Unit = js.native
+  @scala.inline
+  def setQuaternionFromProperEuler(q: typings.three.quaternionMod.Quaternion, a: Double, b: Double, c: Double, order: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setQuaternionFromProperEuler")(q.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("three", "MathUtils.smootherstep")
-  @js.native
-  def smootherstep(x: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def smootherstep(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smootherstep")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("three", "MathUtils.smoothstep")
-  @js.native
-  def smoothstep(x: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def smoothstep(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smoothstep")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

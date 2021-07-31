@@ -11,7 +11,6 @@ import typings.activexOffice.Office.SmartArtLayout
 import typings.activexOffice.Office.XlChartType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -96,189 +95,37 @@ trait Shapes extends StObject {
   def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
   
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.Any,
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.Any,
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any
-  ): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Anchor: js.Any
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any): Shape = js.native
-  def AddSmartArt(
-    Layout: SmartArtLayout,
-    Left: js.Any,
-    Top: js.Any,
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Anchor: js.Any
-  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: Unit, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: js.Any, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: Unit, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: Unit, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: Unit, Width: Unit, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: js.Any, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: Unit, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: Unit, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: js.Any, Width: Unit, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: js.Any, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: js.Any, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: js.Any, Height: Unit, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Unit, Anchor: js.Any): Shape = js.native
   
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,

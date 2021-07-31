@@ -2,46 +2,44 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GEEventEmitter extends StObject {
   
   /**
     * Triggers an event when the user clicks a location in Google Earth with the mouse.
     */
-  def click(event: KmlMouseEvent): Unit = js.native
+  def click(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user double clicks a location in Google Earth with the mouse.
     */
-  def dblclick(event: KmlMouseEvent): Unit = js.native
+  def dblclick(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user presses the mouse button over a location in Google Earth.
     */
-  def mousedown(event: KmlMouseEvent): Unit = js.native
+  def mousedown(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user moves the mouse inside Google Earth.
     */
-  def mousemove(event: KmlMouseEvent): Unit = js.native
+  def mousemove(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user moves the mouse off of the object in Google Earth.
     */
-  def mouseout(event: KmlMouseEvent): Unit = js.native
+  def mouseout(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user moves the mouse pointer over a location in Google Earth.
     */
-  def mouseover(event: KmlMouseEvent): Unit = js.native
+  def mouseover(event: KmlMouseEvent): Unit
   
   /**
     * Triggers an event when the user releases the mouse button over a location in Google Earth.
     */
-  def mouseup(event: KmlMouseEvent): Unit = js.native
+  def mouseup(event: KmlMouseEvent): Unit
 }
 object GEEventEmitter {
   

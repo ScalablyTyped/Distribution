@@ -2,30 +2,28 @@ package typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for AuthorizeEnvironment.
   */
-@js.native
 trait SchemaAuthorizeEnvironmentRequest extends StObject {
   
   /**
     * The OAuth access token that should be sent to the environment.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the credentials expire. If not set, defaults to one hour
     * from when the server received the request.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth ID token that should be sent to the environment.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthorizeEnvironmentRequest {
   

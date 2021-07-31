@@ -4,78 +4,63 @@ import typings.sqlTemplate.sqlTemplateBooleans.`false`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(parts: TemplateStringsArray, values: js.Any*): Fragment = (^.asInstanceOf[js.Dynamic].apply(parts.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  
   @JSImport("sql-template", JSImport.Namespace)
   @js.native
-  def apply(parts: TemplateStringsArray, values: js.Any*): Fragment = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sql-template", "insert")
-  @js.native
-  def insert(table: String, values: js.Object): Fragment = js.native
+  @scala.inline
+  def insert(table: String, values: js.Object): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(table.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Fragment]
   
-  @JSImport("sql-template", "insert_bulk")
-  @js.native
-  def insertBulk(table: String, keys: js.Array[String], values: js.Array[js.Array[_]]): Fragment = js.native
+  @scala.inline
+  def insertBulk(table: String, keys: js.Array[String], values: js.Array[js.Array[js.Any]]): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("insert_bulk")(table.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Fragment]
   
-  @JSImport("sql-template", "search_blob")
-  @js.native
-  def searchBlob(search_field: String, qs: String): Fragment | `false` = js.native
-  @JSImport("sql-template", "search_blob")
-  @js.native
-  def searchBlob(search_field: String, qs: String, main_field: js.UndefOr[scala.Nothing], LIKE: String): Fragment | `false` = js.native
-  @JSImport("sql-template", "search_blob")
-  @js.native
-  def searchBlob(search_field: String, qs: String, main_field: String): Fragment | `false` = js.native
-  @JSImport("sql-template", "search_blob")
-  @js.native
-  def searchBlob(search_field: String, qs: String, main_field: String, LIKE: String): Fragment | `false` = js.native
+  @scala.inline
+  def searchBlob(search_field: String, qs: String): Fragment | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("search_blob")(search_field.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[Fragment | `false`]
+  @scala.inline
+  def searchBlob(search_field: String, qs: String, main_field: String): Fragment | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("search_blob")(search_field.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], main_field.asInstanceOf[js.Any])).asInstanceOf[Fragment | `false`]
+  @scala.inline
+  def searchBlob(search_field: String, qs: String, main_field: String, LIKE: String): Fragment | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("search_blob")(search_field.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], main_field.asInstanceOf[js.Any], LIKE.asInstanceOf[js.Any])).asInstanceOf[Fragment | `false`]
+  @scala.inline
+  def searchBlob(search_field: String, qs: String, main_field: Unit, LIKE: String): Fragment | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("search_blob")(search_field.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], main_field.asInstanceOf[js.Any], LIKE.asInstanceOf[js.Any])).asInstanceOf[Fragment | `false`]
   
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.UndefOr[scala.Nothing], cols: js.UndefOr[scala.Nothing], extra: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.UndefOr[scala.Nothing], cols: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.UndefOr[scala.Nothing], cols: String, extra: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.Any): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.Any, cols: js.UndefOr[scala.Nothing], extra: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.Any, cols: String): Fragment = js.native
-  @JSImport("sql-template", "select")
-  @js.native
-  def select(table: String, where: js.Any, cols: String, extra: String): Fragment = js.native
+  @scala.inline
+  def select(table: String): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: js.Any): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: js.Any, cols: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: js.Any, cols: String, extra: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: js.Any, cols: Unit, extra: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: Unit, cols: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: Unit, cols: String, extra: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def select(table: String, where: Unit, cols: Unit, extra: String): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(table.asInstanceOf[js.Any], where.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Fragment]
   
-  @JSImport("sql-template", "update")
-  @js.native
-  def update(table: String, values: js.Object): Fragment = js.native
-  @JSImport("sql-template", "update")
-  @js.native
-  def update(table: String, values: js.Object, where: js.Any): Fragment = js.native
+  @scala.inline
+  def update(table: String, values: js.Object): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(table.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  @scala.inline
+  def update(table: String, values: js.Object, where: js.Any): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(table.asInstanceOf[js.Any], values.asInstanceOf[js.Any], where.asInstanceOf[js.Any])).asInstanceOf[Fragment]
   
   type ChainFn = js.Function2[/* values */ js.Array[js.Any], /* part */ String, String]
   
-  @js.native
   trait Fragment extends StObject {
     
-    var raw: String = js.native
+    var raw: String
     
-    var text: String = js.native
+    var text: String
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Fragment {
     
@@ -95,7 +80,7 @@ object mod {
       def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

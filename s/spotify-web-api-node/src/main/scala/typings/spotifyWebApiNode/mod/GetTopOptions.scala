@@ -5,13 +5,13 @@ import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.medium_term
 import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.short_term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetTopOptions extends PaginationOptions {
+trait GetTopOptions
+  extends StObject
+     with PaginationOptions {
   
-  var time_range: js.UndefOr[long_term | medium_term | short_term] = js.native
+  var time_range: js.UndefOr[long_term | medium_term | short_term] = js.undefined
 }
 object GetTopOptions {
   

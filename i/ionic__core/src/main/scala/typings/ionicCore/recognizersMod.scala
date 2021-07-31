@@ -2,25 +2,26 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recognizersMod {
   
-  @JSImport("@ionic/core/dist/types/utils/gesture/recognizers", "createPanRecognizer")
+  @JSImport("@ionic/core/dist/types/utils/gesture/recognizers", JSImport.Namespace)
   @js.native
-  def createPanRecognizer(direction: String, thresh: Double, maxAngle: Double): PanRecognizer = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createPanRecognizer(direction: String, thresh: Double, maxAngle: Double): PanRecognizer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPanRecognizer")(direction.asInstanceOf[js.Any], thresh.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any])).asInstanceOf[PanRecognizer]
+  
   trait PanRecognizer extends StObject {
     
-    def detect(x: Double, y: Double): Boolean = js.native
+    def detect(x: Double, y: Double): Boolean
     
-    def getDirection(): Double = js.native
+    def getDirection(): Double
     
-    def isGesture(): Boolean = js.native
+    def isGesture(): Boolean
     
-    def start(x: Double, y: Double): Unit = js.native
+    def start(x: Double, y: Double): Unit
   }
   object PanRecognizer {
     

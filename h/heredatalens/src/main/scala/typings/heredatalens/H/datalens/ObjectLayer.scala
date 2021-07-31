@@ -10,7 +10,6 @@ import typings.heremaps.H.map.Icon
 import typings.heremaps.H.map.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ObjectLayer
-  extends typings.heremaps.H.map.layer.ObjectLayer {
+  extends StObject
+     with typings.heremaps.H.map.layer.ObjectLayer {
   
   /**
     * Force re-rendering of the layer. In the case where the callbacks passed to the layer options are not pure functions, you can call this method to force re-rendering.
@@ -43,14 +43,13 @@ object ObjectLayer {
     * Then, the data points are clustered according to clustering.options. Clustering produces clusters and noise points (data points that are not clustered).
     * Clusters and noise points must be presented as map objects with the rowToMapObject callback and can be styled with the rowToStyle callback.
     */
-  @js.native
   trait Clustering extends StObject {
     
     /** Defines clustering options as a function of the zoom level */
-    def options(zoom: Zoom): ClusteringOptions = js.native
+    def options(zoom: Zoom): ClusteringOptions
     
     /** Defines data points from rows */
-    def rowToDataPoint(row: Row): DataPoint = js.native
+    def rowToDataPoint(row: Row): DataPoint
   }
   object Clustering {
     
@@ -82,20 +81,19 @@ object ObjectLayer {
     * Output from the rowToStyle callback.
     * Defines the styles or the icon that is applied to the map object.
     */
-  @js.native
   trait ObjectStyleOptions extends StObject {
     
     /** Style of arrows to render along a polyline */
-    var arrows: js.UndefOr[typings.heremaps.H.map.ArrowStyle.Options] = js.native
+    var arrows: js.UndefOr[typings.heremaps.H.map.ArrowStyle.Options] = js.undefined
     
     /** Marker icon */
-    var icon: Icon = js.native
+    var icon: Icon
     
     /** Spatial style */
-    var style: js.UndefOr[typings.heremaps.H.map.SpatialStyle.Options] = js.native
+    var style: js.UndefOr[typings.heremaps.H.map.SpatialStyle.Options] = js.undefined
     
     /** The z-index value of the map object, default is 0 */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ObjectStyleOptions {
     
@@ -137,20 +135,19 @@ object ObjectLayer {
     * By default this step is processed with ObjectLayer.defaultDataToRows. This behavior can be changed by defining the dataToRows callback.
     * In the next step each row must be presented as a map object with the rowToMapObject callback. Data-driven styling can be provided with the rowToStyle callback.
     */
-  @js.native
   trait Options extends StObject {
     
     /** When present, client-side clustering is applied */
-    var clustering: js.UndefOr[Clustering] = js.native
+    var clustering: js.UndefOr[Clustering] = js.undefined
     
     /** Defines quantization of data for improving data-driven styling performance */
-    var dataDomains: js.UndefOr[DataDomains] = js.native
+    var dataDomains: js.UndefOr[DataDomains] = js.undefined
     
     /** Defines how the input data is split by rows. You can specify this callback to define client-side aggregation and filtering. */
-    var dataToRows: js.UndefOr[js.Function1[/* data */ Data, js.Array[Row]]] = js.native
+    var dataToRows: js.UndefOr[js.Function1[/* data */ Data, js.Array[Row]]] = js.undefined
     
     /** Defines how each row is presented on the map (eg marker, polygon) */
-    def rowToMapObject(row: Row, z: Zoom): Object = js.native
+    def rowToMapObject(row: Row, z: Zoom): Object
     
     /**
       * Defines map object style and icon according to data row and zoom level.
@@ -158,7 +155,7 @@ object ObjectLayer {
       */
     var rowToStyle: js.UndefOr[
         js.Function3[/* row */ Row, /* z */ Zoom, /* styleState */ StyleState, ObjectStyleOptions]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -205,16 +202,15 @@ object ObjectLayer {
     * Each row is translated to map objects with the rowToMapObject callback. By default each row is an Object where property names correspond to data column names.
     * This representation can be changed with the dataToRows callback.
     */
-  @js.native
   trait Row extends StObject {
     
-    def getPosition(): Point = js.native
+    def getPosition(): Point
     
-    def isCluster(): Boolean = js.native
+    def isCluster(): Boolean
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
   }
   object Row {
     

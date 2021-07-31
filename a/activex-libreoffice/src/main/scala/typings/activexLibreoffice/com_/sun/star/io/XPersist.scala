@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to write this object to an URL or read it from an URL. */
-@js.native
-trait XPersist extends XInterface {
+trait XPersist
+  extends StObject
+     with XInterface {
   
   /** reads all the persistent data of the object from the URL. */
-  def read(URL: String): Unit = js.native
+  def read(URL: String): Unit
   
   /** writes all the persistent data of the object to the URL. */
-  def write(URL: String): Unit = js.native
+  def write(URL: String): Unit
 }
 object XPersist {
   

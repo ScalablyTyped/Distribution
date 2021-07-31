@@ -2,11 +2,10 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MockInstance[T, Y /* <: js.Array[_] */] extends StObject {
+trait MockInstance[T, Y /* <: js.Array[js.Any] */] extends StObject {
   
   /**
     * Returns the function that was set as the implementation of the mock (using mockImplementation).

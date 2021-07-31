@@ -2,36 +2,34 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfservicePermissions extends StObject {
   
   /**
     * Specifies whether users can change the compute type (bundle) for their WorkSpace.
     */
-  var ChangeComputeType: js.UndefOr[ReconnectEnum] = js.native
+  var ChangeComputeType: js.UndefOr[ReconnectEnum] = js.undefined
   
   /**
     * Specifies whether users can increase the volume size of the drives on their WorkSpace.
     */
-  var IncreaseVolumeSize: js.UndefOr[ReconnectEnum] = js.native
+  var IncreaseVolumeSize: js.UndefOr[ReconnectEnum] = js.undefined
   
   /**
     * Specifies whether users can rebuild the operating system of a WorkSpace to its original state.
     */
-  var RebuildWorkspace: js.UndefOr[ReconnectEnum] = js.native
+  var RebuildWorkspace: js.UndefOr[ReconnectEnum] = js.undefined
   
   /**
     * Specifies whether users can restart their WorkSpace.
     */
-  var RestartWorkspace: js.UndefOr[ReconnectEnum] = js.native
+  var RestartWorkspace: js.UndefOr[ReconnectEnum] = js.undefined
   
   /**
     * Specifies whether users can switch the running mode of their WorkSpace.
     */
-  var SwitchRunningMode: js.UndefOr[ReconnectEnum] = js.native
+  var SwitchRunningMode: js.UndefOr[ReconnectEnum] = js.undefined
 }
 object SelfservicePermissions {
   

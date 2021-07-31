@@ -3,45 +3,43 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simplified Show Object
   * [show object (simplified)](https://developer.spotify.com/documentation/web-api/reference/object-model/#show-object-simplified)
   */
-@js.native
 trait ShowObjectSimplified extends StObject {
   
-  var available_markets: js.UndefOr[js.Array[String]] = js.native
+  var available_markets: js.UndefOr[js.Array[String]] = js.undefined
   
-  var copyrights: js.Array[CopyrightObject] = js.native
+  var copyrights: js.Array[CopyrightObject]
   
-  var description: String = js.native
+  var description: String
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
-  var is_externally_hosted: Boolean = js.native
+  var is_externally_hosted: Boolean
   
-  var languages: js.Array[String] = js.native
+  var languages: js.Array[String]
   
-  var media_type: String = js.native
+  var media_type: String
   
-  var name: String = js.native
+  var name: String
   
-  var publisher: String = js.native
+  var publisher: String
   
-  var `type`: show = js.native
+  var `type`: show
   
-  var uri: String = js.native
+  var uri: String
 }
 object ShowObjectSimplified {
   
@@ -59,11 +57,10 @@ object ShowObjectSimplified {
     media_type: String,
     name: String,
     publisher: String,
-    `type`: show,
     uri: String
   ): ShowObjectSimplified = {
     val __obj = js.Dynamic.literal(copyrights = copyrights.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], is_externally_hosted = is_externally_hosted.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("show")
     __obj.asInstanceOf[ShowObjectSimplified]
   }
   

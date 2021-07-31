@@ -2,17 +2,15 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps] extends StObject {
   
-  var navigation: NavigationScreenPropType = js.native
+  var navigation: NavigationScreenPropType
   
-  var screenProps: ScreenProps = js.native
+  var screenProps: ScreenProps
   
-  var theme: SupportedThemes = js.native
+  var theme: SupportedThemes
 }
 object NavigationScreenConfigProps {
   
@@ -23,7 +21,7 @@ object NavigationScreenConfigProps {
   }
   
   @scala.inline
-  implicit class NavigationScreenConfigPropsMutableBuilder[Self <: NavigationScreenConfigProps[_, _], NavigationScreenPropType, ScreenProps] (val x: Self with (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps])) extends AnyVal {
+  implicit class NavigationScreenConfigPropsMutableBuilder[Self <: NavigationScreenConfigProps[?, ?], NavigationScreenPropType, ScreenProps] (val x: Self & (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setNavigation(value: NavigationScreenPropType): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

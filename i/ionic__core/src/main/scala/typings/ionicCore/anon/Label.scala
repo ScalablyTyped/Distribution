@@ -3,23 +3,21 @@ package typings.ionicCore.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: Element | Null = js.native
+  var label: Element | Null
   
-  var labelId: String = js.native
+  var labelId: String
   
-  var labelText: js.UndefOr[String | Null] = js.native
+  var labelText: js.UndefOr[String | Null] = js.undefined
 }
 object Label {
   
   @scala.inline
   def apply(labelId: String): Label = {
-    val __obj = js.Dynamic.literal(labelId = labelId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(labelId = labelId.asInstanceOf[js.Any], label = null)
     __obj.asInstanceOf[Label]
   }
   

@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSource extends StObject {
   
   /**
     * A configuration block containing **stateful** inspection criteria for a domain list rule group. See Rules Source List below for details.
     */
-  var rulesSourceList: js.UndefOr[Input[RuleGroupRuleGroupRulesSourceRulesSourceList]] = js.native
+  var rulesSourceList: js.UndefOr[Input[RuleGroupRuleGroupRulesSourceRulesSourceList]] = js.undefined
   
   /**
     * The fully qualified name of a file in an S3 bucket that contains Suricata compatible intrusion preventions system (IPS) rules or the Suricata rules as a string. These rules contain **stateful** inspection criteria and the action to take for traffic that matches the criteria.
     */
-  var rulesString: js.UndefOr[Input[String]] = js.native
+  var rulesString: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Set of configuration blocks containing **stateful** inspection criteria for 5-tuple rules to be used together in a rule group. See Stateful Rule below for details.
     */
-  var statefulRules: js.UndefOr[Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRule]]]] = js.native
+  var statefulRules: js.UndefOr[Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRule]]]] = js.undefined
   
   /**
     * A configuration block containing **stateless** inspection criteria for a stateless rule group. See Stateless Rules and Custom Actions below for details.
     */
-  var statelessRulesAndCustomActions: js.UndefOr[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions]] = js.native
+  var statelessRulesAndCustomActions: js.UndefOr[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions]] = js.undefined
 }
 object RuleGroupRuleGroupRulesSource {
   

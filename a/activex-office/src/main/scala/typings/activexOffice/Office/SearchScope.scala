@@ -2,22 +2,20 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchScope extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.SearchScope_typekey")
-  var OfficeDotSearchScope_typekey: SearchScope = js.native
+  var OfficeDotSearchScope_typekey: SearchScope
   
-  val ScopeFolder: typings.activexOffice.Office.ScopeFolder = js.native
+  val ScopeFolder: typings.activexOffice.Office.ScopeFolder
   
-  val Type: MsoSearchIn = js.native
+  val Type: MsoSearchIn
 }
 object SearchScope {
   

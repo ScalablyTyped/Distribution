@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bandwidth extends StObject {
   
   /**
     * Download speed in Mbps.
     */
-  var DownloadSpeed: js.UndefOr[Integer] = js.native
+  var DownloadSpeed: js.UndefOr[Integer] = js.undefined
   
   /**
     * Upload speed in Mbps.
     */
-  var UploadSpeed: js.UndefOr[Integer] = js.native
+  var UploadSpeed: js.UndefOr[Integer] = js.undefined
 }
 object Bandwidth {
   

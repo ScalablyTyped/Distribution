@@ -2,15 +2,13 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentRegistrationFailedEvent extends StObject {
   
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
-  var response: IncomingResponse = js.native
+  var response: IncomingResponse
 }
 object UserAgentRegistrationFailedEvent {
   

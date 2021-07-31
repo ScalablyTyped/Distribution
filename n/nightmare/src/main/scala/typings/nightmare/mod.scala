@@ -27,14 +27,15 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nightmare", JSImport.Namespace)
   @js.native
-  class ^ () extends Nightmare {
+  class ^ ()
+    extends StObject
+       with Nightmare {
     def this(options: IConstructorOptions) = this()
   }
   
@@ -56,63 +57,62 @@ object mod {
     def set(name: String, value: String): Nightmare = js.native
   }
   
-  @js.native
   trait IConstructorOptions extends StObject {
     
-    var cookiesFile: js.UndefOr[String] = js.native
+    var cookiesFile: js.UndefOr[String] = js.undefined
     
-    var electronPath: js.UndefOr[String] = js.native
+    var electronPath: js.UndefOr[String] = js.undefined
     
-    var executionTimeout: js.UndefOr[Double] = js.native
+    var executionTimeout: js.UndefOr[Double] = js.undefined
     
     //in ms
-    var gotoTimeout: js.UndefOr[Double] = js.native
+    var gotoTimeout: js.UndefOr[Double] = js.undefined
     
-    var ignoreDownloads: js.UndefOr[Boolean] = js.native
+    var ignoreDownloads: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreSslErrors: js.UndefOr[Boolean] = js.native
+    var ignoreSslErrors: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[js.Any] = js.native
+    var interval: js.UndefOr[js.Any] = js.undefined
     
-    var loadImages: js.UndefOr[Boolean] = js.native
+    var loadImages: js.UndefOr[Boolean] = js.undefined
     
-    var maxDownloadRequestWait: js.UndefOr[Double] = js.native
+    var maxDownloadRequestWait: js.UndefOr[Double] = js.undefined
     
-    var openDevTools: js.UndefOr[Mode] = js.native
+    var openDevTools: js.UndefOr[Mode] = js.undefined
     
-    var paths: js.UndefOr[Downloads] = js.native
+    var paths: js.UndefOr[Downloads] = js.undefined
     
-    var phantomPath: js.UndefOr[String] = js.native
+    var phantomPath: js.UndefOr[String] = js.undefined
     
-    var pollInterval: js.UndefOr[Double] = js.native
-    
-    // number | string;
-    var port: js.UndefOr[Double] = js.native
-    
-    var proxy: js.UndefOr[String] = js.native
-    
-    var proxyAuth: js.UndefOr[String] = js.native
-    
-    var proxyType: js.UndefOr[String] = js.native
-    
-    var show: js.UndefOr[Boolean] = js.native
-    
-    var sslProtocol: js.UndefOr[String] = js.native
-    
-    var timeout: js.UndefOr[js.Any] = js.native
-    
-    var typeInterval: js.UndefOr[Double] = js.native
+    var pollInterval: js.UndefOr[Double] = js.undefined
     
     // number | string;
-    var waitTimeout: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var weak: js.UndefOr[Boolean] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var webSecurity: js.UndefOr[Boolean] = js.native
+    var proxyAuth: js.UndefOr[String] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var proxyType: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
+    
+    var sslProtocol: js.UndefOr[String] = js.undefined
+    
+    var timeout: js.UndefOr[js.Any] = js.undefined
+    
+    var typeInterval: js.UndefOr[Double] = js.undefined
+    
+    // number | string;
+    var waitTimeout: js.UndefOr[Double] = js.undefined
+    
+    var weak: js.UndefOr[Boolean] = js.undefined
+    
+    var webSecurity: js.UndefOr[Boolean] = js.undefined
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
   }
   object IConstructorOptions {
     
@@ -283,28 +283,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ICookie extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
-    var hostOnly: js.UndefOr[Boolean] = js.native
+    var hostOnly: js.UndefOr[Boolean] = js.undefined
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ICookie {
     
@@ -373,20 +372,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ICookieQuery extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ICookieQuery {
     
@@ -437,14 +435,13 @@ object mod {
     }
   }
   
-  @js.native
   trait INetwordRequest extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    def changeUrl(url: String): Unit = js.native
+    def changeUrl(url: String): Unit
     
-    def setHeader(key: String, value: String): Unit = js.native
+    def setHeader(key: String, value: String): Unit
   }
   object INetwordRequest {
     
@@ -468,18 +465,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IRequest extends StObject {
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var id: Double = js.native
+    var id: Double
     
-    var method: String = js.native
+    var method: String
     
-    var time: Date = js.native
+    var time: Date
     
-    var url: String = js.native
+    var url: String
   }
   object IRequest {
     
@@ -509,16 +505,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IResourceError extends StObject {
     
-    var errorCode: Double = js.native
+    var errorCode: Double
     
-    var errorString: String = js.native
+    var errorString: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var url: String = js.native
+    var url: String
   }
   object IResourceError {
     
@@ -545,28 +540,27 @@ object mod {
     }
   }
   
-  @js.native
   trait IResponse extends StObject {
     
-    var bodySize: Double = js.native
+    var bodySize: Double
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var id: Double = js.native
+    var id: Double
     
-    var redirectURL: String = js.native
+    var redirectURL: String
     
-    var stage: String = js.native
+    var stage: String
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
     
-    var time: Date = js.native
+    var time: Date
     
-    var url: String = js.native
+    var url: String
   }
   object IResponse {
     
@@ -622,14 +616,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IStackTrace extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var function: js.UndefOr[String] = js.native
+    var function: js.UndefOr[String] = js.undefined
     
-    var line: Double = js.native
+    var line: Double
   }
   object IStackTrace {
     
@@ -890,7 +883,7 @@ object mod {
     def screenshot(clip: Height, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
     def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
     def screenshot(path: String): Nightmare = js.native
-    def screenshot(path: String, clip: js.UndefOr[scala.Nothing], done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
+    def screenshot(path: String, clip: Unit, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
     def screenshot(path: String, clip: Height): Nightmare = js.native
     def screenshot(path: String, clip: Height, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
     def screenshot(path: String, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
@@ -922,28 +915,28 @@ object mod {
     def visible(selector: String): Nightmare = js.native
     def visible(selector: String, cb: js.Function1[/* result */ Boolean, Unit]): Nightmare = js.native
     
-    def wait(fn: js.Function0[_]): Nightmare = js.native
-    def wait(fn: js.Function0[_], value: js.Any): Nightmare = js.native
-    def wait(fn: js.Function0[_], value: js.Any, delay: Double): Nightmare = js.native
+    def wait(fn: js.Function0[js.Any]): Nightmare = js.native
+    def wait(fn: js.Function0[js.Any], value: js.Any): Nightmare = js.native
+    def wait(fn: js.Function0[js.Any], value: js.Any, delay: Double): Nightmare = js.native
     def wait(ms: Double): Nightmare = js.native
     def wait(selector: String): Nightmare = js.native
-    def wait[T1](fn: js.Function1[/* arg1 */ T1, _], value1: T1): Nightmare = js.native
-    def wait[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, _], value1: T1, value2: T2): Nightmare = js.native
+    def wait[T1](fn: js.Function1[/* arg1 */ T1, js.Any], value1: T1): Nightmare = js.native
+    def wait[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Any], value1: T1, value2: T2): Nightmare = js.native
     def wait[T1, T2, T3](
-      fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, _],
+      fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Any],
       value1: T1,
       value2: T2,
       value3: T3
     ): Nightmare = js.native
     def wait[T1, T2, T3, T4](
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, _],
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Any],
       value1: T1,
       value2: T2,
       value3: T3,
       value4: T4
     ): Nightmare = js.native
     def wait[T1, T2, T3, T4, T5](
-      fn: js.Function5[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, /* arg5 */ T5, _],
+      fn: js.Function5[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, /* arg5 */ T5, js.Any],
       value1: T1,
       value2: T2,
       value3: T3,

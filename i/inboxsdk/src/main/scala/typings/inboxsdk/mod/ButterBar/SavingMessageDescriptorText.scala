@@ -2,15 +2,14 @@ package typings.inboxsdk.mod.ButterBar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingMessageDescriptorText
-  extends SavingMessageDescriptorBase
+  extends StObject
+     with SavingMessageDescriptorBase
      with SavingMessageDescriptor {
   
-  var text: String = js.native
+  var text: String
 }
 object SavingMessageDescriptorText {
   

@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling")
@@ -68,9 +67,8 @@ object ResultHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.create")
-  @js.native
-  def create(model: IModel): ResultHandling = js.native
+  @scala.inline
+  def create(model: IModel): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -78,9 +76,8 @@ object ResultHandling {
     * of the parent ImportXmlAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.createInImportXmlActionUnderResultHandling")
-  @js.native
-  def createInImportXmlActionUnderResultHandling(container: ImportXmlAction): ResultHandling = js.native
+  @scala.inline
+  def createInImportXmlActionUnderResultHandling(container: ImportXmlAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -91,9 +88,8 @@ object ResultHandling {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.createInRestCallActionUnderResultHandling")
-  @js.native
-  def createInRestCallActionUnderResultHandling(container: RestCallAction): ResultHandling = js.native
+  @scala.inline
+  def createInRestCallActionUnderResultHandling(container: RestCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -101,9 +97,8 @@ object ResultHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.createInWebServiceCallActionUnderResultHandling")
-  @js.native
-  def createInWebServiceCallActionUnderResultHandling(container: WebServiceCallAction): ResultHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderResultHandling(container: WebServiceCallAction): ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[ResultHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ResultHandling.structureTypeName")

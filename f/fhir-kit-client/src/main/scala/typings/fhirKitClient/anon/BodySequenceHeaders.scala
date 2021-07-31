@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodySequenceHeaders extends StObject {
   
-  var body: Sequence = js.native
+  var body: Sequence
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Sequence = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Sequence
 }
 object BodySequenceHeaders {
   
   @scala.inline
-  def apply(body: Sequence, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Sequence): BodySequenceHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Sequence, id: String): BodySequenceHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Sequence")
     __obj.asInstanceOf[BodySequenceHeaders]
   }
   

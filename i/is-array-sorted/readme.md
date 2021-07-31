@@ -12,7 +12,7 @@ Check if an Array is sorted
 | Keywords           | array, sorted, sort, is, check, detect, list, sequence, compare, comparator |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 452056 |
+| # downloads        | 671635 |
 | # stars            | 1 |
 
 ## Links

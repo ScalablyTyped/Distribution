@@ -5,29 +5,27 @@ import typings.sjcl.mod.PseudoMersennePrimeStatic
 import typings.sjcl.mod.SjclEllipticalCurve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait C192 extends StObject {
     
-    var c192: SjclEllipticalCurve = js.native
+    var c192: SjclEllipticalCurve
     
-    var c224: SjclEllipticalCurve = js.native
+    var c224: SjclEllipticalCurve
     
-    var c256: SjclEllipticalCurve = js.native
+    var c256: SjclEllipticalCurve
     
-    var c384: SjclEllipticalCurve = js.native
+    var c384: SjclEllipticalCurve
     
-    var c521: SjclEllipticalCurve = js.native
+    var c521: SjclEllipticalCurve
     
-    var k192: SjclEllipticalCurve = js.native
+    var k192: SjclEllipticalCurve
     
-    var k224: SjclEllipticalCurve = js.native
+    var k224: SjclEllipticalCurve
     
-    var k256: SjclEllipticalCurve = js.native
+    var k256: SjclEllipticalCurve
   }
   object C192 {
     
@@ -75,12 +73,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: BitArray_ = js.native
+    var key: BitArray_
     
-    var salt: BitArray_ = js.native
+    var salt: BitArray_
   }
   object Key {
     
@@ -107,31 +104,30 @@ object anon {
     }
   }
   
-  @js.native
   trait P127 extends StObject {
     
-    var p127: PseudoMersennePrimeStatic = js.native
+    var p127: PseudoMersennePrimeStatic
     
     // NIST primes
-    var p192: PseudoMersennePrimeStatic = js.native
+    var p192: PseudoMersennePrimeStatic
     
     // Koblitz primes
-    var p192k: PseudoMersennePrimeStatic = js.native
+    var p192k: PseudoMersennePrimeStatic
     
-    var p224: PseudoMersennePrimeStatic = js.native
+    var p224: PseudoMersennePrimeStatic
     
-    var p224k: PseudoMersennePrimeStatic = js.native
+    var p224k: PseudoMersennePrimeStatic
     
     // Bernstein's prime for Curve25519
-    var p25519: PseudoMersennePrimeStatic = js.native
+    var p25519: PseudoMersennePrimeStatic
     
-    var p256: PseudoMersennePrimeStatic = js.native
+    var p256: PseudoMersennePrimeStatic
     
-    var p256k: PseudoMersennePrimeStatic = js.native
+    var p256k: PseudoMersennePrimeStatic
     
-    var p384: PseudoMersennePrimeStatic = js.native
+    var p384: PseudoMersennePrimeStatic
     
-    var p521: PseudoMersennePrimeStatic = js.native
+    var p521: PseudoMersennePrimeStatic
   }
   object P127 {
     
@@ -187,12 +183,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var key: BitArray_ = js.native
+    var key: BitArray_
     
-    var tag: BitArray_ = js.native
+    var tag: BitArray_
   }
   object Tag {
     

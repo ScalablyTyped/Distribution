@@ -2,37 +2,38 @@ package typings.fitbitWeather
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMod {
   
-  @JSImport("fitbit-weather/app", "fetch")
+  @JSImport("fitbit-weather/app", JSImport.Namespace)
   @js.native
-  def fetch(age: Double): js.Promise[Result] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def fetch(age: Double): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(age.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  
   trait Result extends StObject {
     
-    var conditionCode: Double = js.native
+    var conditionCode: Double
     
-    var description: String = js.native
+    var description: String
     
-    var isDay: Boolean = js.native
+    var isDay: Boolean
     
-    var location: String = js.native
+    var location: String
     
-    var realConditionCode: String = js.native
+    var realConditionCode: String
     
-    var sunrise: Double = js.native
+    var sunrise: Double
     
-    var sunset: Double = js.native
+    var sunset: Double
     
-    var temperatureC: Double = js.native
+    var temperatureC: Double
     
-    var temperatureF: Double = js.native
+    var temperatureF: Double
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object Result {
     

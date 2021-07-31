@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetsChartProperties extends StObject {
   
   /** The properties of the embedded chart image. */
-  var chartImageProperties: js.UndefOr[ImageProperties] = js.native
+  var chartImageProperties: js.UndefOr[ImageProperties] = js.undefined
 }
 object SheetsChartProperties {
   

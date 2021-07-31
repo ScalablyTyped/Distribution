@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for the `ImportProductSets` method.
   */
-@js.native
 trait SchemaImportProductSetsRequest extends StObject {
   
   /**
     * The input content for the list of requests.
     */
-  var inputConfig: js.UndefOr[SchemaImportProductSetsInputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaImportProductSetsInputConfig] = js.undefined
 }
 object SchemaImportProductSetsRequest {
   

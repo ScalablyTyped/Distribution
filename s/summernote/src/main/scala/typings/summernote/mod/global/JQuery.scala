@@ -77,7 +77,6 @@ import typings.summernote.summernoteStrings.underline
 import typings.summernote.summernoteStrings.undo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -98,7 +97,7 @@ trait JQuery extends StObject {
   @JSName("summernote")
   def summernote_code(command: code): String = js.native
   @JSName("summernote")
-  def summernote_code(command: code, markupStr: String): js.UndefOr[scala.Nothing] = js.native
+  def summernote_code(command: code, markupStr: String): Unit = js.native
   @JSName("summernote")
   def summernote_createLink(command: createLink, options: CreateLinkOptions): JQuery = js.native
   @JSName("summernote")

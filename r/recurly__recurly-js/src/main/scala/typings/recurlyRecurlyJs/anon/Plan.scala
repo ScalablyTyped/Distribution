@@ -3,15 +3,13 @@ package typings.recurlyRecurlyJs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plan extends StObject {
   
-  var addons: StringDictionary[String] = js.native
+  var addons: StringDictionary[String]
   
-  var plan: Setupfee = js.native
+  var plan: Setupfee
 }
 object Plan {
   

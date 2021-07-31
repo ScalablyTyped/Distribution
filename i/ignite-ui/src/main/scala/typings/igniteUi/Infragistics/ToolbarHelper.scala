@@ -2,13 +2,11 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarHelper extends StObject {
   
-  def analyse(el: js.Object): Unit = js.native
+  def analyse(el: js.Object): Unit
 }
 object ToolbarHelper {
   

@@ -5,7 +5,6 @@ import typings.siesta.Siesta.Harness.IHarnessNodeJS
 import typings.siesta.Siesta.ITest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -41,6 +40,56 @@ object global {
           @JSGlobal("Siesta.Test.Simulate.KeyCodes")
           @js.native
           val ^ : js.Any = js.native
+          
+          // = 32,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.0")
+          @js.native
+          val `0`: Double = js.native
+          
+          // = 48,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.1")
+          @js.native
+          val `1`: Double = js.native
+          
+          // = 49,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.2")
+          @js.native
+          val `2`: Double = js.native
+          
+          // = 50,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.3")
+          @js.native
+          val `3`: Double = js.native
+          
+          // = 51,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.4")
+          @js.native
+          val `4`: Double = js.native
+          
+          // = 52,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.5")
+          @js.native
+          val `5`: Double = js.native
+          
+          // = 53,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.6")
+          @js.native
+          val `6`: Double = js.native
+          
+          // = 54,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.7")
+          @js.native
+          val `7`: Double = js.native
+          
+          // = 55,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.8")
+          @js.native
+          val `8`: Double = js.native
+          
+          // = 56,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.9")
+          @js.native
+          val `9`: Double = js.native
           
           // = 57,
           @JSGlobal("Siesta.Test.Simulate.KeyCodes.A")
@@ -667,6 +716,16 @@ object global {
           @scala.inline
           def Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
           
+          // = 192,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.[")
+          @js.native
+          val `[`: Double = js.native
+          
+          // = 220,
+          @JSGlobal("Siesta.Test.Simulate.KeyCodes.]")
+          @js.native
+          val `]`: Double = js.native
+          
           // = 188,
           @JSGlobal("Siesta.Test.Simulate.KeyCodes.-")
           @js.native
@@ -681,82 +740,19 @@ object global {
           
           @scala.inline
           def _empty_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\b")(x.asInstanceOf[js.Any])
-          
-          // = 32,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.0")
-          @js.native
-          val `0`: Double = js.native
-          
-          // = 48,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.1")
-          @js.native
-          val `1`: Double = js.native
-          
-          // = 49,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.2")
-          @js.native
-          val `2`: Double = js.native
-          
-          // = 50,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.3")
-          @js.native
-          val `3`: Double = js.native
-          
-          // = 51,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.4")
-          @js.native
-          val `4`: Double = js.native
-          
-          // = 52,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.5")
-          @js.native
-          val `5`: Double = js.native
-          
-          // = 53,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.6")
-          @js.native
-          val `6`: Double = js.native
-          
-          // = 54,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.7")
-          @js.native
-          val `7`: Double = js.native
-          
-          // = 55,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.8")
-          @js.native
-          val `8`: Double = js.native
-          
-          // = 56,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.9")
-          @js.native
-          val `9`: Double = js.native
-          
-          // = 192,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.[")
-          @js.native
-          val `[`: Double = js.native
-          
-          // = 220,
-          @JSGlobal("Siesta.Test.Simulate.KeyCodes.]")
-          @js.native
-          val `]`: Double = js.native
         }
       }
     }
   }
   
-  @JSGlobal("StartTest")
-  @js.native
-  def StartTest_(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.native
+  @scala.inline
+  def StartTest_(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.Dynamic.global.applyDynamic("StartTest")(testScript.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* was `typeof StartTest` */
-  @JSGlobal("describe")
-  @js.native
-  def describe(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.native
+  @scala.inline
+  def describe(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.Dynamic.global.applyDynamic("describe")(testScript.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* was `typeof StartTest` */
-  @JSGlobal("startTest")
-  @js.native
-  def startTest(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.native
+  @scala.inline
+  def startTest(testScript: js.Function1[/* t */ ITest, Unit]): Unit = js.Dynamic.global.applyDynamic("startTest")(testScript.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

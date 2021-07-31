@@ -2,24 +2,19 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DELETED extends StObject {
   
-  var CHANGED: typings.chromeApps.chromeAppsStrings.CHANGED = js.native
+  var CHANGED: typings.chromeApps.chromeAppsStrings.CHANGED
   
-  var DELETED: typings.chromeApps.chromeAppsStrings.DELETED = js.native
+  var DELETED: typings.chromeApps.chromeAppsStrings.DELETED
 }
 object DELETED {
   
   @scala.inline
-  def apply(
-    CHANGED: typings.chromeApps.chromeAppsStrings.CHANGED,
-    DELETED: typings.chromeApps.chromeAppsStrings.DELETED
-  ): DELETED = {
-    val __obj = js.Dynamic.literal(CHANGED = CHANGED.asInstanceOf[js.Any], DELETED = DELETED.asInstanceOf[js.Any])
+  def apply(): DELETED = {
+    val __obj = js.Dynamic.literal(CHANGED = "CHANGED", DELETED = "DELETED")
     __obj.asInstanceOf[DELETED]
   }
   

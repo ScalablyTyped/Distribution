@@ -5,32 +5,32 @@ import typings.log4js.log4jsStrings.multiprocess
 import typings.log4js.log4jsStrings.worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiprocessAppender extends Appender {
+trait MultiprocessAppender
+  extends StObject
+     with Appender {
   
   // (only needed if mode == master)- the name of the appender to send the log events to
-  var appender: js.UndefOr[String] = js.native
+  var appender: js.UndefOr[String] = js.undefined
   
   // (defaults to localhost) - the host/IP address to listen on, or send to
-  var loggerHost: js.UndefOr[String] = js.native
+  var loggerHost: js.UndefOr[String] = js.undefined
   
   // (defaults to 5000) - the port to listen on, or send to
-  var loggerPort: js.UndefOr[Double] = js.native
+  var loggerPort: js.UndefOr[Double] = js.undefined
   
   // controls whether the appender listens for log events sent over the network, or is responsible for serialising events and sending them to a server.
-  var mode: master | worker = js.native
+  var mode: master | worker
   
-  var `type`: multiprocess = js.native
+  var `type`: multiprocess
 }
 object MultiprocessAppender {
   
   @scala.inline
-  def apply(mode: master | worker, `type`: multiprocess): MultiprocessAppender = {
+  def apply(mode: master | worker): MultiprocessAppender = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("multiprocess")
     __obj.asInstanceOf[MultiprocessAppender]
   }
   

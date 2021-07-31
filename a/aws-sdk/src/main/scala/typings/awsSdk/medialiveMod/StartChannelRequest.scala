@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartChannelRequest extends StObject {
   
   /**
     * A request to start a channel
     */
-  var ChannelId: string = js.native
+  var ChannelId: string
 }
 object StartChannelRequest {
   

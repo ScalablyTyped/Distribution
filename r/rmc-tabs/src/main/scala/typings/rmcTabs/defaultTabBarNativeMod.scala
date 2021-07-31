@@ -9,7 +9,6 @@ import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.propsTypeMod.TabBarPropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultTabBarNativeMod {
@@ -26,7 +25,7 @@ object defaultTabBarNativeMod {
     
     var _tabContainerMeasurements: js.Any = js.native
     
-    var _tabsMeasurements: js.Array[_] = js.native
+    var _tabsMeasurements: js.Array[js.Any] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDefaultTabBar(): Unit = js.native
@@ -67,25 +66,26 @@ object defaultTabBarNativeMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PropsType extends TabBarPropsType {
+  trait PropsType
+    extends StObject
+       with TabBarPropsType {
     
     /** default: false */
-    var dynamicTabUnderlineWidth: js.UndefOr[Boolean] = js.native
+    var dynamicTabUnderlineWidth: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
-    var scrollValue: js.UndefOr[js.Any] = js.native
+    var scrollValue: js.UndefOr[js.Any] = js.undefined
     
-    var styles: js.UndefOr[TabBar] = js.native
+    var styles: js.UndefOr[TabBar] = js.undefined
     
     var tabStyle: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var tabsContainerStyle: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PropsType {
     
@@ -146,16 +146,15 @@ object defaultTabBarNativeMod {
     }
   }
   
-  @js.native
   trait StateType extends StObject {
     
-    var _containerWidth: Double = js.native
+    var _containerWidth: Double
     
-    var _leftTabUnderline: Value = js.native
+    var _leftTabUnderline: Value
     
-    var _tabContainerWidth: Double = js.native
+    var _tabContainerWidth: Double
     
-    var _widthTabUnderline: Value = js.native
+    var _widthTabUnderline: Value
   }
   object StateType {
     

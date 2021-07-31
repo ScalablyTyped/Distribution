@@ -4,17 +4,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bilinear
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.nearest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropAndResizeAttrs extends StObject {
   
-  var cropSize: js.Tuple2[Double, Double] = js.native
+  var cropSize: js.Tuple2[Double, Double]
   
-  var extrapolationValue: Double = js.native
+  var extrapolationValue: Double
   
-  var method: bilinear | nearest = js.native
+  var method: bilinear | nearest
 }
 object CropAndResizeAttrs {
   

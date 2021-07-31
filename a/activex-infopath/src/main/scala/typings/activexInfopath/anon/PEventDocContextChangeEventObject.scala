@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath.DocContextChangeEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PEventDocContextChangeEventObject extends StObject {
   
-  val pEvent: DocContextChangeEventObject = js.native
+  val pEvent: DocContextChangeEventObject
 }
 object PEventDocContextChangeEventObject {
   

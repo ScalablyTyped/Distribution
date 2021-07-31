@@ -3,15 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
   
   @JSImport("carbon-components/components/toolbar/toolbar", JSImport.Default)
   @js.native
-  class default protected () extends Toolbar {
+  class default protected ()
+    extends StObject
+       with Toolbar {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleDocumentClick(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeyDown(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleRowHeightChange(event: js.Any, boundTable: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,14 +38,13 @@ object toolbarMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Toolbar extends StObject {
+  - Dropped any */ trait Toolbar extends StObject {
     
-    def _handleDocumentClick(event: js.Any): Unit = js.native
+    def _handleDocumentClick(event: js.Any): Unit
     
-    def _handleKeyDown(event: js.Any): Unit = js.native
+    def _handleKeyDown(event: js.Any): Unit
     
-    def _handleRowHeightChange(event: js.Any, boundTable: js.Any): Unit = js.native
+    def _handleRowHeightChange(event: js.Any, boundTable: js.Any): Unit
   }
   object Toolbar {
     

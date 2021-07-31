@@ -2,26 +2,24 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an achievement unlock response
   */
-@js.native
 trait SchemaAchievementUnlockResponse extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#achievementUnlockResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this achievement was newly unlocked (that is, whether the unlock
     * request for the achievement was the first for the player).
     */
-  var newlyUnlocked: js.UndefOr[Boolean] = js.native
+  var newlyUnlocked: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAchievementUnlockResponse {
   

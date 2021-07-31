@@ -2,15 +2,13 @@ package typings.mongorito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultState extends StObject {
   
-  var fields: js.Object = js.native
+  var fields: js.Object
   
-  var unset: js.Array[String] = js.native
+  var unset: js.Array[String]
 }
 object DefaultState {
   

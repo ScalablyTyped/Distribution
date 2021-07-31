@@ -2,25 +2,23 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestHeight extends StObject {
   
-  var canvasId: String = js.native
+  var canvasId: String
   
-  var destHeight: Double = js.native
+  var destHeight: Double
   
-  var destWidth: Double = js.native
+  var destWidth: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object DestHeight {
   

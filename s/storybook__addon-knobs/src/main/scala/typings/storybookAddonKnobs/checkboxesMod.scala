@@ -7,7 +7,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxesMod {
@@ -30,9 +29,8 @@ object checkboxesMod {
     @scala.inline
     def defaultProps_=(x: CheckboxesTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", "default.deserialize")
-    @js.native
-    def deserialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = js.native
+    @scala.inline
+    def deserialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", "default.propTypes")
     @js.native
@@ -40,9 +38,8 @@ object checkboxesMod {
     @scala.inline
     def propTypes_=(x: IsInline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", "default.serialize")
-    @js.native
-    def serialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = js.native
+    @scala.inline
+    def serialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
   }
   
   @js.native
@@ -56,10 +53,11 @@ object checkboxesMod {
     var renderCheckboxList: js.Any = js.native
   }
   
-  @js.native
-  trait CheckboxesTypeKnob extends KnobControlConfig[CheckboxesTypeKnobValue] {
+  trait CheckboxesTypeKnob
+    extends StObject
+       with KnobControlConfig[CheckboxesTypeKnobValue] {
     
-    var options: Record[String, String] = js.native
+    var options: Record[String, String]
   }
   object CheckboxesTypeKnob {
     
@@ -79,13 +77,13 @@ object checkboxesMod {
   
   type CheckboxesTypeKnobValue = js.Array[String]
   
-  @js.native
   trait CheckboxesTypeProps
-    extends KnobControlProps[CheckboxesTypeKnobValue]
+    extends StObject
+       with KnobControlProps[CheckboxesTypeKnobValue]
        with CheckboxesWrapperProps {
     
     @JSName("knob")
-    var knob_CheckboxesTypeProps: CheckboxesTypeKnob = js.native
+    var knob_CheckboxesTypeProps: CheckboxesTypeKnob
   }
   object CheckboxesTypeProps {
     
@@ -107,10 +105,9 @@ object checkboxesMod {
     }
   }
   
-  @js.native
   trait CheckboxesTypeState extends StObject {
     
-    var values: CheckboxesTypeKnobValue = js.native
+    var values: CheckboxesTypeKnobValue
   }
   object CheckboxesTypeState {
     
@@ -131,10 +128,9 @@ object checkboxesMod {
     }
   }
   
-  @js.native
   trait CheckboxesWrapperProps extends StObject {
     
-    var isInline: Boolean = js.native
+    var isInline: Boolean
   }
   object CheckboxesWrapperProps {
     

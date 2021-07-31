@@ -2,7 +2,6 @@ package typings.fileUrl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,21 +21,22 @@ object mod {
   //=> 'file:///unicorn.jpg'
   ```
   */
-  @JSImport("file-url", JSImport.Namespace)
-  @js.native
-  def apply(filePath: String): String = js.native
-  @JSImport("file-url", JSImport.Namespace)
-  @js.native
-  def apply(filePath: String, options: Options): String = js.native
+  @scala.inline
+  def apply(filePath: String): String = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(filePath: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("file-url", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Passing `false` will make it not call `path.resolve()` on the path.
     		@default true
     		*/
-    val resolve: js.UndefOr[Boolean] = js.native
+    val resolve: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

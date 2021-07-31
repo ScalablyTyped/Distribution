@@ -2,82 +2,82 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base object for all the editors that support validation.
   */
-@js.native
-trait ASPxClientEdit extends ASPxClientEditBase {
+trait ASPxClientEdit
+  extends StObject
+     with ASPxClientEditBase {
   
   /**
     * Sets input focus to the editor.
     */
-  def Focus(): Unit = js.native
+  def Focus(): Unit
   
   /**
     * Gets the error text to be displayed within the editor's error frame if the editor's validation fails.
     */
-  def GetErrorText(): String = js.native
+  def GetErrorText(): String
   
   /**
     * Returns an HTML element that represents the control's input element.
     */
-  def GetInputElement(): js.Any = js.native
+  def GetInputElement(): js.Any
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
     */
-  def GetIsValid(): Boolean = js.native
+  def GetIsValid(): Boolean
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
     */
-  def GetReadOnly(): Boolean = js.native
+  def GetReadOnly(): Boolean
   
   /**
     * Fires on the client side when the editor receives input focus.
     */
-  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]] = js.native
+  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]
   
   /**
     * Fires on the client side when the editor loses input focus.
     */
-  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]] = js.native
+  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]
   
   /**
     * Sets the error text to be displayed within the editor's error frame if the editor's validation fails.
     * @param errorText A string value representing the error text.
     */
-  def SetErrorText(errorText: String): Unit = js.native
+  def SetErrorText(errorText: String): Unit
   
   /**
     * Sets a value that specifies whether the editor's value is valid.
     * @param isValid True if the editor's value is valid; otherwise, False.
     */
-  def SetIsValid(isValid: Boolean): Unit = js.native
+  def SetIsValid(isValid: Boolean): Unit
   
   /**
     * Specifies whether the control's state is read-only on the client side.
     * @param readOnly true, to make the control read-only on the client side; otherwise, false.
     */
-  def SetReadOnly(readOnly: Boolean): Unit = js.native
+  def SetReadOnly(readOnly: Boolean): Unit
   
   /**
     * Performs the editor's validation.
     */
-  def Validate(): Unit = js.native
+  def Validate(): Unit
   
   /**
     * Allows you to specify whether the value entered into the editor is valid, and whether the editor is allowed to lose focus.
     */
-  var Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]] = js.native
+  var Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]]
   
   /**
     * Fires after the editor's value has been changed by end-user interactions.
     */
-  var ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]] = js.native
+  var ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]]
 }
 object ASPxClientEdit {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainNameResponse extends StObject {
   
   /**
     * The API mapping selection expression.
     */
-  var ApiMappingSelectionExpression: js.UndefOr[SelectionExpression] = js.native
+  var ApiMappingSelectionExpression: js.UndefOr[SelectionExpression] = js.undefined
   
   /**
     * The name of the DomainName resource.
     */
-  var DomainName: js.UndefOr[StringWithLengthBetween1And512] = js.native
+  var DomainName: js.UndefOr[StringWithLengthBetween1And512] = js.undefined
   
   /**
     * The domain name configurations.
     */
-  var DomainNameConfigurations: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameConfigurations] = js.native
+  var DomainNameConfigurations: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameConfigurations] = js.undefined
   
   /**
     * The mutual TLS authentication configuration for a custom domain name.
     */
-  var MutualTlsAuthentication: js.UndefOr[typings.awsSdk.apigatewayv2Mod.MutualTlsAuthentication] = js.native
+  var MutualTlsAuthentication: js.UndefOr[typings.awsSdk.apigatewayv2Mod.MutualTlsAuthentication] = js.undefined
   
   /**
     * The collection of tags associated with a domain name.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
 }
 object UpdateDomainNameResponse {
   

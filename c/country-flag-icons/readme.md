@@ -10,9 +10,9 @@ Vector (*.svg) country flag icons in 3x2 aspect ratio.
 | ------------------ | :-------------: |
 | Full name          | country-flag-icons |
 | Keywords           | country, flag, icons, vector, svg, react |
-| # releases         | 17 |
-| # dependents       | 6 |
-| # downloads        | 1469966 |
+| # releases         | 19 |
+| # dependents       | 9 |
+| # downloads        | 2417375 |
 | # stars            | 0 |
 
 ## Links

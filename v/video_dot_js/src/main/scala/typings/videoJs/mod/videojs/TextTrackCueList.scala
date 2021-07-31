@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.videoJs.mod.videojs.TextTrackCueList.TextTrackCue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcuelist}
   */
-@js.native
 trait TextTrackCueList
-  extends /**
+  extends StObject
+     with /**
   * Index getters for the cues.
   *
   * @param index
@@ -29,12 +28,12 @@ trait TextTrackCueList
     *
     * @return A single cue or null if none was found.
     */
-  def getCueById(id: String): TextTrackCue = js.native
+  def getCueById(id: String): TextTrackCue
   
   /**
     * The current number of `TextTrackCue`s in the TextTrackCueList.
     */
-  var length: Double = js.native
+  var length: Double
 }
 object TextTrackCueList {
   
@@ -47,33 +46,32 @@ object TextTrackCueList {
   /**
     * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
     */
-  @js.native
   trait TextTrackCue extends StObject {
     
     /**
       * The end time for this text track cue
       */
-    var endTime: Double = js.native
+    var endTime: Double
     
     /**
       * The unique id for this text track cue
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Pause when the end time is reached if true.
       */
-    var pauseOnExit: Boolean = js.native
+    var pauseOnExit: Boolean
     
     /**
       * The start time for this text track cue
       */
-    var startTime: Double = js.native
+    var startTime: Double
     
     /**
       * The text this cue is holding
       */
-    var text: String = js.native
+    var text: String
   }
   object TextTrackCue {
     

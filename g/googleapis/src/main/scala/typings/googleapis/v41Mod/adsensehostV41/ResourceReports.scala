@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Reports")
@@ -40,7 +39,7 @@ class ResourceReports protected () extends StObject {
     */
   def generate(): GaxiosPromise[SchemaReport] = js.native
   def generate(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
-  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
+  def generate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def generate(params: ParamsResourceReportsGenerate): GaxiosPromise[SchemaReport] = js.native
   def generate(params: ParamsResourceReportsGenerate, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def generate(

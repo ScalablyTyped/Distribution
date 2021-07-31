@@ -3,17 +3,15 @@ package typings.paypalRestSdk.mod
 import typings.paypalRestSdk.anon.Giftwrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amount extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var details: js.UndefOr[Giftwrap] = js.native
+  var details: js.UndefOr[Giftwrap] = js.undefined
   
-  var total: String = js.native
+  var total: String
 }
 object Amount {
   

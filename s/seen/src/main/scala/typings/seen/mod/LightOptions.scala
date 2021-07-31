@@ -2,21 +2,19 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightOptions extends StObject {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var intensity: js.UndefOr[Double] = js.native
+  var intensity: js.UndefOr[Double] = js.undefined
   
-  var normal: js.UndefOr[Point] = js.native
+  var normal: js.UndefOr[Point] = js.undefined
   
-  var point: js.UndefOr[Point] = js.native
+  var point: js.UndefOr[Point] = js.undefined
 }
 object LightOptions {
   

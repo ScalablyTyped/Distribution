@@ -6,7 +6,6 @@ import typings.tedious.mod.Connection
 import typings.tedious.mod.ConnectionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,38 +48,37 @@ object mod {
   /**
     *  Pool Configuration interface
     */
-  @js.native
   trait PoolConfig extends StObject {
     
     /**
       * Acquire timeout
       */
-    var acquireTimeout: js.UndefOr[Double] = js.native
+    var acquireTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Idle timeout
       */
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines if logging is activated
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum concurrent connections
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum concurrent connections
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Retry delay
       */
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
   }
   object PoolConfig {
     

@@ -2,45 +2,43 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeProviderInfo extends StObject {
   
-  var addressFormats: StringMap = js.native
+  var addressFormats: StringMap
   
-  var buyTickers: js.Array[String] = js.native
+  var buyTickers: js.Array[String]
   
   // changenow
-  var companyName: String = js.native
+  var companyName: String
   
   // changenow-icon.jpg
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isFixedRate: Boolean = js.native
+  var isFixedRate: Boolean
   
-  var isRefundRequired: js.UndefOr[Boolean] = js.native
+  var isRefundRequired: js.UndefOr[Boolean] = js.undefined
   
   // https://support.changenow.io
   // TODO region of operation
-  var kycPolicy: js.UndefOr[String] = js.native
+  var kycPolicy: js.UndefOr[String] = js.undefined
   
   // https://changenow.io/exchange/txs/{{orderId}}
-  var kycUrl: String = js.native
+  var kycUrl: String
   
   // ChangeNow
-  var logo: String = js.native
+  var logo: String
   
-  var name: String = js.native
+  var name: String
   
-  var sellTickers: js.Array[String] = js.native
+  var sellTickers: js.Array[String]
   
   // specification of formats required by selected exchange
-  var statusUrl: String = js.native
+  var statusUrl: String
   
   // https://changenow.io/faq#kyc
-  var supportUrl: String = js.native
+  var supportUrl: String
 }
 object ExchangeProviderInfo {
   

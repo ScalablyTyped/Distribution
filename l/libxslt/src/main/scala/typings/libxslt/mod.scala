@@ -14,10 +14,13 @@ import typings.libxslt.libxsltStrings.document
 import typings.libxslt.libxsltStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("libxslt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object libxmljs {
     
@@ -127,77 +130,59 @@ object mod {
     @js.native
     val libxmlVersion: String = js.native
     
-    @JSImport("libxslt", "libxmljs.memoryUsage")
-    @js.native
-    def memoryUsage(): Double = js.native
+    @scala.inline
+    def memoryUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[Double]
     
-    @JSImport("libxslt", "libxmljs.nodeCount")
-    @js.native
-    def nodeCount(): Double = js.native
+    @scala.inline
+    def nodeCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeCount")().asInstanceOf[Double]
     
-    @JSImport("libxslt", "libxmljs.parseHtml")
-    @js.native
-    def parseHtml(source: String): typings.libxmljs.mod.Document = js.native
-    @JSImport("libxslt", "libxmljs.parseHtml")
-    @js.native
-    def parseHtml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = js.native
+    @scala.inline
+    def parseHtml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    @scala.inline
+    def parseHtml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @JSImport("libxslt", "libxmljs.parseHtmlFragment")
-    @js.native
-    def parseHtmlFragment(source: String): typings.libxmljs.mod.Document = js.native
-    @JSImport("libxslt", "libxmljs.parseHtmlFragment")
-    @js.native
-    def parseHtmlFragment(source: String, options: ParserOptions): typings.libxmljs.mod.Document = js.native
+    @scala.inline
+    def parseHtmlFragment(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    @scala.inline
+    def parseHtmlFragment(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @JSImport("libxslt", "libxmljs.parseHtmlString")
-    @js.native
-    def parseHtmlString(source: String): typings.libxmljs.mod.Document = js.native
-    @JSImport("libxslt", "libxmljs.parseHtmlString")
-    @js.native
-    def parseHtmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = js.native
+    @scala.inline
+    def parseHtmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    @scala.inline
+    def parseHtmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @JSImport("libxslt", "libxmljs.parseXml")
-    @js.native
-    def parseXml(source: String): typings.libxmljs.mod.Document = js.native
-    @JSImport("libxslt", "libxmljs.parseXml")
-    @js.native
-    def parseXml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = js.native
+    @scala.inline
+    def parseXml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    @scala.inline
+    def parseXml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @JSImport("libxslt", "libxmljs.parseXmlString")
-    @js.native
-    def parseXmlString(source: String): typings.libxmljs.mod.Document = js.native
-    @JSImport("libxslt", "libxmljs.parseXmlString")
-    @js.native
-    def parseXmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = js.native
+    @scala.inline
+    def parseXmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    @scala.inline
+    def parseXmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
     @JSImport("libxslt", "libxmljs.version")
     @js.native
     val version: String = js.native
   }
   
-  @JSImport("libxslt", "parse")
-  @js.native
-  def parse(source: String): Stylesheet = js.native
-  @JSImport("libxslt", "parse")
-  @js.native
-  def parse(source: String, callback: ParseCallback): Unit = js.native
-  @JSImport("libxslt", "parse")
-  @js.native
-  def parse(source: Document): Stylesheet = js.native
-  @JSImport("libxslt", "parse")
-  @js.native
-  def parse(source: Document, callback: ParseCallback): Unit = js.native
+  @scala.inline
+  def parse(source: String): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
+  @scala.inline
+  def parse(source: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(source: Document): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
+  @scala.inline
+  def parse(source: Document, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libxslt", "parseFile")
-  @js.native
-  def parseFile(sourcePath: String, callback: ParseCallback): Unit = js.native
+  @scala.inline
+  def parseFile(sourcePath: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(sourcePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ApplyOptions extends StObject {
     
-    var noWrapParams: js.UndefOr[Boolean] = js.native
+    var noWrapParams: js.UndefOr[Boolean] = js.undefined
     
-    var outputFormat: string | document = js.native
+    var outputFormat: string | document
   }
   object ApplyOptions {
     
@@ -229,8 +214,6 @@ object mod {
     @JSName("apply")
     def apply(source: String, callback: ApplyStringCallback): Unit = js.native
     @JSName("apply")
-    def apply(source: String, params: js.UndefOr[scala.Nothing], options: ApplyOptions): String | Document = js.native
-    @JSName("apply")
     def apply(source: String, params: js.Object): String = js.native
     @JSName("apply")
     def apply(source: String, params: js.Object, callback: ApplyStringCallback): Unit = js.native
@@ -247,11 +230,11 @@ object mod {
     @JSName("apply")
     def apply(source: String, params: js.Object, options: ApplyOptions, callback: ApplyCallback): Unit = js.native
     @JSName("apply")
+    def apply(source: String, params: Unit, options: ApplyOptions): String | Document = js.native
+    @JSName("apply")
     def apply(source: Document): Document = js.native
     @JSName("apply")
     def apply(source: Document, callback: ApplyDocumentCallback): Unit = js.native
-    @JSName("apply")
-    def apply(source: Document, params: js.UndefOr[scala.Nothing], options: ApplyOptions): String | Document = js.native
     @JSName("apply")
     def apply(source: Document, params: js.Object): Document = js.native
     @JSName("apply")
@@ -268,6 +251,8 @@ object mod {
     def apply(source: Document, params: js.Object, options: ApplyOptions): String | Document = js.native
     @JSName("apply")
     def apply(source: Document, params: js.Object, options: ApplyOptions, callback: ApplyCallback): Unit = js.native
+    @JSName("apply")
+    def apply(source: Document, params: Unit, options: ApplyOptions): String | Document = js.native
     
     def applyToFile(sourcePath: String, callback: ApplyStringCallback): Unit = js.native
     def applyToFile(sourcePath: String, params: js.Object, callback: ApplyStringCallback): Unit = js.native

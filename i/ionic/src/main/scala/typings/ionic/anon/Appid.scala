@@ -2,23 +2,21 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appid extends StObject {
   
-  var `app-id`: String = js.native
+  var `app-id`: String
   
-  var `channel-name`: String = js.native
+  var `channel-name`: String
   
-  var `max-store`: String = js.native
+  var `max-store`: String
   
-  var `min-background-duration`: String = js.native
+  var `min-background-duration`: String
   
-  var `update-api`: String = js.native
+  var `update-api`: String
   
-  var `update-method`: String = js.native
+  var `update-method`: String
 }
 object Appid {
   

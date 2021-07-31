@@ -5,7 +5,6 @@ import typings.spdy.mod.Server_
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait Server
   
   var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   
-  def close(callback: js.Function0[_]): js.Any = js.native
+  def close(callback: js.Function0[js.Any]): js.Any = js.native
   
   /**
     * Mounts a chain on the given path against this HTTP verb

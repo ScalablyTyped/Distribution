@@ -10,9 +10,9 @@ A module that parses a string as regular expression and returns the parsed value
 | ------------------ | :-------------: |
 | Full name          | regex-parser |
 | Keywords           | regular, expressions, node, parser, string |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 90301928 |
+| # releases         | 2 |
+| # dependents       | 41 |
+| # downloads        | 151686373 |
 | # stars            | 1 |
 
 ## Links

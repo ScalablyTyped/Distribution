@@ -6,36 +6,36 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
   
   @JSImport("@react-md/badge/types/Badge", "Badge")
   @js.native
-  val Badge: ForwardRefExoticComponent[BadgeProps with RefAttributes[HTMLSpanElement]] = js.native
+  val Badge: ForwardRefExoticComponent[BadgeProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  @js.native
-  trait BadgeProps extends HTMLAttributes[HTMLSpanElement] {
+  trait BadgeProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
     /**
       * Boolean if the badge should still display if the children is set to `0`, or
       * `null`.  The default behavior is to render null for these cases since it
       * isn't extremely helpful to display an "empty" badge.
       */
-    var disableNullOnZero: js.UndefOr[Boolean] = js.native
+    var disableNullOnZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The id for the badge. This is required for a11y since the element that the
       * badge is fixed to should include this id in the `aria-describedby` list.
       */
     @JSName("id")
-    var id_BadgeProps: String = js.native
+    var id_BadgeProps: String
     
     /**
       * The theme to use for the badge.
       */
-    var theme: js.UndefOr[BadgeTheme] = js.native
+    var theme: js.UndefOr[BadgeTheme] = js.undefined
   }
   object BadgeProps {
     

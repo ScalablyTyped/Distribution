@@ -5,7 +5,6 @@ import typings.materialSelect.anon.PartialMDCSelectHelperTex
 import typings.materialSelect.helperTextAdapterMod.MDCSelectHelperTextAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperTextFoundationMod {

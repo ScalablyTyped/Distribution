@@ -15,7 +15,6 @@ import typings.activexWia.activexWiaStrings.`LeftcurlybracketC686DCEE-54F2-419E-
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketFC4767C1-C8B3-48A2-9CFA-2E90CB3D3590Rightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** String versions of globally unique identifiers (GUIDs) that identify DeviceManager events. */

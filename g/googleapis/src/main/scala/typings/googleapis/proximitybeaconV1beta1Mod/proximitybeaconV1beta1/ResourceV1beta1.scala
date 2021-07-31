@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$V1beta1")
@@ -35,7 +34,7 @@ class ResourceV1beta1 protected () extends StObject {
     */
   def getEidparams(): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(callback: BodyResponseCallback[SchemaEphemeralIdRegistrationParams]): Unit = js.native
-  def getEidparams(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
+  def getEidparams(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(params: ParamsResourceV1beta1Geteidparams): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(
     params: ParamsResourceV1beta1Geteidparams,

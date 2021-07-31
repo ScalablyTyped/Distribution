@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeModelOutput extends StObject {
   
   /**
     * The containers in the inference pipeline.
     */
-  var Containers: js.UndefOr[ContainerDefinitionList] = js.native
+  var Containers: js.UndefOr[ContainerDefinitionList] = js.undefined
   
   /**
     * A timestamp that shows when the model was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * If True, no inbound or outbound network calls can be made to or from the model container.
     */
-  var EnableNetworkIsolation: js.UndefOr[Boolean] = js.native
+  var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that you specified for the model.
     */
-  var ExecutionRoleArn: RoleArn = js.native
+  var ExecutionRoleArn: RoleArn
   
   /**
     * The Amazon Resource Name (ARN) of the model.
     */
-  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn = js.native
+  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn
   
   /**
     * Name of the Amazon SageMaker model.
     */
-  var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
+  var ModelName: typings.awsSdk.sagemakerMod.ModelName
   
   /**
     * The location of the primary inference code, associated artifacts, and custom environment map that the inference code uses when it is deployed in production. 
     */
-  var PrimaryContainer: js.UndefOr[ContainerDefinition] = js.native
+  var PrimaryContainer: js.UndefOr[ContainerDefinition] = js.undefined
   
   /**
     * A VpcConfig object that specifies the VPC that this model has access to. For more information, see Protect Endpoints by Using an Amazon Virtual Private Cloud 
     */
-  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.native
+  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.undefined
 }
 object DescribeModelOutput {
   

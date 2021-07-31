@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAppRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
 }
 object DeleteAppRequest {
   

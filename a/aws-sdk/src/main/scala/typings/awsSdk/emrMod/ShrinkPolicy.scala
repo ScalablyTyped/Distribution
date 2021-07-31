@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShrinkPolicy extends StObject {
   
   /**
     * The desired timeout for decommissioning an instance. Overrides the default YARN decommissioning timeout.
     */
-  var DecommissionTimeout: js.UndefOr[Integer] = js.native
+  var DecommissionTimeout: js.UndefOr[Integer] = js.undefined
   
   /**
     * Custom policy for requesting termination protection or termination of specific instances when shrinking an instance group.
     */
-  var InstanceResizePolicy: js.UndefOr[typings.awsSdk.emrMod.InstanceResizePolicy] = js.native
+  var InstanceResizePolicy: js.UndefOr[typings.awsSdk.emrMod.InstanceResizePolicy] = js.undefined
 }
 object ShrinkPolicy {
   

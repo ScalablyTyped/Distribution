@@ -18,7 +18,6 @@ import typings.semanticUiReact.listIconMod.ListIconProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemMod extends Shortcut {
@@ -27,9 +26,9 @@ object listItemMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ListItemProps] = js.native
   
-  @js.native
   trait ListItemProps
-    extends StrictListItemProps
+    extends StObject
+       with StrictListItemProps
        with /* key */ StringDictionary[js.Any]
   object ListItemProps {
     
@@ -40,38 +39,37 @@ object listItemMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictListItemProps extends StObject {
     
     /** A list item can active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandItem[ListContentProps]] = js.native
+    var content: js.UndefOr[SemanticShorthandItem[ListContentProps]] = js.undefined
     
     /** Shorthand for ListDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[ListDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[ListDescriptionProps]] = js.undefined
     
     /** A list item can disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for ListHeader. */
-    var header: js.UndefOr[SemanticShorthandItem[ListHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[ListHeaderProps]] = js.undefined
     
     /** Shorthand for ListIcon. */
-    var icon: js.UndefOr[SemanticShorthandItem[ListIconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[ListIconProps]] = js.undefined
     
     /** Shorthand for Image. */
-    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.native
+    var image: js.UndefOr[SemanticShorthandItem[ImageProps]] = js.undefined
     
     /**
       * Called on click.
@@ -85,10 +83,10 @@ object listItemMod extends Shortcut {
           /* data */ ListItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A value for an ordered list. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object StrictListItemProps {
     

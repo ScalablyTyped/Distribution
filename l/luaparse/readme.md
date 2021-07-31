@@ -11,8 +11,8 @@ A Lua parser in JavaScript
 | Full name          | luaparse |
 | Keywords           | ast, lua, parser, parsing |
 | # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 81987 |
+| # dependents       | 29 |
+| # downloads        | 138070 |
 | # stars            | 4 |
 
 ## Links

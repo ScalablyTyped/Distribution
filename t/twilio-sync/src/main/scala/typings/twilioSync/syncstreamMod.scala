@@ -6,7 +6,6 @@ import typings.twilioSync.entityMod.SyncEntity
 import typings.twilioSync.serverapiMod.StreamDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncstreamMod {
@@ -144,12 +143,11 @@ object syncstreamMod {
     def uri: String = js.native
   }
   
-  @js.native
   trait StreamMessage extends StObject {
     
-    var sid: String = js.native
+    var sid: String
     
-    var value: js.Object = js.native
+    var value: js.Object
   }
   object StreamMessage {
     

@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodesDisconnectedEvent extends StObject {
   
-  var contextId: GraphObjectId = js.native
+  var contextId: GraphObjectId
   
-  var destinationId: GraphObjectId = js.native
+  var destinationId: GraphObjectId
   
-  var destinationInputIndex: js.UndefOr[Double] = js.native
+  var destinationInputIndex: js.UndefOr[Double] = js.undefined
   
-  var sourceId: GraphObjectId = js.native
+  var sourceId: GraphObjectId
   
-  var sourceOutputIndex: js.UndefOr[Double] = js.native
+  var sourceOutputIndex: js.UndefOr[Double] = js.undefined
 }
 object NodesDisconnectedEvent {
   

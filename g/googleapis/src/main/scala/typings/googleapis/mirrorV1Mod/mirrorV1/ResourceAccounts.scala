@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Accounts")
@@ -33,7 +32,7 @@ class ResourceAccounts protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAccount] = js.native
   def insert(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def insert(

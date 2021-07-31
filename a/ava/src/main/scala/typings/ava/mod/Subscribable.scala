@@ -3,13 +3,11 @@ package typings.ava.mod
 import typings.ava.anon.Complete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscribable extends StObject {
   
-  def subscribe(observer: Complete): Unit = js.native
+  def subscribe(observer: Complete): Unit
 }
 object Subscribable {
   

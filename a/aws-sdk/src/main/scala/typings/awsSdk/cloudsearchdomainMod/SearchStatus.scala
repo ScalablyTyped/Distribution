@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchStatus extends StObject {
   
   /**
     * The encrypted resource ID for the request.
     */
-  var rid: js.UndefOr[String] = js.native
+  var rid: js.UndefOr[String] = js.undefined
   
   /**
     * How long it took to process the request, in milliseconds.
     */
-  var timems: js.UndefOr[Long] = js.native
+  var timems: js.UndefOr[Long] = js.undefined
 }
 object SearchStatus {
   

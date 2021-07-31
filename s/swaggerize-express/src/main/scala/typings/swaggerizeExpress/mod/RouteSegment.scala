@@ -6,13 +6,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSegment
-  extends /* urlSegment */ StringDictionary[
-      RouteSegment | (RequestHandler[ParamsDictionary, _, _, Query]) | (js.Array[RequestHandler[ParamsDictionary, _, _, Query]])
+  extends StObject
+     with /* urlSegment */ StringDictionary[
+      RouteSegment | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]])
     ]
 object RouteSegment {
   

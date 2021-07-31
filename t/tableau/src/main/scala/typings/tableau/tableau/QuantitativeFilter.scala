@@ -2,28 +2,27 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuantitativeFilter
-  extends Filter
+  extends StObject
+     with Filter
      with ConcreteFilter {
   
   /** Gets the maximum value as specified in the domain. */
-  def getDomainMax(): DataValue = js.native
+  def getDomainMax(): DataValue
   
   /** Gets the minimum value as specified in the domain. */
-  def getDomainMin(): DataValue = js.native
+  def getDomainMin(): DataValue
   
   /** Indicates whether null values are included in the filter. */
-  def getIncludeNullValues(): Boolean = js.native
+  def getIncludeNullValues(): Boolean
   
   /** Gets the maximum value, inclusive, applied to the filter. */
-  def getMax(): DataValue = js.native
+  def getMax(): DataValue
   
   /** Gets the minimum value, inclusive, applied to the filter. */
-  def getMin(): DataValue = js.native
+  def getMin(): DataValue
 }
 object QuantitativeFilter {
   

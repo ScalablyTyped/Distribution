@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationSchemeForMesh
-  extends Object
+  extends StObject
+     with Object
      with LocationScheme {
   
   /**
@@ -17,14 +16,14 @@ trait LocationSchemeForMesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The opacity of the fill symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
     */
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object LocationSchemeForMesh {
   

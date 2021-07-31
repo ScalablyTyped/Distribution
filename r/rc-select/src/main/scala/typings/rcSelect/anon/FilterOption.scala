@@ -3,17 +3,15 @@ package typings.rcSelect.anon
 import typings.rcSelect.generatorMod.FilterFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOption[OptionsType /* <: js.Array[js.Object] */] extends StObject {
   
   var filterOption: Boolean | (FilterFunc[
     /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ js.Any
-  ]) = js.native
+  ])
   
-  var optionFilterProp: String = js.native
+  var optionFilterProp: String
 }
 object FilterOption {
   
@@ -29,7 +27,7 @@ object FilterOption {
   }
   
   @scala.inline
-  implicit class FilterOptionMutableBuilder[Self <: FilterOption[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with FilterOption[OptionsType]) extends AnyVal {
+  implicit class FilterOptionMutableBuilder[Self <: FilterOption[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & FilterOption[OptionsType]) extends AnyVal {
     
     @scala.inline
     def setFilterOption(

@@ -3,19 +3,17 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnloadT extends StObject {
   
-  var onloadT: integer = js.native
+  var onloadT: integer
   
-  var pageT: integer = js.native
+  var pageT: integer
   
-  var startE: integer = js.native
+  var startE: integer
   
-  var tran: integer = js.native
+  var tran: integer
 }
 object OnloadT {
   

@@ -4,162 +4,165 @@ import typings.std.File
 import typings.surveyKnockout.anon.CanAddRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISurvey
-  extends ISurveyErrorOwner
-     with ITextProcessor {
+  extends StObject
+     with ITextProcessor
+     with ISurveyErrorOwner {
   
-  def afterRenderPage(htmlElement: js.Any): js.Any = js.native
+  def afterRenderPage(htmlElement: js.Any): js.Any
   
-  def afterRenderPanel(panel: IElement, htmlElement: js.Any): js.Any = js.native
+  def afterRenderPanel(panel: IElement, htmlElement: js.Any): js.Any
   
-  def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): js.Any = js.native
+  def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): js.Any
   
-  def afterRenderQuestionInput(question: IQuestion, htmlElement: js.Any): js.Any = js.native
+  def afterRenderQuestionInput(question: IQuestion, htmlElement: js.Any): js.Any
   
-  var areEmptyElementsHidden: Boolean = js.native
+  var areEmptyElementsHidden: Boolean
   
-  var areInvisibleElementsShowing: Boolean = js.native
+  var areInvisibleElementsShowing: Boolean
   
-  def beforeSettingQuestionErrors(question: IQuestion, errors: js.Array[SurveyError]): Unit = js.native
+  def beforeSettingQuestionErrors(question: IQuestion, errors: js.Array[SurveyError]): Unit
   
-  def cancelPreviewByPage(panel: IPanel): js.Any = js.native
+  def cancelPreviewByPage(panel: IPanel): js.Any
   
   def clearFiles(
     question: IQuestion,
     name: String,
     value: js.Any,
     fileName: String,
-    clearCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): js.Any = js.native
+    clearCallback: js.Function2[/* status */ String, /* data */ js.Any, js.Any]
+  ): js.Any
   
-  var clearValueOnDisableItems: Boolean = js.native
+  var clearValueOnDisableItems: Boolean
   
-  var currentPage: IPage = js.native
+  var currentPage: IPage
   
-  def downloadFile(name: String, content: String, callback: js.Function2[/* status */ String, /* data */ js.Any, _]): js.Any = js.native
+  def downloadFile(
+    name: String,
+    content: String,
+    callback: js.Function2[/* status */ String, /* data */ js.Any, js.Any]
+  ): js.Any
   
-  def dragAndDropAllow(options: js.Any): Boolean = js.native
+  def dragAndDropAllow(options: js.Any): Boolean
   
-  def dynamicPanelAdded(question: IQuestion): js.Any = js.native
+  def dynamicPanelAdded(question: IQuestion): js.Any
   
-  def dynamicPanelItemValueChanged(question: IQuestion, options: js.Any): js.Any = js.native
+  def dynamicPanelItemValueChanged(question: IQuestion, options: js.Any): js.Any
   
-  def dynamicPanelRemoved(question: IQuestion, panelIndex: Double, panel: IPanel): js.Any = js.native
+  def dynamicPanelRemoved(question: IQuestion, panelIndex: Double, panel: IPanel): js.Any
   
-  def getCss(): js.Any = js.native
+  def getCss(): js.Any
   
-  def getQuestionByValueNameFromArray(valueName: String, name: String, index: Double): IQuestion = js.native
+  def getQuestionByValueNameFromArray(valueName: String, name: String, index: Double): IQuestion
   
-  def getSurveyMarkdownHtml(element: Base, text: String): String = js.native
+  def getSurveyMarkdownHtml(element: Base, text: String): String
   
-  def getUpdatedQuestionNo(question: IQuestion, no: String): String = js.native
+  def getUpdatedQuestionNo(question: IQuestion, no: String): String
   
-  def getUpdatedQuestionTitle(question: IQuestion, title: String): String = js.native
+  def getUpdatedQuestionTitle(question: IQuestion, title: String): String
   
-  def hasVisibleQuestionByValueName(valueName: String): Boolean = js.native
+  def hasVisibleQuestionByValueName(valueName: String): Boolean
   
-  var isClearValueOnHidden: Boolean = js.native
+  var isClearValueOnHidden: Boolean
   
-  var isDesignMode: Boolean = js.native
+  var isDesignMode: Boolean
   
-  var isDisplayMode: Boolean = js.native
+  var isDisplayMode: Boolean
   
-  var isLoadingFromJson: Boolean = js.native
+  var isLoadingFromJson: Boolean
   
-  def isPageStarted(page: IPage): Boolean = js.native
+  def isPageStarted(page: IPage): Boolean
   
-  var isUpdateValueTextOnTyping: Boolean = js.native
+  var isUpdateValueTextOnTyping: Boolean
   
-  def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any
   
-  def matrixAllowRemoveRow(question: IQuestion, rowIndex: Double, row: js.Any): Boolean = js.native
+  def matrixAllowRemoveRow(question: IQuestion, rowIndex: Double, row: js.Any): Boolean
   
-  def matrixBeforeRowAdded(options: CanAddRow): js.Any = js.native
+  def matrixBeforeRowAdded(options: CanAddRow): js.Any
   
-  def matrixCellCreated(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixCellCreated(question: IQuestion, options: js.Any): js.Any
   
-  def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError = js.native
+  def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError
   
-  def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any
   
-  def matrixCellValueChanging(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixCellValueChanging(question: IQuestion, options: js.Any): js.Any
   
-  def matrixRowAdded(question: IQuestion, row: js.Any): js.Any = js.native
+  def matrixRowAdded(question: IQuestion, row: js.Any): js.Any
   
-  def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): js.Any = js.native
+  def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): js.Any
   
-  var maxOthersLength: Double = js.native
+  var maxOthersLength: Double
   
-  var maxTextLength: Double = js.native
+  var maxTextLength: Double
   
-  def pageVisibilityChanged(page: IPage, newValue: Boolean): js.Any = js.native
+  def pageVisibilityChanged(page: IPage, newValue: Boolean): js.Any
   
-  var pages: js.Array[IPage] = js.native
+  var pages: js.Array[IPage]
   
-  def panelAdded(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
+  def panelAdded(panel: IElement, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any
   
-  def panelRemoved(panel: IElement): js.Any = js.native
+  def panelRemoved(panel: IElement): js.Any
   
-  def panelVisibilityChanged(panel: IPanel, newValue: Boolean): js.Any = js.native
+  def panelVisibilityChanged(panel: IPanel, newValue: Boolean): js.Any
   
-  def processHtml(html: String): String = js.native
+  def processHtml(html: String): String
   
-  def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
+  def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any
   
-  def questionCountByValueName(valueName: String): Double = js.native
+  def questionCountByValueName(valueName: String): Double
   
-  def questionCreated(question: IQuestion): js.Any = js.native
+  def questionCreated(question: IQuestion): js.Any
   
-  var questionDescriptionLocation: String = js.native
+  var questionDescriptionLocation: String
   
-  var questionErrorLocation: String = js.native
+  var questionErrorLocation: String
   
-  def questionRemoved(question: IQuestion): js.Any = js.native
+  def questionRemoved(question: IQuestion): js.Any
   
-  def questionRenamed(question: IQuestion, oldName: String, oldValueName: String): js.Any = js.native
+  def questionRenamed(question: IQuestion, oldName: String, oldValueName: String): js.Any
   
-  var questionStartIndex: String = js.native
+  var questionStartIndex: String
   
-  var questionTitleLocation: String = js.native
+  var questionTitleLocation: String
   
-  var questionTitlePattern: String = js.native
+  var questionTitlePattern: String
   
-  def questionVisibilityChanged(question: IQuestion, newValue: Boolean): js.Any = js.native
+  def questionVisibilityChanged(question: IQuestion, newValue: Boolean): js.Any
   
-  var questionsOrder: String = js.native
+  var questionsOrder: String
   
-  var requiredText: String = js.native
+  var requiredText: String
   
-  def runExpression(expression: String): js.Any = js.native
+  def runExpression(expression: String): js.Any
   
-  def scrollElementToTop(element: ISurveyElement, question: IQuestion, page: IPage, id: String): js.Any = js.native
+  def scrollElementToTop(element: ISurveyElement, question: IQuestion, page: IPage, id: String): js.Any
   
-  var state: String = js.native
+  var state: String
   
-  var storeOthersAsComment: Boolean = js.native
+  var storeOthersAsComment: Boolean
   
-  def updateChoicesFromServer(question: IQuestion, choices: js.Array[_], serverResult: js.Any): js.Array[_] = js.native
+  def updateChoicesFromServer(question: IQuestion, choices: js.Array[js.Any], serverResult: js.Any): js.Array[js.Any]
   
-  def updatePageCssClasses(panel: IPanel, cssClasses: js.Any): js.Any = js.native
+  def updatePageCssClasses(panel: IPanel, cssClasses: js.Any): js.Any
   
-  def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): js.Any = js.native
+  def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): js.Any
   
-  def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): js.Any = js.native
+  def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): js.Any
   
   def uploadFiles(
     question: IQuestion,
     name: String,
     files: js.Array[File],
-    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, _]
-  ): js.Any = js.native
+    uploadingCallback: js.Function2[/* status */ String, /* data */ js.Any, js.Any]
+  ): js.Any
   
-  def validatePanel(panel: IPanel): SurveyError = js.native
+  def validatePanel(panel: IPanel): SurveyError
   
-  def validateQuestion(question: IQuestion): SurveyError = js.native
+  def validateQuestion(question: IQuestion): SurveyError
 }
 object ISurvey {
   
@@ -173,10 +176,10 @@ object ISurvey {
     areInvisibleElementsShowing: Boolean,
     beforeSettingQuestionErrors: (IQuestion, js.Array[SurveyError]) => Unit,
     cancelPreviewByPage: IPanel => js.Any,
-    clearFiles: (IQuestion, String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
+    clearFiles: (IQuestion, String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any,
     clearValueOnDisableItems: Boolean,
     currentPage: IPage,
-    downloadFile: (String, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
+    downloadFile: (String, String, js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any,
     dragAndDropAllow: js.Any => Boolean,
     dynamicPanelAdded: IQuestion => js.Any,
     dynamicPanelItemValueChanged: (IQuestion, js.Any) => js.Any,
@@ -233,11 +236,11 @@ object ISurvey {
     scrollElementToTop: (ISurveyElement, IQuestion, IPage, String) => js.Any,
     state: String,
     storeOthersAsComment: Boolean,
-    updateChoicesFromServer: (IQuestion, js.Array[_], js.Any) => js.Array[_],
+    updateChoicesFromServer: (IQuestion, js.Array[js.Any], js.Any) => js.Array[js.Any],
     updatePageCssClasses: (IPanel, js.Any) => js.Any,
     updatePanelCssClasses: (IPanel, js.Any) => js.Any,
     updateQuestionCssClasses: (IQuestion, js.Any) => js.Any,
-    uploadFiles: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any,
+    uploadFiles: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any,
     validatePanel: IPanel => SurveyError,
     validateQuestion: IQuestion => SurveyError
   ): ISurvey = {
@@ -274,7 +277,7 @@ object ISurvey {
     
     @scala.inline
     def setClearFiles(
-      value: (IQuestion, String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any
+      value: (IQuestion, String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "clearFiles", js.Any.fromFunction5(value))
     
     @scala.inline
@@ -284,7 +287,7 @@ object ISurvey {
     def setCurrentPage(value: IPage): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadFile(value: (String, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any): Self = StObject.set(x, "downloadFile", js.Any.fromFunction3(value))
+    def setDownloadFile(value: (String, String, js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any): Self = StObject.set(x, "downloadFile", js.Any.fromFunction3(value))
     
     @scala.inline
     def setDragAndDropAllow(value: js.Any => Boolean): Self = StObject.set(x, "dragAndDropAllow", js.Any.fromFunction1(value))
@@ -440,7 +443,7 @@ object ISurvey {
     def setStoreOthersAsComment(value: Boolean): Self = StObject.set(x, "storeOthersAsComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateChoicesFromServer(value: (IQuestion, js.Array[_], js.Any) => js.Array[_]): Self = StObject.set(x, "updateChoicesFromServer", js.Any.fromFunction3(value))
+    def setUpdateChoicesFromServer(value: (IQuestion, js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "updateChoicesFromServer", js.Any.fromFunction3(value))
     
     @scala.inline
     def setUpdatePageCssClasses(value: (IPanel, js.Any) => js.Any): Self = StObject.set(x, "updatePageCssClasses", js.Any.fromFunction2(value))
@@ -453,7 +456,7 @@ object ISurvey {
     
     @scala.inline
     def setUploadFiles(
-      value: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any
+      value: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "uploadFiles", js.Any.fromFunction4(value))
     
     @scala.inline

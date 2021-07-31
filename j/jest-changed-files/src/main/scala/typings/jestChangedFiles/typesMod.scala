@@ -4,17 +4,15 @@ import typings.jestTypes.configMod.Path
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ChangedFiles extends StObject {
     
-    var changedFiles: Paths = js.native
+    var changedFiles: Paths
     
-    var repos: Repos = js.native
+    var repos: Repos
   }
   object ChangedFiles {
     
@@ -37,16 +35,15 @@ object typesMod {
   
   type ChangedFilesPromise = js.Promise[ChangedFiles]
   
-  @js.native
   trait Options extends StObject {
     
-    var changedSince: js.UndefOr[String] = js.native
+    var changedSince: js.UndefOr[String] = js.undefined
     
-    var includePaths: js.UndefOr[js.Array[Path]] = js.native
+    var includePaths: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var lastCommit: js.UndefOr[Boolean] = js.native
+    var lastCommit: js.UndefOr[Boolean] = js.undefined
     
-    var withAncestor: js.UndefOr[Boolean] = js.native
+    var withAncestor: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -90,12 +87,11 @@ object typesMod {
   
   type Paths = Set[Path]
   
-  @js.native
   trait Repos extends StObject {
     
-    var git: Paths = js.native
+    var git: Paths
     
-    var hg: Paths = js.native
+    var hg: Paths
   }
   object Repos {
     
@@ -116,12 +112,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SCMAdapter extends StObject {
     
-    def findChangedFiles(cwd: Path, options: Options): js.Promise[js.Array[Path]] = js.native
+    def findChangedFiles(cwd: Path, options: Options): js.Promise[js.Array[Path]]
     
-    def getRoot(cwd: Path): js.Promise[Path | Null] = js.native
+    def getRoot(cwd: Path): js.Promise[Path | Null]
   }
   object SCMAdapter {
     

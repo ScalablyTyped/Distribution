@@ -3,51 +3,49 @@ package typings.reactBootstrapTable.mod
 import typings.reactBootstrapTable.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizePerPageDropDownProps extends StObject {
   
   /**
     * Bootstrap css style class for the button, e.g. 'btn-warning'
     */
-  var btnContextual: js.UndefOr[String] = js.native
+  var btnContextual: js.UndefOr[String] = js.undefined
   
   /**
     * Custom class name to use for the component.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Current size per page
     */
-  var currSizePerPage: js.UndefOr[String] = js.native
+  var currSizePerPage: js.UndefOr[String] = js.undefined
   
   /**
     * Flag to indicate that the dropdown is currently hidden
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Callback function that should be triggered when the user clicks on the dropdown button.
     */
-  var onClick: js.UndefOr[js.Function1[/* toggleDropDown */ js.Function0[Unit], Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* toggleDropDown */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Flag to indicate that the dropdown is open
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Size Per Page options list
     */
-  var options: js.UndefOr[js.Array[Double | Text]] = js.native
+  var options: js.UndefOr[js.Array[Double | Text]] = js.undefined
   
   /**
     * Whether the button menu should 'dropup' or 'dropdown'.
     */
-  var variation: js.UndefOr[DropDirection] = js.native
+  var variation: js.UndefOr[DropDirection] = js.undefined
 }
 object SizePerPageDropDownProps {
   

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** A recognized capture group for a pattern-based entity. */
-@js.native
 trait CaptureGroup extends StObject {
   
   /** A recognized capture group for the entity. */
-  var group: String = js.native
+  var group: String
   
   /** Zero-based character offsets that indicate where the entity value begins and ends in the input text. */
-  var location: js.UndefOr[js.Array[Double]] = js.native
+  var location: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object CaptureGroup {
   

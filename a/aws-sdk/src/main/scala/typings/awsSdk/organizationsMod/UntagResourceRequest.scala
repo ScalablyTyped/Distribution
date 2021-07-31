@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ID of the resource to remove a tag from. You can specify any of the following taggable resources.   AWS account – specify the account ID number.   Organizational unit – specify the OU ID that begins with ou- and looks similar to: ou-1a2b-34uvwxyz     Root – specify the root ID that begins with r- and looks similar to: r-1a2b     Policy – specify the policy ID that begins with p- andlooks similar to: p-12abcdefg3    
     */
-  var ResourceId: TaggableResourceId = js.native
+  var ResourceId: TaggableResourceId
   
   /**
     * The list of keys for tags to remove from the specified resource.
     */
-  var TagKeys: typings.awsSdk.organizationsMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.organizationsMod.TagKeys
 }
 object UntagResourceRequest {
   

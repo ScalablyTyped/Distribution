@@ -5,31 +5,30 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useRootCloseMod {
   
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
+  @JSImport("react-overlays/cjs/useRootClose", JSImport.Namespace)
   @js.native
-  def default(ref: js.UndefOr[scala.Nothing], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
-  def default(
-    ref: js.UndefOr[scala.Nothing],
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
-  def default(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def default(
     ref: Null,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(
+    ref: Unit,
+    onRootClose: js.Function1[/* e */ Event, Unit],
+    hasDisabledClickTrigger: RootCloseOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * The `useRootClose` hook registers your callback on the document
     * when rendered. Powers the `<Overlay/>` component. This is used achieve modal
@@ -42,26 +41,22 @@ object useRootCloseMod {
     * @param {boolean=} options.disabled
     * @param {string=}  options.clickTrigger The DOM event name (click, mousedown, etc) to attach listeners on
     */
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
-  def default(ref: RefObject[Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
+  @scala.inline
+  def default(ref: RefObject[Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def default(
     ref: RefObject[Element],
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
-  def default(ref: Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = js.native
-  @JSImport("react-overlays/cjs/useRootClose", JSImport.Default)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(ref: Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def default(
     ref: Element,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactOverlays.reactOverlaysStrings.transitionrun
@@ -154,12 +149,11 @@ object useRootCloseMod {
   */
   trait MouseEvents extends StObject
   
-  @js.native
   trait RootCloseOptions extends StObject {
     
-    var clickTrigger: js.UndefOr[MouseEvents] = js.native
+    var clickTrigger: js.UndefOr[MouseEvents] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object RootCloseOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReceiptFilterRequest extends StObject {
   
   /**
     * The name of the IP address filter to delete.
     */
-  var FilterName: ReceiptFilterName = js.native
+  var FilterName: ReceiptFilterName
 }
 object DeleteReceiptFilterRequest {
   

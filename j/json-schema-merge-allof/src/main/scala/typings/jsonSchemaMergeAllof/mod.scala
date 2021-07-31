@@ -14,44 +14,36 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(rootSchema: JSONSchema4): JSONSchema4 = ^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema4]
+  @scala.inline
+  def apply(rootSchema: JSONSchema4, options: Options_[JSONSchema4] & IgnoreAdditionalProperties): JSONSchema4 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema4]
+  @scala.inline
+  def apply(rootSchema: JSONSchema4, options: Options_[JSONSchema4]): JSONSchema4 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema4]
+  @scala.inline
+  def apply(rootSchema: JSONSchema6): JSONSchema6 = ^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def apply(rootSchema: JSONSchema6, options: Options_[JSONSchema6] & IgnoreAdditionalProperties): JSONSchema6 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def apply(rootSchema: JSONSchema6, options: Options_[JSONSchema6]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  @scala.inline
+  def apply(rootSchema: JSONSchema7): JSONSchema7 = ^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema7]
+  @scala.inline
+  def apply(rootSchema: JSONSchema7, options: Options_[JSONSchema7] & IgnoreAdditionalProperties): JSONSchema7 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema7]
+  @scala.inline
+  def apply(rootSchema: JSONSchema7, options: Options_[JSONSchema7]): JSONSchema7 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema7]
+  @scala.inline
+  def apply(rootSchema: JSONSchema46): JSONSchema46 = ^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema46]
+  @scala.inline
+  def apply(rootSchema: JSONSchema46, options: Options_[JSONSchema46]): JSONSchema46 = (^.asInstanceOf[js.Dynamic].apply(rootSchema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema46]
+  
   @JSImport("json-schema-merge-allof", JSImport.Namespace)
   @js.native
-  def apply(rootSchema: JSONSchema4): JSONSchema4 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(
-    rootSchema: JSONSchema4,
-    options: (Options_[JSONSchema4] with IgnoreAdditionalProperties) | Options_[JSONSchema4]
-  ): JSONSchema4 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(rootSchema: JSONSchema6): JSONSchema6 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(
-    rootSchema: JSONSchema6,
-    options: (Options_[JSONSchema6] with IgnoreAdditionalProperties) | Options_[JSONSchema6]
-  ): JSONSchema6 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(rootSchema: JSONSchema7): JSONSchema7 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(
-    rootSchema: JSONSchema7,
-    options: (Options_[JSONSchema7] with IgnoreAdditionalProperties) | Options_[JSONSchema7]
-  ): JSONSchema7 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(rootSchema: JSONSchema46): JSONSchema46 = js.native
-  @JSImport("json-schema-merge-allof", JSImport.Namespace)
-  @js.native
-  def apply(rootSchema: JSONSchema46, options: Options_[JSONSchema46]): JSONSchema46 = js.native
+  val ^ : js.Any = js.native
   
   object options {
     
@@ -74,7 +66,6 @@ object mod {
   
   type MergeSchemas = js.Function1[/* schemas */ js.Array[JSONSchema], JSONSchema]
   
-  @js.native
   trait Options_[Schema /* <: JSONSchema */] extends StObject {
     
     /**
@@ -89,7 +80,7 @@ object mod {
       * false during the merge process. The resulting schema will still get
       * additionalProperties set to false.
       */
-    var ignoreAdditionalProperties: js.UndefOr[Boolean] = js.native
+    var ignoreAdditionalProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * **resolvers** Object
@@ -119,7 +110,7 @@ object mod {
       *   schemas
       * - **options** the options mergeAllOf was called with
       */
-    var resolvers: js.UndefOr[Partial[Resolvers[Schema]] with DefaultResolver[Schema]] = js.native
+    var resolvers: js.UndefOr[Partial[Resolvers[Schema]] & DefaultResolver[Schema]] = js.undefined
   }
   object Options_ {
     
@@ -130,7 +121,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class Options_MutableBuilder[Self <: Options_[_], Schema /* <: JSONSchema */] (val x: Self with Options_[Schema]) extends AnyVal {
+    implicit class Options_MutableBuilder[Self <: Options_[?], Schema /* <: JSONSchema */] (val x: Self & Options_[Schema]) extends AnyVal {
       
       @scala.inline
       def setIgnoreAdditionalProperties(value: Boolean): Self = StObject.set(x, "ignoreAdditionalProperties", value.asInstanceOf[js.Any])
@@ -139,14 +130,13 @@ object mod {
       def setIgnoreAdditionalPropertiesUndefined: Self = StObject.set(x, "ignoreAdditionalProperties", js.undefined)
       
       @scala.inline
-      def setResolvers(value: Partial[Resolvers[Schema]] with DefaultResolver[Schema]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
+      def setResolvers(value: Partial[Resolvers[Schema]] & DefaultResolver[Schema]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
     }
   }
   
-  @js.native
   trait Resolvers[Schema /* <: JSONSchema */] extends StObject {
     
     @JSName("$id")
@@ -159,7 +149,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.anon.Id>['$id'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("$ref")
     def $ref_ref(
@@ -171,7 +161,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['$ref'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("$schema")
     def $schema_schema(
@@ -183,7 +173,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['$schema'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("additionalItems")
     def additionalItems_additionalItems(
@@ -195,7 +185,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalItems'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("additionalProperties")
     def additionalProperties_additionalProperties(
@@ -207,7 +197,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalProperties'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("anyOf")
     def anyOf_anyOf(
@@ -219,7 +209,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['anyOf'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("contains")
     def contains_contains(
@@ -231,7 +221,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.anon.Contains>['contains'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("default")
     def default_default(
@@ -243,7 +233,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['default'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("definitions")
     def definitions_definitions(
@@ -255,7 +245,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['definitions'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("dependencies")
     def dependencies_dependencies(
@@ -267,7 +257,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['dependencies'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("description")
     def description_description(
@@ -279,7 +269,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("enum")
     def enum_enum(
@@ -291,7 +281,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("examples")
     def examples_examples(
@@ -303,7 +293,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.anon.Examples>['examples'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("exclusiveMaximum")
     def exclusiveMaximum_exclusiveMaximum(
@@ -315,7 +305,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("exclusiveMinimum")
     def exclusiveMinimum_exclusiveMinimum(
@@ -327,7 +317,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("items")
     def items_items(
@@ -339,7 +329,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['items'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("maxItems")
     def maxItems_maxItems(
@@ -351,7 +341,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxItems'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("maxLength")
     def maxLength_maxLength(
@@ -363,7 +353,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxLength'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("maxProperties")
     def maxProperties_maxProperties(
@@ -375,7 +365,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxProperties'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("maximum")
     def maximum_maximum(
@@ -387,7 +377,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['maximum'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("minItems")
     def minItems_minItems(
@@ -399,7 +389,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['minItems'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("minLength")
     def minLength_minLength(
@@ -411,7 +401,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['minLength'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("minProperties")
     def minProperties_minProperties(
@@ -423,7 +413,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['minProperties'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("minimum")
     def minimum_minimum(
@@ -435,7 +425,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['minimum'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("multipleOf")
     def multipleOf_multipleOf(
@@ -447,7 +437,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['multipleOf'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("not")
     def not_not(
@@ -459,7 +449,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['not'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("oneOf")
     def oneOf_oneOf(
@@ -471,7 +461,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['oneOf'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("pattern")
     def pattern_pattern(
@@ -483,7 +473,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['pattern'] */ js.Any
-      ] = js.native
+      ]
     
     /**
       * ### Combined resolvers
@@ -530,7 +520,7 @@ object mod {
     ): Pick[
         Schema, 
         typings.jsonSchemaMergeAllof.jsonSchemaMergeAllofStrings.properties | patternProperties | additionalProperties
-      ] = js.native
+      ]
     
     @JSName("propertyNames")
     def propertyNames_propertyNames(
@@ -542,7 +532,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.anon.PropertyNames>['propertyNames'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("required")
     def required_required(
@@ -554,7 +544,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['required'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("title")
     def title_title(
@@ -566,7 +556,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['title'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("type")
     def type_type(
@@ -578,7 +568,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['type'] */ js.Any
-      ] = js.native
+      ]
     
     @JSName("uniqueItems")
     def uniqueItems_uniqueItems(
@@ -590,7 +580,7 @@ object mod {
       options: Options_[Schema]
     ): NonNullable[
         /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
-      ] = js.native
+      ]
   }
   object Resolvers {
     
@@ -651,7 +641,7 @@ object mod {
         ], js.Array[String], MergeSchemas, Options_[Schema]) => NonNullable[
           /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
         ],
-      enum: (js.Array[
+      `enum`: (js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
         ], js.Array[String], MergeSchemas, Options_[Schema]) => NonNullable[
           /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
@@ -763,13 +753,14 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
         ]
     ): Resolvers[Schema] = {
-      val __obj = js.Dynamic.literal($id = js.Any.fromFunction4($id), $ref = js.Any.fromFunction4($ref), $schema = js.Any.fromFunction4($schema), additionalItems = js.Any.fromFunction4(additionalItems), additionalProperties = js.Any.fromFunction4(additionalProperties), anyOf = js.Any.fromFunction4(anyOf), contains = js.Any.fromFunction4(contains), default = js.Any.fromFunction4(default), definitions = js.Any.fromFunction4(definitions), dependencies = js.Any.fromFunction4(dependencies), description = js.Any.fromFunction4(description), enum = js.Any.fromFunction4(enum), examples = js.Any.fromFunction4(examples), exclusiveMaximum = js.Any.fromFunction4(exclusiveMaximum), exclusiveMinimum = js.Any.fromFunction4(exclusiveMinimum), items = js.Any.fromFunction4(items), maxItems = js.Any.fromFunction4(maxItems), maxLength = js.Any.fromFunction4(maxLength), maxProperties = js.Any.fromFunction4(maxProperties), maximum = js.Any.fromFunction4(maximum), minItems = js.Any.fromFunction4(minItems), minLength = js.Any.fromFunction4(minLength), minProperties = js.Any.fromFunction4(minProperties), minimum = js.Any.fromFunction4(minimum), multipleOf = js.Any.fromFunction4(multipleOf), not = js.Any.fromFunction4(not), oneOf = js.Any.fromFunction4(oneOf), pattern = js.Any.fromFunction4(pattern), properties = js.Any.fromFunction4(properties), propertyNames = js.Any.fromFunction4(propertyNames), required = js.Any.fromFunction4(required), title = js.Any.fromFunction4(title), uniqueItems = js.Any.fromFunction4(uniqueItems))
+      val __obj = js.Dynamic.literal($id = js.Any.fromFunction4($id), $ref = js.Any.fromFunction4($ref), $schema = js.Any.fromFunction4($schema), additionalItems = js.Any.fromFunction4(additionalItems), additionalProperties = js.Any.fromFunction4(additionalProperties), anyOf = js.Any.fromFunction4(anyOf), contains = js.Any.fromFunction4(contains), default = js.Any.fromFunction4(default), definitions = js.Any.fromFunction4(definitions), dependencies = js.Any.fromFunction4(dependencies), description = js.Any.fromFunction4(description), examples = js.Any.fromFunction4(examples), exclusiveMaximum = js.Any.fromFunction4(exclusiveMaximum), exclusiveMinimum = js.Any.fromFunction4(exclusiveMinimum), items = js.Any.fromFunction4(items), maxItems = js.Any.fromFunction4(maxItems), maxLength = js.Any.fromFunction4(maxLength), maxProperties = js.Any.fromFunction4(maxProperties), maximum = js.Any.fromFunction4(maximum), minItems = js.Any.fromFunction4(minItems), minLength = js.Any.fromFunction4(minLength), minProperties = js.Any.fromFunction4(minProperties), minimum = js.Any.fromFunction4(minimum), multipleOf = js.Any.fromFunction4(multipleOf), not = js.Any.fromFunction4(not), oneOf = js.Any.fromFunction4(oneOf), pattern = js.Any.fromFunction4(pattern), properties = js.Any.fromFunction4(properties), propertyNames = js.Any.fromFunction4(propertyNames), required = js.Any.fromFunction4(required), title = js.Any.fromFunction4(title), uniqueItems = js.Any.fromFunction4(uniqueItems))
+      __obj.updateDynamic("enum")(js.Any.fromFunction4(`enum`))
       __obj.updateDynamic("type")(js.Any.fromFunction4(`type`))
       __obj.asInstanceOf[Resolvers[Schema]]
     }
     
     @scala.inline
-    implicit class ResolversMutableBuilder[Self <: Resolvers[_], Schema /* <: JSONSchema */] (val x: Self with Resolvers[Schema]) extends AnyVal {
+    implicit class ResolversMutableBuilder[Self <: Resolvers[?], Schema /* <: JSONSchema */] (val x: Self & Resolvers[Schema]) extends AnyVal {
       
       @scala.inline
       def set$id(

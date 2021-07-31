@@ -4,10 +4,8 @@ import typings.chromeApps.chrome.deprecated
 import typings.chromeApps.chrome.deprecatedButUsable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofchrome extends StObject {
   
   // #endregion
@@ -19,7 +17,7 @@ trait Typeofchrome extends StObject {
     * New Chrome Event
     * @constructor
     */
-  val Event: Instantiable = js.native
+  val Event: Instantiable
   
   // | 'double';
   // #endregion internal
@@ -41,7 +39,7 @@ trait Typeofchrome extends StObject {
     * For modifying feature state, the extension needs accessibilityFeatures.modify permission.
     * Note that accessibilityFeatures.modify does not imply accessibilityFeatures.read permission.
     */
-  val accessibilityFeatures: TypeofaccessibilityFeatur = js.native
+  val accessibilityFeatures: TypeofaccessibilityFeatur
   
   // #endregion
   // #region chrome.alarms
@@ -55,7 +53,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.alarms API to schedule code to run
     * periodically or at a specified time in the future.
     */
-  val alarms: Typeofalarms = js.native
+  val alarms: Typeofalarms
   
   ////////////////
   // App Window //
@@ -68,7 +66,7 @@ trait Typeofchrome extends StObject {
     * They are not associated with any Chrome browser windows.
     * See the Window State Sample for a demonstration of these options.
     */
-  val app: Typeofapp = js.native
+  val app: Typeofapp
   
   // #endregion chrome.app.*
   // #region chrome.audio
@@ -83,7 +81,7 @@ trait Typeofchrome extends StObject {
     * about and control the audio devices attached to the system.
     * This API is currently only available in kiosk mode for ChromeOS.
     */
-  val audio: Typeofaudio = js.native
+  val audio: Typeofaudio
   
   // #endregion
   // #region chrome.bluetooth*
@@ -98,7 +96,7 @@ trait Typeofchrome extends StObject {
     * All functions report failures via chrome.runtime.lastError.
     * **Important: This API works only on OS X, Windows and Chrome OS.**
     */
-  val bluetooth: Typeofbluetooth = js.native
+  val bluetooth: Typeofbluetooth
   
   /**
     * @since Chrome 37
@@ -110,7 +108,7 @@ trait Typeofchrome extends StObject {
     * with Bluetooth Smart (Low Energy) devices using the
     * Generic Attribute Profile (GATT).
     */
-  val bluetoothLowEnergy: TypeofbluetoothLowEnergy = js.native
+  val bluetoothLowEnergy: TypeofbluetoothLowEnergy
   
   /**
     * @since Chrome 37
@@ -118,7 +116,7 @@ trait Typeofchrome extends StObject {
     * @requires Important: This API works only on OS X, Windows and Chrome OS.
     * Use the chrome.bluetoothSocket API to send and receive data to Bluetooth devices using RFCOMM and L2CAP connections.
     */
-  val bluetoothSocket: TypeofbluetoothSocket = js.native
+  val bluetoothSocket: TypeofbluetoothSocket
   
   // #endregion
   // #region chrome.browser
@@ -132,7 +130,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.browser API to interact with the Chrome browser associated with
     * the current application and Chrome profile.
     */
-  val browser: Typeofbrowser = js.native
+  val browser: Typeofbrowser
   
   // #endregion
   // #region chrome.certificateProvider
@@ -146,7 +144,7 @@ trait Typeofchrome extends StObject {
     * Use this API to expose certificates to the platform which
     * can use these certificates for TLS authentications.
     */
-  val certificateProvider: TypeofcertificateProvider = js.native
+  val certificateProvider: TypeofcertificateProvider
   
   // #endregion
   // #region chrome.clipboard
@@ -163,7 +161,7 @@ trait Typeofchrome extends StObject {
     * It will be deprecated once open-web solution is available.
     * @see[Docs]{@link https://developer.chrome.com/apps/clipboard}
     */
-  val clipboard: Typeofclipboard = js.native
+  val clipboard: Typeofclipboard
   
   // #endregion
   // #region chrome.commands
@@ -180,7 +178,7 @@ trait Typeofchrome extends StObject {
     * to the app.
     * @see[Usage]{@link https://developer.chrome.com/apps/commands}
     */
-  val commands: Typeofcommands = js.native
+  val commands: Typeofcommands
   
   // #endregion
   // #region chrome.contextMenus
@@ -204,7 +202,7 @@ trait Typeofchrome extends StObject {
     * but if more than one from your app is visible at once,
     * Google Chrome automatically collapses them into a single parent menu.
     */
-  val contextMenus: TypeofcontextMenus = js.native
+  val contextMenus: TypeofcontextMenus
   
   // #endregion
   // #region methods
@@ -214,7 +212,7 @@ trait Typeofchrome extends StObject {
   /**
     * Different page speed and load metrics
     */
-  def csi(): OnloadT = js.native
+  def csi(): OnloadT
   
   // #endregion
   // #region chrome.desktopCapture
@@ -226,7 +224,7 @@ trait Typeofchrome extends StObject {
     * @since Chrome 34.
     * @requires Permissions: 'desktopCapture'
     */
-  val desktopCapture: TypeofdesktopCapture = js.native
+  val desktopCapture: TypeofdesktopCapture
   
   // #endregion
   // #region chrome.diagnostics
@@ -237,7 +235,7 @@ trait Typeofchrome extends StObject {
     * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
     * @requires Permissions: 'diagnostics'
     */
-  val diagnostics: Typeofdiagnostics = js.native
+  val diagnostics: Typeofdiagnostics
   
   // #endregion
   // #region chrome.displaySource
@@ -250,7 +248,7 @@ trait Typeofchrome extends StObject {
     * The *chrome.displaySource* API creates a Display session using WebMediaStreamTrack as sources.
     * @todo TODO Finish documentation and typings
     */
-  val displaySource: TypeofdisplaySource = js.native
+  val displaySource: TypeofdisplaySource
   
   // #endregion
   // #region chrome.dns
@@ -263,7 +261,7 @@ trait Typeofchrome extends StObject {
     * @description
     * Use the *chrome.dns* API for dns resolution.
     */
-  val dns: Typeofdns = js.native
+  val dns: Typeofdns
   
   // #endregion
   // #region chrome.documentScan
@@ -285,9 +283,9 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'documentScan'
     * @requires Important: This API works only on Chrome OS.
     */
-  val documentScan: TypeofdocumentScan = js.native
+  val documentScan: TypeofdocumentScan
   
-  val enterprise: Typeofenterprise = js.native
+  val enterprise: Typeofenterprise
   
   // #endregion chrome.enterprise.*
   // #region chrome.events
@@ -315,7 +313,7 @@ trait Typeofchrome extends StObject {
     * object that has details about the elapsed alarm.
     * @since Chrome 25.
     */
-  val events: js.Any = js.native
+  val events: js.Any
   
   // #endregion
   // #region placeholders
@@ -327,7 +325,7 @@ trait Typeofchrome extends StObject {
     * Please consult the official documentation.
     * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
     */
-  val experimental: js.Any = js.native
+  val experimental: js.Any
   
   // #endregion
   // #region chrome.extensionTypes
@@ -339,7 +337,7 @@ trait Typeofchrome extends StObject {
     * https://developer.chrome.com/extensions/extensionTypes#type-ImageDetails
     * @since Chrome 39.
     **/
-  val extensionTypes: TypeofextensionTypes = js.native
+  val extensionTypes: TypeofextensionTypes
   
   // #endregion
   // #region chrome.fileBrowserHandle
@@ -355,7 +353,7 @@ trait Typeofchrome extends StObject {
     * For example, you can use this API to enable users to upload files to your website.
     * @see[Documentation]{@link https://developer.chrome.com/extensions/fileBrowserHandler}
     */
-  val fileBrowserHandler: TypeoffileBrowserHandler = js.native
+  val fileBrowserHandler: TypeoffileBrowserHandler
   
   // #endregion
   // #region chrome.fileSystem
@@ -373,7 +371,7 @@ trait Typeofchrome extends StObject {
     *   {'fileSystem': ['write']}
     *   {'fileSystem': ['write', 'retainEntries', 'directory']}
     */
-  val fileSystem: TypeoffileSystem = js.native
+  val fileSystem: TypeoffileSystem
   
   // #endregion
   // #region chrome.fileSystemProvider
@@ -406,7 +404,7 @@ trait Typeofchrome extends StObject {
     * watchers, so changes on the file system can be reflected immediately and automatically.
     * @see[More information]{@link https://developer.chrome.com/apps/fileSystemProvider}
     */
-  val fileSystemProvider: TypeoffileSystemProvider = js.native
+  val fileSystemProvider: TypeoffileSystemProvider
   
   // #endregion
   // #region chrome.gcm
@@ -427,7 +425,7 @@ trait Typeofchrome extends StObject {
     * @since Chrome 35.
     * @requires Permissions: 'gcm'
     */
-  val gcm: Typeofgcm = js.native
+  val gcm: Typeofgcm
   
   // #endregion
   // #region chrome.hid
@@ -445,7 +443,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'hid'
     * @since Chrome 38.
     */
-  val hid: Typeofhid = js.native
+  val hid: Typeofhid
   
   // #endregion
   // #region chrome.i18n
@@ -458,7 +456,7 @@ trait Typeofchrome extends StObject {
     * @see[Docs]{@link https://developer.chrome.com/apps/i18n}
     * @since Chrome 25.
     */
-  val i18n: Typeofi18n = js.native
+  val i18n: Typeofi18n
   
   // #endregion
   // #region chrome.identity
@@ -471,7 +469,7 @@ trait Typeofchrome extends StObject {
     * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
     * @since Chrome 29.
     */
-  val identity: Typeofidentity = js.native
+  val identity: Typeofidentity
   
   // #endregion
   // #region chrome.idle
@@ -483,7 +481,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'idle'
     * @since Chrome 25.
     */
-  val idle: Typeofidle = js.native
+  val idle: Typeofidle
   
   // #endregion
   // #region chrome.instanceID
@@ -495,7 +493,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'gcm'
     * @since Chrome 46
     */
-  val instanceID: TypeofinstanceID = js.native
+  val instanceID: TypeofinstanceID
   
   /**
     * @deprecated Deprecated in Chrome 64.
@@ -505,7 +503,7 @@ trait Typeofchrome extends StObject {
     * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
     * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
     */
-  def loadTimes(): deprecatedButUsable = js.native
+  def loadTimes(): deprecatedButUsable
   
   // #endregion
   // #region chrome.management
@@ -517,7 +515,7 @@ trait Typeofchrome extends StObject {
     * manage the list of apps
     * that are installed and running.
     */
-  val management: Typeofmanagement = js.native
+  val management: Typeofmanagement
   
   // #endregion
   // #region chrome.mdns
@@ -531,7 +529,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'mdns'
     * @since Chrome 31
     */
-  val mdns: Typeofmdns = js.native
+  val mdns: Typeofmdns
   
   // #endregion
   // #region chrome.mediaGalleries
@@ -546,9 +544,9 @@ trait Typeofchrome extends StObject {
     *                        {'mediaGalleries': ['accessType1' | 'accessType2', ..., 'allAutoDetected']}
     * @see[More information]{@link https://developer.chrome.com/apps/mediaGalleries}
     */
-  val mediaGalleries: TypeofmediaGalleries = js.native
+  val mediaGalleries: TypeofmediaGalleries
   
-  val networking: Typeofnetworking = js.native
+  val networking: Typeofnetworking
   
   // #endregion chrome.networking.*
   // #region chrome.notifications
@@ -562,7 +560,7 @@ trait Typeofchrome extends StObject {
     * @since Chrome 28.
     * @see[Docs]{@link https://developer.chrome.com/extensions/notifications}
     */
-  val notifications: Typeofnotifications = js.native
+  val notifications: Typeofnotifications
   
   // #endregion
   // #region chrome.permissions
@@ -574,7 +572,7 @@ trait Typeofchrome extends StObject {
     * so users understand why the permissions are needed and grant only those that are necessary.
     * @since Chrome 16.
     */
-  val permissions: Typeofpermissions = js.native
+  val permissions: Typeofpermissions
   
   // #endregion
   // #region chrome.platformKeys
@@ -591,7 +589,7 @@ trait Typeofchrome extends StObject {
     * E.g. this allows usage of platform managed certificates in third party VPNs
     * @see chrome.vpnProvider
     */
-  val platformKeys: TypeofplatformKeysClientCertificateType = js.native
+  val platformKeys: TypeofplatformKeysClientCertificateType
   
   // #endregion
   // #region chrome.power
@@ -603,7 +601,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'power'
     * @since Chrome 27.
     */
-  val power: Typeofpower = js.native
+  val power: Typeofpower
   
   // #endregion
   // #region chrome.printerProvider
@@ -618,7 +616,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'printerProvider'
     * @since Chrome 44.
     */
-  val printerProvider: TypeofprinterProvider = js.native
+  val printerProvider: TypeofprinterProvider
   
   // #endregion
   // #region chrome.runtime
@@ -629,7 +627,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
     * @since Chrome 22
     */
-  val runtime: TypeofruntimeConnect = js.native
+  val runtime: TypeofruntimeConnect
   
   // #endregion
   // #region chrome.serial
@@ -643,7 +641,7 @@ trait Typeofchrome extends StObject {
     *  sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     * @since Chrome 23
     */
-  val serial: deprecated = js.native
+  val serial: deprecated
   
   // #endregion
   // #region chrome.signedInDevices
@@ -655,7 +653,7 @@ trait Typeofchrome extends StObject {
     * Use the *chrome.signedInDevices* API to get a list of devices
     * signed into chrome with the same account as the current profile.
     */
-  val signedInDevices: TypeofsignedInDevices = js.native
+  val signedInDevices: TypeofsignedInDevices
   
   // #endregion
   // #region chrome.socket
@@ -679,7 +677,7 @@ trait Typeofchrome extends StObject {
     * Use the chrome.sockets.* APIs to send and receive data over the network using TCP and UDP connections.
     * @since Chrome 33.
     */
-  val sockets: Typeofsockets = js.native
+  val sockets: Typeofsockets
   
   // #endregion chrome.sockets.*
   // #region chrome.storage
@@ -691,7 +689,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  'storage'
     * @since Chrome 20.
     */
-  val storage: Typeofstorage = js.native
+  val storage: Typeofstorage
   
   // #endregion
   // #region chrome.syncFileSystem
@@ -709,9 +707,9 @@ trait Typeofchrome extends StObject {
     * @see[Learn more: Manage Data]{@link https://developer.chrome.com/apps/app_storage}
     * @since Chrome 27
     */
-  val syncFileSystem: TypeofsyncFileSystem = js.native
+  val syncFileSystem: TypeofsyncFileSystem
   
-  val system: Typeofsystem = js.native
+  val system: Typeofsystem
   
   // #endregion chrome.system.*
   // #region chrome.tts
@@ -723,7 +721,7 @@ trait Typeofchrome extends StObject {
     * Permissions:  'tts'
     * @since Chrome 14.
     */
-  val tts: Typeoftts = js.native
+  val tts: Typeoftts
   
   // #endregion
   // #region chrome.types
@@ -733,7 +731,7 @@ trait Typeofchrome extends StObject {
   /**
     * The chrome.types API contains type declarations for Chrome.
     */
-  val types: js.Any = js.native
+  val types: js.Any
   
   // #endregion
   // #region chrome.usb
@@ -751,7 +749,7 @@ trait Typeofchrome extends StObject {
     * regular parameters will be undefined in this case.
     * @see[Accessing Hardware Devices]{@link https://developer.chrome.com/apps/app_usb}
     */
-  val usb: Typeofusb = js.native
+  val usb: Typeofusb
   
   // #endregion
   // #region chrome.virtualKeyboard
@@ -766,7 +764,7 @@ trait Typeofchrome extends StObject {
     * The *chrome.virtualKeybaord* API is a kiosk only API used
     * to configure virtual keyboard layout and behavior in kiosk sessions.
     */
-  val virtualKeyboard: TypeofvirtualKeyboard = js.native
+  val virtualKeyboard: TypeofvirtualKeyboard
   
   // #endregion
   // #region chrome.vpnProvider
@@ -779,7 +777,7 @@ trait Typeofchrome extends StObject {
     * @requires Permissions: 'vpnProvider'
     * @since Chrome 43.
     */
-  val vpnProvider: TypeofvpnProvider = js.native
+  val vpnProvider: TypeofvpnProvider
   
   // #endregion
   // #region chrome.wallpaper
@@ -792,11 +790,11 @@ trait Typeofchrome extends StObject {
     * @requires Important: This API works only on Chrome OS.
     * @since Chrome 43.
     */
-  val wallpaper: Typeofwallpaper = js.native
+  val wallpaper: Typeofwallpaper
   
   // #endregion
   // #region chrome.webRequest
-  val webRequest: js.Any = js.native
+  val webRequest: js.Any
   
   // #endregion
   // #region chrome.webViewRequest
@@ -808,7 +806,7 @@ trait Typeofchrome extends StObject {
     * @description
     * Use the *chrome.webViewRequest* API to intercept, block, or modify requests in-flight.
     */
-  val webViewRequest: TypeofwebViewRequest = js.native
+  val webViewRequest: TypeofwebViewRequest
 }
 object Typeofchrome {
   

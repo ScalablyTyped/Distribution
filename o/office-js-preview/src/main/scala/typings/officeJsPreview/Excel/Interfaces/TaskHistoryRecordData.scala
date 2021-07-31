@@ -17,11 +17,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `taskHistoryRecord.toJSON()`. */
-@js.native
 trait TaskHistoryRecordData extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var anchorId: js.UndefOr[String] = js.native
+  var anchorId: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var assignee: js.UndefOr[User] = js.native
+  var assignee: js.UndefOr[User] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var attributionUser: js.UndefOr[User] = js.native
+  var attributionUser: js.UndefOr[User] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dueDate: js.UndefOr[Date] = js.native
+  var dueDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var historyRecordCreatedDate: js.UndefOr[Date] = js.native
+  var historyRecordCreatedDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait TaskHistoryRecordData extends StObject {
     */
   var `type`: js.UndefOr[
     TaskHistoryRecordType | Unknown_ | Create | Assign | Unassign | UnassignAll | Schedule | Progress | Priority | Delete | Undelete | SetTitle | Undo
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -136,7 +134,7 @@ trait TaskHistoryRecordData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var undoHistoryId: js.UndefOr[String] = js.native
+  var undoHistoryId: js.UndefOr[String] = js.undefined
 }
 object TaskHistoryRecordData {
   

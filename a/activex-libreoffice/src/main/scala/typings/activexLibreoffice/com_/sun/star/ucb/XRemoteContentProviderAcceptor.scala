@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderAcceptor extends XInterface {
+trait XRemoteContentProviderAcceptor
+  extends StObject
+     with XInterface {
   
   /**
     * Add a remote content provider.
@@ -30,14 +30,14 @@ trait XRemoteContentProviderAcceptor extends XInterface {
     Factory: XMultiServiceFactory,
     Templates: SeqEquiv[String],
     DoneListener: XRemoteContentProviderDoneListener
-  ): Boolean = js.native
+  ): Boolean
   
   /**
     * Remove a remote content provider.
     * @param Identifier An arbitrary identifier uniquely identifying the remote content provider.
     * @returns true if the remote content provider has successfully been removed.
     */
-  def removeRemoteContentProvider(Identifier: String): Boolean = js.native
+  def removeRemoteContentProvider(Identifier: String): Boolean
 }
 object XRemoteContentProviderAcceptor {
   

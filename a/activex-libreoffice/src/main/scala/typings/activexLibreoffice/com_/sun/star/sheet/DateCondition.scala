@@ -3,16 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateCondition extends XConditionEntry {
+trait DateCondition
+  extends StObject
+     with XConditionEntry {
   
   /** See {@link com.sun.star.sheet.DateType} for possible values */
-  var DateType: Double = js.native
+  var DateType: Double
   
-  var StyleName: String = js.native
+  var StyleName: String
 }
 object DateCondition {
   

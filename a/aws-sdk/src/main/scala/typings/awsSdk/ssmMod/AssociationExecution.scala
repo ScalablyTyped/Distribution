@@ -2,51 +2,49 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationExecution extends StObject {
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * The association version.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * The time the execution started.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Detailed status information about the execution.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.native
+  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The execution ID for the association.
     */
-  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.native
+  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.undefined
   
   /**
     * The date of the last execution.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * An aggregate status of the resources in the execution based on the status type.
     */
-  var ResourceCountByStatus: js.UndefOr[typings.awsSdk.ssmMod.ResourceCountByStatus] = js.native
+  var ResourceCountByStatus: js.UndefOr[typings.awsSdk.ssmMod.ResourceCountByStatus] = js.undefined
   
   /**
     * The status of the association execution.
     */
-  var Status: js.UndefOr[StatusName] = js.native
+  var Status: js.UndefOr[StatusName] = js.undefined
 }
 object AssociationExecution {
   

@@ -2,60 +2,58 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slicer extends StObject {
   
-  val ActiveItem: SlicerItem = js.native
+  val ActiveItem: SlicerItem
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var ColumnWidth: Double = js.native
+  var ColumnWidth: Double
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var DisableMoveResizeUI: Boolean = js.native
+  var DisableMoveResizeUI: Boolean
   
-  var DisplayHeader: Boolean = js.native
+  var DisplayHeader: Boolean
   
   @JSName("Excel.Slicer_typekey")
-  var ExcelDotSlicer_typekey: Slicer = js.native
+  var ExcelDotSlicer_typekey: Slicer
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var Left: Double = js.native
+  var Left: Double
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var NumberOfColumns: Double = js.native
+  var NumberOfColumns: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RowHeight: Double = js.native
+  var RowHeight: Double
   
-  val Shape: typings.activexExcel.Excel.Shape = js.native
+  val Shape: typings.activexExcel.Excel.Shape
   
-  val SlicerCache: typings.activexExcel.Excel.SlicerCache = js.native
+  val SlicerCache: typings.activexExcel.Excel.SlicerCache
   
-  val SlicerCacheLevel: typings.activexExcel.Excel.SlicerCacheLevel = js.native
+  val SlicerCacheLevel: typings.activexExcel.Excel.SlicerCacheLevel
   
-  var Style: js.Any = js.native
+  var Style: js.Any
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object Slicer {
   

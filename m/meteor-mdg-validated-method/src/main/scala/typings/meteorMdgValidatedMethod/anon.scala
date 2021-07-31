@@ -3,22 +3,21 @@ package typings.meteorMdgValidatedMethod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var noRetry: js.UndefOr[Boolean] = js.native
+    var noRetry: js.UndefOr[Boolean] = js.undefined
     
-    var onResultReceived: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+    var onResultReceived: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
     
-    var returnStubValue: js.UndefOr[Boolean] = js.native
+    var returnStubValue: js.UndefOr[Boolean] = js.undefined
     
-    var throwStubExceptions: js.UndefOr[Boolean] = js.native
+    var throwStubExceptions: js.UndefOr[Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -57,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name[TName /* <: String */] extends StObject {
     
-    var name: String | TName = js.native
+    var name: String | TName
   }
   object Name {
     
@@ -71,7 +69,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[_], TName /* <: String */] (val x: Self with Name[TName]) extends AnyVal {
+    implicit class NameMutableBuilder[Self <: Name[?], TName /* <: String */] (val x: Self & Name[TName]) extends AnyVal {
       
       @scala.inline
       def setName(value: String | TName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

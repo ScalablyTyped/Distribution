@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait RecalculationInterval extends StObject
 object RecalculationInterval extends StObject {
   
   @js.native
-  sealed trait HOUR extends RecalculationInterval
+  sealed trait HOUR
+    extends StObject
+       with RecalculationInterval
   
   @js.native
-  sealed trait MINUTE extends RecalculationInterval
+  sealed trait MINUTE
+    extends StObject
+       with RecalculationInterval
   
   @js.native
-  sealed trait ON_CHANGE extends RecalculationInterval
+  sealed trait ON_CHANGE
+    extends StObject
+       with RecalculationInterval
 }

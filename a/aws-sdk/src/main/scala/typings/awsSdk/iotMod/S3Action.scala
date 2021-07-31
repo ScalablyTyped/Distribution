@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Action extends StObject {
   
   /**
     * The Amazon S3 bucket.
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     * The Amazon S3 canned ACL that controls access to the object identified by the object key. For more information, see S3 canned ACLs.
     */
-  var cannedAcl: js.UndefOr[CannedAccessControlList] = js.native
+  var cannedAcl: js.UndefOr[CannedAccessControlList] = js.undefined
   
   /**
     * The object key. For more information, see Actions, resources, and condition keys for Amazon S3.
     */
-  var key: Key = js.native
+  var key: Key
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
 }
 object S3Action {
   

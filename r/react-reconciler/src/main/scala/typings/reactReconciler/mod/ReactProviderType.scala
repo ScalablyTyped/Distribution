@@ -2,16 +2,14 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactProviderType[T] extends StObject {
   
   @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol | Double = js.native
+  var DollarDollartypeof: js.Symbol | Double
   
-  var _context: ReactContext[T] = js.native
+  var _context: ReactContext[T]
 }
 object ReactProviderType {
   
@@ -23,7 +21,7 @@ object ReactProviderType {
   }
   
   @scala.inline
-  implicit class ReactProviderTypeMutableBuilder[Self <: ReactProviderType[_], T] (val x: Self with ReactProviderType[T]) extends AnyVal {
+  implicit class ReactProviderTypeMutableBuilder[Self <: ReactProviderType[?], T] (val x: Self & ReactProviderType[T]) extends AnyVal {
     
     @scala.inline
     def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])

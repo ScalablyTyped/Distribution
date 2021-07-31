@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Hyperlink dialog.
   */
-@js.native
-trait OpenInsertHyperlinkDialogCommand extends CommandWithSimpleStateBase {
+trait OpenInsertHyperlinkDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenInsertHyperlinkDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenInsertHyperlinkDialogCommand {
   

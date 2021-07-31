@@ -3,13 +3,11 @@ package typings.reactBootstrapTableNext.anon
 import typings.reactBootstrapTableNext.mod.ColumnDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick[T /* <: js.Object */, E] extends StObject {
   
-  def onClick(e: js.Any, column: ColumnDescription[T, E], columnIndex: Double): Unit = js.native
+  def onClick(e: js.Any, column: ColumnDescription[T, E], columnIndex: Double): Unit
 }
 object OnClick {
   
@@ -20,7 +18,7 @@ object OnClick {
   }
   
   @scala.inline
-  implicit class OnClickMutableBuilder[Self <: OnClick[_, _], T /* <: js.Object */, E] (val x: Self with (OnClick[T, E])) extends AnyVal {
+  implicit class OnClickMutableBuilder[Self <: OnClick[?, ?], T /* <: js.Object */, E] (val x: Self & (OnClick[T, E])) extends AnyVal {
     
     @scala.inline
     def setOnClick(value: (js.Any, ColumnDescription[T, E], Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))

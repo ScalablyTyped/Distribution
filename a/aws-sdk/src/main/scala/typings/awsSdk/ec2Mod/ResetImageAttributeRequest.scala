@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetImageAttributeRequest extends StObject {
   
   /**
     * The attribute to reset (currently you can only reset the launch permission attribute).
     */
-  var Attribute: ResetImageAttributeName = js.native
+  var Attribute: ResetImageAttributeName
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId
 }
 object ResetImageAttributeRequest {
   

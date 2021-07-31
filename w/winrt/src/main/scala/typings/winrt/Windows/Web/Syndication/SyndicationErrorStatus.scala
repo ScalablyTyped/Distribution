@@ -2,7 +2,6 @@ package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait SyndicationErrorStatus extends StObject
 object SyndicationErrorStatus extends StObject {
   
   @js.native
-  sealed trait invalidXml extends SyndicationErrorStatus
+  sealed trait invalidXml
+    extends StObject
+       with SyndicationErrorStatus
   
   @js.native
-  sealed trait missingRequiredAttribute extends SyndicationErrorStatus
+  sealed trait missingRequiredAttribute
+    extends StObject
+       with SyndicationErrorStatus
   
   @js.native
-  sealed trait missingRequiredElement extends SyndicationErrorStatus
+  sealed trait missingRequiredElement
+    extends StObject
+       with SyndicationErrorStatus
   
   @js.native
-  sealed trait unexpectedContent extends SyndicationErrorStatus
+  sealed trait unexpectedContent
+    extends StObject
+       with SyndicationErrorStatus
   
   @js.native
-  sealed trait unknown extends SyndicationErrorStatus
+  sealed trait unknown
+    extends StObject
+       with SyndicationErrorStatus
   
   @js.native
-  sealed trait unsupportedFormat extends SyndicationErrorStatus
+  sealed trait unsupportedFormat
+    extends StObject
+       with SyndicationErrorStatus
 }

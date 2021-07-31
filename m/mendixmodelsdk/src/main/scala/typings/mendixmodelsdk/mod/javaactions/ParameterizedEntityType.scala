@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,9 +40,8 @@ object ParameterizedEntityType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object ParameterizedEntityType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -67,9 +64,8 @@ object ParameterizedEntityType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.createInJavaActionParameterUnderJavaType")
-  @js.native
-  def createInJavaActionParameterUnderJavaType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInJavaActionParameterUnderJavaType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -80,9 +76,8 @@ object ParameterizedEntityType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.createInJavaActionUnderJavaReturnType")
-  @js.native
-  def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -93,9 +88,8 @@ object ParameterizedEntityType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.createInListTypeUnderParameter")
-  @js.native
-  def createInListTypeUnderParameter(container: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInListTypeUnderParameter(container: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType): typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "javaactions.ParameterizedEntityType.structureTypeName")

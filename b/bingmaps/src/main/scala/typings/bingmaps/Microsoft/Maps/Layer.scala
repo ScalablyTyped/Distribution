@@ -2,11 +2,12 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends IDataLayer {
+trait Layer
+  extends StObject
+     with IDataLayer {
   
   def add(primitive: js.Array[IPrimitive]): Unit = js.native
   def add(primitive: js.Array[IPrimitive], index: Double): Unit = js.native

@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used for establishing connections via a factory which is identified by its name. To complete the information needed for establishing a connection
   * an interaction handler is used.
   */
-@js.native
-trait XCompletedConnection extends XInterface {
+trait XCompletedConnection
+  extends StObject
+     with XInterface {
   
   /**
     * attempts to establish a database connection. If information is missing, such as a user's password, they are completed by user interaction.
@@ -22,7 +22,7 @@ trait XCompletedConnection extends XInterface {
     * @returns the {@link Connection} object
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def connectWithCompletion(handler: XInteractionHandler): XConnection = js.native
+  def connectWithCompletion(handler: XInteractionHandler): XConnection
 }
 object XCompletedConnection {
   

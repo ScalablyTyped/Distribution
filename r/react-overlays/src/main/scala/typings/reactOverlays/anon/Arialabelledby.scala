@@ -5,17 +5,15 @@ import typings.react.mod.RefCallback
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arialabelledby extends StObject {
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var ref: RefCallback[HTMLElement] = js.native
+  var ref: RefCallback[HTMLElement]
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object Arialabelledby {
   

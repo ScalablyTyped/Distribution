@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePoolsResize extends StandardParameters {
+trait ParamsResourcePoolsResize
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The desired number of replicas to resize to. If this number is larger
     * than the existing number of replicas, new replicas will be added. If the
     * number is smaller, then existing replicas will be deleted.
     */
-  var numReplicas: js.UndefOr[Double] = js.native
+  var numReplicas: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the replica pool for this request.
     */
-  var poolName: js.UndefOr[String] = js.native
+  var poolName: js.UndefOr[String] = js.undefined
   
   /**
     * The project ID for this replica pool.
     */
-  var projectName: js.UndefOr[String] = js.native
+  var projectName: js.UndefOr[String] = js.undefined
   
   /**
     * The zone for this replica pool.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePoolsResize {
   

@@ -2,30 +2,31 @@ package typings.reactNativeHuaweiProtectedApps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-native-huawei-protected-apps", "default.AlertIfHuaweiDevice")
+    @JSImport("react-native-huawei-protected-apps", JSImport.Default)
     @js.native
-    def AlertIfHuaweiDevice(config: HuaweiProtectedAppsConfig): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def AlertIfHuaweiDevice(config: HuaweiProtectedAppsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AlertIfHuaweiDevice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait HuaweiProtectedAppsConfig extends StObject {
     
-    var doNotShowAgainText: String = js.native
+    var doNotShowAgainText: String
     
-    var negativeText: String = js.native
+    var negativeText: String
     
-    var positiveText: String = js.native
+    var positiveText: String
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object HuaweiProtectedAppsConfig {
     

@@ -4,17 +4,15 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var container: JQuery[HTMLElement] = js.native
+  var container: JQuery[HTMLElement]
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var singleExpanded: js.UndefOr[Boolean] = js.native
+  var singleExpanded: js.UndefOr[Boolean] = js.undefined
 }
 object Fill {
   

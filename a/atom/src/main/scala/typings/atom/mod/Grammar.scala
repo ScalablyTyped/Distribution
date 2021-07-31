@@ -3,7 +3,6 @@ package typings.atom.mod
 import typings.atom.atomBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,6 @@ trait Grammar extends StObject {
     *  @return An object representing the result of the tokenize.
     */
   def tokenizeLine(line: String): TokenizeLineResult = js.native
-  def tokenizeLine(line: String, ruleStack: js.UndefOr[scala.Nothing], firstLine: Boolean): TokenizeLineResult = js.native
   /**
     *  Tokenizes the line of text.
     *  @param line A string of text to tokenize.
@@ -40,6 +38,7 @@ trait Grammar extends StObject {
     */
   def tokenizeLine(line: String, ruleStack: js.Array[GrammarRule]): TokenizeLineResult = js.native
   def tokenizeLine(line: String, ruleStack: Null, firstLine: Boolean): TokenizeLineResult = js.native
+  def tokenizeLine(line: String, ruleStack: Unit, firstLine: Boolean): TokenizeLineResult = js.native
   @JSName("tokenizeLine")
   def tokenizeLine_false(line: String, ruleStack: js.Array[GrammarRule], firstLine: `false`): TokenizeLineResult = js.native
   

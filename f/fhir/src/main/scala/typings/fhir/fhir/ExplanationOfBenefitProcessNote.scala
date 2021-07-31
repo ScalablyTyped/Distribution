@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Processing notes
   */
-@js.native
-trait ExplanationOfBenefitProcessNote extends BackboneElement {
+trait ExplanationOfBenefitProcessNote
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'number'.
     */
-  var _number: js.UndefOr[Element] = js.native
+  var _number: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Language if different from the resource
     */
-  var language: js.UndefOr[CodeableConcept] = js.native
+  var language: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Sequence number for this note
     */
-  var number: js.UndefOr[positiveInt] = js.native
+  var number: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Note explanitory text
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * display | print | printoper
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ExplanationOfBenefitProcessNote {
   

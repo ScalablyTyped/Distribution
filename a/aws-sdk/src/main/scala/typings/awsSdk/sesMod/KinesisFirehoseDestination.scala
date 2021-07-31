@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisFirehoseDestination extends StObject {
   
   /**
     * The ARN of the Amazon Kinesis Firehose stream that email sending events should be published to.
     */
-  var DeliveryStreamARN: AmazonResourceName = js.native
+  var DeliveryStreamARN: AmazonResourceName
   
   /**
     * The ARN of the IAM role under which Amazon SES publishes email sending events to the Amazon Kinesis Firehose stream.
     */
-  var IAMRoleARN: AmazonResourceName = js.native
+  var IAMRoleARN: AmazonResourceName
 }
 object KinesisFirehoseDestination {
   

@@ -3,43 +3,41 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentProperties extends StObject {
   
   /**
     * Matches the CSS style key and its available values.
     */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.native
+  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Corresponds to the aria-label accessibility attribute for this component
     */
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to the role accessibility attribute for this component
     */
-  var ariaRole: js.UndefOr[String] = js.native
+  var ariaRole: js.UndefOr[String] = js.undefined
   
   /**
     * Corresponds to the aria-selected accessibility attribute for this component
     */
-  var ariaSelected: js.UndefOr[Boolean] = js.native
+  var ariaSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Corresponds to the display CSS property for the element
     */
-  var display: js.UndefOr[DisplayType] = js.native
+  var display: js.UndefOr[DisplayType] = js.undefined
   
   /**
     * Whether the component is enabled in the DOM
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The position CSS property. Empty by default.
@@ -48,9 +46,9 @@ trait ComponentProperties extends StObject {
     * set to 'absolute', with the parent FlexContainer having 'relative' position.
     * Without this the component will fail to correctly size itself
     */
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ComponentProperties {
   

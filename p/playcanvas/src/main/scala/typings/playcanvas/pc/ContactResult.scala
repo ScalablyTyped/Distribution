@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param other - The entity that was involved in the contact with this entity.
   * @param contacts - An array of ContactPoints with the other entity.
   */
-@js.native
 trait ContactResult extends StObject {
   
   /**
     * An array of ContactPoints with the other entity.
     */
-  var contacts: js.Array[ContactPoint] = js.native
+  var contacts: js.Array[ContactPoint]
   
   /**
     * The entity that was involved in the contact with this entity.
     */
-  var other: Entity = js.native
+  var other: Entity
 }
 object ContactResult {
   

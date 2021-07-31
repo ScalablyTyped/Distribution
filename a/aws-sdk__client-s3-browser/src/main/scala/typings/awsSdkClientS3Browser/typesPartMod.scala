@@ -3,33 +3,31 @@ package typings.awsSdkClientS3Browser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPartMod {
   
-  @js.native
   trait Part extends StObject {
     
     /**
       * <p>Entity tag returned when the part was uploaded.</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Date and time at which the part was uploaded.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.native
+    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>Part number identifying the part. This is a positive integer between 1 and 10,000.</p>
       */
-    var PartNumber: js.UndefOr[Double] = js.native
+    var PartNumber: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Size of the uploaded part data.</p>
       */
-    var Size: js.UndefOr[Double] = js.native
+    var Size: js.UndefOr[Double] = js.undefined
   }
   object Part {
     
@@ -68,14 +66,15 @@ object typesPartMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledPart extends Part {
+  trait UnmarshalledPart
+    extends StObject
+       with Part {
     
     /**
       * <p>Date and time at which the part was uploaded.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledPart: js.UndefOr[Date] = js.native
+    var LastModified_UnmarshalledPart: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledPart {
     

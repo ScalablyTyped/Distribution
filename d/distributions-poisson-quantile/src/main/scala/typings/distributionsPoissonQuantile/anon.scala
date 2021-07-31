@@ -13,37 +13,35 @@ import typings.distributionsPoissonQuantile.mod.Data
 import typings.distributionsPoissonQuantile.mod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'float32'} */
-  @js.native
   trait Optionsdtypefloat32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with float32 = js.native
+    var dtype: js.UndefOr[DataType] & float32
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypefloat32 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with float32): Optionsdtypefloat32 = {
+    def apply(dtype: js.UndefOr[DataType] & float32): Optionsdtypefloat32 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypefloat32]
     }
@@ -52,7 +50,7 @@ object anon {
     implicit class Optionsdtypefloat32MutableBuilder[Self <: Optionsdtypefloat32] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -64,7 +62,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with float32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & float32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -87,31 +85,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'float64' | undefined} */
-  @js.native
   trait Optionsdtypefloat64undefi extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with js.UndefOr[float64] = js.native
+    var dtype: js.UndefOr[DataType] & js.UndefOr[float64]
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypefloat64undefi {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with js.UndefOr[float64]): Optionsdtypefloat64undefi = {
+    def apply(dtype: js.UndefOr[DataType] & js.UndefOr[float64]): Optionsdtypefloat64undefi = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypefloat64undefi]
     }
@@ -120,7 +117,7 @@ object anon {
     implicit class Optionsdtypefloat64undefiMutableBuilder[Self <: Optionsdtypefloat64undefi] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -132,7 +129,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with js.UndefOr[float64]): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & js.UndefOr[float64]): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -155,31 +152,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'int16'} */
-  @js.native
   trait Optionsdtypeint16 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with int16 = js.native
+    var dtype: js.UndefOr[DataType] & int16
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeint16 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with int16): Optionsdtypeint16 = {
+    def apply(dtype: js.UndefOr[DataType] & int16): Optionsdtypeint16 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeint16]
     }
@@ -188,7 +184,7 @@ object anon {
     implicit class Optionsdtypeint16MutableBuilder[Self <: Optionsdtypeint16] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -200,7 +196,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with int16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & int16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -223,31 +219,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'int32'} */
-  @js.native
   trait Optionsdtypeint32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with int32 = js.native
+    var dtype: js.UndefOr[DataType] & int32
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeint32 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with int32): Optionsdtypeint32 = {
+    def apply(dtype: js.UndefOr[DataType] & int32): Optionsdtypeint32 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeint32]
     }
@@ -256,7 +251,7 @@ object anon {
     implicit class Optionsdtypeint32MutableBuilder[Self <: Optionsdtypeint32] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -268,7 +263,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -291,31 +286,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'int8'} */
-  @js.native
   trait Optionsdtypeint8 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with int8 = js.native
+    var dtype: js.UndefOr[DataType] & int8
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeint8 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with int8): Optionsdtypeint8 = {
+    def apply(dtype: js.UndefOr[DataType] & int8): Optionsdtypeint8 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeint8]
     }
@@ -324,7 +318,7 @@ object anon {
     implicit class Optionsdtypeint8MutableBuilder[Self <: Optionsdtypeint8] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -336,7 +330,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with int8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & int8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -359,31 +353,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'uint16'} */
-  @js.native
   trait Optionsdtypeuint16 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with uint16 = js.native
+    var dtype: js.UndefOr[DataType] & uint16
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeuint16 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with uint16): Optionsdtypeuint16 = {
+    def apply(dtype: js.UndefOr[DataType] & uint16): Optionsdtypeuint16 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeuint16]
     }
@@ -392,7 +385,7 @@ object anon {
     implicit class Optionsdtypeuint16MutableBuilder[Self <: Optionsdtypeuint16] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -404,7 +397,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with uint16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & uint16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -427,31 +420,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'uint32'} */
-  @js.native
   trait Optionsdtypeuint32 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with uint32 = js.native
+    var dtype: js.UndefOr[DataType] & uint32
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeuint32 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with uint32): Optionsdtypeuint32 = {
+    def apply(dtype: js.UndefOr[DataType] & uint32): Optionsdtypeuint32 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeuint32]
     }
@@ -460,7 +452,7 @@ object anon {
     implicit class Optionsdtypeuint32MutableBuilder[Self <: Optionsdtypeuint32] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -472,7 +464,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with uint32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & uint32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -495,31 +487,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'uint8'} */
-  @js.native
   trait Optionsdtypeuint8 extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with uint8 = js.native
+    var dtype: js.UndefOr[DataType] & uint8
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeuint8 {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with uint8): Optionsdtypeuint8 = {
+    def apply(dtype: js.UndefOr[DataType] & uint8): Optionsdtypeuint8 = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeuint8]
     }
@@ -528,7 +519,7 @@ object anon {
     implicit class Optionsdtypeuint8MutableBuilder[Self <: Optionsdtypeuint8] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -540,7 +531,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with uint8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & uint8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -563,31 +554,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :'uint8_clamped'} */
-  @js.native
   trait Optionsdtypeuint8clamped extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with uint8_clamped = js.native
+    var dtype: js.UndefOr[DataType] & uint8_clamped
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeuint8clamped {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with uint8_clamped): Optionsdtypeuint8clamped = {
+    def apply(dtype: js.UndefOr[DataType] & uint8_clamped): Optionsdtypeuint8clamped = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeuint8clamped]
     }
@@ -596,7 +586,7 @@ object anon {
     implicit class Optionsdtypeuint8clampedMutableBuilder[Self <: Optionsdtypeuint8clamped] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -608,7 +598,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with uint8_clamped): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & uint8_clamped): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
@@ -631,31 +621,30 @@ object anon {
   }
   
   /* Inlined distributions-poisson-quantile.distributions-poisson-quantile.Options & {  dtype :undefined} */
-  @js.native
   trait Optionsdtypeundefined extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] with js.UndefOr[scala.Nothing] = js.native
+    var dtype: js.UndefOr[DataType] & Unit
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Optionsdtypeundefined {
     
     @scala.inline
-    def apply(dtype: js.UndefOr[DataType] with js.UndefOr[scala.Nothing]): Optionsdtypeundefined = {
+    def apply(dtype: js.UndefOr[DataType] & Unit): Optionsdtypeundefined = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsdtypeundefined]
     }
@@ -664,7 +653,7 @@ object anon {
     implicit class OptionsdtypeundefinedMutableBuilder[Self <: Optionsdtypeundefined] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
@@ -676,7 +665,7 @@ object anon {
       def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
       @scala.inline
-      def setDtype(value: js.UndefOr[DataType] with js.UndefOr[scala.Nothing]): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      def setDtype(value: js.UndefOr[DataType] & Unit): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSchemaFromJsonRequest extends StObject {
   
   /**
     * The replacement JSON schema.
     */
-  var Document: SchemaJsonDocument = js.native
+  var Document: SchemaJsonDocument
   
   /**
     * The ARN of the schema to update.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object PutSchemaFromJsonRequest {
   

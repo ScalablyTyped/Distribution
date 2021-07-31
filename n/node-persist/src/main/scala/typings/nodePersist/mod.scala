@@ -4,10 +4,13 @@ import typings.node.BufferEncoding
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-persist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-persist", "LocalStorage")
   @js.native
@@ -29,7 +32,7 @@ object mod {
     
     def forEach(callback: js.Function1[/* data */ Datum, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
     
-    def get(key: String): js.Promise[_] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
     
     def getDatum(key: String): Datum | Unit = js.native
     
@@ -37,7 +40,7 @@ object mod {
     
     def getDatumValue(key: String): Datum | Unit = js.native
     
-    def getItem(key: String): js.Promise[_] = js.native
+    def getItem(key: String): js.Promise[js.Any] = js.native
     
     def getRawDatum(key: String): String | Unit = js.native
     
@@ -87,213 +90,162 @@ object mod {
     def updateItem(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
     def updateItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
     
-    def values(): js.Promise[js.Array[_]] = js.native
-    def values(filter: FilterFunction[Datum]): js.Promise[js.Array[_]] = js.native
+    def values(): js.Promise[js.Array[js.Any]] = js.native
+    def values(filter: FilterFunction[Datum]): js.Promise[js.Array[js.Any]] = js.native
     
-    def valuesWithKeyMatch(): js.Promise[js.Array[_]] = js.native
-    def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[_]] = js.native
-    def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[_]] = js.native
+    def valuesWithKeyMatch(): js.Promise[js.Array[js.Any]] = js.native
+    def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[js.Any]] = js.native
+    def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[js.Any]] = js.native
     
     def writeFile(file: String, content: Datum): js.Promise[WriteFileResult] = js.native
   }
   
-  @JSImport("node-persist", "calcTTL")
-  @js.native
-  def calcTTL(): js.UndefOr[Double] = js.native
-  @JSImport("node-persist", "calcTTL")
-  @js.native
-  def calcTTL(ttl: Double): js.UndefOr[Double] = js.native
+  @scala.inline
+  def calcTTL(): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcTTL")().asInstanceOf[js.UndefOr[Double]]
+  @scala.inline
+  def calcTTL(ttl: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcTTL")(ttl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("node-persist", "clear")
-  @js.native
-  def clear(): js.Promise[Unit] = js.native
+  @scala.inline
+  def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("node-persist", "copy")
-  @js.native
-  def copy(value: js.Any): js.Any = js.native
+  @scala.inline
+  def copy(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("node-persist", "create")
-  @js.native
-  def create(): LocalStorage = js.native
-  @JSImport("node-persist", "create")
-  @js.native
-  def create(options: InitOptions): LocalStorage = js.native
+  @scala.inline
+  def create(): LocalStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[LocalStorage]
+  @scala.inline
+  def create(options: InitOptions): LocalStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[LocalStorage]
   
-  @JSImport("node-persist", "data")
-  @js.native
-  def data(): js.Promise[js.Array[Datum]] = js.native
+  @scala.inline
+  def data(): js.Promise[js.Array[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[js.Promise[js.Array[Datum]]]
   
   @JSImport("node-persist", "defaultInstance")
   @js.native
   val defaultInstance: js.UndefOr[LocalStorage] = js.native
   
-  @JSImport("node-persist", "del")
-  @js.native
-  def del(key: String): js.Promise[DeleteFileResult] = js.native
+  @scala.inline
+  def del(key: String): js.Promise[DeleteFileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileResult]]
   
-  @JSImport("node-persist", "ensureDirectory")
-  @js.native
-  def ensureDirectory(dir: String): js.Promise[EnsureDirectoryResult] = js.native
+  @scala.inline
+  def ensureDirectory(dir: String): js.Promise[EnsureDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EnsureDirectoryResult]]
   
-  @JSImport("node-persist", "forEach")
-  @js.native
-  def forEach(callback: js.Function1[/* data */ Datum, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
+  @scala.inline
+  def forEach(callback: js.Function1[/* data */ Datum, js.Promise[Unit] | Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("node-persist", "get")
-  @js.native
-  def get(key: String): js.Promise[_] = js.native
+  @scala.inline
+  def get(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("node-persist", "getDatum")
-  @js.native
-  def getDatum(key: String): Datum | Unit = js.native
+  @scala.inline
+  def getDatum(key: String): Datum | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatum")(key.asInstanceOf[js.Any]).asInstanceOf[Datum | Unit]
   
-  @JSImport("node-persist", "getDatumPath")
-  @js.native
-  def getDatumPath(key: String): String = js.native
+  @scala.inline
+  def getDatumPath(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatumPath")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-persist", "getDatumValue")
-  @js.native
-  def getDatumValue(key: String): Datum | Unit = js.native
+  @scala.inline
+  def getDatumValue(key: String): Datum | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatumValue")(key.asInstanceOf[js.Any]).asInstanceOf[Datum | Unit]
   
-  @JSImport("node-persist", "getItem")
-  @js.native
-  def getItem(key: String): js.Promise[_] = js.native
+  @scala.inline
+  def getItem(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("node-persist", "getRawDatum")
-  @js.native
-  def getRawDatum(key: String): String | Unit = js.native
+  @scala.inline
+  def getRawDatum(key: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawDatum")(key.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
-  @JSImport("node-persist", "init")
-  @js.native
-  def init(): js.Promise[InitOptions] = js.native
-  @JSImport("node-persist", "init")
-  @js.native
-  def init(options: InitOptions): js.Promise[InitOptions] = js.native
+  @scala.inline
+  def init(): js.Promise[InitOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[InitOptions]]
+  @scala.inline
+  def init(options: InitOptions): js.Promise[InitOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InitOptions]]
   
-  @JSImport("node-persist", "keys")
-  @js.native
-  def keys(): js.Promise[js.Array[String]] = js.native
-  @JSImport("node-persist", "keys")
-  @js.native
-  def keys(filter: FilterFunction[Datum]): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def keys(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def keys(filter: FilterFunction[Datum]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("node-persist", "length")
-  @js.native
-  def length(): js.Promise[Double] = js.native
-  @JSImport("node-persist", "length")
-  @js.native
-  def length(filter: FilterFunction[Datum]): js.Promise[Double] = js.native
+  @scala.inline
+  def length(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("length")().asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def length(filter: FilterFunction[Datum]): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("node-persist", "log")
-  @js.native
-  def log(args: js.Any*): Unit = js.native
+  @scala.inline
+  def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("node-persist", "parse")
-  @js.native
-  def parse(): js.Any = js.native
-  @JSImport("node-persist", "parse")
-  @js.native
-  def parse(str: String): js.Any = js.native
+  @scala.inline
+  def parse(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Any]
+  @scala.inline
+  def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("node-persist", "readDirectory")
-  @js.native
-  def readDirectory(dir: String): js.Promise[js.Array[Datum]] = js.native
+  @scala.inline
+  def readDirectory(dir: String): js.Promise[js.Array[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Datum]]]
   
-  @JSImport("node-persist", "readFile")
-  @js.native
-  def readFile(file: String): js.Promise[Datum | String] = js.native
-  @JSImport("node-persist", "readFile")
-  @js.native
-  def readFile(file: String, options: DatumOptions): js.Promise[Datum | String] = js.native
+  @scala.inline
+  def readFile(file: String): js.Promise[Datum | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Datum | String]]
+  @scala.inline
+  def readFile(file: String, options: DatumOptions): js.Promise[Datum | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Datum | String]]
   
-  @JSImport("node-persist", "removeExpiredItems")
-  @js.native
-  def removeExpiredItems(): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeExpiredItems(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExpiredItems")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("node-persist", "removeItem")
-  @js.native
-  def removeItem(key: String): js.Promise[DeleteFileResult] = js.native
+  @scala.inline
+  def removeItem(key: String): js.Promise[DeleteFileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeItem")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileResult]]
   
-  @JSImport("node-persist", "rm")
-  @js.native
-  def rm(key: String): js.Promise[DeleteFileResult] = js.native
+  @scala.inline
+  def rm(key: String): js.Promise[DeleteFileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("rm")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileResult]]
   
-  @JSImport("node-persist", "set")
-  @js.native
-  def set(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-  @JSImport("node-persist", "set")
-  @js.native
-  def set(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+  @scala.inline
+  def set(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  @scala.inline
+  def set(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  @JSImport("node-persist", "setItem")
-  @js.native
-  def setItem(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-  @JSImport("node-persist", "setItem")
-  @js.native
-  def setItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+  @scala.inline
+  def setItem(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  @scala.inline
+  def setItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  @JSImport("node-persist", "setOptions")
-  @js.native
-  def setOptions(): Unit = js.native
-  @JSImport("node-persist", "setOptions")
-  @js.native
-  def setOptions(options: InitOptions): Unit = js.native
+  @scala.inline
+  def setOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")().asInstanceOf[Unit]
+  @scala.inline
+  def setOptions(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("node-persist", "startExpiredKeysInterval")
-  @js.native
-  def startExpiredKeysInterval(): Unit = js.native
+  @scala.inline
+  def startExpiredKeysInterval(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startExpiredKeysInterval")().asInstanceOf[Unit]
   
-  @JSImport("node-persist", "stopExpiredKeysInterval")
-  @js.native
-  def stopExpiredKeysInterval(): Unit = js.native
+  @scala.inline
+  def stopExpiredKeysInterval(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopExpiredKeysInterval")().asInstanceOf[Unit]
   
-  @JSImport("node-persist", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-persist", "update")
-  @js.native
-  def update(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-  @JSImport("node-persist", "update")
-  @js.native
-  def update(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+  @scala.inline
+  def update(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  @scala.inline
+  def update(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  @JSImport("node-persist", "updateItem")
-  @js.native
-  def updateItem(key: String, value: js.Any): js.Promise[WriteFileResult] = js.native
-  @JSImport("node-persist", "updateItem")
-  @js.native
-  def updateItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = js.native
+  @scala.inline
+  def updateItem(key: String, value: js.Any): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
+  @scala.inline
+  def updateItem(key: String, value: js.Any, options: DatumOptions): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  @JSImport("node-persist", "values")
-  @js.native
-  def values(): js.Promise[js.Array[_]] = js.native
-  @JSImport("node-persist", "values")
-  @js.native
-  def values(filter: FilterFunction[Datum]): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def values(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def values(filter: FilterFunction[Datum]): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
-  @JSImport("node-persist", "valuesWithKeyMatch")
-  @js.native
-  def valuesWithKeyMatch(): js.Promise[js.Array[_]] = js.native
-  @JSImport("node-persist", "valuesWithKeyMatch")
-  @js.native
-  def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[_]] = js.native
-  @JSImport("node-persist", "valuesWithKeyMatch")
-  @js.native
-  def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def valuesWithKeyMatch(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def valuesWithKeyMatch(`match`: String): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def valuesWithKeyMatch(`match`: RegExp): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("valuesWithKeyMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
-  @JSImport("node-persist", "writeFile")
-  @js.native
-  def writeFile(file: String, content: Datum): js.Promise[WriteFileResult] = js.native
+  @scala.inline
+  def writeFile(file: String, content: Datum): js.Promise[WriteFileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteFileResult]]
   
-  @js.native
   trait Datum extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Datum {
     
@@ -320,10 +272,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DatumOptions extends StObject {
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object DatumOptions {
     
@@ -344,14 +295,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DeleteFileResult extends StObject {
     
-    var existed: Boolean = js.native
+    var existed: Boolean
     
-    var file: String = js.native
+    var file: String
     
-    var removed: Boolean = js.native
+    var removed: Boolean
   }
   object DeleteFileResult {
     
@@ -375,10 +325,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EnsureDirectoryResult extends StObject {
     
-    var dir: String = js.native
+    var dir: String
   }
   object EnsureDirectoryResult {
     
@@ -398,24 +347,23 @@ object mod {
   
   type FilterFunction[T] = js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var expiredInterval: js.UndefOr[Milliseconds] = js.native
+    var expiredInterval: js.UndefOr[Milliseconds] = js.undefined
     
-    var forgiveParseErrors: js.UndefOr[Boolean] = js.native
+    var forgiveParseErrors: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | Boolean] = js.native
+    var logging: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | Boolean] = js.undefined
     
-    var parse: js.UndefOr[js.Function1[/* str */ String, _]] = js.native
+    var parse: js.UndefOr[js.Function1[/* str */ String, js.Any]] = js.undefined
     
-    var stringify: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.native
+    var stringify: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.undefined
     
-    var ttl: js.UndefOr[Milliseconds] = js.native
+    var ttl: js.UndefOr[Milliseconds] = js.undefined
   }
   object InitOptions {
     
@@ -462,7 +410,7 @@ object mod {
       def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
       @scala.inline
-      def setParse(value: /* str */ String => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      def setParse(value: /* str */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       @scala.inline
       def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
@@ -483,12 +431,11 @@ object mod {
   
   type Milliseconds = Double
   
-  @js.native
   trait WriteFileResult extends StObject {
     
-    var content: js.Any = js.native
+    var content: js.Any
     
-    var file: String = js.native
+    var file: String
   }
   object WriteFileResult {
     

@@ -2,26 +2,24 @@ package typings.zepto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZeptoEffectsSpeeds extends StObject {
   
   /**
     * Default = 400ms.
     **/
-  var _default: Double = js.native
+  var _default: Double
   
   /**
     * Default = 200ms.
     **/
-  var fast: Double = js.native
+  var fast: Double
   
   /**
     * Default = 600ms.
     **/
-  var slow: Double = js.native
+  var slow: Double
 }
 object ZeptoEffectsSpeeds {
   

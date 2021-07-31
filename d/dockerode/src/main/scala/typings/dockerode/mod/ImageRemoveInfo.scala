@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageRemoveInfo extends StObject {
   
-  var Deleted: String = js.native
+  var Deleted: String
   
-  var Untagged: String = js.native
+  var Untagged: String
 }
 object ImageRemoveInfo {
   

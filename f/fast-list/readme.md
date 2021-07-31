@@ -12,7 +12,7 @@ A fast linked list (good for queues, stacks, etc.)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 86633 |
+| # downloads        | 110447 |
 | # stars            | 1 |
 
 ## Links

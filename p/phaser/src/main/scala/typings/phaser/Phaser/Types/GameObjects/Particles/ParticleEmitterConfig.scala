@@ -7,275 +7,273 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticleEmitterConfig extends StObject {
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX} (emit only).
     */
-  var accelerationX: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var accelerationX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationY} (emit only).
     */
-  var accelerationY: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var accelerationY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#active}.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#alpha}.
     */
-  var alpha: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var alpha: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#angle} (emit only).
     */
-  var angle: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var angle: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#blendMode}.
     */
-  var blendMode: js.UndefOr[BlendModes | String] = js.native
+  var blendMode: js.UndefOr[BlendModes | String] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#bounce} (emit only).
     */
-  var bounce: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var bounce: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setBounds}.
     */
-  var bounds: js.UndefOr[ParticleEmitterBounds | ParticleEmitterBoundsAlt] = js.native
+  var bounds: js.UndefOr[ParticleEmitterBounds | ParticleEmitterBoundsAlt] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallbackScope} and {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallbackScope}.
     */
-  var callbackScope: js.UndefOr[js.Any] = js.native
+  var callbackScope: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideBottom}.
     */
-  var collideBottom: js.UndefOr[Boolean] = js.native
+  var collideBottom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideLeft}.
     */
-  var collideLeft: js.UndefOr[Boolean] = js.native
+  var collideLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideRight}.
     */
-  var collideRight: js.UndefOr[Boolean] = js.native
+  var collideRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#collideTop}.
     */
-  var collideTop: js.UndefOr[Boolean] = js.native
+  var collideTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallback}.
     */
-  var deathCallback: js.UndefOr[Boolean] = js.native
+  var deathCallback: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallbackScope}.
     */
-  var deathCallbackScope: js.UndefOr[js.Any] = js.native
+  var deathCallbackScope: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#delay} (emit only).
     */
-  var delay: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var delay: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallback}.
     */
-  var emitCallback: js.UndefOr[js.Function] = js.native
+  var emitCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallbackScope}.
     */
-  var emitCallbackScope: js.UndefOr[js.Any] = js.native
+  var emitCallbackScope: js.UndefOr[js.Any] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setEmitZone}.
     */
-  var emitZone: js.UndefOr[js.Object] = js.native
+  var emitZone: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#follow}.
     */
-  var follow: js.UndefOr[GameObject] = js.native
+  var follow: js.UndefOr[GameObject] = js.undefined
   
   /**
     * Assigns to {@link Phaser.GameObjects.Particles.ParticleEmitter#followOffset}.
     */
-  var followOffset: js.UndefOr[js.Object] = js.native
+  var followOffset: js.UndefOr[js.Object] = js.undefined
   
   /**
     * x-coordinate of the offset.
     */
   @JSName("followOffset.x")
-  var followOffsetDotx: js.UndefOr[Double] = js.native
+  var followOffsetDotx: js.UndefOr[Double] = js.undefined
   
   /**
     * y-coordinate of the offset.
     */
   @JSName("followOffset.y")
-  var followOffsetDoty: js.UndefOr[Double] = js.native
+  var followOffsetDoty: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frames}.
     */
   var frame: js.UndefOr[
     Double | (js.Array[Double | Frame | String]) | String | Frame | ParticleEmitterFrameConfig
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frequency}.
     */
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#gravityX}.
     */
-  var gravityX: js.UndefOr[Double] = js.native
+  var gravityX: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#gravityY}.
     */
-  var gravityY: js.UndefOr[Double] = js.native
+  var gravityY: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#lifespan} (emit only).
     */
-  var lifespan: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var lifespan: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxParticles}.
     */
-  var maxParticles: js.UndefOr[integer] = js.native
+  var maxParticles: js.UndefOr[integer] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityX} (emit only).
     */
-  var maxVelocityX: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var maxVelocityX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityY} (emit only).
     */
-  var maxVelocityY: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var maxVelocityY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToX} (emit only).
     */
-  var moveToX: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var moveToX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToY} (emit only).
     */
-  var moveToY: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var moveToY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#name}.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#on}.
     */
-  var on: js.UndefOr[Boolean] = js.native
+  var on: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleBringToTop}.
     */
-  var particleBringToTop: js.UndefOr[Boolean] = js.native
+  var particleBringToTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleClass}.
     */
-  var particleClass: js.UndefOr[Particle] = js.native
+  var particleClass: js.UndefOr[Particle] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity} (emit only).
     */
-  var quantity: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var quantity: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#radial}.
     */
-  var radial: js.UndefOr[Boolean] = js.native
+  var radial: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#rotate}.
     */
-  var rotate: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var rotate: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setScale}.
     */
-  var scale: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var scale: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleX}.
     */
-  var scaleX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var scaleX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleY}.
     */
-  var scaleY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var scaleY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setSpeed} (emit only).
     */
-  var speed: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var speed: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedX} (emit only).
     */
-  var speedX: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var speedX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#speedY} (emit only).
     */
-  var speedY: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var speedY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#timeScale}.
     */
-  var timeScale: js.UndefOr[Double] = js.native
+  var timeScale: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#tint}.
     */
-  var tint: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.native
+  var tint: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#trackVisible}.
     */
-  var trackVisible: js.UndefOr[Boolean] = js.native
+  var trackVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#visible}.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#x} (emit only).
     */
-  var x: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var x: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#y} (emit only).
     */
-  var y: js.UndefOr[EmitterOpOnEmitType] = js.native
+  var y: js.UndefOr[EmitterOpOnEmitType] = js.undefined
 }
 object ParticleEmitterConfig {
   

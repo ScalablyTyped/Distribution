@@ -2,23 +2,23 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryParamDefinition extends PropertyDefinition {
+trait QueryParamDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var key: String | Null = js.native
+  var key: String | Null
   
-  var system: js.UndefOr[Boolean] = js.native
+  var system: js.UndefOr[Boolean] = js.undefined
   
-  var value: String | Null = js.native
+  var value: String | Null
 }
 object QueryParamDefinition {
   
   @scala.inline
   def apply(): QueryParamDefinition = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(key = null, value = null)
     __obj.asInstanceOf[QueryParamDefinition]
   }
   

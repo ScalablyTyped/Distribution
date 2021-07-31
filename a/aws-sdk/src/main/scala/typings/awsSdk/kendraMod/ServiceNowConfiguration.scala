@@ -2,36 +2,34 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceNowConfiguration extends StObject {
   
   /**
     * The ServiceNow instance that the data source connects to. The host endpoint should look like the following: {instance}.service-now.com. 
     */
-  var HostUrl: ServiceNowHostUrl = js.native
+  var HostUrl: ServiceNowHostUrl
   
   /**
     * Provides configuration information for crawling knowledge articles in the ServiceNow site.
     */
-  var KnowledgeArticleConfiguration: js.UndefOr[ServiceNowKnowledgeArticleConfiguration] = js.native
+  var KnowledgeArticleConfiguration: js.UndefOr[ServiceNowKnowledgeArticleConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Secret Manager secret that contains the user name and password required to connect to the ServiceNow instance.
     */
-  var SecretArn: typings.awsSdk.kendraMod.SecretArn = js.native
+  var SecretArn: typings.awsSdk.kendraMod.SecretArn
   
   /**
     * Provides configuration information for crawling service catalogs in the ServiceNow site.
     */
-  var ServiceCatalogConfiguration: js.UndefOr[ServiceNowServiceCatalogConfiguration] = js.native
+  var ServiceCatalogConfiguration: js.UndefOr[ServiceNowServiceCatalogConfiguration] = js.undefined
   
   /**
     * The identifier of the release that the ServiceNow host is running. If the host is not running the LONDON release, use OTHERS.
     */
-  var ServiceNowBuildVersion: ServiceNowBuildVersionType = js.native
+  var ServiceNowBuildVersion: ServiceNowBuildVersionType
 }
 object ServiceNowConfiguration {
   

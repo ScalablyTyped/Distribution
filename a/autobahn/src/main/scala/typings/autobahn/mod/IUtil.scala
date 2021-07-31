@@ -2,13 +2,11 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtil extends StObject {
   
-  def assert(condition: Boolean, message: String): Unit = js.native
+  def assert(condition: Boolean, message: String): Unit
 }
 object IUtil {
   

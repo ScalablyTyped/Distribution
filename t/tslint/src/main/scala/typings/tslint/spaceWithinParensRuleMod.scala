@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceWithinParensRuleMod {
@@ -22,13 +21,11 @@ object spaceWithinParensRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/spaceWithinParensRule", "Rule.FAILURE_NEEDS_SPACE")
-    @js.native
-    def FAILURE_NEEDS_SPACE(count: Double): String = js.native
+    @scala.inline
+    def FAILURE_NEEDS_SPACE(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_NEEDS_SPACE")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/spaceWithinParensRule", "Rule.FAILURE_NO_EXTRA_SPACE")
-    @js.native
-    def FAILURE_NO_EXTRA_SPACE(count: Double): String = js.native
+    @scala.inline
+    def FAILURE_NO_EXTRA_SPACE(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_NO_EXTRA_SPACE")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/spaceWithinParensRule", "Rule.FAILURE_NO_SPACE")
     @js.native

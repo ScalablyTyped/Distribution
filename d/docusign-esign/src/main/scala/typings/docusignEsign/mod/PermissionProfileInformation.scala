@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionProfileInformation extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PermissionProfileInformation extends StObject {
     js.Array[
       /* This object defines the account permissions for a profile that you can apply to a group of users. */ PermissionProfile
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PermissionProfileInformation {
   

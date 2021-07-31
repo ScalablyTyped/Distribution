@@ -2,19 +2,17 @@ package typings.protractor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chrome extends StObject {
   
-  var chrome: Typeofchrome = js.native
+  var chrome: Typeofchrome
   
-  var firefox: Typeoffirefox = js.native
+  var firefox: Typeoffirefox
   
-  var http: Typeofhttp = js.native
+  var http: Typeofhttp
   
-  var remote: Typeofremote = js.native
+  var remote: Typeofremote
 }
 object Chrome {
   

@@ -2,15 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Voice extends FileBase {
+trait Voice
+  extends StObject
+     with FileBase {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var mime_type: js.UndefOr[String] = js.native
+  var mime_type: js.UndefOr[String] = js.undefined
 }
 object Voice {
   

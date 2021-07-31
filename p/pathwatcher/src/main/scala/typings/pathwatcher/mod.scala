@@ -6,10 +6,13 @@ import typings.node.fsMod.WriteStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pathwatcher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pathwatcher", "Directory")
   @js.native
@@ -212,35 +215,31 @@ object mod {
     var symlink: Boolean = js.native
     
     /** Overwrites the file with the given text. */
-    def write(text: String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def write(text: String): js.Promise[Unit] = js.native
     
     /** Overwrites the file with the given text. */
-    def writeSync(text: String): js.UndefOr[scala.Nothing] = js.native
+    def writeSync(text: String): Unit = js.native
   }
   
-  @JSImport("pathwatcher", "closeAllWatchers")
-  @js.native
-  def closeAllWatchers(): Unit = js.native
+  @scala.inline
+  def closeAllWatchers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAllWatchers")().asInstanceOf[Unit]
   
-  @JSImport("pathwatcher", "getWatchedPaths")
-  @js.native
-  def getWatchedPaths(): js.Array[String] = js.native
+  @scala.inline
+  def getWatchedPaths(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWatchedPaths")().asInstanceOf[js.Array[String]]
   
-  @JSImport("pathwatcher", "watch")
-  @js.native
-  def watch(): PathWatcher = js.native
+  @scala.inline
+  def watch(): PathWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")().asInstanceOf[PathWatcher]
   
-  @js.native
   trait PathWatchErrorThrownEvent extends StObject {
     
     /** The error object. */
-    var error: Error = js.native
+    var error: Error
     
     /**
       *  Call this function to indicate you have handled the error.
       *  The error will not be thrown if this function is called.
       */
-    def handle(): Unit = js.native
+    def handle(): Unit
   }
   object PathWatchErrorThrownEvent {
     
@@ -261,12 +260,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PathWatcher extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def onDidChange(callback: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit]): Disposable = js.native
+    def onDidChange(callback: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit]): Disposable
   }
   object PathWatcher {
     
@@ -290,12 +288,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WatchedFilePathChangedEvent extends StObject {
     
-    var event: String = js.native
+    var event: String
     
-    var newFilePath: String = js.native
+    var newFilePath: String
   }
   object WatchedFilePathChangedEvent {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInput extends StObject {
   
   /**
     * The fully quaified reference that identifies the commit that contains the file. For example, you can specify a full commit ID, a tag, a branch name, or a reference such as refs/heads/master. If none is provided, the head commit is used.
     */
-  var commitSpecifier: js.UndefOr[CommitName] = js.native
+  var commitSpecifier: js.UndefOr[CommitName] = js.undefined
   
   /**
     * The fully qualified path to the file, including the full name and extension of the file. For example, /examples/file.md is the fully qualified path to a file named file.md in a folder named examples.
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * The name of the repository that contains the file.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetFileInput {
   

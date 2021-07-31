@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
@@ -31,10 +30,11 @@ object viewMod {
   trait View
     extends typings.react.mod.Component[ViewProps[HTMLDivElement], js.Any, js.Any]
   
-  @js.native
-  trait ViewProps[T] extends HTMLProps[T] {
+  trait ViewProps[T]
+    extends StObject
+       with HTMLProps[T] {
     
-    var Component: js.UndefOr[String] = js.native
+    var Component: js.UndefOr[String] = js.undefined
   }
   object ViewProps {
     
@@ -45,7 +45,7 @@ object viewMod {
     }
     
     @scala.inline
-    implicit class ViewPropsMutableBuilder[Self <: ViewProps[_], T] (val x: Self with ViewProps[T]) extends AnyVal {
+    implicit class ViewPropsMutableBuilder[Self <: ViewProps[?], T] (val x: Self & ViewProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])

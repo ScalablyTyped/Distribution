@@ -2,76 +2,74 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: js.UndefOr[string] = js.native
+  var ApplicationId: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the author publishing the app.Minimum length=1. Maximum length=127.Pattern "^[a-z0-9](([a-z0-9]|-(?!-))*[a-z0-9])?$";
     */
-  var Author: js.UndefOr[string] = js.native
+  var Author: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time this resource was created.
     */
-  var CreationTime: js.UndefOr[string] = js.native
+  var CreationTime: js.UndefOr[string] = js.undefined
   
   /**
     * The description of the application.Minimum length=1. Maximum length=256
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * A URL with more information about the application, for example the location of your GitHub repository for the application.
     */
-  var HomePageUrl: js.UndefOr[string] = js.native
+  var HomePageUrl: js.UndefOr[string] = js.undefined
   
   /**
     * Whether the author of this application has been verified. This means means that AWS has made a good faith review, as a reasonable and prudent service provider, of the information provided by the requester and has confirmed that the requester's identity is as claimed.
     */
-  var IsVerifiedAuthor: js.UndefOr[boolean] = js.native
+  var IsVerifiedAuthor: js.UndefOr[boolean] = js.undefined
   
   /**
     * Labels to improve discovery of apps in search results.Minimum length=1. Maximum length=127. Maximum number of labels: 10Pattern: "^[a-zA-Z0-9+\\-_:\\/@]+$";
     */
-  var Labels: js.UndefOr[listOfString] = js.native
+  var Labels: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A link to a license file of the app that matches the spdxLicenseID value of your application.Maximum size 5 MB
     */
-  var LicenseUrl: js.UndefOr[string] = js.native
+  var LicenseUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the application.Minimum length=1. Maximum length=140Pattern: "[a-zA-Z0-9\\-]+";
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the readme file in Markdown language that contains a more detailed description of the application and how it works.Maximum size 5 MB
     */
-  var ReadmeUrl: js.UndefOr[string] = js.native
+  var ReadmeUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A valid identifier from https://spdx.org/licenses/.
     */
-  var SpdxLicenseId: js.UndefOr[string] = js.native
+  var SpdxLicenseId: js.UndefOr[string] = js.undefined
   
   /**
     * The URL to the public profile of a verified author. This URL is submitted by the author.
     */
-  var VerifiedAuthorUrl: js.UndefOr[string] = js.native
+  var VerifiedAuthorUrl: js.UndefOr[string] = js.undefined
   
   /**
     * Version information about the application.
     */
-  var Version: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.Version] = js.native
+  var Version: js.UndefOr[typings.awsSdk.serverlessapplicationrepositoryMod.Version] = js.undefined
 }
 object UpdateApplicationResponse {
   

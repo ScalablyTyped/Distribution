@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexInfo extends StObject {
   
-  var declaration: js.UndefOr[IndexSignatureDeclaration] = js.native
+  var declaration: js.UndefOr[IndexSignatureDeclaration] = js.undefined
   
-  var isReadonly: Boolean = js.native
+  var isReadonly: Boolean
   
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object IndexInfo {
   

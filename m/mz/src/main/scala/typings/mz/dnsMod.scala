@@ -27,10 +27,13 @@ import typings.node.dnsMod.SoaRecord
 import typings.node.dnsMod.SrvRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dnsMod {
+  
+  @JSImport("mz/dns", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // Supported getaddrinfo flags.
   @JSImport("mz/dns", "ADDRCONFIG")
@@ -151,56 +154,45 @@ object dnsMod {
   @js.native
   val V4MAPPED: Double = js.native
   
-  @JSImport("mz/dns", "getServers")
-  @js.native
-  def getServers(): js.Array[String] = js.native
+  @scala.inline
+  def getServers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[String]]
   
-  @JSImport("mz/dns", "lookup")
-  @js.native
-  def lookup(hostname: String): js.Promise[js.Tuple2[String, Double]] = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
+  @scala.inline
+  def lookup(hostname: String): js.Promise[js.Tuple2[String, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
+  @scala.inline
   def lookup(
     hostname: String,
     callback: js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def lookup(
     hostname: String,
     family: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
-  def lookup(hostname: String, options: Double): js.Promise[js.Tuple2[String, Double]] = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
-  def lookup(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], family.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lookup(hostname: String, options: Double): js.Promise[js.Tuple2[String, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
+  @scala.inline
+  def lookup(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[LookupAddress]]]
+  @scala.inline
   def lookup(
     hostname: String,
     options: LookupAllOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[LookupAddress], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
-  def lookup(hostname: String, options: LookupOneOptions): js.Promise[js.Tuple2[String, Double]] = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lookup(hostname: String, options: LookupOneOptions): js.Promise[js.Tuple2[String, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
+  @scala.inline
   def lookup(
     hostname: String,
     // `options` can't be mixed into `family`
   // tslint:disable-next-line: unified-signatures
   options: LookupOneOptions,
     callback: js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
-  def lookup(hostname: String, options: LookupOptions): js.Promise[(js.Tuple2[String, Double]) | js.Array[LookupAddress]] = js.native
-  @JSImport("mz/dns", "lookup")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lookup(hostname: String, options: LookupOptions): js.Promise[(js.Tuple2[String, Double]) | js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[(js.Tuple2[String, Double]) | js.Array[LookupAddress]]]
+  @scala.inline
   def lookup(
     hostname: String,
     options: LookupOptions,
@@ -210,174 +202,149 @@ object dnsMod {
       /* family */ Double, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "lookupService")
-  @js.native
-  def lookupService(address: String, port: Double): js.Promise[js.Tuple2[String, String]] = js.native
-  @JSImport("mz/dns", "lookupService")
-  @js.native
+  @scala.inline
+  def lookupService(address: String, port: Double): js.Promise[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[String, String]]]
+  @scala.inline
   def lookupService(
     address: String,
     port: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* hostname */ String, /* service */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object promises {
+    
+    @JSImport("mz/dns", "promises")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("mz/dns", "promises.Resolver")
     @js.native
     class Resolver ()
       extends typings.node.dnsMod.promises.Resolver
     
-    @JSImport("mz/dns", "promises.getServers")
-    @js.native
-    def getServers(): js.Array[String] = js.native
+    @scala.inline
+    def getServers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[String]]
     
-    @JSImport("mz/dns", "promises.lookup")
-    @js.native
-    def lookup(hostname: String): js.Promise[LookupAddress] = js.native
-    @JSImport("mz/dns", "promises.lookup")
-    @js.native
-    def lookup(hostname: String, family: Double): js.Promise[LookupAddress] = js.native
-    @JSImport("mz/dns", "promises.lookup")
-    @js.native
-    def lookup(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = js.native
-    @JSImport("mz/dns", "promises.lookup")
-    @js.native
-    def lookup(hostname: String, options: LookupOneOptions): js.Promise[LookupAddress] = js.native
-    @JSImport("mz/dns", "promises.lookup")
-    @js.native
-    def lookup(hostname: String, options: LookupOptions): js.Promise[LookupAddress | js.Array[LookupAddress]] = js.native
+    @scala.inline
+    def lookup(hostname: String): js.Promise[LookupAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LookupAddress]]
+    @scala.inline
+    def lookup(hostname: String, family: Double): js.Promise[LookupAddress] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LookupAddress]]
+    @scala.inline
+    def lookup(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[LookupAddress]]]
+    @scala.inline
+    def lookup(hostname: String, options: LookupOneOptions): js.Promise[LookupAddress] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LookupAddress]]
+    @scala.inline
+    def lookup(hostname: String, options: LookupOptions): js.Promise[LookupAddress | js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LookupAddress | js.Array[LookupAddress]]]
     
-    @JSImport("mz/dns", "promises.lookupService")
-    @js.native
-    def lookupService(address: String, port: Double): js.Promise[Hostname] = js.native
+    @scala.inline
+    def lookupService(address: String, port: Double): js.Promise[Hostname] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hostname]]
     
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve(hostname: String): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
+    @scala.inline
+    def resolve(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
     def resolve(hostname: String, rrtype: String): js.Promise[
         (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
+      ]]
     
-    @JSImport("mz/dns", "promises.resolve4")
-    @js.native
-    def resolve4(hostname: String): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve4")
-    @js.native
-    def resolve4(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
-    @JSImport("mz/dns", "promises.resolve4")
-    @js.native
-    def resolve4(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
+    @scala.inline
+    def resolve4(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def resolve4(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
+    @scala.inline
+    def resolve4(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
     
-    @JSImport("mz/dns", "promises.resolve6")
-    @js.native
-    def resolve6(hostname: String): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve6")
-    @js.native
-    def resolve6(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
-    @JSImport("mz/dns", "promises.resolve6")
-    @js.native
-    def resolve6(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
+    @scala.inline
+    def resolve6(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def resolve6(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
+    @scala.inline
+    def resolve6(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
     
-    @JSImport("mz/dns", "promises.resolveAny")
-    @js.native
-    def resolveAny(hostname: String): js.Promise[js.Array[AnyRecord]] = js.native
+    @scala.inline
+    def resolveAny(hostname: String): js.Promise[js.Array[AnyRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAny")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
     
-    @JSImport("mz/dns", "promises.resolveCname")
-    @js.native
-    def resolveCname(hostname: String): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def resolveCname(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCname")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
     
-    @JSImport("mz/dns", "promises.resolveMx")
-    @js.native
-    def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = js.native
+    @scala.inline
+    def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MxRecord]]]
     
-    @JSImport("mz/dns", "promises.resolveNaptr")
-    @js.native
-    def resolveNaptr(hostname: String): js.Promise[js.Array[NaptrRecord]] = js.native
+    @scala.inline
+    def resolveNaptr(hostname: String): js.Promise[js.Array[NaptrRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNaptr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
     
-    @JSImport("mz/dns", "promises.resolveNs")
-    @js.native
-    def resolveNs(hostname: String): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def resolveNs(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNs")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
     
-    @JSImport("mz/dns", "promises.resolvePtr")
-    @js.native
-    def resolvePtr(hostname: String): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def resolvePtr(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePtr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
     
-    @JSImport("mz/dns", "promises.resolveSoa")
-    @js.native
-    def resolveSoa(hostname: String): js.Promise[SoaRecord] = js.native
+    @scala.inline
+    def resolveSoa(hostname: String): js.Promise[SoaRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SoaRecord]]
     
-    @JSImport("mz/dns", "promises.resolveSrv")
-    @js.native
-    def resolveSrv(hostname: String): js.Promise[js.Array[SrvRecord]] = js.native
+    @scala.inline
+    def resolveSrv(hostname: String): js.Promise[js.Array[SrvRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSrv")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
     
-    @JSImport("mz/dns", "promises.resolveTxt")
-    @js.native
-    def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = js.native
+    @scala.inline
+    def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
     
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = js.native
-    @JSImport("mz/dns", "promises.resolve")
-    @js.native
-    def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = js.native
+    @scala.inline
+    def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
     
-    @JSImport("mz/dns", "promises.reverse")
-    @js.native
-    def reverse(ip: String): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
     
-    @JSImport("mz/dns", "promises.setServers")
-    @js.native
-    def setServers(servers: js.Array[String]): Unit = js.native
+    @scala.inline
+    def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
+    
+    @scala.inline
+    def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @scala.inline
+    def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
+    
+    @scala.inline
+    def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
+    
+    @scala.inline
+    def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @scala.inline
+    def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @scala.inline
+    def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
+    
+    @scala.inline
+    def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
+    
+    @scala.inline
+    def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
+    
+    @scala.inline
+    def reverse(ip: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @scala.inline
+    def setServers(servers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setServers")(servers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  @scala.inline
+  def resolve(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def resolve(hostname: String, rrtype: String): js.Promise[
     (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
-  ] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
+  ]]
+  @scala.inline
   def resolve(
     hostname: String,
     rrtype: String,
@@ -386,22 +353,18 @@ object dnsMod {
       /* addresses */ (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolve4")
-  @js.native
-  def resolve4(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve4")
-  @js.native
+  @scala.inline
+  def resolve4(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve4(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve4")
-  @js.native
-  def resolve4(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
-  @JSImport("mz/dns", "resolve4")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve4(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
+  @scala.inline
   def resolve4(
     hostname: String,
     options: ResolveOptions,
@@ -410,32 +373,26 @@ object dnsMod {
       /* addresses */ js.Array[RecordWithTtl | String], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve4")
-  @js.native
-  def resolve4(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
-  @JSImport("mz/dns", "resolve4")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve4(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
+  @scala.inline
   def resolve4(
     hostname: String,
     options: ResolveWithTtlOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolve6")
-  @js.native
-  def resolve6(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve6")
-  @js.native
+  @scala.inline
+  def resolve6(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve6(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve6")
-  @js.native
-  def resolve6(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
-  @JSImport("mz/dns", "resolve6")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve6(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl | String]]]
+  @scala.inline
   def resolve6(
     hostname: String,
     options: ResolveOptions,
@@ -444,230 +401,195 @@ object dnsMod {
       /* addresses */ js.Array[RecordWithTtl | String], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve6")
-  @js.native
-  def resolve6(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
-  @JSImport("mz/dns", "resolve6")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve6(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
+  @scala.inline
   def resolve6(
     hostname: String,
     options: ResolveWithTtlOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(hostname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveAny")
-  @js.native
-  def resolveAny(hostname: String): js.Promise[js.Array[AnyRecord]] = js.native
-  @JSImport("mz/dns", "resolveAny")
-  @js.native
+  @scala.inline
+  def resolveAny(hostname: String): js.Promise[js.Array[AnyRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAny")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
+  @scala.inline
   def resolveAny(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAny")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveCname")
-  @js.native
-  def resolveCname(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolveCname")
-  @js.native
+  @scala.inline
+  def resolveCname(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCname")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolveCname(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveCname")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveMx")
-  @js.native
-  def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = js.native
-  @JSImport("mz/dns", "resolveMx")
-  @js.native
+  @scala.inline
+  def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MxRecord]]]
+  @scala.inline
   def resolveMx(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveNaptr")
-  @js.native
-  def resolveNaptr(hostname: String): js.Promise[js.Array[NaptrRecord]] = js.native
-  @JSImport("mz/dns", "resolveNaptr")
-  @js.native
+  @scala.inline
+  def resolveNaptr(hostname: String): js.Promise[js.Array[NaptrRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNaptr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
+  @scala.inline
   def resolveNaptr(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNaptr")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveNs")
-  @js.native
-  def resolveNs(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolveNs")
-  @js.native
+  @scala.inline
+  def resolveNs(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNs")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolveNs(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNs")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolvePtr")
-  @js.native
-  def resolvePtr(hostname: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolvePtr")
-  @js.native
+  @scala.inline
+  def resolvePtr(hostname: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePtr")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolvePtr(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePtr")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveSoa")
-  @js.native
-  def resolveSoa(hostname: String): js.Promise[SoaRecord] = js.native
-  @JSImport("mz/dns", "resolveSoa")
-  @js.native
+  @scala.inline
+  def resolveSoa(hostname: String): js.Promise[SoaRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SoaRecord]]
+  @scala.inline
   def resolveSoa(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* address */ SoaRecord, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSoa")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveSrv")
-  @js.native
-  def resolveSrv(hostname: String): js.Promise[js.Array[SrvRecord]] = js.native
-  @JSImport("mz/dns", "resolveSrv")
-  @js.native
+  @scala.inline
+  def resolveSrv(hostname: String): js.Promise[js.Array[SrvRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSrv")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
+  @scala.inline
   def resolveSrv(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSrv")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolveTxt")
-  @js.native
-  def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = js.native
-  @JSImport("mz/dns", "resolveTxt")
-  @js.native
+  @scala.inline
+  def resolveTxt(hostname: String): js.Promise[js.Array[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
+  @scala.inline
   def resolveTxt(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTxt")(hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  @scala.inline
+  def resolve_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve_A(
     hostname: String,
     rrtype: A,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve_AAAA(
     hostname: String,
     rrtype: AAAA,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AnyRecord]]]
+  @scala.inline
   def resolve_ANY(
     hostname: String,
     rrtype: ANY,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve_CNAME(
     hostname: String,
     rrtype: CNAME,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MxRecord]]]
+  @scala.inline
   def resolve_MX(
     hostname: String,
     rrtype: MX,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NaptrRecord]]]
+  @scala.inline
   def resolve_NAPTR(
     hostname: String,
     rrtype: NAPTR,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve_NS(
     hostname: String,
     rrtype: NS,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def resolve_PTR(
     hostname: String,
     rrtype: PTR,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SoaRecord]]
+  @scala.inline
   def resolve_SOA(
     hostname: String,
     rrtype: SOA,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ SoaRecord, Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[SrvRecord]]]
+  @scala.inline
   def resolve_SRV(
     hostname: String,
     rrtype: SRV,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
-  ): Unit = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
-  def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = js.native
-  @JSImport("mz/dns", "resolve")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resolve_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Array[String]]]]
+  @scala.inline
   def resolve_TXT(
     hostname: String,
     rrtype: TXT,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], rrtype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "reverse")
-  @js.native
-  def reverse(ip: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("mz/dns", "reverse")
-  @js.native
+  @scala.inline
+  def reverse(ip: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def reverse(
     ip: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* domains */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(ip.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/dns", "setServers")
-  @js.native
-  def setServers(servers: js.Array[String]): Unit = js.native
+  @scala.inline
+  def setServers(servers: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setServers")(servers.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

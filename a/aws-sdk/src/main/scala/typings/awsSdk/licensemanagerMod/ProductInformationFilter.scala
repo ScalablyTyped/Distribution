@@ -2,26 +2,24 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductInformationFilter extends StObject {
   
   /**
     * Logical operator.
     */
-  var ProductInformationFilterComparator: String = js.native
+  var ProductInformationFilterComparator: String
   
   /**
     * Filter name.
     */
-  var ProductInformationFilterName: String = js.native
+  var ProductInformationFilterName: String
   
   /**
     * Filter value.
     */
-  var ProductInformationFilterValue: StringList = js.native
+  var ProductInformationFilterValue: StringList
 }
 object ProductInformationFilter {
   

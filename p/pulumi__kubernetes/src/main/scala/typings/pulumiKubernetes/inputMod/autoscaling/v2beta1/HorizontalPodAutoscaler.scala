@@ -5,39 +5,37 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.autoscalingSlashv2beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
   */
-@js.native
 trait HorizontalPodAutoscaler extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[autoscalingSlashv2beta1]] = js.native
+  var apiVersion: js.UndefOr[Input[autoscalingSlashv2beta1]] = js.undefined
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler]] = js.native
+  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler]] = js.undefined
   
   /**
     * metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * spec is the specification for the behaviour of the autoscaler. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
     */
-  var spec: js.UndefOr[Input[HorizontalPodAutoscalerSpec]] = js.native
+  var spec: js.UndefOr[Input[HorizontalPodAutoscalerSpec]] = js.undefined
   
   /**
     * status is the current information about the autoscaler.
     */
-  var status: js.UndefOr[Input[HorizontalPodAutoscalerStatus]] = js.native
+  var status: js.UndefOr[Input[HorizontalPodAutoscalerStatus]] = js.undefined
 }
 object HorizontalPodAutoscaler {
   

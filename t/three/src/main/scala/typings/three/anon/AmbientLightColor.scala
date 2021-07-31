@@ -3,41 +3,39 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmbientLightColor extends StObject {
   
-  var ambientLightColor: IUniform = js.native
+  var ambientLightColor: IUniform
   
-  var directionalLightShadows: Value = js.native
+  var directionalLightShadows: Value
   
-  var directionalLights: Properties = js.native
+  var directionalLights: Properties
   
-  var directionalShadowMap: IUniform = js.native
+  var directionalShadowMap: IUniform
   
-  var directionalShadowMatrix: IUniform = js.native
+  var directionalShadowMatrix: IUniform
   
-  var hemisphereLights: PropertiesDirection = js.native
+  var hemisphereLights: PropertiesDirection
   
-  var pointLightShadows: Value = js.native
+  var pointLightShadows: Value
   
-  var pointLights: PropertiesDecay = js.native
+  var pointLights: PropertiesDecay
   
-  var pointShadowMap: IUniform = js.native
+  var pointShadowMap: IUniform
   
-  var pointShadowMatrix: IUniform = js.native
+  var pointShadowMatrix: IUniform
   
-  var rectAreaLights: PropertiesHeight = js.native
+  var rectAreaLights: PropertiesHeight
   
-  var spotLightShadows: Value = js.native
+  var spotLightShadows: Value
   
-  var spotLights: PropertiesValue = js.native
+  var spotLights: PropertiesValue
   
-  var spotShadowMap: IUniform = js.native
+  var spotShadowMap: IUniform
   
-  var spotShadowMatrix: IUniform = js.native
+  var spotShadowMatrix: IUniform
 }
 object AmbientLightColor {
   

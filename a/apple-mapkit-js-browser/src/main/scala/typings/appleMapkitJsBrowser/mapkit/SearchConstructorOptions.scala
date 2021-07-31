@@ -2,60 +2,58 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that you may provide when creating a search object.
   */
-@js.native
 trait SearchConstructorOptions extends StObject {
   
   /**
     * A map coordinate that provides a hint for the geographic area to search.
     */
-  var coordinate: js.UndefOr[Coordinate] = js.native
+  var coordinate: js.UndefOr[Coordinate] = js.undefined
   
   /**
     * A Boolean value that indicates whether to limit the search results to the
     * user's current location, as determined by the web browser.
     */
-  var getsUserLocation: js.UndefOr[Boolean] = js.native
+  var getsUserLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that indicates whether the search results should include addresses.
     */
-  var includeAddresses: js.UndefOr[Boolean] = js.native
+  var includeAddresses: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that indicates whether the search results should include points of interest.
     */
-  var includePointsOfInterest: js.UndefOr[Boolean] = js.native
+  var includePointsOfInterest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that indicates whether the search autocomplete results should include queries.
     */
-  var includeQueries: js.UndefOr[Boolean] = js.native
+  var includeQueries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A language ID that determines the language for the search result text.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * A string that constrains search results to within the provided countries.
     */
-  var limitToCountries: js.UndefOr[Boolean] = js.native
+  var limitToCountries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A filter used to include or exclude point of interest categories.
     */
-  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.native
+  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.undefined
   
   /**
     * A map region that provides a hint for the geographic area to search.
     */
-  var region: js.UndefOr[CoordinateRegion] = js.native
+  var region: js.UndefOr[CoordinateRegion] = js.undefined
 }
 object SearchConstructorOptions {
   

@@ -2,23 +2,21 @@ package typings.fastify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaMod {
   
-  @js.native
   trait FastifyRouteSchemaDef extends StObject {
     
-    var httpPart: js.UndefOr[String] = js.native
+    var httpPart: js.UndefOr[String] = js.undefined
     
-    var httpStatus: js.UndefOr[String] = js.native
+    var httpStatus: js.UndefOr[String] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var schema: FastifySchema = js.native
+    var schema: FastifySchema
     
-    var url: String = js.native
+    var url: String
   }
   object FastifyRouteSchemaDef {
     
@@ -54,18 +52,17 @@ object schemaMod {
     }
   }
   
-  @js.native
   trait FastifySchema extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var querystring: js.UndefOr[js.Any] = js.native
+    var querystring: js.UndefOr[js.Any] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.native
+    var response: js.UndefOr[js.Any] = js.undefined
   }
   object FastifySchema {
     
@@ -112,12 +109,11 @@ object schemaMod {
   
   type FastifySchemaCompiler = js.Function1[/* routeSchema */ FastifyRouteSchemaDef, FastifyValidationResult]
   
-  @js.native
   trait FastifySchemaValidationError extends StObject {
     
-    var dataPath: String = js.native
+    var dataPath: String
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object FastifySchemaValidationError {
     
@@ -141,10 +137,9 @@ object schemaMod {
     }
   }
   
-  @js.native
   trait FastifyValidationResult extends StObject {
     
-    var errors: js.UndefOr[js.Array[FastifySchemaValidationError] | Null] = js.native
+    var errors: js.UndefOr[js.Array[FastifySchemaValidationError] | Null] = js.undefined
   }
   object FastifyValidationResult {
     

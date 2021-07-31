@@ -6,10 +6,13 @@ import typings.passportSamlMetadata.anon.PartialMetadataConstructo
 import typings.passportSamlMetadata.fetchMod.FetchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcMod {
+  
+  @JSImport("passport-saml-metadata/src", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("passport-saml-metadata/src", "MetadataReader")
   @js.native
@@ -19,28 +22,21 @@ object srcMod {
     def this(metadata: String, options: PartialMetadataConstructo) = this()
   }
   
-  @JSImport("passport-saml-metadata/src", "claimsToCamelCase")
-  @js.native
-  def claimsToCamelCase(claims: js.Any, claimSchema: js.Any): js.Any = js.native
+  @scala.inline
+  def claimsToCamelCase(claims: js.Any, claimSchema: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("claimsToCamelCase")(claims.asInstanceOf[js.Any], claimSchema.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("passport-saml-metadata/src", "fetch")
-  @js.native
-  def fetch(config: FetchConfig): js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader] = js.native
+  @scala.inline
+  def fetch(config: FetchConfig): js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.passportSamlMetadata.readerMod.MetadataReader]]
   
-  @JSImport("passport-saml-metadata/src", "metadata")
-  @js.native
-  def metadata(config: SamlConfig): js.Function0[Unit] = js.native
+  @scala.inline
+  def metadata(config: SamlConfig): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("passport-saml-metadata/src", "toPassportConfig")
-  @js.native
-  def toPassportConfig(): SamlConfig = js.native
-  @JSImport("passport-saml-metadata/src", "toPassportConfig")
-  @js.native
-  def toPassportConfig(reader: js.UndefOr[scala.Nothing], options: MultipleCerts): SamlConfig = js.native
-  @JSImport("passport-saml-metadata/src", "toPassportConfig")
-  @js.native
-  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader): SamlConfig = js.native
-  @JSImport("passport-saml-metadata/src", "toPassportConfig")
-  @js.native
-  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader, options: MultipleCerts): SamlConfig = js.native
+  @scala.inline
+  def toPassportConfig(): SamlConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")().asInstanceOf[SamlConfig]
+  @scala.inline
+  def toPassportConfig(reader: Unit, options: MultipleCerts): SamlConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SamlConfig]
+  @scala.inline
+  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader): SamlConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any]).asInstanceOf[SamlConfig]
+  @scala.inline
+  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader, options: MultipleCerts): SamlConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("toPassportConfig")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SamlConfig]
 }

@@ -4,21 +4,21 @@
 Typings are for version 3.9
 
 ## Library description:
-jExcel is a lightweight, vanilla javascript plugin to create amazing web-based interactive tables and spreadsheets compatible with Excel, Google Spreadsheets and any other spreadsheet software.
+Jspreadsheet is a lightweight, vanilla javascript plugin to create amazing web-based interactive tables and spreadsheets compatible with Excel, Google Spreadsheets and any other spreadsheet software.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jexcel |
 | Keywords           | spreadsheet, tables, table, excel, grid, grid-editor, data-table, data-grid, data-spreadsheet |
-| # releases         | 40 |
-| # dependents       | 6 |
-| # downloads        | 86292 |
+| # releases         | 39 |
+| # dependents       | 9 |
+| # downloads        | 151707 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/paulhodel/jexcel)
-- [Bugs](https://github.com/paulhodel/jexcel/issues)
-- [Repository](https://github.com/paulhodel/jexcel)
+- [Homepage](https://github.com/jspreadsheet/ce)
+- [Bugs](https://github.com/jspreadsheet/ce/issues)
+- [Repository](https://github.com/jspreadsheet/ce)
 - [Npm](https://www.npmjs.com/package/jexcel)
     
 

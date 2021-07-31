@@ -5,39 +5,37 @@ import typings.stripe.stripeStrings.bearer
 import typings.stripe.stripeStrings.refresh_token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth {
   
-  @js.native
   trait IOAuthAuthorizationCodeTokenRequest extends StObject {
     
     /**
       * Check whether the suggested_capabilities were applied to the connected account.
       */
-    var assert_capabilities: js.UndefOr[String] = js.native
+    var assert_capabilities: js.UndefOr[String] = js.undefined
     
     /**
       * The value of the code
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * authorization_code when turning an authorization code into an access token
       */
-    var grant_type: authorization_code = js.native
+    var grant_type: authorization_code
     
     /**
       * Has no effect when requesting an access token from an authorization code.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object IOAuthAuthorizationCodeTokenRequest {
     
     @scala.inline
-    def apply(code: String, grant_type: authorization_code): IOAuthAuthorizationCodeTokenRequest = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], grant_type = grant_type.asInstanceOf[js.Any])
+    def apply(code: String): IOAuthAuthorizationCodeTokenRequest = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], grant_type = "authorization_code")
       __obj.asInstanceOf[IOAuthAuthorizationCodeTokenRequest]
     }
     
@@ -64,13 +62,12 @@ object oauth {
     }
   }
   
-  @js.native
   trait IOAuthDeauthorizationResponse extends StObject {
     
     /**
       * The unique id of the account you have revoked access to, as a string. This is the same as the stripe_user_id you passed in. If this is returned, the revocation was successful.
       */
-    var stripe_user_id: String = js.native
+    var stripe_user_id: String
   }
   object IOAuthDeauthorizationResponse {
     
@@ -88,36 +85,35 @@ object oauth {
     }
   }
   
-  @js.native
   trait IOAuthRefreshTokenRequest extends StObject {
     
     /**
       * Check whether the suggested_capabilities were applied to the connected account.
       */
-    var assert_capabilities: js.UndefOr[String] = js.native
+    var assert_capabilities: js.UndefOr[String] = js.undefined
     
     /**
       * use a refresh token to get a new access token.
       */
-    var grant_type: refresh_token = js.native
+    var grant_type: refresh_token
     
     /**
       * The value of the refresh_token
       */
-    var refresh_token: String = js.native
+    var refresh_token: String
     
     /**
       * When requesting a new access token from a refresh token, any scope that has an equal or lesser scope as the refresh token.
       *
       * Defaults to the scope of the refresh token.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object IOAuthRefreshTokenRequest {
     
     @scala.inline
-    def apply(grant_type: refresh_token, refresh_token: String): IOAuthRefreshTokenRequest = {
-      val __obj = js.Dynamic.literal(grant_type = grant_type.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any])
+    def apply(refresh_token: String): IOAuthRefreshTokenRequest = {
+      val __obj = js.Dynamic.literal(grant_type = "refresh_token", refresh_token = refresh_token.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOAuthRefreshTokenRequest]
     }
     
@@ -144,7 +140,6 @@ object oauth {
     }
   }
   
-  @js.native
   trait IOAuthToken extends StObject {
     
     /**
@@ -152,39 +147,39 @@ object oauth {
       *
       * This key does not expire, but may be revoked by the user at any time (you'll get a account.application.deauthorized webhook event when this happens).
       */
-    var access_token: String = js.native
+    var access_token: String
     
     /**
       * The live mode indicator for the token. If true, the access_token can be used as a live secret key. If false, the access_token can be used as a test secret key.
       *
       * Depends on the mode of the secret API key used to make the request.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Can be used to get a new access token of an equal or lesser scope, or of a different live mode (where applicable).
       */
-    var refresh_token: String = js.native
+    var refresh_token: String
     
     /**
       * The scope granted to the access token, depending on the scope of the authorization code and scope parameter.
       */
-    var scope: String = js.native
+    var scope: String
     
     /**
       * A publishable key that can be used with this account. Matches the mode—live or test—of the token.
       */
-    var stripe_publishable_key: String = js.native
+    var stripe_publishable_key: String
     
     /**
       * The unique id of the account you have been granted access to, as a string.
       */
-    var stripe_user_id: String = js.native
+    var stripe_user_id: String
     
     /**
       * Will always have a value of bearer.
       */
-    var token_type: bearer = js.native
+    var token_type: bearer
   }
   object IOAuthToken {
     
@@ -195,10 +190,9 @@ object oauth {
       refresh_token: String,
       scope: String,
       stripe_publishable_key: String,
-      stripe_user_id: String,
-      token_type: bearer
+      stripe_user_id: String
     ): IOAuthToken = {
-      val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], stripe_publishable_key = stripe_publishable_key.asInstanceOf[js.Any], stripe_user_id = stripe_user_id.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], stripe_publishable_key = stripe_publishable_key.asInstanceOf[js.Any], stripe_user_id = stripe_user_id.asInstanceOf[js.Any], token_type = "bearer")
       __obj.asInstanceOf[IOAuthToken]
     }
     

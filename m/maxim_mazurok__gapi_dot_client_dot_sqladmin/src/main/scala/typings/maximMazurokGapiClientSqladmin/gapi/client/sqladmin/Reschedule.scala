@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reschedule extends StObject {
   
   /** Required. The type of the reschedule. */
-  var rescheduleType: js.UndefOr[String] = js.native
+  var rescheduleType: js.UndefOr[String] = js.undefined
   
   /** Optional. Timestamp when the maintenance shall be rescheduled to if reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object Reschedule {
   

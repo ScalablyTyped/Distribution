@@ -9,25 +9,23 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.playable.topBlockTypesMod.ITopBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screen extends StObject {
   
-  var bottomBlock: IBottomBlock = js.native
+  var bottomBlock: IBottomBlock
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var rootContainer: IRootContainer = js.native
+  var rootContainer: IRootContainer
   
-  var screen: IScreen = js.native
+  var screen: IScreen
   
-  var tooltipService: ITooltipService = js.native
+  var tooltipService: ITooltipService
   
-  var topBlock: ITopBlock = js.native
+  var topBlock: ITopBlock
 }
 object Screen {
   

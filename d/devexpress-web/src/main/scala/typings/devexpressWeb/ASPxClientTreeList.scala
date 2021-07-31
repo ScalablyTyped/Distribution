@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client ASPxTreeList.
   */
 @js.native
-trait ASPxClientTreeList extends ASPxClientControl {
+trait ASPxClientTreeList
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Applies the specified filter expression to the tree list.
@@ -533,22 +534,22 @@ trait ASPxClientTreeList extends ASPxClientControl {
   def ShowFilterControl(): Unit = js.native
   
   def SortBy(columnIndex: String): Unit = js.native
-  def SortBy(columnIndex: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: String, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: String, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(columnIndex: String, sortOrder: Unit, reset: Boolean): Unit = js.native
   /**
     * Sorts data by the specified data column's values.
     * @param sortOrder A string value that specifies the column's sort order ('ASC', 'DESC' or 'NONE').
     * @param reset true to clear any previous sorting; otherwise, false.
     */
   def SortBy(columnIndex: Double): Unit = js.native
-  def SortBy(columnIndex: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: Double, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(columnIndex: Double, sortOrder: Unit, reset: Boolean): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn): Unit = js.native
-  def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String, reset: Boolean): Unit = js.native
+  def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: Unit, reset: Boolean): Unit = js.native
   
   /**
     * Occurs before a node is dragged by an end-user.

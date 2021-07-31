@@ -2,16 +2,14 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interpolation extends StObject {
   
   @JSName("apply")
-  def apply(start: Double, end: Double, a: Double): Double = js.native
+  def apply(start: Double, end: Double, a: Double): Double
   
-  /* protected */ def applyInternal(a: Double): Double = js.native
+  /* protected */ def applyInternal(a: Double): Double
 }
 object Interpolation {
   

@@ -6,7 +6,6 @@ import typings.node.streamMod.Stream
 import typings.rdfJs.mod.Sink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,14 +48,15 @@ object mod {
   
   type DataFactoryExt = typings.rdfExt.dataFactoryMod.^
   
-  @js.native
-  trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] extends /* mediaType */ StringDictionary[Sink[InputStream, OutputStream]] {
+  trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */]
+    extends StObject
+       with /* mediaType */ StringDictionary[Sink[InputStream, OutputStream]] {
     
-    def find(mediaType: String): Sink[InputStream, OutputStream] = js.native
+    def find(mediaType: String): Sink[InputStream, OutputStream]
     
-    def `import`(mediaType: String, input: js.Any, options: js.Any): js.Any = js.native
+    def `import`(mediaType: String, input: js.Any, options: js.Any): js.Any
     
-    def list(): js.Array[String] = js.native
+    def list(): js.Array[String]
   }
   object SinkMap {
     
@@ -72,7 +72,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SinkMapMutableBuilder[Self <: SinkMap[_, _], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self with (SinkMap[InputStream, OutputStream])) extends AnyVal {
+    implicit class SinkMapMutableBuilder[Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (SinkMap[InputStream, OutputStream])) extends AnyVal {
       
       @scala.inline
       def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))

@@ -11,8 +11,8 @@ Keychain Access for React Native
 | Full name          | react-native-keychain |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, keychain |
 | # releases         | 15 |
-| # dependents       | 13 |
-| # downloads        | 2062940 |
+| # dependents       | 18 |
+| # downloads        | 2408523 |
 | # stars            | 0 |
 
 ## Links

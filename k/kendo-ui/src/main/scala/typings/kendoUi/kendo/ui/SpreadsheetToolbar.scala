@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetToolbar extends StObject {
   
-  var data: js.UndefOr[Boolean | js.Any] = js.native
+  var data: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var home: js.UndefOr[Boolean | js.Any] = js.native
+  var home: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var insert: js.UndefOr[Boolean | js.Any] = js.native
+  var insert: js.UndefOr[Boolean | js.Any] = js.undefined
 }
 object SpreadsheetToolbar {
   

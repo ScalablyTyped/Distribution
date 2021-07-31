@@ -17,10 +17,13 @@ import typings.storybookAddonKnobs.anon.TypeofRadiosType
 import typings.storybookAddonKnobs.anon.TypeofTextType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
+  
+  @JSImport("@storybook/addon-knobs/dist/components/types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -90,6 +93,15 @@ object typesMod {
     @scala.inline
     def number_=(x: TypeofNumberType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
+    @js.native
+    class `object`[T] ()
+      extends typings.storybookAddonKnobs.objectMod.default[T]
+    @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
+    @js.native
+    val `object`: Instantiable0[typings.storybookAddonKnobs.objectMod.default[js.Object]] & TypeofObjectType = js.native
+    
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.options")
     @js.native
     def options: FunctionComponentOptionsT = js.native
@@ -103,9 +115,9 @@ object typesMod {
       extends typings.storybookAddonKnobs.radioMod.default
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.radios")
     @js.native
-    def radios: Instantiable0[typings.storybookAddonKnobs.radioMod.default] with TypeofRadiosType = js.native
+    def radios: Instantiable0[typings.storybookAddonKnobs.radioMod.default] & TypeofRadiosType = js.native
     @scala.inline
-    def radios_=(x: Instantiable0[typings.storybookAddonKnobs.radioMod.default] with TypeofRadiosType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radios")(x.asInstanceOf[js.Any])
+    def radios_=(x: Instantiable0[typings.storybookAddonKnobs.radioMod.default] & TypeofRadiosType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radios")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types", "default.select")
     @js.native
@@ -123,22 +135,12 @@ object typesMod {
     def text: TypeofTextType = js.native
     @scala.inline
     def text_=(x: TypeofTextType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
-    @js.native
-    class `object`[T] ()
-      extends typings.storybookAddonKnobs.objectMod.default[T]
-    @JSImport("@storybook/addon-knobs/dist/components/types", "default.object")
-    @js.native
-    val `object`: Instantiable0[typings.storybookAddonKnobs.objectMod.default[js.Object]] with TypeofObjectType = js.native
   }
   
-  @JSImport("@storybook/addon-knobs/dist/components/types", "getKnobControl")
-  @js.native
-  def getKnobControl(`type`: KnobType): KnobControlType = js.native
+  @scala.inline
+  def getKnobControl(`type`: KnobType): KnobControlType = ^.asInstanceOf[js.Dynamic].applyDynamic("getKnobControl")(`type`.asInstanceOf[js.Any]).asInstanceOf[KnobControlType]
   
-  type KnobControlType = ComponentType[_] with Deserialize
+  type KnobControlType = ComponentType[js.Any] & Deserialize
   
   /* keyof @storybook/addon-knobs.anon.Array */ /* Rewritten from type alias, can be one of: 
     - typings.storybookAddonKnobs.storybookAddonKnobsStrings.text

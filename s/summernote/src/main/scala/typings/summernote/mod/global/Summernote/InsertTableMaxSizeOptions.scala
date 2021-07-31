@@ -2,15 +2,13 @@ package typings.summernote.mod.global.Summernote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertTableMaxSizeOptions extends StObject {
   
-  var col: Double = js.native
+  var col: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object InsertTableMaxSizeOptions {
   

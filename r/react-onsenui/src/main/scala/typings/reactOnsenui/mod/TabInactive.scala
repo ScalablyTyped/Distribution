@@ -3,17 +3,16 @@ package typings.reactOnsenui.mod
 import typings.reactOnsenui.anon.HTMLAttributesidclassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "TabInactive")
 @js.native
 class TabInactive protected ()
   extends Component[js.Object, js.Object] {
-  def this(props: HTMLAttributesidclassName with js.Object) = this()
+  def this(props: HTMLAttributesidclassName & js.Object) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName with js.Object, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & js.Object, context: js.Any) = this()
 }

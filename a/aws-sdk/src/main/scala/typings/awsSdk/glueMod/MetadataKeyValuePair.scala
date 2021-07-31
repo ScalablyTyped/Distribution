@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataKeyValuePair extends StObject {
   
   /**
     * A metadata key.
     */
-  var MetadataKey: js.UndefOr[MetadataKeyString] = js.native
+  var MetadataKey: js.UndefOr[MetadataKeyString] = js.undefined
   
   /**
     * A metadata key’s corresponding value.
     */
-  var MetadataValue: js.UndefOr[MetadataValueString] = js.native
+  var MetadataValue: js.UndefOr[MetadataValueString] = js.undefined
 }
 object MetadataKeyValuePair {
   

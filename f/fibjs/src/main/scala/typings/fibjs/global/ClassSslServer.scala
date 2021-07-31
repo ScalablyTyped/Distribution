@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_SslServer")
 @js.native
 class ClassSslServer protected ()
-  extends typings.fibjs.ClassSslServer {
+  extends StObject
+     with typings.fibjs.ClassSslServer {
   /**
     * 
     * @brief SslServer 构造函数，在所有本机地址侦听
@@ -33,7 +33,7 @@ class ClassSslServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[_], port: Double, listener: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[js.Any], port: Double, listener: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslServer 构造函数
@@ -59,7 +59,7 @@ class ClassSslServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[_], addr: String, port: Double, listener: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[js.Any], addr: String, port: Double, listener: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslServer 构造函数，在所有本机地址侦听

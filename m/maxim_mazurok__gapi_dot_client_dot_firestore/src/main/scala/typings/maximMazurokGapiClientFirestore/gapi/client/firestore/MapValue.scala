@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapValue extends StObject {
   
   /**
@@ -16,8 +14,8 @@ trait MapValue extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[js.Any]
+  ] = js.undefined
 }
 object MapValue {
   
@@ -34,7 +32,7 @@ object MapValue {
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline

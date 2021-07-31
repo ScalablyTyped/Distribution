@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetByteMatchSetRequest extends StObject {
   
   /**
     * The ByteMatchSetId of the ByteMatchSet that you want to get. ByteMatchSetId is returned by CreateByteMatchSet and by ListByteMatchSets.
     */
-  var ByteMatchSetId: ResourceId = js.native
+  var ByteMatchSetId: ResourceId
 }
 object GetByteMatchSetRequest {
   

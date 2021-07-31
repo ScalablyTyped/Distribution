@@ -5,39 +5,37 @@ import typings.sharepoint.SP.UrlZone
 import typings.sharepoint.SP.Utilities.PrincipalSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISPClientPeoplePickerSchema extends StObject {
   
-  var AllUrlZones: js.UndefOr[Boolean] = js.native
+  var AllUrlZones: js.UndefOr[Boolean] = js.undefined
   
-  var AllowEmailAddresses: js.UndefOr[Boolean] = js.native
+  var AllowEmailAddresses: js.UndefOr[Boolean] = js.undefined
   
-  var AllowMultipleValues: js.UndefOr[Boolean] = js.native
+  var AllowMultipleValues: js.UndefOr[Boolean] = js.undefined
   
-  var AutoFillElementId: js.UndefOr[String] = js.native
+  var AutoFillElementId: js.UndefOr[String] = js.undefined
   
-  var AutoFillEnabled: js.UndefOr[Boolean] = js.native
+  var AutoFillEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var EditorElementId: js.UndefOr[String] = js.native
+  var EditorElementId: js.UndefOr[String] = js.undefined
   
-  var EnabledClaimProvider: js.UndefOr[String] = js.native
+  var EnabledClaimProvider: js.UndefOr[String] = js.undefined
   
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
-  var ForceClaims: js.UndefOr[Boolean] = js.native
+  var ForceClaims: js.UndefOr[Boolean] = js.undefined
   
-  var HiddenInputId: js.UndefOr[String] = js.native
+  var HiddenInputId: js.UndefOr[String] = js.undefined
   
-  var InitialHelpText: js.UndefOr[String] = js.native
+  var InitialHelpText: js.UndefOr[String] = js.undefined
   
-  var InitialHelpTextElementId: js.UndefOr[String] = js.native
+  var InitialHelpTextElementId: js.UndefOr[String] = js.undefined
   
-  var InitialSuggestions: js.UndefOr[js.Array[ISPClientPeoplePickerEntity]] = js.native
+  var InitialSuggestions: js.UndefOr[js.Array[ISPClientPeoplePickerEntity]] = js.undefined
   
-  var MaximumEntitySuggestions: js.UndefOr[Double] = js.native
+  var MaximumEntitySuggestions: js.UndefOr[Double] = js.undefined
   
   var OnUserResolvedClientScript: js.UndefOr[
     js.Function2[
@@ -45,7 +43,7 @@ trait ISPClientPeoplePickerSchema extends StObject {
       /* users */ js.Array[ISPClientPeoplePickerEntity], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var OnValueChangedClientScript: js.UndefOr[
     js.Function2[
@@ -53,39 +51,39 @@ trait ISPClientPeoplePickerSchema extends StObject {
       /* users */ js.Array[ISPClientPeoplePickerEntity], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Specify User, DL, SecGroup or SPGroup*/
-  var PrincipalAccountType: js.UndefOr[String] = js.native
+  var PrincipalAccountType: js.UndefOr[String] = js.undefined
   
-  var Required: js.UndefOr[Boolean] = js.native
+  var Required: js.UndefOr[Boolean] = js.undefined
   
-  var ResolvePrincipalSource: js.UndefOr[PrincipalSource] = js.native
+  var ResolvePrincipalSource: js.UndefOr[PrincipalSource] = js.undefined
   
-  var ResolvedListElementId: js.UndefOr[String] = js.native
+  var ResolvedListElementId: js.UndefOr[String] = js.undefined
   
-  var Rows: js.UndefOr[Double] = js.native
+  var Rows: js.UndefOr[Double] = js.undefined
   
-  var SearchPrincipalSource: js.UndefOr[PrincipalSource] = js.native
+  var SearchPrincipalSource: js.UndefOr[PrincipalSource] = js.undefined
   
-  var SharePointGroupID: js.UndefOr[Double] = js.native
+  var SharePointGroupID: js.UndefOr[Double] = js.undefined
   
-  var TopLevelElementId: js.UndefOr[String] = js.native
+  var TopLevelElementId: js.UndefOr[String] = js.undefined
   
-  var UrlZone: js.UndefOr[typings.sharepoint.SP.UrlZone] = js.native
+  var UrlZone: js.UndefOr[typings.sharepoint.SP.UrlZone] = js.undefined
   
-  var UseLocalSuggestionCache: js.UndefOr[Boolean] = js.native
+  var UseLocalSuggestionCache: js.UndefOr[Boolean] = js.undefined
   
-  var UserNoQueryPermission: js.UndefOr[Boolean] = js.native
+  var UserNoQueryPermission: js.UndefOr[Boolean] = js.undefined
   
-  var VisibleSuggestions: js.UndefOr[Double] = js.native
+  var VisibleSuggestions: js.UndefOr[Double] = js.undefined
   
-  var WaitImageId: js.UndefOr[String] = js.native
+  var WaitImageId: js.UndefOr[String] = js.undefined
   
-  var WebApplicationID: js.UndefOr[Guid] = js.native
+  var WebApplicationID: js.UndefOr[Guid] = js.undefined
   
   /** Number or '100%'*/
-  var Width: js.UndefOr[js.Any] = js.native
+  var Width: js.UndefOr[js.Any] = js.undefined
 }
 object ISPClientPeoplePickerSchema {
   

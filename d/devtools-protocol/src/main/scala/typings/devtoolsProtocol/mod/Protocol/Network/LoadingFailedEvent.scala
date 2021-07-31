@@ -2,41 +2,39 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingFailedEvent extends StObject {
   
   /**
     * The reason why loading was blocked, if any.
     */
-  var blockedReason: js.UndefOr[BlockedReason] = js.native
+  var blockedReason: js.UndefOr[BlockedReason] = js.undefined
   
   /**
     * True if loading was canceled.
     */
-  var canceled: js.UndefOr[Boolean] = js.native
+  var canceled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User friendly error message.
     */
-  var errorText: String = js.native
+  var errorText: String
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
   
   /**
     * Resource type.
     */
-  var `type`: ResourceType = js.native
+  var `type`: ResourceType
 }
 object LoadingFailedEvent {
   

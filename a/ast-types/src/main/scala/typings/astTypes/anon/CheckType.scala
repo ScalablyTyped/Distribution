@@ -5,23 +5,21 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TSTypeKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckType extends StObject {
   
-  var checkType: TSTypeKind = js.native
+  var checkType: TSTypeKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var extendsType: TSTypeKind = js.native
+  var extendsType: TSTypeKind
   
-  var falseType: TSTypeKind = js.native
+  var falseType: TSTypeKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var trueType: TSTypeKind = js.native
+  var trueType: TSTypeKind
 }
 object CheckType {
   

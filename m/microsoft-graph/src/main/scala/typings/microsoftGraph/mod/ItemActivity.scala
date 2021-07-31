@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemActivity extends Entity {
+trait ItemActivity
+  extends StObject
+     with Entity {
   
   // An item was accessed.
-  var access: js.UndefOr[NullableOption[AccessAction]] = js.native
+  var access: js.UndefOr[NullableOption[AccessAction]] = js.undefined
   
   // Details about when the activity took place. Read-only.
-  var activityDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var activityDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identity of who performed the action. Read-only.
-  var actor: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var actor: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Exposes the driveItem that was the target of this activity.
-  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.undefined
 }
 object ItemActivity {
   

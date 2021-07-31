@@ -3,35 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSImportEqualsDeclaration_
-  extends Statement
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSImportEqualsDeclaration_
+  extends StObject
+     with BaseNode
+     with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var isExport: Boolean = js.native
+  var isExport: Boolean
   
-  var moduleReference: TSEntityName | TSExternalModuleReference_ = js.native
+  var moduleReference: TSEntityName | TSExternalModuleReference_
   
   @JSName("type")
-  var type_TSImportEqualsDeclaration_ : TSImportEqualsDeclaration = js.native
+  var type_TSImportEqualsDeclaration_ : TSImportEqualsDeclaration
 }
 object TSImportEqualsDeclaration_ {
   
   @scala.inline
-  def apply(
-    id: Identifier_,
-    isExport: Boolean,
-    moduleReference: TSEntityName | TSExternalModuleReference_,
-    `type`: TSImportEqualsDeclaration
-  ): TSImportEqualsDeclaration_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExport = isExport.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, isExport: Boolean, moduleReference: TSEntityName | TSExternalModuleReference_): TSImportEqualsDeclaration_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExport = isExport.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSImportEqualsDeclaration")
     __obj.asInstanceOf[TSImportEqualsDeclaration_]
   }
   

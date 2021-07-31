@@ -2,103 +2,101 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobMetadata extends StObject {
   
   /**
     * The ID for the address that you want the Snow device shipped to.
     */
-  var AddressId: js.UndefOr[typings.awsSdk.snowballMod.AddressId] = js.native
+  var AddressId: js.UndefOr[typings.awsSdk.snowballMod.AddressId] = js.undefined
   
   /**
     * The 39-character ID for the cluster, for example CID123e4567-e89b-12d3-a456-426655440000.
     */
-  var ClusterId: js.UndefOr[String] = js.native
+  var ClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The creation date for this job.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A value that defines the real-time status of a Snow device's data transfer while the device is at AWS. This data is only available while a job has a JobState value of InProgress, for both import and export jobs.
     */
-  var DataTransferProgress: js.UndefOr[DataTransfer] = js.native
+  var DataTransferProgress: js.UndefOr[DataTransfer] = js.undefined
   
   /**
     * The description of the job, provided at job creation.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
-  var DeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.DeviceConfiguration] = js.native
+  var DeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.DeviceConfiguration] = js.undefined
   
   /**
     * The ID of the address that you want a job shipped to, after it will be shipped to its primary address. This field is not supported in most regions.
     */
-  var ForwardingAddressId: js.UndefOr[AddressId] = js.native
+  var ForwardingAddressId: js.UndefOr[AddressId] = js.undefined
   
   /**
     * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
     */
-  var JobId: js.UndefOr[String] = js.native
+  var JobId: js.UndefOr[String] = js.undefined
   
   /**
     * Links to Amazon S3 presigned URLs for the job report and logs. For import jobs, the PDF job report becomes available at the end of the import process. For export jobs, your job report typically becomes available while the Snow device for your job part is being delivered to you.
     */
-  var JobLogInfo: js.UndefOr[JobLogs] = js.native
+  var JobLogInfo: js.UndefOr[JobLogs] = js.undefined
   
   /**
     * The current status of the jobs.
     */
-  var JobState: js.UndefOr[typings.awsSdk.snowballMod.JobState] = js.native
+  var JobState: js.UndefOr[typings.awsSdk.snowballMod.JobState] = js.undefined
   
   /**
     * The type of job.
     */
-  var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.native
+  var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the AWS Key Management Service (AWS KMS) key associated with this job. This ARN was created using the CreateKey API action in AWS KMS.
     */
-  var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.native
+  var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.undefined
   
   /**
     * The Amazon Simple Notification Service (Amazon SNS) notification settings associated with a specific job. The Notification object is returned as a part of the response syntax of the DescribeJob action in the JobMetadata data type.
     */
-  var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.native
+  var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.undefined
   
   /**
     * An array of S3Resource objects. Each S3Resource object represents an Amazon S3 bucket that your transferred data will be exported from or imported into.
     */
-  var Resources: js.UndefOr[JobResource] = js.native
+  var Resources: js.UndefOr[JobResource] = js.undefined
   
   /**
     * The role ARN associated with this job. This ARN was created using the CreateRole API action in AWS Identity and Access Management (IAM).
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.snowballMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.snowballMod.RoleARN] = js.undefined
   
   /**
     * A job's shipping information, including inbound and outbound tracking numbers and shipping speed options.
     */
-  var ShippingDetails: js.UndefOr[typings.awsSdk.snowballMod.ShippingDetails] = js.native
+  var ShippingDetails: js.UndefOr[typings.awsSdk.snowballMod.ShippingDetails] = js.undefined
   
   /**
     * The Snow device capacity preference for this job, specified at job creation. In US regions, you can choose between 50 TB and 80 TB Snowballs. All other regions use 80 TB capacity Snowballs.
     */
-  var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.native
+  var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.undefined
   
   /**
     * The type of device used with this job.
     */
-  var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
+  var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
   
   /**
     * The metadata associated with the tax documents required in your AWS Region.
     */
-  var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.native
+  var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.undefined
 }
 object JobMetadata {
   

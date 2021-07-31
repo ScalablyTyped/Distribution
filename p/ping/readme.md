@@ -10,9 +10,9 @@ a simple wrapper for ping
 | ------------------ | :-------------: |
 | Full name          | ping |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 168 |
-| # downloads        | 974268 |
+| # releases         | 4 |
+| # dependents       | 174 |
+| # downloads        | 1403444 |
 | # stars            | 9 |
 
 ## Links

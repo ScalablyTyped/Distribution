@@ -6,30 +6,28 @@ import typings.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType
 import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.kycDocument.KycDocumentData> */
-@js.native
 trait PartialKycDocumentData extends StObject {
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var ProcessedDate: js.UndefOr[Timestamp] = js.native
+  var ProcessedDate: js.UndefOr[Timestamp] = js.undefined
   
-  var RefusedReasonMessage: js.UndefOr[String] = js.native
+  var RefusedReasonMessage: js.UndefOr[String] = js.undefined
   
-  var RefusedReasonType: js.UndefOr[KYCDocumentRefusedReasonType] = js.native
+  var RefusedReasonType: js.UndefOr[KYCDocumentRefusedReasonType] = js.undefined
   
-  var Status: js.UndefOr[DocumentStatus] = js.native
+  var Status: js.UndefOr[DocumentStatus] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var Type: js.UndefOr[KycDocumentType] = js.native
+  var Type: js.UndefOr[KycDocumentType] = js.undefined
   
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object PartialKycDocumentData {
   

@@ -2,15 +2,13 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseCost extends StObject {
   
-  val Currency: String = js.native
+  val Currency: String
   
-  val Value: Double = js.native
+  val Value: Double
 }
 object ResponseCost {
   

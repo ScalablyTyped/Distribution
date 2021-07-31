@@ -2,26 +2,24 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynthesizeSpeechOutput extends StObject {
   
   /**
     *  Stream containing the synthesized speech. 
     */
-  var AudioStream: js.UndefOr[typings.awsSdk.pollyMod.AudioStream] = js.native
+  var AudioStream: js.UndefOr[typings.awsSdk.pollyMod.AudioStream] = js.undefined
   
   /**
     *  Specifies the type audio stream. This should reflect the OutputFormat parameter in your request.     If you request mp3 as the OutputFormat, the ContentType returned is audio/mpeg.     If you request ogg_vorbis as the OutputFormat, the ContentType returned is audio/ogg.     If you request pcm as the OutputFormat, the ContentType returned is audio/pcm in a signed 16-bit, 1 channel (mono), little-endian format.    If you request json as the OutputFormat, the ContentType returned is audio/json.    
     */
-  var ContentType: js.UndefOr[typings.awsSdk.pollyMod.ContentType] = js.native
+  var ContentType: js.UndefOr[typings.awsSdk.pollyMod.ContentType] = js.undefined
   
   /**
     * Number of characters synthesized.
     */
-  var RequestCharacters: js.UndefOr[typings.awsSdk.pollyMod.RequestCharacters] = js.native
+  var RequestCharacters: js.UndefOr[typings.awsSdk.pollyMod.RequestCharacters] = js.undefined
 }
 object SynthesizeSpeechOutput {
   

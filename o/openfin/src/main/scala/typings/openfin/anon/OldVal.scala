@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.shapesMod.Hotkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldVal extends StObject {
   
-  var newVal: js.UndefOr[js.Array[Hotkey]] = js.native
+  var newVal: js.UndefOr[js.Array[Hotkey]] = js.undefined
   
-  var oldVal: js.UndefOr[js.Array[Hotkey]] = js.native
+  var oldVal: js.UndefOr[js.Array[Hotkey]] = js.undefined
 }
 object OldVal {
   

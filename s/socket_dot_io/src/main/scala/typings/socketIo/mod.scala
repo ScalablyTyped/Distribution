@@ -15,7 +15,6 @@ import typings.std.Array
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,7 +25,9 @@ object mod extends Shortcut {
   /**
     * Default Server constructor
     */
-  class ^ () extends Server {
+  class ^ ()
+    extends StObject
+       with Server {
     /**
       * Creates a new Server
       * @param A parameters object
@@ -53,7 +54,7 @@ object mod extends Shortcut {
   }
   @JSImport("socket.io", JSImport.Namespace)
   @js.native
-  val ^ : SocketIOStatic = js.native
+  val ^ : js.Object & SocketIOStatic = js.native
   
   /**
     * Backwards compatibility
@@ -65,7 +66,9 @@ object mod extends Shortcut {
   /**
     * Default Server constructor
     */
-  class listen () extends Server {
+  class listen ()
+    extends StObject
+       with Server {
     /**
       * Creates a new Server
       * @param A parameters object
@@ -95,7 +98,9 @@ object mod extends Shortcut {
     * The interface used when dealing with rooms etc
     */
   @js.native
-  trait Adapter extends EventEmitter {
+  trait Adapter
+    extends StObject
+       with EventEmitter {
     
     /**
       * Adds a socket to a room. If the room doesn't exist, it's created
@@ -154,41 +159,40 @@ object mod extends Shortcut {
   /**
     * The client behind each socket (can have multiple sockets)
     */
-  @js.native
   trait Client extends StObject {
     
     /**
       * The underlying Engine.io Socket instance
       */
-    var conn: EngineSocket = js.native
+    var conn: EngineSocket
     
     /**
       * The ID for this client. Regenerated at every connection
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * A dictionary of all the namespaces for this client, with the Socket that
       * deals with that namespace
       */
-    var nsps: StringDictionary[Socket] = js.native
+    var nsps: StringDictionary[Socket]
     
     /**
       * The http.IncomingMessage request sent with the connection. Useful
       * for recovering headers etc
       */
-    var request: js.Any = js.native
+    var request: js.Any
     
     /**
       * The Server that this client belongs to
       */
-    var server: Server = js.native
+    var server: Server
     
     /**
       * The dictionary of sockets currently connect via this client (i.e. to different
       * namespaces) where the Socket ID is the key
       */
-    var sockets: StringDictionary[Socket] = js.native
+    var sockets: StringDictionary[Socket]
   }
   object Client {
     
@@ -232,7 +236,9 @@ object mod extends Shortcut {
     * A reference to the underlying engine.io Socket connection.
     */
   @js.native
-  trait EngineSocket extends EventEmitter {
+  trait EngineSocket
+    extends StObject
+       with EventEmitter {
     
     /**
       * The ID for this socket - matches Client.id
@@ -270,49 +276,48 @@ object mod extends Shortcut {
     var upgraded: Boolean = js.native
   }
   
-  @js.native
   trait Handshake extends StObject {
     
     /**
       * The remote address of the connection request
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * The headers passed along with the request. e.g. 'host',
       * 'connection', 'accept', 'referer', 'cookie'
       */
-    var headers: js.Any = js.native
+    var headers: js.Any
     
     /**
       * The timestamp for when this was issued
       */
-    var issued: Double = js.native
+    var issued: Double
     
     /**
       * Any query string parameters in the request url
       */
-    var query: js.Any = js.native
+    var query: js.Any
     
     /**
       * Is this a secure request?
       */
-    var secure: Boolean = js.native
+    var secure: Boolean
     
     /**
       * The current time, as a string
       */
-    var time: String = js.native
+    var time: String
     
     /**
       * The request url
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * Is this a cross-domain request?
       */
-    var xdomain: Boolean = js.native
+    var xdomain: Boolean
   }
   object Handshake {
     
@@ -365,7 +370,9 @@ object mod extends Shortcut {
     * to a Namespace requires a new Socket
     */
   @js.native
-  trait Namespace extends EventEmitter {
+  trait Namespace
+    extends StObject
+       with EventEmitter {
     
     /**
       * The Adapter that we're using to handle dealing with rooms etc
@@ -475,17 +482,17 @@ object mod extends Shortcut {
   
   @js.native
   trait Packet
-    extends Array[js.Any]
+    extends StObject
+       with Array[js.Any]
   
   /**
     * The interface describing a room
     */
-  @js.native
   trait Room extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var sockets: StringDictionary[Boolean] = js.native
+    var sockets: StringDictionary[Boolean]
   }
   object Room {
     
@@ -901,27 +908,28 @@ object mod extends Shortcut {
   /**
     * Options to pass to our server when creating it
     */
-  @js.native
-  trait ServerOptions extends ServerAttachOptions {
+  trait ServerOptions
+    extends StObject
+       with ServerAttachOptions {
     
     /**
       * The adapter to use for handling rooms. NOTE: this should be a class,
       * not an object
       * @default typeof Adapter
       */
-    var adapter: js.UndefOr[Adapter] = js.native
+    var adapter: js.UndefOr[Adapter] = js.undefined
     
     /**
       * Accepted origins
       * @default '*:*'
       */
-    var origins: js.UndefOr[String | js.Array[String]] = js.native
+    var origins: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Should we serve the client file?
       * @default true
       */
-    var serveClient: js.UndefOr[Boolean] = js.native
+    var serveClient: js.UndefOr[Boolean] = js.undefined
   }
   object ServerOptions {
     
@@ -964,7 +972,9 @@ object mod extends Shortcut {
     * different return)
     */
   @js.native
-  trait Socket extends EventEmitter {
+  trait Socket
+    extends StObject
+       with EventEmitter {
     
     /**
       * The Adapter that we use to handle our rooms
@@ -1130,7 +1140,8 @@ object mod extends Shortcut {
   
   @js.native
   trait SocketIOStatic
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Server
     * @param A parameters object
     */
@@ -1237,8 +1248,8 @@ object mod extends Shortcut {
     var listen_Original: SocketIOStatic = js.native
   }
   
-  type _To = SocketIOStatic
+  type _To = js.Object & SocketIOStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SocketIOStatic = ^
+  override def _to: js.Object & SocketIOStatic = ^
 }

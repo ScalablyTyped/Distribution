@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssessmentRunsRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment run that you want to describe.
     */
-  var assessmentRunArns: BatchDescribeArnList = js.native
+  var assessmentRunArns: BatchDescribeArnList
 }
 object DescribeAssessmentRunsRequest {
   

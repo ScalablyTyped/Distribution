@@ -3,19 +3,17 @@ package typings.firebaseApp
 import typings.firebaseAppTypes.mod.VersionService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseComponentMod {
   
-  @js.native
   trait NameServiceMapping extends StObject {
     
-    var `test-shell`: js.Promise[Unit] = js.native
+    var `test-shell`: js.Promise[Unit]
     
-    var vs1: VersionService = js.native
+    var vs1: VersionService
     
-    var vs2: VersionService = js.native
+    var vs2: VersionService
   }
   object NameServiceMapping {
     

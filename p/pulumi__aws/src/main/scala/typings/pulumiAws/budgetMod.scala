@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object budgetMod {
@@ -91,6 +90,10 @@ object budgetMod {
   /* static members */
   object Budget {
     
+    @JSImport("@pulumi/aws/budgets/budget", "Budget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Budget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,90 +103,84 @@ object budgetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/budgets/budget", "Budget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Budget = js.native
-    @JSImport("@pulumi/aws/budgets/budget", "Budget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Budget = js.native
-    @JSImport("@pulumi/aws/budgets/budget", "Budget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BudgetState): Budget = js.native
-    @JSImport("@pulumi/aws/budgets/budget", "Budget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): Budget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BudgetState): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
     
     /**
       * Returns true if the given object is an instance of Budget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/budgets/budget", "Budget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean]
   }
   
-  @js.native
   trait BudgetArgs extends StObject {
     
     /**
       * The ID of the target account for budget. Will use current user's accountId by default if omitted.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether this budget tracks monetary cost or usage.
       */
-    val budgetType: Input[String] = js.native
+    val budgetType: Input[String]
     
     /**
       * Map of CostFilters key/value pairs to apply to the budget.
       */
-    val costFilters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val costFilters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
       */
-    val costTypes: js.UndefOr[Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]] = js.native
+    val costTypes: js.UndefOr[Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]] = js.undefined
     
     /**
       * The amount of cost or usage being measured for a budget.
       */
-    val limitAmount: Input[String] = js.native
+    val limitAmount: Input[String]
     
     /**
       * The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
       */
-    val limitUnit: Input[String] = js.native
+    val limitUnit: Input[String]
     
     /**
       * The name of a budget. Unique within accounts.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The prefix of the name of a budget. Unique within accounts.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
       */
-    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]] = js.native
+    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]] = js.undefined
     
     /**
       * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
       */
-    val timePeriodEnd: js.UndefOr[Input[String]] = js.native
+    val timePeriodEnd: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
       */
-    val timePeriodStart: Input[String] = js.native
+    val timePeriodStart: Input[String]
     
     /**
       * The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
       */
-    val timeUnit: Input[String] = js.native
+    val timeUnit: Input[String]
   }
   object BudgetArgs {
     
@@ -264,68 +261,67 @@ object budgetMod {
     }
   }
   
-  @js.native
   trait BudgetState extends StObject {
     
     /**
       * The ID of the target account for budget. Will use current user's accountId by default if omitted.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether this budget tracks monetary cost or usage.
       */
-    val budgetType: js.UndefOr[Input[String]] = js.native
+    val budgetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Map of CostFilters key/value pairs to apply to the budget.
       */
-    val costFilters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val costFilters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
       */
-    val costTypes: js.UndefOr[Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]] = js.native
+    val costTypes: js.UndefOr[Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]] = js.undefined
     
     /**
       * The amount of cost or usage being measured for a budget.
       */
-    val limitAmount: js.UndefOr[Input[String]] = js.native
+    val limitAmount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
       */
-    val limitUnit: js.UndefOr[Input[String]] = js.native
+    val limitUnit: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of a budget. Unique within accounts.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The prefix of the name of a budget. Unique within accounts.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
       */
-    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]] = js.native
+    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]] = js.undefined
     
     /**
       * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
       */
-    val timePeriodEnd: js.UndefOr[Input[String]] = js.native
+    val timePeriodEnd: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
       */
-    val timePeriodStart: js.UndefOr[Input[String]] = js.native
+    val timePeriodStart: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
       */
-    val timeUnit: js.UndefOr[Input[String]] = js.native
+    val timeUnit: js.UndefOr[Input[String]] = js.undefined
   }
   object BudgetState {
     

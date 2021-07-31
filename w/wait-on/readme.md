@@ -10,9 +10,9 @@ wait-on is a cross platform command line utility and Node.js API which will wait
 | ------------------ | :-------------: |
 | Full name          | wait-on |
 | Keywords           | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
-| # releases         | 19 |
-| # dependents       | 81 |
-| # downloads        | 30855551 |
+| # releases         | 18 |
+| # dependents       | 90 |
+| # downloads        | 40193384 |
 | # stars            | 11 |
 
 ## Links

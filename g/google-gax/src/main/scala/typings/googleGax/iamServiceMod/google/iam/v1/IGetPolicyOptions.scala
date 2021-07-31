@@ -2,15 +2,13 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GetPolicyOptions. */
-@js.native
 trait IGetPolicyOptions extends StObject {
   
   /** GetPolicyOptions requestedPolicyVersion */
-  var requestedPolicyVersion: js.UndefOr[Double | Null] = js.native
+  var requestedPolicyVersion: js.UndefOr[Double | Null] = js.undefined
 }
 object IGetPolicyOptions {
   

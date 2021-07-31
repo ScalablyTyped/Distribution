@@ -5,30 +5,29 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.datetimeMod.DateTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortMod {
+  
+  @JSImport("vega-lite/build/src/sort", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/sort", "DEFAULT_SORT_OP")
   @js.native
   val DEFAULT_SORT_OP: /* "min" */ String = js.native
   
-  @JSImport("vega-lite/build/src/sort", "isSortArray")
-  @js.native
-  def isSortArray[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean = js.native
+  @scala.inline
+  def isSortArray[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortArray")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortArray */ Boolean]
   
-  @JSImport("vega-lite/build/src/sort", "isSortByChannel")
-  @js.native
-  def isSortByChannel(c: String): /* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean = js.native
+  @scala.inline
+  def isSortByChannel(c: String): /* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByChannel */ Boolean]
   
-  @JSImport("vega-lite/build/src/sort", "isSortByEncoding")
-  @js.native
-  def isSortByEncoding[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean = js.native
+  @scala.inline
+  def isSortByEncoding[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortByEncoding")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.SortByEncoding */ Boolean]
   
-  @JSImport("vega-lite/build/src/sort", "isSortField")
-  @js.native
-  def isSortField[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean = js.native
+  @scala.inline
+  def isSortField[F](sort: Sort[F]): /* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSortField")(sort.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/sort.EncodingSortField<F> */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.sortMod.SortOrder
@@ -36,17 +35,19 @@ object sortMod {
     - typings.vegaLite.sortMod.SortByChannelDesc
   */
   trait AllSortString
-    extends _Sort[js.Any]
+    extends StObject
+       with _Sort[js.Any]
   
-  @js.native
-  trait EncodingSortField[F] extends _Sort[F] {
+  trait EncodingSortField[F]
+    extends StObject
+       with _Sort[F] {
     
     /**
       * The data [field](https://vega.github.io/vega-lite/docs/field.html) to sort by.
       *
       * __Default value:__ If unspecified, defaults to the field specified in the outer data reference.
       */
-    var field: js.UndefOr[F] = js.native
+    var field: js.UndefOr[F] = js.undefined
     
     /**
       * An [aggregate operation](https://vega.github.io/vega-lite/docs/aggregate.html#ops) to perform on the field prior to sorting (e.g., `"count"`, `"mean"` and `"median"`).
@@ -57,12 +58,12 @@ object sortMod {
       *
       * __Default value:__ `"sum"` for stacked plots. Otherwise, `"min"`.
       */
-    var op: js.UndefOr[NonArgAggregateOp] = js.native
+    var op: js.UndefOr[NonArgAggregateOp] = js.undefined
     
     /**
       * The sort order. One of `"ascending"` (default), `"descending"`, or `null` (no not sort).
       */
-    var order: js.UndefOr[SortOrder | Null] = js.native
+    var order: js.UndefOr[SortOrder | Null] = js.undefined
   }
   object EncodingSortField {
     
@@ -73,7 +74,7 @@ object sortMod {
     }
     
     @scala.inline
-    implicit class EncodingSortFieldMutableBuilder[Self <: EncodingSortField[_], F] (val x: Self with EncodingSortField[F]) extends AnyVal {
+    implicit class EncodingSortFieldMutableBuilder[Self <: EncodingSortField[?], F] (val x: Self & EncodingSortField[F]) extends AnyVal {
       
       @scala.inline
       def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
@@ -123,7 +124,9 @@ object sortMod {
     - typings.vegaLite.vegaLiteStrings.opacity
     - typings.vegaLite.vegaLiteStrings.text
   */
-  trait SortByChannel extends AllSortString
+  trait SortByChannel
+    extends StObject
+       with AllSortString
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.`-x`
@@ -139,7 +142,9 @@ object sortMod {
     - typings.vegaLite.vegaLiteStrings.`-opacity`
     - typings.vegaLite.vegaLiteStrings.`-text`
   */
-  trait SortByChannelDesc extends AllSortString
+  trait SortByChannelDesc
+    extends StObject
+       with AllSortString
   object SortByChannelDesc {
     
     @scala.inline
@@ -179,19 +184,19 @@ object sortMod {
     def `-y`: typings.vegaLite.vegaLiteStrings.`-y` = "-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`-y`]
   }
   
-  @js.native
   trait SortByEncoding
-    extends _Sort[js.Any] {
+    extends StObject
+       with _Sort[js.Any] {
     
     /**
       * The [encoding channel](https://vega.github.io/vega-lite/docs/encoding.html#channels) to sort by (e.g., `"x"`, `"y"`)
       */
-    var encoding: SortByChannel = js.native
+    var encoding: SortByChannel
     
     /**
       * The sort order. One of `"ascending"` (default), `"descending"`, or `null` (no not sort).
       */
-    var order: js.UndefOr[SortOrder | Null] = js.native
+    var order: js.UndefOr[SortOrder | Null] = js.undefined
   }
   object SortByEncoding {
     
@@ -218,18 +223,17 @@ object sortMod {
     }
   }
   
-  @js.native
   trait SortField extends StObject {
     
     /**
       * The name of the field to sort.
       */
-    var field: FieldName = js.native
+    var field: FieldName
     
     /**
       * Whether to sort the field in ascending or descending order. One of `"ascending"` (default), `"descending"`, or `null` (no not sort).
       */
-    var order: js.UndefOr[SortOrder | Null] = js.native
+    var order: js.UndefOr[SortOrder | Null] = js.undefined
   }
   object SortField {
     
@@ -256,12 +260,11 @@ object sortMod {
     }
   }
   
-  @js.native
   trait SortFields extends StObject {
     
-    var field: js.Array[FieldName] = js.native
+    var field: js.Array[FieldName]
     
-    var order: js.UndefOr[js.Array[SortOrder]] = js.native
+    var order: js.UndefOr[js.Array[SortOrder]] = js.undefined
   }
   object SortFields {
     
@@ -295,7 +298,9 @@ object sortMod {
     - typings.vegaLite.vegaLiteStrings.ascending
     - typings.vegaLite.vegaLiteStrings.descending
   */
-  trait SortOrder extends AllSortString
+  trait SortOrder
+    extends StObject
+       with AllSortString
   object SortOrder {
     
     @scala.inline

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationStatus extends StObject {
   
   /** Describes the replication status of a SecretVersion with automatic replication. Only populated if the parent Secret has an automatic replication policy. */
-  var automatic: js.UndefOr[AutomaticStatus] = js.native
+  var automatic: js.UndefOr[AutomaticStatus] = js.undefined
   
   /** Describes the replication status of a SecretVersion with user-managed replication. Only populated if the parent Secret has a user-managed replication policy. */
-  var userManaged: js.UndefOr[UserManagedStatus] = js.native
+  var userManaged: js.UndefOr[UserManagedStatus] = js.undefined
 }
 object ReplicationStatus {
   

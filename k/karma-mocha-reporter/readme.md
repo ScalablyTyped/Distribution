@@ -11,8 +11,8 @@ Karma reporter with mocha style logging.
 | Full name          | karma-mocha-reporter |
 | Keywords           | karma-plugin, karma-reporter, mocha, chai, diff, symbols |
 | # releases         | 0 |
-| # dependents       | 189 |
-| # downloads        | 12272758 |
+| # dependents       | 187 |
+| # downloads        | 12779352 |
 | # stars            | 24 |
 
 ## Links

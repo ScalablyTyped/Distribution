@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,17 +17,27 @@ sealed trait ConditionalTopBottomCriterionType extends StObject
 object ConditionalTopBottomCriterionType extends StObject {
   
   @js.native
-  sealed trait bottomItems extends ConditionalTopBottomCriterionType
+  sealed trait bottomItems
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
   @js.native
-  sealed trait bottomPercent extends ConditionalTopBottomCriterionType
+  sealed trait bottomPercent
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
   @js.native
-  sealed trait invalid extends ConditionalTopBottomCriterionType
+  sealed trait invalid
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
   @js.native
-  sealed trait topItems extends ConditionalTopBottomCriterionType
+  sealed trait topItems
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
   @js.native
-  sealed trait topPercent extends ConditionalTopBottomCriterionType
+  sealed trait topPercent
+    extends StObject
+       with ConditionalTopBottomCriterionType
 }

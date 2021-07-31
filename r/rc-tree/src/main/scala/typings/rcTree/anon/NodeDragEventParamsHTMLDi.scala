@@ -6,18 +6,16 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined rc-tree.rc-tree/es/contextTypes.NodeDragEventParams<std.HTMLDivElement> & {  expandedKeys :std.Array<rc-tree.rc-tree/es/interface.Key>} */
-@js.native
 trait NodeDragEventParamsHTMLDi extends StObject {
   
-  var event: MouseEvent[HTMLDivElement, NativeMouseEvent] = js.native
+  var event: MouseEvent[HTMLDivElement, NativeMouseEvent]
   
-  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key] = js.native
+  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var node: EventDataNode = js.native
+  var node: EventDataNode
 }
 object NodeDragEventParamsHTMLDi {
   

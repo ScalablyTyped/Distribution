@@ -9,11 +9,11 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleRNNLayerArgs extends BaseRNNLayerArgs {
+trait SimpleRNNLayerArgs
+  extends StObject
+     with BaseRNNLayerArgs {
   
   /**
     * Activation function to use.
@@ -22,76 +22,76 @@ trait SimpleRNNLayerArgs extends BaseRNNLayerArgs {
     *
     * If you pass `null`, no activation will be applied.
     */
-  var activation: js.UndefOr[ActivationIdentifier] = js.native
+  var activation: js.UndefOr[ActivationIdentifier] = js.undefined
   
   /**
     * Constraint function applied to the bias vector.
     */
-  var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+  var biasConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
   
   /**
     * Initializer for the bias vector.
     */
-  var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+  var biasInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
   
   /**
     * Regularizer function applied to the bias vector.
     */
-  var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var biasRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /**
     * Number between 0 and 1. Fraction of the units to drop for the linear
     * transformation of the inputs.
     */
-  var dropout: js.UndefOr[Double] = js.native
+  var dropout: js.UndefOr[Double] = js.undefined
   
   /**
     * Constraint function applied to the kernel weights matrix.
     */
-  var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+  var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
   
   /**
     * Initializer for the `kernel` weights matrix, used for the linear
     * transformation of the inputs.
     */
-  var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+  var kernelInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
   
   /**
     * Regularizer function applied to the kernel weights matrix.
     */
-  var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var kernelRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /**
     * Constraint function applied to the recurrentKernel weights matrix.
     */
-  var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+  var recurrentConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
   
   /**
     * Number between 0 and 1. Fraction of the units to drop for the linear
     * transformation of the recurrent state.
     */
-  var recurrentDropout: js.UndefOr[Double] = js.native
+  var recurrentDropout: js.UndefOr[Double] = js.undefined
   
   /**
     * Initializer for the `recurrentKernel` weights matrix, used for
     * linear transformation of the recurrent state.
     */
-  var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+  var recurrentInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
   
   /**
     * Regularizer function applied to the recurrentKernel weights matrix.
     */
-  var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+  var recurrentRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
   
   /**
     * Positive integer, dimensionality of the output space.
     */
-  var units: Double = js.native
+  var units: Double
   
   /**
     * Whether the layer uses a bias vector.
     */
-  var useBias: js.UndefOr[Boolean] = js.native
+  var useBias: js.UndefOr[Boolean] = js.undefined
 }
 object SimpleRNNLayerArgs {
   

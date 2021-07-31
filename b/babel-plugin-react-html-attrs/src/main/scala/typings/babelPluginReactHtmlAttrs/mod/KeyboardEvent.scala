@@ -3,41 +3,41 @@ package typings.babelPluginReactHtmlAttrs.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyboardEvent[T] extends BaseSyntheticEvent[NativeKeyboardEvent, EventTarget with T, EventTarget] {
+trait KeyboardEvent[T]
+  extends StObject
+     with BaseSyntheticEvent[NativeKeyboardEvent, EventTarget & T, EventTarget] {
   
-  var altKey: Boolean = js.native
+  var altKey: Boolean
   
-  var charCode: Double = js.native
+  var charCode: Double
   
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean = js.native
+  def getModifierState(key: String): Boolean
   
   /**
     * See the [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#named-key-attribute-values). for possible values
     */
-  var key: String = js.native
+  var key: String
   
-  var keyCode: Double = js.native
+  var keyCode: Double
   
-  var locale: String = js.native
+  var locale: String
   
-  var location: Double = js.native
+  var location: Double
   
-  var metaKey: Boolean = js.native
+  var metaKey: Boolean
   
-  var repeat: Boolean = js.native
+  var repeat: Boolean
   
-  var shiftKey: Boolean = js.native
+  var shiftKey: Boolean
   
-  var which: Double = js.native
+  var which: Double
 }
 object KeyboardEvent {
   
@@ -48,7 +48,7 @@ object KeyboardEvent {
     cancelable: Boolean,
     charCode: Double,
     ctrlKey: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     eventPhase: Double,
     getModifierState: String => Boolean,
@@ -77,7 +77,7 @@ object KeyboardEvent {
   }
   
   @scala.inline
-  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent[_], T] (val x: Self with KeyboardEvent[T]) extends AnyVal {
+  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent[?], T] (val x: Self & KeyboardEvent[T]) extends AnyVal {
     
     @scala.inline
     def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])

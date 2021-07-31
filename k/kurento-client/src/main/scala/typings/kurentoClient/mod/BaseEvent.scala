@@ -2,21 +2,19 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseEvent[T /* <: String */] extends StObject {
   
-  var source: String = js.native
+  var source: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object BaseEvent {
   
@@ -28,7 +26,7 @@ object BaseEvent {
   }
   
   @scala.inline
-  implicit class BaseEventMutableBuilder[Self <: BaseEvent[_], T /* <: String */] (val x: Self with BaseEvent[T]) extends AnyVal {
+  implicit class BaseEventMutableBuilder[Self <: BaseEvent[?], T /* <: String */] (val x: Self & BaseEvent[T]) extends AnyVal {
     
     @scala.inline
     def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])

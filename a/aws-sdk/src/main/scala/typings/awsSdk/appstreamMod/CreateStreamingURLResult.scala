@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamingURLResult extends StObject {
   
   /**
     * The elapsed time, in seconds after the Unix epoch, when this URL expires.
     */
-  var Expires: js.UndefOr[Timestamp] = js.native
+  var Expires: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The URL to start the AppStream 2.0 streaming session.
     */
-  var StreamingURL: js.UndefOr[String] = js.native
+  var StreamingURL: js.UndefOr[String] = js.undefined
 }
 object CreateStreamingURLResult {
   

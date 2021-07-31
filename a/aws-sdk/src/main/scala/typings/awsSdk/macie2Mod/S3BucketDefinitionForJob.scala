@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3BucketDefinitionForJob extends StObject {
   
   /**
     * The unique identifier for the AWS account that owns the buckets. If you specify this value and don't specify a value for the buckets array, the job analyzes objects in all the buckets that are owned by the account and meet other conditions specified for the job.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * An array that lists the names of the buckets.
     */
-  var buckets: js.UndefOr[listOfString] = js.native
+  var buckets: js.UndefOr[listOfString] = js.undefined
 }
 object S3BucketDefinitionForJob {
   

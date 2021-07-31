@@ -2,22 +2,20 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLCanvasElement extends StObject {
   
   @JSName("MSHTML.IHTMLCanvasElement_typekey")
-  var MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement = js.native
+  var MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement
   
-  def getContext(contextId: String): ICanvasRenderingContext2D = js.native
+  def getContext(contextId: String): ICanvasRenderingContext2D
   
-  var height: Double = js.native
+  var height: Double
   
-  def toDataURL(`type`: String, jpegquality: js.Any): String = js.native
+  def toDataURL(`type`: String, jpegquality: js.Any): String
   
-  var width: Double = js.native
+  var width: Double
 }
 object IHTMLCanvasElement {
   

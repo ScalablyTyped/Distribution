@@ -4,15 +4,13 @@ import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import typings.firefoxWebextBrowser.browser.manifest.PersistentBackgroundProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  var page: ExtensionURL = js.native
+  var page: ExtensionURL
   
-  var persistent: js.UndefOr[PersistentBackgroundProperty] = js.native
+  var persistent: js.UndefOr[PersistentBackgroundProperty] = js.undefined
 }
 object Page {
   

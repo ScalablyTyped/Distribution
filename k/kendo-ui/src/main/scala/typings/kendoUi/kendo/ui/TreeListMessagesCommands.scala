@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListMessagesCommands extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var canceledit: js.UndefOr[String] = js.native
+  var canceledit: js.UndefOr[String] = js.undefined
   
-  var create: js.UndefOr[String] = js.native
+  var create: js.UndefOr[String] = js.undefined
   
-  var createchild: js.UndefOr[String] = js.native
+  var createchild: js.UndefOr[String] = js.undefined
   
-  var destroy: js.UndefOr[String] = js.native
+  var destroy: js.UndefOr[String] = js.undefined
   
-  var edit: js.UndefOr[String] = js.native
+  var edit: js.UndefOr[String] = js.undefined
   
-  var excel: js.UndefOr[String] = js.native
+  var excel: js.UndefOr[String] = js.undefined
   
-  var pdf: js.UndefOr[String] = js.native
+  var pdf: js.UndefOr[String] = js.undefined
   
-  var save: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.undefined
   
-  var update: js.UndefOr[String] = js.native
+  var update: js.UndefOr[String] = js.undefined
 }
 object TreeListMessagesCommands {
   

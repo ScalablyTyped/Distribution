@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryFilter extends StObject {
   
   /**
     * Used to limit data to that which has arrived since the last execution of the action.
     */
-  var deltaTime: js.UndefOr[DeltaTime] = js.native
+  var deltaTime: js.UndefOr[DeltaTime] = js.undefined
 }
 object QueryFilter {
   

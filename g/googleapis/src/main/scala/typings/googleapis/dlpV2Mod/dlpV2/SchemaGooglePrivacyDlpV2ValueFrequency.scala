@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A value of a field, including its frequency.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ValueFrequency extends StObject {
   
   /**
     * How many times the value is contained in the field.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * A value contained in the field in question.
     */
-  var value: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var value: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ValueFrequency {
   

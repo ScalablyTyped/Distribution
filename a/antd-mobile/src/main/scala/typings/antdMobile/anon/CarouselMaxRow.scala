@@ -2,25 +2,23 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarouselMaxRow extends StObject {
   
-  var carouselMaxRow: Double = js.native
+  var carouselMaxRow: Double
   
-  var columnNum: Double = js.native
+  var columnNum: Double
   
-  var data: js.Array[scala.Nothing] = js.native
+  var data: js.Array[scala.Nothing]
   
-  var hasLine: Boolean = js.native
+  var hasLine: Boolean
   
-  var isCarousel: Boolean = js.native
+  var isCarousel: Boolean
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var square: Boolean = js.native
+  var square: Boolean
 }
 object CarouselMaxRow {
   

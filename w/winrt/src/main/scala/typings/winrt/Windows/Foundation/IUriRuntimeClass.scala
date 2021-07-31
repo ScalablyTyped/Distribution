@@ -2,45 +2,43 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUriRuntimeClass extends StObject {
   
-  var absoluteUri: String = js.native
+  var absoluteUri: String
   
-  def combineUri(relativeUri: String): Uri = js.native
+  def combineUri(relativeUri: String): Uri
   
-  var displayUri: String = js.native
+  var displayUri: String
   
-  var domain: String = js.native
+  var domain: String
   
-  def equals(pUri: Uri): Boolean = js.native
+  def equals(pUri: Uri): Boolean
   
-  var extension: String = js.native
+  var `extension`: String
   
-  var fragment: String = js.native
+  var fragment: String
   
-  var host: String = js.native
+  var host: String
   
-  var password: String = js.native
+  var password: String
   
-  var path: String = js.native
+  var path: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var query: String = js.native
+  var query: String
   
-  var queryParsed: WwwFormUrlDecoder = js.native
+  var queryParsed: WwwFormUrlDecoder
   
-  var rawUri: String = js.native
+  var rawUri: String
   
-  var schemeName: String = js.native
+  var schemeName: String
   
-  var suspicious: Boolean = js.native
+  var suspicious: Boolean
   
-  var userName: String = js.native
+  var userName: String
 }
 object IUriRuntimeClass {
   
@@ -51,7 +49,7 @@ object IUriRuntimeClass {
     displayUri: String,
     domain: String,
     equals_ : Uri => Boolean,
-    extension: String,
+    `extension`: String,
     fragment: String,
     host: String,
     password: String,
@@ -64,8 +62,9 @@ object IUriRuntimeClass {
     suspicious: Boolean,
     userName: String
   ): IUriRuntimeClass = {
-    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUriRuntimeClass]
   }
   

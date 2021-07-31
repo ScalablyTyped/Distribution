@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketLifecycleOutput extends StObject {
   
   /**
     * Container for a lifecycle rule.
     */
-  var Rules: js.UndefOr[typings.awsSdk.s3Mod.Rules] = js.native
+  var Rules: js.UndefOr[typings.awsSdk.s3Mod.Rules] = js.undefined
 }
 object GetBucketLifecycleOutput {
   

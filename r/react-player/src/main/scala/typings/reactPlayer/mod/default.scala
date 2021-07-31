@@ -2,7 +2,6 @@ package typings.reactPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-player", JSImport.Default)
@@ -11,19 +10,19 @@ class default () extends ReactPlayer
 /* static members */
 object default {
   
-  @JSImport("react-player", "default.addCustomPlayer")
+  @JSImport("react-player", JSImport.Default)
   @js.native
-  def addCustomPlayer(player: ReactPlayer): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-player", "default.canEnablePIP")
-  @js.native
-  def canEnablePIP(url: String): Boolean = js.native
+  @scala.inline
+  def addCustomPlayer(player: ReactPlayer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomPlayer")(player.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-player", "default.canPlay")
-  @js.native
-  def canPlay(url: String): Boolean = js.native
+  @scala.inline
+  def canEnablePIP(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canEnablePIP")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-player", "default.removeCustomPlayers")
-  @js.native
-  def removeCustomPlayers(): Unit = js.native
+  @scala.inline
+  def canPlay(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canPlay")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def removeCustomPlayers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustomPlayers")().asInstanceOf[Unit]
 }

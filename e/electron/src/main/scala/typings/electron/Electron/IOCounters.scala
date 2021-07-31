@@ -2,42 +2,40 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCounters extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/io-counters
   /**
     * Then number of I/O other operations.
     */
-  var otherOperationCount: Double = js.native
+  var otherOperationCount: Double
   
   /**
     * Then number of I/O other transfers.
     */
-  var otherTransferCount: Double = js.native
+  var otherTransferCount: Double
   
   /**
     * The number of I/O read operations.
     */
-  var readOperationCount: Double = js.native
+  var readOperationCount: Double
   
   /**
     * The number of I/O read transfers.
     */
-  var readTransferCount: Double = js.native
+  var readTransferCount: Double
   
   /**
     * The number of I/O write operations.
     */
-  var writeOperationCount: Double = js.native
+  var writeOperationCount: Double
   
   /**
     * The number of I/O write transfers.
     */
-  var writeTransferCount: Double = js.native
+  var writeTransferCount: Double
 }
 object IOCounters {
   

@@ -15,7 +15,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogflowDialogflowMod {
@@ -39,7 +38,9 @@ object dialogflowDialogflowMod {
   }
   
   @js.native
-  trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] extends ConversationApp[TConvData, TUserStorage] {
+  trait DialogflowApp[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */]
+    extends StObject
+       with ConversationApp[TConvData, TUserStorage] {
     
     /** @hidden */
     var _handlers: DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation] = js.native
@@ -187,16 +188,42 @@ object dialogflowDialogflowMod {
     var verification: js.UndefOr[DialogflowVerification | DialogflowVerificationHeaders] = js.native
   }
   
-  @js.native
   trait DialogflowHandlers[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] extends StObject {
     
-    def catcher(conv: TConversation, error: Error): js.Promise[_] | js.Any = js.native
+    def catcher(conv: TConversation, error: Error): js.Promise[js.Any] | js.Any
     @JSName("catcher")
-    var catcher_Original: ExceptionHandler[TUserStorage, TConversation] = js.native
+    var catcher_Original: ExceptionHandler[TUserStorage, TConversation]
     
-    var fallback: js.UndefOr[js.Function | String] = js.native
+    var fallback: js.UndefOr[js.Function | String] = js.undefined
     
-    var intents: DialogflowIntentHandlers = js.native
+    var intents: DialogflowIntentHandlers
+  }
+  object DialogflowHandlers {
+    
+    @scala.inline
+    def apply[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](
+      catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
+      intents: DialogflowIntentHandlers
+    ): DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation] = {
+      val __obj = js.Dynamic.literal(catcher = js.Any.fromFunction2(catcher), intents = intents.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation]]
+    }
+    
+    @scala.inline
+    implicit class DialogflowHandlersMutableBuilder[Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] (val x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) extends AnyVal {
+      
+      @scala.inline
+      def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFallback(value: js.Function | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
+      @scala.inline
+      def setIntents(value: DialogflowIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    }
   }
   
   type DialogflowIntentHandler[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */, TParameters /* <: Parameters */, TArgument /* <: Argument */] = js.Function4[
@@ -212,13 +239,14 @@ object dialogflowDialogflowMod {
   type DialogflowMiddleware[TConversationPlugin /* <: DialogflowConversation[JsonObject, JsonObject, Contexts] */] = js.Function2[
     /* conv */ DialogflowConversation[JsonObject, JsonObject, Contexts], 
     /* framework */ BuiltinFrameworkMetadata, 
-    ((DialogflowConversation[JsonObject, JsonObject, Contexts]) with TConversationPlugin) | Unit | (js.Promise[
-      ((DialogflowConversation[JsonObject, JsonObject, Contexts]) with TConversationPlugin) | Unit
+    ((DialogflowConversation[JsonObject, JsonObject, Contexts]) & TConversationPlugin) | Unit | (js.Promise[
+      ((DialogflowConversation[JsonObject, JsonObject, Contexts]) & TConversationPlugin) | Unit
     ])
   ]
   
-  @js.native
-  trait DialogflowOptions[TConvData, TUserStorage] extends ConversationAppOptions[TConvData, TUserStorage] {
+  trait DialogflowOptions[TConvData, TUserStorage]
+    extends StObject
+       with ConversationAppOptions[TConvData, TUserStorage] {
     
     /**
       * Verifies whether the request comes from Dialogflow.
@@ -229,7 +257,7 @@ object dialogflowDialogflowMod {
       *
       * @public
       */
-    var verification: js.UndefOr[DialogflowVerification | DialogflowVerificationHeaders] = js.native
+    var verification: js.UndefOr[DialogflowVerification | DialogflowVerificationHeaders] = js.undefined
   }
   object DialogflowOptions {
     
@@ -240,7 +268,7 @@ object dialogflowDialogflowMod {
     }
     
     @scala.inline
-    implicit class DialogflowOptionsMutableBuilder[Self <: DialogflowOptions[_, _], TConvData, TUserStorage] (val x: Self with (DialogflowOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class DialogflowOptionsMutableBuilder[Self <: DialogflowOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setVerification(value: DialogflowVerification | DialogflowVerificationHeaders): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
@@ -250,7 +278,6 @@ object dialogflowDialogflowMod {
     }
   }
   
-  @js.native
   trait DialogflowVerification extends StObject {
     
     /**
@@ -260,19 +287,19 @@ object dialogflowDialogflowMod {
       * The message will get sent back in the JSON top level `error` property.
       * @public
       */
-    var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.native
+    var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.undefined
     
     /**
       * An object representing the header key to value map to check against,
       * @public
       */
-    var headers: DialogflowVerificationHeaders = js.native
+    var headers: DialogflowVerificationHeaders
     
     /**
       * Custom status code to return on verification error.
       * @public
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object DialogflowVerification {
     
@@ -315,7 +342,7 @@ object dialogflowDialogflowMod {
   trait Dialogflow_ extends StObject {
     
     /** @public */
-    def apply[TConversation /* <: DialogflowConversation[js.Object, js.Object, Contexts] */](): AppHandler with (DialogflowApp[js.Object, js.Object, Contexts, TConversation]) = js.native
-    def apply[TConversation /* <: DialogflowConversation[js.Object, js.Object, Contexts] */](options: DialogflowOptions[js.Object, js.Object]): AppHandler with (DialogflowApp[js.Object, js.Object, Contexts, TConversation]) = js.native
+    def apply[TConversation /* <: DialogflowConversation[js.Object, js.Object, Contexts] */](): AppHandler & (DialogflowApp[js.Object, js.Object, Contexts, TConversation]) = js.native
+    def apply[TConversation /* <: DialogflowConversation[js.Object, js.Object, Contexts] */](options: DialogflowOptions[js.Object, js.Object]): AppHandler & (DialogflowApp[js.Object, js.Object, Contexts, TConversation]) = js.native
   }
 }

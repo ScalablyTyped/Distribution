@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWindowsDeviceAccountActionParameter extends StObject {
   
   // Not yet documented
-  var calendarSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var calendarSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Not yet documented
-  var deviceAccount: js.UndefOr[NullableOption[WindowsDeviceAccount]] = js.native
+  var deviceAccount: js.UndefOr[NullableOption[WindowsDeviceAccount]] = js.undefined
   
   // Not yet documented
-  var deviceAccountEmail: js.UndefOr[NullableOption[String]] = js.native
+  var deviceAccountEmail: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var exchangeServer: js.UndefOr[NullableOption[String]] = js.native
+  var exchangeServer: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var passwordRotationEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var passwordRotationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Not yet documented
-  var sessionInitiationProtocalAddress: js.UndefOr[NullableOption[String]] = js.native
+  var sessionInitiationProtocalAddress: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UpdateWindowsDeviceAccountActionParameter {
   

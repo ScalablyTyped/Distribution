@@ -3,19 +3,17 @@ package typings.ioredis.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
-  var args: js.Array[ValueType] = js.native
+  var args: js.Array[ValueType]
   
-  def getKeys(): js.Array[String | Buffer] = js.native
+  def getKeys(): js.Array[String | Buffer]
   
-  def getSlot(): Double | Null = js.native
+  def getSlot(): Double | Null
   
-  var isCustomCommand: Boolean = js.native
+  var isCustomCommand: Boolean
 }
 object Command {
   

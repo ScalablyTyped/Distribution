@@ -7,16 +7,15 @@ import typings.antd.antdStrings.small
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonInputMod {
   
   object default {
     
-    @JSImport("antd/lib/skeleton/Input", JSImport.Default)
-    @js.native
-    def apply(props: SkeletonInputProps): Element = js.native
+    @scala.inline
+    def apply(props: SkeletonInputProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/skeleton/Input", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -29,18 +28,17 @@ object skeletonInputMod {
   }
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape'> */
-  @js.native
   trait SkeletonInputProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small | default] = js.native
+    var size: js.UndefOr[large | small | default] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SkeletonInputProps {
     

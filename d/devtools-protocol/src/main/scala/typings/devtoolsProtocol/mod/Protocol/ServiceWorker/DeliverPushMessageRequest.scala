@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliverPushMessageRequest extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var origin: String = js.native
+  var origin: String
   
-  var registrationId: RegistrationID = js.native
+  var registrationId: RegistrationID
 }
 object DeliverPushMessageRequest {
   

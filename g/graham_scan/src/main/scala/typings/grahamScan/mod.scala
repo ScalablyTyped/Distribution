@@ -3,21 +3,28 @@ package typings.grahamScan
 import typings.grahamScan.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("graham_scan", JSImport.Namespace)
   @js.native
-  class ^ () extends ConvexHullGrahamScan
+  class ^ ()
+    extends StObject
+       with ConvexHullGrahamScan {
+    
+    /* CompleteClass */
+    override def addPoint(x: Double, y: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def getHull(): js.Array[X] = js.native
+  }
   
-  @js.native
   trait ConvexHullGrahamScan extends StObject {
     
-    def addPoint(x: Double, y: Double): Unit = js.native
+    def addPoint(x: Double, y: Double): Unit
     
-    def getHull(): js.Array[X] = js.native
+    def getHull(): js.Array[X]
   }
   object ConvexHullGrahamScan {
     

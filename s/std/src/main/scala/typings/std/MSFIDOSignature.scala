@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSFIDOSignature extends StObject {
   
-  val authnrData: java.lang.String = js.native
+  val authnrData: java.lang.String
   
-  val clientData: java.lang.String = js.native
+  val clientData: java.lang.String
   
-  val signature: java.lang.String = js.native
+  val signature: java.lang.String
 }
 object MSFIDOSignature {
   

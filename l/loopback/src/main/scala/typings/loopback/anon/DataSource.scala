@@ -2,17 +2,15 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
-  var dataSource: String | js.Any = js.native
+  var dataSource: String | js.Any
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
-  var relations: js.UndefOr[js.Any] = js.native
+  var relations: js.UndefOr[js.Any] = js.undefined
 }
 object DataSource {
   

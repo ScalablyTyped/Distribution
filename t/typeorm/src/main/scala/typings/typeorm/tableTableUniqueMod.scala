@@ -4,7 +4,6 @@ import typings.typeorm.metadataUniqueMetadataMod.UniqueMetadata
 import typings.typeorm.optionsTableUniqueOptionsMod.TableUniqueOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableTableUniqueMod {
@@ -27,11 +26,14 @@ object tableTableUniqueMod {
   /* static members */
   object TableUnique {
     
+    @JSImport("typeorm/schema-builder/table/TableUnique", "TableUnique")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates unique from the unique metadata object.
       */
-    @JSImport("typeorm/schema-builder/table/TableUnique", "TableUnique.create")
-    @js.native
-    def create(uniqueMetadata: UniqueMetadata): TableUnique = js.native
+    @scala.inline
+    def create(uniqueMetadata: UniqueMetadata): TableUnique = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uniqueMetadata.asInstanceOf[js.Any]).asInstanceOf[TableUnique]
   }
 }

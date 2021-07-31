@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollBar extends Control {
+trait ScrollBar
+  extends StObject
+     with Control {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>scroll</code> event of this

@@ -9,7 +9,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -17,12 +16,11 @@ object buttonMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeProps> & {  serialize :(): undefined,   deserialize :(): undefined} */
   object default {
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Button", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[ButtonTypeProps]): ReactElement | Null = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Button", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[ButtonTypeProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[ButtonTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[ButtonTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -41,9 +39,9 @@ object buttonMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", "default.deserialize")
     @js.native
-    def deserialize: js.Function0[js.UndefOr[scala.Nothing]] = js.native
+    def deserialize: js.Function0[Unit] = js.native
     @scala.inline
-    def deserialize_=(x: js.Function0[js.UndefOr[scala.Nothing]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    def deserialize_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", "default.displayName")
     @js.native
@@ -59,23 +57,23 @@ object buttonMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", "default.serialize")
     @js.native
-    def serialize: js.Function0[js.UndefOr[scala.Nothing]] = js.native
+    def serialize: js.Function0[Unit] = js.native
     @scala.inline
-    def serialize_=(x: js.Function0[js.UndefOr[scala.Nothing]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    def serialize_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
   type ButtonTypeKnob = KnobControlConfig[scala.Nothing]
   
   type ButtonTypeOnClickProp = js.Function1[/* knob */ ButtonTypeKnob, js.Any]
   
-  @js.native
   trait ButtonTypeProps
-    extends KnobControlProps[scala.Nothing] {
+    extends StObject
+       with KnobControlProps[scala.Nothing] {
     
     @JSName("knob")
-    var knob_ButtonTypeProps: ButtonTypeKnob = js.native
+    var knob_ButtonTypeProps: ButtonTypeKnob
     
-    var onClick: ButtonTypeOnClickProp = js.native
+    var onClick: ButtonTypeOnClickProp
   }
   object ButtonTypeProps {
     

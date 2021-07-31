@@ -3,10 +3,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealtimeLogManager extends StObject {
   
   /** [RealtimeLogManager.addFilterMsg(string msg)](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.addFilterMsg.html)
@@ -15,7 +13,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.8.1` */
   def addFilterMsg(/** 是setFilterMsg的添加接口。用于设置多个过滤关键字。 */
-  msg: String): Unit = js.native
+  msg: String): Unit
   
   /** [RealtimeLogManager.error()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.error.html)
     *
@@ -23,7 +21,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.7.1` */
   def error(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过5Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
   
   /** [RealtimeLogManager.in(Page pageInstance)](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.in.html)
     *
@@ -31,7 +29,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.9.1` */
   def in(/** page实例 */
-  pageInstance: TrivialInstance): Unit = js.native
+  pageInstance: TrivialInstance): Unit
   
   /** [RealtimeLogManager.info()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.info.html)
     *
@@ -39,7 +37,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.7.1` */
   def info(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过5Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
   
   /** [RealtimeLogManager.setFilterMsg(string msg)](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.setFilterMsg.html)
     *
@@ -47,7 +45,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.7.3` */
   def setFilterMsg(/** 过滤关键字，最多不超过1Kb，可以在小程序管理后台根据设置的内容搜索得到对应的日志。 */
-  msg: String): Unit = js.native
+  msg: String): Unit
   
   /** [RealtimeLogManager.warn()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/RealtimeLogManager.warn.html)
     *
@@ -55,7 +53,7 @@ trait RealtimeLogManager extends StObject {
     *
     * 最低基础库： `2.7.1` */
   def warn(/** 日志内容，可以有任意多个。每次调用的参数的总大小不超过5Kb */
-  args: js.Any*): Unit = js.native
+  args: js.Any*): Unit
 }
 object RealtimeLogManager {
   

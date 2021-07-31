@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XDictionaryListEventListener
   * @see com.sun.star.lang.EventObject
   */
-@js.native
-trait DictionaryListEvent extends EventObject {
+trait DictionaryListEvent
+  extends StObject
+     with EventObject {
   
   /**
     * list of accumulated dictionary events.
@@ -29,7 +29,7 @@ trait DictionaryListEvent extends EventObject {
     * com.sun.star.linguistic2.DictionaryListEvent.nCondensedEvent()} .
     * @see com.sun.star.linguistic2.DictionaryEvent
     */
-  var aDictionaryEvents: SafeArray[DictionaryEvent] = js.native
+  var aDictionaryEvents: SafeArray[DictionaryEvent]
   
   /**
     * the combined type of the accumulated events.
@@ -37,7 +37,7 @@ trait DictionaryListEvent extends EventObject {
     * The value can be the combination of multiple {@link com.sun.star.linguistic2.DictionaryListEventFlags} by applying the logical OR to them.
     * @see com.sun.star.linguistic2.DictionaryListEventFlags
     */
-  var nCondensedEvent: Double = js.native
+  var nCondensedEvent: Double
 }
 object DictionaryListEvent {
   

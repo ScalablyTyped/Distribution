@@ -2,24 +2,22 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A range of values whose location is specified by a DataFilter.
   */
-@js.native
 trait SchemaDataFilterValueRange extends StObject {
   
   /**
     * The data filter describing the location of the values in the spreadsheet.
     */
-  var dataFilter: js.UndefOr[SchemaDataFilter] = js.native
+  var dataFilter: js.UndefOr[SchemaDataFilter] = js.undefined
   
   /**
     * The major dimension of the values.
     */
-  var majorDimension: js.UndefOr[String] = js.native
+  var majorDimension: js.UndefOr[String] = js.undefined
   
   /**
     * The data to be written.  If the provided values exceed any of the ranges
@@ -27,7 +25,7 @@ trait SchemaDataFilterValueRange extends StObject {
     * values are less than the matched ranges only the specified values will be
     * written, existing values in the matched ranges will remain unaffected.
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object SchemaDataFilterValueRange {
   
@@ -53,7 +51,7 @@ object SchemaDataFilterValueRange {
     def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

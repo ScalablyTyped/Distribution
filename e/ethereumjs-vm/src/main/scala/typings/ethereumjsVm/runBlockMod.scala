@@ -6,48 +6,49 @@ import typings.ethereumjsVm.runTxMod.RunTxResult
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runBlockMod {
   
-  @JSImport("ethereumjs-vm/dist/runBlock", JSImport.Default)
+  @JSImport("ethereumjs-vm/dist/runBlock", JSImport.Namespace)
   @js.native
-  def default(opts: RunBlockOpts): js.Promise[RunBlockResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(opts: RunBlockOpts): js.Promise[RunBlockResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunBlockResult]]
+  
   trait RunBlockOpts extends StObject {
     
     /**
       * The [`Block`](https://github.com/ethereumjs/ethereumjs-block) to process
       */
-    var block: js.Any = js.native
+    var block: js.Any
     
     /**
       * Whether to generate the stateRoot. If false `runBlock` will check the
       * stateRoot of the block against the Trie
       */
-    var generate: js.UndefOr[Boolean] = js.native
+    var generate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Root of the state trie
       */
-    var root: js.UndefOr[Buffer] = js.native
+    var root: js.UndefOr[Buffer] = js.undefined
     
     /**
       * If true, skips the balance check
       */
-    var skipBalance: js.UndefOr[Boolean] = js.native
+    var skipBalance: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, will skip block validation
       */
-    var skipBlockValidation: js.UndefOr[Boolean] = js.native
+    var skipBlockValidation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, skips the nonce check
       */
-    var skipNonce: js.UndefOr[Boolean] = js.native
+    var skipNonce: js.UndefOr[Boolean] = js.undefined
   }
   object RunBlockOpts {
     
@@ -95,18 +96,17 @@ object runBlockMod {
     }
   }
   
-  @js.native
   trait RunBlockResult extends StObject {
     
     /**
       * Receipts generated for transactions in the block
       */
-    var receipts: js.Array[TxReceipt] = js.native
+    var receipts: js.Array[TxReceipt]
     
     /**
       * Results of executing the transactions in the block
       */
-    var results: js.Array[RunTxResult] = js.native
+    var results: js.Array[RunTxResult]
   }
   object RunBlockResult {
     
@@ -133,33 +133,32 @@ object runBlockMod {
     }
   }
   
-  @js.native
   trait TxReceipt extends StObject {
     
     /**
       * Bloom bitvector
       */
-    var bitvector: Buffer = js.native
+    var bitvector: Buffer
     
     /**
       * Gas used
       */
-    var gasUsed: Buffer = js.native
+    var gasUsed: Buffer
     
     /**
       * Logs emitted
       */
-    var logs: js.Array[_] = js.native
+    var logs: js.Array[js.Any]
     
     /**
       * Status of transaction, `1` if successful, `0` if an exception occured
       */
-    var status: `0` | `1` = js.native
+    var status: `0` | `1`
   }
   object TxReceipt {
     
     @scala.inline
-    def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[_], status: `0` | `1`): TxReceipt = {
+    def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[js.Any], status: `0` | `1`): TxReceipt = {
       val __obj = js.Dynamic.literal(bitvector = bitvector.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TxReceipt]
     }
@@ -174,7 +173,7 @@ object runBlockMod {
       def setGasUsed(value: Buffer): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLogs(value: js.Array[_]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))

@@ -4,26 +4,24 @@ import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.Pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lnglat[I] extends StObject {
   
   /**
     * 经纬度坐标
     */
-  var lnglat: LngLat = js.native
+  var lnglat: LngLat
   
   /**
     * 像素坐标
     */
-  var pixel: Pixel = js.native
+  var pixel: Pixel
   
   /**
     * 触发对象
     */
-  var target: I = js.native
+  var target: I
 }
 object Lnglat {
   
@@ -34,7 +32,7 @@ object Lnglat {
   }
   
   @scala.inline
-  implicit class LnglatMutableBuilder[Self <: Lnglat[_], I] (val x: Self with Lnglat[I]) extends AnyVal {
+  implicit class LnglatMutableBuilder[Self <: Lnglat[?], I] (val x: Self & Lnglat[I]) extends AnyVal {
     
     @scala.inline
     def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])

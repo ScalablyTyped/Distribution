@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminServicesOptions extends StObject {
   
-  var databaseFileInfoOptions: js.Array[ServiceOption] = js.native
+  var databaseFileInfoOptions: js.Array[ServiceOption]
   
-  var databaseInfoOptions: js.Array[ServiceOption] = js.native
+  var databaseInfoOptions: js.Array[ServiceOption]
   
-  var fileGroupInfoOptions: js.Array[ServiceOption] = js.native
+  var fileGroupInfoOptions: js.Array[ServiceOption]
 }
 object AdminServicesOptions {
   

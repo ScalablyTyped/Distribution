@@ -3,22 +3,21 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.stripeStrings.samsung_pay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamsungPayWallet
-  extends TokenizedWallet
+  extends StObject
+     with TokenizedWallet
      with CardWallet {
   
-  var `type`: samsung_pay = js.native
+  var `type`: samsung_pay
 }
 object SamsungPayWallet {
   
   @scala.inline
-  def apply(`type`: samsung_pay): SamsungPayWallet = {
+  def apply(): SamsungPayWallet = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("samsung_pay")
     __obj.asInstanceOf[SamsungPayWallet]
   }
   

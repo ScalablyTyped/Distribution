@@ -8,7 +8,6 @@ import typings.typescript.mod.TypeChecker
 import typings.typescript.mod.TypeReferenceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleWithProvidersCollectorMod {
@@ -31,20 +30,19 @@ object moduleWithProvidersCollectorMod {
     def visitNode(node: Node): Unit = js.native
   }
   
-  @js.native
   trait ResolvedNgModule extends StObject {
     
-    var decorator: NgDecorator = js.native
+    var decorator: NgDecorator
     
-    var name: String = js.native
+    var name: String
     
-    var node: ClassDeclaration = js.native
+    var node: ClassDeclaration
     
     /**
       * List of found static method declarations on the module which do not
       * declare an explicit return type.
       */
-    var staticMethodsWithoutType: js.Array[MethodDeclaration] = js.native
+    var staticMethodsWithoutType: js.Array[MethodDeclaration]
   }
   object ResolvedNgModule {
     

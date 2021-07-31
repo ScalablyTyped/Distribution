@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContinuousExportsRequest extends StObject {
   
   /**
     * The unique IDs assigned to the exports.
     */
-  var exportIds: js.UndefOr[ContinuousExportIds] = js.native
+  var exportIds: js.UndefOr[ContinuousExportIds] = js.undefined
   
   /**
     * A number between 1 and 100 specifying the maximum number of continuous export descriptions returned.
     */
-  var maxResults: js.UndefOr[DescribeContinuousExportsMaxResults] = js.native
+  var maxResults: js.UndefOr[DescribeContinuousExportsMaxResults] = js.undefined
   
   /**
     * The token from the previous call to DescribeExportTasks.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeContinuousExportsRequest {
   

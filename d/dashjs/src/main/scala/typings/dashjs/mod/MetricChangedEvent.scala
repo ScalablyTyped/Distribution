@@ -6,23 +6,23 @@ import typings.dashjs.dashjsStrings.metricChanged
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MetricChangedEvent extends Event {
+trait MetricChangedEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
   @JSName("type")
-  var type_MetricChangedEvent: metricChanged = js.native
+  var type_MetricChangedEvent: metricChanged
 }
 object MetricChangedEvent {
   
   @scala.inline
-  def apply(mediaType: video | audio | fragmentedText, `type`: metricChanged): MetricChangedEvent = {
+  def apply(mediaType: video | audio | fragmentedText): MetricChangedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("metricChanged")
     __obj.asInstanceOf[MetricChangedEvent]
   }
   

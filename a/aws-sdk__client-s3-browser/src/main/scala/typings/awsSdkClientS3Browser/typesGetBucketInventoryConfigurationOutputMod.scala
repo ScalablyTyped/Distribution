@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketInventoryConfigurationOutputMod {
   
-  @js.native
   trait GetBucketInventoryConfigurationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Specifies the inventory configuration.</p>
       */
-    var InventoryConfiguration: js.UndefOr[UnmarshalledInventoryConfiguration] = js.native
+    var InventoryConfiguration: js.UndefOr[UnmarshalledInventoryConfiguration] = js.undefined
   }
   object GetBucketInventoryConfigurationOutput {
     

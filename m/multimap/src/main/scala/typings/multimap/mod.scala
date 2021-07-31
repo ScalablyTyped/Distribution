@@ -3,14 +3,15 @@ package typings.multimap
 import typings.multimap.anon.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("multimap", JSImport.Namespace)
   @js.native
-  class ^ () extends Multimap {
+  class ^ ()
+    extends StObject
+       with Multimap {
     def this(iterable: js.Any) = this()
   }
   

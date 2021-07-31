@@ -5,38 +5,37 @@ import typings.typeorm.connectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.`react-native`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeConnectionOptionsMod {
   
-  @js.native
   trait ReactNativeConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Database name.
       */
-    val database: String = js.native
+    val database: String
     
     /**
       * Storage Location
       */
-    val location: String = js.native
+    val location: String
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_ReactNativeConnectionOptions: `react-native` = js.native
+    val type_ReactNativeConnectionOptions: `react-native`
   }
   object ReactNativeConnectionOptions {
     
     @scala.inline
-    def apply(database: String, location: String, `type`: `react-native`): ReactNativeConnectionOptions = {
+    def apply(database: String, location: String): ReactNativeConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("react-native")
       __obj.asInstanceOf[ReactNativeConnectionOptions]
     }
     

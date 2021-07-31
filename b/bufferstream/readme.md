@@ -12,7 +12,7 @@ painless stream buffering and cutting
 | Keywords           | buffer, buffers, stream, streams |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 125037 |
+| # downloads        | 109490 |
 | # stars            | 1 |
 
 ## Links

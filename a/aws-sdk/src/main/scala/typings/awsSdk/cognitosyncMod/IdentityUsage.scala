@@ -2,36 +2,34 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityUsage extends StObject {
   
   /**
     * Total data storage for this identity.
     */
-  var DataStorage: js.UndefOr[Long] = js.native
+  var DataStorage: js.UndefOr[Long] = js.undefined
   
   /**
     * Number of datasets for the identity.
     */
-  var DatasetCount: js.UndefOr[Integer] = js.native
+  var DatasetCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityId] = js.undefined
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityPoolId] = js.native
+  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityPoolId] = js.undefined
   
   /**
     * Date on which the identity was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
 }
 object IdentityUsage {
   

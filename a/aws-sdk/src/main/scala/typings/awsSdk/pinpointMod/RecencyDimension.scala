@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecencyDimension extends StObject {
   
   /**
     * The duration to use when determining whether an endpoint is active or inactive.
     */
-  var Duration: typings.awsSdk.pinpointMod.Duration = js.native
+  var Duration: typings.awsSdk.pinpointMod.Duration
   
   /**
     * The type of recency dimension to use for the segment. Valid values are: ACTIVE, endpoints that were active within the specified duration are included in the segment; and, INACTIVE, endpoints that weren't active within the specified duration are included in the segment.
     */
-  var RecencyType: typings.awsSdk.pinpointMod.RecencyType = js.native
+  var RecencyType: typings.awsSdk.pinpointMod.RecencyType
 }
 object RecencyDimension {
   

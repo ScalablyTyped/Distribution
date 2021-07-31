@@ -2,10 +2,13 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureloader {
+  
+  @JSImport("openlayers", "featureloader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create an XHR feature loader for a `url` and `format`. The feature loader
@@ -16,12 +19,10 @@ object featureloader {
     * @return The feature loader.
     * @api
     */
-  @JSImport("openlayers", "featureloader.tile")
-  @js.native
-  def tile(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
-  @JSImport("openlayers", "featureloader.tile")
-  @js.native
-  def tile(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  @scala.inline
+  def tile(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
+  @scala.inline
+  def tile(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
   
   /**
     * Create an XHR feature loader for a `url` and `format`. The feature loader
@@ -32,10 +33,8 @@ object featureloader {
     * @return The feature loader.
     * @api
     */
-  @JSImport("openlayers", "featureloader.xhr")
-  @js.native
-  def xhr(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
-  @JSImport("openlayers", "featureloader.xhr")
-  @js.native
-  def xhr(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  @scala.inline
+  def xhr(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
+  @scala.inline
+  def xhr(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
 }

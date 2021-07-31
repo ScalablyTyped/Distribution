@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,14 +25,22 @@ sealed trait MSAA_QUALITY extends StObject
 object MSAA_QUALITY extends StObject {
   
   @js.native
-  sealed trait HIGH extends MSAA_QUALITY
+  sealed trait HIGH
+    extends StObject
+       with MSAA_QUALITY
   
   @js.native
-  sealed trait LOW extends MSAA_QUALITY
+  sealed trait LOW
+    extends StObject
+       with MSAA_QUALITY
   
   @js.native
-  sealed trait MEDIUM extends MSAA_QUALITY
+  sealed trait MEDIUM
+    extends StObject
+       with MSAA_QUALITY
   
   @js.native
-  sealed trait NONE extends MSAA_QUALITY
+  sealed trait NONE
+    extends StObject
+       with MSAA_QUALITY
 }

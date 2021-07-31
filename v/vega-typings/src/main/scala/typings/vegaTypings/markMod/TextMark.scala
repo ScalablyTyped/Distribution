@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.TextEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[TextEncodeEntry]
      with Mark {
   
-  var `type`: text = js.native
+  var `type`: text
 }
 object TextMark {
   
   @scala.inline
-  def apply(`type`: text): TextMark = {
+  def apply(): TextMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[TextMark]
   }
   

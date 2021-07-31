@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPatchJobsResponse extends StObject {
   
   /** A pagination token that can be used to get the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of patch jobs. */
-  var patchJobs: js.UndefOr[js.Array[PatchJob]] = js.native
+  var patchJobs: js.UndefOr[js.Array[PatchJob]] = js.undefined
 }
 object ListPatchJobsResponse {
   

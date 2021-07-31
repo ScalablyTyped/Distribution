@@ -2,18 +2,16 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
   */
-@js.native
 trait Artist extends StObject {
   
-  val id: String = js.native
+  val id: String
   
-  val name: String = js.native
+  val name: String
 }
 object Artist {
   

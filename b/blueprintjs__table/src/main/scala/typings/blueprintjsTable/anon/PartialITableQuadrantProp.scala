@@ -12,14 +12,12 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/quadrants/tableQuadrant.ITableQuadrantProps> */
-@js.native
 trait PartialITableQuadrantProp extends StObject {
   
-  var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+  var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
   
   var bodyRenderer: js.UndefOr[
     js.Function3[
@@ -28,31 +26,31 @@ trait PartialITableQuadrantProp extends StObject {
       /* showFrozenColumnsOnly */ js.UndefOr[Boolean], 
       Element
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var columnHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenColumnsOnly */ js.UndefOr[Boolean], Element]] = js.native
+  var columnHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenColumnsOnly */ js.UndefOr[Boolean], Element]] = js.undefined
   
-  var enableRowHeader: js.UndefOr[Boolean] = js.native
+  var enableRowHeader: js.UndefOr[Boolean] = js.undefined
   
-  var grid: js.UndefOr[Grid] = js.native
+  var grid: js.UndefOr[Grid] = js.undefined
   
-  var menuRenderer: js.UndefOr[js.Function0[Element]] = js.native
+  var menuRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
   
-  var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement, NativeUIEvent]]] = js.native
+  var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement, NativeUIEvent]]] = js.undefined
   
-  var onWheel: js.UndefOr[EventHandler[WheelEvent[HTMLDivElement]]] = js.native
+  var onWheel: js.UndefOr[EventHandler[WheelEvent[HTMLDivElement]]] = js.undefined
   
-  var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+  var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
   
-  var quadrantType: js.UndefOr[QuadrantType] = js.native
+  var quadrantType: js.UndefOr[QuadrantType] = js.undefined
   
-  var rowHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenRowsOnly */ js.UndefOr[Boolean], Element]] = js.native
+  var rowHeaderCellRenderer: js.UndefOr[js.Function1[/* showFrozenRowsOnly */ js.UndefOr[Boolean], Element]] = js.undefined
   
-  var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+  var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialITableQuadrantProp {
   
@@ -66,7 +64,7 @@ object PartialITableQuadrantProp {
   implicit class PartialITableQuadrantPropMutableBuilder[Self <: PartialITableQuadrantProp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBodyRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
+    def setBodyRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
@@ -122,7 +120,7 @@ object PartialITableQuadrantProp {
     def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
     @scala.inline
-    def setQuadrantRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
+    def setQuadrantRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
@@ -140,7 +138,7 @@ object PartialITableQuadrantProp {
     def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
     
     @scala.inline
-    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => _): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
+    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)

@@ -4,15 +4,13 @@ import typings.ckeditor.CKEDITOR.dom.elementPath
 import typings.ckeditor.CKEDITOR.editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exec extends StObject {
   
-  def exec(editor: editor): Boolean = js.native
+  def exec(editor: editor): Boolean
   
-  def refresh(editor: editor, path: elementPath): Double = js.native
+  def refresh(editor: editor, path: elementPath): Double
 }
 object Exec {
   

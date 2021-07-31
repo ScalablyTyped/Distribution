@@ -2,62 +2,60 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A creative and its classification data.
   */
-@js.native
 trait SchemaCreative extends StObject {
   
   /**
     * The account that this creative belongs to. Can be used to filter the
     * response of the creatives.list method.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The link to AdChoices destination page.
     */
-  var adChoicesDestinationUrl: js.UndefOr[String] = js.native
+  var adChoicesDestinationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the company being advertised in the creative.
     */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /**
     * The agency ID for this creative.
     */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * @OutputOnly The last update timestamp of the creative via API.
     */
-  var apiUpdateTime: js.UndefOr[String] = js.native
+  var apiUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * All attributes for the ads that may be shown from this creative. Can be
     * used to filter the response of the creatives.list method.
     */
-  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var attributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The set of destination URLs for the creative.
     */
-  var clickThroughUrls: js.UndefOr[js.Array[String]] = js.native
+  var clickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly Shows any corrections that were applied to this creative.
     */
-  var corrections: js.UndefOr[js.Array[SchemaCorrection]] = js.native
+  var corrections: js.UndefOr[js.Array[SchemaCorrection]] = js.undefined
   
   /**
     * The buyer-defined creative ID of this creative. Can be used to filter the
     * response of the creatives.list method.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * @OutputOnly The top-level deals status of this creative. If disapproved,
@@ -67,36 +65,36 @@ trait SchemaCreative extends StObject {
     * read from serving_restrictions directly. Can be used to filter the
     * response of the creatives.list method.
     */
-  var dealsStatus: js.UndefOr[String] = js.native
+  var dealsStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The set of declared destination URLs for the creative.
     */
-  var declaredClickThroughUrls: js.UndefOr[js.Array[String]] = js.native
+  var declaredClickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly Detected advertiser IDs, if any.
     */
-  var detectedAdvertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var detectedAdvertiserIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly The detected domains for this creative.
     */
-  var detectedDomains: js.UndefOr[js.Array[String]] = js.native
+  var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly The detected languages for this creative. The order is
     * arbitrary. The codes are 2 or 5 characters and are documented at
     * https://developers.google.com/adwords/api/docs/appendix/languagecodes.
     */
-  var detectedLanguages: js.UndefOr[js.Array[String]] = js.native
+  var detectedLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly Detected product categories, if any. See the
     * ad-product-categories.txt file in the technical documentation for a list
     * of IDs.
     */
-  var detectedProductCategories: js.UndefOr[js.Array[Double]] = js.native
+  var detectedProductCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * @OutputOnly Detected sensitive categories, if any. See the
@@ -104,28 +102,28 @@ trait SchemaCreative extends StObject {
     * list of IDs. You should use these IDs along with the
     * excluded-sensitive-category field in the bid request to filter your bids.
     */
-  var detectedSensitiveCategories: js.UndefOr[js.Array[Double]] = js.native
+  var detectedSensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * @OutputOnly The filtering stats for this creative. Deprecated; please use
     * bidders.accounts.filterSets.filteredBids.creatives.list method instead.
     */
-  var filteringStats: js.UndefOr[SchemaFilteringStats] = js.native
+  var filteringStats: js.UndefOr[SchemaFilteringStats] = js.undefined
   
   /**
     * An HTML creative.
     */
-  var html: js.UndefOr[SchemaHtmlContent] = js.native
+  var html: js.UndefOr[SchemaHtmlContent] = js.undefined
   
   /**
     * The set of URLs to be called to record an impression.
     */
-  var impressionTrackingUrls: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A native creative.
     */
-  var native: js.UndefOr[SchemaNativeContent] = js.native
+  var native: js.UndefOr[SchemaNativeContent] = js.undefined
   
   /**
     * @OutputOnly The top-level open auction status of this creative. If
@@ -135,13 +133,13 @@ trait SchemaCreative extends StObject {
     * be preferable to read from serving_restrictions directly. Can be used to
     * filter the response of the creatives.list method.
     */
-  var openAuctionStatus: js.UndefOr[String] = js.native
+  var openAuctionStatus: js.UndefOr[String] = js.undefined
   
   /**
     * All restricted categories for the ads that may be shown from this
     * creative.
     */
-  var restrictedCategories: js.UndefOr[js.Array[String]] = js.native
+  var restrictedCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @OutputOnly The granular status of this ad in specific contexts. A
@@ -149,24 +147,24 @@ trait SchemaCreative extends StObject {
     * physical location, a platform, an HTTPS vs HTTP request, or the type of
     * auction).
     */
-  var servingRestrictions: js.UndefOr[js.Array[SchemaServingRestriction]] = js.native
+  var servingRestrictions: js.UndefOr[js.Array[SchemaServingRestriction]] = js.undefined
   
   /**
     * All vendor IDs for the ads that may be shown from this creative. See
     * https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt for
     * possible values.
     */
-  var vendorIds: js.UndefOr[js.Array[Double]] = js.native
+  var vendorIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * @OutputOnly The version of this creative.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /**
     * A video creative.
     */
-  var video: js.UndefOr[SchemaVideoContent] = js.native
+  var video: js.UndefOr[SchemaVideoContent] = js.undefined
 }
 object SchemaCreative {
   

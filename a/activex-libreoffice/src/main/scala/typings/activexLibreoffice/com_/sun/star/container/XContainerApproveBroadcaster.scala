@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows containers to implement a vetoing mechanism for insertion, removal, and replacement of their elements. */
-@js.native
 trait XContainerApproveBroadcaster extends StObject {
   
   /** adds a listener which can veto changes in the container's content */
-  def addContainerApproveListener(Listener: XContainerApproveListener): Unit = js.native
+  def addContainerApproveListener(Listener: XContainerApproveListener): Unit
   
   /** removes a previously added listener */
-  def removeContainerApproveListener(Listener: XContainerApproveListener): Unit = js.native
+  def removeContainerApproveListener(Listener: XContainerApproveListener): Unit
 }
 object XContainerApproveBroadcaster {
   

@@ -5,27 +5,25 @@ import typings.reactSortableTree.anon.PartialListProps
 import typings.reactVirtualized.mod.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeTreeProps extends StObject {
   
-  var innerStyle: js.UndefOr[CSSProperties] = js.native
+  var innerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var nodeContentRenderer: js.UndefOr[NodeRenderer] = js.native
+  var nodeContentRenderer: js.UndefOr[NodeRenderer] = js.undefined
   
-  var placeholderRenderer: js.UndefOr[PlaceholderRenderer] = js.native
+  var placeholderRenderer: js.UndefOr[PlaceholderRenderer] = js.undefined
   
-  var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.native
+  var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.undefined
   
-  var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData with Index, Double]) | Double] = js.native
+  var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData & Index, Double]) | Double] = js.undefined
   
-  var scaffoldBlockPxWidth: js.UndefOr[Double] = js.native
+  var scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined
   
-  var slideRegionSize: js.UndefOr[Double] = js.native
+  var slideRegionSize: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object ThemeTreeProps {
   
@@ -63,10 +61,10 @@ object ThemeTreeProps {
     def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
     
     @scala.inline
-    def setRowHeight(value: (js.Function1[/* info */ NodeData with Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    def setRowHeight(value: (js.Function1[/* info */ NodeData & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeightFunction1(value: /* info */ NodeData with Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    def setRowHeightFunction1(value: /* info */ NodeData & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)

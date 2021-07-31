@@ -5,83 +5,41 @@ import typings.stylableCore.anon.Dirname
 import typings.stylableCore.anon.Prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveNamespaceFactoriesMod {
   
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "noCollisionNamespace")
+  @JSImport("@stylable/core/cjs/resolve-namespace-factories", JSImport.Namespace)
   @js.native
-  def noCollisionNamespace(): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "noCollisionNamespace")
-  @js.native
-  def noCollisionNamespace(hasPrefixUsed: Prefix): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
+  @scala.inline
+  def noCollisionNamespace(): js.Function2[/* namespace */ String, /* source */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noCollisionNamespace")().asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def noCollisionNamespace(hasPrefixUsedNamespaces: Prefix): js.Function2[/* namespace */ String, /* source */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noCollisionNamespace")(hasPrefixUsedNamespaces.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: js.UndefOr[scala.Nothing],
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: js.UndefOr[scala.Nothing],
-    prefix: String,
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname,
     hashSalt: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
-  def packageNamespaceFactory(
-    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-    loadConfig: js.Function1[/* filePath */ String, js.Object],
-    hasDirnameRelative: Dirname,
-    hashSalt: String,
-    prefix: js.UndefOr[scala.Nothing],
-    normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
     hasDirnameRelative: Dirname,
     hashSalt: String,
     prefix: String
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-  @JSImport("@stylable/core/cjs/resolve-namespace-factories", "packageNamespaceFactory")
-  @js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
   def packageNamespaceFactory(
     findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
     loadConfig: js.Function1[/* filePath */ String, js.Object],
@@ -89,5 +47,40 @@ object resolveNamespaceFactoriesMod {
     hashSalt: String,
     prefix: String,
     normalizeVersion: js.Function1[/* semver */ String, String]
-  ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: String,
+    prefix: Unit,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: String
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: String,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
+  @scala.inline
+  def packageNamespaceFactory(
+    findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+    loadConfig: js.Function1[/* filePath */ String, js.Object],
+    hasDirnameRelative: Dirname,
+    hashSalt: Unit,
+    prefix: Unit,
+    normalizeVersion: js.Function1[/* semver */ String, String]
+  ): js.Function2[/* namespace */ String, /* source */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("packageNamespaceFactory")(findConfig.asInstanceOf[js.Any], loadConfig.asInstanceOf[js.Any], hasDirnameRelative.asInstanceOf[js.Any], hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], normalizeVersion.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* namespace */ String, /* source */ String, String]]
 }

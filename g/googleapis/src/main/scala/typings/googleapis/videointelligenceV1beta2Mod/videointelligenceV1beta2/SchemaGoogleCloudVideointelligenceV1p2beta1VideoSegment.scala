@@ -2,26 +2,24 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video segment.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment extends StObject {
   
   /**
     * Time-offset, relative to the beginning of the video, corresponding to the
     * end of the segment (inclusive).
     */
-  var endTimeOffset: js.UndefOr[String] = js.native
+  var endTimeOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Time-offset, relative to the beginning of the video, corresponding to the
     * start of the segment (inclusive).
     */
-  var startTimeOffset: js.UndefOr[String] = js.native
+  var startTimeOffset: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1VideoSegment {
   

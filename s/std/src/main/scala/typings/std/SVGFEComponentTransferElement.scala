@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feComponentTransfer> element. */
 @js.native
 trait SVGFEComponentTransferElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* InferMemberOverrides */

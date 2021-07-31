@@ -11,10 +11,13 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrappersMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Bidirectional")
   @js.native
@@ -53,9 +56,8 @@ object wrappersMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Bidirectional.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "TimeDistributed")
@@ -88,30 +90,31 @@ object wrappersMod {
   /* static members */
   object Wrapper {
     
+    @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Wrapper")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** @nocollapse */
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Wrapper.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-    @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Wrapper.fromConfig")
-    @js.native
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "checkBidirectionalMergeMode")
-  @js.native
-  def checkBidirectionalMergeMode(): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "checkBidirectionalMergeMode")
-  @js.native
-  def checkBidirectionalMergeMode(value: String): Unit = js.native
+  @scala.inline
+  def checkBidirectionalMergeMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")().asInstanceOf[Unit]
+  @scala.inline
+  def checkBidirectionalMergeMode(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBidirectionalMergeMode")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait BidirectionalLayerArgs extends WrapperLayerArgs {
+  trait BidirectionalLayerArgs
+    extends StObject
+       with WrapperLayerArgs {
     
     /**
       * The instance of an `RNN` layer to be wrapped.
       */
     @JSName("layer")
-    var layer_BidirectionalLayerArgs: RNN_ = js.native
+    var layer_BidirectionalLayerArgs: RNN_
     
     /**
       * Mode by which outputs of the forward and backward RNNs are
@@ -120,7 +123,7 @@ object wrappersMod {
       *
       * If `undefined` (i.e., not provided), defaults to `'concat'`.
       */
-    var mergeMode: js.UndefOr[BidirectionalMergeMode] = js.native
+    var mergeMode: js.UndefOr[BidirectionalMergeMode] = js.undefined
   }
   object BidirectionalLayerArgs {
     
@@ -144,13 +147,14 @@ object wrappersMod {
     }
   }
   
-  @js.native
-  trait WrapperLayerArgs extends LayerArgs {
+  trait WrapperLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * The layer to be wrapped.
       */
-    var layer: Layer = js.native
+    var layer: Layer
   }
   object WrapperLayerArgs {
     

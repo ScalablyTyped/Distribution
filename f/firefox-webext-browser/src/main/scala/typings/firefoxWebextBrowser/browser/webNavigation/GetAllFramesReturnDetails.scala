@@ -2,36 +2,34 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAllFramesReturnDetails extends StObject {
   
   /**
     * True if the last navigation in this frame was interrupted by an error, i.e. the onErrorOccurred event fired.
     */
-  var errorOccurred: js.UndefOr[Boolean] = js.native
+  var errorOccurred: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the frame. 0 indicates that this is the main frame; a positive value indicates the ID of a subframe.
     */
-  var frameId: Double = js.native
+  var frameId: Double
   
   /** ID of frame that wraps the frame. Set to -1 of no parent frame exists. */
-  var parentFrameId: Double = js.native
+  var parentFrameId: Double
   
   /**
     * The ID of the process runs the renderer for this tab.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var processId: js.UndefOr[Double] = js.native
+  var processId: js.UndefOr[Double] = js.undefined
   
   /** The ID of the tab in which the frame is. */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The URL currently associated with this frame. */
-  var url: String = js.native
+  var url: String
 }
 object GetAllFramesReturnDetails {
   

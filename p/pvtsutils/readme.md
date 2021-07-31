@@ -10,9 +10,9 @@ pvtsutils is a set of common utility functions used in various Peculiar Ventures
 | ------------------ | :-------------: |
 | Full name          | pvtsutils |
 | Keywords           | typescript, helper, util, convert, hex, utf8, base64, base64url, binary, assign |
-| # releases         | 9 |
-| # dependents       | 21 |
-| # downloads        | 616997 |
+| # releases         | 13 |
+| # dependents       | 31 |
+| # downloads        | 1572603 |
 | # stars            | 0 |
 
 ## Links

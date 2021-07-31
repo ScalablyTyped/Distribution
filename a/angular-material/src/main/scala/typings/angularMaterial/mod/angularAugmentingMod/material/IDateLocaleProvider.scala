@@ -3,35 +3,33 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDateLocaleProvider extends StObject {
   
-  var dates: js.Array[String] = js.native
+  var dates: js.Array[String]
   
-  var days: js.Array[String] = js.native
+  var days: js.Array[String]
   
-  var firstDayOfWeek: Double = js.native
+  var firstDayOfWeek: Double
   
-  def formatDate(date: Date): String = js.native
+  def formatDate(date: Date): String
   
-  def monthHeaderFormatter(date: Date): String = js.native
+  def monthHeaderFormatter(date: Date): String
   
-  var months: js.Array[String] = js.native
+  var months: js.Array[String]
   
-  var msgCalendar: String = js.native
+  var msgCalendar: String
   
-  var msgOpenCalendar: String = js.native
+  var msgOpenCalendar: String
   
-  def parseDate(dateString: String): Date = js.native
+  def parseDate(dateString: String): Date
   
-  var shortDays: js.Array[String] = js.native
+  var shortDays: js.Array[String]
   
-  var shortMonths: js.Array[String] = js.native
+  var shortMonths: js.Array[String]
   
-  def weekNumberFormatter(weekNumber: Double): String = js.native
+  def weekNumberFormatter(weekNumber: Double): String
 }
 object IDateLocaleProvider {
   

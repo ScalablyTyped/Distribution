@@ -2,17 +2,15 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalysisScheme extends StObject {
   
-  var AnalysisOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.AnalysisOptions] = js.native
+  var AnalysisOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.AnalysisOptions] = js.undefined
   
-  var AnalysisSchemeLanguage: typings.awsSdk.cloudsearchMod.AnalysisSchemeLanguage = js.native
+  var AnalysisSchemeLanguage: typings.awsSdk.cloudsearchMod.AnalysisSchemeLanguage
   
-  var AnalysisSchemeName: StandardName = js.native
+  var AnalysisSchemeName: StandardName
 }
 object AnalysisScheme {
   

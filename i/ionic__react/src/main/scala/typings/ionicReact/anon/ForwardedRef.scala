@@ -4,13 +4,11 @@ import typings.ionicReact.createControllerComponentMod.OverlayBase
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardedRef[OverlayType /* <: OverlayBase */] extends StObject {
   
-  var forwardedRef: js.UndefOr[RefObject[OverlayType]] = js.native
+  var forwardedRef: js.UndefOr[RefObject[OverlayType]] = js.undefined
 }
 object ForwardedRef {
   
@@ -21,7 +19,7 @@ object ForwardedRef {
   }
   
   @scala.inline
-  implicit class ForwardedRefMutableBuilder[Self <: ForwardedRef[_], OverlayType /* <: OverlayBase */] (val x: Self with ForwardedRef[OverlayType]) extends AnyVal {
+  implicit class ForwardedRefMutableBuilder[Self <: ForwardedRef[?], OverlayType /* <: OverlayBase */] (val x: Self & ForwardedRef[OverlayType]) extends AnyVal {
     
     @scala.inline
     def setForwardedRef(value: RefObject[OverlayType]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])

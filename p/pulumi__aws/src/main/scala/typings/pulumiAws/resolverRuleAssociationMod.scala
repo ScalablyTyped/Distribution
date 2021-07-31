@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverRuleAssociationMod {
@@ -43,6 +42,10 @@ object resolverRuleAssociationMod {
   /* static members */
   object ResolverRuleAssociation {
     
+    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverRuleAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object resolverRuleAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): ResolverRuleAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
     
     /**
       * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/resolverRuleAssociation", "ResolverRuleAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean]
   }
   
-  @js.native
   trait ResolverRuleAssociationArgs extends StObject {
     
     /**
       * A name for the association that you're creating between a resolver rule and a VPC.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the resolver rule that you want to associate with the VPC.
       */
-    val resolverRuleId: Input[String] = js.native
+    val resolverRuleId: Input[String]
     
     /**
       * The ID of the VPC that you want to associate the resolver rule with.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object ResolverRuleAssociationArgs {
     
@@ -117,23 +114,22 @@ object resolverRuleAssociationMod {
     }
   }
   
-  @js.native
   trait ResolverRuleAssociationState extends StObject {
     
     /**
       * A name for the association that you're creating between a resolver rule and a VPC.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the resolver rule that you want to associate with the VPC.
       */
-    val resolverRuleId: js.UndefOr[Input[String]] = js.native
+    val resolverRuleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC that you want to associate the resolver rule with.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object ResolverRuleAssociationState {
     

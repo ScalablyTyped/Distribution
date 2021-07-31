@@ -4,27 +4,28 @@ import typings.vinyl.mod.File
 import typings.vinylFile.anon.Contents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vinyl-file", "read")
+  @JSImport("vinyl-file", JSImport.Namespace)
   @js.native
-  def read(pth: String): js.Promise[VinylFile] = js.native
-  @JSImport("vinyl-file", "read")
-  @js.native
-  def read(pth: String, opts: VinylFileOptions): js.Promise[VinylFile] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vinyl-file", "readSync")
-  @js.native
-  def readSync(pth: String): VinylFile = js.native
-  @JSImport("vinyl-file", "readSync")
-  @js.native
-  def readSync(pth: String, opts: VinylFileOptions): VinylFile = js.native
+  @scala.inline
+  def read(pth: String): js.Promise[VinylFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VinylFile]]
+  @scala.inline
+  def read(pth: String, opts: VinylFileOptions): js.Promise[VinylFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VinylFile]]
+  
+  @scala.inline
+  def readSync(pth: String): VinylFile = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any]).asInstanceOf[VinylFile]
+  @scala.inline
+  def readSync(pth: String, opts: VinylFileOptions): VinylFile = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VinylFile]
   
   @js.native
-  trait VinylFile extends File {
+  trait VinylFile
+    extends StObject
+       with File {
     
     def clone(opts: Contents): this.type = js.native
     
@@ -33,20 +34,19 @@ object mod {
     var symlink_VinylFile: String = js.native
   }
   
-  @js.native
   trait VinylFileOptions extends StObject {
     
     /** Specifies the folder relative to the cwd */
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /** Setting this to false will retuurn file.contents as a stream */
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the working directory the folder is relative to */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /** Setting this to false will return file.contents as null and not read the file at all */
-    var read: js.UndefOr[Boolean] = js.native
+    var read: js.UndefOr[Boolean] = js.undefined
   }
   object VinylFileOptions {
     

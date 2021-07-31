@@ -4,37 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object describing the request to be made and how it should be processed.
   * see http://docs.angularjs.org/api/ng/service/$http#usage
   */
-@js.native
-trait IRequestConfig extends IRequestShortcutConfig {
+trait IRequestConfig
+  extends StObject
+     with IRequestShortcutConfig {
   
   /**
     * Event listeners to be bound to the XMLHttpRequest object.
     * To bind events to the XMLHttpRequest upload object, use uploadEventHandlers. The handler will be called in the context of a $apply block.
     */
-  var eventHandlers: js.UndefOr[StringDictionary[EventListenerOrEventListenerObject]] = js.native
+  var eventHandlers: js.UndefOr[StringDictionary[EventListenerOrEventListenerObject]] = js.undefined
   
   /**
     * HTTP method (e.g. 'GET', 'POST', etc)
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * Event listeners to be bound to the XMLHttpRequest upload object.
     * To bind events to the XMLHttpRequest object, use eventHandlers. The handler will be called in the context of a $apply block.
     */
-  var uploadEventHandlers: js.UndefOr[StringDictionary[EventListenerOrEventListenerObject]] = js.native
+  var uploadEventHandlers: js.UndefOr[StringDictionary[EventListenerOrEventListenerObject]] = js.undefined
   
   /**
     * Absolute or relative URL of the resource that is being requested.
     */
-  var url: String = js.native
+  var url: String
 }
 object IRequestConfig {
   

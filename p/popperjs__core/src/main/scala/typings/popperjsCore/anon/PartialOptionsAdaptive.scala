@@ -2,16 +2,14 @@ package typings.popperjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/computeStyles.Options> */
-@js.native
 trait PartialOptionsAdaptive extends StObject {
   
-  var adaptive: js.UndefOr[Boolean] = js.native
+  var adaptive: js.UndefOr[Boolean] = js.undefined
   
-  var gpuAcceleration: js.UndefOr[Boolean] = js.native
+  var gpuAcceleration: js.UndefOr[Boolean] = js.undefined
 }
 object PartialOptionsAdaptive {
   

@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,11 +22,12 @@ object mod extends Shortcut {
   
   type GlobalStrings[T] = StringDictionary[T]
   
-  type LocalizedStrings[T] = LocalizedStringsMethods with T
+  type LocalizedStrings[T] = LocalizedStringsMethods & T
   
   @js.native
   trait LocalizedStringsFactory
-    extends Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
+    extends StObject
+       with Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
        with Instantiable2[
           /* props */ GlobalStrings[js.Object], 
           /* options */ Options, 
@@ -68,9 +68,9 @@ object mod extends Shortcut {
       * @param omitWarning
       */
     def getString(key: String): String = js.native
-    def getString(key: String, language: js.UndefOr[scala.Nothing], omitWarning: Boolean): String = js.native
     def getString(key: String, language: String): String = js.native
     def getString(key: String, language: String, omitWarning: Boolean): String = js.native
+    def getString(key: String, language: Unit, omitWarning: Boolean): String = js.native
     
     /**
       * Replace the NamedLocalization object without reinstantiating the object
@@ -86,16 +86,15 @@ object mod extends Shortcut {
     def setLanguage(language: String): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var customLanguageInterface: js.UndefOr[GetInterfaceLanguageCallback] = js.native
+    var customLanguageInterface: js.UndefOr[GetInterfaceLanguageCallback] = js.undefined
     
-    var logsEnabled: js.UndefOr[Boolean] = js.native
+    var logsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var pseudo: js.UndefOr[Boolean] = js.native
+    var pseudo: js.UndefOr[Boolean] = js.undefined
     
-    var pseudoMultipleLanguages: js.UndefOr[Boolean] = js.native
+    var pseudoMultipleLanguages: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

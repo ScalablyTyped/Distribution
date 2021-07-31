@@ -10,9 +10,9 @@ an opinionated implementation of resque in node
 | ------------------ | :-------------: |
 | Full name          | node-resque |
 | Keywords           | delayed, queue, resque, redis, work, worker, background, job, task |
-| # releases         | 32 |
-| # dependents       | 18 |
-| # downloads        | 356567 |
+| # releases         | 33 |
+| # dependents       | 19 |
+| # downloads        | 397561 |
 | # stars            | 11 |
 
 ## Links

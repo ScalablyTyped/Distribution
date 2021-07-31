@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationSetSendingOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to enable or disable email sending for.
     */
-  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
     * If true, email sending is enabled for the configuration set. If false, email sending is disabled for the configuration set.
     */
-  var SendingEnabled: js.UndefOr[Enabled] = js.native
+  var SendingEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object PutConfigurationSetSendingOptionsRequest {
   

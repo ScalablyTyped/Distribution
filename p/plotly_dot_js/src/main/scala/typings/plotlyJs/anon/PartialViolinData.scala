@@ -24,78 +24,78 @@ import typings.plotlyJs.plotlyJsStrings.width
 import typings.plotlyJs.scatterMod.ScatterSelectedMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js/lib/traces/violin.ViolinData> */
-@js.native
-trait PartialViolinData extends Data {
+trait PartialViolinData
+  extends StObject
+     with Data {
   
-  var alignmentgroup: js.UndefOr[String] = js.native
+  var alignmentgroup: js.UndefOr[String] = js.undefined
   
-  var bandwidth: js.UndefOr[Double] = js.native
+  var bandwidth: js.UndefOr[Double] = js.undefined
   
-  var box: js.UndefOr[Partialvisiblebooleanwidt] = js.native
+  var box: js.UndefOr[Partialvisiblebooleanwidt] = js.undefined
   
-  var fillcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var fillcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var hoveron: js.UndefOr[violins | points | kde | all | String] = js.native
+  var hoveron: js.UndefOr[violins | points | kde | all | String] = js.undefined
   
-  var hovertemplate: js.UndefOr[String | js.Array[String]] = js.native
+  var hovertemplate: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var hovertext: js.UndefOr[String | js.Array[String]] = js.native
+  var hovertext: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var jitter: js.UndefOr[Double] = js.native
+  var jitter: js.UndefOr[Double] = js.undefined
   
-  var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.native
+  var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.undefined
   
-  var marker: js.UndefOr[PartialoutliercolorColors] = js.native
+  var marker: js.UndefOr[PartialoutliercolorColors] = js.undefined
   
-  var meanline: js.UndefOr[Partialvisiblebooleancolo] = js.native
+  var meanline: js.UndefOr[Partialvisiblebooleancolo] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offsetgroup: js.UndefOr[String] = js.native
+  var offsetgroup: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[v | h] = js.native
+  var orientation: js.UndefOr[v | h] = js.undefined
   
-  var pointpos: js.UndefOr[Double] = js.native
+  var pointpos: js.UndefOr[Double] = js.undefined
   
-  var points: js.UndefOr[all | outliers | suspectedoutliers | `false`] = js.native
+  var points: js.UndefOr[all | outliers | suspectedoutliers | `false`] = js.undefined
   
-  var scalegroup: js.UndefOr[String] = js.native
+  var scalegroup: js.UndefOr[String] = js.undefined
   
-  var scalemode: js.UndefOr[width | count] = js.native
+  var scalemode: js.UndefOr[width | count] = js.undefined
   
-  var selected: js.UndefOr[ScatterSelectedMarker] = js.native
+  var selected: js.UndefOr[ScatterSelectedMarker] = js.undefined
   
-  var side: js.UndefOr[both | positive | negative] = js.native
+  var side: js.UndefOr[both | positive | negative] = js.undefined
   
-  var span: js.UndefOr[js.Array[_]] = js.native
+  var span: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var spanmode: js.UndefOr[soft | hard | manual] = js.native
+  var spanmode: js.UndefOr[soft | hard | manual] = js.undefined
   
-  var text: js.UndefOr[String | js.Array[String]] = js.native
+  var text: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `type`: js.UndefOr[violin] = js.native
+  var `type`: js.UndefOr[violin] = js.undefined
   
-  var unselected: js.UndefOr[ScatterSelectedMarker] = js.native
+  var unselected: js.UndefOr[ScatterSelectedMarker] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.native
+  var x: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   
   var x0: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['x0'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.native
+  var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   
   var y0: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object PartialViolinData {
   
@@ -244,7 +244,7 @@ object PartialViolinData {
     def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def setSpan(value: js.Array[_]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    def setSpan(value: js.Array[js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)

@@ -2,19 +2,18 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewport
-  extends typings.extjs.Ext.container.IContainer {
+  extends StObject
+     with typings.extjs.Ext.container.IContainer {
   
   /** [Property] (Boolean) */
-  var isViewport: js.UndefOr[Boolean] = js.native
+  var isViewport: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Template method called when this Component s DOM structure is created  */
   @JSName("onRender")
-  var onRender_IViewport: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRender_IViewport: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IViewport {
   

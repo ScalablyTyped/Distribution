@@ -4,7 +4,6 @@ import typings.opentelemetryApi.meterMod.Meter
 import typings.opentelemetryApi.meterProviderMod.MeterProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noopMeterProviderMod {
@@ -15,9 +14,11 @@ object noopMeterProviderMod {
   
   @JSImport("@opentelemetry/api/build/src/metrics/NoopMeterProvider", "NoopMeterProvider")
   @js.native
-  class NoopMeterProvider () extends MeterProvider {
+  class NoopMeterProvider ()
+    extends StObject
+       with MeterProvider {
     
     def getMeter(): Meter = js.native
-    def getMeter(_name: js.UndefOr[scala.Nothing], _version: String): Meter = js.native
+    def getMeter(_name: Unit, _version: String): Meter = js.native
   }
 }

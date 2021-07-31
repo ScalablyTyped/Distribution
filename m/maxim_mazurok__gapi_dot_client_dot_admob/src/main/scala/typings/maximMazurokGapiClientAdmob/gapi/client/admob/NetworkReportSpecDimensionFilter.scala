@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkReportSpecDimensionFilter extends StObject {
   
   /** Applies the filter criterion to the specified dimension. */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /** Matches a row if its value for the specified dimension is in one of the values specified in this condition. */
-  var matchesAny: js.UndefOr[StringList] = js.native
+  var matchesAny: js.UndefOr[StringList] = js.undefined
 }
 object NetworkReportSpecDimensionFilter {
   

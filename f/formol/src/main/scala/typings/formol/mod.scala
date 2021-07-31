@@ -1,6 +1,5 @@
 package typings.formol
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.TopLevel
 import typings.formol.anon.Dictk
 import typings.react.mod.Component
@@ -11,10 +10,13 @@ import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("formol", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("formol", JSImport.Default)
   @js.native
@@ -43,9 +45,8 @@ object mod extends Shortcut {
     def Provider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Provider")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("formol", "ConditionalContextWrapper")
-  @js.native
-  def ConditionalContextWrapper(e: Component[_, js.Object, _]): Component[_, js.Object, _] = js.native
+  @scala.inline
+  def ConditionalContextWrapper(e: Component[js.Any, js.Object, js.Any]): Component[js.Any, js.Object, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConditionalContextWrapper")(e.asInstanceOf[js.Any]).asInstanceOf[Component[js.Any, js.Object, js.Any]]
   
   @JSImport("formol", "Field")
   @js.native
@@ -74,9 +75,8 @@ object mod extends Shortcut {
     def Provider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Provider")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("formol", "FormolContextWrapper")
-  @js.native
-  def FormolContextWrapper(WrappedComponent: Component[_, js.Object, _]): Component[_, js.Object, _] = js.native
+  @scala.inline
+  def FormolContextWrapper(WrappedComponent: Component[js.Any, js.Object, js.Any]): Component[js.Any, js.Object, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("FormolContextWrapper")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Component[js.Any, js.Object, js.Any]]
   
   @JSImport("formol", "Inliner")
   @js.native
@@ -90,74 +90,58 @@ object mod extends Shortcut {
   @js.native
   val SwitchButton: ComponentType[SwitchButtonProps] = js.native
   
-  @JSImport("formol", "choicesAdapter")
-  @js.native
-  def choicesAdapter(WrappedComponent: Component[_, js.Object, _]): Component[_, js.Object, _] = js.native
+  @scala.inline
+  def choicesAdapter(WrappedComponent: Component[js.Any, js.Object, js.Any]): Component[js.Any, js.Object, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("choicesAdapter")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Component[js.Any, js.Object, js.Any]]
   
-  @JSImport("formol", "copy")
-  @js.native
-  def copy(o: js.Any, names: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def copy(o: js.Any, names: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(o.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formol", "diff")
-  @js.native
-  def diff(newItem: js.Any, oldItem: js.Any, names: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def diff(newItem: js.Any, oldItem: js.Any, names: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(newItem.asInstanceOf[js.Any], oldItem.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formol", "emptyStringToNull")
-  @js.native
-  def emptyStringToNull(v: String): String | Null = js.native
+  @scala.inline
+  def emptyStringToNull(v: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyStringToNull")(v.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("formol", "fieldPropsAdapter")
-  @js.native
-  def fieldPropsAdapter(v: js.Any): js.Any = js.native
+  @scala.inline
+  def fieldPropsAdapter(v: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldPropsAdapter")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("formol", "get")
-  @js.native
-  def get(data: js.Any, key: String): js.Any = js.native
+  @scala.inline
+  def get(data: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formol", "insert")
-  @js.native
-  def insert(transientItem: js.Any, name: String, value: js.Any, names: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def insert(transientItem: js.Any, name: String, value: js.Any, names: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(transientItem.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formol", "isModified")
-  @js.native
-  def isModified(newItem: js.Any, oldItem: js.Any, names: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def isModified(newItem: js.Any, oldItem: js.Any, names: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModified")(newItem.asInstanceOf[js.Any], oldItem.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("formol", "memoizedChoices")
-  @js.native
-  def memoizedChoices(WrappedComponent: Component[_, js.Object, _]): Component[_, js.Object, _] = js.native
+  @scala.inline
+  def memoizedChoices(WrappedComponent: Component[js.Any, js.Object, js.Any]): Component[js.Any, js.Object, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizedChoices")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Component[js.Any, js.Object, js.Any]]
   
-  @JSImport("formol", "multipleAdapter")
-  @js.native
-  def multipleAdapter(WrappedComponent: Component[_, js.Object, _]): Component[_, js.Object, _] = js.native
+  @scala.inline
+  def multipleAdapter(WrappedComponent: Component[js.Any, js.Object, js.Any]): Component[js.Any, js.Object, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleAdapter")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Component[js.Any, js.Object, js.Any]]
   
-  @JSImport("formol", "nullishToEmptyString")
-  @js.native
-  def nullishToEmptyString(): String = js.native
-  @JSImport("formol", "nullishToEmptyString")
-  @js.native
-  def nullishToEmptyString(v: String): String = js.native
+  @scala.inline
+  def nullishToEmptyString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullishToEmptyString")().asInstanceOf[String]
+  @scala.inline
+  def nullishToEmptyString(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullishToEmptyString")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("formol", "set")
-  @js.native
-  def set(data: js.Any, key: String, value: js.Any): js.Any = js.native
-  @JSImport("formol", "set")
-  @js.native
-  def set(data: js.Any, key: String, value: js.Any, noArray: Boolean): js.Any = js.native
+  @scala.inline
+  def set(data: js.Any, key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def set(data: js.Any, key: String, value: js.Any, noArray: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], noArray.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("formol", "unrest")
-  @js.native
-  def unrest(e: js.Any, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def unrest(e: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unrest")(e.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait ConditionalProps[V] extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var readOnly: js.UndefOr[(js.Function1[/* val */ V, Boolean]) | Boolean] = js.native
+    var readOnly: js.UndefOr[(js.Function1[/* val */ V, Boolean]) | Boolean] = js.undefined
     
-    var show: js.UndefOr[(js.Function1[/* val */ V, Boolean]) | Boolean] = js.native
+    var show: js.UndefOr[(js.Function1[/* val */ V, Boolean]) | Boolean] = js.undefined
     
-    var value: js.UndefOr[js.Function1[/* v */ V, _]] = js.native
+    var value: js.UndefOr[js.Function1[/* v */ V, js.Any]] = js.undefined
   }
   object ConditionalProps {
     
@@ -168,7 +152,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ConditionalPropsMutableBuilder[Self <: ConditionalProps[_], V] (val x: Self with ConditionalProps[V]) extends AnyVal {
+    implicit class ConditionalPropsMutableBuilder[Self <: ConditionalProps[?], V] (val x: Self & ConditionalProps[V]) extends AnyVal {
       
       @scala.inline
       def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -195,83 +179,82 @@ object mod extends Shortcut {
       def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
       @scala.inline
-      def setValue(value: /* v */ V => _): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      def setValue(value: /* v */ V => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  @js.native
   trait FieldProps[V] extends StObject {
     
-    var TypeField: js.UndefOr[ComponentType[js.Object]] = js.native
+    var TypeField: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var choices: js.UndefOr[js.Array[_]] = js.native
+    var choices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classNameModifiers: js.UndefOr[js.Any] = js.native
+    var classNameModifiers: js.UndefOr[js.Any] = js.undefined
     
-    var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.native
+    var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[ReactNode] = js.native
+    var error: js.UndefOr[ReactNode] = js.undefined
     
-    var extras: js.UndefOr[ReactNode] = js.native
+    var extras: js.UndefOr[ReactNode] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
     
-    var handleChange: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.native
+    var handleChange: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.undefined
     
-    var handleEntered: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.native
+    var handleEntered: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.undefined
     
-    var i18n: js.UndefOr[js.Any] = js.native
+    var i18n: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var modified: js.UndefOr[Boolean] = js.native
+    var modified: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var normalizer: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+    var normalizer: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     var register: js.UndefOr[
         js.Function4[
           /* name */ String, 
-          /* element */ Ref[_], 
+          /* element */ Ref[js.Any], 
           /* validator */ js.Any, 
           /* validityErrors */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var unformatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+    var unformatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
     
-    var unit: js.UndefOr[ReactNode] = js.native
+    var unit: js.UndefOr[ReactNode] = js.undefined
     
-    var unregister: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+    var unregister: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
     
-    var validator: js.UndefOr[js.Function1[/* v */ V, String]] = js.native
+    var validator: js.UndefOr[js.Function1[/* v */ V, String]] = js.undefined
     
-    var validityErrors: js.UndefOr[js.Any] = js.native
+    var validityErrors: js.UndefOr[js.Any] = js.undefined
     
-    var value: js.UndefOr[V] = js.native
+    var value: js.UndefOr[V] = js.undefined
   }
   object FieldProps {
     
@@ -282,7 +265,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class FieldPropsMutableBuilder[Self <: FieldProps[_], V] (val x: Self with FieldProps[V]) extends AnyVal {
+    implicit class FieldPropsMutableBuilder[Self <: FieldProps[?], V] (val x: Self & FieldProps[V]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -291,7 +274,7 @@ object mod extends Shortcut {
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       @scala.inline
-      def setChoices(value: js.Array[_]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      def setChoices(value: js.Array[js.Any]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
@@ -397,7 +380,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setRegister(
-        value: (/* name */ String, /* element */ Ref[_], /* validator */ js.Any, /* validityErrors */ js.Any) => Unit
+        value: (/* name */ String, /* element */ Ref[js.Any], /* validator */ js.Any, /* validityErrors */ js.Any) => Unit
       ): Self = StObject.set(x, "register", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -471,22 +454,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FieldSetProps[V] extends StObject {
     
-    var choices: js.UndefOr[js.Array[_]] = js.native
+    var choices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.native
+    var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined
     
-    var elementRef: js.UndefOr[Ref[_]] = js.native
+    var elementRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[V] = js.native
+    var value: js.UndefOr[V] = js.undefined
   }
   object FieldSetProps {
     
@@ -497,10 +479,10 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class FieldSetPropsMutableBuilder[Self <: FieldSetProps[_], V] (val x: Self with FieldSetProps[V]) extends AnyVal {
+    implicit class FieldSetPropsMutableBuilder[Self <: FieldSetProps[?], V] (val x: Self & FieldSetProps[V]) extends AnyVal {
       
       @scala.inline
-      def setChoices(value: js.Array[_]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      def setChoices(value: js.Array[js.Any]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
@@ -515,10 +497,10 @@ object mod extends Shortcut {
       def setDangerousRawHTMLLabelsUndefined: Self = StObject.set(x, "dangerousRawHTMLLabels", js.undefined)
       
       @scala.inline
-      def setElementRef(value: Ref[_]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
+      def setElementRef(value: Ref[js.Any]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setElementRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+      def setElementRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setElementRefNull: Self = StObject.set(x, "elementRef", null)
@@ -552,41 +534,40 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FormolProps[V] extends StObject {
     
-    var allowUnmodifiedSubmit: js.UndefOr[js.Any] = js.native
+    var allowUnmodifiedSubmit: js.UndefOr[js.Any] = js.undefined
     
-    var cancelText: js.UndefOr[js.Any] = js.native
+    var cancelText: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[js.Any] = js.native
+    var classes: js.UndefOr[js.Any] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var i18n: js.UndefOr[js.Any] = js.native
+    var i18n: js.UndefOr[js.Any] = js.undefined
     
-    var item: js.UndefOr[V] = js.native
+    var item: js.UndefOr[V] = js.undefined
     
-    var noCancel: js.UndefOr[js.Any] = js.native
+    var noCancel: js.UndefOr[js.Any] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var submitText: js.UndefOr[js.Any] = js.native
+    var submitText: js.UndefOr[js.Any] = js.undefined
     
-    var types: js.UndefOr[js.Array[String]] = js.native
+    var types: js.UndefOr[js.Array[String]] = js.undefined
     
     var validator: js.UndefOr[
         js.Function1[
           /* v */ V, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof V ]:? string | null}
-      */ typings.formol.formolStrings.FormolProps with TopLevel[js.Any]
+      */ typings.formol.formolStrings.FormolProps & TopLevel[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object FormolProps {
     
@@ -597,7 +578,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class FormolPropsMutableBuilder[Self <: FormolProps[_], V] (val x: Self with FormolProps[V]) extends AnyVal {
+    implicit class FormolPropsMutableBuilder[Self <: FormolProps[?], V] (val x: Self & FormolProps[V]) extends AnyVal {
       
       @scala.inline
       def setAllowUnmodifiedSubmit(value: js.Any): Self = StObject.set(x, "allowUnmodifiedSubmit", value.asInstanceOf[js.Any])
@@ -678,7 +659,7 @@ object mod extends Shortcut {
       def setValidator(
         value: /* v */ V => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof V ]:? string | null}
-        */ typings.formol.formolStrings.FormolProps with TopLevel[js.Any]
+        */ typings.formol.formolStrings.FormolProps & TopLevel[js.Any]
       ): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -686,18 +667,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SwitchButtonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var i18n: js.UndefOr[Dictk] = js.native
+    var i18n: js.UndefOr[Dictk] = js.undefined
     
-    var leftLabel: js.UndefOr[ReactNode] = js.native
+    var leftLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var rightLabel: js.UndefOr[ReactNode] = js.native
+    var rightLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SwitchButtonProps {
     
@@ -741,9 +721,4 @@ object mod extends Shortcut {
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
-  
-  type _To = ComponentType[FormolProps[js.Any]]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ComponentType[FormolProps[js.Any]] = default
 }

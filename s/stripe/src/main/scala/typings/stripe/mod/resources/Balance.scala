@@ -10,7 +10,6 @@ import typings.stripe.mod.balance.IBalanceListOptions
 import typings.stripe.mod.balance.IBalanceTransaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Balance")

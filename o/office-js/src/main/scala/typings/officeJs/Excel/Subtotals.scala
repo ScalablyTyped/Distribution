@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait Subtotals extends StObject {
   
   /**
@@ -20,29 +18,29 @@ trait Subtotals extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var automatic: js.UndefOr[Boolean] = js.native
+  var automatic: js.UndefOr[Boolean] = js.undefined
   
-  var average: js.UndefOr[Boolean] = js.native
+  var average: js.UndefOr[Boolean] = js.undefined
   
-  var count: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Boolean] = js.undefined
   
-  var countNumbers: js.UndefOr[Boolean] = js.native
+  var countNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Boolean] = js.undefined
   
-  var min: js.UndefOr[Boolean] = js.native
+  var min: js.UndefOr[Boolean] = js.undefined
   
-  var product: js.UndefOr[Boolean] = js.native
+  var product: js.UndefOr[Boolean] = js.undefined
   
-  var standardDeviation: js.UndefOr[Boolean] = js.native
+  var standardDeviation: js.UndefOr[Boolean] = js.undefined
   
-  var standardDeviationP: js.UndefOr[Boolean] = js.native
+  var standardDeviationP: js.UndefOr[Boolean] = js.undefined
   
-  var sum: js.UndefOr[Boolean] = js.native
+  var sum: js.UndefOr[Boolean] = js.undefined
   
-  var variance: js.UndefOr[Boolean] = js.native
+  var variance: js.UndefOr[Boolean] = js.undefined
   
-  var varianceP: js.UndefOr[Boolean] = js.native
+  var varianceP: js.UndefOr[Boolean] = js.undefined
 }
 object Subtotals {
   

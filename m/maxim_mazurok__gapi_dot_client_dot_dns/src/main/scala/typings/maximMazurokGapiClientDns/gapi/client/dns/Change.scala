@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
   /** Which ResourceRecordSets to add? */
-  var additions: js.UndefOr[js.Array[ResourceRecordSet]] = js.native
+  var additions: js.UndefOr[js.Array[ResourceRecordSet]] = js.undefined
   
   /** Which ResourceRecordSets to remove? Must match existing data exactly. */
-  var deletions: js.UndefOr[js.Array[ResourceRecordSet]] = js.native
+  var deletions: js.UndefOr[js.Array[ResourceRecordSet]] = js.undefined
   
   /** Unique identifier for the resource; defined by the server (output only). */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** If the DNS queries for the zone will be served. */
-  var isServing: js.UndefOr[Boolean] = js.native
+  var isServing: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The time that this operation was started by the server (output only). This is in RFC3339 text format. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Status of the operation (output only). A status of "done" means that the request to update the authoritative servers has been sent but the servers might not be updated yet. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object Change {
   

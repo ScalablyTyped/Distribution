@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arn extends StObject {
   
-  var arn: String = js.native
+  var arn: String
   
-  var name: String = js.native
+  var name: String
   
-  var ownerIdentity: PrincipalId = js.native
+  var ownerIdentity: PrincipalId
 }
 object Arn {
   

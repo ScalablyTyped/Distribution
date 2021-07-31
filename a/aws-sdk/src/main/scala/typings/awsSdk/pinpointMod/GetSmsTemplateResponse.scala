@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSmsTemplateResponse extends StObject {
   
-  var SMSTemplateResponse: typings.awsSdk.pinpointMod.SMSTemplateResponse = js.native
+  var SMSTemplateResponse: typings.awsSdk.pinpointMod.SMSTemplateResponse
 }
 object GetSmsTemplateResponse {
   

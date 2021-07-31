@@ -2,11 +2,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "floatingInk.toJSON()". */
-@js.native
 trait FloatingInkData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FloatingInkData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait FloatingInkData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkStrokes: js.UndefOr[js.Array[InkStrokeData]] = js.native
+  var inkStrokes: js.UndefOr[js.Array[InkStrokeData]] = js.undefined
 }
 object FloatingInkData {
   

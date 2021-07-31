@@ -2,48 +2,46 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object url {
   
-  @js.native
   trait URLObject extends StObject {
     
     /**
       * The hash of the url that was parsed.
       */
-    var hash: String = js.native
+    var hash: String
     
     /**
       * The host of the url that was parsed.
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * The hostname of the url that was parsed.
       */
-    var hostname: String = js.native
+    var hostname: String
     
     /**
       * The pathname of the url that was parsed.
       */
-    var pathname: String = js.native
+    var pathname: String
     
     /**
       * The port of the url that was parsed.
       */
-    var port: String = js.native
+    var port: String
     
     /**
       * The protocol of the url that was parsed.
       */
-    var protocol: String = js.native
+    var protocol: String
     
     /**
       * The search query of the url that was parsed.
       */
-    var search: String = js.native
+    var search: String
   }
   object URLObject {
     

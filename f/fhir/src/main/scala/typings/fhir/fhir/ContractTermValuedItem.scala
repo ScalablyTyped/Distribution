@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contract Term Valued Item List
   */
-@js.native
-trait ContractTermValuedItem extends BackboneElement {
+trait ContractTermValuedItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'effectiveTime'.
     */
-  var _effectiveTime: js.UndefOr[Element] = js.native
+  var _effectiveTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'factor'.
     */
-  var _factor: js.UndefOr[Element] = js.native
+  var _factor: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'points'.
     */
-  var _points: js.UndefOr[Element] = js.native
+  var _points: js.UndefOr[Element] = js.undefined
   
   /**
     * Contract Term Valued Item Effective Tiem
     */
-  var effectiveTime: js.UndefOr[dateTime] = js.native
+  var effectiveTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Contract Term Valued Item Type
     */
-  var entityCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var entityCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Contract Term Valued Item Type
     */
-  var entityReference: js.UndefOr[Reference] = js.native
+  var entityReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Contract Term Valued Item Price Scaling Factor
     */
-  var factor: js.UndefOr[decimal] = js.native
+  var factor: js.UndefOr[decimal] = js.undefined
   
   /**
     * Contract Term Valued Item Number
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Total Contract Term Valued Item Value
     */
-  var net: js.UndefOr[Money] = js.native
+  var net: js.UndefOr[Money] = js.undefined
   
   /**
     * Contract Term Valued Item Difficulty Scaling Factor
     */
-  var points: js.UndefOr[decimal] = js.native
+  var points: js.UndefOr[decimal] = js.undefined
   
   /**
     * Contract Term Valued Item Count
     */
-  var quantity: js.UndefOr[Quantity] = js.native
+  var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Contract Term Valued Item fee, charge, or cost
     */
-  var unitPrice: js.UndefOr[Money] = js.native
+  var unitPrice: js.UndefOr[Money] = js.undefined
 }
 object ContractTermValuedItem {
   

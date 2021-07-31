@@ -2,17 +2,15 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X509Extension extends StObject {
   
-  var critical: Boolean = js.native
+  var critical: Boolean
   
-  var oid: String = js.native
+  var oid: String
   
-  var vidx: Double = js.native
+  var vidx: Double
 }
 object X509Extension {
   

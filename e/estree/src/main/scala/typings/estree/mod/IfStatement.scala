@@ -2,29 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var alternate: js.UndefOr[Statement | Null] = js.native
+  var alternate: js.UndefOr[Statement | Null] = js.undefined
   
-  var consequent: Statement = js.native
+  var consequent: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_IfStatement: typings.estree.estreeStrings.IfStatement = js.native
+  var type_IfStatement: typings.estree.estreeStrings.IfStatement
 }
 object IfStatement {
   
   @scala.inline
-  def apply(consequent: Statement, test: Expression, `type`: typings.estree.estreeStrings.IfStatement): IfStatement = {
+  def apply(consequent: Statement, test: Expression): IfStatement = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement]
   }
   

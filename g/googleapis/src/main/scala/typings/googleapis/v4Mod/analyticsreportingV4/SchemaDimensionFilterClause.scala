@@ -2,27 +2,25 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group of dimension filters. Set the operator value to specify how the
   * filters are logically combined.
   */
-@js.native
 trait SchemaDimensionFilterClause extends StObject {
   
   /**
     * The repeated set of filters. They are logically combined based on the
     * operator specified.
     */
-  var filters: js.UndefOr[js.Array[SchemaDimensionFilter]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaDimensionFilter]] = js.undefined
   
   /**
     * The operator for combining multiple dimension filters. If unspecified, it
     * is treated as an `OR`.
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object SchemaDimensionFilterClause {
   

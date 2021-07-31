@@ -2,21 +2,19 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataIndex extends StObject {
   
-  var dataIndex: js.UndefOr[Double] = js.native
+  var dataIndex: js.UndefOr[Double] = js.undefined
   
-  var dataSetIndex: js.UndefOr[Double] = js.native
+  var dataSetIndex: js.UndefOr[Double] = js.undefined
   
-  var stackIndex: js.UndefOr[Double] = js.native
+  var stackIndex: js.UndefOr[Double] = js.undefined
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DataIndex {
   

@@ -2,7 +2,6 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Selection")
@@ -53,54 +52,51 @@ class Selection protected () extends Range {
 /* static members */
 object Selection {
   
+  @JSImport("monaco-editor", "Selection")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create with a direction.
     */
-  @JSImport("monaco-editor", "Selection.createWithDirection")
-  @js.native
+  @scala.inline
   def createWithDirection(
     startLineNumber: Double,
     startColumn: Double,
     endLineNumber: Double,
     endColumn: Double,
     direction: SelectionDirection
-  ): Selection = js.native
+  ): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithDirection")(startLineNumber.asInstanceOf[js.Any], startColumn.asInstanceOf[js.Any], endLineNumber.asInstanceOf[js.Any], endColumn.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Selection]
   
   /**
     * Create a `Selection` from one or two positions
     */
-  @JSImport("monaco-editor", "Selection.fromPositions")
-  @js.native
-  def fromPositions(start: IPosition): Selection = js.native
-  @JSImport("monaco-editor", "Selection.fromPositions")
-  @js.native
-  def fromPositions(start: IPosition, end: IPosition): Selection = js.native
+  @scala.inline
+  def fromPositions(start: IPosition): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  @scala.inline
+  def fromPositions(start: IPosition, end: IPosition): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Selection]
   
   /**
     * Test if `obj` is an `ISelection`.
     */
-  @JSImport("monaco-editor", "Selection.isISelection")
-  @js.native
-  def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = js.native
+  @scala.inline
+  def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISelection")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.ISelection */ Boolean]
   
   /**
     * Create a `Selection` from an `ISelection`.
     */
-  @JSImport("monaco-editor", "Selection.liftSelection")
-  @js.native
-  def liftSelection(sel: ISelection): Selection = js.native
+  @scala.inline
+  def liftSelection(sel: ISelection): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("liftSelection")(sel.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
   /**
     * `a` equals `b`.
     */
-  @JSImport("monaco-editor", "Selection.selectionsArrEqual")
-  @js.native
-  def selectionsArrEqual(a: js.Array[ISelection], b: js.Array[ISelection]): Boolean = js.native
+  @scala.inline
+  def selectionsArrEqual(a: js.Array[ISelection], b: js.Array[ISelection]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsArrEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if the two selections are equal.
     */
-  @JSImport("monaco-editor", "Selection.selectionsEqual")
-  @js.native
-  def selectionsEqual(a: ISelection, b: ISelection): Boolean = js.native
+  @scala.inline
+  def selectionsEqual(a: ISelection, b: ISelection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

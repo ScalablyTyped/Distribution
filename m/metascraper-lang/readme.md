@@ -10,9 +10,9 @@ Get lang property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-lang |
 | Keywords           | lang, metascraper |
-| # releases         | 83 |
+| # releases         | 103 |
 | # dependents       | 8 |
-| # downloads        | 85547 |
+| # downloads        | 75622 |
 | # stars            | 0 |
 
 ## Links

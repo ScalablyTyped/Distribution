@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the resource that you want to add tags to. To get the ARN for a resource, use the applicable Get or List command:     GetResolverEndpoint     GetResolverRule     GetResolverRuleAssociation     ListResolverEndpoints     ListResolverRuleAssociations     ListResolverRules   
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
   
   /**
     * The tags that you want to add to the specified resource.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOperationsScopedList extends StObject {
   
   /**
     * [Output Only] A list of operations contained in this scope.
     */
-  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.native
+  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.undefined
   
   /**
     * [Output Only] Informational warning which replaces the list of operations
     * when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaOperationsScopedList {
   

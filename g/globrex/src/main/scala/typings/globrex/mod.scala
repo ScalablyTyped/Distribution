@@ -3,19 +3,19 @@ package typings.globrex
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("globrex", JSImport.Namespace)
-  @js.native
-  def apply(glob: String): Results = js.native
-  @JSImport("globrex", JSImport.Namespace)
-  @js.native
-  def apply(glob: String, options: Options): Results = js.native
+  @scala.inline
+  def apply(glob: String): Results = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Results]
+  @scala.inline
+  def apply(glob: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
   
+  @JSImport("globrex", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -26,7 +26,7 @@ object mod {
       * To match a literal -, include it as first or last character.
       * @default false
       */
-    var extended: js.UndefOr[Boolean] = js.native
+    var extended: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Parse input strings as it was a file path for special path related features.
@@ -34,7 +34,7 @@ object mod {
       * When true the returned object will have an additional path object.
       * @default false
       */
-    var filepath: js.UndefOr[Boolean] = js.native
+    var filepath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `globstar` is false globs like '/foo/ *' are transformed to the following '^\/foo\/.*$'
@@ -45,14 +45,14 @@ object mod {
       * Note: When globstar is true, '/foo/ **' is equivalent to '/foo/ *' when globstar is false
       * @default false
       */
-    var globstar: js.UndefOr[Boolean] = js.native
+    var globstar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Be forgiving about multiple slashes, like /// and make everything after the first / optional
       * This is how bash glob works.
       * @default false
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -91,14 +91,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
     /**
       * JavaScript RegExp instance build for testing against paths.
       * The regex have different path separators depending on host OS.
       */
-    var regex: RegExp = js.native
+    var regex: RegExp
     
     /**
       * Array of RegExp instances separated by /.
@@ -107,12 +106,12 @@ object mod {
       * [ /^foo$/, /^bar$/, /^([^\/]*)$/, '^baz\\.(md|js|txt)$' ]
       * ```
       */
-    var segments: js.Array[RegExp] = js.native
+    var segments: js.Array[RegExp]
     
     /**
       * String representation of the RegExp
       */
-    var string: String = js.native
+    var string: String
   }
   object Path {
     
@@ -139,14 +138,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
     /** This property only exists if the option `filepath` is true. */
-    var path: js.UndefOr[Path] = js.native
+    var path: js.UndefOr[Path] = js.undefined
     
     /** JavaScript RegExp instance. */
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Results {
     

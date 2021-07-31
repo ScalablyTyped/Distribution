@@ -2,7 +2,6 @@ package typings.webAppManifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://w3c.github.io/manifest/#externalapplicationresource-and-its-members
   */
-@js.native
 trait ExternalApplicationResource extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ExternalApplicationResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#fingerprints-member
     */
-  var fingerprints: js.UndefOr[js.Array[Fingerprint]] = js.native
+  var fingerprints: js.UndefOr[js.Array[Fingerprint]] = js.undefined
   
   /**
     * The `id` member of an ExternalApplicationResource dictionary represents the id which is used to
@@ -27,7 +25,7 @@ trait ExternalApplicationResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#id-member
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The `min_version` member of an `ExternalApplicationResource` dictionary represents the minimum version
@@ -35,14 +33,14 @@ trait ExternalApplicationResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#min_version-member
     */
-  var min_version: js.UndefOr[String] = js.native
+  var min_version: js.UndefOr[String] = js.undefined
   
   /**
     * The `platform` member represents the platform to which a containing object applies.
     *
     * @see https://w3c.github.io/manifest/#platform-member-0
     */
-  var platform: String = js.native
+  var platform: String
   
   /**
     * The `url` member of an ExternalApplicationResource dictionary represents the
@@ -50,7 +48,7 @@ trait ExternalApplicationResource extends StObject {
     *
     * @see https://w3c.github.io/manifest/#url-member-0
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ExternalApplicationResource {
   

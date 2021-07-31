@@ -3,39 +3,37 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the zoom settings on a capture device. */
-@js.native
 trait ZoomControl extends StObject {
   
   /**
     * Configures the zoom control with the provided zoom settings.
     * @param settings The zoom settings.
     */
-  def configure(settings: ZoomSettings): Unit = js.native
+  def configure(settings: ZoomSettings): Unit
   
   /** Gets the maximum zoom value supported by the capture device. */
-  var max: Double = js.native
+  var max: Double
   
   /** Gets the minimum zoom value supported by the capture device. */
-  var min: Double = js.native
+  var min: Double
   
   /** Gets a value indicating the current zoom transition mode. */
-  var mode: ZoomTransitionMode = js.native
+  var mode: ZoomTransitionMode
   
   /** Gets the smallest zoom value increment supported by the capture device. */
-  var step: Double = js.native
+  var step: Double
   
   /** Gets a value indicating whether zoom control is supported by the capture device. */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the list of ZoomTransitionMode values indicating the modes supported by the capture device. */
-  var supportedModes: IVectorView[ZoomTransitionMode] = js.native
+  var supportedModes: IVectorView[ZoomTransitionMode]
   
   /** Gets or sets the zoom value to be used by the capture device. */
-  var value: Double = js.native
+  var value: Double
 }
 object ZoomControl {
   

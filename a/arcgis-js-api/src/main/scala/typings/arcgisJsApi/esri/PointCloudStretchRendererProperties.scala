@@ -7,39 +7,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudStretchRendererProperties extends PointCloudRendererProperties {
+trait PointCloudStretchRendererProperties
+  extends StObject
+     with PointCloudRendererProperties {
   
   /**
     * The name of the number field whose values are used to drive the continuous color visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#field)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * A transform that is applied to the field value before evaluating the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
     */
-  var fieldTransformType: js.UndefOr[none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.native
+  var fieldTransformType: js.UndefOr[none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
   
   /**
     * An object providing options for displaying the renderer in the Legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#legendOptions)
     */
-  var legendOptions: js.UndefOr[PointCloudStretchRendererLegendOptions] = js.native
+  var legendOptions: js.UndefOr[PointCloudStretchRendererLegendOptions] = js.undefined
   
   /**
     * An array of color value pairs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
     */
-  var stops: js.UndefOr[js.Array[PointCloudStretchRendererStops]] = js.native
+  var stops: js.UndefOr[js.Array[PointCloudStretchRendererStops]] = js.undefined
 }
 object PointCloudStretchRendererProperties {
   

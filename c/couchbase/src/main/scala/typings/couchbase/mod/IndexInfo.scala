@@ -3,58 +3,56 @@ package typings.couchbase.mod
 import typings.couchbase.couchbaseStrings.gsi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexInfo extends StObject {
   
   /**
     * ID for the index.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * List of index keys.
     */
-  var index_key: js.Array[String] = js.native
+  var index_key: js.Array[String]
   
   /**
     * True if this is a primary index.
     */
-  var is_primary: Boolean = js.native
+  var is_primary: Boolean
   
   /**
     * ID for the keyspace to which the index belongs.
     */
-  var keyspace_id: String = js.native
+  var keyspace_id: String
   
   /**
     * Name for the index.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * ID for the namespace to which the index belongs.
     */
-  var namespace_id: String = js.native
+  var namespace_id: String
   
   /**
     * The current state of the index.
     *
     * Values include `online` and `pending`.
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * ID for the datastore to which the index belongs.
     */
-  var store_id: String = js.native
+  var store_id: String
   
   /**
     * The type of view, which will always be `gsi`.
     */
-  var using: gsi = js.native
+  var `using`: gsi
 }
 object IndexInfo {
   
@@ -67,10 +65,10 @@ object IndexInfo {
     name: String,
     namespace_id: String,
     state: String,
-    store_id: String,
-    using: gsi
+    store_id: String
   ): IndexInfo = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index_key = index_key.asInstanceOf[js.Any], is_primary = is_primary.asInstanceOf[js.Any], keyspace_id = keyspace_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace_id = namespace_id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], store_id = store_id.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index_key = index_key.asInstanceOf[js.Any], is_primary = is_primary.asInstanceOf[js.Any], keyspace_id = keyspace_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace_id = namespace_id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], store_id = store_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")("gsi")
     __obj.asInstanceOf[IndexInfo]
   }
   

@@ -2,104 +2,104 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional items
   */
-@js.native
-trait ExplanationOfBenefitItemDetail extends BackboneElement {
+trait ExplanationOfBenefitItemDetail
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'factor'.
     */
-  var _factor: js.UndefOr[Element] = js.native
+  var _factor: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'noteNumber'.
     */
-  var _noteNumber: js.UndefOr[js.Array[Element]] = js.native
+  var _noteNumber: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Detail level adjudication details
     */
-  var adjudication: js.UndefOr[js.Array[ExplanationOfBenefitItemAdjudication]] = js.native
+  var adjudication: js.UndefOr[js.Array[ExplanationOfBenefitItemAdjudication]] = js.undefined
   
   /**
     * Type of service or product
     */
-  var category: js.UndefOr[CodeableConcept] = js.native
+  var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Price scaling factor
     */
-  var factor: js.UndefOr[decimal] = js.native
+  var factor: js.UndefOr[decimal] = js.undefined
   
   /**
     * Service/Product billing modifiers
     */
-  var modifier: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var modifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Total additional item cost
     */
-  var net: js.UndefOr[Money] = js.native
+  var net: js.UndefOr[Money] = js.undefined
   
   /**
     * List of note numbers which apply
     */
-  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.native
+  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.undefined
   
   /**
     * Program specific reason for item inclusion
     */
-  var programCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var programCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Count of Products or Services
     */
-  var quantity: js.UndefOr[Quantity] = js.native
+  var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Revenue or cost center code
     */
-  var revenue: js.UndefOr[CodeableConcept] = js.native
+  var revenue: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Service instance
     */
-  var sequence: positiveInt = js.native
+  var sequence: positiveInt
   
   /**
     * Billing Code
     */
-  var service: js.UndefOr[CodeableConcept] = js.native
+  var service: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Additional items
     */
-  var subDetail: js.UndefOr[js.Array[ExplanationOfBenefitItemDetailSubDetail]] = js.native
+  var subDetail: js.UndefOr[js.Array[ExplanationOfBenefitItemDetailSubDetail]] = js.undefined
   
   /**
     * Group or type of product or service
     */
-  var `type`: CodeableConcept = js.native
+  var `type`: CodeableConcept
   
   /**
     * Unique Device Identifier
     */
-  var udi: js.UndefOr[js.Array[Reference]] = js.native
+  var udi: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Fee, charge or cost per point
     */
-  var unitPrice: js.UndefOr[Money] = js.native
+  var unitPrice: js.UndefOr[Money] = js.undefined
 }
 object ExplanationOfBenefitItemDetail {
   

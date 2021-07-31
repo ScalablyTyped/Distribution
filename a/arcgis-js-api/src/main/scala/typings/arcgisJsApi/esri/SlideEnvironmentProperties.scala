@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlideEnvironmentProperties extends Object {
+trait SlideEnvironmentProperties
+  extends StObject
+     with Object {
   
   /**
     * Settings for defining the lighting of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
     */
-  var lighting: js.UndefOr[LightingProperties] = js.native
+  var lighting: js.UndefOr[LightingProperties] = js.undefined
 }
 object SlideEnvironmentProperties {
   

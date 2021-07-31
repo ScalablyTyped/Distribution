@@ -3,24 +3,24 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCalendar.CustomDisabledDate event.
   */
-@js.native
-trait ASPxClientCalendarCustomDisabledDateEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCalendarCustomDisabledDateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the date processed in the calendar.
     */
-  var date: Date = js.native
+  var date: Date
   
   /**
     * Gets or sets a value specifying whether selection of the processed calendar date is disabled.
     */
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
 }
 object ASPxClientCalendarCustomDisabledDateEventArgs {
   

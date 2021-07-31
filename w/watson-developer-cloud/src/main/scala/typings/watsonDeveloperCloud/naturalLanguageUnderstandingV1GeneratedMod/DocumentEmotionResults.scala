@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Emotion results for the document as a whole. */
-@js.native
 trait DocumentEmotionResults extends StObject {
   
   /** Emotion results for the document as a whole. */
-  var emotion: js.UndefOr[EmotionScores] = js.native
+  var emotion: js.UndefOr[EmotionScores] = js.undefined
 }
 object DocumentEmotionResults {
   

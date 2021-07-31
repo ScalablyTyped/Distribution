@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignPrivateIpAddressesResult extends StObject {
   
   /**
     * The private IP addresses assigned to the network interface.
     */
-  var AssignedPrivateIpAddresses: js.UndefOr[AssignedPrivateIpAddressList] = js.native
+  var AssignedPrivateIpAddresses: js.UndefOr[AssignedPrivateIpAddressList] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
 }
 object AssignPrivateIpAddressesResult {
   

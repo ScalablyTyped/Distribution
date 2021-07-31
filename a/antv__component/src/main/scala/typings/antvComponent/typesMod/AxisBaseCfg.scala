@@ -3,62 +3,62 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AxisBaseCfg extends GroupComponentCfg {
+trait AxisBaseCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 文本标签的配置项
     */
-  var label: js.UndefOr[AxisLabelCfg] = js.native
+  var label: js.UndefOr[AxisLabelCfg] = js.undefined
   
   /**
     * 坐标轴线的配置项
     * @type {AxisLineCfg}
     */
-  var line: js.UndefOr[AxisLineCfg] = js.native
+  var line: js.UndefOr[AxisLineCfg] = js.undefined
   
   /**
     * 处理遮挡时的顺序，默认 ['autoRotate', 'autoHide']
     */
-  var overlapOrder: js.UndefOr[js.Array[String]] = js.native
+  var overlapOrder: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * 坐标轴子刻度线的配置项
     * @type {AxisSubTickLineCfg}
     */
-  var subTickLine: js.UndefOr[AxisSubTickLineCfg] = js.native
+  var subTickLine: js.UndefOr[AxisSubTickLineCfg] = js.undefined
   
   /**
     * 坐标轴刻度线线的配置项
     * @type {AxisTickLineCfg}
     */
-  var tickLine: js.UndefOr[AxisTickLineCfg] = js.native
+  var tickLine: js.UndefOr[AxisTickLineCfg] = js.undefined
   
   /**
     * 坐标轴刻度的集合
     * @type {ListItem[]}
     */
-  var ticks: js.Array[ListItem] = js.native
+  var ticks: js.Array[ListItem]
   
   /**
     * 标题的配置项
     * @type {AxisTitleCfg}
     */
-  var title: js.UndefOr[AxisTitleCfg] = js.native
+  var title: js.UndefOr[AxisTitleCfg] = js.undefined
   
   /**
     * 垂直于坐标轴方向的因子，决定文本、title、tickLine 在坐标轴的哪一侧，默认是 1，在坐标轴逆时针方向
     */
-  var verticalFactor: js.UndefOr[Double] = js.native
+  var verticalFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * 垂直于坐标轴方向的限制长度，防止文本超出
     * @type {number}
     */
-  var verticalLimitLength: js.UndefOr[Double] = js.native
+  var verticalLimitLength: js.UndefOr[Double] = js.undefined
 }
 object AxisBaseCfg {
   

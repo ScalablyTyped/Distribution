@@ -8,7 +8,6 @@ import typings.mangopay2NodejsSdk.mod.wallet.ClientWalletData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Clients")

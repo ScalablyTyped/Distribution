@@ -3,19 +3,17 @@ package typings.nodeHueApi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IState extends StObject {
   
-  var config: IBridgeConfig = js.native
+  var config: IBridgeConfig
   
-  var groups: StringDictionary[ILightGroup] = js.native
+  var groups: StringDictionary[ILightGroup]
   
-  var lights: StringDictionary[ILight] = js.native
+  var lights: StringDictionary[ILight]
   
-  var schedules: StringDictionary[ISchedule] = js.native
+  var schedules: StringDictionary[ISchedule]
 }
 object IState {
   

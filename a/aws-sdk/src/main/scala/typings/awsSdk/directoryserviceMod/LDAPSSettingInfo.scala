@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LDAPSSettingInfo extends StObject {
   
   /**
     * The state of the LDAPS settings.
     */
-  var LDAPSStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSStatus] = js.native
+  var LDAPSStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSStatus] = js.undefined
   
   /**
     * Describes a state change for LDAPS.
     */
-  var LDAPSStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSStatusReason] = js.native
+  var LDAPSStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.LDAPSStatusReason] = js.undefined
   
   /**
     * The date and time when the LDAPS settings were last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.native
+  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
 }
 object LDAPSSettingInfo {
   

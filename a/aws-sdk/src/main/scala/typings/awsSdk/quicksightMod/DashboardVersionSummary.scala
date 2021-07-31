@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardVersionSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The time that this dashboard version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * Description.
     */
-  var Description: js.UndefOr[VersionDescription] = js.native
+  var Description: js.UndefOr[VersionDescription] = js.undefined
   
   /**
     * Source entity ARN.
     */
-  var SourceEntityArn: js.UndefOr[Arn] = js.native
+  var SourceEntityArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * Version number.
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object DashboardVersionSummary {
   

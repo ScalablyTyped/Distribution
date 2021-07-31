@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Apply a color scheme in a style pipe
+Create chalk style schemes with simpler style strings
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chalk-pipe |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 62 |
-| # downloads        | 1078320 |
+| # releases         | 2 |
+| # dependents       | 71 |
+| # downloads        | 1868748 |
 | # stars            | 0 |
 
 ## Links

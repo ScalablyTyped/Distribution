@@ -2,26 +2,24 @@ package typings.webpack.webpackOptionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LibraryCustomUmdObject extends StObject {
   
   /**
   	 * Name of the exposed AMD library in the UMD
   	 */
-  var amd: js.UndefOr[String] = js.native
+  var amd: js.UndefOr[String] = js.undefined
   
   /**
   	 * Name of the exposed commonjs export in the UMD
   	 */
-  var commonjs: js.UndefOr[String] = js.native
+  var commonjs: js.UndefOr[String] = js.undefined
   
   /**
   	 * Name of the property exposed globally by a UMD library
   	 */
-  var root: js.UndefOr[String | ArrayOfStringValues] = js.native
+  var root: js.UndefOr[String | ArrayOfStringValues] = js.undefined
 }
 object LibraryCustomUmdObject {
   

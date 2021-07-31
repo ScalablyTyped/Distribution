@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterfacePermission extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: js.UndefOr[String] = js.native
+  var AwsAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS service.
     */
-  var AwsService: js.UndefOr[String] = js.native
+  var AwsService: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the network interface permission.
     */
-  var NetworkInterfacePermissionId: js.UndefOr[String] = js.native
+  var NetworkInterfacePermissionId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of permission.
     */
-  var Permission: js.UndefOr[InterfacePermissionType] = js.native
+  var Permission: js.UndefOr[InterfacePermissionType] = js.undefined
   
   /**
     * Information about the state of the permission.
     */
-  var PermissionState: js.UndefOr[NetworkInterfacePermissionState] = js.native
+  var PermissionState: js.UndefOr[NetworkInterfacePermissionState] = js.undefined
 }
 object NetworkInterfacePermission {
   

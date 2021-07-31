@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaAccountSummary extends StObject {
   
   /** Resource name of account referred to by this account summary Format: accounts/{account_id} Example: "accounts/1000" */
-  var account: js.UndefOr[String] = js.native
+  var account: js.UndefOr[String] = js.undefined
   
   /** Display name for the account referred to in this account summary. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Resource name for this account summary. Format: accountSummaries/{account_id} Example: "accountSummaries/1000" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** List of summaries for child accounts of this account. */
-  var propertySummaries: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaPropertySummary]] = js.native
+  var propertySummaries: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaPropertySummary]] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaAccountSummary {
   

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAppConfiguration extends ManagedAppPolicy {
+trait ManagedAppConfiguration
+  extends StObject
+     with ManagedAppPolicy {
   
   /**
     * A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned
     * by this service
     */
-  var customSettings: js.UndefOr[js.Array[KeyValuePair]] = js.native
+  var customSettings: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
 }
 object ManagedAppConfiguration {
   

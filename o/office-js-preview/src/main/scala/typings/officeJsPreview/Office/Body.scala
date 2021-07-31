@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -56,22 +55,18 @@ trait Body extends StObject {
     *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def appendOnSendAsync(data: String): Unit = js.native
-  def appendOnSendAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def appendOnSendAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def appendOnSendAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def appendOnSendAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def appendOnSendAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
   def getAsync(coercionType: String): Unit = js.native
   def getAsync(
     coercionType: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getAsync(coercionType: String, options: AsyncContextOptions): Unit = js.native
@@ -106,7 +101,7 @@ trait Body extends StObject {
   def getAsync(coercionType: CoercionType): Unit = js.native
   def getAsync(
     coercionType: CoercionType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getAsync(coercionType: CoercionType, options: AsyncContextOptions): Unit = js.native
@@ -134,10 +129,7 @@ trait Body extends StObject {
     *                  The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.
     */
   def getTypeAsync(): Unit = js.native
-  def getTypeAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]
-  ): Unit = js.native
+  def getTypeAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]): Unit = js.native
   def getTypeAsync(options: AsyncContextOptions): Unit = js.native
   def getTypeAsync(
     options: AsyncContextOptions,
@@ -177,17 +169,13 @@ trait Body extends StObject {
     *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def prependAsync(data: String): Unit = js.native
-  def prependAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def prependAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def prependAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def prependAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def prependAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
   /**
     * Replaces the entire body with the specified text.
@@ -221,17 +209,13 @@ trait Body extends StObject {
     *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setAsync(data: String): Unit = js.native
-  def setAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def setAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def setAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
   /**
     * Replaces the selection in the body with the specified text.
@@ -265,17 +249,13 @@ trait Body extends StObject {
     *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
-  def setSelectedDataAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def setSelectedDataAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setSelectedDataAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setSelectedDataAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
   /**
     * Adds or replaces the signature of the item body.
@@ -314,15 +294,11 @@ trait Body extends StObject {
     * @beta
     */
   def setSignatureAsync(data: String): Unit = js.native
-  def setSignatureAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def setSignatureAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def setSignatureAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setSignatureAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setSignatureAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
 }

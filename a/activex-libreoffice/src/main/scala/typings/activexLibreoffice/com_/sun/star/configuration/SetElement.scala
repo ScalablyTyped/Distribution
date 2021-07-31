@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,9 +42,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.GroupElement A complementary service for elements of a static heterogeneous collection.
   * @see com.sun.star.configuration.AccessRootElement A complementary service for the root element of a hierarchy.
   */
-@js.native
 trait SetElement
-  extends HierarchyElement
+  extends StObject
+     with HierarchyElement
      with XComponent
      with XTemplateInstance
 object SetElement {

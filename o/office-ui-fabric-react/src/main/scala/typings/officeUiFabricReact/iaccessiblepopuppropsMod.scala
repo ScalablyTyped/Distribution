@@ -3,48 +3,46 @@ package typings.officeUiFabricReact
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iaccessiblepopuppropsMod {
   
-  @js.native
   trait IAccessiblePopupProps extends StObject {
     
     /**
       * Aria label on close button.
       */
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the element to focus on when exiting the control's FocusTrapZone.
       * @defaultvalue The `element.target` that triggered the control opening.
       */
-    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.native
+    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Class name (not actual selector) for first focusable item. Do not append a dot.
       */
-    var firstFocusableSelector: js.UndefOr[String | js.Function0[String]] = js.native
+    var firstFocusableSelector: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * Whether control should force focus inside its focus trap zone.
       * @defaultvalue true
       */
-    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.native
+    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false (the default), the control's FocusTrapZone will restore focus to the element which
       * activated it once the trap zone is unmounted or disabled. Set to true to disable this behavior.
       * @defaultvalue false
       */
-    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.native
+    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this control will allow clicks outside its FocusTrapZone.
       * @defaultvalue false
       */
-    var isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.native
+    var isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.undefined
   }
   object IAccessiblePopupProps {
     

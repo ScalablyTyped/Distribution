@@ -10,77 +10,75 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Featherlight {
   
-  @js.native
   trait Config extends StObject {
     
-    var afterClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var afterClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var afterContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var afterContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var afterOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var afterOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var ajax: js.UndefOr[String] = js.native
+    var ajax: js.UndefOr[String] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var beforeClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var beforeClose: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var beforeContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var beforeContent: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var beforeOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var closeIcon: js.UndefOr[String] = js.native
+    var closeIcon: js.UndefOr[String] = js.undefined
     
-    var closeOnClick: js.UndefOr[Boolean | String] = js.native
+    var closeOnClick: js.UndefOr[Boolean | String] = js.undefined
     
-    var closeOnEsc: js.UndefOr[Boolean] = js.native
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var closeSpeed: js.UndefOr[Double | String] = js.native
+    var closeSpeed: js.UndefOr[Double | String] = js.undefined
     
-    var closeTrigger: js.UndefOr[String] = js.native
+    var closeTrigger: js.UndefOr[String] = js.undefined
     
-    var contentFilters: js.UndefOr[js.Any] = js.native
+    var contentFilters: js.UndefOr[js.Any] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var jquery: js.UndefOr[JQuery] = js.native
+    var jquery: js.UndefOr[JQuery] = js.undefined
     
-    var loading: js.UndefOr[String] = js.native
+    var loading: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var onKeyUp: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var onResize: js.UndefOr[js.Function1[/* event */ JQueryEventObject, _]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* event */ JQueryEventObject, js.Any]] = js.undefined
     
-    var openSpeed: js.UndefOr[Double | String] = js.native
+    var openSpeed: js.UndefOr[Double | String] = js.undefined
     
-    var openTrigger: js.UndefOr[String] = js.native
+    var openTrigger: js.UndefOr[String] = js.undefined
     
-    var otherClose: js.UndefOr[String] = js.native
+    var otherClose: js.UndefOr[String] = js.undefined
     
-    var persist: js.UndefOr[Boolean | String] = js.native
+    var persist: js.UndefOr[Boolean | String] = js.undefined
     
-    var resetCss: js.UndefOr[Boolean] = js.native
+    var resetCss: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var targetAttr: js.UndefOr[String] = js.native
+    var targetAttr: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -94,19 +92,19 @@ object Featherlight {
     implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterClose(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      def setAfterClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
       @scala.inline
-      def setAfterContent(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
+      def setAfterContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterContentUndefined: Self = StObject.set(x, "afterContent", js.undefined)
       
       @scala.inline
-      def setAfterOpen(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      def setAfterOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
@@ -124,19 +122,19 @@ object Featherlight {
       def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
       @scala.inline
-      def setBeforeClose(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      def setBeforeClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
       @scala.inline
-      def setBeforeContent(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
+      def setBeforeContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeContentUndefined: Self = StObject.set(x, "beforeContent", js.undefined)
       
       @scala.inline
-      def setBeforeOpen(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      def setBeforeOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
@@ -214,13 +212,13 @@ object Featherlight {
       def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
       @scala.inline
-      def setOnKeyUp(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      def setOnKeyUp(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
       @scala.inline
-      def setOnResize(value: /* event */ JQueryEventObject => _): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      def setOnResize(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
@@ -287,14 +285,13 @@ object Featherlight {
     }
   }
   
-  @js.native
   trait ContentFilter extends StObject {
     
-    var process: js.UndefOr[js.Function1[/* data */ JQuery | String, JQuery | JQueryPromise[JQuery]]] = js.native
+    var process: js.UndefOr[js.Function1[/* data */ JQuery | String, JQuery | JQueryPromise[JQuery]]] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
     
-    var test: js.UndefOr[js.Function1[/* data */ JQuery | String, Boolean]] = js.native
+    var test: js.UndefOr[js.Function1[/* data */ JQuery | String, Boolean]] = js.undefined
   }
   object ContentFilter {
     
@@ -330,7 +327,9 @@ object Featherlight {
   type ContentFilters = StringDictionary[ContentFilter]
   
   @js.native
-  trait Featherlight extends Config {
+  trait Featherlight
+    extends StObject
+       with Config {
     
     @JSName("$content")
     var $content: JQuery = js.native
@@ -361,7 +360,8 @@ object Featherlight {
   
   @js.native
   trait FeatherlightStatic
-    extends Instantiable0[typings.featherlight.Featherlight.Featherlight]
+    extends StObject
+       with Instantiable0[typings.featherlight.Featherlight.Featherlight]
        with Instantiable1[
           (/* config */ Config) | (/* $content */ JQuery) | (/* $content */ String), 
           typings.featherlight.Featherlight.Featherlight

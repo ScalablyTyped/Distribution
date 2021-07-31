@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePublishingDestinationRequest extends StObject {
   
   /**
     * The ID of the publishing destination to retrieve.
     */
-  var DestinationId: String = js.native
+  var DestinationId: String
   
   /**
     * The unique ID of the detector associated with the publishing destination to retrieve.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object DescribePublishingDestinationRequest {
   

@@ -7,7 +7,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storage {
@@ -68,11 +67,13 @@ object storage {
   object TaskEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TaskEvent with String] = js.native
+    def apply(value: String): js.UndefOr[TaskEvent & String] = js.native
     
     @js.native
-    sealed trait STATE_CHANGED extends TaskEvent
-    /* "state_changed" */ val STATE_CHANGED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskEvent.STATE_CHANGED with String = js.native
+    sealed trait STATE_CHANGED
+      extends StObject
+         with TaskEvent
+    /* "state_changed" */ val STATE_CHANGED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskEvent.STATE_CHANGED & String = js.native
   }
   
   @js.native
@@ -82,39 +83,48 @@ object storage {
   object TaskState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TaskState with String] = js.native
+    def apply(value: String): js.UndefOr[TaskState & String] = js.native
     
     @js.native
-    sealed trait CANCELLED extends TaskState
-    /* "cancelled" */ val CANCELLED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.CANCELLED with String = js.native
+    sealed trait CANCELLED
+      extends StObject
+         with TaskState
+    /* "cancelled" */ val CANCELLED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.CANCELLED & String = js.native
     
     @js.native
-    sealed trait ERROR extends TaskState
-    /* "error" */ val ERROR: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.ERROR with String = js.native
+    sealed trait ERROR
+      extends StObject
+         with TaskState
+    /* "error" */ val ERROR: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.ERROR & String = js.native
     
     @js.native
-    sealed trait PAUSED extends TaskState
-    /* "paused" */ val PAUSED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.PAUSED with String = js.native
+    sealed trait PAUSED
+      extends StObject
+         with TaskState
+    /* "paused" */ val PAUSED: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.PAUSED & String = js.native
     
     @js.native
-    sealed trait RUNNING extends TaskState
-    /* "running" */ val RUNNING: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.RUNNING with String = js.native
+    sealed trait RUNNING
+      extends StObject
+         with TaskState
+    /* "running" */ val RUNNING: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.RUNNING & String = js.native
     
     @js.native
-    sealed trait SUCCESS extends TaskState
-    /* "success" */ val SUCCESS: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.SUCCESS with String = js.native
+    sealed trait SUCCESS
+      extends StObject
+         with TaskState
+    /* "success" */ val SUCCESS: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState.SUCCESS & String = js.native
   }
   
-  @js.native
   trait DownloadTaskSnapshot extends StObject {
     
-    var bytesTransferred: Double = js.native
+    var bytesTransferred: Double
     
-    var ref: Reference = js.native
+    var ref: Reference
     
-    var state: TaskState = js.native
+    var state: TaskState
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object DownloadTaskSnapshot {
     
@@ -141,26 +151,27 @@ object storage {
     }
   }
   
-  @js.native
-  trait FullMetadata extends SettableMetadata {
+  trait FullMetadata
+    extends StObject
+       with SettableMetadata {
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var fullPath: String = js.native
+    var fullPath: String
     
-    var generation: String = js.native
+    var generation: String
     
-    var md5Hash: js.UndefOr[String | Null] = js.native
+    var md5Hash: js.UndefOr[String | Null] = js.undefined
     
-    var metageneration: String = js.native
+    var metageneration: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var timeCreated: String = js.native
+    var timeCreated: String
     
-    var updated: String = js.native
+    var updated: String
   }
   object FullMetadata {
     
@@ -280,20 +291,19 @@ object storage {
     def updateMetadata(metadata: SettableMetadata): js.Promise[FullMetadata] = js.native
   }
   
-  @js.native
   trait SettableMetadata extends StObject {
     
-    var cacheControl: js.UndefOr[String | Null] = js.native
+    var cacheControl: js.UndefOr[String | Null] = js.undefined
     
-    var contentDisposition: js.UndefOr[String | Null] = js.native
+    var contentDisposition: js.UndefOr[String | Null] = js.undefined
     
-    var contentEncoding: js.UndefOr[String | Null] = js.native
+    var contentEncoding: js.UndefOr[String | Null] = js.undefined
     
-    var contentLanguage: js.UndefOr[String | Null] = js.native
+    var contentLanguage: js.UndefOr[String | Null] = js.undefined
     
-    var contentType: js.UndefOr[String | Null] = js.native
+    var contentType: js.UndefOr[String | Null] = js.undefined
     
-    var customMetadata: js.UndefOr[Partial[Record[String, String]]] = js.native
+    var customMetadata: js.UndefOr[Partial[Record[String, String]]] = js.undefined
   }
   object SettableMetadata {
     
@@ -359,14 +369,13 @@ object storage {
     }
   }
   
-  @js.native
   trait StorageStatics extends StObject {
     
-    var Native: js.UndefOr[CACHESDIRECTORYPATH] = js.native
+    var Native: js.UndefOr[CACHESDIRECTORYPATH] = js.undefined
     
-    var TaskEvent: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskEvent = js.native
+    var TaskEvent: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskEvent
     
-    var TaskState: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState = js.native
+    var TaskState: typings.reactNativeFirebase.mod.RNFirebase.storage.TaskState
   }
   object StorageStatics {
     
@@ -403,7 +412,7 @@ object storage {
     def cancel(): Unit = js.native
     
     def on(event: TaskEvent, next: Handler[T]): js.Function0[Unit] = js.native
-    def on(event: TaskEvent, next: Handler[T], error: js.UndefOr[scala.Nothing], complete: Handler[T]): js.Function0[Unit] = js.native
+    def on(event: TaskEvent, next: Handler[T], error: Unit, complete: Handler[T]): js.Function0[Unit] = js.native
     def on(event: TaskEvent, next: Handler[T], error: ErrorHandler): js.Function0[Unit] = js.native
     def on(event: TaskEvent, next: Handler[T], error: ErrorHandler, complete: Handler[T]): js.Function0[Unit] = js.native
     def on(event: TaskEvent, observer: Complete[T]): js.Function0[Unit] = js.native
@@ -419,22 +428,21 @@ object storage {
     def resume(): Unit = js.native
   }
   
-  @js.native
   trait UploadTaskSnapshot extends StObject {
     
-    var bytesTransferred: Double = js.native
+    var bytesTransferred: Double
     
-    var downloadURL: String | Null = js.native
+    var downloadURL: String | Null
     
-    var metadata: FullMetadata = js.native
+    var metadata: FullMetadata
     
-    var ref: Reference = js.native
+    var ref: Reference
     
-    var state: TaskState = js.native
+    var state: TaskState
     
-    var task: StorageTask[UploadTaskSnapshot] = js.native
+    var task: StorageTask[UploadTaskSnapshot]
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object UploadTaskSnapshot {
     
@@ -447,7 +455,7 @@ object storage {
       task: StorageTask[UploadTaskSnapshot],
       totalBytes: Double
     ): UploadTaskSnapshot = {
-      val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any], downloadURL = null)
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     

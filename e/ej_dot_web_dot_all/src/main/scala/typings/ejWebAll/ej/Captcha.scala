@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Captcha extends Widget_ {
+trait Captcha
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -15,92 +16,91 @@ trait Captcha extends Widget_ {
 }
 object Captcha {
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the character set of the Captcha that will be used to generate captcha text randomly.
       */
-    var characterSet: js.UndefOr[String] = js.native
+    var characterSet: js.UndefOr[String] = js.undefined
     
     /** Specifies the error message to be displayed when the Captcha mismatch.
       */
-    var customErrorMessage: js.UndefOr[String] = js.native
+    var customErrorMessage: js.UndefOr[String] = js.undefined
     
     /** Set the Captcha validation automatically.
       */
-    var enableAutoValidation: js.UndefOr[Boolean] = js.native
+    var enableAutoValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the case sensitivity for the characters typed in the Captcha.
       */
-    var enableCaseSensitivity: js.UndefOr[Boolean] = js.native
+    var enableCaseSensitivity: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the background patterns for the Captcha.
       */
-    var enablePattern: js.UndefOr[Boolean] = js.native
+    var enablePattern: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the Captcha direction as right to left alignment.
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the background appearance for the captcha.
       */
-    var hatchStyle: js.UndefOr[HatchStyle | String] = js.native
+    var hatchStyle: js.UndefOr[HatchStyle | String] = js.undefined
     
     /** Specifies the height of the Captcha.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the method with values to be mapped in the Captcha.
       */
-    var mapper: js.UndefOr[String] = js.native
+    var mapper: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum number of characters used in the Captcha.
       */
-    var maximumLength: js.UndefOr[Double] = js.native
+    var maximumLength: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum number of characters used in the Captcha.
       */
-    var minimumLength: js.UndefOr[Double] = js.native
+    var minimumLength: js.UndefOr[Double] = js.undefined
     
     /** Fires when captcha refresh begins.
       */
-    var refreshBegin: js.UndefOr[js.Function1[/* e */ RefreshBeginEventArgs, Unit]] = js.native
+    var refreshBegin: js.UndefOr[js.Function1[/* e */ RefreshBeginEventArgs, Unit]] = js.undefined
     
     /** Fires after captcha refresh completed.
       */
-    var refreshComplete: js.UndefOr[js.Function1[/* e */ RefreshCompleteEventArgs, Unit]] = js.native
+    var refreshComplete: js.UndefOr[js.Function1[/* e */ RefreshCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires when captcha refresh fails to load.
       */
-    var refreshFailure: js.UndefOr[js.Function1[/* e */ RefreshFailureEventArgs, Unit]] = js.native
+    var refreshFailure: js.UndefOr[js.Function1[/* e */ RefreshFailureEventArgs, Unit]] = js.undefined
     
     /** Fires after captcha refresh succeeded.
       */
-    var refreshSuccess: js.UndefOr[js.Function1[/* e */ RefreshSuccessEventArgs, Unit]] = js.native
+    var refreshSuccess: js.UndefOr[js.Function1[/* e */ RefreshSuccessEventArgs, Unit]] = js.undefined
     
     /** Specifies the method to map values to Captcha.
       */
-    var requestMapper: js.UndefOr[String] = js.native
+    var requestMapper: js.UndefOr[String] = js.undefined
     
     /** Sets the Captcha with audio support, that enables to dictate the captcha text.
       */
-    var showAudioButton: js.UndefOr[Boolean] = js.native
+    var showAudioButton: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the Captcha with a refresh button.
       */
-    var showRefreshButton: js.UndefOr[Boolean] = js.native
+    var showRefreshButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the target button of the Captcha to validate the entered text and captcha text.
       */
-    var targetButton: js.UndefOr[String] = js.native
+    var targetButton: js.UndefOr[String] = js.undefined
     
     /** Specifies the target input element that will verify the Captcha.
       */
-    var targetInput: js.UndefOr[String] = js.native
+    var targetInput: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the Captcha.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -241,20 +241,19 @@ object Captcha {
     }
   }
   
-  @js.native
   trait RefreshBeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Captcha model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RefreshBeginEventArgs {
     
@@ -287,20 +286,19 @@ object Captcha {
     }
   }
   
-  @js.native
   trait RefreshCompleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Captcha model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RefreshCompleteEventArgs {
     
@@ -333,20 +331,19 @@ object Captcha {
     }
   }
   
-  @js.native
   trait RefreshFailureEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Captcha model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RefreshFailureEventArgs {
     
@@ -379,20 +376,19 @@ object Captcha {
     }
   }
   
-  @js.native
   trait RefreshSuccessEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Captcha model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RefreshSuccessEventArgs {
     

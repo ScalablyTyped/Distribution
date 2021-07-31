@@ -2,19 +2,19 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateUserData extends UserData[AppMetadata, UserMetadata] {
+trait UpdateUserData
+  extends StObject
+     with UserData[AppMetadata, UserMetadata] {
   
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
-  var verify_password: js.UndefOr[Boolean] = js.native
+  var verify_password: js.UndefOr[Boolean] = js.undefined
   
-  var verify_phone_number: js.UndefOr[Boolean] = js.native
+  var verify_phone_number: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateUserData {
   

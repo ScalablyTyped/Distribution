@@ -10,97 +10,95 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonPopover extends StObject {
   
   /**
     * If `true`, the popover will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the popover will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The component to display inside of the popover.
     */
-  var component: ComponentRef = js.native
+  var component: ComponentRef
   
   /**
     * The data to pass to the popover component.
     */
-  var componentProps: js.UndefOr[ComponentProps[Null]] = js.native
+  var componentProps: js.UndefOr[ComponentProps[Null]] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Animation to use when the popover is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The event to pass to the popover animation.
     */
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the popover is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the popover has dismissed.
     */
-  var onIonPopoverDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonPopoverDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the popover has presented.
     */
-  var onIonPopoverDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonPopoverDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the popover has dismissed.
     */
-  var onIonPopoverWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonPopoverWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the popover has presented.
     */
-  var onIonPopoverWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonPopoverWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * If `true`, a backdrop will be displayed behind the popover.
     */
-  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the popover will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object IonPopover {
   
   @scala.inline
   def apply(): IonPopover = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(component = null)
     __obj.asInstanceOf[IonPopover]
   }
   
@@ -171,7 +169,7 @@ object IonPopover {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonPopoverDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonPopoverDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonPopoverDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPopoverDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonPopoverDidDismissUndefined: Self = StObject.set(x, "onIonPopoverDidDismiss", js.undefined)
@@ -183,7 +181,7 @@ object IonPopover {
     def setOnIonPopoverDidPresentUndefined: Self = StObject.set(x, "onIonPopoverDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonPopoverWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonPopoverWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonPopoverWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPopoverWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonPopoverWillDismissUndefined: Self = StObject.set(x, "onIonPopoverWillDismiss", js.undefined)

@@ -9,18 +9,17 @@ import typings.reactSelect.anon.ClassName
 import typings.reactSelect.anon.CropWithEllipsis
 import typings.reactSelect.anon.OnClick
 import typings.reactSelect.anon.OnTouchEnd
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.ActionTypes
-import typings.reactSelect.typesMod.ClassNamesState
+import typings.reactSelect.typesMod.CommonProps
 import typings.reactSelect.typesMod.OptionTypeBase
-import typings.reactSelect.typesMod.OptionsType
-import typings.reactSelect.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMultiValueMod {
+  
+  @JSImport("react-select/src/components/MultiValue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/components/MultiValue", JSImport.Default)
   @js.native
@@ -108,28 +107,24 @@ object componentsMultiValueMod {
     def defaultProps_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select/src/components/MultiValue", "multiValueCSS")
-  @js.native
-  def multiValueCSS(): CSSProperties = js.native
+  @scala.inline
+  def multiValueCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")().asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/MultiValue", "multiValueLabelCSS")
-  @js.native
-  def multiValueLabelCSS(props: MultiValueProps[_]): CSSProperties = js.native
+  @scala.inline
+  def multiValueLabelCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/MultiValue", "multiValueRemoveCSS")
-  @js.native
-  def multiValueRemoveCSS(props: MultiValueProps[_]): CSSProperties = js.native
+  @scala.inline
+  def multiValueRemoveCSS(props: MultiValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @js.native
   trait MultiValueGenericProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var data: OptionType = js.native
+    var data: OptionType
     
-    var innerProps: ClassName = js.native
+    var innerProps: ClassName
     
-    var selectProps: js.Any = js.native
+    var selectProps: js.Any
   }
   object MultiValueGenericProps {
     
@@ -140,7 +135,7 @@ object componentsMultiValueMod {
     }
     
     @scala.inline
-    implicit class MultiValueGenericPropsMutableBuilder[Self <: MultiValueGenericProps[_], OptionType /* <: OptionTypeBase */] (val x: Self with MultiValueGenericProps[OptionType]) extends AnyVal {
+    implicit class MultiValueGenericPropsMutableBuilder[Self <: MultiValueGenericProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & MultiValueGenericProps[OptionType]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -159,36 +154,18 @@ object componentsMultiValueMod {
     }
   }
   
-  /* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactNode,   components :any,   cropWithEllipsis :boolean,   data :OptionType,   innerProps :any,   isFocused :boolean,   isDisabled :boolean,   removeProps :{onTouchEnd (event : any): void, onClick (event : any): void, onMouseDown (event : any): void}} */
   @js.native
-  trait MultiValueProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait MultiValueProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType] {
     
     var children: ReactNode = js.native
-    
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
     
     var components: js.Any = js.native
     
     var cropWithEllipsis: Boolean = js.native
     
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    
     var data: OptionType = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
     
     var innerProps: js.Any = js.native
     
@@ -196,54 +173,16 @@ object componentsMultiValueMod {
     
     var isFocused: Boolean = js.native
     
-    var isMulti: Boolean = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
     var removeProps: OnClick = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
   }
   
-  /* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactNode,   innerProps :{  className :string, onTouchEnd (event : any): void, onClick (event : any): void, onMouseDown (event : any): void},   selectProps :any} */
   @js.native
-  trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType] {
     
     var children: ReactNode = js.native
     
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
-    
     var innerProps: OnTouchEnd = js.native
-    
-    var isMulti: Boolean = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] with js.Any = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
   }
 }

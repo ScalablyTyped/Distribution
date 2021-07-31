@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,28 +14,27 @@ object mod extends Shortcut {
   
   type ErrorCallback = js.Function1[/* Error */ js.Any, Unit]
   
-  @js.native
   trait WakeOptions extends StObject {
     
     /**
       * The ip address to which the packet is send  (default: 255.255.255.255)
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /**
       * The interval between packets (default: 100ms)
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of packets to send (default: 3)
       */
-    var num_packets: js.UndefOr[Double] = js.native
+    var num_packets: js.UndefOr[Double] = js.undefined
     
     /**
       * The port to send to (default: 9)
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object WakeOptions {
     

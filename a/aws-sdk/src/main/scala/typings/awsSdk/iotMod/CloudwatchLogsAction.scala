@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudwatchLogsAction extends StObject {
   
   /**
     * The CloudWatch log group to which the action sends data.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
   /**
     * The IAM role that allows access to the CloudWatch log.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
 }
 object CloudwatchLogsAction {
   

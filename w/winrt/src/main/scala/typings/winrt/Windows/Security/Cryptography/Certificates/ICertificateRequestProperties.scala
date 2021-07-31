@@ -2,29 +2,27 @@ package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICertificateRequestProperties extends StObject {
   
-  var exportable: ExportOption = js.native
+  var exportable: ExportOption
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var hashAlgorithmName: String = js.native
+  var hashAlgorithmName: String
   
-  var keyAlgorithmName: String = js.native
+  var keyAlgorithmName: String
   
-  var keyProtectionLevel: KeyProtectionLevel = js.native
+  var keyProtectionLevel: KeyProtectionLevel
   
-  var keySize: Double = js.native
+  var keySize: Double
   
-  var keyStorageProviderName: String = js.native
+  var keyStorageProviderName: String
   
-  var keyUsages: EnrollKeyUsages = js.native
+  var keyUsages: EnrollKeyUsages
   
-  var subject: String = js.native
+  var subject: String
 }
 object ICertificateRequestProperties {
   

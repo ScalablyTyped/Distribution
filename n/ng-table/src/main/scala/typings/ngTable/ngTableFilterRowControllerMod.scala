@@ -6,7 +6,6 @@ import typings.ngTable.publicInterfacesMod.IFilterTemplateDef
 import typings.ngTable.publicInterfacesMod.IFilterTemplateDefMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableFilterRowControllerMod {
@@ -14,7 +13,7 @@ object ngTableFilterRowControllerMod {
   @JSImport("ng-table/src/browser/ngTableFilterRowController", "NgTableFilterRowController")
   @js.native
   class NgTableFilterRowController protected () extends StObject {
-    def this($scope: IScope with IScopeExtensions, ngTableFilterConfig: NgTableFilterConfig) = this()
+    def this($scope: IScope & IScopeExtensions, ngTableFilterConfig: NgTableFilterConfig) = this()
     
     var config: NgTableFilterConfig = js.native
     

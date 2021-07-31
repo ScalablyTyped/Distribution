@@ -5,45 +5,38 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withLatestFromMod {
   
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
+  @JSImport("rxjs/internal/operators/withLatestFrom", JSImport.Namespace)
   @js.native
-  def withLatestFrom[T, R](array: js.Array[ObservableInput[_]]): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, R](array: js.Array[ObservableInput[_]], project: js.Function1[/* repeated */ js.Any, R]): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, R](project: js.Function1[/* v1 */ T, R]): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */](source2: O2): OperatorFunction[T, js.Tuple2[T, ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, R](source2: O2, project: js.Function2[/* v1 */ T, /* v2 */ ObservedValueOf[O2], R]): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v2: O2, v3: O3): OperatorFunction[T, js.Tuple3[T, ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def withLatestFrom[T, R](array: js.Array[ObservableInput[js.Any]]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(array.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, R](array: js.Array[ObservableInput[js.Any]], project: js.Function1[/* repeated */ js.Any, R]): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(array.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]))*): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(observables.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, R](project: js.Function1[/* v1 */ T, R]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */](source2: O2): OperatorFunction[T, js.Tuple2[T, ObservedValueOf[O2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(source2.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Tuple2[T, ObservedValueOf[O2]]]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, R](source2: O2, project: js.Function2[/* v1 */ T, /* v2 */ ObservedValueOf[O2], R]): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(source2.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v2: O2, v3: O3): OperatorFunction[T, js.Tuple3[T, ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Tuple3[T, ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
     v2: O2,
     v3: O3,
     project: js.Function3[/* v1 */ T, /* v2 */ ObservedValueOf[O2], /* v3 */ ObservedValueOf[O3], R]
-  ): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v2: O2, v3: O3, v4: O4): OperatorFunction[T, js.Tuple4[T, ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v2: O2, v3: O3, v4: O4): OperatorFunction[T, js.Tuple4[T, ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.Tuple4[T, ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
     v2: O2,
     v3: O3,
     v4: O4,
@@ -54,16 +47,17 @@ object withLatestFromMod {
       /* v4 */ ObservedValueOf[O4], 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v2: O2, v3: O3, v4: O4, v5: O5): OperatorFunction[
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v2: O2, v3: O3, v4: O4, v5: O5): OperatorFunction[
     T, 
     js.Tuple5[T, ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4], ObservedValueOf[O5]]
-  ] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[
+    T, 
+    js.Tuple5[T, ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4], ObservedValueOf[O5]]
+  ]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
     v2: O2,
     v3: O3,
     v4: O4,
@@ -76,10 +70,9 @@ object withLatestFromMod {
       /* v5 */ ObservedValueOf[O5], 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): OperatorFunction[
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): OperatorFunction[
     T, 
     js.Tuple6[
       T, 
@@ -89,10 +82,19 @@ object withLatestFromMod {
       ObservedValueOf[O5], 
       ObservedValueOf[O6]
     ]
-  ] = js.native
-  @JSImport("rxjs/internal/operators/withLatestFrom", "withLatestFrom")
-  @js.native
-  def withLatestFrom[T, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[
+    T, 
+    js.Tuple6[
+      T, 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def withLatestFrom[T, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
     v2: O2,
     v3: O3,
     v4: O4,
@@ -107,5 +109,5 @@ object withLatestFromMod {
       /* v6 */ ObservedValueOf[O6], 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("withLatestFrom")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetOutpost extends StObject {
   
   /**
     * The outpost ARN of the subnet.
     */
-  var SubnetOutpostArn: js.UndefOr[String] = js.native
+  var SubnetOutpostArn: js.UndefOr[String] = js.undefined
 }
 object SubnetOutpost {
   

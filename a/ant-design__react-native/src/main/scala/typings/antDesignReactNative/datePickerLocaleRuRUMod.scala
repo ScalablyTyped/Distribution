@@ -3,7 +3,6 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.Day
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerLocaleRuRUMod {

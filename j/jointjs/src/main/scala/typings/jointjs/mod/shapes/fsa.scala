@@ -12,7 +12,6 @@ import typings.jointjs.mod.shapes.basic.Circle
 import typings.jointjs.mod.shapes.basic.CircleSelectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsa {
@@ -22,7 +21,7 @@ object fsa {
   // default label props
   class Arrow () extends Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -30,7 +29,7 @@ object fsa {
   @js.native
   class EndState () extends Element {
     def this(attributes: GenericAttributes[CirculoidSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CirculoidSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -38,7 +37,7 @@ object fsa {
   @js.native
   class StartState () extends Element {
     def this(attributes: GenericAttributes[SVGCircleSelector]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[SVGCircleSelector], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -46,18 +45,19 @@ object fsa {
   @js.native
   class State () extends Circle {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
-  @js.native
-  trait CirculoidSelectors extends Selectors {
+  trait CirculoidSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".inner")
-    var Dotinner: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotinner: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName(".outer")
-    var Dotouter: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotouter: js.UndefOr[SVGCircleAttributes] = js.undefined
   }
   object CirculoidSelectors {
     

@@ -2,15 +2,14 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsWithSearch
-  extends BaseOptions
+  extends StObject
+     with BaseOptions
      with Options {
   
-  var search: String = js.native
+  var search: String
 }
 object OptionsWithSearch {
   

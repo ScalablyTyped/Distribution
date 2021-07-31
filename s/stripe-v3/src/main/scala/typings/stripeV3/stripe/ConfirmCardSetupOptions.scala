@@ -2,10 +2,8 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmCardSetupOptions extends StObject {
   
   /*
@@ -13,7 +11,7 @@ trait ConfirmCardSetupOptions extends StObject {
     * you want to defer next action handling until later (e.g. for use in
     * the PaymentRequest API). Default is true.
     */
-  var handleActions: js.UndefOr[Boolean] = js.native
+  var handleActions: js.UndefOr[Boolean] = js.undefined
 }
 object ConfirmCardSetupOptions {
   

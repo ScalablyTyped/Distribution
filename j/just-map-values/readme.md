@@ -12,7 +12,7 @@ map an object, predicate updates values, recieves (value, key, object)
 | Keywords           | object, map, values, no-dependencies, just |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 12124 |
+| # downloads        | 26698 |
 | # stars            | 0 |
 
 ## Links

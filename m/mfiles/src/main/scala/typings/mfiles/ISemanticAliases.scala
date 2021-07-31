@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISemanticAliases extends StObject {
   
-  def Clone(): ISemanticAliases = js.native
+  def Clone(): ISemanticAliases
   
-  var Value: String = js.native
+  var Value: String
 }
 object ISemanticAliases {
   

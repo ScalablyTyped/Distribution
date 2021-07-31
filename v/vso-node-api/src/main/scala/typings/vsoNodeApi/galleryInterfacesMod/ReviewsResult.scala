@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewsResult extends StObject {
   
   /**
     * Flag indicating if there are more reviews to be shown (for paging)
     */
-  var hasMoreReviews: Boolean = js.native
+  var hasMoreReviews: Boolean
   
   /**
     * List of reviews
     */
-  var reviews: js.Array[Review] = js.native
+  var reviews: js.Array[Review]
   
   /**
     * Count of total review items
     */
-  var totalReviewCount: Double = js.native
+  var totalReviewCount: Double
 }
 object ReviewsResult {
   

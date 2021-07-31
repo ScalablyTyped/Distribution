@@ -1,7 +1,5 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreateSequenceFn
-import typings.nodePgMigrate.anon.ReverseRenameSequenceFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
@@ -10,7 +8,6 @@ import typings.nodePgMigrate.nodePgMigrateBooleans.`false`
 import typings.nodePgMigrate.nodePgMigrateBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sequencesTypesMod {
@@ -21,11 +18,18 @@ object sequencesTypesMod {
     String | js.Array[String]
   ]
   
-  type CreateSequence = CreateSequenceFn with ReverseCreateSequenceFn
+  @js.native
+  trait CreateSequence extends CreateSequenceFn {
+    
+    def reverse(sequenceName: Name): String | js.Array[String] = js.native
+    def reverse(sequenceName: Name, sequenceOptions: SequenceOptionsCreate & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateSequenceFn = js.native
+  }
   
   type CreateSequenceFn = js.Function2[
     /* sequenceName */ Name, 
-    /* sequenceOptions */ js.UndefOr[SequenceOptionsCreate with DropOptions], 
+    /* sequenceOptions */ js.UndefOr[SequenceOptionsCreate & DropOptions], 
     String | js.Array[String]
   ]
   
@@ -35,28 +39,33 @@ object sequencesTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameSequence = RenameSequenceFn with ReverseRenameSequenceFn
+  @js.native
+  trait RenameSequence extends RenameSequenceFn {
+    
+    def reverse(oldSequenceName: Name, newSequenceName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameSequenceFn = js.native
+  }
   
   type RenameSequenceFn = js.Function2[/* oldSequenceName */ Name, /* newSequenceName */ Name, String | js.Array[String]]
   
-  @js.native
   trait SequenceOptions extends StObject {
     
-    var cache: js.UndefOr[Double] = js.native
+    var cache: js.UndefOr[Double] = js.undefined
     
-    var cycle: js.UndefOr[Boolean] = js.native
+    var cycle: js.UndefOr[Boolean] = js.undefined
     
-    var increment: js.UndefOr[Double] = js.native
+    var increment: js.UndefOr[Double] = js.undefined
     
-    var maxvalue: js.UndefOr[Double | Null | `false`] = js.native
+    var maxvalue: js.UndefOr[Double | Null | `false`] = js.undefined
     
-    var minvalue: js.UndefOr[Double | Null | `false`] = js.native
+    var minvalue: js.UndefOr[Double | Null | `false`] = js.undefined
     
-    var owner: js.UndefOr[String | Null | `false`] = js.native
+    var owner: js.UndefOr[String | Null | `false`] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object SequenceOptions {
     
@@ -128,10 +137,11 @@ object sequencesTypesMod {
     }
   }
   
-  @js.native
-  trait SequenceOptionsAlter extends SequenceOptions {
+  trait SequenceOptionsAlter
+    extends StObject
+       with SequenceOptions {
     
-    var restart: js.UndefOr[Double | `true`] = js.native
+    var restart: js.UndefOr[Double | `true`] = js.undefined
   }
   object SequenceOptionsAlter {
     
@@ -152,12 +162,12 @@ object sequencesTypesMod {
     }
   }
   
-  @js.native
   trait SequenceOptionsCreate
-    extends SequenceOptions
+    extends StObject
+       with SequenceOptions
        with IfNotExistsOption {
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
   }
   object SequenceOptionsCreate {
     

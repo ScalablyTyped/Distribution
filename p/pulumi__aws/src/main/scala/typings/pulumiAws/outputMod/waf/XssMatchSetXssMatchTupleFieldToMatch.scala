@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XssMatchSetXssMatchTupleFieldToMatch extends StObject {
   
   /**
     * When `type` is `HEADER`, enter the name of the header that you want to search, e.g. `User-Agent` or `Referer`.
     * If `type` is any other value, omit this field.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The part of the web request that you want AWS WAF to search for a specified string.
@@ -20,7 +18,7 @@ trait XssMatchSetXssMatchTupleFieldToMatch extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_FieldToMatch.html)
     * for all supported values.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object XssMatchSetXssMatchTupleFieldToMatch {
   

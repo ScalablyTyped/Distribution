@@ -11,8 +11,8 @@ Resolves ICSS imports
 | Full name          | postcss-modules-resolve-imports |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 3537988 |
+| # dependents       | 22 |
+| # downloads        | 3978939 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomFilterParameters[Params /* <: js.Object */] extends StObject {
   
-  def callback(cell: js.Any, params: Params): Boolean = js.native
+  def callback(cell: js.Any, params: Params): Boolean
   
-  var callbackParameters: Params = js.native
+  var callbackParameters: Params
 }
 object CustomFilterParameters {
   
@@ -21,7 +19,7 @@ object CustomFilterParameters {
   }
   
   @scala.inline
-  implicit class CustomFilterParametersMutableBuilder[Self <: CustomFilterParameters[_], Params /* <: js.Object */] (val x: Self with CustomFilterParameters[Params]) extends AnyVal {
+  implicit class CustomFilterParametersMutableBuilder[Self <: CustomFilterParameters[?], Params /* <: js.Object */] (val x: Self & CustomFilterParameters[Params]) extends AnyVal {
     
     @scala.inline
     def setCallback(value: (js.Any, Params) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))

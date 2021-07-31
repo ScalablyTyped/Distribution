@@ -2,13 +2,13 @@ package typings.consola.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FancyReporterOptions extends BasicReporterOptions {
+trait FancyReporterOptions
+  extends StObject
+     with BasicReporterOptions {
   
-  var secondaryColor: js.UndefOr[String] = js.native
+  var secondaryColor: js.UndefOr[String] = js.undefined
 }
 object FancyReporterOptions {
   

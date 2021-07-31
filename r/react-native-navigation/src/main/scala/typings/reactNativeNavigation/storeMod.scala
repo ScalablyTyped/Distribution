@@ -6,7 +6,6 @@ import typings.reactNative.mod.ComponentProvider
 import typings.reactNativeNavigation.componentWrapperMod.IWrappedComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storeMod {
@@ -31,8 +30,8 @@ object storeMod {
     
     def getPropsForId(componentId: String): js.Any = js.native
     
-    def getWrappedComponent(componentName: String): ComponentClass[_, ComponentState] = js.native
-    def getWrappedComponent(componentName: Double): ComponentClass[_, ComponentState] = js.native
+    def getWrappedComponent(componentName: String): ComponentClass[js.Any, ComponentState] = js.native
+    def getWrappedComponent(componentName: Double): ComponentClass[js.Any, ComponentState] = js.native
     
     def hasRegisteredWrappedComponent(componentName: String): Boolean = js.native
     def hasRegisteredWrappedComponent(componentName: Double): Boolean = js.native
@@ -50,8 +49,8 @@ object storeMod {
     
     def setLazyComponentRegistrator(lazyRegistratorFn: js.Function1[/* lazyComponentRequest */ String | Double, Unit]): Unit = js.native
     
-    def setWrappedComponent(componentName: String, wrappedComponent: ComponentClass[_, ComponentState]): Unit = js.native
-    def setWrappedComponent(componentName: Double, wrappedComponent: ComponentClass[_, ComponentState]): Unit = js.native
+    def setWrappedComponent(componentName: String, wrappedComponent: ComponentClass[js.Any, ComponentState]): Unit = js.native
+    def setWrappedComponent(componentName: Double, wrappedComponent: ComponentClass[js.Any, ComponentState]): Unit = js.native
     
     def updateProps(componentId: String, props: js.Any): Unit = js.native
     

@@ -12,7 +12,6 @@ import typings.std.Event
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menubarMod {
@@ -218,7 +217,9 @@ object menubarMod {
     /**
       * Construct a new renderer.
       */
-    class Renderer () extends IRenderer {
+    class Renderer ()
+      extends StObject
+         with IRenderer {
       
       /**
         * Create the class name for the menu bar item icon.
@@ -266,6 +267,16 @@ object menubarMod {
       def renderIcon(data: IRenderData): VirtualElement = js.native
       
       /**
+        * Render the virtual element for a menu bar item.
+        *
+        * @param data - The data to use for rendering the item.
+        *
+        * @returns A virtual element representing the item.
+        */
+      /* CompleteClass */
+      override def renderItem(data: IRenderData): VirtualElement = js.native
+      
+      /**
         * Render the label element for a menu item.
         *
         * @param data - The data to use for rendering the label.
@@ -285,7 +296,6 @@ object menubarMod {
     /**
       * An options object for creating a menu bar.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -293,7 +303,7 @@ object menubarMod {
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       
@@ -317,18 +327,17 @@ object menubarMod {
     /**
       * An object which holds the data to render a menu bar item.
       */
-    @js.native
     trait IRenderData extends StObject {
       
       /**
         * Whether the item is the active item.
         */
-      val active: Boolean = js.native
+      val active: Boolean
       
       /**
         * The title to be rendered.
         */
-      val title: Title[Widget] = js.native
+      val title: Title[Widget]
     }
     object IRenderData {
       
@@ -352,7 +361,6 @@ object menubarMod {
     /**
       * A renderer for use with a menu bar.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -362,7 +370,7 @@ object menubarMod {
         *
         * @returns A virtual element representing the item.
         */
-      def renderItem(data: IRenderData): VirtualElement = js.native
+      def renderItem(data: IRenderData): VirtualElement
     }
     object IRenderer {
       

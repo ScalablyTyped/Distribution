@@ -2,24 +2,22 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checkforupdate extends StObject {
   
-  var checkforupdate: Boolean = js.native
+  var checkforupdate: Boolean
   
-  var devicetypes: Bridge = js.native
+  var devicetypes: Bridge
   
   @JSName("notify")
-  var notify_FCheckforupdate: Boolean = js.native
+  var notify_FCheckforupdate: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var updatestate: Double = js.native
+  var updatestate: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Checkforupdate {
   

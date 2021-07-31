@@ -3,47 +3,47 @@ package typings.extjs.Ext
 import typings.extjs.Ext.panel.IAbstractPanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPanel extends IAbstractPanel {
+trait IPanel
+  extends StObject
+     with IAbstractPanel {
   
   /** [Method] Add tools to this panel
     * @param tools Object[]/Ext.panel.Tool[] The tools to add
     */
-  var addTool: js.UndefOr[js.Function1[/* tools */ js.UndefOr[js.Any], Unit]] = js.native
+  var addTool: js.UndefOr[js.Function1[/* tools */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Invoked after the Panel is Collapsed
     * @param animated Boolean
     */
-  var afterCollapse: js.UndefOr[js.Function1[/* animated */ js.UndefOr[Boolean], Unit]] = js.native
+  var afterCollapse: js.UndefOr[js.Function1[/* animated */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Invoked after the Panel is Expanded
     * @param animated Boolean
     */
-  var afterExpand: js.UndefOr[js.Function1[/* animated */ js.UndefOr[Boolean], Unit]] = js.native
+  var afterExpand: js.UndefOr[js.Function1[/* animated */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var animCollapse: js.UndefOr[Boolean] = js.native
+  var animCollapse: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var bbar: js.UndefOr[js.Any] = js.native
+  var bbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var buttonAlign: js.UndefOr[java.lang.String] = js.native
+  var buttonAlign: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var buttons: js.UndefOr[js.Any] = js.native
+  var buttons: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Closes the Panel  */
-  var close: js.UndefOr[js.Function0[Unit]] = js.native
+  var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var closeAction: js.UndefOr[java.lang.String] = js.native
+  var closeAction: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Collapses the panel body so that the body becomes hidden
     * @param direction String The direction to collapse towards. Must be one of  Ext.Component.DIRECTION_TOP Ext.Component.DIRECTION_RIGHT Ext.Component.DIRECTION_BOTTOM Ext.Component.DIRECTION_LEFT Defaults to collapseDirection.
@@ -56,125 +56,131 @@ trait IPanel extends IAbstractPanel {
       /* animate */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var collapseDirection: js.UndefOr[java.lang.String] = js.native
+  var collapseDirection: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapseFirst: js.UndefOr[Boolean] = js.native
+  var collapseFirst: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var collapseMode: js.UndefOr[java.lang.String] = js.native
+  var collapseMode: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var collapsedCls: js.UndefOr[java.lang.String] = js.native
+  var collapsedCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var constrainHeader: js.UndefOr[Boolean] = js.native
+  var constrainHeader: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] converts a collapsdDir into an anchor argument for Element slideIn overridden in rtl mode to switch l and r
     * @param collapseDir Object
     */
-  var convertCollapseDir: js.UndefOr[js.Function1[/* collapseDir */ js.UndefOr[js.Any], Unit]] = js.native
+  var convertCollapseDir: js.UndefOr[js.Function1[/* collapseDir */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Property] (Ext.dd.DragSource/Ext.util.ComponentDragger) */
-  var dd: js.UndefOr[js.Any] = js.native
+  var dd: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Expands the panel body so that it becomes visible
     * @param animate Boolean True to animate the transition, else false (defaults to the value of the animCollapse panel config). May also be specified as the animation duration in milliseconds.
     * @returns Ext.panel.Panel this
     */
-  var expand: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.native
+  var expand: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var fbar: js.UndefOr[js.Any] = js.native
+  var fbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var floatable: js.UndefOr[Boolean] = js.native
+  var floatable: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var frameHeader: js.UndefOr[Boolean] = js.native
+  var frameHeader: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns the current collapsed state of the panel
     * @returns Boolean/String False when not collapsed, otherwise the value of collapseDirection.
     */
-  var getCollapsed: js.UndefOr[js.Function0[_]] = js.native
+  var getCollapsed: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the Header for this panel  */
-  var getHeader: js.UndefOr[js.Function0[Unit]] = js.native
+  var getHeader: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** [Method] The supplied default state gathering method for the AbstractComponent class
+    * @returns Object
+    */
+  @JSName("getState")
+  var getState_IPanel: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var glyph: js.UndefOr[js.Any] = js.native
+  var glyph: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var headerOverCls: js.UndefOr[java.lang.String] = js.native
+  var headerOverCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var headerPosition: js.UndefOr[java.lang.String] = js.native
+  var headerPosition: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideCollapseTool: js.UndefOr[Boolean] = js.native
+  var hideCollapseTool: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var icon: js.UndefOr[java.lang.String] = js.native
+  var icon: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[java.lang.String] = js.native
+  var iconCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Returns true if this component is visible
     * @param deep Object
     * @returns Boolean true if this component is visible, false otherwise.
     */
   @JSName("isVisible")
-  var isVisible_IPanel: js.UndefOr[js.Function1[/* deep */ js.UndefOr[js.Any], Boolean]] = js.native
+  var isVisible_IPanel: js.UndefOr[js.Function1[/* deep */ js.UndefOr[js.Any], Boolean]] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var lbar: js.UndefOr[js.Any] = js.native
+  var lbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var manageHeight: js.UndefOr[Boolean] = js.native
+  var manageHeight: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var minButtonWidth: js.UndefOr[Double] = js.native
+  var minButtonWidth: js.UndefOr[Double] = js.undefined
   
   /** [Method] Possibly animates down to a target element  */
   @JSName("onHide")
-  var onHide_IPanel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide_IPanel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event
     * @param destroying Object
     */
   @JSName("onRemoved")
-  var onRemoved_IPanel: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[js.Any], Unit]] = js.native
+  var onRemoved_IPanel: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Allows addition of behavior to the show operation  */
   @JSName("onShow")
-  var onShow_IPanel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow_IPanel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var overlapHeader: js.UndefOr[Boolean] = js.native
+  var overlapHeader: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.Component/Object) */
-  var placeholder: js.UndefOr[js.Any] = js.native
+  var placeholder: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var placeholderCollapseHideMode: js.UndefOr[Double] = js.native
+  var placeholderCollapseHideMode: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var preventHeader: js.UndefOr[Boolean] = js.native
+  var preventHeader: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var rbar: js.UndefOr[js.Any] = js.native
+  var rbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Method]
     * @param border Object
@@ -183,56 +189,56 @@ trait IPanel extends IAbstractPanel {
   @JSName("setBorder")
   var setBorder_IPanel: js.UndefOr[
     js.Function2[/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the glyph for the panel s header
     * @param newGlyph Number/String The new glyph This parameter expects a format consistent with that of glyph
     */
-  var setGlyph: js.UndefOr[js.Function1[/* newGlyph */ js.UndefOr[js.Any], Unit]] = js.native
+  var setGlyph: js.UndefOr[js.Function1[/* newGlyph */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Set the icon for the panel s header
     * @param newIcon String The new icon path
     */
-  var setIcon: js.UndefOr[js.Function1[/* newIcon */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setIcon: js.UndefOr[js.Function1[/* newIcon */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Set the iconCls for the panel s header
     * @param newIconCls String The new CSS class name
     */
-  var setIconCls: js.UndefOr[js.Function1[/* newIconCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setIconCls: js.UndefOr[js.Function1[/* newIconCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Set a title for the panel s header
     * @param newTitle String
     */
-  var setTitle: js.UndefOr[js.Function1[/* newTitle */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* newTitle */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the UI for the component
     * @param ui Object
     */
   @JSName("setUI")
-  var setUI_IPanel: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.native
+  var setUI_IPanel: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var simpleDrag: js.UndefOr[Boolean] = js.native
+  var simpleDrag: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object/Object[]) */
-  var tbar: js.UndefOr[js.Any] = js.native
+  var tbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var titleAlign: js.UndefOr[java.lang.String] = js.native
+  var titleAlign: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var titleCollapse: js.UndefOr[Boolean] = js.native
+  var titleCollapse: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Shortcut for performing an expand or collapse based on the current state of the panel
     * @returns Ext.panel.Panel this
     */
-  var toggleCollapse: js.UndefOr[js.Function0[this.type]] = js.native
+  var toggleCollapse: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Object[]/Ext.panel.Tool[]) */
-  var tools: js.UndefOr[js.Any] = js.native
+  var tools: js.UndefOr[js.Any] = js.undefined
 }
 object IPanel {
   
@@ -390,7 +396,7 @@ object IPanel {
     def setFrameHeaderUndefined: Self = StObject.set(x, "frameHeader", js.undefined)
     
     @scala.inline
-    def setGetCollapsed(value: () => _): Self = StObject.set(x, "getCollapsed", js.Any.fromFunction0(value))
+    def setGetCollapsed(value: () => js.Any): Self = StObject.set(x, "getCollapsed", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCollapsedUndefined: Self = StObject.set(x, "getCollapsed", js.undefined)
@@ -400,6 +406,12 @@ object IPanel {
     
     @scala.inline
     def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
+    
+    @scala.inline
+    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
     def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])

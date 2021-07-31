@@ -2,27 +2,25 @@ package typings.vegaTypings.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exponent extends StObject {
   
   var exponent: js.UndefOr[
     Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.native
+  ] = js.undefined
   
-  var extra: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[Boolean] = js.undefined
   
   var mult: js.UndefOr[
     Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.native
+  ] = js.undefined
   
   var offset: js.UndefOr[
     Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-typings.vega-typings/types/spec/encode.NumericValueRef */ js.Object)
-  ] = js.native
+  ] = js.undefined
   
-  var round: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.undefined
 }
 object Exponent {
   

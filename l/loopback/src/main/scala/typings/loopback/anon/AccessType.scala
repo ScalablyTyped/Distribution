@@ -3,26 +3,30 @@ package typings.loopback.anon
 import typings.loopback.mod.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessType extends StObject {
   
-  var accessType: String = js.native
+  var accessType: String
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  var model: String | Model = js.native
+  var model: String | Model
   
-  var principals: js.Array[_] = js.native
+  var principals: js.Array[js.Any]
   
-  var property: String = js.native
+  var property: String
 }
 object AccessType {
   
   @scala.inline
-  def apply(accessType: String, id: js.Any, model: String | Model, principals: js.Array[_], property: String): AccessType = {
+  def apply(
+    accessType: String,
+    id: js.Any,
+    model: String | Model,
+    principals: js.Array[js.Any],
+    property: String
+  ): AccessType = {
     val __obj = js.Dynamic.literal(accessType = accessType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], principals = principals.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessType]
   }
@@ -40,7 +44,7 @@ object AccessType {
     def setModel(value: String | Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipals(value: js.Array[_]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
+    def setPrincipals(value: js.Array[js.Any]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrincipalsVarargs(value: js.Any*): Self = StObject.set(x, "principals", js.Array(value :_*))

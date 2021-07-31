@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Topic. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Topic.
   * @param [properties] Properties to set
   */
-class Topic () extends ITopic {
+class Topic ()
+  extends StObject
+     with ITopic {
   def this(properties: ITopic) = this()
   
   /** Topic kmsKeyName. */
@@ -40,18 +41,20 @@ class Topic () extends ITopic {
 }
 object Topic {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Topic instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Topic instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.create")
-  @js.native
-  def create(): Topic = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.create")
-  @js.native
-  def create(properties: ITopic): Topic = js.native
+  @scala.inline
+  def create(): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Topic]
+  @scala.inline
+  def create(properties: ITopic): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Topic]
   
   /**
     * Decodes a Topic message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object Topic {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decode")
-  @js.native
-  def decode(reader: Reader): Topic = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Topic = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decode")
-  @js.native
-  def decode(reader: Uint8Array): Topic = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Topic = js.native
+  @scala.inline
+  def decode(reader: Reader): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Topic]
+  @scala.inline
+  def decode(reader: Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Topic]
   
   /**
     * Decodes a Topic message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object Topic {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Topic = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Topic = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
   
   /**
     * Encodes the specified Topic message. Does not implicitly {@link google.pubsub.v1.Topic.verify|verify} messages.
@@ -97,12 +94,10 @@ object Topic {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.encode")
-  @js.native
-  def encode(message: ITopic): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.encode")
-  @js.native
-  def encode(message: ITopic, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ITopic): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ITopic, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Topic message, length delimited. Does not implicitly {@link google.pubsub.v1.Topic.verify|verify} messages.
@@ -111,12 +106,10 @@ object Topic {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITopic): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITopic, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ITopic): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ITopic, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Topic message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object Topic {
     * @returns Topic
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Topic = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Topic]
   
   /**
     * Creates a plain object from a Topic message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object Topic {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.toObject")
-  @js.native
-  def toObject(message: Topic): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.toObject")
-  @js.native
-  def toObject(message: Topic, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Topic): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Topic, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Topic message.
@@ -148,7 +138,6 @@ object Topic {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Topic.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

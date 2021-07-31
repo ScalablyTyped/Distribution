@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/poly/v1", "poly_v1.Resource$Assets")
@@ -32,7 +31,7 @@ class ResourceAssets protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAsset] = js.native
   def get(callback: BodyResponseCallback[SchemaAsset]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAsset] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAsset] = js.native
   def get(params: ParamsResourceAssetsGet): GaxiosPromise[SchemaAsset] = js.native
   def get(params: ParamsResourceAssetsGet, callback: BodyResponseCallback[SchemaAsset]): Unit = js.native
   def get(
@@ -69,7 +68,7 @@ class ResourceAssets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAssetsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAssetsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(params: ParamsResourceAssetsList): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(params: ParamsResourceAssetsList, callback: BodyResponseCallback[SchemaListAssetsResponse]): Unit = js.native
   def list(

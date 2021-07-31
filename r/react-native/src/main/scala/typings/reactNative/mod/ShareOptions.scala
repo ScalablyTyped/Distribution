@@ -2,19 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareOptions extends StObject {
   
-  var dialogTitle: js.UndefOr[String] = js.native
+  var dialogTitle: js.UndefOr[String] = js.undefined
   
-  var excludedActivityTypes: js.UndefOr[js.Array[String]] = js.native
+  var excludedActivityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object ShareOptions {
   

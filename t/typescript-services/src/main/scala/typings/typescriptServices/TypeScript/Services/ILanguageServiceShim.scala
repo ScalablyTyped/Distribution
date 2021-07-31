@@ -2,63 +2,63 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILanguageServiceShim extends IShim {
+trait ILanguageServiceShim
+  extends StObject
+     with IShim {
   
-  def cleanupSemanticCache(): Unit = js.native
+  def cleanupSemanticCache(): Unit
   
-  def getBraceMatchingAtPosition(fileName: String, position: Double): String = js.native
+  def getBraceMatchingAtPosition(fileName: String, position: Double): String
   
-  def getBreakpointStatementAtPosition(fileName: String, position: Double): String = js.native
+  def getBreakpointStatementAtPosition(fileName: String, position: Double): String
   
-  def getCompilerOptionsDiagnostics(): String = js.native
+  def getCompilerOptionsDiagnostics(): String
   
-  def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): String = js.native
+  def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): String
   
-  def getCompletionsAtPosition(fileName: String, position: Double, isMemberCompletion: Boolean): String = js.native
+  def getCompletionsAtPosition(fileName: String, position: Double, isMemberCompletion: Boolean): String
   
-  def getDefinitionAtPosition(fileName: String, position: Double): String = js.native
+  def getDefinitionAtPosition(fileName: String, position: Double): String
   
-  def getEmitOutput(fileName: String): String = js.native
+  def getEmitOutput(fileName: String): String
   
-  def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: String): String = js.native
+  def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: String): String
   
-  def getFormattingEditsForDocument(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
+  def getFormattingEditsForDocument(fileName: String, minChar: Double, limChar: Double, options: String): String
   
-  def getFormattingEditsForRange(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
+  def getFormattingEditsForRange(fileName: String, minChar: Double, limChar: Double, options: String): String
   
-  def getFormattingEditsOnPaste(fileName: String, minChar: Double, limChar: Double, options: String): String = js.native
+  def getFormattingEditsOnPaste(fileName: String, minChar: Double, limChar: Double, options: String): String
   
-  def getImplementorsAtPosition(fileName: String, position: Double): String = js.native
+  def getImplementorsAtPosition(fileName: String, position: Double): String
   
-  def getIndentationAtPosition(fileName: String, position: Double, options: String): String = js.native
+  def getIndentationAtPosition(fileName: String, position: Double, options: String): String
   
-  def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): String = js.native
+  def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): String
   
-  def getNavigateToItems(searchValue: String): String = js.native
+  def getNavigateToItems(searchValue: String): String
   
-  def getOccurrencesAtPosition(fileName: String, position: Double): String = js.native
+  def getOccurrencesAtPosition(fileName: String, position: Double): String
   
-  def getOutliningRegions(fileName: String): String = js.native
+  def getOutliningRegions(fileName: String): String
   
-  def getReferencesAtPosition(fileName: String, position: Double): String = js.native
+  def getReferencesAtPosition(fileName: String, position: Double): String
   
-  def getScriptLexicalStructure(fileName: String): String = js.native
+  def getScriptLexicalStructure(fileName: String): String
   
-  def getSemanticDiagnostics(fileName: String): String = js.native
+  def getSemanticDiagnostics(fileName: String): String
   
-  def getSignatureAtPosition(fileName: String, position: Double): String = js.native
+  def getSignatureAtPosition(fileName: String, position: Double): String
   
-  def getSyntacticDiagnostics(fileName: String): String = js.native
+  def getSyntacticDiagnostics(fileName: String): String
   
-  def getTypeAtPosition(fileName: String, position: Double): String = js.native
+  def getTypeAtPosition(fileName: String, position: Double): String
   
-  var languageService: ILanguageService = js.native
+  var languageService: ILanguageService
   
-  def refresh(throwOnError: Boolean): Unit = js.native
+  def refresh(throwOnError: Boolean): Unit
 }
 object ILanguageServiceShim {
   

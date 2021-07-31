@@ -2,16 +2,14 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCreateOrdersResponse extends StObject {
   
   /**
     * The list of proposals successfully created.
     */
-  var proposals: js.UndefOr[js.Array[SchemaProposal]] = js.native
+  var proposals: js.UndefOr[js.Array[SchemaProposal]] = js.undefined
 }
 object SchemaCreateOrdersResponse {
   

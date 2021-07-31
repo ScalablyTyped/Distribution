@@ -11,8 +11,8 @@ DOM utilities for use within Fluent web components
 | Full name          | @fluentui/dom-utilities |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 215661 |
+| # dependents       | 4 |
+| # downloads        | 565327 |
 | # stars            | 0 |
 
 ## Links

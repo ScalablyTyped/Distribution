@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kafka {
@@ -46,9 +45,8 @@ object kafka {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.ConsumedKafkaService.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.ConsumedKafkaService.structureTypeName")
@@ -93,9 +91,8 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaMappedValue.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue]
     
     /**
       * Creates and returns a new KafkaMappedValue instance in the SDK and on the server.
@@ -106,9 +103,8 @@ object kafka {
       *  8.11.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaMappedValue.createIn")
-    @js.native
-    def createIn(container: Attribute): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = js.native
+    @scala.inline
+    def createIn(container: Attribute): typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaMappedValue.structureTypeName")
@@ -157,9 +153,8 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaRemoteEntitySource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource]
     
     /**
       * Creates and returns a new KafkaRemoteEntitySource instance in the SDK and on the server.
@@ -170,9 +165,8 @@ object kafka {
       *  8.11.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaRemoteEntitySource.createIn")
-    @js.native
-    def createIn(container: Entity): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = js.native
+    @scala.inline
+    def createIn(container: Entity): typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.KafkaRemoteEntitySource.structureTypeName")
@@ -221,9 +215,8 @@ object kafka {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.PublishedKafkaResource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource]
     
     /**
       * Creates and returns a new PublishedKafkaResource instance in the SDK and on the server.
@@ -234,9 +227,8 @@ object kafka {
       *  8.14.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.PublishedKafkaResource.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.PublishedKafkaResource.structureTypeName")
@@ -283,9 +275,8 @@ object kafka {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.PublishedKafkaService.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaService]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "kafka.PublishedKafkaService.structureTypeName")

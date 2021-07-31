@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayTriggerMod {
@@ -18,47 +17,48 @@ object overlayTriggerMod {
   trait OverlayTrigger
     extends Component[OverlayTriggerProps, js.Object, js.Any]
   
-  @js.native
-  trait OverlayTriggerProps extends Props[OverlayTrigger] {
+  trait OverlayTriggerProps
+    extends StObject
+       with Props[OverlayTrigger] {
     
     // TODO: Add more specific type
     // Optional
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var container: js.UndefOr[js.Any] = js.native
+    var container: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var containerPadding: js.UndefOr[Double] = js.native
+    var containerPadding: js.UndefOr[Double] = js.undefined
     
-    var defaultOverlayShown: js.UndefOr[Boolean] = js.native
+    var defaultOverlayShown: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var delayHide: js.UndefOr[Double] = js.native
+    var delayHide: js.UndefOr[Double] = js.undefined
     
-    var delayShow: js.UndefOr[Double] = js.native
+    var delayShow: js.UndefOr[Double] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function] = js.native
+    var onEnter: js.UndefOr[js.Function] = js.undefined
     
-    var onEntered: js.UndefOr[js.Function] = js.native
+    var onEntered: js.UndefOr[js.Function] = js.undefined
     
-    var onEntering: js.UndefOr[js.Function] = js.native
+    var onEntering: js.UndefOr[js.Function] = js.undefined
     
-    var onExit: js.UndefOr[js.Function] = js.native
+    var onExit: js.UndefOr[js.Function] = js.undefined
     
-    var onExited: js.UndefOr[js.Function] = js.native
+    var onExited: js.UndefOr[js.Function] = js.undefined
     
-    var onExiting: js.UndefOr[js.Function] = js.native
+    var onExiting: js.UndefOr[js.Function] = js.undefined
     
     // Required
-    var overlay: js.Any = js.native
+    var overlay: js.Any
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var rootClose: js.UndefOr[Boolean] = js.native
+    var rootClose: js.UndefOr[Boolean] = js.undefined
     
-    var trigger: js.UndefOr[String | js.Array[String]] = js.native
+    var trigger: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object OverlayTriggerProps {
     

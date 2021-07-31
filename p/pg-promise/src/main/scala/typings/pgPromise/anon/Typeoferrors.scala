@@ -7,27 +7,25 @@ import typings.pgPromise.mod.errors.QueryFileError
 import typings.pgPromise.mod.errors.QueryResultError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeoferrors extends StObject {
   
   // ParameterizedQueryError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.ParameterizedQueryError.html
-  var ParameterizedQueryError: Instantiable0[typings.pgPromise.mod.errors.ParameterizedQueryError] = js.native
+  var ParameterizedQueryError: Instantiable0[typings.pgPromise.mod.errors.ParameterizedQueryError]
   
   // PreparedStatementError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.PreparedStatementError.html
-  var PreparedStatementError: Instantiable0[typings.pgPromise.mod.errors.PreparedStatementError] = js.native
+  var PreparedStatementError: Instantiable0[typings.pgPromise.mod.errors.PreparedStatementError]
   
   // QueryFileError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryFileError.html
-  var QueryFileError: Instantiable0[typings.pgPromise.mod.errors.QueryFileError] = js.native
+  var QueryFileError: Instantiable0[typings.pgPromise.mod.errors.QueryFileError]
   
   // QueryResultError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryResultError.html
-  var QueryResultError: Instantiable0[typings.pgPromise.mod.errors.QueryResultError] = js.native
+  var QueryResultError: Instantiable0[typings.pgPromise.mod.errors.QueryResultError]
 }
 object Typeoferrors {
   

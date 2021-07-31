@@ -3,15 +3,13 @@ package typings.antvUtil
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `0`: js.Any = js.native
+    var `0`: js.Any
   }
   object `0` {
     
@@ -35,6 +33,6 @@ object anon {
     
     def apply(args: js.Any*): js.Any = js.native
     
-    var cache: Map[_, _] = js.native
+    var cache: Map[js.Any, js.Any] = js.native
   }
 }

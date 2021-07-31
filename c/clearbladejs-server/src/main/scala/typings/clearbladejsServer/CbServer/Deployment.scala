@@ -2,27 +2,25 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
-  def create(name: String, description: String, options: DeploymentOptions, callback: CbCallback): Unit = js.native
+  def create(name: String, description: String, options: DeploymentOptions, callback: CbCallback): Unit
   
-  def delete(name: String, callback: CbCallback): Unit = js.native
+  def delete(name: String, callback: CbCallback): Unit
   
-  def read(name: String, callback: CbCallback): Unit = js.native
+  def read(name: String, callback: CbCallback): Unit
   
-  def readAll(query: QueryObj, callback: CbCallback): Unit = js.native
+  def readAll(query: QueryObj, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(name: String, options: DeploymentOptions, callback: CbCallback): Unit = js.native
+  def update(name: String, options: DeploymentOptions, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Deployment {
   

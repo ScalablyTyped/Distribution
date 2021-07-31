@@ -2,15 +2,13 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECCPrivateKey extends StObject {
   
-  var curve: String = js.native
+  var curve: String
   
-  var d: String = js.native
+  var d: String
 }
 object ECCPrivateKey {
   

@@ -3,14 +3,13 @@ package typings.orientjs.mod
 import typings.orientjs.anon.PageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ODatabaseSession")
 @js.native
 class ODatabaseSession () extends ODatabase {
   def this(client: OrientDBClient) = this()
-  def this(client: js.UndefOr[scala.Nothing], options: ODatabaseSessionOptions) = this()
+  def this(client: Unit, options: ODatabaseSessionOptions) = this()
   def this(client: OrientDBClient, options: ODatabaseSessionOptions) = this()
   
   /**
@@ -56,7 +55,7 @@ class ODatabaseSession () extends ODatabase {
     * @param   changes
     * @returns The results of the transaction.
     */
-  def commit(changes: js.Any): js.Promise[_] = js.native
+  def commit(changes: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Execute a custom language script against the database and retreive the results
@@ -101,8 +100,8 @@ class ODatabaseSession () extends ODatabase {
     * @param   [times]                  Number of retry in case of some failures. (MVVC errors)
     * @return                          The results of transaction
     */
-  def runInTransaction(txWork: js.Any): js.Promise[_] = js.native
-  def runInTransaction(txWork: js.Any, times: Double): js.Promise[_] = js.native
+  def runInTransaction(txWork: js.Any): js.Promise[js.Any] = js.native
+  def runInTransaction(txWork: js.Any, times: Double): js.Promise[js.Any] = js.native
   
   var sessionManager: OSessionManager = js.native
   

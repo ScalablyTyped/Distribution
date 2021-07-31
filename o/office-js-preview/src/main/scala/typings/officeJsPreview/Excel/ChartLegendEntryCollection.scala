@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait ChartLegendEntryCollection extends ClientObject {
+trait ChartLegendEntryCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -49,7 +50,7 @@ trait ChartLegendEntryCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ChartLegendEntryCollection = js.native
-  def load(options: ChartLegendEntryCollectionLoadOptions with CollectionLoadOptions): ChartLegendEntryCollection = js.native
+  def load(options: ChartLegendEntryCollectionLoadOptions & CollectionLoadOptions): ChartLegendEntryCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ChartLegendEntryCollection = js.native
   def load(propertyNames: String): ChartLegendEntryCollection = js.native
   def load(propertyNames: js.Array[String]): ChartLegendEntryCollection = js.native

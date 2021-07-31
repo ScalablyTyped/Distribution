@@ -10,10 +10,10 @@ Read and parse a JSON file
 | ------------------ | :-------------: |
 | Full name          | load-json-file |
 | Keywords           | read, json, parse, file, fs, graceful, load |
-| # releases         | 7 |
-| # dependents       | 368 |
-| # downloads        | 1081657229 |
-| # stars            | 11 |
+| # releases         | 5 |
+| # dependents       | 424 |
+| # downloads        | 1234071493 |
+| # stars            | 12 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/load-json-file#readme)

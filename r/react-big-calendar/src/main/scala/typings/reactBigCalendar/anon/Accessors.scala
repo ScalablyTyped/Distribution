@@ -2,19 +2,17 @@ package typings.reactBigCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accessors[TEvent /* <: js.Object */] extends StObject {
   
-  var accessors: js.Any = js.native
+  var accessors: js.Any
   
-  var events: js.Array[TEvent] = js.native
+  var events: js.Array[TEvent]
   
-  var minimumStartDifference: Double = js.native
+  var minimumStartDifference: Double
   
-  var slotMetrics: js.Any = js.native
+  var slotMetrics: js.Any
 }
 object Accessors {
   
@@ -25,7 +23,7 @@ object Accessors {
   }
   
   @scala.inline
-  implicit class AccessorsMutableBuilder[Self <: Accessors[_], TEvent /* <: js.Object */] (val x: Self with Accessors[TEvent]) extends AnyVal {
+  implicit class AccessorsMutableBuilder[Self <: Accessors[?], TEvent /* <: js.Object */] (val x: Self & Accessors[TEvent]) extends AnyVal {
     
     @scala.inline
     def setAccessors(value: js.Any): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])

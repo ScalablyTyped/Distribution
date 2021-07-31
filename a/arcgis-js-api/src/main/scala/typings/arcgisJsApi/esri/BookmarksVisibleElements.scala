@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BookmarksVisibleElements extends Object {
+trait BookmarksVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to button to add a new bookmark displays.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
     */
-  var addBookmark: js.UndefOr[Boolean] = js.native
+  var addBookmark: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the thumbnail associated with the bookmark displays.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
     */
-  var thumbnail: js.UndefOr[Boolean] = js.native
+  var thumbnail: js.UndefOr[Boolean] = js.undefined
 }
 object BookmarksVisibleElements {
   

@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourcesOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SourcesOptions extends StObject {
     * false the appIcon property of the sources return null. Same if a source has the
     * type screen.
     */
-  var fetchWindowIcons: js.UndefOr[Boolean] = js.native
+  var fetchWindowIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size that the media source thumbnail should be scaled to. Default is `150` x
@@ -21,13 +19,13 @@ trait SourcesOptions extends StObject {
     * save the processing time required for capturing the content of each window and
     * screen.
     */
-  var thumbnailSize: js.UndefOr[Size] = js.native
+  var thumbnailSize: js.UndefOr[Size] = js.undefined
   
   /**
     * An array of Strings that lists the types of desktop sources to be captured,
     * available types are `screen` and `window`.
     */
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object SourcesOptions {
   

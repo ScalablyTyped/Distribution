@@ -2,38 +2,36 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/common-types.MetaSysProps & {  space :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps},   environment :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps},   contentType :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps}} */
-@js.native
 trait MetaSysPropsspacesysMetaL extends StObject {
   
-  var archivedVersion: js.UndefOr[Double] = js.native
+  var archivedVersion: js.UndefOr[Double] = js.undefined
   
-  var contentType: Sys = js.native
+  var contentType: Sys
   
-  var createdAt: String = js.native
+  var createdAt: String
   
-  var createdBy: js.UndefOr[Sys] = js.native
+  var createdBy: js.UndefOr[Sys] = js.undefined
   
-  var environment: Sys = js.native
+  var environment: Sys
   
-  var id: String = js.native
+  var id: String
   
-  var publishedVersion: js.UndefOr[Double] = js.native
+  var publishedVersion: js.UndefOr[Double] = js.undefined
   
-  var space: js.UndefOr[Sys] with Sys = js.native
+  var space: js.UndefOr[Sys] & Sys
   
-  var status: js.UndefOr[Sys] = js.native
+  var status: js.UndefOr[Sys] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updatedAt: String = js.native
+  var updatedAt: String
   
-  var updatedBy: js.UndefOr[Sys] = js.native
+  var updatedBy: js.UndefOr[Sys] = js.undefined
   
-  var version: Double = js.native
+  var version: Double
 }
 object MetaSysPropsspacesysMetaL {
   
@@ -43,7 +41,7 @@ object MetaSysPropsspacesysMetaL {
     createdAt: String,
     environment: Sys,
     id: String,
-    space: js.UndefOr[Sys] with Sys,
+    space: js.UndefOr[Sys] & Sys,
     `type`: String,
     updatedAt: String,
     version: Double
@@ -87,7 +85,7 @@ object MetaSysPropsspacesysMetaL {
     def setPublishedVersionUndefined: Self = StObject.set(x, "publishedVersion", js.undefined)
     
     @scala.inline
-    def setSpace(value: js.UndefOr[Sys] with Sys): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    def setSpace(value: js.UndefOr[Sys] & Sys): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatus(value: Sys): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])

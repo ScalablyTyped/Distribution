@@ -2,18 +2,17 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentStack
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var stack: js.Array[Content] = js.native
+  var stack: js.Array[Content]
   
   /** if true, ensures that the contents of the stack are always on the same page */
-  var unbreakable: js.UndefOr[Boolean] = js.native
+  var unbreakable: js.UndefOr[Boolean] = js.undefined
 }
 object ContentStack {
   

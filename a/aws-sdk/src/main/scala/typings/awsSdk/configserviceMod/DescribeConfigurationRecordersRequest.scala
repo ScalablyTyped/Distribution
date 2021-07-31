@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationRecordersRequest extends StObject {
   
   /**
     * A list of configuration recorder names.
     */
-  var ConfigurationRecorderNames: js.UndefOr[ConfigurationRecorderNameList] = js.native
+  var ConfigurationRecorderNames: js.UndefOr[ConfigurationRecorderNameList] = js.undefined
 }
 object DescribeConfigurationRecordersRequest {
   

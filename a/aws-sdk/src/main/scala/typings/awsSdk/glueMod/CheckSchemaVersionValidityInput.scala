@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckSchemaVersionValidityInput extends StObject {
   
   /**
     * The data format of the schema definition. Currently only AVRO is supported.
     */
-  var DataFormat: typings.awsSdk.glueMod.DataFormat = js.native
+  var DataFormat: typings.awsSdk.glueMod.DataFormat
   
   /**
     * The definition of the schema that has to be validated.
     */
-  var SchemaDefinition: SchemaDefinitionString = js.native
+  var SchemaDefinition: SchemaDefinitionString
 }
 object CheckSchemaVersionValidityInput {
   

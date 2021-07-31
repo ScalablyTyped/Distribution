@@ -2,13 +2,11 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Docker execuctor specification.
   */
-@js.native
 trait SchemaDockerExecutor extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaDockerExecutor extends StObject {
     * the pipeline operation&#39;s `error` field will be populated.  Maximum
     * command string length is 16384.
     */
-  var cmd: js.UndefOr[String] = js.native
+  var cmd: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Image name from either Docker Hub or Google Container Registry.
     * Users that run pipelines must have READ access to the image.
     */
-  var imageName: js.UndefOr[String] = js.native
+  var imageName: js.UndefOr[String] = js.undefined
 }
 object SchemaDockerExecutor {
   

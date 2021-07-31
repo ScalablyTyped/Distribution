@@ -2,28 +2,26 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceAuthorizationExtras extends StObject {
   
   /**
     * Private key to sign the DPoP Proof JWT with. This can be a crypto.KeyObject, crypto.createPrivateKey valid
     * inputs, or a JWK formatted private key.
     */
-  var DPoP: js.UndefOr[DPoPInput] = js.native
+  var DPoP: js.UndefOr[DPoPInput] = js.undefined
   
   /**
     * extra client assertion payload parameters to be sent as part of a client JWT assertion.
     * This is only used when the client's token_endpoint_auth_method is either client_secret_jwt or private_key_jwt.
     */
-  var clientAssertionPayload: js.UndefOr[js.Object] = js.native
+  var clientAssertionPayload: js.UndefOr[js.Object] = js.undefined
   
   /**
     * extra request body properties to be sent to the AS during the Device Access Token Request
     */
-  var exchangeBody: js.UndefOr[js.Object] = js.native
+  var exchangeBody: js.UndefOr[js.Object] = js.undefined
 }
 object DeviceAuthorizationExtras {
   

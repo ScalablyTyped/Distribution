@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarCalendarMod {
@@ -57,6 +56,10 @@ object calendarCalendarMod {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCalendar(): Unit = js.native
+    
+    /** Sets focus to the selected date. */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   /* static members */
   object Calendar {
@@ -72,23 +75,22 @@ object calendarCalendarMod {
     def defaultProps_=(x: ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ICalendarState extends StObject {
     
     /** State used to show/hide day picker */
-    var isDayPickerVisible: js.UndefOr[Boolean] = js.native
+    var isDayPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /** State used to show/hide month picker */
-    var isMonthPickerVisible: js.UndefOr[Boolean] = js.native
+    var isMonthPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /** The currently focused date in the day picker, but not necessarily selected */
-    var navigatedDayDate: js.UndefOr[Date] = js.native
+    var navigatedDayDate: js.UndefOr[Date] = js.undefined
     
     /** The currently focused date in the month picker, but not necessarily selected */
-    var navigatedMonthDate: js.UndefOr[Date] = js.native
+    var navigatedMonthDate: js.UndefOr[Date] = js.undefined
     
     /** The currently selected date in the calendar */
-    var selectedDate: js.UndefOr[Date] = js.native
+    var selectedDate: js.UndefOr[Date] = js.undefined
   }
   object ICalendarState {
     

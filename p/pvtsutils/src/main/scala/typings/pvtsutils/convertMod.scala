@@ -4,7 +4,6 @@ import typings.pvtsutils.bufferSourceConverterMod.BufferSource
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertMod {
@@ -15,21 +14,21 @@ object convertMod {
   /* static members */
   object Convert {
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.Base64Padding")
+    @JSImport("pvtsutils/build/types/convert", "Convert")
     @js.native
-    def Base64Padding(base64: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromBase64")
-    @js.native
-    def FromBase64(base64: String): ArrayBuffer = js.native
+    @scala.inline
+    def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromBase64Url")
-    @js.native
-    def FromBase64Url(base64url: String): ArrayBuffer = js.native
+    @scala.inline
+    def FromBase64(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromBinary")
-    @js.native
-    def FromBinary(text: String): ArrayBuffer = js.native
+    @scala.inline
+    def FromBase64Url(base64url: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    
+    @scala.inline
+    def FromBinary(text: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
     /**
       * Converts HEX string to buffer
@@ -40,72 +39,57 @@ object convertMod {
       *
       * @memberOf Convert
       */
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromHex")
-    @js.native
-    def FromHex(hexString: String): ArrayBuffer = js.native
+    @scala.inline
+    def FromHex(hexString: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromString")
-    @js.native
-    def FromString(str: String): ArrayBuffer = js.native
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromString")
-    @js.native
-    def FromString(str: String, enc: BufferEncoding): ArrayBuffer = js.native
+    @scala.inline
+    def FromString(str: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    @scala.inline
+    def FromString(str: String, enc: BufferEncoding): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.FromUtf8String")
-    @js.native
-    def FromUtf8String(text: String): ArrayBuffer = js.native
+    @scala.inline
+    def FromUtf8String(text: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToBase64")
-    @js.native
-    def ToBase64(buffer: BufferSource): String = js.native
+    @scala.inline
+    def ToBase64(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToBase64Url")
-    @js.native
-    def ToBase64Url(data: BufferSource): String = js.native
+    @scala.inline
+    def ToBase64Url(data: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToBinary")
-    @js.native
-    def ToBinary(buffer: BufferSource): String = js.native
+    @scala.inline
+    def ToBinary(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts buffer to HEX string
       * @param  {BufferSource} buffer Incoming buffer
       * @returns string
       */
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToHex")
-    @js.native
-    def ToHex(buffer: BufferSource): String = js.native
+    @scala.inline
+    def ToHex(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToString")
-    @js.native
-    def ToString(buffer: BufferSource): String = js.native
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToString")
-    @js.native
-    def ToString(buffer: BufferSource, enc: BufferEncoding): String = js.native
+    @scala.inline
+    def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def ToString(buffer: BufferSource, enc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.ToUtf8String")
-    @js.native
-    def ToUtf8String(buffer: BufferSource): String = js.native
+    @scala.inline
+    def ToUtf8String(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Removes odd chars from string data
       * @param data String data
       */
-    @JSImport("pvtsutils/build/types/convert", "Convert.formatString")
-    @js.native
-    def formatString(data: String): String = js.native
+    @scala.inline
+    def formatString(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.isBase64")
-    @js.native
-    def isBase64(data: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isBase64(data: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(data.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.isBase64Url")
-    @js.native
-    def isBase64Url(data: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isBase64Url(data: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("pvtsutils/build/types/convert", "Convert.isHex")
-    @js.native
-    def isHex(data: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isHex(data: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(data.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
   
   /* Rewritten from type alias, can be one of: 

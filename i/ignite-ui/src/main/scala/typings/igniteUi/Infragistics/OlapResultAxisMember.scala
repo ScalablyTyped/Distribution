@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapResultAxisMember extends StObject {
   
   /**
@@ -13,70 +11,70 @@ trait OlapResultAxisMember extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the count of children members this member has.
     *
     * @param value
     */
-  def childCount(value: js.Object): Double = js.native
+  def childCount(value: js.Object): Double
   
   /**
     * A bitmap of the information projected by childCount, drilledDown and parentSameAsPrev properties.
     *
     * @param value
     */
-  def displayInfo(value: js.Object): Double = js.native
+  def displayInfo(value: js.Object): Double
   
   /**
     * Returns a value that indicates whether at least one child of this member appears on the axis, immediately following all occurrences of that member. This can be used by applications to display a "+" or a "-" next to the member.
     *
     * @param value
     */
-  def drilledDown(value: js.Object): Boolean = js.native
+  def drilledDown(value: js.Object): Boolean
   
   /**
     * Returns the unique name of the hierarchy that contains the level.
     *
     * @param value
     */
-  def hierarchyUniqueName(value: js.Object): String = js.native
+  def hierarchyUniqueName(value: js.Object): String
   
   /**
     * Returns the distance of member parent level from the root of the level. Root level is zero (0)
     *
     * @param value
     */
-  def levelNumber(value: js.Object): Double = js.native
+  def levelNumber(value: js.Object): Double
   
   /**
     * Returns the unique name of the level this member belongs to.
     *
     * @param value
     */
-  def levelUniqueName(value: js.Object): String = js.native
+  def levelUniqueName(value: js.Object): String
   
   /**
     * Returns a value that indicates whether the parent of this member is the same as the parent of the member preceding all occurrences of the current member.
     *
     * @param value
     */
-  def parentSameAsPrev(value: js.Object): Boolean = js.native
+  def parentSameAsPrev(value: js.Object): Boolean
   
   /**
     * Returns a key value map of the members' properties. By default only 'PARENT_UNIQUE_NAME' and 'CHILDREN_CARDINALITY' properties are available.
     *
     * @param value
     */
-  def properties(value: js.Object): js.Object = js.native
+  def properties(value: js.Object): js.Object
   
   /**
     * Returns the unique name of the axis member.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object OlapResultAxisMember {
   

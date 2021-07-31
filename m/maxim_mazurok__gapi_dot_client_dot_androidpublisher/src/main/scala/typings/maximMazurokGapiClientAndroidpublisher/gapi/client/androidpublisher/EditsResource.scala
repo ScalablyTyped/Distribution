@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientAndroidpublisher.anon.QuotaUser
 import typings.maximMazurokGapiClientAndroidpublisher.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

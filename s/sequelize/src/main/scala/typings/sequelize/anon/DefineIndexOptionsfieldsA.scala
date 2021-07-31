@@ -4,74 +4,72 @@ import typings.sequelize.mod.AnyWhereOptions
 import typings.sequelize.mod.IndexType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined sequelize.sequelize.DefineIndexOptions & {  fields :std.Array<string>} */
-@js.native
 trait DefineIndexOptionsfieldsA extends StObject {
   
   /**
     * Pass CONCURRENT so other operations run while the index is created - PostgresSQL only. Default is false
     */
-  var concurrently: js.UndefOr[Boolean] = js.native
+  var concurrently: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
   /**
     * The name of the index. Default is __
     */
-  var indexName: js.UndefOr[String] = js.native
+  var indexName: js.UndefOr[String] = js.undefined
   
   /**
     * Set a type for the index, e.g. BTREE. See the documentation of the used dialect
     */
-  var indexType: js.UndefOr[String] = js.native
+  var indexType: js.UndefOr[String] = js.undefined
   
   /**
     * The index type
     */
-  var indicesType: js.UndefOr[IndexType] = js.native
+  var indicesType: js.UndefOr[IndexType] = js.undefined
   
   /**
     * A function that receives the sql query, e.g. console.log
     */
-  var logging: js.UndefOr[js.Function] = js.native
+  var logging: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The name of the index. Default is Default is <table>_<attr1>_<attr2>
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Index operator
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * For FULLTEXT columns set your parser
     */
-  var parser: js.UndefOr[String] = js.native
+  var parser: js.UndefOr[String] = js.undefined
   
   /**
     * The index type
     */
-  var `type`: js.UndefOr[IndexType] = js.native
+  var `type`: js.UndefOr[IndexType] = js.undefined
   
   /**
     * Create a unique index
     */
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Create an unique index
     */
-  var using: js.UndefOr[String] = js.native
+  var `using`: js.UndefOr[String] = js.undefined
   
   /**
     * A hash of attributes to limit your index(Filtered Indexes - MSSQL & PostgreSQL only)
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object DefineIndexOptionsfieldsA {
   

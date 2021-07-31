@@ -1,7 +1,6 @@
 package typings.fsExtraPromise
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bluebird.mod.^
 import typings.fsExtra.anon.BufferBytesRead
 import typings.fsExtra.anon.BufferDataView
 import typings.fsExtra.anon.BufferDataViewBytesWrittenNumber
@@ -89,10 +88,13 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fs-extra-promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fs-extra-promise", "BigIntStats")
   @js.native
@@ -128,143 +130,105 @@ object mod {
     def this(opts: WritableOptions) = this()
   }
   
-  @JSImport("fs-extra-promise", "access")
-  @js.native
-  def access(path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "access")
-  @js.native
-  def access(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "access")
-  @js.native
-  def access(path: PathLike, mode: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "access")
-  @js.native
-  def access(path: PathLike, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def access(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def access(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def access(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def access(path: PathLike, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "accessSync")
-  @js.native
-  def accessSync(path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "accessSync")
-  @js.native
-  def accessSync(path: PathLike, mode: Double): Unit = js.native
+  @scala.inline
+  def accessSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def accessSync(path: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: Double, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: Double, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: Double, data: js.Any, options: Encoding): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
+  @scala.inline
+  def appendFile(file: Double, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def appendFile(file: Double, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(file: Double, data: js.Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def appendFile(
     file: Double,
     data: js.Any,
     options: Encoding,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: PathLike, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
-  def appendFile(file: PathLike, data: js.Any, options: Encoding): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(file: PathLike, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def appendFile(file: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFile(file: PathLike, data: js.Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def appendFile(
     file: PathLike,
     data: js.Any,
     options: Encoding,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "appendFileAsync")
-  @js.native
-  def appendFileAsync(filename: String, data: js.Any): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFileAsync")
-  @js.native
-  def appendFileAsync(filename: String, data: js.Any, option: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "appendFileAsync")
-  @js.native
-  def appendFileAsync(filename: String, data: js.Any, option: WriteOptions): ^[Unit] = js.native
+  @scala.inline
+  def appendFileAsync(filename: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFileAsync(filename: String, data: js.Any, option: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFileAsync(filename: String, data: js.Any, option: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: Double, data: String): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: Double, data: String, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: Double, data: Uint8Array): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: Double, data: Uint8Array, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: PathLike, data: String): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: PathLike, data: String, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: PathLike, data: Uint8Array): Unit = js.native
-  @JSImport("fs-extra-promise", "appendFileSync")
-  @js.native
-  def appendFileSync(file: PathLike, data: Uint8Array, options: WriteFileOptions): Unit = js.native
+  @scala.inline
+  def appendFileSync(file: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: Double, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: Double, data: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: Double, data: Uint8Array, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: PathLike, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: PathLike, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: PathLike, data: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(file: PathLike, data: Uint8Array, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "chmod")
-  @js.native
-  def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "chmod")
-  @js.native
-  def chmod(path: PathLike, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def chmod(path: PathLike, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "chmodAsync")
-  @js.native
-  def chmodAsync(path: String, mode: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "chmodAsync")
-  @js.native
-  def chmodAsync(path: String, mode: Double): ^[Unit] = js.native
+  @scala.inline
+  def chmodAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def chmodAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "chmodSync")
-  @js.native
-  def chmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = js.native
+  @scala.inline
+  def chmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "chown")
-  @js.native
-  def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "chown")
-  @js.native
-  def chown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def chown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "chownAsync")
-  @js.native
-  def chownAsync(path: String, uid: Double, gid: Double): ^[Unit] = js.native
+  @scala.inline
+  def chownAsync(path: String, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chownAsync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "chownSync")
-  @js.native
-  def chownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def chownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "close")
-  @js.native
-  def close(fd: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "close")
-  @js.native
-  def close(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def close(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def close(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "closeAsync")
-  @js.native
-  def closeAsync(fd: Double): ^[Unit] = js.native
+  @scala.inline
+  def closeAsync(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "closeSync")
-  @js.native
-  def closeSync(fd: Double): Unit = js.native
+  @scala.inline
+  def closeSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object constants {
     
@@ -513,861 +477,634 @@ object mod {
     val X_OK: Double = js.native
   }
   
-  @JSImport("fs-extra-promise", "copy")
-  @js.native
-  def copy(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "copy")
-  @js.native
-  def copy(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "copy")
-  @js.native
-  def copy(src: String, dest: String, options: CopyOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "copy")
-  @js.native
-  def copy(src: String, dest: String, options: CopyOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def copy(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def copy(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copy(src: String, dest: String, options: CopyOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def copy(src: String, dest: String, options: CopyOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "copyAsync")
-  @js.native
-  def copyAsync(src: String, dest: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "copyAsync")
-  @js.native
+  @scala.inline
+  def copyAsync(src: String, dest: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
   def copyAsync(
     src: String,
     dest: String,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CopyFilter */ js.Any
-  ): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "copyAsync")
-  @js.native
-  def copyAsync(src: String, dest: String, options: CopyOptions): ^[Unit] = js.native
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def copyAsync(src: String, dest: String, options: CopyOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String, flags: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "copyFile")
-  @js.native
-  def copyFile(src: String, dest: String, flags: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def copyFile(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def copyFile(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copyFile(src: String, dest: String, flags: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def copyFile(src: String, dest: String, flags: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "copyFileSync")
-  @js.native
-  def copyFileSync(src: PathLike, dest: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "copyFileSync")
-  @js.native
-  def copyFileSync(src: PathLike, dest: PathLike, flags: Double): Unit = js.native
+  @scala.inline
+  def copyFileSync(src: PathLike, dest: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copyFileSync(src: PathLike, dest: PathLike, flags: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "copySync")
-  @js.native
-  def copySync(src: String, dest: String): Unit = js.native
-  @JSImport("fs-extra-promise", "copySync")
-  @js.native
-  def copySync(src: String, dest: String, options: CopyOptionsSync): Unit = js.native
+  @scala.inline
+  def copySync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copySync(src: String, dest: String, options: CopyOptionsSync): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "createFile")
-  @js.native
-  def createFile(file: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "createFile")
-  @js.native
-  def createFile(file: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def createFile(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def createFile(file: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "createFileAsync")
-  @js.native
-  def createFileAsync(file: String): ^[Unit] = js.native
+  @scala.inline
+  def createFileAsync(file: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "createFileSync")
-  @js.native
-  def createFileSync(file: String): Unit = js.native
+  @scala.inline
+  def createFileSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "createLink")
-  @js.native
-  def createLink(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "createLink")
-  @js.native
-  def createLink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def createLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def createLink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fs-extra-promise", "createLinkSync")
   @js.native
   val createLinkSync: js.Function2[/* src */ String, /* dest */ String, Unit] = js.native
   
-  @JSImport("fs-extra-promise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike): typings.node.fsMod.ReadStream = js.native
-  @JSImport("fs-extra-promise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: String): typings.node.fsMod.ReadStream = js.native
-  @JSImport("fs-extra-promise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: AutoClose): typings.node.fsMod.ReadStream = js.native
+  @scala.inline
+  def createReadStream(path: PathLike): typings.node.fsMod.ReadStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: String): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: AutoClose): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
   
-  @JSImport("fs-extra-promise", "createSymlink")
-  @js.native
-  def createSymlink(src: String, dest: String, `type`: SymlinkType): Unit = js.native
-  @JSImport("fs-extra-promise", "createSymlink")
-  @js.native
-  def createSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def createSymlink(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "createSymlinkSync")
-  @js.native
-  def createSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = js.native
+  @scala.inline
+  def createSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "createSymlink")
-  @js.native
-  def createSymlink_Promise(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = js.native
+  @scala.inline
+  def createSymlink_Promise(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("fs-extra-promise", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = js.native
-  @JSImport("fs-extra-promise", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike, options: String): typings.node.fsMod.WriteStream = js.native
-  @JSImport("fs-extra-promise", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike, options: EmitClose): typings.node.fsMod.WriteStream = js.native
+  @scala.inline
+  def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.WriteStream]
+  @scala.inline
+  def createWriteStream(path: PathLike, options: String): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
+  @scala.inline
+  def createWriteStream(path: PathLike, options: EmitClose): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
   
-  @JSImport("fs-extra-promise", "emptyDirSync")
-  @js.native
-  def emptyDirSync_(path: String): Unit = js.native
+  @scala.inline
+  def emptyDirSync_(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "emptyDir")
-  @js.native
-  def emptyDir_(path: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "emptyDir")
-  @js.native
-  def emptyDir_(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def emptyDir_(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def emptyDir_(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "emptydir")
-  @js.native
-  def emptydir(path: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "emptydir")
-  @js.native
-  def emptydir(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def emptydir(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def emptydir(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fs-extra-promise", "emptydirSync")
   @js.native
   val emptydirSync: js.Function1[/* path */ String, Unit] = js.native
   
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String, options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String, options: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String, options: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String, options: EnsureOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir(path: String, options: EnsureOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def ensureDir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDir(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDir(path: String, options: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDir(path: String, options: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDir(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDir(path: String, options: EnsureOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureDirAsync")
-  @js.native
-  def ensureDirAsync(path: String): ^[Unit] = js.native
+  @scala.inline
+  def ensureDirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "ensureDirSync")
-  @js.native
-  def ensureDirSync(path: String): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDirSync")
-  @js.native
-  def ensureDirSync(path: String, options: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureDirSync")
-  @js.native
-  def ensureDirSync(path: String, options: EnsureOptions): Unit = js.native
+  @scala.inline
+  def ensureDirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDirSync(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureDirSync(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir_Promise(path: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir_Promise(path: String, options: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureDir")
-  @js.native
-  def ensureDir_Promise(path: String, options: EnsureOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def ensureDir_Promise(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureDir_Promise(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureDir_Promise(path: String, options: EnsureOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("fs-extra-promise", "ensureFile")
-  @js.native
-  def ensureFile(path: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureFile")
-  @js.native
-  def ensureFile(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def ensureFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureFile(path: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureFileSync")
-  @js.native
-  def ensureFileSync(path: String): Unit = js.native
+  @scala.inline
+  def ensureFileSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureLink")
-  @js.native
-  def ensureLink(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureLink")
-  @js.native
-  def ensureLink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def ensureLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureLink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureLinkSync")
-  @js.native
-  def ensureLinkSync(src: String, dest: String): Unit = js.native
+  @scala.inline
+  def ensureLinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureSymlink")
-  @js.native
-  def ensureSymlink(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureSymlink")
-  @js.native
-  def ensureSymlink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureSymlink")
-  @js.native
-  def ensureSymlink(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ensureSymlink")
-  @js.native
-  def ensureSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def ensureSymlink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureSymlink(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureSymlink(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ensureSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ensureSymlinkSync")
-  @js.native
-  def ensureSymlinkSync(src: String, dest: String): Unit = js.native
-  @JSImport("fs-extra-promise", "ensureSymlinkSync")
-  @js.native
-  def ensureSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = js.native
+  @scala.inline
+  def ensureSymlinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "exists")
-  @js.native
-  def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "existsAsync")
-  @js.native
-  def existsAsync(path: String): ^[Boolean] = js.native
+  @scala.inline
+  def existsAsync(path: String): typings.bluebird.mod.^[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Boolean]]
   
-  @JSImport("fs-extra-promise", "existsSync")
-  @js.native
-  def existsSync(path: PathLike): Boolean = js.native
+  @scala.inline
+  def existsSync(path: PathLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fs-extra-promise", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: Mode): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def fchmod(fd: Double, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def fchmod(fd: Double, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fchmodAsync")
-  @js.native
-  def fchmodAsync(fd: Double, mode: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "fchmodAsync")
-  @js.native
-  def fchmodAsync(fd: Double, mode: Double): ^[Unit] = js.native
+  @scala.inline
+  def fchmodAsync(fd: Double, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodAsync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def fchmodAsync(fd: Double, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodAsync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "fchmodSync")
-  @js.native
-  def fchmodSync(fd: Double, mode: typings.node.fsMod.Mode): Unit = js.native
+  @scala.inline
+  def fchmodSync(fd: Double, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fchown")
-  @js.native
-  def fchown(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "fchown")
-  @js.native
-  def fchown(fd: Double, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def fchown(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def fchown(fd: Double, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fchownAsync")
-  @js.native
-  def fchownAsync(fd: Double, uid: Double, gid: Double): ^[Unit] = js.native
+  @scala.inline
+  def fchownAsync(fd: Double, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownAsync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "fchownSync")
-  @js.native
-  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fdatasync")
-  @js.native
-  def fdatasync(fd: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "fdatasync")
-  @js.native
-  def fdatasync(fd: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def fdatasync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def fdatasync(fd: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fdatasyncSync")
-  @js.native
-  def fdatasyncSync(fd: Double): Unit = js.native
+  @scala.inline
+  def fdatasyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fstat")
-  @js.native
-  def fstat(fd: Double): js.Promise[typings.node.fsMod.Stats] = js.native
-  @JSImport("fs-extra-promise", "fstat")
-  @js.native
+  @scala.inline
+  def fstat(fd: Double): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+  @scala.inline
   def fstat(
     fd: Double,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fstatAsync")
-  @js.native
-  def fstatAsync(fd: Double): ^[typings.node.fsMod.Stats] = js.native
+  @scala.inline
+  def fstatAsync(fd: Double): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
-  @JSImport("fs-extra-promise", "fstatSync")
-  @js.native
-  def fstatSync(fd: Double): typings.node.fsMod.Stats = js.native
+  @scala.inline
+  def fstatSync(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
-  @JSImport("fs-extra-promise", "fsync")
-  @js.native
-  def fsync(fd: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "fsync")
-  @js.native
-  def fsync(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def fsync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def fsync(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "fsyncAsync")
-  @js.native
-  def fsyncAsync(fd: Double): ^[Unit] = js.native
+  @scala.inline
+  def fsyncAsync(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "fsyncSync")
-  @js.native
-  def fsyncSync(fd: Double): Unit = js.native
+  @scala.inline
+  def fsyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, len: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def ftruncate(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ftruncate(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncate(fd: Double, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double, len: Double): Unit = js.native
+  @scala.inline
+  def ftruncateSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncateSync(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: Date, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: Date, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "futimesAsync")
-  @js.native
-  def futimesAsync(fd: Double, atime: Double, mtime: Double): ^[Unit] = js.native
+  @scala.inline
+  def futimesAsync(fd: Double, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesAsync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "isDirectory")
-  @js.native
-  def isDirectory(path: String): Unit = js.native
-  @JSImport("fs-extra-promise", "isDirectory")
-  @js.native
-  def isDirectory(path: String, callback: js.Function2[/* err */ Error, /* isDirectory */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isDirectory(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def isDirectory(path: String, callback: js.Function2[/* err */ Error, /* isDirectory */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "isDirectoryAsync")
-  @js.native
-  def isDirectoryAsync(path: String): ^[Boolean] = js.native
+  @scala.inline
+  def isDirectoryAsync(path: String): typings.bluebird.mod.^[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectoryAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Boolean]]
   
-  @JSImport("fs-extra-promise", "isDirectorySync")
-  @js.native
-  def isDirectorySync(path: String): Boolean = js.native
+  @scala.inline
+  def isDirectorySync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectorySync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fs-extra-promise", "lchmod")
-  @js.native
-  def lchmod(path: PathLike, mode: typings.node.fsMod.Mode, callback: NoParamCallback): Unit = js.native
+  @scala.inline
+  def lchmod(path: PathLike, mode: typings.node.fsMod.Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lchmodAsync")
-  @js.native
-  def lchmodAsync(path: String, mode: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "lchmodAsync")
-  @js.native
-  def lchmodAsync(path: String, mode: Double): ^[Unit] = js.native
+  @scala.inline
+  def lchmodAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def lchmodAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "lchmodSync")
-  @js.native
-  def lchmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = js.native
+  @scala.inline
+  def lchmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lchown")
-  @js.native
-  def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "lchown")
-  @js.native
-  def lchown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def lchown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lchownAsync")
-  @js.native
-  def lchownAsync(path: String, uid: Double, gid: Double): ^[Unit] = js.native
+  @scala.inline
+  def lchownAsync(path: String, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownAsync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "lchownSync")
-  @js.native
-  def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "link")
-  @js.native
-  def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "link")
-  @js.native
-  def link(existingPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def link(existingPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "linkAsync")
-  @js.native
-  def linkAsync(srcpath: String, dstpath: String): ^[Unit] = js.native
+  @scala.inline
+  def linkAsync(srcpath: String, dstpath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "linkSync")
-  @js.native
-  def linkSync(existingPath: PathLike, newPath: PathLike): Unit = js.native
+  @scala.inline
+  def linkSync(existingPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lstat")
-  @js.native
-  def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = js.native
-  @JSImport("fs-extra-promise", "lstat")
-  @js.native
+  @scala.inline
+  def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+  @scala.inline
   def lstat(
     path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lstatAsync")
-  @js.native
-  def lstatAsync(path: String): ^[typings.node.fsMod.Stats] = js.native
+  @scala.inline
+  def lstatAsync(path: String): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstatAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
-  @JSImport("fs-extra-promise", "lstatSync")
-  @js.native
-  def lstatSync(path: PathLike): typings.node.fsMod.Stats = js.native
+  @scala.inline
+  def lstatSync(path: PathLike): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("lstatSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: String, mtime: String, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: String, mtime: Double, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: String, mtime: Date, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Double, mtime: String, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Double, mtime: Double, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Double, mtime: Date, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Date, mtime: String, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Date, mtime: Double, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimes")
-  @js.native
-  def lutimes(path: PathLike, atime: Date, mtime: Date, callback: NoParamCallback): Unit = js.native
+  @scala.inline
+  def lutimes(path: PathLike, atime: String, mtime: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: String, mtime: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: String, mtime: Date, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Double, mtime: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Double, mtime: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Double, mtime: Date, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Date, mtime: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Date, mtime: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimes(path: PathLike, atime: Date, mtime: Date, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: String, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: String, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: String, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "lutimesSync")
-  @js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: String, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: String, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: String, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Double, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Double, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Date, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Date, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lutimesSync(path: PathLike, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdir")
-  @js.native
-  def mkdir(path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdir")
-  @js.native
-  def mkdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "mkdir")
-  @js.native
-  def mkdir(path: PathLike, options: Null, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "mkdir")
-  @js.native
-  def mkdir(path: PathLike, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "mkdir")
-  @js.native
+  @scala.inline
+  def mkdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def mkdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: PathLike, options: Null, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdir(path: PathLike, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def mkdir(
     path: PathLike,
     options: MakeDirectoryOptions,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdirAsync")
-  @js.native
-  def mkdirAsync(path: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirAsync")
-  @js.native
-  def mkdirAsync(path: String, mode: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirAsync")
-  @js.native
-  def mkdirAsync(path: String, mode: Double): ^[Unit] = js.native
+  @scala.inline
+  def mkdirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdirAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdirAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: typings.node.fsMod.Mode): js.UndefOr[String] = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync_Unit(path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "mkdirSync")
-  @js.native
-  def mkdirSync_Unit(path: PathLike, options: typings.node.fsMod.Mode): Unit = js.native
+  @scala.inline
+  def mkdirSync(path: PathLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: typings.node.fsMod.Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("fs-extra-promise", "mkdirp")
-  @js.native
-  def mkdirp(dir: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirp")
-  @js.native
-  def mkdirp(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def mkdirSync_Unit(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync_Unit(path: PathLike, options: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdirpAsync")
-  @js.native
-  def mkdirpAsync(dir: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirpAsync")
-  @js.native
-  def mkdirpAsync(dir: String, options: MkdirOptions): ^[Unit] = js.native
+  @scala.inline
+  def mkdirp(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def mkdirp(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdirpSync")
-  @js.native
-  def mkdirpSync(dir: String): Unit = js.native
+  @scala.inline
+  def mkdirpAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdirpAsync(dir: String, options: MkdirOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpAsync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "mkdirs")
-  @js.native
-  def mkdirs(dir: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirs")
-  @js.native
-  def mkdirs(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def mkdirpSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdirsAsync")
-  @js.native
-  def mkdirsAsync(dir: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "mkdirsAsync")
-  @js.native
-  def mkdirsAsync(dir: String, options: MkdirOptions): ^[Unit] = js.native
+  @scala.inline
+  def mkdirs(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def mkdirs(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdirsSync")
-  @js.native
-  def mkdirsSync(dir: String): Unit = js.native
+  @scala.inline
+  def mkdirsAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdirsAsync(dir: String, options: MkdirOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsAsync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "mkdtemp")
-  @js.native
-  def mkdtemp(prefix: String): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "mkdtemp")
-  @js.native
-  def mkdtemp(prefix: String, callback: js.Function2[/* err */ ErrnoException, /* folder */ String, Unit]): Unit = js.native
+  @scala.inline
+  def mkdirsSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdtempAsync")
-  @js.native
-  def mkdtempAsync(prefix: String, options: String): ^[String] = js.native
-  @JSImport("fs-extra-promise", "mkdtempAsync")
-  @js.native
-  def mkdtempAsync(prefix: String, options: typings.fsExtraPromise.anon.Encoding): ^[String] = js.native
+  @scala.inline
+  def mkdtemp(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def mkdtemp(prefix: String, callback: js.Function2[/* err */ ErrnoException, /* folder */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync(prefix: String): String = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync(prefix: String, options: String): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync(prefix: String, options: BufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync(prefix: String, options: BaseEncodingOptions): String = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync(prefix: String, options: BufferEncodingOption): Buffer = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync_Union(prefix: String): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "mkdtempSync")
-  @js.native
-  def mkdtempSync_Union(prefix: String, options: BaseEncodingOptions): String | Buffer = js.native
+  @scala.inline
+  def mkdtempAsync(prefix: String, options: String): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempAsync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def mkdtempAsync(prefix: String, options: typings.fsExtraPromise.anon.Encoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempAsync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("fs-extra-promise", "move")
-  @js.native
-  def move(src: String, dest: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "move")
-  @js.native
-  def move(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "move")
-  @js.native
-  def move(src: String, dest: String, options: MoveOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "move")
-  @js.native
-  def move(src: String, dest: String, options: MoveOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def mkdtempSync(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def mkdtempSync(prefix: String, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def mkdtempSync(prefix: String, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mkdtempSync(prefix: String, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mkdtempSync(prefix: String, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("fs-extra-promise", "moveAsync")
-  @js.native
-  def moveAsync(src: String, dest: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "moveAsync")
-  @js.native
-  def moveAsync(src: String, dest: String, options: MoveOptions): ^[Unit] = js.native
+  @scala.inline
+  def mkdtempSync_Union(prefix: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def mkdtempSync_Union(prefix: String, options: BaseEncodingOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  @JSImport("fs-extra-promise", "moveSync")
-  @js.native
-  def moveSync(src: String, dest: String): Unit = js.native
-  @JSImport("fs-extra-promise", "moveSync")
-  @js.native
-  def moveSync(src: String, dest: String, options: MoveOptions): Unit = js.native
+  @scala.inline
+  def move(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def move(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def move(src: String, dest: String, options: MoveOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def move(src: String, dest: String, options: MoveOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "open")
-  @js.native
-  def open(path: PathLike, flags: String): js.Promise[Double] = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
+  @scala.inline
+  def moveAsync(src: String, dest: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def moveAsync(src: String, dest: String, options: MoveOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  
+  @scala.inline
+  def moveSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def moveSync(src: String, dest: String, options: MoveOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def open(path: PathLike, flags: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
   def open(
     path: PathLike,
     flags: String,
     callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
-  def open(path: PathLike, flags: String, mode: Mode): js.Promise[Double] = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: PathLike, flags: String, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
   def open(
     path: PathLike,
     flags: String,
     mode: Mode,
     callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
-  def open(path: PathLike, flags: Double): js.Promise[Double] = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: PathLike, flags: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
   def open(
     path: PathLike,
     flags: Double,
     callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
-  def open(path: PathLike, flags: Double, mode: Mode): js.Promise[Double] = js.native
-  @JSImport("fs-extra-promise", "open")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(path: PathLike, flags: Double, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  @scala.inline
   def open(
     path: PathLike,
     flags: Double,
     mode: Mode,
     callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "openAsync")
-  @js.native
-  def openAsync(path: String, flags: String): ^[Double] = js.native
-  @JSImport("fs-extra-promise", "openAsync")
-  @js.native
-  def openAsync(path: String, flags: String, mode: String): ^[Double] = js.native
+  @scala.inline
+  def openAsync(path: String, flags: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def openAsync(path: String, flags: String, mode: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
   
-  @JSImport("fs-extra-promise", "openSync")
-  @js.native
-  def openSync(path: PathLike, flags: OpenMode): Double = js.native
-  @JSImport("fs-extra-promise", "openSync")
-  @js.native
-  def openSync(path: PathLike, flags: OpenMode, mode: typings.node.fsMod.Mode): Double = js.native
+  @scala.inline
+  def openSync(path: PathLike, flags: OpenMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def openSync(path: PathLike, flags: OpenMode, mode: typings.node.fsMod.Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs-extra-promise", "opendir")
-  @js.native
-  def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = js.native
-  @JSImport("fs-extra-promise", "opendir")
-  @js.native
+  @scala.inline
+  def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = ^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
+  @scala.inline
   def opendir(
     path: String,
     cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ typings.node.fsMod.Dir, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "opendir")
-  @js.native
-  def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = js.native
-  @JSImport("fs-extra-promise", "opendir")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
+  @scala.inline
   def opendir(
     path: String,
     options: OpenDirOptions,
     cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ typings.node.fsMod.Dir, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "opendirSync")
-  @js.native
-  def opendirSync(path: String): typings.node.fsMod.Dir = js.native
-  @JSImport("fs-extra-promise", "opendirSync")
-  @js.native
-  def opendirSync(path: String, options: OpenDirOptions): typings.node.fsMod.Dir = js.native
+  @scala.inline
+  def opendirSync(path: String): typings.node.fsMod.Dir = ^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Dir]
+  @scala.inline
+  def opendirSync(path: String, options: OpenDirOptions): typings.node.fsMod.Dir = (^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Dir]
   
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
-  def outputFile(file: String, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
-  def outputFile(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
-  def outputFile(file: String, data: js.Any, options: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
-  def outputFile(file: String, data: js.Any, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
-  def outputFile(file: String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputFile")
-  @js.native
+  @scala.inline
+  def outputFile(file: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputFile(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputFile(file: String, data: js.Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputFile(file: String, data: js.Any, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputFile(file: String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def outputFile(
     file: String,
     data: js.Any,
     options: typings.fsExtra.mod.WriteFileOptions,
     callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "outputFileAsync")
-  @js.native
-  def outputFileAsync(file: String, data: js.Any): ^[Unit] = js.native
+  @scala.inline
+  def outputFileAsync(file: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "outputFileSync")
-  @js.native
-  def outputFileSync(file: String, data: js.Any): Unit = js.native
-  @JSImport("fs-extra-promise", "outputFileSync")
-  @js.native
-  def outputFileSync(file: String, data: js.Any, options: String): Unit = js.native
-  @JSImport("fs-extra-promise", "outputFileSync")
-  @js.native
-  def outputFileSync(file: String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): Unit = js.native
+  @scala.inline
+  def outputFileSync(file: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputFileSync(file: String, data: js.Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputFileSync(file: String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "outputJSONAsync")
-  @js.native
-  def outputJSONAsync_(file: String, data: js.Any): ^[Unit] = js.native
+  @scala.inline
+  def outputJSONAsync_(file: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "outputJSONSync")
-  @js.native
-  def outputJSONSync_(file: String, data: js.Any): Unit = js.native
-  @JSImport("fs-extra-promise", "outputJSONSync")
-  @js.native
-  def outputJSONSync_(file: String, data: js.Any, options: WriteOptions): Unit = js.native
+  @scala.inline
+  def outputJSONSync_(file: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputJSONSync_(file: String, data: js.Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "outputJSON")
-  @js.native
-  def outputJSON_(file: String, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputJSON")
-  @js.native
-  def outputJSON_(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "outputJSON")
-  @js.native
-  def outputJSON_(file: String, data: js.Any, options: WriteOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputJSON")
-  @js.native
-  def outputJSON_(file: String, data: js.Any, options: WriteOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def outputJSON_(file: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputJSON_(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputJSON_(file: String, data: js.Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputJSON_(file: String, data: js.Any, options: WriteOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "outputJson")
-  @js.native
-  def outputJson(file: String, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputJson")
-  @js.native
-  def outputJson(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "outputJson")
-  @js.native
-  def outputJson(file: String, data: js.Any, options: WriteOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "outputJson")
-  @js.native
-  def outputJson(file: String, data: js.Any, options: WriteOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def outputJson(file: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputJson(file: String, data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputJson(file: String, data: js.Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def outputJson(file: String, data: js.Any, options: WriteOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "outputJsonAsync")
-  @js.native
-  def outputJsonAsync(file: String, data: js.Any): ^[Unit] = js.native
+  @scala.inline
+  def outputJsonAsync(file: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "outputJsonSync")
-  @js.native
-  def outputJsonSync(file: String, data: js.Any): Unit = js.native
-  @JSImport("fs-extra-promise", "outputJsonSync")
-  @js.native
-  def outputJsonSync(file: String, data: js.Any, options: WriteOptions): Unit = js.native
+  @scala.inline
+  def outputJsonSync(file: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def outputJsonSync(file: String, data: js.Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "pathExists")
-  @js.native
-  def pathExists(path: String): js.Promise[Boolean] = js.native
-  @JSImport("fs-extra-promise", "pathExists")
-  @js.native
-  def pathExists(path: String, callback: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def pathExists(path: String, callback: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "pathExistsSync")
-  @js.native
-  def pathExistsSync(path: String): Boolean = js.native
+  @scala.inline
+  def pathExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object promises {
+    
+    @JSImport("fs-extra-promise", "promises")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Asynchronously tests a user's permissions for the file specified by path.
       * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
       * URL support is _experimental_.
       */
-    @JSImport("fs-extra-promise", "promises.access")
-    @js.native
-    def access(path: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.access")
-    @js.native
-    def access(path: PathLike, mode: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def access(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def access(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously append data to a file, creating the file if it does not exist.
@@ -1381,59 +1118,45 @@ object mod {
       * If `mode` is a string, it is parsed as an octal integer.
       * If `flag` is not supplied, the default of `'a'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.appendFile")
-    @js.native
-    def appendFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+    @scala.inline
+    def appendFile(path: PathLike, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def appendFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous chmod(2) - Change permissions of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    @JSImport("fs-extra-promise", "promises.chmod")
-    @js.native
-    def chmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = js.native
+    @scala.inline
+    def chmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous chown(2) - Change ownership of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.chown")
-    @js.native
-    def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously copies `src` to `dest`. By default, `dest` is overwritten if it already exists.
@@ -1446,65 +1169,56 @@ object mod {
       * supported flag is `fs.constants.COPYFILE_EXCL`, which causes the copy operation to fail if
       * `dest` already exists.
       */
-    @JSImport("fs-extra-promise", "promises.copyFile")
-    @js.native
-    def copyFile(src: PathLike, dest: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.copyFile")
-    @js.native
-    def copyFile(src: PathLike, dest: PathLike, flags: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def copyFile(src: PathLike, dest: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def copyFile(src: PathLike, dest: PathLike, flags: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous fchmod(2) - Change permissions of a file.
       * @param handle A `FileHandle`.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    @JSImport("fs-extra-promise", "promises.fchmod")
-    @js.native
-    def fchmod(handle: FileHandle, mode: typings.node.fsMod.Mode): js.Promise[Unit] = js.native
+    @scala.inline
+    def fchmod(handle: FileHandle, mode: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(handle.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous fchown(2) - Change ownership of a file.
       * @param handle A `FileHandle`.
       */
-    @JSImport("fs-extra-promise", "promises.fchown")
-    @js.native
-    def fchown(handle: FileHandle, uid: Double, gid: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def fchown(handle: FileHandle, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(handle.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
       * @param handle A `FileHandle`.
       */
-    @JSImport("fs-extra-promise", "promises.fdatasync")
-    @js.native
-    def fdatasync(handle: FileHandle): js.Promise[Unit] = js.native
+    @scala.inline
+    def fdatasync(handle: FileHandle): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous fstat(2) - Get file status.
       * @param handle A `FileHandle`.
       */
-    @JSImport("fs-extra-promise", "promises.fstat")
-    @js.native
-    def fstat(handle: FileHandle): js.Promise[typings.node.fsMod.Stats] = js.native
+    @scala.inline
+    def fstat(handle: FileHandle): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
     
     /**
       * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
       * @param handle A `FileHandle`.
       */
-    @JSImport("fs-extra-promise", "promises.fsync")
-    @js.native
-    def fsync(handle: FileHandle): js.Promise[Unit] = js.native
+    @scala.inline
+    def fsync(handle: FileHandle): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous ftruncate(2) - Truncate a file to a specified length.
       * @param handle A `FileHandle`.
       * @param len If not specified, defaults to `0`.
       */
-    @JSImport("fs-extra-promise", "promises.ftruncate")
-    @js.native
-    def ftruncate(handle: FileHandle): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.ftruncate")
-    @js.native
-    def ftruncate(handle: FileHandle, len: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def ftruncate(handle: FileHandle): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def ftruncate(handle: FileHandle, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(handle.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously change file timestamps of the file referenced by the supplied `FileHandle`.
@@ -1512,67 +1226,54 @@ object mod {
       * @param atime The last access time. If a string is provided, it will be coerced to number.
       * @param mtime The last modified time. If a string is provided, it will be coerced to number.
       */
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: String, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: String, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: String, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Double, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Date, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.futimes")
-    @js.native
-    def futimes(handle: FileHandle, atime: Date, mtime: Date): js.Promise[Unit] = js.native
+    @scala.inline
+    def futimes(handle: FileHandle, atime: String, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: String, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: String, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Double, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Double, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Date, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Date, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def futimes(handle: FileHandle, atime: Date, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(handle.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    @JSImport("fs-extra-promise", "promises.lchmod")
-    @js.native
-    def lchmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = js.native
+    @scala.inline
+    def lchmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.lchown")
-    @js.native
-    def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
       * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.link")
-    @js.native
-    def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
+    @scala.inline
+    def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.lstat")
-    @js.native
-    def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = js.native
+    @scala.inline
+    def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
     
     /**
       * Changes the access and modification times of a file in the same way as `fsPromises.utimes()`,
@@ -1582,33 +1283,24 @@ object mod {
       * @param atime The last access time. If a string is provided, it will be coerced to number.
       * @param mtime The last modified time. If a string is provided, it will be coerced to number.
       */
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.lutimes")
-    @js.native
-    def lutimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
+    @scala.inline
+    def lutimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def lutimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous mkdir(2) - create a directory.
@@ -1616,50 +1308,41 @@ object mod {
       * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
       * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
       */
-    @JSImport("fs-extra-promise", "promises.mkdir")
-    @js.native
-    def mkdir(path: PathLike): js.Promise[Unit] = js.native
+    @scala.inline
+    def mkdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     /**
       * Asynchronous mkdir(2) - create a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
       * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
       */
-    @JSImport("fs-extra-promise", "promises.mkdir")
-    @js.native
-    def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.mkdir")
-    @js.native
-    def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.mkdir")
-    @js.native
-    def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[js.UndefOr[String]] = js.native
-    @JSImport("fs-extra-promise", "promises.mkdir")
-    @js.native
-    def mkdir(path: PathLike, options: typings.node.fsMod.Mode): js.Promise[Unit] = js.native
+    @scala.inline
+    def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+    @scala.inline
+    def mkdir(path: PathLike, options: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously creates a unique temporary directory.
       * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.mkdtemp")
-    @js.native
-    def mkdtemp(prefix: String): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.mkdtemp")
-    @js.native
-    def mkdtemp(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.mkdtemp")
-    @js.native
-    def mkdtemp(prefix: String, options: BaseEncodingOptions): js.Promise[String] = js.native
+    @scala.inline
+    def mkdtemp(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def mkdtemp(prefix: String, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def mkdtemp(prefix: String, options: BaseEncodingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     /**
       * Asynchronously creates a unique temporary directory.
       * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.mkdtemp")
-    @js.native
-    def mkdtemp(prefix: String, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+    @scala.inline
+    def mkdtemp(prefix: String, options: BufferEncodingOption): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     
     /**
       * Asynchronous open(2) - open and possibly create a file.
@@ -1667,25 +1350,19 @@ object mod {
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not
       * supplied, defaults to `0o666`.
       */
-    @JSImport("fs-extra-promise", "promises.open")
-    @js.native
-    def open(path: PathLike, flags: String): js.Promise[FileHandle] = js.native
-    @JSImport("fs-extra-promise", "promises.open")
-    @js.native
-    def open(path: PathLike, flags: String, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = js.native
-    @JSImport("fs-extra-promise", "promises.open")
-    @js.native
-    def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
-    @JSImport("fs-extra-promise", "promises.open")
-    @js.native
-    def open(path: PathLike, flags: Double, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = js.native
+    @scala.inline
+    def open(path: PathLike, flags: String): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    @scala.inline
+    def open(path: PathLike, flags: String, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    @scala.inline
+    def open(path: PathLike, flags: Double): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    @scala.inline
+    def open(path: PathLike, flags: Double, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
     
-    @JSImport("fs-extra-promise", "promises.opendir")
-    @js.native
-    def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = js.native
-    @JSImport("fs-extra-promise", "promises.opendir")
-    @js.native
-    def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = js.native
+    @scala.inline
+    def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = ^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
+    @scala.inline
+    def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
     
     /**
       * Asynchronously reads data from the file referenced by the supplied `FileHandle`.
@@ -1696,78 +1373,34 @@ object mod {
       * @param position The offset from the beginning of the file from which data should be read. If
       * `null`, data will be read from the current position.
       */
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: Double,
-      position: Double
-    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: Null,
-      position: Double
-    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: Double,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: Null,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.read")
-    @js.native
-    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
+    @scala.inline
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.anon.Buffer[TBuffer]]]
     
     /**
       * Asynchronously reads the entire contents of a file.
@@ -1776,15 +1409,12 @@ object mod {
       * @param options An object that may contain an optional flag.
       * If a flag is not provided, it defaults to `'r'`.
       */
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: PathLike): js.Promise[Buffer] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: PathLike, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = js.native
+    @scala.inline
+    def readFile(path: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+    @scala.inline
+    def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readFile(path: PathLike, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
     /**
       * Asynchronously reads the entire contents of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1792,110 +1422,89 @@ object mod {
       * @param options An object that may contain an optional flag.
       * If a flag is not provided, it defaults to `'r'`.
       */
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: PathLike, options: EncodingFlag): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: PathLike, options: Flag): js.Promise[Buffer] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: FileHandle): js.Promise[Buffer] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: FileHandle, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: FileHandle, options: EncodingFlag): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readFile")
-    @js.native
-    def readFile(path: FileHandle, options: Flag): js.Promise[Buffer] = js.native
+    @scala.inline
+    def readFile(path: PathLike, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readFile(path: PathLike, options: Flag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+    @scala.inline
+    def readFile(path: FileHandle): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+    @scala.inline
+    def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readFile(path: FileHandle, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+    @scala.inline
+    def readFile(path: FileHandle, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readFile(path: FileHandle, options: Flag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir(path: PathLike): js.Promise[js.Array[String]] = js.native
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir(path: PathLike, options: BaseEncodingOptionswithFi): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def readdir(path: PathLike, options: BaseEncodingOptionswithFi): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
       */
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Promise[js.Array[typings.node.fsMod.Dirent]] = js.native
+    @scala.inline
+    def readdir(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir(path: PathLike, options: typings.node.anon.Encoding): js.Promise[js.Array[Buffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.readdir")
-    @js.native
-    def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
+    @scala.inline
+    def readdir(path: PathLike, options: typings.node.anon.Encoding): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
+    
+    @scala.inline
+    def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
     
     /**
       * Asynchronous readlink(2) - read value of a symbolic link.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.readlink")
-    @js.native
-    def readlink(path: PathLike): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readlink")
-    @js.native
-    def readlink(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
-    @JSImport("fs-extra-promise", "promises.readlink")
-    @js.native
-    def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.readlink")
-    @js.native
-    def readlink(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = js.native
+    @scala.inline
+    def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readlink(path: PathLike, options: String): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+    @scala.inline
+    def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def readlink(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     /**
       * Asynchronous readlink(2) - read value of a symbolic link.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.readlink")
-    @js.native
-    def readlink(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+    @scala.inline
+    def readlink(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     
     /**
       * Asynchronous realpath(3) - return the canonicalized absolute pathname.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.realpath")
-    @js.native
-    def realpath(path: PathLike): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.realpath")
-    @js.native
-    def realpath(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-    @JSImport("fs-extra-promise", "promises.realpath")
-    @js.native
-    def realpath(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = js.native
+    @scala.inline
+    def realpath(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def realpath(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def realpath(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     /**
       * Asynchronous realpath(3) - return the canonicalized absolute pathname.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.realpath")
-    @js.native
-    def realpath(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+    @scala.inline
+    def realpath(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     
     /**
       * Asynchronous rename(2) - Change the name or location of a file or directory.
@@ -1904,38 +1513,32 @@ object mod {
       * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
       * URL support is _experimental_.
       */
-    @JSImport("fs-extra-promise", "promises.rename")
-    @js.native
-    def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
+    @scala.inline
+    def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously removes files and directories (modeled on the standard POSIX `rm` utility).
       */
-    @JSImport("fs-extra-promise", "promises.rm")
-    @js.native
-    def rm(path: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.rm")
-    @js.native
-    def rm(path: PathLike, options: RmOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def rm(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def rm(path: PathLike, options: RmOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous rmdir(2) - delete a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.rmdir")
-    @js.native
-    def rmdir(path: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.rmdir")
-    @js.native
-    def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def rmdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous stat(2) - Get file status.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.stat")
-    @js.native
-    def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = js.native
+    @scala.inline
+    def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
     
     /**
       * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
@@ -1944,32 +1547,27 @@ object mod {
       * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
       * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
       */
-    @JSImport("fs-extra-promise", "promises.symlink")
-    @js.native
-    def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.symlink")
-    @js.native
-    def symlink(target: PathLike, path: PathLike, `type`: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def symlink(target: PathLike, path: PathLike, `type`: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous truncate(2) - Truncate a file to a specified length.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param len If not specified, defaults to `0`.
       */
-    @JSImport("fs-extra-promise", "promises.truncate")
-    @js.native
-    def truncate(path: PathLike): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.truncate")
-    @js.native
-    def truncate(path: PathLike, len: Double): js.Promise[Unit] = js.native
+    @scala.inline
+    def truncate(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def truncate(path: PathLike, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    @JSImport("fs-extra-promise", "promises.unlink")
-    @js.native
-    def unlink(path: PathLike): js.Promise[Unit] = js.native
+    @scala.inline
+    def unlink(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously change file timestamps of the file referenced by the supplied path.
@@ -1977,33 +1575,24 @@ object mod {
       * @param atime The last access time. If a string is provided, it will be coerced to number.
       * @param mtime The last modified time. If a string is provided, it will be coerced to number.
       */
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.utimes")
-    @js.native
-    def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
+    @scala.inline
+    def utimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Asynchronously writes `string` to the file referenced by the supplied `FileHandle`.
@@ -2014,21 +1603,16 @@ object mod {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       * @param encoding The expected string encoding.
       */
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write(handle: FileHandle, string: String): js.Promise[BufferBytesWritten] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write(handle: FileHandle, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write(handle: FileHandle, string: String, position: Double): js.Promise[BufferBytesWritten] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write(handle: FileHandle, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write(handle: FileHandle, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
+    @scala.inline
+    def write(handle: FileHandle, string: String): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+    @scala.inline
+    def write(handle: FileHandle, string: String, position: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+    @scala.inline
+    def write(handle: FileHandle, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+    @scala.inline
+    def write(handle: FileHandle, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+    @scala.inline
+    def write(handle: FileHandle, string: String, position: Unit, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
     /**
       * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
       * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
@@ -2039,78 +1623,34 @@ object mod {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: Double,
-      position: Double
-    ): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: Null,
-      position: Double
-    ): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: Double,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](
-      handle: FileHandle,
-      buffer: TBuffer,
-      offset: Null,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-    @JSImport("fs-extra-promise", "promises.write")
-    @js.native
-    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+    @scala.inline
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(handle.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
     
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists.
@@ -2125,52 +1665,37 @@ object mod {
       * If `mode` is a string, it is parsed as an octal integer.
       * If `flag` is not supplied, the default of `'w'` is used.
       */
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: String): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-    @JSImport("fs-extra-promise", "promises.writeFile")
-    @js.native
-    def writeFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+    @scala.inline
+    def writeFile(path: PathLike, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def writeFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataView] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataView] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  @scala.inline
+  def read(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataView]]
+  @scala.inline
+  def read(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataView]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: DataView,
@@ -2178,9 +1703,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: DataView,
@@ -2188,15 +1712,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Float32Array,
@@ -2204,9 +1725,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Float32Array,
@@ -2214,15 +1734,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Float64Array,
@@ -2230,9 +1747,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Float64Array,
@@ -2240,15 +1756,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int16Array,
@@ -2256,9 +1769,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int16Array,
@@ -2266,15 +1778,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int32Array,
@@ -2282,9 +1791,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int32Array,
@@ -2292,15 +1800,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int8Array,
@@ -2308,9 +1813,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Int8Array,
@@ -2318,15 +1822,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferBytesRead] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferBytesRead] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferBytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesRead]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferBytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesRead]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint16Array,
@@ -2334,9 +1835,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint16Array,
@@ -2344,15 +1844,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BufferUint32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint32Array] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BufferUint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint32Array]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint32Array]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint32Array,
@@ -2360,9 +1857,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint32Array,
@@ -2370,15 +1866,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.Buffer] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.Buffer] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint8Array,
@@ -2386,9 +1879,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint8Array,
@@ -2396,15 +1888,12 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[BytesRead] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[BytesRead] = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesRead]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesRead]]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -2412,9 +1901,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "read")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def read(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -2422,303 +1910,226 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readAsync")
-  @js.native
-  def readAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): ^[js.Tuple2[Double, Buffer]] = js.native
+  @scala.inline
+  def readAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[js.Tuple2[Double, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readAsync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Tuple2[Double, Buffer]]]
   
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: Double): js.Promise[Buffer] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: Double, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: Double, encoding: String): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  @scala.inline
+  def readFile(file: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def readFile(file: Double, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: Double, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: Double,
     encoding: String,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: Double, options: typings.fsExtra.anon.EncodingFlag): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: Double, options: typings.fsExtra.anon.EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: Double,
     options: typings.fsExtra.anon.EncodingFlag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: Double, options: typings.fsExtra.anon.Flag): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: Double, options: typings.fsExtra.anon.Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: Double,
     options: typings.fsExtra.anon.Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: PathLike): js.Promise[Buffer] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: PathLike, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: PathLike, encoding: String): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def readFile(file: PathLike, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: PathLike, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: PathLike,
     encoding: String,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: PathLike, options: typings.fsExtra.anon.EncodingFlag): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: PathLike, options: typings.fsExtra.anon.EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: PathLike,
     options: typings.fsExtra.anon.EncodingFlag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
-  def readFile(file: PathLike, options: typings.fsExtra.anon.Flag): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readFile(file: PathLike, options: typings.fsExtra.anon.Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def readFile(
     file: PathLike,
     options: typings.fsExtra.anon.Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readFileAsync")
-  @js.native
-  def readFileAsync(filename: String): ^[Buffer] = js.native
-  @JSImport("fs-extra-promise", "readFileAsync")
-  @js.native
-  def readFileAsync(filename: String, options: String): ^[String] = js.native
-  @JSImport("fs-extra-promise", "readFileAsync")
-  @js.native
-  def readFileAsync(filename: String, options: ReadOptions): ^[String] = js.native
+  @scala.inline
+  def readFileAsync(filename: String): typings.bluebird.mod.^[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  @scala.inline
+  def readFileAsync(filename: String, options: String): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFileAsync(filename: String, options: ReadOptions): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: Double): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: Double, options: BufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: Double, options: EncodingBufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: Double, options: `3`): Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike, options: BufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike, options: `3`): Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync_Buffer(path: Double): Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync_Buffer(path: PathLike): Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync_Union(path: Double, options: BufferEncoding): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readFileSync")
-  @js.native
-  def readFileSync_Union(path: PathLike, options: BufferEncoding): String | Buffer = js.native
+  @scala.inline
+  def readFileSync(path: Double): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readFileSync(path: Double, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readFileSync(path: Double, options: EncodingBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: Double, options: `3`): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def readFileSync(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readFileSync(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: PathLike, options: `3`): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("fs-extra-promise", "readJSONAsync")
-  @js.native
-  def readJSONAsync_(file: String): ^[_] = js.native
-  @JSImport("fs-extra-promise", "readJSONAsync")
-  @js.native
-  def readJSONAsync_(file: String, options: ReadOptions): ^[_] = js.native
+  @scala.inline
+  def readFileSync_Buffer(path: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def readFileSync_Buffer(path: PathLike): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("fs-extra-promise", "readJSONSync")
-  @js.native
-  def readJSONSync_(file: String): js.Any = js.native
-  @JSImport("fs-extra-promise", "readJSONSync")
-  @js.native
-  def readJSONSync_(file: String, options: ReadOptions): js.Any = js.native
+  @scala.inline
+  def readFileSync_Union(path: Double, options: BufferEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readFileSync_Union(path: PathLike, options: BufferEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  @JSImport("fs-extra-promise", "readJSON")
-  @js.native
-  def readJSON_(file: String): js.Promise[_] = js.native
-  @JSImport("fs-extra-promise", "readJSON")
-  @js.native
-  def readJSON_(file: String, callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "readJSON")
-  @js.native
-  def readJSON_(file: String, options: ReadOptions): js.Promise[_] = js.native
-  @JSImport("fs-extra-promise", "readJSON")
-  @js.native
+  @scala.inline
+  def readJSONAsync_(file: String): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
+  @scala.inline
+  def readJSONAsync_(file: String, options: ReadOptions): typings.bluebird.mod.^[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Any]]
+  
+  @scala.inline
+  def readJSONSync_(file: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readJSONSync_(file: String, options: ReadOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def readJSON_(file: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def readJSON_(file: String, callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readJSON_(file: String, options: ReadOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def readJSON_(
     file: String,
     options: ReadOptions,
     callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readJson")
-  @js.native
-  def readJson(file: String): js.Promise[_] = js.native
-  @JSImport("fs-extra-promise", "readJson")
-  @js.native
-  def readJson(file: String, callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "readJson")
-  @js.native
-  def readJson(file: String, options: ReadOptions): js.Promise[_] = js.native
-  @JSImport("fs-extra-promise", "readJson")
-  @js.native
+  @scala.inline
+  def readJson(file: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def readJson(file: String, callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readJson(file: String, options: ReadOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def readJson(
     file: String,
     options: ReadOptions,
     callback: js.Function2[/* err */ Error, /* jsonObject */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readJsonAsync")
-  @js.native
-  def readJsonAsync(file: String): ^[_] = js.native
-  @JSImport("fs-extra-promise", "readJsonAsync")
-  @js.native
-  def readJsonAsync(file: String, options: ReadOptions): ^[_] = js.native
+  @scala.inline
+  def readJsonAsync(file: String): typings.bluebird.mod.^[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Any]]
+  @scala.inline
+  def readJsonAsync(file: String, options: ReadOptions): typings.bluebird.mod.^[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Any]]
   
-  @JSImport("fs-extra-promise", "readJsonSync")
-  @js.native
-  def readJsonSync(file: String): js.Any = js.native
-  @JSImport("fs-extra-promise", "readJsonSync")
-  @js.native
-  def readJsonSync(file: String, options: ReadOptions): js.Any = js.native
+  @scala.inline
+  def readJsonSync(file: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readJsonSync(file: String, options: ReadOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("fs-extra-promise", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  @JSImport("fs-extra-promise", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  @JSImport("fs-extra-promise", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = js.native
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike): js.Promise[js.Array[String]] = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
+  @scala.inline
+  def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
   def readdir(
     path: PathLike,
     callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: EncodingWithFileTypes): js.Promise[js.Array[Buffer]] = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[String]] = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: `0`): js.Promise[js.Array[Buffer | String]] = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: `1`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = js.native
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readdir(path: PathLike, options: EncodingWithFileTypes): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
+  @scala.inline
+  def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def readdir(path: PathLike, options: `0`): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
+  @scala.inline
+  def readdir(path: PathLike, options: `1`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
+  @scala.inline
+  def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("fs-extra-promise", "readdirAsync")
-  @js.native
-  def readdirAsync(path: String): ^[js.Array[String]] = js.native
+  @scala.inline
+  def readdirAsync(path: String): typings.bluebird.mod.^[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike): js.Array[String] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[typings.node.fsMod.Dirent] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: typings.node.anon.WithFileTypes): js.Array[String] = js.native
-  @JSImport("fs-extra-promise", "readdirSync")
-  @js.native
-  def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
+  @scala.inline
+  def readdirSync(path: PathLike): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[typings.node.fsMod.Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: typings.node.anon.WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("fs-extra-promise", "readdir")
-  @js.native
-  def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
+  @scala.inline
+  def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
-  @JSImport("fs-extra-promise", "readlink")
-  @js.native
-  def readlink(path: PathLike): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "readlink")
-  @js.native
-  def readlink(path: PathLike, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
+  @scala.inline
+  def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
   
-  @JSImport("fs-extra-promise", "readlinkAsync")
-  @js.native
-  def readlinkAsync(path: String): ^[String] = js.native
+  @scala.inline
+  def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def readlink(path: PathLike, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike): String = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: String): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BufferEncoding): String = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BaseEncodingOptions): String = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync_Union(path: PathLike): String | Buffer = js.native
-  @JSImport("fs-extra-promise", "readlinkSync")
-  @js.native
-  def readlinkSync_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+  @scala.inline
+  def readlinkAsync(path: String): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("fs-extra-promise", "readv")
-  @js.native
+  @scala.inline
+  def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def readlinkSync_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readlinkSync_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  
+  @scala.inline
   def readv(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -2728,9 +2139,8 @@ object mod {
       /* buffers */ js.Array[ArrayBufferView], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "readv")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def readv(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -2741,439 +2151,327 @@ object mod {
       /* buffers */ js.Array[ArrayBufferView], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "readvSync")
-  @js.native
-  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
-  @JSImport("fs-extra-promise", "readvSync")
-  @js.native
-  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
+  @scala.inline
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs-extra-promise", "realpath")
-  @js.native
-  def realpath(path: PathLike): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "realpath")
-  @js.native
-  def realpath(path: PathLike, cache: StringDictionary[String]): js.Promise[String] = js.native
-  @JSImport("fs-extra-promise", "realpath")
-  @js.native
+  @scala.inline
+  def realpath(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def realpath(path: PathLike, cache: StringDictionary[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def realpath(
     path: PathLike,
     cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "realpath")
-  @js.native
-  def realpath(path: PathLike, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def realpath(
+    path: PathLike,
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "realpathAsync")
-  @js.native
-  def realpathAsync(path: String): ^[String] = js.native
-  @JSImport("fs-extra-promise", "realpathAsync")
-  @js.native
-  def realpathAsync(path: String, cache: StringDictionary[String]): ^[String] = js.native
+  @scala.inline
+  def realpathAsync(path: String): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def realpathAsync(path: String, cache: StringDictionary[String]): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpathAsync")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   object realpathSync {
     
-    @JSImport("fs-extra-promise", "realpathSync")
-    @js.native
-    def apply(path: PathLike): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: String): String | Buffer = js.native
-    @JSImport("fs-extra-promise", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BufferEncoding): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BaseEncodingOptions): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BufferEncodingOption): Buffer = js.native
+    @scala.inline
+    def apply(path: PathLike): String = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    @scala.inline
+    def apply(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("fs-extra-promise", "realpathSync.native")
+    @JSImport("fs-extra-promise", "realpathSync")
     @js.native
-    def native(path: PathLike): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: String): String | Buffer = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BufferEncoding): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BaseEncodingOptions): String = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BufferEncodingOption): Buffer = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native_Union(path: PathLike): String | Buffer = js.native
-    @JSImport("fs-extra-promise", "realpathSync.native")
-    @js.native
-    def native_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def native(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    @scala.inline
+    def native(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    
+    @scala.inline
+    def native_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+    @scala.inline
+    def native_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   }
   
-  @JSImport("fs-extra-promise", "remove")
-  @js.native
-  def remove(dir: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "remove")
-  @js.native
-  def remove(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def remove(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def remove(dir: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "removeAsync")
-  @js.native
-  def removeAsync(dir: String): ^[Unit] = js.native
+  @scala.inline
+  def removeAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "removeSync")
-  @js.native
-  def removeSync(dir: String): Unit = js.native
+  @scala.inline
+  def removeSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "rename")
-  @js.native
-  def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "rename")
-  @js.native
-  def rename(oldPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def rename(oldPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "renameAsync")
-  @js.native
-  def renameAsync(oldPath: String, newPath: String): ^[Unit] = js.native
+  @scala.inline
+  def renameAsync(oldPath: String, newPath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameAsync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "renameSync")
-  @js.native
-  def renameSync(oldPath: PathLike, newPath: PathLike): Unit = js.native
+  @scala.inline
+  def renameSync(oldPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "rm")
-  @js.native
-  def rm(path: PathLike, callback: NoParamCallback): Unit = js.native
-  @JSImport("fs-extra-promise", "rm")
-  @js.native
-  def rm(path: PathLike, options: RmOptions, callback: NoParamCallback): Unit = js.native
+  @scala.inline
+  def rm(path: PathLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def rm(path: PathLike, options: RmOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "rmSync")
-  @js.native
-  def rmSync(path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "rmSync")
-  @js.native
-  def rmSync(path: PathLike, options: RmOptions): Unit = js.native
+  @scala.inline
+  def rmSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def rmSync(path: PathLike, options: RmOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "rmdir")
-  @js.native
-  def rmdir(path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "rmdir")
-  @js.native
-  def rmdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def rmdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def rmdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "rmdirAsync")
-  @js.native
-  def rmdirAsync(path: String): ^[Unit] = js.native
+  @scala.inline
+  def rmdirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "rmdirSync")
-  @js.native
-  def rmdirSync(path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "rmdirSync")
-  @js.native
-  def rmdirSync(path: PathLike, options: RmDirOptions): Unit = js.native
+  @scala.inline
+  def rmdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def rmdirSync(path: PathLike, options: RmDirOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "stat")
-  @js.native
-  def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = js.native
-  @JSImport("fs-extra-promise", "stat")
-  @js.native
+  @scala.inline
+  def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+  @scala.inline
   def stat(
     path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "statAsync")
-  @js.native
-  def statAsync(path: String): ^[typings.node.fsMod.Stats] = js.native
+  @scala.inline
+  def statAsync(path: String): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("statAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
-  @JSImport("fs-extra-promise", "statSync")
-  @js.native
-  def statSync(path: PathLike): typings.node.fsMod.Stats = js.native
-  @JSImport("fs-extra-promise", "statSync")
-  @js.native
-  def statSync(path: PathLike, options: BigIntOptions): typings.node.fsMod.BigIntStats = js.native
-  @JSImport("fs-extra-promise", "statSync")
-  @js.native
-  def statSync(path: PathLike, options: StatOptions): typings.node.fsMod.Stats | typings.node.fsMod.BigIntStats = js.native
+  @scala.inline
+  def statSync(path: PathLike): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
+  @scala.inline
+  def statSync(path: PathLike, options: BigIntOptions): typings.node.fsMod.BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.BigIntStats]
+  @scala.inline
+  def statSync(path: PathLike, options: StatOptions): typings.node.fsMod.Stats | typings.node.fsMod.BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats | typings.node.fsMod.BigIntStats]
   
-  @JSImport("fs-extra-promise", "symlink")
-  @js.native
-  def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "symlink")
-  @js.native
-  def symlink(target: PathLike, path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "symlink")
-  @js.native
+  @scala.inline
+  def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def symlink(target: PathLike, path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def symlink(
     target: PathLike,
     path: PathLike,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Unit,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "symlink")
-  @js.native
-  def symlink(target: PathLike, path: PathLike, `type`: SymlinkType): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "symlink")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlink(target: PathLike, path: PathLike, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def symlink(
     target: PathLike,
     path: PathLike,
     `type`: SymlinkType,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "symlinkAsync")
-  @js.native
-  def symlinkAsync(srcpath: String, dstpath: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "symlinkAsync")
-  @js.native
-  def symlinkAsync(srcpath: String, dstpath: String, `type`: Type): ^[Unit] = js.native
+  @scala.inline
+  def symlinkAsync(srcpath: String, dstpath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def symlinkAsync(srcpath: String, dstpath: String, `type`: Type): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "symlinkSync")
-  @js.native
-  def symlinkSync(target: PathLike, path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "symlinkSync")
-  @js.native
-  def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
+  @scala.inline
+  def symlinkSync(target: PathLike, path: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "truncate")
-  @js.native
-  def truncate(path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "truncate")
-  @js.native
-  def truncate(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "truncate")
-  @js.native
-  def truncate(path: PathLike, len: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "truncate")
-  @js.native
-  def truncate(path: PathLike, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def truncate(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def truncate(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def truncate(path: PathLike, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def truncate(path: PathLike, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "truncateAsync")
-  @js.native
-  def truncateAsync(fd: Double, len: Double): ^[Unit] = js.native
+  @scala.inline
+  def truncateAsync(fd: Double, len: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateAsync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "truncateSync")
-  @js.native
-  def truncateSync(path: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "truncateSync")
-  @js.native
-  def truncateSync(path: PathLike, len: Double): Unit = js.native
+  @scala.inline
+  def truncateSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def truncateSync(path: PathLike, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "unlink")
-  @js.native
-  def unlink(path: PathLike): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "unlink")
-  @js.native
-  def unlink(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def unlink(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def unlink(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "unlinkAsync")
-  @js.native
-  def unlinkAsync(path: String): ^[Unit] = js.native
+  @scala.inline
+  def unlinkAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "unlinkSync")
-  @js.native
-  def unlinkSync(path: PathLike): Unit = js.native
+  @scala.inline
+  def unlinkSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "unwatchFile")
-  @js.native
-  def unwatchFile(filename: PathLike): Unit = js.native
-  @JSImport("fs-extra-promise", "unwatchFile")
-  @js.native
+  @scala.inline
+  def unwatchFile(filename: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def unwatchFile(
     filename: PathLike,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "utimes")
-  @js.native
+  @scala.inline
+  def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def utimes(
     path: PathLike,
     atime: Double,
     mtime: Double,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Date, mtime: Date, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Date, mtime: Date, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "utimesAsync")
-  @js.native
-  def utimesAsync(path: String, atime: Double, mtime: Double): ^[Unit] = js.native
+  @scala.inline
+  def utimesAsync(path: String, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesAsync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Date): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: String): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Double): Unit = js.native
-  @JSImport("fs-extra-promise", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(
-    filename: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike, options: String): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  @scala.inline
+  def watch(filename: PathLike): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: PathLike, options: String): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: PathLike,
     options: String,
     listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
-  ): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: PathLike,
     options: Null,
     listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
-  ): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike, options: BufferEncoding): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(
+    filename: PathLike,
+    options: Unit,
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: PathLike, options: BufferEncoding): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: PathLike,
     options: BufferEncoding,
     listener: js.Function2[/* event */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike, options: Persistent): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: PathLike, options: Persistent): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: PathLike,
     options: Persistent,
     listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
-  ): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch(filename: PathLike, options: Recursive): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
+  def watch(filename: PathLike, options: Recursive): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch(
     filename: PathLike,
     options: Recursive,
     listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
-  ): FSWatcher = js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  @JSImport("fs-extra-promise", "watchFile")
-  @js.native
+  @scala.inline
   def watchFile(
     filename: PathLike,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "watchFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchFile(
     filename: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "watchFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchFile(
     filename: PathLike,
     options: Interval,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
-  def watch_buffer(filename: PathLike, options: buffer): FSWatcher = js.native
-  @JSImport("fs-extra-promise", "watch")
-  @js.native
+  @scala.inline
+  def watch_buffer(filename: PathLike, options: buffer): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  @scala.inline
   def watch_buffer(
     filename: PathLike,
     options: buffer,
     listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
-  ): FSWatcher = js.native
+  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: DataView,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  @scala.inline
+  def write(fd: Double, buffer: DataView): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: DataView,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: DataView,
@@ -3181,9 +2479,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: DataView,
@@ -3191,60 +2488,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float32Array): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float32Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Double, length: Unit, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Unit, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Unit, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: DataView, offset: Unit, length: Unit, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float32Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float32Array,
@@ -3252,9 +2521,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float32Array,
@@ -3262,60 +2530,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float64Array): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float64Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Double, length: Unit, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Unit, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Unit, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float32Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float64Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float64Array,
@@ -3323,9 +2563,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Float64Array,
@@ -3333,60 +2572,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int16Array): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int16Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Double, length: Unit, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Unit, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Unit, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Float64Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int16Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int16Array,
@@ -3394,9 +2605,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int16Array,
@@ -3404,60 +2614,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int32Array): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int32Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Unit, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int16Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int32Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int32Array,
@@ -3465,9 +2647,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int32Array,
@@ -3475,48 +2656,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Int8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Unit, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int32Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int8Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int8Array,
@@ -3524,9 +2689,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Int8Array,
@@ -3534,60 +2698,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint16Array): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint16Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Unit, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Int8Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint16Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint16Array] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint16Array,
@@ -3595,9 +2731,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint16Array,
@@ -3605,60 +2740,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint32Array): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint32Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Unit, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Unit, length: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Unit, length: Double, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint16Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint32Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BytesWrittenNumber] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint32Array,
@@ -3666,9 +2773,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint32Array,
@@ -3676,60 +2782,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8Array): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Unit, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Unit, length: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Unit, length: Double, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint32Array, offset: Unit, length: Unit, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8Array,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8Array,
@@ -3737,9 +2815,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8Array,
@@ -3747,60 +2824,32 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8ClampedArray): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Unit, length: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8ClampedArray,
     offset: Double,
     length: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -3808,9 +2857,8 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def write(
     fd: Double,
     buffer: Uint8ClampedArray,
@@ -3818,297 +2866,207 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, data: js.Any): js.Promise[BufferString] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Unit, position: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Unit, length: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Unit, length: Double, position: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, buffer: Uint8ClampedArray, offset: Unit, length: Unit, position: Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, data: js.Any): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
+  @scala.inline
   def write(
     fd: Double,
     data: js.Any,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, data: js.Any, offset: js.UndefOr[scala.Nothing], encoding: String): js.Promise[BufferString] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, data: js.Any, offset: Double): js.Promise[BufferString] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, data: js.Any, offset: Double): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
+  @scala.inline
   def write(
     fd: Double,
     data: js.Any,
     offset: Double,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
-  def write(fd: Double, data: js.Any, offset: Double, encoding: String): js.Promise[BufferString] = js.native
-  @JSImport("fs-extra-promise", "write")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, data: js.Any, offset: Double, encoding: String): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
+  @scala.inline
   def write(
     fd: Double,
     data: js.Any,
     offset: Double,
     encoding: String,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def write(fd: Double, data: js.Any, offset: Unit, encoding: String): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
   
-  @JSImport("fs-extra-promise", "writeAsync")
-  @js.native
-  def writeAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): ^[js.Tuple2[Double, Buffer]] = js.native
+  @scala.inline
+  def writeAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[js.Tuple2[Double, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAsync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Tuple2[Double, Buffer]]]
   
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: Double, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: Double, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: Double, data: js.Any, options: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
+  @scala.inline
+  def writeFile(file: Double, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeFile(file: Double, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(file: Double, data: js.Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeFile(
     file: Double,
     data: js.Any,
     options: String,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: Double, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(file: Double, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeFile(
     file: Double,
     data: js.Any,
     options: typings.fsExtra.mod.WriteFileOptions,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: PathLike, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: PathLike, data: js.Any, options: String): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(file: PathLike, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeFile(file: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(file: PathLike, data: js.Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeFile(
     file: PathLike,
     data: js.Any,
     options: String,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
-  def writeFile(file: PathLike, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFile(file: PathLike, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeFile(
     file: PathLike,
     data: js.Any,
     options: typings.fsExtra.mod.WriteFileOptions,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeFileAsync")
-  @js.native
-  def writeFileAsync(filename: String, data: js.Any): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFileAsync")
-  @js.native
-  def writeFileAsync(filename: String, data: js.Any, options: String): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeFileAsync")
-  @js.native
-  def writeFileAsync(filename: String, data: js.Any, options: WriteOptions): ^[Unit] = js.native
+  @scala.inline
+  def writeFileAsync(filename: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFileAsync(filename: String, data: js.Any, options: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFileAsync(filename: String, data: js.Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: Double, data: String): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: Double, data: String, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: Double, data: ArrayBufferView): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: Double, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: String): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: String, options: WriteFileOptions): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: ArrayBufferView): Unit = js.native
-  @JSImport("fs-extra-promise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
+  @scala.inline
+  def writeFileSync(path: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: Double, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: Double, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: Double, data: ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: PathLike, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: PathLike, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: PathLike, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeJSONAsync")
-  @js.native
-  def writeJSONAsync_(file: String, `object`: js.Any): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJSONAsync")
-  @js.native
-  def writeJSONAsync_(file: String, `object`: js.Any, options: WriteOptions): ^[Unit] = js.native
+  @scala.inline
+  def writeJSONAsync_(file: String, `object`: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeJSONAsync_(file: String, `object`: js.Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "writeJSONSync")
-  @js.native
-  def writeJSONSync_(file: String, `object`: js.Any): Unit = js.native
-  @JSImport("fs-extra-promise", "writeJSONSync")
-  @js.native
-  def writeJSONSync_(file: String, `object`: js.Any, options: WriteOptions): Unit = js.native
+  @scala.inline
+  def writeJSONSync_(file: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJSONSync_(file: String, `object`: js.Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeJSON")
-  @js.native
-  def writeJSON_(file: String, `object`: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJSON")
-  @js.native
-  def writeJSON_(file: String, `object`: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "writeJSON")
-  @js.native
-  def writeJSON_(file: String, `object`: js.Any, options: WriteOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJSON")
-  @js.native
+  @scala.inline
+  def writeJSON_(file: String, `object`: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeJSON_(file: String, `object`: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJSON_(file: String, `object`: js.Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeJSON_(
     file: String,
     `object`: js.Any,
     options: WriteOptions,
     callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeJson")
-  @js.native
-  def writeJson(file: String, `object`: js.Any): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJson")
-  @js.native
-  def writeJson(file: String, `object`: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  @JSImport("fs-extra-promise", "writeJson")
-  @js.native
-  def writeJson(file: String, `object`: js.Any, options: WriteOptions): js.Promise[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJson")
-  @js.native
+  @scala.inline
+  def writeJson(file: String, `object`: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeJson(file: String, `object`: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJson(file: String, `object`: js.Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def writeJson(
     file: String,
     `object`: js.Any,
     options: WriteOptions,
     callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeJsonAsync")
-  @js.native
-  def writeJsonAsync(file: String, `object`: js.Any): ^[Unit] = js.native
-  @JSImport("fs-extra-promise", "writeJsonAsync")
-  @js.native
-  def writeJsonAsync(file: String, `object`: js.Any, options: WriteOptions): ^[Unit] = js.native
+  @scala.inline
+  def writeJsonAsync(file: String, `object`: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeJsonAsync(file: String, `object`: js.Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("fs-extra-promise", "writeJsonSync")
-  @js.native
-  def writeJsonSync(file: String, `object`: js.Any): Unit = js.native
-  @JSImport("fs-extra-promise", "writeJsonSync")
-  @js.native
-  def writeJsonSync(file: String, `object`: js.Any, options: WriteOptions): Unit = js.native
+  @scala.inline
+  def writeJsonSync(file: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeJsonSync(file: String, `object`: js.Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    position: Double
-  ): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Double): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
-  @JSImport("fs-extra-promise", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fs-extra-promise", "writev")
-  @js.native
-  def writev(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WritevResult] = js.native
-  @JSImport("fs-extra-promise", "writev")
-  @js.native
+  @scala.inline
+  def writev(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
+  @scala.inline
   def writev(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -4118,12 +3076,10 @@ object mod {
       /* buffers */ js.Array[ArrayBufferView], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("fs-extra-promise", "writev")
-  @js.native
-  def writev(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WritevResult] = js.native
-  @JSImport("fs-extra-promise", "writev")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writev(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
+  @scala.inline
   def writev(
     fd: Double,
     buffers: js.Array[ArrayBufferView],
@@ -4134,21 +3090,18 @@ object mod {
       /* buffers */ js.Array[ArrayBufferView], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("fs-extra-promise", "writevSync")
-  @js.native
-  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
-  @JSImport("fs-extra-promise", "writevSync")
-  @js.native
-  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
+  @scala.inline
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait MkdirOptions extends StObject {
     
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object MkdirOptions {
     

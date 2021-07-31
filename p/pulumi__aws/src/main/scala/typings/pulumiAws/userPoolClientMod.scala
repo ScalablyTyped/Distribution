@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userPoolClientMod {
@@ -114,6 +113,10 @@ object userPoolClientMod {
   /* static members */
   object UserPoolClient {
     
+    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPoolClient resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -123,110 +126,104 @@ object userPoolClientMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState): UserPoolClient = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): UserPoolClient = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolClientState): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
     
     /**
       * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean]
   }
   
-  @js.native
   trait UserPoolClientArgs extends StObject {
     
     /**
       * List of allowed OAuth flows (code, implicit, client_credentials).
       */
-    val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
       */
-    val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.native
+    val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
       */
-    val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
       */
-    val analyticsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]] = js.native
+    val analyticsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]] = js.undefined
     
     /**
       * List of allowed callback URLs for the identity providers.
       */
-    val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The default redirect URI. Must be in the list of callback URLs.
       */
-    val defaultRedirectUri: js.UndefOr[Input[String]] = js.native
+    val defaultRedirectUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
       */
-    val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Should an application secret be generated.
       */
-    val generateSecret: js.UndefOr[Input[Boolean]] = js.native
+    val generateSecret: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of allowed logout URLs for the identity providers.
       */
-    val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the application client.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
       */
-    val preventUserExistenceErrors: js.UndefOr[Input[String]] = js.native
+    val preventUserExistenceErrors: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of user pool attributes the application client can read from.
       */
-    val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The time limit in days refresh tokens are valid for.
       */
-    val refreshTokenValidity: js.UndefOr[Input[Double]] = js.native
+    val refreshTokenValidity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of provider names for the identity providers that are supported on this client.
       */
-    val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The user pool the client belongs to.
       */
-    val userPoolId: Input[String] = js.native
+    val userPoolId: Input[String]
     
     /**
       * List of user pool attributes the application client can write to.
       */
-    val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object UserPoolClientArgs {
     
@@ -358,93 +355,92 @@ object userPoolClientMod {
     }
   }
   
-  @js.native
   trait UserPoolClientState extends StObject {
     
     /**
       * List of allowed OAuth flows (code, implicit, client_credentials).
       */
-    val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
       */
-    val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.native
+    val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
       */
-    val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
       */
-    val analyticsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]] = js.native
+    val analyticsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]] = js.undefined
     
     /**
       * List of allowed callback URLs for the identity providers.
       */
-    val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The client secret of the user pool client.
       */
-    val clientSecret: js.UndefOr[Input[String]] = js.native
+    val clientSecret: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default redirect URI. Must be in the list of callback URLs.
       */
-    val defaultRedirectUri: js.UndefOr[Input[String]] = js.native
+    val defaultRedirectUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
       */
-    val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Should an application secret be generated.
       */
-    val generateSecret: js.UndefOr[Input[Boolean]] = js.native
+    val generateSecret: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * List of allowed logout URLs for the identity providers.
       */
-    val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the application client.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
       */
-    val preventUserExistenceErrors: js.UndefOr[Input[String]] = js.native
+    val preventUserExistenceErrors: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of user pool attributes the application client can read from.
       */
-    val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The time limit in days refresh tokens are valid for.
       */
-    val refreshTokenValidity: js.UndefOr[Input[Double]] = js.native
+    val refreshTokenValidity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of provider names for the identity providers that are supported on this client.
       */
-    val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The user pool the client belongs to.
       */
-    val userPoolId: js.UndefOr[Input[String]] = js.native
+    val userPoolId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of user pool attributes the application client can write to.
       */
-    val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object UserPoolClientState {
     

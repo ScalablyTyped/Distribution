@@ -4,12 +4,11 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyNullableArraySchema
-  extends NullableArraySchema[AnySchema]
+  extends StObject
+     with NullableArraySchema[AnySchema]
      with _AnySchema
 object AnyNullableArraySchema {
   

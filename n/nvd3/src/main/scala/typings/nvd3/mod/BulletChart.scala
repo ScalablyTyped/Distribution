@@ -5,27 +5,28 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulletChart extends Chart {
+trait BulletChart
+  extends StObject
+     with Chart {
   
   def bullet(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def bullet(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -52,14 +53,14 @@ trait BulletChart extends Chart {
   /*Object containing the margins for the chart or component. You can specify only certain margins in the object to change just those parts.*/
   def margin(value: Margin): this.type = js.native
   
-  def markers(): js.Function1[/* d */ js.Any, _] = js.native
+  def markers(): js.Function1[/* d */ js.Any, js.Any] = js.native
   //todo;
-  def markers(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def markers(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   //todo;
-  def measures(): js.Function1[/* d */ js.Any, _] = js.native
+  def measures(): js.Function1[/* d */ js.Any, js.Any] = js.native
   //todo;
-  def measures(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def measures(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   //todo;
   def noData(): String = js.native
@@ -68,9 +69,9 @@ trait BulletChart extends Chart {
   def orient(): String = js.native
   def orient(orientation: String): this.type = js.native
   
-  def ranges(): js.Function1[/* d */ js.Any, _] = js.native
+  def ranges(): js.Function1[/* d */ js.Any, js.Any] = js.native
   //todo;
-  def ranges(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def ranges(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   //todo;
   def tickFormat(): js.Function1[/* d */ js.Any, String] = js.native
@@ -78,7 +79,7 @@ trait BulletChart extends Chart {
   def tickFormat(format: js.Function1[/* d */ js.Any, String]): this.type = js.native
   def tickFormat(format: js.Function2[/* d */ js.Any, /* i */ js.Any, String]): this.type = js.native
   
-  def ticks(): js.Array[_] = js.native
+  def ticks(): js.Array[js.Any] = js.native
   def ticks(args: js.Any*): this.type = js.native
   
   var tooltip: Tooltip = js.native

@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,20 +32,21 @@ object mod {
     def this(props: EditTextareaProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait EditTextProps extends SharedProps {
+  trait EditTextProps
+    extends StObject
+       with SharedProps {
     
     /**
       * Sets the element display to inline when set to true,
       * default: false
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * type attribute set for input element,
       * default: 'text'
       */
-    var `type`: js.UndefOr[inputTextType] = js.native
+    var `type`: js.UndefOr[inputTextType] = js.undefined
   }
   object EditTextProps {
     
@@ -73,14 +73,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait EditTextareaProps extends SharedProps {
+  trait EditTextareaProps
+    extends StObject
+       with SharedProps {
     
     /**
       * the number of visible rows,
       * default: 3
       */
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
   }
   object EditTextareaProps {
     
@@ -101,50 +102,49 @@ object mod {
     }
   }
   
-  @js.native
   trait SharedProps extends StObject {
     
     /**
       * className attribute set for both input and div element
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * id attribute set for both input and div element
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * name attribute set for input element
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * onSave is called when the input blur event is triggered or enter key is pressed
       * returns an object: {name, value} which correspond to the input name and value
       */
-    var onSave: js.UndefOr[js.Function1[/* hasNameValue */ onSaveProps, Unit]] = js.native
+    var onSave: js.UndefOr[js.Function1[/* hasNameValue */ onSaveProps, Unit]] = js.undefined
     
     /**
       * placeholder is displayed in the div element when value is empty
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Displays only the view element when set to true,
       * default: false
       */
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the css styling for both input and div elements
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * value sets the defaultValue for input element and display text of div element
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SharedProps {
     
@@ -257,12 +257,11 @@ object mod {
     def week: typings.reactEditText.reactEditTextStrings.week = "week".asInstanceOf[typings.reactEditText.reactEditTextStrings.week]
   }
   
-  @js.native
   trait onSaveProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object onSaveProps {
     

@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAtExtremities
-  extends CIMMarkerStrokePlacement
+  extends StObject
+     with CIMMarkerStrokePlacement
      with CIMMarkerPlacementType {
   
   /**
@@ -15,22 +14,22 @@ trait CIMMarkerPlacementAtExtremities
     */
   var extremityPlacement: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtremityPlacement * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The distance from the ends of a line that the marker will be placed.
     */
-  var offsetAlongLine: js.UndefOr[Double] = js.native
+  var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementAtExtremities: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities = js.native
+  var type_CIMMarkerPlacementAtExtremities: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities
 }
 object CIMMarkerPlacementAtExtremities {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities): CIMMarkerPlacementAtExtremities = {
+  def apply(): CIMMarkerPlacementAtExtremities = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAtExtremities")
     __obj.asInstanceOf[CIMMarkerPlacementAtExtremities]
   }
   

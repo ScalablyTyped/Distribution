@@ -3,15 +3,15 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumericScale extends ContinuousScale {
+trait NumericScale
+  extends StObject
+     with ContinuousScale {
   
-  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.undefined
   
-  var zero: js.UndefOr[Boolean | SignalRef] = js.native
+  var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
 }
 object NumericScale {
   

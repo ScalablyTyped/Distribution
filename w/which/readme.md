@@ -11,8 +11,8 @@ Like which(1) unix command. Find the first instance of an executable in the PATH
 | Full name          | which |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 1621 |
-| # downloads        | 985616362 |
+| # dependents       | 1737 |
+| # downloads        | 1330020319 |
 | # stars            | 16 |
 
 ## Links

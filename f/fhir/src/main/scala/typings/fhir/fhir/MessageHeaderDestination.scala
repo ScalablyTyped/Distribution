@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message destination application(s)
   */
-@js.native
-trait MessageHeaderDestination extends BackboneElement {
+trait MessageHeaderDestination
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'endpoint'.
     */
-  var _endpoint: js.UndefOr[Element] = js.native
+  var _endpoint: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Actual destination address or id
     */
-  var endpoint: uri = js.native
+  var endpoint: uri
   
   /**
     * Name of system
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Particular delivery destination within the destination
     */
-  var target: js.UndefOr[Reference] = js.native
+  var target: js.UndefOr[Reference] = js.undefined
 }
 object MessageHeaderDestination {
   

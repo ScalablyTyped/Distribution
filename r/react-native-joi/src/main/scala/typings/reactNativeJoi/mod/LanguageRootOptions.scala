@@ -4,40 +4,40 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeJoi.anon.WrapArrays
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  root :string | undefined,   key :string | undefined,   messages :{  wrapArrays :boolean | undefined} | undefined, [key: string] : react-native-joi.react-native-joi.LanguageOptions} & std.Partial<std.Record<react-native-joi.react-native-joi.Types, react-native-joi.react-native-joi.LanguageOptions>> */
-@js.native
-trait LanguageRootOptions extends /* key */ StringDictionary[LanguageOptions] {
+trait LanguageRootOptions
+  extends StObject
+     with /* key */ StringDictionary[LanguageOptions] {
   
-  var alternatives: js.UndefOr[LanguageOptions] = js.native
+  var alternatives: js.UndefOr[LanguageOptions] = js.undefined
   
-  var any: js.UndefOr[LanguageOptions] = js.native
+  var any: js.UndefOr[LanguageOptions] = js.undefined
   
-  var array: js.UndefOr[LanguageOptions] = js.native
+  var array: js.UndefOr[LanguageOptions] = js.undefined
   
-  var binary: js.UndefOr[LanguageOptions] = js.native
+  var binary: js.UndefOr[LanguageOptions] = js.undefined
   
-  var boolean: js.UndefOr[LanguageOptions] = js.native
+  var boolean: js.UndefOr[LanguageOptions] = js.undefined
   
-  var date: js.UndefOr[LanguageOptions] = js.native
+  var date: js.UndefOr[LanguageOptions] = js.undefined
   
-  var function: js.UndefOr[LanguageOptions] = js.native
+  var function: js.UndefOr[LanguageOptions] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var `lazy`: js.UndefOr[LanguageOptions] = js.native
+  var `lazy`: js.UndefOr[LanguageOptions] = js.undefined
   
-  var messages: js.UndefOr[WrapArrays] = js.native
+  var messages: js.UndefOr[WrapArrays] = js.undefined
   
-  var number: js.UndefOr[LanguageOptions] = js.native
+  var number: js.UndefOr[LanguageOptions] = js.undefined
   
-  var `object`: js.UndefOr[LanguageOptions] = js.native
+  var `object`: js.UndefOr[LanguageOptions] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var string: js.UndefOr[LanguageOptions] = js.native
+  var string: js.UndefOr[LanguageOptions] = js.undefined
 }
 object LanguageRootOptions {
   

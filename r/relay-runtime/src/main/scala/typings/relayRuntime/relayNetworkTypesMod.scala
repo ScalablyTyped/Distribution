@@ -16,7 +16,6 @@ import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayNetworkTypesMod {
@@ -39,18 +38,19 @@ object relayNetworkTypesMod {
   
   type GraphQLResponse = GraphQLSingularResponse | js.Array[GraphQLSingularResponse]
   
-  @js.native
-  trait GraphQLResponseWithData extends GraphQLSingularResponse {
+  trait GraphQLResponseWithData
+    extends StObject
+       with GraphQLSingularResponse {
     
-    var data: PayloadData = js.native
+    var data: PayloadData
     
-    var errors: js.UndefOr[js.Array[PayloadError]] = js.native
+    var errors: js.UndefOr[js.Array[PayloadError]] = js.undefined
     
-    var extensions: js.UndefOr[PayloadExtensions] = js.native
+    var extensions: js.UndefOr[PayloadExtensions] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[js.Array[Double | String]] = js.native
+    var path: js.UndefOr[js.Array[Double | String]] = js.undefined
   }
   object GraphQLResponseWithData {
     
@@ -98,8 +98,9 @@ object relayNetworkTypesMod {
     }
   }
   
-  @js.native
-  trait GraphQLResponseWithExtensionsOnly extends GraphQLSingularResponse {
+  trait GraphQLResponseWithExtensionsOnly
+    extends StObject
+       with GraphQLSingularResponse {
     
     // Per https://spec.graphql.org/June2018/#sec-Errors
     // > If the data entry in the response is not present, the errors entry
@@ -109,9 +110,9 @@ object relayNetworkTypesMod {
     // since `data: null` is a *required* output if there was an error during
     // execution, but the inverse is not described in the sepc: `data: null`
     // does not necessarily indicate that there was an error.
-    var data: Null = js.native
+    var data: Null
     
-    var extensions: PayloadExtensions = js.native
+    var extensions: PayloadExtensions
   }
   object GraphQLResponseWithExtensionsOnly {
     
@@ -132,18 +133,19 @@ object relayNetworkTypesMod {
     }
   }
   
-  @js.native
-  trait GraphQLResponseWithoutData extends GraphQLSingularResponse {
+  trait GraphQLResponseWithoutData
+    extends StObject
+       with GraphQLSingularResponse {
     
-    var data: js.UndefOr[PayloadData] = js.native
+    var data: js.UndefOr[PayloadData] = js.undefined
     
-    var errors: js.Array[PayloadError] = js.native
+    var errors: js.Array[PayloadError]
     
-    var extensions: js.UndefOr[PayloadExtensions] = js.native
+    var extensions: js.UndefOr[PayloadExtensions] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.native
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
   }
   object GraphQLResponseWithoutData {
     
@@ -218,14 +220,13 @@ object relayNetworkTypesMod {
     }
   }
   
-  @js.native
   trait LegacyObserver[T] extends StObject {
     
-    var onCompleted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var onNext: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.native
+    var onNext: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.undefined
   }
   object LegacyObserver {
     
@@ -236,7 +237,7 @@ object relayNetworkTypesMod {
     }
     
     @scala.inline
-    implicit class LegacyObserverMutableBuilder[Self <: LegacyObserver[_], T] (val x: Self with LegacyObserver[T]) extends AnyVal {
+    implicit class LegacyObserverMutableBuilder[Self <: LegacyObserver[?], T] (val x: Self & LegacyObserver[T]) extends AnyVal {
       
       @scala.inline
       def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
@@ -260,30 +261,47 @@ object relayNetworkTypesMod {
   
   type LogRequestInfoFunction = js.Function1[/* arg */ js.Any, Unit]
   
-  @js.native
   trait Network extends StObject {
     
-    def execute(request: RequestParameters, variables: Variables, cacheConfig: CacheConfig): RelayObservable[GraphQLResponse] = js.native
+    def execute(request: RequestParameters, variables: Variables, cacheConfig: CacheConfig): RelayObservable[GraphQLResponse]
     def execute(
       request: RequestParameters,
       variables: Variables,
       cacheConfig: CacheConfig,
       uploadables: UploadableMap
-    ): RelayObservable[GraphQLResponse] = js.native
+    ): RelayObservable[GraphQLResponse]
     @JSName("execute")
-    var execute_Original: ExecuteFunction = js.native
+    var execute_Original: ExecuteFunction
+  }
+  object Network {
+    
+    @scala.inline
+    def apply(
+      execute: (/* request */ RequestParameters, /* variables */ Variables, /* cacheConfig */ CacheConfig, /* uploadables */ js.UndefOr[UploadableMap | Null]) => RelayObservable[GraphQLResponse]
+    ): Network = {
+      val __obj = js.Dynamic.literal(execute = js.Any.fromFunction4(execute))
+      __obj.asInstanceOf[Network]
+    }
+    
+    @scala.inline
+    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setExecute(
+        value: (/* request */ RequestParameters, /* variables */ Variables, /* cacheConfig */ CacheConfig, /* uploadables */ js.UndefOr[UploadableMap | Null]) => RelayObservable[GraphQLResponse]
+      ): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
+    }
   }
   
   type PayloadData = StringDictionary[js.Any]
   
-  @js.native
   trait PayloadError extends StObject {
     
-    var locations: js.UndefOr[js.Array[Column]] = js.native
+    var locations: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var severity: js.UndefOr[CRITICAL | ERROR | WARNING] = js.native
+    var severity: js.UndefOr[CRITICAL | ERROR | WARNING] = js.undefined
   }
   object PayloadError {
     

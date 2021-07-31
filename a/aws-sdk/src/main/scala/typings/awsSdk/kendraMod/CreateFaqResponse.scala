@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFaqResponse extends StObject {
   
   /**
     * The unique identifier of the FAQ.
     */
-  var Id: js.UndefOr[FaqId] = js.native
+  var Id: js.UndefOr[FaqId] = js.undefined
 }
 object CreateFaqResponse {
   

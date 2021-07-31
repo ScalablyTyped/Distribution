@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryEventExecutionDataDetails extends StObject {
   
   /**
     * Indicates whether input or output was truncated in the response. Always false for API calls.
     */
-  var truncated: js.UndefOr[typings.awsSdk.stepfunctionsMod.truncated] = js.native
+  var truncated: js.UndefOr[typings.awsSdk.stepfunctionsMod.truncated] = js.undefined
 }
 object HistoryEventExecutionDataDetails {
   

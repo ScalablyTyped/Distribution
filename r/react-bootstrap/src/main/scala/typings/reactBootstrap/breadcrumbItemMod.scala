@@ -5,7 +5,6 @@ import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbItemMod {
@@ -19,16 +18,17 @@ object breadcrumbItemMod {
   trait BreadcrumbItem
     extends Component[BreadcrumbItemProps, js.Object, js.Any]
   
-  @js.native
-  trait BreadcrumbItemProps extends Props[BreadcrumbItem] {
+  trait BreadcrumbItemProps
+    extends StObject
+       with Props[BreadcrumbItem] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object BreadcrumbItemProps {
     

@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,9 +34,9 @@ trait Vector extends StObject {
     *   @chainable
     */
   def add(x: Double): Vector = js.native
-  def add(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def add(x: Double, y: Double): Vector = js.native
   def add(x: Double, y: Double, z: Double): Vector = js.native
+  def add(x: Double, y: Unit, z: Double): Vector = js.native
   
   /**
     *   Calculates and returns the angle (in radians)
@@ -114,9 +113,9 @@ trait Vector extends StObject {
     *   @return the dot product
     */
   def dot(x: Double): Double = js.native
-  def dot(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def dot(x: Double, y: Double): Double = js.native
   def dot(x: Double, y: Double, z: Double): Double = js.native
+  def dot(x: Double, y: Unit, z: Double): Double = js.native
   
   /**
     *   Equality check against a p5.Vector
@@ -126,19 +125,19 @@ trait Vector extends StObject {
     *   @return whether the vectors are equals
     */
   def equals(): Boolean = js.native
-  def equals(value: js.Array[_]): Boolean = js.native
+  def equals(value: js.Array[js.Any]): Boolean = js.native
   /**
     *   Equality check against a p5.Vector
     *   @param value the vector to compare
     */
   def equals(value: Vector): Boolean = js.native
-  def equals(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Boolean = js.native
-  def equals(x: js.UndefOr[scala.Nothing], y: Double): Boolean = js.native
-  def equals(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Boolean = js.native
   def equals(x: Double): Boolean = js.native
-  def equals(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Boolean = js.native
   def equals(x: Double, y: Double): Boolean = js.native
   def equals(x: Double, y: Double, z: Double): Boolean = js.native
+  def equals(x: Double, y: Unit, z: Double): Boolean = js.native
+  def equals(x: Unit, y: Double): Boolean = js.native
+  def equals(x: Unit, y: Double, z: Double): Boolean = js.native
+  def equals(x: Unit, y: Unit, z: Double): Boolean = js.native
   
   /**
     *   Calculate the angle of rotation for this vector
@@ -240,13 +239,13 @@ trait Vector extends StObject {
     *   @chainable
     */
   def set(value: Vector): Vector = js.native
-  def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
-  def set(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
-  def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vector = js.native
   def set(x: Double): Vector = js.native
-  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def set(x: Double, y: Double): Vector = js.native
   def set(x: Double, y: Double, z: Double): Vector = js.native
+  def set(x: Double, y: Unit, z: Double): Vector = js.native
+  def set(x: Unit, y: Double): Vector = js.native
+  def set(x: Unit, y: Double, z: Double): Vector = js.native
+  def set(x: Unit, y: Unit, z: Double): Vector = js.native
   
   /**
     *   Set the magnitude of this vector to the value used
@@ -283,9 +282,9 @@ trait Vector extends StObject {
     *   @chainable
     */
   def sub(x: Double): Vector = js.native
-  def sub(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def sub(x: Double, y: Double): Vector = js.native
   def sub(x: Double, y: Double, z: Double): Vector = js.native
+  def sub(x: Double, y: Unit, z: Double): Vector = js.native
   
   /**
     *   The x component of the vector

@@ -2,25 +2,23 @@ package typings.vueRouter.routerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var append: js.UndefOr[Boolean] = js.native
+  var append: js.UndefOr[Boolean] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[Dictionary[String]] = js.native
+  var params: js.UndefOr[Dictionary[String]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[Dictionary[js.UndefOr[String | (js.Array[String | Null]) | Null]]] = js.native
+  var query: js.UndefOr[Dictionary[js.UndefOr[String | (js.Array[String | Null]) | Null]]] = js.undefined
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
 }
 object Location {
   

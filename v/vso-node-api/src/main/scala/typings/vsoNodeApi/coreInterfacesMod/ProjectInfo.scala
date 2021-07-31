@@ -3,36 +3,34 @@ package typings.vsoNodeApi.coreInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectInfo extends StObject {
   
-  var abbreviation: String = js.native
+  var abbreviation: String
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var lastUpdateTime: Date = js.native
+  var lastUpdateTime: Date
   
-  var name: String = js.native
+  var name: String
   
-  var properties: js.Array[ProjectProperty] = js.native
+  var properties: js.Array[ProjectProperty]
   
   /**
     * Current revision of the project
     */
-  var revision: Double = js.native
+  var revision: Double
   
-  var state: js.Any = js.native
+  var state: js.Any
   
-  var uri: String = js.native
+  var uri: String
   
-  var version: Double = js.native
+  var version: Double
   
-  var visibility: ProjectVisibility = js.native
+  var visibility: ProjectVisibility
 }
 object ProjectInfo {
   

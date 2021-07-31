@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadWhitelist extends StObject {
   
   /** The domain ID. */
-  var domainId: js.UndefOr[DomainId] = js.native
+  var domainId: js.UndefOr[DomainId] = js.undefined
   
   /** The entity whose actions triggered a Gmail phishing alert. */
-  var maliciousEntity: js.UndefOr[MaliciousEntity] = js.native
+  var maliciousEntity: js.UndefOr[MaliciousEntity] = js.undefined
   
   /** The list of messages contained by this alert. */
-  var messages: js.UndefOr[js.Array[GmailMessageInfo]] = js.native
+  var messages: js.UndefOr[js.Array[GmailMessageInfo]] = js.undefined
   
   /** The source IP address of the malicious email, for example, `127.0.0.1`. */
-  var sourceIp: js.UndefOr[String] = js.native
+  var sourceIp: js.UndefOr[String] = js.undefined
 }
 object BadWhitelist {
   

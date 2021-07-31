@@ -18,7 +18,6 @@ import typings.homeworks.homeworks.UploadOptions
 import typings.jquery.JQuery.EventHandlerBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -71,9 +70,9 @@ trait JQuery extends StObject {
     * @since 1.0.0
     */
   def modal(): JQuery = js.native
-  def modal(method: js.UndefOr[scala.Nothing], options: js.Any): JQuery = js.native
   def modal(method: String): JQuery = js.native
   def modal(method: String, options: js.Any): JQuery = js.native
+  def modal(method: Unit, options: js.Any): JQuery = js.native
   def modal(options: js.Any): JQuery = js.native
   
   /**
@@ -82,11 +81,14 @@ trait JQuery extends StObject {
   /**
     * @since 1.0.44
     */
-  def on(event: StepMoveEventType | TabMoveEventType, handler: EventHandlerBase[_, StepEvent | TabEvent]): JQuery = js.native
+  def on(
+    event: StepMoveEventType | TabMoveEventType,
+    handler: EventHandlerBase[js.Any, StepEvent | TabEvent]
+  ): JQuery = js.native
   /**
     * @since 1.0.44
     */
-  def on(event: RippleStartEventType, handler: EventHandlerBase[_, RippleEvent]): JQuery = js.native
+  def on(event: RippleStartEventType, handler: EventHandlerBase[js.Any, RippleEvent]): JQuery = js.native
   
   /**
     * @since 1.0.0

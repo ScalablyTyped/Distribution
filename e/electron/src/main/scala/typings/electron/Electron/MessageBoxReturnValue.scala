@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageBoxReturnValue extends StObject {
   
   /**
     * The checked state of the checkbox if `checkboxLabel` was set. Otherwise `false`.
     */
-  var checkboxChecked: Boolean = js.native
+  var checkboxChecked: Boolean
   
   /**
     * The index of the clicked button.
     */
-  var response: Double = js.native
+  var response: Double
 }
 object MessageBoxReturnValue {
   

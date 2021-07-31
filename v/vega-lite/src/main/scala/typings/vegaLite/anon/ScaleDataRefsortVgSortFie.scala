@@ -4,18 +4,16 @@ import typings.vegaTypings.scaleMod.ScaleField
 import typings.vegaTypings.scaleMod.SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega.vega.ScaleDataRef & {  sort :vega-lite.vega-lite/build/src/vega.schema.VgSortField | undefined} */
-@js.native
 trait ScaleDataRefsortVgSortFie extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var field: ScaleField = js.native
+  var field: ScaleField
   
-  var sort: js.UndefOr[SortField] = js.native
+  var sort: js.UndefOr[SortField] = js.undefined
 }
 object ScaleDataRefsortVgSortFie {
   

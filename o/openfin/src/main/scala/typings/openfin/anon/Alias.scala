@@ -2,21 +2,19 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alias extends StObject {
   
-  var alias: String = js.native
+  var alias: String
   
-  var args: String = js.native
+  var args: String
   
-  var src: String = js.native
+  var src: String
   
-  var target: String = js.native
+  var target: String
   
-  var version: String = js.native
+  var version: String
 }
 object Alias {
   

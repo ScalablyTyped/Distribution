@@ -3,15 +3,13 @@ package typings.surveyKnockout.anon
 import typings.surveyKnockout.mod.IQuestion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAddRow extends StObject {
   
-  var canAddRow: Boolean = js.native
+  var canAddRow: Boolean
   
-  var question: IQuestion = js.native
+  var question: IQuestion
 }
 object CanAddRow {
   

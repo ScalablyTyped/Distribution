@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachDiskRequest extends StObject {
   
   /**
     * The unique name of the disk you want to detach from your instance (e.g., my-disk).
     */
-  var diskName: ResourceName = js.native
+  var diskName: ResourceName
 }
 object DetachDiskRequest {
   

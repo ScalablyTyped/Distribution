@@ -1,8 +1,9 @@
 package typings.winrt.global.Windows.Storage
 
+import typings.winrt.Windows.Foundation.Collections.IIterator
+import typings.winrt.Windows.Storage.AccessCache.AccessListEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AccessCache {
@@ -12,33 +13,44 @@ object AccessCache {
   object AccessCacheOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions & Double] = js.native
     
-    /* 1 */ val disallowUserInput: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput with Double = js.native
+    /* 1 */ val disallowUserInput: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput & Double = js.native
     
-    /* 2 */ val fastLocationsOnly: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly with Double = js.native
+    /* 2 */ val fastLocationsOnly: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly & Double = js.native
     
-    /* 0 */ val none: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.none with Double = js.native
+    /* 0 */ val none: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.none & Double = js.native
     
-    /* 4 */ val suppressAccessTimeUpdate: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate with Double = js.native
+    /* 4 */ val suppressAccessTimeUpdate: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate & Double = js.native
     
-    /* 3 */ val useReadOnlyCachedCopy: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy with Double = js.native
+    /* 3 */ val useReadOnlyCachedCopy: typings.winrt.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy & Double = js.native
   }
   
   @JSGlobal("Windows.Storage.AccessCache.AccessListEntryView")
   @js.native
   class AccessListEntryView ()
-    extends typings.winrt.Windows.Storage.AccessCache.AccessListEntryView
+    extends StObject
+       with typings.winrt.Windows.Storage.AccessCache.AccessListEntryView {
+    
+    /* CompleteClass */
+    override def first(): IIterator[AccessListEntry] = js.native
+  }
   
   @JSGlobal("Windows.Storage.AccessCache.ItemRemovedEventArgs")
   @js.native
   class ItemRemovedEventArgs ()
-    extends typings.winrt.Windows.Storage.AccessCache.ItemRemovedEventArgs
+    extends StObject
+       with typings.winrt.Windows.Storage.AccessCache.ItemRemovedEventArgs {
+    
+    /* CompleteClass */
+    var removedEntry: AccessListEntry = js.native
+  }
   
   @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
   @js.native
   class StorageApplicationPermissions ()
-    extends typings.winrt.Windows.Storage.AccessCache.StorageApplicationPermissions
+    extends StObject
+       with typings.winrt.Windows.Storage.AccessCache.StorageApplicationPermissions
   /* static members */
   object StorageApplicationPermissions {
     
@@ -62,10 +74,12 @@ object AccessCache {
   @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
   @js.native
   class StorageItemAccessList ()
-    extends typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList
+    extends StObject
+       with typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList
   
   @JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
   @js.native
   class StorageItemMostRecentlyUsedList ()
-    extends typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
+    extends StObject
+       with typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
 }

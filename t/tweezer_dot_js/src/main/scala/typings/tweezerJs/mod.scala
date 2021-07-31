@@ -4,21 +4,21 @@ import typings.tweezerJs.tweezerJsStrings.done
 import typings.tweezerJs.tweezerJsStrings.tick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tweezer.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Tweezer {
+  class ^ protected ()
+    extends StObject
+       with Tweezer {
     def this(opts: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     var easing: js.UndefOr[
         js.Function4[
@@ -28,11 +28,11 @@ object mod {
           /* duration */ Double, 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Options {
     

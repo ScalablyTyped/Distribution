@@ -10,7 +10,6 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.users
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fbsearchRepositoryMod {
@@ -22,16 +21,16 @@ object fbsearchRepositoryMod {
     
     def places(query: String): js.Promise[FbsearchRepositoryPlacesResponseRootObject] = js.native
     
-    def recentSearches(): js.Promise[_] = js.native
+    def recentSearches(): js.Promise[js.Any] = js.native
     
     @JSName("suggestedSearches")
-    def suggestedSearches_blended(`type`: blended): js.Promise[_] = js.native
+    def suggestedSearches_blended(`type`: blended): js.Promise[js.Any] = js.native
     @JSName("suggestedSearches")
-    def suggestedSearches_hashtags(`type`: hashtags): js.Promise[_] = js.native
+    def suggestedSearches_hashtags(`type`: hashtags): js.Promise[js.Any] = js.native
     @JSName("suggestedSearches")
-    def suggestedSearches_places(`type`: places): js.Promise[_] = js.native
+    def suggestedSearches_places(`type`: places): js.Promise[js.Any] = js.native
     @JSName("suggestedSearches")
-    def suggestedSearches_users(`type`: users): js.Promise[_] = js.native
+    def suggestedSearches_users(`type`: users): js.Promise[js.Any] = js.native
     
     def topsearchFlat(query: String): js.Promise[FbsearchRepositoryTopsearchFlatResponseRootObject] = js.native
   }

@@ -2,23 +2,21 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Space {
   
-  @js.native
   trait GetActivitiesParams extends StObject {
     
-    var activityTypeId: js.UndefOr[js.Array[ActivityType]] = js.native
+    var activityTypeId: js.UndefOr[js.Array[ActivityType]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetActivitiesParams {
     
@@ -66,10 +64,9 @@ object Space {
     }
   }
   
-  @js.native
   trait PutSpaceNotificationParams extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object PutSpaceNotificationParams {
     

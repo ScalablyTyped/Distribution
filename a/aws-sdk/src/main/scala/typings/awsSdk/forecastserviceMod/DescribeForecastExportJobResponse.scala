@@ -2,51 +2,49 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeForecastExportJobResponse extends StObject {
   
   /**
     * When the forecast export job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The path to the Amazon Simple Storage Service (Amazon S3) bucket where the forecast is exported.
     */
-  var Destination: js.UndefOr[DataDestination] = js.native
+  var Destination: js.UndefOr[DataDestination] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the exported forecast.
     */
-  var ForecastArn: js.UndefOr[Arn] = js.native
+  var ForecastArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the forecast export job.
     */
-  var ForecastExportJobArn: js.UndefOr[Arn] = js.native
+  var ForecastExportJobArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the forecast export job.
     */
-  var ForecastExportJobName: js.UndefOr[Name] = js.native
+  var ForecastExportJobName: js.UndefOr[Name] = js.undefined
   
   /**
     * When the last successful export job finished.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
-  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
   
   /**
     * The status of the forecast export job. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     The Status of the forecast export job must be ACTIVE before you can access the forecast in your S3 bucket. 
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
 object DescribeForecastExportJobResponse {
   

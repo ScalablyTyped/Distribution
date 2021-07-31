@@ -4,31 +4,29 @@ import typings.angular.mod.IScope
 import typings.uiGrid.anon.NONE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinning {
   
-  @js.native
   trait IColumnDef extends StObject {
     
     /**
       * Enable pinning for the individual column.  Defaults to true
       * @default true
       */
-    var enablePinning: js.UndefOr[Boolean] = js.native
+    var enablePinning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column is pinned left when grid is rendered.  Defaults to false
       * @default false
       */
-    var pinnedLeft: js.UndefOr[Boolean] = js.native
+    var pinnedLeft: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column is pinned right when grid is rendered.  Defaults to false
       * @default false
       */
-    var pinnedRight: js.UndefOr[Boolean] = js.native
+    var pinnedRight: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -61,7 +59,6 @@ object pinning {
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -69,7 +66,7 @@ object pinning {
       * Defaults to true
       * @default true
       */
-    var enablePinning: js.UndefOr[Boolean] = js.native
+    var enablePinning: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -90,7 +87,6 @@ object pinning {
     }
   }
   
-  @js.native
   trait IGridPinningApi[TEntity] extends StObject {
     
     // Events
@@ -99,7 +95,7 @@ object pinning {
       * @param {ng.IScope} scope The grid scope
       * @param {columnPinHandler} handler Callback
       */
-    def columnPin(scope: IScope, handler: columnPinHandler): Unit = js.native
+    def columnPin(scope: IScope, handler: columnPinHandler): Unit
     
     // Methods
     /**
@@ -107,7 +103,7 @@ object pinning {
       * @param {IGridColumn} col The column being pinned
       * @param {string} container One of the recognized container types from uiGridPinningConstants
       */
-    def pinColumn(col: IGridColumnOf[TEntity], container: String): Unit = js.native
+    def pinColumn(col: IGridColumnOf[TEntity], container: String): Unit
   }
   object IGridPinningApi {
     
@@ -118,7 +114,7 @@ object pinning {
     }
     
     @scala.inline
-    implicit class IGridPinningApiMutableBuilder[Self <: IGridPinningApi[_], TEntity] (val x: Self with IGridPinningApi[TEntity]) extends AnyVal {
+    implicit class IGridPinningApiMutableBuilder[Self <: IGridPinningApi[?], TEntity] (val x: Self & IGridPinningApi[TEntity]) extends AnyVal {
       
       @scala.inline
       def setColumnPin(value: (IScope, columnPinHandler) => Unit): Self = StObject.set(x, "columnPin", js.Any.fromFunction2(value))
@@ -128,10 +124,9 @@ object pinning {
     }
   }
   
-  @js.native
   trait IUiGridPinningConstants extends StObject {
     
-    var container: NONE = js.native
+    var container: NONE
   }
   object IUiGridPinningConstants {
     

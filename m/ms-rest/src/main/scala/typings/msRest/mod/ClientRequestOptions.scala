@@ -2,13 +2,13 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientRequestOptions extends RequestOptions {
+trait ClientRequestOptions
+  extends StObject
+     with RequestOptions {
   
-  var jar: js.UndefOr[Boolean] = js.native
+  var jar: js.UndefOr[Boolean] = js.undefined
 }
 object ClientRequestOptions {
   

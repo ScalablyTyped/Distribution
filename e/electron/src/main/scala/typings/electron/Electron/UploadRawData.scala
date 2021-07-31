@@ -3,22 +3,20 @@ package typings.electron.Electron
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadRawData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/upload-raw-data
   /**
     * Data to be uploaded.
     */
-  var bytes: Buffer = js.native
+  var bytes: Buffer
   
   /**
     * `rawData`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object UploadRawData {
   

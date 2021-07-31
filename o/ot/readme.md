@@ -12,7 +12,7 @@ Collaborative editing using operational transformation
 | Keywords           | operational transformation |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 55462 |
+| # downloads        | 36392 |
 | # stars            | 3 |
 
 ## Links

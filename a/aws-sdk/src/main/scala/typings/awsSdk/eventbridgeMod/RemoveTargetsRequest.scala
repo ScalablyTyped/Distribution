@@ -2,31 +2,29 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTargetsRequest extends StObject {
   
   /**
     * The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.
     */
-  var EventBusName: js.UndefOr[EventBusNameOrArn] = js.native
+  var EventBusName: js.UndefOr[EventBusNameOrArn] = js.undefined
   
   /**
     * If this is a managed rule, created by an AWS service on your behalf, you must specify Force as True to remove targets. This parameter is ignored for rules that are not managed rules. You can check whether a rule is a managed rule by using DescribeRule or ListRules and checking the ManagedBy field of the response.
     */
-  var Force: js.UndefOr[Boolean] = js.native
+  var Force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IDs of the targets to remove from the rule.
     */
-  var Ids: TargetIdList = js.native
+  var Ids: TargetIdList
   
   /**
     * The name of the rule.
     */
-  var Rule: RuleName = js.native
+  var Rule: RuleName
 }
 object RemoveTargetsRequest {
   

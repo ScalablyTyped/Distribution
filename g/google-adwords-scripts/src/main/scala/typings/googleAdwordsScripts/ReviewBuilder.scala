@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReviewBuilder[Review]
-  extends AdWordsBuilder[Review]
+  extends StObject
+     with AdWordsBuilder[Review]
      with hasMobilePreferredBuilder[ReviewBuilder[Review]]
      with hasStartAndEndDateBuilder[ReviewBuilder[Review]]
      with hasSchedulesBuilder[ReviewBuilder[Review]] {

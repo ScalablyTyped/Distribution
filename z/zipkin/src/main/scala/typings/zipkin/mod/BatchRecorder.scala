@@ -2,12 +2,13 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zipkin", "BatchRecorder")
 @js.native
-class BatchRecorder protected () extends Recorder {
+class BatchRecorder protected ()
+  extends StObject
+     with Recorder {
   /**
     * @constructor
     * @param {Object} args
@@ -20,4 +21,7 @@ class BatchRecorder protected () extends Recorder {
   def this(args: typings.zipkin.anon.Logger) = this()
   
   def flush(): Unit = js.native
+  
+  /* CompleteClass */
+  override def record(rec: Record): Unit = js.native
 }

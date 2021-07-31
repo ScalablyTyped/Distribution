@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferSshKeyMod {
@@ -43,6 +42,10 @@ object transferSshKeyMod {
   /* static members */
   object SshKey {
     
+    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SshKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object transferSshKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SshKey = js.native
-    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SshKey = js.native
-    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SshKeyState): SshKey = js.native
-    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): SshKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SshKeyState): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SshKey]
     
     /**
       * Returns true if the given object is an instance of SshKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/transfer/sshKey", "SshKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ Boolean]
   }
   
-  @js.native
   trait SshKeyArgs extends StObject {
     
     /**
       * The public key portion of an SSH key pair.
       */
-    val body: Input[String] = js.native
+    val body: Input[String]
     
     /**
       * The Server ID of the Transfer Server (e.g. `s-12345678`)
       */
-    val serverId: Input[String] = js.native
+    val serverId: Input[String]
     
     /**
       * The name of the user account that is assigned to one or more servers.
       */
-    val userName: Input[String] = js.native
+    val userName: Input[String]
   }
   object SshKeyArgs {
     
@@ -114,23 +111,22 @@ object transferSshKeyMod {
     }
   }
   
-  @js.native
   trait SshKeyState extends StObject {
     
     /**
       * The public key portion of an SSH key pair.
       */
-    val body: js.UndefOr[Input[String]] = js.native
+    val body: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Server ID of the Transfer Server (e.g. `s-12345678`)
       */
-    val serverId: js.UndefOr[Input[String]] = js.native
+    val serverId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the user account that is assigned to one or more servers.
       */
-    val userName: js.UndefOr[Input[String]] = js.native
+    val userName: js.UndefOr[Input[String]] = js.undefined
   }
   object SshKeyState {
     

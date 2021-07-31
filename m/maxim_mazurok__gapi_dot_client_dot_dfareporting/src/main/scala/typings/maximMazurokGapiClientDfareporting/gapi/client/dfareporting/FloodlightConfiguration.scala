@@ -2,65 +2,63 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloodlightConfiguration extends StObject {
   
   /** Account ID of this floodlight configuration. This is a read-only field that can be left blank. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Advertiser ID of the parent advertiser of this floodlight configuration. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Whether advertiser data is shared with Google Analytics. */
-  var analyticsDataSharingEnabled: js.UndefOr[Boolean] = js.native
+  var analyticsDataSharingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Custom Viewability metric for the floodlight configuration. */
-  var customViewabilityMetric: js.UndefOr[CustomViewabilityMetric] = js.native
+  var customViewabilityMetric: js.UndefOr[CustomViewabilityMetric] = js.undefined
   
   /** Whether the exposure-to-conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen by a user before converting. */
-  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+  var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Day that will be counted as the first day of the week in reports. This is a required field. */
-  var firstDayOfWeek: js.UndefOr[String] = js.native
+  var firstDayOfWeek: js.UndefOr[String] = js.undefined
   
   /** ID of this floodlight configuration. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of this floodlight configuration. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Whether in-app attribution tracking is enabled. */
-  var inAppAttributionTrackingEnabled: js.UndefOr[Boolean] = js.native
+  var inAppAttributionTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#floodlightConfiguration". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Lookback window settings for this floodlight configuration. */
-  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
   
   /** Types of attribution options for natural search conversions. */
-  var naturalSearchConversionAttributionOption: js.UndefOr[String] = js.native
+  var naturalSearchConversionAttributionOption: js.UndefOr[String] = js.undefined
   
   /** Settings for Campaign Manager Omniture integration. */
-  var omnitureSettings: js.UndefOr[OmnitureSettings] = js.native
+  var omnitureSettings: js.UndefOr[OmnitureSettings] = js.undefined
   
   /** Subaccount ID of this floodlight configuration. This is a read-only field that can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /** Configuration settings for dynamic and image floodlight tags. */
-  var tagSettings: js.UndefOr[TagSettings] = js.native
+  var tagSettings: js.UndefOr[TagSettings] = js.undefined
   
   /** List of third-party authentication tokens enabled for this configuration. */
-  var thirdPartyAuthenticationTokens: js.UndefOr[js.Array[ThirdPartyAuthenticationToken]] = js.native
+  var thirdPartyAuthenticationTokens: js.UndefOr[js.Array[ThirdPartyAuthenticationToken]] = js.undefined
   
   /** List of user defined variables enabled for this configuration. */
-  var userDefinedVariableConfigurations: js.UndefOr[js.Array[UserDefinedVariableConfiguration]] = js.native
+  var userDefinedVariableConfigurations: js.UndefOr[js.Array[UserDefinedVariableConfiguration]] = js.undefined
 }
 object FloodlightConfiguration {
   

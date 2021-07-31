@@ -4,7 +4,6 @@ import typings.awsSdkTypes.httpMod.HttpRequest
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suiteFixtureMod {
@@ -44,14 +43,13 @@ object suiteFixtureMod {
   @js.native
   val signingDate: Date = js.native
   
-  @js.native
   trait TestCase extends StObject {
     
-    var authorization: String = js.native
+    var authorization: String
     
-    var name: String = js.native
+    var name: String
     
-    var request: HttpRequest = js.native
+    var request: HttpRequest
   }
   object TestCase {
     

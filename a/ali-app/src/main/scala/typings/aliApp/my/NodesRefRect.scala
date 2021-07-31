@@ -2,17 +2,17 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesRefRect extends RectArea {
+trait NodesRefRect
+  extends StObject
+     with RectArea {
   
   /** 节点的dataset */
-  var dataset: js.Any = js.native
+  var dataset: js.Any
   
   /** 节点的ID */
-  var id: String = js.native
+  var id: String
 }
 object NodesRefRect {
   

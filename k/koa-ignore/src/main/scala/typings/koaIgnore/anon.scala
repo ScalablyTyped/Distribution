@@ -6,17 +6,15 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait If extends StObject {
     
-    def `if`(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext] = js.native
+    def `if`(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext]
     
-    def unless(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext] = js.native
+    def unless(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext]
   }
   object If {
     

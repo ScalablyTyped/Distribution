@@ -5,17 +5,15 @@ import typings.nteractTransformVdom.nteractTransformVdomStrings.applicationSlash
 import typings.nteractTransformVdom.objectToReactMod.VDOMEl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MediaType extends StObject {
     
-    var mediaType: String = js.native
+    var mediaType: String
     
-    def onVDOMEvent(): Unit = js.native
+    def onVDOMEvent(): Unit
   }
   object MediaType {
     
@@ -37,14 +35,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@nteract/transform-vdom.@nteract/transform-vdom.Props> */
-  @js.native
   trait PartialProps extends StObject {
     
-    var data: js.UndefOr[VDOMEl] = js.native
+    var data: js.UndefOr[VDOMEl] = js.undefined
     
-    var mediaType: js.UndefOr[applicationSlashvdomDotv1Plussignjson] = js.native
+    var mediaType: js.UndefOr[applicationSlashvdomDotv1Plussignjson] = js.undefined
     
-    var onVDOMEvent: js.UndefOr[js.Function2[/* targetName */ String, /* event */ SerializedEvent[_], Unit]] = js.native
+    var onVDOMEvent: js.UndefOr[js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]] = js.undefined
   }
   object PartialProps {
     
@@ -70,7 +67,7 @@ object anon {
       def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
       @scala.inline
-      def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[_]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnVDOMEventUndefined: Self = StObject.set(x, "onVDOMEvent", js.undefined)

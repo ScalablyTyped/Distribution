@@ -7,30 +7,27 @@ import typings.lwip.lwipStrings.png
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lwip", "create")
+  @JSImport("lwip", JSImport.Namespace)
   @js.native
-  def create(width: Double, height: Double, callback: ImageCallback): Unit = js.native
-  @JSImport("lwip", "create")
-  @js.native
-  def create(width: Double, height: Double, color: Color, callback: ImageCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lwip", "open")
-  @js.native
-  def open(source: String, callback: ImageCallback): Unit = js.native
-  @JSImport("lwip", "open")
-  @js.native
-  def open(source: String, `type`: String, callback: ImageCallback): Unit = js.native
-  @JSImport("lwip", "open")
-  @js.native
-  def open(source: Buffer, `type`: String, callback: ImageCallback): js.Any = js.native
-  @JSImport("lwip", "open")
-  @js.native
-  def open(source: Buffer, `type`: Height, callback: ImageCallback): js.Any = js.native
+  @scala.inline
+  def create(width: Double, height: Double, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(width: Double, height: Double, color: Color, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def open(source: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(source: String, `type`: String, callback: ImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(source: Buffer, `type`: String, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def open(source: Buffer, `type`: Height, callback: ImageCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Batch extends StObject {
@@ -474,16 +471,15 @@ object mod {
   
   type Color = String | (js.Tuple4[Double, Double, Double, Double]) | ColorObject
   
-  @js.native
   trait ColorObject extends StObject {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object ColorObject {
     
@@ -513,16 +509,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GifBufferParams extends StObject {
     
-    var colors: js.UndefOr[Double] = js.native
+    var colors: js.UndefOr[Double] = js.undefined
     
-    var interlaced: js.UndefOr[Boolean] = js.native
+    var interlaced: js.UndefOr[Boolean] = js.undefined
     
-    var threshold: Double = js.native
+    var threshold: Double
     
-    var transparency: js.UndefOr[Boolean | String] = js.native
+    var transparency: js.UndefOr[Boolean | String] = js.undefined
   }
   object GifBufferParams {
     
@@ -1033,10 +1028,9 @@ object mod {
   
   type ImageCallback = js.Function2[/* err */ js.Any, /* image */ Image, Unit]
   
-  @js.native
   trait JpegBufferParams extends StObject {
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object JpegBufferParams {
     
@@ -1057,14 +1051,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PngBufferParams extends StObject {
     
-    var compression: js.UndefOr[String] = js.native
+    var compression: js.UndefOr[String] = js.undefined
     
-    var interlaced: js.UndefOr[Boolean] = js.native
+    var interlaced: js.UndefOr[Boolean] = js.undefined
     
-    var transparency: js.UndefOr[Boolean | String] = js.native
+    var transparency: js.UndefOr[Boolean | String] = js.undefined
   }
   object PngBufferParams {
     

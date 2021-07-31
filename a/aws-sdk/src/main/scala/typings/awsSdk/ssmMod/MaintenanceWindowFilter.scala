@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowFilter extends StObject {
   
   /**
     * The name of the filter.
     */
-  var Key: js.UndefOr[MaintenanceWindowFilterKey] = js.native
+  var Key: js.UndefOr[MaintenanceWindowFilterKey] = js.undefined
   
   /**
     * The filter values.
     */
-  var Values: js.UndefOr[MaintenanceWindowFilterValues] = js.native
+  var Values: js.UndefOr[MaintenanceWindowFilterValues] = js.undefined
 }
 object MaintenanceWindowFilter {
   

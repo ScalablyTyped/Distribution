@@ -5,14 +5,15 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-powershell", JSImport.Namespace)
   @js.native
-  class ^ protected () extends NodePowershell {
+  class ^ protected ()
+    extends StObject
+       with NodePowershell {
     /**
       * Creates a new Shell instance.
       */
@@ -64,48 +65,47 @@ object mod {
     var streams: ShellStream = js.native
   }
   
-  @js.native
   trait ShellOptions extends StObject {
     
     /**
       * Determines whether to log verbose to the console.
       */
-    var debugMsg: js.UndefOr[Boolean] = js.native
+    var debugMsg: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the default execution policy for the current shell session
       */
-    var executionPolicy: js.UndefOr[String] = js.native
+    var executionPolicy: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the input encoding for the current shell.
       */
-    var inputEncoding: js.UndefOr[String] = js.native
+    var inputEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * Determines whether to load the Windows PS profile
       */
-    var noProfile: js.UndefOr[Boolean] = js.native
+    var noProfile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the output encoding for the current shell.
       */
-    var outputEncoding: js.UndefOr[String] = js.native
+    var outputEncoding: js.UndefOr[String] = js.undefined
     
     /**
       * Instructs the Shell the use pwsh as the PowerShell runspace
       */
-    var pwsh: js.UndefOr[Boolean] = js.native
+    var pwsh: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Instruct the Shell to use pwsh-preview as the PowerShell runspace.
       */
-    var pwshPrev: js.UndefOr[Boolean] = js.native
+    var pwshPrev: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether to log verbose to the console.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object ShellOptions {
     
@@ -168,14 +168,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ShellStream extends StObject {
     
-    var err: ReadableStream = js.native
+    var err: ReadableStream
     
-    var stdin: WritableStream = js.native
+    var stdin: WritableStream
     
-    var stdout: ReadableStream = js.native
+    var stdout: ReadableStream
   }
   object ShellStream {
     

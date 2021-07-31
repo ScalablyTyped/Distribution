@@ -3,15 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFTriggerMonth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMonthlyDateTrigger extends StObject {
   
-  var Days: Double = js.native
+  var Days: Double
   
-  var Months: MFTriggerMonth = js.native
+  var Months: MFTriggerMonth
 }
 object IMonthlyDateTrigger {
   

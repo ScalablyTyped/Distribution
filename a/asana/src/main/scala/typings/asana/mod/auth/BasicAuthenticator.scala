@@ -2,11 +2,11 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasicAuthenticator extends Authenticator {
+trait BasicAuthenticator
+  extends StObject
+     with Authenticator {
   
   /**
     * @param {Object} request The request to modify, for the `request` library.
@@ -15,7 +15,7 @@ trait BasicAuthenticator extends Authenticator {
     * @param request
     * @return
     */
-  def authenticateRequest(request: BasicAuthenticatorRequest): BasicAuthenticatorRequest = js.native
+  def authenticateRequest(request: BasicAuthenticatorRequest): BasicAuthenticatorRequest
 }
 object BasicAuthenticator {
   

@@ -2,17 +2,15 @@ package typings.jqueryFancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -33,23 +31,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Cache extends StObject {
     
     /**
       * false: Append random '_' argument to the request url to prevent caching.
       */
-    var cache: Boolean = js.native
+    var cache: Boolean
     
     /**
       * Default 'json' -> Expect json format and pass json object to callbacks.
       */
-    var dataType: String = js.native
+    var dataType: String
     
     /**
       * HTTP Method (default: 'GET')
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Cache {
     

@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrossOriginInjection extends StObject {
   
-  var crossOriginInjection: js.UndefOr[Boolean] = js.native
+  var crossOriginInjection: js.UndefOr[Boolean] = js.undefined
   
-  var sameOriginInjection: js.UndefOr[Boolean] = js.native
+  var sameOriginInjection: js.UndefOr[Boolean] = js.undefined
 }
 object CrossOriginInjection {
   

@@ -2,34 +2,32 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Branding properties of a YouTube channel.
   */
-@js.native
 trait SchemaChannelBrandingSettings extends StObject {
   
   /**
     * Branding properties for the channel view.
     */
-  var channel: js.UndefOr[SchemaChannelSettings] = js.native
+  var channel: js.UndefOr[SchemaChannelSettings] = js.undefined
   
   /**
     * Additional experimental branding properties.
     */
-  var hints: js.UndefOr[js.Array[SchemaPropertyValue]] = js.native
+  var hints: js.UndefOr[js.Array[SchemaPropertyValue]] = js.undefined
   
   /**
     * Branding properties for branding images.
     */
-  var image: js.UndefOr[SchemaImageSettings] = js.native
+  var image: js.UndefOr[SchemaImageSettings] = js.undefined
   
   /**
     * Branding properties for the watch page.
     */
-  var watch: js.UndefOr[SchemaWatchSettings] = js.native
+  var watch: js.UndefOr[SchemaWatchSettings] = js.undefined
 }
 object SchemaChannelBrandingSettings {
   

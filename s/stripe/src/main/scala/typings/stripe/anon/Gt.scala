@@ -2,31 +2,29 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gt extends StObject {
   
   /**
     * Return values where the created field is after this timestamp.
     */
-  var gt: js.UndefOr[String] = js.native
+  var gt: js.UndefOr[String] = js.undefined
   
   /**
     * Return values where the created field is after or equal to this timestamp.
     */
-  var gte: js.UndefOr[String] = js.native
+  var gte: js.UndefOr[String] = js.undefined
   
   /**
     * Return values where the created field is before this timestamp.
     */
-  var lt: js.UndefOr[String] = js.native
+  var lt: js.UndefOr[String] = js.undefined
   
   /**
     * Return values where the created field is before or equal to this timestamp.
     */
-  var lte: js.UndefOr[String] = js.native
+  var lte: js.UndefOr[String] = js.undefined
 }
 object Gt {
   

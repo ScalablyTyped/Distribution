@@ -7,7 +7,6 @@ import typings.webdriverJsExtender.webdriverJsExtenderStrings.LANDSCAPE
 import typings.webdriverJsExtender.webdriverJsExtenderStrings.PORTRAIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandDefinitionsMod {

@@ -2,56 +2,54 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceBundle extends StObject {
   
   /**
     * The bundle identifier.
     */
-  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.native
+  var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.undefined
   
   /**
     * The compute type. For more information, see Amazon WorkSpaces Bundles.
     */
-  var ComputeType: js.UndefOr[typings.awsSdk.workspacesMod.ComputeType] = js.native
+  var ComputeType: js.UndefOr[typings.awsSdk.workspacesMod.ComputeType] = js.undefined
   
   /**
     * A description.
     */
-  var Description: js.UndefOr[typings.awsSdk.workspacesMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.workspacesMod.Description] = js.undefined
   
   /**
     * The image identifier of the bundle.
     */
-  var ImageId: js.UndefOr[WorkspaceImageId] = js.native
+  var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
   
   /**
     * The last time that the bundle was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the bundle.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The owner of the bundle. This is the account identifier of the owner, or AMAZON if the bundle is provided by AWS.
     */
-  var Owner: js.UndefOr[BundleOwner] = js.native
+  var Owner: js.UndefOr[BundleOwner] = js.undefined
   
   /**
     * The size of the root volume.
     */
-  var RootStorage: js.UndefOr[typings.awsSdk.workspacesMod.RootStorage] = js.native
+  var RootStorage: js.UndefOr[typings.awsSdk.workspacesMod.RootStorage] = js.undefined
   
   /**
     * The size of the user storage.
     */
-  var UserStorage: js.UndefOr[typings.awsSdk.workspacesMod.UserStorage] = js.native
+  var UserStorage: js.UndefOr[typings.awsSdk.workspacesMod.UserStorage] = js.undefined
 }
 object WorkspaceBundle {
   

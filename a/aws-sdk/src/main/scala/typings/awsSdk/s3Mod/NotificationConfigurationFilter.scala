@@ -2,13 +2,11 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfigurationFilter extends StObject {
   
-  var Key: js.UndefOr[S3KeyFilter] = js.native
+  var Key: js.UndefOr[S3KeyFilter] = js.undefined
 }
 object NotificationConfigurationFilter {
   

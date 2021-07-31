@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildFirst extends StObject {
   
-  var childFirst: scala.Double = js.native
+  var childFirst: scala.Double
   
-  var parentFirst: scala.Double = js.native
+  var parentFirst: scala.Double
 }
 object ChildFirst {
   

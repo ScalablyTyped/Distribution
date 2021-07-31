@@ -6,15 +6,13 @@ import typings.select2.mod.IdTextPair
 import typings.select2.mod.Select2Require
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: IdTextPair = js.native
+    var data: IdTextPair
   }
   object Data {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait More extends StObject {
     
-    var more: Boolean = js.native
+    var more: Boolean
   }
   object More {
     
@@ -53,15 +50,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, _] = js.native
+    var options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]
   }
   object Options {
     
     @scala.inline
-    def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, _]): Options = {
+    def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -70,31 +66,44 @@ object anon {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, _]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Require extends StObject {
     
-    def require(module: String): js.Any = js.native
-    def require(modules: js.Array[String]): Unit = js.native
-    def require(modules: js.Array[String], ready: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def require(module: String): js.Any
+    def require(modules: js.Array[String]): Unit
+    def require(modules: js.Array[String], ready: js.Function1[/* repeated */ js.Any, Unit]): Unit
     def require(
       modules: js.Array[String],
       ready: js.Function1[/* repeated */ js.Any, Unit],
       errback: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     @JSName("require")
-    var require_Original: Select2Require = js.native
+    var require_Original: Select2Require
+  }
+  object Require {
+    
+    @scala.inline
+    def apply(require: Select2Require): Require = {
+      val __obj = js.Dynamic.literal(require = require.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Require]
+    }
+    
+    @scala.inline
+    implicit class RequireMutableBuilder[Self <: Require] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRequire(value: Select2Require): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Reset extends StObject {
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def set(key: String, value: js.Any): Unit = js.native
+    def set(key: String, value: js.Any): Unit
   }
   object Reset {
     

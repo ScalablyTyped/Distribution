@@ -4,40 +4,38 @@ import typings.reactNativeShare.mod.ActivityItemSource
 import typings.reactNativeShare.mod.Share.Social
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined react-native-share.react-native-share.Options & {  social :react-native-share.react-native-share.Share.Social} */
-  @js.native
   trait OptionssocialSocial extends StObject {
     
-    var activityItemSources: js.UndefOr[js.Array[ActivityItemSource]] = js.native
+    var activityItemSources: js.UndefOr[js.Array[ActivityItemSource]] = js.undefined
     
-    var excludedActivityTypes: js.UndefOr[String] = js.native
+    var excludedActivityTypes: js.UndefOr[String] = js.undefined
     
-    var failOnCancel: js.UndefOr[Boolean] = js.native
+    var failOnCancel: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var saveToFiles: js.UndefOr[Boolean] = js.native
+    var saveToFiles: js.UndefOr[Boolean] = js.undefined
     
-    var showAppsToView: js.UndefOr[Boolean] = js.native
+    var showAppsToView: js.UndefOr[Boolean] = js.undefined
     
-    var social: Social = js.native
+    var social: Social
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OptionssocialSocial {
     

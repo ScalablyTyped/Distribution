@@ -5,17 +5,15 @@ import typings.prosemirrorState.mod.Transaction
 import typings.prosemirrorTransform.mod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientID extends StObject {
     
-    var clientID: js.UndefOr[Double | String | Null] = js.native
+    var clientID: js.UndefOr[Double | String | Null] = js.undefined
     
-    var version: js.UndefOr[Double | Null] = js.native
+    var version: js.UndefOr[Double | Null] = js.undefined
   }
   object ClientID {
     
@@ -48,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MapSelectionBackward extends StObject {
     
-    var mapSelectionBackward: js.UndefOr[Boolean] = js.native
+    var mapSelectionBackward: js.UndefOr[Boolean] = js.undefined
   }
   object MapSelectionBackward {
     
@@ -72,21 +69,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Origins[S /* <: Schema[_, _] */] extends StObject {
+  trait Origins[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
-    var clientID: Double | String = js.native
+    var clientID: Double | String
     
-    var origins: js.Array[Transaction[S]] = js.native
+    var origins: js.Array[Transaction[S]]
     
-    var steps: js.Array[Step[S]] = js.native
+    var steps: js.Array[Step[S]]
     
-    var version: Double = js.native
+    var version: Double
   }
   object Origins {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](
+    def apply[S /* <: Schema[js.Any, js.Any] */](
       clientID: Double | String,
       origins: js.Array[Transaction[S]],
       steps: js.Array[Step[S]],
@@ -97,7 +93,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class OriginsMutableBuilder[Self <: Origins[_], S /* <: Schema[_, _] */] (val x: Self with Origins[S]) extends AnyVal {
+    implicit class OriginsMutableBuilder[Self <: Origins[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Origins[S]) extends AnyVal {
       
       @scala.inline
       def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])

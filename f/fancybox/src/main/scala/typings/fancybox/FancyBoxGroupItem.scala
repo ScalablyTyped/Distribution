@@ -7,17 +7,15 @@ import typings.fancybox.fancyboxStrings.iframe
 import typings.fancybox.fancyboxStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxGroupItem extends StObject {
   
-  var opts: js.UndefOr[FancyBoxOptions] = js.native
+  var opts: js.UndefOr[FancyBoxOptions] = js.undefined
   
-  var src: String = js.native
+  var src: String
   
-  var `type`: js.UndefOr[image | `inline` | ajax | iframe | html] = js.native
+  var `type`: js.UndefOr[image | `inline` | ajax | iframe | html] = js.undefined
 }
 object FancyBoxGroupItem {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2SearchAgentsResponse extends StObject {
   
   /** The list of agents. There will be a maximum number of items returned based on the page_size field in the request. */
-  var agents: js.UndefOr[js.Array[GoogleCloudDialogflowV2Agent]] = js.native
+  var agents: js.UndefOr[js.Array[GoogleCloudDialogflowV2Agent]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2SearchAgentsResponse {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVolumesInput extends StObject {
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * Specifies that the list of volumes returned be limited to the specified number of items.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * A string that indicates the position at which to begin the returned list of volumes. Obtain the marker from the response of a previous List iSCSI Volumes request.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
 }
 object ListVolumesInput {
   

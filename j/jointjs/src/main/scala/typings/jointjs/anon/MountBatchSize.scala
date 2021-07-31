@@ -5,17 +5,15 @@ import typings.jointjs.mod.dia.Paper.ViewportCallback
 import typings.jointjs.mod.mvc.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountBatchSize extends StObject {
   
-  var mountBatchSize: js.UndefOr[Double] = js.native
+  var mountBatchSize: js.UndefOr[Double] = js.undefined
   
-  var unmountBatchSize: js.UndefOr[Double] = js.native
+  var unmountBatchSize: js.UndefOr[Double] = js.undefined
   
-  var viewport: js.UndefOr[ViewportCallback] = js.native
+  var viewport: js.UndefOr[ViewportCallback] = js.undefined
 }
 object MountBatchSize {
   

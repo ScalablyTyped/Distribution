@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDelegatesResponse extends StObject {
   
   /** List of the user's delegates (with any verification status). If an account doesn't have delegates, this field doesn't appear. */
-  var delegates: js.UndefOr[js.Array[Delegate]] = js.native
+  var delegates: js.UndefOr[js.Array[Delegate]] = js.undefined
 }
 object ListDelegatesResponse {
   

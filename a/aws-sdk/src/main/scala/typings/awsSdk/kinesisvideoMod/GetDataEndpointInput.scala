@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataEndpointInput extends StObject {
   
   /**
     * The name of the API action for which to get an endpoint.
     */
-  var APIName: typings.awsSdk.kinesisvideoMod.APIName = js.native
+  var APIName: typings.awsSdk.kinesisvideoMod.APIName
   
   /**
     * The Amazon Resource Name (ARN) of the stream that you want to get the endpoint for. You must specify either this parameter or a StreamName in the request. 
     */
-  var StreamARN: js.UndefOr[ResourceARN] = js.native
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the stream that you want to get the endpoint for. You must specify either this parameter or a StreamARN in the request.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.undefined
 }
 object GetDataEndpointInput {
   

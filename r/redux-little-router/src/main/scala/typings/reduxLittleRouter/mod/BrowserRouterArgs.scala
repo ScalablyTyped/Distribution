@@ -2,17 +2,15 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserRouterArgs extends StObject {
   
-  var basename: js.UndefOr[String] = js.native
+  var basename: js.UndefOr[String] = js.undefined
   
-  var history: js.UndefOr[History] = js.native
+  var history: js.UndefOr[History] = js.undefined
   
-  var routes: Routes = js.native
+  var routes: Routes
 }
 object BrowserRouterArgs {
   

@@ -2,77 +2,75 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request of verifying the password.
   */
-@js.native
 trait SchemaVerifyPasswordResponse extends StObject {
   
   /**
     * The name of the user.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email returned by the IdP. NOTE: The federated login user may not own
     * the email.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be expiration time of
     * STS id token in seconds.
     */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /**
     * The GITKit token for authenticated user.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#VerifyPasswordResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The RP local ID if it&#39;s already been mapped to the IdP account
     * identified by the federated ID.
     */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth2 access token.
     */
-  var oauthAccessToken: js.UndefOr[String] = js.native
+  var oauthAccessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth2 authorization code.
     */
-  var oauthAuthorizationCode: js.UndefOr[String] = js.native
+  var oauthAuthorizationCode: js.UndefOr[String] = js.undefined
   
   /**
     * The lifetime in seconds of the OAuth2 access token.
     */
-  var oauthExpireIn: js.UndefOr[Double] = js.native
+  var oauthExpireIn: js.UndefOr[Double] = js.undefined
   
   /**
     * The URI of the user&#39;s photo at IdP
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the email is registered.
     */
-  var registered: js.UndefOr[Boolean] = js.native
+  var registered: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaVerifyPasswordResponse {
   

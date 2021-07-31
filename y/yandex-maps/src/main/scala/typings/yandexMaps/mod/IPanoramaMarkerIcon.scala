@@ -4,15 +4,13 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaMarkerIcon extends StObject {
   
-  var image: HTMLCanvasElement | HTMLImageElement = js.native
+  var image: HTMLCanvasElement | HTMLImageElement
   
-  var offset: js.Array[Double] = js.native
+  var offset: js.Array[Double]
 }
 object IPanoramaMarkerIcon {
   

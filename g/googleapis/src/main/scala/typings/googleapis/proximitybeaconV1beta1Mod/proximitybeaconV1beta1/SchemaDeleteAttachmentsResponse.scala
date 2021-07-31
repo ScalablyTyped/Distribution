@@ -2,19 +2,17 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for a request to delete attachments.
   */
-@js.native
 trait SchemaDeleteAttachmentsResponse extends StObject {
   
   /**
     * The number of attachments that were deleted.
     */
-  var numDeleted: js.UndefOr[Double] = js.native
+  var numDeleted: js.UndefOr[Double] = js.undefined
 }
 object SchemaDeleteAttachmentsResponse {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudbilling/v1", "cloudbilling_v1.Resource$Services")
@@ -94,7 +93,7 @@ class ResourceServices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(params: ParamsResourceServicesList): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(params: ParamsResourceServicesList, callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(

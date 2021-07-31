@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRemoteLocationsRequest extends StObject {
   
   /**
     * List of remote locations.
     */
-  var locations: js.Array[RemoteLocation] = js.native
+  var locations: js.Array[RemoteLocation]
 }
 object SetRemoteLocationsRequest {
   

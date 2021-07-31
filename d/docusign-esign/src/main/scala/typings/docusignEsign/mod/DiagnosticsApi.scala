@@ -2,7 +2,6 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "DiagnosticsApi")
@@ -26,12 +25,12 @@ class DiagnosticsApi protected () extends StObject {
   def getService(callback: js.Function0[Unit]): js.Promise[ServiceInformation] = js.native
   
   def listRequestLogs(): js.Promise[ApiRequestLogsResult] = js.native
-  def listRequestLogs(optsOrCallback: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[ApiRequestLogsResult] = js.native
   def listRequestLogs(optsOrCallback: js.Any): js.Promise[ApiRequestLogsResult] = js.native
   def listRequestLogs(optsOrCallback: js.Any, callback: js.Function0[Unit]): js.Promise[ApiRequestLogsResult] = js.native
+  def listRequestLogs(optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[ApiRequestLogsResult] = js.native
   
   def updateRequestLogSettings(): js.Promise[DiagnosticsSettingsInformation] = js.native
-  def updateRequestLogSettings(optsOrCallback: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[DiagnosticsSettingsInformation] = js.native
   def updateRequestLogSettings(optsOrCallback: js.Any): js.Promise[DiagnosticsSettingsInformation] = js.native
   def updateRequestLogSettings(optsOrCallback: js.Any, callback: js.Function0[Unit]): js.Promise[DiagnosticsSettingsInformation] = js.native
+  def updateRequestLogSettings(optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[DiagnosticsSettingsInformation] = js.native
 }

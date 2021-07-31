@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encryptionByDefaultMod {
@@ -24,7 +23,7 @@ object encryptionByDefaultMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EncryptionByDefaultArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EncryptionByDefaultArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -35,6 +34,10 @@ object encryptionByDefaultMod {
   /* static members */
   object EncryptionByDefault {
     
+    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EncryptionByDefault resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,35 +47,29 @@ object encryptionByDefaultMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState): EncryptionByDefault = js.native
-    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): EncryptionByDefault = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionByDefaultState): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
     
     /**
       * Returns true if the given object is an instance of EncryptionByDefault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs/encryptionByDefault", "EncryptionByDefault.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean]
   }
   
-  @js.native
   trait EncryptionByDefaultArgs extends StObject {
     
     /**
       * Whether or not default EBS encryption is enabled. Valid values are `true` or `false`. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object EncryptionByDefaultArgs {
     
@@ -93,13 +90,12 @@ object encryptionByDefaultMod {
     }
   }
   
-  @js.native
   trait EncryptionByDefaultState extends StObject {
     
     /**
       * Whether or not default EBS encryption is enabled. Valid values are `true` or `false`. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object EncryptionByDefaultState {
     

@@ -4,15 +4,13 @@ import typings.firebaseDatabase.eventMod.Event
 import typings.firebaseDatabase.queryMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
-  var events: js.Array[Event] = js.native
+  var events: js.Array[Event]
   
-  var removed: js.Array[Query] = js.native
+  var removed: js.Array[Query]
 }
 object Events {
   

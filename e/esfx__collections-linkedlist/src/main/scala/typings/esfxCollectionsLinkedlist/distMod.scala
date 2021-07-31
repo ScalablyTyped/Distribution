@@ -7,19 +7,20 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
   
   @JSImport("@esfx/collections-linkedlist/dist", "LinkedList")
   @js.native
-  class LinkedList[T] () extends Collection[T] {
+  class LinkedList[T] ()
+    extends StObject
+       with Collection[T] {
     def this(equaler: Equaler[T]) = this()
     def this(equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T]) = this()
-    def this(iterable: js.UndefOr[scala.Nothing], equaler: Equaler[T]) = this()
-    def this(iterable: js.UndefOr[scala.Nothing], equaler: EqualityComparison[T]) = this()
+    def this(iterable: Unit, equaler: Equaler[T]) = this()
+    def this(iterable: Unit, equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T], equaler: Equaler[T]) = this()
     def this(iterable: Iterable[T], equaler: EqualityComparison[T]) = this()
     
@@ -209,20 +210,20 @@ object distMod {
     
     def has(value: T): Boolean = js.native
     
-    def insertAfter(node: js.UndefOr[scala.Nothing], value: T): LinkedListNode[T] = js.native
     def insertAfter(node: Null, value: T): LinkedListNode[T] = js.native
+    def insertAfter(node: Unit, value: T): LinkedListNode[T] = js.native
     def insertAfter(node: LinkedListNode[T], value: T): LinkedListNode[T] = js.native
     
-    def insertBefore(node: js.UndefOr[scala.Nothing], value: T): LinkedListNode[T] = js.native
     def insertBefore(node: Null, value: T): LinkedListNode[T] = js.native
+    def insertBefore(node: Unit, value: T): LinkedListNode[T] = js.native
     def insertBefore(node: LinkedListNode[T], value: T): LinkedListNode[T] = js.native
     
-    def insertNodeAfter(node: js.UndefOr[scala.Nothing], newNode: LinkedListNode[T]): Unit = js.native
     def insertNodeAfter(node: Null, newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeAfter(node: Unit, newNode: LinkedListNode[T]): Unit = js.native
     def insertNodeAfter(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
     
-    def insertNodeBefore(node: js.UndefOr[scala.Nothing], newNode: LinkedListNode[T]): Unit = js.native
     def insertNodeBefore(node: Null, newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeBefore(node: Unit, newNode: LinkedListNode[T]): Unit = js.native
     def insertNodeBefore(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
     
     @JSName(js.Symbol.iterator)
@@ -322,7 +323,6 @@ object distMod {
     val size: Double = js.native
     
     def some(): Boolean = js.native
-    def some(callback: js.UndefOr[scala.Nothing], thisArg: js.Any): Boolean = js.native
     def some(
       callback: js.Function3[/* value */ T, /* node */ LinkedListNode[T], /* list */ LinkedList[T], Boolean]
     ): Boolean = js.native
@@ -330,6 +330,7 @@ object distMod {
       callback: js.Function3[/* value */ T, /* node */ LinkedListNode[T], /* list */ LinkedList[T], Boolean],
       thisArg: js.Any
     ): Boolean = js.native
+    def some(callback: Unit, thisArg: js.Any): Boolean = js.native
     
     @JSName(js.Symbol.toStringTag)
     var toStringTag: String = js.native

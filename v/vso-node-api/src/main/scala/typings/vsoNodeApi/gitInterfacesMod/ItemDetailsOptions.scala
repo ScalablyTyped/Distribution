@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemDetailsOptions extends StObject {
   
   /**
     * If true, include metadata about the file type
     */
-  var includeContentMetadata: Boolean = js.native
+  var includeContentMetadata: Boolean
   
   /**
     * Specifies whether to include children (OneLevel), all descendants (Full) or None for folder items
     */
-  var recursionLevel: VersionControlRecursionType = js.native
+  var recursionLevel: VersionControlRecursionType
 }
 object ItemDetailsOptions {
   

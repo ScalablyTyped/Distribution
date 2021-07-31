@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the encryption and signing policies associates with an email mailbox. */
-@js.native
 trait EmailMailboxPolicies extends StObject {
   
   /** Gets a Boolean value that indicates whether software certificates are allowed. */
-  var allowSmimeSoftCertificates: Boolean = js.native
+  var allowSmimeSoftCertificates: Boolean
   
   /** Gets the allowable SMIME encryption algorithms for the purpose of negotiating with an app. */
-  var allowedSmimeEncryptionAlgorithmNegotiation: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation = js.native
+  var allowedSmimeEncryptionAlgorithmNegotiation: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
   
   /** Gets a Boolean value that indicates whether the sync provider that represents the email mailbox only accepts encrypted messages. */
-  var mustEncryptSmimeMessages: Boolean = js.native
+  var mustEncryptSmimeMessages: Boolean
   
   /** Gets a Boolean value that indicates whether the sync provider that represents the email mailbox only accepts signed messages. */
-  var mustSignSmimeMessages: Boolean = js.native
+  var mustSignSmimeMessages: Boolean
   
   /** Gets the required SMIME encryption algorithm. */
-  var requiredSmimeEncryptionAlgorithm: EmailMailboxSmimeEncryptionAlgorithm = js.native
+  var requiredSmimeEncryptionAlgorithm: EmailMailboxSmimeEncryptionAlgorithm
   
   /** Gets the required SMIME signing algorithm. */
-  var requiredSmimeSigningAlgorithm: EmailMailboxSmimeSigningAlgorithm = js.native
+  var requiredSmimeSigningAlgorithm: EmailMailboxSmimeSigningAlgorithm
 }
 object EmailMailboxPolicies {
   

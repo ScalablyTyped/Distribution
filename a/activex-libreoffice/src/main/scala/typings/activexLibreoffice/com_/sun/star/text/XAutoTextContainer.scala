@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * handles blocks of {@link AutoTextEntry} .
   * @see AutoTextContainer
   */
-@js.native
-trait XAutoTextContainer extends XNameAccess {
+trait XAutoTextContainer
+  extends StObject
+     with XNameAccess {
   
   /**
     * creates a new AutoText group.
     * @param aGroupName the name of the {@link AutoTextContainer}  The name must follow the pattern `groupname*pathid` , where:  `groupname` should contain on
     */
-  def insertNewByName(aGroupName: String): XAutoTextGroup = js.native
+  def insertNewByName(aGroupName: String): XAutoTextGroup
   
   /**
     * deletes the specified AutoText group.
     * @param aGroupName see the documentation for {@link XAutoTextContainer.insertNewByName()}
     */
-  def removeByName(aGroupName: String): Unit = js.native
+  def removeByName(aGroupName: String): Unit
 }
 object XAutoTextContainer {
   

@@ -2,15 +2,13 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldEditable extends StObject {
   
-  var field: Boolean = js.native
+  var field: Boolean
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object FieldEditable {
   

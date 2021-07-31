@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for the `BatchEnableServices` method.
   */
-@js.native
 trait SchemaBatchEnableServicesRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaBatchEnableServicesRequest extends StObject {
     * enable a maximum of 20 services at a time. If more than 20 services are
     * specified, the request will fail, and no state changes will occur.
     */
-  var serviceIds: js.UndefOr[js.Array[String]] = js.native
+  var serviceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaBatchEnableServicesRequest {
   

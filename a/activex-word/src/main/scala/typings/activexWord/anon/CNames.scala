@@ -3,21 +3,19 @@ package typings.activexWord.anon
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CNames extends StObject {
   
-  val cNames: Double = js.native
+  val cNames: Double
   
-  val lcid: Double = js.native
+  val lcid: Double
   
-  var rgdispid: Double = js.native
+  var rgdispid: Double
   
-  val rgszNames: Double = js.native
+  val rgszNames: Double
   
-  val riid: GUID = js.native
+  val riid: GUID
 }
 object CNames {
   

@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSUnionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSUnionType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSUnionType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
   @JSName("type")
-  var type_TSUnionType_ : TSUnionType = js.native
+  var type_TSUnionType_ : TSUnionType
   
-  var types: js.Array[TSType] = js.native
+  var types: js.Array[TSType]
 }
 object TSUnionType_ {
   
   @scala.inline
-  def apply(`type`: TSUnionType, types: js.Array[TSType]): TSUnionType_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(types: js.Array[TSType]): TSUnionType_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSUnionType")
     __obj.asInstanceOf[TSUnionType_]
   }
   

@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows estimating the memory usage of a service.
   * @since LibreOffice 5.3
   */
-@js.native
-trait XAccounting extends XInterface {
+trait XAccounting
+  extends StObject
+     with XInterface {
   
   /** @returns an estimate of the current memory usage, in octets. */
-  def estimateUsage(): Double = js.native
+  def estimateUsage(): Double
 }
 object XAccounting {
   

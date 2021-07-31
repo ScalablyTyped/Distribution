@@ -3,7 +3,6 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CompliancePolicy {
@@ -16,18 +15,26 @@ object CompliancePolicy {
     
     // : 1,
     @js.native
-    sealed trait list extends SPContainerType
+    sealed trait list
+      extends StObject
+         with SPContainerType
     
     @js.native
-    sealed trait site extends SPContainerType
+    sealed trait site
+      extends StObject
+         with SPContainerType
     
     // : 0,
     @js.native
-    sealed trait web extends SPContainerType
+    sealed trait web
+      extends StObject
+         with SPContainerType
   }
   
   @js.native
-  trait SPContainerId extends ClientObject {
+  trait SPContainerId
+    extends StObject
+       with ClientObject {
     
     def get_containerType(): ContentType = js.native
     
@@ -65,13 +72,15 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyAssociation extends ClientObject {
+  trait SPPolicyAssociation
+    extends StObject
+       with ClientObject {
     
     def get_allowOverride(): Boolean = js.native
     
     def get_comment(): String = js.native
     
-    def get_defaultPolicyDefinitionConfigId(): js.Array[_] = js.native
+    def get_defaultPolicyDefinitionConfigId(): js.Array[js.Any] = js.native
     
     def get_description(): String = js.native
     
@@ -81,7 +90,7 @@ object CompliancePolicy {
     
     def get_policyApplyStatus(): js.Any = js.native
     
-    def get_policyDefinitionConfigIds(): js.Array[_] = js.native
+    def get_policyDefinitionConfigIds(): js.Array[js.Any] = js.native
     
     def get_scope(): js.Any = js.native
     
@@ -99,7 +108,7 @@ object CompliancePolicy {
     
     def set_comment(value: String): String = js.native
     
-    def set_defaultPolicyDefinitionConfigId(value: js.Array[_]): js.Array[_] = js.native
+    def set_defaultPolicyDefinitionConfigId(value: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     def set_description(value: String): String = js.native
     
@@ -109,7 +118,7 @@ object CompliancePolicy {
     
     def set_policyApplyStatus(value: js.Any): js.Any = js.native
     
-    def set_policyDefinitionConfigIds(value: js.Array[_]): js.Array[_] = js.native
+    def set_policyDefinitionConfigIds(value: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     def set_scope(value: js.Any): js.Any = js.native
     
@@ -125,7 +134,9 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyBinding extends ClientObject {
+  trait SPPolicyBinding
+    extends StObject
+       with ClientObject {
     
     def get_identity(): js.Any = js.native
     
@@ -185,7 +196,9 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyDefinition extends ClientObject {
+  trait SPPolicyDefinition
+    extends StObject
+       with ClientObject {
     
     def get_comment(): String = js.native
     
@@ -245,7 +258,9 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyRule extends ClientObject {
+  trait SPPolicyRule
+    extends StObject
+       with ClientObject {
     
     def get_comment(): String = js.native
     
@@ -301,7 +316,9 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyStore extends ClientObject {
+  trait SPPolicyStore
+    extends StObject
+       with ClientObject {
     
     def deletePolicyAssociation(policyAssociationId: js.Any): Unit = js.native
     
@@ -341,7 +358,9 @@ object CompliancePolicy {
   }
   
   @js.native
-  trait SPPolicyStoreProxy extends ClientObject {
+  trait SPPolicyStoreProxy
+    extends StObject
+       with ClientObject {
     
     def get_policyStoreUrl(): String = js.native
   }

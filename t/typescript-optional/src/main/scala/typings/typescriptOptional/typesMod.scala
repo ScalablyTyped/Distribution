@@ -4,17 +4,15 @@ import typings.typescriptOptional.typescriptOptionalStrings.empty
 import typings.typescriptOptional.typescriptOptionalStrings.present
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Cases[T, U] extends StObject {
     
-    def empty(): U = js.native
+    def empty(): U
     
-    def present(value: T): U = js.native
+    def present(value: T): U
   }
   object Cases {
     
@@ -25,7 +23,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class CasesMutableBuilder[Self <: Cases[_, _], T, U] (val x: Self with (Cases[T, U])) extends AnyVal {
+    implicit class CasesMutableBuilder[Self <: Cases[?, ?], T, U] (val x: Self & (Cases[T, U])) extends AnyVal {
       
       @scala.inline
       def setEmpty(value: () => U): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
@@ -35,21 +33,22 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait Empty[T] extends Option[T] {
+  trait Empty[T]
+    extends StObject
+       with Option[T] {
     
-    var kind: empty = js.native
+    var kind: empty
   }
   object Empty {
     
     @scala.inline
-    def apply[T](kind: empty): Empty[T] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply[T](): Empty[T] = {
+      val __obj = js.Dynamic.literal(kind = "empty")
       __obj.asInstanceOf[Empty[T]]
     }
     
     @scala.inline
-    implicit class EmptyMutableBuilder[Self <: Empty[_], T] (val x: Self with Empty[T]) extends AnyVal {
+    implicit class EmptyMutableBuilder[Self <: Empty[?], T] (val x: Self & Empty[T]) extends AnyVal {
       
       @scala.inline
       def setKind(value: empty): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -64,35 +63,36 @@ object typesMod {
   object Option {
     
     @scala.inline
-    def Empty[T](kind: empty): typings.typescriptOptional.typesMod.Empty[T] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def Empty[T](): typings.typescriptOptional.typesMod.Empty[T] = {
+      val __obj = js.Dynamic.literal(kind = "empty")
       __obj.asInstanceOf[typings.typescriptOptional.typesMod.Empty[T]]
     }
     
     @scala.inline
-    def Present[T](kind: present, value: T): typings.typescriptOptional.typesMod.Present[T] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def Present[T](value: T): typings.typescriptOptional.typesMod.Present[T] = {
+      val __obj = js.Dynamic.literal(kind = "present", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.typescriptOptional.typesMod.Present[T]]
     }
   }
   
-  @js.native
-  trait Present[T] extends Option[T] {
+  trait Present[T]
+    extends StObject
+       with Option[T] {
     
-    var kind: present = js.native
+    var kind: present
     
-    var value: T = js.native
+    var value: T
   }
   object Present {
     
     @scala.inline
-    def apply[T](kind: present, value: T): Present[T] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[T](value: T): Present[T] = {
+      val __obj = js.Dynamic.literal(kind = "present", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Present[T]]
     }
     
     @scala.inline
-    implicit class PresentMutableBuilder[Self <: Present[_], T] (val x: Self with Present[T]) extends AnyVal {
+    implicit class PresentMutableBuilder[Self <: Present[?], T] (val x: Self & Present[T]) extends AnyVal {
       
       @scala.inline
       def setKind(value: present): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])

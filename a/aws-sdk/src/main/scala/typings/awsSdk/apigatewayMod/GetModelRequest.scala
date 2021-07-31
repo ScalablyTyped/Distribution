@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetModelRequest extends StObject {
   
   /**
     * A query parameter of a Boolean value to resolve (true) all external model references and returns a flattened model schema or not (false) The default is false.
     */
-  var flatten: js.UndefOr[Boolean] = js.native
+  var flatten: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Required] The name of the model as an identifier.
     */
-  var modelName: String = js.native
+  var modelName: String
   
   /**
     * [Required] The RestApi identifier under which the Model exists.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object GetModelRequest {
   

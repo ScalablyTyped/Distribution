@@ -2,22 +2,22 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegexFilterData extends FilterValue {
+trait RegexFilterData
+  extends StObject
+     with FilterValue {
   
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter
   
-  var value: String = js.native
+  var value: String
 }
 object RegexFilterData {
   
   @scala.inline
-  def apply(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter, value: String): RegexFilterData = {
+  def apply(value: String): RegexFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RegexFilter")
     __obj.asInstanceOf[RegexFilterData]
   }
   

@@ -6,7 +6,6 @@ import typings.node.NodeJS.ErrnoException
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -61,48 +60,47 @@ object mod {
     def put: typings.swPrecache.swPrecacheStrings.put = "put".asInstanceOf[typings.swPrecache.swPrecacheStrings.put]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cacheId: js.UndefOr[String] = js.native
+    var cacheId: js.UndefOr[String] = js.undefined
     
-    var clientsClaim: js.UndefOr[Boolean] = js.native
+    var clientsClaim: js.UndefOr[Boolean] = js.undefined
     
-    var directoryIndex: js.UndefOr[String] = js.native
+    var directoryIndex: js.UndefOr[String] = js.undefined
     
-    var dontCacheBustUrlsMatching: js.UndefOr[RegExp] = js.native
+    var dontCacheBustUrlsMatching: js.UndefOr[RegExp] = js.undefined
     
-    var dynamicUrlToDependencies: js.UndefOr[StringDictionary[String | Buffer | js.Array[String]]] = js.native
+    var dynamicUrlToDependencies: js.UndefOr[StringDictionary[String | Buffer | js.Array[String]]] = js.undefined
     
-    var handleFetch: js.UndefOr[Boolean] = js.native
+    var handleFetch: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreUrlParametersMatching: js.UndefOr[js.Array[RegExp]] = js.native
+    var ignoreUrlParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var importScripts: js.UndefOr[js.Array[String]] = js.native
+    var importScripts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.native
+    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
     
-    var navigateFallback: js.UndefOr[String] = js.native
+    var navigateFallback: js.UndefOr[String] = js.undefined
     
-    var navigateFallbackWhitelist: js.UndefOr[js.Array[RegExp]] = js.native
+    var navigateFallbackWhitelist: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var replacePrefix: js.UndefOr[String] = js.native
+    var replacePrefix: js.UndefOr[String] = js.undefined
     
-    var runtimeCaching: js.UndefOr[js.Array[typings.swPrecache.anon.Handler]] = js.native
+    var runtimeCaching: js.UndefOr[js.Array[typings.swPrecache.anon.Handler]] = js.undefined
     
-    var skipWaiting: js.UndefOr[Boolean] = js.native
+    var skipWaiting: js.UndefOr[Boolean] = js.undefined
     
-    var staticFileGlobs: js.UndefOr[js.Array[String]] = js.native
+    var staticFileGlobs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var stripPrefix: js.UndefOr[String] = js.native
+    var stripPrefix: js.UndefOr[String] = js.undefined
     
-    var stripPrefixMulti: js.UndefOr[StringDictionary[String]] = js.native
+    var stripPrefixMulti: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var templateFilePath: js.UndefOr[String] = js.native
+    var templateFilePath: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

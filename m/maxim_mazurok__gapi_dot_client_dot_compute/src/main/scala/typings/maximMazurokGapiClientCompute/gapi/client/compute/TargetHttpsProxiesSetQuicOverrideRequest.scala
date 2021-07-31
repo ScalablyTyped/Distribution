@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHttpsProxiesSetQuicOverrideRequest extends StObject {
   
   /** QUIC policy for the TargetHttpsProxy resource. */
-  var quicOverride: js.UndefOr[String] = js.native
+  var quicOverride: js.UndefOr[String] = js.undefined
 }
 object TargetHttpsProxiesSetQuicOverrideRequest {
   

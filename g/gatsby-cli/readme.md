@@ -10,9 +10,9 @@ Gatsby command-line interface for creating new sites and running Gatsby commands
 | ------------------ | :-------------: |
 | Full name          | gatsby-cli |
 | Keywords           | gatsby |
-| # releases         | 477 |
+| # releases         | 482 |
 | # dependents       | 96 |
-| # downloads        | 22624051 |
+| # downloads        | 23016361 |
 | # stars            | 1 |
 
 ## Links

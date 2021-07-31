@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceNetworking extends StObject {
   
   /**
     * The amount of data in GB allocated for monthly data transfers.
     */
-  var monthlyTransfer: js.UndefOr[MonthlyTransfer] = js.native
+  var monthlyTransfer: js.UndefOr[MonthlyTransfer] = js.undefined
   
   /**
     * An array of key-value pairs containing information about the ports on the instance.
     */
-  var ports: js.UndefOr[InstancePortInfoList] = js.native
+  var ports: js.UndefOr[InstancePortInfoList] = js.undefined
 }
 object InstanceNetworking {
   

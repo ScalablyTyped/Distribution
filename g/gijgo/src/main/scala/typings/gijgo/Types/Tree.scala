@@ -3,11 +3,12 @@ package typings.gijgo.Types
 import typings.gijgo.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tree extends JQuery {
+trait Tree
+  extends StObject
+     with JQuery {
   
   def addNode(data: js.Any, parentNode: js.Any, position: Double): Tree = js.native
   
@@ -35,13 +36,13 @@ trait Tree extends JQuery {
   
   def expandAll(): Tree = js.native
   
-  def getAll(): js.Array[_] = js.native
+  def getAll(): js.Array[js.Any] = js.native
   
   //parents(id: string): Array<string>;
   def getCheckedNodes(): js.Array[String] = js.native
   
-  def getChildren(node: js.Any): js.Array[_] = js.native
-  def getChildren(node: js.Any, cascade: Boolean): js.Array[_] = js.native
+  def getChildren(node: js.Any): js.Array[js.Any] = js.native
+  def getChildren(node: js.Any, cascade: Boolean): js.Array[js.Any] = js.native
   
   def getDataById(id: String): js.Any = js.native
   

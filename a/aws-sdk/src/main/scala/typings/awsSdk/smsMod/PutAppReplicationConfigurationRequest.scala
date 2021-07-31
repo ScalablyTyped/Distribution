@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAppReplicationConfigurationRequest extends StObject {
   
   /**
     * The ID of the application.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * Information about the replication configurations for server groups in the application.
     */
-  var serverGroupReplicationConfigurations: js.UndefOr[ServerGroupReplicationConfigurations] = js.native
+  var serverGroupReplicationConfigurations: js.UndefOr[ServerGroupReplicationConfigurations] = js.undefined
 }
 object PutAppReplicationConfigurationRequest {
   

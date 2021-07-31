@@ -30,7 +30,6 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpClient")
@@ -1417,8 +1416,8 @@ class HttpClient protected () extends StObject {
     * @return An `Observable` of all `HttpEvents` for the request,
     *  with the response body of type `Object`.
     */
-  def request(method: String, url: String, options: ObserveParams): Observable_[HttpEvent[_]] = js.native
-  def request(method: String, url: String, options: ObserveParamsReportProgress): Observable_[_] = js.native
+  def request(method: String, url: String, options: ObserveParams): Observable_[HttpEvent[js.Any]] = js.native
+  def request(method: String, url: String, options: ObserveParamsReportProgress): Observable_[js.Any] = js.native
   /**
     * Constructs a request which interprets the body as an `ArrayBuffer`
     * and returns the full `HTTPResponse`.
@@ -1491,7 +1490,7 @@ class HttpClient protected () extends StObject {
     *
     * @return An `Observable` of the response, with the response body as a stream of `HTTPEvents`.
     */
-  def request[R](req: HttpRequest[_]): Observable_[HttpEvent[R]] = js.native
+  def request[R](req: HttpRequest[js.Any]): Observable_[HttpEvent[R]] = js.native
   /**
     * Constructs a request which interprets the body as a JSON object
     * with the response body of the requested type.

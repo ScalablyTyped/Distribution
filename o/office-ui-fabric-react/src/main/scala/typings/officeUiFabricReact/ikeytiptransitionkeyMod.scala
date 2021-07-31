@@ -2,25 +2,25 @@ package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ikeytiptransitionkeyMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/keytips/IKeytipTransitionKey", "transitionKeysAreEqual")
+  @JSImport("office-ui-fabric-react/lib/utilities/keytips/IKeytipTransitionKey", JSImport.Namespace)
   @js.native
-  def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/utilities/keytips/IKeytipTransitionKey", "transitionKeysContain")
-  @js.native
-  def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = js.native
+  @scala.inline
+  def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait IKeytipTransitionKey extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var modifierKeys: js.UndefOr[js.Array[KeytipTransitionModifier]] = js.native
+    var modifierKeys: js.UndefOr[js.Array[KeytipTransitionModifier]] = js.undefined
   }
   object IKeytipTransitionKey {
     

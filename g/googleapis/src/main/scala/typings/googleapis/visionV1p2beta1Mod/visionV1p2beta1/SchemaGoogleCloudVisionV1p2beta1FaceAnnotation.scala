@@ -2,24 +2,22 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A face annotation object contains the results of face detection.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1FaceAnnotation extends StObject {
   
   /**
     * Anger likelihood.
     */
-  var angerLikelihood: js.UndefOr[String] = js.native
+  var angerLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Blurred likelihood.
     */
-  var blurredLikelihood: js.UndefOr[String] = js.native
+  var blurredLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * The bounding polygon around the face. The coordinates of the bounding box
@@ -30,12 +28,12 @@ trait SchemaGoogleCloudVisionV1p2beta1FaceAnnotation extends StObject {
     * be unbounded) if only a partial face appears in the image to be
     * annotated.
     */
-  var boundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.native
+  var boundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.undefined
   
   /**
     * Detection confidence. Range [0, 1].
     */
-  var detectionConfidence: js.UndefOr[Double] = js.native
+  var detectionConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The `fd_bounding_poly` bounding polygon is tighter than the
@@ -45,62 +43,62 @@ trait SchemaGoogleCloudVisionV1p2beta1FaceAnnotation extends StObject {
     * landmarker results, only on the initial face detection, hence the
     * &lt;code&gt;fd&lt;/code&gt; (face detection) prefix.
     */
-  var fdBoundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.native
+  var fdBoundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.undefined
   
   /**
     * Headwear likelihood.
     */
-  var headwearLikelihood: js.UndefOr[String] = js.native
+  var headwearLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Joy likelihood.
     */
-  var joyLikelihood: js.UndefOr[String] = js.native
+  var joyLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Face landmarking confidence. Range [0, 1].
     */
-  var landmarkingConfidence: js.UndefOr[Double] = js.native
+  var landmarkingConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Detected face landmarks.
     */
-  var landmarks: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p2beta1FaceAnnotationLandmark]] = js.native
+  var landmarks: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p2beta1FaceAnnotationLandmark]] = js.undefined
   
   /**
     * Yaw angle, which indicates the leftward/rightward angle that the face is
     * pointing relative to the vertical plane perpendicular to the image. Range
     * [-180,180].
     */
-  var panAngle: js.UndefOr[Double] = js.native
+  var panAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Roll angle, which indicates the amount of clockwise/anti-clockwise
     * rotation of the face relative to the image vertical about the axis
     * perpendicular to the face. Range [-180,180].
     */
-  var rollAngle: js.UndefOr[Double] = js.native
+  var rollAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Sorrow likelihood.
     */
-  var sorrowLikelihood: js.UndefOr[String] = js.native
+  var sorrowLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Surprise likelihood.
     */
-  var surpriseLikelihood: js.UndefOr[String] = js.native
+  var surpriseLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Pitch angle, which indicates the upwards/downwards angle that the face is
     * pointing relative to the image&#39;s horizontal plane. Range [-180,180].
     */
-  var tiltAngle: js.UndefOr[Double] = js.native
+  var tiltAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Under-exposed likelihood.
     */
-  var underExposedLikelihood: js.UndefOr[String] = js.native
+  var underExposedLikelihood: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1FaceAnnotation {
   

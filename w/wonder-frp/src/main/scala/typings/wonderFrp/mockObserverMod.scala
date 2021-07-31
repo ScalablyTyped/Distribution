@@ -3,26 +3,31 @@ package typings.wonderFrp
 import typings.wonderFrp.observerMod.Observer
 import typings.wonderFrp.recordMod.Record
 import typings.wonderFrp.testSchedulerMod.TestScheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/testing/MockObserver", JSImport.Namespace)
-@js.native
-object mockObserverMod extends js.Object {
+object mockObserverMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/testing/MockObserver", "MockObserver")
   @js.native
   class MockObserver protected () extends Observer {
     def this(scheduler: TestScheduler) = this()
+    
     var _messages: js.Any = js.native
+    
     var _scheduler: js.Any = js.native
+    
     var messages: js.Array[Record] = js.native
   }
-  
   /* static members */
-  @js.native
-  object MockObserver extends js.Object {
-    def create(scheduler: TestScheduler): MockObserver = js.native
+  object MockObserver {
+    
+    @JSImport("wonder-frp/dist/commonjs/testing/MockObserver", "MockObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(scheduler: TestScheduler): MockObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MockObserver]
   }
-  
 }
-

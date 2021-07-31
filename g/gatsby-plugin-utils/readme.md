@@ -10,9 +10,9 @@ Gatsby utils that help creating plugins
 | ------------------ | :-------------: |
 | Full name          | gatsby-plugin-utils |
 | Keywords           | gatsby |
-| # releases         | 28 |
-| # dependents       | 4 |
-| # downloads        | 1015490 |
+| # releases         | 43 |
+| # dependents       | 5 |
+| # downloads        | 4884784 |
 | # stars            | 0 |
 
 ## Links

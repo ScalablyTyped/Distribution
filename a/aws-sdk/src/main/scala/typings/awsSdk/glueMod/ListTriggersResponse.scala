@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTriggersResponse extends StObject {
   
   /**
     * A continuation token, if the returned list does not contain the last metric available.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The names of all triggers in the account, or the triggers with the specified tags.
     */
-  var TriggerNames: js.UndefOr[TriggerNameList] = js.native
+  var TriggerNames: js.UndefOr[TriggerNameList] = js.undefined
 }
 object ListTriggersResponse {
   

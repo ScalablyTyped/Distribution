@@ -2,24 +2,22 @@ package typings.mangopay2NodejsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.address.AddressData> */
-@js.native
 trait PartialAddressData extends StObject {
   
-  var AddressLine1: js.UndefOr[String] = js.native
+  var AddressLine1: js.UndefOr[String] = js.undefined
   
-  var AddressLine2: js.UndefOr[String] = js.native
+  var AddressLine2: js.UndefOr[String] = js.undefined
   
-  var City: js.UndefOr[String] = js.native
+  var City: js.UndefOr[String] = js.undefined
   
-  var Country: js.UndefOr[String] = js.native
+  var Country: js.UndefOr[String] = js.undefined
   
-  var PostalCode: js.UndefOr[String] = js.native
+  var PostalCode: js.UndefOr[String] = js.undefined
   
-  var Region: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.undefined
 }
 object PartialAddressData {
   

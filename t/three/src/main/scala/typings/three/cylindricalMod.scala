@@ -3,7 +3,6 @@ package typings.three
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cylindricalMod {
@@ -12,12 +11,12 @@ object cylindricalMod {
   @js.native
   class Cylindrical () extends StObject {
     def this(radius: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], theta: Double) = this()
     def this(radius: Double, theta: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], theta: js.UndefOr[scala.Nothing], y: Double) = this()
-    def this(radius: js.UndefOr[scala.Nothing], theta: Double, y: Double) = this()
-    def this(radius: Double, theta: js.UndefOr[scala.Nothing], y: Double) = this()
+    def this(radius: Unit, theta: Double) = this()
     def this(radius: Double, theta: Double, y: Double) = this()
+    def this(radius: Double, theta: Unit, y: Double) = this()
+    def this(radius: Unit, theta: Double, y: Double) = this()
+    def this(radius: Unit, theta: Unit, y: Double) = this()
     
     def copy(other: Cylindrical): this.type = js.native
     

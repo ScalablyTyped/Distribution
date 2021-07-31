@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelScores extends StObject {
   
   /**
     * The model version.
     */
-  var modelVersion: js.UndefOr[ModelVersion] = js.native
+  var modelVersion: js.UndefOr[ModelVersion] = js.undefined
   
   /**
     * The model's fraud prediction scores.
     */
-  var scores: js.UndefOr[ModelPredictionMap] = js.native
+  var scores: js.UndefOr[ModelPredictionMap] = js.undefined
 }
 object ModelScores {
   

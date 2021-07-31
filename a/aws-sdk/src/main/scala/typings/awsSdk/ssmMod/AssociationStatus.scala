@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationStatus extends StObject {
   
   /**
     * A user-defined string.
     */
-  var AdditionalInfo: js.UndefOr[StatusAdditionalInfo] = js.native
+  var AdditionalInfo: js.UndefOr[StatusAdditionalInfo] = js.undefined
   
   /**
     * The date when the status changed.
     */
-  var Date: DateTime = js.native
+  var Date: DateTime
   
   /**
     * The reason for the status.
     */
-  var Message: StatusMessage = js.native
+  var Message: StatusMessage
   
   /**
     * The status.
     */
-  var Name: AssociationStatusName = js.native
+  var Name: AssociationStatusName
 }
 object AssociationStatus {
   

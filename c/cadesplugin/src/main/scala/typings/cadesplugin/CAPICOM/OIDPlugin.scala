@@ -4,21 +4,19 @@ import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OIDPlugin extends StObject {
   
-  val CAPICOM_OID_KEY_USAGE_EXTENSION: `10` = js.native
+  val CAPICOM_OID_KEY_USAGE_EXTENSION: `10`
   
-  val CAPICOM_OID_OTHER: `0` = js.native
+  val CAPICOM_OID_OTHER: `0`
 }
 object OIDPlugin {
   
   @scala.inline
-  def apply(CAPICOM_OID_KEY_USAGE_EXTENSION: `10`, CAPICOM_OID_OTHER: `0`): OIDPlugin = {
-    val __obj = js.Dynamic.literal(CAPICOM_OID_KEY_USAGE_EXTENSION = CAPICOM_OID_KEY_USAGE_EXTENSION.asInstanceOf[js.Any], CAPICOM_OID_OTHER = CAPICOM_OID_OTHER.asInstanceOf[js.Any])
+  def apply(): OIDPlugin = {
+    val __obj = js.Dynamic.literal(CAPICOM_OID_KEY_USAGE_EXTENSION = 10, CAPICOM_OID_OTHER = 0)
     __obj.asInstanceOf[OIDPlugin]
   }
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridExcelExporterCallbacks
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -24,7 +23,7 @@ trait GridExcelExporterCallbacks
     * Use args.grid to get reference to the igGrid widget.
     *
     */
-  var cellExported: js.UndefOr[js.Function] = js.native
+  var cellExported: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Cancel="true" A function to call before the cell is exported.
@@ -38,14 +37,14 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the cell.
     *
     */
-  var cellExporting: js.UndefOr[js.Function] = js.native
+  var cellExporting: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call when exporting fails.
     * Use error to obtain reference of the error object.
     *
     */
-  var error: js.UndefOr[js.Function] = js.native
+  var error: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call before the Excel file is downloaded.
@@ -56,7 +55,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel downloading the file.
     *
     */
-  var exportEnding: js.UndefOr[js.Function] = js.native
+  var exportEnding: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Cancel="true" A function to call before exporting starts.
@@ -65,7 +64,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting.
     *
     */
-  var exportStarting: js.UndefOr[js.Function] = js.native
+  var exportStarting: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call after a header cell is exported.
@@ -75,7 +74,7 @@ trait GridExcelExporterCallbacks
     * Use args.columnIndex to get the igGrid column index.
     *
     */
-  var headerCellExported: js.UndefOr[js.Function] = js.native
+  var headerCellExported: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call before the header cell is exported.
@@ -86,7 +85,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the cell.
     *
     */
-  var headerCellExporting: js.UndefOr[js.Function] = js.native
+  var headerCellExporting: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Cancel="true" A function to call after the row is exported.
@@ -98,7 +97,7 @@ trait GridExcelExporterCallbacks
     * Note: When exporting igHierarchicalGrid this callback is available only for the root grid rows.
     *
     */
-  var rowExported: js.UndefOr[js.Function] = js.native
+  var rowExported: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call before the row is exported.
@@ -111,14 +110,14 @@ trait GridExcelExporterCallbacks
     * Note: When exporting igHierarchicalGrid this callback is available only for the root grid rows.
     *
     */
-  var rowExporting: js.UndefOr[js.Function] = js.native
+  var rowExporting: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call when saving the file succeeds.
     * Use data to get the reference of saved object.
     *
     */
-  var success: js.UndefOr[js.Function] = js.native
+  var success: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call after the summary is exported.
@@ -130,7 +129,7 @@ trait GridExcelExporterCallbacks
     * Use args.xlRowIndex to get the Excel worksheet row index.
     *
     */
-  var summaryExported: js.UndefOr[js.Function] = js.native
+  var summaryExported: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function to call before the summary is exported.
@@ -143,7 +142,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the summary.
     *
     */
-  var summaryExporting: js.UndefOr[js.Function] = js.native
+  var summaryExporting: js.UndefOr[js.Function] = js.undefined
 }
 object GridExcelExporterCallbacks {
   

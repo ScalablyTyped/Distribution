@@ -2,19 +2,17 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
-  val Button: Double = js.native
+  val Button: Double
   
-  val Shift: Double = js.native
+  val Shift: Double
   
-  val x: Double = js.native
+  val x: Double
   
-  val y: Double = js.native
+  val y: Double
 }
 object Button {
   

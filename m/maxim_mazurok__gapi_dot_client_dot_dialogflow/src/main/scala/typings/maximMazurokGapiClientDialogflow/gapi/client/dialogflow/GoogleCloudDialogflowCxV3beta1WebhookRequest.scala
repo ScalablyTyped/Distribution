@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1WebhookRequest extends StObject {
   
   /** Always present. The unique identifier of the DetectIntentResponse that will be returned to the API caller. */
-  var detectIntentResponseId: js.UndefOr[String] = js.native
+  var detectIntentResponseId: js.UndefOr[String] = js.undefined
   
   /** Always present. Information about the fulfillment that triggered this webhook call. */
-  var fulfillmentInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo] = js.native
+  var fulfillmentInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo] = js.undefined
   
   /** Information about the last matched intent. */
-  var intentInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfo] = js.native
+  var intentInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfo] = js.undefined
   
   /** The list of rich message responses to present to the user. Webhook can choose to append or replace this list in WebhookResponse.fulfillment_response; */
-  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessage]] = js.native
+  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessage]] = js.undefined
   
   /** Information about page status. */
-  var pageInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1PageInfo] = js.native
+  var pageInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1PageInfo] = js.undefined
   
   /** Custom data set in QueryParameters.payload. */
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1WebhookRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1WebhookRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Information about session status. */
-  var sessionInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1SessionInfo] = js.native
+  var sessionInfo: js.UndefOr[GoogleCloudDialogflowCxV3beta1SessionInfo] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1WebhookRequest {
   
@@ -82,7 +80,7 @@ object GoogleCloudDialogflowCxV3beta1WebhookRequest {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1WebhookRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1WebhookRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Smile extends StObject {
   
   /**
     * Level of confidence in the determination.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * Boolean value that indicates whether the face is smiling or not.
     */
-  var Value: js.UndefOr[Boolean] = js.native
+  var Value: js.UndefOr[Boolean] = js.undefined
 }
 object Smile {
   

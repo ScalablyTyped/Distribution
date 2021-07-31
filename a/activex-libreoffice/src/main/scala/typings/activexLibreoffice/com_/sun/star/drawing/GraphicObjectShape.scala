@@ -38,61 +38,60 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a graphic shape. */
-@js.native
 trait GraphicObjectShape
-  extends Text
+  extends StObject
      with Shape
+     with Text
      with ShadowProperties
      with RotationDescriptor {
   
   /** If this property is set, the blue channel of this graphic shape is adjusted by the given signed percent value. */
-  var AdjustBlue: Double = js.native
+  var AdjustBlue: Double
   
   /** If this property is set, the contrast of this graphic shape is adjusted by the given signed percent value. */
-  var AdjustContrast: Double = js.native
+  var AdjustContrast: Double
   
   /** If this property is set, the green channel of this graphic shape is adjusted by the given signed percent value. */
-  var AdjustGreen: Double = js.native
+  var AdjustGreen: Double
   
   /** If this property is set, the luminance of this graphic shape is adjusted by the given signed percent value. */
-  var AdjustLuminance: Double = js.native
+  var AdjustLuminance: Double
   
   /** If this property is set, the red channel of this graphic shape is adjusted by the given signed percent value. */
-  var AdjustRed: Double = js.native
+  var AdjustRed: Double
   
   /** If this property is set, the gamma value of this graphic shape is adjusted by the given value. */
-  var Gamma: Double = js.native
+  var Gamma: Double
   
   /** This is the graphic that represents this graphic shape */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** This property selects the color mode that is used for rendering. */
-  var GraphicColorMode: ColorMode = js.native
+  var GraphicColorMode: ColorMode
   
   /** Deprecated. Use graphic property instead! This is the bitmap that represents this graphic shape. */
-  var GraphicObjectFillBitmap: XBitmap = js.native
+  var GraphicObjectFillBitmap: XBitmap
   
   /** This is an url to the stream ("in document" or linked graphic) for this graphic shape. */
-  var GraphicStreamURL: String = js.native
+  var GraphicStreamURL: String
   
   /** This is an url to the source bitmap for this graphic shape. */
-  var GraphicURL: String = js.native
+  var GraphicURL: String
   
   /**
     * This property contains a image map for this graphic.
     * @see com.sun.star.image.ImageMap
     */
-  var ImageMap: XIndexContainer = js.native
+  var ImageMap: XIndexContainer
   
   /**
     * If this property is set, the transparency value of this graphic shape is adjusted by the given unsigned percent value. 100% is fully transparent, 0%
     * is fully opaque.
     */
-  var Transparency: Double = js.native
+  var Transparency: Double
 }
 object GraphicObjectShape {
   
@@ -341,7 +340,7 @@ object GraphicObjectShape {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPosition: Point => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed],
+    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed],
     setSize: Size => Unit,
     setString: String => Unit
   ): GraphicObjectShape = {

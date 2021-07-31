@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,6 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.AnimationComponent")
 @js.native
 class AnimationComponent protected ()
-  extends typings.playcanvas.pc.AnimationComponent {
+  extends StObject
+     with typings.playcanvas.pc.AnimationComponent {
   def this(system: typings.playcanvas.pc.AnimationComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

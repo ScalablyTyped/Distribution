@@ -3,34 +3,32 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The mode of transportation, distance, and travel time estimates for a single destination.
   */
-@js.native
 trait EtaResult extends StObject {
   
   /**
     * The route distance in meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The estimated travel time in seconds, including estimated delays due to traffic.
     */
-  var expectedTravelTime: Double = js.native
+  var expectedTravelTime: Double
   
   /**
     * The estimated travel time in seconds, excluding estimated delays for traffic.
     */
-  var staticTravelTime: Double = js.native
+  var staticTravelTime: Double
   
   /**
     * The mode of transportation used to estimate the arrival time.
     */
-  var transportType: Transport = js.native
+  var transportType: Transport
 }
 object EtaResult {
   

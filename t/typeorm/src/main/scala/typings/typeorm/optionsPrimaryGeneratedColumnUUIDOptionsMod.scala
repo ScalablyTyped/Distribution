@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsPrimaryGeneratedColumnUUIDOptionsMod {
   
-  @js.native
   trait PrimaryGeneratedColumnUUIDOptions extends StObject {
     
     /**
       * Column comment. Not supported by all database types.
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Column name in the database.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object PrimaryGeneratedColumnUUIDOptions {
     

@@ -2,61 +2,59 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceOptions extends StObject {
   
-  var aggregate: js.UndefOr[js.Array[DataSourceAggregateItem]] = js.native
+  var aggregate: js.UndefOr[js.Array[DataSourceAggregateItem]] = js.undefined
   
-  var autoSync: js.UndefOr[Boolean] = js.native
+  var autoSync: js.UndefOr[Boolean] = js.undefined
   
-  var batch: js.UndefOr[Boolean] = js.native
+  var batch: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ DataSourceChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DataSourceChangeEvent, Unit]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ DataSourceErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ DataSourceErrorEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
   
-  var group: js.UndefOr[DataSourceGroupItem | js.Array[DataSourceGroupItem]] = js.native
+  var group: js.UndefOr[DataSourceGroupItem | js.Array[DataSourceGroupItem]] = js.undefined
   
-  var inPlaceSort: js.UndefOr[Boolean] = js.native
+  var inPlaceSort: js.UndefOr[Boolean] = js.undefined
   
-  var offlineStorage: js.UndefOr[js.Any] = js.native
+  var offlineStorage: js.UndefOr[js.Any] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var push: js.UndefOr[js.Function1[/* e */ DataSourcePushEvent, Unit]] = js.native
+  var push: js.UndefOr[js.Function1[/* e */ DataSourcePushEvent, Unit]] = js.undefined
   
-  var requestEnd: js.UndefOr[js.Function1[/* e */ DataSourceRequestEndEvent, Unit]] = js.native
+  var requestEnd: js.UndefOr[js.Function1[/* e */ DataSourceRequestEndEvent, Unit]] = js.undefined
   
-  var requestStart: js.UndefOr[js.Function1[/* e */ DataSourceRequestStartEvent, Unit]] = js.native
+  var requestStart: js.UndefOr[js.Function1[/* e */ DataSourceRequestStartEvent, Unit]] = js.undefined
   
-  var schema: js.UndefOr[DataSourceSchema] = js.native
+  var schema: js.UndefOr[DataSourceSchema] = js.undefined
   
-  var serverAggregates: js.UndefOr[Boolean] = js.native
+  var serverAggregates: js.UndefOr[Boolean] = js.undefined
   
-  var serverFiltering: js.UndefOr[Boolean] = js.native
+  var serverFiltering: js.UndefOr[Boolean] = js.undefined
   
-  var serverGrouping: js.UndefOr[Boolean] = js.native
+  var serverGrouping: js.UndefOr[Boolean] = js.undefined
   
-  var serverPaging: js.UndefOr[Boolean] = js.native
+  var serverPaging: js.UndefOr[Boolean] = js.undefined
   
-  var serverSorting: js.UndefOr[Boolean] = js.native
+  var serverSorting: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[js.Any] = js.native
+  var sort: js.UndefOr[js.Any] = js.undefined
   
-  var sync: js.UndefOr[js.Function1[/* e */ DataSourceEvent, Unit]] = js.native
+  var sync: js.UndefOr[js.Function1[/* e */ DataSourceEvent, Unit]] = js.undefined
   
-  var transport: js.UndefOr[DataSourceTransport] = js.native
+  var transport: js.UndefOr[DataSourceTransport] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourceOptions {
   

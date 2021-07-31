@@ -2,126 +2,124 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the Amplify app. 
     */
-  var appArn: AppArn = js.native
+  var appArn: AppArn
   
   /**
     *  The unique ID of the Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  Describes the automated branch creation configuration for the Amplify app. 
     */
-  var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.native
+  var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.undefined
   
   /**
     *  Describes the automated branch creation glob patterns for the Amplify app. 
     */
-  var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.native
+  var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.undefined
   
   /**
     *  The basic authorization credentials for branches for the Amplify app. 
     */
-  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
+  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
   /**
     *  Describes the content of the build specification (build spec) for the Amplify app. 
     */
-  var buildSpec: js.UndefOr[BuildSpec] = js.native
+  var buildSpec: js.UndefOr[BuildSpec] = js.undefined
   
   /**
     *  Creates a date and time for the Amplify app. 
     */
-  var createTime: CreateTime = js.native
+  var createTime: CreateTime
   
   /**
     * Describes the custom HTTP headers for the Amplify app.
     */
-  var customHeaders: js.UndefOr[CustomHeaders] = js.native
+  var customHeaders: js.UndefOr[CustomHeaders] = js.undefined
   
   /**
     *  Describes the custom redirect and rewrite rules for the Amplify app. 
     */
-  var customRules: js.UndefOr[CustomRules] = js.native
+  var customRules: js.UndefOr[CustomRules] = js.undefined
   
   /**
     *  The default domain for the Amplify app. 
     */
-  var defaultDomain: DefaultDomain = js.native
+  var defaultDomain: DefaultDomain
   
   /**
     *  The description for the Amplify app. 
     */
-  var description: Description = js.native
+  var description: Description
   
   /**
     *  Enables automated branch creation for the Amplify app. 
     */
-  var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.native
+  var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined
   
   /**
     *  Enables basic authorization for the Amplify app's branches. 
     */
-  var enableBasicAuth: EnableBasicAuth = js.native
+  var enableBasicAuth: EnableBasicAuth
   
   /**
     *  Enables the auto-building of branches for the Amplify app. 
     */
-  var enableBranchAutoBuild: EnableBranchAutoBuild = js.native
+  var enableBranchAutoBuild: EnableBranchAutoBuild
   
   /**
     *  Automatically disconnect a branch in the Amplify Console when you delete a branch from your Git repository. 
     */
-  var enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.native
+  var enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.undefined
   
   /**
     *  The environment variables for the Amplify app. 
     */
-  var environmentVariables: EnvironmentVariables = js.native
+  var environmentVariables: EnvironmentVariables
   
   /**
     *  The AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) of the Amplify app. 
     */
-  var iamServiceRoleArn: js.UndefOr[ServiceRoleArn] = js.native
+  var iamServiceRoleArn: js.UndefOr[ServiceRoleArn] = js.undefined
   
   /**
     *  The name for the Amplify app. 
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     *  The platform for the Amplify app. 
     */
-  var platform: Platform = js.native
+  var platform: Platform
   
   /**
     *  Describes the information about a production branch of the Amplify app. 
     */
-  var productionBranch: js.UndefOr[ProductionBranch] = js.native
+  var productionBranch: js.UndefOr[ProductionBranch] = js.undefined
   
   /**
     *  The repository for the Amplify app. 
     */
-  var repository: Repository = js.native
+  var repository: Repository
   
   /**
     *  The tag for the Amplify app. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     *  Updates the date and time for the Amplify app. 
     */
-  var updateTime: UpdateTime = js.native
+  var updateTime: UpdateTime
 }
 object App {
   

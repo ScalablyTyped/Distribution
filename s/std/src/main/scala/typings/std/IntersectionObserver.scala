@@ -2,26 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. */
-@js.native
 trait IntersectionObserver extends StObject {
   
-  def disconnect(): Unit = js.native
+  def disconnect(): Unit
   
-  def observe(target: Element): Unit = js.native
+  def observe(target: Element): Unit
   
-  val root: Element | Null = js.native
+  val root: Element | Null
   
-  val rootMargin: java.lang.String = js.native
+  val rootMargin: java.lang.String
   
-  def takeRecords(): js.Array[IntersectionObserverEntry] = js.native
+  def takeRecords(): js.Array[IntersectionObserverEntry]
   
-  val thresholds: js.Array[Double] = js.native
+  val thresholds: js.Array[Double]
   
-  def unobserve(target: Element): Unit = js.native
+  def unobserve(target: Element): Unit
 }
 object IntersectionObserver {
   
@@ -34,7 +32,7 @@ object IntersectionObserver {
     thresholds: js.Array[Double],
     unobserve: Element => Unit
   ): IntersectionObserver = {
-    val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), rootMargin = rootMargin.asInstanceOf[js.Any], takeRecords = js.Any.fromFunction0(takeRecords), thresholds = thresholds.asInstanceOf[js.Any], unobserve = js.Any.fromFunction1(unobserve))
+    val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction1(observe), rootMargin = rootMargin.asInstanceOf[js.Any], takeRecords = js.Any.fromFunction0(takeRecords), thresholds = thresholds.asInstanceOf[js.Any], unobserve = js.Any.fromFunction1(unobserve), root = null)
     __obj.asInstanceOf[IntersectionObserver]
   }
   

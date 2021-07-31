@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnDemandOptions extends StObject {
   
   /**
     * The order of the launch template overrides to use in fulfilling On-Demand capacity. If you specify lowest-price, EC2 Fleet uses price to determine the order, launching the lowest price first. If you specify prioritized, EC2 Fleet uses the priority that you assigned to each launch template override, launching the highest priority first. If you do not specify a value, EC2 Fleet defaults to lowest-price.
     */
-  var AllocationStrategy: js.UndefOr[FleetOnDemandAllocationStrategy] = js.native
+  var AllocationStrategy: js.UndefOr[FleetOnDemandAllocationStrategy] = js.undefined
   
   /**
     * The strategy for using unused Capacity Reservations for fulfilling On-Demand capacity. Supported only for fleets of type instant.
     */
-  var CapacityReservationOptions: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationOptions] = js.native
+  var CapacityReservationOptions: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationOptions] = js.undefined
   
   /**
     * The maximum amount per hour for On-Demand Instances that you're willing to pay.
     */
-  var MaxTotalPrice: js.UndefOr[String] = js.native
+  var MaxTotalPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum target capacity for On-Demand Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
     */
-  var MinTargetCapacity: js.UndefOr[Integer] = js.native
+  var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates that the fleet launches all On-Demand Instances into a single Availability Zone. Supported only for fleets of type instant.
     */
-  var SingleAvailabilityZone: js.UndefOr[Boolean] = js.native
+  var SingleAvailabilityZone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the fleet uses a single instance type to launch all On-Demand Instances in the fleet. Supported only for fleets of type instant.
     */
-  var SingleInstanceType: js.UndefOr[Boolean] = js.native
+  var SingleInstanceType: js.UndefOr[Boolean] = js.undefined
 }
 object OnDemandOptions {
   

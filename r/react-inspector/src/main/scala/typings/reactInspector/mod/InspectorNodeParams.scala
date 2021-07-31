@@ -2,21 +2,19 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectorNodeParams extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
-  var isNonenumerable: Boolean = js.native
+  var isNonenumerable: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object InspectorNodeParams {
   

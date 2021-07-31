@@ -2,19 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var total: Double = js.native
+  var total: Double
 }
 object Page {
   

@@ -2,32 +2,30 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Gamepad API interface defines an individual gamepad or other controller, allowing access to information such as button presses, axis positions, and id. */
-@js.native
 trait Gamepad extends StObject {
   
-  val axes: js.Array[Double] = js.native
+  val axes: js.Array[Double]
   
-  val buttons: js.Array[GamepadButton] = js.native
+  val buttons: js.Array[GamepadButton]
   
-  val connected: scala.Boolean = js.native
+  val connected: scala.Boolean
   
-  val hand: GamepadHand = js.native
+  val hand: GamepadHand
   
-  val hapticActuators: js.Array[GamepadHapticActuator] = js.native
+  val hapticActuators: js.Array[GamepadHapticActuator]
   
-  val id: java.lang.String = js.native
+  val id: java.lang.String
   
-  val index: Double = js.native
+  val index: Double
   
-  val mapping: GamepadMappingType = js.native
+  val mapping: GamepadMappingType
   
-  val pose: GamepadPose | Null = js.native
+  val pose: GamepadPose | Null
   
-  val timestamp: Double = js.native
+  val timestamp: Double
 }
 object Gamepad {
   
@@ -43,7 +41,7 @@ object Gamepad {
     mapping: GamepadMappingType,
     timestamp: Double
   ): Gamepad = {
-    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], hand = hand.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], hand = hand.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], pose = null)
     __obj.asInstanceOf[Gamepad]
   }
   

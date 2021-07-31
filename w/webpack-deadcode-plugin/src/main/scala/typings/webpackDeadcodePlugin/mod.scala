@@ -4,45 +4,45 @@ import typings.std.Plugin
 import typings.webpackDeadcodePlugin.anon.RequiredOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-deadcode-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends WebpackDeadcodePlugin {
+  class ^ ()
+    extends StObject
+       with WebpackDeadcodePlugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Current working directoy for patterns above. If you don't set explicitly, your webpack context will be used. */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /** Whether to run unsed export detection or not. */
-    var detectUnusedExport: js.UndefOr[Boolean] = js.native
+    var detectUnusedExport: js.UndefOr[Boolean] = js.undefined
     
     /** Whether to run unused files detection or not. */
-    var detectUnusedFiles: js.UndefOr[Boolean] = js.native
+    var detectUnusedFiles: js.UndefOr[Boolean] = js.undefined
     
     /** The array of patterns to not look at. */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Deadcode does not interrupt the compilation by default.
       * If you want to cancel the compilation, set it `true`, it throws a fatal error and stops the compilation.
       */
-    var failOnHint: js.UndefOr[Boolean] = js.native
+    var failOnHint: js.UndefOr[Boolean] = js.undefined
     
-    var outputFile: js.UndefOr[String] = js.native
+    var outputFile: js.UndefOr[String] = js.undefined
     
     /**
       * The array of patterns to look for unused files and unused export in used files.
       * Directly passed to [`fast-glob`](https://github.com/mrmlnc/fast-glob).
       */
-    var patterns: js.UndefOr[js.Array[String]] = js.native
+    var patterns: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -106,7 +106,9 @@ object mod {
   }
   
   @js.native
-  trait WebpackDeadcodePlugin extends Plugin {
+  trait WebpackDeadcodePlugin
+    extends StObject
+       with Plugin {
     
     def handleAfterEmit(
       options: RequiredOptions,

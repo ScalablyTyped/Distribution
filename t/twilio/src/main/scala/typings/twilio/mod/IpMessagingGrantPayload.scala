@@ -2,19 +2,19 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IpMessagingGrantPayload extends GrantPayload {
+trait IpMessagingGrantPayload
+  extends StObject
+     with GrantPayload {
   
-  var deployment_role_sid: String = js.native
+  var deployment_role_sid: String
   
-  var endpoint_id: String = js.native
+  var endpoint_id: String
   
-  var push_credential_sid: String = js.native
+  var push_credential_sid: String
   
-  var service_sid: String = js.native
+  var service_sid: String
 }
 object IpMessagingGrantPayload {
   

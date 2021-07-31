@@ -2,29 +2,30 @@ package typings.packageInfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(name: String): js.Promise[Package] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Package]]
+  
   @JSImport("package-info", JSImport.Namespace)
   @js.native
-  def apply(name: String): js.Promise[Package] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Package extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var description: String = js.native
+    var description: String
     
-    var homepage: String = js.native
+    var homepage: String
     
-    var license: String = js.native
+    var license: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Package {
     

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,14 +38,22 @@ sealed trait AuthMode extends StObject
 object AuthMode extends StObject {
   
   @js.native
-  sealed trait CUSTOM_FUNCTION extends AuthMode
+  sealed trait CUSTOM_FUNCTION
+    extends StObject
+       with AuthMode
   
   @js.native
-  sealed trait FULL extends AuthMode
+  sealed trait FULL
+    extends StObject
+       with AuthMode
   
   @js.native
-  sealed trait LIMITED extends AuthMode
+  sealed trait LIMITED
+    extends StObject
+       with AuthMode
   
   @js.native
-  sealed trait NONE extends AuthMode
+  sealed trait NONE
+    extends StObject
+       with AuthMode
 }

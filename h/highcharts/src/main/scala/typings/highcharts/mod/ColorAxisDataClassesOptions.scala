@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorAxisDataClassesOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ColorAxisDataClassesOptions extends StObject {
     * In styled mode, this option is ignored. Instead, use colors defined in
     * CSS.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The start of the value range that the
@@ -23,7 +21,7 @@ trait ColorAxisDataClassesOptions extends StObject {
     * The range of each `dataClass` is closed in both ends, but can be
     * overridden by the next `dataClass`.
     */
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The name of the data class as it
@@ -32,7 +30,7 @@ trait ColorAxisDataClassesOptions extends StObject {
     * legend.labelFormatter can be used. In the formatter, `this.from` and
     * `this.to` can be accessed.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The end of the value range that the
@@ -41,7 +39,7 @@ trait ColorAxisDataClassesOptions extends StObject {
     * The range of each `dataClass` is closed in both ends, but can be
     * overridden by the next `dataClass`.
     */
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object ColorAxisDataClassesOptions {
   

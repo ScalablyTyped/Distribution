@@ -2,16 +2,16 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceEndpointReference extends ResourceReference {
+trait ServiceEndpointReference
+  extends StObject
+     with ResourceReference {
   
   /**
     * The ID of the service endpoint.
     */
-  var id: String = js.native
+  var id: String
 }
 object ServiceEndpointReference {
   

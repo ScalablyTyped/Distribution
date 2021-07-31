@@ -4,25 +4,23 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseEventOptions extends StObject {
   
-  var drag: js.UndefOr[EventListener] = js.native
+  var drag: js.UndefOr[EventListener] = js.undefined
   
-  var dragEnd: js.UndefOr[EventListener] = js.native
+  var dragEnd: js.UndefOr[EventListener] = js.undefined
   
-  var dragStart: js.UndefOr[EventListener] = js.native
+  var dragStart: js.UndefOr[EventListener] = js.undefined
   
-  var mouseDown: js.UndefOr[EventListener] = js.native
+  var mouseDown: js.UndefOr[EventListener] = js.undefined
   
-  var mouseMove: js.UndefOr[EventListener] = js.native
+  var mouseMove: js.UndefOr[EventListener] = js.undefined
   
-  var mouseUp: js.UndefOr[EventListener] = js.native
+  var mouseUp: js.UndefOr[EventListener] = js.undefined
   
-  var mouseWheel: js.UndefOr[EventListener] = js.native
+  var mouseWheel: js.UndefOr[EventListener] = js.undefined
 }
 object MouseEventOptions {
   

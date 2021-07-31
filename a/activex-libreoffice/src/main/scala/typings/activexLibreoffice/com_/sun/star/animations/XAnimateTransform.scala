@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,11 +21,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AnimationTransformType.SKEWY};  Values for a skew-angle
   * @see http://www.w3.org/TR/SVG/animate.html#AnimateTransformElement
   */
-@js.native
-trait XAnimateTransform extends XAnimate {
+trait XAnimateTransform
+  extends StObject
+     with XAnimate {
   
   /** @see AnimationTransformType */
-  var TransformType: Double = js.native
+  var TransformType: Double
 }
 object XAnimateTransform {
   
@@ -62,7 +62,7 @@ object XAnimateTransform {
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[_],
+    Values: SafeArray[js.Any],
     acquire: () => Unit,
     getParent: () => XInterface,
     queryInterface: `type` => js.Any,

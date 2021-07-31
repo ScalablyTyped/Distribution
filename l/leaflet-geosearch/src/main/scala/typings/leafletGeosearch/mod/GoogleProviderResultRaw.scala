@@ -3,21 +3,19 @@ package typings.leafletGeosearch.mod
 import typings.leafletGeosearch.anon.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleProviderResultRaw extends StObject {
   
-  var address_components: js.Array[GoogleProviderResultAddressComponent] = js.native
+  var address_components: js.Array[GoogleProviderResultAddressComponent]
   
-  var formatted_address: String = js.native
+  var formatted_address: String
   
-  var geometry: Location = js.native
+  var geometry: Location
   
-  var place_id: String = js.native
+  var place_id: String
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object GoogleProviderResultRaw {
   

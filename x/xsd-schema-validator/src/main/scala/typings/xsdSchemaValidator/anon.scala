@@ -2,15 +2,13 @@ package typings.xsdSchemaValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    var file: String = js.native
+    var file: String
   }
   object File {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Messages extends StObject {
     
-    var messages: js.Array[String] = js.native
+    var messages: js.Array[String]
     
-    var result: String = js.native
+    var result: String
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Messages {
     

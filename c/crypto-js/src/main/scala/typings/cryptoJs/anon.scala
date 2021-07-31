@@ -8,19 +8,17 @@ import typings.cryptoJs.mod.Padding
 import typings.cryptoJs.mod.global.CryptoJS.lib.WordArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hasher extends StObject {
     
-    var hasher: js.UndefOr[HasherStatic] = js.native
+    var hasher: js.UndefOr[HasherStatic] = js.undefined
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var keySize: Double = js.native
+    var keySize: Double
   }
   object Hasher {
     
@@ -48,29 +46,28 @@ object anon {
   }
   
   /* Inlined std.Partial<crypto-js.crypto-js.<global>.CryptoJS.lib.CipherParams> */
-  @js.native
   trait PartialCipherParams extends StObject {
     
-    var algorithm: js.UndefOr[CipherStatic] = js.native
+    var algorithm: js.UndefOr[CipherStatic] = js.undefined
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    var ciphertext: js.UndefOr[WordArray] = js.native
+    var ciphertext: js.UndefOr[WordArray] = js.undefined
     
-    var formatter: js.UndefOr[Format_] = js.native
+    var formatter: js.UndefOr[Format_] = js.undefined
     
-    var iv: js.UndefOr[WordArray] = js.native
+    var iv: js.UndefOr[WordArray] = js.undefined
     
-    var key: js.UndefOr[WordArray] = js.native
+    var key: js.UndefOr[WordArray] = js.undefined
     
-    var mode: js.UndefOr[Mode_] = js.native
+    var mode: js.UndefOr[Mode_] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    var salt: js.UndefOr[WordArray] = js.native
+    var salt: js.UndefOr[WordArray] = js.undefined
     
     @JSName("toString")
-    var toString_FPartialCipherParams: js.UndefOr[js.Function1[/* formatter */ js.UndefOr[Format_], String]] = js.native
+    var toString_FPartialCipherParams: js.UndefOr[js.Function1[/* formatter */ js.UndefOr[Format_], String]] = js.undefined
   }
   object PartialCipherParams {
     

@@ -19,47 +19,47 @@ import typings.opossum.opossumStrings.timeout
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("opossum", JSImport.Namespace)
   @js.native
-  class ^[TI /* <: js.Array[_] */, TR] protected () extends CircuitBreaker[TI, TR] {
+  class ^[TI /* <: js.Array[js.Any] */, TR] protected () extends CircuitBreaker[TI, TR] {
     def this(action: js.Function1[/* args */ TI, js.Promise[TR]]) = this()
     def this(action: js.Function1[/* args */ TI, js.Promise[TR]], options: Options) = this()
   }
+  @JSImport("opossum", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("opossum", "isOurError")
-  @js.native
-  def isOurError(error: js.Any): Boolean = js.native
+  @scala.inline
+  def isOurError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOurError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait Bucket extends StObject {
     
-    var cacheHits: Double = js.native
+    var cacheHits: Double
     
-    var cacheMisses: Double = js.native
+    var cacheMisses: Double
     
-    var failures: Double = js.native
+    var failures: Double
     
-    var fallbacks: Double = js.native
+    var fallbacks: Double
     
-    var fires: Double = js.native
+    var fires: Double
     
-    var latencyTimes: js.Array[Double] = js.native
+    var latencyTimes: js.Array[Double]
     
-    var percentiles: NumberDictionary[Double] = js.native
+    var percentiles: NumberDictionary[Double]
     
-    var rejects: Double = js.native
+    var rejects: Double
     
-    var semaphoreRejections: Double = js.native
+    var semaphoreRejections: Double
     
-    var successes: Double = js.native
+    var successes: Double
     
-    var timeouts: Double = js.native
+    var timeouts: Double
   }
   object Bucket {
     
@@ -123,7 +123,7 @@ object mod {
   }
   
   @js.native
-  trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
+  trait CircuitBreaker[TI /* <: js.Array[js.Any] */, TR] extends EventEmitter {
     
     /**
       * Clears the cache of this CircuitBreaker
@@ -156,8 +156,8 @@ object mod {
       * This function will be executed when the circuit is fired and fails.
       * It will always be preceded by a `failure` event, and `breaker.fire` returns a rejected Promise.
       */
-    def fallback(func: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
-    def fallback(func: CircuitBreaker[js.Array[_], _]): this.type = js.native
+    def fallback(func: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+    def fallback(func: CircuitBreaker[js.Array[js.Any], js.Any]): this.type = js.native
     
     /**
       * Execute the action for this circuit.
@@ -255,7 +255,6 @@ object mod {
     val warmUp: Boolean = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -264,7 +263,7 @@ object mod {
       * first execution times out or fails, the circuit immediately opens.
       * @default false
       */
-    var allowWarmUp: js.UndefOr[Boolean] = js.native
+    var allowWarmUp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the return value of the first successful execution of the circuit's function will be cached.
@@ -272,7 +271,7 @@ object mod {
       * (The metrics cacheHit and cacheMiss reflect cache activity.)
       * @default false
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of concurrent requests allowed.
@@ -280,51 +279,51 @@ object mod {
       * to `fire()` are rejected until at least one of the current requests completes.
       * @default MAX_SAFE_INTEGER
       */
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether this circuit is enabled upon construction.
       * @default true
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional function that will be called when the circuit's function fails (returns a rejected Promise).
       * If this function returns truthy, the circuit's `failPure` statistics will not be incremented.
       * This is useful, for example, when you don't want HTTP 404 to trip the circuit, but still want to handle it as a failure case.
       */
-    var errorFilter: js.UndefOr[js.Function1[/* err */ js.Any, Boolean]] = js.native
+    var errorFilter: js.UndefOr[js.Function1[/* err */ js.Any, Boolean]] = js.undefined
     
     /**
       * The error percentage at which to open the circuit and start short-circuiting requests to fallback.
       * @default 50
       */
-    var errorThresholdPercentage: js.UndefOr[Double] = js.native
+    var errorThresholdPercentage: js.UndefOr[Double] = js.undefined
     
     /**
       * A grouping key for reporting.
       * Defaults to the computed value of `name`
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
     /**
       * The number of times the circuit can fail before opening.
       * @default 10
       * @deprecated see options.errorThresholdPercentage
       */
-    var maxFailures: js.UndefOr[Double] = js.native
+    var maxFailures: js.UndefOr[Double] = js.undefined
     
     /**
       * The circuit name to use when reporting stats.
       * Defaults to the name of the function this circuit controls then falls back to a UUID
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The time in milliseconds to wait before setting the breaker to `halfOpen` state, and trying the action again.
       * @default 30000 (30 seconds)
       */
-    var resetTimeout: js.UndefOr[Double] = js.native
+    var resetTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the number of buckets the rolling statistical window is divided into.
@@ -332,27 +331,27 @@ object mod {
       * statistical window will be 1,000 1 second snapshots in the statistical window.
       * @default 10
       */
-    var rollingCountBuckets: js.UndefOr[Double] = js.native
+    var rollingCountBuckets: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the duration of the statistical rolling window, in milliseconds.
       * This is how long Opossum keeps metrics for the circuit breaker to use and for publishing.
       * @default 10000
       */
-    var rollingCountTimeout: js.UndefOr[Double] = js.native
+    var rollingCountTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * This property indicates whether execution latencies should be tracked and calculated as percentiles.
       * If they are disabled, all summary statistics (mean, percentiles) are returned as -1.
       * @default false
       */
-    var rollingPercentilesEnabled: js.UndefOr[Boolean] = js.native
+    var rollingPercentilesEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The time in milliseconds that action should be allowed to execute before timing out.
       * @default 10000 (10 seconds)
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum number of requests within the rolling statistical window that must exist before
@@ -361,7 +360,7 @@ object mod {
       * this threshold, the circuit will remain closed.
       * @default 0
       */
-    var volumeThreshold: js.UndefOr[Double] = js.native
+    var volumeThreshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -466,10 +465,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Stats extends Bucket {
+  trait Stats
+    extends StObject
+       with Bucket {
     
-    var latencyMean: Double = js.native
+    var latencyMean: Double
   }
   object Stats {
     

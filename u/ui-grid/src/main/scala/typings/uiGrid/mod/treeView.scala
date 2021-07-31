@@ -3,12 +3,10 @@ package typings.uiGrid.mod
 import typings.uiGrid.anon.AVG_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeView {
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object treeView {
       * Defaults to true
       * @default true
       */
-    var enableTreeView: js.UndefOr[Boolean] = js.native
+    var enableTreeView: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -37,10 +35,11 @@ object treeView {
     }
   }
   
-  @js.native
-  trait IUiGridTreeViewConstants extends ISharedTreeConstants {
+  trait IUiGridTreeViewConstants
+    extends StObject
+       with ISharedTreeConstants {
     
-    var featureName: String = js.native
+    var featureName: String
   }
   object IUiGridTreeViewConstants {
     

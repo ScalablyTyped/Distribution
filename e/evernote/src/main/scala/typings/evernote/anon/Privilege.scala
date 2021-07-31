@@ -5,21 +5,19 @@ import typings.evernote.mod.Types.SharedNotePrivilegeLevel
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Privilege extends StObject {
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.native
+  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.undefined
   
-  var recipientUserId: js.UndefOr[UserID] = js.native
+  var recipientUserId: js.UndefOr[UserID] = js.undefined
   
-  var restrictions: js.UndefOr[NoteShareRelationshipRestrictions] = js.native
+  var restrictions: js.UndefOr[NoteShareRelationshipRestrictions] = js.undefined
   
-  var sharerUserId: js.UndefOr[UserID] = js.native
+  var sharerUserId: js.UndefOr[UserID] = js.undefined
 }
 object Privilege {
   

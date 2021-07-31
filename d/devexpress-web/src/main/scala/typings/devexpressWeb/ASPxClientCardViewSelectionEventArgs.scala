@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.SelectionChanged event.
   */
-@js.native
-trait ASPxClientCardViewSelectionEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientCardViewSelectionEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets whether all cards displayed within a page have been selected or unselected.
     */
-  var isAllRecordsOnPage: Boolean = js.native
+  var isAllRecordsOnPage: Boolean
   
   /**
     * Gets whether a selection has been changed on the server.
     */
-  var isChangedOnServer: Boolean = js.native
+  var isChangedOnServer: Boolean
   
   /**
     * Gets whether the card has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
   
   /**
     * Gets the visible index of the card whose selected state has been changed.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewSelectionEventArgs {
   

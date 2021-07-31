@@ -5,16 +5,14 @@ import typings.babelTypes.indexTs37Mod.Identifier_
 import typings.babelTypes.indexTs37Mod.PrivateName_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@babel/types.@babel/types/lib/index-ts3.7.MemberExpression, 'object' | 'property'> */
-@js.native
 trait PickMemberExpressionobjec extends StObject {
   
-  var `object`: Expression = js.native
+  var `object`: Expression
   
-  var property: Expression | Identifier_ | PrivateName_ = js.native
+  var property: Expression | Identifier_ | PrivateName_
 }
 object PickMemberExpressionobjec {
   

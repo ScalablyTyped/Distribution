@@ -3,27 +3,27 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.react
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReactBuildOptions extends BuildOptions[react] {
+trait ReactBuildOptions
+  extends StObject
+     with BuildOptions[react] {
   
-  var ci: js.UndefOr[Boolean] = js.native
+  var ci: js.UndefOr[Boolean] = js.undefined
   
-  var inlineRuntimeChunk: js.UndefOr[Boolean] = js.native
+  var inlineRuntimeChunk: js.UndefOr[Boolean] = js.undefined
   
-  var publicUrl: js.UndefOr[String] = js.native
+  var publicUrl: js.UndefOr[String] = js.undefined
   
-  var sourceMap: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
 }
 object ReactBuildOptions {
   
   @scala.inline
-  def apply(`--`: js.Array[String], engine: String, `type`: react): ReactBuildOptions = {
+  def apply(`--`: js.Array[String], engine: String): ReactBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("react")
     __obj.asInstanceOf[ReactBuildOptions]
   }
   

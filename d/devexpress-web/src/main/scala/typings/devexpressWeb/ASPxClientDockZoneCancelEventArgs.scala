@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDockZone.BeforeDock event.
   */
-@js.native
-trait ASPxClientDockZoneCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+trait ASPxClientDockZoneCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
   
   /**
     * Gets the panel currently being processed.
     */
-  var panel: ASPxClientDockPanel = js.native
+  var panel: ASPxClientDockPanel
 }
 object ASPxClientDockZoneCancelEventArgs {
   

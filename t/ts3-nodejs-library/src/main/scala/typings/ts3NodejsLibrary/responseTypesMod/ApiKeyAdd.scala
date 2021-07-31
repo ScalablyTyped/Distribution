@@ -4,23 +4,23 @@ import typings.ts3NodejsLibrary.enumMod.ApiKeyScope
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApiKeyAdd extends ResponseEntry {
+trait ApiKeyAdd
+  extends StObject
+     with ResponseEntry {
   
-  var apikey: String = js.native
+  var apikey: String
   
-  var cldbid: String = js.native
+  var cldbid: String
   
-  var id: String = js.native
+  var id: String
   
-  var scope: ApiKeyScope = js.native
+  var scope: ApiKeyScope
   
-  var sid: String = js.native
+  var sid: String
   
-  var timeLeft: Double = js.native
+  var timeLeft: Double
 }
 object ApiKeyAdd {
   

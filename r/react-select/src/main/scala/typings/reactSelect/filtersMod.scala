@@ -4,30 +4,30 @@ import typings.reactSelect.reactSelectStrings.any
 import typings.reactSelect.reactSelectStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filtersMod {
   
-  @JSImport("react-select/src/filters", "createFilter")
+  @JSImport("react-select/src/filters", JSImport.Namespace)
   @js.native
-  def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
-  @JSImport("react-select/src/filters", "createFilter")
-  @js.native
-  def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  @scala.inline
+  def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  
   trait Config extends StObject {
     
-    var ignoreAccents: js.UndefOr[Boolean] = js.native
+    var ignoreAccents: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
-    var matchFrom: js.UndefOr[any | start] = js.native
+    var matchFrom: js.UndefOr[any | start] = js.undefined
     
-    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.native
+    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -72,14 +72,13 @@ object filtersMod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var label: String = js.native
+    var label: String
     
-    var value: String = js.native
+    var value: String
   }
   object Option {
     

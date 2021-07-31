@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityManagerSetProtocolErrorHandlerHandlerFunction extends Object {
+trait IdentityManagerSetProtocolErrorHandlerHandlerFunction
+  extends StObject
+     with Object {
   
   /**
     * The secure resource URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
     */
-  var resourceUrl: String = js.native
+  var resourceUrl: String
   
   /**
     * ServerInfo object describing the server where the secure resource is hosted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
     */
-  var serverInfo: ServerInfo = js.native
+  var serverInfo: ServerInfo
 }
 object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
   

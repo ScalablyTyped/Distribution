@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricShortId extends StObject {
   
   /** The index of the corresponding metric in the ReportWorkItemStatusRequest. Required. */
-  var metricIndex: js.UndefOr[Double] = js.native
+  var metricIndex: js.UndefOr[Double] = js.undefined
   
   /** The service-generated short identifier for the metric. */
-  var shortId: js.UndefOr[String] = js.native
+  var shortId: js.UndefOr[String] = js.undefined
 }
 object MetricShortId {
   

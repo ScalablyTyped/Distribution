@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on this event to prevent it being propagated. Learn more about place IDs in
   * the Places API developer guide.
   */
-@js.native
-trait IconMouseEvent extends MouseEvent {
+trait IconMouseEvent
+  extends StObject
+     with MouseEvent {
   
   /**
     * The place ID of the place that was clicked.
     * This place ID can be used to query more information about the feature
     * that was clicked.
     */
-  var placeId: String = js.native
+  var placeId: String
 }
 object IconMouseEvent {
   

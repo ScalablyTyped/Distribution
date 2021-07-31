@@ -2,28 +2,26 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableStateSnapshot extends StObject {
   
   // a combine target is being dragged over by
-  var combineTargetFor: js.UndefOr[DraggableId] = js.native
+  var combineTargetFor: js.UndefOr[DraggableId] = js.undefined
   
   // the id of a draggable that you are combining with
-  var combineWith: js.UndefOr[DraggableId] = js.native
+  var combineWith: js.UndefOr[DraggableId] = js.undefined
   
-  var draggingOver: js.UndefOr[DroppableId] = js.native
+  var draggingOver: js.UndefOr[DroppableId] = js.undefined
   
-  var dropAnimation: js.UndefOr[DropAnimation] = js.native
+  var dropAnimation: js.UndefOr[DropAnimation] = js.undefined
   
-  var isDragging: Boolean = js.native
+  var isDragging: Boolean
   
-  var isDropAnimating: Boolean = js.native
+  var isDropAnimating: Boolean
   
   // What type of movement is being done: 'FLUID' or 'SNAP'
-  var mode: js.UndefOr[MovementMode] = js.native
+  var mode: js.UndefOr[MovementMode] = js.undefined
 }
 object DraggableStateSnapshot {
   

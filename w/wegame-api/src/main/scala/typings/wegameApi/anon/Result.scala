@@ -2,16 +2,14 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
   /**
     * 是否建议用户休息
     */
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object Result {
   

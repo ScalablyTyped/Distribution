@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,20 +28,32 @@ sealed trait ALPHA_MODES extends StObject
 object ALPHA_MODES extends StObject {
   
   @js.native
-  sealed trait NO_PREMULTIPLIED_ALPHA extends ALPHA_MODES
+  sealed trait NO_PREMULTIPLIED_ALPHA
+    extends StObject
+       with ALPHA_MODES
   
   @js.native
-  sealed trait NPM extends ALPHA_MODES
+  sealed trait NPM
+    extends StObject
+       with ALPHA_MODES
   
   @js.native
-  sealed trait PMA extends ALPHA_MODES
+  sealed trait PMA
+    extends StObject
+       with ALPHA_MODES
   
   @js.native
-  sealed trait PREMULTIPLIED_ALPHA extends ALPHA_MODES
+  sealed trait PREMULTIPLIED_ALPHA
+    extends StObject
+       with ALPHA_MODES
   
   @js.native
-  sealed trait PREMULTIPLY_ON_UPLOAD extends ALPHA_MODES
+  sealed trait PREMULTIPLY_ON_UPLOAD
+    extends StObject
+       with ALPHA_MODES
   
   @js.native
-  sealed trait UNPACK extends ALPHA_MODES
+  sealed trait UNPACK
+    extends StObject
+       with ALPHA_MODES
 }

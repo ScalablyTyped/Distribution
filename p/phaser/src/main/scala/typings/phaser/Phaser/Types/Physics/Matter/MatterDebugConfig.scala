@@ -2,241 +2,239 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterDebugConfig extends StObject {
   
   /**
     * The color value of constraint anchors.
     */
-  var anchorColor: js.UndefOr[Double] = js.native
+  var anchorColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the circles drawn as the constraint anchors.
     */
-  var anchorSize: js.UndefOr[Double] = js.native
+  var anchorSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the body angle / axes lines.
     */
-  var angleColor: js.UndefOr[Double] = js.native
+  var angleColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the body bounds.
     */
-  var boundsColor: js.UndefOr[Double] = js.native
+  var boundsColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the broadphase grid.
     */
-  var broadphaseColor: js.UndefOr[Double] = js.native
+  var broadphaseColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the collision points.
     */
-  var collisionColor: js.UndefOr[Double] = js.native
+  var collisionColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the fill when rendering dynamic bodies.
     */
-  var fillColor: js.UndefOr[Double] = js.native
+  var fillColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the fill when rendering dynamic bodies, a value between 0 and 1.
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of hulls when `showConvexHulls` is set.
     */
-  var hullColor: js.UndefOr[Double] = js.native
+  var hullColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of joints when `showJoint` is set.
     */
-  var jointColor: js.UndefOr[Double] = js.native
+  var jointColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The line opacity when rendering joints, a value between 0 and 1.
     */
-  var jointLineOpacity: js.UndefOr[Double] = js.native
+  var jointLineOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The line thickness when rendering joints.
     */
-  var jointLineThickness: js.UndefOr[Double] = js.native
+  var jointLineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the line stroke when rendering dynamic bodies.
     */
-  var lineColor: js.UndefOr[Double] = js.native
+  var lineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the line when rendering dynamic bodies, a value between 0 and 1.
     */
-  var lineOpacity: js.UndefOr[Double] = js.native
+  var lineOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * If rendering lines, the thickness of the line.
     */
-  var lineThickness: js.UndefOr[Double] = js.native
+  var lineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the circles drawn when rendering pin constraints.
     */
-  var pinColor: js.UndefOr[Double] = js.native
+  var pinColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the circles drawn when rendering pin constraints.
     */
-  var pinSize: js.UndefOr[Double] = js.native
+  var pinSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the rectangle drawn when rendering the body position.
     */
-  var positionColor: js.UndefOr[Double] = js.native
+  var positionColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the rectangle drawn when rendering the body position.
     */
-  var positionSize: js.UndefOr[Double] = js.native
+  var positionSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Render the bodies using a fill color.
     */
-  var renderFill: js.UndefOr[Boolean] = js.native
+  var renderFill: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the bodies using a line stroke.
     */
-  var renderLine: js.UndefOr[Boolean] = js.native
+  var renderLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fill color when rendering body sensors.
     */
-  var sensorFillColor: js.UndefOr[Double] = js.native
+  var sensorFillColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The line color when rendering body sensors.
     */
-  var sensorLineColor: js.UndefOr[Double] = js.native
+  var sensorLineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the body separation line.
     */
-  var separationColor: js.UndefOr[Double] = js.native
+  var separationColor: js.UndefOr[Double] = js.undefined
   
   /**
     * Render just a single body axis?
     */
-  var showAngleIndicator: js.UndefOr[Boolean] = js.native
+  var showAngleIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render all of the body axes?
     */
-  var showAxes: js.UndefOr[Boolean] = js.native
+  var showAxes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the dynamic bodies in the world to the Graphics object?
     */
-  var showBody: js.UndefOr[Boolean] = js.native
+  var showBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the bounds of the bodies in the world?
     */
-  var showBounds: js.UndefOr[Boolean] = js.native
+  var showBounds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the broadphase grid?
     */
-  var showBroadphase: js.UndefOr[Boolean] = js.native
+  var showBroadphase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the collision points and normals for colliding pairs.
     */
-  var showCollisions: js.UndefOr[Boolean] = js.native
+  var showCollisions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When rendering polygon bodies, render the convex hull as well?
     */
-  var showConvexHulls: js.UndefOr[Boolean] = js.native
+  var showConvexHulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When rendering bodies, render the internal edges as well?
     */
-  var showInternalEdges: js.UndefOr[Boolean] = js.native
+  var showInternalEdges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render all world constraints to the Graphics object?
     */
-  var showJoint: js.UndefOr[Boolean] = js.native
+  var showJoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the position of non-static bodies?
     */
-  var showPositions: js.UndefOr[Boolean] = js.native
+  var showPositions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render bodies or body parts that are flagged as being a sensor?
     */
-  var showSensors: js.UndefOr[Boolean] = js.native
+  var showSensors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render lines showing the separation between bodies.
     */
-  var showSeparation: js.UndefOr[Boolean] = js.native
+  var showSeparation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render any sleeping bodies (dynamic or static) in the world to the Graphics object?
     */
-  var showSleeping: js.UndefOr[Boolean] = js.native
+  var showSleeping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the static bodies in the world to the Graphics object?
     */
-  var showStaticBody: js.UndefOr[Boolean] = js.native
+  var showStaticBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the velocity of the bodies in the world?
     */
-  var showVelocity: js.UndefOr[Boolean] = js.native
+  var showVelocity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color value of the fill when rendering sleeping dynamic bodies.
     */
-  var sleepFillColor: js.UndefOr[Double] = js.native
+  var sleepFillColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the line stroke when rendering sleeping dynamic bodies.
     */
-  var sleepLineColor: js.UndefOr[Double] = js.native
+  var sleepLineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of spring constraints.
     */
-  var springColor: js.UndefOr[Double] = js.native
+  var springColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount to multiply the opacity of sleeping static bodies by.
     */
-  var staticBodySleepOpacity: js.UndefOr[Double] = js.native
+  var staticBodySleepOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the fill when rendering static bodies.
     */
-  var staticFillColor: js.UndefOr[Double] = js.native
+  var staticFillColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color value of the line stroke when rendering static bodies.
     */
-  var staticLineColor: js.UndefOr[Double] = js.native
+  var staticLineColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the body velocity line.
     */
-  var velocityColor: js.UndefOr[Double] = js.native
+  var velocityColor: js.UndefOr[Double] = js.undefined
 }
 object MatterDebugConfig {
   

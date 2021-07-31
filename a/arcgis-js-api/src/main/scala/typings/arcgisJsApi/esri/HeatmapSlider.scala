@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-drag`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeatmapSlider extends Widget_ {
+trait HeatmapSlider
+  extends StObject
+     with Widget_ {
   
   @JSName("on")
   def on_thumbchange(name: `thumb-change`, eventHandler: HeatmapSliderThumbChangeEventHandler): IHandle = js.native

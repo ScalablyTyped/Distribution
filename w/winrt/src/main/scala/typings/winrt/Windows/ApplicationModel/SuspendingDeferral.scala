@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SuspendingDeferral extends ISuspendingDeferral
+trait SuspendingDeferral
+  extends StObject
+     with ISuspendingDeferral
 object SuspendingDeferral {
   
   @scala.inline

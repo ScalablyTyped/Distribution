@@ -5,15 +5,13 @@ import typings.terminalKit.terminalKitStrings.drag
 import typings.terminalKit.terminalKitStrings.motion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mouse extends StObject {
   
-  var mouse: js.UndefOr[button | drag | motion] = js.native
+  var mouse: js.UndefOr[button | drag | motion] = js.undefined
   
-  var safe: js.UndefOr[Boolean] = js.native
+  var safe: js.UndefOr[Boolean] = js.undefined
 }
 object Mouse {
   

@@ -6,33 +6,31 @@ import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceSearchRequest extends StObject {
   
-  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+  var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   
-  var keyword: js.UndefOr[String] = js.native
+  var keyword: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[LatLng | LatLngLiteral] = js.native
+  var location: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   
-  var maxPriceLevel: js.UndefOr[Double] = js.native
+  var maxPriceLevel: js.UndefOr[Double] = js.undefined
   
-  var minPriceLevel: js.UndefOr[Double] = js.native
+  var minPriceLevel: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var openNow: js.UndefOr[Boolean] = js.native
+  var openNow: js.UndefOr[Boolean] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var rankBy: js.UndefOr[RankBy] = js.native
+  var rankBy: js.UndefOr[RankBy] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PlaceSearchRequest {
   

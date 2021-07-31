@@ -3,20 +3,20 @@ package typings.node.dnsMod
 import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LookupAllOptions extends LookupOptions {
+trait LookupAllOptions
+  extends StObject
+     with LookupOptions {
   
   @JSName("all")
-  var all_LookupAllOptions: `true` = js.native
+  var all_LookupAllOptions: `true`
 }
 object LookupAllOptions {
   
   @scala.inline
-  def apply(all: `true`): LookupAllOptions = {
-    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
+  def apply(): LookupAllOptions = {
+    val __obj = js.Dynamic.literal(all = true)
     __obj.asInstanceOf[LookupAllOptions]
   }
   

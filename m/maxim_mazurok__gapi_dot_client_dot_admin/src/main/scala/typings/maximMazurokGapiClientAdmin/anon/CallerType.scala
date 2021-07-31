@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallerType extends StObject {
   
   /** The type of actor. */
-  var callerType: js.UndefOr[String] = js.native
+  var callerType: js.UndefOr[String] = js.undefined
   
   /** The primary email address of the actor. May be absent if there is no email address associated with the actor. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Only present when callerType is KEY. Can be the consumer_key of the requestor for OAuth 2LO API requests or an identifier for robot accounts. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** The unique G Suite profile ID of the actor. May be absent if the actor is not a G Suite user. */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
 }
 object CallerType {
   

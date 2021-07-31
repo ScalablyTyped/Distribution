@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,98 +11,162 @@ sealed trait TextRangeUnit extends StObject
 object TextRangeUnit extends StObject {
   
   @js.native
-  sealed trait allCaps extends TextRangeUnit
+  sealed trait allCaps
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait bold extends TextRangeUnit
+  sealed trait bold
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait character extends TextRangeUnit
+  sealed trait character
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait characterFormat extends TextRangeUnit
+  sealed trait characterFormat
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait cluster extends TextRangeUnit
+  sealed trait cluster
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait disabled extends TextRangeUnit
+  sealed trait disabled
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait fontBound extends TextRangeUnit
+  sealed trait fontBound
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait hardParagraph extends TextRangeUnit
+  sealed trait hardParagraph
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait hidden extends TextRangeUnit
+  sealed trait hidden
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait imprint extends TextRangeUnit
+  sealed trait imprint
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait italic extends TextRangeUnit
+  sealed trait italic
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait line extends TextRangeUnit
+  sealed trait line
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait link extends TextRangeUnit
+  sealed trait link
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait linkProtected extends TextRangeUnit
+  sealed trait linkProtected
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait `object` extends TextRangeUnit
+  sealed trait `object`
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait outline extends TextRangeUnit
+  sealed trait outline
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait paragraph extends TextRangeUnit
+  sealed trait paragraph
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait paragraphFormat extends TextRangeUnit
+  sealed trait paragraphFormat
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait protectedText extends TextRangeUnit
+  sealed trait protectedText
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait revised extends TextRangeUnit
+  sealed trait revised
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait screen extends TextRangeUnit
+  sealed trait screen
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait section extends TextRangeUnit
+  sealed trait section
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait sentence extends TextRangeUnit
+  sealed trait sentence
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait shadow extends TextRangeUnit
+  sealed trait shadow
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait smallCaps extends TextRangeUnit
+  sealed trait smallCaps
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait story extends TextRangeUnit
+  sealed trait story
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait strikethrough extends TextRangeUnit
+  sealed trait strikethrough
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait subscript extends TextRangeUnit
+  sealed trait subscript
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait superscript extends TextRangeUnit
+  sealed trait superscript
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait underline extends TextRangeUnit
+  sealed trait underline
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait window extends TextRangeUnit
+  sealed trait window
+    extends StObject
+       with TextRangeUnit
   
   @js.native
-  sealed trait word extends TextRangeUnit
+  sealed trait word
+    extends StObject
+       with TextRangeUnit
 }

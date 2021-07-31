@@ -2,15 +2,13 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeInjection extends StObject {
   
-  var codeinjection_foot: js.UndefOr[Nullable[String]] = js.native
+  var codeinjection_foot: js.UndefOr[Nullable[String]] = js.undefined
   
-  var codeinjection_head: js.UndefOr[Nullable[String]] = js.native
+  var codeinjection_head: js.UndefOr[Nullable[String]] = js.undefined
 }
 object CodeInjection {
   

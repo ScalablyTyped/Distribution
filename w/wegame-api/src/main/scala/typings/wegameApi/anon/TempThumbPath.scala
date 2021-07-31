@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempThumbPath extends StObject {
   
   /**
     * 临时视频路径
     */
-  var tempThumbPath: String = js.native
+  var tempThumbPath: String
   
   /**
     * 临时封面路径
     */
-  var tempVideoPath: String = js.native
+  var tempVideoPath: String
 }
 object TempThumbPath {
   

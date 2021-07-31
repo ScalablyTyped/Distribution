@@ -3,16 +3,14 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * <p>The tags that are assigned to the identity pool.</p>
     */
-  var Tags: js.UndefOr[StringDictionary[String]] = js.native
+  var Tags: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object ListTagsForResourceResponse {
   
@@ -22,9 +20,12 @@ object ListTagsForResourceResponse {
     __obj.asInstanceOf[ListTagsForResourceResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListTagsForResourceResponse.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListTagsForResourceResponse")
   @js.native
-  def filterSensitiveLog(obj: ListTagsForResourceResponse): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ListTagsForResourceResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ListTagsForResourceResponseMutableBuilder[Self <: ListTagsForResourceResponse] (val x: Self) extends AnyVal {

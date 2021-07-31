@@ -3,19 +3,17 @@ package typings.mapboxMapboxSdk.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastKnownModification extends StObject {
   
-  var lastKnownModification: js.UndefOr[String | Double | Date] = js.native
+  var lastKnownModification: js.UndefOr[String | Double | Date] = js.undefined
   
-  var ownerId: js.UndefOr[String] = js.native
+  var ownerId: js.UndefOr[String] = js.undefined
   
-  var style: typings.mapboxMapboxSdk.stylesMod.Style = js.native
+  var style: typings.mapboxMapboxSdk.stylesMod.Style
   
-  var styleId: String = js.native
+  var styleId: String
 }
 object LastKnownModification {
   

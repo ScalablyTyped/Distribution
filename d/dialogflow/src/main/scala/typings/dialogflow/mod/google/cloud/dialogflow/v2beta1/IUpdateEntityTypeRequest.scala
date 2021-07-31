@@ -3,21 +3,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UpdateEntityTypeRequest. */
-@js.native
 trait IUpdateEntityTypeRequest extends StObject {
   
   /** UpdateEntityTypeRequest entityType */
-  var entityType: js.UndefOr[IEntityType | Null] = js.native
+  var entityType: js.UndefOr[IEntityType | Null] = js.undefined
   
   /** UpdateEntityTypeRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** UpdateEntityTypeRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IUpdateEntityTypeRequest {
   

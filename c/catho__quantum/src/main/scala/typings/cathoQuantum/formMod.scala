@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod {
@@ -26,50 +25,45 @@ object formMod {
   
   object Validations {
     
-    @JSImport("@catho/quantum/Form", "Validations.CEP")
+    @JSImport("@catho/quantum/Form", "Validations")
     @js.native
-    def CEP(params: Value): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@catho/quantum/Form", "Validations.CPF")
-    @js.native
-    def CPF(params: Value): String = js.native
-    @JSImport("@catho/quantum/Form", "Validations.CPF")
-    @js.native
-    def CPF(params: Value, cpf: String): String = js.native
+    @scala.inline
+    def CEP(params: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CEP")(params.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@catho/quantum/Form", "Validations.Date")
-    @js.native
-    def Date(params: Value): String = js.native
+    @scala.inline
+    def CPF(params: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CPF")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def CPF(params: Value, cpf: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CPF")(params.asInstanceOf[js.Any], cpf.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@catho/quantum/Form", "Validations.Email")
-    @js.native
-    def Email(params: Value): String = js.native
+    @scala.inline
+    def Date(params: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Date")(params.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@catho/quantum/Form", "Validations.MaxLength")
-    @js.native
-    def MaxLength(params: typings.cathoQuantum.anon.MaxLength): String = js.native
+    @scala.inline
+    def Email(params: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Email")(params.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@catho/quantum/Form", "Validations.MinLength")
-    @js.native
-    def MinLength(params: typings.cathoQuantum.anon.MinLength): String = js.native
+    @scala.inline
+    def MaxLength(params: typings.cathoQuantum.anon.MaxLength): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(params.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@catho/quantum/Form", "Validations.Required")
-    @js.native
-    def Required(params: Value): String = js.native
+    @scala.inline
+    def MinLength(params: typings.cathoQuantum.anon.MinLength): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def Required(params: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Required")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait FormProps extends StObject {
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var noValidate: js.UndefOr[Boolean] = js.native
+    var noValidate: js.UndefOr[Boolean] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* hasValid */ js.UndefOr[Valid], Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* hasValid */ js.UndefOr[Valid], Unit]] = js.undefined
     
     var onValidSubmit: js.UndefOr[
         js.Function1[/* values */ js.UndefOr[StringDictionary[js.UndefOr[String]]], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object FormProps {
     

@@ -3,26 +3,26 @@ package typings.arangodb
 import typings.arangodb.ArangoDB.HashAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authMod {
   
-  @JSImport("@arangodb/foxx/auth", JSImport.Namespace)
-  @js.native
-  def apply(): Authenticator = js.native
-  @JSImport("@arangodb/foxx/auth", JSImport.Namespace)
-  @js.native
-  def apply(options: AuthOptions): Authenticator = js.native
+  @scala.inline
+  def apply(): Authenticator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Authenticator]
+  @scala.inline
+  def apply(options: AuthOptions): Authenticator = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
   
+  @JSImport("@arangodb/foxx/auth", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait AuthData extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var method: String = js.native
+    var method: String
     
-    var salt: String = js.native
+    var salt: String
   }
   object AuthData {
     
@@ -46,12 +46,11 @@ object authMod {
     }
   }
   
-  @js.native
   trait AuthOptions extends StObject {
     
-    var method: js.UndefOr[HashAlgorithm] = js.native
+    var method: js.UndefOr[HashAlgorithm] = js.undefined
     
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
   }
   object AuthOptions {
     
@@ -84,7 +83,7 @@ object authMod {
     def create(password: String): AuthData = js.native
     
     def verify(): Boolean = js.native
-    def verify(hash: js.UndefOr[scala.Nothing], password: String): Boolean = js.native
+    def verify(hash: Unit, password: String): Boolean = js.native
     def verify(hash: AuthData): Boolean = js.native
     def verify(hash: AuthData, password: String): Boolean = js.native
   }

@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,18 +60,18 @@ trait XMLNode extends StObject {
     * @param boolean [FastSearchSkippingTextNodes=true]
     */
   def SelectNodes(XPath: String): XMLNodes = js.native
-  def SelectNodes(XPath: String, PrefixMapping: js.UndefOr[scala.Nothing], FastSearchSkippingTextNodes: Boolean): XMLNodes = js.native
   def SelectNodes(XPath: String, PrefixMapping: String): XMLNodes = js.native
   def SelectNodes(XPath: String, PrefixMapping: String, FastSearchSkippingTextNodes: Boolean): XMLNodes = js.native
+  def SelectNodes(XPath: String, PrefixMapping: Unit, FastSearchSkippingTextNodes: Boolean): XMLNodes = js.native
   
   /**
     * @param string [PrefixMapping='']
     * @param boolean [FastSearchSkippingTextNodes=true]
     */
   def SelectSingleNode(XPath: String): XMLNode = js.native
-  def SelectSingleNode(XPath: String, PrefixMapping: js.UndefOr[scala.Nothing], FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
   def SelectSingleNode(XPath: String, PrefixMapping: String): XMLNode = js.native
   def SelectSingleNode(XPath: String, PrefixMapping: String, FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
+  def SelectSingleNode(XPath: String, PrefixMapping: Unit, FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
   
   /** @param boolean [ClearedAutomatically=true] */
   def SetValidationError(Status: WdXMLValidationStatus, ErrorText: js.Any): Unit = js.native

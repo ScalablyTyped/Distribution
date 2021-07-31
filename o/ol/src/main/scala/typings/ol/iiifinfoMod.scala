@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.iiifMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iiifinfoMod {
   
   @JSImport("ol/format/IIIFInfo", JSImport.Default)
   @js.native
-  class default protected () extends IIIFInfo {
+  class default protected ()
+    extends StObject
+       with IIIFInfo {
     def this(imageInfo: String) = this()
     def this(imageInfo: ImageInformationResponse) = this()
   }
@@ -23,19 +24,25 @@ object iiifinfoMod {
   object Versions extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Versions with String] = js.native
+    def apply(value: String): js.UndefOr[Versions & String] = js.native
     
     @js.native
-    sealed trait VERSION1 extends Versions
-    /* "version1" */ val VERSION1: typings.ol.iiifinfoMod.Versions.VERSION1 with String = js.native
+    sealed trait VERSION1
+      extends StObject
+         with Versions
+    /* "version1" */ val VERSION1: typings.ol.iiifinfoMod.Versions.VERSION1 & String = js.native
     
     @js.native
-    sealed trait VERSION2 extends Versions
-    /* "version2" */ val VERSION2: typings.ol.iiifinfoMod.Versions.VERSION2 with String = js.native
+    sealed trait VERSION2
+      extends StObject
+         with Versions
+    /* "version2" */ val VERSION2: typings.ol.iiifinfoMod.Versions.VERSION2 & String = js.native
     
     @js.native
-    sealed trait VERSION3 extends Versions
-    /* "version3" */ val VERSION3: typings.ol.iiifinfoMod.Versions.VERSION3 with String = js.native
+    sealed trait VERSION3
+      extends StObject
+         with Versions
+    /* "version3" */ val VERSION3: typings.ol.iiifinfoMod.Versions.VERSION3 & String = js.native
   }
   
   @js.native
@@ -56,20 +63,19 @@ object iiifinfoMod {
     def setImageInfo(imageInfo: ImageInformationResponse): Unit = js.native
   }
   
-  @js.native
   trait IiifProfile extends StObject {
     
-    var formats: js.UndefOr[js.Array[String]] = js.native
+    var formats: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxArea: js.UndefOr[Double] = js.native
+    var maxArea: js.UndefOr[Double] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var qualities: js.UndefOr[js.Array[String]] = js.native
+    var qualities: js.UndefOr[js.Array[String]] = js.undefined
     
-    var supports: js.UndefOr[js.Array[String]] = js.native
+    var supports: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IiifProfile {
     
@@ -133,12 +139,11 @@ object iiifinfoMod {
     String | Double | (js.Array[Double | String | IiifProfile]) | StringDictionary[Double] | TileInfo
   ]
   
-  @js.native
   trait PreferredOptions extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[String] = js.native
+    var quality: js.UndefOr[String] = js.undefined
   }
   object PreferredOptions {
     
@@ -165,14 +170,13 @@ object iiifinfoMod {
     }
   }
   
-  @js.native
   trait SupportedFeatures extends StObject {
     
-    var formats: js.UndefOr[js.Array[String]] = js.native
+    var formats: js.UndefOr[js.Array[String]] = js.undefined
     
-    var qualities: js.UndefOr[js.Array[String]] = js.native
+    var qualities: js.UndefOr[js.Array[String]] = js.undefined
     
-    var supports: js.UndefOr[js.Array[String]] = js.native
+    var supports: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SupportedFeatures {
     
@@ -214,14 +218,13 @@ object iiifinfoMod {
     }
   }
   
-  @js.native
   trait TileInfo extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var scaleFactors: js.Array[Double] = js.native
+    var scaleFactors: js.Array[Double]
     
-    var width: Double = js.native
+    var width: Double
   }
   object TileInfo {
     

@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video Format List Response
   */
-@js.native
 trait SchemaVideoFormatsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#videoFormatsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Video format collection.
     */
-  var videoFormats: js.UndefOr[js.Array[SchemaVideoFormat]] = js.native
+  var videoFormats: js.UndefOr[js.Array[SchemaVideoFormat]] = js.undefined
 }
 object SchemaVideoFormatsListResponse {
   

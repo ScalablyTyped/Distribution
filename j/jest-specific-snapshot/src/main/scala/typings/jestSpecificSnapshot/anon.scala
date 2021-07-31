@@ -2,17 +2,15 @@ package typings.jestSpecificSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
-    def message(): String = js.native
+    def message(): String
     
-    var pass: Boolean = js.native
+    var pass: Boolean
   }
   object Message {
     

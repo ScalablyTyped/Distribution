@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.beans.XPropertySet
   * @see com.sun.star.beans.XMultiPropertySet
   */
-@js.native
-trait XTolerantMultiPropertySet extends XInterface {
+trait XTolerantMultiPropertySet
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve only those values of the specified properties which are direct values.
@@ -30,7 +30,7 @@ trait XTolerantMultiPropertySet extends XInterface {
     * @param aPropertyNames specifies the names of the properties. The property names must be sorted ascending.  If the names are not sorted the behaviour of
     * @returns a sequence of type {@link com.sun.star.beans.GetDirectPropertyTolerantResult} but only for those properties supplied whoms state is com::sun::sta
     */
-  def getDirectPropertyValuesTolerant(aPropertyNames: SeqEquiv[String]): SafeArray[GetDirectPropertyTolerantResult] = js.native
+  def getDirectPropertyValuesTolerant(aPropertyNames: SeqEquiv[String]): SafeArray[GetDirectPropertyTolerantResult]
   
   /**
     * retrieve the values of the specified properties
@@ -39,7 +39,7 @@ trait XTolerantMultiPropertySet extends XInterface {
     * @param aPropertyNames specifies the names of the properties. The property names must be sorted ascending.  If the names are not sorted the behaviour of
     * @returns a sequence of type {@link com.sun.star.beans.GetPropertyTolerantResult} for each of the properties listed in **aPropertyNames** .
     */
-  def getPropertyValuesTolerant(aPropertyNames: SeqEquiv[String]): SafeArray[GetPropertyTolerantResult] = js.native
+  def getPropertyValuesTolerant(aPropertyNames: SeqEquiv[String]): SafeArray[GetPropertyTolerantResult]
   
   /**
     * sets the values to the properties with the specified names.
@@ -48,7 +48,7 @@ trait XTolerantMultiPropertySet extends XInterface {
     * @returns An empty sequence if all properties are successful set. Otherwise for every property value that could not successfully be set an entry of the {@l
     * @throws IllegalArgumentException if the number of property names and values do not match.
     */
-  def setPropertyValuesTolerant(aPropertyNames: SeqEquiv[String], aValues: SeqEquiv[_]): SafeArray[SetPropertyTolerantFailed] = js.native
+  def setPropertyValuesTolerant(aPropertyNames: SeqEquiv[String], aValues: SeqEquiv[js.Any]): SafeArray[SetPropertyTolerantFailed]
 }
 object XTolerantMultiPropertySet {
   
@@ -59,7 +59,7 @@ object XTolerantMultiPropertySet {
     getPropertyValuesTolerant: SeqEquiv[String] => SafeArray[GetPropertyTolerantResult],
     queryInterface: `type` => js.Any,
     release: () => Unit,
-    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed]
+    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed]
   ): XTolerantMultiPropertySet = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDirectPropertyValuesTolerant = js.Any.fromFunction1(getDirectPropertyValuesTolerant), getPropertyValuesTolerant = js.Any.fromFunction1(getPropertyValuesTolerant), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValuesTolerant = js.Any.fromFunction2(setPropertyValuesTolerant))
     __obj.asInstanceOf[XTolerantMultiPropertySet]
@@ -75,6 +75,6 @@ object XTolerantMultiPropertySet {
     def setGetPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetPropertyTolerantResult]): Self = StObject.set(x, "getPropertyValuesTolerant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPropertyValuesTolerant(value: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed]): Self = StObject.set(x, "setPropertyValuesTolerant", js.Any.fromFunction2(value))
+    def setSetPropertyValuesTolerant(value: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed]): Self = StObject.set(x, "setPropertyValuesTolerant", js.Any.fromFunction2(value))
   }
 }

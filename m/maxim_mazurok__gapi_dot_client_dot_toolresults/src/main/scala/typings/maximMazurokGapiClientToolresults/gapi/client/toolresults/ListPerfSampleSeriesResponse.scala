@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPerfSampleSeriesResponse extends StObject {
   
   /** The resulting PerfSampleSeries sorted by id */
-  var perfSampleSeries: js.UndefOr[js.Array[PerfSampleSeries]] = js.native
+  var perfSampleSeries: js.UndefOr[js.Array[PerfSampleSeries]] = js.undefined
 }
 object ListPerfSampleSeriesResponse {
   

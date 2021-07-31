@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHistoryResponse extends StObject {
   
   /** List of history records. Any `messages` contained in the response will typically only have `id` and `threadId` fields populated. */
-  var history: js.UndefOr[js.Array[History]] = js.native
+  var history: js.UndefOr[js.Array[History]] = js.undefined
   
   /** The ID of the mailbox's current history record. */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** Page token to retrieve the next page of results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListHistoryResponse {
   

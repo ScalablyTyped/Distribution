@@ -4,7 +4,6 @@ import typings.playcanvas.anon.AssetPrefix
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,10 +28,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Application")
 @js.native
 class Application protected ()
-  extends typings.playcanvas.pc.Application {
+  extends StObject
+     with typings.playcanvas.pc.Application {
   def this(canvas: Element, options: AssetPrefix) = this()
 }
 object Application {
+  
+  @JSGlobal("pc.Application")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get the current application. In the case where there are multiple running
@@ -45,10 +49,8 @@ object Application {
     * @returns The running application, if any.
     */
   /* static member */
-  @JSGlobal("pc.Application.getApplication")
-  @js.native
-  def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = js.native
-  @JSGlobal("pc.Application.getApplication")
-  @js.native
-  def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = js.native
+  @scala.inline
+  def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
+  @scala.inline
+  def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
 }

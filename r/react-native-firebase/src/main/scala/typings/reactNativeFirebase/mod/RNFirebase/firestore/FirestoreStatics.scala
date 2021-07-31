@@ -12,20 +12,19 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.error_
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.silent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FirestoreStatics extends StObject {
   
-  var Blob: TypeofBlob with Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob] = js.native
+  var Blob: TypeofBlob & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob] = js.native
   
-  var FieldPath: TypeofFieldPath with (Instantiable1[
+  var FieldPath: TypeofFieldPath & (Instantiable1[
     /* segments (repeated) */ String, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldPath
   ]) = js.native
   
-  var FieldValue: TypeofFieldValue with Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue] = js.native
+  var FieldValue: TypeofFieldValue & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue] = js.native
   
   var GeoPoint: Instantiable2[
     /* latitude */ Double, 
@@ -33,7 +32,7 @@ trait FirestoreStatics extends StObject {
     typings.reactNativeFirebase.mod.RNFirebase.firestore.GeoPoint
   ] = js.native
   
-  var Timestamp: TypeofTimestamp with (Instantiable2[
+  var Timestamp: TypeofTimestamp & (Instantiable2[
     /* seconds */ Double, 
     /* nanoseconds */ Double, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.Timestamp

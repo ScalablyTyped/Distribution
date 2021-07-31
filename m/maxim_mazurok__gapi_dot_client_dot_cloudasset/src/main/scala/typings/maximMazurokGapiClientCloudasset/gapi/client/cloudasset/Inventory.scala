@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inventory extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait Inventory extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Base level operating system information for the VM. */
-  var osInfo: js.UndefOr[OsInfo] = js.native
+  var osInfo: js.UndefOr[OsInfo] = js.undefined
 }
 object Inventory {
   
@@ -37,7 +35,7 @@ object Inventory {
     def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[js.Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline

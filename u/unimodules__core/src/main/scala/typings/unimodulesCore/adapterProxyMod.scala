@@ -11,10 +11,13 @@ import typings.unimodulesReactNativeAdapter.eventEmitterMod.NativeModule
 import typings.unimodulesReactNativeAdapter.platformMod.PlatformSelect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterProxyMod {
+  
+  @JSImport("@unimodules/core/build/AdapterProxy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@unimodules/core/build/AdapterProxy", "CodedError")
   @js.native
@@ -100,7 +103,6 @@ object adapterProxyMod {
     def this(moduleName: String, propertyName: String) = this()
   }
   
-  @JSImport("@unimodules/core/build/AdapterProxy", "requireNativeViewManager")
-  @js.native
-  def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
+  @scala.inline
+  def requireNativeViewManager[P](viewName: String): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeViewManager")(viewName.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
 }

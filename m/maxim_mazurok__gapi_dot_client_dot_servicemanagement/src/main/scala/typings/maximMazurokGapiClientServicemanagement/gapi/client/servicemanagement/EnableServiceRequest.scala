@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableServiceRequest extends StObject {
   
   /**
     * Required. The identity of consumer resource which service enablement will be applied to. The Google Service Management implementation accepts the following forms: - "project:" Note:
     * this is made compatible with google.api.servicecontrol.v1.Operation.consumer_id.
     */
-  var consumerId: js.UndefOr[String] = js.native
+  var consumerId: js.UndefOr[String] = js.undefined
 }
 object EnableServiceRequest {
   

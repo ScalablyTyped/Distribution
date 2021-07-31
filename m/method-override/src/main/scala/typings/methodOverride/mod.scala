@@ -7,41 +7,45 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
-  def apply(getter: js.UndefOr[scala.Nothing], options: MethodOverrideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
-  def apply(getter: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
-  def apply(getter: String, options: MethodOverrideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(getter: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(getter.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(getter: String, options: MethodOverrideOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
   def apply(
-    getter: js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("method-override", JSImport.Namespace)
-  @js.native
+    getter: js.Function2[
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* res */ Response_[js.Any], 
+      String
+    ]
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(getter.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
   def apply(
-    getter: js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String],
+    getter: js.Function2[
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* res */ Response_[js.Any], 
+      String
+    ],
     options: MethodOverrideOptions
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(getter: Unit, options: MethodOverrideOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
+  @JSImport("method-override", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Express {
     
-    @js.native
     trait Request extends StObject {
       
-      var originalMethod: js.UndefOr[String] = js.native
+      var originalMethod: js.UndefOr[String] = js.undefined
     }
     object Request {
       
@@ -63,10 +67,9 @@ object mod {
     }
   }
   
-  @js.native
   trait MethodOverrideOptions extends StObject {
     
-    var methods: js.Array[String] = js.native
+    var methods: js.Array[String]
   }
   object MethodOverrideOptions {
     

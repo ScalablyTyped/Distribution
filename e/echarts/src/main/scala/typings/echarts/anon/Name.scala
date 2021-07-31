@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Name extends js.Object {
+trait Name extends StObject {
   
   /**
     * The format is \[start coordinate, end coordinate\],
@@ -18,7 +17,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.coord
     */
-  var coord: js.UndefOr[js.Array[_]] = js.native
+  var coord: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Style of the item.
@@ -28,7 +27,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.native
+  var itemStyle: js.UndefOr[Emphasis] = js.undefined
   
   /**
     * Label style of the item.
@@ -38,7 +37,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.label
     */
-  var label: js.UndefOr[FontFamily] = js.native
+  var label: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Name of the marker, which will display as a label.
@@ -46,7 +45,7 @@ trait Name extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specify this item is on min or max or average value.
@@ -60,7 +59,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.type
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * value of the item, not necessary.
@@ -68,7 +67,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.value
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the dimension on which min, max, average
@@ -82,7 +81,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.valueDim
     */
-  var valueDim: js.UndefOr[String] = js.native
+  var valueDim: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the dimension on which min, max, average
@@ -96,7 +95,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.valueIndex
     */
-  var valueIndex: js.UndefOr[Double] = js.native
+  var valueIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * x value on screen coordinate system, can be pixel
@@ -105,7 +104,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.x
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * y value on screen coordinate system, can be pixel
@@ -114,7 +113,7 @@ trait Name extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.y
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Name {
   
@@ -125,81 +124,69 @@ object Name {
   }
   
   @scala.inline
-  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
+  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
     
     @scala.inline
-    def setCoordVarargs(value: js.Any*): Self = this.set("coord", js.Array(value :_*))
+    def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoord(value: js.Array[_]): Self = this.set("coord", value.asInstanceOf[js.Any])
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def deleteCoord: Self = this.set("coord", js.undefined)
+    def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: Emphasis): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: FontFamily): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueDim(value: String): Self = StObject.set(x, "valueDim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValueDimUndefined: Self = StObject.set(x, "valueDim", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueIndex(value: Double): Self = StObject.set(x, "valueIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueIndexUndefined: Self = StObject.set(x, "valueIndex", js.undefined)
     
     @scala.inline
-    def setValueDim(value: String): Self = this.set("valueDim", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteValueDim: Self = this.set("valueDim", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueIndex(value: Double): Self = this.set("valueIndex", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteValueIndex: Self = this.set("valueIndex", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

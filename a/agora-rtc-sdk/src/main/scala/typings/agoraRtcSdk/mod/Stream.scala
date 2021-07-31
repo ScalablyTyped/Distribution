@@ -24,7 +24,6 @@ import typings.agoraRtcSdk.anon.LighteningContrastLevel
 import typings.agoraRtcSdk.anon.SoundId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -320,9 +319,9 @@ trait Stream extends StObject {
     * @param onFailure The callback when the method fails.
     */
   def init(): Unit = js.native
-  def init(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
+  def init(onSuccess: Unit, onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   
   /**
     * Returns Whether the Stream is Playing
@@ -512,7 +511,7 @@ trait Stream extends StObject {
   def play(HTMLElementID: String): Unit = js.native
   def play(
     HTMLElementID: String,
-    option: js.UndefOr[scala.Nothing],
+    option: Unit,
     callback: js.Function1[/* err */ Null | StreamPlayError, Unit]
   ): Unit = js.native
   def play(HTMLElementID: String, option: Fit): Unit = js.native
@@ -650,15 +649,15 @@ trait Stream extends StObject {
     * - `"NO_STREAM_FOUND"`: The local stream object is not found.
     */
   def replaceTrack(MediaStreamTrack: MediaStreamTrack): Unit = js.native
-  def replaceTrack(
-    MediaStreamTrack: MediaStreamTrack,
-    onSuccess: js.UndefOr[scala.Nothing],
-    onFailure: js.Function1[/* err */ String, Unit]
-  ): Unit = js.native
   def replaceTrack(MediaStreamTrack: MediaStreamTrack, onSuccess: js.Function0[Unit]): Unit = js.native
   def replaceTrack(
     MediaStreamTrack: MediaStreamTrack,
     onSuccess: js.Function0[Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def replaceTrack(
+    MediaStreamTrack: MediaStreamTrack,
+    onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   
@@ -669,7 +668,7 @@ trait Stream extends StObject {
     *
     * This method needs to be triggered by a user gesture. See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for more information.
     */
-  def resume(): js.Promise[_] = js.native
+  def resume(): js.Promise[js.Any] = js.native
   
   /**
     * Resumes playing all audio effects.
@@ -738,13 +737,9 @@ trait Stream extends StObject {
     * @param onFailure The callback when the method fails.
     */
   def setAudioOutput(deviceId: String): Unit = js.native
-  def setAudioOutput(
-    deviceId: String,
-    onSuccess: js.UndefOr[scala.Nothing],
-    onFailure: js.Function1[/* err */ String, Unit]
-  ): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  def setAudioOutput(deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   
   @JSName("setAudioProfile")
   def setAudioProfile_highquality(profile: high_quality): Unit = js.native
@@ -1083,13 +1078,6 @@ trait Stream extends StObject {
   @JSName("switchDevice")
   def switchDevice_audio(`type`: audio, deviceId: String): Unit = js.native
   @JSName("switchDevice")
-  def switchDevice_audio(
-    `type`: audio,
-    deviceId: String,
-    onSuccess: js.UndefOr[scala.Nothing],
-    onFailure: js.Function1[/* err */ String, Unit]
-  ): Unit = js.native
-  @JSName("switchDevice")
   def switchDevice_audio(`type`: audio, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   @JSName("switchDevice")
   def switchDevice_audio(
@@ -1099,14 +1087,9 @@ trait Stream extends StObject {
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   @JSName("switchDevice")
-  def switchDevice_video(`type`: video, deviceId: String): Unit = js.native
+  def switchDevice_audio(`type`: audio, deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   @JSName("switchDevice")
-  def switchDevice_video(
-    `type`: video,
-    deviceId: String,
-    onSuccess: js.UndefOr[scala.Nothing],
-    onFailure: js.Function1[/* err */ String, Unit]
-  ): Unit = js.native
+  def switchDevice_video(`type`: video, deviceId: String): Unit = js.native
   @JSName("switchDevice")
   def switchDevice_video(`type`: video, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   @JSName("switchDevice")
@@ -1116,6 +1099,8 @@ trait Stream extends StObject {
     onSuccess: js.Function0[Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
+  @JSName("switchDevice")
+  def switchDevice_video(`type`: video, deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   
   /**
     * Releases a specified preloaded audio effect from the memory.

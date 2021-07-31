@@ -3,13 +3,13 @@ package typings.next.anon
 import typings.next.mod.GetServerSidePropsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PropsP[P] extends GetServerSidePropsResult[P] {
+trait PropsP[P]
+  extends StObject
+     with GetServerSidePropsResult[P] {
   
-  var props: P = js.native
+  var props: P
 }
 object PropsP {
   
@@ -20,7 +20,7 @@ object PropsP {
   }
   
   @scala.inline
-  implicit class PropsPMutableBuilder[Self <: PropsP[_], P] (val x: Self with PropsP[P]) extends AnyVal {
+  implicit class PropsPMutableBuilder[Self <: PropsP[?], P] (val x: Self & PropsP[P]) extends AnyVal {
     
     @scala.inline
     def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])

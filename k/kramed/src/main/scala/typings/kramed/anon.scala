@@ -7,17 +7,15 @@ import typings.kramed.mod.KramedParser
 import typings.kramed.mod.KramedRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: String = js.native
+    var align: String
     
-    var header: Boolean = js.native
+    var header: Boolean
   }
   object Align {
     
@@ -39,8 +37,12 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable0[KramedRenderer]
+  trait Instantiable
+    extends StObject
+       with Instantiable0[KramedRenderer]
   
   @js.native
-  trait InstantiableKramedParser extends Instantiable1[/* options */ KramedOptions, KramedParser]
+  trait InstantiableKramedParser
+    extends StObject
+       with Instantiable1[/* options */ KramedOptions, KramedParser]
 }

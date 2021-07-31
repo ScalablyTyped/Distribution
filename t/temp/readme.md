@@ -10,9 +10,9 @@ Temporary files and directories
 | ------------------ | :-------------: |
 | Full name          | temp |
 | Keywords           | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
-| # releases         | 4 |
-| # dependents       | 1208 |
-| # downloads        | 91124737 |
+| # releases         | 5 |
+| # dependents       | 1252 |
+| # downloads        | 109952080 |
 | # stars            | 27 |
 
 ## Links

@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIAMPolicyAssignmentRequest extends StObject {
   
   /**
     * The name of the assignment, also called a rule. This name must be unique within an AWS account.
     */
-  var AssignmentName: IAMPolicyAssignmentName = js.native
+  var AssignmentName: IAMPolicyAssignmentName
   
   /**
     * The status of the assignment. Possible values are as follows:    ENABLED - Anything specified in this assignment is used when creating the data source.    DISABLED - This assignment isn't used when creating the data source.    DRAFT - This assignment is an unfinished draft and isn't used when creating the data source.  
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
     * The ID of the AWS account that contains the IAM policy assignment. 
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The QuickSight users, groups, or both that you want to assign the policy to.
     */
-  var Identities: js.UndefOr[IdentityMap] = js.native
+  var Identities: js.UndefOr[IdentityMap] = js.undefined
   
   /**
     * The namespace of the assignment.
     */
-  var Namespace: typings.awsSdk.quicksightMod.Namespace = js.native
+  var Namespace: typings.awsSdk.quicksightMod.Namespace
   
   /**
     * The ARN for the IAM policy to apply to the QuickSight users and groups specified in this assignment.
     */
-  var PolicyArn: js.UndefOr[Arn] = js.native
+  var PolicyArn: js.UndefOr[Arn] = js.undefined
 }
 object UpdateIAMPolicyAssignmentRequest {
   

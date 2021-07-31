@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FederatedAuthenticationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM SAML identity provider.
     */
-  var SAMLProviderArn: js.UndefOr[String] = js.native
+  var SAMLProviderArn: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM SAML identity provider for the self-service portal.
     */
-  var SelfServiceSAMLProviderArn: js.UndefOr[String] = js.native
+  var SelfServiceSAMLProviderArn: js.UndefOr[String] = js.undefined
 }
 object FederatedAuthenticationRequest {
   

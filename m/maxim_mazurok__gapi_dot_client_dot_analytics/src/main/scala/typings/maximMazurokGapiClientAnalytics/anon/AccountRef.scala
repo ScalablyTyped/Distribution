@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientAnalytics.anon
 import typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.ProfileRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRef extends StObject {
   
   /** Account for this link. */
-  var accountRef: js.UndefOr[typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.AccountRef] = js.native
+  var accountRef: js.UndefOr[typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.AccountRef] = js.undefined
   
   /** View (Profile) for this link. */
-  var profileRef: js.UndefOr[ProfileRef] = js.native
+  var profileRef: js.UndefOr[ProfileRef] = js.undefined
   
   /** Web property for this link. */
-  var webPropertyRef: js.UndefOr[typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.WebPropertyRef] = js.native
+  var webPropertyRef: js.UndefOr[typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.WebPropertyRef] = js.undefined
 }
 object AccountRef {
   

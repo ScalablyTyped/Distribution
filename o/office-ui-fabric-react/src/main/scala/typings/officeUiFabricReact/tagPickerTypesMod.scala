@@ -10,19 +10,17 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagPickerTypesMod {
   
-  @js.native
   trait ITag extends StObject {
     
     /** Unique key for the item. */
-    var key: String | Double = js.native
+    var key: String | Double
     
     /** Name of the item. */
-    var name: String = js.native
+    var name: String
   }
   object ITag {
     
@@ -43,20 +41,21 @@ object tagPickerTypesMod {
     }
   }
   
-  @js.native
-  trait ITagItemProps extends IPickerItemProps[ITag] {
+  trait ITagItemProps
+    extends StObject
+       with IPickerItemProps[ITag] {
     
     /**
       * Enable or not focus on TagItem when TagPicker is disabled.
       * @defaultvalue false
       */
-    var enableTagFocusInDisabledPicker: js.UndefOr[Boolean] = js.native
+    var enableTagFocusInDisabledPicker: js.UndefOr[Boolean] = js.undefined
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ITagItemStyleProps, ITagItemStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ITagItemStyleProps, ITagItemStyles]] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ITagItemProps {
     
@@ -94,16 +93,15 @@ object tagPickerTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker.types.ITagItemProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker.types.ITagItemProps, 'className' | 'selected' | 'disabled'> & {} */
-  @js.native
   trait ITagItemStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ITagItemStyleProps {
     
@@ -139,17 +137,16 @@ object tagPickerTypesMod {
     }
   }
   
-  @js.native
   trait ITagItemStyles extends StObject {
     
     /** Refers to the cancel action button on a picked TagItem. */
-    var close: IStyle = js.native
+    var close: IStyle
     
     /** Root element of picked TagItem */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** Refers to the text element of the TagItem already picked. */
-    var text: IStyle = js.native
+    var text: IStyle
   }
   object ITagItemStyles {
     
@@ -191,14 +188,15 @@ object tagPickerTypesMod {
     }
   }
   
-  @js.native
-  trait ITagItemSuggestionProps extends AllHTMLAttributes[HTMLElement] {
+  trait ITagItemSuggestionProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles]] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ITagItemSuggestionProps {
     
@@ -229,12 +227,11 @@ object tagPickerTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker.types.ITagItemSuggestionProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker.types.ITagItemSuggestionProps, 'className'> & {} */
-  @js.native
   trait ITagItemSuggestionStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ITagItemSuggestionStyleProps {
     
@@ -258,11 +255,10 @@ object tagPickerTypesMod {
     }
   }
   
-  @js.native
   trait ITagItemSuggestionStyles extends StObject {
     
     /** Refers to the text element of the TagItemSuggestion */
-    var suggestionTextOverflow: js.UndefOr[IStyle] = js.native
+    var suggestionTextOverflow: js.UndefOr[IStyle] = js.undefined
   }
   object ITagItemSuggestionStyles {
     

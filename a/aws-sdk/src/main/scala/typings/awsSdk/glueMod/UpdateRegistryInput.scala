@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRegistryInput extends StObject {
   
   /**
     * A description of the registry. If description is not provided, this field will not be updated.
     */
-  var Description: DescriptionString = js.native
+  var Description: DescriptionString
   
   /**
     * This is a wrapper structure that may contain the registry name and Amazon Resource Name (ARN).
     */
-  var RegistryId: typings.awsSdk.glueMod.RegistryId = js.native
+  var RegistryId: typings.awsSdk.glueMod.RegistryId
 }
 object UpdateRegistryInput {
   

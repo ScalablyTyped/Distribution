@@ -2,17 +2,15 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorHSL extends StObject {
   
-  var h: NumericValueRef = js.native
+  var h: NumericValueRef
   
-  var l: NumericValueRef = js.native
+  var l: NumericValueRef
   
-  var s: NumericValueRef = js.native
+  var s: NumericValueRef
 }
 object ColorHSL {
   

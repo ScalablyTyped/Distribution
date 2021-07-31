@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimedMetadataInsertion extends StObject {
   
   /**
     * Id3Insertions contains the array of Id3Insertion instances.
     */
-  var Id3Insertions: js.UndefOr[listOfId3Insertion] = js.native
+  var Id3Insertions: js.UndefOr[listOfId3Insertion] = js.undefined
 }
 object TimedMetadataInsertion {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,18 +14,17 @@ object mod extends Shortcut {
   
   type Calc = Plugin_[Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var mediaQueries: js.UndefOr[Boolean] = js.native
+    var mediaQueries: js.UndefOr[Boolean] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
-    var selectors: js.UndefOr[Boolean] = js.native
+    var selectors: js.UndefOr[Boolean] = js.undefined
     
-    var warnWhenCannotResolve: js.UndefOr[Boolean] = js.native
+    var warnWhenCannotResolve: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

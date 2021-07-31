@@ -10,18 +10,16 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseSelectedItemsListTypesMod {
   
-  @js.native
   trait IBaseSelectedItemsList[T] extends StObject {
     
-    def addItems(items: js.Array[T]): Unit = js.native
+    def addItems(items: js.Array[T]): Unit
     
     /** Gets the current value of the input. */
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
   }
   object IBaseSelectedItemsList {
     
@@ -32,7 +30,7 @@ object baseSelectedItemsListTypesMod {
     }
     
     @scala.inline
-    implicit class IBaseSelectedItemsListMutableBuilder[Self <: IBaseSelectedItemsList[_], T] (val x: Self with IBaseSelectedItemsList[T]) extends AnyVal {
+    implicit class IBaseSelectedItemsListMutableBuilder[Self <: IBaseSelectedItemsList[?], T] (val x: Self & IBaseSelectedItemsList[T]) extends AnyVal {
       
       @scala.inline
       def setAddItems(value: js.Array[T] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
@@ -48,76 +46,76 @@ object baseSelectedItemsListTypesMod {
     }
   }
   
-  @js.native
   trait IBaseSelectedItemsListProps[T]
-    extends ClassAttributes[js.Any] {
+    extends StObject
+       with ClassAttributes[js.Any] {
     
     /**
       * A callback on whether this item can be deleted
       */
-    var canRemoveItem: js.UndefOr[js.Function1[/* item */ T, Boolean]] = js.native
+    var canRemoveItem: js.UndefOr[js.Function1[/* item */ T, Boolean]] = js.undefined
     
-    var componentRef: js.UndefOr[IRefObject[IBaseSelectedItemsList[T]]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IBaseSelectedItemsList[T]]] = js.undefined
     
     /**
       * Function that specifies how arbitrary text entered into the well is handled.
       */
     var createGenericItem: js.UndefOr[
         js.Function2[/* input */ String, /* ValidationState */ ValidationState, ISuggestionModel[T]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Initial items that have already been selected and should appear in the people picker.
       */
-    var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.native
+    var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * A callback for when the selected list of items changes.
       */
-    var onChange: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Array[T]], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Array[T]], Unit]] = js.undefined
     
     /**
       * A callback for when items are copied
       */
-    var onCopyItems: js.UndefOr[js.Function1[/* items */ js.Array[T], String]] = js.native
+    var onCopyItems: js.UndefOr[js.Function1[/* items */ js.Array[T], String]] = js.undefined
     
     /**
       * A callback when an item is deleted
       * @deprecated Use `onItemsDeleted` instead.
       */
-    var onItemDeleted: js.UndefOr[js.Function1[/* deletedItem */ T, Unit]] = js.native
+    var onItemDeleted: js.UndefOr[js.Function1[/* deletedItem */ T, Unit]] = js.undefined
     
     /**
       * A callback to process a selection after the user selects something from the picker.
       */
-    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.native
+    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
     
     /**
       * A callback when and item or items are deleted
       */
-    var onItemsDeleted: js.UndefOr[js.Function1[/* deletedItems */ js.Array[T], Unit]] = js.native
+    var onItemsDeleted: js.UndefOr[js.Function1[/* deletedItems */ js.Array[T], Unit]] = js.undefined
     
     /**
       * Function that specifies how the selected item will appear.
       */
-    var onRenderItem: js.UndefOr[js.Function1[/* props */ ISelectedItemProps[T], Element]] = js.native
+    var onRenderItem: js.UndefOr[js.Function1[/* props */ ISelectedItemProps[T], Element]] = js.undefined
     
     /**
       * Aria label for the 'X' button in the selected item component.
       * @defaultvalue ''
       */
-    var removeButtonAriaLabel: js.UndefOr[String] = js.native
+    var removeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The items that the base picker should currently display as selected.
       * If this is provided then the picker will act as a controlled component.
       */
-    var selectedItems: js.UndefOr[js.Array[T]] = js.native
+    var selectedItems: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * The selection
       */
-    var selection: js.UndefOr[Selection[IObjectWithKey]] = js.native
+    var selection: js.UndefOr[Selection[IObjectWithKey]] = js.undefined
   }
   object IBaseSelectedItemsListProps {
     
@@ -128,7 +126,7 @@ object baseSelectedItemsListTypesMod {
     }
     
     @scala.inline
-    implicit class IBaseSelectedItemsListPropsMutableBuilder[Self <: IBaseSelectedItemsListProps[_], T] (val x: Self with IBaseSelectedItemsListProps[T]) extends AnyVal {
+    implicit class IBaseSelectedItemsListPropsMutableBuilder[Self <: IBaseSelectedItemsListProps[?], T] (val x: Self & IBaseSelectedItemsListProps[T]) extends AnyVal {
       
       @scala.inline
       def setCanRemoveItem(value: /* item */ T => Boolean): Self = StObject.set(x, "canRemoveItem", js.Any.fromFunction1(value))
@@ -219,10 +217,11 @@ object baseSelectedItemsListTypesMod {
     }
   }
   
-  @js.native
-  trait ISelectedItemProps[T] extends IPickerItemProps[T] {
+  trait ISelectedItemProps[T]
+    extends StObject
+       with IPickerItemProps[T] {
     
-    def onCopyItem(item: T): Unit = js.native
+    def onCopyItem(item: T): Unit
   }
   object ISelectedItemProps {
     
@@ -234,7 +233,7 @@ object baseSelectedItemsListTypesMod {
     }
     
     @scala.inline
-    implicit class ISelectedItemPropsMutableBuilder[Self <: ISelectedItemProps[_], T] (val x: Self with ISelectedItemProps[T]) extends AnyVal {
+    implicit class ISelectedItemPropsMutableBuilder[Self <: ISelectedItemProps[?], T] (val x: Self & ISelectedItemProps[T]) extends AnyVal {
       
       @scala.inline
       def setOnCopyItem(value: T => Unit): Self = StObject.set(x, "onCopyItem", js.Any.fromFunction1(value))

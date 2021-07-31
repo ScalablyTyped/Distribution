@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UtteranceList extends StObject {
   
   /**
     * The version of the bot that processed the list.
     */
-  var botVersion: js.UndefOr[Version] = js.native
+  var botVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * One or more UtteranceData objects that contain information about the utterances that have been made to a bot. The maximum number of object is 100.
     */
-  var utterances: js.UndefOr[ListOfUtterance] = js.native
+  var utterances: js.UndefOr[ListOfUtterance] = js.undefined
 }
 object UtteranceList {
   

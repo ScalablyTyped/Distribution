@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapCheckBoxEventMap extends BootstrapClientEditEventMap {
+trait BootstrapCheckBoxEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var checkedChanged: ProcessingModeEventArgs = js.native
+  var checkedChanged: ProcessingModeEventArgs
 }
 object BootstrapCheckBoxEventMap {
   

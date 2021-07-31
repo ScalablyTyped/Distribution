@@ -2,10 +2,8 @@ package typings.paypalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayPalConfiguration extends StObject {
   
   /**
@@ -14,23 +12,23 @@ trait PayPalConfiguration extends StObject {
     * Future payments (via PayPalFuturePaymentViewController) always use PayPal.
     * Defaults to true.
     */
-  var acceptCreditCards: Boolean = js.native
+  var acceptCreditCards: Boolean
   
   /**
     * Will be overridden by email used in most recent PayPal login.
     */
-  var defaultUserEmail: String = js.native
+  var defaultUserEmail: String
   
   /**
     * Will be overridden by phone country code used in most recent PayPal login
     */
-  var defaultUserPhoneCountryCode: String = js.native
+  var defaultUserPhoneCountryCode: String
   
   /**
     * Will be overridden by phone number used in most recent PayPal login.
     * @note If you set defaultUserPhoneNumber, be sure to also set defaultUserPhoneCountryCode.
     */
-  var defaultUserPhoneNumber: String = js.native
+  var defaultUserPhoneNumber: String
   
   /**
     * Normally, the SDK blurs the screen when the app is backgrounded,
@@ -38,7 +36,7 @@ trait PayPalConfiguration extends StObject {
     * If your app already does its own blurring upon backgrounding, you might choose to disable this.
     * Defaults to false.
     */
-  var disableBlurWhenBackgrounding: Boolean = js.native
+  var disableBlurWhenBackgrounding: Boolean
   
   /**
     * Sandbox credentials can be difficult to type on a mobile device. Setting this flag to true will
@@ -47,7 +45,7 @@ trait PayPalConfiguration extends StObject {
     * This setting will have no effect if the operation mode is production.
     * Defaults to false.
     */
-  var forceDefaultsInSandbox: Boolean = js.native
+  var forceDefaultsInSandbox: Boolean
   
   /**
     * If not set, or if set to nil, defaults to the device's current language setting.
@@ -63,25 +61,25 @@ trait PayPalConfiguration extends StObject {
     * These localizations are currently included:
     * da,de,en,en_AU,en_GB,en_SV,es,es_MX,fr,he,it,ja,ko,nb,nl,pl,pt,pt_BR,ru,sv,tr,zh-Hans,zh-Hant_HK,zh-Hant_TW.
     */
-  var languageOrLocale: String = js.native
+  var languageOrLocale: String
   
   /**
     * Your company name, as it should be displayed to the user
     * when requesting consent via a PayPalFuturePaymentViewController.
     */
-  var merchantName: String = js.native
+  var merchantName: String
   
   /**
     * URL of your company's privacy policy, which will be offered to the user
     * when requesting consent via a PayPalFuturePaymentViewController.
     */
-  var merchantPrivacyPolicyURL: String = js.native
+  var merchantPrivacyPolicyURL: String
   
   /**
     * URL of your company's user agreement, which will be offered to the user
     * when requesting consent via a PayPalFuturePaymentViewController.
     */
-  var merchantUserAgreementURL: String = js.native
+  var merchantUserAgreementURL: String
   
   /**
     * For single payments, options for the shipping address.
@@ -99,13 +97,13 @@ trait PayPalConfiguration extends StObject {
     *
     * Defaults to 0 (PayPalShippingAddressOptionNone).
     */
-  var payPalShippingAddressOption: Double = js.native
+  var payPalShippingAddressOption: Double
   
   /**
     * If you will present the SDK's view controller within a popover, then set this property to true.
     * Defaults to false. (iOS only)
     */
-  var presentingInPopover: Boolean = js.native
+  var presentingInPopover: Boolean
   
   /**
     * If set to true, then if the user pays via their PayPal account,
@@ -119,17 +117,17 @@ trait PayPalConfiguration extends StObject {
     *
     * Defaults to true.
     */
-  var rememberUser: Boolean = js.native
+  var rememberUser: Boolean
   
   /**
     * Password to use for sandbox if 'forceDefaultsInSandbox' is set.
     */
-  var sandboxUserPassword: String = js.native
+  var sandboxUserPassword: String
   
   /**
     * PIN to use for sandbox if 'forceDefaultsInSandbox' is set.
     */
-  var sandboxUserPin: String = js.native
+  var sandboxUserPin: String
 }
 object PayPalConfiguration {
   

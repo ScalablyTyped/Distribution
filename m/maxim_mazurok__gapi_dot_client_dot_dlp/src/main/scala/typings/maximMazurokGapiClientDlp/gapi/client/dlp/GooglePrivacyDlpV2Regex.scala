@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Regex extends StObject {
   
   /** The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included. */
-  var groupIndexes: js.UndefOr[js.Array[Double]] = js.native
+  var groupIndexes: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub. */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2Regex {
   

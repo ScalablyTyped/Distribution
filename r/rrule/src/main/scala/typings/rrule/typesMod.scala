@@ -4,10 +4,13 @@ import typings.rrule.weekdayMod.Weekday
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
+  
+  @JSImport("rrule/dist/esm/src/types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Frequency extends StObject
@@ -16,40 +19,53 @@ object typesMod {
   object Frequency extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Frequency with Double] = js.native
+    def apply(value: Double): js.UndefOr[Frequency & Double] = js.native
     
     @js.native
-    sealed trait DAILY extends Frequency
-    /* 3 */ val DAILY: typings.rrule.typesMod.Frequency.DAILY with Double = js.native
+    sealed trait DAILY
+      extends StObject
+         with Frequency
+    /* 3 */ val DAILY: typings.rrule.typesMod.Frequency.DAILY & Double = js.native
     
     @js.native
-    sealed trait HOURLY extends Frequency
-    /* 4 */ val HOURLY: typings.rrule.typesMod.Frequency.HOURLY with Double = js.native
+    sealed trait HOURLY
+      extends StObject
+         with Frequency
+    /* 4 */ val HOURLY: typings.rrule.typesMod.Frequency.HOURLY & Double = js.native
     
     @js.native
-    sealed trait MINUTELY extends Frequency
-    /* 5 */ val MINUTELY: typings.rrule.typesMod.Frequency.MINUTELY with Double = js.native
+    sealed trait MINUTELY
+      extends StObject
+         with Frequency
+    /* 5 */ val MINUTELY: typings.rrule.typesMod.Frequency.MINUTELY & Double = js.native
     
     @js.native
-    sealed trait MONTHLY extends Frequency
-    /* 1 */ val MONTHLY: typings.rrule.typesMod.Frequency.MONTHLY with Double = js.native
+    sealed trait MONTHLY
+      extends StObject
+         with Frequency
+    /* 1 */ val MONTHLY: typings.rrule.typesMod.Frequency.MONTHLY & Double = js.native
     
     @js.native
-    sealed trait SECONDLY extends Frequency
-    /* 6 */ val SECONDLY: typings.rrule.typesMod.Frequency.SECONDLY with Double = js.native
+    sealed trait SECONDLY
+      extends StObject
+         with Frequency
+    /* 6 */ val SECONDLY: typings.rrule.typesMod.Frequency.SECONDLY & Double = js.native
     
     @js.native
-    sealed trait WEEKLY extends Frequency
-    /* 2 */ val WEEKLY: typings.rrule.typesMod.Frequency.WEEKLY with Double = js.native
+    sealed trait WEEKLY
+      extends StObject
+         with Frequency
+    /* 2 */ val WEEKLY: typings.rrule.typesMod.Frequency.WEEKLY & Double = js.native
     
     @js.native
-    sealed trait YEARLY extends Frequency
-    /* 0 */ val YEARLY: typings.rrule.typesMod.Frequency.YEARLY with Double = js.native
+    sealed trait YEARLY
+      extends StObject
+         with Frequency
+    /* 0 */ val YEARLY: typings.rrule.typesMod.Frequency.YEARLY & Double = js.native
   }
   
-  @JSImport("rrule/dist/esm/src/types", "freqIsDailyOrGreater")
-  @js.native
-  def freqIsDailyOrGreater(freq: Frequency): Boolean = js.native
+  @scala.inline
+  def freqIsDailyOrGreater(freq: Frequency): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("freqIsDailyOrGreater")(freq.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rrule.weekdayMod.WeekdayStr
@@ -60,52 +76,51 @@ object typesMod {
   
   type IterResultType[M /* <: QueryMethodTypes */] = Date | Null | js.Array[Date]
   
-  @js.native
   trait Options extends StObject {
     
-    var byeaster: Double | Null = js.native
+    var byeaster: Double | Null
     
-    var byhour: Double | js.Array[Double] | Null = js.native
+    var byhour: Double | js.Array[Double] | Null
     
-    var byminute: Double | js.Array[Double] | Null = js.native
+    var byminute: Double | js.Array[Double] | Null
     
-    var bymonth: Double | js.Array[Double] | Null = js.native
+    var bymonth: Double | js.Array[Double] | Null
     
-    var bymonthday: Double | js.Array[Double] | Null = js.native
+    var bymonthday: Double | js.Array[Double] | Null
     
-    var bynmonthday: js.Array[Double] | Null = js.native
+    var bynmonthday: js.Array[Double] | Null
     
-    var bynweekday: js.Array[js.Array[Double]] | Null = js.native
+    var bynweekday: js.Array[js.Array[Double]] | Null
     
-    var bysecond: Double | js.Array[Double] | Null = js.native
+    var bysecond: Double | js.Array[Double] | Null
     
-    var bysetpos: Double | js.Array[Double] | Null = js.native
+    var bysetpos: Double | js.Array[Double] | Null
     
-    var byweekday: ByWeekday | js.Array[ByWeekday] | Null = js.native
+    var byweekday: ByWeekday | js.Array[ByWeekday] | Null
     
-    var byweekno: Double | js.Array[Double] | Null = js.native
+    var byweekno: Double | js.Array[Double] | Null
     
-    var byyearday: Double | js.Array[Double] | Null = js.native
+    var byyearday: Double | js.Array[Double] | Null
     
-    var count: Double | Null = js.native
+    var count: Double | Null
     
-    var dtstart: Date | Null = js.native
+    var dtstart: Date | Null
     
-    var freq: Frequency = js.native
+    var freq: Frequency
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var tzid: String | Null = js.native
+    var tzid: String | Null
     
-    var until: Date | Null = js.native
+    var until: Date | Null
     
-    var wkst: Weekday | Double | Null = js.native
+    var wkst: Weekday | Double | Null
   }
   object Options {
     
     @scala.inline
     def apply(freq: Frequency, interval: Double): Options = {
-      val __obj = js.Dynamic.literal(freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], byeaster = null, byhour = null, byminute = null, bymonth = null, bymonthday = null, bynmonthday = null, bynweekday = null, bysecond = null, bysetpos = null, byweekday = null, byweekno = null, byyearday = null, count = null, dtstart = null, tzid = null, until = null, wkst = null)
       __obj.asInstanceOf[Options]
     }
     
@@ -255,44 +270,45 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ParsedOptions extends Options {
+  trait ParsedOptions
+    extends StObject
+       with Options {
     
     @JSName("byhour")
-    var byhour_ParsedOptions: js.Array[Double] = js.native
+    var byhour_ParsedOptions: js.Array[Double]
     
     @JSName("byminute")
-    var byminute_ParsedOptions: js.Array[Double] = js.native
+    var byminute_ParsedOptions: js.Array[Double]
     
     @JSName("bymonth")
-    var bymonth_ParsedOptions: js.Array[Double] = js.native
+    var bymonth_ParsedOptions: js.Array[Double]
     
     @JSName("bymonthday")
-    var bymonthday_ParsedOptions: js.Array[Double] = js.native
+    var bymonthday_ParsedOptions: js.Array[Double]
     
     @JSName("bynmonthday")
-    var bynmonthday_ParsedOptions: js.Array[Double] = js.native
+    var bynmonthday_ParsedOptions: js.Array[Double]
     
     @JSName("bysecond")
-    var bysecond_ParsedOptions: js.Array[Double] = js.native
+    var bysecond_ParsedOptions: js.Array[Double]
     
     @JSName("bysetpos")
-    var bysetpos_ParsedOptions: js.Array[Double] = js.native
+    var bysetpos_ParsedOptions: js.Array[Double]
     
     @JSName("byweekday")
-    var byweekday_ParsedOptions: js.Array[Double] = js.native
+    var byweekday_ParsedOptions: js.Array[Double]
     
     @JSName("byweekno")
-    var byweekno_ParsedOptions: js.Array[Double] = js.native
+    var byweekno_ParsedOptions: js.Array[Double]
     
     @JSName("byyearday")
-    var byyearday_ParsedOptions: js.Array[Double] = js.native
+    var byyearday_ParsedOptions: js.Array[Double]
     
     @JSName("dtstart")
-    var dtstart_ParsedOptions: Date = js.native
+    var dtstart_ParsedOptions: Date
     
     @JSName("wkst")
-    var wkst_ParsedOptions: Double = js.native
+    var wkst_ParsedOptions: Double
   }
   object ParsedOptions {
     
@@ -313,7 +329,7 @@ object typesMod {
       interval: Double,
       wkst: Double
     ): ParsedOptions = {
-      val __obj = js.Dynamic.literal(byhour = byhour.asInstanceOf[js.Any], byminute = byminute.asInstanceOf[js.Any], bymonth = bymonth.asInstanceOf[js.Any], bymonthday = bymonthday.asInstanceOf[js.Any], bynmonthday = bynmonthday.asInstanceOf[js.Any], bysecond = bysecond.asInstanceOf[js.Any], bysetpos = bysetpos.asInstanceOf[js.Any], byweekday = byweekday.asInstanceOf[js.Any], byweekno = byweekno.asInstanceOf[js.Any], byyearday = byyearday.asInstanceOf[js.Any], dtstart = dtstart.asInstanceOf[js.Any], freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], wkst = wkst.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(byhour = byhour.asInstanceOf[js.Any], byminute = byminute.asInstanceOf[js.Any], bymonth = bymonth.asInstanceOf[js.Any], bymonthday = bymonthday.asInstanceOf[js.Any], bynmonthday = bynmonthday.asInstanceOf[js.Any], bysecond = bysecond.asInstanceOf[js.Any], bysetpos = bysetpos.asInstanceOf[js.Any], byweekday = byweekday.asInstanceOf[js.Any], byweekno = byweekno.asInstanceOf[js.Any], byyearday = byyearday.asInstanceOf[js.Any], dtstart = dtstart.asInstanceOf[js.Any], freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], wkst = wkst.asInstanceOf[js.Any], byeaster = null, bynweekday = null, count = null, tzid = null, until = null)
       __obj.asInstanceOf[ParsedOptions]
     }
     
@@ -396,16 +412,15 @@ object typesMod {
   */
   trait QueryMethodTypes extends StObject
   
-  @js.native
   trait QueryMethods extends StObject {
     
-    def after(date: Date, inc: Boolean): Date = js.native
+    def after(date: Date, inc: Boolean): Date
     
-    def all(): js.Array[Date] = js.native
+    def all(): js.Array[Date]
     
-    def before(date: Date, inc: Boolean): Date = js.native
+    def before(date: Date, inc: Boolean): Date
     
-    def between(after: Date, before: Date, inc: Boolean): js.Array[Date] = js.native
+    def between(after: Date, before: Date, inc: Boolean): js.Array[Date]
   }
   object QueryMethods {
     

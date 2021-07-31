@@ -4,60 +4,60 @@ import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.live
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoordinateConversionViewModelProperties extends GoToProperties {
+trait CoordinateConversionViewModelProperties
+  extends StObject
+     with GoToProperties {
   
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Conversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html) that the widget is currently displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#conversions)
     */
-  var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.native
+  var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.undefined
   
   /**
     * Describes the location of the coordinates currently displayed by the widget as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#currentLocation)
     */
-  var currentLocation: js.UndefOr[PointProperties] = js.native
+  var currentLocation: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html) that the widget is capable of displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#formats)
     */
-  var formats: js.UndefOr[CollectionProperties[FormatProperties]] = js.native
+  var formats: js.UndefOr[CollectionProperties[FormatProperties]] = js.undefined
   
   /**
     * This symbol is used to visualize the location currently described by the widget when `capture` mode is active.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#locationSymbol)
     */
-  var locationSymbol: js.UndefOr[SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties] = js.native
+  var locationSymbol: js.UndefOr[SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties] = js.undefined
   
   /**
     * Describes the current mode of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#mode)
     */
-  var mode: js.UndefOr[live | capture] = js.native
+  var mode: js.UndefOr[live | capture] = js.undefined
   
   /**
     * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#requestDelay)
     */
-  var requestDelay: js.UndefOr[Double] = js.native
+  var requestDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object CoordinateConversionViewModelProperties {
   

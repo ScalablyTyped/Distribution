@@ -10,9 +10,9 @@ TypeScript typings for Dataflow API v1b3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dataflow |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 57 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 1113 |
 | # stars            | 0 |
 
 ## Links

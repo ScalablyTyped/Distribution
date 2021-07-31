@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,17 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.awt.XWindowPeer
   * @see com.sun.star.form.component.GridControl
   */
-@js.native
-trait XGridPeer extends XInterface {
+trait XGridPeer
+  extends StObject
+     with XInterface {
   
   /** retrieves the currently used column definitions of the peer. */
-  var Columns: XIndexContainer = js.native
+  var Columns: XIndexContainer
   
   /** retrieves the currently used column definitions of the peer. */
-  def getColumns(): XIndexContainer = js.native
+  def getColumns(): XIndexContainer
   
   /** sets the column definition for the peer. */
-  def setColumns(aColumns: XIndexContainer): Unit = js.native
+  def setColumns(aColumns: XIndexContainer): Unit
 }
 object XGridPeer {
   

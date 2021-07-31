@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBProxyTargetGroup extends StObject {
   
   /**
     * The settings that determine the size and behavior of the connection pool for the target group.
     */
-  var ConnectionPoolConfig: js.UndefOr[ConnectionPoolConfigurationInfo] = js.native
+  var ConnectionPoolConfig: js.UndefOr[ConnectionPoolConfigurationInfo] = js.undefined
   
   /**
     * The date and time when the target group was first created.
     */
-  var CreatedDate: js.UndefOr[TStamp] = js.native
+  var CreatedDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The identifier for the RDS proxy associated with this target group.
     */
-  var DBProxyName: js.UndefOr[String] = js.native
+  var DBProxyName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this target group is the first one used for connection requests by the associated proxy. Because each proxy is currently associated with a single target group, currently this setting is always true.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.native
+  var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current status of this target group. A status of available means the target group is correctly associated with a database. Other values indicate that you must wait for the target group to be ready, or take some action to resolve an issue.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) representing the target group.
     */
-  var TargetGroupArn: js.UndefOr[String] = js.native
+  var TargetGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the target group. This name must be unique for all target groups owned by your AWS account in the specified AWS Region.
     */
-  var TargetGroupName: js.UndefOr[String] = js.native
+  var TargetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the target group was last updated.
     */
-  var UpdatedDate: js.UndefOr[TStamp] = js.native
+  var UpdatedDate: js.UndefOr[TStamp] = js.undefined
 }
 object DBProxyTargetGroup {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDialogLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,37 +16,37 @@ trait IgDialogLocale
     * Gets/Sets the title/tooltip for the close button in the dialog.
     *
     */
-  var closeButtonTitle: js.UndefOr[String] = js.native
+  var closeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the title/tooltip for the maximize button in the dialog.
     *
     */
-  var maximizeButtonTitle: js.UndefOr[String] = js.native
+  var maximizeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the title/tooltip for the minimize button in the dialog.
     *
     */
-  var minimizeButtonTitle: js.UndefOr[String] = js.native
+  var minimizeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the title/tooltip for the pin button in the dialog.
     *
     */
-  var pinButtonTitle: js.UndefOr[String] = js.native
+  var pinButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the title/tooltip for the restore button in the dialog.
     *
     */
-  var restoreButtonTitle: js.UndefOr[String] = js.native
+  var restoreButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the title/tooltip for the pin button in the dialog.
     *
     */
-  var unpinButtonTitle: js.UndefOr[String] = js.native
+  var unpinButtonTitle: js.UndefOr[String] = js.undefined
 }
 object IgDialogLocale {
   

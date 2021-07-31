@@ -107,906 +107,755 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.ZHO
 import typings.tizenTvWebapis.tizenTvWebapisStrings.ZUL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUDIOLANGUAGECODEAFR extends StObject {
   
   /**
     * Afrikaans voice mode
     */
-  var AUDIO_LANGUAGE_CODE_AFR: AFR = js.native
+  var AUDIO_LANGUAGE_CODE_AFR: AFR
   
   /**
     * Akan voice mode
     */
-  var AUDIO_LANGUAGE_CODE_AKA: AKA = js.native
+  var AUDIO_LANGUAGE_CODE_AKA: AKA
   
   /**
     * Amharic voice mode
     */
-  var AUDIO_LANGUAGE_CODE_AMH: AMH = js.native
+  var AUDIO_LANGUAGE_CODE_AMH: AMH
   
   /**
     * Arab voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ARA: ARA = js.native
+  var AUDIO_LANGUAGE_CODE_ARA: ARA
   
   /**
     * India-Assamese voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ASM: ASM = js.native
+  var AUDIO_LANGUAGE_CODE_ASM: ASM
   
   /**
     * India-Bengali voice mode
     */
-  var AUDIO_LANGUAGE_CODE_BEN: BEN = js.native
+  var AUDIO_LANGUAGE_CODE_BEN: BEN
   
   /**
     * Bulgarian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_BUL: BUL = js.native
+  var AUDIO_LANGUAGE_CODE_BUL: BUL
   
   /**
     * catala voice mode
     */
-  var AUDIO_LANGUAGE_CODE_CAT: CAT = js.native
+  var AUDIO_LANGUAGE_CODE_CAT: CAT
   
   /**
     * Chinese voice mode
     */
-  var AUDIO_LANGUAGE_CODE_CHI: CHI = js.native
+  var AUDIO_LANGUAGE_CODE_CHI: CHI
   
   /**
     * Chinese (Mandarin) voice mode
     */
-  var AUDIO_LANGUAGE_CODE_CMN: CMN = js.native
+  var AUDIO_LANGUAGE_CODE_CMN: CMN
   
   /**
     * Czech voice mode
     */
-  var AUDIO_LANGUAGE_CODE_CZE: CZE = js.native
+  var AUDIO_LANGUAGE_CODE_CZE: CZE
   
   /**
     * Ghana-Dagbani voice mode
     */
-  var AUDIO_LANGUAGE_CODE_DAG: DAG = js.native
+  var AUDIO_LANGUAGE_CODE_DAG: DAG
   
   /**
     * Danish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_DAN: DAN = js.native
+  var AUDIO_LANGUAGE_CODE_DAN: DAN
   
   /**
     * Dutch voice mode
     */
-  var AUDIO_LANGUAGE_CODE_DUT: DUT = js.native
+  var AUDIO_LANGUAGE_CODE_DUT: DUT
   
   /**
     * English voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ENG: ENG = js.native
+  var AUDIO_LANGUAGE_CODE_ENG: ENG
   
   /**
     * Estonia voice mode
     */
-  var AUDIO_LANGUAGE_CODE_EST: EST = js.native
+  var AUDIO_LANGUAGE_CODE_EST: EST
   
   /**
     * basque voice mode
     */
-  var AUDIO_LANGUAGE_CODE_EUS: EUS = js.native
+  var AUDIO_LANGUAGE_CODE_EUS: EUS
   
   /**
     * Ewe voice mode
     */
-  var AUDIO_LANGUAGE_CODE_EWE: EWE = js.native
+  var AUDIO_LANGUAGE_CODE_EWE: EWE
   
   /**
     * Finnish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_FIN: FIN = js.native
+  var AUDIO_LANGUAGE_CODE_FIN: FIN
   
   /**
     * French voice mode
     */
-  var AUDIO_LANGUAGE_CODE_FRE: FRE = js.native
+  var AUDIO_LANGUAGE_CODE_FRE: FRE
   
   /**
     * Gaa voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GAA: GAA = js.native
+  var AUDIO_LANGUAGE_CODE_GAA: GAA
   
   /**
     * German voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GER: GER = js.native
+  var AUDIO_LANGUAGE_CODE_GER: GER
   
   /**
     * Gaelic voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GLA: GLA = js.native
+  var AUDIO_LANGUAGE_CODE_GLA: GLA
   
   /**
     * Galician voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GLG: GLG = js.native
+  var AUDIO_LANGUAGE_CODE_GLG: GLG
   
   /**
     * Netherlands private code
     */
-  var AUDIO_LANGUAGE_CODE_GOS: GOS = js.native
+  var AUDIO_LANGUAGE_CODE_GOS: GOS
   
   /**
     * Greek voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GRE: GRE = js.native
+  var AUDIO_LANGUAGE_CODE_GRE: GRE
   
   /**
     * India-Gujarati voice mode
     */
-  var AUDIO_LANGUAGE_CODE_GUJ: GUJ = js.native
+  var AUDIO_LANGUAGE_CODE_GUJ: GUJ
   
   /**
     * Hausa voice mode
     */
-  var AUDIO_LANGUAGE_CODE_HAU: HAU = js.native
+  var AUDIO_LANGUAGE_CODE_HAU: HAU
   
   /**
     * Hebrew voice mode
     */
-  var AUDIO_LANGUAGE_CODE_HEB: HEB = js.native
+  var AUDIO_LANGUAGE_CODE_HEB: HEB
   
   /**
     * Hindi voice mode
     */
-  var AUDIO_LANGUAGE_CODE_HIN: HIN = js.native
+  var AUDIO_LANGUAGE_CODE_HIN: HIN
   
   /**
     * Croatian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_HRV: HRV = js.native
+  var AUDIO_LANGUAGE_CODE_HRV: HRV
   
   /**
     * Hungarian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_HUN: HUN = js.native
+  var AUDIO_LANGUAGE_CODE_HUN: HUN
   
   /**
     * Igbo voice mode
     */
-  var AUDIO_LANGUAGE_CODE_IGB: IGB = js.native
+  var AUDIO_LANGUAGE_CODE_IGB: IGB
   
   /**
     * Indonesia voice mode
     */
-  var AUDIO_LANGUAGE_CODE_IND: IND = js.native
+  var AUDIO_LANGUAGE_CODE_IND: IND
   
   /**
     * Irish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_IRI: IRI = js.native
+  var AUDIO_LANGUAGE_CODE_IRI: IRI
   
   /**
     * Italian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ITA: ITA = js.native
+  var AUDIO_LANGUAGE_CODE_ITA: ITA
   
   /**
     * Japanes voice mode
     */
-  var AUDIO_LANGUAGE_CODE_JPN: JPN = js.native
+  var AUDIO_LANGUAGE_CODE_JPN: JPN
   
   /**
     * India-Kannada voice mode
     */
-  var AUDIO_LANGUAGE_CODE_KAN: KAN = js.native
+  var AUDIO_LANGUAGE_CODE_KAN: KAN
   
   /**
     * India-Kokani voice mode
     */
-  var AUDIO_LANGUAGE_CODE_KOK: KOK = js.native
+  var AUDIO_LANGUAGE_CODE_KOK: KOK
   
   /**
     * Korean voice mode
     */
-  var AUDIO_LANGUAGE_CODE_KOR: KOR = js.native
+  var AUDIO_LANGUAGE_CODE_KOR: KOR
   
   /**
     * Latvian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_LAV: LAV = js.native
+  var AUDIO_LANGUAGE_CODE_LAV: LAV
   
   /**
     * Lithuanian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_LIT: LIT = js.native
+  var AUDIO_LANGUAGE_CODE_LIT: LIT
   
   /**
     * India-Malayalam voice mode
     */
-  var AUDIO_LANGUAGE_CODE_MAL: MAL = js.native
+  var AUDIO_LANGUAGE_CODE_MAL: MAL
   
   /**
     * Maori voice mode
     */
-  var AUDIO_LANGUAGE_CODE_MAO: MAO = js.native
+  var AUDIO_LANGUAGE_CODE_MAO: MAO
   
   /**
     * Marathi voice mode
     */
-  var AUDIO_LANGUAGE_CODE_MAR: MAR = js.native
+  var AUDIO_LANGUAGE_CODE_MAR: MAR
   
   /**
     * India-Marathi voice mode
     */
-  var AUDIO_LANGUAGE_CODE_MSA: MSA = js.native
+  var AUDIO_LANGUAGE_CODE_MSA: MSA
   
   /**
     * Ndebele voice mode
     */
-  var AUDIO_LANGUAGE_CODE_NBL: NBL = js.native
+  var AUDIO_LANGUAGE_CODE_NBL: NBL
   
   /**
     * Norwegian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_NOR: NOR = js.native
+  var AUDIO_LANGUAGE_CODE_NOR: NOR
   
   /**
     * Sotho, Northern voice mode
     */
-  var AUDIO_LANGUAGE_CODE_NSO: NSO = js.native
+  var AUDIO_LANGUAGE_CODE_NSO: NSO
   
   /**
     * Nzema voice mode
     */
-  var AUDIO_LANGUAGE_CODE_NZI: NZI = js.native
+  var AUDIO_LANGUAGE_CODE_NZI: NZI
   
   /**
     * India-Oriya voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ORI: ORI = js.native
+  var AUDIO_LANGUAGE_CODE_ORI: ORI
   
   /**
     * India-Punjabi voice mode
     */
-  var AUDIO_LANGUAGE_CODE_PAN: PAN = js.native
+  var AUDIO_LANGUAGE_CODE_PAN: PAN
   
   /**
     * Persisian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_PER: PER = js.native
+  var AUDIO_LANGUAGE_CODE_PER: PER
   
   /**
     * Polish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_POL: POL = js.native
+  var AUDIO_LANGUAGE_CODE_POL: POL
   
   /**
     * Portuguese voice mode
     */
-  var AUDIO_LANGUAGE_CODE_POR: POR = js.native
+  var AUDIO_LANGUAGE_CODE_POR: POR
   
   /**
     * Singapore preffered audio.
     */
-  var AUDIO_LANGUAGE_CODE_QAA: QAA = js.native
+  var AUDIO_LANGUAGE_CODE_QAA: QAA
   
   /**
     * Singapore secondary audio.
     */
-  var AUDIO_LANGUAGE_CODE_QAB: QAB = js.native
+  var AUDIO_LANGUAGE_CODE_QAB: QAB
   
   /**
     * Singapore third audio
     */
-  var AUDIO_LANGUAGE_CODE_QAC: QAC = js.native
+  var AUDIO_LANGUAGE_CODE_QAC: QAC
   
   /**
     * Rumanian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ROM: ROM = js.native
+  var AUDIO_LANGUAGE_CODE_ROM: ROM
   
   /**
     * Russian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_RUS: RUS = js.native
+  var AUDIO_LANGUAGE_CODE_RUS: RUS
   
   /**
     * Slovakia voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SLK: SLK = js.native
+  var AUDIO_LANGUAGE_CODE_SLK: SLK
   
   /**
     * Sotho, Southern voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SOT: SOT = js.native
+  var AUDIO_LANGUAGE_CODE_SOT: SOT
   
   /**
     * Spanish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SPA: SPA = js.native
+  var AUDIO_LANGUAGE_CODE_SPA: SPA
   
   /**
     * Serbian voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SRP: SRP = js.native
+  var AUDIO_LANGUAGE_CODE_SRP: SRP
   
   /**
     * Swati voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SSW: SSW = js.native
+  var AUDIO_LANGUAGE_CODE_SSW: SSW
   
   /**
     * Swahili voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SWA: SWA = js.native
+  var AUDIO_LANGUAGE_CODE_SWA: SWA
   
   /**
     * Swedish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_SWE: SWE = js.native
+  var AUDIO_LANGUAGE_CODE_SWE: SWE
   
   /**
     * tamil voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TAM: TAM = js.native
+  var AUDIO_LANGUAGE_CODE_TAM: TAM
   
   /**
     * India-Telugu voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TEL: TEL = js.native
+  var AUDIO_LANGUAGE_CODE_TEL: TEL
   
   /**
     * Thai voice mode
     */
-  var AUDIO_LANGUAGE_CODE_THA: THA = js.native
+  var AUDIO_LANGUAGE_CODE_THA: THA
   
   /**
     * Thai voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TSN: TSN = js.native
+  var AUDIO_LANGUAGE_CODE_TSN: TSN
   
   /**
     * Tsonga voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TSO: TSO = js.native
+  var AUDIO_LANGUAGE_CODE_TSO: TSO
   
   /**
     * Turkish voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TUR: TUR = js.native
+  var AUDIO_LANGUAGE_CODE_TUR: TUR
   
   /**
     * Twi voice mode
     */
-  var AUDIO_LANGUAGE_CODE_TWI: TWI = js.native
+  var AUDIO_LANGUAGE_CODE_TWI: TWI
   
   /**
     * Ukraine voice mode
     */
-  var AUDIO_LANGUAGE_CODE_UKR: UKR = js.native
+  var AUDIO_LANGUAGE_CODE_UKR: UKR
   
   /**
     * valencia voice mode
     */
-  var AUDIO_LANGUAGE_CODE_VAL: VAL = js.native
+  var AUDIO_LANGUAGE_CODE_VAL: VAL
   
   /**
     * Venda voice mode
     */
-  var AUDIO_LANGUAGE_CODE_VEN: VEN = js.native
+  var AUDIO_LANGUAGE_CODE_VEN: VEN
   
   /**
     * Vietnamese voice mode
     */
-  var AUDIO_LANGUAGE_CODE_VIE: VIE = js.native
+  var AUDIO_LANGUAGE_CODE_VIE: VIE
   
   /**
     * Welsh voice mode
     */
-  var AUDIO_LANGUAGE_CODE_WEL: WEL = js.native
+  var AUDIO_LANGUAGE_CODE_WEL: WEL
   
   /**
     * Xhosa voice mode
     */
-  var AUDIO_LANGUAGE_CODE_XHO: XHO = js.native
+  var AUDIO_LANGUAGE_CODE_XHO: XHO
   
   /**
     * Ghana-Kasem voice mode
     */
-  var AUDIO_LANGUAGE_CODE_XSM: XSM = js.native
+  var AUDIO_LANGUAGE_CODE_XSM: XSM
   
   /**
     * Yoruba voice mode
     */
-  var AUDIO_LANGUAGE_CODE_YOR: YOR = js.native
+  var AUDIO_LANGUAGE_CODE_YOR: YOR
   
   /**
     * Chinese (Cantonese) voice mode
     */
-  var AUDIO_LANGUAGE_CODE_YUE: YUE = js.native
+  var AUDIO_LANGUAGE_CODE_YUE: YUE
   
   /**
     * Malaysia-Chinense voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ZHO: ZHO = js.native
+  var AUDIO_LANGUAGE_CODE_ZHO: ZHO
   
   /**
     * Zulu voice mode
     */
-  var AUDIO_LANGUAGE_CODE_ZUL: ZUL = js.native
+  var AUDIO_LANGUAGE_CODE_ZUL: ZUL
   
   /**
     * Black
     */
-  var CAPTION_COLOR_BLACK: `2` = js.native
+  var CAPTION_COLOR_BLACK: `2`
   
   /**
     * Blue
     */
-  var CAPTION_COLOR_BLUE: `5` = js.native
+  var CAPTION_COLOR_BLUE: `5`
   
   /**
     * Cyan
     */
-  var CAPTION_COLOR_CYAN: `8` = js.native
+  var CAPTION_COLOR_CYAN: `8`
   
   /**
     * Default
     */
-  var CAPTION_COLOR_DEFAULT: `0` = js.native
+  var CAPTION_COLOR_DEFAULT: `0`
   
   /**
     * Green
     */
-  var CAPTION_COLOR_GREEN: `4` = js.native
+  var CAPTION_COLOR_GREEN: `4`
   
   /**
     * Magenta
     */
-  var CAPTION_COLOR_MAGENTA: `7` = js.native
+  var CAPTION_COLOR_MAGENTA: `7`
   
   /**
     * Red
     */
-  var CAPTION_COLOR_RED: `3` = js.native
+  var CAPTION_COLOR_RED: `3`
   
   /**
     * White
     */
-  var CAPTION_COLOR_WHITE: `1` = js.native
+  var CAPTION_COLOR_WHITE: `1`
   
   /**
     * Yellow
     */
-  var CAPTION_COLOR_YELLOW: `6` = js.native
+  var CAPTION_COLOR_YELLOW: `6`
   
   /**
     * Depressed
     */
-  var CAPTION_EDGE_DEPRESSED: `2` = js.native
+  var CAPTION_EDGE_DEPRESSED: `2`
   
   /**
     * Drop shadow
     */
-  var CAPTION_EDGE_DROP_SHADOWED: `4` = js.native
+  var CAPTION_EDGE_DROP_SHADOWED: `4`
   
   /**
     * No edge
     */
-  var CAPTION_EDGE_NONE: `0` = js.native
+  var CAPTION_EDGE_NONE: `0`
   
   /**
     * Raised
     */
-  var CAPTION_EDGE_RAISED: `1` = js.native
+  var CAPTION_EDGE_RAISED: `1`
   
   /**
     * Uniform
     */
-  var CAPTION_EDGE_UNIFORM: `3` = js.native
+  var CAPTION_EDGE_UNIFORM: `3`
   
   /**
     * Default
     */
-  var CAPTION_FONT_DEFAULT: `0` = js.native
+  var CAPTION_FONT_DEFAULT: `0`
   
   /**
     * Style 0
     */
-  var CAPTION_FONT_STYLE0: `1` = js.native
+  var CAPTION_FONT_STYLE0: `1`
   
   /**
     * Style 1
     */
-  var CAPTION_FONT_STYLE1: `2` = js.native
+  var CAPTION_FONT_STYLE1: `2`
   
   /**
     * Style 2
     */
-  var CAPTION_FONT_STYLE2: `3` = js.native
+  var CAPTION_FONT_STYLE2: `3`
   
   /**
     * Style 3
     */
-  var CAPTION_FONT_STYLE3: `4` = js.native
+  var CAPTION_FONT_STYLE3: `4`
   
   /**
     * Style 4
     */
-  var CAPTION_FONT_STYLE4: `5` = js.native
+  var CAPTION_FONT_STYLE4: `5`
   
   /**
     * Style 5
     */
-  var CAPTION_FONT_STYLE5: `6` = js.native
+  var CAPTION_FONT_STYLE5: `6`
   
   /**
     * Style 6
     */
-  var CAPTION_FONT_STYLE6: `7` = js.native
+  var CAPTION_FONT_STYLE6: `7`
   
   /**
     * English (KOR Localset)
     */
-  var CAPTION_MODE_CC1: `7` = js.native
+  var CAPTION_MODE_CC1: `7`
   
   /**
     * Korean (KOR Localset)
     */
-  var CAPTION_MODE_CC2: `8` = js.native
+  var CAPTION_MODE_CC2: `8`
   
   /**
     * US Localset only
     */
-  var CAPTION_MODE_CC3: `9` = js.native
+  var CAPTION_MODE_CC3: `9`
   
   /**
     * US Localset only
     */
-  var CAPTION_MODE_CC4: `10` = js.native
+  var CAPTION_MODE_CC4: `10`
   
   /**
     * Default Mode
     */
-  var CAPTION_MODE_DEFAULT: `0` = js.native
+  var CAPTION_MODE_DEFAULT: `0`
   
   /**
     * Service 1
     */
-  var CAPTION_MODE_SERVICE1: `1` = js.native
+  var CAPTION_MODE_SERVICE1: `1`
   
   /**
     * Service 2
     */
-  var CAPTION_MODE_SERVICE2: `2` = js.native
+  var CAPTION_MODE_SERVICE2: `2`
   
   /**
     * Service 3
     */
-  var CAPTION_MODE_SERVICE3: `3` = js.native
+  var CAPTION_MODE_SERVICE3: `3`
   
   /**
     * Service 4
     */
-  var CAPTION_MODE_SERVICE4: `4` = js.native
+  var CAPTION_MODE_SERVICE4: `4`
   
   /**
     * Service 5
     */
-  var CAPTION_MODE_SERVICE5: `5` = js.native
+  var CAPTION_MODE_SERVICE5: `5`
   
   /**
     * Service 6
     */
-  var CAPTION_MODE_SERVICE6: `6` = js.native
+  var CAPTION_MODE_SERVICE6: `6`
   
   /**
     * Text 1
     */
-  var CAPTION_MODE_TEXT1: `11` = js.native
+  var CAPTION_MODE_TEXT1: `11`
   
   /**
     * Text 2
     */
-  var CAPTION_MODE_TEXT2: `12` = js.native
+  var CAPTION_MODE_TEXT2: `12`
   
   /**
     * Text 3
     */
-  var CAPTION_MODE_TEXT3: `13` = js.native
+  var CAPTION_MODE_TEXT3: `13`
   
   /**
     * Text 4
     */
-  var CAPTION_MODE_TEXT4: `14` = js.native
+  var CAPTION_MODE_TEXT4: `14`
   
   /**
     * Caption Off
     */
-  var CAPTION_OFF: `0` = js.native
+  var CAPTION_OFF: `0`
   
   /**
     * Caption On
     */
-  var CAPTION_ON: `1` = js.native
+  var CAPTION_ON: `1`
   
   /**
     * Default
     */
-  var CAPTION_OPACITY_DEFAULT: `4` = js.native
+  var CAPTION_OPACITY_DEFAULT: `4`
   
   /**
     * Flashing
     */
-  var CAPTION_OPACITY_FLASH: `1` = js.native
+  var CAPTION_OPACITY_FLASH: `1`
   
   /**
     * Highly translucent
     */
-  var CAPTION_OPACITY_HIGHLY_TRANSLUCENT: `5` = js.native
+  var CAPTION_OPACITY_HIGHLY_TRANSLUCENT: `5`
   
   /**
     * Slightly translucent
     */
-  var CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT: `6` = js.native
+  var CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT: `6`
   
   /**
     * Solid
     */
-  var CAPTION_OPACITY_SOLID: `0` = js.native
+  var CAPTION_OPACITY_SOLID: `0`
   
   /**
     * Translucent
     */
-  var CAPTION_OPACITY_TRANSLUCENT: `2` = js.native
+  var CAPTION_OPACITY_TRANSLUCENT: `2`
   
   /**
     * Transparent
     */
-  var CAPTION_OPACITY_TRANSPARENT: `3` = js.native
+  var CAPTION_OPACITY_TRANSPARENT: `3`
   
   /**
     * Default
     */
-  var CAPTION_SIZE_DEFAULT: `0` = js.native
+  var CAPTION_SIZE_DEFAULT: `0`
   
   /**
     * Extra large
     */
-  var CAPTION_SIZE_EXTRA_LARGE: `4` = js.native
+  var CAPTION_SIZE_EXTRA_LARGE: `4`
   
   /**
     * Large
     */
-  var CAPTION_SIZE_LARGE: `3` = js.native
+  var CAPTION_SIZE_LARGE: `3`
   
   /**
     * Small
     */
-  var CAPTION_SIZE_SMALL: `1` = js.native
+  var CAPTION_SIZE_SMALL: `1`
   
   /**
     * Standard
     */
-  var CAPTION_SIZE_STANDARD: `2` = js.native
+  var CAPTION_SIZE_STANDARD: `2`
   
   /**
     * caption style
     */
-  var CAPTION_STYLE_BOLD: `1` = js.native
+  var CAPTION_STYLE_BOLD: `1`
   
   /**
     * caption style
     */
-  var CAPTION_STYLE_DEFAULT: `0` = js.native
+  var CAPTION_STYLE_DEFAULT: `0`
   
   /**
     * caption style
     */
-  var CAPTION_STYLE_ITALIC: `2` = js.native
+  var CAPTION_STYLE_ITALIC: `2`
   
   /**
     * MenuValue Off
     */
-  var OFF: `0` = js.native
+  var OFF: `0`
   
   /**
     * MenuValue On
     */
-  var ON: `1` = js.native
+  var ON: `1`
   
   /**
     * Subtitles for the hearing-immpeared
     */
-  var SUBTITLE_HEARING_IMMPEARED: `1` = js.native
+  var SUBTITLE_HEARING_IMMPEARED: `1`
   
   /**
     * Normal subtitles
     */
-  var SUBTITLE_NORMAL: `0` = js.native
+  var SUBTITLE_NORMAL: `0`
   
   /**
     * voice guide speed
     */
-  var VOICEGUIDE_SPEED_FAST: FAST = js.native
+  var VOICEGUIDE_SPEED_FAST: FAST
   
   /**
     * voice guide speed
     */
-  var VOICEGUIDE_SPEED_NORMAL: NORMAL = js.native
+  var VOICEGUIDE_SPEED_NORMAL: NORMAL
   
   /**
     * voice guide speed
     */
-  var VOICEGUIDE_SPEED_SLOW: SLOW = js.native
+  var VOICEGUIDE_SPEED_SLOW: SLOW
   
   /**
     * voice guide speed
     */
-  var VOICEGUIDE_SPEED_VERY_FAST: VERY_FAST = js.native
+  var VOICEGUIDE_SPEED_VERY_FAST: VERY_FAST
   
   /**
     * voice guide speed
     */
-  var VOICEGUIDE_SPEED_VERY_SLOW: VERY_SLOW = js.native
+  var VOICEGUIDE_SPEED_VERY_SLOW: VERY_SLOW
 }
 object AUDIOLANGUAGECODEAFR {
   
   @scala.inline
-  def apply(
-    AUDIO_LANGUAGE_CODE_AFR: AFR,
-    AUDIO_LANGUAGE_CODE_AKA: AKA,
-    AUDIO_LANGUAGE_CODE_AMH: AMH,
-    AUDIO_LANGUAGE_CODE_ARA: ARA,
-    AUDIO_LANGUAGE_CODE_ASM: ASM,
-    AUDIO_LANGUAGE_CODE_BEN: BEN,
-    AUDIO_LANGUAGE_CODE_BUL: BUL,
-    AUDIO_LANGUAGE_CODE_CAT: CAT,
-    AUDIO_LANGUAGE_CODE_CHI: CHI,
-    AUDIO_LANGUAGE_CODE_CMN: CMN,
-    AUDIO_LANGUAGE_CODE_CZE: CZE,
-    AUDIO_LANGUAGE_CODE_DAG: DAG,
-    AUDIO_LANGUAGE_CODE_DAN: DAN,
-    AUDIO_LANGUAGE_CODE_DUT: DUT,
-    AUDIO_LANGUAGE_CODE_ENG: ENG,
-    AUDIO_LANGUAGE_CODE_EST: EST,
-    AUDIO_LANGUAGE_CODE_EUS: EUS,
-    AUDIO_LANGUAGE_CODE_EWE: EWE,
-    AUDIO_LANGUAGE_CODE_FIN: FIN,
-    AUDIO_LANGUAGE_CODE_FRE: FRE,
-    AUDIO_LANGUAGE_CODE_GAA: GAA,
-    AUDIO_LANGUAGE_CODE_GER: GER,
-    AUDIO_LANGUAGE_CODE_GLA: GLA,
-    AUDIO_LANGUAGE_CODE_GLG: GLG,
-    AUDIO_LANGUAGE_CODE_GOS: GOS,
-    AUDIO_LANGUAGE_CODE_GRE: GRE,
-    AUDIO_LANGUAGE_CODE_GUJ: GUJ,
-    AUDIO_LANGUAGE_CODE_HAU: HAU,
-    AUDIO_LANGUAGE_CODE_HEB: HEB,
-    AUDIO_LANGUAGE_CODE_HIN: HIN,
-    AUDIO_LANGUAGE_CODE_HRV: HRV,
-    AUDIO_LANGUAGE_CODE_HUN: HUN,
-    AUDIO_LANGUAGE_CODE_IGB: IGB,
-    AUDIO_LANGUAGE_CODE_IND: IND,
-    AUDIO_LANGUAGE_CODE_IRI: IRI,
-    AUDIO_LANGUAGE_CODE_ITA: ITA,
-    AUDIO_LANGUAGE_CODE_JPN: JPN,
-    AUDIO_LANGUAGE_CODE_KAN: KAN,
-    AUDIO_LANGUAGE_CODE_KOK: KOK,
-    AUDIO_LANGUAGE_CODE_KOR: KOR,
-    AUDIO_LANGUAGE_CODE_LAV: LAV,
-    AUDIO_LANGUAGE_CODE_LIT: LIT,
-    AUDIO_LANGUAGE_CODE_MAL: MAL,
-    AUDIO_LANGUAGE_CODE_MAO: MAO,
-    AUDIO_LANGUAGE_CODE_MAR: MAR,
-    AUDIO_LANGUAGE_CODE_MSA: MSA,
-    AUDIO_LANGUAGE_CODE_NBL: NBL,
-    AUDIO_LANGUAGE_CODE_NOR: NOR,
-    AUDIO_LANGUAGE_CODE_NSO: NSO,
-    AUDIO_LANGUAGE_CODE_NZI: NZI,
-    AUDIO_LANGUAGE_CODE_ORI: ORI,
-    AUDIO_LANGUAGE_CODE_PAN: PAN,
-    AUDIO_LANGUAGE_CODE_PER: PER,
-    AUDIO_LANGUAGE_CODE_POL: POL,
-    AUDIO_LANGUAGE_CODE_POR: POR,
-    AUDIO_LANGUAGE_CODE_QAA: QAA,
-    AUDIO_LANGUAGE_CODE_QAB: QAB,
-    AUDIO_LANGUAGE_CODE_QAC: QAC,
-    AUDIO_LANGUAGE_CODE_ROM: ROM,
-    AUDIO_LANGUAGE_CODE_RUS: RUS,
-    AUDIO_LANGUAGE_CODE_SLK: SLK,
-    AUDIO_LANGUAGE_CODE_SOT: SOT,
-    AUDIO_LANGUAGE_CODE_SPA: SPA,
-    AUDIO_LANGUAGE_CODE_SRP: SRP,
-    AUDIO_LANGUAGE_CODE_SSW: SSW,
-    AUDIO_LANGUAGE_CODE_SWA: SWA,
-    AUDIO_LANGUAGE_CODE_SWE: SWE,
-    AUDIO_LANGUAGE_CODE_TAM: TAM,
-    AUDIO_LANGUAGE_CODE_TEL: TEL,
-    AUDIO_LANGUAGE_CODE_THA: THA,
-    AUDIO_LANGUAGE_CODE_TSN: TSN,
-    AUDIO_LANGUAGE_CODE_TSO: TSO,
-    AUDIO_LANGUAGE_CODE_TUR: TUR,
-    AUDIO_LANGUAGE_CODE_TWI: TWI,
-    AUDIO_LANGUAGE_CODE_UKR: UKR,
-    AUDIO_LANGUAGE_CODE_VAL: VAL,
-    AUDIO_LANGUAGE_CODE_VEN: VEN,
-    AUDIO_LANGUAGE_CODE_VIE: VIE,
-    AUDIO_LANGUAGE_CODE_WEL: WEL,
-    AUDIO_LANGUAGE_CODE_XHO: XHO,
-    AUDIO_LANGUAGE_CODE_XSM: XSM,
-    AUDIO_LANGUAGE_CODE_YOR: YOR,
-    AUDIO_LANGUAGE_CODE_YUE: YUE,
-    AUDIO_LANGUAGE_CODE_ZHO: ZHO,
-    AUDIO_LANGUAGE_CODE_ZUL: ZUL,
-    CAPTION_COLOR_BLACK: `2`,
-    CAPTION_COLOR_BLUE: `5`,
-    CAPTION_COLOR_CYAN: `8`,
-    CAPTION_COLOR_DEFAULT: `0`,
-    CAPTION_COLOR_GREEN: `4`,
-    CAPTION_COLOR_MAGENTA: `7`,
-    CAPTION_COLOR_RED: `3`,
-    CAPTION_COLOR_WHITE: `1`,
-    CAPTION_COLOR_YELLOW: `6`,
-    CAPTION_EDGE_DEPRESSED: `2`,
-    CAPTION_EDGE_DROP_SHADOWED: `4`,
-    CAPTION_EDGE_NONE: `0`,
-    CAPTION_EDGE_RAISED: `1`,
-    CAPTION_EDGE_UNIFORM: `3`,
-    CAPTION_FONT_DEFAULT: `0`,
-    CAPTION_FONT_STYLE0: `1`,
-    CAPTION_FONT_STYLE1: `2`,
-    CAPTION_FONT_STYLE2: `3`,
-    CAPTION_FONT_STYLE3: `4`,
-    CAPTION_FONT_STYLE4: `5`,
-    CAPTION_FONT_STYLE5: `6`,
-    CAPTION_FONT_STYLE6: `7`,
-    CAPTION_MODE_CC1: `7`,
-    CAPTION_MODE_CC2: `8`,
-    CAPTION_MODE_CC3: `9`,
-    CAPTION_MODE_CC4: `10`,
-    CAPTION_MODE_DEFAULT: `0`,
-    CAPTION_MODE_SERVICE1: `1`,
-    CAPTION_MODE_SERVICE2: `2`,
-    CAPTION_MODE_SERVICE3: `3`,
-    CAPTION_MODE_SERVICE4: `4`,
-    CAPTION_MODE_SERVICE5: `5`,
-    CAPTION_MODE_SERVICE6: `6`,
-    CAPTION_MODE_TEXT1: `11`,
-    CAPTION_MODE_TEXT2: `12`,
-    CAPTION_MODE_TEXT3: `13`,
-    CAPTION_MODE_TEXT4: `14`,
-    CAPTION_OFF: `0`,
-    CAPTION_ON: `1`,
-    CAPTION_OPACITY_DEFAULT: `4`,
-    CAPTION_OPACITY_FLASH: `1`,
-    CAPTION_OPACITY_HIGHLY_TRANSLUCENT: `5`,
-    CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT: `6`,
-    CAPTION_OPACITY_SOLID: `0`,
-    CAPTION_OPACITY_TRANSLUCENT: `2`,
-    CAPTION_OPACITY_TRANSPARENT: `3`,
-    CAPTION_SIZE_DEFAULT: `0`,
-    CAPTION_SIZE_EXTRA_LARGE: `4`,
-    CAPTION_SIZE_LARGE: `3`,
-    CAPTION_SIZE_SMALL: `1`,
-    CAPTION_SIZE_STANDARD: `2`,
-    CAPTION_STYLE_BOLD: `1`,
-    CAPTION_STYLE_DEFAULT: `0`,
-    CAPTION_STYLE_ITALIC: `2`,
-    OFF: `0`,
-    ON: `1`,
-    SUBTITLE_HEARING_IMMPEARED: `1`,
-    SUBTITLE_NORMAL: `0`,
-    VOICEGUIDE_SPEED_FAST: FAST,
-    VOICEGUIDE_SPEED_NORMAL: NORMAL,
-    VOICEGUIDE_SPEED_SLOW: SLOW,
-    VOICEGUIDE_SPEED_VERY_FAST: VERY_FAST,
-    VOICEGUIDE_SPEED_VERY_SLOW: VERY_SLOW
-  ): AUDIOLANGUAGECODEAFR = {
-    val __obj = js.Dynamic.literal(AUDIO_LANGUAGE_CODE_AFR = AUDIO_LANGUAGE_CODE_AFR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_AKA = AUDIO_LANGUAGE_CODE_AKA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_AMH = AUDIO_LANGUAGE_CODE_AMH.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ARA = AUDIO_LANGUAGE_CODE_ARA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ASM = AUDIO_LANGUAGE_CODE_ASM.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_BEN = AUDIO_LANGUAGE_CODE_BEN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_BUL = AUDIO_LANGUAGE_CODE_BUL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_CAT = AUDIO_LANGUAGE_CODE_CAT.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_CHI = AUDIO_LANGUAGE_CODE_CHI.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_CMN = AUDIO_LANGUAGE_CODE_CMN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_CZE = AUDIO_LANGUAGE_CODE_CZE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_DAG = AUDIO_LANGUAGE_CODE_DAG.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_DAN = AUDIO_LANGUAGE_CODE_DAN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_DUT = AUDIO_LANGUAGE_CODE_DUT.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ENG = AUDIO_LANGUAGE_CODE_ENG.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_EST = AUDIO_LANGUAGE_CODE_EST.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_EUS = AUDIO_LANGUAGE_CODE_EUS.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_EWE = AUDIO_LANGUAGE_CODE_EWE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_FIN = AUDIO_LANGUAGE_CODE_FIN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_FRE = AUDIO_LANGUAGE_CODE_FRE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GAA = AUDIO_LANGUAGE_CODE_GAA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GER = AUDIO_LANGUAGE_CODE_GER.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GLA = AUDIO_LANGUAGE_CODE_GLA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GLG = AUDIO_LANGUAGE_CODE_GLG.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GOS = AUDIO_LANGUAGE_CODE_GOS.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GRE = AUDIO_LANGUAGE_CODE_GRE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_GUJ = AUDIO_LANGUAGE_CODE_GUJ.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_HAU = AUDIO_LANGUAGE_CODE_HAU.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_HEB = AUDIO_LANGUAGE_CODE_HEB.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_HIN = AUDIO_LANGUAGE_CODE_HIN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_HRV = AUDIO_LANGUAGE_CODE_HRV.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_HUN = AUDIO_LANGUAGE_CODE_HUN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_IGB = AUDIO_LANGUAGE_CODE_IGB.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_IND = AUDIO_LANGUAGE_CODE_IND.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_IRI = AUDIO_LANGUAGE_CODE_IRI.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ITA = AUDIO_LANGUAGE_CODE_ITA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_JPN = AUDIO_LANGUAGE_CODE_JPN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_KAN = AUDIO_LANGUAGE_CODE_KAN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_KOK = AUDIO_LANGUAGE_CODE_KOK.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_KOR = AUDIO_LANGUAGE_CODE_KOR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_LAV = AUDIO_LANGUAGE_CODE_LAV.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_LIT = AUDIO_LANGUAGE_CODE_LIT.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_MAL = AUDIO_LANGUAGE_CODE_MAL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_MAO = AUDIO_LANGUAGE_CODE_MAO.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_MAR = AUDIO_LANGUAGE_CODE_MAR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_MSA = AUDIO_LANGUAGE_CODE_MSA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_NBL = AUDIO_LANGUAGE_CODE_NBL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_NOR = AUDIO_LANGUAGE_CODE_NOR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_NSO = AUDIO_LANGUAGE_CODE_NSO.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_NZI = AUDIO_LANGUAGE_CODE_NZI.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ORI = AUDIO_LANGUAGE_CODE_ORI.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_PAN = AUDIO_LANGUAGE_CODE_PAN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_PER = AUDIO_LANGUAGE_CODE_PER.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_POL = AUDIO_LANGUAGE_CODE_POL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_POR = AUDIO_LANGUAGE_CODE_POR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_QAA = AUDIO_LANGUAGE_CODE_QAA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_QAB = AUDIO_LANGUAGE_CODE_QAB.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_QAC = AUDIO_LANGUAGE_CODE_QAC.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ROM = AUDIO_LANGUAGE_CODE_ROM.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_RUS = AUDIO_LANGUAGE_CODE_RUS.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SLK = AUDIO_LANGUAGE_CODE_SLK.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SOT = AUDIO_LANGUAGE_CODE_SOT.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SPA = AUDIO_LANGUAGE_CODE_SPA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SRP = AUDIO_LANGUAGE_CODE_SRP.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SSW = AUDIO_LANGUAGE_CODE_SSW.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SWA = AUDIO_LANGUAGE_CODE_SWA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_SWE = AUDIO_LANGUAGE_CODE_SWE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TAM = AUDIO_LANGUAGE_CODE_TAM.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TEL = AUDIO_LANGUAGE_CODE_TEL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_THA = AUDIO_LANGUAGE_CODE_THA.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TSN = AUDIO_LANGUAGE_CODE_TSN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TSO = AUDIO_LANGUAGE_CODE_TSO.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TUR = AUDIO_LANGUAGE_CODE_TUR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_TWI = AUDIO_LANGUAGE_CODE_TWI.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_UKR = AUDIO_LANGUAGE_CODE_UKR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_VAL = AUDIO_LANGUAGE_CODE_VAL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_VEN = AUDIO_LANGUAGE_CODE_VEN.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_VIE = AUDIO_LANGUAGE_CODE_VIE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_WEL = AUDIO_LANGUAGE_CODE_WEL.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_XHO = AUDIO_LANGUAGE_CODE_XHO.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_XSM = AUDIO_LANGUAGE_CODE_XSM.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_YOR = AUDIO_LANGUAGE_CODE_YOR.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_YUE = AUDIO_LANGUAGE_CODE_YUE.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ZHO = AUDIO_LANGUAGE_CODE_ZHO.asInstanceOf[js.Any], AUDIO_LANGUAGE_CODE_ZUL = AUDIO_LANGUAGE_CODE_ZUL.asInstanceOf[js.Any], CAPTION_COLOR_BLACK = CAPTION_COLOR_BLACK.asInstanceOf[js.Any], CAPTION_COLOR_BLUE = CAPTION_COLOR_BLUE.asInstanceOf[js.Any], CAPTION_COLOR_CYAN = CAPTION_COLOR_CYAN.asInstanceOf[js.Any], CAPTION_COLOR_DEFAULT = CAPTION_COLOR_DEFAULT.asInstanceOf[js.Any], CAPTION_COLOR_GREEN = CAPTION_COLOR_GREEN.asInstanceOf[js.Any], CAPTION_COLOR_MAGENTA = CAPTION_COLOR_MAGENTA.asInstanceOf[js.Any], CAPTION_COLOR_RED = CAPTION_COLOR_RED.asInstanceOf[js.Any], CAPTION_COLOR_WHITE = CAPTION_COLOR_WHITE.asInstanceOf[js.Any], CAPTION_COLOR_YELLOW = CAPTION_COLOR_YELLOW.asInstanceOf[js.Any], CAPTION_EDGE_DEPRESSED = CAPTION_EDGE_DEPRESSED.asInstanceOf[js.Any], CAPTION_EDGE_DROP_SHADOWED = CAPTION_EDGE_DROP_SHADOWED.asInstanceOf[js.Any], CAPTION_EDGE_NONE = CAPTION_EDGE_NONE.asInstanceOf[js.Any], CAPTION_EDGE_RAISED = CAPTION_EDGE_RAISED.asInstanceOf[js.Any], CAPTION_EDGE_UNIFORM = CAPTION_EDGE_UNIFORM.asInstanceOf[js.Any], CAPTION_FONT_DEFAULT = CAPTION_FONT_DEFAULT.asInstanceOf[js.Any], CAPTION_FONT_STYLE0 = CAPTION_FONT_STYLE0.asInstanceOf[js.Any], CAPTION_FONT_STYLE1 = CAPTION_FONT_STYLE1.asInstanceOf[js.Any], CAPTION_FONT_STYLE2 = CAPTION_FONT_STYLE2.asInstanceOf[js.Any], CAPTION_FONT_STYLE3 = CAPTION_FONT_STYLE3.asInstanceOf[js.Any], CAPTION_FONT_STYLE4 = CAPTION_FONT_STYLE4.asInstanceOf[js.Any], CAPTION_FONT_STYLE5 = CAPTION_FONT_STYLE5.asInstanceOf[js.Any], CAPTION_FONT_STYLE6 = CAPTION_FONT_STYLE6.asInstanceOf[js.Any], CAPTION_MODE_CC1 = CAPTION_MODE_CC1.asInstanceOf[js.Any], CAPTION_MODE_CC2 = CAPTION_MODE_CC2.asInstanceOf[js.Any], CAPTION_MODE_CC3 = CAPTION_MODE_CC3.asInstanceOf[js.Any], CAPTION_MODE_CC4 = CAPTION_MODE_CC4.asInstanceOf[js.Any], CAPTION_MODE_DEFAULT = CAPTION_MODE_DEFAULT.asInstanceOf[js.Any], CAPTION_MODE_SERVICE1 = CAPTION_MODE_SERVICE1.asInstanceOf[js.Any], CAPTION_MODE_SERVICE2 = CAPTION_MODE_SERVICE2.asInstanceOf[js.Any], CAPTION_MODE_SERVICE3 = CAPTION_MODE_SERVICE3.asInstanceOf[js.Any], CAPTION_MODE_SERVICE4 = CAPTION_MODE_SERVICE4.asInstanceOf[js.Any], CAPTION_MODE_SERVICE5 = CAPTION_MODE_SERVICE5.asInstanceOf[js.Any], CAPTION_MODE_SERVICE6 = CAPTION_MODE_SERVICE6.asInstanceOf[js.Any], CAPTION_MODE_TEXT1 = CAPTION_MODE_TEXT1.asInstanceOf[js.Any], CAPTION_MODE_TEXT2 = CAPTION_MODE_TEXT2.asInstanceOf[js.Any], CAPTION_MODE_TEXT3 = CAPTION_MODE_TEXT3.asInstanceOf[js.Any], CAPTION_MODE_TEXT4 = CAPTION_MODE_TEXT4.asInstanceOf[js.Any], CAPTION_OFF = CAPTION_OFF.asInstanceOf[js.Any], CAPTION_ON = CAPTION_ON.asInstanceOf[js.Any], CAPTION_OPACITY_DEFAULT = CAPTION_OPACITY_DEFAULT.asInstanceOf[js.Any], CAPTION_OPACITY_FLASH = CAPTION_OPACITY_FLASH.asInstanceOf[js.Any], CAPTION_OPACITY_HIGHLY_TRANSLUCENT = CAPTION_OPACITY_HIGHLY_TRANSLUCENT.asInstanceOf[js.Any], CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT.asInstanceOf[js.Any], CAPTION_OPACITY_SOLID = CAPTION_OPACITY_SOLID.asInstanceOf[js.Any], CAPTION_OPACITY_TRANSLUCENT = CAPTION_OPACITY_TRANSLUCENT.asInstanceOf[js.Any], CAPTION_OPACITY_TRANSPARENT = CAPTION_OPACITY_TRANSPARENT.asInstanceOf[js.Any], CAPTION_SIZE_DEFAULT = CAPTION_SIZE_DEFAULT.asInstanceOf[js.Any], CAPTION_SIZE_EXTRA_LARGE = CAPTION_SIZE_EXTRA_LARGE.asInstanceOf[js.Any], CAPTION_SIZE_LARGE = CAPTION_SIZE_LARGE.asInstanceOf[js.Any], CAPTION_SIZE_SMALL = CAPTION_SIZE_SMALL.asInstanceOf[js.Any], CAPTION_SIZE_STANDARD = CAPTION_SIZE_STANDARD.asInstanceOf[js.Any], CAPTION_STYLE_BOLD = CAPTION_STYLE_BOLD.asInstanceOf[js.Any], CAPTION_STYLE_DEFAULT = CAPTION_STYLE_DEFAULT.asInstanceOf[js.Any], CAPTION_STYLE_ITALIC = CAPTION_STYLE_ITALIC.asInstanceOf[js.Any], OFF = OFF.asInstanceOf[js.Any], ON = ON.asInstanceOf[js.Any], SUBTITLE_HEARING_IMMPEARED = SUBTITLE_HEARING_IMMPEARED.asInstanceOf[js.Any], SUBTITLE_NORMAL = SUBTITLE_NORMAL.asInstanceOf[js.Any], VOICEGUIDE_SPEED_FAST = VOICEGUIDE_SPEED_FAST.asInstanceOf[js.Any], VOICEGUIDE_SPEED_NORMAL = VOICEGUIDE_SPEED_NORMAL.asInstanceOf[js.Any], VOICEGUIDE_SPEED_SLOW = VOICEGUIDE_SPEED_SLOW.asInstanceOf[js.Any], VOICEGUIDE_SPEED_VERY_FAST = VOICEGUIDE_SPEED_VERY_FAST.asInstanceOf[js.Any], VOICEGUIDE_SPEED_VERY_SLOW = VOICEGUIDE_SPEED_VERY_SLOW.asInstanceOf[js.Any])
+  def apply(): AUDIOLANGUAGECODEAFR = {
+    val __obj = js.Dynamic.literal(AUDIO_LANGUAGE_CODE_AFR = "AFR", AUDIO_LANGUAGE_CODE_AKA = "AKA", AUDIO_LANGUAGE_CODE_AMH = "AMH", AUDIO_LANGUAGE_CODE_ARA = "ARA", AUDIO_LANGUAGE_CODE_ASM = "ASM", AUDIO_LANGUAGE_CODE_BEN = "BEN", AUDIO_LANGUAGE_CODE_BUL = "BUL", AUDIO_LANGUAGE_CODE_CAT = "CAT", AUDIO_LANGUAGE_CODE_CHI = "CHI", AUDIO_LANGUAGE_CODE_CMN = "CMN", AUDIO_LANGUAGE_CODE_CZE = "CZE", AUDIO_LANGUAGE_CODE_DAG = "DAG", AUDIO_LANGUAGE_CODE_DAN = "DAN", AUDIO_LANGUAGE_CODE_DUT = "DUT", AUDIO_LANGUAGE_CODE_ENG = "ENG", AUDIO_LANGUAGE_CODE_EST = "EST", AUDIO_LANGUAGE_CODE_EUS = "EUS", AUDIO_LANGUAGE_CODE_EWE = "EWE", AUDIO_LANGUAGE_CODE_FIN = "FIN", AUDIO_LANGUAGE_CODE_FRE = "FRE", AUDIO_LANGUAGE_CODE_GAA = "GAA", AUDIO_LANGUAGE_CODE_GER = "GER", AUDIO_LANGUAGE_CODE_GLA = "GLA", AUDIO_LANGUAGE_CODE_GLG = "GLG", AUDIO_LANGUAGE_CODE_GOS = "GOS", AUDIO_LANGUAGE_CODE_GRE = "GRE", AUDIO_LANGUAGE_CODE_GUJ = "GUJ", AUDIO_LANGUAGE_CODE_HAU = "HAU", AUDIO_LANGUAGE_CODE_HEB = "HEB", AUDIO_LANGUAGE_CODE_HIN = "HIN", AUDIO_LANGUAGE_CODE_HRV = "HRV", AUDIO_LANGUAGE_CODE_HUN = "HUN", AUDIO_LANGUAGE_CODE_IGB = "IGB", AUDIO_LANGUAGE_CODE_IND = "IND", AUDIO_LANGUAGE_CODE_IRI = "IRI", AUDIO_LANGUAGE_CODE_ITA = "ITA", AUDIO_LANGUAGE_CODE_JPN = "JPN", AUDIO_LANGUAGE_CODE_KAN = "KAN", AUDIO_LANGUAGE_CODE_KOK = "KOK", AUDIO_LANGUAGE_CODE_KOR = "KOR", AUDIO_LANGUAGE_CODE_LAV = "LAV", AUDIO_LANGUAGE_CODE_LIT = "LIT", AUDIO_LANGUAGE_CODE_MAL = "MAL", AUDIO_LANGUAGE_CODE_MAO = "MAO", AUDIO_LANGUAGE_CODE_MAR = "MAR", AUDIO_LANGUAGE_CODE_MSA = "MSA", AUDIO_LANGUAGE_CODE_NBL = "NBL", AUDIO_LANGUAGE_CODE_NOR = "NOR", AUDIO_LANGUAGE_CODE_NSO = "NSO", AUDIO_LANGUAGE_CODE_NZI = "NZI", AUDIO_LANGUAGE_CODE_ORI = "ORI", AUDIO_LANGUAGE_CODE_PAN = "PAN", AUDIO_LANGUAGE_CODE_PER = "PER", AUDIO_LANGUAGE_CODE_POL = "POL", AUDIO_LANGUAGE_CODE_POR = "POR", AUDIO_LANGUAGE_CODE_QAA = "QAA", AUDIO_LANGUAGE_CODE_QAB = "QAB", AUDIO_LANGUAGE_CODE_QAC = "QAC", AUDIO_LANGUAGE_CODE_ROM = "ROM", AUDIO_LANGUAGE_CODE_RUS = "RUS", AUDIO_LANGUAGE_CODE_SLK = "SLK", AUDIO_LANGUAGE_CODE_SOT = "SOT", AUDIO_LANGUAGE_CODE_SPA = "SPA", AUDIO_LANGUAGE_CODE_SRP = "SRP", AUDIO_LANGUAGE_CODE_SSW = "SSW", AUDIO_LANGUAGE_CODE_SWA = "SWA", AUDIO_LANGUAGE_CODE_SWE = "SWE", AUDIO_LANGUAGE_CODE_TAM = "TAM", AUDIO_LANGUAGE_CODE_TEL = "TEL", AUDIO_LANGUAGE_CODE_THA = "THA", AUDIO_LANGUAGE_CODE_TSN = "TSN", AUDIO_LANGUAGE_CODE_TSO = "TSO", AUDIO_LANGUAGE_CODE_TUR = "TUR", AUDIO_LANGUAGE_CODE_TWI = "TWI", AUDIO_LANGUAGE_CODE_UKR = "UKR", AUDIO_LANGUAGE_CODE_VAL = "VAL", AUDIO_LANGUAGE_CODE_VEN = "VEN", AUDIO_LANGUAGE_CODE_VIE = "VIE", AUDIO_LANGUAGE_CODE_WEL = "WEL", AUDIO_LANGUAGE_CODE_XHO = "XHO", AUDIO_LANGUAGE_CODE_XSM = "XSM", AUDIO_LANGUAGE_CODE_YOR = "YOR", AUDIO_LANGUAGE_CODE_YUE = "YUE", AUDIO_LANGUAGE_CODE_ZHO = "ZHO", AUDIO_LANGUAGE_CODE_ZUL = "ZUL", CAPTION_COLOR_BLACK = 2, CAPTION_COLOR_BLUE = 5, CAPTION_COLOR_CYAN = 8, CAPTION_COLOR_DEFAULT = 0, CAPTION_COLOR_GREEN = 4, CAPTION_COLOR_MAGENTA = 7, CAPTION_COLOR_RED = 3, CAPTION_COLOR_WHITE = 1, CAPTION_COLOR_YELLOW = 6, CAPTION_EDGE_DEPRESSED = 2, CAPTION_EDGE_DROP_SHADOWED = 4, CAPTION_EDGE_NONE = 0, CAPTION_EDGE_RAISED = 1, CAPTION_EDGE_UNIFORM = 3, CAPTION_FONT_DEFAULT = 0, CAPTION_FONT_STYLE0 = 1, CAPTION_FONT_STYLE1 = 2, CAPTION_FONT_STYLE2 = 3, CAPTION_FONT_STYLE3 = 4, CAPTION_FONT_STYLE4 = 5, CAPTION_FONT_STYLE5 = 6, CAPTION_FONT_STYLE6 = 7, CAPTION_MODE_CC1 = 7, CAPTION_MODE_CC2 = 8, CAPTION_MODE_CC3 = 9, CAPTION_MODE_CC4 = 10, CAPTION_MODE_DEFAULT = 0, CAPTION_MODE_SERVICE1 = 1, CAPTION_MODE_SERVICE2 = 2, CAPTION_MODE_SERVICE3 = 3, CAPTION_MODE_SERVICE4 = 4, CAPTION_MODE_SERVICE5 = 5, CAPTION_MODE_SERVICE6 = 6, CAPTION_MODE_TEXT1 = 11, CAPTION_MODE_TEXT2 = 12, CAPTION_MODE_TEXT3 = 13, CAPTION_MODE_TEXT4 = 14, CAPTION_OFF = 0, CAPTION_ON = 1, CAPTION_OPACITY_DEFAULT = 4, CAPTION_OPACITY_FLASH = 1, CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5, CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6, CAPTION_OPACITY_SOLID = 0, CAPTION_OPACITY_TRANSLUCENT = 2, CAPTION_OPACITY_TRANSPARENT = 3, CAPTION_SIZE_DEFAULT = 0, CAPTION_SIZE_EXTRA_LARGE = 4, CAPTION_SIZE_LARGE = 3, CAPTION_SIZE_SMALL = 1, CAPTION_SIZE_STANDARD = 2, CAPTION_STYLE_BOLD = 1, CAPTION_STYLE_DEFAULT = 0, CAPTION_STYLE_ITALIC = 2, OFF = 0, ON = 1, SUBTITLE_HEARING_IMMPEARED = 1, SUBTITLE_NORMAL = 0, VOICEGUIDE_SPEED_FAST = "FAST", VOICEGUIDE_SPEED_NORMAL = "NORMAL", VOICEGUIDE_SPEED_SLOW = "SLOW", VOICEGUIDE_SPEED_VERY_FAST = "VERY_FAST", VOICEGUIDE_SPEED_VERY_SLOW = "VERY_SLOW")
     __obj.asInstanceOf[AUDIOLANGUAGECODEAFR]
   }
   

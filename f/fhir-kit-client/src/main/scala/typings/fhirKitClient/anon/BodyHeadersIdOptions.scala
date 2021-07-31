@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ActivityDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyHeadersIdOptions extends StObject {
   
-  var body: ActivityDefinition = js.native
+  var body: ActivityDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition
 }
 object BodyHeadersIdOptions {
   
   @scala.inline
-  def apply(
-    body: ActivityDefinition,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition
-  ): BodyHeadersIdOptions = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ActivityDefinition, id: String): BodyHeadersIdOptions = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "ActivityDefinition")
     __obj.asInstanceOf[BodyHeadersIdOptions]
   }
   

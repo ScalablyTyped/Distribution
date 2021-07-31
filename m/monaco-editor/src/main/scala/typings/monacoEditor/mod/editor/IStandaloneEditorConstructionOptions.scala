@@ -2,12 +2,11 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStandaloneEditorConstructionOptions
-  extends IEditorConstructionOptions
+  extends StObject
+     with IEditorConstructionOptions
      with IGlobalEditorOptions {
   
   /**
@@ -16,24 +15,24 @@ trait IStandaloneEditorConstructionOptions
     *
     * Defaults to "https://go.microsoft.com/fwlink/?linkid=852450"
     */
-  var accessibilityHelpUrl: js.UndefOr[String] = js.native
+  var accessibilityHelpUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The initial language of the auto created model in the editor.
     * To not create automatically a model, use `model: null`.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The initial model associated with this code editor.
     */
-  var model: js.UndefOr[ITextModel | Null] = js.native
+  var model: js.UndefOr[ITextModel | Null] = js.undefined
   
   /**
     * The initial value of the auto created model in the editor.
     * To not create automatically a model, use `model: null`.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object IStandaloneEditorConstructionOptions {
   

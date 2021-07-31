@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.anon.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "ChangeStream")
 @js.native
-class ChangeStream[TSchema /* <: StringDictionary[js.Any] */] protected () extends TypedEventEmitter[ChangeStreamEvents[TSchema]] {
+class ChangeStream[TSchema /* <: StringDictionary[js.Any] */] protected ()
+  extends StObject
+     with TypedEventEmitter[ChangeStreamEvents[TSchema]] {
   def this(parent: Collection[DefaultSchema], pipeline: js.Array[js.Object]) = this()
   def this(parent: Db, pipeline: js.Array[js.Object]) = this()
   def this(parent: MongoClient, pipeline: js.Array[js.Object]) = this()
@@ -18,19 +19,19 @@ class ChangeStream[TSchema /* <: StringDictionary[js.Any] */] protected () exten
   def this(parent: MongoClient, pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#close */
-  def close(): js.Promise[_] = js.native
-  def close(callback: MongoCallback[_]): Unit = js.native
+  def close(): js.Promise[js.Any] = js.native
+  def close(callback: MongoCallback[js.Any]): Unit = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#hasNext */
-  def hasNext(): js.Promise[_] = js.native
-  def hasNext(callback: MongoCallback[_]): Unit = js.native
+  def hasNext(): js.Promise[js.Any] = js.native
+  def hasNext(callback: MongoCallback[js.Any]): Unit = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#isClosed */
   def isClosed(): Boolean = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#next */
-  def next(): js.Promise[_] = js.native
-  def next(callback: MongoCallback[_]): Unit = js.native
+  def next(): js.Promise[js.Any] = js.native
+  def next(callback: MongoCallback[js.Any]): Unit = js.native
   
   var resumeToken: ResumeToken = js.native
   

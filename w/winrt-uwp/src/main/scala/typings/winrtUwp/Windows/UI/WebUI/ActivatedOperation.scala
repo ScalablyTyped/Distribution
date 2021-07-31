@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages an app activation operation. */
-@js.native
 trait ActivatedOperation extends StObject {
   
   /**
     * Requests that the completion of app activation be delayed.
     * @return The activation deferral object.
     */
-  def getDeferral(): ActivatedDeferral = js.native
+  def getDeferral(): ActivatedDeferral
 }
 object ActivatedOperation {
   

@@ -7,7 +7,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formFeedbackMod {
@@ -19,18 +18,18 @@ object formFeedbackMod {
   
   type FormFeedback = Component[FormFeedbackProps, js.Object, js.Any]
   
-  @js.native
   trait FormFeedbackProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean] = js.native
+    var tooltip: js.UndefOr[Boolean] = js.undefined
     
-    var valid: js.UndefOr[Boolean] = js.native
+    var valid: js.UndefOr[Boolean] = js.undefined
   }
   object FormFeedbackProps {
     

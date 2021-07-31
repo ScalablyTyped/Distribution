@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworklo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssuredworkloadsV1WorkloadResourceInfo extends StObject {
   
   /** Resource identifier. For a project this represents project_number. */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /** Indicates the type of resource. */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1WorkloadResourceInfo {
   

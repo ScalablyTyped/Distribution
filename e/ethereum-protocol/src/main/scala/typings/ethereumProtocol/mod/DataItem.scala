@@ -2,17 +2,15 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataItem extends StObject {
   
-  var components: js.UndefOr[js.Array[DataItem]] = js.native
+  var components: js.UndefOr[js.Array[DataItem]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object DataItem {
   

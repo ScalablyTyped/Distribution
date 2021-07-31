@@ -18,7 +18,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,21 +29,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ChartTitle
   * @see ChartDataArray
   */
-@js.native
 trait ChartDocument
-  extends XChartDocument
+  extends StObject
      with UserDefinedAttributesSupplier
+     with XChartDocument
      with XPropertySet
      with XDrawPageSupplier {
   
   /** determines if the legend is shown or hidden. */
-  var HasLegend: Boolean = js.native
+  var HasLegend: Boolean
   
   /** determines if the main title is shown or hidden. */
-  var HasMainTitle: Boolean = js.native
+  var HasMainTitle: Boolean
   
   /** determines if the subtitle is shown or hidden. */
-  var HasSubTitle: Boolean = js.native
+  var HasSubTitle: Boolean
 }
 object ChartDocument {
   

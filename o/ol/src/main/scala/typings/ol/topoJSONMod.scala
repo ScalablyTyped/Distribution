@@ -14,7 +14,6 @@ import typings.topojsonSpecification.mod.Properties
 import typings.topojsonSpecification.mod.Topology
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topoJSONMod {
@@ -25,14 +24,13 @@ object topoJSONMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var dataProjection: js.UndefOr[ProjectionLike] = js.native
+    var dataProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var layerName: js.UndefOr[String] = js.native
+    var layerName: js.UndefOr[String] = js.undefined
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

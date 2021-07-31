@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.uint16
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.uint8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dtype extends StObject {
   
-  var dtype: uint16 | uint8 | float16 = js.native
+  var dtype: uint16 | uint8 | float16
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object Dtype {
   

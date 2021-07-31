@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TableOptions extends StObject {
   
   /**
     * The columns that are the primary keys for table objects included in ContentItem. A copy of this cell's value will stored alongside alongside each finding so that the finding can be
     * traced to the specific row it came from. No more than 3 may be provided.
     */
-  var identifyingFields: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.native
+  var identifyingFields: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.undefined
 }
 object GooglePrivacyDlpV2TableOptions {
   

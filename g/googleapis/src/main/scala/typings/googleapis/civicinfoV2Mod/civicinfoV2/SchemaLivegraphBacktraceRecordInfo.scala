@@ -2,43 +2,41 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLivegraphBacktraceRecordInfo extends StObject {
   
-  var dataSourcePublishMsec: js.UndefOr[String] = js.native
+  var dataSourcePublishMsec: js.UndefOr[String] = js.undefined
   
-  var expId: js.UndefOr[String] = js.native
+  var expId: js.UndefOr[String] = js.undefined
   
-  var expInfo: js.UndefOr[SchemaLivegraphBacktraceRecordInfoExpInfo] = js.native
+  var expInfo: js.UndefOr[SchemaLivegraphBacktraceRecordInfoExpInfo] = js.undefined
   
-  var isRecon: js.UndefOr[Boolean] = js.native
+  var isRecon: js.UndefOr[Boolean] = js.undefined
   
-  var isWlmThrottled: js.UndefOr[Boolean] = js.native
+  var isWlmThrottled: js.UndefOr[Boolean] = js.undefined
   
-  var numberOfTriples: js.UndefOr[String] = js.native
+  var numberOfTriples: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
-  var process: js.UndefOr[String] = js.native
+  var process: js.UndefOr[String] = js.undefined
   
-  var proxyReceiveMsec: js.UndefOr[String] = js.native
+  var proxyReceiveMsec: js.UndefOr[String] = js.undefined
   
-  var proxySentMsec: js.UndefOr[String] = js.native
+  var proxySentMsec: js.UndefOr[String] = js.undefined
   
-  var recordId: js.UndefOr[String] = js.native
+  var recordId: js.UndefOr[String] = js.undefined
   
-  var shouldMonitorLatency: js.UndefOr[Boolean] = js.native
+  var shouldMonitorLatency: js.UndefOr[Boolean] = js.undefined
   
-  var subscriberReceiveMsec: js.UndefOr[String] = js.native
+  var subscriberReceiveMsec: js.UndefOr[String] = js.undefined
   
-  var topicBuildFinishMsec: js.UndefOr[String] = js.native
+  var topicBuildFinishMsec: js.UndefOr[String] = js.undefined
   
-  var topicBuildStartMsec: js.UndefOr[String] = js.native
+  var topicBuildStartMsec: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaLivegraphBacktraceRecordInfo {
   

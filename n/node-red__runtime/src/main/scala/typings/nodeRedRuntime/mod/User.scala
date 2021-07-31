@@ -1,9 +1,7 @@
 package typings.nodeRedRuntime.mod
 
-import typings.nodeRedRuntime.nodeRedRuntimeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +12,8 @@ trait User extends StObject
 object User {
   
   @scala.inline
-  def AnonymousPermissions(anonymous: `true`, permissions: Permission | js.Array[Permission]): typings.nodeRedRuntime.mod.AnonymousPermissions = {
-    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
+  def AnonymousPermissions(permissions: Permission | js.Array[Permission]): typings.nodeRedRuntime.mod.AnonymousPermissions = {
+    val __obj = js.Dynamic.literal(anonymous = true, permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeRedRuntime.mod.AnonymousPermissions]
   }
   

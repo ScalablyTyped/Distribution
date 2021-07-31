@@ -3,15 +3,13 @@ package typings.atmosphereJs
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Atmosphere {
   
-  @js.native
   trait Atmosphere extends StObject {
     
-    var AtmosphereRequest: js.UndefOr[typings.atmosphereJs.Atmosphere.AtmosphereRequest] = js.native
+    var AtmosphereRequest: js.UndefOr[typings.atmosphereJs.Atmosphere.AtmosphereRequest] = js.undefined
     
     /**
       * The atmosphere API is a little bit special here: the first parameter can either be
@@ -24,9 +22,9 @@ object Atmosphere {
           /* request */ js.UndefOr[Request], 
           Request
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var unsubscribe: js.UndefOr[js.Function0[Unit]] = js.native
+    var unsubscribe: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Atmosphere {
     
@@ -64,140 +62,141 @@ object Atmosphere {
   // needed to fit JavaScript "new atmosphere.AtmosphereRequest()"
   // and compile with --noImplicitAny
   @js.native
-  trait AtmosphereRequest extends Instantiable0[Request]
+  trait AtmosphereRequest
+    extends StObject
+       with Instantiable0[Request]
   
-  @js.native
   trait Request extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var attachHeadersAsQueryString: js.UndefOr[Boolean] = js.native
+    var attachHeadersAsQueryString: js.UndefOr[Boolean] = js.undefined
     
-    var callback: js.UndefOr[js.Function] = js.native
+    var callback: js.UndefOr[js.Function] = js.undefined
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var disableDisconnect: js.UndefOr[Boolean] = js.native
+    var disableDisconnect: js.UndefOr[Boolean] = js.undefined
     
-    var disconnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var dispatchUrl: js.UndefOr[String] = js.native
+    var dispatchUrl: js.UndefOr[String] = js.undefined
     
-    var dropHeaders: js.UndefOr[Boolean] = js.native
+    var dropHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var enableProtocol: js.UndefOr[Boolean] = js.native
+    var enableProtocol: js.UndefOr[Boolean] = js.undefined
     
-    var enableXDR: js.UndefOr[Boolean] = js.native
+    var enableXDR: js.UndefOr[Boolean] = js.undefined
     
-    var execute: js.UndefOr[js.Function0[Unit]] = js.native
+    var execute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var executeCallbackBeforeReconnect: js.UndefOr[Boolean] = js.native
+    var executeCallbackBeforeReconnect: js.UndefOr[Boolean] = js.undefined
     
-    var fallbackMethod: js.UndefOr[String] = js.native
+    var fallbackMethod: js.UndefOr[String] = js.undefined
     
-    var fallbackTransport: js.UndefOr[String] = js.native
+    var fallbackTransport: js.UndefOr[String] = js.undefined
     
-    var getUUID: js.UndefOr[js.Function0[Unit]] = js.native
+    var getUUID: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getUrl: js.UndefOr[js.Function0[String]] = js.native
+    var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var lastIndex: js.UndefOr[Double] = js.native
+    var lastIndex: js.UndefOr[Double] = js.undefined
     
-    var lastTimestamp: js.UndefOr[Double] = js.native
+    var lastTimestamp: js.UndefOr[Double] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var maxReconnectOnClose: js.UndefOr[Double] = js.native
+    var maxReconnectOnClose: js.UndefOr[Double] = js.undefined
     
-    var maxRequest: js.UndefOr[Double] = js.native
+    var maxRequest: js.UndefOr[Double] = js.undefined
     
-    var maxStreamingLength: js.UndefOr[Double] = js.native
+    var maxStreamingLength: js.UndefOr[Double] = js.undefined
     
-    var messageDelimiter: js.UndefOr[String] = js.native
+    var messageDelimiter: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var onClientTimeout: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.native
+    var onClientTimeout: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
     
     var onFailureToReconnect: js.UndefOr[
         js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onLocalMessage: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.native
+    var onLocalMessage: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.undefined
     
-    var onMessage: js.UndefOr[js.Function1[/* response */ Response, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* response */ Response, Unit]] = js.undefined
     
-    var onMessagePublished: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+    var onMessagePublished: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
     
     var onReconnect: js.UndefOr[
         js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onReopen: js.UndefOr[
         js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onTransportFailure: js.UndefOr[
         js.Function2[/* reason */ js.UndefOr[String], /* response */ js.UndefOr[Response], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var pollingInterval: js.UndefOr[Double] = js.native
+    var pollingInterval: js.UndefOr[Double] = js.undefined
     
-    var push: js.UndefOr[js.Function2[/* message */ String, /* dispatchUrl */ js.UndefOr[String], Unit]] = js.native
+    var push: js.UndefOr[js.Function2[/* message */ String, /* dispatchUrl */ js.UndefOr[String], Unit]] = js.undefined
     
-    var pushLocal: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var pushLocal: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
-    var readResponsesHeaders: js.UndefOr[Boolean] = js.native
+    var readResponsesHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var readyState: js.UndefOr[Double] = js.native
+    var readyState: js.UndefOr[Double] = js.undefined
     
-    var reconnect: js.UndefOr[Boolean] = js.native
+    var reconnect: js.UndefOr[Boolean] = js.undefined
     
-    var reconnectInterval: js.UndefOr[Double] = js.native
+    var reconnectInterval: js.UndefOr[Double] = js.undefined
     
-    var requestCount: js.UndefOr[Double] = js.native
+    var requestCount: js.UndefOr[Double] = js.undefined
     
-    var rewriteURL: js.UndefOr[Boolean] = js.native
+    var rewriteURL: js.UndefOr[Boolean] = js.undefined
     
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
     
-    var subscribe: js.UndefOr[js.Function1[/* options */ this.type, Unit]] = js.native
+    var subscribe: js.UndefOr[js.Function1[/* options */ this.type, Unit]] = js.undefined
     
-    var suspend: js.UndefOr[Boolean] = js.native
+    var suspend: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var trackMessageLength: js.UndefOr[Boolean] = js.native
+    var trackMessageLength: js.UndefOr[Boolean] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
     
-    var webSocketBinaryType: js.UndefOr[js.Any] = js.native
+    var webSocketBinaryType: js.UndefOr[js.Any] = js.undefined
     
-    var webSocketImpl: js.UndefOr[js.Any] = js.native
+    var webSocketImpl: js.UndefOr[js.Any] = js.undefined
     
-    var webSocketPathDelimiter: js.UndefOr[String] = js.native
+    var webSocketPathDelimiter: js.UndefOr[String] = js.undefined
     
-    var webSocketUrl: js.UndefOr[String] = js.native
+    var webSocketUrl: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object Request {
     
@@ -578,32 +577,31 @@ object Atmosphere {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var closedByClientTimeout: js.UndefOr[Boolean] = js.native
+    var closedByClientTimeout: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var errorHandled: js.UndefOr[Boolean] = js.native
+    var errorHandled: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var messages: js.UndefOr[js.Array[String]] = js.native
+    var messages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var partialMessage: js.UndefOr[String] = js.native
+    var partialMessage: js.UndefOr[String] = js.undefined
     
-    var reasonPhrase: js.UndefOr[String] = js.native
+    var reasonPhrase: js.UndefOr[String] = js.undefined
     
-    var request: js.UndefOr[Request] = js.native
+    var request: js.UndefOr[Request] = js.undefined
     
-    var responseBody: js.UndefOr[String] = js.native
+    var responseBody: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[String] = js.native
+    var transport: js.UndefOr[String] = js.undefined
   }
   object Response {
     

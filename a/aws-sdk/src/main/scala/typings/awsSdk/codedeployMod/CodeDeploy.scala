@@ -8,7 +8,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -127,7 +126,7 @@ trait CodeDeploy extends Service {
   ): Request[BatchGetOnPremisesInstancesOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeDeploy: ConfigBase with ClientConfiguration = js.native
+  var config_CodeDeploy: ConfigBase & ClientConfiguration = js.native
   
   /**
     * For a blue/green deployment, starts the process of rerouting traffic from instances in the original environment to instances in the replacement environment without waiting for a specified wait time to elapse. (Traffic rerouting, which is achieved by registering instances in the replacement environment with the load balancer, can start as soon as all instances have a status of Ready.) 

@@ -8,96 +8,96 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputProps extends TextInputProps {
+trait InputProps
+  extends StObject
+     with TextInputProps {
   
   /**
     * Renders component in place of the React Native `TextInput` (optional)
     */
-  var InputComponent: js.UndefOr[ComponentType[_]] = js.native
+  var InputComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
   /**
     * Styling for Input Component Container (optional)
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Disables the input field
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Style of the input field when disabled
     */
-  var disabledInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * 	Adds error message (optional)
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * 	props to be passed to the React Native Text component used to display the error message (optional)
     */
-  var errorProps: js.UndefOr[TextProps] = js.native
+  var errorProps: js.UndefOr[TextProps] = js.undefined
   
   /**
     * 	Add styling to error message (optional)
     */
-  var errorStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var errorStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Styling for Input Component Container (optional)
     */
-  var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * 	Adds styling to input component (optional)
     */
-  var inputStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var inputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * 	Adds label (optional)
     */
-  var label: js.UndefOr[String | ReactElement] = js.native
+  var label: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     *  props to be passed to the React Native Text component used to display the label (optional)
     */
-  var labelProps: js.UndefOr[TextProps] = js.native
+  var labelProps: js.UndefOr[TextProps] = js.undefined
   
   /**
     * 	Add styling to label (optional)
     */
-  var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Displays an icon to the left (optional)
     */
-  var leftIcon: js.UndefOr[IconNode] = js.native
+  var leftIcon: js.UndefOr[IconNode] = js.undefined
   
   /**
     * Styling for left Icon Component container
     */
-  var leftIconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var leftIconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     *  displays error message
     */
-  var renderErrorMessage: js.UndefOr[Boolean] = js.native
+  var renderErrorMessage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Displays an icon to the right (optional)
     */
-  var rightIcon: js.UndefOr[IconNode] = js.native
+  var rightIcon: js.UndefOr[IconNode] = js.undefined
   
   /**
     * Styling for the right icon container
     */
-  var rightIconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var rightIconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object InputProps {
   
@@ -156,7 +156,7 @@ object InputProps {
     def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
     @scala.inline
-    def setInputComponent(value: ComponentType[_]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
+    def setInputComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)

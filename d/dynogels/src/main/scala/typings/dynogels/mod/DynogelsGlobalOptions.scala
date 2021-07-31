@@ -3,14 +3,12 @@ package typings.dynogels.mod
 import typings.dynogels.anon.PollingInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynogelsGlobalOptions extends StObject {
   
   @JSName("$dynogels")
-  var $dynogels: PollingInterval = js.native
+  var $dynogels: PollingInterval
 }
 object DynogelsGlobalOptions {
   

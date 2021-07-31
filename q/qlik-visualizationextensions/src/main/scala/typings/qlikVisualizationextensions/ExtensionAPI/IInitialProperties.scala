@@ -2,25 +2,23 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInitialProperties extends StObject {
   
   // IListObjectDef;
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
-  var percent: js.UndefOr[Boolean] = js.native
+  var percent: js.UndefOr[Boolean] = js.undefined
   
-  var qHyperCubeDef: js.UndefOr[js.Any] = js.native
+  var qHyperCubeDef: js.UndefOr[js.Any] = js.undefined
   
   // IHyperCubeDef;
-  var qListObjectDef: js.UndefOr[js.Any] = js.native
+  var qListObjectDef: js.UndefOr[js.Any] = js.undefined
   
-  var selectionMode: js.UndefOr[SelectionModeType] = js.native
+  var selectionMode: js.UndefOr[SelectionModeType] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IInitialProperties {
   

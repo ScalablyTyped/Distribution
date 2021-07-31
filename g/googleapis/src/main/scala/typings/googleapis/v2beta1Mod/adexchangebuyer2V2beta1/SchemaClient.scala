@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * sections of the Authorized Buyers UI based on the role granted to the
   * client buyer. All fields are required unless otherwise specified.
   */
-@js.native
 trait SchemaClient extends StObject {
   
   /**
     * The globally-unique numerical ID of the client. The value of this field
     * is ignored in create and update operations.
     */
-  var clientAccountId: js.UndefOr[String] = js.native
+  var clientAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Name used to represent this client to publishers. You may have multiple
@@ -27,7 +25,7 @@ trait SchemaClient extends StObject {
     * of `clientName` and entity must be unique. You can specify this field as
     * empty.
     */
-  var clientName: js.UndefOr[String] = js.native
+  var clientName: js.UndefOr[String] = js.undefined
   
   /**
     * Numerical identifier of the client entity. The entity can be an
@@ -43,19 +41,19 @@ trait SchemaClient extends StObject {
     * [agencies.txt](https://storage.googleapis.com/adx-rtb-dictionaries/agencies.txt)
     * file.
     */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the entity. This field is automatically fetched based on the
     * type and ID. The value of this field is ignored in create and update
     * operations.
     */
-  var entityName: js.UndefOr[String] = js.native
+  var entityName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the client entity: `ADVERTISER`, `BRAND`, or `AGENCY`.
     */
-  var entityType: js.UndefOr[String] = js.native
+  var entityType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional arbitrary unique identifier of this client buyer from the
@@ -66,24 +64,24 @@ trait SchemaClient extends StObject {
     * present, must be unique among all the client buyers for its Ad Exchange
     * sponsor buyer.
     */
-  var partnerClientId: js.UndefOr[String] = js.native
+  var partnerClientId: js.UndefOr[String] = js.undefined
   
   /**
     * The role which is assigned to the client buyer. Each role implies a set
     * of permissions granted to the client. Must be one of
     * `CLIENT_DEAL_VIEWER`, `CLIENT_DEAL_NEGOTIATOR` or `CLIENT_DEAL_APPROVER`.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the client buyer.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the client buyer will be visible to sellers.
     */
-  var visibleToSeller: js.UndefOr[Boolean] = js.native
+  var visibleToSeller: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaClient {
   

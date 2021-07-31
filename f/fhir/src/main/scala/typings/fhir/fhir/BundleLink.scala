@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Links related to this Bundle
   */
-@js.native
-trait BundleLink extends BackboneElement {
+trait BundleLink
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'relation'.
     */
-  var _relation: js.UndefOr[Element] = js.native
+  var _relation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * See http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1
     */
-  var relation: String = js.native
+  var relation: String
   
   /**
     * Reference details for the link
     */
-  var url: uri = js.native
+  var url: uri
 }
 object BundleLink {
   

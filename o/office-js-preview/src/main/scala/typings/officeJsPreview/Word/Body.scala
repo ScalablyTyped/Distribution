@@ -29,7 +29,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.Whole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait Body extends ClientObject {
+trait Body
+  extends StObject
+     with ClientObject {
   
   /**
     * Clears the contents of the body object. The user can perform the undo operation on the cleared content.

@@ -4,24 +4,13 @@ import typings.chance.chanceStrings.lower
 import typings.chance.chanceStrings.upper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chance.Chance.CharacterOptions & {  length :number} */
-@js.native
-trait StringOptions extends StObject {
+trait StringOptions
+  extends StObject
+     with CharacterOptions {
   
-  var alpha: Boolean = js.native
-  
-  var casing: upper | lower = js.native
-  
-  var length: Double = js.native
-  
-  var numeric: Boolean = js.native
-  
-  var pool: String = js.native
-  
-  var symbols: Boolean = js.native
+  var length: Double
 }
 object StringOptions {
   
@@ -42,21 +31,6 @@ object StringOptions {
   implicit class StringOptionsMutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCasing(value: upper | lower): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
     def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
   }
 }

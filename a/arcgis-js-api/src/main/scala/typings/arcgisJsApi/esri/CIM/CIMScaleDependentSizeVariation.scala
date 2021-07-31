@@ -2,30 +2,28 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMScaleDependentSizeVariation extends StObject {
   
   /**
     * The scale the size is associated with.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The size for the associated scale.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMScaleDependentSizeVariation = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMScaleDependentSizeVariation
 }
 object CIMScaleDependentSizeVariation {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMScaleDependentSizeVariation): CIMScaleDependentSizeVariation = {
+  def apply(): CIMScaleDependentSizeVariation = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMScaleDependentSizeVariation")
     __obj.asInstanceOf[CIMScaleDependentSizeVariation]
   }
   

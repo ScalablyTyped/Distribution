@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileSuccessCallbackResult extends StObject {
   
   /** 开发者服务器返回的数据 */
-  var data: String = js.native
+  var data: String
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 开发者服务器返回的 HTTP 状态码 */
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object UploadFileSuccessCallbackResult {
   

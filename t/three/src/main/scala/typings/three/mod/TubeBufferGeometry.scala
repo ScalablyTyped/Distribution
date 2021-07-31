@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "TubeBufferGeometry")
@@ -20,31 +19,13 @@ class TubeBufferGeometry protected ()
   def this(path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3], tubularSegments: Double) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: Double
-  ) = this()
-  def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
     tubularSegments: Double,
     radius: Double
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double
-  ) = this()
-  def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: Double,
-    radiusSegments: Double
-  ) = this()
-  def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double
+    tubularSegments: Unit,
+    radius: Double
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
@@ -54,28 +35,25 @@ class TubeBufferGeometry protected ()
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
+    tubularSegments: Double,
+    radius: Unit,
+    radiusSegments: Double
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: Double,
-    closed: Boolean
-  ) = this()
-  def this(
-    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
+    tubularSegments: Unit,
     radius: Double,
-    radiusSegments: js.UndefOr[scala.Nothing],
-    closed: Boolean
+    radiusSegments: Double
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: js.UndefOr[scala.Nothing],
+    tubularSegments: Unit,
+    radius: Unit,
+    radiusSegments: Double
+  ) = this()
+  def this(
+    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    tubularSegments: Double,
     radius: Double,
     radiusSegments: Double,
     closed: Boolean
@@ -83,29 +61,50 @@ class TubeBufferGeometry protected ()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
     tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
-    radiusSegments: js.UndefOr[scala.Nothing],
+    radius: Double,
+    radiusSegments: Unit,
     closed: Boolean
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
     tubularSegments: Double,
-    radius: js.UndefOr[scala.Nothing],
+    radius: Unit,
     radiusSegments: Double,
     closed: Boolean
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
     tubularSegments: Double,
-    radius: Double,
-    radiusSegments: js.UndefOr[scala.Nothing],
+    radius: Unit,
+    radiusSegments: Unit,
     closed: Boolean
   ) = this()
   def this(
     path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
-    tubularSegments: Double,
+    tubularSegments: Unit,
     radius: Double,
     radiusSegments: Double,
+    closed: Boolean
+  ) = this()
+  def this(
+    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    tubularSegments: Unit,
+    radius: Double,
+    radiusSegments: Unit,
+    closed: Boolean
+  ) = this()
+  def this(
+    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    tubularSegments: Unit,
+    radius: Unit,
+    radiusSegments: Double,
+    closed: Boolean
+  ) = this()
+  def this(
+    path: typings.three.curveMod.Curve[typings.three.vector3Mod.Vector3],
+    tubularSegments: Unit,
+    radius: Unit,
+    radiusSegments: Unit,
     closed: Boolean
   ) = this()
 }

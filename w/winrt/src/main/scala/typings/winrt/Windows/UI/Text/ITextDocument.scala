@@ -4,59 +4,57 @@ import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextDocument extends StObject {
   
-  def applyDisplayUpdates(): Double = js.native
+  def applyDisplayUpdates(): Double
   
-  def batchDisplayUpdates(): Double = js.native
+  def batchDisplayUpdates(): Double
   
-  def beginUndoGroup(): Unit = js.native
+  def beginUndoGroup(): Unit
   
-  def canCopy(): Boolean = js.native
+  def canCopy(): Boolean
   
-  def canPaste(): Boolean = js.native
+  def canPaste(): Boolean
   
-  def canRedo(): Boolean = js.native
+  def canRedo(): Boolean
   
-  def canUndo(): Boolean = js.native
+  def canUndo(): Boolean
   
-  var caretType: CaretType = js.native
+  var caretType: CaretType
   
-  var defaultTabStop: Double = js.native
+  var defaultTabStop: Double
   
-  def endUndoGroup(): Unit = js.native
+  def endUndoGroup(): Unit
   
-  def getDefaultCharacterFormat(): ITextCharacterFormat = js.native
+  def getDefaultCharacterFormat(): ITextCharacterFormat
   
-  def getDefaultParagraphFormat(): ITextParagraphFormat = js.native
+  def getDefaultParagraphFormat(): ITextParagraphFormat
   
-  def getRange(startPosition: Double, endPosition: Double): ITextRange = js.native
+  def getRange(startPosition: Double, endPosition: Double): ITextRange
   
-  def getRangeFromPoint(point: Point, options: PointOptions): ITextRange = js.native
+  def getRangeFromPoint(point: Point, options: PointOptions): ITextRange
   
-  def getText(options: TextGetOptions): String = js.native
+  def getText(options: TextGetOptions): String
   
-  def loadFromStream(options: TextSetOptions, value: IRandomAccessStream): Unit = js.native
+  def loadFromStream(options: TextSetOptions, value: IRandomAccessStream): Unit
   
-  def redo(): Unit = js.native
+  def redo(): Unit
   
-  def saveToStream(options: TextGetOptions, value: IRandomAccessStream): Unit = js.native
+  def saveToStream(options: TextGetOptions, value: IRandomAccessStream): Unit
   
-  var selection: ITextSelection = js.native
+  var selection: ITextSelection
   
-  def setDefaultCharacterFormat(value: ITextCharacterFormat): Unit = js.native
+  def setDefaultCharacterFormat(value: ITextCharacterFormat): Unit
   
-  def setDefaultParagraphFormat(value: ITextParagraphFormat): Unit = js.native
+  def setDefaultParagraphFormat(value: ITextParagraphFormat): Unit
   
-  def setText(options: TextSetOptions, value: String): Unit = js.native
+  def setText(options: TextSetOptions, value: String): Unit
   
-  def undo(): Unit = js.native
+  def undo(): Unit
   
-  var undoLimit: Double = js.native
+  var undoLimit: Double
 }
 object ITextDocument {
   

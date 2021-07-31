@@ -2,13 +2,11 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 * Scope Options for Model.scope
 */
-@js.native
 trait ScopeOptions extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait ScopeOptions extends StObject {
     * any arguments, or an array, where the first element is the name of the method, and consecutive elements
     * are arguments to that method. Pass null to remove all scopes, including the default.
     */
-  var method: String | js.Array[_] = js.native
+  var method: String | js.Array[js.Any]
 }
 object ScopeOptions {
   
   @scala.inline
-  def apply(method: String | js.Array[_]): ScopeOptions = {
+  def apply(method: String | js.Array[js.Any]): ScopeOptions = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeOptions]
   }
@@ -32,7 +30,7 @@ object ScopeOptions {
   implicit class ScopeOptionsMutableBuilder[Self <: ScopeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setMethod(value: String | js.Array[_]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    def setMethod(value: String | js.Array[js.Any]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMethodVarargs(value: js.Any*): Self = StObject.set(x, "method", js.Array(value :_*))

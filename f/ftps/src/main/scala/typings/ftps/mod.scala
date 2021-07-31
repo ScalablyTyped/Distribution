@@ -3,14 +3,15 @@ package typings.ftps
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ftps", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FTP {
+  class ^ protected ()
+    extends StObject
+       with FTP {
     def this(options: FTPOptions) = this()
   }
   
@@ -63,40 +64,39 @@ object mod {
   
   type FTPCallbackFunction = js.Function2[/* err */ Error | Null, /* results */ FTPResults, js.Any]
   
-  @js.native
   trait FTPOptions extends StObject {
     
-    var additionalLftpCommands: js.UndefOr[String] = js.native
+    var additionalLftpCommands: js.UndefOr[String] = js.undefined
     
-    var autoConfirm: js.UndefOr[Boolean] = js.native
+    var autoConfirm: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var requireSSHKey: js.UndefOr[Boolean] = js.native
+    var requireSSHKey: js.UndefOr[Boolean] = js.undefined
     
-    var requiresPassword: js.UndefOr[Boolean] = js.native
+    var requiresPassword: js.UndefOr[Boolean] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retryInterval: js.UndefOr[Double] = js.native
+    var retryInterval: js.UndefOr[Double] = js.undefined
     
-    var retryIntervalMultiplier: js.UndefOr[Double] = js.native
+    var retryIntervalMultiplier: js.UndefOr[Double] = js.undefined
     
-    var sshKeyPath: js.UndefOr[Boolean] = js.native
+    var sshKeyPath: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object FTPOptions {
     
@@ -204,18 +204,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FTPResults extends StObject {
     
-    var data: String | Null = js.native
+    var data: String | Null
     
-    var error: Error | Null = js.native
+    var error: Error | Null
   }
   object FTPResults {
     
     @scala.inline
     def apply(): FTPResults = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(data = null, error = null)
       __obj.asInstanceOf[FTPResults]
     }
     
@@ -236,20 +235,19 @@ object mod {
     }
   }
   
-  @js.native
   trait MirrorOptions extends StObject {
     
-    var filter: js.UndefOr[js.Any] = js.native
+    var filter: js.UndefOr[js.Any] = js.undefined
     
-    var localDir: js.UndefOr[String] = js.native
+    var localDir: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[String] = js.native
+    var options: js.UndefOr[String] = js.undefined
     
-    var parallel: js.UndefOr[Boolean | Double] = js.native
+    var parallel: js.UndefOr[Boolean | Double] = js.undefined
     
-    var remoteDir: js.UndefOr[String] = js.native
+    var remoteDir: js.UndefOr[String] = js.undefined
     
-    var upload: js.UndefOr[Boolean] = js.native
+    var upload: js.UndefOr[Boolean] = js.undefined
   }
   object MirrorOptions {
     

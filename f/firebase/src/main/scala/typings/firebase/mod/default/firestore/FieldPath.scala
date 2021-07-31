@@ -2,7 +2,6 @@ package typings.firebase.mod.default.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("firebase", "default.firestore.FieldPath")
@@ -27,11 +26,14 @@ class FieldPath protected () extends StObject {
 /* static members */
 object FieldPath {
   
+  @JSImport("firebase", "default.firestore.FieldPath")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns a special sentinel `FieldPath` to refer to the ID of a document.
     * It can be used in queries to sort or filter by the document ID.
     */
-  @JSImport("firebase", "default.firestore.FieldPath.documentId")
-  @js.native
-  def documentId(): typings.firebase.mod.firebase.firestore.FieldPath = js.native
+  @scala.inline
+  def documentId(): typings.firebase.mod.firebase.firestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldPath]
 }

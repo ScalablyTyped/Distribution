@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains basic information about a user. */
 @JSGlobal("Windows.System.KnownUserProperties")
 @js.native
 abstract class KnownUserProperties ()
-  extends typings.winrtUwp.Windows.System.KnownUserProperties
+  extends StObject
+     with typings.winrtUwp.Windows.System.KnownUserProperties
 object KnownUserProperties {
   
   @JSGlobal("Windows.System.KnownUserProperties")

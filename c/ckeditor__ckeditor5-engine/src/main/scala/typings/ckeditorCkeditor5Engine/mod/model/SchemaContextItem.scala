@@ -3,17 +3,15 @@ package typings.ckeditorCkeditor5Engine.mod.model
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaContextItem extends StObject {
   
-  def getAttribute(key: String): String = js.native
+  def getAttribute(key: String): String
   
-  var getAttributeKeys: Iterable[String] = js.native
+  var getAttributeKeys: Iterable[String]
   
-  var name: String = js.native
+  var name: String
 }
 object SchemaContextItem {
   

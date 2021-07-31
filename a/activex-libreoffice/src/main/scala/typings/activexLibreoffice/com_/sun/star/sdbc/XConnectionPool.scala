@@ -5,12 +5,11 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XConnectionPool
-  extends XDriverManager
+  extends StObject
+     with XDriverManager
      with XDriverAccess
 object XConnectionPool {
   

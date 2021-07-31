@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exclusion extends StObject {
   
-  var exclusion: scala.Double = js.native
+  var exclusion: scala.Double
   
-  var inclusion: scala.Double = js.native
+  var inclusion: scala.Double
 }
 object Exclusion {
   

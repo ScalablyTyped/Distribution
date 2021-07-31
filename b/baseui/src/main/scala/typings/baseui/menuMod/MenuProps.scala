@@ -4,15 +4,15 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuProps extends BaseMenuPropsT {
+trait MenuProps
+  extends StObject
+     with BaseMenuPropsT {
   
-  var overrides: js.UndefOr[MenuOverrides] = js.native
+  var overrides: js.UndefOr[MenuOverrides] = js.undefined
   
-  var size: js.UndefOr[default_ | compact] = js.native
+  var size: js.UndefOr[default_ | compact] = js.undefined
 }
 object MenuProps {
   

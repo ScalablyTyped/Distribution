@@ -10,9 +10,9 @@ Colors for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/colors |
 | Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 120 |
+| # releases         | 113 |
 | # dependents       | 16 |
-| # downloads        | 2017327 |
+| # downloads        | 2647927 |
 | # stars            | 0 |
 
 ## Links

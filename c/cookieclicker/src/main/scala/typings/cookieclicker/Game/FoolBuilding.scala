@@ -2,17 +2,15 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoolBuilding extends StObject {
   
-  var desc: String = js.native
+  var desc: String
   
-  var icon: js.Tuple2[Double, Double] = js.native
+  var icon: js.Tuple2[Double, Double]
   
-  var name: String = js.native
+  var name: String
 }
 object FoolBuilding {
   

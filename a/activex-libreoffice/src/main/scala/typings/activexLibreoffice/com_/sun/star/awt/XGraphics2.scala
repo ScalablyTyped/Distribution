@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the basic output operation of a device. */
-@js.native
-trait XGraphics2 extends XGraphics {
+trait XGraphics2
+  extends StObject
+     with XGraphics {
   
   /**
     * clears the given rectangle on the device
     * @since LibreOffice 4.1
     */
-  def clear(aRect: Rectangle): Unit = js.native
+  def clear(aRect: Rectangle): Unit
   
   /**
     * draws a {@link com.sun.star.graphic.XGraphic} in the output device.
@@ -31,7 +31,7 @@ trait XGraphics2 extends XGraphics {
     * @param aGraphic the {@link com.sun.star.graphic.XGraphic} to be drawn onto the device
     * @since LibreOffice 4.1
     */
-  def drawImage(nX: Double, nY: Double, nWidth: Double, nHeight: Double, nStyle: Double, aGraphic: XGraphic): Unit = js.native
+  def drawImage(nX: Double, nY: Double, nWidth: Double, nHeight: Double, nStyle: Double, aGraphic: XGraphic): Unit
 }
 object XGraphics2 {
   

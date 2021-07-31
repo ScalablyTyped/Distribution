@@ -11,8 +11,8 @@ Core of https://github.com/text-mask/text-mask
 | Full name          | text-mask-core |
 | Keywords           | text mask, input mask, string mask, input formatting, text formatting, string formatting |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 4507443 |
+| # dependents       | 46 |
+| # downloads        | 4593646 |
 | # stars            | 2 |
 
 ## Links

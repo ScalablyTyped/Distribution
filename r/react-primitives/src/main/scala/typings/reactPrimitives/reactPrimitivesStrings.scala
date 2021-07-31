@@ -3,7 +3,6 @@ package typings.reactPrimitives
 import typings.reactPrimitives.mod._PlatformOSType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPrimitivesStrings {
@@ -29,12 +28,16 @@ object reactPrimitivesStrings {
   def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait sketch extends _PlatformOSType
+  sealed trait sketch
+    extends StObject
+       with _PlatformOSType
   @scala.inline
   def sketch: sketch = "sketch".asInstanceOf[sketch]
   
   @js.native
-  sealed trait vr extends _PlatformOSType
+  sealed trait vr
+    extends StObject
+       with _PlatformOSType
   @scala.inline
   def vr: vr = "vr".asInstanceOf[vr]
 }

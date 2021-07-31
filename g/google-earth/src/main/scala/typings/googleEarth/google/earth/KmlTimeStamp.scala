@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlTimeStamp extends KmlObject {
+trait KmlTimeStamp
+  extends StObject
+     with KmlObject {
   
   /**
     * Represents a single moment in time.
@@ -19,7 +19,7 @@ trait KmlTimeStamp extends KmlObject {
     * * gYearMonth gives month resolution
     * * gYear gives year resolution
     */
-  def getWhen(): KmlDateTime = js.native
+  def getWhen(): KmlDateTime
 }
 object KmlTimeStamp {
   

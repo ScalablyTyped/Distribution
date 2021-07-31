@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or be contained within other groups. A group can be collapsed or expanded
   * as a unit on the sheet.
   */
-@js.native
 trait SchemaDimensionGroup extends StObject {
   
   /**
@@ -22,18 +20,18 @@ trait SchemaDimensionGroup extends StObject {
     * dimensions within it are set to hidden if this field is true, or set to
     * visible if this field is false.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The depth of the group, representing how many groups have a range that
     * wholly contains the range of this group.
     */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /**
     * The range over which this group exists.
     */
-  var range: js.UndefOr[SchemaDimensionRange] = js.native
+  var range: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaDimensionGroup {
   

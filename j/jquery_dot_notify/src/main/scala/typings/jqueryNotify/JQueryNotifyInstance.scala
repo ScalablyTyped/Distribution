@@ -2,21 +2,19 @@ package typings.jqueryNotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryNotifyInstance extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var element: JQuery = js.native
+  var element: JQuery
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  var options: JQueryNotifyOptions = js.native
+  var options: JQueryNotifyOptions
 }
 object JQueryNotifyInstance {
   

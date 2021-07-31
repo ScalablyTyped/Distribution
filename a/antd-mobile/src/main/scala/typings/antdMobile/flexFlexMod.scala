@@ -15,7 +15,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexFlexMod {
@@ -47,20 +46,21 @@ object flexFlexMod {
   trait Flex
     extends Component[FlexProps, js.Any, js.Any]
   
-  @js.native
-  trait FlexProps extends FlexPropsType {
+  trait FlexProps
+    extends StObject
+       with FlexPropsType {
     
-    var alignContent: js.UndefOr[start | end | center | between | around | stretch] = js.native
+    var alignContent: js.UndefOr[start | end | center | between | around | stretch] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FlexProps {
     

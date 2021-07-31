@@ -4,22 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextFieldInView extends RenderContextItemInView {
+trait RenderContextFieldInView
+  extends StObject
+     with RenderContextItemInView {
   
   /** If in grid mode (context.inGridMode == true), cast to FieldSchema_InForm, otherwise cast to FieldSchema_InView */
-  var CurrentFieldSchema: FieldSchemaInForm | FieldSchemaInView = js.native
+  var CurrentFieldSchema: FieldSchemaInForm | FieldSchemaInView
   
-  var CurrentFieldValue: js.Any = js.native
+  var CurrentFieldValue: js.Any
   
-  var FieldControlsModes: StringDictionary[ClientControlMode] = js.native
+  var FieldControlsModes: StringDictionary[ClientControlMode]
   
-  var FormContext: ClientFormContext = js.native
+  var FormContext: ClientFormContext
   
-  var FormUniqueId: String = js.native
+  var FormUniqueId: String
 }
 object RenderContextFieldInView {
   

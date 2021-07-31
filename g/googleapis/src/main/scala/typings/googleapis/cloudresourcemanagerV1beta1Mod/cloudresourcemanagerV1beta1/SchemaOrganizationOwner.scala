@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `OrganizationOwner` is deleted, the Organization and all its descendants
   * will be deleted.
   */
-@js.native
 trait SchemaOrganizationOwner extends StObject {
   
   /**
     * The G Suite customer id used in the Directory API.
     */
-  var directoryCustomerId: js.UndefOr[String] = js.native
+  var directoryCustomerId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrganizationOwner {
   

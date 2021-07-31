@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomData extends StObject {
   
-  var filter: String = js.native
+  var filter: String
   
-  var geotableId: Double = js.native
+  var geotableId: Double
   
-  var tags: String = js.native
+  var tags: String
 }
 object CustomData {
   

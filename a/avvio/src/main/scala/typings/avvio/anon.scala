@@ -2,19 +2,17 @@ package typings.avvio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait After extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var ready: js.UndefOr[String] = js.native
+    var ready: js.UndefOr[String] = js.undefined
     
-    var use: js.UndefOr[String] = js.native
+    var use: js.UndefOr[String] = js.undefined
   }
   object After {
     

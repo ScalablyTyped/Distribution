@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpecSource extends StObject {
   
   /** The game server config resource. Uses the form: `projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}/configs/{config_id}`. */
-  var gameServerConfigName: js.UndefOr[String] = js.native
+  var gameServerConfigName: js.UndefOr[String] = js.undefined
   
   /** The name of the Agones leet config or Agones scaling config used to derive the Agones fleet or Agones autoscaler spec. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SpecSource {
   

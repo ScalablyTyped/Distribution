@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.RegExpLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `37` extends StObject {
   
-  var `type`: RegExpLiteral = js.native
+  var `type`: RegExpLiteral
 }
 object `37` {
   
   @scala.inline
-  def apply(`type`: RegExpLiteral): `37` = {
+  def apply(): `37` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[`37`]
   }
   

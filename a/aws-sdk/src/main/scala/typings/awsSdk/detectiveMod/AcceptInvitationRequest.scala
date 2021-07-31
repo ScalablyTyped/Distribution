@@ -2,16 +2,14 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInvitationRequest extends StObject {
   
   /**
     * The ARN of the behavior graph that the member account is accepting the invitation for. The member account status in the behavior graph must be INVITED.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
 object AcceptInvitationRequest {
   

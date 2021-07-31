@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
   /**
     * The name of the tool used to generate the code scanning analysis alert.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The version of the tool used to detect the alert.
     */
-  var version: String = js.native
+  var version: String
 }
 object Version {
   

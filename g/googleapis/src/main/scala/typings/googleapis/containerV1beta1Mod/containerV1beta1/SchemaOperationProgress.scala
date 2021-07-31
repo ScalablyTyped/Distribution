@@ -2,13 +2,11 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about operation (or operation stage) progress.
   */
-@js.native
 trait SchemaOperationProgress extends StObject {
   
   /**
@@ -18,23 +16,23 @@ trait SchemaOperationProgress extends StObject {
     * &quot;progress&quot;,       double_value: 0.56},             {name:
     * &quot;progress scale&quot;, double_value: 1.0}]
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
   
   /**
     * A non-parameterized string describing an operation stage. Unset for
     * single-stage operations.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Substages of an operation or a stage.
     */
-  var stages: js.UndefOr[js.Array[SchemaOperationProgress]] = js.native
+  var stages: js.UndefOr[js.Array[SchemaOperationProgress]] = js.undefined
   
   /**
     * Status of an operation stage. Unset for single-stage operations.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationProgress {
   

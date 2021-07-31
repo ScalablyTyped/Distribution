@@ -14,7 +14,6 @@ import typings.std.Omit
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,20 +43,24 @@ object mod {
     // tslint:disable-next-line unified-signatures
     def this(options: StrategyOptions, verify: VerifyFunctionWithResults) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: AuthenticateOptions): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
     
     def authorize(strategy: String): AuthenticateRet = js.native
-    def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
     def authorize(strategy: String, options: AuthenticateOptions): AuthenticateRet = js.native
-    def authorize(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authorize(
+      strategy: String,
+      options: AuthenticateOptions,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): AuthenticateRet = js.native
     def authorize(strategy: js.Array[String]): AuthenticateRet = js.native
-    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
     def authorize(strategy: js.Array[String], options: AuthenticateOptions): AuthenticateRet = js.native
     def authorize(
       strategy: js.Array[String],
       options: AuthenticateOptions,
-      callback: js.Function1[/* repeated */ js.Any, _]
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
     ): AuthenticateRet = js.native
     
     def userProfile(
@@ -66,11 +69,11 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait AuthenticateOptions
-    extends typings.passport.mod.AuthenticateOptions {
+    extends StObject
+       with typings.passport.mod.AuthenticateOptions {
     
-    var forceVerify: js.UndefOr[Boolean] = js.native
+    var forceVerify: js.UndefOr[Boolean] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -91,10 +94,9 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthenticateRet extends StObject {
     
-    var force_verify: js.UndefOr[Boolean] = js.native
+    var force_verify: js.UndefOr[Boolean] = js.undefined
   }
   object AuthenticateRet {
     
@@ -115,46 +117,45 @@ object mod {
     }
   }
   
-  type Optional[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) with Partial[T]
+  type Optional[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & Partial[T]
   
   /* Inlined passport-twitch-latest.passport-twitch-latest.Optional<passport-oauth2.passport-oauth2.StrategyOptions, 'authorizationURL' | 'tokenURL'> */
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String with js.UndefOr[String] = js.native
+    var clientID: String & js.UndefOr[String]
     
-    var clientSecret: String with js.UndefOr[String] = js.native
+    var clientSecret: String & js.UndefOr[String]
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptions {
     
     @scala.inline
-    def apply(clientID: String with js.UndefOr[String], clientSecret: String with js.UndefOr[String]): StrategyOptions = {
+    def apply(clientID: String & js.UndefOr[String], clientSecret: String & js.UndefOr[String]): StrategyOptions = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOptions]
     }
@@ -175,10 +176,10 @@ object mod {
       def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
       
       @scala.inline
-      def setClientID(value: String with js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      def setClientID(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClientSecret(value: String with js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      def setClientSecret(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
@@ -252,46 +253,45 @@ object mod {
   }
   
   /* Inlined passport-twitch-latest.passport-twitch-latest.Optional<passport-oauth2.passport-oauth2.StrategyOptionsWithRequest, 'authorizationURL' | 'tokenURL'> */
-  @js.native
   trait StrategyOptionsWithRequest extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String with js.UndefOr[String] = js.native
+    var clientID: String & js.UndefOr[String]
     
-    var clientSecret: String with js.UndefOr[String] = js.native
+    var clientSecret: String & js.UndefOr[String]
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var passReqToCallback: `true` with js.UndefOr[`true`] = js.native
+    var passReqToCallback: `true` & js.UndefOr[`true`]
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
     def apply(
-      clientID: String with js.UndefOr[String],
-      clientSecret: String with js.UndefOr[String],
-      passReqToCallback: `true` with js.UndefOr[`true`]
+      clientID: String & js.UndefOr[String],
+      clientSecret: String & js.UndefOr[String],
+      passReqToCallback: `true` & js.UndefOr[`true`]
     ): StrategyOptionsWithRequest = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOptionsWithRequest]
@@ -313,10 +313,10 @@ object mod {
       def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
       
       @scala.inline
-      def setClientID(value: String with js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      def setClientID(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClientSecret(value: String with js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      def setClientSecret(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
@@ -325,7 +325,7 @@ object mod {
       def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
       @scala.inline
-      def setPassReqToCallback(value: `true` with js.UndefOr[`true`]): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      def setPassReqToCallback(value: `true` & js.UndefOr[`true`]): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPkce(value: Boolean): Self = StObject.set(x, "pkce", value.asInstanceOf[js.Any])
@@ -386,28 +386,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TwitchProfile extends StObject {
     
-    var broadcaster_type: String = js.native
+    var broadcaster_type: String
     
-    var description: String = js.native
+    var description: String
     
-    var display_name: String = js.native
+    var display_name: String
     
-    var id: String = js.native
+    var id: String
     
-    var login: String = js.native
+    var login: String
     
-    var offline_image_url: String = js.native
+    var offline_image_url: String
     
-    var profile_image_url: String = js.native
+    var profile_image_url: String
     
-    var provider: String = js.native
+    var provider: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var view_count: Double = js.native
+    var view_count: Double
   }
   object TwitchProfile {
     

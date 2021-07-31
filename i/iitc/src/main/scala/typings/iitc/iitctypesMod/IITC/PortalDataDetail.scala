@@ -2,19 +2,19 @@ package typings.iitc.iitctypesMod.IITC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalDataDetail extends PortalData {
+trait PortalDataDetail
+  extends StObject
+     with PortalData {
   
-  var artifactDetail: ArtifactDetail = js.native
+  var artifactDetail: ArtifactDetail
   
-  var mods: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null] = js.native
+  var mods: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null]
   
-  var owner: String = js.native
+  var owner: String
   
-  var resonators: js.Array[Resonator] = js.native
+  var resonators: js.Array[Resonator]
 }
 object PortalDataDetail {
   
@@ -37,7 +37,7 @@ object PortalDataDetail {
     timestamp: Double,
     title: String
   ): PortalDataDetail = {
-    val __obj = js.Dynamic.literal(artifactDetail = artifactDetail.asInstanceOf[js.Any], health = health.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], mission = mission.asInstanceOf[js.Any], mission50plus = mission50plus.asInstanceOf[js.Any], mods = mods.asInstanceOf[js.Any], ornaments = ornaments.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], resCount = resCount.asInstanceOf[js.Any], resonators = resonators.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(artifactDetail = artifactDetail.asInstanceOf[js.Any], health = health.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], mission = mission.asInstanceOf[js.Any], mission50plus = mission50plus.asInstanceOf[js.Any], mods = mods.asInstanceOf[js.Any], ornaments = ornaments.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], resCount = resCount.asInstanceOf[js.Any], resonators = resonators.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], artifactBrief = null)
     __obj.asInstanceOf[PortalDataDetail]
   }
   

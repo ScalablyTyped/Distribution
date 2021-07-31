@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PosPrinterRuledLineCapabilities extends StObject {
   
   /** The printer can draw ruled horizontal lines. */
   @js.native
-  sealed trait horizontal extends PosPrinterRuledLineCapabilities
+  sealed trait horizontal
+    extends StObject
+       with PosPrinterRuledLineCapabilities
   
   /** The printer cannot draw ruled lines. */
   @js.native
-  sealed trait none extends PosPrinterRuledLineCapabilities
+  sealed trait none
+    extends StObject
+       with PosPrinterRuledLineCapabilities
   
   /** The printer can draw ruled vertical lines. */
   @js.native
-  sealed trait vertical extends PosPrinterRuledLineCapabilities
+  sealed trait vertical
+    extends StObject
+       with PosPrinterRuledLineCapabilities
 }

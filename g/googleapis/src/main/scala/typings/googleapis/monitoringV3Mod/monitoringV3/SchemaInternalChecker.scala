@@ -2,14 +2,12 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An internal checker allows uptime checks to run on private/internal GCP
   * resources.
   */
-@js.native
 trait SchemaInternalChecker extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaInternalChecker extends StObject {
     * within a Stackdriver Workspace in order to make it easier to identify;
     * however, uniqueness is not enforced.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The GCP zone the uptime check should egress from. Only respected for
     * internal uptime checks, where internal_network is specified.
     */
-  var gcpZone: js.UndefOr[String] = js.native
+  var gcpZone: js.UndefOr[String] = js.undefined
   
   /**
     * A unique resource name for this InternalChecker. The format
@@ -31,24 +29,24 @@ trait SchemaInternalChecker extends StObject {
     * is the stackdriver workspace project for the uptime check config
     * associated with the internal checker.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The GCP VPC network (https://cloud.google.com/vpc/docs/vpc) where the
     * internal resource lives (ex: &quot;default&quot;).
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The GCP project_id where the internal checker lives. Not necessary the
     * same as the workspace project.
     */
-  var peerProjectId: js.UndefOr[String] = js.native
+  var peerProjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The current operational state of the internal checker.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaInternalChecker {
   

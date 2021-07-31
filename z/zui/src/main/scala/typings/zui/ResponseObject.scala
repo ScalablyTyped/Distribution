@@ -2,21 +2,19 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseObject extends StObject {
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var response: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.undefined
   
-  var responseHeaders: js.UndefOr[js.Object] = js.native
+  var responseHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object ResponseObject {
   

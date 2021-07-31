@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewabilityTargetingOptionDetails extends StObject {
   
   /** Output only. The predicted viewability percentage. */
-  var viewability: js.UndefOr[String] = js.native
+  var viewability: js.UndefOr[String] = js.undefined
 }
 object ViewabilityTargetingOptionDetails {
   

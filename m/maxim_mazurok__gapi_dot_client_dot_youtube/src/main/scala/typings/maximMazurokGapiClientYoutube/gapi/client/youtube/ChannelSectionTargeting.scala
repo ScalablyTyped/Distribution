@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSectionTargeting extends StObject {
   
   /** The country the channel section is targeting. */
-  var countries: js.UndefOr[js.Array[String]] = js.native
+  var countries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The language the channel section is targeting. */
-  var languages: js.UndefOr[js.Array[String]] = js.native
+  var languages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The region the channel section is targeting. */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ChannelSectionTargeting {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * When the doubleValue type is set, the value of the resource must be a double precision floating-point type.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * When the integerValue type is set, the value of the resource must be an integer.
     */
-  var integerValue: js.UndefOr[Integer] = js.native
+  var integerValue: js.UndefOr[Integer] = js.undefined
   
   /**
     * When the longValue type is set, the value of the resource must be an extended precision floating-point type.
     */
-  var longValue: js.UndefOr[Long] = js.native
+  var longValue: js.UndefOr[Long] = js.undefined
   
   /**
     * The name of the resource, such as CPU, MEMORY, PORTS, PORTS_UDP, or a user-defined resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * When the stringSetValue type is set, the value of the resource must be a string type.
     */
-  var stringSetValue: js.UndefOr[StringList] = js.native
+  var stringSetValue: js.UndefOr[StringList] = js.undefined
   
   /**
     * The type of the resource, such as INTEGER, DOUBLE, LONG, or STRINGSET.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Resource {
   

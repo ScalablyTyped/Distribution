@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolicLink extends StObject {
   
   /**
     * The fully qualified path to the folder that contains the symbolic link.
     */
-  var absolutePath: js.UndefOr[Path] = js.native
+  var absolutePath: js.UndefOr[Path] = js.undefined
   
   /**
     * The blob ID that contains the information about the symbolic link.
     */
-  var blobId: js.UndefOr[ObjectId] = js.native
+  var blobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The file mode permissions of the blob that cotains information about the symbolic link.
     */
-  var fileMode: js.UndefOr[FileModeTypeEnum] = js.native
+  var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
   
   /**
     * The relative path of the symbolic link from the folder where the query originated.
     */
-  var relativePath: js.UndefOr[Path] = js.native
+  var relativePath: js.UndefOr[Path] = js.undefined
 }
 object SymbolicLink {
   

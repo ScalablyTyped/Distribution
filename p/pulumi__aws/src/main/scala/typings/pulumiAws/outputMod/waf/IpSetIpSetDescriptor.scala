@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpSetIpSetDescriptor extends StObject {
   
   /**
     * Type of the IP address - `IPV4` or `IPV6`.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * An IPv4 or IPv6 address specified via CIDR notation. e.g. `192.0.2.44/32` or `1111:0000:0000:0000:0000:0000:0000:0000/64`
     */
-  var value: String = js.native
+  var value: String
 }
 object IpSetIpSetDescriptor {
   

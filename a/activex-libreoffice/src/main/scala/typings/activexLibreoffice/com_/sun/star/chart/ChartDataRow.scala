@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This struct is currently used nowhere.
   * @deprecated Deprecated
   */
-@js.native
 trait ChartDataRow extends StObject {
   
   /** The name of the data row. */
-  var Name: String = js.native
+  var Name: String
   
   /** The points contained in this data row. */
-  var Points: SafeArray[SafeArray[ChartDataValue]] = js.native
+  var Points: SafeArray[SafeArray[ChartDataValue]]
 }
 object ChartDataRow {
   

@@ -8,18 +8,21 @@ import typings.mapboxGl.mod.ResourceType
 import typings.mapboxGl.mod.Visibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapboxGlStrings {
   
   @js.native
-  sealed trait ^ extends ExpressionName
+  sealed trait ^
+    extends StObject
+       with ExpressionName
   @scala.inline
   def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
-  sealed trait `-_` extends ExpressionName
+  sealed trait `-_`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
@@ -34,29 +37,32 @@ object mapboxGlStrings {
   def `3d`: `3d` = "3d".asInstanceOf[`3d`]
   
   @js.native
-  sealed trait Asterisk extends ExpressionName
+  sealed trait Asterisk
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait EqualssignEqualssign extends ExpressionName
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait Exclamationmark extends ExpressionName
+  sealed trait Exclamationmark
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends ExpressionName
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  
-  @js.native
-  sealed trait Feature extends StObject
-  @scala.inline
-  def Feature: Feature = "Feature".asInstanceOf[Feature]
   
   @js.native
   sealed trait GET extends StObject
@@ -64,32 +70,44 @@ object mapboxGlStrings {
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait Glyphs extends ResourceType
+  sealed trait Glyphs
+    extends StObject
+       with ResourceType
   @scala.inline
   def Glyphs: Glyphs = "Glyphs".asInstanceOf[Glyphs]
   
   @js.native
-  sealed trait Greaterthansign extends ExpressionName
+  sealed trait Greaterthansign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends ExpressionName
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait Image extends ResourceType
+  sealed trait Image
+    extends StObject
+       with ResourceType
   @scala.inline
   def Image: Image = "Image".asInstanceOf[Image]
   
   @js.native
-  sealed trait Lessthansign extends ExpressionName
+  sealed trait Lessthansign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends ExpressionName
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
@@ -104,92 +122,128 @@ object mapboxGlStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait Percentsign extends ExpressionName
+  sealed trait Percentsign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
-  sealed trait Plussign extends ExpressionName
+  sealed trait Plussign
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait Slash extends ExpressionName
+  sealed trait Slash
+    extends StObject
+       with ExpressionName
   @scala.inline
   def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait Source extends ResourceType
+  sealed trait Source
+    extends StObject
+       with ResourceType
   @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
   
   @js.native
-  sealed trait SpriteImage extends ResourceType
+  sealed trait SpriteImage
+    extends StObject
+       with ResourceType
   @scala.inline
   def SpriteImage: SpriteImage = "SpriteImage".asInstanceOf[SpriteImage]
   
   @js.native
-  sealed trait SpriteJSON extends ResourceType
+  sealed trait SpriteJSON
+    extends StObject
+       with ResourceType
   @scala.inline
   def SpriteJSON: SpriteJSON = "SpriteJSON".asInstanceOf[SpriteJSON]
   
   @js.native
-  sealed trait Style extends ResourceType
+  sealed trait Style
+    extends StObject
+       with ResourceType
   @scala.inline
   def Style: Style = "Style".asInstanceOf[Style]
   
   @js.native
-  sealed trait Tile extends ResourceType
+  sealed trait Tile
+    extends StObject
+       with ResourceType
   @scala.inline
   def Tile: Tile = "Tile".asInstanceOf[Tile]
   
   @js.native
-  sealed trait Unknown extends ResourceType
+  sealed trait Unknown
+    extends StObject
+       with ResourceType
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   
   @js.native
-  sealed trait abs extends ExpressionName
+  sealed trait abs
+    extends StObject
+       with ExpressionName
   @scala.inline
   def abs: abs = "abs".asInstanceOf[abs]
   
   @js.native
-  sealed trait acos extends ExpressionName
+  sealed trait acos
+    extends StObject
+       with ExpressionName
   @scala.inline
   def acos: acos = "acos".asInstanceOf[acos]
   
   @js.native
-  sealed trait all extends ExpressionName
+  sealed trait all
+    extends StObject
+       with ExpressionName
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait any extends ExpressionName
+  sealed trait any
+    extends StObject
+       with ExpressionName
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait array extends ExpressionName
+  sealed trait array
+    extends StObject
+       with ExpressionName
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait asin extends ExpressionName
+  sealed trait asin
+    extends StObject
+       with ExpressionName
   @scala.inline
   def asin: asin = "asin".asInstanceOf[asin]
   
   @js.native
-  sealed trait at extends ExpressionName
+  sealed trait at
+    extends StObject
+       with ExpressionName
   @scala.inline
   def at: at = "at".asInstanceOf[at]
   
   @js.native
-  sealed trait atan extends ExpressionName
+  sealed trait atan
+    extends StObject
+       with ExpressionName
   @scala.inline
   def atan: atan = "atan".asInstanceOf[atan]
   
   @js.native
-  sealed trait auto extends Alignment
+  sealed trait auto
+    extends StObject
+       with Alignment
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -204,7 +258,9 @@ object mapboxGlStrings {
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait boolean extends ExpressionName
+  sealed trait boolean
+    extends StObject
+       with ExpressionName
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -214,17 +270,23 @@ object mapboxGlStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends Anchor
+  sealed trait bottom
+    extends StObject
+       with Anchor
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-left` extends Anchor
+  sealed trait `bottom-left`
+    extends StObject
+       with Anchor
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends Anchor
+  sealed trait `bottom-right`
+    extends StObject
+       with Anchor
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
@@ -254,7 +316,9 @@ object mapboxGlStrings {
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait `case` extends ExpressionName
+  sealed trait `case`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `case`: `case` = "case".asInstanceOf[`case`]
   
@@ -264,12 +328,16 @@ object mapboxGlStrings {
   def categorical: categorical = "categorical".asInstanceOf[categorical]
   
   @js.native
-  sealed trait ceil extends ExpressionName
+  sealed trait ceil
+    extends StObject
+       with ExpressionName
   @scala.inline
   def ceil: ceil = "ceil".asInstanceOf[ceil]
   
   @js.native
-  sealed trait center extends Anchor
+  sealed trait center
+    extends StObject
+       with Anchor
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -284,17 +352,23 @@ object mapboxGlStrings {
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait coalesce extends ExpressionName
+  sealed trait coalesce
+    extends StObject
+       with ExpressionName
   @scala.inline
   def coalesce: coalesce = "coalesce".asInstanceOf[coalesce]
   
   @js.native
-  sealed trait collator extends ExpressionName
+  sealed trait collator
+    extends StObject
+       with ExpressionName
   @scala.inline
   def collator: collator = "collator".asInstanceOf[collator]
   
   @js.native
-  sealed trait concat extends ExpressionName
+  sealed trait concat
+    extends StObject
+       with ExpressionName
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   
@@ -309,7 +383,9 @@ object mapboxGlStrings {
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait cos extends ExpressionName
+  sealed trait cos
+    extends StObject
+       with ExpressionName
   @scala.inline
   def cos: cos = "cos".asInstanceOf[cos]
   
@@ -334,7 +410,9 @@ object mapboxGlStrings {
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
-  sealed trait downcase extends ExpressionName
+  sealed trait downcase
+    extends StObject
+       with ExpressionName
   @scala.inline
   def downcase: downcase = "downcase".asInstanceOf[downcase]
   
@@ -354,12 +432,16 @@ object mapboxGlStrings {
   def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   
   @js.native
-  sealed trait e extends ExpressionName
+  sealed trait e
+    extends StObject
+       with ExpressionName
   @scala.inline
   def e: e = "e".asInstanceOf[e]
   
   @js.native
-  sealed trait error extends PluginStatus
+  sealed trait error
+    extends StObject
+       with PluginStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -369,7 +451,9 @@ object mapboxGlStrings {
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   
   @js.native
-  sealed trait `feature-state` extends ExpressionName
+  sealed trait `feature-state`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `feature-state`: `feature-state` = "feature-state".asInstanceOf[`feature-state`]
   
@@ -384,12 +468,16 @@ object mapboxGlStrings {
   def `fill-extrusion`: `fill-extrusion` = "fill-extrusion".asInstanceOf[`fill-extrusion`]
   
   @js.native
-  sealed trait floor extends ExpressionName
+  sealed trait floor
+    extends StObject
+       with ExpressionName
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
-  sealed trait format extends ExpressionName
+  sealed trait format
+    extends StObject
+       with ExpressionName
   @scala.inline
   def format: format = "format".asInstanceOf[format]
   
@@ -399,17 +487,23 @@ object mapboxGlStrings {
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait `geometry-type` extends ExpressionName
+  sealed trait `geometry-type`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `geometry-type`: `geometry-type` = "geometry-type".asInstanceOf[`geometry-type`]
   
   @js.native
-  sealed trait get_ extends ExpressionName
+  sealed trait get_
+    extends StObject
+       with ExpressionName
   @scala.inline
   def get_ : get_ = "get".asInstanceOf[get_]
   
   @js.native
-  sealed trait has extends ExpressionName
+  sealed trait has
+    extends StObject
+       with ExpressionName
   @scala.inline
   def has: has = "has".asInstanceOf[has]
   
@@ -424,7 +518,9 @@ object mapboxGlStrings {
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   
   @js.native
-  sealed trait `heatmap-density` extends ExpressionName
+  sealed trait `heatmap-density`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `heatmap-density`: `heatmap-density` = "heatmap-density".asInstanceOf[`heatmap-density`]
   
@@ -444,7 +540,9 @@ object mapboxGlStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait id extends ExpressionName
+  sealed trait id
+    extends StObject
+       with ExpressionName
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
@@ -459,7 +557,9 @@ object mapboxGlStrings {
   def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait image_ extends ExpressionName
+  sealed trait image_
+    extends StObject
+       with ExpressionName
   @scala.inline
   def image_ : image_ = "image".asInstanceOf[image_]
   
@@ -469,7 +569,9 @@ object mapboxGlStrings {
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   
   @js.native
-  sealed trait in extends ExpressionName
+  sealed trait in
+    extends StObject
+       with ExpressionName
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   
@@ -479,22 +581,30 @@ object mapboxGlStrings {
   def include: include = "include".asInstanceOf[include]
   
   @js.native
-  sealed trait `index-of` extends ExpressionName
+  sealed trait `index-of`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `index-of`: `index-of` = "index-of".asInstanceOf[`index-of`]
   
   @js.native
-  sealed trait interpolate extends ExpressionName
+  sealed trait interpolate
+    extends StObject
+       with ExpressionName
   @scala.inline
   def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
   
   @js.native
-  sealed trait `interpolate-hcl` extends ExpressionName
+  sealed trait `interpolate-hcl`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `interpolate-hcl`: `interpolate-hcl` = "interpolate-hcl".asInstanceOf[`interpolate-hcl`]
   
   @js.native
-  sealed trait `interpolate-lab` extends ExpressionName
+  sealed trait `interpolate-lab`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `interpolate-lab`: `interpolate-lab` = "interpolate-lab".asInstanceOf[`interpolate-lab`]
   
@@ -504,7 +614,9 @@ object mapboxGlStrings {
   def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
-  sealed trait `is-supported-script` extends ExpressionName
+  sealed trait `is-supported-script`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `is-supported-script`: `is-supported-script` = "is-supported-script".asInstanceOf[`is-supported-script`]
   
@@ -514,17 +626,23 @@ object mapboxGlStrings {
   def lab: lab = "lab".asInstanceOf[lab]
   
   @js.native
-  sealed trait left extends Anchor
+  sealed trait left
+    extends StObject
+       with Anchor
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait length extends ExpressionName
+  sealed trait length
+    extends StObject
+       with ExpressionName
   @scala.inline
   def length: length = "length".asInstanceOf[length]
   
   @js.native
-  sealed trait let extends ExpressionName
+  sealed trait let
+    extends StObject
+       with ExpressionName
   @scala.inline
   def let: let = "let".asInstanceOf[let]
   
@@ -539,7 +657,9 @@ object mapboxGlStrings {
   def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
   
   @js.native
-  sealed trait `line-progress` extends ExpressionName
+  sealed trait `line-progress`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `line-progress`: `line-progress` = "line-progress".asInstanceOf[`line-progress`]
   
@@ -549,17 +669,23 @@ object mapboxGlStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait literal extends ExpressionName
+  sealed trait literal
+    extends StObject
+       with ExpressionName
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait ln extends ExpressionName
+  sealed trait ln
+    extends StObject
+       with ExpressionName
   @scala.inline
   def ln: ln = "ln".asInstanceOf[ln]
   
   @js.native
-  sealed trait ln2 extends ExpressionName
+  sealed trait ln2
+    extends StObject
+       with ExpressionName
   @scala.inline
   def ln2: ln2 = "ln2".asInstanceOf[ln2]
   
@@ -569,22 +695,30 @@ object mapboxGlStrings {
   def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait loaded extends PluginStatus
+  sealed trait loaded
+    extends StObject
+       with PluginStatus
   @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait loading extends PluginStatus
+  sealed trait loading
+    extends StObject
+       with PluginStatus
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait log10 extends ExpressionName
+  sealed trait log10
+    extends StObject
+       with ExpressionName
   @scala.inline
   def log10: log10 = "log10".asInstanceOf[log10]
   
   @js.native
-  sealed trait log2 extends ExpressionName
+  sealed trait log2
+    extends StObject
+       with ExpressionName
   @scala.inline
   def log2: log2 = "log2".asInstanceOf[log2]
   
@@ -594,7 +728,9 @@ object mapboxGlStrings {
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   
   @js.native
-  sealed trait map extends Alignment
+  sealed trait map
+    extends StObject
+       with Alignment
   @scala.inline
   def map: map = "map".asInstanceOf[map]
   
@@ -604,12 +740,16 @@ object mapboxGlStrings {
   def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
   
   @js.native
-  sealed trait `match` extends ExpressionName
+  sealed trait `match`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
-  sealed trait max extends ExpressionName
+  sealed trait max
+    extends StObject
+       with ExpressionName
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
@@ -624,7 +764,9 @@ object mapboxGlStrings {
   def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
-  sealed trait min extends ExpressionName
+  sealed trait min
+    extends StObject
+       with ExpressionName
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -694,22 +836,30 @@ object mapboxGlStrings {
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait none extends Visibility
+  sealed trait none
+    extends StObject
+       with Visibility
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends ExpressionName
+  sealed trait number
+    extends StObject
+       with ExpressionName
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends ExpressionName
+  sealed trait `object`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait pi extends ExpressionName
+  sealed trait pi
+    extends StObject
+       with ExpressionName
   @scala.inline
   def pi: pi = "pi".asInstanceOf[pi]
   
@@ -734,7 +884,9 @@ object mapboxGlStrings {
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait properties extends ExpressionName
+  sealed trait properties
+    extends StObject
+       with ExpressionName
   @scala.inline
   def properties: properties = "properties".asInstanceOf[properties]
   
@@ -764,22 +916,30 @@ object mapboxGlStrings {
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait `resolved-locale` extends ExpressionName
+  sealed trait `resolved-locale`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `resolved-locale`: `resolved-locale` = "resolved-locale".asInstanceOf[`resolved-locale`]
   
   @js.native
-  sealed trait rgb extends ExpressionName
+  sealed trait rgb
+    extends StObject
+       with ExpressionName
   @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   
   @js.native
-  sealed trait rgba extends ExpressionName
+  sealed trait rgba
+    extends StObject
+       with ExpressionName
   @scala.inline
   def rgba: rgba = "rgba".asInstanceOf[rgba]
   
   @js.native
-  sealed trait right extends Anchor
+  sealed trait right
+    extends StObject
+       with Anchor
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -799,7 +959,9 @@ object mapboxGlStrings {
   def rotatestart: rotatestart = "rotatestart".asInstanceOf[rotatestart]
   
   @js.native
-  sealed trait round extends ExpressionName
+  sealed trait round
+    extends StObject
+       with ExpressionName
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
@@ -809,12 +971,16 @@ object mapboxGlStrings {
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   
   @js.native
-  sealed trait sin extends ExpressionName
+  sealed trait sin
+    extends StObject
+       with ExpressionName
   @scala.inline
   def sin: sin = "sin".asInstanceOf[sin]
   
   @js.native
-  sealed trait slice extends ExpressionName
+  sealed trait slice
+    extends StObject
+       with ExpressionName
   @scala.inline
   def slice: slice = "slice".asInstanceOf[slice]
   
@@ -834,7 +1000,9 @@ object mapboxGlStrings {
   def sourcedataloading: sourcedataloading = "sourcedataloading".asInstanceOf[sourcedataloading]
   
   @js.native
-  sealed trait sqrt extends ExpressionName
+  sealed trait sqrt
+    extends StObject
+       with ExpressionName
   @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   
@@ -844,12 +1012,16 @@ object mapboxGlStrings {
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait step extends ExpressionName
+  sealed trait step
+    extends StObject
+       with ExpressionName
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait string extends ExpressionName
+  sealed trait string
+    extends StObject
+       with ExpressionName
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
@@ -874,7 +1046,9 @@ object mapboxGlStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait tan extends ExpressionName
+  sealed trait tan
+    extends StObject
+       with ExpressionName
   @scala.inline
   def tan: tan = "tan".asInstanceOf[tan]
   
@@ -894,37 +1068,51 @@ object mapboxGlStrings {
   def tms: tms = "tms".asInstanceOf[tms]
   
   @js.native
-  sealed trait `to-boolean` extends ExpressionName
+  sealed trait `to-boolean`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `to-boolean`: `to-boolean` = "to-boolean".asInstanceOf[`to-boolean`]
   
   @js.native
-  sealed trait `to-color` extends ExpressionName
+  sealed trait `to-color`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `to-color`: `to-color` = "to-color".asInstanceOf[`to-color`]
   
   @js.native
-  sealed trait `to-number` extends ExpressionName
+  sealed trait `to-number`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `to-number`: `to-number` = "to-number".asInstanceOf[`to-number`]
   
   @js.native
-  sealed trait `to-string` extends ExpressionName
+  sealed trait `to-string`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `to-string`: `to-string` = "to-string".asInstanceOf[`to-string`]
   
   @js.native
-  sealed trait top extends Anchor
+  sealed trait top
+    extends StObject
+       with Anchor
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-left` extends Anchor
+  sealed trait `top-left`
+    extends StObject
+       with Anchor
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right` extends Anchor
+  sealed trait `top-right`
+    extends StObject
+       with Anchor
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
@@ -949,17 +1137,23 @@ object mapboxGlStrings {
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
-  sealed trait typeof extends ExpressionName
+  sealed trait typeof
+    extends StObject
+       with ExpressionName
   @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
   
   @js.native
-  sealed trait unavailable extends PluginStatus
+  sealed trait unavailable
+    extends StObject
+       with PluginStatus
   @scala.inline
   def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
-  sealed trait upcase extends ExpressionName
+  sealed trait upcase
+    extends StObject
+       with ExpressionName
   @scala.inline
   def upcase: upcase = "upcase".asInstanceOf[upcase]
   
@@ -969,7 +1163,9 @@ object mapboxGlStrings {
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
-  sealed trait `var` extends ExpressionName
+  sealed trait `var`
+    extends StObject
+       with ExpressionName
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   
@@ -989,7 +1185,9 @@ object mapboxGlStrings {
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait viewport extends Alignment
+  sealed trait viewport
+    extends StObject
+       with Alignment
   @scala.inline
   def viewport: viewport = "viewport".asInstanceOf[viewport]
   
@@ -999,7 +1197,9 @@ object mapboxGlStrings {
   def `viewport-y`: `viewport-y` = "viewport-y".asInstanceOf[`viewport-y`]
   
   @js.native
-  sealed trait visible extends Visibility
+  sealed trait visible
+    extends StObject
+       with Visibility
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   
@@ -1029,7 +1229,9 @@ object mapboxGlStrings {
   def xyz: xyz = "xyz".asInstanceOf[xyz]
   
   @js.native
-  sealed trait zoom extends ExpressionName
+  sealed trait zoom
+    extends StObject
+       with ExpressionName
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   

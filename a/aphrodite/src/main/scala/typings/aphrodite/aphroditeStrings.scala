@@ -3,7 +3,6 @@ package typings.aphrodite
 import typings.aphrodite.cssPropertiesMod.CSSWideKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aphroditeStrings {
@@ -1377,12 +1376,16 @@ object aphroditeStrings {
   def infinite: infinite = "infinite".asInstanceOf[infinite]
   
   @js.native
-  sealed trait inherit extends CSSWideKeyword
+  sealed trait inherit
+    extends StObject
+       with CSSWideKeyword
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait initial extends CSSWideKeyword
+  sealed trait initial
+    extends StObject
+       with CSSWideKeyword
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   
@@ -2682,7 +2685,9 @@ object aphroditeStrings {
   def unicodeRange: unicodeRange = "unicodeRange".asInstanceOf[unicodeRange]
   
   @js.native
-  sealed trait unset extends CSSWideKeyword
+  sealed trait unset
+    extends StObject
+       with CSSWideKeyword
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
   

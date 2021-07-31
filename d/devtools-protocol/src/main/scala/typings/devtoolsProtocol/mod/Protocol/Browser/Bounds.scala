@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bounds extends StObject {
   
   /**
     * The window height in pixels.
     */
-  var height: js.UndefOr[integer] = js.native
+  var height: js.UndefOr[integer] = js.undefined
   
   /**
     * The offset from the left edge of the screen to the window in pixels.
     */
-  var left: js.UndefOr[integer] = js.native
+  var left: js.UndefOr[integer] = js.undefined
   
   /**
     * The offset from the top edge of the screen to the window in pixels.
     */
-  var top: js.UndefOr[integer] = js.native
+  var top: js.UndefOr[integer] = js.undefined
   
   /**
     * The window width in pixels.
     */
-  var width: js.UndefOr[integer] = js.native
+  var width: js.UndefOr[integer] = js.undefined
   
   /**
     * The window state. Default to normal.
     */
-  var windowState: js.UndefOr[WindowState] = js.native
+  var windowState: js.UndefOr[WindowState] = js.undefined
 }
 object Bounds {
   

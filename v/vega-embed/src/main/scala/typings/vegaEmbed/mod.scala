@@ -71,29 +71,26 @@ import typings.vegaUtil.mod.LoggerInterface
 import typings.vegaUtil.mod.Order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vega-embed", JSImport.Default)
+  @JSImport("vega-embed", JSImport.Namespace)
   @js.native
-  def default(el: String, spec: String): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: String, spec: String, opts: EmbedOptions[String]): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: String, spec: VisualizationSpec): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: String, spec: VisualizationSpec, opts: EmbedOptions[String]): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: HTMLElement, spec: String): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: HTMLElement, spec: String, opts: EmbedOptions[String]): js.Promise[Result] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(el: String, spec: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: String, spec: String, opts: EmbedOptions[String]): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: String, spec: VisualizationSpec): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: String, spec: VisualizationSpec, opts: EmbedOptions[String]): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: HTMLElement, spec: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: HTMLElement, spec: String, opts: EmbedOptions[String]): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   /**
     * Embed a Vega visualization component in a web page. This function returns a promise.
     *
@@ -102,12 +99,10 @@ object mod {
     *                  Object : The Vega/Vega-Lite specification as a parsed JSON object.
     * @param opts       A JavaScript object containing options for embedding.
     */
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: HTMLElement, spec: VisualizationSpec): js.Promise[Result] = js.native
-  @JSImport("vega-embed", JSImport.Default)
-  @js.native
-  def default(el: HTMLElement, spec: VisualizationSpec, opts: EmbedOptions[String]): js.Promise[Result] = js.native
+  @scala.inline
+  def default(el: HTMLElement, spec: VisualizationSpec): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  @scala.inline
+  def default(el: HTMLElement, spec: VisualizationSpec, opts: EmbedOptions[String]): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   object DEFAULT_ACTIONS {
     
@@ -129,9 +124,7 @@ object mod {
     
     @JSImport("vega-embed", "DEFAULT_ACTIONS.export")
     @js.native
-    def export: Svg = js.native
-    @scala.inline
-    def export_=(x: Svg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("export")(x.asInstanceOf[js.Any])
+    val `export`: Svg = js.native
     
     @JSImport("vega-embed", "DEFAULT_ACTIONS.source")
     @js.native
@@ -145,15 +138,17 @@ object mod {
     *
     * @param spec Vega or Vega-Lite spec.
     */
-  @JSImport("vega-embed", "guessMode")
-  @js.native
-  def guessMode(spec: VisualizationSpec): Mode = js.native
-  @JSImport("vega-embed", "guessMode")
-  @js.native
-  def guessMode(spec: VisualizationSpec, providedMode: Mode): Mode = js.native
+  @scala.inline
+  def guessMode(spec: VisualizationSpec): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("guessMode")(spec.asInstanceOf[js.Any]).asInstanceOf[Mode]
+  @scala.inline
+  def guessMode(spec: VisualizationSpec, providedMode: Mode): Mode = (^.asInstanceOf[js.Dynamic].applyDynamic("guessMode")(spec.asInstanceOf[js.Any], providedMode.asInstanceOf[js.Any])).asInstanceOf[Mode]
   
   /* was `typeof vegaImport` */
   object vega {
+    
+    @JSImport("vega-embed", "vega")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("vega-embed", "vega.Bounds")
     @js.native
@@ -191,49 +186,40 @@ object mod {
     class Operator ()
       extends typings.vega.mod.Operator {
       def this(init: js.Any) = this()
-      def this(init: js.UndefOr[scala.Nothing], update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _]) = this()
-      def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _]) = this()
-      def this(init: js.UndefOr[scala.Nothing], update: js.UndefOr[scala.Nothing], params: js.Any) = this()
-      def this(
-        init: js.UndefOr[scala.Nothing],
-        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
-        params: js.Any
-      ) = this()
-      def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.Any) = this()
-      def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _], params: js.Any) = this()
-      def this(
-        init: js.UndefOr[scala.Nothing],
-        update: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        react: Boolean
-      ) = this()
-      def this(init: js.UndefOr[scala.Nothing], update: js.UndefOr[scala.Nothing], params: js.Any, react: Boolean) = this()
-      def this(
-        init: js.UndefOr[scala.Nothing],
-        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
-        params: js.UndefOr[scala.Nothing],
-        react: Boolean
-      ) = this()
-      def this(
-        init: js.UndefOr[scala.Nothing],
-        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
-        params: js.Any,
-        react: Boolean
-      ) = this()
-      def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], react: Boolean) = this()
-      def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.Any, react: Boolean) = this()
+      def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any]) = this()
+      def this(init: Unit, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any]) = this()
+      def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any], params: js.Any) = this()
+      def this(init: js.Any, update: Unit, params: js.Any) = this()
+      def this(init: Unit, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any], params: js.Any) = this()
+      def this(init: Unit, update: Unit, params: js.Any) = this()
       def this(
         init: js.Any,
-        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
-        params: js.UndefOr[scala.Nothing],
+        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any],
+        params: js.Any,
         react: Boolean
       ) = this()
       def this(
         init: js.Any,
-        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
+        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any],
+        params: Unit,
+        react: Boolean
+      ) = this()
+      def this(init: js.Any, update: Unit, params: js.Any, react: Boolean) = this()
+      def this(init: js.Any, update: Unit, params: Unit, react: Boolean) = this()
+      def this(
+        init: Unit,
+        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any],
         params: js.Any,
         react: Boolean
       ) = this()
+      def this(
+        init: Unit,
+        update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, js.Any],
+        params: Unit,
+        react: Boolean
+      ) = this()
+      def this(init: Unit, update: Unit, params: js.Any, react: Boolean) = this()
+      def this(init: Unit, update: Unit, params: Unit, react: Boolean) = this()
     }
     
     @JSImport("vega-embed", "vega.Renderer")
@@ -248,8 +234,8 @@ object mod {
     class Transform ()
       extends typings.vega.mod.Transform {
       def this(init: js.Any) = this()
-      def this(init: js.UndefOr[scala.Nothing], params: js.Any) = this()
       def this(init: js.Any, params: js.Any) = this()
+      def this(init: Unit, params: js.Any) = this()
     }
     
     @JSImport("vega-embed", "vega.View")
@@ -264,770 +250,586 @@ object mod {
     @js.native
     val Warn: Double = js.native
     
-    @JSImport("vega-embed", "vega.accessor")
-    @js.native
-    def accessor[R](fn: Fn[R]): AccessorFn[R] = js.native
-    @JSImport("vega-embed", "vega.accessor")
-    @js.native
-    def accessor[R](fn: Fn[R], fields: js.UndefOr[scala.Nothing], name: String): AccessorFn[R] = js.native
-    @JSImport("vega-embed", "vega.accessor")
-    @js.native
-    def accessor[R](fn: Fn[R], fields: js.Array[String]): AccessorFn[R] = js.native
-    @JSImport("vega-embed", "vega.accessor")
-    @js.native
-    def accessor[R](fn: Fn[R], fields: js.Array[String], name: String): AccessorFn[R] = js.native
+    @scala.inline
+    def accessor[R](fn: Fn[R]): AccessorFn[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(fn.asInstanceOf[js.Any]).asInstanceOf[AccessorFn[R]]
+    @scala.inline
+    def accessor[R](fn: Fn[R], fields: js.Array[String]): AccessorFn[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(fn.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[AccessorFn[R]]
+    @scala.inline
+    def accessor[R](fn: Fn[R], fields: js.Array[String], name: String): AccessorFn[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(fn.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AccessorFn[R]]
+    @scala.inline
+    def accessor[R](fn: Fn[R], fields: Unit, name: String): AccessorFn[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(fn.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AccessorFn[R]]
     
-    @JSImport("vega-embed", "vega.accessorFields")
-    @js.native
-    def accessorFields(fn: AccessorFn[_]): js.Array[String] = js.native
+    @scala.inline
+    def accessorFields(fn: AccessorFn[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("accessorFields")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("vega-embed", "vega.accessorName")
-    @js.native
-    def accessorName(fn: AccessorFn[_]): String = js.native
+    @scala.inline
+    def accessorName(fn: AccessorFn[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("accessorName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.array")
-    @js.native
-    def array[T](v: T): js.Array[T] = js.native
-    @JSImport("vega-embed", "vega.array")
-    @js.native
-    def array[T](v: js.Array[T]): js.Array[T] = js.native
+    @scala.inline
+    def array[T](v: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def array[T](v: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    @JSImport("vega-embed", "vega.ascending")
-    @js.native
-    def ascending(a: js.Any, b: js.Any): Double = js.native
+    @scala.inline
+    def ascending(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.changeset")
-    @js.native
-    def changeset(): Changeset_ = js.native
+    @scala.inline
+    def changeset(): Changeset_ = ^.asInstanceOf[js.Dynamic].applyDynamic("changeset")().asInstanceOf[Changeset_]
     
-    @JSImport("vega-embed", "vega.clampRange")
-    @js.native
-    def clampRange(range: js.Array[Double], min: Double, max: Double): js.Array[Double] = js.native
+    @scala.inline
+    def clampRange(range: js.Array[Double], min: Double, max: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("clampRange")(range.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: String): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: String, orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: String, orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: js.Array[AccessorFn[_] | String]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: js.Array[AccessorFn[_] | String], orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: js.Array[AccessorFn[_] | String], orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: AccessorFn[_]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: AccessorFn[_], orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-    @JSImport("vega-embed", "vega.compare")
-    @js.native
-    def compare(fields: AccessorFn[_], orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
+    @scala.inline
+    def compare(fields: String): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: String, orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: String, orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: js.Array[AccessorFn[js.Any] | String]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: js.Array[AccessorFn[js.Any] | String], orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: js.Array[AccessorFn[js.Any] | String], orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: AccessorFn[js.Any]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: AccessorFn[js.Any], orders: js.Array[Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
+    @scala.inline
+    def compare(fields: AccessorFn[js.Any], orders: Order): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(fields.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]]
     
-    @JSImport("vega-embed", "vega.constant")
-    @js.native
-    def constant[V](v: V): js.Function0[V] = js.native
+    @scala.inline
+    def constant[V](v: V): js.Function0[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(v.asInstanceOf[js.Any]).asInstanceOf[js.Function0[V]]
     
-    @JSImport("vega-embed", "vega.debounce")
-    @js.native
-    def debounce[F /* <: js.Function */](delay: Double, func: F): F = js.native
+    @scala.inline
+    def debounce[F /* <: js.Function */](delay: Double, func: F): F = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(delay.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[F]
     
-    @JSImport("vega-embed", "vega.error")
-    @js.native
-    def error(msg: String): Error = js.native
+    @scala.inline
+    def error(msg: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Error]
     
-    @JSImport("vega-embed", "vega.expressionFunction")
-    @js.native
-    def expressionFunction(name: String): js.Any = js.native
-    @JSImport("vega-embed", "vega.expressionFunction")
-    @js.native
-    def expressionFunction(name: String, fn: js.UndefOr[scala.Nothing], visitor: js.Any): js.Any = js.native
-    @JSImport("vega-embed", "vega.expressionFunction")
-    @js.native
-    def expressionFunction(name: String, fn: js.Any): js.Any = js.native
-    @JSImport("vega-embed", "vega.expressionFunction")
-    @js.native
-    def expressionFunction(name: String, fn: js.Any, visitor: js.Any): js.Any = js.native
+    @scala.inline
+    def expressionFunction(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def expressionFunction(name: String, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def expressionFunction(name: String, fn: js.Any, visitor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def expressionFunction(name: String, fn: Unit, visitor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.extend")
-    @js.native
-    def extend[T](target: T, source: Partial[T]*): T = js.native
+    @scala.inline
+    def extend[T](target: T, source: Partial[T]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("vega-embed", "vega.extent")
-    @js.native
-    def extent(array: js.Array[Double]): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.extent")
-    @js.native
-    def extent(array: js.Array[Double], accessor: AccessorFn[_]): js.Array[Double] = js.native
+    @scala.inline
+    def extent(array: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def extent(array: js.Array[Double], accessor: AccessorFn[js.Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.extentIndex")
-    @js.native
-    def extentIndex(array: js.Array[Double]): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.extentIndex")
-    @js.native
-    def extentIndex(array: js.Array[Double], accessor: AccessorFn[_]): js.Array[Double] = js.native
+    @scala.inline
+    def extentIndex(array: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("extentIndex")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def extentIndex(array: js.Array[Double], accessor: AccessorFn[js.Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extentIndex")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.falsy")
-    @js.native
-    def falsy(): `false` = js.native
+    @scala.inline
+    def falsy(): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("falsy")().asInstanceOf[`false`]
     
-    @JSImport("vega-embed", "vega.fastmap")
-    @js.native
-    def fastmap(): FastMap_ = js.native
-    @JSImport("vega-embed", "vega.fastmap")
-    @js.native
-    def fastmap(_underscore: js.Object): FastMap_ = js.native
+    @scala.inline
+    def fastmap(): FastMap_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fastmap")().asInstanceOf[FastMap_]
+    @scala.inline
+    def fastmap(_underscore: js.Object): FastMap_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fastmap")(_underscore.asInstanceOf[js.Any]).asInstanceOf[FastMap_]
     
-    @JSImport("vega-embed", "vega.field")
-    @js.native
-    def field(field: String): AccessorFn[_] = js.native
-    @JSImport("vega-embed", "vega.field")
-    @js.native
-    def field(field: String, name: String): AccessorFn[_] = js.native
+    @scala.inline
+    def field(field: String): AccessorFn[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any]).asInstanceOf[AccessorFn[js.Any]]
+    @scala.inline
+    def field(field: String, name: String): AccessorFn[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AccessorFn[js.Any]]
     
-    @JSImport("vega-embed", "vega.flush")
-    @js.native
-    def flush[T /* <: js.Any */](range: js.Array[Double], value: Double, threshold: Double, left: T, right: T, center: T): T = js.native
+    @scala.inline
+    def flush[T /* <: js.Any */](range: js.Array[Double], value: Double, threshold: Double, left: T, right: T, center: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(range.asInstanceOf[js.Any], value.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("vega-embed", "vega.formatLocale")
-    @js.native
-    def formatLocale(definition: js.Object): Unit = js.native
+    @scala.inline
+    def formatLocale(definition: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.hasOwnProperty")
-    @js.native
-    def hasOwnProperty_(`object`: js.Object, property: PropertyKey): Boolean = js.native
+    @scala.inline
+    def hasOwnProperty_(`object`: js.Object, property: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vega.id")
-    @js.native
-    def id(_underscore: js.Object): js.Symbol = js.native
+    @scala.inline
+    def id(_underscore: js.Object): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
     
-    @JSImport("vega-embed", "vega.identity")
-    @js.native
-    def identity[V](v: V): V = js.native
+    @scala.inline
+    def identity[V](v: V): V = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(v.asInstanceOf[js.Any]).asInstanceOf[V]
     
-    @JSImport("vega-embed", "vega.inferType")
-    @js.native
-    def inferType(values: js.Array[_]): TypeInference = js.native
-    @JSImport("vega-embed", "vega.inferType")
-    @js.native
-    def inferType(values: js.Array[_], field: String): TypeInference = js.native
+    @scala.inline
+    def inferType(values: js.Array[js.Any]): TypeInference = ^.asInstanceOf[js.Dynamic].applyDynamic("inferType")(values.asInstanceOf[js.Any]).asInstanceOf[TypeInference]
+    @scala.inline
+    def inferType(values: js.Array[js.Any], field: String): TypeInference = (^.asInstanceOf[js.Dynamic].applyDynamic("inferType")(values.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[TypeInference]
     
-    @JSImport("vega-embed", "vega.inferTypes")
-    @js.native
-    def inferTypes(values: js.Array[_], fields: js.Array[String]): StringDictionary[TypeInference] = js.native
+    @scala.inline
+    def inferTypes(values: js.Array[js.Any], fields: js.Array[String]): StringDictionary[TypeInference] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferTypes")(values.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TypeInference]]
     
-    @JSImport("vega-embed", "vega.ingest")
-    @js.native
-    def ingest(datum: js.Any): js.Any = js.native
+    @scala.inline
+    def ingest(datum: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ingest")(datum.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.inherits")
-    @js.native
-    def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C with P = js.native
-    @JSImport("vega-embed", "vega.inherits")
-    @js.native
-    def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P, members: js.Object): C with P = js.native
+    @scala.inline
+    def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C & P = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[C & P]
+    @scala.inline
+    def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P, members: js.Object): C & P = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[C & P]
     
-    @JSImport("vega-embed", "vega.inrange")
-    @js.native
-    def inrange(value: Double, range: js.Array[Double], left: Boolean, right: Boolean): Boolean = js.native
+    @scala.inline
+    def inrange(value: Double, range: js.Array[Double], left: Boolean, right: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inrange")(value.asInstanceOf[js.Any], range.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vega.isArray")
-    @js.native
-    def isArray[T](a: js.Any): /* is std.Array<T> */ Boolean = js.native
-    @JSImport("vega-embed", "vega.isArray")
-    @js.native
-    def isArray[T](a: js.Array[T]): /* is std.Array<T> */ Boolean = js.native
+    @scala.inline
+    def isArray[T](a: js.Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
+    @scala.inline
+    def isArray[T](a: js.Array[T]): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
     
-    @JSImport("vega-embed", "vega.isBoolean")
-    @js.native
-    def isBoolean(a: js.Any): /* is boolean */ Boolean = js.native
+    @scala.inline
+    def isBoolean(a: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(a.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
     
-    @JSImport("vega-embed", "vega.isDate")
-    @js.native
-    def isDate(a: js.Any): /* is std.Date */ Boolean = js.native
+    @scala.inline
+    def isDate(a: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
     
-    @JSImport("vega-embed", "vega.isFunction")
-    @js.native
-    def isFunction(a: js.Any): /* is std.Function */ Boolean = js.native
+    @scala.inline
+    def isFunction(a: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    @JSImport("vega-embed", "vega.isIterable")
-    @js.native
-    def isIterable(a: js.Any): Boolean = js.native
+    @scala.inline
+    def isIterable(a: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vega.isNumber")
-    @js.native
-    def isNumber(a: js.Any): /* is number */ Boolean = js.native
+    @scala.inline
+    def isNumber(a: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(a.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
     
-    @JSImport("vega-embed", "vega.isObject")
-    @js.native
-    def isObject(a: js.Any): /* is object */ Boolean = js.native
+    @scala.inline
+    def isObject(a: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(a.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
     
-    @JSImport("vega-embed", "vega.isRegExp")
-    @js.native
-    def isRegExp(a: js.Any): /* is std.RegExp */ Boolean = js.native
+    @scala.inline
+    def isRegExp(a: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
     
-    @JSImport("vega-embed", "vega.isString")
-    @js.native
-    def isString(a: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def isString(a: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(a.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("vega-embed", "vega.isTuple")
-    @js.native
-    def isTuple(t: js.Any): Boolean = js.native
+    @scala.inline
+    def isTuple(t: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTuple")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vega.key")
-    @js.native
-    def key(fields: js.Array[String]): js.Function1[/* _ */ js.Object, String] = js.native
-    @JSImport("vega-embed", "vega.key")
-    @js.native
-    def key(fields: js.Array[String], flat: Boolean): js.Function1[/* _ */ js.Object, String] = js.native
+    @scala.inline
+    def key(fields: js.Array[String]): js.Function1[/* _ */ js.Object, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(fields.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* _ */ js.Object, String]]
+    @scala.inline
+    def key(fields: js.Array[String], flat: Boolean): js.Function1[/* _ */ js.Object, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("key")(fields.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* _ */ js.Object, String]]
     
-    @JSImport("vega-embed", "vega.lerp")
-    @js.native
-    def lerp(array: js.Array[Double], fraction: Double): Double = js.native
+    @scala.inline
+    def lerp(array: js.Array[Double], fraction: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(array.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.loader")
-    @js.native
-    def loader(): Loader_ = js.native
-    @JSImport("vega-embed", "vega.loader")
-    @js.native
-    def loader(opt: LoaderOptions): Loader_ = js.native
+    @scala.inline
+    def loader(): Loader_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loader")().asInstanceOf[Loader_]
+    @scala.inline
+    def loader(opt: LoaderOptions): Loader_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loader")(opt.asInstanceOf[js.Any]).asInstanceOf[Loader_]
     
-    @JSImport("vega-embed", "vega.log")
-    @js.native
-    def log(args: js.Any*): Unit = js.native
+    @scala.inline
+    def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.logger")
-    @js.native
-    def logger(): LoggerInterface = js.native
-    @JSImport("vega-embed", "vega.logger")
-    @js.native
-    def logger(_underscore: js.UndefOr[scala.Nothing], method: String): LoggerInterface = js.native
-    @JSImport("vega-embed", "vega.logger")
-    @js.native
-    def logger(_underscore: Double): LoggerInterface = js.native
-    @JSImport("vega-embed", "vega.logger")
-    @js.native
-    def logger(_underscore: Double, method: String): LoggerInterface = js.native
+    @scala.inline
+    def logger(): LoggerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")().asInstanceOf[LoggerInterface]
+    @scala.inline
+    def logger(_underscore: Double): LoggerInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(_underscore.asInstanceOf[js.Any]).asInstanceOf[LoggerInterface]
+    @scala.inline
+    def logger(_underscore: Double, method: String): LoggerInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("logger")(_underscore.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[LoggerInterface]
+    @scala.inline
+    def logger(_underscore: Unit, method: String): LoggerInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("logger")(_underscore.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[LoggerInterface]
     
-    @JSImport("vega-embed", "vega.merge")
-    @js.native
+    @scala.inline
     def merge(
       compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
-      array1: js.Array[_],
-      array2: js.Array[_]
-    ): Unit = js.native
-    @JSImport("vega-embed", "vega.merge")
-    @js.native
+      array1: js.Array[js.Any],
+      array2: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(compare.asInstanceOf[js.Any], array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def merge(
       compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
-      array1: js.Array[_],
-      array2: js.Array[_],
-      output: js.Array[_]
-    ): Unit = js.native
+      array1: js.Array[js.Any],
+      array2: js.Array[js.Any],
+      output: js.Array[js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(compare.asInstanceOf[js.Any], array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.mergeConfig")
-    @js.native
-    def mergeConfig[C /* <: js.Object */](c: C*): C = js.native
+    @scala.inline
+    def mergeConfig[C /* <: js.Object */](c: C*): C = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeConfig")(c.asInstanceOf[js.Any]).asInstanceOf[C]
     
-    @JSImport("vega-embed", "vega.merge")
-    @js.native
+    @scala.inline
     def merge_Array(
       compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
-      array1: js.Array[_],
-      array2: js.Array[_]
-    ): js.Array[_] = js.native
+      array1: js.Array[js.Any],
+      array2: js.Array[js.Any]
+    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(compare.asInstanceOf[js.Any], array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("vega-embed", "vega.one")
-    @js.native
-    def one(): `1` = js.native
+    @scala.inline
+    def one(): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("one")().asInstanceOf[`1`]
     
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad(str: String, len: Double): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad(str: String, len: Double, char: String): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_center(str: String, len: Double, char: js.UndefOr[scala.Nothing], align: center): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_center(str: String, len: Double, char: String, align: center): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_left(str: String, len: Double, char: js.UndefOr[scala.Nothing], align: left): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_left(str: String, len: Double, char: String, align: left): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_right(str: String, len: Double, char: js.UndefOr[scala.Nothing], align: right): String = js.native
-    @JSImport("vega-embed", "vega.pad")
-    @js.native
-    def pad_right(str: String, len: Double, char: String, align: right): String = js.native
+    @scala.inline
+    def pad(str: String, len: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad(str: String, len: Double, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.panLinear")
-    @js.native
-    def panLinear(domain: js.Array[Double], delta: Double): js.Array[Double] = js.native
+    @scala.inline
+    def pad_center(str: String, len: Double, char: String, align: center): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad_center(str: String, len: Double, char: Unit, align: center): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.panLog")
-    @js.native
-    def panLog(domain: js.Array[Double], delta: Double): js.Array[Double] = js.native
+    @scala.inline
+    def pad_left(str: String, len: Double, char: String, align: left): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad_left(str: String, len: Double, char: Unit, align: left): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.panPow")
-    @js.native
-    def panPow(domain: js.Array[Double], delta: Double, exponent: Double): js.Array[Double] = js.native
+    @scala.inline
+    def pad_right(str: String, len: Double, char: String, align: right): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def pad_right(str: String, len: Double, char: Unit, align: right): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], char.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.panSymlog")
-    @js.native
-    def panSymlog(domain: js.Array[Double], delta: Double, constant: Double): js.Array[Double] = js.native
+    @scala.inline
+    def panLinear(domain: js.Array[Double], delta: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("panLinear")(domain.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.parse")
-    @js.native
-    def parse(spec: Spec): Runtime = js.native
-    @JSImport("vega-embed", "vega.parse")
-    @js.native
-    def parse(spec: Spec, config: js.UndefOr[scala.Nothing], opt: Ast): Runtime = js.native
-    @JSImport("vega-embed", "vega.parse")
-    @js.native
-    def parse(spec: Spec, config: typings.vegaTypings.configMod.Config): Runtime = js.native
-    @JSImport("vega-embed", "vega.parse")
-    @js.native
-    def parse(spec: Spec, config: typings.vegaTypings.configMod.Config, opt: Ast): Runtime = js.native
+    @scala.inline
+    def panLog(domain: js.Array[Double], delta: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("panLog")(domain.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.peek")
-    @js.native
-    def peek(array: js.Array[_]): js.Any = js.native
+    @scala.inline
+    def panPow(domain: js.Array[Double], delta: Double, exponent: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("panPow")(domain.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.projection")
-    @js.native
-    def projection(`type`: String, projection: js.Any): typings.vegaTypings.runtimeMod.View = js.native
+    @scala.inline
+    def panSymlog(domain: js.Array[Double], delta: Double, constant: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("panSymlog")(domain.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], constant.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.quarter")
-    @js.native
-    def quarter(date: Double): Double = js.native
-    @JSImport("vega-embed", "vega.quarter")
-    @js.native
-    def quarter(date: Date): Double = js.native
+    @scala.inline
+    def parse(spec: Spec): Runtime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(spec.asInstanceOf[js.Any]).asInstanceOf[Runtime]
+    @scala.inline
+    def parse(spec: Spec, config: Unit, opt: Ast): Runtime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Runtime]
+    @scala.inline
+    def parse(spec: Spec, config: typings.vegaTypings.configMod.Config): Runtime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Runtime]
+    @scala.inline
+    def parse(spec: Spec, config: typings.vegaTypings.configMod.Config, opt: Ast): Runtime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Runtime]
     
-    @JSImport("vega-embed", "vega.read")
-    @js.native
-    def read(data: String, schema: Format): js.Array[js.Object] = js.native
-    @JSImport("vega-embed", "vega.read")
-    @js.native
-    def read(data: String, schema: Format, dateParse: js.Function1[/* dateString */ String, Date]): js.Array[js.Object] = js.native
+    @scala.inline
+    def peek(array: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.renderModule")
-    @js.native
-    def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = js.native
+    @scala.inline
+    def projection(`type`: String, projection: js.Any): typings.vegaTypings.runtimeMod.View = (^.asInstanceOf[js.Dynamic].applyDynamic("projection")(`type`.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[typings.vegaTypings.runtimeMod.View]
     
-    @JSImport("vega-embed", "vega.repeat")
-    @js.native
-    def repeat(str: String, count: Double): String = js.native
+    @scala.inline
+    def quarter(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def quarter(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("quarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.scale")
-    @js.native
-    def scale(`type`: String): js.Any = js.native
-    @JSImport("vega-embed", "vega.scale")
-    @js.native
-    def scale(`type`: String, scale: js.Any): js.Any = js.native
+    @scala.inline
+    def read(data: String, schema: Format): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+    @scala.inline
+    def read(data: String, schema: Format, dateParse: js.Function1[/* dateString */ String, Date]): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], dateParse.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
     
-    @JSImport("vega-embed", "vega.sceneVisit")
-    @js.native
-    def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = js.native
-    @JSImport("vega-embed", "vega.sceneVisit")
-    @js.native
-    def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = js.native
+    @scala.inline
+    def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderModule")(moduleName.asInstanceOf[js.Any], renderModule.asInstanceOf[js.Any])).asInstanceOf[RenderModule_]
     
-    @JSImport("vega-embed", "vega.scheme")
-    @js.native
-    def scheme(name: String): js.Any = js.native
-    @JSImport("vega-embed", "vega.scheme")
-    @js.native
-    def scheme(name: String, scheme: js.Any): js.Any = js.native
+    @scala.inline
+    def repeat(str: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(str.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.schemeDiscretized")
-    @js.native
-    def schemeDiscretized(name: String): js.Any = js.native
-    @JSImport("vega-embed", "vega.schemeDiscretized")
-    @js.native
-    def schemeDiscretized(name: String, scheme: js.UndefOr[scala.Nothing], interpolator: js.Any): js.Any = js.native
-    @JSImport("vega-embed", "vega.schemeDiscretized")
-    @js.native
-    def schemeDiscretized(name: String, scheme: js.Any): js.Any = js.native
-    @JSImport("vega-embed", "vega.schemeDiscretized")
-    @js.native
-    def schemeDiscretized(name: String, scheme: js.Any, interpolator: js.Any): js.Any = js.native
+    @scala.inline
+    def scale(`type`: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("scale")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def scale(`type`: String, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(`type`.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.span")
-    @js.native
-    def span(array: js.Array[Double]): Double = js.native
+    @scala.inline
+    def sceneVisit(scene: SceneGroup, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def sceneVisit(scene: Scene, itemCallback: js.Function1[/* item */ Scene | SceneGroup | SceneItem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sceneVisit")(scene.asInstanceOf[js.Any], itemCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.splitAccessPath")
-    @js.native
-    def splitAccessPath(path: String): js.Array[String] = js.native
+    @scala.inline
+    def scheme(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def scheme(name: String, scheme: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.stringValue")
-    @js.native
-    def stringValue(a: js.Any): String = js.native
+    @scala.inline
+    def schemeDiscretized(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schemeDiscretized")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def schemeDiscretized(name: String, scheme: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("schemeDiscretized")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def schemeDiscretized(name: String, scheme: js.Any, interpolator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("schemeDiscretized")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def schemeDiscretized(name: String, scheme: Unit, interpolator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("schemeDiscretized")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("vega-embed", "vega.timeFormatLocale")
-    @js.native
-    def timeFormatLocale(definition: js.Object): Unit = js.native
+    @scala.inline
+    def span(array: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("span")(array.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.toBoolean")
-    @js.native
-    def toBoolean(a: js.Any): Boolean = js.native
+    @scala.inline
+    def splitAccessPath(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitAccessPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("vega-embed", "vega.toDate")
-    @js.native
-    def toDate(a: js.Any): Double = js.native
-    @JSImport("vega-embed", "vega.toDate")
-    @js.native
-    def toDate(a: js.Any, parser: js.Function1[/* _ */ js.Any, Double]): Double = js.native
+    @scala.inline
+    def stringValue(a: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringValue")(a.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.toNumber")
-    @js.native
-    def toNumber(a: js.Any): Double = js.native
+    @scala.inline
+    def timeFormatLocale(definition: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.toSet")
-    @js.native
-    def toSet[T](array: js.Array[T]): StringDictionary[`true`] = js.native
+    @scala.inline
+    def toBoolean(a: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBoolean")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vega.toString")
-    @js.native
-    def toString_(a: js.Any): String = js.native
+    @scala.inline
+    def toDate(a: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def toDate(a: js.Any, parser: js.Function1[/* _ */ js.Any, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(a.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate(a: String, length: Double): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate(a: String, length: Double, align: js.UndefOr[scala.Nothing], ellipsis: String): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_center(a: String, length: Double, align: center): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_center(a: String, length: Double, align: center, ellipsis: String): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_left(a: String, length: Double, align: left): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_left(a: String, length: Double, align: left, ellipsis: String): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_right(a: String, length: Double, align: right): String = js.native
-    @JSImport("vega-embed", "vega.truncate")
-    @js.native
-    def truncate_right(a: String, length: Double, align: right, ellipsis: String): String = js.native
+    @scala.inline
+    def toNumber(a: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vega.truthy")
-    @js.native
-    def truthy(): `true` = js.native
+    @scala.inline
+    def toSet[T](array: js.Array[T]): StringDictionary[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSet")(array.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[`true`]]
     
-    @JSImport("vega-embed", "vega.tupleid")
-    @js.native
-    def tupleid(t: js.Any): Double = js.native
+    @scala.inline
+    def toString_(a: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(a.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vega.utcquarter")
-    @js.native
-    def utcquarter(date: Double): Double = js.native
-    @JSImport("vega-embed", "vega.utcquarter")
-    @js.native
-    def utcquarter(date: Date): Double = js.native
+    @scala.inline
+    def truncate(a: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def truncate(a: String, length: Double, align: Unit, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def truncate_center(a: String, length: Double, align: center): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def truncate_center(a: String, length: Double, align: center, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def truncate_left(a: String, length: Double, align: left): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def truncate_left(a: String, length: Double, align: left, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def truncate_right(a: String, length: Double, align: right): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def truncate_right(a: String, length: Double, align: right, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(a.asInstanceOf[js.Any], length.asInstanceOf[js.Any], align.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def truthy(): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("truthy")().asInstanceOf[`true`]
+    
+    @scala.inline
+    def tupleid(t: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleid")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def utcquarter(date: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("utcquarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def utcquarter(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("utcquarter")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     @JSImport("vega-embed", "vega.version")
     @js.native
     val version: String = js.native
     
-    @JSImport("vega-embed", "vega.visitArray")
-    @js.native
+    @scala.inline
     def visitArray(
-      array: js.UndefOr[scala.Nothing],
+      array: js.Array[js.Any],
       filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
-      visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
-    ): Unit = js.native
-    @JSImport("vega-embed", "vega.visitArray")
-    @js.native
+      visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visitArray")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def visitArray(
-      array: js.Array[_],
+      array: Unit,
       filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
-      visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
-    ): Unit = js.native
+      visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visitArray")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.writeConfig")
-    @js.native
-    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any): Unit = js.native
-    @JSImport("vega-embed", "vega.writeConfig")
-    @js.native
-    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: js.Object): Unit = js.native
-    @JSImport("vega-embed", "vega.writeConfig")
-    @js.native
-    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: Boolean): Unit = js.native
+    @scala.inline
+    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfig")(c.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfig")(c.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], recurse.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfig")(c.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], recurse.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("vega-embed", "vega.zero")
-    @js.native
-    def zero(): `0` = js.native
+    @scala.inline
+    def zero(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[`0`]
     
-    @JSImport("vega-embed", "vega.zoomLinear")
-    @js.native
-    def zoomLinear(domain: js.Array[Double], anchor: Double, scale: Double): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.zoomLinear")
-    @js.native
-    def zoomLinear(domain: js.Array[Double], anchor: Null, scale: Double): js.Array[Double] = js.native
+    @scala.inline
+    def zoomLinear(domain: js.Array[Double], anchor: Double, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomLinear")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def zoomLinear(domain: js.Array[Double], anchor: Null, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomLinear")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.zoomLog")
-    @js.native
-    def zoomLog(domain: js.Array[Double], anchor: Double, scale: Double): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.zoomLog")
-    @js.native
-    def zoomLog(domain: js.Array[Double], anchor: Null, scale: Double): js.Array[Double] = js.native
+    @scala.inline
+    def zoomLog(domain: js.Array[Double], anchor: Double, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomLog")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def zoomLog(domain: js.Array[Double], anchor: Null, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomLog")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.zoomPow")
-    @js.native
-    def zoomPow(domain: js.Array[Double], anchor: Double, scale: Double, exponent: Double): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.zoomPow")
-    @js.native
-    def zoomPow(domain: js.Array[Double], anchor: Null, scale: Double, exponent: Double): js.Array[Double] = js.native
+    @scala.inline
+    def zoomPow(domain: js.Array[Double], anchor: Double, scale: Double, exponent: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomPow")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def zoomPow(domain: js.Array[Double], anchor: Null, scale: Double, exponent: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomPow")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("vega-embed", "vega.zoomSymlog")
-    @js.native
-    def zoomSymlog(domain: js.Array[Double], anchor: Double, scale: Double, constant: Double): js.Array[Double] = js.native
-    @JSImport("vega-embed", "vega.zoomSymlog")
-    @js.native
-    def zoomSymlog(domain: js.Array[Double], anchor: Null, scale: Double, constant: Double): js.Array[Double] = js.native
+    @scala.inline
+    def zoomSymlog(domain: js.Array[Double], anchor: Double, scale: Double, constant: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomSymlog")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], constant.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def zoomSymlog(domain: js.Array[Double], anchor: Null, scale: Double, constant: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomSymlog")(domain.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], constant.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   }
   
   /* was `typeof vegaLiteImport` */
   object vegaLite {
     
-    @JSImport("vega-embed", "vegaLite.accessPathDepth")
+    @JSImport("vega-embed", "vegaLite")
     @js.native
-    def accessPathDepth(path: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("vega-embed", "vegaLite.accessPathWithDatum")
-    @js.native
-    def accessPathWithDatum(path: String): String = js.native
-    @JSImport("vega-embed", "vegaLite.accessPathWithDatum")
-    @js.native
-    def accessPathWithDatum(path: String, datum: String): String = js.native
+    @scala.inline
+    def accessPathDepth(path: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("accessPathDepth")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vegaLite.compile")
-    @js.native
-    def compile(inputSpec: TopLevelSpec): Normalized = js.native
-    @JSImport("vega-embed", "vegaLite.compile")
-    @js.native
-    def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = js.native
+    @scala.inline
+    def accessPathWithDatum(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("accessPathWithDatum")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def accessPathWithDatum(path: String, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("accessPathWithDatum")(path.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.contains")
-    @js.native
-    def contains[T](array: js.Array[T], item: T): Boolean = js.native
+    @scala.inline
+    def compile(inputSpec: TopLevelSpec): Normalized = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any]).asInstanceOf[Normalized]
+    @scala.inline
+    def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Normalized]
     
-    @JSImport("vega-embed", "vegaLite.deepEqual")
-    @js.native
-    def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def contains[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.deleteNestedProperty")
-    @js.native
-    def deleteNestedProperty(obj: js.Any, orderedProps: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def deepEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def deleteNestedProperty(obj: js.Any, orderedProps: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteNestedProperty")(obj.asInstanceOf[js.Any], orderedProps.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("vega-embed", "vegaLite.duplicate")
     @js.native
     val duplicate: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof clone_ */ js.Any = js.native
     
-    @JSImport("vega-embed", "vegaLite.entries")
-    @js.native
-    def entries(o: js.Object): js.Array[js.Tuple2[String, _]] = js.native
-    @JSImport("vega-embed", "vegaLite.entries")
-    @js.native
-    def entries[T](o: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = js.native
-    @JSImport("vega-embed", "vegaLite.entries")
-    @js.native
-    def entries[T](o: ArrayLike[T]): js.Array[js.Tuple2[String, T]] = js.native
+    @scala.inline
+    def entries(o: js.Object): js.Array[js.Tuple2[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, js.Any]]]
+    @scala.inline
+    def entries[T](o: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, T]]]
+    @scala.inline
+    def entries[T](o: ArrayLike[T]): js.Array[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, T]]]
     
-    @JSImport("vega-embed", "vegaLite.every")
-    @js.native
+    @scala.inline
     def every[T](
       arr: js.Array[T],
       f: js.Function3[/* d */ T, /* k */ js.UndefOr[js.Any], /* i */ js.UndefOr[js.Any], Boolean]
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.fieldIntersection")
-    @js.native
-    def fieldIntersection(a: ReadonlySet[String], b: ReadonlySet[String]): Boolean = js.native
+    @scala.inline
+    def fieldIntersection(a: ReadonlySet[String], b: ReadonlySet[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldIntersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.flatAccessWithDatum")
-    @js.native
-    def flatAccessWithDatum(path: String): String = js.native
-    @JSImport("vega-embed", "vegaLite.flatAccessWithDatum")
-    @js.native
-    def flatAccessWithDatum_datum(path: String, datum: datum): String = js.native
-    @JSImport("vega-embed", "vegaLite.flatAccessWithDatum")
-    @js.native
-    def flatAccessWithDatum_datumdatum(path: String, datum: datumDotdatum): String = js.native
-    @JSImport("vega-embed", "vegaLite.flatAccessWithDatum")
-    @js.native
-    def flatAccessWithDatum_parent(path: String, datum: parent): String = js.native
+    @scala.inline
+    def flatAccessWithDatum(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAccessWithDatum")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.getFirstDefined")
-    @js.native
-    def getFirstDefined[T](args: T*): js.UndefOr[T] = js.native
+    @scala.inline
+    def flatAccessWithDatum_datum(path: String, datum: datum): String = (^.asInstanceOf[js.Dynamic].applyDynamic("flatAccessWithDatum")(path.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.hasIntersection")
-    @js.native
-    def hasIntersection[T](a: ReadonlySet[T], b: ReadonlySet[T]): Boolean = js.native
+    @scala.inline
+    def flatAccessWithDatum_datumdatum(path: String, datum: datumDotdatum): String = (^.asInstanceOf[js.Dynamic].applyDynamic("flatAccessWithDatum")(path.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.hash")
-    @js.native
-    def hash(a: js.Any): String | Double = js.native
+    @scala.inline
+    def flatAccessWithDatum_parent(path: String, datum: parent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("flatAccessWithDatum")(path.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.internalField")
-    @js.native
-    def internalField(name: String): String = js.native
+    @scala.inline
+    def getFirstDefined[T](args: T*): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstDefined")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
     
-    @JSImport("vega-embed", "vegaLite.isBoolean")
-    @js.native
-    def isBoolean(b: js.Any): /* is boolean */ Boolean = js.native
+    @scala.inline
+    def hasIntersection[T](a: ReadonlySet[T], b: ReadonlySet[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasIntersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.isEmpty")
-    @js.native
-    def isEmpty(obj: js.Object): Boolean = js.native
+    @scala.inline
+    def hash(a: js.Any): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(a.asInstanceOf[js.Any]).asInstanceOf[String | Double]
     
-    @JSImport("vega-embed", "vegaLite.isEqual")
-    @js.native
-    def isEqual[T](dict: Dict[T], other: Dict[T]): Boolean = js.native
+    @scala.inline
+    def internalField(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("internalField")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.isInternalField")
-    @js.native
-    def isInternalField(name: String): Boolean = js.native
+    @scala.inline
+    def isBoolean(b: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(b.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
     
-    @JSImport("vega-embed", "vegaLite.isNullOrFalse")
-    @js.native
-    def isNullOrFalse(x: js.Any): Boolean = js.native
+    @scala.inline
+    def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.isNumeric")
-    @js.native
-    def isNumeric(value: String): Boolean = js.native
-    @JSImport("vega-embed", "vegaLite.isNumeric")
-    @js.native
-    def isNumeric(value: Double): Boolean = js.native
+    @scala.inline
+    def isEqual[T](dict: Dict[T], other: Dict[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(dict.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.keys")
-    @js.native
-    def keys[T](o: T): js.Array[Extract[/* keyof T */ String, String]] = js.native
+    @scala.inline
+    def isInternalField(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalField")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.logicalExpr")
-    @js.native
-    def logicalExpr[T](op: LogicalComposition[T], cb: js.Function1[/* repeated */ js.Any, String]): String = js.native
+    @scala.inline
+    def isNullOrFalse(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrFalse")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.mergeDeep")
-    @js.native
-    def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = js.native
+    @scala.inline
+    def isNumeric(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isNumeric(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("vega-embed", "vegaLite.normalize")
-    @js.native
-    def normalize(spec: TopLevelSpec with LayoutSizeMixins): TopLevel[NormalizedSpec] with LayoutSizeMixins = js.native
-    @JSImport("vega-embed", "vegaLite.normalize")
-    @js.native
-    def normalize(spec: TopLevelSpec with LayoutSizeMixins, config: typings.vegaLite.srcConfigMod.Config[SignalRef]): TopLevel[NormalizedSpec] with LayoutSizeMixins = js.native
+    @scala.inline
+    def keys[T](o: T): js.Array[Extract[/* keyof T */ String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[Extract[/* keyof T */ String, String]]]
     
-    @JSImport("vega-embed", "vegaLite.normalizeAngle")
-    @js.native
-    def normalizeAngle(angle: Double): Double = js.native
+    @scala.inline
+    def logicalExpr[T](op: LogicalComposition[T], cb: js.Function1[/* repeated */ js.Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpr")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.omit")
-    @js.native
-    def omit[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, props: js.Array[K]): Omit[T, K] = js.native
+    @scala.inline
+    def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("vega-embed", "vegaLite.pick")
-    @js.native
-    def pick[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, props: js.Array[K]): Pick[T, K] = js.native
+    @scala.inline
+    def normalize(spec: TopLevelSpec & LayoutSizeMixins): TopLevel[NormalizedSpec] & LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any]).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
+    @scala.inline
+    def normalize(spec: TopLevelSpec & LayoutSizeMixins, config: typings.vegaLite.srcConfigMod.Config[SignalRef]): TopLevel[NormalizedSpec] & LayoutSizeMixins = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
     
-    @JSImport("vega-embed", "vegaLite.prefixGenerator")
-    @js.native
-    def prefixGenerator(a: ReadonlySet[String]): ReadonlySet[String] = js.native
+    @scala.inline
+    def normalizeAngle(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAngle")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("vega-embed", "vegaLite.removePathFromField")
-    @js.native
-    def removePathFromField(path: String): String = js.native
+    @scala.inline
+    def omit[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, props: js.Array[K]): Omit[T, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Omit[T, K]]
     
-    @JSImport("vega-embed", "vegaLite.replaceAll")
-    @js.native
-    def replaceAll(string: String, find: String, replacement: String): String = js.native
+    @scala.inline
+    def pick[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, props: js.Array[K]): Pick[T, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(obj.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Pick[T, K]]
     
-    @JSImport("vega-embed", "vegaLite.replacePathInField")
-    @js.native
-    def replacePathInField(path: String): String = js.native
+    @scala.inline
+    def prefixGenerator(a: ReadonlySet[String]): ReadonlySet[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixGenerator")(a.asInstanceOf[js.Any]).asInstanceOf[ReadonlySet[String]]
     
-    @JSImport("vega-embed", "vegaLite.resetIdCounter")
-    @js.native
-    def resetIdCounter(): Unit = js.native
+    @scala.inline
+    def removePathFromField(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removePathFromField")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.setEqual")
-    @js.native
-    def setEqual[T](a: Set[T], b: Set[T]): Boolean = js.native
+    @scala.inline
+    def replaceAll(string: String, find: String, replacement: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(string.asInstanceOf[js.Any], find.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.some")
-    @js.native
+    @scala.inline
+    def replacePathInField(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replacePathInField")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def resetIdCounter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIdCounter")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def setEqual[T](a: Set[T], b: Set[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
     def some[T](
       arr: js.Array[T],
       f: js.Function3[/* d */ T, /* k */ js.UndefOr[js.Any], /* i */ js.UndefOr[js.Any], Boolean]
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("vega-embed", "vegaLite.stringify")
     @js.native
     val stringify: js.Function1[/* obj */ js.Any, String] = js.native
     
-    @JSImport("vega-embed", "vegaLite.titleCase")
-    @js.native
-    def titleCase(s: String): String = js.native
+    @scala.inline
+    def titleCase(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("vega-embed", "vegaLite.unique")
-    @js.native
-    def unique[T](values: js.Array[T], f: js.Function1[/* item */ T, String | Double]): js.Array[T] = js.native
+    @scala.inline
+    def unique[T](values: js.Array[T], f: js.Function1[/* item */ T, String | Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(values.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("vega-embed", "vegaLite.uniqueId")
-    @js.native
-    def uniqueId(): String | Double = js.native
-    @JSImport("vega-embed", "vegaLite.uniqueId")
-    @js.native
-    def uniqueId(prefix: String): String | Double = js.native
+    @scala.inline
+    def uniqueId(): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String | Double]
+    @scala.inline
+    def uniqueId(prefix: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String | Double]
     
-    @JSImport("vega-embed", "vegaLite.vals")
-    @js.native
-    def vals(o: js.Object): js.Array[_] = js.native
-    @JSImport("vega-embed", "vegaLite.vals")
-    @js.native
-    def vals[T](o: StringDictionary[T]): js.Array[T] = js.native
-    @JSImport("vega-embed", "vegaLite.vals")
-    @js.native
-    def vals[T](o: ArrayLike[T]): js.Array[T] = js.native
+    @scala.inline
+    def vals(o: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("vals")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def vals[T](o: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("vals")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def vals[T](o: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("vals")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    @JSImport("vega-embed", "vegaLite.varName")
-    @js.native
-    def varName(s: String): String = js.native
+    @scala.inline
+    def varName(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("varName")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait Actions extends StObject {
     
-    var compiled: js.UndefOr[Boolean] = js.native
+    var compiled: js.UndefOr[Boolean] = js.undefined
     
-    var editor: js.UndefOr[Boolean] = js.native
+    var editor: js.UndefOr[Boolean] = js.undefined
     
-    var export: js.UndefOr[Boolean | Png] = js.native
+    var `export`: js.UndefOr[Boolean | Png] = js.undefined
     
-    var source: js.UndefOr[Boolean] = js.native
+    var source: js.UndefOr[Boolean] = js.undefined
   }
   object Actions {
     
@@ -1068,54 +870,53 @@ object mod {
   
   type Config = (typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]) | typings.vegaTypings.configMod.Config
   
-  @js.native
   trait EmbedOptions[S] extends StObject {
     
-    var actions: js.UndefOr[Boolean | Actions] = js.native
+    var actions: js.UndefOr[Boolean | Actions] = js.undefined
     
-    var ast: js.UndefOr[Boolean] = js.native
+    var ast: js.UndefOr[Boolean] = js.undefined
     
-    var config: js.UndefOr[S | Config] = js.native
+    var config: js.UndefOr[S | Config] = js.undefined
     
-    var defaultStyle: js.UndefOr[Boolean | String] = js.native
+    var defaultStyle: js.UndefOr[Boolean | String] = js.undefined
     
-    var downloadFileName: js.UndefOr[String] = js.native
+    var downloadFileName: js.UndefOr[String] = js.undefined
     
-    var editorUrl: js.UndefOr[String] = js.native
+    var editorUrl: js.UndefOr[String] = js.undefined
     
-    var formatLocale: js.UndefOr[Record[String, _]] = js.native
+    var formatLocale: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hover: js.UndefOr[Boolean | Hover] = js.native
+    var hover: js.UndefOr[Boolean | Hover] = js.undefined
     
-    var i18n: js.UndefOr[PartialCLICKTOVIEWACTIONS] = js.native
+    var i18n: js.UndefOr[PartialCLICKTOVIEWACTIONS] = js.undefined
     
-    var loader: js.UndefOr[Loader_ | LoaderOptions] = js.native
+    var loader: js.UndefOr[Loader_ | LoaderOptions] = js.undefined
     
-    var logLevel: js.UndefOr[Double] = js.native
+    var logLevel: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var padding: js.UndefOr[Double | Bottom] = js.native
+    var padding: js.UndefOr[Double | Bottom] = js.undefined
     
-    var patch: js.UndefOr[S | PatchFunc | js.Array[Operation]] = js.native
+    var patch: js.UndefOr[S | PatchFunc | js.Array[Operation]] = js.undefined
     
-    var renderer: js.UndefOr[Renderers] = js.native
+    var renderer: js.UndefOr[Renderers] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.native
+    var scaleFactor: js.UndefOr[Double] = js.undefined
     
-    var sourceFooter: js.UndefOr[String] = js.native
+    var sourceFooter: js.UndefOr[String] = js.undefined
     
-    var sourceHeader: js.UndefOr[String] = js.native
+    var sourceHeader: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[excel | ggplot2 | quartz | vox | dark] = js.native
+    var theme: js.UndefOr[excel | ggplot2 | quartz | vox | dark] = js.undefined
     
-    var timeFormatLocale: js.UndefOr[Record[String, _]] = js.native
+    var timeFormatLocale: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var tooltip: js.UndefOr[TooltipHandler | Options | Boolean] = js.native
+    var tooltip: js.UndefOr[TooltipHandler | Options | Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object EmbedOptions {
     
@@ -1126,7 +927,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EmbedOptionsMutableBuilder[Self <: EmbedOptions[_], S] (val x: Self with EmbedOptions[S]) extends AnyVal {
+    implicit class EmbedOptionsMutableBuilder[Self <: EmbedOptions[?], S] (val x: Self & EmbedOptions[S]) extends AnyVal {
       
       @scala.inline
       def setActions(value: Boolean | Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -1165,7 +966,7 @@ object mod {
       def setEditorUrlUndefined: Self = StObject.set(x, "editorUrl", js.undefined)
       
       @scala.inline
-      def setFormatLocale(value: Record[String, _]): Self = StObject.set(x, "formatLocale", value.asInstanceOf[js.Any])
+      def setFormatLocale(value: Record[String, js.Any]): Self = StObject.set(x, "formatLocale", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatLocaleUndefined: Self = StObject.set(x, "formatLocale", js.undefined)
@@ -1255,7 +1056,7 @@ object mod {
       def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
       @scala.inline
-      def setTimeFormatLocale(value: Record[String, _]): Self = StObject.set(x, "timeFormatLocale", value.asInstanceOf[js.Any])
+      def setTimeFormatLocale(value: Record[String, js.Any]): Self = StObject.set(x, "timeFormatLocale", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTimeFormatLocaleUndefined: Self = StObject.set(x, "timeFormatLocale", js.undefined)
@@ -1279,12 +1080,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Hover extends StObject {
     
-    var hoverSet: js.UndefOr[EncodeEntryName] = js.native
+    var hoverSet: js.UndefOr[EncodeEntryName] = js.undefined
     
-    var updateSet: js.UndefOr[EncodeEntryName] = js.native
+    var updateSet: js.UndefOr[EncodeEntryName] = js.undefined
   }
   object Hover {
     
@@ -1311,18 +1111,17 @@ object mod {
     }
   }
   
-  @js.native
   trait MessageData extends StObject {
     
-    var config: js.UndefOr[Config] = js.native
+    var config: js.UndefOr[Config] = js.undefined
     
-    var file: js.UndefOr[js.Any] = js.native
+    var file: js.UndefOr[js.Any] = js.undefined
     
-    var mode: Mode = js.native
+    var mode: Mode
     
-    var renderer: js.UndefOr[Renderers] = js.native
+    var renderer: js.UndefOr[Renderers] = js.undefined
     
-    var spec: String = js.native
+    var spec: String
   }
   object MessageData {
     
@@ -1377,17 +1176,16 @@ object mod {
   
   type PatchFunc = js.Function1[/* spec */ Spec, Spec]
   
-  @js.native
   trait Result extends StObject {
     
     /** The input specification. */
-    var spec: VisualizationSpec = js.native
+    var spec: VisualizationSpec
     
     /** The compiled and patched Vega specification. */
-    var vgSpec: Spec = js.native
+    var vgSpec: Spec
     
     /** The Vega view. */
-    var view: View = js.native
+    var view: View
   }
   object Result {
     

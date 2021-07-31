@@ -2,27 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonDocumentTypeChildNode extends StObject {
   
   /**
     * Returns the first following sibling that is an element, and null otherwise.
     */
-  val nextElementSibling: Element | Null = js.native
+  val nextElementSibling: Element | Null
   
   /**
     * Returns the first preceding sibling that is an element, and null otherwise.
     */
-  val previousElementSibling: Element | Null = js.native
+  val previousElementSibling: Element | Null
 }
 object NonDocumentTypeChildNode {
   
   @scala.inline
   def apply(): NonDocumentTypeChildNode = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(nextElementSibling = null, previousElementSibling = null)
     __obj.asInstanceOf[NonDocumentTypeChildNode]
   }
   

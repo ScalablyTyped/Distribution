@@ -2,19 +2,17 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Player extends StObject {
   
-  var matchHistoryUri: String = js.native
+  var matchHistoryUri: String
   
-  var profileIcon: Double = js.native
+  var profileIcon: Double
   
-  var summonerId: Double = js.native
+  var summonerId: Double
   
-  var summonerName: String = js.native
+  var summonerName: String
 }
 object Player {
   

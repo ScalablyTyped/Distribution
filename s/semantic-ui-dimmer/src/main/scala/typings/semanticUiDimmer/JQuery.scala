@@ -58,182 +58,192 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
 import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def dimmer(): JQuery = js.native
-  def dimmer(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def dimmer(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
-  def dimmer(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-  def dimmer(behavior: setting, name: closable, value: auto): JQuery = js.native
-  def dimmer(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def dimmer(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def dimmer(behavior: setting, name: dimmerName, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def dimmer(behavior: setting, name: dimmerName, value: String): JQuery = js.native
-  def dimmer(behavior: setting, name: dimmerName, value: `false`): JQuery = js.native
-  def dimmer(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def dimmer(behavior: setting, name: duration, value: DurationSettings): JQuery = js.native
-  def dimmer(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def dimmer(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def dimmer(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def dimmer(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def dimmer(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def dimmer(behavior: setting, name: name, value: String): JQuery = js.native
-  def dimmer(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def dimmer(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def dimmer(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def dimmer(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def dimmer(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def dimmer(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def dimmer(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): `false` | hover | click = js.native
-  def dimmer(behavior: setting, name: on, value: `false`): JQuery = js.native
-  def dimmer(behavior: setting, name: on, value: click): JQuery = js.native
-  def dimmer(behavior: setting, name: on, value: hover): JQuery = js.native
-  def dimmer(behavior: setting, name: opacity, value: js.UndefOr[scala.Nothing]): auto | Double = js.native
-  def dimmer(behavior: setting, name: opacity, value: Double): JQuery = js.native
-  def dimmer(behavior: setting, name: opacity, value: auto): JQuery = js.native
-  def dimmer(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def dimmer(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def dimmer(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def dimmer(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def dimmer(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def dimmer(behavior: setting, name: template, value: js.UndefOr[scala.Nothing]): TemplateSettings = js.native
-  def dimmer(behavior: setting, name: template, value: TemplateSettings): JQuery = js.native
-  def dimmer(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
-  def dimmer(behavior: setting, name: transition, value: String): JQuery = js.native
-  def dimmer(behavior: setting, name: useCSS, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def dimmer(behavior: setting, name: useCSS, value: Boolean): JQuery = js.native
-  def dimmer(behavior: setting, name: variation, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def dimmer(behavior: setting, name: variation, value: String): JQuery = js.native
-  def dimmer(behavior: setting, name: variation, value: `false`): JQuery = js.native
-  def dimmer(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def dimmer(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def dimmer(settings: DimmerSettings): JQuery = js.native
+  def dimmer(): JQuery
+  def dimmer(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def dimmer(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def dimmer(behavior: setting, name: closable, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: closable, value: Unit): auto | Boolean
+  def dimmer(behavior: setting, name: closable, value: auto): JQuery
+  def dimmer(behavior: setting, name: debug, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: debug, value: Unit): Boolean
+  def dimmer(behavior: setting, name: dimmerName, value: String): JQuery
+  def dimmer(behavior: setting, name: dimmerName, value: Unit): `false` | String
+  def dimmer(behavior: setting, name: dimmerName, value: `false`): JQuery
+  def dimmer(behavior: setting, name: duration, value: Double): JQuery
+  def dimmer(behavior: setting, name: duration, value: Unit): Double | DurationSettings
+  def dimmer(behavior: setting, name: duration, value: DurationSettings): JQuery
+  def dimmer(behavior: setting, name: error, value: Unit): ErrorSettings
+  def dimmer(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def dimmer(behavior: setting, name: namespace, value: String): JQuery
+  def dimmer(behavior: setting, name: namespace, value: Unit): String
+  def dimmer(behavior: setting, name: name, value: String): JQuery
+  def dimmer(behavior: setting, name: name, value: Unit): String
+  def dimmer(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def dimmer(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def dimmer(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def dimmer(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def dimmer(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def dimmer(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def dimmer(behavior: setting, name: on, value: Unit): `false` | hover | click
+  def dimmer(behavior: setting, name: on, value: `false`): JQuery
+  def dimmer(behavior: setting, name: on, value: click): JQuery
+  def dimmer(behavior: setting, name: on, value: hover): JQuery
+  def dimmer(behavior: setting, name: opacity, value: Double): JQuery
+  def dimmer(behavior: setting, name: opacity, value: Unit): auto | Double
+  def dimmer(behavior: setting, name: opacity, value: auto): JQuery
+  def dimmer(behavior: setting, name: performance, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: performance, value: Unit): Boolean
+  def dimmer(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def dimmer(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def dimmer(behavior: setting, name: silent, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: silent, value: Unit): Boolean
+  def dimmer(behavior: setting, name: template, value: Unit): TemplateSettings
+  def dimmer(behavior: setting, name: template, value: TemplateSettings): JQuery
+  def dimmer(behavior: setting, name: transition, value: String): JQuery
+  def dimmer(behavior: setting, name: transition, value: Unit): String
+  def dimmer(behavior: setting, name: useCSS, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: useCSS, value: Unit): Boolean
+  def dimmer(behavior: setting, name: variation, value: String): JQuery
+  def dimmer(behavior: setting, name: variation, value: Unit): `false` | String
+  def dimmer(behavior: setting, name: variation, value: `false`): JQuery
+  def dimmer(behavior: setting, name: verbose, value: Boolean): JQuery
+  def dimmer(behavior: setting, name: verbose, value: Unit): Boolean
+  def dimmer(settings: DimmerSettings): JQuery
   @JSName("dimmer")
-  def dimmer_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  @JSName("dimmer")
-  var dimmer_Original: Dimmer = js.native
-  @JSName("dimmer")
-  def dimmer_SelectorSettings(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  @JSName("dimmer")
-  def dimmer_Union(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double | DurationSettings = js.native
+  var dimmer_Original: Dimmer
   /**
     * Detaches a given element from DOM and reattaches element inside dimmer
     */
   @JSName("dimmer")
-  def dimmer_addcontent(behavior: `add content`, element: String): JQuery = js.native
+  def dimmer_addcontent(behavior: `add content`, element: String): JQuery
   @JSName("dimmer")
-  def dimmer_addcontent(behavior: `add content`, element: JQuery): JQuery = js.native
+  def dimmer_addcontent(behavior: `add content`, element: JQuery): JQuery
   /**
     * Creates a new dimmer in dimmable context
     */
   @JSName("dimmer")
-  def dimmer_create(behavior: create): JQuery = js.native
+  def dimmer_create(behavior: create): JQuery
   @JSName("dimmer")
-  def dimmer_destroy(behavior: destroy): JQuery = js.native
+  def dimmer_destroy(behavior: destroy): JQuery
   /**
     * Returns DOM element for dimmer
     */
   @JSName("dimmer")
-  def dimmer_getdimmer(behavior: `get dimmer`): JQuery = js.native
+  def dimmer_getdimmer(behavior: `get dimmer`): JQuery
   /**
     * Returns current duration for show or hide event depending on current visibility
     */
   @JSName("dimmer")
-  def dimmer_getduration(behavior: `get duration`): Double = js.native
+  def dimmer_getduration(behavior: `get duration`): Double
   /**
     * Returns whether current dimmable has a dimmer
     */
   @JSName("dimmer")
-  def dimmer_hasdimmer(behavior: `has dimmer`): Boolean = js.native
+  def dimmer_hasdimmer(behavior: `has dimmer`): Boolean
   /**
     * Hides dimmer
     */
   @JSName("dimmer")
-  def dimmer_hide(behavior: hide): JQuery = js.native
+  def dimmer_hide(behavior: hide): JQuery
   /**
     * Whether section's dimmer is active
     */
   @JSName("dimmer")
-  def dimmer_isactive(behavior: `is active`): Boolean = js.native
+  def dimmer_isactive(behavior: `is active`): Boolean
   /**
     * Whether dimmer is animating
     */
   @JSName("dimmer")
-  def dimmer_isanimating(behavior: `is animating`): Boolean = js.native
+  def dimmer_isanimating(behavior: `is animating`): Boolean
   /**
     * Whether current element is a dimmable section
     */
   @JSName("dimmer")
-  def dimmer_isdimmable(behavior: `is dimmable`): Boolean = js.native
+  def dimmer_isdimmable(behavior: `is dimmable`): Boolean
   /**
     * Whether current element is a dimmer
     */
   @JSName("dimmer")
-  def dimmer_isdimmer(behavior: `is dimmer`): Boolean = js.native
+  def dimmer_isdimmer(behavior: `is dimmer`): Boolean
   /**
     * Whether dimmer is disabled
     */
   @JSName("dimmer")
-  def dimmer_isdisabled(behavior: `is disabled`): Boolean = js.native
+  def dimmer_isdisabled(behavior: `is disabled`): Boolean
   /**
     * Whether dimmer is not disabled
     */
   @JSName("dimmer")
-  def dimmer_isenabled(behavior: `is enabled`): Boolean = js.native
+  def dimmer_isenabled(behavior: `is enabled`): Boolean
   /**
     * Whether dimmable section is body
     */
   @JSName("dimmer")
-  def dimmer_ispage(behavior: `is page`): Boolean = js.native
+  def dimmer_ispage(behavior: `is page`): Boolean
   /**
     * Whether dimmer is a page dimmer
     */
   @JSName("dimmer")
-  def dimmer_ispagedimmer(behavior: `is page dimmer`): Boolean = js.native
+  def dimmer_ispagedimmer(behavior: `is page dimmer`): Boolean
   /**
     * Sets page dimmer to active
     */
   @JSName("dimmer")
-  def dimmer_setactive(behavior: `set active`): JQuery = js.native
+  def dimmer_setactive(behavior: `set active`): JQuery
   /**
     * Sets an element as a dimmable section
     */
   @JSName("dimmer")
-  def dimmer_setdimmable(behavior: `set dimmable`): JQuery = js.native
+  def dimmer_setdimmable(behavior: `set dimmable`): JQuery
   /**
     * Sets a dimmable section as dimmed
     */
   @JSName("dimmer")
-  def dimmer_setdimmed(behavior: `set dimmed`): JQuery = js.native
+  def dimmer_setdimmed(behavior: `set dimmed`): JQuery
   /**
     * Sets a dimmer as disabled
     */
   @JSName("dimmer")
-  def dimmer_setdisabled(behavior: `set disabled`): JQuery = js.native
+  def dimmer_setdisabled(behavior: `set disabled`): JQuery
   /**
     * Changes dimmer opacity
     */
   @JSName("dimmer")
-  def dimmer_setopacity(behavior: `set opacity`, opacity: Double): JQuery = js.native
+  def dimmer_setopacity(behavior: `set opacity`, opacity: Double): JQuery
   /**
     * Sets current dimmer as a page dimmer
     */
   @JSName("dimmer")
-  def dimmer_setpagedimmer(behavior: `set page dimmer`): JQuery = js.native
+  def dimmer_setpagedimmer(behavior: `set page dimmer`): JQuery
   @JSName("dimmer")
-  def dimmer_setting(behavior: setting, value: DimmerSettings): JQuery = js.native
+  def dimmer_setting(behavior: setting, value: DimmerSettings): JQuery
   /**
     * Shows dimmer
     */
   @JSName("dimmer")
-  def dimmer_show(behavior: show): JQuery = js.native
+  def dimmer_show(behavior: show): JQuery
   /**
     * Toggles current dimmer visibility
     */
   @JSName("dimmer")
-  def dimmer_toggle(behavior: toggle): JQuery = js.native
+  def dimmer_toggle(behavior: toggle): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(dimmer: Dimmer): JQuery = {
+    val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDimmer(value: Dimmer): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+  }
 }

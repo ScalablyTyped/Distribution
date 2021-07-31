@@ -2,15 +2,13 @@ package typings.rmcCascader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Value extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Value {
     

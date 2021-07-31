@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1EventConfig extends StObject {
   
   /** Required. The list of annotation spec set resource name. Similar to video classification, we support selecting event from multiple AnnotationSpecSet at the same time. */
-  var annotationSpecSets: js.UndefOr[js.Array[String]] = js.native
+  var annotationSpecSets: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Videos will be cut to smaller clips to make it easier for labelers to work on. Users can configure is field in seconds, if not set, default value is 60s. */
-  var clipLength: js.UndefOr[Double] = js.native
+  var clipLength: js.UndefOr[Double] = js.undefined
   
   /** The overlap length between different video clips. Users can configure is field in seconds, if not set, default value is 1s. */
-  var overlapLength: js.UndefOr[Double] = js.native
+  var overlapLength: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1EventConfig {
   

@@ -2,14 +2,13 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275Render3NgModuleRef")
 @js.native
 class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
-  def this(ngModuleType: typings.angularCore.mod.Type[T]) = this()
-  def this(ngModuleType: typings.angularCore.mod.Type[T], _parent: Injector) = this()
+  def this(ngModuleType: Type[T]) = this()
+  def this(ngModuleType: Type[T], _parent: Injector) = this()
   
   var _parent: Injector | Null = js.native
   
@@ -21,9 +20,9 @@ class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
   var destroyCbs: js.Array[js.Function0[Unit]] | Null = js.native
   
   def get(token: js.Any): js.Any = js.native
-  def get(token: js.Any, notFoundValue: js.UndefOr[scala.Nothing], injectFlags: InjectFlags): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any, injectFlags: InjectFlags): js.Any = js.native
+  def get(token: js.Any, notFoundValue: Unit, injectFlags: InjectFlags): js.Any = js.native
   
   @JSName("injector")
   var injector_FɵRender3NgModuleRef: Injector = js.native

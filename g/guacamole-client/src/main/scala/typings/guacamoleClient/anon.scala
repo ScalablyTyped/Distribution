@@ -5,32 +5,32 @@ import typings.std.CanvasFillRule
 import typings.std.Path2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined guacamole-client.guacamole-client/lib/Client.Client.ExportLayerBase & {  x :number,   y :number,   z :number,   alpha :number,   matrix :unknown,   parent :unknown} */
-  @js.native
-  trait ExportLayerBasexnumberynu extends ExportLayer {
+  trait ExportLayerBasexnumberynu
+    extends StObject
+       with ExportLayer {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var matrix: js.Any = js.native
+    var matrix: js.Any
     
-    var parent: js.Any = js.native
+    var parent: js.Any
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object ExportLayerBasexnumberynu {
     

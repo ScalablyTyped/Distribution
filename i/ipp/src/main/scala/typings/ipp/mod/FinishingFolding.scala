@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingFolding extends StObject {
   
-  var `folding-direction`: js.UndefOr[FoldingDirection] = js.native
+  var `folding-direction`: js.UndefOr[FoldingDirection] = js.undefined
   
-  var `folding-offset`: js.UndefOr[Double] = js.native
+  var `folding-offset`: js.UndefOr[Double] = js.undefined
   
-  var `folding-reference-edge`: js.UndefOr[ReferenceEdge] = js.native
+  var `folding-reference-edge`: js.UndefOr[ReferenceEdge] = js.undefined
 }
 object FinishingFolding {
   

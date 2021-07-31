@@ -4,16 +4,14 @@ import typings.reactSortableTree.mod.NodeData
 import typings.reactSortableTree.mod.TreeItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  matches :std.Array<react-sortable-tree.react-sortable-tree.NodeData>} & react-sortable-tree.react-sortable-tree.FullTree */
-@js.native
 trait matchesArrayNodeDataFullT extends StObject {
   
-  var matches: js.Array[NodeData] = js.native
+  var matches: js.Array[NodeData]
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object matchesArrayNodeDataFullT {
   

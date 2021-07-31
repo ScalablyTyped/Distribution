@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The designation to be included
   */
-@js.native
-trait ExpansionProfileDesignationIncludeDesignation extends BackboneElement {
+trait ExpansionProfileDesignationIncludeDesignation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'language'.
     */
-  var _language: js.UndefOr[Element] = js.native
+  var _language: js.UndefOr[Element] = js.undefined
   
   /**
     * Human language of the designation to be included
     */
-  var language: js.UndefOr[code] = js.native
+  var language: js.UndefOr[code] = js.undefined
   
   /**
     * What kind of Designation to include
     */
-  var use: js.UndefOr[Coding] = js.native
+  var use: js.UndefOr[Coding] = js.undefined
 }
 object ExpansionProfileDesignationIncludeDesignation {
   

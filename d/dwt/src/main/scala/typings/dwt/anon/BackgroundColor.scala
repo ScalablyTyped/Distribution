@@ -2,49 +2,47 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
   // Example: 'pink'
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   // Example: 'yellow'
-  var blockBackgroundColor: js.UndefOr[String] = js.native
+  var blockBackgroundColor: js.UndefOr[String] = js.undefined
   
   // Example: 'gray'
-  var hoverBackgroundColor: js.UndefOr[String] = js.native
+  var hoverBackgroundColor: js.UndefOr[String] = js.undefined
   
   // Example: '#c4faf8'
-  var hoverBorderColor: js.UndefOr[String] = js.native
+  var hoverBorderColor: js.UndefOr[String] = js.undefined
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   // Example: 'rgb(127, 133, 251)'
-  var imageBackgroundColor: js.UndefOr[String] = js.native
+  var imageBackgroundColor: js.UndefOr[String] = js.undefined
   
   // Example: 'transparent'
-  var imageBorderColor: js.UndefOr[String] = js.native
+  var imageBorderColor: js.UndefOr[String] = js.undefined
   
   // Example: 'rgba(67, 66, 70, 1)'
-  var imageSpace: js.UndefOr[Double] = js.native
+  var imageSpace: js.UndefOr[Double] = js.undefined
   
-  var mouseShape: js.UndefOr[String] = js.native
+  var mouseShape: js.UndefOr[String] = js.undefined
   
   // Example: 'red'
-  var selectedBackgroundColor: js.UndefOr[String] = js.native
+  var selectedBackgroundColor: js.UndefOr[String] = js.undefined
   
   // Example: 'icon-thumbnail'
-  var selectedBorderColor: js.UndefOr[String] = js.native
+  var selectedBorderColor: js.UndefOr[String] = js.undefined
   
   // Example: 10
-  var showPageNumber: js.UndefOr[Boolean] = js.native
+  var showPageNumber: js.UndefOr[Boolean] = js.undefined
   
-  var showThumbnailControl: js.UndefOr[Boolean] = js.native
+  var showThumbnailControl: js.UndefOr[Boolean] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object BackgroundColor {
   

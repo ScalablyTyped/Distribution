@@ -18,47 +18,45 @@ import typings.googleAppsScript.GoogleAppsScript.AdminReseller.Schema.Subscripti
 import typings.googleAppsScript.GoogleAppsScript.AdminReseller.Schema.Subscriptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminReseller extends StObject {
   
-  var Customers: js.UndefOr[CustomersCollection] = js.native
+  var Customers: js.UndefOr[CustomersCollection] = js.undefined
   
-  var Resellernotify: js.UndefOr[ResellernotifyCollection] = js.native
+  var Resellernotify: js.UndefOr[ResellernotifyCollection] = js.undefined
   
-  var Subscriptions: js.UndefOr[SubscriptionsCollection] = js.native
+  var Subscriptions: js.UndefOr[SubscriptionsCollection] = js.undefined
   
   // Create a new instance of Address
-  def newAddress(): Address = js.native
+  def newAddress(): Address
   
   // Create a new instance of ChangePlanRequest
-  def newChangePlanRequest(): ChangePlanRequest = js.native
+  def newChangePlanRequest(): ChangePlanRequest
   
   // Create a new instance of Customer
-  def newCustomer(): Customer = js.native
+  def newCustomer(): Customer
   
   // Create a new instance of RenewalSettings
-  def newRenewalSettings(): RenewalSettings = js.native
+  def newRenewalSettings(): RenewalSettings
   
   // Create a new instance of Seats
-  def newSeats(): Seats = js.native
+  def newSeats(): Seats
   
   // Create a new instance of Subscription
-  def newSubscription(): Subscription = js.native
+  def newSubscription(): Subscription
   
   // Create a new instance of SubscriptionPlan
-  def newSubscriptionPlan(): SubscriptionPlan = js.native
+  def newSubscriptionPlan(): SubscriptionPlan
   
   // Create a new instance of SubscriptionPlanCommitmentInterval
-  def newSubscriptionPlanCommitmentInterval(): SubscriptionPlanCommitmentInterval = js.native
+  def newSubscriptionPlanCommitmentInterval(): SubscriptionPlanCommitmentInterval
   
   // Create a new instance of SubscriptionTransferInfo
-  def newSubscriptionTransferInfo(): SubscriptionTransferInfo = js.native
+  def newSubscriptionTransferInfo(): SubscriptionTransferInfo
   
   // Create a new instance of SubscriptionTrialSettings
-  def newSubscriptionTrialSettings(): SubscriptionTrialSettings = js.native
+  def newSubscriptionTrialSettings(): SubscriptionTrialSettings
 }
 object AdminReseller {
   
@@ -209,28 +207,27 @@ object AdminReseller {
   
   object Schema {
     
-    @js.native
     trait Address extends StObject {
       
-      var addressLine1: js.UndefOr[String] = js.native
+      var addressLine1: js.UndefOr[String] = js.undefined
       
-      var addressLine2: js.UndefOr[String] = js.native
+      var addressLine2: js.UndefOr[String] = js.undefined
       
-      var addressLine3: js.UndefOr[String] = js.native
+      var addressLine3: js.UndefOr[String] = js.undefined
       
-      var contactName: js.UndefOr[String] = js.native
+      var contactName: js.UndefOr[String] = js.undefined
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locality: js.UndefOr[String] = js.native
+      var locality: js.UndefOr[String] = js.undefined
       
-      var organizationName: js.UndefOr[String] = js.native
+      var organizationName: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
     }
     object Address {
       
@@ -305,18 +302,17 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait ChangePlanRequest extends StObject {
       
-      var dealCode: js.UndefOr[String] = js.native
+      var dealCode: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var planName: js.UndefOr[String] = js.native
+      var planName: js.UndefOr[String] = js.undefined
       
-      var purchaseOrderId: js.UndefOr[String] = js.native
+      var purchaseOrderId: js.UndefOr[String] = js.undefined
       
-      var seats: js.UndefOr[Seats] = js.native
+      var seats: js.UndefOr[Seats] = js.undefined
     }
     object ChangePlanRequest {
       
@@ -361,24 +357,23 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait Customer extends StObject {
       
-      var alternateEmail: js.UndefOr[String] = js.native
+      var alternateEmail: js.UndefOr[String] = js.undefined
       
-      var customerDomain: js.UndefOr[String] = js.native
+      var customerDomain: js.UndefOr[String] = js.undefined
       
-      var customerDomainVerified: js.UndefOr[Boolean] = js.native
+      var customerDomainVerified: js.UndefOr[Boolean] = js.undefined
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var phoneNumber: js.UndefOr[String] = js.native
+      var phoneNumber: js.UndefOr[String] = js.undefined
       
-      var postalAddress: js.UndefOr[Address] = js.native
+      var postalAddress: js.UndefOr[Address] = js.undefined
       
-      var resourceUiUrl: js.UndefOr[String] = js.native
+      var resourceUiUrl: js.UndefOr[String] = js.undefined
     }
     object Customer {
       
@@ -441,12 +436,11 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait RenewalSettings extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var renewalType: js.UndefOr[String] = js.native
+      var renewalType: js.UndefOr[String] = js.undefined
     }
     object RenewalSettings {
       
@@ -473,12 +467,11 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait ResellernotifyGetwatchdetailsResponse extends StObject {
       
-      var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.native
+      var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.undefined
       
-      var topicName: js.UndefOr[String] = js.native
+      var topicName: js.UndefOr[String] = js.undefined
     }
     object ResellernotifyGetwatchdetailsResponse {
       
@@ -508,10 +501,9 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait ResellernotifyResource extends StObject {
       
-      var topicName: js.UndefOr[String] = js.native
+      var topicName: js.UndefOr[String] = js.undefined
     }
     object ResellernotifyResource {
       
@@ -532,16 +524,15 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait Seats extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var licensedNumberOfSeats: js.UndefOr[Double] = js.native
+      var licensedNumberOfSeats: js.UndefOr[Double] = js.undefined
       
-      var maximumNumberOfSeats: js.UndefOr[Double] = js.native
+      var maximumNumberOfSeats: js.UndefOr[Double] = js.undefined
       
-      var numberOfSeats: js.UndefOr[Double] = js.native
+      var numberOfSeats: js.UndefOr[Double] = js.undefined
     }
     object Seats {
       
@@ -580,44 +571,43 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait Subscription extends StObject {
       
-      var billingMethod: js.UndefOr[String] = js.native
+      var billingMethod: js.UndefOr[String] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var customerDomain: js.UndefOr[String] = js.native
+      var customerDomain: js.UndefOr[String] = js.undefined
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var dealCode: js.UndefOr[String] = js.native
+      var dealCode: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var plan: js.UndefOr[SubscriptionPlan] = js.native
+      var plan: js.UndefOr[SubscriptionPlan] = js.undefined
       
-      var purchaseOrderId: js.UndefOr[String] = js.native
+      var purchaseOrderId: js.UndefOr[String] = js.undefined
       
-      var renewalSettings: js.UndefOr[RenewalSettings] = js.native
+      var renewalSettings: js.UndefOr[RenewalSettings] = js.undefined
       
-      var resourceUiUrl: js.UndefOr[String] = js.native
+      var resourceUiUrl: js.UndefOr[String] = js.undefined
       
-      var seats: js.UndefOr[Seats] = js.native
+      var seats: js.UndefOr[Seats] = js.undefined
       
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
-      var skuName: js.UndefOr[String] = js.native
+      var skuName: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var subscriptionId: js.UndefOr[String] = js.native
+      var subscriptionId: js.UndefOr[String] = js.undefined
       
-      var suspensionReasons: js.UndefOr[js.Array[String]] = js.native
+      var suspensionReasons: js.UndefOr[js.Array[String]] = js.undefined
       
-      var transferInfo: js.UndefOr[SubscriptionTransferInfo] = js.native
+      var transferInfo: js.UndefOr[SubscriptionTransferInfo] = js.undefined
       
-      var trialSettings: js.UndefOr[SubscriptionTrialSettings] = js.native
+      var trialSettings: js.UndefOr[SubscriptionTrialSettings] = js.undefined
     }
     object Subscription {
       
@@ -743,14 +733,13 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait SubscriptionPlan extends StObject {
       
-      var commitmentInterval: js.UndefOr[SubscriptionPlanCommitmentInterval] = js.native
+      var commitmentInterval: js.UndefOr[SubscriptionPlanCommitmentInterval] = js.undefined
       
-      var isCommitmentPlan: js.UndefOr[Boolean] = js.native
+      var isCommitmentPlan: js.UndefOr[Boolean] = js.undefined
       
-      var planName: js.UndefOr[String] = js.native
+      var planName: js.UndefOr[String] = js.undefined
     }
     object SubscriptionPlan {
       
@@ -783,12 +772,11 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait SubscriptionPlanCommitmentInterval extends StObject {
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
     }
     object SubscriptionPlanCommitmentInterval {
       
@@ -815,12 +803,11 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait SubscriptionTransferInfo extends StObject {
       
-      var minimumTransferableSeats: js.UndefOr[Double] = js.native
+      var minimumTransferableSeats: js.UndefOr[Double] = js.undefined
       
-      var transferabilityExpirationTime: js.UndefOr[String] = js.native
+      var transferabilityExpirationTime: js.UndefOr[String] = js.undefined
     }
     object SubscriptionTransferInfo {
       
@@ -847,12 +834,11 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait SubscriptionTrialSettings extends StObject {
       
-      var isInTrial: js.UndefOr[Boolean] = js.native
+      var isInTrial: js.UndefOr[Boolean] = js.undefined
       
-      var trialEndTime: js.UndefOr[String] = js.native
+      var trialEndTime: js.UndefOr[String] = js.undefined
     }
     object SubscriptionTrialSettings {
       
@@ -879,14 +865,13 @@ object AdminReseller {
       }
     }
     
-    @js.native
     trait Subscriptions extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var subscriptions: js.UndefOr[js.Array[Subscription]] = js.native
+      var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
     }
     object Subscriptions {
       

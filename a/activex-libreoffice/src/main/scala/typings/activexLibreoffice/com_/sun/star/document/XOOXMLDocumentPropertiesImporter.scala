@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to import the document properties from OOXML format */
-@js.native
-trait XOOXMLDocumentPropertiesImporter extends XInterface {
+trait XOOXMLDocumentPropertiesImporter
+  extends StObject
+     with XInterface {
   
   /**
     * allows to import the document properties from OOXML format
@@ -26,7 +26,7 @@ trait XOOXMLDocumentPropertiesImporter extends XInterface {
     * @throws com::sun::star::xml::sax::SAXException the exception is thrown in case of parsing problems
     * @throws com::sun::star::uno::Exception the exception is thrown in case of other problems during the import
     */
-  def importProperties(xSource: XStorage, xDocumentProperties: XDocumentProperties): Unit = js.native
+  def importProperties(xSource: XStorage, xDocumentProperties: XDocumentProperties): Unit
 }
 object XOOXMLDocumentPropertiesImporter {
   

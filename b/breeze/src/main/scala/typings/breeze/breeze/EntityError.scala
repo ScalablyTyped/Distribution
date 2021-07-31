@@ -2,21 +2,19 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityError extends StObject {
   
-  var entity: Entity = js.native
+  var entity: Entity
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var errorName: String = js.native
+  var errorName: String
   
-  var isServerError: Boolean = js.native
+  var isServerError: Boolean
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object EntityError {
   

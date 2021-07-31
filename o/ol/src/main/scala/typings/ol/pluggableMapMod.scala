@@ -33,7 +33,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluggableMapMod {
@@ -44,19 +43,18 @@ object pluggableMapMod {
     def this(options: MapOptions) = this()
   }
   
-  @js.native
   trait AtPixelOptions extends StObject {
     
-    var checkWrapped: js.UndefOr[Boolean] = js.native
+    var checkWrapped: js.UndefOr[Boolean] = js.undefined
     
-    var hitTolerance: js.UndefOr[Double] = js.native
+    var hitTolerance: js.UndefOr[Double] = js.undefined
     
     var layerFilter: js.UndefOr[
         js.Function1[
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object AtPixelOptions {
     
@@ -89,17 +87,16 @@ object pluggableMapMod {
     }
   }
   
-  @js.native
   trait DeclutterItems extends StObject {
     
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
     
-    var opacity: Double = js.native
+    var opacity: Double
   }
   object DeclutterItems {
     
     @scala.inline
-    def apply(items: js.Array[_], opacity: Double): DeclutterItems = {
+    def apply(items: js.Array[js.Any], opacity: Double): DeclutterItems = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeclutterItems]
     }
@@ -108,7 +105,7 @@ object pluggableMapMod {
     implicit class DeclutterItemsMutableBuilder[Self <: DeclutterItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
@@ -118,42 +115,41 @@ object pluggableMapMod {
     }
   }
   
-  @js.native
   trait FrameState extends StObject {
     
-    var animate: Boolean = js.native
+    var animate: Boolean
     
-    var coordinateToPixelTransform: Transform = js.native
+    var coordinateToPixelTransform: Transform
     
-    var declutterItems: js.Array[DeclutterItems] = js.native
+    var declutterItems: js.Array[DeclutterItems]
     
-    var extent: Extent = js.native
+    var extent: Extent
     
-    var index: Double = js.native
+    var index: Double
     
-    var layerIndex: Double = js.native
+    var layerIndex: Double
     
-    var layerStatesArray: js.Array[State] = js.native
+    var layerStatesArray: js.Array[State]
     
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
-    var pixelToCoordinateTransform: Transform = js.native
+    var pixelToCoordinateTransform: Transform
     
-    var postRenderFunctions: js.Array[PostRenderFunction] = js.native
+    var postRenderFunctions: js.Array[PostRenderFunction]
     
-    var size: Size = js.native
+    var size: Size
     
-    var tileQueue: typings.ol.tileQueueMod.default = js.native
+    var tileQueue: typings.ol.tileQueueMod.default
     
-    var time: Double = js.native
+    var time: Double
     
-    var usedTiles: StringDictionary[StringDictionary[Boolean]] = js.native
+    var usedTiles: StringDictionary[StringDictionary[Boolean]]
     
-    var viewHints: js.Array[Double] = js.native
+    var viewHints: js.Array[Double]
     
-    var viewState: typings.ol.viewMod.State = js.native
+    var viewState: typings.ol.viewMod.State
     
-    var wantedTiles: StringDictionary[StringDictionary[Boolean]] = js.native
+    var wantedTiles: StringDictionary[StringDictionary[Boolean]]
   }
   object FrameState {
     
@@ -255,36 +251,35 @@ object pluggableMapMod {
     }
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
     var controls: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.controlControlMod.default] | js.Array[typings.ol.controlControlMod.default]
-      ] = js.native
+      ] = js.undefined
     
     var interactions: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default]
-      ] = js.native
+      ] = js.undefined
     
-    var keyboardEventTarget: js.UndefOr[HTMLElement | Document | String] = js.native
+    var keyboardEventTarget: js.UndefOr[HTMLElement | Document | String] = js.undefined
     
     var layers: js.UndefOr[
         js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default
-      ] = js.native
+      ] = js.undefined
     
-    var maxTilesLoading: js.UndefOr[Double] = js.native
+    var maxTilesLoading: js.UndefOr[Double] = js.undefined
     
-    var moveTolerance: js.UndefOr[Double] = js.native
+    var moveTolerance: js.UndefOr[Double] = js.undefined
     
     var overlays: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.overlayMod.default] | js.Array[typings.ol.overlayMod.default]
-      ] = js.native
+      ] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var view: js.UndefOr[typings.ol.viewMod.default] = js.native
+    var view: js.UndefOr[typings.ol.viewMod.default] = js.undefined
   }
   object MapOptions {
     
@@ -379,18 +374,17 @@ object pluggableMapMod {
     }
   }
   
-  @js.native
   trait MapOptionsInternal extends StObject {
     
-    var controls: js.UndefOr[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]] = js.native
+    var controls: js.UndefOr[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]] = js.undefined
     
-    var interactions: js.UndefOr[typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]] = js.native
+    var interactions: js.UndefOr[typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]] = js.undefined
     
-    var keyboardEventTarget: HTMLElement | Document = js.native
+    var keyboardEventTarget: HTMLElement | Document
     
-    var overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default] = js.native
+    var overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default]
     
-    var values: StringDictionary[js.Any] = js.native
+    var values: StringDictionary[js.Any]
   }
   object MapOptionsInternal {
     

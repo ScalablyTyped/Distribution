@@ -3,15 +3,13 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAuthChallenger extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: integer = js.native
+  var port: integer
 }
 object WebAuthChallenger {
   

@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientX extends StObject {
   
-  var clientX: Double = js.native
+  var clientX: Double
   
-  var clientY: Double = js.native
+  var clientY: Double
 }
 object ClientX {
   

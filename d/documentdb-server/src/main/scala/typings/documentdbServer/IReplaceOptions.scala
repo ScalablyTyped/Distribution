@@ -2,21 +2,19 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a replace operation. */
-@js.native
 trait IReplaceOptions extends StObject {
   
   /**
     * The entity tag associated with the resource.
     * This is matched with the persisted resource before deletion.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Specifies indexing directives. */
-  var indexAction: js.UndefOr[String] = js.native
+  var indexAction: js.UndefOr[String] = js.undefined
 }
 object IReplaceOptions {
   

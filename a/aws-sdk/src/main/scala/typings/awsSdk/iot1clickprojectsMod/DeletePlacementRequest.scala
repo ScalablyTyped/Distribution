@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePlacementRequest extends StObject {
   
   /**
     * The name of the empty placement to delete.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The project containing the empty placement to delete.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object DeletePlacementRequest {
   

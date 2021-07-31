@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPSet extends StObject {
   
   /**
     * The list of IP addresses and address ranges, in CIDR notation. 
     */
-  var Definition: VariableDefinitionList = js.native
+  var Definition: VariableDefinitionList
 }
 object IPSet {
   

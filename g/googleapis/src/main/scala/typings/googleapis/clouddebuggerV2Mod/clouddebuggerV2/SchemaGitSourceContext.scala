@@ -2,25 +2,23 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A GitSourceContext denotes a particular revision in a third party Git
   * repository (e.g. GitHub).
   */
-@js.native
 trait SchemaGitSourceContext extends StObject {
   
   /**
     * Git commit hash. required.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /**
     * Git repository URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGitSourceContext {
   

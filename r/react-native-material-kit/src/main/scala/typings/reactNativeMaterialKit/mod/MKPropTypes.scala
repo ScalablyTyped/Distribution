@@ -14,17 +14,15 @@ import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.italic
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MKPropTypes {
   
-  @js.native
   trait dimen extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dimen {
     
@@ -51,20 +49,19 @@ object MKPropTypes {
     }
   }
   
-  @js.native
   trait font extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontStyle: js.UndefOr[normal | italic] = js.native
+    var fontStyle: js.UndefOr[normal | italic] = js.undefined
     
     var fontWeight: js.UndefOr[
         normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-      ] = js.native
+      ] = js.undefined
   }
   object font {
     

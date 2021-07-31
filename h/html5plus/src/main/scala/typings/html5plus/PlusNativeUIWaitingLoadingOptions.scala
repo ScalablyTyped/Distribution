@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.block
 import typings.html5plus.html5plusStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIWaitingLoadingOptions extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait PlusNativeUIWaitingLoadingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var display: js.UndefOr[block | `inline` | none] = js.native
+  var display: js.UndefOr[block | `inline` | none] = js.undefined
   
   /**
     * loading图标高度
@@ -42,7 +40,7 @@ trait PlusNativeUIWaitingLoadingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * loading图标路径
@@ -51,7 +49,7 @@ trait PlusNativeUIWaitingLoadingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * loading图每帧刷新间隔
@@ -59,7 +57,7 @@ trait PlusNativeUIWaitingLoadingOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
 }
 object PlusNativeUIWaitingLoadingOptions {
   

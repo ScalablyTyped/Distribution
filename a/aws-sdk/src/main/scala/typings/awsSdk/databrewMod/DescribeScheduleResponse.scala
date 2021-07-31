@@ -2,56 +2,54 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScheduleResponse extends StObject {
   
   /**
     * The date and time that the schedule was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the schedule. 
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * The date or dates and time or times, in cron format, when the jobs are to be run for the schedule.
     */
-  var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.native
+  var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.undefined
   
   /**
     * The name or names of one or more jobs to be run by using the schedule.
     */
-  var JobNames: js.UndefOr[JobNameList] = js.native
+  var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
     * The identifier (user name) of the user who last modified the schedule.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time that the schedule was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the schedule.
     */
-  var Name: ScheduleName = js.native
+  var Name: ScheduleName
   
   /**
     * The Amazon Resource Name (ARN) of the schedule.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Metadata tags associated with this schedule.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeScheduleResponse {
   

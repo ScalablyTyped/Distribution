@@ -11,37 +11,38 @@ import typings.stylelintWebpackPlugin.anon.Typeofformatters
 import typings.stylelintWebpackPlugin.anon.Typeofutils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOptionsMod {
   
-  @JSImport("stylelint-webpack-plugin/declarations/getOptions", JSImport.Default)
+  @JSImport("stylelint-webpack-plugin/declarations/getOptions", JSImport.Namespace)
   @js.native
-  def default(pluginOptions: PartialOptions): Options = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(pluginOptions: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginOptions.asInstanceOf[js.Any]).asInstanceOf[Options]
+  
   trait Options extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var emitWarning: js.UndefOr[Boolean] = js.native
+    var emitWarning: js.UndefOr[Boolean] = js.undefined
     
-    var failOnError: js.UndefOr[Boolean] = js.native
+    var failOnError: js.UndefOr[Boolean] = js.undefined
     
-    var failOnWarning: js.UndefOr[Boolean] = js.native
+    var failOnWarning: js.UndefOr[Boolean] = js.undefined
     
-    var files: js.Array[String] | String = js.native
+    var files: js.Array[String] | String
     
-    var formatter: js.Function | String = js.native
+    var formatter: js.Function | String
     
-    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.native
+    var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var stylelintPath: String = js.native
+    var stylelintPath: String
   }
   object Options {
     

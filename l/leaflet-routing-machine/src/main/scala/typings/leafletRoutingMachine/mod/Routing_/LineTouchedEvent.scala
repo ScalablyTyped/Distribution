@@ -2,15 +2,13 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineTouchedEvent extends StObject {
   
-  var afterIndex: Double = js.native
+  var afterIndex: Double
   
-  var latlng: Double = js.native
+  var latlng: Double
 }
 object LineTouchedEvent {
   

@@ -2,31 +2,29 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  var accelerometer: Accelerometer = js.native
+  var accelerometer: Accelerometer
   
-  var camera: Camera = js.native
+  var camera: Camera
   
-  var capture: Capture = js.native
+  var capture: Capture
   
-  var compass: Compass = js.native
+  var compass: Compass
   
-  var connection: Connection = js.native
+  var connection: Connection
   
-  var contacts: Contacts = js.native
+  var contacts: Contacts
   
-  var device: Device = js.native
+  var device: Device
   
-  var globalization: Globalization = js.native
+  var globalization: Globalization
   
-  var notification: PhonegapNotification = js.native
+  var notification: PhonegapNotification
   
-  var splashscreen: Splashscreen = js.native
+  var splashscreen: Splashscreen
 }
 object Navigator {
   

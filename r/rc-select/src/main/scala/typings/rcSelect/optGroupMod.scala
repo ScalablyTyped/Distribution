@@ -7,7 +7,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optGroupMod extends Shortcut {
@@ -18,18 +17,17 @@ object optGroupMod extends Shortcut {
   val default: OptionGroupFC = js.native
   
   /* Inlined parent std.Omit<rc-select.rc-select/lib/interface.OptionGroupData, 'options'> */
-  @js.native
   trait OptGroupProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object OptGroupProps {
     
@@ -75,7 +73,9 @@ object optGroupMod extends Shortcut {
   }
   
   @js.native
-  trait OptionGroupFC extends FunctionComponent[OptGroupProps] {
+  trait OptionGroupFC
+    extends StObject
+       with FunctionComponent[OptGroupProps] {
     
     /** Legacy for check if is a Option Group */
     var isSelectOptGroup: Boolean = js.native

@@ -14,7 +14,6 @@ import typings.reactabularTable.anon.RowIndex
 import typings.reactabularTable.anon.RowIndexNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,23 +54,22 @@ object mod {
     def this(props: ProviderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BodyProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onRow: js.UndefOr[js.Function2[/* row */ js.Any, /* props */ RowIndexNumber, _]] = js.native
+    var onRow: js.UndefOr[js.Function2[/* row */ js.Any, /* props */ RowIndexNumber, js.Any]] = js.undefined
     
-    var rowKey: String = js.native
+    var rowKey: String
     
-    var rows: js.Array[_] = js.native
+    var rows: js.Array[js.Any]
     
-    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
   }
   object BodyProps {
     
     @scala.inline
-    def apply(rowKey: String, rows: js.Array[_]): BodyProps = {
+    def apply(rowKey: String, rows: js.Array[js.Any]): BodyProps = {
       val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyProps]
     }
@@ -86,7 +84,7 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setOnRow(value: (/* row */ js.Any, /* props */ RowIndexNumber) => _): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      def setOnRow(value: (/* row */ js.Any, /* props */ RowIndexNumber) => js.Any): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
@@ -95,7 +93,7 @@ object mod {
       def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
@@ -112,16 +110,15 @@ object mod {
   
   type CellTransform = js.Function2[/* value */ js.Any, /* props */ ColumnIndex, js.Any]
   
-  @js.native
   trait Column extends StObject {
     
-    var cell: js.UndefOr[Formatters] = js.native
+    var cell: js.UndefOr[Formatters] = js.undefined
     
-    var children: js.UndefOr[js.Array[Column]] = js.native
+    var children: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var header: js.UndefOr[Draggable] = js.native
+    var header: js.UndefOr[Draggable] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
   }
   object Column {
     
@@ -171,14 +168,13 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait HeaderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var headerRows: js.UndefOr[js.Array[Column]] = js.native
+    var headerRows: js.UndefOr[js.Array[Column]] = js.undefined
     
-    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
   }
   object HeaderProps {
     
@@ -214,16 +210,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ProviderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
-    var renderers: js.UndefOr[Renderers] = js.native
+    var renderers: js.UndefOr[Renderers] = js.undefined
     
-    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+    var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
   }
   object ProviderProps {
     
@@ -262,14 +257,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Renderers extends StObject {
     
-    var body: js.UndefOr[Row] = js.native
+    var body: js.UndefOr[Row] = js.undefined
     
-    var header: js.UndefOr[Cell] = js.native
+    var header: js.UndefOr[Cell] = js.undefined
     
-    var table: js.UndefOr[String | js.Function0[Element]] = js.native
+    var table: js.UndefOr[String | js.Function0[Element]] = js.undefined
   }
   object Renderers {
     

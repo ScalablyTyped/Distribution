@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileExportConverter extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val Description: String = js.native
+  val Description: String
   
   @JSName("Excel.FileExportConverter_typekey")
-  var ExcelDotFileExportConverter_typekey: FileExportConverter = js.native
+  var ExcelDotFileExportConverter_typekey: FileExportConverter
   
-  val Extensions: String = js.native
+  val Extensions: String
   
-  val FileFormat: Double = js.native
+  val FileFormat: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object FileExportConverter {
   

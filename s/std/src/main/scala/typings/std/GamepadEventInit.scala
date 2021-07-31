@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GamepadEventInit extends EventInit {
+trait GamepadEventInit
+  extends StObject
+     with EventInit {
   
-  var gamepad: Gamepad = js.native
+  var gamepad: Gamepad
 }
 object GamepadEventInit {
   

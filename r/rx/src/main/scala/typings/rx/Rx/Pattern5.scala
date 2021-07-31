@@ -2,10 +2,8 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern5[T1, T2, T3, T4, T5] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Pattern5[T1, T2, T3, T4, T5] extends StObject {
     *  @param other Observable sequence to match in addition to the current pattern.
     *  @return {Pattern} Pattern object that matches when all observable sequences in the pattern have an available value.
     */
-  def and[T6](other: Observable[T6]): Pattern6[T1, T2, T3, T4, T5, T6] = js.native
+  def and[T6](other: Observable[T6]): Pattern6[T1, T2, T3, T4, T5, T6]
   
   /**
     *  Matches when all observable sequences in the pattern (specified using a chain of and operators) have an available value and projects the values.
@@ -22,7 +20,7 @@ trait Pattern5[T1, T2, T3, T4, T5] extends StObject {
     */
   def thenDo[TR](
     selector: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, TR]
-  ): Plan[TR] = js.native
+  ): Plan[TR]
 }
 object Pattern5 {
   
@@ -36,7 +34,7 @@ object Pattern5 {
   }
   
   @scala.inline
-  implicit class Pattern5MutableBuilder[Self <: Pattern5[_, _, _, _, _], T1, T2, T3, T4, T5] (val x: Self with (Pattern5[T1, T2, T3, T4, T5])) extends AnyVal {
+  implicit class Pattern5MutableBuilder[Self <: Pattern5[?, ?, ?, ?, ?], T1, T2, T3, T4, T5] (val x: Self & (Pattern5[T1, T2, T3, T4, T5])) extends AnyVal {
     
     @scala.inline
     def setAnd(value: Observable[js.Any] => Pattern6[T1, T2, T3, T4, T5, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))

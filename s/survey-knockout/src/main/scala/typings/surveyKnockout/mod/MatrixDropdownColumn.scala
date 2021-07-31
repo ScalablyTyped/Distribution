@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MatrixDropdownColumn")
@@ -34,6 +33,15 @@ class MatrixDropdownColumn protected ()
   def getDynamicPropertyName(): String = js.native
   
   def getDynamicType(): String = js.native
+  
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
+  
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   
   var hasOther: Boolean = js.native
   
@@ -76,7 +84,7 @@ class MatrixDropdownColumn protected ()
   def setIsVisible(newVal: Boolean): Unit = js.native
   
   /* protected */ def setQuestionProperties(question: Question): Unit = js.native
-  /* protected */ def setQuestionProperties(question: Question, onUpdateJson: js.Function1[/* json */ js.Any, _]): Unit = js.native
+  /* protected */ def setQuestionProperties(question: Question, onUpdateJson: js.Function1[/* json */ js.Any, js.Any]): Unit = js.native
   
   var showInMultipleColumns: Boolean = js.native
   
@@ -99,7 +107,7 @@ class MatrixDropdownColumn protected ()
   var totalType: String = js.native
   
   def updateCellQuestion(cellQuestion: Question, data: js.Any): Unit = js.native
-  def updateCellQuestion(cellQuestion: Question, data: js.Any, onUpdateJson: js.Function1[/* json */ js.Any, _]): Unit = js.native
+  def updateCellQuestion(cellQuestion: Question, data: js.Any, onUpdateJson: js.Function1[/* json */ js.Any, js.Any]): Unit = js.native
   
   /* protected */ def updateTemplateQuestion(): Unit = js.native
   
@@ -114,7 +122,10 @@ class MatrixDropdownColumn protected ()
 /* static members */
 object MatrixDropdownColumn {
   
-  @JSImport("survey-knockout", "MatrixDropdownColumn.getColumnTypes")
+  @JSImport("survey-knockout", "MatrixDropdownColumn")
   @js.native
-  def getColumnTypes(): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getColumnTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnTypes")().asInstanceOf[js.Array[String]]
 }

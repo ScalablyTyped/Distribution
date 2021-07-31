@@ -2,39 +2,37 @@ package typings.googleFeeds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaContent extends StObject {
   
-  var bitrate: Double = js.native
+  var bitrate: Double
   
-  var channels: String = js.native
+  var channels: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var expression: String = js.native
+  var expression: String
   
-  var fileSize: Double = js.native
+  var fileSize: Double
   
-  var framerate: Double = js.native
+  var framerate: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
-  var lang: String = js.native
+  var lang: String
   
-  var medium: String = js.native
+  var medium: String
   
-  var samplingrate: Double = js.native
+  var samplingrate: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object MediaContent {
   

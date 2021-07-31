@@ -3,7 +3,6 @@ package typings.karmaMochaReporter
 import typings.karmaMochaReporter.mod.ShowDiffOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object karmaMochaReporterBooleans {
@@ -14,7 +13,9 @@ object karmaMochaReporterBooleans {
   def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
-  sealed trait `true` extends ShowDiffOptions
+  sealed trait `true`
+    extends StObject
+       with ShowDiffOptions
   @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }

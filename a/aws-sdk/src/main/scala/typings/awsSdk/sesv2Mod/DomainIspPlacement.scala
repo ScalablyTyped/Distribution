@@ -2,36 +2,34 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainIspPlacement extends StObject {
   
   /**
     * The percentage of messages that were sent from the selected domain to the specified email provider that arrived in recipients' inboxes.
     */
-  var InboxPercentage: js.UndefOr[Percentage] = js.native
+  var InboxPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The total number of messages that were sent from the selected domain to the specified email provider that arrived in recipients' inboxes.
     */
-  var InboxRawCount: js.UndefOr[Volume] = js.native
+  var InboxRawCount: js.UndefOr[Volume] = js.undefined
   
   /**
     * The name of the email provider that the inbox placement data applies to.
     */
-  var IspName: js.UndefOr[typings.awsSdk.sesv2Mod.IspName] = js.native
+  var IspName: js.UndefOr[typings.awsSdk.sesv2Mod.IspName] = js.undefined
   
   /**
     * The percentage of messages that were sent from the selected domain to the specified email provider that arrived in recipients' spam or junk mail folders.
     */
-  var SpamPercentage: js.UndefOr[Percentage] = js.native
+  var SpamPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The total number of messages that were sent from the selected domain to the specified email provider that arrived in recipients' spam or junk mail folders.
     */
-  var SpamRawCount: js.UndefOr[Volume] = js.native
+  var SpamRawCount: js.UndefOr[Volume] = js.undefined
 }
 object DomainIspPlacement {
   

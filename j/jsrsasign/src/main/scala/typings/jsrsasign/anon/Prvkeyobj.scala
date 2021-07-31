@@ -6,15 +6,13 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prvkeyobj extends StObject {
   
-  var prvkeyobj: js.UndefOr[RSAKey | ECDSA | DSA] = js.native
+  var prvkeyobj: js.UndefOr[RSAKey | ECDSA | DSA] = js.undefined
   
-  var tbscertobj: js.UndefOr[TBSCertificate] = js.native
+  var tbscertobj: js.UndefOr[TBSCertificate] = js.undefined
 }
 object Prvkeyobj {
   

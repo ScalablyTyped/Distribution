@@ -4,23 +4,21 @@ import typings.jwplayer.jwplayerStrings.googima
 import typings.jwplayer.jwplayerStrings.vast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdTimeParam extends StObject {
   
-  var client: vast | googima = js.native
+  var client: vast | googima
   
-  var creativetype: String = js.native
+  var creativetype: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var sequence: Double = js.native
+  var sequence: Double
   
-  var tag: String = js.native
+  var tag: String
 }
 object AdTimeParam {
   

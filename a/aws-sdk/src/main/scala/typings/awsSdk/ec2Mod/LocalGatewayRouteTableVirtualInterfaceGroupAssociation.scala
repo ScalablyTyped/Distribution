@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalGatewayRouteTableVirtualInterfaceGroupAssociation extends StObject {
   
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the local gateway route table for the virtual interface group.
     */
-  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.native
+  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayId] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[LocalGatewayId] = js.undefined
   
   /**
     * The ID of the association.
     */
-  var LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayRouteTableVirtualInterfaceGroupAssociationId] = js.native
+  var LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayRouteTableVirtualInterfaceGroupAssociationId] = js.undefined
   
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.native
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.undefined
   
   /**
     * The AWS account ID that owns the local gateway virtual interface group association.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the association.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The tags assigned to the association.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object LocalGatewayRouteTableVirtualInterfaceGroupAssociation {
   

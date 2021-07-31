@@ -10,7 +10,6 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventStackMod {
@@ -56,20 +55,19 @@ object typesEventStackMod {
     def unsubscribe(props: ReadonlyEventStackProps): Unit = js.native
   }
   
-  @js.native
   trait EventStackProps extends StObject {
     
     /** An event name on which we will subscribe. */
-    var name: String = js.native
+    var name: String
     
     /** An event handler or array of event handlers. */
-    var on: InputEventListener = js.native
+    var on: InputEventListener
     
     /** A name of pool. */
-    var pool: js.UndefOr[String] = js.native
+    var pool: js.UndefOr[String] = js.undefined
     
     /** A DOM element on which we will subscribe. */
-    var target: js.UndefOr[InputTargetElement] = js.native
+    var target: js.UndefOr[InputTargetElement] = js.undefined
   }
   object EventStackProps {
     

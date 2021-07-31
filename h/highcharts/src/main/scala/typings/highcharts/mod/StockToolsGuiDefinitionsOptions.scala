@@ -2,41 +2,39 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiDefinitionsOptions extends StObject {
   
-  var advanced: js.UndefOr[StockToolsGuiDefinitionsAdvancedOptions] = js.native
+  var advanced: js.UndefOr[StockToolsGuiDefinitionsAdvancedOptions] = js.undefined
   
-  var crookedLines: js.UndefOr[StockToolsGuiDefinitionsCrookedLinesOptions] = js.native
+  var crookedLines: js.UndefOr[StockToolsGuiDefinitionsCrookedLinesOptions] = js.undefined
   
-  var currentPriceIndicator: js.UndefOr[StockToolsGuiDefinitionsCurrentPriceIndicatorOptions] = js.native
+  var currentPriceIndicator: js.UndefOr[StockToolsGuiDefinitionsCurrentPriceIndicatorOptions] = js.undefined
   
-  var flags: js.UndefOr[StockToolsGuiDefinitionsFlagsOptions] = js.native
+  var flags: js.UndefOr[StockToolsGuiDefinitionsFlagsOptions] = js.undefined
   
-  var fullScreen: js.UndefOr[StockToolsGuiDefinitionsFullScreenOptions] = js.native
+  var fullScreen: js.UndefOr[StockToolsGuiDefinitionsFullScreenOptions] = js.undefined
   
-  var indicators: js.UndefOr[StockToolsGuiDefinitionsIndicatorsOptions] = js.native
+  var indicators: js.UndefOr[StockToolsGuiDefinitionsIndicatorsOptions] = js.undefined
   
-  var lines: js.UndefOr[StockToolsGuiDefinitionsLinesOptions] = js.native
+  var lines: js.UndefOr[StockToolsGuiDefinitionsLinesOptions] = js.undefined
   
-  var measure: js.UndefOr[StockToolsGuiDefinitionsMeasureOptions] = js.native
+  var measure: js.UndefOr[StockToolsGuiDefinitionsMeasureOptions] = js.undefined
   
-  var saveChart: js.UndefOr[StockToolsGuiDefinitionsSaveChartOptions] = js.native
+  var saveChart: js.UndefOr[StockToolsGuiDefinitionsSaveChartOptions] = js.undefined
   
-  var separator: js.UndefOr[StockToolsGuiDefinitionsSeparatorOptions] = js.native
+  var separator: js.UndefOr[StockToolsGuiDefinitionsSeparatorOptions] = js.undefined
   
-  var simpleShapes: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesOptions] = js.native
+  var simpleShapes: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesOptions] = js.undefined
   
-  var toggleAnnotations: js.UndefOr[StockToolsGuiDefinitionsToggleAnnotationsOptions] = js.native
+  var toggleAnnotations: js.UndefOr[StockToolsGuiDefinitionsToggleAnnotationsOptions] = js.undefined
   
-  var typeChange: js.UndefOr[StockToolsGuiDefinitionsTypeChangeOptions] = js.native
+  var typeChange: js.UndefOr[StockToolsGuiDefinitionsTypeChangeOptions] = js.undefined
   
-  var verticalLabels: js.UndefOr[StockToolsGuiDefinitionsVerticalLabelsOptions] = js.native
+  var verticalLabels: js.UndefOr[StockToolsGuiDefinitionsVerticalLabelsOptions] = js.undefined
   
-  var zoomChange: js.UndefOr[StockToolsGuiDefinitionsZoomChangeOptions] = js.native
+  var zoomChange: js.UndefOr[StockToolsGuiDefinitionsZoomChangeOptions] = js.undefined
 }
 object StockToolsGuiDefinitionsOptions {
   

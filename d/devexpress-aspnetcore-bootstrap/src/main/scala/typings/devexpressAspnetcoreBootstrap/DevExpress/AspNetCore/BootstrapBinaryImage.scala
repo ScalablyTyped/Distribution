@@ -6,11 +6,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.endCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapBinaryImage extends BootstrapClientEdit {
+trait BootstrapBinaryImage
+  extends StObject
+     with BootstrapClientEdit {
   
   def clear(): Unit = js.native
   

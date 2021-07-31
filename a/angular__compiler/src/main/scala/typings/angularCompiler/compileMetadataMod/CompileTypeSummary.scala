@@ -2,21 +2,19 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileTypeSummary extends StObject {
   
-  var summaryKind: CompileSummaryKind | Null = js.native
+  var summaryKind: CompileSummaryKind | Null
   
-  var `type`: CompileTypeMetadata = js.native
+  var `type`: CompileTypeMetadata
 }
 object CompileTypeSummary {
   
   @scala.inline
   def apply(`type`: CompileTypeMetadata): CompileTypeSummary = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(summaryKind = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileTypeSummary]
   }

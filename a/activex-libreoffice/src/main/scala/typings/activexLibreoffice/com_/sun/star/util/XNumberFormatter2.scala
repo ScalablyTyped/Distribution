@@ -4,16 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link NumberFormatter} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XNumberFormatter2
-  extends XNumberFormatter
+  extends StObject
+     with XNumberFormatter
      with XNumberFormatPreviewer
 object XNumberFormatter2 {
   

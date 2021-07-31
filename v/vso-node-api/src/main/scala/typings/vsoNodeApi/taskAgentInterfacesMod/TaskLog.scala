@@ -3,21 +3,21 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskLog extends TaskLogReference {
+trait TaskLog
+  extends StObject
+     with TaskLogReference {
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var indexLocation: String = js.native
+  var indexLocation: String
   
-  var lastChangedOn: Date = js.native
+  var lastChangedOn: Date
   
-  var lineCount: Double = js.native
+  var lineCount: Double
   
-  var path: String = js.native
+  var path: String
 }
 object TaskLog {
   

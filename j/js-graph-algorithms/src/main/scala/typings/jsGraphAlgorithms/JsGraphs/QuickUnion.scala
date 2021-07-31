@@ -2,19 +2,17 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickUnion extends StObject {
   
-  def connected(v: Double, w: Double): Boolean = js.native
+  def connected(v: Double, w: Double): Boolean
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  def root(q: Double): Double = js.native
+  def root(q: Double): Double
   
-  def union(v: Double, w: Double): Unit = js.native
+  def union(v: Double, w: Double): Unit
 }
 object QuickUnion {
   

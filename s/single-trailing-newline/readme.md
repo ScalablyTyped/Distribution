@@ -11,8 +11,8 @@ Ensure a string has a single trailing newline based off it's dominant newline ch
 | Full name          | single-trailing-newline |
 | Keywords           | newline, trailing, single, cf, lf, linebreak, eol |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 4006530 |
+| # dependents       | 7 |
+| # downloads        | 10784002 |
 | # stars            | 0 |
 
 ## Links

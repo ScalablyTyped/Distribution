@@ -2,16 +2,14 @@ package typings.semanticUiNag.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-nag.SemanticUI.Nag.AnimationSettings._Impl, keyof semantic-ui-nag.SemanticUI.Nag.AnimationSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplHide extends StObject {
   
-  var hide: js.UndefOr[String] = js.native
+  var hide: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[String] = js.native
+  var show: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplHide {
   

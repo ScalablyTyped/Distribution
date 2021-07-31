@@ -3,7 +3,6 @@ package typings.novaEditorNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/environment/
@@ -25,7 +24,7 @@ trait Environment extends StObject {
   
   val environment: StringDictionary[String] = js.native
   
-  val extension: Extension = js.native
+  val `extension`: Extension = js.native
   
   val fs: FileSystem = js.native
   
@@ -37,14 +36,14 @@ trait Environment extends StObject {
   
   def localize(): String = js.native
   def localize(key: String): String = js.native
-  def localize(key: String, value: js.UndefOr[scala.Nothing], tableName: String): String = js.native
   def localize(key: String, value: String): String = js.native
   def localize(key: String, value: String, tableName: String): String = js.native
   def localize(key: String, value: Null, tableName: String): String = js.native
-  def localize(key: Null, value: js.UndefOr[scala.Nothing], tableName: String): String = js.native
+  def localize(key: String, value: Unit, tableName: String): String = js.native
   def localize(key: Null, value: String): String = js.native
   def localize(key: Null, value: String, tableName: String): String = js.native
   def localize(key: Null, value: Null, tableName: String): String = js.native
+  def localize(key: Null, value: Unit, tableName: String): String = js.native
   
   val notifications: NotificationCenter = js.native
   

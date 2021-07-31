@@ -2,29 +2,28 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationDefinition
-  extends Definition
+  extends StObject
+     with Definition
      with HasSelectionSet
      with Node {
   
-  var directives: js.UndefOr[js.Array[Directive]] = js.native
+  var directives: js.UndefOr[js.Array[Directive]] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   // Note: subscription is an experimental non-spec addition.
-  var operation: String = js.native
+  var operation: String
   
-  var selectionSet: SelectionSet = js.native
+  var selectionSet: SelectionSet
   
-  var variableDefinitions: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var variableDefinitions: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 object OperationDefinition {
   

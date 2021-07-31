@@ -3,7 +3,6 @@ package typings.jqueryForm
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,10 +37,10 @@ trait JQuery extends StObject {
   
   def formSerialize(): String = js.native
   
-  def formToArray(): js.Array[_] = js.native
-  def formToArray(semantic: js.UndefOr[scala.Nothing], elements: js.Array[Element]): js.Array[_] = js.native
-  def formToArray(semantic: Boolean): js.Array[_] = js.native
-  def formToArray(semantic: Boolean, elements: js.Array[Element]): js.Array[_] = js.native
+  def formToArray(): js.Array[js.Any] = js.native
+  def formToArray(semantic: Boolean): js.Array[js.Any] = js.native
+  def formToArray(semantic: Boolean, elements: js.Array[Element]): js.Array[js.Any] = js.native
+  def formToArray(semantic: Unit, elements: js.Array[Element]): js.Array[js.Any] = js.native
   
   def resetForm(): JQuery = js.native
   

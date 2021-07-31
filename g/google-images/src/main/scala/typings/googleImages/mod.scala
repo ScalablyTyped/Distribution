@@ -3,14 +3,15 @@ package typings.googleImages
 import typings.googleImages.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("google-images", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GoogleImages {
+  class ^ protected ()
+    extends StObject
+       with GoogleImages {
     def this(engineId: String, apiKey: String) = this()
   }
   
@@ -21,20 +22,19 @@ object mod {
     def search(searchTerm: String, options: SearchOptions): js.Promise[js.Array[Image]] = js.native
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var thumbnail: Height = js.native
+    var thumbnail: Height
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Image {
     
@@ -192,20 +192,19 @@ object mod {
     def photo: typings.googleImages.googleImagesStrings.photo = "photo".asInstanceOf[typings.googleImages.googleImagesStrings.photo]
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
-    var colorType: js.UndefOr[SearchColorType] = js.native
+    var colorType: js.UndefOr[SearchColorType] = js.undefined
     
-    var dominantColor: js.UndefOr[SearchDominantColor] = js.native
+    var dominantColor: js.UndefOr[SearchDominantColor] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var safe: js.UndefOr[SearchSafe] = js.native
+    var safe: js.UndefOr[SearchSafe] = js.undefined
     
-    var size: js.UndefOr[SearchImageSize] = js.native
+    var size: js.UndefOr[SearchImageSize] = js.undefined
     
-    var `type`: js.UndefOr[SearchImageType] = js.native
+    var `type`: js.UndefOr[SearchImageType] = js.undefined
   }
   object SearchOptions {
     

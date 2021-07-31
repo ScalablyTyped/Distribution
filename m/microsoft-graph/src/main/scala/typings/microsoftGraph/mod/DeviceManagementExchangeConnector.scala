@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceManagementExchangeConnector extends Entity {
+trait DeviceManagementExchangeConnector
+  extends StObject
+     with Entity {
   
   // The name of the server hosting the Exchange Connector.
-  var connectorServerName: js.UndefOr[NullableOption[String]] = js.native
+  var connectorServerName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // An alias assigned to the Exchange server
-  var exchangeAlias: js.UndefOr[NullableOption[String]] = js.native
+  var exchangeAlias: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated.
-  var exchangeConnectorType: js.UndefOr[DeviceManagementExchangeConnectorType] = js.native
+  var exchangeConnectorType: js.UndefOr[DeviceManagementExchangeConnectorType] = js.undefined
   
   // Exchange Organization to the Exchange server
-  var exchangeOrganization: js.UndefOr[NullableOption[String]] = js.native
+  var exchangeOrganization: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Last sync time for the Exchange Connector
-  var lastSyncDateTime: js.UndefOr[String] = js.native
+  var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   // Email address used to configure the Service To Service Exchange Connector.
-  var primarySmtpAddress: js.UndefOr[NullableOption[String]] = js.native
+  var primarySmtpAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the Exchange server.
-  var serverName: js.UndefOr[NullableOption[String]] = js.native
+  var serverName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected.
-  var status: js.UndefOr[DeviceManagementExchangeConnectorStatus] = js.native
+  var status: js.UndefOr[DeviceManagementExchangeConnectorStatus] = js.undefined
   
   // The version of the ExchangeConnectorAgent
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeviceManagementExchangeConnector {
   

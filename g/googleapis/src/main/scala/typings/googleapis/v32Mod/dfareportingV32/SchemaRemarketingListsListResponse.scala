@@ -2,30 +2,28 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remarketing list response
   */
-@js.native
 trait SchemaRemarketingListsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#remarketingListsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Remarketing list collection.
     */
-  var remarketingLists: js.UndefOr[js.Array[SchemaRemarketingList]] = js.native
+  var remarketingLists: js.UndefOr[js.Array[SchemaRemarketingList]] = js.undefined
 }
 object SchemaRemarketingListsListResponse {
   

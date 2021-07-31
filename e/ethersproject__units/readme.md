@@ -10,9 +10,9 @@ Unit conversion functions for Ethereum.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/units |
 | Keywords           | Ethereum, ethers, units, conversion |
-| # releases         | 25 |
-| # dependents       | 12 |
-| # downloads        | 463860 |
+| # releases         | 28 |
+| # dependents       | 21 |
+| # downloads        | 1072472 |
 | # stars            | 0 |
 
 ## Links

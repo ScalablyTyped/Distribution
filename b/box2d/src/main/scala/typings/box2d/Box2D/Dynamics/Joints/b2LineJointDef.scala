@@ -4,11 +4,11 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2LineJointDef extends b2JointDef {
+trait b2LineJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * Initialize the bodies, anchors, and length using the world anchors.
@@ -17,52 +17,52 @@ trait b2LineJointDef extends b2JointDef {
     * @param anchor Anchor.
     * @param axis Axis.
     **/
-  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2, axis: b2Vec2): Unit = js.native
+  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2, axis: b2Vec2): Unit
   
   /**
     * Enable/disable the joint limit.
     **/
-  var enableLimit: Boolean = js.native
+  var enableLimit: Boolean
   
   /**
     * Enable/disable the joint motor.
     **/
-  var enableMotor: Boolean = js.native
+  var enableMotor: Boolean
   
   /**
     * The local anchor point relative to body1's origin.
     **/
-  var localAnchorA: b2Vec2 = js.native
+  var localAnchorA: b2Vec2
   
   /**
     * The local anchor point relative to body2's origin.
     **/
-  var localAnchorB: b2Vec2 = js.native
+  var localAnchorB: b2Vec2
   
   /**
     * The local translation axis in bodyA.
     **/
-  var localAxisA: b2Vec2 = js.native
+  var localAxisA: b2Vec2
   
   /**
     * The lower translation limit, usually in meters.
     **/
-  var lowerTranslation: Double = js.native
+  var lowerTranslation: Double
   
   /**
     * The maximum motor torque, usually in N-m.
     **/
-  var maxMotorForce: Double = js.native
+  var maxMotorForce: Double
   
   /**
     * The desired motor speed in radians per second.
     **/
-  var motorSpeed: Double = js.native
+  var motorSpeed: Double
   
   /**
     * The upper translation limit, usually in meters.
     **/
-  var upperTranslation: Double = js.native
+  var upperTranslation: Double
 }
 object b2LineJointDef {
   

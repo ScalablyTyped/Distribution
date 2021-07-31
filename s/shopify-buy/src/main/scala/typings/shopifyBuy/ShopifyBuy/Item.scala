@@ -2,15 +2,13 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var quantity: Double = js.native
+  var quantity: Double
   
-  var variant: ProductVariant = js.native
+  var variant: ProductVariant
 }
 object Item {
   

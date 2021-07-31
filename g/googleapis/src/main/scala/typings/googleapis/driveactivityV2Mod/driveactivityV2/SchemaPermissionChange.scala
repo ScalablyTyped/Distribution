@@ -2,24 +2,22 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A change of the permission setting on an item.
   */
-@js.native
 trait SchemaPermissionChange extends StObject {
   
   /**
     * The set of permissions added by this change.
     */
-  var addedPermissions: js.UndefOr[js.Array[SchemaPermission]] = js.native
+  var addedPermissions: js.UndefOr[js.Array[SchemaPermission]] = js.undefined
   
   /**
     * The set of permissions removed by this change.
     */
-  var removedPermissions: js.UndefOr[js.Array[SchemaPermission]] = js.native
+  var removedPermissions: js.UndefOr[js.Array[SchemaPermission]] = js.undefined
 }
 object SchemaPermissionChange {
   

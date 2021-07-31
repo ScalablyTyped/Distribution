@@ -2,21 +2,19 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointerEvent extends StObject {
   
-  var coord: Coord = js.native
+  var coord: Coord
   
-  var feature: Feature = js.native
+  var feature: Feature
   
-  var offset: Point = js.native
+  var offset: Point
   
-  var point: Point = js.native
+  var point: Point
   
-  var pointerEvent: DOMEvent = js.native
+  var pointerEvent: DOMEvent
 }
 object PointerEvent {
   

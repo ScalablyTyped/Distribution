@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcesMoveInfo extends StObject {
   
   /**
     * The IDs of the resources.
     */
-  var resources: js.UndefOr[js.Array[String]] = js.native
+  var resources: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The target resource group.
     */
-  var targetResourceGroup: js.UndefOr[String] = js.native
+  var targetResourceGroup: js.UndefOr[String] = js.undefined
 }
 object ResourcesMoveInfo {
   

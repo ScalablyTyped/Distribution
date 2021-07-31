@@ -11,7 +11,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto")
@@ -113,19 +112,25 @@ object FieldDescriptorProto {
   object Label extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Label with Double] = js.native
+    def apply(value: Double): js.UndefOr[Label & Double] = js.native
     
     @js.native
-    sealed trait LABEL_OPTIONAL extends Label
-    /* 1 */ val LABEL_OPTIONAL: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_OPTIONAL with Double = js.native
+    sealed trait LABEL_OPTIONAL
+      extends StObject
+         with Label
+    /* 1 */ val LABEL_OPTIONAL: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait LABEL_REPEATED extends Label
-    /* 3 */ val LABEL_REPEATED: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_REPEATED with Double = js.native
+    sealed trait LABEL_REPEATED
+      extends StObject
+         with Label
+    /* 3 */ val LABEL_REPEATED: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_REPEATED & Double = js.native
     
     @js.native
-    sealed trait LABEL_REQUIRED extends Label
-    /* 2 */ val LABEL_REQUIRED: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_REQUIRED with Double = js.native
+    sealed trait LABEL_REQUIRED
+      extends StObject
+         with Label
+    /* 2 */ val LABEL_REQUIRED: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Label.LABEL_REQUIRED & Double = js.native
   }
   
   @js.native
@@ -135,88 +140,122 @@ object FieldDescriptorProto {
   object Type extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Type with Double] = js.native
+    def apply(value: Double): js.UndefOr[Type & Double] = js.native
     
     @js.native
-    sealed trait TYPE_BOOL extends Type
-    /* 8 */ val TYPE_BOOL: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_BOOL with Double = js.native
+    sealed trait TYPE_BOOL
+      extends StObject
+         with Type
+    /* 8 */ val TYPE_BOOL: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_BOOL & Double = js.native
     
     @js.native
-    sealed trait TYPE_BYTES extends Type
-    /* 12 */ val TYPE_BYTES: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_BYTES with Double = js.native
+    sealed trait TYPE_BYTES
+      extends StObject
+         with Type
+    /* 12 */ val TYPE_BYTES: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_BYTES & Double = js.native
     
     @js.native
-    sealed trait TYPE_DOUBLE extends Type
-    /* 1 */ val TYPE_DOUBLE: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_DOUBLE with Double = js.native
+    sealed trait TYPE_DOUBLE
+      extends StObject
+         with Type
+    /* 1 */ val TYPE_DOUBLE: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_DOUBLE & Double = js.native
     
     @js.native
-    sealed trait TYPE_ENUM extends Type
-    /* 14 */ val TYPE_ENUM: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_ENUM with Double = js.native
+    sealed trait TYPE_ENUM
+      extends StObject
+         with Type
+    /* 14 */ val TYPE_ENUM: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_ENUM & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED32 extends Type
-    /* 7 */ val TYPE_FIXED32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FIXED32 with Double = js.native
+    sealed trait TYPE_FIXED32
+      extends StObject
+         with Type
+    /* 7 */ val TYPE_FIXED32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FIXED64 extends Type
-    /* 6 */ val TYPE_FIXED64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FIXED64 with Double = js.native
+    sealed trait TYPE_FIXED64
+      extends StObject
+         with Type
+    /* 6 */ val TYPE_FIXED64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_FLOAT extends Type
-    /* 2 */ val TYPE_FLOAT: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FLOAT with Double = js.native
+    sealed trait TYPE_FLOAT
+      extends StObject
+         with Type
+    /* 2 */ val TYPE_FLOAT: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_FLOAT & Double = js.native
     
     @js.native
-    sealed trait TYPE_GROUP extends Type
-    /* 10 */ val TYPE_GROUP: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_GROUP with Double = js.native
+    sealed trait TYPE_GROUP
+      extends StObject
+         with Type
+    /* 10 */ val TYPE_GROUP: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_GROUP & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT32 extends Type
-    /* 5 */ val TYPE_INT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_INT32 with Double = js.native
+    sealed trait TYPE_INT32
+      extends StObject
+         with Type
+    /* 5 */ val TYPE_INT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_INT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_INT64 extends Type
-    /* 3 */ val TYPE_INT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_INT64 with Double = js.native
+    sealed trait TYPE_INT64
+      extends StObject
+         with Type
+    /* 3 */ val TYPE_INT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_INT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_MESSAGE extends Type
-    /* 11 */ val TYPE_MESSAGE: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_MESSAGE with Double = js.native
+    sealed trait TYPE_MESSAGE
+      extends StObject
+         with Type
+    /* 11 */ val TYPE_MESSAGE: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_MESSAGE & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED32 extends Type
-    /* 15 */ val TYPE_SFIXED32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SFIXED32 with Double = js.native
+    sealed trait TYPE_SFIXED32
+      extends StObject
+         with Type
+    /* 15 */ val TYPE_SFIXED32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SFIXED32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SFIXED64 extends Type
-    /* 16 */ val TYPE_SFIXED64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SFIXED64 with Double = js.native
+    sealed trait TYPE_SFIXED64
+      extends StObject
+         with Type
+    /* 16 */ val TYPE_SFIXED64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SFIXED64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT32 extends Type
-    /* 17 */ val TYPE_SINT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SINT32 with Double = js.native
+    sealed trait TYPE_SINT32
+      extends StObject
+         with Type
+    /* 17 */ val TYPE_SINT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_SINT64 extends Type
-    /* 18 */ val TYPE_SINT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SINT64 with Double = js.native
+    sealed trait TYPE_SINT64
+      extends StObject
+         with Type
+    /* 18 */ val TYPE_SINT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_SINT64 & Double = js.native
     
     @js.native
-    sealed trait TYPE_STRING extends Type
-    /* 9 */ val TYPE_STRING: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_STRING with Double = js.native
+    sealed trait TYPE_STRING
+      extends StObject
+         with Type
+    /* 9 */ val TYPE_STRING: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_STRING & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT32 extends Type
-    /* 13 */ val TYPE_UINT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_UINT32 with Double = js.native
+    sealed trait TYPE_UINT32
+      extends StObject
+         with Type
+    /* 13 */ val TYPE_UINT32: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_UINT32 & Double = js.native
     
     @js.native
-    sealed trait TYPE_UINT64 extends Type
-    /* 4 */ val TYPE_UINT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_UINT64 with Double = js.native
+    sealed trait TYPE_UINT64
+      extends StObject
+         with Type
+    /* 4 */ val TYPE_UINT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_UINT64 & Double = js.native
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): FieldDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: FieldDescriptorProto, reader: BinaryReader): FieldDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: FieldDescriptorProto, reader: BinaryReader): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto.extensions")
   @js.native
@@ -231,36 +270,33 @@ object FieldDescriptorProto {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: FieldDescriptorProto, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: FieldDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: FieldDescriptorProto): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: FieldDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var extendee: js.UndefOr[String] = js.native
+    var extendee: js.UndefOr[String] = js.undefined
     
-    var jsonName: js.UndefOr[String] = js.native
+    var jsonName: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[Label] = js.native
+    var label: js.UndefOr[Label] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var oneofIndex: js.UndefOr[Double] = js.native
+    var oneofIndex: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.FieldOptions.AsObject] = js.native
+    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.FieldOptions.AsObject] = js.undefined
     
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
-    var typeName: js.UndefOr[String] = js.native
+    var typeName: js.UndefOr[String] = js.undefined
   }
   object AsObject {
     

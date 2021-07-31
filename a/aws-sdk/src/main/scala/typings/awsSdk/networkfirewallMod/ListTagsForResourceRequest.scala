@@ -2,26 +2,24 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The maximum number of objects that you want Network Firewall to return for this request. If more objects are available, in the response, Network Firewall provides a NextToken value that you can use in a subsequent call to get the next batch of objects.
     */
-  var MaxResults: js.UndefOr[TagsPaginationMaxResults] = js.native
+  var MaxResults: js.UndefOr[TagsPaginationMaxResults] = js.undefined
   
   /**
     * When you request a list of objects with a MaxResults setting, if the number of objects that are still available for retrieval exceeds the maximum you requested, Network Firewall returns a NextToken value in the response. To retrieve the next batch of objects, use the token returned from the prior request in your next request.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.networkfirewallMod.ResourceArn
 }
 object ListTagsForResourceRequest {
   

@@ -2,35 +2,35 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGTextAttributes extends SVGAttributes {
+trait SVGTextAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var dx: js.UndefOr[String | Double] = js.native
+  var dx: js.UndefOr[String | Double] = js.undefined
   
-  var dy: js.UndefOr[String | Double] = js.native
+  var dy: js.UndefOr[String | Double] = js.undefined
   
-  var `length-adjust`: js.UndefOr[String] = js.native
+  var `length-adjust`: js.UndefOr[String] = js.undefined
   
-  var lengthAdjust: js.UndefOr[String] = js.native
+  var lengthAdjust: js.UndefOr[String] = js.undefined
   
-  var rotate: js.UndefOr[String] = js.native
+  var rotate: js.UndefOr[String] = js.undefined
   
   @JSName("text-anchor")
-  var `text-anchor_SVGTextAttributes`: js.UndefOr[String] = js.native
+  var `text-anchor_SVGTextAttributes`: js.UndefOr[String] = js.undefined
   
-  var `text-lenght`: js.UndefOr[Double] = js.native
+  var `text-lenght`: js.UndefOr[Double] = js.undefined
   
   @JSName("textAnchor")
-  var textAnchor_SVGTextAttributes: js.UndefOr[String] = js.native
+  var textAnchor_SVGTextAttributes: js.UndefOr[String] = js.undefined
   
-  var textLength: js.UndefOr[Double] = js.native
+  var textLength: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[String | Double] = js.native
+  var x: js.UndefOr[String | Double] = js.undefined
   
-  var y: js.UndefOr[String | Double] = js.native
+  var y: js.UndefOr[String | Double] = js.undefined
 }
 object SVGTextAttributes {
   

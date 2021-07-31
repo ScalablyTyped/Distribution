@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Group of resources as used in .page.package
   */
-@js.native
-trait ImplementationGuidePackage extends BackboneElement {
+trait ImplementationGuidePackage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Human readable text describing the package
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name used .page.package
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Resource in the implementation guide
     */
-  var resource: js.Array[ImplementationGuidePackageResource] = js.native
+  var resource: js.Array[ImplementationGuidePackageResource]
 }
 object ImplementationGuidePackage {
   

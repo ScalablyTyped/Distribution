@@ -6,7 +6,6 @@ import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.tableMod.TableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {

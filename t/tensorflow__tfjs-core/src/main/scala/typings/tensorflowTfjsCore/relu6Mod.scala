@@ -5,15 +5,14 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relu6Mod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/relu6", "relu6")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/relu6", JSImport.Namespace)
   @js.native
-  def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/relu6", "relu6")
-  @js.native
-  def relu6[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def relu6[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu6")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

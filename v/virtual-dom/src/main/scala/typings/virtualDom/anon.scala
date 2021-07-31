@@ -2,17 +2,15 @@ package typings.virtualDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Document extends StObject {
     
-    var document: js.UndefOr[typings.std.Document] = js.native
+    var document: js.UndefOr[typings.std.Document] = js.undefined
     
-    var warn: js.UndefOr[Boolean] = js.native
+    var warn: js.UndefOr[Boolean] = js.undefined
   }
   object Document {
     

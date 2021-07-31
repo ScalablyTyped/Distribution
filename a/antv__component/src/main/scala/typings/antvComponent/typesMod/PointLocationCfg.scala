@@ -2,23 +2,23 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointLocationCfg extends LocationCfg {
+trait PointLocationCfg
+  extends StObject
+     with LocationCfg {
   
   /**
     * 位置 x
     * @type {number}
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置 y
     * @type {number}
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PointLocationCfg {
   

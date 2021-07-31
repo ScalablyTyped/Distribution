@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: POST = js.native
+  var method: POST
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers = js.native
+  var url: SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers
 }
 object EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: POST,
-    request: RequestRequestOptions,
-    url: SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers
-  ): EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/scim/v2/enterprises/:enterprise/Users")
     __obj.asInstanceOf[EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions]
   }
   

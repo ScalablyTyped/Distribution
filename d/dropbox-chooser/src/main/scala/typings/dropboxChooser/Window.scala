@@ -3,13 +3,11 @@ package typings.dropboxChooser
 import typings.dropboxChooser.Dropbox.Chooser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var Dropbox: js.UndefOr[Chooser] = js.native
+  var Dropbox: js.UndefOr[Chooser] = js.undefined
 }
 object Window {
   

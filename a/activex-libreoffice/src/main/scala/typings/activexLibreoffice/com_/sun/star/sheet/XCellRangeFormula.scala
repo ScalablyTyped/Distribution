@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The outer sequence represents the rows and the inner sequence the columns of the array.
   * @since OOo 1.1.2
   */
-@js.native
-trait XCellRangeFormula extends XInterface {
+trait XCellRangeFormula
+  extends StObject
+     with XInterface {
   
   /**
     * gets an array from the contents of the cell range.
@@ -24,7 +24,7 @@ trait XCellRangeFormula extends XInterface {
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  var FormulaArray: SafeArray[SafeArray[String]] = js.native
+  var FormulaArray: SafeArray[SafeArray[String]]
   
   /**
     * gets an array from the contents of the cell range.
@@ -32,7 +32,7 @@ trait XCellRangeFormula extends XInterface {
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  def getFormulaArray(): SafeArray[SafeArray[String]] = js.native
+  def getFormulaArray(): SafeArray[SafeArray[String]]
   
   /**
     * fills the cell range with values from an array.
@@ -41,7 +41,7 @@ trait XCellRangeFormula extends XInterface {
     * {@link com.sun.star.table.XCell.setFormula()} call for the corresponding cell.
     * @throws com::sun::star::uno::RuntimeException If the size of the array is different from the current size.
     */
-  def setFormulaArray(aArray: SeqEquiv[SeqEquiv[String]]): Unit = js.native
+  def setFormulaArray(aArray: SeqEquiv[SeqEquiv[String]]): Unit
 }
 object XCellRangeFormula {
   

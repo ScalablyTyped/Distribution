@@ -3,49 +3,49 @@ package typings.c3.mod
 import typings.c3.anon.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAxisConfiguration extends AxisConfiguration {
+trait XAxisConfiguration
+  extends StObject
+     with AxisConfiguration {
   
   /**
     * Set category names on category axis.
     * This must be an array that includes category names in string. If category names are included in the date by `data.x` option, this is not required.
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set default extent for subchart and zoom. This can be an array or function that returns an array.
     */
-  var extent: js.UndefOr[js.Array[Double] | js.Function0[js.Array[Double]]] = js.native
+  var extent: js.UndefOr[js.Array[Double] | js.Function0[js.Array[Double]]] = js.undefined
   
   /**
     * Set height of x axis.
     * The height of x axis can be set manually by this option. If you need more space for x axis, please use this option for that. The unit is pixel.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Set label on X axis.
     */
-  var label: js.UndefOr[String | Position] = js.native
+  var label: js.UndefOr[String | Position] = js.undefined
   
   /**
     * Set how to treat the timezone of x values.
     * If `true` (default), treat x value as localtime. If `false`, convert to UTC internally.
     */
-  var localtime: js.UndefOr[Boolean] = js.native
+  var localtime: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[js.Any] = js.native
+  var selection: js.UndefOr[js.Any] = js.undefined
   
-  var tick: js.UndefOr[XTickConfiguration] = js.native
+  var tick: js.UndefOr[XTickConfiguration] = js.undefined
   
   /**
     * Set type of x axis.
     * Defaults to `"indexed"`.
     */
-  var `type`: js.UndefOr[XAxisType] = js.native
+  var `type`: js.UndefOr[XAxisType] = js.undefined
 }
 object XAxisConfiguration {
   

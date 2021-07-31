@@ -20,11 +20,9 @@ import typings.officeJs.officeJsStrings.State
 import typings.officeJs.officeJsStrings.World
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartMapOptions.toJSON()`. */
-@js.native
 trait ChartMapOptionsData extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait ChartMapOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var labelStrategy: js.UndefOr[ChartMapLabelStrategy | None | BestFit | ShowAll] = js.native
+  var labelStrategy: js.UndefOr[ChartMapLabelStrategy | None | BestFit | ShowAll] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ChartMapOptionsData extends StObject {
     */
   var level: js.UndefOr[
     ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait ChartMapOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var projectionType: js.UndefOr[ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers] = js.native
+  var projectionType: js.UndefOr[ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers] = js.undefined
 }
 object ChartMapOptionsData {
   

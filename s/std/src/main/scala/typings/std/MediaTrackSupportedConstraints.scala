@@ -2,41 +2,39 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackSupportedConstraints extends StObject {
   
-  var aspectRatio: js.UndefOr[scala.Boolean] = js.native
+  var aspectRatio: js.UndefOr[scala.Boolean] = js.undefined
   
-  var autoGainControl: js.UndefOr[scala.Boolean] = js.native
+  var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
   
-  var channelCount: js.UndefOr[scala.Boolean] = js.native
+  var channelCount: js.UndefOr[scala.Boolean] = js.undefined
   
-  var deviceId: js.UndefOr[scala.Boolean] = js.native
+  var deviceId: js.UndefOr[scala.Boolean] = js.undefined
   
-  var echoCancellation: js.UndefOr[scala.Boolean] = js.native
+  var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
   
-  var facingMode: js.UndefOr[scala.Boolean] = js.native
+  var facingMode: js.UndefOr[scala.Boolean] = js.undefined
   
-  var frameRate: js.UndefOr[scala.Boolean] = js.native
+  var frameRate: js.UndefOr[scala.Boolean] = js.undefined
   
-  var groupId: js.UndefOr[scala.Boolean] = js.native
+  var groupId: js.UndefOr[scala.Boolean] = js.undefined
   
-  var height: js.UndefOr[scala.Boolean] = js.native
+  var height: js.UndefOr[scala.Boolean] = js.undefined
   
-  var latency: js.UndefOr[scala.Boolean] = js.native
+  var latency: js.UndefOr[scala.Boolean] = js.undefined
   
-  var noiseSuppression: js.UndefOr[scala.Boolean] = js.native
+  var noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
   
-  var resizeMode: js.UndefOr[scala.Boolean] = js.native
+  var resizeMode: js.UndefOr[scala.Boolean] = js.undefined
   
-  var sampleRate: js.UndefOr[scala.Boolean] = js.native
+  var sampleRate: js.UndefOr[scala.Boolean] = js.undefined
   
-  var sampleSize: js.UndefOr[scala.Boolean] = js.native
+  var sampleSize: js.UndefOr[scala.Boolean] = js.undefined
   
-  var width: js.UndefOr[scala.Boolean] = js.native
+  var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 object MediaTrackSupportedConstraints {
   

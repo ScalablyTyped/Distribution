@@ -2,65 +2,63 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSetting extends StObject {
   
   /**
     * 是否授权通讯地址
     */
   @JSName("scope.address")
-  var scopeDotaddress: js.UndefOr[Boolean] = js.native
+  var scopeDotaddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权摄像头
     */
   @JSName("scope.camera")
-  var scopeDotcamera: js.UndefOr[Boolean] = js.native
+  var scopeDotcamera: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权获取发票
     */
   @JSName("scope.invoice")
-  var scopeDotinvoice: js.UndefOr[Boolean] = js.native
+  var scopeDotinvoice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权发票抬头
     */
   @JSName("scope.invoiceTitle")
-  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.native
+  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权录音功能
     */
   @JSName("scope.record")
-  var scopeDotrecord: js.UndefOr[Boolean] = js.native
+  var scopeDotrecord: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权用户信息
     */
   @JSName("scope.userInfo")
-  var scopeDotuserInfo: js.UndefOr[Boolean] = js.native
+  var scopeDotuserInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权地理位置
     */
   @JSName("scope.userLocation")
-  var scopeDotuserLocation: js.UndefOr[Boolean] = js.native
+  var scopeDotuserLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权微信运动步数
     */
   @JSName("scope.werun")
-  var scopeDotwerun: js.UndefOr[Boolean] = js.native
+  var scopeDotwerun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否授权保存到相册
     */
   @JSName("scope.writePhotosAlbum")
-  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.native
+  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.undefined
 }
 object AuthSetting {
   

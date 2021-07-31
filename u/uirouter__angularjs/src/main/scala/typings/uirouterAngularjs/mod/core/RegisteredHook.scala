@@ -5,7 +5,6 @@ import typings.uirouterCore.transitionInterfaceMod.HookMatchCriteria
 import typings.uirouterCore.transitionInterfaceMod.HookRegOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.RegisteredHook")

@@ -4,49 +4,47 @@ import typings.jsonSchema.mod.JSONSchema6
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldTemplateProps extends StObject {
   
-  var children: ReactElement = js.native
+  var children: ReactElement
   
-  var classNames: String = js.native
+  var classNames: String
   
-  var description: ReactElement = js.native
+  var description: ReactElement
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var displayLabel: Boolean = js.native
+  var displayLabel: Boolean
   
-  var errors: ReactElement = js.native
+  var errors: ReactElement
   
-  var fields: js.Array[Field] = js.native
+  var fields: js.Array[Field]
   
-  var formContext: js.Any = js.native
+  var formContext: js.Any
   
-  var help: ReactElement = js.native
+  var help: ReactElement
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var label: String = js.native
+  var label: String
   
-  var rawDescription: String = js.native
+  var rawDescription: String
   
-  var rawErrors: js.Array[String] = js.native
+  var rawErrors: js.Array[String]
   
-  var rawHelp: String = js.native
+  var rawHelp: String
   
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var schema: JSONSchema6 = js.native
+  var schema: JSONSchema6
   
-  var uiSchema: UiSchema = js.native
+  var uiSchema: UiSchema
 }
 object FieldTemplateProps {
   

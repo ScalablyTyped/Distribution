@@ -6,17 +6,15 @@ import typings.layuiSrc.layuiSrcStrings.asc
 import typings.layuiSrc.layuiSrcStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Config extends StObject {
     
-    var config: DateOption = js.native
+    var config: DateOption
     
-    def hint(): Unit = js.native
+    def hint(): Unit
   }
   object Config {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var title: String = js.native
+    var title: String
   }
   object Content {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Array[js.Any] = js.native
+    var data: js.Array[js.Any]
     
-    var isAll: Boolean = js.native
+    var isAll: Boolean
   }
   object Data {
     
@@ -92,12 +88,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Experience extends StObject {
     
-    var experience: String = js.native
+    var experience: String
     
-    var score: Double | String = js.native
+    var score: Double | String
   }
   object Experience {
     
@@ -118,12 +113,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var field: String = js.native
+    var field: String
     
-    var `type`: js.UndefOr[`null` | desc | asc] = js.native
+    var `type`: js.UndefOr[`null` | desc | asc] = js.undefined
   }
   object Field {
     
@@ -147,14 +141,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Icon extends StObject {
     
-    var icon: String = js.native
+    var icon: String
     
-    var layEvent: String = js.native
+    var layEvent: String
     
-    var title: String = js.native
+    var title: String
   }
   object Icon {
     
@@ -178,10 +171,9 @@ object anon {
     }
   }
   
-  @js.native
   trait None extends StObject {
     
-    var none: String = js.native
+    var none: String
   }
   object None {
     
@@ -199,12 +191,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object Type {
     

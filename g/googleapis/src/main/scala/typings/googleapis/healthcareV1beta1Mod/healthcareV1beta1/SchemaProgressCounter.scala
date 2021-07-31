@@ -2,29 +2,27 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ProgressCounter provides counters to describe an operation&#39;s progress.
   */
-@js.native
 trait SchemaProgressCounter extends StObject {
   
   /**
     * The number of units that failed in the operation.
     */
-  var failure: js.UndefOr[String] = js.native
+  var failure: js.UndefOr[String] = js.undefined
   
   /**
     * The number of units that are pending in the operation.
     */
-  var pending: js.UndefOr[String] = js.native
+  var pending: js.UndefOr[String] = js.undefined
   
   /**
     * The number of units that succeeded in the operation.
     */
-  var success: js.UndefOr[String] = js.native
+  var success: js.UndefOr[String] = js.undefined
 }
 object SchemaProgressCounter {
   

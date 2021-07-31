@@ -5,7 +5,6 @@ import typings.xrm.Xrm.Async.OfflineOperationSuccessCallbackObject
 import typings.xrm.Xrm.Async.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,10 +72,10 @@ trait MobileOffline extends StObject {
     * @deprecated Use {@link Xrm.WebApi.retrieveMultipleRecords} instead.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
-  def retrieveMultipleRecords(entityType: String): PromiseLike[js.Array[StringDictionary[_]]] = js.native
-  def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
-  def retrieveMultipleRecords(entityType: String, options: String): PromiseLike[js.Array[StringDictionary[_]]] = js.native
-  def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
+  def retrieveMultipleRecords(entityType: String): PromiseLike[js.Array[StringDictionary[js.Any]]] = js.native
+  def retrieveMultipleRecords(entityType: String, options: String): PromiseLike[js.Array[StringDictionary[js.Any]]] = js.native
+  def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): PromiseLike[js.Array[StringDictionary[js.Any]]] = js.native
+  def retrieveMultipleRecords(entityType: String, options: Unit, maxPageSize: Double): PromiseLike[js.Array[StringDictionary[js.Any]]] = js.native
   
   /**
     * Retrieves an entity record in mobile clients while working in the offline mode.

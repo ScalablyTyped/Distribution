@@ -2,19 +2,17 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterObject extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var fromBlock: js.UndefOr[Double | String] = js.native
+  var fromBlock: js.UndefOr[Double | String] = js.undefined
   
-  var toBlock: js.UndefOr[Double | String] = js.native
+  var toBlock: js.UndefOr[Double | String] = js.undefined
   
-  var topics: js.UndefOr[js.Array[LogTopic]] = js.native
+  var topics: js.UndefOr[js.Array[LogTopic]] = js.undefined
 }
 object FilterObject {
   

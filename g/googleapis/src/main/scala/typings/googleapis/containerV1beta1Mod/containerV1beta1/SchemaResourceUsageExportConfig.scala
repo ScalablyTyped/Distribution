@@ -2,25 +2,23 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for exporting cluster resource usages.
   */
-@js.native
 trait SchemaResourceUsageExportConfig extends StObject {
   
   /**
     * Configuration to use BigQuery as usage export destination.
     */
-  var bigqueryDestination: js.UndefOr[SchemaBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[SchemaBigQueryDestination] = js.undefined
   
   /**
     * Whether to enable network egress metering for this cluster. If enabled, a
     * daemonset will be created in the cluster to meter network egress traffic.
     */
-  var enableNetworkEgressMetering: js.UndefOr[Boolean] = js.native
+  var enableNetworkEgressMetering: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaResourceUsageExportConfig {
   

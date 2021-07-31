@@ -12,7 +12,7 @@ Plugin to inject CDN assets into HTML documents
 | Keywords           | webpack, cdn, html, webpack cdn, webpack html cdn, webpack cdn plugin |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 1584 |
+| # downloads        | 4338 |
 | # stars            | 0 |
 
 ## Links

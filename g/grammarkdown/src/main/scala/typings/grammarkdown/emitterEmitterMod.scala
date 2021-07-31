@@ -44,7 +44,6 @@ import typings.grammarkdown.typesMod.TextRange
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterEmitterMod {
@@ -72,7 +71,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.UndefOr[(CancellationToken & CancelToken) | CancelToken], 
           js.Thenable[Unit] | Unit
         ]
     ): js.Promise[Unit] = js.native
@@ -83,7 +82,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.UndefOr[(CancellationToken & CancelToken) | CancelToken], 
           js.Thenable[Unit] | Unit
         ],
       cancelable: Cancelable
@@ -95,7 +94,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancelToken */ js.UndefOr[CancellationToken with CancelToken], 
+          /* cancelToken */ js.UndefOr[CancellationToken & CancelToken], 
           Unit | js.Thenable[Unit]
         ],
       cancelable: CancellationToken
@@ -181,7 +180,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.UndefOr[(CancellationToken & CancelToken) | CancelToken], 
           Unit
         ]
     ): Unit = js.native
@@ -192,7 +191,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.UndefOr[(CancellationToken & CancelToken) | CancelToken], 
           Unit
         ],
       cancelable: Cancelable
@@ -204,7 +203,7 @@ object emitterEmitterMod {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancelToken */ js.UndefOr[CancellationToken with CancelToken], 
+          /* cancelToken */ js.UndefOr[CancellationToken & CancelToken], 
           Unit
         ],
       cancelable: CancellationToken
@@ -225,7 +224,7 @@ object emitterEmitterMod {
     
     /* protected */ def encode(text: String): String = js.native
     
-    var extension: String = js.native
+    var `extension`: String = js.native
     
     /* protected */ def getOutputFilename(node: SourceFile): String = js.native
     

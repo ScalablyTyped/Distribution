@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsUniversalAppX extends MobileLobApp {
+trait WindowsUniversalAppX
+  extends StObject
+     with MobileLobApp {
   
   // The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral.
-  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.native
+  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.undefined
   
   /**
     * The Windows device type(s) for which this app can run on. Possible values are: none, desktop, mobile, holographic,
     * team.
     */
-  var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.native
+  var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.undefined
   
   // The Identity Name.
-  var identityName: js.UndefOr[NullableOption[String]] = js.native
+  var identityName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Identity Publisher Hash.
-  var identityPublisherHash: js.UndefOr[String] = js.native
+  var identityPublisherHash: js.UndefOr[String] = js.undefined
   
   // The Identity Resource Identifier.
-  var identityResourceIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var identityResourceIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The identity version.
-  var identityVersion: js.UndefOr[NullableOption[String]] = js.native
+  var identityVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not the app is a bundle.
-  var isBundle: js.UndefOr[Boolean] = js.native
+  var isBundle: js.UndefOr[Boolean] = js.undefined
   
   // The value for the minimum applicable operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[WindowsMinimumOperatingSystem] = js.native
+  var minimumSupportedOperatingSystem: js.UndefOr[WindowsMinimumOperatingSystem] = js.undefined
 }
 object WindowsUniversalAppX {
   

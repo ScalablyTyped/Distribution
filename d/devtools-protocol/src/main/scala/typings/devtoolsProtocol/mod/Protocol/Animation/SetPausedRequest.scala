@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPausedRequest extends StObject {
   
   /**
     * Animations to set the pause state of.
     */
-  var animations: js.Array[String] = js.native
+  var animations: js.Array[String]
   
   /**
     * Paused state to set to.
     */
-  var paused: Boolean = js.native
+  var paused: Boolean
 }
 object SetPausedRequest {
   

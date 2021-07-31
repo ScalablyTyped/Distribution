@@ -3,15 +3,13 @@ package typings.uifabricUtilities
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseComponentTypesMod {
   
-  @js.native
   trait IBaseProps[T] extends StObject {
     
-    var componentRef: js.UndefOr[IRefObject[T]] = js.native
+    var componentRef: js.UndefOr[IRefObject[T]] = js.undefined
   }
   object IBaseProps {
     
@@ -22,7 +20,7 @@ object baseComponentTypesMod {
     }
     
     @scala.inline
-    implicit class IBasePropsMutableBuilder[Self <: IBaseProps[_], T] (val x: Self with IBaseProps[T]) extends AnyVal {
+    implicit class IBasePropsMutableBuilder[Self <: IBaseProps[?], T] (val x: Self & IBaseProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponentRef(value: IRefObject[T]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])

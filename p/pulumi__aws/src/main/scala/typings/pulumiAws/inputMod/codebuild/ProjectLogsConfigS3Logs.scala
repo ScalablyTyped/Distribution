@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectLogsConfigS3Logs extends StObject {
   
   /**
     * If set to true, output artifacts will not be encrypted. If `type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
     */
-  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
+  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Information about the build output artifact location. If `type` is set to `CODEPIPELINE` or `NO_ARTIFACTS` then this value will be ignored. If `type` is set to `S3`, this is the name of the output bucket.
     */
-  var location: js.UndefOr[Input[String]] = js.native
+  var location: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Current status of logs in CloudWatch Logs for a build project. Valid values: `ENABLED`, `DISABLED`. Defaults to `ENABLED`.
     */
-  var status: js.UndefOr[Input[String]] = js.native
+  var status: js.UndefOr[Input[String]] = js.undefined
 }
 object ProjectLogsConfigS3Logs {
   

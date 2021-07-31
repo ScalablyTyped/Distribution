@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "ConstantScoreQuery")
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   Constructs a query where each documents returned by the internal
   query or filter have a constant score equal to the boost factor.
   */
-class ConstantScoreQuery () extends Query {
+class ConstantScoreQuery ()
+  extends StObject
+     with Query {
   
   /*
     The type of ejs object.  For internal use only.

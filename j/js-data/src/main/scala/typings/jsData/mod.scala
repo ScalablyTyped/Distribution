@@ -12,17 +12,20 @@ import typings.std.PromiseConstructor
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("js-data", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("js-data", "Collection")
   @js.native
   class Collection () extends Component {
-    def this(records: js.Array[_]) = this()
-    def this(records: js.UndefOr[scala.Nothing], opts: js.Any) = this()
-    def this(records: js.Array[_], opts: js.Any) = this()
+    def this(records: js.Array[js.Any]) = this()
+    def this(records: js.Array[js.Any], opts: js.Any) = this()
+    def this(records: Unit, opts: js.Any) = this()
     
     def _onRecordEvent(args: js.Any*): Unit = js.native
     
@@ -41,14 +44,14 @@ object mod {
     
     def beforeRemoveAll(args: js.Any*): Unit = js.native
     
-    def between(leftKeys: js.Any, rightKeys: js.Any): js.Array[_] = js.native
-    def between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[_] = js.native
+    def between(leftKeys: js.Any, rightKeys: js.Any): js.Array[js.Any] = js.native
+    def between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[js.Any] = js.native
     
     def createIndex(name: js.Any, fieldList: js.Any): this.type = js.native
     def createIndex(name: js.Any, fieldList: js.Any, opts: js.Any): this.type = js.native
     
-    def filter(query: js.Any): js.Array[_] = js.native
-    def filter(query: js.Any, thisArg: js.Any): js.Array[_] = js.native
+    def filter(query: js.Any): js.Array[js.Any] = js.native
+    def filter(query: js.Any, thisArg: js.Any): js.Array[js.Any] = js.native
     
     def forEach(cb: js.Function): Unit = js.native
     def forEach(cb: js.Function, thisArg: js.Any): Unit = js.native
@@ -56,7 +59,7 @@ object mod {
     def get(id: String): js.Any = js.native
     def get(id: Double): js.Any = js.native
     
-    def getAll(args: js.Any*): js.Array[_] = js.native
+    def getAll(args: js.Any*): js.Array[js.Any] = js.native
     
     def getIndex(name: String): js.Any = js.native
     
@@ -66,17 +69,17 @@ object mod {
     
     var indexes: js.Any = js.native
     
-    def limit(num: Double): js.Array[_] = js.native
+    def limit(num: Double): js.Array[js.Any] = js.native
     
-    def map(cb: js.Any, thisArg: js.Any): js.Array[_] = js.native
+    def map(cb: js.Any, thisArg: js.Any): js.Array[js.Any] = js.native
     
-    def mapCall(funcName: String, args: js.Any*): js.Array[_] = js.native
+    def mapCall(funcName: String, args: js.Any*): js.Array[js.Any] = js.native
     
     var mapper: Mapper = js.native
     
     var onConflict: String = js.native
     
-    def prune(): js.Array[_] = js.native
+    def prune(): js.Array[js.Any] = js.native
     
     def query(): Query = js.native
     
@@ -92,15 +95,15 @@ object mod {
     def remove(id: Double): js.Any = js.native
     def remove(id: Double, opts: js.Any): js.Any = js.native
     
-    def removeAll(query: js.Any): js.Array[_] = js.native
-    def removeAll(query: js.Any, opts: js.Any): js.Array[_] = js.native
+    def removeAll(query: js.Any): js.Array[js.Any] = js.native
+    def removeAll(query: js.Any, opts: js.Any): js.Array[js.Any] = js.native
     
-    def skip(num: Double): js.Array[_] = js.native
+    def skip(num: Double): js.Array[js.Any] = js.native
     
-    def toJSON(): js.Array[_] = js.native
-    def toJSON(opts: js.Any): js.Array[_] = js.native
+    def toJSON(): js.Array[js.Any] = js.native
+    def toJSON(opts: js.Any): js.Array[js.Any] = js.native
     
-    def unsaved(): js.Array[_] = js.native
+    def unsaved(): js.Array[js.Any] = js.native
     
     def updateIndex(record: js.Any): Unit = js.native
     def updateIndex(record: js.Any, opts: js.Any): Unit = js.native
@@ -122,9 +125,9 @@ object mod {
     def log(level: String, args: js.Any*): Unit = js.native
     
     def off(): Unit = js.native
-    def off(key: js.UndefOr[scala.Nothing], handler: js.Function): Unit = js.native
     def off(key: String): Unit = js.native
     def off(key: String, handler: js.Function): Unit = js.native
+    def off(key: Unit, handler: js.Function): Unit = js.native
     
     def on(key: String, handler: js.Function): Unit = js.native
     def on(key: String, handler: js.Function, ctx: js.Any): Unit = js.native
@@ -132,18 +135,18 @@ object mod {
   /* static members */
   object Component {
     
-    @JSImport("js-data", "Component.extend")
+    @JSImport("js-data", "Component")
     @js.native
-    def extend(): js.Any = js.native
-    @JSImport("js-data", "Component.extend")
-    @js.native
-    def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
-    @JSImport("js-data", "Component.extend")
-    @js.native
-    def extend(instanceProps: js.Any): js.Any = js.native
-    @JSImport("js-data", "Component.extend")
-    @js.native
-    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("js-data", "Container")
@@ -158,9 +161,9 @@ object mod {
     def as(name: String): js.Any = js.native
     
     def createRecord(name: String): Record = js.native
-    def createRecord(name: String, props: js.UndefOr[scala.Nothing], opts: js.Any): Record = js.native
     def createRecord(name: String, props: js.Any): Record = js.native
     def createRecord(name: String, props: js.Any, opts: js.Any): Record = js.native
+    def createRecord(name: String, props: Unit, opts: js.Any): Record = js.native
     
     def defineMapper(name: String): Mapper = js.native
     def defineMapper(name: String, opts: js.Any): Mapper = js.native
@@ -202,10 +205,10 @@ object mod {
     def this(fieldList: js.Array[String]) = this()
     def this(fieldList: js.Array[String], opts: js.Any) = this()
     
-    def _between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[_] = js.native
+    def _between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[js.Any] = js.native
     
-    def between(leftKeys: js.Any, rightKeys: js.Any): js.Array[_] = js.native
-    def between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[_] = js.native
+    def between(leftKeys: js.Any, rightKeys: js.Any): js.Array[js.Any] = js.native
+    def between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[js.Any] = js.native
     
     def clear(): Unit = js.native
     
@@ -213,9 +216,9 @@ object mod {
     
     var fieldList: js.Array[String] = js.native
     
-    def get(keyList: js.Array[_]): js.Any = js.native
+    def get(keyList: js.Array[js.Any]): js.Any = js.native
     
-    def getAll(): js.Array[_] = js.native
+    def getAll(): js.Array[js.Any] = js.native
     
     @JSName("hashCode")
     var hashCode_FIndex: js.Function = js.native
@@ -224,17 +227,17 @@ object mod {
     
     var isIndex: Boolean = js.native
     
-    var keys: js.Array[_] = js.native
+    var keys: js.Array[js.Any] = js.native
     
     def peek(): js.Any = js.native
     
     def removeRecord(data: js.Any): js.Any = js.native
     
-    def set(keyList: js.Array[_], value: js.Any): Unit = js.native
+    def set(keyList: js.Array[js.Any], value: js.Any): Unit = js.native
     
     def updateRecord(data: js.Any): Unit = js.native
     
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any] = js.native
     
     def visitAll(cb: js.Function): Unit = js.native
     def visitAll(cb: js.Function, thisArg: js.Any): Unit = js.native
@@ -243,9 +246,9 @@ object mod {
   @JSImport("js-data", "LinkedCollection")
   @js.native
   class LinkedCollection () extends Collection {
-    def this(records: js.Array[_]) = this()
-    def this(records: js.UndefOr[scala.Nothing], opts: js.Any) = this()
-    def this(records: js.Array[_], opts: js.Any) = this()
+    def this(records: js.Array[js.Any]) = this()
+    def this(records: js.Array[js.Any], opts: js.Any) = this()
+    def this(records: Unit, opts: js.Any) = this()
     
     var _added: js.Object = js.native
     
@@ -266,7 +269,7 @@ object mod {
     
     def afterCreate(props: js.Any, opts: js.Any, result: js.Any): js.Any = js.native
     
-    def afterCreateMany(records: js.Array[_], opts: js.Any, result: js.Any): js.Any = js.native
+    def afterCreateMany(records: js.Array[js.Any], opts: js.Any, result: js.Any): js.Any = js.native
     
     def afterDestroy(id: String, opts: js.Any, result: js.Any): js.Any = js.native
     def afterDestroy(id: Double, opts: js.Any, result: js.Any): js.Any = js.native
@@ -285,7 +288,7 @@ object mod {
     
     def afterUpdateAll(props: js.Any, query: js.Any, opts: js.Any, result: js.Any): js.Any = js.native
     
-    def afterUpdateMany(records: js.Array[_], opts: js.Any, result: js.Any): js.Any = js.native
+    def afterUpdateMany(records: js.Array[js.Any], opts: js.Any, result: js.Any): js.Any = js.native
     
     var applySchema: Boolean = js.native
     
@@ -293,7 +296,7 @@ object mod {
     
     def beforeCreate(props: js.Any, opts: js.Any): js.Any = js.native
     
-    def beforeCreateMany(records: js.Array[_], opts: js.Any): js.Any = js.native
+    def beforeCreateMany(records: js.Array[js.Any], opts: js.Any): js.Any = js.native
     
     def beforeDestroy(id: String, opts: js.Any): js.Any = js.native
     def beforeDestroy(id: Double, opts: js.Any): js.Any = js.native
@@ -312,48 +315,48 @@ object mod {
     
     def beforeUpdateAll(query: js.Any, opts: js.Any): js.Any = js.native
     
-    def beforeUpdateMany(records: js.Array[_], opts: js.Any): js.Any = js.native
+    def beforeUpdateMany(records: js.Array[js.Any], opts: js.Any): js.Any = js.native
     
     def belongsTo(relatedMapper: js.Any, opts: js.Any): Unit = js.native
     
-    def count(query: js.Any): js.Promise[_] = js.native
-    def count(query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def count(query: js.Any): js.Promise[js.Any] = js.native
+    def count(query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def create(props: js.Any): js.Promise[_] = js.native
-    def create(props: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def create(props: js.Any): js.Promise[js.Any] = js.native
+    def create(props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
     def createInstance(props: js.Any): js.Any = js.native
     def createInstance(props: js.Any, opts: js.Any): js.Any = js.native
     
-    def createMany(records: js.Array[_]): js.Promise[_] = js.native
-    def createMany(records: js.Array[_], opts: js.Any): js.Promise[_] = js.native
+    def createMany(records: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def createMany(records: js.Array[js.Any], opts: js.Any): js.Promise[js.Any] = js.native
     
     def createRecord(): Record = js.native
-    def createRecord(props: js.UndefOr[scala.Nothing], opts: js.Any): Record = js.native
     def createRecord(props: js.Any): Record = js.native
     def createRecord(props: js.Any, opts: js.Any): Record = js.native
+    def createRecord(props: Unit, opts: js.Any): Record = js.native
     
-    def crud(method: js.Any, args: js.Any*): js.Promise[_] = js.native
+    def crud(method: js.Any, args: js.Any*): js.Promise[js.Any] = js.native
     
     var debug: Boolean = js.native
     
     var defaultAdapter: String = js.native
     
-    def destroy(id: String): js.Promise[_] = js.native
-    def destroy(id: String, opts: js.Any): js.Promise[_] = js.native
-    def destroy(id: Double): js.Promise[_] = js.native
-    def destroy(id: Double, opts: js.Any): js.Promise[_] = js.native
+    def destroy(id: String): js.Promise[js.Any] = js.native
+    def destroy(id: String, opts: js.Any): js.Promise[js.Any] = js.native
+    def destroy(id: Double): js.Promise[js.Any] = js.native
+    def destroy(id: Double, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def destroyAll(query: js.Any): js.Promise[_] = js.native
-    def destroyAll(query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def destroyAll(query: js.Any): js.Promise[js.Any] = js.native
+    def destroyAll(query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def find(id: String): js.Promise[_] = js.native
-    def find(id: String, opts: js.Any): js.Promise[_] = js.native
-    def find(id: Double): js.Promise[_] = js.native
-    def find(id: Double, opts: js.Any): js.Promise[_] = js.native
+    def find(id: String): js.Promise[js.Any] = js.native
+    def find(id: String, opts: js.Any): js.Promise[js.Any] = js.native
+    def find(id: Double): js.Promise[js.Any] = js.native
+    def find(id: Double, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def findAll(query: js.Any): js.Promise[_] = js.native
-    def findAll(query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def findAll(query: js.Any): js.Promise[js.Any] = js.native
+    def findAll(query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
     def getAdapter(name: js.Any): js.Any = js.native
     
@@ -388,31 +391,31 @@ object mod {
     
     var relationFields: js.Array[String] = js.native
     
-    var relationList: js.Array[_] = js.native
+    var relationList: js.Array[js.Any] = js.native
     
     var schema: Schema = js.native
     
-    def sum(field: String, query: js.Any): js.Promise[_] = js.native
-    def sum(field: String, query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def sum(field: String, query: js.Any): js.Promise[js.Any] = js.native
+    def sum(field: String, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
     def toJSON(record: js.Any): js.Object = js.native
     def toJSON(record: js.Any, opts: js.Any): js.Object = js.native
     
-    def update(id: String, props: js.Any): js.Promise[_] = js.native
-    def update(id: String, props: js.Any, opts: js.Any): js.Promise[_] = js.native
-    def update(id: Double, props: js.Any): js.Promise[_] = js.native
-    def update(id: Double, props: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def update(id: String, props: js.Any): js.Promise[js.Any] = js.native
+    def update(id: String, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def update(id: Double, props: js.Any): js.Promise[js.Any] = js.native
+    def update(id: Double, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def updateAll(props: js.Any, query: js.Any): js.Promise[_] = js.native
-    def updateAll(props: js.Any, query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def updateAll(props: js.Any, query: js.Any): js.Promise[js.Any] = js.native
+    def updateAll(props: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def updateMany(records: js.Array[_]): js.Promise[_] = js.native
-    def updateMany(records: js.Array[_], opts: js.Any): js.Promise[_] = js.native
+    def updateMany(records: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def updateMany(records: js.Array[js.Any], opts: js.Any): js.Promise[js.Any] = js.native
     
     def validate(records: js.Any): js.Any = js.native
     def validate(records: js.Any, opts: js.Any): js.Any = js.native
-    def validate(records: js.Array[_]): js.Any = js.native
-    def validate(records: js.Array[_], opts: js.Any): js.Any = js.native
+    def validate(records: js.Array[js.Any]): js.Any = js.native
+    def validate(records: js.Array[js.Any], opts: js.Any): js.Any = js.native
   }
   
   @JSImport("js-data", "Query")
@@ -427,7 +430,7 @@ object mod {
     
     def compare(orderBy: js.Any, index: js.Any, a: js.Any, b: js.Any): js.Any = js.native
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any] = js.native
     
     def evaluate(value: js.Any, op: String, predicate: js.Any): Boolean = js.native
     
@@ -438,13 +441,13 @@ object mod {
     def forEach(forEachFn: js.Function, thisArg: js.Any): this.type = js.native
     
     def get(): this.type = js.native
-    def get(keyList: js.UndefOr[scala.Nothing], opts: js.Any): this.type = js.native
-    def get(keyList: js.Array[_]): this.type = js.native
-    def get(keyList: js.Array[_], opts: js.Any): this.type = js.native
+    def get(keyList: js.Array[js.Any]): this.type = js.native
+    def get(keyList: js.Array[js.Any], opts: js.Any): this.type = js.native
+    def get(keyList: Unit, opts: js.Any): this.type = js.native
     
     def getAll(args: js.Any*): this.type = js.native
     
-    def getData(): js.Array[_] = js.native
+    def getData(): js.Array[js.Any] = js.native
     
     def like(pattern: js.Any, flags: js.Any): RegExp = js.native
     
@@ -455,7 +458,7 @@ object mod {
     
     def mapCall(funcName: String, args: js.Any*): this.type = js.native
     
-    def run(): js.Array[_] = js.native
+    def run(): js.Array[js.Any] = js.native
     
     def skip(num: Double): this.type = js.native
   }
@@ -477,8 +480,8 @@ object mod {
   @js.native
   class Record () extends Component {
     def this(props: js.Any) = this()
-    def this(props: js.UndefOr[scala.Nothing], opts: js.Any) = this()
     def this(props: js.Any, opts: js.Any) = this()
+    def this(props: Unit, opts: js.Any) = this()
     
     def _get(prop: String): js.Any = js.native
     
@@ -497,7 +500,7 @@ object mod {
     
     def beforeSave(): Unit = js.native
     
-    def changeHistory(): js.Array[_] = js.native
+    def changeHistory(): js.Array[js.Any] = js.native
     
     def changes(): Diff = js.native
     def changes(opts: js.Any): Diff = js.native
@@ -507,8 +510,8 @@ object mod {
     def create(): js.Promise[Record] = js.native
     def create(opts: js.Any): js.Promise[Record] = js.native
     
-    def destroy(): js.Promise[_] = js.native
-    def destroy(opts: js.Any): js.Promise[_] = js.native
+    def destroy(): js.Promise[js.Any] = js.native
+    def destroy(opts: js.Any): js.Promise[js.Any] = js.native
     
     def get(key: String): js.Any = js.native
     
@@ -529,9 +532,9 @@ object mod {
     def save(opts: js.Any): js.Promise[this.type] = js.native
     
     def set(key: String): Unit = js.native
-    def set(key: String, value: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
     def set(key: String, value: js.Any): Unit = js.native
     def set(key: String, value: js.Any, opts: js.Any): Unit = js.native
+    def set(key: String, value: Unit, opts: js.Any): Unit = js.native
     
     def toJSON(): js.Any = js.native
     def toJSON(opts: js.Any): js.Any = js.native
@@ -597,9 +600,8 @@ object mod {
     @scala.inline
     def types_=(x: Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
     
-    @JSImport("js-data", "Schema.validate")
-    @js.native
-    def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
+    @scala.inline
+    def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[SchemaValidationError]]
     
     @JSImport("js-data", "Schema.validationKeywords")
     @js.native
@@ -614,18 +616,18 @@ object mod {
   /* static members */
   object Settable {
     
-    @JSImport("js-data", "Settable.extend")
+    @JSImport("js-data", "Settable")
     @js.native
-    def extend(): js.Any = js.native
-    @JSImport("js-data", "Settable.extend")
-    @js.native
-    def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
-    @JSImport("js-data", "Settable.extend")
-    @js.native
-    def extend(instanceProps: js.Any): js.Any = js.native
-    @JSImport("js-data", "Settable.extend")
-    @js.native
-    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("js-data", "SimpleStore")
@@ -644,15 +646,15 @@ object mod {
     
     var _pendingQueries: js.Object = js.native
     
-    def add(mapperName: String, records: js.Any): js.Array[_] | js.Any = js.native
-    def add(mapperName: String, records: js.Any, opts: js.Any): js.Array[_] | js.Any = js.native
-    def add(mapperName: String, records: js.Array[_]): js.Array[_] | js.Any = js.native
-    def add(mapperName: String, records: js.Array[_], opts: js.Any): js.Array[_] | js.Any = js.native
+    def add(mapperName: String, records: js.Any): js.Array[js.Any] | js.Any = js.native
+    def add(mapperName: String, records: js.Any, opts: js.Any): js.Array[js.Any] | js.Any = js.native
+    def add(mapperName: String, records: js.Array[js.Any]): js.Array[js.Any] | js.Any = js.native
+    def add(mapperName: String, records: js.Array[js.Any], opts: js.Any): js.Array[js.Any] | js.Any = js.native
     
     def addToCache(mapperName: String, data: js.Any, opts: js.Any): js.Any = js.native
     
-    def between(mapperName: String, leftKeys: js.Any, rightKeys: js.Any): js.Array[_] = js.native
-    def between(mapperName: String, leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[_] = js.native
+    def between(mapperName: String, leftKeys: js.Any, rightKeys: js.Any): js.Array[js.Any] = js.native
+    def between(mapperName: String, leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): js.Array[js.Any] = js.native
     
     def cacheFind(mapperName: String, data: js.Any, id: String, opts: js.Any): Unit = js.native
     def cacheFind(mapperName: String, data: js.Any, id: Double, opts: js.Any): Unit = js.native
@@ -676,38 +678,38 @@ object mod {
         Collection
       ] = js.native
     
-    def create(mapperName: String, record: js.Any): js.Promise[_] = js.native
-    def create(mapperName: String, record: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def create(mapperName: String, record: js.Any): js.Promise[js.Any] = js.native
+    def create(mapperName: String, record: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
     def createIndex(mapperName: String, name: js.Any, fieldList: js.Any): Collection = js.native
     def createIndex(mapperName: String, name: js.Any, fieldList: js.Any, opts: js.Any): Collection = js.native
     
-    def createMany(mapperName: String, records: js.Any): js.Promise[js.Array[_] | _] = js.native
-    def createMany(mapperName: String, records: js.Any, opts: js.Any): js.Promise[js.Array[_] | _] = js.native
+    def createMany(mapperName: String, records: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
+    def createMany(mapperName: String, records: js.Any, opts: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
     
-    def destroy(mapperName: String, id: js.Any): js.Promise[_] = js.native
-    def destroy(mapperName: String, id: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def destroy(mapperName: String, id: js.Any): js.Promise[js.Any] = js.native
+    def destroy(mapperName: String, id: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def destroyAll(mapperName: String): js.Promise[_] = js.native
-    def destroyAll(mapperName: String, query: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
-    def destroyAll(mapperName: String, query: js.Any): js.Promise[_] = js.native
-    def destroyAll(mapperName: String, query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def destroyAll(mapperName: String): js.Promise[js.Any] = js.native
+    def destroyAll(mapperName: String, query: js.Any): js.Promise[js.Any] = js.native
+    def destroyAll(mapperName: String, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def destroyAll(mapperName: String, query: Unit, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def filter(mapperName: String, query: js.Any): js.Array[_] = js.native
-    def filter(mapperName: String, query: js.Any, thisArg: js.Any): js.Array[_] = js.native
+    def filter(mapperName: String, query: js.Any): js.Array[js.Any] = js.native
+    def filter(mapperName: String, query: js.Any, thisArg: js.Any): js.Array[js.Any] = js.native
     
-    def find(mapperName: String, id: js.Any): js.Promise[_] = js.native
-    def find(mapperName: String, id: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def find(mapperName: String, id: js.Any): js.Promise[js.Any] = js.native
+    def find(mapperName: String, id: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def findAll(mapperName: String): js.Promise[_] = js.native
-    def findAll(mapperName: String, query: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
-    def findAll(mapperName: String, query: js.Any): js.Promise[_] = js.native
-    def findAll(mapperName: String, query: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def findAll(mapperName: String): js.Promise[js.Any] = js.native
+    def findAll(mapperName: String, query: js.Any): js.Promise[js.Any] = js.native
+    def findAll(mapperName: String, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def findAll(mapperName: String, query: Unit, opts: js.Any): js.Promise[js.Any] = js.native
     
     def get(mapperName: String, id: String): js.Any = js.native
     def get(mapperName: String, id: Double): js.Any = js.native
     
-    def getAll(mapperName: String, args: js.Any*): js.Array[_] = js.native
+    def getAll(mapperName: String, args: js.Any*): js.Array[js.Any] = js.native
     
     def getCollection(mapperName: String): Collection = js.native
     
@@ -721,49 +723,46 @@ object mod {
     def remove(mapperName: String, id: Double): js.Any = js.native
     def remove(mapperName: String, id: Double, opts: js.Any): js.Any = js.native
     
-    def removeAll(mapperName: String): Unit | js.Array[_] = js.native
-    def removeAll(mapperName: String, query: js.UndefOr[scala.Nothing], opts: js.Any): Unit | js.Array[_] = js.native
-    def removeAll(mapperName: String, query: js.Any): Unit | js.Array[_] = js.native
-    def removeAll(mapperName: String, query: js.Any, opts: js.Any): Unit | js.Array[_] = js.native
+    def removeAll(mapperName: String): Unit | js.Array[js.Any] = js.native
+    def removeAll(mapperName: String, query: js.Any): Unit | js.Array[js.Any] = js.native
+    def removeAll(mapperName: String, query: js.Any, opts: js.Any): Unit | js.Array[js.Any] = js.native
+    def removeAll(mapperName: String, query: Unit, opts: js.Any): Unit | js.Array[js.Any] = js.native
     
-    def toJson(mapperName: String): js.Array[_] = js.native
-    def toJson(mapperName: String, opts: js.Any): js.Array[_] = js.native
+    def toJson(mapperName: String): js.Array[js.Any] = js.native
+    def toJson(mapperName: String, opts: js.Any): js.Array[js.Any] = js.native
     
-    def update(mapperName: String, id: js.Any, record: js.Any): js.Promise[_] = js.native
-    def update(mapperName: String, id: js.Any, record: js.Any, opts: js.Any): js.Promise[_] = js.native
+    def update(mapperName: String, id: js.Any, record: js.Any): js.Promise[js.Any] = js.native
+    def update(mapperName: String, id: js.Any, record: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
     
-    def updateAll(mapperName: String, props: js.Any): js.Promise[js.Array[_] | _] = js.native
-    def updateAll(mapperName: String, props: js.Any, query: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[js.Array[_] | _] = js.native
-    def updateAll(mapperName: String, props: js.Any, query: js.Any): js.Promise[js.Array[_] | _] = js.native
-    def updateAll(mapperName: String, props: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Array[_] | _] = js.native
+    def updateAll(mapperName: String, props: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
+    def updateAll(mapperName: String, props: js.Any, query: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
+    def updateAll(mapperName: String, props: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
+    def updateAll(mapperName: String, props: js.Any, query: Unit, opts: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
     
-    def updateMany(mapperName: String, records: js.Any): js.Promise[js.Array[_] | _] = js.native
-    def updateMany(mapperName: String, records: js.Any, opts: js.Any): js.Promise[js.Array[_] | _] = js.native
+    def updateMany(mapperName: String, records: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
+    def updateMany(mapperName: String, records: js.Any, opts: js.Any): js.Promise[js.Array[js.Any] | js.Any] = js.native
     
     var usePendingFind: Boolean = js.native
     
     var usePendingFindAll: Boolean = js.native
   }
   
-  @JSImport("js-data", "belongsTo")
-  @js.native
-  def belongsTo(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = js.native
+  @scala.inline
+  def belongsTo(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("belongsTo")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "belongsToType")
   @js.native
   val belongsToType: String = js.native
   
-  @JSImport("js-data", "hasMany")
-  @js.native
-  def hasMany(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = js.native
+  @scala.inline
+  def hasMany(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMany")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "hasManyType")
   @js.native
   val hasManyType: String = js.native
   
-  @JSImport("js-data", "hasOne")
-  @js.native
-  def hasOne(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = js.native
+  @scala.inline
+  def hasOne(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOne")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "hasOneType")
   @js.native
@@ -779,7 +778,8 @@ object mod {
     @JSImport("js-data", "utils.Promise")
     @js.native
     class Promise[T] protected ()
-      extends typings.std.Promise[T] {
+      extends StObject
+         with typings.std.Promise[T] {
       /**
         * Creates a new Promise.
         * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -798,373 +798,212 @@ object mod {
     @scala.inline
     def Promise_=(x: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
-    @JSImport("js-data", "utils._")
-    @js.native
-    def _underscore(dest: js.Any, src: js.Any): Unit = js.native
+    @scala.inline
+    def _underscore(dest: js.Any, src: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.addHiddenPropsToTarget")
-    @js.native
-    def addHiddenPropsToTarget(target: js.Object, props: js.Object): Unit = js.native
+    @scala.inline
+    def addHiddenPropsToTarget(target: js.Object, props: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenPropsToTarget")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.areDifferent")
-    @js.native
-    def areDifferent(a: js.Object, b: js.Object, opts: js.Any): Boolean = js.native
+    @scala.inline
+    def areDifferent(a: js.Object, b: js.Object, opts: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areDifferent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.classCallCheck")
-    @js.native
-    def classCallCheck(instance: js.Object, ctor: js.Function): Unit = js.native
+    @scala.inline
+    def classCallCheck(instance: js.Object, ctor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("classCallCheck")(instance.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.UndefOr[scala.Nothing], stackTo: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.Any, stackTo: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.Any,
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.Any,
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.UndefOr[scala.Nothing],
-      stackFrom: js.Any,
-      stackTo: js.Any,
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.Any, stackFrom: js.UndefOr[scala.Nothing], stackTo: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.UndefOr[scala.Nothing],
-      stackTo: js.Any,
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.UndefOr[scala.Nothing],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_]
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(
-      from: js.Any,
-      to: js.Any,
-      stackFrom: js.Any,
-      stackTo: js.UndefOr[scala.Nothing],
-      blacklist: js.Array[_],
-      plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
+    @scala.inline
+    def copy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: js.Any,
       stackTo: js.Any,
-      blacklist: js.UndefOr[scala.Nothing],
+      blacklist: js.Array[js.Any],
       plain: Boolean
-    ): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[_]): js.Any = js.native
-    @JSImport("js-data", "utils.copy")
-    @js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: js.Any,
-      stackTo: js.Any,
-      blacklist: js.Array[_],
+      stackTo: Unit,
+      blacklist: js.Array[js.Any],
       plain: Boolean
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: Unit,
+      stackTo: js.Any,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: Unit,
+      stackTo: Unit,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: Unit,
+      stackFrom: js.Any,
+      stackTo: js.Any,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: Unit,
+      stackFrom: js.Any,
+      stackTo: Unit,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: Unit,
+      stackFrom: Unit,
+      stackTo: js.Any,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(
+      from: js.Any,
+      to: Unit,
+      stackFrom: Unit,
+      stackTo: Unit,
+      blacklist: js.Array[js.Any],
+      plain: Boolean
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("js-data", "utils.deepEqual")
-    @js.native
-    def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def deepEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.deepFillIn")
-    @js.native
-    def deepFillIn(dest: js.Object, source: js.Object): js.Object = js.native
+    @scala.inline
+    def deepFillIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepFillIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("js-data", "utils.deepMixIn")
-    @js.native
-    def deepMixIn(dest: js.Object, source: js.Object): js.Object = js.native
+    @scala.inline
+    def deepMixIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMixIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("js-data", "utils.diffObjects")
-    @js.native
-    def diffObjects(a: js.Any, b: js.Any, opts: js.Any): Diff = js.native
+    @scala.inline
+    def diffObjects(a: js.Any, b: js.Any, opts: js.Any): Diff = (^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Diff]
     
-    @JSImport("js-data", "utils.equal")
-    @js.native
-    def equal(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def equal(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.eventify")
-    @js.native
-    def eventify(target: js.Any, getter: js.Function, setter: js.Function): Unit = js.native
-    @JSImport("js-data", "utils.eventify")
-    @js.native
-    def eventify(target: js.Any, getter: js.Function, setter: js.Function, enumerable: Boolean): Unit = js.native
+    @scala.inline
+    def eventify(target: js.Any, getter: js.Function, setter: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def eventify(target: js.Any, getter: js.Function, setter: js.Function, enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.extend")
-    @js.native
-    def extend(): js.Function = js.native
-    @JSImport("js-data", "utils.extend")
-    @js.native
-    def extend(props: js.UndefOr[scala.Nothing], classProps: js.Any): js.Function = js.native
-    @JSImport("js-data", "utils.extend")
-    @js.native
-    def extend(props: js.Any): js.Function = js.native
-    @JSImport("js-data", "utils.extend")
-    @js.native
-    def extend(props: js.Any, classProps: js.Any): js.Function = js.native
+    @scala.inline
+    def extend(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Function]
+    @scala.inline
+    def extend(props: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def extend(props: js.Any, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def extend(props: Unit, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @JSImport("js-data", "utils.fillIn")
-    @js.native
-    def fillIn(dest: js.Object, src: js.Object): Unit = js.native
+    @scala.inline
+    def fillIn(dest: js.Object, src: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillIn")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.findIndex")
-    @js.native
-    def findIndex(array: js.Array[_], fn: js.Function): Unit = js.native
+    @scala.inline
+    def findIndex(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.forEachRelation")
-    @js.native
-    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function): Unit = js.native
-    @JSImport("js-data", "utils.forEachRelation")
-    @js.native
-    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function, ctx: js.Any): Unit = js.native
+    @scala.inline
+    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function, ctx: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.forOwn")
-    @js.native
-    def forOwn(obj: js.Any, fn: js.Function): Unit = js.native
-    @JSImport("js-data", "utils.forOwn")
-    @js.native
-    def forOwn(obj: js.Any, fn: js.Function, thisArg: js.Object): Unit = js.native
+    @scala.inline
+    def forOwn(obj: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def forOwn(obj: js.Any, fn: js.Function, thisArg: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils._forRelation")
-    @js.native
-    def forRelation(opts: js.Any, `def`: js.Any, fn: js.Function, ctx: js.Object): Unit = js.native
+    @scala.inline
+    def forRelation(opts: js.Any, `def`: js.Any, fn: js.Function, ctx: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_forRelation")(opts.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.fromJson")
-    @js.native
-    def fromJson(json: js.Any): js.Any = js.native
+    @scala.inline
+    def fromJson(json: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("js-data", "utils.get")
-    @js.native
-    def get(`object`: js.Object, prop: String): js.Any = js.native
+    @scala.inline
+    def get(`object`: js.Object, prop: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("js-data", "utils._getIndex")
-    @js.native
-    def getIndex(list: js.Array[_], relation: js.Any): Double = js.native
+    @scala.inline
+    def getIndex(list: js.Array[js.Any], relation: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_getIndex")(list.asInstanceOf[js.Any], relation.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("js-data", "utils.getSuper")
-    @js.native
-    def getSuper(instance: js.Any): js.Function = js.native
-    @JSImport("js-data", "utils.getSuper")
-    @js.native
-    def getSuper(instance: js.Any, isCtor: Boolean): js.Function = js.native
+    @scala.inline
+    def getSuper(instance: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def getSuper(instance: js.Any, isCtor: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any], isCtor.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @JSImport("js-data", "utils.intersection")
-    @js.native
-    def intersection(array1: js.Array[_], array2: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def intersection(array1: js.Array[js.Any], array2: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("js-data", "utils.isArray")
-    @js.native
-    def isArray(arg: js.Any): Boolean = js.native
+    @scala.inline
+    def isArray(arg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isBlacklisted")
-    @js.native
-    def isBlacklisted(prop: String, bl: js.Array[_]): Boolean = js.native
+    @scala.inline
+    def isBlacklisted(prop: String, bl: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBlacklisted")(prop.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isBoolean")
-    @js.native
-    def isBoolean(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("js-data", "utils.isBrowser")
     @js.native
@@ -1172,104 +1011,78 @@ object mod {
     @scala.inline
     def isBrowser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowser")(x.asInstanceOf[js.Any])
     
-    @JSImport("js-data", "utils.isDate")
-    @js.native
-    def isDate(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isDate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isFunction")
-    @js.native
-    def isFunction(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isInteger")
-    @js.native
-    def isInteger(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isInteger(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isNull")
-    @js.native
-    def isNull(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isNull(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isNumber")
-    @js.native
-    def isNumber(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isObject")
-    @js.native
-    def isObject(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isRegExp")
-    @js.native
-    def isRegExp(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isRegExp(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isSorN")
-    @js.native
-    def isSorN(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isSorN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSorN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isString")
-    @js.native
-    def isString(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.isUndefined")
-    @js.native
-    def isUndefined(value: js.Any): Boolean = js.native
+    @scala.inline
+    def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("js-data", "utils.logify")
-    @js.native
-    def logify(target: js.Any, defaultNamespace: js.Any): Unit = js.native
+    @scala.inline
+    def logify(target: js.Any, defaultNamespace: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logify")(target.asInstanceOf[js.Any], defaultNamespace.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.noDupeAdd")
-    @js.native
-    def noDupeAdd(array: js.Array[_], record: js.Any, fn: js.Function): Unit = js.native
+    @scala.inline
+    def noDupeAdd(array: js.Array[js.Any], record: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noDupeAdd")(array.asInstanceOf[js.Any], record.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.omit")
-    @js.native
-    def omit(props: js.Object, keys: js.Array[String]): js.Object = js.native
+    @scala.inline
+    def omit(props: js.Object, keys: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("js-data", "utils.plainCopy")
-    @js.native
-    def plainCopy(from: js.Any): js.Any = js.native
+    @scala.inline
+    def plainCopy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("plainCopy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("js-data", "utils.possibleConstructorReturn")
-    @js.native
-    def possibleConstructorReturn(self: js.Object, call: js.Function): js.Object = js.native
-    @JSImport("js-data", "utils.possibleConstructorReturn")
-    @js.native
-    def possibleConstructorReturn(self: js.Object, call: js.Object): js.Object = js.native
+    @scala.inline
+    def possibleConstructorReturn(self: js.Object, call: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def possibleConstructorReturn(self: js.Object, call: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("js-data", "utils.reject")
-    @js.native
-    def reject(value: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def reject(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("js-data", "utils.remove")
-    @js.native
-    def remove(array: js.Array[_], fn: js.Function): Unit = js.native
+    @scala.inline
+    def remove(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.resolve")
-    @js.native
-    def resolve(value: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def resolve(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("js-data", "utils.set")
-    @js.native
-    def set(`object`: js.Object, path: String): Unit = js.native
-    @JSImport("js-data", "utils.set")
-    @js.native
-    def set(`object`: js.Object, path: String, value: js.Any): Unit = js.native
+    @scala.inline
+    def set(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def set(`object`: js.Object, path: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("js-data", "utils.toJson")
-    @js.native
-    def toJson(value: js.Any): String = js.native
-    @JSImport("js-data", "utils.toJson")
-    @js.native
-    def toJson(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-    @JSImport("js-data", "utils.toJson")
-    @js.native
-    def toJson(value: js.Any, replacer: js.Function): String = js.native
-    @JSImport("js-data", "utils.toJson")
-    @js.native
-    def toJson(value: js.Any, replacer: js.Function, space: Double): String = js.native
+    @scala.inline
+    def toJson(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toJson(value: js.Any, replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toJson(value: js.Any, replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toJson(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("js-data", "utils.unset")
-    @js.native
-    def unset(`object`: js.Object, path: String): Unit = js.native
+    @scala.inline
+    def unset(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object version {
@@ -1315,14 +1128,13 @@ object mod {
     def patch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patch")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Diff extends StObject {
     
-    var added: js.Any = js.native
+    var added: js.Any
     
-    var changed: js.Any = js.native
+    var changed: js.Any
     
-    var removed: js.Any = js.native
+    var removed: js.Any
   }
   object Diff {
     
@@ -1346,14 +1158,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SchemaValidationError extends StObject {
     
-    var actual: String = js.native
+    var actual: String
     
-    var expected: js.Any = js.native
+    var expected: js.Any
     
-    var path: String = js.native
+    var path: String
   }
   object SchemaValidationError {
     

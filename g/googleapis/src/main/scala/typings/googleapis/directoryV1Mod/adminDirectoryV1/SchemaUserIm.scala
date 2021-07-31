@@ -2,42 +2,40 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for instant messenger of an user.
   */
-@js.native
 trait SchemaUserIm extends StObject {
   
   /**
     * Custom protocol.
     */
-  var customProtocol: js.UndefOr[String] = js.native
+  var customProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * Custom type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * Instant messenger id.
     */
-  var im: js.UndefOr[String] = js.native
+  var im: js.UndefOr[String] = js.undefined
   
   /**
     * If this is user&#39;s primary im. Only one entry could be marked as
     * primary.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Protocol used in the instant messenger. It should be one of the values
     * from ImProtocolTypes map. Similar to type, it can take a CUSTOM value and
     * specify the custom name in customProtocol field.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard types of that entry.
@@ -46,7 +44,7 @@ trait SchemaUserIm extends StObject {
     * value. Such types should have the CUSTOM value as type and also have a
     * customType value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserIm {
   

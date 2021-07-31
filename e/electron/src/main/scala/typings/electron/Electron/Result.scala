@@ -2,30 +2,28 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
   /**
     * Position of the active match.
     */
-  var activeMatchOrdinal: Double = js.native
+  var activeMatchOrdinal: Double
   
-  var finalUpdate: Boolean = js.native
+  var finalUpdate: Boolean
   
   /**
     * Number of Matches.
     */
-  var matches: Double = js.native
+  var matches: Double
   
-  var requestId: Double = js.native
+  var requestId: Double
   
   /**
     * Coordinates of first match region.
     */
-  var selectionArea: Rectangle = js.native
+  var selectionArea: Rectangle
 }
 object Result {
   

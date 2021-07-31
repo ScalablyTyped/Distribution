@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalInventory extends StObject {
   
   /** Availability of the product. For accepted attribute values, see the local product inventory feed specification. */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /** In-store product location. */
-  var instoreProductLocation: js.UndefOr[String] = js.native
+  var instoreProductLocation: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#localInventory`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Supported pickup method for this offer. Unless the value is "not supported", this field must be submitted together with `pickupSla`. For accepted attribute values, see the local
     * product inventory feed // specification.
     */
-  var pickupMethod: js.UndefOr[String] = js.native
+  var pickupMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Expected date that an order will be ready for pickup relative to the order date. Must be submitted together with `pickupMethod`. For accepted attribute values, see the local product
     * inventory feed specification.
     */
-  var pickupSla: js.UndefOr[String] = js.native
+  var pickupSla: js.UndefOr[String] = js.undefined
   
   /** Price of the product. */
-  var price: js.UndefOr[Price] = js.native
+  var price: js.UndefOr[Price] = js.undefined
   
   /** Quantity of the product. Must be nonnegative. */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /** Sale price of the product. Mandatory if `sale_price_effective_date` is defined. */
-  var salePrice: js.UndefOr[Price] = js.native
+  var salePrice: js.UndefOr[Price] = js.undefined
   
   /** A date range represented by a pair of ISO 8601 dates separated by a space, comma, or slash. Both dates may be specified as 'null' if undecided. */
-  var salePriceEffectiveDate: js.UndefOr[String] = js.native
+  var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
   
   /** Required. Store code of this local inventory resource. */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
 }
 object LocalInventory {
   

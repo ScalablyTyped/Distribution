@@ -3,17 +3,17 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PermissionEntry extends ResponseEntry {
+trait PermissionEntry
+  extends StObject
+     with ResponseEntry {
   
-  var permdesc: String = js.native
+  var permdesc: String
   
-  var permid: Double = js.native
+  var permid: Double
   
-  var permname: String = js.native
+  var permname: String
 }
 object PermissionEntry {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PretargetingConfigList extends StObject {
   
   /** A list of pretargeting configs */
-  var items: js.UndefOr[js.Array[PretargetingConfig]] = js.native
+  var items: js.UndefOr[js.Array[PretargetingConfig]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object PretargetingConfigList {
   

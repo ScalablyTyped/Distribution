@@ -2,20 +2,18 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEggPluginItem extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[String] = js.native
+  var _package: js.UndefOr[String] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var env: js.UndefOr[js.Array[EggEnvType]] = js.native
+  var env: js.UndefOr[js.Array[EggEnvType]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object IEggPluginItem {
   

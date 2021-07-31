@@ -7,26 +7,27 @@ import org.scalablytyped.runtime.Shortcut
 import typings.long.anon.High
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("long", JSImport.Namespace)
   @js.native
-  val ^ : LongConstructor = js.native
+  val ^ : js.Object & LongConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("long", JSImport.Namespace)
   @js.native
-  class Class protected () extends Long {
+  class Class protected ()
+    extends StObject
+       with Long {
     /**
       * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
       */
     def this(low: Double) = this()
     def this(low: Double, high: Double) = this()
-    def this(low: Double, high: js.UndefOr[scala.Nothing], unsigned: Boolean) = this()
     def this(low: Double, high: Double, unsigned: Boolean) = this()
+    def this(low: Double, high: Unit, unsigned: Boolean) = this()
   }
   
   @js.native
@@ -371,12 +372,18 @@ object mod extends Shortcut {
   
   @js.native
   trait LongConstructor
-    extends /**
+    extends StObject
+       with /**
     * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
     */
   Instantiable1[/* low */ Double, Long]
        with Instantiable2[/* low */ Double, /* high */ Double, Long]
-       with Instantiable3[/* low */ Double, js.UndefOr[/* high */ Double], /* unsigned */ Boolean, Long] {
+       with Instantiable3[
+          /* low */ Double, 
+          (/* high */ Double) | (/* high */ Unit), 
+          /* unsigned */ Boolean, 
+          Long
+        ] {
     
     /**
       * Maximum unsigned value.
@@ -428,9 +435,9 @@ object mod extends Shortcut {
       * Creates a Long from its byte representation.
       */
     def fromBytes(bytes: js.Array[Double]): Long = js.native
-    def fromBytes(bytes: js.Array[Double], unsigned: js.UndefOr[scala.Nothing], le: Boolean): Long = js.native
     def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
     def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = js.native
+    def fromBytes(bytes: js.Array[Double], unsigned: Unit, le: Boolean): Long = js.native
     
     /**
       * Creates a Long from its little endian byte representation.
@@ -460,11 +467,11 @@ object mod extends Shortcut {
       * Returns a Long representation of the given string, written using the specified radix.
       */
     def fromString(str: String): Long = js.native
-    def fromString(str: String, unsigned: js.UndefOr[scala.Nothing], radix: Double): Long = js.native
     def fromString(str: String, unsigned: Boolean): Long = js.native
     def fromString(str: String, unsigned: Boolean, radix: Double): Long = js.native
     def fromString(str: String, unsigned: Double): Long = js.native
     def fromString(str: String, unsigned: Double, radix: Double): Long = js.native
+    def fromString(str: String, unsigned: Unit, radix: Double): Long = js.native
     
     def fromValue(`val`: String): Long = js.native
     def fromValue(`val`: Double): Long = js.native
@@ -480,8 +487,8 @@ object mod extends Shortcut {
     def isLong(obj: js.Any): /* is long.long.Long */ Boolean = js.native
   }
   
-  type _To = LongConstructor
+  type _To = js.Object & LongConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: LongConstructor = ^
+  override def _to: js.Object & LongConstructor = ^
 }

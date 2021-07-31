@@ -2,38 +2,36 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RDSMetadata extends StObject {
   
   /**
     * The ID of the Data Pipeline instance that is used to carry to copy data from Amazon RDS to Amazon S3. You can use the ID to find details about the instance in the Data Pipeline console.
     */
-  var DataPipelineId: js.UndefOr[EDPPipelineId] = js.native
+  var DataPipelineId: js.UndefOr[EDPPipelineId] = js.undefined
   
   /**
     * The database details required to connect to an Amazon RDS.
     */
-  var Database: js.UndefOr[RDSDatabase] = js.native
+  var Database: js.UndefOr[RDSDatabase] = js.undefined
   
-  var DatabaseUserName: js.UndefOr[RDSDatabaseUsername] = js.native
+  var DatabaseUserName: js.UndefOr[RDSDatabaseUsername] = js.undefined
   
   /**
     * The role (DataPipelineDefaultResourceRole) assumed by an Amazon EC2 instance to carry out the copy task from Amazon RDS to Amazon S3. For more information, see Role templates for data pipelines.
     */
-  var ResourceRole: js.UndefOr[EDPResourceRole] = js.native
+  var ResourceRole: js.UndefOr[EDPResourceRole] = js.undefined
   
   /**
     * The SQL query that is supplied during CreateDataSourceFromRDS. Returns only if Verbose is true in GetDataSourceInput. 
     */
-  var SelectSqlQuery: js.UndefOr[RDSSelectSqlQuery] = js.native
+  var SelectSqlQuery: js.UndefOr[RDSSelectSqlQuery] = js.undefined
   
   /**
     * The role (DataPipelineDefaultRole) assumed by the Data Pipeline service to monitor the progress of the copy task from Amazon RDS to Amazon S3. For more information, see Role templates for data pipelines.
     */
-  var ServiceRole: js.UndefOr[EDPServiceRole] = js.native
+  var ServiceRole: js.UndefOr[EDPServiceRole] = js.undefined
 }
 object RDSMetadata {
   

@@ -4,28 +4,27 @@ import typings.firebaseMessaging.internalDependenciesMod.FirebaseInternalDepende
 import typings.firebaseMessaging.tokenDetailsMod.TokenDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idbManagerMod {
+  
+  @JSImport("@firebase/messaging/dist/helpers/idb-manager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/messaging/dist/helpers/idb-manager", "DATABASE_NAME")
   @js.native
   val DATABASE_NAME: /* "firebase-messaging-database" */ String = js.native
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", "dbDelete")
-  @js.native
-  def dbDelete(): js.Promise[Unit] = js.native
+  @scala.inline
+  def dbDelete(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDelete")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", "dbGet")
-  @js.native
-  def dbGet(firebaseDependencies: FirebaseInternalDependencies): js.Promise[js.UndefOr[TokenDetails]] = js.native
+  @scala.inline
+  def dbGet(firebaseDependencies: FirebaseInternalDependencies): js.Promise[js.UndefOr[TokenDetails]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbGet")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TokenDetails]]]
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", "dbRemove")
-  @js.native
-  def dbRemove(firebaseDependencies: FirebaseInternalDependencies): js.Promise[Unit] = js.native
+  @scala.inline
+  def dbRemove(firebaseDependencies: FirebaseInternalDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dbRemove")(firebaseDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", "dbSet")
-  @js.native
-  def dbSet(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[TokenDetails] = js.native
+  @scala.inline
+  def dbSet(firebaseDependencies: FirebaseInternalDependencies, tokenDetails: TokenDetails): js.Promise[TokenDetails] = (^.asInstanceOf[js.Dynamic].applyDynamic("dbSet")(firebaseDependencies.asInstanceOf[js.Any], tokenDetails.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TokenDetails]]
 }

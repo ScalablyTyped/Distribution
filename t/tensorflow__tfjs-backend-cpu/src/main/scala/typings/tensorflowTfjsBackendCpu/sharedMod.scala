@@ -9,10 +9,13 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "addImpl")
   @js.native
@@ -38,9 +41,8 @@ object sharedMod {
   @js.native
   val logImpl: SimpleUnaryImpl = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "maxImpl")
-  @js.native
-  def maxImpl(aVals: TypedArray, reduceSize: Double, outShape: js.Array[Double], dtype: DataType): TypedArray = js.native
+  @scala.inline
+  def maxImpl(aVals: TypedArray, reduceSize: Double, outShape: js.Array[Double], dtype: DataType): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("maxImpl")(aVals.asInstanceOf[js.Any], reduceSize.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "multiplyImpl")
   @js.native
@@ -54,19 +56,17 @@ object sharedMod {
   @js.native
   val rsqrtImpl: SimpleUnaryImpl = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "simpleAbsImpl")
-  @js.native
-  def simpleAbsImpl(vals: TypedArray): Float32Array = js.native
+  @scala.inline
+  def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "sliceImpl")
-  @js.native
+  @scala.inline
   def sliceImpl(
     vals: TypedArray,
     begin: js.Array[Double],
     size: js.Array[Double],
     shape: js.Array[Double],
     dtype: DataType
-  ): TypedArray = js.native
+  ): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceImpl")(vals.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "squaredDifferenceImpl")
   @js.native
@@ -76,17 +76,15 @@ object sharedMod {
   @js.native
   val subImpl: SimpleBinaryKernelImpl = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "transposeImpl")
-  @js.native
+  @scala.inline
   def transposeImpl(
     xVals: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,
     perm: js.Array[Double],
     newShape: js.Array[Double]
-  ): TypedArray = js.native
+  ): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("transposeImpl")(xVals.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], newShape.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "uniqueImpl")
-  @js.native
-  def uniqueImpl(values: BackendValues, axis: Double, shape: js.Array[Double], dtype: DataType): Indices = js.native
+  @scala.inline
+  def uniqueImpl(values: BackendValues, axis: Double, shape: js.Array[Double], dtype: DataType): Indices = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueImpl")(values.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Indices]
 }

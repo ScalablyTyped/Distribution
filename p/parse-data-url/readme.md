@@ -10,9 +10,9 @@ Parse data URL string
 | ------------------ | :-------------: |
 | Full name          | parse-data-url |
 | Keywords           | parse, data-uri, data-url, data, uri, url, datauri, dataurl |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 31713 |
+| # downloads        | 72683 |
 | # stars            | 0 |
 
 ## Links

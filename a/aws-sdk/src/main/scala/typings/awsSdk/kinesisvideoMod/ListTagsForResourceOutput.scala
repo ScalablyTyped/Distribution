@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceOutput extends StObject {
   
   /**
     * If you specify this parameter and the result of a ListTagsForResource call is truncated, the response includes a token that you can use in the next request to fetch the next set of tags. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoMod.NextToken] = js.undefined
   
   /**
     * A map of tag keys and values associated with the specified signaling channel.
     */
-  var Tags: js.UndefOr[ResourceTags] = js.native
+  var Tags: js.UndefOr[ResourceTags] = js.undefined
 }
 object ListTagsForResourceOutput {
   

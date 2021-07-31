@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateOrganizationConfigurationRequest extends StObject {
   
   /**
     * Indicates whether to automatically enable member accounts in the organization.
     */
-  var AutoEnable: Boolean = js.native
+  var AutoEnable: Boolean
   
   /**
     * An object describes which data sources will be updated.
     */
-  var DataSources: js.UndefOr[OrganizationDataSourceConfigurations] = js.native
+  var DataSources: js.UndefOr[OrganizationDataSourceConfigurations] = js.undefined
   
   /**
     * The ID of the detector to update the delegated administrator for.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object UpdateOrganizationConfigurationRequest {
   

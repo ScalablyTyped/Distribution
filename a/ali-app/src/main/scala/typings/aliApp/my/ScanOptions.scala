@@ -2,27 +2,26 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 是否隐藏相册（不允许从相册选择图片），只能从相机扫码
     */
-  var hideAlbum: js.UndefOr[Boolean] = js.native
+  var hideAlbum: js.UndefOr[Boolean] = js.undefined
   
   @JSName("success")
-  var success_ScanOptions: js.UndefOr[js.Function1[/* res */ ScanCodeData, Unit]] = js.native
+  var success_ScanOptions: js.UndefOr[js.Function1[/* res */ ScanCodeData, Unit]] = js.undefined
   
   /**
     * 扫码样式(默认 qr)：
     * 1. qr,扫码框样式为二维码扫码框
     * 1. bar，扫码样式为条形码扫码框
     */
-  var `type`: js.UndefOr[scanType] = js.native
+  var `type`: js.UndefOr[scanType] = js.undefined
 }
 object ScanOptions {
   

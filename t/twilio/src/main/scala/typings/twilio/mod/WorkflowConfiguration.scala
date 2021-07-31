@@ -2,7 +2,6 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "WorkflowConfiguration")
@@ -20,7 +19,10 @@ class WorkflowConfiguration () extends StObject {
 /* static members */
 object WorkflowConfiguration {
   
-  @JSImport("twilio", "WorkflowConfiguration.fromJSON")
+  @JSImport("twilio", "WorkflowConfiguration")
   @js.native
-  def fromJSON(json: String): WorkflowConfiguration = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromJSON(json: String): WorkflowConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WorkflowConfiguration]
 }

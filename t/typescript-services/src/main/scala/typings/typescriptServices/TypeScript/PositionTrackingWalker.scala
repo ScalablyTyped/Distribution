@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PositionTrackingWalker extends SyntaxWalker {
+trait PositionTrackingWalker
+  extends StObject
+     with SyntaxWalker {
   
-  var _position: js.Any = js.native
+  var _position: js.Any
   
-  def position(): Double = js.native
+  def position(): Double
   
-  def skip(element: ISyntaxElement): Unit = js.native
+  def skip(element: ISyntaxElement): Unit
 }
 object PositionTrackingWalker {
   

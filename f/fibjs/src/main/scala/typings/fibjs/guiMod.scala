@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 使用方法：,```JavaScript,var gui = require('gui');,```
   */
 object guiMod {
+  
+  @JSImport("gui", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gui", "EDGE")
   @js.native
@@ -36,14 +39,11 @@ object guiMod {
   @js.native
   val IE9: /* 9000 */ Double = js.native
   
-  @JSImport("gui", "open")
-  @js.native
-  def open(url: String): ClassWebView = js.native
-  @JSImport("gui", "open")
-  @js.native
-  def open(url: String, opt: js.Object): ClassWebView = js.native
+  @scala.inline
+  def open(url: String): ClassWebView = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[ClassWebView]
+  @scala.inline
+  def open(url: String, opt: js.Object): ClassWebView = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ClassWebView]
   
-  @JSImport("gui", "setVersion")
-  @js.native
-  def setVersion(ver: Double): Unit = js.native
+  @scala.inline
+  def setVersion(ver: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersion")(ver.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

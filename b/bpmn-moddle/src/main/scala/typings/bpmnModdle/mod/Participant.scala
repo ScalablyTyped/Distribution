@@ -3,50 +3,50 @@ package typings.bpmnModdle.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
-- typings.bpmnModdle.mod.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ @js.native
-trait Participant extends InteractionNode {
+- typings.bpmnModdle.mod.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait Participant
+  extends StObject
+     with InteractionNode {
   
   /**
     * Attributes that aren't defined by the BPMN Spec such
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Documentation for the element
     */
-  var documentation: js.UndefOr[js.Array[Documentation]] = js.native
+  var documentation: js.UndefOr[js.Array[Documentation]] = js.undefined
   
-  var endPointRefs: js.Array[EndPoint] = js.native
+  var endPointRefs: js.Array[EndPoint]
   
   /**
     * Reference to the extension definitions for this element
     */
-  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.native
+  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.undefined
   
   /**
     * Extension Elements
     */
-  var extensionElements: js.UndefOr[ExtensionElements] = js.native
+  var extensionElements: js.UndefOr[ExtensionElements] = js.undefined
   
   /**
     * Is the primary Id of the element
     */
-  var id: String = js.native
+  var id: String
   
-  var interfaceRef: js.Array[Interface] = js.native
+  var interfaceRef: js.Array[Interface]
   
-  var name: String = js.native
+  var name: String
   
-  var participantMultiplicity: ParticipantMultiplicity = js.native
+  var participantMultiplicity: ParticipantMultiplicity
   
-  var processRef: Process = js.native
+  var processRef: Process
 }
 object Participant {
   

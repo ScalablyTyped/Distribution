@@ -4,7 +4,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "ObserverLocator")
@@ -19,12 +18,12 @@ class ObserverLocator () extends StObject {
   /**
     * Gets an observer for array mutation.
     */
-  def getArrayObserver(array: js.Array[_]): InternalCollectionObserver = js.native
+  def getArrayObserver(array: js.Array[js.Any]): InternalCollectionObserver = js.native
   
   /**
     * Gets an observer for map mutation.
     */
-  def getMapObserver(map: Map[_, _]): InternalCollectionObserver = js.native
+  def getMapObserver(map: Map[js.Any, js.Any]): InternalCollectionObserver = js.native
   
   /**
     * Gets an observer for property changes.
@@ -34,5 +33,5 @@ class ObserverLocator () extends StObject {
   /**
     * Gets an observer for set mutation.
     */
-  def getSetObserver(set: Set[_]): InternalCollectionObserver = js.native
+  def getSetObserver(set: Set[js.Any]): InternalCollectionObserver = js.native
 }

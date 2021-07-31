@@ -6,7 +6,6 @@ import typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object milkcocoa {
@@ -15,17 +14,17 @@ object milkcocoa {
   trait MilkCocoa extends StObject {
     
     def addAccount(email: String, password: String): Unit = js.native
-    def addAccount(
-      email: String,
-      password: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ AddAccount, /* user */ User, Unit]
-    ): Unit = js.native
     def addAccount(email: String, password: String, options: js.Object): Unit = js.native
     def addAccount(
       email: String,
       password: String,
       options: js.Object,
+      callback: js.Function2[/* err */ AddAccount, /* user */ User, Unit]
+    ): Unit = js.native
+    def addAccount(
+      email: String,
+      password: String,
+      options: Unit,
       callback: js.Function2[/* err */ AddAccount, /* user */ User, Unit]
     ): Unit = js.native
     
@@ -49,11 +48,15 @@ object milkcocoa {
       object AddAccount extends StObject {
         
         @js.native
-        sealed trait AlreadyExist extends AddAccount
+        sealed trait AlreadyExist
+          extends StObject
+             with AddAccount
         
         // FormatError = 1, AlreadyExist = 2
         @js.native
-        sealed trait FormatError extends AddAccount
+        sealed trait FormatError
+          extends StObject
+             with AddAccount
       }
       
       @js.native
@@ -64,7 +67,9 @@ object milkcocoa {
         
         // NotLoggedIn = 1
         @js.native
-        sealed trait NotLoggedIn extends GetCurrentUser
+        sealed trait NotLoggedIn
+          extends StObject
+             with GetCurrentUser
       }
       
       @js.native
@@ -74,14 +79,20 @@ object milkcocoa {
       object Login extends StObject {
         
         @js.native
-        sealed trait EmailNotVerificated extends Login
+        sealed trait EmailNotVerificated
+          extends StObject
+             with Login
         
         // FormatError = 1, LoginError = 2, EmailNotVerificated = 3
         @js.native
-        sealed trait FormatError extends Login
+        sealed trait FormatError
+          extends StObject
+             with Login
         
         @js.native
-        sealed trait LoginError extends Login
+        sealed trait LoginError
+          extends StObject
+             with Login
       }
     }
   }
@@ -115,16 +126,15 @@ object milkcocoa {
     def set(id: String, data: js.Object): Unit = js.native
   }
   
-  @js.native
   trait DataStoreCallbackData extends StObject {
     
-    var err: String = js.native
+    var err: String
     
-    var id: String = js.native
+    var id: String
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object DataStoreCallbackData {
     
@@ -151,17 +161,16 @@ object milkcocoa {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    def done(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def done(callback: js.Function1[/* data */ js.Any, Unit]): Unit
     
-    def limit(number: Double): Query = js.native
+    def limit(number: Double): Query
     
-    def skip(index: Double): Query = js.native
+    def skip(index: Double): Query
     
     // mode  asc, desc
-    def sort(mode: String): Query = js.native
+    def sort(mode: String): Query
   }
   object Query {
     
@@ -193,12 +202,11 @@ object milkcocoa {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
   }
   object User {
     

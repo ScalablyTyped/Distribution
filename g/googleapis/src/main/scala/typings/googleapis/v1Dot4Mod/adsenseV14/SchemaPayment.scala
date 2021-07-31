@@ -2,37 +2,35 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPayment extends StObject {
   
   /**
     * Unique identifier of this Payment.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is, in this case adsense#payment.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The amount to be paid.
     */
-  var paymentAmount: js.UndefOr[String] = js.native
+  var paymentAmount: js.UndefOr[String] = js.undefined
   
   /**
     * The currency code for the amount to be paid.
     */
-  var paymentAmountCurrencyCode: js.UndefOr[String] = js.native
+  var paymentAmountCurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The date this payment was/will be credited to the user, or none if the
     * payment threshold has not been met.
     */
-  var paymentDate: js.UndefOr[String] = js.native
+  var paymentDate: js.UndefOr[String] = js.undefined
 }
 object SchemaPayment {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTransitGatewayOptions extends StObject {
   
   /**
     * The ID of the default association route table.
     */
-  var AssociationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.native
+  var AssociationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.undefined
   
   /**
     * Enable or disable automatic acceptance of attachment requests.
     */
-  var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.native
+  var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.undefined
   
   /**
     * Enable or disable automatic association with the default association route table.
     */
-  var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.native
+  var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.undefined
   
   /**
     * Enable or disable automatic propagation of routes to the default propagation route table.
     */
-  var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.native
+  var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.undefined
   
   /**
     * Enable or disable DNS support.
     */
-  var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
+  var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
   
   /**
     * The ID of the default propagation route table.
     */
-  var PropagationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.native
+  var PropagationDefaultRouteTableId: js.UndefOr[TransitGatewayRouteTableId] = js.undefined
   
   /**
     * Enable or disable Equal Cost Multipath Protocol support.
     */
-  var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.native
+  var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
 }
 object ModifyTransitGatewayOptions {
   

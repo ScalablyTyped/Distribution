@@ -2,66 +2,64 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDeviceSummary extends StObject {
   
   /**
     * The unique ARN of the input device.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The state of the connection between the input device and AWS.
     */
-  var ConnectionState: js.UndefOr[InputDeviceConnectionState] = js.native
+  var ConnectionState: js.UndefOr[InputDeviceConnectionState] = js.undefined
   
   /**
     * The status of the action to synchronize the device configuration. If you change the configuration of the input device (for example, the maximum bitrate), MediaLive sends the new data to the device. The device might not update itself immediately. SYNCED means the device has updated its configuration. SYNCING means that it has not updated its configuration.
     */
-  var DeviceSettingsSyncState: js.UndefOr[typings.awsSdk.medialiveMod.DeviceSettingsSyncState] = js.native
+  var DeviceSettingsSyncState: js.UndefOr[typings.awsSdk.medialiveMod.DeviceSettingsSyncState] = js.undefined
   
   /**
     * The status of software on the input device.
     */
-  var DeviceUpdateStatus: js.UndefOr[typings.awsSdk.medialiveMod.DeviceUpdateStatus] = js.native
+  var DeviceUpdateStatus: js.UndefOr[typings.awsSdk.medialiveMod.DeviceUpdateStatus] = js.undefined
   
   /**
     * Settings that describe an input device that is type HD.
     */
-  var HdDeviceSettings: js.UndefOr[InputDeviceHdSettings] = js.native
+  var HdDeviceSettings: js.UndefOr[InputDeviceHdSettings] = js.undefined
   
   /**
     * The unique ID of the input device.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The network MAC address of the input device.
     */
-  var MacAddress: js.UndefOr[string] = js.native
+  var MacAddress: js.UndefOr[string] = js.undefined
   
   /**
     * A name that you specify for the input device.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Network settings for the input device.
     */
-  var NetworkSettings: js.UndefOr[InputDeviceNetworkSettings] = js.native
+  var NetworkSettings: js.UndefOr[InputDeviceNetworkSettings] = js.undefined
   
   /**
     * The unique serial number of the input device.
     */
-  var SerialNumber: js.UndefOr[string] = js.native
+  var SerialNumber: js.UndefOr[string] = js.undefined
   
   /**
     * The type of the input device.
     */
-  var Type: js.UndefOr[InputDeviceType] = js.native
+  var Type: js.UndefOr[InputDeviceType] = js.undefined
 }
 object InputDeviceSummary {
   

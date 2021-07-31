@@ -2,13 +2,11 @@ package typings.betterScroll.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullUpOption extends StObject {
   
-  var threshold: Double = js.native
+  var threshold: Double
 }
 object PullUpOption {
   

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in context of loaded documents that use them, but otherwise should not be offered to the user to be selectable.
   * @see XLocaleData for links to DTD of XML locale data files.
   */
-@js.native
-trait Currency2 extends Currency {
+trait Currency2
+  extends StObject
+     with Currency {
   
   /**
     * If set, the currency and/or its symbol is only to be used in legacy context.
     * @since OOo 2.0.3
     */
-  var LegacyOnly: Boolean = js.native
+  var LegacyOnly: Boolean
 }
 object Currency2 {
   

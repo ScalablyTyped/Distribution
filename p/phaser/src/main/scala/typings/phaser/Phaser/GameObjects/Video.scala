@@ -21,7 +21,6 @@ import typings.phaser.integer
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -76,7 +75,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Video
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth
@@ -124,68 +124,21 @@ trait Video
     * @param markerOut Optional out marker time, in seconds, for playback of a sequence of the video.
     */
   def changeSource(key: String): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: js.UndefOr[scala.Nothing],
-    loop: js.UndefOr[scala.Nothing],
-    markerIn: js.UndefOr[scala.Nothing],
-    markerOut: integer
-  ): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: js.UndefOr[scala.Nothing],
-    loop: js.UndefOr[scala.Nothing],
-    markerIn: integer
-  ): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: js.UndefOr[scala.Nothing],
-    loop: js.UndefOr[scala.Nothing],
-    markerIn: integer,
-    markerOut: integer
-  ): this.type = js.native
-  def changeSource(key: String, autoplay: js.UndefOr[scala.Nothing], loop: Boolean): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: js.UndefOr[scala.Nothing],
-    loop: Boolean,
-    markerIn: js.UndefOr[scala.Nothing],
-    markerOut: integer
-  ): this.type = js.native
-  def changeSource(key: String, autoplay: js.UndefOr[scala.Nothing], loop: Boolean, markerIn: integer): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: js.UndefOr[scala.Nothing],
-    loop: Boolean,
-    markerIn: integer,
-    markerOut: integer
-  ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: Boolean,
-    loop: js.UndefOr[scala.Nothing],
-    markerIn: js.UndefOr[scala.Nothing],
-    markerOut: integer
-  ): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: js.UndefOr[scala.Nothing], markerIn: integer): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: Boolean,
-    loop: js.UndefOr[scala.Nothing],
-    markerIn: integer,
-    markerOut: integer
-  ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean): this.type = js.native
-  def changeSource(
-    key: String,
-    autoplay: Boolean,
-    loop: Boolean,
-    markerIn: js.UndefOr[scala.Nothing],
-    markerOut: integer
-  ): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
   
   /**
     * Called when the video completes playback, i.e. reaches an `ended` state.
@@ -269,9 +222,9 @@ trait Video
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
     */
   def loadURL(url: String): this.type = js.native
-  def loadURL(url: String, loadEvent: js.UndefOr[scala.Nothing], noAudio: Boolean): this.type = js.native
   def loadURL(url: String, loadEvent: String): this.type = js.native
   def loadURL(url: String, loadEvent: String, noAudio: Boolean): this.type = js.native
+  def loadURL(url: String, loadEvent: Unit, noAudio: Boolean): this.type = js.native
   
   /**
     * An object containing in and out markers for sequence playback.
@@ -307,13 +260,13 @@ trait Video
     * @param markerOut Optional out marker time, in seconds, for playback of a sequence of the video.
     */
   def play(): this.type = js.native
-  def play(loop: js.UndefOr[scala.Nothing], markerIn: js.UndefOr[scala.Nothing], markerOut: integer): this.type = js.native
-  def play(loop: js.UndefOr[scala.Nothing], markerIn: integer): this.type = js.native
-  def play(loop: js.UndefOr[scala.Nothing], markerIn: integer, markerOut: integer): this.type = js.native
   def play(loop: Boolean): this.type = js.native
-  def play(loop: Boolean, markerIn: js.UndefOr[scala.Nothing], markerOut: integer): this.type = js.native
+  def play(loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
+  def play(loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
+  def play(loop: Unit, markerIn: integer): this.type = js.native
+  def play(loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
   
   /**
     * Called when the video emits a `playing` event during load.
@@ -540,7 +493,7 @@ trait Video
     * @param height The height of the resulting CanvasTexture.
     */
   def snapshot(): CanvasTexture = js.native
-  def snapshot(width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
+  def snapshot(width: Unit, height: integer): CanvasTexture = js.native
   def snapshot(width: integer): CanvasTexture = js.native
   def snapshot(width: integer, height: integer): CanvasTexture = js.native
   

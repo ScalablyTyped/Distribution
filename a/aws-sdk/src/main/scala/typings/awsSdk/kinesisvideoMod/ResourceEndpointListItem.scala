@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceEndpointListItem extends StObject {
   
   /**
     * The protocol of the signaling channel returned by the GetSignalingChannelEndpoint API.
     */
-  var Protocol: js.UndefOr[ChannelProtocol] = js.native
+  var Protocol: js.UndefOr[ChannelProtocol] = js.undefined
   
   /**
     * The endpoint of the signaling channel returned by the GetSignalingChannelEndpoint API.
     */
-  var ResourceEndpoint: js.UndefOr[typings.awsSdk.kinesisvideoMod.ResourceEndpoint] = js.native
+  var ResourceEndpoint: js.UndefOr[typings.awsSdk.kinesisvideoMod.ResourceEndpoint] = js.undefined
 }
 object ResourceEndpointListItem {
   

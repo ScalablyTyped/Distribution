@@ -2,43 +2,111 @@ package typings.bintrees
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bintrees", "BinTree")
   @js.native
-  class BinTree[T] protected () extends TreeBase[T] {
+  class BinTree[T] protected ()
+    extends StObject
+       with TreeBase[T] {
     def this(comparator: Comparator[T]) = this()
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def each(cb: Callback[T]): Unit = js.native
+    
+    /* CompleteClass */
+    override def find(data: T): T = js.native
+    
+    /* CompleteClass */
+    override def findIter(data: T): Iterator[T] = js.native
     
     def insert(item: T): Boolean = js.native
     
+    /* CompleteClass */
+    override def iterator(): Iterator[T] = js.native
+    
+    /* CompleteClass */
+    override def lowerBound(item: T): Iterator[T] = js.native
+    
+    /* CompleteClass */
+    override def max(): T = js.native
+    
+    /* CompleteClass */
+    override def min(): T = js.native
+    
+    /* CompleteClass */
+    override def reach(cb: Callback[T]): Unit = js.native
+    
     def remove(item: T): Boolean = js.native
+    
+    /* CompleteClass */
+    var size: Double = js.native
+    
+    /* CompleteClass */
+    override def upperBound(item: T): Iterator[T] = js.native
   }
   
   @JSImport("bintrees", "RBTree")
   @js.native
-  class RBTree[T] protected () extends TreeBase[T] {
+  class RBTree[T] protected ()
+    extends StObject
+       with TreeBase[T] {
     def this(comparator: Comparator[T]) = this()
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def each(cb: Callback[T]): Unit = js.native
+    
+    /* CompleteClass */
+    override def find(data: T): T = js.native
+    
+    /* CompleteClass */
+    override def findIter(data: T): Iterator[T] = js.native
     
     def insert(item: T): Boolean = js.native
     
+    /* CompleteClass */
+    override def iterator(): Iterator[T] = js.native
+    
+    /* CompleteClass */
+    override def lowerBound(item: T): Iterator[T] = js.native
+    
+    /* CompleteClass */
+    override def max(): T = js.native
+    
+    /* CompleteClass */
+    override def min(): T = js.native
+    
+    /* CompleteClass */
+    override def reach(cb: Callback[T]): Unit = js.native
+    
     def remove(item: T): Boolean = js.native
+    
+    /* CompleteClass */
+    var size: Double = js.native
+    
+    /* CompleteClass */
+    override def upperBound(item: T): Iterator[T] = js.native
   }
   
   type Callback[T] = js.Function1[/* item */ T, Unit]
   
   type Comparator[T] = js.Function2[/* a */ T, /* b */ T, Double]
   
-  @js.native
   trait Iterator[T] extends StObject {
     
-    def data(): T = js.native
+    def data(): T
     
-    def next(): T = js.native
+    def next(): T
     
-    def prev(): T = js.native
+    def prev(): T
   }
   object Iterator {
     
@@ -49,7 +117,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IteratorMutableBuilder[Self <: Iterator[_], T] (val x: Self with Iterator[T]) extends AnyVal {
+    implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: () => T): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
@@ -62,30 +130,29 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeBase[T] extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def each(cb: Callback[T]): Unit = js.native
+    def each(cb: Callback[T]): Unit
     
-    def find(data: T): T = js.native
+    def find(data: T): T
     
-    def findIter(data: T): Iterator[T] = js.native
+    def findIter(data: T): Iterator[T]
     
-    def iterator(): Iterator[T] = js.native
+    def iterator(): Iterator[T]
     
-    def lowerBound(item: T): Iterator[T] = js.native
+    def lowerBound(item: T): Iterator[T]
     
-    def max(): T = js.native
+    def max(): T
     
-    def min(): T = js.native
+    def min(): T
     
-    def reach(cb: Callback[T]): Unit = js.native
+    def reach(cb: Callback[T]): Unit
     
-    var size: Double = js.native
+    var size: Double
     
-    def upperBound(item: T): Iterator[T] = js.native
+    def upperBound(item: T): Iterator[T]
   }
   object TreeBase {
     
@@ -108,7 +175,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TreeBaseMutableBuilder[Self <: TreeBase[_], T] (val x: Self with TreeBase[T]) extends AnyVal {
+    implicit class TreeBaseMutableBuilder[Self <: TreeBase[?], T] (val x: Self & TreeBase[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

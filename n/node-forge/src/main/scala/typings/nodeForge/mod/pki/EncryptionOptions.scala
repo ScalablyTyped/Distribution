@@ -11,21 +11,19 @@ import typings.nodeForge.nodeForgeStrings.sha384
 import typings.nodeForge.nodeForgeStrings.sha512
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionOptions extends StObject {
   
-  var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.native
+  var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var legacy: js.UndefOr[Boolean] = js.native
+  var legacy: js.UndefOr[Boolean] = js.undefined
   
-  var prfAlgorithm: js.UndefOr[sha1 | sha224 | sha256 | sha384 | sha512] = js.native
+  var prfAlgorithm: js.UndefOr[sha1 | sha224 | sha256 | sha384 | sha512] = js.undefined
   
-  var saltSize: js.UndefOr[Double] = js.native
+  var saltSize: js.UndefOr[Double] = js.undefined
 }
 object EncryptionOptions {
   

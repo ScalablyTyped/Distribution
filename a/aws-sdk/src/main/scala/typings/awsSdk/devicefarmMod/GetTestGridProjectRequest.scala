@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTestGridProjectRequest extends StObject {
   
   /**
     * The ARN of the Selenium testing project, from either CreateTestGridProject or ListTestGridProjects.
     */
-  var projectArn: DeviceFarmArn = js.native
+  var projectArn: DeviceFarmArn
 }
 object GetTestGridProjectRequest {
   

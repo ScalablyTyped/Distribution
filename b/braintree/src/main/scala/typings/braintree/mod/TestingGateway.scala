@@ -2,21 +2,19 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestingGateway extends StObject {
   
-  def settle(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def settle(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
   
-  def settlementConfirm(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def settlementConfirm(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
   
-  def settlementDecline(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def settlementDecline(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
   
-  def settlementOperationWithEnvironmentCheck(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def settlementOperationWithEnvironmentCheck(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
   
-  def settlementPending(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def settlementPending(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
 }
 object TestingGateway {
   

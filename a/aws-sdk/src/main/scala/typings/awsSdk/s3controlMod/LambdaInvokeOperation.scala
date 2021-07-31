@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaInvokeOperation extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the AWS Lambda function that the specified job will invoke for each object in the manifest.
     */
-  var FunctionArn: js.UndefOr[FunctionArnString] = js.native
+  var FunctionArn: js.UndefOr[FunctionArnString] = js.undefined
 }
 object LambdaInvokeOperation {
   

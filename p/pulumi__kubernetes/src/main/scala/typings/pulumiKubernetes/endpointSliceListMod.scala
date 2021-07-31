@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointSliceListMod {
@@ -27,7 +26,7 @@ object endpointSliceListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: EndpointSliceListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: EndpointSliceListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object endpointSliceListMod {
   /* static members */
   object EndpointSliceList {
     
+    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSliceList", "EndpointSliceList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointSliceList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,46 +64,42 @@ object endpointSliceListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSliceList", "EndpointSliceList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EndpointSliceList = js.native
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSliceList", "EndpointSliceList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSliceList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EndpointSliceList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointSliceList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSliceList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointSliceList]
     
     /**
       * Returns true if the given object is an instance of EndpointSliceList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/discovery/v1beta1/endpointSliceList", "EndpointSliceList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean]
   }
   
-  @js.native
   trait EndpointSliceListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[discoveryDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[discoveryDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * List of endpoint slices
       */
     val items: Input[
         js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointSlice]]
-      ] = js.native
+      ]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSliceList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSliceList]] = js.undefined
     
     /**
       * Standard list metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object EndpointSliceListArgs {
     

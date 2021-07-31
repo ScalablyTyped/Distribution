@@ -5,29 +5,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBarStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/search-bar/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/search-bar/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): SearchBarStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): SearchBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SearchBarStyle]
+  
   trait SearchBarStyle extends StObject {
     
-    var cancelText: TextStyle = js.native
+    var cancelText: TextStyle
     
-    var cancelTextContainer: ViewStyle = js.native
+    var cancelTextContainer: ViewStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var inputWrapper: ViewStyle = js.native
+    var inputWrapper: ViewStyle
     
-    var search: TextStyle = js.native
+    var search: TextStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object SearchBarStyle {
     

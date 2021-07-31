@@ -2,17 +2,15 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGlobalResult extends StObject {
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var maxBatchSize: Double = js.native
+  var maxBatchSize: Double
   
-  var sobjects: js.Array[DescribeGlobalSObjectResult] = js.native
+  var sobjects: js.Array[DescribeGlobalSObjectResult]
 }
 object DescribeGlobalResult {
   

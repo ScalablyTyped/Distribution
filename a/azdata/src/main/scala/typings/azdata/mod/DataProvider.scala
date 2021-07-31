@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProvider extends StObject {
   
-  var handle: js.UndefOr[Double] = js.native
+  var handle: js.UndefOr[Double] = js.undefined
   
-  val providerId: String = js.native
+  val providerId: String
 }
 object DataProvider {
   

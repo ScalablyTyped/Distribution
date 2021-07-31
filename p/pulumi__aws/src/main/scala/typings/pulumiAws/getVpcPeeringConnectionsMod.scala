@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ec2.GetVpcPeeringConnectionsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcPeeringConnectionsMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnections", "getVpcPeeringConnections")
+  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnections", JSImport.Namespace)
   @js.native
-  def getVpcPeeringConnections(): js.Promise[GetVpcPeeringConnectionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnections", "getVpcPeeringConnections")
-  @js.native
-  def getVpcPeeringConnections(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnections", "getVpcPeeringConnections")
-  @js.native
-  def getVpcPeeringConnections(args: GetVpcPeeringConnectionsArgs): js.Promise[GetVpcPeeringConnectionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcPeeringConnections", "getVpcPeeringConnections")
-  @js.native
-  def getVpcPeeringConnections(args: GetVpcPeeringConnectionsArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcPeeringConnections(): js.Promise[GetVpcPeeringConnectionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnections")().asInstanceOf[js.Promise[GetVpcPeeringConnectionsResult]]
+  @scala.inline
+  def getVpcPeeringConnections(args: Unit, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnections")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionsResult]]
+  @scala.inline
+  def getVpcPeeringConnections(args: GetVpcPeeringConnectionsArgs): js.Promise[GetVpcPeeringConnectionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnections")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcPeeringConnectionsResult]]
+  @scala.inline
+  def getVpcPeeringConnections(args: GetVpcPeeringConnectionsArgs, opts: InvokeOptions): js.Promise[GetVpcPeeringConnectionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcPeeringConnections")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcPeeringConnectionsResult]]
+  
   trait GetVpcPeeringConnectionsArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcPeeringConnectionsFilter]] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired VPC Peering Connection.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcPeeringConnectionsArgs {
     
@@ -65,22 +63,21 @@ object getVpcPeeringConnectionsMod {
     }
   }
   
-  @js.native
   trait GetVpcPeeringConnectionsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcPeeringConnectionsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The IDs of the VPC Peering Connections.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVpcPeeringConnectionsResult {
     

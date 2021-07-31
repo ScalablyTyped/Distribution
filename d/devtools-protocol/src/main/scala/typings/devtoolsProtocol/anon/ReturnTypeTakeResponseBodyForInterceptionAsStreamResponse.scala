@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.TakeResponseBodyForIntercep
 import typings.devtoolsProtocol.mod.Protocol.Network.TakeResponseBodyForInterceptionAsStreamResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse extends StObject {
   
-  var paramsType: js.Array[TakeResponseBodyForInterceptionAsStreamRequest] = js.native
+  var paramsType: js.Array[TakeResponseBodyForInterceptionAsStreamRequest]
   
-  var returnType: TakeResponseBodyForInterceptionAsStreamResponse = js.native
+  var returnType: TakeResponseBodyForInterceptionAsStreamResponse
 }
 object ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse {
   

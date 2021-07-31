@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRemediationConfigurationsResponse extends StObject {
   
   /**
     * Returns a list of failed remediation batch objects.
     */
-  var FailedBatches: js.UndefOr[FailedRemediationBatches] = js.native
+  var FailedBatches: js.UndefOr[FailedRemediationBatches] = js.undefined
 }
 object PutRemediationConfigurationsResponse {
   

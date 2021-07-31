@@ -2,15 +2,13 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureParams extends StObject {
   
-  var cellCount: Double = js.native
+  var cellCount: Double
   
-  var estimatedCellSize: Double = js.native
+  var estimatedCellSize: Double
 }
 object ConfigureParams {
   

@@ -3,20 +3,18 @@ package typings.atom.mod
 import typings.atom.atomStrings.skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditOptions extends StObject {
   
   /** If true, all line endings will be normalized to match the editor's current mode. */
-  var normalizeLineEndings: js.UndefOr[Boolean] = js.native
+  var normalizeLineEndings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If skip, skips the undo stack for this operation.
     * @deprecated Call groupLastChanges() on the TextBuffer afterward instead.
     */
-  var undo: js.UndefOr[skip] = js.native
+  var undo: js.UndefOr[skip] = js.undefined
 }
 object TextEditOptions {
   

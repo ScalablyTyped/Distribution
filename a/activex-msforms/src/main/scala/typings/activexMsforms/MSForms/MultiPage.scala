@@ -2,62 +2,174 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiPage extends StObject {
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Font: NewFont = js.native
+  var Font: NewFont
   
-  var FontBold: Boolean = js.native
+  var FontBold: Boolean
   
-  var FontItalic: Boolean = js.native
+  var FontItalic: Boolean
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var FontSize: Double = js.native
+  var FontSize: Double
   
-  var FontStrikethru: Boolean = js.native
+  var FontStrikethru: Boolean
   
-  var FontUnderline: Boolean = js.native
+  var FontUnderline: Boolean
   
-  var FontWeight: Double = js.native
+  var FontWeight: Double
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
   @JSName("MSForms.MultiPage_typekey")
-  var MSFormsDotMultiPage_typekey: MultiPage = js.native
+  var MSFormsDotMultiPage_typekey: MultiPage
   
-  var MultiRow: Boolean = js.native
+  var MultiRow: Boolean
   
-  def Pages(varg: js.Any): js.Any = js.native
+  def Pages(varg: js.Any): js.Any
   @JSName("Pages")
-  val Pages_Original: Pages = js.native
+  val Pages_Original: Pages
   
-  val SelectedItem: Page = js.native
+  val SelectedItem: Page
   
-  var Style: fmTabStyle = js.native
+  var Style: fmTabStyle
   
-  var TabFixedHeight: Double = js.native
+  var TabFixedHeight: Double
   
-  var TabFixedWidth: Double = js.native
+  var TabFixedWidth: Double
   
-  var TabOrientation: fmTabOrientation = js.native
+  var TabOrientation: fmTabOrientation
   
-  var Value: Double = js.native
+  var Value: Double
   
-  val _Font_Reserved: NewFont = js.native
+  val _Font_Reserved: NewFont
   
-  def _GetTabFixedHeight(Height: Double): Unit = js.native
+  def _GetTabFixedHeight(Height: Double): Unit
   
-  def _GetTabFixedWidth(Width: Double): Unit = js.native
+  def _GetTabFixedWidth(Width: Double): Unit
   
-  def _SetTabFixedHeight(Height: Double): Unit = js.native
+  def _SetTabFixedHeight(Height: Double): Unit
   
-  def _SetTabFixedWidth(Width: Double): Unit = js.native
+  def _SetTabFixedWidth(Width: Double): Unit
+}
+object MultiPage {
+  
+  @scala.inline
+  def apply(
+    BackColor: Double,
+    Enabled: Boolean,
+    Font: NewFont,
+    FontBold: Boolean,
+    FontItalic: Boolean,
+    FontName: String,
+    FontSize: Double,
+    FontStrikethru: Boolean,
+    FontUnderline: Boolean,
+    FontWeight: Double,
+    ForeColor: Double,
+    MSFormsDotMultiPage_typekey: MultiPage,
+    MultiRow: Boolean,
+    Pages: Pages,
+    SelectedItem: Page,
+    Style: fmTabStyle,
+    TabFixedHeight: Double,
+    TabFixedWidth: Double,
+    TabOrientation: fmTabOrientation,
+    Value: Double,
+    _Font_Reserved: NewFont,
+    _GetTabFixedHeight: Double => Unit,
+    _GetTabFixedWidth: Double => Unit,
+    _SetTabFixedHeight: Double => Unit,
+    _SetTabFixedWidth: Double => Unit
+  ): MultiPage = {
+    val __obj = js.Dynamic.literal(BackColor = BackColor.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], FontBold = FontBold.asInstanceOf[js.Any], FontItalic = FontItalic.asInstanceOf[js.Any], FontName = FontName.asInstanceOf[js.Any], FontSize = FontSize.asInstanceOf[js.Any], FontStrikethru = FontStrikethru.asInstanceOf[js.Any], FontUnderline = FontUnderline.asInstanceOf[js.Any], FontWeight = FontWeight.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], MultiRow = MultiRow.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any], SelectedItem = SelectedItem.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any], TabFixedHeight = TabFixedHeight.asInstanceOf[js.Any], TabFixedWidth = TabFixedWidth.asInstanceOf[js.Any], TabOrientation = TabOrientation.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], _Font_Reserved = _Font_Reserved.asInstanceOf[js.Any], _GetTabFixedHeight = js.Any.fromFunction1(_GetTabFixedHeight), _GetTabFixedWidth = js.Any.fromFunction1(_GetTabFixedWidth), _SetTabFixedHeight = js.Any.fromFunction1(_SetTabFixedHeight), _SetTabFixedWidth = js.Any.fromFunction1(_SetTabFixedWidth))
+    __obj.updateDynamic("MSForms.MultiPage_typekey")(MSFormsDotMultiPage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiPage]
+  }
+  
+  @scala.inline
+  implicit class MultiPageMutableBuilder[Self <: MultiPage] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFont(value: NewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontBold(value: Boolean): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontItalic(value: Boolean): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontStrikethru(value: Boolean): Self = StObject.set(x, "FontStrikethru", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontUnderline(value: Boolean): Self = StObject.set(x, "FontUnderline", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFontWeight(value: Double): Self = StObject.set(x, "FontWeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMSFormsDotMultiPage_typekey(value: MultiPage): Self = StObject.set(x, "MSForms.MultiPage_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultiRow(value: Boolean): Self = StObject.set(x, "MultiRow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPages(value: Pages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSelectedItem(value: Page): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStyle(value: fmTabStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTabFixedHeight(value: Double): Self = StObject.set(x, "TabFixedHeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTabFixedWidth(value: Double): Self = StObject.set(x, "TabFixedWidth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTabOrientation(value: fmTabOrientation): Self = StObject.set(x, "TabOrientation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_Font_Reserved(value: NewFont): Self = StObject.set(x, "_Font_Reserved", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_GetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedHeight", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def set_GetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedWidth", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def set_SetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedHeight", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def set_SetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedWidth", js.Any.fromFunction1(value))
+  }
 }

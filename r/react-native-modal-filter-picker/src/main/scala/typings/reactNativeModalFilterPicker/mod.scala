@@ -15,7 +15,6 @@ import typings.reactNativeModalFilterPicker.reactNativeModalFilterPickerStrings.
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,12 +26,11 @@ object mod {
   
   type ModalFilterPicker[T /* <: ModalFilterPickerOption */] = Component[ModalFilterPickerProps[T], js.Object, js.Any]
   
-  @js.native
   trait ModalFilterPickerOption extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var label: String = js.native
+    var label: String
   }
   object ModalFilterPickerOption {
     
@@ -53,67 +51,66 @@ object mod {
     }
   }
   
-  @js.native
   trait ModalFilterPickerProps[T /* <: ModalFilterPickerOption */] extends StObject {
     
-    var androidUnderlineColor: js.UndefOr[String] = js.native
+    var androidUnderlineColor: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var cancelButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var cancelButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
-    var cancelButtonTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var cancelButtonTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var cancelContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var cancelContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var filterTextInputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var filterTextInputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var filterTextInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var filterTextInputStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[never | always | handle] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[never | always | handle] = js.undefined
     
-    var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var listViewProps: js.UndefOr[Partial[ListViewProps | FlatListProps[T]]] = js.native
+    var listViewProps: js.UndefOr[Partial[ListViewProps | FlatListProps[T]]] = js.undefined
     
-    var modal: js.UndefOr[ModalProps] = js.native
+    var modal: js.UndefOr[ModalProps] = js.undefined
     
-    var noResultsText: js.UndefOr[String] = js.native
+    var noResultsText: js.UndefOr[String] = js.undefined
     
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
-    def onSelect(key: String): Unit = js.native
+    def onSelect(key: String): Unit
     
-    var optionTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var optionTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var options: js.Array[T] = js.native
+    var options: js.Array[T]
     
     // styling props
-    var overlayStyle: js.UndefOr[StyleProp[KeyboardAvoidingView | ViewStyle]] = js.native
+    var overlayStyle: js.UndefOr[StyleProp[KeyboardAvoidingView | ViewStyle]] = js.undefined
     
-    var placeholderText: js.UndefOr[String] = js.native
+    var placeholderText: js.UndefOr[String] = js.undefined
     
-    var placeholderTextColor: js.UndefOr[String] = js.native
+    var placeholderTextColor: js.UndefOr[String] = js.undefined
     
-    var renderCancelButton: js.UndefOr[js.Function0[Element]] = js.native
+    var renderCancelButton: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var renderList: js.UndefOr[js.Function0[Element]] = js.native
+    var renderList: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var renderOption: js.UndefOr[js.Function2[/* option */ T, /* isSelected */ Boolean, Element]] = js.native
+    var renderOption: js.UndefOr[js.Function2[/* option */ T, /* isSelected */ Boolean, Element]] = js.undefined
     
-    var selectedOption: js.UndefOr[String] = js.native
+    var selectedOption: js.UndefOr[String] = js.undefined
     
-    var selectedOptionTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var selectedOptionTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var showFilter: js.UndefOr[Boolean] = js.native
+    var showFilter: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ModalFilterPickerProps {
     
@@ -124,7 +121,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ModalFilterPickerPropsMutableBuilder[Self <: ModalFilterPickerProps[_], T /* <: ModalFilterPickerOption */] (val x: Self with ModalFilterPickerProps[T]) extends AnyVal {
+    implicit class ModalFilterPickerPropsMutableBuilder[Self <: ModalFilterPickerProps[?], T /* <: ModalFilterPickerOption */] (val x: Self & ModalFilterPickerProps[T]) extends AnyVal {
       
       @scala.inline
       def setAndroidUnderlineColor(value: String): Self = StObject.set(x, "androidUnderlineColor", value.asInstanceOf[js.Any])

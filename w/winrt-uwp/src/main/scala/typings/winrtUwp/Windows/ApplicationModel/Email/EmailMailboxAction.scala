@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data about a change that occurred to a mailbox. */
-@js.native
 trait EmailMailboxAction extends StObject {
   
   /** Gets the number that identifies the change that happened to the mailbox. */
-  var changeNumber: Double = js.native
+  var changeNumber: Double
   
   /** Gets the value that represents the kind of change that happened to the mailbox. */
-  var kind: EmailMailboxActionKind = js.native
+  var kind: EmailMailboxActionKind
 }
 object EmailMailboxAction {
   

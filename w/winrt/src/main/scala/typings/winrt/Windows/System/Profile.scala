@@ -3,16 +3,15 @@ package typings.winrt.Windows.System
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Profile {
   
-  @js.native
   trait HardwareIdentification extends StObject
   
-  @js.native
-  trait HardwareToken extends IHardwareToken
+  trait HardwareToken
+    extends StObject
+       with IHardwareToken
   object HardwareToken {
     
     @scala.inline
@@ -22,10 +21,9 @@ object Profile {
     }
   }
   
-  @js.native
   trait IHardwareIdentificationStatics extends StObject {
     
-    def getPackageSpecificToken(nonce: IBuffer): HardwareToken = js.native
+    def getPackageSpecificToken(nonce: IBuffer): HardwareToken
   }
   object IHardwareIdentificationStatics {
     
@@ -43,14 +41,13 @@ object Profile {
     }
   }
   
-  @js.native
   trait IHardwareToken extends StObject {
     
-    var certificate: IBuffer = js.native
+    var certificate: IBuffer
     
-    var id: IBuffer = js.native
+    var id: IBuffer
     
-    var signature: IBuffer = js.native
+    var signature: IBuffer
   }
   object IHardwareToken {
     

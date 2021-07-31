@@ -2,21 +2,19 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonMixin extends StObject {
   
-  var bindEvents: js.Any = js.native
+  var bindEvents: js.Any
   
-  var getOption: js.Any = js.native
+  var getOption: js.Any
   
-  var mergeOptions: js.Any = js.native
+  var mergeOptions: js.Any
   
-  var normalizeMethods: js.Any = js.native
+  var normalizeMethods: js.Any
   
-  var unbindEvents: js.Any = js.native
+  var unbindEvents: js.Any
 }
 object CommonMixin {
   

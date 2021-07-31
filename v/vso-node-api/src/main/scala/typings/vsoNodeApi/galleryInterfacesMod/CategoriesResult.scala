@@ -2,13 +2,11 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoriesResult extends StObject {
   
-  var categories: js.Array[ExtensionCategory] = js.native
+  var categories: js.Array[ExtensionCategory]
 }
 object CategoriesResult {
   

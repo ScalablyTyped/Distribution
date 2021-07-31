@@ -2,49 +2,42 @@ package typings.prettyData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object pd {
     
-    @JSImport("pretty-data", "pd.css")
+    @JSImport("pretty-data", "pd")
     @js.native
-    def css(data: String): String = js.native
-    @JSImport("pretty-data", "pd.css")
-    @js.native
-    def css(data: String, preserveComments: Boolean): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pretty-data", "pd.cssmin")
-    @js.native
-    def cssmin(data: String): String = js.native
+    @scala.inline
+    def css(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def css(data: String, preserveComments: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(data.asInstanceOf[js.Any], preserveComments.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.json")
-    @js.native
-    def json(data: String): String = js.native
+    @scala.inline
+    def cssmin(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssmin")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.jsonmin")
-    @js.native
-    def jsonmin(data: String): String = js.native
+    @scala.inline
+    def json(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.sql")
-    @js.native
-    def sql(data: String): String = js.native
+    @scala.inline
+    def jsonmin(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonmin")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.sqlmin")
-    @js.native
-    def sqlmin(data: String): String = js.native
+    @scala.inline
+    def sql(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sql")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.xml")
-    @js.native
-    def xml(data: String): String = js.native
+    @scala.inline
+    def sqlmin(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sqlmin")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("pretty-data", "pd.xmlmin")
-    @js.native
-    def xmlmin(data: String): String = js.native
-    @JSImport("pretty-data", "pd.xmlmin")
-    @js.native
-    def xmlmin(data: String, preserveComments: Boolean): String = js.native
+    @scala.inline
+    def xml(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def xmlmin(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlmin")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def xmlmin(data: String, preserveComments: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlmin")(data.asInstanceOf[js.Any], preserveComments.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

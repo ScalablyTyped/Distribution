@@ -2,37 +2,35 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignObject extends StObject {
   
   /**
     * Horizontal alignment. Can be one of `left`, `center` and `right`.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * Use the `transform` attribute with translateX and translateY custom
     * attributes to align this elements rather than `x` and `y` attributes.
     */
-  var alignByTranslate: js.UndefOr[Boolean] = js.native
+  var alignByTranslate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Vertical alignment. Can be one of `top`, `middle` and `bottom`.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * Horizontal pixel offset from alignment.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical pixel offset from alignment.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object AlignObject {
   

@@ -3,67 +3,65 @@ package typings.googlemaps.google.maps.places
 import typings.googlemaps.google.maps.GeocoderAddressComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceResult extends StObject {
   
-  var address_components: js.UndefOr[js.Array[GeocoderAddressComponent]] = js.native
+  var address_components: js.UndefOr[js.Array[GeocoderAddressComponent]] = js.undefined
   
-  var adr_address: js.UndefOr[String] = js.native
+  var adr_address: js.UndefOr[String] = js.undefined
   
-  var aspects: js.UndefOr[js.Array[PlaceAspectRating]] = js.native
+  var aspects: js.UndefOr[js.Array[PlaceAspectRating]] = js.undefined
   
-  var formatted_address: js.UndefOr[String] = js.native
+  var formatted_address: js.UndefOr[String] = js.undefined
   
-  var formatted_phone_number: js.UndefOr[String] = js.native
+  var formatted_phone_number: js.UndefOr[String] = js.undefined
   
-  var geometry: js.UndefOr[PlaceGeometry] = js.native
+  var geometry: js.UndefOr[PlaceGeometry] = js.undefined
   
-  var html_attributions: js.UndefOr[js.Array[String]] = js.native
+  var html_attributions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var international_phone_number: js.UndefOr[String] = js.native
+  var international_phone_number: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var opening_hours: js.UndefOr[OpeningHours] = js.native
+  var opening_hours: js.UndefOr[OpeningHours] = js.undefined
   
-  var permanently_closed: js.UndefOr[Boolean] = js.native
+  var permanently_closed: js.UndefOr[Boolean] = js.undefined
   
-  var photos: js.UndefOr[js.Array[PlacePhoto]] = js.native
+  var photos: js.UndefOr[js.Array[PlacePhoto]] = js.undefined
   
-  var place_id: js.UndefOr[String] = js.native
+  var place_id: js.UndefOr[String] = js.undefined
   
-  var plus_code: js.UndefOr[PlacePlusCode] = js.native
+  var plus_code: js.UndefOr[PlacePlusCode] = js.undefined
   
-  var price_level: js.UndefOr[Double] = js.native
+  var price_level: js.UndefOr[Double] = js.undefined
   
-  var rating: js.UndefOr[Double] = js.native
+  var rating: js.UndefOr[Double] = js.undefined
   
-  var reviews: js.UndefOr[js.Array[PlaceReview]] = js.native
+  var reviews: js.UndefOr[js.Array[PlaceReview]] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var user_ratings_total: js.UndefOr[Double] = js.native
+  var user_ratings_total: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated utc_offset is deprecated as of November 2019 and will be turned off in November 2020.
     *      Use PlaceResult.utc_offset_minutes instead.
     */
-  var utc_offset: js.UndefOr[Double] = js.native
+  var utc_offset: js.UndefOr[Double] = js.undefined
   
-  var utc_offset_minutes: js.UndefOr[Double] = js.native
+  var utc_offset_minutes: js.UndefOr[Double] = js.undefined
   
-  var vicinity: js.UndefOr[String] = js.native
+  var vicinity: js.UndefOr[String] = js.undefined
   
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object PlaceResult {
   

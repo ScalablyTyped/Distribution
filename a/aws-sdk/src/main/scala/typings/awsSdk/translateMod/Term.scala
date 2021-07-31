@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Term extends StObject {
   
   /**
     * The source text of the term being translated by the custom terminology.
     */
-  var SourceText: js.UndefOr[String] = js.native
+  var SourceText: js.UndefOr[String] = js.undefined
   
   /**
     * The target text of the term being translated by the custom terminology.
     */
-  var TargetText: js.UndefOr[String] = js.native
+  var TargetText: js.UndefOr[String] = js.undefined
 }
 object Term {
   

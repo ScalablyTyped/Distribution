@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSecuritycenterV1p1beta1Resource extends StObject {
   
   /** The full resource name of the resource. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The full resource name of resource's parent. */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /** The human readable name of resource's parent. */
-  var parentDisplayName: js.UndefOr[String] = js.native
+  var parentDisplayName: js.UndefOr[String] = js.undefined
   
   /** The full resource name of project that the resource belongs to. */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /** The human readable name of project that the resource belongs to. */
-  var projectDisplayName: js.UndefOr[String] = js.native
+  var projectDisplayName: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSecuritycenterV1p1beta1Resource {
   

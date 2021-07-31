@@ -2,19 +2,17 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buckets extends StObject {
   
-  var buckets: Double = js.native
+  var buckets: Double
   
-  var granularity: js.UndefOr[js.Any] = js.native
+  var granularity: js.UndefOr[js.Any] = js.undefined
   
-  var groupBy: js.Any = js.native
+  var groupBy: js.Any
   
-  var output: js.UndefOr[js.Object] = js.native
+  var output: js.UndefOr[js.Object] = js.undefined
 }
 object Buckets {
   

@@ -7,50 +7,48 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.UR
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDefaultPushNotificationMessageMod {
   
-  @js.native
   trait DefaultPushNotificationMessage extends StObject {
     
     /**
       * The action that occurs if the user taps a push notification delivered by the campaign: OPEN_APP - Your app launches, or it becomes the foreground app if it has been sent to the background. This is the default action. DEEP_LINK - Uses deep linking features in iOS and Android to open your app and display a designated user interface within the app. URL - The default mobile browser on the user's device launches and opens a web page at the URL you specify. Possible values include: OPEN_APP | DEEP_LINK | URL
       */
-    var Action: js.UndefOr[OPEN_APP | DEEP_LINK | URL | String] = js.native
+    var Action: js.UndefOr[OPEN_APP | DEEP_LINK | URL | String] = js.undefined
     
     /**
       * The message body of the notification.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
       */
-    var Data: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Data: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * Indicates if the message should display on the recipient's device. You can use silent pushes for remote configuration or to deliver messages to in-app notification centers.
       */
-    var SilentPush: js.UndefOr[Boolean] = js.native
+    var SilentPush: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The message title that displays above the message on the user's device.
       */
-    var Title: js.UndefOr[String] = js.native
+    var Title: js.UndefOr[String] = js.undefined
     
     /**
       * The URL to open in the user's mobile browser. Used if the value for Action is URL.
       */
-    var Url: js.UndefOr[String] = js.native
+    var Url: js.UndefOr[String] = js.undefined
   }
   object DefaultPushNotificationMessage {
     
@@ -109,20 +107,21 @@ object typesDefaultPushNotificationMessageMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDefaultPushNotificationMessage extends DefaultPushNotificationMessage {
+  trait UnmarshalledDefaultPushNotificationMessage
+    extends StObject
+       with DefaultPushNotificationMessage {
     
     /**
       * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
       */
     @JSName("Data")
-    var Data_UnmarshalledDefaultPushNotificationMessage: js.UndefOr[StringDictionary[String]] = js.native
+    var Data_UnmarshalledDefaultPushNotificationMessage: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     @JSName("Substitutions")
-    var Substitutions_UnmarshalledDefaultPushNotificationMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Substitutions_UnmarshalledDefaultPushNotificationMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object UnmarshalledDefaultPushNotificationMessage {
     

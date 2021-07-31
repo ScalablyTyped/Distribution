@@ -2,13 +2,13 @@ package typings.webxr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRJointPose extends XRPose {
+trait XRJointPose
+  extends StObject
+     with XRPose {
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object XRJointPose {
   

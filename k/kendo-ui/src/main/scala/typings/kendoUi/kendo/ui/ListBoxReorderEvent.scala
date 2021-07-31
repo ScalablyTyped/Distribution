@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListBoxReorderEvent extends ListBoxEvent {
+trait ListBoxReorderEvent
+  extends StObject
+     with ListBoxEvent {
   
-  var dataItems: js.UndefOr[js.Any] = js.native
+  var dataItems: js.UndefOr[js.Any] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.native
+  var items: js.UndefOr[js.Any] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
 }
 object ListBoxReorderEvent {
   

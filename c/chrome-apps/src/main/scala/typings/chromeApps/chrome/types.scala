@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.chromeApps.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -49,7 +48,6 @@ object types {
   
   type ChromeSettingChangedEvent = Event[DetailsCallback]
   
-  @js.native
   trait ChromeSettingClearDetails extends StObject {
     
     /**
@@ -60,7 +58,7 @@ object types {
       * • incognito_session_only: setting for the incognito profile that can only be set during an incognito session and is deleted
       *     when the incognito session ends (overrides regular and incognito_persistent preferences).
       */
-    var scope: js.UndefOr[ChromeSettingScope] = js.native
+    var scope: js.UndefOr[ChromeSettingScope] = js.undefined
   }
   object ChromeSettingClearDetails {
     
@@ -81,11 +79,10 @@ object types {
     }
   }
   
-  @js.native
   trait ChromeSettingGetDetails extends StObject {
     
     /** Whether to return the value that applies to the incognito session (default false). */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
   }
   object ChromeSettingGetDetails {
     
@@ -106,14 +103,13 @@ object types {
     }
   }
   
-  @js.native
   trait ChromeSettingGetResultDetails extends StObject {
     
     /**
       * Whether the effective value is specific to the incognito session.
       * This property will only be present if the incognito property in the details parameter of get() was true.
       */
-    var incognitoSpecific: js.UndefOr[Boolean] = js.native
+    var incognitoSpecific: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One of
@@ -122,10 +118,10 @@ object types {
       * • controllable_by_this_extension: can be controlled by this app
       * • controlled_by_this_extension: controlled by this app
       */
-    var levelOfControl: String = js.native
+    var levelOfControl: String
     
     /** The value of the setting. */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ChromeSettingGetResultDetails {
     
@@ -182,8 +178,9 @@ object types {
     def regular_only: typings.chromeApps.chromeAppsStrings.regular_only = "regular_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular_only]
   }
   
-  @js.native
-  trait ChromeSettingSetDetails extends ChromeSettingClearDetails {
+  trait ChromeSettingSetDetails
+    extends StObject
+       with ChromeSettingClearDetails {
     
     /**
       * The value of the setting.
@@ -191,7 +188,7 @@ object types {
       * which is described together with the setting.
       * An app should not set a value of a different type.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ChromeSettingSetDetails {
     

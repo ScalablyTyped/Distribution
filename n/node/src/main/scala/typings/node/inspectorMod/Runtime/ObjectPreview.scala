@@ -2,45 +2,43 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object containing abbreviated remote object value.
   * @experimental
   */
-@js.native
 trait ObjectPreview extends StObject {
   
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * List of the entries. Specified for <code>map</code> and <code>set</code> subtype values only.
     */
-  var entries: js.UndefOr[js.Array[EntryPreview]] = js.native
+  var entries: js.UndefOr[js.Array[EntryPreview]] = js.undefined
   
   /**
     * True iff some of the properties or entries of the original object did not fit.
     */
-  var overflow: Boolean = js.native
+  var overflow: Boolean
   
   /**
     * List of the properties.
     */
-  var properties: js.Array[PropertyPreview] = js.native
+  var properties: js.Array[PropertyPreview]
   
   /**
     * Object subtype hint. Specified for <code>object</code> type values only.
     */
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
   
   /**
     * Object type.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ObjectPreview {
   

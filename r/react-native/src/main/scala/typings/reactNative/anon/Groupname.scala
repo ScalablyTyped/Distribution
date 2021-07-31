@@ -2,21 +2,19 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groupname extends StObject {
   
-  var group_name: String = js.native
+  var group_name: String
   
-  var image: IsStored = js.native
+  var image: IsStored
   
-  var location: Altitude = js.native
+  var location: Altitude
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Groupname {
   

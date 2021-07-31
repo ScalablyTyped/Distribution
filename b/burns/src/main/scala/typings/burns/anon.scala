@@ -2,15 +2,13 @@ package typings.burns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exclude extends StObject {
     
-    var exclude: js.UndefOr[js.Any] = js.native
+    var exclude: js.UndefOr[js.Any] = js.undefined
   }
   object Exclude {
     

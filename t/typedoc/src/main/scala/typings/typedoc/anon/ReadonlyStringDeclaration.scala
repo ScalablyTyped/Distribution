@@ -4,26 +4,24 @@ import typings.typedoc.optionsDeclarationMod.ParameterHint
 import typings.typedoc.optionsDeclarationMod.ParameterScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.StringDeclarationOption> */
-@js.native
 trait ReadonlyStringDeclaration extends StObject {
   
-  val defaultValue: js.UndefOr[String] = js.native
+  val defaultValue: js.UndefOr[String] = js.undefined
   
-  val help: String = js.native
+  val help: String
   
-  val hint: js.UndefOr[ParameterHint] = js.native
+  val hint: js.UndefOr[ParameterHint] = js.undefined
   
-  val name: String = js.native
+  val name: String
   
-  val scope: js.UndefOr[ParameterScope] = js.native
+  val scope: js.UndefOr[ParameterScope] = js.undefined
   
-  val short: js.UndefOr[String] = js.native
+  val short: js.UndefOr[String] = js.undefined
   
-  val `type`: js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType.String] = js.native
+  val `type`: js.UndefOr[typings.typedoc.optionsDeclarationMod.ParameterType.String] = js.undefined
 }
 object ReadonlyStringDeclaration {
   

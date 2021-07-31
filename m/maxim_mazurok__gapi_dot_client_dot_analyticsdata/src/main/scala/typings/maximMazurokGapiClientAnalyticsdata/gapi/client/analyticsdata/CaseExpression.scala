@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseExpression extends StObject {
   
   /** Name of a dimension. The name must refer back to a name in dimensions field of the request. */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
 }
 object CaseExpression {
   

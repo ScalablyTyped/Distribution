@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupRunsListResponse extends StObject {
   
   /** A list of backup runs in reverse chronological order of the enqueued time. */
-  var items: js.UndefOr[js.Array[BackupRun]] = js.native
+  var items: js.UndefOr[js.Array[BackupRun]] = js.undefined
   
   /** This is always *sql#backupRunsList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The continuation token, used to page through large result sets. Provide this value in a subsequent request to return the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object BackupRunsListResponse {
   

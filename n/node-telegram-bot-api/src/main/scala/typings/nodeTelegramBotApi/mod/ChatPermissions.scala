@@ -2,27 +2,25 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatPermissions extends StObject {
   
-  var can_add_web_page_previews: js.UndefOr[Boolean] = js.native
+  var can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined
   
-  var can_change_info: js.UndefOr[Boolean] = js.native
+  var can_change_info: js.UndefOr[Boolean] = js.undefined
   
-  var can_invite_users: js.UndefOr[Boolean] = js.native
+  var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
-  var can_pin_messages: js.UndefOr[Boolean] = js.native
+  var can_pin_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_media_messages: js.UndefOr[Boolean] = js.native
+  var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_messages: js.UndefOr[Boolean] = js.native
+  var can_send_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_other_messages: js.UndefOr[Boolean] = js.native
+  var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_polls: js.UndefOr[Boolean] = js.native
+  var can_send_polls: js.UndefOr[Boolean] = js.undefined
 }
 object ChatPermissions {
   

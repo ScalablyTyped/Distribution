@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileThreatDefenseConnector extends Entity {
+trait MobileThreatDefenseConnector
+  extends StObject
+     with Entity {
   
   // For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  var androidDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.native
+  var androidDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined
   
   // For Android, set whether data from the data sync partner should be used during compliance evaluations
-  var androidEnabled: js.UndefOr[Boolean] = js.native
+  var androidEnabled: js.UndefOr[Boolean] = js.undefined
   
   // For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  var iosDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.native
+  var iosDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined
   
   // For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
-  var iosEnabled: js.UndefOr[Boolean] = js.native
+  var iosEnabled: js.UndefOr[Boolean] = js.undefined
   
   // DateTime of last Heartbeat recieved from the Data Sync Partner
-  var lastHeartbeatDateTime: js.UndefOr[String] = js.native
+  var lastHeartbeatDateTime: js.UndefOr[String] = js.undefined
   
   // Data Sync Partner state for this account. Possible values are: unavailable, available, enabled, unresponsive.
-  var partnerState: js.UndefOr[MobileThreatPartnerTenantState] = js.native
+  var partnerState: js.UndefOr[MobileThreatPartnerTenantState] = js.undefined
   
   // Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-  var partnerUnresponsivenessThresholdInDays: js.UndefOr[Double] = js.native
+  var partnerUnresponsivenessThresholdInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the
     * Data Sync Partner
     */
-  var partnerUnsupportedOsVersionBlocked: js.UndefOr[Boolean] = js.native
+  var partnerUnsupportedOsVersionBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object MobileThreatDefenseConnector {
   

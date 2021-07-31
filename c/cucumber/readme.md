@@ -10,9 +10,9 @@ The official JavaScript implementation of Cucumber.
 | ------------------ | :-------------: |
 | Full name          | cucumber |
 | Keywords           | testing, bdd, cucumber, gherkin, tests |
-| # releases         | 10 |
-| # dependents       | 215 |
-| # downloads        | 17550540 |
+| # releases         | 8 |
+| # dependents       | 227 |
+| # downloads        | 20669460 |
 | # stars            | 52 |
 
 ## Links

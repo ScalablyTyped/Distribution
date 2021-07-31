@@ -2,29 +2,27 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coockies.remove() callback details argument object
   */
-@js.native
 trait CookiesRemovedDetails extends StObject {
   
   /**
     * The name of the cookie that's been removed.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The ID of the cookie store from which the cookie was removed.
     */
-  var storeId: String = js.native
+  var storeId: String
   
   /**
     * The URL associated with the cookie that's been removed.
     */
-  var url: String = js.native
+  var url: String
 }
 object CookiesRemovedDetails {
   

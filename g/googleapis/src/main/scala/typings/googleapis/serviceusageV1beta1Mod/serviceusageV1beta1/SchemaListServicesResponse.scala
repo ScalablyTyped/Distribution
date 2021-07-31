@@ -2,24 +2,22 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the `ListServices` method.
   */
-@js.native
 trait SchemaListServicesResponse extends StObject {
   
   /**
     * Token that can be passed to `ListServices` to resume a paginated query.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The available services for the requested project.
     */
-  var services: js.UndefOr[js.Array[SchemaService]] = js.native
+  var services: js.UndefOr[js.Array[SchemaService]] = js.undefined
 }
 object SchemaListServicesResponse {
   

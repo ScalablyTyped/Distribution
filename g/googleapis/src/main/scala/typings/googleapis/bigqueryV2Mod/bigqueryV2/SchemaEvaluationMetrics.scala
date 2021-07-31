@@ -2,7 +2,6 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data or just the eval data based on whether eval data was used during
   * training.
   */
-@js.native
 trait SchemaEvaluationMetrics extends StObject {
   
   /**
     * Populated for binary classification models.
     */
-  var binaryClassificationMetrics: js.UndefOr[SchemaBinaryClassificationMetrics] = js.native
+  var binaryClassificationMetrics: js.UndefOr[SchemaBinaryClassificationMetrics] = js.undefined
   
   /**
     * [Beta] Populated for clustering models.
     */
-  var clusteringMetrics: js.UndefOr[SchemaClusteringMetrics] = js.native
+  var clusteringMetrics: js.UndefOr[SchemaClusteringMetrics] = js.undefined
   
   /**
     * Populated for multi-class classification models.
     */
-  var multiClassClassificationMetrics: js.UndefOr[SchemaMultiClassClassificationMetrics] = js.native
+  var multiClassClassificationMetrics: js.UndefOr[SchemaMultiClassClassificationMetrics] = js.undefined
   
   /**
     * Populated for regression models.
     */
-  var regressionMetrics: js.UndefOr[SchemaRegressionMetrics] = js.native
+  var regressionMetrics: js.UndefOr[SchemaRegressionMetrics] = js.undefined
 }
 object SchemaEvaluationMetrics {
   

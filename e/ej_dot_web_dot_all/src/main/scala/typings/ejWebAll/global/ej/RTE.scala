@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.RTE")
 @js.native
 class RTE protected ()
-  extends typings.ejWebAll.ej.RTE {
+  extends StObject
+     with typings.ejWebAll.ej.RTE {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -34,11 +34,11 @@ object RTE {
   object ToolbarOverflowMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.RTE.ToolbarOverflowMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.RTE.ToolbarOverflowMode & Double] = js.native
     
-    /* 1 */ val Inline: typings.ejWebAll.ej.RTE.ToolbarOverflowMode.Inline with Double = js.native
+    /* 1 */ val Inline: typings.ejWebAll.ej.RTE.ToolbarOverflowMode.Inline & Double = js.native
     
-    /* 0 */ val Popup: typings.ejWebAll.ej.RTE.ToolbarOverflowMode.Popup with Double = js.native
+    /* 0 */ val Popup: typings.ejWebAll.ej.RTE.ToolbarOverflowMode.Popup & Double = js.native
   }
   
   /* static member */

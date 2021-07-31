@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyHostsRequest extends StObject {
   
   /**
     * Specify whether to enable or disable auto-placement.
     */
-  var AutoPlacement: js.UndefOr[typings.awsSdk.ec2Mod.AutoPlacement] = js.native
+  var AutoPlacement: js.UndefOr[typings.awsSdk.ec2Mod.AutoPlacement] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts to modify.
     */
-  var HostIds: RequestHostIdList = js.native
+  var HostIds: RequestHostIdList
   
   /**
     * Indicates whether to enable or disable host recovery for the Dedicated Host. For more information, see  Host Recovery in the Amazon Elastic Compute Cloud User Guide.
     */
-  var HostRecovery: js.UndefOr[typings.awsSdk.ec2Mod.HostRecovery] = js.native
+  var HostRecovery: js.UndefOr[typings.awsSdk.ec2Mod.HostRecovery] = js.undefined
   
   /**
     * Specifies the instance family to be supported by the Dedicated Host. Specify this parameter to modify a Dedicated Host to support multiple instance types within its current instance family. If you want to modify a Dedicated Host to support a specific instance type only, omit this parameter and specify InstanceType instead. You cannot specify InstanceFamily and InstanceType in the same request.
     */
-  var InstanceFamily: js.UndefOr[String] = js.native
+  var InstanceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the instance type to be supported by the Dedicated Host. Specify this parameter to modify a Dedicated Host to support only a specific instance type. If you want to modify a Dedicated Host to support multiple instance types in its current instance family, omit this parameter and specify InstanceFamily instead. You cannot specify InstanceType and InstanceFamily in the same request.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
 }
 object ModifyHostsRequest {
   

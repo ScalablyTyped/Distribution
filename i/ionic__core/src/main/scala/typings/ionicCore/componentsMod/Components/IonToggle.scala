@@ -5,41 +5,39 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonToggle extends StObject {
   
   /**
     * If `true`, the toggle is selected.
     */
-  var checked: Boolean = js.native
+  var checked: Boolean
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the toggle.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the toggle does not mean if it's checked or not, use the `checked` property for that.  The value of a toggle is analogous to the value of a `<input type="checkbox">`, it's only used when the toggle participates in a native `<form>`.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object IonToggle {
   

@@ -11,25 +11,27 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.POST
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckToken extends StObject {
   
-  var checkToken: js.UndefOr[Boolean] = js.native
+  var checkToken: js.UndefOr[Boolean] = js.undefined
   
-  def handler(req: Request_[ParamsDictionary, _, _, Query], respose: Response_[_], next: NextFunction): Unit = js.native
+  def handler(
+    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+    respose: Response_[js.Any],
+    next: NextFunction
+  ): Unit
   
-  var method: GET | PUT | POST | DELETE = js.native
+  var method: GET | PUT | POST | DELETE
   
-  var path: String = js.native
+  var path: String
 }
 object CheckToken {
   
   @scala.inline
   def apply(
-    handler: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => Unit,
+    handler: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => Unit,
     method: GET | PUT | POST | DELETE,
     path: String
   ): CheckToken = {
@@ -47,7 +49,9 @@ object CheckToken {
     def setCheckTokenUndefined: Self = StObject.set(x, "checkToken", js.undefined)
     
     @scala.inline
-    def setHandler(value: (Request_[ParamsDictionary, _, _, Query], Response_[_], NextFunction) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+    def setHandler(
+      value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => Unit
+    ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
     @scala.inline
     def setMethod(value: GET | PUT | POST | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])

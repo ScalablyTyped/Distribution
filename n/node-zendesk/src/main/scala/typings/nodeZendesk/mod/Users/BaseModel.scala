@@ -3,55 +3,53 @@ package typings.nodeZendesk.mod.Users
 import typings.nodeZendesk.mod.Attachments.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseModel extends StObject {
   
-  var alias: js.UndefOr[String | Null] = js.native
+  var alias: js.UndefOr[String | Null] = js.undefined
   
-  var custom_role_id: js.UndefOr[Double | Null] = js.native
+  var custom_role_id: js.UndefOr[Double | Null] = js.undefined
   
-  var default_group_id: js.UndefOr[Double | Null] = js.native
+  var default_group_id: js.UndefOr[Double | Null] = js.undefined
   
-  var details: js.UndefOr[String | Null] = js.native
+  var details: js.UndefOr[String | Null] = js.undefined
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
-  var external_id: js.UndefOr[String | Null] = js.native
+  var external_id: js.UndefOr[String | Null] = js.undefined
   
-  var locale_id: js.UndefOr[Double | Null] = js.native
+  var locale_id: js.UndefOr[Double | Null] = js.undefined
   
-  var moderator: js.UndefOr[Boolean | Null] = js.native
+  var moderator: js.UndefOr[Boolean | Null] = js.undefined
   
-  var notes: js.UndefOr[String | Null] = js.native
+  var notes: js.UndefOr[String | Null] = js.undefined
   
-  var only_private_comments: js.UndefOr[Boolean | Null] = js.native
+  var only_private_comments: js.UndefOr[Boolean | Null] = js.undefined
   
-  var organization_id: js.UndefOr[Double | Null] = js.native
+  var organization_id: js.UndefOr[Double | Null] = js.undefined
   
-  var phone: js.UndefOr[String | Null] = js.native
+  var phone: js.UndefOr[String | Null] = js.undefined
   
-  var photo: js.UndefOr[Model | Null] = js.native
+  var photo: js.UndefOr[Model | Null] = js.undefined
   
-  var restricted_agent: js.UndefOr[Boolean | Null] = js.native
+  var restricted_agent: js.UndefOr[Boolean | Null] = js.undefined
   
-  var role: js.UndefOr[Role | Null] = js.native
+  var role: js.UndefOr[Role | Null] = js.undefined
   
-  var signature: js.UndefOr[String | Null] = js.native
+  var signature: js.UndefOr[String | Null] = js.undefined
   
-  var suspended: js.UndefOr[Boolean | Null] = js.native
+  var suspended: js.UndefOr[Boolean | Null] = js.undefined
   
-  var tags: js.UndefOr[js.Array[_] | Null] = js.native
+  var tags: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
   
-  var ticket_restriction: js.UndefOr[TicketRestriction | Null] = js.native
+  var ticket_restriction: js.UndefOr[TicketRestriction | Null] = js.undefined
   
-  var time_zone: js.UndefOr[String | Null] = js.native
+  var time_zone: js.UndefOr[String | Null] = js.undefined
   
-  var user_fields: js.UndefOr[js.Object | Null] = js.native
+  var user_fields: js.UndefOr[js.Object | Null] = js.undefined
   
-  var verified: js.UndefOr[Boolean | Null] = js.native
+  var verified: js.UndefOr[Boolean | Null] = js.undefined
 }
 object BaseModel {
   
@@ -218,7 +216,7 @@ object BaseModel {
     def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
     @scala.inline
-    def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTagsNull: Self = StObject.set(x, "tags", null)

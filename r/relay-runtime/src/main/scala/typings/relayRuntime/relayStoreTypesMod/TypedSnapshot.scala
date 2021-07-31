@@ -2,19 +2,17 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedSnapshot[TData] extends StObject {
   
-  val data: TData = js.native
+  val data: TData
   
-  val isMissingData: Boolean = js.native
+  val isMissingData: Boolean
   
-  val seenRecords: RecordMap = js.native
+  val seenRecords: RecordMap
   
-  val selector: SingularReaderSelector = js.native
+  val selector: SingularReaderSelector
 }
 object TypedSnapshot {
   
@@ -25,7 +23,7 @@ object TypedSnapshot {
   }
   
   @scala.inline
-  implicit class TypedSnapshotMutableBuilder[Self <: TypedSnapshot[_], TData] (val x: Self with TypedSnapshot[TData]) extends AnyVal {
+  implicit class TypedSnapshotMutableBuilder[Self <: TypedSnapshot[?], TData] (val x: Self & TypedSnapshot[TData]) extends AnyVal {
     
     @scala.inline
     def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

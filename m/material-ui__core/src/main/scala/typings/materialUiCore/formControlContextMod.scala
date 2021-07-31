@@ -8,7 +8,6 @@ import typings.materialUiCore.mod.PropTypes.Margin
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formControlContextMod extends Shortcut {
@@ -44,32 +43,31 @@ object formControlContextMod extends Shortcut {
   }
   
   /* Inlined parent std.Pick<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps, @material-ui/core.@material-ui/core/FormControl/FormControlContext.ContextFromPropsKey> */
-  @js.native
   trait FormControlContextProps extends StObject {
     
-    var adornedStart: Boolean = js.native
+    var adornedStart: Boolean
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var filled: Boolean = js.native
+    var filled: Boolean
     
-    var focused: Boolean = js.native
+    var focused: Boolean
     
-    var margin: js.UndefOr[Margin] = js.native
+    var margin: js.UndefOr[Margin] = js.undefined
     
-    def onBlur(): Unit = js.native
+    def onBlur(): Unit
     
-    def onEmpty(): Unit = js.native
+    def onEmpty(): Unit
     
-    def onFilled(): Unit = js.native
+    def onFilled(): Unit
     
-    def onFocus(): Unit = js.native
+    def onFocus(): Unit
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.native
+    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
   }
   object FormControlContextProps {
     

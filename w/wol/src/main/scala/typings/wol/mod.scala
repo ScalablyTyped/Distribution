@@ -4,39 +4,35 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wol", "createMagicPacket")
+  @JSImport("wol", JSImport.Namespace)
   @js.native
-  def createMagicPacket(mac: String): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wol", "wake")
-  @js.native
-  def wake(mac: String): js.Promise[Boolean] = js.native
-  @JSImport("wol", "wake")
-  @js.native
-  def wake(mac: String, callback: WakeCallback): js.Promise[Boolean] = js.native
-  @JSImport("wol", "wake")
-  @js.native
-  def wake(mac: String, options: js.UndefOr[scala.Nothing], callback: WakeCallback): js.Promise[Boolean] = js.native
-  @JSImport("wol", "wake")
-  @js.native
-  def wake(mac: String, options: WakeOptions): js.Promise[Boolean] = js.native
-  @JSImport("wol", "wake")
-  @js.native
-  def wake(mac: String, options: WakeOptions, callback: WakeCallback): js.Promise[Boolean] = js.native
+  @scala.inline
+  def createMagicPacket(mac: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createMagicPacket")(mac.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def wake(mac: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def wake(mac: String, callback: WakeCallback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def wake(mac: String, options: Unit, callback: WakeCallback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def wake(mac: String, options: WakeOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def wake(mac: String, options: WakeOptions, callback: WakeCallback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   type WakeCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[Boolean], Unit]
   
-  @js.native
   trait WakeOptions extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object WakeOptions {
     

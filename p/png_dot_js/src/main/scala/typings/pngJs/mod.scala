@@ -8,14 +8,15 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("png.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PNGReader {
+  class ^ protected ()
+    extends StObject
+       with PNGReader {
     def this(bytes: String) = this()
     def this(bytes: Buffer) = this()
     def this(bytes: ArrayBuffer) = this()
@@ -154,10 +155,9 @@ object mod {
   
   type ParseCallback = js.Function2[/* err */ js.UndefOr[Error], /* png */ PNG, Unit]
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var data: js.UndefOr[Boolean] = js.native
+    var data: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     

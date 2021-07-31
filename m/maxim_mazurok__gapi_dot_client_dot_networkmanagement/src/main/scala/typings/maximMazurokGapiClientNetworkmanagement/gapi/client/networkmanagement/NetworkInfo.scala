@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInfo extends StObject {
   
   /** Name of a Compute Engine network. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The IP range that matches the test. */
-  var matchedIpRange: js.UndefOr[String] = js.native
+  var matchedIpRange: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine network. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object NetworkInfo {
   

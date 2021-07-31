@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightEventsRequest extends StObject {
   
   /**
     * The insight's unique identifier. Use the GetInsightSummaries action to retrieve an InsightId.
     */
-  var InsightId: typings.awsSdk.xrayMod.InsightId = js.native
+  var InsightId: typings.awsSdk.xrayMod.InsightId
   
   /**
     * Used to retrieve at most the specified value of events.
     */
-  var MaxResults: js.UndefOr[GetInsightEventsMaxResults] = js.native
+  var MaxResults: js.UndefOr[GetInsightEventsMaxResults] = js.undefined
   
   /**
     * Specify the pagination token returned by a previous request to retrieve the next page of events. 
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetInsightEventsRequest {
   

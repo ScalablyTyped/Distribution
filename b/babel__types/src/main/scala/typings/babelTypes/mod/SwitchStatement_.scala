@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.SwitchStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait SwitchStatement_
-  extends BlockParent
+- typings.babelTypes.mod._Node because Already inherited */ trait SwitchStatement_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Scopable
      with Statement {
   
-  var cases: js.Array[SwitchCase_] = js.native
+  var cases: js.Array[SwitchCase_]
   
-  var discriminant: Expression = js.native
+  var discriminant: Expression
   
   @JSName("type")
-  var type_SwitchStatement_ : SwitchStatement = js.native
+  var type_SwitchStatement_ : SwitchStatement
 }
 object SwitchStatement_ {
   
   @scala.inline
-  def apply(cases: js.Array[SwitchCase_], discriminant: Expression, `type`: SwitchStatement): SwitchStatement_ = {
-    val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(cases: js.Array[SwitchCase_], discriminant: Expression): SwitchStatement_ = {
+    val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[SwitchStatement_]
   }
   

@@ -4,36 +4,34 @@ import typings.googleapis.anon.Latitude
 import typings.googleapis.anon.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPlace extends StObject {
   
   /**
     * The physical address of the place.
     */
-  var address: js.UndefOr[`8`] = js.native
+  var address: js.UndefOr[`8`] = js.undefined
   
   /**
     * The display name of the place.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the place.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies this resource as a place. Value: &quot;plus#place&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The position of the place.
     */
-  var position: js.UndefOr[Latitude] = js.native
+  var position: js.UndefOr[Latitude] = js.undefined
 }
 object SchemaPlace {
   

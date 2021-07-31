@@ -2,16 +2,14 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auto extends StObject {
   
   /**
     * Indicate if the chart should automatically get resized when the window gets resized.
     */
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
 }
 object Auto {
   

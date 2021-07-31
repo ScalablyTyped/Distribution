@@ -3,23 +3,21 @@ package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 import typings.googleapis.anon.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSiteVerificationWebResourceGettokenRequest extends StObject {
   
   /**
     * The site for which a verification token will be generated.
     */
-  var site: js.UndefOr[Identifier] = js.native
+  var site: js.UndefOr[Identifier] = js.undefined
   
   /**
     * The verification method that will be used to verify this site. For sites,
     * &#39;FILE&#39; or &#39;META&#39; methods may be used. For domains, only
     * &#39;DNS&#39; may be used.
     */
-  var verificationMethod: js.UndefOr[String] = js.native
+  var verificationMethod: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteVerificationWebResourceGettokenRequest {
   

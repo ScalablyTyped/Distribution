@@ -284,53 +284,49 @@ import typings.recast.optionsMod.Options
 import typings.recast.printerMod.PrintResultType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("recast", "parse")
+  @JSImport("recast", JSImport.Namespace)
   @js.native
-  def parse(source: String): js.Any = js.native
-  @JSImport("recast", "parse")
-  @js.native
-  def parse(source: String, options: PartialOptions): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("recast", "prettyPrint")
-  @js.native
-  def prettyPrint(node: ASTNode): PrintResultType = js.native
-  @JSImport("recast", "prettyPrint")
-  @js.native
-  def prettyPrint(node: ASTNode, options: Options): PrintResultType = js.native
+  @scala.inline
+  def parse(source: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(source: String, options: PartialOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("recast", "print")
-  @js.native
-  def print(node: ASTNode): PrintResultType = js.native
-  @JSImport("recast", "print")
-  @js.native
-  def print(node: ASTNode, options: Options): PrintResultType = js.native
+  @scala.inline
+  def prettyPrint(node: ASTNode): PrintResultType = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(node.asInstanceOf[js.Any]).asInstanceOf[PrintResultType]
+  @scala.inline
+  def prettyPrint(node: ASTNode, options: Options): PrintResultType = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrintResultType]
   
-  @JSImport("recast", "run")
-  @js.native
-  def run(transformer: Transformer): Unit = js.native
-  @JSImport("recast", "run")
-  @js.native
-  def run(transformer: Transformer, options: RunOptions): Unit = js.native
+  @scala.inline
+  def print(node: ASTNode): PrintResultType = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(node.asInstanceOf[js.Any]).asInstanceOf[PrintResultType]
+  @scala.inline
+  def print(node: ASTNode, options: Options): PrintResultType = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrintResultType]
+  
+  @scala.inline
+  def run(transformer: Transformer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(transformer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def run(transformer: Transformer, options: RunOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(transformer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object types {
     
     /* import warning: parser.TsParser#tsDeclVar Dropped IArray(builders, builtInTypes, defineMethod, eachField, finalize, getBuilderName, getFieldNames, getFieldValue, getSupertypeNames, NodePath, Path, PathVisitor, someField, Type, use, visit) */ object astNodesAreEquivalent {
       
-      @JSImport("recast", "types.astNodesAreEquivalent.<apply>")
-      @js.native
-      def apply(a: js.Any, b: js.Any): Boolean = js.native
-      @JSImport("recast", "types.astNodesAreEquivalent.<apply>")
-      @js.native
-      def apply(a: js.Any, b: js.Any, problemPath: js.Any): Boolean = js.native
+      @scala.inline
+      def apply(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(a: js.Any, b: js.Any, problemPath: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], problemPath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSImport("recast", "types.astNodesAreEquivalent.assert")
+      @JSImport("recast", "types.astNodesAreEquivalent")
       @js.native
-      def assert(a: js.Any, b: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def assert(a: js.Any, b: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     object namedTypes {
@@ -2025,10 +2021,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait RunOptions extends Options {
+  trait RunOptions
+    extends StObject
+       with Options {
     
-    var writeback: js.UndefOr[js.Function1[/* code */ String, Unit]] = js.native
+    var writeback: js.UndefOr[js.Function1[/* code */ String, Unit]] = js.undefined
   }
   object RunOptions {
     

@@ -3,7 +3,6 @@ package typings.typedoc.mod
 import typings.typedoc.anon.Caption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "MarkedLinksPlugin")
@@ -16,7 +15,10 @@ class MarkedLinksPlugin protected ()
 /* static members */
 object MarkedLinksPlugin {
   
-  @JSImport("typedoc", "MarkedLinksPlugin.splitLinkText")
+  @JSImport("typedoc", "MarkedLinksPlugin")
   @js.native
-  def splitLinkText(text: String): Caption = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
 }

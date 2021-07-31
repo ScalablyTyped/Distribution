@@ -3,7 +3,6 @@ package typings.muteStream
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,7 +23,6 @@ object mod {
     def unmute(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -33,13 +31,13 @@ object mod {
       * will work properly. Otherwise, pressing backspace will overwrite the prompt with the
       * replacement character, which is weird.
       */
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
     /**
       * Set to a string to replace each character with the specified string when muted.
       * (So you can show **** instead of the password, for example.)
       */
-    var replace: js.UndefOr[String] = js.native
+    var replace: js.UndefOr[String] = js.undefined
   }
   object Options {
     

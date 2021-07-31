@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitTemplateVersionRequest extends StObject {
   
   /** TemplateVersion obejct to create. */
-  var templateVersion: js.UndefOr[TemplateVersion] = js.native
+  var templateVersion: js.UndefOr[TemplateVersion] = js.undefined
 }
 object CommitTemplateVersionRequest {
   

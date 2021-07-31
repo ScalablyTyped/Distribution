@@ -3,7 +3,6 @@ package typings.timezoneJs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -73,26 +72,26 @@ object mod {
     def setDate(date: Double): Double = js.native
     
     def setFullYear(year: Double): Double = js.native
-    def setFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): Double = js.native
     def setFullYear(year: Double, month: Double): Double = js.native
     def setFullYear(year: Double, month: Double, date: Double): Double = js.native
+    def setFullYear(year: Double, month: Unit, date: Double): Double = js.native
     
     def setHours(hours: Double): Double = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): Double = js.native
-    def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): Double = js.native
     def setHours(hours: Double, min: Double): Double = js.native
-    def setHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
     def setHours(hours: Double, min: Double, sec: Double): Double = js.native
     def setHours(hours: Double, min: Double, sec: Double, ms: Double): Double = js.native
+    def setHours(hours: Double, min: Double, sec: Unit, ms: Double): Double = js.native
+    def setHours(hours: Double, min: Unit, sec: Double): Double = js.native
+    def setHours(hours: Double, min: Unit, sec: Double, ms: Double): Double = js.native
+    def setHours(hours: Double, min: Unit, sec: Unit, ms: Double): Double = js.native
     
     // Note the setters have a non-void return type. Date has them as well, according to TypeScript 
     def setMilliseconds(ms: Double): Double = js.native
     
     def setMinutes(min: Double): Double = js.native
-    def setMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
     def setMinutes(min: Double, sec: Double): Double = js.native
     def setMinutes(min: Double, sec: Double, ms: Double): Double = js.native
+    def setMinutes(min: Double, sec: Unit, ms: Double): Double = js.native
     
     def setMonth(month: Double): Double = js.native
     def setMonth(month: Double, date: Double): Double = js.native
@@ -107,25 +106,25 @@ object mod {
     def setUTCDate(date: Double): Double = js.native
     
     def setUTCFullYear(year: Double): Double = js.native
-    def setUTCFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): Double = js.native
     def setUTCFullYear(year: Double, month: Double): Double = js.native
     def setUTCFullYear(year: Double, month: Double, date: Double): Double = js.native
+    def setUTCFullYear(year: Double, month: Unit, date: Double): Double = js.native
     
     def setUTCHours(hours: Double): Double = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): Double = js.native
-    def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): Double = js.native
     def setUTCHours(hours: Double, min: Double): Double = js.native
-    def setUTCHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
     def setUTCHours(hours: Double, min: Double, sec: Double): Double = js.native
     def setUTCHours(hours: Double, min: Double, sec: Double, ms: Double): Double = js.native
+    def setUTCHours(hours: Double, min: Double, sec: Unit, ms: Double): Double = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Double): Double = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Double, ms: Double): Double = js.native
+    def setUTCHours(hours: Double, min: Unit, sec: Unit, ms: Double): Double = js.native
     
     def setUTCMilliseconds(ms: Double): Double = js.native
     
     def setUTCMinutes(min: Double): Double = js.native
-    def setUTCMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
     def setUTCMinutes(min: Double, sec: Double): Double = js.native
     def setUTCMinutes(min: Double, sec: Double, ms: Double): Double = js.native
+    def setUTCMinutes(min: Double, sec: Unit, ms: Double): Double = js.native
     
     def setUTCMonth(month: Double): Double = js.native
     def setUTCMonth(month: Double, date: Double): Double = js.native
@@ -187,16 +186,15 @@ object mod {
     var zoneFileBasePath: String = js.native
   }
   
-  @js.native
   trait TimezoneJsOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.native
+    var success: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object TimezoneJsOptions {
     

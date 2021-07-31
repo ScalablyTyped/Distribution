@@ -3,33 +3,31 @@ package typings.amapJsApiTransfer
 import typings.amapJsApi.AMap.LocationValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Destination extends StObject {
     
     /**
       * 终点坐标
       */
-    var destination: LocationValue = js.native
+    var destination: LocationValue
     
     /**
       * 终点名称
       */
-    var destinationName: js.UndefOr[String] = js.native
+    var destinationName: js.UndefOr[String] = js.undefined
     
     /**
       * 起点坐标
       */
-    var origin: LocationValue = js.native
+    var origin: LocationValue
     
     /**
       * 起点名称
       */
-    var originName: js.UndefOr[String] = js.native
+    var originName: js.UndefOr[String] = js.undefined
   }
   object Destination {
     
@@ -62,10 +60,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var info: String = js.native
+    var info: String
   }
   object Info {
     

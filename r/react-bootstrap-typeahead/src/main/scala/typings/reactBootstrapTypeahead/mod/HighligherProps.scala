@@ -3,15 +3,13 @@ package typings.reactBootstrapTypeahead.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighligherProps extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
 }
 object HighligherProps {
   

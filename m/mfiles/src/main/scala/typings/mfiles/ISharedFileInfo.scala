@@ -3,23 +3,21 @@ package typings.mfiles
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISharedFileInfo extends StObject {
   
-  val ChangeTimeUtc: Date = js.native
+  val ChangeTimeUtc: Date
   
-  def Clone(): ISharedFileInfo = js.native
+  def Clone(): ISharedFileInfo
   
-  val Extension: String = js.native
+  val Extension: String
   
-  val LogicalSize: Double = js.native
+  val LogicalSize: Double
   
-  val LogicalSize_32bit: Double = js.native
+  val LogicalSize_32bit: Double
   
-  val Title: String = js.native
+  val Title: String
 }
 object ISharedFileInfo {
   

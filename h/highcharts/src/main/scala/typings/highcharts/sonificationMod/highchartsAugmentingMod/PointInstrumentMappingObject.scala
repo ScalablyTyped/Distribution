@@ -2,13 +2,11 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define the parameter mapping for an instrument.
   */
-@js.native
 trait PointInstrumentMappingObject extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait PointInstrumentMappingObject extends StObject {
     * milliseconds. It receives two arguments: The point, and the
     * dataExtremes.
     */
-  var duration: Double | String | js.Function = js.native
+  var duration: Double | String | js.Function
   
   /**
     * Define the frequency of the instrument. This can be a string with a
@@ -40,7 +38,7 @@ trait PointInstrumentMappingObject extends StObject {
     * and 1 is the end. The function should return the frequency of the
     * note as a number (in Hz).
     */
-  var frequency: Double | String | js.Function = js.native
+  var frequency: Double | String | js.Function
   
   /**
     * Define the panning of the instrument. This can be a string with a
@@ -57,7 +55,7 @@ trait PointInstrumentMappingObject extends StObject {
     * and 1 is the end. The function should return the panning of the note
     * as a number between -1 and 1.
     */
-  var pan: js.UndefOr[Double | String | js.Function] = js.native
+  var pan: js.UndefOr[Double | String | js.Function] = js.undefined
   
   /**
     * Define the volume of the instrument. This can be a string with a data
@@ -73,7 +71,7 @@ trait PointInstrumentMappingObject extends StObject {
     * the end. The function should return the volume of the note as a
     * number between 0 and 1.
     */
-  var volume: Double | String | js.Function = js.native
+  var volume: Double | String | js.Function
 }
 object PointInstrumentMappingObject {
   

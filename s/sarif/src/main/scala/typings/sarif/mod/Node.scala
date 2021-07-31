@@ -2,36 +2,34 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
   /**
     * Array of child nodes.
     */
-  var children: js.UndefOr[js.Array[Node]] = js.native
+  var children: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * A string that uniquely identifies the node within its graph.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A short description of the node.
     */
-  var label: js.UndefOr[Message] = js.native
+  var label: js.UndefOr[Message] = js.undefined
   
   /**
     * A code location associated with the node.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the node.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object Node {
   

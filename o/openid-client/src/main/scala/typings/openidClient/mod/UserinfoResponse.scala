@@ -4,50 +4,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openidClient.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserinfoResponse
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var address: js.UndefOr[Dictkey] = js.native
+  var address: js.UndefOr[Dictkey] = js.undefined
   
-  var birthdate: js.UndefOr[String] = js.native
+  var birthdate: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
-  var family_name: js.UndefOr[String] = js.native
+  var family_name: js.UndefOr[String] = js.undefined
   
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
-  var given_name: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var middle_name: js.UndefOr[String] = js.native
+  var middle_name: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
-  var picture: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[String] = js.undefined
   
-  var preferred_username: js.UndefOr[String] = js.native
+  var preferred_username: js.UndefOr[String] = js.undefined
   
-  var profile: js.UndefOr[String] = js.native
+  var profile: js.UndefOr[String] = js.undefined
   
-  var sub: String = js.native
+  var sub: String
   
-  var updated_at: js.UndefOr[Double] = js.native
+  var updated_at: js.UndefOr[Double] = js.undefined
   
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
   
-  var zoneinfo: js.UndefOr[String] = js.native
+  var zoneinfo: js.UndefOr[String] = js.undefined
 }
 object UserinfoResponse {
   

@@ -9,68 +9,39 @@ import typings.searchParams.encodeMod.IOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeNodeMod {
   
   @JSImport("route-node/dist/RouteNode", "RouteNode")
   @js.native
-  class RouteNode () extends Route {
+  class RouteNode ()
+    extends StObject
+       with Route {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], path: String) = this()
     def this(name: String, path: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], childRoutes: js.Array[Route]) = this()
-    def this(name: js.UndefOr[scala.Nothing], path: String, childRoutes: js.Array[Route]) = this()
-    def this(name: String, path: js.UndefOr[scala.Nothing], childRoutes: js.Array[Route]) = this()
+    def this(name: Unit, path: String) = this()
     def this(name: String, path: String, childRoutes: js.Array[Route]) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      childRoutes: js.UndefOr[scala.Nothing],
-      options: RouteNodeOptions
-    ) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      childRoutes: js.Array[Route],
-      options: RouteNodeOptions
-    ) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      path: String,
-      childRoutes: js.UndefOr[scala.Nothing],
-      options: RouteNodeOptions
-    ) = this()
-    def this(
-      name: js.UndefOr[scala.Nothing],
-      path: String,
-      childRoutes: js.Array[Route],
-      options: RouteNodeOptions
-    ) = this()
-    def this(
-      name: String,
-      path: js.UndefOr[scala.Nothing],
-      childRoutes: js.UndefOr[scala.Nothing],
-      options: RouteNodeOptions
-    ) = this()
-    def this(
-      name: String,
-      path: js.UndefOr[scala.Nothing],
-      childRoutes: js.Array[Route],
-      options: RouteNodeOptions
-    ) = this()
-    def this(name: String, path: String, childRoutes: js.UndefOr[scala.Nothing], options: RouteNodeOptions) = this()
+    def this(name: String, path: Unit, childRoutes: js.Array[Route]) = this()
+    def this(name: Unit, path: String, childRoutes: js.Array[Route]) = this()
+    def this(name: Unit, path: Unit, childRoutes: js.Array[Route]) = this()
     def this(name: String, path: String, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
+    def this(name: String, path: String, childRoutes: Unit, options: RouteNodeOptions) = this()
+    def this(name: String, path: Unit, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
+    def this(name: String, path: Unit, childRoutes: Unit, options: RouteNodeOptions) = this()
+    def this(name: Unit, path: String, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
+    def this(name: Unit, path: String, childRoutes: Unit, options: RouteNodeOptions) = this()
+    def this(name: Unit, path: Unit, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
+    def this(name: Unit, path: Unit, childRoutes: Unit, options: RouteNodeOptions) = this()
     
     var absolute: Boolean = js.native
     
     def add(route: js.Array[Route]): this.type = js.native
-    def add(route: js.Array[Route], cb: js.UndefOr[scala.Nothing], sort: Boolean): this.type = js.native
+    def add(route: js.Array[Route], cb: Unit, sort: Boolean): this.type = js.native
     def add(route: js.Array[Route], cb: Callback): this.type = js.native
     def add(route: js.Array[Route], cb: Callback, sort: Boolean): this.type = js.native
     def add(route: Route): this.type = js.native
-    def add(route: Route, cb: js.UndefOr[scala.Nothing], sort: Boolean): this.type = js.native
+    def add(route: Route, cb: Unit, sort: Boolean): this.type = js.native
     def add(route: Route, cb: Callback): this.type = js.native
     def add(route: Route, cb: Callback, sort: Boolean): this.type = js.native
     
@@ -79,12 +50,12 @@ object routeNodeMod {
     var addRouteNode: js.Any = js.native
     
     def buildPath(routeName: String): String = js.native
-    def buildPath(routeName: String, params: js.UndefOr[scala.Nothing], options: BuildOptions): String = js.native
-    def buildPath(routeName: String, params: Record[String, _]): String = js.native
-    def buildPath(routeName: String, params: Record[String, _], options: BuildOptions): String = js.native
+    def buildPath(routeName: String, params: Unit, options: BuildOptions): String = js.native
+    def buildPath(routeName: String, params: Record[String, js.Any]): String = js.native
+    def buildPath(routeName: String, params: Record[String, js.Any], options: BuildOptions): String = js.native
     
     def buildState(name: String): RouteNodeState | Null = js.native
-    def buildState(name: String, params: Record[String, _]): RouteNodeState | Null = js.native
+    def buildState(name: String, params: Record[String, js.Any]): RouteNodeState | Null = js.native
     
     var checkParents: js.Any = js.native
     
@@ -114,7 +85,7 @@ object routeNodeMod {
     
     var parent: js.UndefOr[RouteNode] = js.native
     
-    var parser: (Path[Record[String, _]]) | Null = js.native
+    var parser: (Path[Record[String, js.Any]]) | Null = js.native
     
     var path: String = js.native
     
@@ -128,16 +99,15 @@ object routeNodeMod {
     def sortDescendants(): Unit = js.native
   }
   
-  @js.native
   trait BuildOptions extends StObject {
     
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
-    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.native
+    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.undefined
     
-    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.native
+    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.undefined
     
-    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.native
+    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
   }
   object BuildOptions {
     
@@ -176,24 +146,27 @@ object routeNodeMod {
     }
   }
   
-  type Callback = js.Function1[/* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Callback extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
+  
   trait MatchOptions extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
-    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.native
+    var queryParamsMode: js.UndefOr[QueryParamsMode] = js.undefined
     
-    var strictTrailingSlash: js.UndefOr[Boolean] = js.native
+    var strictTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var strongMatching: js.UndefOr[Boolean] = js.native
+    var strongMatching: js.UndefOr[Boolean] = js.undefined
     
-    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.native
+    var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.undefined
     
-    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.native
+    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
   }
   object MatchOptions {
     
@@ -250,17 +223,16 @@ object routeNodeMod {
     }
   }
   
-  @js.native
   trait MatchResponse extends StObject {
     
-    var params: Record[String, _] = js.native
+    var params: Record[String, js.Any]
     
-    var segments: js.Array[RouteNode] = js.native
+    var segments: js.Array[RouteNode]
   }
   object MatchResponse {
     
     @scala.inline
-    def apply(params: Record[String, _], segments: js.Array[RouteNode]): MatchResponse = {
+    def apply(params: Record[String, js.Any], segments: js.Array[RouteNode]): MatchResponse = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchResponse]
     }
@@ -269,7 +241,7 @@ object routeNodeMod {
     implicit class MatchResponseMutableBuilder[Self <: MatchResponse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSegments(value: js.Array[RouteNode]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
@@ -303,14 +275,14 @@ object routeNodeMod {
   */
   trait Route extends StObject
   
-  @js.native
   trait RouteDefinition
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with Route {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
   }
   object RouteDefinition {
     
@@ -331,16 +303,15 @@ object routeNodeMod {
     }
   }
   
-  @js.native
   trait RouteNodeOptions extends StObject {
     
-    var finalSort: js.UndefOr[Boolean] = js.native
+    var finalSort: js.UndefOr[Boolean] = js.undefined
     
-    var onAdd: js.UndefOr[Callback] = js.native
+    var onAdd: js.UndefOr[Callback] = js.undefined
     
-    var parent: js.UndefOr[RouteNode] = js.native
+    var parent: js.UndefOr[RouteNode] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object RouteNodeOptions {
     
@@ -360,7 +331,7 @@ object routeNodeMod {
       def setFinalSortUndefined: Self = StObject.set(x, "finalSort", js.undefined)
       
       @scala.inline
-      def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      def setOnAdd(value: Callback): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
@@ -379,19 +350,18 @@ object routeNodeMod {
     }
   }
   
-  @js.native
   trait RouteNodeState extends StObject {
     
-    var meta: RouteNodeStateMeta = js.native
+    var meta: RouteNodeStateMeta
     
-    var name: String = js.native
+    var name: String
     
-    var params: Record[String, _] = js.native
+    var params: Record[String, js.Any]
   }
   object RouteNodeState {
     
     @scala.inline
-    def apply(meta: RouteNodeStateMeta, name: String, params: Record[String, _]): RouteNodeState = {
+    def apply(meta: RouteNodeStateMeta, name: String, params: Record[String, js.Any]): RouteNodeState = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteNodeState]
     }
@@ -406,7 +376,7 @@ object routeNodeMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   

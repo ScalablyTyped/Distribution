@@ -7,17 +7,15 @@ import typings.reactBase16Styling.anon.PartialStyling
 import typings.reactBase16Styling.reactBase16StylingBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Styling extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var style: Properties[String | Double] = js.native
+    var style: Properties[String | Double]
   }
   object Styling {
     
@@ -38,10 +36,11 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait StylingConfig extends /* name */ StringDictionary[StylingValue | String | Base16Theme] {
+  trait StylingConfig
+    extends StObject
+       with /* name */ StringDictionary[StylingValue | String | Base16Theme] {
     
-    var extend: js.UndefOr[String | Base16Theme | StylingValue] = js.native
+    var extend: js.UndefOr[String | Base16Theme | StylingValue] = js.undefined
   }
   object StylingConfig {
     
@@ -58,22 +57,26 @@ object typesMod {
       def setExtend(value: String | Base16Theme | StylingValue): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setExtendFunction2(value: (/* styling */ Styling, /* repeated */ js.Any) => PartialStyling): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
-      
-      @scala.inline
       def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     }
   }
   
-  type StylingFunction = js.Function2[
-    /* keys */ js.UndefOr[String | `false` | (js.Array[js.UndefOr[String | `false`]])], 
-    /* repeated */ js.Any, 
-    Styling
-  ]
+  @js.native
+  trait StylingFunction extends StObject {
+    
+    def apply(keys: String, rest: js.Any*): Styling = js.native
+    def apply(keys: js.Array[js.UndefOr[String | `false`]], rest: js.Any*): Styling = js.native
+    def apply(keys: Unit, rest: js.Any*): Styling = js.native
+    def apply(keys: `false`, rest: js.Any*): Styling = js.native
+  }
   
   type StylingValue = String | (Properties[String | Double]) | StylingValueFunction
   
-  type StylingValueFunction = js.Function2[/* styling */ Styling, /* repeated */ js.Any, PartialStyling]
+  @js.native
+  trait StylingValueFunction extends StObject {
+    
+    def apply(styling: Styling, rest: js.Any*): PartialStyling = js.native
+  }
   
   type Theme = String | Base16Theme | StylingConfig
 }

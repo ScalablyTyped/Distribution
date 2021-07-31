@@ -9,22 +9,23 @@ import typings.wavesurferJs.mod.WaveSurferPlugin
 import typings.wavesurferJs.mod.XHROptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait Instantiable extends Instantiable2[/* container */ HTMLElement, /* params */ WaveSurferParams, WaveRenderer]
+  trait Instantiable
+    extends StObject
+       with Instantiable2[/* container */ HTMLElement, /* params */ WaveSurferParams, WaveRenderer]
   
   @js.native
   trait InstantiableWaveSurferPlugin
-    extends Instantiable2[/* params */ js.Object, /* ws */ WaveSurfer, WaveSurferPlugin]
+    extends StObject
+       with Instantiable2[/* params */ js.Object, /* ws */ WaveSurfer, WaveSurferPlugin]
   
-  @js.native
   trait Xhr extends StObject {
     
-    var xhr: js.UndefOr[XHROptions] = js.native
+    var xhr: js.UndefOr[XHROptions] = js.undefined
   }
   object Xhr {
     

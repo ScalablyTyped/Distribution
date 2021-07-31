@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageClassAnalysis extends StObject {
   
   /**
     * Specifies how data related to the storage class analysis for an Amazon S3 bucket should be exported.
     */
-  var DataExport: js.UndefOr[StorageClassAnalysisDataExport] = js.native
+  var DataExport: js.UndefOr[StorageClassAnalysisDataExport] = js.undefined
 }
 object StorageClassAnalysis {
   

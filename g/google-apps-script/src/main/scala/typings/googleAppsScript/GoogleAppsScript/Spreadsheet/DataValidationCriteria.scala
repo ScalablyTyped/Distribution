@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,77 +40,127 @@ sealed trait DataValidationCriteria extends StObject
 object DataValidationCriteria extends StObject {
   
   @js.native
-  sealed trait CHECKBOX extends DataValidationCriteria
+  sealed trait CHECKBOX
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait CUSTOM_FORMULA extends DataValidationCriteria
+  sealed trait CUSTOM_FORMULA
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_AFTER extends DataValidationCriteria
+  sealed trait DATE_AFTER
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_BEFORE extends DataValidationCriteria
+  sealed trait DATE_BEFORE
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_BETWEEN extends DataValidationCriteria
+  sealed trait DATE_BETWEEN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_EQUAL_TO extends DataValidationCriteria
+  sealed trait DATE_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_IS_VALID_DATE extends DataValidationCriteria
+  sealed trait DATE_IS_VALID_DATE
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_NOT_BETWEEN extends DataValidationCriteria
+  sealed trait DATE_NOT_BETWEEN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_ON_OR_AFTER extends DataValidationCriteria
+  sealed trait DATE_ON_OR_AFTER
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait DATE_ON_OR_BEFORE extends DataValidationCriteria
+  sealed trait DATE_ON_OR_BEFORE
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_BETWEEN extends DataValidationCriteria
+  sealed trait NUMBER_BETWEEN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_EQUAL_TO extends DataValidationCriteria
+  sealed trait NUMBER_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_GREATER_THAN extends DataValidationCriteria
+  sealed trait NUMBER_GREATER_THAN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_GREATER_THAN_OR_EQUAL_TO extends DataValidationCriteria
+  sealed trait NUMBER_GREATER_THAN_OR_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_LESS_THAN extends DataValidationCriteria
+  sealed trait NUMBER_LESS_THAN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_LESS_THAN_OR_EQUAL_TO extends DataValidationCriteria
+  sealed trait NUMBER_LESS_THAN_OR_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_NOT_BETWEEN extends DataValidationCriteria
+  sealed trait NUMBER_NOT_BETWEEN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait NUMBER_NOT_EQUAL_TO extends DataValidationCriteria
+  sealed trait NUMBER_NOT_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait TEXT_CONTAINS extends DataValidationCriteria
+  sealed trait TEXT_CONTAINS
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait TEXT_DOES_NOT_CONTAIN extends DataValidationCriteria
+  sealed trait TEXT_DOES_NOT_CONTAIN
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait TEXT_EQUAL_TO extends DataValidationCriteria
+  sealed trait TEXT_EQUAL_TO
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait TEXT_IS_VALID_EMAIL extends DataValidationCriteria
+  sealed trait TEXT_IS_VALID_EMAIL
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait TEXT_IS_VALID_URL extends DataValidationCriteria
+  sealed trait TEXT_IS_VALID_URL
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait VALUE_IN_LIST extends DataValidationCriteria
+  sealed trait VALUE_IN_LIST
+    extends StObject
+       with DataValidationCriteria
   
   @js.native
-  sealed trait VALUE_IN_RANGE extends DataValidationCriteria
+  sealed trait VALUE_IN_RANGE
+    extends StObject
+       with DataValidationCriteria
 }

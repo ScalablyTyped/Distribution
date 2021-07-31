@@ -4,37 +4,35 @@ import typings.node.Buffer
 import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PeerCertificate extends StObject {
   
-  var exponent: String = js.native
+  var exponent: String
   
-  var ext_key_usage: js.Array[String] = js.native
+  var ext_key_usage: js.Array[String]
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var fingerprint256: String = js.native
+  var fingerprint256: String
   
-  var infoAccess: Dict[js.Array[String]] = js.native
+  var infoAccess: Dict[js.Array[String]]
   
-  var issuer: Certificate = js.native
+  var issuer: Certificate
   
-  var modulus: String = js.native
+  var modulus: String
   
-  var raw: Buffer = js.native
+  var raw: Buffer
   
-  var serialNumber: String = js.native
+  var serialNumber: String
   
-  var subject: Certificate = js.native
+  var subject: Certificate
   
-  var subjectaltname: String = js.native
+  var subjectaltname: String
   
-  var valid_from: String = js.native
+  var valid_from: String
   
-  var valid_to: String = js.native
+  var valid_to: String
 }
 object PeerCertificate {
   

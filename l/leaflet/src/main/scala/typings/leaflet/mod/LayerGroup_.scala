@@ -7,15 +7,14 @@ import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.MultiPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "LayerGroup")
 @js.native
 class LayerGroup_[P] () extends Layer {
   def this(layers: js.Array[Layer]) = this()
-  def this(layers: js.UndefOr[scala.Nothing], options: LayerOptions) = this()
   def this(layers: js.Array[Layer], options: LayerOptions) = this()
+  def this(layers: Unit, options: LayerOptions) = this()
   
   /**
     * Adds the given layer to the group.

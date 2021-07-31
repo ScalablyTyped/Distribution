@@ -11,16 +11,15 @@ import typings.mongodb.mongodbStrings.`SCRAM-SHA-1`
 import typings.mongodb.mongodbStrings.`SCRAM-SHA-256`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mongodb.mod.HighAvailabilityOptions because var conflicts: domainsEnabled, haInterval, readPreference. Inlined ha, readPreferenceTags
 - typings.mongodb.mod.SSLOptions because Already inherited
 - typings.mongodb.mod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary
-- typings.mongodb.mod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ @js.native
-trait MongoClientOptions
-  extends DbCreateOptions
+- typings.mongodb.mod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
+  extends StObject
+     with DbCreateOptions
      with ServerOptions
      with SocketOptions
      with TLSOptions
@@ -29,81 +28,81 @@ trait MongoClientOptions
   /**
     * Default: 15; Cutoff latency point in MS for MongoS proxy selection
     */
-  var acceptableLatencyMS: js.UndefOr[scala.Double] = js.native
+  var acceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The name of the application that created this MongoClient instance.
     */
-  var appname: js.UndefOr[String] = js.native
+  var appname: js.UndefOr[String] = js.undefined
   
   /**
     * Authentication credentials
     */
-  var auth: js.UndefOr[Password] = js.native
+  var auth: js.UndefOr[Password] = js.undefined
   
   /**
     * Mechanism for authentication: DEFAULT, GSSAPI, PLAIN, MONGODB-X509, 'MONGODB-CR', SCRAM-SHA-1 or SCRAM-SHA-256
     */
   var authMechanism: js.UndefOr[
     DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
-  ] = js.native
+  ] = js.undefined
   
   /** Type of compression to use */
-  var compression: js.UndefOr[Compressors] = js.native
+  var compression: js.UndefOr[Compressors] = js.undefined
   
-  var connectWithNoPrimary: js.UndefOr[Boolean] = js.native
+  var connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true; Turn on high availability monitoring.
     */
-  var ha: js.UndefOr[Boolean] = js.native
+  var ha: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom logger object
     */
-  var logger: js.UndefOr[js.Object | log] = js.native
+  var logger: js.UndefOr[js.Object | log] = js.undefined
   
   /**
     * The logging level (error/warn/info/debug)
     */
-  var loggerLevel: js.UndefOr[String] = js.native
+  var loggerLevel: js.UndefOr[String] = js.undefined
   
   /**
     * The max staleness to secondary reads (values under 10 seconds cannot be guaranteed);
     */
-  var maxStalenessSeconds: js.UndefOr[scala.Double] = js.native
+  var maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * number of retries for a tailable cursor
     * @default 5
     */
-  var numberOfRetries: js.UndefOr[scala.Double] = js.native
+  var numberOfRetries: js.UndefOr[scala.Double] = js.undefined
   
   /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
-  var readPreferenceTags: js.UndefOr[js.Array[String]] = js.native
+  var readPreferenceTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the replicaset to connect to.
     */
-  var replicaSet: js.UndefOr[String] = js.native
+  var replicaSet: js.UndefOr[String] = js.undefined
   
   /**
     * Default: 15 ; Range of servers to pick when using NEAREST (lowest ping ms + the latency fence, ex: range of 1 to (1 + 15) ms)
     */
-  var secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.native
+  var secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Determines whether or not to use the new url parser. Enables the new, spec-compliant
     * url parser shipped in the core driver. This url parser fixes a number of problems with
     * the original parser, and aims to outright replace that parser in the near future.
     */
-  var useNewUrlParser: js.UndefOr[Boolean] = js.native
+  var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Validate MongoClient passed in options for correctness.
     * Default: false
     */
-  var validateOptions: js.UndefOr[js.Object | Boolean] = js.native
+  var validateOptions: js.UndefOr[js.Object | Boolean] = js.undefined
 }
 object MongoClientOptions {
   

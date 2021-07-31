@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDefinedFunctionResource extends StObject {
   
   /**
     * [Pick one] An inline resource that contains code for a user-defined function (UDF). Providing a inline code resource is equivalent to providing a URI for a file containing the same
     * code.
     */
-  var inlineCode: js.UndefOr[String] = js.native
+  var inlineCode: js.UndefOr[String] = js.undefined
   
   /** [Pick one] A code resource to load from a Google Cloud Storage URI (gs://bucket/path). */
-  var resourceUri: js.UndefOr[String] = js.native
+  var resourceUri: js.UndefOr[String] = js.undefined
 }
 object UserDefinedFunctionResource {
   

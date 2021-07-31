@@ -2,7 +2,6 @@ package typings.pkgDir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,22 +29,22 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def apply(cwd: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
   @JSImport("pkg-dir", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("pkg-dir", JSImport.Namespace)
-  @js.native
-  def apply(cwd: String): js.Promise[js.UndefOr[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously find the root directory of a Node.js project or npm package.
   	@param cwd - Directory to start from. Default: `process.cwd()`.
   	@returns The project root path or `undefined` if it couldn't be found.
   	*/
-  @JSImport("pkg-dir", "sync")
-  @js.native
-  def sync(): js.UndefOr[String] = js.native
-  @JSImport("pkg-dir", "sync")
-  @js.native
-  def sync(cwd: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def sync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sync(cwd: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

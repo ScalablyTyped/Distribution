@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,48 +22,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param lastX - The last x coordinate.
   * @param lastY - The last y coordinate.
   */
-@js.native
-trait ElementMouseEvent extends ElementInputEvent {
+trait ElementMouseEvent
+  extends StObject
+     with ElementInputEvent {
   
   /**
     * Whether the alt key was pressed.
     */
-  var altKey: Boolean = js.native
+  var altKey: Boolean
   
   /**
     * The mouse button.
     */
-  var button: Double = js.native
+  var button: Double
   
   /**
     * Whether the ctrl key was pressed.
     */
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * The amount of horizontal movement of the cursor.
     */
-  var dx: Double = js.native
+  var dx: Double
   
   /**
     * The amount of vertical movement of the cursor.
     */
-  var dy: Double = js.native
+  var dy: Double
   
   /**
     * Whether the meta key was pressed.
     */
-  var metaKey: Boolean = js.native
+  var metaKey: Boolean
   
   /**
     * Whether the shift key was pressed.
     */
-  var shiftKey: Boolean = js.native
+  var shiftKey: Boolean
   
   /**
     * The amount of the wheel movement.
     */
-  var wheelDelta: Double = js.native
+  var wheelDelta: Double
 }
 object ElementMouseEvent {
   

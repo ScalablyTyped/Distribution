@@ -4,15 +4,15 @@ import typings.kendoUi.JQueryEventObject
 import typings.kendoUi.kendo.mobile.ui.TouchEventOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchDoubletapEvent extends TouchEvent {
+trait TouchDoubletapEvent
+  extends StObject
+     with TouchEvent {
   
-  var event: js.UndefOr[JQueryEventObject] = js.native
+  var event: js.UndefOr[JQueryEventObject] = js.undefined
   
-  var touch: js.UndefOr[TouchEventOptions] = js.native
+  var touch: js.UndefOr[TouchEventOptions] = js.undefined
 }
 object TouchDoubletapEvent {
   

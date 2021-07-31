@@ -3,42 +3,36 @@ package typings.geoipCountry
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geoip-country", "cmp")
+  @JSImport("geoip-country", JSImport.Namespace)
   @js.native
-  def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("geoip-country", "lookup")
-  @js.native
-  def lookup(ip: String): Null | Lookup_ = js.native
-  @JSImport("geoip-country", "lookup")
-  @js.native
-  def lookup(ip: Double): Null | Lookup_ = js.native
+  @scala.inline
+  def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Null | Lookup_]
   
-  @JSImport("geoip-country", "pretty")
-  @js.native
-  def pretty(ip: String): String = js.native
-  @JSImport("geoip-country", "pretty")
-  @js.native
-  def pretty(ip: js.Array[String | Double]): String = js.native
-  @JSImport("geoip-country", "pretty")
-  @js.native
-  def pretty(ip: Double): String = js.native
+  @scala.inline
+  def lookup(ip: String): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
+  @scala.inline
+  def lookup(ip: Double): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
   
-  @JSImport("geoip-country", "startWatchingDataUpdate")
-  @js.native
-  def startWatchingDataUpdate(): Unit = js.native
-  @JSImport("geoip-country", "startWatchingDataUpdate")
-  @js.native
-  def startWatchingDataUpdate(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  @scala.inline
+  def pretty(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pretty(ip: js.Array[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pretty(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("geoip-country", "stopWatchingDataUpdate")
-  @js.native
-  def stopWatchingDataUpdate(): Unit = js.native
+  @scala.inline
+  def startWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")().asInstanceOf[Unit]
+  @scala.inline
+  def startWatchingDataUpdate(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stopWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")().asInstanceOf[Unit]
   
   type CmpArgs = Double | js.Array[Double]
   
@@ -50,14 +44,13 @@ object mod {
   */
   type CmpResult = _CmpResult | Null
   
-  @js.native
   trait Lookup_ extends StObject {
     
     /** 2 letter ISO-3166-1 country code https://www.iban.com/country-codes */
-    var country: String = js.native
+    var country: String
     
     /** [ <low bound of IP block>, <high bound of IP block> ] */
-    var range: js.Tuple2[Double, Double] = js.native
+    var range: js.Tuple2[Double, Double]
   }
   object Lookup_ {
     

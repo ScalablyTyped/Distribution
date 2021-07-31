@@ -12,7 +12,7 @@ Contains unstable, experimental code
 | Keywords           | graphql, relay |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 4354 |
+| # downloads        | 1252 |
 | # stars            | 0 |
 
 ## Links

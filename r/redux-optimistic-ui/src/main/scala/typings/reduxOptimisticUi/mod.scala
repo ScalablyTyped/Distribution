@@ -5,10 +5,13 @@ import typings.redux.mod.Reducer
 import typings.reduxOptimisticUi.anon.Optimistic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("redux-optimistic-ui", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-optimistic-ui", "BEGIN")
   @js.native
@@ -22,21 +25,17 @@ object mod {
   @js.native
   val REVERT: /* "@@optimist/REVERT" */ String = js.native
   
-  @JSImport("redux-optimistic-ui", "ensureState")
-  @js.native
-  def ensureState[TState](state: TState): TState = js.native
-  @JSImport("redux-optimistic-ui", "ensureState")
-  @js.native
-  def ensureState[TState](state: OptimisticState[TState]): TState = js.native
+  @scala.inline
+  def ensureState[TState](state: TState): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
+  @scala.inline
+  def ensureState[TState](state: OptimisticState[TState]): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
   
-  @JSImport("redux-optimistic-ui", "optimistic")
-  @js.native
-  def optimistic[TState](reducer: Reducer[TState, AnyAction]): Reducer[OptimisticState[TState], AnyAction] = js.native
+  @scala.inline
+  def optimistic[TState](reducer: Reducer[TState, AnyAction]): Reducer[OptimisticState[TState], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("optimistic")(reducer.asInstanceOf[js.Any]).asInstanceOf[Reducer[OptimisticState[TState], AnyAction]]
   
-  @js.native
   trait OptimisticAction extends StObject {
     
-    var meta: Optimistic = js.native
+    var meta: Optimistic
   }
   object OptimisticAction {
     
@@ -54,24 +53,23 @@ object mod {
     }
   }
   
-  @js.native
   trait OptimisticState[TState] extends StObject {
     
     /**
       * Before state
       */
-    var beforeState: TState = js.native
+    var beforeState: TState
     
     /**
       * Current state
       */
-    var current: TState = js.native
+    var current: TState
     
     /**
       * History list
       * List is Immutable.List<>
       */
-    var history: js.Any = js.native
+    var history: js.Any
   }
   object OptimisticState {
     
@@ -82,7 +80,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptimisticStateMutableBuilder[Self <: OptimisticState[_], TState] (val x: Self with OptimisticState[TState]) extends AnyVal {
+    implicit class OptimisticStateMutableBuilder[Self <: OptimisticState[?], TState] (val x: Self & OptimisticState[TState]) extends AnyVal {
       
       @scala.inline
       def setBeforeState(value: TState): Self = StObject.set(x, "beforeState", value.asInstanceOf[js.Any])

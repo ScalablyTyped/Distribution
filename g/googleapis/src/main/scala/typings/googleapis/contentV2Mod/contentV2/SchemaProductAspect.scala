@@ -2,26 +2,24 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductAspect extends StObject {
   
   /**
     * The name of the aspect.
     */
-  var aspectName: js.UndefOr[String] = js.native
+  var aspectName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the destination. Leave out to apply to all destinations.
     */
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the aspect is required, excluded or should be validated.
     */
-  var intention: js.UndefOr[String] = js.native
+  var intention: js.UndefOr[String] = js.undefined
 }
 object SchemaProductAspect {
   

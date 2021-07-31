@@ -10,9 +10,9 @@ Web3 module encode and decode EVM in/output.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-abi |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 154 |
-| # downloads        | 6088244 |
+| # releases         | 43 |
+| # dependents       | 178 |
+| # downloads        | 7403882 |
 | # stars            | 1 |
 
 ## Links

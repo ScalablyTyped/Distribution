@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,17 +23,17 @@ object mod {
     
     def log(logData: LogData): Unit = js.native
     
-    def logError(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
     def logError(message: String, category: String, data: js.Any*): Unit = js.native
+    def logError(message: String, category: Unit, data: js.Any*): Unit = js.native
     
-    def logInfo(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
     def logInfo(message: String, category: String, data: js.Any*): Unit = js.native
+    def logInfo(message: String, category: Unit, data: js.Any*): Unit = js.native
     
-    def logVerbose(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
     def logVerbose(message: String, category: String, data: js.Any*): Unit = js.native
+    def logVerbose(message: String, category: Unit, data: js.Any*): Unit = js.native
     
-    def logWarning(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
     def logWarning(message: String, category: String, data: js.Any*): Unit = js.native
+    def logWarning(message: String, category: Unit, data: js.Any*): Unit = js.native
     
     def on(ruleName: String, callback: js.Function1[/* logData */ LogData, Unit]): Unit = js.native
     
@@ -56,23 +55,31 @@ object mod {
   object Severity extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Severity with String] = js.native
+    def apply(value: String): js.UndefOr[Severity & String] = js.native
     
     @js.native
-    sealed trait Error extends Severity
-    /* "Error" */ val Error: typings.cyberblastLogger.mod.Severity.Error with String = js.native
+    sealed trait Error
+      extends StObject
+         with Severity
+    /* "Error" */ val Error: typings.cyberblastLogger.mod.Severity.Error & String = js.native
     
     @js.native
-    sealed trait Info extends Severity
-    /* "Info" */ val Info: typings.cyberblastLogger.mod.Severity.Info with String = js.native
+    sealed trait Info
+      extends StObject
+         with Severity
+    /* "Info" */ val Info: typings.cyberblastLogger.mod.Severity.Info & String = js.native
     
     @js.native
-    sealed trait Verbose extends Severity
-    /* "Verbose" */ val Verbose: typings.cyberblastLogger.mod.Severity.Verbose with String = js.native
+    sealed trait Verbose
+      extends StObject
+         with Severity
+    /* "Verbose" */ val Verbose: typings.cyberblastLogger.mod.Severity.Verbose & String = js.native
     
     @js.native
-    sealed trait Warning extends Severity
-    /* "Warning" */ val Warning: typings.cyberblastLogger.mod.Severity.Warning with String = js.native
+    sealed trait Warning
+      extends StObject
+         with Severity
+    /* "Warning" */ val Warning: typings.cyberblastLogger.mod.Severity.Warning & String = js.native
   }
   
   @js.native
@@ -82,37 +89,44 @@ object mod {
   object SeverityLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SeverityLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[SeverityLevel & Double] = js.native
     
     @js.native
-    sealed trait Error extends SeverityLevel
-    /* 4 */ val Error: typings.cyberblastLogger.mod.SeverityLevel.Error with Double = js.native
+    sealed trait Error
+      extends StObject
+         with SeverityLevel
+    /* 4 */ val Error: typings.cyberblastLogger.mod.SeverityLevel.Error & Double = js.native
     
     @js.native
-    sealed trait Info extends SeverityLevel
-    /* 2 */ val Info: typings.cyberblastLogger.mod.SeverityLevel.Info with Double = js.native
+    sealed trait Info
+      extends StObject
+         with SeverityLevel
+    /* 2 */ val Info: typings.cyberblastLogger.mod.SeverityLevel.Info & Double = js.native
     
     @js.native
-    sealed trait Verbose extends SeverityLevel
-    /* 1 */ val Verbose: typings.cyberblastLogger.mod.SeverityLevel.Verbose with Double = js.native
+    sealed trait Verbose
+      extends StObject
+         with SeverityLevel
+    /* 1 */ val Verbose: typings.cyberblastLogger.mod.SeverityLevel.Verbose & Double = js.native
     
     @js.native
-    sealed trait Warning extends SeverityLevel
-    /* 3 */ val Warning: typings.cyberblastLogger.mod.SeverityLevel.Warning with Double = js.native
+    sealed trait Warning
+      extends StObject
+         with SeverityLevel
+    /* 3 */ val Warning: typings.cyberblastLogger.mod.SeverityLevel.Warning & Double = js.native
   }
   
-  @js.native
   trait LogData extends StObject {
     
-    var category: String = js.native
+    var category: String
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var severity: Severity = js.native
+    var severity: Severity
     
-    var time: js.UndefOr[Date] = js.native
+    var time: js.UndefOr[Date] = js.undefined
   }
   object LogData {
     

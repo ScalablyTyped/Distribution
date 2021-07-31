@@ -2,63 +2,61 @@ package typings.reactMdElevation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `0`: String = js.native
+    var `0`: String
     
-    var `1`: String = js.native
+    var `1`: String
     
-    var `10`: String = js.native
+    var `10`: String
     
-    var `11`: String = js.native
+    var `11`: String
     
-    var `12`: String = js.native
+    var `12`: String
     
-    var `13`: String = js.native
+    var `13`: String
     
-    var `14`: String = js.native
+    var `14`: String
     
-    var `15`: String = js.native
+    var `15`: String
     
-    var `16`: String = js.native
+    var `16`: String
     
-    var `17`: String = js.native
+    var `17`: String
     
-    var `18`: String = js.native
+    var `18`: String
     
-    var `19`: String = js.native
+    var `19`: String
     
-    var `2`: String = js.native
+    var `2`: String
     
-    var `20`: String = js.native
+    var `20`: String
     
-    var `21`: String = js.native
+    var `21`: String
     
-    var `22`: String = js.native
+    var `22`: String
     
-    var `23`: String = js.native
+    var `23`: String
     
-    var `24`: String = js.native
+    var `24`: String
     
-    var `3`: String = js.native
+    var `3`: String
     
-    var `4`: String = js.native
+    var `4`: String
     
-    var `5`: String = js.native
+    var `5`: String
     
-    var `6`: String = js.native
+    var `6`: String
     
-    var `7`: String = js.native
+    var `7`: String
     
-    var `8`: String = js.native
+    var `8`: String
     
-    var `9`: String = js.native
+    var `9`: String
   }
   object `0` {
     

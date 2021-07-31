@@ -2,15 +2,13 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dst extends StObject {
     
-    var dst: Boolean = js.native
+    var dst: Boolean
   }
   object Dst {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     
@@ -49,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueArray extends StObject {
     
-    var value: js.Array[String] = js.native
+    var value: js.Array[String]
   }
   object ValueArray {
     
@@ -73,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueNumber extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object ValueNumber {
     

@@ -3,12 +3,12 @@ package typings.reactNative.mod
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentSelectionState
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with Instantiable2[/* anchor */ Double, /* focus */ Double, DocumentSelectionState] {
   
   def blur(): Unit = js.native

@@ -4,19 +4,17 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPUBLIC_MESSAGE extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var message: String = js.native
+  var message: String
   
-  var room: SFSRoom = js.native
+  var room: SFSRoom
   
-  var sender: SFSUser = js.native
+  var sender: SFSUser
 }
 object IPUBLIC_MESSAGE {
   

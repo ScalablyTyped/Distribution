@@ -18,52 +18,158 @@ import typings.activexExcel.activexExcelNumbers.`8`
 import typings.activexExcel.activexExcelNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellFormat extends StObject {
   
-  var AddIndent: Boolean = js.native
+  var AddIndent: Boolean
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def Borders(Index: XlBordersIndex): Border = js.native
+  def Borders(Index: XlBordersIndex): Border
   @JSName("Borders")
-  var Borders_Original: Borders = js.native
+  var Borders_Original: Borders
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.CellFormat_typekey")
-  var ExcelDotCellFormat_typekey: CellFormat = js.native
+  var ExcelDotCellFormat_typekey: CellFormat
   
-  var Font: typings.activexExcel.Excel.Font = js.native
+  var Font: typings.activexExcel.Excel.Font
   
-  var FormulaHidden: Boolean | Null = js.native
+  var FormulaHidden: Boolean | Null
   
-  var HorizontalAlignment: HorizontalAlignments = js.native
+  var HorizontalAlignment: HorizontalAlignments
   
-  var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` = js.native
+  var IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
   
-  var Interior: typings.activexExcel.Excel.Interior = js.native
+  var Interior: typings.activexExcel.Excel.Interior
   
-  var Locked: Boolean | Null = js.native
+  var Locked: Boolean | Null
   
-  var MergeCells: Boolean = js.native
+  var MergeCells: Boolean
   
-  var NumberFormat: String | Null = js.native
+  var NumberFormat: String | Null
   
-  var NumberFormatLocal: String | Null = js.native
+  var NumberFormatLocal: String | Null
   
-  var Orientation: Double | XlOrientation = js.native
+  var Orientation: Double | XlOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ShrinkToFit: Boolean | Null = js.native
+  var ShrinkToFit: Boolean | Null
   
-  var VerticalAlignment: VerticalAlignments = js.native
+  var VerticalAlignment: VerticalAlignments
   
-  var WrapText: Boolean | Null = js.native
+  var WrapText: Boolean | Null
+}
+object CellFormat {
+  
+  @scala.inline
+  def apply(
+    AddIndent: Boolean,
+    Application: Application,
+    Borders: Borders,
+    Clear: () => Unit,
+    Creator: XlCreator,
+    ExcelDotCellFormat_typekey: CellFormat,
+    Font: Font,
+    HorizontalAlignment: HorizontalAlignments,
+    IndentLevel: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`,
+    Interior: Interior,
+    MergeCells: Boolean,
+    Orientation: Double | XlOrientation,
+    Parent: js.Any,
+    VerticalAlignment: VerticalAlignments
+  ): CellFormat = {
+    val __obj = js.Dynamic.literal(AddIndent = AddIndent.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Borders = Borders.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Creator = Creator.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], HorizontalAlignment = HorizontalAlignment.asInstanceOf[js.Any], IndentLevel = IndentLevel.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], MergeCells = MergeCells.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], VerticalAlignment = VerticalAlignment.asInstanceOf[js.Any], FormulaHidden = null, Locked = null, NumberFormat = null, NumberFormatLocal = null, ShrinkToFit = null, WrapText = null)
+    __obj.updateDynamic("Excel.CellFormat_typekey")(ExcelDotCellFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellFormat]
+  }
+  
+  @scala.inline
+  implicit class CellFormatMutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAddIndent(value: Boolean): Self = StObject.set(x, "AddIndent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcelDotCellFormat_typekey(value: CellFormat): Self = StObject.set(x, "Excel.CellFormat_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFormulaHidden(value: Boolean): Self = StObject.set(x, "FormulaHidden", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFormulaHiddenNull: Self = StObject.set(x, "FormulaHidden", null)
+    
+    @scala.inline
+    def setHorizontalAlignment(value: HorizontalAlignments): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIndentLevel(
+      value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
+    ): Self = StObject.set(x, "IndentLevel", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLockedNull: Self = StObject.set(x, "Locked", null)
+    
+    @scala.inline
+    def setMergeCells(value: Boolean): Self = StObject.set(x, "MergeCells", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumberFormatLocal(value: String): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumberFormatLocalNull: Self = StObject.set(x, "NumberFormatLocal", null)
+    
+    @scala.inline
+    def setNumberFormatNull: Self = StObject.set(x, "NumberFormat", null)
+    
+    @scala.inline
+    def setOrientation(value: Double | XlOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "ShrinkToFit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShrinkToFitNull: Self = StObject.set(x, "ShrinkToFit", null)
+    
+    @scala.inline
+    def setVerticalAlignment(value: VerticalAlignments): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWrapText(value: Boolean): Self = StObject.set(x, "WrapText", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWrapTextNull: Self = StObject.set(x, "WrapText", null)
+  }
 }

@@ -2,175 +2,175 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of codes drawn from one or more code systems
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ValueSet extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ValueSet
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'copyright'.
     */
-  var _copyright: js.UndefOr[Element] = js.native
+  var _copyright: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.native
+  var _experimental: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'extensible'.
     */
-  var _extensible: js.UndefOr[Element] = js.native
+  var _extensible: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'immutable'.
     */
-  var _immutable: js.UndefOr[Element] = js.native
+  var _immutable: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.native
+  var _publisher: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'purpose'.
     */
-  var _purpose: js.UndefOr[Element] = js.native
+  var _purpose: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Definition of the content of the value set (CLD)
     */
-  var compose: js.UndefOr[ValueSetCompose] = js.native
+  var compose: js.UndefOr[ValueSetCompose] = js.undefined
   
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Use and/or publishing restrictions
     */
-  var copyright: js.UndefOr[markdown] = js.native
+  var copyright: js.UndefOr[markdown] = js.undefined
   
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Natural language description of the value set
     */
-  var description: js.UndefOr[markdown] = js.native
+  var description: js.UndefOr[markdown] = js.undefined
   
   /**
     * Used when the value set is "expanded"
     */
-  var expansion: js.UndefOr[ValueSetExpansion] = js.native
+  var expansion: js.UndefOr[ValueSetExpansion] = js.undefined
   
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.native
+  var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this is intended to be used with an extensible binding
     */
-  var extensible: js.UndefOr[Boolean] = js.native
+  var extensible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional identifier for the value set
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Indicates whether or not any change to the content logical definition may occur
     */
-  var immutable: js.UndefOr[Boolean] = js.native
+  var immutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Intended jurisdiction for value set (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Name for this value set (computer friendly)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * Why this value set is defined
     */
-  var purpose: js.UndefOr[markdown] = js.native
+  var purpose: js.UndefOr[markdown] = js.undefined
   
   /**
     * draft | active | retired | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Name for this value set (human friendly)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Logical URI to reference this value set (globally unique)
     */
-  var url: js.UndefOr[uri] = js.native
+  var url: js.UndefOr[uri] = js.undefined
   
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
     * Business version of the value set
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ValueSet {
   

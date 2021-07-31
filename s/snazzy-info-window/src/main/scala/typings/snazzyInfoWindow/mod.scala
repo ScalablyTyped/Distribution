@@ -9,23 +9,23 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("snazzy-info-window", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SnazzyInfoWindow {
+  class ^ protected ()
+    extends StObject
+       with SnazzyInfoWindow {
     def this(opts: InfoWindowOptions) = this()
   }
   
-  @js.native
   trait Border extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var width: String = js.native
+    var width: String
   }
   object Border {
     
@@ -49,7 +49,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Callbacks extends StObject {
     
     /**
@@ -57,40 +56,40 @@ object mod {
       * This occurs at the end of the OverlayView onRemove() implementation.
       * At this point the info window should be removed from the DOM.
       */
-    var afterClose: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
     
     /**
       * Called when the info window has opened.
       * This occurs at the end of the OverlayView draw() implementation.
       * At this point the info window is added to the DOM and should be visible.
       */
-    var afterOpen: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var afterOpen: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
     
     /**
       * Called before the info window attempts to close.
       * Return false to cancel the close.
       */
-    var beforeClose: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var beforeClose: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
     
     /**
       * Called before the info window attempts to open.
       * Return false to cancel the open.
       */
-    var beforeOpen: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
     
     /**
       * Called when the info window is closing.
       * This occurs at the beginning of the OverlayView onRemove() implementation.
       * At this point the info window is still in the DOM.
       */
-    var close: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
     
     /**
       * Called when the info window is opening.
       * This occurs at the end of the OverlayView onAdd() implementation.
       * At this point the info window is added to the DOM but is not drawn yet.
       */
-    var open: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var open: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
   }
   object Callbacks {
     
@@ -141,16 +140,15 @@ object mod {
     }
   }
   
-  @js.native
   trait EdgeOffset extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object EdgeOffset {
     
@@ -189,7 +187,6 @@ object mod {
     }
   }
   
-  @js.native
   trait InfoWindowOptions extends StObject {
     
     /**
@@ -197,7 +194,7 @@ object mod {
       * Possible Values: Any valid CSS color value.
       * @example '#FF0000', 'blue'
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * A custom border around the info window.
@@ -209,24 +206,24 @@ object mod {
       *   color: '#FF0000'
       * }
       */
-    var border: js.UndefOr[Border | Boolean] = js.native
+    var border: js.UndefOr[Border | Boolean] = js.undefined
     
     /**
       * A custom CSS border radius property to specify the rounded corners of the info window.
       * @example '2px 20px'
       */
-    var borderRadius: js.UndefOr[String] = js.native
+    var borderRadius: js.UndefOr[String] = js.undefined
     
     /**
       * All callbacks are optional and can access the info window instance via this.
       */
-    var callbacks: js.UndefOr[Callbacks] = js.native
+    var callbacks: js.UndefOr[Callbacks] = js.undefined
     
     /**
       * The text or DOM Element to replace the default close button.
       * No click handler or positioning is added to your markup if you use this option.
       */
-    var closeButtonMarkup: js.UndefOr[Boolean] = js.native
+    var closeButtonMarkup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if the info window will close when the map is clicked.
@@ -234,18 +231,18 @@ object mod {
       * This will not activate on the Google Maps drag event when the user is panning the map.
       * @default true
       */
-    var closeOnMapClick: js.UndefOr[Boolean] = js.native
+    var closeOnMapClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if the info window will close when any other Snazzy Info Window is opened.
       * @default false
       */
-    var closeWhenOthersOpen: js.UndefOr[Boolean] = js.native
+    var closeWhenOthersOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The text or DOM Element to insert into the info window body.
       */
-    var content: js.UndefOr[String | HTMLElement] = js.native
+    var content: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * The offset from the map edge in pixels which is used when panning an info window into view.
@@ -258,43 +255,43 @@ object mod {
       *   left: 20
       * }
       */
-    var edgeOffset: js.UndefOr[EdgeOffset] = js.native
+    var edgeOffset: js.UndefOr[EdgeOffset] = js.undefined
     
     /**
       * The font color to use for the content inside the body of the info window.
       * Possible Values: Any valid CSS color value.
       * @example '#FF0000', 'blue'
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /**
       * The font size to use for the content inside the body of the info window.
       * Possible Values: Any valid CSS font size value.
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /**
       * The Google Map associated to this info window.
       * Only required if you are not using a marker.
       */
-    var map: js.UndefOr[Map[Element]] = js.native
+    var map: js.UndefOr[Map[Element]] = js.undefined
     
     /**
       * The Google Maps marker associated to this info window.
       */
-    var marker: js.UndefOr[Marker] = js.native
+    var marker: js.UndefOr[Marker] = js.undefined
     
     /**
       * The max height in pixels of the info window.
       * @example 200
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The max width in pixels of the info window.
       * @example 200
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The offset from the marker.
@@ -308,32 +305,32 @@ object mod {
       * }
       *
       */
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
     /**
       * Determines if the info window will open when the marker is clicked.
       * An internal listener is added to the Google Maps click event which calls the open() method.
       * @default true
       */
-    var openOnMarkerClick: js.UndefOr[Boolean] = js.native
+    var openOnMarkerClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom padding size around the content of the info window.
       * Possible Values: Any valid CSS size value.
       * @example '10px', '2em', '5%'
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     /**
       * Determines if the info window will be panned into view when opened.
       * @default true
       */
-    var panOnOpen: js.UndefOr[Boolean] = js.native
+    var panOnOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Choose where you want the info window to be displayed, relative to the marker.
       */
-    var placement: js.UndefOr[PlacementOptions] = js.native
+    var placement: js.UndefOr[PlacementOptions] = js.undefined
     
     /**
       * The height of the pointer from the info window to the marker.
@@ -342,14 +339,14 @@ object mod {
       * Possible Values: Any valid CSS size value.
       * @example '10px'
       */
-    var pointer: js.UndefOr[String | Boolean] = js.native
+    var pointer: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * The latitude and longitude where the info window is anchored.
       * The offset will default to 0px when using this option.
       * Only required if you are not using a marker.
       */
-    var position: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
     /**
       * The CSS properties for the shadow of the info window.
@@ -364,19 +361,19 @@ object mod {
       *   color: '#000'
       * }
       */
-    var shadow: js.UndefOr[Shadow | Boolean] = js.native
+    var shadow: js.UndefOr[Shadow | Boolean] = js.undefined
     
     /**
       * Determines if the info window will show a close button.
       * @default true
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional CSS class to assign to the wrapper container of the info window.
       * Can be used for applying custom CSS to the info window.
       */
-    var wrapperClass: js.UndefOr[String] = js.native
+    var wrapperClass: js.UndefOr[String] = js.undefined
   }
   object InfoWindowOptions {
     
@@ -541,16 +538,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
   }
   object Offset {
     
@@ -611,20 +607,19 @@ object mod {
     def top: typings.snazzyInfoWindow.snazzyInfoWindowStrings.top = "top".asInstanceOf[typings.snazzyInfoWindow.snazzyInfoWindowStrings.top]
   }
   
-  @js.native
   trait Shadow extends StObject {
     
-    var blur: js.UndefOr[String] = js.native
+    var blur: js.UndefOr[String] = js.undefined
     
-    var color: String = js.native
+    var color: String
     
-    var h: js.UndefOr[String] = js.native
+    var h: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[String] = js.native
+    var opacity: js.UndefOr[String] = js.undefined
     
-    var spread: js.UndefOr[String] = js.native
+    var spread: js.UndefOr[String] = js.undefined
     
-    var v: js.UndefOr[String] = js.native
+    var v: js.UndefOr[String] = js.undefined
   }
   object Shadow {
     
@@ -673,7 +668,9 @@ object mod {
   }
   
   @js.native
-  trait SnazzyInfoWindow extends OverlayView {
+  trait SnazzyInfoWindow
+    extends StObject
+       with OverlayView {
     
     /**
       * Will attempt to close the info window.

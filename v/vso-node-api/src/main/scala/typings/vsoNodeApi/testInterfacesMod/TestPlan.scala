@@ -4,59 +4,57 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestPlan extends StObject {
   
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
-  var automatedTestEnvironment: TestEnvironment = js.native
+  var automatedTestEnvironment: TestEnvironment
   
-  var automatedTestSettings: TestSettings = js.native
+  var automatedTestSettings: TestSettings
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildDefinition: ShallowReference = js.native
+  var buildDefinition: ShallowReference
   
-  var clientUrl: String = js.native
+  var clientUrl: String
   
-  var description: String = js.native
+  var description: String
   
-  var endDate: Date = js.native
+  var endDate: Date
   
-  var id: Double = js.native
+  var id: Double
   
-  var iteration: String = js.native
+  var iteration: String
   
-  var manualTestEnvironment: TestEnvironment = js.native
+  var manualTestEnvironment: TestEnvironment
   
-  var manualTestSettings: TestSettings = js.native
+  var manualTestSettings: TestSettings
   
-  var name: String = js.native
+  var name: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var previousBuild: ShallowReference = js.native
+  var previousBuild: ShallowReference
   
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
-  var releaseEnvironmentDefinition: ReleaseEnvironmentDefinitionReference = js.native
+  var releaseEnvironmentDefinition: ReleaseEnvironmentDefinitionReference
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var rootSuite: ShallowReference = js.native
+  var rootSuite: ShallowReference
   
-  var startDate: Date = js.native
+  var startDate: Date
   
-  var state: String = js.native
+  var state: String
   
-  var updatedBy: IdentityRef = js.native
+  var updatedBy: IdentityRef
   
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
-  var url: String = js.native
+  var url: String
 }
 object TestPlan {
   

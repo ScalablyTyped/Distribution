@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterDropDownClosedEventUIParam extends StObject {
   
   /**
     * A reference to the hierarchy.
     */
-  var hierarchy: js.UndefOr[js.Any] = js.native
+  var hierarchy: js.UndefOr[js.Any] = js.undefined
 }
 object FilterDropDownClosedEventUIParam {
   

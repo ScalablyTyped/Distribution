@@ -3,17 +3,15 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRange extends StObject {
   
-  var end: ScriptPosition = js.native
+  var end: ScriptPosition
   
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
-  var start: ScriptPosition = js.native
+  var start: ScriptPosition
 }
 object LocationRange {
   

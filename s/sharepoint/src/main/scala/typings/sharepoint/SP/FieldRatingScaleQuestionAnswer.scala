@@ -2,19 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldRatingScaleQuestionAnswer extends ClientValueObject {
+trait FieldRatingScaleQuestionAnswer
+  extends StObject
+     with ClientValueObject {
   
-  def get_answer(): Double = js.native
+  def get_answer(): Double
   
-  def get_question(): String = js.native
+  def get_question(): String
   
-  def set_answer(value: Double): Unit = js.native
+  def set_answer(value: Double): Unit
   
-  def set_question(value: String): Unit = js.native
+  def set_question(value: String): Unit
 }
 object FieldRatingScaleQuestionAnswer {
   

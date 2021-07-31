@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,14 +37,13 @@ object mod {
     def this(props: ConductorProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AnimatedProps extends StObject {
     
-    var additional: js.UndefOr[js.Object] = js.native
+    var additional: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[ReactNode | ReactNodeArray | Null] = js.native
+    var children: js.UndefOr[ReactNode | ReactNodeArray | Null] = js.undefined
     
-    var id: String = js.native
+    var id: String
   }
   object AnimatedProps {
     
@@ -80,14 +78,13 @@ object mod {
   
   type Animations = StringDictionary[(ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any]]
   
-  @js.native
   trait ConductorProps extends StObject {
     
-    var animations: Animations = js.native
+    var animations: Animations
     
-    var children: ReactNode | ReactNodeArray = js.native
+    var children: ReactNode | ReactNodeArray
     
-    var config: StringDictionary[Config] | (js.Function2[/* id */ String, /* additional */ js.Object, Config]) = js.native
+    var config: StringDictionary[Config] | (js.Function2[/* id */ String, /* additional */ js.Object, Config])
   }
   object ConductorProps {
     
@@ -122,10 +119,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var animation: String = js.native
+    var animation: String
   }
   object Config {
     

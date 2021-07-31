@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * When the expansion profile imposes designation contraints
   */
-@js.native
-trait ExpansionProfileDesignation extends BackboneElement {
+trait ExpansionProfileDesignation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Designations to be excluded
     */
-  var exclude: js.UndefOr[ExpansionProfileDesignationExclude] = js.native
+  var exclude: js.UndefOr[ExpansionProfileDesignationExclude] = js.undefined
   
   /**
     * Designations to be included
     */
-  var include: js.UndefOr[ExpansionProfileDesignationInclude] = js.native
+  var include: js.UndefOr[ExpansionProfileDesignationInclude] = js.undefined
 }
 object ExpansionProfileDesignation {
   

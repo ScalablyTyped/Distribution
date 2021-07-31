@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,8 @@ trait Renderer extends EventEmitter {
     * the function may accept full expressions, by setting `raw`
     * to `true`.
     */
-  def define(name: String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
-  def define(name: String, fn: js.Function1[/* repeated */ js.Any, _], raw: Boolean): this.type = js.native
+  def define(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+  def define(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any], raw: Boolean): this.type = js.native
   def define(name: String, node: Node): this.type = js.native
   def define(name: String, node: Node, raw: Boolean): this.type = js.native
   def define(name: String, `val`: js.Any): this.type = js.native
@@ -68,5 +67,5 @@ trait Renderer extends EventEmitter {
     * This allows for plugins to alter the renderer in
     * any way they wish, exposing paths etc.
     */
-  def use(fn: js.Function1[/* renderer */ this.type, _]): this.type = js.native
+  def use(fn: js.Function1[/* renderer */ this.type, js.Any]): this.type = js.native
 }

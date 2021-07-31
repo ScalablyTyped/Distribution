@@ -2,18 +2,16 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediapackage {
   
-  @js.native
   trait ChannelHlsIngest extends StObject {
     
     /**
       * A list of the ingest endpoints
       */
-    var ingestEndpoints: js.Array[ChannelHlsIngestIngestEndpoint] = js.native
+    var ingestEndpoints: js.Array[ChannelHlsIngestIngestEndpoint]
   }
   object ChannelHlsIngest {
     
@@ -34,23 +32,22 @@ object mediapackage {
     }
   }
   
-  @js.native
   trait ChannelHlsIngestIngestEndpoint extends StObject {
     
     /**
       * The password
       */
-    var password: String = js.native
+    var password: String
     
     /**
       * The URL
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * The username
       */
-    var username: String = js.native
+    var username: String
   }
   object ChannelHlsIngestIngestEndpoint {
     

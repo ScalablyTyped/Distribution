@@ -26,7 +26,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scenes {
@@ -41,9 +40,9 @@ object Scenes {
   trait SceneManager extends StObject {
     
     def add(key: String, sceneConfig: js.Function): Scene = js.native
-    def add(key: String, sceneConfig: js.Function, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean, data: js.Object): Scene = js.native
+    def add(key: String, sceneConfig: js.Function, autoStart: Unit, data: js.Object): Scene = js.native
     /**
       * Adds a new Scene into the SceneManager.
       * You must give each Scene a unique key by which you'll identify it.
@@ -63,22 +62,17 @@ object Scenes {
       * @param data Optional data object. This will be set as `Scene.settings.data` and passed to `Scene.init`, and `Scene.create`.
       */
     def add(key: String, sceneConfig: Scene): Scene = js.native
-    def add(key: String, sceneConfig: Scene, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: Scene, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: Scene, autoStart: Boolean, data: js.Object): Scene = js.native
+    def add(key: String, sceneConfig: Scene, autoStart: Unit, data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig): Scene = js.native
-    def add(
-      key: String,
-      sceneConfig: CreateSceneFromObjectConfig,
-      autoStart: js.UndefOr[scala.Nothing],
-      data: js.Object
-    ): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Boolean, data: js.Object): Scene = js.native
+    def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Unit, data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig): Scene = js.native
-    def add(key: String, sceneConfig: SettingsConfig, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean, data: js.Object): Scene = js.native
+    def add(key: String, sceneConfig: SettingsConfig, autoStart: Unit, data: js.Object): Scene = js.native
     
     /**
       * Brings a Scene to the top of the Scenes list.
@@ -139,9 +133,9 @@ object Scenes {
       * @param inReverse Return the array of Scenes in reverse? Default false.
       */
     def getScenes(): js.Array[Scene] = js.native
-    def getScenes(isActive: js.UndefOr[scala.Nothing], inReverse: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean, inReverse: Boolean): js.Array[Scene] = js.native
+    def getScenes(isActive: Unit, inReverse: Boolean): js.Array[Scene] = js.native
     
     /**
       * Determines whether a Scene is running.
@@ -277,7 +271,7 @@ object Scenes {
     /**
       * The array in which all of the scenes are kept.
       */
-    var scenes: js.Array[_] = js.native
+    var scenes: js.Array[js.Any] = js.native
     
     /**
       * Sends a Scene to the back of the Scenes list.
@@ -480,9 +474,9 @@ object Scenes {
       * @param data An optional data object that will be passed to the Scene and emitted in its pause event.
       */
     def pause(): ScenePlugin = js.native
-    def pause(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def pause(key: String): ScenePlugin = js.native
     def pause(key: String, data: js.Object): ScenePlugin = js.native
+    def pause(key: Unit, data: js.Object): ScenePlugin = js.native
     
     /**
       * Removes a Scene from the SceneManager.
@@ -515,9 +509,9 @@ object Scenes {
       * @param data An optional data object that will be passed to the Scene and emitted in its resume event.
       */
     def resume(): ScenePlugin = js.native
-    def resume(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def resume(key: String): ScenePlugin = js.native
     def resume(key: String, data: js.Object): ScenePlugin = js.native
+    def resume(key: Unit, data: js.Object): ScenePlugin = js.native
     
     /**
       * Runs the given Scene, but does not change the state of this Scene.
@@ -556,9 +550,9 @@ object Scenes {
       * @param data An optional data object that will be passed to the Scene and emitted with its events.
       */
     def setActive(value: Boolean): ScenePlugin = js.native
-    def setActive(value: Boolean, key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def setActive(value: Boolean, key: String): ScenePlugin = js.native
     def setActive(value: Boolean, key: String, data: js.Object): ScenePlugin = js.native
+    def setActive(value: Boolean, key: Unit, data: js.Object): ScenePlugin = js.native
     
     /**
       * Sets the visible state of the given Scene.
@@ -581,9 +575,9 @@ object Scenes {
       * @param data An optional data object that will be passed to the Scene and emitted in its sleep event.
       */
     def sleep(): ScenePlugin = js.native
-    def sleep(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def sleep(key: String): ScenePlugin = js.native
     def sleep(key: String, data: js.Object): ScenePlugin = js.native
+    def sleep(key: Unit, data: js.Object): ScenePlugin = js.native
     
     /**
       * Shutdown this Scene and run the given one.
@@ -593,9 +587,9 @@ object Scenes {
       * @param data The Scene data.
       */
     def start(): ScenePlugin = js.native
-    def start(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def start(key: String): ScenePlugin = js.native
     def start(key: String, data: js.Object): ScenePlugin = js.native
+    def start(key: Unit, data: js.Object): ScenePlugin = js.native
     
     /**
       * Shutdown the Scene, clearing display list, timers, etc.
@@ -605,9 +599,9 @@ object Scenes {
       * @param data Optional data object to pass to Scene.Systems.shutdown.
       */
     def stop(): ScenePlugin = js.native
-    def stop(key: js.UndefOr[scala.Nothing], data: js.Any): ScenePlugin = js.native
     def stop(key: String): ScenePlugin = js.native
     def stop(key: String, data: js.Any): ScenePlugin = js.native
+    def stop(key: Unit, data: js.Any): ScenePlugin = js.native
     
     /**
       * Swaps the position of two scenes in the Scenes list.
@@ -679,9 +673,9 @@ object Scenes {
       * @param data An optional data object that will be passed to the Scene and emitted in its wake event.
       */
     def wake(): ScenePlugin = js.native
-    def wake(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def wake(key: String): ScenePlugin = js.native
     def wake(key: String, data: js.Object): ScenePlugin = js.native
+    def wake(key: Unit, data: js.Object): ScenePlugin = js.native
   }
   
   /**

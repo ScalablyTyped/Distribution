@@ -2,29 +2,27 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outpost extends StObject {
   
-  var AvailabilityZone: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZone] = js.native
+  var AvailabilityZone: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZone] = js.undefined
   
-  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZoneId] = js.native
+  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZoneId] = js.undefined
   
-  var Description: js.UndefOr[OutpostDescription] = js.native
+  var Description: js.UndefOr[OutpostDescription] = js.undefined
   
-  var LifeCycleStatus: js.UndefOr[typings.awsSdk.outpostsMod.LifeCycleStatus] = js.native
+  var LifeCycleStatus: js.UndefOr[typings.awsSdk.outpostsMod.LifeCycleStatus] = js.undefined
   
-  var Name: js.UndefOr[OutpostName] = js.native
+  var Name: js.UndefOr[OutpostName] = js.undefined
   
-  var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.native
+  var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.undefined
   
-  var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.native
+  var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.undefined
   
-  var OwnerId: js.UndefOr[typings.awsSdk.outpostsMod.OwnerId] = js.native
+  var OwnerId: js.UndefOr[typings.awsSdk.outpostsMod.OwnerId] = js.undefined
   
-  var SiteId: js.UndefOr[typings.awsSdk.outpostsMod.SiteId] = js.native
+  var SiteId: js.UndefOr[typings.awsSdk.outpostsMod.SiteId] = js.undefined
 }
 object Outpost {
   

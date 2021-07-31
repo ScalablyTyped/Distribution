@@ -3,15 +3,13 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.OlShiftState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyCode extends StObject {
   
-  val KeyCode: Double = js.native
+  val KeyCode: Double
   
-  val Shift: OlShiftState = js.native
+  val Shift: OlShiftState
 }
 object KeyCode {
   

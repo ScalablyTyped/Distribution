@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Subscription. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Subscription.
   * @param [properties] Properties to set
   */
-class Subscription () extends ISubscription {
+class Subscription ()
+  extends StObject
+     with ISubscription {
   def this(properties: ISubscription) = this()
   
   /** Subscription ackDeadlineSeconds. */
@@ -60,18 +61,20 @@ class Subscription () extends ISubscription {
 }
 object Subscription {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Subscription instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Subscription instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.create")
-  @js.native
-  def create(): Subscription = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.create")
-  @js.native
-  def create(properties: ISubscription): Subscription = js.native
+  @scala.inline
+  def create(): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subscription]
+  @scala.inline
+  def create(properties: ISubscription): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   
   /**
     * Decodes a Subscription message from the specified reader or buffer.
@@ -82,18 +85,14 @@ object Subscription {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decode")
-  @js.native
-  def decode(reader: Reader): Subscription = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Subscription = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decode")
-  @js.native
-  def decode(reader: Uint8Array): Subscription = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Subscription = js.native
+  @scala.inline
+  def decode(reader: Reader): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+  @scala.inline
+  def decode(reader: Uint8Array): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Subscription]
   
   /**
     * Decodes a Subscription message from the specified reader or buffer, length delimited.
@@ -103,12 +102,10 @@ object Subscription {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Subscription = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Subscription = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   
   /**
     * Encodes the specified Subscription message. Does not implicitly {@link google.pubsub.v1.Subscription.verify|verify} messages.
@@ -117,12 +114,10 @@ object Subscription {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.encode")
-  @js.native
-  def encode(message: ISubscription): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.encode")
-  @js.native
-  def encode(message: ISubscription, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISubscription): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISubscription, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Subscription message, length delimited. Does not implicitly {@link google.pubsub.v1.Subscription.verify|verify} messages.
@@ -131,12 +126,10 @@ object Subscription {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISubscription): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISubscription, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISubscription): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISubscription, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Subscription message from a plain object. Also converts values to their respective internal types.
@@ -144,9 +137,8 @@ object Subscription {
     * @returns Subscription
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Subscription = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   
   /**
     * Creates a plain object from a Subscription message. Also converts values to other types if specified.
@@ -155,12 +147,10 @@ object Subscription {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.toObject")
-  @js.native
-  def toObject(message: Subscription): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.toObject")
-  @js.native
-  def toObject(message: Subscription, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Subscription): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Subscription, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Subscription message.
@@ -168,7 +158,6 @@ object Subscription {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscription.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

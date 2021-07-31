@@ -4,14 +4,13 @@ import typings.jqueryJcrop.JQuery.Jcrop.Api
 import typings.jqueryJcrop.JQuery.Jcrop.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends StObject {
   
   def Jcrop(): JQuery = js.native
-  def Jcrop(options: js.UndefOr[scala.Nothing], callback: js.ThisFunction0[/* this */ Api, Unit]): JQuery = js.native
+  def Jcrop(options: Unit, callback: js.ThisFunction0[/* this */ Api, Unit]): JQuery = js.native
   def Jcrop(options: Options): JQuery = js.native
   def Jcrop(options: Options, callback: js.ThisFunction0[/* this */ Api, Unit]): JQuery = js.native
 }
@@ -19,32 +18,31 @@ object JQuery {
   
   object Jcrop {
     
-    @js.native
     trait Api extends StObject {
       
       /** Animate selection to new selection, format: [ x,y,x2,y2 ] */
-      def animateTo(selection: js.Tuple4[Double, Double, Double, Double]): Unit = js.native
+      def animateTo(selection: js.Tuple4[Double, Double, Double, Double]): Unit
       
       /** Disables Jcrop interactivity */
-      def disable(): Unit = js.native
+      def disable(): Unit
       
       /** Enables Jcrop interactivity */
-      def enable(): Unit = js.native
+      def enable(): Unit
       
       /** Release current selection */
-      def release(): Unit = js.native
+      def release(): Unit
       
       /** Remove Jcrop entirely */
-      def remove(): Unit = js.native
+      def remove(): Unit
       
       /** Set selection, format: [ x,y,x2,y2 ] */
-      def setSelect(selection: js.Tuple4[Double, Double, Double, Double]): Unit = js.native
+      def setSelect(selection: js.Tuple4[Double, Double, Double, Double]): Unit
       
       /** Query current selection values (interface)  */
-      def tellScaled(): SelectionInfo = js.native
+      def tellScaled(): SelectionInfo
       
       /** Query current selection values (true size) */
-      def tellSelect(): SelectionInfo = js.native
+      def tellSelect(): SelectionInfo
     }
     object Api {
       
@@ -138,96 +136,95 @@ object JQuery {
     
     type JCropEventHandler = js.Function1[/* c */ SelectionInfo, Unit]
     
-    @js.native
     trait Options extends StObject {
       
-      var addClass: js.UndefOr[String] = js.native
+      var addClass: js.UndefOr[String] = js.undefined
       
-      var allowMove: js.UndefOr[Boolean] = js.native
+      var allowMove: js.UndefOr[Boolean] = js.undefined
       
-      var allowResize: js.UndefOr[Boolean] = js.native
+      var allowResize: js.UndefOr[Boolean] = js.undefined
       
       // Basic Settings
-      var allowSelect: js.UndefOr[Boolean] = js.native
+      var allowSelect: js.UndefOr[Boolean] = js.undefined
       
-      var animationDelay: js.UndefOr[Double] = js.native
+      var animationDelay: js.UndefOr[Double] = js.undefined
       
       /** Aspect ratio of w/h (e.g. 1 for square)  */
-      var aspectRatio: js.UndefOr[Double] = js.native
+      var aspectRatio: js.UndefOr[Double] = js.undefined
       
-      var baseClass: js.UndefOr[String] = js.native
+      var baseClass: js.UndefOr[String] = js.undefined
       
       /** Set color of background container @default 'black' */
-      var bgColor: js.UndefOr[String] = js.native
+      var bgColor: js.UndefOr[String] = js.undefined
       
-      var bgFade: js.UndefOr[Boolean] = js.native
+      var bgFade: js.UndefOr[Boolean] = js.undefined
       
       /** Opacity of outer image when cropping; between 0 and 1 @default .6 */
-      var bgOpacity: js.UndefOr[Double] = js.native
+      var bgOpacity: js.UndefOr[Double] = js.undefined
       
-      var borderOpacity: js.UndefOr[Double] = js.native
+      var borderOpacity: js.UndefOr[Double] = js.undefined
       
-      var boundary: js.UndefOr[Double] = js.native
+      var boundary: js.UndefOr[Double] = js.undefined
       
       /** Maximum height of cropping area @default 0 (no limit) */
-      var boxHeight: js.UndefOr[Double] = js.native
+      var boxHeight: js.UndefOr[Double] = js.undefined
       
       /** Maximum width of cropping area @default 0 (no limit) */
-      var boxWidth: js.UndefOr[Double] = js.native
+      var boxWidth: js.UndefOr[Double] = js.undefined
       
-      var createBorders: js.UndefOr[js.Array[CardinalDirection]] = js.native
+      var createBorders: js.UndefOr[js.Array[CardinalDirection]] = js.undefined
       
-      var createDragbars: js.UndefOr[js.Array[CardinalDirection]] = js.native
+      var createDragbars: js.UndefOr[js.Array[CardinalDirection]] = js.undefined
       
-      var createHandles: js.UndefOr[js.Array[CardinalDirection | IntermediateDirection]] = js.native
+      var createHandles: js.UndefOr[js.Array[CardinalDirection | IntermediateDirection]] = js.undefined
       
-      var dragEdges: js.UndefOr[Boolean] = js.native
+      var dragEdges: js.UndefOr[Boolean] = js.undefined
       
-      var drawBorders: js.UndefOr[Boolean] = js.native
+      var drawBorders: js.UndefOr[Boolean] = js.undefined
       
-      var fadeTime: js.UndefOr[Double] = js.native
+      var fadeTime: js.UndefOr[Double] = js.undefined
       
-      var fixedSupport: js.UndefOr[Boolean] = js.native
+      var fixedSupport: js.UndefOr[Boolean] = js.undefined
       
-      var handleOpacity: js.UndefOr[Double] = js.native
+      var handleOpacity: js.UndefOr[Double] = js.undefined
       
-      var handleSize: js.UndefOr[Double | Null] = js.native
+      var handleSize: js.UndefOr[Double | Null] = js.undefined
       
-      var keySupport: js.UndefOr[Boolean] = js.native
+      var keySupport: js.UndefOr[Boolean] = js.undefined
       
       /** Maximum width/height, use 0 for unbounded dimension; [width, height] */
-      var maxSize: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var maxSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
-      var minSelect: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var minSelect: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
       /** Minimum width/height, use 0 for unbounded dimension; [width, height] */
-      var minSize: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var minSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
       /** Called when the selection is moving */
-      var onChange: js.UndefOr[JCropEventHandler] = js.native
+      var onChange: js.UndefOr[JCropEventHandler] = js.undefined
       
       /** Called when double-clicked */
-      var onDblClick: js.UndefOr[JCropEventHandler] = js.native
+      var onDblClick: js.UndefOr[JCropEventHandler] = js.undefined
       
       /** Called when the selection is released */
-      var onRelease: js.UndefOr[JCropEventHandler] = js.native
+      var onRelease: js.UndefOr[JCropEventHandler] = js.undefined
       
       /** Called when selection is completed */
-      var onSelect: js.UndefOr[JCropEventHandler] = js.native
+      var onSelect: js.UndefOr[JCropEventHandler] = js.undefined
       
       /** Set an initial selection area; [x, y, x2, y2] */
-      var setSelect: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+      var setSelect: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
       
-      var shade: js.UndefOr[Boolean | Null] = js.native
+      var shade: js.UndefOr[Boolean | Null] = js.undefined
       
-      var swingSpeed: js.UndefOr[Double] = js.native
+      var swingSpeed: js.UndefOr[Double] = js.undefined
       
-      var touchSupport: js.UndefOr[Boolean | Null] = js.native
+      var touchSupport: js.UndefOr[Boolean | Null] = js.undefined
       
-      var trackDocument: js.UndefOr[Boolean] = js.native
+      var trackDocument: js.UndefOr[Boolean] = js.undefined
       
       /** Specify the true size of the image */
-      var trueSize: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var trueSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     }
     object Options {
       
@@ -482,20 +479,19 @@ object JQuery {
       }
     }
     
-    @js.native
     trait SelectionInfo extends StObject {
       
-      var h: Double = js.native
+      var h: Double
       
-      var w: Double = js.native
+      var w: Double
       
-      var x: Double = js.native
+      var x: Double
       
-      var x2: Double = js.native
+      var x2: Double
       
-      var y: Double = js.native
+      var y: Double
       
-      var y2: Double = js.native
+      var y2: Double
     }
     object SelectionInfo {
       

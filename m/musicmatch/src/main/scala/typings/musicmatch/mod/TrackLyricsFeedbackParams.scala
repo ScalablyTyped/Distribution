@@ -8,19 +8,17 @@ import typings.musicmatch.musicmatchStrings.wrong_lyrics
 import typings.musicmatch.musicmatchStrings.wrong_verses
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackLyricsFeedbackParams extends StObject {
   
   var feedback: js.UndefOr[
     wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting
-  ] = js.native
+  ] = js.undefined
   
-  var lyrics_id: js.UndefOr[Double] = js.native
+  var lyrics_id: js.UndefOr[Double] = js.undefined
   
-  var track_id: js.UndefOr[Double] = js.native
+  var track_id: js.UndefOr[Double] = js.undefined
 }
 object TrackLyricsFeedbackParams {
   

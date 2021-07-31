@@ -2,26 +2,24 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTextTranslationJobsRequest extends StObject {
   
   /**
     * The parameters that specify which batch translation jobs to retrieve. Filters include job name, job status, and submission time. You can only set one filter at a time.
     */
-  var Filter: js.UndefOr[TextTranslationJobFilter] = js.native
+  var Filter: js.UndefOr[TextTranslationJobFilter] = js.undefined
   
   /**
     * The maximum number of results to return in each page. The default value is 100.
     */
-  var MaxResults: js.UndefOr[MaxResultsInteger] = js.native
+  var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.translateMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.translateMod.NextToken] = js.undefined
 }
 object ListTextTranslationJobsRequest {
   

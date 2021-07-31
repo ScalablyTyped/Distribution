@@ -1,26 +1,24 @@
 package typings.actionsOnGoogle.v1Mod
 
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.actionsOnGoogleStrings.link_out_chip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageLinkOut
-  extends DialogflowV1BaseGoogleMessage[link_out_chip]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[link_out_chip]
      with DialogflowV1Message {
   
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageLinkOut {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageLinkOut = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageLinkOut = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageLinkOut]
   }
   

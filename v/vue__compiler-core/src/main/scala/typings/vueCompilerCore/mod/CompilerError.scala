@@ -3,15 +3,15 @@ package typings.vueCompilerCore.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompilerError extends Error {
+trait CompilerError
+  extends StObject
+     with Error {
   
-  var code: Double = js.native
+  var code: Double
   
-  var loc: js.UndefOr[SourceLocation] = js.native
+  var loc: js.UndefOr[SourceLocation] = js.undefined
 }
 object CompilerError {
   

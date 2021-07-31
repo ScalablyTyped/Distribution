@@ -2,16 +2,16 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequesterAdvertisement extends Advertisement {
+trait RequesterAdvertisement
+  extends StObject
+     with Advertisement {
   
   /**
     * Request types that a Requester can send.
     */
-  var requests: js.UndefOr[js.Array[String]] = js.native
+  var requests: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RequesterAdvertisement {
   

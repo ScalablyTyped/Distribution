@@ -41,32 +41,43 @@ import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compositemarkMod {
   
-  @JSImport("vega-lite/build/src/compositemark", "add")
+  @JSImport("vega-lite/build/src/compositemark", JSImport.Namespace)
   @js.native
-  def add(mark: String, run: CompositeMarkNormalizerRun, parts: js.Array[String]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compositemark", "getAllCompositeMarks")
-  @js.native
-  def getAllCompositeMarks(): js.Array[String] = js.native
+  @scala.inline
+  def add(mark: String, run: CompositeMarkNormalizerRun, parts: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(mark.asInstanceOf[js.Any], run.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compositemark", "remove")
-  @js.native
-  def remove(mark: String): Unit = js.native
+  @scala.inline
+  def getAllCompositeMarks(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCompositeMarks")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def remove(mark: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(mark.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type CompositeAggregate = BoxPlot | ErrorBar | ErrorBand
   
-  type CompositeEncoding[F /* <: Field */] = Encoding[F] with ErrorExtraEncoding[F]
+  trait CompositeEncoding[F /* <: Field */]
+    extends StObject
+       with Encoding[F]
+       with ErrorExtraEncoding[F]
+  object CompositeEncoding {
+    
+    @scala.inline
+    def apply[F /* <: Field */](): CompositeEncoding[F] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CompositeEncoding[F]]
+    }
+  }
   
   type CompositeMark = BoxPlot | ErrorBar | ErrorBand
   
-  @js.native
   trait CompositeMarkConfigMixins
-    extends BoxPlotConfigMixins
+    extends StObject
+       with BoxPlotConfigMixins
        with ErrorBarConfigMixins
        with ErrorBandConfigMixins
   object CompositeMarkConfigMixins {
@@ -86,101 +97,112 @@ object compositemarkMod {
     NormalizedLayerSpec | NormalizedUnitSpec
   ]
   
-  type FacetedCompositeEncoding[F /* <: Field */] = Encoding[F] with ErrorExtraEncoding[F] with (EncodingFacetMapping[F, ExprRef | SignalRef])
+  trait FacetedCompositeEncoding[F /* <: Field */]
+    extends StObject
+       with Encoding[F]
+       with ErrorExtraEncoding[F]
+       with EncodingFacetMapping[F, ExprRef | SignalRef]
+  object FacetedCompositeEncoding {
+    
+    @scala.inline
+    def apply[F /* <: Field */](): FacetedCompositeEncoding[F] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FacetedCompositeEncoding[F]]
+    }
+  }
   
-  type PartialIndex[T /* <: Encoding[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type PartialIndex[T /* <: Encoding[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ t in keyof T ]:? std.Partial<T[t]>}
-    */ typings.vegaLite.vegaLiteStrings.PartialIndex with TopLevel[T]
+    */ typings.vegaLite.vegaLiteStrings.PartialIndex & TopLevel[T]
   
   /* Inlined vega-lite.vega-lite/build/src/compositemark.PartialIndex<std.Omit<vega-lite.vega-lite/build/src/compositemark.CompositeEncoding<F>, 'detail' | 'order' | 'tooltip'>> & std.Pick<vega-lite.vega-lite/build/src/encoding.Encoding<F>, 'detail' | 'order' | 'tooltip'> */
-  @js.native
   trait SharedCompositeEncoding[F /* <: Field */] extends StObject {
     
-    var angle: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var angle: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
-    var color: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.native
+    var color: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.undefined
     
     var description: js.UndefOr[
         Partial[
           js.UndefOr[StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var detail: js.UndefOr[
         (FieldDefWithoutScale[F, StandardType]) | (js.Array[FieldDefWithoutScale[F, StandardType]])
-      ] = js.native
+      ] = js.undefined
     
-    var fill: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.native
+    var fill: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.undefined
     
-    var fillOpacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var fillOpacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
     var href: js.UndefOr[
         Partial[
           js.UndefOr[StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var key: js.UndefOr[Partial[js.UndefOr[FieldDefWithoutScale[F, StandardType]]]] = js.native
+    var key: js.UndefOr[Partial[js.UndefOr[FieldDefWithoutScale[F, StandardType]]]] = js.undefined
     
-    var latitude: js.UndefOr[Partial[js.UndefOr[LatLongDef[F]]]] = js.native
+    var latitude: js.UndefOr[Partial[js.UndefOr[LatLongDef[F]]]] = js.undefined
     
-    var latitude2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var latitude2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
-    var longitude: js.UndefOr[Partial[js.UndefOr[LatLongDef[F]]]] = js.native
+    var longitude: js.UndefOr[Partial[js.UndefOr[LatLongDef[F]]]] = js.undefined
     
-    var longitude2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var longitude2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
-    var opacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var opacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
-    var order: js.UndefOr[OrderFieldDef[F] | js.Array[OrderFieldDef[F]] | OrderValueDef] = js.native
+    var order: js.UndefOr[OrderFieldDef[F] | js.Array[OrderFieldDef[F]] | OrderValueDef] = js.undefined
     
-    var radius: js.UndefOr[Partial[js.UndefOr[PolarDef[F]]]] = js.native
+    var radius: js.UndefOr[Partial[js.UndefOr[PolarDef[F]]]] = js.undefined
     
-    var radius2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var radius2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
-    var shape: js.UndefOr[Partial[js.UndefOr[ShapeDef[F]]]] = js.native
+    var shape: js.UndefOr[Partial[js.UndefOr[ShapeDef[F]]]] = js.undefined
     
-    var size: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var size: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
-    var stroke: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.native
+    var stroke: js.UndefOr[Partial[js.UndefOr[ColorDef[F]]]] = js.undefined
     
-    var strokeDash: js.UndefOr[Partial[js.UndefOr[NumericArrayMarkPropDef[F]]]] = js.native
+    var strokeDash: js.UndefOr[Partial[js.UndefOr[NumericArrayMarkPropDef[F]]]] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var strokeOpacity: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
-    var strokeWidth: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.native
+    var strokeWidth: js.UndefOr[Partial[js.UndefOr[NumericMarkPropDef[F]]]] = js.undefined
     
-    var text: js.UndefOr[Partial[js.UndefOr[TextDef[F]]]] = js.native
+    var text: js.UndefOr[Partial[js.UndefOr[TextDef[F]]]] = js.undefined
     
-    var theta: js.UndefOr[Partial[js.UndefOr[PolarDef[F]]]] = js.native
+    var theta: js.UndefOr[Partial[js.UndefOr[PolarDef[F]]]] = js.undefined
     
-    var theta2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var theta2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
     var tooltip: js.UndefOr[
         StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType]) | js.Array[StringFieldDef[F]] | Null
-      ] = js.native
+      ] = js.undefined
     
     var url: js.UndefOr[
         Partial[
           js.UndefOr[StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var x: js.UndefOr[Partial[js.UndefOr[PositionDef[F]]]] = js.native
+    var x: js.UndefOr[Partial[js.UndefOr[PositionDef[F]]]] = js.undefined
     
-    var x2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var x2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
-    var xError: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.native
+    var xError: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
     
-    var xError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.native
+    var xError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
     
-    var y: js.UndefOr[Partial[js.UndefOr[PositionDef[F]]]] = js.native
+    var y: js.UndefOr[Partial[js.UndefOr[PositionDef[F]]]] = js.undefined
     
-    var y2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.native
+    var y2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
     
-    var yError: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.native
+    var yError: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
     
-    var yError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.native
+    var yError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
   }
   object SharedCompositeEncoding {
     
@@ -191,7 +213,7 @@ object compositemarkMod {
     }
     
     @scala.inline
-    implicit class SharedCompositeEncodingMutableBuilder[Self <: SharedCompositeEncoding[_], F /* <: Field */] (val x: Self with SharedCompositeEncoding[F]) extends AnyVal {
+    implicit class SharedCompositeEncodingMutableBuilder[Self <: SharedCompositeEncoding[?], F /* <: Field */] (val x: Self & SharedCompositeEncoding[F]) extends AnyVal {
       
       @scala.inline
       def setAngle(value: Partial[js.UndefOr[NumericMarkPropDef[F]]]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])

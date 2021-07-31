@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
   /**
     * The maximum number of protections that can be created for the specified Type.
     */
-  var Max: js.UndefOr[Long] = js.native
+  var Max: js.UndefOr[Long] = js.undefined
   
   /**
     * The type of protection.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object Limit {
   

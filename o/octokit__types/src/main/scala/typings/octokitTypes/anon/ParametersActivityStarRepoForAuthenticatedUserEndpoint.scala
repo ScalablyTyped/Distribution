@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ActivityStarRepoForAuthenticatedUserReq
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityStarRepoForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ActivityStarRepoForAuthenticatedUserEndpoint = js.native
+  var parameters: ActivityStarRepoForAuthenticatedUserEndpoint
   
-  var request: ActivityStarRepoForAuthenticatedUserRequestOptions = js.native
+  var request: ActivityStarRepoForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersActivityStarRepoForAuthenticatedUserEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersActivityStarRepoForAuthenticatedUserEndpoint {
   def apply(
     parameters: ActivityStarRepoForAuthenticatedUserEndpoint,
     request: ActivityStarRepoForAuthenticatedUserRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersActivityStarRepoForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersActivityStarRepoForAuthenticatedUserEndpoint]
@@ -39,6 +37,6 @@ object ParametersActivityStarRepoForAuthenticatedUserEndpoint {
     def setRequest(value: ActivityStarRepoForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

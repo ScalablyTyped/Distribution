@@ -2,56 +2,54 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImageRecipeRequest extends StObject {
   
   /**
     * The block device mappings of the image recipe. 
     */
-  var blockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappings] = js.native
+  var blockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappings] = js.undefined
   
   /**
     * The idempotency token used to make this request idempotent. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The components of the image recipe. 
     */
-  var components: ComponentConfigurationList = js.native
+  var components: ComponentConfigurationList
   
   /**
     *  The description of the image recipe. 
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The name of the image recipe. 
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     * The parent image of the image recipe. The value of the string can be the ARN of the parent image or an AMI ID. The format for the ARN follows this example: arn:aws:imagebuilder:us-west-2:aws:image/windows-server-2016-english-full-base-x86/xxxx.x.x. You can provide the specific version that you want to use, or you can use a wildcard in all of the fields. If you enter an AMI ID for the string value, you must have access to the AMI, and the AMI must be in the same Region in which you are using Image Builder. 
     */
-  var parentImage: NonEmptyString = js.native
+  var parentImage: NonEmptyString
   
   /**
     * The semantic version of the image recipe. 
     */
-  var semanticVersion: VersionNumber = js.native
+  var semanticVersion: VersionNumber
   
   /**
     *  The tags of the image recipe. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The working directory to be used during build and test workflows.
     */
-  var workingDirectory: js.UndefOr[NonEmptyString] = js.native
+  var workingDirectory: js.UndefOr[NonEmptyString] = js.undefined
 }
 object CreateImageRecipeRequest {
   

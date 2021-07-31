@@ -3,7 +3,6 @@ package typings.ibmOpenapiValidator
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,24 +13,25 @@ object mod {
     * @param defaultMode - If set to true, the validator will ignore the .validaterc file and will use the [configuration defaults](https://github.com/IBM/openapi-validator#default-values).
     * @returns Validation results
     */
+  @scala.inline
+  def apply(openApiDoc: StringDictionary[js.Any]): js.Promise[validatorResult] = ^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[validatorResult]]
+  @scala.inline
+  def apply(openApiDoc: StringDictionary[js.Any], defaultMode: validatorParameterDefaultMode): js.Promise[validatorResult] = (^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[validatorResult]]
+  
   @JSImport("ibm-openapi-validator", JSImport.Namespace)
   @js.native
-  def apply(openApiDoc: StringDictionary[js.Any]): js.Promise[validatorResult] = js.native
-  @JSImport("ibm-openapi-validator", JSImport.Namespace)
-  @js.native
-  def apply(openApiDoc: StringDictionary[js.Any], defaultMode: validatorParameterDefaultMode): js.Promise[validatorResult] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * @default false
     */
   type validatorParameterDefaultMode = Boolean
   
-  @js.native
   trait validatorResult extends StObject {
     
-    var errors: js.Array[js.Any | validatorResultItem] = js.native
+    var errors: js.Array[js.Any | validatorResultItem]
     
-    var warnings: js.Array[js.Any | validatorResultItem] = js.native
+    var warnings: js.Array[js.Any | validatorResultItem]
   }
   object validatorResult {
     
@@ -58,12 +58,11 @@ object mod {
     }
   }
   
-  @js.native
   trait validatorResultItem extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var path: String = js.native
+    var path: String
   }
   object validatorResultItem {
     

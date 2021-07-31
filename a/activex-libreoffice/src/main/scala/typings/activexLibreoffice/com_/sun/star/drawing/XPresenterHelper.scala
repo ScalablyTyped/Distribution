@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import typings.activexLibreoffice.com_.sun.star.rendering.XSpriteCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * As the presenter screen is no extension any more, this hack can go again; it just needs clean-up.
   */
-@js.native
 trait XPresenterHelper extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait XPresenterHelper extends StObject {
     * eventually can lead to an unresponsive application.
     * @param xWindow The window for which mouse events will be notified even when the mouse pointer moves outside the window or over other windows.
     */
-  def captureMouse(xWindow: XWindow): Unit = js.native
+  def captureMouse(xWindow: XWindow): Unit
   
   /**
     * Create a new canvas for the given window.
@@ -32,7 +30,7 @@ trait XPresenterHelper extends StObject {
     * @param nRequestedCanvasFeatureList List of requested features that the new canvas should (has to) provide. Use only values from the {@link CanvasFeature
     * @param sOptionalCanvasServiceName When an explicit service name is given then a new object of this service is created. This service name lets the caller
     */
-  def createCanvas(xWindow: XWindow, nRequestedCanvasFeatureList: Double, sOptionalCanvasServiceName: String): XCanvas = js.native
+  def createCanvas(xWindow: XWindow, nRequestedCanvasFeatureList: Double, sOptionalCanvasServiceName: String): XCanvas
   
   /**
     * Create a new canvas for the given window. The new canvas is a wrapper around the given shared canvas. The wrapper only modifies the origin in all
@@ -49,7 +47,7 @@ trait XPresenterHelper extends StObject {
     xSharedCanvas: XCanvas,
     xSharedWindow: XWindow,
     xWindow: XWindow
-  ): XCanvas = js.native
+  ): XCanvas
   
   /**
     * Create a new window as child window of the given parent window.
@@ -65,29 +63,29 @@ trait XPresenterHelper extends StObject {
     bInitiallyVisible: Boolean,
     bEnableChildTransparentMode: Boolean,
     bEnableParentClip: Boolean
-  ): XWindow = js.native
+  ): XWindow
   
   /** Return the bounding box of the given child window relative to the direct or indirect parent window. */
-  def getWindowExtentsRelative(xChildWindow: XWindow, xParentWindow: XWindow): Rectangle = js.native
+  def getWindowExtentsRelative(xChildWindow: XWindow, xParentWindow: XWindow): Rectangle
   
   /**
     * Load a bitmap with a given ID.
     * @param id The ID of the bitmap.
     * @param xCanvas The bitmap is created to be compatible, and possibly optimized, for this canvas.
     */
-  def loadBitmap(id: String, xCanvas: XCanvas): XBitmap = js.native
+  def loadBitmap(id: String, xCanvas: XCanvas): XBitmap
   
   /**
     * Release a previously captured mouse.
     * @param xWindow The window from which the mouse will be released.
     */
-  def releaseMouse(xWindow: XWindow): Unit = js.native
+  def releaseMouse(xWindow: XWindow): Unit
   
   /**
     * Move the specified window to the top of its stacking order. As a result the window will be painted over all its overlapping siblings.
     * @param xWindow This window will be moved to the top of its stacking order.
     */
-  def toTop(xWindow: XWindow): Unit = js.native
+  def toTop(xWindow: XWindow): Unit
 }
 object XPresenterHelper {
   

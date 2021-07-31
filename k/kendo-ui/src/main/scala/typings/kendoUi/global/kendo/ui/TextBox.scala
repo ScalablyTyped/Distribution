@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.TextBoxOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.TextBox")
 @js.native
 class TextBox protected ()
-  extends typings.kendoUi.kendo.ui.TextBox {
+  extends StObject
+     with typings.kendoUi.kendo.ui.TextBox {
   def this(element: Element) = this()
   def this(element: Element, options: TextBoxOptions) = this()
 }
@@ -21,9 +21,8 @@ object TextBox {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.TextBox.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TextBox = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TextBox]
   
   /* static member */
   @JSGlobal("kendo.ui.TextBox.fn")

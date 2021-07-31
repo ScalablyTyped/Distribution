@@ -3,7 +3,6 @@ package typings.reactPointable
 import typings.reactPointable.mod.TouchAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPointableStrings {
@@ -49,7 +48,9 @@ object reactPointableStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait auto extends TouchAction
+  sealed trait auto
+    extends StObject
+       with TouchAction
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -519,7 +520,9 @@ object reactPointableStrings {
   def main: main = "main".asInstanceOf[main]
   
   @js.native
-  sealed trait manipulation extends TouchAction
+  sealed trait manipulation
+    extends StObject
+       with TouchAction
   @scala.inline
   def manipulation: manipulation = "manipulation".asInstanceOf[manipulation]
   
@@ -574,7 +577,9 @@ object reactPointableStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait none extends TouchAction
+  sealed trait none
+    extends StObject
+       with TouchAction
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -614,12 +619,16 @@ object reactPointableStrings {
   def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait `pan-x` extends TouchAction
+  sealed trait `pan-x`
+    extends StObject
+       with TouchAction
   @scala.inline
   def `pan-x`: `pan-x` = "pan-x".asInstanceOf[`pan-x`]
   
   @js.native
-  sealed trait `pan-y` extends TouchAction
+  sealed trait `pan-y`
+    extends StObject
+       with TouchAction
   @scala.inline
   def `pan-y`: `pan-y` = "pan-y".asInstanceOf[`pan-y`]
   

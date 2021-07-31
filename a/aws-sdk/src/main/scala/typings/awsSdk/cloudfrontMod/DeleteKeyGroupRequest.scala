@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteKeyGroupRequest extends StObject {
   
   /**
     * The identifier of the key group that you are deleting. To get the identifier, use ListKeyGroups.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The version of the key group that you are deleting. The version is the key group’s ETag value. To get the ETag, use GetKeyGroup or GetKeyGroupConfig.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
 }
 object DeleteKeyGroupRequest {
   

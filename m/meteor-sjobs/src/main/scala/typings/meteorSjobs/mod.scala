@@ -6,7 +6,6 @@ import typings.meteorSjobs.meteorSjobsBooleans.`true`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-single-declare-module
@@ -189,36 +188,35 @@ object mod {
     * The supported fields for in and on can be used in singular and/or plural versions.
     * The date object will be updated in the order that is specified.
     */
-  @js.native
   trait CfgTimeObject extends StObject {
     
-    var day: js.UndefOr[Double] = js.native
+    var day: js.UndefOr[Double] = js.undefined
     
-    var days: js.UndefOr[Double] = js.native
+    var days: js.UndefOr[Double] = js.undefined
     
-    var hour: js.UndefOr[Double] = js.native
+    var hour: js.UndefOr[Double] = js.undefined
     
-    var hours: js.UndefOr[Double] = js.native
+    var hours: js.UndefOr[Double] = js.undefined
     
-    var milisecond: js.UndefOr[Double] = js.native
+    var milisecond: js.UndefOr[Double] = js.undefined
     
-    var miliseconds: js.UndefOr[Double] = js.native
+    var miliseconds: js.UndefOr[Double] = js.undefined
     
-    var minute: js.UndefOr[Double] = js.native
+    var minute: js.UndefOr[Double] = js.undefined
     
-    var minutes: js.UndefOr[Double] = js.native
+    var minutes: js.UndefOr[Double] = js.undefined
     
-    var month: js.UndefOr[Double] = js.native
+    var month: js.UndefOr[Double] = js.undefined
     
-    var months: js.UndefOr[Double] = js.native
+    var months: js.UndefOr[Double] = js.undefined
     
-    var second: js.UndefOr[Double] = js.native
+    var second: js.UndefOr[Double] = js.undefined
     
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
-    var year: js.UndefOr[Double] = js.native
+    var year: js.UndefOr[Double] = js.undefined
     
-    var years: js.UndefOr[Double] = js.native
+    var years: js.UndefOr[Double] = js.undefined
   }
   object CfgTimeObject {
     
@@ -317,18 +315,17 @@ object mod {
     }
   }
   
-  @js.native
   trait HistoryItem extends StObject {
     
-    var date: Date = js.native
+    var date: Date
     
-    var newDue: js.UndefOr[Date] = js.native
+    var newDue: js.UndefOr[Date] = js.undefined
     
-    var serverId: String = js.native
+    var serverId: String
     
-    var state: js.UndefOr[JobState] = js.native
+    var state: js.UndefOr[JobState] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HistoryItem {
     
@@ -367,34 +364,33 @@ object mod {
     }
   }
   
-  @js.native
   trait Job extends StObject {
     
-    var _id: js.UndefOr[String] = js.native
+    var _id: js.UndefOr[String] = js.undefined
     
-    var arguments: js.Array[_] = js.native
+    var arguments: js.Array[js.Any]
     
-    var created: Date = js.native
+    var created: Date
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var due: Date = js.native
+    var due: Date
     
-    var history: js.Array[HistoryItem] = js.native
+    var history: js.Array[HistoryItem]
     
-    var name: String = js.native
+    var name: String
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var serverId: String = js.native
+    var serverId: String
     
-    var state: JobState = js.native
+    var state: JobState
   }
   object Job {
     
     @scala.inline
     def apply(
-      arguments: js.Array[_],
+      arguments: js.Array[js.Any],
       created: Date,
       data: js.Any,
       due: Date,
@@ -412,7 +408,7 @@ object mod {
     implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArguments(value: js.Array[_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
@@ -454,32 +450,31 @@ object mod {
   
   type JobDefinition = StringDictionary[js.ThisFunction1[/* this */ JobContext, /* repeated */ js.Any, Unit]]
   
-  @js.native
   trait JobRunConfigObject extends StObject {
     
     /** Run a callback function after scheduling the job. */
-    var callback: js.UndefOr[js.Function2[/* error */ `true` | Null, /* result */ Job, _]] = js.native
+    var callback: js.UndefOr[js.Function2[/* error */ `true` | Null, /* result */ Job, js.Any]] = js.undefined
     
     /** Provide your own date. This stacks with the in and on operator, and will be applied before they perform their operations. */
-    var date: js.UndefOr[js.Function0[Date]] = js.native
+    var date: js.UndefOr[js.Function0[Date]] = js.undefined
     
     /** Will schedule the job at a later time, using the current time and your inputs to calculate the due time. */
-    var in: js.UndefOr[CfgTimeObject] = js.native
+    var in: js.UndefOr[CfgTimeObject] = js.undefined
     
     /** Overrides the current time with your inputs */
-    var on: js.UndefOr[CfgTimeObject] = js.native
+    var on: js.UndefOr[CfgTimeObject] = js.undefined
     
     /**
       * The default priority for each job is 0, if set to a positive integer, it will run ahead of other jobs.
       * If set to a negative integer, it will only run after all the zero or positive jobs have completed.
       */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** If a job is marked as singular, it will only be scheduled if no other job is pending with the same arguments. */
-    var singular: js.UndefOr[Boolean] = js.native
+    var singular: js.UndefOr[Boolean] = js.undefined
     
     /** If a job is marked as unique, it will only be scheduled if no other job exists with the same arguments. */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object JobRunConfigObject {
     
@@ -493,7 +488,7 @@ object mod {
     implicit class JobRunConfigObjectMutableBuilder[Self <: JobRunConfigObject] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: (/* error */ `true` | Null, /* result */ Job) => _): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      def setCallback(value: (/* error */ `true` | Null, /* result */ Job) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -554,43 +549,42 @@ object mod {
     def success: typings.meteorSjobs.meteorSjobsStrings.success = "success".asInstanceOf[typings.meteorSjobs.meteorSjobsStrings.success]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Specify if the package should automatically delete internal data (not job related). */
-    var autoPurge: js.UndefOr[Boolean] = js.native
+    var autoPurge: js.UndefOr[Boolean] = js.undefined
     
     /** Specify if the package should retry failed jobs whenever a new server takes control. */
-    var autoRetry: js.UndefOr[Boolean] = js.native
+    var autoRetry: js.UndefOr[Boolean] = js.undefined
     
     /** Specify if the package should start automatically on Meteor.startup. */
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**  development mode assumes that only one server is running, and that it is the active one. */
-    var disableDevelopmentMode: js.UndefOr[Boolean] = js.native
+    var disableDevelopmentMode: js.UndefOr[Boolean] = js.undefined
     
     /** Determine how to get the current date, if for whatever reason, new Date() is not suitable */
-    var getDate: js.UndefOr[js.Function0[Date]] = js.native
+    var getDate: js.UndefOr[js.Function0[Date]] = js.undefined
     
-    var gracePeriod: js.UndefOr[Double] = js.native
+    var gracePeriod: js.UndefOr[Double] = js.undefined
     
     /**  Specify how often the package should check for due jobs. */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Determine how to log the package outputs */
-    var log: js.UndefOr[js.Function1[/* messages */ String | js.Object, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* messages */ String | js.Object, Unit]] = js.undefined
     
     /** Specify how long the server could be inactive before another server takes on the master role. */
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
     /** Store jobs data in a remote collection. */
-    var remoteCollection: js.UndefOr[String] = js.native
+    var remoteCollection: js.UndefOr[String] = js.undefined
     
     /** Determine how to set the serverId - for example, you can have the package use your hosts deployment id */
-    var setServerId: js.UndefOr[js.Function0[String]] = js.native
+    var setServerId: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** Specify how long after server startup the package should start running. */
-    var startupDelay: js.UndefOr[Double] = js.native
+    var startupDelay: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

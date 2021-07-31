@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,29 +26,25 @@ trait PlusIbeacon extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   def getBeacons(): Unit = js.native
-  def getBeacons(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getBeacons(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBeacons(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBeacons(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def getBeacons(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def getBeacons(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getBeacons(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getBeacons(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBeacons(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getBeacons(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getBeacons(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 监听iBeacon服务状态变化
@@ -76,187 +71,179 @@ trait PlusIbeacon extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   def startBeaconDiscovery(): Unit = js.native
+  def startBeaconDiscovery(uuids: js.Array[js.Any]): Unit = js.native
+  def startBeaconDiscovery(uuids: js.Array[js.Any], ignoretoothAvailable: Boolean): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(uuids: js.UndefOr[scala.Nothing], ignoretoothAvailable: Boolean): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
     ignoretoothAvailable: Boolean,
     success: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
-    ignoretoothAvailable: Boolean,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
     ignoretoothAvailable: Boolean,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
     ignoretoothAvailable: Boolean,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
-  def startBeaconDiscovery(uuids: js.Array[_]): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Boolean,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Boolean,
+    success: Unit,
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Boolean,
+    success: Unit,
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Boolean,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
     success: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
-  def startBeaconDiscovery(uuids: js.Array[_], ignoretoothAvailable: Boolean): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
+    success: Unit,
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: Boolean,
-    success: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
+    success: Unit,
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: Boolean,
-    success: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startBeaconDiscovery(
-    uuids: js.Array[_],
-    ignoretoothAvailable: Boolean,
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
+    uuids: js.Array[js.Any],
+    ignoretoothAvailable: Unit,
+    success: Unit,
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def startBeaconDiscovery(uuids: Unit, ignoretoothAvailable: Boolean): Unit = js.native
+  def startBeaconDiscovery(uuids: Unit, ignoretoothAvailable: Boolean, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
+    uuids: Unit,
     ignoretoothAvailable: Boolean,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def startBeaconDiscovery(
-    uuids: js.Array[_],
+    uuids: Unit,
     ignoretoothAvailable: Boolean,
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Boolean,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Boolean,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Boolean,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Boolean,
+    success: Unit,
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(uuids: Unit, ignoretoothAvailable: Unit, success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startBeaconDiscovery(
+    uuids: Unit,
+    ignoretoothAvailable: Unit,
+    success: Unit,
+    fail: Unit,
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -267,27 +254,23 @@ trait PlusIbeacon extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   def stopBeaconDiscovery(): Unit = js.native
-  def stopBeaconDiscovery(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def stopBeaconDiscovery(success: js.UndefOr[scala.Nothing], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def stopBeaconDiscovery(
-    success: js.UndefOr[scala.Nothing],
-    fail: js.Function1[/* result */ js.Any, Unit],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def stopBeaconDiscovery(success: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def stopBeaconDiscovery(
-    success: js.Function1[/* result */ js.Any, Unit],
-    fail: js.UndefOr[scala.Nothing],
-    complete: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def stopBeaconDiscovery(success: js.Function1[/* result */ js.Any, Unit], fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def stopBeaconDiscovery(
     success: js.Function1[/* result */ js.Any, Unit],
     fail: js.Function1[/* result */ js.Any, Unit],
     complete: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def stopBeaconDiscovery(
+    success: js.Function1[/* result */ js.Any, Unit],
+    fail: Unit,
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def stopBeaconDiscovery(success: Unit, fail: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def stopBeaconDiscovery(
+    success: Unit,
+    fail: js.Function1[/* result */ js.Any, Unit],
+    complete: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def stopBeaconDiscovery(success: Unit, fail: Unit, complete: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

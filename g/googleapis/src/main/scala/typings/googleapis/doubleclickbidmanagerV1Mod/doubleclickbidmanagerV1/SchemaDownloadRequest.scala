@@ -2,14 +2,12 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to fetch stored inventory sources, campaigns, insertion orders,
   * line items, TrueView ad groups and ads.
   */
-@js.native
 trait SchemaDownloadRequest extends StObject {
   
   /**
@@ -18,24 +16,24 @@ trait SchemaDownloadRequest extends StObject {
     * &quot;INSERTION_ORDER&quot;  - &quot;LINE_ITEM&quot;  -
     * &quot;INVENTORY_SOURCE&quot;
     */
-  var fileTypes: js.UndefOr[js.Array[String]] = js.native
+  var fileTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The IDs of the specified filter type. This is used to filter entities to
     * fetch. At least one ID must be specified.
     */
-  var filterIds: js.UndefOr[js.Array[String]] = js.native
+  var filterIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Filter type used to filter entities to fetch.
     */
-  var filterType: js.UndefOr[String] = js.native
+  var filterType: js.UndefOr[String] = js.undefined
   
   /**
     * SDF Version (column names, types, order) in which the entities will be
     * returned. Default to 3.1.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaDownloadRequest {
   

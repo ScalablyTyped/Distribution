@@ -2,7 +2,6 @@ package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -796,7 +795,7 @@ trait InteractiveViewModel extends StObject {
   /**
     * TODO
     **/
-  var visualMarkers: js.Array[_] = js.native
+  var visualMarkers: js.Array[js.Any] = js.native
   
   /**
     * TODO

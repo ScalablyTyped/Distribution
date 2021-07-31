@@ -2,15 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportUserField extends StObject {
   
-  var export_as: js.UndefOr[String] = js.native
+  var export_as: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object ExportUserField {
   

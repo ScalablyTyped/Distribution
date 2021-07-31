@@ -3,13 +3,11 @@ package typings.reactNativeFirebase.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TIMESTAMP extends StObject {
   
-  var TIMESTAMP: StringDictionary[String] = js.native
+  var TIMESTAMP: StringDictionary[String]
 }
 object TIMESTAMP {
   

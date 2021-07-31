@@ -2,15 +2,13 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenGraphValue extends StObject {
   
-  var `type`: OpenGraphValueType = js.native
+  var `type`: OpenGraphValueType
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object OpenGraphValue {
   

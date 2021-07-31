@@ -6,31 +6,31 @@ import typings.sharepoint.SP.Web
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PageLayoutCreationInformation extends ClientValueObject {
+trait PageLayoutCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_associatedContentTypeId(): String = js.native
+  def get_associatedContentTypeId(): String
   
-  def get_masterPageUrl(): String = js.native
+  def get_masterPageUrl(): String
   
-  def get_newPageLayoutEditablePath(): String = js.native
+  def get_newPageLayoutEditablePath(): String
   
-  def get_newPageLayoutNameWithoutExtension(): String = js.native
+  def get_newPageLayoutNameWithoutExtension(): String
   
-  def get_web(): Web = js.native
+  def get_web(): Web
   
-  def set_associatedContentTypeId(value: String): String = js.native
+  def set_associatedContentTypeId(value: String): String
   
-  def set_masterPageUrl(value: String): String = js.native
+  def set_masterPageUrl(value: String): String
   
-  def set_newPageLayoutEditablePath(value: String): String = js.native
+  def set_newPageLayoutEditablePath(value: String): String
   
-  def set_newPageLayoutNameWithoutExtension(value: String): String = js.native
+  def set_newPageLayoutNameWithoutExtension(value: String): String
   
-  def set_web(value: Web): Web = js.native
+  def set_web(value: Web): Web
 }
 object PageLayoutCreationInformation {
   

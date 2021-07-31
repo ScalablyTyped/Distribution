@@ -2,23 +2,23 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InterfaceDeclaration extends AST {
+trait InterfaceDeclaration
+  extends StObject
+     with AST {
   
-  var body: ObjectType = js.native
+  var body: ObjectType
   
-  var heritageClauses: ISyntaxList2 = js.native
+  var heritageClauses: ISyntaxList2
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  def structuralEquals(ast: InterfaceDeclaration, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: InterfaceDeclaration, includingPosition: Boolean): Boolean
   
-  var typeParameterList: TypeParameterList = js.native
+  var typeParameterList: TypeParameterList
 }
 object InterfaceDeclaration {
   

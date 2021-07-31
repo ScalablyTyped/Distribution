@@ -2,22 +2,22 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectionInsertOneOptions extends CommonOptions {
+trait CollectionInsertOneOptions
+  extends StObject
+     with CommonOptions {
   
   //Allow driver to bypass schema validation in MongoDB 3.2 or higher.
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   //Force server to assign _id values instead of driver.
-  var forceServerObjectId: js.UndefOr[Boolean] = js.native
+  var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
 }
 object CollectionInsertOneOptions {
   

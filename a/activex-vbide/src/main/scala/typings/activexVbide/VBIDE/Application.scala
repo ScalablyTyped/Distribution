@@ -2,16 +2,14 @@ package typings.activexVbide.VBIDE
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   @JSName("VBIDE.Application_typekey")
-  var VBIDEDotApplication_typekey: Application = js.native
+  var VBIDEDotApplication_typekey: Application
   
-  val Version: String = js.native
+  val Version: String
 }
 object Application {
   

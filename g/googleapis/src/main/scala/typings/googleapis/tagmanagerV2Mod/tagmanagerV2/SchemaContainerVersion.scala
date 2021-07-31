@@ -2,100 +2,98 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Container Version.
   */
-@js.native
 trait SchemaContainerVersion extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The built-in variables in the container that this version was taken from.
     */
-  var builtInVariable: js.UndefOr[js.Array[SchemaBuiltInVariable]] = js.native
+  var builtInVariable: js.UndefOr[js.Array[SchemaBuiltInVariable]] = js.undefined
   
   /**
     * The container that this version was taken from.
     */
-  var container: js.UndefOr[SchemaContainer] = js.native
+  var container: js.UndefOr[SchemaContainer] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The Container Version ID uniquely identifies the GTM Container Version.
     */
-  var containerVersionId: js.UndefOr[String] = js.native
+  var containerVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * The custom templates in the container that this version was taken from.
     */
-  var customTemplate: js.UndefOr[js.Array[SchemaCustomTemplate]] = js.native
+  var customTemplate: js.UndefOr[js.Array[SchemaCustomTemplate]] = js.undefined
   
   /**
     * A value of true indicates this container version has been deleted.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Container version description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM Container Version as computed at storage time.
     * This value is recomputed whenever the container version is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The folders in the container that this version was taken from.
     */
-  var folder: js.UndefOr[js.Array[SchemaFolder]] = js.native
+  var folder: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
   
   /**
     * Container version display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * GTM ContainerVersions&#39;s API relative path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The tags in the container that this version was taken from.
     */
-  var tag: js.UndefOr[js.Array[SchemaTag]] = js.native
+  var tag: js.UndefOr[js.Array[SchemaTag]] = js.undefined
   
   /**
     * Auto generated link to the tag manager UI
     */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The triggers in the container that this version was taken from.
     */
-  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.native
+  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.undefined
   
   /**
     * The variables in the container that this version was taken from.
     */
-  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
   
   /**
     * The zones in the container that this version was taken from.
     */
-  var zone: js.UndefOr[js.Array[SchemaZone]] = js.native
+  var zone: js.UndefOr[js.Array[SchemaZone]] = js.undefined
 }
 object SchemaContainerVersion {
   

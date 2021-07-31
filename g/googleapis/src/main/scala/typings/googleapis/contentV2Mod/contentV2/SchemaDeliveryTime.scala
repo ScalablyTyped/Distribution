@@ -2,57 +2,55 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDeliveryTime extends StObject {
   
   /**
     * Business days cutoff time definition. If not configured the cutoff time
     * will be defaulted to 8AM PST.
     */
-  var cutoffTime: js.UndefOr[SchemaCutoffTime] = js.native
+  var cutoffTime: js.UndefOr[SchemaCutoffTime] = js.undefined
   
   /**
     * Holiday cutoff definitions. If configured, they specify order cutoff
     * times for holiday-specific shipping.
     */
-  var holidayCutoffs: js.UndefOr[js.Array[SchemaHolidayCutoff]] = js.native
+  var holidayCutoffs: js.UndefOr[js.Array[SchemaHolidayCutoff]] = js.undefined
   
   /**
     * Maximum number of business days spent before an order is shipped. 0 means
     * same day shipped, 1 means next day shipped. Must be greater than or equal
     * to minHandlingTimeInDays.
     */
-  var maxHandlingTimeInDays: js.UndefOr[Double] = js.native
+  var maxHandlingTimeInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of business days that is spent in transit. 0 means same
     * day delivery, 1 means next day delivery. Must be greater than or equal to
     * minTransitTimeInDays.
     */
-  var maxTransitTimeInDays: js.UndefOr[Double] = js.native
+  var maxTransitTimeInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of business days spent before an order is shipped. 0 means
     * same day shipped, 1 means next day shipped.
     */
-  var minHandlingTimeInDays: js.UndefOr[Double] = js.native
+  var minHandlingTimeInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of business days that is spent in transit. 0 means same
     * day delivery, 1 means next day delivery. Either
     * {min,max}transitTimeInDays or transitTimeTable must be set, but not both.
     */
-  var minTransitTimeInDays: js.UndefOr[Double] = js.native
+  var minTransitTimeInDays: js.UndefOr[Double] = js.undefined
   
   /**
     * Transit time table, number of business days spent in transit based on row
     * and column dimensions. Either {min,max}transitTimeInDays or
     * transitTimeTable can be set, but not both.
     */
-  var transitTimeTable: js.UndefOr[SchemaTransitTable] = js.native
+  var transitTimeTable: js.UndefOr[SchemaTransitTable] = js.undefined
 }
 object SchemaDeliveryTime {
   

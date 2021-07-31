@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceFieldProperties extends StObject {
   
   /**
     *  Indicates if the field can be queried. 
     */
-  var isQueryable: js.UndefOr[Boolean] = js.native
+  var isQueryable: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Indicates whether the field can be returned in a search result. 
     */
-  var isRetrievable: js.UndefOr[Boolean] = js.native
+  var isRetrievable: js.UndefOr[Boolean] = js.undefined
 }
 object SourceFieldProperties {
   

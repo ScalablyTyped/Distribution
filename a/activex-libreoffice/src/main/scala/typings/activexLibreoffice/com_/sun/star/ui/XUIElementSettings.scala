@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functions to retrieve and change user interface element structure data and to update its visible representation.
   * @since OOo 2.0
   */
-@js.native
-trait XUIElementSettings extends XInterface {
+trait XUIElementSettings
+  extends StObject
+     with XInterface {
   
   /**
     * provides a {@link UIElementSettings} instance that provides access to the structure of user interface element if the user interface element type
@@ -21,14 +21,14 @@ trait XUIElementSettings extends XInterface {
     * @param bWriteable must be `TRUE` if the retrieved settings should be a writable. Otherwise `FALSE` should be provided to get a shareable reference to th
     * @returns the current settings of the user interface element.
     */
-  def getSettings(bWriteable: Boolean): XIndexAccess = js.native
+  def getSettings(bWriteable: Boolean): XIndexAccess
   
   /**
     * set changes to the structure of the user interface element.
     * @param UISettings new data settings for the configurable user interface element.  User interface elements cannot be changed directly. The changed struct
     * @see com.sun.star.ui.UIElementSettings
     */
-  def setSettings(UISettings: XIndexAccess): Unit = js.native
+  def setSettings(UISettings: XIndexAccess): Unit
   
   /**
     * forces the user interface element to retrieve new settings from its configuration source.
@@ -36,7 +36,7 @@ trait XUIElementSettings extends XInterface {
     * This is not done automatically as configurable user interface elements are controlled by layout managers. It is more efficient to let the responsible
     * layout manager to control the update process in a single task.
     */
-  def updateSettings(): Unit = js.native
+  def updateSettings(): Unit
 }
 object XUIElementSettings {
   

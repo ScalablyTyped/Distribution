@@ -4,17 +4,15 @@ import typings.sortablejs.mod.Sortable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Get extends StObject {
     
-    def get(sortable: Sortable): js.Array[String] = js.native
+    def get(sortable: Sortable): js.Array[String]
     
-    def set(sortable: Sortable): Unit = js.native
+    def set(sortable: Sortable): Unit
   }
   object Get {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var multiDragElement: HTMLElement = js.native
+    var multiDragElement: HTMLElement
   }
   object Index {
     
@@ -61,12 +58,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

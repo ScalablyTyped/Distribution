@@ -3,10 +3,13 @@ package typings.memwatchNext
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("memwatch-next", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("memwatch-next", "HeapDiff")
   @js.native
@@ -18,38 +21,36 @@ object mod {
     def end(): Unit = js.native
   }
   
-  @JSImport("memwatch-next", "on")
-  @js.native
-  def on(eventName: String, callback: EventCallback): Unit = js.native
+  @scala.inline
+  def on(eventName: String, callback: EventCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type EventCallback = js.Function1[/* data */ LeakInformation | StatsInformation | js.Object, Unit]
   
-  @js.native
   trait LeakInformation extends StObject {
     
     /**
       * End date.
       * @type {Date}
       */
-    var end: Date = js.native
+    var end: Date
     
     /**
       * Growth.
       * @type {number}
       */
-    var growth: Double = js.native
+    var growth: Double
     
     /**
       * Reason leak.
       * @type {string}
       */
-    var reason: String = js.native
+    var reason: String
     
     /**
       * Start date.
       * @type {Date}
       */
-    var start: Date = js.native
+    var start: Date
   }
   object LeakInformation {
     
@@ -76,24 +77,23 @@ object mod {
     }
   }
   
-  @js.native
   trait StatsInformation extends StObject {
     
-    var current_base: Double = js.native
+    var current_base: Double
     
-    var estimated_base: Double = js.native
+    var estimated_base: Double
     
-    var heap_compactions: Double = js.native
+    var heap_compactions: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var num_full_gc: Double = js.native
+    var num_full_gc: Double
     
-    var num_inc_gc: Double = js.native
+    var num_inc_gc: Double
     
-    var usage_trend: Double = js.native
+    var usage_trend: Double
   }
   object StatsInformation {
     

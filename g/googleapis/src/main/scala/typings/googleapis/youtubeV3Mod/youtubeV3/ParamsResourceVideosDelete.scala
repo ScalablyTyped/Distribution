@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVideosDelete extends StandardParameters {
+trait ParamsResourceVideosDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The id parameter specifies the YouTube video ID for the resource that is
     * being deleted. In a video resource, the id property specifies the video's
     * ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -36,7 +36,7 @@ trait ParamsResourceVideosDelete extends StandardParameters {
     * channel. The actual CMS account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceVideosDelete {
   

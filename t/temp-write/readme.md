@@ -11,8 +11,8 @@ Write string/buffer/stream to a random temp file
 | Full name          | temp-write |
 | Keywords           | temp, temporary, tempfile, file, filename, path, random, write, fs, string, buffer, stream |
 | # releases         | 2 |
-| # dependents       | 125 |
-| # downloads        | 46031896 |
+| # dependents       | 136 |
+| # downloads        | 55017908 |
 | # stars            | 2 |
 
 ## Links

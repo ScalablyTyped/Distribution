@@ -15,7 +15,6 @@ import typings.std.EventTarget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,17 +56,18 @@ object mod {
     
     @JSGlobal("FontFaceSetLoadEvent")
     @js.native
-    class FontFaceSetLoadEvent protected () extends Event {
+    class FontFaceSetLoadEvent protected ()
+      extends StObject
+         with Event {
       def this(`type`: String) = this()
       def this(`type`: String, eventInitDict: FontFaceSetLoadEventInit) = this()
       
       val fontfaces: js.Array[FontFace] = js.native
     }
     
-    @js.native
     trait Document extends StObject {
       
-      var fonts: FontFaceSet = js.native
+      var fonts: FontFaceSet
     }
     object Document {
       
@@ -85,10 +85,9 @@ object mod {
       }
     }
     
-    @js.native
     trait WorkerGlobalScope extends StObject {
       
-      var fonts: FontFaceSet = js.native
+      var fonts: FontFaceSet
     }
     object WorkerGlobalScope {
       
@@ -109,20 +108,19 @@ object mod {
   
   type BinaryData = ArrayBuffer | ArrayBufferView
   
-  @js.native
   trait FontFaceDescriptors extends StObject {
     
-    var featureSettings: js.UndefOr[String] = js.native
+    var featureSettings: js.UndefOr[String] = js.undefined
     
-    var stretch: js.UndefOr[String] = js.native
+    var stretch: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var unicodeRange: js.UndefOr[String] = js.native
+    var unicodeRange: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[String] = js.native
+    var variant: js.UndefOr[String] = js.undefined
     
-    var weight: js.UndefOr[String] = js.native
+    var weight: js.UndefOr[String] = js.undefined
   }
   object FontFaceDescriptors {
     
@@ -197,7 +195,8 @@ object mod {
   
   @js.native
   trait FontFaceSet
-    extends Set[FontFace]
+    extends StObject
+       with Set[FontFace]
        with EventTarget {
     
     // EventTarget
@@ -227,11 +226,11 @@ object mod {
     def load(font: String, text: String): js.Promise[js.Array[FontFace]] = js.native
     
     // events for when loading state changes
-    var onloading: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, _]) | Null = js.native
+    var onloading: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, js.Any]) | Null = js.native
     
-    var onloadingdone: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, _]) | Null = js.native
+    var onloadingdone: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, js.Any]) | Null = js.native
     
-    var onloadingerror: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, _]) | Null = js.native
+    var onloadingerror: (js.ThisFunction1[/* this */ this.type, /* event */ FontFaceSetLoadEvent, js.Any]) | Null = js.native
     
     // async notification that font loading and layout operations are done
     val ready: js.Promise[FontFaceSet] = js.native
@@ -255,14 +254,13 @@ object mod {
     val status: FontFaceSetLoadStatus = js.native
   }
   
-  @js.native
   trait FontFaceSetEventMap extends StObject {
     
-    def loading(event: FontFaceSetLoadEvent): js.Any = js.native
+    def loading(event: FontFaceSetLoadEvent): js.Any
     
-    def loadingdone(event: FontFaceSetLoadEvent): js.Any = js.native
+    def loadingdone(event: FontFaceSetLoadEvent): js.Any
     
-    def loadingerror(event: FontFaceSetLoadEvent): js.Any = js.native
+    def loadingerror(event: FontFaceSetLoadEvent): js.Any
   }
   object FontFaceSetEventMap {
     
@@ -290,10 +288,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FontFaceSetLoadEventInit extends EventInit {
+  trait FontFaceSetLoadEventInit
+    extends StObject
+       with EventInit {
     
-    var fontfaces: js.UndefOr[js.Array[FontFace]] = js.native
+    var fontfaces: js.UndefOr[js.Array[FontFace]] = js.undefined
   }
   object FontFaceSetLoadEventInit {
     

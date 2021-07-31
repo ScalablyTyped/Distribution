@@ -2,50 +2,50 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITab extends IButton {
+trait ITab
+  extends StObject
+     with IButton {
   
   /** [Config Option] (Boolean) */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[java.lang.String] = js.native
+  var activeCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Returns the value of active
     * @returns Boolean
     */
-  var getActive: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of activeCls
     * @returns String
     */
-  var getActiveCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getActiveCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of title
     * @returns String
     */
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Sets the value of active
     * @param active Boolean The new value.
     */
-  var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.native
+  var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of activeCls
     * @param activeCls String The new value.
     */
-  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
 }
 object ITab {
   

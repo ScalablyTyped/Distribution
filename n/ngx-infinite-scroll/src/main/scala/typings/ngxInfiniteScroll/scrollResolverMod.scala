@@ -6,44 +6,38 @@ import typings.ngxInfiniteScroll.modelsMod.IScrollState
 import typings.ngxInfiniteScroll.modelsMod.IScrollerDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollResolverMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "getScrollStats")
+  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", JSImport.Namespace)
   @js.native
-  def getScrollStats(lastScrollPosition: Double, container: IPositionStats, distance: IScrollerDistance): Fire = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "isSameTotalToScroll")
-  @js.native
-  def isSameTotalToScroll(scrollState: IScrollState): Boolean = js.native
+  @scala.inline
+  def getScrollStats(lastScrollPosition: Double, container: IPositionStats, distance: IScrollerDistance): Fire = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollStats")(lastScrollPosition.asInstanceOf[js.Any], container.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Fire]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "isScrollingDownwards")
-  @js.native
-  def isScrollingDownwards(lastScrollPosition: Double, container: IPositionStats): Boolean = js.native
+  @scala.inline
+  def isSameTotalToScroll(scrollState: IScrollState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameTotalToScroll")(scrollState.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "isTriggeredScroll")
-  @js.native
-  def isTriggeredScroll(totalToScroll: js.Any, scrollState: IScrollState, isScrollingDown: Boolean): Boolean = js.native
+  @scala.inline
+  def isScrollingDownwards(lastScrollPosition: Double, container: IPositionStats): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isScrollingDownwards")(lastScrollPosition.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "shouldFireScrollEvent")
-  @js.native
-  def shouldFireScrollEvent(container: IPositionStats, distance: IScrollerDistance, scrollingDown: Boolean): Boolean = js.native
+  @scala.inline
+  def isTriggeredScroll(totalToScroll: js.Any, scrollState: IScrollState, isScrollingDown: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTriggeredScroll")(totalToScroll.asInstanceOf[js.Any], scrollState.asInstanceOf[js.Any], isScrollingDown.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "updateScrollPosition")
-  @js.native
-  def updateScrollPosition(position: Double, scrollState: IScrollState): Double = js.native
+  @scala.inline
+  def shouldFireScrollEvent(container: IPositionStats, distance: IScrollerDistance, scrollingDown: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldFireScrollEvent")(container.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], scrollingDown.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "updateScrollState")
-  @js.native
-  def updateScrollState(scrollState: IScrollState, scrolledUntilNow: Double, totalToScroll: Double): Unit = js.native
+  @scala.inline
+  def updateScrollPosition(position: Double, scrollState: IScrollState): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateScrollPosition")(position.asInstanceOf[js.Any], scrollState.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "updateTotalToScroll")
-  @js.native
-  def updateTotalToScroll(totalToScroll: Double, scrollState: IScrollState): Unit = js.native
+  @scala.inline
+  def updateScrollState(scrollState: IScrollState, scrolledUntilNow: Double, totalToScroll: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateScrollState")(scrollState.asInstanceOf[js.Any], scrolledUntilNow.asInstanceOf[js.Any], totalToScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ngx-infinite-scroll/src/services/scroll-resolver", "updateTriggeredFlag")
-  @js.native
-  def updateTriggeredFlag(scroll: js.Any, scrollState: IScrollState, triggered: Boolean, isScrollingDown: Boolean): Unit = js.native
+  @scala.inline
+  def updateTotalToScroll(totalToScroll: Double, scrollState: IScrollState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTotalToScroll")(totalToScroll.asInstanceOf[js.Any], scrollState.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def updateTriggeredFlag(scroll: js.Any, scrollState: IScrollState, triggered: Boolean, isScrollingDown: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTriggeredFlag")(scroll.asInstanceOf[js.Any], scrollState.asInstanceOf[js.Any], triggered.asInstanceOf[js.Any], isScrollingDown.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

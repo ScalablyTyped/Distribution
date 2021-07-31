@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEnvironmentMod {
   
-  @js.native
   trait Environment extends StObject {
     
     /**
       * <p>Environment variable key-value pairs.</p>
       */
-    var Variables: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Variables: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object Environment {
     
@@ -36,14 +34,15 @@ object typesEnvironmentMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEnvironment extends Environment {
+  trait UnmarshalledEnvironment
+    extends StObject
+       with Environment {
     
     /**
       * <p>Environment variable key-value pairs.</p>
       */
     @JSName("Variables")
-    var Variables_UnmarshalledEnvironment: js.UndefOr[StringDictionary[String]] = js.native
+    var Variables_UnmarshalledEnvironment: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object UnmarshalledEnvironment {
     

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SMTPDelivery extends StObject {
   
   /** This is the SMTP account/email that appears in the `From:` of the email. If empty, it is assumed to be sender. */
-  var fromAddress: js.UndefOr[String] = js.native
+  var fromAddress: js.UndefOr[String] = js.undefined
   
   /** The SMTP sender's password. */
-  var password: js.UndefOr[NotifierSecretRef] = js.native
+  var password: js.UndefOr[NotifierSecretRef] = js.undefined
   
   /** The SMTP port of the server. */
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
   /** This is the list of addresses to which we send the email (i.e. in the `To:` of the email). */
-  var recipientAddresses: js.UndefOr[js.Array[String]] = js.native
+  var recipientAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** This is the SMTP account/email that is used to send the message. */
-  var senderAddress: js.UndefOr[String] = js.native
+  var senderAddress: js.UndefOr[String] = js.undefined
   
   /** The address of the SMTP server. */
-  var server: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.undefined
 }
 object SMTPDelivery {
   

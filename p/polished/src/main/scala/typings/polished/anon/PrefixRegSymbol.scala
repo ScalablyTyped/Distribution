@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.BackslashLeftparenthesis
 import typings.polished.polishedStrings.Leftparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixRegSymbol extends StObject {
   
-  var prefix: RightToLeftSymbol = js.native
+  var prefix: RightToLeftSymbol
   
-  var regSymbol: BackslashLeftparenthesis = js.native
+  var regSymbol: BackslashLeftparenthesis
   
-  var symbol: Leftparenthesis = js.native
+  var symbol: Leftparenthesis
 }
 object PrefixRegSymbol {
   
   @scala.inline
-  def apply(prefix: RightToLeftSymbol, regSymbol: BackslashLeftparenthesis, symbol: Leftparenthesis): PrefixRegSymbol = {
-    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(prefix: RightToLeftSymbol): PrefixRegSymbol = {
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], regSymbol = "\\(", symbol = "(")
     __obj.asInstanceOf[PrefixRegSymbol]
   }
   

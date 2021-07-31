@@ -2,27 +2,25 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountsCustomBatchRequestEntryLinkRequest extends StObject {
   
   /**
     * Action to perform for this link. The &quot;request&quot; action is only
     * available to select merchants.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the link between the two accounts.
     */
-  var linkType: js.UndefOr[String] = js.native
+  var linkType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the linked account.
     */
-  var linkedAccountId: js.UndefOr[String] = js.native
+  var linkedAccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountsCustomBatchRequestEntryLinkRequest {
   

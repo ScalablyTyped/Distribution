@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsivePanel extends Widget {
+trait ResponsivePanel
+  extends StObject
+     with Widget {
   
   def close(): Unit = js.native
   

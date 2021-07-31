@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTapeArchivesInput extends StObject {
   
   /**
     * Specifies that the number of virtual tapes described be limited to the specified number.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin describing virtual tapes.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * Specifies one or more unique Amazon Resource Names (ARNs) that represent the virtual tapes you want to describe.
     */
-  var TapeARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeARNs] = js.native
+  var TapeARNs: js.UndefOr[typings.awsSdk.storagegatewayMod.TapeARNs] = js.undefined
 }
 object DescribeTapeArchivesInput {
   

@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientGmail.anon.Key
 import typings.maximMazurokGapiClientGmail.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

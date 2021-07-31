@@ -2,19 +2,17 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForParseResult extends StObject {
   
-  var index: js.UndefOr[ExpressionNode] = js.native
+  var index: js.UndefOr[ExpressionNode] = js.undefined
   
-  var key: js.UndefOr[ExpressionNode] = js.native
+  var key: js.UndefOr[ExpressionNode] = js.undefined
   
-  var source: ExpressionNode = js.native
+  var source: ExpressionNode
   
-  var value: js.UndefOr[ExpressionNode] = js.native
+  var value: js.UndefOr[ExpressionNode] = js.undefined
 }
 object ForParseResult {
   

@@ -11,82 +11,81 @@ import typings.saucelabs.saucelabsStrings.share
 import typings.saucelabs.saucelabsStrings.team
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var assigned_tunnel_id: js.UndefOr[String] = js.native
+  var assigned_tunnel_id: js.UndefOr[String] = js.undefined
   
-  var automation_backend: js.UndefOr[String] = js.native
+  var automation_backend: js.UndefOr[String] = js.undefined
   
-  var base_config: js.UndefOr[BaseConfig] = js.native
+  var base_config: js.UndefOr[BaseConfig] = js.undefined
   
-  var breakpointed: js.UndefOr[String] = js.native
+  var breakpointed: js.UndefOr[String] = js.undefined
   
-  var browser: js.UndefOr[String] = js.native
+  var browser: js.UndefOr[String] = js.undefined
   
-  var browser_short_version: js.UndefOr[String] = js.native
+  var browser_short_version: js.UndefOr[String] = js.undefined
   
-  var browser_version: js.UndefOr[String] = js.native
+  var browser_version: js.UndefOr[String] = js.undefined
   
-  var build: js.UndefOr[String] = js.native
+  var build: js.UndefOr[String] = js.undefined
   
-  var collects_automator_log: js.UndefOr[Boolean] = js.native
+  var collects_automator_log: js.UndefOr[Boolean] = js.undefined
   
-  var command_counts: js.UndefOr[CommandCountStats] = js.native
+  var command_counts: js.UndefOr[CommandCountStats] = js.undefined
   
-  var commands_not_successful: js.UndefOr[Double] = js.native
+  var commands_not_successful: js.UndefOr[Double] = js.undefined
   
-  var consolidated_status: js.UndefOr[error_ | passed | failed | complete] = js.native
+  var consolidated_status: js.UndefOr[error_ | passed | failed | complete] = js.undefined
   
-  var creation_time: js.UndefOr[String] = js.native
+  var creation_time: js.UndefOr[String] = js.undefined
   
-  var `custom-data`: js.UndefOr[String] = js.native
+  var `custom-data`: js.UndefOr[String] = js.undefined
   
-  var deletion_time: js.UndefOr[String] = js.native
+  var deletion_time: js.UndefOr[String] = js.undefined
   
-  var end_time: js.UndefOr[String] = js.native
+  var end_time: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var log_url: js.UndefOr[String] = js.native
+  var log_url: js.UndefOr[String] = js.undefined
   
-  var manual: js.UndefOr[Boolean] = js.native
+  var manual: js.UndefOr[Boolean] = js.undefined
   
-  var modification_time: js.UndefOr[String] = js.native
+  var modification_time: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var os: js.UndefOr[String] = js.native
+  var os: js.UndefOr[String] = js.undefined
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var passed: js.UndefOr[Boolean] = js.native
+  var passed: js.UndefOr[Boolean] = js.undefined
   
-  var proxied: js.UndefOr[Boolean] = js.native
+  var proxied: js.UndefOr[Boolean] = js.undefined
   
-  var proxy_host: js.UndefOr[Boolean] = js.native
+  var proxy_host: js.UndefOr[Boolean] = js.undefined
   
-  var public: js.UndefOr[typings.saucelabs.saucelabsStrings.public | (`public restricted`) | share | team] = js.native
+  var public: js.UndefOr[typings.saucelabs.saucelabsStrings.public | (`public restricted`) | share | team] = js.undefined
   
-  var record_screenshots: js.UndefOr[Boolean] = js.native
+  var record_screenshots: js.UndefOr[Boolean] = js.undefined
   
-  var record_video: js.UndefOr[Boolean] = js.native
+  var record_video: js.UndefOr[Boolean] = js.undefined
   
-  var selenium_version: js.UndefOr[String] = js.native
+  var selenium_version: js.UndefOr[String] = js.undefined
   
-  var start_time: js.UndefOr[String] = js.native
+  var start_time: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var video_secret: js.UndefOr[String] = js.native
+  var video_secret: js.UndefOr[String] = js.undefined
   
-  var video_url: js.UndefOr[String] = js.native
+  var video_url: js.UndefOr[String] = js.undefined
 }
 object Job {
   

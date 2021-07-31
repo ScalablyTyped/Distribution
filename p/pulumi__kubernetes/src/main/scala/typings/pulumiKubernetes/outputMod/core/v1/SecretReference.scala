@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SecretReference represents a Secret Reference. It has enough information to retrieve secret in any namespace
   */
-@js.native
 trait SecretReference extends StObject {
   
   /**
     * Name is unique within a namespace to reference a secret resource.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Namespace defines the space within which the secret name must be unique.
     */
-  var namespace: String = js.native
+  var namespace: String
 }
 object SecretReference {
   

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamBacklogMapping extends StObject {
   
-  var categoryReferenceName: String = js.native
+  var categoryReferenceName: String
   
-  var teamId: String = js.native
+  var teamId: String
 }
 object TeamBacklogMapping {
   

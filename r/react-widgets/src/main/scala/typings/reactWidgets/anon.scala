@@ -6,23 +6,21 @@ import typings.reactWidgets.reactWidgetsStrings.insert
 import typings.reactWidgets.reactWidgetsStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Action extends StObject {
     
-    var action: insert | remove = js.native
+    var action: insert | remove
     
-    var dataItem: js.Any = js.native
+    var dataItem: js.Any
     
-    var lastValue: js.UndefOr[js.Array[_]] = js.native
+    var lastValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
-    var searchTerm: js.UndefOr[String] = js.native
+    var searchTerm: js.UndefOr[String] = js.undefined
   }
   object Action {
     
@@ -42,7 +40,7 @@ object anon {
       def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLastValue(value: js.Array[_]): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
+      def setLastValue(value: js.Array[js.Any]): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLastValueUndefined: Self = StObject.set(x, "lastValue", js.undefined)
@@ -64,14 +62,13 @@ object anon {
     }
   }
   
-  @js.native
   trait LastSearchTerm extends StObject {
     
-    var action: clear | input = js.native
+    var action: clear | input
     
-    var lastSearchTerm: js.UndefOr[String] = js.native
+    var lastSearchTerm: js.UndefOr[String] = js.undefined
     
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object LastSearchTerm {
     
@@ -101,10 +98,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OriginalEvent extends StObject {
     
-    var originalEvent: js.Any = js.native
+    var originalEvent: js.Any
   }
   object OriginalEvent {
     

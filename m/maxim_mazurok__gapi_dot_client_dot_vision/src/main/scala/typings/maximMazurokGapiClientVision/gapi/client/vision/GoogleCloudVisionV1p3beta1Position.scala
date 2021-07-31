@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1Position extends StObject {
   
   /** X coordinate. */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** Y coordinate. */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /** Z coordinate (or depth). */
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1Position {
   

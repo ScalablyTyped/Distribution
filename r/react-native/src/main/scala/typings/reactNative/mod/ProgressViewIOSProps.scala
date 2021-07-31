@@ -4,41 +4,41 @@ import typings.reactNative.reactNativeStrings.bar
 import typings.reactNative.reactNativeStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressViewIOSProps extends ViewProps {
+trait ProgressViewIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * The progress value (between 0 and 1).
     */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
   
   /**
     * A stretchable image to display as the progress bar.
     */
-  var progressImage: js.UndefOr[ImageURISource | js.Array[ImageURISource]] = js.native
+  var progressImage: js.UndefOr[ImageURISource | js.Array[ImageURISource]] = js.undefined
   
   /**
     * The tint color of the progress bar itself.
     */
-  var progressTintColor: js.UndefOr[ColorValue] = js.native
+  var progressTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * The progress bar style.
     */
-  var progressViewStyle: js.UndefOr[default | bar] = js.native
+  var progressViewStyle: js.UndefOr[default | bar] = js.undefined
   
   /**
     * A stretchable image to display behind the progress bar.
     */
-  var trackImage: js.UndefOr[ImageURISource | js.Array[ImageURISource]] = js.native
+  var trackImage: js.UndefOr[ImageURISource | js.Array[ImageURISource]] = js.undefined
   
   /**
     * The tint color of the progress bar track.
     */
-  var trackTintColor: js.UndefOr[ColorValue] = js.native
+  var trackTintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object ProgressViewIOSProps {
   

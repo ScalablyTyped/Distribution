@@ -14,12 +14,10 @@ import typings.textract.textractStrings.raw
 import typings.textract.textractStrings.unix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cmd extends StObject {
     
     /**
@@ -29,7 +27,7 @@ object anon {
       * For instance, to provide language and psm,
       * you would pass `{ tesseract: { cmd:"-l chi_sim -psm 10" } }`
       */
-    var cmd: String = js.native
+    var cmd: String
   }
   object Cmd {
     
@@ -47,38 +45,37 @@ object anon {
     }
   }
   
-  @js.native
   trait Crop extends StObject {
     
-    var crop: js.UndefOr[H] = js.native
+    var crop: js.UndefOr[H] = js.undefined
     
     /**
       * @default "UTF-8"
       */
-    var encoding: js.UndefOr[`UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol] = js.native
+    var encoding: js.UndefOr[`UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol] = js.undefined
     
-    var eol: js.UndefOr[unix | dos | mac] = js.native
+    var eol: js.UndefOr[unix | dos | mac] = js.undefined
     
-    var firstPage: js.UndefOr[Double] = js.native
+    var firstPage: js.UndefOr[Double] = js.undefined
     
-    var lastPage: js.UndefOr[Double] = js.native
+    var lastPage: js.UndefOr[Double] = js.undefined
     
     /**
       * Do not change unless you know what you are doing!
       * @default "raw"
       */
-    var layout: js.UndefOr[typings.textract.textractStrings.layout | raw | htmlmeta] = js.native
+    var layout: js.UndefOr[typings.textract.textractStrings.layout | raw | htmlmeta] = js.undefined
     
-    var ownerPassword: js.UndefOr[String] = js.native
+    var ownerPassword: js.UndefOr[String] = js.undefined
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
     /**
       * @default true
       */
-    var splitPages: js.UndefOr[Boolean] = js.native
+    var splitPages: js.UndefOr[Boolean] = js.undefined
     
-    var userPassword: js.UndefOr[String] = js.native
+    var userPassword: js.UndefOr[String] = js.undefined
   }
   object Crop {
     
@@ -153,16 +150,15 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object H {
     
@@ -189,13 +185,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Lang extends StObject {
     
     /**
       *  A pass-through to tesseract allowing for setting of language for extraction.
       */
-    var lang: String = js.native
+    var lang: String
   }
   object Lang {
     

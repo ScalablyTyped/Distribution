@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Queries")
@@ -30,7 +29,7 @@ class ResourceQueries protected () extends StObject {
     */
   def createquery(): GaxiosPromise[SchemaQuery] = js.native
   def createquery(callback: BodyResponseCallback[SchemaQuery]): Unit = js.native
-  def createquery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuery] = js.native
+  def createquery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQuery] = js.native
   def createquery(params: ParamsResourceQueriesCreatequery): GaxiosPromise[SchemaQuery] = js.native
   def createquery(params: ParamsResourceQueriesCreatequery, callback: BodyResponseCallback[SchemaQuery]): Unit = js.native
   def createquery(
@@ -59,7 +58,7 @@ class ResourceQueries protected () extends StObject {
     */
   def deletequery(): GaxiosPromise[Unit] = js.native
   def deletequery(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def deletequery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def deletequery(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def deletequery(params: ParamsResourceQueriesDeletequery): GaxiosPromise[Unit] = js.native
   def deletequery(params: ParamsResourceQueriesDeletequery, callback: BodyResponseCallback[Unit]): Unit = js.native
   def deletequery(
@@ -88,7 +87,7 @@ class ResourceQueries protected () extends StObject {
     */
   def getquery(): GaxiosPromise[SchemaQuery] = js.native
   def getquery(callback: BodyResponseCallback[SchemaQuery]): Unit = js.native
-  def getquery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuery] = js.native
+  def getquery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQuery] = js.native
   def getquery(params: ParamsResourceQueriesGetquery): GaxiosPromise[SchemaQuery] = js.native
   def getquery(params: ParamsResourceQueriesGetquery, callback: BodyResponseCallback[SchemaQuery]): Unit = js.native
   def getquery(
@@ -116,7 +115,7 @@ class ResourceQueries protected () extends StObject {
     */
   def listqueries(): GaxiosPromise[SchemaListQueriesResponse] = js.native
   def listqueries(callback: BodyResponseCallback[SchemaListQueriesResponse]): Unit = js.native
-  def listqueries(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListQueriesResponse] = js.native
+  def listqueries(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListQueriesResponse] = js.native
   def listqueries(params: ParamsResourceQueriesListqueries): GaxiosPromise[SchemaListQueriesResponse] = js.native
   def listqueries(
     params: ParamsResourceQueriesListqueries,
@@ -149,7 +148,7 @@ class ResourceQueries protected () extends StObject {
     */
   def runquery(): GaxiosPromise[Unit] = js.native
   def runquery(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def runquery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def runquery(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def runquery(params: ParamsResourceQueriesRunquery): GaxiosPromise[Unit] = js.native
   def runquery(params: ParamsResourceQueriesRunquery, callback: BodyResponseCallback[Unit]): Unit = js.native
   def runquery(

@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaySnapshotRequest extends StObject {
   
   /**
     * The first step to replay from (replay from the very start if not specified).
     */
-  var fromStep: js.UndefOr[integer] = js.native
+  var fromStep: js.UndefOr[integer] = js.undefined
   
   /**
     * The scale to apply while replaying (defaults to 1).
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The id of the layer snapshot.
     */
-  var snapshotId: SnapshotId = js.native
+  var snapshotId: SnapshotId
   
   /**
     * The last step to replay to (replay till the end if not specified).
     */
-  var toStep: js.UndefOr[integer] = js.native
+  var toStep: js.UndefOr[integer] = js.undefined
 }
 object ReplaySnapshotRequest {
   

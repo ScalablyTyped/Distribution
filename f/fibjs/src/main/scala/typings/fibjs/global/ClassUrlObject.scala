@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -23,7 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 class ClassUrlObject ()
-  extends typings.fibjs.ClassUrlObject {
+  extends StObject
+     with typings.fibjs.ClassUrlObject {
   /**
     *
     * @brief UrlObject 对象构造函数，使用参数构造
@@ -34,14 +34,10 @@ class ClassUrlObject ()
     */
   def this(args: js.Object) = this()
   def this(url: String) = this()
-  def this(url: js.UndefOr[scala.Nothing], parseQueryString: Boolean) = this()
   def this(url: String, parseQueryString: Boolean) = this()
-  def this(
-    url: js.UndefOr[scala.Nothing],
-    parseQueryString: js.UndefOr[scala.Nothing],
-    slashesDenoteHost: Boolean
-  ) = this()
-  def this(url: js.UndefOr[scala.Nothing], parseQueryString: Boolean, slashesDenoteHost: Boolean) = this()
-  def this(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean) = this()
+  def this(url: Unit, parseQueryString: Boolean) = this()
   def this(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean) = this()
+  def this(url: String, parseQueryString: Unit, slashesDenoteHost: Boolean) = this()
+  def this(url: Unit, parseQueryString: Boolean, slashesDenoteHost: Boolean) = this()
+  def this(url: Unit, parseQueryString: Unit, slashesDenoteHost: Boolean) = this()
 }

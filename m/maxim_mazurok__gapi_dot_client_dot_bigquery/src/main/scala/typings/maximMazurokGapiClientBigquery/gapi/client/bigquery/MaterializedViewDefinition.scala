@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaterializedViewDefinition extends StObject {
   
   /** [Optional] [TrustedTester] Enable automatic refresh of the materialized view when the base table is updated. The default value is "true". */
-  var enableRefresh: js.UndefOr[Boolean] = js.native
+  var enableRefresh: js.UndefOr[Boolean] = js.undefined
   
   /** [Output-only] [TrustedTester] The time when this materialized view was last modified, in milliseconds since the epoch. */
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   /** [Required] A query whose result is persisted. */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /** [Optional] [TrustedTester] The maximum frequency at which this materialized view will be refreshed. The default value is "1800000" (30 minutes). */
-  var refreshIntervalMs: js.UndefOr[String] = js.native
+  var refreshIntervalMs: js.UndefOr[String] = js.undefined
 }
 object MaterializedViewDefinition {
   

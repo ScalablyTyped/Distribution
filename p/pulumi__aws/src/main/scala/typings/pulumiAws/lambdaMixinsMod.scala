@@ -12,10 +12,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaMixinsMod {
+  
+  @JSImport("@pulumi/aws/lambda/lambdaMixins", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/lambda/lambdaMixins", "CallbackFunction")
   @js.native
@@ -36,16 +39,13 @@ object lambdaMixinsMod {
     var permission: Permission = js.native
   }
   
-  @JSImport("@pulumi/aws/lambda/lambdaMixins", "createFunctionFromEventHandler")
-  @js.native
-  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R]): Function = js.native
-  @JSImport("@pulumi/aws/lambda/lambdaMixins", "createFunctionFromEventHandler")
-  @js.native
-  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R], opts: ResourceOptions): Function = js.native
+  @scala.inline
+  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Function]
+  @scala.inline
+  def createFunctionFromEventHandler[E, R](name: String, handler: EventHandler[E, R], opts: ResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionFromEventHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
   
-  @JSImport("@pulumi/aws/lambda/lambdaMixins", "isEventHandler")
-  @js.native
-  def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean = js.native
+  @scala.inline
+  def isEventHandler(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventHandler")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.EventHandler<any, any> */ Boolean]
   
   type BaseCallbackFunctionArgs = Overwrite[FunctionArgs, Code]
   
@@ -59,14 +59,15 @@ object lambdaMixinsMod {
   type CallbackFactory[E, R] = js.Function0[Callback[E, R]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.anon.Code> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
-  trait CallbackFunctionArgs[E, R] extends Code {
+  - Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.anon.Code> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ trait CallbackFunctionArgs[E, R]
+    extends StObject
+       with Code {
     
     /**
       * The Javascript callback to use as the entrypoint for the AWS Lambda out of.  Either
       * [callback] or [callbackFactory] must be provided.
       */
-    var callback: js.UndefOr[Callback[E, R]] = js.native
+    var callback: js.UndefOr[Callback[E, R]] = js.undefined
     
     /**
       * The Javascript function instance that will be called to produce the callback function that is
@@ -78,7 +79,7 @@ object lambdaMixinsMod {
       * It can run whatever code it needs, and will end by returning the actual function that Lambda
       * will call into each time the Lambda is invoked.
       */
-    var callbackFactory: js.UndefOr[CallbackFactory[E, R]] = js.native
+    var callbackFactory: js.UndefOr[CallbackFactory[E, R]] = js.undefined
   }
   object CallbackFunctionArgs {
     
@@ -89,7 +90,7 @@ object lambdaMixinsMod {
     }
     
     @scala.inline
-    implicit class CallbackFunctionArgsMutableBuilder[Self <: CallbackFunctionArgs[_, _], E, R] (val x: Self with (CallbackFunctionArgs[E, R])) extends AnyVal {
+    implicit class CallbackFunctionArgsMutableBuilder[Self <: CallbackFunctionArgs[?, ?], E, R] (val x: Self & (CallbackFunctionArgs[E, R])) extends AnyVal {
       
       @scala.inline
       def setCallback(
@@ -107,7 +108,6 @@ object lambdaMixinsMod {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
     /**
@@ -117,7 +117,7 @@ object lambdaMixinsMod {
       * If AWS Lambda retries the invocation (for example, in a situation where the Lambda function
       * that is processing Kinesis records throws an exception), the request ID remains the same.
       */
-    val awsRequestId: String = js.native
+    val awsRequestId: String
     
     /**
       * The default value is true. This property is useful only to modify the default behavior of the
@@ -128,24 +128,24 @@ object lambdaMixinsMod {
       * in the event loop (any remaining events in the event loop processed when the Lambda function
       * is called next and if AWS Lambda chooses to use the frozen process).
       */
-    var callbackWaitsForEmptyEventLoop: Boolean = js.native
+    var callbackWaitsForEmptyEventLoop: Boolean
     
     /**
       * Information about the client application and device when invoked through the AWS Mobile SDK.
       * It can be null.
       */
-    val clientContext: js.Any = js.native
+    val clientContext: js.Any
     
     /**
       * Name of the Lambda function that is executing.
       */
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * The Lambda function version that is executing. If an alias is used to invoke the function,
       * then function_version will be the version the alias points to.
       */
-    val functionVersion: String = js.native
+    val functionVersion: String
     
     /**
       * Returns the approximate remaining execution time (before timeout occurs) of the Lambda
@@ -155,25 +155,25 @@ object lambdaMixinsMod {
       * You can use this method to check the remaining time during your function execution and take
       * appropriate corrective action at run time.
       */
-    def getRemainingTimeInMillis(): String = js.native
+    def getRemainingTimeInMillis(): String
     
     /**
       * Information about the Amazon Cognito identity provider when invoked through the AWS Mobile
       * SDK. It can be null.
       */
-    val identity: js.Any = js.native
+    val identity: js.Any
     
     /**
       * The ARN used to invoke this function. It can be a function ARN or an alias ARN. An
       * unqualified ARN executes the $LATEST version and aliases execute the function version it is
       * pointing to.
       */
-    val invokedFunctionArn: String = js.native
+    val invokedFunctionArn: String
     
     /**
       * The name of the CloudWatch log group where you can find logs written by your Lambda function.
       */
-    val logGroupName: String = js.native
+    val logGroupName: String
     
     /**
       * The name of the CloudWatch log group where you can find logs written by your Lambda function.
@@ -183,13 +183,13 @@ object lambdaMixinsMod {
       * if the execution role that grants necessary permissions to the Lambda function does not
       * include permissions for the CloudWatch actions.
       */
-    val logStreamName: String = js.native
+    val logStreamName: String
     
     /**
       * Memory limit, in MB, you configured for the Lambda function. You set the memory limit at the
       * time you create a Lambda function and you can change it later.
       */
-    val memoryLimitInMB: String = js.native
+    val memoryLimitInMB: String
   }
   object Context {
     

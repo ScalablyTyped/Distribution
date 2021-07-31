@@ -10,7 +10,6 @@ import typings.std.Record
 import typings.typeFest.exceptMod.Except
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod extends Shortcut {
@@ -23,15 +22,15 @@ object colorMod extends Shortcut {
   
   type ChalkFunctionProps = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof ink.ink/build/components/Color.ChalkFunctions ]: std.Parameters<ink.ink/build/components/Color.ChalkFunctions[K]> extends [string]? string : std.Parameters<ink.ink/build/components/Color.ChalkFunctions[K]>}
-    */ typings.ink.inkStrings.ChalkFunctionProps with TopLevel[js.Any]
+    */ typings.ink.inkStrings.ChalkFunctionProps & TopLevel[js.Any]
   
   type ChalkFunctions = Except[ExceptChalkInstancelevel, Colors]
   
-  type ChalkProps = Partial[ChalkBooleanProps with ChalkFunctionProps]
+  type ChalkProps = Partial[ChalkBooleanProps & ChalkFunctionProps]
   
   type Colors = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof chalk.ForegroundColor */ js.Any
   
-  type Props = ChalkProps with Children
+  type Props = ChalkProps & Children
   
   type _To = NamedExoticComponent[Props]
   

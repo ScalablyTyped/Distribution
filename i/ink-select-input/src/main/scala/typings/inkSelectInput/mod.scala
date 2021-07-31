@@ -3,7 +3,6 @@ package typings.inkSelectInput
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,14 +12,13 @@ object mod {
   class default ()
     extends Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Any]
   
-  @js.native
   trait ItemOfSelectInput extends StObject {
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ItemOfSelectInput {
     
@@ -49,22 +47,21 @@ object mod {
   
   type SelectInput = Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Any]
   
-  @js.native
   trait SelectInputProps[T /* <: ItemOfSelectInput */] extends StObject {
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var indicatorComponent: js.UndefOr[Component[js.Object, js.Object, _]] = js.native
+    var indicatorComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
     
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var itemComponent: js.UndefOr[Component[js.Object, js.Object, _]] = js.native
+    var itemComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
     
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.undefined
   }
   object SelectInputProps {
     
@@ -75,7 +72,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SelectInputPropsMutableBuilder[Self <: SelectInputProps[_], T /* <: ItemOfSelectInput */] (val x: Self with SelectInputProps[T]) extends AnyVal {
+    implicit class SelectInputPropsMutableBuilder[Self <: SelectInputProps[?], T /* <: ItemOfSelectInput */] (val x: Self & SelectInputProps[T]) extends AnyVal {
       
       @scala.inline
       def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
@@ -84,7 +81,7 @@ object mod {
       def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
       @scala.inline
-      def setIndicatorComponent(value: Component[js.Object, js.Object, _]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
+      def setIndicatorComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIndicatorComponentUndefined: Self = StObject.set(x, "indicatorComponent", js.undefined)
@@ -96,7 +93,7 @@ object mod {
       def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
       @scala.inline
-      def setItemComponent(value: Component[js.Object, js.Object, _]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      def setItemComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)

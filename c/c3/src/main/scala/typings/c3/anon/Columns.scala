@@ -5,35 +5,33 @@ import typings.c3.mod.PrimitiveArray
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
   /** A list of columns, where the first element in each column is the ID and the remaining elements are data. If `json` or `rows` are provided, this will be ignored. */
-  var columns: js.UndefOr[js.Array[Array[String | Primitive]]] = js.native
+  var columns: js.UndefOr[js.Array[Array[String | Primitive]]] = js.undefined
   
   /** Will be called when the flow ends. */
-  var done: js.UndefOr[js.Function0[Unit]] = js.native
+  var done: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** If given, the duration of the transition will be specified value. If not given, `transition.duration` will be used as default. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** An object to convert to data to load. Can be in the column form `{key1: [val1, val2, ...]; ...}` or in the row form `[{key1: val1; key2: val2}, ...]`. */
-  var json: js.UndefOr[(Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])] = js.native
+  var json: js.UndefOr[(Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])] = js.undefined
   
   /** If json is provided and is in row form, these keys are used to pull the data from each row. */
-  var keys: js.UndefOr[Value] = js.native
+  var keys: js.UndefOr[Value] = js.undefined
   
   /** If given, the lower x edge will move by the number of this argument. */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /** A list of rows, where the first row is the column names and the remaining rows are data. If this is provided and `json` is provided, this is ignored. */
-  var rows: js.UndefOr[Array[js.Array[String] | PrimitiveArray]] = js.native
+  var rows: js.UndefOr[Array[js.Array[String] | PrimitiveArray]] = js.undefined
   
   /** If given, the lower x edge will move to that point. If not given, the lower x edge will move by the number of given data points. */
-  var to: js.UndefOr[String | Double] = js.native
+  var to: js.UndefOr[String | Double] = js.undefined
 }
 object Columns {
   

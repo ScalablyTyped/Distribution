@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminGetDeviceRequest extends StObject {
   
   /**
     * The device key.
     */
-  var DeviceKey: DeviceKeyType = js.native
+  var DeviceKey: DeviceKeyType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user name.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminGetDeviceRequest {
   

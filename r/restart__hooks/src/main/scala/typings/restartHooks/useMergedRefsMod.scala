@@ -3,10 +3,13 @@ package typings.restartHooks
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMergedRefsMod {
+  
+  @JSImport("@restart/hooks/cjs/useMergedRefs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create and returns a single callback ref composed from two other Refs.
@@ -24,31 +27,27 @@ object useMergedRefsMod {
     * @param refB A Callback or mutable Ref
     * @category refs
     */
-  @JSImport("@restart/hooks/cjs/useMergedRefs", JSImport.Default)
-  @js.native
-  def default[T](): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", JSImport.Default)
-  @js.native
-  def default[T](refA: js.UndefOr[Ref[T]], refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", JSImport.Default)
-  @js.native
-  def default[T](refA: Null, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", JSImport.Default)
-  @js.native
-  def default[T](refA: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
+  @scala.inline
+  def default[T](): js.Function1[/* value */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def default[T](refA: Null, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def default[T](refA: Unit, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def default[T](refA: Ref[T]): js.Function1[/* value */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(refA.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def default[T](refA: Ref[T], refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
   
-  @JSImport("@restart/hooks/cjs/useMergedRefs", "mergeRefs")
-  @js.native
-  def mergeRefs[T](): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", "mergeRefs")
-  @js.native
-  def mergeRefs[T](refA: js.UndefOr[Ref[T]], refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", "mergeRefs")
-  @js.native
-  def mergeRefs[T](refA: Null, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
-  @JSImport("@restart/hooks/cjs/useMergedRefs", "mergeRefs")
-  @js.native
-  def mergeRefs[T](refA: Ref[T]): js.Function1[/* value */ T | Null, Unit] = js.native
+  @scala.inline
+  def mergeRefs[T](): js.Function1[/* value */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")().asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def mergeRefs[T](refA: Null, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def mergeRefs[T](refA: Unit, refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def mergeRefs[T](refA: Ref[T]): js.Function1[/* value */ T | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refA.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
+  @scala.inline
+  def mergeRefs[T](refA: Ref[T], refB: Ref[T]): js.Function1[/* value */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refA.asInstanceOf[js.Any], refB.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ T | Null, Unit]]
   
   type CallbackRef[T] = js.Function1[/* ref */ T | Null, Unit]
   

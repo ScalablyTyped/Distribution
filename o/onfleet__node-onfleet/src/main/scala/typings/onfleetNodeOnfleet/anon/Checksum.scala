@@ -2,15 +2,13 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checksum extends StObject {
   
-  var checksum: Null = js.native
+  var checksum: Null
   
-  var failedScanCount: Double = js.native
+  var failedScanCount: Double
 }
 object Checksum {
   

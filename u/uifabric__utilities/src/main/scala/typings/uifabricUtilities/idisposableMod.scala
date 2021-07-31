@@ -2,15 +2,13 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idisposableMod {
   
-  @js.native
   trait IDisposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object IDisposable {
     

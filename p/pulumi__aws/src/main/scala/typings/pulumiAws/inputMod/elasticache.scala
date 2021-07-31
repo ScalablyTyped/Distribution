@@ -3,27 +3,25 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticache {
   
-  @js.native
   trait ClusterCacheNode extends StObject {
     
-    var address: js.UndefOr[Input[String]] = js.native
+    var address: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
       */
-    var availabilityZone: js.UndefOr[Input[String]] = js.native
+    var availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replicationGroupId`.
       */
-    var port: js.UndefOr[Input[Double]] = js.native
+    var port: js.UndefOr[Input[Double]] = js.undefined
   }
   object ClusterCacheNode {
     
@@ -62,18 +60,17 @@ object elasticache {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
       * The name of the ElastiCache parameter.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value of the ElastiCache parameter.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object ParameterGroupParameter {
     
@@ -94,18 +91,17 @@ object elasticache {
     }
   }
   
-  @js.native
   trait ReplicationGroupClusterMode extends StObject {
     
     /**
       * Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
       */
-    var numNodeGroups: Input[Double] = js.native
+    var numNodeGroups: Input[Double]
     
     /**
       * Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
       */
-    var replicasPerNodeGroup: Input[Double] = js.native
+    var replicasPerNodeGroup: Input[Double]
   }
   object ReplicationGroupClusterMode {
     

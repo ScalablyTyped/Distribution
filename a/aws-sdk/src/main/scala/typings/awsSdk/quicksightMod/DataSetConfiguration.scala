@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetConfiguration extends StObject {
   
   /**
     * A structure containing the list of column group schemas.
     */
-  var ColumnGroupSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnGroupSchemaList] = js.native
+  var ColumnGroupSchemaList: js.UndefOr[typings.awsSdk.quicksightMod.ColumnGroupSchemaList] = js.undefined
   
   /**
     * Dataset schema.
     */
-  var DataSetSchema: js.UndefOr[typings.awsSdk.quicksightMod.DataSetSchema] = js.native
+  var DataSetSchema: js.UndefOr[typings.awsSdk.quicksightMod.DataSetSchema] = js.undefined
   
   /**
     * Placeholder.
     */
-  var Placeholder: js.UndefOr[String] = js.native
+  var Placeholder: js.UndefOr[String] = js.undefined
 }
 object DataSetConfiguration {
   

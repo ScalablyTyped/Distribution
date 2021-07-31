@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adexchangebuyerMod {
+  
+  @JSImport("googleapis/build/src/apis/adexchangebuyer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -103,24 +106,21 @@ object adexchangebuyerMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1.4")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer(options: Options): Adexchangebuyer = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer(options: typings.googleapis.v13Mod.adexchangebuyerV13.Options): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer(options: typings.googleapis.v14Mod.adexchangebuyerV14.Options): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer_v12(version: v1Dot2): Adexchangebuyer = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer_v13(version: v1Dot3): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = js.native
-  @JSImport("googleapis/build/src/apis/adexchangebuyer", "adexchangebuyer")
-  @js.native
-  def adexchangebuyer_v14(version: v1Dot4): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = js.native
+  @scala.inline
+  def adexchangebuyer(options: Options): Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(options.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer]
+  @scala.inline
+  def adexchangebuyer(options: typings.googleapis.v13Mod.adexchangebuyerV13.Options): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer]
+  @scala.inline
+  def adexchangebuyer(options: typings.googleapis.v14Mod.adexchangebuyerV14.Options): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer]
+  
+  @scala.inline
+  def adexchangebuyer_v12(version: v1Dot2): Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(version.asInstanceOf[js.Any]).asInstanceOf[Adexchangebuyer]
+  
+  @scala.inline
+  def adexchangebuyer_v13(version: v1Dot3): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer]
+  
+  @scala.inline
+  def adexchangebuyer_v14(version: v1Dot4): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = ^.asInstanceOf[js.Dynamic].applyDynamic("adexchangebuyer")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer]
   
   object auth extends Shortcut {
     
@@ -151,9 +151,12 @@ object adexchangebuyerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/adexchangebuyer", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/adexchangebuyer", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

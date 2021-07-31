@@ -2,79 +2,64 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsPlumbUtil {
   
-  @JSImport("jsplumb", "jsPlumbUtil.addWithFunction")
+  @JSImport("jsplumb", "jsPlumbUtil")
   @js.native
-  def addWithFunction(list: js.Array[_], item: js.Any, fn: js.Function1[/* obj */ js.Any, Boolean]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsplumb", "jsPlumbUtil.extend")
-  @js.native
-  def extend(target: js.Object, source: js.Object): js.Any = js.native
+  @scala.inline
+  def addWithFunction(list: js.Array[js.Any], item: js.Any, fn: js.Function1[/* obj */ js.Any, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addWithFunction")(list.asInstanceOf[js.Any], item.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsplumb", "jsPlumbUtil.fastTrim")
-  @js.native
-  def fastTrim(s: String): String = js.native
+  @scala.inline
+  def extend(target: js.Object, source: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jsplumb", "jsPlumbUtil.findWithFunction")
-  @js.native
-  def findWithFunction(list: js.Array[_], fn: js.Function1[/* obj */ js.Any, Boolean]): Double = js.native
+  @scala.inline
+  def fastTrim(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fastTrim")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isArray")
-  @js.native
-  def isArray(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def findWithFunction(list: js.Array[js.Any], fn: js.Function1[/* obj */ js.Any, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findWithFunction")(list.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isBoolean")
-  @js.native
-  def isBoolean(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isDate")
-  @js.native
-  def isDate(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isBoolean(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isEmpty")
-  @js.native
-  def isEmpty(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isDate(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isFunction")
-  @js.native
-  def isFunction(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isEmpty(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isNamedFunction")
-  @js.native
-  def isNamedFunction(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isNull")
-  @js.native
-  def isNull(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNamedFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isNumber")
-  @js.native
-  def isNumber(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNull(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isObject")
-  @js.native
-  def isObject(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNumber(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.isString")
-  @js.native
-  def isString(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.removeWithFunction")
-  @js.native
-  def removeWithFunction(list: js.Array[_], fn: js.Function1[/* obj */ js.Any, Boolean]): Double = js.native
+  @scala.inline
+  def isString(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jsplumb", "jsPlumbUtil.suggest")
-  @js.native
-  def suggest(list: js.Array[_], item: js.Any): Boolean = js.native
-  @JSImport("jsplumb", "jsPlumbUtil.suggest")
-  @js.native
-  def suggest(list: js.Array[_], item: js.Any, insertAtHead: Boolean): Boolean = js.native
+  @scala.inline
+  def removeWithFunction(list: js.Array[js.Any], fn: js.Function1[/* obj */ js.Any, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("removeWithFunction")(list.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("jsplumb", "jsPlumbUtil.uuid")
-  @js.native
-  def uuid(): UUID = js.native
+  @scala.inline
+  def suggest(list: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(list.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def suggest(list: js.Array[js.Any], item: js.Any, insertAtHead: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(list.asInstanceOf[js.Any], item.asInstanceOf[js.Any], insertAtHead.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def uuid(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[UUID]
 }

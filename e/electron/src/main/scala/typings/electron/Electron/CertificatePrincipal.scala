@@ -2,42 +2,40 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificatePrincipal extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/certificate-principal
   /**
     * Common Name.
     */
-  var commonName: String = js.native
+  var commonName: String
   
   /**
     * Country or region.
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * Locality.
     */
-  var locality: String = js.native
+  var locality: String
   
   /**
     * Organization Unit names.
     */
-  var organizationUnits: js.Array[String] = js.native
+  var organizationUnits: js.Array[String]
   
   /**
     * Organization names.
     */
-  var organizations: js.Array[String] = js.native
+  var organizations: js.Array[String]
   
   /**
     * State or province.
     */
-  var state: String = js.native
+  var state: String
 }
 object CertificatePrincipal {
   

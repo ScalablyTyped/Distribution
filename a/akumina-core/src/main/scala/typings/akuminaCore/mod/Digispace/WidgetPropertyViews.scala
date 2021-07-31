@@ -2,7 +2,6 @@ package typings.akuminaCore.mod.Digispace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.WidgetPropertyViews")
@@ -10,8 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class WidgetPropertyViews () extends StObject
 object WidgetPropertyViews {
   
-  /* static member */
-  @JSImport("akumina-core", "Digispace.WidgetPropertyViews.AddViewForProperty")
+  @JSImport("akumina-core", "Digispace.WidgetPropertyViews")
   @js.native
-  def AddViewForProperty(widgetName: String, propName: String, value: String): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def AddViewForProperty(widgetName: String, propName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddViewForProperty")(widgetName.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

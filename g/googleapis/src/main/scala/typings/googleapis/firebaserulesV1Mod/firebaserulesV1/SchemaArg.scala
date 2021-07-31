@@ -2,24 +2,22 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Arg matchers for the mock function.
   */
-@js.native
 trait SchemaArg extends StObject {
   
   /**
     * Argument matches any value provided.
     */
-  var anyValue: js.UndefOr[SchemaEmpty] = js.native
+  var anyValue: js.UndefOr[SchemaEmpty] = js.undefined
   
   /**
     * Argument exactly matches value provided.
     */
-  var exactValue: js.UndefOr[js.Any] = js.native
+  var exactValue: js.UndefOr[js.Any] = js.undefined
 }
 object SchemaArg {
   

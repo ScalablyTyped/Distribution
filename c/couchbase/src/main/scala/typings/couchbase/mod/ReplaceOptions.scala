@@ -2,16 +2,16 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReplaceOptions extends AppendOptions {
+trait ReplaceOptions
+  extends StObject
+     with AppendOptions {
   
   /**
     * Set the initial expiration time for the document. A value of 0 represents never expiring.
     */
-  var expiry: js.UndefOr[Double] = js.native
+  var expiry: js.UndefOr[Double] = js.undefined
 }
 object ReplaceOptions {
   

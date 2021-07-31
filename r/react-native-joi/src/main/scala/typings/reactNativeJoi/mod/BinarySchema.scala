@@ -2,13 +2,14 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNativeJoi.mod._SchemaLike because Already inherited
 - typings.reactNativeJoi.mod._Schema because Already inherited */ @js.native
-trait BinarySchema extends AnySchema {
+trait BinarySchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Sets the string encoding format if a string input is converted to a buffer.

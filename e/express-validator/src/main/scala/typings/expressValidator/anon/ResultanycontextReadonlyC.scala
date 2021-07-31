@@ -7,15 +7,14 @@ import typings.expressValidator.validationResultMod.Result
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined express-validator.express-validator/src/validation-result.Result<any> & {  context :express-validator.express-validator/src/context.ReadonlyContext} */
 @js.native
 trait ResultanycontextReadonlyC extends StObject {
   
-  def array(): js.Array[_] = js.native
-  def array(options: OnlyFirstError): js.Array[_] = js.native
+  def array(): js.Array[js.Any] = js.native
+  def array(options: OnlyFirstError): js.Array[js.Any] = js.native
   
   var context: ReadonlyContext = js.native
   
@@ -27,7 +26,7 @@ trait ResultanycontextReadonlyC extends StObject {
   
   def isEmpty(): Boolean = js.native
   
-  def mapped(): Record[String, _] = js.native
+  def mapped(): Record[String, js.Any] = js.native
   
   def `throw`(): Unit = js.native
 }

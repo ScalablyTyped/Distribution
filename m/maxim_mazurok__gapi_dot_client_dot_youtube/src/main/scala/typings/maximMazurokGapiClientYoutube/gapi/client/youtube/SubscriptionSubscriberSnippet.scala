@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionSubscriberSnippet extends StObject {
   
   /** The channel ID of the subscriber. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The description of the subscriber. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Thumbnails for this subscriber. */
-  var thumbnails: js.UndefOr[ThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   
   /** The title of the subscriber. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SubscriptionSubscriberSnippet {
   

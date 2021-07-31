@@ -3,15 +3,13 @@ package typings.next.anon
 import typings.node.querystringMod.ParsedUrlQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale[P /* <: ParsedUrlQuery */] extends StObject {
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var params: P = js.native
+  var params: P
 }
 object Locale {
   
@@ -22,7 +20,7 @@ object Locale {
   }
   
   @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale[_], P /* <: ParsedUrlQuery */] (val x: Self with Locale[P]) extends AnyVal {
+  implicit class LocaleMutableBuilder[Self <: Locale[?], P /* <: ParsedUrlQuery */] (val x: Self & Locale[P]) extends AnyVal {
     
     @scala.inline
     def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])

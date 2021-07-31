@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `document.toJSON()`. */
-@js.native
 trait DocumentData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var body: js.UndefOr[BodyData] = js.native
+  var body: js.UndefOr[BodyData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.native
+  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait DocumentData extends StObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.native
+  var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait DocumentData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var properties: js.UndefOr[DocumentPropertiesData] = js.native
+  var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait DocumentData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var saved: js.UndefOr[Boolean] = js.native
+  var saved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait DocumentData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var sections: js.UndefOr[js.Array[SectionData]] = js.native
+  var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait DocumentData extends StObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var settings: js.UndefOr[js.Array[SettingData]] = js.native
+  var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
 }
 object DocumentData {
   

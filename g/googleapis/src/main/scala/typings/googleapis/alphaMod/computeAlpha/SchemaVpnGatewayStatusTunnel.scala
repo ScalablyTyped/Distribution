@@ -2,30 +2,28 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains some information about a VPN tunnel.
   */
-@js.native
 trait SchemaVpnGatewayStatusTunnel extends StObject {
   
   /**
     * The VPN gateway interface this VPN tunnel is associated with.
     */
-  var localGatewayInterface: js.UndefOr[Double] = js.native
+  var localGatewayInterface: js.UndefOr[Double] = js.undefined
   
   /**
     * The peer gateway interface this VPN tunnel is connected to, the peer
     * gateway could either be an external VPN gateway or GCP VPN gateway.
     */
-  var peerGatewayInterface: js.UndefOr[Double] = js.native
+  var peerGatewayInterface: js.UndefOr[Double] = js.undefined
   
   /**
     * URL reference to the VPN tunnel.
     */
-  var tunnelUrl: js.UndefOr[String] = js.native
+  var tunnelUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaVpnGatewayStatusTunnel {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimulationSoftwareSuite extends StObject {
   
   /**
     * The name of the simulation software suite.
     */
-  var name: js.UndefOr[SimulationSoftwareSuiteType] = js.native
+  var name: js.UndefOr[SimulationSoftwareSuiteType] = js.undefined
   
   /**
     * The version of the simulation software suite.
     */
-  var version: js.UndefOr[SimulationSoftwareSuiteVersionType] = js.native
+  var version: js.UndefOr[SimulationSoftwareSuiteVersionType] = js.undefined
 }
 object SimulationSoftwareSuite {
   

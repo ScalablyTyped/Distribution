@@ -16,11 +16,14 @@ import typings.leaflet.mod.Marker_
 import typings.leaflet.mod.PolylineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
+  
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("leaflet", "MarkerCluster")
   @js.native
@@ -32,7 +35,7 @@ object mod {
     /*
       * Recursively retrieve all child markers of this cluster.
       */
-    def getAllChildMarkers(): js.Array[Marker_[_]] = js.native
+    def getAllChildMarkers(): js.Array[Marker_[js.Any]] = js.native
     
     /*
       * Returns the cluster bounds.
@@ -67,7 +70,7 @@ object mod {
     /*
       * Returns the array of total markers contained within that cluster.
       */
-    def getAllChildMarkers(): js.Array[Marker_[_]] = js.native
+    def getAllChildMarkers(): js.Array[Marker_[js.Any]] = js.native
     
     /*
       * Returns the total number of markers contained within that cluster.
@@ -78,17 +81,17 @@ object mod {
       * If you have a marker in your MarkerClusterGroup and you want to get the visible
       * parent of it
       */
-    def getVisibleParent(marker: Marker_[_]): Marker_[_] = js.native
+    def getVisibleParent(marker: Marker_[js.Any]): Marker_[js.Any] = js.native
     
     /*
       * If you have customized the clusters icon to use some data from the contained markers,
       * and later that data changes, use this method to force a refresh of the cluster icons.
       */
     def refreshClusters(): this.type = js.native
-    def refreshClusters(clusters: js.Array[Marker_[_]]): this.type = js.native
+    def refreshClusters(clusters: js.Array[Marker_[js.Any]]): this.type = js.native
     def refreshClusters(clusters: StringDictionary[Layer]): this.type = js.native
-    def refreshClusters(clusters: LayerGroup_[_]): this.type = js.native
-    def refreshClusters(clusters: Marker_[_]): this.type = js.native
+    def refreshClusters(clusters: LayerGroup_[js.Any]): this.type = js.native
+    def refreshClusters(clusters: Marker_[js.Any]): this.type = js.native
     
     def removeLayers(layers: js.Array[Layer]): this.type = js.native
     
@@ -103,18 +106,18 @@ object mod {
   /*
     * Create a marker cluster group, optionally given marker cluster group options.
     */
-  @JSImport("leaflet", "markerClusterGroup")
-  @js.native
-  def markerClusterGroup(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = js.native
+  @scala.inline
+  def markerClusterGroup(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markerClusterGroup")(options.asInstanceOf[js.Any]).asInstanceOf[MarkerClusterGroup_]
   
-  @js.native
-  trait MarkerClusterGroupOptions extends LayerOptions {
+  trait MarkerClusterGroupOptions
+    extends StObject
+       with LayerOptions {
     
     /*
       * Smoothly split / merge cluster children when zooming and spiderfying.
       * If L.DomUtil.TRANSITION is false, this option has no effect (no animation is possible).
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /*
       * If set to true (and animate option is also true) then adding individual markers to the
@@ -122,18 +125,18 @@ object mod {
       * into the cluster. Defaults to false as this gives better performance when bulk adding markers.
       * addLayers does not support this, only addLayer with individual Markers.
       */
-    var animateAddingMarkers: js.UndefOr[Boolean] = js.native
+    var animateAddingMarkers: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Time delay (in ms) between consecutive periods of processing for addLayers. Default to 50ms.
       */
-    var chunkDelay: js.UndefOr[Double] = js.native
+    var chunkDelay: js.UndefOr[Double] = js.undefined
     
     /*
       * Time interval (in ms) during which addLayers works before pausing to let the rest of the page process.
       * In particular, this prevents the page from freezing while adding a lot of markers. Defaults to 200ms.
       */
-    var chunkInterval: js.UndefOr[Double] = js.native
+    var chunkInterval: js.UndefOr[Double] = js.undefined
     
     /*
       * Callback function that is called at the end of each chunkInterval.
@@ -146,74 +149,74 @@ object mod {
           /* elapsedTime */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*
       * Boolean to split the addLayers processing in to small intervals so that the page does not freeze.
       */
-    var chunkedLoading: js.UndefOr[Boolean] = js.native
+    var chunkedLoading: js.UndefOr[Boolean] = js.undefined
     
     /*
       * If set, at this zoom level and below markers will not be clustered. This defaults to disabled.
       */
-    var disableClusteringAtZoom: js.UndefOr[Double] = js.native
+    var disableClusteringAtZoom: js.UndefOr[Double] = js.undefined
     
     /*
       * Function used to create the cluster icon
       */
-    var iconCreateFunction: js.UndefOr[js.Function1[/* cluster */ MarkerCluster, Icon_[IconOptions] | DivIcon_]] = js.native
+    var iconCreateFunction: js.UndefOr[js.Function1[/* cluster */ MarkerCluster, Icon_[IconOptions] | DivIcon_]] = js.undefined
     
     /*
       * The maximum radius that a cluster will cover from the central marker (in pixels). Default 80.
       * Decreasing will make more, smaller clusters. You can also use a function that accepts
       * the current map zoom and returns the maximum cluster radius in pixels
       */
-    var maxClusterRadius: js.UndefOr[Double | (js.Function1[/* zoom */ Double, Double])] = js.native
+    var maxClusterRadius: js.UndefOr[Double | (js.Function1[/* zoom */ Double, Double])] = js.undefined
     
     /*
       * Options to pass when creating the L.Polygon(points, options) to show the bounds of a cluster.
       * Defaults to empty
       */
-    var polygonOptions: js.UndefOr[PolylineOptions] = js.native
+    var polygonOptions: js.UndefOr[PolylineOptions] = js.undefined
     
     /*
       * Clusters and markers too far from the viewport are removed from the map
       * for performance.
       */
-    var removeOutsideVisibleBounds: js.UndefOr[Boolean] = js.native
+    var removeOutsideVisibleBounds: js.UndefOr[Boolean] = js.undefined
     
     /*
       * When you mouse over a cluster it shows the bounds of its markers.
       */
-    var showCoverageOnHover: js.UndefOr[Boolean] = js.native
+    var showCoverageOnHover: js.UndefOr[Boolean] = js.undefined
     
     /*
       * If set to true, overrides the icon for all added markers to make them appear as a 1 size cluster.
       */
-    var singleMarkerMode: js.UndefOr[Boolean] = js.native
+    var singleMarkerMode: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Allows you to specify PolylineOptions to style spider legs.
       * By default, they are { weight: 1.5, color: '#222', opacity: 0.5 }.
       */
-    var spiderLegPolylineOptions: js.UndefOr[PolylineOptions] = js.native
+    var spiderLegPolylineOptions: js.UndefOr[PolylineOptions] = js.undefined
     
     /*
       * Increase from 1 to increase the distance away from the center that spiderfied markers are placed.
       * Use if you are using big marker icons (Default: 1).
       */
-    var spiderfyDistanceMultiplier: js.UndefOr[Double] = js.native
+    var spiderfyDistanceMultiplier: js.UndefOr[Double] = js.undefined
     
     /*
       * When you click a cluster at the bottom zoom level we spiderfy it
       * so you can see all of its markers.
       */
-    var spiderfyOnMaxZoom: js.UndefOr[Boolean] = js.native
+    var spiderfyOnMaxZoom: js.UndefOr[Boolean] = js.undefined
     
     /*
       * When you click a cluster we zoom to its bounds.
       */
-    var zoomToBoundsOnClick: js.UndefOr[Boolean] = js.native
+    var zoomToBoundsOnClick: js.UndefOr[Boolean] = js.undefined
   }
   object MarkerClusterGroupOptions {
     

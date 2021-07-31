@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outline extends StObject {
   
-  var ha: Double = js.native
+  var ha: Double
   
-  var outline: js.Array[Double] = js.native
+  var outline: js.Array[Double]
   
-  var x_max: Double = js.native
+  var x_max: Double
   
-  var x_min: Double = js.native
+  var x_min: Double
 }
 object Outline {
   

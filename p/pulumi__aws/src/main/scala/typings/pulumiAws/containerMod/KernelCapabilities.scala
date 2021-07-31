@@ -2,15 +2,13 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelCapabilities extends StObject {
   
-  var add: js.UndefOr[js.Array[KernelCapability]] = js.native
+  var add: js.UndefOr[js.Array[KernelCapability]] = js.undefined
   
-  var drop: js.UndefOr[js.Array[KernelCapability]] = js.native
+  var drop: js.UndefOr[js.Array[KernelCapability]] = js.undefined
 }
 object KernelCapabilities {
   

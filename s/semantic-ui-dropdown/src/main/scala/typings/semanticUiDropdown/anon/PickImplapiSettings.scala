@@ -4,14 +4,12 @@ import typings.semanticUiApi.SemanticUI.ApiSettings
 import typings.semanticUiDropdown.semanticUiDropdownBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'apiSettings'> */
-@js.native
 trait PickImplapiSettings extends StObject {
   
-  var apiSettings: `false` | ApiSettings = js.native
+  var apiSettings: `false` | ApiSettings
 }
 object PickImplapiSettings {
   

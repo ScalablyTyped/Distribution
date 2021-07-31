@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,11 +27,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object MIPMAP_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.MIPMAP_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.MIPMAP_MODES & Double] = js.native
   
-  /* 0 */ val OFF: typings.pixiJs.PIXI.MIPMAP_MODES.OFF with Double = js.native
+  /* 0 */ val OFF: typings.pixiJs.PIXI.MIPMAP_MODES.OFF & Double = js.native
   
-  /* 2 */ val ON: typings.pixiJs.PIXI.MIPMAP_MODES.ON with Double = js.native
+  /* 2 */ val ON: typings.pixiJs.PIXI.MIPMAP_MODES.ON & Double = js.native
   
-  /* 1 */ val POW2: typings.pixiJs.PIXI.MIPMAP_MODES.POW2 with Double = js.native
+  /* 1 */ val POW2: typings.pixiJs.PIXI.MIPMAP_MODES.POW2 & Double = js.native
 }

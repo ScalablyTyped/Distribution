@@ -5,19 +5,17 @@ import typings.rdfJs.mod.DataFactory
 import typings.rdfJs.mod.Quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOptions extends StObject {
   
-  var baseIRI: js.UndefOr[String] = js.native
+  var baseIRI: js.UndefOr[String] = js.undefined
   
-  var factory: js.UndefOr[DataFactory[Quad, Quad]] = js.native
+  var factory: js.UndefOr[DataFactory[Quad, Quad]] = js.undefined
   
-  var prefixes: js.UndefOr[StringDictionary[String]] = js.native
+  var prefixes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var sparqlStar: js.UndefOr[Boolean] = js.native
+  var sparqlStar: js.UndefOr[Boolean] = js.undefined
 }
 object ParserOptions {
   

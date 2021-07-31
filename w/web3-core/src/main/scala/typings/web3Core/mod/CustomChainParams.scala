@@ -2,17 +2,15 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomChainParams extends StObject {
   
-  var chainId: Double = js.native
+  var chainId: Double
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var networkId: Double = js.native
+  var networkId: Double
 }
 object CustomChainParams {
   

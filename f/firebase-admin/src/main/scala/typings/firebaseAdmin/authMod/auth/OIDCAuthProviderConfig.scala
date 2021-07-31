@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,15 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * provider configuration interface. An OIDC provider can be created via
   * {@link auth.Auth.createProviderConfig `createProviderConfig()`}.
   */
-@js.native
-trait OIDCAuthProviderConfig extends AuthProviderConfig {
+trait OIDCAuthProviderConfig
+  extends StObject
+     with AuthProviderConfig {
   
   /**
     * This is the required client ID used to confirm the audience of an OIDC
     * provider's
     * [ID token](https://openid.net/specs/openid-connect-core-1_0-final.html#IDToken).
     */
-  var clientId: String = js.native
+  var clientId: String
   
   /**
     * This is the required provider issuer used to match the provider issuer of
@@ -37,7 +37,7 @@ trait OIDCAuthProviderConfig extends AuthProviderConfig {
     * ID token validation will be performed as defined in the
     * [spec](https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation).
     */
-  var issuer: String = js.native
+  var issuer: String
 }
 object OIDCAuthProviderConfig {
   

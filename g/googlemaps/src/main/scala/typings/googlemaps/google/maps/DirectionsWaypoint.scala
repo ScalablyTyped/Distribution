@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * through which the trip should be routed.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsWaypoint Maps JavaScript API}
   */
-@js.native
 trait DirectionsWaypoint extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait DirectionsWaypoint extends StObject {
     * {@link Place}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsWaypoint.location Maps JavaScript API}
     */
-  var location: js.UndefOr[String | LatLng | Place] = js.native
+  var location: js.UndefOr[String | LatLng | Place] = js.undefined
   
   /**
     * If `true`, indicates that this waypoint is a stop between the origin and
@@ -29,7 +27,7 @@ trait DirectionsWaypoint extends StObject {
     * @default true
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/directions#DirectionsWaypoint.stopover Maps JavaScript API}
     */
-  var stopover: js.UndefOr[Boolean] = js.native
+  var stopover: js.UndefOr[Boolean] = js.undefined
 }
 object DirectionsWaypoint {
   

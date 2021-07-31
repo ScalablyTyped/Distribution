@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformTypesListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#platformTypesListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Platform type collection. */
-  var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.native
+  var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.undefined
 }
 object PlatformTypesListResponse {
   

@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoystickOption extends StObject {
   
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
-  var invertX: js.UndefOr[Boolean] = js.native
+  var invertX: js.UndefOr[Boolean] = js.undefined
   
-  var invertY: js.UndefOr[Boolean] = js.native
+  var invertY: js.UndefOr[Boolean] = js.undefined
   
-  var pins: js.Array[String] = js.native
+  var pins: js.Array[String]
 }
 object JoystickOption {
   

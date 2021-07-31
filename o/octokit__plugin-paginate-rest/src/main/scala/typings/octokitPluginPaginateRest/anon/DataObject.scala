@@ -2,13 +2,11 @@ package typings.octokitPluginPaginateRest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataObject extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
 }
 object DataObject {
   

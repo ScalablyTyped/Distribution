@@ -4,7 +4,6 @@ import typings.sipJs.dialogStateMod.DialogState
 import typings.sipJs.subscriptionSubscriptionDelegateMod.SubscriptionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.SubscriptionDialog")
@@ -30,6 +29,10 @@ class SubscriptionDialog protected ()
 /* static members */
 object SubscriptionDialog {
   
+  @JSImport("sip.js", "Core.SubscriptionDialog")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * When a UAC receives a response that establishes a dialog, it
     * constructs the state of the dialog.  This state MUST be maintained
@@ -38,10 +41,9 @@ object SubscriptionDialog {
     * @param outgoingRequestMessage - Outgoing request message for dialog.
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
-  @JSImport("sip.js", "Core.SubscriptionDialog.initialDialogStateForSubscription")
-  @js.native
+  @scala.inline
   def initialDialogStateForSubscription(
     outgoingSubscribeRequestMessage: typings.sipJs.messagesMod.OutgoingRequestMessage,
     incomingNotifyRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage
-  ): DialogState = js.native
+  ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
 }

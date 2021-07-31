@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key, or name, for the resource tag.
     */
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
   /**
     * The value for the resource tag.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object Tag {
   

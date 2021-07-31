@@ -2,15 +2,13 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BroadcastUrlsResponse extends StObject {
   
-  var hls: js.UndefOr[String] = js.native
+  var hls: js.UndefOr[String] = js.undefined
   
-  var rtmp: js.UndefOr[js.Array[BroadcastOutputOptionsRtmp]] = js.native
+  var rtmp: js.UndefOr[js.Array[BroadcastOutputOptionsRtmp]] = js.undefined
 }
 object BroadcastUrlsResponse {
   

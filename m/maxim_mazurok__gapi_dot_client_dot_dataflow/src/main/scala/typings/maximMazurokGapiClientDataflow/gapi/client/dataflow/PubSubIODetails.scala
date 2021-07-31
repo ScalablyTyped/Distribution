@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubSubIODetails extends StObject {
   
   /** Subscription used in the connection. */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /** Topic accessed in the connection. */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object PubSubIODetails {
   

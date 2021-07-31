@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception should not be declared at interfaces, use {@link WrappedTargetException} instead. It was defined to transport an exception via
   * interface-methods, that do not specify the appropriate exceptions (so using this exception should in general be avoided).
   */
-@js.native
-trait WrappedTargetRuntimeException extends Exception {
+trait WrappedTargetRuntimeException
+  extends StObject
+     with Exception {
   
   /** The exception is thrown by the target. */
-  var TargetException: js.Any = js.native
+  var TargetException: js.Any
 }
 object WrappedTargetRuntimeException {
   

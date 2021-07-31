@@ -13,7 +13,6 @@ import typings.reactUserTour.reactUserTourStrings.top
 import typings.reactUserTour.reactUserTourStrings.topLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,63 +35,63 @@ object mod {
   @scala.inline
   def default_=(x: ComponentClass[TourProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait TourProps
-    extends HTMLAttributes[js.Any] {
+    extends StObject
+       with HTMLAttributes[js.Any] {
     
     /**
       A boolean value representing whether or not the tour should currently be displayed
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       We provide an arrow that points to the selector, but you may optionally pass in your own React element in the place of the arrow provided.
       */
-    var arrow: js.UndefOr[js.Any] = js.native
+    var arrow: js.UndefOr[js.Any] = js.undefined
     
     /**
       If you choose to use the provided arrow, you can set the color here by passing in a hex value.
       */
-    var arrowColor: js.UndefOr[String] = js.native
+    var arrowColor: js.UndefOr[String] = js.undefined
     
     /**
       If you choose to use the provided arrow, you can set the pixel size here with an integer value.
       */
-    var arrowSize: js.UndefOr[Double] = js.native
+    var arrowSize: js.UndefOr[Double] = js.undefined
     
     /**
       Text that will appear on the button that moves the tour backwards.
       Defaults to Back
       */
-    var backButtonText: js.UndefOr[String] = js.native
+    var backButtonText: js.UndefOr[String] = js.undefined
     
     /**
       Optional style object for the container div around the buttons.
       */
-    var buttonContainerStyle: js.UndefOr[js.Any] = js.native
+    var buttonContainerStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       Optional style object for buttons displayed on component.
       */
-    var buttonStyle: js.UndefOr[js.Any] = js.native
+    var buttonStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       Text that will appear on the button that closes the tour.
       Defaults to Close
       */
-    var closeButtonText: js.UndefOr[String] = js.native
+    var closeButtonText: js.UndefOr[String] = js.undefined
     
     /**
       Text that will appear on the button that finishes the tour.
       Defaults to Done
       */
-    var doneButtonText: js.UndefOr[String] = js.native
+    var doneButtonText: js.UndefOr[String] = js.undefined
     
     /**
       Boolean to disable the showing of next/back/done buttons.
       Set this to true if you want to insert your own buttons in the body.
       */
-    var hideButtons: js.UndefOr[Boolean] = js.native
+    var hideButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       Boolean to disable the showing of the close text in the upper left of
@@ -100,48 +99,48 @@ object mod {
       functionality or if you would like to disable the ability for the user
       to prematurely exit the tour.
       */
-    var hideClose: js.UndefOr[Boolean] = js.native
+    var hideClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       Text that will appear on the button that moves the tour forward.
       Defaults to Next
       */
-    var nextButtonText: js.UndefOr[String] = js.native
+    var nextButtonText: js.UndefOr[String] = js.undefined
     
     /**
       function that fires when user clicks the Back button.
       Receives the previous step integer as a callback.
       For example, if current step is 2 and user clicks the Back button, onBack(1) will be called.
       */
-    var onBack: js.Function = js.native
+    var onBack: js.Function
     
     /**
       function that fires when user clicks the X button or the Done Button.
       */
-    var onCancel: js.Function = js.native
+    var onCancel: js.Function
     
     /**
       function that fires when user clicks the Next button.
       Receives the next step integer as a callback.
       For example, if current step is 1 and user clicks the Next button, onNext(2) will be called.
       */
-    var onNext: js.Function = js.native
+    var onNext: js.Function
     
     /**
       An integer representing the current active step of the tour
       */
-    var step: Double = js.native
+    var step: Double
     
     /**
       An array of TourStep.
       */
-    var steps: js.Array[TourStep] = js.native
+    var steps: js.Array[TourStep]
     
     /**
       Optional style object.
       */
     @JSName("style")
-    var style_TourProps: js.UndefOr[js.Any] = js.native
+    var style_TourProps: js.UndefOr[js.Any] = js.undefined
   }
   object TourProps {
     
@@ -256,43 +255,42 @@ object mod {
     }
   }
   
-  @js.native
   trait TourStep extends StObject {
     
     /**
       a react element representing the main body message of the tour step
       */
-    var body: String | Element = js.native
+    var body: String | Element
     
     /**
       Optional properties horizontalOffset and verticalOffset values allow to move tooltip around pointed element.
       */
-    var horizontalOffset: js.UndefOr[Double] = js.native
+    var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     /**
       Each step can also take an optional argument, position which will override the position of the tour component in relation to the selector that is determined by the application.
       */
-    var position: js.UndefOr[left | right | top | topLeft | bottom | bottomLeft] = js.native
+    var position: js.UndefOr[left | right | top | topLeft | bottom | bottomLeft] = js.undefined
     
     /**
       CSS selector to be passed to document.querySelector()
       */
-    var selector: String = js.native
+    var selector: String
     
     /**
       Index number of the step in the tour
       */
-    var step: Double = js.native
+    var step: Double
     
     /**
       a react element representing the header of the current step
       */
-    var title: String | Element = js.native
+    var title: String | Element
     
     /**
       Optional properties horizontalOffset and verticalOffset values allow to move tooltip around pointed element.
       */
-    var verticalOffset: js.UndefOr[Double] = js.native
+    var verticalOffset: js.UndefOr[Double] = js.undefined
   }
   object TourStep {
     

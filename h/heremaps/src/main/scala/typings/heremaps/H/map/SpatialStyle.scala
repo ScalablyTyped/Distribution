@@ -5,7 +5,6 @@ import typings.heremaps.H.map.SpatialStyle.LineJoin
 import typings.heremaps.H.map.SpatialStyle.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -114,24 +113,23 @@ object SpatialStyle {
     * this style property is ignored.
     * @property lineDashOffset {number=} - The phase offset of the line dash pattern
     */
-  @js.native
   trait Options extends StObject {
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var lineCap: js.UndefOr[LineCap] = js.native
+    var lineCap: js.UndefOr[LineCap] = js.undefined
     
-    var lineDash: js.UndefOr[js.Array[Double]] = js.native
+    var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lineDashOffset: js.UndefOr[Double] = js.native
+    var lineDashOffset: js.UndefOr[Double] = js.undefined
     
-    var lineJoin: js.UndefOr[LineJoin] = js.native
+    var lineJoin: js.UndefOr[LineJoin] = js.undefined
     
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
-    var miterLimit: js.UndefOr[Double] = js.native
+    var miterLimit: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
   }
   object Options {
     

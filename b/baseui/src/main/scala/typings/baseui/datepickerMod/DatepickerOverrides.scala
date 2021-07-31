@@ -2,115 +2,113 @@ package typings.baseui.datepickerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerOverrides[T] extends StObject {
   
   var CalendarContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var CalendarHeader: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Day: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Input: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var InputWrapper: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Month: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthHeader: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthYearSelectButton: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthYearSelectIconContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthYearSelectPopover: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var MonthYearSelectStatefulMenu: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var NextButton: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var NextButtonIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Popover: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var PrevButton: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var PrevButtonIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var QuickSelect: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var QuickSelectContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var QuickSelectFormControl: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Root: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var TimeSelect: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var TimeSelectContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var TimeSelectFormControl: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Week: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var WeekdayHeader: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object DatepickerOverrides {
   
@@ -121,7 +119,7 @@ object DatepickerOverrides {
   }
   
   @scala.inline
-  implicit class DatepickerOverridesMutableBuilder[Self <: DatepickerOverrides[_], T] (val x: Self with DatepickerOverrides[T]) extends AnyVal {
+  implicit class DatepickerOverridesMutableBuilder[Self <: DatepickerOverrides[?], T] (val x: Self & DatepickerOverrides[T]) extends AnyVal {
     
     @scala.inline
     def setCalendarContainer(

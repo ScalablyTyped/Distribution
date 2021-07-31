@@ -2,17 +2,15 @@ package typings.officeJsPreview.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventHandlers[T] extends StObject {
   
   /**
     * Adds a function to be called when the event is triggered.
     * @param handler A promise-based function that takes in any relevant event arguments.
     */
-  def add(handler: js.Function1[/* args */ T, js.Promise[_]]): EventHandlerResult[T] = js.native
+  def add(handler: js.Function1[/* args */ T, js.Promise[js.Any]]): EventHandlerResult[T]
   
   /**
     * Removes the specified function from the event handler list so that it will not be called on subsequent events.
@@ -22,26 +20,26 @@ trait EventHandlers[T] extends StObject {
     *
     * @param handler A reference to a function previously provided to the `add` method as an event handler.
     */
-  def remove(handler: js.Function1[/* args */ T, js.Promise[_]]): Unit = js.native
+  def remove(handler: js.Function1[/* args */ T, js.Promise[js.Any]]): Unit
 }
 object EventHandlers {
   
   @scala.inline
   def apply[T](
-    add: js.Function1[/* args */ T, js.Promise[_]] => EventHandlerResult[T],
-    remove: js.Function1[/* args */ T, js.Promise[_]] => Unit
+    add: js.Function1[/* args */ T, js.Promise[js.Any]] => EventHandlerResult[T],
+    remove: js.Function1[/* args */ T, js.Promise[js.Any]] => Unit
   ): EventHandlers[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[EventHandlers[T]]
   }
   
   @scala.inline
-  implicit class EventHandlersMutableBuilder[Self <: EventHandlers[_], T] (val x: Self with EventHandlers[T]) extends AnyVal {
+  implicit class EventHandlersMutableBuilder[Self <: EventHandlers[?], T] (val x: Self & EventHandlers[T]) extends AnyVal {
     
     @scala.inline
-    def setAdd(value: js.Function1[/* args */ T, js.Promise[_]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    def setAdd(value: js.Function1[/* args */ T, js.Promise[js.Any]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: js.Function1[/* args */ T, js.Promise[_]] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    def setRemove(value: js.Function1[/* args */ T, js.Promise[js.Any]] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

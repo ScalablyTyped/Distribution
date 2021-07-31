@@ -2,7 +2,6 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * then there are no finite buckets, and that single element is the common
   * boundary of the overflow and underflow buckets.
   */
-@js.native
 trait SchemaExplicit extends StObject {
   
   /**
     * The values must be monotonically increasing.
     */
-  var bounds: js.UndefOr[js.Array[Double]] = js.native
+  var bounds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaExplicit {
   

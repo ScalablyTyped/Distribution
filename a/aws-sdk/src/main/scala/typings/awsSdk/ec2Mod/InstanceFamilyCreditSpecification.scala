@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceFamilyCreditSpecification extends StObject {
   
   /**
     * The default credit option for CPU usage of the instance family. Valid values are standard and unlimited.
     */
-  var CpuCredits: js.UndefOr[String] = js.native
+  var CpuCredits: js.UndefOr[String] = js.undefined
   
   /**
     * The instance family.
     */
-  var InstanceFamily: js.UndefOr[UnlimitedSupportedInstanceFamily] = js.native
+  var InstanceFamily: js.UndefOr[UnlimitedSupportedInstanceFamily] = js.undefined
 }
 object InstanceFamilyCreditSpecification {
   

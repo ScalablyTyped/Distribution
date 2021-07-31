@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.devextremeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowColumnDragging extends StObject {
   
-  var allowColumnDragging: js.UndefOr[Boolean] = js.native
+  var allowColumnDragging: js.UndefOr[Boolean] = js.undefined
   
-  var emptyPanelText: js.UndefOr[String] = js.native
+  var emptyPanelText: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean | auto] = js.native
+  var visible: js.UndefOr[Boolean | auto] = js.undefined
 }
 object AllowColumnDragging {
   

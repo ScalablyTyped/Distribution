@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,20 +40,19 @@ object urlbar {
   }
   
   /** A query performed in the urlbar. */
-  @js.native
   trait Query extends StObject {
     
     /** Whether the query's browser context is private. */
-    var isPrivate: Boolean = js.native
+    var isPrivate: Boolean
     
     /** The maximum number of results shown to the user. */
-    var maxResults: Double = js.native
+    var maxResults: Double
     
     /** The query's search string. */
-    var searchString: String = js.native
+    var searchString: String
     
     /** List of acceptable source types to return. */
-    var sources: js.Array[SourceType] = js.native
+    var sources: js.Array[SourceType]
   }
   object Query {
     
@@ -85,20 +83,19 @@ object urlbar {
   }
   
   /** A result of a query. Queries can have many results. Each result is created by a provider. */
-  @js.native
   trait Result extends StObject {
     
     /** An object with arbitrary properties depending on the result's type. */
-    var payload: js.Object = js.native
+    var payload: js.Object
     
     /** The result's source. */
-    var source: SourceType = js.native
+    var source: SourceType
     
     /** Suggest a preferred position for this result within the result set. */
-    var suggestedIndex: js.UndefOr[Double] = js.native
+    var suggestedIndex: js.UndefOr[Double] = js.undefined
     
     /** The result's type. */
-    var `type`: ResultType = js.native
+    var `type`: ResultType
   }
   object Result {
     
@@ -163,11 +160,10 @@ object urlbar {
   }
   
   /** Options to the `search` function. */
-  @js.native
   trait SearchOptions extends StObject {
     
     /** Whether to focus the input field and select its contents. */
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
   }
   object SearchOptions {
     
@@ -221,14 +217,13 @@ object urlbar {
     def tabs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs = "tabs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs]
   }
   
-  @js.native
   trait UrlbarOnBehaviorRequestedEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, providerName: String): Unit = js.native
+    def addListener(cb: TCallback, providerName: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object UrlbarOnBehaviorRequestedEvent {
     
@@ -243,7 +238,7 @@ object urlbar {
     }
     
     @scala.inline
-    implicit class UrlbarOnBehaviorRequestedEventMutableBuilder[Self <: UrlbarOnBehaviorRequestedEvent[_], TCallback] (val x: Self with UrlbarOnBehaviorRequestedEvent[TCallback]) extends AnyVal {
+    implicit class UrlbarOnBehaviorRequestedEventMutableBuilder[Self <: UrlbarOnBehaviorRequestedEvent[?], TCallback] (val x: Self & UrlbarOnBehaviorRequestedEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -256,14 +251,13 @@ object urlbar {
     }
   }
   
-  @js.native
   trait UrlbarOnEngagementEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, providerName: String): Unit = js.native
+    def addListener(cb: TCallback, providerName: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object UrlbarOnEngagementEvent {
     
@@ -278,7 +272,7 @@ object urlbar {
     }
     
     @scala.inline
-    implicit class UrlbarOnEngagementEventMutableBuilder[Self <: UrlbarOnEngagementEvent[_], TCallback] (val x: Self with UrlbarOnEngagementEvent[TCallback]) extends AnyVal {
+    implicit class UrlbarOnEngagementEventMutableBuilder[Self <: UrlbarOnEngagementEvent[?], TCallback] (val x: Self & UrlbarOnEngagementEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -291,14 +285,13 @@ object urlbar {
     }
   }
   
-  @js.native
   trait UrlbarOnQueryCanceledEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, providerName: String): Unit = js.native
+    def addListener(cb: TCallback, providerName: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object UrlbarOnQueryCanceledEvent {
     
@@ -313,7 +306,7 @@ object urlbar {
     }
     
     @scala.inline
-    implicit class UrlbarOnQueryCanceledEventMutableBuilder[Self <: UrlbarOnQueryCanceledEvent[_], TCallback] (val x: Self with UrlbarOnQueryCanceledEvent[TCallback]) extends AnyVal {
+    implicit class UrlbarOnQueryCanceledEventMutableBuilder[Self <: UrlbarOnQueryCanceledEvent[?], TCallback] (val x: Self & UrlbarOnQueryCanceledEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -326,14 +319,13 @@ object urlbar {
     }
   }
   
-  @js.native
   trait UrlbarOnResultPickedEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, providerName: String): Unit = js.native
+    def addListener(cb: TCallback, providerName: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object UrlbarOnResultPickedEvent {
     
@@ -348,7 +340,7 @@ object urlbar {
     }
     
     @scala.inline
-    implicit class UrlbarOnResultPickedEventMutableBuilder[Self <: UrlbarOnResultPickedEvent[_], TCallback] (val x: Self with UrlbarOnResultPickedEvent[TCallback]) extends AnyVal {
+    implicit class UrlbarOnResultPickedEventMutableBuilder[Self <: UrlbarOnResultPickedEvent[?], TCallback] (val x: Self & UrlbarOnResultPickedEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -361,14 +353,13 @@ object urlbar {
     }
   }
   
-  @js.native
   trait UrlbarOnResultsRequestedEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, providerName: String): Unit = js.native
+    def addListener(cb: TCallback, providerName: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object UrlbarOnResultsRequestedEvent {
     
@@ -383,7 +374,7 @@ object urlbar {
     }
     
     @scala.inline
-    implicit class UrlbarOnResultsRequestedEventMutableBuilder[Self <: UrlbarOnResultsRequestedEvent[_], TCallback] (val x: Self with UrlbarOnResultsRequestedEvent[TCallback]) extends AnyVal {
+    implicit class UrlbarOnResultsRequestedEventMutableBuilder[Self <: UrlbarOnResultsRequestedEvent[?], TCallback] (val x: Self & UrlbarOnResultsRequestedEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))

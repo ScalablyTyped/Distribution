@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
   /** Dependency tree parse for this token. */
-  var dependencyEdge: js.UndefOr[DependencyEdge] = js.native
+  var dependencyEdge: js.UndefOr[DependencyEdge] = js.undefined
   
   /** [Lemma](https://en.wikipedia.org/wiki/Lemma_%28morphology%29) of the token. */
-  var lemma: js.UndefOr[String] = js.native
+  var lemma: js.UndefOr[String] = js.undefined
   
   /** Parts of speech tag for this token. */
-  var partOfSpeech: js.UndefOr[PartOfSpeech] = js.native
+  var partOfSpeech: js.UndefOr[PartOfSpeech] = js.undefined
   
   /** The token text. */
-  var text: js.UndefOr[TextSpan] = js.native
+  var text: js.UndefOr[TextSpan] = js.undefined
 }
 object Token {
   

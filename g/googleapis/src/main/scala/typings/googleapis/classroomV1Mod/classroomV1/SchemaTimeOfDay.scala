@@ -2,7 +2,6 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or are specified elsewhere. An API may choose to allow leap seconds.
   * Related types are google.type.Date and `google.protobuf.Timestamp`.
   */
-@js.native
 trait SchemaTimeOfDay extends StObject {
   
   /**
@@ -18,23 +16,23 @@ trait SchemaTimeOfDay extends StObject {
     * to allow the value &quot;24:00:00&quot; for scenarios like business
     * closing time.
     */
-  var hours: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.undefined
   
   /**
     * Minutes of hour of day. Must be from 0 to 59.
     */
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
   /**
     * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
     */
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
   /**
     * Seconds of minutes of the time. Must normally be from 0 to 59. An API may
     * allow the value 60 if it allows leap-seconds.
     */
-  var seconds: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.undefined
 }
 object SchemaTimeOfDay {
   

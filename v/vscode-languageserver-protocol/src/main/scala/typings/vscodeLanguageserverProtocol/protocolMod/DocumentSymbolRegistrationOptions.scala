@@ -2,18 +2,17 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSymbolRegistrationOptions
-  extends TextDocumentRegistrationOptions
+  extends StObject
+     with TextDocumentRegistrationOptions
      with WorkDoneProgressOptions
 object DocumentSymbolRegistrationOptions {
   
   @scala.inline
   def apply(): DocumentSymbolRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DocumentSymbolRegistrationOptions]
   }
 }

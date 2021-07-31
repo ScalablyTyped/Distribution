@@ -6,7 +6,6 @@ import typings.xmlCore.typesMod.IXmlSerializable
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformMod {
@@ -27,7 +26,9 @@ object transformMod {
   }
   
   @js.native
-  trait ITransform extends IXmlSerializable {
+  trait ITransform
+    extends StObject
+       with IXmlSerializable {
     
     var Algorithm: String = js.native
     

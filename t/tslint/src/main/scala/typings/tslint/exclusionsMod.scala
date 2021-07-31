@@ -6,26 +6,27 @@ import typings.tslint.exclusionDescriptorsMod.IInputExclusionDescriptors
 import typings.tslint.exclusionMod.Exclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exclusionsMod {
   
-  @JSImport("tslint/lib/rules/completed-docs/exclusions", "constructExclusionsMap")
+  @JSImport("tslint/lib/rules/completed-docs/exclusions", JSImport.Namespace)
   @js.native
-  def constructExclusionsMap(ruleArguments: js.Array[IInputExclusionDescriptors]): ExclusionsMap = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def constructExclusionsMap(ruleArguments: js.Array[IInputExclusionDescriptors]): ExclusionsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("constructExclusionsMap")(ruleArguments.asInstanceOf[js.Any]).asInstanceOf[ExclusionsMap]
+  
   trait DocTypeExclusions extends StObject {
     
-    var overloadsSeparateDocs: js.UndefOr[Boolean] = js.native
+    var overloadsSeparateDocs: js.UndefOr[Boolean] = js.undefined
     
-    var requirements: js.Array[Exclusion[_]] = js.native
+    var requirements: js.Array[Exclusion[js.Any]]
   }
   object DocTypeExclusions {
     
     @scala.inline
-    def apply(requirements: js.Array[Exclusion[_]]): DocTypeExclusions = {
+    def apply(requirements: js.Array[Exclusion[js.Any]]): DocTypeExclusions = {
       val __obj = js.Dynamic.literal(requirements = requirements.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocTypeExclusions]
     }
@@ -40,7 +41,7 @@ object exclusionsMod {
       def setOverloadsSeparateDocsUndefined: Self = StObject.set(x, "overloadsSeparateDocs", js.undefined)
       
       @scala.inline
-      def setRequirements(value: js.Array[Exclusion[_]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+      def setRequirements(value: js.Array[Exclusion[js.Any]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRequirementsVarargs(value: Exclusion[js.Any]*): Self = StObject.set(x, "requirements", js.Array(value :_*))

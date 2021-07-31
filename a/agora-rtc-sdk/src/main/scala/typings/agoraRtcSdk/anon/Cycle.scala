@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cycle extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Cycle extends StObject {
     *
     * A positive integer. The value range is [1,10000]. The default value is 1.
     */
-  var cycle: js.UndefOr[Double] = js.native
+  var cycle: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the online audio effect file.
@@ -22,7 +20,7 @@ trait Cycle extends StObject {
     *
     * Supported audio formats: MP3, AAC, and other audio formats depending on the browser.
     */
-  var filePath: String = js.native
+  var filePath: String
   
   /**
     * The ID of the specified audio effect.
@@ -31,7 +29,7 @@ trait Cycle extends StObject {
     *
     * If the audio effect is preloaded into the memory through the [[preloadEffect]] method, ensure that the soundId value is set to the same value as in [[preloadEffect]].
     */
-  var soundId: Double = js.native
+  var soundId: Double
 }
 object Cycle {
   

@@ -4,10 +4,8 @@ import typings.algoliasearchHelper.mod.SearchParameters
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorDescription[TProvided, TExposed] extends StObject {
   
   /**
@@ -19,16 +17,16 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var cleanUp: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, _], 
+      /* this */ Component[TExposed, js.Object, js.Any], 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
       SearchState
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var defaultProps: js.UndefOr[js.Any] = js.native
+  var defaultProps: js.UndefOr[js.Any] = js.undefined
   
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * This method allows the widget to register a custom metadata object for any props and state combination.
@@ -41,13 +39,13 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var getMetadata: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
+      /* this */ Component[TExposed, js.Object, js.Any], 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
       /* repeated */ js.Any, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This method should return the props to forward to the composed component.
@@ -61,10 +59,10 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
   def getProvidedProps(
     props: TExposed,
     searchState: SearchState,
-    searchResults: ConnectorSearchResults[_],
+    searchResults: ConnectorSearchResults[js.Any],
     metadata: js.Any,
     resultsFacetValues: js.Any
-  ): TProvided = js.native
+  ): TProvided
   
   /**
     * This method applies the current props and state to the provided SearchParameters, and returns a new SearchParameters. The SearchParameters
@@ -75,15 +73,15 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var getSearchParameters: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
+      /* this */ Component[TExposed, js.Object, js.Any], 
       /* searchParameters */ SearchParameters, 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
       SearchParameters
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var propTypes: js.UndefOr[js.Any] = js.native
+  var propTypes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This method defines exactly how the refine prop of widgets affects the search state.
@@ -92,13 +90,13 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var refine: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
+      /* this */ Component[TExposed, js.Object, js.Any], 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
       /* repeated */ js.Any, 
       SearchState
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This method needs to be implemented if you want to have the ability to perform a search for facet values inside your widget.
@@ -108,31 +106,31 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var searchForFacetValues: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, _], 
+      /* this */ Component[TExposed, js.Object, js.Any], 
       /* searchState */ SearchState, 
       /* nextRefinement */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ConnectorDescription {
   
   @scala.inline
   def apply[TProvided, TExposed](
     displayName: String,
-    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided
+    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided
   ): ConnectorDescription[TProvided, TExposed] = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction5(getProvidedProps))
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
   }
   
   @scala.inline
-  implicit class ConnectorDescriptionMutableBuilder[Self <: ConnectorDescription[_, _], TProvided, TExposed] (val x: Self with (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
+  implicit class ConnectorDescriptionMutableBuilder[Self <: ConnectorDescription[?, ?], TProvided, TExposed] (val x: Self & (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
     
     @scala.inline
     def setCleanUp(
       value: js.ThisFunction2[
-          /* this */ Component[TExposed, js.Object, _], 
+          /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
           SearchState
@@ -154,11 +152,11 @@ object ConnectorDescription {
     @scala.inline
     def setGetMetadata(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, _], 
+          /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
@@ -166,12 +164,12 @@ object ConnectorDescription {
     def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
     @scala.inline
-    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
+    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
     
     @scala.inline
     def setGetSearchParameters(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, _], 
+          /* this */ Component[TExposed, js.Object, js.Any], 
           /* searchParameters */ SearchParameters, 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
@@ -191,7 +189,7 @@ object ConnectorDescription {
     @scala.inline
     def setRefine(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, _], 
+          /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
           /* repeated */ js.Any, 
@@ -205,10 +203,10 @@ object ConnectorDescription {
     @scala.inline
     def setSearchForFacetValues(
       value: js.ThisFunction2[
-          /* this */ Component[TExposed, js.Object, _], 
+          /* this */ Component[TExposed, js.Object, js.Any], 
           /* searchState */ SearchState, 
           /* nextRefinement */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     

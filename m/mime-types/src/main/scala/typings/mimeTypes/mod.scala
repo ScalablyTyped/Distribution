@@ -3,24 +3,23 @@ package typings.mimeTypes
 import typings.mimeTypes.mimeTypesBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mime-types", "charset")
+  @JSImport("mime-types", JSImport.Namespace)
   @js.native
-  def charset(typeString: String): String | `false` = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mime-types", "contentType")
-  @js.native
-  def contentType(filenameOrExt: String): String | `false` = js.native
+  @scala.inline
+  def charset(typeString: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(typeString.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
-  @JSImport("mime-types", "extension")
-  @js.native
-  def extension(typeString: String): String | `false` = js.native
+  @scala.inline
+  def contentType(filenameOrExt: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("contentType")(filenameOrExt.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
-  @JSImport("mime-types", "lookup")
-  @js.native
-  def lookup(filenameOrExt: String): String | `false` = js.native
+  @scala.inline
+  def `extension`(typeString: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(typeString.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  
+  @scala.inline
+  def lookup(filenameOrExt: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(filenameOrExt.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
 }

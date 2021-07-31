@@ -5,7 +5,6 @@ import typings.twilioChat.configurationMod.Configuration
 import typings.twilioSync.mod.SyncClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMod {
@@ -26,7 +25,7 @@ object sessionMod {
       * Sends the command to the server
       * @returns Promise the promise, which is being fulfilled only when service will reply
       */
-    def addCommand(action: String, params: js.Object): js.Promise[_] = js.native
+    def addCommand(action: String, params: js.Object): js.Promise[js.Any] = js.native
     
     var config: js.Any = js.native
     
@@ -77,20 +76,19 @@ object sessionMod {
     var sessionStreamPromise: js.Any = js.native
   }
   
-  @js.native
   trait SessionLinks extends StObject {
     
-    var mediaServiceUrl: String = js.native
+    var mediaServiceUrl: String
     
-    var myChannelsUrl: String = js.native
+    var myChannelsUrl: String
     
-    var publicChannelsUrl: String = js.native
+    var publicChannelsUrl: String
     
-    var syncListUrl: String = js.native
+    var syncListUrl: String
     
-    var typingUrl: String = js.native
+    var typingUrl: String
     
-    var usersUrl: String = js.native
+    var usersUrl: String
   }
   object SessionLinks {
     
@@ -130,10 +128,9 @@ object sessionMod {
     }
   }
   
-  @js.native
   trait SessionServices extends StObject {
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
   }
   object SessionServices {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Webpropertyadwordslinks")
@@ -32,7 +31,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementWebpropertyadwordslinksDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceManagementWebpropertyadwordslinksDelete,
@@ -67,7 +66,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def get(callback: BodyResponseCallback[SchemaEntityAdWordsLink]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def get(params: ParamsResourceManagementWebpropertyadwordslinksGet): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def get(
     params: ParamsResourceManagementWebpropertyadwordslinksGet,
@@ -101,7 +100,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def insert(callback: BodyResponseCallback[SchemaEntityAdWordsLink]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def insert(params: ParamsResourceManagementWebpropertyadwordslinksInsert): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def insert(
     params: ParamsResourceManagementWebpropertyadwordslinksInsert,
@@ -136,7 +135,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaEntityAdWordsLinks] = js.native
   def list(callback: BodyResponseCallback[SchemaEntityAdWordsLinks]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLinks] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLinks] = js.native
   def list(params: ParamsResourceManagementWebpropertyadwordslinksList): GaxiosPromise[SchemaEntityAdWordsLinks] = js.native
   def list(
     params: ParamsResourceManagementWebpropertyadwordslinksList,
@@ -172,7 +171,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def patch(callback: BodyResponseCallback[SchemaEntityAdWordsLink]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def patch(params: ParamsResourceManagementWebpropertyadwordslinksPatch): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def patch(
     params: ParamsResourceManagementWebpropertyadwordslinksPatch,
@@ -207,7 +206,7 @@ class ResourceManagementWebpropertyadwordslinks protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def update(callback: BodyResponseCallback[SchemaEntityAdWordsLink]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def update(params: ParamsResourceManagementWebpropertyadwordslinksUpdate): GaxiosPromise[SchemaEntityAdWordsLink] = js.native
   def update(
     params: ParamsResourceManagementWebpropertyadwordslinksUpdate,

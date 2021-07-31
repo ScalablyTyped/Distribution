@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFamily extends StObject {
   
   /**
     * Garbage collection rule specified as a protobuf. Must serialize to at most 500 bytes. NOTE: Garbage collection executes opportunistically in the background, and so it's possible for
     * reads to return a cell even if it matches the active GC expression for its family.
     */
-  var gcRule: js.UndefOr[GcRule] = js.native
+  var gcRule: js.UndefOr[GcRule] = js.undefined
 }
 object ColumnFamily {
   

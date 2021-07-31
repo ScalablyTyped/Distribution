@@ -14,15 +14,13 @@ import typings.node.http2Mod.IncomingHttpHeaders
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Auth extends StObject {
     
-    var auth: OAuth2Client = js.native
+    var auth: OAuth2Client
   }
   object Auth {
     
@@ -40,10 +38,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Deadline extends StObject {
     
-    var deadline: js.UndefOr[Date] = js.native
+    var deadline: js.UndefOr[Date] = js.undefined
   }
   object Deadline {
     
@@ -64,10 +61,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Encode extends StObject {
     
-    def encode(obj: js.Object): Finish = js.native
+    def encode(obj: js.Object): Finish
   }
   object Encode {
     
@@ -85,10 +81,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Finish extends StObject {
     
-    def finish(): js.Array[js.Object] = js.native
+    def finish(): js.Array[js.Object]
   }
   object Finish {
     
@@ -107,7 +102,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofCallCredentials extends Instantiable0[CallCredentials] {
+  trait TypeofCallCredentials
+    extends StObject
+       with Instantiable0[CallCredentials] {
     
     def createEmpty(): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
     
@@ -129,7 +126,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofChannelCredentials extends Instantiable0[ChannelCredentials] {
+  trait TypeofChannelCredentials
+    extends StObject
+       with Instantiable0[ChannelCredentials] {
     
     /**
       * Return a new ChannelCredentials instance with no credentials.
@@ -153,7 +152,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofMetadata extends Instantiable0[Metadata] {
+  trait TypeofMetadata
+    extends StObject
+       with Instantiable0[Metadata] {
     
     /**
       * Returns a new Metadata object based fields in a given IncomingHttpHeaders
@@ -164,7 +165,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofServerCredentials extends Instantiable0[ServerCredentials] {
+  trait TypeofServerCredentials
+    extends StObject
+       with Instantiable0[ServerCredentials] {
     
     def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
     
@@ -174,7 +177,6 @@ object anon {
     def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
   }
   
-  @js.native
   trait Typeofcredentials extends StObject {
     
     /**
@@ -187,7 +189,7 @@ object anon {
     def combineCallCredentials(
       first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
       additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = js.native
+    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials
     
     /**
       * Combine a ChannelCredentials with any number of CallCredentials into a
@@ -199,17 +201,17 @@ object anon {
     def combineChannelCredentials(
       channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
       callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
     
-    var createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any = js.native
+    var createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any
     
-    var createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any = js.native
+    var createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any
     
-    var createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any = js.native
+    var createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any
     
-    var createInsecure: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any = js.native
+    var createInsecure: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any
     
-    var createSsl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any = js.native
+    var createSsl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any
   }
   object Typeofcredentials {
     

@@ -2,68 +2,66 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a change to a file or Team Drive.
   */
-@js.native
 trait SchemaChange extends StObject {
   
   /**
     * Whether the file or Team Drive has been removed from this list of
     * changes, for example by deletion or loss of access.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The updated state of the file. Present if the type is file and the file
     * has not been removed from this list of changes.
     */
-  var file: js.UndefOr[SchemaFile] = js.native
+  var file: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * The ID of the file associated with this change.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the change.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#change.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The time of this modification.
     */
-  var modificationDate: js.UndefOr[String] = js.native
+  var modificationDate: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this change.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The updated state of the Team Drive. Present if the type is teamDrive,
     * the user is still a member of the Team Drive, and the Team Drive has not
     * been deleted.
     */
-  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.native
+  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.undefined
   
   /**
     * The ID of the Team Drive associated with this change.
     */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the change. Possible values are file and teamDrive.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaChange {
   

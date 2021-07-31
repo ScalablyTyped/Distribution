@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCreateContentAttachmentResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var title: String = js.native
+  var title: String
 }
 object AppsCreateContentAttachmentResponseData {
   

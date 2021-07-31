@@ -2,75 +2,73 @@ package typings.jui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
   /**
     * @cfg {String/Integer} [bottom="auto"]
     * Determines the Y coordinate based on the bottom side of a window
     */
-  var bottom: js.UndefOr[String | Double] = js.native
+  var bottom: js.UndefOr[String | Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [height=300]
     * Determines the height of a window
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {String/Integer} [left="auto"]
     * Determines the X coordinate of a window
     */
-  var left: js.UndefOr[String | Double] = js.native
+  var left: js.UndefOr[String | Double] = js.undefined
   
   /**
     * @cfg {Boolean} [modal=false]
     * Applies a modal UI to a window
     */
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Integer} [modalIndex=0]
     * Determines the z-index property of a modal UI
     */
-  var modalIndex: js.UndefOr[Double] = js.native
+  var modalIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Boolean} [move=true]
     * It is possible to move a window
     */
-  var move: js.UndefOr[Boolean] = js.native
+  var move: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Boolean} [resize=true]
     * It is possible to resize a window
     */
-  var resize: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {String/Integer} [right="auto"]
     * Determines the X coordinate based on the right side of a window
     */
-  var right: js.UndefOr[String | Double] = js.native
+  var right: js.UndefOr[String | Double] = js.undefined
   
   /**
     * @cfg {String/Integer} [top="auto"]
     * Determines the Y coordinate of a window
     */
-  var top: js.UndefOr[String | Double] = js.native
+  var top: js.UndefOr[String | Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [width=400]
     * Determines the horizontal size of a window
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Bottom {
   

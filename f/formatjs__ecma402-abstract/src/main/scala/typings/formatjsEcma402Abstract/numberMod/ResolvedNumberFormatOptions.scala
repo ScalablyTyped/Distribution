@@ -2,62 +2,60 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Intl.ResolvedNumberFormatOptions & std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatInternal, 'currencySign' | 'unit' | 'unitDisplay' | 'notation' | 'compactDisplay' | 'signDisplay'> */
-@js.native
 trait ResolvedNumberFormatOptions extends StObject {
   
-  var compactDisplay: js.UndefOr[String] with NumberFormatOptionsCompactDisplay = js.native
+  var compactDisplay: js.UndefOr[String] & NumberFormatOptionsCompactDisplay
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: js.UndefOr[String] = js.native
+  var currencyDisplay: js.UndefOr[String] = js.undefined
   
-  var currencySign: NumberFormatOptionsCurrencySign = js.native
+  var currencySign: NumberFormatOptionsCurrencySign
   
-  var locale: String = js.native
+  var locale: String
   
-  var maximumFractionDigits: Double = js.native
+  var maximumFractionDigits: Double
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: Double = js.native
+  var minimumFractionDigits: Double
   
-  var minimumIntegerDigits: Double = js.native
+  var minimumIntegerDigits: Double
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var notation: js.UndefOr[String] with NumberFormatOptionsNotation = js.native
+  var notation: js.UndefOr[String] & NumberFormatOptionsNotation
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var signDisplay: js.UndefOr[String] with NumberFormatOptionsSignDisplay = js.native
+  var signDisplay: js.UndefOr[String] & NumberFormatOptionsSignDisplay
   
-  var style: String = js.native
+  var style: String
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: js.UndefOr[String] with NumberFormatOptionsUnitDisplay = js.native
+  var unitDisplay: js.UndefOr[String] & NumberFormatOptionsUnitDisplay
   
-  var useGrouping: Boolean = js.native
+  var useGrouping: Boolean
 }
 object ResolvedNumberFormatOptions {
   
   @scala.inline
   def apply(
-    compactDisplay: js.UndefOr[String] with NumberFormatOptionsCompactDisplay,
+    compactDisplay: js.UndefOr[String] & NumberFormatOptionsCompactDisplay,
     currencySign: NumberFormatOptionsCurrencySign,
     locale: String,
     maximumFractionDigits: Double,
     minimumFractionDigits: Double,
     minimumIntegerDigits: Double,
-    notation: js.UndefOr[String] with NumberFormatOptionsNotation,
+    notation: js.UndefOr[String] & NumberFormatOptionsNotation,
     numberingSystem: String,
-    signDisplay: js.UndefOr[String] with NumberFormatOptionsSignDisplay,
+    signDisplay: js.UndefOr[String] & NumberFormatOptionsSignDisplay,
     style: String,
-    unitDisplay: js.UndefOr[String] with NumberFormatOptionsUnitDisplay,
+    unitDisplay: js.UndefOr[String] & NumberFormatOptionsUnitDisplay,
     useGrouping: Boolean
   ): ResolvedNumberFormatOptions = {
     val __obj = js.Dynamic.literal(compactDisplay = compactDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], maximumFractionDigits = maximumFractionDigits.asInstanceOf[js.Any], minimumFractionDigits = minimumFractionDigits.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], signDisplay = signDisplay.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
@@ -68,7 +66,7 @@ object ResolvedNumberFormatOptions {
   implicit class ResolvedNumberFormatOptionsMutableBuilder[Self <: ResolvedNumberFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCompactDisplay(value: js.UndefOr[String] with NumberFormatOptionsCompactDisplay): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
+    def setCompactDisplay(value: js.UndefOr[String] & NumberFormatOptionsCompactDisplay): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
@@ -110,13 +108,13 @@ object ResolvedNumberFormatOptions {
     def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def setNotation(value: js.UndefOr[String] with NumberFormatOptionsNotation): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    def setNotation(value: js.UndefOr[String] & NumberFormatOptionsNotation): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignDisplay(value: js.UndefOr[String] with NumberFormatOptionsSignDisplay): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
+    def setSignDisplay(value: js.UndefOr[String] & NumberFormatOptionsSignDisplay): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
@@ -125,7 +123,7 @@ object ResolvedNumberFormatOptions {
     def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitDisplay(value: js.UndefOr[String] with NumberFormatOptionsUnitDisplay): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
+    def setUnitDisplay(value: js.UndefOr[String] & NumberFormatOptionsUnitDisplay): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)

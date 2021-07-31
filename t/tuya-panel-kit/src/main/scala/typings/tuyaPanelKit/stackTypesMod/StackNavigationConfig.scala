@@ -2,10 +2,8 @@ package typings.tuyaPanelKit.stackTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackNavigationConfig extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait StackNavigationConfig extends StObject {
     * Make sure to call `enableScreens` from `react-native-screens` to make it work.
     * Defaults to `true` on Android, depends on the version of `react-native-screens` on iOS.
     */
-  var detachInactiveScreens: js.UndefOr[Boolean] = js.native
+  var detachInactiveScreens: js.UndefOr[Boolean] = js.undefined
   
-  var headerMode: js.UndefOr[StackHeaderMode] = js.native
+  var headerMode: js.UndefOr[StackHeaderMode] = js.undefined
   
   /**
     * If `false`, the keyboard will NOT automatically dismiss when navigating to a new screen.
     * Defaults to `true`.
     */
-  var keyboardHandlingEnabled: js.UndefOr[Boolean] = js.native
+  var keyboardHandlingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[StackCardMode] = js.native
+  var mode: js.UndefOr[StackCardMode] = js.undefined
 }
 object StackNavigationConfig {
   

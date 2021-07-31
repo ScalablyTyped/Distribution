@@ -2,16 +2,14 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResolverRulePolicyRequest extends StObject {
   
   /**
     * The ID of the Resolver rule policy that you want to get information about.
     */
-  var Arn: typings.awsSdk.route53resolverMod.Arn = js.native
+  var Arn: typings.awsSdk.route53resolverMod.Arn
 }
 object GetResolverRulePolicyRequest {
   

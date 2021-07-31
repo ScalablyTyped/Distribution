@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafIpSetMod {
@@ -25,7 +24,7 @@ object wafIpSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: IpSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: IpSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -46,6 +45,10 @@ object wafIpSetMod {
   /* static members */
   object IpSet {
     
+    @JSImport("@pulumi/aws/waf/ipSet", "IpSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IpSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,40 +58,34 @@ object wafIpSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/waf/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IpSet = js.native
-    @JSImport("@pulumi/aws/waf/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IpSet = js.native
-    @JSImport("@pulumi/aws/waf/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState): IpSet = js.native
-    @JSImport("@pulumi/aws/waf/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
     
     /**
       * Returns true if the given object is an instance of IpSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/waf/ipSet", "IpSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ Boolean]
   }
   
-  @js.native
   trait IpSetArgs extends StObject {
     
     /**
       * One or more pairs specifying the IP address type (IPV4 or IPV6) and the IP address range (in CIDR format) from which web requests originate.
       */
-    val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.IpSetIpSetDescriptor]]]] = js.native
+    val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.IpSetIpSetDescriptor]]]] = js.undefined
     
     /**
       * The name or description of the IPSet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object IpSetArgs {
     
@@ -118,23 +115,22 @@ object wafIpSetMod {
     }
   }
   
-  @js.native
   trait IpSetState extends StObject {
     
     /**
       * The ARN of the WAF IPSet.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more pairs specifying the IP address type (IPV4 or IPV6) and the IP address range (in CIDR format) from which web requests originate.
       */
-    val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.IpSetIpSetDescriptor]]]] = js.native
+    val ipSetDescriptors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.IpSetIpSetDescriptor]]]] = js.undefined
     
     /**
       * The name or description of the IPSet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object IpSetState {
     

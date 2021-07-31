@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RxNormConcept extends StObject {
   
   /**
     * RxNorm concept ID, also known as the RxCUI.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the RxNorm concept.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend Medical has that the entity is accurately linked to the reported RxNorm concept.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
 }
 object RxNormConcept {
   

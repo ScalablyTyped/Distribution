@@ -3,7 +3,6 @@ package typings.angularCommon.mod
 import typings.rxjs.typesMod.SubscriptionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "Location")
@@ -37,9 +36,9 @@ class Location protected () extends StObject {
     *
     */
   def go(path: String): Unit = js.native
-  def go(path: String, query: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
   def go(path: String, query: String): Unit = js.native
   def go(path: String, query: String, state: js.Any): Unit = js.native
+  def go(path: String, query: Unit, state: js.Any): Unit = js.native
   
   /**
     * Normalizes the given path and compares to the current normalized path.
@@ -101,9 +100,9 @@ class Location protected () extends StObject {
     * @param state Location history state.
     */
   def replaceState(path: String): Unit = js.native
-  def replaceState(path: String, query: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
   def replaceState(path: String, query: String): Unit = js.native
   def replaceState(path: String, query: String, state: js.Any): Unit = js.native
+  def replaceState(path: String, query: Unit, state: js.Any): Unit = js.native
   
   /**
     * Subscribes to the platform's `popState` events.
@@ -116,11 +115,6 @@ class Location protected () extends StObject {
   def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit]): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent, Unit],
-    onThrow: js.UndefOr[scala.Nothing],
-    onReturn: js.Function0[Unit]
-  ): SubscriptionLike = js.native
-  def subscribe(
-    onNext: js.Function1[/* value */ PopStateEvent, Unit],
     onThrow: js.Function1[/* exception */ js.Any, Unit]
   ): SubscriptionLike = js.native
   def subscribe(
@@ -129,9 +123,14 @@ class Location protected () extends StObject {
     onReturn: js.Function0[Unit]
   ): SubscriptionLike = js.native
   def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit], onThrow: Null, onReturn: js.Function0[Unit]): SubscriptionLike = js.native
+  def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit], onThrow: Unit, onReturn: js.Function0[Unit]): SubscriptionLike = js.native
 }
 /* static members */
 object Location {
+  
+  @JSImport("@angular/common", "Location")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Joins two parts of a URL with a slash if needed.
@@ -142,9 +141,8 @@ object Location {
     *
     * @returns The joined URL string.
     */
-  @JSImport("@angular/common", "Location.joinWithSlash")
-  @js.native
-  def joinWithSlash(start: String, end: String): String = js.native
+  @scala.inline
+  def joinWithSlash(start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinWithSlash")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Normalizes URL parameters by prepending with `?` if needed.
@@ -153,9 +151,8 @@ object Location {
     *
     * @returns The normalized URL parameters string.
     */
-  @JSImport("@angular/common", "Location.normalizeQueryParams")
-  @js.native
-  def normalizeQueryParams(params: String): String = js.native
+  @scala.inline
+  def normalizeQueryParams(params: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeQueryParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Removes a trailing slash from a URL string if needed.
@@ -166,7 +163,6 @@ object Location {
     *
     * @returns The URL string, modified if needed.
     */
-  @JSImport("@angular/common", "Location.stripTrailingSlash")
-  @js.native
-  def stripTrailingSlash(url: String): String = js.native
+  @scala.inline
+  def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

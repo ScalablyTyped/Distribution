@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the FaceDetected event. */
-@js.native
 trait FaceDetectedEventArgs extends StObject {
   
   /** Gets the FaceDetectionEffectFrame associated with a FaceDetected event. */
-  var resultFrame: FaceDetectionEffectFrame = js.native
+  var resultFrame: FaceDetectionEffectFrame
 }
 object FaceDetectedEventArgs {
   

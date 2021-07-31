@@ -5,42 +5,46 @@ import typings.formatjsIntl.srcTypesMod.FormatDisplayNameOptions
 import typings.formatjsIntl.srcTypesMod.FormatListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatjsIntlStrings {
   
   @js.native
   sealed trait FORMAT_ERROR
-    extends IntlErrorCode
+    extends StObject
+       with IntlErrorCode
        with typings.formatjsIntl.errorMod.IntlErrorCode
   @scala.inline
   def FORMAT_ERROR: FORMAT_ERROR = "FORMAT_ERROR".asInstanceOf[FORMAT_ERROR]
   
   @js.native
   sealed trait INVALID_CONFIG
-    extends IntlErrorCode
+    extends StObject
+       with IntlErrorCode
        with typings.formatjsIntl.errorMod.IntlErrorCode
   @scala.inline
   def INVALID_CONFIG: INVALID_CONFIG = "INVALID_CONFIG".asInstanceOf[INVALID_CONFIG]
   
   @js.native
   sealed trait MISSING_DATA
-    extends IntlErrorCode
+    extends StObject
+       with IntlErrorCode
        with typings.formatjsIntl.errorMod.IntlErrorCode
   @scala.inline
   def MISSING_DATA: MISSING_DATA = "MISSING_DATA".asInstanceOf[MISSING_DATA]
   
   @js.native
   sealed trait MISSING_TRANSLATION
-    extends IntlErrorCode
+    extends StObject
+       with IntlErrorCode
        with typings.formatjsIntl.errorMod.IntlErrorCode
   @scala.inline
   def MISSING_TRANSLATION: MISSING_TRANSLATION = "MISSING_TRANSLATION".asInstanceOf[MISSING_TRANSLATION]
   
   @js.native
   sealed trait UNSUPPORTED_FORMATTER
-    extends IntlErrorCode
+    extends StObject
+       with IntlErrorCode
        with typings.formatjsIntl.errorMod.IntlErrorCode
   @scala.inline
   def UNSUPPORTED_FORMATTER: UNSUPPORTED_FORMATTER = "UNSUPPORTED_FORMATTER".asInstanceOf[UNSUPPORTED_FORMATTER]
@@ -52,7 +56,8 @@ object formatjsIntlStrings {
   
   @js.native
   sealed trait fallback
-    extends FormatDisplayNameOptions
+    extends StObject
+       with FormatDisplayNameOptions
        with typings.formatjsIntl.typesMod.FormatDisplayNameOptions
   @scala.inline
   def fallback: fallback = "fallback".asInstanceOf[fallback]
@@ -74,7 +79,8 @@ object formatjsIntlStrings {
   
   @js.native
   sealed trait style
-    extends FormatDisplayNameOptions
+    extends StObject
+       with FormatDisplayNameOptions
        with typings.formatjsIntl.typesMod.FormatDisplayNameOptions
        with FormatListOptions
        with typings.formatjsIntl.typesMod.FormatListOptions
@@ -88,7 +94,8 @@ object formatjsIntlStrings {
   
   @js.native
   sealed trait `type`
-    extends FormatDisplayNameOptions
+    extends StObject
+       with FormatDisplayNameOptions
        with typings.formatjsIntl.typesMod.FormatDisplayNameOptions
        with FormatListOptions
        with typings.formatjsIntl.typesMod.FormatListOptions

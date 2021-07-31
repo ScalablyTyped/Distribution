@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputConfig extends StObject {
   
   /**
     * The S3 bucket where training output is placed.
     */
-  var S3Bucket: js.UndefOr[typings.awsSdk.rekognitionMod.S3Bucket] = js.native
+  var S3Bucket: js.UndefOr[typings.awsSdk.rekognitionMod.S3Bucket] = js.undefined
   
   /**
     * The prefix applied to the training output files. 
     */
-  var S3KeyPrefix: js.UndefOr[typings.awsSdk.rekognitionMod.S3KeyPrefix] = js.native
+  var S3KeyPrefix: js.UndefOr[typings.awsSdk.rekognitionMod.S3KeyPrefix] = js.undefined
 }
 object OutputConfig {
   

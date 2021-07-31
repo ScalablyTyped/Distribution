@@ -12,81 +12,81 @@ import typings.reactNativeElements.anon.PartialAvatarProps
 import typings.reactNativeElements.anon.PartialIconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItemProps extends TouchableHighlightProps {
+trait ListItemProps
+  extends StObject
+     with TouchableHighlightProps {
   
-  var Component: js.UndefOr[ComponentType[js.Object]] = js.native
+  var Component: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var ViewComponent: js.UndefOr[ComponentType[js.Object]] = js.native
+  var ViewComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var badge: js.UndefOr[BadgeProps] = js.native
+  var badge: js.UndefOr[BadgeProps] = js.undefined
   
-  var bottomDivider: js.UndefOr[Boolean] = js.native
+  var bottomDivider: js.UndefOr[Boolean] = js.undefined
   
-  var buttonGroup: js.UndefOr[ButtonGroupProps] = js.native
+  var buttonGroup: js.UndefOr[ButtonGroupProps] = js.undefined
   
-  var checkBox: js.UndefOr[CheckBoxProps] = js.native
+  var checkBox: js.UndefOr[CheckBoxProps] = js.undefined
   
-  var checkmark: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.native
+  var checkmark: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
   
-  var chevron: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.native
+  var chevron: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var input: js.UndefOr[InputProps] = js.native
+  var input: js.UndefOr[InputProps] = js.undefined
   
-  var leftAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.native
+  var leftAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   
-  var leftElement: js.UndefOr[ReactElement] = js.native
+  var leftElement: js.UndefOr[ReactElement] = js.undefined
   
-  var leftIcon: js.UndefOr[PartialIconProps | ReactElement] = js.native
+  var leftIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   
-  var pad: js.UndefOr[Double] = js.native
+  var pad: js.UndefOr[Double] = js.undefined
   
-  var rightAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.native
+  var rightAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   
-  var rightContentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var rightContentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var rightElement: js.UndefOr[ReactElement] = js.native
+  var rightElement: js.UndefOr[ReactElement] = js.undefined
   
-  var rightIcon: js.UndefOr[PartialIconProps | ReactElement] = js.native
+  var rightIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   
-  var rightSubtitle: js.UndefOr[String | ReactElement] = js.native
+  var rightSubtitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var rightSubtitleProps: js.UndefOr[TextProperties] = js.native
+  var rightSubtitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var rightTitle: js.UndefOr[String | ReactElement] = js.native
+  var rightTitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var rightTitleProps: js.UndefOr[TextProperties] = js.native
+  var rightTitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var rightTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var rightTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var scaleProps: js.UndefOr[ScaleProps] = js.native
+  var scaleProps: js.UndefOr[ScaleProps] = js.undefined
   
-  var subtitle: js.UndefOr[String | ReactElement] = js.native
+  var subtitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var subtitleProps: js.UndefOr[TextProperties] = js.native
+  var subtitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var switch: js.UndefOr[SwitchProperties] = js.native
+  var switch: js.UndefOr[SwitchProperties] = js.undefined
   
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
-  var titleProps: js.UndefOr[TextProperties] = js.native
+  var titleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var topDivider: js.UndefOr[Boolean] = js.native
+  var topDivider: js.UndefOr[Boolean] = js.undefined
 }
 object ListItemProps {
   

@@ -3,15 +3,12 @@ package typings.fromjs
 import typings.fromjs.FromJS.IQueryable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("from")
-  @js.native
-  def from[T](results: js.Any): IQueryable[_] = js.native
-  @JSGlobal("from")
-  @js.native
-  def from[T](results: js.Array[T]): IQueryable[T] = js.native
+  @scala.inline
+  def from[T](results: js.Any): IQueryable[js.Any] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[js.Any]]
+  @scala.inline
+  def from[T](results: js.Array[T]): IQueryable[T] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[T]]
 }

@@ -1,30 +1,48 @@
 package typings.tabris
 
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents pixel data of a `Canvas` widget.
   */
-@JSGlobal("ImageData")
-@js.native
-class ImageData protected () extends js.Object {
-  def this(data: Uint8ClampedArray, width: Double) = this()
-  def this(width: Double, height: Double) = this()
-  def this(data: Uint8ClampedArray, width: Double, height: Double) = this()
+trait ImageData extends StObject {
+  
   /**
     * A one-dimensional array containing the data in RGBA order, with integer values between 0 and 255 (inclusive).
     */
-  val data: Uint8ClampedArray = js.native
+  val data: Uint8ClampedArray
+  
   /**
     * The actual height of the ImageData, in pixels.
     */
-  val height: Double = js.native
+  val height: Double
+  
   /**
     * The actual height of the ImageData, in pixels.
     */
-  val width: Double = js.native
+  val width: Double
 }
-
+object ImageData {
+  
+  @scala.inline
+  def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageData]
+  }
+  
+  @scala.inline
+  implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
+}

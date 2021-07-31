@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Tags")
 @js.native
 class Tags ()
-  extends typings.playcanvas.pc.Tags {
+  extends StObject
+     with typings.playcanvas.pc.Tags {
   def this(parent: js.Any) = this()
 }

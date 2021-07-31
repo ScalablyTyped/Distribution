@@ -3,26 +3,25 @@ package typings.scheduler
 import typings.scheduler.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scheduler", "unstable_cancelCallback")
+  @JSImport("scheduler", JSImport.Namespace)
   @js.native
-  def unstableCancelCallback(callbackNode: CallbackNode): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("scheduler", "unstable_continueExecution")
-  @js.native
-  def unstableContinueExecution(): Unit = js.native
+  @scala.inline
+  def unstableCancelCallback(callbackNode: CallbackNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_cancelCallback")(callbackNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scheduler", "unstable_getCurrentPriorityLevel")
-  @js.native
-  def unstableGetCurrentPriorityLevel(): Double = js.native
+  @scala.inline
+  def unstableContinueExecution(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_continueExecution")().asInstanceOf[Unit]
   
-  @JSImport("scheduler", "unstable_getFirstCallbackNode")
-  @js.native
-  def unstableGetFirstCallbackNode(): CallbackNode | Null = js.native
+  @scala.inline
+  def unstableGetCurrentPriorityLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getCurrentPriorityLevel")().asInstanceOf[Double]
+  
+  @scala.inline
+  def unstableGetFirstCallbackNode(): CallbackNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getFirstCallbackNode")().asInstanceOf[CallbackNode | Null]
   
   @JSImport("scheduler", "unstable_IdlePriority")
   @js.native
@@ -36,59 +35,89 @@ object mod {
   @js.native
   val unstableLowPriority: /* 4 */ Double = js.native
   
-  @JSImport("scheduler", "unstable_next")
-  @js.native
-  def unstableNext[T](eventHandler: js.Function0[T]): T = js.native
+  @scala.inline
+  def unstableNext[T](eventHandler: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_next")(eventHandler.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("scheduler", "unstable_NormalPriority")
   @js.native
   val unstableNormalPriority: /* 3 */ Double = js.native
   
-  @JSImport("scheduler", "unstable_now")
-  @js.native
-  def unstableNow(): Double = js.native
+  @scala.inline
+  def unstableNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_now")().asInstanceOf[Double]
   
-  @JSImport("scheduler", "unstable_pauseExecution")
-  @js.native
-  def unstablePauseExecution(): Unit = js.native
+  @scala.inline
+  def unstablePauseExecution(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_pauseExecution")().asInstanceOf[Unit]
   
-  @JSImport("scheduler", "unstable_runWithPriority")
-  @js.native
-  def unstableRunWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): T = js.native
+  @scala.inline
+  def unstableRunWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_runWithPriority")(priorityLevel.asInstanceOf[js.Any], eventHandler.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("scheduler", "unstable_scheduleCallback")
-  @js.native
-  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = js.native
-  @JSImport("scheduler", "unstable_scheduleCallback")
-  @js.native
-  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Delay): CallbackNode = js.native
+  @scala.inline
+  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_scheduleCallback")(priorityLevel.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CallbackNode]
+  @scala.inline
+  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Delay): CallbackNode = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_scheduleCallback")(priorityLevel.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CallbackNode]
   
-  @JSImport("scheduler", "unstable_shouldYield")
-  @js.native
-  def unstableShouldYield(): Boolean = js.native
+  @scala.inline
+  def unstableShouldYield(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_shouldYield")().asInstanceOf[Boolean]
   
   @JSImport("scheduler", "unstable_UserBlockingPriority")
   @js.native
   val unstableUserBlockingPriority: /* 2 */ Double = js.native
   
-  @JSImport("scheduler", "unstable_wrapCallback")
-  @js.native
-  def unstableWrapCallback(callback: FrameCallbackType): js.Function0[FrameCallbackType] = js.native
+  @scala.inline
+  def unstableWrapCallback(callback: FrameCallbackType): js.Function0[FrameCallbackType] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrapCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[FrameCallbackType]]
   
-  @js.native
   trait CallbackNode extends StObject {
     
-    def callback(): (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit = js.native
+    def callback(): (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
     @JSName("callback")
-    var callback_Original: FrameCallbackType = js.native
+    var callback_Original: FrameCallbackType
     
-    var expirationTime: Double = js.native
+    var expirationTime: Double
     
-    var next: CallbackNode | Null = js.native
+    var next: CallbackNode | Null
     
-    var prev: CallbackNode | Null = js.native
+    var prev: CallbackNode | Null
     
-    var priorityLevel: Double = js.native
+    var priorityLevel: Double
+  }
+  object CallbackNode {
+    
+    @scala.inline
+    def apply(
+      callback: () => (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit,
+      expirationTime: Double,
+      priorityLevel: Double
+    ): CallbackNode = {
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), expirationTime = expirationTime.asInstanceOf[js.Any], priorityLevel = priorityLevel.asInstanceOf[js.Any], next = null, prev = null)
+      __obj.asInstanceOf[CallbackNode]
+    }
+    
+    @scala.inline
+    implicit class CallbackNodeMutableBuilder[Self <: CallbackNode] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCallback(
+        value: () => (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
+      ): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNext(value: CallbackNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNextNull: Self = StObject.set(x, "next", null)
+      
+      @scala.inline
+      def setPrev(value: CallbackNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrevNull: Self = StObject.set(x, "prev", null)
+      
+      @scala.inline
+      def setPriorityLevel(value: Double): Self = StObject.set(x, "priorityLevel", value.asInstanceOf[js.Any])
+    }
   }
   
   type FrameCallbackType = js.Function0[

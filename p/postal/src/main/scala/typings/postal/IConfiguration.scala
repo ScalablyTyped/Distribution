@@ -2,17 +2,15 @@ package typings.postal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConfiguration extends StObject {
   
-  var DEFAULT_CHANNEL: String = js.native
+  var DEFAULT_CHANNEL: String
   
-  var SYSTEM_CHANNEL: String = js.native
+  var SYSTEM_CHANNEL: String
   
-  var resolver: IResolver = js.native
+  var resolver: IResolver
 }
 object IConfiguration {
   

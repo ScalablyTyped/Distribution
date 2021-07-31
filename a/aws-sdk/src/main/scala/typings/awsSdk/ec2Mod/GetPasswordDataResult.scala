@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPasswordDataResult extends StObject {
   
   /**
     * The ID of the Windows instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The password of the instance. Returns an empty string if the password is not available.
     */
-  var PasswordData: js.UndefOr[String] = js.native
+  var PasswordData: js.UndefOr[String] = js.undefined
   
   /**
     * The time the data was last updated.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.native
+  var Timestamp: js.UndefOr[DateTime] = js.undefined
 }
 object GetPasswordDataResult {
   

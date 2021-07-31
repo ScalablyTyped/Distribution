@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ValidationResult. */
-@js.native
 trait IValidationResult extends StObject {
   
   /** ValidationResult validationErrors */
-  var validationErrors: js.UndefOr[js.Array[IValidationError] | Null] = js.native
+  var validationErrors: js.UndefOr[js.Array[IValidationError] | Null] = js.undefined
 }
 object IValidationResult {
   

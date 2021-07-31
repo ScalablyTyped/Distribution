@@ -2,16 +2,14 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTextConfig extends StObject {
   
   /**
     * The transformations to apply to the detected data.
     */
-  var transformations: js.UndefOr[js.Array[SchemaInfoTypeTransformation]] = js.native
+  var transformations: js.UndefOr[js.Array[SchemaInfoTypeTransformation]] = js.undefined
 }
 object SchemaTextConfig {
   

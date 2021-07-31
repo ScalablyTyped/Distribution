@@ -2,66 +2,64 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaiduChannelResponse extends StObject {
   
   /**
     * The unique identifier for the application that the Baidu channel applies to.
     */
-  var ApplicationId: js.UndefOr[string] = js.native
+  var ApplicationId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time when the Baidu channel was enabled.
     */
-  var CreationDate: js.UndefOr[string] = js.native
+  var CreationDate: js.UndefOr[string] = js.undefined
   
   /**
     * The API key that you received from the Baidu Cloud Push service to communicate with the service.
     */
-  var Credential: string = js.native
+  var Credential: string
   
   /**
     * Specifies whether the Baidu channel is enabled for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * (Not used) This property is retained only for backward compatibility.
     */
-  var HasCredential: js.UndefOr[boolean] = js.native
+  var HasCredential: js.UndefOr[boolean] = js.undefined
   
   /**
     * (Deprecated) An identifier for the Baidu channel. This property is retained only for backward compatibility.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the Baidu channel is archived.
     */
-  var IsArchived: js.UndefOr[boolean] = js.native
+  var IsArchived: js.UndefOr[boolean] = js.undefined
   
   /**
     * The user who last modified the Baidu channel.
     */
-  var LastModifiedBy: js.UndefOr[string] = js.native
+  var LastModifiedBy: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time when the Baidu channel was last modified.
     */
-  var LastModifiedDate: js.UndefOr[string] = js.native
+  var LastModifiedDate: js.UndefOr[string] = js.undefined
   
   /**
     * The type of messaging or notification platform for the channel. For the Baidu channel, this value is BAIDU.
     */
-  var Platform: string = js.native
+  var Platform: string
   
   /**
     * The current version of the Baidu channel.
     */
-  var Version: js.UndefOr[integer] = js.native
+  var Version: js.UndefOr[integer] = js.undefined
 }
 object BaiduChannelResponse {
   

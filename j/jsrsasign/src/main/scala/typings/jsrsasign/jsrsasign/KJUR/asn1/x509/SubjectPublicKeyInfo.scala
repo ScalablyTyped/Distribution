@@ -7,7 +7,6 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * spki = new KJUR.asn1.x509.SubjectPublicKeyInfo(KJURcryptoDSA_object);
   */
 @js.native
-trait SubjectPublicKeyInfo extends ASN1Object {
+trait SubjectPublicKeyInfo
+  extends StObject
+     with ASN1Object {
   
   def getASN1Object(): DERSequence = js.native
   

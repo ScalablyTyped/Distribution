@@ -3,23 +3,22 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.Noop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Noop_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   @JSName("type")
-  var type_Noop_ : Noop = js.native
+  var type_Noop_ : Noop
 }
 object Noop_ {
   
   @scala.inline
-  def apply(`type`: Noop): Noop_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): Noop_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Noop")
     __obj.asInstanceOf[Noop_]
   }
   

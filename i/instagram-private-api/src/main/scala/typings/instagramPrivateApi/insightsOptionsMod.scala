@@ -27,25 +27,23 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.TWO_YEARS
 import typings.instagramPrivateApi.instagramPrivateApiStrings.VIDEO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object insightsOptionsMod {
   
-  @js.native
   trait AccountInsightsOptions extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var activityTab: js.UndefOr[Boolean] = js.native
+    var activityTab: js.UndefOr[Boolean] = js.undefined
     
-    var audienceTab: js.UndefOr[Boolean] = js.native
+    var audienceTab: js.UndefOr[Boolean] = js.undefined
     
-    var contentTab: js.UndefOr[Boolean] = js.native
+    var contentTab: js.UndefOr[Boolean] = js.undefined
     
-    var gridMediaSize: js.UndefOr[Double] = js.native
+    var gridMediaSize: js.UndefOr[Double] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object AccountInsightsOptions {
     
@@ -96,14 +94,13 @@ object insightsOptionsMod {
     }
   }
   
-  @js.native
   trait PostsInsightsFeedOptions extends StObject {
     
-    var dataOrdering: CALL | COMMENT_COUNT | EMAIL | ENGAGEMENT_COUNT | FOLLOW | GET_DIRECTIONS | IMPRESSION_COUNT | LIKE_COUNT | PROFILE_VIEW | REACH_COUNT | SAVE_COUNT | SHARE_COUNT | TEXT | BIO_LINK_CLICK = js.native
+    var dataOrdering: CALL | COMMENT_COUNT | EMAIL | ENGAGEMENT_COUNT | FOLLOW | GET_DIRECTIONS | IMPRESSION_COUNT | LIKE_COUNT | PROFILE_VIEW | REACH_COUNT | SAVE_COUNT | SHARE_COUNT | TEXT | BIO_LINK_CLICK
     
-    var postType: ALL | IMAGE | VIDEO | CAROUSEL_V2 | SHOPPING = js.native
+    var postType: ALL | IMAGE | VIDEO | CAROUSEL_V2 | SHOPPING
     
-    var timeframe: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS = js.native
+    var timeframe: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS
   }
   object PostsInsightsFeedOptions {
     

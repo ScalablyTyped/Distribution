@@ -3,17 +3,16 @@ package typings.knockout.mod
 import typings.knockout.mod.utils.MappingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateForeachOptions[T]
-  extends TemplateOptions[js.Array[T]]
+  extends StObject
+     with TemplateOptions[js.Array[T]]
      with MappingOptions[T] {
   
-  var as: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.undefined
   
-  var includeDestroyed: js.UndefOr[Boolean] = js.native
+  var includeDestroyed: js.UndefOr[Boolean] = js.undefined
 }
 object TemplateForeachOptions {
   
@@ -24,7 +23,7 @@ object TemplateForeachOptions {
   }
   
   @scala.inline
-  implicit class TemplateForeachOptionsMutableBuilder[Self <: TemplateForeachOptions[_], T] (val x: Self with TemplateForeachOptions[T]) extends AnyVal {
+  implicit class TemplateForeachOptionsMutableBuilder[Self <: TemplateForeachOptions[?], T] (val x: Self & TemplateForeachOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

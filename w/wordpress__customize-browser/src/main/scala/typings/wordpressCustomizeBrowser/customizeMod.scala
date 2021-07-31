@@ -19,7 +19,6 @@ import typings.wordpressCustomizeBrowser.utilsMod.Utils
 import typings.wordpressCustomizeBrowser.valuesMod.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customizeMod {
@@ -43,15 +42,15 @@ object customizeMod {
     @JSName("defaultConstructor")
     var defaultConstructor_Customize: Setting[Class] = js.native
     
-    def dirtyValues(): Record[String, _] = js.native
-    def dirtyValues(options: DirtyValuesOptions): Record[String, _] = js.native
+    def dirtyValues(): Record[String, js.Any] = js.native
+    def dirtyValues(options: DirtyValuesOptions): Record[String, js.Any] = js.native
     
     def ensure(element: String): JQuery[HTMLElement] = js.native
     def ensure(element: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
     
     def findControlsForSettings(settingIds: js.Array[String]): Record[String, Control] = js.native
     
-    def get(): Record[String, _] = js.native
+    def get(): Record[String, js.Any] = js.native
     
     // TODO
     var l10n: Record[String, String] = js.native
@@ -66,10 +65,10 @@ object customizeMod {
     
     def reflowPaneContents(): Unit = js.native
     
-    def requestChangesetUpdate(): Promise[_, _, _] = js.native
-    def requestChangesetUpdate(changes: js.UndefOr[scala.Nothing], args: RequestChangesetUpdateOptions): Promise[_, _, _] = js.native
-    def requestChangesetUpdate(changes: Record[String, _]): Promise[_, _, _] = js.native
-    def requestChangesetUpdate(changes: Record[String, _], args: RequestChangesetUpdateOptions): Promise[_, _, _] = js.native
+    def requestChangesetUpdate(): Promise[js.Any, js.Any, js.Any] = js.native
+    def requestChangesetUpdate(changes: Unit, args: RequestChangesetUpdateOptions): Promise[js.Any, js.Any, js.Any] = js.native
+    def requestChangesetUpdate(changes: Record[String, js.Any]): Promise[js.Any, js.Any, js.Any] = js.native
+    def requestChangesetUpdate(changes: Record[String, js.Any], args: RequestChangesetUpdateOptions): Promise[js.Any, js.Any, js.Any] = js.native
     
     var section: Values[Section] = js.native
     
@@ -87,10 +86,9 @@ object customizeMod {
     var utils: Utils = js.native
   }
   
-  @js.native
   trait DirtyValuesOptions extends StObject {
     
-    var unsaved: js.UndefOr[Boolean] = js.native
+    var unsaved: js.UndefOr[Boolean] = js.undefined
   }
   object DirtyValuesOptions {
     
@@ -111,18 +109,17 @@ object customizeMod {
     }
   }
   
-  @js.native
   trait HandleSettingValiditiesArgs extends StObject {
     
     // TODO
-    var focusInvalidControl: js.UndefOr[Boolean] = js.native
+    var focusInvalidControl: js.UndefOr[Boolean] = js.undefined
     
-    var settingValidities: Record[String, _] = js.native
+    var settingValidities: Record[String, js.Any]
   }
   object HandleSettingValiditiesArgs {
     
     @scala.inline
-    def apply(settingValidities: Record[String, _]): HandleSettingValiditiesArgs = {
+    def apply(settingValidities: Record[String, js.Any]): HandleSettingValiditiesArgs = {
       val __obj = js.Dynamic.literal(settingValidities = settingValidities.asInstanceOf[js.Any])
       __obj.asInstanceOf[HandleSettingValiditiesArgs]
     }
@@ -137,20 +134,19 @@ object customizeMod {
       def setFocusInvalidControlUndefined: Self = StObject.set(x, "focusInvalidControl", js.undefined)
       
       @scala.inline
-      def setSettingValidities(value: Record[String, _]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
+      def setSettingValidities(value: Record[String, js.Any]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait RequestChangesetUpdateOptions extends StObject {
     
-    var autosave: js.UndefOr[Boolean] = js.native
+    var autosave: js.UndefOr[Boolean] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object RequestChangesetUpdateOptions {
     

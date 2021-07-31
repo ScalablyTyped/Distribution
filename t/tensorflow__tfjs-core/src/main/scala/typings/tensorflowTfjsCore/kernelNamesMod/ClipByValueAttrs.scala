@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipByValueAttrs extends StObject {
   
-  var clipValueMax: Double = js.native
+  var clipValueMax: Double
   
-  var clipValueMin: Double = js.native
+  var clipValueMin: Double
 }
 object ClipByValueAttrs {
   

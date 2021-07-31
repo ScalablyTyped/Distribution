@@ -2,23 +2,22 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentOrderedList
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var ol: js.Array[OrderedListElement] = js.native
+  var ol: js.Array[OrderedListElement]
   
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
-  var separator: js.UndefOr[String | (js.Tuple2[String, String])] = js.native
+  var separator: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[OrderedListType] = js.native
+  var `type`: js.UndefOr[OrderedListType] = js.undefined
 }
 object ContentOrderedList {
   

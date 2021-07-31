@@ -6,10 +6,8 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonGroupProps extends StObject {
   
   /**
@@ -17,37 +15,37 @@ trait ButtonGroupProps extends StObject {
     *
     * @default TouchableHighlight
     */
-  var Component: js.UndefOr[ComponentType[_]] = js.native
+  var Component: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
   /**
     * Determines what the opacity of the wrapped view should be when touch is active.
     */
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify styling for buttons container
     */
-  var buttonContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * inherited styling	specify styling for button
     */
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Array of buttons for component, if returning a component, must be an object with { element: componentName }
     */
-  var buttons: js.Array[ElementObject | String] = js.native
+  var buttons: js.Array[ElementObject | String]
   
   /**
     * Border radius for the container
     */
-  var containerBorderRadius: js.UndefOr[Double] = js.native
+  var containerBorderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify styling for main button container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Controls if buttons are disabled
@@ -56,103 +54,103 @@ trait ButtonGroupProps extends StObject {
     *
     * @default false
     */
-  var disabled: js.UndefOr[Boolean | js.Array[Double]] = js.native
+  var disabled: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
   
   /**
     * Styling for each selected button when disabled
     */
-  var disabledSelectedStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledSelectedStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for the text of each selected button when disabled
     */
-  var disabledSelectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledSelectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Styling for each button when disabled
     */
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for the text of each button when disabled
     */
-  var disabledTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * inherited styling	object { width, color }	update the styling of the interior border of the list of buttons
     */
-  var innerBorderStyle: js.UndefOr[InnerBorderStyleProperty] = js.native
+  var innerBorderStyle: js.UndefOr[InnerBorderStyleProperty] = js.undefined
   
   /**
     *
     * Called immediately after the underlay is hidden
     */
-  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Method to update Button Group Index
     */
-  def onPress(selectedIndex: Double): Unit = js.native
+  def onPress(selectedIndex: Double): Unit
   
   /**
     * Called immediately after the underlay is shown
     */
-  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Allows the user to select multiple items
     *
     * @default false
     */
-  var selectMultiple: js.UndefOr[Boolean] = js.native
+  var selectMultiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify styling selected button
     *
     * @default 'white'
     */
-  var selectedButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var selectedButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Current selected index of array of buttons
     */
-  var selectedIndex: js.UndefOr[Double | Null] = js.native
+  var selectedIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The indexes that are selected. Used with 'selectMultiple'
     *
     * @default []
     */
-  var selectedIndexes: js.UndefOr[js.Array[Double]] = js.native
+  var selectedIndexes: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Specify specific styling for text in the selected state
     */
-  var selectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var selectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Animate the touchable to a new opacity.
     */
-  var setOpacityTo: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var setOpacityTo: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
   /**
     * Specify specific styling for text
     */
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Specify underlayColor for TouchableHighlight
     *
     * @default 'white'
     */
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
   
   /**
     * Display in vertical orientation
     *
     * @default false
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonGroupProps {
   
@@ -196,7 +194,7 @@ object ButtonGroupProps {
     def setButtonsVarargs(value: (ElementObject | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setComponent(value: ComponentType[_]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)

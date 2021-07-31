@@ -6,17 +6,16 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.0 */
-@js.native
 trait XUniversalContentBroker
-  extends XCommandProcessor2
+  extends StObject
      with XComponent
      with XContentProvider
      with XContentProviderManager
      with XContentIdentifierFactory
+     with XCommandProcessor2
 object XUniversalContentBroker {
   
   @scala.inline

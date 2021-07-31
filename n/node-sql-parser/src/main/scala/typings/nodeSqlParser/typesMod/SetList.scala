@@ -2,23 +2,21 @@ package typings.nodeSqlParser.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetList extends StObject {
   
-  var column: String = js.native
+  var column: String
   
-  var table: String | Null = js.native
+  var table: String | Null
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object SetList {
   
   @scala.inline
   def apply(column: String, value: js.Any): SetList = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], table = null)
     __obj.asInstanceOf[SetList]
   }
   

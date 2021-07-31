@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MethodOptions. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new MethodOptions.
   * @param [properties] Properties to set
   */
-class MethodOptions () extends IMethodOptions {
+class MethodOptions ()
+  extends StObject
+     with IMethodOptions {
   def this(properties: IMethodOptions) = this()
   
   /** MethodOptions deprecated. */
@@ -41,6 +42,10 @@ class MethodOptions () extends IMethodOptions {
 }
 object MethodOptions {
   
+  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait IdempotencyLevel extends StObject
   /** IdempotencyLevel enum. */
@@ -49,19 +54,25 @@ object MethodOptions {
   object IdempotencyLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[IdempotencyLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[IdempotencyLevel & Double] = js.native
     
     @js.native
-    sealed trait IDEMPOTENCY_UNKNOWN extends IdempotencyLevel
-    /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN with Double = js.native
+    sealed trait IDEMPOTENCY_UNKNOWN
+      extends StObject
+         with IdempotencyLevel
+    /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN & Double = js.native
     
     @js.native
-    sealed trait IDEMPOTENT extends IdempotencyLevel
-    /* 2 */ val IDEMPOTENT: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT with Double = js.native
+    sealed trait IDEMPOTENT
+      extends StObject
+         with IdempotencyLevel
+    /* 2 */ val IDEMPOTENT: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT & Double = js.native
     
     @js.native
-    sealed trait NO_SIDE_EFFECTS extends IdempotencyLevel
-    /* 1 */ val NO_SIDE_EFFECTS: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS with Double = js.native
+    sealed trait NO_SIDE_EFFECTS
+      extends StObject
+         with IdempotencyLevel
+    /* 1 */ val NO_SIDE_EFFECTS: typings.googleCloudTextToSpeech.mod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS & Double = js.native
   }
   
   /**
@@ -70,12 +81,10 @@ object MethodOptions {
     * @returns MethodOptions instance
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.create")
-  @js.native
-  def create(): MethodOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.create")
-  @js.native
-  def create(properties: IMethodOptions): MethodOptions = js.native
+  @scala.inline
+  def create(): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MethodOptions]
+  @scala.inline
+  def create(properties: IMethodOptions): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
   /**
     * Decodes a MethodOptions message from the specified reader or buffer.
@@ -86,18 +95,14 @@ object MethodOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decode")
-  @js.native
-  def decode(reader: Reader): MethodOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): MethodOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): MethodOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): MethodOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MethodOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MethodOptions]
   
   /**
     * Decodes a MethodOptions message from the specified reader or buffer, length delimited.
@@ -107,12 +112,10 @@ object MethodOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): MethodOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): MethodOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
   /**
     * Encodes the specified MethodOptions message. Does not implicitly {@link google.protobuf.MethodOptions.verify|verify} messages.
@@ -121,12 +124,10 @@ object MethodOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.encode")
-  @js.native
-  def encode(message: IMethodOptions): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.encode")
-  @js.native
-  def encode(message: IMethodOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IMethodOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IMethodOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified MethodOptions message, length delimited. Does not implicitly {@link google.protobuf.MethodOptions.verify|verify} messages.
@@ -135,12 +136,10 @@ object MethodOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IMethodOptions): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IMethodOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IMethodOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IMethodOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a MethodOptions message from a plain object. Also converts values to their respective internal types.
@@ -148,9 +147,8 @@ object MethodOptions {
     * @returns MethodOptions
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): MethodOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
   /**
     * Creates a plain object from a MethodOptions message. Also converts values to other types if specified.
@@ -159,12 +157,10 @@ object MethodOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.toObject")
-  @js.native
-  def toObject(message: MethodOptions): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.toObject")
-  @js.native
-  def toObject(message: MethodOptions, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: MethodOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: MethodOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a MethodOptions message.
@@ -172,7 +168,6 @@ object MethodOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.protobuf.MethodOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

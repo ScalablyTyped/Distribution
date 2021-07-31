@@ -2,49 +2,47 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information related to the reminder alert.
   */
-@js.native
 trait ASPxClientReminderAlertNotification extends StObject {
   
   /**
     * Gets the appointment associated with the reminder.
     */
-  def GetAppointment(): ASPxClientAppointment = js.native
+  def GetAppointment(): ASPxClientAppointment
   
   /**
     * Gets the triggered reminder.
     */
-  def GetReminder(): ASPxClientReminder = js.native
+  def GetReminder(): ASPxClientReminder
   
   /**
     * Gets the triggered reminder's ID.
     */
-  def GetReminderId(): String = js.native
+  def GetReminderId(): String
   
   /**
     * Gets the appointment associated with the triggered reminder.
     */
-  var appointment: ASPxClientAppointment = js.native
+  var appointment: ASPxClientAppointment
   
   /**
     * Gets or sets whether the reminder is handled and therefore no default processing is required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets or sets whether an alert is invoked for a particular reminder.
     */
-  var ignore: Boolean = js.native
+  var ignore: Boolean
   
   /**
     * Returns the triggered reminder.
     */
-  var reminder: ASPxClientReminder = js.native
+  var reminder: ASPxClientReminder
 }
 object ASPxClientReminderAlertNotification {
   

@@ -2,21 +2,19 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offset extends StObject {
   
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
-  var content: js.Any = js.native
+  var content: js.Any
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var position: String = js.native
+  var position: String
   
-  var style: FillFontFamily = js.native
+  var style: FillFontFamily
 }
 object Offset {
   

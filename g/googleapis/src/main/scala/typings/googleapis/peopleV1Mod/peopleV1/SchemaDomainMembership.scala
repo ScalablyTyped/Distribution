@@ -2,19 +2,17 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Apps Domain membership.
   */
-@js.native
 trait SchemaDomainMembership extends StObject {
   
   /**
     * True if the person is in the viewer&#39;s Google Apps domain.
     */
-  var inViewerDomain: js.UndefOr[Boolean] = js.native
+  var inViewerDomain: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDomainMembership {
   

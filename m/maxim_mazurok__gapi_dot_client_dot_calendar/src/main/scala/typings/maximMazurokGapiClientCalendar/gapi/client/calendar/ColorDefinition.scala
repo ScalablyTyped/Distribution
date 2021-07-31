@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorDefinition extends StObject {
   
   /** The background color associated with this color definition. */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /** The foreground color that can be used to write on top of a background with 'background' color. */
-  var foreground: js.UndefOr[String] = js.native
+  var foreground: js.UndefOr[String] = js.undefined
 }
 object ColorDefinition {
   

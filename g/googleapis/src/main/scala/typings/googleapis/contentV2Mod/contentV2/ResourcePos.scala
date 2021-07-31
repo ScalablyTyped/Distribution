@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Pos")
@@ -31,7 +30,7 @@ class ResourcePos protected () extends StObject {
     */
   def custombatch(): GaxiosPromise[SchemaPosCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaPosCustomBatchResponse]): Unit = js.native
-  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosCustomBatchResponse] = js.native
+  def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourcePosCustombatch): GaxiosPromise[SchemaPosCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourcePosCustombatch, callback: BodyResponseCallback[SchemaPosCustomBatchResponse]): Unit = js.native
   def custombatch(
@@ -63,7 +62,7 @@ class ResourcePos protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePosDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePosDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -90,7 +89,7 @@ class ResourcePos protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPosStore] = js.native
   def get(callback: BodyResponseCallback[SchemaPosStore]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosStore] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosStore] = js.native
   def get(params: ParamsResourcePosGet): GaxiosPromise[SchemaPosStore] = js.native
   def get(params: ParamsResourcePosGet, callback: BodyResponseCallback[SchemaPosStore]): Unit = js.native
   def get(
@@ -122,7 +121,7 @@ class ResourcePos protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPosStore] = js.native
   def insert(callback: BodyResponseCallback[SchemaPosStore]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosStore] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosStore] = js.native
   def insert(params: ParamsResourcePosInsert): GaxiosPromise[SchemaPosStore] = js.native
   def insert(params: ParamsResourcePosInsert, callback: BodyResponseCallback[SchemaPosStore]): Unit = js.native
   def insert(
@@ -154,7 +153,7 @@ class ResourcePos protected () extends StObject {
     */
   def inventory(): GaxiosPromise[SchemaPosInventoryResponse] = js.native
   def inventory(callback: BodyResponseCallback[SchemaPosInventoryResponse]): Unit = js.native
-  def inventory(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosInventoryResponse] = js.native
+  def inventory(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosInventoryResponse] = js.native
   def inventory(params: ParamsResourcePosInventory): GaxiosPromise[SchemaPosInventoryResponse] = js.native
   def inventory(params: ParamsResourcePosInventory, callback: BodyResponseCallback[SchemaPosInventoryResponse]): Unit = js.native
   def inventory(
@@ -184,7 +183,7 @@ class ResourcePos protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPosListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPosListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosListResponse] = js.native
   def list(params: ParamsResourcePosList): GaxiosPromise[SchemaPosListResponse] = js.native
   def list(params: ParamsResourcePosList, callback: BodyResponseCallback[SchemaPosListResponse]): Unit = js.native
   def list(
@@ -216,7 +215,7 @@ class ResourcePos protected () extends StObject {
     */
   def sale(): GaxiosPromise[SchemaPosSaleResponse] = js.native
   def sale(callback: BodyResponseCallback[SchemaPosSaleResponse]): Unit = js.native
-  def sale(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPosSaleResponse] = js.native
+  def sale(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPosSaleResponse] = js.native
   def sale(params: ParamsResourcePosSale): GaxiosPromise[SchemaPosSaleResponse] = js.native
   def sale(params: ParamsResourcePosSale, callback: BodyResponseCallback[SchemaPosSaleResponse]): Unit = js.native
   def sale(

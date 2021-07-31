@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMeta extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait ListMeta extends StObject {
     * another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a list may not be possible if the server configuration has changed or
     * more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response.
     */
-  var continue: js.UndefOr[String] = js.native
+  var continue: js.UndefOr[String] = js.undefined
   
   /**
     * String that identifies the server's internal version of this object that can be used by clients to determine when objects have changed. Value must be treated as opaque by clients
     * and passed unmodified back to the server. Populated by the system. Read-only. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency +optional
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /** SelfLink is a URL representing this object. Populated by the system. Read-only. +optional */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object ListMeta {
   

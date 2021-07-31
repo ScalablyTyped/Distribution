@@ -2,46 +2,44 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimulationJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the simulation job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The names of the data sources.
     */
-  var dataSourceNames: js.UndefOr[DataSourceNames] = js.native
+  var dataSourceNames: js.UndefOr[DataSourceNames] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The name of the simulation job.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * A list of simulation job robot application names.
     */
-  var robotApplicationNames: js.UndefOr[RobotApplicationNames] = js.native
+  var robotApplicationNames: js.UndefOr[RobotApplicationNames] = js.undefined
   
   /**
     * A list of simulation job simulation application names.
     */
-  var simulationApplicationNames: js.UndefOr[SimulationApplicationNames] = js.native
+  var simulationApplicationNames: js.UndefOr[SimulationApplicationNames] = js.undefined
   
   /**
     * The status of the simulation job.
     */
-  var status: js.UndefOr[SimulationJobStatus] = js.native
+  var status: js.UndefOr[SimulationJobStatus] = js.undefined
 }
 object SimulationJobSummary {
   

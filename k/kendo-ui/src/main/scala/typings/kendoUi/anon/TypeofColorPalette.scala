@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ColorPalette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofColorPalette extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ColorPalette = js.native
+  def extend(proto: js.Object): ColorPalette
   
   /* static member */
-  var fn: ColorPalette = js.native
+  var fn: ColorPalette
 }
 object TypeofColorPalette {
   

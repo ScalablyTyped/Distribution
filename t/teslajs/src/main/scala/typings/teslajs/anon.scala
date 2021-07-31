@@ -2,15 +2,13 @@ package typings.teslajs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Response extends StObject {
     
-    var response: Boolean = js.native
+    var response: Boolean
   }
   object Response {
     

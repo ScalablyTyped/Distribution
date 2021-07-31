@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVirtualRouterOutput extends StObject {
   
   /**
     * The virtual router that was deleted.
     */
-  var virtualRouter: VirtualRouterData = js.native
+  var virtualRouter: VirtualRouterData
 }
 object DeleteVirtualRouterOutput {
   

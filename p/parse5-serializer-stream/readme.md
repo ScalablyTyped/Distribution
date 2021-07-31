@@ -12,7 +12,7 @@ Streaming HTML serializer.
 | Keywords           | parse5, parser, stream, streaming, serializer, serialiser |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 820 |
+| # downloads        | 1508 |
 | # stars            | 0 |
 
 ## Links

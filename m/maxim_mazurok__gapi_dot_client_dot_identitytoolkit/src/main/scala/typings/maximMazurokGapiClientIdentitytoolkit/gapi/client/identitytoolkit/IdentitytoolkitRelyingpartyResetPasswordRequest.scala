@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartyResetPasswordRequest extends StObject {
   
   /** The email address of the user. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** The new password inputted by the user. */
-  var newPassword: js.UndefOr[String] = js.native
+  var newPassword: js.UndefOr[String] = js.undefined
   
   /** The old password inputted by the user. */
-  var oldPassword: js.UndefOr[String] = js.native
+  var oldPassword: js.UndefOr[String] = js.undefined
   
   /** The confirmation code. */
-  var oobCode: js.UndefOr[String] = js.native
+  var oobCode: js.UndefOr[String] = js.undefined
 }
 object IdentitytoolkitRelyingpartyResetPasswordRequest {
   

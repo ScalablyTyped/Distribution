@@ -2,31 +2,29 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var address1: String = js.native
+  var address1: String
   
-  var address2: String = js.native
+  var address2: String
   
-  var city: String = js.native
+  var city: String
   
-  var company: String = js.native
+  var company: String
   
-  var country: String = js.native
+  var country: String
   
-  var firstName: String = js.native
+  var firstName: String
   
-  var lastName: String = js.native
+  var lastName: String
   
-  var phone: String = js.native
+  var phone: String
   
-  var province: String = js.native
+  var province: String
   
-  var zip: String = js.native
+  var zip: String
 }
 object Address {
   

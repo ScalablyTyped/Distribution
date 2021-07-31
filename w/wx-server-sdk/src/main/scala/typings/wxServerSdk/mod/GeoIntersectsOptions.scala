@@ -2,13 +2,11 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoIntersectsOptions extends StObject {
   
-  var geometry: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon = js.native
+  var geometry: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon
 }
 object GeoIntersectsOptions {
   

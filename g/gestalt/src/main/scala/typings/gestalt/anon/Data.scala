@@ -2,17 +2,15 @@ package typings.gestalt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var isMeasuring: js.UndefOr[Boolean] = js.native
+  var isMeasuring: js.UndefOr[Boolean] = js.undefined
   
-  var itemIdx: js.UndefOr[Double] = js.native
+  var itemIdx: js.UndefOr[Double] = js.undefined
 }
 object Data {
   
@@ -23,7 +21,7 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

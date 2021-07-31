@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSourceMappingDestinationConfig extends StObject {
   
   /**
     * The destination configuration for failed invocations. Detailed below.
     */
-  var onFailure: js.UndefOr[EventSourceMappingDestinationConfigOnFailure] = js.native
+  var onFailure: js.UndefOr[EventSourceMappingDestinationConfigOnFailure] = js.undefined
 }
 object EventSourceMappingDestinationConfig {
   

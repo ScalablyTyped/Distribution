@@ -3,29 +3,29 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched if an invitation to chat room was declined by the invitee
   */
-@js.native
-trait ChatRoomInviteDeclined extends VoxImplantIMEvent {
+trait ChatRoomInviteDeclined
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * User id (invitee)
     */
-  var invitee: String = js.native
+  var invitee: String
   
   /**
     * A reason of the invitation
     */
-  var reason: String = js.native
+  var reason: String
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomInviteDeclined {
   

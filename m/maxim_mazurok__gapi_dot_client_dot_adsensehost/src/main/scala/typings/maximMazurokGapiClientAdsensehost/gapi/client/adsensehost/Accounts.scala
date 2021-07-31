@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accounts extends StObject {
   
   /** ETag of this response for caching purposes. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The accounts returned in this list response. */
-  var items: js.UndefOr[js.Array[Account]] = js.native
+  var items: js.UndefOr[js.Array[Account]] = js.undefined
   
   /** Kind of list this is, in this case adsensehost#accounts. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Accounts {
   

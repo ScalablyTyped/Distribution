@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBrokerStorageRequest extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UpdateBrokerStorageRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The version of cluster to update from. A successful operation will then generate a new version.
     
     */
-  var CurrentVersion: string = js.native
+  var CurrentVersion: string
   
   /**
     * 
     Describes the target volume size and the ID of the broker to apply the update to.
     
     */
-  var TargetBrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo = js.native
+  var TargetBrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo
 }
 object UpdateBrokerStorageRequest {
   

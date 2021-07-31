@@ -5,25 +5,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.linguiCore.i18nMod.MessageDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
   
-  @js.native
-  trait PluralForms extends /* exact */ NumberDictionary[String | MessageDescriptor] {
+  trait PluralForms
+    extends StObject
+       with /* exact */ NumberDictionary[String | MessageDescriptor] {
     
-    var few: js.UndefOr[String | MessageDescriptor] = js.native
+    var few: js.UndefOr[String | MessageDescriptor] = js.undefined
     
-    var many: js.UndefOr[String | MessageDescriptor] = js.native
+    var many: js.UndefOr[String | MessageDescriptor] = js.undefined
     
-    var one: js.UndefOr[String | MessageDescriptor] = js.native
+    var one: js.UndefOr[String | MessageDescriptor] = js.undefined
     
-    var other: String | MessageDescriptor = js.native
+    var other: String | MessageDescriptor
     
-    var two: js.UndefOr[String | MessageDescriptor] = js.native
+    var two: js.UndefOr[String | MessageDescriptor] = js.undefined
     
-    var zero: js.UndefOr[String | MessageDescriptor] = js.native
+    var zero: js.UndefOr[String | MessageDescriptor] = js.undefined
   }
   object PluralForms {
     
@@ -71,12 +71,13 @@ object selectMod {
     }
   }
   
-  @js.native
-  trait PluralProps extends PluralForms {
+  trait PluralProps
+    extends StObject
+       with PluralForms {
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object PluralProps {
     
@@ -100,12 +101,13 @@ object selectMod {
     }
   }
   
-  @js.native
-  trait SelectProps extends /* selectForm */ StringDictionary[String | MessageDescriptor] {
+  trait SelectProps
+    extends StObject
+       with /* selectForm */ StringDictionary[String | MessageDescriptor] {
     
-    var other: String | MessageDescriptor = js.native
+    var other: String | MessageDescriptor
     
-    var value: String = js.native
+    var value: String
   }
   object SelectProps {
     

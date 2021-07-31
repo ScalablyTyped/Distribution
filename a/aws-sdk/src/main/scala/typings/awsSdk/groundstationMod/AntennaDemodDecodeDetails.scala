@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AntennaDemodDecodeDetails extends StObject {
   
   /**
     * Name of an antenna demod decode output node used in a contact.
     */
-  var outputNode: js.UndefOr[String] = js.native
+  var outputNode: js.UndefOr[String] = js.undefined
 }
 object AntennaDemodDecodeDetails {
   

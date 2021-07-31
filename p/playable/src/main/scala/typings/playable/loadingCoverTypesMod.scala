@@ -3,23 +3,21 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadingCoverTypesMod {
   
-  @js.native
   trait ILoadingCover extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setLoadingCover(src: String): Unit = js.native
+    def setLoadingCover(src: String): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ILoadingCover {
     
@@ -55,14 +53,13 @@ object loadingCoverTypesMod {
     }
   }
   
-  @js.native
   trait ILoadingCoverViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var loadingCover: String = js.native
+    var loadingCover: String
     
-    var loadingCoverImage: String = js.native
+    var loadingCoverImage: String
   }
   object ILoadingCoverViewStyles {
     

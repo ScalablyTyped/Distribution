@@ -2,21 +2,19 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceCtlName extends StObject {
   
-  val SourceCtlName: String = js.native
+  val SourceCtlName: String
   
-  val SourceFieldList: Double = js.native
+  val SourceFieldList: Double
   
-  val SourceRow: Double = js.native
+  val SourceRow: Double
   
-  val X: Double = js.native
+  val X: Double
   
-  val Y: Double = js.native
+  val Y: Double
 }
 object SourceCtlName {
   

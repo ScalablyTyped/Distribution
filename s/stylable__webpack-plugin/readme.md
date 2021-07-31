@@ -4,15 +4,15 @@
 Typings are for version 3.6.2
 
 ## Library description:
-Webpack (4.x) plugin for Stylable modules
+Webpack (5.x) plugin for Stylable modules
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @stylable/webpack-plugin |
 | Keywords           | - |
-| # releases         | 103 |
-| # dependents       | 14 |
-| # downloads        | 193110 |
+| # releases         | 106 |
+| # dependents       | 15 |
+| # downloads        | 269489 |
 | # stars            | 0 |
 
 ## Links

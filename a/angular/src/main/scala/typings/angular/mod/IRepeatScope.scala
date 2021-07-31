@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/directive/ngRepeat
   */
 @js.native
-trait IRepeatScope extends IRootScopeService {
+trait IRepeatScope
+  extends StObject
+     with IRootScopeService {
   
   /**
     * true if the iterator position $index is even (otherwise false).

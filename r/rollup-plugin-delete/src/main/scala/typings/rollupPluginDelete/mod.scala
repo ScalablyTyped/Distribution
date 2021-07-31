@@ -3,45 +3,46 @@ package typings.rollupPluginDelete
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-delete", JSImport.Default)
+  @JSImport("rollup-plugin-delete", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-delete", JSImport.Default)
-  @js.native
-  def default(options: Options): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait Options
-    extends typings.del.mod.Options {
+    extends StObject
+       with typings.del.mod.Options {
     
     /**
       * Rollup hook the plugin should use.
       * @default 'buildStart'
       */
-    val hook: js.UndefOr[String] = js.native
+    val hook: js.UndefOr[String] = js.undefined
     
     /**
       * Delete items once. Useful in watch mode.
       * @default false
       */
-    val runOnce: js.UndefOr[Boolean] = js.native
+    val runOnce: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Patterns of files and folders to be deleted.
       * @default []
       */
-    val targets: js.UndefOr[String | js.Array[String]] = js.native
+    val targets: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Outputs removed files and folders to console.
       * @default false
       */
-    val verbose: js.UndefOr[Boolean] = js.native
+    val verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

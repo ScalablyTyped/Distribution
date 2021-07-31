@@ -2,41 +2,39 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detected page from OCR.
   */
-@js.native
 trait SchemaPage extends StObject {
   
   /**
     * List of blocks of text, images etc on this page.
     */
-  var blocks: js.UndefOr[js.Array[SchemaBlock]] = js.native
+  var blocks: js.UndefOr[js.Array[SchemaBlock]] = js.undefined
   
   /**
     * Confidence of the OCR results on the page. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Page height. For PDFs the unit is points. For images (including TIFFs)
     * the unit is pixels.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Additional information detected on the page.
     */
-  var property: js.UndefOr[SchemaTextProperty] = js.native
+  var property: js.UndefOr[SchemaTextProperty] = js.undefined
   
   /**
     * Page width. For PDFs the unit is points. For images (including TIFFs) the
     * unit is pixels.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SchemaPage {
   

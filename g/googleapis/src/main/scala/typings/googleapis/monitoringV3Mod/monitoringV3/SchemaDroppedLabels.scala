@@ -3,7 +3,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,13 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * stream, and there may be duplicates. It is up to clients to resolve any
   * ambiguities.
   */
-@js.native
 trait SchemaDroppedLabels extends StObject {
   
   /**
     * Map from label to its value, for all labels dropped in any aggregation.
     */
-  var label: js.UndefOr[StringDictionary[String]] = js.native
+  var label: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaDroppedLabels {
   

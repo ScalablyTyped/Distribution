@@ -2,50 +2,48 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelMessageSummary extends StObject {
   
   /**
     * The content of the message summary.
     */
-  var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.native
+  var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.undefined
   
   /**
     * The time at which the message summary was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
-  var LastEditedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastEditedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the message summary.
     */
-  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.native
+  var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
   
   /**
     * The metadata of the message summary.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * Redacts the content of a message summary.
     */
-  var Redacted: js.UndefOr[NonNullableBoolean] = js.native
+  var Redacted: js.UndefOr[NonNullableBoolean] = js.undefined
   
   /**
     * The sender of the message summary.
     */
-  var Sender: js.UndefOr[Identity] = js.native
+  var Sender: js.UndefOr[Identity] = js.undefined
   
   /**
     * The type of message summary.
     */
-  var Type: js.UndefOr[ChannelMessageType] = js.native
+  var Type: js.UndefOr[ChannelMessageType] = js.undefined
 }
 object ChannelMessageSummary {
   

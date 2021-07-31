@@ -2,26 +2,24 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlinkMemoryInfo extends StObject {
   
   /**
     * Size of all allocated objects in Kilobytes.
     */
-  var allocated: Double = js.native
+  var allocated: Double
   
   /**
     * Size of all marked objects in Kilobytes.
     */
-  var marked: Double = js.native
+  var marked: Double
   
   /**
     * Total allocated space in Kilobytes.
     */
-  var total: Double = js.native
+  var total: Double
 }
 object BlinkMemoryInfo {
   

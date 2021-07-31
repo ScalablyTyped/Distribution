@@ -2,15 +2,13 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageRange extends StObject {
   
-  var br: Anchor = js.native
+  var br: Anchor
   
-  var tl: Anchor = js.native
+  var tl: Anchor
 }
 object ImageRange {
   

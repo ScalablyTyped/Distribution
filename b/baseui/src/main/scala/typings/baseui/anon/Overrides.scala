@@ -3,15 +3,13 @@ package typings.baseui.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overrides extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var overrides: js.UndefOr[LabelInteractable] = js.native
+  var overrides: js.UndefOr[LabelInteractable] = js.undefined
 }
 object Overrides {
   

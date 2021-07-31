@@ -4,27 +4,25 @@ import typings.jestTestResult.jestTestResultStrings.failed
 import typings.jestTestResult.jestTestResultStrings.passed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattedTestResult extends StObject {
   
-  var assertionResults: js.Array[FormattedAssertionResult] = js.native
+  var assertionResults: js.Array[FormattedAssertionResult]
   
-  var coverage: js.Any = js.native
+  var coverage: js.Any
   
-  var endTime: Double = js.native
+  var endTime: Double
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var startTime: Double = js.native
+  var startTime: Double
   
-  var status: failed | passed = js.native
+  var status: failed | passed
   
-  var summary: String = js.native
+  var summary: String
 }
 object FormattedTestResult {
   

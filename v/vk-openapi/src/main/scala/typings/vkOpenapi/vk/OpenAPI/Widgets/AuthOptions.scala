@@ -2,17 +2,15 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthOptions extends StObject {
   
-  var authUrl: js.UndefOr[String] = js.native
+  var authUrl: js.UndefOr[String] = js.undefined
   
-  var onAuth: js.UndefOr[js.Function1[/* user */ AuthUserData, Unit]] = js.native
+  var onAuth: js.UndefOr[js.Function1[/* user */ AuthUserData, Unit]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AuthOptions {
   

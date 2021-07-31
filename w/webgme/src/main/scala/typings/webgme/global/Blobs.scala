@@ -3,7 +3,6 @@ package typings.webgme.global
 import typings.webgme.Blobs.BlobClientParamters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Blobs {
@@ -11,7 +10,8 @@ object Blobs {
   @JSGlobal("Blobs.BlobClient")
   @js.native
   class BlobClient protected ()
-    extends typings.webgme.Blobs.BlobClient {
+    extends StObject
+       with typings.webgme.Blobs.BlobClient {
     /**
       * @param paramters
       */

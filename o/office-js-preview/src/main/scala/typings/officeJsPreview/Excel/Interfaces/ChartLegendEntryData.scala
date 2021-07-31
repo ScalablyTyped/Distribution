@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartLegendEntry.toJSON()`. */
-@js.native
 trait ChartLegendEntryData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ChartLegendEntryData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartLegendEntryData {
   

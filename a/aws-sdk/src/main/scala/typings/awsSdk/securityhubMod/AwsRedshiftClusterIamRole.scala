@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRedshiftClusterIamRole extends StObject {
   
   /**
     * The status of the IAM role's association with the cluster. Valid values: in-sync | adding | removing 
     */
-  var ApplyStatus: js.UndefOr[NonEmptyString] = js.native
+  var ApplyStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the IAM role.
     */
-  var IamRoleArn: js.UndefOr[NonEmptyString] = js.native
+  var IamRoleArn: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRedshiftClusterIamRole {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfig extends StObject {
   
   /**
     * The ID of the customer master key (CMK) used for encryption, if applicable.
     */
-  var KeyId: js.UndefOr[String] = js.native
+  var KeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The encryption status. While the status is UPDATING, X-Ray may encrypt data with a combination of the new and old settings.
     */
-  var Status: js.UndefOr[EncryptionStatus] = js.native
+  var Status: js.UndefOr[EncryptionStatus] = js.undefined
   
   /**
     * The type of encryption. Set to KMS for encryption with CMKs. Set to NONE for default encryption.
     */
-  var Type: js.UndefOr[EncryptionType] = js.native
+  var Type: js.UndefOr[EncryptionType] = js.undefined
 }
 object EncryptionConfig {
   

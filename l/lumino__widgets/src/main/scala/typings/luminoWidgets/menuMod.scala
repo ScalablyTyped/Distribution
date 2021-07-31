@@ -20,7 +20,6 @@ import typings.std.Event
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -361,7 +360,9 @@ object menuMod {
     /**
       * Construct a new renderer.
       */
-    class Renderer () extends IRenderer {
+    class Renderer ()
+      extends StObject
+         with IRenderer {
       
       /**
         * Create the class name for the menu item icon.
@@ -418,6 +419,16 @@ object menuMod {
       def renderIcon(data: IRenderData): VirtualElement = js.native
       
       /**
+        * Render the virtual element for a menu item.
+        *
+        * @param data - The data to use for rendering the item.
+        *
+        * @returns A virtual element representing the item.
+        */
+      /* CompleteClass */
+      override def renderItem(data: IRenderData): VirtualElement = js.native
+      
+      /**
         * Render the label element for a menu item.
         *
         * @param data - The data to use for rendering the label.
@@ -458,88 +469,87 @@ object menuMod {
       * #### Notes
       * Item objects are created automatically by a menu.
       */
-    @js.native
     trait IItem extends StObject {
       
       /**
         * The arguments for the command.
         */
-      val args: ReadonlyJSONObject = js.native
+      val args: ReadonlyJSONObject
       
       /**
         * The display caption for the menu item.
         */
-      val caption: String = js.native
+      val caption: String
       
       /**
         * The extra class name for the menu item.
         */
-      val className: String = js.native
+      val className: String
       
       /**
         * The command to execute when the item is triggered.
         */
-      val command: String = js.native
+      val command: String
       
       /**
         * The dataset for the menu item.
         */
-      val dataset: Dataset = js.native
+      val dataset: Dataset
       
       /**
         * The icon renderer for the menu item.
         */
-      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.native
+      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.undefined
       
       /**
         * The icon class for the menu item.
         */
-      val iconClass: String = js.native
+      val iconClass: String
       
       /**
         * The icon label for the menu item.
         */
-      val iconLabel: String = js.native
+      val iconLabel: String
       
       /**
         * Whether the menu item is enabled.
         */
-      val isEnabled: Boolean = js.native
+      val isEnabled: Boolean
       
       /**
         * Whether the menu item is toggled.
         */
-      val isToggled: Boolean = js.native
+      val isToggled: Boolean
       
       /**
         * Whether the menu item is visible.
         */
-      val isVisible: Boolean = js.native
+      val isVisible: Boolean
       
       /**
         * The key binding for the menu item.
         */
-      val keyBinding: IKeyBinding | Null = js.native
+      val keyBinding: IKeyBinding | Null
       
       /**
         * The display label for the menu item.
         */
-      val label: String = js.native
+      val label: String
       
       /**
         * The mnemonic index for the menu item.
         */
-      val mnemonic: Double = js.native
+      val mnemonic: Double
       
       /**
         * The submenu for a `'submenu'` type item.
         */
-      val submenu: Menu | Null = js.native
+      val submenu: Menu | Null
       
       /**
         * The type of the menu item.
         */
-      val `type`: ItemType = js.native
+      val `type`: ItemType
     }
     object IItem {
       
@@ -559,7 +569,7 @@ object menuMod {
         mnemonic: Double,
         `type`: ItemType
       ): IItem = {
-        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mnemonic = mnemonic.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mnemonic = mnemonic.asInstanceOf[js.Any], keyBinding = null, submenu = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IItem]
       }
@@ -629,7 +639,6 @@ object menuMod {
     /**
       * An options object for creating a menu item.
       */
-    @js.native
     trait IItemOptions extends StObject {
       
       /**
@@ -637,28 +646,28 @@ object menuMod {
         *
         * The default value is an empty object.
         */
-      var args: js.UndefOr[ReadonlyJSONObject] = js.native
+      var args: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
       /**
         * The command to execute when the item is triggered.
         *
         * The default value is an empty string.
         */
-      var command: js.UndefOr[String] = js.native
+      var command: js.UndefOr[String] = js.undefined
       
       /**
         * The submenu for a `'submenu'` type item.
         *
         * The default value is `null`.
         */
-      var submenu: js.UndefOr[Menu | Null] = js.native
+      var submenu: js.UndefOr[Menu | Null] = js.undefined
       
       /**
         * The type of the menu item.
         *
         * The default value is `'command'`.
         */
-      var `type`: js.UndefOr[ItemType] = js.native
+      var `type`: js.UndefOr[ItemType] = js.undefined
     }
     object IItemOptions {
       
@@ -703,7 +712,6 @@ object menuMod {
     /**
       * An options object for the `open` method on a menu.
       */
-    @js.native
     trait IOpenOptions extends StObject {
       
       /**
@@ -714,7 +722,7 @@ object menuMod {
         *
         * The default is `false`.
         */
-      var forceX: js.UndefOr[Boolean] = js.native
+      var forceX: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to force the Y position of the menu.
@@ -724,7 +732,7 @@ object menuMod {
         *
         * The default is `false`.
         */
-      var forceY: js.UndefOr[Boolean] = js.native
+      var forceY: js.UndefOr[Boolean] = js.undefined
     }
     object IOpenOptions {
       
@@ -754,20 +762,19 @@ object menuMod {
     /**
       * An options object for creating a menu.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The command registry for use with the menu.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
       
       /**
         * A custom renderer for use with the menu.
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       
@@ -794,23 +801,22 @@ object menuMod {
     /**
       * An object which holds the data to render a menu item.
       */
-    @js.native
     trait IRenderData extends StObject {
       
       /**
         * Whether the item is the active item.
         */
-      val active: Boolean = js.native
+      val active: Boolean
       
       /**
         * Whether the item should be collapsed.
         */
-      val collapsed: Boolean = js.native
+      val collapsed: Boolean
       
       /**
         * The item to be rendered.
         */
-      val item: IItem = js.native
+      val item: IItem
     }
     object IRenderData {
       
@@ -837,7 +843,6 @@ object menuMod {
     /**
       * A renderer for use with a menu.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -847,7 +852,7 @@ object menuMod {
         *
         * @returns A virtual element representing the item.
         */
-      def renderItem(data: IRenderData): VirtualElement = js.native
+      def renderItem(data: IRenderData): VirtualElement
     }
     object IRenderer {
       

@@ -2,25 +2,23 @@ package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to `ListServicePerimetersRequest`.
   */
-@js.native
 trait SchemaListServicePerimetersResponse extends StObject {
   
   /**
     * The pagination token to retrieve the next page of results. If the value
     * is empty, no further results remain.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of the Service Perimeter instances.
     */
-  var servicePerimeters: js.UndefOr[js.Array[SchemaServicePerimeter]] = js.native
+  var servicePerimeters: js.UndefOr[js.Array[SchemaServicePerimeter]] = js.undefined
 }
 object SchemaListServicePerimetersResponse {
   

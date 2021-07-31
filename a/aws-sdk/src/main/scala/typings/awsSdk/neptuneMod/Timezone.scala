@@ -2,16 +2,14 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timezone extends StObject {
   
   /**
     * The name of the time zone.
     */
-  var TimezoneName: js.UndefOr[String] = js.native
+  var TimezoneName: js.UndefOr[String] = js.undefined
 }
 object Timezone {
   

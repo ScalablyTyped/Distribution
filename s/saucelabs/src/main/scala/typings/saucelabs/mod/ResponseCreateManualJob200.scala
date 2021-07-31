@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Browser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseCreateManualJob200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var job_id: js.UndefOr[Unit] = js.native
+  var job_id: js.UndefOr[Unit] = js.undefined
   
-  var metadata: Browser = js.native
+  var metadata: Browser
   
-  var task_id: String = js.native
+  var task_id: String
 }
 object ResponseCreateManualJob200 {
   

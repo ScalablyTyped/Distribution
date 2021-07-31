@@ -10,9 +10,9 @@ Easily write and read user settings in Electron apps
 | ------------------ | :-------------: |
 | Full name          | electron-json-storage |
 | Keywords           | electron, json, storage, user, app, data |
-| # releases         | 8 |
-| # dependents       | 38 |
-| # downloads        | 627742 |
+| # releases         | 4 |
+| # dependents       | 41 |
+| # downloads        | 712770 |
 | # stars            | 17 |
 
 ## Links

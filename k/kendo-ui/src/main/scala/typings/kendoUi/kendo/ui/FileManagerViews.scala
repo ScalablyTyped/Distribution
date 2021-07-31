@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerViews extends StObject {
   
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
-  var list: js.UndefOr[js.Any] = js.native
+  var list: js.UndefOr[js.Any] = js.undefined
   
-  var tree: js.UndefOr[js.Any] = js.native
+  var tree: js.UndefOr[js.Any] = js.undefined
 }
 object FileManagerViews {
   

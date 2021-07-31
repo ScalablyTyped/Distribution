@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("langmap", JSImport.Namespace)
   @js.native
-  val ^ : LanguageMappingList = js.native
+  val ^ : js.Object & LanguageMappingList = js.native
   
-  @js.native
   trait Language extends StObject {
     
-    var englishName: String = js.native
+    var englishName: String
     
-    var nativeName: String = js.native
+    var nativeName: String
   }
   object Language {
     
@@ -41,8 +39,8 @@ object mod extends Shortcut {
   
   type LanguageMappingList = StringDictionary[Language]
   
-  type _To = LanguageMappingList
+  type _To = js.Object & LanguageMappingList
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: LanguageMappingList = ^
+  override def _to: js.Object & LanguageMappingList = ^
 }

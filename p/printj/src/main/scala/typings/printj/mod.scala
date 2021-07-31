@@ -2,20 +2,21 @@ package typings.printj
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("printj", "sprintf")
+  @JSImport("printj", JSImport.Namespace)
   @js.native
-  def sprintf(fmt: String, args: js.Any*): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sprintf(fmt: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("printj", "version")
   @js.native
   val version: String = js.native
   
-  @JSImport("printj", "vsprintf")
-  @js.native
-  def vsprintf(fmt: String, args: js.Array[_]): String = js.native
+  @scala.inline
+  def vsprintf(fmt: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

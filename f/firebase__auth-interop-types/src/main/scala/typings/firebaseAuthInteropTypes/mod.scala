@@ -3,7 +3,6 @@ package typings.firebaseAuthInteropTypes
 import typings.firebaseAuthInteropTypes.firebaseAuthInteropTypesStrings.`auth-internal`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,9 @@ object mod {
   
   type FirebaseAuthInternalName = `auth-internal`
   
-  @js.native
   trait FirebaseAuthTokenData extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
   }
   object FirebaseAuthTokenData {
     
@@ -46,10 +44,9 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var `auth-internal`: FirebaseAuthInternal = js.native
+      var `auth-internal`: FirebaseAuthInternal
     }
     object NameServiceMapping {
       

@@ -5,10 +5,13 @@ import typings.ol.eventsMod.EventsKey
 import typings.ol.olStrings.propertychange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectMod {
+  
+  @JSImport("ol/Object", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/Object", JSImport.Default)
   @js.native
@@ -34,9 +37,8 @@ object objectMod {
     var oldValue: js.Any = js.native
   }
   
-  @JSImport("ol/Object", "getChangeEventType")
-  @js.native
-  def getChangeEventType(key: String): String = js.native
+  @scala.inline
+  def getChangeEventType(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeEventType")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait BaseObject

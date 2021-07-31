@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationLink extends StObject {
   
   /**
@@ -14,22 +12,22 @@ trait LocationLink extends StObject {
     * Used as the underlined span for mouse definition hover. Defaults to the word range at
     * the definition position.
     */
-  var originSelectionRange: js.UndefOr[Range] = js.native
+  var originSelectionRange: js.UndefOr[Range] = js.undefined
   
   /**
     * The full target range of this link.
     */
-  var targetRange: Range = js.native
+  var targetRange: Range
   
   /**
     * The span of this link.
     */
-  var targetSelectionRange: js.UndefOr[Range] = js.native
+  var targetSelectionRange: js.UndefOr[Range] = js.undefined
   
   /**
     * The target resource identifier of this link.
     */
-  var targetUri: Uri = js.native
+  var targetUri: Uri
 }
 object LocationLink {
   

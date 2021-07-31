@@ -2,46 +2,44 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitHubCodeDestination extends StObject {
   
   /**
     * Description for the GitHub repository to be created in AWS CodeStar. This description displays in GitHub after the repository is created.
     */
-  var description: js.UndefOr[RepositoryDescription] = js.native
+  var description: js.UndefOr[RepositoryDescription] = js.undefined
   
   /**
     * Whether to enable issues for the GitHub repository.
     */
-  var issuesEnabled: RepositoryEnableIssues = js.native
+  var issuesEnabled: RepositoryEnableIssues
   
   /**
     * Name of the GitHub repository to be created in AWS CodeStar.
     */
-  var name: RepositoryName = js.native
+  var name: RepositoryName
   
   /**
     * The GitHub username for the owner of the GitHub repository to be created in AWS CodeStar. If this repository should be owned by a GitHub organization, provide its name.
     */
-  var owner: RepositoryOwner = js.native
+  var owner: RepositoryOwner
   
   /**
     * Whether the GitHub repository is to be a private repository.
     */
-  var privateRepository: RepositoryIsPrivate = js.native
+  var privateRepository: RepositoryIsPrivate
   
   /**
     * The GitHub user's personal access token for the GitHub repository.
     */
-  var token: GitHubPersonalToken = js.native
+  var token: GitHubPersonalToken
   
   /**
     * The type of GitHub repository to be created in AWS CodeStar. Valid values are User or Organization.
     */
-  var `type`: RepositoryType = js.native
+  var `type`: RepositoryType
 }
 object GitHubCodeDestination {
   

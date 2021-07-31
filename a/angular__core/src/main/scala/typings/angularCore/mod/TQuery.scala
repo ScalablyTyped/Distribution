@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to another and can be determined on the very first template pass. Most notably TQuery holds all
   * the matches for a given view.
   */
-@js.native
 trait TQuery extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait TQuery extends StObject {
     * performance reasons: we can notice that queries not crossing any <ng-template> elements will
     * have matches from a given view only (and adapt processing accordingly).
     */
-  var crossesNgTemplate: Boolean = js.native
+  var crossesNgTemplate: Boolean
   
   /**
     * A method called when processing the elementEnd instruction - this is mostly useful to determine
     * if a given content query should match any nodes past this point.
     * @param tNode
     */
-  def elementEnd(tNode: TNode): Unit = js.native
+  def elementEnd(tNode: TNode): Unit
   
   /**
     * A method call when a given query is crossing an element (or element container). This is where a
@@ -33,7 +31,7 @@ trait TQuery extends StObject {
     * @param tView
     * @param tNode
     */
-  def elementStart(tView: TView, tNode: TNode): Unit = js.native
+  def elementStart(tView: TView, tNode: TNode): Unit
   
   /**
     * A query-related method called when an embedded TView is created based on the content of a
@@ -42,14 +40,14 @@ trait TQuery extends StObject {
     * @param tNode
     * @param childQueryIndex
     */
-  def embeddedTView(tNode: TNode, childQueryIndex: Double): TQuery | Null = js.native
+  def embeddedTView(tNode: TNode, childQueryIndex: Double): TQuery | Null
   
   /**
     * Index of a query in a declaration view in case of queries propagated to en embedded view, -1
     * for queries declared in a given view. We are storing this index so we can find a parent query
     * to clone for an embedded view (when an embedded view is created).
     */
-  var indexInDeclarationView: Double = js.native
+  var indexInDeclarationView: Double
   
   /**
     * Matches collected on the first template pass. Each match is a pair of:
@@ -68,12 +66,12 @@ trait TQuery extends StObject {
     * ng-template and ElementRef for other elements);
     * - a positive number - index of an injectable to be read from the element injector.
     */
-  var matches: js.Array[Double] | Null = js.native
+  var matches: js.Array[Double] | Null
   
   /**
     * Query metadata extracted from query annotations.
     */
-  var metadata: TQueryMetadata = js.native
+  var metadata: TQueryMetadata
   
   /**
     * A method called when processing the template instruction. This is where a
@@ -81,7 +79,7 @@ trait TQuery extends StObject {
     * @param tView
     * @param tNode
     */
-  def template(tView: TView, tNode: TNode): Unit = js.native
+  def template(tView: TView, tNode: TNode): Unit
 }
 object TQuery {
   
@@ -95,7 +93,7 @@ object TQuery {
     metadata: TQueryMetadata,
     template: (TView, TNode) => Unit
   ): TQuery = {
-    val __obj = js.Dynamic.literal(crossesNgTemplate = crossesNgTemplate.asInstanceOf[js.Any], elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction2(embeddedTView), indexInDeclarationView = indexInDeclarationView.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], template = js.Any.fromFunction2(template))
+    val __obj = js.Dynamic.literal(crossesNgTemplate = crossesNgTemplate.asInstanceOf[js.Any], elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction2(embeddedTView), indexInDeclarationView = indexInDeclarationView.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), matches = null)
     __obj.asInstanceOf[TQuery]
   }
   

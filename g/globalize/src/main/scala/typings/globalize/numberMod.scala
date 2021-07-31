@@ -9,19 +9,20 @@ import typings.globalize.globalizeStrings.decimal
 import typings.globalize.globalizeStrings.percent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/number", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/number", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -36,17 +37,17 @@ object numberMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `numberMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
     
-    @js.native
     trait NumberFormatterOptions
-      extends CommonNumberFormatterOptions
+      extends StObject
+         with CommonNumberFormatterOptions
          with NumberParserOptions
     object NumberFormatterOptions {
       
@@ -57,13 +58,12 @@ object numberMod extends Shortcut {
       }
     }
     
-    @js.native
     trait NumberParserOptions extends StObject {
       
       /**
         * decimal (default), or percent.
         */
-      var style: js.UndefOr[decimal | percent] = js.native
+      var style: js.UndefOr[decimal | percent] = js.undefined
     }
     object NumberParserOptions {
       

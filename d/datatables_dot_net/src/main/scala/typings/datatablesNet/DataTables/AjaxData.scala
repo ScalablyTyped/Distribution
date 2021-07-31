@@ -2,21 +2,19 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxData extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var draw: js.UndefOr[Double] = js.native
+  var draw: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var recordsFiltered: js.UndefOr[Double] = js.native
+  var recordsFiltered: js.UndefOr[Double] = js.undefined
   
-  var recordsTotal: js.UndefOr[Double] = js.native
+  var recordsTotal: js.UndefOr[Double] = js.undefined
 }
 object AjaxData {
   

@@ -29,7 +29,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,20 +37,21 @@ object mod extends Shortcut {
   @JSImport("gun", JSImport.Namespace)
   @js.native
   class ^[DataType] ()
-    extends ChainReference[DataType, js.Any, pre_root] {
+    extends StObject
+       with ChainReference[DataType, js.Any, pre_root] {
     def this(options: String) = this()
     def this(options: js.Array[String]) = this()
     def this(options: ConstructorOptions) = this()
   }
   @JSImport("gun", JSImport.Namespace)
   @js.native
-  val ^ : Constructor = js.native
+  val ^ : js.Object & Constructor = js.native
   
   object Gun {
     
     type AccessObject[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias gun.gun.Gun.AccessObject<T[key]> * / object}
-      */ typings.gun.gunStrings.AccessObject with TopLevel[T])
+      */ typings.gun.gunStrings.AccessObject & TopLevel[T])
     
     type AckCallback = js.Function1[/* ack */ Err | Ok, Unit]
     
@@ -75,10 +75,10 @@ object mod extends Shortcut {
         * @param cb Callback that is to be called upon authentication of the user.
         * @param opt Option Object containing options for authentiaction. (In gun options are added at end of syntax. opt is rarely used, hence is added at the end.)
         */
-      def auth(alias: String, pass: String): ChainReference[_, _, `false`] = js.native
-      def auth(alias: String, pass: String, cb: js.UndefOr[scala.Nothing], opt: js.Object): ChainReference[_, _, `false`] = js.native
-      def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit]): ChainReference[_, _, `false`] = js.native
-      def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit], opt: js.Object): ChainReference[_, _, `false`] = js.native
+      def auth(alias: String, pass: String): ChainReference[js.Any, js.Any, `false`] = js.native
+      def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit]): ChainReference[js.Any, js.Any, `false`] = js.native
+      def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit], opt: js.Object): ChainReference[js.Any, js.Any, `false`] = js.native
+      def auth(alias: String, pass: String, cb: Unit, opt: js.Object): ChainReference[js.Any, js.Any, `false`] = js.native
       
       /**
         * Move up to the parent context on the chain.
@@ -88,8 +88,8 @@ object mod extends Shortcut {
         * `-1` or `Infinity` will take you to the root.
         * @returns Impossible to determinate final type. You must cast it by yourself.
         */
-      def back(): ChainReference[_, _, `false`] = js.native
-      def back(amount: Double): ChainReference[_, _, `false`] = js.native
+      def back(): ChainReference[js.Any, js.Any, `false`] = js.native
+      def back(amount: Double): ChainReference[js.Any, js.Any, `false`] = js.native
       
       /**
         * bye lets you change data after that browser peer disconnects.
@@ -110,10 +110,10 @@ object mod extends Shortcut {
         * @param cb Callback that is to be called upon creation of the user.
         * @param opt Option Object containing options for creation. (In gun options are added at end of syntax. opt is rarely used, hence is added at the end.)
         */
-      def create(alias: String, pass: String): ChainReference[_, _, `false`] = js.native
-      def create(alias: String, pass: String, cb: js.UndefOr[scala.Nothing], opt: js.Object): ChainReference[_, _, `false`] = js.native
-      def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit]): ChainReference[_, _, `false`] = js.native
-      def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit], opt: js.Object): ChainReference[_, _, `false`] = js.native
+      def create(alias: String, pass: String): ChainReference[js.Any, js.Any, `false`] = js.native
+      def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit]): ChainReference[js.Any, js.Any, `false`] = js.native
+      def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit], opt: js.Object): ChainReference[js.Any, js.Any, `false`] = js.native
+      def create(alias: String, pass: String, cb: Unit, opt: js.Object): ChainReference[js.Any, js.Any, `false`] = js.native
       
       /**
         * Deletes a user from the current gun instance and propagates the delete to other peers.
@@ -175,10 +175,10 @@ object mod extends Shortcut {
         * @param opt unused in current implementation.
         * @param cb unused in current implementation.
         */
-      def leave(): ChainReference[_, _, `false`] = js.native
-      def leave(opt: js.UndefOr[scala.Nothing], cb: scala.Nothing): ChainReference[_, _, `false`] = js.native
-      def leave(opt: scala.Nothing): ChainReference[_, _, `false`] = js.native
-      def leave(opt: scala.Nothing, cb: scala.Nothing): ChainReference[_, _, `false`] = js.native
+      def leave(): ChainReference[js.Any, js.Any, `false`] = js.native
+      def leave(opt: scala.Nothing): ChainReference[js.Any, js.Any, `false`] = js.native
+      def leave(opt: scala.Nothing, cb: scala.Nothing): ChainReference[js.Any, js.Any, `false`] = js.native
+      def leave(opt: Unit, cb: scala.Nothing): ChainReference[js.Any, js.Any, `false`] = js.native
       
       /**
         * Loads the full object once. It is the same as `open` but with the behavior of `once`.
@@ -264,7 +264,6 @@ object mod extends Shortcut {
         * @returns In the document, it said the return value may change in the future. Don't rely on it.
         */
       def once(): ChainReference[DataType, ReferenceKey, `false`] = js.native
-      def once(callback: js.UndefOr[scala.Nothing], option: Wait): ChainReference[DataType, ReferenceKey, `false`] = js.native
       def once(
         callback: js.Function2[
               /* data */ js.UndefOr[DisallowPrimitives[IsTop, AlwaysDisallowedType[ArrayAsRecord[DataType]]]], 
@@ -280,6 +279,7 @@ object mod extends Shortcut {
             ],
         option: Wait
       ): ChainReference[DataType, ReferenceKey, `false`] = js.native
+      def once(callback: Unit, option: Wait): ChainReference[DataType, ReferenceKey, `false`] = js.native
       
       /**
         * Open behaves very similarly to gun.on, except it gives you the **full depth of a document** on every update.
@@ -322,7 +322,7 @@ object mod extends Shortcut {
         * `<script src="https://cdn.jsdelivr.net/npm/gun/lib/path.js"></script>`!
         */
       var path: js.UndefOr[
-            js.Function1[/* path */ String | js.Array[String], ChainReference[_, _, `false`]]
+            js.Function1[/* path */ String | js.Array[String], ChainReference[js.Any, js.Any, `false`]]
           ] = js.native
       
       /**
@@ -368,16 +368,16 @@ object mod extends Shortcut {
         * @param opt option object If you want to use browser sessionStorage to allow users to stay logged in as long as the session is open, set opt.sessionStorage to true
         * @param cb internally the callback is passed on to the user.auth function to logged the user back in. Refer to user.auth for callback documentation.
         */
-      def recall(): ChainReference[_, _, `false`] = js.native
+      def recall(): ChainReference[js.Any, js.Any, `false`] = js.native
       def recall(
-        opt: js.UndefOr[scala.Nothing],
+        opt: Unit,
         cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb : (ack : gun.anon.Ack | gun.anon.ErrString): void | undefined, opt : {} | undefined): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
-      ): ChainReference[_, _, `false`] = js.native
-      def recall(opt: SessionStorage): ChainReference[_, _, `false`] = js.native
+      ): ChainReference[js.Any, js.Any, `false`] = js.native
+      def recall(opt: SessionStorage): ChainReference[js.Any, js.Any, `false`] = js.native
       def recall(
         opt: SessionStorage,
         cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb : (ack : gun.anon.Ack | gun.anon.ErrString): void | undefined, opt : {} | undefined): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
-      ): ChainReference[_, _, `false`] = js.native
+      ): ChainReference[js.Any, js.Any, `false`] = js.native
       
       /**
         * **.set does not means 'set data', it means a Mathematical Set**
@@ -388,8 +388,8 @@ object mod extends Shortcut {
         *
         * **This means only objects, for now, are supported.**
         */
-      def set(data: AlwaysDisallowedType[ArrayOf[DataType]]): ChainReference[ArrayOf[DataType], _, `false`] = js.native
-      def set(data: AlwaysDisallowedType[ArrayOf[DataType]], callback: AckCallback): ChainReference[ArrayOf[DataType], _, `false`] = js.native
+      def set(data: AlwaysDisallowedType[ArrayOf[DataType]]): ChainReference[ArrayOf[DataType], js.Any, `false`] = js.native
+      def set(data: AlwaysDisallowedType[ArrayOf[DataType]], callback: AckCallback): ChainReference[ArrayOf[DataType], js.Any, `false`] = js.native
       
       /**
         * Returns a promise for you to use.
@@ -421,7 +421,7 @@ object mod extends Shortcut {
               /* alsoReceiveNOldEvents */ js.UndefOr[Double], 
               ChainReference[DataType, ReferenceKey, `false`]
             ]
-          ]) with (js.UndefOr[js.Function1[/* data */ ArrayOf[DataType], Unit]]) = js.native
+          ]) & (js.UndefOr[js.Function1[/* data */ ArrayOf[DataType], Unit]]) = js.native
       
       /**
         * After you save some data in an unordered list, you may need to remove it.
@@ -436,13 +436,14 @@ object mod extends Shortcut {
       /**
         * @param publicKey If you know a users publicKey you can get their user graph and see any unencrypted data they may have stored there.
         */
-      def user(): ChainReference[_, _, `false`] = js.native
-      def user(publicKey: String): ChainReference[_, _, `false`] = js.native
+      def user(): ChainReference[js.Any, js.Any, `false`] = js.native
+      def user(publicKey: String): ChainReference[js.Any, js.Any, `false`] = js.native
     }
     
     @js.native
     trait Constructor
-      extends Instantiable0[ChainReference[js.Object, js.Any, pre_root]]
+      extends StObject
+         with Instantiable0[ChainReference[js.Object, js.Any, pre_root]]
          with Instantiable1[
               (/* options */ js.Array[String]) | (/* options */ ConstructorOptions) | (/* options */ String), 
               ChainReference[js.Object, js.Any, pre_root]
@@ -456,10 +457,10 @@ object mod extends Shortcut {
         *
         * or you can pass in an array of URLs to sync with multiple peers.
         */
-      def apply[DataType](): ChainReference[DataType, _, pre_root] = js.native
-      def apply[DataType](options: String): ChainReference[DataType, _, pre_root] = js.native
-      def apply[DataType](options: js.Array[String]): ChainReference[DataType, _, pre_root] = js.native
-      def apply[DataType](options: ConstructorOptions): ChainReference[DataType, _, pre_root] = js.native
+      def apply[DataType](): ChainReference[DataType, js.Any, pre_root] = js.native
+      def apply[DataType](options: String): ChainReference[DataType, js.Any, pre_root] = js.native
+      def apply[DataType](options: js.Array[String]): ChainReference[DataType, js.Any, pre_root] = js.native
+      def apply[DataType](options: ConstructorOptions): ChainReference[DataType, js.Any, pre_root] = js.native
       
       /** @see https://gun.eco/docs/SEA */
       var SEA: Decrypt = js.native
@@ -473,22 +474,21 @@ object mod extends Shortcut {
       * https://github.com/amark/gun/wiki/Modules
       */
     /* Inlined std.Partial<{  file :string,   web :any,   s3 :{  key :any,   secret :any,   bucket :any},   peers :std.Record<string, {}>,   radisk :boolean,   localStorage :boolean, uuid (): string, [key: string] : any}> */
-    @js.native
     trait ConstructorOptions extends StObject {
       
-      var file: js.UndefOr[String] = js.native
+      var file: js.UndefOr[String] = js.undefined
       
-      var localStorage: js.UndefOr[Boolean] = js.native
+      var localStorage: js.UndefOr[Boolean] = js.undefined
       
-      var peers: js.UndefOr[Record[String, js.Object]] = js.native
+      var peers: js.UndefOr[Record[String, js.Object]] = js.undefined
       
-      var radisk: js.UndefOr[Boolean] = js.native
+      var radisk: js.UndefOr[Boolean] = js.undefined
       
-      var s3: js.UndefOr[Bucket] = js.native
+      var s3: js.UndefOr[Bucket] = js.undefined
       
-      var uuid: js.UndefOr[js.Function0[String]] = js.native
+      var uuid: js.UndefOr[js.Function0[String]] = js.undefined
       
-      var web: js.UndefOr[js.Any] = js.native
+      var web: js.UndefOr[js.Any] = js.undefined
     }
     object ConstructorOptions {
       
@@ -546,16 +546,15 @@ object mod extends Shortcut {
     }
     
     /* Inlined std.Record<'pub' | 'priv' | 'epub' | 'epriv', string> */
-    @js.native
     trait CryptoKeyPair extends StObject {
       
-      var epriv: String = js.native
+      var epriv: String
       
-      var epub: String = js.native
+      var epub: String
       
-      var priv: String = js.native
+      var priv: String
       
-      var pub: String = js.native
+      var pub: String
     }
     object CryptoKeyPair {
       
@@ -587,13 +586,13 @@ object mod extends Shortcut {
     /** These types cannot be stored on Gun's root level */
     type DisallowPrimitives[Open, T] = T
     
-    type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+    type Parameters[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Any
     
     type Saveable[DataType] = Partial[DataType] | String | Double | Boolean | Null | (ChainReference[DataType, js.Any, `false`])
   }
   
-  type _To = Constructor
+  type _To = js.Object & Constructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Constructor = ^
+  override def _to: js.Object & Constructor = ^
 }

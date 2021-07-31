@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableTtl extends StObject {
   
   /**
     * The name of the table attribute to store the TTL timestamp in.
     */
-  var attributeName: String = js.native
+  var attributeName: String
   
   /**
     * Indicates whether ttl is enabled (true) or disabled (false).
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object TableTtl {
   

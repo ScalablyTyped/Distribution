@@ -3,7 +3,6 @@ package typings.stripComments
 import typings.stripComments.nodeMod.Block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,14 @@ object mod {
     * @param string - string from which to strip comments
     * @param [options] - passed to [extract-comments][extract-comments]
     */
+  @scala.inline
+  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("strip-comments", JSImport.Namespace)
   @js.native
-  def apply(input: String): String = js.native
-  @JSImport("strip-comments", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Strip only block comments.
@@ -40,12 +41,10 @@ object mod {
     * @param `input` string from which to strip comments
     * @param  [`options`] pass `opts.keepProtected: true` to keep ignored comments (e.g. `/ *!`)
     */
-  @JSImport("strip-comments", "block")
-  @js.native
-  def block(input: String): String = js.native
-  @JSImport("strip-comments", "block")
-  @js.native
-  def block(input: String, options: Options): String = js.native
+  @scala.inline
+  def block(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def block(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("block")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Strip the first comment from the given `input`. Or, if `opts.keepProtected` is true,
@@ -59,12 +58,10 @@ object mod {
     * @param  `input` string from which to strip comments
     * @param [`options`] pass `opts.keepProtected: true` to keep comments with `!`
     */
-  @JSImport("strip-comments", "first")
-  @js.native
-  def first(input: String): String = js.native
-  @JSImport("strip-comments", "first")
-  @js.native
-  def first(input: String, options: Options): String = js.native
+  @scala.inline
+  def first(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def first(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Strip only line comments.
@@ -77,46 +74,43 @@ object mod {
     * @param  `input` string from which to strip comments
     * @param  [`options`] pass `opts.keepProtected: true` to keep ignored comments (e.g. `//!`)
     */
-  @JSImport("strip-comments", "line")
-  @js.native
-  def line(input: String): String = js.native
-  @JSImport("strip-comments", "line")
-  @js.native
-  def line(input: String, options: Options): String = js.native
+  @scala.inline
+  def line(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def line(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("strip-comments", "parse")
   @js.native
   val parse: js.Function2[/* input */ String, /* options */ js.UndefOr[Options], Block] = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * if `false` strip only line comments
       * @default true
       */
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Keep ignored comments (e.g. `/ *!` and `//!`)
       */
-    var keepProtected: js.UndefOr[Boolean] = js.native
+    var keepProtected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 'javascript'
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * if `false` strip only block comments
       * @default true
       */
-    var line: js.UndefOr[Boolean] = js.native
+    var line: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Preserve newlines after comments are stripped
       */
-    var preserveNewlines: js.UndefOr[Boolean] = js.native
+    var preserveNewlines: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

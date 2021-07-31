@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasemapToggleToggleEvent extends StObject {
   
-  var current: Basemap = js.native
+  var current: Basemap
   
-  var previous: Basemap = js.native
+  var previous: Basemap
 }
 object BasemapToggleToggleEvent {
   

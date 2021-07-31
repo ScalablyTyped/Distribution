@@ -8,19 +8,17 @@ import typings.node.urlMod.URL_
 import typings.wreck.wreckBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Http extends StObject {
     
-    var http: Agent = js.native
+    var http: Agent
     
-    var https: Agent = js.native
+    var https: Agent
     
-    var httpsAllowUnauthorized: Agent = js.native
+    var httpsAllowUnauthorized: Agent
   }
   object Http {
     
@@ -74,31 +72,27 @@ object anon {
       * @returns A Promise for the completion of which ever callback is executed.
       */
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ IncomingMessage, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ IncomingMessage, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     
     @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
   }
   
-  @js.native
   trait Req extends StObject {
     
-    var req: ClientRequest = js.native
+    var req: ClientRequest
     
-    var res: js.UndefOr[IncomingMessage] = js.native
+    var res: js.UndefOr[IncomingMessage] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
     
-    var url: URL_ = js.native
+    var url: URL_
   }
   object Req {
     
@@ -129,12 +123,11 @@ object anon {
   }
   
   /* Inlined wreck.wreck.RequestOptions & {  payload :any | undefined} */
-  @js.native
   trait RequestOptionspayloadanyu extends StObject {
     
-    var agent: js.UndefOr[Http | `false`] = js.native
+    var agent: js.UndefOr[Http | `false`] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     var beforeRedirect: js.UndefOr[
         js.Function6[
@@ -146,35 +139,35 @@ object anon {
           /* next */ js.Function0[js.Object], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.native
+    var downstreamRes: js.UndefOr[js.Any] = js.undefined
     
-    var events: js.UndefOr[Boolean] = js.native
+    var events: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
-    var redirect303: js.UndefOr[Boolean] = js.native
+    var redirect303: js.UndefOr[Boolean] = js.undefined
     
     var redirected: js.UndefOr[
         js.Function3[/* statusCode */ Double, /* location */ String, /* req */ ClientRequest, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestOptionspayloadanyu {
     

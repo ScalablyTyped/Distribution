@@ -2,36 +2,34 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrincipalResourcePermissions extends StObject {
   
   /**
     * This attribute can be used to return any additional details of PrincipalResourcePermissions. Currently returns only as a RAM share resource ARN.
     */
-  var AdditionalDetails: js.UndefOr[DetailsMap] = js.native
+  var AdditionalDetails: js.UndefOr[DetailsMap] = js.undefined
   
   /**
     * The permissions to be granted or revoked on the resource.
     */
-  var Permissions: js.UndefOr[PermissionList] = js.native
+  var Permissions: js.UndefOr[PermissionList] = js.undefined
   
   /**
     * Indicates whether to grant the ability to grant permissions (as a subset of permissions granted).
     */
-  var PermissionsWithGrantOption: js.UndefOr[PermissionList] = js.native
+  var PermissionsWithGrantOption: js.UndefOr[PermissionList] = js.undefined
   
   /**
     * The Data Lake principal to be granted or revoked permissions.
     */
-  var Principal: js.UndefOr[DataLakePrincipal] = js.native
+  var Principal: js.UndefOr[DataLakePrincipal] = js.undefined
   
   /**
     * The resource where permissions are to be granted or revoked.
     */
-  var Resource: js.UndefOr[typings.awsSdk.lakeformationMod.Resource] = js.native
+  var Resource: js.UndefOr[typings.awsSdk.lakeformationMod.Resource] = js.undefined
 }
 object PrincipalResourcePermissions {
   

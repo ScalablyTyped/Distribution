@@ -3,14 +3,12 @@ package typings.coreJs
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduceRightMod {
   
   /* was `typeof core.Array.reduceRight` */
-  @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
@@ -20,9 +18,8 @@ object reduceRightMod {
       /* array */ Array[T], 
       T
     ]
-  ): T = js.native
-  @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
@@ -33,5 +30,9 @@ object reduceRightMod {
       T
     ],
     initialValue: T
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @JSImport("core-js/fn/array/reduce-right", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

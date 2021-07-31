@@ -3,15 +3,13 @@ package typings.azdata.mod.nb
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookCell extends StObject {
   
-  var contents: ICellContents = js.native
+  var contents: ICellContents
   
-  var uri: js.UndefOr[Uri] = js.native
+  var uri: js.UndefOr[Uri] = js.undefined
 }
 object NotebookCell {
   

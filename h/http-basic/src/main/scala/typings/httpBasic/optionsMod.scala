@@ -11,35 +11,33 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var agent: js.UndefOr[Agent | Boolean] = js.native
+    var agent: js.UndefOr[Agent | Boolean] = js.undefined
     
-    var allowRedirectHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowRedirectHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cache: js.UndefOr[file | memory | ICache] = js.native
+    var cache: js.UndefOr[file | memory | ICache] = js.undefined
     
-    var canCache: js.UndefOr[js.Function2[/* res */ ^[ReadableStream], /* defaultValue */ Boolean, Boolean]] = js.native
+    var canCache: js.UndefOr[js.Function2[/* res */ ^[ReadableStream], /* defaultValue */ Boolean, Boolean]] = js.undefined
     
-    var duplex: js.UndefOr[Boolean] = js.native
+    var duplex: js.UndefOr[Boolean] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var ignoreFailedInvalidation: js.UndefOr[Boolean] = js.native
+    var ignoreFailedInvalidation: js.UndefOr[Boolean] = js.undefined
     
     var isExpired: js.UndefOr[
         js.Function2[/* cachedResponse */ CachedResponse, /* defaultValue */ Boolean, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var isMatch: js.UndefOr[
         js.Function3[
@@ -48,11 +46,11 @@ object optionsMod {
           /* defaultValue */ Boolean, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
     var retry: js.UndefOr[
         Boolean | (js.Function3[
@@ -61,7 +59,7 @@ object optionsMod {
           /* attemptNumber */ Double, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     var retryDelay: js.UndefOr[
         Double | (js.Function3[
@@ -70,11 +68,11 @@ object optionsMod {
           /* attemptNumber */ Double, 
           Double
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulingConfig extends StObject {
   
   /** Defines whether the node is preemptible. */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the node is created under a reservation. */
-  var reserved: js.UndefOr[Boolean] = js.native
+  var reserved: js.UndefOr[Boolean] = js.undefined
 }
 object SchedulingConfig {
   

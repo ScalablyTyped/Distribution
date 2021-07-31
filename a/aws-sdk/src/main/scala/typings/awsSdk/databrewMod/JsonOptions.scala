@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonOptions extends StObject {
   
   /**
     * A value that specifies whether JSON input contains embedded new line characters.
     */
-  var MultiLine: js.UndefOr[typings.awsSdk.databrewMod.MultiLine] = js.native
+  var MultiLine: js.UndefOr[typings.awsSdk.databrewMod.MultiLine] = js.undefined
 }
 object JsonOptions {
   

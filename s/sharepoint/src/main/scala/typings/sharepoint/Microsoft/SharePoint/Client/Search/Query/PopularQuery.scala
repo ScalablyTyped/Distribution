@@ -5,27 +5,27 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopularQuery extends ClientValueObject {
+trait PopularQuery
+  extends StObject
+     with ClientValueObject {
   
-  def get_LCID(): Double = js.native
+  def get_LCID(): Double
   
-  def get_clickCount(): Double = js.native
+  def get_clickCount(): Double
   
-  def get_queryCount(): Double = js.native
+  def get_queryCount(): Double
   
-  def get_queryText(): String = js.native
+  def get_queryText(): String
   
-  def set_LCID(value: Double): Unit = js.native
+  def set_LCID(value: Double): Unit
   
-  def set_clickCount(value: Double): Unit = js.native
+  def set_clickCount(value: Double): Unit
   
-  def set_queryCount(value: Double): Unit = js.native
+  def set_queryCount(value: Double): Unit
   
-  def set_queryText(value: String): Unit = js.native
+  def set_queryText(value: String): Unit
 }
 object PopularQuery {
   

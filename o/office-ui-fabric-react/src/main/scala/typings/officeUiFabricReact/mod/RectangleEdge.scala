@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "RectangleEdge")
@@ -10,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RectangleEdge extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge & Double] = js.native
   
-  /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom with Double = js.native
+  /* -1 */ val bottom: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.bottom & Double = js.native
   
-  /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left with Double = js.native
+  /* 2 */ val left: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.left & Double = js.native
   
-  /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right with Double = js.native
+  /* -2 */ val right: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.right & Double = js.native
   
-  /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top with Double = js.native
+  /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top & Double = js.native
 }

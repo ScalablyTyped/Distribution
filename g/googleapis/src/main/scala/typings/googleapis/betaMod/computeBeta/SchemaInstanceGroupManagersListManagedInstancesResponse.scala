@@ -2,16 +2,14 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersListManagedInstancesResponse extends StObject {
   
   /**
     * [Output Only] The list of instances in the managed instance group.
     */
-  var managedInstances: js.UndefOr[js.Array[SchemaManagedInstance]] = js.native
+  var managedInstances: js.UndefOr[js.Array[SchemaManagedInstance]] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for
@@ -20,7 +18,7 @@ trait SchemaInstanceGroupManagersListManagedInstancesResponse extends StObject {
     * next list request. Subsequent list requests will have their own
     * nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupManagersListManagedInstancesResponse {
   

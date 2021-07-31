@@ -2,31 +2,29 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountDisplayInfo extends StObject {
   
   /**
     * account provider (eg, Work/School vs Microsoft Account)
     */
-  var accountType: String = js.native
+  var accountType: String
   
   /**
     * A display name that offers context for the account, such as "Contoso".
     */
-  var contextualDisplayName: String = js.native
+  var contextualDisplayName: String
   
   /**
     * A display name that identifies the account, such as "User Name".
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Unique user id that identifies the account.
     */
-  var userId: String = js.native
+  var userId: String
 }
 object AccountDisplayInfo {
   

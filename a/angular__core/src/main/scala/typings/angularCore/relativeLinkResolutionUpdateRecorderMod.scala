@@ -3,17 +3,15 @@ package typings.angularCore
 import typings.typescript.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relativeLinkResolutionUpdateRecorderMod {
   
-  @js.native
   trait UpdateRecorder extends StObject {
     
-    def commitUpdate(): Unit = js.native
+    def commitUpdate(): Unit
     
-    def updateNode(node: Node, newText: String): Unit = js.native
+    def updateNode(node: Node, newText: String): Unit
   }
   object UpdateRecorder {
     

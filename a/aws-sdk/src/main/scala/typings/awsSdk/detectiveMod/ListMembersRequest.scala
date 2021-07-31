@@ -2,26 +2,24 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMembersRequest extends StObject {
   
   /**
     * The ARN of the behavior graph for which to retrieve the list of member accounts.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
   
   /**
     * The maximum number of member accounts to include in the response. The total must be less than the overall limit on the number of results to return, which is currently 200.
     */
-  var MaxResults: js.UndefOr[MemberResultsLimit] = js.native
+  var MaxResults: js.UndefOr[MemberResultsLimit] = js.undefined
   
   /**
     * For requests to retrieve the next page of member account results, the pagination token that was returned with the previous page of results. The initial request does not include a pagination token.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListMembersRequest {
   

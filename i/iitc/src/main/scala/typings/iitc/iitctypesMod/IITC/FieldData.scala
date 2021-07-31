@@ -3,15 +3,13 @@ package typings.iitc.iitctypesMod.IITC
 import typings.iitc.anon.LatE6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldData extends StObject {
   
-  var points: js.Array[LatE6] = js.native
+  var points: js.Array[LatE6]
   
-  var team: String = js.native
+  var team: String
 }
 object FieldData {
   

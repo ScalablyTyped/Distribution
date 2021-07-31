@@ -3,31 +3,30 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyInteger
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: js.UndefOr[String] = js.native
+  var component: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyInteger: integer = js.native
+  var type_CustomPropertyInteger: integer
 }
 object CustomPropertyInteger {
   
   @scala.inline
-  def apply(`type`: integer): CustomPropertyInteger = {
+  def apply(): CustomPropertyInteger = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[CustomPropertyInteger]
   }
   

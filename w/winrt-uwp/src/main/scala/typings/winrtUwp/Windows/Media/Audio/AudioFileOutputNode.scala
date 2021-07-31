@@ -9,60 +9,58 @@ import typings.winrtUwp.Windows.Media.Transcoding.TranscodeFailureReason
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio file output node. */
-@js.native
 trait AudioFileOutputNode extends StObject {
   
   /** Closes the audio file output node. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets or sets a value indicating if the audio file output node consumes input. */
-  var consumeInput: Boolean = js.native
+  var consumeInput: Boolean
   
   /**
     * Disables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to disable.
     */
-  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the list of effect definitions for the audio file output node. */
-  var effectDefinitions: IVector[IAudioEffectDefinition] = js.native
+  var effectDefinitions: IVector[IAudioEffectDefinition]
   
   /**
     * Enables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to enable.
     */
-  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the encoding properties for the audio file output node. */
-  var encodingProperties: AudioEncodingProperties = js.native
+  var encodingProperties: AudioEncodingProperties
   
   /** Gets the file associated with the audio file output node. */
-  var file: IStorageFile = js.native
+  var file: IStorageFile
   
   /** Gets the file encoding profile supported by the audio file output node. */
-  var fileEncodingProfile: MediaEncodingProfile = js.native
+  var fileEncodingProfile: MediaEncodingProfile
   
   /**
     * Finalizes the asynchronous operation of the audio file output node.
     * @return When this operation completes, a TranscodeFailureReason value is returned.
     */
-  def finalizeAsync(): IPromiseWithIAsyncOperation[TranscodeFailureReason] = js.native
+  def finalizeAsync(): IPromiseWithIAsyncOperation[TranscodeFailureReason]
   
   /** Gets or sets the outgoing gain for the audio file output node. */
-  var outgoingGain: Double = js.native
+  var outgoingGain: Double
   
   /** Resets the audio file output node. */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /** Starts the audio file output node. */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /** Stops the audio file output node. */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object AudioFileOutputNode {
   

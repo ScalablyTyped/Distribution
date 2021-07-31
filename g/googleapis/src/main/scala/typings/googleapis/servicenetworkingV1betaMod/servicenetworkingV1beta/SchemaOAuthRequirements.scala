@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and passed to the backend, a request can still fail due to the backend
   * requiring additional scopes or permissions.
   */
-@js.native
 trait SchemaOAuthRequirements extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait SchemaOAuthRequirements extends StObject {
     * canonical_scopes: https://www.googleapis.com/auth/calendar,
     * https://www.googleapis.com/auth/calendar.read
     */
-  var canonicalScopes: js.UndefOr[String] = js.native
+  var canonicalScopes: js.UndefOr[String] = js.undefined
 }
 object SchemaOAuthRequirements {
   

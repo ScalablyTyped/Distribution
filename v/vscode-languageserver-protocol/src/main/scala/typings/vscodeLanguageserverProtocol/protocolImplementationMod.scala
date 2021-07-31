@@ -18,7 +18,6 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolImplementationMod {
@@ -34,8 +33,6 @@ object protocolImplementationMod {
     @js.native
     val resultType: ProgressType[js.Array[Location | LocationLink]] = js.native
     
-    type HandlerSignature = RequestHandler[ImplementationParams, Definition | js.Array[DefinitionLink] | Null, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.implementation", "ImplementationRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
@@ -45,9 +42,10 @@ object protocolImplementationMod {
         Unit, 
         ImplementationRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[ImplementationParams, Definition | js.Array[DefinitionLink] | Null, Unit]
   }
   
-  @js.native
   trait ImplementationClientCapabilities extends StObject {
     
     /**
@@ -55,14 +53,14 @@ object protocolImplementationMod {
       * the client supports the new `ImplementationRegistrationOptions` return value
       * for the corresponding server capability as well.
       */
-    var dynamicRegistration: js.UndefOr[Boolean] = js.native
+    var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The client supports additional metadata in the form of definition links.
       *
       * Since 3.14.0
       */
-    var linkSupport: js.UndefOr[Boolean] = js.native
+    var linkSupport: js.UndefOr[Boolean] = js.undefined
   }
   object ImplementationClientCapabilities {
     
@@ -91,9 +89,9 @@ object protocolImplementationMod {
   
   type ImplementationOptions = WorkDoneProgressOptions
   
-  @js.native
   trait ImplementationParams
-    extends TextDocumentPositionParams
+    extends StObject
+       with TextDocumentPositionParams
        with WorkDoneProgressParams
        with PartialResultParams
   object ImplementationParams {
@@ -105,16 +103,16 @@ object protocolImplementationMod {
     }
   }
   
-  @js.native
   trait ImplementationRegistrationOptions
-    extends TextDocumentRegistrationOptions
+    extends StObject
+       with TextDocumentRegistrationOptions
        with WorkDoneProgressOptions
        with StaticRegistrationOptions
   object ImplementationRegistrationOptions {
     
     @scala.inline
     def apply(): ImplementationRegistrationOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[ImplementationRegistrationOptions]
     }
   }

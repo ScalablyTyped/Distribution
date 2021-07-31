@@ -2,21 +2,19 @@ package typings.naverWhale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chrome {
   
   object downloads {
     
-    @js.native
     trait StateType extends StObject {
       
-      val COMPLETE: String = js.native
+      val COMPLETE: String
       
-      val INTERRUPTED: String = js.native
+      val INTERRUPTED: String
       
-      val IN_PROGRESS: String = js.native
+      val IN_PROGRESS: String
     }
     object StateType {
       

@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,7 @@ trait JdbcConnection extends StObject {
   
   def commit(): Unit = js.native
   
-  def createArrayOf(typeName: String, elements: js.Array[_]): JdbcArray = js.native
+  def createArrayOf(typeName: String, elements: js.Array[js.Any]): JdbcArray = js.native
   
   def createBlob(): JdbcBlob = js.native
   
@@ -33,7 +32,7 @@ trait JdbcConnection extends StObject {
   def createStatement(resultSetType: Integer, resultSetConcurrency: Integer): JdbcStatement = js.native
   def createStatement(resultSetType: Integer, resultSetConcurrency: Integer, resultSetHoldability: Integer): JdbcStatement = js.native
   
-  def createStruct(typeName: String, attributes: js.Array[_]): JdbcStruct = js.native
+  def createStruct(typeName: String, attributes: js.Array[js.Any]): JdbcStruct = js.native
   
   def getAutoCommit(): Boolean = js.native
   

@@ -2,33 +2,28 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseConvertMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: js.Any, frombase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: js.Any, frombase: js.Any, tobase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any], tobase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: js.Any, frombase: Unit, tobase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any], tobase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: Unit, frombase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: Unit, frombase: js.Any, tobase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any], tobase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(number: Unit, frombase: Unit, tobase: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], frombase.asInstanceOf[js.Any], tobase.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.UndefOr[scala.Nothing], frombase: js.UndefOr[scala.Nothing], tobase: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.UndefOr[scala.Nothing], frombase: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.UndefOr[scala.Nothing], frombase: js.Any, tobase: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.Any, frombase: js.UndefOr[scala.Nothing], tobase: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.Any, frombase: js.Any): js.Any = js.native
-  @JSImport("locutus/php/math/base_convert", JSImport.Namespace)
-  @js.native
-  def apply(number: js.Any, frombase: js.Any, tobase: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

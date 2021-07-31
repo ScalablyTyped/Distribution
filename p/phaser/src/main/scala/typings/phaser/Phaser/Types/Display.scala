@@ -2,33 +2,31 @@ package typings.phaser.Phaser.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
   
-  @js.native
   trait ColorObject extends StObject {
     
     /**
       * The alpha color value in the range 0 to 255.
       */
-    var a: Double = js.native
+    var a: Double
     
     /**
       * The blue color value in the range 0 to 255.
       */
-    var b: Double = js.native
+    var b: Double
     
     /**
       * The green color value in the range 0 to 255.
       */
-    var g: Double = js.native
+    var g: Double
     
     /**
       * The red color value in the range 0 to 255.
       */
-    var r: Double = js.native
+    var r: Double
   }
   object ColorObject {
     
@@ -55,23 +53,22 @@ object Display {
     }
   }
   
-  @js.native
   trait HSVColorObject extends StObject {
     
     /**
       * The hue color value. A number between 0 and 1
       */
-    var h: Double = js.native
+    var h: Double
     
     /**
       * The saturation color value. A number between 0 and 1
       */
-    var s: Double = js.native
+    var s: Double
     
     /**
       * The lightness color value. A number between 0 and 1
       */
-    var v: Double = js.native
+    var v: Double
   }
   object HSVColorObject {
     
@@ -95,28 +92,27 @@ object Display {
     }
   }
   
-  @js.native
   trait InputColorObject extends StObject {
     
     /**
       * The alpha color value in the range 0 to 255.
       */
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
     /**
       * The blue color value in the range 0 to 255.
       */
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
     /**
       * The green color value in the range 0 to 255.
       */
-    var g: js.UndefOr[Double] = js.native
+    var g: js.UndefOr[Double] = js.undefined
     
     /**
       * The red color value in the range 0 to 255.
       */
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
   }
   object InputColorObject {
     

@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Saved Album Object in Playlists
   * [](https://developer.spotify.com/documentation/web-api/reference/object-model/#saved-album-object)
   */
-@js.native
 trait SavedAlbumObject extends StObject {
   
-  var added_at: String = js.native
+  var added_at: String
   
-  var album: AlbumObjectFull = js.native
+  var album: AlbumObjectFull
 }
 object SavedAlbumObject {
   

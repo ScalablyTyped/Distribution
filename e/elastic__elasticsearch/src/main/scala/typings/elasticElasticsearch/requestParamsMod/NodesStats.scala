@@ -5,33 +5,33 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.node
 import typings.elasticElasticsearch.elasticElasticsearchStrings.shards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesStats extends Generic {
+trait NodesStats
+  extends StObject
+     with Generic {
   
-  var completion_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var completion_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var groups: js.UndefOr[Boolean] = js.native
+  var groups: js.UndefOr[Boolean] = js.undefined
   
-  var include_segment_file_sizes: js.UndefOr[Boolean] = js.native
+  var include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined
   
-  var index_metric: js.UndefOr[String | js.Array[String]] = js.native
+  var index_metric: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var level: js.UndefOr[indices | node | shards] = js.native
+  var level: js.UndefOr[indices | node | shards] = js.undefined
   
-  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[String | js.Array[String]] = js.native
+  var types: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object NodesStats {
   

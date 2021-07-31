@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMonitoringExecutionsResponse extends StObject {
   
   /**
     * A JSON array in which each element is a summary for a monitoring execution.
     */
-  var MonitoringExecutionSummaries: MonitoringExecutionSummaryList = js.native
+  var MonitoringExecutionSummaries: MonitoringExecutionSummaryList
   
   /**
     * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of jobs, use it in the subsequent reques
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListMonitoringExecutionsResponse {
   

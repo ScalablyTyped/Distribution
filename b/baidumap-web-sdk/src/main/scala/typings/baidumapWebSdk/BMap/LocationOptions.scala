@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationOptions extends StObject {
   
-  var numPois: js.UndefOr[Double] = js.native
+  var numPois: js.UndefOr[Double] = js.undefined
   
-  var poiRadius: js.UndefOr[Double] = js.native
+  var poiRadius: js.UndefOr[Double] = js.undefined
 }
 object LocationOptions {
   

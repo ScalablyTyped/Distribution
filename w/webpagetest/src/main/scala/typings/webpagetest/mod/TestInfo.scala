@@ -2,67 +2,65 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInfo extends StObject {
   
-  var block: String = js.native
+  var block: String
   
-  var bodies: Double = js.native
+  var bodies: Double
   
-  var browser: String = js.native
+  var browser: String
   
-  var bwIn: Double = js.native
+  var bwIn: Double
   
-  var bwOut: Double = js.native
+  var bwOut: Double
   
-  var connectivity: String = js.native
+  var connectivity: String
   
-  var fvonly: Double = js.native
+  var fvonly: Double
   
-  var ignoreSSL: Double = js.native
+  var ignoreSSL: Double
   
-  var iq: Double = js.native
+  var iq: Double
   
-  var keepua: Double = js.native
+  var keepua: Double
   
-  var label: String = js.native
+  var label: String
   
-  var latency: Double = js.native
+  var latency: Double
   
-  var location: String = js.native
+  var location: String
   
-  var mobile: Double = js.native
+  var mobile: Double
   
-  var netlog: Double = js.native
+  var netlog: Double
   
-  var noscript: Double = js.native
+  var noscript: Double
   
-  var plr: String = js.native
+  var plr: String
   
-  var pngss: Double = js.native
+  var pngss: Double
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var runs: Double = js.native
+  var runs: Double
   
-  var scripted: Double = js.native
+  var scripted: Double
   
-  var standards: Double = js.native
+  var standards: Double
   
-  var tcpdump: Double = js.native
+  var tcpdump: Double
   
-  var timeline: Double = js.native
+  var timeline: Double
   
-  var trace: Double = js.native
+  var trace: Double
   
-  var url: String = js.native
+  var url: String
   
-  var video: String = js.native
+  var video: String
   
-  var web10: Double = js.native
+  var web10: Double
 }
 object TestInfo {
   

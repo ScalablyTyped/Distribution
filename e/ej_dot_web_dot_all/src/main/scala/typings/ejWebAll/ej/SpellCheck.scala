@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpellCheck extends Widget_ {
+trait SpellCheck
+  extends StObject
+     with Widget_ {
   
   /** To add the words into the custom dictionary.
     * @param {string} Word to add into the dictionary file
@@ -76,32 +77,31 @@ trait SpellCheck extends Widget_ {
 }
 object SpellCheck {
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the misspellWordCss class name.
       */
-    var misspellWordCss: js.UndefOr[String] = js.native
+    var misspellWordCss: js.UndefOr[String] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the input string.
       */
-    var targetSentence: js.UndefOr[String] = js.native
+    var targetSentence: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -152,28 +152,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns AJAX request failure error message.
       */
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -218,32 +217,31 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ActionSuccessEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error word details of the given input.
       */
-    var errorWordDetails: js.UndefOr[js.Any] = js.native
+    var errorWordDetails: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the error word highlighted string.
       */
-    var resultHTML: js.UndefOr[String] = js.native
+    var resultHTML: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -294,28 +292,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait CompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the error word highlighted string.
       */
-    var resultHTML: js.UndefOr[String] = js.native
+    var resultHTML: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CompleteEventArgs {
     
@@ -360,36 +357,35 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ContextClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the selected option in the context menu.
       */
-    var selectedOption: js.UndefOr[String] = js.native
+    var selectedOption: js.UndefOr[String] = js.undefined
     
     /** Returns the selected error word.
       */
-    var selectedValue: js.UndefOr[String] = js.native
+    var selectedValue: js.UndefOr[String] = js.undefined
     
     /** Returns the input string.
       */
-    var targetContent: js.UndefOr[String] = js.native
+    var targetContent: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextClickEventArgs {
     
@@ -446,19 +442,18 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
     /** When set to true, enables the context menu options available for the SpellCheck.
       * @Default {true}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Contains all the default context menu options that are applicable for SpellCheck. It also supports adding custom menu items. All the SpellCheck related context menu items are
       * grouped under this menu collection.
       * @Default {{% highlight javascript %}[{ id: IgnoreAll, text: Ignore All },{ id: AddToDictionary, text: Add To Dictionary }]{% endhighlight %}}
       */
-    var menuItems: js.UndefOr[js.Array[_]] = js.native
+    var menuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -478,7 +473,7 @@ object SpellCheck {
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
       @scala.inline
-      def setMenuItems(value: js.Array[_]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      def setMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
@@ -488,28 +483,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ContextOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the selected error word.
       */
-    var selectedErrorWord: js.UndefOr[String] = js.native
+    var selectedErrorWord: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextOpenEventArgs {
     
@@ -554,28 +548,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait DialogBeforeOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the spell check window details.
       */
-    var spellCheckDialog: js.UndefOr[js.Any] = js.native
+    var spellCheckDialog: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DialogBeforeOpenEventArgs {
     
@@ -620,28 +613,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait DialogCloseEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the error corrected string.
       */
-    var updatedText: js.UndefOr[String] = js.native
+    var updatedText: js.UndefOr[String] = js.undefined
   }
   object DialogCloseEventArgs {
     
@@ -686,28 +678,27 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait DialogOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the target input.
       */
-    var targetText: js.UndefOr[String] = js.native
+    var targetText: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DialogOpenEventArgs {
     
@@ -752,16 +743,15 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait DictionarySettings extends StObject {
     
     /** The customDictionaryUrl option accepts string, which is the method path to add the error word into the custom dictionary.
       */
-    var customDictionaryUrl: js.UndefOr[String] = js.native
+    var customDictionaryUrl: js.UndefOr[String] = js.undefined
     
     /** The dictionaryUrl option accepts string, which is the method path to find the error words and get the suggestions to correct the errors.
       */
-    var dictionaryUrl: js.UndefOr[String] = js.native
+    var dictionaryUrl: js.UndefOr[String] = js.undefined
   }
   object DictionarySettings {
     
@@ -788,38 +778,37 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait IgnoreSettings extends StObject {
     
     /** When set to true, ignoring the alphanumeric words from the error word consideration.
       * @Default {true}
       */
-    var ignoreAlphaNumericWords: js.UndefOr[String] = js.native
+    var ignoreAlphaNumericWords: js.UndefOr[String] = js.undefined
     
     /** When set to true, ignoring the Email address from the error word consideration.
       * @Default {true}
       */
-    var ignoreEmailAddress: js.UndefOr[Boolean] = js.native
+    var ignoreEmailAddress: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the file address path from the error word consideration.
       * @Default {true}
       */
-    var ignoreFileNames: js.UndefOr[Boolean] = js.native
+    var ignoreFileNames: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the MixedCase words from the error word consideration.
       * @Default {true}
       */
-    var ignoreMixedCaseWords: js.UndefOr[Boolean] = js.native
+    var ignoreMixedCaseWords: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the UpperCase words from the error word consideration.
       * @Default {true}
       */
-    var ignoreUpperCase: js.UndefOr[Boolean] = js.native
+    var ignoreUpperCase: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the Url from the error word consideration.
       * @Default {true}
       */
-    var ignoreUrl: js.UndefOr[Boolean] = js.native
+    var ignoreUrl: js.UndefOr[Boolean] = js.undefined
   }
   object IgnoreSettings {
     
@@ -870,119 +859,118 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers on the AJAX call request beginning.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggers when the AJAX call request failure.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers on the success of AJAX call request.
       */
-    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.native
+    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.undefined
     
     /** Sets the data type for the ajax call used within the SpellCheck control, denoting the type of data that are expected to be retrieved from the server. The applicable values are
       * json and jsonp.
       * @Default {jsonp}
       */
-    var ajaxDataType: js.UndefOr[String] = js.native
+    var ajaxDataType: js.UndefOr[String] = js.undefined
     
     /** To set either â€˜Postâ€™ or â€˜Getâ€™ for ajax request type which invokes when validate, get suggestion and dictionary action.Possible values are â€˜POSTâ€™ or â€˜GETâ€™
       * @Default {GET}
       */
-    var ajaxRequestType: js.UndefOr[String] = js.native
+    var ajaxRequestType: js.UndefOr[String] = js.undefined
     
     /** Triggers when the spell check operations completed through dialog mode.
       */
-    var complete: js.UndefOr[js.Function1[/* e */ CompleteEventArgs, Unit]] = js.native
+    var complete: js.UndefOr[js.Function1[/* e */ CompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when the context menu item clicked.
       */
-    var contextClick: js.UndefOr[js.Function1[/* e */ ContextClickEventArgs, Unit]] = js.native
+    var contextClick: js.UndefOr[js.Function1[/* e */ ContextClickEventArgs, Unit]] = js.undefined
     
     /** Holds all options related to the context menu settings of SpellCheck.
       */
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
     /** Triggers before context menu opening.
       */
-    var contextOpen: js.UndefOr[js.Function1[/* e */ ContextOpenEventArgs, Unit]] = js.native
+    var contextOpen: js.UndefOr[js.Function1[/* e */ ContextOpenEventArgs, Unit]] = js.undefined
     
     /** It allows to spell check the multiple target HTML element's texts and correct its error words.
       * @Default {null}
       */
-    var controlsToValidate: js.UndefOr[String] = js.native
+    var controlsToValidate: js.UndefOr[String] = js.undefined
     
     /** Triggers before the spell check dialog opens.
       */
-    var dialogBeforeOpen: js.UndefOr[js.Function1[/* e */ DialogBeforeOpenEventArgs, Unit]] = js.native
+    var dialogBeforeOpen: js.UndefOr[js.Function1[/* e */ DialogBeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Triggers when the spell check dialog closed.
       */
-    var dialogClose: js.UndefOr[js.Function1[/* e */ DialogCloseEventArgs, Unit]] = js.native
+    var dialogClose: js.UndefOr[js.Function1[/* e */ DialogCloseEventArgs, Unit]] = js.undefined
     
     /** Triggers after the spell check dialog opens.
       */
-    var dialogOpen: js.UndefOr[js.Function1[/* e */ DialogOpenEventArgs, Unit]] = js.native
+    var dialogOpen: js.UndefOr[js.Function1[/* e */ DialogOpenEventArgs, Unit]] = js.undefined
     
     /** It includes the service method path to find the error words and its suggestions also adding the custom word into the custom dictionary.
       */
-    var dictionarySettings: js.UndefOr[DictionarySettings] = js.native
+    var dictionarySettings: js.UndefOr[DictionarySettings] = js.undefined
     
     /** When set to true, allows sending Asynchronous ajax request for checking the spelling errors.
       * @Default {true}
       */
-    var enableAsync: js.UndefOr[Boolean] = js.native
+    var enableAsync: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the spellcheck operation on Enter/Space key-press.
       * @Default {false}
       */
-    var enableValidateOnType: js.UndefOr[Boolean] = js.native
+    var enableValidateOnType: js.UndefOr[Boolean] = js.undefined
     
     /** It helps to ignore the uppercase, mixed case words, alpha numeric words, file path and email addresses based on the property values.
       */
-    var ignoreSettings: js.UndefOr[IgnoreSettings] = js.native
+    var ignoreSettings: js.UndefOr[IgnoreSettings] = js.undefined
     
     /** To ignore the words from the error word consideration.
       * @Default {[]}
       */
-    var ignoreWords: js.UndefOr[js.Array[_]] = js.native
+    var ignoreWords: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** When set to true, allows the spellcheck to render based upon screen size.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the specific culture to the SpellCheck.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** To set the maximum suggestion display count.
       * @Default {6}
       */
-    var maxSuggestionCount: js.UndefOr[Double] = js.native
+    var maxSuggestionCount: js.UndefOr[Double] = js.undefined
     
     /** To display the error word in a customized style.
       * @Default {e-errorword}
       */
-    var misspellWordCss: js.UndefOr[String] = js.native
+    var misspellWordCss: js.UndefOr[String] = js.undefined
     
     /** Triggers when the dialog mode spell check starting.
       */
-    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.native
+    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Triggers before loading the target HTML element text into the dialog sentence area.
       */
-    var targetUpdating: js.UndefOr[js.Function1[/* e */ TargetUpdatingEventArgs, Unit]] = js.native
+    var targetUpdating: js.UndefOr[js.Function1[/* e */ TargetUpdatingEventArgs, Unit]] = js.undefined
     
     /** Triggers when the spell check control performing the spell check operations such as ignore, ignoreAll, change, changeAll and addToDictionary.
       */
-    var validating: js.UndefOr[js.Function1[/* e */ ValidatingEventArgs, Unit]] = js.native
+    var validating: js.UndefOr[js.Function1[/* e */ ValidatingEventArgs, Unit]] = js.undefined
   }
   object Model {
     
@@ -1098,7 +1086,7 @@ object SpellCheck {
       def setIgnoreSettingsUndefined: Self = StObject.set(x, "ignoreSettings", js.undefined)
       
       @scala.inline
-      def setIgnoreWords(value: js.Array[_]): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
+      def setIgnoreWords(value: js.Array[js.Any]): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIgnoreWordsUndefined: Self = StObject.set(x, "ignoreWords", js.undefined)
@@ -1150,32 +1138,31 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait StartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error words details.
       */
-    var errorWords: js.UndefOr[js.Any] = js.native
+    var errorWords: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the request type value.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the input string.
       */
-    var targetSentence: js.UndefOr[String] = js.native
+    var targetSentence: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object StartEventArgs {
     
@@ -1226,32 +1213,31 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait TargetUpdatingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current target element value.
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the previous target element value.
       */
-    var previousElement: js.UndefOr[js.Any] = js.native
+    var previousElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target html value.
       */
-    var targetHtml: js.UndefOr[String] = js.native
+    var targetHtml: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TargetUpdatingEventArgs {
     
@@ -1302,48 +1288,47 @@ object SpellCheck {
     }
   }
   
-  @js.native
   trait ValidatingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the change word to replace the error word.
       */
-    var changeWord: js.UndefOr[String] = js.native
+    var changeWord: js.UndefOr[String] = js.undefined
     
     /** Returns the error word to change.
       */
-    var changeableWord: js.UndefOr[String] = js.native
+    var changeableWord: js.UndefOr[String] = js.undefined
     
     /** Returns the custom word to add into dictionary file.
       */
-    var customWord: js.UndefOr[String] = js.native
+    var customWord: js.UndefOr[String] = js.undefined
     
     /** Returns the error word to ignore.
       */
-    var ignoreWord: js.UndefOr[String] = js.native
+    var ignoreWord: js.UndefOr[String] = js.undefined
     
     /** Returns the index of an error word.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Returns the SpellCheck model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the validating request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the target content.
       */
-    var targetContent: js.UndefOr[String] = js.native
+    var targetContent: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ValidatingEventArgs {
     

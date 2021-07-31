@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecutionDetails extends StObject {
   
   /** If present, this response does not contain all requested tasks. To obtain the next page of results, repeat the request with page_token set to this value. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The stages of the job execution. */
-  var stages: js.UndefOr[js.Array[StageSummary]] = js.native
+  var stages: js.UndefOr[js.Array[StageSummary]] = js.undefined
 }
 object JobExecutionDetails {
   

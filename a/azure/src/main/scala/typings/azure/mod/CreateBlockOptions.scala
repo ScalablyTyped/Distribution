@@ -2,15 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateBlockOptions extends LeaseAccessConditionsOptions {
+trait CreateBlockOptions
+  extends StObject
+     with LeaseAccessConditionsOptions {
   
-  var contentMD5: js.UndefOr[String] = js.native
+  var contentMD5: js.UndefOr[String] = js.undefined
   
-  var useTransactionalMD5: js.UndefOr[Boolean] = js.native
+  var useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
 }
 object CreateBlockOptions {
   

@@ -2,15 +2,13 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
-  var line: Double = js.native
+  var line: Double
   
-  var name: String = js.native
+  var name: String
 }
 object Tag {
   

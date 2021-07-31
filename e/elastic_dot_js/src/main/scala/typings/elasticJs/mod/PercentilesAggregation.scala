@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "PercentilesAggregation")
 @js.native
-class PercentilesAggregation protected () extends Aggregation {
+class PercentilesAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that calculates one or more percentiles over numeric values
     extracted from the aggregated documents.

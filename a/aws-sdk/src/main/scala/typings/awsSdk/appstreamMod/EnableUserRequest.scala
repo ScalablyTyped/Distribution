@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableUserRequest extends StObject {
   
   /**
     * The authentication type for the user. You must specify USERPOOL.
     */
-  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType = js.native
+  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType
   
   /**
     * The email address of the user.  Users' email addresses are case-sensitive. During login, if they specify an email address that doesn't use the same capitalization as the email address specified when their user pool account was created, a "user does not exist" error message displays.  
     */
-  var UserName: Username = js.native
+  var UserName: Username
 }
 object EnableUserRequest {
   

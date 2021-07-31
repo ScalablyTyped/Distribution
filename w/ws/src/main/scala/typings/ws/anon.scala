@@ -5,21 +5,19 @@ import typings.node.httpMod.IncomingMessage
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Binary extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var fin: js.UndefOr[Boolean] = js.native
+    var fin: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
   }
   object Binary {
     
@@ -58,26 +56,25 @@ object anon {
     }
   }
   
-  @js.native
   trait ChunkSize extends StObject {
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var dictionary: js.UndefOr[Buffer | js.Array[Buffer] | DataView] = js.native
+    var dictionary: js.UndefOr[Buffer | js.Array[Buffer] | DataView] = js.undefined
     
-    var finishFlush: js.UndefOr[Double] = js.native
+    var finishFlush: js.UndefOr[Double] = js.undefined
     
-    var flush: js.UndefOr[Double] = js.native
+    var flush: js.UndefOr[Double] = js.undefined
     
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var memLevel: js.UndefOr[Double] = js.native
+    var memLevel: js.UndefOr[Double] = js.undefined
     
-    var strategy: js.UndefOr[Double] = js.native
+    var strategy: js.UndefOr[Double] = js.undefined
     
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object ChunkSize {
     
@@ -149,16 +146,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
     
-    var target: this.type = js.native
+    var target: this.type
     
-    var wasClean: Boolean = js.native
+    var wasClean: Boolean
   }
   object Code {
     
@@ -185,14 +181,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var target: this.type = js.native
+    var target: this.type
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -217,16 +212,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var message: js.Any = js.native
+    var message: js.Any
     
-    var target: this.type = js.native
+    var target: this.type
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Error {
     
@@ -254,14 +248,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Origin extends StObject {
     
-    var origin: String = js.native
+    var origin: String
     
-    var req: IncomingMessage = js.native
+    var req: IncomingMessage
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object Origin {
     
@@ -285,10 +278,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: this.type = js.native
+    var target: this.type
   }
   object Target {
     

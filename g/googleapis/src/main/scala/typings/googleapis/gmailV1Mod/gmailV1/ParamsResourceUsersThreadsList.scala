@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersThreadsList extends StandardParameters {
+trait ParamsResourceUsersThreadsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Include threads from SPAM and TRASH in the results.
     */
-  var includeSpamTrash: js.UndefOr[Boolean] = js.native
+  var includeSpamTrash: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only return threads with labels that match all of the specified label
     * IDs.
     */
-  var labelIds: js.UndefOr[js.Array[String]] = js.native
+  var labelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of threads to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Page token to retrieve a specific page of results in the list.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Only return threads matching the specified query. Supports the same query
@@ -44,13 +44,13 @@ trait ParamsResourceUsersThreadsList extends StandardParameters {
     * rfc822msgid: is:unread". Parameter cannot be used when accessing the api
     * using the gmail.metadata scope.
     */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
   /**
     * The user's email address. The special value me can be used to indicate
     * the authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersThreadsList {
   

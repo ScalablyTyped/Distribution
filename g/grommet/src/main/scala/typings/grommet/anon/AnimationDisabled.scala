@@ -2,17 +2,15 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationDisabled extends StObject {
   
-  var animation: js.UndefOr[`23`] = js.native
+  var animation: js.UndefOr[`23`] = js.undefined
   
-  var disabled: js.UndefOr[`24`] = js.native
+  var disabled: js.UndefOr[`24`] = js.undefined
   
-  var icons: js.UndefOr[Current] = js.native
+  var icons: js.UndefOr[Current] = js.undefined
 }
 object AnimationDisabled {
   

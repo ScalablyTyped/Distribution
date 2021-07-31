@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /** Immutable. The type of storage used by this cluster to serve its parent instance's tables, unless explicitly overridden. */
-  var defaultStorageType: js.UndefOr[String] = js.native
+  var defaultStorageType: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. The location where this cluster's nodes and storage reside. For best performance, clients should be located as close as possible to this cluster. Currently only zones are
     * supported, so values should be of the form `projects/{project}/locations/{zone}`.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The unique name of the cluster. Values are of the form `projects/{project}/instances/{instance}/clusters/a-z*`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The number of nodes allocated to this cluster. More nodes enable higher throughput and more consistent performance. */
-  var serveNodes: js.UndefOr[Double] = js.native
+  var serveNodes: js.UndefOr[Double] = js.undefined
   
   /** Output only. The current state of the cluster. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Cluster {
   

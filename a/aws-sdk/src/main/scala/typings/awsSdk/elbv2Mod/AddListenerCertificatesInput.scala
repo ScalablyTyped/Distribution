@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddListenerCertificatesInput extends StObject {
   
   /**
     * The certificate to add. You can specify one certificate per call. Set CertificateArn to the certificate ARN but do not set IsDefault.
     */
-  var Certificates: CertificateList = js.native
+  var Certificates: CertificateList
   
   /**
     * The Amazon Resource Name (ARN) of the listener.
     */
-  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn = js.native
+  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn
 }
 object AddListenerCertificatesInput {
   

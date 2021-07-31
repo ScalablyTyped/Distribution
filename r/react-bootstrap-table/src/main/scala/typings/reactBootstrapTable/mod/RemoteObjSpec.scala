@@ -2,51 +2,49 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteObjSpec extends StObject {
   
   /**
     * If set, cell edits will be handled remotely
     */
-  var cellEdit: js.UndefOr[Boolean] = js.native
+  var cellEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set deletion will be handled remotely
     */
-  var dropRow: js.UndefOr[Boolean] = js.native
+  var dropRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set, exporting CSV will be handled remotely
     */
-  var exportCSV: js.UndefOr[Boolean] = js.native
+  var exportCSV: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set filters will be handled remotely
     */
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set insertions will be handled remotely
     */
-  var insertRow: js.UndefOr[Boolean] = js.native
+  var insertRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set pagination will be handled remotely
     */
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set search will be handled remotely
     */
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set sorting will be handled remotely
     */
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object RemoteObjSpec {
   

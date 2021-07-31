@@ -8,47 +8,45 @@ import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoWebBrowserWebMod {
   
+  @JSImport("expo-web-browser/build/ExpoWebBrowser.web", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.dismissAuthSession")
+    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", JSImport.Default)
     @js.native
-    def dismissAuthSession(): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.maybeCompleteAuthSession")
-    @js.native
-    def maybeCompleteAuthSession(hasSkipRedirectCheck: SkipRedirectCheck): Message = js.native
+    @scala.inline
+    def dismissAuthSession(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAuthSession")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def maybeCompleteAuthSession(hasSkipRedirectCheck: SkipRedirectCheck): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")(hasSkipRedirectCheck.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.name")
     @js.native
     val name: String = js.native
     
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openAuthSessionAsync")
-    @js.native
-    def openAuthSessionAsync(url: String): js.Promise[WebBrowserAuthSessionResult] = js.native
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openAuthSessionAsync")
-    @js.native
-    def openAuthSessionAsync(url: String, redirectUrl: js.UndefOr[scala.Nothing], openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = js.native
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openAuthSessionAsync")
-    @js.native
-    def openAuthSessionAsync(url: String, redirectUrl: String): js.Promise[WebBrowserAuthSessionResult] = js.native
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openAuthSessionAsync")
-    @js.native
-    def openAuthSessionAsync(url: String, redirectUrl: String, openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = js.native
+    @scala.inline
+    def openAuthSessionAsync(url: String): js.Promise[WebBrowserAuthSessionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+    @scala.inline
+    def openAuthSessionAsync(url: String, redirectUrl: String): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+    @scala.inline
+    def openAuthSessionAsync(url: String, redirectUrl: String, openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], openOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
+    @scala.inline
+    def openAuthSessionAsync(url: String, redirectUrl: Unit, openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAuthSessionAsync")(url.asInstanceOf[js.Any], redirectUrl.asInstanceOf[js.Any], openOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserAuthSessionResult]]
     
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openBrowserAsync")
-    @js.native
-    def openBrowserAsync(url: String): js.Promise[WebBrowserResult] = js.native
-    @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.openBrowserAsync")
-    @js.native
-    def openBrowserAsync(url: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserResult] = js.native
+    @scala.inline
+    def openBrowserAsync(url: String): js.Promise[WebBrowserResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openBrowserAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebBrowserResult]]
+    @scala.inline
+    def openBrowserAsync(url: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBrowserAsync")(url.asInstanceOf[js.Any], browserParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebBrowserResult]]
   }
   
-  @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "featureObjectToString")
-  @js.native
-  def featureObjectToString(features: Record[String, _]): String = js.native
+  @scala.inline
+  def featureObjectToString(features: Record[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("featureObjectToString")(features.asInstanceOf[js.Any]).asInstanceOf[String]
 }

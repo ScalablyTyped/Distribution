@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClusterConfigurationRequest extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UpdateClusterConfigurationRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     Represents the configuration that you want MSK to use for the brokers in a cluster.
     
     */
-  var ConfigurationInfo: typings.awsSdk.kafkaMod.ConfigurationInfo = js.native
+  var ConfigurationInfo: typings.awsSdk.kafkaMod.ConfigurationInfo
   
   /**
     * 
     The version of the cluster that needs to be updated.
     
     */
-  var CurrentVersion: string = js.native
+  var CurrentVersion: string
 }
 object UpdateClusterConfigurationRequest {
   

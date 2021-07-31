@@ -2,23 +2,21 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesOwnerMod {
   
-  @js.native
   trait Owner extends StObject {
     
     /**
       * _DisplayName shape
       */
-    var DisplayName: js.UndefOr[String] = js.native
+    var DisplayName: js.UndefOr[String] = js.undefined
     
     /**
       * _ID shape
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
   }
   object Owner {
     

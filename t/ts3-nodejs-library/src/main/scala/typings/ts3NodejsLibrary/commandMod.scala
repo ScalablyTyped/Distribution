@@ -14,7 +14,6 @@ import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ValueTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandMod {
@@ -30,7 +29,7 @@ object commandMod {
     def buildFlags(): String = js.native
     
     /** builds the query string for options */
-    def buildOption(options: Record[String, _]): String = js.native
+    def buildOption(options: Record[String, js.Any]): String = js.native
     
     /**
       * builds the query string for options
@@ -2085,6 +2084,10 @@ object commandMod {
         x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Command.parseNumber */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("totalClients")(x.asInstanceOf[js.Any])
       
+      @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.Identifier.type")
+      @js.native
+      val `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Command.parseNumber */ js.Any = js.native
+      
       @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.Identifier.uid")
       @js.native
       def uid: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Command.parseString */ js.Any = js.native
@@ -2742,10 +2745,6 @@ object commandMod {
       def virtualserversTotalMaxclients_=(
         x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Command.parseNumber */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("virtualserversTotalMaxclients")(x.asInstanceOf[js.Any])
-      
-      @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.Identifier.type")
-      @js.native
-      val `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Command.parseNumber */ js.Any = js.native
     }
     
     @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.SNAKE_CASE_IDENTIFIER")
@@ -2758,26 +2757,22 @@ object commandMod {
       * Checks if a error has been received
       * @return The parsed String which is readable by the TeamSpeak Query
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.build")
-    @js.native
-    def build(command: Command): String = js.native
+    @scala.inline
+    def build(command: Command): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(command.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * the custom snapshot request parser
       * @param data snapshot string
       * @param cmd command object
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.buildSnapshotDeploy")
-    @js.native
-    def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version): String = js.native
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.buildSnapshotDeploy")
-    @js.native
-    def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version, snapshotVersion: String): String = js.native
+    @scala.inline
+    def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], hasVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version, snapshotVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], hasVersion.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** escapes a string */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.escape")
-    @js.native
-    def escape(str: String): String = js.native
+    @scala.inline
+    def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * escapes a key value pair
@@ -2785,133 +2780,113 @@ object commandMod {
       * @param {string|string[]} value the value or an array of values
       * @return the parsed String which is readable by the TeamSpeak Query
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.escapeKeyValue")
-    @js.native
-    def escapeKeyValue(key: String, value: String): String = js.native
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.escapeKeyValue")
-    @js.native
-    def escapeKeyValue(key: String, value: js.Array[String]): String = js.native
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.escapeKeyValue")
-    @js.native
-    def escapeKeyValue(key: String, value: Boolean): String = js.native
+    @scala.inline
+    def escapeKeyValue(key: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeKeyValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def escapeKeyValue(key: String, value: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeKeyValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def escapeKeyValue(key: String, value: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeKeyValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * retrieves the key value pair from a string
       * @param str the key value pair to unescape eg foo=bar
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.getKeyValue")
-    @js.native
-    def getKeyValue(str: String): Key = js.native
+    @scala.inline
+    def getKeyValue(str: String): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyValue")(str.asInstanceOf[js.Any]).asInstanceOf[Key]
     
     /**
       * retrieves the default parsers
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.getParsers")
-    @js.native
-    def getParsers(): Parsers = js.native
+    @scala.inline
+    def getParsers(): Parsers = ^.asInstanceOf[js.Dynamic].applyDynamic("getParsers")().asInstanceOf[Parsers]
     
     /**
       * checks if a version string has a minimum of x
       * @param minimum minimum the version string should have
       * @param version version string to compare
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.minVersion")
-    @js.native
-    def minVersion(minimum: String, version: String): Boolean = js.native
+    @scala.inline
+    def minVersion(minimum: String, version: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(minimum.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * parses a query response
       * @param data the query response received
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parse")
-    @js.native
-    def parse(hasRaw: PickParserArgumentraw): Response = js.native
+    @scala.inline
+    def parse(hasRaw: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(hasRaw.asInstanceOf[js.Any]).asInstanceOf[Response]
     
     /**
       * parses a number
       * @param value string to parse
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseBoolean")
-    @js.native
-    def parseBoolean(value: String): Boolean = js.native
+    @scala.inline
+    def parseBoolean(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * parses a number
       * @param value string to parse
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseNumber")
-    @js.native
-    def parseNumber(value: String): Double = js.native
+    @scala.inline
+    def parseNumber(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * parses a number array
       * @param value string to parse
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseNumberArray")
-    @js.native
-    def parseNumberArray(value: String): js.Array[Double] = js.native
+    @scala.inline
+    def parseNumberArray(value: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumberArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseRecursive")
-    @js.native
-    def parseRecursive(value: String): Response = js.native
+    @scala.inline
+    def parseRecursive(value: String): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRecursive")(value.asInstanceOf[js.Any]).asInstanceOf[Response]
     
     /**
       * parses a snapshot create request
       * @param param0 the custom snapshot response parser
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseSnapshotCreate")
-    @js.native
-    def parseSnapshotCreate(hasRaw: PickParserArgumentraw): Response = js.native
+    @scala.inline
+    def parseSnapshotCreate(hasRaw: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSnapshotCreate")(hasRaw.asInstanceOf[js.Any]).asInstanceOf[Response]
     
     /**
       * parses a string value
       * @param value string to parse
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseString")
-    @js.native
-    def parseString(value: String): String = js.native
+    @scala.inline
+    def parseString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * parses a string array
       * @param value string to parse
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseStringArray")
-    @js.native
-    def parseStringArray(value: String): js.Array[String] = js.native
+    @scala.inline
+    def parseStringArray(value: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStringArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Parses a value to the type which the key represents
       * @param k the key which should get looked up
       * @param v the value which should get parsed
       */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseValue")
-    @js.native
-    def parseValue(k: String): js.Any = js.native
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.parseValue")
-    @js.native
-    def parseValue(k: String, v: String): js.Any = js.native
+    @scala.inline
+    def parseValue(k: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseValue")(k.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def parseValue(k: String, v: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseValue")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** converts a string to camel case */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.toCamelCase")
-    @js.native
-    def toCamelCase(str: String): String = js.native
+    @scala.inline
+    def toCamelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCamelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** converts a string to snake case */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.toSnakeCase")
-    @js.native
-    def toSnakeCase(str: String): String = js.native
+    @scala.inline
+    def toSnakeCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSnakeCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** unescapes a string */
-    @JSImport("ts3-nodejs-library/lib/transport/Command", "Command.unescape")
-    @js.native
-    def unescape(str: String): String = js.native
+    @scala.inline
+    def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @js.native
     trait ParserArgument extends StObject {
       
-      var cmd: Instantiable = js.native
+      var cmd: Instantiable
       
-      var raw: String = js.native
+      var raw: String
     }
     object ParserArgument {
       
@@ -2934,16 +2909,33 @@ object commandMod {
     
     type ParserCallback = js.Function1[/* parser */ Parsers, Parsers]
     
-    @js.native
     trait Parsers extends StObject {
       
-      def request(cmd: Command): String = js.native
+      def request(cmd: Command): String
       @JSName("request")
-      var request_Original: RequestParser = js.native
+      var request_Original: RequestParser
       
-      def response(data: ParserArgument): Response = js.native
+      def response(data: ParserArgument): Response
       @JSName("response")
-      var response_Original: ResponseParser = js.native
+      var response_Original: ResponseParser
+    }
+    object Parsers {
+      
+      @scala.inline
+      def apply(request: /* cmd */ Command => String, response: /* data */ ParserArgument => Response): Parsers = {
+        val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request), response = js.Any.fromFunction1(response))
+        __obj.asInstanceOf[Parsers]
+      }
+      
+      @scala.inline
+      implicit class ParsersMutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setRequest(value: /* cmd */ Command => String): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setResponse(value: /* data */ ParserArgument => Response): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      }
     }
     
     type RequestParser = js.Function1[/* cmd */ Command, String]

@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfUserProfile extends StObject {
   
   /**
     * The user's IAM ARN.
     */
-  var IamUserArn: js.UndefOr[String] = js.native
+  var IamUserArn: js.UndefOr[String] = js.undefined
   
   /**
     * The user's name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The user's SSH public key.
     */
-  var SshPublicKey: js.UndefOr[String] = js.native
+  var SshPublicKey: js.UndefOr[String] = js.undefined
   
   /**
     * The user's SSH user name.
     */
-  var SshUsername: js.UndefOr[String] = js.native
+  var SshUsername: js.UndefOr[String] = js.undefined
 }
 object SelfUserProfile {
   

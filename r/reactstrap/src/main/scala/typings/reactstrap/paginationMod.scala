@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
@@ -20,20 +19,20 @@ object paginationMod {
   
   type Pagination = Component[PaginationProps, js.Object, js.Any]
   
-  @js.native
   trait PaginationProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var listClassName: js.UndefOr[String] = js.native
+    var listClassName: js.UndefOr[String] = js.undefined
     
-    var listTag: js.UndefOr[ElementType[_]] = js.native
+    var listTag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object PaginationProps {
     
@@ -59,7 +58,7 @@ object paginationMod {
       def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
       
       @scala.inline
-      def setListTag(value: ElementType[_]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
+      def setListTag(value: ElementType[js.Any]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListTagUndefined: Self = StObject.set(x, "listTag", js.undefined)
@@ -71,7 +70,7 @@ object paginationMod {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Copy extends StObject {
   
   /** The the original object. */
-  var originalObject: js.UndefOr[TargetReference] = js.native
+  var originalObject: js.UndefOr[TargetReference] = js.undefined
 }
 object Copy {
   

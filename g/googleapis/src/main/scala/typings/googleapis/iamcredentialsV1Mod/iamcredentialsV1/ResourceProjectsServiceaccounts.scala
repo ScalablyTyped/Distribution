@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iamcredentials/v1", "iamcredentials_v1.Resource$Projects$Serviceaccounts")
@@ -31,7 +30,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def generateAccessToken(): GaxiosPromise[SchemaGenerateAccessTokenResponse] = js.native
   def generateAccessToken(callback: BodyResponseCallback[SchemaGenerateAccessTokenResponse]): Unit = js.native
-  def generateAccessToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateAccessTokenResponse] = js.native
+  def generateAccessToken(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGenerateAccessTokenResponse] = js.native
   def generateAccessToken(params: ParamsResourceProjectsServiceaccountsGenerateaccesstoken): GaxiosPromise[SchemaGenerateAccessTokenResponse] = js.native
   def generateAccessToken(
     params: ParamsResourceProjectsServiceaccountsGenerateaccesstoken,
@@ -64,7 +63,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def generateIdToken(): GaxiosPromise[SchemaGenerateIdTokenResponse] = js.native
   def generateIdToken(callback: BodyResponseCallback[SchemaGenerateIdTokenResponse]): Unit = js.native
-  def generateIdToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateIdTokenResponse] = js.native
+  def generateIdToken(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGenerateIdTokenResponse] = js.native
   def generateIdToken(params: ParamsResourceProjectsServiceaccountsGenerateidtoken): GaxiosPromise[SchemaGenerateIdTokenResponse] = js.native
   def generateIdToken(
     params: ParamsResourceProjectsServiceaccountsGenerateidtoken,
@@ -97,7 +96,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def generateIdentityBindingAccessToken(): GaxiosPromise[SchemaGenerateIdentityBindingAccessTokenResponse] = js.native
   def generateIdentityBindingAccessToken(callback: BodyResponseCallback[SchemaGenerateIdentityBindingAccessTokenResponse]): Unit = js.native
-  def generateIdentityBindingAccessToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateIdentityBindingAccessTokenResponse] = js.native
+  def generateIdentityBindingAccessToken(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGenerateIdentityBindingAccessTokenResponse] = js.native
   def generateIdentityBindingAccessToken(params: ParamsResourceProjectsServiceaccountsGenerateidentitybindingaccesstoken): GaxiosPromise[SchemaGenerateIdentityBindingAccessTokenResponse] = js.native
   def generateIdentityBindingAccessToken(
     params: ParamsResourceProjectsServiceaccountsGenerateidentitybindingaccesstoken,
@@ -133,7 +132,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def signBlob(): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(callback: BodyResponseCallback[SchemaSignBlobResponse]): Unit = js.native
-  def signBlob(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignBlobResponse] = js.native
+  def signBlob(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(params: ParamsResourceProjectsServiceaccountsSignblob): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(
     params: ParamsResourceProjectsServiceaccountsSignblob,
@@ -166,7 +165,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def signJwt(): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(callback: BodyResponseCallback[SchemaSignJwtResponse]): Unit = js.native
-  def signJwt(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignJwtResponse] = js.native
+  def signJwt(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(params: ParamsResourceProjectsServiceaccountsSignjwt): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(
     params: ParamsResourceProjectsServiceaccountsSignjwt,

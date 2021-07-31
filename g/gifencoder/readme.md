@@ -10,9 +10,9 @@ Streaming server-side animated (and non-animated) gif generation for node.js
 | ------------------ | :-------------: |
 | Full name          | gifencoder |
 | Keywords           | gif, encode, encoder, GIF, encoding, animated, canvas, node-canvas, server, image, images, animations |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 558580 |
+| # releases         | 0 |
+| # dependents       | 66 |
+| # downloads        | 742371 |
 | # stars            | 8 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSessionsResponse extends StObject {
   
   /** `next_page_token` can be sent in a subsequent ListSessions call to fetch more of the matching sessions. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of requested sessions. */
-  var sessions: js.UndefOr[js.Array[Session]] = js.native
+  var sessions: js.UndefOr[js.Array[Session]] = js.undefined
 }
 object ListSessionsResponse {
   

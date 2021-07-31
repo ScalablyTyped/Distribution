@@ -17,7 +17,6 @@ import typings.searchParams.encodeMod.IOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
@@ -35,25 +34,24 @@ object routerMod {
     ActivationFn
   ]
   
-  @js.native
   trait Config extends StObject {
     
-    var decoders: Record[String, _] = js.native
+    var decoders: Record[String, js.Any]
     
-    var defaultParams: Record[String, _] = js.native
+    var defaultParams: Record[String, js.Any]
     
-    var encoders: Record[String, _] = js.native
+    var encoders: Record[String, js.Any]
     
-    var forwardMap: Record[String, _] = js.native
+    var forwardMap: Record[String, js.Any]
   }
   object Config {
     
     @scala.inline
     def apply(
-      decoders: Record[String, _],
-      defaultParams: Record[String, _],
-      encoders: Record[String, _],
-      forwardMap: Record[String, _]
+      decoders: Record[String, js.Any],
+      defaultParams: Record[String, js.Any],
+      encoders: Record[String, js.Any],
+      forwardMap: Record[String, js.Any]
     ): Config = {
       val __obj = js.Dynamic.literal(decoders = decoders.asInstanceOf[js.Any], defaultParams = defaultParams.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], forwardMap = forwardMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
@@ -63,26 +61,26 @@ object routerMod {
     implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDecoders(value: Record[String, _]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      def setDecoders(value: Record[String, js.Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDefaultParams(value: Record[String, _]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
+      def setDefaultParams(value: Record[String, js.Any]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEncoders(value: Record[String, _]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      def setEncoders(value: Record[String, js.Any]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setForwardMap(value: Record[String, _]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
+      def setForwardMap(value: Record[String, js.Any]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
     }
   }
   
   type DefaultDependencies = Record[String, js.Any]
   
-  @js.native
   trait Listener
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    def next(`val`: js.Any): js.Object = js.native
+    def next(`val`: js.Any): js.Object
   }
   object Listener {
     
@@ -113,32 +111,31 @@ object routerMod {
     Middleware
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var allowNotFound: Boolean = js.native
+    var allowNotFound: Boolean
     
-    var autoCleanUp: Boolean = js.native
+    var autoCleanUp: Boolean
     
-    var caseSensitive: Boolean = js.native
+    var caseSensitive: Boolean
     
-    var defaultParams: js.UndefOr[Params] = js.native
+    var defaultParams: js.UndefOr[Params] = js.undefined
     
-    var defaultRoute: js.UndefOr[String] = js.native
+    var defaultRoute: js.UndefOr[String] = js.undefined
     
-    var queryParams: js.UndefOr[IOptions] = js.native
+    var queryParams: js.UndefOr[IOptions] = js.undefined
     
-    var queryParamsMode: QueryParamsMode = js.native
+    var queryParamsMode: QueryParamsMode
     
-    var rewritePathOnMatch: Boolean = js.native
+    var rewritePathOnMatch: Boolean
     
-    var strictTrailingSlash: Boolean = js.native
+    var strictTrailingSlash: Boolean
     
-    var strongMatching: Boolean = js.native
+    var strongMatching: Boolean
     
-    var trailingSlashMode: TrailingSlashMode = js.native
+    var trailingSlashMode: TrailingSlashMode
     
-    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.native
+    var urlParamsEncoding: js.UndefOr[URLParamsEncodingType] = js.undefined
   }
   object Options {
     
@@ -210,16 +207,15 @@ object routerMod {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    var onStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onTransitionCancel: js.UndefOr[
         js.Function2[/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onTransitionError: js.UndefOr[
         js.Function3[
@@ -228,11 +224,11 @@ object routerMod {
           /* err */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onTransitionStart: js.UndefOr[
         js.Function2[/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onTransitionSuccess: js.UndefOr[
         js.Function3[
@@ -241,9 +237,9 @@ object routerMod {
           /* opts */ js.UndefOr[NavigationOptions], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var teardown: js.UndefOr[js.Function0[Unit]] = js.native
+    var teardown: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Plugin {
     
@@ -310,24 +306,23 @@ object routerMod {
     Plugin
   ]
   
-  @js.native
   trait Route[Dependencies /* <: DefaultDependencies */] extends StObject {
     
-    var canActivate: js.UndefOr[ActivationFnFactory[Dependencies]] = js.native
+    var canActivate: js.UndefOr[ActivationFnFactory[Dependencies]] = js.undefined
     
-    var children: js.UndefOr[js.Array[Route[Dependencies]]] = js.native
+    var children: js.UndefOr[js.Array[Route[Dependencies]]] = js.undefined
     
-    var decodeParams: js.UndefOr[js.Function1[/* pathParams */ Params, Params]] = js.native
+    var decodeParams: js.UndefOr[js.Function1[/* pathParams */ Params, Params]] = js.undefined
     
-    var defaultParams: js.UndefOr[Params] = js.native
+    var defaultParams: js.UndefOr[Params] = js.undefined
     
-    var encodeParams: js.UndefOr[js.Function1[/* stateParams */ Params, Params]] = js.native
+    var encodeParams: js.UndefOr[js.Function1[/* stateParams */ Params, Params]] = js.undefined
     
-    var forwardTo: js.UndefOr[String] = js.native
+    var forwardTo: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
   }
   object Route {
     
@@ -338,7 +333,7 @@ object routerMod {
     }
     
     @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[_], Dependencies /* <: DefaultDependencies */] (val x: Self with Route[Dependencies]) extends AnyVal {
+    implicit class RouteMutableBuilder[Self <: Route[?], Dependencies /* <: DefaultDependencies */] (val x: Self & Route[Dependencies]) extends AnyVal {
       
       @scala.inline
       def setCanActivate(
@@ -432,7 +427,7 @@ object routerMod {
       factory: js.Function2[
           /* router */ js.UndefOr[Router[Dependencies]], 
           /* dependencies */ js.UndefOr[Dependencies], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     
@@ -464,28 +459,13 @@ object routerMod {
     def invokeEventListeners(eventName: js.Any, args: js.Any*): Unit = js.native
     
     def isActive(name: String): Boolean = js.native
-    def isActive(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      strictEquality: js.UndefOr[scala.Nothing],
-      ignoreQueryParams: Boolean
-    ): Boolean = js.native
-    def isActive(name: String, params: js.UndefOr[scala.Nothing], strictEquality: Boolean): Boolean = js.native
-    def isActive(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      strictEquality: Boolean,
-      ignoreQueryParams: Boolean
-    ): Boolean = js.native
+    def isActive(name: String, params: Unit, strictEquality: Boolean): Boolean = js.native
+    def isActive(name: String, params: Unit, strictEquality: Boolean, ignoreQueryParams: Boolean): Boolean = js.native
+    def isActive(name: String, params: Unit, strictEquality: Unit, ignoreQueryParams: Boolean): Boolean = js.native
     def isActive(name: String, params: Params): Boolean = js.native
-    def isActive(
-      name: String,
-      params: Params,
-      strictEquality: js.UndefOr[scala.Nothing],
-      ignoreQueryParams: Boolean
-    ): Boolean = js.native
     def isActive(name: String, params: Params, strictEquality: Boolean): Boolean = js.native
     def isActive(name: String, params: Params, strictEquality: Boolean, ignoreQueryParams: Boolean): Boolean = js.native
+    def isActive(name: String, params: Params, strictEquality: Unit, ignoreQueryParams: Boolean): Boolean = js.native
     
     def isStarted(): Boolean = js.native
     
@@ -493,45 +473,21 @@ object routerMod {
     def makeNotFoundState(path: String, options: NavigationOptions): State = js.native
     
     def makeState(name: String): State = js.native
-    def makeState(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      meta: js.UndefOr[scala.Nothing],
-      forceId: Double
-    ): State = js.native
-    def makeState(name: String, params: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], meta: js.Any): State = js.native
-    def makeState(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      path: js.UndefOr[scala.Nothing],
-      meta: js.Any,
-      forceId: Double
-    ): State = js.native
-    def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String): State = js.native
-    def makeState(
-      name: String,
-      params: js.UndefOr[scala.Nothing],
-      path: String,
-      meta: js.UndefOr[scala.Nothing],
-      forceId: Double
-    ): State = js.native
-    def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String, meta: js.Any): State = js.native
-    def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: String): State = js.native
+    def makeState(name: String, params: Unit, path: String, meta: js.Any): State = js.native
+    def makeState(name: String, params: Unit, path: String, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: String, meta: Unit, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: Unit, meta: js.Any): State = js.native
+    def makeState(name: String, params: Unit, path: Unit, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: Unit, meta: Unit, forceId: Double): State = js.native
     def makeState(name: String, params: Params): State = js.native
-    def makeState(
-      name: String,
-      params: Params,
-      path: js.UndefOr[scala.Nothing],
-      meta: js.UndefOr[scala.Nothing],
-      forceId: Double
-    ): State = js.native
-    def makeState(name: String, params: Params, path: js.UndefOr[scala.Nothing], meta: js.Any): State = js.native
-    def makeState(name: String, params: Params, path: js.UndefOr[scala.Nothing], meta: js.Any, forceId: Double): State = js.native
     def makeState(name: String, params: Params, path: String): State = js.native
-    def makeState(name: String, params: Params, path: String, meta: js.UndefOr[scala.Nothing], forceId: Double): State = js.native
     def makeState(name: String, params: Params, path: String, meta: js.Any): State = js.native
     def makeState(name: String, params: Params, path: String, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Params, path: String, meta: Unit, forceId: Double): State = js.native
+    def makeState(name: String, params: Params, path: Unit, meta: js.Any): State = js.native
+    def makeState(name: String, params: Params, path: Unit, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Params, path: Unit, meta: Unit, forceId: Double): State = js.native
     
     def matchPath(path: String): State | Null = js.native
     def matchPath(path: String, source: String): State | Null = js.native
@@ -583,12 +539,11 @@ object routerMod {
   
   type SubscribeFn = js.Function1[/* state */ SubscribeState, Unit]
   
-  @js.native
   trait SubscribeState extends StObject {
     
-    var previousRoute: State = js.native
+    var previousRoute: State
     
-    var route: State = js.native
+    var route: State
   }
   object SubscribeState {
     
@@ -609,11 +564,25 @@ object routerMod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
     @JSName("unsubscribe")
-    var unsubscribe_Original: Unsubscribe = js.native
+    var unsubscribe_Original: Unsubscribe
+  }
+  object Subscription {
+    
+    @scala.inline
+    def apply(unsubscribe: () => Unit): Subscription = {
+      val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
+      __obj.asInstanceOf[Subscription]
+    }
+    
+    @scala.inline
+    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    }
   }
 }

@@ -5,7 +5,6 @@ import typings.std.Document
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object base {
   
   @js.native
-  trait Container extends EventTarget {
+  trait Container
+    extends StObject
+       with EventTarget {
     
     /**
       * Adds a child element to be rendered within the container element.
@@ -105,7 +106,9 @@ object base {
   }
   
   @js.native
-  trait Element extends EventTarget {
+  trait Element
+    extends StObject
+       with EventTarget {
     
     /**
       * This method adds a CSS class to this UI element (if it is not already present).

@@ -3,26 +3,26 @@ package typings.awsSdkRegionProvider
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromEnvMod {
+  
+  @JSImport("@aws-sdk/region-provider/build/fromEnv", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/region-provider/build/fromEnv", "ENV_REGION")
   @js.native
   val ENV_REGION: /* "AWS_REGION" */ String = js.native
   
-  @JSImport("@aws-sdk/region-provider/build/fromEnv", "fromEnv")
-  @js.native
-  def fromEnv(): Provider[String] = js.native
-  @JSImport("@aws-sdk/region-provider/build/fromEnv", "fromEnv")
-  @js.native
-  def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = js.native
+  @scala.inline
+  def fromEnv(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[Provider[String]]
+  @scala.inline
+  def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(hasEnvironmentVariableName.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
-  @js.native
   trait EnvConfiguration extends StObject {
     
-    var environmentVariableName: js.UndefOr[String] = js.native
+    var environmentVariableName: js.UndefOr[String] = js.undefined
   }
   object EnvConfiguration {
     

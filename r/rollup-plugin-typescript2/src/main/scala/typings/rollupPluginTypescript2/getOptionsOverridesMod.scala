@@ -6,19 +6,19 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ParsedCommandLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOptionsOverridesMod {
   
-  @JSImport("rollup-plugin-typescript2/dist/get-options-overrides", "createFilter")
+  @JSImport("rollup-plugin-typescript2/dist/get-options-overrides", JSImport.Namespace)
   @js.native
-  def createFilter(context: IContext, pluginOptions: IOptions, parsedConfig: ParsedCommandLine): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rollup-plugin-typescript2/dist/get-options-overrides", "getOptionsOverrides")
-  @js.native
-  def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions): CompilerOptions = js.native
-  @JSImport("rollup-plugin-typescript2/dist/get-options-overrides", "getOptionsOverrides")
-  @js.native
-  def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = js.native
+  @scala.inline
+  def createFilter(context: IContext, pluginOptions: IOptions, parsedConfig: ParsedCommandLine): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], parsedConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRootCwd.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
+  @scala.inline
+  def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRootCwd.asInstanceOf[js.Any], preParsedTsconfig.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
 }

@@ -3,88 +3,86 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batch {
   
-  @js.native
   trait ComputeEnvironmentComputeResources extends StObject {
     
     /**
       * The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
       */
-    var allocationStrategy: js.UndefOr[String] = js.native
+    var allocationStrategy: js.UndefOr[String] = js.undefined
     
     /**
       * Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
       */
-    var bidPercentage: js.UndefOr[Double] = js.native
+    var bidPercentage: js.UndefOr[Double] = js.undefined
     
     /**
       * The desired number of EC2 vCPUS in the compute environment.
       */
-    var desiredVcpus: Double = js.native
+    var desiredVcpus: Double
     
     /**
       * The EC2 key pair that is used for instances launched in the compute environment.
       */
-    var ec2KeyPair: js.UndefOr[String] = js.native
+    var ec2KeyPair: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
       */
-    var imageId: js.UndefOr[String] = js.native
+    var imageId: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.
       */
-    var instanceRole: String = js.native
+    var instanceRole: String
     
     /**
       * A list of instance types that may be launched.
       */
-    var instanceTypes: js.Array[String] = js.native
+    var instanceTypes: js.Array[String]
     
     /**
       * The launch template to use for your compute resources. See details below.
       */
-    var launchTemplate: js.UndefOr[ComputeEnvironmentComputeResourcesLaunchTemplate] = js.native
+    var launchTemplate: js.UndefOr[ComputeEnvironmentComputeResourcesLaunchTemplate] = js.undefined
     
     /**
       * The maximum number of EC2 vCPUs that an environment can reach.
       */
-    var maxVcpus: Double = js.native
+    var maxVcpus: Double
     
     /**
       * The minimum number of EC2 vCPUs that an environment should maintain.
       */
-    var minVcpus: Double = js.native
+    var minVcpus: Double
     
     /**
       * A list of EC2 security group that are associated with instances launched in the compute environment.
       */
-    var securityGroupIds: js.Array[String] = js.native
+    var securityGroupIds: js.Array[String]
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments.
       */
-    var spotIamFleetRole: js.UndefOr[String] = js.native
+    var spotIamFleetRole: js.UndefOr[String] = js.undefined
     
     /**
       * A list of VPC subnets into which the compute resources are launched.
       */
-    var subnets: js.Array[String] = js.native
+    var subnets: js.Array[String]
     
     /**
       * Key-value pair tags to be applied to resources that are launched in the compute environment.
       */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The type of compute environment. Valid items are `EC2` or `SPOT`.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ComputeEnvironmentComputeResources {
     
@@ -184,23 +182,22 @@ object batch {
     }
   }
   
-  @js.native
   trait ComputeEnvironmentComputeResourcesLaunchTemplate extends StObject {
     
     /**
       * ID of the launch template. You must specify either the launch template ID or launch template name in the request, but not both.
       */
-    var launchTemplateId: js.UndefOr[String] = js.native
+    var launchTemplateId: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the launch template.
       */
-    var launchTemplateName: js.UndefOr[String] = js.native
+    var launchTemplateName: js.UndefOr[String] = js.undefined
     
     /**
       * The version number of the launch template. Default: The default version of the launch template.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ComputeEnvironmentComputeResourcesLaunchTemplate {
     
@@ -233,12 +230,11 @@ object batch {
     }
   }
   
-  @js.native
   trait GetJobQueueComputeEnvironmentOrder extends StObject {
     
-    var computeEnvironment: String = js.native
+    var computeEnvironment: String
     
-    var order: Double = js.native
+    var order: Double
   }
   object GetJobQueueComputeEnvironmentOrder {
     
@@ -259,13 +255,12 @@ object batch {
     }
   }
   
-  @js.native
   trait JobDefinitionRetryStrategy extends StObject {
     
     /**
       * The number of times to move a job to the `RUNNABLE` status. You may specify between `1` and `10` attempts.
       */
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
   }
   object JobDefinitionRetryStrategy {
     
@@ -286,13 +281,12 @@ object batch {
     }
   }
   
-  @js.native
   trait JobDefinitionTimeout extends StObject {
     
     /**
       * The time duration in seconds after which AWS Batch terminates your jobs if they have not finished. The minimum value for the timeout is `60` seconds.
       */
-    var attemptDurationSeconds: js.UndefOr[Double] = js.native
+    var attemptDurationSeconds: js.UndefOr[Double] = js.undefined
   }
   object JobDefinitionTimeout {
     

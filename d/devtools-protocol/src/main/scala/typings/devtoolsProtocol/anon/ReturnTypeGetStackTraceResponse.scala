@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.GetStackTraceRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetStackTraceResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetStackTraceResponse extends StObject {
   
-  var paramsType: js.Array[GetStackTraceRequest] = js.native
+  var paramsType: js.Array[GetStackTraceRequest]
   
-  var returnType: GetStackTraceResponse = js.native
+  var returnType: GetStackTraceResponse
 }
 object ReturnTypeGetStackTraceResponse {
   

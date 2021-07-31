@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDistributionsByRealtimeLogConfigRequest extends StObject {
   
   /**
     * Use this field when paginating results to indicate where to begin in your list of distributions. The response includes distributions in the list that occur after the marker. To get the next page of the list, set this field’s value to the value of NextMarker from the current page’s response.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of distributions that you want in the response.
     */
-  var MaxItems: js.UndefOr[String] = js.native
+  var MaxItems: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the real-time log configuration whose associated distributions you want to list.
     */
-  var RealtimeLogConfigArn: js.UndefOr[String] = js.native
+  var RealtimeLogConfigArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the real-time log configuration whose associated distributions you want to list.
     */
-  var RealtimeLogConfigName: js.UndefOr[String] = js.native
+  var RealtimeLogConfigName: js.UndefOr[String] = js.undefined
 }
 object ListDistributionsByRealtimeLogConfigRequest {
   

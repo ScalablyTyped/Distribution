@@ -2,27 +2,25 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMobileBroadbandAccountWatcher extends StObject {
   
-  var onaccountadded: js.Any = js.native
+  var onaccountadded: js.Any
   
-  var onaccountremoved: js.Any = js.native
+  var onaccountremoved: js.Any
   
-  var onaccountupdated: js.Any = js.native
+  var onaccountupdated: js.Any
   
-  var onenumerationcompleted: js.Any = js.native
+  var onenumerationcompleted: js.Any
   
-  var onstopped: js.Any = js.native
+  var onstopped: js.Any
   
-  def start(): Unit = js.native
+  def start(): Unit
   
-  var status: MobileBroadbandAccountWatcherStatus = js.native
+  var status: MobileBroadbandAccountWatcherStatus
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object IMobileBroadbandAccountWatcher {
   

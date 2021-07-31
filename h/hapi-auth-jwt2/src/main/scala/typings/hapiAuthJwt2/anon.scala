@@ -2,17 +2,15 @@ package typings.hapiAuthJwt2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Credentials extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object Credentials {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExtraInfo extends StObject {
     
-    var extraInfo: js.UndefOr[typings.hapiAuthJwt2.mod.ExtraInfo] = js.native
+    var extraInfo: js.UndefOr[typings.hapiAuthJwt2.mod.ExtraInfo] = js.undefined
     
-    var key: String | js.Array[String] = js.native
+    var key: String | js.Array[String]
   }
   object ExtraInfo {
     

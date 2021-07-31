@@ -2,34 +2,32 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An offline file annotation request.
   */
-@js.native
 trait SchemaAsyncAnnotateFileRequest extends StObject {
   
   /**
     * Required. Requested features.
     */
-  var features: js.UndefOr[js.Array[SchemaFeature]] = js.native
+  var features: js.UndefOr[js.Array[SchemaFeature]] = js.undefined
   
   /**
     * Additional context that may accompany the image(s) in the file.
     */
-  var imageContext: js.UndefOr[SchemaImageContext] = js.native
+  var imageContext: js.UndefOr[SchemaImageContext] = js.undefined
   
   /**
     * Required. Information about the input file.
     */
-  var inputConfig: js.UndefOr[SchemaInputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaInputConfig] = js.undefined
   
   /**
     * Required. The desired output location and metadata (e.g. format).
     */
-  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.native
+  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.undefined
 }
 object SchemaAsyncAnnotateFileRequest {
   

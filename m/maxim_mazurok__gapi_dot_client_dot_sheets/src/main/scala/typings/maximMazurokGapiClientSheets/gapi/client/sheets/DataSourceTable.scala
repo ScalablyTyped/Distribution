@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceTable extends StObject {
   
   /** The type to select columns for the data source table. Defaults to SELECTED. */
-  var columnSelectionType: js.UndefOr[String] = js.native
+  var columnSelectionType: js.UndefOr[String] = js.undefined
   
   /** Columns selected for the data source table. The column_selection_type must be SELECTED. */
-  var columns: js.UndefOr[js.Array[DataSourceColumnReference]] = js.native
+  var columns: js.UndefOr[js.Array[DataSourceColumnReference]] = js.undefined
   
   /** Output only. The data execution status. */
-  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.native
+  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.undefined
   
   /** The ID of the data source the data source table is associated with. */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /** Filter specifications in the data source table. */
-  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.native
+  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.undefined
   
   /** The limit of rows to return. If not set, a default limit is applied. Please refer to the Sheets editor for the default and max limit. */
-  var rowLimit: js.UndefOr[Double] = js.native
+  var rowLimit: js.UndefOr[Double] = js.undefined
   
   /** Sort specifications in the data source table. The result of the data source table is sorted based on the sort specifications in order. */
-  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
 }
 object DataSourceTable {
   

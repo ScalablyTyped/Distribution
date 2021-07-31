@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCertificateManagerCertificateDomainValidationOption extends StObject {
   
   /**
     * A fully qualified domain name (FQDN) in the certificate.
     */
-  var DomainName: js.UndefOr[NonEmptyString] = js.native
+  var DomainName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The CNAME record that is added to the DNS database for domain validation.
     */
-  var ResourceRecord: js.UndefOr[AwsCertificateManagerCertificateResourceRecord] = js.native
+  var ResourceRecord: js.UndefOr[AwsCertificateManagerCertificateResourceRecord] = js.undefined
   
   /**
     * The domain name that AWS Certificate Manager uses to send domain validation emails.
     */
-  var ValidationDomain: js.UndefOr[NonEmptyString] = js.native
+  var ValidationDomain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of email addresses that AWS Certificate Manager uses to send domain validation emails.
     */
-  var ValidationEmails: js.UndefOr[StringList] = js.native
+  var ValidationEmails: js.UndefOr[StringList] = js.undefined
   
   /**
     * The method used to validate the domain name.
     */
-  var ValidationMethod: js.UndefOr[NonEmptyString] = js.native
+  var ValidationMethod: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The validation status of the domain name.
     */
-  var ValidationStatus: js.UndefOr[NonEmptyString] = js.native
+  var ValidationStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCertificateManagerCertificateDomainValidationOption {
   

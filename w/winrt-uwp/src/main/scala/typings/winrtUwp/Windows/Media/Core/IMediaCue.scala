@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the interface implemented by all media cues. */
-@js.native
 trait IMediaCue extends StObject {
   
   /** Gets or sets the duration of the media cue. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets or sets the identifier for the media cue. */
-  var id: String = js.native
+  var id: String
   
   /** Gets or sets the start time of the media cue. */
-  var startTime: Double = js.native
+  var startTime: Double
 }
 object IMediaCue {
   

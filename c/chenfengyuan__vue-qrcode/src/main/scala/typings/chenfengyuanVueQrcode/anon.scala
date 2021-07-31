@@ -18,33 +18,31 @@ import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeStrings.medium
 import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeStrings.quartile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[Dark] = js.native
+    var color: js.UndefOr[Dark] = js.undefined
     
     // Error correction level.
-    var errorCorrectionLevel: js.UndefOr[low | medium | quartile | high | L | M | Q | H] = js.native
+    var errorCorrectionLevel: js.UndefOr[low | medium | quartile | high | L | M | Q | H] = js.undefined
     
     // Define how much wide the quiet zone should be.
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     // Mask pattern used to mask the symbol.
-    var maskPattern: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+    var maskPattern: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
     
     // Scale factor.
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     // QR Code version.
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
     
     // Forces a specific width for the output image.
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Color {
     
@@ -101,12 +99,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dark extends StObject {
     
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
   }
   object Dark {
     

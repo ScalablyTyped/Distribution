@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,21 +20,17 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: js.UndefOr[scala.Nothing],
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusWebviewWebviewEvent): Unit = js.native
-  def addEventListener(event: PlusWebviewWebviewEvent, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusWebviewWebviewEvent,
     listener: js.Function1[/* result */ js.Any, Unit],
     capture: Boolean
   ): Unit = js.native
+  def addEventListener(event: PlusWebviewWebviewEvent, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
     * Webview窗口内容动画
@@ -45,7 +40,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def animate(): Unit = js.native
-  def animate(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+  def animate(options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def animate(options: PlusWebviewWebviewContentAnimationOptions): Unit = js.native
   def animate(options: PlusWebviewWebviewContentAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
   
@@ -112,27 +107,23 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def checkRenderedContent(): Unit = js.native
+  def checkRenderedContent(options: Unit, successCallback: js.Function0[Unit]): Unit = js.native
   def checkRenderedContent(
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def checkRenderedContent(options: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
-  def checkRenderedContent(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def checkRenderedContent(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def checkRenderedContent(options: PlusWebviewWebviewRenderedEventOptions): Unit = js.native
-  def checkRenderedContent(
-    options: PlusWebviewWebviewRenderedEventOptions,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def checkRenderedContent(options: PlusWebviewWebviewRenderedEventOptions, successCallback: js.Function0[Unit]): Unit = js.native
   def checkRenderedContent(
     options: PlusWebviewWebviewRenderedEventOptions,
     successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def checkRenderedContent(
+    options: PlusWebviewWebviewRenderedEventOptions,
+    successCallback: Unit,
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   
@@ -159,21 +150,13 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def close(): Unit = js.native
-  def close(
-    aniClose: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def close(aniClose: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-  def close(aniClose: js.UndefOr[scala.Nothing], duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def close(aniClose: Unit, duration: Double): Unit = js.native
+  def close(aniClose: Unit, duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def close(aniClose: Unit, duration: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
   def close(aniClose: PlusWebviewAnimationTypeClose): Unit = js.native
-  def close(
-    aniClose: PlusWebviewAnimationTypeClose,
-    duration: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
   def close(aniClose: PlusWebviewAnimationTypeClose, duration: Double): Unit = js.native
   def close(aniClose: PlusWebviewAnimationTypeClose, duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def close(aniClose: PlusWebviewAnimationTypeClose, duration: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
   
   /**
     * 设置Webview窗口的滑屏操作手势
@@ -184,20 +167,20 @@ trait PlusWebviewWebviewObject extends StObject {
     */
   def drag(): Unit = js.native
   def drag(
-    options: js.UndefOr[scala.Nothing],
-    otherView: js.UndefOr[scala.Nothing],
+    options: Unit,
+    otherView: Unit,
     callback: js.Function1[/* result */ PlusWebviewWebviewDragEvent, Unit]
   ): Unit = js.native
-  def drag(options: js.UndefOr[scala.Nothing], otherView: PlusWebviewWebviewDragOtherViewOptions): Unit = js.native
+  def drag(options: Unit, otherView: PlusWebviewWebviewDragOtherViewOptions): Unit = js.native
   def drag(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     otherView: PlusWebviewWebviewDragOtherViewOptions,
     callback: js.Function1[/* result */ PlusWebviewWebviewDragEvent, Unit]
   ): Unit = js.native
   def drag(options: PlusWebviewWebviewDragOptions): Unit = js.native
   def drag(
     options: PlusWebviewWebviewDragOptions,
-    otherView: js.UndefOr[scala.Nothing],
+    otherView: Unit,
     callback: js.Function1[/* result */ PlusWebviewWebviewDragEvent, Unit]
   ): Unit = js.native
   def drag(options: PlusWebviewWebviewDragOptions, otherView: PlusWebviewWebviewDragOtherViewOptions): Unit = js.native
@@ -214,75 +197,66 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def draw(): Unit = js.native
+  def draw(bitmap: Unit, successCallback: js.Function0[Unit]): Unit = js.native
   def draw(
-    bitmap: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
-  def draw(
-    bitmap: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def draw(
-    bitmap: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
-  def draw(bitmap: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
-  def draw(
-    bitmap: js.UndefOr[scala.Nothing],
-    successCallback: js.Function0[Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
-  def draw(
-    bitmap: js.UndefOr[scala.Nothing],
+    bitmap: Unit,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def draw(
-    bitmap: js.UndefOr[scala.Nothing],
+    bitmap: Unit,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit],
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
+  def draw(
+    bitmap: Unit,
+    successCallback: js.Function0[Unit],
+    errorCallback: Unit,
+    options: PlusWebviewWebviewDrawOptions
+  ): Unit = js.native
+  def draw(bitmap: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def draw(
+    bitmap: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusWebviewWebviewDrawOptions
+  ): Unit = js.native
+  def draw(bitmap: Unit, successCallback: Unit, errorCallback: Unit, options: PlusWebviewWebviewDrawOptions): Unit = js.native
   def draw(bitmap: PlusNativeObjBitmap): Unit = js.native
-  def draw(
-    bitmap: PlusNativeObjBitmap,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
-  def draw(
-    bitmap: PlusNativeObjBitmap,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def draw(
-    bitmap: PlusNativeObjBitmap,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
   def draw(bitmap: PlusNativeObjBitmap, successCallback: js.Function0[Unit]): Unit = js.native
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: js.Function0[Unit],
-    errorCallback: js.UndefOr[scala.Nothing],
-    options: PlusWebviewWebviewDrawOptions
-  ): Unit = js.native
-  def draw(
-    bitmap: PlusNativeObjBitmap,
-    successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusWebviewWebviewDrawOptions
+  ): Unit = js.native
+  def draw(
+    bitmap: PlusNativeObjBitmap,
+    successCallback: js.Function0[Unit],
+    errorCallback: Unit,
+    options: PlusWebviewWebviewDrawOptions
+  ): Unit = js.native
+  def draw(
+    bitmap: PlusNativeObjBitmap,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def draw(
+    bitmap: PlusNativeObjBitmap,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusWebviewWebviewDrawOptions
+  ): Unit = js.native
+  def draw(
+    bitmap: PlusNativeObjBitmap,
+    successCallback: Unit,
+    errorCallback: Unit,
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
   
@@ -344,7 +318,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  def getSubNViews(): js.Array[_] = js.native
+  def getSubNViews(): js.Array[js.Any] = js.native
   
   /**
     * 获取Webview窗口加载HTML页面的标题
@@ -379,21 +353,13 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def hide(): Unit = js.native
-  def hide(
-    aniHide: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def hide(aniHide: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-  def hide(aniHide: js.UndefOr[scala.Nothing], duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def hide(aniHide: Unit, duration: Double): Unit = js.native
+  def hide(aniHide: Unit, duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def hide(aniHide: Unit, duration: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
   def hide(aniHide: PlusWebviewAnimationTypeClose): Unit = js.native
-  def hide(
-    aniHide: PlusWebviewAnimationTypeClose,
-    duration: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
   def hide(aniHide: PlusWebviewAnimationTypeClose, duration: Double): Unit = js.native
   def hide(aniHide: PlusWebviewAnimationTypeClose, duration: Double, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def hide(aniHide: PlusWebviewAnimationTypeClose, duration: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
   
   /**
     * 隐藏标题栏上按钮的红点
@@ -446,7 +412,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def listenResourceLoading(): Unit = js.native
-  def listenResourceLoading(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def listenResourceLoading(options: Unit, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def listenResourceLoading(options: PlusWebviewWebviewListenResourceOptions): Unit = js.native
   def listenResourceLoading(
     options: PlusWebviewWebviewListenResourceOptions,
@@ -460,9 +426,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def loadData(): Unit = js.native
-  def loadData(data: js.UndefOr[scala.Nothing], options: PlusWebviewWebviewLoadDataOptions): Unit = js.native
   def loadData(data: String): Unit = js.native
   def loadData(data: String, options: PlusWebviewWebviewLoadDataOptions): Unit = js.native
+  def loadData(data: Unit, options: PlusWebviewWebviewLoadDataOptions): Unit = js.native
   
   /**
     * 加载新URL页面
@@ -471,9 +437,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def loadURL(): Unit = js.native
-  def loadURL(url: js.UndefOr[scala.Nothing], additionalHttpHeaders: js.Any): Unit = js.native
   def loadURL(url: String): Unit = js.native
   def loadURL(url: String, additionalHttpHeaders: js.Any): Unit = js.native
+  def loadURL(url: Unit, additionalHttpHeaders: js.Any): Unit = js.native
   
   /**
     * 获取Webview窗口对象的原生（Native.JS）实例对象
@@ -551,7 +517,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def overrideUrlLoading(): Unit = js.native
-  def overrideUrlLoading(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def overrideUrlLoading(options: Unit, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def overrideUrlLoading(options: PlusWebviewWebviewOverrideUrlOptions): Unit = js.native
   def overrideUrlLoading(options: PlusWebviewWebviewOverrideUrlOptions, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
@@ -590,7 +556,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def removeEventListener(): Unit = js.native
-  def removeEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def removeEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def removeEventListener(event: PlusWebviewWebviewEvent): Unit = js.native
   def removeEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
@@ -712,7 +678,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def setPullToRefresh(): Unit = js.native
-  def setPullToRefresh(style: js.UndefOr[scala.Nothing], refreshCB: js.Function0[Unit]): Unit = js.native
+  def setPullToRefresh(style: Unit, refreshCB: js.Function0[Unit]): Unit = js.native
   def setPullToRefresh(style: PlusWebviewWebviewPullToRefreshStyles): Unit = js.native
   def setPullToRefresh(style: PlusWebviewWebviewPullToRefreshStyles, refreshCB: js.Function0[Unit]): Unit = js.native
   
@@ -750,9 +716,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def setTitleNViewButtonBadge(): Unit = js.native
-  def setTitleNViewButtonBadge(index: js.UndefOr[scala.Nothing], text: String): Unit = js.native
   def setTitleNViewButtonBadge(index: Double): Unit = js.native
   def setTitleNViewButtonBadge(index: Double, text: String): Unit = js.native
+  def setTitleNViewButtonBadge(index: Unit, text: String): Unit = js.native
   
   /**
     * 设置Webview窗口是否可见
@@ -771,67 +737,49 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def show(): Unit = js.native
+  def show(aniShow: Unit, duration: Double): Unit = js.native
+  def show(aniShow: Unit, duration: Double, showedCB: js.Function0[Unit]): Unit = js.native
   def show(
-    aniShow: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def show(
-    aniShow: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.Function0[Unit]
-  ): Unit = js.native
-  def show(
-    aniShow: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.Function0[Unit],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def show(aniShow: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-  def show(
-    aniShow: js.UndefOr[scala.Nothing],
-    duration: Double,
-    showedCB: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def show(aniShow: js.UndefOr[scala.Nothing], duration: Double, showedCB: js.Function0[Unit]): Unit = js.native
-  def show(
-    aniShow: js.UndefOr[scala.Nothing],
+    aniShow: Unit,
     duration: Double,
     showedCB: js.Function0[Unit],
     extras: PlusWebviewWebviewExtraOptions
   ): Unit = js.native
+  def show(aniShow: Unit, duration: Double, showedCB: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
+  def show(aniShow: Unit, duration: Unit, showedCB: js.Function0[Unit]): Unit = js.native
+  def show(
+    aniShow: Unit,
+    duration: Unit,
+    showedCB: js.Function0[Unit],
+    extras: PlusWebviewWebviewExtraOptions
+  ): Unit = js.native
+  def show(aniShow: Unit, duration: Unit, showedCB: Unit, extras: PlusWebviewWebviewExtraOptions): Unit = js.native
   def show(aniShow: PlusWebviewAnimationTypeShow): Unit = js.native
-  def show(
-    aniShow: PlusWebviewAnimationTypeShow,
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
-  def show(
-    aniShow: PlusWebviewAnimationTypeShow,
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.Function0[Unit]
-  ): Unit = js.native
-  def show(
-    aniShow: PlusWebviewAnimationTypeShow,
-    duration: js.UndefOr[scala.Nothing],
-    showedCB: js.Function0[Unit],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
   def show(aniShow: PlusWebviewAnimationTypeShow, duration: Double): Unit = js.native
-  def show(
-    aniShow: PlusWebviewAnimationTypeShow,
-    duration: Double,
-    showedCB: js.UndefOr[scala.Nothing],
-    extras: PlusWebviewWebviewExtraOptions
-  ): Unit = js.native
   def show(aniShow: PlusWebviewAnimationTypeShow, duration: Double, showedCB: js.Function0[Unit]): Unit = js.native
   def show(
     aniShow: PlusWebviewAnimationTypeShow,
     duration: Double,
     showedCB: js.Function0[Unit],
+    extras: PlusWebviewWebviewExtraOptions
+  ): Unit = js.native
+  def show(
+    aniShow: PlusWebviewAnimationTypeShow,
+    duration: Double,
+    showedCB: Unit,
+    extras: PlusWebviewWebviewExtraOptions
+  ): Unit = js.native
+  def show(aniShow: PlusWebviewAnimationTypeShow, duration: Unit, showedCB: js.Function0[Unit]): Unit = js.native
+  def show(
+    aniShow: PlusWebviewAnimationTypeShow,
+    duration: Unit,
+    showedCB: js.Function0[Unit],
+    extras: PlusWebviewWebviewExtraOptions
+  ): Unit = js.native
+  def show(
+    aniShow: PlusWebviewAnimationTypeShow,
+    duration: Unit,
+    showedCB: Unit,
     extras: PlusWebviewWebviewExtraOptions
   ): Unit = js.native
   

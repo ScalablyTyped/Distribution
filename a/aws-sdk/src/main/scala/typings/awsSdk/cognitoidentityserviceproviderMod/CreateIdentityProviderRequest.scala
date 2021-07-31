@@ -2,41 +2,39 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIdentityProviderRequest extends StObject {
   
   /**
     * A mapping of identity provider attributes to standard and custom user pool attributes.
     */
-  var AttributeMapping: js.UndefOr[AttributeMappingType] = js.native
+  var AttributeMapping: js.UndefOr[AttributeMappingType] = js.undefined
   
   /**
     * A list of identity provider identifiers.
     */
-  var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.native
+  var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.undefined
   
   /**
     * The identity provider details. The following list describes the provider detail keys for each identity provider type.   For Google and Login with Amazon:   client_id   client_secret   authorize_scopes     For Facebook:   client_id   client_secret   authorize_scopes   api_version     For Sign in with Apple:   client_id   team_id   key_id   private_key   authorize_scopes     For OIDC providers:   client_id   client_secret   attributes_request_method   oidc_issuer   authorize_scopes   authorize_url if not available from discovery URL specified by oidc_issuer key    token_url if not available from discovery URL specified by oidc_issuer key    attributes_url if not available from discovery URL specified by oidc_issuer key    jwks_uri if not available from discovery URL specified by oidc_issuer key      For SAML providers:   MetadataFile OR MetadataURL   IDPSignout optional     
     */
-  var ProviderDetails: ProviderDetailsType = js.native
+  var ProviderDetails: ProviderDetailsType
   
   /**
     * The identity provider name.
     */
-  var ProviderName: ProviderNameTypeV1 = js.native
+  var ProviderName: ProviderNameTypeV1
   
   /**
     * The identity provider type.
     */
-  var ProviderType: IdentityProviderTypeType = js.native
+  var ProviderType: IdentityProviderTypeType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object CreateIdentityProviderRequest {
   

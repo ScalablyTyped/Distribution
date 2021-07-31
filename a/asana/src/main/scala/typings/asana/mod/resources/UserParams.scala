@@ -2,13 +2,11 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserParams extends StObject {
   
-  var user: String | Double = js.native
+  var user: String | Double
 }
 object UserParams {
   

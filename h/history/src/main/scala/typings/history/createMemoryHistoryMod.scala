@@ -4,20 +4,23 @@ import typings.history.mod.History
 import typings.history.mod.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMemoryHistoryMod {
   
-  @JSImport("history/createMemoryHistory", JSImport.Default)
+  @JSImport("history/createMemoryHistory", JSImport.Namespace)
   @js.native
-  def default[S](): MemoryHistory[S] = js.native
-  @JSImport("history/createMemoryHistory", JSImport.Default)
-  @js.native
-  def default[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[S](): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MemoryHistory[S]]
+  @scala.inline
+  def default[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory[S]]
   
   @js.native
-  trait MemoryHistory[HistoryLocationState] extends History[HistoryLocationState] {
+  trait MemoryHistory[HistoryLocationState]
+    extends StObject
+       with History[HistoryLocationState] {
     
     def canGo(n: Double): Boolean = js.native
     
@@ -26,18 +29,17 @@ object createMemoryHistoryMod {
     var index: Double = js.native
   }
   
-  @js.native
   trait MemoryHistoryBuildOptions extends StObject {
     
     var getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var initialEntries: js.UndefOr[js.Array[String]] = js.native
+    var initialEntries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
-    var keyLength: js.UndefOr[Double] = js.native
+    var keyLength: js.UndefOr[Double] = js.undefined
   }
   object MemoryHistoryBuildOptions {
     

@@ -3,29 +3,27 @@ package typings.reactBootstrapTable2Toolkit
 import typings.reactBootstrapTableNext.mod.ColumnDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bootstrap4 extends StObject {
     
-    var bootstrap4: js.UndefOr[Boolean] = js.native
+    var bootstrap4: js.UndefOr[Boolean] = js.undefined
     
-    var columns: js.Array[ColumnDescription[_, _]] = js.native
+    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
     /**
       * table key field
       */
-    var keyField: js.Any = js.native
+    var keyField: js.Any
   }
   object Bootstrap4 {
     
     @scala.inline
-    def apply(columns: js.Array[ColumnDescription[_, _]], data: js.Array[_], keyField: js.Any): Bootstrap4 = {
+    def apply(columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: js.Any): Bootstrap4 = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bootstrap4]
     }
@@ -40,13 +38,13 @@ object anon {
       def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
       
       @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[_, _]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -56,23 +54,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: js.Array[ColumnDescription[_, _]] = js.native
+    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
     
-    def onColumnToggle(dataField: String): Unit = js.native
+    def onColumnToggle(dataField: String): Unit
     
     /**
       * array of toggled columns
       */
-    var toggles: js.Array[Boolean] = js.native
+    var toggles: js.Array[Boolean]
   }
   object Columns {
     
     @scala.inline
     def apply(
-      columns: js.Array[ColumnDescription[_, _]],
+      columns: js.Array[ColumnDescription[js.Any, js.Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
     ): Columns = {
@@ -84,7 +81,7 @@ object anon {
     implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[_, _]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -100,10 +97,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OnExport extends StObject {
     
-    def onExport(): Unit = js.native
+    def onExport(): Unit
   }
   object OnExport {
     

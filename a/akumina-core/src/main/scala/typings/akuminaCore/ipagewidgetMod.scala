@@ -2,41 +2,39 @@ package typings.akuminaCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipagewidgetMod {
   
-  @js.native
   trait IPageWidget extends StObject {
     
-    var ContainerId: String = js.native
+    var ContainerId: String
     
-    var DisplayOrder: String = js.native
+    var DisplayOrder: String
     
-    var Grid: String = js.native
+    var Grid: String
     
-    var LayoutId: String = js.native
+    var LayoutId: String
     
-    var PageId: String = js.native
+    var PageId: String
     
-    var Title: String = js.native
+    var Title: String
     
-    var VirtualWidgetInstanceId: String = js.native
+    var VirtualWidgetInstanceId: String
     
-    var WidgetDescription: String = js.native
+    var WidgetDescription: String
     
-    var WidgetIcon: String = js.native
+    var WidgetIcon: String
     
-    var WidgetInstanceId: String = js.native
+    var WidgetInstanceId: String
     
-    var WidgetName: String = js.native
+    var WidgetName: String
     
-    var WidgetOptions: String = js.native
+    var WidgetOptions: String
     
-    var WidgetProperties: String = js.native
+    var WidgetProperties: String
     
-    var ZoneId: String = js.native
+    var ZoneId: String
   }
   object IPageWidget {
     

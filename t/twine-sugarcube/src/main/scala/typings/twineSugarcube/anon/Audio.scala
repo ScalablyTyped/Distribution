@@ -2,25 +2,23 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audio extends StObject {
   
-  val audio: Boolean = js.native
+  val audio: Boolean
   
-  val fileAPI: Boolean = js.native
+  val fileAPI: Boolean
   
-  val geolocation: Boolean = js.native
+  val geolocation: Boolean
   
-  val mutationObserver: Boolean = js.native
+  val mutationObserver: Boolean
   
-  val performance: Boolean = js.native
+  val performance: Boolean
   
-  val touch: Boolean = js.native
+  val touch: Boolean
   
-  val transitionEndEvent: String = js.native
+  val transitionEndEvent: String
 }
 object Audio {
   

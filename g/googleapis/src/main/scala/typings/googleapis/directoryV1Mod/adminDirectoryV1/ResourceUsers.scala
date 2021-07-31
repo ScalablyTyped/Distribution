@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Users")
@@ -32,7 +31,7 @@ class ResourceUsers protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,7 +59,7 @@ class ResourceUsers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUser] = js.native
   def get(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def get(
@@ -85,7 +84,7 @@ class ResourceUsers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaUser] = js.native
   def insert(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def insert(params: ParamsResourceUsersInsert): GaxiosPromise[SchemaUser] = js.native
   def insert(params: ParamsResourceUsersInsert, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def insert(
@@ -125,7 +124,7 @@ class ResourceUsers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUsers] = js.native
   def list(callback: BodyResponseCallback[SchemaUsers]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsers] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUsers] = js.native
   def list(params: ParamsResourceUsersList): GaxiosPromise[SchemaUsers] = js.native
   def list(params: ParamsResourceUsersList, callback: BodyResponseCallback[SchemaUsers]): Unit = js.native
   def list(
@@ -155,7 +154,7 @@ class ResourceUsers protected () extends StObject {
     */
   def makeAdmin(): GaxiosPromise[Unit] = js.native
   def makeAdmin(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def makeAdmin(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def makeAdmin(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def makeAdmin(params: ParamsResourceUsersMakeadmin): GaxiosPromise[Unit] = js.native
   def makeAdmin(params: ParamsResourceUsersMakeadmin, callback: BodyResponseCallback[Unit]): Unit = js.native
   def makeAdmin(
@@ -181,7 +180,7 @@ class ResourceUsers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaUser] = js.native
   def patch(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def patch(params: ParamsResourceUsersPatch): GaxiosPromise[SchemaUser] = js.native
   def patch(params: ParamsResourceUsersPatch, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def patch(
@@ -213,7 +212,7 @@ class ResourceUsers protected () extends StObject {
     */
   def undelete(): GaxiosPromise[Unit] = js.native
   def undelete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def undelete(params: ParamsResourceUsersUndelete): GaxiosPromise[Unit] = js.native
   def undelete(params: ParamsResourceUsersUndelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def undelete(
@@ -239,7 +238,7 @@ class ResourceUsers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaUser] = js.native
   def update(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def update(params: ParamsResourceUsersUpdate): GaxiosPromise[SchemaUser] = js.native
   def update(params: ParamsResourceUsersUpdate, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def update(
@@ -280,7 +279,7 @@ class ResourceUsers protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceUsersWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceUsersWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

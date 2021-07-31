@@ -2,19 +2,19 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PivotTransportWithObjectOperations extends PivotTransport {
+trait PivotTransportWithObjectOperations
+  extends StObject
+     with PivotTransport {
   
-  var connection: PivotTransportConnection = js.native
+  var connection: PivotTransportConnection
   
   @JSName("discover")
-  var discover_PivotTransportWithObjectOperations: js.UndefOr[PivotTransportDiscover] = js.native
+  var discover_PivotTransportWithObjectOperations: js.UndefOr[PivotTransportDiscover] = js.undefined
   
   @JSName("read")
-  var read_PivotTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.native
+  var read_PivotTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.undefined
 }
 object PivotTransportWithObjectOperations {
   

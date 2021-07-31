@@ -2,13 +2,14 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object search {
   
   @js.native
-  trait OpenSearchProvider extends SearchProvider {
+  trait OpenSearchProvider
+    extends StObject
+       with SearchProvider {
     
     /**
       * Gets current value of property <code>suggestType</code>.The type of data which is provided by the
@@ -47,7 +48,9 @@ object search {
   }
   
   @js.native
-  trait SearchProvider extends Element {
+  trait SearchProvider
+    extends StObject
+       with Element {
     
     /**
       * Gets current value of property <code>icon</code>.Icon of the Search Provider

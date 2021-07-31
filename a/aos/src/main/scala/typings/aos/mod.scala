@@ -9,7 +9,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -47,7 +46,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait AosEvent extends Event {
+  trait AosEvent
+    extends StObject
+       with Event {
     
     var detail: Element = js.native
   }
@@ -66,7 +67,6 @@ object mod extends Shortcut {
     def aosColonout: typings.aos.aosStrings.aosColonout = "aos:out".asInstanceOf[typings.aos.aosStrings.aosColonout]
   }
   
-  @js.native
   trait AosOptions extends StObject {
     
     // #endregion
@@ -74,78 +74,78 @@ object mod extends Shortcut {
     /**
       * Defines which position of the element regarding to window should trigger the animation
       */
-    var anchorPlacement: js.UndefOr[anchorPlacementOptions] = js.native
+    var anchorPlacement: js.UndefOr[anchorPlacementOptions] = js.undefined
     
     // #region Global settings
     /**
       * Class applied on animation
       */
-    var animatedClassName: js.UndefOr[String] = js.native
+    var animatedClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The delay on debounce used while resizing window
       */
-    var debounceDelay: js.UndefOr[Double] = js.native
+    var debounceDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Values from 0 to 3000, with step 50ms
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       */
-    var disable: js.UndefOr[phone | tablet | mobile | Boolean | js.Function0[Boolean]] = js.native
+    var disable: js.UndefOr[phone | tablet | mobile | Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * Disables automatic mutations' detections
       */
-    var disableMutationObserver: js.UndefOr[Boolean] = js.native
+    var disableMutationObserver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Values from 0 to 3000, with step 50ms
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Default easing for AOS animations
       */
-    var easing: js.UndefOr[easingOptions] = js.native
+    var easing: js.UndefOr[easingOptions] = js.undefined
     
     /**
       * Class applied after initialization
       */
-    var initClassName: js.UndefOr[String] = js.native
+    var initClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Whether elements should animate out while scrolling past them
       */
-    var mirror: js.UndefOr[Boolean] = js.native
+    var mirror: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Offset (in px) from the original trigger point
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether animation should happen only once - while scrolling down
       */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the event dispatched on the document, that AOS should initialize on
       */
-    var startEvent: js.UndefOr[String] = js.native
+    var startEvent: js.UndefOr[String] = js.undefined
     
     /**
       * The delay on throttle used while scrolling the page
       */
-    var throttleDelay: js.UndefOr[Double] = js.native
+    var throttleDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, will add content of `data-aos` as classes on scroll
       */
-    var useClassNames: js.UndefOr[Boolean] = js.native
+    var useClassNames: js.UndefOr[Boolean] = js.undefined
   }
   object AosOptions {
     

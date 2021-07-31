@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,18 +18,19 @@ object mod extends Shortcut {
   @js.native
   val default: FC[FlagProps] = js.native
   
-  @js.native
-  trait FlagProps extends HTMLProps[HTMLElement] {
+  trait FlagProps
+    extends StObject
+       with HTMLProps[HTMLElement] {
     
     /**
       * code is the two letter, three letter or three digit country code.
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * You can also pass an optional fallback which renders if the given code doesn't correspond to a flag
       */
-    var fallback: js.UndefOr[Element | Null] = js.native
+    var fallback: js.UndefOr[Element | Null] = js.undefined
   }
   object FlagProps {
     

@@ -4,27 +4,26 @@ import typings.qlik.qlikStrings.media
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomProperyMedia
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: media = js.native
+  var component: media
   
-  var layoutRef: js.UndefOr[String] = js.native
+  var layoutRef: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_CustomProperyMedia: string = js.native
+  var type_CustomProperyMedia: string
 }
 object CustomProperyMedia {
   
   @scala.inline
-  def apply(component: media, `type`: string): CustomProperyMedia = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomProperyMedia = {
+    val __obj = js.Dynamic.literal(component = "media")
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomProperyMedia]
   }
   

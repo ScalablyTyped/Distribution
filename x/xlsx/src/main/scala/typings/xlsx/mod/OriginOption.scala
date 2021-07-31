@@ -2,14 +2,12 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginOption extends StObject {
   
   /** Top-Left cell for operation (CellAddress or A1 string or row) */
-  var origin: js.UndefOr[Double | String | CellAddress] = js.native
+  var origin: js.UndefOr[Double | String | CellAddress] = js.undefined
 }
 object OriginOption {
   

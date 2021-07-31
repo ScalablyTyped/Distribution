@@ -4,23 +4,21 @@ import typings.vueCropperjs.vueCropperjsBooleans.`true`
 import typings.vueCropperjs.vueCropperjsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: _empty = js.native
+    var default: _empty
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Default {
     
     @scala.inline
-    def apply(default: _empty, `type`: String): Default = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    def apply(`type`: String): Default = {
+      val __obj = js.Dynamic.literal(default = "")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
@@ -36,18 +34,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var default: `true` = js.native
+    var default: `true`
     
-    var `type`: Boolean = js.native
+    var `type`: Boolean
   }
   object Type {
     
     @scala.inline
-    def apply(default: `true`, `type`: Boolean): Type = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    def apply(`type`: Boolean): Type = {
+      val __obj = js.Dynamic.literal(default = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }

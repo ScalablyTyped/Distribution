@@ -9,16 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents the collection of spreadsheets in a spreadsheet document.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait Spreadsheets
-  extends XSpreadsheets
+  extends StObject
+     with XSpreadsheets
      with XIndexAccess
      with XEnumerationAccess
      with XCellRangesAccess

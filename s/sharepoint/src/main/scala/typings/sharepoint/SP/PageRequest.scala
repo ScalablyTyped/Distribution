@@ -3,33 +3,31 @@ package typings.sharepoint.SP
 import typings.microsoftAjax.Sys.Net.WebRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageRequest extends StObject {
   
-  def add_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit = js.native
+  def add_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
   
-  def add_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit = js.native
+  def add_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
   
-  def get(): Unit = js.native
+  def get(): Unit
   
-  def get_expectedContentType(): String = js.native
+  def get_expectedContentType(): String
   
-  def get_request(): WebRequest = js.native
+  def get_request(): WebRequest
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def post(body: String): Unit = js.native
+  def post(body: String): Unit
   
-  def remove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit = js.native
+  def remove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
   
-  def remove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit = js.native
+  def remove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
   
-  def set_expectedContentType(value: String): Unit = js.native
+  def set_expectedContentType(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object PageRequest {
   

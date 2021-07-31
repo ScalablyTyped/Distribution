@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.activexOffice.Office.MsoTextOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,9 +15,9 @@ trait TextFrame extends StObject {
   var AutoSize: Boolean = js.native
   
   def Characters(): typings.activexExcel.Excel.Characters = js.native
-  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: Unit, Length: Double): typings.activexExcel.Excel.Characters = js.native
   
   val Creator: XlCreator = js.native
   

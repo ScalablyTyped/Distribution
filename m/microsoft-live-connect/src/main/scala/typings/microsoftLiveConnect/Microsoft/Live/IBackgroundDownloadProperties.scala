@@ -3,26 +3,24 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.backgroundDownload method.
   */
-@js.native
 trait IBackgroundDownloadProperties extends StObject {
   
   /**
     * The file output object to which the downloaded file data is written.
     */
-  var file_output: js.UndefOr[StorageFile] = js.native
+  var file_output: js.UndefOr[StorageFile] = js.undefined
   
   /**
     * The path to the file to download. For information on specifying paths
     * for REST objects, see REST reference.
     * http://msdn.microsoft.com/en-us/library/live/hh243648.aspx
     */
-  var path: String = js.native
+  var path: String
 }
 object IBackgroundDownloadProperties {
   

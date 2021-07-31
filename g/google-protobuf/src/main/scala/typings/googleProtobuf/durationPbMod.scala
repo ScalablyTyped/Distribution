@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object durationPbMod {
@@ -33,13 +32,11 @@ object durationPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Duration = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
-    @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Duration, reader: BinaryReader): Duration = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Duration, reader: BinaryReader): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Duration]
     
     @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration.extensions")
     @js.native
@@ -54,20 +51,17 @@ object durationPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Duration, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Duration, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Duration): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Duration): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var nanos: Double = js.native
+      var nanos: Double
       
-      var seconds: Double = js.native
+      var seconds: Double
     }
     object AsObject {
       

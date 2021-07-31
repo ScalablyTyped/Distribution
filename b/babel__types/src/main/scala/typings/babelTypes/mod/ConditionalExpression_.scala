@@ -3,31 +3,30 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ConditionalExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ConditionalExpression_
-  extends Conditional
+- typings.babelTypes.mod._Node because Already inherited */ trait ConditionalExpression_
+  extends StObject
      with BaseNode
+     with Conditional
      with Expression {
   
-  var alternate: Expression = js.native
+  var alternate: Expression
   
-  var consequent: Expression = js.native
+  var consequent: Expression
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_ConditionalExpression_ : ConditionalExpression = js.native
+  var type_ConditionalExpression_ : ConditionalExpression
 }
 object ConditionalExpression_ {
   
   @scala.inline
-  def apply(alternate: Expression, consequent: Expression, test: Expression, `type`: ConditionalExpression): ConditionalExpression_ = {
-    val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(alternate: Expression, consequent: Expression, test: Expression): ConditionalExpression_ = {
+    val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[ConditionalExpression_]
   }
   

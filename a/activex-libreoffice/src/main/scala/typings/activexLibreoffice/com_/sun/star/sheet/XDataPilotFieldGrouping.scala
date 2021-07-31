@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods to create new DataPilot fields where some or all items of this DataPilot field are grouped in some way.
   * @see DataPilotField
   */
-@js.native
-trait XDataPilotFieldGrouping extends XInterface {
+trait XDataPilotFieldGrouping
+  extends StObject
+     with XInterface {
   
   /**
     * Groups the members of this field by dates, according to the passed settings.
@@ -26,7 +26,7 @@ trait XDataPilotFieldGrouping extends XInterface {
     * @see DataPilotField
     * @throws com::sun::star::lang::IllegalArgumentException if the passed struct does not contain valid settings as described, or if this field is already gro
     */
-  def createDateGroup(aInfo: DataPilotFieldGroupInfo): XDataPilotField = js.native
+  def createDateGroup(aInfo: DataPilotFieldGroupInfo): XDataPilotField
   
   /**
     * Creates a new DataPilot field which contains a group containing the given DataPilot field items (members).
@@ -41,7 +41,7 @@ trait XDataPilotFieldGrouping extends XInterface {
     * @see DataPilotField
     * @see DataPilotFieldGroupInfo
     */
-  def createNameGroup(aItems: SeqEquiv[String]): XDataPilotField = js.native
+  def createNameGroup(aItems: SeqEquiv[String]): XDataPilotField
 }
 object XDataPilotFieldGrouping {
   

@@ -2,31 +2,29 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemLayoutData extends StObject {
   
-  var bank: String = js.native
+  var bank: String
   
-  var clockSpeed: Double = js.native
+  var clockSpeed: Double
   
-  var formFactor: String = js.native
+  var formFactor: String
   
-  var partNum: String = js.native
+  var partNum: String
   
-  var serialNum: String = js.native
+  var serialNum: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var voltageConfigured: Double = js.native
+  var voltageConfigured: Double
   
-  var voltageMax: Double = js.native
+  var voltageMax: Double
   
-  var voltageMin: Double = js.native
+  var voltageMin: Double
 }
 object MemLayoutData {
   

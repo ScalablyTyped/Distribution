@@ -5,7 +5,6 @@ import typings.webcl.webclNumbers.`0x10F1`
 import typings.webcl.webclNumbers.`0x10F2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_meobject_type */

@@ -31,7 +31,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.UpperLetter
 import typings.officeJsPreview.officeJsPreviewStrings.UpperRoman
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait List extends ClientObject {
+trait List
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -209,25 +210,25 @@ trait List extends ClientObject {
     * @param fontName Optional. The bullet's font name. Used only if the bullet is 'Custom'.
     */
   def setLevelBullet(level: Double, listBullet: ListBullet): Unit = js.native
-  def setLevelBullet(level: Double, listBullet: ListBullet, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
   def setLevelBullet(level: Double, listBullet: ListBullet, charCode: Double): Unit = js.native
   def setLevelBullet(level: Double, listBullet: ListBullet, charCode: Double, fontName: String): Unit = js.native
+  def setLevelBullet(level: Double, listBullet: ListBullet, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Arrow(level: Double, listBullet: Arrow): Unit = js.native
-  @JSName("setLevelBullet")
-  def setLevelBullet_Arrow(level: Double, listBullet: Arrow, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Arrow(level: Double, listBullet: Arrow, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Arrow(level: Double, listBullet: Arrow, charCode: Double, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark): Unit = js.native
+  def setLevelBullet_Arrow(level: Double, listBullet: Arrow, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
+  def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark, charCode: Double, fontName: String): Unit = js.native
+  @JSName("setLevelBullet")
+  def setLevelBullet_Checkmark(level: Double, listBullet: Checkmark, charCode: Unit, fontName: String): Unit = js.native
   /**
     * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
     *
@@ -241,43 +242,43 @@ trait List extends ClientObject {
   @JSName("setLevelBullet")
   def setLevelBullet_Custom(level: Double, listBullet: Custom): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Custom(level: Double, listBullet: Custom, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
-  @JSName("setLevelBullet")
   def setLevelBullet_Custom(level: Double, listBullet: Custom, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Custom(level: Double, listBullet: Custom, charCode: Double, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds): Unit = js.native
+  def setLevelBullet_Custom(level: Double, listBullet: Custom, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
+  def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds, charCode: Double, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Hollow(level: Double, listBullet: Hollow): Unit = js.native
+  def setLevelBullet_Diamonds(level: Double, listBullet: Diamonds, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Hollow(level: Double, listBullet: Hollow, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
+  def setLevelBullet_Hollow(level: Double, listBullet: Hollow): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Hollow(level: Double, listBullet: Hollow, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Hollow(level: Double, listBullet: Hollow, charCode: Double, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Solid(level: Double, listBullet: Solid): Unit = js.native
+  def setLevelBullet_Hollow(level: Double, listBullet: Hollow, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Solid(level: Double, listBullet: Solid, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
+  def setLevelBullet_Solid(level: Double, listBullet: Solid): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Solid(level: Double, listBullet: Solid, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Solid(level: Double, listBullet: Solid, charCode: Double, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Square(level: Double, listBullet: Square): Unit = js.native
+  def setLevelBullet_Solid(level: Double, listBullet: Solid, charCode: Unit, fontName: String): Unit = js.native
   @JSName("setLevelBullet")
-  def setLevelBullet_Square(level: Double, listBullet: Square, charCode: js.UndefOr[scala.Nothing], fontName: String): Unit = js.native
+  def setLevelBullet_Square(level: Double, listBullet: Square): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Double): Unit = js.native
   @JSName("setLevelBullet")
   def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Double, fontName: String): Unit = js.native
+  @JSName("setLevelBullet")
+  def setLevelBullet_Square(level: Double, listBullet: Square, charCode: Unit, fontName: String): Unit = js.native
   
   /**
     * Sets the two indents of the specified level in the list.

@@ -10,14 +10,13 @@ import typings.tablesorter.strictOptionsMod.StrictOptions
 import typings.tablesorter.testableOptionsMod.TestableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5RangeOptionsMod {
   
-  @js.native
   trait Html5RangeOptions
-    extends RangeOptions
+    extends StObject
+       with RangeOptions
        with ControlOptions
        with DefaultValueOptions[Double]
        with ComparableOptions

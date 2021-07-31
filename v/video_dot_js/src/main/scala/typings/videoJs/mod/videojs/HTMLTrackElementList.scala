@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.HTMLTrackElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current list of {@link HtmlTrackElement}s.
   */
-@js.native
-trait HTMLTrackElementList extends /* index */ NumberDictionary[HTMLTrackElement] {
+trait HTMLTrackElementList
+  extends StObject
+     with /* index */ NumberDictionary[HTMLTrackElement] {
   
   /**
     * The current number of `Track`s in the this Trackist.
     */
-  var length: Double = js.native
+  var length: Double
 }
 object HTMLTrackElementList {
   

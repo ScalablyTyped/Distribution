@@ -2,19 +2,17 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationDefinition extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var `type`: js.UndefOr[ConfigurationType] = js.native
+  var `type`: js.UndefOr[ConfigurationType] = js.undefined
 }
 object ConfigurationDefinition {
   

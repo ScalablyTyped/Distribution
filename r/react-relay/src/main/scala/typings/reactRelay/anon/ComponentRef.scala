@@ -2,13 +2,11 @@ package typings.reactRelay.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentRef extends StObject {
   
-  var componentRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.native
+  var componentRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
 }
 object ComponentRef {
   

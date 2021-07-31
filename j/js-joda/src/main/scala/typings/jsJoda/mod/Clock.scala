@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Clock")
@@ -17,23 +16,23 @@ abstract class Clock () extends StObject {
 }
 object Clock {
   
-  /* static member */
-  @JSImport("js-joda", "Clock.fixed")
+  @JSImport("js-joda", "Clock")
   @js.native
-  def fixed(fixedInstant: Instant, zoneOffset: ZoneOffset): Clock = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "Clock.system")
-  @js.native
-  def system(zone: ZoneId): Clock = js.native
+  @scala.inline
+  def fixed(fixedInstant: Instant, zoneOffset: ZoneOffset): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(fixedInstant.asInstanceOf[js.Any], zoneOffset.asInstanceOf[js.Any])).asInstanceOf[Clock]
   
   /* static member */
-  @JSImport("js-joda", "Clock.systemDefaultZone")
-  @js.native
-  def systemDefaultZone(): Clock = js.native
+  @scala.inline
+  def system(zone: ZoneId): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(zone.asInstanceOf[js.Any]).asInstanceOf[Clock]
   
   /* static member */
-  @JSImport("js-joda", "Clock.systemUTC")
-  @js.native
-  def systemUTC(): Clock = js.native
+  @scala.inline
+  def systemDefaultZone(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemDefaultZone")().asInstanceOf[Clock]
+  
+  /* static member */
+  @scala.inline
+  def systemUTC(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemUTC")().asInstanceOf[Clock]
 }

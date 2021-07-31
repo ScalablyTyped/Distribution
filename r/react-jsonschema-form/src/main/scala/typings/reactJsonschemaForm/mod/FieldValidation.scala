@@ -2,15 +2,13 @@ package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldValidation extends StObject {
   
-  var __errors: js.Array[FieldError] = js.native
+  var __errors: js.Array[FieldError]
   
-  def addError(message: String): Unit = js.native
+  def addError(message: String): Unit
 }
 object FieldValidation {
   

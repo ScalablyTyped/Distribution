@@ -4,7 +4,6 @@ import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.olx.source.WMTSOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -86,6 +85,10 @@ class WMTS protected () extends TileImage {
 }
 object WMTS {
   
+  @JSImport("openlayers", "source.WMTS")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Generate source options from a capabilities object.
     * @param wmtsCap An object representing the capabilities document.
@@ -110,7 +113,6 @@ object WMTS {
     * @api
     */
   /* static member */
-  @JSImport("openlayers", "source.WMTS.optionsFromCapabilities")
-  @js.native
-  def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = js.native
+  @scala.inline
+  def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WMTSOptions]
 }

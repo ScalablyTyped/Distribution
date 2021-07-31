@@ -2,46 +2,46 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a DateTime field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormDateTime extends FieldSchemaInForm {
+trait FieldSchemaInFormDateTime
+  extends StObject
+     with FieldSchemaInForm {
   
   /** Type of calendar to use */
-  var CalendarType: DateTimeCalendarType = js.native
+  var CalendarType: DateTimeCalendarType
   
   /** Display format for DateTime field. */
-  var DisplayFormat: DateTimeDisplayFormat = js.native
+  var DisplayFormat: DateTimeDisplayFormat
   
-  var FirstDayOfWeek: Double = js.native
+  var FirstDayOfWeek: Double
   
-  var FirstWeekOfYear: Double = js.native
+  var FirstWeekOfYear: Double
   
-  var HijriAdjustment: Double = js.native
+  var HijriAdjustment: Double
   
-  var HoursMode24: Boolean = js.native
+  var HoursMode24: Boolean
   
-  var HoursOptions: js.Array[String] = js.native
+  var HoursOptions: js.Array[String]
   
-  var LanguageId: String = js.native
+  var LanguageId: String
   
-  var LocaleId: String = js.native
+  var LocaleId: String
   
-  var MaxJDay: Double = js.native
+  var MaxJDay: Double
   
-  var MinJDay: Double = js.native
+  var MinJDay: Double
   
   /** Indicates wherever current user regional settings specify to display week numbers in day or week views of a calendar.
     Only appears for DateTime fields. */
-  var ShowWeekNumber: Boolean = js.native
+  var ShowWeekNumber: Boolean
   
-  var TimeSeparator: String = js.native
+  var TimeSeparator: String
   
-  var TimeZoneDifference: String = js.native
+  var TimeZoneDifference: String
   
-  var WorkWeek: String = js.native
+  var WorkWeek: String
 }
 object FieldSchemaInFormDateTime {
   

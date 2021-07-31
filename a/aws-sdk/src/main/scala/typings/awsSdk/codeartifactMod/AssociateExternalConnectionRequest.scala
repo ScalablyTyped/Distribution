@@ -2,31 +2,29 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateExternalConnectionRequest extends StObject {
   
   /**
     * The name of the domain that contains the repository.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The name of the external connection to add to the repository. The following values are supported:     public:npmjs - for the npm public repository.     public:pypi - for the Python Package Index.     public:maven-central - for Maven Central.     public:maven-googleandroid - for the Google Android repository.     public:maven-gradleplugins - for the Gradle plugins repository.     public:maven-commonsware - for the CommonsWare Android repository.   
     */
-  var externalConnection: ExternalConnectionName = js.native
+  var externalConnection: ExternalConnectionName
   
   /**
     *  The name of the repository to which the external connection is added. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object AssociateExternalConnectionRequest {
   

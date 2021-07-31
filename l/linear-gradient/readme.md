@@ -12,7 +12,7 @@ Calculates the color representing a number based on the gradient supplied
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3374 |
+| # downloads        | 4414 |
 | # stars            | 0 |
 
 ## Links

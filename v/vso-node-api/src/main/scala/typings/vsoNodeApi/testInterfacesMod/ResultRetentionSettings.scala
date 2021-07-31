@@ -4,19 +4,17 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultRetentionSettings extends StObject {
   
-  var automatedResultsRetentionDuration: Double = js.native
+  var automatedResultsRetentionDuration: Double
   
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
-  var manualResultsRetentionDuration: Double = js.native
+  var manualResultsRetentionDuration: Double
 }
 object ResultRetentionSettings {
   

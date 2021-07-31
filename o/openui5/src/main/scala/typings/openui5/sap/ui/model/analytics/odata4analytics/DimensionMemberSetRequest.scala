@@ -3,10 +3,8 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionMemberSetRequest extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait DimensionMemberSetRequest extends StObject {
     * exists so far, anew expression object gets created.
     * @returns The filter object         associated to this request.
     */
-  def getFilterExpression(): FilterExpression = js.native
+  def getFilterExpression(): FilterExpression
   
   /**
     * Returns the current page boundaries as object with properties<code>start</code> and
     * <code>end</code>. If the end of the page isunbounded, <code>end</code> is null.
     * @returns the current page boundaries as object
     */
-  def getResultPageBoundaries(): js.Any = js.native
+  def getResultPageBoundaries(): js.Any
   
   /**
     * Get the sort expression for this request.Expressions are represented by separate objects. If none
     * exists so far, anew expression object gets created.
     * @returns The sort object         associated to this request.
     */
-  def getSortExpression(): SortExpression = js.native
+  def getSortExpression(): SortExpression
   
   /**
     * Get the value of an query option for the OData request URI correspondingto this request.
@@ -37,7 +35,7 @@ trait DimensionMemberSetRequest extends StObject {
     * @returns The value of the requested query option or null, if         this option is not used for the
     * OData request.
     */
-  def getURIQueryOptionValue(sQueryOptionName: String): String = js.native
+  def getURIQueryOptionValue(sQueryOptionName: String): String
   
   /**
     * Get the URI to locate the entity set for the dimension memebers.
@@ -45,7 +43,7 @@ trait DimensionMemberSetRequest extends StObject {
     * @returns The resource path of the URI pointing to the entity         set. It is a relative URI
     * unless a service root is given, which         would then prefixed in order to return a complete URL.
     */
-  def getURIToDimensionMemberEntitySet(sServiceRootURI: String): String = js.native
+  def getURIToDimensionMemberEntitySet(sServiceRootURI: String): String
   
   /**
     * Get the unescaped URI to fetch the dimension members, optionallyaugmented by text and attributes.
@@ -53,14 +51,14 @@ trait DimensionMemberSetRequest extends StObject {
     * @returns The unescaped URI that contains the OData resource path         and OData system query
     * options to express the request for the         parameter value set..
     */
-  def getURIToDimensionMemberEntries(sServiceRootURI: String): String = js.native
+  def getURIToDimensionMemberEntries(sServiceRootURI: String): String
   
   /**
     * Set the filter expression for this request.Expressions are represented by separate objects. Calling
     * this methodreplaces the filter object maintained by this request.
     * @param oFilter The filter object to be associated with this request.
     */
-  def setFilterExpression(oFilter: FilterExpression): Unit = js.native
+  def setFilterExpression(oFilter: FilterExpression): Unit
   
   /**
     * Set the parameterization request required for retrieving dimensionmembers directly from the query
@@ -68,14 +66,14 @@ trait DimensionMemberSetRequest extends StObject {
     * @param oParameterizationRequest Request object for interactions with the parameterization of        
     *   this query result
     */
-  def setParameterizationRequest(oParameterizationRequest: js.Any): Unit = js.native
+  def setParameterizationRequest(oParameterizationRequest: js.Any): Unit
   
   /**
     * Set further options to be applied for the OData request
     * @param bIncludeCount Indicates whether or not the result shall           include a count for the
     * returned entities. Default is not to           include it. Pass null to keep current setting.
     */
-  def setRequestOptions(bIncludeCount: Boolean): Unit = js.native
+  def setRequestOptions(bIncludeCount: Boolean): Unit
   
   /**
     * Specify that only a page of the query result shall be returned. A page isdescribed by its
@@ -85,14 +83,14 @@ trait DimensionMemberSetRequest extends StObject {
     * @param end The last row of the query result to be returned. Passing           null is equivalent to
     * get all rows up to the end of the query           result.
     */
-  def setResultPageBoundaries(start: Number, end: Number): Unit = js.native
+  def setResultPageBoundaries(start: Number, end: Number): Unit
   
   /**
     * Set the sort expression for this request.Expressions are represented by separate objects. Calling
     * this methodreplaces the sort object maintained by this request.
     * @param oSorter The sort object to be associated with this request.
     */
-  def setSortExpression(oSorter: SortExpression): Unit = js.native
+  def setSortExpression(oSorter: SortExpression): Unit
 }
 object DimensionMemberSetRequest {
   

@@ -4,7 +4,6 @@ import typings.primereact.anon.Index
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -33,28 +32,27 @@ object accordionMod {
     def this(props: AccordionTabProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AccordionProps extends StObject {
     
-    var activeIndex: js.UndefOr[js.Any] = js.native
+    var activeIndex: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapseIcon: js.UndefOr[String] = js.native
+    var collapseIcon: js.UndefOr[String] = js.undefined
     
-    var expandIcon: js.UndefOr[String] = js.native
+    var expandIcon: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.undefined
     
-    var onTabClose: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.native
+    var onTabClose: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.undefined
     
-    var onTabOpen: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.native
+    var onTabOpen: js.UndefOr[js.Function1[/* e */ Index, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object AccordionProps {
     
@@ -129,22 +127,21 @@ object accordionMod {
     }
   }
   
-  @js.native
   trait AccordionTabProps extends StObject {
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.native
+    var contentStyle: js.UndefOr[js.Object] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.native
+    var headerStyle: js.UndefOr[js.Object] = js.undefined
     
-    var headerTemplate: js.UndefOr[js.Any] = js.native
+    var headerTemplate: js.UndefOr[js.Any] = js.undefined
   }
   object AccordionTabProps {
     

@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCreateContentAttachmentRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: POST = js.native
+  var method: POST
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: Slashcontent_referencesSlashColoncontent_reference_idSlashattachments = js.native
+  var url: Slashcontent_referencesSlashColoncontent_reference_idSlashattachments
 }
 object AppsCreateContentAttachmentRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: POST,
-    request: RequestRequestOptions,
-    url: Slashcontent_referencesSlashColoncontent_reference_idSlashattachments
-  ): AppsCreateContentAttachmentRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsCreateContentAttachmentRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/content_references/:content_reference_id/attachments")
     __obj.asInstanceOf[AppsCreateContentAttachmentRequestOptions]
   }
   

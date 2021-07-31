@@ -2,27 +2,25 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowedMean extends StObject {
   
-  def addValue(value: Double): Unit = js.native
+  def addValue(value: Double): Unit
   
-  var addedValues: Double = js.native
+  var addedValues: Double
   
-  var dirty: Boolean = js.native
+  var dirty: Boolean
   
-  def getMean(): Double = js.native
+  def getMean(): Double
   
-  def hasEnoughData(): Boolean = js.native
+  def hasEnoughData(): Boolean
   
-  var lastValue: Double = js.native
+  var lastValue: Double
   
-  var mean: Double = js.native
+  var mean: Double
   
-  var values: js.Array[Double] = js.native
+  var values: js.Array[Double]
 }
 object WindowedMean {
   

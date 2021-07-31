@@ -2,13 +2,11 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakpointsObject extends StObject {
   
-  var breakpoints: js.Object = js.native
+  var breakpoints: js.Object
 }
 object BreakpointsObject {
   

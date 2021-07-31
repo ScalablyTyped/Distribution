@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Available metadata fields for the item.
   */
-@js.native
 trait SchemaItemMetadata extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaItemMetadata extends StObject {
     * from a container item. To provide ACL inheritance for an item, use the
     * inheritAclFrom field. The maximum length is 1536 characters.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * The BCP-47 language code for the item, such as &quot;en-US&quot; or
@@ -25,39 +23,39 @@ trait SchemaItemMetadata extends StObject {
     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. The
     * maximum length is 32 characters.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the item was created in the source repository.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Hashing value provided by the API caller. This can be used with the
     * items.push method to calculate modified state. The maximum length is 2048
     * characters.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * A list of interactions for the item.  Interactions are used to improve
     * Search quality, but are not exposed to end users. The maximum number of
     * elements is 1000.
     */
-  var interactions: js.UndefOr[js.Array[SchemaInteraction]] = js.native
+  var interactions: js.UndefOr[js.Array[SchemaInteraction]] = js.undefined
   
   /**
     * Additional keywords or phrases that should match the item. Used
     * internally for user generated content. The maximum number of elements is
     * 100. The maximum length is 8192 characters.
     */
-  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The original mime-type of ItemContent.content in the source repository.
     * The maximum length is 256 characters.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the item.  This should correspond to the name of an object
@@ -67,29 +65,29 @@ trait SchemaItemMetadata extends StObject {
     * should set objectType to &#39;document&#39;. The maximum length is 256
     * characters.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * Additional search quality metadata of the item
     */
-  var searchQualityMetadata: js.UndefOr[SchemaSearchQualityMetadata] = js.native
+  var searchQualityMetadata: js.UndefOr[SchemaSearchQualityMetadata] = js.undefined
   
   /**
     * Link to the source repository serving the data.  &amp;#83;earch results
     * apply this link to the title. The maximum length is 2048 characters.
     */
-  var sourceRepositoryUrl: js.UndefOr[String] = js.native
+  var sourceRepositoryUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the item.  If given, this will be the displayed title of the
     * Search result. The maximum length is 2048 characters.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the item was last modified in the source repository.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaItemMetadata {
   

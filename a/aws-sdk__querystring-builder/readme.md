@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/querystring-builder/rc.svg)](https://www.npmjs.com/package/@aws-sdk/querystring-builder) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/querystring-builder.svg)](https://www.npmjs.com/package
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/querystring-builder/latest.svg)](https://www.npmjs.com/package/@aws-sdk/querystring-builder) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/querystring-builder.svg)](https://www.npmjs.com/pac
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/querystring-builder |
 | Keywords           | - |
-| # releases         | 28 |
+| # releases         | 38 |
 | # dependents       | 3 |
-| # downloads        | 3781410 |
+| # downloads        | 7025887 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/querystring-builder)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/querystring-builder)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fquerystring-builder)

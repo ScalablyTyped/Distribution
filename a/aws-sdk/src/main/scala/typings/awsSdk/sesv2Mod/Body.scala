@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
   /**
     * An object that represents the version of the message that is displayed in email clients that support HTML. HTML messages can include formatted text, hyperlinks, images, and more. 
     */
-  var Html: js.UndefOr[Content] = js.native
+  var Html: js.UndefOr[Content] = js.undefined
   
   /**
     * An object that represents the version of the message that is displayed in email clients that don't support HTML, or clients where the recipient has disabled HTML rendering.
     */
-  var Text: js.UndefOr[Content] = js.native
+  var Text: js.UndefOr[Content] = js.undefined
 }
 object Body {
   

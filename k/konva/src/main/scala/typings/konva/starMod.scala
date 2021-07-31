@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object starMod {
@@ -41,14 +40,15 @@ object starMod {
     def setWidth(width: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait StarConfig extends ShapeConfig {
+  trait StarConfig
+    extends StObject
+       with ShapeConfig {
     
-    var innerRadius: Double = js.native
+    var innerRadius: Double
     
-    var numPoints: Double = js.native
+    var numPoints: Double
     
-    var outerRadius: Double = js.native
+    var outerRadius: Double
   }
   object StarConfig {
     

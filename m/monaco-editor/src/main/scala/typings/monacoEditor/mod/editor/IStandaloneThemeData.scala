@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStandaloneThemeData extends StObject {
   
-  var base: BuiltinTheme = js.native
+  var base: BuiltinTheme
   
-  var colors: IColors = js.native
+  var colors: IColors
   
-  var encodedTokensColors: js.UndefOr[js.Array[String]] = js.native
+  var encodedTokensColors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var inherit: Boolean = js.native
+  var inherit: Boolean
   
-  var rules: js.Array[ITokenThemeRule] = js.native
+  var rules: js.Array[ITokenThemeRule]
 }
 object IStandaloneThemeData {
   

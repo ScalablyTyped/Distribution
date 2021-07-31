@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleServiceAccount extends StObject {
   
   /** Email address of the service account. */
-  var accountEmail: js.UndefOr[String] = js.native
+  var accountEmail: js.UndefOr[String] = js.undefined
 }
 object GoogleServiceAccount {
   

@@ -2,17 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SnapshotViewIOSProps extends ViewProps {
+trait SnapshotViewIOSProps
+  extends StObject
+     with ViewProps {
   
   // A callback when the Snapshot view is ready to be compared
-  def onSnapshotReady(): js.Any = js.native
+  def onSnapshotReady(): js.Any
   
   // A name to identify the individual instance to the SnapshotView
-  var testIdentifier: String = js.native
+  var testIdentifier: String
 }
 object SnapshotViewIOSProps {
   

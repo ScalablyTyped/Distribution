@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceContext extends StObject {
   
   /**
     * Include the declaration of the current symbol.
     */
-  var includeDeclaration: Boolean = js.native
+  var includeDeclaration: Boolean
 }
 object ReferenceContext {
   

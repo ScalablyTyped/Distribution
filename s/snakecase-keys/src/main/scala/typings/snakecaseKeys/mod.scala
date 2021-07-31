@@ -4,32 +4,32 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("snakecase-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](input: T): T = js.native
-  @JSImport("snakecase-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](input: T, options: Options): T = js.native
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](input: T): T = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](input: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  @JSImport("snakecase-keys", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Recurse nested objects and objects in arrays.
     		@default true
     		*/
-    val deep: js.UndefOr[Boolean] = js.native
+    val deep: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Exclude keys from being snakeCased.
     		@default []
     		*/
-    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   }
   object Options {
     

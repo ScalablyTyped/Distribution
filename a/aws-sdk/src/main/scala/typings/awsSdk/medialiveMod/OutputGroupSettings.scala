@@ -2,27 +2,25 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputGroupSettings extends StObject {
   
-  var ArchiveGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveGroupSettings] = js.native
+  var ArchiveGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveGroupSettings] = js.undefined
   
-  var FrameCaptureGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureGroupSettings] = js.native
+  var FrameCaptureGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureGroupSettings] = js.undefined
   
-  var HlsGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsGroupSettings] = js.native
+  var HlsGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsGroupSettings] = js.undefined
   
-  var MediaPackageGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MediaPackageGroupSettings] = js.native
+  var MediaPackageGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MediaPackageGroupSettings] = js.undefined
   
-  var MsSmoothGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MsSmoothGroupSettings] = js.native
+  var MsSmoothGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MsSmoothGroupSettings] = js.undefined
   
-  var MultiplexGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexGroupSettings] = js.native
+  var MultiplexGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexGroupSettings] = js.undefined
   
-  var RtmpGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpGroupSettings] = js.native
+  var RtmpGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpGroupSettings] = js.undefined
   
-  var UdpGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.UdpGroupSettings] = js.native
+  var UdpGroupSettings: js.UndefOr[typings.awsSdk.medialiveMod.UdpGroupSettings] = js.undefined
 }
 object OutputGroupSettings {
   

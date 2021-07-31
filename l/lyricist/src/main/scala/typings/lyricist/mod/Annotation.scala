@@ -3,49 +3,47 @@ package typings.lyricist.mod
 import typings.lyricist.anon.Interactions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotation extends StObject {
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var authors: js.Array[Author] = js.native
+  var authors: js.Array[Author]
   
-  var body: Description = js.native
+  var body: Description
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var community: Boolean = js.native
+  var community: Boolean
   
-  var cosigned_by: js.Array[_] = js.native
+  var cosigned_by: js.Array[js.Any]
   
-  var current_user_metadata: Interactions = js.native
+  var current_user_metadata: Interactions
   
-  var custom_preview: js.UndefOr[js.Any] = js.native
+  var custom_preview: js.UndefOr[js.Any] = js.undefined
   
-  var has_voters: Boolean = js.native
+  var has_voters: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var pinned: Boolean = js.native
+  var pinned: Boolean
   
-  var rejection_comment: js.UndefOr[js.Any] = js.native
+  var rejection_comment: js.UndefOr[js.Any] = js.undefined
   
-  var share_url: String = js.native
+  var share_url: String
   
-  var source: js.UndefOr[js.Any] = js.native
+  var source: js.UndefOr[js.Any] = js.undefined
   
-  var state: String = js.native
+  var state: String
   
-  var url: String = js.native
+  var url: String
   
-  var verified: Boolean = js.native
+  var verified: Boolean
   
-  var verified_by: js.UndefOr[js.Any] = js.native
+  var verified_by: js.UndefOr[js.Any] = js.undefined
   
-  var votes_total: Double = js.native
+  var votes_total: Double
 }
 object Annotation {
   
@@ -56,7 +54,7 @@ object Annotation {
     body: Description,
     comment_count: Double,
     community: Boolean,
-    cosigned_by: js.Array[_],
+    cosigned_by: js.Array[js.Any],
     current_user_metadata: Interactions,
     has_voters: Boolean,
     id: Double,
@@ -93,7 +91,7 @@ object Annotation {
     def setCommunity(value: Boolean): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCosigned_by(value: js.Array[_]): Self = StObject.set(x, "cosigned_by", value.asInstanceOf[js.Any])
+    def setCosigned_by(value: js.Array[js.Any]): Self = StObject.set(x, "cosigned_by", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCosigned_byVarargs(value: js.Any*): Self = StObject.set(x, "cosigned_by", js.Array(value :_*))

@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Benefit Summary
   */
-@js.native
-trait ExplanationOfBenefitBenefitBalanceFinancial extends BackboneElement {
+trait ExplanationOfBenefitBenefitBalanceFinancial
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'allowedString'.
     */
-  var _allowedString: js.UndefOr[Element] = js.native
+  var _allowedString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'allowedUnsignedInt'.
     */
-  var _allowedUnsignedInt: js.UndefOr[Element] = js.native
+  var _allowedUnsignedInt: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'usedUnsignedInt'.
     */
-  var _usedUnsignedInt: js.UndefOr[Element] = js.native
+  var _usedUnsignedInt: js.UndefOr[Element] = js.undefined
   
   /**
     * Benefits allowed
     */
-  var allowedMoney: js.UndefOr[Money] = js.native
+  var allowedMoney: js.UndefOr[Money] = js.undefined
   
   /**
     * Benefits allowed
     */
-  var allowedString: js.UndefOr[String] = js.native
+  var allowedString: js.UndefOr[String] = js.undefined
   
   /**
     * Benefits allowed
     */
-  var allowedUnsignedInt: js.UndefOr[unsignedInt] = js.native
+  var allowedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * Deductable, visits, benefit amount
     */
-  var `type`: CodeableConcept = js.native
+  var `type`: CodeableConcept
   
   /**
     * Benefits used
     */
-  var usedMoney: js.UndefOr[Money] = js.native
+  var usedMoney: js.UndefOr[Money] = js.undefined
   
   /**
     * Benefits used
     */
-  var usedUnsignedInt: js.UndefOr[unsignedInt] = js.native
+  var usedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
 }
 object ExplanationOfBenefitBenefitBalanceFinancial {
   

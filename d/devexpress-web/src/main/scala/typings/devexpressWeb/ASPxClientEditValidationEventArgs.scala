@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events that are related to data validation (see ASPxClientEdit.Validate).
   */
-@js.native
-trait ASPxClientEditValidationEventArgs extends ASPxClientEventArgs {
+trait ASPxClientEditValidationEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets the error description.
     */
-  var errorText: String = js.native
+  var errorText: String
   
   /**
     * Gets or sets a value specifying whether the validated value is valid.
     */
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
   /**
     * Gets or sets the editor's value being validated.
     */
-  var value: String = js.native
+  var value: String
 }
 object ASPxClientEditValidationEventArgs {
   

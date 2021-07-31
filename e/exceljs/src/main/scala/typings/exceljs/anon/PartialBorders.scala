@@ -2,22 +2,20 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Borders> */
-@js.native
 trait PartialBorders extends StObject {
   
-  var bottom: js.UndefOr[PartialBorder] = js.native
+  var bottom: js.UndefOr[PartialBorder] = js.undefined
   
-  var diagonal: js.UndefOr[PartialBorderDiagonal] = js.native
+  var diagonal: js.UndefOr[PartialBorderDiagonal] = js.undefined
   
-  var left: js.UndefOr[PartialBorder] = js.native
+  var left: js.UndefOr[PartialBorder] = js.undefined
   
-  var right: js.UndefOr[PartialBorder] = js.native
+  var right: js.UndefOr[PartialBorder] = js.undefined
   
-  var top: js.UndefOr[PartialBorder] = js.native
+  var top: js.UndefOr[PartialBorder] = js.undefined
 }
 object PartialBorders {
   

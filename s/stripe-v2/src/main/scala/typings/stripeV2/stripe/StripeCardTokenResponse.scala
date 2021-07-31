@@ -2,13 +2,13 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StripeCardTokenResponse extends StripeTokenResponse {
+trait StripeCardTokenResponse
+  extends StObject
+     with StripeTokenResponse {
   
-  var card: StripeCard = js.native
+  var card: StripeCard
 }
 object StripeCardTokenResponse {
   

@@ -10,26 +10,26 @@ import typings.rxLite.Rx.internals.ScheduledItem
 import typings.rxLiteVirtualtime.Rx.VirtualTimeScheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
   
-  @js.native
-  trait MockObserver[T] extends Observer[T] {
+  trait MockObserver[T]
+    extends StObject
+       with Observer[T] {
     
-    var messages: js.Array[Recorded] = js.native
+    var messages: js.Array[Recorded]
   }
   object MockObserver {
     
     @scala.inline
-    def apply[T](checked: () => Observer[_], messages: js.Array[Recorded]): MockObserver[T] = {
+    def apply[T](checked: () => Observer[js.Any], messages: js.Array[Recorded]): MockObserver[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked), messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockObserver[T]]
     }
     
     @scala.inline
-    implicit class MockObserverMutableBuilder[Self <: MockObserver[_], T] (val x: Self with MockObserver[T]) extends AnyVal {
+    implicit class MockObserverMutableBuilder[Self <: MockObserver[?], T] (val x: Self & MockObserver[T]) extends AnyVal {
       
       @scala.inline
       def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
@@ -41,17 +41,17 @@ object Rx {
   
   @js.native
   trait MockObserverStatic
-    extends ObserverStatic
+    extends StObject
+       with ObserverStatic
        with Instantiable1[/* scheduler */ IScheduler, MockObserver[js.Object]]
   
-  @js.native
   trait Recorded extends StObject {
     
-    def equals(other: Recorded): Boolean = js.native
+    def equals(other: Recorded): Boolean
     
-    var time: Double = js.native
+    var time: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Recorded {
     
@@ -76,10 +76,9 @@ object Rx {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def equals(other: Subscription): Boolean = js.native
+    def equals(other: Subscription): Boolean
   }
   object Subscription {
     
@@ -98,20 +97,21 @@ object Rx {
     }
   }
   
-  @js.native
-  trait TestScheduler extends VirtualTimeScheduler[Double, Double] {
+  trait TestScheduler
+    extends StObject
+       with VirtualTimeScheduler[Double, Double] {
     
-    def createColdObservable[T](records: Recorded*): Observable[T] = js.native
+    def createColdObservable[T](records: Recorded*): Observable[T]
     
-    def createHotObservable[T](records: Recorded*): Observable[T] = js.native
+    def createHotObservable[T](records: Recorded*): Observable[T]
     
-    def createObserver[T](): MockObserver[T] = js.native
+    def createObserver[T](): MockObserver[T]
     
-    def startWithCreate[T](create: js.Function0[Observable[T]]): MockObserver[T] = js.native
+    def startWithCreate[T](create: js.Function0[Observable[T]]): MockObserver[T]
     
-    def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): MockObserver[T] = js.native
+    def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): MockObserver[T]
     
-    def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): MockObserver[T] = js.native
+    def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): MockObserver[T]
   }
   object TestScheduler {
     

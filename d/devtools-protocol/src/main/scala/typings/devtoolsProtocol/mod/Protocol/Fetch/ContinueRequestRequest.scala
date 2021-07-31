@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueRequestRequest extends StObject {
   
   /**
     * If set, overrides the request headers.
     */
-  var headers: js.UndefOr[js.Array[HeaderEntry]] = js.native
+  var headers: js.UndefOr[js.Array[HeaderEntry]] = js.undefined
   
   /**
     * If set, the request method is overridden.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * If set, overrides the post data in the request.
     */
-  var postData: js.UndefOr[String] = js.native
+  var postData: js.UndefOr[String] = js.undefined
   
   /**
     * An id the client received in requestPaused event.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * If set, the request url will be modified in a way that's not observable by page.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ContinueRequestRequest {
   

@@ -2,26 +2,24 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sync tree args
   */
-@js.native
 trait ISyncTreeArgs extends StObject {
   
   /* optional, specifies whether to set the synced node to be the active node, this will default to true if not specified*/
-  var activate: Boolean = js.native
+  var activate: Boolean
   
   /* optional, specifies whether to force reload the node data from the server even if it already exists in the tree currently*/
-  var forceReload: Boolean = js.native
+  var forceReload: Boolean
   
   /*the path to sync the tree to*/
-  var path: String = js.native
+  var path: String
   
   /*the tree alias to sync to*/
-  var tree: String = js.native
+  var tree: String
 }
 object ISyncTreeArgs {
   

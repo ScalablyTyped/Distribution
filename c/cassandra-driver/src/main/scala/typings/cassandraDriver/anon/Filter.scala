@@ -3,15 +3,13 @@ package typings.cassandraDriver.anon
 import typings.cassandraDriver.mod.Host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var filter: js.UndefOr[js.Function1[/* host */ Host, Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* host */ Host, Boolean]] = js.undefined
   
-  var localDc: js.UndefOr[String] = js.native
+  var localDc: js.UndefOr[String] = js.undefined
 }
 object Filter {
   

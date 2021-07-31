@@ -2,36 +2,34 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectDetails extends StObject {
   
   /**
     *  Website URL for this project in the AWS Mobile Hub console. 
     */
-  var consoleUrl: js.UndefOr[ConsoleUrl] = js.native
+  var consoleUrl: js.UndefOr[ConsoleUrl] = js.undefined
   
   /**
     *  Date the project was created. 
     */
-  var createdDate: js.UndefOr[Date] = js.native
+  var createdDate: js.UndefOr[Date] = js.undefined
   
   /**
     *  Date of the last modification of the project. 
     */
-  var lastUpdatedDate: js.UndefOr[Date] = js.native
+  var lastUpdatedDate: js.UndefOr[Date] = js.undefined
   
-  var name: js.UndefOr[ProjectName] = js.native
+  var name: js.UndefOr[ProjectName] = js.undefined
   
-  var projectId: js.UndefOr[ProjectId] = js.native
+  var projectId: js.UndefOr[ProjectId] = js.undefined
   
-  var region: js.UndefOr[ProjectRegion] = js.native
+  var region: js.UndefOr[ProjectRegion] = js.undefined
   
-  var resources: js.UndefOr[Resources] = js.native
+  var resources: js.UndefOr[Resources] = js.undefined
   
-  var state: js.UndefOr[ProjectState] = js.native
+  var state: js.UndefOr[ProjectState] = js.undefined
 }
 object ProjectDetails {
   

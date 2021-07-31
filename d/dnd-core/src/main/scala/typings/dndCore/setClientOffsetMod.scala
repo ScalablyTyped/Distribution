@@ -4,24 +4,22 @@ import typings.dndCore.interfacesMod.XYCoord
 import typings.redux.mod.AnyAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setClientOffsetMod {
   
-  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", "setClientOffset")
+  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", JSImport.Namespace)
   @js.native
-  def setClientOffset(): AnyAction = js.native
-  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", "setClientOffset")
-  @js.native
-  def setClientOffset(clientOffset: js.UndefOr[scala.Nothing], sourceClientOffset: XYCoord): AnyAction = js.native
-  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", "setClientOffset")
-  @js.native
-  def setClientOffset(clientOffset: Null, sourceClientOffset: XYCoord): AnyAction = js.native
-  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", "setClientOffset")
-  @js.native
-  def setClientOffset(clientOffset: XYCoord): AnyAction = js.native
-  @JSImport("dnd-core/lib/actions/dragDrop/local/setClientOffset", "setClientOffset")
-  @js.native
-  def setClientOffset(clientOffset: XYCoord, sourceClientOffset: XYCoord): AnyAction = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def setClientOffset(): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")().asInstanceOf[AnyAction]
+  @scala.inline
+  def setClientOffset(clientOffset: Null, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
+  @scala.inline
+  def setClientOffset(clientOffset: Unit, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
+  @scala.inline
+  def setClientOffset(clientOffset: XYCoord): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any]).asInstanceOf[AnyAction]
+  @scala.inline
+  def setClientOffset(clientOffset: XYCoord, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
 }

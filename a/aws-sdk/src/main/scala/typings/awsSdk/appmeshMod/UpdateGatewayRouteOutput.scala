@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGatewayRouteOutput extends StObject {
   
   /**
     * A full description of the gateway route that was updated.
     */
-  var gatewayRoute: GatewayRouteData = js.native
+  var gatewayRoute: GatewayRouteData
 }
 object UpdateGatewayRouteOutput {
   

@@ -2,32 +2,30 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a third party application verification response
   * resource.
   */
-@js.native
 trait SchemaApplicationVerifyResponse extends StObject {
   
   /**
     * An alternate ID that was once used for the player that was issued the
     * auth token used in this request. (This field is not normally populated.)
     */
-  var alternate_player_id: js.UndefOr[String] = js.native
+  var alternate_player_id: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#applicationVerifyResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the player that was issued the auth token used in this request.
     */
-  var player_id: js.UndefOr[String] = js.native
+  var player_id: js.UndefOr[String] = js.undefined
 }
 object SchemaApplicationVerifyResponse {
   

@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadTask extends StObject {
   
   /** [DownloadTask.abort()](DownloadTask.abort.md)
@@ -13,7 +11,7 @@ trait DownloadTask extends StObject {
     * 中断下载任务
     *
     * 最低基础库： `1.4.0` */
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   /** [DownloadTask.offHeadersReceived(function callback)](DownloadTask.offHeadersReceived.md)
     *
@@ -21,7 +19,7 @@ trait DownloadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def offHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: DownloadTaskOffHeadersReceivedCallback): Unit = js.native
+  callback: DownloadTaskOffHeadersReceivedCallback): Unit
   
   /** [DownloadTask.offProgressUpdate(function callback)](DownloadTask.offProgressUpdate.md)
     *
@@ -29,7 +27,7 @@ trait DownloadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def offProgressUpdate(/** 下载进度变化事件的回调函数 */
-  callback: DownloadTaskOffProgressUpdateCallback): Unit = js.native
+  callback: DownloadTaskOffProgressUpdateCallback): Unit
   
   /** [DownloadTask.onHeadersReceived(function callback)](DownloadTask.onHeadersReceived.md)
     *
@@ -37,7 +35,7 @@ trait DownloadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def onHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: DownloadTaskOnHeadersReceivedCallback): Unit = js.native
+  callback: DownloadTaskOnHeadersReceivedCallback): Unit
   
   /** [DownloadTask.onProgressUpdate(function callback)](DownloadTask.onProgressUpdate.md)
     *
@@ -45,7 +43,7 @@ trait DownloadTask extends StObject {
     *
     * 最低基础库： `1.4.0` */
   def onProgressUpdate(/** 下载进度变化事件的回调函数 */
-  callback: DownloadTaskOnProgressUpdateCallback): Unit = js.native
+  callback: DownloadTaskOnProgressUpdateCallback): Unit
 }
 object DownloadTask {
   

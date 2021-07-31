@@ -2,49 +2,47 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRow extends StObject {
   
-  def afterSelectionChange(): Unit = js.native
+  def afterSelectionChange(): Unit
   
-  def alternatingRowClass(): Unit = js.native
+  def alternatingRowClass(): Unit
   
-  def beforeSelectionChange(): Unit = js.native
+  def beforeSelectionChange(): Unit
   
-  var config: IRowConfig = js.native
+  var config: IRowConfig
   
-  def continueSelection(event: js.Any): Unit = js.native
+  def continueSelection(event: js.Any): Unit
   
-  def copy(): IRow = js.native
+  def copy(): IRow
   
-  var cursor: String = js.native
+  var cursor: String
   
-  def ensureEntity(expected: js.Any): Unit = js.native
+  def ensureEntity(expected: js.Any): Unit
   
-  var entity: js.Any = js.native
+  var entity: js.Any
   
-  def getProperty(path: String): js.Any = js.native
+  def getProperty(path: String): js.Any
   
-  var offsetTop: Double = js.native
+  var offsetTop: Double
   
-  var rowDisplayIndex: Double = js.native
+  var rowDisplayIndex: Double
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var selectionProvider: ISelectionProvider = js.native
+  var selectionProvider: ISelectionProvider
   
-  def setSelection(isSelected: Boolean): Unit = js.native
+  def setSelection(isSelected: Boolean): Unit
   
-  def setVars(fromRow: IRow): Unit = js.native
+  def setVars(fromRow: IRow): Unit
   
-  def toggleSelected(event: js.Any): Boolean = js.native
+  def toggleSelected(event: js.Any): Boolean
   
-  var utils: js.Any = js.native
+  var utils: js.Any
 }
 object IRow {
   

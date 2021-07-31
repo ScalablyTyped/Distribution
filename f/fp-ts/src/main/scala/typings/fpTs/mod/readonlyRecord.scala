@@ -1,0 +1,724 @@
+package typings.fpTs.mod
+
+import typings.fpTs.anon.Fn9
+import typings.fpTs.anon.FnCallAFa
+import typings.fpTs.applicativeMod.Applicative
+import typings.fpTs.applicativeMod.Applicative1
+import typings.fpTs.applicativeMod.Applicative2
+import typings.fpTs.applicativeMod.Applicative2C
+import typings.fpTs.applicativeMod.Applicative3
+import typings.fpTs.applicativeMod.Applicative3C
+import typings.fpTs.compactableMod.Compactable1
+import typings.fpTs.compactableMod.Separated
+import typings.fpTs.eitherMod.Either_
+import typings.fpTs.eqMod.Eq
+import typings.fpTs.filterableMod.Filterable1
+import typings.fpTs.filterableWithIndexMod.FilterableWithIndex1
+import typings.fpTs.filterableWithIndexMod.PredicateWithIndex
+import typings.fpTs.filterableWithIndexMod.RefinementWithIndex
+import typings.fpTs.foldableMod.Foldable1
+import typings.fpTs.foldableMod.Foldable2
+import typings.fpTs.foldableMod.Foldable3
+import typings.fpTs.foldableWithIndexMod.FoldableWithIndex1
+import typings.fpTs.functionMod.Predicate
+import typings.fpTs.functionMod.Refinement
+import typings.fpTs.functorMod.Functor1
+import typings.fpTs.functorWithIndexMod.FunctorWithIndex1
+import typings.fpTs.magmaMod.Magma
+import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.optionMod.Option_
+import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.showMod.Show
+import typings.fpTs.traversableMod.Traversable1
+import typings.fpTs.traversableWithIndexMod.TraversableWithIndex1
+import typings.fpTs.unfoldableMod.Unfoldable
+import typings.fpTs.unfoldableMod.Unfoldable1
+import typings.fpTs.witherableMod.PipeableWilt1
+import typings.fpTs.witherableMod.PipeableWither1
+import typings.fpTs.witherableMod.Witherable1
+import typings.std.Exclude
+import typings.std.Record
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object readonlyRecord {
+  
+  @JSImport("fp-ts", "readonlyRecord")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Compactable")
+  @js.native
+  val Compactable: Compactable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Filterable")
+  @js.native
+  val Filterable: Filterable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.FilterableWithIndex")
+  @js.native
+  val FilterableWithIndex: FilterableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Foldable")
+  @js.native
+  val Foldable: Foldable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.FoldableWithIndex")
+  @js.native
+  val FoldableWithIndex: FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Functor")
+  @js.native
+  val Functor: Functor1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.FunctorWithIndex")
+  @js.native
+  val FunctorWithIndex: FunctorWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Traversable")
+  @js.native
+  val Traversable: Traversable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.TraversableWithIndex")
+  @js.native
+  val TraversableWithIndex: TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.URI")
+  @js.native
+  val URI: /* "ReadonlyRecord" */ String = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.Witherable")
+  @js.native
+  val Witherable: Witherable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @scala.inline
+  def collect[K /* <: String */, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* r */ ReadonlyRecord_[K, A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[K, A], js.Array[B]]]
+  
+  @scala.inline
+  def compact[A](fa: Record[String, Option_[A]]): Record[String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(fa.asInstanceOf[js.Any]).asInstanceOf[Record[String, A]]
+  
+  @scala.inline
+  def deleteAt[K /* <: String */](k: K): js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    ReadonlyRecord_[(Exclude[String, K]) | String, js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAt")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    ReadonlyRecord_[(Exclude[String, K]) | String, js.Any]
+  ]]
+  
+  @scala.inline
+  def elem[A](E: Eq[A]): FnCallAFa[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallAFa[A]]
+  
+  @JSImport("fp-ts", "readonlyRecord.empty")
+  @js.native
+  val empty: ReadonlyRecord_[String, scala.Nothing] = js.native
+  
+  @scala.inline
+  def every[A](predicate: Predicate[A]): js.Function1[/* r */ ReadonlyRecord_[String, A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, A], Boolean]]
+  
+  @scala.inline
+  def filter[A](predicate: Predicate[A]): js.Function1[/* fa */ Record[String, A], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Record[String, A]]]
+  
+  @scala.inline
+  def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fa */ Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Record[String, B]]]
+  
+  @scala.inline
+  def filterMapWithIndex[K /* <: String */, A, B](f: js.Function2[/* key */ K, /* a */ A, Option_[B]]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]]]
+  
+  @scala.inline
+  def filterWithIndex[K /* <: String */, A](predicateWithIndex: PredicateWithIndex[K, A]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, A]]]
+  
+  @scala.inline
+  def filterWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]]]
+  
+  @scala.inline
+  def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Record[String, B]]]
+  
+  @scala.inline
+  def foldMap[M](M: Monoid[M]): js.Function1[
+    /* f */ js.Function1[/* a */ js.Any, M], 
+    js.Function1[/* fa */ Record[String, js.Any], M]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[/* a */ js.Any, M], 
+    js.Function1[/* fa */ Record[String, js.Any], M]
+  ]]
+  
+  @scala.inline
+  def foldMapWithIndex[M](M: Monoid[M]): js.Function1[
+    /* f */ js.Function2[/* k */ String, /* a */ js.Any, M], 
+    js.Function1[/* fa */ ReadonlyRecord_[String, js.Any], M]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMapWithIndex")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[/* k */ String, /* a */ js.Any, M], 
+    js.Function1[/* fa */ ReadonlyRecord_[String, js.Any], M]
+  ]]
+  
+  @scala.inline
+  def fromFoldable[F, A](M: Magma[A], F: typings.fpTs.foldableMod.Foldable[F]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ]]
+  @scala.inline
+  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, A](M: Magma[A], F: Foldable1[F]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ]]
+  @scala.inline
+  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, A](M: Magma[A], F: Foldable2[F]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ]]
+  @scala.inline
+  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, A](M: Magma[A], F: Foldable3[F]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, [K, A]> */ /* fka */ js.Any, 
+    ReadonlyRecord_[String, A]
+  ]]
+  
+  @scala.inline
+  def fromFoldableMap[F, B](M: Magma[B], F: typings.fpTs.foldableMod.Foldable[F]): js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldableMap")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ]]
+  @scala.inline
+  def fromFoldableMap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, B](M: Magma[B], F: Foldable1[F]): js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldableMap")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ]]
+  @scala.inline
+  def fromFoldableMap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, B](M: Magma[B], F: Foldable2[F]): js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldableMap")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ]]
+  @scala.inline
+  def fromFoldableMap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, B](M: Magma[B], F: Foldable3[F]): js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldableMap")(M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ js.Any, 
+    /* f */ js.Function1[/* a */ js.Any, js.Tuple2[String, B]], 
+    ReadonlyRecord_[String, B]
+  ]]
+  
+  @scala.inline
+  def fromRecord[K /* <: String */, A](r: Record[K, A]): ReadonlyRecord_[K, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRecord")(r.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRecord_[K, A]]
+  
+  @scala.inline
+  def getEq[K /* <: String */, A](E: Eq[A]): Eq[ReadonlyRecord_[K, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(E.asInstanceOf[js.Any]).asInstanceOf[Eq[ReadonlyRecord_[K, A]]]
+  
+  @scala.inline
+  def getMonoid[K /* <: String */, A](S: Semigroup[A]): Monoid[ReadonlyRecord_[K, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(S.asInstanceOf[js.Any]).asInstanceOf[Monoid[ReadonlyRecord_[K, A]]]
+  
+  @scala.inline
+  def getShow[A](S: Show[A]): Show[ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(S.asInstanceOf[js.Any]).asInstanceOf[Show[ReadonlyRecord_[String, A]]]
+  
+  @scala.inline
+  def hasOwnProperty_[K /* <: String */](k: String, r: ReadonlyRecord_[K, js.Any]): /* is K */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(k.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[/* is K */ Boolean]
+  
+  @scala.inline
+  def insertAt[K /* <: String */, A](k: K, a: A): js.Function1[/* r */ ReadonlyRecord_[String, A], ReadonlyRecord_[String | K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAt")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, A], ReadonlyRecord_[String | K, A]]]
+  
+  @scala.inline
+  def isEmpty(r: ReadonlyRecord_[String, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(r.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSubrecord[A](E: Eq[A]): Fn9[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubrecord")(E.asInstanceOf[js.Any]).asInstanceOf[Fn9[A]]
+  
+  @scala.inline
+  def keys[K /* <: String */](r: ReadonlyRecord_[K, js.Any]): js.Array[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(r.asInstanceOf[js.Any]).asInstanceOf[js.Array[K]]
+  
+  @scala.inline
+  def lookup(k: String): js.Function1[/* r */ ReadonlyRecord_[String, js.Any], Option_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, js.Any], Option_[js.Any]]]
+  @scala.inline
+  def lookup[A](k: String, r: ReadonlyRecord_[String, A]): Option_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(k.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Option_[A]]
+  
+  @scala.inline
+  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]]
+  
+  @scala.inline
+  def mapWithIndex[K /* <: String */, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[K, B]]]
+  
+  @scala.inline
+  def modifyAt[A](k: String, f: js.Function1[/* a */ A, A]): js.Function1[/* r */ ReadonlyRecord_[String, A], Option_[ReadonlyRecord_[String, A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyAt")(k.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, A], Option_[ReadonlyRecord_[String, A]]]]
+  
+  @scala.inline
+  def partition[A](predicate: Predicate[A]): js.Function1[/* fa */ Record[String, A], Separated[Record[String, A], Record[String, A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Separated[Record[String, A], Record[String, A]]]]
+  
+  @scala.inline
+  def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ Record[String, A], Separated[Record[String, B], Record[String, C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Separated[Record[String, B], Record[String, C]]]]
+  
+  @scala.inline
+  def partitionMapWithIndex[K /* <: String */, A, B, C](f: js.Function2[/* key */ K, /* a */ A, Either_[B, C]]): js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, B], ReadonlyRecord_[String, C]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, B], ReadonlyRecord_[String, C]]
+  ]]
+  
+  @scala.inline
+  def partitionWithIndex[K /* <: String */, A](predicateWithIndex: PredicateWithIndex[K, A]): js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, A], ReadonlyRecord_[String, A]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, A], ReadonlyRecord_[String, A]]
+  ]]
+  
+  @scala.inline
+  def partitionWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* fa */ ReadonlyRecord_[K, A], 
+    Separated[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]
+  ]]
+  
+  @scala.inline
+  def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Separated[Record[String, A], Record[String, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Separated[Record[String, A], Record[String, B]]]]
+  
+  @scala.inline
+  def pop[K /* <: String */](k: K): js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    Option_[js.Tuple2[js.Any, ReadonlyRecord_[(Exclude[String, K]) | String, js.Any]]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(k.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    Option_[js.Tuple2[js.Any, ReadonlyRecord_[(Exclude[String, K]) | String, js.Any]]]
+  ]]
+  
+  @JSImport("fp-ts", "readonlyRecord.readonlyRecord")
+  @js.native
+  val readonlyRecord: (FunctorWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (FoldableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (FilterableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & (TraversableWithIndex1[typings.fpTs.readonlyRecordMod.URI, String]) & Witherable1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @scala.inline
+  def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ Record[String, A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Record[String, A], B]]
+  
+  @scala.inline
+  def reduceRight[A, B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): js.Function1[/* fa */ Record[String, A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Record[String, A], B]]
+  
+  @scala.inline
+  def reduceRightWithIndex[K /* <: String */, A, B](b: B, f: js.Function3[/* k */ K, /* a */ A, /* b */ B, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRightWithIndex")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], B]]
+  
+  @scala.inline
+  def reduceWithIndex[K /* <: String */, A, B](b: B, f: js.Function3[/* k */ K, /* b */ B, /* a */ A, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceWithIndex")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], B]]
+  
+  @scala.inline
+  def separate[A, B](fa: Record[String, Either_[A, B]]): Separated[Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separate")(fa.asInstanceOf[js.Any]).asInstanceOf[Separated[Record[String, A], Record[String, B]]]
+  
+  @scala.inline
+  def sequence[F](F: Applicative[F]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  @scala.inline
+  def sequence[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Applicative1[F]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  @scala.inline
+  def sequence[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Applicative2[F]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  @scala.inline
+  def sequence[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Applicative3[F]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  @scala.inline
+  def sequence[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Applicative2C[F, E]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  @scala.inline
+  def sequence[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Applicative3C[F, E]): js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, A>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ta */ ReadonlyRecord_[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
+    ], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, A>> */ js.Any
+  ]]
+  
+  @scala.inline
+  def singleton[K /* <: String */, A](k: K, a: A): ReadonlyRecord_[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[ReadonlyRecord_[K, A]]
+  
+  @scala.inline
+  def size(r: ReadonlyRecord_[String, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(r.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def some[A](predicate: js.Function1[/* a */ A, Boolean]): js.Function1[/* r */ ReadonlyRecord_[String, A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, A], Boolean]]
+  
+  @scala.inline
+  def toReadonlyArray[K /* <: String */, A](r: ReadonlyRecord_[K, A]): js.Array[js.Tuple2[K, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toReadonlyArray")(r.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[K, A]]]
+  
+  @scala.inline
+  def toRecord[K /* <: String */, A](r: ReadonlyRecord_[K, A]): Record[K, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRecord")(r.asInstanceOf[js.Any]).asInstanceOf[Record[K, A]]
+  
+  @scala.inline
+  def toUnfoldable[F](U: Unfoldable[F]): js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnfoldable")(U.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ js.Any
+  ]]
+  @scala.inline
+  def toUnfoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](U: Unfoldable1[F]): js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnfoldable")(U.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* r */ ReadonlyRecord_[String, js.Any], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ js.Any
+  ]]
+  
+  @scala.inline
+  def traverse[F](F: Applicative[F]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverse[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Applicative1[F]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverse[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Applicative2[F]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverse[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Applicative3[F]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverse[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Applicative2C[F, E]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverse[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Applicative3C[F, E]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  
+  @scala.inline
+  def traverseWithIndex[F](F: Applicative[F]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverseWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Applicative1[F]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverseWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Applicative2[F]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverseWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Applicative3[F]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverseWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Applicative2C[F, E]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  @scala.inline
+  def traverseWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Applicative3C[F, E]): js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function2[
+      /* k */ String, 
+      /* a */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
+    ], 
+    js.Function1[
+      /* ta */ ReadonlyRecord_[String, js.Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, ReadonlyRecord<K, B>> */ js.Any
+    ]
+  ]]
+  
+  @scala.inline
+  def updateAt[A](k: String, a: A): js.Function1[/* r */ ReadonlyRecord_[String, A], Option_[ReadonlyRecord_[String, A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAt")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* r */ ReadonlyRecord_[String, A], Option_[ReadonlyRecord_[String, A]]]]
+  
+  @JSImport("fp-ts", "readonlyRecord.wilt")
+  @js.native
+  val wilt: PipeableWilt1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  @JSImport("fp-ts", "readonlyRecord.wither")
+  @js.native
+  val wither: PipeableWither1[typings.fpTs.readonlyRecordMod.URI] = js.native
+  
+  /* augmented module */
+  object HKTAugmentingMod {
+    
+    @js.native
+    trait URItoKind[A] extends StObject
+  }
+}

@@ -5,68 +5,68 @@ import typings.senchaTouch.Ext.draw.ISurface
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISprite extends IObservable {
+trait ISprite
+  extends StObject
+     with IObservable {
   
   /** [Config Option] (Number) */
-  var A: js.UndefOr[Double] = js.native
+  var A: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Array) */
-  var An: js.UndefOr[Array] = js.native
+  var An: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Object) */
-  var attr: js.UndefOr[js.Any] = js.native
+  var attr: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var fillStyle: js.UndefOr[String] = js.native
+  var fillStyle: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the bounding box for the given Sprite as calculated with the Canvas engine
     * @param isWithoutTransform Boolean Whether to calculate the bounding box with the current transforms or not.
     */
-  var getBBox: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Unit]] = js.native
+  var getBBox: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Subclass can rewrite this function to gain better performance
     * @param isWithoutTransform Boolean
     * @returns Array
     */
-  var getBBoxCenter: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Array]] = js.native
+  var getBBoxCenter: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Array]] = js.undefined
   
   /** [Method] Returns the value of parent
     * @returns Object
     */
-  var getParent: js.UndefOr[js.Function0[_]] = js.native
+  var getParent: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Number) */
-  var globalAlpha: js.UndefOr[Double] = js.native
+  var globalAlpha: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Hide the sprite
     * @returns Ext.draw.sprite.Sprite this
     */
-  var hide: js.UndefOr[js.Function0[this.type]] = js.native
+  var hide: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var lineCap: js.UndefOr[String] = js.native
+  var lineCap: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var lineJoin: js.UndefOr[String] = js.native
+  var lineJoin: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var miterLimit: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.undefined
   
   /** [Method] Called before rendering  */
-  var preRender: js.UndefOr[js.Function0[Unit]] = js.native
+  var preRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -76,7 +76,7 @@ trait ISprite extends IObservable {
   @JSName("relayEvents")
   var relayEvents_ISprite: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Render method
     * @param surface Ext.draw.Surface The surface.
@@ -89,30 +89,30 @@ trait ISprite extends IObservable {
       /* surface */ js.UndefOr[ISurface], 
       /* ctx */ js.UndefOr[js.Any], 
       /* region */ js.UndefOr[Array], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Number) */
-  var rotationCenterX: js.UndefOr[Double] = js.native
+  var rotationCenterX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var rotationCenterY: js.UndefOr[Double] = js.native
+  var rotationCenterY: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var rotationRads: js.UndefOr[Double] = js.native
+  var rotationRads: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var scalingCenterX: js.UndefOr[Double] = js.native
+  var scalingCenterX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var scalingCenterY: js.UndefOr[Double] = js.native
+  var scalingCenterY: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var scalingX: js.UndefOr[Double] = js.native
+  var scalingX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var scalingY: js.UndefOr[Double] = js.native
+  var scalingY: js.UndefOr[Double] = js.undefined
   
   /** [Method] Set attributes of the sprite
     * @param changes Object The content of the change.
@@ -126,7 +126,7 @@ trait ISprite extends IObservable {
       /* avoidCopy */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set attributes of the sprite assuming the names and values have already been normalized
     * @param changes Object The content of the change.
@@ -134,49 +134,49 @@ trait ISprite extends IObservable {
     */
   var setAttributesBypassingNormalization: js.UndefOr[
     js.Function2[/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of parent
     * @param parent Object The new value.
     */
-  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /** [Method] Show the sprite
     * @returns Ext.draw.sprite.Sprite this
     */
-  var show: js.UndefOr[js.Function0[this.type]] = js.native
+  var show: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Number) */
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var transformFillStroke: js.UndefOr[Boolean] = js.native
+  var transformFillStroke: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var translationX: js.UndefOr[Double] = js.native
+  var translationX: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var translationY: js.UndefOr[Double] = js.native
+  var translationY: js.UndefOr[Double] = js.undefined
   
   /** [Method] Subclass will fill the plain object with x y width height information of the plain bounding box of this sprite
     * @param plain Object Target object.
     */
-  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[js.Any], Unit]] = js.native
+  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Subclass will fill the plain object with x y width height information of the transformed bounding box of this sprite
     * @param transform Object Target object.
@@ -184,16 +184,16 @@ trait ISprite extends IObservable {
     */
   var updateTransformedBBox: js.UndefOr[
     js.Function2[/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Applies sprite s attributes to the given context
     * @param ctx Object Context to apply sprite's attributes to.
     * @param region Array The region of the context to be affected by gradients.
     */
-  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array], Unit]] = js.native
+  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ISprite {
   
@@ -249,7 +249,7 @@ object ISprite {
     def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
     @scala.inline
-    def setGetParent(value: () => _): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    def setGetParent(value: () => js.Any): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
@@ -310,7 +310,7 @@ object ISprite {
     
     @scala.inline
     def setRender(
-      value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => _
+      value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => js.Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline

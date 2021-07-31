@@ -2,23 +2,23 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] extends AdBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]] {
+trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
+  extends StObject
+     with AdBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]] {
   
-  def withBusinessName(businessName: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withBusinessName(businessName: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   
-  def withDescription(description: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withDescription(description: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   
-  def withLogoImage(logo: Media): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withLogoImage(logo: Media): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   
-  def withLongHeadline(longHeadline: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withLongHeadline(longHeadline: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   
-  def withMarketingImage(marketingImage: Media): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withMarketingImage(marketingImage: Media): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
   
-  def withShortHeadline(shortHeadline: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
+  def withShortHeadline(shortHeadline: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
 }
 object ResponsiveDisplayAdBuilder {
   
@@ -41,7 +41,7 @@ object ResponsiveDisplayAdBuilder {
   }
   
   @scala.inline
-  implicit class ResponsiveDisplayAdBuilderMutableBuilder[Self <: ResponsiveDisplayAdBuilder[_], ResponsiveDisplayAd] (val x: Self with ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
+  implicit class ResponsiveDisplayAdBuilderMutableBuilder[Self <: ResponsiveDisplayAdBuilder[?], ResponsiveDisplayAd] (val x: Self & ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
     
     @scala.inline
     def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withBusinessName", js.Any.fromFunction1(value))

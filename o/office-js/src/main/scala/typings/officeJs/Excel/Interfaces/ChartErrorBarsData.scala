@@ -12,11 +12,9 @@ import typings.officeJs.officeJsStrings.StDev
 import typings.officeJs.officeJsStrings.StError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartErrorBars.toJSON()`. */
-@js.native
 trait ChartErrorBarsData extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ChartErrorBarsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endStyleCap: js.UndefOr[Boolean] = js.native
+  var endStyleCap: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait ChartErrorBarsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[ChartErrorBarsFormatData] = js.native
+  var format: js.UndefOr[ChartErrorBarsFormatData] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ChartErrorBarsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var include: js.UndefOr[ChartErrorBarsInclude | Both | MinusValues | PlusValues] = js.native
+  var include: js.UndefOr[ChartErrorBarsInclude | Both | MinusValues | PlusValues] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait ChartErrorBarsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom] = js.native
+  var `type`: js.UndefOr[ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait ChartErrorBarsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ChartErrorBarsData {
   

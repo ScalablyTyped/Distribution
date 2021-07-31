@@ -2,40 +2,38 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 7. Current Load, Processes & Services
-@js.native
 trait CurrentLoadData extends StObject {
   
-  var avgload: Double = js.native
+  var avgload: Double
   
-  var cpus: js.Array[CurrentLoadCpuData] = js.native
+  var cpus: js.Array[CurrentLoadCpuData]
   
-  var currentload: Double = js.native
+  var currentload: Double
   
-  var currentload_idle: Double = js.native
+  var currentload_idle: Double
   
-  var currentload_irq: Double = js.native
+  var currentload_irq: Double
   
-  var currentload_nice: Double = js.native
+  var currentload_nice: Double
   
-  var currentload_system: Double = js.native
+  var currentload_system: Double
   
-  var currentload_user: Double = js.native
+  var currentload_user: Double
   
-  var raw_currentload: Double = js.native
+  var raw_currentload: Double
   
-  var raw_currentload_idle: Double = js.native
+  var raw_currentload_idle: Double
   
-  var raw_currentload_irq: Double = js.native
+  var raw_currentload_irq: Double
   
-  var raw_currentload_nice: Double = js.native
+  var raw_currentload_nice: Double
   
-  var raw_currentload_system: Double = js.native
+  var raw_currentload_system: Double
   
-  var raw_currentload_user: Double = js.native
+  var raw_currentload_user: Double
 }
 object CurrentLoadData {
   

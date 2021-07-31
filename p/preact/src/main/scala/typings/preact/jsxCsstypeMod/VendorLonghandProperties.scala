@@ -2,10 +2,8 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VendorLonghandProperties[TLength] extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var MozAnimationDelay: js.UndefOr[GlobalsString] = js.native
+  var MozAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
@@ -24,7 +22,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var MozAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var MozAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
   /**
     * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
@@ -33,7 +31,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var MozAnimationDuration: js.UndefOr[GlobalsString] = js.native
+  var MozAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
@@ -42,7 +40,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var MozAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
   /**
     * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
@@ -51,7 +49,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `1`
     */
-  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
   /**
     * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
@@ -60,7 +58,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozAnimationName: js.UndefOr[AnimationNameProperty] = js.native
+  var MozAnimationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
   /**
     * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
@@ -69,7 +67,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `running`
     */
-  var MozAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var MozAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
   /**
     * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
@@ -78,7 +76,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ease`
     */
-  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
   /**
     * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.
@@ -87,7 +85,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none` (but this value is overridden in the user agent CSS)
     */
-  var MozAppearance: js.UndefOr[MozAppearanceProperty] = js.native
+  var MozAppearance: js.UndefOr[MozAppearanceProperty] = js.undefined
   
   /**
     * The **`backface-visibility`** CSS property sets whether the back face of an element is visible when turned towards the user.
@@ -96,7 +94,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `visible`
     */
-  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.native
+  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   
   /**
     * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
@@ -105,7 +103,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty] = js.native
+  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty] = js.undefined
   
   /**
     * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -114,7 +112,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var MozBorderEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.native
+  var MozBorderEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.undefined
   
   /**
     * The **`border-inline-end-style`** CSS property defines the style of the logical inline end border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -123,7 +121,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.native
+  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.undefined
   
   /**
     * The **`border-inline-end-width`** CSS property defines the width of the logical inline-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -132,7 +130,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `medium`
     */
-  var MozBorderEndWidth: js.UndefOr[BorderInlineEndWidthProperty[TLength]] = js.native
+  var MozBorderEndWidth: js.UndefOr[BorderInlineEndWidthProperty[TLength]] = js.undefined
   
   /**
     * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
@@ -141,7 +139,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty] = js.native
+  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty] = js.undefined
   
   /**
     * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
@@ -150,7 +148,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty] = js.native
+  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty] = js.undefined
   
   /**
     * The **`border-inline-start-color`** CSS property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -159,7 +157,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var MozBorderStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.native
+  var MozBorderStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.undefined
   
   /**
     * The **`border-inline-start-style`** CSS property defines the style of the logical inline start border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -168,7 +166,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.native
+  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.undefined
   
   /**
     * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
@@ -177,7 +175,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty] = js.native
+  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty] = js.undefined
   
   /**
     * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
@@ -186,7 +184,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `content-box`
     */
-  var MozBoxSizing: js.UndefOr[BoxSizingProperty] = js.native
+  var MozBoxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
   
   /**
     * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
@@ -195,7 +193,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var MozColumnCount: js.UndefOr[ColumnCountProperty] = js.native
+  var MozColumnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   
   /**
     * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
@@ -204,7 +202,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `balance`
     */
-  var MozColumnFill: js.UndefOr[ColumnFillProperty] = js.native
+  var MozColumnFill: js.UndefOr[ColumnFillProperty] = js.undefined
   
   /**
     * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
@@ -213,7 +211,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var MozColumnGap: js.UndefOr[ColumnGapProperty[TLength]] = js.native
+  var MozColumnGap: js.UndefOr[ColumnGapProperty[TLength]] = js.undefined
   
   /**
     * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi-column layout.
@@ -222,7 +220,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var MozColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.native
+  var MozColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
   
   /**
     * The **`column-rule-style`** CSS property sets the style of the line drawn between columns in a multi-column layout.
@@ -231,7 +229,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.native
+  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
   
   /**
     * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi-column layout.
@@ -240,7 +238,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `medium`
     */
-  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength]] = js.native
+  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength]] = js.undefined
   
   /**
     * The **`column-width`** CSS property specifies the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
@@ -249,7 +247,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var MozColumnWidth: js.UndefOr[ColumnWidthProperty[TLength]] = js.native
+  var MozColumnWidth: js.UndefOr[ColumnWidthProperty[TLength]] = js.undefined
   
   /**
     * If you reference an SVG image in a webpage (such as with the `<img>` element or as a background image), the SVG image can coordinate with the embedding element (its context) to have the image adopt property values set on the embedding element. To do this the embedding element needs to list the properties that are to be made available to the image by listing them as values of the **`-moz-context-properties`** property, and the image needs to opt in to using those properties by using values such as the `context-fill` value.
@@ -258,7 +256,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozContextProperties: js.UndefOr[MozContextPropertiesProperty] = js.native
+  var MozContextProperties: js.UndefOr[MozContextPropertiesProperty] = js.undefined
   
   /**
     * The non-standard **`-moz-float-edge`** CSS property specifies whether the height and width properties of the element include the margin, border, or padding thickness.
@@ -267,7 +265,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `content-box`
     */
-  var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty] = js.native
+  var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty] = js.undefined
   
   /**
     * The **`font-feature-settings`** CSS property controls advanced typographic features in OpenType fonts.
@@ -276,7 +274,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.native
+  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
   
   /**
     * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
@@ -285,7 +283,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.native
+  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.undefined
   
   /**
     * The **`-moz-force-broken-image-icon`** extended CSS property can be used to force the broken image icon to be shown even when a broken image has an `alt` attribute.
@@ -294,7 +292,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber] = js.native
+  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
@@ -303,7 +301,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `manual`
     */
-  var MozHyphens: js.UndefOr[HyphensProperty] = js.native
+  var MozHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
   /**
     * For certain XUL elements and pseudo-elements that use an image from the `list-style-image` property, this property specifies a region of the image that is used in place of the whole image. This allows elements to use different pieces of the same image to improve performance.
@@ -312,7 +310,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var MozImageRegion: js.UndefOr[MozImageRegionProperty] = js.native
+  var MozImageRegion: js.UndefOr[MozImageRegionProperty] = js.undefined
   
   /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -321,7 +319,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength]] = js.native
+  var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength]] = js.undefined
   
   /**
     * The **`margin-inline-start`** CSS property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -330,7 +328,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozMarginStart: js.UndefOr[MarginInlineStartProperty[TLength]] = js.native
+  var MozMarginStart: js.UndefOr[MarginInlineStartProperty[TLength]] = js.undefined
   
   /**
     * The **`-moz-orient`** CSS property specifies the orientation of the element to which it's applied.
@@ -339,7 +337,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `inline`
     */
-  var MozOrient: js.UndefOr[MozOrientProperty] = js.native
+  var MozOrient: js.UndefOr[MozOrientProperty] = js.undefined
   
   /**
     * In Mozilla applications, the **`-moz-outline-radius-bottomleft`** CSS property can be used to round the bottom-left corner of an element's `outline`.
@@ -348,7 +346,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozOutlineRadiusBottomleft: js.UndefOr[MozOutlineRadiusBottomleftProperty[TLength]] = js.native
+  var MozOutlineRadiusBottomleft: js.UndefOr[MozOutlineRadiusBottomleftProperty[TLength]] = js.undefined
   
   /**
     * In Mozilla applications, the **`-moz-outline-radius-bottomright`** CSS property can be used to round the bottom-right corner of an element's `outline`.
@@ -357,7 +355,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozOutlineRadiusBottomright: js.UndefOr[MozOutlineRadiusBottomrightProperty[TLength]] = js.native
+  var MozOutlineRadiusBottomright: js.UndefOr[MozOutlineRadiusBottomrightProperty[TLength]] = js.undefined
   
   /**
     * In Mozilla applications, the **`-moz-outline-radius-topleft`** CSS property can be used to round the top-left corner of an element's `outline`.
@@ -366,7 +364,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozOutlineRadiusTopleft: js.UndefOr[MozOutlineRadiusTopleftProperty[TLength]] = js.native
+  var MozOutlineRadiusTopleft: js.UndefOr[MozOutlineRadiusTopleftProperty[TLength]] = js.undefined
   
   /**
     * In Mozilla applications, the **`-moz-outline-radius-topright`** CSS property can be used to round the top-right corner of an element's `outline`.
@@ -375,7 +373,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozOutlineRadiusTopright: js.UndefOr[MozOutlineRadiusToprightProperty[TLength]] = js.native
+  var MozOutlineRadiusTopright: js.UndefOr[MozOutlineRadiusToprightProperty[TLength]] = js.undefined
   
   /**
     * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -384,7 +382,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength]] = js.native
+  var MozPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength]] = js.undefined
   
   /**
     * The **`padding-inline-start`** CSS property defines the logical inline start padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -393,7 +391,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var MozPaddingStart: js.UndefOr[PaddingInlineStartProperty[TLength]] = js.native
+  var MozPaddingStart: js.UndefOr[PaddingInlineStartProperty[TLength]] = js.undefined
   
   /**
     * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
@@ -402,7 +400,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozPerspective: js.UndefOr[PerspectiveProperty[TLength]] = js.native
+  var MozPerspective: js.UndefOr[PerspectiveProperty[TLength]] = js.undefined
   
   /**
     * The **`perspective-origin`** CSS property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the `perspective` property.
@@ -411,7 +409,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50%`
     */
-  var MozPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[TLength]] = js.native
+  var MozPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[TLength]] = js.undefined
   
   /**
     * **`-moz-stack-sizing`** is an extended CSS property. Normally, a `stack` will change its size so that all of its child elements are completely visible. For example, moving a child of the stack far to the right will widen the stack so the child remains visible.
@@ -420,7 +418,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `stretch-to-fit`
     */
-  var MozStackSizing: js.UndefOr[MozStackSizingProperty] = js.native
+  var MozStackSizing: js.UndefOr[MozStackSizingProperty] = js.undefined
   
   /**
     * The **`tab-size`** CSS property is used to customize the width of a tab (`U+0009`) character.
@@ -429,7 +427,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `8`
     */
-  var MozTabSize: js.UndefOr[TabSizeProperty[TLength]] = js.native
+  var MozTabSize: js.UndefOr[TabSizeProperty[TLength]] = js.undefined
   
   /**
     * The **`-moz-text-blink`** non-standard Mozilla CSS extension specifies the blink mode.
@@ -438,7 +436,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozTextBlink: js.UndefOr[MozTextBlinkProperty] = js.native
+  var MozTextBlink: js.UndefOr[MozTextBlinkProperty] = js.undefined
   
   /**
     * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
@@ -447,7 +445,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
     */
-  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.native
+  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   
   /**
     * The **`transform-origin`** CSS property sets the origin for an element's transformations.
@@ -456,7 +454,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50% 0`
     */
-  var MozTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.native
+  var MozTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.undefined
   
   /**
     * The **`transform-style`** CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
@@ -465,7 +463,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `flat`
     */
-  var MozTransformStyle: js.UndefOr[TransformStyleProperty] = js.native
+  var MozTransformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
   
   /**
     * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
@@ -474,7 +472,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var MozTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var MozTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
@@ -483,7 +481,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var MozTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var MozTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
@@ -492,7 +490,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: all
     */
-  var MozTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var MozTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
   /**
     * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
@@ -501,7 +499,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ease`
     */
-  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
   /**
     * The **`-moz-user-focus`** CSS property is used to indicate whether an element can have the focus.
@@ -510,7 +508,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var MozUserFocus: js.UndefOr[MozUserFocusProperty] = js.native
+  var MozUserFocus: js.UndefOr[MozUserFocusProperty] = js.undefined
   
   /**
     * The **`user-modify`** property has no effect in Firefox. It was originally planned to determine whether or not the content of an element can be edited by a user.
@@ -519,7 +517,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `read-only`
     */
-  var MozUserModify: js.UndefOr[MozUserModifyProperty] = js.native
+  var MozUserModify: js.UndefOr[MozUserModifyProperty] = js.undefined
   
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
@@ -528,7 +526,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var MozUserSelect: js.UndefOr[UserSelectProperty] = js.native
+  var MozUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
   /**
     * The **`-moz-window-dragging`** CSS property specifies whether a window is draggable or not. It only works in Chrome code, and only on Mac OS X.
@@ -537,7 +535,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `drag`
     */
-  var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty] = js.native
+  var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty] = js.undefined
   
   /**
     * The **`-moz-window-shadow`** CSS property specifies whether a window will have a shadow. It only works on Mac OS X.
@@ -546,7 +544,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `default`
     */
-  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.native
+  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.undefined
   
   /**
     * The **`object-fit`** CSS property sets how the content of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
@@ -555,7 +553,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `fill`
     */
-  var OObjectFit: js.UndefOr[ObjectFitProperty] = js.native
+  var OObjectFit: js.UndefOr[ObjectFitProperty] = js.undefined
   
   /**
     * The **`object-position`** CSS property specifies the alignment of the selected replaced element's contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.
@@ -564,7 +562,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50%`
     */
-  var OObjectPosition: js.UndefOr[ObjectPositionProperty[TLength]] = js.native
+  var OObjectPosition: js.UndefOr[ObjectPositionProperty[TLength]] = js.undefined
   
   /**
     * The **`tab-size`** CSS property is used to customize the width of a tab (`U+0009`) character.
@@ -573,7 +571,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `8`
     */
-  var OTabSize: js.UndefOr[TabSizeProperty[TLength]] = js.native
+  var OTabSize: js.UndefOr[TabSizeProperty[TLength]] = js.undefined
   
   /**
     * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
@@ -582,7 +580,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `clip`
     */
-  var OTextOverflow: js.UndefOr[TextOverflowProperty] = js.native
+  var OTextOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   
   /**
     * The **`transform-origin`** CSS property sets the origin for an element's transformations.
@@ -591,7 +589,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50% 0`
     */
-  var OTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.native
+  var OTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.undefined
   
   /**
     * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
@@ -600,7 +598,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitAlignContent: js.UndefOr[AlignContentProperty] = js.native
+  var WebkitAlignContent: js.UndefOr[AlignContentProperty] = js.undefined
   
   /**
     * The CSS **`align-items`** property sets the `align-self` value on all direct children as a group. The align-self property sets the alignment of an item within its containing block. In Flexbox it controls the alignment of items on the Cross Axis, in Grid Layout it controls the alignment of items on the Block Axis within their grid area.
@@ -609,7 +607,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitAlignItems: js.UndefOr[AlignItemsProperty] = js.native
+  var WebkitAlignItems: js.UndefOr[AlignItemsProperty] = js.undefined
   
   /**
     * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross-axis margin is set to `auto`, then `align-self` is ignored. In Grid layout `align-self` aligns the item inside the grid area.
@@ -618,7 +616,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitAlignSelf: js.UndefOr[AlignSelfProperty] = js.native
+  var WebkitAlignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
   
   /**
     * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
@@ -627,7 +625,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var WebkitAnimationDelay: js.UndefOr[GlobalsString] = js.native
+  var WebkitAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
@@ -636,7 +634,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.native
+  var WebkitAnimationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
   
   /**
     * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
@@ -645,7 +643,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var WebkitAnimationDuration: js.UndefOr[GlobalsString] = js.native
+  var WebkitAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
@@ -654,7 +652,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.native
+  var WebkitAnimationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
   
   /**
     * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
@@ -663,7 +661,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `1`
     */
-  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.native
+  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
   
   /**
     * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
@@ -672,7 +670,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitAnimationName: js.UndefOr[AnimationNameProperty] = js.native
+  var WebkitAnimationName: js.UndefOr[AnimationNameProperty] = js.undefined
   
   /**
     * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
@@ -681,7 +679,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `running`
     */
-  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.native
+  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
   
   /**
     * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
@@ -690,7 +688,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ease`
     */
-  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.native
+  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
   
   /**
     * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.
@@ -699,7 +697,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none` (but this value is overridden in the user agent CSS)
     */
-  var WebkitAppearance: js.UndefOr[WebkitAppearanceProperty] = js.native
+  var WebkitAppearance: js.UndefOr[WebkitAppearanceProperty] = js.undefined
   
   /**
     * The **`backdrop-filter`** CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything _behind_ the element, to see the effect you must make the element or its background at least partially transparent.
@@ -708,7 +706,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitBackdropFilter: js.UndefOr[BackdropFilterProperty] = js.native
+  var WebkitBackdropFilter: js.UndefOr[BackdropFilterProperty] = js.undefined
   
   /**
     * The **`backface-visibility`** CSS property sets whether the back face of an element is visible when turned towards the user.
@@ -717,7 +715,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `visible`
     */
-  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.native
+  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
   
   /**
     * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
@@ -726,7 +724,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `border-box`
     */
-  var WebkitBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.native
+  var WebkitBackgroundClip: js.UndefOr[BackgroundClipProperty] = js.undefined
   
   /**
     * The **`background-origin`** CSS property sets the _background positioning area_. In other words, it sets the origin position of an image set with the `background-image` property.
@@ -735,7 +733,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `padding-box`
     */
-  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.native
+  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.undefined
   
   /**
     * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
@@ -744,28 +742,28 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto auto`
     */
-  var WebkitBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength]] = js.native
+  var WebkitBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength]] = js.undefined
   
   /**
     * **Syntax**: `<'color'>`
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitBorderBeforeColor: js.UndefOr[WebkitBorderBeforeColorProperty] = js.native
+  var WebkitBorderBeforeColor: js.UndefOr[WebkitBorderBeforeColorProperty] = js.undefined
   
   /**
     * **Syntax**: `<'border-style'>`
     *
     * **Initial value**: `none`
     */
-  var WebkitBorderBeforeStyle: js.UndefOr[WebkitBorderBeforeStyleProperty] = js.native
+  var WebkitBorderBeforeStyle: js.UndefOr[WebkitBorderBeforeStyleProperty] = js.undefined
   
   /**
     * **Syntax**: `<'border-width'>`
     *
     * **Initial value**: `medium`
     */
-  var WebkitBorderBeforeWidth: js.UndefOr[WebkitBorderBeforeWidthProperty[TLength]] = js.native
+  var WebkitBorderBeforeWidth: js.UndefOr[WebkitBorderBeforeWidthProperty[TLength]] = js.undefined
   
   /**
     * The **`border-bottom-left-radius`** CSS property rounds the bottom-left corner of an element.
@@ -774,7 +772,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitBorderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[TLength]] = js.native
+  var WebkitBorderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[TLength]] = js.undefined
   
   /**
     * The **`border-bottom-right-radius`** CSS property rounds the bottom-right corner of an element.
@@ -783,7 +781,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitBorderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[TLength]] = js.native
+  var WebkitBorderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[TLength]] = js.undefined
   
   /**
     * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
@@ -792,7 +790,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `100%`
     */
-  var WebkitBorderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.native
+  var WebkitBorderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.undefined
   
   /**
     * The **`border-top-left-radius`** CSS property rounds the top-left corner of an element.
@@ -801,7 +799,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitBorderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[TLength]] = js.native
+  var WebkitBorderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[TLength]] = js.undefined
   
   /**
     * The **`border-top-right-radius`** CSS property rounds the top-right corner of an element.
@@ -810,7 +808,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitBorderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[TLength]] = js.native
+  var WebkitBorderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[TLength]] = js.undefined
   
   /**
     * The **`box-decoration-break`** CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.
@@ -819,7 +817,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `slice`
     */
-  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.native
+  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.undefined
   
   /**
     * The **`-webkit-box-reflect`** CSS property lets you reflect the content of an element in one specific direction.
@@ -828,7 +826,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitBoxReflect: js.UndefOr[WebkitBoxReflectProperty[TLength]] = js.native
+  var WebkitBoxReflect: js.UndefOr[WebkitBoxReflectProperty[TLength]] = js.undefined
   
   /**
     * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
@@ -837,7 +835,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitBoxShadow: js.UndefOr[BoxShadowProperty] = js.native
+  var WebkitBoxShadow: js.UndefOr[BoxShadowProperty] = js.undefined
   
   /**
     * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
@@ -846,7 +844,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `content-box`
     */
-  var WebkitBoxSizing: js.UndefOr[BoxSizingProperty] = js.native
+  var WebkitBoxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
   
   /**
     * The `**clip-path**` CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden.
@@ -855,7 +853,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitClipPath: js.UndefOr[ClipPathProperty] = js.native
+  var WebkitClipPath: js.UndefOr[ClipPathProperty] = js.undefined
   
   /**
     * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
@@ -864,7 +862,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitColumnCount: js.UndefOr[ColumnCountProperty] = js.native
+  var WebkitColumnCount: js.UndefOr[ColumnCountProperty] = js.undefined
   
   /**
     * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
@@ -873,7 +871,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `balance`
     */
-  var WebkitColumnFill: js.UndefOr[ColumnFillProperty] = js.native
+  var WebkitColumnFill: js.UndefOr[ColumnFillProperty] = js.undefined
   
   /**
     * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
@@ -882,7 +880,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitColumnGap: js.UndefOr[ColumnGapProperty[TLength]] = js.native
+  var WebkitColumnGap: js.UndefOr[ColumnGapProperty[TLength]] = js.undefined
   
   /**
     * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi-column layout.
@@ -891,7 +889,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.native
+  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
   
   /**
     * The **`column-rule-style`** CSS property sets the style of the line drawn between columns in a multi-column layout.
@@ -900,7 +898,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.native
+  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
   
   /**
     * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi-column layout.
@@ -909,7 +907,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `medium`
     */
-  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength]] = js.native
+  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength]] = js.undefined
   
   /**
     * The **`column-span`** CSS property makes it possible for an element to span across all columns when its value is set to `all`.
@@ -918,7 +916,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitColumnSpan: js.UndefOr[ColumnSpanProperty] = js.native
+  var WebkitColumnSpan: js.UndefOr[ColumnSpanProperty] = js.undefined
   
   /**
     * The **`column-width`** CSS property specifies the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
@@ -927,7 +925,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitColumnWidth: js.UndefOr[ColumnWidthProperty[TLength]] = js.native
+  var WebkitColumnWidth: js.UndefOr[ColumnWidthProperty[TLength]] = js.undefined
   
   /**
     * The **`filter`** CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
@@ -936,7 +934,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitFilter: js.UndefOr[FilterProperty] = js.native
+  var WebkitFilter: js.UndefOr[FilterProperty] = js.undefined
   
   /**
     * The **`flex-basis`** CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with `box-sizing`.
@@ -945,7 +943,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitFlexBasis: js.UndefOr[FlexBasisProperty[TLength]] = js.native
+  var WebkitFlexBasis: js.UndefOr[FlexBasisProperty[TLength]] = js.undefined
   
   /**
     * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
@@ -954,7 +952,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `row`
     */
-  var WebkitFlexDirection: js.UndefOr[FlexDirectionProperty] = js.native
+  var WebkitFlexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
   
   /**
     * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
@@ -963,7 +961,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitFlexGrow: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitFlexGrow: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
@@ -972,7 +970,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `1`
     */
-  var WebkitFlexShrink: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitFlexShrink: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
@@ -981,7 +979,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `nowrap`
     */
-  var WebkitFlexWrap: js.UndefOr[FlexWrapProperty] = js.native
+  var WebkitFlexWrap: js.UndefOr[FlexWrapProperty] = js.undefined
   
   /**
     * The **`font-feature-settings`** CSS property controls advanced typographic features in OpenType fonts.
@@ -990,7 +988,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.native
+  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
   
   /**
     * The **`font-kerning`** CSS property sets the use of the kerning information stored in a font.
@@ -999,7 +997,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitFontKerning: js.UndefOr[FontKerningProperty] = js.native
+  var WebkitFontKerning: js.UndefOr[FontKerningProperty] = js.undefined
   
   /**
     * The **`font-variant-ligatures`** CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.
@@ -1008,7 +1006,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.native
+  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.undefined
   
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
@@ -1017,7 +1015,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `manual`
     */
-  var WebkitHyphens: js.UndefOr[HyphensProperty] = js.native
+  var WebkitHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
   /**
     * The CSS **`justify-content`** property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
@@ -1026,7 +1024,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var WebkitJustifyContent: js.UndefOr[JustifyContentProperty] = js.native
+  var WebkitJustifyContent: js.UndefOr[JustifyContentProperty] = js.undefined
   
   /**
     * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
@@ -1035,7 +1033,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitLineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var WebkitLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
   /**
     * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
@@ -1044,7 +1042,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.native
+  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.undefined
   
   /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1053,7 +1051,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength]] = js.native
+  var WebkitMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength]] = js.undefined
   
   /**
     * The **`margin-inline-start`** CSS property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1062,7 +1060,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitMarginStart: js.UndefOr[MarginInlineStartProperty[TLength]] = js.native
+  var WebkitMarginStart: js.UndefOr[MarginInlineStartProperty[TLength]] = js.undefined
   
   /**
     * If a `-webkit-mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
@@ -1071,7 +1069,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `scroll`
     */
-  var WebkitMaskAttachment: js.UndefOr[WebkitMaskAttachmentProperty] = js.native
+  var WebkitMaskAttachment: js.UndefOr[WebkitMaskAttachmentProperty] = js.undefined
   
   /**
     * The **`mask-clip`** CSS property determines the area, which is affected by a mask. The painted content of an element must be restricted to this area.
@@ -1080,7 +1078,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `border`
     */
-  var WebkitMaskClip: js.UndefOr[WebkitMaskClipProperty] = js.native
+  var WebkitMaskClip: js.UndefOr[WebkitMaskClipProperty] = js.undefined
   
   /**
     * The **`-webkit-mask-composite`** property specifies the manner in which multiple mask images applied to the same element are composited with one another. Mask images are composited in the opposite order that they are declared with the `-webkit-mask-image` property.
@@ -1089,7 +1087,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `source-over`
     */
-  var WebkitMaskComposite: js.UndefOr[WebkitMaskCompositeProperty] = js.native
+  var WebkitMaskComposite: js.UndefOr[WebkitMaskCompositeProperty] = js.undefined
   
   /**
     * The **`mask-image`** CSS property sets the image that is used as mask layer for an element.
@@ -1098,7 +1096,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitMaskImage: js.UndefOr[WebkitMaskImageProperty] = js.native
+  var WebkitMaskImage: js.UndefOr[WebkitMaskImageProperty] = js.undefined
   
   /**
     * The **`mask-origin`** CSS property sets the origin of a mask.
@@ -1107,7 +1105,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `padding`
     */
-  var WebkitMaskOrigin: js.UndefOr[WebkitMaskOriginProperty] = js.native
+  var WebkitMaskOrigin: js.UndefOr[WebkitMaskOriginProperty] = js.undefined
   
   /**
     * The **`mask-position`** CSS property sets the initial position, relative to the mask position layer set by `mask-origin`, for each defined mask image.
@@ -1116,7 +1114,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0% 0%`
     */
-  var WebkitMaskPosition: js.UndefOr[WebkitMaskPositionProperty[TLength]] = js.native
+  var WebkitMaskPosition: js.UndefOr[WebkitMaskPositionProperty[TLength]] = js.undefined
   
   /**
     * The `-webkit-mask-position-x` CSS property sets the initial horizontal position of a mask image.
@@ -1125,7 +1123,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0%`
     */
-  var WebkitMaskPositionX: js.UndefOr[WebkitMaskPositionXProperty[TLength]] = js.native
+  var WebkitMaskPositionX: js.UndefOr[WebkitMaskPositionXProperty[TLength]] = js.undefined
   
   /**
     * The `-webkit-mask-position-y` CSS property sets the initial vertical position of a mask image.
@@ -1134,7 +1132,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0%`
     */
-  var WebkitMaskPositionY: js.UndefOr[WebkitMaskPositionYProperty[TLength]] = js.native
+  var WebkitMaskPositionY: js.UndefOr[WebkitMaskPositionYProperty[TLength]] = js.undefined
   
   /**
     * The **`mask-repeat`** CSS property sets how mask images are repeated. A mask image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
@@ -1143,7 +1141,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `repeat`
     */
-  var WebkitMaskRepeat: js.UndefOr[WebkitMaskRepeatProperty] = js.native
+  var WebkitMaskRepeat: js.UndefOr[WebkitMaskRepeatProperty] = js.undefined
   
   /**
     * The `-webkit-mask-repeat-x` property specifies whether and how a mask image is repeated (tiled) horizontally.
@@ -1152,7 +1150,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `repeat`
     */
-  var WebkitMaskRepeatX: js.UndefOr[WebkitMaskRepeatXProperty] = js.native
+  var WebkitMaskRepeatX: js.UndefOr[WebkitMaskRepeatXProperty] = js.undefined
   
   /**
     * The `-webkit-mask-repeat-y` property sets whether and how a mask image is repeated (tiled) vertically.
@@ -1161,7 +1159,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `repeat`
     */
-  var WebkitMaskRepeatY: js.UndefOr[WebkitMaskRepeatYProperty] = js.native
+  var WebkitMaskRepeatY: js.UndefOr[WebkitMaskRepeatYProperty] = js.undefined
   
   /**
     * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
@@ -1170,7 +1168,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto auto`
     */
-  var WebkitMaskSize: js.UndefOr[WebkitMaskSizeProperty[TLength]] = js.native
+  var WebkitMaskSize: js.UndefOr[WebkitMaskSizeProperty[TLength]] = js.undefined
   
   /**
     * The **`max-inline-size`** CSS property defines the horizontal or vertical maximum size of an element's block depending on its writing mode. It corresponds to the `max-width` or the `max-height` property depending on the value defined for `writing-mode`. If the writing mode is vertically oriented, the value of `max-inline-size` relates to the maximal height of the element, otherwise it relates to the maximal width of the element. It relates to `max-block-size`, which defines the other dimension of the element.
@@ -1179,7 +1177,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSizeProperty[TLength]] = js.native
+  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSizeProperty[TLength]] = js.undefined
   
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
@@ -1188,7 +1186,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitOrder: js.UndefOr[GlobalsNumber] = js.native
+  var WebkitOrder: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The `-webkit-overflow-scrolling` CSS property controls whether or not touch devices use momentum-based scrolling for a given element.
@@ -1197,7 +1195,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitOverflowScrolling: js.UndefOr[WebkitOverflowScrollingProperty] = js.native
+  var WebkitOverflowScrolling: js.UndefOr[WebkitOverflowScrollingProperty] = js.undefined
   
   /**
     * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1206,7 +1204,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength]] = js.native
+  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength]] = js.undefined
   
   /**
     * The **`padding-inline-start`** CSS property defines the logical inline start padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1215,7 +1213,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitPaddingStart: js.UndefOr[PaddingInlineStartProperty[TLength]] = js.native
+  var WebkitPaddingStart: js.UndefOr[PaddingInlineStartProperty[TLength]] = js.undefined
   
   /**
     * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
@@ -1224,7 +1222,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitPerspective: js.UndefOr[PerspectiveProperty[TLength]] = js.native
+  var WebkitPerspective: js.UndefOr[PerspectiveProperty[TLength]] = js.undefined
   
   /**
     * The **`perspective-origin`** CSS property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the `perspective` property.
@@ -1233,7 +1231,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50%`
     */
-  var WebkitPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[TLength]] = js.native
+  var WebkitPerspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[TLength]] = js.undefined
   
   /**
     * The **`color-adjust`** CSS property sets what, if anything, the user agent may do to optimize the appearance of the element on the output device. By default, the browser is allowed to make any adjustments to the element's appearance it determines to be necessary and prudent given the type and capabilities of the output device.
@@ -1242,7 +1240,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `economy`
     */
-  var WebkitPrintColorAdjust: js.UndefOr[ColorAdjustProperty] = js.native
+  var WebkitPrintColorAdjust: js.UndefOr[ColorAdjustProperty] = js.undefined
   
   /**
     * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
@@ -1251,7 +1249,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitScrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.native
+  var WebkitScrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.undefined
   
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
@@ -1260,7 +1258,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitShapeMargin: js.UndefOr[ShapeMarginProperty[TLength]] = js.native
+  var WebkitShapeMargin: js.UndefOr[ShapeMarginProperty[TLength]] = js.undefined
   
   /**
     * **`-webkit-tap-highlight-color`** is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped. The highlighting indicates to the user that their tap is being successfully recognized, and indicates which element they're tapping on.
@@ -1269,7 +1267,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `black`
     */
-  var WebkitTapHighlightColor: js.UndefOr[WebkitTapHighlightColorProperty] = js.native
+  var WebkitTapHighlightColor: js.UndefOr[WebkitTapHighlightColorProperty] = js.undefined
   
   /**
     * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
@@ -1278,7 +1276,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitTextCombine: js.UndefOr[TextCombineUprightProperty] = js.native
+  var WebkitTextCombine: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
   /**
     * The **`text-decoration-color`** CSS property sets the color of decorations added to text by `text-decoration-line`.
@@ -1287,7 +1285,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.native
+  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
   
   /**
     * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
@@ -1296,7 +1294,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.native
+  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
   
   /**
     * The **`text-decoration-skip`** CSS property sets what parts of an element’s content any text decoration affecting the element must skip over. It controls all text decoration lines drawn by the element and also any text decoration lines drawn by its ancestors.
@@ -1305,7 +1303,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `objects`
     */
-  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.native
+  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.undefined
   
   /**
     * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are set with `text-decoration-line`.
@@ -1314,7 +1312,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `solid`
     */
-  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.native
+  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
   
   /**
     * The **`text-emphasis-color`** CSS property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
@@ -1323,7 +1321,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.native
+  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.undefined
   
   /**
     * The **`text-emphasis-position`** CSS property sets where emphasis marks are drawn. Like ruby text, if there isn't enough room for emphasis marks, the line height is increased.
@@ -1332,7 +1330,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `over right`
     */
-  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString] = js.native
+  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
@@ -1341,7 +1339,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.native
+  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.undefined
   
   /**
     * The **`-webkit-text-fill-color`** CSS property specifies the fill color of characters of text. If this property is not set, the value of the `color` property is used.
@@ -1350,7 +1348,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitTextFillColor: js.UndefOr[WebkitTextFillColorProperty] = js.native
+  var WebkitTextFillColor: js.UndefOr[WebkitTextFillColorProperty] = js.undefined
   
   /**
     * The **`text-orientation`** CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
@@ -1359,7 +1357,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `mixed`
     */
-  var WebkitTextOrientation: js.UndefOr[TextOrientationProperty] = js.native
+  var WebkitTextOrientation: js.UndefOr[TextOrientationProperty] = js.undefined
   
   /**
     * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
@@ -1368,7 +1366,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
     */
-  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.native
+  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
   
   /**
     * The **`-webkit-text-stroke-color`** CSS property specifies the stroke color of characters of text. If this property is not set, the value of the `color` property is used.
@@ -1377,7 +1375,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `currentcolor`
     */
-  var WebkitTextStrokeColor: js.UndefOr[WebkitTextStrokeColorProperty] = js.native
+  var WebkitTextStrokeColor: js.UndefOr[WebkitTextStrokeColorProperty] = js.undefined
   
   /**
     * The **`-webkit-text-stroke-width`** CSS property specifies the width of the stroke for text.
@@ -1386,7 +1384,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var WebkitTextStrokeWidth: js.UndefOr[WebkitTextStrokeWidthProperty[TLength]] = js.native
+  var WebkitTextStrokeWidth: js.UndefOr[WebkitTextStrokeWidthProperty[TLength]] = js.undefined
   
   /**
     * The **`text-underline-position`** CSS property specifies the position of the underline which is set using the `text-decoration` property's `underline` value.
@@ -1395,7 +1393,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.native
+  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.undefined
   
   /**
     * The `-webkit-touch-callout` CSS property controls the display of the default callout shown when you touch and hold a touch target.
@@ -1404,7 +1402,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `default`
     */
-  var WebkitTouchCallout: js.UndefOr[WebkitTouchCalloutProperty] = js.native
+  var WebkitTouchCallout: js.UndefOr[WebkitTouchCalloutProperty] = js.undefined
   
   /**
     * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
@@ -1413,7 +1411,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var WebkitTransform: js.UndefOr[TransformProperty] = js.native
+  var WebkitTransform: js.UndefOr[TransformProperty] = js.undefined
   
   /**
     * The **`transform-origin`** CSS property sets the origin for an element's transformations.
@@ -1422,7 +1420,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50% 0`
     */
-  var WebkitTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.native
+  var WebkitTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.undefined
   
   /**
     * The **`transform-style`** CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
@@ -1431,7 +1429,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `flat`
     */
-  var WebkitTransformStyle: js.UndefOr[TransformStyleProperty] = js.native
+  var WebkitTransformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
   
   /**
     * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
@@ -1440,7 +1438,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var WebkitTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var WebkitTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
@@ -1449,7 +1447,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var WebkitTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var WebkitTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
@@ -1458,7 +1456,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: all
     */
-  var WebkitTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var WebkitTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
   /**
     * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
@@ -1467,14 +1465,14 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ease`
     */
-  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
   /**
     * **Syntax**: `read-only | read-write | read-write-plaintext-only`
     *
     * **Initial value**: `read-only`
     */
-  var WebkitUserModify: js.UndefOr[WebkitUserModifyProperty] = js.native
+  var WebkitUserModify: js.UndefOr[WebkitUserModifyProperty] = js.undefined
   
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
@@ -1483,7 +1481,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var WebkitUserSelect: js.UndefOr[UserSelectProperty] = js.native
+  var WebkitUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
   
   /**
     * The **`writing-mode`** CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
@@ -1492,7 +1490,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `horizontal-tb`
     */
-  var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.native
+  var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
   
   /**
     * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
@@ -1501,7 +1499,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `false`
     */
-  var msAccelerator: js.UndefOr[MsAcceleratorProperty] = js.native
+  var msAccelerator: js.UndefOr[MsAcceleratorProperty] = js.undefined
   
   /**
     * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross-axis margin is set to `auto`, then `align-self` is ignored. In Grid layout `align-self` aligns the item inside the grid area.
@@ -1510,7 +1508,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msAlignSelf: js.UndefOr[AlignSelfProperty] = js.native
+  var msAlignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
   
   /**
     * The **`-ms-block-progression`** CSS property is a Microsoft extension that specifies the block progression and layout orientation.
@@ -1519,7 +1517,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `tb`
     */
-  var msBlockProgression: js.UndefOr[MsBlockProgressionProperty] = js.native
+  var msBlockProgression: js.UndefOr[MsBlockProgressionProperty] = js.undefined
   
   /**
     * The **`-ms-content-zoom-chaining`** CSS property is a Microsoft extension specifying the zoom behavior that occurs when a user hits the zoom limit during page manipulation.
@@ -1528,7 +1526,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msContentZoomChaining: js.UndefOr[MsContentZoomChainingProperty] = js.native
+  var msContentZoomChaining: js.UndefOr[MsContentZoomChainingProperty] = js.undefined
   
   /**
     * The **`-ms-content-zoom-limit-max`** CSS property is a Microsoft extension that specifies the selected elements' maximum zoom factor.
@@ -1537,7 +1535,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `400%`
     */
-  var msContentZoomLimitMax: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimitMax: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-content-zoom-limit-min`** CSS property is a Microsoft extension that specifies the minimum zoom factor.
@@ -1546,7 +1544,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `100%`
     */
-  var msContentZoomLimitMin: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomLimitMin: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-content-zoom-snap-points`** CSS property is a Microsoft extension that specifies where zoom snap-points are located.
@@ -1555,7 +1553,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `snapInterval(0%, 100%)`
     */
-  var msContentZoomSnapPoints: js.UndefOr[GlobalsString] = js.native
+  var msContentZoomSnapPoints: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-content-zoom-snap-type`** CSS property is a Microsoft extension that specifies how zooming is affected by defined snap-points.
@@ -1564,7 +1562,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapTypeProperty] = js.native
+  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapTypeProperty] = js.undefined
   
   /**
     * The **`-ms-content-zooming`** CSS property is a Microsoft extension that specifies whether zooming is enabled.
@@ -1573,7 +1571,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: zoom for the top level element, none for all other elements
     */
-  var msContentZooming: js.UndefOr[MsContentZoomingProperty] = js.native
+  var msContentZooming: js.UndefOr[MsContentZoomingProperty] = js.undefined
   
   /**
     * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
@@ -1582,7 +1580,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: "" (the empty string)
     */
-  var msFilter: js.UndefOr[GlobalsString] = js.native
+  var msFilter: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
@@ -1591,7 +1589,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `row`
     */
-  var msFlexDirection: js.UndefOr[FlexDirectionProperty] = js.native
+  var msFlexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
   
   /**
     * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
@@ -1600,7 +1598,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msFlexPositive: js.UndefOr[GlobalsNumber] = js.native
+  var msFlexPositive: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The **`-ms-flow-from`** CSS property is a Microsoft extension that gets or sets a value identifying a region container in the document that accepts the content flow from the data source.
@@ -1609,7 +1607,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msFlowFrom: js.UndefOr[MsFlowFromProperty] = js.native
+  var msFlowFrom: js.UndefOr[MsFlowFromProperty] = js.undefined
   
   /**
     * The **`-ms-flow-into`** CSS property is a Microsoft extension that gets or sets a value identifying an iframe container in the document that serves as the region's data source.
@@ -1618,7 +1616,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msFlowInto: js.UndefOr[MsFlowIntoProperty] = js.native
+  var msFlowInto: js.UndefOr[MsFlowIntoProperty] = js.undefined
   
   /**
     * The **`grid-auto-columns`** CSS property specifies the size of an implicitly-created grid column track.
@@ -1627,7 +1625,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msGridColumns: js.UndefOr[GridAutoColumnsProperty[TLength]] = js.native
+  var msGridColumns: js.UndefOr[GridAutoColumnsProperty[TLength]] = js.undefined
   
   /**
     * The **`grid-auto-rows`** CSS property specifies the size of an implicitly-created grid row track.
@@ -1636,7 +1634,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msGridRows: js.UndefOr[GridAutoRowsProperty[TLength]] = js.native
+  var msGridRows: js.UndefOr[GridAutoRowsProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-high-contrast-adjust`** CSS property is a Microsoft extension that gets or sets a value indicating whether to override any CSS properties that would have been set in high contrast mode.
@@ -1645,7 +1643,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjustProperty] = js.native
+  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjustProperty] = js.undefined
   
   /**
     * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
@@ -1654,7 +1652,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitCharsProperty] = js.native
+  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitCharsProperty] = js.undefined
   
   /**
     * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
@@ -1663,7 +1661,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `no-limit`
     */
-  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLinesProperty] = js.native
+  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLinesProperty] = js.undefined
   
   /**
     * The `**-ms-hyphenate-limit-zone**` CSS property is a Microsoft extension specifying the width of the hyphenation zone.
@@ -1672,7 +1670,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msHyphenateLimitZone: js.UndefOr[MsHyphenateLimitZoneProperty[TLength]] = js.native
+  var msHyphenateLimitZone: js.UndefOr[MsHyphenateLimitZoneProperty[TLength]] = js.undefined
   
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
@@ -1681,7 +1679,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `manual`
     */
-  var msHyphens: js.UndefOr[HyphensProperty] = js.native
+  var msHyphens: js.UndefOr[HyphensProperty] = js.undefined
   
   /**
     * The **`-ms-ime-align`** CSS property is a Microsoft extension aligning the Input Method Editor (IME) candidate window box relative to the element on which the IME composition is active. The extension is implemented in Microsoft Edge and Internet Explorer 11.
@@ -1690,7 +1688,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msImeAlign: js.UndefOr[MsImeAlignProperty] = js.native
+  var msImeAlign: js.UndefOr[MsImeAlignProperty] = js.undefined
   
   /**
     * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
@@ -1699,7 +1697,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msLineBreak: js.UndefOr[LineBreakProperty] = js.native
+  var msLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
@@ -1708,7 +1706,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msOrder: js.UndefOr[GlobalsNumber] = js.native
+  var msOrder: js.UndefOr[GlobalsNumber] = js.undefined
   
   /**
     * The **`-ms-overflow-style`** CSS property is a Microsoft extension controlling the behavior of scrollbars when the content of an element overflows.
@@ -1717,7 +1715,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msOverflowStyle: js.UndefOr[MsOverflowStyleProperty] = js.native
+  var msOverflowStyle: js.UndefOr[MsOverflowStyleProperty] = js.undefined
   
   /**
     * The **`overflow-x`** CSS property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.
@@ -1726,7 +1724,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `visible`
     */
-  var msOverflowX: js.UndefOr[OverflowXProperty] = js.native
+  var msOverflowX: js.UndefOr[OverflowXProperty] = js.undefined
   
   /**
     * The **`overflow-y`** CSS property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.
@@ -1735,7 +1733,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `visible`
     */
-  var msOverflowY: js.UndefOr[OverflowYProperty] = js.native
+  var msOverflowY: js.UndefOr[OverflowYProperty] = js.undefined
   
   /**
     * The `**-ms-scroll-chaining**` CSS property is a Microsoft extension that specifies the scrolling behavior that occurs when a user hits the scroll limit during a manipulation.
@@ -1744,7 +1742,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `chained`
     */
-  var msScrollChaining: js.UndefOr[MsScrollChainingProperty] = js.native
+  var msScrollChaining: js.UndefOr[MsScrollChainingProperty] = js.undefined
   
   /**
     * The `**-ms-scroll-limit-x-max**` CSS property is a Microsoft extension that specifies the maximum value for the `Element.scrollLeft` property.
@@ -1753,7 +1751,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msScrollLimitXMax: js.UndefOr[MsScrollLimitXMaxProperty[TLength]] = js.native
+  var msScrollLimitXMax: js.UndefOr[MsScrollLimitXMaxProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-scroll-limit-x-min`** CSS property is a Microsoft extension that specifies the minimum value for the `Element.scrollLeft` property.
@@ -1762,7 +1760,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msScrollLimitXMin: js.UndefOr[MsScrollLimitXMinProperty[TLength]] = js.native
+  var msScrollLimitXMin: js.UndefOr[MsScrollLimitXMinProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-scroll-limit-y-max`** CSS property is a Microsoft extension that specifies the maximum value for the `Element.scrollTop` property.
@@ -1771,7 +1769,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msScrollLimitYMax: js.UndefOr[MsScrollLimitYMaxProperty[TLength]] = js.native
+  var msScrollLimitYMax: js.UndefOr[MsScrollLimitYMaxProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-scroll-limit-y-min`** CSS property is a Microsoft extension that specifies the minimum value for the `Element.scrollTop` property.
@@ -1780,7 +1778,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msScrollLimitYMin: js.UndefOr[MsScrollLimitYMinProperty[TLength]] = js.native
+  var msScrollLimitYMin: js.UndefOr[MsScrollLimitYMinProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-scroll-rails`** CSS property is a Microsoft extension that specifies whether scrolling locks to the primary axis of motion.
@@ -1789,7 +1787,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `railed`
     */
-  var msScrollRails: js.UndefOr[MsScrollRailsProperty] = js.native
+  var msScrollRails: js.UndefOr[MsScrollRailsProperty] = js.undefined
   
   /**
     * The **`-ms-scroll-snap-points-x`** CSS property is a Microsoft extension that specifies where snap-points will be located along the x-axis.
@@ -1798,7 +1796,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var msScrollSnapPointsX: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapPointsX: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`-ms-scroll-snap-points-y`** CSS property is a Microsoft extension that specifies where snap-points will be located along the y-axis.
@@ -1807,7 +1805,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var msScrollSnapPointsY: js.UndefOr[GlobalsString] = js.native
+  var msScrollSnapPointsY: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
@@ -1816,7 +1814,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msScrollSnapType: js.UndefOr[MsScrollSnapTypeProperty] = js.native
+  var msScrollSnapType: js.UndefOr[MsScrollSnapTypeProperty] = js.undefined
   
   /**
     * The **`-ms-scroll-translation`** CSS property is a Microsoft extension that specifies whether vertical-to-horizontal scroll wheel translation occurs on the specified element.
@@ -1825,7 +1823,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty] = js.native
+  var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty] = js.undefined
   
   /**
     * The **`-ms-scrollbar-3dlight-color`** CSS property is a Microsoft extension specifying the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.
@@ -1834,7 +1832,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: depends on user agent
     */
-  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.native
+  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.undefined
   
   /**
     * The **`-ms-scrollbar-arrow-color`** CSS property is a Microsoft extension that specifies the color of the arrow elements of a scroll arrow.
@@ -1843,7 +1841,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ButtonText`
     */
-  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.native
+  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.undefined
   
   /**
     * The `**-ms-scrollbar-base-color**` CSS property is a Microsoft extension that specifies the base color of the main elements of a scroll bar.
@@ -1852,7 +1850,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: depends on user agent
     */
-  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.native
+  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.undefined
   
   /**
     * The **`-ms-scrollbar-darkshadow-color`** CSS property is a Microsoft extension that specifies the color of a scroll bar's gutter.
@@ -1861,7 +1859,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ThreeDDarkShadow`
     */
-  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.native
+  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.undefined
   
   /**
     * The `**-ms-scrollbar-face-color**` CSS property is a Microsoft extension that specifies the color of the scroll box and scroll arrows of a scroll bar.
@@ -1870,7 +1868,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ThreeDFace`
     */
-  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.native
+  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.undefined
   
   /**
     * The `**-ms-scrollbar-highlight-color**` CSS property is a Microsoft extension that specifies the color of the slider tray, the top and left edges of the scroll box, and the scroll arrows of a scroll bar.
@@ -1879,7 +1877,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ThreeDHighlight`
     */
-  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.native
+  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.undefined
   
   /**
     * The **`-ms-scrollbar-shadow-color`** CSS property is a Microsoft extension that specifies the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.
@@ -1888,7 +1886,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ThreeDDarkShadow`
     */
-  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.native
+  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
   
   /**
     * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
@@ -1897,7 +1895,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msTextAutospace: js.UndefOr[MsTextAutospaceProperty] = js.native
+  var msTextAutospace: js.UndefOr[MsTextAutospaceProperty] = js.undefined
   
   /**
     * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
@@ -1906,7 +1904,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msTextCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.native
+  var msTextCombineHorizontal: js.UndefOr[TextCombineUprightProperty] = js.undefined
   
   /**
     * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
@@ -1915,7 +1913,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `clip`
     */
-  var msTextOverflow: js.UndefOr[TextOverflowProperty] = js.native
+  var msTextOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
   
   /**
     * The **`touch-action`** CSS property sets how a region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
@@ -1924,7 +1922,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msTouchAction: js.UndefOr[TouchActionProperty] = js.native
+  var msTouchAction: js.UndefOr[TouchActionProperty] = js.undefined
   
   /**
     * The **`-ms-touch-select`** CSS property is a Microsoft extension that toggles the gripper visual elements that enable touch text selection.
@@ -1933,7 +1931,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `grippers`
     */
-  var msTouchSelect: js.UndefOr[MsTouchSelectProperty] = js.native
+  var msTouchSelect: js.UndefOr[MsTouchSelectProperty] = js.undefined
   
   /**
     * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
@@ -1942,7 +1940,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `none`
     */
-  var msTransform: js.UndefOr[TransformProperty] = js.native
+  var msTransform: js.UndefOr[TransformProperty] = js.undefined
   
   /**
     * The **`transform-origin`** CSS property sets the origin for an element's transformations.
@@ -1951,7 +1949,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `50% 50% 0`
     */
-  var msTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.native
+  var msTransformOrigin: js.UndefOr[TransformOriginProperty[TLength]] = js.undefined
   
   /**
     * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
@@ -1960,7 +1958,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var msTransitionDelay: js.UndefOr[GlobalsString] = js.native
+  var msTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
@@ -1969,7 +1967,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0s`
     */
-  var msTransitionDuration: js.UndefOr[GlobalsString] = js.native
+  var msTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
@@ -1978,7 +1976,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: all
     */
-  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.native
+  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
   
   /**
     * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
@@ -1987,7 +1985,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `ease`
     */
-  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.native
+  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
   
   /**
     * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
@@ -1996,7 +1994,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `text`
     */
-  var msUserSelect: js.UndefOr[MsUserSelectProperty] = js.native
+  var msUserSelect: js.UndefOr[MsUserSelectProperty] = js.undefined
   
   /**
     * The **`word-break`** CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
@@ -2005,7 +2003,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `normal`
     */
-  var msWordBreak: js.UndefOr[WordBreakProperty] = js.native
+  var msWordBreak: js.UndefOr[WordBreakProperty] = js.undefined
   
   /**
     * The **`-ms-wrap-flow`** CSS property is a Microsoft extension that specifies how exclusions impact inline content within block-level elements.
@@ -2014,7 +2012,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `auto`
     */
-  var msWrapFlow: js.UndefOr[MsWrapFlowProperty] = js.native
+  var msWrapFlow: js.UndefOr[MsWrapFlowProperty] = js.undefined
   
   /**
     * The **`-ms-wrap-margin`** CSS property is a Microsoft extension that specifies a margin that offsets the inner wrap shape from other shapes.
@@ -2023,7 +2021,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `0`
     */
-  var msWrapMargin: js.UndefOr[MsWrapMarginProperty[TLength]] = js.native
+  var msWrapMargin: js.UndefOr[MsWrapMarginProperty[TLength]] = js.undefined
   
   /**
     * The **`-ms-wrap-through`** CSS property is a Microsoft extension that specifies how content should wrap around an exclusion element.
@@ -2032,7 +2030,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `wrap`
     */
-  var msWrapThrough: js.UndefOr[MsWrapThroughProperty] = js.native
+  var msWrapThrough: js.UndefOr[MsWrapThroughProperty] = js.undefined
   
   /**
     * The **`writing-mode`** CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
@@ -2041,7 +2039,7 @@ trait VendorLonghandProperties[TLength] extends StObject {
     *
     * **Initial value**: `horizontal-tb`
     */
-  var msWritingMode: js.UndefOr[WritingModeProperty] = js.native
+  var msWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
 }
 object VendorLonghandProperties {
   
@@ -2052,7 +2050,7 @@ object VendorLonghandProperties {
   }
   
   @scala.inline
-  implicit class VendorLonghandPropertiesMutableBuilder[Self <: VendorLonghandProperties[_], TLength] (val x: Self with VendorLonghandProperties[TLength]) extends AnyVal {
+  implicit class VendorLonghandPropertiesMutableBuilder[Self <: VendorLonghandProperties[?], TLength] (val x: Self & VendorLonghandProperties[TLength]) extends AnyVal {
     
     @scala.inline
     def setMozAnimationDelay(value: GlobalsString): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,7 +49,7 @@ trait MasterCategories extends StObject {
   def addAsync(categories: js.Array[CategoryDetails]): Unit = js.native
   def addAsync(
     categories: js.Array[CategoryDetails],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(categories: js.Array[CategoryDetails], options: AsyncContextOptions): Unit = js.native
@@ -120,7 +119,7 @@ trait MasterCategories extends StObject {
   def removeAsync(categories: js.Array[String]): Unit = js.native
   def removeAsync(
     categories: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native

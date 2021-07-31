@@ -7,14 +7,16 @@ import typings.astTypes.nodePathMod.NodePath
 import typings.astTypes.typesMod.ASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathVisitorMod {
   
-  @JSImport("ast-types/lib/path-visitor", JSImport.Default)
+  @JSImport("ast-types/lib/path-visitor", JSImport.Namespace)
   @js.native
-  def default(fork: Fork): PathVisitorConstructor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fork: Fork): PathVisitorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathVisitorConstructor]
   
   /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/lib/path-visitor.PathVisitor, 'visit' | 'reset'> */
   /* Inlined parent ast-types.ast-types/lib/path-visitor.SharedContextMethods */
@@ -43,7 +45,7 @@ object pathVisitorMod {
     
     def acquireContext(path: js.Any): js.Any = js.native
     @JSName("acquireContext")
-    var acquireContext_Original: js.Function1[/* path */ js.Any, _] = js.native
+    var acquireContext_Original: js.Function1[/* path */ js.Any, js.Any] = js.native
     
     var currentPath: js.Any = js.native
     
@@ -69,51 +71,50 @@ object pathVisitorMod {
     
     def visitWithoutReset(path: js.Any): js.Any = js.native
     @JSName("visitWithoutReset")
-    var visitWithoutReset_Original: js.Function1[/* path */ js.Any, _] = js.native
+    var visitWithoutReset_Original: js.Function1[/* path */ js.Any, js.Any] = js.native
     
     var visitor: js.Any = js.native
     
     def wasChangeReported(): js.Any = js.native
     @JSName("wasChangeReported")
-    var wasChangeReported_Original: js.Function0[_] = js.native
+    var wasChangeReported_Original: js.Function0[js.Any] = js.native
   }
   
-  @js.native
   trait PathVisitor extends StObject {
     
-    var AbortRequest: js.Any = js.native
+    var AbortRequest: js.Any
     
-    var Context: js.Any = js.native
+    var Context: js.Any
     
-    var _abortRequested: Boolean = js.native
+    var _abortRequested: Boolean
     
-    var _changeReported: js.Any = js.native
+    var _changeReported: js.Any
     
-    var _methodNameTable: js.Any = js.native
+    var _methodNameTable: js.Any
     
-    var _reusableContextStack: js.Any = js.native
+    var _reusableContextStack: js.Any
     
-    var _shouldVisitComments: js.Any = js.native
+    var _shouldVisitComments: js.Any
     
-    var _visiting: js.Any = js.native
+    var _visiting: js.Any
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    def acquireContext(path: js.Any): js.Any = js.native
+    def acquireContext(path: js.Any): js.Any
     
-    def releaseContext(context: js.Any): Unit = js.native
+    def releaseContext(context: js.Any): Unit
     
-    def reportChanged(): Unit = js.native
+    def reportChanged(): Unit
     
-    def reset(args: js.Any*): js.Any = js.native
+    def reset(args: js.Any*): js.Any
     
-    def visit(args: js.Any*): js.Any = js.native
+    def visit(args: js.Any*): js.Any
     
-    def visitWithoutReset(path: js.Any): js.Any = js.native
+    def visitWithoutReset(path: js.Any): js.Any
     
-    var visitor: js.Any = js.native
+    var visitor: js.Any
     
-    def wasChangeReported(): js.Any = js.native
+    def wasChangeReported(): js.Any
   }
   object PathVisitor {
     
@@ -199,7 +200,8 @@ object pathVisitorMod {
   
   @js.native
   trait PathVisitorConstructor
-    extends PathVisitorStatics
+    extends StObject
+       with PathVisitorStatics
        with Instantiable0[PathVisitor]
   
   @js.native
@@ -242,7 +244,8 @@ object pathVisitorMod {
   
   @js.native
   trait VisitorConstructor
-    extends PathVisitorStatics
+    extends StObject
+       with PathVisitorStatics
        with Instantiable0[Visitor]
   
   type VisitorMethods = StringDictionary[js.Function1[/* path */ NodePath[js.Any, js.Any], js.Any]]

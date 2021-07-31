@@ -5,14 +5,13 @@ import typings.sipJs.transportStateMod.TransportState
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
   
-  @js.native
   trait Transport
-    extends typings.sipJs.coreTransportMod.Transport {
+    extends StObject
+       with typings.sipJs.coreTransportMod.Transport {
     
     /**
       * Connect to network.
@@ -30,7 +29,7 @@ object transportMod {
       * Rejects with {@link StateTransitionError} if a loop is detected.
       * In particular, callbacks and emitters MUST NOT call this method synchronously.
       */
-    def connect(): js.Promise[Unit] = js.native
+    def connect(): js.Promise[Unit]
     
     /**
       * Disconnect from network.
@@ -48,7 +47,7 @@ object transportMod {
       * Rejects with {@link StateTransitionError} if a loop is detected.
       * In particular, callbacks and emitters MUST NOT call this method synchronously.
       */
-    def disconnect(): js.Promise[Unit] = js.native
+    def disconnect(): js.Promise[Unit]
     
     /**
       * Dispose.
@@ -57,7 +56,7 @@ object transportMod {
       * When the `UserAgent` is disposed or stopped, this method is called.
       * The `UserAgent` MUST NOT continue to utilize the instance after calling this method.
       */
-    def dispose(): js.Promise[Unit] = js.native
+    def dispose(): js.Promise[Unit]
     
     /**
       * Returns true if the `state` equals "Connected".
@@ -78,7 +77,7 @@ object transportMod {
       * });
       * ```
       */
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
     
     /**
       * Callback on state transition to "Connected".
@@ -89,7 +88,7 @@ object transportMod {
       * - The `state` MUST be "Connected" when called.
       * ```
       */
-    var onConnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback on state transition from "Connected".
@@ -107,7 +106,7 @@ object transportMod {
       * transport initiated the transition from "Connected" - for example,
       * perhaps network connectivity was lost.
       */
-    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.native
+    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
     
     /**
       * Callback on receipt of a message.
@@ -116,7 +115,7 @@ object transportMod {
       * When the `UserAgent` is constructed, this property is set.
       * The `state` MUST be "Connected" when this is called.
       */
-    var onMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
     /**
       * Transport state.
@@ -124,12 +123,12 @@ object transportMod {
       * @remarks
       * The initial Transport state MUST be "disconnected" (after calling constructor).
       */
-    val state: TransportState = js.native
+    val state: TransportState
     
     /**
       * Transport state change emitter.
       */
-    val stateChange: Emitter[TransportState] = js.native
+    val stateChange: Emitter[TransportState]
   }
   object Transport {
     

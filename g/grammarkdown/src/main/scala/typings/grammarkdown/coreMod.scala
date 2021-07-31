@@ -14,208 +14,157 @@ import typings.std.Map
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
   
-  @JSImport("grammarkdown/dist/core", "binarySearch")
+  @JSImport("grammarkdown/dist/core", JSImport.Namespace)
   @js.native
-  def binarySearch(array: js.Array[Double], value: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("grammarkdown/dist/core", "binarySearchBy")
-  @js.native
-  def binarySearchBy[T, K](array: js.Array[T], key: K, selector: js.Function1[/* value */ T, K]): Double = js.native
-  @JSImport("grammarkdown/dist/core", "binarySearchBy")
-  @js.native
+  @scala.inline
+  def binarySearch(array: js.Array[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def binarySearchBy[T, K](array: js.Array[T], key: K, selector: js.Function1[/* value */ T, K]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearchBy")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def binarySearchBy[T, K](
     array: js.Array[T],
     key: K,
     selector: js.Function1[/* value */ T, K],
     comparison: js.Function2[/* x */ K, /* y */ K, Double]
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearchBy")(array.asInstanceOf[js.Any], key.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], comparison.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("grammarkdown/dist/core", "compare")
-  @js.native
-  def compare(x: js.Any, y: js.Any): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compare(x: js.Any, y: js.Any): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @JSImport("grammarkdown/dist/core", "compareNumbers")
-  @js.native
-  def compareNumbers(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def compareNumbers(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareNumbers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], ignoreCase: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: js.UndefOr[scala.Nothing], y: String): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: js.UndefOr[scala.Nothing], y: String, ignoreCase: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: String): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: String, y: js.UndefOr[scala.Nothing], ignoreCase: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: String, y: String): `1` | `0` | `-1` = js.native
-  @JSImport("grammarkdown/dist/core", "compareStrings")
-  @js.native
-  def compareStrings(x: String, y: String, ignoreCase: Boolean): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compareStrings(): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")().asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: String): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any]).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: String, y: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: String, y: String, ignoreCase: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreCase.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: String, y: Unit, ignoreCase: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreCase.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: Unit, y: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: Unit, y: String, ignoreCase: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreCase.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareStrings(x: Unit, y: Unit, ignoreCase: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareStrings")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreCase.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat[T](): js.UndefOr[js.Array[T]] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat[T](a: js.UndefOr[scala.Nothing], b: js.Array[T]): js.UndefOr[js.Array[T]] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat[T](a: js.Array[T]): js.UndefOr[js.Array[T]] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat[T](a: js.Array[T], b: js.Array[T]): js.UndefOr[js.Array[T]] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat_T_Array[T](a: js.UndefOr[scala.Nothing], b: js.Array[T]): js.Array[T] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat_T_Array[T](a: js.Array[T]): js.Array[T] = js.native
-  @JSImport("grammarkdown/dist/core", "concat")
-  @js.native
-  def concat_T_Array[T](a: js.Array[T], b: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def concat[T](): js.UndefOr[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")().asInstanceOf[js.UndefOr[js.Array[T]]]
+  @scala.inline
+  def concat[T](a: js.Array[T]): js.UndefOr[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[T]]]
+  @scala.inline
+  def concat[T](a: js.Array[T], b: js.Array[T]): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+  @scala.inline
+  def concat[T](a: Unit, b: js.Array[T]): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
   
-  @JSImport("grammarkdown/dist/core", "deduplicateSorted")
-  @js.native
-  def deduplicateSorted[T](array: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, Double | Boolean]): js.Array[T] = js.native
+  @scala.inline
+  def concat_T_Array[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def concat_T_Array[T](a: js.Array[T], b: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def concat_T_Array[T](a: Unit, b: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def deduplicateSorted[T](array: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, Double | Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("deduplicateSorted")(array.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   @JSImport("grammarkdown/dist/core", "emptyIterable")
   @js.native
   val emptyIterable: IterableIterator[scala.Nothing] = js.native
   
-  @JSImport("grammarkdown/dist/core", "first")
-  @js.native
-  def first[T](): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "first")
-  @js.native
-  def first[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "first")
-  @js.native
-  def first[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
+  @scala.inline
+  def first[T](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def first[T](iterable: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def first[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("grammarkdown/dist/core", "forEach")
-  @js.native
-  def forEach[T, U](array: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
-  @JSImport("grammarkdown/dist/core", "forEach")
-  @js.native
-  def forEach[T, U](array: js.Array[T], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
+  @scala.inline
+  def forEach[T, U](array: js.Array[T], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
+  @scala.inline
+  def forEach[T, U](array: Unit, cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
   
-  @JSImport("grammarkdown/dist/core", "forEachPossiblyAsync")
-  @js.native
-  def forEachPossiblyAsync[T, U](iterable: Iterable[T], callback: js.Function1[/* value */ T, js.UndefOr[js.Promise[U] | U]]): Unit | js.Promise[Unit] = js.native
+  @scala.inline
+  def forEachPossiblyAsync[T, U](iterable: Iterable[T], callback: js.Function1[/* value */ T, js.UndefOr[js.Promise[U] | U]]): Unit | js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachPossiblyAsync")(iterable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[Unit]]
   
-  @JSImport("grammarkdown/dist/core", "getLocalPath")
-  @js.native
-  def getLocalPath(file: String): String = js.native
+  @scala.inline
+  def getLocalPath(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalPath")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("grammarkdown/dist/core", "identity")
-  @js.native
-  def identity[T](value: T): T = js.native
+  @scala.inline
+  def identity[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("grammarkdown/dist/core", "isFileUri")
-  @js.native
-  def isFileUri(file: String): Boolean = js.native
+  @scala.inline
+  def isFileUri(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFileUri")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("grammarkdown/dist/core", "isPromise")
-  @js.native
-  def isPromise[T](): /* is std.Promise<T> */ Boolean = js.native
-  @JSImport("grammarkdown/dist/core", "isPromise")
-  @js.native
-  def isPromise[T](value: T): /* is std.Promise<T> */ Boolean = js.native
-  @JSImport("grammarkdown/dist/core", "isPromise")
-  @js.native
-  def isPromise[T](value: js.Promise[T]): /* is std.Promise<T> */ Boolean = js.native
+  @scala.inline
+  def isPromise[T](): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")().asInstanceOf[/* is std.Promise<T> */ Boolean]
+  @scala.inline
+  def isPromise[T](value: T): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+  @scala.inline
+  def isPromise[T](value: js.Promise[T]): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
   
-  @JSImport("grammarkdown/dist/core", "isUri")
-  @js.native
-  def isUri(file: String): Boolean = js.native
+  @scala.inline
+  def isUri(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("grammarkdown/dist/core", "last")
-  @js.native
-  def last[T](): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "last")
-  @js.native
-  def last[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "last")
-  @js.native
-  def last[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
+  @scala.inline
+  def last[T](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def last[T](iterable: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def last[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("grammarkdown/dist/core", "mapFromObject")
-  @js.native
-  def mapFromObject[T](`object`: DictionaryLike[T]): Map[String, T] = js.native
+  @scala.inline
+  def mapFromObject[T](`object`: DictionaryLike[T]): Map[String, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapFromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Map[String, T]]
   
-  @JSImport("grammarkdown/dist/core", "mapSet")
-  @js.native
-  def mapSet[K, V](map: Map[K, V], key: K, value: V): V = js.native
-  @JSImport("grammarkdown/dist/core", "mapSet")
-  @js.native
-  def mapSet[K /* <: js.Object */, V](map: WeakMap[K, V], key: K, value: V): V = js.native
+  @scala.inline
+  def mapSet[K, V](map: Map[K, V], key: K, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSet")(map.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
+  @scala.inline
+  def mapSet[K /* <: js.Object */, V](map: WeakMap[K, V], key: K, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSet")(map.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("grammarkdown/dist/core", "only")
-  @js.native
-  def only[T](): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "only")
-  @js.native
-  def only[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/core", "only")
-  @js.native
-  def only[T](iterable: Iterable[T]): js.UndefOr[T] = js.native
+  @scala.inline
+  def only[T](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("only")().asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def only[T](iterable: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def only[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("grammarkdown/dist/core", "pipe")
-  @js.native
-  def pipe[T, U](result: T, next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]): U | js.Promise[U] = js.native
-  @JSImport("grammarkdown/dist/core", "pipe")
-  @js.native
-  def pipe[T, U](
-    result: js.UndefOr[scala.Nothing],
-    next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]
-  ): U | js.Promise[U] = js.native
-  @JSImport("grammarkdown/dist/core", "pipe")
-  @js.native
-  def pipe[T, U](result: js.Promise[T], next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]): U | js.Promise[U] = js.native
+  @scala.inline
+  def pipe[T, U](result: T, next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]): U | js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(result.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[U | js.Promise[U]]
+  @scala.inline
+  def pipe[T, U](result: js.Promise[T], next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]): U | js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(result.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[U | js.Promise[U]]
+  @scala.inline
+  def pipe[T, U](result: Unit, next: js.Function1[js.UndefOr[T], js.UndefOr[js.Promise[U] | U]]): U | js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(result.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[U | js.Promise[U]]
   
-  @JSImport("grammarkdown/dist/core", "promiseFinally")
-  @js.native
-  def promiseFinally[T](promise: js.Thenable[T], onFinally: js.Function0[Unit]): js.Thenable[T] = js.native
+  @scala.inline
+  def promiseFinally[T](promise: js.Thenable[T], onFinally: js.Function0[Unit]): js.Thenable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("promiseFinally")(promise.asInstanceOf[js.Any], onFinally.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[T]]
   
-  @JSImport("grammarkdown/dist/core", "stableSort")
-  @js.native
-  def stableSort[T](array: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
+  @scala.inline
+  def stableSort[T](array: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(array.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("grammarkdown/dist/core", "toCancelToken")
-  @js.native
-  def toCancelToken(): js.UndefOr[CancelToken] = js.native
-  @JSImport("grammarkdown/dist/core", "toCancelToken")
-  @js.native
-  def toCancelToken(cancelable: Cancelable): js.UndefOr[CancelToken] = js.native
-  @JSImport("grammarkdown/dist/core", "toCancelToken")
-  @js.native
-  def toCancelToken_CancelToken(cancelable: Cancelable): CancelToken = js.native
+  @scala.inline
+  def toCancelToken(): js.UndefOr[CancelToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCancelToken")().asInstanceOf[js.UndefOr[CancelToken]]
+  @scala.inline
+  def toCancelToken(cancelable: Cancelable): js.UndefOr[CancelToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCancelToken")(cancelable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CancelToken]]
   
-  @JSImport("grammarkdown/dist/core", "wrapCancelToken")
-  @js.native
-  def wrapCancelToken(): js.UndefOr[CancelToken with CancellationToken] = js.native
-  @JSImport("grammarkdown/dist/core", "wrapCancelToken")
-  @js.native
-  def wrapCancelToken(cancelToken: CancelToken): js.UndefOr[CancelToken with CancellationToken] = js.native
-  @JSImport("grammarkdown/dist/core", "wrapCancelToken")
-  @js.native
-  def wrapCancelToken_Intersection(cancelToken: CancelToken): CancelToken with CancellationToken = js.native
+  @scala.inline
+  def toCancelToken_CancelToken(cancelable: Cancelable): CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("toCancelToken")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancelToken]
   
-  type DictionaryLike[T] = StringDictionary[T] with NumberDictionary[T]
+  @scala.inline
+  def wrapCancelToken(): js.UndefOr[CancelToken & CancellationToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCancelToken")().asInstanceOf[js.UndefOr[CancelToken & CancellationToken]]
+  @scala.inline
+  def wrapCancelToken(cancelToken: CancelToken): js.UndefOr[CancelToken & CancellationToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCancelToken")(cancelToken.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CancelToken & CancellationToken]]
+  
+  @scala.inline
+  def wrapCancelToken_Intersection(cancelToken: CancelToken): CancelToken & CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCancelToken")(cancelToken.asInstanceOf[js.Any]).asInstanceOf[CancelToken & CancellationToken]
+  
+  type DictionaryLike[T] = StringDictionary[T] & NumberDictionary[T]
 }

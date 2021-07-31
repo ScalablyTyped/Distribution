@@ -2,69 +2,67 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApiKeyResponse extends StObject {
   
   /**
     * List of permissions the key contains.
     */
-  var acl: js.Array[ApiKeyACLType] = js.native
+  var acl: js.Array[ApiKeyACLType]
   
   /**
     * Date of creation.
     */
-  var createdAt: String = js.native
+  var createdAt: String
   
   /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the list of targeted indices. You can target all indices starting with a prefix or ending with a suffix using the ‘*’ character.
     */
-  var indexes: js.UndefOr[js.Array[String]] = js.native
+  var indexes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify the maximum number of hits this API key can retrieve in one call.
     * This parameter can be used to protect you from attempts at retrieving your entire index contents by massively querying the index.
     */
-  var maxHitsPerQuery: js.UndefOr[Double] = js.native
+  var maxHitsPerQuery: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the maximum number of API calls allowed from an IP address per hour. Each time an API call is performed with this key, a check is performed.
     */
-  var maxQueriesPerIPPerHour: js.UndefOr[Double] = js.native
+  var maxQueriesPerIPPerHour: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the list of query parameters. You can force the query parameters for a query using the url string format.
     */
-  var queryParameters: js.UndefOr[String] = js.native
+  var queryParameters: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the list of referers. You can target all referers starting with a prefix, ending with a suffix using the ‘*’ character.
     */
-  var referers: js.UndefOr[js.Array[String]] = js.native
+  var referers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * IPv4 network allowed to use the generated key.
     * This is used for more protection against API key leaking and reuse.
     * Note that you can only provide a single source, but you can specify a range of IPs (e.g., 192.168.1.0/24).
     */
-  var restrictSources: js.UndefOr[String] = js.native
+  var restrictSources: js.UndefOr[String] = js.undefined
   
   /**
     * A Unix timestamp used to define the expiration date of the API key.
     */
-  var validity: Double = js.native
+  var validity: Double
   
   /**
     * A Unix timestamp used to define the expiration date of the API key.
     */
-  var value: String = js.native
+  var value: String
 }
 object GetApiKeyResponse {
   

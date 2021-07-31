@@ -21,7 +21,6 @@ import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleMod {
@@ -45,7 +44,7 @@ object moduleMod {
       
       def exec(sql: String): js.Array[QueryResults] = js.native
       
-      def export(): Uint8Array = js.native
+      def `export`(): Uint8Array = js.native
       
       def getRowsModified(): Double = js.native
       
@@ -90,62 +89,61 @@ object moduleMod {
     }
     
     /* Inlined std.Partial<emscripten.EmscriptenModule> */
-    @js.native
     trait Config extends StObject {
       
-      var FAST_MEMORY: js.UndefOr[Double] = js.native
+      var FAST_MEMORY: js.UndefOr[Double] = js.undefined
       
-      var FHEAP: js.UndefOr[Float64Array] = js.native
+      var FHEAP: js.UndefOr[Float64Array] = js.undefined
       
-      var HEAP: js.UndefOr[Int32Array] = js.native
+      var HEAP: js.UndefOr[Int32Array] = js.undefined
       
-      var HEAP16: js.UndefOr[Int16Array] = js.native
+      var HEAP16: js.UndefOr[Int16Array] = js.undefined
       
-      var HEAP32: js.UndefOr[Int32Array] = js.native
+      var HEAP32: js.UndefOr[Int32Array] = js.undefined
       
-      var HEAP8: js.UndefOr[Int8Array] = js.native
+      var HEAP8: js.UndefOr[Int8Array] = js.undefined
       
-      var HEAPF32: js.UndefOr[Float32Array] = js.native
+      var HEAPF32: js.UndefOr[Float32Array] = js.undefined
       
-      var HEAPF64: js.UndefOr[Float64Array] = js.native
+      var HEAPF64: js.UndefOr[Float64Array] = js.undefined
       
-      var HEAPU16: js.UndefOr[Uint16Array] = js.native
+      var HEAPU16: js.UndefOr[Uint16Array] = js.undefined
       
-      var HEAPU32: js.UndefOr[Uint32Array] = js.native
+      var HEAPU32: js.UndefOr[Uint32Array] = js.undefined
       
-      var HEAPU8: js.UndefOr[Uint8Array] = js.native
+      var HEAPU8: js.UndefOr[Uint8Array] = js.undefined
       
-      var IHEAP: js.UndefOr[Int32Array] = js.native
+      var IHEAP: js.UndefOr[Int32Array] = js.undefined
       
-      var TOTAL_MEMORY: js.UndefOr[Double] = js.native
+      var TOTAL_MEMORY: js.UndefOr[Double] = js.undefined
       
-      var TOTAL_STACK: js.UndefOr[Double] = js.native
+      var TOTAL_STACK: js.UndefOr[Double] = js.undefined
       
-      var _free: js.UndefOr[js.Function1[/* ptr */ Double, Unit]] = js.native
+      var _free: js.UndefOr[js.Function1[/* ptr */ Double, Unit]] = js.undefined
       
-      var _malloc: js.UndefOr[js.Function1[/* size */ Double, Double]] = js.native
+      var _malloc: js.UndefOr[js.Function1[/* size */ Double, Double]] = js.undefined
       
-      var addOnExit: js.UndefOr[js.Function1[/* cb */ js.Function0[_], Unit]] = js.native
+      var addOnExit: js.UndefOr[js.Function1[/* cb */ js.Function0[js.Any], Unit]] = js.undefined
       
-      var addOnInit: js.UndefOr[js.Function1[/* cb */ js.Function0[_], Unit]] = js.native
+      var addOnInit: js.UndefOr[js.Function1[/* cb */ js.Function0[js.Any], Unit]] = js.undefined
       
-      var addOnPostRun: js.UndefOr[js.Function1[/* cb */ js.Function0[_], Unit]] = js.native
+      var addOnPostRun: js.UndefOr[js.Function1[/* cb */ js.Function0[js.Any], Unit]] = js.undefined
       
-      var addOnPreMain: js.UndefOr[js.Function1[/* cb */ js.Function0[_], Unit]] = js.native
+      var addOnPreMain: js.UndefOr[js.Function1[/* cb */ js.Function0[js.Any], Unit]] = js.undefined
       
-      var addOnPreRun: js.UndefOr[js.Function1[/* cb */ js.Function0[_], Unit]] = js.native
+      var addOnPreRun: js.UndefOr[js.Function1[/* cb */ js.Function0[js.Any], Unit]] = js.undefined
       
-      var arguments: js.UndefOr[js.Array[String]] = js.native
+      var arguments: js.UndefOr[js.Array[String]] = js.undefined
       
-      var destroy: js.UndefOr[js.Function1[/* object */ js.Object, Unit]] = js.native
+      var destroy: js.UndefOr[js.Function1[/* object */ js.Object, Unit]] = js.undefined
       
-      var environment: js.UndefOr[EnvironmentType] = js.native
+      var environment: js.UndefOr[EnvironmentType] = js.undefined
       
-      var filePackagePrefixURL: js.UndefOr[String] = js.native
+      var filePackagePrefixURL: js.UndefOr[String] = js.undefined
       
       var getPreloadedPackage: js.UndefOr[
             js.Function2[/* remotePackageName */ String, /* remotePackageSize */ Double, ArrayBuffer]
-          ] = js.native
+          ] = js.undefined
       
       var instantiateWasm: js.UndefOr[
             js.Function2[
@@ -153,39 +151,39 @@ object moduleMod {
               /* successCallback */ js.Function1[/* module */ Module, Unit], 
               WebAssemblyExports
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var locateFile: js.UndefOr[js.Function2[/* url */ String, /* scriptDirectory */ String, String]] = js.native
+      var locateFile: js.UndefOr[js.Function2[/* url */ String, /* scriptDirectory */ String, String]] = js.undefined
       
-      var logReadFiles: js.UndefOr[Boolean] = js.native
+      var logReadFiles: js.UndefOr[Boolean] = js.undefined
       
-      var noExitRuntime: js.UndefOr[Boolean] = js.native
+      var noExitRuntime: js.UndefOr[Boolean] = js.undefined
       
-      var noInitialRun: js.UndefOr[Boolean] = js.native
+      var noInitialRun: js.UndefOr[Boolean] = js.undefined
       
-      var onAbort: js.UndefOr[js.Function1[/* what */ js.Any, Unit]] = js.native
+      var onAbort: js.UndefOr[js.Function1[/* what */ js.Any, Unit]] = js.undefined
       
-      var onCustomMessage: js.UndefOr[js.Function1[/* event */ MessageEvent[_], Unit]] = js.native
+      var onCustomMessage: js.UndefOr[js.Function1[/* event */ MessageEvent[js.Any], Unit]] = js.undefined
       
-      var onRuntimeInitialized: js.UndefOr[js.Function0[Unit]] = js.native
+      var onRuntimeInitialized: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var postRun: js.UndefOr[js.Array[js.Function0[Unit]]] = js.native
+      var postRun: js.UndefOr[js.Array[js.Function0[Unit]]] = js.undefined
       
-      var preInit: js.UndefOr[js.Array[js.Function0[Unit]]] = js.native
+      var preInit: js.UndefOr[js.Array[js.Function0[Unit]]] = js.undefined
       
-      var preRun: js.UndefOr[js.Array[js.Function0[Unit]]] = js.native
+      var preRun: js.UndefOr[js.Array[js.Function0[Unit]]] = js.undefined
       
-      var preinitializedWebGLContext: js.UndefOr[WebGLRenderingContext] = js.native
+      var preinitializedWebGLContext: js.UndefOr[WebGLRenderingContext] = js.undefined
       
-      var preloadedAudios: js.UndefOr[js.Any] = js.native
+      var preloadedAudios: js.UndefOr[js.Any] = js.undefined
       
-      var preloadedImages: js.UndefOr[js.Any] = js.native
+      var preloadedImages: js.UndefOr[js.Any] = js.undefined
       
-      var print: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.native
+      var print: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.undefined
       
-      var printErr: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.native
+      var printErr: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.undefined
       
-      var wasmBinary: js.UndefOr[ArrayBuffer] = js.native
+      var wasmBinary: js.UndefOr[ArrayBuffer] = js.undefined
     }
     object Config {
       
@@ -199,31 +197,31 @@ object moduleMod {
       implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setAddOnExit(value: /* cb */ js.Function0[_] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
+        def setAddOnExit(value: /* cb */ js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
         
         @scala.inline
         def setAddOnExitUndefined: Self = StObject.set(x, "addOnExit", js.undefined)
         
         @scala.inline
-        def setAddOnInit(value: /* cb */ js.Function0[_] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
+        def setAddOnInit(value: /* cb */ js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
         
         @scala.inline
         def setAddOnInitUndefined: Self = StObject.set(x, "addOnInit", js.undefined)
         
         @scala.inline
-        def setAddOnPostRun(value: /* cb */ js.Function0[_] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
+        def setAddOnPostRun(value: /* cb */ js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
         
         @scala.inline
         def setAddOnPostRunUndefined: Self = StObject.set(x, "addOnPostRun", js.undefined)
         
         @scala.inline
-        def setAddOnPreMain(value: /* cb */ js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
+        def setAddOnPreMain(value: /* cb */ js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
         
         @scala.inline
         def setAddOnPreMainUndefined: Self = StObject.set(x, "addOnPreMain", js.undefined)
         
         @scala.inline
-        def setAddOnPreRun(value: /* cb */ js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
+        def setAddOnPreRun(value: /* cb */ js.Function0[js.Any] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
         
         @scala.inline
         def setAddOnPreRunUndefined: Self = StObject.set(x, "addOnPreRun", js.undefined)
@@ -372,7 +370,7 @@ object moduleMod {
         def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
         
         @scala.inline
-        def setOnCustomMessage(value: /* event */ MessageEvent[_] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
+        def setOnCustomMessage(value: /* event */ MessageEvent[js.Any] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
         
         @scala.inline
         def setOnCustomMessageUndefined: Self = StObject.set(x, "onCustomMessage", js.undefined)
@@ -486,12 +484,11 @@ object moduleMod {
     
     type ParamsObject = Record[String, ValueType]
     
-    @js.native
     trait QueryResults extends StObject {
       
-      var columns: js.Array[String] = js.native
+      var columns: js.Array[String]
       
-      var values: js.Array[js.Array[ValueType]] = js.native
+      var values: js.Array[js.Array[ValueType]]
     }
     object QueryResults {
       
@@ -518,12 +515,11 @@ object moduleMod {
       }
     }
     
-    @js.native
     trait SqlJsStatic extends StObject {
       
-      var Database: Instantiable0[typings.sqlJs.moduleMod.SqlJs.Database] = js.native
+      var Database: Instantiable0[typings.sqlJs.moduleMod.SqlJs.Database]
       
-      var Statement: Instantiable0[typings.sqlJs.moduleMod.SqlJs.Statement] = js.native
+      var Statement: Instantiable0[typings.sqlJs.moduleMod.SqlJs.Statement]
     }
     object SqlJsStatic {
       

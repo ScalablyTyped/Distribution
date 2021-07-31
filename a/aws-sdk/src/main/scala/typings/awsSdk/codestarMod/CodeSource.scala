@@ -2,16 +2,14 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeSource extends StObject {
   
   /**
     * Information about the Amazon S3 location where the source code files provided with the project request are stored. 
     */
-  var s3: S3Location = js.native
+  var s3: S3Location
 }
 object CodeSource {
   

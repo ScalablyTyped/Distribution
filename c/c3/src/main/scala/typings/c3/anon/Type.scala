@@ -15,10 +15,8 @@ import typings.c3.c3Strings.monotone
 import typings.c3.c3Strings.step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait Type extends StObject {
     */
   var `type`: js.UndefOr[
     linear | `linear-closed` | basis | `basis-open` | `basis-closed` | bundle | cardinal | `cardinal-open` | `cardinal-closed` | monotone | step | `step-before` | `step-after`
-  ] = js.native
+  ] = js.undefined
 }
 object Type {
   

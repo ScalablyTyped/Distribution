@@ -10,9 +10,9 @@ Offload tasks to a pool of workers on node.js and in the browser
 | ------------------ | :-------------: |
 | Full name          | workerpool |
 | Keywords           | worker, web worker, cluster, pool, isomorphic |
-| # releases         | 11 |
-| # dependents       | 47 |
-| # downloads        | 28610035 |
+| # releases         | 14 |
+| # dependents       | 61 |
+| # downloads        | 49327953 |
 | # stars            | 8 |
 
 ## Links

@@ -2,32 +2,30 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the mechanism to obtain the Certificate Authority certificate to
   * validate the client/server certificate.
   */
-@js.native
 trait SchemaTlsValidationContext extends StObject {
   
   /**
     * The path to the file holding the CA certificate to validate the client or
     * server certificate.
     */
-  var certificatePath: js.UndefOr[String] = js.native
+  var certificatePath: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the config to retrieve certificates through SDS. This field is
     * applicable only if tlsCertificateSource is set to USE_SDS.
     */
-  var sdsConfig: js.UndefOr[SchemaSdsConfig] = js.native
+  var sdsConfig: js.UndefOr[SchemaSdsConfig] = js.undefined
   
   /**
     * Defines how TLS certificates are obtained.
     */
-  var validationSource: js.UndefOr[String] = js.native
+  var validationSource: js.UndefOr[String] = js.undefined
 }
 object SchemaTlsValidationContext {
   

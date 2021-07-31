@@ -11,8 +11,8 @@ React Native DatePicker component for both Android and iOS, useing DatePickerAnd
 | Full name          | react-native-datepicker |
 | Keywords           | react-native, DatePicker |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 1538470 |
+| # dependents       | 50 |
+| # downloads        | 1495626 |
 | # stars            | 10 |
 
 ## Links

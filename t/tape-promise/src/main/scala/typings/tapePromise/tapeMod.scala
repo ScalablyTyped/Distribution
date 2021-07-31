@@ -5,7 +5,6 @@ import typings.std.ReturnType
 import typings.tapePromise.mod.AsyncTapeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tapeMod extends Shortcut {
@@ -15,7 +14,7 @@ object tapeMod extends Shortcut {
   val ^ : ReturnType[
     js.Function1[
       /* tapeTest */ js.Any, 
-      AsyncTapeFunction with (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
+      AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ] = js.native
   
@@ -36,7 +35,7 @@ object tapeMod extends Shortcut {
   type _To = ReturnType[
     js.Function1[
       /* tapeTest */ js.Any, 
-      AsyncTapeFunction with (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
+      AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ]
   
@@ -44,7 +43,7 @@ object tapeMod extends Shortcut {
   override def _to: ReturnType[
     js.Function1[
       /* tapeTest */ js.Any, 
-      AsyncTapeFunction with (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
+      AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ] = ^
 }

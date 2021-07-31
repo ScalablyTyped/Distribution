@@ -2,15 +2,13 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PullResponse. */
-@js.native
 trait IPullResponse extends StObject {
   
   /** PullResponse receivedMessages */
-  var receivedMessages: js.UndefOr[js.Array[IReceivedMessage] | Null] = js.native
+  var receivedMessages: js.UndefOr[js.Array[IReceivedMessage] | Null] = js.undefined
 }
 object IPullResponse {
   

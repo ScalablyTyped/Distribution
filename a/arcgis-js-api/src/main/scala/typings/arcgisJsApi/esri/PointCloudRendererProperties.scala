@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointCloudRendererProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait PointCloudRendererProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
     */
-  var colorModulation: js.UndefOr[PointCloudRendererColorModulation] = js.native
+  var colorModulation: js.UndefOr[PointCloudRendererColorModulation] = js.undefined
   
   /**
     * Specifies how the size of the points in the point cloud is computed for rendering.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var pointSizeAlgorithm: js.UndefOr[PointCloudRendererPointSizeAlgorithm] = js.native
+  var pointSizeAlgorithm: js.UndefOr[PointCloudRendererPointSizeAlgorithm] = js.undefined
   
   /**
     * The number of points to draw per display inch.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointsPerInch)
     */
-  var pointsPerInch: js.UndefOr[Double] = js.native
+  var pointsPerInch: js.UndefOr[Double] = js.undefined
 }
 object PointCloudRendererProperties {
   

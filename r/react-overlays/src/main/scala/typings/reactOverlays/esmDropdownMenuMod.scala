@@ -15,10 +15,13 @@ import typings.std.Event
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmDropdownMenuMod {
+  
+  @JSImport("react-overlays/esm/DropdownMenu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -28,9 +31,9 @@ object esmDropdownMenuMod {
       * @displayName DropdownMenu
       * @memberOf Dropdown
       */
-    @JSImport("react-overlays/esm/DropdownMenu", JSImport.Default)
-    @js.native
-    def apply(hasChildrenOptions: DropdownMenuProps): Element = js.native
+    @scala.inline
+    def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-overlays/esm/DropdownMenu", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -147,17 +150,16 @@ object esmDropdownMenuMod {
     }
   }
   
-  @JSImport("react-overlays/esm/DropdownMenu", "useDropdownMenu")
-  @js.native
-  def useDropdownMenu(): UseDropdownMenuValue = js.native
-  @JSImport("react-overlays/esm/DropdownMenu", "useDropdownMenu")
-  @js.native
-  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = js.native
+  @scala.inline
+  def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
+  @scala.inline
+  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
   
-  @js.native
-  trait DropdownMenuProps extends UseDropdownMenuOptions {
+  trait DropdownMenuProps
+    extends StObject
+       with UseDropdownMenuOptions {
     
-    def children(args: UseDropdownMenuValue): ReactNode = js.native
+    def children(args: UseDropdownMenuValue): ReactNode
   }
   object DropdownMenuProps {
     
@@ -175,22 +177,21 @@ object esmDropdownMenuMod {
     }
   }
   
-  @js.native
   trait UseDropdownMenuOptions extends StObject {
     
-    var alignEnd: js.UndefOr[Boolean] = js.native
+    var alignEnd: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
-    var popperConfig: js.UndefOr[OmitUsePopperOptionsenabl] = js.native
+    var popperConfig: js.UndefOr[OmitUsePopperOptionsenabl] = js.undefined
     
-    var rootCloseEvent: js.UndefOr[MouseEvents] = js.native
+    var rootCloseEvent: js.UndefOr[MouseEvents] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var usePopper: js.UndefOr[Boolean] = js.native
+    var usePopper: js.UndefOr[Boolean] = js.undefined
   }
   object UseDropdownMenuOptions {
     
@@ -250,34 +251,33 @@ object esmDropdownMenuMod {
     }
   }
   
-  @js.native
   trait UseDropdownMenuValue extends StObject {
     
-    var alignEnd: js.UndefOr[Boolean] = js.native
+    var alignEnd: js.UndefOr[Boolean] = js.undefined
     
-    var arrowProps: (Record[String, _]) with Ref = js.native
+    var arrowProps: (Record[String, js.Any]) & Ref
     
-    def close(e: Event): Unit = js.native
+    def close(e: Event): Unit
     
-    def forceUpdate(): Unit = js.native
+    def forceUpdate(): Unit
     
-    var hasShown: Boolean = js.native
+    var hasShown: Boolean
     
-    var props: (Record[String, _]) with Arialabelledby = js.native
+    var props: (Record[String, js.Any]) & Arialabelledby
     
-    var show: Boolean = js.native
+    var show: Boolean
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object UseDropdownMenuValue {
     
     @scala.inline
     def apply(
-      arrowProps: (Record[String, _]) with Ref,
+      arrowProps: (Record[String, js.Any]) & Ref,
       close: Event => Unit,
       forceUpdate: () => Unit,
       hasShown: Boolean,
-      props: (Record[String, _]) with Arialabelledby,
+      props: (Record[String, js.Any]) & Arialabelledby,
       show: Boolean,
       update: () => Unit
     ): UseDropdownMenuValue = {
@@ -295,7 +295,7 @@ object esmDropdownMenuMod {
       def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
       
       @scala.inline
-      def setArrowProps(value: (Record[String, _]) with Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClose(value: Event => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
@@ -307,7 +307,7 @@ object esmDropdownMenuMod {
       def setHasShown(value: Boolean): Self = StObject.set(x, "hasShown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProps(value: (Record[String, _]) with Arialabelledby): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: (Record[String, js.Any]) & Arialabelledby): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])

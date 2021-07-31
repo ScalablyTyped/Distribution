@@ -5,25 +5,39 @@ import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonResultMod {
   
   @JSImport("inversify-express-utils/dts/results/JsonResult", JSImport.Default)
   @js.native
-  class default protected () extends JsonResult {
+  class default protected ()
+    extends StObject
+       with JsonResult {
     def this(json: js.Any, statusCode: Double, apiController: BaseHttpController) = this()
-  }
-  
-  @js.native
-  trait JsonResult extends IHttpActionResult {
     
+    /* CompleteClass */
     var apiController: js.Any = js.native
     
-    val json: js.Any = js.native
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    val statusCode: Double = js.native
+    /* CompleteClass */
+    override val json: js.Any = js.native
+    
+    /* CompleteClass */
+    override val statusCode: Double = js.native
+  }
+  
+  trait JsonResult
+    extends StObject
+       with IHttpActionResult {
+    
+    var apiController: js.Any
+    
+    val json: js.Any
+    
+    val statusCode: Double
   }
   object JsonResult {
     

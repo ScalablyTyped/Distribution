@@ -2,21 +2,19 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDropdownConfig extends StObject {
   
   /**
     * @default: 'uib-dropdown-open'
     */
-  var appendToOpenClass: js.UndefOr[String] = js.native
+  var appendToOpenClass: js.UndefOr[String] = js.undefined
   
   /**
     * @default: 'open'
     */
-  var openClass: js.UndefOr[String] = js.native
+  var openClass: js.UndefOr[String] = js.undefined
 }
 object IDropdownConfig {
   

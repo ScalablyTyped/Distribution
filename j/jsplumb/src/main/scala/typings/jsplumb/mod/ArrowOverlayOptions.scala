@@ -2,28 +2,28 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArrowOverlayOptions extends OverlayOptions {
+trait ArrowOverlayOptions
+  extends StObject
+     with OverlayOptions {
   
   // 0.5
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
   // 1
-  var foldback: js.UndefOr[Double] = js.native
+  var foldback: js.UndefOr[Double] = js.undefined
   
   // 20
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   // 20
-  var location: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Double] = js.undefined
   
   // 0.623
-  var paintStyle: js.UndefOr[PaintStyle] = js.native
+  var paintStyle: js.UndefOr[PaintStyle] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ArrowOverlayOptions {
   

@@ -10,9 +10,9 @@ Library for updating an npmjs.com profile
 | ------------------ | :-------------: |
 | Full name          | npm-profile |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 27 |
-| # downloads        | 23200986 |
+| # releases         | 7 |
+| # dependents       | 30 |
+| # downloads        | 27659317 |
 | # stars            | 1 |
 
 ## Links

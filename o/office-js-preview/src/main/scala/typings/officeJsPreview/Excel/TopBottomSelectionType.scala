@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,19 +21,25 @@ object TopBottomSelectionType extends StObject {
     *
     */
   @js.native
-  sealed trait items extends TopBottomSelectionType
+  sealed trait items
+    extends StObject
+       with TopBottomSelectionType
   
   /**
     * Filter the top/bottom N percent of items as measured by the chosen value.
     *
     */
   @js.native
-  sealed trait percent extends TopBottomSelectionType
+  sealed trait percent
+    extends StObject
+       with TopBottomSelectionType
   
   /**
     * Filter the top/bottom N sum as measured by the chosen value.
     *
     */
   @js.native
-  sealed trait sum extends TopBottomSelectionType
+  sealed trait sum
+    extends StObject
+       with TopBottomSelectionType
 }

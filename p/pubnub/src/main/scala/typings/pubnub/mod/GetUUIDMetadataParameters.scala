@@ -3,15 +3,13 @@ package typings.pubnub.mod
 import typings.pubnub.anon.CustomFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUUIDMetadataParameters extends StObject {
   
-  var include: js.UndefOr[CustomFields] = js.native
+  var include: js.UndefOr[CustomFields] = js.undefined
   
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object GetUUIDMetadataParameters {
   

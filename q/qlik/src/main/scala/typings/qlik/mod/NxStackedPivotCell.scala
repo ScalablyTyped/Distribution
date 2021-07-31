@@ -9,39 +9,37 @@ import typings.qlik.qlikStrings.U
 import typings.qlik.qlikStrings.V
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxStackedPivotCell extends StObject {
   
-  var qAttrDims: NxAttributeDimValues = js.native
+  var qAttrDims: NxAttributeDimValues
   
-  var qAttrExps: NxAttributeExpressionValues = js.native
+  var qAttrExps: NxAttributeExpressionValues
   
-  var qCanCollapse: Boolean = js.native
+  var qCanCollapse: Boolean
   
-  var qCanExpand: Boolean = js.native
+  var qCanExpand: Boolean
   
-  var qDown: Double = js.native
+  var qDown: Double
   
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
-  var qMaxPos: Double = js.native
+  var qMaxPos: Double
   
-  var qMinNeg: Double = js.native
+  var qMinNeg: Double
   
-  var qRow: Double = js.native
+  var qRow: Double
   
-  var qSubNodes: js.Array[NxStackedPivotCell] = js.native
+  var qSubNodes: js.Array[NxStackedPivotCell]
   
-  var qText: String = js.native
+  var qText: String
   
-  var qType: V | E | N | T | P | R | U = js.native
+  var qType: V | E | N | T | P | R | U
   
-  var qUp: Double = js.native
+  var qUp: Double
   
-  var qValue: Double = js.native
+  var qValue: Double
 }
 object NxStackedPivotCell {
   

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TextOptions extends StObject {
     *
     * @default `'Upload failure reason unknown'`
     */
-  var defaultResponseError: js.UndefOr[String] = js.native
+  var defaultResponseError: js.UndefOr[String] = js.undefined
   
   /**
     * The value for the `title` attribute attached to the `<input type="file">` maintained by Fine Uploader for each upload button.
@@ -22,14 +20,14 @@ trait TextOptions extends StObject {
     *
     * @default `'file input'`
     */
-  var fileInputTitle: js.UndefOr[String] = js.native
+  var fileInputTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Symbols used to represent file size, in ascending order
     *
     * @default `['kB', 'MB', 'GB', 'TB', 'PB', 'EB']`
     */
-  var sizeSymbols: js.UndefOr[js.Array[String]] = js.native
+  var sizeSymbols: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TextOptions {
   

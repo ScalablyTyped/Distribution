@@ -6,35 +6,33 @@ import typings.activexLibreoffice.com_.sun.star.text.XFlatParagraph
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * holds the results from proofreading a sentence.
   * @since OOo 3.0.1
   */
-@js.native
 trait ProofreadingResult extends StObject {
   
-  var aDocumentIdentifier: String = js.native
+  var aDocumentIdentifier: String
   
-  var aErrors: SafeArray[SingleProofreadingError] = js.native
+  var aErrors: SafeArray[SingleProofreadingError]
   
-  var aLocale: Locale = js.native
+  var aLocale: Locale
   
-  var aProperties: SafeArray[PropertyValue] = js.native
+  var aProperties: SafeArray[PropertyValue]
   
-  var aText: String = js.native
+  var aText: String
   
-  var nBehindEndOfSentencePosition: Double = js.native
+  var nBehindEndOfSentencePosition: Double
   
-  var nStartOfNextSentencePosition: Double = js.native
+  var nStartOfNextSentencePosition: Double
   
-  var nStartOfSentencePosition: Double = js.native
+  var nStartOfSentencePosition: Double
   
-  var xFlatParagraph: XFlatParagraph = js.native
+  var xFlatParagraph: XFlatParagraph
   
-  var xProofreader: XProofreader = js.native
+  var xProofreader: XProofreader
 }
 object ProofreadingResult {
   

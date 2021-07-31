@@ -3,7 +3,6 @@ package typings.ckeditor
 import typings.ckeditor.CKEDITOR.plugins.notification.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ckeditorStrings {
@@ -24,7 +23,9 @@ object ckeditorStrings {
   def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait info extends `type`
+  sealed trait info
+    extends StObject
+       with `type`
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -39,7 +40,9 @@ object ckeditorStrings {
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait progress extends `type`
+  sealed trait progress
+    extends StObject
+       with `type`
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   
@@ -54,7 +57,9 @@ object ckeditorStrings {
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait success extends `type`
+  sealed trait success
+    extends StObject
+       with `type`
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -74,7 +79,9 @@ object ckeditorStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warning extends `type`
+  sealed trait warning
+    extends StObject
+       with `type`
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }

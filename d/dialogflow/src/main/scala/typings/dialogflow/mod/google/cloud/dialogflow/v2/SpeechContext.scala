@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SpeechContext. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SpeechContext.
   * @param [properties] Properties to set
   */
-class SpeechContext () extends ISpeechContext {
+class SpeechContext ()
+  extends StObject
+     with ISpeechContext {
   def this(properties: ISpeechContext) = this()
   
   /** SpeechContext boost. */
@@ -36,18 +37,20 @@ class SpeechContext () extends ISpeechContext {
 }
 object SpeechContext {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SpeechContext instance using the specified properties.
     * @param [properties] Properties to set
     * @returns SpeechContext instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.create")
-  @js.native
-  def create(): SpeechContext = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.create")
-  @js.native
-  def create(properties: ISpeechContext): SpeechContext = js.native
+  @scala.inline
+  def create(): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SpeechContext]
+  @scala.inline
+  def create(properties: ISpeechContext): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
   
   /**
     * Decodes a SpeechContext message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object SpeechContext {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decode")
-  @js.native
-  def decode(reader: Reader): SpeechContext = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): SpeechContext = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decode")
-  @js.native
-  def decode(reader: Uint8Array): SpeechContext = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): SpeechContext = js.native
+  @scala.inline
+  def decode(reader: Reader): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
+  @scala.inline
+  def decode(reader: Reader, length: Double): SpeechContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SpeechContext]
+  @scala.inline
+  def decode(reader: Uint8Array): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): SpeechContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SpeechContext]
   
   /**
     * Decodes a SpeechContext message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object SpeechContext {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): SpeechContext = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): SpeechContext = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
   
   /**
     * Encodes the specified SpeechContext message. Does not implicitly {@link google.cloud.dialogflow.v2.SpeechContext.verify|verify} messages.
@@ -93,12 +90,10 @@ object SpeechContext {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.encode")
-  @js.native
-  def encode(message: ISpeechContext): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.encode")
-  @js.native
-  def encode(message: ISpeechContext, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISpeechContext): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISpeechContext, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SpeechContext message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.SpeechContext.verify|verify} messages.
@@ -107,12 +102,10 @@ object SpeechContext {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISpeechContext): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISpeechContext, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISpeechContext): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISpeechContext, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SpeechContext message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object SpeechContext {
     * @returns SpeechContext
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): SpeechContext = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): SpeechContext = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SpeechContext]
   
   /**
     * Creates a plain object from a SpeechContext message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object SpeechContext {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.toObject")
-  @js.native
-  def toObject(message: SpeechContext): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.toObject")
-  @js.native
-  def toObject(message: SpeechContext, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: SpeechContext): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: SpeechContext, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SpeechContext message.
@@ -144,7 +134,6 @@ object SpeechContext {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SpeechContext.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

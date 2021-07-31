@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConditionalDataBarAxisFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ConditionalDataBarAxisFormat with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ConditionalDataBarAxisFormat & String] = js.native
   
-  /* "Automatic" */ val automatic: typings.officeJs.Excel.ConditionalDataBarAxisFormat.automatic with String = js.native
+  /* "Automatic" */ val automatic: typings.officeJs.Excel.ConditionalDataBarAxisFormat.automatic & String = js.native
   
-  /* "CellMidPoint" */ val cellMidPoint: typings.officeJs.Excel.ConditionalDataBarAxisFormat.cellMidPoint with String = js.native
+  /* "CellMidPoint" */ val cellMidPoint: typings.officeJs.Excel.ConditionalDataBarAxisFormat.cellMidPoint & String = js.native
   
-  /* "None" */ val none: typings.officeJs.Excel.ConditionalDataBarAxisFormat.none with String = js.native
+  /* "None" */ val none: typings.officeJs.Excel.ConditionalDataBarAxisFormat.none & String = js.native
 }

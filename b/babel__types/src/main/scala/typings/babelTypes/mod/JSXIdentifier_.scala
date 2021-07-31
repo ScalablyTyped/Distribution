@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.JSXIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait JSXIdentifier_
-  extends JSX
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait JSXIdentifier_
+  extends StObject
+     with BaseNode
+     with JSX {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_JSXIdentifier_ : JSXIdentifier = js.native
+  var type_JSXIdentifier_ : JSXIdentifier
 }
 object JSXIdentifier_ {
   
   @scala.inline
-  def apply(name: String, `type`: JSXIdentifier): JSXIdentifier_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): JSXIdentifier_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[JSXIdentifier_]
   }
   

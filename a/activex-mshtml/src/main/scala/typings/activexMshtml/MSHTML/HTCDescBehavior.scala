@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTCDescBehavior extends StObject {
   
   @JSName("MSHTML.HTCDescBehavior_typekey")
-  var MSHTMLDotHTCDescBehavior_typekey: HTCDescBehavior = js.native
+  var MSHTMLDotHTCDescBehavior_typekey: HTCDescBehavior
   
-  val name: String = js.native
+  val name: String
   
-  val urn: String = js.native
+  val urn: String
 }
 object HTCDescBehavior {
   

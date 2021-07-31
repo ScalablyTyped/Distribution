@@ -6,17 +6,18 @@ import typings.httpContext.mod.Response
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  @scala.inline
+  def apply(driver: Driver): Instance = ^.asInstanceOf[js.Dynamic].apply(driver.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  
   @JSImport("x-ray-crawler", JSImport.Namespace)
   @js.native
-  def apply(): Instance = js.native
-  @JSImport("x-ray-crawler", JSImport.Namespace)
-  @js.native
-  def apply(driver: Driver): Instance = js.native
+  val ^ : js.Any = js.native
   
   type Callback[T] = js.Function2[/* err */ Error, /* obj */ T, Unit]
   

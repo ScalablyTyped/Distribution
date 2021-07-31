@@ -5,7 +5,6 @@ import typings.reactVirtualized.esMasonryMod.MasonryProps
 import typings.reactVirtualized.esMasonryMod.MasonryState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-virtualized", "Masonry")
@@ -32,7 +31,6 @@ object Masonry {
   @scala.inline
   def defaultProps_=(x: KeyMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-virtualized", "Masonry.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = js.native
+  @scala.inline
+  def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MasonryState | Null]
 }

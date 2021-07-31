@@ -10,25 +10,26 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
   
-  @JSImport("rc-table/lib/Header/Header", JSImport.Default)
+  @JSImport("rc-table/lib/Header/Header", JSImport.Namespace)
   @js.native
-  def default[RecordType](hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow: HeaderProps[RecordType]): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[RecordType](hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait HeaderProps[RecordType] extends StObject {
     
-    var columns: ColumnsType[RecordType] = js.native
+    var columns: ColumnsType[RecordType]
     
-    var flattenColumns: js.Array[ColumnType[RecordType]] = js.native
+    var flattenColumns: js.Array[ColumnType[RecordType]]
     
-    var onHeaderRow: GetComponentProps[js.Array[ColumnType[RecordType]]] = js.native
+    var onHeaderRow: GetComponentProps[js.Array[ColumnType[RecordType]]]
     
-    var stickyOffsets: StickyOffsets = js.native
+    var stickyOffsets: StickyOffsets
   }
   object HeaderProps {
     
@@ -44,7 +45,7 @@ object headerMod {
     }
     
     @scala.inline
-    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps[_], RecordType] (val x: Self with HeaderProps[RecordType]) extends AnyVal {
+    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps[?], RecordType] (val x: Self & HeaderProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

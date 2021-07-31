@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceUsageExportConfig extends StObject {
   
   /** Configuration to use BigQuery as usage export destination. */
-  var bigqueryDestination: js.UndefOr[BigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[BigQueryDestination] = js.undefined
   
   /** Configuration to enable resource consumption metering. */
-  var consumptionMeteringConfig: js.UndefOr[ConsumptionMeteringConfig] = js.native
+  var consumptionMeteringConfig: js.UndefOr[ConsumptionMeteringConfig] = js.undefined
   
   /** Whether to enable network egress metering for this cluster. If enabled, a daemonset will be created in the cluster to meter network egress traffic. */
-  var enableNetworkEgressMetering: js.UndefOr[Boolean] = js.native
+  var enableNetworkEgressMetering: js.UndefOr[Boolean] = js.undefined
 }
 object ResourceUsageExportConfig {
   

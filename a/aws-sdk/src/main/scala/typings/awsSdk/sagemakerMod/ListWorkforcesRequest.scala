@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkforcesRequest extends StObject {
   
   /**
     * The maximum number of workforces returned in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A filter you can use to search for workforces using part of the workforce name.
     */
-  var NameContains: js.UndefOr[WorkforceName] = js.native
+  var NameContains: js.UndefOr[WorkforceName] = js.undefined
   
   /**
     * A token to resume pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * Sort workforces using the workforce name or creation date.
     */
-  var SortBy: js.UndefOr[ListWorkforcesSortByOptions] = js.native
+  var SortBy: js.UndefOr[ListWorkforcesSortByOptions] = js.undefined
   
   /**
     * Sort workforces in ascending or descending order.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
 }
 object ListWorkforcesRequest {
   

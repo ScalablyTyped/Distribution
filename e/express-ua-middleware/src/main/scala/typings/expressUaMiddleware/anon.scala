@@ -2,18 +2,16 @@ package typings.expressUaMiddleware
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Model extends StObject {
     
     /**
       * Determined dynamically
       */
-    val model: js.UndefOr[String] = js.native
+    val model: js.UndefOr[String] = js.undefined
     
     /**
       * Possible vendor:
@@ -22,7 +20,7 @@ object anon {
       * Nintendo, Nokia, Nvidia, Ouya, Palm, Panasonic, Polytron, RIM, Samsung, Sharp,
       * Siemens, Sony-Ericsson, Sprint, Xbox, ZTE
       */
-    val vendor: js.UndefOr[String] = js.native
+    val vendor: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -49,7 +47,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
@@ -61,12 +58,12 @@ object anon {
       * RIM Tablet OS, RISC OS, Sailfish, Series40, Slackware, Solaris, SUSE, Symbian, Tizen,
       * Ubuntu, UNIX, VectorLinux, WebOS, Windows [Phone/Mobile], Zenwalk
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * Determined dynamically
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object Name {
     

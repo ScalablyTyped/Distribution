@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetHistoryResult extends StObject {
   
   /**
     * The ID of the EC Fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
     * Information about the events in the history of the EC2 Fleet.
     */
-  var HistoryRecords: js.UndefOr[HistoryRecordSet] = js.native
+  var HistoryRecords: js.UndefOr[HistoryRecordSet] = js.undefined
   
   /**
     * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more results, this value is not present.
     */
-  var LastEvaluatedTime: js.UndefOr[DateTime] = js.native
+  var LastEvaluatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The start date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
 }
 object DescribeFleetHistoryResult {
   

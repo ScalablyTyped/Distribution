@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestItem extends StObject {
   
-  var gaia: js.UndefOr[String] = js.native
+  var gaia: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var snippet: js.UndefOr[js.Any] = js.native
+  var snippet: js.UndefOr[js.Any] = js.undefined
 }
 object TestItem {
   

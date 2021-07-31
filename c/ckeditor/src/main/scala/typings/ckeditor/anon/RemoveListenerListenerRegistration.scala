@@ -3,13 +3,11 @@ package typings.ckeditor.anon
 import typings.ckeditor.CKEDITOR.listenerRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveListenerListenerRegistration extends StObject {
   
-  var removeListener: listenerRegistration = js.native
+  var removeListener: listenerRegistration
 }
 object RemoveListenerListenerRegistration {
   

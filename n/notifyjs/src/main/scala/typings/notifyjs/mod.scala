@@ -3,16 +3,50 @@ package typings.notifyjs
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("notifyjs", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Notify {
+  class ^ protected ()
+    extends StObject
+       with Notify {
     def this(title: String) = this()
     def this(title: String, options: NotifyOption) = this()
+    
+    /**
+      * Close the notification.
+      */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /**
+      * Remove all event listener.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def handleEvent(e: Event): Unit = js.native
+    
+    /* CompleteClass */
+    override def onClickNotification(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onCloseNotification(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onErrorNotification(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onShowNotification(e: Event): Unit = js.native
+    
+    /**
+      * Show the notification.
+      */
+    /* CompleteClass */
+    override def show(): Unit = js.native
   }
   @JSImport("notifyjs", JSImport.Namespace)
   @js.native
@@ -23,9 +57,8 @@ object mod {
     * @param true : the browser supports HTML5 Notification, false ; the browser does not supports HTML5 Notification.
     */
   /* static member */
-  @JSImport("notifyjs", "isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
   /**
     * Check is permission is needed for the user to receive notifications.
@@ -55,49 +88,44 @@ object mod {
     * @param onPermissionDeniedCallback  A callback for permission is denied.
     */
   /* static member */
-  @JSImport("notifyjs", "requestPermission")
-  @js.native
-  def requestPermission(): Unit = js.native
-  @JSImport("notifyjs", "requestPermission")
-  @js.native
+  @scala.inline
+  def requestPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[Unit]
+  @scala.inline
+  def requestPermission(onPermissionGrantedCallback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def requestPermission(
-    onPermissionGrantedCallback: js.UndefOr[scala.Nothing],
-    onPermissionDeniedCallback: js.Function0[_]
-  ): Unit = js.native
-  @JSImport("notifyjs", "requestPermission")
-  @js.native
-  def requestPermission(onPermissionGrantedCallback: js.Function0[_]): Unit = js.native
-  @JSImport("notifyjs", "requestPermission")
-  @js.native
-  def requestPermission(onPermissionGrantedCallback: js.Function0[_], onPermissionDeniedCallback: js.Function0[_]): Unit = js.native
+    onPermissionGrantedCallback: js.Function0[js.Any],
+    onPermissionDeniedCallback: js.Function0[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def requestPermission(onPermissionGrantedCallback: Unit, onPermissionDeniedCallback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Notify extends StObject {
     
     /**
       * Close the notification.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Remove all event listener.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def handleEvent(e: Event): Unit = js.native
+    def handleEvent(e: Event): Unit
     
-    def onClickNotification(): Unit = js.native
+    def onClickNotification(): Unit
     
-    def onCloseNotification(): Unit = js.native
+    def onCloseNotification(): Unit
     
-    def onErrorNotification(): Unit = js.native
+    def onErrorNotification(): Unit
     
-    def onShowNotification(e: Event): Unit = js.native
+    def onShowNotification(e: Event): Unit
     
     /**
       * Show the notification.
       */
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Notify {
     
@@ -148,69 +176,68 @@ object mod {
   /**
     * Interface for the Notify's optional parameter.
     */
-  @js.native
   trait NotifyOption extends StObject {
     
     /**
       * notification message body
       */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /**
       * path for icon to display in notification
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * callback when notification is clicked
       */
-    var notifyClick: js.UndefOr[js.Function] = js.native
+    var notifyClick: js.UndefOr[js.Function] = js.undefined
     
     /**
       * callback when notification is closed
       */
-    var notifyClose: js.UndefOr[js.Function] = js.native
+    var notifyClose: js.UndefOr[js.Function] = js.undefined
     
     /**
       * callback when notification throws an error
       */
-    var notifyError: js.UndefOr[js.Function] = js.native
+    var notifyError: js.UndefOr[js.Function] = js.undefined
     
     /**
       * callback when notification is shown
       */
-    var notifyShow: js.UndefOr[js.Function1[/* e */ Event, _]] = js.native
+    var notifyShow: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
     
     /**
       * callback when user has denied permission
       */
-    var permissionDenied: js.UndefOr[js.Function] = js.native
+    var permissionDenied: js.UndefOr[js.Function] = js.undefined
     
     /**
       *  callback when user has granted permission
       */
-    var permissionGranted: js.UndefOr[js.Function] = js.native
+    var permissionGranted: js.UndefOr[js.Function] = js.undefined
     
     /**
       * whether we expect for user interaction or not
       * in case value is true the timeout for closing the notification won't be set
       */
-    var requireInteraction: js.UndefOr[Boolean] = js.native
+    var requireInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * whether this notification should be silent or not
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * unique identifier to stop duplicate notifications
       */
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
     /**
       * number of seconds to close the notification automatically
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object NotifyOption {
     
@@ -254,7 +281,7 @@ object mod {
       def setNotifyErrorUndefined: Self = StObject.set(x, "notifyError", js.undefined)
       
       @scala.inline
-      def setNotifyShow(value: /* e */ Event => _): Self = StObject.set(x, "notifyShow", js.Any.fromFunction1(value))
+      def setNotifyShow(value: /* e */ Event => js.Any): Self = StObject.set(x, "notifyShow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNotifyShowUndefined: Self = StObject.set(x, "notifyShow", js.undefined)

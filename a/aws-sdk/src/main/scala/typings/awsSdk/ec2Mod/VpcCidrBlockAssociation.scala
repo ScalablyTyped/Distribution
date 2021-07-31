@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcCidrBlockAssociation extends StObject {
   
   /**
     * The association ID for the IPv4 CIDR block.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 CIDR block.
     */
-  var CidrBlock: js.UndefOr[String] = js.native
+  var CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the state of the CIDR block.
     */
-  var CidrBlockState: js.UndefOr[VpcCidrBlockState] = js.native
+  var CidrBlockState: js.UndefOr[VpcCidrBlockState] = js.undefined
 }
 object VpcCidrBlockAssociation {
   

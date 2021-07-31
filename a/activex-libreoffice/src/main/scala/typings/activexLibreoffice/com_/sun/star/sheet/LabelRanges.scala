@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.LabelRange
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait LabelRanges
-  extends XLabelRanges
+  extends StObject
+     with XLabelRanges
      with XEnumerationAccess
 object LabelRanges {
   

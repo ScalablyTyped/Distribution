@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please do **not** use anymore, this interface is superseded by {@link com.sun.star.form.XConfirmDeleteListener} .
   * @deprecated Deprecated
   */
-@js.native
-trait XDeleteListener extends XEventListener {
+trait XDeleteListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the current record of the database form will be deleted. */
-  def approveDelete(aEvent: EventObject): Boolean = js.native
+  def approveDelete(aEvent: EventObject): Boolean
   
   /** is invoked when a database form has finished the delete processing and the data has been successfully deleted from the datasource. */
-  def deleted(aEvent: EventObject): Unit = js.native
+  def deleted(aEvent: EventObject): Unit
 }
 object XDeleteListener {
   

@@ -2,28 +2,26 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseVideoSuccessCallbackResult extends StObject {
   
   /** 选定视频的时间长度 */
-  var duration: Double = js.native
+  var duration: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 返回选定视频的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 选定视频的数据量大小 */
-  var size: Double = js.native
+  var size: Double
   
   /** 选定视频的临时文件路径 (本地路径) */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
   
   /** 返回选定视频的宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object ChooseVideoSuccessCallbackResult {
   

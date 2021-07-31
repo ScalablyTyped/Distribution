@@ -2,54 +2,52 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait gridOptions extends StObject {
   
-  var aboveData: js.UndefOr[Boolean] = js.native
+  var aboveData: js.UndefOr[Boolean] = js.undefined
   
-  var autoHighlight: js.UndefOr[Boolean] = js.native
+  var autoHighlight: js.UndefOr[Boolean] = js.undefined
   
-  var axisMargin: js.UndefOr[Double] = js.native
+  var axisMargin: js.UndefOr[Double] = js.undefined
   
   // color
-  var backgroundColor: js.UndefOr[js.Any] = js.native
+  var backgroundColor: js.UndefOr[js.Any] = js.undefined
   
   // number or width object
-  var borderColor: js.UndefOr[js.Any] = js.native
+  var borderColor: js.UndefOr[js.Any] = js.undefined
   
   //array of markings or (fn: axes -> array of markings)
-  var borderWidth: js.UndefOr[js.Any] = js.native
+  var borderWidth: js.UndefOr[js.Any] = js.undefined
   
   // or null
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
   // number or margin object
-  var labelMargin: js.UndefOr[Double] = js.native
+  var labelMargin: js.UndefOr[Double] = js.undefined
   
   //color/gradient or null
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
-  var markings: js.UndefOr[js.Any] = js.native
+  var markings: js.UndefOr[js.Any] = js.undefined
   
-  var markingsColor: js.UndefOr[js.Any] = js.native
+  var markingsColor: js.UndefOr[js.Any] = js.undefined
   
-  var markingsLineWidth: js.UndefOr[Double] = js.native
+  var markingsLineWidth: js.UndefOr[Double] = js.undefined
   
   // color or null
-  var minBorderMargin: js.UndefOr[Double] = js.native
+  var minBorderMargin: js.UndefOr[Double] = js.undefined
   
-  var mouseActiveRadius: js.UndefOr[Double] = js.native
+  var mouseActiveRadius: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var tickColor: js.UndefOr[js.Any] = js.native
+  var tickColor: js.UndefOr[js.Any] = js.undefined
 }
 object gridOptions {
   

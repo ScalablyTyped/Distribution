@@ -2,19 +2,17 @@ package typings.meshblu.Meshblu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagePayload extends StObject {
   
-  var devices: js.Array[String] = js.native
+  var devices: js.Array[String]
   
-  var payload: js.Any = js.native
+  var payload: js.Any
   
-  var qos: js.UndefOr[Double] = js.native
+  var qos: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object MessagePayload {
   

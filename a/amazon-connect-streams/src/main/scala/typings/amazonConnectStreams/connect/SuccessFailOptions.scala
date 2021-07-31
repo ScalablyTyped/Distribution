@@ -2,17 +2,15 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessFailOptions extends StObject {
   
   /** A callback that executes when the operation has an error. */
-  val failure: js.UndefOr[SuccessFailCallback[js.Array[String]]] = js.native
+  val failure: js.UndefOr[SuccessFailCallback[js.Array[String]]] = js.undefined
   
   /** A callback that executes when the operation completes successfully. */
-  val success: js.UndefOr[SuccessFailCallback[js.Array[js.Any]]] = js.native
+  val success: js.UndefOr[SuccessFailCallback[js.Array[js.Any]]] = js.undefined
 }
 object SuccessFailOptions {
   

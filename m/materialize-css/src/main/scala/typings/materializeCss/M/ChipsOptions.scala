@@ -4,59 +4,57 @@ import typings.materializeCss.anon.PartialAutocompleteOption
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChipsOptions extends StObject {
   
   /**
     * Set autocomplete options
     * @default {}
     */
-  var autocompleteOptions: PartialAutocompleteOption = js.native
+  var autocompleteOptions: PartialAutocompleteOption
   
   /**
     * Set the chip data
     * @default []
     */
-  var data: js.Array[ChipData] = js.native
+  var data: js.Array[ChipData]
   
   /**
     * Set chips limit
     * @default Infinity
     */
-  var limit: Double = js.native
+  var limit: Double
   
   /**
     * Callback for chip add
     * @default null
     */
-  def onChipAdd(element: Element, chip: Element): Unit = js.native
+  def onChipAdd(element: Element, chip: Element): Unit
   
   /**
     * Callback for chip delete
     * @default null
     */
-  def onChipDelete(element: Element, chip: Element): Unit = js.native
+  def onChipDelete(element: Element, chip: Element): Unit
   
   /**
     * Callback for chip select
     * @default null
     */
-  def onChipSelect(element: Element, chip: Element): Unit = js.native
+  def onChipSelect(element: Element, chip: Element): Unit
   
   /**
     * Set first placeholder when there are no tags
     * @default ''
     */
-  var placeholder: String = js.native
+  var placeholder: String
   
   /**
     * Set second placeholder when adding additional tags
     * @default ''
     */
-  var secondaryPlaceholder: String = js.native
+  var secondaryPlaceholder: String
 }
 object ChipsOptions {
   

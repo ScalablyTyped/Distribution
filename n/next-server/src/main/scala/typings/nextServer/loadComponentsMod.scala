@@ -3,35 +3,35 @@ package typings.nextServer
 import typings.nextServer.typesMod.PageConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadComponentsMod {
   
-  @JSImport("next-server/dist/server/load-components", "interopDefault")
+  @JSImport("next-server/dist/server/load-components", JSImport.Namespace)
   @js.native
-  def interopDefault(mod: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("next-server/dist/server/load-components", "loadComponents")
-  @js.native
-  def loadComponents(distDir: String, buildId: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = js.native
+  @scala.inline
+  def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def loadComponents(distDir: String, buildId: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], buildId.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  
   trait LoadComponentsReturnType extends StObject {
     
-    var App: js.UndefOr[js.Any] = js.native
+    var App: js.UndefOr[js.Any] = js.undefined
     
-    var Component: js.Any = js.native
+    var Component: js.Any
     
-    var Document: js.UndefOr[js.Any] = js.native
+    var Document: js.UndefOr[js.Any] = js.undefined
     
-    var DocumentMiddleware: js.UndefOr[js.Any] = js.native
+    var DocumentMiddleware: js.UndefOr[js.Any] = js.undefined
     
-    var buildManifest: js.UndefOr[js.Any] = js.native
+    var buildManifest: js.UndefOr[js.Any] = js.undefined
     
-    var pageConfig: PageConfig = js.native
+    var pageConfig: PageConfig
     
-    var reactLoadableManifest: js.UndefOr[js.Any] = js.native
+    var reactLoadableManifest: js.UndefOr[js.Any] = js.undefined
   }
   object LoadComponentsReturnType {
     

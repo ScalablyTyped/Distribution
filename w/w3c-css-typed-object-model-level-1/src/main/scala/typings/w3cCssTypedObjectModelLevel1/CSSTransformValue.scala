@@ -5,12 +5,12 @@ import typings.std.DOMMatrix
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSSTransformValue
-  extends CSSStyleValue
+  extends StObject
+     with CSSStyleValue
      with /* index */ NumberDictionary[CSSTransformComponent] {
   
   val is2D: Boolean = js.native

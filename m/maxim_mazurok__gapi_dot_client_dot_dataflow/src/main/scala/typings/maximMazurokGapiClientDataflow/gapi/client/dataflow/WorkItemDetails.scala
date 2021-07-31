@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemDetails extends StObject {
   
   /** Attempt ID of this work item */
-  var attemptId: js.UndefOr[String] = js.native
+  var attemptId: js.UndefOr[String] = js.undefined
   
   /** End time of this work item attempt. If the work item is completed, this is the actual end time of the work item. Otherwise, it is the predicted end time. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Metrics for this work item. */
-  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.native
+  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.undefined
   
   /** Progress of this work item. */
-  var progress: js.UndefOr[ProgressTimeseries] = js.native
+  var progress: js.UndefOr[ProgressTimeseries] = js.undefined
   
   /** Start time of this work item attempt. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** State of this work item. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Name of this work item. */
-  var taskId: js.UndefOr[String] = js.native
+  var taskId: js.UndefOr[String] = js.undefined
 }
 object WorkItemDetails {
   

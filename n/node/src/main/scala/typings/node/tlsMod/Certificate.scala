@@ -2,41 +2,39 @@ package typings.node.tlsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * Country code.
     */
-  var C: String = js.native
+  var C: String
   
   /**
     * Common name.
     */
-  var CN: String = js.native
+  var CN: String
   
   /**
     * Locality.
     */
-  var L: String = js.native
+  var L: String
   
   /**
     * Organization.
     */
-  var O: String = js.native
+  var O: String
   
   /**
     * Organizational unit.
     */
-  var OU: String = js.native
+  var OU: String
   
   /**
     * Street.
     */
-  var ST: String = js.native
+  var ST: String
 }
 object Certificate {
   

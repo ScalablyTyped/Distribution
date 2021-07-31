@@ -5,17 +5,15 @@ import typings.reactNativeFirebase.mod.RNFirebase.Handler
 import typings.reactNativeFirebase.mod.RNFirebase.RnError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete[T] extends StObject {
   
-  var complete: js.UndefOr[Handler[T]] = js.native
+  var complete: js.UndefOr[Handler[T]] = js.undefined
   
-  var error: js.UndefOr[ErrorHandler] = js.native
+  var error: js.UndefOr[ErrorHandler] = js.undefined
   
-  var next: js.UndefOr[Handler[T]] = js.native
+  var next: js.UndefOr[Handler[T]] = js.undefined
 }
 object Complete {
   
@@ -26,7 +24,7 @@ object Complete {
   }
   
   @scala.inline
-  implicit class CompleteMutableBuilder[Self <: Complete[_], T] (val x: Self with Complete[T]) extends AnyVal {
+  implicit class CompleteMutableBuilder[Self <: Complete[?], T] (val x: Self & Complete[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: T => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))

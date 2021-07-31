@@ -3,13 +3,13 @@ package typings.massive.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("massive", "Database")
 @js.native
 class Database protected ()
-  extends /* tableName */ StringDictionary[Writable | js.Any] {
+  extends StObject
+     with /* tableName */ StringDictionary[Writable | js.Any] {
   def this(connection: String) = this()
   /**
     * @param connection A connection object or connection string
@@ -17,14 +17,14 @@ class Database protected ()
   def this(connection: js.Object) = this()
   def this(connection: String, loader: Loader) = this()
   def this(connection: js.Object, loader: Loader) = this()
-  def this(connection: String, loader: js.UndefOr[scala.Nothing], driverConfig: js.Object) = this()
+  def this(connection: String, loader: Unit, driverConfig: js.Object) = this()
   def this(connection: String, loader: Loader, driverConfig: js.Object) = this()
-  def this(connection: js.Object, loader: js.UndefOr[scala.Nothing], driverConfig: js.Object) = this()
+  def this(connection: js.Object, loader: Unit, driverConfig: js.Object) = this()
   def this(connection: js.Object, loader: Loader, driverConfig: js.Object) = this()
   
-  def attach(entities: js.Array[_]): js.Promise[js.Array[_]] = js.native
+  def attach(entities: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
   /** Attach an entity to the connected instance. */
-  def attach(entities: AnyObject[_]): js.Promise[js.Array[_]] = js.native
+  def attach(entities: AnyObject[js.Any]): js.Promise[js.Array[js.Any]] = js.native
   
   /** Remove all attached entities from the instance, returning it to the pre- introspection state. */
   def clean(): Unit = js.native
@@ -56,33 +56,38 @@ class Database protected ()
   def dropTable(tablePath: String, options: DropOptions): js.Promise[Unit] = js.native
   
   /** List all the functions and scripts attached to the connected instance. */
-  def listFunctions(): js.Promise[js.Array[_]] = js.native
+  def listFunctions(): js.Promise[js.Array[js.Any]] = js.native
   
   /** List all the non-pk sequences attached to the connected instance. */
-  def listSequences(): js.Promise[js.Array[_]] = js.native
+  def listSequences(): js.Promise[js.Array[js.Any]] = js.native
   
   /** List all the tables attached to the connected instance. */
-  def listTables(): js.Promise[js.Array[_]] = js.native
+  def listTables(): js.Promise[js.Array[js.Any]] = js.native
   
   /** List all the views attached to the connected instance. */
-  def listViews(): js.Promise[js.Array[_]] = js.native
+  def listViews(): js.Promise[js.Array[js.Any]] = js.native
   
-  def query(query: String): js.Promise[_] = js.native
-  def query(query: String, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
-  def query(query: String, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Delete): js.Promise[_] = js.native
-  def query(query: Delete, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
-  def query(query: Delete, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Insert): js.Promise[_] = js.native
-  def query(query: Insert, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
-  def query(query: Insert, params: QueryParams): js.Promise[_] = js.native
+  def query(query: String): js.Promise[js.Any] = js.native
+  def query(query: String, params: Unit, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: String, params: QueryParams): js.Promise[js.Any] = js.native
+  def query(query: String, params: QueryParams, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Delete): js.Promise[js.Any] = js.native
+  def query(query: Delete, params: Unit, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Delete, params: QueryParams): js.Promise[js.Any] = js.native
+  def query(query: Delete, params: QueryParams, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Insert): js.Promise[js.Any] = js.native
+  def query(query: Insert, params: Unit, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Insert, params: QueryParams): js.Promise[js.Any] = js.native
+  def query(query: Insert, params: QueryParams, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
   /** Execute a query. */
-  def query(query: Select): js.Promise[_] = js.native
-  def query(query: Select, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
-  def query(query: Select, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Update): js.Promise[_] = js.native
-  def query(query: Update, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
-  def query(query: Update, params: QueryParams): js.Promise[_] = js.native
+  def query(query: Select): js.Promise[js.Any] = js.native
+  def query(query: Select, params: Unit, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Select, params: QueryParams): js.Promise[js.Any] = js.native
+  def query(query: Select, params: QueryParams, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Update): js.Promise[js.Any] = js.native
+  def query(query: Update, params: Unit, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
+  def query(query: Update, params: QueryParams): js.Promise[js.Any] = js.native
+  def query(query: Update, params: QueryParams, options: ResultProcessingOptions): js.Promise[js.Any] = js.native
   
   /**
     * Synchronize the database API with the current state by scanning for tables, views, functions, and scripts.
@@ -91,13 +96,13 @@ class Database protected ()
   def reload(): js.Promise[Database] = js.native
   
   /** Save a document. */
-  def saveDoc(collection: String, doc: AnyObject[_]): js.Promise[_] = js.native
+  def saveDoc(collection: String, doc: AnyObject[js.Any]): js.Promise[js.Any] = js.native
   
   /** Begin a task, returning a copy of the connected instance which will route all queries made in the callback through the task scope. */
-  def withConnection(cb: js.Function1[/* withTask */ js.Any, _]): js.Promise[_] = js.native
-  def withConnection(cb: js.Function1[/* withTask */ js.Any, _], options: AnyObject[_]): js.Promise[_] = js.native
+  def withConnection(cb: js.Function1[/* withTask */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def withConnection(cb: js.Function1[/* withTask */ js.Any, js.Any], options: AnyObject[js.Any]): js.Promise[js.Any] = js.native
   
   /** Begin a transaction, returning a copy of the connected instance which will route all queries made in the callback through the transaction scope. */
-  def withTransaction(cb: js.Function1[/* withTx */ js.Any, _]): js.Promise[_] = js.native
-  def withTransaction(cb: js.Function1[/* withTx */ js.Any, _], options: AnyObject[_]): js.Promise[_] = js.native
+  def withTransaction(cb: js.Function1[/* withTx */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def withTransaction(cb: js.Function1[/* withTx */ js.Any, js.Any], options: AnyObject[js.Any]): js.Promise[js.Any] = js.native
 }

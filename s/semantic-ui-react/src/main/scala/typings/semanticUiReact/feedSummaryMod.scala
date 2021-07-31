@@ -13,7 +13,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedSummaryMod extends Shortcut {
@@ -22,9 +21,9 @@ object feedSummaryMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FeedSummaryProps] = js.native
   
-  @js.native
   trait FeedSummaryProps
-    extends StrictFeedSummaryProps
+    extends StObject
+       with StrictFeedSummaryProps
        with /* key */ StringDictionary[js.Any]
   object FeedSummaryProps {
     
@@ -35,26 +34,25 @@ object feedSummaryMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFeedSummaryProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for FeedDate. */
-    var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.native
+    var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.undefined
     
     /** Shorthand for FeedUser. */
-    var user: js.UndefOr[SemanticShorthandItem[FeedUserProps]] = js.native
+    var user: js.UndefOr[SemanticShorthandItem[FeedUserProps]] = js.undefined
   }
   object StrictFeedSummaryProps {
     

@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsUpdateReviewCommentRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PATCH = js.native
+  var method: PATCH
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id
 }
 object PullsUpdateReviewCommentRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PATCH,
-    request: RequestRequestOptions,
-    url: SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id
-  ): PullsUpdateReviewCommentRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): PullsUpdateReviewCommentRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/pulls/comments/:comment_id")
     __obj.asInstanceOf[PullsUpdateReviewCommentRequestOptions]
   }
   

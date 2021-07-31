@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -109,6 +108,14 @@ class Entity protected ()
   @JSName("name")
   val name_FEntity: String = js.native
   
+  /**
+    * Returns the qualified name of this element, or
+    * null if this element is not a part of the model,
+    * or if it or one of its namespace containers does not have a
+    * valid name.
+    */
+  /* CompleteClass */
+  override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MEntity: String | Null = js.native
   
@@ -171,9 +178,8 @@ object Entity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Entity.create")
-  @js.native
-  def create(model: IModel): Entity = js.native
+  @scala.inline
+  def create(model: IModel): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Entity]
   
   /**
     * Creates and returns a new Entity instance in the SDK and on the server.
@@ -181,9 +187,8 @@ object Entity {
     * of the parent DomainModel element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Entity.createIn")
-  @js.native
-  def createIn(container: DomainModel): Entity = js.native
+  @scala.inline
+  def createIn(container: DomainModel): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Entity]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Entity.structureTypeName")

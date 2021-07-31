@@ -3,22 +3,21 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.MX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyMxRecord
-  extends MxRecord
+  extends StObject
+     with MxRecord
      with AnyRecord {
   
-  var `type`: MX = js.native
+  var `type`: MX
 }
 object AnyMxRecord {
   
   @scala.inline
-  def apply(exchange: String, priority: Double, `type`: MX): AnyMxRecord = {
+  def apply(exchange: String, priority: Double): AnyMxRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MX")
     __obj.asInstanceOf[AnyMxRecord]
   }
   

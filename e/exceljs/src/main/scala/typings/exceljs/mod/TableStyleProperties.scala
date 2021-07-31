@@ -2,35 +2,33 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableStyleProperties extends StObject {
   
   /**
   	  * Alternate rows shown with background colour
   	  * @default false
   	  */
-  var showColumnStripes: js.UndefOr[Boolean] = js.native
+  var showColumnStripes: js.UndefOr[Boolean] = js.undefined
   
   /**
   	  * Highlight the first column (bold)
   	  * @default false
   	  */
-  var showFirstColumn: js.UndefOr[Boolean] = js.native
+  var showFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
   	  * Highlight the last column (bold)
   	  * @default false
   	  */
-  var showLastColumn: js.UndefOr[Boolean] = js.native
+  var showLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
   	  * Alternate rows shown with background colour
   	  * @default false
   	  */
-  var showRowStripes: js.UndefOr[Boolean] = js.native
+  var showRowStripes: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * The colour theme of the table
@@ -38,7 +36,7 @@ trait TableStyleProperties extends StObject {
   	 */
   var theme: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object TableStyleProperties {
   

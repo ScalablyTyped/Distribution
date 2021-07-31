@@ -2,26 +2,24 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptResponse extends StObject {
   
   /**
     * The encrypted plaintext. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var CiphertextBlob: js.UndefOr[CiphertextType] = js.native
+  var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
   /**
     * The encryption algorithm that was used to encrypt the plaintext.
     */
-  var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
+  var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK that was used to encrypt the plaintext.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object EncryptResponse {
   

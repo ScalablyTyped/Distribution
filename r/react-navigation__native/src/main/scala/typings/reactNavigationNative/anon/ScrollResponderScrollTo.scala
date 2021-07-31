@@ -4,13 +4,13 @@ import typings.reactNavigationNative.useScrollToTopMod.ScrollOptions
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollResponderScrollTo extends ScrollableView {
+trait ScrollResponderScrollTo
+  extends StObject
+     with ScrollableView {
   
-  def scrollResponderScrollTo(options: ScrollOptions): Unit = js.native
+  def scrollResponderScrollTo(options: ScrollOptions): Unit
 }
 object ScrollResponderScrollTo {
   

@@ -2,27 +2,25 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinHeight extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var borderBottomColor: String = js.native
+  var borderBottomColor: String
   
-  var borderBottomWidth: Double = js.native
+  var borderBottomWidth: Double
   
-  var flex: Double = js.native
+  var flex: Double
   
-  var flexDirection: String = js.native
+  var flexDirection: String
   
-  var minHeight: Double = js.native
+  var minHeight: Double
   
-  var paddingRight: Double = js.native
+  var paddingRight: Double
   
-  var paddingVertical: Double = js.native
+  var paddingVertical: Double
 }
 object MinHeight {
   

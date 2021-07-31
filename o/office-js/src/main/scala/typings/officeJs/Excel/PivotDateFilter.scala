@@ -41,7 +41,6 @@ import typings.officeJs.officeJsStrings.YearToDate
 import typings.officeJs.officeJsStrings.Yesterday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,7 +50,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait PivotDateFilter extends StObject {
   
   /**
@@ -60,7 +58,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var comparator: js.UndefOr[FilterDatetime] = js.native
+  var comparator: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var condition: DateFilterCondition | Unknown_ | Equals | Before | BeforeOrEqualTo | After | AfterOrEqualTo | Between | Tomorrow | Today | Yesterday | NextWeek | ThisWeek | LastWeek | NextMonth | ThisMonth | LastMonth | NextQuarter | ThisQuarter | LastQuarter | NextYear | ThisYear | LastYear | YearToDate | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodJanuary | AllDatesInPeriodFebruary | AllDatesInPeriodMarch | AllDatesInPeriodApril | AllDatesInPeriodMay | AllDatesInPeriodJune | AllDatesInPeriodJuly | AllDatesInPeriodAugust | AllDatesInPeriodSeptember | AllDatesInPeriodOctober | AllDatesInPeriodNovember | AllDatesInPeriodDecember = js.native
+  var condition: DateFilterCondition | Unknown_ | Equals | Before | BeforeOrEqualTo | After | AfterOrEqualTo | Between | Tomorrow | Today | Yesterday | NextWeek | ThisWeek | LastWeek | NextMonth | ThisMonth | LastMonth | NextQuarter | ThisQuarter | LastQuarter | NextYear | ThisYear | LastYear | YearToDate | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodJanuary | AllDatesInPeriodFebruary | AllDatesInPeriodMarch | AllDatesInPeriodApril | AllDatesInPeriodMay | AllDatesInPeriodJune | AllDatesInPeriodJuly | AllDatesInPeriodAugust | AllDatesInPeriodSeptember | AllDatesInPeriodOctober | AllDatesInPeriodNovember | AllDatesInPeriodDecember
   
   /**
     *
@@ -76,7 +74,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var lowerBound: js.UndefOr[FilterDatetime] = js.native
+  var lowerBound: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var upperBound: js.UndefOr[FilterDatetime] = js.native
+  var upperBound: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait PivotDateFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var wholeDays: js.UndefOr[Boolean] = js.native
+  var wholeDays: js.UndefOr[Boolean] = js.undefined
 }
 object PivotDateFilter {
   

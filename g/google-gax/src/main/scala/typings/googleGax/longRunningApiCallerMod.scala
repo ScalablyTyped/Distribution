@@ -7,14 +7,15 @@ import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object longRunningApiCallerMod {
   
   @JSImport("google-gax/build/src/longRunningCalls/longRunningApiCaller", "LongrunningApiCaller")
   @js.native
-  class LongrunningApiCaller protected () extends APICaller {
+  class LongrunningApiCaller protected ()
+    extends StObject
+       with APICaller {
     /**
       * Creates an API caller that performs polling on a long running operation.
       *

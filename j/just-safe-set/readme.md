@@ -11,8 +11,8 @@ set value at property, create intermediate properties if necessary
 | Full name          | just-safe-set |
 | Keywords           | object, safe, set, no-dependencies, just |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 302644 |
+| # dependents       | 13 |
+| # downloads        | 433414 |
 | # stars            | 0 |
 
 ## Links

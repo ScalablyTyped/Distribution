@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchRunPivotReportsResponse extends StObject {
   
   /** Individual responses. Each response has a separate pivot report request. */
-  var pivotReports: js.UndefOr[js.Array[RunPivotReportResponse]] = js.native
+  var pivotReports: js.UndefOr[js.Array[RunPivotReportResponse]] = js.undefined
 }
 object BatchRunPivotReportsResponse {
   

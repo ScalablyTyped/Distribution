@@ -29,71 +29,69 @@ import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import typings.devextreme.mod.DevExpress.viz.MapLayerElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderWidth extends StObject {
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colorGroupingField: js.UndefOr[String] = js.native
+  var colorGroupingField: js.UndefOr[String] = js.undefined
   
-  var colorGroups: js.UndefOr[js.Array[Double]] = js.native
+  var colorGroups: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var customize: js.UndefOr[js.Function1[/* elements */ js.Array[MapLayerElement], _]] = js.native
+  var customize: js.UndefOr[js.Function1[/* elements */ js.Array[MapLayerElement], js.Any]] = js.undefined
   
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
   var dataSource: js.UndefOr[
-    js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[_]
-  ] = js.native
+    js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[js.Any]
+  ] = js.undefined
   
-  var elementType: js.UndefOr[bubble | dot | image | pie] = js.native
+  var elementType: js.UndefOr[bubble | dot | image | pie] = js.undefined
   
-  var hoverEnabled: js.UndefOr[Boolean] = js.native
+  var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var hoveredBorderColor: js.UndefOr[String] = js.native
+  var hoveredBorderColor: js.UndefOr[String] = js.undefined
   
-  var hoveredBorderWidth: js.UndefOr[Double] = js.native
+  var hoveredBorderWidth: js.UndefOr[Double] = js.undefined
   
-  var hoveredColor: js.UndefOr[String] = js.native
+  var hoveredColor: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[DataFieldEnabled] = js.native
+  var label: js.UndefOr[DataFieldEnabled] = js.undefined
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   var palette: js.UndefOr[
     js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.native
+  ] = js.undefined
   
-  var paletteSize: js.UndefOr[Double] = js.native
+  var paletteSize: js.UndefOr[Double] = js.undefined
   
-  var selectedBorderColor: js.UndefOr[String] = js.native
+  var selectedBorderColor: js.UndefOr[String] = js.undefined
   
-  var selectedBorderWidth: js.UndefOr[Double] = js.native
+  var selectedBorderWidth: js.UndefOr[Double] = js.undefined
   
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
   
-  var selectionMode: js.UndefOr[multiple | none | single_] = js.native
+  var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var sizeGroupingField: js.UndefOr[String] = js.native
+  var sizeGroupingField: js.UndefOr[String] = js.undefined
   
-  var sizeGroups: js.UndefOr[js.Array[Double]] = js.native
+  var sizeGroups: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: js.UndefOr[area | line | marker] = js.native
+  var `type`: js.UndefOr[area | line | marker] = js.undefined
 }
 object BorderWidth {
   
@@ -140,7 +138,7 @@ object BorderWidth {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setCustomize(value: /* elements */ js.Array[MapLayerElement] => _): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
+    def setCustomize(value: /* elements */ js.Array[MapLayerElement] => js.Any): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
@@ -153,7 +151,7 @@ object BorderWidth {
     
     @scala.inline
     def setDataSource(
-      value: js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[_]
+      value: js.Any | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions | String | js.Array[js.Any]
     ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline

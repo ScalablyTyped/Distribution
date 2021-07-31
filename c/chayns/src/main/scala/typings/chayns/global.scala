@@ -4,7 +4,6 @@ import typings.chayns.chayns.dialog.buttonType
 import typings.chayns.chayns.storage.accessMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,38 +14,30 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("chayns.addErrorListener")
-    @js.native
-    def addErrorListener(logFn: js.Function1[/* error */ js.Any, js.Promise[js.Object]], appName: String): Unit = js.native
+    @scala.inline
+    def addErrorListener(logFn: js.Function1[/* error */ js.Any, js.Promise[js.Object]], appName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addErrorListener")(logFn.asInstanceOf[js.Any], appName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // TODO check passbock parameter
-    @JSGlobal("chayns.addScrollListener")
-    @js.native
-    def addScrollListener(callback: js.Function1[/* data */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("chayns.addScrollListener")
-    @js.native
-    def addScrollListener(callback: js.Function1[/* data */ js.Any, _], throttle: Double): js.Promise[_] = js.native
+    @scala.inline
+    def addScrollListener(callback: js.Function1[/* data */ js.Any, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def addScrollListener(callback: js.Function1[/* data */ js.Any, js.Any], throttle: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addScrollListener")(callback.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.addToWallet")
-    @js.native
-    def addToWallet(passbook: String): js.Promise[_] = js.native
+    @scala.inline
+    def addToWallet(passbook: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addToWallet")(passbook.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.allowRefreshScroll")
-    @js.native
-    def allowRefreshScroll(): js.Promise[_] = js.native
+    @scala.inline
+    def allowRefreshScroll(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("allowRefreshScroll")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.closeUrl")
-    @js.native
-    def closeUrl(): Unit = js.native
+    @scala.inline
+    def closeUrl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeUrl")().asInstanceOf[Unit]
     
     // TODO interface for promise result
-    @JSGlobal("chayns.createQRCode")
-    @js.native
-    def createQRCode(text: String): js.Promise[String] = js.native
+    @scala.inline
+    def createQRCode(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQRCode")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
-    @JSGlobal("chayns.createTappShortcut")
-    @js.native
-    def createTappShortcut(name: String, imageUrl: String): js.Promise[_] = js.native
+    @scala.inline
+    def createTappShortcut(name: String, imageUrl: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTappShortcut")(name.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * UI Functions
@@ -54,27 +45,29 @@ object global {
       */
     object dialog {
       
-      @JSGlobal("chayns.dialog.alert")
+      @JSGlobal("chayns.dialog")
       @js.native
-      def alert(title: String): js.Promise[buttonType] = js.native
-      @JSGlobal("chayns.dialog.alert")
-      @js.native
-      def alert(title: String, message: String): js.Promise[buttonType] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def alert(title: String): js.Promise[buttonType] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[buttonType]]
+      @scala.inline
+      def alert(title: String, message: String): js.Promise[buttonType] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[buttonType]]
       
       @JSGlobal("chayns.dialog.buttonText")
       @js.native
       object buttonText extends StObject {
         
         @JSBracketAccess
-        def apply(value: String): js.UndefOr[typings.chayns.chayns.dialog.buttonText with String] = js.native
+        def apply(value: String): js.UndefOr[typings.chayns.chayns.dialog.buttonText & String] = js.native
         
-        /* "Abbrechen" */ val CANCEL: typings.chayns.chayns.dialog.buttonText.CANCEL with String = js.native
+        /* "Abbrechen" */ val CANCEL: typings.chayns.chayns.dialog.buttonText.CANCEL & String = js.native
         
-        /* "Nein" */ val NO: typings.chayns.chayns.dialog.buttonText.NO with String = js.native
+        /* "Nein" */ val NO: typings.chayns.chayns.dialog.buttonText.NO & String = js.native
         
-        /* "OK" */ val OK: typings.chayns.chayns.dialog.buttonText.OK with String = js.native
+        /* "OK" */ val OK: typings.chayns.chayns.dialog.buttonText.OK & String = js.native
         
-        /* "Ja" */ val YES: typings.chayns.chayns.dialog.buttonText.YES with String = js.native
+        /* "Ja" */ val YES: typings.chayns.chayns.dialog.buttonText.YES & String = js.native
       }
       
       @JSGlobal("chayns.dialog.buttonType")
@@ -82,82 +75,71 @@ object global {
       object buttonType extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.buttonType with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.buttonType & Double] = js.native
         
-        /* -1 */ val CANCEL: typings.chayns.chayns.dialog.buttonType.CANCEL with Double = js.native
+        /* -1 */ val CANCEL: typings.chayns.chayns.dialog.buttonType.CANCEL & Double = js.native
         
-        /* 0 */ val NEGATIVE: typings.chayns.chayns.dialog.buttonType.NEGATIVE with Double = js.native
+        /* 0 */ val NEGATIVE: typings.chayns.chayns.dialog.buttonType.NEGATIVE & Double = js.native
         
-        /* 1 */ val POSITIVE: typings.chayns.chayns.dialog.buttonType.POSITIVE with Double = js.native
+        /* 1 */ val POSITIVE: typings.chayns.chayns.dialog.buttonType.POSITIVE & Double = js.native
       }
       
-      @JSGlobal("chayns.dialog.confirm")
-      @js.native
-      def confirm(title: String): js.Promise[buttonType] = js.native
-      @JSGlobal("chayns.dialog.confirm")
-      @js.native
-      def confirm(title: String, message: js.UndefOr[scala.Nothing], buttons: js.Array[DialogButton]): js.Promise[buttonType] = js.native
-      @JSGlobal("chayns.dialog.confirm")
-      @js.native
-      def confirm(title: String, message: String): js.Promise[buttonType] = js.native
-      @JSGlobal("chayns.dialog.confirm")
-      @js.native
-      def confirm(title: String, message: String, buttons: js.Array[DialogButton]): js.Promise[buttonType] = js.native
+      @scala.inline
+      def confirm(title: String): js.Promise[buttonType] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any]).asInstanceOf[js.Promise[buttonType]]
+      @scala.inline
+      def confirm(title: String, message: String): js.Promise[buttonType] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[buttonType]]
+      @scala.inline
+      def confirm(title: String, message: String, buttons: js.Array[DialogButton]): js.Promise[buttonType] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[buttonType]]
+      @scala.inline
+      def confirm(title: String, message: Unit, buttons: js.Array[DialogButton]): js.Promise[buttonType] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[buttonType]]
       
-      @JSGlobal("chayns.dialog.date")
-      @js.native
-      def date(config: DialogDateConfig): js.Promise[DialogDateResult] = js.native
+      @scala.inline
+      def date(config: DialogDateConfig): js.Promise[DialogDateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DialogDateResult]]
       
       @JSGlobal("chayns.dialog.dateType")
       @js.native
       object dateType extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.dateType with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.dateType & Double] = js.native
         
-        /* 0 */ val DATE: typings.chayns.chayns.dialog.dateType.DATE with Double = js.native
+        /* 0 */ val DATE: typings.chayns.chayns.dialog.dateType.DATE & Double = js.native
         
-        /* 2 */ val DATE_TIME: typings.chayns.chayns.dialog.dateType.DATE_TIME with Double = js.native
+        /* 2 */ val DATE_TIME: typings.chayns.chayns.dialog.dateType.DATE_TIME & Double = js.native
         
-        /* 1 */ val TIME: typings.chayns.chayns.dialog.dateType.TIME with Double = js.native
+        /* 1 */ val TIME: typings.chayns.chayns.dialog.dateType.TIME & Double = js.native
       }
       
-      @JSGlobal("chayns.dialog.facebook")
-      @js.native
-      def facebook(options: DialogFacebookOptions): js.Promise[DialogFacebookResult] = js.native
+      @scala.inline
+      def facebook(options: DialogFacebookOptions): js.Promise[DialogFacebookResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("facebook")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DialogFacebookResult]]
       
-      @JSGlobal("chayns.dialog.input")
-      @js.native
-      def input(config: DialogInputConfig): js.Promise[DialogInputResult] = js.native
+      @scala.inline
+      def input(config: DialogInputConfig): js.Promise[DialogInputResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DialogInputResult]]
       
       @JSGlobal("chayns.dialog.inputType")
       @js.native
       object inputType extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.inputType with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.chayns.chayns.dialog.inputType & Double] = js.native
         
-        /* 0 */ val DEFAULT: typings.chayns.chayns.dialog.inputType.DEFAULT with Double = js.native
+        /* 0 */ val DEFAULT: typings.chayns.chayns.dialog.inputType.DEFAULT & Double = js.native
         
-        /* 1 */ val PASSWORD: typings.chayns.chayns.dialog.inputType.PASSWORD with Double = js.native
+        /* 1 */ val PASSWORD: typings.chayns.chayns.dialog.inputType.PASSWORD & Double = js.native
       }
       
-      @JSGlobal("chayns.dialog.select")
-      @js.native
-      def select(config: DialogSelectConfig): js.Promise[DialogSelectResult] = js.native
+      @scala.inline
+      def select(config: DialogSelectConfig): js.Promise[DialogSelectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DialogSelectResult]]
     }
     
-    @JSGlobal("chayns.disableDisplayTimeout")
-    @js.native
-    def disableDisplayTimeout(): js.Promise[_] = js.native
+    @scala.inline
+    def disableDisplayTimeout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disableDisplayTimeout")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.disallowRefreshScroll")
-    @js.native
-    def disallowRefreshScroll(): js.Promise[_] = js.native
+    @scala.inline
+    def disallowRefreshScroll(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowRefreshScroll")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.enableDisplayTimeout")
-    @js.native
-    def enableDisplayTimeout(): js.Promise[_] = js.native
+    @scala.inline
+    def enableDisplayTimeout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDisplayTimeout")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Environmental Variables
@@ -670,78 +652,58 @@ object global {
       }
     }
     
-    @JSGlobal("chayns.findSite")
-    @js.native
-    def findSite(name: String): js.Promise[js.Array[Site]] = js.native
-    @JSGlobal("chayns.findSite")
-    @js.native
-    def findSite(name: String, skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[Site]] = js.native
-    @JSGlobal("chayns.findSite")
-    @js.native
-    def findSite(name: String, skip: Double): js.Promise[js.Array[Site]] = js.native
-    @JSGlobal("chayns.findSite")
-    @js.native
-    def findSite(name: String, skip: Double, take: Double): js.Promise[js.Array[Site]] = js.native
+    @scala.inline
+    def findSite(name: String): js.Promise[js.Array[Site]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSite")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Site]]]
+    @scala.inline
+    def findSite(name: String, skip: Double): js.Promise[js.Array[Site]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findSite")(name.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Site]]]
+    @scala.inline
+    def findSite(name: String, skip: Double, take: Double): js.Promise[js.Array[Site]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findSite")(name.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], take.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Site]]]
+    @scala.inline
+    def findSite(name: String, skip: Unit, take: Double): js.Promise[js.Array[Site]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findSite")(name.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], take.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Site]]]
     
     // TODO interface for promise result
-    @JSGlobal("chayns.getAvailableSharingServices")
-    @js.native
-    def getAvailableSharingServices(): js.Promise[js.Array[Double]] = js.native
+    @scala.inline
+    def getAvailableSharingServices(): js.Promise[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableSharingServices")().asInstanceOf[js.Promise[js.Array[Double]]]
     
-    @JSGlobal("chayns.getBaseColor")
-    @js.native
-    def getBaseColor(): String = js.native
-    @JSGlobal("chayns.getBaseColor")
-    @js.native
-    def getBaseColor(color: js.UndefOr[scala.Nothing], colorMode: Double): String = js.native
-    @JSGlobal("chayns.getBaseColor")
-    @js.native
-    def getBaseColor(color: String): String = js.native
-    @JSGlobal("chayns.getBaseColor")
-    @js.native
-    def getBaseColor(color: String, colorMode: Double): String = js.native
+    @scala.inline
+    def getBaseColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseColor")().asInstanceOf[String]
+    @scala.inline
+    def getBaseColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getBaseColor(color: String, colorMode: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseColor")(color.asInstanceOf[js.Any], colorMode.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def getBaseColor(color: Unit, colorMode: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseColor")(color.asInstanceOf[js.Any], colorMode.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSGlobal("chayns.getBeaconHistory")
-    @js.native
-    def getBeaconHistory(): js.Promise[js.Array[BeaconHistory]] = js.native
-    @JSGlobal("chayns.getBeaconHistory")
-    @js.native
-    def getBeaconHistory(subNumber: Double): js.Promise[js.Array[BeaconHistory]] = js.native
+    @scala.inline
+    def getBeaconHistory(): js.Promise[js.Array[BeaconHistory]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeaconHistory")().asInstanceOf[js.Promise[js.Array[BeaconHistory]]]
+    @scala.inline
+    def getBeaconHistory(subNumber: Double): js.Promise[js.Array[BeaconHistory]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeaconHistory")(subNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BeaconHistory]]]
     
-    @JSGlobal("chayns.getGeoLocation")
-    @js.native
-    def getGeoLocation(): js.Promise[GeoLocationResult] = js.native
+    @scala.inline
+    def getGeoLocation(): js.Promise[GeoLocationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeoLocation")().asInstanceOf[js.Promise[GeoLocationResult]]
     
-    @JSGlobal("chayns.getGlobalData")
-    @js.native
-    def getGlobalData(): GlobalData = js.native
+    @scala.inline
+    def getGlobalData(): GlobalData = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalData")().asInstanceOf[GlobalData]
     
-    @JSGlobal("chayns.getLocationBeacons")
-    @js.native
-    def getLocationBeacons(forceReload: Boolean): js.Promise[js.Array[LocationBeacon]] = js.native
+    @scala.inline
+    def getLocationBeacons(forceReload: Boolean): js.Promise[js.Array[LocationBeacon]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationBeacons")(forceReload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocationBeacon]]]
     
-    @JSGlobal("chayns.getUacGroups")
-    @js.native
-    def getUacGroups(siteId: Double): js.Promise[js.Array[UacGroup]] = js.native
-    @JSGlobal("chayns.getUacGroups")
-    @js.native
-    def getUacGroups(siteId: Double, updateCache: Boolean): js.Promise[js.Array[UacGroup]] = js.native
+    @scala.inline
+    def getUacGroups(siteId: Double): js.Promise[js.Array[UacGroup]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUacGroups")(siteId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[UacGroup]]]
+    @scala.inline
+    def getUacGroups(siteId: Double, updateCache: Boolean): js.Promise[js.Array[UacGroup]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUacGroups")(siteId.asInstanceOf[js.Any], updateCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[UacGroup]]]
     
-    @JSGlobal("chayns.getUser")
-    @js.native
-    def getUser(config: GetUserConfig): js.Promise[User] = js.native
+    @scala.inline
+    def getUser(config: GetUserConfig): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
     
-    @JSGlobal("chayns.hideFloatingButton")
-    @js.native
-    def hideFloatingButton(): Unit = js.native
+    @scala.inline
+    def hideFloatingButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideFloatingButton")().asInstanceOf[Unit]
     
-    @JSGlobal("chayns.hideTitleImage")
-    @js.native
-    def hideTitleImage(): js.Promise[_] = js.native
+    @scala.inline
+    def hideTitleImage(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTitleImage")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.hideWaitCursor")
-    @js.native
-    def hideWaitCursor(): js.Promise[_] = js.native
+    @scala.inline
+    def hideWaitCursor(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideWaitCursor")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Basic Functions
@@ -749,64 +711,57 @@ object global {
       */
     object intercom {
       
-      // TODO set interface for promise result
-      @JSGlobal("chayns.intercom.sendMessageToGroup")
+      @JSGlobal("chayns.intercom")
       @js.native
-      def sendMessageToGroup(groupId: Double, config: IntercomConfig): js.Promise[_] = js.native
+      val ^ : js.Any = js.native
       
       // TODO set interface for promise result
-      @JSGlobal("chayns.intercom.sendMessageToPage")
-      @js.native
-      def sendMessageToPage(config: IntercomConfig): js.Promise[_] = js.native
+      @scala.inline
+      def sendMessageToGroup(groupId: Double, config: IntercomConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToGroup")(groupId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
-      @JSGlobal("chayns.intercom.sendMessageToUser")
-      @js.native
-      def sendMessageToUser(userId: Double, config: IntercomConfig): js.Promise[_] = js.native
+      // TODO set interface for promise result
+      @scala.inline
+      def sendMessageToPage(config: IntercomConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToPage")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      
+      @scala.inline
+      def sendMessageToUser(userId: Double, config: IntercomConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageToUser")(userId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     }
     
     /**
       * Basic Functions
       * chayns
       */
-    @JSGlobal("chayns.login")
-    @js.native
-    def login(): js.Promise[_] = js.native
-    @JSGlobal("chayns.login")
-    @js.native
-    def login(parameters: js.Array[String]): js.Promise[_] = js.native
+    @scala.inline
+    def login(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def login(parameters: js.Array[String]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.navigateBack")
-    @js.native
-    def navigateBack(): js.Promise[_] = js.native
+    @scala.inline
+    def navigateBack(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Media Functions
       * Image
       * chayns
       */
-    @JSGlobal("chayns.openImage")
-    @js.native
-    def openImage(urls: js.Array[String]): js.Promise[_] = js.native
-    @JSGlobal("chayns.openImage")
-    @js.native
-    def openImage(urls: js.Array[String], start: Double): js.Promise[_] = js.native
+    @scala.inline
+    def openImage(urls: js.Array[String]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def openImage(urls: js.Array[String], start: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("openImage")(urls.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.openUrl")
-    @js.native
-    def openUrl(config: OpenUrlConfig): Unit = js.native
+    @scala.inline
+    def openUrl(config: OpenUrlConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("chayns.openUrlInBrowser")
-    @js.native
-    def openUrlInBrowser(url: String): Unit = js.native
+    @scala.inline
+    def openUrlInBrowser(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlInBrowser")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Media Functions
       * Miscellaneous
       * chayns
       */
-    @JSGlobal("chayns.openVideo")
-    @js.native
-    def openVideo(url: String): js.Promise[_] = js.native
+    @scala.inline
+    def openVideo(url: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("openVideo")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Basic Functions
@@ -814,22 +769,22 @@ object global {
       */
     object passKit {
       
-      @JSGlobal("chayns.passKit.getInstalled")
+      @JSGlobal("chayns.passKit")
       @js.native
-      def getInstalled(): js.Promise[_] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def getInstalled(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstalled")().asInstanceOf[js.Promise[js.Any]]
       
       // TODO interface for promise result
-      @JSGlobal("chayns.passKit.isInstalled")
-      @js.native
-      def isInstalled(identifier: String): js.Promise[_] = js.native
+      @scala.inline
+      def isInstalled(identifier: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     }
     
-    @JSGlobal("chayns.playSound")
-    @js.native
-    def playSound(url: String): js.Promise[_] = js.native
-    @JSGlobal("chayns.playSound")
-    @js.native
-    def playSound(url: String, playOnMute: Boolean): js.Promise[_] = js.native
+    @scala.inline
+    def playSound(url: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def playSound(url: String, playOnMute: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("playSound")(url.asInstanceOf[js.Any], playOnMute.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Getting Started
@@ -842,116 +797,89 @@ object global {
     @scala.inline
     def ready_=(x: js.Promise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ready")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("chayns.register")
-    @js.native
-    def register(config: RegisterConfig): Unit = js.native
+    @scala.inline
+    def register(config: RegisterConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("chayns.removeNfcCallback")
-    @js.native
-    def removeNfcCallback(): js.Promise[_] = js.native
+    @scala.inline
+    def removeNfcCallback(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNfcCallback")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.removeSubTapp")
-    @js.native
-    def removeSubTapp(config: RemoveSubTappConfig): Unit = js.native
+    @scala.inline
+    def removeSubTapp(config: RemoveSubTappConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSubTapp")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("chayns.saveAppointment")
-    @js.native
-    def saveAppointment(config: SaveAppointmentConfig): js.Promise[_] = js.native
+    @scala.inline
+    def saveAppointment(config: SaveAppointmentConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAppointment")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.scanQRCode")
-    @js.native
-    def scanQRCode(): js.Promise[_] = js.native
-    @JSGlobal("chayns.scanQRCode")
-    @js.native
-    def scanQRCode(cameryType: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[_] = js.native
-    @JSGlobal("chayns.scanQRCode")
-    @js.native
-    def scanQRCode(cameryType: Double): js.Promise[_] = js.native
-    @JSGlobal("chayns.scanQRCode")
-    @js.native
-    def scanQRCode(cameryType: Double, timeout: Double): js.Promise[_] = js.native
+    @scala.inline
+    def scanQRCode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def scanQRCode(cameryType: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def scanQRCode(cameryType: Double, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def scanQRCode(cameryType: Unit, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(cameryType.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.scrollToY")
-    @js.native
-    def scrollToY(position: Double): js.Promise[_] = js.native
+    @scala.inline
+    def scrollToY(position: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollToY")(position.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.selectTapp")
-    @js.native
-    def selectTapp(tapp: SelectTappConfig): js.Promise[_] = js.native
-    @JSGlobal("chayns.selectTapp")
-    @js.native
-    def selectTapp(tapp: SelectTappConfig, parameter: js.Array[String]): js.Promise[_] = js.native
+    @scala.inline
+    def selectTapp(tapp: SelectTappConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def selectTapp(tapp: SelectTappConfig, parameter: js.Array[String]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectTapp")(tapp.asInstanceOf[js.Any], parameter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setHeight")
-    @js.native
-    def setHeight(config: SetHeightConfig): js.Promise[_] = js.native
+    @scala.inline
+    def setHeight(config: SetHeightConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setHeight")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setNetworkChangeCallback")
-    @js.native
-    def setNetworkChangeCallback(callback: js.Function1[/* result */ NetworkChangeResult, _], ongoing: Boolean): js.Promise[_] = js.native
+    @scala.inline
+    def setNetworkChangeCallback(callback: js.Function1[/* result */ NetworkChangeResult, js.Any], ongoing: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setNetworkChangeCallback")(callback.asInstanceOf[js.Any], ongoing.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setNfcCallback")
-    @js.native
-    def setNfcCallback(callback: js.Function1[/* rfid */ String, _]): js.Promise[_] = js.native
+    @scala.inline
+    def setNfcCallback(callback: js.Function1[/* rfid */ String, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setNfcCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setOnActivateCallback")
-    @js.native
-    def setOnActivateCallback(callback: js.Function1[/* tappEvent */ Double, _]): js.Promise[_] = js.native
+    @scala.inline
+    def setOnActivateCallback(callback: js.Function1[/* tappEvent */ Double, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnActivateCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
     // TODO interface for callback data
-    @JSGlobal("chayns.setScreenOrientation")
-    @js.native
-    def setScreenOrientation(orientation: Double): js.Promise[_] = js.native
+    @scala.inline
+    def setScreenOrientation(orientation: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setScreenOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setSpeechToText")
-    @js.native
-    def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, _]): js.Promise[_] = js.native
-    @JSGlobal("chayns.setSpeechToText")
-    @js.native
-    def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, _], title: String): js.Promise[_] = js.native
+    @scala.inline
+    def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def setSpeechToText(callback: js.Function1[/* result */ SpeechToTextResult, js.Any], title: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSpeechToText")(callback.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.setSubTapp")
-    @js.native
-    def setSubTapp(config: SubTappConfig): Unit = js.native
+    @scala.inline
+    def setSubTapp(config: SubTappConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSubTapp")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("chayns.share")
-    @js.native
-    def share(config: ShareConfig): js.Promise[_] = js.native
+    @scala.inline
+    def share(config: ShareConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("share")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.showFinetradingQRCode")
-    @js.native
-    def showFinetradingQRCode(): js.Promise[_] = js.native
+    @scala.inline
+    def showFinetradingQRCode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showFinetradingQRCode")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * UI Functions
       * Floating Button
       * chayns
       */
-    @JSGlobal("chayns.showFloatingButton")
-    @js.native
-    def showFloatingButton(config: FloatingConfig, callback: js.Function0[_]): Unit = js.native
+    @scala.inline
+    def showFloatingButton(config: FloatingConfig, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showFloatingButton")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chayns.showTitleImage")
-    @js.native
-    def showTitleImage(): js.Promise[_] = js.native
+    @scala.inline
+    def showTitleImage(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showTitleImage")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * UI Functions
       * Waitcursor
       * chayns
       */
-    @JSGlobal("chayns.showWaitCursor")
-    @js.native
-    def showWaitCursor(): js.Promise[_] = js.native
-    @JSGlobal("chayns.showWaitCursor")
-    @js.native
-    def showWaitCursor(text: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[_] = js.native
-    @JSGlobal("chayns.showWaitCursor")
-    @js.native
-    def showWaitCursor(text: String): js.Promise[_] = js.native
-    @JSGlobal("chayns.showWaitCursor")
-    @js.native
-    def showWaitCursor(text: String, timeout: Double): js.Promise[_] = js.native
+    @scala.inline
+    def showWaitCursor(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def showWaitCursor(text: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def showWaitCursor(text: String, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def showWaitCursor(text: Unit, timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showWaitCursor")(text.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * chayns.smartShop
@@ -962,67 +890,63 @@ object global {
     @scala.inline
     def smartShop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartShop")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("chayns.startInteractionIdentification")
-    @js.native
-    def startInteractionIdentification(config: InteractionIdentificationConfig): js.Promise[_] = js.native
+    @scala.inline
+    def startInteractionIdentification(config: InteractionIdentificationConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("startInteractionIdentification")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.startNfcDetection")
-    @js.native
-    def startNfcDetection(callback: js.Function1[/* result */ NfcDetectionResult, _], interval: Double, vibrate: Boolean): js.Promise[_] = js.native
+    @scala.inline
+    def startNfcDetection(
+      callback: js.Function1[/* result */ NfcDetectionResult, js.Any],
+      interval: Double,
+      vibrate: Boolean
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNfcDetection")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], vibrate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.stopInteractionIdentification")
-    @js.native
-    def stopInteractionIdentification(): js.Promise[_] = js.native
+    @scala.inline
+    def stopInteractionIdentification(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopInteractionIdentification")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.stopNfcDetection")
-    @js.native
-    def stopNfcDetection(): js.Promise[_] = js.native
+    @scala.inline
+    def stopNfcDetection(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopNfcDetection")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * chayns.storage
       */
     object storage {
       
+      @JSGlobal("chayns.storage")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSGlobal("chayns.storage.accessMode")
       @js.native
       object accessMode extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.chayns.chayns.storage.accessMode with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.chayns.chayns.storage.accessMode & Double] = js.native
         
-        /* 2 */ val PRIVATE: typings.chayns.chayns.storage.accessMode.PRIVATE with Double = js.native
+        /* 2 */ val PRIVATE: typings.chayns.chayns.storage.accessMode.PRIVATE & Double = js.native
         
-        /* 1 */ val PROTECTED: typings.chayns.chayns.storage.accessMode.PROTECTED with Double = js.native
+        /* 1 */ val PROTECTED: typings.chayns.chayns.storage.accessMode.PROTECTED & Double = js.native
         
-        /* 0 */ val PUBLIC: typings.chayns.chayns.storage.accessMode.PUBLIC with Double = js.native
+        /* 0 */ val PUBLIC: typings.chayns.chayns.storage.accessMode.PUBLIC & Double = js.native
       }
       
-      @JSGlobal("chayns.storage.get")
-      @js.native
-      def get(key: String): js.Any = js.native
-      @JSGlobal("chayns.storage.get")
-      @js.native
-      def get(key: String, accessMode: accessMode): js.Any = js.native
+      @scala.inline
+      def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def get(key: String, accessMode: accessMode): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSGlobal("chayns.storage.remove")
-      @js.native
-      def remove(key: String): js.Promise[_] = js.native
-      @JSGlobal("chayns.storage.remove")
-      @js.native
-      def remove(key: String, accessMode: accessMode): js.Promise[_] = js.native
+      @scala.inline
+      def remove(key: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def remove(key: String, accessMode: accessMode): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
-      @JSGlobal("chayns.storage.set")
-      @js.native
-      def set(key: String, value: js.Any): js.Promise[_] = js.native
-      @JSGlobal("chayns.storage.set")
-      @js.native
-      def set(key: String, value: js.Any, accessMode: js.UndefOr[scala.Nothing], tappIds: js.Array[Double]): js.Promise[_] = js.native
-      @JSGlobal("chayns.storage.set")
-      @js.native
-      def set(key: String, value: js.Any, accessMode: accessMode): js.Promise[_] = js.native
-      @JSGlobal("chayns.storage.set")
-      @js.native
-      def set(key: String, value: js.Any, accessMode: accessMode, tappIds: js.Array[Double]): js.Promise[_] = js.native
+      @scala.inline
+      def set(key: String, value: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def set(key: String, value: js.Any, accessMode: Unit, tappIds: js.Array[Double]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def set(key: String, value: js.Any, accessMode: accessMode): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+      @scala.inline
+      def set(key: String, value: js.Any, accessMode: accessMode, tappIds: js.Array[Double]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], accessMode.asInstanceOf[js.Any], tappIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     }
     
     /**
@@ -1036,25 +960,24 @@ object global {
         */
       object gallery {
         
-        @JSGlobal("chayns.ui.gallery.addUrl")
+        @JSGlobal("chayns.ui.gallery")
         @js.native
-        def addUrl(id: String, url: String): Unit = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("chayns.ui.gallery.create")
-        @js.native
-        def create(id: String, urls: js.Array[String]): Unit = js.native
+        @scala.inline
+        def addUrl(id: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUrl")(id.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.ui.gallery.getUrls")
-        @js.native
-        def getUrls(id: String): js.Array[String] = js.native
+        @scala.inline
+        def create(id: String, urls: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(id.asInstanceOf[js.Any], urls.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.ui.gallery.removeUrl")
-        @js.native
-        def removeUrl(id: String, url: String): Unit = js.native
+        @scala.inline
+        def getUrls(id: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrls")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
         
-        @JSGlobal("chayns.ui.gallery.setUrls")
-        @js.native
-        def setUrls(id: String, urls: js.Array[String]): Unit = js.native
+        @scala.inline
+        def removeUrl(id: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUrl")(id.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        
+        @scala.inline
+        def setUrls(id: String, urls: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrls")(id.asInstanceOf[js.Any], urls.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       /**
@@ -1063,31 +986,28 @@ object global {
         */
       object modeSwitch {
         
-        @JSGlobal("chayns.ui.modeSwitch.add")
+        @JSGlobal("chayns.ui.modeSwitch")
         @js.native
-        def add(): Unit = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("chayns.ui.modeSwitch.addItem")
-        @js.native
-        def addItem(item: ModeSwitchItem): Unit = js.native
-        @JSGlobal("chayns.ui.modeSwitch.addItem")
-        @js.native
-        def addItem(item: ModeSwitchItem, index: Double): Unit = js.native
+        @scala.inline
+        def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
         
-        @JSGlobal("chayns.ui.modeSwitch.changeMode")
-        @js.native
-        def changeMode(item: Double): Unit = js.native
-        @JSGlobal("chayns.ui.modeSwitch.changeMode")
-        @js.native
-        def changeMode(item: ModeSwitchItem): Unit = js.native
+        @scala.inline
+        def addItem(item: ModeSwitchItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addItem")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
+        def addItem(item: ModeSwitchItem, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addItem")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.ui.modeSwitch.init")
-        @js.native
-        def init(config: ModeSwitchConfig): Unit = js.native
+        @scala.inline
+        def changeMode(item: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeMode")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
+        def changeMode(item: ModeSwitchItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeMode")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.ui.modeSwitch.remove")
-        @js.native
-        def remove(): Unit = js.native
+        @scala.inline
+        def init(config: ModeSwitchConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        
+        @scala.inline
+        def remove(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[Unit]
       }
       
       /**
@@ -1095,9 +1015,12 @@ object global {
         */
       object slider {
         
-        @JSGlobal("chayns.ui.slider.refreshTrack")
+        @JSGlobal("chayns.ui.slider")
         @js.native
-        def refreshTrack(): Unit = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def refreshTrack(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshTrack")().asInstanceOf[Unit]
       }
       
       /**
@@ -1105,28 +1028,26 @@ object global {
         */
       object tooltip {
         
-        @JSGlobal("chayns.ui.tooltip.init")
+        @JSGlobal("chayns.ui.tooltip")
         @js.native
-        def init(config: UiTooltipInitConfig, rootElement: js.Any): js.Promise[Boolean] = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def init(config: UiTooltipInitConfig, rootElement: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any], rootElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
       }
     }
     
-    @JSGlobal("chayns.updateNavigation")
-    @js.native
-    def updateNavigation(): js.Promise[_] = js.native
-    @JSGlobal("chayns.updateNavigation")
-    @js.native
-    def updateNavigation(tappId: js.UndefOr[scala.Nothing], config: UpdateNavigationConfig): js.Promise[_] = js.native
-    @JSGlobal("chayns.updateNavigation")
-    @js.native
-    def updateNavigation(tappId: Double): js.Promise[_] = js.native
-    @JSGlobal("chayns.updateNavigation")
-    @js.native
-    def updateNavigation(tappId: Double, config: UpdateNavigationConfig): js.Promise[_] = js.native
+    @scala.inline
+    def updateNavigation(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")().asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def updateNavigation(tappId: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def updateNavigation(tappId: Double, config: UpdateNavigationConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def updateNavigation(tappId: Unit, config: UpdateNavigationConfig): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNavigation")(tappId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("chayns.uploadImage")
-    @js.native
-    def uploadImage(): js.Promise[String] = js.native
+    @scala.inline
+    def uploadImage(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadImage")().asInstanceOf[js.Promise[String]]
     
     /**
       * Utility Functions
@@ -1134,117 +1055,100 @@ object global {
       */
     object utils {
       
+      @JSGlobal("chayns.utils")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Utility Functions
         * Miscellaneous
         * chayns.utils
         */
-      @JSGlobal("chayns.utils.getJwtPayload")
-      @js.native
-      def getJwtPayload(token: String): JwtPaylod = js.native
+      @scala.inline
+      def getJwtPayload(token: String): JwtPaylod = ^.asInstanceOf[js.Dynamic].applyDynamic("getJwtPayload")(token.asInstanceOf[js.Any]).asInstanceOf[JwtPaylod]
       
-      @JSGlobal("chayns.utils.isArray")
-      @js.native
-      def isArray(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isArray(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isBLEAdress")
-      @js.native
-      def isBLEAdress(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isBLEAdress(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBLEAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isBlank")
-      @js.native
-      def isBlank(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isBlank(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlank")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isDate")
-      @js.native
-      def isDate(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isDate(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isDeferred")
-      @js.native
-      def isDeferred(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isDeferred(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isDefined")
-      @js.native
-      def isDefined(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isDefined(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isFormData")
-      @js.native
-      def isFormData(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isFormData(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormData")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isFunction")
-      @js.native
-      def isFunction(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isFunction(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isGUID")
-      @js.native
-      def isGUID(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isGUID(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Utility Functions
         * Check Types
         * chayns.utils
         */
-      @JSGlobal("chayns.utils.isHex")
-      @js.native
-      def isHex(parameter: js.Any, shorthand: Boolean): Boolean = js.native
+      @scala.inline
+      def isHex(parameter: js.Any, shorthand: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(parameter.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isJwt")
-      @js.native
-      def isJwt(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isJwt(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJwt")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isMacAdress")
-      @js.native
-      def isMacAdress(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isMacAdress(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacAdress")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isNumber")
-      @js.native
-      def isNumber(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isNumber(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isObject")
-      @js.native
-      def isObject(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isObject(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isPresent")
-      @js.native
-      def isPresent(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isPresent(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresent")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isPromise")
-      @js.native
-      def isPromise(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isPromise(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isString")
-      @js.native
-      def isString(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isString(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isUUID")
-      @js.native
-      def isUUID(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isUUID(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isUndefined")
-      @js.native
-      def isUndefined(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isUndefined(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSGlobal("chayns.utils.isUrl")
-      @js.native
-      def isUrl(parameter: js.Any): Boolean = js.native
+      @scala.inline
+      def isUrl(parameter: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       object lang {
         
-        @JSGlobal("chayns.utils.lang.get")
+        @JSGlobal("chayns.utils.lang")
         @js.native
-        def get(textString: String): String = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("chayns.utils.lang.init")
-        @js.native
-        def init(config: js.Any): Unit = js.native
+        @scala.inline
+        def get(textString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(textString.asInstanceOf[js.Any]).asInstanceOf[String]
         
-        @JSGlobal("chayns.utils.lang.renderTextStrings")
-        @js.native
-        def renderTextStrings(): Unit = js.native
+        @scala.inline
+        def init(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.utils.lang.translateDomStrings")
-        @js.native
-        def translateDomStrings(): Unit = js.native
+        @scala.inline
+        def renderTextStrings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextStrings")().asInstanceOf[Unit]
+        
+        @scala.inline
+        def translateDomStrings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translateDomStrings")().asInstanceOf[Unit]
       }
       
       /**
@@ -1254,47 +1158,41 @@ object global {
         */
       object ls {
         
-        @JSGlobal("chayns.utils.ls.get")
+        @JSGlobal("chayns.utils.ls")
         @js.native
-        def get(key: String): String = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("chayns.utils.ls.remove")
-        @js.native
-        def remove(key: String): Unit = js.native
+        @scala.inline
+        def get(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[String]
         
-        @JSGlobal("chayns.utils.ls.removeAll")
-        @js.native
-        def removeAll(): Unit = js.native
+        @scala.inline
+        def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("chayns.utils.ls.set")
-        @js.native
-        def set(key: String, value: String): Unit = js.native
+        @scala.inline
+        def removeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Unit]
+        
+        @scala.inline
+        def set(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       // TODO set interface for parameters
-      @JSGlobal("chayns.utils.mixColor")
-      @js.native
-      def mixColor(color1: String, color2: String, saturation: Double): String = js.native
+      @scala.inline
+      def mixColor(color1: String, color2: String, saturation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mixColor")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSGlobal("chayns.utils.mod")
-      @js.native
-      def mod(number: Double, modulo: Double): Double = js.native
+      @scala.inline
+      def mod(number: Double, modulo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(number.asInstanceOf[js.Any], modulo.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSGlobal("chayns.utils.replacePlaceholder")
-      @js.native
-      def replacePlaceholder(text: String, parameters: js.Array[_]): String = js.native
+      @scala.inline
+      def replacePlaceholder(text: String, parameters: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replacePlaceholder")(text.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSGlobal("chayns.utils.setLevel")
-      @js.native
-      def setLevel(level: Double): Unit = js.native
+      @scala.inline
+      def setLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("chayns.utils.trim")
-      @js.native
-      def trim(test: String): String = js.native
+      @scala.inline
+      def trim(test: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(test.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
-    @JSGlobal("chayns.vibrate")
-    @js.native
-    def vibrate(ms: js.Array[Double]): js.Promise[_] = js.native
+    @scala.inline
+    def vibrate(ms: js.Array[Double]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   }
 }

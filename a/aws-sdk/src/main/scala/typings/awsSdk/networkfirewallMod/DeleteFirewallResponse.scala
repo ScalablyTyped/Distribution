@@ -2,15 +2,13 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFirewallResponse extends StObject {
   
-  var Firewall: js.UndefOr[typings.awsSdk.networkfirewallMod.Firewall] = js.native
+  var Firewall: js.UndefOr[typings.awsSdk.networkfirewallMod.Firewall] = js.undefined
   
-  var FirewallStatus: js.UndefOr[typings.awsSdk.networkfirewallMod.FirewallStatus] = js.native
+  var FirewallStatus: js.UndefOr[typings.awsSdk.networkfirewallMod.FirewallStatus] = js.undefined
 }
 object DeleteFirewallResponse {
   

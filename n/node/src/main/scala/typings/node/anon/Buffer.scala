@@ -3,15 +3,13 @@ package typings.node.anon
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffer[TBuffer /* <: Uint8Array */] extends StObject {
   
-  var buffer: TBuffer = js.native
+  var buffer: TBuffer
   
-  var bytesRead: Double = js.native
+  var bytesRead: Double
 }
 object Buffer {
   
@@ -22,7 +20,7 @@ object Buffer {
   }
   
   @scala.inline
-  implicit class BufferMutableBuilder[Self <: Buffer[_], TBuffer /* <: Uint8Array */] (val x: Self with Buffer[TBuffer]) extends AnyVal {
+  implicit class BufferMutableBuilder[Self <: Buffer[?], TBuffer /* <: Uint8Array */] (val x: Self & Buffer[TBuffer]) extends AnyVal {
     
     @scala.inline
     def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])

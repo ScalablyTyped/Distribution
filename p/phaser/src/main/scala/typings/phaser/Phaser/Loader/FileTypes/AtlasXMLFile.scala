@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#atlasXML.
   */
-@js.native
-trait AtlasXMLFile extends MultiFile {
+trait AtlasXMLFile
+  extends StObject
+     with MultiFile {
   
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
 }
 object AtlasXMLFile {
   

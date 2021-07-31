@@ -4,7 +4,6 @@ import typings.std.EventTarget
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,7 +15,7 @@ trait ModernizrAPI extends StObject {
   
   def addTest(feature: String, test: js.Function0[Boolean]): ModernizrStatic = js.native
   def addTest(feature: String, test: Boolean): ModernizrStatic = js.native
-  def addTest(feature: Dictionary[_]): ModernizrStatic = js.native
+  def addTest(feature: Dictionary[js.Any]): ModernizrStatic = js.native
   
   def atRule(prop: String): Boolean = js.native
   
@@ -25,7 +24,7 @@ trait ModernizrAPI extends StObject {
   
   def mq(mq: String): Boolean = js.native
   
-  def on(feature: String, cb: js.Function1[/* result */ Boolean, _]): Unit = js.native
+  def on(feature: String, cb: js.Function1[/* result */ Boolean, js.Any]): Unit = js.native
   
   def prefixed(prop: String): String = js.native
   def prefixed(prop: String, obj: EventTarget): js.Any = js.native
@@ -36,22 +35,16 @@ trait ModernizrAPI extends StObject {
   def prefixedCSSValue(prop: String, value: String): Boolean = js.native
   
   def testAllProps(prop: String): Boolean = js.native
-  def testAllProps(prop: String, value: js.UndefOr[scala.Nothing], skipValueTest: Boolean): Boolean = js.native
   def testAllProps(prop: String, value: String): Boolean = js.native
   def testAllProps(prop: String, value: String, skipValueTest: Boolean): Boolean = js.native
+  def testAllProps(prop: String, value: Unit, skipValueTest: Boolean): Boolean = js.native
   
   def testProp(prop: String): Boolean = js.native
-  def testProp(prop: String, value: js.UndefOr[scala.Nothing], useValue: Boolean): Boolean = js.native
   def testProp(prop: String, value: String): Boolean = js.native
   def testProp(prop: String, value: String, useValue: Boolean): Boolean = js.native
+  def testProp(prop: String, value: Unit, useValue: Boolean): Boolean = js.native
   
   def testStyles(rule: String, callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit]): Boolean = js.native
-  def testStyles(
-    rule: String,
-    callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],
-    nodes: js.UndefOr[scala.Nothing],
-    testnames: js.Array[String]
-  ): Boolean = js.native
   def testStyles(
     rule: String,
     callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],
@@ -61,6 +54,12 @@ trait ModernizrAPI extends StObject {
     rule: String,
     callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],
     nodes: Double,
+    testnames: js.Array[String]
+  ): Boolean = js.native
+  def testStyles(
+    rule: String,
+    callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],
+    nodes: Unit,
     testnames: js.Array[String]
   ): Boolean = js.native
 }

@@ -10,9 +10,9 @@ Resize event emitter for elements.
 | ------------------ | :-------------: |
 | Full name          | element-resize-detector |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 511 |
-| # downloads        | 64238165 |
+| # releases         | 3 |
+| # dependents       | 567 |
+| # downloads        | 87113940 |
 | # stars            | 5 |
 
 ## Links

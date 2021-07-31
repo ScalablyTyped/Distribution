@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookWorksheet extends Entity {
+trait WorkbookWorksheet
+  extends StObject
+     with Entity {
   
   // Returns collection of charts that are part of the worksheet. Read-only.
-  var charts: js.UndefOr[NullableOption[js.Array[WorkbookChart]]] = js.native
+  var charts: js.UndefOr[NullableOption[js.Array[WorkbookChart]]] = js.undefined
   
   // The display name of the worksheet.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Returns collection of names that are associated with the worksheet. Read-only.
-  var names: js.UndefOr[NullableOption[js.Array[WorkbookNamedItem]]] = js.native
+  var names: js.UndefOr[NullableOption[js.Array[WorkbookNamedItem]]] = js.undefined
   
   // Collection of PivotTables that are part of the worksheet.
-  var pivotTables: js.UndefOr[NullableOption[js.Array[WorkbookPivotTable]]] = js.native
+  var pivotTables: js.UndefOr[NullableOption[js.Array[WorkbookPivotTable]]] = js.undefined
   
   // The zero-based position of the worksheet within the workbook.
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   // Returns sheet protection object for a worksheet. Read-only.
-  var protection: js.UndefOr[NullableOption[WorkbookWorksheetProtection]] = js.native
+  var protection: js.UndefOr[NullableOption[WorkbookWorksheetProtection]] = js.undefined
   
   // Collection of tables that are part of the worksheet. Read-only.
-  var tables: js.UndefOr[NullableOption[js.Array[WorkbookTable]]] = js.native
+  var tables: js.UndefOr[NullableOption[js.Array[WorkbookTable]]] = js.undefined
   
   // The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object WorkbookWorksheet {
   

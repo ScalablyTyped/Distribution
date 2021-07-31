@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGcpUserAccessBindingsResponse extends StObject {
   
   /** GcpUserAccessBinding */
-  var gcpUserAccessBindings: js.UndefOr[js.Array[GcpUserAccessBinding]] = js.native
+  var gcpUserAccessBindings: js.UndefOr[js.Array[GcpUserAccessBinding]] = js.undefined
   
   /** Token to get the next page of items. If blank, there are no more items. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListGcpUserAccessBindingsResponse {
   

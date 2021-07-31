@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSamplingRuleRequest extends StObject {
   
   /**
     * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
     */
-  var RuleARN: js.UndefOr[String] = js.native
+  var RuleARN: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the sampling rule. Specify a rule by either name or ARN, but not both.
     */
-  var RuleName: js.UndefOr[String] = js.native
+  var RuleName: js.UndefOr[String] = js.undefined
 }
 object DeleteSamplingRuleRequest {
   

@@ -6,27 +6,26 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
   
-  @JSImport("linkifyjs/element", JSImport.Default)
+  @JSImport("linkifyjs/element", JSImport.Namespace)
   @js.native
-  def default(element: HTMLElement): HTMLElement = js.native
-  @JSImport("linkifyjs/element", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, options: js.UndefOr[scala.Nothing], doc: HTMLDocument): HTMLElement = js.native
-  @JSImport("linkifyjs/element", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, options: Options): HTMLElement = js.native
-  @JSImport("linkifyjs/element", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, options: Options, doc: HTMLDocument): HTMLElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def default(element: HTMLElement, options: Unit, doc: HTMLDocument): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def default(element: HTMLElement, options: Options): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def default(element: HTMLElement, options: Options, doc: HTMLDocument): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
   trait Options
-    extends typings.linkifyjs.mod.Options {
+    extends StObject
+       with typings.linkifyjs.mod.Options {
     
     /**
       * Add event listeners to newly created link elements.
@@ -38,7 +37,7 @@ object elementMod {
       */
     var events: js.UndefOr[
         PartialGlobalEventHandler | (js.Function2[/* href */ String, /* type */ LinkEntityType, PartialGlobalEventHandler])
-      ] = js.native
+      ] = js.undefined
     
     /**
       *  Prevent linkify from trying to parse links in the specified tags.
@@ -47,7 +46,7 @@ object elementMod {
       *
       *  @default []
       */
-    var ignoreTags: js.UndefOr[js.Array[String]] = js.native
+    var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

@@ -2,121 +2,119 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentDescription extends StObject {
   
   /**
     * Details about the document attachments, including names, locations, sizes, and so on.
     */
-  var AttachmentsInformation: js.UndefOr[AttachmentInformationList] = js.native
+  var AttachmentsInformation: js.UndefOr[AttachmentInformationList] = js.undefined
   
   /**
     * The date when the document was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.native
+  var CreatedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The default version.
     */
-  var DefaultVersion: js.UndefOr[DocumentVersion] = js.native
+  var DefaultVersion: js.UndefOr[DocumentVersion] = js.undefined
   
   /**
     * A description of the document. 
     */
-  var Description: js.UndefOr[DescriptionInDocument] = js.native
+  var Description: js.UndefOr[DescriptionInDocument] = js.undefined
   
   /**
     * The document format, either JSON or YAML.
     */
-  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
+  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
   
   /**
     * The type of document.
     */
-  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.native
+  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.undefined
   
   /**
     * The document version.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The Sha256 or Sha1 hash created by the system when the document was created.   Sha1 hashes have been deprecated. 
     */
-  var Hash: js.UndefOr[DocumentHash] = js.native
+  var Hash: js.UndefOr[DocumentHash] = js.undefined
   
   /**
     * The hash type of the document. Valid values include Sha256 or Sha1.  Sha1 hashes have been deprecated. 
     */
-  var HashType: js.UndefOr[DocumentHashType] = js.native
+  var HashType: js.UndefOr[DocumentHashType] = js.undefined
   
   /**
     * The latest version of the document.
     */
-  var LatestVersion: js.UndefOr[DocumentVersion] = js.native
+  var LatestVersion: js.UndefOr[DocumentVersion] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * The AWS user account that created the document.
     */
-  var Owner: js.UndefOr[DocumentOwner] = js.native
+  var Owner: js.UndefOr[DocumentOwner] = js.undefined
   
   /**
     * A description of the parameters for a document.
     */
-  var Parameters: js.UndefOr[DocumentParameterList] = js.native
+  var Parameters: js.UndefOr[DocumentParameterList] = js.undefined
   
   /**
     * The list of OS platforms compatible with this Systems Manager document. 
     */
-  var PlatformTypes: js.UndefOr[PlatformTypeList] = js.native
+  var PlatformTypes: js.UndefOr[PlatformTypeList] = js.undefined
   
   /**
     * A list of SSM documents required by a document. For example, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document.
     */
-  var Requires: js.UndefOr[DocumentRequiresList] = js.native
+  var Requires: js.UndefOr[DocumentRequiresList] = js.undefined
   
   /**
     * The schema version.
     */
-  var SchemaVersion: js.UndefOr[DocumentSchemaVersion] = js.native
+  var SchemaVersion: js.UndefOr[DocumentSchemaVersion] = js.undefined
   
   /**
     * The SHA1 hash of the document, which you can use for verification.
     */
-  var Sha1: js.UndefOr[DocumentSha1] = js.native
+  var Sha1: js.UndefOr[DocumentSha1] = js.undefined
   
   /**
     * The status of the Systems Manager document.
     */
-  var Status: js.UndefOr[DocumentStatus] = js.native
+  var Status: js.UndefOr[DocumentStatus] = js.undefined
   
   /**
     * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
     */
-  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.native
+  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
   
   /**
     * The tags, or metadata, that have been applied to the document.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
     */
-  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.native
+  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.undefined
   
   /**
     * The version of the artifact associated with the document.
     */
-  var VersionName: js.UndefOr[DocumentVersionName] = js.native
+  var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
 object DocumentDescription {
   

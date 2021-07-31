@@ -2,28 +2,26 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RmdirOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[RmdirCompleteCallback] = js.native
+  var complete: js.UndefOr[RmdirCompleteCallback] = js.undefined
   
   /** 要删除的目录路径 (本地路径) */
-  var dirPath: String = js.native
+  var dirPath: String
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[RmdirFailCallback] = js.native
+  var fail: js.UndefOr[RmdirFailCallback] = js.undefined
   
   /** 是否递归删除目录。如果为 true，则删除该目录和该目录下的所有子目录以及文件。
     *
     * 最低基础库： `2.3.0` */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[RmdirSuccessCallback] = js.native
+  var success: js.UndefOr[RmdirSuccessCallback] = js.undefined
 }
 object RmdirOption {
   

@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait Wrapping extends StObject
 object Wrapping extends StObject {
   
   @js.native
-  sealed trait Hard extends Wrapping
+  sealed trait Hard
+    extends StObject
+       with Wrapping
   
   @js.native
-  sealed trait None extends Wrapping
+  sealed trait None
+    extends StObject
+       with Wrapping
   
   @js.native
-  sealed trait Off extends Wrapping
+  sealed trait Off
+    extends StObject
+       with Wrapping
   
   @js.native
-  sealed trait Soft extends Wrapping
+  sealed trait Soft
+    extends StObject
+       with Wrapping
 }

@@ -2,25 +2,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a leave room request.
   */
-@js.native
 trait SchemaRoomLeaveRequest extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomLeaveRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Diagnostics for a player leaving the room.
     */
-  var leaveDiagnostics: js.UndefOr[SchemaRoomLeaveDiagnostics] = js.native
+  var leaveDiagnostics: js.UndefOr[SchemaRoomLeaveDiagnostics] = js.undefined
   
   /**
     * Reason for leaving the match. Possible values are:   -
@@ -44,7 +42,7 @@ trait SchemaRoomLeaveRequest extends StObject {
     * &quot;REALTIME_SAME_CLIENT_ROOM_OPERATION&quot; - The same client is
     * trying to enter a new room.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaRoomLeaveRequest {
   

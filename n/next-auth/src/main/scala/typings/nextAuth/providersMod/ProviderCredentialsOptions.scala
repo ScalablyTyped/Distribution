@@ -3,19 +3,17 @@ package typings.nextAuth.providersMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderCredentialsOptions extends StObject {
   
-  def authorize(credentials: Record[String, String]): js.Promise[GenericReturnConfig | Null] = js.native
+  def authorize(credentials: Record[String, String]): js.Promise[GenericReturnConfig | Null]
   
-  var credentials: CredentialInput = js.native
+  var credentials: CredentialInput
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object ProviderCredentialsOptions {
   

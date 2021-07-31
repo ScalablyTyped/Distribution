@@ -5,23 +5,21 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pagerOutputProcessorMod.PagerOutputProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerDataPartMod {
   
-  @js.native
   trait PagerDataPart[TElement] extends StObject {
     
     /**
       * The number of filtered rows.
       */
-    var filteredRows: js.UndefOr[Double] = js.native
+    var filteredRows: js.UndefOr[Double] = js.undefined
     
     /**
       * The column-names of the table.
       */
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The output to display in the output-area.
@@ -41,17 +39,17 @@ object pagerDataPartMod {
       * | `{filteredRows}`   | The amount of filtered rows.                 |
       * | `{totalRows}`      | The total amount of rows.                    |
       */
-    var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.native
+    var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.undefined
     
     /**
       * The data to show.
       */
-    var rows: js.UndefOr[js.Array[js.Array[_]] | JQuery[HTMLElement]] = js.native
+    var rows: js.UndefOr[js.Array[js.Array[js.Any]] | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The number of total rows.
       */
-    var total: Double = js.native
+    var total: Double
   }
   object PagerDataPart {
     
@@ -62,7 +60,7 @@ object pagerDataPartMod {
     }
     
     @scala.inline
-    implicit class PagerDataPartMutableBuilder[Self <: PagerDataPart[_], TElement] (val x: Self with PagerDataPart[TElement]) extends AnyVal {
+    implicit class PagerDataPartMutableBuilder[Self <: PagerDataPart[?], TElement] (val x: Self & PagerDataPart[TElement]) extends AnyVal {
       
       @scala.inline
       def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
@@ -89,7 +87,7 @@ object pagerDataPartMod {
       def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
       @scala.inline
-      def setRows(value: js.Array[js.Array[_]] | JQuery[HTMLElement]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: js.Array[js.Array[js.Any]] | JQuery[HTMLElement]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

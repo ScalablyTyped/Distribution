@@ -2,13 +2,11 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUpgradeStatusRequest extends StObject {
   
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
 }
 object GetUpgradeStatusRequest {
   

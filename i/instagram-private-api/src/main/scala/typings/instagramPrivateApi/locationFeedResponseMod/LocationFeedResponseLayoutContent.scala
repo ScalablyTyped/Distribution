@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.locationFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFeedResponseLayoutContent extends StObject {
   
-  var medias: js.Array[LocationFeedResponseMediasItem] = js.native
+  var medias: js.Array[LocationFeedResponseMediasItem]
 }
 object LocationFeedResponseLayoutContent {
   

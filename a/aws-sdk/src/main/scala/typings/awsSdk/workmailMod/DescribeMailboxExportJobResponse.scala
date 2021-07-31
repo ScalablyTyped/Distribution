@@ -2,71 +2,69 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMailboxExportJobResponse extends StObject {
   
   /**
     * The mailbox export job description.
     */
-  var Description: js.UndefOr[typings.awsSdk.workmailMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.workmailMod.Description] = js.undefined
   
   /**
     * The mailbox export job end timestamp.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the user or resource associated with the mailbox.
     */
-  var EntityId: js.UndefOr[WorkMailIdentifier] = js.native
+  var EntityId: js.UndefOr[WorkMailIdentifier] = js.undefined
   
   /**
     * Error information for failed mailbox export jobs.
     */
-  var ErrorInfo: js.UndefOr[MailboxExportErrorInfo] = js.native
+  var ErrorInfo: js.UndefOr[MailboxExportErrorInfo] = js.undefined
   
   /**
     * The estimated progress of the mailbox export job, in percentage points.
     */
-  var EstimatedProgress: js.UndefOr[Percentage] = js.native
+  var EstimatedProgress: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the symmetric AWS Key Management Service (AWS KMS) key that encrypts the exported mailbox content.
     */
-  var KmsKeyArn: js.UndefOr[typings.awsSdk.workmailMod.KmsKeyArn] = js.native
+  var KmsKeyArn: js.UndefOr[typings.awsSdk.workmailMod.KmsKeyArn] = js.undefined
   
   /**
     * The ARN of the AWS Identity and Access Management (IAM) role that grants write permission to the Amazon Simple Storage Service (Amazon S3) bucket.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.workmailMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.workmailMod.RoleArn] = js.undefined
   
   /**
     * The name of the S3 bucket.
     */
-  var S3BucketName: js.UndefOr[typings.awsSdk.workmailMod.S3BucketName] = js.native
+  var S3BucketName: js.UndefOr[typings.awsSdk.workmailMod.S3BucketName] = js.undefined
   
   /**
     * The path to the S3 bucket and file that the mailbox export job is exporting to.
     */
-  var S3Path: js.UndefOr[S3ObjectKey] = js.native
+  var S3Path: js.UndefOr[S3ObjectKey] = js.undefined
   
   /**
     * The S3 bucket prefix.
     */
-  var S3Prefix: js.UndefOr[S3ObjectKey] = js.native
+  var S3Prefix: js.UndefOr[S3ObjectKey] = js.undefined
   
   /**
     * The mailbox export job start timestamp.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state of the mailbox export job.
     */
-  var State: js.UndefOr[MailboxExportJobState] = js.native
+  var State: js.UndefOr[MailboxExportJobState] = js.undefined
 }
 object DescribeMailboxExportJobResponse {
   

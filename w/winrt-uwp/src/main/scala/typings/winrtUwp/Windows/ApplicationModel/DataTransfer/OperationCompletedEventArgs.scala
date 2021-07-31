@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains info about the action that a target app completed during a paste operation. */
-@js.native
 trait OperationCompletedEventArgs extends StObject {
   
-  var acceptedFormatId: js.Any = js.native
+  var acceptedFormatId: js.Any
   
   /* unmapped type */
   /** Specifies the operation that the target app completed. */
-  var operation: DataPackageOperation = js.native
+  var operation: DataPackageOperation
 }
 object OperationCompletedEventArgs {
   

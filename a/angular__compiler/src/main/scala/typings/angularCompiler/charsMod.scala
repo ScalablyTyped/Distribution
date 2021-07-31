@@ -2,10 +2,13 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object charsMod {
+  
+  @JSImport("@angular/compiler/src/chars", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/chars", "$_")
   @js.native
@@ -30,6 +33,18 @@ object charsMod {
   @JSImport("@angular/compiler/src/chars", "$Z")
   @js.native
   val $Z: /* 90 */ Double = js.native
+  
+  @JSImport("@angular/compiler/src/chars", "$0")
+  @js.native
+  val `0`: /* 48 */ Double = js.native
+  
+  @JSImport("@angular/compiler/src/chars", "$7")
+  @js.native
+  val `7`: /* 55 */ Double = js.native
+  
+  @JSImport("@angular/compiler/src/chars", "$9")
+  @js.native
+  val `9`: /* 57 */ Double = js.native
   
   @JSImport("@angular/compiler/src/chars", "$AMPERSAND")
   @js.native
@@ -211,29 +226,23 @@ object charsMod {
   @js.native
   val f: /* 102 */ Double = js.native
   
-  @JSImport("@angular/compiler/src/chars", "isAsciiHexDigit")
-  @js.native
-  def isAsciiHexDigit(code: Double): Boolean = js.native
+  @scala.inline
+  def isAsciiHexDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiHexDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/chars", "isAsciiLetter")
-  @js.native
-  def isAsciiLetter(code: Double): Boolean = js.native
+  @scala.inline
+  def isAsciiLetter(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiLetter")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/chars", "isDigit")
-  @js.native
-  def isDigit(code: Double): Boolean = js.native
+  @scala.inline
+  def isDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/chars", "isNewLine")
-  @js.native
-  def isNewLine(code: Double): Boolean = js.native
+  @scala.inline
+  def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/chars", "isOctalDigit")
-  @js.native
-  def isOctalDigit(code: Double): Boolean = js.native
+  @scala.inline
+  def isOctalDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctalDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@angular/compiler/src/chars", "isWhitespace")
-  @js.native
-  def isWhitespace(code: Double): Boolean = js.native
+  @scala.inline
+  def isWhitespace(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhitespace")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@angular/compiler/src/chars", "$n")
   @js.native
@@ -262,16 +271,4 @@ object charsMod {
   @JSImport("@angular/compiler/src/chars", "$z")
   @js.native
   val z: /* 122 */ Double = js.native
-  
-  @JSImport("@angular/compiler/src/chars", "$0")
-  @js.native
-  val `0`: /* 48 */ Double = js.native
-  
-  @JSImport("@angular/compiler/src/chars", "$7")
-  @js.native
-  val `7`: /* 55 */ Double = js.native
-  
-  @JSImport("@angular/compiler/src/chars", "$9")
-  @js.native
-  val `9`: /* 57 */ Double = js.native
 }

@@ -2,7 +2,6 @@ package typings.glob
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.glob.anon.IsDirectory
 import typings.glob.globBooleans.`false`
@@ -13,21 +12,18 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glob", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = js.native
-  @JSImport("glob", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
+  @scala.inline
   def apply(
     pattern: String,
     options: IOptions,
     cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
-  ): IGlob = js.native
+  ): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
   
   @JSImport("glob", JSImport.Namespace)
   @js.native
@@ -36,9 +32,35 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob", "GlobSync")
   @js.native
-  class GlobSync protected () extends IGlobBase {
+  class GlobSync protected ()
+    extends StObject
+       with IGlobBase {
     def this(pattern: String) = this()
     def this(pattern: String, options: IOptions) = this()
+    
+    /* CompleteClass */
+    var aborted: Boolean = js.native
+    
+    /* CompleteClass */
+    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
+    
+    /* CompleteClass */
+    var found: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var minimatch: IMinimatch = js.native
+    
+    /* CompleteClass */
+    var options: IOptions = js.native
+    
+    /* CompleteClass */
+    var realpathCache: StringDictionary[String] = js.native
+    
+    /* CompleteClass */
+    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
+    
+    /* CompleteClass */
+    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
   }
   @JSImport("glob", "GlobSync")
   @js.native
@@ -58,6 +80,30 @@ object mod {
       options: IOptions,
       cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
     ) = this()
+    
+    /* CompleteClass */
+    var aborted: Boolean = js.native
+    
+    /* CompleteClass */
+    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
+    
+    /* CompleteClass */
+    var found: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var minimatch: IMinimatch = js.native
+    
+    /* CompleteClass */
+    var options: IOptions = js.native
+    
+    /* CompleteClass */
+    var realpathCache: StringDictionary[String] = js.native
+    
+    /* CompleteClass */
+    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
+    
+    /* CompleteClass */
+    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
   }
   
   @JSImport("glob", "Glob")
@@ -73,19 +119,15 @@ object mod {
   @scala.inline
   def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
   
-  @JSImport("glob", "hasMagic")
-  @js.native
-  def hasMagic(pattern: String): Boolean = js.native
-  @JSImport("glob", "hasMagic")
-  @js.native
-  def hasMagic(pattern: String, options: IOptions): Boolean = js.native
+  @scala.inline
+  def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("glob", "sync")
-  @js.native
-  def sync(pattern: String): js.Array[String] = js.native
-  @JSImport("glob", "sync")
-  @js.native
-  def sync(pattern: String, options: IOptions): js.Array[String] = js.native
+  @scala.inline
+  def sync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @js.native
   trait IGlob
@@ -99,24 +141,23 @@ object mod {
     def resume(): Unit = js.native
   }
   
-  @js.native
   trait IGlobBase extends StObject {
     
-    var aborted: Boolean = js.native
+    var aborted: Boolean
     
-    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
+    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]]
     
-    var found: js.Array[String] = js.native
+    var found: js.Array[String]
     
-    var minimatch: IMinimatch = js.native
+    var minimatch: IMinimatch
     
-    var options: IOptions = js.native
+    var options: IOptions
     
-    var realpathCache: StringDictionary[String] = js.native
+    var realpathCache: StringDictionary[String]
     
-    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
+    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]]
     
-    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
+    var symlinks: StringDictionary[js.UndefOr[Boolean]]
   }
   object IGlobBase {
     
@@ -167,68 +208,68 @@ object mod {
     }
   }
   
-  @js.native
-  trait IGlobStatic
-    extends EventEmitter
-       with Instantiable1[/* pattern */ String, IGlob]
-       with Instantiable2[
-          /* pattern */ String, 
-          (/* cb */ js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]) | (/* options */ IOptions), 
-          IGlob
-        ]
-       with Instantiable3[
-          /* pattern */ String, 
-          /* options */ IOptions, 
-          /* cb */ js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit], 
-          IGlob
-        ]
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable3 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
+  trait IGlobStatic extends EventEmitter
   
   @js.native
   trait IGlobSyncStatic
-    extends Instantiable1[/* pattern */ String, IGlobBase]
+    extends StObject
+       with Instantiable1[/* pattern */ String, IGlobBase]
        with Instantiable2[/* pattern */ String, /* options */ IOptions, IGlobBase]
   
-  @js.native
   trait IOptions
-    extends typings.minimatch.mod.IOptions {
+    extends StObject
+       with typings.minimatch.mod.IOptions {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var cache: js.UndefOr[StringDictionary[Boolean | DIR | FILE | js.Array[String]]] = js.native
+    var cache: js.UndefOr[StringDictionary[Boolean | DIR | FILE | js.Array[String]]] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var nodir: js.UndefOr[Boolean] = js.native
+    var nodir: js.UndefOr[Boolean] = js.undefined
     
-    var nomount: js.UndefOr[Boolean] = js.native
+    var nomount: js.UndefOr[Boolean] = js.undefined
     
-    var nosort: js.UndefOr[Boolean] = js.native
+    var nosort: js.UndefOr[Boolean] = js.undefined
     
-    var nounique: js.UndefOr[Boolean] = js.native
+    var nounique: js.UndefOr[Boolean] = js.undefined
     
-    var realpath: js.UndefOr[Boolean] = js.native
+    var realpath: js.UndefOr[Boolean] = js.undefined
     
-    var realpathCache: js.UndefOr[StringDictionary[String]] = js.native
+    var realpathCache: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var stat: js.UndefOr[Boolean] = js.native
+    var stat: js.UndefOr[Boolean] = js.undefined
     
-    var statCache: js.UndefOr[StringDictionary[js.UndefOr[`false` | IsDirectory]]] = js.native
+    var statCache: js.UndefOr[StringDictionary[js.UndefOr[`false` | IsDirectory]]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var symlinks: js.UndefOr[StringDictionary[js.UndefOr[Boolean]]] = js.native
+    var symlinks: js.UndefOr[StringDictionary[js.UndefOr[Boolean]]] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     

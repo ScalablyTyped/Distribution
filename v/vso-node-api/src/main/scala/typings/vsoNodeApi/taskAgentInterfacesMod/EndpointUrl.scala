@@ -2,21 +2,19 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointUrl extends StObject {
   
-  var dependsOn: DependsOn = js.native
+  var dependsOn: DependsOn
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var helpText: String = js.native
+  var helpText: String
   
-  var isVisible: String = js.native
+  var isVisible: String
   
-  var value: String = js.native
+  var value: String
 }
 object EndpointUrl {
   

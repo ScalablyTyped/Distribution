@@ -11,8 +11,8 @@ Serve static files
 | Full name          | serve-static |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1890 |
-| # downloads        | 620072864 |
+| # dependents       | 1967 |
+| # downloads        | 715770521 |
 | # stars            | 99 |
 
 ## Links

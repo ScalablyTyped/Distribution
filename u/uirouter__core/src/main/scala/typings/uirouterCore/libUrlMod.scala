@@ -9,7 +9,6 @@ import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import typings.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libUrlMod {
@@ -74,14 +73,12 @@ object libUrlMod {
       *
       * The comparison function sorts static segments before dynamic ones.
       */
-    @JSImport("@uirouter/core/lib/url", "UrlMatcher.compare")
-    @js.native
-    def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = js.native
+    @scala.inline
+    def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /** @internal */
-    @JSImport("@uirouter/core/lib/url", "UrlMatcher.encodeDashes")
-    @js.native
-    def encodeDashes(str: String): String = js.native
+    @scala.inline
+    def encodeDashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** @internal */
     @JSImport("@uirouter/core/lib/url", "UrlMatcher.nameValidator")
@@ -91,14 +88,12 @@ object libUrlMod {
     def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
     
     /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-    @JSImport("@uirouter/core/lib/url", "UrlMatcher.pathSegmentsAndParams")
-    @js.native
-    def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
+    @scala.inline
+    def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** @internal Given a matcher, return an array with the matcher's query params */
-    @JSImport("@uirouter/core/lib/url", "UrlMatcher.queryParams")
-    @js.native
-    def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[Param] = js.native
+    @scala.inline
+    def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlMatcherFactory")
@@ -125,9 +120,12 @@ object libUrlMod {
   /* static members */
   object UrlRuleFactory {
     
-    @JSImport("@uirouter/core/lib/url", "UrlRuleFactory.isUrlRule")
+    @JSImport("@uirouter/core/lib/url", "UrlRuleFactory")
     @js.native
-    def isUrlRule(obj: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isUrlRule(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlRules")

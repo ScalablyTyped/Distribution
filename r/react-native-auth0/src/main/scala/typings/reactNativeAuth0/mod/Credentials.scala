@@ -2,23 +2,21 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
-  var idToken: String = js.native
+  var idToken: String
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var scope: String = js.native
+  var scope: String
   
-  var tokenType: String = js.native
+  var tokenType: String
 }
 object Credentials {
   

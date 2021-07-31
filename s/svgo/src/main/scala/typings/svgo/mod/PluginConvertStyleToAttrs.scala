@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginConvertStyleToAttrs extends PluginConfig {
+trait PluginConvertStyleToAttrs
+  extends StObject
+     with PluginConfig {
   
-  var convertStyleToAttrs: Boolean | js.Object = js.native
+  var convertStyleToAttrs: Boolean | js.Object
 }
 object PluginConvertStyleToAttrs {
   

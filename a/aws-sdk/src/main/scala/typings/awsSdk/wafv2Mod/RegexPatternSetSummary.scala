@@ -2,36 +2,34 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexPatternSetSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the entity.
     */
-  var ARN: js.UndefOr[ResourceArn] = js.native
+  var ARN: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * A unique identifier for the set. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
     */
-  var Id: js.UndefOr[EntityId] = js.native
+  var Id: js.UndefOr[EntityId] = js.undefined
   
   /**
     * A token used for optimistic locking. AWS WAF returns a token to your get and list requests, to mark the state of the entity at the time of the request. To make changes to the entity associated with the token, you provide the token to operations like update and delete. AWS WAF uses the token to ensure that no changes have been made to the entity since you last retrieved it. If a change has been made, the update fails with a WAFOptimisticLockException. If this happens, perform another get, and use the new token returned by that operation. 
     */
-  var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.native
+  var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.undefined
   
   /**
     * The name of the data type instance. You cannot change the name after you create the instance.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
 }
 object RegexPatternSetSummary {
   

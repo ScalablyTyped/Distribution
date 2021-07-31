@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait LinkedDataTypeLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -29,7 +27,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dataProvider: js.UndefOr[Boolean] = js.native
+  var dataProvider: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var fontIconCodePoint: js.UndefOr[Boolean] = js.native
+  var fontIconCodePoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var lastRefreshed: js.UndefOr[Boolean] = js.native
+  var lastRefreshed: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var periodicRefreshInterval: js.UndefOr[Boolean] = js.native
+  var periodicRefreshInterval: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshDataLoadWarnings: js.UndefOr[Boolean] = js.native
+  var refreshDataLoadWarnings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshMode: js.UndefOr[Boolean] = js.native
+  var refreshMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var serviceId: js.UndefOr[Boolean] = js.native
+  var serviceId: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -104,7 +102,7 @@ trait LinkedDataTypeLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var supportedRefreshModes: js.UndefOr[Boolean] = js.native
+  var supportedRefreshModes: js.UndefOr[Boolean] = js.undefined
 }
 object LinkedDataTypeLoadOptions {
   

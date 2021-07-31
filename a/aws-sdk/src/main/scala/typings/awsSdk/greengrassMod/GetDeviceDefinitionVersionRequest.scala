@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeviceDefinitionVersionRequest extends StObject {
   
   /**
     * The ID of the device definition.
     */
-  var DeviceDefinitionId: string = js.native
+  var DeviceDefinitionId: string
   
   /**
     * The ID of the device definition version. This value maps to the ''Version'' property of the corresponding ''VersionInformation'' object, which is returned by ''ListDeviceDefinitionVersions'' requests. If the version is the last one that was associated with a device definition, the value also maps to the ''LatestVersion'' property of the corresponding ''DefinitionInformation'' object.
     */
-  var DeviceDefinitionVersionId: string = js.native
+  var DeviceDefinitionVersionId: string
   
   /**
     * The token for the next set of results, or ''null'' if there are no additional results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object GetDeviceDefinitionVersionRequest {
   

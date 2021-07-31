@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactContributionDefinition extends StObject {
   
-  var artifactType: String = js.native
+  var artifactType: String
   
-  var artifactTypeStreamMapping: StringDictionary[String] = js.native
+  var artifactTypeStreamMapping: StringDictionary[String]
   
-  var browsableArtifactTypeMapping: StringDictionary[String] = js.native
+  var browsableArtifactTypeMapping: StringDictionary[String]
   
-  var dataSourceBindings: js.Array[DataSourceBinding] = js.native
+  var dataSourceBindings: js.Array[DataSourceBinding]
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var downloadTaskId: String = js.native
+  var downloadTaskId: String
   
-  var endpointTypeId: String = js.native
+  var endpointTypeId: String
   
-  var inputDescriptors: js.Array[InputDescriptor] = js.native
+  var inputDescriptors: js.Array[InputDescriptor]
   
-  var name: String = js.native
+  var name: String
   
-  var uniqueSourceIdentifier: String = js.native
+  var uniqueSourceIdentifier: String
 }
 object ArtifactContributionDefinition {
   

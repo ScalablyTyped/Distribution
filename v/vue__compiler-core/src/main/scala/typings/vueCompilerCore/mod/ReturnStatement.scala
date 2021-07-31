@@ -3,29 +3,24 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`26`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnStatement
-  extends SSRCodegenNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with SSRCodegenNode {
   
-  var returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode = js.native
+  var returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode
   
   @JSName("type")
-  var type_ReturnStatement: `26` = js.native
+  var type_ReturnStatement: `26`
 }
 object ReturnStatement {
   
   @scala.inline
-  def apply(
-    loc: SourceLocation,
-    returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode,
-    `type`: `26`
-  ): ReturnStatement = {
+  def apply(loc: SourceLocation, returns: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): ReturnStatement = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], returns = returns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(26)
     __obj.asInstanceOf[ReturnStatement]
   }
   

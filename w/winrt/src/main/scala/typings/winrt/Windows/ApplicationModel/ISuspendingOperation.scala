@@ -3,15 +3,13 @@ package typings.winrt.Windows.ApplicationModel
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISuspendingOperation extends StObject {
   
-  var deadline: Date = js.native
+  var deadline: Date
   
-  def getDeferral(): SuspendingDeferral = js.native
+  def getDeferral(): SuspendingDeferral
 }
 object ISuspendingOperation {
   

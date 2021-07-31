@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSipMediaApplicationRequest extends StObject {
   
   /**
     * The new set of endpoints for the specified SIP media application.
     */
-  var Endpoints: js.UndefOr[SipMediaApplicationEndpointList] = js.native
+  var Endpoints: js.UndefOr[SipMediaApplicationEndpointList] = js.undefined
   
   /**
     * The new name for the specified SIP media application.
     */
-  var Name: js.UndefOr[SipMediaApplicationName] = js.native
+  var Name: js.UndefOr[SipMediaApplicationName] = js.undefined
   
   /**
     * The SIP media application ID.
     */
-  var SipMediaApplicationId: NonEmptyString = js.native
+  var SipMediaApplicationId: NonEmptyString
 }
 object UpdateSipMediaApplicationRequest {
   

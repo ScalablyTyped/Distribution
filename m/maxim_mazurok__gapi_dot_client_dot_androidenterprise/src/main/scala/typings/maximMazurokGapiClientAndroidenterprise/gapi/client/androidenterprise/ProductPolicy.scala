@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductPolicy extends StObject {
   
   /** The auto-install policy for the product. */
-  var autoInstallPolicy: js.UndefOr[AutoInstallPolicy] = js.native
+  var autoInstallPolicy: js.UndefOr[AutoInstallPolicy] = js.undefined
   
   /** The auto-update mode for the product. */
-  var autoUpdateMode: js.UndefOr[String] = js.native
+  var autoUpdateMode: js.UndefOr[String] = js.undefined
   
   /** The managed configuration for the product. */
-  var managedConfiguration: js.UndefOr[ManagedConfiguration] = js.native
+  var managedConfiguration: js.UndefOr[ManagedConfiguration] = js.undefined
   
   /** The ID of the product. For example, "app:com.google.android.gm". */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** Grants the device visibility to the specified product release track(s), identified by trackIds. The list of release tracks of a product can be obtained by calling Products.Get. */
-  var trackIds: js.UndefOr[js.Array[String]] = js.native
+  var trackIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Deprecated. Use trackIds instead. */
-  var tracks: js.UndefOr[js.Array[String]] = js.native
+  var tracks: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ProductPolicy {
   

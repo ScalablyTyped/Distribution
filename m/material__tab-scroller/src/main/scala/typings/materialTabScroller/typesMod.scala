@@ -2,17 +2,15 @@ package typings.materialTabScroller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCTabScrollerAnimation extends StObject {
     
-    var finalScrollPosition: Double = js.native
+    var finalScrollPosition: Double
     
-    var scrollDelta: Double = js.native
+    var scrollDelta: Double
   }
   object MDCTabScrollerAnimation {
     
@@ -33,12 +31,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCTabScrollerHorizontalEdges extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
   }
   object MDCTabScrollerHorizontalEdges {
     

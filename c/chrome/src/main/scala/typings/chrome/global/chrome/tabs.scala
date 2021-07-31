@@ -28,7 +28,6 @@ import typings.chrome.chrome.windows.Window
 import typings.chrome.chromeNumbers.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -51,175 +50,127 @@ object tabs {
   @scala.inline
   def TAB_ID_NONE_=(x: `-1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_ID_NONE")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.tabs.captureVisibleTab")
-  @js.native
-  def captureVisibleTab(callback: js.Function1[/* dataUrl */ String, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.captureVisibleTab")
-  @js.native
-  def captureVisibleTab(options: CaptureVisibleTabOptions, callback: js.Function1[/* dataUrl */ String, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.captureVisibleTab")
-  @js.native
-  def captureVisibleTab(windowId: Double, callback: js.Function1[/* dataUrl */ String, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.captureVisibleTab")
-  @js.native
+  @scala.inline
+  def captureVisibleTab(callback: js.Function1[/* dataUrl */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def captureVisibleTab(options: CaptureVisibleTabOptions, callback: js.Function1[/* dataUrl */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def captureVisibleTab(windowId: Double, callback: js.Function1[/* dataUrl */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def captureVisibleTab(
     windowId: Double,
     options: CaptureVisibleTabOptions,
     callback: js.Function1[/* dataUrl */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.connect")
-  @js.native
-  def connect(tabId: Double): Port = js.native
-  @JSGlobal("chrome.tabs.connect")
-  @js.native
-  def connect(tabId: Double, connectInfo: ConnectInfo): Port = js.native
+  @scala.inline
+  def connect(tabId: Double): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any]).asInstanceOf[Port]
+  @scala.inline
+  def connect(tabId: Double, connectInfo: ConnectInfo): Port = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any], connectInfo.asInstanceOf[js.Any])).asInstanceOf[Port]
   
-  @JSGlobal("chrome.tabs.create")
-  @js.native
-  def create(createProperties: CreateProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.create")
-  @js.native
-  def create(createProperties: CreateProperties, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  @scala.inline
+  def create(createProperties: CreateProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(createProperties: CreateProperties, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.detectLanguage")
-  @js.native
-  def detectLanguage(callback: js.Function1[/* language */ String, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.detectLanguage")
-  @js.native
-  def detectLanguage(tabId: Double, callback: js.Function1[/* language */ String, Unit]): Unit = js.native
+  @scala.inline
+  def detectLanguage(callback: js.Function1[/* language */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def detectLanguage(tabId: Double, callback: js.Function1[/* language */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.discard")
-  @js.native
-  def discard(): Unit = js.native
-  @JSGlobal("chrome.tabs.discard")
-  @js.native
-  def discard(tabId: js.UndefOr[scala.Nothing], callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.discard")
-  @js.native
-  def discard(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.discard")
-  @js.native
-  def discard(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  @scala.inline
+  def discard(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")().asInstanceOf[Unit]
+  @scala.inline
+  def discard(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def discard(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def discard(tabId: Unit, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.duplicate")
-  @js.native
-  def duplicate(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.duplicate")
-  @js.native
-  def duplicate(tabId: Double, callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = js.native
+  @scala.inline
+  def duplicate(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def duplicate(tabId: Double, callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.executeScript")
-  @js.native
-  def executeScript(details: InjectDetails): Unit = js.native
-  @JSGlobal("chrome.tabs.executeScript")
-  @js.native
-  def executeScript(details: InjectDetails, callback: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.executeScript")
-  @js.native
-  def executeScript(tabId: Double, details: InjectDetails): Unit = js.native
-  @JSGlobal("chrome.tabs.executeScript")
-  @js.native
-  def executeScript(tabId: Double, details: InjectDetails, callback: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
+  @scala.inline
+  def executeScript(details: InjectDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def executeScript(details: InjectDetails, callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def executeScript(tabId: Double, details: InjectDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def executeScript(tabId: Double, details: InjectDetails, callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.get")
-  @js.native
-  def get(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  @scala.inline
+  def get(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.getAllInWindow")
-  @js.native
-  def getAllInWindow(callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.getAllInWindow")
-  @js.native
-  def getAllInWindow(windowId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  @scala.inline
+  def getAllInWindow(callback: js.Function1[/* tab */ Tab, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getAllInWindow(windowId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.getCurrent")
-  @js.native
-  def getCurrent(callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = js.native
+  @scala.inline
+  def getCurrent(callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.getSelected")
-  @js.native
-  def getSelected(callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.getSelected")
-  @js.native
-  def getSelected(windowId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  @scala.inline
+  def getSelected(callback: js.Function1[/* tab */ Tab, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getSelected(windowId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.getZoom")
-  @js.native
-  def getZoom(callback: js.Function1[/* zoomFactor */ Double, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.getZoom")
-  @js.native
-  def getZoom(tabId: Double, callback: js.Function1[/* zoomFactor */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def getZoom(callback: js.Function1[/* zoomFactor */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getZoom(tabId: Double, callback: js.Function1[/* zoomFactor */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.getZoomSettings")
-  @js.native
-  def getZoomSettings(callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.getZoomSettings")
-  @js.native
-  def getZoomSettings(tabId: Double, callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = js.native
+  @scala.inline
+  def getZoomSettings(callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getZoomSettings(tabId: Double, callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.goBack")
-  @js.native
-  def goBack(): Unit = js.native
-  @JSGlobal("chrome.tabs.goBack")
-  @js.native
-  def goBack(callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.goBack")
-  @js.native
-  def goBack(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.goBack")
-  @js.native
-  def goBack(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def goBack(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Unit]
+  @scala.inline
+  def goBack(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def goBack(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def goBack(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.goForward")
-  @js.native
-  def goForward(): Unit = js.native
-  @JSGlobal("chrome.tabs.goForward")
-  @js.native
-  def goForward(callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.goForward")
-  @js.native
-  def goForward(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.goForward")
-  @js.native
-  def goForward(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def goForward(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[Unit]
+  @scala.inline
+  def goForward(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def goForward(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def goForward(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.highlight")
-  @js.native
-  def highlight(highlightInfo: HighlightInfo): Unit = js.native
-  @JSGlobal("chrome.tabs.highlight")
-  @js.native
-  def highlight(highlightInfo: HighlightInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
+  @scala.inline
+  def highlight(highlightInfo: HighlightInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(highlightInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def highlight(highlightInfo: HighlightInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(highlightInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.insertCSS")
-  @js.native
-  def insertCSS(details: InjectDetails): Unit = js.native
-  @JSGlobal("chrome.tabs.insertCSS")
-  @js.native
-  def insertCSS(details: InjectDetails, callback: js.Function): Unit = js.native
-  @JSGlobal("chrome.tabs.insertCSS")
-  @js.native
-  def insertCSS(tabId: Double, details: InjectDetails): Unit = js.native
-  @JSGlobal("chrome.tabs.insertCSS")
-  @js.native
-  def insertCSS(tabId: Double, details: InjectDetails, callback: js.Function): Unit = js.native
+  @scala.inline
+  def insertCSS(details: InjectDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def insertCSS(details: InjectDetails, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertCSS(tabId: Double, details: InjectDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertCSS(tabId: Double, details: InjectDetails, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.move")
-  @js.native
-  def move(tabId: Double, moveProperties: MoveProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.move")
-  @js.native
-  def move(tabId: Double, moveProperties: MoveProperties, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.move")
-  @js.native
-  def move(tabIds: js.Array[Double], moveProperties: MoveProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.move")
-  @js.native
+  @scala.inline
+  def move(tabId: Double, moveProperties: MoveProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def move(tabId: Double, moveProperties: MoveProperties, callback: js.Function1[/* tab */ Tab, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def move(tabIds: js.Array[Double], moveProperties: MoveProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def move(
     tabIds: js.Array[Double],
     moveProperties: MoveProperties,
     callback: js.Function1[/* tabs */ js.Array[Tab], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.tabs.onActivated")
   @js.native
@@ -299,113 +250,82 @@ object tabs {
   @scala.inline
   def onZoomChange_=(x: TabZoomChangeEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onZoomChange")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.tabs.query")
-  @js.native
-  def query(queryInfo: QueryInfo, callback: js.Function1[/* result */ js.Array[Tab], Unit]): Unit = js.native
+  @scala.inline
+  def query(queryInfo: QueryInfo, callback: js.Function1[/* result */ js.Array[Tab], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(queryInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(reloadProperties: ReloadProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(tabId: Double, reloadProperties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(tabId: Double, reloadProperties: ReloadProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.reload")
-  @js.native
-  def reload(tabId: Double, reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+  @scala.inline
+  def reload(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def reload(reloadProperties: ReloadProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def reload(reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reload(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def reload(tabId: Double, reloadProperties: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any], reloadProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reload(tabId: Double, reloadProperties: ReloadProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any], reloadProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reload(tabId: Double, reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any], reloadProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.remove")
-  @js.native
-  def remove(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.remove")
-  @js.native
-  def remove(tabId: Double, callback: js.Function): Unit = js.native
-  @JSGlobal("chrome.tabs.remove")
-  @js.native
-  def remove(tabIds: js.Array[Double]): Unit = js.native
-  @JSGlobal("chrome.tabs.remove")
-  @js.native
-  def remove(tabIds: js.Array[Double], callback: js.Function): Unit = js.native
+  @scala.inline
+  def remove(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(tabId: Double, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def remove(tabIds: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(tabIds: js.Array[Double], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.sendMessage")
-  @js.native
-  def sendMessage(tabId: Double, message: js.Any): Unit = js.native
-  @JSGlobal("chrome.tabs.sendMessage")
-  @js.native
-  def sendMessage(tabId: Double, message: js.Any, options: MessageSendOptions): Unit = js.native
-  @JSGlobal("chrome.tabs.sendMessage")
-  @js.native
+  @scala.inline
+  def sendMessage(tabId: Double, message: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(tabId: Double, message: js.Any, options: MessageSendOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendMessage(
     tabId: Double,
     message: js.Any,
     options: MessageSendOptions,
     responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.tabs.sendMessage")
-  @js.native
-  def sendMessage(tabId: Double, message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(tabId: Double, message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.sendRequest")
-  @js.native
-  def sendRequest(tabId: Double, request: js.Any): Unit = js.native
-  @JSGlobal("chrome.tabs.sendRequest")
-  @js.native
-  def sendRequest(tabId: Double, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def sendRequest(tabId: Double, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendRequest(tabId: Double, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.setZoom")
-  @js.native
-  def setZoom(tabId: Double, zoomFactor: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoom")
-  @js.native
-  def setZoom(tabId: Double, zoomFactor: Double, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoom")
-  @js.native
-  def setZoom(zoomFactor: Double): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoom")
-  @js.native
-  def setZoom(zoomFactor: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setZoom(tabId: Double, zoomFactor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(tabId.asInstanceOf[js.Any], zoomFactor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setZoom(tabId: Double, zoomFactor: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(tabId.asInstanceOf[js.Any], zoomFactor.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setZoom(zoomFactor: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(zoomFactor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setZoom(zoomFactor: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(zoomFactor.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.setZoomSettings")
-  @js.native
-  def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoomSettings")
-  @js.native
-  def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings, callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoomSettings")
-  @js.native
-  def setZoomSettings(zoomSettings: ZoomSettings): Unit = js.native
-  @JSGlobal("chrome.tabs.setZoomSettings")
-  @js.native
-  def setZoomSettings(zoomSettings: ZoomSettings, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(tabId.asInstanceOf[js.Any], zoomSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(tabId.asInstanceOf[js.Any], zoomSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setZoomSettings(zoomSettings: ZoomSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(zoomSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setZoomSettings(zoomSettings: ZoomSettings, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(zoomSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.tabs.update")
-  @js.native
-  def update(tabId: Double, updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.update")
-  @js.native
+  @scala.inline
+  def update(tabId: Double, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(tabId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def update(
     tabId: Double,
     updateProperties: UpdateProperties,
     callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.tabs.update")
-  @js.native
-  def update(updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.tabs.update")
-  @js.native
-  def update(updateProperties: UpdateProperties, callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(tabId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(updateProperties: UpdateProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(updateProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def update(updateProperties: UpdateProperties, callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

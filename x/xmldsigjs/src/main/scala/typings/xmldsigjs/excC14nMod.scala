@@ -4,7 +4,6 @@ import typings.xmldsigjs.canonicalizerMod.XmlCanonicalizer
 import typings.xmldsigjs.transformMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object excC14nMod {

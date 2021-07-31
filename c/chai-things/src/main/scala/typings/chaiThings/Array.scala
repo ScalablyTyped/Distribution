@@ -3,13 +3,11 @@ package typings.chaiThings
 import typings.chaiThings.Chai.ArrayAssertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array[T] extends StObject {
   
-  var should: ArrayAssertion = js.native
+  var should: ArrayAssertion
 }
 object Array {
   
@@ -20,7 +18,7 @@ object Array {
   }
   
   @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array[_], T] (val x: Self with Array[T]) extends AnyVal {
+  implicit class ArrayMutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
     
     @scala.inline
     def setShould(value: ArrayAssertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])

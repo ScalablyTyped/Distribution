@@ -4,25 +4,23 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.image
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 需要预览的资源列表 */
-@js.native
 trait MediaSource extends StObject {
   
   /** 视频的封面图片 */
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
   /** 资源的类型，默认为图片
     *
     * 可选值：
     * - 'image': 图片;
     * - 'video': 视频; */
-  var `type`: js.UndefOr[image | video] = js.native
+  var `type`: js.UndefOr[image | video] = js.undefined
   
   /** 图片或视频的地址 */
-  var url: String = js.native
+  var url: String
 }
 object MediaSource {
   

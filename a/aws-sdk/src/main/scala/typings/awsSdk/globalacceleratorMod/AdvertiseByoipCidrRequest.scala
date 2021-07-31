@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiseByoipCidrRequest extends StObject {
   
   /**
     * The address range, in CIDR notation. This must be the exact range that you provisioned. You can't advertise only a portion of the provisioned range.
     */
-  var Cidr: GenericString = js.native
+  var Cidr: GenericString
 }
 object AdvertiseByoipCidrRequest {
   

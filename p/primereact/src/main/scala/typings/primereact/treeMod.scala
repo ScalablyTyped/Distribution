@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -24,72 +23,71 @@ object treeMod {
     def this(props: TreeProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TreeProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.native
+    var contentStyle: js.UndefOr[js.Object] = js.undefined
     
-    var contextMenuSelectionKey: js.UndefOr[js.Any] = js.native
+    var contextMenuSelectionKey: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dragdropScope: js.UndefOr[String] = js.native
+    var dragdropScope: js.UndefOr[String] = js.undefined
     
-    var expandedKeys: js.UndefOr[js.Any] = js.native
+    var expandedKeys: js.UndefOr[js.Any] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var filterBy: js.UndefOr[js.Any] = js.native
+    var filterBy: js.UndefOr[js.Any] = js.undefined
     
-    var filterLocale: js.UndefOr[String] = js.native
+    var filterLocale: js.UndefOr[String] = js.undefined
     
-    var filterMode: js.UndefOr[String] = js.native
+    var filterMode: js.UndefOr[String] = js.undefined
     
-    var filterPlaceholder: js.UndefOr[String] = js.native
+    var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingIcon: js.UndefOr[String] = js.native
+    var loadingIcon: js.UndefOr[String] = js.undefined
     
-    var metaKeySelection: js.UndefOr[Boolean] = js.native
+    var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
-    var nodeTemplate: js.UndefOr[js.Function1[/* node */ js.Any, Element]] = js.native
+    var nodeTemplate: js.UndefOr[js.Function1[/* node */ js.Any, Element]] = js.undefined
     
-    var onCollapse: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onCollapse: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onDragDrop: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onDragDrop: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onExpand: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onExpand: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onUnselect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.native
+    var onUnselect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
     
-    var propagateSelectionDown: js.UndefOr[Boolean] = js.native
+    var propagateSelectionDown: js.UndefOr[Boolean] = js.undefined
     
-    var propagateSelectionUp: js.UndefOr[Boolean] = js.native
+    var propagateSelectionUp: js.UndefOr[Boolean] = js.undefined
     
-    var selectionKeys: js.UndefOr[js.Any] = js.native
+    var selectionKeys: js.UndefOr[js.Any] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.native
+    var selectionMode: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Array[TreeNode]] = js.native
+    var value: js.UndefOr[js.Array[TreeNode]] = js.undefined
   }
   object TreeProps {
     

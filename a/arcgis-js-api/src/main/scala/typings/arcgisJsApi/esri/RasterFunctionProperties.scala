@@ -16,10 +16,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterFunctionProperties extends StObject {
   
   /**
@@ -27,14 +25,14 @@ trait RasterFunctionProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
     */
-  var functionArguments: js.UndefOr[js.Any] = js.native
+  var functionArguments: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The raster function name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
     */
-  var functionName: js.UndefOr[String] = js.native
+  var functionName: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the pixel type of the output image.
@@ -43,14 +41,14 @@ trait RasterFunctionProperties extends StObject {
     */
   var outputPixelType: js.UndefOr[
     c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The variable name for the raster function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
     */
-  var variableName: js.UndefOr[String] = js.native
+  var variableName: js.UndefOr[String] = js.undefined
 }
 object RasterFunctionProperties {
   

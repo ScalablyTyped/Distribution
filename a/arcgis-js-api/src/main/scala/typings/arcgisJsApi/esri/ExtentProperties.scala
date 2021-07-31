@@ -2,67 +2,67 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtentProperties extends GeometryProperties {
+trait ExtentProperties
+  extends StObject
+     with GeometryProperties {
   
   /**
     * The maximum possible `m` value in an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmax)
     */
-  var mmax: js.UndefOr[Double] = js.native
+  var mmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum possible `m` value of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmin)
     */
-  var mmin: js.UndefOr[Double] = js.native
+  var mmin: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
     */
-  var xmax: js.UndefOr[Double] = js.native
+  var xmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
     */
-  var xmin: js.UndefOr[Double] = js.native
+  var xmin: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
     */
-  var ymax: js.UndefOr[Double] = js.native
+  var ymax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
     */
-  var ymin: js.UndefOr[Double] = js.native
+  var ymin: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum possible `z`, or elevation, value in an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmax)
     */
-  var zmax: js.UndefOr[Double] = js.native
+  var zmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum possible `z`, or elevation, value of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmin)
     */
-  var zmin: js.UndefOr[Double] = js.native
+  var zmin: js.UndefOr[Double] = js.undefined
 }
 object ExtentProperties {
   

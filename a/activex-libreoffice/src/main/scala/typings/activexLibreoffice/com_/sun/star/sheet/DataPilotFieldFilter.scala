@@ -2,28 +2,26 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataPilotFieldFilter extends StObject {
   
   /** Field name. */
-  var FieldName: String = js.native
+  var FieldName: String
   
   /**
     * String value that needs to match against, locale independent.
     *
     * This is the underlying value formatted in a standardized way, for example ISO 8601 YYYY-MM-DD for dates.
     */
-  var MatchValue: String = js.native
+  var MatchValue: String
   
   /**
     * String value that needs to match against, locale dependent.
     *
     * This is the value as name/label as also displayed in the filter popup dialog, maybe formatted by user applied number formats.
     */
-  var MatchValueName: String = js.native
+  var MatchValueName: String
 }
 object DataPilotFieldFilter {
   

@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Switch extends Widget {
+trait Switch
+  extends StObject
+     with Widget {
   
   def check(): Boolean = js.native
   def check(check: Boolean): Unit = js.native

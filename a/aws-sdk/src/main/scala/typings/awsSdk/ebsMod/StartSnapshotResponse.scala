@@ -2,61 +2,59 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSnapshotResponse extends StObject {
   
   /**
     * The size of the blocks in the snapshot, in bytes.
     */
-  var BlockSize: js.UndefOr[typings.awsSdk.ebsMod.BlockSize] = js.native
+  var BlockSize: js.UndefOr[typings.awsSdk.ebsMod.BlockSize] = js.undefined
   
   /**
     * The description of the snapshot.
     */
-  var Description: js.UndefOr[typings.awsSdk.ebsMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.ebsMod.Description] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) used to encrypt the snapshot.
     */
-  var KmsKeyArn: js.UndefOr[typings.awsSdk.ebsMod.KmsKeyArn] = js.native
+  var KmsKeyArn: js.UndefOr[typings.awsSdk.ebsMod.KmsKeyArn] = js.undefined
   
   /**
     * The AWS account ID of the snapshot owner.
     */
-  var OwnerId: js.UndefOr[typings.awsSdk.ebsMod.OwnerId] = js.native
+  var OwnerId: js.UndefOr[typings.awsSdk.ebsMod.OwnerId] = js.undefined
   
   /**
     * The ID of the parent snapshot.
     */
-  var ParentSnapshotId: js.UndefOr[SnapshotId] = js.native
+  var ParentSnapshotId: js.UndefOr[SnapshotId] = js.undefined
   
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.ebsMod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ebsMod.SnapshotId] = js.undefined
   
   /**
     * The timestamp when the snapshot was created.
     */
-  var StartTime: js.UndefOr[TimeStamp] = js.native
+  var StartTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * The status of the snapshot.
     */
-  var Status: js.UndefOr[typings.awsSdk.ebsMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.ebsMod.Status] = js.undefined
   
   /**
     * The tags applied to the snapshot. You can specify up to 50 tags per snapshot. For more information, see  Tagging your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide.
     */
-  var Tags: js.UndefOr[typings.awsSdk.ebsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.ebsMod.Tags] = js.undefined
   
   /**
     * The size of the volume, in GiB.
     */
-  var VolumeSize: js.UndefOr[typings.awsSdk.ebsMod.VolumeSize] = js.native
+  var VolumeSize: js.UndefOr[typings.awsSdk.ebsMod.VolumeSize] = js.undefined
 }
 object StartSnapshotResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregationAuthorization extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the aggregation object.
     */
-  var AggregationAuthorizationArn: js.UndefOr[String] = js.native
+  var AggregationAuthorizationArn: js.UndefOr[String] = js.undefined
   
   /**
     * The 12-digit account ID of the account authorized to aggregate data.
     */
-  var AuthorizedAccountId: js.UndefOr[AccountId] = js.native
+  var AuthorizedAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The region authorized to collect aggregated data.
     */
-  var AuthorizedAwsRegion: js.UndefOr[AwsRegion] = js.native
+  var AuthorizedAwsRegion: js.UndefOr[AwsRegion] = js.undefined
   
   /**
     * The time stamp when the aggregation authorization was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
 }
 object AggregationAuthorization {
   

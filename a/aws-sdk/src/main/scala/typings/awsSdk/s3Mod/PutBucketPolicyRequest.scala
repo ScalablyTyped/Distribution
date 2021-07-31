@@ -2,36 +2,34 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketPolicyRequest extends StObject {
   
   /**
     * The name of the bucket.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * Set this parameter to true to confirm that you want to remove your permissions to change this bucket policy in the future.
     */
-  var ConfirmRemoveSelfBucketAccess: js.UndefOr[typings.awsSdk.s3Mod.ConfirmRemoveSelfBucketAccess] = js.native
+  var ConfirmRemoveSelfBucketAccess: js.UndefOr[typings.awsSdk.s3Mod.ConfirmRemoveSelfBucketAccess] = js.undefined
   
   /**
     * The MD5 hash of the request body. For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.
     */
-  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.native
+  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The bucket policy as a JSON document.
     */
-  var Policy: typings.awsSdk.s3Mod.Policy = js.native
+  var Policy: typings.awsSdk.s3Mod.Policy
 }
 object PutBucketPolicyRequest {
   

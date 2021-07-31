@@ -1,21 +1,20 @@
 package typings.mangopay2NodejsSdk.mod.user
 
-import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateUserNaturalData extends BaseUserNaturalData {
+trait UpdateUserNaturalData
+  extends StObject
+     with BaseUserNaturalData {
   
-  var Id: String = js.native
+  var Id: String
 }
 object UpdateUserNaturalData {
   
   @scala.inline
-  def apply(Id: String, PersonType: NATURAL): UpdateUserNaturalData = {
-    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any])
+  def apply(Id: String): UpdateUserNaturalData = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = "NATURAL")
     __obj.asInstanceOf[UpdateUserNaturalData]
   }
   

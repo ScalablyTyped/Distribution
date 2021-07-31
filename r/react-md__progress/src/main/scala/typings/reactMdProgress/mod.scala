@@ -8,20 +8,22 @@ import typings.reactMdProgress.linearProgressMod.LinearProgressProps
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/progress", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/progress", "CircularProgress")
   @js.native
-  val CircularProgress: ForwardRefExoticComponent[CircularProgressProps with RefAttributes[HTMLSpanElement]] = js.native
+  val CircularProgress: ForwardRefExoticComponent[CircularProgressProps & RefAttributes[HTMLSpanElement]] = js.native
   
   @JSImport("@react-md/progress", "LinearProgress")
   @js.native
-  val LinearProgress: ForwardRefExoticComponent[LinearProgressProps with RefAttributes[HTMLSpanElement]] = js.native
+  val LinearProgress: ForwardRefExoticComponent[LinearProgressProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  @JSImport("@react-md/progress", "getProgressA11y")
-  @js.native
-  def getProgressA11y(progressId: String, progressing: Boolean): js.UndefOr[ProgressA11y] = js.native
+  @scala.inline
+  def getProgressA11y(progressId: String, progressing: Boolean): js.UndefOr[ProgressA11y] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressA11y")(progressId.asInstanceOf[js.Any], progressing.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ProgressA11y]]
 }

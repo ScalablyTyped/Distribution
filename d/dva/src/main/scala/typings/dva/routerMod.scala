@@ -50,10 +50,13 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
+  
+  @JSImport("dva/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dva/router", "BrowserRouter")
   @js.native
@@ -81,11 +84,10 @@ object routerMod {
     def this(props: HashRouterProps, context: js.Any) = this()
   }
   
-  @JSImport("dva/router", "Link")
-  @js.native
+  @scala.inline
   def Link[S](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<Link<S>> is not an array type */ params: Parameters[typings.reactRouterDom.mod.Link[S]]
-  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = js.native
+  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(params.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.Link[S]]]
   
   @JSImport("dva/router", "MemoryRouter")
   @js.native
@@ -100,12 +102,11 @@ object routerMod {
     def this(props: MemoryRouterProps, context: js.Any) = this()
   }
   
-  @JSImport("dva/router", "NavLink")
-  @js.native
+  @scala.inline
   def NavLink[S](
     // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
-  props: PropsWithoutRef[NavLinkProps[S]] with RefAttributes[HTMLAnchorElement]
-  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = js.native
+  props: PropsWithoutRef[NavLinkProps[S]] & RefAttributes[HTMLAnchorElement]
+  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("NavLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.NavLink[S]]]
   
   @JSImport("dva/router", "Prompt")
   @js.native
@@ -184,45 +185,41 @@ object routerMod {
     def this(props: SwitchProps, context: js.Any) = this()
   }
   
-  @JSImport("dva/router", "generatePath")
-  @js.native
-  def generatePath(pattern: String): String = js.native
-  @JSImport("dva/router", "generatePath")
-  @js.native
-  def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
+  @scala.inline
+  def generatePath(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("dva/router", "matchPath")
-  @js.native
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "matchPath")
-  @js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "matchPath")
-  @js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "matchPath")
-  @js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "matchPath")
-  @js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "matchPath")
-  @js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
   
   object routerRedux {
+    
+    @JSImport("dva/router", "routerRedux")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("dva/router", "routerRedux.CALL_HISTORY_METHOD")
     @js.native
@@ -244,35 +241,27 @@ object routerMod {
     @js.native
     val LOCATION_CHANGE: /* "@@router/LOCATION_CHANGE" */ String = js.native
     
-    @JSImport("dva/router", "routerRedux.createMatchSelector")
-    @js.native
-    def createMatchSelector(path: String): js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null] = js.native
+    @scala.inline
+    def createMatchSelector(path: String): js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchSelector")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* state */ typings.reactRouterRedux.anon.Router, `match`[js.Object] | Null]]
     
-    @JSImport("dva/router", "routerRedux.go")
-    @js.native
-    def go(n: Double): RouterAction = js.native
+    @scala.inline
+    def go(n: Double): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(n.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
     
-    @JSImport("dva/router", "routerRedux.goBack")
-    @js.native
-    def goBack(): RouterAction = js.native
+    @scala.inline
+    def goBack(): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[RouterAction]
     
-    @JSImport("dva/router", "routerRedux.goForward")
-    @js.native
-    def goForward(): RouterAction = js.native
+    @scala.inline
+    def goForward(): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[RouterAction]
     
-    @JSImport("dva/router", "routerRedux.push")
-    @js.native
-    def push(location: LocationDescriptor[LocationState]): RouterAction = js.native
-    @JSImport("dva/router", "routerRedux.push")
-    @js.native
-    def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+    @scala.inline
+    def push(location: LocationDescriptor[LocationState]): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(location.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
+    @scala.inline
+    def push(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(location.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouterAction]
     
-    @JSImport("dva/router", "routerRedux.replace")
-    @js.native
-    def replace(location: LocationDescriptor[LocationState]): RouterAction = js.native
-    @JSImport("dva/router", "routerRedux.replace")
-    @js.native
-    def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = js.native
+    @scala.inline
+    def replace(location: LocationDescriptor[LocationState]): RouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(location.asInstanceOf[js.Any]).asInstanceOf[RouterAction]
+    @scala.inline
+    def replace(location: LocationDescriptor[LocationState], state: LocationState): RouterAction = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(location.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouterAction]
     
     object routerActions {
       
@@ -332,57 +321,54 @@ object routerMod {
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replace")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("dva/router", "routerRedux.routerMiddleware")
-    @js.native
-    def routerMiddleware(history: History[LocationState]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+    @scala.inline
+    def routerMiddleware(history: History[LocationState]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("routerMiddleware")(history.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
     
     @JSImport("dva/router", "routerRedux.routerReducer")
     @js.native
     val routerReducer: Reducer[RouterState, AnyAction] = js.native
   }
   
-  @JSImport("dva/router", "useHistory")
-  @js.native
-  def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
+  @scala.inline
+  def useHistory[HistoryLocationState](): History[HistoryLocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")().asInstanceOf[History[HistoryLocationState]]
   
-  @JSImport("dva/router", "useLocation")
-  @js.native
-  def useLocation[S](): Location[S] = js.native
+  @scala.inline
+  def useLocation[S](): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location[S]]
   
-  @JSImport("dva/router", "useParams")
-  @js.native
+  @scala.inline
   def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useParams with TopLevel[js.Any] */](): Params = js.native
+    */ typings.dva.dvaStrings.useParams & TopLevel[js.Any] */](): Params = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[Params]
   
-  @JSImport("dva/router", "useRouteMatch")
-  @js.native
+  @scala.inline
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
-  @JSImport("dva/router", "useRouteMatch")
-  @js.native
+    */ typings.dva.dvaStrings.useRouteMatch & TopLevel[js.Any] */](): `match`[Params] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")().asInstanceOf[`match`[Params]]
+  @scala.inline
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "useRouteMatch")
-  @js.native
+    */ typings.dva.dvaStrings.useRouteMatch & TopLevel[js.Any] */](path: String): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
-  @JSImport("dva/router", "useRouteMatch")
-  @js.native
+    */ typings.dva.dvaStrings.useRouteMatch & TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
+  @scala.inline
   def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.dva.dvaStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
+    */ typings.dva.dvaStrings.useRouteMatch & TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
   
-  @JSImport("dva/router", "withRouter")
-  @js.native
-  def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
+  @scala.inline
+  def withRouter[P /* <: RouteComponentProps[js.Any, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C & ComponentType[P]): (ComponentClass[
     (Omit[
       P, 
       /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.dva.dvaStrings.`match` | staticContext
-    ]) with WithRouterProps[C], 
+    ]) & WithRouterProps[C], 
     ComponentState
-  ]) with WithRouterStatics[C] = js.native
+  ]) & WithRouterStatics[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(component.asInstanceOf[js.Any]).asInstanceOf[(ComponentClass[
+    (Omit[
+      P, 
+      /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.dva.dvaStrings.`match` | staticContext
+    ]) & WithRouterProps[C], 
+    ComponentState
+  ]) & WithRouterStatics[C]]
 }

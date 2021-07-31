@@ -10,9 +10,9 @@ Elegant Console Logger for Node.js and Browser
 | ------------------ | :-------------: |
 | Full name          | consola |
 | Keywords           | console, logger, reporter, elegant, cli, universal, unified, winston |
-| # releases         | 58 |
-| # dependents       | 526 |
-| # downloads        | 49106246 |
+| # releases         | 31 |
+| # dependents       | 650 |
+| # downloads        | 65373240 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideDate extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getByFormat('dd-MM-yyyy'));
     * // 01-01-2015
     */
-  def getByFormat(format: String): String = js.native
+  def getByFormat(format: String): String
   
   /**
     * Gets the day of the month stored by the GlideDate object, expressed in the UTC time
@@ -34,7 +32,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getDayOfMonthNoTZ());
     * // 13
     */
-  def getDayOfMonthNoTZ(): Double = js.native
+  def getDayOfMonthNoTZ(): Double
   
   /**
     * Gets the date in the current user's display format and time zone.
@@ -49,7 +47,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getDisplayValue());
     * // 2015-01-01
     */
-  def getDisplayValue(): String = js.native
+  def getDisplayValue(): String
   
   /**
     * Gets the display value in the internal format (yyyy-MM-dd).
@@ -62,7 +60,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getDisplayValueInternal());
     * // 2014-10-22
     */
-  def getDisplayValueInternal(): String = js.native
+  def getDisplayValueInternal(): String
   
   /**
     * Gets the month stored by the GlideDate object, expressed in the UTC time zone.
@@ -75,7 +73,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getMonthNoTZ());
     * // 5
     */
-  def getMonthNoTZ(): Double = js.native
+  def getMonthNoTZ(): Double
   
   /**
     * Gets the date value stored in the database by the GlideDate object in the internal
@@ -89,7 +87,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getValue());
     * // 2015-01-01
     */
-  def getValue(): String = js.native
+  def getValue(): String
   
   /**
     * Gets the year stored by the GlideDate object, expressed in the UTC time zone.
@@ -102,7 +100,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getYearNoTZ());
     * // 5
     */
-  def getYearNoTZ(): Double = js.native
+  def getYearNoTZ(): Double
   
   /**
     * Sets a date value using the current user's display format and time zone.
@@ -117,7 +115,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getValue());
     * // 2011-01-01
     */
-  def setDisplayValue(asDisplayed: String): Unit = js.native
+  def setDisplayValue(asDisplayed: String): Unit
   
   /**
     * Sets the date of the GlideDate object.
@@ -131,7 +129,7 @@ trait GlideDate extends StObject {
     * gs.info(gd.getValue());
     * // 2015-01-01
     */
-  def setValue(o: String): Unit = js.native
+  def setValue(o: String): Unit
 }
 object GlideDate {
   

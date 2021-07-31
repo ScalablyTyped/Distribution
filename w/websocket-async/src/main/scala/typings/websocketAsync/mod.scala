@@ -5,14 +5,15 @@ import typings.std.WebSocket
 import typings.websocketAsync.anon.Reject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("websocket-async", JSImport.Namespace)
   @js.native
-  class ^ () extends WebSocketClient
+  class ^ ()
+    extends StObject
+       with WebSocketClient
   
   @js.native
   trait WebSocketClient extends StObject {
@@ -21,7 +22,7 @@ object mod {
     
     var _receiveCallbacksQueue: js.Array[Reject] = js.native
     
-    var _receiveDataQueue: js.Array[_] = js.native
+    var _receiveDataQueue: js.Array[js.Any] = js.native
     
     /**
       * Resets the receive arrays and close events, called in the constructor
@@ -60,9 +61,9 @@ object mod {
       * The promise resolves once the WebSocket connection is closed.
       */
     def disconnect(): js.Promise[CloseEvent | Null] = js.native
-    def disconnect(code: js.UndefOr[scala.Nothing], reason: String): js.Promise[CloseEvent | Null] = js.native
     def disconnect(code: Double): js.Promise[CloseEvent | Null] = js.native
     def disconnect(code: Double, reason: String): js.Promise[CloseEvent | Null] = js.native
+    def disconnect(code: Unit, reason: String): js.Promise[CloseEvent | Null] = js.native
     
     /**
       * Asynchronously receive data from the websocket.
@@ -71,7 +72,7 @@ object mod {
       * or rejects if disconnected.
       * @returns A promise that resolves with the data received.
       */
-    def receive(): js.Promise[_] = js.native
+    def receive(): js.Promise[js.Any] = js.native
     
     /**
       * Send data through the websocket.

@@ -2,21 +2,19 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutAttributesRequest extends StObject {
   
   /**
     * The name of the domain in which the attributes are being stored.
     */
-  var DomainName: String = js.native
+  var DomainName: String
   
   /**
     * A list of items on which to perform the operation.
     */
-  var Items: ReplaceableItemList = js.native
+  var Items: ReplaceableItemList
 }
 object BatchPutAttributesRequest {
   

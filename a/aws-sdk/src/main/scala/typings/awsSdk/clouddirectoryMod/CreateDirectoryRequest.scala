@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDirectoryRequest extends StObject {
   
   /**
     * The name of the Directory. Should be unique per account, per region.
     */
-  var Name: DirectoryName = js.native
+  var Name: DirectoryName
   
   /**
     * The Amazon Resource Name (ARN) of the published schema that will be copied into the data Directory. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object CreateDirectoryRequest {
   

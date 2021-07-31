@@ -3,24 +3,22 @@ package typings.webrtc
 import typings.std.RTCDtxStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpencodingparameters
-@js.native
 trait RTCRtpEncodingParameters extends StObject {
   
   //ssrc: number;
   //rtx: RTCRtpRtxParameters;
   //fec: RTCRtpFecParameters;
-  var dtx: js.UndefOr[RTCDtxStatus] = js.native
+  var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
   
   //active: boolean;
   //priority: RTCPriorityType;
   //maxBitrate: number;
-  var rid: String = js.native
+  var rid: String
   
-  var scaleResolutionDownBy: js.UndefOr[Double] = js.native
+  var scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
 }
 object RTCRtpEncodingParameters {
   

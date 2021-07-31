@@ -2,15 +2,13 @@ package typings.openpgp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Keyid extends StObject {
   
-  var keyid: typings.openpgp.mod.`type`.keyid.Keyid = js.native
+  var keyid: typings.openpgp.mod.`type`.keyid.Keyid
   
-  var valid: Boolean = js.native
+  var valid: Boolean
 }
 object Keyid {
   

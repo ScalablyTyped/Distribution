@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeMod {
@@ -84,6 +83,10 @@ object volumeMod {
   /* static members */
   object Volume {
     
+    @JSImport("@pulumi/aws/ebs/volume", "Volume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Volume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -93,80 +96,74 @@ object volumeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs/volume", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Volume = js.native
-    @JSImport("@pulumi/aws/ebs/volume", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Volume = js.native
-    @JSImport("@pulumi/aws/ebs/volume", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeState): Volume = js.native
-    @JSImport("@pulumi/aws/ebs/volume", "Volume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): Volume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeState): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Volume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Volume]
     
     /**
       * Returns true if the given object is an instance of Volume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs/volume", "Volume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ Boolean]
   }
   
-  @js.native
   trait VolumeArgs extends StObject {
     
     /**
       * The AZ where the EBS volume will exist.
       */
-    val availabilityZone: Input[String] = js.native
+    val availabilityZone: Input[String]
     
     /**
       * If true, the disk will be encrypted.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The amount of IOPS to provision for the disk. Only valid for `type` of `io1` or `io2`.
       */
-    val iops: js.UndefOr[Input[Double]] = js.native
+    val iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to enable Amazon EBS Multi-Attach. Multi-Attach is supported exclusively on `io1` volumes.
       */
-    val multiAttachEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val multiAttachEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: js.UndefOr[Input[String]] = js.native
+    val outpostArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the drive in GiBs.
       */
-    val size: js.UndefOr[Input[Double]] = js.native
+    val size: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A snapshot to base the EBS volume off of.
       */
-    val snapshotId: js.UndefOr[Input[String]] = js.native
+    val snapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of EBS volume. Can be "standard", "gp2", "io1", "io2", "sc1" or "st1" (Default: "gp2").
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object VolumeArgs {
     
@@ -238,63 +235,62 @@ object volumeMod {
     }
   }
   
-  @js.native
   trait VolumeState extends StObject {
     
     /**
       * The volume ARN (e.g. arn:aws:ec2:us-east-1:0123456789012:volume/vol-59fcb34e).
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AZ where the EBS volume will exist.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true, the disk will be encrypted.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The amount of IOPS to provision for the disk. Only valid for `type` of `io1` or `io2`.
       */
-    val iops: js.UndefOr[Input[Double]] = js.native
+    val iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to enable Amazon EBS Multi-Attach. Multi-Attach is supported exclusively on `io1` volumes.
       */
-    val multiAttachEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val multiAttachEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: js.UndefOr[Input[String]] = js.native
+    val outpostArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the drive in GiBs.
       */
-    val size: js.UndefOr[Input[Double]] = js.native
+    val size: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A snapshot to base the EBS volume off of.
       */
-    val snapshotId: js.UndefOr[Input[String]] = js.native
+    val snapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of EBS volume. Can be "standard", "gp2", "io1", "io2", "sc1" or "st1" (Default: "gp2").
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object VolumeState {
     

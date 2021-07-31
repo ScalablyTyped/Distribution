@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDatafeedstatusesGet extends StandardParameters {
+trait ParamsResourceDatafeedstatusesGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The country for which to get the datafeed status. If this parameter is
@@ -23,12 +23,12 @@ trait ParamsResourceDatafeedstatusesGet extends StandardParameters {
     * required for feeds targeting multiple countries and languages, since a
     * feed may have a different status for each target.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the datafeed.
     */
-  var datafeedId: js.UndefOr[String] = js.native
+  var datafeedId: js.UndefOr[String] = js.undefined
   
   /**
     * The language for which to get the datafeed status. If this parameter is
@@ -36,13 +36,13 @@ trait ParamsResourceDatafeedstatusesGet extends StandardParameters {
     * required for feeds targeting multiple countries and languages, since a
     * feed may have a different status for each target.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the account that manages the datafeed. This account cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceDatafeedstatusesGet {
   

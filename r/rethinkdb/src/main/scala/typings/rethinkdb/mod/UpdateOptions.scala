@@ -4,17 +4,15 @@ import typings.rethinkdb.rethinkdbStrings.hard
 import typings.rethinkdb.rethinkdbStrings.soft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateOptions extends StObject {
   
-  var durability: js.UndefOr[hard | soft] = js.native
+  var durability: js.UndefOr[hard | soft] = js.undefined
   
-  var nonAtomic: js.UndefOr[Boolean] = js.native
+  var nonAtomic: js.UndefOr[Boolean] = js.undefined
   
-  var returnChanges: js.UndefOr[Boolean] = js.native
+  var returnChanges: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateOptions {
   

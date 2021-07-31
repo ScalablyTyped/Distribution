@@ -15,117 +15,115 @@ import typings.awsSdkClientPinpointBrowser.typesTreatmentResourceMod.Unmarshalle
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCampaignResponseMod {
   
-  @js.native
   trait CampaignResponse extends StObject {
     
     /**
       * Treatments that are defined in addition to the default treatment.
       */
-    var AdditionalTreatments: js.UndefOr[js.Array[TreatmentResource] | Iterable[TreatmentResource]] = js.native
+    var AdditionalTreatments: js.UndefOr[js.Array[TreatmentResource] | Iterable[TreatmentResource]] = js.undefined
     
     /**
       * The ID of the application to which the campaign applies.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The date the campaign was created in ISO 8601 format.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The status of the campaign's default treatment. Only present for A/B test campaigns.
       */
-    var DefaultState: js.UndefOr[CampaignState] = js.native
+    var DefaultState: js.UndefOr[CampaignState] = js.undefined
     
     /**
       * A description of the campaign.
       */
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
     /**
       * The allocated percentage of end users who will not receive messages from this campaign.
       */
-    var HoldoutPercent: js.UndefOr[Double] = js.native
+    var HoldoutPercent: js.UndefOr[Double] = js.undefined
     
     /**
       * Campaign hook information.
       */
-    var Hook: js.UndefOr[CampaignHook] = js.native
+    var Hook: js.UndefOr[CampaignHook] = js.undefined
     
     /**
       * The unique campaign ID.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether the campaign is paused. A paused campaign does not send messages unless you resume it by setting IsPaused to false.
       */
-    var IsPaused: js.UndefOr[Boolean] = js.native
+    var IsPaused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The date the campaign was last updated in ISO 8601 format.
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * The campaign limits settings.
       */
-    var Limits: js.UndefOr[CampaignLimits] = js.native
+    var Limits: js.UndefOr[CampaignLimits] = js.undefined
     
     /**
       * The message configuration settings.
       */
     var MessageConfiguration: js.UndefOr[
         typings.awsSdkClientPinpointBrowser.typesMessageConfigurationMod.MessageConfiguration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The custom name of the campaign.
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * The campaign schedule.
       */
-    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.native
+    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.undefined
     
     /**
       * The ID of the segment to which the campaign sends messages.
       */
-    var SegmentId: js.UndefOr[String] = js.native
+    var SegmentId: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the segment to which the campaign sends messages.
       */
-    var SegmentVersion: js.UndefOr[Double] = js.native
+    var SegmentVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * The campaign status.
       *
       * An A/B test campaign will have a status of COMPLETED only when all treatments have a status of COMPLETED.
       */
-    var State: js.UndefOr[CampaignState] = js.native
+    var State: js.UndefOr[CampaignState] = js.undefined
     
     /**
       * A custom description for the treatment.
       */
-    var TreatmentDescription: js.UndefOr[String] = js.native
+    var TreatmentDescription: js.UndefOr[String] = js.undefined
     
     /**
       * The custom name of a variation of the campaign used for A/B testing.
       */
-    var TreatmentName: js.UndefOr[String] = js.native
+    var TreatmentName: js.UndefOr[String] = js.undefined
     
     /**
       * The campaign version number.
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object CampaignResponse {
     
@@ -263,44 +261,45 @@ object typesCampaignResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCampaignResponse extends CampaignResponse {
+  trait UnmarshalledCampaignResponse
+    extends StObject
+       with CampaignResponse {
     
     /**
       * Treatments that are defined in addition to the default treatment.
       */
     @JSName("AdditionalTreatments")
-    var AdditionalTreatments_UnmarshalledCampaignResponse: js.UndefOr[js.Array[UnmarshalledTreatmentResource]] = js.native
+    var AdditionalTreatments_UnmarshalledCampaignResponse: js.UndefOr[js.Array[UnmarshalledTreatmentResource]] = js.undefined
     
     /**
       * The status of the campaign's default treatment. Only present for A/B test campaigns.
       */
     @JSName("DefaultState")
-    var DefaultState_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignState] = js.native
+    var DefaultState_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignState] = js.undefined
     
     /**
       * Campaign hook information.
       */
     @JSName("Hook")
-    var Hook_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignHook] = js.native
+    var Hook_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignHook] = js.undefined
     
     /**
       * The campaign limits settings.
       */
     @JSName("Limits")
-    var Limits_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignLimits] = js.native
+    var Limits_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignLimits] = js.undefined
     
     /**
       * The message configuration settings.
       */
     @JSName("MessageConfiguration")
-    var MessageConfiguration_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledMessageConfiguration] = js.native
+    var MessageConfiguration_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledMessageConfiguration] = js.undefined
     
     /**
       * The campaign schedule.
       */
     @JSName("Schedule")
-    var Schedule_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledSchedule] = js.native
+    var Schedule_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledSchedule] = js.undefined
     
     /**
       * The campaign status.
@@ -308,7 +307,7 @@ object typesCampaignResponseMod {
       * An A/B test campaign will have a status of COMPLETED only when all treatments have a status of COMPLETED.
       */
     @JSName("State")
-    var State_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignState] = js.native
+    var State_UnmarshalledCampaignResponse: js.UndefOr[UnmarshalledCampaignState] = js.undefined
   }
   object UnmarshalledCampaignResponse {
     

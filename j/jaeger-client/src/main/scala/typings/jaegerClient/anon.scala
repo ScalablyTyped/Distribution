@@ -11,13 +11,14 @@ import typings.promClient.mod.Registry
 import typings.promClient.mod.SummaryConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait TypeofAggregatorRegistry extends Instantiable0[AggregatorRegistry] {
+  trait TypeofAggregatorRegistry
+    extends StObject
+       with Instantiable0[AggregatorRegistry] {
     
     /**
     	 * Creates a new Registry instance from an array of metrics that were
@@ -42,7 +43,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofRegistry extends Instantiable0[Registry] {
+  trait TypeofRegistry
+    extends StObject
+       with Instantiable0[Registry] {
     
     /**
     	 * Merge registers

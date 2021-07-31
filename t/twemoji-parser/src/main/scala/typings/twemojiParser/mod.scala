@@ -4,45 +4,44 @@ import typings.twemojiParser.twemojiParserStrings.png
 import typings.twemojiParser.twemojiParserStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("twemoji-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("twemoji-parser", "TypeName")
   @js.native
   val TypeName: /* "emoji" */ String = js.native
   
-  @JSImport("twemoji-parser", "parse")
-  @js.native
-  def parse(text: String): js.Array[EmojiEntity] = js.native
-  @JSImport("twemoji-parser", "parse")
-  @js.native
-  def parse(text: String, options: ParsingOptions): js.Array[EmojiEntity] = js.native
+  @scala.inline
+  def parse(text: String): js.Array[EmojiEntity] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EmojiEntity]]
+  @scala.inline
+  def parse(text: String, options: ParsingOptions): js.Array[EmojiEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[EmojiEntity]]
   
-  @JSImport("twemoji-parser", "toCodePoints")
-  @js.native
-  def toCodePoints(unicodeSurrogates: String): js.Array[String] = js.native
+  @scala.inline
+  def toCodePoints(unicodeSurrogates: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoints")(unicodeSurrogates.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait EmojiEntity extends StObject {
     
     /**
       * [startIndex: number, lastIndex: number]
       */
-    var indices: js.Tuple2[Double, Double] = js.native
+    var indices: js.Tuple2[Double, Double]
     
-    var text: String = js.native
+    var text: String
     
     /**
       * @default 'emoji'
       */
-    var `type`: /* "emoji" */ String = js.native
+    var `type`: /* "emoji" */ String
     
     /**
       * @default ''
       */
-    var url: String = js.native
+    var url: String
   }
   object EmojiEntity {
     
@@ -70,15 +69,14 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsingOptions extends StObject {
     
     /**
       * @default 'svg'
       */
-    var assetType: js.UndefOr[png | svg] = js.native
+    var assetType: js.UndefOr[png | svg] = js.undefined
     
-    var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ String, String]] = js.native
+    var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ String, String]] = js.undefined
   }
   object ParsingOptions {
     

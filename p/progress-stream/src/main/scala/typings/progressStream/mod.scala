@@ -16,36 +16,34 @@ import typings.progressStream.progressStreamStrings.unpipe
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("progress-stream", JSImport.Namespace)
-  @js.native
-  def apply(): ProgressStream = js.native
-  @JSImport("progress-stream", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrProgressListener: Options): ProgressStream = js.native
-  @JSImport("progress-stream", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrProgressListener: ProgressListener): ProgressStream = js.native
-  @JSImport("progress-stream", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, progressListener: ProgressListener): ProgressStream = js.native
+  @scala.inline
+  def apply(): ProgressStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProgressStream]
+  @scala.inline
+  def apply(optionsOrProgressListener: Options): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
+  @scala.inline
+  def apply(optionsOrProgressListener: ProgressListener): ProgressStream = ^.asInstanceOf[js.Dynamic].apply(optionsOrProgressListener.asInstanceOf[js.Any]).asInstanceOf[ProgressStream]
+  @scala.inline
+  def apply(options: Options, progressListener: ProgressListener): ProgressStream = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], progressListener.asInstanceOf[js.Any])).asInstanceOf[ProgressStream]
   
+  @JSImport("progress-stream", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var drain: js.UndefOr[Boolean] = js.native
+    var drain: js.UndefOr[Boolean] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
     
-    var transferred: js.UndefOr[Double] = js.native
+    var transferred: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -90,24 +88,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var eta: Double = js.native
+    var eta: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var percentage: Double = js.native
+    var percentage: Double
     
-    var remaining: Double = js.native
+    var remaining: Double
     
-    var runtime: Double = js.native
+    var runtime: Double
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var transferred: Double = js.native
+    var transferred: Double
   }
   object Progress {
     

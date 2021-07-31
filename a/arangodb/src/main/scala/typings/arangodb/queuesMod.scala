@@ -5,62 +5,60 @@ import typings.arangodb.anon.DocumentJob
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queuesMod {
   
-  @JSImport("@arangodb/foxx/queues", "create")
+  @JSImport("@arangodb/foxx/queues", JSImport.Namespace)
   @js.native
-  def create(name: String): Queue = js.native
-  @JSImport("@arangodb/foxx/queues", "create")
-  @js.native
-  def create(name: String, maxWorkers: Double): Queue = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@arangodb/foxx/queues", "delete")
-  @js.native
-  def delete(name: String): Boolean = js.native
+  @scala.inline
+  def create(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
+  @scala.inline
+  def create(name: String, maxWorkers: Double): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], maxWorkers.asInstanceOf[js.Any])).asInstanceOf[Queue]
   
-  @JSImport("@arangodb/foxx/queues", "get")
-  @js.native
-  def get(name: String): Queue = js.native
+  @scala.inline
+  def delete(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def get(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
+  
   trait Job extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    var created: Double = js.native
+    var created: Double
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var delayUntil: Double = js.native
+    var delayUntil: Double
     
-    var failure: js.UndefOr[String] = js.native
+    var failure: js.UndefOr[String] = js.undefined
     
-    var failures: js.Array[js.Object] = js.native
+    var failures: js.Array[js.Object]
     
-    var maxFailures: Double = js.native
+    var maxFailures: Double
     
-    var modified: Double = js.native
+    var modified: Double
     
-    var queue: String = js.native
+    var queue: String
     
-    var repeatDelay: Double = js.native
+    var repeatDelay: Double
     
-    var repeatTimes: Double = js.native
+    var repeatTimes: Double
     
-    var repeatUntil: Double = js.native
+    var repeatUntil: Double
     
-    var runFailures: Double = js.native
+    var runFailures: Double
     
-    var runs: Double = js.native
+    var runs: Double
     
-    var status: String = js.native
+    var status: String
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var `type`: Script = js.native
+    var `type`: Script
   }
   object Job {
     
@@ -154,24 +152,23 @@ object queuesMod {
   
   type JobCallback = js.Function3[/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob, Unit]
   
-  @js.native
   trait JobOptions extends StObject {
     
-    var backOff: js.UndefOr[(js.Function1[/* failureCount */ Double, Double]) | Double] = js.native
+    var backOff: js.UndefOr[(js.Function1[/* failureCount */ Double, Double]) | Double] = js.undefined
     
-    var delayUntil: js.UndefOr[Double | Date] = js.native
+    var delayUntil: js.UndefOr[Double | Date] = js.undefined
     
-    var failure: js.UndefOr[JobCallback] = js.native
+    var failure: js.UndefOr[JobCallback] = js.undefined
     
-    var maxFailures: js.UndefOr[Double] = js.native
+    var maxFailures: js.UndefOr[Double] = js.undefined
     
-    var repeatDelay: js.UndefOr[Double] = js.native
+    var repeatDelay: js.UndefOr[Double] = js.undefined
     
-    var repeatTimes: js.UndefOr[Double] = js.native
+    var repeatTimes: js.UndefOr[Double] = js.undefined
     
-    var repeatUntil: js.UndefOr[Double | Date] = js.native
+    var repeatUntil: js.UndefOr[Double | Date] = js.undefined
     
-    var success: js.UndefOr[JobCallback] = js.native
+    var success: js.UndefOr[JobCallback] = js.undefined
   }
   object JobOptions {
     
@@ -263,20 +260,19 @@ object queuesMod {
     def push(item: QueueItem, data: js.Any, opts: JobOptions): Unit = js.native
   }
   
-  @js.native
   trait QueueItem extends StObject {
     
-    var backOff: js.UndefOr[(js.Function1[/* failureCount */ Double, Double]) | Double] = js.native
+    var backOff: js.UndefOr[(js.Function1[/* failureCount */ Double, Double]) | Double] = js.undefined
     
-    var maxFailures: js.UndefOr[Double] = js.native
+    var maxFailures: js.UndefOr[Double] = js.undefined
     
-    var mount: String = js.native
+    var mount: String
     
-    var name: String = js.native
+    var name: String
     
-    var preprocess: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var preprocess: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
-    var schema: js.UndefOr[Schema] = js.native
+    var schema: js.UndefOr[Schema] = js.undefined
   }
   object QueueItem {
     
@@ -311,7 +307,7 @@ object queuesMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreprocess(value: /* data */ js.Any => _): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      def setPreprocess(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
@@ -324,12 +320,11 @@ object queuesMod {
     }
   }
   
-  @js.native
   trait Script extends StObject {
     
-    var mount: String = js.native
+    var mount: String
     
-    var name: String = js.native
+    var name: String
   }
   object Script {
     

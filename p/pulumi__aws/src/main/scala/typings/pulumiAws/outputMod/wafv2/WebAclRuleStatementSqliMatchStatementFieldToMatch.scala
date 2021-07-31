@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementSqliMatchStatementFieldToMatch extends StObject {
   
   /**
     * Inspect all query arguments.
     */
-  var allQueryArguments: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments] = js.native
+  var allQueryArguments: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
     */
-  var body: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchBody] = js.native
+  var body: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchBody] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
     */
-  var method: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchMethod] = js.native
+  var method: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchMethod] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
     */
-  var queryString: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchQueryString] = js.native
+  var queryString: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchQueryString] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
     */
-  var singleHeader: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeader] = js.native
+  var singleHeader: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeader] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
     */
-  var singleQueryArgument: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgument] = js.native
+  var singleQueryArgument: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgument] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
     */
-  var uriPath: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchUriPath] = js.native
+  var uriPath: js.UndefOr[WebAclRuleStatementSqliMatchStatementFieldToMatchUriPath] = js.undefined
 }
 object WebAclRuleStatementSqliMatchStatementFieldToMatch {
   

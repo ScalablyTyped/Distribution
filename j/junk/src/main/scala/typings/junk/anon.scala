@@ -3,18 +3,16 @@ package typings.junk
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
     /**
     	Returns `true` if `filename` matches a junk file.
     	*/
-    def is(filename: String): Boolean = js.native
+    def is(filename: String): Boolean
     
     /**
     	Returns `true` if `filename` doesn't match a junk file.
@@ -33,12 +31,12 @@ object anon {
     	})();
     	```
     	*/
-    def not(filename: String): Boolean = js.native
+    def not(filename: String): Boolean
     
     /**
     	Regex used for matching junk files.
     	*/
-    val regex: RegExp = js.native
+    val regex: RegExp
   }
   object Default {
     

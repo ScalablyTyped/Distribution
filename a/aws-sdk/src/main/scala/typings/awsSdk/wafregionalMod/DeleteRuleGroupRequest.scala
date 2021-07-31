@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRuleGroupRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken
   
   /**
     * The RuleGroupId of the RuleGroup that you want to delete. RuleGroupId is returned by CreateRuleGroup and by ListRuleGroups.
     */
-  var RuleGroupId: ResourceId = js.native
+  var RuleGroupId: ResourceId
 }
 object DeleteRuleGroupRequest {
   

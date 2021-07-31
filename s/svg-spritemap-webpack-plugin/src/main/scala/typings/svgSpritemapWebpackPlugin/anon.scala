@@ -5,17 +5,15 @@ import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.data
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.fragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Assets extends StObject {
     
-    val assets: js.Object = js.native
+    val assets: js.Object
     
-    val filename: String = js.native
+    val filename: String
   }
   object Assets {
     
@@ -36,27 +34,26 @@ object anon {
     }
   }
   
-  @js.native
   trait Chunk extends StObject {
     
-    var chunk: js.UndefOr[Keep] = js.native
+    var chunk: js.UndefOr[Keep] = js.undefined
     
     /**
       * Filename of the generated file (located at the webpack output.path), [hash] and [contenthash] are supported.
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var svg: js.UndefOr[Sizes] = js.native
+    var svg: js.UndefOr[Sizes] = js.undefined
     
     /**
       * Whether to include the SVG4Everybody helper in your entries.
       */
-    var svg4everybody: js.UndefOr[Boolean | js.Object] = js.native
+    var svg4everybody: js.UndefOr[Boolean | js.Object] = js.undefined
     
     /**
       * Options object to pass to SVG Optimizer.
       */
-    var svgo: js.UndefOr[Boolean | js.Object] = js.native
+    var svgo: js.UndefOr[Boolean | js.Object] = js.undefined
   }
   object Chunk {
     
@@ -101,14 +98,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Filename extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[data | fragment] = js.native
+    var format: js.UndefOr[data | fragment] = js.undefined
     
-    var variables: js.UndefOr[Mixin] = js.native
+    var variables: js.UndefOr[Mixin] = js.undefined
   }
   object Filename {
     
@@ -141,23 +137,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Generate extends StObject {
     
-    var generate: js.UndefOr[Symbol] = js.native
+    var generate: js.UndefOr[Symbol] = js.undefined
     
     /**
       * Amount of pixels added between each sprite to prevent overlap.
       * @default 0
       */
-    var gutter: js.UndefOr[Double | `false`] = js.native
+    var gutter: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * Function that will be used to transform the filename of each sprite into a valid HTML id
       */
-    var idify: js.UndefOr[js.Function1[/* file */ String | `false`, String]] = js.native
+    var idify: js.UndefOr[js.Function1[/* file */ String | `false`, String]] = js.undefined
     
-    var prefix: js.UndefOr[String | (js.Function1[/* file */ String, String]) | `false`] = js.native
+    var prefix: js.UndefOr[String | (js.Function1[/* file */ String, String]) | `false`] = js.undefined
   }
   object Generate {
     
@@ -199,18 +194,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Keep extends StObject {
     
     /**
       * Whether to keep the chunk after it's been emitted by webpack.
       */
-    var keep: js.UndefOr[Boolean] = js.native
+    var keep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the chunk that will be generated.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Keep {
     
@@ -237,16 +231,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Mixin extends StObject {
     
-    var mixin: js.UndefOr[String] = js.native
+    var mixin: js.UndefOr[String] = js.undefined
     
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
-    var sprites: js.UndefOr[String] = js.native
+    var sprites: js.UndefOr[String] = js.undefined
     
-    var variables: js.UndefOr[String] = js.native
+    var variables: js.UndefOr[String] = js.undefined
   }
   object Mixin {
     
@@ -285,10 +278,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     
@@ -309,14 +301,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sizes extends StObject {
     
     /**
       * Whether to include the width and height attributes on the root SVG element.
       * The default value for this option is based on the value of the sprite.generate.use option but when specified will always overwrite it.
       */
-    var sizes: js.UndefOr[Boolean] = js.native
+    var sizes: js.UndefOr[Boolean] = js.undefined
   }
   object Sizes {
     
@@ -337,19 +328,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Symbol extends StObject {
     
-    var symbol: js.UndefOr[Boolean | String] = js.native
+    var symbol: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Whether to generate a <title> element containing the filename if no title is provided in the SVG.
       */
-    var title: js.UndefOr[Boolean] = js.native
+    var title: js.UndefOr[Boolean] = js.undefined
     
-    var use: js.UndefOr[Boolean] = js.native
+    var use: js.UndefOr[Boolean] = js.undefined
     
-    var view: js.UndefOr[Boolean | String] = js.native
+    var view: js.UndefOr[Boolean | String] = js.undefined
   }
   object Symbol {
     

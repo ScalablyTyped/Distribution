@@ -2,7 +2,6 @@ package typings.chayns.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,16 +17,24 @@ object dialog {
   object buttonText extends StObject {
     
     @js.native
-    sealed trait CANCEL extends buttonText
+    sealed trait CANCEL
+      extends StObject
+         with buttonText
     
     @js.native
-    sealed trait NO extends buttonText
+    sealed trait NO
+      extends StObject
+         with buttonText
     
     @js.native
-    sealed trait OK extends buttonText
+    sealed trait OK
+      extends StObject
+         with buttonText
     
     @js.native
-    sealed trait YES extends buttonText
+    sealed trait YES
+      extends StObject
+         with buttonText
   }
   
   @js.native
@@ -37,13 +44,19 @@ object dialog {
   object buttonType extends StObject {
     
     @js.native
-    sealed trait CANCEL extends buttonType
+    sealed trait CANCEL
+      extends StObject
+         with buttonType
     
     @js.native
-    sealed trait NEGATIVE extends buttonType
+    sealed trait NEGATIVE
+      extends StObject
+         with buttonType
     
     @js.native
-    sealed trait POSITIVE extends buttonType
+    sealed trait POSITIVE
+      extends StObject
+         with buttonType
   }
   
   @js.native
@@ -53,13 +66,19 @@ object dialog {
   object dateType extends StObject {
     
     @js.native
-    sealed trait DATE extends dateType
+    sealed trait DATE
+      extends StObject
+         with dateType
     
     @js.native
-    sealed trait DATE_TIME extends dateType
+    sealed trait DATE_TIME
+      extends StObject
+         with dateType
     
     @js.native
-    sealed trait TIME extends dateType
+    sealed trait TIME
+      extends StObject
+         with dateType
   }
   
   @js.native
@@ -69,9 +88,13 @@ object dialog {
   object inputType extends StObject {
     
     @js.native
-    sealed trait DEFAULT extends inputType
+    sealed trait DEFAULT
+      extends StObject
+         with inputType
     
     @js.native
-    sealed trait PASSWORD extends inputType
+    sealed trait PASSWORD
+      extends StObject
+         with inputType
   }
 }

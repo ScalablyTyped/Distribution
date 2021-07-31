@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitsMod {
@@ -16,19 +15,19 @@ object unitsMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Units with String] = js.native
+    def apply(value: String): js.UndefOr[Units & String] = js.native
     
-    /* "degrees" */ val DEGREES: typings.ol.unitsMod.Units.DEGREES with String = js.native
+    /* "degrees" */ val DEGREES: typings.ol.unitsMod.Units.DEGREES & String = js.native
     
-    /* "ft" */ val FEET: typings.ol.unitsMod.Units.FEET with String = js.native
+    /* "ft" */ val FEET: typings.ol.unitsMod.Units.FEET & String = js.native
     
-    /* "m" */ val METERS: typings.ol.unitsMod.Units.METERS with String = js.native
+    /* "m" */ val METERS: typings.ol.unitsMod.Units.METERS & String = js.native
     
-    /* "pixels" */ val PIXELS: typings.ol.unitsMod.Units.PIXELS with String = js.native
+    /* "pixels" */ val PIXELS: typings.ol.unitsMod.Units.PIXELS & String = js.native
     
-    /* "tile-pixels" */ val TILE_PIXELS: typings.ol.unitsMod.Units.TILE_PIXELS with String = js.native
+    /* "tile-pixels" */ val TILE_PIXELS: typings.ol.unitsMod.Units.TILE_PIXELS & String = js.native
     
-    /* "us-ft" */ val USFEET: typings.ol.unitsMod.Units.USFEET with String = js.native
+    /* "us-ft" */ val USFEET: typings.ol.unitsMod.Units.USFEET & String = js.native
   }
   
   @js.native
@@ -42,21 +41,33 @@ object unitsMod {
   object Units extends StObject {
     
     @js.native
-    sealed trait DEGREES extends Units
+    sealed trait DEGREES
+      extends StObject
+         with Units
     
     @js.native
-    sealed trait FEET extends Units
+    sealed trait FEET
+      extends StObject
+         with Units
     
     @js.native
-    sealed trait METERS extends Units
+    sealed trait METERS
+      extends StObject
+         with Units
     
     @js.native
-    sealed trait PIXELS extends Units
+    sealed trait PIXELS
+      extends StObject
+         with Units
     
     @js.native
-    sealed trait TILE_PIXELS extends Units
+    sealed trait TILE_PIXELS
+      extends StObject
+         with Units
     
     @js.native
-    sealed trait USFEET extends Units
+    sealed trait USFEET
+      extends StObject
+         with Units
   }
 }

@@ -2,19 +2,17 @@ package typings.divaJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cols extends StObject {
   
-  var cols: Double = js.native
+  var cols: Double
   
-  var rows: Double = js.native
+  var rows: Double
   
-  var tiles: Col = js.native
+  var tiles: Col
   
-  var zoomLevel: Double = js.native
+  var zoomLevel: Double
 }
 object Cols {
   

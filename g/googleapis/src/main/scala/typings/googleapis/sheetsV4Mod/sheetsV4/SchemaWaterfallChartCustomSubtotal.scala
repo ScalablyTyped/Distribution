@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A custom subtotal column for a waterfall chart series.
   */
-@js.native
 trait SchemaWaterfallChartCustomSubtotal extends StObject {
   
   /**
     * True if the data point at subtotal_index is the subtotal. If false, the
     * subtotal will be computed and appear after the data point.
     */
-  var dataIsSubtotal: js.UndefOr[Boolean] = js.native
+  var dataIsSubtotal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A label for the subtotal column.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The 0-based index of a data point within the series. If data_is_subtotal
@@ -32,7 +30,7 @@ trait SchemaWaterfallChartCustomSubtotal extends StObject {
     * subtotals exist on the series or what data points they are associated
     * with.
     */
-  var subtotalIndex: js.UndefOr[Double] = js.native
+  var subtotalIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaWaterfallChartCustomSubtotal {
   

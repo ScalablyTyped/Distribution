@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInvitationsResponse extends StObject {
   
   /**
     * The list of behavior graphs for which the member account has open or accepted invitations.
     */
-  var Invitations: js.UndefOr[MemberDetailList] = js.native
+  var Invitations: js.UndefOr[MemberDetailList] = js.undefined
   
   /**
     * If there are more behavior graphs remaining in the results, then this is the pagination token to use to request the next page of behavior graphs.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListInvitationsResponse {
   

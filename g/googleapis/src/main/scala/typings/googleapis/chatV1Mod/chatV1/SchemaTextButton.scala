@@ -2,24 +2,22 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A button with text and onclick action.
   */
-@js.native
 trait SchemaTextButton extends StObject {
   
   /**
     * The onclick action of the button.
     */
-  var onClick: js.UndefOr[SchemaOnClick] = js.native
+  var onClick: js.UndefOr[SchemaOnClick] = js.undefined
   
   /**
     * The text of the button.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaTextButton {
   

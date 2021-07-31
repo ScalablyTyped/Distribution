@@ -2,17 +2,15 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipModelBody extends StObject {
   
-  var after: js.Array[String] = js.native
+  var after: js.Array[String]
   
-  var before: js.Array[String] = js.native
+  var before: js.Array[String]
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
 }
 object ChartTooltipModelBody {
   

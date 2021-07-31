@@ -2,96 +2,94 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserPoolRequest extends StObject {
   
   /**
     * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
     */
-  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.native
+  var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.undefined
   
   /**
     * The configuration for AdminCreateUser requests.
     */
-  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.native
+  var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.undefined
   
   /**
     * The attributes that are automatically verified when the Amazon Cognito service makes a request to update user pools.
     */
-  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.native
+  var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
     * Device configuration.
     */
-  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.native
+  var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
   
   /**
     * Email configuration.
     */
-  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.native
+  var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.undefined
   
   /**
     * The contents of the email verification message.
     */
-  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.native
+  var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
     * The subject of the email verification message.
     */
-  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.native
+  var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
     * The AWS Lambda configuration information from the request to update the user pool.
     */
-  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.native
+  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
     * Can be one of the following values:    OFF - MFA tokens are not required and cannot be specified during user registration.    ON - MFA tokens are required for all user registrations. You can only specify required when you are initially creating a user pool.    OPTIONAL - Users have the option when registering to create an MFA token.  
     */
-  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.native
+  var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   
   /**
     * A container with the policies you wish to update in a user pool.
     */
-  var Policies: js.UndefOr[UserPoolPolicyType] = js.native
+  var Policies: js.UndefOr[UserPoolPolicyType] = js.undefined
   
   /**
     * The contents of the SMS authentication message.
     */
-  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * SMS configuration.
     */
-  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.native
+  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
   
   /**
     * A container with information about the SMS verification message.
     */
-  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * Used to enable advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
     */
-  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.native
+  var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
   
   /**
     * The user pool ID for the user pool you want to update.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The tag keys and values to assign to the user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria.
     */
-  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.native
+  var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
   
   /**
     * The template for verification messages.
     */
-  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.native
+  var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.undefined
 }
 object UpdateUserPoolRequest {
   

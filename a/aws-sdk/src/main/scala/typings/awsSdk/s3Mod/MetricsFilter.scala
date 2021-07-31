@@ -2,26 +2,24 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsFilter extends StObject {
   
   /**
     * A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates, and an object must match all of the predicates in order for the filter to apply.
     */
-  var And: js.UndefOr[MetricsAndOperator] = js.native
+  var And: js.UndefOr[MetricsAndOperator] = js.undefined
   
   /**
     * The prefix used when evaluating a metrics filter.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * The tag used when evaluating a metrics filter.
     */
-  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.native
+  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.undefined
 }
 object MetricsFilter {
   

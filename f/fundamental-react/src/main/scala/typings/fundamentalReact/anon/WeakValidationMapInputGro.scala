@@ -3,18 +3,16 @@ package typings.fundamentalReact.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/InputGroup/InputGroup.InputGroupAddonProps> */
-@js.native
 trait WeakValidationMapInputGro extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var compact: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var compact: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var isButton: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var isButton: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapInputGro {
   

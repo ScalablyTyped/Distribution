@@ -3,34 +3,32 @@ package typings.iobroker.anon
 import typings.iobroker.iobrokerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.GroupCommon> */
-@js.native
 trait PartialGroupCommon extends StObject {
   
-  var acl: js.UndefOr[OmitPermissionSetusergrou] = js.native
+  var acl: js.UndefOr[OmitPermissionSetusergrou] = js.undefined
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object PartialGroupCommon {
   
   @scala.inline
-  def apply(): PartialGroupCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialGroupCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialGroupCommon]
   }
   
@@ -42,6 +40,9 @@ object PartialGroupCommon {
     
     @scala.inline
     def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])

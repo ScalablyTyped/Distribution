@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewApiKeyMod {
   
-  @JSImport("contentful-management/dist/typings/entities/preview-api-key", "wrapPreviewApiKey")
+  @JSImport("contentful-management/dist/typings/entities/preview-api-key", JSImport.Namespace)
   @js.native
-  def wrapPreviewApiKey(_http: AxiosInstance, data: PreviewApiKeyProps): PreviewApiKey = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/preview-api-key", "wrapPreviewApiKeyCollection")
-  @js.native
-  def wrapPreviewApiKeyCollection(http: AxiosInstance, data: CollectionProp[PreviewApiKeyProps]): Collection[PreviewApiKey, PreviewApiKeyProps] = js.native
+  @scala.inline
+  def wrapPreviewApiKey(_http: AxiosInstance, data: PreviewApiKeyProps): PreviewApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPreviewApiKey")(_http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[PreviewApiKey]
   
-  @js.native
+  @scala.inline
+  def wrapPreviewApiKeyCollection(http: AxiosInstance, data: CollectionProp[PreviewApiKeyProps]): Collection[PreviewApiKey, PreviewApiKeyProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPreviewApiKeyCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[PreviewApiKey, PreviewApiKeyProps]]
+  
   trait PreviewApiKey
-    extends PreviewApiKeyProps
+    extends StObject
+       with PreviewApiKeyProps
        with DefaultElements[PreviewApiKeyProps]
   object PreviewApiKey {
     
@@ -33,14 +34,13 @@ object previewApiKeyMod {
     }
   }
   
-  @js.native
   trait PreviewApiKeyProps extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object PreviewApiKeyProps {
     

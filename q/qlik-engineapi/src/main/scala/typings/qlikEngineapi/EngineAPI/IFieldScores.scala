@@ -2,40 +2,38 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldScores...
   */
-@js.native
 trait IFieldScores extends StObject {
   
   /**
     * Cardinality of a column/field divided by the number of rows in the table.
     * If the cardinal ratio is 1, it means that the column is a candidate/primary key.
     */
-  var qCardinalRatio: Double = js.native
+  var qCardinalRatio: Double
   
   /**
     * Field name.
     * One of the field names defined in qFieldPairName.
     */
-  var qFieldName: String = js.native
+  var qFieldName: String
   
   /**
     * Number of matches between the two fields defined in qFieldPairName divided by the number
     * of values in the field qFieldName.
     * If 0, it means that there are no common values between the two fields defined in qFieldPairName.
     */
-  var qRowScore: Double = js.native
+  var qRowScore: Double
   
   /**
     * Number of distinct matches between the two fields defined in qFieldPairName divided
     * by the number of distinct values in the field qFieldName.
     * If 0, it means that there are no common values between the two fields defined in qFieldPairName.
     */
-  var qSymbolScore: Double = js.native
+  var qSymbolScore: Double
 }
 object IFieldScores {
   

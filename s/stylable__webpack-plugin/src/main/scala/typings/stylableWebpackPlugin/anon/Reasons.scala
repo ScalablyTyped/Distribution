@@ -2,13 +2,11 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reasons extends StObject {
   
-  var reasons: js.Array[ModuleType] = js.native
+  var reasons: js.Array[ModuleType]
 }
 object Reasons {
   

@@ -5,31 +5,30 @@ import typings.wordpressBlocks.anon.PartialCategory
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoriesMod {
   
-  @JSImport("@wordpress/blocks/api/categories", "getCategories")
+  @JSImport("@wordpress/blocks/api/categories", JSImport.Namespace)
   @js.native
-  def getCategories(): js.Array[Category] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blocks/api/categories", "setCategories")
-  @js.native
-  def setCategories(categories: js.Array[Category]): Unit = js.native
+  @scala.inline
+  def getCategories(): js.Array[Category] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")().asInstanceOf[js.Array[Category]]
   
-  @JSImport("@wordpress/blocks/api/categories", "updateCategory")
-  @js.native
-  def updateCategory(slug: String, category: PartialCategory): Unit = js.native
+  @scala.inline
+  def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Category extends StObject {
     
-    var icon: js.UndefOr[Element | Icon | Null] = js.native
+    var icon: js.UndefOr[Element | Icon | Null] = js.undefined
     
-    var slug: String = js.native
+    var slug: String
     
-    var title: String = js.native
+    var title: String
   }
   object Category {
     

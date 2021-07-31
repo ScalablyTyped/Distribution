@@ -3,23 +3,24 @@ package typings.mendixmodelsdk
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAuthInfoMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/getAuthInfo", "getAuthInfo")
+  @JSImport("mendixmodelsdk/dist/sdk/internal/getAuthInfo", JSImport.Namespace)
   @js.native
-  def getAuthInfo(config: ISdkConfig): IAuthInfo = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAuthInfo(config: ISdkConfig): IAuthInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthInfo")(config.asInstanceOf[js.Any]).asInstanceOf[IAuthInfo]
+  
   trait IAuthInfo extends StObject {
     
-    var openid: js.UndefOr[String] = js.native
+    var openid: js.UndefOr[String] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object IAuthInfo {
     

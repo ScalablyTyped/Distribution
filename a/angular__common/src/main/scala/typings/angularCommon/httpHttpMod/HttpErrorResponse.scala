@@ -3,7 +3,6 @@ package typings.angularCommon.httpHttpMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpErrorResponse")
@@ -14,4 +13,10 @@ class HttpErrorResponse protected ()
   def this(init: typings.angularCommon.anon.Error) = this()
   
   val error: js.Any | Null = js.native
+  
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
 }

@@ -10,9 +10,9 @@ Editing commands for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-commands |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 133 |
-| # downloads        | 5161099 |
+| # releases         | 8 |
+| # dependents       | 167 |
+| # downloads        | 6917798 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to defer the request for a print task source. */
-@js.native
 trait PrintTaskSourceRequestedDeferral extends StObject {
   
   /** Indicates when the deferral for a print task source request is over. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object PrintTaskSourceRequestedDeferral {
   

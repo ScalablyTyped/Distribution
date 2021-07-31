@@ -5,20 +5,18 @@ import typings.octokitTypes.endpointsMod.SearchTopicsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersSearchTopicsEndpoint extends StObject {
   
-  var parameters: SearchTopicsEndpoint = js.native
+  var parameters: SearchTopicsEndpoint
   
-  var response: OctokitResponse[SearchTopicsResponseData] with `22` = js.native
+  var response: OctokitResponse[SearchTopicsResponseData] & `22`
 }
 object ParametersSearchTopicsEndpoint {
   
   @scala.inline
-  def apply(parameters: SearchTopicsEndpoint, response: OctokitResponse[SearchTopicsResponseData] with `22`): ParametersSearchTopicsEndpoint = {
+  def apply(parameters: SearchTopicsEndpoint, response: OctokitResponse[SearchTopicsResponseData] & `22`): ParametersSearchTopicsEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersSearchTopicsEndpoint]
   }
@@ -30,6 +28,6 @@ object ParametersSearchTopicsEndpoint {
     def setParameters(value: SearchTopicsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[SearchTopicsResponseData] with `22`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[SearchTopicsResponseData] & `22`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

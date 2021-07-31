@@ -3,14 +3,16 @@ package typings.constantinople
 import typings.constantinople.constantinopleStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryOperationMod {
   
-  @JSImport("constantinople/lib/binaryOperation", JSImport.Default)
+  @JSImport("constantinople/lib/binaryOperation", JSImport.Namespace)
   @js.native
-  def default(operator: Operator, left: js.Any, right: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(operator: Operator, left: js.Any, right: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.constantinople.constantinopleStrings.Plussign

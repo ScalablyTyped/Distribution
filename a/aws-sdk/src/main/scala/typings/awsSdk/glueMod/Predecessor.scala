@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Predecessor extends StObject {
   
   /**
     * The name of the job definition used by the predecessor job run.
     */
-  var JobName: js.UndefOr[NameString] = js.native
+  var JobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The job-run ID of the predecessor job run.
     */
-  var RunId: js.UndefOr[IdString] = js.native
+  var RunId: js.UndefOr[IdString] = js.undefined
 }
 object Predecessor {
   

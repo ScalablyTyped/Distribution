@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /**
     * The taget processor architecture for the application.
     */
-  var architecture: js.UndefOr[Architecture] = js.native
+  var architecture: js.UndefOr[Architecture] = js.undefined
   
   /**
     * A hash of the object specified by s3Bucket and s3Key.
     */
-  var etag: js.UndefOr[S3Etag] = js.native
+  var etag: js.UndefOr[S3Etag] = js.undefined
   
   /**
     * The s3 bucket name.
     */
-  var s3Bucket: js.UndefOr[S3Bucket] = js.native
+  var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The s3 object key.
     */
-  var s3Key: js.UndefOr[S3Key] = js.native
+  var s3Key: js.UndefOr[S3Key] = js.undefined
 }
 object Source {
   

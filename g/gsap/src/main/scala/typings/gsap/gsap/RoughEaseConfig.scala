@@ -6,23 +6,21 @@ import typings.gsap.gsapStrings.none
 import typings.gsap.gsapStrings.out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoughEaseConfig extends StObject {
   
-  var clamp: js.UndefOr[Boolean] = js.native
+  var clamp: js.UndefOr[Boolean] = js.undefined
   
-  var points: js.UndefOr[Double] = js.native
+  var points: js.UndefOr[Double] = js.undefined
   
-  var randomize: js.UndefOr[Boolean] = js.native
+  var randomize: js.UndefOr[Boolean] = js.undefined
   
-  var strength: js.UndefOr[Double] = js.native
+  var strength: js.UndefOr[Double] = js.undefined
   
-  var taper: js.UndefOr[in | out | both | none] = js.native
+  var taper: js.UndefOr[in | out | both | none] = js.undefined
   
-  var template: js.UndefOr[Ease] = js.native
+  var template: js.UndefOr[Ease] = js.undefined
 }
 object RoughEaseConfig {
   

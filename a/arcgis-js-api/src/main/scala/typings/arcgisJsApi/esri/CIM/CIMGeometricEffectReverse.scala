@@ -2,28 +2,27 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectReverse
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * A value indicating whether the dynamic output of a previous geometric effect is to be flipped or not.
     */
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectReverse: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse = js.native
+  var type_CIMGeometricEffectReverse: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse
 }
 object CIMGeometricEffectReverse {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectReverse): CIMGeometricEffectReverse = {
+  def apply(): CIMGeometricEffectReverse = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectReverse")
     __obj.asInstanceOf[CIMGeometricEffectReverse]
   }
   

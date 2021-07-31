@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RequestedOptions extends StObject {
   
   /** Inspect config. */
-  var jobConfig: js.UndefOr[GooglePrivacyDlpV2InspectJobConfig] = js.native
+  var jobConfig: js.UndefOr[GooglePrivacyDlpV2InspectJobConfig] = js.undefined
   
   /** If run with an InspectTemplate, a snapshot of its state at the time of this run. */
-  var snapshotInspectTemplate: js.UndefOr[GooglePrivacyDlpV2InspectTemplate] = js.native
+  var snapshotInspectTemplate: js.UndefOr[GooglePrivacyDlpV2InspectTemplate] = js.undefined
 }
 object GooglePrivacyDlpV2RequestedOptions {
   

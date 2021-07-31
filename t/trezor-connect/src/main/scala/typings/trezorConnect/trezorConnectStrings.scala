@@ -5,7 +5,6 @@ import typings.trezorConnect.mod.DeviceMode
 import typings.trezorConnect.mod.DeviceStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trezorConnectStrings {
@@ -16,27 +15,37 @@ object trezorConnectStrings {
   def acquired: acquired = "acquired".asInstanceOf[acquired]
   
   @js.native
-  sealed trait available extends DeviceStatus
+  sealed trait available
+    extends StObject
+       with DeviceStatus
   @scala.inline
   def available: available = "available".asInstanceOf[available]
   
   @js.native
-  sealed trait bootloader extends DeviceMode
+  sealed trait bootloader
+    extends StObject
+       with DeviceMode
   @scala.inline
   def bootloader: bootloader = "bootloader".asInstanceOf[bootloader]
   
   @js.native
-  sealed trait initialize extends DeviceMode
+  sealed trait initialize
+    extends StObject
+       with DeviceMode
   @scala.inline
   def initialize: initialize = "initialize".asInstanceOf[initialize]
   
   @js.native
-  sealed trait normal extends DeviceMode
+  sealed trait normal
+    extends StObject
+       with DeviceMode
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait occupied extends DeviceStatus
+  sealed trait occupied
+    extends StObject
+       with DeviceStatus
   @scala.inline
   def occupied: occupied = "occupied".asInstanceOf[occupied]
   
@@ -46,17 +55,23 @@ object trezorConnectStrings {
   def opreturn: opreturn = "opreturn".asInstanceOf[opreturn]
   
   @js.native
-  sealed trait outdated extends DeviceFirmwareStatus
+  sealed trait outdated
+    extends StObject
+       with DeviceFirmwareStatus
   @scala.inline
   def outdated: outdated = "outdated".asInstanceOf[outdated]
   
   @js.native
-  sealed trait required extends DeviceFirmwareStatus
+  sealed trait required
+    extends StObject
+       with DeviceFirmwareStatus
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait seedless extends DeviceMode
+  sealed trait seedless
+    extends StObject
+       with DeviceMode
   @scala.inline
   def seedless: seedless = "seedless".asInstanceOf[seedless]
   
@@ -76,12 +91,16 @@ object trezorConnectStrings {
   def unreadable: unreadable = "unreadable".asInstanceOf[unreadable]
   
   @js.native
-  sealed trait used extends DeviceStatus
+  sealed trait used
+    extends StObject
+       with DeviceStatus
   @scala.inline
   def used: used = "used".asInstanceOf[used]
   
   @js.native
-  sealed trait valid extends DeviceFirmwareStatus
+  sealed trait valid
+    extends StObject
+       with DeviceFirmwareStatus
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
 }

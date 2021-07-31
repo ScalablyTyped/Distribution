@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autoLockScrollingMod {
@@ -18,10 +17,11 @@ object autoLockScrollingMod {
   trait AutoLockScrolling
     extends Component[AutoLockScrollingProps, js.Object, js.Any]
   
-  @js.native
-  trait AutoLockScrollingProps extends Props[AutoLockScrolling] {
+  trait AutoLockScrollingProps
+    extends StObject
+       with Props[AutoLockScrolling] {
     
-    var lock: Boolean = js.native
+    var lock: Boolean
   }
   object AutoLockScrollingProps {
     

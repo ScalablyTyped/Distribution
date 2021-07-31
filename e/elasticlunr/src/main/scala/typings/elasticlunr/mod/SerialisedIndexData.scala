@@ -3,25 +3,23 @@ package typings.elasticlunr.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialisedIndexData[T] extends StObject {
   
-  var documentStore: SerialisedDocumentStore[T] = js.native
+  var documentStore: SerialisedDocumentStore[T]
   
-  var fields: js.Array[/* keyof T */ String] = js.native
+  var fields: js.Array[/* keyof T */ String]
   
   var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData with TopLevel[js.Any] = js.native
+    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any]
   
-  var pipeline: SerialisedPipeline = js.native
+  var pipeline: SerialisedPipeline
   
-  var ref: /* keyof T */ String = js.native
+  var ref: /* keyof T */ String
   
-  var version: String = js.native
+  var version: String
 }
 object SerialisedIndexData {
   
@@ -31,7 +29,7 @@ object SerialisedIndexData {
     fields: js.Array[/* keyof T */ String],
     index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData with TopLevel[js.Any],
+    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any],
     pipeline: SerialisedPipeline,
     ref: /* keyof T */ String,
     version: String
@@ -41,7 +39,7 @@ object SerialisedIndexData {
   }
   
   @scala.inline
-  implicit class SerialisedIndexDataMutableBuilder[Self <: SerialisedIndexData[_], T] (val x: Self with SerialisedIndexData[T]) extends AnyVal {
+  implicit class SerialisedIndexDataMutableBuilder[Self <: SerialisedIndexData[?], T] (val x: Self & SerialisedIndexData[T]) extends AnyVal {
     
     @scala.inline
     def setDocumentStore(value: SerialisedDocumentStore[T]): Self = StObject.set(x, "documentStore", value.asInstanceOf[js.Any])
@@ -56,7 +54,7 @@ object SerialisedIndexData {
     def setIndex(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-      */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData with TopLevel[js.Any]
+      */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any]
     ): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline

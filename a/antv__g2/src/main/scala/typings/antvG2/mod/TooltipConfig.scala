@@ -1,10 +1,7 @@
 package typings.antvG2.mod
 
-import typings.antvG2.antvG2Booleans.`false`
-import typings.antvG2.antvG2Strings.mini
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +13,8 @@ trait TooltipConfig extends StObject
 object TooltipConfig {
   
   @scala.inline
-  def CanvasTooltipConfig(useHtml: `false`): typings.antvG2.mod.CanvasTooltipConfig = {
-    val __obj = js.Dynamic.literal(useHtml = useHtml.asInstanceOf[js.Any])
+  def CanvasTooltipConfig(): typings.antvG2.mod.CanvasTooltipConfig = {
+    val __obj = js.Dynamic.literal(useHtml = false)
     __obj.asInstanceOf[typings.antvG2.mod.CanvasTooltipConfig]
   }
   
@@ -28,9 +25,9 @@ object TooltipConfig {
   }
   
   @scala.inline
-  def MiniTooltipConfig(`type`: mini): typings.antvG2.mod.MiniTooltipConfig = {
+  def MiniTooltipConfig(): typings.antvG2.mod.MiniTooltipConfig = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mini")
     __obj.asInstanceOf[typings.antvG2.mod.MiniTooltipConfig]
   }
 }

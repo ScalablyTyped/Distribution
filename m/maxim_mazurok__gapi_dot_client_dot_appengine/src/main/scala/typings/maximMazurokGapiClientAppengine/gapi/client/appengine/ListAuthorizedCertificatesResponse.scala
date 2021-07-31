@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuthorizedCertificatesResponse extends StObject {
   
   /** The SSL certificates the user is authorized to administer. */
-  var certificates: js.UndefOr[js.Array[AuthorizedCertificate]] = js.native
+  var certificates: js.UndefOr[js.Array[AuthorizedCertificate]] = js.undefined
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAuthorizedCertificatesResponse {
   

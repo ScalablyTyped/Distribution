@@ -2,95 +2,93 @@ package typings.memmonit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object MemoryMonitoring {
     
+    @JSImport("memmonit", "MemoryMonitoring")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the total memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory value total
       */
-    @JSImport("memmonit", "MemoryMonitoring.getMemoryTotal")
-    @js.native
-    def getMemoryTotal(unit: String): Double = js.native
+    @scala.inline
+    def getMemoryTotal(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMemoryTotal")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the total memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory value total fixed
       */
-    @JSImport("memmonit", "MemoryMonitoring.getMemoryTotalFixed")
-    @js.native
-    def getMemoryTotalFixed(unit: String, value: Double): Double = js.native
+    @scala.inline
+    def getMemoryTotalFixed(unit: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMemoryTotalFixed")(unit.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the total memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory value total truncated
       */
-    @JSImport("memmonit", "MemoryMonitoring.getMemoryTotalTrunc")
-    @js.native
-    def getMemoryTotalTrunc(unit: String): Double = js.native
+    @scala.inline
+    def getMemoryTotalTrunc(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMemoryTotalTrunc")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the amount of memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory Usage
       */
-    @JSImport("memmonit", "MemoryMonitoring.getMemoryUsage")
-    @js.native
-    def getMemoryUsage(unit: String): Double = js.native
+    @scala.inline
+    def getMemoryUsage(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMemoryUsage")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the amount of memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory value used fixed
       */
-    @JSImport("memmonit", "MemoryMonitoring.getMemoryUsageFixed")
-    @js.native
-    def getMemoryUsageFixed(unit: String, value: Double): Double = js.native
+    @scala.inline
+    def getMemoryUsageFixed(unit: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMemoryUsageFixed")(unit.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the amount of memory used.
       * @param unit Return measurement unit. Support GB, MB or kB
       * @returns Memory value used truncated
       */
-    @JSImport("memmonit", "MemoryMonitoring.memoryUsageTrunc")
-    @js.native
-    def memoryUsageTrunc(unit: String): Double = js.native
+    @scala.inline
+    def memoryUsageTrunc(unit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsageTrunc")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   object RegisterMonitoring {
     
-    /**
-      * Writes the measurement to a file.
-      * @param file Recording file
-      * @param unit Return measurement unit. Support GB, MB or kB
-      */
-    @JSImport("memmonit", "RegisterMonitoring.registerMemoryUsage")
+    @JSImport("memmonit", "RegisterMonitoring")
     @js.native
-    def registerMemoryUsage(file: String, unit: String): Unit = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Writes the measurement to a file.
       * @param file Recording file
       * @param unit Return measurement unit. Support GB, MB or kB
       */
-    @JSImport("memmonit", "RegisterMonitoring.registerMemoryUsageFixed")
-    @js.native
-    def registerMemoryUsageFixed(file: String, unit: String): Unit = js.native
+    @scala.inline
+    def registerMemoryUsage(file: String, unit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMemoryUsage")(file.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Writes the measurement to a file.
       * @param file Recording file
       * @param unit Return measurement unit. Support GB, MB or kB
       */
-    @JSImport("memmonit", "RegisterMonitoring.registerMemoryUsageTrunc")
-    @js.native
-    def registerMemoryUsageTrunc(file: String, unit: String): Unit = js.native
+    @scala.inline
+    def registerMemoryUsageFixed(file: String, unit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMemoryUsageFixed")(file.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Writes the measurement to a file.
+      * @param file Recording file
+      * @param unit Return measurement unit. Support GB, MB or kB
+      */
+    @scala.inline
+    def registerMemoryUsageTrunc(file: String, unit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMemoryUsageTrunc")(file.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

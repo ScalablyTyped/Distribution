@@ -5,15 +5,13 @@ import typings.glReact.mod.Surface
 import typings.glReact.mod.Vec4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: Vec4 = js.native
+    var color: Vec4
   }
   object Color {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dst extends StObject {
     
-    def dst(): Unit = js.native
+    def dst(): Unit
     
-    def src(): Unit = js.native
+    def src(): Unit
   }
   object Dst {
     
@@ -57,10 +54,9 @@ object anon {
     }
   }
   
-  @js.native
   trait GetGLSize extends StObject {
     
-    def getGLSize(): js.Tuple2[Double, Double] = js.native
+    def getGLSize(): js.Tuple2[Double, Double]
   }
   object GetGLSize {
     
@@ -78,17 +74,16 @@ object anon {
     }
   }
   
-  @js.native
   trait GlParent extends StObject {
     
-    var glParent: Surface[_] | typings.glReact.mod.Node = js.native
+    var glParent: Surface[js.Any] | typings.glReact.mod.Node
     
-    var glSurface: Surface[_] = js.native
+    var glSurface: Surface[js.Any]
   }
   object GlParent {
     
     @scala.inline
-    def apply(glParent: Surface[_] | typings.glReact.mod.Node, glSurface: Surface[_]): GlParent = {
+    def apply(glParent: Surface[js.Any] | typings.glReact.mod.Node, glSurface: Surface[js.Any]): GlParent = {
       val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlParent]
     }
@@ -97,17 +92,16 @@ object anon {
     implicit class GlParentMutableBuilder[Self <: GlParent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGlParent(value: Surface[_] | typings.glReact.mod.Node): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
+      def setGlParent(value: Surface[js.Any] | typings.glReact.mod.Node): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGlSurface(value: Surface[_]): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
+      def setGlSurface(value: Surface[js.Any]): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait GlParentAny extends StObject {
     
-    var glParent: js.Any = js.native
+    var glParent: js.Any
   }
   object GlParentAny {
     
@@ -125,10 +119,9 @@ object anon {
     }
   }
   
-  @js.native
   trait GlParentBus extends StObject {
     
-    var glParent: Bus = js.native
+    var glParent: Bus
   }
   object GlParentBus {
     
@@ -146,12 +139,11 @@ object anon {
     }
   }
   
-  @js.native
   trait GlSurface extends StObject {
     
-    var glParent: js.Any = js.native
+    var glParent: js.Any
     
-    var glSurface: js.Any = js.native
+    var glSurface: js.Any
   }
   object GlSurface {
     
@@ -172,12 +164,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var node: typings.glReact.mod.Node | Bus = js.native
+    var node: typings.glReact.mod.Node | Bus
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Node {
     
@@ -199,12 +190,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Obj extends StObject {
     
-    var obj: js.Any = js.native
+    var obj: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Obj {
     
@@ -226,14 +216,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ratio extends StObject {
     
-    var obj: js.Any = js.native
+    var obj: js.Any
     
-    var ratio: Boolean = js.native
+    var ratio: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Ratio {
     

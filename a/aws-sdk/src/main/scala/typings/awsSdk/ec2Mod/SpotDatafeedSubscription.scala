@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotDatafeedSubscription extends StObject {
   
   /**
     * The name of the Amazon S3 bucket where the Spot Instance data feed is located.
     */
-  var Bucket: js.UndefOr[String] = js.native
+  var Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The fault codes for the Spot Instance request, if any.
     */
-  var Fault: js.UndefOr[SpotInstanceStateFault] = js.native
+  var Fault: js.UndefOr[SpotInstanceStateFault] = js.undefined
   
   /**
     * The AWS account ID of the account.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix for the data feed files.
     */
-  var Prefix: js.UndefOr[String] = js.native
+  var Prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the Spot Instance data feed subscription.
     */
-  var State: js.UndefOr[DatafeedSubscriptionState] = js.native
+  var State: js.UndefOr[DatafeedSubscriptionState] = js.undefined
 }
 object SpotDatafeedSubscription {
   

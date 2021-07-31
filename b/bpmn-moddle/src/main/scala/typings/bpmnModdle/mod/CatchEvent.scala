@@ -2,24 +2,24 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatchEvent extends Event {
+trait CatchEvent
+  extends StObject
+     with Event {
   
-  var dataOutputAssociations: js.Array[DataOutputAssociation] = js.native
+  var dataOutputAssociations: js.Array[DataOutputAssociation]
   
-  var dataOutputs: js.Array[DataOutput] = js.native
+  var dataOutputs: js.Array[DataOutput]
   
-  var eventDefinitions: js.Array[EventDefinition] = js.native
+  var eventDefinitions: js.Array[EventDefinition]
   
-  var outputSet: OutputSet = js.native
+  var outputSet: OutputSet
   
   /**
     * @default false
     */
-  var parallelMultiple: Boolean = js.native
+  var parallelMultiple: Boolean
 }
 object CatchEvent {
   

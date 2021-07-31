@@ -2,15 +2,14 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentPageReference
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var pageReference: String = js.native
+  var pageReference: String
 }
 object ContentPageReference {
   

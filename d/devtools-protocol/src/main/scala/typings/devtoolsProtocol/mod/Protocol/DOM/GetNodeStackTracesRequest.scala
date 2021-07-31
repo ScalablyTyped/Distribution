@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNodeStackTracesRequest extends StObject {
   
   /**
     * Id of the node to get stack traces for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object GetNodeStackTracesRequest {
   

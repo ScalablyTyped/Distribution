@@ -15,177 +15,175 @@ import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TracerOptions extends StObject {
   
   /**
     * Enable Trace Analytics.
     * @default false
     */
-  var analytics: js.UndefOr[Boolean] = js.native
+  var analytics: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client token for browser tracing. Can be generated in the UI at `Integrations -> APIs`.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Enable debug logging in the tracer.
     * @default false
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Options specific for the Dogstatsd agent.
     */
-  var dogstatsd: js.UndefOr[Hostname] = js.native
+  var dogstatsd: js.UndefOr[Hostname] = js.undefined
   
   /**
     * Whether to enable the tracer.
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set an application’s environment e.g. prod, pre-prod, stage.
     */
-  var env: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.undefined
   
   /**
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[Boolean | B3] = js.native
+  var experimental: js.UndefOr[Boolean | B3] = js.undefined
   
   /**
     * Interval in milliseconds at which the tracer will submit traces to the agent.
     * @default 2000
     */
-  var flushInterval: js.UndefOr[Double] = js.native
+  var flushInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration of the ingestion between the agent and the backend.
     */
-  var ingestion: js.UndefOr[RateLimit] = js.native
+  var ingestion: js.UndefOr[RateLimit] = js.undefined
   
   /**
     * Whether to enable trace ID injection in log records to be able to correlate
     * traces with logs.
     * @default false
     */
-  var logInjection: js.UndefOr[Boolean] = js.native
+  var logInjection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string representing the minimum tracer log level to use when debug logging is enabled
     * @default 'debug'
     */
-  var logLevel: js.UndefOr[error | debug] = js.native
+  var logLevel: js.UndefOr[error | debug] = js.undefined
   
   /**
     * Custom logger to be used by the tracer (if debug = true),
     * should support error(), warn(), info(), and debug() methods
     * see https://datadog.github.io/dd-trace-js/#custom-logging
     */
-  var logger: js.UndefOr[Debug] = js.native
+  var logger: js.UndefOr[Debug] = js.undefined
   
   /**
     * Custom function for DNS lookups when sending requests to the agent.
     * @default dns.lookup()
     */
-  var lookup: js.UndefOr[LookupFunction] = js.native
+  var lookup: js.UndefOr[LookupFunction] = js.undefined
   
   /**
     * If false, require a parent in order to trace.
     * @default true
     */
-  var orphanable: js.UndefOr[Boolean] = js.native
+  var orphanable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to load all built-in plugins.
     * @default true
     */
-  var plugins: js.UndefOr[Boolean] = js.native
+  var plugins: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The port of the trace agent that the tracer will submit to.
     * @default 8126
     */
-  var port: js.UndefOr[Double | String] = js.native
+  var port: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Protocol version to use for requests to the agent. The version configured must be supported by the agent version installed or all traces will be dropped.
     * @default 0.4
     */
-  var protocolVersion: js.UndefOr[String] = js.native
+  var protocolVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to report the hostname of the service host. This is used when the agent is deployed on a different host and cannot determine the hostname automatically.
     * @default false
     */
-  var reportHostname: js.UndefOr[Boolean] = js.native
+  var reportHostname: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable runtime metrics.
     * @default false
     */
-  var runtimeMetrics: js.UndefOr[Boolean] = js.native
+  var runtimeMetrics: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Percentage of spans to sample as a float between 0 and 1.
     * @default 1
     */
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies which scope implementation to use. The default is to use the best
     * implementation for the runtime. Only change this if you know what you are
     * doing.
     */
-  var scope: js.UndefOr[async_hooks | async_local_storage | noop] = js.native
+  var scope: js.UndefOr[async_hooks | async_local_storage | noop] = js.undefined
   
   /**
     * The service name to be used for this program. If not set, the service name
     * will attempted to be inferred from package.json
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable startup logs.
     * @default true
     */
-  var startupLogs: js.UndefOr[Boolean] = js.native
+  var startupLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Global tags that should be assigned to every span.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Whether to track the scope of async functions. This is needed for async/await to work with non-native promises (thenables). Only disable this if you are sure only native promises are used with async/await, or if you are using Node >=14.5 since the issue has been fixed in that version.
     * @default true
     */
-  var trackAsyncScope: js.UndefOr[Boolean] = js.native
+  var trackAsyncScope: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The url of the trace agent that the tracer will submit to.
     * Takes priority over hostname and port, if set.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the application. If not set, the version
     * will attempted to be inferred from package.json.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object TracerOptions {
   

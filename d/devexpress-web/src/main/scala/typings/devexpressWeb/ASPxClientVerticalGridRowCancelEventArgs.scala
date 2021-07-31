@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable events of a client ASPxVerticalGrid row.
   */
-@js.native
-trait ASPxClientVerticalGridRowCancelEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientVerticalGridRowCancelEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed client row.
     */
-  var row: ASPxClientVerticalGridRow = js.native
+  var row: ASPxClientVerticalGridRow
 }
 object ASPxClientVerticalGridRowCancelEventArgs {
   

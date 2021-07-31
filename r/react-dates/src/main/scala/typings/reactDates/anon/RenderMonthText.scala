@@ -4,15 +4,15 @@ import typings.react.mod.ReactNode
 import typings.reactDates.mod.RenderMonthProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderMonthText extends RenderMonthProps {
+trait RenderMonthText
+  extends StObject
+     with RenderMonthProps {
   
-  var renderMonthElement: js.UndefOr[(js.Function1[/* props */ IsVisible, ReactNode]) | Null] = js.native
+  var renderMonthElement: js.UndefOr[(js.Function1[/* props */ IsVisible, ReactNode]) | Null] = js.undefined
   
-  var renderMonthText: js.UndefOr[scala.Nothing] = js.native
+  var renderMonthText: js.UndefOr[scala.Nothing] = js.undefined
 }
 object RenderMonthText {
   

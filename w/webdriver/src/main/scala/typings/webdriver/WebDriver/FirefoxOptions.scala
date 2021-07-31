@@ -1,59 +1,72 @@
 package typings.webdriver.WebDriver
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FirefoxOptions extends js.Object {
-  var args: js.UndefOr[js.Array[String]] = js.native
-  var binary: js.UndefOr[String] = js.native
-  var log: js.UndefOr[FirefoxLogObject] = js.native
-  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
-  var profile: js.UndefOr[String] = js.native
+trait FirefoxOptions extends StObject {
+  
+  var args: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var binary: js.UndefOr[String] = js.undefined
+  
+  var debuggerAddress: js.UndefOr[String] = js.undefined
+  
+  var log: js.UndefOr[FirefoxLogObject] = js.undefined
+  
+  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
+  
+  var profile: js.UndefOr[String] = js.undefined
 }
-
 object FirefoxOptions {
+  
   @scala.inline
   def apply(): FirefoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirefoxOptions]
   }
-  @scala.inline
-  implicit class FirefoxOptionsOps[Self <: FirefoxOptions] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
-    @scala.inline
-    def setBinary(value: String): Self = this.set("binary", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
-    @scala.inline
-    def setLog(value: FirefoxLogObject): Self = this.set("log", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
-    @scala.inline
-    def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = this.set("prefs", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePrefs: Self = this.set("prefs", js.undefined)
-    @scala.inline
-    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
-  }
   
+  @scala.inline
+  implicit class FirefoxOptionsMutableBuilder[Self <: FirefoxOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    
+    @scala.inline
+    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    
+    @scala.inline
+    def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
+    
+    @scala.inline
+    def setLog(value: FirefoxLogObject): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    @scala.inline
+    def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+    
+    @scala.inline
+    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+  }
 }
-

@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchMeterUsageRequest extends StObject {
   
   /**
     * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
     */
-  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode = js.native
+  var ProductCode: typings.awsSdk.marketplacemeteringMod.ProductCode
   
   /**
     * The set of UsageRecords to submit. BatchMeterUsage accepts up to 25 UsageRecords at a time.
     */
-  var UsageRecords: UsageRecordList = js.native
+  var UsageRecords: UsageRecordList
 }
 object BatchMeterUsageRequest {
   

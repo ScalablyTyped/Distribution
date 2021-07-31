@@ -14,25 +14,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UIAddComponent extends Object {
+trait UIAddComponent
+  extends StObject
+     with Object {
   
   /**
     * The component to add to the UI.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
     */
-  var component: Widget_ | HTMLElement | String = js.native
+  var component: Widget_ | HTMLElement | String
   
   /**
     * The placement index of the component.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The position in the view at which to add the component.
@@ -41,7 +41,7 @@ trait UIAddComponent extends Object {
     */
   var position: js.UndefOr[
     `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
-  ] = js.native
+  ] = js.undefined
 }
 object UIAddComponent {
   

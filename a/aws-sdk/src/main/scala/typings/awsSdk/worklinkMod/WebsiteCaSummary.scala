@@ -2,26 +2,24 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebsiteCaSummary extends StObject {
   
   /**
     * The time when the CA was added.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * A unique identifier for the CA.
     */
-  var WebsiteCaId: js.UndefOr[Id] = js.native
+  var WebsiteCaId: js.UndefOr[Id] = js.undefined
 }
 object WebsiteCaSummary {
   

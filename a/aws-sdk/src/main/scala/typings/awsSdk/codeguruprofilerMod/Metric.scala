@@ -2,26 +2,24 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metric extends StObject {
   
   /**
     *  The name of the method that appears as a frame in any stack in a profile. 
     */
-  var frameName: String = js.native
+  var frameName: String
   
   /**
     *  The list of application runtime thread states that is used to calculate the metric value for the frame. 
     */
-  var threadStates: Strings = js.native
+  var threadStates: Strings
   
   /**
     *  A type that specifies how a metric for a frame is analyzed. The supported value AggregatedRelativeTotalTime is an aggregation of the metric value for one frame that is calculated across the occurences of all frames in a profile.
     */
-  var `type`: MetricType = js.native
+  var `type`: MetricType
 }
 object Metric {
   

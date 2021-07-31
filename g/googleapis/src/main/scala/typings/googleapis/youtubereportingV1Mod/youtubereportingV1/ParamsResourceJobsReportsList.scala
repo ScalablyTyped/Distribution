@@ -6,57 +6,57 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceJobsReportsList extends StandardParameters {
+trait ParamsResourceJobsReportsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If set, only reports created after the specified date/time are returned.
     */
-  var createdAfter: js.UndefOr[String] = js.native
+  var createdAfter: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the job.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * The content owner's external ID on which behalf the user is acting on. If
     * not set, the user is acting for himself (his own channel).
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size. Server may return fewer report types than requested.
     * If unspecified, server will pick an appropriate default.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying a page of results the server should return.
     * Typically, this is the value of ListReportsResponse.next_page_token
     * returned in response to the previous call to the `ListReports` method.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * If set, only reports whose start time is greater than or equal the
     * specified date/time are returned.
     */
-  var startTimeAtOrAfter: js.UndefOr[String] = js.native
+  var startTimeAtOrAfter: js.UndefOr[String] = js.undefined
   
   /**
     * If set, only reports whose start time is smaller than the specified
     * date/time are returned.
     */
-  var startTimeBefore: js.UndefOr[String] = js.native
+  var startTimeBefore: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceJobsReportsList {
   

@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapListBox control.
   */
 @js.native
-trait BootstrapClientListBox extends ASPxClientListBox {
+trait BootstrapClientListBox
+  extends StObject
+     with ASPxClientListBox {
   
   /**
     * Gets the CSS class of the icon displayed within a List Box item badge. A String containing the name of a CSS class.

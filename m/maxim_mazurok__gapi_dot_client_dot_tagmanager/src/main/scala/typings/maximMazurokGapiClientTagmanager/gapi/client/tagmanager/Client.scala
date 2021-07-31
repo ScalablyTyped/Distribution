@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The Client ID uniquely identifies the GTM client. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the GTM Client as computed at storage time. This value is recomputed whenever the client is modified. */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** Client display name. @mutable tagmanager.accounts.containers.workspaces.clients.create @mutable tagmanager.accounts.containers.workspaces.clients.update */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The client's parameters. @mutable tagmanager.accounts.containers.workspaces.clients.create @mutable tagmanager.accounts.containers.workspaces.clients.update */
-  var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+  var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /** Parent folder id. */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /** GTM client's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Priority determines relative firing order. @mutable tagmanager.accounts.containers.workspaces.clients.create @mutable tagmanager.accounts.containers.workspaces.clients.update */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** Auto generated link to the tag manager UI */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /** Client type. @mutable tagmanager.accounts.containers.workspaces.clients.create @mutable tagmanager.accounts.containers.workspaces.clients.update */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** GTM Workspace ID. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object Client {
   

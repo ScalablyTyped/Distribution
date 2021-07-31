@@ -3,7 +3,6 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoShapeQuery")
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A Query to find documents with a geo_shapes matching a specific shape.
   */
-class GeoShapeQuery () extends Query {
+class GeoShapeQuery ()
+  extends StObject
+     with Query {
   
   /*
     The type of ejs object.  For internal use only.

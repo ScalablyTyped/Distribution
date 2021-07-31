@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberValidateResponse extends StObject {
   
-  var NumberValidateResponse: typings.awsSdk.pinpointMod.NumberValidateResponse = js.native
+  var NumberValidateResponse: typings.awsSdk.pinpointMod.NumberValidateResponse
 }
 object PhoneNumberValidateResponse {
   

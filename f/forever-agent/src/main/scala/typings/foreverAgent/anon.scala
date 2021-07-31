@@ -5,15 +5,13 @@ import typings.foreverAgent.mod.ForeverAgentOptions
 import typings.foreverAgent.mod.ForeverAgentSSL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait SSL extends StObject {
     
-    var SSL: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL] = js.native
+    var SSL: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL]
   }
   object SSL {
     
@@ -31,11 +29,10 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofForeverAgent extends StObject {
     
     /* static member */
-    var defaultMinSockets: Double = js.native
+    var defaultMinSockets: Double
   }
   object TypeofForeverAgent {
     

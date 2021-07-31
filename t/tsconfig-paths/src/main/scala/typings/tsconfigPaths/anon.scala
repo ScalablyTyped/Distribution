@@ -3,19 +3,17 @@ package typings.tsconfigPaths
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var paths: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var paths: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object BaseUrl {
     

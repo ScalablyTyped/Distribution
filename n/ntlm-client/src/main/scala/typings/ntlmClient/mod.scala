@@ -3,37 +3,36 @@ package typings.ntlmClient
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ntlm-client", "createType1Message")
+  @JSImport("ntlm-client", JSImport.Namespace)
   @js.native
-  def createType1Message(workstation: String, domain: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ntlm-client", "createType3Message")
-  @js.native
-  def createType3Message(type2Message: NtlmType2, username: String, password: String, workstation: String, domain: String): String = js.native
+  @scala.inline
+  def createType1Message(workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType1Message")(workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ntlm-client", "decodeType2Message")
-  @js.native
-  def decodeType2Message(type1Message: String): NtlmType2 = js.native
+  @scala.inline
+  def createType3Message(type2Message: NtlmType2, username: String, password: String, workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType3Message")(type2Message.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def decodeType2Message(type1Message: String): NtlmType2 = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeType2Message")(type1Message.asInstanceOf[js.Any]).asInstanceOf[NtlmType2]
+  
   trait NtlmType2 extends StObject {
     
-    var challenge: Buffer = js.native
+    var challenge: Buffer
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var targetInfo: typings.ntlmClient.anon.Buffer = js.native
+    var targetInfo: typings.ntlmClient.anon.Buffer
     
-    var targetName: String = js.native
+    var targetName: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object NtlmType2 {
     

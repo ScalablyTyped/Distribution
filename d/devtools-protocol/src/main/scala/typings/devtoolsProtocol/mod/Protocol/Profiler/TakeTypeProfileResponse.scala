@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeTypeProfileResponse extends StObject {
   
   /**
     * Type profile for all scripts since startTypeProfile() was turned on.
     */
-  var result: js.Array[ScriptTypeProfile] = js.native
+  var result: js.Array[ScriptTypeProfile]
 }
 object TakeTypeProfileResponse {
   

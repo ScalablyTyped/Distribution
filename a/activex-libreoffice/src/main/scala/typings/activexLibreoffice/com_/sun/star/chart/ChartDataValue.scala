@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,17 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This struct is currently used nowhere.
   * @deprecated Deprecated
   */
-@js.native
 trait ChartDataValue extends StObject {
   
   /** highest possible error value. */
-  var HighError: Double = js.native
+  var HighError: Double
   
   /** lowest possible error value. */
-  var LowError: Double = js.native
+  var LowError: Double
   
   /** value by itself. */
-  var Value: Double = js.native
+  var Value: Double
 }
 object ChartDataValue {
   

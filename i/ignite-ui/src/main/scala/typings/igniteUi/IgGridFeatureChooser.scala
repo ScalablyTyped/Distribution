@@ -4,51 +4,50 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridFeatureChooser
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var dropDownWidth: js.UndefOr[js.Any] = js.native
+  var dropDownWidth: js.UndefOr[js.Any] = js.undefined
   
-  var featureChooserDropDownOpened: js.UndefOr[FeatureChooserDropDownOpenedEvent] = js.native
+  var featureChooserDropDownOpened: js.UndefOr[FeatureChooserDropDownOpenedEvent] = js.undefined
   
-  var featureChooserDropDownOpening: js.UndefOr[FeatureChooserDropDownOpeningEvent] = js.native
+  var featureChooserDropDownOpening: js.UndefOr[FeatureChooserDropDownOpeningEvent] = js.undefined
   
-  var featureChooserRendered: js.UndefOr[FeatureChooserRenderedEvent] = js.native
+  var featureChooserRendered: js.UndefOr[FeatureChooserRenderedEvent] = js.undefined
   
-  var featureChooserRendering: js.UndefOr[FeatureChooserRenderingEvent] = js.native
+  var featureChooserRendering: js.UndefOr[FeatureChooserRenderingEvent] = js.undefined
   
-  var featureToggled: js.UndefOr[FeatureToggledEvent] = js.native
+  var featureToggled: js.UndefOr[FeatureToggledEvent] = js.undefined
   
-  var featureToggling: js.UndefOr[FeatureTogglingEvent] = js.native
+  var featureToggling: js.UndefOr[FeatureTogglingEvent] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
-  var menuToggling: js.UndefOr[MenuTogglingEvent] = js.native
+  var menuToggling: js.UndefOr[MenuTogglingEvent] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
 }
 object IgGridFeatureChooser {
   

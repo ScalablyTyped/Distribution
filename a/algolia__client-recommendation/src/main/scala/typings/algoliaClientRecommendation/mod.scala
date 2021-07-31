@@ -12,44 +12,48 @@ import typings.algoliaTransporter.mod.RequestOptions
 import typings.algoliaTransporter.mod.Transporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@algolia/client-recommendation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@algolia/client-recommendation", "createRecommendationClient")
   @js.native
-  val createRecommendationClient: CreateClient[RecommendationClient, RecommendationClientOptions with ClientTransporterOptions] = js.native
+  val createRecommendationClient: CreateClient[RecommendationClient, RecommendationClientOptions & ClientTransporterOptions] = js.native
   
-  @JSImport("@algolia/client-recommendation", "getPersonalizationStrategy")
-  @js.native
-  def getPersonalizationStrategy(base: RecommendationClient): js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona] = js.native
+  @scala.inline
+  def getPersonalizationStrategy(base: RecommendationClient): js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonalizationStrategy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona]]
   
-  @JSImport("@algolia/client-recommendation", "setPersonalizationStrategy")
-  @js.native
+  @scala.inline
   def setPersonalizationStrategy(base: RecommendationClient): js.Function2[
     /* personalizationStrategy */ PersonalizationStrategy, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseSetPersona
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPersonalizationStrategy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* personalizationStrategy */ PersonalizationStrategy, 
+    /* requestOptions */ js.UndefOr[RequestOptions], 
+    ReadonlyPromiseSetPersona
+  ]]
   
-  @js.native
   trait GetPersonalizationStrategyResponse extends StObject {
     
     /**
       * Events scoring
       */
-    var eventsScoring: js.Array[EventName] = js.native
+    var eventsScoring: js.Array[EventName]
     
     /**
       * Facets scoring
       */
-    var facetsScoring: js.Array[FacetName] = js.native
+    var facetsScoring: js.Array[FacetName]
     
     /**
       * Personalization impact
       */
-    var personalizationImpact: Double = js.native
+    var personalizationImpact: Double
   }
   object GetPersonalizationStrategyResponse {
     
@@ -83,23 +87,22 @@ object mod {
     }
   }
   
-  @js.native
   trait PersonalizationStrategy extends StObject {
     
     /**
       * Events scoring
       */
-    val eventsScoring: js.Array[EventType] = js.native
+    val eventsScoring: js.Array[EventType]
     
     /**
       * Facets scoring
       */
-    val facetsScoring: js.Array[Score] = js.native
+    val facetsScoring: js.Array[Score]
     
     /**
       * Personalization impact
       */
-    val personalizationImpact: Double = js.native
+    val personalizationImpact: Double
   }
   object PersonalizationStrategy {
     
@@ -129,18 +132,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RecommendationClient extends StObject {
     
     /**
       * The application id.
       */
-    val appId: String = js.native
+    val appId: String
     
     /**
       * The underlying transporter.
       */
-    val transporter: Transporter = js.native
+    val transporter: Transporter
   }
   object RecommendationClient {
     
@@ -161,23 +163,22 @@ object mod {
     }
   }
   
-  @js.native
   trait RecommendationClientOptions extends StObject {
     
     /**
       * The api key.
       */
-    val apiKey: String = js.native
+    val apiKey: String
     
     /**
       * The application id.
       */
-    val appId: String = js.native
+    val appId: String
     
     /**
       * The prefered region.
       */
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
   }
   object RecommendationClientOptions {
     
@@ -204,18 +205,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SetPersonalizationStrategyResponse extends StObject {
     
     /**
       * The message.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The status code.
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object SetPersonalizationStrategyResponse {
     

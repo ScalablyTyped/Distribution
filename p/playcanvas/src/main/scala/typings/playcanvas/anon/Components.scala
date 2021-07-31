@@ -2,19 +2,17 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Components extends StObject {
   
-  var components: Double = js.native
+  var components: Double
   
-  var normalize: js.UndefOr[Boolean] = js.native
+  var normalize: js.UndefOr[Boolean] = js.undefined
   
-  var semantic: String = js.native
+  var semantic: String
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object Components {
   

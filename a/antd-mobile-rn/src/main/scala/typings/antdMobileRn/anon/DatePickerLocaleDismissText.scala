@@ -2,19 +2,17 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePickerLocaleDismissText extends StObject {
   
-  var DatePickerLocale: Calendar = js.native
+  var DatePickerLocale: Calendar
   
-  var dismissText: String = js.native
+  var dismissText: String
   
-  var extra: String = js.native
+  var extra: String
   
-  var okText: String = js.native
+  var okText: String
 }
 object DatePickerLocaleDismissText {
   

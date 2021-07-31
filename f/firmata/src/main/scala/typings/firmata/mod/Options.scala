@@ -2,24 +2,22 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/master/lib/firmata.js#L429-L451
-@js.native
 trait Options extends StObject {
   
-  var analogPins: js.UndefOr[js.Array[Double]] = js.native
+  var analogPins: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var pins: js.UndefOr[js.Array[Pins]] = js.native
+  var pins: js.UndefOr[js.Array[Pins]] = js.undefined
   
-  var reportVersionTimeout: js.UndefOr[Double] = js.native
+  var reportVersionTimeout: js.UndefOr[Double] = js.undefined
   
-  var samplingInterval: js.UndefOr[Double] = js.native
+  var samplingInterval: js.UndefOr[Double] = js.undefined
   
-  var serialport: js.UndefOr[Options] = js.native
+  var serialport: js.UndefOr[Options] = js.undefined
   
-  var skipCapabilities: js.UndefOr[Boolean] = js.native
+  var skipCapabilities: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

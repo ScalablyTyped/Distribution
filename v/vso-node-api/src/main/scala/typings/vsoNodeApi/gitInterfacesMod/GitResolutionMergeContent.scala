@@ -2,17 +2,17 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitResolutionMergeContent extends GitResolution {
+trait GitResolutionMergeContent
+  extends StObject
+     with GitResolution {
   
-  var mergeType: GitResolutionMergeType = js.native
+  var mergeType: GitResolutionMergeType
   
-  var userMergedBlob: GitBlobRef = js.native
+  var userMergedBlob: GitBlobRef
   
-  var userMergedContent: js.Array[Double] = js.native
+  var userMergedContent: js.Array[Double]
 }
 object GitResolutionMergeContent {
   

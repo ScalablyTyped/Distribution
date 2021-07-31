@@ -3,23 +3,21 @@ package typings.cesium.anon
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildTileMask extends StObject {
   
-  var buffer: ArrayBuffer = js.native
+  var buffer: ArrayBuffer
   
-  var childTileMask: js.UndefOr[Double] = js.native
+  var childTileMask: js.UndefOr[Double] = js.undefined
   
-  var createdByUpsampling: js.UndefOr[Boolean] = js.native
+  var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.native
+  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.undefined
   
-  var negativeAltitudeExponentBias: Double = js.native
+  var negativeAltitudeExponentBias: Double
   
-  var negativeElevationThreshold: Double = js.native
+  var negativeElevationThreshold: Double
 }
 object ChildTileMask {
   

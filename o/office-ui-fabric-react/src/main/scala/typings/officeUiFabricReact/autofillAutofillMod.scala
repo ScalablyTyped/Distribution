@@ -4,9 +4,9 @@ import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
 import typings.officeUiFabricReact.autofillTypesMod.IAutofill
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import typings.react.mod.Component
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autofillAutofillMod {
@@ -79,11 +79,62 @@ object autofillAutofillMod {
     
     var _value: js.Any = js.native
     
+    /**
+      * Clear all text in the input. Sets value to '';
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
     @JSName("componentDidUpdate")
     def componentDidUpdate_MAutofill(): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAutofill(): Unit = js.native
+    
+    /**
+      * The current index of the cursor in the input area. Returns -1 if the input element
+      * is not ready.
+      */
+    /* CompleteClass */
+    var cursorLocation: Double | Null = js.native
+    
+    /**
+      * Focus the input element.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /**
+      * The current input element.
+      */
+    /* CompleteClass */
+    var inputElement: HTMLInputElement | Null = js.native
+    
+    /**
+      * A boolean for whether or not there is a value selected in the input area.
+      */
+    /* CompleteClass */
+    var isValueSelected: Boolean = js.native
+    
+    /**
+      * the current index of where the selection ends. Returns -1 if the input element
+      * is not ready.
+      */
+    /* CompleteClass */
+    var selectionEnd: Double | Null = js.native
+    
+    /**
+      * The current index of where the selection starts. Returns -1 if the input element
+      * is not ready.
+      */
+    /* CompleteClass */
+    var selectionStart: Double | Null = js.native
+    
+    /**
+      * The current text value that the user has entered.
+      */
+    /* CompleteClass */
+    var value: String = js.native
   }
   /* static members */
   object Autofill {
@@ -105,10 +156,9 @@ object autofillAutofillMod {
     def this(props: IAutofillProps) = this()
   }
   
-  @js.native
   trait IAutofillState extends StObject {
     
-    var displayValue: js.UndefOr[String] = js.native
+    var displayValue: js.UndefOr[String] = js.undefined
   }
   object IAutofillState {
     

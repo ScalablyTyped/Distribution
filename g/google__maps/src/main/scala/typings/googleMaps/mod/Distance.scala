@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait Distance extends StObject {
     * (or as overridden within the `units` parameter in the request).
     * (For example, miles and feet will be used for any origin within the United States.)
     */
-  var text: String = js.native
+  var text: String
   
   /** indicates the distance in meters. */
-  var value: Double = js.native
+  var value: Double
 }
 object Distance {
   

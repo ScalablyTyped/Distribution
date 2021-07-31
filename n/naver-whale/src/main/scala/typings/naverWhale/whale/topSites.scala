@@ -2,25 +2,23 @@ package typings.naverWhale.whale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topSites {
   
-  @js.native
   trait MostVisitedURL extends StObject {
     
     /**
       * 방문기록에서 판단한 여부입니다.
       * api로 추가한 경우에는 false입니다.
       */
-    var from_history: Boolean = js.native
+    var from_history: Boolean
     
     /** 페이지 제목 */
-    var title: String = js.native
+    var title: String
     
     /** 많이 방문한 url. */
-    var url: String = js.native
+    var url: String
   }
   object MostVisitedURL {
     
@@ -44,14 +42,13 @@ object topSites {
     }
   }
   
-  @js.native
   trait MostVisitedURL2 extends StObject {
     
     /** 페이지 제목 */
-    var title: String = js.native
+    var title: String
     
     /** 많이 방문한 url. */
-    var url: String = js.native
+    var url: String
   }
   object MostVisitedURL2 {
     

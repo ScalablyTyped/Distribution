@@ -2,20 +2,19 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSAsExpression
-  extends Node
+  extends StObject
+     with Node
      with Expression {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSAsExpression: typings.babelTypes.babelTypesStrings.TSAsExpression = js.native
+  var type_TSAsExpression: typings.babelTypes.babelTypesStrings.TSAsExpression
 }
 object TSAsExpression {
   

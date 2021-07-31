@@ -2,17 +2,15 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadPolicyConfig extends StObject {
   
-  var maxEventLoopDelay: js.UndefOr[Double] = js.native
+  var maxEventLoopDelay: js.UndefOr[Double] = js.undefined
   
-  var maxHeapUsedBytes: js.UndefOr[Double] = js.native
+  var maxHeapUsedBytes: js.UndefOr[Double] = js.undefined
   
-  var maxRssBytes: js.UndefOr[Double] = js.native
+  var maxRssBytes: js.UndefOr[Double] = js.undefined
 }
 object LoadPolicyConfig {
   

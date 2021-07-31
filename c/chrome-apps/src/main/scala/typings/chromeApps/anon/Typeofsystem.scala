@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofsystem extends StObject {
   
   // #endregion
@@ -18,7 +16,7 @@ trait Typeofsystem extends StObject {
     * Permissions: 'system.cpu'
     * @since Chrome 32.
     */
-  val cpu: Typeofcpu = js.native
+  val cpu: Typeofcpu
   
   ////////////////////
   // System Display //
@@ -28,7 +26,7 @@ trait Typeofsystem extends StObject {
     * Permissions: 'system.display'
     * @since Chrome 30.
     */
-  val display: Typeofdisplay = js.native
+  val display: Typeofdisplay
   
   ///////////////////
   // System Memory //
@@ -38,7 +36,7 @@ trait Typeofsystem extends StObject {
     * @requires Permissions: 'system.memory'
     * @since Chrome 32.
     */
-  val memory: Typeofmemory = js.native
+  val memory: Typeofmemory
   
   //////////////////////
   // System - Network //
@@ -47,7 +45,7 @@ trait Typeofsystem extends StObject {
     * The chrome.system.network API.
     * @requires Permissions: 'system.network'
     */
-  val network: Typeofnetwork = js.native
+  val network: Typeofnetwork
   
   /////////////////////////
   // System Power Source //
@@ -58,7 +56,7 @@ trait Typeofsystem extends StObject {
     * @description The chrome.system.powerSource API allows Chrome Kiosk Apps to query the state of connected power sources.
     * @since Latest
     */
-  val powerSource: TypeofpowerSource = js.native
+  val powerSource: TypeofpowerSource
   
   ////////////////////
   // System Storage //
@@ -68,7 +66,7 @@ trait Typeofsystem extends StObject {
     * @requires Permissions: 'system.storage'
     * @since Chrome 30.
     */
-  val storage: TypeofstorageEjectDevice = js.native
+  val storage: TypeofstorageEjectDevice
 }
 object Typeofsystem {
   

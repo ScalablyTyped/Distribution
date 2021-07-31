@@ -4,32 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exprMod {
   
-  @JSImport("vega-lite/build/src/expr", "isExprOrSignalRef")
+  @JSImport("vega-lite/build/src/expr", JSImport.Namespace)
   @js.native
-  def isExprOrSignalRef(o: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/expr", "isExprRef")
-  @js.native
-  def isExprRef(o: js.Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = js.native
+  @scala.inline
+  def isExprOrSignalRef(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprOrSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/expr", "replaceExprRefInIndex")
-  @js.native
-  def replaceExprRefInIndex(index: StringDictionary[js.Any | ExprOrSignalRef]): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def isExprRef(o: js.Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean]
+  
+  @scala.inline
+  def replaceExprRefInIndex(index: StringDictionary[js.Any | ExprOrSignalRef]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceExprRefInIndex")(index.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
   type ExprOrSignalRef = ExprRef | SignalRef
   
-  @js.native
   trait ExprRef extends StObject {
     
     /**
       * Vega expression (which can refer to Vega-Lite parameters).
       */
-    var expr: String = js.native
+    var expr: String
   }
   object ExprRef {
     

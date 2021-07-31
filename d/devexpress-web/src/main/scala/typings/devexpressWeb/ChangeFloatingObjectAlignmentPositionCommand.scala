@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to modify a floating object's alignment position.
   */
-@js.native
-trait ChangeFloatingObjectAlignmentPositionCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectAlignmentPositionSettings]
+trait ChangeFloatingObjectAlignmentPositionCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[FloatingObjectAlignmentPositionSettings]
 object ChangeFloatingObjectAlignmentPositionCommand {
   
   @scala.inline

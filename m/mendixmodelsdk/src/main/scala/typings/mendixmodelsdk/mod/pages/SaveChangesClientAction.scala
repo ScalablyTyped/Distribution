@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,9 +42,8 @@ object SaveChangesClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -56,9 +54,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -69,9 +66,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -82,9 +78,8 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -95,9 +90,8 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -108,9 +102,8 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -121,9 +114,8 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -134,9 +126,8 @@ object SaveChangesClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInBottomBarItemUnderAction")
-  @js.native
-  def createInBottomBarItemUnderAction(container: BottomBarItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInBottomBarItemUnderAction(container: BottomBarItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -147,9 +138,8 @@ object SaveChangesClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -160,9 +150,8 @@ object SaveChangesClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -173,9 +162,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -186,9 +174,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -199,9 +186,8 @@ object SaveChangesClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -212,9 +198,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -225,9 +210,8 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -238,9 +222,8 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -251,9 +234,8 @@ object SaveChangesClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -264,9 +246,8 @@ object SaveChangesClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.structureTypeName")

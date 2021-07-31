@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetAggregateResourceConfigRequest extends StObject {
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * A list of aggregate ResourceIdentifiers objects. 
     */
-  var ResourceIdentifiers: ResourceIdentifiersList = js.native
+  var ResourceIdentifiers: ResourceIdentifiersList
 }
 object BatchGetAggregateResourceConfigRequest {
   

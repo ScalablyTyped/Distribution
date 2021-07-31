@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The Application.
   */
 @js.native
-trait RigidBodyComponentSystem extends EventHandler {
+trait RigidBodyComponentSystem
+  extends StObject
+     with EventHandler {
   
   /**
     * The world space vector representing global gravity in the physics simulation.

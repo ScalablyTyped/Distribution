@@ -2,14 +2,12 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A condition type that compares a collection of time series against a
   * threshold.
   */
-@js.native
 trait SchemaMetricThreshold extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaMetricThreshold extends StObject {
     * It is advisable to use the ListTimeSeries method when debugging this
     * field.
     */
-  var aggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.undefined
   
   /**
     * The comparison to apply between the time series (indicated by filter and
@@ -31,7 +29,7 @@ trait SchemaMetricThreshold extends StObject {
     * left-hand side and the threshold on the right-hand side.Only
     * COMPARISON_LT and COMPARISON_GT are supported currently.
     */
-  var comparison: js.UndefOr[String] = js.native
+  var comparison: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the alignment of data points in individual time series selected
@@ -45,7 +43,7 @@ trait SchemaMetricThreshold extends StObject {
     * It is advisable to use the ListTimeSeries method when debugging this
     * field.
     */
-  var denominatorAggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.native
+  var denominatorAggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.undefined
   
   /**
     * A filter that identifies a time series that should be used as the
@@ -58,7 +56,7 @@ trait SchemaMetricThreshold extends StObject {
     * resource type, resource labels, and metric labels. This field may not
     * exceed 2048 Unicode characters in length.
     */
-  var denominatorFilter: js.UndefOr[String] = js.native
+  var denominatorFilter: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of time that a time series must violate the threshold to be
@@ -71,7 +69,7 @@ trait SchemaMetricThreshold extends StObject {
     * outlier does not generate spurious alerts, but short enough that
     * unhealthy states are detected and alerted on quickly.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * A filter that identifies which time series should be compared with the
@@ -82,12 +80,12 @@ trait SchemaMetricThreshold extends StObject {
     * resource labels, and metric labels. This field may not exceed 2048
     * Unicode characters in length.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * A value against which to compare the time series.
     */
-  var thresholdValue: js.UndefOr[Double] = js.native
+  var thresholdValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The number/percent of time series for which the comparison must hold in
@@ -96,7 +94,7 @@ trait SchemaMetricThreshold extends StObject {
     * have been identified by filter and aggregations, or by the ratio, if
     * denominator_filter and denominator_aggregations are specified.
     */
-  var trigger: js.UndefOr[SchemaTrigger] = js.native
+  var trigger: js.UndefOr[SchemaTrigger] = js.undefined
 }
 object SchemaMetricThreshold {
   

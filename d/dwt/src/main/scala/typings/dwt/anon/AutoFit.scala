@@ -2,97 +2,95 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFit extends StObject {
   
   // autoFit button
-  var autoFit: js.UndefOr[IconClass] = js.native
+  var autoFit: js.UndefOr[IconClass] = js.undefined
   
   // readDirection change button (vertical ,horizontal)
-  var blank1: js.UndefOr[Location] = js.native
+  var blank1: js.UndefOr[Location] = js.undefined
   
   // crop button
-  var crop: js.UndefOr[OnButtonClick] = js.native
+  var crop: js.UndefOr[OnButtonClick] = js.undefined
   
-  var currentTab: js.UndefOr[Location] = js.native
+  var currentTab: js.UndefOr[Location] = js.undefined
   
   // firstPage button
-  var firstPage: js.UndefOr[IconClass] = js.native
+  var firstPage: js.UndefOr[IconClass] = js.undefined
   
   // fitHeight button
-  var fitHeight: js.UndefOr[IconClass] = js.native
+  var fitHeight: js.UndefOr[IconClass] = js.undefined
   
   // fitWidth button
-  var fitWidth: js.UndefOr[IconClass] = js.native
+  var fitWidth: js.UndefOr[IconClass] = js.undefined
   
   // flip button
-  var flip: js.UndefOr[IconClass] = js.native
+  var flip: js.UndefOr[IconClass] = js.undefined
   
   // fullScreenToWebPage button
-  var fullPage: js.UndefOr[IconClass] = js.native
+  var fullPage: js.UndefOr[IconClass] = js.undefined
   
   // fullScreenToDevice
-  var fullScreen: js.UndefOr[IconClass] = js.native
+  var fullScreen: js.UndefOr[IconClass] = js.undefined
   
   // lastPage button
-  var lastPage: js.UndefOr[OnButtonClick] = js.native
+  var lastPage: js.UndefOr[OnButtonClick] = js.undefined
   
   // loadImage button
-  var loadImage: js.UndefOr[IconClass] = js.native
+  var loadImage: js.UndefOr[IconClass] = js.undefined
   
   // mirror button
-  var mirror: js.UndefOr[IconClass] = js.native
+  var mirror: js.UndefOr[IconClass] = js.undefined
   
   // nextPage button
-  var nextPage: js.UndefOr[IconClass] = js.native
+  var nextPage: js.UndefOr[IconClass] = js.undefined
   
   // pagination show
-  var pagination: js.UndefOr[LocationVisibility] = js.native
+  var pagination: js.UndefOr[LocationVisibility] = js.undefined
   
   // panelChange button (thumbnail, dir tree, tags)
-  var panelChange: js.UndefOr[IconClass] = js.native
+  var panelChange: js.UndefOr[IconClass] = js.undefined
   
   // previousPage button
-  var previousPage: js.UndefOr[IconClass] = js.native
+  var previousPage: js.UndefOr[IconClass] = js.undefined
   
   // print button
-  var print: js.UndefOr[IconClass] = js.native
+  var print: js.UndefOr[IconClass] = js.undefined
   
   // readDirection change button (vertical ,horizontal)
-  var readDirection: js.UndefOr[IconClass] = js.native
+  var readDirection: js.UndefOr[IconClass] = js.undefined
   
   // redo button
-  var redo: js.UndefOr[IconClassLocation] = js.native
+  var redo: js.UndefOr[IconClassLocation] = js.undefined
   
   // remove button
-  var remove: js.UndefOr[IconClass] = js.native
+  var remove: js.UndefOr[IconClass] = js.undefined
   
   // reset button
-  var reset: js.UndefOr[SequenceVisibility] = js.native
+  var reset: js.UndefOr[SequenceVisibility] = js.undefined
   
   // rotate button
-  var rotate: js.UndefOr[IconClass] = js.native
+  var rotate: js.UndefOr[IconClass] = js.undefined
   
   // rotateAll button
-  var rotateAll: js.UndefOr[IconClass] = js.native
+  var rotateAll: js.UndefOr[IconClass] = js.undefined
   
   // save button
-  var save: js.UndefOr[IconClass] = js.native
+  var save: js.UndefOr[IconClass] = js.undefined
   
   // undo button
-  var undo: js.UndefOr[Visibility] = js.native
+  var undo: js.UndefOr[Visibility] = js.undefined
   
   // wipe button
-  var wipe: js.UndefOr[Sequence] = js.native
+  var wipe: js.UndefOr[Sequence] = js.undefined
   
   // magnifyCanvas button
-  var zoomIn: js.UndefOr[LocationOnButtonClick] = js.native
+  var zoomIn: js.UndefOr[LocationOnButtonClick] = js.undefined
   
   // shrinkCanvas button
-  var zoomOut: js.UndefOr[OnButtonClickSequence] = js.native
+  var zoomOut: js.UndefOr[OnButtonClickSequence] = js.undefined
 }
 object AutoFit {
   

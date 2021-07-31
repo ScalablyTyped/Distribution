@@ -7,32 +7,32 @@ import typings.zenObservable.mod.global.ZenObservable.Subscriber
 import typings.zenObservable.mod.global.ZenObservable.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("zen-observable", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Observable[T] {
+  class ^[T] protected ()
+    extends StObject
+       with Observable[T] {
     def this(subscriber: Subscriber[T]) = this()
   }
+  @JSImport("zen-observable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("zen-observable", "from")
-  @js.native
-  def from[R](observable: ArrayLike[R]): Observable[R] = js.native
+  @scala.inline
+  def from[R](observable: ArrayLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   /* static member */
-  @JSImport("zen-observable", "from")
-  @js.native
-  def from[R](observable: Observable[R]): Observable[R] = js.native
-  @JSImport("zen-observable", "from")
-  @js.native
-  def from[R](observable: ObservableLike[R]): Observable[R] = js.native
+  @scala.inline
+  def from[R](observable: Observable[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def from[R](observable: ObservableLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
   /* static member */
-  @JSImport("zen-observable", "of")
-  @js.native
-  def of[R](items: R*): Observable[R] = js.native
+  @scala.inline
+  def of[R](items: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
   @js.native
   trait Observable[T] extends StObject {
@@ -56,25 +56,20 @@ object mod {
     
     def subscribe(observer: Observer[T]): Subscription = js.native
     def subscribe(onNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
-    def subscribe(
-      onNext: js.Function1[/* value */ T, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      onComplete: js.Function0[Unit]
-    ): Subscription = js.native
     def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): Subscription = js.native
     def subscribe(
       onNext: js.Function1[/* value */ T, Unit],
       onError: js.Function1[/* error */ js.Any, Unit],
       onComplete: js.Function0[Unit]
     ): Subscription = js.native
+    def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onComplete: js.Function0[Unit]): Subscription = js.native
   }
   
   object global {
     
-    @js.native
     trait SymbolConstructor extends StObject {
       
-      val observable: js.Symbol = js.native
+      val observable: js.Symbol
     }
     object SymbolConstructor {
       
@@ -100,16 +95,15 @@ object mod {
         var subscribe: js.UndefOr[Subscriber[T]] = js.native
       }
       
-      @js.native
       trait Observer[T] extends StObject {
         
-        var complete: js.UndefOr[js.Function0[Unit]] = js.native
+        var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var error: js.UndefOr[js.Function1[/* errorValue */ js.Any, Unit]] = js.native
+        var error: js.UndefOr[js.Function1[/* errorValue */ js.Any, Unit]] = js.undefined
         
-        var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+        var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
         
-        var start: js.UndefOr[js.Function1[/* subscription */ Subscription, _]] = js.native
+        var start: js.UndefOr[js.Function1[/* subscription */ Subscription, js.Any]] = js.undefined
       }
       object Observer {
         
@@ -120,7 +114,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+        implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
           
           @scala.inline
           def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -141,7 +135,7 @@ object mod {
           def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
           
           @scala.inline
-          def setStart(value: /* subscription */ Subscription => _): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+          def setStart(value: /* subscription */ Subscription => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
           
           @scala.inline
           def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -150,12 +144,11 @@ object mod {
       
       type Subscriber[T] = js.Function1[/* observer */ SubscriptionObserver[T], Unit | js.Function0[Unit] | Subscription]
       
-      @js.native
       trait Subscription extends StObject {
         
-        var closed: Boolean = js.native
+        var closed: Boolean
         
-        def unsubscribe(): Unit = js.native
+        def unsubscribe(): Unit
       }
       object Subscription {
         
@@ -176,16 +169,15 @@ object mod {
         }
       }
       
-      @js.native
       trait SubscriptionObserver[T] extends StObject {
         
-        var closed: Boolean = js.native
+        var closed: Boolean
         
-        def complete(): Unit = js.native
+        def complete(): Unit
         
-        def error(errorValue: js.Any): Unit = js.native
+        def error(errorValue: js.Any): Unit
         
-        def next(value: T): Unit = js.native
+        def next(value: T): Unit
       }
       object SubscriptionObserver {
         
@@ -196,7 +188,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class SubscriptionObserverMutableBuilder[Self <: SubscriptionObserver[_], T] (val x: Self with SubscriptionObserver[T]) extends AnyVal {
+        implicit class SubscriptionObserverMutableBuilder[Self <: SubscriptionObserver[?], T] (val x: Self & SubscriptionObserver[T]) extends AnyVal {
           
           @scala.inline
           def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])

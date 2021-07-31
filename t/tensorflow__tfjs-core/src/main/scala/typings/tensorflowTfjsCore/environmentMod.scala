@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.platformMod.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentMod {
@@ -69,26 +68,22 @@ object environmentMod {
     var urlFlags: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/environment", "env")
-  @js.native
-  def env(): Environment = js.native
+  @scala.inline
+  def env(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Environment]
   
-  @JSImport("@tensorflow/tfjs-core/dist/environment", "getQueryParams")
-  @js.native
-  def getQueryParams(queryString: String): StringDictionary[String] = js.native
+  @scala.inline
+  def getQueryParams(queryString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParams")(queryString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/environment", "setEnvironmentGlobal")
-  @js.native
-  def setEnvironmentGlobal(environment: Environment): Unit = js.native
+  @scala.inline
+  def setEnvironmentGlobal(environment: Environment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnvironmentGlobal")(environment.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type FlagEvaluationFn = js.Function0[FlagValue | js.Promise[FlagValue]]
   
-  @js.native
   trait FlagRegistryEntry extends StObject {
     
-    var evaluationFn: FlagEvaluationFn = js.native
+    var evaluationFn: FlagEvaluationFn
     
-    var setHook: js.UndefOr[js.Function1[/* value */ FlagValue, Unit]] = js.native
+    var setHook: js.UndefOr[js.Function1[/* value */ FlagValue, Unit]] = js.undefined
   }
   object FlagRegistryEntry {
     

@@ -3,7 +3,6 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,28 +22,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * http://js.cytoscape.org/#style/pie-chart-background
   */
-@js.native
 trait PieChartBackground extends StObject {
   
   /**
     * The colour of the node’s ith pie chart slice.
     */
-  var `pie-i-background-color`: PropertyValueNode[Colour] = js.native
+  var `pie-i-background-color`: PropertyValueNode[Colour]
   
   /**
     * The opacity of the node’s ith pie chart slice.
     */
-  var `pie-i-background-opacity`: PropertyValueNode[Double] = js.native
+  var `pie-i-background-opacity`: PropertyValueNode[Double]
   
   /**
     * The size of the node’s ith pie chart slice, measured in percent (e.g. 25% or 25).
     */
-  var `pie-i-background-size`: PropertyValueNode[Double] = js.native
+  var `pie-i-background-size`: PropertyValueNode[Double]
   
   /**
     * The diameter of the pie, measured as a percent of node size (e.g. 100%) or an absolute length (e.g. 25px).
     */
-  var `pie-size`: PropertyValueNode[String] = js.native
+  var `pie-size`: PropertyValueNode[String]
 }
 object PieChartBackground {
   

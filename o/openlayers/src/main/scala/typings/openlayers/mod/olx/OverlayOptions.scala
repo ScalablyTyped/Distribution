@@ -6,34 +6,32 @@ import typings.openlayers.mod.olx.animation.PanOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the overlay.
   */
-@js.native
 trait OverlayOptions extends StObject {
   
-  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPan: js.UndefOr[Boolean] = js.undefined
   
-  var autoPanAnimation: js.UndefOr[PanOptions] = js.native
+  var autoPanAnimation: js.UndefOr[PanOptions] = js.undefined
   
-  var autoPanMargin: js.UndefOr[Double] = js.native
+  var autoPanMargin: js.UndefOr[Double] = js.undefined
   
-  var element: js.UndefOr[Element] = js.native
+  var element: js.UndefOr[Element] = js.undefined
   
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
-  var insertFirst: js.UndefOr[Boolean] = js.native
+  var insertFirst: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var position: js.UndefOr[Coordinate_] = js.native
+  var position: js.UndefOr[Coordinate_] = js.undefined
   
-  var positioning: js.UndefOr[OverlayPositioning | String] = js.native
+  var positioning: js.UndefOr[OverlayPositioning | String] = js.undefined
   
-  var stopEvent: js.UndefOr[Boolean] = js.native
+  var stopEvent: js.UndefOr[Boolean] = js.undefined
 }
 object OverlayOptions {
   

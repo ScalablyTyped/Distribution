@@ -5,46 +5,44 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonCheckbox extends StObject {
   
   /**
     * If `true`, the checkbox is selected.
     */
-  var checked: Boolean = js.native
+  var checked: Boolean
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the checkbox.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * If `true`, the checkbox will visually appear as indeterminate.
     */
-  var indeterminate: Boolean = js.native
+  var indeterminate: Boolean
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value of the checkbox does not mean if it's checked or not, use the `checked` property for that.  The value of a checkbox is analogous to the value of an `<input type="checkbox">`, it's only used when the checkbox participates in a native `<form>`.
     */
-  var value: String = js.native
+  var value: String
 }
 object IonCheckbox {
   

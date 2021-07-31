@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textFieldBaseMod {
@@ -89,6 +88,10 @@ object textFieldBaseMod {
     
     var _warnControlledUsage: js.Any = js.native
     
+    /** Blurs the input */
+    /* CompleteClass */
+    override def blur(): Unit = js.native
+    
     @JSName("componentDidMount")
     def componentDidMount_MTextFieldBase(): Unit = js.native
     
@@ -98,8 +101,41 @@ object textFieldBaseMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTextFieldBase(): Unit = js.native
     
+    /** Sets focus to the input. */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
     @JSName("getSnapshotBeforeUpdate")
     def getSnapshotBeforeUpdate_MTextFieldBase(prevProps: ITextFieldProps, prevState: ITextFieldState): ITextFieldSnapshot | Null = js.native
+    
+    /** Select the value of the text field. */
+    /* CompleteClass */
+    override def select(): Unit = js.native
+    
+    /** Gets the selection end of the text field. Returns -1 if there is no selection. */
+    /* CompleteClass */
+    var selectionEnd: Double | Null = js.native
+    
+    /** Gets the selection start of the text field. Returns -1 if there is no selection. */
+    /* CompleteClass */
+    var selectionStart: Double | Null = js.native
+    
+    /** Sets the selection end of the text field to a specified value. */
+    /* CompleteClass */
+    override def setSelectionEnd(value: Double): Unit = js.native
+    
+    /**
+      * Sets the start and end positions of a selection in a text field.
+      * Call with start and end set to the same value to set the cursor position.
+      * @param start - Index of the start of the selection.
+      * @param end - Index of the end of the selection.
+      */
+    /* CompleteClass */
+    override def setSelectionRange(start: Double, end: Double): Unit = js.native
+    
+    /** Sets the selection start of the text field to a specified value. */
+    /* CompleteClass */
+    override def setSelectionStart(value: Double): Unit = js.native
   }
   /* static members */
   object TextFieldBase {
@@ -115,14 +151,13 @@ object textFieldBaseMod {
     def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITextFieldSnapshot extends StObject {
     
     /**
       * If set, the text field is changing between single- and multi-line, so we'll need to reset
       * selection/cursor after the change completes.
       */
-    var selection: js.UndefOr[js.Tuple2[Double | Null, Double | Null]] = js.native
+    var selection: js.UndefOr[js.Tuple2[Double | Null, Double | Null]] = js.undefined
   }
   object ITextFieldSnapshot {
     
@@ -143,26 +178,25 @@ object textFieldBaseMod {
     }
   }
   
-  @js.native
   trait ITextFieldState extends StObject {
     
     /**
       * Dynamic error message returned by `onGetErrorMessage`.
       * Use `this._errorMessage` to get the actual current error message.
       */
-    var errorMessage: String | Element = js.native
+    var errorMessage: String | Element
     
     /** Is true when the control has focus. */
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this field has `type='password'` and `canRevealPassword=true`, and the password is
       * currently being revealed.
       */
-    var isRevealingPassword: js.UndefOr[Boolean] = js.native
+    var isRevealingPassword: js.UndefOr[Boolean] = js.undefined
     
     /** The currently displayed value if uncontrolled. */
-    var uncontrolledValue: js.UndefOr[String] = js.native
+    var uncontrolledValue: js.UndefOr[String] = js.undefined
   }
   object ITextFieldState {
     

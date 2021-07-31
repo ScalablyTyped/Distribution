@@ -5,42 +5,40 @@ import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "SyntaxUtilities")
 @js.native
 class SyntaxUtilities ()
-  extends typings.typescriptServices.TypeScript.SyntaxUtilities
+  extends StObject
+     with typings.typescriptServices.TypeScript.SyntaxUtilities
 object SyntaxUtilities {
   
-  /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.containsToken")
+  @JSImport("typescript-services", "SyntaxUtilities")
   @js.native
-  def containsToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.getExportKeyword")
-  @js.native
-  def getExportKeyword(moduleElement: IModuleElementSyntax): ISyntaxToken = js.native
+  @scala.inline
+  def containsToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.getToken")
-  @js.native
-  def getToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = js.native
+  @scala.inline
+  def getExportKeyword(moduleElement: IModuleElementSyntax): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
   
   /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.hasExportKeyword")
-  @js.native
-  def hasExportKeyword(moduleElement: IModuleElementSyntax): Boolean = js.native
+  @scala.inline
+  def getToken(list: ISyntaxList, kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(list.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
   
   /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.isAmbientDeclarationSyntax")
-  @js.native
-  def isAmbientDeclarationSyntax(positionNode: typings.typescriptServices.TypeScript.PositionedNode): Boolean = js.native
+  @scala.inline
+  def hasExportKeyword(moduleElement: IModuleElementSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasExportKeyword")(moduleElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("typescript-services", "SyntaxUtilities.isAngleBracket")
-  @js.native
-  def isAngleBracket(positionedElement: typings.typescriptServices.TypeScript.PositionedElement): Boolean = js.native
+  @scala.inline
+  def isAmbientDeclarationSyntax(positionNode: typings.typescriptServices.TypeScript.PositionedNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientDeclarationSyntax")(positionNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /* static member */
+  @scala.inline
+  def isAngleBracket(positionedElement: typings.typescriptServices.TypeScript.PositionedElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngleBracket")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

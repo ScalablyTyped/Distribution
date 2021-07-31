@@ -9,26 +9,26 @@ import typings.std.Blob
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
   // This is what a file looks like after it's returned by Chatkit
-  @js.native
-  trait AttachmentPayload extends MessagePayload {
+  trait AttachmentPayload
+    extends StObject
+       with MessagePayload {
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    def url(): js.Promise[String] = js.native
+    def url(): js.Promise[String]
     
-    def urlExpiry(): js.Promise[Date] = js.native
+    def urlExpiry(): js.Promise[Date]
   }
   object AttachmentPayload {
     
@@ -72,18 +72,19 @@ object messageMod {
   }
   
   // This is used when uploading a file.
-  @js.native
-  trait FilePayload extends SendMessagePayload {
+  trait FilePayload
+    extends StObject
+       with SendMessagePayload {
     
-    var customData: js.UndefOr[js.Any] = js.native
-    
-    // Optional if it can be inferred from the file
-    var file: Blob = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
     // Optional if it can be inferred from the file
-    var name: js.UndefOr[String] = js.native
+    var file: Blob
     
-    var `type`: js.UndefOr[String] = js.native
+    // Optional if it can be inferred from the file
+    var name: js.UndefOr[String] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FilePayload {
     
@@ -119,14 +120,14 @@ object messageMod {
     }
   }
   
-  @js.native
   trait InlinePayload
-    extends MessagePayload
+    extends StObject
+       with MessagePayload
        with SendMessagePayload {
     
-    var content: String = js.native
+    var content: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object InlinePayload {
     
@@ -148,16 +149,15 @@ object messageMod {
     }
   }
   
-  @js.native
   trait MessageFromPusher extends StObject {
     
-    var createdAt: Date = js.native
+    var createdAt: Date
     
-    var id: String = js.native
+    var id: String
     
-    var parts: js.Array[MessagePart] = js.native
+    var parts: js.Array[MessagePart]
     
-    var sender: PusherUser = js.native
+    var sender: PusherUser
   }
   object MessageFromPusher {
     
@@ -187,12 +187,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait MessagePart extends StObject {
     
-    var partType: `inline` | url | attachment = js.native
+    var partType: `inline` | url | attachment
     
-    var payload: MessagePayload = js.native
+    var payload: MessagePayload
   }
   object MessagePart {
     
@@ -249,20 +248,19 @@ object messageMod {
     }
   }
   
-  @js.native
   trait PusherMessage extends StObject {
     
-    var createdAt: Date = js.native
+    var createdAt: Date
     
-    var id: Double = js.native
+    var id: Double
     
-    var parts: js.Array[MessagePart] = js.native
+    var parts: js.Array[MessagePart]
     
-    var room: PusherRoom = js.native
+    var room: PusherRoom
     
-    var sender: PusherUser = js.native
+    var sender: PusherUser
     
-    var updatedAt: Date = js.native
+    var updatedAt: Date
   }
   object PusherMessage {
     
@@ -334,14 +332,14 @@ object messageMod {
     }
   }
   
-  @js.native
   trait UrlPayload
-    extends MessagePayload
+    extends StObject
+       with MessagePayload
        with SendMessagePayload {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object UrlPayload {
     

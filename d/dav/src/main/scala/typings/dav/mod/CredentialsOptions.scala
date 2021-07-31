@@ -2,34 +2,32 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Credentials> */
-@js.native
 trait CredentialsOptions extends StObject {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var authorizationCode: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.native
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
   
-  var expiration: js.UndefOr[Double] = js.native
+  var expiration: js.UndefOr[Double] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var tokenUrl: js.UndefOr[String] = js.native
+  var tokenUrl: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object CredentialsOptions {
   

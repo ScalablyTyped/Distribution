@@ -15,17 +15,18 @@ import typings.seneca.anon.Running
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  @scala.inline
+  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  
   @JSImport("seneca", JSImport.Namespace)
   @js.native
-  def apply(): Instance = js.native
-  @JSImport("seneca", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Instance = js.native
+  val ^ : js.Any = js.native
   
   type ActCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]
   
@@ -35,7 +36,6 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait ClientOptions extends StObject
   
   type CloseCallback = js.Function2[/* optional */ js.Any, /* done */ js.Function1[/* error */ Error, Unit], Unit]
@@ -49,7 +49,8 @@ object mod {
   // Change such references to: product['name']
   @js.native
   trait Entity
-    extends /* plugin_name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* plugin_name */ StringDictionary[js.Any] {
     
     def apply(canon: js.Any, seneca: js.Any): Unit = js.native
     
@@ -82,14 +83,14 @@ object mod {
     def save$(props: EntityDataWithQuery, callback: EntitySaveCallback): Unit = js.native
   }
   
-  @js.native
   trait EntityDataWithQuery
-    extends /* plugin_name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* plugin_name */ StringDictionary[js.Any] {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     @JSName("sort$")
-    var sort$: js.UndefOr[js.Any] = js.native
+    var sort$: js.UndefOr[js.Any] = js.undefined
   }
   object EntityDataWithQuery {
     
@@ -124,26 +125,66 @@ object mod {
   
   type EntitySaveCallback = js.Function2[/* error */ Error, /* result */ js.Any, Unit]
   
-  @js.native
   trait Executor extends StObject {
     
-    def cb(err: Error, result: js.Any): Unit = js.native
+    def cb(err: Error, result: js.Any): Unit
     @JSName("cb")
-    var cb_Original: ExecutorCallback = js.native
+    var cb_Original: ExecutorCallback
     
-    var desc: String = js.native
+    var desc: String
     
-    var execute: UnknownType = js.native
+    var execute: UnknownType
     
-    def fn(callback: js.Any): Unit = js.native
+    def fn(callback: js.Any): Unit
     @JSName("fn")
-    var fn_Original: ExecutorWorker = js.native
+    var fn_Original: ExecutorWorker
     
-    var gate: Boolean = js.native
+    var gate: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var ungate: Boolean = js.native
+    var ungate: Boolean
+  }
+  object Executor {
+    
+    @scala.inline
+    def apply(
+      cb: (/* err */ Error, /* result */ js.Any) => Unit,
+      desc: String,
+      execute: UnknownType,
+      fn: /* callback */ js.Any => Unit,
+      gate: Boolean,
+      id: String,
+      ungate: Boolean
+    ): Executor = {
+      val __obj = js.Dynamic.literal(cb = js.Any.fromFunction2(cb), desc = desc.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn), gate = gate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ungate = ungate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Executor]
+    }
+    
+    @scala.inline
+    implicit class ExecutorMutableBuilder[Self <: Executor] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCb(value: (/* err */ Error, /* result */ js.Any) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExecute(value: UnknownType): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFn(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGate(value: Boolean): Self = StObject.set(x, "gate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUngate(value: Boolean): Self = StObject.set(x, "ungate", value.asInstanceOf[js.Any])
+    }
   }
   
   type ExecutorCallback = js.Function2[/* err */ Error, /* result */ js.Any, Unit]
@@ -158,8 +199,8 @@ object mod {
     def act[PatternWithArgs](pattern: PatternWithArgs, msg: js.Any, respond: ActCallback): Unit = js.native
     def act[PatternWithArgs](pattern: PatternWithArgs, respond: ActCallback): Unit = js.native
     
-    def add[PatternType, CallBackParams](pattern: PatternType, action: AddCallback[PatternType with CallBackParams]): this.type = js.native
-    def add[PatternType, CallbackParams](pattern: PatternType, paramspec: js.Any, action: AddCallback[PatternType with CallbackParams]): this.type = js.native
+    def add[PatternType, CallBackParams](pattern: PatternType, action: AddCallback[PatternType & CallBackParams]): this.type = js.native
+    def add[PatternType, CallbackParams](pattern: PatternType, paramspec: js.Any, action: AddCallback[PatternType & CallbackParams]): this.type = js.native
     
     def client(): this.type = js.native
     def client(options: ClientOptions): this.type = js.native
@@ -169,7 +210,7 @@ object mod {
     def error(handler: GlobalErrorHandler): Unit = js.native
     
     // @param name reference to plugin provided object
-    def export(name: String): PluginModule = js.native
+    def `export`(name: String): PluginModule = js.native
     
     def listen(): this.type = js.native
     def listen(options: ListenOptions): this.type = js.native
@@ -197,7 +238,6 @@ object mod {
     var version: String = js.native
   }
   
-  @js.native
   trait ListenOptions extends StObject
   
   // { level: 'warn+' }
@@ -257,9 +297,8 @@ object mod {
     def test: typings.seneca.senecaStrings.test = "test".asInstanceOf[typings.seneca.senecaStrings.test]
   }
   
-  type MessagePayload[T] = PartialMessagePayload with T
+  type MessagePayload[T] = PartialMessagePayload & T
   
-  @js.native
   trait MinimalPattern extends StObject
   
   @js.native
@@ -271,63 +310,63 @@ object mod {
     def set(input: Options): Options = js.native
   }
   
-  @js.native
   trait Options
-    extends /* plugin_name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* plugin_name */ StringDictionary[js.Any] {
     
     // Action cache. Makes inbound messages idempotent.
-    var actcache: js.UndefOr[Active] = js.native
+    var actcache: js.UndefOr[Active] = js.undefined
     
     // Default seneca-admin settings.
     // TODO: move to seneca-admin!
-    var admin: js.UndefOr[Local] = js.native
+    var admin: js.UndefOr[Local] = js.undefined
     
     // Wait time for plugins to close gracefully.
-    var deathdelay: js.UndefOr[Double] = js.native
+    var deathdelay: js.UndefOr[Double] = js.undefined
     
     // Debug settings.
-    var debug: js.UndefOr[Actcaller] = js.native
+    var debug: js.UndefOr[Actcaller] = js.undefined
     
     // milliseconds
     // Register (true) default plugins. Set false to not register when
     // using custom versions.
-    var default_plugins: js.UndefOr[Basic] = js.native
+    var default_plugins: js.UndefOr[Basic] = js.undefined
     
-    var errhandler: js.UndefOr[GlobalErrorHandler] = js.native
+    var errhandler: js.UndefOr[GlobalErrorHandler] = js.undefined
     
     // Standard length of identifiers for actions.
-    var idlen: js.UndefOr[Double] = js.native
+    var idlen: js.UndefOr[Double] = js.undefined
     
     // Internal settings.
-    var internal: js.UndefOr[Actrouter] = js.native
+    var internal: js.UndefOr[Actrouter] = js.undefined
     
-    var log: js.UndefOr[LogSpec | Level] = js.native
+    var log: js.UndefOr[LogSpec | Level] = js.undefined
     
     // Plugin settings
-    var plugin: js.UndefOr[js.Any] = js.native
+    var plugin: js.UndefOr[js.Any] = js.undefined
     
     // Settings for network REPL.
-    var repl: js.UndefOr[Host] = js.native
+    var repl: js.UndefOr[Host] = js.undefined
     
     // Action statistics settings. See rolling-stats module.
-    var stats: js.UndefOr[Interval] = js.native
+    var stats: js.UndefOr[Interval] = js.undefined
     
     // Log status at periodic intervals.
-    var status: js.UndefOr[Running] = js.native
+    var status: js.UndefOr[Running] = js.undefined
     
     // Enforce strict behaviours. Relax when backwards compatibility needed.
-    var strict: js.UndefOr[Add] = js.native
+    var strict: js.UndefOr[Add] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
     // Standard timeout for actions.
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     // Action executor tracing. See gate-executor module.
-    var trace: js.UndefOr[Act] = js.native
+    var trace: js.UndefOr[Act] = js.undefined
     
     // zig module settings for seneca.start() chaining.
-    var zig: js.UndefOr[js.Any] = js.native
+    var zig: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     
@@ -450,20 +489,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PartialMessagePayload extends StObject {
     
     @JSName("fatal$")
-    var fatal$: Boolean = js.native
+    var fatal$: Boolean
     
     @JSName("plugin$")
-    var plugin$: js.Any = js.native
+    var plugin$: js.Any
     
     @JSName("transport$")
-    var transport$: js.Object = js.native
+    var transport$: js.Object
     
     @JSName("tx$")
-    var tx$: String = js.native
+    var tx$: String
   }
   object PartialMessagePayload {
     
@@ -494,7 +532,6 @@ object mod {
   
   type PluginModule = js.Function1[/* options */ js.Any, Unit]
   
-  @js.native
   trait PluginOptions extends StObject
   
   type UnknownType = js.Any

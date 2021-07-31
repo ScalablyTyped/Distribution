@@ -4,23 +4,21 @@ import typings.awsSdkClientDynamodbBrowser.typesAutoScalingTargetTrackingScaling
 import typings.awsSdkClientDynamodbBrowser.typesAutoScalingTargetTrackingScalingPolicyConfigurationDescriptionMod.UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAutoScalingPolicyDescriptionMod {
   
-  @js.native
   trait AutoScalingPolicyDescription extends StObject {
     
     /**
       * <p>The name of the scaling policy.</p>
       */
-    var PolicyName: js.UndefOr[String] = js.native
+    var PolicyName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Represents a target tracking scaling policy configuration.</p>
       */
-    var TargetTrackingScalingPolicyConfiguration: js.UndefOr[AutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.native
+    var TargetTrackingScalingPolicyConfiguration: js.UndefOr[AutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.undefined
   }
   object AutoScalingPolicyDescription {
     
@@ -47,14 +45,15 @@ object typesAutoScalingPolicyDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAutoScalingPolicyDescription extends AutoScalingPolicyDescription {
+  trait UnmarshalledAutoScalingPolicyDescription
+    extends StObject
+       with AutoScalingPolicyDescription {
     
     /**
       * <p>Represents a target tracking scaling policy configuration.</p>
       */
     @JSName("TargetTrackingScalingPolicyConfiguration")
-    var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyDescription: js.UndefOr[UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.native
+    var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyDescription: js.UndefOr[UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.undefined
   }
   object UnmarshalledAutoScalingPolicyDescription {
     

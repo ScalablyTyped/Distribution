@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a FootnoteSection. An InlineDrawing cannot itself contain any other element. For
   * more information on document structure, see the guide to extending Google Docs.
   */
-@js.native
-trait InlineDrawing extends Element {
+trait InlineDrawing
+  extends StObject
+     with Element {
   
-  def getAltDescription(): String = js.native
+  def getAltDescription(): String
   
-  def getAltTitle(): String = js.native
+  def getAltTitle(): String
   
-  def setAltDescription(description: String): InlineDrawing = js.native
+  def setAltDescription(description: String): InlineDrawing
   
-  def setAltTitle(title: String): InlineDrawing = js.native
+  def setAltTitle(title: String): InlineDrawing
 }
 object InlineDrawing {
   

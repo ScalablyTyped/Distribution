@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlowFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Color: ColorFormat = js.native
+  val Color: ColorFormat
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Radius: Double = js.native
+  var Radius: Double
   
-  var Transparency: Double = js.native
+  var Transparency: Double
   
   @JSName("Word.GlowFormat_typekey")
-  var WordDotGlowFormat_typekey: GlowFormat = js.native
+  var WordDotGlowFormat_typekey: GlowFormat
 }
 object GlowFormat {
   

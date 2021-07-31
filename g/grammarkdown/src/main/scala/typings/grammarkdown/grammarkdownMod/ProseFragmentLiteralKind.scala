@@ -2,7 +2,6 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -11,4 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.grammarkdownMod.SyntaxKind.ProseMiddle
   - typings.grammarkdown.grammarkdownMod.SyntaxKind.ProseTail
 */
-trait ProseFragmentLiteralKind extends TextContentKind
+trait ProseFragmentLiteralKind
+  extends StObject
+     with TextContentKind

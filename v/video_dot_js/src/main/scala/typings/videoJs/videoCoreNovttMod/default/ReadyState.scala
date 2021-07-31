@@ -2,7 +2,6 @@ package typings.videoJs.videoCoreNovttMod.default
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js/dist/alt/video.core.novtt", "default.ReadyState")
@@ -10,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ReadyState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.videoJs.mod.videojs.ReadyState with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.videoJs.mod.videojs.ReadyState & Double] = js.native
   
-  /* 2 */ val HaveCurrentData: typings.videoJs.mod.videojs.ReadyState.HaveCurrentData with Double = js.native
+  /* 2 */ val HaveCurrentData: typings.videoJs.mod.videojs.ReadyState.HaveCurrentData & Double = js.native
   
-  /* 4 */ val HaveEnoughData: typings.videoJs.mod.videojs.ReadyState.HaveEnoughData with Double = js.native
+  /* 4 */ val HaveEnoughData: typings.videoJs.mod.videojs.ReadyState.HaveEnoughData & Double = js.native
   
-  /* 3 */ val HaveFutureData: typings.videoJs.mod.videojs.ReadyState.HaveFutureData with Double = js.native
+  /* 3 */ val HaveFutureData: typings.videoJs.mod.videojs.ReadyState.HaveFutureData & Double = js.native
   
-  /* 1 */ val HaveMetadata: typings.videoJs.mod.videojs.ReadyState.HaveMetadata with Double = js.native
+  /* 1 */ val HaveMetadata: typings.videoJs.mod.videojs.ReadyState.HaveMetadata & Double = js.native
   
-  /* 0 */ val HaveNothing: typings.videoJs.mod.videojs.ReadyState.HaveNothing with Double = js.native
+  /* 0 */ val HaveNothing: typings.videoJs.mod.videojs.ReadyState.HaveNothing & Double = js.native
 }

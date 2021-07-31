@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteProvisionedProductPlanInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken = js.native
+  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
     * The plan identifier.
     */
-  var PlanId: Id = js.native
+  var PlanId: Id
 }
 object ExecuteProvisionedProductPlanInput {
   

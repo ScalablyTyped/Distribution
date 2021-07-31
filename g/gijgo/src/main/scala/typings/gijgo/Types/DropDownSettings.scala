@@ -2,36 +2,34 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var icons: js.UndefOr[DropDownIcons] = js.native
+  var icons: js.UndefOr[DropDownIcons] = js.undefined
   
-  var iconsLibrary: js.UndefOr[String] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[js.Any] = js.native
+  var maxHeight: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var selectedField: js.UndefOr[String] = js.native
+  var selectedField: js.UndefOr[String] = js.undefined
   
-  var textField: js.UndefOr[String] = js.native
+  var textField: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var valueField: js.UndefOr[String] = js.native
+  var valueField: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DropDownSettings {
   
@@ -45,13 +43,13 @@ object DropDownSettings {
   implicit class DropDownSettingsMutableBuilder[Self <: DropDownSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChange(value: /* e */ js.Any => _): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def setDataBound(value: /* e */ js.Any => _): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)

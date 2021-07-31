@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Venue extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var foursquare_id: js.UndefOr[String] = js.native
+  var foursquare_id: js.UndefOr[String] = js.undefined
   
-  var foursquare_type: js.UndefOr[String] = js.native
+  var foursquare_type: js.UndefOr[String] = js.undefined
   
-  var location: Location = js.native
+  var location: Location
   
-  var title: String = js.native
+  var title: String
 }
 object Venue {
   

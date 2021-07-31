@@ -3,21 +3,19 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kms {
   
-  @js.native
   trait GetSecretSecret extends StObject {
     
-    var context: js.UndefOr[StringDictionary[String]] = js.native
+    var context: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var grantTokens: js.UndefOr[js.Array[String]] = js.native
+    var grantTokens: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var payload: String = js.native
+    var payload: String
   }
   object GetSecretSecret {
     
@@ -53,28 +51,27 @@ object kms {
     }
   }
   
-  @js.native
   trait GetSecretsSecret extends StObject {
     
     /**
       * An optional mapping that makes up the Encryption Context for the secret.
       */
-    var context: js.UndefOr[StringDictionary[String]] = js.native
+    var context: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * An optional list of Grant Tokens for the secret.
       */
-    var grantTokens: js.UndefOr[js.Array[String]] = js.native
+    var grantTokens: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name to export this secret under in the attributes.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Base64 encoded payload, as returned from a KMS encrypt operation.
       */
-    var payload: String = js.native
+    var payload: String
   }
   object GetSecretsSecret {
     
@@ -110,18 +107,17 @@ object kms {
     }
   }
   
-  @js.native
   trait GrantConstraint extends StObject {
     
     /**
       * A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with `encryptionContextSubset`.
       */
-    var encryptionContextEquals: js.UndefOr[StringDictionary[String]] = js.native
+    var encryptionContextEquals: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with `encryptionContextEquals`.
       */
-    var encryptionContextSubset: js.UndefOr[StringDictionary[String]] = js.native
+    var encryptionContextSubset: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GrantConstraint {
     

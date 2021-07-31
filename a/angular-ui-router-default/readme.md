@@ -12,7 +12,7 @@ AngularJS module that adds support for specifying default child views for abstra
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 29559 |
+| # downloads        | 33134 |
 | # stars            | 0 |
 
 ## Links

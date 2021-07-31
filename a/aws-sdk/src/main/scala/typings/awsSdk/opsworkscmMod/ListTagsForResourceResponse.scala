@@ -2,21 +2,19 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * A token that you can use as the value of NextToken in subsequent calls to the API to show more results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.undefined
   
   /**
     * Tags that have been applied to the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ListTagsForResourceResponse {
   

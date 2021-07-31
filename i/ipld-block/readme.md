@@ -10,9 +10,9 @@ JavaScript Implementation of IPLD Block
 | ------------------ | :-------------: |
 | Full name          | ipld-block |
 | Keywords           | IPLD |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 78784 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 386574 |
 | # stars            | 0 |
 
 ## Links

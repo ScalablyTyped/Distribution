@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CharacterFormattingScript extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.CharacterFormattingScript with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.CharacterFormattingScript & Double] = js.native
   
-  /* 0 */ val Normal: typings.devexpressWeb.CharacterFormattingScript.Normal with Double = js.native
+  /* 0 */ val Normal: typings.devexpressWeb.CharacterFormattingScript.Normal & Double = js.native
   
-  /* 1 */ val Subscript: typings.devexpressWeb.CharacterFormattingScript.Subscript with Double = js.native
+  /* 1 */ val Subscript: typings.devexpressWeb.CharacterFormattingScript.Subscript & Double = js.native
   
-  /* 2 */ val Superscript: typings.devexpressWeb.CharacterFormattingScript.Superscript with Double = js.native
+  /* 2 */ val Superscript: typings.devexpressWeb.CharacterFormattingScript.Superscript & Double = js.native
 }

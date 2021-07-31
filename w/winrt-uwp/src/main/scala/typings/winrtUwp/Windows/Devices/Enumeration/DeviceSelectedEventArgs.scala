@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the DeviceSelected event on the DevicePicker object. */
-@js.native
 trait DeviceSelectedEventArgs extends StObject {
   
   /** The device selected by the user in the picker. */
-  var selectedDevice: DeviceInformation = js.native
+  var selectedDevice: DeviceInformation
 }
 object DeviceSelectedEventArgs {
   

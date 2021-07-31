@@ -16,7 +16,6 @@ import typings.wegameApi.wegameApiStrings.on
 import typings.wegameApi.wegameApiStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

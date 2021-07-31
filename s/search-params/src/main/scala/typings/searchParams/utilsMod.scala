@@ -2,29 +2,28 @@ package typings.searchParams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("search-params/dist/utils", "getSearch")
+  @JSImport("search-params/dist/utils", JSImport.Namespace)
   @js.native
-  def getSearch(path: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("search-params/dist/utils", "isSerialisable")
-  @js.native
-  def isSerialisable(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def getSearch(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearch")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("search-params/dist/utils", "parseName")
-  @js.native
-  def parseName(name: String): IParsedName = js.native
+  @scala.inline
+  def isSerialisable(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialisable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def parseName(name: String): IParsedName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[IParsedName]
+  
   trait IParsedName extends StObject {
     
-    var hasBrackets: Boolean = js.native
+    var hasBrackets: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object IParsedName {
     

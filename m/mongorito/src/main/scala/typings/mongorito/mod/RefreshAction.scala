@@ -3,13 +3,13 @@ package typings.mongorito.mod
 import typings.mongorito.mod.ActionTypes.REFRESH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefreshAction extends Action {
+trait RefreshAction
+  extends StObject
+     with Action {
   
-  var `type`: REFRESH = js.native
+  var `type`: REFRESH
 }
 object RefreshAction {
   

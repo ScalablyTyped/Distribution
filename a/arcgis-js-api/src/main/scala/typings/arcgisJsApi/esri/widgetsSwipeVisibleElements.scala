@@ -3,11 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait widgetsSwipeVisibleElements extends SwipeVisibleElements
+trait widgetsSwipeVisibleElements
+  extends StObject
+     with SwipeVisibleElements
 object widgetsSwipeVisibleElements {
   
   @scala.inline

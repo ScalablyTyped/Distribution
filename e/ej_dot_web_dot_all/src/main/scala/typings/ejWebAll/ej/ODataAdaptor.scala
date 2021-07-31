@@ -3,17 +3,18 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataAdaptor extends UrlAdaptor {
+trait ODataAdaptor
+  extends StObject
+     with UrlAdaptor {
   
-  def generateDeleteRequest(arr: js.Array[_], e: js.Any): String = js.native
+  def generateDeleteRequest(arr: js.Array[js.Any], e: js.Any): String = js.native
   
-  def generateInsertRequest(arr: js.Array[_], e: js.Any): String = js.native
+  def generateInsertRequest(arr: js.Array[js.Any], e: js.Any): String = js.native
   
-  def generateUpdateRequest(arr: js.Array[_], e: js.Any): String = js.native
+  def generateUpdateRequest(arr: js.Array[js.Any], e: js.Any): String = js.native
   
   def onComplexPredicate(pred: Predicate, requiresCast: Boolean): String = js.native
   

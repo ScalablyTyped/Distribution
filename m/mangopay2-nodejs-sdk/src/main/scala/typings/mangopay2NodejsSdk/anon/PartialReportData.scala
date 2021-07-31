@@ -7,40 +7,38 @@ import typings.mangopay2NodejsSdk.mod.report.Column
 import typings.mangopay2NodejsSdk.mod.report.Filters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.ReportData> */
-@js.native
 trait PartialReportData extends StObject {
   
-  var CallbackURL: js.UndefOr[String] = js.native
+  var CallbackURL: js.UndefOr[String] = js.undefined
   
-  var Columns: js.UndefOr[js.Array[Column]] = js.native
+  var Columns: js.UndefOr[js.Array[Column]] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var DownloadFormat: js.UndefOr[CSV] = js.native
+  var DownloadFormat: js.UndefOr[CSV] = js.undefined
   
-  var DownloadURL: js.UndefOr[String] = js.native
+  var DownloadURL: js.UndefOr[String] = js.undefined
   
-  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.native
+  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var Preview: js.UndefOr[Boolean] = js.native
+  var Preview: js.UndefOr[Boolean] = js.undefined
   
-  var ReportDate: js.UndefOr[Timestamp] = js.native
+  var ReportDate: js.UndefOr[Timestamp] = js.undefined
   
-  var ReportType: js.UndefOr[TRANSACTIONS] = js.native
+  var ReportType: js.UndefOr[TRANSACTIONS] = js.undefined
   
-  var ResultCode: js.UndefOr[String] = js.native
+  var ResultCode: js.UndefOr[String] = js.undefined
   
-  var ResultMessage: js.UndefOr[String] = js.native
+  var ResultMessage: js.UndefOr[String] = js.undefined
   
-  var Sort: js.UndefOr[String] = js.native
+  var Sort: js.UndefOr[String] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object PartialReportData {
   

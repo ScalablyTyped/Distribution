@@ -18,10 +18,8 @@ import typings.electron.electronStrings.rightButtonDown
 import typings.electron.electronStrings.shift
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputEvent extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/input-event
@@ -34,7 +32,7 @@ trait InputEvent extends StObject {
     js.Array[
       shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object InputEvent {
   

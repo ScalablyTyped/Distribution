@@ -3,15 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chrome.input.ime.AssistiveWindowProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextID extends StObject {
   
-  var contextID: Double = js.native
+  var contextID: Double
   
-  var properties: AssistiveWindowProperties = js.native
+  var properties: AssistiveWindowProperties
 }
 object ContextID {
   

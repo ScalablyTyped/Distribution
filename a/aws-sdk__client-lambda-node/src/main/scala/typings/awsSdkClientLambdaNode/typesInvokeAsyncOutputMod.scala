@@ -4,24 +4,24 @@ import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvokeAsyncOutputMod {
   
-  @js.native
-  trait InvokeAsyncOutput extends OutputTypesUnion {
+  trait InvokeAsyncOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>It will be 202 upon success.</p>
       */
-    var Status: js.UndefOr[Double] = js.native
+    var Status: js.UndefOr[Double] = js.undefined
   }
   object InvokeAsyncOutput {
     

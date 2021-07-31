@@ -4,11 +4,12 @@ import typings.raphael.raphaelStrings.SVG
 import typings.raphael.raphaelStrings.VML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelElement[TTechnology /* <: RaphaelTechnology */, TNode /* <: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any */] extends RaphaelBaseElement[TTechnology] {
+trait RaphaelElement[TTechnology /* <: RaphaelTechnology */, TNode /* <: /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any */]
+  extends StObject
+     with RaphaelBaseElement[TTechnology] {
   
   /**
     * Unique id of the element. Especially useful when you want to listen to events of the element, because all

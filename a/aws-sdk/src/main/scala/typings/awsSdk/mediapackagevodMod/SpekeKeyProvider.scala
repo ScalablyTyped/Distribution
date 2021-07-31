@@ -2,27 +2,25 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpekeKeyProvider extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) of an IAM role that AWS Elemental
   MediaPackage will assume when accessing the key provider service.
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
   
   /**
     * The system IDs to include in key requests.
     */
-  var SystemIds: listOfString = js.native
+  var SystemIds: listOfString
   
   /**
     * The URL of the external key provider service.
     */
-  var Url: string = js.native
+  var Url: string
 }
 object SpekeKeyProvider {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,53 +14,87 @@ sealed trait ChartColorScheme extends StObject
 object ChartColorScheme extends StObject {
   
   @js.native
-  sealed trait colorfulPalette1 extends ChartColorScheme
+  sealed trait colorfulPalette1
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait colorfulPalette2 extends ChartColorScheme
+  sealed trait colorfulPalette2
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait colorfulPalette3 extends ChartColorScheme
+  sealed trait colorfulPalette3
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait colorfulPalette4 extends ChartColorScheme
+  sealed trait colorfulPalette4
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette1 extends ChartColorScheme
+  sealed trait monochromaticPalette1
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette10 extends ChartColorScheme
+  sealed trait monochromaticPalette10
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette11 extends ChartColorScheme
+  sealed trait monochromaticPalette11
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette12 extends ChartColorScheme
+  sealed trait monochromaticPalette12
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette13 extends ChartColorScheme
+  sealed trait monochromaticPalette13
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette2 extends ChartColorScheme
+  sealed trait monochromaticPalette2
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette3 extends ChartColorScheme
+  sealed trait monochromaticPalette3
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette4 extends ChartColorScheme
+  sealed trait monochromaticPalette4
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette5 extends ChartColorScheme
+  sealed trait monochromaticPalette5
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette6 extends ChartColorScheme
+  sealed trait monochromaticPalette6
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette7 extends ChartColorScheme
+  sealed trait monochromaticPalette7
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette8 extends ChartColorScheme
+  sealed trait monochromaticPalette8
+    extends StObject
+       with ChartColorScheme
   
   @js.native
-  sealed trait monochromaticPalette9 extends ChartColorScheme
+  sealed trait monochromaticPalette9
+    extends StObject
+       with ChartColorScheme
 }

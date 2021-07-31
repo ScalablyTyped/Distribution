@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifySoftwareTokenRequest extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: js.UndefOr[TokenModelType] = js.native
+  var AccessToken: js.UndefOr[TokenModelType] = js.undefined
   
   /**
     * The friendly device name.
     */
-  var FriendlyDeviceName: js.UndefOr[StringType] = js.native
+  var FriendlyDeviceName: js.UndefOr[StringType] = js.undefined
   
   /**
     * The session which should be passed both ways in challenge-response calls to the service.
     */
-  var Session: js.UndefOr[SessionType] = js.native
+  var Session: js.UndefOr[SessionType] = js.undefined
   
   /**
     * The one time password computed using the secret code returned by AssociateSoftwareToken".
     */
-  var UserCode: SoftwareTokenMFAUserCodeType = js.native
+  var UserCode: SoftwareTokenMFAUserCodeType
 }
 object VerifySoftwareTokenRequest {
   

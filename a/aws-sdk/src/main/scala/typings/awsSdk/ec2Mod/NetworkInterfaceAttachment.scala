@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterfaceAttachment extends StObject {
   
   /**
     * The timestamp indicating when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[DateTime] = js.native
+  var AttachTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the network interface attachment.
     */
-  var AttachmentId: js.UndefOr[String] = js.native
+  var AttachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the network interface is deleted when the instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The device index of the network interface attachment on the instance.
     */
-  var DeviceIndex: js.UndefOr[Integer] = js.native
+  var DeviceIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID of the owner of the instance.
     */
-  var InstanceOwnerId: js.UndefOr[String] = js.native
+  var InstanceOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the network card.
     */
-  var NetworkCardIndex: js.UndefOr[Integer] = js.native
+  var NetworkCardIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The attachment state.
     */
-  var Status: js.UndefOr[AttachmentStatus] = js.native
+  var Status: js.UndefOr[AttachmentStatus] = js.undefined
 }
 object NetworkInterfaceAttachment {
   

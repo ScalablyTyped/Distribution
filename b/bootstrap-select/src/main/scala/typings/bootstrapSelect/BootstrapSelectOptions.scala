@@ -6,85 +6,83 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapSelectOptions extends StObject {
   
-  var actionsBox: js.UndefOr[Boolean] = js.native
+  var actionsBox: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | Boolean] = js.native
+  var container: js.UndefOr[String | Boolean] = js.undefined
   
-  var countSelectedText: js.UndefOr[String | js.Function] = js.native
+  var countSelectedText: js.UndefOr[String | js.Function] = js.undefined
   
-  var deselectAllText: js.UndefOr[String] = js.native
+  var deselectAllText: js.UndefOr[String] = js.undefined
   
-  var dropdownAlignRight: js.UndefOr[String | Boolean] = js.native
+  var dropdownAlignRight: js.UndefOr[String | Boolean] = js.undefined
   
-  var dropupAuto: js.UndefOr[Boolean] = js.native
+  var dropupAuto: js.UndefOr[Boolean] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var hideDisabled: js.UndefOr[Boolean] = js.native
+  var hideDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var iconBase: js.UndefOr[String] = js.native
+  var iconBase: js.UndefOr[String] = js.undefined
   
-  var liveSearch: js.UndefOr[Boolean] = js.native
+  var liveSearch: js.UndefOr[Boolean] = js.undefined
   
-  var liveSearchNormalize: js.UndefOr[Boolean] = js.native
+  var liveSearchNormalize: js.UndefOr[Boolean] = js.undefined
   
-  var liveSearchPlaceholder: js.UndefOr[String] = js.native
+  var liveSearchPlaceholder: js.UndefOr[String] = js.undefined
   
-  var liveSearchStyle: js.UndefOr[String] = js.native
+  var liveSearchStyle: js.UndefOr[String] = js.undefined
   
-  var maxOptions: js.UndefOr[Double | Boolean] = js.native
+  var maxOptions: js.UndefOr[Double | Boolean] = js.undefined
   
-  var maxOptionsText: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+  var maxOptionsText: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
   
-  var mobile: js.UndefOr[Boolean] = js.native
+  var mobile: js.UndefOr[Boolean] = js.undefined
   
-  var multipleSeparator: js.UndefOr[String] = js.native
+  var multipleSeparator: js.UndefOr[String] = js.undefined
   
-  var noneResultsText: js.UndefOr[String] = js.native
+  var noneResultsText: js.UndefOr[String] = js.undefined
   
-  var noneSelectedText: js.UndefOr[String] = js.native
+  var noneSelectedText: js.UndefOr[String] = js.undefined
   
-  var sanitize: js.UndefOr[Boolean] = js.native
+  var sanitize: js.UndefOr[Boolean] = js.undefined
   
   var sanitizeFn: js.UndefOr[
     js.Function1[/* unsafeElements */ js.Array[HTMLElement | ChildNode | Node], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var selectAllText: js.UndefOr[String] = js.native
+  var selectAllText: js.UndefOr[String] = js.undefined
   
-  var selectOnTab: js.UndefOr[Boolean] = js.native
+  var selectOnTab: js.UndefOr[Boolean] = js.undefined
   
-  var selectedTextFormat: js.UndefOr[String] = js.native
+  var selectedTextFormat: js.UndefOr[String] = js.undefined
   
-  var showContent: js.UndefOr[Boolean] = js.native
+  var showContent: js.UndefOr[Boolean] = js.undefined
   
-  var showIcon: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.undefined
   
-  var showSubtext: js.UndefOr[Boolean] = js.native
+  var showSubtext: js.UndefOr[Boolean] = js.undefined
   
-  var showTick: js.UndefOr[Boolean] = js.native
+  var showTick: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[auto | Double | Boolean] = js.native
+  var size: js.UndefOr[auto | Double | Boolean] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var styleBase: js.UndefOr[String] = js.native
+  var styleBase: js.UndefOr[String] = js.undefined
   
-  var tickIcon: js.UndefOr[String] = js.native
+  var tickIcon: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var virtualScroll: js.UndefOr[Boolean | Double] = js.native
+  var virtualScroll: js.UndefOr[Boolean | Double] = js.undefined
   
-  var width: js.UndefOr[String | Boolean] = js.native
+  var width: js.UndefOr[String | Boolean] = js.undefined
   
-  var windowPadding: js.UndefOr[Double | js.Array[Double]] = js.native
+  var windowPadding: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object BootstrapSelectOptions {
   
@@ -179,7 +177,7 @@ object BootstrapSelectOptions {
     def setMaxOptions(value: Double | Boolean): Self = StObject.set(x, "maxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxOptionsText(value: String | js.Array[_] | js.Function): Self = StObject.set(x, "maxOptionsText", value.asInstanceOf[js.Any])
+    def setMaxOptionsText(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "maxOptionsText", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMaxOptionsTextUndefined: Self = StObject.set(x, "maxOptionsText", js.undefined)

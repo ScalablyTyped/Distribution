@@ -6,25 +6,23 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKycDocumentStatus extends StObject {
   
-  var Created: CREATED = js.native
+  var Created: CREATED
   
-  var Refused: REFUSED = js.native
+  var Refused: REFUSED
   
-  var Validated: VALIDATED = js.native
+  var Validated: VALIDATED
   
-  var ValidationAsked: VALIDATION_ASKED = js.native
+  var ValidationAsked: VALIDATION_ASKED
 }
 object IKycDocumentStatus {
   
   @scala.inline
-  def apply(Created: CREATED, Refused: REFUSED, Validated: VALIDATED, ValidationAsked: VALIDATION_ASKED): IKycDocumentStatus = {
-    val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], Refused = Refused.asInstanceOf[js.Any], Validated = Validated.asInstanceOf[js.Any], ValidationAsked = ValidationAsked.asInstanceOf[js.Any])
+  def apply(): IKycDocumentStatus = {
+    val __obj = js.Dynamic.literal(Created = "CREATED", Refused = "REFUSED", Validated = "VALIDATED", ValidationAsked = "VALIDATION_ASKED")
     __obj.asInstanceOf[IKycDocumentStatus]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationPendingModifiedValues extends StObject {
   
   /**
     * The amount of storage (in gigabytes) that is allocated for the replication instance.
     */
-  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.native
+  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The engine version number of the replication instance.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     *  Specifies whether the replication instance is a Multi-AZ deployment. You can't set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
     */
-  var MultiAZ: js.UndefOr[BooleanOptional] = js.native
+  var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
     */
-  var ReplicationInstanceClass: js.UndefOr[String] = js.native
+  var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
 }
 object ReplicationPendingModifiedValues {
   

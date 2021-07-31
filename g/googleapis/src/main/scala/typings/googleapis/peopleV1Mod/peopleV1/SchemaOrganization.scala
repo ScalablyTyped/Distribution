@@ -2,90 +2,88 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s past or current organization. Overlapping date ranges are
   * permitted.
   */
-@js.native
 trait SchemaOrganization extends StObject {
   
   /**
     * True if the organization is the person&#39;s current organization; false
     * if the organization is a past organization.
     */
-  var current: js.UndefOr[Boolean] = js.native
+  var current: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The person&#39;s department at the organization.
     */
-  var department: js.UndefOr[String] = js.native
+  var department: js.UndefOr[String] = js.undefined
   
   /**
     * The domain name associated with the organization; for example,
     * `google.com`.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The end date when the person left the organization.
     */
-  var endDate: js.UndefOr[SchemaDate] = js.native
+  var endDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * The read-only type of the organization translated and formatted in the
     * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s job description at the organization.
     */
-  var jobDescription: js.UndefOr[String] = js.native
+  var jobDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the organization office the person works at.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the organization.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The name of the organization.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The phonetic name of the organization.
     */
-  var phoneticName: js.UndefOr[String] = js.native
+  var phoneticName: js.UndefOr[String] = js.undefined
   
   /**
     * The start date when the person joined the organization.
     */
-  var startDate: js.UndefOr[SchemaDate] = js.native
+  var startDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * The symbol associated with the organization; for example, a stock ticker
     * symbol, abbreviation, or acronym.
     */
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s job title at the organization.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the organization. The type can be custom or  one of these
     * predefined values:  * `work` * `school`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaOrganization {
   

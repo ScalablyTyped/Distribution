@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetVariableRequest extends StObject {
   
   /**
     * The list of variable names to get.
     */
-  var names: NameList = js.native
+  var names: NameList
 }
 object BatchGetVariableRequest {
   

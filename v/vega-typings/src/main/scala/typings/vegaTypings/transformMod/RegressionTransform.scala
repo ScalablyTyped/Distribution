@@ -5,36 +5,36 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.regression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegressionTransform extends _Transforms {
+trait RegressionTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var extent: js.UndefOr[(js.Tuple2[Double, Double]) | SignalRef] = js.native
+  var extent: js.UndefOr[(js.Tuple2[Double, Double]) | SignalRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var method: js.UndefOr[RegressionMethod | SignalRef] = js.native
+  var method: js.UndefOr[RegressionMethod | SignalRef] = js.undefined
   
-  var order: js.UndefOr[Double | SignalRef] = js.native
+  var order: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var params: js.UndefOr[Boolean | SignalRef] = js.native
+  var params: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var `type`: regression = js.native
+  var `type`: regression
   
-  var x: FieldRef = js.native
+  var x: FieldRef
   
-  var y: FieldRef = js.native
+  var y: FieldRef
 }
 object RegressionTransform {
   
   @scala.inline
-  def apply(`type`: regression, x: FieldRef, y: FieldRef): RegressionTransform = {
+  def apply(x: FieldRef, y: FieldRef): RegressionTransform = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("regression")
     __obj.asInstanceOf[RegressionTransform]
   }
   

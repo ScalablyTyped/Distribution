@@ -2,31 +2,29 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatedGateway extends StObject {
   
   /**
     * The ID of the associated gateway.
     */
-  var id: js.UndefOr[GatewayIdentifier] = js.native
+  var id: js.UndefOr[GatewayIdentifier] = js.undefined
   
   /**
     * The ID of the AWS account that owns the associated virtual private gateway or transit gateway.
     */
-  var ownerAccount: js.UndefOr[OwnerAccount] = js.native
+  var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The Region where the associated gateway is located.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /**
     * The type of associated gateway.
     */
-  var `type`: js.UndefOr[GatewayType] = js.native
+  var `type`: js.UndefOr[GatewayType] = js.undefined
 }
 object AssociatedGateway {
   

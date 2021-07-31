@@ -3,7 +3,6 @@ package typings.fibjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Stat 对象通过 fs.stat, File.stat, fs.readdir 查询，不可独立创建
   */
 @js.native
-trait ClassStat extends ClassObject {
+trait ClassStat
+  extends StObject
+     with ClassObject {
   
   /**
     * class prop 

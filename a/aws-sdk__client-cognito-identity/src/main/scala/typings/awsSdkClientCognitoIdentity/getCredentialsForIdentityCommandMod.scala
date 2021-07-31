@@ -3,6 +3,7 @@ package typings.awsSdkClientCognitoIdentity
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.CognitoIdentityClientResolvedConfig
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInputTypes
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
+import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod._ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.GetCredentialsForIdentityInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.GetCredentialsForIdentityResponse
 import typings.awsSdkSmithyClient.mod.Command
@@ -10,9 +11,9 @@ import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCredentialsForIdentityCommandMod {
@@ -46,5 +47,17 @@ object getCredentialsForIdentityCommandMod {
   
   type GetCredentialsForIdentityCommandInput = GetCredentialsForIdentityInput
   
-  type GetCredentialsForIdentityCommandOutput = GetCredentialsForIdentityResponse with MetadataBearer
+  trait GetCredentialsForIdentityCommandOutput
+    extends StObject
+       with GetCredentialsForIdentityResponse
+       with MetadataBearer
+       with _ServiceOutputTypes
+  object GetCredentialsForIdentityCommandOutput {
+    
+    @scala.inline
+    def apply($metadata: ResponseMetadata): GetCredentialsForIdentityCommandOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetCredentialsForIdentityCommandOutput]
+    }
+  }
 }

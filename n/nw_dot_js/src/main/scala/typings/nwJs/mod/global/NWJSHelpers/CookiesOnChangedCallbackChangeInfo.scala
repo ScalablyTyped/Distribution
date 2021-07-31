@@ -7,29 +7,27 @@ import typings.nwJs.nwJsStrings.explicit
 import typings.nwJs.nwJsStrings.overwrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Coockies.onChanged.addListener() callback details argument object
   */
-@js.native
 trait CookiesOnChangedCallbackChangeInfo extends StObject {
   
   /**
     * The underlying reason behind the cookie's change.
     */
-  var cause: String | evicted | expired | explicit | expired_overwrite | overwrite = js.native
+  var cause: String | evicted | expired | explicit | expired_overwrite | overwrite
   
   /**
     * Information about the cookie that was set or removed.
     */
-  var cookie: Cookie = js.native
+  var cookie: Cookie
   
   /**
     * True if a cookie was removed.
     */
-  var removed: Boolean = js.native
+  var removed: Boolean
 }
 object CookiesOnChangedCallbackChangeInfo {
   

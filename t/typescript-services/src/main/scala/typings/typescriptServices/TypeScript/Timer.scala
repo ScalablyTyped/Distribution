@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timer extends StObject {
   
-  def end(): Unit = js.native
+  def end(): Unit
   
-  def start(): Unit = js.native
+  def start(): Unit
   
-  var startTime: Double = js.native
+  var startTime: Double
   
-  var time: Double = js.native
+  var time: Double
 }
 object Timer {
   

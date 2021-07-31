@@ -4,31 +4,28 @@ import typings.sketchapp.anon.X
 import typings.sketchapp.sketchappStrings.gradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSGradient extends StObject {
   
-  var _class: gradient = js.native
+  var _class: gradient
   
-  var elipseLength: Double = js.native
+  var elipseLength: Double
   
-  var from: X = js.native
+  var from: X
   
-  var gradientType: Double = js.native
+  var gradientType: Double
   
-  var shouldSmoothenOpacity: Boolean = js.native
+  var shouldSmoothenOpacity: Boolean
   
-  var stops: js.Array[SketchMSGradientStop] = js.native
+  var stops: js.Array[SketchMSGradientStop]
   
-  var to: X = js.native
+  var to: X
 }
 object SketchMSGradient {
   
   @scala.inline
   def apply(
-    _class: gradient,
     elipseLength: Double,
     from: X,
     gradientType: Double,
@@ -36,7 +33,7 @@ object SketchMSGradient {
     stops: js.Array[SketchMSGradientStop],
     to: X
   ): SketchMSGradient = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], elipseLength = elipseLength.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gradientType = gradientType.asInstanceOf[js.Any], shouldSmoothenOpacity = shouldSmoothenOpacity.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "gradient", elipseLength = elipseLength.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gradientType = gradientType.asInstanceOf[js.Any], shouldSmoothenOpacity = shouldSmoothenOpacity.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSGradient]
   }
   

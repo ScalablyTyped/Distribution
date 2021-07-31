@@ -2,16 +2,14 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
     * Resource type
     */
-  var resource: ResourceType = js.native
+  var resource: ResourceType
 }
 object Resource {
   

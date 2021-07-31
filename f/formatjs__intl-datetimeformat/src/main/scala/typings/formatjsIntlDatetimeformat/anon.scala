@@ -2,21 +2,19 @@ package typings.formatjsIntlDatetimeformat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Full extends StObject {
     
-    var full: String = js.native
+    var full: String
     
-    var long: String = js.native
+    var long: String
     
-    var medium: String = js.native
+    var medium: String
     
-    var short: String = js.native
+    var short: String
   }
   object Full {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Long extends StObject {
     
-    var long: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var long: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var short: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var short: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   }
   object Long {
     
@@ -76,10 +73,9 @@ object anon {
   }
   
   /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract.DateTimeFormatOptions, 'localeMatcher'> */
-  @js.native
   trait PickDateTimeFormatOptions extends StObject {
     
-    var localeMatcher: js.UndefOr[String] = js.native
+    var localeMatcher: js.UndefOr[String] = js.undefined
   }
   object PickDateTimeFormatOptions {
     

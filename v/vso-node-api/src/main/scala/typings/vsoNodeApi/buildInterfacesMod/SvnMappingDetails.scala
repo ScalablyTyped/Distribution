@@ -2,36 +2,34 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SvnMappingDetails extends StObject {
   
   /**
     * The depth.
     */
-  var depth: Double = js.native
+  var depth: Double
   
   /**
     * Indicates whether to ignore externals.
     */
-  var ignoreExternals: Boolean = js.native
+  var ignoreExternals: Boolean
   
   /**
     * The local path.
     */
-  var localPath: String = js.native
+  var localPath: String
   
   /**
     * The revision.
     */
-  var revision: String = js.native
+  var revision: String
   
   /**
     * The server path.
     */
-  var serverPath: String = js.native
+  var serverPath: String
 }
 object SvnMappingDetails {
   

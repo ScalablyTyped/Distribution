@@ -2,17 +2,17 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PostCustomFieldWithListParams extends PostCustomFieldParams {
+trait PostCustomFieldWithListParams
+  extends StObject
+     with PostCustomFieldParams {
   
-  var allowAddItem: js.UndefOr[Boolean] = js.native
+  var allowAddItem: js.UndefOr[Boolean] = js.undefined
   
-  var allowInput: js.UndefOr[Boolean] = js.native
+  var allowInput: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.UndefOr[js.Array[String]] = js.native
+  var items: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PostCustomFieldWithListParams {
   

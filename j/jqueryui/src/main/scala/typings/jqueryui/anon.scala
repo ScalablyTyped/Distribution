@@ -22,15 +22,13 @@ import typings.std.Element
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attribute extends StObject {
     
-    var attribute: js.UndefOr[String] = js.native
+    var attribute: js.UndefOr[String] = js.undefined
   }
   object Attribute {
     
@@ -60,7 +58,7 @@ object anon {
     def apply(methodName: blur): Unit = js.native
     def apply(methodName: collapse): Unit = js.native
     def apply(methodName: collapseAll): Unit = js.native
-    def apply(methodName: collapseAll, event: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
+    def apply(methodName: collapseAll, event: Unit, all: Boolean): Unit = js.native
     def apply(methodName: collapseAll, event: JQueryEventObject): Unit = js.native
     def apply(methodName: collapseAll, event: JQueryEventObject, all: Boolean): Unit = js.native
     def apply(methodName: collapse, event: JQueryEventObject): Unit = js.native
@@ -90,14 +88,13 @@ object anon {
     var active: Boolean = js.native
   }
   
-  @js.native
   trait Expression extends StObject {
     
-    var attribute: js.UndefOr[String] = js.native
+    var attribute: js.UndefOr[String] = js.undefined
     
-    var expression: js.UndefOr[RegExp] = js.native
+    var expression: js.UndefOr[RegExp] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object Expression {
     
@@ -130,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -156,10 +152,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Selected extends StObject {
     
-    var selected: js.UndefOr[Element] = js.native
+    var selected: js.UndefOr[Element] = js.undefined
   }
   object Selected {
     
@@ -180,10 +175,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Selecting extends StObject {
     
-    var selecting: js.UndefOr[Element] = js.native
+    var selecting: js.UndefOr[Element] = js.undefined
   }
   object Selecting {
     
@@ -204,10 +198,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Unselected extends StObject {
     
-    var unselected: Element = js.native
+    var unselected: Element
   }
   object Unselected {
     
@@ -225,10 +218,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Unselecting extends StObject {
     
-    var unselecting: Element = js.native
+    var unselecting: Element
   }
   object Unselecting {
     

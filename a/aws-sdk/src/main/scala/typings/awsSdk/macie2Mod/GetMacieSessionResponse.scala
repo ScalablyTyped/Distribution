@@ -2,36 +2,34 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMacieSessionResponse extends StObject {
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the Amazon Macie account was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.native
+  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The frequency with which Amazon Macie publishes updates to policy findings for the account. This includes publishing updates to AWS Security Hub and Amazon EventBridge (formerly called Amazon CloudWatch Events).
     */
-  var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.native
+  var findingPublishingFrequency: js.UndefOr[FindingPublishingFrequency] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the service-linked role that allows Amazon Macie to monitor and analyze data in AWS resources for the account.
     */
-  var serviceRole: js.UndefOr[string] = js.native
+  var serviceRole: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the Amazon Macie account. Possible values are: PAUSED, the account is enabled but all Amazon Macie activities are suspended (paused) for the account; and, ENABLED, the account is enabled and all Amazon Macie activities are enabled for the account.
     */
-  var status: js.UndefOr[MacieStatus] = js.native
+  var status: js.UndefOr[MacieStatus] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, of the most recent change to the status of the Amazon Macie account.
     */
-  var updatedAt: js.UndefOr[timestampIso8601] = js.native
+  var updatedAt: js.UndefOr[timestampIso8601] = js.undefined
 }
 object GetMacieSessionResponse {
   

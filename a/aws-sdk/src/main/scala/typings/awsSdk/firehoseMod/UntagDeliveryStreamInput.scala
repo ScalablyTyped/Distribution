@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagDeliveryStreamInput extends StObject {
   
   /**
     * The name of the delivery stream.
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
   
   /**
     * A list of tag keys. Each corresponding tag is removed from the delivery stream.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagDeliveryStreamInput {
   

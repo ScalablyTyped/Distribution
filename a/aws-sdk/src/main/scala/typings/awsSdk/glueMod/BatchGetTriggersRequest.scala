@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetTriggersRequest extends StObject {
   
   /**
     * A list of trigger names, which may be the names returned from the ListTriggers operation.
     */
-  var TriggerNames: TriggerNameList = js.native
+  var TriggerNames: TriggerNameList
 }
 object BatchGetTriggersRequest {
   

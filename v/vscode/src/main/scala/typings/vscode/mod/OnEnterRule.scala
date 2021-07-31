@@ -3,26 +3,24 @@ package typings.vscode.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnEnterRule extends StObject {
   
   /**
     * The action to execute.
     */
-  var action: EnterAction = js.native
+  var action: EnterAction
   
   /**
     * This rule will only execute if the text after the cursor matches this regular expression.
     */
-  var afterText: js.UndefOr[RegExp] = js.native
+  var afterText: js.UndefOr[RegExp] = js.undefined
   
   /**
     * This rule will only execute if the text before the cursor matches this regular expression.
     */
-  var beforeText: RegExp = js.native
+  var beforeText: RegExp
 }
 object OnEnterRule {
   

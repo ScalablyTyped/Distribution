@@ -4,7 +4,6 @@ import typings.ot.anon.Anchor
 import typings.ot.mod.Selection.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "Selection")
@@ -36,6 +35,10 @@ class Selection () extends StObject {
 /* static members */
 object Selection {
   
+  @JSImport("ot", "Selection")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /*
     * Range has `anchor` and `head` properties, which are zero-based indices into
     * the document. The `anchor` is the side of the selection that stays fixed,
@@ -59,10 +62,13 @@ object Selection {
   }
   object Range {
     
-    /* static member */
-    @JSImport("ot", "Selection.Range.fromJSON")
+    @JSImport("ot", "Selection.Range")
     @js.native
-    def fromJSON(`object`: Anchor): Range = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def fromJSON(`object`: Anchor): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
   }
   
   /**
@@ -70,11 +76,9 @@ object Selection {
     * and no real selection range.
     * @param position The pos
     */
-  @JSImport("ot", "Selection.createCursor")
-  @js.native
-  def createCursor(position: Double): Selection = js.native
+  @scala.inline
+  def createCursor(position: Double): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("createCursor")(position.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
-  @JSImport("ot", "Selection.fromJSON")
-  @js.native
-  def fromJSON(obj: String): Selection = js.native
+  @scala.inline
+  def fromJSON(obj: String): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Selection]
 }

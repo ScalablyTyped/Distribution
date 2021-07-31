@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSettingsSummaries
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait DataSourceSettingsSummaries
     * A list of column settings that specifies custom summaries options per column basis
     *
     */
-  var columnSettings: js.UndefOr[js.Array[_]] = js.native
+  var columnSettings: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Key for retrieving data from the summaries response - used only when summaries are remote
     *
     */
-  var summariesResponseKey: js.UndefOr[String] = js.native
+  var summariesResponseKey: js.UndefOr[String] = js.undefined
   
   /**
     * Determines when the summary values are calculated
@@ -34,13 +33,13 @@ trait DataSourceSettingsSummaries
     * "afterfilteringbeforepaging"
     * "afterfilteringandpaging"
     */
-  var summaryExecution: js.UndefOr[String] = js.native
+  var summaryExecution: js.UndefOr[String] = js.undefined
   
   /**
     * Url key for retrieving data from response - used only when summaries are remote
     *
     */
-  var summaryExprUrlKey: js.UndefOr[String] = js.native
+  var summaryExprUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether summaries will be applied locally or remotely (via a remote request)
@@ -50,7 +49,7 @@ trait DataSourceSettingsSummaries
     * "remote" A remote request is done and URL params encoded
     * "local" Data is paged client-side.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourceSettingsSummaries {
   
@@ -64,7 +63,7 @@ object DataSourceSettingsSummaries {
   implicit class DataSourceSettingsSummariesMutableBuilder[Self <: DataSourceSettingsSummaries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setColumnSettings(value: js.Array[_]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    def setColumnSettings(value: js.Array[js.Any]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)

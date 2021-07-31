@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardCommentHistoryItem extends StObject {
   
-  def GetCommentAuthor(): String = js.native
+  def GetCommentAuthor(): String
   
-  def GetCommentText(): String = js.native
+  def GetCommentText(): String
   
-  def GetCommentTimestamp(): js.Any = js.native
+  def GetCommentTimestamp(): js.Any
   
-  def GetCommentVersion(): Double = js.native
+  def GetCommentVersion(): Double
 }
 object IMetadataCardCommentHistoryItem {
   

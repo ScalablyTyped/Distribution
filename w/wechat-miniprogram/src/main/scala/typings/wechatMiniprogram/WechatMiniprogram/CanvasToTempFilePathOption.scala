@@ -4,33 +4,31 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.jpg
 import typings.wechatMiniprogram.wechatMiniprogramStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasToTempFilePathOption extends StObject {
   
   /** 画布标识，传入 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件实例 （canvas type="2d" 时使用该属性）。 */
-  var canvas: js.UndefOr[IAnyObject] = js.native
+  var canvas: js.UndefOr[IAnyObject] = js.undefined
   
   /** 画布标识，传入 [canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html) 组件的 canvas-id */
-  var canvasId: js.UndefOr[String] = js.native
+  var canvasId: js.UndefOr[String] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[CanvasToTempFilePathCompleteCallback] = js.native
+  var complete: js.UndefOr[CanvasToTempFilePathCompleteCallback] = js.undefined
   
   /** 输出的图片的高度
     *
     * 最低基础库： `1.2.0` */
-  var destHeight: js.UndefOr[Double] = js.native
+  var destHeight: js.UndefOr[Double] = js.undefined
   
   /** 输出的图片的宽度
     *
     * 最低基础库： `1.2.0` */
-  var destWidth: js.UndefOr[Double] = js.native
+  var destWidth: js.UndefOr[Double] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[CanvasToTempFilePathFailCallback] = js.native
+  var fail: js.UndefOr[CanvasToTempFilePathFailCallback] = js.undefined
   
   /** 目标文件的类型
     *
@@ -39,35 +37,35 @@ trait CanvasToTempFilePathOption extends StObject {
     * - 'png': png 图片;
     *
     * 最低基础库： `1.7.0` */
-  var fileType: js.UndefOr[jpg | png] = js.native
+  var fileType: js.UndefOr[jpg | png] = js.undefined
   
   /** 指定的画布区域的高度
     *
     * 最低基础库： `1.2.0` */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** 图片的质量，目前仅对 jpg 有效。取值范围为 (0, 1]，不在范围内时当作 1.0 处理。
     *
     * 最低基础库： `1.7.0` */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[CanvasToTempFilePathSuccessCallback] = js.native
+  var success: js.UndefOr[CanvasToTempFilePathSuccessCallback] = js.undefined
   
   /** 指定的画布区域的宽度
     *
     * 最低基础库： `1.2.0` */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** 指定的画布区域的左上角横坐标
     *
     * 最低基础库： `1.2.0` */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** 指定的画布区域的左上角纵坐标
     *
     * 最低基础库： `1.2.0` */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object CanvasToTempFilePathOption {
   

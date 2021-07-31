@@ -5,40 +5,40 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilesetsMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/tilesets", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/tilesets", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): TilesetsService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/tilesets", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): TilesetsService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
+  
   trait Tileset extends StObject {
     
-    var center: js.Array[Double] = js.native
+    var center: js.Array[Double]
     
-    var created: String = js.native
+    var created: String
     
-    var description: String = js.native
+    var description: String
     
-    var filesize: Double = js.native
+    var filesize: Double
     
-    var id: String = js.native
+    var id: String
     
-    var modified: String = js.native
+    var modified: String
     
-    var name: String = js.native
+    var name: String
     
-    var status: String = js.native
+    var status: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var visibility: String = js.native
+    var visibility: String
   }
   object Tileset {
     
@@ -98,10 +98,9 @@ object tilesetsMod {
     }
   }
   
-  @js.native
   trait TilesetsService extends StObject {
     
-    def listTilesets(config: OwnerIdString): MapiRequest = js.native
+    def listTilesets(config: OwnerIdString): MapiRequest
   }
   object TilesetsService {
     

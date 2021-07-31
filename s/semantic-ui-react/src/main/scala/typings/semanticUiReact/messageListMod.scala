@@ -9,7 +9,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.messageItemMod.MessageItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageListMod extends Shortcut {
@@ -18,9 +17,9 @@ object messageListMod extends Shortcut {
   @js.native
   val default: StatelessComponent[MessageListProps] = js.native
   
-  @js.native
   trait MessageListProps
-    extends StrictMessageListProps
+    extends StObject
+       with StrictMessageListProps
        with /* key */ StringDictionary[js.Any]
   object MessageListProps {
     
@@ -31,20 +30,19 @@ object messageListMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictMessageListProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand Message.Items. */
-    var items: js.UndefOr[SemanticShorthandCollection[MessageItemProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[MessageItemProps]] = js.undefined
   }
   object StrictMessageListProps {
     

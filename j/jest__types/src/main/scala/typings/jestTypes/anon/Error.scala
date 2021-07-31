@@ -5,21 +5,21 @@ import typings.jestTypes.circusMod.SyncEvent
 import typings.jestTypes.jestTypesStrings.error_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Error extends SyncEvent {
+trait Error
+  extends StObject
+     with SyncEvent {
   
-  var error: Exception = js.native
+  var error: Exception
   
-  var name: error_ = js.native
+  var name: error_
 }
 object Error {
   
   @scala.inline
-  def apply(error: Exception, name: error_): Error = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(error: Exception): Error = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "error")
     __obj.asInstanceOf[Error]
   }
   

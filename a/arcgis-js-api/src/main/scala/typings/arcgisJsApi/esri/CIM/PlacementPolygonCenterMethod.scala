@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ object PlacementPolygonCenterMethod extends StObject {
     * The bounding box of the polygon is used.
     */
   @js.native
-  sealed trait BoundingBoxCenter extends PlacementPolygonCenterMethod
+  sealed trait BoundingBoxCenter
+    extends StObject
+       with PlacementPolygonCenterMethod
   
   /**
     * The centroid of the polygon is used.
     */
   @js.native
-  sealed trait CenterOfMass extends PlacementPolygonCenterMethod
+  sealed trait CenterOfMass
+    extends StObject
+       with PlacementPolygonCenterMethod
   
   /**
     * Place on the polygon.
     */
   @js.native
-  sealed trait OnPolygon extends PlacementPolygonCenterMethod
+  sealed trait OnPolygon
+    extends StObject
+       with PlacementPolygonCenterMethod
 }

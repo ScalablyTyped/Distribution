@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The rotation applied to text in a cell.
   */
-@js.native
 trait SchemaTextRotation extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait SchemaTextRotation extends StObject {
     * direction positive angles are in the counterclockwise direction, whereas
     * for RTL they are in the clockwise direction
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * If true, text reads top to bottom, but the orientation of individual
     * characters is unchanged. For example:      | V |     | e |     | r | | t
     * |     | i |     | c |     | a |     | l |
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTextRotation {
   

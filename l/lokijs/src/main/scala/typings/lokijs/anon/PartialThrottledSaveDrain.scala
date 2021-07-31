@@ -2,20 +2,18 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.ThrottledSaveDrainOptions> */
-@js.native
 trait PartialThrottledSaveDrain extends StObject {
   
-  var recursiveWait: js.UndefOr[Boolean] = js.native
+  var recursiveWait: js.UndefOr[Boolean] = js.undefined
   
-  var recursiveWaitLimit: js.UndefOr[Boolean] = js.native
+  var recursiveWaitLimit: js.UndefOr[Boolean] = js.undefined
   
-  var recursiveWaitLimitDuration: js.UndefOr[Double] = js.native
+  var recursiveWaitLimitDuration: js.UndefOr[Double] = js.undefined
   
-  var started: js.UndefOr[Double] = js.native
+  var started: js.UndefOr[Double] = js.undefined
 }
 object PartialThrottledSaveDrain {
   

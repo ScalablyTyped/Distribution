@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishRecipeRequest extends StObject {
   
   /**
     * A description of the recipe to be published, for this version of the recipe.
     */
-  var Description: js.UndefOr[RecipeDescription] = js.native
+  var Description: js.UndefOr[RecipeDescription] = js.undefined
   
   /**
     * The name of the recipe to be published.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
 }
 object PublishRecipeRequest {
   

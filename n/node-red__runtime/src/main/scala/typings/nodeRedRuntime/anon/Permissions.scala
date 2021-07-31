@@ -3,13 +3,11 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.mod.Permission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permissions extends StObject {
   
-  var permissions: Permission | js.Array[Permission] = js.native
+  var permissions: Permission | js.Array[Permission]
 }
 object Permissions {
   

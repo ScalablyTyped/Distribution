@@ -2,22 +2,20 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitGetTreeEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Setting this parameter to any value returns the objects or subtrees referenced by the tree specified in `:tree_sha`. For example, setting `recursive` to any of the following will enable returning objects or subtrees: `0`, `1`, `"true"`, and `"false"`. Omit this parameter to prevent recursively returning objects or subtrees.
     */
-  var recursive: js.UndefOr[String] = js.native
+  var recursive: js.UndefOr[String] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
-  var tree_sha: String = js.native
+  var tree_sha: String
 }
 object GitGetTreeEndpoint {
   

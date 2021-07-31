@@ -2,22 +2,21 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 是否显示透明蒙层，防止触摸穿透，默认：false
     */
-  var mask: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 提示的内容
     */
-  var title: String = js.native
+  var title: String
 }
 object LoadingOptions {
   

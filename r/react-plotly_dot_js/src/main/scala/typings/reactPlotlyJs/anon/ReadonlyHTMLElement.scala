@@ -44,514 +44,520 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.HTMLElement> */
-@js.native
 trait ReadonlyHTMLElement extends StObject {
   
-  val ATTRIBUTE_NODE: Double = js.native
+  val ATTRIBUTE_NODE: Double
   
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: Double
   
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: Double
   
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: Double
   
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: Double
   
-  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: Double
   
-  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: Double
   
-  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: Double
   
-  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: Double
   
-  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double
   
-  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: Double
   
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: Double
   
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: Double
   
-  val ENTITY_NODE: Double = js.native
+  val ENTITY_NODE: Double
   
-  val ENTITY_REFERENCE_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: Double
   
-  val NOTATION_NODE: Double = js.native
+  val NOTATION_NODE: Double
   
-  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: Double
   
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: Double
   
-  val accessKey: String = js.native
+  val accessKey: String
   
-  val accessKeyLabel: String = js.native
+  val accessKeyLabel: String
   
   val addEventListener: js.Function2[
     fullscreenchange, 
-    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
     Unit
-  ] = js.native
+  ]
   
-  val after: js.Function1[/* repeated */ Node | String, Unit] = js.native
+  val after: js.Function1[/* repeated */ Node | String, Unit]
   
-  val animate: js.Function0[Animation] = js.native
+  val animate: js.Function0[Animation]
   
-  val append: js.Function1[/* repeated */ Node | String, Unit] = js.native
+  val append: js.Function1[/* repeated */ Node | String, Unit]
   
-  val appendChild: js.Function1[/* newChild */ Node, Node] = js.native
+  val appendChild: js.Function1[/* newChild */ Node, Node]
   
-  val assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.native
+  val assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
   
-  val attachShadow: js.Function1[/* init */ ShadowRootInit, ShadowRoot] = js.native
+  val attachShadow: js.Function1[/* init */ ShadowRootInit, ShadowRoot]
   
-  val attributes: NamedNodeMap = js.native
+  val attributes: NamedNodeMap
   
-  val autocapitalize: String = js.native
+  val autocapitalize: String
   
-  val autofocus: Boolean = js.native
+  val autofocus: Boolean
   
-  val baseURI: String = js.native
+  val baseURI: String
   
-  val before: js.Function1[/* repeated */ Node | String, Unit] = js.native
+  val before: js.Function1[/* repeated */ Node | String, Unit]
   
-  val blur: js.Function0[Unit] = js.native
+  val blur: js.Function0[Unit]
   
-  val childElementCount: Double = js.native
+  val childElementCount: Double
   
-  val childNodes: NodeListOf[ChildNode] = js.native
+  val childNodes: NodeListOf[ChildNode]
   
-  val children: HTMLCollection = js.native
+  val children: HTMLCollection
   
-  val classList: DOMTokenList = js.native
+  val classList: DOMTokenList
   
-  val className: String = js.native
+  val className: String
   
-  val click: js.Function0[Unit] = js.native
+  val click: js.Function0[Unit]
   
-  val clientHeight: Double = js.native
+  val clientHeight: Double
   
-  val clientLeft: Double = js.native
+  val clientLeft: Double
   
-  val clientTop: Double = js.native
+  val clientTop: Double
   
-  val clientWidth: Double = js.native
+  val clientWidth: Double
   
-  val cloneNode: js.Function0[Node] = js.native
+  val cloneNode: js.Function0[Node]
   
-  val closest: js.Function1[a, HTMLAnchorElement | Null] = js.native
+  val closest: js.Function1[a, HTMLAnchorElement | Null]
   
-  val compareDocumentPosition: js.Function1[/* other */ Node, Double] = js.native
+  val compareDocumentPosition: js.Function1[/* other */ Node, Double]
   
-  val contains: js.Function0[Boolean] = js.native
+  val contains: js.Function0[Boolean]
   
-  val contentEditable: String = js.native
+  val contentEditable: String
   
-  val dataset: DOMStringMap = js.native
+  val dataset: DOMStringMap
   
-  val dir: String = js.native
+  val dir: String
   
-  val dispatchEvent: js.Function1[/* event */ Event, Boolean] = js.native
+  val dispatchEvent: js.Function1[/* event */ Event, Boolean]
   
-  val draggable: Boolean = js.native
+  val draggable: Boolean
   
-  val enterKeyHint: String = js.native
+  val enterKeyHint: String
   
-  val firstChild: js.UndefOr[ChildNode | Null] = js.native
+  val firstChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  val firstElementChild: js.UndefOr[Element | Null] = js.native
+  val firstElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  val focus: js.Function0[Unit] = js.native
+  val focus: js.Function0[Unit]
   
-  val getAnimations: js.Function0[js.Array[Animation]] = js.native
+  val getAnimations: js.Function0[js.Array[Animation]]
   
-  val getAttribute: js.Function1[/* qualifiedName */ String, String | Null] = js.native
+  val getAttribute: js.Function1[/* qualifiedName */ String, String | Null]
   
-  val getAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, String | Null] = js.native
+  val getAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, String | Null]
   
-  val getAttributeNames: js.Function0[js.Array[String]] = js.native
+  val getAttributeNames: js.Function0[js.Array[String]]
   
-  val getAttributeNode: js.Function1[/* qualifiedName */ String, Attr | Null] = js.native
+  val getAttributeNode: js.Function1[/* qualifiedName */ String, Attr | Null]
   
-  val getAttributeNodeNS: js.Function2[/* namespace */ String, /* localName */ String, Attr | Null] = js.native
+  val getAttributeNodeNS: js.Function2[/* namespace */ String, /* localName */ String, Attr | Null]
   
-  val getBoundingClientRect: js.Function0[DOMRect] = js.native
+  val getBoundingClientRect: js.Function0[DOMRect]
   
-  val getClientRects: js.Function0[DOMRectList] = js.native
+  val getClientRects: js.Function0[DOMRectList]
   
-  val getElementsByClassName: js.Function1[/* classNames */ String, HTMLCollectionOf[Element]] = js.native
+  val getElementsByClassName: js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]
   
-  val getElementsByTagName: js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]] = js.native
+  val getElementsByTagName: js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]
   
   val getElementsByTagNameNS: js.Function2[
     httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, 
     /* localName */ String, 
     HTMLCollectionOf[HTMLElement]
-  ] = js.native
+  ]
   
-  val getRootNode: js.Function0[Node] = js.native
+  val getRootNode: js.Function0[Node]
   
-  val hasAttribute: js.Function1[/* qualifiedName */ String, Boolean] = js.native
+  val hasAttribute: js.Function1[/* qualifiedName */ String, Boolean]
   
-  val hasAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, Boolean] = js.native
+  val hasAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, Boolean]
   
-  val hasAttributes: js.Function0[Boolean] = js.native
+  val hasAttributes: js.Function0[Boolean]
   
-  val hasChildNodes: js.Function0[Boolean] = js.native
+  val hasChildNodes: js.Function0[Boolean]
   
-  val hasPointerCapture: js.Function1[/* pointerId */ Double, Boolean] = js.native
+  val hasPointerCapture: js.Function1[/* pointerId */ Double, Boolean]
   
-  val hidden: Boolean = js.native
+  val hidden: Boolean
   
-  val id: String = js.native
+  val id: String
   
-  val innerHTML: String = js.native
+  val innerHTML: String
   
-  val innerText: String = js.native
+  val innerText: String
   
-  val inputMode: String = js.native
+  val inputMode: String
   
-  val insertAdjacentElement: js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null] = js.native
+  val insertAdjacentElement: js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null]
   
-  val insertAdjacentHTML: js.Function2[/* where */ InsertPosition, /* html */ String, Unit] = js.native
+  val insertAdjacentHTML: js.Function2[/* where */ InsertPosition, /* html */ String, Unit]
   
-  val insertAdjacentText: js.Function2[/* where */ InsertPosition, /* text */ String, Unit] = js.native
+  val insertAdjacentText: js.Function2[/* where */ InsertPosition, /* text */ String, Unit]
   
-  val insertBefore: js.Function1[/* newChild */ Node, Node] = js.native
+  val insertBefore: js.Function1[/* newChild */ Node, Node]
   
-  val isConnected: Boolean = js.native
+  val isConnected: Boolean
   
-  val isContentEditable: Boolean = js.native
+  val isContentEditable: Boolean
   
-  val isDefaultNamespace: js.Function0[Boolean] = js.native
+  val isDefaultNamespace: js.Function0[Boolean]
   
-  val isEqualNode: js.Function0[Boolean] = js.native
+  val isEqualNode: js.Function0[Boolean]
   
-  val isSameNode: js.Function0[Boolean] = js.native
+  val isSameNode: js.Function0[Boolean]
   
-  val lang: String = js.native
+  val lang: String
   
-  val lastChild: js.UndefOr[ChildNode | Null] = js.native
+  val lastChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  val lastElementChild: js.UndefOr[Element | Null] = js.native
+  val lastElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  val localName: String = js.native
+  val localName: String
   
-  val lookupNamespaceURI: js.Function0[String | Null] = js.native
+  val lookupNamespaceURI: js.Function0[String | Null]
   
-  val lookupPrefix: js.Function0[String | Null] = js.native
+  val lookupPrefix: js.Function0[String | Null]
   
-  val matches: js.Function1[/* selectors */ String, Boolean] = js.native
+  val matches: js.Function1[/* selectors */ String, Boolean]
   
-  val msGetRegionContent: js.Function0[_] = js.native
+  val msGetRegionContent: js.Function0[js.Any]
   
-  val namespaceURI: js.UndefOr[String | Null] = js.native
+  val namespaceURI: js.UndefOr[String | Null] = js.undefined
   
-  val nextElementSibling: js.UndefOr[Element | Null] = js.native
+  val nextElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  val nextSibling: js.UndefOr[ChildNode | Null] = js.native
+  val nextSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  val nodeName: String = js.native
+  val nodeName: String
   
-  val nodeType: Double = js.native
+  val nodeType: Double
   
-  val nodeValue: js.UndefOr[String | Null] = js.native
+  val nodeValue: js.UndefOr[String | Null] = js.undefined
   
-  val nonce: js.UndefOr[String] = js.native
+  val nonce: js.UndefOr[String] = js.undefined
   
-  val normalize: js.Function0[Unit] = js.native
+  val normalize: js.Function0[Unit]
   
-  val offsetHeight: Double = js.native
+  val offsetHeight: Double
   
-  val offsetLeft: Double = js.native
+  val offsetLeft: Double
   
-  val offsetParent: js.UndefOr[Element | Null] = js.native
+  val offsetParent: js.UndefOr[Element | Null] = js.undefined
   
-  val offsetTop: Double = js.native
+  val offsetTop: Double
   
-  val offsetWidth: Double = js.native
+  val offsetWidth: Double
   
-  val onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+  val onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
   
-  val onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  val onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  val onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  val onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  val onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  val onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  val onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  val onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  val onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+  val onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
   
-  val oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  val oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  val oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  val oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  val ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  val ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  val ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onerror: OnErrorEventHandler = js.native
+  val onerror: OnErrorEventHandler
   
-  val onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+  val onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
   
-  val onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  val onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  val onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  val onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  val onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  val onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  val onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  val onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  val onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  val onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  val onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  val onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  val onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
   val onprogress: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null
-  ] = js.native
+    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
+  ] = js.undefined
   
-  val onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+  val onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
   
-  val onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
   val onsecuritypolicyviolation: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]) | Null
-  ] = js.native
+    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
+  ] = js.undefined
   
-  val onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  val ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  val ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  val ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  val ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  val ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  val ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  val ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  val ontransitioncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  val ontransitioncancel: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  val ontransitionend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  val ontransitionend: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  val ontransitionrun: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  val ontransitionrun: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  val ontransitionstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  val ontransitionstart: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  val onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  val onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  val onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]) | Null] = js.native
+  val onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, js.Any]) | Null] = js.undefined
   
-  val outerHTML: String = js.native
+  val outerHTML: String
   
-  val ownerDocument: Document = js.native
+  val ownerDocument: Document
   
-  val parentElement: js.UndefOr[HTMLElement | Null] = js.native
+  val parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  val parentNode: js.UndefOr[(Node with ParentNode) | Null] = js.native
+  val parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
   
-  val prefix: js.UndefOr[String | Null] = js.native
+  val prefix: js.UndefOr[String | Null] = js.undefined
   
-  val prepend: js.Function1[/* repeated */ Node | String, Unit] = js.native
+  val prepend: js.Function1[/* repeated */ Node | String, Unit]
   
-  val previousElementSibling: js.UndefOr[Element | Null] = js.native
+  val previousElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  val previousSibling: js.UndefOr[ChildNode | Null] = js.native
+  val previousSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  val querySelector: js.Function1[a, HTMLAnchorElement | Null] = js.native
+  val querySelector: js.Function1[a, HTMLAnchorElement | Null]
   
-  val querySelectorAll: js.Function1[a, NodeListOf[HTMLAnchorElement]] = js.native
+  val querySelectorAll: js.Function1[a, NodeListOf[HTMLAnchorElement]]
   
-  val releasePointerCapture: js.Function1[/* pointerId */ Double, Unit] = js.native
+  val releasePointerCapture: js.Function1[/* pointerId */ Double, Unit]
   
-  val remove: js.Function0[Unit] = js.native
+  val remove: js.Function0[Unit]
   
-  val removeAttribute: js.Function1[/* qualifiedName */ String, Unit] = js.native
+  val removeAttribute: js.Function1[/* qualifiedName */ String, Unit]
   
-  val removeAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, Unit] = js.native
+  val removeAttributeNS: js.Function2[/* namespace */ String, /* localName */ String, Unit]
   
-  val removeAttributeNode: js.Function1[/* attr */ Attr, Attr] = js.native
+  val removeAttributeNode: js.Function1[/* attr */ Attr, Attr]
   
-  val removeChild: js.Function1[/* oldChild */ Node, Node] = js.native
+  val removeChild: js.Function1[/* oldChild */ Node, Node]
   
   val removeEventListener: js.Function2[
     fullscreenchange, 
-    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+    /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
     Unit
-  ] = js.native
+  ]
   
-  val replaceChild: js.Function2[/* newChild */ Node, /* oldChild */ Node, Node] = js.native
+  val replaceChild: js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]
   
-  val replaceWith: js.Function1[/* repeated */ Node | String, Unit] = js.native
+  val replaceWith: js.Function1[/* repeated */ Node | String, Unit]
   
-  val requestFullscreen: js.Function0[js.Promise[Unit]] = js.native
+  val requestFullscreen: js.Function0[js.Promise[Unit]]
   
-  val requestPointerLock: js.Function0[Unit] = js.native
+  val requestPointerLock: js.Function0[Unit]
   
-  val scroll: js.Function0[Unit] = js.native
+  val scroll: js.Function0[Unit]
   
-  val scrollBy: js.Function0[Unit] = js.native
+  val scrollBy: js.Function0[Unit]
   
-  val scrollHeight: Double = js.native
+  val scrollHeight: Double
   
-  val scrollIntoView: js.Function0[Unit] = js.native
+  val scrollIntoView: js.Function0[Unit]
   
-  val scrollLeft: Double = js.native
+  val scrollLeft: Double
   
-  val scrollTo: js.Function0[Unit] = js.native
+  val scrollTo: js.Function0[Unit]
   
-  val scrollTop: Double = js.native
+  val scrollTop: Double
   
-  val scrollWidth: Double = js.native
+  val scrollWidth: Double
   
-  val setAttribute: js.Function2[/* qualifiedName */ String, /* value */ String, Unit] = js.native
+  val setAttribute: js.Function2[/* qualifiedName */ String, /* value */ String, Unit]
   
-  val setAttributeNS: js.Function3[/* namespace */ String, /* qualifiedName */ String, /* value */ String, Unit] = js.native
+  val setAttributeNS: js.Function3[/* namespace */ String, /* qualifiedName */ String, /* value */ String, Unit]
   
-  val setAttributeNode: js.Function1[/* attr */ Attr, Attr | Null] = js.native
+  val setAttributeNode: js.Function1[/* attr */ Attr, Attr | Null]
   
-  val setAttributeNodeNS: js.Function1[/* attr */ Attr, Attr | Null] = js.native
+  val setAttributeNodeNS: js.Function1[/* attr */ Attr, Attr | Null]
   
-  val setPointerCapture: js.Function1[/* pointerId */ Double, Unit] = js.native
+  val setPointerCapture: js.Function1[/* pointerId */ Double, Unit]
   
-  val shadowRoot: js.UndefOr[ShadowRoot | Null] = js.native
+  val shadowRoot: js.UndefOr[ShadowRoot | Null] = js.undefined
   
-  val slot: String = js.native
+  val slot: String
   
-  val spellcheck: Boolean = js.native
+  val spellcheck: Boolean
   
-  val style: CSSStyleDeclaration = js.native
+  val style: CSSStyleDeclaration
   
-  val tabIndex: Double = js.native
+  val tabIndex: Double
   
-  val tagName: String = js.native
+  val tagName: String
   
-  val textContent: js.UndefOr[String | Null] = js.native
+  val textContent: js.UndefOr[String | Null] = js.undefined
   
-  val title: String = js.native
+  val title: String
   
-  val toggleAttribute: js.Function1[/* qualifiedName */ String, Boolean] = js.native
+  val toggleAttribute: js.Function1[/* qualifiedName */ String, Boolean]
   
-  val translate: Boolean = js.native
+  val translate: Boolean
   
-  val webkitMatchesSelector: js.Function1[/* selectors */ String, Boolean] = js.native
+  val webkitMatchesSelector: js.Function1[/* selectors */ String, Boolean]
 }
 object ReadonlyHTMLElement {
   
@@ -577,7 +583,7 @@ object ReadonlyHTMLElement {
     TEXT_NODE: Double,
     accessKey: String,
     accessKeyLabel: String,
-    addEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]) => Unit,
+    addEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]) => Unit,
     after: /* repeated */ Node | String => Unit,
     animate: () => Animation,
     append: /* repeated */ Node | String => Unit,
@@ -646,7 +652,7 @@ object ReadonlyHTMLElement {
     lookupNamespaceURI: () => String | Null,
     lookupPrefix: () => String | Null,
     matches: /* selectors */ String => Boolean,
-    msGetRegionContent: () => _,
+    msGetRegionContent: () => js.Any,
     nodeName: String,
     nodeType: Double,
     normalize: () => Unit,
@@ -665,7 +671,7 @@ object ReadonlyHTMLElement {
     removeAttributeNS: (/* namespace */ String, /* localName */ String) => Unit,
     removeAttributeNode: /* attr */ Attr => Attr,
     removeChild: /* oldChild */ Node => Node,
-    removeEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]) => Unit,
+    removeEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]) => Unit,
     replaceChild: (/* newChild */ Node, /* oldChild */ Node) => Node,
     replaceWith: /* repeated */ Node | String => Unit,
     requestFullscreen: () => js.Promise[Unit],
@@ -693,7 +699,7 @@ object ReadonlyHTMLElement {
     translate: Boolean,
     webkitMatchesSelector: /* selectors */ String => Boolean
   ): ReadonlyHTMLElement = {
-    val __obj = js.Dynamic.literal(ATTRIBUTE_NODE = ATTRIBUTE_NODE.asInstanceOf[js.Any], CDATA_SECTION_NODE = CDATA_SECTION_NODE.asInstanceOf[js.Any], COMMENT_NODE = COMMENT_NODE.asInstanceOf[js.Any], DOCUMENT_FRAGMENT_NODE = DOCUMENT_FRAGMENT_NODE.asInstanceOf[js.Any], DOCUMENT_NODE = DOCUMENT_NODE.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINED_BY = DOCUMENT_POSITION_CONTAINED_BY.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINS = DOCUMENT_POSITION_CONTAINS.asInstanceOf[js.Any], DOCUMENT_POSITION_DISCONNECTED = DOCUMENT_POSITION_DISCONNECTED.asInstanceOf[js.Any], DOCUMENT_POSITION_FOLLOWING = DOCUMENT_POSITION_FOLLOWING.asInstanceOf[js.Any], DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC.asInstanceOf[js.Any], DOCUMENT_POSITION_PRECEDING = DOCUMENT_POSITION_PRECEDING.asInstanceOf[js.Any], DOCUMENT_TYPE_NODE = DOCUMENT_TYPE_NODE.asInstanceOf[js.Any], ELEMENT_NODE = ELEMENT_NODE.asInstanceOf[js.Any], ENTITY_NODE = ENTITY_NODE.asInstanceOf[js.Any], ENTITY_REFERENCE_NODE = ENTITY_REFERENCE_NODE.asInstanceOf[js.Any], NOTATION_NODE = NOTATION_NODE.asInstanceOf[js.Any], PROCESSING_INSTRUCTION_NODE = PROCESSING_INSTRUCTION_NODE.asInstanceOf[js.Any], TEXT_NODE = TEXT_NODE.asInstanceOf[js.Any], accessKey = accessKey.asInstanceOf[js.Any], accessKeyLabel = accessKeyLabel.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), after = js.Any.fromFunction1(after), animate = js.Any.fromFunction0(animate), append = js.Any.fromFunction1(append), appendChild = js.Any.fromFunction1(appendChild), attachShadow = js.Any.fromFunction1(attachShadow), attributes = attributes.asInstanceOf[js.Any], autocapitalize = autocapitalize.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], baseURI = baseURI.asInstanceOf[js.Any], before = js.Any.fromFunction1(before), blur = js.Any.fromFunction0(blur), childElementCount = childElementCount.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classList = classList.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], click = js.Any.fromFunction0(click), clientHeight = clientHeight.asInstanceOf[js.Any], clientLeft = clientLeft.asInstanceOf[js.Any], clientTop = clientTop.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction0(cloneNode), closest = js.Any.fromFunction1(closest), compareDocumentPosition = js.Any.fromFunction1(compareDocumentPosition), contains = js.Any.fromFunction0(contains), contentEditable = contentEditable.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), draggable = draggable.asInstanceOf[js.Any], enterKeyHint = enterKeyHint.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getAnimations = js.Any.fromFunction0(getAnimations), getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNames = js.Any.fromFunction0(getAttributeNames), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getClientRects = js.Any.fromFunction0(getClientRects), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getElementsByTagNameNS = js.Any.fromFunction2(getElementsByTagNameNS), getRootNode = js.Any.fromFunction0(getRootNode), hasAttribute = js.Any.fromFunction1(hasAttribute), hasAttributeNS = js.Any.fromFunction2(hasAttributeNS), hasAttributes = js.Any.fromFunction0(hasAttributes), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasPointerCapture = js.Any.fromFunction1(hasPointerCapture), hidden = hidden.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], innerText = innerText.asInstanceOf[js.Any], inputMode = inputMode.asInstanceOf[js.Any], insertAdjacentElement = js.Any.fromFunction2(insertAdjacentElement), insertAdjacentHTML = js.Any.fromFunction2(insertAdjacentHTML), insertAdjacentText = js.Any.fromFunction2(insertAdjacentText), insertBefore = js.Any.fromFunction1(insertBefore), isConnected = isConnected.asInstanceOf[js.Any], isContentEditable = isContentEditable.asInstanceOf[js.Any], isDefaultNamespace = js.Any.fromFunction0(isDefaultNamespace), isEqualNode = js.Any.fromFunction0(isEqualNode), isSameNode = js.Any.fromFunction0(isSameNode), lang = lang.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], lookupNamespaceURI = js.Any.fromFunction0(lookupNamespaceURI), lookupPrefix = js.Any.fromFunction0(lookupPrefix), matches = js.Any.fromFunction1(matches), msGetRegionContent = js.Any.fromFunction0(msGetRegionContent), nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetLeft = offsetLeft.asInstanceOf[js.Any], offsetTop = offsetTop.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any], outerHTML = outerHTML.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], prepend = js.Any.fromFunction1(prepend), querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll), releasePointerCapture = js.Any.fromFunction1(releasePointerCapture), remove = js.Any.fromFunction0(remove), removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), removeEventListener = js.Any.fromFunction2(removeEventListener), replaceChild = js.Any.fromFunction2(replaceChild), replaceWith = js.Any.fromFunction1(replaceWith), requestFullscreen = js.Any.fromFunction0(requestFullscreen), requestPointerLock = js.Any.fromFunction0(requestPointerLock), scroll = js.Any.fromFunction0(scroll), scrollBy = js.Any.fromFunction0(scrollBy), scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollIntoView = js.Any.fromFunction0(scrollIntoView), scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTo = js.Any.fromFunction0(scrollTo), scrollTop = scrollTop.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), setPointerCapture = js.Any.fromFunction1(setPointerCapture), slot = slot.asInstanceOf[js.Any], spellcheck = spellcheck.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toggleAttribute = js.Any.fromFunction1(toggleAttribute), translate = translate.asInstanceOf[js.Any], webkitMatchesSelector = js.Any.fromFunction1(webkitMatchesSelector))
+    val __obj = js.Dynamic.literal(ATTRIBUTE_NODE = ATTRIBUTE_NODE.asInstanceOf[js.Any], CDATA_SECTION_NODE = CDATA_SECTION_NODE.asInstanceOf[js.Any], COMMENT_NODE = COMMENT_NODE.asInstanceOf[js.Any], DOCUMENT_FRAGMENT_NODE = DOCUMENT_FRAGMENT_NODE.asInstanceOf[js.Any], DOCUMENT_NODE = DOCUMENT_NODE.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINED_BY = DOCUMENT_POSITION_CONTAINED_BY.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINS = DOCUMENT_POSITION_CONTAINS.asInstanceOf[js.Any], DOCUMENT_POSITION_DISCONNECTED = DOCUMENT_POSITION_DISCONNECTED.asInstanceOf[js.Any], DOCUMENT_POSITION_FOLLOWING = DOCUMENT_POSITION_FOLLOWING.asInstanceOf[js.Any], DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC.asInstanceOf[js.Any], DOCUMENT_POSITION_PRECEDING = DOCUMENT_POSITION_PRECEDING.asInstanceOf[js.Any], DOCUMENT_TYPE_NODE = DOCUMENT_TYPE_NODE.asInstanceOf[js.Any], ELEMENT_NODE = ELEMENT_NODE.asInstanceOf[js.Any], ENTITY_NODE = ENTITY_NODE.asInstanceOf[js.Any], ENTITY_REFERENCE_NODE = ENTITY_REFERENCE_NODE.asInstanceOf[js.Any], NOTATION_NODE = NOTATION_NODE.asInstanceOf[js.Any], PROCESSING_INSTRUCTION_NODE = PROCESSING_INSTRUCTION_NODE.asInstanceOf[js.Any], TEXT_NODE = TEXT_NODE.asInstanceOf[js.Any], accessKey = accessKey.asInstanceOf[js.Any], accessKeyLabel = accessKeyLabel.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), after = js.Any.fromFunction1(after), animate = js.Any.fromFunction0(animate), append = js.Any.fromFunction1(append), appendChild = js.Any.fromFunction1(appendChild), attachShadow = js.Any.fromFunction1(attachShadow), attributes = attributes.asInstanceOf[js.Any], autocapitalize = autocapitalize.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], baseURI = baseURI.asInstanceOf[js.Any], before = js.Any.fromFunction1(before), blur = js.Any.fromFunction0(blur), childElementCount = childElementCount.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classList = classList.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], click = js.Any.fromFunction0(click), clientHeight = clientHeight.asInstanceOf[js.Any], clientLeft = clientLeft.asInstanceOf[js.Any], clientTop = clientTop.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction0(cloneNode), closest = js.Any.fromFunction1(closest), compareDocumentPosition = js.Any.fromFunction1(compareDocumentPosition), contains = js.Any.fromFunction0(contains), contentEditable = contentEditable.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), draggable = draggable.asInstanceOf[js.Any], enterKeyHint = enterKeyHint.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getAnimations = js.Any.fromFunction0(getAnimations), getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNames = js.Any.fromFunction0(getAttributeNames), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getClientRects = js.Any.fromFunction0(getClientRects), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getElementsByTagNameNS = js.Any.fromFunction2(getElementsByTagNameNS), getRootNode = js.Any.fromFunction0(getRootNode), hasAttribute = js.Any.fromFunction1(hasAttribute), hasAttributeNS = js.Any.fromFunction2(hasAttributeNS), hasAttributes = js.Any.fromFunction0(hasAttributes), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasPointerCapture = js.Any.fromFunction1(hasPointerCapture), hidden = hidden.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], innerText = innerText.asInstanceOf[js.Any], inputMode = inputMode.asInstanceOf[js.Any], insertAdjacentElement = js.Any.fromFunction2(insertAdjacentElement), insertAdjacentHTML = js.Any.fromFunction2(insertAdjacentHTML), insertAdjacentText = js.Any.fromFunction2(insertAdjacentText), insertBefore = js.Any.fromFunction1(insertBefore), isConnected = isConnected.asInstanceOf[js.Any], isContentEditable = isContentEditable.asInstanceOf[js.Any], isDefaultNamespace = js.Any.fromFunction0(isDefaultNamespace), isEqualNode = js.Any.fromFunction0(isEqualNode), isSameNode = js.Any.fromFunction0(isSameNode), lang = lang.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], lookupNamespaceURI = js.Any.fromFunction0(lookupNamespaceURI), lookupPrefix = js.Any.fromFunction0(lookupPrefix), matches = js.Any.fromFunction1(matches), msGetRegionContent = js.Any.fromFunction0(msGetRegionContent), nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetLeft = offsetLeft.asInstanceOf[js.Any], offsetTop = offsetTop.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any], outerHTML = outerHTML.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], prepend = js.Any.fromFunction1(prepend), querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll), releasePointerCapture = js.Any.fromFunction1(releasePointerCapture), remove = js.Any.fromFunction0(remove), removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), removeEventListener = js.Any.fromFunction2(removeEventListener), replaceChild = js.Any.fromFunction2(replaceChild), replaceWith = js.Any.fromFunction1(replaceWith), requestFullscreen = js.Any.fromFunction0(requestFullscreen), requestPointerLock = js.Any.fromFunction0(requestPointerLock), scroll = js.Any.fromFunction0(scroll), scrollBy = js.Any.fromFunction0(scrollBy), scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollIntoView = js.Any.fromFunction0(scrollIntoView), scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTo = js.Any.fromFunction0(scrollTo), scrollTop = scrollTop.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), setPointerCapture = js.Any.fromFunction1(setPointerCapture), slot = slot.asInstanceOf[js.Any], spellcheck = spellcheck.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toggleAttribute = js.Any.fromFunction1(toggleAttribute), translate = translate.asInstanceOf[js.Any], webkitMatchesSelector = js.Any.fromFunction1(webkitMatchesSelector), onerror = null)
     __obj.asInstanceOf[ReadonlyHTMLElement]
   }
   
@@ -711,7 +717,7 @@ object ReadonlyHTMLElement {
     
     @scala.inline
     def setAddEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -1008,7 +1014,7 @@ object ReadonlyHTMLElement {
     def setMatches(value: /* selectors */ String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsGetRegionContent(value: () => _): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
+    def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
     
     @scala.inline
     def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
@@ -1086,7 +1092,7 @@ object ReadonlyHTMLElement {
     def setOffsetWidth(value: Double): Self = StObject.set(x, "offsetWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnabort(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ UIEvent, _]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    def setOnabort(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnabortNull: Self = StObject.set(x, "onabort", null)
@@ -1095,7 +1101,7 @@ object ReadonlyHTMLElement {
     def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
     
     @scala.inline
-    def setOnanimationcancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
+    def setOnanimationcancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationcancelNull: Self = StObject.set(x, "onanimationcancel", null)
@@ -1104,7 +1110,7 @@ object ReadonlyHTMLElement {
     def setOnanimationcancelUndefined: Self = StObject.set(x, "onanimationcancel", js.undefined)
     
     @scala.inline
-    def setOnanimationend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
+    def setOnanimationend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationendNull: Self = StObject.set(x, "onanimationend", null)
@@ -1113,7 +1119,7 @@ object ReadonlyHTMLElement {
     def setOnanimationendUndefined: Self = StObject.set(x, "onanimationend", js.undefined)
     
     @scala.inline
-    def setOnanimationiteration(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
+    def setOnanimationiteration(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationiterationNull: Self = StObject.set(x, "onanimationiteration", null)
@@ -1122,7 +1128,7 @@ object ReadonlyHTMLElement {
     def setOnanimationiterationUndefined: Self = StObject.set(x, "onanimationiteration", js.undefined)
     
     @scala.inline
-    def setOnanimationstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
+    def setOnanimationstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationstartNull: Self = StObject.set(x, "onanimationstart", null)
@@ -1131,7 +1137,7 @@ object ReadonlyHTMLElement {
     def setOnanimationstartUndefined: Self = StObject.set(x, "onanimationstart", js.undefined)
     
     @scala.inline
-    def setOnauxclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+    def setOnauxclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnauxclickNull: Self = StObject.set(x, "onauxclick", null)
@@ -1140,7 +1146,7 @@ object ReadonlyHTMLElement {
     def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
     
     @scala.inline
-    def setOnblur(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    def setOnblur(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnblurNull: Self = StObject.set(x, "onblur", null)
@@ -1149,7 +1155,7 @@ object ReadonlyHTMLElement {
     def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
     
     @scala.inline
-    def setOncancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+    def setOncancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncancelNull: Self = StObject.set(x, "oncancel", null)
@@ -1158,7 +1164,7 @@ object ReadonlyHTMLElement {
     def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
     
     @scala.inline
-    def setOncanplay(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+    def setOncanplay(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncanplayNull: Self = StObject.set(x, "oncanplay", null)
@@ -1167,7 +1173,7 @@ object ReadonlyHTMLElement {
     def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
     
     @scala.inline
-    def setOncanplaythrough(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+    def setOncanplaythrough(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncanplaythroughNull: Self = StObject.set(x, "oncanplaythrough", null)
@@ -1176,7 +1182,7 @@ object ReadonlyHTMLElement {
     def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
     
     @scala.inline
-    def setOnchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    def setOnchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnchangeNull: Self = StObject.set(x, "onchange", null)
@@ -1185,7 +1191,7 @@ object ReadonlyHTMLElement {
     def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
     
     @scala.inline
-    def setOnclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    def setOnclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnclickNull: Self = StObject.set(x, "onclick", null)
@@ -1194,7 +1200,7 @@ object ReadonlyHTMLElement {
     def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def setOnclose(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
+    def setOnclose(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncloseNull: Self = StObject.set(x, "onclose", null)
@@ -1203,7 +1209,7 @@ object ReadonlyHTMLElement {
     def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
     @scala.inline
-    def setOncontextmenu(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+    def setOncontextmenu(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncontextmenuNull: Self = StObject.set(x, "oncontextmenu", null)
@@ -1212,7 +1218,7 @@ object ReadonlyHTMLElement {
     def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
     
     @scala.inline
-    def setOncopy(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+    def setOncopy(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncopyNull: Self = StObject.set(x, "oncopy", null)
@@ -1221,7 +1227,7 @@ object ReadonlyHTMLElement {
     def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
     
     @scala.inline
-    def setOncuechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+    def setOncuechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncuechangeNull: Self = StObject.set(x, "oncuechange", null)
@@ -1230,7 +1236,7 @@ object ReadonlyHTMLElement {
     def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
     
     @scala.inline
-    def setOncut(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+    def setOncut(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncutNull: Self = StObject.set(x, "oncut", null)
@@ -1239,7 +1245,7 @@ object ReadonlyHTMLElement {
     def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
     
     @scala.inline
-    def setOndblclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+    def setOndblclick(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndblclickNull: Self = StObject.set(x, "ondblclick", null)
@@ -1248,7 +1254,7 @@ object ReadonlyHTMLElement {
     def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
     
     @scala.inline
-    def setOndrag(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    def setOndrag(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragNull: Self = StObject.set(x, "ondrag", null)
@@ -1257,7 +1263,7 @@ object ReadonlyHTMLElement {
     def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
     
     @scala.inline
-    def setOndragend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    def setOndragend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragendNull: Self = StObject.set(x, "ondragend", null)
@@ -1266,7 +1272,7 @@ object ReadonlyHTMLElement {
     def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
     
     @scala.inline
-    def setOndragenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+    def setOndragenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragenterNull: Self = StObject.set(x, "ondragenter", null)
@@ -1275,7 +1281,7 @@ object ReadonlyHTMLElement {
     def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
     
     @scala.inline
-    def setOndragexit(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
+    def setOndragexit(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragexitNull: Self = StObject.set(x, "ondragexit", null)
@@ -1284,7 +1290,7 @@ object ReadonlyHTMLElement {
     def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
     
     @scala.inline
-    def setOndragleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+    def setOndragleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragleaveNull: Self = StObject.set(x, "ondragleave", null)
@@ -1293,7 +1299,7 @@ object ReadonlyHTMLElement {
     def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
     
     @scala.inline
-    def setOndragover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+    def setOndragover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragoverNull: Self = StObject.set(x, "ondragover", null)
@@ -1302,7 +1308,7 @@ object ReadonlyHTMLElement {
     def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
     
     @scala.inline
-    def setOndragstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+    def setOndragstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragstartNull: Self = StObject.set(x, "ondragstart", null)
@@ -1311,7 +1317,7 @@ object ReadonlyHTMLElement {
     def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
     
     @scala.inline
-    def setOndrop(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+    def setOndrop(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndropNull: Self = StObject.set(x, "ondrop", null)
@@ -1320,7 +1326,7 @@ object ReadonlyHTMLElement {
     def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
     
     @scala.inline
-    def setOndurationchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+    def setOndurationchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndurationchangeNull: Self = StObject.set(x, "ondurationchange", null)
@@ -1329,7 +1335,7 @@ object ReadonlyHTMLElement {
     def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
     
     @scala.inline
-    def setOnemptied(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+    def setOnemptied(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnemptiedNull: Self = StObject.set(x, "onemptied", null)
@@ -1338,7 +1344,7 @@ object ReadonlyHTMLElement {
     def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
     
     @scala.inline
-    def setOnended(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+    def setOnended(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnendedNull: Self = StObject.set(x, "onended", null)
@@ -1355,7 +1361,7 @@ object ReadonlyHTMLElement {
     def setOnerrorNull: Self = StObject.set(x, "onerror", null)
     
     @scala.inline
-    def setOnfocus(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    def setOnfocus(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfocusNull: Self = StObject.set(x, "onfocus", null)
@@ -1364,7 +1370,7 @@ object ReadonlyHTMLElement {
     def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
     
     @scala.inline
-    def setOnfullscreenchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+    def setOnfullscreenchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
@@ -1373,7 +1379,7 @@ object ReadonlyHTMLElement {
     def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
     @scala.inline
-    def setOnfullscreenerror(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+    def setOnfullscreenerror(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
@@ -1382,7 +1388,7 @@ object ReadonlyHTMLElement {
     def setOnfullscreenerrorUndefined: Self = StObject.set(x, "onfullscreenerror", js.undefined)
     
     @scala.inline
-    def setOngotpointercapture(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
+    def setOngotpointercapture(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOngotpointercaptureNull: Self = StObject.set(x, "ongotpointercapture", null)
@@ -1391,7 +1397,7 @@ object ReadonlyHTMLElement {
     def setOngotpointercaptureUndefined: Self = StObject.set(x, "ongotpointercapture", js.undefined)
     
     @scala.inline
-    def setOninput(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+    def setOninput(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOninputNull: Self = StObject.set(x, "oninput", null)
@@ -1400,7 +1406,7 @@ object ReadonlyHTMLElement {
     def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
     
     @scala.inline
-    def setOninvalid(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+    def setOninvalid(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOninvalidNull: Self = StObject.set(x, "oninvalid", null)
@@ -1409,7 +1415,7 @@ object ReadonlyHTMLElement {
     def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
     
     @scala.inline
-    def setOnkeydown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+    def setOnkeydown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeydownNull: Self = StObject.set(x, "onkeydown", null)
@@ -1418,7 +1424,7 @@ object ReadonlyHTMLElement {
     def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
     
     @scala.inline
-    def setOnkeypress(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+    def setOnkeypress(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeypressNull: Self = StObject.set(x, "onkeypress", null)
@@ -1427,7 +1433,7 @@ object ReadonlyHTMLElement {
     def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
     
     @scala.inline
-    def setOnkeyup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+    def setOnkeyup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeyupNull: Self = StObject.set(x, "onkeyup", null)
@@ -1436,7 +1442,7 @@ object ReadonlyHTMLElement {
     def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
     
     @scala.inline
-    def setOnload(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    def setOnload(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadNull: Self = StObject.set(x, "onload", null)
@@ -1445,7 +1451,7 @@ object ReadonlyHTMLElement {
     def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
     @scala.inline
-    def setOnloadeddata(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+    def setOnloadeddata(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadeddataNull: Self = StObject.set(x, "onloadeddata", null)
@@ -1454,7 +1460,7 @@ object ReadonlyHTMLElement {
     def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
     
     @scala.inline
-    def setOnloadedmetadata(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+    def setOnloadedmetadata(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadedmetadataNull: Self = StObject.set(x, "onloadedmetadata", null)
@@ -1463,7 +1469,7 @@ object ReadonlyHTMLElement {
     def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
     
     @scala.inline
-    def setOnloadstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+    def setOnloadstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadstartNull: Self = StObject.set(x, "onloadstart", null)
@@ -1472,7 +1478,7 @@ object ReadonlyHTMLElement {
     def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
     
     @scala.inline
-    def setOnlostpointercapture(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
+    def setOnlostpointercapture(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnlostpointercaptureNull: Self = StObject.set(x, "onlostpointercapture", null)
@@ -1481,7 +1487,7 @@ object ReadonlyHTMLElement {
     def setOnlostpointercaptureUndefined: Self = StObject.set(x, "onlostpointercapture", js.undefined)
     
     @scala.inline
-    def setOnmousedown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+    def setOnmousedown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmousedownNull: Self = StObject.set(x, "onmousedown", null)
@@ -1490,7 +1496,7 @@ object ReadonlyHTMLElement {
     def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
     
     @scala.inline
-    def setOnmouseenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+    def setOnmouseenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseenterNull: Self = StObject.set(x, "onmouseenter", null)
@@ -1499,7 +1505,7 @@ object ReadonlyHTMLElement {
     def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
     
     @scala.inline
-    def setOnmouseleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+    def setOnmouseleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseleaveNull: Self = StObject.set(x, "onmouseleave", null)
@@ -1508,7 +1514,7 @@ object ReadonlyHTMLElement {
     def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
     
     @scala.inline
-    def setOnmousemove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+    def setOnmousemove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmousemoveNull: Self = StObject.set(x, "onmousemove", null)
@@ -1517,7 +1523,7 @@ object ReadonlyHTMLElement {
     def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
     
     @scala.inline
-    def setOnmouseout(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+    def setOnmouseout(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseoutNull: Self = StObject.set(x, "onmouseout", null)
@@ -1526,7 +1532,7 @@ object ReadonlyHTMLElement {
     def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
     @scala.inline
-    def setOnmouseover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+    def setOnmouseover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseoverNull: Self = StObject.set(x, "onmouseover", null)
@@ -1535,7 +1541,7 @@ object ReadonlyHTMLElement {
     def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
     @scala.inline
-    def setOnmouseup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+    def setOnmouseup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseupNull: Self = StObject.set(x, "onmouseup", null)
@@ -1544,7 +1550,7 @@ object ReadonlyHTMLElement {
     def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
     
     @scala.inline
-    def setOnpaste(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+    def setOnpaste(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpasteNull: Self = StObject.set(x, "onpaste", null)
@@ -1553,7 +1559,7 @@ object ReadonlyHTMLElement {
     def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
     
     @scala.inline
-    def setOnpause(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+    def setOnpause(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpauseNull: Self = StObject.set(x, "onpause", null)
@@ -1562,7 +1568,7 @@ object ReadonlyHTMLElement {
     def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
     
     @scala.inline
-    def setOnplay(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+    def setOnplay(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnplayNull: Self = StObject.set(x, "onplay", null)
@@ -1571,7 +1577,7 @@ object ReadonlyHTMLElement {
     def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
     
     @scala.inline
-    def setOnplaying(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+    def setOnplaying(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnplayingNull: Self = StObject.set(x, "onplaying", null)
@@ -1580,7 +1586,7 @@ object ReadonlyHTMLElement {
     def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
     
     @scala.inline
-    def setOnpointercancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+    def setOnpointercancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointercancelNull: Self = StObject.set(x, "onpointercancel", null)
@@ -1589,7 +1595,7 @@ object ReadonlyHTMLElement {
     def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
     
     @scala.inline
-    def setOnpointerdown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+    def setOnpointerdown(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerdownNull: Self = StObject.set(x, "onpointerdown", null)
@@ -1598,7 +1604,7 @@ object ReadonlyHTMLElement {
     def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
     
     @scala.inline
-    def setOnpointerenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+    def setOnpointerenter(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerenterNull: Self = StObject.set(x, "onpointerenter", null)
@@ -1607,7 +1613,7 @@ object ReadonlyHTMLElement {
     def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
     
     @scala.inline
-    def setOnpointerleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+    def setOnpointerleave(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerleaveNull: Self = StObject.set(x, "onpointerleave", null)
@@ -1616,7 +1622,7 @@ object ReadonlyHTMLElement {
     def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
     
     @scala.inline
-    def setOnpointermove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+    def setOnpointermove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointermoveNull: Self = StObject.set(x, "onpointermove", null)
@@ -1625,7 +1631,7 @@ object ReadonlyHTMLElement {
     def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
     
     @scala.inline
-    def setOnpointerout(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+    def setOnpointerout(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointeroutNull: Self = StObject.set(x, "onpointerout", null)
@@ -1634,7 +1640,7 @@ object ReadonlyHTMLElement {
     def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
     
     @scala.inline
-    def setOnpointerover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+    def setOnpointerover(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointeroverNull: Self = StObject.set(x, "onpointerover", null)
@@ -1643,7 +1649,7 @@ object ReadonlyHTMLElement {
     def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
     
     @scala.inline
-    def setOnpointerup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+    def setOnpointerup(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerupNull: Self = StObject.set(x, "onpointerup", null)
@@ -1652,7 +1658,7 @@ object ReadonlyHTMLElement {
     def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
     
     @scala.inline
-    def setOnprogress(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ProgressEvent[EventTarget], _]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    def setOnprogress(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnprogressNull: Self = StObject.set(x, "onprogress", null)
@@ -1661,7 +1667,7 @@ object ReadonlyHTMLElement {
     def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     
     @scala.inline
-    def setOnratechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+    def setOnratechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnratechangeNull: Self = StObject.set(x, "onratechange", null)
@@ -1670,7 +1676,7 @@ object ReadonlyHTMLElement {
     def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
     
     @scala.inline
-    def setOnreset(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+    def setOnreset(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnresetNull: Self = StObject.set(x, "onreset", null)
@@ -1679,7 +1685,7 @@ object ReadonlyHTMLElement {
     def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
     
     @scala.inline
-    def setOnresize(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ UIEvent, _]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
+    def setOnresize(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnresizeNull: Self = StObject.set(x, "onresize", null)
@@ -1688,7 +1694,7 @@ object ReadonlyHTMLElement {
     def setOnresizeUndefined: Self = StObject.set(x, "onresize", js.undefined)
     
     @scala.inline
-    def setOnscroll(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+    def setOnscroll(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnscrollNull: Self = StObject.set(x, "onscroll", null)
@@ -1697,7 +1703,7 @@ object ReadonlyHTMLElement {
     def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
     
     @scala.inline
-    def setOnsecuritypolicyviolation(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ SecurityPolicyViolationEvent, _]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
+    def setOnsecuritypolicyviolation(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ SecurityPolicyViolationEvent, js.Any]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsecuritypolicyviolationNull: Self = StObject.set(x, "onsecuritypolicyviolation", null)
@@ -1706,7 +1712,7 @@ object ReadonlyHTMLElement {
     def setOnsecuritypolicyviolationUndefined: Self = StObject.set(x, "onsecuritypolicyviolation", js.undefined)
     
     @scala.inline
-    def setOnseeked(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+    def setOnseeked(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnseekedNull: Self = StObject.set(x, "onseeked", null)
@@ -1715,7 +1721,7 @@ object ReadonlyHTMLElement {
     def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
     
     @scala.inline
-    def setOnseeking(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+    def setOnseeking(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnseekingNull: Self = StObject.set(x, "onseeking", null)
@@ -1724,7 +1730,7 @@ object ReadonlyHTMLElement {
     def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
     
     @scala.inline
-    def setOnselect(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    def setOnselect(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectNull: Self = StObject.set(x, "onselect", null)
@@ -1733,7 +1739,7 @@ object ReadonlyHTMLElement {
     def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
     
     @scala.inline
-    def setOnselectionchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
+    def setOnselectionchange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectionchangeNull: Self = StObject.set(x, "onselectionchange", null)
@@ -1742,7 +1748,7 @@ object ReadonlyHTMLElement {
     def setOnselectionchangeUndefined: Self = StObject.set(x, "onselectionchange", js.undefined)
     
     @scala.inline
-    def setOnselectstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+    def setOnselectstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectstartNull: Self = StObject.set(x, "onselectstart", null)
@@ -1751,7 +1757,7 @@ object ReadonlyHTMLElement {
     def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
     
     @scala.inline
-    def setOnstalled(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+    def setOnstalled(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnstalledNull: Self = StObject.set(x, "onstalled", null)
@@ -1760,7 +1766,7 @@ object ReadonlyHTMLElement {
     def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
     
     @scala.inline
-    def setOnsubmit(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    def setOnsubmit(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsubmitNull: Self = StObject.set(x, "onsubmit", null)
@@ -1769,7 +1775,7 @@ object ReadonlyHTMLElement {
     def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
     
     @scala.inline
-    def setOnsuspend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+    def setOnsuspend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsuspendNull: Self = StObject.set(x, "onsuspend", null)
@@ -1778,7 +1784,7 @@ object ReadonlyHTMLElement {
     def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
     
     @scala.inline
-    def setOntimeupdate(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+    def setOntimeupdate(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntimeupdateNull: Self = StObject.set(x, "ontimeupdate", null)
@@ -1787,7 +1793,7 @@ object ReadonlyHTMLElement {
     def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
     
     @scala.inline
-    def setOntoggle(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
+    def setOntoggle(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntoggleNull: Self = StObject.set(x, "ontoggle", null)
@@ -1796,7 +1802,7 @@ object ReadonlyHTMLElement {
     def setOntoggleUndefined: Self = StObject.set(x, "ontoggle", js.undefined)
     
     @scala.inline
-    def setOntouchcancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
+    def setOntouchcancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchcancelNull: Self = StObject.set(x, "ontouchcancel", null)
@@ -1805,7 +1811,7 @@ object ReadonlyHTMLElement {
     def setOntouchcancelUndefined: Self = StObject.set(x, "ontouchcancel", js.undefined)
     
     @scala.inline
-    def setOntouchend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
+    def setOntouchend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchendNull: Self = StObject.set(x, "ontouchend", null)
@@ -1814,7 +1820,7 @@ object ReadonlyHTMLElement {
     def setOntouchendUndefined: Self = StObject.set(x, "ontouchend", js.undefined)
     
     @scala.inline
-    def setOntouchmove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
+    def setOntouchmove(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchmoveNull: Self = StObject.set(x, "ontouchmove", null)
@@ -1823,7 +1829,7 @@ object ReadonlyHTMLElement {
     def setOntouchmoveUndefined: Self = StObject.set(x, "ontouchmove", js.undefined)
     
     @scala.inline
-    def setOntouchstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
+    def setOntouchstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchstartNull: Self = StObject.set(x, "ontouchstart", null)
@@ -1832,7 +1838,7 @@ object ReadonlyHTMLElement {
     def setOntouchstartUndefined: Self = StObject.set(x, "ontouchstart", js.undefined)
     
     @scala.inline
-    def setOntransitioncancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
+    def setOntransitioncancel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitioncancelNull: Self = StObject.set(x, "ontransitioncancel", null)
@@ -1841,7 +1847,7 @@ object ReadonlyHTMLElement {
     def setOntransitioncancelUndefined: Self = StObject.set(x, "ontransitioncancel", js.undefined)
     
     @scala.inline
-    def setOntransitionend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
+    def setOntransitionend(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionendNull: Self = StObject.set(x, "ontransitionend", null)
@@ -1850,7 +1856,7 @@ object ReadonlyHTMLElement {
     def setOntransitionendUndefined: Self = StObject.set(x, "ontransitionend", js.undefined)
     
     @scala.inline
-    def setOntransitionrun(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
+    def setOntransitionrun(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionrunNull: Self = StObject.set(x, "ontransitionrun", null)
@@ -1859,7 +1865,7 @@ object ReadonlyHTMLElement {
     def setOntransitionrunUndefined: Self = StObject.set(x, "ontransitionrun", js.undefined)
     
     @scala.inline
-    def setOntransitionstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
+    def setOntransitionstart(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionstartNull: Self = StObject.set(x, "ontransitionstart", null)
@@ -1868,7 +1874,7 @@ object ReadonlyHTMLElement {
     def setOntransitionstartUndefined: Self = StObject.set(x, "ontransitionstart", js.undefined)
     
     @scala.inline
-    def setOnvolumechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+    def setOnvolumechange(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnvolumechangeNull: Self = StObject.set(x, "onvolumechange", null)
@@ -1877,7 +1883,7 @@ object ReadonlyHTMLElement {
     def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
     
     @scala.inline
-    def setOnwaiting(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+    def setOnwaiting(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnwaitingNull: Self = StObject.set(x, "onwaiting", null)
@@ -1886,7 +1892,7 @@ object ReadonlyHTMLElement {
     def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
     
     @scala.inline
-    def setOnwheel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ WheelEvent, _]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
+    def setOnwheel(value: js.ThisFunction1[ReadonlyHTMLElement, /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnwheelNull: Self = StObject.set(x, "onwheel", null)
@@ -1913,7 +1919,7 @@ object ReadonlyHTMLElement {
     def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
     @scala.inline
-    def setParentNode(value: Node with ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
@@ -1977,7 +1983,7 @@ object ReadonlyHTMLElement {
     
     @scala.inline
     def setRemoveEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[ReadonlyHTMLElement, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline

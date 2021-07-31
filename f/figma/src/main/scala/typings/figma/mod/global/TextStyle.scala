@@ -3,30 +3,30 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.TEXT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextStyle extends BaseStyle {
+trait TextStyle
+  extends StObject
+     with BaseStyle {
   
-  var fontName: FontName = js.native
+  var fontName: FontName
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var letterSpacing: LetterSpacing = js.native
+  var letterSpacing: LetterSpacing
   
-  var lineHeight: LineHeight = js.native
+  var lineHeight: LineHeight
   
-  var paragraphIndent: Double = js.native
+  var paragraphIndent: Double
   
-  var paragraphSpacing: Double = js.native
+  var paragraphSpacing: Double
   
-  var textCase: TextCase = js.native
+  var textCase: TextCase
   
-  var textDecoration: TextDecoration = js.native
+  var textDecoration: TextDecoration
   
   @JSName("type")
-  var type_TextStyle: TEXT = js.native
+  var type_TextStyle: TEXT
 }
 object TextStyle {
   
@@ -45,11 +45,10 @@ object TextStyle {
     remote: Boolean,
     remove: () => Unit,
     textCase: TextCase,
-    textDecoration: TextDecoration,
-    `type`: TEXT
+    textDecoration: TextDecoration
   ): TextStyle = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paragraphIndent = paragraphIndent.asInstanceOf[js.Any], paragraphSpacing = paragraphSpacing.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), textCase = textCase.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TEXT")
     __obj.asInstanceOf[TextStyle]
   }
   

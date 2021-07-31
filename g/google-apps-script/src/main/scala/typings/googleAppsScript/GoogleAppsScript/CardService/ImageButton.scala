@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,24 +13,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setOpenLink(CardService.newOpenLink()
   *             .setUrl("https://airplane.com"));
   */
-@js.native
 trait ImageButton extends StObject {
   
-  def setAltText(altText: String): ImageButton = js.native
+  def setAltText(altText: String): ImageButton
   
-  def setAuthorizationAction(action: AuthorizationAction): ImageButton = js.native
+  def setAuthorizationAction(action: AuthorizationAction): ImageButton
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): ImageButton = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): ImageButton
   
-  def setIcon(icon: Icon): ImageButton = js.native
+  def setIcon(icon: Icon): ImageButton
   
-  def setIconUrl(url: String): ImageButton = js.native
+  def setIconUrl(url: String): ImageButton
   
-  def setOnClickAction(action: Action): ImageButton = js.native
+  def setOnClickAction(action: Action): ImageButton
   
-  def setOnClickOpenLinkAction(action: Action): ImageButton = js.native
+  def setOnClickOpenLinkAction(action: Action): ImageButton
   
-  def setOpenLink(openLink: OpenLink): ImageButton = js.native
+  def setOpenLink(openLink: OpenLink): ImageButton
 }
 object ImageButton {
   

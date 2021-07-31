@@ -15,7 +15,6 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileMod {
@@ -23,12 +22,11 @@ object tileMod {
   /* Inlined react.react.FC<fundamental-react.fundamental-react/lib/Tile/Tile.TileProps> & {  displayName :'Tile',   Content :react.react.FC<fundamental-react.fundamental-react/lib/Tile/Tile.TileContentProps> & {  displayName :'Tile.Content'},   Footer :react.react.FC<fundamental-react.fundamental-react/lib/Tile/Tile.TileFooterProps> & {  displayName :'Tile.Footer'},   Header :react.react.FC<fundamental-react.fundamental-react/lib/Tile/Tile.TileHeaderProps> & {  displayName :'Tile.Header'}} */
   object default {
     
-    @JSImport("fundamental-react/lib/Tile/Tile", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[TileProps]): ReactElement | Null = js.native
-    @JSImport("fundamental-react/lib/Tile/Tile", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[TileProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[TileProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[TileProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("fundamental-react/lib/Tile/Tile", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -76,13 +74,13 @@ object tileMod {
     def propTypes_=(x: js.UndefOr[WeakValidationMapTileProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait TileContentProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var twoColumns: js.UndefOr[Boolean] = js.native
+    var twoColumns: js.UndefOr[Boolean] = js.undefined
   }
   object TileContentProps {
     
@@ -109,11 +107,11 @@ object tileMod {
     }
   }
   
-  @js.native
   trait TileFooterProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object TileFooterProps {
     
@@ -134,13 +132,13 @@ object tileMod {
     }
   }
   
-  @js.native
   trait TileHeaderProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
   }
   object TileHeaderProps {
     
@@ -167,19 +165,19 @@ object tileMod {
     }
   }
   
-  @js.native
   trait TileProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isDouble: js.UndefOr[Boolean] = js.native
+    var isDouble: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var size: js.UndefOr[s] = js.native
+    var size: js.UndefOr[s] = js.undefined
   }
   object TileProps {
     

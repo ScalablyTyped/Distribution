@@ -2,10 +2,8 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetainContextWhenHidden extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait RetainContextWhenHidden extends StObject {
     * `retainContextWhenHidden` has a high memory overhead and should only be used if
     * your view's context cannot be quickly saved and restored.
     */
-  val retainContextWhenHidden: js.UndefOr[Boolean] = js.native
+  val retainContextWhenHidden: js.UndefOr[Boolean] = js.undefined
 }
 object RetainContextWhenHidden {
   

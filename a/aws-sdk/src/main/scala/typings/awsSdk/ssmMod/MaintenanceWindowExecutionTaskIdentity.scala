@@ -2,51 +2,49 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowExecutionTaskIdentity extends StObject {
   
   /**
     * The time the task execution finished.
     */
-  var EndTime: js.UndefOr[DateTime] = js.native
+  var EndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time the task execution started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The status of the task execution.
     */
-  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.native
+  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
     * The details explaining the status of the task execution. Only available for certain status values.
     */
-  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.native
+  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
   /**
     * The ARN of the task that ran.
     */
-  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.native
+  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   
   /**
     * The ID of the specific task execution in the maintenance window execution.
     */
-  var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.native
+  var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   
   /**
     * The type of task that ran.
     */
-  var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.native
+  var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   
   /**
     * The ID of the maintenance window execution that ran the task.
     */
-  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.native
+  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
 }
 object MaintenanceWindowExecutionTaskIdentity {
   

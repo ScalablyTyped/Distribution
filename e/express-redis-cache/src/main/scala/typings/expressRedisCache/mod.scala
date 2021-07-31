@@ -10,17 +10,18 @@ import typings.node.eventsMod.EventEmitter
 import typings.redis.mod.RedisClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpressRedisCache]
+  @scala.inline
+  def apply(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
+  
   @JSImport("express-redis-cache", JSImport.Namespace)
   @js.native
-  def apply(): ExpressRedisCache = js.native
-  @JSImport("express-redis-cache", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ExpressRedisCache = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-redis-cache", "ExpressRedisCache")
   @js.native
@@ -58,32 +59,33 @@ object mod {
     
     var prefix: String = js.native
     
-    def route(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def route(expire: Double): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def route(nameOrOptions: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def route(nameOrOptions: String, expire: ExpireOption): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def route(nameOrOptions: RouteOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def route(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(expire: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(nameOrOptions: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(nameOrOptions: String, expire: ExpireOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(nameOrOptions: RouteOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     def size(callback: js.Function2[/* error */ js.Any, /* bytes */ Double, Unit]): Unit = js.native
   }
   object ExpressRedisCache {
     
+    @JSImport("express-redis-cache", "ExpressRedisCache")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("express-redis-cache", "ExpressRedisCache.init")
-    @js.native
-    def init(): ExpressRedisCache = js.native
-    @JSImport("express-redis-cache", "ExpressRedisCache.init")
-    @js.native
-    def init(options: Options): ExpressRedisCache = js.native
+    @scala.inline
+    def init(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[ExpressRedisCache]
+    @scala.inline
+    def init(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
   }
   
-  @js.native
   trait AddOptions extends StObject {
     
-    var expire: js.UndefOr[Double] = js.native
+    var expire: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AddOptions {
     
@@ -110,16 +112,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var expire: Double = js.native
+    var expire: Double
     
-    var touched: Double = js.native
+    var touched: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Entry {
     
@@ -157,20 +158,19 @@ object mod {
   
   type ExpireOption = Double | ExpirationConfig
   
-  @js.native
   trait Options extends StObject {
     
-    var auth_pass: js.UndefOr[String] = js.native
+    var auth_pass: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[RedisClient] = js.native
+    var client: js.UndefOr[RedisClient] = js.undefined
     
-    var expire: js.UndefOr[Double] = js.native
+    var expire: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String | Double] = js.native
+    var port: js.UndefOr[String | Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -221,14 +221,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteOptions extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var expire: js.UndefOr[ExpireOption | ExpirationPolicy] = js.native
+    var expire: js.UndefOr[ExpireOption | ExpirationPolicy] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object RouteOptions {
     
@@ -268,12 +267,11 @@ object mod {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Response extends StObject {
       
-      var express_redis_cache_name: js.UndefOr[String] = js.native
+      var express_redis_cache_name: js.UndefOr[String] = js.undefined
       
-      var use_express_redis_cache: js.UndefOr[Boolean] = js.native
+      var use_express_redis_cache: js.UndefOr[Boolean] = js.undefined
     }
     object Response {
       

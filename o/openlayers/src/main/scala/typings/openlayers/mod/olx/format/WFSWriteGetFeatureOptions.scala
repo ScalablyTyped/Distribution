@@ -4,39 +4,37 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.format.filter.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WFSWriteGetFeatureOptions extends StObject {
   
-  var bbox: js.UndefOr[Extent_] = js.native
+  var bbox: js.UndefOr[Extent_] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var featureNS: String = js.native
+  var featureNS: String
   
-  var featurePrefix: String = js.native
+  var featurePrefix: String
   
-  var featureTypes: js.Array[String] = js.native
+  var featureTypes: js.Array[String]
   
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
-  var geometryName: js.UndefOr[String] = js.native
+  var geometryName: js.UndefOr[String] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var maxFeatures: js.UndefOr[Double] = js.native
+  var maxFeatures: js.UndefOr[Double] = js.undefined
   
-  var outputFormat: js.UndefOr[String] = js.native
+  var outputFormat: js.UndefOr[String] = js.undefined
   
-  var propertyNames: js.UndefOr[js.Array[String]] = js.native
+  var propertyNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var resultType: js.UndefOr[String] = js.native
+  var resultType: js.UndefOr[String] = js.undefined
   
-  var srsName: js.UndefOr[String] = js.native
+  var srsName: js.UndefOr[String] = js.undefined
   
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object WFSWriteGetFeatureOptions {
   

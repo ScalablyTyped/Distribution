@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,22 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see PropertySetInfoChangeEvent
   * @see XPropertySetInfoChangeListener
   */
-@js.native
-trait XPropertySetInfoChangeNotifier extends XInterface {
+trait XPropertySetInfoChangeNotifier
+  extends StObject
+     with XInterface {
   
   /**
     * registers a listener for PropertySetInfoChangeEvents.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def addPropertySetInfoChangeListener(Listener: XPropertySetInfoChangeListener): Unit = js.native
+  def addPropertySetInfoChangeListener(Listener: XPropertySetInfoChangeListener): Unit
   
   /**
     * removes a listener for PropertySetInfoChangeEvents.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def removePropertySetInfoChangeListener(Listener: XPropertySetInfoChangeListener): Unit = js.native
+  def removePropertySetInfoChangeListener(Listener: XPropertySetInfoChangeListener): Unit
 }
 object XPropertySetInfoChangeNotifier {
   

@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,25 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * While a search result points to a uniquely identifiable resource, like a
   * video, it does not have its own persistent data.
   */
-@js.native
 trait SchemaSearchResult extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The id object contains information that can be used to uniquely identify
     * the resource that matches the search request.
     */
-  var id: js.UndefOr[SchemaResourceId] = js.native
+  var id: js.UndefOr[SchemaResourceId] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#searchResult&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about a search result, such as
@@ -37,7 +35,7 @@ trait SchemaSearchResult extends StObject {
     * then the title will be the video&#39;s title and the description will be
     * the video&#39;s description.
     */
-  var snippet: js.UndefOr[SchemaSearchResultSnippet] = js.native
+  var snippet: js.UndefOr[SchemaSearchResultSnippet] = js.undefined
 }
 object SchemaSearchResult {
   

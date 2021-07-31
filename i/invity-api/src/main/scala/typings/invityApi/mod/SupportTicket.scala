@@ -2,23 +2,21 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportTicket extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var email: String = js.native
+  var email: String
   
-  var name: String = js.native
+  var name: String
   
-  var reCaptchaV2Token: js.UndefOr[String] = js.native
+  var reCaptchaV2Token: js.UndefOr[String] = js.undefined
   
-  var reCaptchaV3Token: js.UndefOr[String] = js.native
+  var reCaptchaV3Token: js.UndefOr[String] = js.undefined
   
-  var topic: TicketTopic = js.native
+  var topic: TicketTopic
 }
 object SupportTicket {
   

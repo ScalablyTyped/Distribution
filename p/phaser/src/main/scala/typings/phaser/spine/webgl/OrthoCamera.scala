@@ -2,43 +2,41 @@ package typings.phaser.spine.webgl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrthoCamera extends StObject {
   
-  var direction: Vector3 = js.native
+  var direction: Vector3
   
-  var far: Double = js.native
+  var far: Double
   
-  var inverseProjectionView: Matrix4 = js.native
+  var inverseProjectionView: Matrix4
   
-  var near: Double = js.native
+  var near: Double
   
-  var position: Vector3 = js.native
+  var position: Vector3
   
-  var projection: Matrix4 = js.native
+  var projection: Matrix4
   
-  var projectionView: Matrix4 = js.native
+  var projectionView: Matrix4
   
-  def screenToWorld(screenCoords: Vector3, screenWidth: Double, screenHeight: Double): Vector3 = js.native
+  def screenToWorld(screenCoords: Vector3, screenWidth: Double, screenHeight: Double): Vector3
   
-  def setViewport(viewportWidth: Double, viewportHeight: Double): Unit = js.native
+  def setViewport(viewportWidth: Double, viewportHeight: Double): Unit
   
-  var tmp: js.Any = js.native
+  var tmp: js.Any
   
-  var up: Vector3 = js.native
+  var up: Vector3
   
-  def update(): Unit = js.native
+  def update(): Unit
   
-  var view: Matrix4 = js.native
+  var view: Matrix4
   
-  var viewportHeight: Double = js.native
+  var viewportHeight: Double
   
-  var viewportWidth: Double = js.native
+  var viewportWidth: Double
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object OrthoCamera {
   

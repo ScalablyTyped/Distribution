@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,18 +15,17 @@ object dns {
   
   /* dns types */
   /** An object encapsulating a DNS Record. */
-  @js.native
   trait DNSRecord extends StObject {
     
-    var addresses: js.Array[String] = js.native
+    var addresses: js.Array[String]
     
     /**
       * The canonical hostname for this record. this value is empty if the record was not fetched with the 'canonical_name' flag.
       */
-    var canonicalName: js.UndefOr[String] = js.native
+    var canonicalName: js.UndefOr[String] = js.undefined
     
     /** Record retreived with TRR. */
-    var isTRR: String = js.native
+    var isTRR: String
   }
   object DNSRecord {
     

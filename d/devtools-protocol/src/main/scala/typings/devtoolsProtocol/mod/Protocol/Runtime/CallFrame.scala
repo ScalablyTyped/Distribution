@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallFrame extends StObject {
   
   /**
     * JavaScript script column number (0-based).
     */
-  var columnNumber: integer = js.native
+  var columnNumber: integer
   
   /**
     * JavaScript function name.
     */
-  var functionName: String = js.native
+  var functionName: String
   
   /**
     * JavaScript script line number (0-based).
     */
-  var lineNumber: integer = js.native
+  var lineNumber: integer
   
   /**
     * JavaScript script id.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * JavaScript script name or url.
     */
-  var url: String = js.native
+  var url: String
 }
 object CallFrame {
   

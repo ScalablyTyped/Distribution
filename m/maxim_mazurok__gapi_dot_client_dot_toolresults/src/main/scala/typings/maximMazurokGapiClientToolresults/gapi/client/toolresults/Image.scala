@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /** An error explaining why the thumbnail could not be rendered. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /** A reference to the full-size, original image. This is the same as the tool_outputs entry for the image under its Step. Always set. */
-  var sourceImage: js.UndefOr[ToolOutputReference] = js.native
+  var sourceImage: js.UndefOr[ToolOutputReference] = js.undefined
   
   /** The step to which the image is attached. Always set. */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
   
   /** The thumbnail. */
-  var thumbnail: js.UndefOr[Thumbnail] = js.native
+  var thumbnail: js.UndefOr[Thumbnail] = js.undefined
 }
 object Image {
   

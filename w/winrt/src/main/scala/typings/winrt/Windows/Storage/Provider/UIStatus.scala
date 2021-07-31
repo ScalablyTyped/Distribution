@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait UIStatus extends StObject
 object UIStatus extends StObject {
   
   @js.native
-  sealed trait complete extends UIStatus
+  sealed trait complete
+    extends StObject
+       with UIStatus
   
   @js.native
-  sealed trait hidden extends UIStatus
+  sealed trait hidden
+    extends StObject
+       with UIStatus
   
   @js.native
-  sealed trait unavailable extends UIStatus
+  sealed trait unavailable
+    extends StObject
+       with UIStatus
   
   @js.native
-  sealed trait visible extends UIStatus
+  sealed trait visible
+    extends StObject
+       with UIStatus
 }

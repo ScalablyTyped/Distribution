@@ -37,14 +37,16 @@ import typings.std.HTMLDivElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateCalendarMod {
   
-  @JSImport("antd/lib/calendar/generateCalendar", JSImport.Default)
+  @JSImport("antd/lib/calendar/generateCalendar", JSImport.Namespace)
   @js.native
-  def default[DateType](generateConfig: GenerateConfig[DateType]): js.Function1[/* props */ CalendarProps[DateType], Element] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[DateType](generateConfig: GenerateConfig[DateType]): js.Function1[/* props */ CalendarProps[DateType], Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ CalendarProps[DateType], Element]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.year
@@ -60,44 +62,43 @@ object generateCalendarMod {
     def year: typings.antd.antdStrings.year = "year".asInstanceOf[typings.antd.antdStrings.year]
   }
   
-  @js.native
   trait CalendarProps[DateType] extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dateCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var dateCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var dateFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var dateFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var headerRender: js.UndefOr[HeaderRender[DateType]] = js.native
+    var headerRender: js.UndefOr[HeaderRender[DateType]] = js.undefined
     
-    var locale: js.UndefOr[PickerLocale] = js.native
+    var locale: js.UndefOr[PickerLocale] = js.undefined
     
-    var mode: js.UndefOr[CalendarMode] = js.native
+    var mode: js.UndefOr[CalendarMode] = js.undefined
     
-    var monthCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var monthCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var monthFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var monthFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onPanelChange: js.UndefOr[js.Function2[/* date */ DateType, /* mode */ CalendarMode, Unit]] = js.native
+    var onPanelChange: js.UndefOr[js.Function2[/* date */ DateType, /* mode */ CalendarMode, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var value: js.UndefOr[DateType] = js.native
+    var value: js.UndefOr[DateType] = js.undefined
   }
   object CalendarProps {
     
@@ -108,7 +109,7 @@ object generateCalendarMod {
     }
     
     @scala.inline
-    implicit class CalendarPropsMutableBuilder[Self <: CalendarProps[_], DateType] (val x: Self with CalendarProps[DateType]) extends AnyVal {
+    implicit class CalendarPropsMutableBuilder[Self <: CalendarProps[?], DateType] (val x: Self & CalendarProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -225,61 +226,62 @@ object generateCalendarMod {
   type InjectDefaultProps[Props] = (Omit[
     Props, 
     locale | generateConfig | prevIcon | nextIcon | superPrevIcon | superNextIcon
-  ]) with Locale
+  ]) & Locale
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */
-  @js.native
-  trait PickerPanelBaseProps[DateType] extends PickerProps[DateType] {
+  trait PickerPanelBaseProps[DateType]
+    extends StObject
+       with PickerProps[DateType] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[DateType] = js.native
+    var defaultPickerValue: js.UndefOr[DateType] = js.undefined
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var hideHeader: js.UndefOr[Boolean] = js.native
+    var hideHeader: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[PickerLocale] = js.native
+    var locale: js.UndefOr[PickerLocale] = js.undefined
     
-    var mode: js.UndefOr[PanelMode] = js.native
+    var mode: js.UndefOr[PanelMode] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.native
+    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.undefined
     
-    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: Exclude[PickerMode, date | time] = js.native
+    var picker: Exclude[PickerMode, date | time]
     
-    var pickerValue: js.UndefOr[DateType] = js.native
+    var pickerValue: js.UndefOr[DateType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.native
+    var size: js.UndefOr[large | default | small] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
   }
   object PickerPanelBaseProps {
     
@@ -290,7 +292,7 @@ object generateCalendarMod {
     }
     
     @scala.inline
-    implicit class PickerPanelBasePropsMutableBuilder[Self <: PickerPanelBaseProps[_], DateType] (val x: Self with PickerPanelBaseProps[DateType]) extends AnyVal {
+    implicit class PickerPanelBasePropsMutableBuilder[Self <: PickerPanelBaseProps[?], DateType] (val x: Self & PickerPanelBaseProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -445,66 +447,67 @@ object generateCalendarMod {
   }
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelDateProps<DateType>> */
-  @js.native
-  trait PickerPanelDateProps[DateType] extends PickerProps[DateType] {
+  trait PickerPanelDateProps[DateType]
+    extends StObject
+       with PickerProps[DateType] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[DateType] = js.native
+    var defaultPickerValue: js.UndefOr[DateType] = js.undefined
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.native
+    var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
     
-    var hideHeader: js.UndefOr[Boolean] = js.native
+    var hideHeader: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[PickerLocale] = js.native
+    var locale: js.UndefOr[PickerLocale] = js.undefined
     
-    var mode: js.UndefOr[PanelMode] = js.native
+    var mode: js.UndefOr[PanelMode] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.native
+    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.undefined
     
-    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: js.UndefOr[date] = js.native
+    var picker: js.UndefOr[date] = js.undefined
     
-    var pickerValue: js.UndefOr[DateType] = js.native
+    var pickerValue: js.UndefOr[DateType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.native
+    var showTime: js.UndefOr[Boolean | SharedTimeProps[DateType]] = js.undefined
     
-    var showToday: js.UndefOr[Boolean] = js.native
+    var showToday: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.native
+    var size: js.UndefOr[large | default | small] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
   }
   object PickerPanelDateProps {
     
@@ -515,7 +518,7 @@ object generateCalendarMod {
     }
     
     @scala.inline
-    implicit class PickerPanelDatePropsMutableBuilder[Self <: PickerPanelDateProps[_], DateType] (val x: Self with PickerPanelDateProps[DateType]) extends AnyVal {
+    implicit class PickerPanelDatePropsMutableBuilder[Self <: PickerPanelDateProps[?], DateType] (val x: Self & PickerPanelDateProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -697,95 +700,96 @@ object generateCalendarMod {
   }
   
   /* Inlined antd.antd/lib/calendar/generateCalendar.InjectDefaultProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelTimeProps<DateType>> */
-  @js.native
-  trait PickerPanelTimeProps[DateType] extends PickerProps[DateType] {
+  trait PickerPanelTimeProps[DateType]
+    extends StObject
+       with PickerProps[DateType] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
-    var defaultPickerValue: js.UndefOr[DateType] = js.native
+    var defaultPickerValue: js.UndefOr[DateType] = js.undefined
     
-    var defaultValue: js.UndefOr[DateType] = js.native
+    var defaultValue: js.UndefOr[DateType] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hideHeader: js.UndefOr[Boolean] = js.native
+    var hideHeader: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var locale: js.UndefOr[PickerLocale] = js.native
+    var locale: js.UndefOr[PickerLocale] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[PanelMode] = js.native
+    var mode: js.UndefOr[PanelMode] = js.undefined
     
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.native
+    var onPanelChange: js.UndefOr[OnPanelChange[DateType]] = js.undefined
     
-    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+    var onPickerValueChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
     
-    var picker: time = js.native
+    var picker: time
     
-    var pickerValue: js.UndefOr[DateType] = js.native
+    var pickerValue: js.UndefOr[DateType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+    var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | default | small] = js.native
+    var size: js.UndefOr[large | default | small] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
   }
   object PickerPanelTimeProps {
     
     @scala.inline
-    def apply[DateType](picker: time): PickerPanelTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
+    def apply[DateType](): PickerPanelTimeProps[DateType] = {
+      val __obj = js.Dynamic.literal(picker = "time")
       __obj.asInstanceOf[PickerPanelTimeProps[DateType]]
     }
     
     @scala.inline
-    implicit class PickerPanelTimePropsMutableBuilder[Self <: PickerPanelTimeProps[_], DateType] (val x: Self with PickerPanelTimeProps[DateType]) extends AnyVal {
+    implicit class PickerPanelTimePropsMutableBuilder[Self <: PickerPanelTimeProps[?], DateType] (val x: Self & PickerPanelTimeProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -1038,8 +1042,8 @@ object generateCalendarMod {
     }
     
     @scala.inline
-    def PickerPanelTimeProps[DateType](picker: time): typings.antd.generateCalendarMod.PickerPanelTimeProps[DateType] = {
-      val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
+    def PickerPanelTimeProps[DateType](): typings.antd.generateCalendarMod.PickerPanelTimeProps[DateType] = {
+      val __obj = js.Dynamic.literal(picker = "time")
       __obj.asInstanceOf[typings.antd.generateCalendarMod.PickerPanelTimeProps[DateType]]
     }
   }

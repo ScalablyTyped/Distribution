@@ -5,14 +5,15 @@ import typings.dygraphs.dygraphs.Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("dygraphs", JSImport.Default)
   @js.native
-  class default protected () extends Dygraph {
+  class default protected ()
+    extends StObject
+       with Dygraph {
     def this(container: String, data: js.Function0[Data]) = this()
     def this(container: String, data: Data) = this()
     def this(container: HTMLElement, data: js.Function0[Data]) = this()

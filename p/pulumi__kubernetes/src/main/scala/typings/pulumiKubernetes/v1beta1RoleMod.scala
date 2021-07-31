@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1RoleMod {
@@ -27,7 +26,7 @@ object v1beta1RoleMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RoleArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RoleArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object v1beta1RoleMod {
   /* static members */
   object Role {
     
+    @JSImport("@pulumi/kubernetes/rbac/v1beta1/role", "Role")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Role resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,46 +64,42 @@ object v1beta1RoleMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Role = js.native
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/role", "Role.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Role = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Role]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
     
     /**
       * Returns true if the given object is an instance of Role.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/role", "Role.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/role.Role */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/role.Role */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/role.Role */ Boolean]
   }
   
-  @js.native
   trait RoleArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Role]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Role]] = js.undefined
     
     /**
       * Standard object's metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Rules holds all the PolicyRules for this Role
       */
     val rules: js.UndefOr[
         Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.PolicyRule]]]
-      ] = js.native
+      ] = js.undefined
   }
   object RoleArgs {
     

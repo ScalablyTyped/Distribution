@@ -2,7 +2,6 @@ package typings.twilioNotifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -31,13 +30,15 @@ object loggerMod {
   }
   object Logger {
     
+    @JSImport("twilio-notifications/lib/logger", "Logger")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("twilio-notifications/lib/logger", "Logger.scope")
-    @js.native
-    def scope(): Logger = js.native
-    @JSImport("twilio-notifications/lib/logger", "Logger.scope")
-    @js.native
-    def scope(prefix: String): Logger = js.native
+    @scala.inline
+    def scope(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")().asInstanceOf[Logger]
+    @scala.inline
+    def scope(prefix: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(prefix.asInstanceOf[js.Any]).asInstanceOf[Logger]
   }
   
   @JSImport("twilio-notifications/lib/logger", "log")

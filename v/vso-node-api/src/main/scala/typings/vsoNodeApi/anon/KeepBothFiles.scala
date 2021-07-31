@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeepBothFiles extends StObject {
   
-  var keepBothFiles: scala.Double = js.native
+  var keepBothFiles: scala.Double
   
-  var keepSourcePath: scala.Double = js.native
+  var keepSourcePath: scala.Double
   
-  var keepTargetPath: scala.Double = js.native
+  var keepTargetPath: scala.Double
   
-  var undecided: scala.Double = js.native
+  var undecided: scala.Double
 }
 object KeepBothFiles {
   

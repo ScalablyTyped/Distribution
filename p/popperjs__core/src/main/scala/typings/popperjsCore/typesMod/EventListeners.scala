@@ -2,15 +2,13 @@ package typings.popperjsCore.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventListeners extends StObject {
   
-  var resize: Boolean = js.native
+  var resize: Boolean
   
-  var scroll: Boolean = js.native
+  var scroll: Boolean
 }
 object EventListeners {
   

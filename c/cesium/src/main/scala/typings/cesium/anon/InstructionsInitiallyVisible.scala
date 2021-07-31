@@ -3,15 +3,13 @@ package typings.cesium.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstructionsInitiallyVisible extends StObject {
   
-  var container: Element | String = js.native
+  var container: Element | String
   
-  var instructionsInitiallyVisible: js.UndefOr[Boolean] = js.native
+  var instructionsInitiallyVisible: js.UndefOr[Boolean] = js.undefined
 }
 object InstructionsInitiallyVisible {
   

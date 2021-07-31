@@ -5,20 +5,19 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryGroupProps
-  extends VictoryMultiLabeableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictoryMultiLabeableProps {
   
   /**
     * The color prop is an optional prop that defines a single color to be applied to the
     * children of VictoryGroup. The color prop will override colors specified via colorScale.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The colorScale prop is an optional prop that defines the color scale the chart's bars
@@ -27,7 +26,7 @@ trait VictoryGroupProps
     * values from this color scale to the bars unless colors are explicitly provided in the
     * `dataAttributes` prop.
     */
-  var colorScale: js.UndefOr[ColorScalePropType] = js.native
+  var colorScale: js.UndefOr[ColorScalePropType] = js.undefined
   
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
@@ -35,13 +34,13 @@ trait VictoryGroupProps
     * from the origin to prevent crowding. This prop should be given as an object with
     * numbers specified for x and y.
     */
-  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.native
+  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -86,7 +85,7 @@ trait VictoryGroupProps
     */
   var events: js.UndefOr[
     js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The offset prop determines the number of pixels each element in a group should
@@ -94,13 +93,13 @@ trait VictoryGroupProps
     * case of groups of bars, this number should be equal to the width of the bar
     * plus the desired spacing between bars.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The style prop specifies styles for your grouped chart. These styles will be
     * applied to all grouped children
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 object VictoryGroupProps {
   

@@ -2,53 +2,51 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeRequire extends StObject {
   
-  var HTML: js.UndefOr[Boolean] = js.native
+  var HTML: js.UndefOr[Boolean] = js.undefined
   
-  var action: js.UndefOr[Boolean] = js.native
+  var action: js.UndefOr[Boolean] = js.undefined
   
-  var amscd: js.UndefOr[Boolean] = js.native
+  var amscd: js.UndefOr[Boolean] = js.undefined
   
-  var amsmath: js.UndefOr[Boolean] = js.native
+  var amsmath: js.UndefOr[Boolean] = js.undefined
   
-  var amssymbols: js.UndefOr[Boolean] = js.native
+  var amssymbols: js.UndefOr[Boolean] = js.undefined
   
-  var autobold: js.UndefOr[Boolean] = js.native
+  var autobold: js.UndefOr[Boolean] = js.undefined
   
-  var `autoload-all`: js.UndefOr[Boolean] = js.native
+  var `autoload-all`: js.UndefOr[Boolean] = js.undefined
   
-  var bbox: js.UndefOr[Boolean] = js.native
+  var bbox: js.UndefOr[Boolean] = js.undefined
   
-  var begingroup: js.UndefOr[Boolean] = js.native
+  var begingroup: js.UndefOr[Boolean] = js.undefined
   
-  var boldsymbol: js.UndefOr[Boolean] = js.native
+  var boldsymbol: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   
-  var enclose: js.UndefOr[Boolean] = js.native
+  var enclose: js.UndefOr[Boolean] = js.undefined
   
-  var extpfeil: js.UndefOr[Boolean] = js.native
+  var extpfeil: js.UndefOr[Boolean] = js.undefined
   
-  var mathchoice: js.UndefOr[Boolean] = js.native
+  var mathchoice: js.UndefOr[Boolean] = js.undefined
   
-  var mhchem: js.UndefOr[Boolean] = js.native
+  var mhchem: js.UndefOr[Boolean] = js.undefined
   
-  var newcommand: js.UndefOr[Boolean] = js.native
+  var newcommand: js.UndefOr[Boolean] = js.undefined
   
-  var noErrors: js.UndefOr[Boolean] = js.native
+  var noErrors: js.UndefOr[Boolean] = js.undefined
   
-  var noUndefined: js.UndefOr[Boolean] = js.native
+  var noUndefined: js.UndefOr[Boolean] = js.undefined
   
-  var unicode: js.UndefOr[Boolean] = js.native
+  var unicode: js.UndefOr[Boolean] = js.undefined
   
-  var verb: js.UndefOr[Boolean] = js.native
+  var verb: js.UndefOr[Boolean] = js.undefined
 }
 object SafeRequire {
   

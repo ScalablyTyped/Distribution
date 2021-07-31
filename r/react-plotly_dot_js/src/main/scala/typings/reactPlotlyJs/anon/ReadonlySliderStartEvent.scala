@@ -3,14 +3,12 @@ package typings.reactPlotlyJs.anon
 import typings.plotlyJs.mod.Slider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.SliderStartEvent> */
-@js.native
 trait ReadonlySliderStartEvent extends StObject {
   
-  val slider: Slider = js.native
+  val slider: Slider
 }
 object ReadonlySliderStartEvent {
   

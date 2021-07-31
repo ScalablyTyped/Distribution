@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHeapObjectIdRequest extends StObject {
   
   /**
     * Identifier of the object to get heap object id for.
     */
-  var objectId: RemoteObjectId = js.native
+  var objectId: RemoteObjectId
 }
 object GetHeapObjectIdRequest {
   

@@ -2,44 +2,42 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a parameter and its limits.
   */
-@js.native
 trait IMetaParameter extends StObject {
   
   /**
     * Optional maximum value of the range.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional minimum value of the range.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional step value between min and max.
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * Display text of the parameter.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Type of the parameter. Currently supports "range".
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Initial sample value for this parameter.
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IMetaParameter {
   

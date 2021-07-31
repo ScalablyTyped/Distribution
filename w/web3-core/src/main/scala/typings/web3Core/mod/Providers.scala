@@ -5,25 +5,23 @@ import typings.web3CoreHelpers.mod.HttpProviderOptions
 import typings.web3CoreHelpers.mod.WebsocketProviderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Providers extends StObject {
   
   var HttpProvider: Instantiable2[
     /* host */ String, 
     /* options */ js.UndefOr[HttpProviderOptions], 
     typings.web3Core.mod.HttpProvider
-  ] = js.native
+  ]
   
-  var IpcProvider: Instantiable2[/* path */ String, /* net */ js.Any, typings.web3Core.mod.IpcProvider] = js.native
+  var IpcProvider: Instantiable2[/* path */ String, /* net */ js.Any, typings.web3Core.mod.IpcProvider]
   
   var WebsocketProvider: Instantiable2[
     /* host */ String, 
     /* options */ js.UndefOr[WebsocketProviderOptions], 
     typings.web3Core.mod.WebsocketProvider
-  ] = js.native
+  ]
 }
 object Providers {
   

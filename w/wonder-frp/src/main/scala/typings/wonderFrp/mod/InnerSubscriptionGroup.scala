@@ -1,18 +1,20 @@
 package typings.wonderFrp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/commonjs", "InnerSubscriptionGroup")
 @js.native
 class InnerSubscriptionGroup ()
   extends typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup
-
 /* static members */
-@JSImport("wonder-frp/dist/commonjs", "InnerSubscriptionGroup")
-@js.native
-object InnerSubscriptionGroup extends js.Object {
-  def create(): typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup = js.native
+object InnerSubscriptionGroup {
+  
+  @JSImport("wonder-frp/dist/commonjs", "InnerSubscriptionGroup")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.innerSubscriptionGroupMod.InnerSubscriptionGroup]
 }
-

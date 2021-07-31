@@ -3,27 +3,27 @@ package typings.nodeRsa.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyComponentsPrivate extends _Key {
+trait KeyComponentsPrivate
+  extends StObject
+     with _Key {
   
-  var coeff: Buffer = js.native
+  var coeff: Buffer
   
-  var d: Buffer = js.native
+  var d: Buffer
   
-  var dmp1: Buffer = js.native
+  var dmp1: Buffer
   
-  var dmq1: Buffer = js.native
+  var dmq1: Buffer
   
-  var e: Buffer | Double = js.native
+  var e: Buffer | Double
   
-  var n: Buffer = js.native
+  var n: Buffer
   
-  var p: Buffer = js.native
+  var p: Buffer
   
-  var q: Buffer = js.native
+  var q: Buffer
 }
 object KeyComponentsPrivate {
   

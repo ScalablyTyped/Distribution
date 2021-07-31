@@ -2,25 +2,23 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StatusCondition describes why a cluster or a node pool has a certain status
   * (e.g., ERROR or DEGRADED).
   */
-@js.native
 trait SchemaStatusCondition extends StObject {
   
   /**
     * Machine-friendly representation of the condition
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * Human-friendly representation of the condition
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SchemaStatusCondition {
   

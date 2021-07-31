@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Effective extends StObject {
   
   /** All the permissions that the user has for this web property. These include any implied permissions (e.g., EDIT implies VIEW) or inherited permissions from the parent account. */
-  var effective: js.UndefOr[js.Array[String]] = js.native
+  var effective: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Effective {
   

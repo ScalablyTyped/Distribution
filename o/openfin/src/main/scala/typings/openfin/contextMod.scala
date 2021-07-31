@@ -9,13 +9,13 @@ import typings.openfin.openfinStrings.fdc3Dotinstrument
 import typings.openfin.openfinStrings.fdc3Dotorganization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
-  @js.native
-  trait ContactContext extends Context {
+  trait ContactContext
+    extends StObject
+       with Context {
     
     /**
       * The contact data. Can contain some or all of:
@@ -24,26 +24,26 @@ object contextMod {
       * * `phone`: Phone number
       */
     @JSName("id")
-    var id_ContactContext: Dictkey = js.native
+    var id_ContactContext: Dictkey
     
     /**
       * Free text name of the contact.
       */
     @JSName("name")
-    var name_ContactContext: String = js.native
+    var name_ContactContext: String
     
     /**
       * The context type is always 'fdc3.contact'.
       */
     @JSName("type")
-    var type_ContactContext: fdc3Dotcontact = js.native
+    var type_ContactContext: fdc3Dotcontact
   }
   object ContactContext {
     
     @scala.inline
-    def apply(id: Dictkey, name: String, `type`: fdc3Dotcontact): ContactContext = {
+    def apply(id: Dictkey, name: String): ContactContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fdc3.contact")
       __obj.asInstanceOf[ContactContext]
     }
     
@@ -61,9 +61,9 @@ object contextMod {
     }
   }
   
-  @js.native
   trait Context
-    extends /**
+    extends StObject
+       with /**
     * @hidden
     * Custom properties and metadata. This can be extended in specific context object.
     */
@@ -72,19 +72,19 @@ object contextMod {
     /**
       * An optional map of any equivalent identifiers for the context type, e.g. ISIN, CUSIP, etc. for an instrument.
       */
-    var id: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var id: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
     /**
       * The name of the context data (optional). This is a text string that describes the data being sent.
       * Implementors of context may choose to make the name mandatory.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the context that uniquely identifies it, e.g. "fdc3.instrument".
       * This is used to refer to the accepted context(s) when declaring intents. See [[AppDirIntent]].
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Context {
     
@@ -115,8 +115,9 @@ object contextMod {
     }
   }
   
-  @js.native
-  trait InstrumentContext extends Context {
+  trait InstrumentContext
+    extends StObject
+       with Context {
     
     /**
       * The instrument data. Can contain some or all of:
@@ -130,20 +131,20 @@ object contextMod {
       * * `FIGI`: [FIGI](https://www.openfigi.com/about/figi)
       */
     @JSName("id")
-    var id_InstrumentContext: BBG = js.native
+    var id_InstrumentContext: BBG
     
     /**
       * The context type is always 'fdc3.instrument'.
       */
     @JSName("type")
-    var type_InstrumentContext: fdc3Dotinstrument = js.native
+    var type_InstrumentContext: fdc3Dotinstrument
   }
   object InstrumentContext {
     
     @scala.inline
-    def apply(id: BBG, `type`: fdc3Dotinstrument): InstrumentContext = {
+    def apply(id: BBG): InstrumentContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fdc3.instrument")
       __obj.asInstanceOf[InstrumentContext]
     }
     
@@ -158,8 +159,9 @@ object contextMod {
     }
   }
   
-  @js.native
-  trait OrganizationContext extends Context {
+  trait OrganizationContext
+    extends StObject
+       with Context {
     
     /**
       * The organization data. Can contain either or both
@@ -167,20 +169,20 @@ object contextMod {
       * * `PERMID`: [PERMID](https://permid.org/)
       */
     @JSName("id")
-    var id_OrganizationContext: LEI = js.native
+    var id_OrganizationContext: LEI
     
     /**
       * The context type is always fdc3.organization.
       */
     @JSName("type")
-    var type_OrganizationContext: fdc3Dotorganization = js.native
+    var type_OrganizationContext: fdc3Dotorganization
   }
   object OrganizationContext {
     
     @scala.inline
-    def apply(id: LEI, `type`: fdc3Dotorganization): OrganizationContext = {
+    def apply(id: LEI): OrganizationContext = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fdc3.organization")
       __obj.asInstanceOf[OrganizationContext]
     }
     

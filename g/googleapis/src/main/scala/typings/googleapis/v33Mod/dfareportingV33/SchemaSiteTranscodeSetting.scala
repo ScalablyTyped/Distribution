@@ -2,26 +2,24 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transcode Settings
   */
-@js.native
 trait SchemaSiteTranscodeSetting extends StObject {
   
   /**
     * Whitelist of video formats to be served to this site template. Set this
     * list to null or empty to serve all video formats.
     */
-  var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.native
+  var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#siteTranscodeSetting&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaSiteTranscodeSetting {
   

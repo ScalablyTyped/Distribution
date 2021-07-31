@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A {@link DeploymentException} reflects a deployment error.
   * @since OOo 2.0
   */
-@js.native
-trait DeploymentException extends Exception {
+trait DeploymentException
+  extends StObject
+     with Exception {
   
   /** reflects the cause of the error. Commonly an exception. */
-  var Cause: js.Any = js.native
+  var Cause: js.Any
 }
 object DeploymentException {
   

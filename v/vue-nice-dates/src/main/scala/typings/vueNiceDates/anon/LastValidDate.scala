@@ -2,18 +2,16 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastValidDate extends StObject {
   
   @JSName("$lastValidDate")
-  var $lastValidDate: String = js.native
+  var $lastValidDate: String
   
-  var receivedDate: String = js.native
+  var receivedDate: String
   
-  var receivedIsFocus: Boolean = js.native
+  var receivedIsFocus: Boolean
 }
 object LastValidDate {
   

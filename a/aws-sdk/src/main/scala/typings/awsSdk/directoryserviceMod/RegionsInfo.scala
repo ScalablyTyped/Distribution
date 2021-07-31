@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionsInfo extends StObject {
   
   /**
     * Lists the Regions where the directory has been replicated, excluding the primary Region.
     */
-  var AdditionalRegions: js.UndefOr[typings.awsSdk.directoryserviceMod.AdditionalRegions] = js.native
+  var AdditionalRegions: js.UndefOr[typings.awsSdk.directoryserviceMod.AdditionalRegions] = js.undefined
   
   /**
     * The Region from where the AWS Managed Microsoft AD directory was originally created.
     */
-  var PrimaryRegion: js.UndefOr[RegionName] = js.native
+  var PrimaryRegion: js.UndefOr[RegionName] = js.undefined
 }
 object RegionsInfo {
   

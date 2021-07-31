@@ -2,17 +2,15 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Revision extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object Revision {
   

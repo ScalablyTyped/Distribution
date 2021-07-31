@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectionsRequest extends StObject {
   
   /**
     * The ID of the connection.
     */
-  var connectionId: js.UndefOr[ConnectionId] = js.native
+  var connectionId: js.UndefOr[ConnectionId] = js.undefined
 }
 object DescribeConnectionsRequest {
   

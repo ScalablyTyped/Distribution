@@ -6,24 +6,25 @@ import typings.arcgisJsApi.esri.ConversionConstructor
 import typings.arcgisJsApi.esri.ConversionProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversionMod extends Shortcut {
   
   @JSImport("esri/widgets/CoordinateConversion/support/Conversion", JSImport.Namespace)
   @js.native
-  val ^ : ConversionConstructor = js.native
+  val ^ : js.Object & ConversionConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/CoordinateConversion/support/Conversion", JSImport.Namespace)
   @js.native
-  class Class () extends Conversion {
+  class Class ()
+    extends StObject
+       with Conversion {
     def this(properties: ConversionProperties) = this()
   }
   
-  type _To = ConversionConstructor
+  type _To = js.Object & ConversionConstructor
   
   /* This means you don't have to write `^`, but can instead just say `conversionMod.foo` */
-  override def _to: ConversionConstructor = ^
+  override def _to: js.Object & ConversionConstructor = ^
 }

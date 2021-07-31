@@ -2,31 +2,29 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecretsRequest extends StObject {
   
   /**
     * Lists the secret request filters.
     */
-  var Filters: js.UndefOr[FiltersListType] = js.native
+  var Filters: js.UndefOr[FiltersListType] = js.undefined
   
   /**
     * (Optional) Limits the number of results you want to include in the response. If you don't include this parameter, it defaults to a value that's specific to the operation. If additional items exist beyond the maximum you specify, the NextToken response element is present and has a value (isn't null). Include that value as the NextToken request parameter in the next call to the operation to get the next part of the results. Note that Secrets Manager might return fewer results than the maximum even when there are more results available. You should check NextToken after every operation to ensure that you receive all of the results.
     */
-  var MaxResults: js.UndefOr[MaxResultsType] = js.native
+  var MaxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
     * (Optional) Use this parameter in a request if you receive a NextToken response in a previous request indicating there's more output available. In a subsequent call, set it to the value of the previous call NextToken response to indicate where the output should continue from.
     */
-  var NextToken: js.UndefOr[NextTokenType] = js.native
+  var NextToken: js.UndefOr[NextTokenType] = js.undefined
   
   /**
     * Lists secrets in the requested order. 
     */
-  var SortOrder: js.UndefOr[SortOrderType] = js.native
+  var SortOrder: js.UndefOr[SortOrderType] = js.undefined
 }
 object ListSecretsRequest {
   

@@ -5,26 +5,26 @@ import typings.zchatBrowser.mod.ChatEvent.StructuredMessage
 import typings.zchatBrowser.zchatBrowserStrings.chatDotmsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined zchat-browser.zchat-browser.ChatEvent.BaseChatEventData & {  type :'chat.msg',   msg :string,   options :std.Array<string>,   structured_msg :zchat-browser.zchat-browser.ChatEvent.StructuredMessage} */
-@js.native
-trait BaseChatEventDatatypechat extends ChatEventData {
+trait BaseChatEventDatatypechat
+  extends StObject
+     with ChatEventData {
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var msg: String = js.native
+  var msg: String
   
-  var nick: String = js.native
+  var nick: String
   
-  var options: js.Array[String] = js.native
+  var options: js.Array[String]
   
-  var structured_msg: StructuredMessage = js.native
+  var structured_msg: StructuredMessage
   
-  var time_stamp: Double = js.native
+  var time_stamp: Double
   
-  var `type`: chatDotmsg = js.native
+  var `type`: chatDotmsg
 }
 object BaseChatEventDatatypechat {
   
@@ -35,11 +35,10 @@ object BaseChatEventDatatypechat {
     nick: String,
     options: js.Array[String],
     structured_msg: StructuredMessage,
-    time_stamp: Double,
-    `type`: chatDotmsg
+    time_stamp: Double
   ): BaseChatEventDatatypechat = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], structured_msg = structured_msg.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("chat.msg")
     __obj.asInstanceOf[BaseChatEventDatatypechat]
   }
   

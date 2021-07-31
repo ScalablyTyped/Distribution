@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var applyAnchorTabs: js.UndefOr[String] = js.native
+  var applyAnchorTabs: js.UndefOr[String] = js.undefined
   
   /**
     * This string sets the display and behavior properties of
@@ -32,30 +30,30 @@ trait Document extends StObject {
     *   but is the default value for all other documents.
     *
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * The document's bytes. This field can be used to include a base64 version of the document bytes within an envelope definition instead of sending the document
     * using a multi-part HTTP request. The maximum document size is smaller if this field is used due to the overhead of the base64 encoding.
     */
-  var documentBase64: js.UndefOr[String] = js.native
+  var documentBase64: js.UndefOr[String] = js.undefined
   
   var documentFields: js.UndefOr[
     js.Array[
       /* A name-value pair that describes an item and provides a value for the item. */ NameValue
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the document ID of this document. This value is used by tabs to determine which document they appear in.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the document is been already encrypted by the sender for use with the DocuSign Key Manager Security Appliance.
     *
     */
-  var encryptedWithKeyManager: js.UndefOr[String] = js.native
+  var encryptedWithKeyManager: js.UndefOr[String] = js.undefined
   
   /**
     * The file extension type of the document. Non-PDF documents are converted to PDF.
@@ -65,13 +63,13 @@ trait Document extends StObject {
     * If you try to upload a non-PDF document without a `fileExtension`, you will receive an "unable to load document" error message.
     *
     */
-  var fileExtension: js.UndefOr[String] = js.native
+  var fileExtension: js.UndefOr[String] = js.undefined
   
-  var fileFormatHint: js.UndefOr[String] = js.native
+  var fileFormatHint: js.UndefOr[String] = js.undefined
   
   var htmlDefinition: js.UndefOr[
     /* Holds the properties that define how to generate the responsive-formatted HTML for the document. */ DocumentHtmlDefinition
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**,
@@ -79,11 +77,11 @@ trait Document extends StObject {
     * The default value is **true**.
     *
     */
-  var includeInDownload: js.UndefOr[String] = js.native
+  var includeInDownload: js.UndefOr[String] = js.undefined
   
-  var isDynamicXfa: js.UndefOr[Boolean] = js.native
+  var isDynamicXfa: js.UndefOr[Boolean] = js.undefined
   
-  var isStaticXfa: js.UndefOr[Boolean] = js.native
+  var isStaticXfa: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Matchboxes define areas in a document for document matching when you are creating envelopes. They are only used when you upload and edit a template.
@@ -97,14 +95,14 @@ trait Document extends StObject {
     * * height - The height of the matchbox.
     *
     */
-  var matchBoxes: js.UndefOr[js.Array[MatchBox]] = js.native
+  var matchBoxes: js.UndefOr[js.Array[MatchBox]] = js.undefined
   
   /**
     * The name of the document.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var ocrRequests: js.UndefOr[js.Array[OcrRequest]] = js.native
+  var ocrRequests: js.UndefOr[js.Array[OcrRequest]] = js.undefined
   
   /**
     * (Optional) The order in which to sort the results.
@@ -115,30 +113,30 @@ trait Document extends StObject {
     * * `asc`: Ascending order.
     * * `desc`: Descending order.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * An integer value specifying the number of document pages in the template.
     */
-  var pageCount: js.UndefOr[String] = js.native
+  var pageCount: js.UndefOr[String] = js.undefined
   
-  var pageSizes: js.UndefOr[js.Array[PageSize]] = js.native
+  var pageSizes: js.UndefOr[js.Array[PageSize]] = js.undefined
   
   /**
     * An array of page objects.
     */
-  var pages: js.UndefOr[String] = js.native
+  var pages: js.UndefOr[String] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var pdfFieldsData: js.UndefOr[String] = js.native
+  var pdfFieldsData: js.UndefOr[String] = js.undefined
   
-  var pdfFormFieldOption: js.UndefOr[String] = js.native
+  var pdfFormFieldOption: js.UndefOr[String] = js.undefined
   
-  var pdfWidgetsBase64: js.UndefOr[String] = js.native
+  var pdfWidgetsBase64: js.UndefOr[String] = js.undefined
   
   /**
     * The file id from the cloud storage service where the document is located. This information is returned using
@@ -146,7 +144,7 @@ trait Document extends StObject {
     * [CloudStorage::list](https://developers.docusign.com/esign-rest-api/reference/CloudStorage/CloudStorage/list).
     *
     */
-  var remoteUrl: js.UndefOr[String] = js.native
+  var remoteUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Sets how the signer interacts with the supplemental document.
@@ -166,37 +164,37 @@ trait Document extends StObject {
     *
     *
     */
-  var signerMustAcknowledge: js.UndefOr[String] = js.native
+  var signerMustAcknowledge: js.UndefOr[String] = js.undefined
   
-  var signerMustAcknowledgeUseAccountDefault: js.UndefOr[Boolean] = js.native
+  var signerMustAcknowledgeUseAccountDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of tabs, which are represented graphically as symbols on documents at the time of signing. Tabs show recipients where to sign, initial, or enter data.
     * They may also display data to the recipients.
     */
-  var tabs: js.UndefOr[EnvelopeRecipientTabs] = js.native
+  var tabs: js.UndefOr[EnvelopeRecipientTabs] = js.undefined
   
   /**
     * When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.
     */
-  var templateLocked: js.UndefOr[String] = js.native
+  var templateLocked: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.
     */
-  var templateRequired: js.UndefOr[String] = js.native
+  var templateRequired: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, PDF form field data is transformed into document tab values when the PDF form field name matches the DocuSign custom tab tabLabel.
     * The resulting PDF form data is also returned in the PDF meta data when requesting the document PDF.
     *
     */
-  var transformPdfFields: js.UndefOr[String] = js.native
+  var transformPdfFields: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Document {
   

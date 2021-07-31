@@ -2,21 +2,19 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLocalizedText extends StObject {
   
   /**
     * The language code, in BCP 47 format (eg &quot;en-US&quot;).
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The text in the given `language`.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaLocalizedText {
   

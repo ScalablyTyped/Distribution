@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait SlicerStyleCollection extends ClientObject {
+trait SlicerStyleCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a blank SlicerStyle with the specified name.
@@ -80,7 +81,7 @@ trait SlicerStyleCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): SlicerStyleCollection = js.native
-  def load(options: SlicerStyleCollectionLoadOptions with CollectionLoadOptions): SlicerStyleCollection = js.native
+  def load(options: SlicerStyleCollectionLoadOptions & CollectionLoadOptions): SlicerStyleCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): SlicerStyleCollection = js.native
   def load(propertyNames: String): SlicerStyleCollection = js.native
   def load(propertyNames: js.Array[String]): SlicerStyleCollection = js.native

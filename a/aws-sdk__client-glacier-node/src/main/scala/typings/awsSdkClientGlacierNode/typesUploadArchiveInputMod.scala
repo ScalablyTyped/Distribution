@@ -5,12 +5,10 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUploadArchiveInputMod {
   
-  @js.native
   trait UploadArchiveInput[StreamType] extends StObject {
     
     /**
@@ -19,7 +17,7 @@ object typesUploadArchiveInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -27,38 +25,38 @@ object typesUploadArchiveInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The <code>AccountId</code> value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '<code>-</code>' (hyphen), in which case Amazon Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID. </p>
       */
-    var accountId: String = js.native
+    var accountId: String
     
     /**
       * <p>The optional description of the archive you are uploading.</p>
       */
-    var archiveDescription: js.UndefOr[String] = js.native
+    var archiveDescription: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The data to upload.</p>
       */
-    var body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.native
+    var body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.undefined
     
     /**
       * <p>The SHA256 tree hash of the data being uploaded.</p>
       */
-    var checksum: js.UndefOr[String] = js.native
+    var checksum: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The name of the vault.</p>
       */
-    var vaultName: String = js.native
+    var vaultName: String
   }
   object UploadArchiveInput {
     
@@ -69,7 +67,7 @@ object typesUploadArchiveInputMod {
     }
     
     @scala.inline
-    implicit class UploadArchiveInputMutableBuilder[Self <: UploadArchiveInput[_], StreamType] (val x: Self with UploadArchiveInput[StreamType]) extends AnyVal {
+    implicit class UploadArchiveInputMutableBuilder[Self <: UploadArchiveInput[?], StreamType] (val x: Self & UploadArchiveInput[StreamType]) extends AnyVal {
       
       @scala.inline
       def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])

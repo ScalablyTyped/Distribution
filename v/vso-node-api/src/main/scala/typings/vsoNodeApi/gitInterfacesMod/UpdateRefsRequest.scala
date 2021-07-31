@@ -2,15 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRefsRequest extends StObject {
   
-  var refUpdateRequests: js.Array[GitRefUpdate] = js.native
+  var refUpdateRequests: js.Array[GitRefUpdate]
   
-  var updateMode: GitRefUpdateMode = js.native
+  var updateMode: GitRefUpdateMode
 }
 object UpdateRefsRequest {
   

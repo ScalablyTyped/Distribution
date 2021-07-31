@@ -2,23 +2,21 @@ package typings.kikBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KikUser extends StObject {
   
-  var firstName: String = js.native
+  var firstName: String
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var lastName: String = js.native
+  var lastName: String
   
-  var pic: String = js.native
+  var pic: String
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var username: String = js.native
+  var username: String
 }
 object KikUser {
   

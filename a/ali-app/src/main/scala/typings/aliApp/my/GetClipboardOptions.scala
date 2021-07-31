@@ -3,17 +3,16 @@ package typings.aliApp.my
 import typings.aliApp.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 剪贴板 https://docs.alipay.com/mini/api/clipboard
-@js.native
 trait GetClipboardOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("success")
-  var success_GetClipboardOptions: js.UndefOr[js.Function1[/* res */ Text, Unit]] = js.native
+  var success_GetClipboardOptions: js.UndefOr[js.Function1[/* res */ Text, Unit]] = js.undefined
 }
 object GetClipboardOptions {
   

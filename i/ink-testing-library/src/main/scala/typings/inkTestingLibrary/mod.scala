@@ -3,35 +3,35 @@ package typings.inkTestingLibrary
 import typings.inkTestingLibrary.anon.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ink-testing-library", "cleanup")
+  @JSImport("ink-testing-library", JSImport.Namespace)
   @js.native
-  def cleanup(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ink-testing-library", "render")
-  @js.native
+  @scala.inline
+  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
+  
+  @scala.inline
   def render(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
-  ): RenderResponse = js.native
+  ): RenderResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(tree.asInstanceOf[js.Any]).asInstanceOf[RenderResponse]
   
-  @js.native
   trait RenderResponse extends StObject {
     
-    var frames: js.Array[String] = js.native
+    var frames: js.Array[String]
     
-    def lastFrame(): String = js.native
+    def lastFrame(): String
     
     def rerender(
       tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
-    ): Unit = js.native
+    ): Unit
     
-    var stdin: Write = js.native
+    var stdin: Write
     
-    def unmount(): Unit = js.native
+    def unmount(): Unit
   }
   object RenderResponse {
     

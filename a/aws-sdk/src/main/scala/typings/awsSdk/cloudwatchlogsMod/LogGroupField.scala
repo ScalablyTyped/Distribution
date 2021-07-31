@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogGroupField extends StObject {
   
   /**
     * The name of a log field.
     */
-  var name: js.UndefOr[Field] = js.native
+  var name: js.UndefOr[Field] = js.undefined
   
   /**
     * The percentage of log events queried that contained the field.
     */
-  var percent: js.UndefOr[Percentage] = js.native
+  var percent: js.UndefOr[Percentage] = js.undefined
 }
 object LogGroupField {
   

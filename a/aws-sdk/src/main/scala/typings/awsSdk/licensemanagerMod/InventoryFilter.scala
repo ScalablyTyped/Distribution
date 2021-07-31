@@ -2,26 +2,24 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryFilter extends StObject {
   
   /**
     * Condition of the filter.
     */
-  var Condition: InventoryFilterCondition = js.native
+  var Condition: InventoryFilterCondition
   
   /**
     * Name of the filter.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Value of the filter.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object InventoryFilter {
   

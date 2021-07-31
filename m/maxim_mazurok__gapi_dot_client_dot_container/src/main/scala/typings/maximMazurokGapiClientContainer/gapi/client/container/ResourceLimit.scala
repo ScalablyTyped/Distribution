@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceLimit extends StObject {
   
   /** Maximum amount of the resource in the cluster. */
-  var maximum: js.UndefOr[String] = js.native
+  var maximum: js.UndefOr[String] = js.undefined
   
   /** Minimum amount of the resource in the cluster. */
-  var minimum: js.UndefOr[String] = js.native
+  var minimum: js.UndefOr[String] = js.undefined
   
   /** Resource name "cpu", "memory" or gpu-specific string. */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object ResourceLimit {
   

@@ -15,36 +15,34 @@ import typings.plotlyJs.plotlyJsStrings.top
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  rows :number,   roworder :'top to bottom' | 'bottom to top',   columns :number,   subplots :std.Array<string>,   xaxes :std.Array<string>,   yaxes :std.Array<string>,   pattern :'independent' | 'coupled',   xgap :number,   ygap :number,   domain :std.Partial<{  x :std.Array<number>,   y :std.Array<number>}>,   xside :'bottom' | 'bottom plot' | 'top plot' | 'top',   yside :'left' | 'left plot' | 'right plot' | 'right'}> */
-@js.native
 trait PartialrowsnumberroworderColumns extends StObject {
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var domain: js.UndefOr[Partial[X]] = js.native
+  var domain: js.UndefOr[Partial[X]] = js.undefined
   
-  var pattern: js.UndefOr[independent | coupled] = js.native
+  var pattern: js.UndefOr[independent | coupled] = js.undefined
   
-  var roworder: js.UndefOr[(`top to bottom`) | (`bottom to top`)] = js.native
+  var roworder: js.UndefOr[(`top to bottom`) | (`bottom to top`)] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var subplots: js.UndefOr[js.Array[String]] = js.native
+  var subplots: js.UndefOr[js.Array[String]] = js.undefined
   
-  var xaxes: js.UndefOr[js.Array[String]] = js.native
+  var xaxes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var xgap: js.UndefOr[Double] = js.native
+  var xgap: js.UndefOr[Double] = js.undefined
   
-  var xside: js.UndefOr[bottom | (`bottom plot`) | (`top plot`) | top] = js.native
+  var xside: js.UndefOr[bottom | (`bottom plot`) | (`top plot`) | top] = js.undefined
   
-  var yaxes: js.UndefOr[js.Array[String]] = js.native
+  var yaxes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ygap: js.UndefOr[Double] = js.native
+  var ygap: js.UndefOr[Double] = js.undefined
   
-  var yside: js.UndefOr[left | (`left plot`) | (`right plot`) | right] = js.native
+  var yside: js.UndefOr[left | (`left plot`) | (`right plot`) | right] = js.undefined
 }
 object PartialrowsnumberroworderColumns {
   

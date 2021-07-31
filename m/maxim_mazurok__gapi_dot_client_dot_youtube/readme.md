@@ -10,9 +10,9 @@ TypeScript typings for YouTube Data API v3 v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.youtube |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 39 |
 | # dependents       | 1 |
-| # downloads        | 127 |
+| # downloads        | 3816 |
 | # stars            | 0 |
 
 ## Links

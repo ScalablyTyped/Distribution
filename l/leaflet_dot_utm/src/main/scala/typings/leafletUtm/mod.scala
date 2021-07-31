@@ -4,11 +4,14 @@ import typings.leafletUtm.anon.Band
 import typings.leafletUtm.mod.Utm_.ToStringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
+  
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("leaflet", "Utm")
   @js.native
@@ -35,23 +38,23 @@ object mod {
   }
   object Utm_ {
     
-    @JSImport("leaflet", "Utm.setDefaultOptions")
+    @JSImport("leaflet", "Utm")
     @js.native
-    def setDefaultOptions(): Unit = js.native
-    @JSImport("leaflet", "Utm.setDefaultOptions")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def setDefaultOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")().asInstanceOf[Unit]
+    @scala.inline
     def setDefaultOptions(
       params: js.Function2[/* opts */ ToStringOptions, /* defaultOpts */ ToStringOptions, ToStringOptions]
-    ): Unit = js.native
-    @JSImport("leaflet", "Utm.setDefaultOptions")
-    @js.native
-    def setDefaultOptions(params: ToStringOptions): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setDefaultOptions(params: ToStringOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @js.native
     trait ToStringOptions extends StObject {
       
       /** Number of decimals for x and y. Default 1. */
-      var decimals: js.UndefOr[Double] = js.native
+      var decimals: js.UndefOr[Double] = js.undefined
       
       /**
         * String defining the format to use.
@@ -64,16 +67,16 @@ object mod {
         * `{hemi}: Hemisphere, north or south`
         * `{sep}: separator`
         */
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
       
       /** String used in the format for field {hemi} in the north hemisphere. Default 'North'. */
-      var north: js.UndefOr[String] = js.native
+      var north: js.UndefOr[String] = js.undefined
       
       /** Separator used in the format. Default ','. */
-      var sep: js.UndefOr[String] = js.native
+      var sep: js.UndefOr[String] = js.undefined
       
       /** String used in the format for field {hemi} in the south hemisphere. Default 'South'. */
-      var south: js.UndefOr[String] = js.native
+      var south: js.UndefOr[String] = js.undefined
     }
     object ToStringOptions {
       
@@ -119,16 +122,15 @@ object mod {
     }
   }
   
-  @JSImport("leaflet", "utm")
-  @js.native
-  def utm(params: Band): Utm_ = js.native
+  @scala.inline
+  def utm(params: Band): Utm_ = ^.asInstanceOf[js.Dynamic].applyDynamic("utm")(params.asInstanceOf[js.Any]).asInstanceOf[Utm_]
   
   @js.native
   trait LatLng extends StObject {
     
     def utm(): Utm_ = js.native
-    def utm(zone: js.UndefOr[scala.Nothing], southHemi: Boolean): Utm_ = js.native
     def utm(zone: Double): Utm_ = js.native
     def utm(zone: Double, southHemi: Boolean): Utm_ = js.native
+    def utm(zone: Unit, southHemi: Boolean): Utm_ = js.native
   }
 }

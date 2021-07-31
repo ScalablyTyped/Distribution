@@ -19,30 +19,28 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlyoutProps extends StObject {
   
-  var anchor: HTMLElement = js.native
+  var anchor: HTMLElement
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[blue | orange | red | white | darkGray] = js.native
+  var color: js.UndefOr[blue | orange | red | white | darkGray] = js.undefined
   
-  var idealDirection: js.UndefOr[up | right | down | left] = js.native
+  var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
   
   // ideally a HTMLAnchorElement
-  def onDismiss(): Unit = js.native
+  def onDismiss(): Unit
   
-  var positionRelativeToAnchor: js.UndefOr[Boolean] = js.native
+  var positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined
   
-  var shouldFocus: js.UndefOr[Boolean] = js.native
+  var shouldFocus: js.UndefOr[Boolean] = js.undefined
   
-  var showCaret: js.UndefOr[Boolean] = js.native
+  var showCaret: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[xs | sm | md | lg | xl | flexible | Double] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl | flexible | Double] = js.undefined
 }
 object FlyoutProps {
   

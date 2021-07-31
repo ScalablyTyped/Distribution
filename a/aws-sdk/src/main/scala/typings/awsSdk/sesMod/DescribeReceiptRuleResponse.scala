@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReceiptRuleResponse extends StObject {
   
   /**
     * A data structure that contains the specified receipt rule's name, actions, recipients, domains, enabled status, scan status, and Transport Layer Security (TLS) policy.
     */
-  var Rule: js.UndefOr[ReceiptRule] = js.native
+  var Rule: js.UndefOr[ReceiptRule] = js.undefined
 }
 object DescribeReceiptRuleResponse {
   

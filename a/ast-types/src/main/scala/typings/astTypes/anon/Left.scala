@@ -7,21 +7,19 @@ import typings.astTypes.kindsMod.StatementKind
 import typings.astTypes.kindsMod.VariableDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var body: StatementKind = js.native
+  var body: StatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var left: VariableDeclarationKind | ExpressionKind = js.native
+  var left: VariableDeclarationKind | ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var right: ExpressionKind = js.native
+  var right: ExpressionKind
 }
 object Left {
   

@@ -2,16 +2,14 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlVec2 extends StObject {
   
   /**
     * Indicates the x coordinate.
     */
-  def getX(): Double = js.native
+  def getX(): Double
   
   /**
     * Units in which the x value is specified.
@@ -22,12 +20,12 @@ trait KmlVec2 extends StObject {
     * * GEPlugin.UNITS_PIXELS
     * * GEPlugin.UNITS_INSET_PIXELS
     */
-  def getXUnits(): KmlUnitsEnum = js.native
+  def getXUnits(): KmlUnitsEnum
   
   /**
     * Indicates the y coordinate.
     */
-  def getY(): Double = js.native
+  def getY(): Double
   
   /**
     * Units in which the y value is specified.
@@ -38,17 +36,17 @@ trait KmlVec2 extends StObject {
     * * GEPlugin.UNITS_PIyELS
     * * GEPlugin.UNITS_INSET_PIyELS
     */
-  def getYUnits(): KmlUnitsEnum = js.native
+  def getYUnits(): KmlUnitsEnum
   
   /**
     * Sets the coordinates of the vector.
     */
-  def set(x: Double, xUnits: KmlUnitsEnum, y: Double, yUnits: KmlUnitsEnum): Unit = js.native
+  def set(x: Double, xUnits: KmlUnitsEnum, y: Double, yUnits: KmlUnitsEnum): Unit
   
   /**
     * Indicates the x coordinate.
     */
-  def setX(x: Double): Unit = js.native
+  def setX(x: Double): Unit
   
   /**
     * Units in which the x value is specified.
@@ -59,12 +57,12 @@ trait KmlVec2 extends StObject {
     * * GEPlugin.UNITS_PIXELS
     * * GEPlugin.UNITS_INSET_PIXELS
     */
-  def setXUnits(xUnits: KmlUnitsEnum): Unit = js.native
+  def setXUnits(xUnits: KmlUnitsEnum): Unit
   
   /**
     * Indicates the y coordinate.
     */
-  def setY(y: Double): Unit = js.native
+  def setY(y: Double): Unit
   
   /**
     * Units in which the y value is specified.
@@ -75,7 +73,7 @@ trait KmlVec2 extends StObject {
     * * GEPlugin.UNITS_PIyELS
     * * GEPlugin.UNITS_INSET_PIyELS
     */
-  def setYUnits(xUnits: KmlUnitsEnum): Unit = js.native
+  def setYUnits(xUnits: KmlUnitsEnum): Unit
 }
 object KmlVec2 {
   

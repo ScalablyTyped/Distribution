@@ -2,20 +2,18 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedAttributes extends StObject {
   
-  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.native
+  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.undefined
   
-  var CompletionCriteria: js.UndefOr[AutoMLJobCompletionCriteria] = js.native
+  var CompletionCriteria: js.UndefOr[AutoMLJobCompletionCriteria] = js.undefined
   
   /**
     * The problem type.
     */
-  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.native
+  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.undefined
 }
 object ResolvedAttributes {
   

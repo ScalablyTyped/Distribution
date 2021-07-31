@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "BinaryOperand")
@@ -10,17 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BinaryOperand protected () extends Operand {
   def this(operatorName: String) = this()
   def this(operatorName: String, left: js.Any) = this()
-  def this(operatorName: String, left: js.UndefOr[scala.Nothing], right: js.Any) = this()
   def this(operatorName: String, left: js.Any, right: js.Any) = this()
-  def this(
-    operatorName: String,
-    left: js.UndefOr[scala.Nothing],
-    right: js.UndefOr[scala.Nothing],
-    isArithmeticOp: Boolean
-  ) = this()
-  def this(operatorName: String, left: js.UndefOr[scala.Nothing], right: js.Any, isArithmeticOp: Boolean) = this()
-  def this(operatorName: String, left: js.Any, right: js.UndefOr[scala.Nothing], isArithmeticOp: Boolean) = this()
+  def this(operatorName: String, left: Unit, right: js.Any) = this()
   def this(operatorName: String, left: js.Any, right: js.Any, isArithmeticOp: Boolean) = this()
+  def this(operatorName: String, left: js.Any, right: Unit, isArithmeticOp: Boolean) = this()
+  def this(operatorName: String, left: Unit, right: js.Any, isArithmeticOp: Boolean) = this()
+  def this(operatorName: String, left: Unit, right: Unit, isArithmeticOp: Boolean) = this()
   
   val conjunction: String = js.native
   

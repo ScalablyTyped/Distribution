@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminMessage extends StObject {
   
-  var baseMessage: js.UndefOr[String] = js.native
+  var baseMessage: js.UndefOr[String] = js.undefined
   
-  var moreInformation: js.UndefOr[String] = js.native
+  var moreInformation: js.UndefOr[String] = js.undefined
 }
 object AdminMessage {
   

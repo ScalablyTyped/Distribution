@@ -2,85 +2,85 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Planned participants in the coordination and delivery of care for a patient or group
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait CareTeam extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait CareTeam
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Type of team
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Encounter or episode associated with CareTeam
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * External Ids for this team
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Organization responsible for the care team
     */
-  var managingOrganization: js.UndefOr[js.Array[Reference]] = js.native
+  var managingOrganization: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Name of the team, such as crisis assessment team
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Comments made about the CareTeam
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * Members of the team
     */
-  var participant: js.UndefOr[js.Array[CareTeamParticipant]] = js.native
+  var participant: js.UndefOr[js.Array[CareTeamParticipant]] = js.undefined
   
   /**
     * Time period team covers
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Why the care team exists
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Why the care team exists
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * proposed | active | suspended | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * Who care team is for
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
 }
 object CareTeam {
   

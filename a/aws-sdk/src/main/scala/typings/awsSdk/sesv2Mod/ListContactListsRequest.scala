@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactListsRequest extends StObject {
   
   /**
     * A string token indicating that there might be additional contact lists available to be listed. Use the token provided in the Response to use in the subsequent call to ListContactLists with the same parameters to retrieve the next page of contact lists.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * Maximum number of contact lists to return at once. Use this parameter to paginate results. If additional contact lists exist beyond the specified limit, the NextToken element is sent in the response. Use the NextToken value in subsequent requests to retrieve additional lists.
     */
-  var PageSize: js.UndefOr[MaxItems] = js.native
+  var PageSize: js.UndefOr[MaxItems] = js.undefined
 }
 object ListContactListsRequest {
   

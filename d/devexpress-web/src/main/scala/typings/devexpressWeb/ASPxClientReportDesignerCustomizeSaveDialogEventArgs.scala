@@ -2,26 +2,26 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeSaveDialog event.
   */
-@js.native
-trait ASPxClientReportDesignerCustomizeSaveDialogEventArgs extends ASPxClientEventArgs {
+trait ASPxClientReportDesignerCustomizeSaveDialogEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Customizes the Save dialog based on the specified template and model.
     * @param template A string that specifies the name of an HTML template for the dialog.
     * @param model A model of the Save dialog.
     */
-  def Customize(template: String, model: ASPxDesignerDialogModel): Unit = js.native
+  def Customize(template: String, model: ASPxDesignerDialogModel): Unit
   
   /**
     * Provides access to the Save dialog.
     */
-  var Popup: ASPxDesignerSaveDialog = js.native
+  var Popup: ASPxDesignerSaveDialog
 }
 object ASPxClientReportDesignerCustomizeSaveDialogEventArgs {
   

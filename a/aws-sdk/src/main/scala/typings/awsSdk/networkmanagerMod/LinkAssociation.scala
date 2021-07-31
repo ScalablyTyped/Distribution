@@ -2,31 +2,29 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkAssociation extends StObject {
   
   /**
     * The device ID for the link association.
     */
-  var DeviceId: js.UndefOr[String] = js.native
+  var DeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the association.
     */
-  var LinkAssociationState: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkAssociationState] = js.native
+  var LinkAssociationState: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkAssociationState] = js.undefined
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.native
+  var LinkId: js.UndefOr[String] = js.undefined
 }
 object LinkAssociation {
   

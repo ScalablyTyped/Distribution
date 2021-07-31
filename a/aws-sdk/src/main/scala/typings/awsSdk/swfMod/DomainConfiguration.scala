@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainConfiguration extends StObject {
   
   /**
     * The retention period for workflow executions in this domain.
     */
-  var workflowExecutionRetentionPeriodInDays: DurationInDays = js.native
+  var workflowExecutionRetentionPeriodInDays: DurationInDays
 }
 object DomainConfiguration {
   

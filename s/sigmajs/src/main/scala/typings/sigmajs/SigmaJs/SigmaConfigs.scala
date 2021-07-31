@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigmaConfigs extends StObject {
   
-  var container: js.UndefOr[Element] = js.native
+  var container: js.UndefOr[Element] = js.undefined
   
-  var graph: js.UndefOr[GraphData] = js.native
+  var graph: js.UndefOr[GraphData] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var renderers: js.UndefOr[js.Array[Renderer]] = js.native
+  var renderers: js.UndefOr[js.Array[Renderer]] = js.undefined
   
-  var settings: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var settings: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SigmaConfigs {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains value and state of a {@link com.sun.star.beans.Property} . */
-@js.native
-trait PropertyValueInfo extends PropertyValue {
+trait PropertyValueInfo
+  extends StObject
+     with PropertyValue {
   
   /** the state of the property value. */
-  var ValueState: PropertyValueState = js.native
+  var ValueState: PropertyValueState
 }
 object PropertyValueInfo {
   

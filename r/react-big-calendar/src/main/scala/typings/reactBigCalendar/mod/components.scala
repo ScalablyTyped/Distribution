@@ -3,15 +3,13 @@ package typings.reactBigCalendar.mod
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait components extends StObject {
   
-  var dateCellWrapper: ComponentType[js.Object] = js.native
+  var dateCellWrapper: ComponentType[js.Object]
   
-  var eventWrapper: ComponentType[Event] = js.native
+  var eventWrapper: ComponentType[Event]
 }
 object components {
   

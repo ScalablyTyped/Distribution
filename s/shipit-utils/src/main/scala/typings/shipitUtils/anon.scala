@@ -7,7 +7,6 @@ import typings.shipitCli.mod.Tasks_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -37,7 +36,7 @@ object anon {
     def local(command: String): js.Thenable[ShipitLocal] = js.native
     def local(
       command: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
     ): js.Thenable[ShipitLocal] = js.native
     def local(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
@@ -55,7 +54,7 @@ object anon {
     def remote(command: String): js.Thenable[ShipitLocal] = js.native
     def remote(
       command: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
     ): js.Thenable[ShipitLocal] = js.native
     def remote(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
@@ -69,7 +68,7 @@ object anon {
     def remoteCopy(
       src: String,
       dest: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
     ): js.Thenable[ShipitLocal] = js.native
     def remoteCopy(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
@@ -80,7 +79,7 @@ object anon {
       callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
     ): js.Thenable[ShipitLocal] = js.native
     
-    val seq: js.Array[_] = js.native
+    val seq: js.Array[js.Any] = js.native
     
     def start(tasks: String*): typings.shipitCli.anon.Typeofshipit = js.native
     def start(tasks: String): typings.shipitCli.anon.Typeofshipit = js.native

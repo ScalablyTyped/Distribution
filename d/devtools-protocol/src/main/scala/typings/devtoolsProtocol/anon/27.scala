@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Animation.SetPlaybackRateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var paramsType: js.Array[SetPlaybackRateRequest] = js.native
+  var paramsType: js.Array[SetPlaybackRateRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `27` {
   

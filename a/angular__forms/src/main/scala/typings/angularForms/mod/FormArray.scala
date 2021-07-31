@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import typings.angularForms.anon.EmitEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormArray")
@@ -28,16 +27,6 @@ class FormArray protected () extends AbstractControl {
   def this(controls: js.Array[AbstractControl], validatorOrOpts: ValidatorFn) = this()
   def this(
     controls: js.Array[AbstractControl],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(
-    controls: js.Array[AbstractControl],
-    validatorOrOpts: js.UndefOr[scala.Nothing],
-    asyncValidator: AsyncValidatorFn
-  ) = this()
-  def this(
-    controls: js.Array[AbstractControl],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
@@ -52,6 +41,12 @@ class FormArray protected () extends AbstractControl {
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
   def this(controls: js.Array[AbstractControl], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
+  def this(
+    controls: js.Array[AbstractControl],
+    validatorOrOpts: Unit,
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ) = this()
+  def this(controls: js.Array[AbstractControl], validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
   def this(
     controls: js.Array[AbstractControl],
     validatorOrOpts: AbstractControlOptions,
@@ -122,7 +117,7 @@ class FormArray protected () extends AbstractControl {
     * Reports all values regardless of disabled status.
     * For enabled controls only, the `value` property is the best way to get the value of the array.
     */
-  def getRawValue(): js.Array[_] = js.native
+  def getRawValue(): js.Array[js.Any] = js.native
   
   /**
     * Insert a new `AbstractControl` at the given `index` in the array.
@@ -171,8 +166,8 @@ class FormArray protected () extends AbstractControl {
     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
     * updateValueAndValidity} method.
     */
-  def patchValue(value: js.Array[_]): Unit = js.native
-  def patchValue(value: js.Array[_], options: EmitEvent): Unit = js.native
+  def patchValue(value: js.Array[js.Any]): Unit = js.native
+  def patchValue(value: js.Array[js.Any], options: EmitEvent): Unit = js.native
   
   /**
     * Insert a new `AbstractControl` at the end of the array.
@@ -188,8 +183,8 @@ class FormArray protected () extends AbstractControl {
     */
   def removeAt(index: Double): Unit = js.native
   
-  def reset(value: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(value: js.Any, options: EmitEvent): Unit = js.native
+  def reset(value: Unit, options: EmitEvent): Unit = js.native
   
   /**
     * Replace an existing control.
@@ -234,6 +229,6 @@ class FormArray protected () extends AbstractControl {
     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
     * updateValueAndValidity} method.
     */
-  def setValue(value: js.Array[_]): Unit = js.native
-  def setValue(value: js.Array[_], options: EmitEvent): Unit = js.native
+  def setValue(value: js.Array[js.Any]): Unit = js.native
+  def setValue(value: js.Array[js.Any], options: EmitEvent): Unit = js.native
 }

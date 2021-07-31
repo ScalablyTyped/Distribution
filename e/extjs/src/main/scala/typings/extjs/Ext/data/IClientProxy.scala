@@ -2,15 +2,14 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientProxy
-  extends typings.extjs.Ext.data.proxy.IProxy {
+  extends StObject
+     with typings.extjs.Ext.data.proxy.IProxy {
   
   /** [Method] Abstract function that must be implemented by each ClientProxy subclass  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IClientProxy {
   

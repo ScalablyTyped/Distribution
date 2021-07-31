@@ -2,41 +2,39 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAssetFromSignedUrlResponseDetails extends StObject {
   
   /**
     * The name for the asset associated with this import response.
     */
-  var AssetName: typings.awsSdk.dataexchangeMod.AssetName = js.native
+  var AssetName: typings.awsSdk.dataexchangeMod.AssetName
   
   /**
     * The unique identifier for the data set associated with this import job.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * The Base64-encoded Md5 hash for the asset, used to ensure the integrity of the file at that location.
     */
-  var Md5Hash: js.UndefOr[stringMin24Max24PatternAZaZ094AZaZ092AZaZ093] = js.native
+  var Md5Hash: js.UndefOr[stringMin24Max24PatternAZaZ094AZaZ092AZaZ093] = js.undefined
   
   /**
     * The unique identifier for the revision associated with this import response.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
   
   /**
     * The signed URL.
     */
-  var SignedUrl: js.UndefOr[string] = js.native
+  var SignedUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The time and date at which the signed URL expires, in ISO 8601 format.
     */
-  var SignedUrlExpiresAt: js.UndefOr[Timestamp] = js.native
+  var SignedUrlExpiresAt: js.UndefOr[Timestamp] = js.undefined
 }
 object ImportAssetFromSignedUrlResponseDetails {
   

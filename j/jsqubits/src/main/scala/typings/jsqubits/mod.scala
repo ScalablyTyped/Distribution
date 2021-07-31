@@ -13,7 +13,6 @@ import typings.jsqubits.mod.jsqubits.QState
 import typings.jsqubits.mod.jsqubits.StateWithAmplitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,12 +21,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : ExternalJSQubitsStatic = js.native
   
-  @js.native
-  trait BitsRange extends _SingleQubitOperatorTargetQubits {
+  trait BitsRange
+    extends StObject
+       with _SingleQubitOperatorTargetQubits {
     
-    var from: Double = js.native
+    var from: Double
     
-    var to: Double = js.native
+    var to: Double
   }
   object BitsRange {
     
@@ -49,7 +49,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ComplexStatic extends Instantiable2[/* real */ Double, /* imaginary */ Double, Complex] {
+  trait ComplexStatic
+    extends StObject
+       with Instantiable2[/* real */ Double, /* imaginary */ Double, Complex] {
     
     var ONE: Complex = js.native
     
@@ -60,14 +62,13 @@ object mod extends Shortcut {
     var ZERO: Complex = js.native
   }
   
-  @js.native
   trait ContinuedFractionResult extends StObject {
     
-    var denominator: Double = js.native
+    var denominator: Double
     
-    var numerator: Double = js.native
+    var numerator: Double
     
-    var quotients: js.Array[Double] = js.native
+    var quotients: js.Array[Double]
   }
   object ContinuedFractionResult {
     
@@ -94,12 +95,26 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ExternalJSQubitsStatic extends StObject {
     
-    def jsqubits(bitString: String): QState = js.native
+    def jsqubits(bitString: String): QState
     @JSName("jsqubits")
-    var jsqubits_Original: JSQubitsStatic = js.native
+    var jsqubits_Original: JSQubitsStatic
+  }
+  object ExternalJSQubitsStatic {
+    
+    @scala.inline
+    def apply(jsqubits: JSQubitsStatic): ExternalJSQubitsStatic = {
+      val __obj = js.Dynamic.literal(jsqubits = jsqubits.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ExternalJSQubitsStatic]
+    }
+    
+    @scala.inline
+    implicit class ExternalJSQubitsStaticMutableBuilder[Self <: ExternalJSQubitsStatic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setJsqubits(value: JSQubitsStatic): Self = StObject.set(x, "jsqubits", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -130,20 +145,19 @@ object mod extends Shortcut {
     var roundToZero: `0.0000001` = js.native
   }
   
-  @js.native
   trait JsqubitsmathStatic extends StObject {
     
-    def continuedFraction(targetValue: Double, precision: Double): ContinuedFractionResult = js.native
+    def continuedFraction(targetValue: Double, precision: Double): ContinuedFractionResult
     
-    def findNullSpaceMod2(a: js.Array[js.Array[Double]], width: js.Array[Double]): js.Array[Double] = js.native
+    def findNullSpaceMod2(a: js.Array[js.Array[Double]], width: js.Array[Double]): js.Array[Double]
     
-    def gcd(a: Double, b: Double): Double = js.native
+    def gcd(a: Double, b: Double): Double
     
-    def lcm(a: Double, b: Double): Double = js.native
+    def lcm(a: Double, b: Double): Double
     
-    def powerFactor(n: Double): Double = js.native
+    def powerFactor(n: Double): Double
     
-    def powerMod(x: Double, y: Double, m: Double): Double = js.native
+    def powerMod(x: Double, y: Double, m: Double): Double
   }
   object JsqubitsmathStatic {
     
@@ -184,11 +198,14 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait MeasurementStatic extends Instantiable3[/* numBits */ Double, /* result */ Double, /* newState */ QState, Measurement]
+  trait MeasurementStatic
+    extends StObject
+       with Instantiable3[/* numBits */ Double, /* result */ Double, /* newState */ QState, Measurement]
   
   @js.native
   trait QStateStatic
-    extends Instantiable1[/* numBits */ Double, QState]
+    extends StObject
+       with Instantiable1[/* numBits */ Double, QState]
        with Instantiable2[/* numBits */ Double, /* amplitudes */ js.Array[Complex], QState] {
     
     def applyOperatorMatrix(matrix: js.Array[js.Array[Complex]], bitValue: Double, amplitude: Complex): js.Array[Complex] = js.native
@@ -212,7 +229,9 @@ object mod extends Shortcut {
   type SingleQubitOperatorTargetQubits = _SingleQubitOperatorTargetQubits | js.Array[Double] | Double
   
   @js.native
-  trait StateWithAmplitudeStatic extends Instantiable3[/* numBits */ Double, /* index */ Double, /* amplitude */ Complex, StateWithAmplitude]
+  trait StateWithAmplitudeStatic
+    extends StObject
+       with Instantiable3[/* numBits */ Double, /* index */ Double, /* amplitude */ Complex, StateWithAmplitude]
   
   trait _SingleQubitOperatorTargetQubits extends StObject
   
@@ -258,16 +277,15 @@ object mod extends Shortcut {
       def subtract(other: Complex): Complex = js.native
     }
     
-    @js.native
     trait Measurement extends StObject {
       
-      def asBitString(): String = js.native
+      def asBitString(): String
       
-      var newState: QState = js.native
+      var newState: QState
       
-      var numBits: Double = js.native
+      var numBits: Double
       
-      var result: Double = js.native
+      var result: Double
     }
     object Measurement {
       
@@ -332,10 +350,8 @@ object mod extends Shortcut {
         functionToApply: js.Function1[/* input */ Double, Double]
       ): QState = js.native
       
-      def cnot(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def cnot(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def cnot(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       @JSName("cnot")
       var cnot_Original: js.Function2[
             /* controlBits */ js.UndefOr[SingleQubitOperatorTargetQubits], 
@@ -344,63 +360,61 @@ object mod extends Shortcut {
           ] = js.native
       
       def controlledApplicationOfqBitOperator(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
+        controlBits: Unit,
+        targetBits: SingleQubitOperatorTargetQubits,
+        operatorMatrix: js.Array[js.Array[Complex]]
+      ): QState = js.native
+      def controlledApplicationOfqBitOperator(
+        controlBits: SingleQubitOperatorTargetQubits,
         targetBits: SingleQubitOperatorTargetQubits,
         operatorMatrix: js.Array[js.Array[Complex]]
       ): QState = js.native
       
-      def controlledHadamard(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledHadamard(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledHadamard(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
+      def controlledR(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits, angle: Double): QState = js.native
       def controlledR(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
+        controlBits: SingleQubitOperatorTargetQubits,
         targetBits: SingleQubitOperatorTargetQubits,
         angle: Double
       ): QState = js.native
       
-      def controlledS(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledS(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledS(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
-      def controlledSwap(controlBits: js.UndefOr[SingleQubitOperatorTargetQubits], targetBit1: Double, targetBit2: Double): QState = js.native
+      def controlledSwap(controlBits: Unit, targetBit1: Double, targetBit2: Double): QState = js.native
+      def controlledSwap(controlBits: SingleQubitOperatorTargetQubits, targetBit1: Double, targetBit2: Double): QState = js.native
       
-      def controlledT(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledT(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledT(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
-      def controlledX(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledX(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledX(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
+      def controlledXRotation(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits, angle: Double): QState = js.native
       def controlledXRotation(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
+        controlBits: SingleQubitOperatorTargetQubits,
         targetBits: SingleQubitOperatorTargetQubits,
         angle: Double
       ): QState = js.native
       
-      def controlledY(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledY(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledY(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
+      def controlledYRotation(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits, angle: Double): QState = js.native
       def controlledYRotation(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
+        controlBits: SingleQubitOperatorTargetQubits,
         targetBits: SingleQubitOperatorTargetQubits,
         angle: Double
       ): QState = js.native
       
-      def controlledZ(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
-        targetBits: SingleQubitOperatorTargetQubits
-      ): QState = js.native
+      def controlledZ(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
+      def controlledZ(controlBits: SingleQubitOperatorTargetQubits, targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       
+      def controlledZRotation(controlBits: Unit, targetBits: SingleQubitOperatorTargetQubits, angle: Double): QState = js.native
       def controlledZRotation(
-        controlBits: js.UndefOr[SingleQubitOperatorTargetQubits],
+        controlBits: SingleQubitOperatorTargetQubits,
         targetBits: SingleQubitOperatorTargetQubits,
         angle: Double
       ): QState = js.native
@@ -469,18 +483,17 @@ object mod extends Shortcut {
       def z(targetBits: SingleQubitOperatorTargetQubits): QState = js.native
     }
     
-    @js.native
     trait StateWithAmplitude extends StObject {
       
-      var amplitude: Complex = js.native
+      var amplitude: Complex
       
-      def asBitString(): String = js.native
+      def asBitString(): String
       
-      def asNumber(): Double = js.native
+      def asNumber(): Double
       
-      var index: Double = js.native
+      var index: Double
       
-      var numBits: Double = js.native
+      var numBits: Double
     }
     object StateWithAmplitude {
       

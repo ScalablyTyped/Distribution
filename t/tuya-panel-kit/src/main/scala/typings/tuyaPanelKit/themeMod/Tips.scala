@@ -2,18 +2,16 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.TipsTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.TipsTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.TipsTheme> */
-@js.native
 trait Tips extends StObject {
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var dark: TipsTheme = js.native
+  var dark: TipsTheme
   
-  var light: TipsTheme = js.native
+  var light: TipsTheme
 }
 object Tips {
   

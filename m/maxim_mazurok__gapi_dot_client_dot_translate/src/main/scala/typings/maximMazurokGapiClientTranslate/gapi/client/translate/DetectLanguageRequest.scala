@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectLanguageRequest extends StObject {
   
   /** The content of the input stored as a string. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The labels with user-defined metadata for the request. Label keys and values can be no longer than 63 characters (Unicode codepoints), can only contain lowercase letters,
@@ -20,17 +18,17 @@ trait DetectLanguageRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. The format of the source text, for example, "text/html", "text/plain". If left blank, the MIME type defaults to "text/html". */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The language detection model to be used. Format: `projects/{project-number-or-id}/locations/{location-id}/models/language-detection/{model-id}` Only one language detection
     * model is currently supported: `projects/{project-number-or-id}/locations/{location-id}/models/language-detection/default`. If not specified, the default model is used.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
 }
 object DetectLanguageRequest {
   
@@ -53,7 +51,7 @@ object DetectLanguageRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

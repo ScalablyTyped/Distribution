@@ -2,53 +2,51 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /**
     * The number of dots per inch used for the page image.
     */
-  var dpi: js.UndefOr[String] = js.native
+  var dpi: js.UndefOr[String] = js.undefined
   
   /**
     * If an error occurs, this property describes the error.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The height of the page in pixels.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * The number of image bytes.
     */
-  var imageBytes: js.UndefOr[String] = js.native
+  var imageBytes: js.UndefOr[String] = js.undefined
   
   /**
     * The MIME type.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the page.
     */
-  var pageId: js.UndefOr[String] = js.native
+  var pageId: js.UndefOr[String] = js.undefined
   
   /**
     * The sequence of the page in the document, or page number.
     */
-  var sequence: js.UndefOr[String] = js.native
+  var sequence: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the page in pixels.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object Page {
   

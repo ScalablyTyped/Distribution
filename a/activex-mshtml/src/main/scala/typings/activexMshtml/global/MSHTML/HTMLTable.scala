@@ -2,10 +2,10 @@ package typings.activexMshtml.global.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MSHTML.HTMLTable")
 @js.native
 class HTMLTable protected ()
-  extends typings.activexMshtml.MSHTML.HTMLTable
+  extends StObject
+     with typings.activexMshtml.MSHTML.HTMLTable

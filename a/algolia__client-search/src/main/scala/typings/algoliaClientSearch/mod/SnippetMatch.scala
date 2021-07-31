@@ -5,15 +5,13 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.none
 import typings.algoliaClientSearch.algoliaClientSearchStrings.partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnippetMatch extends StObject {
   
-  val matchLevel: none | partial | full = js.native
+  val matchLevel: none | partial | full
   
-  val value: String = js.native
+  val value: String
 }
 object SnippetMatch {
   

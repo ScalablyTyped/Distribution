@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,9 +13,12 @@ object mod {
   /**
     * Expose `flash()` function on responses.
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-flash-2", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   object global {
     
@@ -24,10 +26,9 @@ object mod {
       
       type Flash = StringDictionary[js.Array[js.Any]]
       
-      @js.native
       trait Request extends StObject {
         
-        var session: js.UndefOr[Session] = js.native
+        var session: js.UndefOr[Session] = js.undefined
       }
       object Request {
         
@@ -72,15 +73,14 @@ object mod {
           * Formatting uses `util.format()`, which is available on Node 0.6+.
           */
         def flash(`type`: String, msg: String): Unit = js.native
-        def flash(`type`: String, msg: js.Array[_]): Unit = js.native
+        def flash(`type`: String, msg: js.Array[js.Any]): Unit = js.native
         
         var locals: typings.expressFlash2.anon.Flash = js.native
       }
       
-      @js.native
       trait Session extends StObject {
         
-        var flash: Flash = js.native
+        var flash: Flash
       }
       object Session {
         

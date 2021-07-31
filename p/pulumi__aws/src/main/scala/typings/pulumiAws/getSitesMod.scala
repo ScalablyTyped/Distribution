@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSitesMod {
   
-  @JSImport("@pulumi/aws/outposts/getSites", "getSites")
+  @JSImport("@pulumi/aws/outposts/getSites", JSImport.Namespace)
   @js.native
-  def getSites(): js.Promise[GetSitesResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getSites", "getSites")
-  @js.native
-  def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSites(): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")().asInstanceOf[js.Promise[GetSitesResult]]
+  @scala.inline
+  def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSitesResult]]
+  
   trait GetSitesResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of Outposts Site identifiers.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
   }
   object GetSitesResult {
     

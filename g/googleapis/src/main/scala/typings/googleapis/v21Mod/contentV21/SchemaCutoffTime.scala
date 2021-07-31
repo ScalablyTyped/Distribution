@@ -2,30 +2,28 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCutoffTime extends StObject {
   
   /**
     * Hour of the cutoff time until which an order has to be placed to be
     * processed in the same day. Required.
     */
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
   /**
     * Minute of the cutoff time until which an order has to be placed to be
     * processed in the same day. Required.
     */
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
   /**
     * Timezone identifier for the cutoff time. A list of identifiers can be
     * found in  the AdWords API documentation. E.g. &quot;Europe/Zurich&quot;.
     * Required.
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object SchemaCutoffTime {
   

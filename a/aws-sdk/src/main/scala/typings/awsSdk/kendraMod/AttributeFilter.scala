@@ -2,61 +2,59 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeFilter extends StObject {
   
   /**
     * Performs a logical AND operation on all supplied filters.
     */
-  var AndAllFilters: js.UndefOr[AttributeFilterList] = js.native
+  var AndAllFilters: js.UndefOr[AttributeFilterList] = js.undefined
   
   /**
     * Returns true when a document contains all of the specified document attributes. This filter is only applicable to StringListValue metadata.
     */
-  var ContainsAll: js.UndefOr[DocumentAttribute] = js.native
+  var ContainsAll: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Returns true when a document contains any of the specified document attributes. This filter is only applicable to StringListValue metadata.
     */
-  var ContainsAny: js.UndefOr[DocumentAttribute] = js.native
+  var ContainsAny: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs an equals operation on two document attributes.
     */
-  var EqualsTo: js.UndefOr[DocumentAttribute] = js.native
+  var EqualsTo: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs a greater than operation on two document attributes. Use with a document attribute of type Integer or Long.
     */
-  var GreaterThan: js.UndefOr[DocumentAttribute] = js.native
+  var GreaterThan: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs a greater or equals than operation on two document attributes. Use with a document attribute of type Integer or Long.
     */
-  var GreaterThanOrEquals: js.UndefOr[DocumentAttribute] = js.native
+  var GreaterThanOrEquals: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs a less than operation on two document attributes. Use with a document attribute of type Integer or Long.
     */
-  var LessThan: js.UndefOr[DocumentAttribute] = js.native
+  var LessThan: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs a less than or equals operation on two document attributes. Use with a document attribute of type Integer or Long.
     */
-  var LessThanOrEquals: js.UndefOr[DocumentAttribute] = js.native
+  var LessThanOrEquals: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
     * Performs a logical NOT operation on all supplied filters.
     */
-  var NotFilter: js.UndefOr[AttributeFilter] = js.native
+  var NotFilter: js.UndefOr[AttributeFilter] = js.undefined
   
   /**
     * Performs a logical OR operation on all supplied filters.
     */
-  var OrAllFilters: js.UndefOr[AttributeFilterList] = js.native
+  var OrAllFilters: js.UndefOr[AttributeFilterList] = js.undefined
 }
 object AttributeFilter {
   

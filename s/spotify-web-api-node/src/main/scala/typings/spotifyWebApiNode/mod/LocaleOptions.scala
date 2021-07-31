@@ -2,13 +2,13 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocaleOptions extends CountryOptions {
+trait LocaleOptions
+  extends StObject
+     with CountryOptions {
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
 }
 object LocaleOptions {
   

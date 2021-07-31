@@ -2,27 +2,25 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IeVersion extends StObject {
   
-  val ieVersion: Double | Null = js.native
+  val ieVersion: Double | Null
   
-  val isGecko: Boolean = js.native
+  val isGecko: Boolean
   
-  val isIE: Boolean = js.native
+  val isIE: Boolean
   
-  val isMobile: Android = js.native
+  val isMobile: Android
   
-  val isOpera: Boolean = js.native
+  val isOpera: Boolean
   
-  val isVivaldi: Boolean = js.native
+  val isVivaldi: Boolean
   
-  val operaVersion: Double | Null = js.native
+  val operaVersion: Double | Null
   
-  val userAgent: String = js.native
+  val userAgent: String
 }
 object IeVersion {
   
@@ -35,7 +33,7 @@ object IeVersion {
     isVivaldi: Boolean,
     userAgent: String
   ): IeVersion = {
-    val __obj = js.Dynamic.literal(isGecko = isGecko.asInstanceOf[js.Any], isIE = isIE.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isOpera = isOpera.asInstanceOf[js.Any], isVivaldi = isVivaldi.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isGecko = isGecko.asInstanceOf[js.Any], isIE = isIE.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isOpera = isOpera.asInstanceOf[js.Any], isVivaldi = isVivaldi.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], ieVersion = null, operaVersion = null)
     __obj.asInstanceOf[IeVersion]
   }
   

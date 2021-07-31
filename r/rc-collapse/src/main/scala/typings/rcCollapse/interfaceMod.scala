@@ -6,49 +6,47 @@ import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait CollapsePanelProps extends StObject {
     
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapsible: js.UndefOr[CollapsibleType] = js.native
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
     
-    var destroyInactivePanel: js.UndefOr[Boolean] = js.native
+    var destroyInactivePanel: js.UndefOr[Boolean] = js.undefined
     
-    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.native
+    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.undefined
     
-    var extra: js.UndefOr[String | ReactNode] = js.native
+    var extra: js.UndefOr[String | ReactNode] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[String | ReactNode] = js.native
+    var header: js.UndefOr[String | ReactNode] = js.undefined
     
-    var headerClass: js.UndefOr[String] = js.native
+    var headerClass: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var onItemClick: js.UndefOr[js.Function1[/* panelKey */ String | Double, Unit]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* panelKey */ String | Double, Unit]] = js.undefined
     
-    var openMotion: js.UndefOr[CSSMotionProps] = js.native
+    var openMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var panelKey: js.UndefOr[String | Double] = js.native
+    var panelKey: js.UndefOr[String | Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var showArrow: js.UndefOr[Boolean] = js.native
+    var showArrow: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object CollapsePanelProps {
     
@@ -171,30 +169,29 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait CollapseProps extends StObject {
     
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var activeKey: js.UndefOr[Key | js.Array[Key]] = js.native
+    var activeKey: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapsible: js.UndefOr[CollapsibleType] = js.native
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[Key | js.Array[Key]] = js.native
+    var defaultActiveKey: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
-    var destroyInactivePanel: js.UndefOr[Boolean] = js.native
+    var destroyInactivePanel: js.UndefOr[Boolean] = js.undefined
     
-    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.native
+    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* key */ Key | js.Array[Key], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* key */ Key | js.Array[Key], Unit]] = js.undefined
     
-    var openMotion: js.UndefOr[CSSMotionProps] = js.native
+    var openMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object CollapseProps {
     

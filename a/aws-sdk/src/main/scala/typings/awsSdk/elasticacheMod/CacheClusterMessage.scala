@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheClusterMessage extends StObject {
   
   /**
     * A list of clusters. Each item in the list contains detailed information about one cluster.
     */
-  var CacheClusters: js.UndefOr[CacheClusterList] = js.native
+  var CacheClusters: js.UndefOr[CacheClusterList] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object CacheClusterMessage {
   

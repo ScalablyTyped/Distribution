@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.emr
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterStep extends StObject {
   
   /**
     * The action to take if the step fails. Valid values: `TERMINATE_JOB_FLOW`, `TERMINATE_CLUSTER`, `CANCEL_AND_WAIT`, and `CONTINUE`
     */
-  var actionOnFailure: Input[String] = js.native
+  var actionOnFailure: Input[String]
   
   /**
     * The JAR file used for the step. Defined below.
     */
-  var hadoopJarStep: Input[ClusterStepHadoopJarStep] = js.native
+  var hadoopJarStep: Input[ClusterStepHadoopJarStep]
   
   /**
     * Friendly name given to the instance fleet.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object ClusterStep {
   

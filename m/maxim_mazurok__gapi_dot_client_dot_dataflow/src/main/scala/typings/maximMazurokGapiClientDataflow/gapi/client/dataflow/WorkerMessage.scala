@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerMessage extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait WorkerMessage extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessage with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessage & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The timestamp of the worker_message. */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
   /** The health of a worker. */
-  var workerHealthReport: js.UndefOr[WorkerHealthReport] = js.native
+  var workerHealthReport: js.UndefOr[WorkerHealthReport] = js.undefined
   
   /** Record of worker lifecycle events. */
-  var workerLifecycleEvent: js.UndefOr[WorkerLifecycleEvent] = js.native
+  var workerLifecycleEvent: js.UndefOr[WorkerLifecycleEvent] = js.undefined
   
   /** A worker message code. */
-  var workerMessageCode: js.UndefOr[WorkerMessageCode] = js.native
+  var workerMessageCode: js.UndefOr[WorkerMessageCode] = js.undefined
   
   /** Resource metrics reported by workers. */
-  var workerMetrics: js.UndefOr[ResourceUtilizationReport] = js.native
+  var workerMetrics: js.UndefOr[ResourceUtilizationReport] = js.undefined
   
   /** Shutdown notice by workers. */
-  var workerShutdownNotice: js.UndefOr[WorkerShutdownNotice] = js.native
+  var workerShutdownNotice: js.UndefOr[WorkerShutdownNotice] = js.undefined
 }
 object WorkerMessage {
   
@@ -53,7 +51,7 @@ object WorkerMessage {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessage with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessage & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

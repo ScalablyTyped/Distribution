@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReusableDelegationSetRequest extends StObject {
   
   /**
     * The ID of the reusable delegation set that you want to delete.
     */
-  var Id: ResourceId = js.native
+  var Id: ResourceId
 }
 object DeleteReusableDelegationSetRequest {
   

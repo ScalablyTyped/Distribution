@@ -2,11 +2,9 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to parse XML or HTML source code from a string into a DOM Document. */
-@js.native
 trait DOMParser extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait DOMParser extends StObject {
     * 
     * Values other than the above for type will cause a TypeError exception to be thrown.
     */
-  def parseFromString(string: java.lang.String, `type`: DOMParserSupportedType): Document = js.native
+  def parseFromString(string: java.lang.String, `type`: DOMParserSupportedType): Document
 }
 object DOMParser {
   

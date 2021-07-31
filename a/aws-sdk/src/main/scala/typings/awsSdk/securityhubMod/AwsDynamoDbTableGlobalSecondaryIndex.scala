@@ -2,56 +2,54 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableGlobalSecondaryIndex extends StObject {
   
   /**
     * Whether the index is currently backfilling.
     */
-  var Backfilling: js.UndefOr[Boolean] = js.native
+  var Backfilling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the index.
     */
-  var IndexArn: js.UndefOr[NonEmptyString] = js.native
+  var IndexArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the index.
     */
-  var IndexName: js.UndefOr[NonEmptyString] = js.native
+  var IndexName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The total size in bytes of the index.
     */
-  var IndexSizeBytes: js.UndefOr[SizeBytes] = js.native
+  var IndexSizeBytes: js.UndefOr[SizeBytes] = js.undefined
   
   /**
     * The current status of the index.
     */
-  var IndexStatus: js.UndefOr[NonEmptyString] = js.native
+  var IndexStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The number of items in the index.
     */
-  var ItemCount: js.UndefOr[Integer] = js.native
+  var ItemCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The key schema for the index.
     */
-  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.native
+  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.undefined
   
   /**
     * Attributes that are copied from the table into an index.
     */
-  var Projection: js.UndefOr[AwsDynamoDbTableProjection] = js.native
+  var Projection: js.UndefOr[AwsDynamoDbTableProjection] = js.undefined
   
   /**
     * Information about the provisioned throughput settings for the indexes.
     */
-  var ProvisionedThroughput: js.UndefOr[AwsDynamoDbTableProvisionedThroughput] = js.native
+  var ProvisionedThroughput: js.UndefOr[AwsDynamoDbTableProvisionedThroughput] = js.undefined
 }
 object AwsDynamoDbTableGlobalSecondaryIndex {
   

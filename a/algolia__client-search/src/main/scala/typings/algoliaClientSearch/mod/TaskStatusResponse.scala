@@ -2,22 +2,20 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskStatusResponse extends StObject {
   
   /**
     * If the operation is pending.
     */
-  var pendingTask: Boolean = js.native
+  var pendingTask: Boolean
   
   /**
     * The operation status. When the value is `published` the
     * operation is completed.
     */
-  var status: String = js.native
+  var status: String
 }
 object TaskStatusResponse {
   

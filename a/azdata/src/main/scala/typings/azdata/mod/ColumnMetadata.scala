@@ -2,56 +2,54 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMetadata extends StObject {
   
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /// <summary>
   /// Escaped identifier for the name of the column
   /// </summary>
-  var escapedName: String = js.native
+  var escapedName: String
   
-  var hasExtendedProperties: Boolean = js.native
+  var hasExtendedProperties: Boolean
   
   /// <summary>
   /// Whether or not the column is calculated on the server side. This could be a computed
   /// column or a identity column.
   /// </summary>
-  var isCalculated: Boolean = js.native
+  var isCalculated: Boolean
   
   /// <summary>
   /// Whether or not the column is computed
   /// </summary>
-  var isComputed: Boolean = js.native
+  var isComputed: Boolean
   
   /// <summary>
   /// Whether or not the column is deterministically computed
   /// </summary>
-  var isDeterministic: Boolean = js.native
+  var isDeterministic: Boolean
   
   /// <summary>
   /// Whether or not the column is an identity column
   /// </summary>
-  var isIdentity: Boolean = js.native
+  var isIdentity: Boolean
   
   /// <summary>
   /// Whether or not the column is used in a key to uniquely identify a row
   /// </summary>
-  var isKey: Boolean = js.native
+  var isKey: Boolean
   
   /// <summary>
   /// Whether or not the column can be trusted for uniqueness
   /// </summary>
-  var isTrustworthyForUniqueness: Boolean = js.native
+  var isTrustworthyForUniqueness: Boolean
   
   /// <summary>
   /// The ordinal ID of the column
   /// </summary>
-  var ordinal: Double = js.native
+  var ordinal: Double
 }
 object ColumnMetadata {
   

@@ -3,7 +3,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * associated with a list. A paragraph that is part of a list has an implicit
   * reference to that list&#39;s ID.
   */
-@js.native
 trait SchemaList extends StObject {
   
   /**
     * The ID of the list.
     */
-  var listId: js.UndefOr[String] = js.native
+  var listId: js.UndefOr[String] = js.undefined
   
   /**
     * A map of nesting levels to the properties of bullets at the associated
     * level. A list has at most nine levels of nesting, so the possible values
     * for the keys of this map are 0 through 8, inclusive.
     */
-  var nestingLevel: js.UndefOr[StringDictionary[SchemaNestingLevel]] = js.native
+  var nestingLevel: js.UndefOr[StringDictionary[SchemaNestingLevel]] = js.undefined
 }
 object SchemaList {
   

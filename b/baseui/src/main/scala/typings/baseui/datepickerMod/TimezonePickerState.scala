@@ -3,15 +3,13 @@ package typings.baseui.datepickerMod
 import typings.baseui.selectMod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimezonePickerState extends StObject {
   
-  var timezones: js.Array[Option] = js.native
+  var timezones: js.Array[Option]
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TimezonePickerState {
   

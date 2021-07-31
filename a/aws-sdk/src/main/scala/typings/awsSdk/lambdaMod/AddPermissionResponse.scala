@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddPermissionResponse extends StObject {
   
   /**
     * The permission statement that's added to the function policy.
     */
-  var Statement: js.UndefOr[String] = js.native
+  var Statement: js.UndefOr[String] = js.undefined
 }
 object AddPermissionResponse {
   

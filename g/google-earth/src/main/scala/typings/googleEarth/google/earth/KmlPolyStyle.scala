@@ -2,31 +2,31 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlPolyStyle extends KmlColorStyle {
+trait KmlPolyStyle
+  extends StObject
+     with KmlColorStyle {
   
   /**
     * Specifies whether or not to fill the polygon. Possible values 1 (fill) and 0 (no fill).
     */
-  def getFill(): Boolean = js.native
+  def getFill(): Boolean
   
   /**
     * Specifies whether to outline the polygon. Polygon outlines use the current KmlLineStyle.
     */
-  def getOutline(): Boolean = js.native
+  def getOutline(): Boolean
   
   /**
     * Specifies whether or not to fill the polygon. Possible values 1 (fill) and 0 (no fill).
     */
-  def setFill(fill: Boolean): Unit = js.native
+  def setFill(fill: Boolean): Unit
   
   /**
     * Specifies whether to outline the polygon. Polygon outlines use the current KmlLineStyle.
     */
-  def setOutline(outline: Boolean): Unit = js.native
+  def setOutline(outline: Boolean): Unit
 }
 object KmlPolyStyle {
   

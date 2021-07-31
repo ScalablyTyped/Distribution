@@ -6,23 +6,22 @@ import typings.syncRequest.optionsMod.Options
 import typings.thenRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
   
-  @JSImport("sync-request/lib/browser", JSImport.Default)
+  @JSImport("sync-request/lib/browser", JSImport.Namespace)
   @js.native
-  def default(method: HttpVerb, url: String): Response = js.native
-  @JSImport("sync-request/lib/browser", JSImport.Default)
-  @js.native
-  def default(method: HttpVerb, url: String, options: Options): Response = js.native
-  @JSImport("sync-request/lib/browser", JSImport.Default)
-  @js.native
-  def default(method: HttpVerb, url: URL_): Response = js.native
-  @JSImport("sync-request/lib/browser", JSImport.Default)
-  @js.native
-  def default(method: HttpVerb, url: URL_, options: Options): Response = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(method: HttpVerb, url: String): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
+  @scala.inline
+  def default(method: HttpVerb, url: String, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
+  @scala.inline
+  def default(method: HttpVerb, url: URL_): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Response]
+  @scala.inline
+  def default(method: HttpVerb, url: URL_, options: Options): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response]
   
   @JSImport("sync-request/lib/browser", "FormData")
   @js.native

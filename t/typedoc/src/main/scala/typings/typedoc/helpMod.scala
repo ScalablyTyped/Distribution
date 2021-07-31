@@ -3,23 +3,24 @@ package typings.typedoc
 import typings.typedoc.optionsOptionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpMod {
   
-  @JSImport("typedoc/dist/lib/utils/options/help", "getOptionsHelp")
+  @JSImport("typedoc/dist/lib/utils/options/help", JSImport.Namespace)
   @js.native
-  def getOptionsHelp(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOptionsHelp(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsHelp")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait ParameterHelp extends StObject {
     
-    var helps: js.Array[String] = js.native
+    var helps: js.Array[String]
     
-    var margin: Double = js.native
+    var margin: Double
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
   }
   object ParameterHelp {
     

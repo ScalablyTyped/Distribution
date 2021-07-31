@@ -2,13 +2,13 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MotionPullUpProps extends MotionProps {
+trait MotionPullUpProps
+  extends StObject
+     with MotionProps {
   
-  var dropHeight: js.UndefOr[Double] = js.native
+  var dropHeight: js.UndefOr[Double] = js.undefined
 }
 object MotionPullUpProps {
   

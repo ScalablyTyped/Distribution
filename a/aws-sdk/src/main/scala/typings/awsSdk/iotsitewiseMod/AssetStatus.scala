@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetStatus extends StObject {
   
   /**
     * Contains associated error information, if any.
     */
-  var error: js.UndefOr[ErrorDetails] = js.native
+  var error: js.UndefOr[ErrorDetails] = js.undefined
   
   /**
     * The current status of the asset.
     */
-  var state: AssetState = js.native
+  var state: AssetState
 }
 object AssetStatus {
   

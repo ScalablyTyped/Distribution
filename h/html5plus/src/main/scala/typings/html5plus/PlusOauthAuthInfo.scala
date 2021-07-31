@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
-@js.native
 trait PlusOauthAuthInfo extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusOauthAuthInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权访问令牌过期时间
@@ -30,7 +28,7 @@ trait PlusOauthAuthInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var expires_in: js.UndefOr[String] = js.native
+  var expires_in: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权用户的唯一标识
@@ -38,7 +36,7 @@ trait PlusOauthAuthInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var openid: js.UndefOr[String] = js.native
+  var openid: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权的更新令牌
@@ -46,7 +44,7 @@ trait PlusOauthAuthInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var refresh_token: js.UndefOr[String] = js.native
+  var refresh_token: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权的权限范围
@@ -54,7 +52,7 @@ trait PlusOauthAuthInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object PlusOauthAuthInfo {
   

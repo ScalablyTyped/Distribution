@@ -68,7 +68,6 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -1094,7 +1093,7 @@ trait BrowserWindow extends EventEmitter {
     * can not be focused on.
     */
   def setAlwaysOnTop(flag: Boolean): Unit = js.native
-  def setAlwaysOnTop(flag: Boolean, level: js.UndefOr[scala.Nothing], relativeLevel: Double): Unit = js.native
+  def setAlwaysOnTop(flag: Boolean, level: Unit, relativeLevel: Double): Unit = js.native
   @JSName("setAlwaysOnTop")
   def setAlwaysOnTop_floating(flag: Boolean, level: floating): Unit = js.native
   @JSName("setAlwaysOnTop")

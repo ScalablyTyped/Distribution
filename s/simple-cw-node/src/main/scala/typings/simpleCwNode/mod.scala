@@ -9,7 +9,6 @@ import typings.std.Error
 import typings.superagent.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,9 +17,12 @@ object mod {
   // TODO 2. create underscore.deffered .d.ts file
   // TODO 3. refactor & improve specialized parameter methods
   // Merged declaration, ChatWork is both a callable function and a namespace
+  @scala.inline
+  def apply(): ChatWork = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChatWork]
+  
   @JSImport("simple-cw-node", JSImport.Namespace)
   @js.native
-  def apply(): ChatWork = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait ChatWork extends StObject {
@@ -102,10 +104,9 @@ object mod {
     var when: js.Any = js.native
   }
   
-  @js.native
   trait ChatWorkInitOptions extends StObject {
     
-    var token: String = js.native
+    var token: String
   }
   object ChatWorkInitOptions {
     

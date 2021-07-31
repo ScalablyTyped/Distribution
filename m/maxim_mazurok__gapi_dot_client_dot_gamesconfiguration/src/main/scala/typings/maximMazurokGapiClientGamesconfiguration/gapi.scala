@@ -12,7 +12,6 @@ import typings.maximMazurokGapiClientGamesconfiguration.anon.LeaderboardId
 import typings.maximMazurokGapiClientGamesconfiguration.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -21,32 +20,31 @@ object gapi {
     
     object gamesconfiguration {
       
-      @js.native
       trait AchievementConfiguration extends StObject {
         
         /** The type of the achievement. */
-        var achievementType: js.UndefOr[String] = js.native
+        var achievementType: js.UndefOr[String] = js.undefined
         
         /** The draft data of the achievement. */
-        var draft: js.UndefOr[AchievementConfigurationDetail] = js.native
+        var draft: js.UndefOr[AchievementConfigurationDetail] = js.undefined
         
         /** The ID of the achievement. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** The initial state of the achievement. */
-        var initialState: js.UndefOr[String] = js.native
+        var initialState: js.UndefOr[String] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#achievementConfiguration`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The read-only published data of the achievement. */
-        var published: js.UndefOr[AchievementConfigurationDetail] = js.native
+        var published: js.UndefOr[AchievementConfigurationDetail] = js.undefined
         
         /** Steps to unlock. Only applicable to incremental achievements. */
-        var stepsToUnlock: js.UndefOr[Double] = js.native
+        var stepsToUnlock: js.UndefOr[Double] = js.undefined
         
         /** The token for this resource. */
-        var token: js.UndefOr[String] = js.native
+        var token: js.UndefOr[String] = js.undefined
       }
       object AchievementConfiguration {
         
@@ -109,26 +107,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait AchievementConfigurationDetail extends StObject {
         
         /** Localized strings for the achievement description. */
-        var description: js.UndefOr[LocalizedStringBundle] = js.native
+        var description: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** The icon url of this achievement. Writes to this field are ignored. */
-        var iconUrl: js.UndefOr[String] = js.native
+        var iconUrl: js.UndefOr[String] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#achievementConfigurationDetail`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Localized strings for the achievement name. */
-        var name: js.UndefOr[LocalizedStringBundle] = js.native
+        var name: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** Point value for the achievement. */
-        var pointValue: js.UndefOr[Double] = js.native
+        var pointValue: js.UndefOr[Double] = js.undefined
         
         /** The sort rank of this achievement. Writes to this field are ignored. */
-        var sortRank: js.UndefOr[Double] = js.native
+        var sortRank: js.UndefOr[Double] = js.undefined
       }
       object AchievementConfigurationDetail {
         
@@ -179,17 +176,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait AchievementConfigurationListResponse extends StObject {
         
         /** The achievement configurations. */
-        var items: js.UndefOr[js.Array[AchievementConfiguration]] = js.native
+        var items: js.UndefOr[js.Array[AchievementConfiguration]] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#achievementConfigurationListResponse`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The pagination token for the next page of results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object AchievementConfigurationListResponse {
         
@@ -249,29 +245,28 @@ object gapi {
         def update(request: AchievementId): Request[AchievementConfiguration] = js.native
       }
       
-      @js.native
       trait GamesNumberAffixConfiguration extends StObject {
         
         /** When the language requires special treatment of "small" numbers (as with 2, 3, and 4 in Czech; or numbers ending 2, 3, or 4 but not 12, 13, or 14 in Polish). */
-        var few: js.UndefOr[LocalizedStringBundle] = js.native
+        var few: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** When the language requires special treatment of "large" numbers (as with numbers ending 11-99 in Maltese). */
-        var many: js.UndefOr[LocalizedStringBundle] = js.native
+        var many: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /**
           * When the language requires special treatment of numbers like one (as with the number 1 in English and most other languages; in Russian, any number ending in 1 but not ending in 11
           * is in this class).
           */
-        var one: js.UndefOr[LocalizedStringBundle] = js.native
+        var one: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** When the language does not require special treatment of the given quantity (as with all numbers in Chinese, or 42 in English). */
-        var other: js.UndefOr[LocalizedStringBundle] = js.native
+        var other: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** When the language requires special treatment of numbers like two (as with 2 in Welsh, or 102 in Slovenian). */
-        var two: js.UndefOr[LocalizedStringBundle] = js.native
+        var two: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** When the language requires special treatment of the number 0 (as in Arabic). */
-        var zero: js.UndefOr[LocalizedStringBundle] = js.native
+        var zero: js.UndefOr[LocalizedStringBundle] = js.undefined
       }
       object GamesNumberAffixConfiguration {
         
@@ -322,20 +317,19 @@ object gapi {
         }
       }
       
-      @js.native
       trait GamesNumberFormatConfiguration extends StObject {
         
         /** The curreny code string. Only used for CURRENCY format type. */
-        var currencyCode: js.UndefOr[String] = js.native
+        var currencyCode: js.UndefOr[String] = js.undefined
         
         /** The number of decimal places for number. Only used for NUMERIC format type. */
-        var numDecimalPlaces: js.UndefOr[Double] = js.native
+        var numDecimalPlaces: js.UndefOr[Double] = js.undefined
         
         /** The formatting for the number. */
-        var numberFormatType: js.UndefOr[String] = js.native
+        var numberFormatType: js.UndefOr[String] = js.undefined
         
         /** An optional suffix for the NUMERIC format type. These strings follow the same plural rules as all Android string resources. */
-        var suffix: js.UndefOr[GamesNumberAffixConfiguration] = js.native
+        var suffix: js.UndefOr[GamesNumberAffixConfiguration] = js.undefined
       }
       object GamesNumberFormatConfiguration {
         
@@ -374,20 +368,19 @@ object gapi {
         }
       }
       
-      @js.native
       trait ImageConfiguration extends StObject {
         
         /** The image type for the image. */
-        var imageType: js.UndefOr[String] = js.native
+        var imageType: js.UndefOr[String] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#imageConfiguration`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The resource ID of resource which the image belongs to. */
-        var resourceId: js.UndefOr[String] = js.native
+        var resourceId: js.UndefOr[String] = js.undefined
         
         /** The url for this image. */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object ImageConfiguration {
         
@@ -434,31 +427,30 @@ object gapi {
         def upload(request: Fields): Request[ImageConfiguration] = js.native
       }
       
-      @js.native
       trait LeaderboardConfiguration extends StObject {
         
         /** The draft data of the leaderboard. */
-        var draft: js.UndefOr[LeaderboardConfigurationDetail] = js.native
+        var draft: js.UndefOr[LeaderboardConfigurationDetail] = js.undefined
         
         /** The ID of the leaderboard. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#leaderboardConfiguration`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The read-only published data of the leaderboard. */
-        var published: js.UndefOr[LeaderboardConfigurationDetail] = js.native
+        var published: js.UndefOr[LeaderboardConfigurationDetail] = js.undefined
         
         /** Maximum score that can be posted to this leaderboard. */
-        var scoreMax: js.UndefOr[String] = js.native
+        var scoreMax: js.UndefOr[String] = js.undefined
         
         /** Minimum score that can be posted to this leaderboard. */
-        var scoreMin: js.UndefOr[String] = js.native
+        var scoreMin: js.UndefOr[String] = js.undefined
         
-        var scoreOrder: js.UndefOr[String] = js.native
+        var scoreOrder: js.UndefOr[String] = js.undefined
         
         /** The token for this resource. */
-        var token: js.UndefOr[String] = js.native
+        var token: js.UndefOr[String] = js.undefined
       }
       object LeaderboardConfiguration {
         
@@ -521,23 +513,22 @@ object gapi {
         }
       }
       
-      @js.native
       trait LeaderboardConfigurationDetail extends StObject {
         
         /** The icon url of this leaderboard. Writes to this field are ignored. */
-        var iconUrl: js.UndefOr[String] = js.native
+        var iconUrl: js.UndefOr[String] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#leaderboardConfigurationDetail`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Localized strings for the leaderboard name. */
-        var name: js.UndefOr[LocalizedStringBundle] = js.native
+        var name: js.UndefOr[LocalizedStringBundle] = js.undefined
         
         /** The score formatting for the leaderboard. */
-        var scoreFormat: js.UndefOr[GamesNumberFormatConfiguration] = js.native
+        var scoreFormat: js.UndefOr[GamesNumberFormatConfiguration] = js.undefined
         
         /** The sort rank of this leaderboard. Writes to this field are ignored. */
-        var sortRank: js.UndefOr[Double] = js.native
+        var sortRank: js.UndefOr[Double] = js.undefined
       }
       object LeaderboardConfigurationDetail {
         
@@ -582,17 +573,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait LeaderboardConfigurationListResponse extends StObject {
         
         /** The leaderboard configurations. */
-        var items: js.UndefOr[js.Array[LeaderboardConfiguration]] = js.native
+        var items: js.UndefOr[js.Array[LeaderboardConfiguration]] = js.undefined
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#leaderboardConfigurationListResponse`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The pagination token for the next page of results. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object LeaderboardConfigurationListResponse {
         
@@ -652,17 +642,16 @@ object gapi {
         def update(request: LeaderboardId): Request[LeaderboardConfiguration] = js.native
       }
       
-      @js.native
       trait LocalizedString extends StObject {
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#localizedString`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The locale string. */
-        var locale: js.UndefOr[String] = js.native
+        var locale: js.UndefOr[String] = js.undefined
         
         /** The string value. */
-        var value: js.UndefOr[String] = js.native
+        var value: js.UndefOr[String] = js.undefined
       }
       object LocalizedString {
         
@@ -695,14 +684,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait LocalizedStringBundle extends StObject {
         
         /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#localizedStringBundle`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The locale strings. */
-        var translations: js.UndefOr[js.Array[LocalizedString]] = js.native
+        var translations: js.UndefOr[js.Array[LocalizedString]] = js.undefined
       }
       object LocalizedStringBundle {
         

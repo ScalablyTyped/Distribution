@@ -2,13 +2,11 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spread extends StObject {
   
-  var Spread: SpreadDescriptor = js.native
+  var Spread: SpreadDescriptor
 }
 object Spread {
   

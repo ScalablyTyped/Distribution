@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NegativeKeywordListBuilder[NegativeKeywordList] extends AdWordsBuilder[NegativeKeywordList] {
+trait NegativeKeywordListBuilder[NegativeKeywordList]
+  extends StObject
+     with AdWordsBuilder[NegativeKeywordList] {
   
-  def withName(name: String): NegativeKeywordListBuilder[NegativeKeywordList] = js.native
+  def withName(name: String): NegativeKeywordListBuilder[NegativeKeywordList]
 }
 object NegativeKeywordListBuilder {
   
@@ -22,7 +22,7 @@ object NegativeKeywordListBuilder {
   }
   
   @scala.inline
-  implicit class NegativeKeywordListBuilderMutableBuilder[Self <: NegativeKeywordListBuilder[_], NegativeKeywordList] (val x: Self with NegativeKeywordListBuilder[NegativeKeywordList]) extends AnyVal {
+  implicit class NegativeKeywordListBuilderMutableBuilder[Self <: NegativeKeywordListBuilder[?], NegativeKeywordList] (val x: Self & NegativeKeywordListBuilder[NegativeKeywordList]) extends AnyVal {
     
     @scala.inline
     def setWithName(value: String => NegativeKeywordListBuilder[NegativeKeywordList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))

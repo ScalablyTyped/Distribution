@@ -8,28 +8,29 @@ import typings.std.Intl.DateTimeFormat
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatDateTimePatternMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/DateTimeFormat/FormatDateTimePattern", "FormatDateTimePattern")
+  @JSImport("@formatjs/ecma402-abstract/lib/DateTimeFormat/FormatDateTimePattern", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def FormatDateTimePattern(
     dtf: DateTimeFormat,
     patternParts: js.Array[IntlDateTimeFormatPart],
     x: Double,
-    hasGetInternalSlotsLocaleDataGetDefaultTimeZoneTzData: FormatDateTimePatternImplDetails with ToLocalTimeImplDetails
-  ): js.Array[IntlDateTimeFormatPart] = js.native
+    hasGetInternalSlotsLocaleDataGetDefaultTimeZoneTzData: FormatDateTimePatternImplDetails & ToLocalTimeImplDetails
+  ): js.Array[IntlDateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatDateTimePattern")(dtf.asInstanceOf[js.Any], patternParts.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataGetDefaultTimeZoneTzData.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntlDateTimeFormatPart]]
   
-  @js.native
   trait FormatDateTimePatternImplDetails extends StObject {
     
-    def getDefaultTimeZone(): String = js.native
+    def getDefaultTimeZone(): String
     
-    def getInternalSlots(dtf: DateTimeFormat): IntlDateTimeFormatInternal = js.native
+    def getInternalSlots(dtf: DateTimeFormat): IntlDateTimeFormatInternal
     
-    var localeData: Record[String, DateTimeFormatLocaleInternalData] = js.native
+    var localeData: Record[String, DateTimeFormatLocaleInternalData]
   }
   object FormatDateTimePatternImplDetails {
     

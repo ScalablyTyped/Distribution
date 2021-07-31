@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceByResource extends StObject {
   
   /**
     * Indicates whether the AWS resource complies with all of the AWS Config rules that evaluated it.
     */
-  var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.native
+  var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.undefined
   
   /**
     * The ID of the AWS resource that was evaluated.
     */
-  var ResourceId: js.UndefOr[BaseResourceId] = js.native
+  var ResourceId: js.UndefOr[BaseResourceId] = js.undefined
   
   /**
     * The type of the AWS resource that was evaluated.
     */
-  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.native
+  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object ComplianceByResource {
   

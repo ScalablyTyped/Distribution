@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.StaticBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait StaticBlock_
-  extends BlockParent
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait StaticBlock_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Scopable {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
   @JSName("type")
-  var type_StaticBlock_ : StaticBlock = js.native
+  var type_StaticBlock_ : StaticBlock
 }
 object StaticBlock_ {
   
   @scala.inline
-  def apply(body: js.Array[Statement], `type`: StaticBlock): StaticBlock_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: js.Array[Statement]): StaticBlock_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("StaticBlock")
     __obj.asInstanceOf[StaticBlock_]
   }
   

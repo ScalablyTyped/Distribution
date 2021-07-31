@@ -2,36 +2,34 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SybaseSettings extends StObject {
   
   /**
     * Database name for the endpoint.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * Endpoint connection password.
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     * Endpoint TCP port.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Fully qualified domain name of the endpoint.
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     * Endpoint connection user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object SybaseSettings {
   

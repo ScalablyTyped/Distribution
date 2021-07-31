@@ -7,21 +7,19 @@ import typings.tizenTvWebapis.anon.EAP
 import typings.tizenTvWebapis.anon.GATEWAYCONNECTED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkManager extends StObject {
   
-  var NetworkActiveConnectionType: CELLULAR = js.native
+  var NetworkActiveConnectionType: CELLULAR
   
-  var NetworkIpMode: AUTO = js.native
+  var NetworkIpMode: AUTO
   
-  var NetworkState: GATEWAYCONNECTED = js.native
+  var NetworkState: GATEWAYCONNECTED
   
-  var NetworkWiFiEncryptionType: AES = js.native
+  var NetworkWiFiEncryptionType: AES
   
-  var NetworkWiFiSecurityMode: EAP = js.native
+  var NetworkWiFiSecurityMode: EAP
   
   /**
     * Registers an asynchronous event listener.
@@ -34,7 +32,7 @@ trait NetworkManager extends StObject {
     * @note Since plugin version 3.0, if an input parameter is not compatible with its expected type, TypeMismatchError is thrown instead of NotSupportedError.
     * @note Since plugin version 3.0, the NotSupportedError exception has been removed.
     */
-  def addNetworkStateChangeListener(listener: NetworkStateChangedCallback): Double = js.native
+  def addNetworkStateChangeListener(listener: NetworkStateChangedCallback): Double
   
   /**
     * Retrieves the DHCP option 60 vendor string currently used by Udhcp. Works only when the active connection type is wired.
@@ -46,7 +44,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def checkCurrentIpWith60Field(): String = js.native
+  def checkCurrentIpWith60Field(): String
   
   /**
     * Retrieves the TV's currently-active connection type.
@@ -56,7 +54,7 @@ trait NetworkManager extends StObject {
     * @privilegeLevel Public
     * @privilegeName http://developer.samsung.com/privilege/network.public
     */
-  def getActiveConnectionType(): NetworkActiveConnectionType = js.native
+  def getActiveConnectionType(): NetworkActiveConnectionType
   
   /**
     * Retrieves the DHCP option 60 vendor string. Works only when the active connection type is wired.
@@ -68,7 +66,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getCurrentDhcpOption60Field(): String = js.native
+  def getCurrentDhcpOption60Field(): String
   
   /**
     * Retrieves the TV's configured DNS address.
@@ -79,7 +77,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getDns(): String = js.native
+  def getDns(): String
   
   /**
     * Retrieves the TV's configured gateway address.
@@ -91,7 +89,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getGateway(): String = js.native
+  def getGateway(): String
   
   /**
     * Retrieves the TV's configured IP address.
@@ -105,7 +103,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getIp(): String = js.native
+  def getIp(): String
   
   /**
     * Retrieves the TV's IP configuration mode.
@@ -122,7 +120,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, the NotSupportedError exception has been removed.
     */
-  def getIpMode(): NetworkIpMode = js.native
+  def getIpMode(): NetworkIpMode
   
   /**
     * Retrieves the network device's MAC address.
@@ -133,7 +131,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getMac(): String = js.native
+  def getMac(): String
   
   /**
     * Retrieves the TV's configured secondary DNS address.
@@ -146,7 +144,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getSecondaryDns(): String = js.native
+  def getSecondaryDns(): String
   
   /**
     * Retrieves the TV's configured subnet mask address.
@@ -157,7 +155,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getSubnetMask(): String = js.native
+  def getSubnetMask(): String
   
   /**
     * Retrieves the TV's configured name when TV is connected to a network.
@@ -168,7 +166,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getTVName(): String = js.native
+  def getTVName(): String
   
   /**
     * Retrieves the TV network module version.
@@ -179,7 +177,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, the NotSupportedError exception has been removed.
     */
-  def getVersion(): String = js.native
+  def getVersion(): String
   
   /**
     * Retrieves the Wi-Fi encryption type. Works only when the active connection type is Wi-Fi.
@@ -196,7 +194,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getWiFiEncryptionType(): NetworkWiFiEncryptionType = js.native
+  def getWiFiEncryptionType(): NetworkWiFiEncryptionType
   
   /**
     * Retrieves the Wi-Fi security mode. Works only when the active connection type is Wi-Fi.
@@ -213,7 +211,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getWiFiSecurityMode(): NetworkWiFiSecurityMode = js.native
+  def getWiFiSecurityMode(): NetworkWiFiSecurityMode
   
   /**
     * Retrieves the Wi-Fi signal strength. Works only when the active connection type is Wi-Fi.
@@ -229,7 +227,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getWiFiSignalStrengthLevel(): Double = js.native
+  def getWiFiSignalStrengthLevel(): Double
   
   /**
     * Retrieves the Wi-Fi network SSID. Works only when the active connection type is Wi-Fi.
@@ -240,7 +238,7 @@ trait NetworkManager extends StObject {
     * @version 1.0
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def getWiFiSsid(): String = js.native
+  def getWiFiSsid(): String
   
   /**
     * Checks whether the TV is connected to a network gateway.
@@ -253,7 +251,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def isConnectedToGateway(): Boolean = js.native
+  def isConnectedToGateway(): Boolean
   
   /**
     * Sets the DHCP option 60 vendor string to the default value, "udhcpc1.21.1". Works only when the active connection type is wired. The vendor string is updated when Udhcpc is restarted or relaunched.
@@ -263,7 +261,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     */
-  def removeDhcpOption60Field(): Unit = js.native
+  def removeDhcpOption60Field(): Unit
   
   /**
     * Unregisters an asynchronous event listener.
@@ -274,7 +272,7 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     * @note Since plugin version 3.0, if the listenerId value is not the same as the value generated by addNetworkStateChangeListener, InvalidValuesError is thrown instead of NotSupportedError.
     */
-  def removeNetworkStateChangeListener(listenerId: Double): Unit = js.native
+  def removeNetworkStateChangeListener(listenerId: Double): Unit
   
   /**
     * Sets the DHCP option 60 vendor string. Works only when the active connection type is wired. The vendor string is updated when Udhcpc is restarted or relaunched.
@@ -286,7 +284,7 @@ trait NetworkManager extends StObject {
     * @note Since plugin version 3.0, if a network connection is not available, InvalidStateError is thrown instead of NotSupportedError.
     * @note Since plugin version 3.0, if an input parameter is not compatible with its expected type, TypeMismatchError is thrown instead of NotSupportedError.
     */
-  def setDhcpOption60Field(vendorName: String): Unit = js.native
+  def setDhcpOption60Field(vendorName: String): Unit
 }
 object NetworkManager {
   

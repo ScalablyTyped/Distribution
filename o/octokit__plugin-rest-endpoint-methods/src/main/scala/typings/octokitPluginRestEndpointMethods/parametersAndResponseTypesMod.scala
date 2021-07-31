@@ -28,65 +28,63 @@ import typings.octokitPluginRestEndpointMethods.anon.ListAlertsForRepo
 import typings.octokitPluginRestEndpointMethods.anon.RenderRaw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parametersAndResponseTypesMod {
   
-  @js.native
   trait RestEndpointMethodTypes extends StObject {
     
-    var actions: CancelWorkflowRun = js.native
+    var actions: CancelWorkflowRun
     
-    var activity: DeleteRepoSubscription = js.native
+    var activity: DeleteRepoSubscription
     
-    var apps: CheckToken = js.native
+    var apps: CheckToken
     
-    var billing: GetGithubActionsBillingUser = js.native
+    var billing: GetGithubActionsBillingUser
     
-    var checks: CreateSuite = js.native
+    var checks: CreateSuite
     
-    var codeScanning: ListAlertsForRepo = js.native
+    var codeScanning: ListAlertsForRepo
     
-    var codesOfConduct: GetConductCode = js.native
+    var codesOfConduct: GetConductCode
     
-    var emojis: Get676 = js.native
+    var emojis: Get676
     
-    var gists: CreateComment = js.native
+    var gists: CreateComment
     
-    var git: CreateCommit = js.native
+    var git: CreateCommit
     
-    var gitignore: GetTemplate = js.native
+    var gitignore: GetTemplate
     
-    var interactions: GetRestrictionsForRepo = js.native
+    var interactions: GetRestrictionsForRepo
     
-    var issues: AddLabels = js.native
+    var issues: AddLabels
     
-    var licenses: GetForRepo = js.native
+    var licenses: GetForRepo
     
-    var markdown: RenderRaw = js.native
+    var markdown: RenderRaw
     
-    var meta: Get762 = js.native
+    var meta: Get762
     
-    var migrations: DeleteArchiveForAuthenticatedUser = js.native
+    var migrations: DeleteArchiveForAuthenticatedUser
     
-    var orgs: CheckBlockedUser = js.native
+    var orgs: CheckBlockedUser
     
-    var projects: CreateCard = js.native
+    var projects: CreateCard
     
-    var pulls: CreateReplyForReviewComment = js.native
+    var pulls: CreateReplyForReviewComment
     
-    var rateLimit: Get872 = js.native
+    var rateLimit: Get872
     
-    var reactions: CreateForIssue = js.native
+    var reactions: CreateForIssue
     
-    var repos: AddAppAccessRestrictions = js.native
+    var repos: AddAppAccessRestrictions
     
-    var search: Commits = js.native
+    var search: Commits
     
-    var teams: AddOrUpdateProjectPermissionsInOrg = js.native
+    var teams: AddOrUpdateProjectPermissionsInOrg
     
-    var users: Block = js.native
+    var users: Block
   }
   object RestEndpointMethodTypes {
     

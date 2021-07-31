@@ -3,25 +3,24 @@ package typings.jose.mod
 import typings.jose.joseStrings.oct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JWKOctKey
-  extends _ProduceKeyInput
+  extends StObject
      with BasicParameters
-     with JSONWebKey {
+     with JSONWebKey
+     with _ProduceKeyInput {
   
-  var k: js.UndefOr[String] = js.native
+  var k: js.UndefOr[String] = js.undefined
   
   // no x5c
-  var kty: oct = js.native
+  var kty: oct
 }
 object JWKOctKey {
   
   @scala.inline
-  def apply(kty: oct): JWKOctKey = {
-    val __obj = js.Dynamic.literal(kty = kty.asInstanceOf[js.Any])
+  def apply(): JWKOctKey = {
+    val __obj = js.Dynamic.literal(kty = "oct")
     __obj.asInstanceOf[JWKOctKey]
   }
   

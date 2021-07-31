@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAchievementsIncrement extends StandardParameters {
+trait ParamsResourceAchievementsIncrement
+  extends StObject
+     with StandardParameters {
   
   /**
     * The ID of the achievement used by this method.
     */
-  var achievementId: js.UndefOr[String] = js.native
+  var achievementId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A randomly generated numeric ID for each request specified by the caller.
     * This number is used at the server to ensure that the request is handled
     * correctly across retries.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of steps to increment.
     */
-  var stepsToIncrement: js.UndefOr[Double] = js.native
+  var stepsToIncrement: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceAchievementsIncrement {
   

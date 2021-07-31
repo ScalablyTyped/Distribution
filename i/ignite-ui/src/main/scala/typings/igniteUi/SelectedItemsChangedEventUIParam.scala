@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectedItemsChangedEventUIParam extends StObject {
   
   /**
     * Used to get a reference to the current selected data items.
     */
-  var newItems: js.UndefOr[js.Any] = js.native
+  var newItems: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get a reference to the previous selected data items.
     */
-  var oldItems: js.UndefOr[js.Any] = js.native
+  var oldItems: js.UndefOr[js.Any] = js.undefined
 }
 object SelectedItemsChangedEventUIParam {
   

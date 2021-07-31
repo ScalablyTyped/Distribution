@@ -3,21 +3,19 @@ package typings.gatsbyCli.anon
 import typings.gatsbyCli.errorMapMod.ErrorCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoryDocsUrl extends StObject {
   
-  var category: ErrorCategory = js.native
+  var category: ErrorCategory
   
-  var docsUrl: String = js.native
+  var docsUrl: String
   
-  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level = js.native
+  var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(context: js.Any): String = js.native
+  def text(context: js.Any): String
   
-  var `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type = js.native
+  var `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
 }
 object CategoryDocsUrl {
   

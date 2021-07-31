@@ -2,18 +2,16 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 设备服务列表 */
-@js.native
 trait BLECharacteristic extends StObject {
   
   /** 该特征值支持的操作类型 */
-  var properties: Properties = js.native
+  var properties: Properties
   
   /** 蓝牙设备特征值的 uuid */
-  var uuid: String = js.native
+  var uuid: String
 }
 object BLECharacteristic {
   

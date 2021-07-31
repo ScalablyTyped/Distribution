@@ -3,17 +3,15 @@ package typings.dynogels.mod
 import typings.dynogels.anon.StreamEnabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTablesOptions extends StObject {
   
-  var readCapacity: js.UndefOr[Double] = js.native
+  var readCapacity: js.UndefOr[Double] = js.undefined
   
-  var streamSpecification: js.UndefOr[StreamEnabled] = js.native
+  var streamSpecification: js.UndefOr[StreamEnabled] = js.undefined
   
-  var writeCapacity: js.UndefOr[Double] = js.native
+  var writeCapacity: js.UndefOr[Double] = js.undefined
 }
 object CreateTablesOptions {
   

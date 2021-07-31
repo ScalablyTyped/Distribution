@@ -4,25 +4,23 @@ import typings.polished.polishedStrings.BackslashPlussign
 import typings.polished.polishedStrings.Plussign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prefix extends StObject {
   
-  var infix: RightToLeft = js.native
+  var infix: RightToLeft
   
-  var prefix: ArgCountF = js.native
+  var prefix: ArgCountF
   
-  var regSymbol: BackslashPlussign = js.native
+  var regSymbol: BackslashPlussign
   
-  var symbol: Plussign = js.native
+  var symbol: Plussign
 }
 object Prefix {
   
   @scala.inline
-  def apply(infix: RightToLeft, prefix: ArgCountF, regSymbol: BackslashPlussign, symbol: Plussign): Prefix = {
-    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(infix: RightToLeft, prefix: ArgCountF): Prefix = {
+    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = "\\+", symbol = "+")
     __obj.asInstanceOf[Prefix]
   }
   

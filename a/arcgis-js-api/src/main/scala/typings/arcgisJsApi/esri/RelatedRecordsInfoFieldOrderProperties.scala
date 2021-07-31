@@ -4,10 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedRecordsInfoFieldOrderProperties extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait RelatedRecordsInfoFieldOrderProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#field)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Set the ascending or descending sort order of the returned related records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#order)
     */
-  var order: js.UndefOr[asc_ | desc_] = js.native
+  var order: js.UndefOr[asc_ | desc_] = js.undefined
 }
 object RelatedRecordsInfoFieldOrderProperties {
   

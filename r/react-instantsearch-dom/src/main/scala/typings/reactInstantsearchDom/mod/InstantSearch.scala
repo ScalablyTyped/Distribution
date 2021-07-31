@@ -4,7 +4,6 @@ import typings.reactInstantsearchCore.mod.InstantSearchProps
 import typings.reactInstantsearchDom.anon.ReadonlyInstantSearchProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-instantsearch-dom", "InstantSearch")

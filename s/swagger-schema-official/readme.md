@@ -11,8 +11,8 @@ Swagger JSON Schema
 | Full name          | swagger-schema-official |
 | Keywords           | swagger, schema, api |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 16826380 |
+| # dependents       | 53 |
+| # downloads        | 17594421 |
 | # stars            | 0 |
 
 ## Links

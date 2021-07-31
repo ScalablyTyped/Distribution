@@ -3,52 +3,50 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/SpinButton/SpinButton.types.ISpinButtonStyles> */
-@js.native
 trait PartialISpinButtonStyles extends StObject {
   
-  var arrowButtonsContainer: js.UndefOr[IStyle] = js.native
+  var arrowButtonsContainer: js.UndefOr[IStyle] = js.undefined
   
-  var arrowButtonsContainerDisabled: js.UndefOr[IStyle] = js.native
+  var arrowButtonsContainerDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var icon: js.UndefOr[IStyle] = js.native
+  var icon: js.UndefOr[IStyle] = js.undefined
   
-  var iconDisabled: js.UndefOr[IStyle] = js.native
+  var iconDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var input: js.UndefOr[IStyle] = js.native
+  var input: js.UndefOr[IStyle] = js.undefined
   
-  var inputDisabled: js.UndefOr[IStyle] = js.native
+  var inputDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var inputTextSelected: js.UndefOr[IStyle] = js.native
+  var inputTextSelected: js.UndefOr[IStyle] = js.undefined
   
-  var label: js.UndefOr[IStyle] = js.native
+  var label: js.UndefOr[IStyle] = js.undefined
   
-  var labelDisabled: js.UndefOr[IStyle] = js.native
+  var labelDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var labelWrapper: js.UndefOr[IStyle] = js.native
+  var labelWrapper: js.UndefOr[IStyle] = js.undefined
   
-  var labelWrapperBottom: js.UndefOr[IStyle] = js.native
+  var labelWrapperBottom: js.UndefOr[IStyle] = js.undefined
   
-  var labelWrapperEnd: js.UndefOr[IStyle] = js.native
+  var labelWrapperEnd: js.UndefOr[IStyle] = js.undefined
   
-  var labelWrapperStart: js.UndefOr[IStyle] = js.native
+  var labelWrapperStart: js.UndefOr[IStyle] = js.undefined
   
-  var labelWrapperTop: js.UndefOr[IStyle] = js.native
+  var labelWrapperTop: js.UndefOr[IStyle] = js.undefined
   
-  var root: js.UndefOr[IStyle] = js.native
+  var root: js.UndefOr[IStyle] = js.undefined
   
-  var spinButtonWrapper: js.UndefOr[IStyle] = js.native
+  var spinButtonWrapper: js.UndefOr[IStyle] = js.undefined
   
-  var spinButtonWrapperDisabled: js.UndefOr[IStyle] = js.native
+  var spinButtonWrapperDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var spinButtonWrapperFocused: js.UndefOr[IStyle] = js.native
+  var spinButtonWrapperFocused: js.UndefOr[IStyle] = js.undefined
   
-  var spinButtonWrapperHovered: js.UndefOr[IStyle] = js.native
+  var spinButtonWrapperHovered: js.UndefOr[IStyle] = js.undefined
   
-  var spinButtonWrapperTopBottom: js.UndefOr[IStyle] = js.native
+  var spinButtonWrapperTopBottom: js.UndefOr[IStyle] = js.undefined
 }
 object PartialISpinButtonStyles {
   

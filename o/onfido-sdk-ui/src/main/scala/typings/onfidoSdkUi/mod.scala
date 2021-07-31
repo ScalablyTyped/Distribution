@@ -5,31 +5,32 @@ import typings.onfidoSdkUi.anon.Options
 import typings.onfidoSdkUi.anon.Variant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("onfido-sdk-ui", "init")
+  @JSImport("onfido-sdk-ui", JSImport.Namespace)
   @js.native
-  def init(e: js.Any): OnfidoHandle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def init(e: js.Any): OnfidoHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(e.asInstanceOf[js.Any]).asInstanceOf[OnfidoHandle]
+  
   trait OnfidoConfig extends StObject {
     
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
-    var isModalOpen: js.UndefOr[Boolean] = js.native
+    var isModalOpen: js.UndefOr[Boolean] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* data */ OnfidoResponse, Null]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* data */ OnfidoResponse, Null]] = js.undefined
     
-    var onModalRequestClose: js.UndefOr[js.Function0[Null]] = js.native
+    var onModalRequestClose: js.UndefOr[js.Function0[Null]] = js.undefined
     
-    var steps: js.UndefOr[js.Array[String | Options]] = js.native
+    var steps: js.UndefOr[js.Array[String | Options]] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var useModal: js.UndefOr[Boolean] = js.native
+    var useModal: js.UndefOr[Boolean] = js.undefined
   }
   object OnfidoConfig {
     
@@ -89,12 +90,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnfidoHandle extends StObject {
     
-    def setOptions(opts: OnfidoConfig): Null = js.native
+    def setOptions(opts: OnfidoConfig): Null
     
-    def tearDown(): Null = js.native
+    def tearDown(): Null
   }
   object OnfidoHandle {
     
@@ -115,12 +115,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OnfidoResponse extends StObject {
     
-    var document_front: Id = js.native
+    var document_front: Id
     
-    var face: Variant = js.native
+    var face: Variant
   }
   object OnfidoResponse {
     

@@ -8,18 +8,18 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/proxies", "IonReorderGroup")
 @js.native
 class IonReorderGroup protected ()
-  extends typings.ionicCore.componentsMod.Components.IonReorderGroup {
-  def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+  extends StObject
+     with typings.ionicCore.componentsMod.Components.IonReorderGroup {
+  def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
   var el: HTMLElement = js.native
   
-  var ionItemReorder: EventEmitter[CustomEvent[_]] = js.native
+  var ionItemReorder: EventEmitter[CustomEvent[js.Any]] = js.native
   
   var z: NgZone = js.native
 }

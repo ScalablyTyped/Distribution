@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailurePolicy extends StObject {
   
   /** If specified, then the function will be retried in case of a failure. */
-  var retry: js.UndefOr[js.Any] = js.native
+  var retry: js.UndefOr[js.Any] = js.undefined
 }
 object FailurePolicy {
   

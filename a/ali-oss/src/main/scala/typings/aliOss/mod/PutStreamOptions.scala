@@ -2,26 +2,24 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutStreamOptions extends StObject {
   
-  var callback: ObjectCallback = js.native
+  var callback: ObjectCallback
   
-  var contentLength: js.UndefOr[Double] = js.native
+  var contentLength: js.UndefOr[Double] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   // custom mime, will send with Content-Type entity header
-  var meta: UserMeta = js.native
+  var meta: UserMeta
   
   // the operation timeout
-  var mime: String = js.native
+  var mime: String
   
   // the stream length, chunked encoding will be used if absent
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object PutStreamOptions {
   

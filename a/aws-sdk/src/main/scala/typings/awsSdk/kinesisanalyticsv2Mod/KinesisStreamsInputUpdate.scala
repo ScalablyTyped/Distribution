@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisStreamsInputUpdate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the input Kinesis data stream to read.
     */
-  var ResourceARNUpdate: ResourceARN = js.native
+  var ResourceARNUpdate: ResourceARN
 }
 object KinesisStreamsInputUpdate {
   

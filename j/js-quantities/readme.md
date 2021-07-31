@@ -12,7 +12,7 @@ JavaScript library for quantity calculation and unit conversion
 | Keywords           | conversion, convert, imperial, measure, measurement, metric, parse, parser, physical, quantity, quantities, temperature, unit, units |
 | # releases         | 4 |
 | # dependents       | 23 |
-| # downloads        | 469382 |
+| # downloads        | 481110 |
 | # stars            | 1 |
 
 ## Links

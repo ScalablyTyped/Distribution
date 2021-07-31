@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbedViewMod {
@@ -36,16 +35,15 @@ object tabbedViewMod {
     def this(props: TabbedViewProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabProps extends StObject {
     
-    var badge: js.UndefOr[ReactNode] = js.native
+    var badge: js.UndefOr[ReactNode] = js.undefined
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object TabProps {
     
@@ -84,20 +82,19 @@ object tabbedViewMod {
     }
   }
   
-  @js.native
   trait TabbedViewProps extends StObject {
     
-    var activeTab: js.UndefOr[String] = js.native
+    var activeTab: js.UndefOr[String] = js.undefined
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary] = js.native
+    var skin: js.UndefOr[neutral | primary] = js.undefined
     
-    var theme: js.UndefOr[ComponentsSpacing] = js.native
+    var theme: js.UndefOr[ComponentsSpacing] = js.undefined
   }
   object TabbedViewProps {
     

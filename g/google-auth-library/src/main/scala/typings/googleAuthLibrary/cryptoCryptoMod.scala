@@ -3,18 +3,19 @@ package typings.googleAuthLibrary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoCryptoMod {
   
-  @JSImport("google-auth-library/build/src/crypto/crypto", "createCrypto")
+  @JSImport("google-auth-library/build/src/crypto/crypto", JSImport.Namespace)
   @js.native
-  def createCrypto(): Crypto = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("google-auth-library/build/src/crypto/crypto", "hasBrowserCrypto")
-  @js.native
-  def hasBrowserCrypto(): Boolean = js.native
+  @scala.inline
+  def createCrypto(): Crypto = ^.asInstanceOf[js.Dynamic].applyDynamic("createCrypto")().asInstanceOf[Crypto]
+  
+  @scala.inline
+  def hasBrowserCrypto(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBrowserCrypto")().asInstanceOf[Boolean]
   
   @js.native
   trait Crypto extends StObject {
@@ -38,12 +39,11 @@ object cryptoCryptoMod {
     def verify(pubkey: JwkCertificate, data: Buffer, signature: String): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait CryptoSigner extends StObject {
     
-    def sign(key: String, outputFormat: String): String = js.native
+    def sign(key: String, outputFormat: String): String
     
-    def update(data: String): Unit = js.native
+    def update(data: String): Unit
   }
   object CryptoSigner {
     
@@ -64,20 +64,19 @@ object cryptoCryptoMod {
     }
   }
   
-  @js.native
   trait JwkCertificate extends StObject {
     
-    var alg: String = js.native
+    var alg: String
     
-    var e: String = js.native
+    var e: String
     
-    var kid: String = js.native
+    var kid: String
     
-    var kty: String = js.native
+    var kty: String
     
-    var n: String = js.native
+    var n: String
     
-    var use: js.UndefOr[String] = js.native
+    var use: js.UndefOr[String] = js.undefined
   }
   object JwkCertificate {
     

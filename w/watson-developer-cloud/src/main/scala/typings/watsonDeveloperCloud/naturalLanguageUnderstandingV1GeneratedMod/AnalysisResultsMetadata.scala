@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Webpage metadata, such as the author and the title of the page. */
-@js.native
 trait AnalysisResultsMetadata extends StObject {
   
   /** The authors of the document. */
-  var authors: js.UndefOr[js.Array[Author]] = js.native
+  var authors: js.UndefOr[js.Array[Author]] = js.undefined
   
   /** RSS/ATOM feeds found on the webpage. */
-  var feeds: js.UndefOr[js.Array[Feed]] = js.native
+  var feeds: js.UndefOr[js.Array[Feed]] = js.undefined
   
   /** URL of a prominent image on the webpage. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** The publication date in the format ISO 8601. */
-  var publication_date: js.UndefOr[String] = js.native
+  var publication_date: js.UndefOr[String] = js.undefined
   
   /** The title of the document. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AnalysisResultsMetadata {
   

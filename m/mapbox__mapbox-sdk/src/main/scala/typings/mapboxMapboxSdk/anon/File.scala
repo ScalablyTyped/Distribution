@@ -4,19 +4,17 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var file: Blob | ArrayBuffer | String = js.native
+  var file: Blob | ArrayBuffer | String
   
-  var iconId: String = js.native
+  var iconId: String
   
-  var ownerId: js.UndefOr[String] = js.native
+  var ownerId: js.UndefOr[String] = js.undefined
   
-  var styleId: String = js.native
+  var styleId: String
 }
 object File {
   

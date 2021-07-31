@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverUploadId extends StObject {
   
-  var broadcastId: String = js.native
+  var broadcastId: String
   
-  var coverUploadId: String = js.native
+  var coverUploadId: String
   
-  var description: String = js.native
+  var description: String
   
-  var igtvSharePreviewToFeed: js.UndefOr[Boolean] = js.native
+  var igtvSharePreviewToFeed: js.UndefOr[Boolean] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object CoverUploadId {
   

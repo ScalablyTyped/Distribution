@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object AllJoynTrafficType extends StObject {
   
   /** Message traffic. */
   @js.native
-  sealed trait messages extends AllJoynTrafficType
+  sealed trait messages
+    extends StObject
+       with AllJoynTrafficType
   
   /** Session carries a reliable byte stream. */
   @js.native
-  sealed trait rawReliable extends AllJoynTrafficType
+  sealed trait rawReliable
+    extends StObject
+       with AllJoynTrafficType
   
   /** Unreliable (lossy) byte stream. */
   @js.native
-  sealed trait rawUnreliable extends AllJoynTrafficType
+  sealed trait rawUnreliable
+    extends StObject
+       with AllJoynTrafficType
   
   /** Traffic type currently unknown. */
   @js.native
-  sealed trait unknown extends AllJoynTrafficType
+  sealed trait unknown
+    extends StObject
+       with AllJoynTrafficType
 }

@@ -5,17 +5,15 @@ import typings.three.webGLStateMod.WebGLDepthBuffer
 import typings.three.webGLStateMod.WebGLStencilBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stencil extends StObject {
   
-  var color: WebGLColorBuffer = js.native
+  var color: WebGLColorBuffer
   
-  var depth: WebGLDepthBuffer = js.native
+  var depth: WebGLDepthBuffer
   
-  var stencil: WebGLStencilBuffer = js.native
+  var stencil: WebGLStencilBuffer
 }
 object Stencil {
   

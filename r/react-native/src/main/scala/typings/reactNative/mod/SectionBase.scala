@@ -4,21 +4,19 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionBase[ItemT, SectionT] extends StObject {
   
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
   
-  var data: js.Array[ItemT] = js.native
+  var data: js.Array[ItemT]
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.native
+  var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.undefined
   
-  var renderItem: js.UndefOr[SectionListRenderItem[ItemT, SectionT]] = js.native
+  var renderItem: js.UndefOr[SectionListRenderItem[ItemT, SectionT]] = js.undefined
 }
 object SectionBase {
   
@@ -29,7 +27,7 @@ object SectionBase {
   }
   
   @scala.inline
-  implicit class SectionBaseMutableBuilder[Self <: SectionBase[_, _], ItemT, SectionT] (val x: Self with (SectionBase[ItemT, SectionT])) extends AnyVal {
+  implicit class SectionBaseMutableBuilder[Self <: SectionBase[?, ?], ItemT, SectionT] (val x: Self & (SectionBase[ItemT, SectionT])) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -38,7 +36,7 @@ object SectionBase {
     def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)

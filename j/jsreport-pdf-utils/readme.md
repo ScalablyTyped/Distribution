@@ -10,9 +10,9 @@ jsreport extension providing pdf operations like merge or concatenation
 | ------------------ | :-------------: |
 | Full name          | jsreport-pdf-utils |
 | Keywords           | jsreport, pdf |
-| # releases         | 15 |
-| # dependents       | 4 |
-| # downloads        | 106612 |
+| # releases         | 13 |
+| # dependents       | 5 |
+| # downloads        | 128357 |
 | # stars            | 0 |
 
 ## Links

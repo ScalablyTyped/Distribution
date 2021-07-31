@@ -2,17 +2,15 @@ package typings.winrt.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISetVersionRequest extends StObject {
   
-  var currentVersion: Double = js.native
+  var currentVersion: Double
   
-  var desiredVersion: Double = js.native
+  var desiredVersion: Double
   
-  def getDeferral(): SetVersionDeferral = js.native
+  def getDeferral(): SetVersionDeferral
 }
 object ISetVersionRequest {
   

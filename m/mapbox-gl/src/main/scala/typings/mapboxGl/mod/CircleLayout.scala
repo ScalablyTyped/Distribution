@@ -2,15 +2,14 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleLayout
-  extends Layout
+  extends StObject
+     with Layout
      with _AnyLayout {
   
-  var `circle-sort-key`: js.UndefOr[Double | Expression] = js.native
+  var `circle-sort-key`: js.UndefOr[Double | Expression] = js.undefined
 }
 object CircleLayout {
   

@@ -3,23 +3,21 @@ package typings.googleapis.computeV1Mod.computeV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupsScopedList extends StObject {
   
   /**
     * [Output Only] The list of instance groups that are contained in this
     * scope.
     */
-  var instanceGroups: js.UndefOr[js.Array[SchemaInstanceGroup]] = js.native
+  var instanceGroups: js.UndefOr[js.Array[SchemaInstanceGroup]] = js.undefined
   
   /**
     * [Output Only] An informational warning that replaces the list of instance
     * groups when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaInstanceGroupsScopedList {
   

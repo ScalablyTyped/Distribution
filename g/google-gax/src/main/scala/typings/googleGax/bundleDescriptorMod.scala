@@ -1,16 +1,19 @@
 package typings.googleGax
 
+import typings.googleGax.apiCallerMod.APICaller
 import typings.googleGax.descriptorMod.Descriptor
+import typings.googleGax.gaxMod.CallSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bundleDescriptorMod {
   
   @JSImport("google-gax/build/src/bundlingCalls/bundleDescriptor", "BundleDescriptor")
   @js.native
-  class BundleDescriptor protected () extends Descriptor {
+  class BundleDescriptor protected ()
+    extends StObject
+       with Descriptor {
     /**
       * Describes the structure of bundled call.
       *
@@ -54,6 +57,9 @@ object bundleDescriptorMod {
     var bundledField: String = js.native
     
     var byteLengthFunction: js.Function = js.native
+    
+    /* CompleteClass */
+    override def getApiCaller(settings: CallSettings): APICaller = js.native
     
     var requestDiscriminatorFields: js.Array[String] = js.native
     

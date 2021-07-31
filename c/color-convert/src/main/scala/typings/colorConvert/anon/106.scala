@@ -4,13 +4,26 @@ import typings.colorConvert.conversionsMod.HSV_
 import typings.colorConvert.conversionsMod.LCH_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `106` extends StObject {
   
-  def raw(from: LCH_): HSV_ = js.native
+  def raw(from: LCH_): HSV_
   @JSName("raw")
-  var raw_Original: js.Function1[/* from */ LCH_, HSV_] = js.native
+  var raw_Original: js.Function1[/* from */ LCH_, HSV_]
+}
+object `106` {
+  
+  @scala.inline
+  def apply(raw: /* from */ LCH_ => HSV_): `106` = {
+    val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
+    __obj.asInstanceOf[`106`]
+  }
+  
+  @scala.inline
+  implicit class `106MutableBuilder`[Self <: `106`] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRaw(value: /* from */ LCH_ => HSV_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+  }
 }

@@ -3,45 +3,43 @@ package typings.hystrixjs.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBuilderA6[R, T, U, V, W, X, Y] extends StObject {
   
-  def build(): CommandA6[R, T, U, V, W, X, Y] = js.native
+  def build(): CommandA6[R, T, U, V, W, X, Y]
   
-  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def circuitBreakerErrorThresholdPercentage(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def circuitBreakerForceClosed(value: Boolean): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def circuitBreakerForceOpened(value: Boolean): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def circuitBreakerRequestVolumeThreshold(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def context(value: js.Any): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def context(value: js.Any): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]]): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def percentileWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def percentileWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def percentileWindowNumberOfBuckets(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def requestVolumeRejectionThreshold(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
   def run(
     value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]]
-  ): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  ): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def statisticalWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def statisticalWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def statisticalWindowNumberOfBuckets(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def timeout(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y] = js.native
+  def timeout(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
 }
 object CommandBuilderA6 {
   
@@ -69,7 +67,7 @@ object CommandBuilderA6 {
   }
   
   @scala.inline
-  implicit class CommandBuilderA6MutableBuilder[Self <: CommandBuilderA6[_, _, _, _, _, _, _], R, T, U, V, W, X, Y] (val x: Self with (CommandBuilderA6[R, T, U, V, W, X, Y])) extends AnyVal {
+  implicit class CommandBuilderA6MutableBuilder[Self <: CommandBuilderA6[?, ?, ?, ?, ?, ?, ?], R, T, U, V, W, X, Y] (val x: Self & (CommandBuilderA6[R, T, U, V, W, X, Y])) extends AnyVal {
     
     @scala.inline
     def setBuild(value: () => CommandA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))

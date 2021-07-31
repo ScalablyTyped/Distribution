@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisVideoStreamConfig extends StObject {
   
   /**
     * The encryption configuration.
     */
-  var EncryptionConfig: typings.awsSdk.connectMod.EncryptionConfig = js.native
+  var EncryptionConfig: typings.awsSdk.connectMod.EncryptionConfig
   
   /**
     * The prefix of the video stream.
     */
-  var Prefix: typings.awsSdk.connectMod.Prefix = js.native
+  var Prefix: typings.awsSdk.connectMod.Prefix
   
   /**
     * The number of hours data is retained in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data.
     */
-  var RetentionPeriodHours: Hours = js.native
+  var RetentionPeriodHours: Hours
 }
 object KinesisVideoStreamConfig {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.TeamsCheckPermissionsForRepoLegacyRespo
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsCheckPermissionsForRepoLegacyEndpoint extends StObject {
   
-  var parameters: TeamsCheckPermissionsForRepoLegacyEndpoint = js.native
+  var parameters: TeamsCheckPermissionsForRepoLegacyEndpoint
   
-  var request: TeamsCheckPermissionsForRepoLegacyRequestOptions = js.native
+  var request: TeamsCheckPermissionsForRepoLegacyRequestOptions
   
-  var response: OctokitResponse[TeamsCheckPermissionsForRepoLegacyResponseData] = js.native
+  var response: OctokitResponse[TeamsCheckPermissionsForRepoLegacyResponseData]
 }
 object ParametersTeamsCheckPermissionsForRepoLegacyEndpoint {
   

@@ -2,28 +2,26 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anchor extends StObject {
   
   /**
     * When called, the `'change'` event listener is removed.
     **/
-  def detach(): Unit = js.native
+  def detach(): Unit
   
   /**
     * Returns the current document.
     **/
-  def getDocument(): Document = js.native
+  def getDocument(): Document
   
   /**
     * Returns an object identifying the `row` and `column` position of the current anchor.
     **/
-  def getPosition(): Position = js.native
+  def getPosition(): Position
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, _]): Unit = js.native
+  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit
   
   /**
     * Fires whenever the anchor position changes.
@@ -33,7 +31,7 @@ trait Anchor extends StObject {
     * - `old`: An object describing the old Anchor position
     * - `value`: An object describing the new Anchor position
     **/
-  def onChange(e: js.Any): Unit = js.native
+  def onChange(e: js.Any): Unit
   
   /**
     * Sets the anchor position to the specified row and column. If `noClip` is `true`, the position is not clipped.
@@ -41,7 +39,7 @@ trait Anchor extends StObject {
     * @param column The column index to move the anchor to
     * @param noClip Identifies if you want the position to be clipped
     **/
-  def setPosition(row: Double, column: Double, noClip: Boolean): Unit = js.native
+  def setPosition(row: Double, column: Double, noClip: Boolean): Unit
 }
 object Anchor {
   
@@ -50,7 +48,7 @@ object Anchor {
     detach: () => Unit,
     getDocument: () => Document,
     getPosition: () => Position,
-    on: (String, js.Function1[/* e */ js.Any, _]) => Unit,
+    on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
     onChange: js.Any => Unit,
     setPosition: (Double, Double, Boolean) => Unit
   ): Anchor = {
@@ -71,7 +69,7 @@ object Anchor {
     def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))

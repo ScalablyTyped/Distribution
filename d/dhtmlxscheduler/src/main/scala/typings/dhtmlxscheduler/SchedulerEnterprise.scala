@@ -2,16 +2,14 @@ package typings.dhtmlxscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerEnterprise extends StObject {
   
   /**
     * Creates a new instance of Scheduler
     */
-  def getSchedulerInstance(): SchedulerStatic = js.native
+  def getSchedulerInstance(): SchedulerStatic
 }
 object SchedulerEnterprise {
   

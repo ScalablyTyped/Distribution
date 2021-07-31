@@ -4,12 +4,11 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickConfig[ES /* <: ExprRef | SignalRef */]
-  extends MarkConfig[ES]
+  extends StObject
+     with MarkConfig[ES]
      with TickThicknessMixins
      with _AnyMarkConfig[ES] {
   
@@ -19,7 +18,7 @@ trait TickConfig[ES /* <: ExprRef | SignalRef */]
     * __Default value:__  3/4 of step (width step for horizontal ticks and height step for vertical ticks).
     * @minimum 0
     */
-  var bandSize: js.UndefOr[Double] = js.native
+  var bandSize: js.UndefOr[Double] = js.undefined
 }
 object TickConfig {
   
@@ -30,7 +29,7 @@ object TickConfig {
   }
   
   @scala.inline
-  implicit class TickConfigMutableBuilder[Self <: TickConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with TickConfig[ES]) extends AnyVal {
+  implicit class TickConfigMutableBuilder[Self <: TickConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TickConfig[ES]) extends AnyVal {
     
     @scala.inline
     def setBandSize(value: Double): Self = StObject.set(x, "bandSize", value.asInstanceOf[js.Any])

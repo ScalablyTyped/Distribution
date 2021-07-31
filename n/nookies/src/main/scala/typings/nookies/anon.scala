@@ -10,16 +10,14 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<next.next.NextPageContext, 'req'> */
-  @js.native
   trait PickNextPageContextreq extends StObject {
     
-    var req: js.UndefOr[IncomingMessage] = js.native
+    var req: js.UndefOr[IncomingMessage] = js.undefined
   }
   object PickNextPageContextreq {
     
@@ -41,10 +39,9 @@ object anon {
   }
   
   /* Inlined std.Pick<next.next.NextPageContext, 'res'> */
-  @js.native
   trait PickNextPageContextres extends StObject {
     
-    var res: js.UndefOr[ServerResponse] = js.native
+    var res: js.UndefOr[ServerResponse] = js.undefined
   }
   object PickNextPageContextres {
     
@@ -65,10 +62,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Req extends StObject {
     
-    var req: NextApiRequest = js.native
+    var req: NextApiRequest
   }
   object Req {
     
@@ -86,15 +82,14 @@ object anon {
     }
   }
   
-  @js.native
   trait ReqRequest extends StObject {
     
-    var req: Request_[ParamsDictionary, _, _, Query] = js.native
+    var req: Request_[ParamsDictionary, js.Any, js.Any, Query]
   }
   object ReqRequest {
     
     @scala.inline
-    def apply(req: Request_[ParamsDictionary, _, _, Query]): ReqRequest = {
+    def apply(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): ReqRequest = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReqRequest]
     }
@@ -103,19 +98,18 @@ object anon {
     implicit class ReqRequestMutableBuilder[Self <: ReqRequest] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setReq(value: Request_[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Res extends StObject {
     
-    var res: NextApiResponse[_] = js.native
+    var res: NextApiResponse[js.Any]
   }
   object Res {
     
     @scala.inline
-    def apply(res: NextApiResponse[_]): Res = {
+    def apply(res: NextApiResponse[js.Any]): Res = {
       val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[Res]
     }
@@ -124,19 +118,18 @@ object anon {
     implicit class ResMutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRes(value: NextApiResponse[_]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      def setRes(value: NextApiResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ResResponse extends StObject {
     
-    var res: Response_[_] = js.native
+    var res: Response_[js.Any]
   }
   object ResResponse {
     
     @scala.inline
-    def apply(res: Response_[_]): ResResponse = {
+    def apply(res: Response_[js.Any]): ResResponse = {
       val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResResponse]
     }
@@ -145,7 +138,7 @@ object anon {
     implicit class ResResponseMutableBuilder[Self <: ResResponse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRes(value: Response_[_]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      def setRes(value: Response_[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
 }

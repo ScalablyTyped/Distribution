@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface can be used to access the data source of the database document.
   * @see OfficeDatabaseDocument
   */
-@js.native
 trait XDocumentDataSource extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait XDocumentDataSource extends StObject {
     * Additionally, if the caller does long-lasting processing on the document, it's advised to add itself as {@link com.sun.star.util.XCloseListener} to
     * the document, to prevent closing as long as the processing lasts.
     */
-  var DatabaseDocument: XOfficeDatabaseDocument = js.native
+  var DatabaseDocument: XOfficeDatabaseDocument
 }
 object XDocumentDataSource {
   

@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deltasMod {

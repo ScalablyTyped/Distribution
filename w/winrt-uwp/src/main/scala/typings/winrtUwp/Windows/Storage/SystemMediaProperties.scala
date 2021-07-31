@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows media file properties. */
-@js.native
 trait SystemMediaProperties extends StObject {
   
   /** Gets the name of the System.Media.Duration property (one of the Windows media file properties). */
-  var duration: String = js.native
+  var duration: String
   
   /** Gets the name of the System.Media.Producer property (one of the Windows media file properties). */
-  var producer: String = js.native
+  var producer: String
   
   /** Gets the name of the System.Media.Publisher property (one of the Windows media file properties). */
-  var publisher: String = js.native
+  var publisher: String
   
   /** Gets the name of the System.Media.SubTitle property (one of the Windows media file properties). */
-  var subTitle: String = js.native
+  var subTitle: String
   
   /** Gets the name of the System.Media.Writer property (one of the Windows media file properties). */
-  var writer: String = js.native
+  var writer: String
   
   /** Gets the name of the System.Media.Year property (one of the Windows media file properties). */
-  var year: String = js.native
+  var year: String
 }
 object SystemMediaProperties {
   

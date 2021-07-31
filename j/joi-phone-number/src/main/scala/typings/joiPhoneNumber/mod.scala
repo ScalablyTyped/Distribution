@@ -7,20 +7,18 @@ import typings.joiPhoneNumber.joiPhoneNumberStrings.national
 import typings.joiPhoneNumber.joiPhoneNumberStrings.rfc3966
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait PhoneNumberOptions extends StObject {
     
-    var defaultCountry: js.UndefOr[js.Array[String] | String] = js.native
+    var defaultCountry: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var format: js.UndefOr[e164 | international | national | rfc3966] = js.native
+    var format: js.UndefOr[e164 | international | national | rfc3966] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object PhoneNumberOptions {
     
@@ -57,7 +55,9 @@ object mod {
   }
   
   @js.native
-  trait StringSchema extends AnySchema {
+  trait StringSchema
+    extends StObject
+       with AnySchema {
     
     def phoneNumber(): this.type = js.native
     def phoneNumber(options: PhoneNumberOptions): this.type = js.native

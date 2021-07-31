@@ -11,8 +11,8 @@ Your CLI formatting friend.
 | Full name          | cliff |
 | Keywords           | cli, logging, tools, winston |
 | # releases         | 0 |
-| # dependents       | 145 |
-| # downloads        | 20207791 |
+| # dependents       | 143 |
+| # downloads        | 20631930 |
 | # stars            | 10 |
 
 ## Links

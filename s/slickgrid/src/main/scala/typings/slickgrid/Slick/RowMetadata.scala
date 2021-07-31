@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowMetadata[T] extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait RowMetadata[T] extends StObject {
     (/**
     * Metadata indexed by column id
     */
-  StringDictionary[ColumnMetadata[T]]) with (/**
+  StringDictionary[ColumnMetadata[T]]) & (/**
     * Metadata indexed by column index
     */
   NumberDictionary[ColumnMetadata[T]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * One or more (space-separated) CSS classes to be added to the entire row.
     */
-  var cssClasses: js.UndefOr[String] = js.native
+  var cssClasses: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not any cells in the row can be set as "active".
     */
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not a row or any cells in it can be selected.
     */
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
 }
 object RowMetadata {
   
@@ -47,14 +45,14 @@ object RowMetadata {
   }
   
   @scala.inline
-  implicit class RowMetadataMutableBuilder[Self <: RowMetadata[_], T] (val x: Self with RowMetadata[T]) extends AnyVal {
+  implicit class RowMetadataMutableBuilder[Self <: RowMetadata[?], T] (val x: Self & RowMetadata[T]) extends AnyVal {
     
     @scala.inline
     def setColumns(
       value: (/**
       * Metadata indexed by column id
       */
-    StringDictionary[ColumnMetadata[T]]) with (/**
+    StringDictionary[ColumnMetadata[T]]) & (/**
       * Metadata indexed by column index
       */
     NumberDictionary[ColumnMetadata[T]])

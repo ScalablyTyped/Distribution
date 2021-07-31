@@ -2,34 +2,32 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for a collection of DataTransfer resources.
   */
-@js.native
 trait SchemaDataTransfersListResponse extends StObject {
   
   /**
     * List of data transfer requests.
     */
-  var dataTransfers: js.UndefOr[js.Array[SchemaDataTransfer]] = js.native
+  var dataTransfers: js.UndefOr[js.Array[SchemaDataTransfer]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a collection of data transfer requests.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token which will be used to specify next page in list API.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaDataTransfersListResponse {
   

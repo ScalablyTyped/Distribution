@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimumHeights extends StObject {
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var granularity: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.undefined
   
-  var maximumHeights: js.UndefOr[js.Array[Double]] = js.native
+  var maximumHeights: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var minimumHeights: js.UndefOr[js.Array[Double]] = js.native
+  var minimumHeights: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var positions: js.Array[Cartesian3] = js.native
+  var positions: js.Array[Cartesian3]
 }
 object MinimumHeights {
   

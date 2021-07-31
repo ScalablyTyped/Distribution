@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It can contain any string values (server names, user names, passwords, ...).
   */
-@js.native
 trait SendInfo extends StObject {
   
   /** the protocol to which the info is related (i.e. "NNTP", "SMTP", "VIM"). */
-  var ProtocolType: String = js.native
+  var ProtocolType: String
   
   /** the value. */
-  var Value: String = js.native
+  var Value: String
 }
 object SendInfo {
   

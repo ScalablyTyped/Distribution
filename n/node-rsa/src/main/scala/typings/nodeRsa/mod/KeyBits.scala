@@ -2,16 +2,14 @@ package typings.nodeRsa.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyBits extends StObject {
   
   /**
     * The length of the key in bits.
     */
-  var b: Double = js.native
+  var b: Double
 }
 object KeyBits {
   

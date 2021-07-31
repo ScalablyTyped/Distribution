@@ -5,45 +5,42 @@ import typings.fsTreeDiff.entryMod.BaseEntry
 import typings.fsTreeDiff.entryMod.DefaultEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fs-tree-diff", JSImport.Namespace)
   @js.native
-  class ^[T /* <: BaseEntry */] () extends FSTree[T] {
+  class ^[T /* <: BaseEntry */] ()
+    extends StObject
+       with FSTree[T] {
     def this(options: Entries[T]) = this()
   }
+  @JSImport("fs-tree-diff", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("fs-tree-diff", "applyPatch")
-  @js.native
-  def applyPatch(input: String, output: String, patch: Patch): Unit = js.native
-  @JSImport("fs-tree-diff", "applyPatch")
-  @js.native
-  def applyPatch(input: String, output: String, patch: Patch, _delegate: PatchDelegate): Unit = js.native
+  @scala.inline
+  def applyPatch(input: String, output: String, patch: Patch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyPatch(input: String, output: String, patch: Patch, _delegate: PatchDelegate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], _delegate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("fs-tree-diff", "defaultIsEqual")
-  @js.native
-  def defaultIsEqual(entryA: DefaultEntry, entryB: DefaultEntry): Boolean = js.native
+  @scala.inline
+  def defaultIsEqual(entryA: DefaultEntry, entryB: DefaultEntry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultIsEqual")(entryA.asInstanceOf[js.Any], entryB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("fs-tree-diff", "fromEntries")
-  @js.native
-  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T]): FSTree[T] = js.native
-  @JSImport("fs-tree-diff", "fromEntries")
-  @js.native
-  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T], options: StaticOptions): FSTree[T] = js.native
+  @scala.inline
+  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T]): FSTree[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntries")(entries.asInstanceOf[js.Any]).asInstanceOf[FSTree[T]]
+  @scala.inline
+  def fromEntries[T /* <: BaseEntry */](entries: js.Array[T], options: StaticOptions): FSTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEntries")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSTree[T]]
   
   /* static member */
-  @JSImport("fs-tree-diff", "fromPaths")
-  @js.native
-  def fromPaths(paths: js.Array[String]): FSTree[Entry] = js.native
-  @JSImport("fs-tree-diff", "fromPaths")
-  @js.native
-  def fromPaths(paths: js.Array[String], options: StaticOptions): FSTree[Entry] = js.native
+  @scala.inline
+  def fromPaths(paths: js.Array[String]): FSTree[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPaths")(paths.asInstanceOf[js.Any]).asInstanceOf[FSTree[Entry]]
+  @scala.inline
+  def fromPaths(paths: js.Array[String], options: StaticOptions): FSTree[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPaths")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSTree[Entry]]
   
   type Entry = DefaultEntry
   
@@ -100,12 +97,11 @@ object mod {
   
   type Operation = (js.Tuple3[Operand, String, DefaultEntry]) | (js.Tuple2[Operand, String])
   
-  @js.native
   trait Options extends StObject {
     
-    var entries: js.UndefOr[js.Array[BaseEntry]] = js.native
+    var entries: js.UndefOr[js.Array[BaseEntry]] = js.undefined
     
-    var sortAndExpand: js.UndefOr[Boolean] = js.native
+    var sortAndExpand: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -137,28 +133,27 @@ object mod {
   
   type Patch = js.Array[Operation]
   
-  @js.native
   trait PatchDelegate extends StObject {
     
     var change: js.UndefOr[
         js.Function3[/* inputPath */ String, /* outputPath */ String, /* relativePath */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var create: js.UndefOr[
         js.Function3[/* inputPath */ String, /* outputPath */ String, /* relativePath */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var mkdir: js.UndefOr[
         js.Function3[/* inputPath */ String, /* outputPath */ String, /* relativePath */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var rmdir: js.UndefOr[
         js.Function3[/* inputPath */ String, /* outputPath */ String, /* relativePath */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var unlink: js.UndefOr[
         js.Function3[/* inputPath */ String, /* outputPath */ String, /* relativePath */ String, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object PatchDelegate {
     
@@ -203,10 +198,9 @@ object mod {
     }
   }
   
-  @js.native
   trait StaticOptions extends StObject {
     
-    var sortAndExpand: js.UndefOr[Boolean] = js.native
+    var sortAndExpand: js.UndefOr[Boolean] = js.undefined
   }
   object StaticOptions {
     

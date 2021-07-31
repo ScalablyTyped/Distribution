@@ -3,10 +3,13 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Types.Sound.SoundConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sound {
+  
+  @JSGlobal("Phaser.Sound")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Class containing all the shared state and behavior of a sound object, independent of the implementation.
@@ -14,7 +17,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.BaseSound")
   @js.native
   class BaseSound protected ()
-    extends typings.phaser.Phaser.Sound.BaseSound {
+    extends StObject
+       with typings.phaser.Phaser.Sound.BaseSound {
     /**
       * 
       * @param manager Reference to the current sound manager instance.
@@ -31,7 +35,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.BaseSoundManager")
   @js.native
   class BaseSoundManager protected ()
-    extends typings.phaser.Phaser.Sound.BaseSoundManager {
+    extends StObject
+       with typings.phaser.Phaser.Sound.BaseSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.
@@ -422,7 +427,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.HTML5AudioSound")
   @js.native
   class HTML5AudioSound protected ()
-    extends typings.phaser.Phaser.Sound.HTML5AudioSound {
+    extends StObject
+       with typings.phaser.Phaser.Sound.HTML5AudioSound {
     /**
       * 
       * @param manager Reference to the current sound manager instance.
@@ -439,7 +445,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.HTML5AudioSoundManager")
   @js.native
   class HTML5AudioSoundManager protected ()
-    extends typings.phaser.Phaser.Sound.HTML5AudioSoundManager {
+    extends StObject
+       with typings.phaser.Phaser.Sound.HTML5AudioSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.
@@ -458,7 +465,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.NoAudioSound")
   @js.native
   class NoAudioSound protected ()
-    extends typings.phaser.Phaser.Sound.NoAudioSound {
+    extends StObject
+       with typings.phaser.Phaser.Sound.NoAudioSound {
     /**
       * 
       * @param manager Reference to the current sound manager instance.
@@ -480,7 +488,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.NoAudioSoundManager")
   @js.native
   class NoAudioSoundManager protected ()
-    extends typings.phaser.Phaser.Sound.BaseSoundManager {
+    extends StObject
+       with typings.phaser.Phaser.Sound.BaseSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.
@@ -494,9 +503,8 @@ object Sound {
     * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
     * @param game Reference to the current game instance.
     */
-  @JSGlobal("Phaser.Sound.SoundManagerCreator")
-  @js.native
-  def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = js.native
+  @scala.inline
+  def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = ^.asInstanceOf[js.Dynamic].applyDynamic("SoundManagerCreator")(game.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager]
   
   /**
     * Web Audio API implementation of the sound.
@@ -504,7 +512,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.WebAudioSound")
   @js.native
   class WebAudioSound protected ()
-    extends typings.phaser.Phaser.Sound.WebAudioSound {
+    extends StObject
+       with typings.phaser.Phaser.Sound.WebAudioSound {
     /**
       * 
       * @param manager Reference to the current sound manager instance.
@@ -525,7 +534,8 @@ object Sound {
   @JSGlobal("Phaser.Sound.WebAudioSoundManager")
   @js.native
   class WebAudioSoundManager protected ()
-    extends typings.phaser.Phaser.Sound.WebAudioSoundManager {
+    extends StObject
+       with typings.phaser.Phaser.Sound.WebAudioSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.

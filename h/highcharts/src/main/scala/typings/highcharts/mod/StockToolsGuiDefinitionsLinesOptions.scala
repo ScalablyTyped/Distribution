@@ -2,33 +2,31 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiDefinitionsLinesOptions extends StObject {
   
-  var arrowLine: js.UndefOr[StockToolsGuiDefinitionsLinesArrowLineOptions] = js.native
+  var arrowLine: js.UndefOr[StockToolsGuiDefinitionsLinesArrowLineOptions] = js.undefined
   
-  var arrowRay: js.UndefOr[StockToolsGuiDefinitionsLinesArrowRayOptions] = js.native
+  var arrowRay: js.UndefOr[StockToolsGuiDefinitionsLinesArrowRayOptions] = js.undefined
   
-  var arrowSegment: js.UndefOr[StockToolsGuiDefinitionsLinesArrowSegmentOptions] = js.native
+  var arrowSegment: js.UndefOr[StockToolsGuiDefinitionsLinesArrowSegmentOptions] = js.undefined
   
-  var horizontalLine: js.UndefOr[StockToolsGuiDefinitionsLinesHorizontalLineOptions] = js.native
+  var horizontalLine: js.UndefOr[StockToolsGuiDefinitionsLinesHorizontalLineOptions] = js.undefined
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var line: js.UndefOr[StockToolsGuiDefinitionsLinesLineOptions] = js.native
+  var line: js.UndefOr[StockToolsGuiDefinitionsLinesLineOptions] = js.undefined
   
-  var ray: js.UndefOr[StockToolsGuiDefinitionsLinesRayOptions] = js.native
+  var ray: js.UndefOr[StockToolsGuiDefinitionsLinesRayOptions] = js.undefined
   
-  var segment: js.UndefOr[StockToolsGuiDefinitionsLinesSegmentOptions] = js.native
+  var segment: js.UndefOr[StockToolsGuiDefinitionsLinesSegmentOptions] = js.undefined
   
-  var verticalLine: js.UndefOr[StockToolsGuiDefinitionsLinesVerticalLineOptions] = js.native
+  var verticalLine: js.UndefOr[StockToolsGuiDefinitionsLinesVerticalLineOptions] = js.undefined
 }
 object StockToolsGuiDefinitionsLinesOptions {
   
@@ -66,7 +64,7 @@ object StockToolsGuiDefinitionsLinesOptions {
     def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

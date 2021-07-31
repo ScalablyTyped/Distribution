@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see AttributeColumnOptions
   */
-@js.native
 trait DefineAttributeColumnReferencesOptions extends StObject {
   
   /**
@@ -20,22 +18,22 @@ trait DefineAttributeColumnReferencesOptions extends StObject {
     */
   var deferrable: js.UndefOr[
     DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The column of the foreign table that this column references
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * If this column references another table, provide it here as a Model, or a string
     */
-  var model: String | (Model[_, _, _]) = js.native
+  var model: String | (Model[js.Any, js.Any, js.Any])
 }
 object DefineAttributeColumnReferencesOptions {
   
   @scala.inline
-  def apply(model: String | (Model[_, _, _])): DefineAttributeColumnReferencesOptions = {
+  def apply(model: String | (Model[js.Any, js.Any, js.Any])): DefineAttributeColumnReferencesOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAttributeColumnReferencesOptions]
   }
@@ -58,6 +56,6 @@ object DefineAttributeColumnReferencesOptions {
     def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setModel(value: String | (Model[_, _, _])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    def setModel(value: String | (Model[js.Any, js.Any, js.Any])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

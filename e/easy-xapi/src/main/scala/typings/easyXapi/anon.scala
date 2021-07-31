@@ -2,17 +2,15 @@ package typings.easyXapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Level extends StObject {
     
-    var level: String = js.native
+    var level: String
     
-    var name: String = js.native
+    var name: String
   }
   object Level {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Partial extends StObject {
     
-    var partial: Boolean = js.native
+    var partial: Boolean
   }
   object Partial {
     

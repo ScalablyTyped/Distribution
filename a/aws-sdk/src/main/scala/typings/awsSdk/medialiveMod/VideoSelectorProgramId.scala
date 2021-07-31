@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoSelectorProgramId extends StObject {
   
   /**
     * Selects a specific program from within a multi-program transport stream. If the program doesn't exist, the first program within the transport stream will be selected by default.
     */
-  var ProgramId: js.UndefOr[integerMin0Max65536] = js.native
+  var ProgramId: js.UndefOr[integerMin0Max65536] = js.undefined
 }
 object VideoSelectorProgramId {
   

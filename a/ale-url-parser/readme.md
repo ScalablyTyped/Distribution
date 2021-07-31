@@ -10,9 +10,9 @@ Fast url parser
 | ------------------ | :-------------: |
 | Full name          | ale-url-parser |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1150 |
+| # downloads        | 1185 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.node.nodeStrings.push
 import typings.node.nodeStrings.response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def addListener_headers(
     event: headers,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -29,7 +28,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def addListener_response(
     event: response,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -38,11 +37,11 @@ trait ClientHttp2Stream extends Http2Stream {
   @JSName("emit")
   def emit_continue(event: continue): Boolean = js.native
   @JSName("emit")
-  def emit_headers(event: headers, headers: IncomingHttpHeaders with IncomingHttpStatusHeader, flags: Double): Boolean = js.native
+  def emit_headers(event: headers, headers: IncomingHttpHeaders & IncomingHttpStatusHeader, flags: Double): Boolean = js.native
   @JSName("emit")
   def emit_push(event: push, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   @JSName("emit")
-  def emit_response(event: response, headers: IncomingHttpHeaders with IncomingHttpStatusHeader, flags: Double): Boolean = js.native
+  def emit_response(event: response, headers: IncomingHttpHeaders & IncomingHttpStatusHeader, flags: Double): Boolean = js.native
   
   @JSName("on")
   def on_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
@@ -50,7 +49,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def on_headers(
     event: headers,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -61,7 +60,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def on_response(
     event: response,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -73,7 +72,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def once_headers(
     event: headers,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -84,7 +83,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def once_response(
     event: response,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -96,7 +95,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def prependListener_headers(
     event: headers,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -107,7 +106,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def prependListener_response(
     event: response,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -119,7 +118,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def prependOnceListener_headers(
     event: headers,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]
@@ -130,7 +129,7 @@ trait ClientHttp2Stream extends Http2Stream {
   def prependOnceListener_response(
     event: response,
     listener: js.Function2[
-      /* headers */ IncomingHttpHeaders with IncomingHttpStatusHeader, 
+      /* headers */ IncomingHttpHeaders & IncomingHttpStatusHeader, 
       /* flags */ Double, 
       Unit
     ]

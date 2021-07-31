@@ -2,18 +2,16 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeCoverageDeltaResponse extends StObject {
   
-  var coverage: js.Array[RuleUsage] = js.native
+  var coverage: js.Array[RuleUsage]
   
   /**
     * Monotonically increasing time, in seconds.
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object TakeCoverageDeltaResponse {
   

@@ -4,33 +4,33 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects implementing this interface can be used to arrange {@link Shapes} .
   * @deprecated Deprecated
   */
-@js.native
-trait XShapeArranger extends XInterface {
+trait XShapeArranger
+  extends StObject
+     with XInterface {
   
   /** applies the specified Arrangement to the specified collection of {@link Shapes} . */
-  def arrange(xShapes: XShapes, eType: Arrangement): Unit = js.native
+  def arrange(xShapes: XShapes, eType: Arrangement): Unit
   
   /** moves the specified {@link Shapes} by a specified number of objects more to the front. */
-  def bringToFront(xShapes: XShapes, nSteps: Double): Unit = js.native
+  def bringToFront(xShapes: XShapes, nSteps: Double): Unit
   
   /** reverses the order of the specified collection of {@link Shapes} . */
-  def reverseOrder(xShapes: XShapes): Unit = js.native
+  def reverseOrder(xShapes: XShapes): Unit
   
   /** moves the specified {@link Shapes}**nSteps** objects more to the back. */
-  def sendToBack(xShapes: XShapes, nSteps: Double): Unit = js.native
+  def sendToBack(xShapes: XShapes, nSteps: Double): Unit
   
   /** moves the specified collection of {@link Shapes} behind the specified single {@link Shape} . */
-  def setBehindShape(xShapes: XShapes, xShape: XShape): Unit = js.native
+  def setBehindShape(xShapes: XShapes, xShape: XShape): Unit
   
   /** moves the specified collection of {@link Shapes} in front of the specified single {@link Shape} . */
-  def setInFrontOf(xShapes: XShapes, xShape: XShape): Unit = js.native
+  def setInFrontOf(xShapes: XShapes, xShape: XShape): Unit
 }
 object XShapeArranger {
   

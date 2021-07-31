@@ -6,40 +6,40 @@ import typings.vegaTypings.vegaTypingsStrings.isocontour
 import typings.vegaTypings.vegaTypingsStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IsocontourTransform extends _Transforms {
+trait IsocontourTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | Null | SignalRef] = js.native
+  var as: js.UndefOr[String | Null | SignalRef] = js.undefined
   
-  var field: js.UndefOr[String | TransformField] = js.native
+  var field: js.UndefOr[String | TransformField] = js.undefined
   
-  var levels: js.UndefOr[Double | SignalRef] = js.native
+  var levels: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var nice: js.UndefOr[Boolean | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var resolve: js.UndefOr[shared | independent | SignalRef] = js.native
+  var resolve: js.UndefOr[shared | independent | SignalRef] = js.undefined
   
-  var scale: js.UndefOr[Double | TransformField] = js.native
+  var scale: js.UndefOr[Double | TransformField] = js.undefined
   
-  var smooth: js.UndefOr[Boolean | SignalRef] = js.native
+  var smooth: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var thresholds: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var thresholds: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var translate: js.UndefOr[js.Array[Double] | TransformField] = js.native
+  var translate: js.UndefOr[js.Array[Double] | TransformField] = js.undefined
   
-  var `type`: isocontour = js.native
+  var `type`: isocontour
   
-  var zero: js.UndefOr[Boolean | SignalRef] = js.native
+  var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
 }
 object IsocontourTransform {
   
   @scala.inline
-  def apply(`type`: isocontour): IsocontourTransform = {
+  def apply(): IsocontourTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("isocontour")
     __obj.asInstanceOf[IsocontourTransform]
   }
   

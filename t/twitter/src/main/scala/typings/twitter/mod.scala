@@ -12,24 +12,26 @@ import typings.twitter.twitterStrings.site
 import typings.twitter.twitterStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("twitter", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Twitter {
+  class ^ protected ()
+    extends StObject
+       with Twitter {
     def this(options: AccessTokenOptions) = this()
     def this(options: BearerTokenOptions) = this()
   }
   
-  @js.native
-  trait AccessTokenOptions extends Options {
+  trait AccessTokenOptions
+    extends StObject
+       with Options {
     
-    var access_token_key: String = js.native
+    var access_token_key: String
     
-    var access_token_secret: String = js.native
+    var access_token_secret: String
   }
   object AccessTokenOptions {
     
@@ -55,10 +57,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait BearerTokenOptions extends Options {
+  trait BearerTokenOptions
+    extends StObject
+       with Options {
     
-    var bearer_token: String = js.native
+    var bearer_token: String
   }
   object BearerTokenOptions {
     
@@ -78,24 +81,23 @@ object mod {
   
   type Callback = js.Function3[/* error */ js.Any, /* data */ ResponseData, /* response */ Response, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var consumer_key: String = js.native
+    var consumer_key: String
     
-    var consumer_secret: String = js.native
+    var consumer_secret: String
     
-    var media_base: js.UndefOr[String] = js.native
+    var media_base: js.UndefOr[String] = js.undefined
     
-    var request_options: js.UndefOr[CoreOptions] = js.native
+    var request_options: js.UndefOr[CoreOptions] = js.undefined
     
-    var rest_base: js.UndefOr[String] = js.native
+    var rest_base: js.UndefOr[String] = js.undefined
     
-    var site_stream_base: js.UndefOr[String] = js.native
+    var site_stream_base: js.UndefOr[String] = js.undefined
     
-    var stream_base: js.UndefOr[String] = js.native
+    var stream_base: js.UndefOr[String] = js.undefined
     
-    var user_stream_base: js.UndefOr[String] = js.native
+    var user_stream_base: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -152,11 +154,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
   }
   object RequestParams {
     
@@ -196,11 +198,11 @@ object mod {
     def post(path: String, params: RequestParams): js.Promise[ResponseData] = js.native
     def post(path: String, params: RequestParams, callback: Callback): Unit = js.native
     
-    def request(options: RequiredUriUrl with CoreOptions): Request = js.native
-    def request(options: RequiredUriUrl with CoreOptions, callback: RequestCallback): Request = js.native
+    def request(options: RequiredUriUrl & CoreOptions): Request = js.native
+    def request(options: RequiredUriUrl & CoreOptions, callback: RequestCallback): Request = js.native
     def request(uri: String): Request = js.native
     def request(uri: String, callback: RequestCallback): Request = js.native
-    def request(uri: String, options: js.UndefOr[scala.Nothing], callback: RequestCallback): Request = js.native
+    def request(uri: String, options: Unit, callback: RequestCallback): Request = js.native
     def request(uri: String, options: CoreOptions): Request = js.native
     def request(uri: String, options: CoreOptions, callback: RequestCallback): Request = js.native
     @JSName("request")

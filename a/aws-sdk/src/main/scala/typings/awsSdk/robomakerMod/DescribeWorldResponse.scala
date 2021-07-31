@@ -2,36 +2,34 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorldResponse extends StObject {
   
   /**
     * The Amazon Resource Name (arn) of the world.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world generation job that generated the world.
     */
-  var generationJob: js.UndefOr[Arn] = js.native
+  var generationJob: js.UndefOr[Arn] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the world.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The world template.
     */
-  var template: js.UndefOr[Arn] = js.native
+  var template: js.UndefOr[Arn] = js.undefined
 }
 object DescribeWorldResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationSummary extends StObject {
   
   /**
     * Identifier returned to track the requested action.
     */
-  var OperationId: typings.awsSdk.route53domainsMod.OperationId = js.native
+  var OperationId: typings.awsSdk.route53domainsMod.OperationId
   
   /**
     * The current status of the requested operation in the system.
     */
-  var Status: OperationStatus = js.native
+  var Status: OperationStatus
   
   /**
     * The date when the request was submitted.
     */
-  var SubmittedDate: Timestamp = js.native
+  var SubmittedDate: Timestamp
   
   /**
     * Type of the action requested.
     */
-  var Type: OperationType = js.native
+  var Type: OperationType
 }
 object OperationSummary {
   

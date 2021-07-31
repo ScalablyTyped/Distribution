@@ -6,18 +6,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroundNavigationConstraintProperties extends Object {
+trait GroundNavigationConstraintProperties
+  extends StObject
+     with Object {
   
   /**
     * The type of the constraint.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
     */
-  var `type`: js.UndefOr[`stay-above` | none] = js.native
+  var `type`: js.UndefOr[`stay-above` | none] = js.undefined
 }
 object GroundNavigationConstraintProperties {
   

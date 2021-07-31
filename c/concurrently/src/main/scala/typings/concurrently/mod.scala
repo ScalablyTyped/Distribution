@@ -15,28 +15,28 @@ import typings.node.NodeJS.WritableStream
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("concurrently", JSImport.Namespace)
-  @js.native
-  def apply(commands: js.Array[CommandObj | String]): js.Promise[Null] = js.native
-  @JSImport("concurrently", JSImport.Namespace)
-  @js.native
-  def apply(commands: js.Array[CommandObj | String], options: Options): js.Promise[Null] = js.native
+  @scala.inline
+  def apply(commands: js.Array[CommandObj | String]): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  @scala.inline
+  def apply(commands: js.Array[CommandObj | String], options: Options): js.Promise[Null] = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null]]
   
+  @JSImport("concurrently", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CommandObj extends StObject {
     
-    var command: String = js.native
+    var command: String
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var prefixColor: js.UndefOr[String] = js.native
+    var prefixColor: js.UndefOr[String] = js.undefined
   }
   object CommandObj {
     
@@ -72,49 +72,48 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** the default input target when reading from `inputStream`. Default: `0`. */
-    var defaultInputTarget: js.UndefOr[Double] = js.native
+    var defaultInputTarget: js.UndefOr[Double] = js.undefined
     
     /** a Readable stream to read the input from, eg `process.stdin` */
-    var inputStream: js.UndefOr[ReadableStream] = js.native
+    var inputStream: js.UndefOr[ReadableStream] = js.undefined
     
     /** an array of exiting conditions that will cause a process to kill others. Can contain any of success or failure. */
-    var killOthers: js.UndefOr[js.Array[success | failure]] = js.native
+    var killOthers: js.UndefOr[js.Array[success | failure]] = js.undefined
     
     /**
       * how many processes should run at once
       * @default 0
       */
-    var maxProcesses: js.UndefOr[Double] = js.native
+    var maxProcesses: js.UndefOr[Double] = js.undefined
     
     /**  a Writable stream to write logs to. Default: `process.stdout` */
-    var outputStream: js.UndefOr[WritableStream] = js.native
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * the prefix type to use when logging processes output.
       */
-    var prefix: js.UndefOr[index | pid | time | command | name | none | String] = js.native
+    var prefix: js.UndefOr[index | pid | time | command | name | none | String] = js.undefined
     
     /** how many characters to show when prefixing with `command`. Default: `10` */
-    var prefixLength: js.UndefOr[Double] = js.native
+    var prefixLength: js.UndefOr[Double] = js.undefined
     
     /** whether raw mode should be used, meaning strictly process output will be logged, without any prefixes, colouring or extra stuff. */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /** how many milliseconds to wait between process restarts. Default: 0 */
-    var restartDelay: js.UndefOr[Double] = js.native
+    var restartDelay: js.UndefOr[Double] = js.undefined
     
     /** how many attempts to restart a process that dies will be made. Default: `0` */
-    var restartTries: js.UndefOr[Double] = js.native
+    var restartTries: js.UndefOr[Double] = js.undefined
     
     /** the condition to consider the run was successful. */
-    var successCondition: js.UndefOr[first | last] = js.native
+    var successCondition: js.UndefOr[first | last] = js.undefined
     
     /** a date-fns format to use when prefixing with time. Default: `yyyy-MM-dd HH:mm:ss.ZZZ` */
-    var timestampFormat: js.UndefOr[String] = js.native
+    var timestampFormat: js.UndefOr[String] = js.undefined
   }
   object Options {
     

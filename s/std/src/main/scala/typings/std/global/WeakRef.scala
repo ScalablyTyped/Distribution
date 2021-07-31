@@ -1,8 +1,8 @@
 package typings.std.global
 
+import typings.std.WeakRefConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -13,6 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param target The target object for the WeakRef instance.
   */
 class WeakRef[T /* <: js.Object */] ()
-  extends typings.std.WeakRef[T] {
+  extends StObject
+     with typings.std.WeakRef[T] {
   def this(target: T) = this()
+}
+object WeakRef {
+  
+  @scala.inline
+  def apply: WeakRefConstructor = js.Dynamic.global.selectDynamic("WeakRef").asInstanceOf[WeakRefConstructor]
 }

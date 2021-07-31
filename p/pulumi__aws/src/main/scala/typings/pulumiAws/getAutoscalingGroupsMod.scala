@@ -4,31 +4,29 @@ import typings.pulumiAws.inputMod.GetAutoscalingGroupsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAutoscalingGroupsMod {
   
-  @JSImport("@pulumi/aws/getAutoscalingGroups", "getAutoscalingGroups")
+  @JSImport("@pulumi/aws/getAutoscalingGroups", JSImport.Namespace)
   @js.native
-  def getAutoscalingGroups(): js.Promise[GetAutoscalingGroupsResult] = js.native
-  @JSImport("@pulumi/aws/getAutoscalingGroups", "getAutoscalingGroups")
-  @js.native
-  def getAutoscalingGroups(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = js.native
-  @JSImport("@pulumi/aws/getAutoscalingGroups", "getAutoscalingGroups")
-  @js.native
-  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs): js.Promise[GetAutoscalingGroupsResult] = js.native
-  @JSImport("@pulumi/aws/getAutoscalingGroups", "getAutoscalingGroups")
-  @js.native
-  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAutoscalingGroups(): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")().asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  @scala.inline
+  def getAutoscalingGroups(args: Unit, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  @scala.inline
+  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  @scala.inline
+  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  
   trait GetAutoscalingGroupsArgs extends StObject {
     
     /**
       * A filter used to scope the list e.g. by tags. See [related docs](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_Filter.html).
       */
-    val filters: js.UndefOr[js.Array[GetAutoscalingGroupsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetAutoscalingGroupsFilter]] = js.undefined
   }
   object GetAutoscalingGroupsArgs {
     
@@ -52,25 +50,24 @@ object getAutoscalingGroupsMod {
     }
   }
   
-  @js.native
   trait GetAutoscalingGroupsResult extends StObject {
     
     /**
       * A list of the Autoscaling Groups Arns in the current region.
       */
-    val arns: js.Array[String] = js.native
+    val arns: js.Array[String]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A list of the Autoscaling Groups in the current region.
       */
-    val names: js.Array[String] = js.native
+    val names: js.Array[String]
   }
   object GetAutoscalingGroupsResult {
     

@@ -2,20 +2,18 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
-@js.native
 trait I2cModes extends StObject {
   
-  var CONTINUOUS_READ: I2C_MODE = js.native
+  var CONTINUOUS_READ: I2C_MODE
   
-  var READ: I2C_MODE = js.native
+  var READ: I2C_MODE
   
-  var STOP_READING: I2C_MODE = js.native
+  var STOP_READING: I2C_MODE
   
-  var WRITE: I2C_MODE = js.native
+  var WRITE: I2C_MODE
 }
 object I2cModes {
   

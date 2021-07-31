@@ -15,7 +15,6 @@ import typings.ol.featureMod.ReadOptions
 import typings.ol.projMod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geoJSONMod {
@@ -56,16 +55,15 @@ object geoJSONMod {
   
   type GeoJSONPolygon = Polygon
   
-  @js.native
   trait Options extends StObject {
     
-    var dataProjection: js.UndefOr[ProjectionLike] = js.native
+    var dataProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var extractGeometryName: js.UndefOr[Boolean] = js.native
+    var extractGeometryName: js.UndefOr[Boolean] = js.undefined
     
-    var featureProjection: js.UndefOr[ProjectionLike] = js.native
+    var featureProjection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var geometryName: js.UndefOr[String] = js.native
+    var geometryName: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation extends StObject {
   
   /** Label of the text entities. */
-  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.native
+  var annotationSpec: js.UndefOr[GoogleCloudDatalabelingV1beta1AnnotationSpec] = js.undefined
   
   /** Position of the entity. */
-  var sequentialSegment: js.UndefOr[GoogleCloudDatalabelingV1beta1SequentialSegment] = js.native
+  var sequentialSegment: js.UndefOr[GoogleCloudDatalabelingV1beta1SequentialSegment] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation {
   

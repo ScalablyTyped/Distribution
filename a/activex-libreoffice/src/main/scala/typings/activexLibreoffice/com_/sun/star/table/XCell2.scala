@@ -3,22 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends {@link XCell} methods to access the contents of a cell in a table.
   * @see com.sun.star.table.Cell
   */
-@js.native
-trait XCell2 extends XCell {
+trait XCell2
+  extends StObject
+     with XCell {
   
   /**
     * sets a formula result into the cell.
     *
     * When assigned, the formula cell's result will be set to this value and will not be calculated - unless a HardRecalc is executed.
     */
-  def setFormulaResult(nValue: Double): Unit = js.native
+  def setFormulaResult(nValue: Double): Unit
   
   /**
     * sets a formula string into the cell.
@@ -26,7 +26,7 @@ trait XCell2 extends XCell {
     * When assigned, the formula is set into the string. But is not compiled, tokenized or calculated. Its useful when loading a document and {@link
     * setFormulaResult()} is used. Otherwise it is compiled on trying to fetch a result value.
     */
-  def setFormulaString(aFormula: String): Unit = js.native
+  def setFormulaString(aFormula: String): Unit
 }
 object XCell2 {
   

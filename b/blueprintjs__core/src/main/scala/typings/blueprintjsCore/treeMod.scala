@@ -9,7 +9,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -68,62 +67,60 @@ object treeMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/tree/tree", "Tree.nodeFromPath")
-    @js.native
-    def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = js.native
-    @JSImport("@blueprintjs/core/lib/esm/components/tree/tree", "Tree.nodeFromPath")
-    @js.native
-    def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = js.native
+    @scala.inline
+    def nodeFromPath[U](path: js.Array[Double]): ITreeNode[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[ITreeNode[U]]
+    @scala.inline
+    def nodeFromPath[U](path: js.Array[Double], treeNodes: js.Array[ITreeNode[U]]): ITreeNode[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromPath")(path.asInstanceOf[js.Any], treeNodes.asInstanceOf[js.Any])).asInstanceOf[ITreeNode[U]]
     
-    @JSImport("@blueprintjs/core/lib/esm/components/tree/tree", "Tree.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ ITreeProps[U], Tree[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ ITreeProps[U], Tree[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeProps[U], Tree[U]]]
   }
   
-  @js.native
-  trait ITreeProps[T] extends IProps {
+  trait ITreeProps[T]
+    extends StObject
+       with IProps {
     
     /**
       * The data specifying the contents and appearance of the tree.
       */
-    var contents: js.Array[ITreeNode[T]] = js.native
+    var contents: js.Array[ITreeNode[T]]
     
     /**
       * Invoked when a node is clicked anywhere other than the caret for expanding/collapsing the node.
       */
-    var onNodeClick: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeClick: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when caret of an expanded node is clicked.
       */
-    var onNodeCollapse: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeCollapse: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when a node is right-clicked or the context menu button is pressed on a focused node.
       */
-    var onNodeContextMenu: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeContextMenu: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when a node is double-clicked. Be careful when using this in combination with
       * an `onNodeClick` (single-click) handler, as the way this behaves can vary between browsers.
       * See http://stackoverflow.com/q/5497073/3124288
       */
-    var onNodeDoubleClick: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeDoubleClick: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when the caret of a collapsed node is clicked.
       */
-    var onNodeExpand: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeExpand: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when the mouse is moved over a node.
       */
-    var onNodeMouseEnter: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeMouseEnter: js.UndefOr[TreeEventHandler[T]] = js.undefined
     
     /**
       * Invoked when the mouse is moved out of a node.
       */
-    var onNodeMouseLeave: js.UndefOr[TreeEventHandler[T]] = js.native
+    var onNodeMouseLeave: js.UndefOr[TreeEventHandler[T]] = js.undefined
   }
   object ITreeProps {
     
@@ -134,7 +131,7 @@ object treeMod {
     }
     
     @scala.inline
-    implicit class ITreePropsMutableBuilder[Self <: ITreeProps[_], T] (val x: Self with ITreeProps[T]) extends AnyVal {
+    implicit class ITreePropsMutableBuilder[Self <: ITreeProps[?], T] (val x: Self & ITreeProps[T]) extends AnyVal {
       
       @scala.inline
       def setContents(value: js.Array[ITreeNode[T]]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])

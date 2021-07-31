@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.timeMod.TimePicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeMod {
@@ -24,24 +23,23 @@ object timeMod {
   
   object TimePicker {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Date string to use as current time. If not set, current time is used.
         */
-      var currentTime: js.UndefOr[String] = js.native
+      var currentTime: js.UndefOr[String] = js.undefined
       
       /**
         * Whether we use a 12-hour clock. With a 12-hour clock, an AM/PM
         * widget is displayed and the time format is assumed to be MM-DD-YYYY.
         */
-      var is12Hour: js.UndefOr[Boolean] = js.native
+      var is12Hour: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Function to call when the time value changes.
         */
-      def onChange(time: String): Unit = js.native
+      def onChange(time: String): Unit
     }
     object Props {
       

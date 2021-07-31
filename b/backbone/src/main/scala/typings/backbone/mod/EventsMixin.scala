@@ -2,7 +2,6 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,13 +30,13 @@ abstract class EventsMixin () extends StObject {
   def listenToOnce(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
   
   def off(): this.type = js.native
-  def off(eventName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def off(eventName: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
-  def off(eventName: js.UndefOr[scala.Nothing], callback: EventHandler, context: js.Any): this.type = js.native
   def off(eventName: String): this.type = js.native
-  def off(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def off(eventName: String, callback: Unit, context: js.Any): this.type = js.native
   def off(eventName: String, callback: EventHandler): this.type = js.native
   def off(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+  def off(eventName: Unit, callback: Unit, context: js.Any): this.type = js.native
+  def off(eventName: Unit, callback: EventHandler): this.type = js.native
+  def off(eventName: Unit, callback: EventHandler, context: js.Any): this.type = js.native
   
   def on(eventMap: EventMap): this.type = js.native
   def on(eventMap: EventMap, context: js.Any): this.type = js.native
@@ -50,22 +49,22 @@ abstract class EventsMixin () extends StObject {
   def once(events: String, callback: EventHandler, context: js.Any): this.type = js.native
   
   def stopListening(): this.type = js.native
-  def stopListening(`object`: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
-  def stopListening(`object`: js.UndefOr[scala.Nothing], events: String): this.type = js.native
-  def stopListening(`object`: js.UndefOr[scala.Nothing], events: String, callback: EventHandler): this.type = js.native
   def stopListening(`object`: js.Any): this.type = js.native
-  def stopListening(`object`: js.Any, events: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
   def stopListening(`object`: js.Any, events: String): this.type = js.native
   def stopListening(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+  def stopListening(`object`: js.Any, events: Unit, callback: EventHandler): this.type = js.native
+  def stopListening(`object`: Unit, events: String): this.type = js.native
+  def stopListening(`object`: Unit, events: String, callback: EventHandler): this.type = js.native
+  def stopListening(`object`: Unit, events: Unit, callback: EventHandler): this.type = js.native
   
   def trigger(eventName: String, args: js.Any*): this.type = js.native
   
   def unbind(): this.type = js.native
-  def unbind(eventName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  def unbind(eventName: js.UndefOr[scala.Nothing], callback: EventHandler): this.type = js.native
-  def unbind(eventName: js.UndefOr[scala.Nothing], callback: EventHandler, context: js.Any): this.type = js.native
   def unbind(eventName: String): this.type = js.native
-  def unbind(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def unbind(eventName: String, callback: Unit, context: js.Any): this.type = js.native
   def unbind(eventName: String, callback: EventHandler): this.type = js.native
   def unbind(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+  def unbind(eventName: Unit, callback: Unit, context: js.Any): this.type = js.native
+  def unbind(eventName: Unit, callback: EventHandler): this.type = js.native
+  def unbind(eventName: Unit, callback: EventHandler, context: js.Any): this.type = js.native
 }

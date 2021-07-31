@@ -2,13 +2,11 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononDialogComponent extends StObject {
   
-  def on(event: String, callback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): PhononDialogComponent = js.native
+  def on(event: String, callback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): PhononDialogComponent
 }
 object PhononDialogComponent {
   

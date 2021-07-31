@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a calendar with appointments. */
@@ -67,7 +66,7 @@ trait AppointmentCalendar extends StObject {
     * @param rangeLength The length of the time window for which appointment instances are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
     * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
@@ -76,7 +75,7 @@ trait AppointmentCalendar extends StObject {
     * @param pOptions A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double, pOptions: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double, pOptions: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
@@ -84,7 +83,7 @@ trait AppointmentCalendar extends StObject {
     * @param rangeLength The length of the time window for which appointments are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
     * @param rangeStart The start time of the time window for which appointments are retrieved.
@@ -92,26 +91,26 @@ trait AppointmentCalendar extends StObject {
     * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointment instances that are exceptions from the specified master appointment.
     * @param masterLocalId The LocalId of the master appointment for which exceptional appointment instances are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findExceptionsFromMasterAsync(masterLocalId: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findExceptionsFromMasterAsync(masterLocalId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointments that meet the specified criteria.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findUnexpandedAppointmentsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findUnexpandedAppointmentsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointments that meet the specified criteria.
     * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findUnexpandedAppointmentsAsync(options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findUnexpandedAppointmentsAsync(options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously retrieves the Appointment with the specified ID.

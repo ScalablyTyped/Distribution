@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2PrimitiveTransformation extends StObject {
   
   /** Bucketing */
-  var bucketingConfig: js.UndefOr[GooglePrivacyDlpV2BucketingConfig] = js.native
+  var bucketingConfig: js.UndefOr[GooglePrivacyDlpV2BucketingConfig] = js.undefined
   
   /** Mask */
-  var characterMaskConfig: js.UndefOr[GooglePrivacyDlpV2CharacterMaskConfig] = js.native
+  var characterMaskConfig: js.UndefOr[GooglePrivacyDlpV2CharacterMaskConfig] = js.undefined
   
   /** Deterministic Crypto */
-  var cryptoDeterministicConfig: js.UndefOr[GooglePrivacyDlpV2CryptoDeterministicConfig] = js.native
+  var cryptoDeterministicConfig: js.UndefOr[GooglePrivacyDlpV2CryptoDeterministicConfig] = js.undefined
   
   /** Crypto */
-  var cryptoHashConfig: js.UndefOr[GooglePrivacyDlpV2CryptoHashConfig] = js.native
+  var cryptoHashConfig: js.UndefOr[GooglePrivacyDlpV2CryptoHashConfig] = js.undefined
   
   /** Ffx-Fpe */
-  var cryptoReplaceFfxFpeConfig: js.UndefOr[GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] = js.native
+  var cryptoReplaceFfxFpeConfig: js.UndefOr[GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] = js.undefined
   
   /** Date Shift */
-  var dateShiftConfig: js.UndefOr[GooglePrivacyDlpV2DateShiftConfig] = js.native
+  var dateShiftConfig: js.UndefOr[GooglePrivacyDlpV2DateShiftConfig] = js.undefined
   
   /** Fixed size bucketing */
-  var fixedSizeBucketingConfig: js.UndefOr[GooglePrivacyDlpV2FixedSizeBucketingConfig] = js.native
+  var fixedSizeBucketingConfig: js.UndefOr[GooglePrivacyDlpV2FixedSizeBucketingConfig] = js.undefined
   
   /** Redact */
-  var redactConfig: js.UndefOr[js.Any] = js.native
+  var redactConfig: js.UndefOr[js.Any] = js.undefined
   
   /** Replace */
-  var replaceConfig: js.UndefOr[GooglePrivacyDlpV2ReplaceValueConfig] = js.native
+  var replaceConfig: js.UndefOr[GooglePrivacyDlpV2ReplaceValueConfig] = js.undefined
   
   /** Replace with infotype */
-  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.native
+  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.undefined
   
   /** Time extraction */
-  var timePartConfig: js.UndefOr[GooglePrivacyDlpV2TimePartConfig] = js.native
+  var timePartConfig: js.UndefOr[GooglePrivacyDlpV2TimePartConfig] = js.undefined
 }
 object GooglePrivacyDlpV2PrimitiveTransformation {
   

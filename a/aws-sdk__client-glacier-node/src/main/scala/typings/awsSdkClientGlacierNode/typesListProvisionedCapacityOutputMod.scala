@@ -5,24 +5,24 @@ import typings.awsSdkClientGlacierNode.typesProvisionedCapacityDescriptionMod.Un
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListProvisionedCapacityOutputMod {
   
-  @js.native
-  trait ListProvisionedCapacityOutput extends _OutputTypesUnion {
+  trait ListProvisionedCapacityOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The response body contains the following JSON fields.</p>
       */
-    var ProvisionedCapacityList: js.UndefOr[js.Array[UnmarshalledProvisionedCapacityDescription]] = js.native
+    var ProvisionedCapacityList: js.UndefOr[js.Array[UnmarshalledProvisionedCapacityDescription]] = js.undefined
   }
   object ListProvisionedCapacityOutput {
     

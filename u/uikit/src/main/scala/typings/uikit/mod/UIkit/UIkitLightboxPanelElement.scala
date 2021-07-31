@@ -2,19 +2,17 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitLightboxPanelElement extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def show(index: Double): Unit = js.native
+  def show(index: Double): Unit
   
-  def startAutoplay(): Unit = js.native
+  def startAutoplay(): Unit
   
-  def stopAutoplay(): Unit = js.native
+  def stopAutoplay(): Unit
 }
 object UIkitLightboxPanelElement {
   

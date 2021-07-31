@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -99,18 +98,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that in this case, the format depends on the number of vertices, and needs to change when the number of vertices changes.
   * When not specified, vertex format will be interleaved. (example: PNCPNCPNCPNC)
   */
-@js.native
 trait VertexFormat extends StObject {
   
   /**
     * The vertex attribute elements.
     */
-  var elements: js.Array[Name] = js.native
+  var elements: js.Array[Name]
   
   /**
     * Applies any changes made to the VertexFormat's properties.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object VertexFormat {
   

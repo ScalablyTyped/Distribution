@@ -2,36 +2,34 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
   /**
     * The component that will be subject to logging.
     */
-  var Component: LoggerComponent = js.native
+  var Component: LoggerComponent
   
   /**
     * A descriptive or arbitrary ID for the logger. This value must be unique within the logger definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The level of the logs.
     */
-  var Level: LoggerLevel = js.native
+  var Level: LoggerLevel
   
   /**
     * The amount of file space, in KB, to use if the local file system is used for logging purposes.
     */
-  var Space: js.UndefOr[integer] = js.native
+  var Space: js.UndefOr[integer] = js.undefined
   
   /**
     * The type of log output which will be used.
     */
-  var Type: LoggerType = js.native
+  var Type: LoggerType
 }
 object Logger {
   

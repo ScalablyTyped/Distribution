@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeHook extends StObject {
   
   /**
     * The version of the request-response that you want Amazon Lex to use to invoke your Lambda function. For more information, see using-lambda.
     */
-  var messageVersion: MessageVersion = js.native
+  var messageVersion: MessageVersion
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function.
     */
-  var uri: LambdaARN = js.native
+  var uri: LambdaARN
 }
 object CodeHook {
   

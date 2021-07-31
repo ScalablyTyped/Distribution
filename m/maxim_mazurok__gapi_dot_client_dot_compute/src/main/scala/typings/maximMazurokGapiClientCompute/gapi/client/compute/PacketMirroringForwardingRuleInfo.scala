@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PacketMirroringForwardingRuleInfo extends StObject {
   
   /** [Output Only] Unique identifier for the forwarding rule; defined by the server. */
-  var canonicalUrl: js.UndefOr[String] = js.native
+  var canonicalUrl: js.UndefOr[String] = js.undefined
   
   /** Resource URL to the forwarding rule representing the ILB configured as destination of the mirrored traffic. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PacketMirroringForwardingRuleInfo {
   

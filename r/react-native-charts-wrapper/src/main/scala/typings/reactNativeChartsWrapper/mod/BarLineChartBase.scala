@@ -4,63 +4,63 @@ import typings.reactNativeChartsWrapper.anon.Right
 import typings.reactNativeChartsWrapper.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BarLineChartBase extends ChartBase {
+trait BarLineChartBase
+  extends StObject
+     with ChartBase {
   
-  var autoScaleMinMaxEnabled: js.UndefOr[Boolean] = js.native
+  var autoScaleMinMaxEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var borderColor: js.UndefOr[Color] = js.native
+  var borderColor: js.UndefOr[Color] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var doubleTapToZoomEnabled: js.UndefOr[Boolean] = js.native
+  var doubleTapToZoomEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var dragEnabled: js.UndefOr[Boolean] = js.native
+  var dragEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var drawBorders: js.UndefOr[Boolean] = js.native
+  var drawBorders: js.UndefOr[Boolean] = js.undefined
   
-  var drawGridBackground: js.UndefOr[Boolean] = js.native
+  var drawGridBackground: js.UndefOr[Boolean] = js.undefined
   
-  var extraOffsets: js.UndefOr[Offsets] = js.native
+  var extraOffsets: js.UndefOr[Offsets] = js.undefined
   
-  var gridBackgroundColor: js.UndefOr[Color] = js.native
+  var gridBackgroundColor: js.UndefOr[Color] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var highlightPerDragEnabled: js.UndefOr[Boolean] = js.native
+  var highlightPerDragEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var identifier: js.UndefOr[String] = js.native
+  var identifier: js.UndefOr[String] = js.undefined
   
-  var keepPositionOnRotation: js.UndefOr[Boolean] = js.native
+  var keepPositionOnRotation: js.UndefOr[Boolean] = js.undefined
   
-  var maxHighlightDistance: js.UndefOr[Double] = js.native
+  var maxHighlightDistance: js.UndefOr[Double] = js.undefined
   
-  var maxVisibleValueCount: js.UndefOr[Double] = js.native
+  var maxVisibleValueCount: js.UndefOr[Double] = js.undefined
   
-  var minOffset: js.UndefOr[Double] = js.native
+  var minOffset: js.UndefOr[Double] = js.undefined
   
-  var pinchZoom: js.UndefOr[Boolean] = js.native
+  var pinchZoom: js.UndefOr[Boolean] = js.undefined
   
-  var scaleEnabled: js.UndefOr[Boolean] = js.native
+  var scaleEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var scaleXEnabled: js.UndefOr[Boolean] = js.native
+  var scaleXEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var scaleYEnabled: js.UndefOr[Boolean] = js.native
+  var scaleYEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var syncX: js.UndefOr[Boolean] = js.native
+  var syncX: js.UndefOr[Boolean] = js.undefined
   
-  var syncY: js.UndefOr[Boolean] = js.native
+  var syncY: js.UndefOr[Boolean] = js.undefined
   
-  var viewPortOffsets: js.UndefOr[Offsets] = js.native
+  var viewPortOffsets: js.UndefOr[Offsets] = js.undefined
   
-  var visibleRange: js.UndefOr[X] = js.native
+  var visibleRange: js.UndefOr[X] = js.undefined
   
-  var yAxis: js.UndefOr[Right] = js.native
+  var yAxis: js.UndefOr[Right] = js.undefined
   
-  var zoom: js.UndefOr[typings.reactNativeChartsWrapper.anon.AxisDependency] = js.native
+  var zoom: js.UndefOr[typings.reactNativeChartsWrapper.anon.AxisDependency] = js.undefined
 }
 object BarLineChartBase {
   

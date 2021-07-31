@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateTagOptionWithResourceInput extends StObject {
   
   /**
     * The resource identifier.
     */
-  var ResourceId: typings.awsSdk.servicecatalogMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.servicecatalogMod.ResourceId
   
   /**
     * The TagOption identifier.
     */
-  var TagOptionId: typings.awsSdk.servicecatalogMod.TagOptionId = js.native
+  var TagOptionId: typings.awsSdk.servicecatalogMod.TagOptionId
 }
 object AssociateTagOptionWithResourceInput {
   

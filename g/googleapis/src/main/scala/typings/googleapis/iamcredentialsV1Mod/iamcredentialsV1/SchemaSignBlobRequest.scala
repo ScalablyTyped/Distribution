@@ -2,10 +2,8 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSignBlobRequest extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaSignBlobRequest extends StObject {
     * wildcard character is required; replacing it with a project ID is
     * invalid.
     */
-  var delegates: js.UndefOr[js.Array[String]] = js.native
+  var delegates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The bytes to sign.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
 }
 object SchemaSignBlobRequest {
   

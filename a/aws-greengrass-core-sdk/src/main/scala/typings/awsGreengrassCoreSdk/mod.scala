@@ -8,7 +8,6 @@ import typings.std.Blob
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,15 +21,14 @@ object mod {
   
   type IotCallback = js.Function2[/* error */ Error | Null, /* data */ IotCallbackData | Null, Unit]
   
-  @js.native
   trait IotCallbackData extends StObject {
     
-    var payload: Buffer | Blob | String | ArrayLike[_] = js.native
+    var payload: Buffer | Blob | String | ArrayLike[js.Any]
   }
   object IotCallbackData {
     
     @scala.inline
-    def apply(payload: Buffer | Blob | String | ArrayLike[_]): IotCallbackData = {
+    def apply(payload: Buffer | Blob | String | ArrayLike[js.Any]): IotCallbackData = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[IotCallbackData]
     }
@@ -39,23 +37,22 @@ object mod {
     implicit class IotCallbackDataMutableBuilder[Self <: IotCallbackData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPayload(value: Buffer | Blob | String | ArrayLike[_]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      def setPayload(value: Buffer | Blob | String | ArrayLike[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PublishParams extends StObject {
     
-    var payload: Buffer | Blob | String | ArrayLike[_] = js.native
+    var payload: Buffer | Blob | String | ArrayLike[js.Any]
     
-    var queueFullPolicy: js.UndefOr[AllOrError | BestEffort] = js.native
+    var queueFullPolicy: js.UndefOr[AllOrError | BestEffort] = js.undefined
     
-    var topic: String = js.native
+    var topic: String
   }
   object PublishParams {
     
     @scala.inline
-    def apply(payload: Buffer | Blob | String | ArrayLike[_], topic: String): PublishParams = {
+    def apply(payload: Buffer | Blob | String | ArrayLike[js.Any], topic: String): PublishParams = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishParams]
     }
@@ -64,7 +61,7 @@ object mod {
     implicit class PublishParamsMutableBuilder[Self <: PublishParams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPayload(value: Buffer | Blob | String | ArrayLike[_]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      def setPayload(value: Buffer | Blob | String | ArrayLike[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueueFullPolicy(value: AllOrError | BestEffort): Self = StObject.set(x, "queueFullPolicy", value.asInstanceOf[js.Any])

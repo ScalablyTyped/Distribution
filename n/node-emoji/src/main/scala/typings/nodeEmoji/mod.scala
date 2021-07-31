@@ -2,16 +2,39 @@ package typings.nodeEmoji
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-emoji", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object emoji {
     
     @JSImport("node-emoji", "emoji")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("node-emoji", "emoji.-1")
+    @js.native
+    val `-1`: String = js.native
+    
+    @JSImport("node-emoji", "emoji.+1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("node-emoji", "emoji.100")
+    @js.native
+    val `100`: String = js.native
+    
+    @JSImport("node-emoji", "emoji.1234")
+    @js.native
+    val `1234`: String = js.native
+    
+    @JSImport("node-emoji", "emoji.8ball")
+    @js.native
+    val `8ball`: String = js.native
     
     @JSImport("node-emoji", "emoji.package")
     @js.native
@@ -1946,6 +1969,10 @@ object mod {
     def dvd: String = js.native
     @scala.inline
     def dvd_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dvd")(x.asInstanceOf[js.Any])
+    
+    @JSImport("node-emoji", "emoji.e-mail")
+    @js.native
+    val `e-mail`: String = js.native
     
     @JSImport("node-emoji", "emoji.ear")
     @js.native
@@ -5858,6 +5885,10 @@ object mod {
     @scala.inline
     def neutralFace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutral_face")(x.asInstanceOf[js.Any])
     
+    @JSImport("node-emoji", "emoji.new")
+    @js.native
+    val `new`: String = js.native
+    
     @JSImport("node-emoji", "emoji.new_moon")
     @js.native
     def newMoon: String = js.native
@@ -8852,108 +8883,59 @@ object mod {
     def zzz: String = js.native
     @scala.inline
     def zzz_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zzz")(x.asInstanceOf[js.Any])
-    
-    @JSImport("node-emoji", "emoji.-1")
-    @js.native
-    val `-1`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.+1")
-    @js.native
-    val `1`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.100")
-    @js.native
-    val `100`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.1234")
-    @js.native
-    val `1234`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.8ball")
-    @js.native
-    val `8ball`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.e-mail")
-    @js.native
-    val `e-mail`: String = js.native
-    
-    @JSImport("node-emoji", "emoji.new")
-    @js.native
-    val `new`: String = js.native
   }
   
-  @JSImport("node-emoji", "emojify")
-  @js.native
-  def emojify(str: String): String = js.native
-  @JSImport("node-emoji", "emojify")
-  @js.native
-  def emojify(
-    str: String,
-    on_missing: js.UndefOr[scala.Nothing],
-    format: js.Function2[/* code */ String, /* name */ String, String]
-  ): String = js.native
-  @JSImport("node-emoji", "emojify")
-  @js.native
-  def emojify(str: String, on_missing: js.Function1[/* emoji_name */ String, String]): String = js.native
-  @JSImport("node-emoji", "emojify")
-  @js.native
+  @scala.inline
+  def emojify(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def emojify(str: String, on_missing: js.Function1[/* emoji_name */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any], on_missing.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def emojify(
     str: String,
     on_missing: js.Function1[/* emoji_name */ String, String],
     format: js.Function2[/* code */ String, /* name */ String, String]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any], on_missing.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def emojify(str: String, on_missing: Unit, format: js.Function2[/* code */ String, /* name */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any], on_missing.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-emoji", "find")
-  @js.native
-  def find(emoji: String): Emoji_ = js.native
+  @scala.inline
+  def find(emoji: String): Emoji_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(emoji.asInstanceOf[js.Any]).asInstanceOf[Emoji_]
   
-  @JSImport("node-emoji", "get")
-  @js.native
-  def get(emoji: String): String = js.native
+  @scala.inline
+  def get(emoji: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(emoji.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-emoji", "hasEmoji")
-  @js.native
-  def hasEmoji(str: String): Boolean = js.native
+  @scala.inline
+  def hasEmoji(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEmoji")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("node-emoji", "random")
-  @js.native
-  def random(): Emoji_ = js.native
+  @scala.inline
+  def random(): Emoji_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Emoji_]
   
-  @JSImport("node-emoji", "replace")
-  @js.native
-  def replace(str: String, replacement: String): String = js.native
-  @JSImport("node-emoji", "replace")
-  @js.native
-  def replace(str: String, replacement: String, cleanSpaces: Boolean): String = js.native
-  @JSImport("node-emoji", "replace")
-  @js.native
-  def replace(str: String, replacement: js.Function1[/* emoji */ Emoji_, String]): String = js.native
-  @JSImport("node-emoji", "replace")
-  @js.native
-  def replace(str: String, replacement: js.Function1[/* emoji */ Emoji_, String], cleanSpaces: Boolean): String = js.native
+  @scala.inline
+  def replace(str: String, replacement: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, replacement: String, cleanSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], cleanSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, replacement: js.Function1[/* emoji */ Emoji_, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replace(str: String, replacement: js.Function1[/* emoji */ Emoji_, String], cleanSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(str.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], cleanSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-emoji", "search")
-  @js.native
-  def search(searchTerm: String): js.Array[Emoji_] = js.native
+  @scala.inline
+  def search(searchTerm: String): js.Array[Emoji_] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchTerm.asInstanceOf[js.Any]).asInstanceOf[js.Array[Emoji_]]
   
-  @JSImport("node-emoji", "strip")
-  @js.native
-  def strip(str: String): String = js.native
+  @scala.inline
+  def strip(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-emoji", "unemojify")
-  @js.native
-  def unemojify(str: String): String = js.native
+  @scala.inline
+  def unemojify(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unemojify")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-emoji", "which")
-  @js.native
-  def which(emoji_code: String): String = js.native
+  @scala.inline
+  def which(emoji_code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("which")(emoji_code.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Emoji_ extends StObject {
     
-    var emoji: String = js.native
+    var emoji: String
     
-    var key: String = js.native
+    var key: String
   }
   object Emoji_ {
     

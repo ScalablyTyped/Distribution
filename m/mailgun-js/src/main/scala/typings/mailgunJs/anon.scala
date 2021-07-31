@@ -2,19 +2,17 @@ package typings.mailgunJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var subscribed: js.UndefOr[Boolean] = js.native
+    var subscribed: js.UndefOr[Boolean] = js.undefined
   }
   object Address {
     
@@ -44,20 +42,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Displayname extends StObject {
     
-    var display_name: String | Null = js.native
+    var display_name: String | Null
     
-    var domain: String = js.native
+    var domain: String
     
-    var local_part: String = js.native
+    var local_part: String
   }
   object Displayname {
     
     @scala.inline
     def apply(domain: String, local_part: String): Displayname = {
-      val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], local_part = local_part.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], local_part = local_part.asInstanceOf[js.Any], display_name = null)
       __obj.asInstanceOf[Displayname]
     }
     
@@ -78,12 +75,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval extends StObject {
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var times: Double = js.native
+    var times: Double
   }
   object Interval {
     

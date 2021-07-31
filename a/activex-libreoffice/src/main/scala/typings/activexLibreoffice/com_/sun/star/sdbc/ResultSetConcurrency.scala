@@ -4,7 +4,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1007`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1008`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResultSetConcurrency {

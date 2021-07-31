@@ -3,21 +3,21 @@ package typings.tuyaPanelKit.themeMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinearGradientBackground extends _BackgroundProps {
+trait LinearGradientBackground
+  extends StObject
+     with _BackgroundProps {
   
-  var stops: js.UndefOr[Record[String, String]] = js.native
+  var stops: js.UndefOr[Record[String, String]] = js.undefined
   
-  var x1: js.UndefOr[String] = js.native
+  var x1: js.UndefOr[String] = js.undefined
   
-  var x2: js.UndefOr[String] = js.native
+  var x2: js.UndefOr[String] = js.undefined
   
-  var y1: js.UndefOr[String] = js.native
+  var y1: js.UndefOr[String] = js.undefined
   
-  var y2: js.UndefOr[String] = js.native
+  var y2: js.UndefOr[String] = js.undefined
 }
 object LinearGradientBackground {
   

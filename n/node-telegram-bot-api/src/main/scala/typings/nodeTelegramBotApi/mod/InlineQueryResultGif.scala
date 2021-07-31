@@ -3,38 +3,37 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.gif
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultGif
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var gif_duration: js.UndefOr[Double] = js.native
+  var gif_duration: js.UndefOr[Double] = js.undefined
   
-  var gif_height: js.UndefOr[Double] = js.native
+  var gif_height: js.UndefOr[Double] = js.undefined
   
-  var gif_url: String = js.native
+  var gif_url: String
   
-  var gif_width: js.UndefOr[Double] = js.native
+  var gif_width: js.UndefOr[Double] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var thumb_url: js.UndefOr[String] = js.native
+  var thumb_url: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: gif = js.native
+  var `type`: gif
 }
 object InlineQueryResultGif {
   
   @scala.inline
-  def apply(gif_url: String, id: String, `type`: gif): InlineQueryResultGif = {
+  def apply(gif_url: String, id: String): InlineQueryResultGif = {
     val __obj = js.Dynamic.literal(gif_url = gif_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("gif")
     __obj.asInstanceOf[InlineQueryResultGif]
   }
   

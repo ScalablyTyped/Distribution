@@ -3,13 +3,11 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceListOptions extends StObject {
   
-  var Filters: Id = js.native
+  var Filters: Id
 }
 object ServiceListOptions {
   

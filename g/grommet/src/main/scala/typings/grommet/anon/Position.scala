@@ -5,17 +5,15 @@ import typings.grommet.layerMod.LayerPositionType
 import typings.grommet.textMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var container: js.UndefOr[BoxProps] = js.native
+  var container: js.UndefOr[BoxProps] = js.undefined
   
-  var label: js.UndefOr[TextProps] = js.native
+  var label: js.UndefOr[TextProps] = js.undefined
   
-  var position: js.UndefOr[LayerPositionType] = js.native
+  var position: js.UndefOr[LayerPositionType] = js.undefined
 }
 object Position {
   

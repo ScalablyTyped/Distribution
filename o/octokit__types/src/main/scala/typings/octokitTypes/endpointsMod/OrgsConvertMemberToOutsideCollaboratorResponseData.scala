@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsConvertMemberToOutsideCollaboratorResponseData extends StObject {
   
-  var documentation_url: String = js.native
+  var documentation_url: String
   
-  var message: String = js.native
+  var message: String
 }
 object OrgsConvertMemberToOutsideCollaboratorResponseData {
   

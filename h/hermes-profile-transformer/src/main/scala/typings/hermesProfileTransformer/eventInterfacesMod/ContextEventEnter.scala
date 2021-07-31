@@ -3,16 +3,15 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.CONTEXT_EVENTS_ENTER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextEventEnter
-  extends ContextEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with ContextEvent {
   
   @JSName("ph")
-  var ph_ContextEventEnter: CONTEXT_EVENTS_ENTER = js.native
+  var ph_ContextEventEnter: CONTEXT_EVENTS_ENTER
 }
 object ContextEventEnter {
   

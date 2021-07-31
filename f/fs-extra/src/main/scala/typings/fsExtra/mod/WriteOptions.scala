@@ -2,19 +2,19 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WriteOptions extends WriteFileOptions {
+trait WriteOptions
+  extends StObject
+     with WriteFileOptions {
   
-  var EOL: js.UndefOr[String] = js.native
+  var EOL: js.UndefOr[String] = js.undefined
   
-  var fs: js.UndefOr[js.Object] = js.native
+  var fs: js.UndefOr[js.Object] = js.undefined
   
-  var replacer: js.UndefOr[js.Any] = js.native
+  var replacer: js.UndefOr[js.Any] = js.undefined
   
-  var spaces: js.UndefOr[Double | String] = js.native
+  var spaces: js.UndefOr[Double | String] = js.undefined
 }
 object WriteOptions {
   

@@ -3,22 +3,22 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormStrings.setField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetFieldInfo extends NotifyInfo {
+trait SetFieldInfo
+  extends StObject
+     with NotifyInfo {
   
-  var data: FieldData = js.native
+  var data: FieldData
   
-  var `type`: setField = js.native
+  var `type`: setField
 }
 object SetFieldInfo {
   
   @scala.inline
-  def apply(data: FieldData, `type`: setField): SetFieldInfo = {
+  def apply(data: FieldData): SetFieldInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setField")
     __obj.asInstanceOf[SetFieldInfo]
   }
   

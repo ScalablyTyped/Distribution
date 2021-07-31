@@ -10,9 +10,9 @@ Client-side TypeScript definitions for Minecraft Bedrock Edition's scripting eng
 | ------------------ | :-------------: |
 | Full name          | minecraft-scripting-types-client |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 1025 |
+| # downloads        | 680 |
 | # stars            | 0 |
 
 ## Links

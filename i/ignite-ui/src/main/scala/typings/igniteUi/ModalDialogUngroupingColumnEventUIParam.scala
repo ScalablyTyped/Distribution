@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalDialogUngroupingColumnEventUIParam extends StObject {
   
   /**
     * The key of the column to be grouped.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Get a reference to the current layout object, if any.
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ModalDialogUngroupingColumnEventUIParam {
   

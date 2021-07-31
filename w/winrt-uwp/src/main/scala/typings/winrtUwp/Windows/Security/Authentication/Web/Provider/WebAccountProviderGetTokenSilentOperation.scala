@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a get token silently operation. */

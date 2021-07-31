@@ -9,7 +9,6 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresol
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,39 +16,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @link
   */
-@js.native
 trait EventResource[T] extends StObject {
   
   /**
     * API version of the `data` payload.
     */
-  var api_version: String = js.native
+  var api_version: String
   
   /**
     * Event creation time.
     */
-  var created_at: Timestamp = js.native
+  var created_at: Timestamp
   
   /**
     * Event Payload.
     * Resource of the associated object at the time of the event.
     */
-  var data: T = js.native
+  var data: T
   
   /**
     * Event UUID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Resource name.
     */
-  var resource: event = js.native
+  var resource: event
   
   /**
     * Event type.
     */
-  var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
+  var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved
 }
 object EventResource {
   
@@ -59,16 +57,15 @@ object EventResource {
     created_at: Timestamp,
     data: T,
     id: String,
-    resource: event,
     `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved
   ): EventResource[T] = {
-    val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resource = "event")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventResource[T]]
   }
   
   @scala.inline
-  implicit class EventResourceMutableBuilder[Self <: EventResource[_], T] (val x: Self with EventResource[T]) extends AnyVal {
+  implicit class EventResourceMutableBuilder[Self <: EventResource[?], T] (val x: Self & EventResource[T]) extends AnyVal {
     
     @scala.inline
     def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])

@@ -3,11 +3,11 @@ package typings.winrt.Windows.Devices.Sms
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SmsBinaryMessage extends ISmsBinaryMessage
+trait SmsBinaryMessage
+  extends StObject
+     with ISmsBinaryMessage
 object SmsBinaryMessage {
   
   @scala.inline

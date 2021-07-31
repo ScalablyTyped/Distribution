@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputConfig extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait OutputConfig extends StObject {
     * translation. Could be empty. Column 4 (only present if a glossary is provided in the request): Error when applying the glossary. If the input file extension is txt or html,
     * glossary_error_file will be generated that contains error details. glossary_error_file has format of gs://translation_test/a_b_c_'trg'_glossary_errors.[extension]
     */
-  var gcsDestination: js.UndefOr[GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GcsDestination] = js.undefined
 }
 object OutputConfig {
   

@@ -2,13 +2,11 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionStringParseOptions extends StObject {
   
-  var skipLowerCase: Boolean = js.native
+  var skipLowerCase: Boolean
 }
 object ConnectionStringParseOptions {
   

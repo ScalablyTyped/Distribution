@@ -10,9 +10,9 @@ Takes an async iterator that emits things and emits them as fixed size batches
 | ------------------ | :-------------: |
 | Full name          | it-batch |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 98155 |
+| # releases         | 10 |
+| # dependents       | 4 |
+| # downloads        | 230322 |
 | # stars            | 0 |
 
 ## Links

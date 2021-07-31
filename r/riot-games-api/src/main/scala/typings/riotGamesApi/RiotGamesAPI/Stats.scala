@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,120 +9,119 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Stats {
   
-  @js.native
   trait AggregatedStatsDto extends StObject {
     
-    var averageAssists: Double = js.native
+    var averageAssists: Double
     
-    var averageChampionsKilled: Double = js.native
+    var averageChampionsKilled: Double
     
-    var averageCombatPlayerScore: Double = js.native
+    var averageCombatPlayerScore: Double
     
-    var averageNodeCapture: Double = js.native
+    var averageNodeCapture: Double
     
-    var averageNodeCaptureAssist: Double = js.native
+    var averageNodeCaptureAssist: Double
     
-    var averageNodeNeutralize: Double = js.native
+    var averageNodeNeutralize: Double
     
-    var averageNodeNeutralizeAssist: Double = js.native
+    var averageNodeNeutralizeAssist: Double
     
-    var averageNumDeaths: Double = js.native
+    var averageNumDeaths: Double
     
-    var averageObjectivePlayerScore: Double = js.native
+    var averageObjectivePlayerScore: Double
     
-    var averageTeamObjective: Double = js.native
+    var averageTeamObjective: Double
     
-    var averageTotalPlayerScore: Double = js.native
+    var averageTotalPlayerScore: Double
     
-    var botGamesPlayed: Double = js.native
+    var botGamesPlayed: Double
     
-    var killingSpree: Double = js.native
+    var killingSpree: Double
     
-    var maxAssists: Double = js.native
+    var maxAssists: Double
     
-    var maxChampionsKilled: Double = js.native
+    var maxChampionsKilled: Double
     
-    var maxCombatPlayerScore: Double = js.native
+    var maxCombatPlayerScore: Double
     
-    var maxLargestCriticalStrike: Double = js.native
+    var maxLargestCriticalStrike: Double
     
-    var maxLargestKillingSpree: Double = js.native
+    var maxLargestKillingSpree: Double
     
-    var maxNodeCapture: Double = js.native
+    var maxNodeCapture: Double
     
-    var maxNodeCaptureAssist: Double = js.native
+    var maxNodeCaptureAssist: Double
     
-    var maxNodeNeutralize: Double = js.native
+    var maxNodeNeutralize: Double
     
-    var maxNodeNeutralizeAssist: Double = js.native
+    var maxNodeNeutralizeAssist: Double
     
-    var maxNumDeaths: Double = js.native
+    var maxNumDeaths: Double
     
-    var maxObjectivePlayerScore: Double = js.native
+    var maxObjectivePlayerScore: Double
     
-    var maxTeamObjective: Double = js.native
+    var maxTeamObjective: Double
     
-    var maxTimePlayed: Double = js.native
+    var maxTimePlayed: Double
     
-    var maxTimeSpentLiving: Double = js.native
+    var maxTimeSpentLiving: Double
     
-    var maxTotalPlayerScore: Double = js.native
+    var maxTotalPlayerScore: Double
     
-    var mostChampionKillsPerSession: Double = js.native
+    var mostChampionKillsPerSession: Double
     
-    var mostSpellsCast: Double = js.native
+    var mostSpellsCast: Double
     
-    var normalGamesPlayed: Double = js.native
+    var normalGamesPlayed: Double
     
-    var rankedPremadeGamesPlayed: Double = js.native
+    var rankedPremadeGamesPlayed: Double
     
-    var rankedSoloGamesPlayed: Double = js.native
+    var rankedSoloGamesPlayed: Double
     
-    var totalAssists: Double = js.native
+    var totalAssists: Double
     
-    var totalChampionKills: Double = js.native
+    var totalChampionKills: Double
     
-    var totalDamageDealt: Double = js.native
+    var totalDamageDealt: Double
     
-    var totalDamageTaken: Double = js.native
+    var totalDamageTaken: Double
     
-    var totalDeathsPerSession: Double = js.native
+    var totalDeathsPerSession: Double
     
-    var totalDoubleKills: Double = js.native
+    var totalDoubleKills: Double
     
-    var totalFirstBlood: Double = js.native
+    var totalFirstBlood: Double
     
-    var totalGoldEarned: Double = js.native
+    var totalGoldEarned: Double
     
-    var totalHeal: Double = js.native
+    var totalHeal: Double
     
-    var totalMagicDamageDealt: Double = js.native
+    var totalMagicDamageDealt: Double
     
-    var totalMinionsKills: Double = js.native
+    var totalMinionsKills: Double
     
-    var totalNeutralMinionsKilled: Double = js.native
+    var totalNeutralMinionsKilled: Double
     
-    var totalNodeCapture: Double = js.native
+    var totalNodeCapture: Double
     
-    var totalNodeNeutralize: Double = js.native
+    var totalNodeNeutralize: Double
     
-    var totalPentaKills: Double = js.native
+    var totalPentaKills: Double
     
-    var totalPhysicalDamageDealt: Double = js.native
+    var totalPhysicalDamageDealt: Double
     
-    var totalQuadraKills: Double = js.native
+    var totalQuadraKills: Double
     
-    var totalSessionsLost: Double = js.native
+    var totalSessionsLost: Double
     
-    var totalSessionsPlayed: Double = js.native
+    var totalSessionsPlayed: Double
     
-    var totalSessionsWon: Double = js.native
+    var totalSessionsWon: Double
     
-    var totalTripleKills: Double = js.native
+    var totalTripleKills: Double
     
-    var totalTurretsKilleds: Double = js.native
+    var totalTurretsKilleds: Double
     
-    var totalUnrealKills: Double = js.native
+    var totalUnrealKills: Double
   }
   object AggregatedStatsDto {
     
@@ -363,12 +361,11 @@ object Stats {
     }
   }
   
-  @js.native
   trait ChampionStatsDto extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var stats: AggregatedStatsDto = js.native
+    var stats: AggregatedStatsDto
   }
   object ChampionStatsDto {
     
@@ -389,18 +386,17 @@ object Stats {
     }
   }
   
-  @js.native
   trait PlayerStatsSummaryDto extends StObject {
     
-    var aggregatedStats: AggregatedStatsDto = js.native
+    var aggregatedStats: AggregatedStatsDto
     
-    var losses: Double = js.native
+    var losses: Double
     
-    var modifyDate: Double = js.native
+    var modifyDate: Double
     
-    var playerStatSummaryType: String = js.native
+    var playerStatSummaryType: String
     
-    var wins: Double = js.native
+    var wins: Double
   }
   object PlayerStatsSummaryDto {
     
@@ -436,12 +432,11 @@ object Stats {
     }
   }
   
-  @js.native
   trait PlayerStatsSummaryListDto extends StObject {
     
-    var playerStatSummaries: js.Array[PlayerStatsSummaryDto] = js.native
+    var playerStatSummaries: js.Array[PlayerStatsSummaryDto]
     
-    var summonerId: Double = js.native
+    var summonerId: Double
   }
   object PlayerStatsSummaryListDto {
     
@@ -465,14 +460,13 @@ object Stats {
     }
   }
   
-  @js.native
   trait RankedStatsDto extends StObject {
     
-    var champions: js.Array[ChampionStatsDto] = js.native
+    var champions: js.Array[ChampionStatsDto]
     
-    var modifyDate: Double = js.native
+    var modifyDate: Double
     
-    var summonerId: Double = js.native
+    var summonerId: Double
   }
   object RankedStatsDto {
     

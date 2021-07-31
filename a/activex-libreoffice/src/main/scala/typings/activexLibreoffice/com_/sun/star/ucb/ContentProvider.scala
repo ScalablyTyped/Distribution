@@ -3,13 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a set of Contents. */
-@js.native
 trait ContentProvider
-  extends XContentProvider
+  extends StObject
+     with XContentProvider
      with XContentIdentifierFactory
      with XParameterizedContentProvider
 object ContentProvider {

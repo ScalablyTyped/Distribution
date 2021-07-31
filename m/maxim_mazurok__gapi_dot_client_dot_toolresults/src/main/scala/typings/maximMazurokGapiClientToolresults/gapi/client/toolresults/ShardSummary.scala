@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShardSummary extends StObject {
   
   /**
     * Summaries of the steps belonging to the shard. With flaky_test_attempts enabled from TestExecutionService, more than one run (Step) can present. And the runs will be sorted by
     * multistep_number.
     */
-  var runs: js.UndefOr[js.Array[_]] = js.native
+  var runs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** Merged result of the shard. */
-  var shardResult: js.UndefOr[MergedResult] = js.native
+  var shardResult: js.UndefOr[MergedResult] = js.undefined
 }
 object ShardSummary {
   
@@ -29,7 +27,7 @@ object ShardSummary {
   implicit class ShardSummaryMutableBuilder[Self <: ShardSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setRuns(value: js.Array[_]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    def setRuns(value: js.Array[js.Any]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)

@@ -74,14 +74,16 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
   
-  @JSImport("mz/crypto", "Certificate")
+  @JSImport("mz/crypto", JSImport.Namespace)
   @js.native
-  def Certificate(): typings.node.cryptoMod.Certificate = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Certificate(): typings.node.cryptoMod.Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("Certificate")().asInstanceOf[typings.node.cryptoMod.Certificate]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mz/crypto", "CertificateCls")
@@ -115,247 +117,153 @@ object cryptoMod {
     extends typings.node.cryptoMod.ECDH
   object ECDH {
     
+    @JSImport("mz/crypto", "ECDH")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /* static member */
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(key: BinaryLike, curve: String): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: base64,
-      format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: base64,
-      format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: base64,
-      format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: hex,
-      format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: hex,
-      format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: hex,
-      format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: latin1,
-      format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: latin1,
-      format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: latin1,
-      format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: base64, format: compressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: base64, format: hybrid): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: base64, format: uncompressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: hex, format: compressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: hex, format: hybrid): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: hex, format: uncompressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: latin1, format: compressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: latin1, format: hybrid): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: latin1, format: uncompressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: base64,
       format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: base64,
       format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: base64,
       format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: hex,
       format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: hex,
       format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: hex,
       format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: latin1,
       format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: latin1,
       format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
       outputEncoding: latin1,
       format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_base64(key: BinaryLike, curve: String, inputEncoding: js.UndefOr[scala.Nothing], outputEncoding: base64): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_base64(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: base64): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_compressed(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: js.UndefOr[scala.Nothing],
-      format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_base64(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: base64): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey_base64(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: base64): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_compressed(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: Unit, format: compressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey_compressed(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
-      outputEncoding: js.UndefOr[scala.Nothing],
+      outputEncoding: Unit,
       format: compressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_hex(key: BinaryLike, curve: String, inputEncoding: js.UndefOr[scala.Nothing], outputEncoding: hex): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_hex(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: hex): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_hybrid(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: js.UndefOr[scala.Nothing],
-      format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_hex(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: hex): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey_hex(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: hex): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_hybrid(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: Unit, format: hybrid): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey_hybrid(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
-      outputEncoding: js.UndefOr[scala.Nothing],
+      outputEncoding: Unit,
       format: hybrid
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_latin1(key: BinaryLike, curve: String, inputEncoding: js.UndefOr[scala.Nothing], outputEncoding: latin1): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_latin1(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: latin1): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
-    def convertKey_uncompressed(
-      key: BinaryLike,
-      curve: String,
-      inputEncoding: js.UndefOr[scala.Nothing],
-      outputEncoding: js.UndefOr[scala.Nothing],
-      format: uncompressed
-    ): Buffer | String = js.native
-    @JSImport("mz/crypto", "ECDH.convertKey")
-    @js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_latin1(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: latin1): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
+    def convertKey_latin1(key: BinaryLike, curve: String, inputEncoding: HexBase64Latin1Encoding, outputEncoding: latin1): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    
+    @scala.inline
+    def convertKey_uncompressed(key: BinaryLike, curve: String, inputEncoding: Unit, outputEncoding: Unit, format: uncompressed): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
+    @scala.inline
     def convertKey_uncompressed(
       key: BinaryLike,
       curve: String,
       inputEncoding: HexBase64Latin1Encoding,
-      outputEncoding: js.UndefOr[scala.Nothing],
+      outputEncoding: Unit,
       format: uncompressed
-    ): Buffer | String = js.native
+    ): Buffer | String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertKey")(key.asInstanceOf[js.Any], curve.asInstanceOf[js.Any], inputEncoding.asInstanceOf[js.Any], outputEncoding.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Buffer | String]
   }
   
   @JSImport("mz/crypto", "Hash")
@@ -668,216 +576,157 @@ object cryptoMod {
   }
   
   /** @deprecated since v10.0.0 use `createCipheriv()` */
-  @JSImport("mz/crypto", "createCipher")
-  @js.native
-  def createCipher(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Cipher = js.native
-  @JSImport("mz/crypto", "createCipher")
-  @js.native
-  def createCipher(algorithm: String, password: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Cipher = js.native
+  @scala.inline
+  def createCipher(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
+  @scala.inline
+  def createCipher(algorithm: String, password: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
   /** @deprecated since v10.0.0 use `createCipheriv()` */
-  @JSImport("mz/crypto", "createCipher")
-  @js.native
-  def createCipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): CipherCCM = js.native
+  @scala.inline
+  def createCipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): CipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherCCM]
   /** @deprecated since v10.0.0 use `createCipheriv()` */
-  @JSImport("mz/crypto", "createCipher")
-  @js.native
-  def createCipher(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = js.native
-  @JSImport("mz/crypto", "createCipher")
-  @js.native
-  def createCipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): CipherGCM = js.native
+  @scala.inline
+  def createCipher(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
+  @scala.inline
+  def createCipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Cipher = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Cipher = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: String, key: CipherKey, iv: BinaryLike): typings.node.cryptoMod.Cipher = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: String, key: CipherKey, iv: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Cipher = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: Null, options: CipherCCMOptions): CipherCCM = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): CipherCCM = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey): CipherGCM = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: Null, options: CipherGCMOptions): CipherGCM = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): CipherGCM = js.native
-  @JSImport("mz/crypto", "createCipheriv")
-  @js.native
-  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): CipherGCM = js.native
+  @scala.inline
+  def createCipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
+  @scala.inline
+  def createCipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
+  @scala.inline
+  def createCipheriv(algorithm: String, key: CipherKey, iv: BinaryLike): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
+  @scala.inline
+  def createCipheriv(algorithm: String, key: CipherKey, iv: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Cipher]
+  @scala.inline
+  def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: Null, options: CipherCCMOptions): CipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherCCM]
+  @scala.inline
+  def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): CipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherCCM]
+  @scala.inline
+  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
+  @scala.inline
+  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: Null, options: CipherGCMOptions): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
+  @scala.inline
+  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
+  @scala.inline
+  def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): CipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CipherGCM]
   
   /** @deprecated since v10.0.0 use `createDecipheriv()` */
-  @JSImport("mz/crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Decipher = js.native
-  @JSImport("mz/crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: String, password: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Decipher = js.native
+  @scala.inline
+  def createDecipher(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
+  @scala.inline
+  def createDecipher(algorithm: String, password: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
   /** @deprecated since v10.0.0 use `createDecipheriv()` */
-  @JSImport("mz/crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
+  @scala.inline
+  def createDecipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): DecipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherCCM]
   /** @deprecated since v10.0.0 use `createDecipheriv()` */
-  @JSImport("mz/crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike): DecipherGCM = js.native
-  @JSImport("mz/crypto", "createDecipher")
-  @js.native
-  def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
+  @scala.inline
+  def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
+  @scala.inline
+  def createDecipher(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Decipher = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Decipher = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: String, key: CipherKey, iv: BinaryLike): typings.node.cryptoMod.Decipher = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: String, key: CipherKey, iv: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Decipher = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: Null, options: CipherCCMOptions): DecipherCCM = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey): DecipherGCM = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: Null, options: CipherGCMOptions): DecipherGCM = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = js.native
-  @JSImport("mz/crypto", "createDecipheriv")
-  @js.native
-  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
+  @scala.inline
+  def createDecipheriv(algorithm: String, key: CipherKey): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
+  @scala.inline
+  def createDecipheriv(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
+  @scala.inline
+  def createDecipheriv(algorithm: String, key: CipherKey, iv: BinaryLike): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
+  @scala.inline
+  def createDecipheriv(algorithm: String, key: CipherKey, iv: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Decipher]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: Null, options: CipherCCMOptions): DecipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherCCM]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherCCM]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: Null, options: CipherGCMOptions): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
+  @scala.inline
+  def createDecipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DecipherGCM]
   
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime_length: Double): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime_length: Double, generator: Double): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime_length: Double, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
+  @scala.inline
+  def createDiffieHellman(prime_length: Double): typings.node.cryptoMod.DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime_length: Double, generator: Double): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime_length: Double, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], prime_encoding.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
   def createDiffieHellman(
     prime: String,
     prime_encoding: HexBase64Latin1Encoding,
     generator: String,
     generator_encoding: HexBase64Latin1Encoding
-  ): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Double): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = js.native
-  @JSImport("mz/crypto", "createDiffieHellman")
-  @js.native
-  def createDiffieHellman(prime: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = js.native
+  ): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], prime_encoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], generator_encoding.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Double): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], prime_encoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], prime_encoding.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  @scala.inline
+  def createDiffieHellman(prime: ArrayBufferView): typings.node.cryptoMod.DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
   
-  @JSImport("mz/crypto", "createECDH")
-  @js.native
-  def createECDH(curve_name: String): typings.node.cryptoMod.ECDH = js.native
+  @scala.inline
+  def createECDH(curve_name: String): typings.node.cryptoMod.ECDH = ^.asInstanceOf[js.Dynamic].applyDynamic("createECDH")(curve_name.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.ECDH]
   
-  @JSImport("mz/crypto", "createHash")
-  @js.native
-  def createHash(algorithm: String): typings.node.cryptoMod.Hash = js.native
-  @JSImport("mz/crypto", "createHash")
-  @js.native
-  def createHash(algorithm: String, options: HashOptions): typings.node.cryptoMod.Hash = js.native
+  @scala.inline
+  def createHash(algorithm: String): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Hash]
+  @scala.inline
+  def createHash(algorithm: String, options: HashOptions): typings.node.cryptoMod.Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Hash]
   
-  @JSImport("mz/crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: BinaryLike): typings.node.cryptoMod.Hmac = js.native
-  @JSImport("mz/crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Hmac = js.native
-  @JSImport("mz/crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: typings.node.cryptoMod.KeyObject): typings.node.cryptoMod.Hmac = js.native
-  @JSImport("mz/crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: typings.node.cryptoMod.KeyObject, options: TransformOptions): typings.node.cryptoMod.Hmac = js.native
+  @scala.inline
+  def createHmac(algorithm: String, key: BinaryLike): typings.node.cryptoMod.Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: typings.node.cryptoMod.KeyObject): typings.node.cryptoMod.Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: typings.node.cryptoMod.KeyObject, options: TransformOptions): typings.node.cryptoMod.Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Hmac]
   
-  @JSImport("mz/crypto", "createPrivateKey")
-  @js.native
-  def createPrivateKey(key: String): typings.node.cryptoMod.KeyObject = js.native
-  @JSImport("mz/crypto", "createPrivateKey")
-  @js.native
-  def createPrivateKey(key: Buffer): typings.node.cryptoMod.KeyObject = js.native
-  @JSImport("mz/crypto", "createPrivateKey")
-  @js.native
-  def createPrivateKey(key: PrivateKeyInput): typings.node.cryptoMod.KeyObject = js.native
+  @scala.inline
+  def createPrivateKey(key: String): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.inline
+  def createPrivateKey(key: Buffer): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.inline
+  def createPrivateKey(key: PrivateKeyInput): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
   
-  @JSImport("mz/crypto", "createPublicKey")
-  @js.native
-  def createPublicKey(key: String): typings.node.cryptoMod.KeyObject = js.native
-  @JSImport("mz/crypto", "createPublicKey")
-  @js.native
-  def createPublicKey(key: Buffer): typings.node.cryptoMod.KeyObject = js.native
-  @JSImport("mz/crypto", "createPublicKey")
-  @js.native
-  def createPublicKey(key: typings.node.cryptoMod.KeyObject): typings.node.cryptoMod.KeyObject = js.native
-  @JSImport("mz/crypto", "createPublicKey")
-  @js.native
-  def createPublicKey(key: PublicKeyInput): typings.node.cryptoMod.KeyObject = js.native
+  @scala.inline
+  def createPublicKey(key: String): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.inline
+  def createPublicKey(key: Buffer): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.inline
+  def createPublicKey(key: typings.node.cryptoMod.KeyObject): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
+  @scala.inline
+  def createPublicKey(key: PublicKeyInput): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
   
-  @JSImport("mz/crypto", "createSecretKey")
-  @js.native
-  def createSecretKey(key: ArrayBufferView): typings.node.cryptoMod.KeyObject = js.native
+  @scala.inline
+  def createSecretKey(key: ArrayBufferView): typings.node.cryptoMod.KeyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecretKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.KeyObject]
   
-  @JSImport("mz/crypto", "createSign")
-  @js.native
-  def createSign(algorithm: String): typings.node.cryptoMod.Signer = js.native
-  @JSImport("mz/crypto", "createSign")
-  @js.native
-  def createSign(algorithm: String, options: WritableOptions): typings.node.cryptoMod.Signer = js.native
+  @scala.inline
+  def createSign(algorithm: String): typings.node.cryptoMod.Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Signer]
+  @scala.inline
+  def createSign(algorithm: String, options: WritableOptions): typings.node.cryptoMod.Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Signer]
   
-  @JSImport("mz/crypto", "createVerify")
-  @js.native
-  def createVerify(algorithm: String): typings.node.cryptoMod.Verify_ = js.native
-  @JSImport("mz/crypto", "createVerify")
-  @js.native
-  def createVerify(algorithm: String, options: WritableOptions): typings.node.cryptoMod.Verify_ = js.native
+  @scala.inline
+  def createVerify(algorithm: String): typings.node.cryptoMod.Verify_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Verify_]
+  @scala.inline
+  def createVerify(algorithm: String, options: WritableOptions): typings.node.cryptoMod.Verify_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.cryptoMod.Verify_]
   
   /**
     * Computes the Diffie-Hellman secret based on a privateKey and a publicKey.
     * Both keys must have the same asymmetricKeyType, which must be one of
     * 'dh' (for Diffie-Hellman), 'ec' (for ECDH), 'x448', or 'x25519' (for ECDH-ES).
     */
-  @JSImport("mz/crypto", "diffieHellman")
-  @js.native
-  def diffieHellman(options: PrivateKey): Buffer = js.native
+  @scala.inline
+  def diffieHellman(options: PrivateKey): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("diffieHellman")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /** @deprecated since v10.0.0 */
   @JSImport("mz/crypto", "fips")
   @js.native
   val fips: Boolean = js.native
   
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  @scala.inline
   def generateKeyPair(
     `type`: dsa,
     options: DSAKeyPairKeyObjectOptions,
@@ -887,9 +736,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: dsa,
     options: DSAKeyPairOptions[der | pem, der | pem],
@@ -899,9 +747,8 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ec,
     options: ECKeyPairKeyObjectOptions,
@@ -911,9 +758,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ec,
     options: ECKeyPairOptions[der | pem, der | pem],
@@ -923,21 +769,19 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed25519,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* publicKey */ typings.node.cryptoMod.KeyObject, 
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed25519,
     options: ED25519KeyPairKeyObjectOptions,
@@ -947,9 +791,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed25519,
     options: ED25519KeyPairOptions[der | pem, der | pem],
@@ -959,21 +802,19 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed448,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* publicKey */ typings.node.cryptoMod.KeyObject, 
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed448,
     options: ED448KeyPairKeyObjectOptions,
@@ -983,9 +824,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: ed448,
     options: ED448KeyPairOptions[der | pem, der | pem],
@@ -995,9 +835,8 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: rsa,
     options: RSAKeyPairKeyObjectOptions,
@@ -1007,9 +846,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: rsa,
     options: RSAKeyPairOptions[der | pem, der | pem],
@@ -1019,21 +857,19 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x25519,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* publicKey */ typings.node.cryptoMod.KeyObject, 
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x25519,
     options: X25519KeyPairKeyObjectOptions,
@@ -1043,9 +879,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x25519,
     options: X25519KeyPairOptions[der | pem, der | pem],
@@ -1055,21 +890,19 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x448,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* publicKey */ typings.node.cryptoMod.KeyObject, 
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x448,
     options: X448KeyPairKeyObjectOptions,
@@ -1079,9 +912,8 @@ object cryptoMod {
       /* privateKey */ typings.node.cryptoMod.KeyObject, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "generateKeyPair")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def generateKeyPair(
     `type`: x448,
     options: X448KeyPairOptions[der | pem, der | pem],
@@ -1091,501 +923,381 @@ object cryptoMod {
       (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: ed25519, options: ED25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: ed448, options: ED448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: x25519, options: X25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync(`type`: x448, options: X448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_ec(`type`: ec, options: ECKeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_ed25519(`type`: ed25519): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_ed25519(`type`: ed25519, options: ED25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_ed448(`type`: ed448): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_ed448(`type`: ed448, options: ED448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_x25519(`type`: x25519): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_x25519(`type`: x25519, options: X25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_x448(`type`: x448): KeyPairKeyObjectResult = js.native
-  @JSImport("mz/crypto", "generateKeyPairSync")
-  @js.native
-  def generateKeyPairSync_x448(`type`: x448, options: X448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = js.native
+  @scala.inline
+  def generateKeyPairSync(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: ed25519, options: ED25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: ed448, options: ED448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: x25519, options: X25519KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
+  @scala.inline
+  def generateKeyPairSync(`type`: x448, options: X448KeyPairOptions[der | pem, der | pem]): KeyPairSyncResult[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairSyncResult[String, String]]
   
-  @JSImport("mz/crypto", "getCiphers")
-  @js.native
-  def getCiphers(): js.Array[String] = js.native
+  @scala.inline
+  def generateKeyPairSync_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   
-  @JSImport("mz/crypto", "getCurves")
-  @js.native
-  def getCurves(): js.Array[String] = js.native
+  @scala.inline
+  def generateKeyPairSync_ec(`type`: ec, options: ECKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   
-  @JSImport("mz/crypto", "getDiffieHellman")
-  @js.native
-  def getDiffieHellman(group_name: String): typings.node.cryptoMod.DiffieHellman_ = js.native
+  @scala.inline
+  def generateKeyPairSync_ed25519(`type`: ed25519): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.inline
+  def generateKeyPairSync_ed25519(`type`: ed25519, options: ED25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   
-  @JSImport("mz/crypto", "getFips")
-  @js.native
-  def getFips(): `1` | `0` = js.native
+  @scala.inline
+  def generateKeyPairSync_ed448(`type`: ed448): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.inline
+  def generateKeyPairSync_ed448(`type`: ed448, options: ED448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   
-  @JSImport("mz/crypto", "getHashes")
-  @js.native
-  def getHashes(): js.Array[String] = js.native
+  @scala.inline
+  def generateKeyPairSync_rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
   
-  @JSImport("mz/crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): js.Promise[Buffer] = js.native
-  @JSImport("mz/crypto", "pbkdf2")
-  @js.native
+  @scala.inline
+  def generateKeyPairSync_x25519(`type`: x25519): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.inline
+  def generateKeyPairSync_x25519(`type`: x25519, options: X25519KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  
+  @scala.inline
+  def generateKeyPairSync_x448(`type`: x448): KeyPairKeyObjectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[KeyPairKeyObjectResult]
+  @scala.inline
+  def generateKeyPairSync_x448(`type`: x448, options: X448KeyPairKeyObjectOptions): KeyPairKeyObjectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairSync")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyPairKeyObjectResult]
+  
+  @scala.inline
+  def getCiphers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCiphers")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def getCurves(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurves")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def getDiffieHellman(group_name: String): typings.node.cryptoMod.DiffieHellman_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffieHellman")(group_name.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.DiffieHellman_]
+  
+  @scala.inline
+  def getFips(): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("getFips")().asInstanceOf[`1` | `0`]
+  
+  @scala.inline
+  def getHashes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashes")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def pbkdf2(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def pbkdf2(
     password: BinaryLike,
     salt: BinaryLike,
     iterations: Double,
     keylen: Double,
     digest: String,
-    callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "pbkdf2Sync")
-  @js.native
-  def pbkdf2Sync(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @scala.inline
+  def pbkdf2Sync(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "privateDecrypt")
-  @js.native
-  def privateDecrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "privateDecrypt")
-  @js.native
-  def privateDecrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
+  @scala.inline
+  def privateDecrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("privateDecrypt")(private_key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def privateDecrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("privateDecrypt")(private_key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "privateEncrypt")
-  @js.native
-  def privateEncrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "privateEncrypt")
-  @js.native
-  def privateEncrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
+  @scala.inline
+  def privateEncrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("privateEncrypt")(private_key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def privateEncrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("privateEncrypt")(private_key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "pseudoRandomBytes")
-  @js.native
-  def pseudoRandomBytes(size: Double): js.Promise[Buffer] = js.native
-  @JSImport("mz/crypto", "pseudoRandomBytes")
-  @js.native
-  def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def pseudoRandomBytes(size: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "publicDecrypt")
-  @js.native
-  def publicDecrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "publicDecrypt")
-  @js.native
-  def publicDecrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "publicDecrypt")
-  @js.native
-  def publicDecrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = js.native
+  @scala.inline
+  def publicDecrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicDecrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def publicDecrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicDecrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def publicDecrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicDecrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "publicEncrypt")
-  @js.native
-  def publicEncrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "publicEncrypt")
-  @js.native
-  def publicEncrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
-  @JSImport("mz/crypto", "publicEncrypt")
-  @js.native
-  def publicEncrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = js.native
+  @scala.inline
+  def publicEncrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicEncrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def publicEncrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicEncrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def publicEncrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicEncrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double): js.Promise[Buffer] = js.native
-  @JSImport("mz/crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def randomBytes(size: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def randomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: DataView, callback: js.Function2[/* err */ Error | Null, /* buf */ DataView, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  @scala.inline
+  def randomFill(buffer: DataView, callback: js.Function2[/* err */ Error | Null, /* buf */ DataView, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: DataView,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: DataView,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ DataView, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Float32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Float32Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Float32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Float32Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Float32Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Float32Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Float32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Float64Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Float64Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Float64Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Float64Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Float64Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Float64Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Float64Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Int16Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int16Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Int16Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int16Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int16Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int16Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int16Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Int32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int32Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Int32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int32Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int32Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int32Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Int8Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int8Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Int8Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Int8Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int8Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Int8Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Int8Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Uint16Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint16Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Uint16Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint16Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint16Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint16Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint16Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Uint32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint32Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Uint32Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint32Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint32Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint32Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint32Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
-  def randomFill(buffer: Uint8Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8Array, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomFill(buffer: Uint8Array, callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8Array, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint8Array,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint8Array,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8Array, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint8ClampedArray,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint8ClampedArray,
     offset: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "randomFill")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def randomFill(
     buffer: Uint8ClampedArray,
     offset: Double,
     size: Double,
     callback: js.Function2[/* err */ Error | Null, /* buf */ Uint8ClampedArray, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFill")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: DataView): DataView = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: DataView, offset: js.UndefOr[scala.Nothing], size: Double): DataView = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: DataView, offset: Double): DataView = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: DataView, offset: Double, size: Double): DataView = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float32Array): Float32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float32Array, offset: js.UndefOr[scala.Nothing], size: Double): Float32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float32Array, offset: Double): Float32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float32Array, offset: Double, size: Double): Float32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float64Array): Float64Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float64Array, offset: js.UndefOr[scala.Nothing], size: Double): Float64Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float64Array, offset: Double): Float64Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Float64Array, offset: Double, size: Double): Float64Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int16Array): Int16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int16Array, offset: js.UndefOr[scala.Nothing], size: Double): Int16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int16Array, offset: Double): Int16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int16Array, offset: Double, size: Double): Int16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int32Array): Int32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int32Array, offset: js.UndefOr[scala.Nothing], size: Double): Int32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int32Array, offset: Double): Int32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int32Array, offset: Double, size: Double): Int32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int8Array): Int8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int8Array, offset: js.UndefOr[scala.Nothing], size: Double): Int8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int8Array, offset: Double): Int8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Int8Array, offset: Double, size: Double): Int8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint16Array): Uint16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint16Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint16Array, offset: Double): Uint16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint16Array, offset: Double, size: Double): Uint16Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint32Array): Uint32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint32Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint32Array, offset: Double): Uint32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint32Array, offset: Double, size: Double): Uint32Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8Array): Uint8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8Array, offset: Double): Uint8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8Array, offset: Double, size: Double): Uint8Array = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8ClampedArray): Uint8ClampedArray = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8ClampedArray, offset: js.UndefOr[scala.Nothing], size: Double): Uint8ClampedArray = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8ClampedArray, offset: Double): Uint8ClampedArray = js.native
-  @JSImport("mz/crypto", "randomFillSync")
-  @js.native
-  def randomFillSync(buffer: Uint8ClampedArray, offset: Double, size: Double): Uint8ClampedArray = js.native
+  @scala.inline
+  def randomFillSync(buffer: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  @scala.inline
+  def randomFillSync(buffer: DataView, offset: Double): DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[DataView]
+  @scala.inline
+  def randomFillSync(buffer: DataView, offset: Double, size: Double): DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DataView]
+  @scala.inline
+  def randomFillSync(buffer: DataView, offset: Unit, size: Double): DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DataView]
+  @scala.inline
+  def randomFillSync(buffer: Float32Array): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+  @scala.inline
+  def randomFillSync(buffer: Float32Array, offset: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def randomFillSync(buffer: Float32Array, offset: Double, size: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def randomFillSync(buffer: Float32Array, offset: Unit, size: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def randomFillSync(buffer: Float64Array): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
+  @scala.inline
+  def randomFillSync(buffer: Float64Array, offset: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def randomFillSync(buffer: Float64Array, offset: Double, size: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def randomFillSync(buffer: Float64Array, offset: Unit, size: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def randomFillSync(buffer: Int16Array): Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Int16Array]
+  @scala.inline
+  def randomFillSync(buffer: Int16Array, offset: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def randomFillSync(buffer: Int16Array, offset: Double, size: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def randomFillSync(buffer: Int16Array, offset: Unit, size: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def randomFillSync(buffer: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
+  @scala.inline
+  def randomFillSync(buffer: Int32Array, offset: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def randomFillSync(buffer: Int32Array, offset: Double, size: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def randomFillSync(buffer: Int32Array, offset: Unit, size: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def randomFillSync(buffer: Int8Array): Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Int8Array]
+  @scala.inline
+  def randomFillSync(buffer: Int8Array, offset: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def randomFillSync(buffer: Int8Array, offset: Double, size: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def randomFillSync(buffer: Int8Array, offset: Unit, size: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint16Array): Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint16Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint16Array, offset: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint16Array, offset: Double, size: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint16Array, offset: Unit, size: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint32Array): Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint32Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint32Array, offset: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint32Array, offset: Double, size: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint32Array, offset: Unit, size: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint8Array, offset: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint8Array, offset: Double, size: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint8Array, offset: Unit, size: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def randomFillSync(buffer: Uint8ClampedArray): Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def randomFillSync(buffer: Uint8ClampedArray, offset: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def randomFillSync(buffer: Uint8ClampedArray, offset: Double, size: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def randomFillSync(buffer: Uint8ClampedArray, offset: Unit, size: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("randomFillSync")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
   
-  @JSImport("mz/crypto", "randomInt")
-  @js.native
-  def randomInt(max: Double): Double = js.native
-  @JSImport("mz/crypto", "randomInt")
-  @js.native
-  def randomInt(max: Double, callback: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = js.native
-  @JSImport("mz/crypto", "randomInt")
-  @js.native
-  def randomInt(min: Double, max: Double): Double = js.native
-  @JSImport("mz/crypto", "randomInt")
-  @js.native
-  def randomInt(min: Double, max: Double, callback: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def randomInt(max: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(max.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def randomInt(max: Double, callback: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(max.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def randomInt(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def randomInt(min: Double, max: Double, callback: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "scrypt")
-  @js.native
+  @scala.inline
   def scrypt(
     password: BinaryLike,
     salt: BinaryLike,
     keylen: Double,
     callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("mz/crypto", "scrypt")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def scrypt(
     password: BinaryLike,
     salt: BinaryLike,
     keylen: Double,
     options: ScryptOptions,
     callback: js.Function2[/* err */ Error | Null, /* derivedKey */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mz/crypto", "scryptSync")
-  @js.native
-  def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double): Buffer = js.native
-  @JSImport("mz/crypto", "scryptSync")
-  @js.native
-  def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double, options: ScryptOptions): Buffer = js.native
+  @scala.inline
+  def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("scryptSync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double, options: ScryptOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("scryptSync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: KeyLike): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -1594,53 +1306,28 @@ object cryptoMod {
     * If `key` is not a [`KeyObject`][], this function behaves as if `key` had been
     * passed to [`crypto.createPrivateKey()`][].
     */
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: String, data: ArrayBufferView, key: KeyLike): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: String, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: Null, data: ArrayBufferView, key: KeyLike): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: Null, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = js.native
-  @JSImport("mz/crypto", "sign")
-  @js.native
-  def sign(algorithm: Null, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
+  @scala.inline
+  def sign(algorithm: String, data: ArrayBufferView, key: KeyLike): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: String, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Null, data: ArrayBufferView, key: KeyLike): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Null, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Null, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Unit, data: ArrayBufferView, key: KeyLike): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Unit, data: ArrayBufferView, key: SignKeyObjectInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def sign(algorithm: Unit, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("mz/crypto", "timingSafeEqual")
-  @js.native
-  def timingSafeEqual(a: ArrayBufferView, b: ArrayBufferView): Boolean = js.native
+  @scala.inline
+  def timingSafeEqual(a: ArrayBufferView, b: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("timingSafeEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: ArrayBufferView,
-    key: KeyLike,
-    signature: ArrayBufferView
-  ): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: ArrayBufferView,
-    key: VerifyKeyObjectInput,
-    signature: ArrayBufferView
-  ): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: ArrayBufferView,
-    key: VerifyPublicKeyInput,
-    signature: ArrayBufferView
-  ): Boolean = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -1649,22 +1336,22 @@ object cryptoMod {
     * If `key` is not a [`KeyObject`][], this function behaves as if `key` had been
     * passed to [`crypto.createPublicKey()`][].
     */
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: String, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: String, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: String, data: ArrayBufferView, key: VerifyPublicKeyInput, signature: ArrayBufferView): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: Null, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: Null, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = js.native
-  @JSImport("mz/crypto", "verify")
-  @js.native
-  def verify(algorithm: Null, data: ArrayBufferView, key: VerifyPublicKeyInput, signature: ArrayBufferView): Boolean = js.native
+  @scala.inline
+  def verify(algorithm: String, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: String, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: String, data: ArrayBufferView, key: VerifyPublicKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Null, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Null, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Null, data: ArrayBufferView, key: VerifyPublicKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Unit, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Unit, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verify(algorithm: Unit, data: ArrayBufferView, key: VerifyPublicKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

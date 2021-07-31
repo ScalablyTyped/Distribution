@@ -20,7 +20,6 @@ import typings.unist.mod.Node
 import typings.unist.mod.Parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -37,46 +36,45 @@ object mod extends Shortcut {
   type Compiler = RemarkCompiler
   
   /* Inlined std.Partial<remark-stringify.remark-stringify.RemarkStringifyOptions> */
-  @js.native
   trait PartialRemarkStringifyOptions extends StObject {
     
-    var bullet: js.UndefOr[`-_` | Asterisk | Plussign] = js.native
+    var bullet: js.UndefOr[`-_` | Asterisk | Plussign] = js.undefined
     
-    var closeAtx: js.UndefOr[Boolean] = js.native
+    var closeAtx: js.UndefOr[Boolean] = js.undefined
     
-    var commonmark: js.UndefOr[Boolean] = js.native
+    var commonmark: js.UndefOr[Boolean] = js.undefined
     
-    var emphasis: js.UndefOr[_underscore | Asterisk] = js.native
+    var emphasis: js.UndefOr[_underscore | Asterisk] = js.undefined
     
-    var entities: js.UndefOr[Boolean | numbers | escape] = js.native
+    var entities: js.UndefOr[Boolean | numbers | escape] = js.undefined
     
-    var fence: js.UndefOr[Tilde | Graveaccent] = js.native
+    var fence: js.UndefOr[Tilde | Graveaccent] = js.undefined
     
-    var fences: js.UndefOr[Boolean] = js.native
+    var fences: js.UndefOr[Boolean] = js.undefined
     
-    var gfm: js.UndefOr[Boolean] = js.native
+    var gfm: js.UndefOr[Boolean] = js.undefined
     
-    var incrementListMarker: js.UndefOr[Boolean] = js.native
+    var incrementListMarker: js.UndefOr[Boolean] = js.undefined
     
-    var listItemIndent: js.UndefOr[tab | `1` | mixed] = js.native
+    var listItemIndent: js.UndefOr[tab | `1` | mixed] = js.undefined
     
-    var rule: js.UndefOr[`-_` | _underscore | Asterisk] = js.native
+    var rule: js.UndefOr[`-_` | _underscore | Asterisk] = js.undefined
     
-    var ruleRepetition: js.UndefOr[Double] = js.native
+    var ruleRepetition: js.UndefOr[Double] = js.undefined
     
-    var ruleSpaces: js.UndefOr[Boolean] = js.native
+    var ruleSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var setext: js.UndefOr[Boolean] = js.native
+    var setext: js.UndefOr[Boolean] = js.undefined
     
-    var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.native
+    var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.undefined
     
-    var strong: js.UndefOr[_underscore | Asterisk] = js.native
+    var strong: js.UndefOr[_underscore | Asterisk] = js.undefined
     
-    var tableCellPadding: js.UndefOr[Boolean] = js.native
+    var tableCellPadding: js.UndefOr[Boolean] = js.undefined
     
-    var tablePipeAlign: js.UndefOr[Boolean] = js.native
+    var tablePipeAlign: js.UndefOr[Boolean] = js.undefined
     
-    var tightDefinitions: js.UndefOr[Boolean] = js.native
+    var tightDefinitions: js.UndefOr[Boolean] = js.undefined
   }
   object PartialRemarkStringifyOptions {
     
@@ -205,12 +203,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RemarkCompiler extends StObject {
     
-    def compile(): String = js.native
+    def compile(): String
     
-    var visitors: StringDictionary[Visitor] = js.native
+    var visitors: StringDictionary[Visitor]
   }
   object RemarkCompiler {
     
@@ -231,46 +228,45 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RemarkStringifyOptions extends StObject {
     
-    var bullet: `-_` | Asterisk | Plussign = js.native
+    var bullet: `-_` | Asterisk | Plussign
     
-    var closeAtx: Boolean = js.native
+    var closeAtx: Boolean
     
-    var commonmark: Boolean = js.native
+    var commonmark: Boolean
     
-    var emphasis: _underscore | Asterisk = js.native
+    var emphasis: _underscore | Asterisk
     
-    var entities: Boolean | numbers | escape = js.native
+    var entities: Boolean | numbers | escape
     
-    var fence: Tilde | Graveaccent = js.native
+    var fence: Tilde | Graveaccent
     
-    var fences: Boolean = js.native
+    var fences: Boolean
     
-    var gfm: Boolean = js.native
+    var gfm: Boolean
     
-    var incrementListMarker: Boolean = js.native
+    var incrementListMarker: Boolean
     
-    var listItemIndent: tab | `1` | mixed = js.native
+    var listItemIndent: tab | `1` | mixed
     
-    var rule: `-_` | _underscore | Asterisk = js.native
+    var rule: `-_` | _underscore | Asterisk
     
-    var ruleRepetition: Double = js.native
+    var ruleRepetition: Double
     
-    var ruleSpaces: Boolean = js.native
+    var ruleSpaces: Boolean
     
-    var setext: Boolean = js.native
+    var setext: Boolean
     
-    def stringLength(s: String): Double = js.native
+    def stringLength(s: String): Double
     
-    var strong: _underscore | Asterisk = js.native
+    var strong: _underscore | Asterisk
     
-    var tableCellPadding: Boolean = js.native
+    var tableCellPadding: Boolean
     
-    var tablePipeAlign: Boolean = js.native
+    var tablePipeAlign: Boolean
     
-    var tightDefinitions: Boolean = js.native
+    var tightDefinitions: Boolean
   }
   object RemarkStringifyOptions {
     

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecTcpRouteActionWeightedTarget extends StObject {
   
   /**
     * The virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
     */
-  var virtualNode: String = js.native
+  var virtualNode: String
   
   /**
     * The relative weight of the weighted target. An integer between 0 and 100.
     */
-  var weight: Double = js.native
+  var weight: Double
 }
 object RouteSpecTcpRouteActionWeightedTarget {
   

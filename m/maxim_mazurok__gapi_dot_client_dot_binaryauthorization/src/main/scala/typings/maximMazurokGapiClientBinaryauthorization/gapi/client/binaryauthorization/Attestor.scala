@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attestor extends StObject {
   
   /** Optional. A descriptive comment. This field may be updated. The field may be displayed in chooser dialogs. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Required. The resource name, in the format: `projects/∗/attestors/ *`. This field may not be updated. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Time when the attestor was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** This specifies how an attestation will be read, and how it will be used during policy enforcement. */
-  var userOwnedGrafeasNote: js.UndefOr[UserOwnedGrafeasNote] = js.native
+  var userOwnedGrafeasNote: js.UndefOr[UserOwnedGrafeasNote] = js.undefined
 }
 object Attestor {
   

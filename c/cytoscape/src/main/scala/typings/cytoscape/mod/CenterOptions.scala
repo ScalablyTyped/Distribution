@@ -2,13 +2,11 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CenterOptions extends StObject {
   
-  var eles: CollectionArgument | Selector = js.native
+  var eles: CollectionArgument | Selector
 }
 object CenterOptions {
   

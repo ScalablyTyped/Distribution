@@ -8,18 +8,23 @@ import typings.redux.mod.Reducer
 import typings.redux.mod.ReducersMapObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("redux-saga-tester", JSImport.Default)
   @js.native
-  class default[StateType /* <: js.Object */] () extends SagaTester[StateType] {
+  class default[StateType /* <: js.Object */] ()
+    extends StObject
+       with SagaTester[StateType] {
     def this(options: SagaTesterOptions[StateType]) = this()
   }
   
-  type SagaFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait SagaFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   @js.native
   trait SagaTester[StateType /* <: js.Object */] extends StObject {
@@ -80,22 +85,21 @@ object mod {
     def wasCalled(actionType: String): Boolean = js.native
   }
   
-  @js.native
   trait SagaTesterOptions[StateType] extends StObject {
     
     var combineReducers: js.UndefOr[
-        js.Function1[/* map */ ReducersMapObject[_, Action[_]], Reducer[StateType, AnyAction]]
-      ] = js.native
+        js.Function1[/* map */ ReducersMapObject[js.Any, Action[js.Any]], Reducer[StateType, AnyAction]]
+      ] = js.undefined
     
-    var ignoreReduxActions: js.UndefOr[Boolean] = js.native
+    var ignoreReduxActions: js.UndefOr[Boolean] = js.undefined
     
-    var initialState: js.UndefOr[StateType] = js.native
+    var initialState: js.UndefOr[StateType] = js.undefined
     
-    var middlewares: js.UndefOr[js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]]] = js.native
+    var middlewares: js.UndefOr[js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var reducers: js.UndefOr[(ReducersMapObject[_, Action[_]]) | (Reducer[StateType, AnyAction])] = js.native
+    var reducers: js.UndefOr[(ReducersMapObject[js.Any, Action[js.Any]]) | (Reducer[StateType, AnyAction])] = js.undefined
   }
   object SagaTesterOptions {
     
@@ -106,10 +110,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class SagaTesterOptionsMutableBuilder[Self <: SagaTesterOptions[_], StateType] (val x: Self with SagaTesterOptions[StateType]) extends AnyVal {
+    implicit class SagaTesterOptionsMutableBuilder[Self <: SagaTesterOptions[?], StateType] (val x: Self & SagaTesterOptions[StateType]) extends AnyVal {
       
       @scala.inline
-      def setCombineReducers(value: /* map */ ReducersMapObject[_, Action[_]] => Reducer[StateType, AnyAction]): Self = StObject.set(x, "combineReducers", js.Any.fromFunction1(value))
+      def setCombineReducers(value: /* map */ ReducersMapObject[js.Any, Action[js.Any]] => Reducer[StateType, AnyAction]): Self = StObject.set(x, "combineReducers", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCombineReducersUndefined: Self = StObject.set(x, "combineReducers", js.undefined)
@@ -127,7 +131,7 @@ object mod {
       def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
       @scala.inline
-      def setMiddlewares(value: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      def setMiddlewares(value: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
@@ -142,7 +146,7 @@ object mod {
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setReducers(value: (ReducersMapObject[_, Action[_]]) | (Reducer[StateType, AnyAction])): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      def setReducers(value: (ReducersMapObject[js.Any, Action[js.Any]]) | (Reducer[StateType, AnyAction])): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReducersFunction2(value: (/* state */ js.UndefOr[StateType], AnyAction) => StateType): Self = StObject.set(x, "reducers", js.Any.fromFunction2(value))

@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encodeMod {
@@ -13,24 +12,23 @@ object encodeMod {
   /* static members */
   object EncodeUtils {
     
-    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils.decodeHtml")
+    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils")
     @js.native
-    def decodeHtml(text: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils.decodeViaTextArea")
-    @js.native
-    def decodeViaTextArea(html: String): String = js.native
+    @scala.inline
+    def decodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils.encodeHtml")
-    @js.native
-    def encodeHtml(text: String): String = js.native
+    @scala.inline
+    def decodeViaTextArea(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeViaTextArea")(html.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils.prepareTextForCallBackRequest")
-    @js.native
-    def prepareTextForCallBackRequest(text: String): String = js.native
+    @scala.inline
+    def encodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils.prepareTextForRequest")
-    @js.native
-    def prepareTextForRequest(text: String): String = js.native
+    @scala.inline
+    def prepareTextForCallBackRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForCallBackRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def prepareTextForRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

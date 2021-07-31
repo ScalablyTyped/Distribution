@@ -2,35 +2,35 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupOptions extends DivOverlayOptions {
+trait PopupOptions
+  extends StObject
+     with DivOverlayOptions {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPan: js.UndefOr[Boolean] = js.undefined
   
-  var autoPanPadding: js.UndefOr[PointExpression] = js.native
+  var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
   
-  var autoPanPaddingBottomRight: js.UndefOr[PointExpression] = js.native
+  var autoPanPaddingBottomRight: js.UndefOr[PointExpression] = js.undefined
   
-  var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.native
+  var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnEscapeKey: js.UndefOr[Boolean] = js.native
+  var closeOnEscapeKey: js.UndefOr[Boolean] = js.undefined
   
-  var keepInView: js.UndefOr[Boolean] = js.native
+  var keepInView: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
 }
 object PopupOptions {
   

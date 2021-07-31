@@ -2,31 +2,31 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaLineProps extends AreaBaseProps {
+trait AreaLineProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * The x coordinate of the line's start point.
     */
-  var x1: Double | String = js.native
+  var x1: Double | String
   
   /**
     * The x coordinate of the line's end point.
     */
-  var x2: Double | String = js.native
+  var x2: Double | String
   
   /**
     * The y coordinate of the line's start point.
     */
-  var y1: Double | String = js.native
+  var y1: Double | String
   
   /**
     * The y coordinate of the line's end point.
     */
-  var y2: Double | String = js.native
+  var y2: Double | String
 }
 object AreaLineProps {
   

@@ -3,7 +3,6 @@ package typings.electronUnhandled
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,33 +11,32 @@ object mod {
   	Catch unhandled errors and promise rejections in your [Electron](https://electronjs.org) app.
   	You probably want to call this both in the main process and any renderer processes to catch all possible errors.
   	*/
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: UnhandledOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("electron-unhandled", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
-  @JSImport("electron-unhandled", JSImport.Namespace)
-  @js.native
-  def apply(options: UnhandledOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Log an error. This does the same as with caught unhandled errors.
   	It will use the same options specified in the `unhandled()` call or the defaults.
   	@param error - Error to log.
   	*/
-  @JSImport("electron-unhandled", "logError")
-  @js.native
-  def logError(error: Error): Unit = js.native
-  @JSImport("electron-unhandled", "logError")
-  @js.native
-  def logError(error: Error, options: LogErrorOptions): Unit = js.native
+  @scala.inline
+  def logError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logError(error: Error, options: LogErrorOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait LogErrorOptions extends StObject {
     
     /**
     		Title of the error dialog.
     		@default `${appName} encountered an error`
     		*/
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
   }
   object LogErrorOptions {
     
@@ -59,7 +57,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UnhandledOptions extends StObject {
     
     /**
@@ -67,7 +64,7 @@ object mod {
     		Can be useful if you for example integrate with Sentry.
     		@default console.error
     		*/
-    val logger: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    val logger: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
     		When specified, the error dialog will include a `Report…` button, which when clicked, executes the given function with the error as the first argument.
@@ -88,13 +85,13 @@ object mod {
     		// Example of how the GitHub issue will look like: https://github.com/sindresorhus/electron-unhandled/issues/new?body=%60%60%60%0AError%3A+Test%0A++++at+%2FUsers%2Fsindresorhus%2Fdev%2Foss%2Felectron-unhandled%2Fexample.js%3A27%3A21%0A%60%60%60%0A%0A---%0A%0AExample+1.1.0%0AElectron+3.0.8%0Adarwin+18.2.0%0ALocale%3A+en-US
     		```
     		*/
-    val reportButton: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    val reportButton: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
     		Present an error dialog to the user.
     		Default: [Only in production](https://github.com/sindresorhus/electron-is-dev).
     		*/
-    val showDialog: js.UndefOr[Boolean] = js.native
+    val showDialog: js.UndefOr[Boolean] = js.undefined
   }
   object UnhandledOptions {
     

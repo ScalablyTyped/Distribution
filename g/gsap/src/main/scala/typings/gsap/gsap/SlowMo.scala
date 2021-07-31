@@ -2,13 +2,13 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlowMo extends Ease {
+trait SlowMo
+  extends StObject
+     with Ease {
   
-  def config(linearRatio: Double, power: Double, yoyoMode: Boolean): SlowMo = js.native
+  def config(linearRatio: Double, power: Double, yoyoMode: Boolean): SlowMo
 }
 object SlowMo {
   

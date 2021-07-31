@@ -2,21 +2,19 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailSuppression extends StObject {
   
   /**
     * Sets the mode for avail suppression, also known as ad suppression. By default, ad suppression is off and all ad breaks are filled by MediaTailor with ads or slate.
     */
-  var Mode: js.UndefOr[typings.awsSdk.mediatailorMod.Mode] = js.native
+  var Mode: js.UndefOr[typings.awsSdk.mediatailorMod.Mode] = js.undefined
   
   /**
     * The avail suppression value is a live edge offset time in HH:MM:SS. MediaTailor won't fill ad breaks on or behind this time in the manifest lookback window. 
     */
-  var Value: js.UndefOr[string] = js.native
+  var Value: js.UndefOr[string] = js.undefined
 }
 object AvailSuppression {
   

@@ -2,7 +2,6 @@ package typings.koaCsrf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,10 +9,9 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
-      var csrf: String = js.native
+      var csrf: String
     }
     object Context {
       

@@ -3,12 +3,12 @@ package typings.anydbSql.mod
 import typings.anydbSql.anon.Emit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Table[T]
-  extends TableNode
+  extends StObject
+     with TableNode
      with Queryable[T] {
   
   var _name: String = js.native
@@ -17,7 +17,7 @@ trait Table[T]
   
   def as(name: String): Table[T] = js.native
   
-  var columns: js.Array[Column[_]] = js.native
+  var columns: js.Array[Column[js.Any]] = js.native
   
   def create(): CreateQuery = js.native
   
@@ -37,7 +37,7 @@ trait Table[T]
   
   var sql: SQL = js.native
   
-  def star(): Column[_] = js.native
+  def star(): Column[js.Any] = js.native
   
   def subQuery[U](): SubQuery[U] = js.native
   

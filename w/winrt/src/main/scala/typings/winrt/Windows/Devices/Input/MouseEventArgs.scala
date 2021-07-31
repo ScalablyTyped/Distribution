@@ -2,11 +2,11 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseEventArgs extends IMouseEventArgs
+trait MouseEventArgs
+  extends StObject
+     with IMouseEventArgs
 object MouseEventArgs {
   
   @scala.inline

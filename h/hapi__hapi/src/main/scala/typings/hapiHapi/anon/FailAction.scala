@@ -5,15 +5,13 @@ import typings.hapiHapi.mod.ResponseToolkit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailAction extends StObject {
   
-  var failAction: js.UndefOr[typings.hapiHapi.mod.Lifecycle.FailAction] = js.native
+  var failAction: js.UndefOr[typings.hapiHapi.mod.Lifecycle.FailAction] = js.undefined
   
-  var parse: js.UndefOr[Boolean] = js.native
+  var parse: js.UndefOr[Boolean] = js.undefined
 }
 object FailAction {
   

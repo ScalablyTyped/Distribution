@@ -2,15 +2,13 @@ package typings.jsqubits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DecimalPlaces extends StObject {
     
-    var decimalPlaces: js.UndefOr[Double] = js.native
+    var decimalPlaces: js.UndefOr[Double] = js.undefined
   }
   object DecimalPlaces {
     

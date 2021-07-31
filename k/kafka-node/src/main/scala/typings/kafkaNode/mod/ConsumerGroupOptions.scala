@@ -9,67 +9,65 @@ import typings.kafkaNode.kafkaNodeStrings.roundrobin
 import typings.kafkaNode.kafkaNodeStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumerGroupOptions extends StObject {
   
-  var autoCommit: js.UndefOr[Boolean] = js.native
+  var autoCommit: js.UndefOr[Boolean] = js.undefined
   
-  var autoCommitIntervalMs: js.UndefOr[Double] = js.native
+  var autoCommitIntervalMs: js.UndefOr[Double] = js.undefined
   
-  var batch: js.UndefOr[AckBatchOptions] = js.native
+  var batch: js.UndefOr[AckBatchOptions] = js.undefined
   
-  var connectOnReady: js.UndefOr[Boolean] = js.native
+  var connectOnReady: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[buffer | utf8] = js.native
+  var encoding: js.UndefOr[buffer | utf8] = js.undefined
   
-  var fetchMaxBytes: js.UndefOr[Double] = js.native
+  var fetchMaxBytes: js.UndefOr[Double] = js.undefined
   
-  var fetchMaxWaitMs: js.UndefOr[Double] = js.native
+  var fetchMaxWaitMs: js.UndefOr[Double] = js.undefined
   
-  var fetchMinBytes: js.UndefOr[Double] = js.native
+  var fetchMinBytes: js.UndefOr[Double] = js.undefined
   
-  var fromOffset: js.UndefOr[earliest | latest | none] = js.native
+  var fromOffset: js.UndefOr[earliest | latest | none] = js.undefined
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var heartbeatInterval: js.UndefOr[Double] = js.native
+  var heartbeatInterval: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kafkaHost: js.UndefOr[String] = js.native
+  var kafkaHost: js.UndefOr[String] = js.undefined
   
-  var keyEncoding: js.UndefOr[buffer | utf8] = js.native
+  var keyEncoding: js.UndefOr[buffer | utf8] = js.undefined
   
-  var maxNumSegments: js.UndefOr[Double] = js.native
+  var maxNumSegments: js.UndefOr[Double] = js.undefined
   
-  var maxTickMessages: js.UndefOr[Double] = js.native
+  var maxTickMessages: js.UndefOr[Double] = js.undefined
   
-  var migrateHLC: js.UndefOr[Boolean] = js.native
+  var migrateHLC: js.UndefOr[Boolean] = js.undefined
   
-  var migrateRolling: js.UndefOr[Boolean] = js.native
+  var migrateRolling: js.UndefOr[Boolean] = js.undefined
   
-  var onRebalance: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var onRebalance: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
-  var outOfRangeOffset: js.UndefOr[earliest | latest | none] = js.native
+  var outOfRangeOffset: js.UndefOr[earliest | latest | none] = js.undefined
   
-  var protocol: js.UndefOr[js.Array[roundrobin | range | CustomPartitionAssignmentProtocol]] = js.native
+  var protocol: js.UndefOr[js.Array[roundrobin | range | CustomPartitionAssignmentProtocol]] = js.undefined
   
-  var retries: js.UndefOr[Double] = js.native
+  var retries: js.UndefOr[Double] = js.undefined
   
-  var retryFactor: js.UndefOr[Double] = js.native
+  var retryFactor: js.UndefOr[Double] = js.undefined
   
-  var retryMinTimeout: js.UndefOr[Double] = js.native
+  var retryMinTimeout: js.UndefOr[Double] = js.undefined
   
-  var sasl: js.UndefOr[js.Any] = js.native
+  var sasl: js.UndefOr[js.Any] = js.undefined
   
-  var sessionTimeout: js.UndefOr[Double] = js.native
+  var sessionTimeout: js.UndefOr[Double] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
-  var sslOptions: js.UndefOr[js.Any] = js.native
+  var sslOptions: js.UndefOr[js.Any] = js.undefined
 }
 object ConsumerGroupOptions {
   

@@ -10,9 +10,9 @@ Globals and shared modules
 | ------------------ | :-------------: |
 | Full name          | @react-spring/shared |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 51 |
 | # dependents       | 13 |
-| # downloads        | 1640084 |
+| # downloads        | 2780366 |
 | # stars            | 0 |
 
 ## Links

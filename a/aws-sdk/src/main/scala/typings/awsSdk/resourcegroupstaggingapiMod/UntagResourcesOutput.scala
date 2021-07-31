@@ -2,16 +2,14 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourcesOutput extends StObject {
   
   /**
     * Details of resources that could not be untagged. An error code, status code, and error message are returned for each failed item. 
     */
-  var FailedResourcesMap: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.FailedResourcesMap] = js.native
+  var FailedResourcesMap: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.FailedResourcesMap] = js.undefined
 }
 object UntagResourcesOutput {
   

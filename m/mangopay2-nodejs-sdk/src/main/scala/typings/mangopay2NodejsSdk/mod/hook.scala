@@ -4,20 +4,18 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.mod.event.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hook {
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.hook.HookData, 'Tag', 'EventType' | 'Url'> */
-  @js.native
   trait CreateHook extends StObject {
     
-    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType = js.native
+    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var Url: String = js.native
+    var Url: String
   }
   object CreateHook {
     
@@ -44,28 +42,29 @@ object hook {
     }
   }
   
-  @js.native
-  trait HookData extends EntityBaseData {
+  trait HookData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The event type
       */
-    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType = js.native
+    var EventType: typings.mangopay2NodejsSdk.mod.event.EventType
     
     /**
       * Whether the hook is enabled or not
       */
-    var Status: HookStatus = js.native
+    var Status: HookStatus
     
     /**
       * This is the URL where your receive notification for each EventType
       */
-    var Url: String = js.native
+    var Url: String
     
     /**
       * Whether the hook is valid or not
       */
-    var Validity: HookValidity = js.native
+    var Validity: HookValidity
   }
   object HookData {
     
@@ -133,16 +132,15 @@ object hook {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.hook.HookData, 'EventType' | 'Url' | 'Tag', 'Id'> */
-  @js.native
   trait UpdateHook extends StObject {
     
-    var EventType: js.UndefOr[typings.mangopay2NodejsSdk.mod.event.EventType] = js.native
+    var EventType: js.UndefOr[typings.mangopay2NodejsSdk.mod.event.EventType] = js.undefined
     
-    var Id: String = js.native
+    var Id: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var Url: js.UndefOr[String] = js.native
+    var Url: js.UndefOr[String] = js.undefined
   }
   object UpdateHook {
     

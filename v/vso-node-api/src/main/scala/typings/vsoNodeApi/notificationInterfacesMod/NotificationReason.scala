@@ -3,15 +3,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationReason extends StObject {
   
-  var notificationReasonType: NotificationReasonType = js.native
+  var notificationReasonType: NotificationReasonType
   
-  var targetIdentities: js.Array[IdentityRef] = js.native
+  var targetIdentities: js.Array[IdentityRef]
 }
 object NotificationReason {
   

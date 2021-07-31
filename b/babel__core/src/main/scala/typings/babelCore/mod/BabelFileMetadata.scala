@@ -3,17 +3,15 @@ package typings.babelCore.mod
 import typings.babelCore.anon.Loc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BabelFileMetadata extends StObject {
   
-  var marked: js.Array[Loc] = js.native
+  var marked: js.Array[Loc]
   
-  var modules: BabelFileModulesMetadata = js.native
+  var modules: BabelFileModulesMetadata
   
-  var usedHelpers: js.Array[String] = js.native
+  var usedHelpers: js.Array[String]
 }
 object BabelFileMetadata {
   

@@ -5,7 +5,6 @@ import typings.twilioSync.servicesMod.Configuration
 import typings.twilioSync.servicesMod.Network
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionsMod {
@@ -128,12 +127,11 @@ object subscriptionsMod {
     var verifyPokeDelivery: js.Any = js.native
   }
   
-  @js.native
   trait SubscriptionsServices extends StObject {
     
-    var config: Configuration = js.native
+    var config: Configuration
     
-    var network: Network = js.native
+    var network: Network
   }
   object SubscriptionsServices {
     

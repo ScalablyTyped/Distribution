@@ -2,51 +2,49 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheNode extends StObject {
   
   /**
     * The date and time when the cache node was created.
     */
-  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.native
+  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The cache node identifier. A node ID is a numeric identifier (0001, 0002, etc.). The combination of cluster ID and node ID uniquely identifies every cache node used in a customer's AWS account.
     */
-  var CacheNodeId: js.UndefOr[String] = js.native
+  var CacheNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of this cache node, one of the following values: available, creating, rebooting, or deleting.
     */
-  var CacheNodeStatus: js.UndefOr[String] = js.native
+  var CacheNodeStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The Availability Zone where this node was created and now resides.
     */
-  var CustomerAvailabilityZone: js.UndefOr[String] = js.native
+  var CustomerAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The customer outpost ARN of the cache node.
     */
-  var CustomerOutpostArn: js.UndefOr[String] = js.native
+  var CustomerOutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The hostname for connecting to this cache node.
     */
-  var Endpoint: js.UndefOr[typings.awsSdk.elasticacheMod.Endpoint] = js.native
+  var Endpoint: js.UndefOr[typings.awsSdk.elasticacheMod.Endpoint] = js.undefined
   
   /**
     * The status of the parameter group applied to this cache node.
     */
-  var ParameterGroupStatus: js.UndefOr[String] = js.native
+  var ParameterGroupStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the primary node to which this read replica node is synchronized. If this field is empty, this node is not associated with a primary cluster.
     */
-  var SourceCacheNodeId: js.UndefOr[String] = js.native
+  var SourceCacheNodeId: js.UndefOr[String] = js.undefined
 }
 object CacheNode {
   

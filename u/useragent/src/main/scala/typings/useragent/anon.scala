@@ -2,25 +2,23 @@ package typings.useragent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Device extends StObject {
     
-    var device: String = js.native
+    var device: String
     
-    var family: String = js.native
+    var family: String
     
-    var major: String = js.native
+    var major: String
     
-    var minor: String = js.native
+    var minor: String
     
-    var os: String = js.native
+    var os: String
     
-    var patch: String = js.native
+    var patch: String
   }
   object Device {
     
@@ -53,16 +51,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Family extends StObject {
     
-    var family: String = js.native
+    var family: String
     
-    var major: js.UndefOr[String] = js.native
+    var major: js.UndefOr[String] = js.undefined
     
-    var minor: js.UndefOr[String] = js.native
+    var minor: js.UndefOr[String] = js.undefined
     
-    var patch: js.UndefOr[String] = js.native
+    var patch: js.UndefOr[String] = js.undefined
   }
   object Family {
     
@@ -98,20 +95,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Major extends StObject {
     
-    var device: js.UndefOr[String] = js.native
+    var device: js.UndefOr[String] = js.undefined
     
-    var family: String = js.native
+    var family: String
     
-    var major: String = js.native
+    var major: String
     
-    var minor: String = js.native
+    var minor: String
     
-    var os: js.UndefOr[String] = js.native
+    var os: js.UndefOr[String] = js.undefined
     
-    var patch: String = js.native
+    var patch: String
   }
   object Major {
     

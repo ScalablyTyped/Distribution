@@ -2,15 +2,13 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TIMESTAMP extends StObject {
   
-  var TIMESTAMP: Sv = js.native
+  var TIMESTAMP: Sv
   
-  def increment(delta: Double): SvIncrement = js.native
+  def increment(delta: Double): SvIncrement
 }
 object TIMESTAMP {
   

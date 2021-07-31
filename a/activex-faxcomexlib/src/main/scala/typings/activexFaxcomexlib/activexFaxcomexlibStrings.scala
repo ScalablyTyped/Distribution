@@ -3,7 +3,6 @@ package typings.activexFaxcomexlib
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexFaxcomexlibStrings {
@@ -34,7 +33,9 @@ object activexFaxcomexlibStrings {
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   
   @js.native
-  sealed trait `LessthansignAll DevicesGreaterthansign` extends FaxConstants
+  sealed trait `LessthansignAll DevicesGreaterthansign`
+    extends StObject
+       with FaxConstants
   @scala.inline
   def `LessthansignAll DevicesGreaterthansign`: `LessthansignAll DevicesGreaterthansign` = ("<All Devices>").asInstanceOf[`LessthansignAll DevicesGreaterthansign`]
   

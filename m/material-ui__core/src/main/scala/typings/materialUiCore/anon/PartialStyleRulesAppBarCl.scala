@@ -3,30 +3,28 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/AppBar.AppBarClassKey>> */
-@js.native
 trait PartialStyleRulesAppBarCl extends StObject {
   
-  var colorDefault: js.UndefOr[CSSProperties] = js.native
+  var colorDefault: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var positionAbsolute: js.UndefOr[CSSProperties] = js.native
+  var positionAbsolute: js.UndefOr[CSSProperties] = js.undefined
   
-  var positionFixed: js.UndefOr[CSSProperties] = js.native
+  var positionFixed: js.UndefOr[CSSProperties] = js.undefined
   
-  var positionRelative: js.UndefOr[CSSProperties] = js.native
+  var positionRelative: js.UndefOr[CSSProperties] = js.undefined
   
-  var positionStatic: js.UndefOr[CSSProperties] = js.native
+  var positionStatic: js.UndefOr[CSSProperties] = js.undefined
   
-  var positionSticky: js.UndefOr[CSSProperties] = js.native
+  var positionSticky: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesAppBarCl {
   

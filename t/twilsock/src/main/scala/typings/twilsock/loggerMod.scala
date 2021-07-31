@@ -2,7 +2,6 @@ package typings.twilsock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -32,35 +31,33 @@ object loggerMod {
   }
   object Logger {
     
-    /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.debug")
+    @JSImport("twilsock/lib/logger", "Logger")
     @js.native
-    def debug(args: js.Any*): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.error")
-    @js.native
-    def error(args: js.Any*): Unit = js.native
+    @scala.inline
+    def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.info")
-    @js.native
-    def info(args: js.Any*): Unit = js.native
+    @scala.inline
+    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.setLevel")
-    @js.native
-    def setLevel(level: js.Any): Unit = js.native
+    @scala.inline
+    def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.trace")
-    @js.native
-    def trace(args: js.Any*): Unit = js.native
+    @scala.inline
+    def setLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("twilsock/lib/logger", "Logger.warn")
-    @js.native
-    def warn(args: js.Any*): Unit = js.native
+    @scala.inline
+    def trace(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
+    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("twilsock/lib/logger", "log")

@@ -10,7 +10,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.pushnotificationreceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes and interfaces that encapsulate push notifications. */
@@ -25,30 +24,40 @@ object PushNotifications {
     
     /** A push notification to update a tile's badge overlay. */
     @js.native
-    sealed trait badge extends PushNotificationType
+    sealed trait badge
+      extends StObject
+         with PushNotificationType
     
     /** A push notification to perform an update to a tile that does not involve UI. */
     @js.native
-    sealed trait raw extends PushNotificationType
+    sealed trait raw
+      extends StObject
+         with PushNotificationType
     
     /** A push notification to update one or more elements of a tile. */
     @js.native
-    sealed trait tile extends PushNotificationType
+    sealed trait tile
+      extends StObject
+         with PushNotificationType
     
     /** A push notification to update an app's tile flyout. */
     @js.native
-    sealed trait tileFlyout extends PushNotificationType
+    sealed trait tileFlyout
+      extends StObject
+         with PushNotificationType
     
     /** A push notification to display as toast. */
     @js.native
-    sealed trait toast extends PushNotificationType
+    sealed trait toast
+      extends StObject
+         with PushNotificationType
   }
   
   /** Represents a delivery vehicle and addressing mechanism for push notifications. The channel Uniform Resource Identifier (URI) represented by this interface is used by a third-party application server to communicate with the Windows Push Notification Services (WNS). The push notification channel is used by the client to intercept notifications. */
   @js.native
   trait PushNotificationChannel extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
@@ -62,12 +71,12 @@ object PushNotifications {
     var expirationTime: Date = js.native
     
     /** Fires when a push notification has arrived on this channel. */
-    def onpushnotificationreceived(ev: PushNotificationReceivedEventArgs with WinRTEvent[PushNotificationChannel]): Unit = js.native
+    def onpushnotificationreceived(ev: PushNotificationReceivedEventArgs & WinRTEvent[PushNotificationChannel]): Unit = js.native
     /** Fires when a push notification has arrived on this channel. */
     @JSName("onpushnotificationreceived")
     var onpushnotificationreceived_Original: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
@@ -79,30 +88,28 @@ object PushNotifications {
   }
   
   /** Creates objects that you use to retrieve push notification channels from the Windows Push Notification Services (WNS). These channels are bound to an app or secondary tile . */
-  @js.native
   trait PushNotificationChannelManager extends StObject
   
   /** Encapsulates a push notification that has been received from the app server, identifying the type and supplying the content of the notification. Windows passes this information in the PushNotificationReceived event. */
-  @js.native
   trait PushNotificationReceivedEventArgs extends StObject {
     
     /** Gets the content of a badge update to perform in response to this push notification. */
-    var badgeNotification: BadgeNotification = js.native
+    var badgeNotification: BadgeNotification
     
     /** Gets or sets whether Windows should perform its default handling of the notification. */
-    var cancel: Boolean = js.native
+    var cancel: Boolean
     
     /** Gets the type of push notification that has been received from the app server. */
-    var notificationType: PushNotificationType = js.native
+    var notificationType: PushNotificationType
     
-    var rawNotification: js.Any = js.native
+    var rawNotification: js.Any
     
     /* unmapped type */
     /** Gets the content of a tile update to perform in response to this push notification. */
-    var tileNotification: TileNotification = js.native
+    var tileNotification: TileNotification
     
     /** Gets the content of a toast to display in response to this push notification. */
-    var toastNotification: ToastNotification = js.native
+    var toastNotification: ToastNotification
   }
   object PushNotificationReceivedEventArgs {
     
@@ -143,11 +150,10 @@ object PushNotifications {
   }
   
   /** Encapsulates the app-defined content of a raw notification (a push notification that does not involve UI). Its contents can be used in an app's background task, if the app has that capability, or otherwise consumed by the app and acted on as needed. */
-  @js.native
   trait RawNotification extends StObject {
     
     /** Gets the content of the raw notification as a string. This string specifies a background task associated with the app. */
-    var content: String = js.native
+    var content: String
   }
   object RawNotification {
     

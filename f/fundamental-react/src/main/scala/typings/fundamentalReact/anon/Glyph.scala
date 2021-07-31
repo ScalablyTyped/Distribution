@@ -5,23 +5,21 @@ import typings.std.HTMLButtonElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Glyph extends StObject {
   
   var callback: js.UndefOr[
     js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var glyph: String = js.native
+  var glyph: String
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var menu: js.UndefOr[ReactNode] = js.native
+  var menu: js.UndefOr[ReactNode] = js.undefined
   
-  var notificationCount: Double = js.native
+  var notificationCount: Double
 }
 object Glyph {
   

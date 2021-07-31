@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageAttribute extends StObject {
   
   /**
     * The block device mapping entries.
     */
-  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
     * A description for the AMI.
     */
-  var Description: js.UndefOr[AttributeValue] = js.native
+  var Description: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The kernel ID.
     */
-  var KernelId: js.UndefOr[AttributeValue] = js.native
+  var KernelId: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * The launch permissions.
     */
-  var LaunchPermissions: js.UndefOr[LaunchPermissionList] = js.native
+  var LaunchPermissions: js.UndefOr[LaunchPermissionList] = js.undefined
   
   /**
     * The product codes.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * The RAM disk ID.
     */
-  var RamdiskId: js.UndefOr[AttributeValue] = js.native
+  var RamdiskId: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Indicates whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
     */
-  var SriovNetSupport: js.UndefOr[AttributeValue] = js.native
+  var SriovNetSupport: js.UndefOr[AttributeValue] = js.undefined
 }
 object ImageAttribute {
   

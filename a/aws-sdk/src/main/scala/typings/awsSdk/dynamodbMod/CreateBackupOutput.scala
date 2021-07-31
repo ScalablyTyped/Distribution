@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBackupOutput extends StObject {
   
   /**
     * Contains the details of the backup created for the table.
     */
-  var BackupDetails: js.UndefOr[typings.awsSdk.dynamodbMod.BackupDetails] = js.native
+  var BackupDetails: js.UndefOr[typings.awsSdk.dynamodbMod.BackupDetails] = js.undefined
 }
 object CreateBackupOutput {
   

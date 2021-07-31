@@ -2,19 +2,17 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CubeEffectOptions extends StObject {
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var shadowOffset: js.UndefOr[Double] = js.native
+  var shadowOffset: js.UndefOr[Double] = js.undefined
   
-  var shadowScale: js.UndefOr[Double] = js.native
+  var shadowScale: js.UndefOr[Double] = js.undefined
   
-  var slideShadows: js.UndefOr[Boolean] = js.native
+  var slideShadows: js.UndefOr[Boolean] = js.undefined
 }
 object CubeEffectOptions {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Threatlistupdates")
@@ -31,7 +30,7 @@ class ResourceThreatlistupdates protected () extends StObject {
     */
   def fetch(): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(callback: BodyResponseCallback[SchemaFetchThreatListUpdatesResponse]): Unit = js.native
-  def fetch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
+  def fetch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(params: ParamsResourceThreatlistupdatesFetch): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(
     params: ParamsResourceThreatlistupdatesFetch,

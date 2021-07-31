@@ -4,36 +4,33 @@ import typings.react.mod.FunctionComponent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@next/react-dev-overlay/lib/client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@next/react-dev-overlay/lib/client", "ReactDevOverlay")
   @js.native
   val ReactDevOverlay: FunctionComponent[js.Object] = js.native
   
-  @JSImport("@next/react-dev-overlay/lib/client", "getNodeError")
-  @js.native
-  def getNodeError(error: Error): Error = js.native
+  @scala.inline
+  def getNodeError(error: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("@next/react-dev-overlay/lib/client", "onBuildError")
-  @js.native
-  def onBuildError(message: String): Unit = js.native
+  @scala.inline
+  def onBuildError(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildError")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@next/react-dev-overlay/lib/client", "onBuildOk")
-  @js.native
-  def onBuildOk(): Unit = js.native
+  @scala.inline
+  def onBuildOk(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildOk")().asInstanceOf[Unit]
   
-  @JSImport("@next/react-dev-overlay/lib/client", "onRefresh")
-  @js.native
-  def onRefresh(): Unit = js.native
+  @scala.inline
+  def onRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRefresh")().asInstanceOf[Unit]
   
-  @JSImport("@next/react-dev-overlay/lib/client", "register")
-  @js.native
-  def register(): Unit = js.native
+  @scala.inline
+  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
-  @JSImport("@next/react-dev-overlay/lib/client", "unregister")
-  @js.native
-  def unregister(): Unit = js.native
+  @scala.inline
+  def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
 }

@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides video-related effects. */
 @JSGlobal("Windows.Media.VideoEffects")
 @js.native
 abstract class VideoEffects ()
-  extends typings.winrtUwp.Windows.Media.VideoEffects
+  extends StObject
+     with typings.winrtUwp.Windows.Media.VideoEffects
 object VideoEffects {
   
   @JSGlobal("Windows.Media.VideoEffects")

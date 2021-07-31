@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyReservedInstancesRequest extends StObject {
   
   /**
     * A unique, case-sensitive token you provide to ensure idempotency of your modification request. For more information, see Ensuring Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the Reserved Instances to modify.
     */
-  var ReservedInstancesIds: ReservedInstancesIdStringList = js.native
+  var ReservedInstancesIds: ReservedInstancesIdStringList
   
   /**
     * The configuration settings for the Reserved Instances to modify.
     */
-  var TargetConfigurations: ReservedInstancesConfigurationList = js.native
+  var TargetConfigurations: ReservedInstancesConfigurationList
 }
 object ModifyReservedInstancesRequest {
   

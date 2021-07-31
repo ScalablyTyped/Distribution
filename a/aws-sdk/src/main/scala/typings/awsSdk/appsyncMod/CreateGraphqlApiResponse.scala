@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGraphqlApiResponse extends StObject {
   
   /**
     * The GraphqlApi.
     */
-  var graphqlApi: js.UndefOr[GraphqlApi] = js.native
+  var graphqlApi: js.UndefOr[GraphqlApi] = js.undefined
 }
 object CreateGraphqlApiResponse {
   

@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.csv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSVLayer
-  extends Layer
+  extends StObject
+     with Layer
      with PortalLayer
      with ScaleRangeLayer
      with TemporalLayer
@@ -168,12 +168,12 @@ trait CSVLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#queryExtent)
     */
-  def queryExtent(): js.Promise[_] = js.native
-  def queryExtent(query: js.UndefOr[scala.Nothing], options: CSVLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties, options: CSVLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query, options: CSVLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(): js.Promise[js.Any] = js.native
+  def queryExtent(query: Unit, options: CSVLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties, options: CSVLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query, options: CSVLayerQueryExtentOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the CSV data and returns the number of features that satisfy the query.
@@ -181,7 +181,7 @@ trait CSVLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: CSVLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Unit, options: CSVLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: CSVLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -193,7 +193,7 @@ trait CSVLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: CSVLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: CSVLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: CSVLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -205,7 +205,7 @@ trait CSVLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Unit, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: CSVLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

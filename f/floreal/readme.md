@@ -12,7 +12,7 @@ Date formatting for the French Revolutionary calendar
 | Keywords           | conversion, dates, calendar, history, historical, france, french, republic |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 466 |
+| # downloads        | 602 |
 | # stars            | 0 |
 
 ## Links

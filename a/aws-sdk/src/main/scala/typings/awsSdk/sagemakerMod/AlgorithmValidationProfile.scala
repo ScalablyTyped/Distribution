@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlgorithmValidationProfile extends StObject {
   
   /**
     * The name of the profile for the algorithm. The name must have 1 to 63 characters. Valid characters are a-z, A-Z, 0-9, and - (hyphen).
     */
-  var ProfileName: EntityName = js.native
+  var ProfileName: EntityName
   
   /**
     * The TrainingJobDefinition object that describes the training job that Amazon SageMaker runs to validate your algorithm.
     */
-  var TrainingJobDefinition: typings.awsSdk.sagemakerMod.TrainingJobDefinition = js.native
+  var TrainingJobDefinition: typings.awsSdk.sagemakerMod.TrainingJobDefinition
   
   /**
     * The TransformJobDefinition object that describes the transform job that Amazon SageMaker runs to validate your algorithm.
     */
-  var TransformJobDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.TransformJobDefinition] = js.native
+  var TransformJobDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.TransformJobDefinition] = js.undefined
 }
 object AlgorithmValidationProfile {
   

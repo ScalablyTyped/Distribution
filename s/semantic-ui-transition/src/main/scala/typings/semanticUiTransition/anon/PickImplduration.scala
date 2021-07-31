@@ -2,14 +2,12 @@ package typings.semanticUiTransition.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, 'duration'> */
-@js.native
 trait PickImplduration extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
 }
 object PickImplduration {
   

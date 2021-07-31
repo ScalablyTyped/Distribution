@@ -10,12 +10,12 @@ import typings.browserfs.workerFSMod.default
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWorkerFS
-  extends Instantiable1[/* worker */ Worker, default]
+  extends StObject
+     with Instantiable1[/* worker */ Worker, default]
      with Instantiable2[/* worker */ Worker, /* deprecateMsg */ Boolean, default] {
   
   def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = js.native

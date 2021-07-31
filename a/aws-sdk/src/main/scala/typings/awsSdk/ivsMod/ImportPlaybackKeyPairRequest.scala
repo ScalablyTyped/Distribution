@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportPlaybackKeyPairRequest extends StObject {
   
   /**
     * An arbitrary string (a nickname) assigned to a playback key pair that helps the customer identify that resource. The value does not need to be unique.
     */
-  var name: js.UndefOr[PlaybackKeyPairName] = js.native
+  var name: js.UndefOr[PlaybackKeyPairName] = js.undefined
   
   /**
     * The public portion of a customer-generated key pair.
     */
-  var publicKeyMaterial: PlaybackPublicKeyMaterial = js.native
+  var publicKeyMaterial: PlaybackPublicKeyMaterial
   
   /**
     * Any tags provided with the request are added to the playback key pair tags.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object ImportPlaybackKeyPairRequest {
   

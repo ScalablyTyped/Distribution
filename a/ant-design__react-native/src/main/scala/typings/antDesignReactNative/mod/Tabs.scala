@@ -5,7 +5,6 @@ import typings.antDesignReactNative.tabsMod.default
 import typings.antDesignReactNative.tabsPropsTypeMod.PropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Tabs")

@@ -3,57 +3,48 @@ package typings.httpBuildQuery
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(queryData: StringDictionary[String | Double]): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(
-    queryData: StringDictionary[String | Double],
-    numericPrefix: js.UndefOr[scala.Nothing],
-    argSeparator: js.UndefOr[scala.Nothing],
-    tempKey: String
-  ): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(
-    queryData: StringDictionary[String | Double],
-    numericPrefix: js.UndefOr[scala.Nothing],
-    argSeparator: String
-  ): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(
-    queryData: StringDictionary[String | Double],
-    numericPrefix: js.UndefOr[scala.Nothing],
-    argSeparator: String,
-    tempKey: String
-  ): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(queryData: StringDictionary[String | Double], numericPrefix: String): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(
-    queryData: StringDictionary[String | Double],
-    numericPrefix: String,
-    argSeparator: js.UndefOr[scala.Nothing],
-    tempKey: String
-  ): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
-  def apply(queryData: StringDictionary[String | Double], numericPrefix: String, argSeparator: String): String = js.native
-  @JSImport("http-build-query", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(queryData: StringDictionary[String | Double]): String = ^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(queryData: StringDictionary[String | Double], numericPrefix: String): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(queryData: StringDictionary[String | Double], numericPrefix: String, argSeparator: String): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def apply(
     queryData: StringDictionary[String | Double],
     numericPrefix: String,
     argSeparator: String,
     tempKey: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any], tempKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    queryData: StringDictionary[String | Double],
+    numericPrefix: String,
+    argSeparator: Unit,
+    tempKey: String
+  ): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any], tempKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(queryData: StringDictionary[String | Double], numericPrefix: Unit, argSeparator: String): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    queryData: StringDictionary[String | Double],
+    numericPrefix: Unit,
+    argSeparator: String,
+    tempKey: String
+  ): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any], tempKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    queryData: StringDictionary[String | Double],
+    numericPrefix: Unit,
+    argSeparator: Unit,
+    tempKey: String
+  ): String = (^.asInstanceOf[js.Dynamic].apply(queryData.asInstanceOf[js.Any], numericPrefix.asInstanceOf[js.Any], argSeparator.asInstanceOf[js.Any], tempKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("http-build-query", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

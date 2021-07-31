@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataAdaptersCollection extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
   @JSName("InfoPath.DataAdaptersCollection_typekey")
-  var InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection = js.native
+  var InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection
   
-  def Item(varIndex: js.Any): js.Any = js.native
+  def Item(varIndex: js.Any): js.Any
 }
 object DataAdaptersCollection {
   

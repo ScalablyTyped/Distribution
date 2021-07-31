@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object networkStatus {
   
   /* networkStatus types */
-  @js.native
   trait NetworkLinkInfo extends StObject {
     
     /** If known, the network id or name. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Status of the network link, if "unknown" then link is usually assumed to be "up" */
-    var status: NetworkLinkInfoStatus = js.native
+    var status: NetworkLinkInfoStatus
     
     /** If known, the type of network connection that is avialable. */
-    var `type`: NetworkLinkInfoType = js.native
+    var `type`: NetworkLinkInfoType
   }
   object NetworkLinkInfo {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetAssociation extends StObject {
   
   /**
     * The state of the subnet association.
     */
-  var State: js.UndefOr[TransitGatewayMulitcastDomainAssociationState] = js.native
+  var State: js.UndefOr[TransitGatewayMulitcastDomainAssociationState] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
 }
 object SubnetAssociation {
   

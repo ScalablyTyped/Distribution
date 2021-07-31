@@ -9,29 +9,29 @@ import typings.nodeZendesk.mod.Tickets.Via
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Comments {
   
   object CommentsUsers {
     
-    @js.native
-    trait ResponseModel extends PersistableModel {
+    trait ResponseModel
+      extends StObject
+         with PersistableModel {
       
-      val agent: Boolean = js.native
+      val agent: Boolean
       
-      val name: String = js.native
+      val name: String
       
-      val organization_id: Double | Null = js.native
+      val organization_id: Double | Null
       
-      val photo: Model | Null = js.native
+      val photo: Model | Null
     }
     object ResponseModel {
       
       @scala.inline
       def apply(agent: Boolean, id: ZendeskID, name: String): typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel = {
-        val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organization_id = null, photo = null)
         __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]
       }
       
@@ -59,22 +59,21 @@ object Comments {
     }
   }
   
-  @js.native
   trait CreateModel extends StObject {
     
-    var author_id: js.UndefOr[ZendeskID] = js.native
+    var author_id: js.UndefOr[ZendeskID] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var html_body: js.UndefOr[String] = js.native
+    var html_body: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var request_id: js.UndefOr[Double] = js.native
+    var request_id: js.UndefOr[Double] = js.undefined
     
-    var uploads: js.UndefOr[js.Array[String]] = js.native
+    var uploads: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object CreateModel {
     
@@ -134,14 +133,15 @@ object Comments {
     }
   }
   
-  @js.native
-  trait ListPayload extends PaginablePayload {
+  trait ListPayload
+    extends StObject
+       with PaginablePayload {
     
-    var comments: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel] = js.native
+    var comments: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]
     
-    var organizations: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel] = js.native
+    var organizations: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]
     
-    var users: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel] = js.native
+    var users: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]
   }
   object ListPayload {
     
@@ -152,7 +152,7 @@ object Comments {
       organizations: js.Array[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel],
       users: js.Array[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]
     ): typings.nodeZendesk.mod.Requests.Comments.ListPayload = {
-      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], next_page = null, previous_page = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ListPayload]
     }
     
@@ -193,30 +193,31 @@ object Comments {
     def VoiceComment: typings.nodeZendesk.nodeZendeskStrings.VoiceComment = "VoiceComment".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.VoiceComment]
   }
   
-  @js.native
-  trait ResponseModel extends TemporalModel {
+  trait ResponseModel
+    extends StObject
+       with TemporalModel {
     
-    val attachments: js.Array[Model] = js.native
+    val attachments: js.Array[Model]
     
-    val author_id: ZendeskID = js.native
+    val author_id: ZendeskID
     
-    val body: String = js.native
+    val body: String
     
-    val html_body: String = js.native
+    val html_body: String
     
-    val metadata: js.UndefOr[Metadata] = js.native
+    val metadata: js.UndefOr[Metadata] = js.undefined
     
-    val plain_body: String = js.native
+    val plain_body: String
     
-    val public: Boolean = js.native
+    val public: Boolean
     
-    val request_id: Double = js.native
+    val request_id: Double
     
-    val `type`: RequestType = js.native
+    val `type`: RequestType
     
-    val url: String = js.native
+    val url: String
     
-    val via: js.UndefOr[Via] = js.native
+    val via: js.UndefOr[Via] = js.undefined
   }
   object ResponseModel {
     
@@ -286,10 +287,9 @@ object Comments {
     }
   }
   
-  @js.native
   trait ResponsePayload extends StObject {
     
-    val comment: typings.nodeZendesk.mod.Requests.Comments.ResponseModel = js.native
+    val comment: typings.nodeZendesk.mod.Requests.Comments.ResponseModel
   }
   object ResponsePayload {
     

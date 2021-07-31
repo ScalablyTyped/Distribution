@@ -2,31 +2,29 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationRevisionResponse extends StObject {
   
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
     */
-  var ConfigurationId: js.UndefOr[string] = js.native
+  var ConfigurationId: js.UndefOr[string] = js.undefined
   
   /**
     * Required. The date and time of the configuration.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.native
+  var Created: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Required. The base64-encoded XML configuration.
     */
-  var Data: js.UndefOr[string] = js.native
+  var Data: js.UndefOr[string] = js.undefined
   
   /**
     * The description of the configuration.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
 }
 object DescribeConfigurationRevisionResponse {
   

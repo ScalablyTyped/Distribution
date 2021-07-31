@@ -9,7 +9,6 @@ import typings.angular.mod.global.Function
 import typings.angularRoute.anon.Dictindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,12 +31,13 @@ object mod extends Shortcut {
     object route {
       
       // see http://docs.angularjs.org/api/ng.$route#current
-      @js.native
-      trait ICurrentRoute extends IRoute {
+      trait ICurrentRoute
+        extends StObject
+           with IRoute {
         
-        var locals: Dictindex = js.native
+        var locals: Dictindex
         
-        var params: js.Any = js.native
+        var params: js.Any
       }
       object ICurrentRoute {
         
@@ -61,7 +61,6 @@ object mod extends Shortcut {
       /**
         * see http://docs.angularjs.org/api/ngRoute/provider/$routeProvider#when for API documentation
         */
-      @js.native
       trait IRoute extends StObject {
         
         /**
@@ -71,18 +70,18 @@ object mod extends Shortcut {
           *
           * Defaults to `false`.
           */
-        var caseInsensitiveMatch: js.UndefOr[Boolean] = js.native
+        var caseInsensitiveMatch: js.UndefOr[Boolean] = js.undefined
         
         /**
           * {(string|Function)=}
           * Controller fn that should be associated with newly created scope or the name of a registered controller if passed as a string.
           */
-        var controller: js.UndefOr[String | InlineAnnotatedFunction] = js.native
+        var controller: js.UndefOr[String | InlineAnnotatedFunction] = js.undefined
         
         /**
           * A controller alias name. If present the controller will be published to scope under the controllerAs name.
           */
-        var controllerAs: js.UndefOr[String] = js.native
+        var controllerAs: js.UndefOr[String] = js.undefined
         
         /**
           * {(string|Function)=}
@@ -111,7 +110,7 @@ object mod extends Shortcut {
                   /* $locationSearch */ js.UndefOr[js.Any], 
                   String
                 ])
-              ] = js.native
+              ] = js.undefined
         
         /**
           * {boolean=true}
@@ -124,7 +123,7 @@ object mod extends Shortcut {
           *
           * Defaults to `true`.
           */
-        var reloadOnSearch: js.UndefOr[Boolean] = js.native
+        var reloadOnSearch: js.UndefOr[Boolean] = js.undefined
         
         /**
           * {boolean=true}
@@ -136,7 +135,7 @@ object mod extends Shortcut {
           *
           * Defaults to `true`.
           */
-        var reloadOnUrl: js.UndefOr[Boolean] = js.native
+        var reloadOnUrl: js.UndefOr[Boolean] = js.undefined
         
         /**
           * {Object.<string, Function>=}
@@ -163,14 +162,14 @@ object mod extends Shortcut {
           *   `ngRoute.$routeParams` will still refer to the previous route within these resolve functions.  Use
           *   `$route.current.params` to access the new route parameters, instead.
           */
-        var resolve: js.UndefOr[StringDictionary[js.Any]] = js.native
+        var resolve: js.UndefOr[StringDictionary[js.Any]] = js.undefined
         
         /**
           * {string=}
           * The name under which the `resolve` map will be available on the scope of the route. If omitted, defaults
           * to `$resolve`.
           */
-        var resolveAs: js.UndefOr[String] = js.native
+        var resolveAs: js.UndefOr[String] = js.undefined
         
         /**
           * {Function=}
@@ -190,9 +189,9 @@ object mod extends Shortcut {
           */
         var resolveRedirectTo: js.UndefOr[
                 Injectable[
-                  js.Function1[/* repeated */ _, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
+                  js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
                 ]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * {(string|Function)=}
@@ -204,7 +203,7 @@ object mod extends Shortcut {
           */
         var template: js.UndefOr[
                 String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])
-              ] = js.native
+              ] = js.undefined
         
         /**
           * {(string|Function)=}
@@ -216,7 +215,7 @@ object mod extends Shortcut {
           */
         var templateUrl: js.UndefOr[
                 String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])
-              ] = js.native
+              ] = js.undefined
       }
       object IRoute {
         
@@ -292,18 +291,20 @@ object mod extends Shortcut {
           @scala.inline
           def setResolveRedirectTo(
             value: Injectable[
-                      js.Function1[/* repeated */ _, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
+                      js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
                     ]
           ): Self = StObject.set(x, "resolveRedirectTo", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setResolveRedirectToFunction1(value: /* repeated */ _ => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
+          def setResolveRedirectToFunction1(value: /* repeated */ js.Any => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
           
           @scala.inline
           def setResolveRedirectToUndefined: Self = StObject.set(x, "resolveRedirectTo", js.undefined)
           
           @scala.inline
-          def setResolveRedirectToVarargs(value: (String | (js.Function1[js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*): Self = StObject.set(x, "resolveRedirectTo", js.Array(value :_*))
+          def setResolveRedirectToVarargs(
+            value: (String | (js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*
+          ): Self = StObject.set(x, "resolveRedirectTo", js.Array(value :_*))
           
           @scala.inline
           def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
@@ -335,7 +336,9 @@ object mod extends Shortcut {
       type IRouteParamsService = StringDictionary[js.Any]
       
       @js.native
-      trait IRouteProvider extends IServiceProvider {
+      trait IRouteProvider
+        extends StObject
+           with IServiceProvider {
         
         /**
           * Match routes without being case sensitive
@@ -388,16 +391,15 @@ object mod extends Shortcut {
       // see http://docs.angularjs.org/api/ngRoute.$route
       // see http://docs.angularjs.org/api/ngRoute.$routeProvider
       ///////////////////////////////////////////////////////////////////////////
-      @js.native
       trait IRouteService extends StObject {
         
         // May not always be available. For instance, current will not be available
         // to a controller that was not initialized as a result of a route maching.
-        var current: js.UndefOr[ICurrentRoute] = js.native
+        var current: js.UndefOr[ICurrentRoute] = js.undefined
         
-        def reload(): Unit = js.native
+        def reload(): Unit
         
-        var routes: js.Any = js.native
+        var routes: js.Any
         
         /**
           * Causes $route service to update the current URL, replacing current route parameters with those specified in newParams.
@@ -406,7 +408,7 @@ object mod extends Shortcut {
           *
           * @param newParams Object.<string, string> mapping of URL parameter names to values
           */
-        def updateParams(newParams: StringDictionary[String]): Unit = js.native
+        def updateParams(newParams: StringDictionary[String]): Unit
       }
       object IRouteService {
         

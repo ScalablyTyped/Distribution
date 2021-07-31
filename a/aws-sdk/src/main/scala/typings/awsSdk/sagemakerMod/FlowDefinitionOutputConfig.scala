@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowDefinitionOutputConfig extends StObject {
   
   /**
     * The Amazon Key Management Service (KMS) key ID for server-side encryption.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * The Amazon S3 path where the object containing human output will be made available.
     */
-  var S3OutputPath: S3Uri = js.native
+  var S3OutputPath: S3Uri
 }
 object FlowDefinitionOutputConfig {
   

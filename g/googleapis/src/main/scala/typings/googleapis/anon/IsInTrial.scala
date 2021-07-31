@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsInTrial extends StObject {
   
-  var isInTrial: js.UndefOr[Boolean] = js.native
+  var isInTrial: js.UndefOr[Boolean] = js.undefined
   
-  var trialEndTime: js.UndefOr[String] = js.native
+  var trialEndTime: js.UndefOr[String] = js.undefined
 }
 object IsInTrial {
   

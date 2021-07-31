@@ -2,7 +2,6 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to process the task.  This proto can only be used for tasks in a queue
   * which has pull_target set.
   */
-@js.native
 trait SchemaPullMessage extends StObject {
   
   /**
     * A data payload consumed by the worker to execute the task.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * The task&#39;s tag.  Tags allow similar tasks to be processed in a batch.
@@ -31,7 +29,7 @@ trait SchemaPullMessage extends StObject {
     * UTF-8 encoded, the tag will be empty when the task is returned by Cloud
     * Tasks.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaPullMessage {
   

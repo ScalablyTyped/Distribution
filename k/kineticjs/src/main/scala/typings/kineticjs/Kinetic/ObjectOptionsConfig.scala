@@ -2,45 +2,43 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectOptionsConfig extends StObject {
   
-  var dragBoundFunc: js.UndefOr[js.Function1[/* pos */ Vector2d, Vector2d]] = js.native
+  var dragBoundFunc: js.UndefOr[js.Function1[/* pos */ Vector2d, Vector2d]] = js.undefined
   
-  var dragBounds: js.UndefOr[js.Any] = js.native
+  var dragBounds: js.UndefOr[js.Any] = js.undefined
   
-  var dragConstraint: js.UndefOr[String] = js.native
+  var dragConstraint: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var listening: js.UndefOr[Boolean] = js.native
+  var listening: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Vector2d] = js.native
+  var offset: js.UndefOr[Vector2d] = js.undefined
   
-  var opacity: js.UndefOr[js.Any] = js.native
+  var opacity: js.UndefOr[js.Any] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var rotationDeg: js.UndefOr[Double] = js.native
+  var rotationDeg: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Vector2d] = js.native
+  var scale: js.UndefOr[Vector2d] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ObjectOptionsConfig {
   

@@ -2,17 +2,15 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseTexture extends StObject {
   
-  var baseTexture: js.UndefOr[Boolean] = js.native
+  var baseTexture: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[Boolean] = js.undefined
   
-  var texture: js.UndefOr[Boolean] = js.native
+  var texture: js.UndefOr[Boolean] = js.undefined
 }
 object BaseTexture {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Intent extends StObject {
   
   /**
     * The name of the intent.
     */
-  var intentName: IntentName = js.native
+  var intentName: IntentName
   
   /**
     * The version of the intent.
     */
-  var intentVersion: Version = js.native
+  var intentVersion: Version
 }
 object Intent {
   

@@ -12,7 +12,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace api. */
@@ -31,18 +30,20 @@ object api {
   }
   object CustomHttpPattern {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new CustomHttpPattern instance using the specified properties.
       * @param [properties] Properties to set
       * @returns CustomHttpPattern instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.create")
-    @js.native
-    def create(properties: ICustomHttpPattern): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
+    @scala.inline
+    def create(properties: ICustomHttpPattern): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
     
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer.
@@ -53,18 +54,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
     
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer, length delimited.
@@ -74,12 +71,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
     
     /**
       * Encodes the specified CustomHttpPattern message. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -88,12 +83,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.encode")
-    @js.native
-    def encode(message: ICustomHttpPattern): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.encode")
-    @js.native
-    def encode(message: ICustomHttpPattern, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ICustomHttpPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ICustomHttpPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified CustomHttpPattern message, length delimited. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -102,12 +95,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICustomHttpPattern): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICustomHttpPattern, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ICustomHttpPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ICustomHttpPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a CustomHttpPattern message from a plain object. Also converts values to their respective internal types.
@@ -115,9 +106,8 @@ object api {
       * @returns CustomHttpPattern
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern]
     
     /**
       * Creates a plain object from a CustomHttpPattern message. Also converts values to other types if specified.
@@ -126,15 +116,13 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.toObject")
-    @js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
     def toObject(
       message: typings.googleCloudPubsub.protosMod.google.api.CustomHttpPattern,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = js.native
+    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a CustomHttpPattern message.
@@ -142,9 +130,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.CustomHttpPattern.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** FieldBehavior enum. */
@@ -153,19 +140,19 @@ object api {
   object FieldBehavior extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleCloudPubsub.protosMod.google.api.FieldBehavior with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleCloudPubsub.protosMod.google.api.FieldBehavior & Double] = js.native
     
-    /* 0 */ val FIELD_BEHAVIOR_UNSPECIFIED: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.FIELD_BEHAVIOR_UNSPECIFIED with Double = js.native
+    /* 0 */ val FIELD_BEHAVIOR_UNSPECIFIED: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.FIELD_BEHAVIOR_UNSPECIFIED & Double = js.native
     
-    /* 5 */ val IMMUTABLE: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.IMMUTABLE with Double = js.native
+    /* 5 */ val IMMUTABLE: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.IMMUTABLE & Double = js.native
     
-    /* 4 */ val INPUT_ONLY: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.INPUT_ONLY with Double = js.native
+    /* 4 */ val INPUT_ONLY: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.INPUT_ONLY & Double = js.native
     
-    /* 1 */ val OPTIONAL: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.OPTIONAL with Double = js.native
+    /* 1 */ val OPTIONAL: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.OPTIONAL & Double = js.native
     
-    /* 3 */ val OUTPUT_ONLY: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.OUTPUT_ONLY with Double = js.native
+    /* 3 */ val OUTPUT_ONLY: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.OUTPUT_ONLY & Double = js.native
     
-    /* 2 */ val REQUIRED: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.REQUIRED with Double = js.native
+    /* 2 */ val REQUIRED: typings.googleCloudPubsub.protosMod.google.api.FieldBehavior.REQUIRED & Double = js.native
   }
   
   /** Represents a Http. */
@@ -181,18 +168,20 @@ object api {
   }
   object Http {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.api.Http")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Http instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Http instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.create")
-    @js.native
-    def create(properties: IHttp): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
+    @scala.inline
+    def create(properties: IHttp): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
     
     /**
       * Decodes a Http message from the specified reader or buffer.
@@ -203,18 +192,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
     
     /**
       * Decodes a Http message from the specified reader or buffer, length delimited.
@@ -224,12 +209,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
     
     /**
       * Encodes the specified Http message. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -238,12 +221,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.encode")
-    @js.native
-    def encode(message: IHttp): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.encode")
-    @js.native
-    def encode(message: IHttp, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IHttp): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IHttp, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Http message, length delimited. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -252,12 +233,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttp): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttp, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IHttp): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IHttp, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Http message from a plain object. Also converts values to their respective internal types.
@@ -265,9 +244,8 @@ object api {
       * @returns Http
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.Http = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.Http]
     
     /**
       * Creates a plain object from a Http message. Also converts values to other types if specified.
@@ -276,12 +254,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.Http): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.Http, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.Http): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.Http, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Http message.
@@ -289,9 +265,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.Http.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a HttpRule. */
@@ -307,18 +282,20 @@ object api {
   }
   object HttpRule {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new HttpRule instance using the specified properties.
       * @param [properties] Properties to set
       * @returns HttpRule instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.create")
-    @js.native
-    def create(properties: IHttpRule): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
+    @scala.inline
+    def create(properties: IHttpRule): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
     
     /**
       * Decodes a HttpRule message from the specified reader or buffer.
@@ -329,18 +306,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
     
     /**
       * Decodes a HttpRule message from the specified reader or buffer, length delimited.
@@ -350,12 +323,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
     
     /**
       * Encodes the specified HttpRule message. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -364,12 +335,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.encode")
-    @js.native
-    def encode(message: IHttpRule): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.encode")
-    @js.native
-    def encode(message: IHttpRule, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IHttpRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IHttpRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified HttpRule message, length delimited. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -378,12 +347,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttpRule): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttpRule, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IHttpRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IHttpRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a HttpRule message from a plain object. Also converts values to their respective internal types.
@@ -391,9 +358,8 @@ object api {
       * @returns HttpRule
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.HttpRule = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.HttpRule]
     
     /**
       * Creates a plain object from a HttpRule message. Also converts values to other types if specified.
@@ -402,12 +368,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.HttpRule): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.HttpRule, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.HttpRule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.HttpRule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a HttpRule message.
@@ -415,9 +379,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.HttpRule.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceDescriptor. */
@@ -433,6 +396,10 @@ object api {
   }
   object ResourceDescriptor {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** History enum. */
     @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.History")
     @js.native
@@ -440,14 +407,14 @@ object api {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
-            typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History with Double
+            typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History & Double
           ] = js.native
       
-      /* 2 */ val FUTURE_MULTI_PATTERN: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN with Double = js.native
+      /* 2 */ val FUTURE_MULTI_PATTERN: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN & Double = js.native
       
-      /* 0 */ val HISTORY_UNSPECIFIED: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED with Double = js.native
+      /* 0 */ val HISTORY_UNSPECIFIED: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED & Double = js.native
       
-      /* 1 */ val ORIGINALLY_SINGLE_PATTERN: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN with Double = js.native
+      /* 1 */ val ORIGINALLY_SINGLE_PATTERN: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN & Double = js.native
     }
     
     /**
@@ -456,12 +423,10 @@ object api {
       * @returns ResourceDescriptor instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.create")
-    @js.native
-    def create(properties: IResourceDescriptor): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
+    @scala.inline
+    def create(properties: IResourceDescriptor): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
     
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer.
@@ -472,18 +437,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
     
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer, length delimited.
@@ -493,12 +454,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
     
     /**
       * Encodes the specified ResourceDescriptor message. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -507,12 +466,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.encode")
-    @js.native
-    def encode(message: IResourceDescriptor): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.encode")
-    @js.native
-    def encode(message: IResourceDescriptor, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IResourceDescriptor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IResourceDescriptor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ResourceDescriptor message, length delimited. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -521,12 +478,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceDescriptor): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceDescriptor, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IResourceDescriptor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IResourceDescriptor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ResourceDescriptor message from a plain object. Also converts values to their respective internal types.
@@ -534,9 +489,8 @@ object api {
       * @returns ResourceDescriptor
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor]
     
     /**
       * Creates a plain object from a ResourceDescriptor message. Also converts values to other types if specified.
@@ -545,15 +499,13 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.toObject")
-    @js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
     def toObject(
       message: typings.googleCloudPubsub.protosMod.google.api.ResourceDescriptor,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = js.native
+    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ResourceDescriptor message.
@@ -561,9 +513,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceDescriptor.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceReference. */
@@ -579,18 +530,20 @@ object api {
   }
   object ResourceReference {
     
+    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new ResourceReference instance using the specified properties.
       * @param [properties] Properties to set
       * @returns ResourceReference instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.create")
-    @js.native
-    def create(): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.create")
-    @js.native
-    def create(properties: IResourceReference): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
+    @scala.inline
+    def create(): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
+    @scala.inline
+    def create(properties: IResourceReference): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
     
     /**
       * Decodes a ResourceReference message from the specified reader or buffer.
@@ -601,18 +554,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
     
     /**
       * Decodes a ResourceReference message from the specified reader or buffer, length delimited.
@@ -622,12 +571,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
     
     /**
       * Encodes the specified ResourceReference message. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -636,12 +583,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.encode")
-    @js.native
-    def encode(message: IResourceReference): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.encode")
-    @js.native
-    def encode(message: IResourceReference, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IResourceReference): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IResourceReference, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ResourceReference message, length delimited. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -650,12 +595,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceReference): Writer = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceReference, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IResourceReference): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IResourceReference, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ResourceReference message from a plain object. Also converts values to their respective internal types.
@@ -663,9 +606,8 @@ object api {
       * @returns ResourceReference
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.api.ResourceReference]
     
     /**
       * Creates a plain object from a ResourceReference message. Also converts values to other types if specified.
@@ -674,15 +616,13 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.toObject")
-    @js.native
-    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.ResourceReference): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.toObject")
-    @js.native
+    @scala.inline
+    def toObject(message: typings.googleCloudPubsub.protosMod.google.api.ResourceReference): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
     def toObject(
       message: typings.googleCloudPubsub.protosMod.google.api.ResourceReference,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = js.native
+    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ResourceReference message.
@@ -690,8 +630,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub", "protos.google.api.ResourceReference.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

@@ -2,19 +2,17 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrossSlideThresholds extends StObject {
   
-  var rearrangeStart: Double = js.native
+  var rearrangeStart: Double
   
-  var selectionStart: Double = js.native
+  var selectionStart: Double
   
-  var speedBumpEnd: Double = js.native
+  var speedBumpEnd: Double
   
-  var speedBumpStart: Double = js.native
+  var speedBumpStart: Double
 }
 object CrossSlideThresholds {
   

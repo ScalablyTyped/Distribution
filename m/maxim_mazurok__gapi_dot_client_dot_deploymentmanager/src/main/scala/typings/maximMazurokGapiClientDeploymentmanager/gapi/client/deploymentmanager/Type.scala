@@ -2,25 +2,23 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Output only. Creation timestamp in RFC3339 text format. */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /** Name of the type. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The Operation that most recently ran, or is currently running, on this type. */
-  var operation: js.UndefOr[Operation] = js.native
+  var operation: js.UndefOr[Operation] = js.undefined
   
   /** Output only. Server defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object Type {
   

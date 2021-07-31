@@ -2,41 +2,39 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryConnectSettingsDescription extends StObject {
   
   /**
     * A list of the Availability Zones that the directory is in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZones] = js.undefined
   
   /**
     * The IP addresses of the AD Connector servers.
     */
-  var ConnectIps: js.UndefOr[IpAddrs] = js.native
+  var ConnectIps: js.UndefOr[IpAddrs] = js.undefined
   
   /**
     * The user name of the service account in the on-premises directory.
     */
-  var CustomerUserName: js.UndefOr[UserName] = js.native
+  var CustomerUserName: js.UndefOr[UserName] = js.undefined
   
   /**
     * The security group identifier for the AD Connector directory.
     */
-  var SecurityGroupId: js.UndefOr[typings.awsSdk.directoryserviceMod.SecurityGroupId] = js.native
+  var SecurityGroupId: js.UndefOr[typings.awsSdk.directoryserviceMod.SecurityGroupId] = js.undefined
   
   /**
     * A list of subnet identifiers in the VPC that the AD Connector is in.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetIds] = js.undefined
   
   /**
     * The identifier of the VPC that the AD Connector is in.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.undefined
 }
 object DirectoryConnectSettingsDescription {
   

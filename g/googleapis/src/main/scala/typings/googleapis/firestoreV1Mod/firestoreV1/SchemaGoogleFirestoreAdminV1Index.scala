@@ -2,14 +2,12 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Firestore indexes enable simple and complex queries against documents
   * in a database.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1Index extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaGoogleFirestoreAdminV1Index extends StObject {
     * exactly one entry with a field path equal to the field path of the
     * associated field.
     */
-  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1IndexField]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1IndexField]] = js.undefined
   
   /**
     * Output only. A server defined name for this index. The form of this name
@@ -31,7 +29,7 @@ trait SchemaGoogleFirestoreAdminV1Index extends StObject {
     * `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/indexes/{composite_index_id}`
     * For single field indexes, this field will be empty.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Indexes with a collection query scope specified allow queries against a
@@ -41,12 +39,12 @@ trait SchemaGoogleFirestoreAdminV1Index extends StObject {
     * descended from a specific document, specified at query time, and that
     * have the same collection id as this index.
     */
-  var queryScope: js.UndefOr[String] = js.native
+  var queryScope: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The serving state of the index.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1Index {
   

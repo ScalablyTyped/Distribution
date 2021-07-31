@@ -2,36 +2,34 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubscriberRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget whose subscriber you want to update.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The name of the budget whose subscriber you want to update.
     */
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
     * The updated subscriber that is associated with a budget notification.
     */
-  var NewSubscriber: Subscriber = js.native
+  var NewSubscriber: Subscriber
   
   /**
     * The notification whose subscriber you want to update.
     */
-  var Notification: typings.awsSdk.budgetsMod.Notification = js.native
+  var Notification: typings.awsSdk.budgetsMod.Notification
   
   /**
     * The previous subscriber that is associated with a budget notification.
     */
-  var OldSubscriber: Subscriber = js.native
+  var OldSubscriber: Subscriber
 }
 object UpdateSubscriberRequest {
   

@@ -3,14 +3,15 @@ package typings.streamDemux
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("stream-demux", JSImport.Namespace)
   @js.native
-  class ^[T] () extends StreamDemux[T]
+  class ^[T] ()
+    extends StObject
+       with StreamDemux[T]
   
   @js.native
   trait StreamDemux[T] extends StObject {

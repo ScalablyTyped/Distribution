@@ -5,10 +5,13 @@ import typings.chalk.mod.Chalk
 import typings.chalk.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jest-matcher-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object BOLD_WEIGHT extends Shortcut {
     
@@ -22,7 +25,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("jest-matcher-utils", "BOLD_WEIGHT.Instance")
     @js.native
-    class Instance () extends Chalk {
+    class Instance ()
+      extends StObject
+         with Chalk {
       def this(options: Options) = this()
     }
     
@@ -44,7 +49,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("jest-matcher-utils", "DIM_COLOR.Instance")
     @js.native
-    class Instance () extends Chalk {
+    class Instance ()
+      extends StObject
+         with Chalk {
       def this(options: Options) = this()
     }
     
@@ -66,7 +73,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("jest-matcher-utils", "EXPECTED_COLOR.Instance")
     @js.native
-    class Instance () extends Chalk {
+    class Instance ()
+      extends StObject
+         with Chalk {
       def this(options: Options) = this()
     }
     
@@ -88,7 +97,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("jest-matcher-utils", "INVERTED_COLOR.Instance")
     @js.native
-    class Instance () extends Chalk {
+    class Instance ()
+      extends StObject
+         with Chalk {
       def this(options: Options) = this()
     }
     
@@ -110,7 +121,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("jest-matcher-utils", "RECEIVED_COLOR.Instance")
     @js.native
-    class Instance () extends Chalk {
+    class Instance ()
+      extends StObject
+         with Chalk {
       def this(options: Options) = this()
     }
     
@@ -124,152 +137,105 @@ object mod {
   @js.native
   val SUGGEST_TO_CONTAIN_EQUAL: String = js.native
   
-  @JSImport("jest-matcher-utils", "diff")
-  @js.native
-  def diff(a: js.Any, b: js.Any): String | Null = js.native
-  @JSImport("jest-matcher-utils", "diff")
-  @js.native
-  def diff(a: js.Any, b: js.Any, options: typings.jestDiff.typesMod.DiffOptions): String | Null = js.native
+  @scala.inline
+  def diff(a: js.Any, b: js.Any): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def diff(a: js.Any, b: js.Any, options: typings.jestDiff.typesMod.DiffOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("jest-matcher-utils", "ensureActualIsNumber")
-  @js.native
-  def ensureActualIsNumber(actual: js.Any, matcherName: String): Unit = js.native
-  @JSImport("jest-matcher-utils", "ensureActualIsNumber")
-  @js.native
-  def ensureActualIsNumber(actual: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+  @scala.inline
+  def ensureActualIsNumber(actual: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureActualIsNumber(actual: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-matcher-utils", "ensureExpectedIsNonNegativeInteger")
-  @js.native
-  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String): Unit = js.native
-  @JSImport("jest-matcher-utils", "ensureExpectedIsNonNegativeInteger")
-  @js.native
-  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+  @scala.inline
+  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-matcher-utils", "ensureExpectedIsNumber")
-  @js.native
-  def ensureExpectedIsNumber(expected: js.Any, matcherName: String): Unit = js.native
-  @JSImport("jest-matcher-utils", "ensureExpectedIsNumber")
-  @js.native
-  def ensureExpectedIsNumber(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+  @scala.inline
+  def ensureExpectedIsNumber(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureExpectedIsNumber(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-matcher-utils", "ensureNoExpected")
-  @js.native
-  def ensureNoExpected(expected: js.Any, matcherName: String): Unit = js.native
-  @JSImport("jest-matcher-utils", "ensureNoExpected")
-  @js.native
-  def ensureNoExpected(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+  @scala.inline
+  def ensureNoExpected(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureNoExpected(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-matcher-utils", "ensureNumbers")
-  @js.native
-  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String): Unit = js.native
-  @JSImport("jest-matcher-utils", "ensureNumbers")
-  @js.native
-  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+  @scala.inline
+  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-matcher-utils", "getLabelPrinter")
-  @js.native
-  def getLabelPrinter(strings: String*): PrintLabel = js.native
+  @scala.inline
+  def getLabelPrinter(strings: String*): PrintLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabelPrinter")(strings.asInstanceOf[js.Any]).asInstanceOf[PrintLabel]
   
-  @JSImport("jest-matcher-utils", "highlightTrailingWhitespace")
-  @js.native
-  def highlightTrailingWhitespace(text: String): String = js.native
+  @scala.inline
+  def highlightTrailingWhitespace(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightTrailingWhitespace")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "matcherErrorMessage")
-  @js.native
-  def matcherErrorMessage(hint: String, generic: String): String = js.native
-  @JSImport("jest-matcher-utils", "matcherErrorMessage")
-  @js.native
-  def matcherErrorMessage(hint: String, generic: String, specific: String): String = js.native
+  @scala.inline
+  def matcherErrorMessage(hint: String, generic: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherErrorMessage(hint: String, generic: String, specific: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any], specific.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(matcherName: String): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(
-    matcherName: String,
-    received: js.UndefOr[scala.Nothing],
-    expected: js.UndefOr[scala.Nothing],
-    options: MatcherHintOptions
-  ): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(matcherName: String, received: js.UndefOr[scala.Nothing], expected: String): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(
-    matcherName: String,
-    received: js.UndefOr[scala.Nothing],
-    expected: String,
-    options: MatcherHintOptions
-  ): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(matcherName: String, received: String): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(
-    matcherName: String,
-    received: String,
-    expected: js.UndefOr[scala.Nothing],
-    options: MatcherHintOptions
-  ): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(matcherName: String, received: String, expected: String): String = js.native
-  @JSImport("jest-matcher-utils", "matcherHint")
-  @js.native
-  def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = js.native
+  @scala.inline
+  def matcherHint(matcherName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: String, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: Unit, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: Unit, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def matcherHint(matcherName: String, received: Unit, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "pluralize")
-  @js.native
-  def pluralize(word: String, count: Double): String = js.native
+  @scala.inline
+  def pluralize(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "printDiffOrStringify")
-  @js.native
-  def printDiffOrStringify(expected: js.Any, received: js.Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = js.native
+  @scala.inline
+  def printDiffOrStringify(expected: js.Any, received: js.Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printDiffOrStringify")(expected.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expectedLabel.asInstanceOf[js.Any], receivedLabel.asInstanceOf[js.Any], expand.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "printExpected")
-  @js.native
-  def printExpected(value: js.Any): String = js.native
+  @scala.inline
+  def printExpected(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printExpected")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "printReceived")
-  @js.native
-  def printReceived(`object`: js.Any): String = js.native
+  @scala.inline
+  def printReceived(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printReceived")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "printWithType")
-  @js.native
-  def printWithType(name: String, value: js.Any, print: js.Function1[/* value */ js.Any, String]): String = js.native
+  @scala.inline
+  def printWithType(name: String, value: js.Any, print: js.Function1[/* value */ js.Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printWithType")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], print.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-matcher-utils", "stringify")
-  @js.native
-  def stringify(`object`: js.Any): String = js.native
-  @JSImport("jest-matcher-utils", "stringify")
-  @js.native
-  def stringify(`object`: js.Any, maxDepth: Double): String = js.native
+  @scala.inline
+  def stringify(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(`object`: js.Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type DiffOptions = typings.jestDiff.typesMod.DiffOptions
   
   type MatcherHintColor = js.Function1[/* arg */ String, String]
   
-  @js.native
   trait MatcherHintOptions extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var expectedColor: js.UndefOr[MatcherHintColor] = js.native
+    var expectedColor: js.UndefOr[MatcherHintColor] = js.undefined
     
-    var isDirectExpectCall: js.UndefOr[Boolean] = js.native
+    var isDirectExpectCall: js.UndefOr[Boolean] = js.undefined
     
-    var isNot: js.UndefOr[Boolean] = js.native
+    var isNot: js.UndefOr[Boolean] = js.undefined
     
-    var promise: js.UndefOr[String] = js.native
+    var promise: js.UndefOr[String] = js.undefined
     
-    var receivedColor: js.UndefOr[MatcherHintColor] = js.native
+    var receivedColor: js.UndefOr[MatcherHintColor] = js.undefined
     
-    var secondArgument: js.UndefOr[String] = js.native
+    var secondArgument: js.UndefOr[String] = js.undefined
     
-    var secondArgumentColor: js.UndefOr[MatcherHintColor] = js.native
+    var secondArgumentColor: js.UndefOr[MatcherHintColor] = js.undefined
   }
   object MatcherHintOptions {
     

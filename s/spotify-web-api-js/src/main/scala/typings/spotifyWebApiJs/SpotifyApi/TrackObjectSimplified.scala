@@ -3,45 +3,43 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simplified Track Object
   * [track object (simplified)](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
-@js.native
 trait TrackObjectSimplified extends StObject {
   
-  var artists: js.Array[ArtistObjectSimplified] = js.native
+  var artists: js.Array[ArtistObjectSimplified]
   
-  var available_markets: js.UndefOr[js.Array[String]] = js.native
+  var available_markets: js.UndefOr[js.Array[String]] = js.undefined
   
-  var disc_number: Double = js.native
+  var disc_number: Double
   
-  var duration_ms: Double = js.native
+  var duration_ms: Double
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var is_playable: js.UndefOr[Boolean] = js.native
+  var is_playable: js.UndefOr[Boolean] = js.undefined
   
-  var linked_from: js.UndefOr[TrackLinkObject] = js.native
+  var linked_from: js.UndefOr[TrackLinkObject] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var preview_url: String = js.native
+  var preview_url: String
   
-  var track_number: Double = js.native
+  var track_number: Double
   
-  var `type`: track = js.native
+  var `type`: track
   
-  var uri: String = js.native
+  var uri: String
 }
 object TrackObjectSimplified {
   
@@ -57,11 +55,10 @@ object TrackObjectSimplified {
     name: String,
     preview_url: String,
     track_number: Double,
-    `type`: track,
     uri: String
   ): TrackObjectSimplified = {
     val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any], disc_number = disc_number.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], preview_url = preview_url.asInstanceOf[js.Any], track_number = track_number.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("track")
     __obj.asInstanceOf[TrackObjectSimplified]
   }
   

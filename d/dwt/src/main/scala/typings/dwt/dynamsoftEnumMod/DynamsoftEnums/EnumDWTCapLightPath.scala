@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +12,17 @@ sealed trait EnumDWTCapLightPath extends StObject
 object EnumDWTCapLightPath extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapLightPath with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumDWTCapLightPath & Double] = js.native
   
   @js.native
-  sealed trait TWLP_REFLECTIVE extends EnumDWTCapLightPath
-  /* 0 */ val TWLP_REFLECTIVE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapLightPath.TWLP_REFLECTIVE with Double = js.native
+  sealed trait TWLP_REFLECTIVE
+    extends StObject
+       with EnumDWTCapLightPath
+  /* 0 */ val TWLP_REFLECTIVE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapLightPath.TWLP_REFLECTIVE & Double = js.native
   
   @js.native
-  sealed trait TWLP_TRANSMISSIVE extends EnumDWTCapLightPath
-  /* 1 */ val TWLP_TRANSMISSIVE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapLightPath.TWLP_TRANSMISSIVE with Double = js.native
+  sealed trait TWLP_TRANSMISSIVE
+    extends StObject
+       with EnumDWTCapLightPath
+  /* 1 */ val TWLP_TRANSMISSIVE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapLightPath.TWLP_TRANSMISSIVE & Double = js.native
 }

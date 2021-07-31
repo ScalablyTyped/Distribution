@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Occurrence extends StObject {
   
   /** Describes an attestation of an artifact. */
-  var attestation: js.UndefOr[Details] = js.native
+  var attestation: js.UndefOr[Details] = js.undefined
   
   /** Describes a verifiable build. */
-  var build: js.UndefOr[GrafeasV1beta1BuildDetails] = js.native
+  var build: js.UndefOr[GrafeasV1beta1BuildDetails] = js.undefined
   
   /** Output only. The time this occurrence was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Describes the deployment of an artifact on a runtime. */
-  var deployment: js.UndefOr[GrafeasV1beta1DeploymentDetails] = js.native
+  var deployment: js.UndefOr[GrafeasV1beta1DeploymentDetails] = js.undefined
   
   /** Describes how this resource derives from the basis in the associated note. */
-  var derivedImage: js.UndefOr[GrafeasV1beta1ImageDetails] = js.native
+  var derivedImage: js.UndefOr[GrafeasV1beta1ImageDetails] = js.undefined
   
   /** Describes when a resource was discovered. */
-  var discovered: js.UndefOr[GrafeasV1beta1DiscoveryDetails] = js.native
+  var discovered: js.UndefOr[GrafeasV1beta1DiscoveryDetails] = js.undefined
   
   /** Describes the installation of a package on the linked resource. */
-  var installation: js.UndefOr[GrafeasV1beta1PackageDetails] = js.native
+  var installation: js.UndefOr[GrafeasV1beta1PackageDetails] = js.undefined
   
   /** Describes a specific in-toto link. */
-  var intoto: js.UndefOr[GrafeasV1beta1IntotoDetails] = js.native
+  var intoto: js.UndefOr[GrafeasV1beta1IntotoDetails] = js.undefined
   
   /** Output only. This explicitly denotes which of the occurrence details are specified. This field can be used as a filter in list requests. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of the occurrence in the form of `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The analysis note associated with this occurrence, in the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`. This field can be used as a filter in list requests. */
-  var noteName: js.UndefOr[String] = js.native
+  var noteName: js.UndefOr[String] = js.undefined
   
   /** A description of actions that can be taken to remedy the note. */
-  var remediation: js.UndefOr[String] = js.native
+  var remediation: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The resource for which the occurrence applies. */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /** Output only. The time this occurrence was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Describes a security vulnerability. */
-  var vulnerability: js.UndefOr[GrafeasV1beta1VulnerabilityDetails] = js.native
+  var vulnerability: js.UndefOr[GrafeasV1beta1VulnerabilityDetails] = js.undefined
 }
 object Occurrence {
   

@@ -2,17 +2,15 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FiltersScore extends StObject {
   
-  val filtersScore: Double = js.native
+  val filtersScore: Double
   
-  val rankingScore: Double = js.native
+  val rankingScore: Double
   
-  val score: Double = js.native
+  val score: Double
 }
 object FiltersScore {
   

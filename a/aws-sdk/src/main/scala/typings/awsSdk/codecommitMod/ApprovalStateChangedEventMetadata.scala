@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalStateChangedEventMetadata extends StObject {
   
   /**
     * The approval status for the pull request.
     */
-  var approvalStatus: js.UndefOr[ApprovalState] = js.native
+  var approvalStatus: js.UndefOr[ApprovalState] = js.undefined
   
   /**
     * The revision ID of the pull request when the approval state changed.
     */
-  var revisionId: js.UndefOr[RevisionId] = js.native
+  var revisionId: js.UndefOr[RevisionId] = js.undefined
 }
 object ApprovalStateChangedEventMetadata {
   

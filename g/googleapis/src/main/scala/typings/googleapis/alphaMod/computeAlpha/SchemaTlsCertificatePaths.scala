@@ -2,24 +2,22 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The paths to the mounted TLS Certificates and private key.
   */
-@js.native
 trait SchemaTlsCertificatePaths extends StObject {
   
   /**
     * The path to the file holding the client or server TLS certificate to use.
     */
-  var certificatePath: js.UndefOr[String] = js.native
+  var certificatePath: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the file holding the client or server private key.
     */
-  var privateKeyPath: js.UndefOr[String] = js.native
+  var privateKeyPath: js.UndefOr[String] = js.undefined
 }
 object SchemaTlsCertificatePaths {
   

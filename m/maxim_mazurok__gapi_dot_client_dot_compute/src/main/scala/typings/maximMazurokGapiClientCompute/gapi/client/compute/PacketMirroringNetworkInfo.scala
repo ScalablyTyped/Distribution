@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PacketMirroringNetworkInfo extends StObject {
   
   /** [Output Only] Unique identifier for the network; defined by the server. */
-  var canonicalUrl: js.UndefOr[String] = js.native
+  var canonicalUrl: js.UndefOr[String] = js.undefined
   
   /** URL of the network resource. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PacketMirroringNetworkInfo {
   

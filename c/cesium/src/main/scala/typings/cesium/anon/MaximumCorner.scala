@@ -4,17 +4,15 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaximumCorner extends StObject {
   
-  var maximumCorner: Cartesian3 = js.native
+  var maximumCorner: Cartesian3
   
-  var minimumCorner: Cartesian3 = js.native
+  var minimumCorner: Cartesian3
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
 }
 object MaximumCorner {
   

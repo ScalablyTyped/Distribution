@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStackResult extends StObject {
   
   /**
     * Information about the stack.
     */
-  var Stack: js.UndefOr[typings.awsSdk.appstreamMod.Stack] = js.native
+  var Stack: js.UndefOr[typings.awsSdk.appstreamMod.Stack] = js.undefined
 }
 object UpdateStackResult {
   

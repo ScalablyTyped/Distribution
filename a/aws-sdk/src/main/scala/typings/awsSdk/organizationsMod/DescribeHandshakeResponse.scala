@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHandshakeResponse extends StObject {
   
   /**
     * A structure that contains information about the specified handshake.
     */
-  var Handshake: js.UndefOr[typings.awsSdk.organizationsMod.Handshake] = js.native
+  var Handshake: js.UndefOr[typings.awsSdk.organizationsMod.Handshake] = js.undefined
 }
 object DescribeHandshakeResponse {
   

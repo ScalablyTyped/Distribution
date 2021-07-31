@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to create developer metadata.
   */
-@js.native
 trait SchemaCreateDeveloperMetadataRequest extends StObject {
   
   /**
     * The developer metadata to create.
     */
-  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.native
+  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.undefined
 }
 object SchemaCreateDeveloperMetadataRequest {
   

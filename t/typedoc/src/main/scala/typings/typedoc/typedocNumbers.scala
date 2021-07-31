@@ -3,33 +3,42 @@ package typings.typedoc
 import typings.typedoc.cliMod.ExitCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typedocNumbers {
   
   @js.native
-  sealed trait `1` extends ExitCode
+  sealed trait `1`
+    extends StObject
+       with ExitCode
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `2` extends ExitCode
+  sealed trait `2`
+    extends StObject
+       with ExitCode
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
-  sealed trait `3` extends ExitCode
+  sealed trait `3`
+    extends StObject
+       with ExitCode
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `4` extends ExitCode
+  sealed trait `4`
+    extends StObject
+       with ExitCode
   @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
-  sealed trait `5` extends ExitCode
+  sealed trait `5`
+    extends StObject
+       with ExitCode
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
 }

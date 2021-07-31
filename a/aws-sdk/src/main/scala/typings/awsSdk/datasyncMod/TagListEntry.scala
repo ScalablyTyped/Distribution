@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagListEntry extends StObject {
   
   /**
     * The key for an AWS resource tag.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     * The value for an AWS resource tag.
     */
-  var Value: js.UndefOr[TagValue] = js.native
+  var Value: js.UndefOr[TagValue] = js.undefined
 }
 object TagListEntry {
   

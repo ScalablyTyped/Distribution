@@ -6,25 +6,23 @@ import typings.grommet.baseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
-  var day: js.UndefOr[`14`] = js.native
+  var day: js.UndefOr[`14`] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var heading: js.UndefOr[`15`] = js.native
+  var heading: js.UndefOr[`15`] = js.undefined
   
-  var icons: js.UndefOr[Previous] = js.native
+  var icons: js.UndefOr[Previous] = js.undefined
   
-  var large: js.UndefOr[DaySize] = js.native
+  var large: js.UndefOr[DaySize] = js.undefined
   
-  var medium: js.UndefOr[DaySize] = js.native
+  var medium: js.UndefOr[DaySize] = js.undefined
   
-  var small: js.UndefOr[DaySize] = js.native
+  var small: js.UndefOr[DaySize] = js.undefined
 }
 object Day {
   
@@ -44,10 +42,10 @@ object Day {
     def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

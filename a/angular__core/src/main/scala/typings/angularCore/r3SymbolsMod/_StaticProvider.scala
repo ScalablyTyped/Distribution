@@ -2,14 +2,13 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _StaticProvider extends StObject
 object _StaticProvider {
   
   @scala.inline
-  def ConstructorProvider(provide: Type[_]): typings.angularCore.r3SymbolsMod.ConstructorProvider = {
+  def ConstructorProvider(provide: Type[js.Any]): typings.angularCore.r3SymbolsMod.ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.r3SymbolsMod.ConstructorProvider]
   }
@@ -27,7 +26,7 @@ object _StaticProvider {
   }
   
   @scala.inline
-  def StaticClassProvider(deps: js.Array[_], provide: js.Any, useClass: Type[_]): typings.angularCore.r3SymbolsMod.StaticClassProvider = {
+  def StaticClassProvider(deps: js.Array[js.Any], provide: js.Any, useClass: Type[js.Any]): typings.angularCore.r3SymbolsMod.StaticClassProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.r3SymbolsMod.StaticClassProvider]
   }

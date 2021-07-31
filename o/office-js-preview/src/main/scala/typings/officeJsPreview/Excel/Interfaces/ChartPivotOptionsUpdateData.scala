@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`. */
-@js.native
 trait ChartPivotOptionsUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartPivotOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showAxisFieldButtons: js.UndefOr[Boolean] = js.native
+  var showAxisFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ChartPivotOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showLegendFieldButtons: js.UndefOr[Boolean] = js.native
+  var showLegendFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartPivotOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showReportFilterFieldButtons: js.UndefOr[Boolean] = js.native
+  var showReportFilterFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ChartPivotOptionsUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showValueFieldButtons: js.UndefOr[Boolean] = js.native
+  var showValueFieldButtons: js.UndefOr[Boolean] = js.undefined
 }
 object ChartPivotOptionsUpdateData {
   

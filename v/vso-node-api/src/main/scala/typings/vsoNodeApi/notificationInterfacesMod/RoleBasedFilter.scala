@@ -2,15 +2,15 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoleBasedFilter extends ExpressionFilter {
+trait RoleBasedFilter
+  extends StObject
+     with ExpressionFilter {
   
-  var exclusions: js.Array[String] = js.native
+  var exclusions: js.Array[String]
   
-  var inclusions: js.Array[String] = js.native
+  var inclusions: js.Array[String]
 }
 object RoleBasedFilter {
   

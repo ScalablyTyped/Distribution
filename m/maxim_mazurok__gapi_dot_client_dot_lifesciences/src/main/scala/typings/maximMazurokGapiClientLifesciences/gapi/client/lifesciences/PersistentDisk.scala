@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistentDisk extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait PersistentDisk extends StObject {
     * multiple local drives are automatically combined to provide the requested size. Note, however, that each physical SSD is 375GB in size, and no more than 8 drives can be attached to
     * a single instance.
     */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
   
   /** An image to put on the disk before attaching it to the VM. */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /** The Compute Engine disk type. If unspecified, `pd-standard` is used. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PersistentDisk {
   

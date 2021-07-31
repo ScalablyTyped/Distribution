@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaPackage extends Service {
   
   @JSName("config")
-  var config_MediaPackage: ConfigBase with ClientConfiguration = js.native
+  var config_MediaPackage: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Changes the Channel's properities to configure log subscription

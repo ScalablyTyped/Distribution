@@ -7,40 +7,40 @@ import typings.gulpAutoprefixer.gulpAutoprefixerStrings.autoplace
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-autoprefixer", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-autoprefixer", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-autoprefixer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
-    var browsers: js.UndefOr[js.Array[String]] = js.native
+    var browsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var flexbox: js.UndefOr[Boolean | `no-2009`] = js.native
+    var flexbox: js.UndefOr[Boolean | `no-2009`] = js.undefined
     
-    var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.native
+    var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
     
-    var ignoreUnknownVersions: js.UndefOr[Boolean] = js.native
+    var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
     
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
-    var stats: js.UndefOr[js.Object] = js.native
+    var stats: js.UndefOr[js.Object] = js.undefined
     
-    var supports: js.UndefOr[Boolean] = js.native
+    var supports: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

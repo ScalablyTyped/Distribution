@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DynamicDataLayerFields extends Object {
+trait DynamicDataLayerFields
+  extends StObject
+     with Object {
   
   /**
     * The alias of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
     */
-  var alias: String = js.native
+  var alias: String
   
   /**
     * The name of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
     */
-  var name: String = js.native
+  var name: String
 }
 object DynamicDataLayerFields {
   

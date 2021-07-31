@@ -13,54 +13,54 @@ import typings.loremIpsum.loremIpsumStrings.word
 import typings.loremIpsum.loremIpsumStrings.words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("lorem-ipsum", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("lorem-ipsum", "LoremIpsum")
   @js.native
   class LoremIpsum_ () extends default {
     def this(options: IGeneratorOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], format: String) = this()
+    def this(options: Unit, format: String) = this()
     def this(options: IGeneratorOptions, format: String) = this()
-    def this(options: js.UndefOr[scala.Nothing], format: js.UndefOr[scala.Nothing], suffix: String) = this()
-    def this(options: js.UndefOr[scala.Nothing], format: String, suffix: String) = this()
-    def this(options: IGeneratorOptions, format: js.UndefOr[scala.Nothing], suffix: String) = this()
+    def this(options: Unit, format: String, suffix: String) = this()
+    def this(options: Unit, format: Unit, suffix: String) = this()
     def this(options: IGeneratorOptions, format: String, suffix: String) = this()
+    def this(options: IGeneratorOptions, format: Unit, suffix: String) = this()
   }
   
-  @JSImport("lorem-ipsum", "loremIpsum")
-  @js.native
-  def loremIpsum(): String = js.native
-  @JSImport("lorem-ipsum", "loremIpsum")
-  @js.native
+  @scala.inline
+  def loremIpsum(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")().asInstanceOf[String]
+  @scala.inline
   def loremIpsum(
     hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix: ILoremIpsumParams
-  ): String = js.native
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")(hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait ILoremIpsumParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[plain | html] = js.native
+    var format: js.UndefOr[plain | html] = js.undefined
     
-    var paragraphLowerBound: js.UndefOr[Double] = js.native
+    var paragraphLowerBound: js.UndefOr[Double] = js.undefined
     
-    var paragraphUpperBound: js.UndefOr[Double] = js.native
+    var paragraphUpperBound: js.UndefOr[Double] = js.undefined
     
-    var random: js.UndefOr[IPrng] = js.native
+    var random: js.UndefOr[IPrng] = js.undefined
     
-    var sentenceLowerBound: js.UndefOr[Double] = js.native
+    var sentenceLowerBound: js.UndefOr[Double] = js.undefined
     
-    var sentenceUpperBound: js.UndefOr[Double] = js.native
+    var sentenceUpperBound: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var units: js.UndefOr[words | word | sentences | sentence | paragraphs | paragraph] = js.native
+    var units: js.UndefOr[words | word | sentences | sentence | paragraphs | paragraph] = js.undefined
     
-    var words: js.UndefOr[js.Array[String]] = js.native
+    var words: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ILoremIpsumParams {
     

@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2AppRequest
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2AppResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convMod {
@@ -60,11 +59,12 @@ object convMod {
     def serialize(): GoogleActionsV2AppResponse = js.native
   }
   
-  @js.native
-  trait ActionsSdkConversationOptions[TConvData, TUserStorage] extends ConversationBaseOptions[TConvData, TUserStorage] {
+  trait ActionsSdkConversationOptions[TConvData, TUserStorage]
+    extends StObject
+       with ConversationBaseOptions[TConvData, TUserStorage] {
     
     /** @public */
-    var body: js.UndefOr[GoogleActionsV2AppRequest] = js.native
+    var body: js.UndefOr[GoogleActionsV2AppRequest] = js.undefined
   }
   object ActionsSdkConversationOptions {
     
@@ -75,7 +75,7 @@ object convMod {
     }
     
     @scala.inline
-    implicit class ActionsSdkConversationOptionsMutableBuilder[Self <: ActionsSdkConversationOptions[_, _], TConvData, TUserStorage] (val x: Self with (ActionsSdkConversationOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class ActionsSdkConversationOptionsMutableBuilder[Self <: ActionsSdkConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkConversationOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setBody(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

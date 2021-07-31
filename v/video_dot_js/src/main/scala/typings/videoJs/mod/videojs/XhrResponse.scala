@@ -3,23 +3,21 @@ package typings.videoJs.mod.videojs
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XhrResponse extends StObject {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var method: String = js.native
+  var method: String
   
-  var rawRequest: XMLHttpRequest = js.native
+  var rawRequest: XMLHttpRequest
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var url: String = js.native
+  var url: String
 }
 object XhrResponse {
   

@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "InvokeMethodExpr")
@@ -17,14 +16,14 @@ class InvokeMethodExpr protected () extends Expression {
     receiver: Expression,
     method: String,
     args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     receiver: Expression,
     method: String,
     args: js.Array[Expression],
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
@@ -38,14 +37,14 @@ class InvokeMethodExpr protected () extends Expression {
     receiver: Expression,
     method: BuiltinMethod,
     args: js.Array[Expression],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     receiver: Expression,
     method: BuiltinMethod,
     args: js.Array[Expression],
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

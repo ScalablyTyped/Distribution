@@ -4,15 +4,13 @@ import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
 import typings.tensorflowTfjsCore.kernelNamesMod.FFTInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputsFFTInputs extends StObject {
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: FFTInputs = js.native
+  var inputs: FFTInputs
 }
 object InputsFFTInputs {
   

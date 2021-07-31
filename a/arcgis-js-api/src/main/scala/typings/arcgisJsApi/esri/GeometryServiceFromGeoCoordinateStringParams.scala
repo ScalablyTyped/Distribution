@@ -12,39 +12,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeometryServiceFromGeoCoordinateStringParams extends Object {
+trait GeometryServiceFromGeoCoordinateStringParams
+  extends StObject
+     with Object {
   
   /**
     * Conversion options for mrgs, utm and gars conversion types.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     */
-  var conversionMode: js.UndefOr[String] = js.native
+  var conversionMode: js.UndefOr[String] = js.undefined
   
   /**
     * The conversion type of the input strings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     */
-  var conversionType: js.UndefOr[mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd] = js.native
+  var conversionType: js.UndefOr[mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd] = js.undefined
   
   /**
     * The spatial reference or well-known ID to convert the input string coordinates to.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     */
-  var sr: SpatialReference | String | Double = js.native
+  var sr: SpatialReference | String | Double
   
   /**
     * An array of formatted strings as specified by `conversionType`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     */
-  var strings: js.Array[String] = js.native
+  var strings: js.Array[String]
 }
 object GeometryServiceFromGeoCoordinateStringParams {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ScimProvisionAndInviteUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersScimProvisionAndInviteUserEndpoint extends StObject {
   
-  var parameters: ScimProvisionAndInviteUserEndpoint = js.native
+  var parameters: ScimProvisionAndInviteUserEndpoint
   
-  var request: ScimProvisionAndInviteUserRequestOptions = js.native
+  var request: ScimProvisionAndInviteUserRequestOptions
   
-  var response: OctokitResponse[ScimProvisionAndInviteUserResponseData] = js.native
+  var response: OctokitResponse[ScimProvisionAndInviteUserResponseData]
 }
 object ParametersScimProvisionAndInviteUserEndpoint {
   

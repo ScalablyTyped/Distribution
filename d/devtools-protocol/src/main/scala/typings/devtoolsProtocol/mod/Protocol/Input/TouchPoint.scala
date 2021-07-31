@@ -2,47 +2,45 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchPoint extends StObject {
   
   /**
     * Force (default: 1.0).
     */
-  var force: js.UndefOr[Double] = js.native
+  var force: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifier used to track touch sources between events, must be unique within an event.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * X radius of the touch area (default: 1.0).
     */
-  var radiusX: js.UndefOr[Double] = js.native
+  var radiusX: js.UndefOr[Double] = js.undefined
   
   /**
     * Y radius of the touch area (default: 1.0).
     */
-  var radiusY: js.UndefOr[Double] = js.native
+  var radiusY: js.UndefOr[Double] = js.undefined
   
   /**
     * Rotation angle (default: 0.0).
     */
-  var rotationAngle: js.UndefOr[Double] = js.native
+  var rotationAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * X coordinate of the event relative to the main frame's viewport in CSS pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y coordinate of the event relative to the main frame's viewport in CSS pixels. 0 refers to
     * the top of the viewport and Y increases as it proceeds towards the bottom of the viewport.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object TouchPoint {
   

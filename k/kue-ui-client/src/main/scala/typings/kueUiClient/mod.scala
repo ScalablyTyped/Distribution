@@ -2,16 +2,17 @@ package typings.kueUiClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("kue-ui-client", "getDistPath")
+  @JSImport("kue-ui-client", JSImport.Namespace)
   @js.native
-  def getDistPath(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kue-ui-client", "getIndexFile")
-  @js.native
-  def getIndexFile(): String = js.native
+  @scala.inline
+  def getDistPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistPath")().asInstanceOf[String]
+  
+  @scala.inline
+  def getIndexFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexFile")().asInstanceOf[String]
 }

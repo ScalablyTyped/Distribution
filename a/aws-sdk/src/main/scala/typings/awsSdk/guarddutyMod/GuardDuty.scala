@@ -5,11 +5,12 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GuardDuty extends Service {
+trait GuardDuty
+  extends StObject
+     with Service {
   
   /**
     * Accepts the invitation to be monitored by a master GuardDuty account.
@@ -39,7 +40,7 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]
   ): Request[ArchiveFindingsResponse, AWSError] = js.native
   
-  var config: ConfigBase with ClientConfiguration = js.native
+  var config: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.

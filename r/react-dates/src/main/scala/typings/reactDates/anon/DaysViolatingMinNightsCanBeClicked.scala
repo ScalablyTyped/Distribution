@@ -6,7 +6,6 @@ import typings.reactDates.mod.FocusedInputShape
 import typings.reactDates.mod.ScrollableOrientationShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

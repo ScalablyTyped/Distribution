@@ -14,7 +14,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Switches {
@@ -30,27 +29,28 @@ object Switches {
     def setChecked(newCheckedValue: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait CheckboxProps extends CommonEnhancedSwitchProps[Checkbox] {
+  trait CheckboxProps
+    extends StObject
+       with CommonEnhancedSwitchProps[Checkbox] {
     
-    var checkedIcon: js.UndefOr[ReactElement] = js.native
+    var checkedIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.native
+    var labelPosition: js.UndefOr[left | right] = js.undefined
     
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var onCheck: js.UndefOr[
         js.Function2[/* event */ MouseEvent[js.Object, NativeMouseEvent], /* checked */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var uncheckedIcon: js.UndefOr[ReactElement] = js.native
+    var uncheckedIcon: js.UndefOr[ReactElement] = js.undefined
     
     // Normally an SvgIcon
-    var valueLink: js.UndefOr[ReactLink[Boolean]] = js.native
+    var valueLink: js.UndefOr[ReactLink[Boolean]] = js.undefined
   }
   object CheckboxProps {
     
@@ -114,15 +114,15 @@ object Switches {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
-  trait CommonEnhancedSwitchProps[T]
-    extends InputHTMLAttributes[js.Object] {
+  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait CommonEnhancedSwitchProps[T]
+    extends StObject
+       with InputHTMLAttributes[js.Object] {
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var ref: js.UndefOr[LegacyRef[T]] = js.native
+    var ref: js.UndefOr[LegacyRef[T]] = js.undefined
   }
   object CommonEnhancedSwitchProps {
     
@@ -133,7 +133,7 @@ object Switches {
     }
     
     @scala.inline
-    implicit class CommonEnhancedSwitchPropsMutableBuilder[Self <: CommonEnhancedSwitchProps[_], T] (val x: Self with CommonEnhancedSwitchProps[T]) extends AnyVal {
+    implicit class CommonEnhancedSwitchPropsMutableBuilder[Self <: CommonEnhancedSwitchProps[?], T] (val x: Self & CommonEnhancedSwitchProps[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -174,46 +174,47 @@ object Switches {
     def setSwitched(newSwitchedValue: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch] {
+  trait EnhancedSwitchProps
+    extends StObject
+       with CommonEnhancedSwitchProps[EnhancedSwitch] {
     
-    var defaultSwitched: js.UndefOr[Boolean] = js.native
+    var defaultSwitched: js.UndefOr[Boolean] = js.undefined
     
-    var disableFocusRipple: js.UndefOr[Boolean] = js.native
+    var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
     
-    var disableTouchRipple: js.UndefOr[Boolean] = js.native
+    var disableTouchRipple: js.UndefOr[Boolean] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var inputStyle: CSSProperties = js.native
+    var inputStyle: CSSProperties
     
-    var inputType: String = js.native
+    var inputType: String
     
-    var labelPosition: js.UndefOr[String] = js.native
+    var labelPosition: js.UndefOr[String] = js.undefined
     
     // oneOf(['left', 'right'])
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    def onParentShouldUpdate(isInputChecked: Boolean): Unit = js.native
+    def onParentShouldUpdate(isInputChecked: Boolean): Unit
     
     var onSwitch: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* isInputChecked */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rippleColor: js.UndefOr[String] = js.native
+    var rippleColor: js.UndefOr[String] = js.undefined
     
-    var rippleStyle: js.UndefOr[CSSProperties] = js.native
+    var rippleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var switchElement: ReactElement = js.native
+    var switchElement: ReactElement
     
-    var switched: Boolean = js.native
+    var switched: Boolean
     
-    var thumbStyle: js.UndefOr[CSSProperties] = js.native
+    var thumbStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var trackStyle: js.UndefOr[CSSProperties] = js.native
+    var trackStyle: js.UndefOr[CSSProperties] = js.undefined
     
     @JSName("value")
-    var value_EnhancedSwitchProps: js.UndefOr[String] = js.native
+    var value_EnhancedSwitchProps: js.UndefOr[String] = js.undefined
   }
   object EnhancedSwitchProps {
     
@@ -341,22 +342,21 @@ object Switches {
     def setSelectedValue(newSelectionValue: String): Unit = js.native
   }
   
-  @js.native
   trait RadioButtonGroupProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultSelected: js.UndefOr[js.Any] = js.native
+    var defaultSelected: js.UndefOr[js.Any] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.native
+    var labelPosition: js.UndefOr[left | right] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var onChange: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* selected */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* selected */ String, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var valueSelected: js.UndefOr[js.Any] = js.native
+    var valueSelected: js.UndefOr[js.Any] = js.undefined
   }
   object RadioButtonGroupProps {
     
@@ -410,25 +410,26 @@ object Switches {
     }
   }
   
-  @js.native
-  trait RadioButtonProps extends CommonEnhancedSwitchProps[RadioButton] {
+  trait RadioButtonProps
+    extends StObject
+       with CommonEnhancedSwitchProps[RadioButton] {
     
     // <EnhancedSwitch/> is element that get the 'other' properties
-    var checkedIcon: js.UndefOr[ReactElement] = js.native
+    var checkedIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onCheck: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* selected */ String, Unit]] = js.native
+    var onCheck: js.UndefOr[js.Function2[/* e */ FormEvent[js.Object], /* selected */ String, Unit]] = js.undefined
     
-    var uncheckedIcon: js.UndefOr[ReactElement] = js.native
+    var uncheckedIcon: js.UndefOr[ReactElement] = js.undefined
     
     // Normally an SvgIcon
     @JSName("value")
-    var value_RadioButtonProps: js.UndefOr[js.Any] = js.native
+    var value_RadioButtonProps: js.UndefOr[js.Any] = js.undefined
   }
   object RadioButtonProps {
     
@@ -494,39 +495,40 @@ object Switches {
     def setToggled(newToggledValue: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait ToggleProps extends CommonEnhancedSwitchProps[Toggle] {
+  trait ToggleProps
+    extends StObject
+       with CommonEnhancedSwitchProps[Toggle] {
     
     // <EnhancedSwitch/> is element that get the 'other' properties
-    var defaultToggled: js.UndefOr[Boolean] = js.native
+    var defaultToggled: js.UndefOr[Boolean] = js.undefined
     
-    var elementStyle: js.UndefOr[CSSProperties] = js.native
+    var elementStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelPosition: js.UndefOr[left | right] = js.native
+    var labelPosition: js.UndefOr[left | right] = js.undefined
     
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var onToggle: js.UndefOr[
         js.Function2[/* e */ MouseEvent[js.Object, NativeMouseEvent], /* isInputChecked */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var rippleStyle: js.UndefOr[CSSProperties] = js.native
+    var rippleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var thumbStyle: js.UndefOr[CSSProperties] = js.native
+    var thumbStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var thumbSwitchedStyle: js.UndefOr[CSSProperties] = js.native
+    var thumbSwitchedStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var toggled: js.UndefOr[Boolean] = js.native
+    var toggled: js.UndefOr[Boolean] = js.undefined
     
-    var trackStyle: js.UndefOr[CSSProperties] = js.native
+    var trackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var trackSwitchedStyle: js.UndefOr[CSSProperties] = js.native
+    var trackSwitchedStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var valueLink: js.UndefOr[ReactLink[Boolean]] = js.native
+    var valueLink: js.UndefOr[ReactLink[Boolean]] = js.undefined
   }
   object ToggleProps {
     

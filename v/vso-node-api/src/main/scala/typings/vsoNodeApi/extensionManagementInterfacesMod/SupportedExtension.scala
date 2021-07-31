@@ -2,32 +2,31 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedExtension extends StObject {
   
   /**
     * Unique Identifier for this extension
     */
-  var extension: String = js.native
+  var `extension`: String
   
   /**
     * Unique Identifier for this publisher
     */
-  var publisher: String = js.native
+  var publisher: String
   
   /**
     * Supported version for this extension
     */
-  var version: String = js.native
+  var version: String
 }
 object SupportedExtension {
   
   @scala.inline
-  def apply(extension: String, publisher: String, version: String): SupportedExtension = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(`extension`: String, publisher: String, version: String): SupportedExtension = {
+    val __obj = js.Dynamic.literal(publisher = publisher.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedExtension]
   }
   

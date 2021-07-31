@@ -2,91 +2,89 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLicenseConfigurationResponse extends StObject {
   
   /**
     * Automated discovery information.
     */
-  var AutomatedDiscoveryInformation: js.UndefOr[typings.awsSdk.licensemanagerMod.AutomatedDiscoveryInformation] = js.native
+  var AutomatedDiscoveryInformation: js.UndefOr[typings.awsSdk.licensemanagerMod.AutomatedDiscoveryInformation] = js.undefined
   
   /**
     * Summaries of the licenses consumed by resources.
     */
-  var ConsumedLicenseSummaryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ConsumedLicenseSummaryList] = js.native
+  var ConsumedLicenseSummaryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ConsumedLicenseSummaryList] = js.undefined
   
   /**
     * Number of licenses assigned to resources.
     */
-  var ConsumedLicenses: js.UndefOr[BoxLong] = js.native
+  var ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined
   
   /**
     * Description of the license configuration.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the license configuration.
     */
-  var LicenseConfigurationArn: js.UndefOr[String] = js.native
+  var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID for the license configuration.
     */
-  var LicenseConfigurationId: js.UndefOr[String] = js.native
+  var LicenseConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Number of available licenses.
     */
-  var LicenseCount: js.UndefOr[BoxLong] = js.native
+  var LicenseCount: js.UndefOr[BoxLong] = js.undefined
   
   /**
     * Sets the number of available licenses as a hard limit.
     */
-  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.native
+  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
     * Dimension on which the licenses are counted.
     */
-  var LicenseCountingType: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseCountingType] = js.native
+  var LicenseCountingType: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseCountingType] = js.undefined
   
   /**
     * License rules.
     */
-  var LicenseRules: js.UndefOr[StringList] = js.native
+  var LicenseRules: js.UndefOr[StringList] = js.undefined
   
   /**
     * Summaries of the managed resources.
     */
-  var ManagedResourceSummaryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ManagedResourceSummaryList] = js.native
+  var ManagedResourceSummaryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ManagedResourceSummaryList] = js.undefined
   
   /**
     * Name of the license configuration.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * Account ID of the owner of the license configuration.
     */
-  var OwnerAccountId: js.UndefOr[String] = js.native
+  var OwnerAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Product information.
     */
-  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.native
+  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.undefined
   
   /**
     * License configuration status.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Tags for the license configuration.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object GetLicenseConfigurationResponse {
   

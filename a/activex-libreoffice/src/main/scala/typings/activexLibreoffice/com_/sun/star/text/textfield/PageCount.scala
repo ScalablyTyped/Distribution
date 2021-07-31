@@ -12,18 +12,18 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a text field that displays the number of pages contained in the document.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait PageCount extends TextField_ {
+trait PageCount
+  extends StObject
+     with TextField_ {
   
   /** specifies the type of the numbering as {@link com.sun.star.style.NumberingType} */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
 }
 object PageCount {
   

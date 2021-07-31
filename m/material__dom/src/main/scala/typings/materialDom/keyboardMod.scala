@@ -3,10 +3,13 @@ package typings.materialDom
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardMod {
+  
+  @JSImport("@material/dom/keyboard", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object KEY {
     
@@ -99,11 +102,9 @@ object keyboardMod {
     def UNKNOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@material/dom/keyboard", "isNavigationEvent")
-  @js.native
-  def isNavigationEvent(evt: KeyboardEvent): Boolean = js.native
+  @scala.inline
+  def isNavigationEvent(evt: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigationEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@material/dom/keyboard", "normalizeKey")
-  @js.native
-  def normalizeKey(evt: KeyboardEvent): String = js.native
+  @scala.inline
+  def normalizeKey(evt: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKey")(evt.asInstanceOf[js.Any]).asInstanceOf[String]
 }

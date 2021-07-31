@@ -21,7 +21,6 @@ import typings.react.mod.TouchEventHandler
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DatePicker {
@@ -44,47 +43,46 @@ object DatePicker {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait DatePickerDialogProps extends StObject {
     
     // <Container/> is the element that get the 'other' properties
-    var DateTimeFormat: js.UndefOr[TypeofDateTimeFormat] = js.native
+    var DateTimeFormat: js.UndefOr[TypeofDateTimeFormat] = js.undefined
     
-    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
     
-    var autoOk: js.UndefOr[Boolean] = js.native
+    var autoOk: js.UndefOr[Boolean] = js.undefined
     
-    var cancelLabel: js.UndefOr[ReactNode] = js.native
+    var cancelLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var container: js.UndefOr[dialog | `inline`] = js.native
+    var container: js.UndefOr[dialog | `inline`] = js.undefined
     
-    var disableYearSelection: js.UndefOr[Boolean] = js.native
+    var disableYearSelection: js.UndefOr[Boolean] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var initialDate: js.UndefOr[Date] = js.native
+    var initialDate: js.UndefOr[Date] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var mode: js.UndefOr[portrait | landscape] = js.native
+    var mode: js.UndefOr[portrait | landscape] = js.undefined
     
-    var okLabel: js.UndefOr[ReactNode] = js.native
+    var okLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var onAccept: js.UndefOr[js.Function1[/* d */ Date, Unit]] = js.native
+    var onAccept: js.UndefOr[js.Function1[/* d */ Date, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.native
+    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var utils: js.UndefOr[typings.materialUi.MaterialUI.propTypes.utils] = js.native
+    var utils: js.UndefOr[typings.materialUi.MaterialUI.propTypes.utils] = js.undefined
   }
   object DatePickerDialogProps {
     
@@ -213,107 +211,106 @@ object DatePicker {
     }
   }
   
-  @js.native
   trait DatePickerProps extends StObject {
     
     // <TextField/> is the element that get the 'other' properties
-    var DateTimeFormat: js.UndefOr[TypeofDateTimeFormat] = js.native
+    var DateTimeFormat: js.UndefOr[TypeofDateTimeFormat] = js.undefined
     
-    var autoOk: js.UndefOr[Boolean] = js.native
+    var autoOk: js.UndefOr[Boolean] = js.undefined
     
-    var cancelLabel: js.UndefOr[ReactNode] = js.native
+    var cancelLabel: js.UndefOr[ReactNode] = js.undefined
     
     // From <TextField />
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[dialog | `inline`] = js.native
+    var container: js.UndefOr[dialog | `inline`] = js.undefined
     
-    var defaultDate: js.UndefOr[Date] = js.native
+    var defaultDate: js.UndefOr[Date] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var dialogContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var dialogContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var disableYearSelection: js.UndefOr[Boolean] = js.native
+    var disableYearSelection: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var errorStyle: js.UndefOr[CSSProperties] = js.native
+    var errorStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var errorText: js.UndefOr[ReactNode] = js.native
+    var errorText: js.UndefOr[ReactNode] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var floatingLabelStyle: js.UndefOr[CSSProperties] = js.native
+    var floatingLabelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var floatingLabelText: js.UndefOr[ReactNode] = js.native
+    var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+    var formatDate: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
     
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
     
-    var hideCalendarDate: js.UndefOr[Boolean] = js.native
+    var hideCalendarDate: js.UndefOr[Boolean] = js.undefined
     
-    var hintStyle: js.UndefOr[CSSProperties] = js.native
+    var hintStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var hintText: js.UndefOr[ReactNode] = js.native
+    var hintText: js.UndefOr[ReactNode] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputStyle: js.UndefOr[CSSProperties] = js.native
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var mode: js.UndefOr[portrait | landscape] = js.native
+    var mode: js.UndefOr[portrait | landscape] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var okLabel: js.UndefOr[ReactNode] = js.native
+    var okLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* date */ Date, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* date */ Date, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[TouchEventHandler[js.Object]] = js.native
+    var onClick: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
     
     // e is always null
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var openToYearSelection: js.UndefOr[Boolean] = js.native
+    var openToYearSelection: js.UndefOr[Boolean] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var rowsMax: js.UndefOr[Double] = js.native
+    var rowsMax: js.UndefOr[Double] = js.undefined
     
-    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.native
+    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var textFieldStyle: js.UndefOr[CSSProperties] = js.native
+    var textFieldStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.native
+    var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var underlineFocusStyle: js.UndefOr[CSSProperties] = js.native
+    var underlineFocusStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var underlineShow: js.UndefOr[Boolean] = js.native
+    var underlineShow: js.UndefOr[Boolean] = js.undefined
     
-    var underlineStyle: js.UndefOr[CSSProperties] = js.native
+    var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var utils: js.UndefOr[typings.materialUi.MaterialUI.propTypes.utils] = js.native
+    var utils: js.UndefOr[typings.materialUi.MaterialUI.propTypes.utils] = js.undefined
     
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object DatePickerProps {
     

@@ -2,16 +2,14 @@ package typings.stylableCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@stylable/core.@stylable/core/cjs/timed-cache.TimedCacheOptions, 'createKey'> */
-@js.native
 trait OmitTimedCacheOptionscrea extends StObject {
   
-  var timeout: Double = js.native
+  var timeout: Double
   
-  var useTimer: Boolean = js.native
+  var useTimer: Boolean
 }
 object OmitTimedCacheOptionscrea {
   

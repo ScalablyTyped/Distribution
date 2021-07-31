@@ -6,29 +6,29 @@ import typings.miniprogram.miniprogramStrings.GET
 import typings.miniprogram.miniprogramStrings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestArgs extends AsyncCallback[Headers] {
+trait RequestArgs
+  extends StObject
+     with AsyncCallback[Headers] {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Expected return data format, default json, supporting json, text and base64.
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /**
     * Set the request HTTP header, default {'content-type': 'application/json'}.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var method: js.UndefOr[GET | POST] = js.native
+  var method: js.UndefOr[GET | POST] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object RequestArgs {
   

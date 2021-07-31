@@ -10,9 +10,9 @@ MongoDB query language implemented as a node.js Stream
 | ------------------ | :-------------: |
 | Full name          | jsonquery |
 | Keywords           | json, mongodb, mongo, stream, filter, query, database, levelup, leveldb |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 1786 |
+| # downloads        | 1619 |
 | # stars            | 1 |
 
 ## Links

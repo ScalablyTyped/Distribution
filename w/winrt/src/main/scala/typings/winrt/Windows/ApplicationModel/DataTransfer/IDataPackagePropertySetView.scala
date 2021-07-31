@@ -9,24 +9,23 @@ import typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
 import typings.winrt.anon.First
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataPackagePropertySetView
-  extends IMapView[String, js.Any] {
+  extends StObject
+     with IMapView[String, js.Any] {
   
-  var applicationListingUri: Uri = js.native
+  var applicationListingUri: Uri
   
-  var applicationName: String = js.native
+  var applicationName: String
   
-  var description: String = js.native
+  var description: String
   
-  var fileTypes: IVectorView[String] = js.native
+  var fileTypes: IVectorView[String]
   
-  var thumbnail: RandomAccessStreamReference = js.native
+  var thumbnail: RandomAccessStreamReference
   
-  var title: String = js.native
+  var title: String
 }
 object IDataPackagePropertySetView {
   

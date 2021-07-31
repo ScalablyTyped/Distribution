@@ -2,29 +2,27 @@ package typings.antdMobileRn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagPropsTypeMod {
   
-  @js.native
   trait TagPropsType extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* selected */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* selected */ Boolean, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
   }
   object TagPropsType {
     

@@ -2,15 +2,14 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenMessage
-  extends BaseMessage
+  extends StObject
+     with BaseMessage
      with Message {
   
-  var token: String = js.native
+  var token: String
 }
 object TokenMessage {
   

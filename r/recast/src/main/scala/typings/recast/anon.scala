@@ -11,17 +11,15 @@ import typings.recast.recastStrings.single
 import typings.recast.recastStrings.unambiguous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.Any = js.native
+    var end: js.Any
     
-    var start: js.Any = js.native
+    var start: js.Any
   }
   object End {
     
@@ -75,12 +72,11 @@ object anon {
     def apply(input: String, options: ParserOptions): File_ = js.native
   }
   
-  @js.native
   trait Line extends StObject {
     
-    var column: js.Any = js.native
+    var column: js.Any
     
-    var line: js.Any = js.native
+    var line: js.Any
   }
   object Line {
     
@@ -102,34 +98,33 @@ object anon {
   }
   
   /* Inlined @babel/parser.@babel/parser.ParserOptions & {  plugins :std.Array<@babel/parser.@babel/parser.ParserPlugin>} */
-  @js.native
   trait ParserOptionspluginsArray extends StObject {
     
     /**
       * By default, await use is not allowed outside of an async function.
       * Set this to true to accept such code.
       */
-    var allowAwaitOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowAwaitOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, import and export declarations can only appear at a program's top level.
       * Setting this option to true allows them anywhere where a statement is allowed.
       */
-    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.native
+    var allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, a return statement at the top level raises an error.
       * Set this to true to accept such code.
       */
-    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.native
+    var allowReturnOutsideFunction: js.UndefOr[Boolean] = js.undefined
     
-    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.native
+    var allowSuperOutsideMethod: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, exported identifiers must refer to a declared variable.
       * Set this to true to allow export statements to reference undeclared variables.
       */
-    var allowUndeclaredExports: js.UndefOr[Boolean] = js.native
+    var allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, the parser adds information about parentheses by setting
@@ -137,23 +132,23 @@ object anon {
       * When this option is `true` the parser creates `ParenthesizedExpression`
       * AST nodes instead of using the `extra` property.
       */
-    var createParenthesizedExpressions: js.UndefOr[Boolean] = js.native
+    var createParenthesizedExpressions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array containing the plugins that you want to enable.
       */
-    var plugins: js.UndefOr[js.Array[ParserPlugin]] with js.Array[ParserPlugin] = js.native
+    var plugins: js.UndefOr[js.Array[ParserPlugin]] & js.Array[ParserPlugin]
     
     /**
       * Adds a ranges property to each node: [node.start, node.end]
       */
-    var ranges: js.UndefOr[Boolean] = js.native
+    var ranges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Correlate output AST nodes with their source filename.
       * Useful when generating code and source maps from the ASTs of multiple input files.
       */
-    var sourceFilename: js.UndefOr[String] = js.native
+    var sourceFilename: js.UndefOr[String] = js.undefined
     
     /**
       * Indicate the mode the code should be parsed in.
@@ -162,30 +157,30 @@ object anon {
       * of ES6 import or export statements.
       * Files with ES6 imports and exports are considered "module" and are otherwise "script".
       */
-    var sourceType: js.UndefOr[script | module | unambiguous] = js.native
+    var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
     
     /**
       * By default, the first line of code parsed is treated as line 1.
       * You can provide a line number to alternatively start with.
       * Useful for integration with other source tools.
       */
-    var startLine: js.UndefOr[Double] = js.native
+    var startLine: js.UndefOr[Double] = js.undefined
     
     /**
       * Should the parser work in strict mode.
       * Defaults to true if sourceType === 'module'. Otherwise, false.
       */
-    var strictMode: js.UndefOr[Boolean] = js.native
+    var strictMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds all parsed tokens to a tokens property on the File node.
       */
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptionspluginsArray {
     
     @scala.inline
-    def apply(plugins: js.UndefOr[js.Array[ParserPlugin]] with js.Array[ParserPlugin]): ParserOptionspluginsArray = {
+    def apply(plugins: js.UndefOr[js.Array[ParserPlugin]] & js.Array[ParserPlugin]): ParserOptionspluginsArray = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParserOptionspluginsArray]
     }
@@ -230,7 +225,7 @@ object anon {
       def setCreateParenthesizedExpressionsUndefined: Self = StObject.set(x, "createParenthesizedExpressions", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.UndefOr[js.Array[ParserPlugin]] with js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.UndefOr[js.Array[ParserPlugin]] & js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
@@ -271,48 +266,47 @@ object anon {
   }
   
   /* Inlined std.Partial<recast.recast/lib/options.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var arrayBracketSpacing: js.UndefOr[Boolean] = js.native
+    var arrayBracketSpacing: js.UndefOr[Boolean] = js.undefined
     
-    var arrowParensAlways: js.UndefOr[Boolean] = js.native
+    var arrowParensAlways: js.UndefOr[Boolean] = js.undefined
     
-    var esprima: js.UndefOr[js.Any] = js.native
+    var esprima: js.UndefOr[js.Any] = js.undefined
     
-    var flowObjectCommas: js.UndefOr[Boolean] = js.native
+    var flowObjectCommas: js.UndefOr[Boolean] = js.undefined
     
-    var inputSourceMap: js.UndefOr[String | Null] = js.native
+    var inputSourceMap: js.UndefOr[String | Null] = js.undefined
     
-    var lineTerminator: js.UndefOr[String] = js.native
+    var lineTerminator: js.UndefOr[String] = js.undefined
     
-    var objectCurlySpacing: js.UndefOr[Boolean] = js.native
+    var objectCurlySpacing: js.UndefOr[Boolean] = js.undefined
     
-    var parser: js.UndefOr[js.Any] = js.native
+    var parser: js.UndefOr[js.Any] = js.undefined
     
-    var quote: js.UndefOr[single | double | auto | Null] = js.native
+    var quote: js.UndefOr[single | double | auto | Null] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var reuseWhitespace: js.UndefOr[Boolean] = js.native
+    var reuseWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var sourceFileName: js.UndefOr[String | Null] = js.native
+    var sourceFileName: js.UndefOr[String | Null] = js.undefined
     
-    var sourceMapName: js.UndefOr[String | Null] = js.native
+    var sourceMapName: js.UndefOr[String | Null] = js.undefined
     
-    var sourceRoot: js.UndefOr[String | Null] = js.native
+    var sourceRoot: js.UndefOr[String | Null] = js.undefined
     
-    var tabWidth: js.UndefOr[Double] = js.native
+    var tabWidth: js.UndefOr[Double] = js.undefined
     
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
     
-    var trailingComma: js.UndefOr[Boolean] = js.native
+    var trailingComma: js.UndefOr[Boolean] = js.undefined
     
-    var useTabs: js.UndefOr[Boolean] = js.native
+    var useTabs: js.UndefOr[Boolean] = js.undefined
     
-    var wrapColumn: js.UndefOr[Double] = js.native
+    var wrapColumn: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     

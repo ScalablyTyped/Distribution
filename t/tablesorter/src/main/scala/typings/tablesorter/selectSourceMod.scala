@@ -2,28 +2,26 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectSourceMod {
   
-  @js.native
   trait SelectSource extends StObject {
     
     /**
       * Classes to add to the dropdown-entries.
       */
-    var `data-class`: js.UndefOr[String] = js.native
+    var `data-class`: js.UndefOr[String] = js.undefined
     
     /**
       * The display-name of the filter source.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * The filter-value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectSource {
     

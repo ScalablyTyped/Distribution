@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the elements of a collection through a unique identifier. */
-@js.native
-trait XIdentifierAccess extends XElementAccess {
+trait XIdentifierAccess
+  extends StObject
+     with XElementAccess {
   
   /** @returns a sequence of all identifiers in this container.  The order of the identifiers is not specified. */
-  val Identifiers: SafeArray[Double] = js.native
+  val Identifiers: SafeArray[Double]
   
   /**
     * @param Identifier specifies the identifier of the element that should be retrieved.
@@ -20,10 +20,10 @@ trait XIdentifierAccess extends XElementAccess {
     * @throws com::sun::star::lang::NoSuchElementException If the identifier is not existing.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByIdentifier(Identifier: Double): js.Any = js.native
+  def getByIdentifier(Identifier: Double): js.Any
   
   /** @returns a sequence of all identifiers in this container.  The order of the identifiers is not specified. */
-  def getIdentifiers(): SafeArray[Double] = js.native
+  def getIdentifiers(): SafeArray[Double]
 }
 object XIdentifierAccess {
   

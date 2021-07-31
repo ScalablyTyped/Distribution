@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLayerResult extends StObject {
   
   /**
     * The layer ID.
     */
-  var LayerId: js.UndefOr[String] = js.native
+  var LayerId: js.UndefOr[String] = js.undefined
 }
 object CreateLayerResult {
   

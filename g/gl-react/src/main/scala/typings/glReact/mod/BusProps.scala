@@ -2,17 +2,15 @@ package typings.glReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusProps extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var uniform: js.UndefOr[String] = js.native
+  var uniform: js.UndefOr[String] = js.undefined
 }
 object BusProps {
   

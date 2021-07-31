@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassHeapGraphNode extends ClassObject {
+trait ClassHeapGraphNode
+  extends StObject
+     with ClassObject {
   
   /**
     * class prop 
@@ -22,7 +23,7 @@ trait ClassHeapGraphNode extends ClassObject {
     * @readonly
     * @type NArray
     */
-  var childs: js.Array[_] = js.native
+  var childs: js.Array[js.Any] = js.native
   
   /**
     * class prop 

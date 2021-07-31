@@ -2,47 +2,45 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group.
   */
-@js.native
 trait SchemaGroup extends StObject {
   
   /**
     * The `contentDetails` object contains additional information about the
     * group, such as the number and type of items that it contains.
     */
-  var contentDetails: js.UndefOr[SchemaGroupContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaGroupContentDetails] = js.undefined
   
   /**
     * Apiary error details
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the group.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the API resource&#39;s type. The value will be
     * `youtube#group`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The `snippet` object contains basic information about the group,
     * including its creation date and name.
     */
-  var snippet: js.UndefOr[SchemaGroupSnippet] = js.native
+  var snippet: js.UndefOr[SchemaGroupSnippet] = js.undefined
 }
 object SchemaGroup {
   

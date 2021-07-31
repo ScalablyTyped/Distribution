@@ -1,53 +1,79 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.wonderJs.bufferMod.Buffer
 import typings.wonderJs.elementBufferMod.ElementBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", JSImport.Namespace)
-@js.native
-object bufferTableMod extends js.Object {
-  @js.native
-  class BufferTable () extends js.Object
+object bufferTableMod {
   
+  @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable")
   @js.native
-  sealed trait BufferTableKey extends js.Object
-  
+  class BufferTable () extends StObject
   /* static members */
-  @js.native
-  object BufferTable extends js.Object {
-    var lastBindedArrayBufferListUidStr: String = js.native
-    var lastBindedElementBuffer: ElementBuffer = js.native
-    def addBuffer(key: String, buffer: Buffer): Unit = js.native
-    def bindIndexBuffer(indexBuffer: ElementBuffer): Unit = js.native
-    def clearAll(): Unit = js.native
-    def dispose(): Unit = js.native
-    def getBuffer[T](key: String): T = js.native
-    def hasBuffer(key: String): Boolean = js.native
-    def resetBindedArrayBuffer(): Unit = js.native
-    def resetBindedElementBuffer(): Unit = js.native
+  object BufferTable {
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addBuffer(key: String, buffer: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBuffer")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def bindIndexBuffer(indexBuffer: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindIndexBuffer")(indexBuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def getBuffer[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    @scala.inline
+    def hasBuffer(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuffer")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable.lastBindedArrayBufferListUidStr")
+    @js.native
+    def lastBindedArrayBufferListUidStr: String = js.native
+    @scala.inline
+    def lastBindedArrayBufferListUidStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedArrayBufferListUidStr")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTable.lastBindedElementBuffer")
+    @js.native
+    def lastBindedElementBuffer: ElementBuffer = js.native
+    @scala.inline
+    def lastBindedElementBuffer_=(x: ElementBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastBindedElementBuffer")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def resetBindedArrayBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedArrayBuffer")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def resetBindedElementBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBindedElementBuffer")().asInstanceOf[Unit]
   }
   
   @js.native
-  object BufferTableKey extends js.Object {
-    @js.native
-    sealed trait PROCEDURAL_INDEX extends BufferTableKey
-    
-    @js.native
-    sealed trait PROCEDURAL_VERTEX extends BufferTableKey
+  sealed trait BufferTableKey extends StObject
+  @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/BufferTable", "BufferTableKey")
+  @js.native
+  object BufferTableKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[BufferTableKey with Double] = js.native
-    /* 1 */ @js.native
-    object PROCEDURAL_INDEX extends TopLevel[PROCEDURAL_INDEX with Double]
+    def apply(value: Double): js.UndefOr[BufferTableKey & Double] = js.native
     
-    /* 0 */ @js.native
-    object PROCEDURAL_VERTEX extends TopLevel[PROCEDURAL_VERTEX with Double]
+    @js.native
+    sealed trait PROCEDURAL_INDEX
+      extends StObject
+         with BufferTableKey
+    /* 1 */ val PROCEDURAL_INDEX: typings.wonderJs.bufferTableMod.BufferTableKey.PROCEDURAL_INDEX & Double = js.native
     
+    @js.native
+    sealed trait PROCEDURAL_VERTEX
+      extends StObject
+         with BufferTableKey
+    /* 0 */ val PROCEDURAL_VERTEX: typings.wonderJs.bufferTableMod.BufferTableKey.PROCEDURAL_VERTEX & Double = js.native
   }
-  
 }
-

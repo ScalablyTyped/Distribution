@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelAssignedTargetingOptionDetails extends StObject {
   
   /**
     * Required. ID of the channel. Should refer to the channel ID field on a [Partner-owned channel](partners.channels#Channel.FIELDS.channel_id) or [advertiser-owned
     * channel](advertisers.channels#Channel.FIELDS.channel_id) resource.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** Indicates if this option is being negatively targeted. For advertiser level assigned targeting option, this field must be true. */
-  var negative: js.UndefOr[Boolean] = js.native
+  var negative: js.UndefOr[Boolean] = js.undefined
 }
 object ChannelAssignedTargetingOptionDetails {
   

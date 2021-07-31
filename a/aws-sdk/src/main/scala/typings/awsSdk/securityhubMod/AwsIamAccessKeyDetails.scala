@@ -2,56 +2,54 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamAccessKeyDetails extends StObject {
   
   /**
     * The identifier of the access key.
     */
-  var AccessKeyId: js.UndefOr[NonEmptyString] = js.native
+  var AccessKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The AWS account ID of the account for the key.
     */
-  var AccountId: js.UndefOr[NonEmptyString] = js.native
+  var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the IAM access key was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedAt: js.UndefOr[NonEmptyString] = js.native
+  var CreatedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the principal associated with an access key.
     */
-  var PrincipalId: js.UndefOr[NonEmptyString] = js.native
+  var PrincipalId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the principal.
     */
-  var PrincipalName: js.UndefOr[NonEmptyString] = js.native
+  var PrincipalName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of principal associated with an access key.
     */
-  var PrincipalType: js.UndefOr[NonEmptyString] = js.native
+  var PrincipalType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the session that the key was used for.
     */
-  var SessionContext: js.UndefOr[AwsIamAccessKeySessionContext] = js.native
+  var SessionContext: js.UndefOr[AwsIamAccessKeySessionContext] = js.undefined
   
   /**
     * The status of the IAM access key related to a finding.
     */
-  var Status: js.UndefOr[AwsIamAccessKeyStatus] = js.native
+  var Status: js.UndefOr[AwsIamAccessKeyStatus] = js.undefined
   
   /**
     * The user associated with the IAM access key related to a finding. The UserName parameter has been replaced with the PrincipalName parameter because access keys can also be assigned to principals that are not IAM users.
     */
-  var UserName: js.UndefOr[NonEmptyString] = js.native
+  var UserName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamAccessKeyDetails {
   

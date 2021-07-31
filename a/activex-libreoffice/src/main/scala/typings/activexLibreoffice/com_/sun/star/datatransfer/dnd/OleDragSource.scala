@@ -8,16 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service connects the Java-like UNO drag and drop protocol to the protocol used on window platforms. It realized the drag source.
   * @see XDragSource
   */
-@js.native
 trait OleDragSource
-  extends XDragSource
+  extends StObject
+     with XDragSource
      with XInitialization
      with XComponent
 object OleDragSource {
@@ -28,7 +27,7 @@ object OleDragSource {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getDefaultCursor: Double => Double,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isDragImageSupported: () => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit,

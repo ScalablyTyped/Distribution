@@ -2,31 +2,31 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapListBoxEventMap extends BootstrapClientEditEventMap {
+trait BootstrapListBoxEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var customHighlighting: ListEditCustomHighlightingEventArgs = js.native
+  var customHighlighting: ListEditCustomHighlightingEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var itemDoubleClick: EventArgs = js.native
+  var itemDoubleClick: EventArgs
   
-  var itemFiltering: ListEditItemFilteringEventArgs = js.native
+  var itemFiltering: ListEditItemFilteringEventArgs
   
-  var keyDown: EditKeyEventArgs = js.native
+  var keyDown: EditKeyEventArgs
   
-  var keyPress: EditKeyEventArgs = js.native
+  var keyPress: EditKeyEventArgs
   
-  var keyUp: EditKeyEventArgs = js.native
+  var keyUp: EditKeyEventArgs
   
-  var selectedIndexChanged: ProcessingModeEventArgs = js.native
+  var selectedIndexChanged: ProcessingModeEventArgs
 }
 object BootstrapListBoxEventMap {
   

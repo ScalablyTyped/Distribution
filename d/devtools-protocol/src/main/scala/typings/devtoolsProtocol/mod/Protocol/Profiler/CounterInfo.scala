@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterInfo extends StObject {
   
   /**
     * Counter name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Counter value.
     */
-  var value: integer = js.native
+  var value: integer
 }
 object CounterInfo {
   

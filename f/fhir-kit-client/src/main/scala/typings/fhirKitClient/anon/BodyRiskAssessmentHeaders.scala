@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.RiskAssessment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyRiskAssessmentHeaders extends StObject {
   
-  var body: RiskAssessment = js.native
+  var body: RiskAssessment
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment
 }
 object BodyRiskAssessmentHeaders {
   
   @scala.inline
-  def apply(
-    body: RiskAssessment,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.RiskAssessment
-  ): BodyRiskAssessmentHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: RiskAssessment, id: String): BodyRiskAssessmentHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "RiskAssessment")
     __obj.asInstanceOf[BodyRiskAssessmentHeaders]
   }
   

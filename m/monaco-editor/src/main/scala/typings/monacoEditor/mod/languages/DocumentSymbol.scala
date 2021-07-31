@@ -3,27 +3,25 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSymbol extends StObject {
   
-  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.native
+  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.undefined
   
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
-  var detail: String = js.native
+  var detail: String
   
-  var kind: SymbolKind = js.native
+  var kind: SymbolKind
   
-  var name: String = js.native
+  var name: String
   
-  var range: IRange = js.native
+  var range: IRange
   
-  var selectionRange: IRange = js.native
+  var selectionRange: IRange
   
-  var tags: js.Array[SymbolTag] = js.native
+  var tags: js.Array[SymbolTag]
 }
 object DocumentSymbol {
   

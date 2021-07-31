@@ -9,21 +9,19 @@ import typings.googleCloudTasks.mod.RetryConfig
 import typings.googleCloudTasks.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @google-cloud/tasks.@google-cloud/tasks.CreateNamedRequest<'queue', std.Partial<@google-cloud/tasks.@google-cloud/tasks.Queue>> */
-  @js.native
   trait CreateNamedRequestqueuePa extends StObject {
     
     /**
       * The location name. For example: projects/PROJECT_ID/locations/LOCATION_ID
       */
-    var parent: String = js.native
+    var parent: String
     
-    var queue: PartialQueue = js.native
+    var queue: PartialQueue
   }
   object CreateNamedRequestqueuePa {
     
@@ -45,15 +43,14 @@ object anon {
   }
   
   /* Inlined @google-cloud/tasks.@google-cloud/tasks.EnhancedPick<@google-cloud/tasks.@google-cloud/tasks.Queue, 'name', 'appEngineHttpQueue' | 'rateLimits' | 'retryConfig'> */
-  @js.native
   trait EnhancedPickQueuenameappE extends StObject {
     
-    var name: String with js.UndefOr[String] = js.native
+    var name: String & js.UndefOr[String]
   }
   object EnhancedPickQueuenameappE {
     
     @scala.inline
-    def apply(name: String with js.UndefOr[String]): EnhancedPickQueuenameappE = {
+    def apply(name: String & js.UndefOr[String]): EnhancedPickQueuenameappE = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnhancedPickQueuenameappE]
     }
@@ -62,19 +59,18 @@ object anon {
     implicit class EnhancedPickQueuenameappEMutableBuilder[Self <: EnhancedPickQueuenameappE] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setName(value: String with js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Partial<@google-cloud/tasks.@google-cloud/tasks.Policy> */
-  @js.native
   trait PartialPolicy extends StObject {
     
-    var bindings: js.UndefOr[js.Array[Binding]] = js.native
+    var bindings: js.UndefOr[js.Array[Binding]] = js.undefined
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object PartialPolicy {
     
@@ -111,20 +107,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@google-cloud/tasks.@google-cloud/tasks.Queue> */
-  @js.native
   trait PartialQueue extends StObject {
     
-    var appEngineHttpQueue: js.UndefOr[AppEngineHttpQueue] = js.native
+    var appEngineHttpQueue: js.UndefOr[AppEngineHttpQueue] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var purgeTime: js.UndefOr[String] = js.native
+    var purgeTime: js.UndefOr[String] = js.undefined
     
-    var rateLimits: js.UndefOr[RateLimits] = js.native
+    var rateLimits: js.UndefOr[RateLimits] = js.undefined
     
-    var retryConfig: js.UndefOr[RetryConfig] = js.native
+    var retryConfig: js.UndefOr[RetryConfig] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object PartialQueue {
     
@@ -176,26 +171,25 @@ object anon {
   }
   
   /* Inlined std.Partial<@google-cloud/tasks.@google-cloud/tasks.Task> */
-  @js.native
   trait PartialTask extends StObject {
     
-    var appEngineHttpRequest: js.UndefOr[AppEngineHttpRequest] = js.native
+    var appEngineHttpRequest: js.UndefOr[AppEngineHttpRequest] = js.undefined
     
-    var createTime: js.UndefOr[String] = js.native
+    var createTime: js.UndefOr[String] = js.undefined
     
-    var dispatchCount: js.UndefOr[Double] = js.native
+    var dispatchCount: js.UndefOr[Double] = js.undefined
     
-    var firstAttempt: js.UndefOr[Attempt] = js.native
+    var firstAttempt: js.UndefOr[Attempt] = js.undefined
     
-    var lastAttempt: js.UndefOr[Attempt] = js.native
+    var lastAttempt: js.UndefOr[Attempt] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var responseCount: js.UndefOr[Double] = js.native
+    var responseCount: js.UndefOr[Double] = js.undefined
     
-    var scheduleTime: js.UndefOr[String] = js.native
+    var scheduleTime: js.UndefOr[String] = js.undefined
     
-    var view: js.UndefOr[View] = js.native
+    var view: js.UndefOr[View] = js.undefined
   }
   object PartialTask {
     
@@ -265,15 +259,14 @@ object anon {
   }
   
   /* Inlined @google-cloud/tasks.@google-cloud/tasks.UpdateNamedRequest<'queue', @google-cloud/tasks.@google-cloud/tasks.EnhancedPick<@google-cloud/tasks.@google-cloud/tasks.Queue, 'name', 'appEngineHttpQueue' | 'rateLimits' | 'retryConfig'>> */
-  @js.native
   trait UpdateNamedRequestqueueEn extends StObject {
     
     /**
       * The location name. For example: projects/PROJECT_ID/locations/LOCATION_ID
       */
-    var parent: String = js.native
+    var parent: String
     
-    var queue: EnhancedPickQueuenameappE = js.native
+    var queue: EnhancedPickQueuenameappE
   }
   object UpdateNamedRequestqueueEn {
     

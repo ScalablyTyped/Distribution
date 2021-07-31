@@ -2,17 +2,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEndpointRequestResult extends StObject {
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var result: js.Any = js.native
+  var result: js.Any
   
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object ServiceEndpointRequestResult {
   

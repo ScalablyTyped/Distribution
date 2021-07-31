@@ -4,23 +4,21 @@ import typings.cesium.mod.ClippingPlane
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeColor extends StObject {
   
-  var edgeColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var edgeColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var edgeWidth: js.UndefOr[Double] = js.native
+  var edgeWidth: js.UndefOr[Double] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
-  var planes: js.UndefOr[js.Array[ClippingPlane]] = js.native
+  var planes: js.UndefOr[js.Array[ClippingPlane]] = js.undefined
   
-  var unionClippingRegions: js.UndefOr[Boolean] = js.native
+  var unionClippingRegions: js.UndefOr[Boolean] = js.undefined
 }
 object EdgeColor {
   

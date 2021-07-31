@@ -2,115 +2,70 @@ package typings.symphonyApiClientNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersClientMod {
   
-  @JSImport("symphony-api-client-node/UsersClient", "getUserFromEmail")
+  @JSImport("symphony-api-client-node/UsersClient", JSImport.Namespace)
   @js.native
-  def getUserFromEmail(email: String): js.Promise[User] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "getUserFromEmail")
-  @js.native
-  def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("symphony-api-client-node/UsersClient", "getUserFromUsername")
-  @js.native
-  def getUserFromUsername(username: String): js.Promise[User] = js.native
+  @scala.inline
+  def getUserFromEmail(email: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
+  @scala.inline
+  def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[User]]
   
-  @JSImport("symphony-api-client-node/UsersClient", "getUsersFromEmailList")
-  @js.native
-  def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "getUsersFromEmailList")
-  @js.native
-  def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = js.native
+  @scala.inline
+  def getUserFromUsername(username: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
   
-  @JSImport("symphony-api-client-node/UsersClient", "getUsersFromIdList")
-  @js.native
-  def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "getUsersFromIdList")
-  @js.native
-  def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = js.native
+  @scala.inline
+  def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  @scala.inline
+  def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: js.UndefOr[scala.Nothing],
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: js.UndefOr[scala.Nothing],
-    limit: Double,
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: Double,
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double, limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: Boolean,
-    skip: js.UndefOr[scala.Nothing],
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: js.UndefOr[scala.Nothing], limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: js.UndefOr[scala.Nothing], limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: js.UndefOr[scala.Nothing], filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node/UsersClient", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
+  @scala.inline
+  def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  @scala.inline
+  def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @js.native
+  @scala.inline
+  def searchUsers(query: String): js.Promise[SearchUserResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  
   trait Avatar extends StObject {
     
-    var size: String = js.native
+    var size: String
     
-    var url: String = js.native
+    var url: String
   }
   object Avatar {
     
@@ -131,18 +86,19 @@ object usersClientMod {
     }
   }
   
-  @js.native
-  trait SearchUserResponse extends UsersList {
+  trait SearchUserResponse
+    extends StObject
+       with UsersList {
     
-    var count: Double = js.native
+    var count: Double
     
-    var filters: UserFilter = js.native
+    var filters: UserFilter
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var query: String = js.native
+    var query: String
     
-    var skip: Double = js.native
+    var skip: Double
   }
   object SearchUserResponse {
     
@@ -179,32 +135,31 @@ object usersClientMod {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var accountType: js.UndefOr[String] = js.native
+    var accountType: js.UndefOr[String] = js.undefined
     
-    var avatars: js.UndefOr[js.Array[Avatar]] = js.native
+    var avatars: js.UndefOr[js.Array[Avatar]] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var department: js.UndefOr[String] = js.native
+    var department: js.UndefOr[String] = js.undefined
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var emailAddress: String = js.native
+    var emailAddress: String
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var id: String = js.native
+    var id: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object User {
     
@@ -279,14 +234,13 @@ object usersClientMod {
     }
   }
   
-  @js.native
   trait UserFilter extends StObject {
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object UserFilter {
     
@@ -319,10 +273,9 @@ object usersClientMod {
     }
   }
   
-  @js.native
   trait UsersList extends StObject {
     
-    var users: js.Array[User] = js.native
+    var users: js.Array[User]
   }
   object UsersList {
     

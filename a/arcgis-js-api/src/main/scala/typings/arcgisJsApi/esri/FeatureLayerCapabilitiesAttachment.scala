@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerCapabilitiesAttachment extends Object {
+trait FeatureLayerCapabilitiesAttachment
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the attachments can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html) by their content types.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsContentType: Boolean = js.native
+  var supportsContentType: Boolean
   
   /**
     * Indicates if the attachment [queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html) support `exifInfo`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsExifInfo: Boolean = js.native
+  var supportsExifInfo: Boolean
   
   /**
     * Indicates if the attachments can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html) by their keywords.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsKeywords: Boolean = js.native
+  var supportsKeywords: Boolean
   
   /**
     * Indicates if the attachments can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html) by their names.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsName: Boolean = js.native
+  var supportsName: Boolean
   
   /**
     * Indicates if the attachments can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html) by their sizes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsSize: Boolean = js.native
+  var supportsSize: Boolean
 }
 object FeatureLayerCapabilitiesAttachment {
   

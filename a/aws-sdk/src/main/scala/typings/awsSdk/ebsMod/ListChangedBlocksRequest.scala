@@ -2,36 +2,34 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChangedBlocksRequest extends StObject {
   
   /**
     * The ID of the first snapshot to use for the comparison.  The FirstSnapshotID parameter must be specified with a SecondSnapshotId parameter; otherwise, an error occurs. 
     */
-  var FirstSnapshotId: js.UndefOr[SnapshotId] = js.native
+  var FirstSnapshotId: js.UndefOr[SnapshotId] = js.undefined
   
   /**
     * The number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ebsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ebsMod.MaxResults] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[PageToken] = js.native
+  var NextToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * The ID of the second snapshot to use for the comparison.  The SecondSnapshotId parameter must be specified with a FirstSnapshotID parameter; otherwise, an error occurs. 
     */
-  var SecondSnapshotId: SnapshotId = js.native
+  var SecondSnapshotId: SnapshotId
   
   /**
     * The block index from which the comparison should start. The list in the response will start from this block index or the next valid block index in the snapshots.
     */
-  var StartingBlockIndex: js.UndefOr[BlockIndex] = js.native
+  var StartingBlockIndex: js.UndefOr[BlockIndex] = js.undefined
 }
 object ListChangedBlocksRequest {
   

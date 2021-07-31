@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallFailureEvent extends StObject {
   
   /** The Android ID of the device. This field will always be present. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** Additional details on the failure if applicable. */
-  var failureDetails: js.UndefOr[String] = js.native
+  var failureDetails: js.UndefOr[String] = js.undefined
   
   /** The reason for the installation failure. This field will always be present. */
-  var failureReason: js.UndefOr[String] = js.native
+  var failureReason: js.UndefOr[String] = js.undefined
   
   /** The id of the product (e.g. "app:com.google.android.gm") for which the install failure event occured. This field will always be present. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** The ID of the user. This field will always be present. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object InstallFailureEvent {
   

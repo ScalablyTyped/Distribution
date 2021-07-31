@@ -3,14 +3,15 @@ package typings.amcharts
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amGraphMod {
   
   @JSImport("amcharts/AmGraph", JSImport.Default)
   @js.native
-  class default () extends AmGraph
+  class default ()
+    extends StObject
+       with AmGraph
   
   @js.native
   trait AmGraph extends StObject {

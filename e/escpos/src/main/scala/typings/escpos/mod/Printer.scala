@@ -13,7 +13,6 @@ import typings.escpos.escposStrings.B
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Printer")
@@ -41,9 +40,9 @@ class Printer protected () extends StObject {
   def cashdraw(pin: Double): Printer = js.native
   
   def close(): Printer = js.native
-  def close(callback: js.UndefOr[scala.Nothing], options: js.Any): Printer = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Printer = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit], options: js.Any): Printer = js.native
+  def close(callback: Unit, options: js.Any): Printer = js.native
   
   /**
     * Select between two print color modes, if your printer supports it
@@ -68,9 +67,9 @@ class Printer protected () extends StObject {
     * @param feed
     */
   def cut(): Printer = js.native
-  def cut(part: js.UndefOr[scala.Nothing], feed: Double): Printer = js.native
   def cut(part: Boolean): Printer = js.native
   def cut(part: Boolean, feed: Double): Printer = js.native
+  def cut(part: Unit, feed: Double): Printer = js.native
   
   /**
     * Draw a horizontal line with EOL
@@ -157,7 +156,7 @@ class Printer protected () extends StObject {
   ): Printer = js.native
   def qrimage(
     content: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
   ): Printer = js.native
   def qrimage(content: String, options: Mode): Printer = js.native
@@ -212,7 +211,10 @@ class Printer protected () extends StObject {
 /* static members */
 object Printer {
   
-  @JSImport("escpos", "Printer.create")
+  @JSImport("escpos", "Printer")
   @js.native
-  def create(device: Adapter): js.Promise[Printer] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(device: Adapter): js.Promise[Printer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Printer]]
 }

@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to search for a specific text and replace all matches in the document with the specified string.
   */
-@js.native
-trait ReplaceAllCommand extends CommandWithSimpleStateBase {
+trait ReplaceAllCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ReplaceAllCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
@@ -17,7 +17,7 @@ trait ReplaceAllCommand extends CommandWithSimpleStateBase {
     * @param replaceText A string value specifying the inserted text.
     * @param matchCase true, to perform a case-sensitive search; otherwise, false.
     */
-  def execute(text: String, replaceText: String, matchCase: Boolean): Boolean = js.native
+  def execute(text: String, replaceText: String, matchCase: Boolean): Boolean
 }
 object ReplaceAllCommand {
   

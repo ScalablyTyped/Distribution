@@ -5,47 +5,48 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPaneMod {
   
-  @JSImport("rc-tabs/es/TabPanelList/TabPane", JSImport.Default)
+  @JSImport("rc-tabs/es/TabPanelList/TabPane", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren: TabPaneProps
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait TabPaneProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var destroyInactiveTabPane: js.UndefOr[Boolean] = js.native
+    var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tab: js.UndefOr[ReactNode] = js.native
+    var tab: js.UndefOr[ReactNode] = js.undefined
     
-    var tabKey: js.UndefOr[String] = js.native
+    var tabKey: js.UndefOr[String] = js.undefined
   }
   object TabPaneProps {
     

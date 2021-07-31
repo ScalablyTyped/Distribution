@@ -2,26 +2,24 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyTypeDescription extends StObject {
   
   /**
     * A description of the policy type.
     */
-  var Description: js.UndefOr[typings.awsSdk.elbMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elbMod.Description] = js.undefined
   
   /**
     * The description of the policy attributes associated with the policies defined by Elastic Load Balancing.
     */
-  var PolicyAttributeTypeDescriptions: js.UndefOr[typings.awsSdk.elbMod.PolicyAttributeTypeDescriptions] = js.native
+  var PolicyAttributeTypeDescriptions: js.UndefOr[typings.awsSdk.elbMod.PolicyAttributeTypeDescriptions] = js.undefined
   
   /**
     * The name of the policy type.
     */
-  var PolicyTypeName: js.UndefOr[typings.awsSdk.elbMod.PolicyTypeName] = js.native
+  var PolicyTypeName: js.UndefOr[typings.awsSdk.elbMod.PolicyTypeName] = js.undefined
 }
 object PolicyTypeDescription {
   

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute extends StObject {
   
   /**
     * List of Amazon Resource Names (ARNs) of the load balancer listeners.
     */
-  var listenerArns: Input[js.Array[Input[String]]] = js.native
+  var listenerArns: Input[js.Array[Input[String]]]
 }
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   

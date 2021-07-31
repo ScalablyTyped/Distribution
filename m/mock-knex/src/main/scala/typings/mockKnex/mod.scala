@@ -6,27 +6,26 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mock-knex", "getTracker")
+  @JSImport("mock-knex", JSImport.Namespace)
   @js.native
-  def getTracker(): Tracker = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mock-knex", "mock")
-  @js.native
-  def mock(knex: Knex): Unit = js.native
+  @scala.inline
+  def getTracker(): Tracker = ^.asInstanceOf[js.Dynamic].applyDynamic("getTracker")().asInstanceOf[Tracker]
   
-  @JSImport("mock-knex", "unmock")
-  @js.native
-  def unmock(knex: Knex): Unit = js.native
+  @scala.inline
+  def mock(knex: Knex): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(knex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def unmock(knex: Knex): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmock")(knex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Knex extends StObject {
     
-    var client: js.Any = js.native
+    var client: js.Any
   }
   object Knex {
     
@@ -43,18 +42,17 @@ object mod {
       def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
     
-    @js.native
     trait Sql extends StObject {
       
-      var bindings: js.Any = js.native
+      var bindings: js.Any
       
-      var method: String = js.native
+      var method: String
       
-      var options: js.Any = js.native
+      var options: js.Any
       
-      var sql: String = js.native
+      var sql: String
       
-      def toNative(): js.Any = js.native
+      def toNative(): js.Any
     }
     object Sql {
       
@@ -86,7 +84,9 @@ object mod {
   }
   
   @js.native
-  trait QueryDetails extends Sql {
+  trait QueryDetails
+    extends StObject
+       with Sql {
     
     def reject(error: String): Unit = js.native
     /**
@@ -107,13 +107,12 @@ object mod {
     var transacting: Boolean = js.native
   }
   
-  @js.native
   trait QueryDetailsResponseOption extends StObject {
     
     /**
       * Is this a stream response, defaults to false
       */
-    var stream: Boolean = js.native
+    var stream: Boolean
   }
   object QueryDetailsResponseOption {
     

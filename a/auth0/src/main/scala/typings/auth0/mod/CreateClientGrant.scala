@@ -2,23 +2,21 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClientGrant extends StObject {
   
   /**
     * The audience.
     */
-  var audience: String = js.native
+  var audience: String
   
   /**
     * The identifier of the resource server.
     */
-  var client_id: String = js.native
+  var client_id: String
   
-  var scope: js.Array[String] = js.native
+  var scope: js.Array[String]
 }
 object CreateClientGrant {
   

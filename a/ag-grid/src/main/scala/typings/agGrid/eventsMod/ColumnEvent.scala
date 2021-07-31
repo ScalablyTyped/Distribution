@@ -5,17 +5,17 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnEvent extends AgGridEvent {
+trait ColumnEvent
+  extends StObject
+     with AgGridEvent {
   
-  var column: Column = js.native
+  var column: Column
   
-  var columns: js.Array[Column] = js.native
+  var columns: js.Array[Column]
   
-  var source: ColumnEventType = js.native
+  var source: ColumnEventType
 }
 object ColumnEvent {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRuntimeCallStatsResponse extends StObject {
   
   /**
     * Collected runtime call counter information.
     */
-  var result: js.Array[RuntimeCallCounterInfo] = js.native
+  var result: js.Array[RuntimeCallCounterInfo]
 }
 object GetRuntimeCallStatsResponse {
   

@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SplitViewInitEvent extends SplitViewEvent {
+trait SplitViewInitEvent
+  extends StObject
+     with SplitViewEvent {
   
-  var view: js.UndefOr[JQuery] = js.native
+  var view: js.UndefOr[JQuery] = js.undefined
 }
 object SplitViewInitEvent {
   

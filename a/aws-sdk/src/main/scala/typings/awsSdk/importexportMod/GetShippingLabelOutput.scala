@@ -2,15 +2,13 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetShippingLabelOutput extends StObject {
   
-  var ShippingLabelURL: js.UndefOr[GenericString] = js.native
+  var ShippingLabelURL: js.UndefOr[GenericString] = js.undefined
   
-  var Warning: js.UndefOr[GenericString] = js.native
+  var Warning: js.UndefOr[GenericString] = js.undefined
 }
 object GetShippingLabelOutput {
   

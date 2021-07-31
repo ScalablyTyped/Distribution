@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait AuthorizationStatus extends StObject
 object AuthorizationStatus extends StObject {
   
   @js.native
-  sealed trait NOT_REQUIRED extends AuthorizationStatus
+  sealed trait NOT_REQUIRED
+    extends StObject
+       with AuthorizationStatus
   
   @js.native
-  sealed trait REQUIRED extends AuthorizationStatus
+  sealed trait REQUIRED
+    extends StObject
+       with AuthorizationStatus
 }

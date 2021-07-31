@@ -5,7 +5,6 @@ import typings.opentelemetryContextBase.typesMod.ContextManager
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -61,8 +60,7 @@ object contextMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Context API */
-    @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI.getInstance")
-    @js.native
-    def getInstance(): ContextAPI = js.native
+    @scala.inline
+    def getInstance(): ContextAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[ContextAPI]
   }
 }

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.SetBreakpointOnFunctionCal
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetBreakpointOnFunctionCallResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetBreakpointOnFunctionCallResponse extends StObject {
   
-  var paramsType: js.Array[SetBreakpointOnFunctionCallRequest] = js.native
+  var paramsType: js.Array[SetBreakpointOnFunctionCallRequest]
   
-  var returnType: SetBreakpointOnFunctionCallResponse = js.native
+  var returnType: SetBreakpointOnFunctionCallResponse
 }
 object ReturnTypeSetBreakpointOnFunctionCallResponse {
   

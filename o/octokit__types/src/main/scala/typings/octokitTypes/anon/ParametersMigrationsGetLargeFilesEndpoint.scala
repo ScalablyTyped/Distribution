@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MigrationsGetLargeFilesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsGetLargeFilesEndpoint extends StObject {
   
-  var parameters: MigrationsGetLargeFilesEndpoint = js.native
+  var parameters: MigrationsGetLargeFilesEndpoint
   
-  var request: MigrationsGetLargeFilesRequestOptions = js.native
+  var request: MigrationsGetLargeFilesRequestOptions
   
-  var response: OctokitResponse[MigrationsGetLargeFilesResponseData] = js.native
+  var response: OctokitResponse[MigrationsGetLargeFilesResponseData]
 }
 object ParametersMigrationsGetLargeFilesEndpoint {
   

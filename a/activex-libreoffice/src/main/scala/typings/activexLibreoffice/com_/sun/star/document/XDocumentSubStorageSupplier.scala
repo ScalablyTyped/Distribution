@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A temporary interface to get access to documents substorages.
   */
-@js.native
-trait XDocumentSubStorageSupplier extends XInterface {
+trait XDocumentSubStorageSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * provides the list of substorages
     * @returns sequence of substorages names
     */
-  val DocumentSubStoragesNames: SafeArray[String] = js.native
+  val DocumentSubStoragesNames: SafeArray[String]
   
   /**
     * provides the access to a substorage with specified name
@@ -29,13 +29,13 @@ trait XDocumentSubStorageSupplier extends XInterface {
     * @param nMode a mode the storage should be opened in can take value from {@link com.sun.star.embed.ElementModes}
     * @returns XStorage implementation that refers to specified substorage
     */
-  def getDocumentSubStorage(StorageName: String, nMode: Double): XStorage = js.native
+  def getDocumentSubStorage(StorageName: String, nMode: Double): XStorage
   
   /**
     * provides the list of substorages
     * @returns sequence of substorages names
     */
-  def getDocumentSubStoragesNames(): SafeArray[String] = js.native
+  def getDocumentSubStoragesNames(): SafeArray[String]
 }
 object XDocumentSubStorageSupplier {
   

@@ -3,12 +3,11 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkSpec
-  extends /**
+  extends StObject
+     with /**
   * Allow specifying arbitrary fields on a NodeSpec.
   */
 /* key */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait MarkSpec
   /**
     * The attributes that marks of this type get.
     */
-  var attrs: js.UndefOr[StringDictionary[AttributeSpec] | Null] = js.native
+  var attrs: js.UndefOr[StringDictionary[AttributeSpec] | Null] = js.undefined
   
   /**
     * Determines which other marks this mark can coexist with. Should
@@ -33,38 +32,40 @@ trait MarkSpec
     * mark's own name) to allow multiple marks of a given type to
     * coexist (as long as they have different attributes).
     */
-  var excludes: js.UndefOr[String | Null] = js.native
+  var excludes: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The group or space-separated groups to which this mark belongs.
     */
-  var group: js.UndefOr[String | Null] = js.native
+  var group: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether this mark should be active when the cursor is positioned
     * at its end (or at its start when that is also the start of the
     * parent node). Defaults to true.
     */
-  var inclusive: js.UndefOr[Boolean | Null] = js.native
+  var inclusive: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Associates DOM parser information with this mark (see the
     * corresponding [node spec field](#model.NodeSpec.parseDOM)). The
     * `mark` field in the rules is implied.
     */
-  var parseDOM: js.UndefOr[js.Array[ParseRule] | Null] = js.native
+  var parseDOM: js.UndefOr[js.Array[ParseRule] | Null] = js.undefined
   
   /**
     * Determines whether marks of this type can span multiple adjacent
     * nodes when serialized to DOM/HTML. Defaults to true.
     */
-  var spanning: js.UndefOr[Boolean | Null] = js.native
+  var spanning: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Defines the default way marks of this type should be serialized
     * to DOM/HTML.
     */
-  var toDOM: js.UndefOr[(js.Function2[/* mark */ Mark[_], /* inline */ Boolean, DOMOutputSpec]) | Null] = js.native
+  var toDOM: js.UndefOr[
+    (js.Function2[/* mark */ Mark[js.Any], /* inline */ Boolean, DOMOutputSpec]) | Null
+  ] = js.undefined
 }
 object MarkSpec {
   
@@ -135,7 +136,7 @@ object MarkSpec {
     def setSpanningUndefined: Self = StObject.set(x, "spanning", js.undefined)
     
     @scala.inline
-    def setToDOM(value: (/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction2(value))
+    def setToDOM(value: (/* mark */ Mark[js.Any], /* inline */ Boolean) => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction2(value))
     
     @scala.inline
     def setToDOMNull: Self = StObject.set(x, "toDOM", null)

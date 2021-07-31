@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInfo extends StObject {
   
   // If true, indicates that content types are enabled for this list.
-  var contentTypesEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var contentTypesEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // If true, indicates that the list is not normally visible in the SharePoint user experience.
-  var hidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * An enumerated value that represents the base list template used in creating the list. Possible values include
     * documentLibrary, genericList, task, survey, announcements, contacts, and more.
     */
-  var template: js.UndefOr[NullableOption[String]] = js.native
+  var template: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ListInfo {
   

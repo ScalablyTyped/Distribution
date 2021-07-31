@@ -16,7 +16,6 @@ import typings.pulumiAws.s3BucketMod.Bucket
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3MixinsMod {
@@ -36,10 +35,9 @@ object s3MixinsMod {
     val bucket: Bucket = js.native
   }
   
-  @js.native
   trait BucketEvent extends StObject {
     
-    var Records: js.UndefOr[js.Array[BucketRecord]] = js.native
+    var Records: js.UndefOr[js.Array[BucketRecord]] = js.undefined
   }
   object BucketEvent {
     
@@ -65,13 +63,14 @@ object s3MixinsMod {
   
   type BucketEventHandler = EventHandler[BucketEvent, Unit]
   
-  @js.native
-  trait BucketEventSubscriptionArgs extends CommonBucketSubscriptionArgs {
+  trait BucketEventSubscriptionArgs
+    extends StObject
+       with CommonBucketSubscriptionArgs {
     
     /**
       * Events to subscribe to. For example: "[s3:ObjectCreated:*]".  Cannot be empty.
       */
-    var events: js.Array[String] = js.native
+    var events: js.Array[String]
   }
   object BucketEventSubscriptionArgs {
     
@@ -92,26 +91,25 @@ object s3MixinsMod {
     }
   }
   
-  @js.native
   trait BucketRecord extends StObject {
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var eventName: String = js.native
+    var eventName: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventTime: String = js.native
+    var eventTime: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var requestParameters: SourceIPAddress = js.native
+    var requestParameters: SourceIPAddress
     
-    var responseElements: Xamzid2 = js.native
+    var responseElements: Xamzid2
     
-    var s3: typings.pulumiAws.anon.Bucket = js.native
+    var s3: typings.pulumiAws.anon.Bucket
     
-    var userIdentity: PrincipalIdString = js.native
+    var userIdentity: PrincipalIdString
   }
   object BucketRecord {
     
@@ -163,20 +161,19 @@ object s3MixinsMod {
     }
   }
   
-  @js.native
   trait CommonBucketSubscriptionArgs extends StObject {
     
     /**
       * An optional prefix to filter down notifications.  See
       * aws.s3.BucketNotification.lambdaFunctions for more details.
       */
-    var filterPrefix: js.UndefOr[String] = js.native
+    var filterPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * An optional suffix to filter down notifications.  See
       * aws.s3.BucketNotification.lambdaFunctions for more details.
       */
-    var filterSuffix: js.UndefOr[String] = js.native
+    var filterSuffix: js.UndefOr[String] = js.undefined
   }
   object CommonBucketSubscriptionArgs {
     
@@ -203,10 +200,11 @@ object s3MixinsMod {
     }
   }
   
-  @js.native
-  trait ObjectCreatedSubscriptionArgs extends CommonBucketSubscriptionArgs {
+  trait ObjectCreatedSubscriptionArgs
+    extends StObject
+       with CommonBucketSubscriptionArgs {
     
-    var event: js.UndefOr[Asterisk | Put | Post | Copy | CompleteMultipartUpload] = js.native
+    var event: js.UndefOr[Asterisk | Put | Post | Copy | CompleteMultipartUpload] = js.undefined
   }
   object ObjectCreatedSubscriptionArgs {
     
@@ -227,10 +225,11 @@ object s3MixinsMod {
     }
   }
   
-  @js.native
-  trait ObjectRemovedSubscriptionArgs extends CommonBucketSubscriptionArgs {
+  trait ObjectRemovedSubscriptionArgs
+    extends StObject
+       with CommonBucketSubscriptionArgs {
     
-    var event: js.UndefOr[Asterisk | Delete | DeleteMarkerCreated] = js.native
+    var event: js.UndefOr[Asterisk | Delete | DeleteMarkerCreated] = js.undefined
   }
   object ObjectRemovedSubscriptionArgs {
     
@@ -277,12 +276,7 @@ object s3MixinsMod {
         * called whenever a matching [s3.Object] is created.
         */
       def onObjectCreated(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
-      def onObjectCreated(
-        name: String,
-        handler: BucketEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): BucketEventSubscription = js.native
+      def onObjectCreated(name: String, handler: BucketEventHandler, args: Unit, opts: ComponentResourceOptions): BucketEventSubscription = js.native
       def onObjectCreated(name: String, handler: BucketEventHandler, args: ObjectCreatedSubscriptionArgs): BucketEventSubscription = js.native
       def onObjectCreated(
         name: String,
@@ -297,12 +291,7 @@ object s3MixinsMod {
         * called whenever an matching [s3.Object] is removed.
         */
       def onObjectRemoved(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
-      def onObjectRemoved(
-        name: String,
-        handler: BucketEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): BucketEventSubscription = js.native
+      def onObjectRemoved(name: String, handler: BucketEventHandler, args: Unit, opts: ComponentResourceOptions): BucketEventSubscription = js.native
       def onObjectRemoved(name: String, handler: BucketEventHandler, args: ObjectRemovedSubscriptionArgs): BucketEventSubscription = js.native
       def onObjectRemoved(
         name: String,

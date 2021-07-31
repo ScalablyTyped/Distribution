@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception is deprecated. Use {@link InteractiveAugmentedIOException} instead.
   * @deprecated Deprecated
   */
-@js.native
-trait InteractiveFileIOException extends InteractiveIOException {
+trait InteractiveFileIOException
+  extends StObject
+     with InteractiveIOException {
   
   /** The file url where the i/o error occurred */
-  var FileName: String = js.native
+  var FileName: String
 }
 object InteractiveFileIOException {
   

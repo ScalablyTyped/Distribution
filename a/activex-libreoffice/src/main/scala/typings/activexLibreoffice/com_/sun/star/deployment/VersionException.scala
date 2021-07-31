@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,21 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception is intended to be used with an {@link com.sun.star.task.XInteractionHandler} .
   * @since OOo 2.1
   */
-@js.native
-trait VersionException extends Exception {
+trait VersionException
+  extends StObject
+     with Exception {
   
   /**
     * represents the already installed version of the deployment unit.
     *
     * Must not be `NULL` .
     */
-  var Deployed: XPackage = js.native
+  var Deployed: XPackage
   
   /** the display name of the extension which is being installed. */
-  var NewDisplayName: String = js.native
+  var NewDisplayName: String
   
   /** the version of the extension which is being installed. */
-  var NewVersion: String = js.native
+  var NewVersion: String
 }
 object VersionException {
   

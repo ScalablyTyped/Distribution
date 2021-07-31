@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information that is shared by all skills used by the Assistant. */
-@js.native
 trait MessageContextGlobal extends StObject {
   
   /** Built-in system properties that apply to all skills used by the assistant. */
-  var system: js.UndefOr[MessageContextGlobalSystem] = js.native
+  var system: js.UndefOr[MessageContextGlobalSystem] = js.undefined
 }
 object MessageContextGlobal {
   

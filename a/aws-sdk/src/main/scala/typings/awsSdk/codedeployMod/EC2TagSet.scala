@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2TagSet extends StObject {
   
   /**
     * A list that contains other lists of EC2 instance tag groups. For an instance to be included in the deployment group, it must be identified by all of the tag groups in the list.
     */
-  var ec2TagSetList: js.UndefOr[EC2TagSetList] = js.native
+  var ec2TagSetList: js.UndefOr[EC2TagSetList] = js.undefined
 }
 object EC2TagSet {
   

@@ -2,14 +2,12 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentChange[T] extends StObject {
   
   /** The document affected by this change. */
-  val doc: QueryDocumentSnapshot[T] = js.native
+  val doc: QueryDocumentSnapshot[T]
   
   /**
     * Returns true if the data in this `DocumentChange` is equal to the
@@ -18,7 +16,7 @@ trait DocumentChange[T] extends StObject {
     * @param other The `DocumentChange` to compare against.
     * @return true if this `DocumentChange` is equal to the provided one.
     */
-  def isEqual(other: DocumentChange[T]): Boolean = js.native
+  def isEqual(other: DocumentChange[T]): Boolean
   
   /**
     * The index of the changed document in the result set immediately after
@@ -26,17 +24,17 @@ trait DocumentChange[T] extends StObject {
     * objects and the current DocumentChange object have been applied).
     * Is -1 for 'removed' events.
     */
-  val newIndex: Double = js.native
+  val newIndex: Double
   
   /**
     * The index of the changed document in the result set immediately prior to
     * this DocumentChange (i.e. supposing that all prior DocumentChange objects
     * have been applied). Is -1 for 'added' events.
     */
-  val oldIndex: Double = js.native
+  val oldIndex: Double
   
   /** The type of change ('added', 'modified', or 'removed'). */
-  val `type`: DocumentChangeType = js.native
+  val `type`: DocumentChangeType
 }
 object DocumentChange {
   
@@ -54,7 +52,7 @@ object DocumentChange {
   }
   
   @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[_], T] (val x: Self with DocumentChange[T]) extends AnyVal {
+  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[?], T] (val x: Self & DocumentChange[T]) extends AnyVal {
     
     @scala.inline
     def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])

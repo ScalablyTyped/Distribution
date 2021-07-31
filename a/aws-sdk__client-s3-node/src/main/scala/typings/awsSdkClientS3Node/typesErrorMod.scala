@@ -2,33 +2,31 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesErrorMod {
   
-  @js.native
   trait Error extends StObject {
     
     /**
       * _Code shape
       */
-    var Code: js.UndefOr[String] = js.native
+    var Code: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectKey shape
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * _Message shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectVersionId shape
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object Error {
     

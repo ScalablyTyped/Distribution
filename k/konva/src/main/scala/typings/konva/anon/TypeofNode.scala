@@ -6,12 +6,12 @@ import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofNode
-  extends Instantiable0[Node[NodeConfig]]
+  extends StObject
+     with Instantiable0[Node[NodeConfig]]
      with Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Config */ /* config */ js.Any, 
       Node[NodeConfig]

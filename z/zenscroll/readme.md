@@ -11,8 +11,8 @@ A module to smooth-scroll web pages and scrollable elements (like DIVs)
 | Full name          | zenscroll |
 | Keywords           | animation, scroll, anchor, ux |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 2960195 |
+| # dependents       | 34 |
+| # downloads        | 3710780 |
 | # stars            | 2 |
 
 ## Links

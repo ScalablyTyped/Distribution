@@ -2,16 +2,14 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowOptions extends StObject {
   
   /**
     * Configure the background color of the application's main window.
     */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
 }
 object WindowOptions {
   

@@ -2,17 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpreadAssignment
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JSDocContainer
+     with HasJSDoc
      with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with _BindingOrAssignmentElementRestIndicator
-     with _HasJSDoc {
+     with _BindingOrAssignmentElementRestIndicator {
   
   val expression: Expression = js.native
   

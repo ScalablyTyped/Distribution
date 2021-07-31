@@ -6,47 +6,49 @@ import typings.chartmogulNode.commonMod.Entries
 import typings.chartmogulNode.commonMod.EntriesSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Metrics {
   
+  @JSImport("chartmogul-node", "Metrics")
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Customer {
     
-    @JSImport("chartmogul-node", "Metrics.Customer.activities")
+    @JSImport("chartmogul-node", "Metrics.Customer")
     @js.native
-    def activities(config: Config, uuid: String): js.Promise[Entries[MetricsActivity]] = js.native
-    @JSImport("chartmogul-node", "Metrics.Customer.activities")
-    @js.native
-    def activities(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsActivity]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("chartmogul-node", "Metrics.Customer.subscriptions")
-    @js.native
-    def subscriptions(config: Config, uuid: String): js.Promise[Entries[MetricsSubscription]] = js.native
-    @JSImport("chartmogul-node", "Metrics.Customer.subscriptions")
-    @js.native
-    def subscriptions(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsSubscription]] = js.native
+    @scala.inline
+    def activities(config: Config, uuid: String): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
+    @scala.inline
+    def activities(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsActivity]] = (^.asInstanceOf[js.Dynamic].applyDynamic("activities")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsActivity]]]
     
-    @js.native
+    @scala.inline
+    def subscriptions(config: Config, uuid: String): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
+    @scala.inline
+    def subscriptions(config: Config, uuid: String, params: CursorParams): js.Promise[Entries[MetricsSubscription]] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptions")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[MetricsSubscription]]]
+    
     trait MetricsActivity extends StObject {
       
-      var `activity-arr`: Double = js.native
+      var `activity-arr`: Double
       
-      var `activity-mrr`: Double = js.native
+      var `activity-mrr`: Double
       
-      var `activity-mrr-movement`: Double = js.native
+      var `activity-mrr-movement`: Double
       
-      var currency: String = js.native
+      var currency: String
       
-      var `currency-sign`: String = js.native
+      var `currency-sign`: String
       
-      var date: String = js.native
+      var date: String
       
-      var description: String = js.native
+      var description: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object MetricsActivity {
       
@@ -103,34 +105,33 @@ object Metrics {
       }
     }
     
-    @js.native
     trait MetricsSubscription extends StObject {
       
-      var arr: Double = js.native
+      var arr: Double
       
-      var `billing-cycle`: String = js.native
+      var `billing-cycle`: String
       
-      var `billing-cycle-count`: Double = js.native
+      var `billing-cycle-count`: Double
       
-      var currency: String = js.native
+      var currency: String
       
-      var `currency-sign`: String = js.native
+      var `currency-sign`: String
       
-      var `end-date`: String = js.native
+      var `end-date`: String
       
-      var external_id: String = js.native
+      var external_id: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var mrr: Double = js.native
+      var mrr: Double
       
-      var plan: String = js.native
+      var plan: String
       
-      var quantity: Double = js.native
+      var quantity: Double
       
-      var `start-date`: String = js.native
+      var `start-date`: String
       
-      var status: String = js.native
+      var status: String
     }
     object MetricsSubscription {
       
@@ -204,48 +205,38 @@ object Metrics {
     }
   }
   
-  @JSImport("chartmogul-node", "Metrics.all")
-  @js.native
-  def all(config: Config, params: Params): js.Promise[All_] = js.native
+  @scala.inline
+  def all(config: Config, params: Params): js.Promise[All_] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[All_]]
   
-  @JSImport("chartmogul-node", "Metrics.arpa")
-  @js.native
-  def arpa(config: Config, params: Params): js.Promise[EntriesSummary[ARPA_]] = js.native
+  @scala.inline
+  def arpa(config: Config, params: Params): js.Promise[EntriesSummary[ARPA_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arpa")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARPA_]]]
   
-  @JSImport("chartmogul-node", "Metrics.arr")
-  @js.native
-  def arr(config: Config, params: Params): js.Promise[EntriesSummary[ARR_]] = js.native
+  @scala.inline
+  def arr(config: Config, params: Params): js.Promise[EntriesSummary[ARR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ARR_]]]
   
-  @JSImport("chartmogul-node", "Metrics.asp")
-  @js.native
-  def asp(config: Config, params: Params): js.Promise[EntriesSummary[ASP_]] = js.native
+  @scala.inline
+  def asp(config: Config, params: Params): js.Promise[EntriesSummary[ASP_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asp")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[ASP_]]]
   
-  @JSImport("chartmogul-node", "Metrics.customerChurnRate")
-  @js.native
-  def customerChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[CustomerChurnRate_]] = js.native
+  @scala.inline
+  def customerChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[CustomerChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerChurnRate_]]]
   
-  @JSImport("chartmogul-node", "Metrics.customerCount")
-  @js.native
-  def customerCount(config: Config, params: Params): js.Promise[EntriesSummary[CustomerCount_]] = js.native
+  @scala.inline
+  def customerCount(config: Config, params: Params): js.Promise[EntriesSummary[CustomerCount_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customerCount")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[CustomerCount_]]]
   
-  @JSImport("chartmogul-node", "Metrics.ltv")
-  @js.native
-  def ltv(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[LTV_]] = js.native
+  @scala.inline
+  def ltv(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[LTV_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ltv")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[LTV_]]]
   
-  @JSImport("chartmogul-node", "Metrics.mrr")
-  @js.native
-  def mrr(config: Config, params: Params): js.Promise[EntriesSummary[MRR_]] = js.native
+  @scala.inline
+  def mrr(config: Config, params: Params): js.Promise[EntriesSummary[MRR_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrr")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRR_]]]
   
-  @JSImport("chartmogul-node", "Metrics.mrrChurnRate")
-  @js.native
-  def mrrChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[MRRChurnRate_]] = js.native
+  @scala.inline
+  def mrrChurnRate(config: Config, params: ParamsNoInterval): js.Promise[EntriesSummary[MRRChurnRate_]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mrrChurnRate")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EntriesSummary[MRRChurnRate_]]]
   
-  @js.native
   trait ARPA_ extends StObject {
     
-    var arpa: Double = js.native
+    var arpa: Double
     
-    var date: String = js.native
+    var date: String
   }
   object ARPA_ {
     
@@ -266,12 +257,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait ARR_ extends StObject {
     
-    var arr: Double = js.native
+    var arr: Double
     
-    var date: String = js.native
+    var date: String
   }
   object ARR_ {
     
@@ -292,12 +282,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait ASP_ extends StObject {
     
-    var asp: Double = js.native
+    var asp: Double
     
-    var date: String = js.native
+    var date: String
   }
   object ASP_ {
     
@@ -318,10 +307,9 @@ object Metrics {
     }
   }
   
-  @js.native
   trait All_ extends StObject {
     
-    var entries: Arpa = js.native
+    var entries: Arpa
   }
   object All_ {
     
@@ -339,12 +327,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait CustomerChurnRate_ extends StObject {
     
-    var `customer-churn-rate`: Double = js.native
+    var `customer-churn-rate`: Double
     
-    var date: String = js.native
+    var date: String
   }
   object CustomerChurnRate_ {
     
@@ -366,12 +353,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait CustomerCount_ extends StObject {
     
-    var customers: Double = js.native
+    var customers: Double
     
-    var date: String = js.native
+    var date: String
   }
   object CustomerCount_ {
     
@@ -392,12 +378,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait LTV_ extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var ltv: Double = js.native
+    var ltv: Double
   }
   object LTV_ {
     
@@ -418,12 +403,11 @@ object Metrics {
     }
   }
   
-  @js.native
   trait MRRChurnRate_ extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var `mrr-churn-rate`: Double = js.native
+    var `mrr-churn-rate`: Double
   }
   object MRRChurnRate_ {
     
@@ -445,22 +429,21 @@ object Metrics {
     }
   }
   
-  @js.native
   trait MRR_ extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var mrr: Double = js.native
+    var mrr: Double
     
-    var `mrr-churn`: Double = js.native
+    var `mrr-churn`: Double
     
-    var `mrr-contraction`: Double = js.native
+    var `mrr-contraction`: Double
     
-    var `mrr-expansion`: Double = js.native
+    var `mrr-expansion`: Double
     
-    var `mrr-new-business`: Double = js.native
+    var `mrr-new-business`: Double
     
-    var `mrr-reactivation`: Double = js.native
+    var `mrr-reactivation`: Double
   }
   object MRR_ {
     
@@ -509,10 +492,11 @@ object Metrics {
     }
   }
   
-  @js.native
-  trait Params extends ParamsNoInterval {
+  trait Params
+    extends StObject
+       with ParamsNoInterval {
     
-    var interval: js.UndefOr[String] = js.native
+    var interval: js.UndefOr[String] = js.undefined
   }
   object Params {
     
@@ -535,16 +519,15 @@ object Metrics {
     }
   }
   
-  @js.native
   trait ParamsNoInterval extends StObject {
     
-    var `end-date`: String = js.native
+    var `end-date`: String
     
-    var geo: js.UndefOr[String] = js.native
+    var geo: js.UndefOr[String] = js.undefined
     
-    var plans: js.UndefOr[String] = js.native
+    var plans: js.UndefOr[String] = js.undefined
     
-    var `start-date`: String = js.native
+    var `start-date`: String
   }
   object ParamsNoInterval {
     

@@ -2,14 +2,12 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewContactEvent extends StObject {
   
   /** The ID of the viewed contact. */
-  var contactId: String = js.native
+  var contactId: String
 }
 object ViewContactEvent {
   

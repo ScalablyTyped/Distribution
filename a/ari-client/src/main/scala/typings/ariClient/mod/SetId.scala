@@ -2,21 +2,19 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetId extends StObject {
   
   /**
     * Effective group id.
     */
-  var group: String = js.native
+  var group: String
   
   /**
     * Effective user id.
     */
-  var user: String = js.native
+  var user: String
 }
 object SetId {
   

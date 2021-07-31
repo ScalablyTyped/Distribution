@@ -2,13 +2,11 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timing extends StObject {
   
-  var total: Double = js.native
+  var total: Double
 }
 object Timing {
   

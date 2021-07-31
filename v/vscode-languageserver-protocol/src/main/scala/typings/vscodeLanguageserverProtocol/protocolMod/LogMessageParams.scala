@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogMessageParams extends StObject {
   
   /**
     * The actual message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The message type. See {@link MessageType}
     */
-  var `type`: MessageType = js.native
+  var `type`: MessageType
 }
 object LogMessageParams {
   

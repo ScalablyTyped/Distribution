@@ -6,13 +6,11 @@ import typings.shelljs.shelljsBooleans.`false`
 import typings.shelljs.shelljsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined shelljs.shelljs.ExecOptions & {  async :false | undefined} */
-  @js.native
   trait ExecOptionsasyncfalseunde extends StObject {
     
     /**
@@ -22,9 +20,9 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Character encoding to use.
@@ -34,48 +32,48 @@ object anon {
       *
       * @default "utf8"
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
     /**
       * Exit when command return code is non-zero.
       *
       * @default false
       */
-    var fatal: js.UndefOr[Boolean] = js.native
+    var fatal: js.UndefOr[Boolean] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var killSignal: js.UndefOr[Signals | Double] = js.native
+    var killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    var maxBuffer: js.UndefOr[Double] = js.native
+    var maxBuffer: js.UndefOr[Double] = js.undefined
     
-    var shell: js.UndefOr[String] = js.native
+    var shell: js.UndefOr[String] = js.undefined
     
     /**
       * Do not echo program output to the console.
       *
       * @default false
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 0
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
     /**
       * @default true
       */
-    var windowsHide: js.UndefOr[Boolean] = js.native
+    var windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ExecOptionsasyncfalseunde {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with js.UndefOr[`false`]): ExecOptionsasyncfalseunde = {
+    def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`]): ExecOptionsasyncfalseunde = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecOptionsasyncfalseunde]
     }
@@ -84,7 +82,7 @@ object anon {
     implicit class ExecOptionsasyncfalseundeMutableBuilder[Self <: ExecOptionsasyncfalseunde] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
@@ -161,7 +159,6 @@ object anon {
   }
   
   /* Inlined shelljs.shelljs.ExecOptions & {  async :true} */
-  @js.native
   trait ExecOptionsasynctrue extends StObject {
     
     /**
@@ -171,9 +168,9 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] with `true` = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Character encoding to use.
@@ -183,48 +180,48 @@ object anon {
       *
       * @default "utf8"
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
     /**
       * Exit when command return code is non-zero.
       *
       * @default false
       */
-    var fatal: js.UndefOr[Boolean] = js.native
+    var fatal: js.UndefOr[Boolean] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var killSignal: js.UndefOr[Signals | Double] = js.native
+    var killSignal: js.UndefOr[Signals | Double] = js.undefined
     
-    var maxBuffer: js.UndefOr[Double] = js.native
+    var maxBuffer: js.UndefOr[Double] = js.undefined
     
-    var shell: js.UndefOr[String] = js.native
+    var shell: js.UndefOr[String] = js.undefined
     
     /**
       * Do not echo program output to the console.
       *
       * @default false
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 0
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
     /**
       * @default true
       */
-    var windowsHide: js.UndefOr[Boolean] = js.native
+    var windowsHide: js.UndefOr[Boolean] = js.undefined
   }
   object ExecOptionsasynctrue {
     
     @scala.inline
-    def apply(async: js.UndefOr[Boolean] with `true`): ExecOptionsasynctrue = {
+    def apply(async: js.UndefOr[Boolean] & `true`): ExecOptionsasynctrue = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecOptionsasynctrue]
     }
@@ -233,7 +230,7 @@ object anon {
     implicit class ExecOptionsasynctrueMutableBuilder[Self <: ExecOptionsasynctrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])

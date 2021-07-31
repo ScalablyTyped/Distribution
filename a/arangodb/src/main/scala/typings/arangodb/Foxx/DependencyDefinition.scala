@@ -2,21 +2,19 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DependencyDefinition extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var multiple: Boolean = js.native
+  var multiple: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var version: String = js.native
+  var version: String
 }
 object DependencyDefinition {
   

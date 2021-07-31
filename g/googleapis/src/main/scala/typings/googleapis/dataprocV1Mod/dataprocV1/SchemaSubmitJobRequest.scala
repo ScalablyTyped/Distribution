@@ -2,19 +2,17 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to submit a job.
   */
-@js.native
 trait SchemaSubmitJobRequest extends StObject {
   
   /**
     * Required. The job resource.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * Optional. A unique id used to identify the request. If the server
@@ -25,7 +23,7 @@ trait SchemaSubmitJobRequest extends StObject {
     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
     * hyphens (-). The maximum length is 40 characters.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object SchemaSubmitJobRequest {
   

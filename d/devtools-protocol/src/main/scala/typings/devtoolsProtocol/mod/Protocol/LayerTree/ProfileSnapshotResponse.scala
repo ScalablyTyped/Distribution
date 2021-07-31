@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileSnapshotResponse extends StObject {
   
   /**
     * The array of paint profiles, one per run.
     */
-  var timings: js.Array[PaintProfile] = js.native
+  var timings: js.Array[PaintProfile]
 }
 object ProfileSnapshotResponse {
   

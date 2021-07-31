@@ -2,13 +2,11 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionAssistant extends StObject {
   
-  def provideCompletionItems(editor: TextEditor, context: CompletionContext): AssistantArray[CompletionItem] = js.native
+  def provideCompletionItems(editor: TextEditor, context: CompletionContext): AssistantArray[CompletionItem]
 }
 object CompletionAssistant {
   

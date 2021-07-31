@@ -2,21 +2,19 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Util extends StObject {
   
-  def argsToArray(args: js.Any): js.Any = js.native
+  def argsToArray(args: js.Any): js.Any
   
-  def extend(destination: js.Any, source: js.Any): js.Any = js.native
+  def extend(destination: js.Any, source: js.Any): js.Any
   
-  def formatException(e: js.Any): js.Any = js.native
+  def formatException(e: js.Any): js.Any
   
-  def htmlEscape(str: String): String = js.native
+  def htmlEscape(str: String): String
   
-  def inherit(childClass: js.Function, parentClass: js.Function): js.Any = js.native
+  def inherit(childClass: js.Function, parentClass: js.Function): js.Any
 }
 object Util {
   

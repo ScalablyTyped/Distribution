@@ -6,52 +6,50 @@ import typings.intercomClient.intercomClientStrings.user
 import typings.intercomClient.userMod.Avatar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/User.CreateUpdateUser> */
-@js.native
 trait PartialCreateUpdateUser extends StObject {
   
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
-  var app_id: js.UndefOr[String] = js.native
+  var app_id: js.UndefOr[String] = js.undefined
   
-  var avatar: js.UndefOr[Avatar] = js.native
+  var avatar: js.UndefOr[Avatar] = js.undefined
   
-  var companies: js.UndefOr[js.Array[PartialCompanyremoveboole]] = js.native
+  var companies: js.UndefOr[js.Array[PartialCompanyremoveboole]] = js.undefined
   
-  var created_at: js.UndefOr[Double] = js.native
+  var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var last_request_at: js.UndefOr[Double | Null] = js.native
+  var last_request_at: js.UndefOr[Double | Null] = js.undefined
   
-  var last_seen_ip: js.UndefOr[String | Null] = js.native
+  var last_seen_ip: js.UndefOr[String | Null] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var phone: js.UndefOr[String | Null] = js.native
+  var phone: js.UndefOr[String | Null] = js.undefined
   
-  var pseudonym: js.UndefOr[String | Null] = js.native
+  var pseudonym: js.UndefOr[String | Null] = js.undefined
   
-  var session_count: js.UndefOr[Double] = js.native
+  var session_count: js.UndefOr[Double] = js.undefined
   
-  var signed_up_at: js.UndefOr[Double | Null] = js.native
+  var signed_up_at: js.UndefOr[Double | Null] = js.undefined
   
-  var `type`: js.UndefOr[user | contact] = js.native
+  var `type`: js.UndefOr[user | contact] = js.undefined
   
-  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
   
-  var updated_at: js.UndefOr[Double] = js.native
+  var updated_at: js.UndefOr[Double] = js.undefined
   
-  var user_agent_data: js.UndefOr[String | Null] = js.native
+  var user_agent_data: js.UndefOr[String | Null] = js.undefined
   
-  var user_id: js.UndefOr[String | Null] = js.native
+  var user_id: js.UndefOr[String | Null] = js.undefined
 }
 object PartialCreateUpdateUser {
   

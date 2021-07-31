@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spend extends StObject {
   
   /**
     * The cost or usage amount that is associated with a budget forecast, actual spend, or budget threshold.
     */
-  var Amount: NumericValue = js.native
+  var Amount: NumericValue
   
   /**
     * The unit of measurement that is used for the budget forecast, actual spend, or budget threshold, such as dollars or GB.
     */
-  var Unit: UnitValue = js.native
+  var Unit: UnitValue
 }
 object Spend {
   

@@ -2,7 +2,6 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for multiple lists in a single request. NOTE: Field index 2 is unused.
   * NEXT: 5
   */
-@js.native
 trait SchemaFetchThreatListUpdatesRequest extends StObject {
   
   /**
     * The client metadata.
     */
-  var client: js.UndefOr[SchemaClientInfo] = js.native
+  var client: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
     * The requested threat list updates.
     */
-  var listUpdateRequests: js.UndefOr[js.Array[SchemaListUpdateRequest]] = js.native
+  var listUpdateRequests: js.UndefOr[js.Array[SchemaListUpdateRequest]] = js.undefined
 }
 object SchemaFetchThreatListUpdatesRequest {
   

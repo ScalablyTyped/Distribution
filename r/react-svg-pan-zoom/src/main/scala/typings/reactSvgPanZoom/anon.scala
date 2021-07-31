@@ -3,21 +3,19 @@ package typings.reactSvgPanZoom
 import typings.reactSvgPanZoom.mod.ToolbarPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Background extends StObject {
     
-    var background: String = js.native
+    var background: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var position: /* "none" */ String = js.native
+    var position: /* "none" */ String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Background {
     
@@ -44,14 +42,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var SVGAlignX: js.UndefOr[/* "center" */ String] = js.native
+    var SVGAlignX: js.UndefOr[/* "center" */ String] = js.undefined
     
-    var SVGAlignY: js.UndefOr[/* "center" */ String] = js.native
+    var SVGAlignY: js.UndefOr[/* "center" */ String] = js.undefined
     
-    var position: js.UndefOr[ToolbarPosition] = js.native
+    var position: js.UndefOr[ToolbarPosition] = js.undefined
   }
   object Position {
     

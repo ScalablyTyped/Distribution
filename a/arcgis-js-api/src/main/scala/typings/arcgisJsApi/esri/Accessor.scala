@@ -3,7 +3,6 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait Accessor extends StObject {
   
   /* protected */ def notifyChange(propertyName: String): Unit = js.native
   
-  def set(props: HashMap[_]): this.type = js.native
+  def set(props: HashMap[js.Any]): this.type = js.native
   def set[T](propertyName: String, value: T): this.type = js.native
   
   def watch(path: String, callback: WatchCallback): WatchHandle = js.native

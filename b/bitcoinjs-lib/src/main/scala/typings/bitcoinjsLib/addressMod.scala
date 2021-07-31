@@ -4,47 +4,41 @@ import typings.bitcoinjsLib.networksMod.Network
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addressMod {
   
-  @JSImport("bitcoinjs-lib/types/address", "fromBase58Check")
+  @JSImport("bitcoinjs-lib/types/address", JSImport.Namespace)
   @js.native
-  def fromBase58Check(address: String): Base58CheckResult = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/address", "fromBech32")
-  @js.native
-  def fromBech32(address: String): Bech32Result = js.native
+  @scala.inline
+  def fromBase58Check(address: String): Base58CheckResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58Check")(address.asInstanceOf[js.Any]).asInstanceOf[Base58CheckResult]
   
-  @JSImport("bitcoinjs-lib/types/address", "fromOutputScript")
-  @js.native
-  def fromOutputScript(output: Buffer): String = js.native
-  @JSImport("bitcoinjs-lib/types/address", "fromOutputScript")
-  @js.native
-  def fromOutputScript(output: Buffer, network: Network): String = js.native
+  @scala.inline
+  def fromBech32(address: String): Bech32Result = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBech32")(address.asInstanceOf[js.Any]).asInstanceOf[Bech32Result]
   
-  @JSImport("bitcoinjs-lib/types/address", "toBase58Check")
-  @js.native
-  def toBase58Check(hash: Buffer, version: Double): String = js.native
+  @scala.inline
+  def fromOutputScript(output: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputScript")(output.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fromOutputScript(output: Buffer, network: Network): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputScript")(output.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("bitcoinjs-lib/types/address", "toBech32")
-  @js.native
-  def toBech32(data: Buffer, version: Double, prefix: String): String = js.native
+  @scala.inline
+  def toBase58Check(hash: Buffer, version: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase58Check")(hash.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("bitcoinjs-lib/types/address", "toOutputScript")
-  @js.native
-  def toOutputScript(address: String): Buffer = js.native
-  @JSImport("bitcoinjs-lib/types/address", "toOutputScript")
-  @js.native
-  def toOutputScript(address: String, network: Network): Buffer = js.native
+  @scala.inline
+  def toBech32(data: Buffer, version: Double, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBech32")(data.asInstanceOf[js.Any], version.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toOutputScript(address: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toOutputScript")(address.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toOutputScript(address: String, network: Network): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toOutputScript")(address.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
   trait Base58CheckResult extends StObject {
     
-    var hash: Buffer = js.native
+    var hash: Buffer
     
-    var version: Double = js.native
+    var version: Double
   }
   object Base58CheckResult {
     
@@ -65,14 +59,13 @@ object addressMod {
     }
   }
   
-  @js.native
   trait Bech32Result extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object Bech32Result {
     

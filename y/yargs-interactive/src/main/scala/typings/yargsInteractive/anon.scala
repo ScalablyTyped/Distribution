@@ -2,15 +2,13 @@ package typings.yargsInteractive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: Boolean = js.native
+    var default: Boolean
   }
   object Default {
     

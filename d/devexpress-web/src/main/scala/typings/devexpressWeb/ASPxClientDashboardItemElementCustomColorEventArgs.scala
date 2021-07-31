@@ -2,40 +2,40 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.ItemElementCustomColor event.
   */
-@js.native
-trait ASPxClientDashboardItemElementCustomColorEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDashboardItemElementCustomColorEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the color of the current dashboard item element.
     */
-  def GetColor(): String = js.native
+  def GetColor(): String
   
   /**
     * Gets measures corresponding to the current dashboard item element.
     */
-  def GetMeasures(): js.Array[ASPxClientDashboardItemDataMeasure] = js.native
+  def GetMeasures(): js.Array[ASPxClientDashboardItemDataMeasure]
   
   /**
     * Gets the axis point tuple that corresponds to the current dashboard item element.
     */
-  def GetTargetElement(): ASPxClientDashboardItemDataAxisPointTuple = js.native
+  def GetTargetElement(): ASPxClientDashboardItemDataAxisPointTuple
   
   /**
     * Gets the component name of the dashboard item for which the event was raised.
     */
-  var ItemName: String = js.native
+  var ItemName: String
   
   /**
     * Sets the color of the current dashboard item element.
     * @param color A String that specifies the color of the current dashboard item element.
     */
-  def SetColor(color: String): Unit = js.native
+  def SetColor(color: String): Unit
 }
 object ASPxClientDashboardItemElementCustomColorEventArgs {
   

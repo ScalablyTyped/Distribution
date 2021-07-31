@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrafficPolicyRequest extends StObject {
   
   /**
     * (Optional) Any comments that you want to include about the traffic policy.
     */
-  var Comment: js.UndefOr[TrafficPolicyComment] = js.native
+  var Comment: js.UndefOr[TrafficPolicyComment] = js.undefined
   
   /**
     * The definition of this traffic policy in JSON format. For more information, see Traffic Policy Document Format.
     */
-  var Document: TrafficPolicyDocument = js.native
+  var Document: TrafficPolicyDocument
   
   /**
     * The name of the traffic policy.
     */
-  var Name: TrafficPolicyName = js.native
+  var Name: TrafficPolicyName
 }
 object CreateTrafficPolicyRequest {
   

@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,13 +36,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [initialData] - Initial data. If left unspecified, the
   * index buffer will be initialized to zeros.
   */
-@js.native
 trait IndexBuffer extends StObject {
   
   /**
     * Frees resources associated with this index buffer.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns the data format of the specified index buffer.
@@ -53,26 +51,26 @@ trait IndexBuffer extends StObject {
     * * {@link pc.INDEXFORMAT_UINT16}
     * * {@link pc.INDEXFORMAT_UINT32}
     */
-  def getFormat(): Double = js.native
+  def getFormat(): Double
   
   /**
     * Returns the number of indices stored in the specified index buffer.
     * @returns The number of indices stored in the specified index buffer.
     */
-  def getNumIndices(): Double = js.native
+  def getNumIndices(): Double
   
   /**
     * Gives access to the block of memory that stores the buffer's indices.
     * @returns A contiguous block of memory where index data can be written to.
     */
-  def lock(): ArrayBuffer = js.native
+  def lock(): ArrayBuffer
   
   /**
     * Signals that the block of memory returned by a call to the lock function is
     * ready to be given to the graphics hardware. Only unlocked index buffers can be set on the
     * currently active device.
     */
-  def unlock(): Unit = js.native
+  def unlock(): Unit
 }
 object IndexBuffer {
   

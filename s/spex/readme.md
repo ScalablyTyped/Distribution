@@ -10,9 +10,9 @@ Specialized Promise Extensions
 | ------------------ | :-------------: |
 | Full name          | spex |
 | Keywords           | promise, throttle, throttling, load balancing |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 6221237 |
+| # downloads        | 6993132 |
 | # stars            | 2 |
 
 ## Links

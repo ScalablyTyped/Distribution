@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ExportAgentRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ExportAgentRequest.
   * @param [properties] Properties to set
   */
-class ExportAgentRequest () extends IExportAgentRequest {
+class ExportAgentRequest ()
+  extends StObject
+     with IExportAgentRequest {
   def this(properties: IExportAgentRequest) = this()
   
   /** ExportAgentRequest agentUri. */
@@ -36,18 +37,20 @@ class ExportAgentRequest () extends IExportAgentRequest {
 }
 object ExportAgentRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ExportAgentRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ExportAgentRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.create")
-  @js.native
-  def create(): ExportAgentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.create")
-  @js.native
-  def create(properties: IExportAgentRequest): ExportAgentRequest = js.native
+  @scala.inline
+  def create(): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExportAgentRequest]
+  @scala.inline
+  def create(properties: IExportAgentRequest): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
   /**
     * Decodes an ExportAgentRequest message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object ExportAgentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decode")
-  @js.native
-  def decode(reader: Reader): ExportAgentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ExportAgentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ExportAgentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ExportAgentRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ExportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExportAgentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ExportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExportAgentRequest]
   
   /**
     * Decodes an ExportAgentRequest message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object ExportAgentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ExportAgentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ExportAgentRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
   /**
     * Encodes the specified ExportAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.ExportAgentRequest.verify|verify} messages.
@@ -93,12 +90,10 @@ object ExportAgentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.encode")
-  @js.native
-  def encode(message: IExportAgentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.encode")
-  @js.native
-  def encode(message: IExportAgentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IExportAgentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IExportAgentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ExportAgentRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.ExportAgentRequest.verify|verify} messages.
@@ -107,12 +102,10 @@ object ExportAgentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExportAgentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExportAgentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IExportAgentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IExportAgentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an ExportAgentRequest message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object ExportAgentRequest {
     * @returns ExportAgentRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ExportAgentRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ExportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExportAgentRequest]
   
   /**
     * Creates a plain object from an ExportAgentRequest message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object ExportAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.toObject")
-  @js.native
-  def toObject(message: ExportAgentRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.toObject")
-  @js.native
-  def toObject(message: ExportAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ExportAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ExportAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an ExportAgentRequest message.
@@ -144,7 +134,6 @@ object ExportAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.ExportAgentRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

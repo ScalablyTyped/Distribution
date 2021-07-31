@@ -2,25 +2,23 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the countAssociations mixin of the hasMany association.
   * @see HasManyCountAssociationsMixin
   */
-@js.native
 trait HasManyCountAssociationsMixinOptions extends StObject {
   
   /**
     * Apply a scope on the related model, or remove its default scope by passing false.
     */
-  var scope: js.UndefOr[String | Boolean] = js.native
+  var scope: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * An optional where clause to limit the associated models.
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object HasManyCountAssociationsMixinOptions {
   

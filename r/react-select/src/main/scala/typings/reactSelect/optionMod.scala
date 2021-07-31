@@ -1,6 +1,5 @@
 package typings.reactSelect
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
@@ -8,21 +7,20 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.reactSelect.reactSelectStrings.option
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.ActionTypes
-import typings.reactSelect.typesMod.ClassNamesState
+import typings.reactSelect.typesMod.CommonProps
 import typings.reactSelect.typesMod.InnerRef
 import typings.reactSelect.typesMod.OptionTypeBase
-import typings.reactSelect.typesMod.OptionsType
-import typings.reactSelect.typesMod.Theme
-import typings.reactSelect.typesMod.ValueType
+import typings.reactSelect.typesMod.PropsWithStyles
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object optionMod extends Shortcut {
+object optionMod {
+  
+  @JSImport("react-select/src/components/Option", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/components/Option", JSImport.Default)
   @js.native
@@ -32,24 +30,22 @@ object optionMod extends Shortcut {
   @js.native
   val Option: ComponentType[OptionProps[js.Any]] = js.native
   
-  @JSImport("react-select/src/components/Option", "optionCSS")
-  @js.native
-  def optionCSS(state: State): CSSProperties = js.native
+  @scala.inline
+  def optionCSS(state: State): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("optionCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @js.native
   trait InnerProps extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var key: String = js.native
+    var key: String
     
-    var onClick: MouseEventHandler[HTMLDivElement] = js.native
+    var onClick: MouseEventHandler[HTMLDivElement]
     
-    var onMouseMove: MouseEventHandler[HTMLDivElement] = js.native
+    var onMouseMove: MouseEventHandler[HTMLDivElement]
     
-    var onMouseOver: MouseEventHandler[HTMLDivElement] = js.native
+    var onMouseOver: MouseEventHandler[HTMLDivElement]
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
   }
   object InnerProps {
     
@@ -89,20 +85,15 @@ object optionMod extends Shortcut {
     }
   }
   
-  /* Inlined react-select.react-select/src/types.PropsWithStyles & react-select.react-select/src/types.CommonProps<OptionType> & react-select.react-select/src/components/Option.State & {  children :react.react.ReactNode,   innerRef :react-select.react-select/src/types.InnerRef,   innerProps :react-select.react-select/src/components/Option.InnerProps,   label :string,   type :'option',   data :any} */
   @js.native
-  trait OptionProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait OptionProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with PropsWithStyles
+       with CommonProps[OptionType]
+       with State {
     
     /** The children to be rendered. */
     var children: ReactNode = js.native
-    
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
     
     /* The data of the selected option. */
     var data: js.Any = js.native
@@ -112,11 +103,8 @@ object optionMod extends Shortcut {
       property as the first argument, and the current props as the second argument.
       See the `styles` object for the properties available.
       */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
+    /* InferMemberOverrides */
+    override def getStyles(name: String, props: js.Any): js.Object = js.native
     
     /** props passed to the wrapping element for the group. */
     var innerProps: InnerProps = js.native
@@ -124,46 +112,24 @@ object optionMod extends Shortcut {
     /** Inner ref to DOM Node */
     var innerRef: InnerRef = js.native
     
-    /** Whether the option is disabled. */
-    var isDisabled: Boolean = js.native
-    
-    /** Whether the option is focused. */
-    var isFocused: Boolean = js.native
-    
-    var isMulti: Boolean = js.native
-    
-    /** Whether the option is selected. */
-    var isSelected: Boolean = js.native
-    
     /* Text to be displayed representing the option. */
     var label: String = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
-    
-    var theme: Theme = js.native
     
     /* Type is used by the menu to determine whether this is an option or a group.
       In the case of option this is always `option`. */
     var `type`: option = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
     /** Whether the option is disabled. */
-    var isDisabled: Boolean = js.native
+    var isDisabled: Boolean
     
     /** Whether the option is focused. */
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
     /** Whether the option is selected. */
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
   }
   object State {
     
@@ -186,9 +152,4 @@ object optionMod extends Shortcut {
       def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = ComponentType[OptionProps[js.Any]]
-  
-  /* This means you don't have to write `default`, but can instead just say `optionMod.foo` */
-  override def _to: ComponentType[OptionProps[js.Any]] = default
 }

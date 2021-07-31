@@ -2,21 +2,21 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttachmentTimeline extends Timeline {
+trait AttachmentTimeline
+  extends StObject
+     with Timeline {
   
-  var attachmentNames: js.Array[String] = js.native
+  var attachmentNames: js.Array[String]
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def getFrameCount(): Double = js.native
+  def getFrameCount(): Double
   
-  def setFrame(frameIndex: Double, time: Double, attachmentName: String): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, attachmentName: String): Unit
   
-  var slotIndex: Double = js.native
+  var slotIndex: Double
 }
 object AttachmentTimeline {
   

@@ -8,7 +8,6 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointContainerMod {
@@ -40,36 +39,32 @@ object pointContainerMod {
   /* static members */
   object PointContainer {
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromArray")
+    @JSImport("image-q/dist/utils/pointContainer", "PointContainer")
     @js.native
-    def fromArray(byteArray: js.Array[Double], width: Double, height: Double): PointContainer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromCanvasPixelArray")
-    @js.native
-    def fromCanvasPixelArray(data: js.Any, width: Double, height: Double): PointContainer = js.native
+    @scala.inline
+    def fromArray(byteArray: js.Array[Double], width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(byteArray.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromHTMLCanvasElement")
-    @js.native
-    def fromHTMLCanvasElement(canvas: HTMLCanvasElement): PointContainer = js.native
+    @scala.inline
+    def fromCanvasPixelArray(data: js.Any, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCanvasPixelArray")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromHTMLImageElement")
-    @js.native
-    def fromHTMLImageElement(img: HTMLImageElement): PointContainer = js.native
+    @scala.inline
+    def fromHTMLCanvasElement(canvas: HTMLCanvasElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLCanvasElement")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromImageData")
-    @js.native
-    def fromImageData(imageData: ImageData): PointContainer = js.native
+    @scala.inline
+    def fromHTMLImageElement(img: HTMLImageElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLImageElement")(img.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromNodeCanvas")
-    @js.native
-    def fromNodeCanvas(canvas: js.Any): PointContainer = js.native
+    @scala.inline
+    def fromImageData(imageData: ImageData): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromUint32Array")
-    @js.native
-    def fromUint32Array(uint32array: Uint32Array, width: Double, height: Double): PointContainer = js.native
+    @scala.inline
+    def fromNodeCanvas(canvas: js.Any): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @JSImport("image-q/dist/utils/pointContainer", "PointContainer.fromUint8Array")
-    @js.native
-    def fromUint8Array(uint8array: Uint8Array, width: Double, height: Double): PointContainer = js.native
+    @scala.inline
+    def fromUint32Array(uint32array: Uint32Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint32Array")(uint32array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
+    
+    @scala.inline
+    def fromUint8Array(uint8array: Uint8Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
   }
 }

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderLineItemReturnInfo extends StObject {
   
   /** Required. How many days later the item can be returned. */
-  var daysToReturn: js.UndefOr[Double] = js.native
+  var daysToReturn: js.UndefOr[Double] = js.undefined
   
   /** Required. Whether the item is returnable. */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /** Required. URL of the item return policy. */
-  var policyUrl: js.UndefOr[String] = js.native
+  var policyUrl: js.UndefOr[String] = js.undefined
 }
 object OrderLineItemReturnInfo {
   

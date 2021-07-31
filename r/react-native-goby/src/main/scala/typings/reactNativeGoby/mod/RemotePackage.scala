@@ -2,11 +2,12 @@ package typings.reactNativeGoby.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemotePackage extends Package {
+trait RemotePackage
+  extends StObject
+     with Package {
   
   /**
     * Downloads the available update from the Goby service.

@@ -5,52 +5,54 @@ import typings.liveServer.liveServerNumbers.`1`
 import typings.liveServer.liveServerNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("live-server", "shutdown")
+  @JSImport("live-server", JSImport.Namespace)
   @js.native
-  def shutdown(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("live-server", "start")
-  @js.native
-  def start(params: LiveServerParams): Unit = js.native
+  @scala.inline
+  def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def start(params: LiveServerParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait LiveServerParams extends StObject {
     
     /** When set, serve this file (server root relative) for every 404 (useful for single-page applications). */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**  Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP. */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /** Comma-separated string for paths to ignore. */
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     /** 0 = errors only, 1 = some, 2 = lots */
-    var logLevel: js.UndefOr[`0` | `1` | `2`] = js.native
+    var logLevel: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /** Takes an array of Connect-compatible middleware that are injected into the server middleware stack. */
-    var middleware: js.UndefOr[js.Array[js.Function3[/* req */ _, /* res */ _, /* next */ _, Unit]]] = js.native
+    var middleware: js.UndefOr[
+        js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]
+      ] = js.undefined
     
     /** Mount a directory to a route. */
-    var mount: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var mount: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
     /** When false, it won't load your browser by default. */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /** Set the server port. Defaults to 8080. */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Set root directory that's being served. Defaults to cwd. */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** Waits for all changes, before reloading. Defaults to 0 sec. */
     @JSName("wait")
-    var wait_FLiveServerParams: js.UndefOr[Double] = js.native
+    var wait_FLiveServerParams: js.UndefOr[Double] = js.undefined
   }
   object LiveServerParams {
     
@@ -88,13 +90,13 @@ object mod {
       def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
       @scala.inline
-      def setMiddleware(value: js.Array[js.Function3[/* req */ _, /* res */ _, /* next */ _, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      def setMiddleware(value: js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
       @scala.inline
-      def setMiddlewareVarargs(value: (js.Function3[js.Any, js.Any, js.Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+      def setMiddlewareVarargs(value: (js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
       
       @scala.inline
       def setMount(value: js.Array[js.Array[String]]): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])

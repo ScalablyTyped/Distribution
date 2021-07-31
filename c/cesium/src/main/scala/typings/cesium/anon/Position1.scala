@@ -3,15 +3,13 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position1 extends StObject {
   
-  var position1: Cartesian2 = js.native
+  var position1: Cartesian2
   
-  var position2: Cartesian2 = js.native
+  var position2: Cartesian2
 }
 object Position1 {
   

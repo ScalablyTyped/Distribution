@@ -3,25 +3,23 @@ package typings.mochaPhantomjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MochaPhantomJS extends StObject {
   
-  var columns: Double = js.native
+  var columns: Double
   
-  def customizeMocha(options: MochaPhantomJSOptions): Unit = js.native
+  def customizeMocha(options: MochaPhantomJSOptions): Unit
   
-  var mochaStartWait: Double = js.native
+  var mochaStartWait: Double
   
-  var output: js.Any = js.native
+  var output: js.Any
   
-  def run(): Unit = js.native
+  def run(): Unit
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var url: String = js.native
+  var url: String
 }
 object MochaPhantomJS {
   

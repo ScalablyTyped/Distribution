@@ -3,23 +3,21 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewState extends StObject {
   
-  var firstPosition: IPosition = js.native
+  var firstPosition: IPosition
   
-  var firstPositionDeltaTop: Double = js.native
+  var firstPositionDeltaTop: Double
   
-  var scrollLeft: Double = js.native
-  
-  /** written by previous versions */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollLeft: Double
   
   /** written by previous versions */
-  var scrollTopWithoutViewZones: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
+  
+  /** written by previous versions */
+  var scrollTopWithoutViewZones: js.UndefOr[Double] = js.undefined
 }
 object IViewState {
   

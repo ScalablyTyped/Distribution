@@ -2,19 +2,17 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Communication extends StObject {
   
-  var communication: String = js.native
+  var communication: String
   
-  var incoming: Boolean = js.native
+  var incoming: Boolean
   
-  var outgoing: Boolean = js.native
+  var outgoing: Boolean
   
-  var signedon: Boolean = js.native
+  var signedon: Boolean
 }
 object Communication {
   

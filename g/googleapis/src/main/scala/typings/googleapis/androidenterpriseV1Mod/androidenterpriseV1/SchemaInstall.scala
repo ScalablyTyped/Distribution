@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * remaining installs. The install resource will also be deleted if the user
   * uninstalls the app themselves.
   */
-@js.native
 trait SchemaInstall extends StObject {
   
   /**
@@ -34,25 +32,25 @@ trait SchemaInstall extends StObject {
     * The state &quot;installed&quot; means that the app has been installed.
     * This field is read-only.
     */
-  var installState: js.UndefOr[String] = js.native
+  var installState: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#install&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product that the install is for. For example,
     * &quot;app:com.google.android.gm&quot;.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the installed product. Guaranteed to be set only if the
     * install state is &quot;installed&quot;.
     */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstall {
   

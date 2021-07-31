@@ -10,9 +10,9 @@ Like `path.join` but for a URL
 | ------------------ | :-------------: |
 | Full name          | proper-url-join |
 | Keywords           | url, join, path, pathname, normalize |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 561004 |
+| # releases         | 5 |
+| # dependents       | 18 |
+| # downloads        | 612035 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileFlagMod {
@@ -14,23 +13,31 @@ object fileFlagMod {
   object ActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ActionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ActionType & Double] = js.native
     
     @js.native
-    sealed trait CREATE_FILE extends ActionType
-    /* 3 */ val CREATE_FILE: typings.browserfs.fileFlagMod.ActionType.CREATE_FILE with Double = js.native
+    sealed trait CREATE_FILE
+      extends StObject
+         with ActionType
+    /* 3 */ val CREATE_FILE: typings.browserfs.fileFlagMod.ActionType.CREATE_FILE & Double = js.native
     
     @js.native
-    sealed trait NOP extends ActionType
-    /* 0 */ val NOP: typings.browserfs.fileFlagMod.ActionType.NOP with Double = js.native
+    sealed trait NOP
+      extends StObject
+         with ActionType
+    /* 0 */ val NOP: typings.browserfs.fileFlagMod.ActionType.NOP & Double = js.native
     
     @js.native
-    sealed trait THROW_EXCEPTION extends ActionType
-    /* 1 */ val THROW_EXCEPTION: typings.browserfs.fileFlagMod.ActionType.THROW_EXCEPTION with Double = js.native
+    sealed trait THROW_EXCEPTION
+      extends StObject
+         with ActionType
+    /* 1 */ val THROW_EXCEPTION: typings.browserfs.fileFlagMod.ActionType.THROW_EXCEPTION & Double = js.native
     
     @js.native
-    sealed trait TRUNCATE_FILE extends ActionType
-    /* 2 */ val TRUNCATE_FILE: typings.browserfs.fileFlagMod.ActionType.TRUNCATE_FILE with Double = js.native
+    sealed trait TRUNCATE_FILE
+      extends StObject
+         with ActionType
+    /* 2 */ val TRUNCATE_FILE: typings.browserfs.fileFlagMod.ActionType.TRUNCATE_FILE & Double = js.native
   }
   
   @JSImport("browserfs/dist/node/core/file_flag", "FileFlag")
@@ -111,9 +118,8 @@ object fileFlagMod {
       * @return The FileFlag object representing the flag
       * @throw when the flag string is invalid
       */
-    @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.getFileFlag")
-    @js.native
-    def getFileFlag(flagStr: String): FileFlag = js.native
+    @scala.inline
+    def getFileFlag(flagStr: String): FileFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFlag")(flagStr.asInstanceOf[js.Any]).asInstanceOf[FileFlag]
     
     @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.validFlagStrs")
     @js.native

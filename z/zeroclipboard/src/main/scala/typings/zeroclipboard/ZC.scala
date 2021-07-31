@@ -35,7 +35,6 @@ import typings.zeroclipboard.zeroclipboardStrings.trustedDomains
 import typings.zeroclipboard.zeroclipboardStrings.zIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ZC {
@@ -46,10 +45,9 @@ object ZC {
   // Mimicking native interfaces in lib.dom.d.ts of the same name.
   type EventListener[T /* <: ZeroClipboardEvent */] = js.Function1[/* ev */ T, Unit]
   
-  @js.native
   trait EventListenerObject[T /* <: ZeroClipboardEvent */] extends StObject {
     
-    def handleEvent(ev: T): Unit = js.native
+    def handleEvent(ev: T): Unit
   }
   object EventListenerObject {
     
@@ -60,7 +58,7 @@ object ZC {
     }
     
     @scala.inline
-    implicit class EventListenerObjectMutableBuilder[Self <: EventListenerObject[_], T /* <: ZeroClipboardEvent */] (val x: Self with EventListenerObject[T]) extends AnyVal {
+    implicit class EventListenerObjectMutableBuilder[Self <: EventListenerObject[?], T /* <: ZeroClipboardEvent */] (val x: Self & EventListenerObject[T]) extends AnyVal {
       
       @scala.inline
       def setHandleEvent(value: T => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
@@ -70,10 +68,11 @@ object ZC {
   type EventListenerOrEventListenerObject[T /* <: ZeroClipboardEvent */] = EventListener[T] | EventListenerObject[T]
   
   // Basic collection types for shorthands and interoperation
-  @js.native
-  trait List[T] extends /* index */ NumberDictionary[T] {
+  trait List[T]
+    extends StObject
+       with /* index */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object List {
     
@@ -84,21 +83,22 @@ object ZC {
     }
     
     @scala.inline
-    implicit class ListMutableBuilder[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
+    implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ZeroClipboardAfterCopyEvent extends ZeroClipboardEvent {
+  trait ZeroClipboardAfterCopyEvent
+    extends StObject
+       with ZeroClipboardEvent {
     
-    var data: Dictionary[String] = js.native
+    var data: Dictionary[String]
     
-    var errors: js.Array[_] = js.native
+    var errors: js.Array[js.Any]
     
-    var success: Dictionary[Boolean] = js.native
+    var success: Dictionary[Boolean]
   }
   object ZeroClipboardAfterCopyEvent {
     
@@ -106,7 +106,7 @@ object ZC {
     def apply(
       currentTarget: HTMLObjectElement,
       data: Dictionary[String],
-      errors: js.Array[_],
+      errors: js.Array[js.Any],
       relatedTarget: HTMLElement,
       success: Dictionary[Boolean],
       target: HTMLElement,
@@ -125,7 +125,7 @@ object ZC {
       def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
@@ -138,7 +138,9 @@ object ZC {
   type ZeroClipboardBeforeCopyEvent = ZeroClipboardEvent
   
   @js.native
-  trait ZeroClipboardClient extends ZeroClipboardCommon {
+  trait ZeroClipboardClient
+    extends StObject
+       with ZeroClipboardCommon {
     
     /**
       * Register clipboard actions for new element(s) to the client. This includes automatically invoking
@@ -414,52 +416,51 @@ object ZC {
     def setData(format: String, data: String): Unit = js.native
   }
   
-  @js.native
   trait ZeroClipboardConfig extends StObject {
     
     /**
       * The class used to indicate that a clipped element is active (is being clicked).
       * @type {string}
       */
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * Setting this to `false` would allow users to handle calling `ZeroClipboard.focus(...);`
       * themselves instead of relying on our per-element `mouseover` handler.
       * @type {boolean}
       */
-    var autoActivate: js.UndefOr[Boolean] = js.native
+    var autoActivate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Bubble synthetic events in JavaScript after they are received by the Flash object.
       * @type {boolean}
       */
-    var bubbleEvents: js.UndefOr[Boolean] = js.native
+    var bubbleEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include a "noCache" query parameter on requests for the SWF.
       * @type {boolean}
       */
-    var cacheBust: js.UndefOr[Boolean] = js.native
+    var cacheBust: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the class of the `div` encapsulating the Flash object.
       * @type {string}
       */
-    var containerClass: js.UndefOr[String] = js.native
+    var containerClass: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the ID of the `div` encapsulating the Flash object.
       * Value is validated against the [HTML4 spec for `ID` tokens][valid_ids].
       * @type {string}
       */
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
     /**
       * Ensure OS-compliant line endings, i.e. "\r\n" on Windows, "\n" elsewhere
       * @type {boolean}
       */
-    var fixLineEndings: js.UndefOr[Boolean] = js.native
+    var fixLineEndings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How many milliseconds to wait for the Flash SWF to load and respond before assuming that
@@ -467,52 +468,52 @@ object ZC {
       * how long it takes to load the SWF, you can set this to `null`.
       * @type {number}
       */
-    var flashLoadTimeout: js.UndefOr[Double] = js.native
+    var flashLoadTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable use of the fancy "Desktop" clipboard, even on Linux where it is known to suck.
       * @type {boolean}
       */
-    var forceEnhancedClipboard: js.UndefOr[Boolean] = js.native
+    var forceEnhancedClipboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forcibly set the hand cursor ("pointer") for all clipped elements.
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
       * @type {boolean}
       */
-    var forceHandCursor: js.UndefOr[Boolean] = js.native
+    var forceHandCursor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The class used to indicate that a clipped element is being hovered over.
       * @type {string}
       */
-    var hoverClass: js.UndefOr[String] = js.native
+    var hoverClass: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the ID and name of the Flash `object` element.
       * Value is validated against the [HTML4 spec for `ID` and `Name` tokens][valid_ids].
       * @type {string}
       */
-    var swfObjectId: js.UndefOr[String] = js.native
+    var swfObjectId: js.UndefOr[String] = js.undefined
     
     /**
       * SWF URL, relative to the page. Default value will be "ZeroClipboard.swf" under the same path as the ZeroClipboard JS file.
       * @type {string}
       */
-    var swfPath: js.UndefOr[String] = js.native
+    var swfPath: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the title of the `div` encapsulating the Flash object.
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
       * @type {string}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * SWF inbound scripting policy: page domains that the SWF should trust. (single string, or array of strings)
       * @type {SingleOrList<string>}
       */
-    var trustedDomains: js.UndefOr[js.Array[String]] = js.native
+    var trustedDomains: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The z-index used by the Flash object.
@@ -520,7 +521,7 @@ object ZC {
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
       * @type {number}
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ZeroClipboardConfig {
     
@@ -634,10 +635,11 @@ object ZC {
     }
   }
   
-  @js.native
-  trait ZeroClipboardCopyEvent extends ZeroClipboardEvent {
+  trait ZeroClipboardCopyEvent
+    extends StObject
+       with ZeroClipboardEvent {
     
-    var clipboardData: ClearData = js.native
+    var clipboardData: ClearData
   }
   object ZeroClipboardCopyEvent {
     
@@ -663,12 +665,13 @@ object ZC {
     }
   }
   
-  @js.native
-  trait ZeroClipboardDestroyEvent extends ZeroClipboardEvent {
+  trait ZeroClipboardDestroyEvent
+    extends StObject
+       with ZeroClipboardEvent {
     
-    var data: Dictionary[String] = js.native
+    var data: Dictionary[String]
     
-    var success: Dictionary[Boolean] = js.native
+    var success: Dictionary[Boolean]
   }
   object ZeroClipboardDestroyEvent {
     
@@ -698,30 +701,31 @@ object ZC {
     }
   }
   
-  @js.native
-  trait ZeroClipboardErrorEvent extends ZeroClipboardEvent {
+  trait ZeroClipboardErrorEvent
+    extends StObject
+       with ZeroClipboardEvent {
     
-    var actualValue: js.UndefOr[String] = js.native
+    var actualValue: js.UndefOr[String] = js.undefined
     
-    var configuredValue: js.UndefOr[String] = js.native
+    var configuredValue: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[Dictionary[String]] = js.native
+    var data: js.UndefOr[Dictionary[String]] = js.undefined
     
-    var errors: js.UndefOr[js.Array[_]] = js.native
+    var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var jsVersion: js.UndefOr[String] = js.native
+    var jsVersion: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var minimumVersion: js.UndefOr[String] = js.native
+    var minimumVersion: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var swfVersion: js.UndefOr[String] = js.native
+    var swfVersion: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ZeroClipboardErrorEvent {
     
@@ -762,7 +766,7 @@ object ZC {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
@@ -808,20 +812,19 @@ object ZC {
     }
   }
   
-  @js.native
   trait ZeroClipboardEvent extends StObject {
     
-    var client: js.UndefOr[ZeroClipboardClient] = js.native
+    var client: js.UndefOr[ZeroClipboardClient] = js.undefined
     
-    var currentTarget: HTMLObjectElement = js.native
+    var currentTarget: HTMLObjectElement
     
-    var relatedTarget: HTMLElement = js.native
+    var relatedTarget: HTMLElement
     
-    var target: HTMLElement = js.native
+    var target: HTMLElement
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ZeroClipboardEvent {
     
@@ -864,12 +867,13 @@ object ZC {
     }
   }
   
-  @js.native
-  trait ZeroClipboardReadyEvent extends ZeroClipboardEvent {
+  trait ZeroClipboardReadyEvent
+    extends StObject
+       with ZeroClipboardEvent {
     
-    var message: String = js.native
+    var message: String
     
-    var version: String = js.native
+    var version: String
   }
   object ZeroClipboardReadyEvent {
     
@@ -901,7 +905,8 @@ object ZC {
   
   @js.native
   trait ZeroClipboardStatic
-    extends ZeroClipboardCommon
+    extends StObject
+       with ZeroClipboardCommon
        with Instantiable0[ZeroClipboardClient]
        with Instantiable1[(/* elements */ Element) | (/* elements */ List[Element]), ZeroClipboardClient] {
     

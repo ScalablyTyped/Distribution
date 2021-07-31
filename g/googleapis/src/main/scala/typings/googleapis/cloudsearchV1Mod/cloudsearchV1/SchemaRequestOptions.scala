@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Shared request options for all RPC methods.
   */
-@js.native
 trait SchemaRequestOptions extends StObject {
   
   /**
     * Debug options of the request
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
   /**
     * The BCP-47 language code, such as &quot;en-US&quot; or
@@ -22,12 +20,12 @@ trait SchemaRequestOptions extends StObject {
     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. For
     * translations.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Id of the application created using SearchApplicationsService.
     */
-  var searchApplicationId: js.UndefOr[String] = js.native
+  var searchApplicationId: js.UndefOr[String] = js.undefined
   
   /**
     * Current user&#39;s time zone id, such as &quot;America/Los_Angeles&quot;
@@ -36,7 +34,7 @@ trait SchemaRequestOptions extends StObject {
     * currently available in the file
     * [timezone.xml](http://unicode.org/repos/cldr/trunk/common/bcp47/timezone.xml)
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaRequestOptions {
   

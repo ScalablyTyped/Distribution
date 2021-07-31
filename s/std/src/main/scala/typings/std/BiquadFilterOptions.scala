@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BiquadFilterOptions extends AudioNodeOptions {
+trait BiquadFilterOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var Q: js.UndefOr[Double] = js.native
+  var Q: js.UndefOr[Double] = js.undefined
   
-  var detune: js.UndefOr[Double] = js.native
+  var detune: js.UndefOr[Double] = js.undefined
   
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
-  var gain: js.UndefOr[Double] = js.native
+  var gain: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[BiquadFilterType] = js.native
+  var `type`: js.UndefOr[BiquadFilterType] = js.undefined
 }
 object BiquadFilterOptions {
   

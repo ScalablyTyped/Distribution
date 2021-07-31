@@ -5,13 +5,14 @@ import typings.babelPluginReactHtmlAttrs.anon.ReadonlychildrenReactNode
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Base component for plain JS classes
 @JSImport("babel-plugin-react-html-attrs", "Component")
 @js.native
-class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
+class Component[P, S, SS] protected ()
+  extends StObject
+     with ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
   def this(props: P, context: js.Any) = this()
   
@@ -41,7 +42,7 @@ class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
   // always pass children as variadic arguments to `createElement`.
   // In the future, if we can define its call signature conditionally
   // on the existence of `children` in `P`, then we should remove this.
-  val props: P with ReadonlychildrenReactNode = js.native
+  val props: P & ReadonlychildrenReactNode = js.native
   
   /**
     * @deprecated

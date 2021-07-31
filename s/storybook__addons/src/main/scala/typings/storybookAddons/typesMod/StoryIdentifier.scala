@@ -2,17 +2,15 @@ package typings.storybookAddons.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoryIdentifier extends StObject {
   
-  var id: StoryId = js.native
+  var id: StoryId
   
-  var kind: StoryKind = js.native
+  var kind: StoryKind
   
-  var name: StoryName = js.native
+  var name: StoryName
 }
 object StoryIdentifier {
   

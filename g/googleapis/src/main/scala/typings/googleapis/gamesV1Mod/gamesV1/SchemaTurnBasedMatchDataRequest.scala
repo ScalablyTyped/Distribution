@@ -2,26 +2,24 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for sending a turn-based match data object.
   */
-@js.native
 trait SchemaTurnBasedMatchDataRequest extends StObject {
   
   /**
     * The byte representation of the data (limited to 128 kB), as a
     * Base64-encoded string with the URL_SAFE encoding option.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#turnBasedMatchDataRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaTurnBasedMatchDataRequest {
   

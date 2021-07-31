@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,28 +16,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and a string value. An entry must contain at least one tag named "ID", the value of this tag must be unique for the whole set of entries, this tag is
   * used as a unique identifier of an entry.
   */
-@js.native
-trait XRelationshipAccess extends XInterface {
+trait XRelationshipAccess
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the sequence containing all the entries controlled by the object.
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  val AllRelationships: SafeArray[SafeArray[StringPair]] = js.native
+  val AllRelationships: SafeArray[SafeArray[StringPair]]
   
   /**
     * allows to clear the set of entries.
     * @throws com::sun::star::io::IOException in case there is a problem reading/writing the relations info
     */
-  def clearRelationships(): Unit = js.native
+  def clearRelationships(): Unit
   
   /**
     * retrieves the sequence containing all the entries controlled by the object.
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getAllRelationships(): SafeArray[SafeArray[StringPair]] = js.native
+  def getAllRelationships(): SafeArray[SafeArray[StringPair]]
   
   /**
     * retrieves the sequence containing all the tags from the entry with specified value of "ID" tag.
@@ -47,7 +47,7 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::container::NoSuchElementException in case there is no entry with specified tag
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getRelationshipByID(sID: String): SafeArray[StringPair] = js.native
+  def getRelationshipByID(sID: String): SafeArray[StringPair]
   
   /**
     * retrieves the sequence containing all the entries which "Type" tag takes the specified value.
@@ -55,7 +55,7 @@ trait XRelationshipAccess extends XInterface {
     * @returns sequence of entries, each entry is represented by sequence, each element of the sequence represents tag, {@link com.sun.star.beans.StringPair.Fir
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getRelationshipsByType(sType: String): SafeArray[SafeArray[StringPair]] = js.native
+  def getRelationshipsByType(sType: String): SafeArray[SafeArray[StringPair]]
   
   /**
     * retrieves the value of "Target" tag from the entry with specified "ID" tag.
@@ -65,7 +65,7 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::container::NoSuchElementException in case there is no entry with specified tag
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getTargetByID(sID: String): String = js.native
+  def getTargetByID(sID: String): String
   
   /**
     * retrieves the value of "Type" tag from the entry with specified "ID" tag.
@@ -75,14 +75,14 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::container::NoSuchElementException in case there is no entry with specified tag
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def getTypeByID(sID: String): String = js.native
+  def getTypeByID(sID: String): String
   
   /**
     * allows to detect whether there is an entry with specified value of "ID" tag.
     * @param sID the value of "ID" tag
     * @throws com::sun::star::io::IOException in case there is a problem reading the relations info
     */
-  def hasByID(sID: String): Boolean = js.native
+  def hasByID(sID: String): Boolean
   
   /**
     * allows to insert an entry.
@@ -92,7 +92,7 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::io::IOException in case there is a problem reading/writing the relations info
     * @throws com::sun::star::container::ElementExistException in case an element with the specified "ID" tag exists already, and no replacement is allowed
     */
-  def insertRelationshipByID(sID: String, aEntry: SeqEquiv[StringPair], bReplace: Boolean): Unit = js.native
+  def insertRelationshipByID(sID: String, aEntry: SeqEquiv[StringPair], bReplace: Boolean): Unit
   
   /**
     * allows to insert a set of entries
@@ -101,7 +101,7 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::container::ElementExistException in case an element with the provided "ID" tag exists already, and no replacement is allowed
     * @throws com::sun::star::io::IOException in case there is a problem reading/writing the relations info
     */
-  def insertRelationships(aEntries: SeqEquiv[SeqEquiv[StringPair]], bReplace: Boolean): Unit = js.native
+  def insertRelationships(aEntries: SeqEquiv[SeqEquiv[StringPair]], bReplace: Boolean): Unit
   
   /**
     * allows to remove an entry.
@@ -109,7 +109,7 @@ trait XRelationshipAccess extends XInterface {
     * @throws com::sun::star::container::NoSuchElementException in case there is no entry with specified tag
     * @throws com::sun::star::io::IOException in case there is a problem reading/writing the relations info
     */
-  def removeRelationshipByID(sID: String): Unit = js.native
+  def removeRelationshipByID(sID: String): Unit
 }
 object XRelationshipAccess {
   

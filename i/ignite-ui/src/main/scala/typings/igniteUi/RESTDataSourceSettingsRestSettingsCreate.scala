@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTDataSourceSettingsRestSettingsCreate
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait RESTDataSourceSettingsRestSettingsCreate
   /**
     * Specifies whether create requests will be sent in batches
     */
-  var batch: js.UndefOr[Boolean] = js.native
+  var batch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a remote URL template. Use ${id} in place of the resource id.
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object RESTDataSourceSettingsRestSettingsCreate {
   

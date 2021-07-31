@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The latitude.
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * The longitude.
     */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object Location {
   

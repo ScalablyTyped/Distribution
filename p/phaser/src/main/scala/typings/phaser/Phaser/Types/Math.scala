@@ -2,28 +2,26 @@ package typings.phaser.Phaser.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Math {
   
-  @js.native
   trait SinCosTable extends StObject {
     
     /**
       * The cosine value.
       */
-    var cos: Double = js.native
+    var cos: Double
     
     /**
       * The length.
       */
-    var length: Double = js.native
+    var length: Double
     
     /**
       * The sine value.
       */
-    var sin: Double = js.native
+    var sin: Double
   }
   object SinCosTable {
     
@@ -47,18 +45,17 @@ object Math {
     }
   }
   
-  @js.native
   trait Vector2Like extends StObject {
     
     /**
       * The x component.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The y component.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Vector2Like {
     

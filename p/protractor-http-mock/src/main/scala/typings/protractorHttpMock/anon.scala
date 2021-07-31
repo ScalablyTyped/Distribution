@@ -9,19 +9,17 @@ import typings.protractorHttpMock.protractorHttpMockStrings.POST
 import typings.protractorHttpMock.protractorHttpMockStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
     /**
       * Collection of default plugins to load for every test.
       * Default: []
       */
-    var default: js.UndefOr[js.Array[String]] = js.native
+    var default: js.UndefOr[js.Array[String]] = js.undefined
   }
   object `0` {
     
@@ -45,14 +43,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data[TResponse] extends StObject {
     
-    var data: TResponse = js.native
+    var data: TResponse
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object Data {
     
@@ -63,7 +60,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], TResponse] (val x: Self with Data[TResponse]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], TResponse] (val x: Self & Data[TResponse]) extends AnyVal {
       
       @scala.inline
       def setData(value: TResponse): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -82,20 +79,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Default extends StObject {
     
     /**
       * Collection of default mocks to load for every test.
       * Default: []
       */
-    var default: js.UndefOr[js.Array[String]] = js.native
+    var default: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Name of the folder where mocks will reside.
       * Default: 'mocks'
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
   }
   object Default {
     
@@ -125,26 +121,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: GET = js.native
+    var method: GET
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var queryString: js.UndefOr[js.Object] = js.native
+    var queryString: js.UndefOr[js.Object] = js.undefined
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object Headers {
     
     @scala.inline
-    def apply(method: GET, path: String): Headers = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): Headers = {
+      val __obj = js.Dynamic.literal(method = "GET", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers]
     }
     
@@ -183,27 +178,26 @@ object anon {
     }
   }
   
-  @js.native
   trait Method[TPayload] extends StObject {
     
-    var data: TPayload = js.native
+    var data: TPayload
     
-    var method: POST = js.native
+    var method: POST
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object Method {
     
     @scala.inline
-    def apply[TPayload](data: TPayload, method: POST, path: String): Method[TPayload] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply[TPayload](data: TPayload, path: String): Method[TPayload] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = "POST", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method[TPayload]]
     }
     
     @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method[_], TPayload] (val x: Self with Method[TPayload]) extends AnyVal {
+    implicit class MethodMutableBuilder[Self <: Method[?], TPayload] (val x: Self & Method[TPayload]) extends AnyVal {
       
       @scala.inline
       def setData(value: TPayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -222,20 +216,19 @@ object anon {
     }
   }
   
-  @js.native
   trait MethodPath extends StObject {
     
-    var method: DELETE = js.native
+    var method: DELETE
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object MethodPath {
     
     @scala.inline
-    def apply(method: DELETE, path: String): MethodPath = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): MethodPath = {
+      val __obj = js.Dynamic.literal(method = "DELETE", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodPath]
     }
     
@@ -256,20 +249,19 @@ object anon {
     }
   }
   
-  @js.native
   trait MethodPathRegex extends StObject {
     
-    var method: PATCH = js.native
+    var method: PATCH
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object MethodPathRegex {
     
     @scala.inline
-    def apply(method: PATCH, path: String): MethodPathRegex = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): MethodPathRegex = {
+      val __obj = js.Dynamic.literal(method = "PATCH", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodPathRegex]
     }
     
@@ -290,24 +282,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Mocks extends StObject {
     
-    var mocks: js.UndefOr[Default] = js.native
+    var mocks: js.UndefOr[Default] = js.undefined
     
-    var plugins: js.UndefOr[`0`] = js.native
+    var plugins: js.UndefOr[`0`] = js.undefined
     
     /**
       * Path to protractor configuration file.
       * Default: protractor-conf.js
       */
-    var protractorConfig: js.UndefOr[String] = js.native
+    var protractorConfig: js.UndefOr[String] = js.undefined
     
     /**
       * Mocks directory where mock files are located.
       * Default: process.cwd()
       */
-    var rootDirectory: js.UndefOr[String] = js.native
+    var rootDirectory: js.UndefOr[String] = js.undefined
   }
   object Mocks {
     
@@ -346,20 +337,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var method: POST = js.native
+    var method: POST
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object Path {
     
     @scala.inline
-    def apply(method: POST, path: String): Path = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): Path = {
+      val __obj = js.Dynamic.literal(method = "POST", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
@@ -380,20 +370,19 @@ object anon {
     }
   }
   
-  @js.native
   trait PathRegex extends StObject {
     
-    var method: PUT = js.native
+    var method: PUT
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object PathRegex {
     
     @scala.inline
-    def apply(method: PUT, path: String): PathRegex = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): PathRegex = {
+      val __obj = js.Dynamic.literal(method = "PUT", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathRegex]
     }
     
@@ -414,20 +403,19 @@ object anon {
     }
   }
   
-  @js.native
   trait PathString extends StObject {
     
-    var method: JSONP = js.native
+    var method: JSONP
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object PathString {
     
     @scala.inline
-    def apply(method: JSONP, path: String): PathString = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): PathString = {
+      val __obj = js.Dynamic.literal(method = "JSONP", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathString]
     }
     
@@ -448,20 +436,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Regex extends StObject {
     
-    var method: HEAD = js.native
+    var method: HEAD
     
-    var path: String = js.native
+    var path: String
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
   }
   object Regex {
     
     @scala.inline
-    def apply(method: HEAD, path: String): Regex = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): Regex = {
+      val __obj = js.Dynamic.literal(method = "HEAD", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Regex]
     }
     

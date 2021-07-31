@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.TextureParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("pc.KtxParser")
 @js.native
-class KtxParser () extends TextureParser
+class KtxParser ()
+  extends StObject
+     with TextureParser

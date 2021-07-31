@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploySystemInstanceResponse extends StObject {
   
   /**
     * The ID of the Greengrass deployment used to deploy the system instance.
     */
-  var greengrassDeploymentId: js.UndefOr[GreengrassDeploymentId] = js.native
+  var greengrassDeploymentId: js.UndefOr[GreengrassDeploymentId] = js.undefined
   
   /**
     * An object that contains summary information about a system instance that was deployed. 
     */
-  var summary: SystemInstanceSummary = js.native
+  var summary: SystemInstanceSummary
 }
 object DeploySystemInstanceResponse {
   

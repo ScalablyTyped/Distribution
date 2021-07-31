@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Symptom extends StObject {
   
   /** Timestamp when the Symptom is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Detailed information of the current Symptom. */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /** Type of the Symptom. */
-  var symptomType: js.UndefOr[String] = js.native
+  var symptomType: js.UndefOr[String] = js.undefined
   
   /** A string used to uniquely distinguish a worker within a TPU node. */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object Symptom {
   

@@ -4,39 +4,37 @@ import typings.foundation.JQuery
 import typings.foundation.anon.Close
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevealOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var animation_speed: js.UndefOr[Double] = js.native
+  var animation_speed: js.UndefOr[Double] = js.undefined
   
-  var bg: js.UndefOr[JQuery] = js.native
+  var bg: js.UndefOr[JQuery] = js.undefined
   
-  var bg_class: js.UndefOr[String] = js.native
+  var bg_class: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[js.Function0[_]] = js.native
+  var close: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var close_on_background_click: js.UndefOr[Boolean] = js.native
+  var close_on_background_click: js.UndefOr[Boolean] = js.undefined
   
-  var closed: js.UndefOr[js.Function0[_]] = js.native
+  var closed: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var css: js.UndefOr[Close] = js.native
+  var css: js.UndefOr[Close] = js.undefined
   
-  var dismiss_modal_class: js.UndefOr[String] = js.native
+  var dismiss_modal_class: js.UndefOr[String] = js.undefined
   
-  var multiple_opened: js.UndefOr[Boolean] = js.native
+  var multiple_opened: js.UndefOr[Boolean] = js.undefined
   
-  var on_ajax_error: js.UndefOr[js.Function0[_]] = js.native
+  var on_ajax_error: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var open: js.UndefOr[js.Function0[_]] = js.native
+  var open: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var opened: js.UndefOr[js.Function0[_]] = js.native
+  var opened: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var root_element: js.UndefOr[String] = js.native
+  var root_element: js.UndefOr[String] = js.undefined
 }
 object RevealOptions {
   
@@ -74,7 +72,7 @@ object RevealOptions {
     def setBg_classUndefined: Self = StObject.set(x, "bg_class", js.undefined)
     
     @scala.inline
-    def setClose(value: () => _): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
@@ -86,7 +84,7 @@ object RevealOptions {
     def setClose_on_background_clickUndefined: Self = StObject.set(x, "close_on_background_click", js.undefined)
     
     @scala.inline
-    def setClosed(value: () => _): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     @scala.inline
     def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
@@ -110,19 +108,19 @@ object RevealOptions {
     def setMultiple_openedUndefined: Self = StObject.set(x, "multiple_opened", js.undefined)
     
     @scala.inline
-    def setOn_ajax_error(value: () => _): Self = StObject.set(x, "on_ajax_error", js.Any.fromFunction0(value))
+    def setOn_ajax_error(value: () => js.Any): Self = StObject.set(x, "on_ajax_error", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOn_ajax_errorUndefined: Self = StObject.set(x, "on_ajax_error", js.undefined)
     
     @scala.inline
-    def setOpen(value: () => _): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    def setOpen(value: () => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def setOpened(value: () => _): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
+    def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)

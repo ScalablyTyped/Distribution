@@ -2,11 +2,12 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestScheduler extends VirtualTimeScheduler[Double, Double] {
+trait TestScheduler
+  extends StObject
+     with VirtualTimeScheduler[Double, Double] {
   
   /**
     * Creates a cold observable using the specified timestamped notification messages either as an array or arguments.

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MuxStream extends StObject {
   
   /** The container format. The default is `"mp4"` Supported container formats: - 'ts' - 'fmp4'- the corresponding file extension is `".m4s"` - 'mp4' - 'vtt' */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /** List of `ElementaryStream.key`s multiplexed in this stream. */
-  var elementaryStreams: js.UndefOr[js.Array[String]] = js.native
+  var elementaryStreams: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Encryption settings. */
-  var encryption: js.UndefOr[Encryption] = js.native
+  var encryption: js.UndefOr[Encryption] = js.undefined
   
   /**
     * The name of the generated file. The default is `MuxStream.key` with the extension suffix corresponding to the `MuxStream.container`. Individual segments also have an incremental
     * 10-digit zero-padded suffix starting from 0 before the extension, such as `"mux_stream0000000123.ts"`.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /** A unique key for this multiplexed stream. HLS media manifests will be named `MuxStream.key` with the `".m3u8"` extension suffix. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Segment settings for `"ts"`, `"fmp4"` and `"vtt"`. */
-  var segmentSettings: js.UndefOr[SegmentSettings] = js.native
+  var segmentSettings: js.UndefOr[SegmentSettings] = js.undefined
 }
 object MuxStream {
   

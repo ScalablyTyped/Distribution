@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentReferenceMod {
   
-  @js.native
   trait SegmentReference extends StObject {
     
     /**
       * A unique identifier for the segment.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * If specified contains a specific version of the segment included.
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object SegmentReference {
     

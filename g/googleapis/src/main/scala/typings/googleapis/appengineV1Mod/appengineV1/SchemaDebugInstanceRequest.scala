@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for Instances.DebugInstance.
   */
-@js.native
 trait SchemaDebugInstanceRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDebugInstanceRequest extends StObject {
     * more information, see Adding and Removing SSH Keys
     * (https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
     */
-  var sshKey: js.UndefOr[String] = js.native
+  var sshKey: js.UndefOr[String] = js.undefined
 }
 object SchemaDebugInstanceRequest {
   

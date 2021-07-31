@@ -2,14 +2,12 @@ package typings.tensorflowTfjsBackendCpu.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core.NamedTensorInfoMap, 'x'> */
-@js.native
 trait PickNamedTensorInfoMapx extends StObject {
   
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
 }
 object PickNamedTensorInfoMapx {
   

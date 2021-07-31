@@ -2,14 +2,12 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveRequestHeaderParams extends StObject {
   
   /** HTTP request header name (case-insensitive) */
-  var name: String = js.native
+  var name: String
 }
 object RemoveRequestHeaderParams {
   

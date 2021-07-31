@@ -2,25 +2,25 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IUuidGenerator extends IIdGenerator {
+trait IUuidGenerator
+  extends StObject
+     with IIdGenerator {
   
   /** [Method] Reconfigures this generator given new config properties
     * @param config Object
     */
-  var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+  var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Property] (Number/Object) */
-  var salt: js.UndefOr[js.Any] = js.native
+  var salt: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Number/Object) */
-  var timestamp: js.UndefOr[js.Any] = js.native
+  var timestamp: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object IUuidGenerator {
   

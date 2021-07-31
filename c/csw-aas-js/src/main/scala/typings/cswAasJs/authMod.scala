@@ -10,7 +10,6 @@ import typings.keycloakJs.mod.KeycloakRoles
 import typings.keycloakJs.mod.KeycloakTokenParsed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authMod {
@@ -46,7 +45,6 @@ object authMod {
   /**
     * Adapter for authentication and authorization service
     */
-  @js.native
   trait AuthStore extends StObject {
     
     /**
@@ -61,14 +59,14 @@ object authMod {
       * @return {{ keycloak, authenticated }} json which contains keycloak instance and authenticated which is promise after
       * initializing keycloak
       */
-    def authenticate(config: AuthContextConfig, url: String, redirect: Boolean): AuthenticateResult = js.native
+    def authenticate(config: AuthContextConfig, url: String, redirect: Boolean): AuthenticateResult
     
     /**
       * Create instance of TMTAuth from keycloak.
       *
       * @param keycloak keycloak instance instantiated using keyclok-js
       */
-    def from(keycloak: KeycloakInstance): Auth = js.native
+    def from(keycloak: KeycloakInstance): Auth
     
     /**
       * Responsible for resolving AAS Server using location service. If not found returns AAS-server-url specified in
@@ -76,7 +74,7 @@ object authMod {
       *
       * @return url string which is AAS server url
       */
-    def getAASUrl(): js.Promise[String] = js.native
+    def getAASUrl(): js.Promise[String]
   }
   object AuthStore {
     
@@ -104,12 +102,11 @@ object authMod {
     }
   }
   
-  @js.native
   trait AuthenticateResult extends StObject {
     
-    var authenticated: KeycloakPromise[Boolean, KeycloakError] = js.native
+    var authenticated: KeycloakPromise[Boolean, KeycloakError]
     
-    var keycloak: KeycloakInstance = js.native
+    var keycloak: KeycloakInstance
   }
   object AuthenticateResult {
     

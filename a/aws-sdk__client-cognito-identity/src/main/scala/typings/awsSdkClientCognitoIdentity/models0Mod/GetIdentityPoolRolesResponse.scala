@@ -3,16 +3,14 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityPoolRolesResponse extends StObject {
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>How users for a specific identity provider are to mapped to roles. This is a
@@ -20,13 +18,13 @@ trait GetIdentityPoolRolesResponse extends StObject {
     *          provider, for example, "graph.facebook.com" or
     *          "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p>
     */
-  var RoleMappings: js.UndefOr[StringDictionary[RoleMapping]] = js.native
+  var RoleMappings: js.UndefOr[StringDictionary[RoleMapping]] = js.undefined
   
   /**
     * <p>The map of roles associated with this pool. Currently only authenticated and
     *          unauthenticated roles are supported.</p>
     */
-  var Roles: js.UndefOr[StringDictionary[String]] = js.native
+  var Roles: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object GetIdentityPoolRolesResponse {
   
@@ -36,9 +34,12 @@ object GetIdentityPoolRolesResponse {
     __obj.asInstanceOf[GetIdentityPoolRolesResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdentityPoolRolesResponse.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdentityPoolRolesResponse")
   @js.native
-  def filterSensitiveLog(obj: GetIdentityPoolRolesResponse): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: GetIdentityPoolRolesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class GetIdentityPoolRolesResponseMutableBuilder[Self <: GetIdentityPoolRolesResponse] (val x: Self) extends AnyVal {

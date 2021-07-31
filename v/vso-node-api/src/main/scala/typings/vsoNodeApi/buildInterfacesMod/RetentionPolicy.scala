@@ -2,37 +2,35 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionPolicy extends StObject {
   
-  var artifactTypesToDelete: js.Array[String] = js.native
+  var artifactTypesToDelete: js.Array[String]
   
-  var artifacts: js.Array[String] = js.native
+  var artifacts: js.Array[String]
   
-  var branches: js.Array[String] = js.native
+  var branches: js.Array[String]
   
   /**
     * The number of days to keep builds.
     */
-  var daysToKeep: Double = js.native
+  var daysToKeep: Double
   
   /**
     * Indicates whether the build record itself should be deleted.
     */
-  var deleteBuildRecord: Boolean = js.native
+  var deleteBuildRecord: Boolean
   
   /**
     * Indicates whether to delete test results associated with the build.
     */
-  var deleteTestResults: Boolean = js.native
+  var deleteTestResults: Boolean
   
   /**
     * The minimum number of builds to keep.
     */
-  var minimumToKeep: Double = js.native
+  var minimumToKeep: Double
 }
 object RetentionPolicy {
   

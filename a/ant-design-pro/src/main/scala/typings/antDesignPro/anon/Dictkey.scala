@@ -3,17 +3,17 @@ package typings.antDesignPro.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictkey extends /* key */ StringDictionary[String] {
+trait Dictkey
+  extends StObject
+     with /* key */ StringDictionary[String] {
   
-  var clear: String = js.native
+  var clear: String
   
-  var emptyText: String = js.native
+  var emptyText: String
   
-  var viewMore: String = js.native
+  var viewMore: String
 }
 object Dictkey {
   

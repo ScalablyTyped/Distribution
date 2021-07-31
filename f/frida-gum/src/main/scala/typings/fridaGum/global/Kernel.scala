@@ -12,7 +12,6 @@ import typings.fridaGum.PageProtection
 import typings.fridaGum.UInt64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Kernel {
@@ -26,12 +25,10 @@ object Kernel {
     *
     * @param size Size of the allocation in bytes (will be rounded up to a multiple of the kernel's page size).
     */
-  @JSGlobal("Kernel.alloc")
-  @js.native
-  def alloc(size: Double): UInt64 = js.native
-  @JSGlobal("Kernel.alloc")
-  @js.native
-  def alloc(size: UInt64): UInt64 = js.native
+  @scala.inline
+  def alloc(size: Double): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[UInt64]
+  @scala.inline
+  def alloc(size: UInt64): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[UInt64]
   
   /**
     * Whether the Kernel API is available.
@@ -55,31 +52,26 @@ object Kernel {
     * @param name Name of the module, or `null` for the module of the kernel itself.
     * @param protection Include ranges with at least this protection.
     */
-  @JSGlobal("Kernel.enumerateModuleRanges")
-  @js.native
-  def enumerateModuleRanges(name: String, protection: PageProtection): js.Array[KernelModuleRangeDetails] = js.native
-  @JSGlobal("Kernel.enumerateModuleRanges")
-  @js.native
-  def enumerateModuleRanges(name: Null, protection: PageProtection): js.Array[KernelModuleRangeDetails] = js.native
+  @scala.inline
+  def enumerateModuleRanges(name: String, protection: PageProtection): js.Array[KernelModuleRangeDetails] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateModuleRanges")(name.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelModuleRangeDetails]]
+  @scala.inline
+  def enumerateModuleRanges(name: Null, protection: PageProtection): js.Array[KernelModuleRangeDetails] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateModuleRanges")(name.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelModuleRangeDetails]]
   
   /**
     * Enumerates kernel modules loaded right now.
     */
-  @JSGlobal("Kernel.enumerateModules")
-  @js.native
-  def enumerateModules(): js.Array[KernelModuleDetails] = js.native
+  @scala.inline
+  def enumerateModules(): js.Array[KernelModuleDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateModules")().asInstanceOf[js.Array[KernelModuleDetails]]
   
-  @JSGlobal("Kernel.enumerateRanges")
-  @js.native
-  def enumerateRanges(specifier: EnumerateRangesSpecifier): js.Array[KernelRangeDetails] = js.native
+  @scala.inline
+  def enumerateRanges(specifier: EnumerateRangesSpecifier): js.Array[KernelRangeDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateRanges")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Array[KernelRangeDetails]]
   /**
     * Enumerates all kernel memory ranges matching `specifier`.
     *
     * @param specifier The kind of ranges to include.
     */
-  @JSGlobal("Kernel.enumerateRanges")
-  @js.native
-  def enumerateRanges(specifier: PageProtection): js.Array[KernelRangeDetails] = js.native
+  @scala.inline
+  def enumerateRanges(specifier: PageProtection): js.Array[KernelRangeDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateRanges")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Array[KernelRangeDetails]]
   
   /**
     * Size of kernel page in bytes.
@@ -95,92 +87,70 @@ object Kernel {
     * @param size Number of bytes. Must be a multiple of Process#pageSize.
     * @param protection Desired page protection.
     */
-  @JSGlobal("Kernel.protect")
-  @js.native
-  def protect(address: UInt64, size: Double, protection: PageProtection): Boolean = js.native
-  @JSGlobal("Kernel.protect")
-  @js.native
-  def protect(address: UInt64, size: UInt64, protection: PageProtection): Boolean = js.native
+  @scala.inline
+  def protect(address: UInt64, size: Double, protection: PageProtection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("protect")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def protect(address: UInt64, size: UInt64, protection: PageProtection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("protect")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("Kernel.readByteArray")
-  @js.native
-  def readByteArray(address: UInt64, length: Double): ArrayBuffer | Null = js.native
+  @scala.inline
+  def readByteArray(address: UInt64, length: Double): ArrayBuffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readByteArray")(address.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer | Null]
   
-  @JSGlobal("Kernel.readCString")
-  @js.native
-  def readCString(address: UInt64, size: Double): String | Null = js.native
+  @scala.inline
+  def readCString(address: UInt64, size: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readCString")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSGlobal("Kernel.readDouble")
-  @js.native
-  def readDouble(address: UInt64): Double = js.native
+  @scala.inline
+  def readDouble(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readDouble")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readFloat")
-  @js.native
-  def readFloat(address: UInt64): Double = js.native
+  @scala.inline
+  def readFloat(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readFloat")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readInt")
-  @js.native
-  def readInt(address: UInt64): Double = js.native
+  @scala.inline
+  def readInt(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readInt")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readLong")
-  @js.native
-  def readLong(address: UInt64): Double | Int64 = js.native
+  @scala.inline
+  def readLong(address: UInt64): Double | Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("readLong")(address.asInstanceOf[js.Any]).asInstanceOf[Double | Int64]
   
-  @JSGlobal("Kernel.readS16")
-  @js.native
-  def readS16(address: UInt64): Double = js.native
+  @scala.inline
+  def readS16(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readS16")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readS32")
-  @js.native
-  def readS32(address: UInt64): Double = js.native
+  @scala.inline
+  def readS32(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readS32")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readS64")
-  @js.native
-  def readS64(address: UInt64): Int64 = js.native
+  @scala.inline
+  def readS64(address: UInt64): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("readS64")(address.asInstanceOf[js.Any]).asInstanceOf[Int64]
   
-  @JSGlobal("Kernel.readS8")
-  @js.native
-  def readS8(address: UInt64): Double = js.native
+  @scala.inline
+  def readS8(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readS8")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readShort")
-  @js.native
-  def readShort(address: UInt64): Double = js.native
+  @scala.inline
+  def readShort(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readShort")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readU16")
-  @js.native
-  def readU16(address: UInt64): Double = js.native
+  @scala.inline
+  def readU16(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readU16")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readU32")
-  @js.native
-  def readU32(address: UInt64): Double = js.native
+  @scala.inline
+  def readU32(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readU32")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readU64")
-  @js.native
-  def readU64(address: UInt64): UInt64 = js.native
+  @scala.inline
+  def readU64(address: UInt64): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("readU64")(address.asInstanceOf[js.Any]).asInstanceOf[UInt64]
   
-  @JSGlobal("Kernel.readU8")
-  @js.native
-  def readU8(address: UInt64): Double = js.native
+  @scala.inline
+  def readU8(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readU8")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readUInt")
-  @js.native
-  def readUInt(address: UInt64): Double = js.native
+  @scala.inline
+  def readUInt(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readUInt")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readULong")
-  @js.native
-  def readULong(address: UInt64): Double | UInt64 = js.native
+  @scala.inline
+  def readULong(address: UInt64): Double | UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("readULong")(address.asInstanceOf[js.Any]).asInstanceOf[Double | UInt64]
   
-  @JSGlobal("Kernel.readUShort")
-  @js.native
-  def readUShort(address: UInt64): Double = js.native
+  @scala.inline
+  def readUShort(address: UInt64): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("readUShort")(address.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("Kernel.readUtf16String")
-  @js.native
-  def readUtf16String(address: UInt64, length: Double): String | Null = js.native
+  @scala.inline
+  def readUtf16String(address: UInt64, length: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readUtf16String")(address.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSGlobal("Kernel.readUtf8String")
-  @js.native
-  def readUtf8String(address: UInt64, size: Double): String | Null = js.native
+  @scala.inline
+  def readUtf8String(address: UInt64, size: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readUtf8String")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   /**
     * Scans kernel memory for occurences of `pattern` in the memory range given by `address` and `size`.
@@ -196,12 +166,10 @@ object Kernel {
     *                which gets translated into masks behind the scenes.
     * @param callbacks Object with callbacks.
     */
-  @JSGlobal("Kernel.scan")
-  @js.native
-  def scan(address: UInt64, size: Double, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = js.native
-  @JSGlobal("Kernel.scan")
-  @js.native
-  def scan(address: UInt64, size: UInt64, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = js.native
+  @scala.inline
+  def scan(address: UInt64, size: Double, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scan(address: UInt64, size: UInt64, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `scan()`.
@@ -210,131 +178,95 @@ object Kernel {
     * @param size Number of bytes to scan.
     * @param pattern Match pattern, see `Memory.scan()` for details.
     */
-  @JSGlobal("Kernel.scanSync")
-  @js.native
-  def scanSync(address: UInt64, size: Double, pattern: String): js.Array[KernelMemoryScanMatch] = js.native
-  @JSGlobal("Kernel.scanSync")
-  @js.native
-  def scanSync(address: UInt64, size: UInt64, pattern: String): js.Array[KernelMemoryScanMatch] = js.native
+  @scala.inline
+  def scanSync(address: UInt64, size: Double, pattern: String): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
+  @scala.inline
+  def scanSync(address: UInt64, size: UInt64, pattern: String): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
   
-  @JSGlobal("Kernel.writeByteArray")
-  @js.native
-  def writeByteArray(address: UInt64, value: js.Array[Double]): Unit = js.native
-  @JSGlobal("Kernel.writeByteArray")
-  @js.native
-  def writeByteArray(address: UInt64, value: ArrayBuffer): Unit = js.native
+  @scala.inline
+  def writeByteArray(address: UInt64, value: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeByteArray")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeByteArray(address: UInt64, value: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeByteArray")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeDouble")
-  @js.native
-  def writeDouble(address: UInt64, value: Double): Unit = js.native
+  @scala.inline
+  def writeDouble(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDouble")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeFloat")
-  @js.native
-  def writeFloat(address: UInt64, value: Double): Unit = js.native
+  @scala.inline
+  def writeFloat(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFloat")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeInt")
-  @js.native
-  def writeInt(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeInt")
-  @js.native
-  def writeInt(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeInt(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeInt(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeLong")
-  @js.native
-  def writeLong(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeLong")
-  @js.native
-  def writeLong(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeLong(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLong")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeLong(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLong")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeS16")
-  @js.native
-  def writeS16(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeS16")
-  @js.native
-  def writeS16(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeS16(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS16")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeS16(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS16")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeS32")
-  @js.native
-  def writeS32(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeS32")
-  @js.native
-  def writeS32(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeS32(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS32")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeS32(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS32")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeS64")
-  @js.native
-  def writeS64(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeS64")
-  @js.native
-  def writeS64(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeS64(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS64")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeS64(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS64")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeS8")
-  @js.native
-  def writeS8(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeS8")
-  @js.native
-  def writeS8(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeS8(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS8")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeS8(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeS8")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeShort")
-  @js.native
-  def writeShort(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeShort")
-  @js.native
-  def writeShort(address: UInt64, value: Int64): Unit = js.native
+  @scala.inline
+  def writeShort(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeShort")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeShort(address: UInt64, value: Int64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeShort")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeU16")
-  @js.native
-  def writeU16(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeU16")
-  @js.native
-  def writeU16(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeU16(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU16")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeU16(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU16")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeU32")
-  @js.native
-  def writeU32(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeU32")
-  @js.native
-  def writeU32(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeU32(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU32")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeU32(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU32")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeU64")
-  @js.native
-  def writeU64(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeU64")
-  @js.native
-  def writeU64(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeU64(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU64")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeU64(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU64")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeU8")
-  @js.native
-  def writeU8(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeU8")
-  @js.native
-  def writeU8(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeU8(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU8")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeU8(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeU8")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeUInt")
-  @js.native
-  def writeUInt(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeUInt")
-  @js.native
-  def writeUInt(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeUInt(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeUInt(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeULong")
-  @js.native
-  def writeULong(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeULong")
-  @js.native
-  def writeULong(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeULong(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeULong")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeULong(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeULong")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeUShort")
-  @js.native
-  def writeUShort(address: UInt64, value: Double): Unit = js.native
-  @JSGlobal("Kernel.writeUShort")
-  @js.native
-  def writeUShort(address: UInt64, value: UInt64): Unit = js.native
+  @scala.inline
+  def writeUShort(address: UInt64, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUShort")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeUShort(address: UInt64, value: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUShort")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeUtf16String")
-  @js.native
-  def writeUtf16String(address: UInt64, value: String): Unit = js.native
+  @scala.inline
+  def writeUtf16String(address: UInt64, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUtf16String")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Kernel.writeUtf8String")
-  @js.native
-  def writeUtf8String(address: UInt64, value: String): Unit = js.native
+  @scala.inline
+  def writeUtf8String(address: UInt64, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUtf8String")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

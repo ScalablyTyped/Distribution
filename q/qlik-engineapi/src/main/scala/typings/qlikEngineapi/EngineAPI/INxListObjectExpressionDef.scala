@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxListObjectExpressionDef...
   */
-@js.native
 trait INxListObjectExpressionDef extends StObject {
   
   /**
     * Value of the expression
     */
-  var qExpr: String = js.native
+  var qExpr: String
   
   /**
     * Refers to an expression stored in the library.
     */
-  var qLibraryId: String = js.native
+  var qLibraryId: String
 }
 object INxListObjectExpressionDef {
   

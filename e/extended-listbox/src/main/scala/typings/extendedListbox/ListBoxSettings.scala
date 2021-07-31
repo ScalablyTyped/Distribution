@@ -2,38 +2,36 @@ package typings.extendedListbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxSettings extends StObject {
   
   /** function which returns a array of items */
-  var getItems: js.UndefOr[js.Function0[js.Array[String | ListBoxItem]]] = js.native
+  var getItems: js.UndefOr[js.Function0[js.Array[String | ListBoxItem]]] = js.undefined
   
   /** callback for searchBar text changes */
-  var onFilterChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.native
+  var onFilterChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
   
   /** callback for doubleClick event on an item */
-  var onItemDoubleClicked: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.native
+  var onItemDoubleClicked: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
   
   /** callback for enter keyPress event on an item */
-  var onItemEnterPressed: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.native
+  var onItemEnterPressed: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
   
   /** callback for item changes (item added, item removed, item order) */
-  var onItemsChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.native
+  var onItemsChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
   
   /** callback for selection changes */
-  var onValueChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.native
+  var onValueChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
   
   /** determines if the searchBar is visible */
-  var searchBar: js.UndefOr[Boolean] = js.native
+  var searchBar: js.UndefOr[Boolean] = js.undefined
   
   /** settings for the searchBar button */
-  var searchBarButton: js.UndefOr[ListBoxSearchBarButtonOptions] = js.native
+  var searchBarButton: js.UndefOr[ListBoxSearchBarButtonOptions] = js.undefined
   
   /** watermark (placeholder) for the searchBar */
-  var searchBarWatermark: js.UndefOr[String] = js.native
+  var searchBarWatermark: js.UndefOr[String] = js.undefined
 }
 object ListBoxSettings {
   

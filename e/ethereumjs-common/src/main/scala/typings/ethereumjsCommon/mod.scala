@@ -3,14 +3,15 @@ package typings.ethereumjsCommon
 import typings.ethereumjsCommon.anon.PartialChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ethereumjs-common", JSImport.Default)
   @js.native
-  class default protected () extends Common {
+  class default protected ()
+    extends StObject
+       with Common {
     /**
       * @constructor
       * @param chain String ('mainnet') or Number (1) chain
@@ -23,15 +24,15 @@ object mod {
     def this(chain: String, hardfork: String) = this()
     def this(chain: js.Object, hardfork: String) = this()
     def this(chain: Double, hardfork: String) = this()
-    def this(chain: String, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
     def this(chain: String, hardfork: String, supportedHardforks: js.Array[String]) = this()
     def this(chain: String, hardfork: Null, supportedHardforks: js.Array[String]) = this()
-    def this(chain: js.Object, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
+    def this(chain: String, hardfork: Unit, supportedHardforks: js.Array[String]) = this()
     def this(chain: js.Object, hardfork: String, supportedHardforks: js.Array[String]) = this()
     def this(chain: js.Object, hardfork: Null, supportedHardforks: js.Array[String]) = this()
-    def this(chain: Double, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
+    def this(chain: js.Object, hardfork: Unit, supportedHardforks: js.Array[String]) = this()
     def this(chain: Double, hardfork: String, supportedHardforks: js.Array[String]) = this()
     def this(chain: Double, hardfork: Null, supportedHardforks: js.Array[String]) = this()
+    def this(chain: Double, hardfork: Unit, supportedHardforks: js.Array[String]) = this()
   }
   /* static members */
   object default {
@@ -56,66 +57,56 @@ object mod {
       * @param hardfork String identifier ('byzantium') for hardfork (optional)
       * @param supportedHardforks Limit parameter returns to the given hardforks (optional)
       */
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
-    def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
-    def forCustomChain(
-      baseChain: String,
-      customChainParams: PartialChain,
-      hardfork: js.UndefOr[scala.Nothing],
-      supportedHardforks: js.Array[String]
-    ): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
-    def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
+    @scala.inline
+    def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
+    def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
     def forCustomChain(
       baseChain: String,
       customChainParams: PartialChain,
       hardfork: String,
       supportedHardforks: js.Array[String]
-    ): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
     def forCustomChain(
       baseChain: String,
       customChainParams: PartialChain,
       hardfork: Null,
       supportedHardforks: js.Array[String]
-    ): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
-    def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
     def forCustomChain(
-      baseChain: Double,
+      baseChain: String,
       customChainParams: PartialChain,
-      hardfork: js.UndefOr[scala.Nothing],
+      hardfork: Unit,
       supportedHardforks: js.Array[String]
-    ): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
-    def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
+    def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
+    def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
     def forCustomChain(
       baseChain: Double,
       customChainParams: PartialChain,
       hardfork: String,
       supportedHardforks: js.Array[String]
-    ): Common = js.native
-    @JSImport("ethereumjs-common", "default.forCustomChain")
-    @js.native
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
     def forCustomChain(
       baseChain: Double,
       customChainParams: PartialChain,
       hardfork: Null,
       supportedHardforks: js.Array[String]
-    ): Common = js.native
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
+    @scala.inline
+    def forCustomChain(
+      baseChain: Double,
+      customChainParams: PartialChain,
+      hardfork: Unit,
+      supportedHardforks: js.Array[String]
+    ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
   }
   
   @js.native
@@ -129,10 +120,10 @@ object mod {
       * @returns Hardfork chosen to be used
       */
     def _chooseHardfork(): String = js.native
-    def _chooseHardfork(hardfork: js.UndefOr[scala.Nothing], onlySupported: Boolean): String = js.native
     def _chooseHardfork(hardfork: String): String = js.native
     def _chooseHardfork(hardfork: String, onlySupported: Boolean): String = js.native
     def _chooseHardfork(hardfork: Null, onlySupported: Boolean): String = js.native
+    def _chooseHardfork(hardfork: Unit, onlySupported: Boolean): String = js.native
     
     /**
       * Internal helper function, returns the params for the given hardfork for the chain set
@@ -160,10 +151,10 @@ object mod {
       * @return Hardfork name
       */
     def activeHardfork(): String = js.native
-    def activeHardfork(blockNumber: js.UndefOr[scala.Nothing], opts: hardforkOptions): String = js.native
     def activeHardfork(blockNumber: Double): String = js.native
     def activeHardfork(blockNumber: Double, opts: hardforkOptions): String = js.native
     def activeHardfork(blockNumber: Null, opts: hardforkOptions): String = js.native
+    def activeHardfork(blockNumber: Unit, opts: hardforkOptions): String = js.native
     
     /**
       * Returns the active hardfork switches for the current chain
@@ -171,11 +162,11 @@ object mod {
       * @param opts Hardfork options (onlyActive unused)
       * @return Array with hardfork arrays
       */
-    def activeHardforks(): js.Array[_] = js.native
-    def activeHardforks(blockNumber: js.UndefOr[scala.Nothing], opts: hardforkOptions): js.Array[_] = js.native
-    def activeHardforks(blockNumber: Double): js.Array[_] = js.native
-    def activeHardforks(blockNumber: Double, opts: hardforkOptions): js.Array[_] = js.native
-    def activeHardforks(blockNumber: Null, opts: hardforkOptions): js.Array[_] = js.native
+    def activeHardforks(): js.Array[js.Any] = js.native
+    def activeHardforks(blockNumber: Double): js.Array[js.Any] = js.native
+    def activeHardforks(blockNumber: Double, opts: hardforkOptions): js.Array[js.Any] = js.native
+    def activeHardforks(blockNumber: Null, opts: hardforkOptions): js.Array[js.Any] = js.native
+    def activeHardforks(blockNumber: Unit, opts: hardforkOptions): js.Array[js.Any] = js.native
     
     /**
       * Alias to hardforkIsActiveOnBlock when hardfork is set
@@ -280,10 +271,10 @@ object mod {
       * @returns True if hardfork is active on the chain
       */
     def hardforkIsActiveOnChain(): Boolean = js.native
-    def hardforkIsActiveOnChain(hardfork: js.UndefOr[scala.Nothing], opts: hardforkOptions): Boolean = js.native
     def hardforkIsActiveOnChain(hardfork: String): Boolean = js.native
     def hardforkIsActiveOnChain(hardfork: String, opts: hardforkOptions): Boolean = js.native
     def hardforkIsActiveOnChain(hardfork: Null, opts: hardforkOptions): Boolean = js.native
+    def hardforkIsActiveOnChain(hardfork: Unit, opts: hardforkOptions): Boolean = js.native
     
     /**
       * Returns the hardforks for current chain
@@ -341,14 +332,13 @@ object mod {
     def setHardfork(hardfork: String): Unit = js.native
   }
   
-  @js.native
   trait hardforkOptions extends StObject {
     
     /** optional, only active HFs (default: false) */
-    var onlyActive: js.UndefOr[Boolean] = js.native
+    var onlyActive: js.UndefOr[Boolean] = js.undefined
     
     /** optional, only allow supported HFs (default: false) */
-    var onlySupported: js.UndefOr[Boolean] = js.native
+    var onlySupported: js.UndefOr[Boolean] = js.undefined
   }
   object hardforkOptions {
     

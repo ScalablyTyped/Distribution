@@ -4,25 +4,23 @@ import typings.tuyaPanelKit.anon.Arrow
 import typings.tuyaPanelKit.anon.CellBg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionDataProps extends StObject {
   
-  var data: js.UndefOr[js.Array[Arrow]] = js.native
+  var data: js.UndefOr[js.Array[Arrow]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var footer: js.UndefOr[js.Any] = js.native
+  var footer: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[CellBg] = js.native
+  var theme: js.UndefOr[CellBg] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double | Boolean] = js.native
+  var value: js.UndefOr[String | Double | Boolean] = js.undefined
 }
 object SectionDataProps {
   

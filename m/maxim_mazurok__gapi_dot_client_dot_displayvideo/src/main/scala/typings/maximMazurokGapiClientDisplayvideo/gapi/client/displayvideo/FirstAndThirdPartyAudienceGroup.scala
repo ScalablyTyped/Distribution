@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstAndThirdPartyAudienceGroup extends StObject {
   
   /** Required. All first and third party audience targeting settings in first and third party audience group. Repeated settings with same id are not allowed. */
-  var settings: js.UndefOr[js.Array[FirstAndThirdPartyAudienceTargetingSetting]] = js.native
+  var settings: js.UndefOr[js.Array[FirstAndThirdPartyAudienceTargetingSetting]] = js.undefined
 }
 object FirstAndThirdPartyAudienceGroup {
   

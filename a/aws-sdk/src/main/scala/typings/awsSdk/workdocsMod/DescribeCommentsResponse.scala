@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCommentsResponse extends StObject {
   
   /**
     * The list of comments for the specified document version.
     */
-  var Comments: js.UndefOr[CommentList] = js.native
+  var Comments: js.UndefOr[CommentList] = js.undefined
   
   /**
     * The marker for the next set of results. This marker was received from a previous call.
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
 }
 object DescribeCommentsResponse {
   

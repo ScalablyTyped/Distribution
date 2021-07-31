@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gets a command to invoke the Export Range dialog to start a mail merge.
   */
-@js.native
-trait MailMergeDialogCommand extends CommandWithSimpleStateBase {
+trait MailMergeDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the MailMergeDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object MailMergeDialogCommand {
   

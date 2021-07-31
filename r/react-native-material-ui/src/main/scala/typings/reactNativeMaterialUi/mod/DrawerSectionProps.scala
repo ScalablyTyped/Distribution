@@ -3,19 +3,17 @@ package typings.reactNativeMaterialUi.mod
 import typings.reactNativeMaterialUi.anon.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerSectionProps extends StObject {
   
-  var divider: js.UndefOr[Boolean] = js.native
+  var divider: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.Array[DrawerSectionItem] = js.native
+  var items: js.Array[DrawerSectionItem]
   
-  var style: js.UndefOr[Item] = js.native
+  var style: js.UndefOr[Item] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DrawerSectionProps {
   

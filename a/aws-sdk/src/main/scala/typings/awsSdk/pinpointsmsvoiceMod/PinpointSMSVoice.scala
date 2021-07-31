@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PinpointSMSVoice extends Service {
   
   @JSName("config")
-  var config_PinpointSMSVoice: ConfigBase with ClientConfiguration = js.native
+  var config_PinpointSMSVoice: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Create a new configuration set. After you create the configuration set, you can add one or more event destinations to it.

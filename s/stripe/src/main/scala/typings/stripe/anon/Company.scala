@@ -2,15 +2,13 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Company extends StObject {
   
-  var company: Additional = js.native
+  var company: Additional
   
-  var individual: Additional = js.native
+  var individual: Additional
 }
 object Company {
   

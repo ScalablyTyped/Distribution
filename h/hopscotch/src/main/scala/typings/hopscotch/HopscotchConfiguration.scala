@@ -3,49 +3,47 @@ package typings.hopscotch
 import typings.hopscotch.anon.CloseTooltip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HopscotchConfiguration extends StObject {
   
-  var arrowWidth: js.UndefOr[Double] = js.native
+  var arrowWidth: js.UndefOr[Double] = js.undefined
   
-  var bubbleWidth: js.UndefOr[Double] = js.native
+  var bubbleWidth: js.UndefOr[Double] = js.undefined
   
-  var buddleHeight: js.UndefOr[Double] = js.native
+  var buddleHeight: js.UndefOr[Double] = js.undefined
   
-  var i18n: js.UndefOr[CloseTooltip] = js.native
+  var i18n: js.UndefOr[CloseTooltip] = js.undefined
   
-  var nextOnTargetClick: js.UndefOr[Boolean] = js.native
+  var nextOnTargetClick: js.UndefOr[Boolean] = js.undefined
   
-  var onClose: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onClose: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onEnd: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onEnd: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onError: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onError: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onNext: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onNext: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onPrev: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onPrev: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onShow: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onShow: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var onStart: js.UndefOr[CallbackNameNamesOrDefinition] = js.native
+  var onStart: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   
-  var scrollDuration: js.UndefOr[Double] = js.native
+  var scrollDuration: js.UndefOr[Double] = js.undefined
   
-  var scrollTopMargin: js.UndefOr[Double] = js.native
+  var scrollTopMargin: js.UndefOr[Double] = js.undefined
   
-  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
   
-  var showNextButton: js.UndefOr[Boolean] = js.native
+  var showNextButton: js.UndefOr[Boolean] = js.undefined
   
-  var showPrevButton: js.UndefOr[Boolean] = js.native
+  var showPrevButton: js.UndefOr[Boolean] = js.undefined
   
-  var skipIfNoElement: js.UndefOr[Boolean] = js.native
+  var skipIfNoElement: js.UndefOr[Boolean] = js.undefined
   
-  var smoothScroll: js.UndefOr[Boolean] = js.native
+  var smoothScroll: js.UndefOr[Boolean] = js.undefined
 }
 object HopscotchConfiguration {
   

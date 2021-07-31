@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.anon.Cells
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,18 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rowCount increases.
   */
 @js.native
-trait TableBinding extends Binding {
+trait TableBinding
+  extends StObject
+     with Binding {
   
-  def addColumnsAsync(tableData: js.Array[js.Array[_]]): Unit = js.native
-  def addColumnsAsync(tableData: js.Array[js.Array[_]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addColumnsAsync(tableData: js.Array[js.Array[js.Any]]): Unit = js.native
   def addColumnsAsync(
-    tableData: js.Array[js.Array[_]],
-    options: js.UndefOr[scala.Nothing],
+    tableData: js.Array[js.Array[js.Any]],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addColumnsAsync(tableData: js.Array[js.Array[_]], options: AsyncContextOptions): Unit = js.native
   def addColumnsAsync(
-    tableData: js.Array[js.Array[_]],
+    tableData: js.Array[js.Array[js.Any]],
+    options: Unit,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addColumnsAsync(tableData: js.Array[js.Array[js.Any]], options: AsyncContextOptions): Unit = js.native
+  def addColumnsAsync(
+    tableData: js.Array[js.Array[js.Any]],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -61,11 +65,7 @@ trait TableBinding extends Binding {
     */
   def addColumnsAsync(tableData: TableData): Unit = js.native
   def addColumnsAsync(tableData: TableData, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def addColumnsAsync(
-    tableData: TableData,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def addColumnsAsync(tableData: TableData, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addColumnsAsync(tableData: TableData, options: AsyncContextOptions): Unit = js.native
   def addColumnsAsync(
     tableData: TableData,
@@ -73,16 +73,16 @@ trait TableBinding extends Binding {
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   
-  def addRowsAsync(rows: js.Array[js.Array[_]]): Unit = js.native
-  def addRowsAsync(rows: js.Array[js.Array[_]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[js.Any]]): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[js.Any]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addRowsAsync(
-    rows: js.Array[js.Array[_]],
-    options: js.UndefOr[scala.Nothing],
+    rows: js.Array[js.Array[js.Any]],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addRowsAsync(rows: js.Array[js.Array[_]], options: AsyncContextOptions): Unit = js.native
+  def addRowsAsync(rows: js.Array[js.Array[js.Any]], options: AsyncContextOptions): Unit = js.native
   def addRowsAsync(
-    rows: js.Array[js.Array[_]],
+    rows: js.Array[js.Array[js.Any]],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -111,11 +111,7 @@ trait TableBinding extends Binding {
     */
   def addRowsAsync(rows: TableData): Unit = js.native
   def addRowsAsync(rows: TableData, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def addRowsAsync(
-    rows: TableData,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def addRowsAsync(rows: TableData, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addRowsAsync(rows: TableData, options: AsyncContextOptions): Unit = js.native
   def addRowsAsync(
     rows: TableData,
@@ -135,7 +131,7 @@ trait TableBinding extends Binding {
     */
   def clearFormatsAsync(): Unit = js.native
   def clearFormatsAsync(callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def clearFormatsAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def clearFormatsAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def clearFormatsAsync(options: AsyncContextOptions): Unit = js.native
   def clearFormatsAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   
@@ -156,7 +152,7 @@ trait TableBinding extends Binding {
     */
   def deleteAllDataValuesAsync(): Unit = js.native
   def deleteAllDataValuesAsync(callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def deleteAllDataValuesAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def deleteAllDataValuesAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def deleteAllDataValuesAsync(options: AsyncContextOptions): Unit = js.native
   def deleteAllDataValuesAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   
@@ -214,82 +210,78 @@ trait TableBinding extends Binding {
     *                  The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
     */
   def getFormatsAsync(): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.UndefOr[scala.Nothing],
-    options: AsyncContextOptions
-  ): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.UndefOr[scala.Nothing],
-    options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
-  def getFormatsAsync(cellReference: js.UndefOr[scala.Nothing], formats: js.Array[_]): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.Array[_],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
-  def getFormatsAsync(cellReference: js.UndefOr[scala.Nothing], formats: js.Array[_], options: AsyncContextOptions): Unit = js.native
-  def getFormatsAsync(
-    cellReference: js.UndefOr[scala.Nothing],
-    formats: js.Array[_],
-    options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
-  ): Unit = js.native
   def getFormatsAsync(cellReference: js.Any): Unit = js.native
+  def getFormatsAsync(cellReference: js.Any, formats: js.Array[js.Any]): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.UndefOr[scala.Nothing],
+    formats: js.Array[js.Any],
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
+    formats: js.Array[js.Any],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: js.UndefOr[scala.Nothing], options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(cellReference: js.Any, formats: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.UndefOr[scala.Nothing],
+    formats: js.Array[js.Any],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: js.Array[_]): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.Array[_],
+    formats: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
+    formats: Unit,
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
-  def getFormatsAsync(cellReference: js.Any, formats: js.Array[_], options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(cellReference: js.Any, formats: Unit, options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
-    formats: js.Array[_],
+    formats: Unit,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(cellReference: Unit, formats: js.Array[js.Any]): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: js.Array[js.Any],
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: js.Array[js.Any],
+    options: Unit,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(cellReference: Unit, formats: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: js.Array[js.Any],
+    options: AsyncContextOptions,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: Unit,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: Unit,
+    options: Unit,
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
+  ): Unit = js.native
+  def getFormatsAsync(cellReference: Unit, formats: Unit, options: AsyncContextOptions): Unit = js.native
+  def getFormatsAsync(
+    cellReference: Unit,
+    formats: Unit,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
@@ -416,16 +408,16 @@ trait TableBinding extends Binding {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
-  def setFormatsAsync(cellFormat: js.Array[_]): Unit = js.native
-  def setFormatsAsync(cellFormat: js.Array[_], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[js.Any]): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[js.Any], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setFormatsAsync(
-    cellFormat: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
+    cellFormat: js.Array[js.Any],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setFormatsAsync(cellFormat: js.Array[_], options: AsyncContextOptions): Unit = js.native
+  def setFormatsAsync(cellFormat: js.Array[js.Any], options: AsyncContextOptions): Unit = js.native
   def setFormatsAsync(
-    cellFormat: js.Array[_],
+    cellFormat: js.Array[js.Any],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -469,11 +461,7 @@ trait TableBinding extends Binding {
     */
   def setTableOptionsAsync(tableOptions: js.Any): Unit = js.native
   def setTableOptionsAsync(tableOptions: js.Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setTableOptionsAsync(
-    tableOptions: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setTableOptionsAsync(tableOptions: js.Any, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setTableOptionsAsync(tableOptions: js.Any, options: AsyncContextOptions): Unit = js.native
   def setTableOptionsAsync(
     tableOptions: js.Any,

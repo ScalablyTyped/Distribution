@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageRequest extends StObject {
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction the page image is rotated. The possible settings are: left or right
     */
-  var rotate: js.UndefOr[String] = js.native
+  var rotate: js.UndefOr[String] = js.undefined
 }
 object PageRequest {
   

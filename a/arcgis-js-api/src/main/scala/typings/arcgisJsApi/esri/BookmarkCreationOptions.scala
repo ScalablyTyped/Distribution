@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BookmarkCreationOptions extends Object {
+trait BookmarkCreationOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether the extent of the current view will become the [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#extent) of a newly created bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var captureExtent: js.UndefOr[Boolean] = js.native
+  var captureExtent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * _Since 4.17_ Indicates whether the rotation of the current view will be saved in the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint) of a newly created bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var captureRotation: js.UndefOr[Boolean] = js.native
+  var captureRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * _Since 4.17_ Indicates whether the scale of the current view will be saved in the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint) of a newly created bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var captureScale: js.UndefOr[Boolean] = js.native
+  var captureScale: js.UndefOr[Boolean] = js.undefined
   
   /**
     * _Since 4.17_ Indicates whether the viewpoint of the current view will become the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint) of a newly created bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var captureViewpoint: js.UndefOr[Boolean] = js.native
+  var captureViewpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object that specifies the settings of the screenshot that will be used to create the bookmark's [thumbnail](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var screenshotSettings: js.UndefOr[BookmarkCreationOptionsScreenshotSettings] = js.native
+  var screenshotSettings: js.UndefOr[BookmarkCreationOptionsScreenshotSettings] = js.undefined
   
   /**
     * Indicates whether a screenshot is taken when a new bookmark is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var takeScreenshot: js.UndefOr[Boolean] = js.native
+  var takeScreenshot: js.UndefOr[Boolean] = js.undefined
 }
 object BookmarkCreationOptions {
   

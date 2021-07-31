@@ -5,27 +5,27 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageRendition extends ClientValueObject {
+trait ImageRendition
+  extends StObject
+     with ClientValueObject {
   
-  def get_height(): Double = js.native
+  def get_height(): Double
   
-  def get_id(): Double = js.native
+  def get_id(): Double
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def get_version(): Double = js.native
+  def get_version(): Double
   
-  def get_width(): Double = js.native
+  def get_width(): Double
   
-  def set_height(value: Double): Double = js.native
+  def set_height(value: Double): Double
   
-  def set_name(value: String): String = js.native
+  def set_name(value: String): String
   
-  def set_width(value: Double): Double = js.native
+  def set_width(value: Double): Double
 }
 object ImageRendition {
   

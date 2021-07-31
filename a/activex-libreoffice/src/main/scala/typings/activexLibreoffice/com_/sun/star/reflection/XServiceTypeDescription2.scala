@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,38 +13,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type supersedes {@link XServiceTypeDescription} , which only supports obsolete, accumulation-based services.
   * @since OOo 2.0
   */
-@js.native
-trait XServiceTypeDescription2 extends XServiceTypeDescription {
+trait XServiceTypeDescription2
+  extends StObject
+     with XServiceTypeDescription {
   
   /**
     * Returns the constructors of the service.
     * @returns the reflections of all constructors of the service, in no particular order
     */
-  val Constructors: SafeArray[XServiceConstructorDescription] = js.native
+  val Constructors: SafeArray[XServiceConstructorDescription]
   
   /**
     * Returns the interface type associated with the service.
     * @returns the reflection of the interface type associated with the service (of type {@link com.sun.star.reflection.XInterfaceTypeDescription} or, in case o
     */
-  val Interface: XTypeDescription = js.native
+  val Interface: XTypeDescription
   
   /**
     * Returns the constructors of the service.
     * @returns the reflections of all constructors of the service, in no particular order
     */
-  def getConstructors(): SafeArray[XServiceConstructorDescription] = js.native
+  def getConstructors(): SafeArray[XServiceConstructorDescription]
   
   /**
     * Returns the interface type associated with the service.
     * @returns the reflection of the interface type associated with the service (of type {@link com.sun.star.reflection.XInterfaceTypeDescription} or, in case o
     */
-  def getInterface(): XTypeDescription = js.native
+  def getInterface(): XTypeDescription
   
   /**
     * Returns whether this object reflects a single-interface  -  based service.
     * @returns `TRUE` if this object reflects a single-interface  -  based service, and `FALSE` if this object reflects an obsolete, accumulation-based service
     */
-  def isSingleInterfaceBased(): Boolean = js.native
+  def isSingleInterfaceBased(): Boolean
 }
 object XServiceTypeDescription2 {
   

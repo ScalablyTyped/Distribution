@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data will persist when the DICOM store from which it was exported is
   * deleted.
   */
-@js.native
 trait SchemaExportDicomDataRequest extends StObject {
   
   /**
     * Specifies where the exported data should be placed.
     */
-  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.native
+  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.undefined
 }
 object SchemaExportDicomDataRequest {
   

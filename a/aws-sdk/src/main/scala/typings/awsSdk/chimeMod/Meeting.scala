@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meeting extends StObject {
   
   /**
     * The external meeting ID.
     */
-  var ExternalMeetingId: js.UndefOr[ExternalMeetingIdType] = js.native
+  var ExternalMeetingId: js.UndefOr[ExternalMeetingIdType] = js.undefined
   
   /**
     * The media placement for the meeting.
     */
-  var MediaPlacement: js.UndefOr[typings.awsSdk.chimeMod.MediaPlacement] = js.native
+  var MediaPlacement: js.UndefOr[typings.awsSdk.chimeMod.MediaPlacement] = js.undefined
   
   /**
     * The Region in which to create the meeting. Available values: af-south-1, ap-northeast-1, ap-northeast-2, ap-south-1, ap-southeast-1, ap-southeast-2, ca-central-1, eu-central-1, eu-north-1, eu-south-1, eu-west-1, eu-west-2, eu-west-3, sa-east-1, us-east-1, us-east-2, us-west-1, us-west-2.
     */
-  var MediaRegion: js.UndefOr[String] = js.native
+  var MediaRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Chime SDK meeting ID.
     */
-  var MeetingId: js.UndefOr[GuidString] = js.native
+  var MeetingId: js.UndefOr[GuidString] = js.undefined
 }
 object Meeting {
   

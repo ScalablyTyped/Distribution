@@ -3,7 +3,6 @@ package typings.mpvScript
 import typings.mpvScript.mp.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mpvScriptStrings {
@@ -24,7 +23,9 @@ object mpvScriptStrings {
   def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -39,12 +40,16 @@ object mpvScriptStrings {
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait fatal
+    extends StObject
+       with LogLevel
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
@@ -54,7 +59,9 @@ object mpvScriptStrings {
   def files: files = "files".asInstanceOf[files]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -94,7 +101,9 @@ object mpvScriptStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait trace extends LogLevel
+  sealed trait trace
+    extends StObject
+       with LogLevel
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   
@@ -104,12 +113,16 @@ object mpvScriptStrings {
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait v extends LogLevel
+  sealed trait v
+    extends StObject
+       with LogLevel
   @scala.inline
   def v: v = "v".asInstanceOf[v]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/mirror/v1", "mirror_v1.Resource$Contacts")
@@ -30,7 +29,7 @@ class ResourceContacts protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceContactsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceContactsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -55,7 +54,7 @@ class ResourceContacts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaContact] = js.native
   def get(callback: BodyResponseCallback[SchemaContact]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
   def get(params: ParamsResourceContactsGet): GaxiosPromise[SchemaContact] = js.native
   def get(params: ParamsResourceContactsGet, callback: BodyResponseCallback[SchemaContact]): Unit = js.native
   def get(
@@ -84,7 +83,7 @@ class ResourceContacts protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaContact] = js.native
   def insert(callback: BodyResponseCallback[SchemaContact]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
   def insert(params: ParamsResourceContactsInsert): GaxiosPromise[SchemaContact] = js.native
   def insert(params: ParamsResourceContactsInsert, callback: BodyResponseCallback[SchemaContact]): Unit = js.native
   def insert(
@@ -112,7 +111,7 @@ class ResourceContacts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaContactsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaContactsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContactsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContactsListResponse] = js.native
   def list(params: ParamsResourceContactsList): GaxiosPromise[SchemaContactsListResponse] = js.native
   def list(params: ParamsResourceContactsList, callback: BodyResponseCallback[SchemaContactsListResponse]): Unit = js.native
   def list(
@@ -142,7 +141,7 @@ class ResourceContacts protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaContact] = js.native
   def patch(callback: BodyResponseCallback[SchemaContact]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
   def patch(params: ParamsResourceContactsPatch): GaxiosPromise[SchemaContact] = js.native
   def patch(params: ParamsResourceContactsPatch, callback: BodyResponseCallback[SchemaContact]): Unit = js.native
   def patch(
@@ -172,7 +171,7 @@ class ResourceContacts protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaContact] = js.native
   def update(callback: BodyResponseCallback[SchemaContact]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContact] = js.native
   def update(params: ParamsResourceContactsUpdate): GaxiosPromise[SchemaContact] = js.native
   def update(params: ParamsResourceContactsUpdate, callback: BodyResponseCallback[SchemaContact]): Unit = js.native
   def update(

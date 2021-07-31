@@ -2,17 +2,15 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AB[A, B, C] extends StObject {
   
-  var a: A = js.native
+  var a: A
   
-  var b: B = js.native
+  var b: B
   
-  var c: C = js.native
+  var c: C
 }
 object AB {
   
@@ -23,7 +21,7 @@ object AB {
   }
   
   @scala.inline
-  implicit class ABMutableBuilder[Self <: AB[_, _, _], A, B, C] (val x: Self with (AB[A, B, C])) extends AnyVal {
+  implicit class ABMutableBuilder[Self <: AB[?, ?, ?], A, B, C] (val x: Self & (AB[A, B, C])) extends AnyVal {
     
     @scala.inline
     def setA(value: A): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])

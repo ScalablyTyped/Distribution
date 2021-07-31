@@ -7,7 +7,6 @@ import typings.documentdb.documentdbStrings.replace_
 import typings.documentdb.documentdbStrings.update_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

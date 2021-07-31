@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstancePatchStatesForPatchGroupRequest extends StObject {
   
   /**
     * Each entry in the array is a structure containing: Key (string between 1 and 200 characters)  Values (array containing a single string)  Type (string "Equal", "NotEqual", "LessThan", "GreaterThan")
     */
-  var Filters: js.UndefOr[InstancePatchStateFilterList] = js.native
+  var Filters: js.UndefOr[InstancePatchStateFilterList] = js.undefined
   
   /**
     * The maximum number of patches to return (per page).
     */
-  var MaxResults: js.UndefOr[PatchComplianceMaxResults] = js.native
+  var MaxResults: js.UndefOr[PatchComplianceMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The name of the patch group for which the patch state information should be retrieved.
     */
-  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup = js.native
+  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup
 }
 object DescribeInstancePatchStatesForPatchGroupRequest {
   

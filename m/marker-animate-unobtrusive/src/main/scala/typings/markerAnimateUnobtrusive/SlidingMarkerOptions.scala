@@ -7,11 +7,11 @@ import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
 import typings.markerAnimateUnobtrusive.markerAnimateUnobtrusiveStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlidingMarkerOptions extends MarkerOptions {
+trait SlidingMarkerOptions
+  extends StObject
+     with MarkerOptions {
   
   var animateFunctionAdapter: js.UndefOr[
     js.Function4[
@@ -21,11 +21,11 @@ trait SlidingMarkerOptions extends MarkerOptions {
       /* duration */ Double, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[IEasingType] = js.native
+  var easing: js.UndefOr[IEasingType] = js.undefined
 }
 object SlidingMarkerOptions {
   

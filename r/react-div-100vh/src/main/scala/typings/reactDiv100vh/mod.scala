@@ -9,7 +9,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,14 +25,14 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[Div100vhProps, ComponentState] = js.native
   
-  @js.native
   trait Div100vhProps
-    extends HTMLAttributes[HTMLElement]
-       with ClassAttributes[HTMLElement] {
+    extends StObject
+       with ClassAttributes[HTMLElement]
+       with HTMLAttributes[HTMLElement] {
     
     var as: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object Div100vhProps {
     

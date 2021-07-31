@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackInputParameter extends StObject {
   
   /**
     * One part of a key-value pair.
     */
-  var ParameterName: typings.awsSdk.configserviceMod.ParameterName = js.native
+  var ParameterName: typings.awsSdk.configserviceMod.ParameterName
   
   /**
     * Another part of the key-value pair. 
     */
-  var ParameterValue: typings.awsSdk.configserviceMod.ParameterValue = js.native
+  var ParameterValue: typings.awsSdk.configserviceMod.ParameterValue
 }
 object ConformancePackInputParameter {
   

@@ -4,7 +4,6 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains several options to describe which information is being
   * requested and how it will be transferred.
   */
-@js.native
 trait PaymentDataRequest extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PaymentDataRequest extends StObject {
     * This field is required and must contain at least one
     * [[PaymentMethodSpecification|`PaymentMethodSpecification`]].
     */
-  var allowedPaymentMethods: js.Array[PaymentMethodSpecification] = js.native
+  var allowedPaymentMethods: js.Array[PaymentMethodSpecification]
   
   /**
     * Major API version.
@@ -31,7 +29,7 @@ trait PaymentDataRequest extends StObject {
     *
     * This field is required.
     */
-  var apiVersion: Double = js.native
+  var apiVersion: Double
   
   /**
     * Minor API version.
@@ -40,7 +38,7 @@ trait PaymentDataRequest extends StObject {
     *
     * This field is required.
     */
-  var apiVersionMinor: Double = js.native
+  var apiVersionMinor: Double
   
   /**
     * List of callbacks that the developer intents to handle.
@@ -51,7 +49,7 @@ trait PaymentDataRequest extends StObject {
     *
     * Note: This  functionality is only available for web.
     */
-  var callbackIntents: js.UndefOr[js.Array[CallbackIntent]] = js.native
+  var callbackIntents: js.UndefOr[js.Array[CallbackIntent]] = js.undefined
   
   /**
     * Whether to collect the email from the buyer.
@@ -63,14 +61,14 @@ trait PaymentDataRequest extends StObject {
     *
     * @default false
     */
-  var emailRequired: js.UndefOr[`false` | `true`] = js.native
+  var emailRequired: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Detailed merchant information.
     *
     * This field is required.
     */
-  var merchantInfo: MerchantInfo = js.native
+  var merchantInfo: MerchantInfo
   
   /**
     * Optional shipping address parameters.
@@ -79,7 +77,7 @@ trait PaymentDataRequest extends StObject {
     * [[ShippingAddressParameters|`ShippingAddressParameters`]] will be
     * assumed.
     */
-  var shippingAddressParameters: js.UndefOr[ShippingAddressParameters] = js.native
+  var shippingAddressParameters: js.UndefOr[ShippingAddressParameters] = js.undefined
   
   /**
     * Whether a shipping address is required from the buyer.
@@ -91,7 +89,7 @@ trait PaymentDataRequest extends StObject {
     *
     * @default false
     */
-  var shippingAddressRequired: js.UndefOr[`false` | `true`] = js.native
+  var shippingAddressRequired: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Parameters for shipping option that can be used in this request.
@@ -102,7 +100,7 @@ trait PaymentDataRequest extends StObject {
     *
     * Note: This field is currently only for web only.
     */
-  var shippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.native
+  var shippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.undefined
   
   /**
     * Whether a shipping option is required from the buyer.
@@ -112,14 +110,14 @@ trait PaymentDataRequest extends StObject {
     *
     * @default false
     */
-  var shippingOptionRequired: js.UndefOr[`false` | `true`] = js.native
+  var shippingOptionRequired: js.UndefOr[`false` | `true`] = js.undefined
   
   /**
     * Detailed information about the transaction.
     *
     * This field is required.
     */
-  var transactionInfo: TransactionInfo = js.native
+  var transactionInfo: TransactionInfo
 }
 object PaymentDataRequest {
   

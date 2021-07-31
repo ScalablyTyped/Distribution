@@ -2,27 +2,27 @@ package typings.reduxSagaDeferred
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@redux-saga/deferred", JSImport.Default)
+  @JSImport("@redux-saga/deferred", JSImport.Namespace)
   @js.native
-  def default[R](): Deferred[R] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@redux-saga/deferred", "arrayOfDeferred")
-  @js.native
-  def arrayOfDeferred[R](length: Double): js.Array[Deferred[R]] = js.native
+  @scala.inline
+  def default[R](): Deferred[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Deferred[R]]
   
-  @js.native
+  @scala.inline
+  def arrayOfDeferred[R](length: Double): js.Array[Deferred[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfDeferred")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Deferred[R]]]
+  
   trait Deferred[R] extends StObject {
     
-    var promise: js.Promise[R] = js.native
+    var promise: js.Promise[R]
     
-    def reject(error: js.Any): Unit = js.native
+    def reject(error: js.Any): Unit
     
-    def resolve(result: R): Unit = js.native
+    def resolve(result: R): Unit
   }
   object Deferred {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DeferredMutableBuilder[Self <: Deferred[_], R] (val x: Self with Deferred[R]) extends AnyVal {
+    implicit class DeferredMutableBuilder[Self <: Deferred[?], R] (val x: Self & Deferred[R]) extends AnyVal {
       
       @scala.inline
       def setPromise(value: js.Promise[R]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])

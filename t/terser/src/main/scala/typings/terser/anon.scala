@@ -6,23 +6,21 @@ import typings.terser.terserStrings.comment3
 import typings.terser.terserStrings.comment4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Col extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var `type`: comment1 | comment2 | comment3 | comment4 = js.native
+    var `type`: comment1 | comment2 | comment3 | comment4
     
-    var value: String = js.native
+    var value: String
   }
   object Col {
     

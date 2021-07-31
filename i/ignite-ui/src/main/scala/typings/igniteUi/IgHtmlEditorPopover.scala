@@ -4,48 +4,47 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgHtmlEditorPopover
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
   @JSName("apply")
-  var apply: js.UndefOr[ApplyEvent] = js.native
+  var apply: js.UndefOr[ApplyEvent] = js.undefined
   
-  var cancel: js.UndefOr[CancelEvent] = js.native
+  var cancel: js.UndefOr[CancelEvent] = js.undefined
   
-  var hide: js.UndefOr[HideEvent] = js.native
+  var hide: js.UndefOr[HideEvent] = js.undefined
   
-  var isHidden: js.UndefOr[Boolean] = js.native
+  var isHidden: js.UndefOr[Boolean] = js.undefined
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
-  var show: js.UndefOr[ShowEvent] = js.native
+  var show: js.UndefOr[ShowEvent] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object IgHtmlEditorPopover {
   

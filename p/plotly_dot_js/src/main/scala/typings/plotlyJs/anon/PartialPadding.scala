@@ -3,22 +3,20 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.plotlyJsStrings.arraydraw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Padding> */
-@js.native
 trait PartialPadding extends StObject {
   
-  var b: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[Double] = js.undefined
   
-  var editType: js.UndefOr[arraydraw] = js.native
+  var editType: js.UndefOr[arraydraw] = js.undefined
   
-  var l: js.UndefOr[Double] = js.native
+  var l: js.UndefOr[Double] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var t: js.UndefOr[Double] = js.native
+  var t: js.UndefOr[Double] = js.undefined
 }
 object PartialPadding {
   

@@ -2,27 +2,25 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
-  var change: scala.Double = js.native
+  var change: scala.Double
   
-  var changeset: scala.Double = js.native
+  var changeset: scala.Double
   
-  var date: scala.Double = js.native
+  var date: scala.Double
   
-  var latest: scala.Double = js.native
+  var latest: scala.Double
   
-  var mergeSource: scala.Double = js.native
+  var mergeSource: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var shelveset: scala.Double = js.native
+  var shelveset: scala.Double
   
-  var tip: scala.Double = js.native
+  var tip: scala.Double
 }
 object Change {
   

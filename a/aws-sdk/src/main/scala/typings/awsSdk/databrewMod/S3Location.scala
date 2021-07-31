@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Location extends StObject {
   
   /**
     * The S3 bucket name.
     */
-  var Bucket: typings.awsSdk.databrewMod.Bucket = js.native
+  var Bucket: typings.awsSdk.databrewMod.Bucket
   
   /**
     * The unique name of the object in the bucket.
     */
-  var Key: js.UndefOr[typings.awsSdk.databrewMod.Key] = js.native
+  var Key: js.UndefOr[typings.awsSdk.databrewMod.Key] = js.undefined
 }
 object S3Location {
   

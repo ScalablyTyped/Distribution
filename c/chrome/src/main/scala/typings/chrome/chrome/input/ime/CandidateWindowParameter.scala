@@ -2,16 +2,14 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidateWindowParameter extends StObject {
   
   /** ID of the engine to set properties on. */
-  var engineID: String = js.native
+  var engineID: String
   
-  var properties: CandidateWindowParameterProperties = js.native
+  var properties: CandidateWindowParameterProperties
 }
 object CandidateWindowParameter {
   

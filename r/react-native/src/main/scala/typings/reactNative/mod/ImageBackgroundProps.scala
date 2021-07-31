@@ -2,17 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageBackgroundProps extends ImagePropsBase {
+trait ImageBackgroundProps
+  extends StObject
+     with ImagePropsBase {
   
-  var imageRef: js.UndefOr[js.Function1[/* image */ Image, Unit]] = js.native
+  var imageRef: js.UndefOr[js.Function1[/* image */ Image, Unit]] = js.undefined
   
-  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object ImageBackgroundProps {
   

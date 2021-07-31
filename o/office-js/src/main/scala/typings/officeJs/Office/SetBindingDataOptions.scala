@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * If the rows option is used, the value must be "thisRow".
   */
-@js.native
 trait SetBindingDataOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.native
+  var asyncContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of 
@@ -26,12 +24,12 @@ trait SetBindingDataOptions extends StObject {
     * 
     * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
     */
-  var cellFormat: js.UndefOr[js.Array[RangeFormatConfiguration]] = js.native
+  var cellFormat: js.UndefOr[js.Array[RangeFormatConfiguration]] = js.undefined
   
   /**
     * Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     */
-  var coercionType: js.UndefOr[CoercionType | String] = js.native
+  var coercionType: js.UndefOr[CoercionType | String] = js.undefined
   
   /**
     * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
@@ -40,7 +38,7 @@ trait SetBindingDataOptions extends StObject {
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
     */
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
@@ -49,25 +47,25 @@ trait SetBindingDataOptions extends StObject {
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
     */
-  var rows: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in 
     * the first column.
     */
-  var startColumn: js.UndefOr[Double] = js.native
+  var startColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set 
     * starting in the first row.
     */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
   
   /**
     * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. 
     * Example: `{bandedRows: true,  filterButton: false}`
     */
-  var tableOptions: js.UndefOr[js.Object] = js.native
+  var tableOptions: js.UndefOr[js.Object] = js.undefined
 }
 object SetBindingDataOptions {
   

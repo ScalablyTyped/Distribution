@@ -10,7 +10,6 @@ import typings.leafletLocatecontrol.mod.Control_.LocateOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -34,56 +33,55 @@ object mod {
       def stop(): Unit = js.native
     }
     
-    @js.native
     trait LocateOptions extends StObject {
       
-      var cacheLocation: js.UndefOr[Boolean] = js.native
+      var cacheLocation: js.UndefOr[Boolean] = js.undefined
       
-      var circlePadding: js.UndefOr[js.Array[Double]] = js.native
+      var circlePadding: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var circleStyle: js.UndefOr[PathOptions] = js.native
+      var circleStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var clickBehavior: js.UndefOr[js.Any] = js.native
+      var clickBehavior: js.UndefOr[js.Any] = js.undefined
       
-      var drawCircle: js.UndefOr[Boolean] = js.native
+      var drawCircle: js.UndefOr[Boolean] = js.undefined
       
-      var drawMarker: js.UndefOr[Boolean] = js.native
+      var drawMarker: js.UndefOr[Boolean] = js.undefined
       
-      var flyTo: js.UndefOr[Boolean] = js.native
+      var flyTo: js.UndefOr[Boolean] = js.undefined
       
-      var followCircleStyle: js.UndefOr[PathOptions] = js.native
+      var followCircleStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var followMarkerStyle: js.UndefOr[PathOptions] = js.native
+      var followMarkerStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var icon: js.UndefOr[String] = js.native
+      var icon: js.UndefOr[String] = js.undefined
       
-      var iconElementTag: js.UndefOr[String] = js.native
+      var iconElementTag: js.UndefOr[String] = js.undefined
       
-      var iconLoading: js.UndefOr[String] = js.native
+      var iconLoading: js.UndefOr[String] = js.undefined
       
-      var keepCurrentZoomLevel: js.UndefOr[Boolean] = js.native
+      var keepCurrentZoomLevel: js.UndefOr[Boolean] = js.undefined
       
-      var layer: js.UndefOr[Layer] = js.native
+      var layer: js.UndefOr[Layer] = js.undefined
       
-      var locateOptions: js.UndefOr[typings.leaflet.mod.LocateOptions] = js.native
+      var locateOptions: js.UndefOr[typings.leaflet.mod.LocateOptions] = js.undefined
       
-      var markerClass: js.UndefOr[js.Any] = js.native
+      var markerClass: js.UndefOr[js.Any] = js.undefined
       
-      var markerStyle: js.UndefOr[PathOptions | MarkerOptions] = js.native
+      var markerStyle: js.UndefOr[PathOptions | MarkerOptions] = js.undefined
       
-      var onLocationError: js.UndefOr[js.Any] = js.native
+      var onLocationError: js.UndefOr[js.Any] = js.undefined
       
-      var onLocationOutsideMapBounds: js.UndefOr[js.Any] = js.native
+      var onLocationOutsideMapBounds: js.UndefOr[js.Any] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var returnToPrevBounds: js.UndefOr[Boolean] = js.native
+      var returnToPrevBounds: js.UndefOr[Boolean] = js.undefined
       
-      var setView: js.UndefOr[Boolean | String] = js.native
+      var setView: js.UndefOr[Boolean | String] = js.undefined
       
-      var showPopup: js.UndefOr[Boolean] = js.native
+      var showPopup: js.UndefOr[Boolean] = js.undefined
       
-      var strings: js.UndefOr[js.Any] = js.native
+      var strings: js.UndefOr[js.Any] = js.undefined
     }
     object LocateOptions {
       
@@ -248,14 +246,16 @@ object mod {
   
   object control {
     
+    @JSImport("leaflet", "control")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a Leaflet.Locate control
       */
-    @JSImport("leaflet", "control.locate")
-    @js.native
-    def locate(): Locate = js.native
-    @JSImport("leaflet", "control.locate")
-    @js.native
-    def locate(options: LocateOptions): Locate = js.native
+    @scala.inline
+    def locate(): Locate = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")().asInstanceOf[Locate]
+    @scala.inline
+    def locate(options: LocateOptions): Locate = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")(options.asInstanceOf[js.Any]).asInstanceOf[Locate]
   }
 }

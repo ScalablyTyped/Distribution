@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /** Set to true and filter your report by `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` to include data for audience lists specifically targeted by those items. */
-  var includeOnlyTargetedUserLists: js.UndefOr[Boolean] = js.native
+  var includeOnlyTargetedUserLists: js.UndefOr[Boolean] = js.undefined
   
   /** Options that contain Path Filters and Custom Channel Groupings. */
-  var pathQueryOptions: js.UndefOr[PathQueryOptions] = js.native
+  var pathQueryOptions: js.UndefOr[PathQueryOptions] = js.undefined
 }
 object Options {
   

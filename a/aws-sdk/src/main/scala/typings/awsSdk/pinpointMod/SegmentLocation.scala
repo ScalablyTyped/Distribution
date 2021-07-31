@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentLocation extends StObject {
   
   /**
     * The country or region code, in ISO 3166-1 alpha-2 format, for the segment.
     */
-  var Country: js.UndefOr[SetDimension] = js.native
+  var Country: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The GPS location and range for the segment.
     */
-  var GPSPoint: js.UndefOr[GPSPointDimension] = js.native
+  var GPSPoint: js.UndefOr[GPSPointDimension] = js.undefined
 }
 object SegmentLocation {
   

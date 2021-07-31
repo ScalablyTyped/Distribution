@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
   
   /**
     * An optional event to signal that the code lenses from this provider have changed.
     */
-  var onDidChangeCodeLenses: js.UndefOr[Event[Unit]] = js.native
+  var onDidChangeCodeLenses: js.UndefOr[Event[Unit]] = js.undefined
   
   /**
     * Compute a list of [lenses](#CodeLens). This call should return as fast as possible and if
@@ -23,7 +21,7 @@ trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
     * @return An array of code lenses or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined`, `null`, or an empty array.
     */
-  def provideCodeLenses(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[T]] = js.native
+  def provideCodeLenses(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[T]]
   
   /**
     * This function will be called for each visible code lens, usually when scrolling and after
@@ -33,7 +31,7 @@ trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
     * @param token A cancellation token.
     * @return The given, resolved code lens or thenable that resolves to such.
     */
-  var resolveCodeLens: js.UndefOr[js.Function2[/* codeLens */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
+  var resolveCodeLens: js.UndefOr[js.Function2[/* codeLens */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.undefined
 }
 object CodeLensProvider {
   
@@ -44,7 +42,7 @@ object CodeLensProvider {
   }
   
   @scala.inline
-  implicit class CodeLensProviderMutableBuilder[Self <: CodeLensProvider[_], T /* <: CodeLens */] (val x: Self with CodeLensProvider[T]) extends AnyVal {
+  implicit class CodeLensProviderMutableBuilder[Self <: CodeLensProvider[?], T /* <: CodeLens */] (val x: Self & CodeLensProvider[T]) extends AnyVal {
     
     @scala.inline
     def setOnDidChangeCodeLenses(

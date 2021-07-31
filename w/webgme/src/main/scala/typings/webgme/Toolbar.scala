@@ -2,37 +2,35 @@ package typings.webgme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Toolbar {
   
   type ClickFn = js.Function0[Unit]
   
-  @js.native
   trait Toolbar extends StObject {
     
-    def add(item: ToolbarItem): ToolbarButton = js.native
+    def add(item: ToolbarItem): ToolbarButton
     
-    def addButton(params: ToolbarParams): ToolbarButton = js.native
+    def addButton(params: ToolbarParams): ToolbarButton
     
-    def addCheckBox(): ToolbarCheckBox = js.native
+    def addCheckBox(): ToolbarCheckBox
     
-    def addColorPicker(params: ToolbarParams): ToolbarColorPicker = js.native
+    def addColorPicker(params: ToolbarParams): ToolbarColorPicker
     
-    def addDropDownButton(params: ToolbarParams): ToolbarDropDownButton = js.native
+    def addDropDownButton(params: ToolbarParams): ToolbarDropDownButton
     
-    def addLabel(): ToolbarLabel = js.native
+    def addLabel(): ToolbarLabel
     
-    def addRadioButtonGroup(clickFn: ClickFn): ToolbarRadioButtonGroup = js.native
+    def addRadioButtonGroup(clickFn: ClickFn): ToolbarRadioButtonGroup
     
-    def addSeparator(): ToolbarSeparator = js.native
+    def addSeparator(): ToolbarSeparator
     
-    def addTextBox(params: ToolbarParams): ToolbarTextBox = js.native
+    def addTextBox(params: ToolbarParams): ToolbarTextBox
     
-    def addToggleButton(params: ToolbarParams): ToolbarToggleButton = js.native
+    def addToggleButton(params: ToolbarParams): ToolbarToggleButton
     
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object Toolbar {
     
@@ -98,10 +96,11 @@ object Toolbar {
   
   type ToolbarColorPicker = ToolbarItem
   
-  @js.native
-  trait ToolbarDropDownButton extends ToolbarItem {
+  trait ToolbarDropDownButton
+    extends StObject
+       with ToolbarItem {
     
-    def addButton(params: ToolbarParams): ToolbarButton = js.native
+    def addButton(params: ToolbarParams): ToolbarButton
   }
   object ToolbarDropDownButton {
     
@@ -125,16 +124,15 @@ object Toolbar {
     }
   }
   
-  @js.native
   trait ToolbarItem extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def enabled(value: Boolean): Unit = js.native
+    def enabled(value: Boolean): Unit
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ToolbarItem {
     
@@ -163,7 +161,6 @@ object Toolbar {
   
   type ToolbarLabel = ToolbarItem
   
-  @js.native
   trait ToolbarParams extends StObject
   
   type ToolbarRadioButtonGroup = ToolbarButton

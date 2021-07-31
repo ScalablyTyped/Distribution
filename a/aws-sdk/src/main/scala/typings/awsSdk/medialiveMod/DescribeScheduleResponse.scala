@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScheduleResponse extends StObject {
   
   /**
     * The next token; for use in pagination.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The list of actions in the schedule.
     */
-  var ScheduleActions: js.UndefOr[listOfScheduleAction] = js.native
+  var ScheduleActions: js.UndefOr[listOfScheduleAction] = js.undefined
 }
 object DescribeScheduleResponse {
   

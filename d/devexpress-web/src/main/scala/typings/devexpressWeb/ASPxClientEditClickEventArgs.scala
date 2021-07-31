@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side events which concern clicking within editors.
   */
-@js.native
-trait ASPxClientEditClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientEditClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the HTML element related to the event.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object ASPxClientEditClickEventArgs {
   

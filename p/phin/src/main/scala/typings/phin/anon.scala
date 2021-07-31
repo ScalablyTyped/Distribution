@@ -8,15 +8,13 @@ import typings.phin.phinStrings.none
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: ToString = js.native
+    var data: ToString
   }
   object Data {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Form extends StObject {
     
-    var form: StringDictionary[String] = js.native
+    var form: StringDictionary[String]
   }
   object Form {
     
@@ -56,40 +53,39 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithData<phin.phin.IJSONResponseOptions> */
-  @js.native
   trait IWithDataIJSONResponseOpt extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString = js.native
+    var data: ToString
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var parse: json = js.native
+    var parse: json
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithDataIJSONResponseOpt {
     
     @scala.inline
-    def apply(data: ToString, parse: json, url: String | URL): IWithDataIJSONResponseOpt = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(data: ToString, url: String | URL): IWithDataIJSONResponseOpt = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parse = "json", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithDataIJSONResponseOpt]
     }
     
@@ -168,34 +164,33 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithData<phin.phin.IOptions> */
-  @js.native
   trait IWithDataIOptions extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString = js.native
+    var data: ToString
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var parse: js.UndefOr[none] = js.native
+    var parse: js.UndefOr[none] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithDataIOptions {
     
@@ -283,38 +278,37 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithData<phin.phin.IStreamResponseOptions> */
-  @js.native
   trait IWithDataIStreamResponseO extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString = js.native
+    var data: ToString
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: `true` = js.native
+    var stream: `true`
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithDataIStreamResponseO {
     
     @scala.inline
-    def apply(data: ToString, stream: `true`, url: String | URL): IWithDataIStreamResponseO = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(data: ToString, url: String | URL): IWithDataIStreamResponseO = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], stream = true, url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithDataIStreamResponseO]
     }
     
@@ -387,40 +381,39 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithForm<phin.phin.IJSONResponseOptions> */
-  @js.native
   trait IWithFormIJSONResponseOpt extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var form: StringDictionary[String] = js.native
+    var form: StringDictionary[String]
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var parse: json = js.native
+    var parse: json
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithFormIJSONResponseOpt {
     
     @scala.inline
-    def apply(form: StringDictionary[String], parse: json, url: String | URL): IWithFormIJSONResponseOpt = {
-      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(form: StringDictionary[String], url: String | URL): IWithFormIJSONResponseOpt = {
+      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], parse = "json", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithFormIJSONResponseOpt]
     }
     
@@ -499,34 +492,33 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithForm<phin.phin.IOptions> */
-  @js.native
   trait IWithFormIOptions extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var form: StringDictionary[String] = js.native
+    var form: StringDictionary[String]
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var parse: js.UndefOr[none] = js.native
+    var parse: js.UndefOr[none] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithFormIOptions {
     
@@ -614,38 +606,37 @@ object anon {
   }
   
   /* Inlined phin.phin.IWithForm<phin.phin.IStreamResponseOptions> */
-  @js.native
   trait IWithFormIStreamResponseO extends StObject {
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var core: js.UndefOr[ClientRequestArgs] = js.native
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var form: StringDictionary[String] = js.native
+    var form: StringDictionary[String]
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var stream: `true` = js.native
+    var stream: `true`
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String | URL = js.native
+    var url: String | URL
   }
   object IWithFormIStreamResponseO {
     
     @scala.inline
-    def apply(form: StringDictionary[String], stream: `true`, url: String | URL): IWithFormIStreamResponseO = {
-      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(form: StringDictionary[String], url: String | URL): IWithFormIStreamResponseO = {
+      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], stream = true, url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithFormIStreamResponseO]
     }
     
@@ -717,6 +708,5 @@ object anon {
     }
   }
   
-  @js.native
   trait ToString extends StObject
 }

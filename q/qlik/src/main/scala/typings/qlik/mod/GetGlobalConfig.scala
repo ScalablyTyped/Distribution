@@ -2,21 +2,19 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGlobalConfig extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var identity: String = js.native
+  var identity: String
   
-  var isSecure: Boolean = js.native
+  var isSecure: Boolean
   
-  var port: String = js.native
+  var port: String
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object GetGlobalConfig {
   

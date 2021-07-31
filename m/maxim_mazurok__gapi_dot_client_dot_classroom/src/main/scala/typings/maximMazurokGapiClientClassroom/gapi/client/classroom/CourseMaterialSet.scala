@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CourseMaterialSet extends StObject {
   
   /** Materials attached to this set. */
-  var materials: js.UndefOr[js.Array[CourseMaterial]] = js.native
+  var materials: js.UndefOr[js.Array[CourseMaterial]] = js.undefined
   
   /** Title for this set. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object CourseMaterialSet {
   

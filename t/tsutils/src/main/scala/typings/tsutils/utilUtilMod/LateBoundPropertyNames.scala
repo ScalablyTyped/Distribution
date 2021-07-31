@@ -2,15 +2,13 @@ package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LateBoundPropertyNames extends StObject {
   
-  var known: Boolean = js.native
+  var known: Boolean
   
-  var names: js.Array[PropertyName] = js.native
+  var names: js.Array[PropertyName]
 }
 object LateBoundPropertyNames {
   

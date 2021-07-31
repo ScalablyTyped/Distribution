@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceInstanceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the device instance.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
   
   /**
     * An array of strings that you want to associate with the device instance.
     */
-  var labels: js.UndefOr[InstanceLabels] = js.native
+  var labels: js.UndefOr[InstanceLabels] = js.undefined
   
   /**
     * The ARN of the profile that you want to associate with the device instance.
     */
-  var profileArn: js.UndefOr[AmazonResourceName] = js.native
+  var profileArn: js.UndefOr[AmazonResourceName] = js.undefined
 }
 object UpdateDeviceInstanceRequest {
   

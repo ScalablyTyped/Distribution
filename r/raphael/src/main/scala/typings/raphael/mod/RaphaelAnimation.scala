@@ -2,10 +2,8 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelAnimation extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait RaphaelAnimation extends StObject {
     * the actual animation.
     * @return A copy of this animation with the given delay.
     */
-  def delay(delay: Double): RaphaelAnimation = js.native
+  def delay(delay: Double): RaphaelAnimation
   
   /**
     * Creates a copy of existing animation object with given repetition.
     * @param repeat Number iterations of animation. For a never-ending animation pass `Infinity`.
     * @return A copy of this animation that repeats the given number of times.
     */
-  def repeat(repeat: Double): RaphaelAnimation = js.native
+  def repeat(repeat: Double): RaphaelAnimation
 }
 object RaphaelAnimation {
   

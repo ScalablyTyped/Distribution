@@ -3,7 +3,6 @@ package typings.angularStrap.mgcrea.ngStrap
 import typings.angular.mod.IAugmentedJQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -12,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object scrollspy {
   
-  @js.native
   trait IScrollspy extends StObject {
     
-    def activate(index: Double): Unit = js.native
+    def activate(index: Double): Unit
     
-    def checkOffsets(): Unit = js.native
+    def checkOffsets(): Unit
     
-    def trackElement(target: js.Any, source: js.Any): Unit = js.native
+    def trackElement(target: js.Any, source: js.Any): Unit
     
-    def untrackElement(target: js.Any, source: js.Any): Unit = js.native
+    def untrackElement(target: js.Any, source: js.Any): Unit
   }
   object IScrollspy {
     
@@ -53,12 +51,11 @@ object scrollspy {
     }
   }
   
-  @js.native
   trait IScrollspyOptions extends StObject {
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object IScrollspyOptions {
     
@@ -85,10 +82,9 @@ object scrollspy {
     }
   }
   
-  @js.native
   trait IScrollspyProvider extends StObject {
     
-    var defaults: IScrollspyOptions = js.native
+    var defaults: IScrollspyOptions
   }
   object IScrollspyProvider {
     

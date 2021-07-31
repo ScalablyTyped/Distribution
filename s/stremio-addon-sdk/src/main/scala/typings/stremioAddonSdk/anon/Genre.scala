@@ -2,17 +2,15 @@ package typings.stremioAddonSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Genre extends StObject {
   
-  var genre: String = js.native
+  var genre: String
   
-  var search: String = js.native
+  var search: String
   
-  var skip: Double = js.native
+  var skip: Double
 }
 object Genre {
   

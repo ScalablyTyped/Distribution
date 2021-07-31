@@ -3,31 +3,31 @@ package typings.stripe.mod
 import typings.stripe.stripeStrings.application
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applications {
   
-  @js.native
-  trait IApplication extends IResourceObject {
+  trait IApplication
+    extends StObject
+       with IResourceObject {
     
     /**
       * String representing the application’s name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * String representing the object’s type. Objects of the same type share the same value.
       */
     @JSName("object")
-    var object_IApplication: application = js.native
+    var object_IApplication: application
   }
   object IApplication {
     
     @scala.inline
-    def apply(id: String, name: String, `object`: application): IApplication = {
+    def apply(id: String, name: String): IApplication = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("application")
       __obj.asInstanceOf[IApplication]
     }
     

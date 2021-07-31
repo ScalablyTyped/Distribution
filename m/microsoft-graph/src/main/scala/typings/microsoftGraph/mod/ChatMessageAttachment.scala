@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessageAttachment extends StObject {
   
   /**
     * The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This
     * property and contentUrl are mutually exclusive.
     */
-  var content: js.UndefOr[NullableOption[String]] = js.native
+  var content: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The media type of the content attachment. It can have the following values: reference: Attachment is a link to another
@@ -33,16 +31,16 @@ trait ChatMessageAttachment extends StObject {
     * object.application/vnd.microsoft.com.card.receipt: A Receipt card. Set the content property to a ReceiptCard
     * object.application/vnd.microsoft.com.card.signin: A user Sign In card. Set the content property to a SignInCard object.
     */
-  var contentType: js.UndefOr[NullableOption[String]] = js.native
+  var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URL for the content of the attachment. Supported protocols: http, https, file and data.
-  var contentUrl: js.UndefOr[NullableOption[String]] = js.native
+  var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Unique id of the attachment.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the attachment.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or
@@ -50,7 +48,7 @@ trait ChatMessageAttachment extends StObject {
     * document, you might include a thumbnail image that represents the document. The channel could display the thumbnail
     * image instead of the document. When the user clicks the image, the channel would open the document.
     */
-  var thumbnailUrl: js.UndefOr[NullableOption[String]] = js.native
+  var thumbnailUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ChatMessageAttachment {
   

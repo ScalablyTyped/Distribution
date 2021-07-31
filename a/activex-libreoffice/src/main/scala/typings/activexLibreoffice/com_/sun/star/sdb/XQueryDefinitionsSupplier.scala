@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a container of database command definitions. */
-@js.native
-trait XQueryDefinitionsSupplier extends XInterface {
+trait XQueryDefinitionsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of commands.
     * @returns the query definitions
     */
-  val QueryDefinitions: XNameAccess = js.native
+  val QueryDefinitions: XNameAccess
   
   /**
     * returns the container of commands.
     * @returns the query definitions
     */
-  def getQueryDefinitions(): XNameAccess = js.native
+  def getQueryDefinitions(): XNameAccess
 }
 object XQueryDefinitionsSupplier {
   

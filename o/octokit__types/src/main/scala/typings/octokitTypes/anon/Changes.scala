@@ -2,27 +2,25 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changes extends StObject {
   
-  var additions: Double = js.native
+  var additions: Double
   
-  var blob_url: String = js.native
+  var blob_url: String
   
-  var changes: Double = js.native
+  var changes: Double
   
-  var deletions: Double = js.native
+  var deletions: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var patch: String = js.native
+  var patch: String
   
-  var raw_url: String = js.native
+  var raw_url: String
   
-  var status: String = js.native
+  var status: String
 }
 object Changes {
   

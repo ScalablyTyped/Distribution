@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.System
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of a Uri launch. */
-@js.native
 trait LaunchUriResult extends StObject {
   
   /** Gets the result of the Uri launch. */
-  var result: ValueSet = js.native
+  var result: ValueSet
   
   /** Gets the status of the Uri launch. */
-  var status: LaunchUriStatus = js.native
+  var status: LaunchUriStatus
 }
 object LaunchUriResult {
   

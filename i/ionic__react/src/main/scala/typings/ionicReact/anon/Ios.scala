@@ -2,15 +2,13 @@ package typings.ionicReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ios extends StObject {
   
-  var ios: String = js.native
+  var ios: String
   
-  var md: String = js.native
+  var md: String
 }
 object Ios {
   

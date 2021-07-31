@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeletePhotosRequest extends StObject {
   
   /** Required. IDs of the Photos. HTTP GET requests require the following syntax for the URL query parameter: `photoIds=&photoIds=&...`. */
-  var photoIds: js.UndefOr[js.Array[String]] = js.native
+  var photoIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchDeletePhotosRequest {
   

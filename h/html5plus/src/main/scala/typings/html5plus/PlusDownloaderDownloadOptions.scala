@@ -7,7 +7,6 @@ import typings.html5plus.html5plusStrings._documentsSlash
 import typings.html5plus.html5plusStrings._downloadsSlash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
   */
-@js.native
 trait PlusDownloaderDownloadOptions extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * 下载文件保存的路径
@@ -39,7 +37,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
+  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   
   /**
     * 网络请求类型
@@ -49,7 +47,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var method: js.UndefOr[GET | POST] = js.native
+  var method: js.UndefOr[GET | POST] = js.undefined
   
   /**
     * 下载任务的优先级
@@ -57,7 +55,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * 下载任务重试次数
@@ -65,7 +63,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var retry: js.UndefOr[Double] = js.native
+  var retry: js.UndefOr[Double] = js.undefined
   
   /**
     * 下载任务重试间隔时间
@@ -73,7 +71,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var retryInterval: js.UndefOr[Double] = js.native
+  var retryInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * 下载任务超时时间
@@ -82,7 +80,7 @@ trait PlusDownloaderDownloadOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object PlusDownloaderDownloadOptions {
   

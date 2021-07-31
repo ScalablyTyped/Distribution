@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupsResult extends StObject {
   
   /**
     * The collection of all active groups.
     */
-  var Groups: js.UndefOr[GroupSummaryList] = js.native
+  var Groups: js.UndefOr[GroupSummaryList] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object GetGroupsResult {
   

@@ -4,195 +4,330 @@ import typings.collections.anon.Done
 import typings.collections.sortedSetMod.internal.SortedSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortedSetMod {
   
   @JSImport("collections/sorted-set", JSImport.Namespace)
   @js.native
-  class ^[T] () extends SortedSet[T] {
+  class ^[T] ()
+    extends StObject
+       with SortedSet[T] {
     def this(values: js.Array[T]) = this()
-    def this(values: js.UndefOr[scala.Nothing], equals: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     def this(values: js.Array[T], equals: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
-    def this(
-      values: js.UndefOr[scala.Nothing],
-      equals: js.UndefOr[scala.Nothing],
-      compare: js.Function2[/* a */ T, /* b */ T, Double]
-    ) = this()
-    def this(
-      values: js.UndefOr[scala.Nothing],
-      equals: js.Function2[/* a */ T, /* b */ T, Boolean],
-      compare: js.Function2[/* a */ T, /* b */ T, Double]
-    ) = this()
-    def this(
-      values: js.Array[T],
-      equals: js.UndefOr[scala.Nothing],
-      compare: js.Function2[/* a */ T, /* b */ T, Double]
-    ) = this()
+    def this(values: Unit, equals: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     def this(
       values: js.Array[T],
       equals: js.Function2[/* a */ T, /* b */ T, Boolean],
       compare: js.Function2[/* a */ T, /* b */ T, Double]
     ) = this()
+    def this(values: js.Array[T], equals: Unit, compare: js.Function2[/* a */ T, /* b */ T, Double]) = this()
     def this(
-      values: js.UndefOr[scala.Nothing],
-      equals: js.UndefOr[scala.Nothing],
-      compare: js.UndefOr[scala.Nothing],
-      getDefault: js.Any
-    ) = this()
-    def this(
-      values: js.UndefOr[scala.Nothing],
-      equals: js.UndefOr[scala.Nothing],
-      compare: js.Function2[/* a */ T, /* b */ T, Double],
-      getDefault: js.Any
-    ) = this()
-    def this(
-      values: js.UndefOr[scala.Nothing],
+      values: Unit,
       equals: js.Function2[/* a */ T, /* b */ T, Boolean],
-      compare: js.UndefOr[scala.Nothing],
-      getDefault: js.Any
+      compare: js.Function2[/* a */ T, /* b */ T, Double]
     ) = this()
+    def this(values: Unit, equals: Unit, compare: js.Function2[/* a */ T, /* b */ T, Double]) = this()
     def this(
-      values: js.UndefOr[scala.Nothing],
+      values: js.Array[T],
       equals: js.Function2[/* a */ T, /* b */ T, Boolean],
       compare: js.Function2[/* a */ T, /* b */ T, Double],
       getDefault: js.Any
     ) = this()
     def this(
       values: js.Array[T],
-      equals: js.UndefOr[scala.Nothing],
-      compare: js.UndefOr[scala.Nothing],
+      equals: js.Function2[/* a */ T, /* b */ T, Boolean],
+      compare: Unit,
       getDefault: js.Any
     ) = this()
     def this(
       values: js.Array[T],
-      equals: js.UndefOr[scala.Nothing],
+      equals: Unit,
       compare: js.Function2[/* a */ T, /* b */ T, Double],
       getDefault: js.Any
     ) = this()
+    def this(values: js.Array[T], equals: Unit, compare: Unit, getDefault: js.Any) = this()
     def this(
-      values: js.Array[T],
-      equals: js.Function2[/* a */ T, /* b */ T, Boolean],
-      compare: js.UndefOr[scala.Nothing],
-      getDefault: js.Any
-    ) = this()
-    def this(
-      values: js.Array[T],
+      values: Unit,
       equals: js.Function2[/* a */ T, /* b */ T, Boolean],
       compare: js.Function2[/* a */ T, /* b */ T, Double],
       getDefault: js.Any
     ) = this()
+    def this(
+      values: Unit,
+      equals: js.Function2[/* a */ T, /* b */ T, Boolean],
+      compare: Unit,
+      getDefault: js.Any
+    ) = this()
+    def this(
+      values: Unit,
+      equals: Unit,
+      compare: js.Function2[/* a */ T, /* b */ T, Double],
+      getDefault: js.Any
+    ) = this()
+    def this(values: Unit, equals: Unit, compare: Unit, getDefault: js.Any) = this()
+    
+    /* CompleteClass */
+    override def addBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def addBeforeRangeChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def addEach(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def addOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def addRangeChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def all(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def any(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def average(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def clone(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def concat(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def contains(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def contentCompare(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def contentEquals(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def deleteAll(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def deleteEach(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def difference(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dispatchBeforeOwnPropertyChange(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dispatchBeforeRangeChange(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dispatchOwnPropertyChange(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dispatchRangeChange(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def enumerate(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def equals(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def every(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def filter(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def findValue(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def flatten(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def forEach(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def group(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def intersection(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def iterator(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def join(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def makePropertyObservable(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def map(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def only(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def remove(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def removeBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def removeBeforeRangeChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def removeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def removeRangeChangeListener(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def reversed(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def some(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def sorted(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def sortedSetLog(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def sum(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def symmetricDifference(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toArray(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toJSON(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toObject(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toggle(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def union(plus: js.Any*): js.Any = js.native
+    
+    /* CompleteClass */
+    override def zip(plus: js.Any*): js.Any = js.native
   }
   
   object internal {
     
     // TODO: These methods can be similar in others collection. One's should make some
     // class model.
-    @js.native
     trait AbstractSet extends StObject {
       
-      def addBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+      def addBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any
       
-      def addBeforeRangeChangeListener(plus: js.Any*): js.Any = js.native
+      def addBeforeRangeChangeListener(plus: js.Any*): js.Any
       
-      def addEach(plus: js.Any*): js.Any = js.native
+      def addEach(plus: js.Any*): js.Any
       
-      def addOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+      def addOwnPropertyChangeListener(plus: js.Any*): js.Any
       
-      def addRangeChangeListener(plus: js.Any*): js.Any = js.native
+      def addRangeChangeListener(plus: js.Any*): js.Any
       
-      def all(plus: js.Any*): js.Any = js.native
+      def all(plus: js.Any*): js.Any
       
-      def any(plus: js.Any*): js.Any = js.native
+      def any(plus: js.Any*): js.Any
       
-      def average(plus: js.Any*): js.Any = js.native
+      def average(plus: js.Any*): js.Any
       
-      def clone(plus: js.Any*): js.Any = js.native
+      def clone(plus: js.Any*): js.Any
       
-      def concat(plus: js.Any*): js.Any = js.native
+      def concat(plus: js.Any*): js.Any
       
-      def contains(plus: js.Any*): js.Any = js.native
+      def contains(plus: js.Any*): js.Any
       
-      def contentCompare(plus: js.Any*): js.Any = js.native
+      def contentCompare(plus: js.Any*): js.Any
       
-      def contentEquals(plus: js.Any*): js.Any = js.native
+      def contentEquals(plus: js.Any*): js.Any
       
-      def deleteAll(plus: js.Any*): js.Any = js.native
+      def deleteAll(plus: js.Any*): js.Any
       
-      def deleteEach(plus: js.Any*): js.Any = js.native
+      def deleteEach(plus: js.Any*): js.Any
       
-      def difference(plus: js.Any*): js.Any = js.native
+      def difference(plus: js.Any*): js.Any
       
-      def dispatchBeforeOwnPropertyChange(plus: js.Any*): js.Any = js.native
+      def dispatchBeforeOwnPropertyChange(plus: js.Any*): js.Any
       
-      def dispatchBeforeRangeChange(plus: js.Any*): js.Any = js.native
+      def dispatchBeforeRangeChange(plus: js.Any*): js.Any
       
-      def dispatchOwnPropertyChange(plus: js.Any*): js.Any = js.native
+      def dispatchOwnPropertyChange(plus: js.Any*): js.Any
       
-      def dispatchRangeChange(plus: js.Any*): js.Any = js.native
+      def dispatchRangeChange(plus: js.Any*): js.Any
       
-      def enumerate(plus: js.Any*): js.Any = js.native
+      def enumerate(plus: js.Any*): js.Any
       
-      def equals(plus: js.Any*): js.Any = js.native
+      def equals(plus: js.Any*): js.Any
       
-      def every(plus: js.Any*): js.Any = js.native
+      def every(plus: js.Any*): js.Any
       
-      def filter(plus: js.Any*): js.Any = js.native
+      def filter(plus: js.Any*): js.Any
       
-      def findValue(plus: js.Any*): js.Any = js.native
+      def findValue(plus: js.Any*): js.Any
       
-      def flatten(plus: js.Any*): js.Any = js.native
+      def flatten(plus: js.Any*): js.Any
       
-      def forEach(plus: js.Any*): js.Any = js.native
+      def forEach(plus: js.Any*): js.Any
       
-      def group(plus: js.Any*): js.Any = js.native
+      def group(plus: js.Any*): js.Any
       
-      def intersection(plus: js.Any*): js.Any = js.native
+      def intersection(plus: js.Any*): js.Any
       
-      def iterator(plus: js.Any*): js.Any = js.native
+      def iterator(plus: js.Any*): js.Any
       
-      def join(plus: js.Any*): js.Any = js.native
+      def join(plus: js.Any*): js.Any
       
-      def makePropertyObservable(plus: js.Any*): js.Any = js.native
+      def makePropertyObservable(plus: js.Any*): js.Any
       
-      def map(plus: js.Any*): js.Any = js.native
+      def map(plus: js.Any*): js.Any
       
-      def only(plus: js.Any*): js.Any = js.native
+      def only(plus: js.Any*): js.Any
       
-      def remove(plus: js.Any*): js.Any = js.native
+      def remove(plus: js.Any*): js.Any
       
-      def removeBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+      def removeBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any
       
-      def removeBeforeRangeChangeListener(plus: js.Any*): js.Any = js.native
+      def removeBeforeRangeChangeListener(plus: js.Any*): js.Any
       
-      def removeOwnPropertyChangeListener(plus: js.Any*): js.Any = js.native
+      def removeOwnPropertyChangeListener(plus: js.Any*): js.Any
       
-      def removeRangeChangeListener(plus: js.Any*): js.Any = js.native
+      def removeRangeChangeListener(plus: js.Any*): js.Any
       
-      def reversed(plus: js.Any*): js.Any = js.native
+      def reversed(plus: js.Any*): js.Any
       
-      def some(plus: js.Any*): js.Any = js.native
+      def some(plus: js.Any*): js.Any
       
-      def sorted(plus: js.Any*): js.Any = js.native
+      def sorted(plus: js.Any*): js.Any
       
-      def sortedSetLog(plus: js.Any*): js.Any = js.native
+      def sortedSetLog(plus: js.Any*): js.Any
       
-      def sum(plus: js.Any*): js.Any = js.native
+      def sum(plus: js.Any*): js.Any
       
-      def symmetricDifference(plus: js.Any*): js.Any = js.native
+      def symmetricDifference(plus: js.Any*): js.Any
       
-      def toArray(plus: js.Any*): js.Any = js.native
+      def toArray(plus: js.Any*): js.Any
       
-      def toJSON(plus: js.Any*): js.Any = js.native
+      def toJSON(plus: js.Any*): js.Any
       
-      def toObject(plus: js.Any*): js.Any = js.native
+      def toObject(plus: js.Any*): js.Any
       
-      def toggle(plus: js.Any*): js.Any = js.native
+      def toggle(plus: js.Any*): js.Any
       
-      def union(plus: js.Any*): js.Any = js.native
+      def union(plus: js.Any*): js.Any
       
-      def zip(plus: js.Any*): js.Any = js.native
+      def zip(plus: js.Any*): js.Any
     }
     object AbstractSet {
       
@@ -414,10 +549,9 @@ object sortedSetMod {
       }
     }
     
-    @js.native
     trait Iterator[T] extends StObject {
       
-      def next(): Done[T] = js.native
+      def next(): Done[T]
     }
     object Iterator {
       
@@ -428,23 +562,22 @@ object sortedSetMod {
       }
       
       @scala.inline
-      implicit class IteratorMutableBuilder[Self <: Iterator[_], T] (val x: Self with Iterator[T]) extends AnyVal {
+      implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
         
         @scala.inline
         def setNext(value: () => Done[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait Node[T] extends StObject {
       
-      def checkIntegrity(plus: js.Any*): Double = js.native
+      def checkIntegrity(plus: js.Any*): Double
       
-      def getNext(plus: js.Any*): js.UndefOr[Node[T]] = js.native
+      def getNext(plus: js.Any*): js.UndefOr[Node[T]]
       
-      def getPrevious(plus: js.Any*): js.UndefOr[Node[T]] = js.native
+      def getPrevious(plus: js.Any*): js.UndefOr[Node[T]]
       
-      def log(charmap: js.Any, logNode: js.Any, log: js.Any, logAbove: js.Any): js.Any = js.native
+      def log(charmap: js.Any, logNode: js.Any, log: js.Any, logAbove: js.Any): js.Any
       
       def reduce(
         cb: js.Function4[
@@ -452,18 +585,18 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ],
         basis: js.Any,
         index: Double,
         thisp: js.Any,
         tree: js.Any,
         depth: Double
-      ): js.Any = js.native
+      ): js.Any
       
-      def summary(plus: js.Any*): String = js.native
+      def summary(plus: js.Any*): String
       
-      def touch(plus: js.Any*): Unit = js.native
+      def touch(plus: js.Any*): Unit
     }
     object Node {
       
@@ -478,7 +611,7 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ], js.Any, Double, js.Any, js.Any, Double) => js.Any,
         summary: /* repeated */ js.Any => String,
         touch: /* repeated */ js.Any => Unit
@@ -488,7 +621,7 @@ object sortedSetMod {
       }
       
       @scala.inline
-      implicit class NodeMutableBuilder[Self <: Node[_], T] (val x: Self with Node[T]) extends AnyVal {
+      implicit class NodeMutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
         
         @scala.inline
         def setCheckIntegrity(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "checkIntegrity", js.Any.fromFunction1(value))
@@ -509,7 +642,7 @@ object sortedSetMod {
                   /* val */ js.UndefOr[js.Any], 
                   /* key */ js.UndefOr[js.Any], 
                   /* collection */ js.UndefOr[js.Any], 
-                  _
+                  js.Any
                 ], js.Any, Double, js.Any, js.Any, Double) => js.Any
         ): Self = StObject.set(x, "reduce", js.Any.fromFunction6(value))
         
@@ -522,7 +655,9 @@ object sortedSetMod {
     }
     
     @js.native
-    trait SortedSet[T] extends AbstractSet {
+    trait SortedSet[T]
+      extends StObject
+         with AbstractSet {
       
       def add(value: T): Boolean = js.native
       
@@ -577,7 +712,7 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ]
       ): js.Any = js.native
       def reduce(
@@ -586,18 +721,7 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
-            ],
-        basis: js.UndefOr[scala.Nothing],
-        thisp: js.Any
-      ): js.Any = js.native
-      def reduce(
-        callback: js.Function4[
-              /* result */ js.UndefOr[js.Any], 
-              /* val */ js.UndefOr[js.Any], 
-              /* key */ js.UndefOr[js.Any], 
-              /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ],
         basis: js.Any
       ): js.Any = js.native
@@ -607,9 +731,20 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ],
         basis: js.Any,
+        thisp: js.Any
+      ): js.Any = js.native
+      def reduce(
+        callback: js.Function4[
+              /* result */ js.UndefOr[js.Any], 
+              /* val */ js.UndefOr[js.Any], 
+              /* key */ js.UndefOr[js.Any], 
+              /* collection */ js.UndefOr[js.Any], 
+              js.Any
+            ],
+        basis: Unit,
         thisp: js.Any
       ): js.Any = js.native
       
@@ -619,7 +754,7 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ]
       ): js.Any = js.native
       def reduceRight(
@@ -628,18 +763,7 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
-            ],
-        basis: js.UndefOr[scala.Nothing],
-        thisp: js.Any
-      ): js.Any = js.native
-      def reduceRight(
-        callback: js.Function4[
-              /* result */ js.UndefOr[js.Any], 
-              /* val */ js.UndefOr[js.Any], 
-              /* key */ js.UndefOr[js.Any], 
-              /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ],
         basis: js.Any
       ): js.Any = js.native
@@ -649,18 +773,29 @@ object sortedSetMod {
               /* val */ js.UndefOr[js.Any], 
               /* key */ js.UndefOr[js.Any], 
               /* collection */ js.UndefOr[js.Any], 
-              _
+              js.Any
             ],
         basis: js.Any,
+        thisp: js.Any
+      ): js.Any = js.native
+      def reduceRight(
+        callback: js.Function4[
+              /* result */ js.UndefOr[js.Any], 
+              /* val */ js.UndefOr[js.Any], 
+              /* key */ js.UndefOr[js.Any], 
+              /* collection */ js.UndefOr[js.Any], 
+              js.Any
+            ],
+        basis: Unit,
         thisp: js.Any
       ): js.Any = js.native
       
       def shift(): js.UndefOr[T] = js.native
       
       def slice(): js.Array[T] = js.native
-      def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
       def slice(start: Double): js.Array[T] = js.native
       def slice(start: Double, end: Double): js.Array[T] = js.native
+      def slice(start: Unit, end: Double): js.Array[T] = js.native
       
       def splay(value: T): Unit = js.native
       

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNativeElements.anon.PartialTextInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-elements", "Input")

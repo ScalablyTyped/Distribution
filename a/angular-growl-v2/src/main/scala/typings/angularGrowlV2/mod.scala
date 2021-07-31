@@ -11,7 +11,6 @@ import typings.angular.mod.IServiceProvider
 import typings.angular.mod.global.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -22,21 +21,22 @@ object mod {
     /**
       * Growl message with configuration.
       */
-    @js.native
-    trait IGrowlMessage extends IGrowlMessageConfig {
+    trait IGrowlMessage
+      extends StObject
+         with IGrowlMessageConfig {
       
       /**
         * Destroy the message.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * Update the message body.
         * @param newText new message body
         */
-      def setText(newText: String): Unit = js.native
+      def setText(newText: String): Unit
       
-      var text: String = js.native
+      var text: String
     }
     object IGrowlMessage {
       
@@ -63,30 +63,29 @@ object mod {
     /**
       * Custom configuration used in single message call.
       */
-    @js.native
     trait IGrowlMessageConfig extends StObject {
       
-      var disableCloseButton: js.UndefOr[Boolean] = js.native
+      var disableCloseButton: js.UndefOr[Boolean] = js.undefined
       
-      var disableCountDown: js.UndefOr[Boolean] = js.native
+      var disableCountDown: js.UndefOr[Boolean] = js.undefined
       
-      var disableIcons: js.UndefOr[Boolean] = js.native
+      var disableIcons: js.UndefOr[Boolean] = js.undefined
       
-      var onclose: js.UndefOr[Function] = js.native
+      var onclose: js.UndefOr[Function] = js.undefined
       
-      var onopen: js.UndefOr[Function] = js.native
+      var onopen: js.UndefOr[Function] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var referenceId: js.UndefOr[Double] = js.native
+      var referenceId: js.UndefOr[Double] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var translateMessage: js.UndefOr[Boolean] = js.native
+      var translateMessage: js.UndefOr[Boolean] = js.undefined
       
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
       
-      var variables: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var variables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object IGrowlMessageConfig {
       
@@ -209,7 +208,9 @@ object mod {
       * Growl service provider.
       */
     @js.native
-    trait IGrowlProvider extends IServiceProvider {
+    trait IGrowlProvider
+      extends StObject
+         with IServiceProvider {
       
       /**
         * Set default setting for disabling close button.
@@ -397,16 +398,15 @@ object mod {
     /**
       * Global Time-To-Leave configuration.
       */
-    @js.native
     trait IGrowlTTLConfig extends StObject {
       
-      var error: js.UndefOr[Double] = js.native
+      var error: js.UndefOr[Double] = js.undefined
       
-      var info: js.UndefOr[Double] = js.native
+      var info: js.UndefOr[Double] = js.undefined
       
-      var success: js.UndefOr[Double] = js.native
+      var success: js.UndefOr[Double] = js.undefined
       
-      var warning: js.UndefOr[Double] = js.native
+      var warning: js.UndefOr[Double] = js.undefined
     }
     object IGrowlTTLConfig {
       

@@ -4,15 +4,13 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeWindows.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkBoxPropsMod {
   
-  @js.native
   trait ICheckBoxChangeEvent extends StObject {
     
-    var nativeEvent: Value = js.native
+    var nativeEvent: Value
   }
   object ICheckBoxChangeEvent {
     
@@ -30,18 +28,19 @@ object checkBoxPropsMod {
     }
   }
   
-  @js.native
-  trait ICheckBoxProps extends ViewProps {
+  trait ICheckBoxProps
+    extends StObject
+       with ViewProps {
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ ICheckBoxChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ ICheckBoxChangeEvent, Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
     
-    var value: js.UndefOr[Boolean] = js.native
+    var value: js.UndefOr[Boolean] = js.undefined
   }
   object ICheckBoxProps {
     

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "documenttemplates.TemplateGridContents")
@@ -37,9 +36,8 @@ object TemplateGridContents {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.TemplateGridContents.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents]
   
   /**
     * Creates and returns a new TemplateGridContents instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object TemplateGridContents {
     * of the parent TemplateGrid element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.TemplateGridContents.createInTemplateGridUnderEvenRowsContents")
-  @js.native
-  def createInTemplateGridUnderEvenRowsContents(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = js.native
+  @scala.inline
+  def createInTemplateGridUnderEvenRowsContents(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridUnderEvenRowsContents")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents]
   
   /**
     * Creates and returns a new TemplateGridContents instance in the SDK and on the server.
@@ -57,9 +54,8 @@ object TemplateGridContents {
     * of the parent TemplateGrid element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.TemplateGridContents.createInTemplateGridUnderOddRowsContents")
-  @js.native
-  def createInTemplateGridUnderOddRowsContents(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = js.native
+  @scala.inline
+  def createInTemplateGridUnderOddRowsContents(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridUnderOddRowsContents")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.TemplateGridContents.structureTypeName")

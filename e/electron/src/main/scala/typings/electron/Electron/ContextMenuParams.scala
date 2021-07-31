@@ -13,113 +13,111 @@ import typings.electron.electronStrings.touchMenu
 import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuParams extends StObject {
   
   /**
     * An array of suggested words to show the user to replace the `misspelledWord`.
     * Only available if there is a misspelled word and spellchecker is enabled.
     */
-  var dictionarySuggestions: js.Array[String] = js.native
+  var dictionarySuggestions: js.Array[String]
   
   /**
     * These flags indicate whether the renderer believes it is able to perform the
     * corresponding action.
     */
-  var editFlags: EditFlags = js.native
+  var editFlags: EditFlags
   
   /**
     * The character encoding of the frame on which the menu was invoked.
     */
-  var frameCharset: String = js.native
+  var frameCharset: String
   
   /**
     * URL of the subframe that the context menu was invoked on.
     */
-  var frameURL: String = js.native
+  var frameURL: String
   
   /**
     * Whether the context menu was invoked on an image which has non-empty contents.
     */
-  var hasImageContents: Boolean = js.native
+  var hasImageContents: Boolean
   
   /**
     * If the context menu was invoked on an input field, the type of that field.
     * Possible values are `none`, `plainText`, `password`, `other`.
     */
-  var inputFieldType: String = js.native
+  var inputFieldType: String
   
   /**
     * Whether the context is editable.
     */
-  var isEditable: Boolean = js.native
+  var isEditable: Boolean
   
   /**
     * Text associated with the link. May be an empty string if the contents of the
     * link are an image.
     */
-  var linkText: String = js.native
+  var linkText: String
   
   /**
     * URL of the link that encloses the node the context menu was invoked on.
     */
-  var linkURL: String = js.native
+  var linkURL: String
   
   /**
     * The flags for the media element the context menu was invoked on.
     */
-  var mediaFlags: MediaFlags = js.native
+  var mediaFlags: MediaFlags
   
   /**
     * Type of the node the context menu was invoked on. Can be `none`, `image`,
     * `audio`, `video`, `canvas`, `file` or `plugin`.
     */
-  var mediaType: none | image | audio | video | canvas | file | plugin = js.native
+  var mediaType: none | image | audio | video | canvas | file | plugin
   
   /**
     * Input source that invoked the context menu. Can be `none`, `mouse`, `keyboard`,
     * `touch` or `touchMenu`.
     */
-  var menuSourceType: none | mouse | keyboard | touch | touchMenu = js.native
+  var menuSourceType: none | mouse | keyboard | touch | touchMenu
   
   /**
     * The misspelled word under the cursor, if any.
     */
-  var misspelledWord: String = js.native
+  var misspelledWord: String
   
   /**
     * URL of the top level page that the context menu was invoked on.
     */
-  var pageURL: String = js.native
+  var pageURL: String
   
   /**
     * Text of the selection that the context menu was invoked on.
     */
-  var selectionText: String = js.native
+  var selectionText: String
   
   /**
     * Source URL for the element that the context menu was invoked on. Elements with
     * source URLs are images, audio and video.
     */
-  var srcURL: String = js.native
+  var srcURL: String
   
   /**
     * Title or alt text of the selection that the context was invoked on.
     */
-  var titleText: String = js.native
+  var titleText: String
   
   /**
     * x coordinate.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * y coordinate.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object ContextMenuParams {
   

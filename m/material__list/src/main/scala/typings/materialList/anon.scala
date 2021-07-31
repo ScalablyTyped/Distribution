@@ -2,43 +2,41 @@ package typings.materialList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIONEVENT extends StObject {
     
-    var ACTION_EVENT: String = js.native
+    var ACTION_EVENT: String
     
-    var ARIA_CHECKED: String = js.native
+    var ARIA_CHECKED: String
     
-    var ARIA_CHECKED_CHECKBOX_SELECTOR: String = js.native
+    var ARIA_CHECKED_CHECKBOX_SELECTOR: String
     
-    var ARIA_CHECKED_RADIO_SELECTOR: String = js.native
+    var ARIA_CHECKED_RADIO_SELECTOR: String
     
-    var ARIA_CURRENT: String = js.native
+    var ARIA_CURRENT: String
     
-    var ARIA_DISABLED: String = js.native
+    var ARIA_DISABLED: String
     
-    var ARIA_ORIENTATION: String = js.native
+    var ARIA_ORIENTATION: String
     
-    var ARIA_ORIENTATION_HORIZONTAL: String = js.native
+    var ARIA_ORIENTATION_HORIZONTAL: String
     
-    var ARIA_ROLE_CHECKBOX_SELECTOR: String = js.native
+    var ARIA_ROLE_CHECKBOX_SELECTOR: String
     
-    var ARIA_SELECTED: String = js.native
+    var ARIA_SELECTED: String
     
-    var CHECKBOX_RADIO_SELECTOR: String = js.native
+    var CHECKBOX_RADIO_SELECTOR: String
     
-    var CHECKBOX_SELECTOR: String = js.native
+    var CHECKBOX_SELECTOR: String
     
-    var CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: String = js.native
+    var CHILD_ELEMENTS_TO_TOGGLE_TABINDEX: String
     
-    var FOCUSABLE_CHILD_ELEMENTS: String = js.native
+    var FOCUSABLE_CHILD_ELEMENTS: String
     
-    var RADIO_SELECTOR: String = js.native
+    var RADIO_SELECTOR: String
   }
   object ACTIONEVENT {
     
@@ -114,22 +112,21 @@ object anon {
     }
   }
   
-  @js.native
   trait LISTITEMACTIVATEDCLASS extends StObject {
     
-    var LIST_ITEM_ACTIVATED_CLASS: String = js.native
+    var LIST_ITEM_ACTIVATED_CLASS: String
     
-    var LIST_ITEM_CLASS: String = js.native
+    var LIST_ITEM_CLASS: String
     
-    var LIST_ITEM_DISABLED_CLASS: String = js.native
+    var LIST_ITEM_DISABLED_CLASS: String
     
-    var LIST_ITEM_PRIMARY_TEXT_CLASS: String = js.native
+    var LIST_ITEM_PRIMARY_TEXT_CLASS: String
     
-    var LIST_ITEM_SELECTED_CLASS: String = js.native
+    var LIST_ITEM_SELECTED_CLASS: String
     
-    var LIST_ITEM_TEXT_CLASS: String = js.native
+    var LIST_ITEM_TEXT_CLASS: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object LISTITEMACTIVATEDCLASS {
     
@@ -174,44 +171,43 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/list.@material/list/adapter.MDCListAdapter> */
-  @js.native
   trait PartialMDCListAdapter extends StObject {
     
-    var addClassForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.native
+    var addClassForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
     
-    var focusItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var getAttributeForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* attr */ String, String | Null]] = js.native
+    var getAttributeForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* attr */ String, String | Null]] = js.undefined
     
-    var getFocusedElementIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getFocusedElementIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getListItemCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getListItemCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getPrimaryTextAtIndex: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+    var getPrimaryTextAtIndex: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
     
-    var hasCheckboxAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var hasCheckboxAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var hasRadioAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var hasRadioAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var isCheckboxCheckedAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var isCheckboxCheckedAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var isFocusInsideList: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isFocusInsideList: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isRootFocused: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRootFocused: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var listItemAtIndexHasClass: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Boolean]] = js.native
+    var listItemAtIndexHasClass: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Boolean]] = js.undefined
     
-    var notifyAction: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var notifyAction: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var removeClassForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.native
+    var removeClassForElementIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
     
     var setAttributeForElementIndex: js.UndefOr[
         js.Function3[/* index */ Double, /* attribute */ String, /* value */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var setCheckedCheckboxOrRadioAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* isChecked */ Boolean, Unit]] = js.native
+    var setCheckedCheckboxOrRadioAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* isChecked */ Boolean, Unit]] = js.undefined
     
-    var setTabIndexForListItemChildren: js.UndefOr[js.Function2[/* listItemIndex */ Double, /* tabIndexValue */ String, Unit]] = js.native
+    var setTabIndexForListItemChildren: js.UndefOr[js.Function2[/* listItemIndex */ Double, /* tabIndexValue */ String, Unit]] = js.undefined
   }
   object PartialMDCListAdapter {
     
@@ -328,12 +324,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TYPEAHEADBUFFERCLEARTIMEOUTMS extends StObject {
     
-    var TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double = js.native
+    var TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double
     
-    var UNSET_INDEX: Double = js.native
+    var UNSET_INDEX: Double
   }
   object TYPEAHEADBUFFERCLEARTIMEOUTMS {
     

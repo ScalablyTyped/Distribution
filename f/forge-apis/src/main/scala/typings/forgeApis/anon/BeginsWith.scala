@@ -2,17 +2,15 @@ package typings.forgeApis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginsWith extends StObject {
   
-  var beginsWith: js.UndefOr[String] = js.native
+  var beginsWith: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var startAt: js.UndefOr[String] = js.native
+  var startAt: js.UndefOr[String] = js.undefined
 }
 object BeginsWith {
   

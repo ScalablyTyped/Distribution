@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSummaryForWorkItem extends StObject {
   
-  var summary: AggregatedDataForResultTrend = js.native
+  var summary: AggregatedDataForResultTrend
   
-  var workItem: WorkItemReference = js.native
+  var workItem: WorkItemReference
 }
 object TestSummaryForWorkItem {
   

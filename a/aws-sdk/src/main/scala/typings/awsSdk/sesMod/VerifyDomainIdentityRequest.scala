@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyDomainIdentityRequest extends StObject {
   
   /**
     * The domain to be verified.
     */
-  var Domain: typings.awsSdk.sesMod.Domain = js.native
+  var Domain: typings.awsSdk.sesMod.Domain
 }
 object VerifyDomainIdentityRequest {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AccessibleIcon. This interface lets you retrieve an image's size and description.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleImage extends XInterface {
+trait XAccessibleImage
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the localized description of the image.
@@ -24,7 +24,7 @@ trait XAccessibleImage extends XInterface {
     * (e.g. for image maps or non-iconic images embedded into a document.)
     * @returns Returns a localized string that describes the image's function or content.
     */
-  val AccessibleImageDescription: String = js.native
+  val AccessibleImageDescription: String
   
   /**
     * Returns the height of the image.
@@ -32,7 +32,7 @@ trait XAccessibleImage extends XInterface {
     * The height is returned in units specified by the parents coordinate system.
     * @returns Returns the image's height with respect to the parent's coordinate system.
     */
-  val AccessibleImageHeight: Double = js.native
+  val AccessibleImageHeight: Double
   
   /**
     * Returns the width of the image.
@@ -40,7 +40,7 @@ trait XAccessibleImage extends XInterface {
     * The width is returned in units specified by the parents coordinate system.
     * @returns Returns the image's width with respect to the parent's coordinate system.
     */
-  val AccessibleImageWidth: Double = js.native
+  val AccessibleImageWidth: Double
   
   /**
     * Returns the localized description of the image.
@@ -49,7 +49,7 @@ trait XAccessibleImage extends XInterface {
     * (e.g. for image maps or non-iconic images embedded into a document.)
     * @returns Returns a localized string that describes the image's function or content.
     */
-  def getAccessibleImageDescription(): String = js.native
+  def getAccessibleImageDescription(): String
   
   /**
     * Returns the height of the image.
@@ -57,7 +57,7 @@ trait XAccessibleImage extends XInterface {
     * The height is returned in units specified by the parents coordinate system.
     * @returns Returns the image's height with respect to the parent's coordinate system.
     */
-  def getAccessibleImageHeight(): Double = js.native
+  def getAccessibleImageHeight(): Double
   
   /**
     * Returns the width of the image.
@@ -65,7 +65,7 @@ trait XAccessibleImage extends XInterface {
     * The width is returned in units specified by the parents coordinate system.
     * @returns Returns the image's width with respect to the parent's coordinate system.
     */
-  def getAccessibleImageWidth(): Double = js.native
+  def getAccessibleImageWidth(): Double
 }
 object XAccessibleImage {
   

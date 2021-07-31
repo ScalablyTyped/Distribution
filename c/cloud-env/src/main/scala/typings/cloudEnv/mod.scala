@@ -2,10 +2,13 @@ package typings.cloudEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cloud-env", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cloud-env", "APP_NAME")
   @js.native
@@ -83,53 +86,50 @@ object mod {
   @js.native
   val POSTGRESQL_DB_USERNAME: MaybeStr = js.native
   
-  @JSImport("cloud-env", "get")
-  @js.native
-  def get(key: String): MaybeStr = js.native
-  @JSImport("cloud-env", "get")
-  @js.native
-  def get(key: String, default_key: String): MaybeStr = js.native
+  @scala.inline
+  def get(key: String): MaybeStr = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[MaybeStr]
+  @scala.inline
+  def get(key: String, default_key: String): MaybeStr = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], default_key.asInstanceOf[js.Any])).asInstanceOf[MaybeStr]
   
-  @js.native
   trait DefaultSettings extends StObject {
     
-    var APP_NAME: js.UndefOr[String] = js.native
+    var APP_NAME: js.UndefOr[String] = js.undefined
     
-    var HOSTNAME: js.UndefOr[String] = js.native
+    var HOSTNAME: js.UndefOr[String] = js.undefined
     
-    var IP: js.UndefOr[String] = js.native
+    var IP: js.UndefOr[String] = js.undefined
     
-    var MONGODB_DB_HOST: js.UndefOr[String] = js.native
+    var MONGODB_DB_HOST: js.UndefOr[String] = js.undefined
     
-    var MONGODB_DB_PASSWORD: js.UndefOr[String] = js.native
+    var MONGODB_DB_PASSWORD: js.UndefOr[String] = js.undefined
     
-    var MONGODB_DB_PORT: js.UndefOr[Double] = js.native
+    var MONGODB_DB_PORT: js.UndefOr[Double] = js.undefined
     
-    var MONGODB_DB_URL: js.UndefOr[String] = js.native
+    var MONGODB_DB_URL: js.UndefOr[String] = js.undefined
     
-    var MONGODB_DB_USERNAME: js.UndefOr[String] = js.native
+    var MONGODB_DB_USERNAME: js.UndefOr[String] = js.undefined
     
-    var MYSQL_DB_HOST: js.UndefOr[String] = js.native
+    var MYSQL_DB_HOST: js.UndefOr[String] = js.undefined
     
-    var MYSQL_DB_PASSWORD: js.UndefOr[String] = js.native
+    var MYSQL_DB_PASSWORD: js.UndefOr[String] = js.undefined
     
-    var MYSQL_DB_PORT: js.UndefOr[Double] = js.native
+    var MYSQL_DB_PORT: js.UndefOr[Double] = js.undefined
     
-    var MYSQL_DB_URL: js.UndefOr[String] = js.native
+    var MYSQL_DB_URL: js.UndefOr[String] = js.undefined
     
-    var MYSQL_DB_USERNAME: js.UndefOr[String] = js.native
+    var MYSQL_DB_USERNAME: js.UndefOr[String] = js.undefined
     
-    var PORT: js.UndefOr[Double] = js.native
+    var PORT: js.UndefOr[Double] = js.undefined
     
-    var POSTGRESQL_DB_HOST: js.UndefOr[String] = js.native
+    var POSTGRESQL_DB_HOST: js.UndefOr[String] = js.undefined
     
-    var POSTGRESQL_DB_PASSWORD: js.UndefOr[String] = js.native
+    var POSTGRESQL_DB_PASSWORD: js.UndefOr[String] = js.undefined
     
-    var POSTGRESQL_DB_PORT: js.UndefOr[Double] = js.native
+    var POSTGRESQL_DB_PORT: js.UndefOr[Double] = js.undefined
     
-    var POSTGRESQL_DB_URL: js.UndefOr[String] = js.native
+    var POSTGRESQL_DB_URL: js.UndefOr[String] = js.undefined
     
-    var POSTGRESQL_DB_USERNAME: js.UndefOr[String] = js.native
+    var POSTGRESQL_DB_USERNAME: js.UndefOr[String] = js.undefined
   }
   object DefaultSettings {
     

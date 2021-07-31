@@ -2,42 +2,40 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSymbol extends StObject {
   
   /**
     * Address that this symbol is for.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * File name owning this symbol, or `null` if unknown.
     */
-  var fileName: String | Null = js.native
+  var fileName: String | Null
   
   /**
     * Line number in `fileName`, or `null` if unknown.
     */
-  var lineNumber: Double | Null = js.native
+  var lineNumber: Double | Null
   
   /**
     * Module name owning this symbol, or `null` if unknown.
     */
-  var moduleName: String | Null = js.native
+  var moduleName: String | Null
   
   /**
     * Name of the symbol, or `null` if unknown.
     */
-  var name: String | Null = js.native
+  var name: String | Null
 }
 object DebugSymbol {
   
   @scala.inline
   def apply(address: NativePointer): DebugSymbol = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], fileName = null, lineNumber = null, moduleName = null, name = null)
     __obj.asInstanceOf[DebugSymbol]
   }
   

@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionVpcConfig extends StObject {
   
   /**
     * A list of security group IDs associated with the Lambda function.
     */
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
   /**
     * A list of subnet IDs associated with the Lambda function.
     */
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object FunctionVpcConfig {
   

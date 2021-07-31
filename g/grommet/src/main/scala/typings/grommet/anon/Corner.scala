@@ -16,17 +16,17 @@ import typings.grommet.grommetStrings.xsmall
 import typings.grommet.utilsMod._RoundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Corner extends _RoundType {
+trait Corner
+  extends StObject
+     with _RoundType {
   
   var corner: js.UndefOr[
     top | left | bottom | right | `top-left` | `top-right` | `bottom-left` | `bottom-right`
-  ] = js.native
+  ] = js.undefined
   
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
 }
 object Corner {
   

@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Instant")
@@ -103,33 +102,26 @@ object Instant {
   def MIN_SECONDS_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SECONDS")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "Instant.from")
-  @js.native
-  def from(temporal: TemporalAccessor): Instant = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[Instant]
   
   /* static member */
-  @JSImport("js-joda", "Instant.now")
-  @js.native
-  def now(): Instant = js.native
-  @JSImport("js-joda", "Instant.now")
-  @js.native
-  def now(clock: Clock): Instant = js.native
+  @scala.inline
+  def now(): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Instant]
+  @scala.inline
+  def now(clock: Clock): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clock.asInstanceOf[js.Any]).asInstanceOf[Instant]
   
   /* static member */
-  @JSImport("js-joda", "Instant.ofEpochMilli")
-  @js.native
-  def ofEpochMilli(epochMilli: Double): Instant = js.native
+  @scala.inline
+  def ofEpochMilli(epochMilli: Double): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochMilli")(epochMilli.asInstanceOf[js.Any]).asInstanceOf[Instant]
   
   /* static member */
-  @JSImport("js-joda", "Instant.ofEpochSecond")
-  @js.native
-  def ofEpochSecond(epochSecond: Double): Instant = js.native
-  @JSImport("js-joda", "Instant.ofEpochSecond")
-  @js.native
-  def ofEpochSecond(epochSecond: Double, nanoAdjustment: Double): Instant = js.native
+  @scala.inline
+  def ofEpochSecond(epochSecond: Double): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any]).asInstanceOf[Instant]
+  @scala.inline
+  def ofEpochSecond(epochSecond: Double, nanoAdjustment: Double): Instant = (^.asInstanceOf[js.Dynamic].applyDynamic("ofEpochSecond")(epochSecond.asInstanceOf[js.Any], nanoAdjustment.asInstanceOf[js.Any])).asInstanceOf[Instant]
   
   /* static member */
-  @JSImport("js-joda", "Instant.parse")
-  @js.native
-  def parse(text: String): Instant = js.native
+  @scala.inline
+  def parse(text: String): Instant = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Instant]
 }

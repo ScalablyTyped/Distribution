@@ -6,29 +6,29 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDataSeriesContainer extends XInterface {
+trait XDataSeriesContainer
+  extends StObject
+     with XInterface {
   
   /** retrieve all data series */
-  var DataSeries: SafeArray[XDataSeries] = js.native
+  var DataSeries: SafeArray[XDataSeries]
   
   /**
     * add a data series to the data series container
     * @throws IllegalArgumentException If the given data series is already contained in the data series container.
     */
-  def addDataSeries(aDataSeries: XDataSeries): Unit = js.native
+  def addDataSeries(aDataSeries: XDataSeries): Unit
   
   /** retrieve all data series */
-  def getDataSeries(): SafeArray[XDataSeries] = js.native
+  def getDataSeries(): SafeArray[XDataSeries]
   
   /** removes one data series from the data series container. */
-  def removeDataSeries(aDataSeries: XDataSeries): Unit = js.native
+  def removeDataSeries(aDataSeries: XDataSeries): Unit
   
   /** set all data series */
-  def setDataSeries(aDataSeries: SeqEquiv[XDataSeries]): Unit = js.native
+  def setDataSeries(aDataSeries: SeqEquiv[XDataSeries]): Unit
 }
 object XDataSeriesContainer {
   

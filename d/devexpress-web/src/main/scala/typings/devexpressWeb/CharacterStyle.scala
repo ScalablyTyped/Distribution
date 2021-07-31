@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains characteristics of a character style in a document.
   */
-@js.native
-trait CharacterStyle extends StyleBase {
+trait CharacterStyle
+  extends StObject
+     with StyleBase {
   
   /**
     * Gets or sets the linked style for the current style.
     */
-  val linkedStyle: ParagraphStyle = js.native
+  val linkedStyle: ParagraphStyle
   
   /**
     * Gets the style form which the current style inherits.
     */
-  val parent: CharacterStyle = js.native
+  val parent: CharacterStyle
 }
 object CharacterStyle {
   

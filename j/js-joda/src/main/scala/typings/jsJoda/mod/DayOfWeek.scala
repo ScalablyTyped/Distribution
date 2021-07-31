@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "DayOfWeek")
@@ -87,22 +86,18 @@ object DayOfWeek {
   def WEDNESDAY_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEDNESDAY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "DayOfWeek.from")
-  @js.native
-  def from(temporal: TemporalAccessor): DayOfWeek = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @JSImport("js-joda", "DayOfWeek.of")
-  @js.native
-  def of(dayOfWeek: Double): DayOfWeek = js.native
+  @scala.inline
+  def of(dayOfWeek: Double): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(dayOfWeek.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @JSImport("js-joda", "DayOfWeek.valueOf")
-  @js.native
-  def valueOf_(name: String): DayOfWeek = js.native
+  @scala.inline
+  def valueOf_(name: String): DayOfWeek = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[DayOfWeek]
   
   /* static member */
-  @JSImport("js-joda", "DayOfWeek.values")
-  @js.native
-  def values(): js.Array[DayOfWeek] = js.native
+  @scala.inline
+  def values(): js.Array[DayOfWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[DayOfWeek]]
 }

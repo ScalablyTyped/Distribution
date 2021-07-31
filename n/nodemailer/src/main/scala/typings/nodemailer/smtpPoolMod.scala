@@ -16,7 +16,6 @@ import typings.nodemailer.smtpConnectionMod.ms
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smtpPoolMod {
@@ -29,15 +28,32 @@ object smtpPoolMod {
   class ^ () extends SMTPPool {
     def this(options: String) = this()
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    override def send(
+      mail: typings.nodemailer.mailMessageMod.^,
+      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var verify: (js.UndefOr[
+        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
   }
   
-  @js.native
   trait MailOptions
-    extends typings.nodemailer.mailerMod.Options {
+    extends StObject
+       with typings.nodemailer.mailerMod.Options {
     
-    var auth: js.UndefOr[AuthenticationType] = js.native
+    var auth: js.UndefOr[AuthenticationType] = js.undefined
     
-    var dsn: js.UndefOr[DSNOptions] = js.native
+    var dsn: js.UndefOr[DSNOptions] = js.undefined
   }
   object MailOptions {
     
@@ -65,24 +81,24 @@ object smtpPoolMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nodemailer.smtpConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection, customAuth */ @js.native
-  trait Options
-    extends MailOptions
+  - typings.nodemailer.smtpConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection, customAuth */ trait Options
+    extends StObject
+       with MailOptions
        with TransportOptions {
     
     /** defines preferred authentication method, e.g. ‘PLAIN’ */
-    var authMethod: js.UndefOr[String] = js.native
+    var authMethod: js.UndefOr[String] = js.undefined
     
     /** connected socket to use instead of creating and connecting a new one. If secure option is true, then socket is upgraded from plaintext to ciphertext */
-    var connection: js.UndefOr[Socket] = js.native
+    var connection: js.UndefOr[Socket] = js.undefined
     
     /** how many milliseconds to wait for the connection to establish */
-    var connectionTimeout: js.UndefOr[ms] = js.native
+    var connectionTimeout: js.UndefOr[ms] = js.undefined
     
-    var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.native
+    var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.undefined
     
     /** if set to true, then logs SMTP traffic and message content, otherwise logs only transaction events */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     var getSocket: js.UndefOr[
         js.Function2[
@@ -90,75 +106,75 @@ object smtpPoolMod {
           /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** how many milliseconds to wait for the greeting after connection is established */
-    var greetingTimeout: js.UndefOr[ms] = js.native
+    var greetingTimeout: js.UndefOr[ms] = js.undefined
     
     /** the hostname or IP address to connect to (defaults to ‘localhost’) */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /** turns off STARTTLS support if true */
-    var ignoreTLS: js.UndefOr[Boolean] = js.native
+    var ignoreTLS: js.UndefOr[Boolean] = js.undefined
     
     /** the local interface to bind to for network connections */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /** optional bunyan compatible logger instance. If set to true then logs to console. If value is not set or is false then nothing is logged */
-    var logger: js.UndefOr[Logger | Boolean] = js.native
+    var logger: js.UndefOr[Logger | Boolean] = js.undefined
     
     /** the count of maximum simultaneous connections to make against the SMTP server (defaults to 5) */
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
     /** limits the message count to be sent using a single connection (defaults to 100). After maxMessages is reached the connection is dropped and a new one is created for the following messages */
-    var maxMessages: js.UndefOr[Double] = js.native
+    var maxMessages: js.UndefOr[Double] = js.undefined
     
     /** optional hostname of the client, used for identifying to the server */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** tries to use STARTTLS and continues normally if it fails */
-    var opportunisticTLS: js.UndefOr[Boolean] = js.native
+    var opportunisticTLS: js.UndefOr[Boolean] = js.undefined
     
     /** set to true to use pooled connections (defaults to false) instead of creating a new connection for every email */
-    var pool: `true` = js.native
+    var pool: `true`
     
     /** the port to connect to (defaults to 25 or 465) */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** defines the time measuring period in milliseconds (defaults to 1000, ie. to 1 second) for rate limiting */
-    var rateDelta: js.UndefOr[Double] = js.native
+    var rateDelta: js.UndefOr[Double] = js.undefined
     
     /** limits the message count to be sent in rateDelta time. Once rateLimit is reached, sending is paused until the end of the measuring period. This limit is shared between connections, so if one connection uses up the limit, then other connections are paused as well. If rateLimit is not set then sending rate is not limited */
-    var rateLimit: js.UndefOr[Double] = js.native
+    var rateLimit: js.UndefOr[Double] = js.undefined
     
     /** forces the client to use STARTTLS. Returns an error if upgrading the connection is not possible or fails. */
-    var requireTLS: js.UndefOr[Boolean] = js.native
+    var requireTLS: js.UndefOr[Boolean] = js.undefined
     
     /** defines if the connection should use SSL (if true) or not (if false) */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
     /** initialized socket to use instead of creating a new one */
-    var socket: js.UndefOr[Socket] = js.native
+    var socket: js.UndefOr[Socket] = js.undefined
     
     /** how many milliseconds of inactivity to allow */
-    var socketTimeout: js.UndefOr[ms] = js.native
+    var socketTimeout: js.UndefOr[ms] = js.undefined
     
     /** defines additional options to be passed to the socket constructor, e.g. {rejectUnauthorized: true} */
-    var tls: js.UndefOr[ConnectionOptions] = js.native
+    var tls: js.UndefOr[ConnectionOptions] = js.undefined
     
     /** if set to true, then logs SMTP traffic without message content */
-    var transactionLog: js.UndefOr[Boolean] = js.native
+    var transactionLog: js.UndefOr[Boolean] = js.undefined
     
     // TODO http.ClientRequest?
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     
     @scala.inline
-    def apply(pool: `true`): Options = {
-      val __obj = js.Dynamic.literal(pool = pool.asInstanceOf[js.Any])
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal(pool = true)
       __obj.asInstanceOf[Options]
     }
     
@@ -383,15 +399,15 @@ object smtpPoolMod {
     def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
   }
   
-  @js.native
   trait SentMessageInfo
-    extends typings.nodemailer.smtpConnectionMod.SentMessageInfo {
+    extends StObject
+       with typings.nodemailer.smtpConnectionMod.SentMessageInfo {
     
     /** includes the envelope object for the message */
-    var envelope: Envelope = js.native
+    var envelope: Envelope
     
     /** most transports should return the final Message-Id value used with this property */
-    var messageId: String = js.native
+    var messageId: String
   }
   object SentMessageInfo {
     

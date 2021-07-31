@@ -2,7 +2,6 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -12,25 +11,25 @@ object errorsMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Error with String] = js.native
+    def apply(value: String): js.UndefOr[Error & String] = js.native
     
-    /* "error-content-load" */ val CONTENT_LOAD: typings.playable.errorsMod.Error.CONTENT_LOAD with String = js.native
+    /* "error-content-load" */ val CONTENT_LOAD: typings.playable.errorsMod.Error.CONTENT_LOAD & String = js.native
     
-    /* "error-content-parse" */ val CONTENT_PARSE: typings.playable.errorsMod.Error.CONTENT_PARSE with String = js.native
+    /* "error-content-parse" */ val CONTENT_PARSE: typings.playable.errorsMod.Error.CONTENT_PARSE & String = js.native
     
-    /* "error-level-load" */ val LEVEL_LOAD: typings.playable.errorsMod.Error.LEVEL_LOAD with String = js.native
+    /* "error-level-load" */ val LEVEL_LOAD: typings.playable.errorsMod.Error.LEVEL_LOAD & String = js.native
     
-    /* "error-manifest-incompatible" */ val MANIFEST_INCOMPATIBLE: typings.playable.errorsMod.Error.MANIFEST_INCOMPATIBLE with String = js.native
+    /* "error-manifest-incompatible" */ val MANIFEST_INCOMPATIBLE: typings.playable.errorsMod.Error.MANIFEST_INCOMPATIBLE & String = js.native
     
-    /* "error-manifest-load" */ val MANIFEST_LOAD: typings.playable.errorsMod.Error.MANIFEST_LOAD with String = js.native
+    /* "error-manifest-load" */ val MANIFEST_LOAD: typings.playable.errorsMod.Error.MANIFEST_LOAD & String = js.native
     
-    /* "error-manifest-parse" */ val MANIFEST_PARSE: typings.playable.errorsMod.Error.MANIFEST_PARSE with String = js.native
+    /* "error-manifest-parse" */ val MANIFEST_PARSE: typings.playable.errorsMod.Error.MANIFEST_PARSE & String = js.native
     
-    /* "error-media" */ val MEDIA: typings.playable.errorsMod.Error.MEDIA with String = js.native
+    /* "error-media" */ val MEDIA: typings.playable.errorsMod.Error.MEDIA & String = js.native
     
-    /* "error-src-parse" */ val SRC_PARSE: typings.playable.errorsMod.Error.SRC_PARSE with String = js.native
+    /* "error-src-parse" */ val SRC_PARSE: typings.playable.errorsMod.Error.SRC_PARSE & String = js.native
     
-    /* "error-unknown" */ val UNKNOWN: typings.playable.errorsMod.Error.UNKNOWN with String = js.native
+    /* "error-unknown" */ val UNKNOWN: typings.playable.errorsMod.Error.UNKNOWN & String = js.native
   }
   
   @js.native
@@ -40,30 +39,48 @@ object errorsMod {
   object Error extends StObject {
     
     @js.native
-    sealed trait CONTENT_LOAD extends Error
+    sealed trait CONTENT_LOAD
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait CONTENT_PARSE extends Error
+    sealed trait CONTENT_PARSE
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait LEVEL_LOAD extends Error
+    sealed trait LEVEL_LOAD
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait MANIFEST_INCOMPATIBLE extends Error
+    sealed trait MANIFEST_INCOMPATIBLE
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait MANIFEST_LOAD extends Error
+    sealed trait MANIFEST_LOAD
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait MANIFEST_PARSE extends Error
+    sealed trait MANIFEST_PARSE
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait MEDIA extends Error
+    sealed trait MEDIA
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait SRC_PARSE extends Error
+    sealed trait SRC_PARSE
+      extends StObject
+         with Error
     
     @js.native
-    sealed trait UNKNOWN extends Error
+    sealed trait UNKNOWN
+      extends StObject
+         with Error
   }
 }

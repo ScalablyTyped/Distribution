@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object Association {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.Association.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association]
   
   /**
     * Creates and returns a new Association instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object Association {
     * of the parent DomainModel element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.Association.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DomainModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DomainModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.Association]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.Association.structureTypeName")

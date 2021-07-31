@@ -5,29 +5,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textareaItemStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/textarea-item/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/textarea-item/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): TextareaItemStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): TextareaItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TextareaItemStyle]
+  
   trait TextareaItemStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var count: ViewStyle = js.native
+    var count: ViewStyle
     
-    var countText: TextStyle = js.native
+    var countText: TextStyle
     
-    var errorIcon: ViewStyle = js.native
+    var errorIcon: ViewStyle
     
-    var icon: ViewStyle = js.native
+    var icon: ViewStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
   }
   object TextareaItemStyle {
     

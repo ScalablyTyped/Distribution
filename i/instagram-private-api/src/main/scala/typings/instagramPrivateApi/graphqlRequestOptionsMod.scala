@@ -3,21 +3,19 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.anon.FriendlyName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphqlRequestOptionsMod {
   
-  @js.native
   trait GraphQLRequestOptions extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var documentId: String = js.native
+    var documentId: String
     
-    var surface: FriendlyName = js.native
+    var surface: FriendlyName
     
-    var variables: js.Any = js.native
+    var variables: js.Any
   }
   object GraphQLRequestOptions {
     

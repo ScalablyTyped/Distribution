@@ -3,26 +3,25 @@ package typings.mobxStateTree
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowMod {
   
-  @JSImport("mobx-state-tree/dist/core/flow", "castFlowReturn")
+  @JSImport("mobx-state-tree/dist/core/flow", JSImport.Namespace)
   @js.native
-  def castFlowReturn[T](`val`: T): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/core/flow", "flow")
-  @js.native
-  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, Generator[js.Promise[_], R, _]]): js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]] = js.native
+  @scala.inline
+  def castFlowReturn[T](`val`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("castFlowReturn")(`val`.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx-state-tree/dist/core/flow", "toGenerator")
-  @js.native
-  def toGenerator[R](p: js.Promise[R]): Generator[js.Promise[R], R, R] = js.native
+  @scala.inline
+  def flow[R, Args /* <: js.Array[js.Any] */](generator: js.Function1[/* args */ Args, Generator[js.Promise[js.Any], R, js.Any]]): js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]]]
   
-  @JSImport("mobx-state-tree/dist/core/flow", "toGeneratorFunction")
-  @js.native
-  def toGeneratorFunction[R, Args /* <: js.Array[_] */](p: js.Function1[/* args */ Args, js.Promise[R]]): js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]] = js.native
+  @scala.inline
+  def toGenerator[R](p: js.Promise[R]): Generator[js.Promise[R], R, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGenerator")(p.asInstanceOf[js.Any]).asInstanceOf[Generator[js.Promise[R], R, R]]
+  
+  @scala.inline
+  def toGeneratorFunction[R, Args /* <: js.Array[js.Any] */](p: js.Function1[/* args */ Args, js.Promise[R]]): js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeneratorFunction")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]]]
   
   type FlowReturn[R] = R
 }

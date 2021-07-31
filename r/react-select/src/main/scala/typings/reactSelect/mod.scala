@@ -30,21 +30,24 @@ import typings.reactSelect.typesMod.Theme
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-select", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-select", JSImport.Default)
   @js.native
   class default[OptionType /* <: OptionTypeBase */, T /* <: typings.reactSelect.selectMod.default[OptionType] */] protected () extends StateManager[OptionType, T] {
-    def this(props: StateProps[Props[OptionType]] with typings.reactSelect.stateManagerMod.Props[OptionType] with Props[OptionType]) = this()
+    def this(props: StateProps[Props[OptionType]] & typings.reactSelect.stateManagerMod.Props[OptionType] & Props[OptionType]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(
-      props: StateProps[Props[OptionType]] with typings.reactSelect.stateManagerMod.Props[OptionType] with Props[OptionType],
+      props: StateProps[Props[OptionType]] & typings.reactSelect.stateManagerMod.Props[OptionType] & Props[OptionType],
       context: js.Any
     ) = this()
   }
@@ -235,18 +238,15 @@ object mod {
     def ValueContainer_=(x: NonNullable[ComponentType[ValueContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueContainer")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select", "createFilter")
-  @js.native
-  def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
-  @JSImport("react-select", "createFilter")
-  @js.native
-  def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
+  @scala.inline
+  def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  @scala.inline
+  def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
   
   @JSImport("react-select", "defaultTheme")
   @js.native
   val defaultTheme: Theme = js.native
   
-  @JSImport("react-select", "mergeStyles")
-  @js.native
-  def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = js.native
+  @scala.inline
+  def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StylesConfig]
 }

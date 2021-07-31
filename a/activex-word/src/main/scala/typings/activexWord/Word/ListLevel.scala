@@ -2,50 +2,48 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLevel extends StObject {
   
-  var Alignment: WdListLevelAlignment = js.native
+  var Alignment: WdListLevelAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def ApplyPictureBullet(FileName: String): InlineShape = js.native
+  def ApplyPictureBullet(FileName: String): InlineShape
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Font: typings.activexWord.Word.Font = js.native
+  var Font: typings.activexWord.Word.Font
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var LinkedStyle: String = js.native
+  var LinkedStyle: String
   
-  var NumberFormat: String = js.native
+  var NumberFormat: String
   
-  var NumberPosition: Double = js.native
+  var NumberPosition: Double
   
-  var NumberStyle: WdListNumberStyle = js.native
+  var NumberStyle: WdListNumberStyle
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PictureBullet: InlineShape = js.native
+  val PictureBullet: InlineShape
   
-  var ResetOnHigher: Double = js.native
+  var ResetOnHigher: Double
   
-  var ResetOnHigherOld: Boolean = js.native
+  var ResetOnHigherOld: Boolean
   
-  var StartAt: Double = js.native
+  var StartAt: Double
   
-  var TabPosition: Double = js.native
+  var TabPosition: Double
   
-  var TextPosition: Double = js.native
+  var TextPosition: Double
   
-  var TrailingCharacter: WdTrailingCharacter = js.native
+  var TrailingCharacter: WdTrailingCharacter
   
   @JSName("Word.ListLevel_typekey")
-  var WordDotListLevel_typekey: ListLevel = js.native
+  var WordDotListLevel_typekey: ListLevel
 }
 object ListLevel {
   

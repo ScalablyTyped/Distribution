@@ -14,7 +14,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiptRuleMod {
@@ -105,6 +104,10 @@ object receiptRuleMod {
   /* static members */
   object ReceiptRule {
     
+    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReceiptRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -114,29 +117,23 @@ object receiptRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReceiptRule = js.native
-    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReceiptRule = js.native
-    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptRuleState): ReceiptRule = js.native
-    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptRuleState, opts: CustomResourceOptions): ReceiptRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReceiptRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReceiptRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReceiptRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptRuleState): ReceiptRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReceiptRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptRuleState, opts: CustomResourceOptions): ReceiptRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRule]
     
     /**
       * Returns true if the given object is an instance of ReceiptRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRule.ReceiptRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRule.ReceiptRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/receiptRule.ReceiptRule */ Boolean]
   }
   
-  @js.native
   trait ReceiptRuleArgs extends StObject {
     
     /**
@@ -144,72 +141,72 @@ object receiptRuleMod {
       */
     val addHeaderActions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleAddHeaderAction]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the rule to place this rule after
       */
-    val after: js.UndefOr[Input[String]] = js.native
+    val after: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Bounce Action blocks. Documented below.
       */
-    val bounceActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleBounceAction]]]] = js.native
+    val bounceActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleBounceAction]]]] = js.undefined
     
     /**
       * If true, the rule will be enabled
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of Lambda Action blocks. Documented below.
       */
-    val lambdaActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleLambdaAction]]]] = js.native
+    val lambdaActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleLambdaAction]]]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of email addresses
       */
-    val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: Input[String] = js.native
+    val ruleSetName: Input[String]
     
     /**
       * A list of S3 Action blocks. Documented below.
       */
-    val s3Actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleS3Action]]]] = js.native
+    val s3Actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleS3Action]]]] = js.undefined
     
     /**
       * If true, incoming emails will be scanned for spam and viruses
       */
-    val scanEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val scanEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of SNS Action blocks. Documented below.
       */
-    val snsActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleSnsAction]]]] = js.native
+    val snsActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleSnsAction]]]] = js.undefined
     
     /**
       * A list of Stop Action blocks. Documented below.
       */
-    val stopActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleStopAction]]]] = js.native
+    val stopActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleStopAction]]]] = js.undefined
     
     /**
       * Require or Optional
       */
-    val tlsPolicy: js.UndefOr[Input[String]] = js.native
+    val tlsPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of WorkMail Action blocks. Documented below.
       */
-    val workmailActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleWorkmailAction]]]] = js.native
+    val workmailActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleWorkmailAction]]]] = js.undefined
   }
   object ReceiptRuleArgs {
     
@@ -329,7 +326,6 @@ object receiptRuleMod {
     }
   }
   
-  @js.native
   trait ReceiptRuleState extends StObject {
     
     /**
@@ -337,72 +333,72 @@ object receiptRuleMod {
       */
     val addHeaderActions: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleAddHeaderAction]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the rule to place this rule after
       */
-    val after: js.UndefOr[Input[String]] = js.native
+    val after: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Bounce Action blocks. Documented below.
       */
-    val bounceActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleBounceAction]]]] = js.native
+    val bounceActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleBounceAction]]]] = js.undefined
     
     /**
       * If true, the rule will be enabled
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of Lambda Action blocks. Documented below.
       */
-    val lambdaActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleLambdaAction]]]] = js.native
+    val lambdaActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleLambdaAction]]]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of email addresses
       */
-    val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: js.UndefOr[Input[String]] = js.native
+    val ruleSetName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of S3 Action blocks. Documented below.
       */
-    val s3Actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleS3Action]]]] = js.native
+    val s3Actions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleS3Action]]]] = js.undefined
     
     /**
       * If true, incoming emails will be scanned for spam and viruses
       */
-    val scanEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val scanEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A list of SNS Action blocks. Documented below.
       */
-    val snsActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleSnsAction]]]] = js.native
+    val snsActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleSnsAction]]]] = js.undefined
     
     /**
       * A list of Stop Action blocks. Documented below.
       */
-    val stopActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleStopAction]]]] = js.native
+    val stopActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleStopAction]]]] = js.undefined
     
     /**
       * Require or Optional
       */
-    val tlsPolicy: js.UndefOr[Input[String]] = js.native
+    val tlsPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of WorkMail Action blocks. Documented below.
       */
-    val workmailActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleWorkmailAction]]]] = js.native
+    val workmailActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ses.ReceiptRuleWorkmailAction]]]] = js.undefined
   }
   object ReceiptRuleState {
     

@@ -2,19 +2,17 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A extends StObject {
   
-  var a: Double = js.native
+  var a: Double
   
-  var b: js.Any = js.native
+  var b: js.Any
   
-  var g: js.Any = js.native
+  var g: js.Any
   
-  var r: js.Any = js.native
+  var r: js.Any
 }
 object A {
   

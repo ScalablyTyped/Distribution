@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentListEntry extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the agent.
     */
-  var AgentArn: js.UndefOr[typings.awsSdk.datasyncMod.AgentArn] = js.native
+  var AgentArn: js.UndefOr[typings.awsSdk.datasyncMod.AgentArn] = js.undefined
   
   /**
     * The name of the agent.
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
     * The status of the agent.
     */
-  var Status: js.UndefOr[AgentStatus] = js.native
+  var Status: js.UndefOr[AgentStatus] = js.undefined
 }
 object AgentListEntry {
   

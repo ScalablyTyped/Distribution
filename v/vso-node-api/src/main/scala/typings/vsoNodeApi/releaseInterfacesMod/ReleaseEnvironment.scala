@@ -6,175 +6,173 @@ import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseEnvironment extends StObject {
   
   /**
     * Gets list of conditions.
     */
-  var conditions: js.Array[ReleaseCondition] = js.native
+  var conditions: js.Array[ReleaseCondition]
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets definition environment id.
     */
-  var definitionEnvironmentId: Double = js.native
+  var definitionEnvironmentId: Double
   
   /**
     * Gets demands.
     */
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
   /**
     * Gets list of deploy phases snapshot.
     */
-  var deployPhasesSnapshot: js.Array[DeployPhase] = js.native
+  var deployPhasesSnapshot: js.Array[DeployPhase]
   
   /**
     * Gets deploy steps.
     */
-  var deploySteps: js.Array[DeploymentAttempt] = js.native
+  var deploySteps: js.Array[DeploymentAttempt]
   
   /**
     * Gets environment options.
     */
-  var environmentOptions: EnvironmentOptions = js.native
+  var environmentOptions: EnvironmentOptions
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets next scheduled UTC time.
     */
-  var nextScheduledUtcTime: Date = js.native
+  var nextScheduledUtcTime: Date
   
   /**
     * Gets the identity who is owner for release environment.
     */
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
   /**
     * Gets list of post deploy approvals snapshot.
     */
-  var postApprovalsSnapshot: ReleaseDefinitionApprovals = js.native
+  var postApprovalsSnapshot: ReleaseDefinitionApprovals
   
   /**
     * Gets list of post deploy approvals.
     */
-  var postDeployApprovals: js.Array[ReleaseApproval] = js.native
+  var postDeployApprovals: js.Array[ReleaseApproval]
   
-  var postDeploymentGatesSnapshot: ReleaseDefinitionGatesStep = js.native
+  var postDeploymentGatesSnapshot: ReleaseDefinitionGatesStep
   
   /**
     * Gets list of pre deploy approvals snapshot.
     */
-  var preApprovalsSnapshot: ReleaseDefinitionApprovals = js.native
+  var preApprovalsSnapshot: ReleaseDefinitionApprovals
   
   /**
     * Gets list of pre deploy approvals.
     */
-  var preDeployApprovals: js.Array[ReleaseApproval] = js.native
+  var preDeployApprovals: js.Array[ReleaseApproval]
   
-  var preDeploymentGatesSnapshot: ReleaseDefinitionGatesStep = js.native
+  var preDeploymentGatesSnapshot: ReleaseDefinitionGatesStep
   
   /**
     * Gets process parameters.
     */
-  var processParameters: ProcessParameters = js.native
+  var processParameters: ProcessParameters
   
   /**
     * Gets queue id.
     */
-  var queueId: Double = js.native
+  var queueId: Double
   
   /**
     * Gets rank.
     */
-  var rank: Double = js.native
+  var rank: Double
   
   /**
     * Gets release reference which specifies the reference of the release to which this release environment is associated.
     */
-  var release: ReleaseShallowReference = js.native
+  var release: ReleaseShallowReference
   
   /**
     * Gets the identity who created release.
     */
-  var releaseCreatedBy: IdentityRef = js.native
+  var releaseCreatedBy: IdentityRef
   
   /**
     * Gets releaseDefinitionReference which specifies the reference of the release definition to which this release environment is associated.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
   /**
     * Gets release description.
     */
-  var releaseDescription: String = js.native
+  var releaseDescription: String
   
   /**
     * Gets release id.
     */
-  var releaseId: Double = js.native
+  var releaseId: Double
   
   /**
     * Gets schedule deployment time of release environment.
     */
-  var scheduledDeploymentTime: Date = js.native
+  var scheduledDeploymentTime: Date
   
   /**
     * Gets list of schedules.
     */
-  var schedules: js.Array[ReleaseSchedule] = js.native
+  var schedules: js.Array[ReleaseSchedule]
   
   /**
     * Gets environment status.
     */
-  var status: EnvironmentStatus = js.native
+  var status: EnvironmentStatus
   
   /**
     * Gets time to deploy.
     */
-  var timeToDeploy: Double = js.native
+  var timeToDeploy: Double
   
   /**
     * Gets trigger reason.
     */
-  var triggerReason: String = js.native
+  var triggerReason: String
   
   /**
     * Gets the list of variable groups.
     */
-  var variableGroups: js.Array[VariableGroup] = js.native
+  var variableGroups: js.Array[VariableGroup]
   
   /**
     * Gets the dictionary of variables.
     */
-  var variables: StringDictionary[ConfigurationVariableValue] = js.native
+  var variables: StringDictionary[ConfigurationVariableValue]
   
   /**
     * Gets list of workflow tasks.
     */
-  var workflowTasks: js.Array[WorkflowTask] = js.native
+  var workflowTasks: js.Array[WorkflowTask]
 }
 object ReleaseEnvironment {
   
@@ -183,7 +181,7 @@ object ReleaseEnvironment {
     conditions: js.Array[ReleaseCondition],
     createdOn: Date,
     definitionEnvironmentId: Double,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     deployPhasesSnapshot: js.Array[DeployPhase],
     deploySteps: js.Array[DeploymentAttempt],
     environmentOptions: EnvironmentOptions,
@@ -235,7 +233,7 @@ object ReleaseEnvironment {
     def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

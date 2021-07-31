@@ -3,15 +3,13 @@ package typings.reactBigCalendar.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRange extends StObject {
   
-  var end: Date = js.native
+  var end: Date
   
-  var start: Date = js.native
+  var start: Date
 }
 object DateRange {
   

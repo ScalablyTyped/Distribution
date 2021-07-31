@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,17 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * quotes they are escaped by doubling them, as usual, for example `=[2]!'''Sheet name''.A1'` in a "soffice" service.
   * @since OOo 3.1
   */
-@js.native
 trait DDELinkInfo extends StObject {
   
   /** A list of DDE items. Each item may contain its results from the last update. */
-  var Items: SafeArray[DDEItemInfo] = js.native
+  var Items: SafeArray[DDEItemInfo]
   
   /** The DDE service name. */
-  var Service: String = js.native
+  var Service: String
   
   /** The DDE topic. */
-  var Topic: String = js.native
+  var Topic: String
 }
 object DDELinkInfo {
   

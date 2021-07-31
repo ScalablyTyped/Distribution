@@ -3,7 +3,6 @@ package typings.angularRouter.mod
 import typings.angularCore.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ActivatedRouteSnapshot")
@@ -14,7 +13,7 @@ class ActivatedRouteSnapshot () extends StObject {
   def children: js.Array[ActivatedRouteSnapshot] = js.native
   
   /** The component of the route */
-  var component: Type[_] | String | Null = js.native
+  var component: Type[js.Any] | String | Null = js.native
   
   /** The static and resolved data of this route */
   var data: Data = js.native

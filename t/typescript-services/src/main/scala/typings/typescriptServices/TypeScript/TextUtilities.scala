@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextUtilities {
   
-  @js.native
   trait ICharacterSequence extends StObject {
     
-    def charCodeAt(index: Double): Double = js.native
+    def charCodeAt(index: Double): Double
     
-    var length: Double = js.native
+    var length: Double
   }
   object ICharacterSequence {
     

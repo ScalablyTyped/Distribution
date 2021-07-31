@@ -2,25 +2,25 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISeparatedSyntaxList extends ISyntaxElement {
+trait ISeparatedSyntaxList
+  extends StObject
+     with ISyntaxElement {
   
-  def insertChildrenInto(array: js.Array[ISyntaxElement], index: Double): Unit = js.native
+  def insertChildrenInto(array: js.Array[ISyntaxElement], index: Double): Unit
   
-  def nonSeparatorAt(index: Double): ISyntaxNodeOrToken = js.native
+  def nonSeparatorAt(index: Double): ISyntaxNodeOrToken
   
-  def nonSeparatorCount(): Double = js.native
+  def nonSeparatorCount(): Double
   
-  def separatorAt(index: Double): ISyntaxToken = js.native
+  def separatorAt(index: Double): ISyntaxToken
   
-  def separatorCount(): Double = js.native
+  def separatorCount(): Double
   
-  def toArray(): js.Array[ISyntaxNodeOrToken] = js.native
+  def toArray(): js.Array[ISyntaxNodeOrToken]
   
-  def toNonSeparatorArray(): js.Array[ISyntaxNodeOrToken] = js.native
+  def toNonSeparatorArray(): js.Array[ISyntaxNodeOrToken]
 }
 object ISeparatedSyntaxList {
   

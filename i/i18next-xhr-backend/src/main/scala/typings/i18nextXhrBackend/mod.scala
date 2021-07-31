@@ -1,34 +1,57 @@
 package typings.i18nextXhrBackend
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18next.i18nextStrings.`3rdParty`
+import typings.i18next.i18nextStrings.backend
+import typings.i18next.i18nextStrings.i18nFormat
+import typings.i18next.i18nextStrings.languageDetector
+import typings.i18next.i18nextStrings.logger
+import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.BackendModule
+import typings.i18next.mod.InitOptions
 import typings.i18next.mod.ReadCallback
-import typings.i18nextXhrBackend.i18nextXhrBackendStrings.backend
+import typings.i18next.mod.Services
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("i18next-xhr-backend", JSImport.Default)
   @js.native
-  class default () extends I18NextXhrBackend {
+  class default ()
+    extends StObject
+       with I18NextXhrBackend {
     def this(services: js.Any) = this()
-    def this(services: js.UndefOr[scala.Nothing], options: BackendOptions) = this()
     def this(services: js.Any, options: BackendOptions) = this()
+    def this(services: Unit, options: BackendOptions) = this()
+    
+    /** Save the missing translation */
+    /* CompleteClass */
+    override def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def init(services: Services, backendOptions: BackendOptions, i18nextOptions: InitOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
+    
+    /* CompleteClass */
+    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    /* CompleteClass */
+    @JSName("type")
+    var type_BackendModule: backend = js.native
   }
   
   type AjaxRequestCallback = js.Function2[/* response */ String, /* x */ XMLHttpRequest, Unit]
   
-  @js.native
   trait BackendOptions extends StObject {
     
     /**
       * path to post missing resources
       */
-    var addPath: js.UndefOr[String] = js.native
+    var addPath: js.UndefOr[String] = js.undefined
     
     /**
       * define a custom xhr function
@@ -43,24 +66,24 @@ object mod {
           /* cache */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * your backend server supports multiLoading
       * locales/resources.json?lng=de+en&ns=ns1+ns2
       * set loadPath: '/locales/resources.json?lng={{lng}}&ns={{ns}}' to adapt to multiLoading
       */
-    var allowMultiLoading: js.UndefOr[Boolean] = js.native
+    var allowMultiLoading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * allow cross domain requests
       */
-    var crossDomain: js.UndefOr[Boolean] = js.native
+    var crossDomain: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see https://github.com/i18next/i18next-xhr-backend/blob/281c7e235e1157b33122adacef1957252e5700f1/src/ajax.js#L52
       */
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * path where resources get loaded from, or a function
@@ -68,14 +91,14 @@ object mod {
       * function(lngs, namespaces) { return customPath; }
       * the returned path will interpolate lng, ns if provided like giving a static path
       */
-    var loadPath: js.UndefOr[LoadPathOption] = js.native
+    var loadPath: js.UndefOr[LoadPathOption] = js.undefined
     
     /**
       * parse data after it has been fetched
       * in example use https://www.npmjs.com/package/json5
       * here it removes the letter a from the json (bad idea)
       */
-    var parse: js.UndefOr[js.Function1[/* data */ String, String]] = js.native
+    var parse: js.UndefOr[js.Function1[/* data */ String, String]] = js.undefined
     
     /**
       * parse data before it has been sent by addPath
@@ -85,19 +108,19 @@ object mod {
           /* namespace */ String, 
           /* key */ String, 
           /* fallbackValue */ js.UndefOr[String], 
-          StringDictionary[_]
+          StringDictionary[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * adds parameters to resource URL. 'example.com' -> 'example.com?v=1.3.5'
       */
-    var queryStringParams: js.UndefOr[StringDictionary[String]] = js.native
+    var queryStringParams: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * allow credentials on cross domain requests
       */
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object BackendOptions {
     
@@ -156,7 +179,7 @@ object mod {
       
       @scala.inline
       def setParsePayload(
-        value: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[_]
+        value: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[js.Any]
       ): Self = StObject.set(x, "parsePayload", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -180,14 +203,16 @@ object mod {
   }
   
   @js.native
-  trait I18NextXhrBackend extends BackendModule[BackendOptions] {
+  trait I18NextXhrBackend
+    extends StObject
+       with BackendModule[BackendOptions] {
     
     def create(languages: String, namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     def init(): Unit = js.native
-    def init(services: js.UndefOr[scala.Nothing], options: BackendOptions): Unit = js.native
     def init(services: js.Any): Unit = js.native
     def init(services: js.Any, options: BackendOptions): Unit = js.native
+    def init(services: Unit, options: BackendOptions): Unit = js.native
     
     def loadUrl(url: String, callback: ReadCallback): Unit = js.native
     
@@ -199,7 +224,7 @@ object mod {
     var services: js.Any = js.native
     
     @JSName("type")
-    var type_I18NextXhrBackend: backend = js.native
+    var type_I18NextXhrBackend: typings.i18nextXhrBackend.i18nextXhrBackendStrings.backend = js.native
   }
   
   type LoadPathOption = String | (js.Function2[/* lngs */ js.Array[String], /* namespaces */ js.Array[String], String])

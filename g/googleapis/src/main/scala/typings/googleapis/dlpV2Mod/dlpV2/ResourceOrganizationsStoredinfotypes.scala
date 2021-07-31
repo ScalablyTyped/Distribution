@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Organizations$Storedinfotypes")
@@ -33,7 +32,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def create(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def create(params: ParamsResourceOrganizationsStoredinfotypesCreate): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def create(
     params: ParamsResourceOrganizationsStoredinfotypesCreate,
@@ -67,7 +66,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsStoredinfotypesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceOrganizationsStoredinfotypesDelete,
@@ -101,7 +100,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def get(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def get(params: ParamsResourceOrganizationsStoredinfotypesGet): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def get(
     params: ParamsResourceOrganizationsStoredinfotypesGet,
@@ -138,7 +137,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse] = js.native
   def list(params: ParamsResourceOrganizationsStoredinfotypesList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsStoredinfotypesList,
@@ -174,7 +173,7 @@ class ResourceOrganizationsStoredinfotypes protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def patch(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2StoredInfoType]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def patch(params: ParamsResourceOrganizationsStoredinfotypesPatch): GaxiosPromise[SchemaGooglePrivacyDlpV2StoredInfoType] = js.native
   def patch(
     params: ParamsResourceOrganizationsStoredinfotypesPatch,

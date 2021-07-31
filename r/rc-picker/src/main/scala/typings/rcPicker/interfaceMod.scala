@@ -14,17 +14,15 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait Components extends StObject {
     
-    var button: js.UndefOr[ComponentType[js.Object] | String] = js.native
+    var button: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
     
-    var rangeItem: js.UndefOr[ComponentType[js.Object] | String] = js.native
+    var rangeItem: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
   }
   object Components {
     
@@ -55,14 +53,13 @@ object interfaceMod {
   
   type DisabledTime[DateType] = js.Function1[/* date */ DateType | Null, DisabledTimes]
   
-  @js.native
   trait DisabledTimes extends StObject {
     
-    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
   }
   object DisabledTimes {
     
@@ -97,71 +94,70 @@ object interfaceMod {
   
   type EventValue[DateType] = DateType | Null
   
-  @js.native
   trait Locale extends StObject {
     
-    var backToToday: String = js.native
+    var backToToday: String
     
-    var clear: String = js.native
+    var clear: String
     
-    var dateFormat: String = js.native
+    var dateFormat: String
     
-    var dateSelect: String = js.native
+    var dateSelect: String
     
-    var dateTimeFormat: String = js.native
+    var dateTimeFormat: String
     
-    var dayFormat: String = js.native
+    var dayFormat: String
     
-    var decadeSelect: String = js.native
+    var decadeSelect: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var month: String = js.native
+    var month: String
     
     /** Display month before year in date panel header */
-    var monthBeforeYear: js.UndefOr[Boolean] = js.native
+    var monthBeforeYear: js.UndefOr[Boolean] = js.undefined
     
-    var monthFormat: js.UndefOr[String] = js.native
+    var monthFormat: js.UndefOr[String] = js.undefined
     
-    var monthSelect: String = js.native
+    var monthSelect: String
     
-    var nextCentury: String = js.native
+    var nextCentury: String
     
-    var nextDecade: String = js.native
+    var nextDecade: String
     
-    var nextMonth: String = js.native
+    var nextMonth: String
     
-    var nextYear: String = js.native
+    var nextYear: String
     
-    var now: String = js.native
+    var now: String
     
-    var ok: String = js.native
+    var ok: String
     
-    var previousCentury: String = js.native
+    var previousCentury: String
     
-    var previousDecade: String = js.native
+    var previousDecade: String
     
-    var previousMonth: String = js.native
+    var previousMonth: String
     
-    var previousYear: String = js.native
+    var previousYear: String
     
-    var quarterFormat: js.UndefOr[String] = js.native
+    var quarterFormat: js.UndefOr[String] = js.undefined
     
-    var shortMonths: js.UndefOr[js.Array[String]] = js.native
+    var shortMonths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var shortWeekDays: js.UndefOr[js.Array[String]] = js.native
+    var shortWeekDays: js.UndefOr[js.Array[String]] = js.undefined
     
-    var timeSelect: String = js.native
+    var timeSelect: String
     
-    var today: String = js.native
+    var today: String
     
-    var weekSelect: js.UndefOr[String] = js.native
+    var weekSelect: js.UndefOr[String] = js.undefined
     
-    var year: String = js.native
+    var year: String
     
-    var yearFormat: String = js.native
+    var yearFormat: String
     
-    var yearSelect: String = js.native
+    var yearSelect: String
   }
   object Locale {
     
@@ -359,14 +355,13 @@ object interfaceMod {
     def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
   }
   
-  @js.native
   trait PanelRefProps extends StObject {
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Boolean]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Boolean]] = js.undefined
   }
   object PanelRefProps {
     

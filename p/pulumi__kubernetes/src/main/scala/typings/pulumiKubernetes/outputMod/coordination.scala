@@ -5,7 +5,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.coordinationDotk8sDotioS
 import typings.pulumiKubernetes.pulumiKubernetesStrings.coordinationDotk8sDotioSlashv1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coordination {
@@ -15,39 +14,33 @@ object coordination {
     /**
       * Lease defines a lease concept.
       */
-    @js.native
     trait Lease extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: coordinationDotk8sDotioSlashv1 = js.native
+      var apiVersion: coordinationDotk8sDotioSlashv1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease
       
       /**
         * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the Lease. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: LeaseSpec = js.native
+      var spec: LeaseSpec
     }
     object Lease {
       
       @scala.inline
-      def apply(
-        apiVersion: coordinationDotk8sDotioSlashv1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease,
-        metadata: ObjectMeta,
-        spec: LeaseSpec
-      ): Lease = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
+        val __obj = js.Dynamic.literal(apiVersion = "coordination.k8s.io/v1", kind = "Lease", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[Lease]
       }
       
@@ -71,33 +64,32 @@ object coordination {
     /**
       * LeaseSpec is a specification of a Lease.
       */
-    @js.native
     trait LeaseSpec extends StObject {
       
       /**
         * acquireTime is a time when the current lease was acquired.
         */
-      var acquireTime: String = js.native
+      var acquireTime: String
       
       /**
         * holderIdentity contains the identity of the holder of a current lease.
         */
-      var holderIdentity: String = js.native
+      var holderIdentity: String
       
       /**
         * leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
         */
-      var leaseDurationSeconds: Double = js.native
+      var leaseDurationSeconds: Double
       
       /**
         * leaseTransitions is the number of transitions of a lease between holders.
         */
-      var leaseTransitions: Double = js.native
+      var leaseTransitions: Double
       
       /**
         * renewTime is a time when the current holder of a lease has last updated the lease.
         */
-      var renewTime: String = js.native
+      var renewTime: String
     }
     object LeaseSpec {
       
@@ -139,39 +131,33 @@ object coordination {
     /**
       * Lease defines a lease concept.
       */
-    @js.native
     trait Lease extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: coordinationDotk8sDotioSlashv1beta1 = js.native
+      var apiVersion: coordinationDotk8sDotioSlashv1beta1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease
       
       /**
         * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the Lease. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: LeaseSpec = js.native
+      var spec: LeaseSpec
     }
     object Lease {
       
       @scala.inline
-      def apply(
-        apiVersion: coordinationDotk8sDotioSlashv1beta1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease,
-        metadata: ObjectMeta,
-        spec: LeaseSpec
-      ): Lease = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
+        val __obj = js.Dynamic.literal(apiVersion = "coordination.k8s.io/v1beta1", kind = "Lease", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[Lease]
       }
       
@@ -195,33 +181,32 @@ object coordination {
     /**
       * LeaseSpec is a specification of a Lease.
       */
-    @js.native
     trait LeaseSpec extends StObject {
       
       /**
         * acquireTime is a time when the current lease was acquired.
         */
-      var acquireTime: String = js.native
+      var acquireTime: String
       
       /**
         * holderIdentity contains the identity of the holder of a current lease.
         */
-      var holderIdentity: String = js.native
+      var holderIdentity: String
       
       /**
         * leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
         */
-      var leaseDurationSeconds: Double = js.native
+      var leaseDurationSeconds: Double
       
       /**
         * leaseTransitions is the number of transitions of a lease between holders.
         */
-      var leaseTransitions: Double = js.native
+      var leaseTransitions: Double
       
       /**
         * renewTime is a time when the current holder of a lease has last updated the lease.
         */
-      var renewTime: String = js.native
+      var renewTime: String
     }
     object LeaseSpec {
       

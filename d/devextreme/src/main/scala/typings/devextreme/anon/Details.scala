@@ -4,19 +4,17 @@ import typings.devextreme.devextremeStrings.details
 import typings.devextreme.devextremeStrings.thumbnails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Details extends StObject {
   
-  var details: js.UndefOr[`3`] = js.native
+  var details: js.UndefOr[`3`] = js.undefined
   
-  var mode: js.UndefOr[details | thumbnails] = js.native
+  var mode: js.UndefOr[details | thumbnails] = js.undefined
   
-  var showFolders: js.UndefOr[Boolean] = js.native
+  var showFolders: js.UndefOr[Boolean] = js.undefined
   
-  var showParentFolder: js.UndefOr[Boolean] = js.native
+  var showParentFolder: js.UndefOr[Boolean] = js.undefined
 }
 object Details {
   

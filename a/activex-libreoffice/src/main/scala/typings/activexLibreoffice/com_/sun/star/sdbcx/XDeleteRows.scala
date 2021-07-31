@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides for the deletion of more than one row at a time. */
-@js.native
-trait XDeleteRows extends XInterface {
+trait XDeleteRows
+  extends StObject
+     with XInterface {
   
   /**
     * deletes one or more rows identified by their bookmarks.
@@ -19,14 +19,14 @@ trait XDeleteRows extends XInterface {
     * @returns an array of update counts containing one element for each row. The array is ordered according to the order in which bookmarks were given.
     * @throws com::sun::star::sdbc::SQLException if a fatal error occurs, for instance, the connection gets lost if bookmarks are used which do not belong to t
     */
-  def deleteRows(rows: SeqEquiv[_]): SafeArray[Double] = js.native
+  def deleteRows(rows: SeqEquiv[js.Any]): SafeArray[Double]
 }
 object XDeleteRows {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    deleteRows: SeqEquiv[_] => SafeArray[Double],
+    deleteRows: SeqEquiv[js.Any] => SafeArray[Double],
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XDeleteRows = {
@@ -38,6 +38,6 @@ object XDeleteRows {
   implicit class XDeleteRowsMutableBuilder[Self <: XDeleteRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDeleteRows(value: SeqEquiv[_] => SafeArray[Double]): Self = StObject.set(x, "deleteRows", js.Any.fromFunction1(value))
+    def setDeleteRows(value: SeqEquiv[js.Any] => SafeArray[Double]): Self = StObject.set(x, "deleteRows", js.Any.fromFunction1(value))
   }
 }

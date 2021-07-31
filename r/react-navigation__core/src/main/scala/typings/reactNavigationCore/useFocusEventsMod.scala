@@ -6,21 +6,22 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusEventsMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useFocusEvents", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useFocusEvents", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */](hasStateEmitter: Options[State]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */](hasStateEmitter: Options[State]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateEmitter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options[State /* <: NavigationState[ParamListBase] */] extends StObject {
     
-    var emitter: NavigationEventEmitter[EventMapCore[State]] = js.native
+    var emitter: NavigationEventEmitter[EventMapCore[State]]
     
-    var state: State = js.native
+    var state: State
   }
   object Options {
     
@@ -31,7 +32,7 @@ object useFocusEventsMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Options[State]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Options[State]) extends AnyVal {
       
       @scala.inline
       def setEmitter(value: NavigationEventEmitter[EventMapCore[State]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])

@@ -3,15 +3,13 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashComputation extends StObject {
   
-  def append(data: IBuffer): Unit = js.native
+  def append(data: IBuffer): Unit
   
-  def getValueAndReset(): IBuffer = js.native
+  def getValueAndReset(): IBuffer
 }
 object IHashComputation {
   

@@ -2,23 +2,21 @@ package typings.amapJsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var position: js.Tuple2[Double | String, Double | String] = js.native
+  var position: js.Tuple2[Double | String, Double | String]
   
-  var rank: js.UndefOr[Double] = js.native
+  var rank: js.UndefOr[Double] = js.undefined
   
-  var txt: js.UndefOr[String] = js.native
+  var txt: js.UndefOr[String] = js.undefined
   
-  var zooms: js.Tuple2[Double, Double] = js.native
+  var zooms: js.Tuple2[Double, Double]
 }
 object Id {
   

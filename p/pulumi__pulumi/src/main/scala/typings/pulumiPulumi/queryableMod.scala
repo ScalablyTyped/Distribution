@@ -8,7 +8,6 @@ import typings.std.Array
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryableMod {
@@ -23,12 +22,14 @@ object queryableMod {
   type Resolved[T] = ResolvedSimple[js.Any | T]
   
   @js.native
-  trait ResolvedArray[T] extends Array[Resolved[T]]
+  trait ResolvedArray[T]
+    extends StObject
+       with Array[Resolved[T]]
   
   type ResolvedObject[T] = ModifyOptionalProperties[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @pulumi/pulumi.@pulumi/pulumi/queryable.Resolved<T[P]>}
-    */ typings.pulumiPulumi.pulumiPulumiStrings.ResolvedObject with TopLevel[T]
+    */ typings.pulumiPulumi.pulumiPulumiStrings.ResolvedObject & TopLevel[T]
   ]
   
   type ResolvedResource[T /* <: Resource */] = Omit[Resolved[T], urn | getProvider]

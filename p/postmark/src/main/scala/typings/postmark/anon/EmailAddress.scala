@@ -2,13 +2,11 @@ package typings.postmark.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailAddress extends StObject {
   
-  var EmailAddress: String = js.native
+  var EmailAddress: String
 }
 object EmailAddress {
   

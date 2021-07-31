@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommandEnvironment extends XCommandEnvironment {
+trait CommandEnvironment
+  extends StObject
+     with XCommandEnvironment {
   
   /**
     * Constructor.
     * @param InteractionHandler the interaction handler instance that will be returned by this service's implementation of XCommandEnvironemt::getInteractionH
     * @param ProgressHandler the progress handler instance that will be returned by this service's implementation of XCommandEnvironemt::getProgressHandler()
     */
-  def create(InteractionHandler: XInteractionHandler, ProgressHandler: XProgressHandler): Unit = js.native
+  def create(InteractionHandler: XInteractionHandler, ProgressHandler: XProgressHandler): Unit
 }
 object CommandEnvironment {
   

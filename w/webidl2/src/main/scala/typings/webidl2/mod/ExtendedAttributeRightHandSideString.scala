@@ -3,22 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttributeRightHandSideString extends ExtendedAttributeRightHandSideBase {
+trait ExtendedAttributeRightHandSideString
+  extends StObject
+     with ExtendedAttributeRightHandSideBase {
   
-  var `type`: string = js.native
+  var `type`: string
   
-  var value: String = js.native
+  var value: String
 }
 object ExtendedAttributeRightHandSideString {
   
   @scala.inline
-  def apply(`type`: string, value: String): ExtendedAttributeRightHandSideString = {
+  def apply(value: String): ExtendedAttributeRightHandSideString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideString]
   }
   

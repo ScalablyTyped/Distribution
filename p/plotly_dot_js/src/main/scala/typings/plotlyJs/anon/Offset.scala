@@ -6,42 +6,40 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offset extends StObject {
   
   /**
     * Sets the font of the current value label text.
     */
-  var font: Partial[typings.plotlyJs.mod.Font] = js.native
+  var font: Partial[typings.plotlyJs.mod.Font]
   
   /**
     * The amount of space, in pixels, between the current value label
     * and the slider.
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * When currentvalue.visible is true, this sets the prefix of the label.
     */
-  var prefix: String = js.native
+  var prefix: String
   
   /**
     * When currentvalue.visible is true, this sets the suffix of the label.
     */
-  var suffix: String = js.native
+  var suffix: String
   
   /**
     * Shows the currently-selected value above the slider.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * The alignment of the value readout relative to the length of the slider.
     */
-  var xanchor: left | center | right = js.native
+  var xanchor: left | center | right
 }
 object Offset {
   

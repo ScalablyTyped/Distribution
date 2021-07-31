@@ -5,7 +5,6 @@ import typings.cookieclicker.Game.UpgradePool
 import typings.cookieclicker.Game._TooltipOrigins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cookieclickerStrings {
@@ -51,7 +50,9 @@ object cookieclickerStrings {
   def `Wizard tower`: `Wizard tower` = ("Wizard tower").asInstanceOf[`Wizard tower`]
   
   @js.native
-  sealed trait _empty extends UpgradePool
+  sealed trait _empty
+    extends StObject
+       with UpgradePool
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -211,12 +212,16 @@ object cookieclickerStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait bottom extends _TooltipOrigins
+  sealed trait bottom
+    extends StObject
+       with _TooltipOrigins
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-right` extends _TooltipOrigins
+  sealed trait `bottom-right`
+    extends StObject
+       with _TooltipOrigins
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
@@ -311,7 +316,9 @@ object cookieclickerStrings {
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait cookie extends UpgradePool
+  sealed trait cookie
+    extends StObject
+       with UpgradePool
   @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
   
@@ -376,7 +383,9 @@ object cookieclickerStrings {
   def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait debug extends UpgradePool
+  sealed trait debug
+    extends StObject
+       with UpgradePool
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -471,7 +480,9 @@ object cookieclickerStrings {
   def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
-  sealed trait dungeon extends AchievementPool
+  sealed trait dungeon
+    extends StObject
+       with AchievementPool
   @scala.inline
   def dungeon: dungeon = "dungeon".asInstanceOf[dungeon]
   
@@ -931,7 +942,9 @@ object cookieclickerStrings {
   def lastIndexOf: lastIndexOf = "lastIndexOf".asInstanceOf[lastIndexOf]
   
   @js.native
-  sealed trait left extends _TooltipOrigins
+  sealed trait left
+    extends StObject
+       with _TooltipOrigins
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -1091,7 +1104,9 @@ object cookieclickerStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait normal extends AchievementPool
+  sealed trait normal
+    extends StObject
+       with AchievementPool
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -1251,12 +1266,16 @@ object cookieclickerStrings {
   def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait prestige extends UpgradePool
+  sealed trait prestige
+    extends StObject
+       with UpgradePool
   @scala.inline
   def prestige: prestige = "prestige".asInstanceOf[prestige]
   
   @js.native
-  sealed trait prestigeDecor extends UpgradePool
+  sealed trait prestigeDecor
+    extends StObject
+       with UpgradePool
   @scala.inline
   def prestigeDecor: prestigeDecor = "prestigeDecor".asInstanceOf[prestigeDecor]
   
@@ -1386,7 +1405,9 @@ object cookieclickerStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
-  sealed trait shadow extends AchievementPool
+  sealed trait shadow
+    extends StObject
+       with AchievementPool
   @scala.inline
   def shadow: shadow = "shadow".asInstanceOf[shadow]
   
@@ -1456,7 +1477,9 @@ object cookieclickerStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait store extends _TooltipOrigins
+  sealed trait store
+    extends StObject
+       with _TooltipOrigins
   @scala.inline
   def store: store = "store".asInstanceOf[store]
   
@@ -1526,7 +1549,9 @@ object cookieclickerStrings {
   def td: td = "td".asInstanceOf[td]
   
   @js.native
-  sealed trait tech extends UpgradePool
+  sealed trait tech
+    extends StObject
+       with UpgradePool
   @scala.inline
   def tech: tech = "tech".asInstanceOf[tech]
   
@@ -1566,7 +1591,9 @@ object cookieclickerStrings {
   def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
-  sealed trait `this` extends _TooltipOrigins
+  sealed trait `this`
+    extends StObject
+       with _TooltipOrigins
   @scala.inline
   def `this`: `this` = "this".asInstanceOf[`this`]
   
@@ -1602,7 +1629,9 @@ object cookieclickerStrings {
   sealed trait toString extends StObject
   
   @js.native
-  sealed trait toggle extends UpgradePool
+  sealed trait toggle
+    extends StObject
+       with UpgradePool
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   
@@ -1677,7 +1706,9 @@ object cookieclickerStrings {
   def unshift: unshift = "unshift".asInstanceOf[unshift]
   
   @js.native
-  sealed trait unused extends UpgradePool
+  sealed trait unused
+    extends StObject
+       with UpgradePool
   @scala.inline
   def unused: unused = "unused".asInstanceOf[unused]
   

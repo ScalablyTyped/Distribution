@@ -2,23 +2,21 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVTLDevicesOutput extends StObject {
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * An opaque string that indicates the position at which the VTL devices that were fetched for description ended. Use the marker in your next request to fetch the next set of VTL devices in the list. If there are no more VTL devices to describe, this field does not appear in the response.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * An array of VTL device objects composed of the Amazon Resource Name (ARN) of the VTL devices.
     */
-  var VTLDevices: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDevices] = js.native
+  var VTLDevices: js.UndefOr[typings.awsSdk.storagegatewayMod.VTLDevices] = js.undefined
 }
 object DescribeVTLDevicesOutput {
   

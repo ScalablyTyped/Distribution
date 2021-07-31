@@ -2,13 +2,11 @@ package typings.tern.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query[Q /* <: typings.tern.ternMod.Query */] extends StObject {
   
-  var query: js.UndefOr[Q] = js.native
+  var query: js.UndefOr[Q] = js.undefined
 }
 object Query {
   
@@ -19,7 +17,7 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query[_], Q /* <: typings.tern.ternMod.Query */] (val x: Self with Query[Q]) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query[?], Q /* <: typings.tern.ternMod.Query */] (val x: Self & Query[Q]) extends AnyVal {
     
     @scala.inline
     def setQuery(value: Q): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])

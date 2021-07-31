@@ -2,18 +2,16 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'narrow' | 'short' | 'long', string | undefined> */
-@js.native
 trait Recordnarrowshortlongstri extends StObject {
   
-  var long: js.UndefOr[String] = js.native
+  var long: js.UndefOr[String] = js.undefined
   
-  var narrow: js.UndefOr[String] = js.native
+  var narrow: js.UndefOr[String] = js.undefined
   
-  var short: js.UndefOr[String] = js.native
+  var short: js.UndefOr[String] = js.undefined
 }
 object Recordnarrowshortlongstri {
   

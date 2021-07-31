@@ -19,7 +19,6 @@ import typings.reactWidgets.selectListMod.SelectListClass
 import typings.reactWidgets.selectListMod.SelectListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,12 +36,12 @@ object mod {
     
     @JSImport("react-widgets", "Calendar")
     @js.native
-    val ^ : CalendarClass = js.native
+    val ^ : js.Object & CalendarClass = js.native
     
-    type _To = CalendarClass
+    type _To = js.Object & CalendarClass
     
     /* This means you don't have to write `^`, but can instead just say `Calendar.foo` */
-    override def _to: CalendarClass = ^
+    override def _to: js.Object & CalendarClass = ^
   }
   
   object Combobox extends Shortcut {
@@ -58,12 +57,12 @@ object mod {
     
     @JSImport("react-widgets", "Combobox")
     @js.native
-    val ^ : ComboboxClass = js.native
+    val ^ : js.Object & ComboboxClass = js.native
     
-    type _To = ComboboxClass
+    type _To = js.Object & ComboboxClass
     
     /* This means you don't have to write `^`, but can instead just say `Combobox.foo` */
-    override def _to: ComboboxClass = ^
+    override def _to: js.Object & ComboboxClass = ^
   }
   
   object DateTimePicker extends Shortcut {
@@ -79,12 +78,12 @@ object mod {
     
     @JSImport("react-widgets", "DateTimePicker")
     @js.native
-    val ^ : DateTimePickerClass = js.native
+    val ^ : js.Object & DateTimePickerClass = js.native
     
-    type _To = DateTimePickerClass
+    type _To = js.Object & DateTimePickerClass
     
     /* This means you don't have to write `^`, but can instead just say `DateTimePicker.foo` */
-    override def _to: DateTimePickerClass = ^
+    override def _to: js.Object & DateTimePickerClass = ^
   }
   
   object DropdownList extends Shortcut {
@@ -100,12 +99,12 @@ object mod {
     
     @JSImport("react-widgets", "DropdownList")
     @js.native
-    val ^ : DropdownListClass = js.native
+    val ^ : js.Object & DropdownListClass = js.native
     
-    type _To = DropdownListClass
+    type _To = js.Object & DropdownListClass
     
     /* This means you don't have to write `^`, but can instead just say `DropdownList.foo` */
-    override def _to: DropdownListClass = ^
+    override def _to: js.Object & DropdownListClass = ^
   }
   
   object Multiselect extends Shortcut {
@@ -121,12 +120,12 @@ object mod {
     
     @JSImport("react-widgets", "Multiselect")
     @js.native
-    val ^ : MultiselectClass = js.native
+    val ^ : js.Object & MultiselectClass = js.native
     
-    type _To = MultiselectClass
+    type _To = js.Object & MultiselectClass
     
     /* This means you don't have to write `^`, but can instead just say `Multiselect.foo` */
-    override def _to: MultiselectClass = ^
+    override def _to: js.Object & MultiselectClass = ^
   }
   
   object NumberPicker extends Shortcut {
@@ -142,12 +141,12 @@ object mod {
     
     @JSImport("react-widgets", "NumberPicker")
     @js.native
-    val ^ : NumberPickerClass = js.native
+    val ^ : js.Object & NumberPickerClass = js.native
     
-    type _To = NumberPickerClass
+    type _To = js.Object & NumberPickerClass
     
     /* This means you don't have to write `^`, but can instead just say `NumberPicker.foo` */
-    override def _to: NumberPickerClass = ^
+    override def _to: js.Object & NumberPickerClass = ^
   }
   
   object SelectList extends Shortcut {
@@ -163,11 +162,11 @@ object mod {
     
     @JSImport("react-widgets", "SelectList")
     @js.native
-    val ^ : SelectListClass = js.native
+    val ^ : js.Object & SelectListClass = js.native
     
-    type _To = SelectListClass
+    type _To = js.Object & SelectListClass
     
     /* This means you don't have to write `^`, but can instead just say `SelectList.foo` */
-    override def _to: SelectListClass = ^
+    override def _to: js.Object & SelectListClass = ^
   }
 }

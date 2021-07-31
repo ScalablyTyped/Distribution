@@ -3,15 +3,13 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import typings.vsoNodeApi.galleryInterfacesMod.ExtensionIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstalledExtensionQuery extends StObject {
   
-  var assetTypes: js.Array[String] = js.native
+  var assetTypes: js.Array[String]
   
-  var monikers: js.Array[ExtensionIdentifier] = js.native
+  var monikers: js.Array[ExtensionIdentifier]
 }
 object InstalledExtensionQuery {
   

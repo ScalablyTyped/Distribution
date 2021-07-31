@@ -2,30 +2,30 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureSet extends HasZM {
+trait FeatureSet
+  extends StObject
+     with HasZM {
   
   // optional
-  var displayFieldName: js.UndefOr[String] = js.native
+  var displayFieldName: js.UndefOr[String] = js.undefined
   
-  var features: js.Array[Feature] = js.native
+  var features: js.Array[Feature]
   
   // for feature layers only.
-  var fields: js.UndefOr[js.Array[Field]] = js.native
+  var fields: js.UndefOr[js.Array[Field]] = js.undefined
   
   // optional
-  var geometryType: js.UndefOr[esriGeometryType] = js.native
+  var geometryType: js.UndefOr[esriGeometryType] = js.undefined
   
   // optional
-  var globalIdFieldName: js.UndefOr[String] = js.native
+  var globalIdFieldName: js.UndefOr[String] = js.undefined
   
-  var objectIdFieldName: js.UndefOr[String] = js.native
+  var objectIdFieldName: js.UndefOr[String] = js.undefined
   
   // for feature layers only
-  var spatialReference: js.UndefOr[SpatialReference] = js.native
+  var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 object FeatureSet {
   

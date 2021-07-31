@@ -3,25 +3,23 @@ package typings.dashjs.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IManifestInfo extends StObject {
   
-  var DVRWindowSize: Double = js.native
+  var DVRWindowSize: Double
   
-  var availableFrom: Date = js.native
+  var availableFrom: Date
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var isDynamic: Boolean = js.native
+  var isDynamic: Boolean
   
-  var loadedTime: Date = js.native
+  var loadedTime: Date
   
-  var maxFragmentDuration: Double = js.native
+  var maxFragmentDuration: Double
   
-  var minBufferTime: Double = js.native
+  var minBufferTime: Double
 }
 object IManifestInfo {
   

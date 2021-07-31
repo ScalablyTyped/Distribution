@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.PivotConfiguratorOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.PivotConfigurator")
 @js.native
 class PivotConfigurator protected ()
-  extends typings.kendoUi.kendo.ui.PivotConfigurator {
+  extends StObject
+     with typings.kendoUi.kendo.ui.PivotConfigurator {
   def this(element: Element) = this()
   def this(element: Element, options: PivotConfiguratorOptions) = this()
 }
@@ -21,9 +21,8 @@ object PivotConfigurator {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.PivotConfigurator.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.PivotConfigurator = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.PivotConfigurator = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.PivotConfigurator]
   
   /* static member */
   @JSGlobal("kendo.ui.PivotConfigurator.fn")

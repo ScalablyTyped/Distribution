@@ -4,17 +4,17 @@ import typings.exceljs.anon.Error
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellFormulaValue extends _CellValue {
+trait CellFormulaValue
+  extends StObject
+     with _CellValue {
   
-  var date1904: Boolean = js.native
+  var date1904: Boolean
   
-  var formula: String = js.native
+  var formula: String
   
-  var result: js.UndefOr[Double | String | Date | Error] = js.native
+  var result: js.UndefOr[Double | String | Date | Error] = js.undefined
 }
 object CellFormulaValue {
   

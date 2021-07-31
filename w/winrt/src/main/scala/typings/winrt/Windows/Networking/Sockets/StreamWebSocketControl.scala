@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamWebSocketControl extends IStreamWebSocketControl
+trait StreamWebSocketControl
+  extends StObject
+     with IStreamWebSocketControl
 object StreamWebSocketControl {
   
   @scala.inline

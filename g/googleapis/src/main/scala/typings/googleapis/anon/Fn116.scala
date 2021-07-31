@@ -6,7 +6,6 @@ import typings.googleapis.securitycenterV1Mod.securitycenterV1.Options
 import typings.googleapis.securitycenterV1Mod.securitycenterV1.Securitycenter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

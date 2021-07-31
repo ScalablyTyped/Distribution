@@ -1,10 +1,17 @@
 package typings.phaser.phaserMod
 
+import typings.phaser.CameraRotateCallback
+import typings.phaser.Phaser.Cameras.Scene2D.Camera
+import typings.phaser.Phaser.Input.Keyboard.Key
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline
 import typings.phaser.Phaser.Types.Cameras.Controls.FixedKeyControlConfig
 import typings.phaser.Phaser.Types.Cameras.Controls.SmoothedKeyControlConfig
+import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraFadeCallback
+import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraFlashCallback
+import typings.phaser.integer
+import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cameras {
@@ -32,12 +39,113 @@ object Cameras {
     @JSImport("phaser", "Cameras.Controls.FixedKeyControl")
     @js.native
     class FixedKeyControl protected ()
-      extends typings.phaser.Phaser.Cameras.Controls.FixedKeyControl {
+      extends StObject
+         with typings.phaser.Phaser.Cameras.Controls.FixedKeyControl {
       /**
         * 
         * @param config The Fixed Key Control configuration object.
         */
       def this(config: FixedKeyControlConfig) = this()
+      
+      /**
+        * A flag controlling if the Controls will update the Camera or not.
+        */
+      /* CompleteClass */
+      var active: Boolean = js.native
+      
+      /**
+        * The Camera that this Control will update.
+        */
+      /* CompleteClass */
+      var camera: Camera = js.native
+      
+      /**
+        * Destroys this Key Control.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera down.
+        */
+      /* CompleteClass */
+      var down: Key = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera left.
+        */
+      /* CompleteClass */
+      var left: Key = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera right.
+        */
+      /* CompleteClass */
+      var right: Key = js.native
+      
+      /**
+        * Binds this Key Control to a camera.
+        * @param camera The camera to bind this Key Control to.
+        */
+      /* CompleteClass */
+      override def setCamera(camera: Camera): this.type = js.native
+      
+      /**
+        * The horizontal speed the camera will move.
+        */
+      /* CompleteClass */
+      var speedX: Double = js.native
+      
+      /**
+        * The vertical speed the camera will move.
+        */
+      /* CompleteClass */
+      var speedY: Double = js.native
+      
+      /**
+        * Starts the Key Control running, providing it has been linked to a camera.
+        */
+      /* CompleteClass */
+      override def start(): this.type = js.native
+      
+      /**
+        * Stops this Key Control from running. Call `start` to start it again.
+        */
+      /* CompleteClass */
+      override def stop(): this.type = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera up.
+        */
+      /* CompleteClass */
+      var up: Key = js.native
+      
+      /**
+        * Applies the results of pressing the control keys to the Camera.
+        * 
+        * You must call this every step, it is not called automatically.
+        * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
+        */
+      /* CompleteClass */
+      override def update(delta: Double): Unit = js.native
+      
+      /**
+        * The Key to be pressed that will zoom the Camera in.
+        */
+      /* CompleteClass */
+      var zoomIn: Key = js.native
+      
+      /**
+        * The Key to be pressed that will zoom the Camera out.
+        */
+      /* CompleteClass */
+      var zoomOut: Key = js.native
+      
+      /**
+        * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
+        */
+      /* CompleteClass */
+      var zoomSpeed: Double = js.native
     }
     
     /**
@@ -67,12 +175,137 @@ object Cameras {
     @JSImport("phaser", "Cameras.Controls.SmoothedKeyControl")
     @js.native
     class SmoothedKeyControl protected ()
-      extends typings.phaser.Phaser.Cameras.Controls.SmoothedKeyControl {
+      extends StObject
+         with typings.phaser.Phaser.Cameras.Controls.SmoothedKeyControl {
       /**
         * 
         * @param config The Smoothed Key Control configuration object.
         */
       def this(config: SmoothedKeyControlConfig) = this()
+      
+      /**
+        * The horizontal acceleration the camera will move.
+        */
+      /* CompleteClass */
+      var accelX: Double = js.native
+      
+      /**
+        * The vertical acceleration the camera will move.
+        */
+      /* CompleteClass */
+      var accelY: Double = js.native
+      
+      /**
+        * A flag controlling if the Controls will update the Camera or not.
+        */
+      /* CompleteClass */
+      var active: Boolean = js.native
+      
+      /**
+        * The Camera that this Control will update.
+        */
+      /* CompleteClass */
+      var camera: Camera = js.native
+      
+      /**
+        * Destroys this Key Control.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera down.
+        */
+      /* CompleteClass */
+      var down: Key = js.native
+      
+      /**
+        * The horizontal drag applied to the camera when it is moving.
+        */
+      /* CompleteClass */
+      var dragX: Double = js.native
+      
+      /**
+        * The vertical drag applied to the camera when it is moving.
+        */
+      /* CompleteClass */
+      var dragY: Double = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera left.
+        */
+      /* CompleteClass */
+      var left: Key = js.native
+      
+      /**
+        * The maximum horizontal speed the camera will move.
+        */
+      /* CompleteClass */
+      var maxSpeedX: Double = js.native
+      
+      /**
+        * The maximum vertical speed the camera will move.
+        */
+      /* CompleteClass */
+      var maxSpeedY: Double = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera right.
+        */
+      /* CompleteClass */
+      var right: Key = js.native
+      
+      /**
+        * Binds this Key Control to a camera.
+        * @param camera The camera to bind this Key Control to.
+        */
+      /* CompleteClass */
+      override def setCamera(camera: Camera): this.type = js.native
+      
+      /**
+        * Starts the Key Control running, providing it has been linked to a camera.
+        */
+      /* CompleteClass */
+      override def start(): this.type = js.native
+      
+      /**
+        * Stops this Key Control from running. Call `start` to start it again.
+        */
+      /* CompleteClass */
+      override def stop(): this.type = js.native
+      
+      /**
+        * The Key to be pressed that will move the Camera up.
+        */
+      /* CompleteClass */
+      var up: Key = js.native
+      
+      /**
+        * Applies the results of pressing the control keys to the Camera.
+        * 
+        * You must call this every step, it is not called automatically.
+        * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
+        */
+      /* CompleteClass */
+      override def update(delta: Double): Unit = js.native
+      
+      /**
+        * The Key to be pressed that will zoom the Camera in.
+        */
+      /* CompleteClass */
+      var zoomIn: Key = js.native
+      
+      /**
+        * The Key to be pressed that will zoom the Camera out.
+        */
+      /* CompleteClass */
+      var zoomOut: Key = js.native
+      
+      /**
+        * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
+        */
+      /* CompleteClass */
+      var zoomSpeed: Double = js.native
     }
   }
   
@@ -108,7 +341,8 @@ object Cameras {
     @JSImport("phaser", "Cameras.Scene2D.BaseCamera")
     @js.native
     class BaseCamera protected ()
-      extends typings.phaser.Phaser.Cameras.Scene2D.BaseCamera {
+      extends StObject
+         with typings.phaser.Phaser.Cameras.Scene2D.BaseCamera {
       /**
         * 
         * @param x The x position of the Camera, relative to the top-left of the game canvas.
@@ -117,6 +351,23 @@ object Cameras {
         * @param height The height of the Camera, in pixels.
         */
       def this(x: Double, y: Double, width: Double, height: Double) = this()
+      
+      /**
+        * Sets the visibility of this Game Object.
+        * 
+        * An invisible Game Object will skip rendering, but will still process update logic.
+        * @param value The visible state of the Game Object.
+        */
+      /* CompleteClass */
+      override def setVisible(value: Boolean): this.type = js.native
+      
+      /**
+        * The visible state of the Game Object.
+        * 
+        * An invisible Game Object will skip rendering, but will still process update logic.
+        */
+      /* CompleteClass */
+      var visible: Boolean = js.native
     }
     
     /**
@@ -144,7 +395,8 @@ object Cameras {
     @JSImport("phaser", "Cameras.Scene2D.Camera")
     @js.native
     class Camera protected ()
-      extends typings.phaser.Phaser.Cameras.Scene2D.Camera {
+      extends StObject
+         with typings.phaser.Phaser.Cameras.Scene2D.Camera {
       /**
         * 
         * @param x The x position of the Camera, relative to the top-left of the game canvas.
@@ -153,6 +405,95 @@ object Cameras {
         * @param height The height of the Camera, in pixels.
         */
       def this(x: Double, y: Double, width: Double, height: Double) = this()
+      
+      /**
+        * The horizontally flipped state of the Game Object.
+        * 
+        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+        * Flipping always takes place from the middle of the texture and does not impact the scale value.
+        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+        */
+      /* CompleteClass */
+      var flipX: Boolean = js.native
+      
+      /**
+        * The vertically flipped state of the Game Object.
+        * 
+        * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
+        * Flipping always takes place from the middle of the texture and does not impact the scale value.
+        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+        */
+      /* CompleteClass */
+      var flipY: Boolean = js.native
+      
+      /**
+        * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
+        */
+      /* CompleteClass */
+      override def resetFlip(): this.type = js.native
+      
+      /**
+        * Sets the horizontal and vertical flipped state of this Game Object.
+        * 
+        * A Game Object that is flipped will render inversed on the flipped axis.
+        * Flipping always takes place from the middle of the texture and does not impact the scale value.
+        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+        * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+        * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
+        */
+      /* CompleteClass */
+      override def setFlip(x: Boolean, y: Boolean): this.type = js.native
+      
+      /**
+        * Sets the horizontal flipped state of this Game Object.
+        * 
+        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+        * Flipping always takes place from the middle of the texture and does not impact the scale value.
+        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+        * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+        */
+      /* CompleteClass */
+      override def setFlipX(value: Boolean): this.type = js.native
+      
+      /**
+        * Sets the vertical flipped state of this Game Object.
+        * @param value The flipped state. `false` for no flip, or `true` to be flipped.
+        */
+      /* CompleteClass */
+      override def setFlipY(value: Boolean): this.type = js.native
+      
+      /**
+        * Sets the visibility of this Game Object.
+        * 
+        * An invisible Game Object will skip rendering, but will still process update logic.
+        * @param value The visible state of the Game Object.
+        */
+      /* CompleteClass */
+      override def setVisible(value: Boolean): this.type = js.native
+      
+      /**
+        * Toggles the horizontal flipped state of this Game Object.
+        * 
+        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
+        * Flipping always takes place from the middle of the texture and does not impact the scale value.
+        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
+        */
+      /* CompleteClass */
+      override def toggleFlipX(): this.type = js.native
+      
+      /**
+        * Toggles the vertical flipped state of this Game Object.
+        */
+      /* CompleteClass */
+      override def toggleFlipY(): this.type = js.native
+      
+      /**
+        * The visible state of the Game Object.
+        * 
+        * An invisible Game Object will skip rendering, but will still process update logic.
+        */
+      /* CompleteClass */
+      var visible: Boolean = js.native
     }
     
     /**
@@ -188,7 +529,8 @@ object Cameras {
     @JSImport("phaser", "Cameras.Scene2D.CameraManager")
     @js.native
     class CameraManager protected ()
-      extends typings.phaser.Phaser.Cameras.Scene2D.CameraManager {
+      extends StObject
+         with typings.phaser.Phaser.Cameras.Scene2D.CameraManager {
       /**
         * 
         * @param scene The Scene that owns the Camera Manager plugin.
@@ -212,12 +554,119 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.Fade")
       @js.native
       class Fade protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Fade {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.Fade {
         /**
           * 
           * @param camera The camera this effect is acting upon.
           */
         def this(camera: typings.phaser.Phaser.Cameras.Scene2D.Camera) = this()
+        
+        /**
+          * The Camera this effect belongs to.
+          */
+        /* CompleteClass */
+        override val camera: typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * Destroys this effect, releasing it from the Camera.
+          */
+        /* CompleteClass */
+        override def destroy(): Unit = js.native
+        
+        /**
+          * The direction of the fade.
+          * `true` = fade out (transparent to color), `false` = fade in (color to transparent)
+          */
+        /* CompleteClass */
+        override val direction: Boolean = js.native
+        
+        /**
+          * The duration of the effect, in milliseconds.
+          */
+        /* CompleteClass */
+        override val duration: integer = js.native
+        
+        /**
+          * Called internally when the effect completes.
+          */
+        /* CompleteClass */
+        override def effectComplete(): Unit = js.native
+        
+        /**
+          * Has this effect finished running?
+          * 
+          * This is different from `isRunning` because it remains set to `true` when the effect is over,
+          * until the effect is either reset or started again.
+          */
+        /* CompleteClass */
+        override val isComplete: Boolean = js.native
+        
+        /**
+          * Is this effect actively running?
+          */
+        /* CompleteClass */
+        override val isRunning: Boolean = js.native
+        
+        /**
+          * Called internally by the Canvas Renderer.
+          * @param ctx The Canvas context to render to.
+          */
+        /* CompleteClass */
+        override def postRenderCanvas(ctx: CanvasRenderingContext2D): Boolean = js.native
+        
+        /**
+          * Called internally by the WebGL Renderer.
+          * @param pipeline The WebGL Pipeline to render to.
+          * @param getTintFunction A function that will return the gl safe tint colors.
+          */
+        /* CompleteClass */
+        override def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean = js.native
+        
+        /**
+          * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
+          */
+        /* CompleteClass */
+        var progress: Double = js.native
+        
+        /**
+          * Resets this camera effect.
+          * If it was previously running, it stops instantly without calling its onComplete callback or emitting an event.
+          */
+        /* CompleteClass */
+        override def reset(): Unit = js.native
+        
+        /**
+          * Fades the Camera to or from the given color over the duration specified.
+          * @param direction The direction of the fade. `true` = fade out (transparent to color), `false` = fade in (color to transparent) Default true.
+          * @param duration The duration of the effect in milliseconds. Default 1000.
+          * @param red The amount to fade the red channel towards. A value between 0 and 255. Default 0.
+          * @param green The amount to fade the green channel towards. A value between 0 and 255. Default 0.
+          * @param blue The amount to fade the blue channel towards. A value between 0 and 255. Default 0.
+          * @param force Force the effect to start immediately, even if already running. Default false.
+          * @param callback This callback will be invoked every frame for the duration of the effect.
+          * It is sent two arguments: A reference to the camera and a progress amount between 0 and 1 indicating how complete the effect is.
+          * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
+          */
+        /* CompleteClass */
+        override def start(
+          direction: js.UndefOr[Boolean],
+          duration: js.UndefOr[integer],
+          red: js.UndefOr[integer],
+          green: js.UndefOr[integer],
+          blue: js.UndefOr[integer],
+          force: js.UndefOr[Boolean],
+          callback: js.UndefOr[CameraFadeCallback],
+          context: js.UndefOr[js.Any]
+        ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * The main update loop for this effect. Called automatically by the Camera.
+          * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
+          * @param delta The delta time, in ms, elapsed since the last frame.
+          */
+        /* CompleteClass */
+        override def update(time: integer, delta: Double): Unit = js.native
       }
       
       /**
@@ -234,12 +683,101 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.Flash")
       @js.native
       class Flash protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Flash {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.Flash {
         /**
           * 
           * @param camera The camera this effect is acting upon.
           */
         def this(camera: typings.phaser.Phaser.Cameras.Scene2D.Camera) = this()
+        
+        /**
+          * The Camera this effect belongs to.
+          */
+        /* CompleteClass */
+        override val camera: typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * Destroys this effect, releasing it from the Camera.
+          */
+        /* CompleteClass */
+        override def destroy(): Unit = js.native
+        
+        /**
+          * The duration of the effect, in milliseconds.
+          */
+        /* CompleteClass */
+        override val duration: integer = js.native
+        
+        /**
+          * Called internally when the effect completes.
+          */
+        /* CompleteClass */
+        override def effectComplete(): Unit = js.native
+        
+        /**
+          * Is this effect actively running?
+          */
+        /* CompleteClass */
+        override val isRunning: Boolean = js.native
+        
+        /**
+          * Called internally by the Canvas Renderer.
+          * @param ctx The Canvas context to render to.
+          */
+        /* CompleteClass */
+        override def postRenderCanvas(ctx: CanvasRenderingContext2D): Boolean = js.native
+        
+        /**
+          * Called internally by the WebGL Renderer.
+          * @param pipeline The WebGL Pipeline to render to.
+          * @param getTintFunction A function that will return the gl safe tint colors.
+          */
+        /* CompleteClass */
+        override def postRenderWebGL(pipeline: TextureTintPipeline, getTintFunction: js.Function): Boolean = js.native
+        
+        /**
+          * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
+          */
+        /* CompleteClass */
+        var progress: Double = js.native
+        
+        /**
+          * Resets this camera effect.
+          * If it was previously running, it stops instantly without calling its onComplete callback or emitting an event.
+          */
+        /* CompleteClass */
+        override def reset(): Unit = js.native
+        
+        /**
+          * Flashes the Camera to or from the given color over the duration specified.
+          * @param duration The duration of the effect in milliseconds. Default 250.
+          * @param red The amount to fade the red channel towards. A value between 0 and 255. Default 255.
+          * @param green The amount to fade the green channel towards. A value between 0 and 255. Default 255.
+          * @param blue The amount to fade the blue channel towards. A value between 0 and 255. Default 255.
+          * @param force Force the effect to start immediately, even if already running. Default false.
+          * @param callback This callback will be invoked every frame for the duration of the effect.
+          * It is sent two arguments: A reference to the camera and a progress amount between 0 and 1 indicating how complete the effect is.
+          * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
+          */
+        /* CompleteClass */
+        override def start(
+          duration: js.UndefOr[integer],
+          red: js.UndefOr[integer],
+          green: js.UndefOr[integer],
+          blue: js.UndefOr[integer],
+          force: js.UndefOr[Boolean],
+          callback: js.UndefOr[CameraFlashCallback],
+          context: js.UndefOr[js.Any]
+        ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * The main update loop for this effect. Called automatically by the Camera.
+          * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
+          * @param delta The delta time, in ms, elapsed since the last frame.
+          */
+        /* CompleteClass */
+        override def update(time: integer, delta: Double): Unit = js.native
       }
       
       /**
@@ -257,7 +795,8 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.Pan")
       @js.native
       class Pan protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Pan {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.Pan {
         /**
           * 
           * @param camera The camera this effect is acting upon.
@@ -286,12 +825,124 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.RotateTo")
       @js.native
       class RotateTo protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.RotateTo {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.RotateTo {
         /**
           * 
           * @param camera The camera this effect is acting upon.
           */
         def this(camera: typings.phaser.Phaser.Cameras.Scene2D.Camera) = this()
+        
+        /**
+          * The Camera this effect belongs to.
+          */
+        /* CompleteClass */
+        override val camera: typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * The direction of the rotation.
+          */
+        /* CompleteClass */
+        var clockwise: Boolean = js.native
+        
+        /**
+          * The constantly updated value based on the force.
+          */
+        /* CompleteClass */
+        var current: Double = js.native
+        
+        /**
+          * The destination angle in radians to rotate the camera to.
+          */
+        /* CompleteClass */
+        var destination: Double = js.native
+        
+        /**
+          * Destroys this effect, releasing it from the Camera.
+          */
+        /* CompleteClass */
+        override def destroy(): Unit = js.native
+        
+        /**
+          * The duration of the effect, in milliseconds.
+          */
+        /* CompleteClass */
+        override val duration: integer = js.native
+        
+        /**
+          * The ease function to use during the Rotate.
+          */
+        /* CompleteClass */
+        var ease: js.Function = js.native
+        
+        /**
+          * Called internally when the effect completes.
+          */
+        /* CompleteClass */
+        override def effectComplete(): Unit = js.native
+        
+        /**
+          * Is this effect actively running?
+          */
+        /* CompleteClass */
+        override val isRunning: Boolean = js.native
+        
+        /**
+          * If this effect is running this holds the current percentage of the progress, a value between 0 and 1.
+          */
+        /* CompleteClass */
+        var progress: Double = js.native
+        
+        /**
+          * Resets this camera effect.
+          * If it was previously running, it stops instantly without calling its onComplete callback or emitting an event.
+          */
+        /* CompleteClass */
+        override def reset(): Unit = js.native
+        
+        /**
+          * The shortest direction to the target rotation.
+          */
+        /* CompleteClass */
+        var shortestPath: Boolean = js.native
+        
+        /**
+          * The starting angle to rotate the camera from.
+          */
+        /* CompleteClass */
+        var source: Double = js.native
+        
+        /**
+          * This effect will scroll the Camera so that the center of its viewport finishes at the given angle,
+          * over the duration and with the ease specified.
+          * @param radians The destination angle in radians to rotate the Camera viewport to. If the angle is positive then the rotation is clockwise else anticlockwise
+          * @param shortestPath If shortest path is set to true the camera will rotate in the quickest direction clockwise or anti-clockwise. Default false.
+          * @param duration The duration of the effect in milliseconds. Default 1000.
+          * @param ease The ease to use for the Rotate. Can be any of the Phaser Easing constants or a custom function. Default 'Linear'.
+          * @param force Force the rotation effect to start immediately, even if already running. Default false.
+          * @param callback This callback will be invoked every frame for the duration of the effect.
+          * It is sent four arguments: A reference to the camera, a progress amount between 0 and 1 indicating how complete the effect is,
+          * the current camera scroll x coordinate and the current camera scroll y coordinate.
+          * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
+          */
+        /* CompleteClass */
+        override def start(
+          radians: Double,
+          shortestPath: js.UndefOr[Boolean],
+          duration: js.UndefOr[integer],
+          ease: js.UndefOr[String | js.Function],
+          force: js.UndefOr[Boolean],
+          callback: js.UndefOr[CameraRotateCallback],
+          context: js.UndefOr[js.Any]
+        ): typings.phaser.Phaser.Cameras.Scene2D.Camera = js.native
+        
+        /**
+          * The main update loop for this effect. Called automatically by the Camera.
+          * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
+          * @param delta The delta time, in ms, elapsed since the last frame.
+          */
+        /* CompleteClass */
+        override def update(time: integer, delta: Double): Unit = js.native
       }
       
       /**
@@ -308,7 +959,8 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.Shake")
       @js.native
       class Shake protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Shake {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.Shake {
         /**
           * 
           * @param camera The camera this effect is acting upon.
@@ -327,7 +979,8 @@ object Cameras {
       @JSImport("phaser", "Cameras.Scene2D.Effects.Zoom")
       @js.native
       class Zoom protected ()
-        extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Zoom {
+        extends StObject
+           with typings.phaser.Phaser.Cameras.Scene2D.Effects.Zoom {
         /**
           * 
           * @param camera The camera this effect is acting upon.

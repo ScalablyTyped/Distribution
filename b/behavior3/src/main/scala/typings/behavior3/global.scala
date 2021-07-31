@@ -11,12 +11,15 @@ import typings.behavior3.anon.`0`
 import typings.behavior3.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object b3 {
+    
+    @JSGlobal("b3")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSGlobal("b3.ACTION")
     @js.native
@@ -43,8 +46,93 @@ object global {
       * Creates an instance of Action.
       */
     class Action ()
-      extends typings.behavior3.b3.BaseNode {
+      extends StObject
+         with typings.behavior3.b3.BaseNode {
       def this(hasNameTitleProperties: Name) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -72,8 +160,93 @@ object global {
       * Initialization method.
       */
     class BaseNode ()
-      extends typings.behavior3.b3.BaseNode {
+      extends StObject
+         with typings.behavior3.b3.BaseNode {
       def this(hasCategoryNameTitleDescriptionProperties: Category) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -140,7 +313,8 @@ object global {
       * Initialization method.
       */
     class BehaviorTree ()
-      extends typings.behavior3.b3.BehaviorTree
+      extends StObject
+         with typings.behavior3.b3.BehaviorTree
     
     /**
       * The Blackboard is the memory structure required by `BehaviorTree` and its
@@ -184,7 +358,63 @@ object global {
       * Initialization method.
       */
     class Blackboard ()
-      extends typings.behavior3.b3.Blackboard
+      extends StObject
+         with typings.behavior3.b3.Blackboard {
+      
+      /**
+        * Internal method to retrieve the context memory. If treeScope and
+        * nodeScope are provided, this method returns the per node per tree
+        * memory. If only the treeScope is provided, it returns the per tree
+        * memory. If no parameter is provided, it returns the global memory.
+        * Notice that, if only nodeScope is provided, this method will still
+        * return the global memory.
+        *
+        */
+      /* CompleteClass */
+      override def _getMemory(treeScope: String, nodeScope: String): js.Any = js.native
+      
+      /**
+        * Internal method to retrieve the node context memory, given the tree
+        * memory. If the memory does not exist, this method creates is.
+        *
+        */
+      /* CompleteClass */
+      override def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any = js.native
+      
+      /**
+        * Internal method to retrieve the tree context memory. If the memory does
+        * not exist, this method creates it.
+        *
+        */
+      /* CompleteClass */
+      override def _getTreeMemory(treeScope: String): js.Any = js.native
+      
+      /**
+        * Retrieves a value in the blackboard. If treeScope and nodeScope are
+        * provided, this method will retrieve the value from the per node per tree
+        * memory. If only the treeScope is provided, it will retrieve the value
+        * from the per tree memory. If no parameter is provided, this method will
+        * retrieve from the global memory. If only nodeScope is provided (but
+        * treeScope not), this method will still try to retrieve from the global
+        * memory.
+        *
+        */
+      /* CompleteClass */
+      override def get(key: String, treeScope: String, nodeScope: String): js.Any = js.native
+      
+      /**
+        * Stores a value in the blackboard. If treeScope and nodeScope are
+        * provided, this method will save the value into the per node per tree
+        * memory. If only the treeScope is provided, it will save the value into
+        * the per tree memory. If no parameter is provided, this method will save
+        * the value into the global memory. Notice that, if only nodeScope is
+        * provided (but treeScope not), this method will still save the value into
+        * the global memory.
+        *
+        */
+      /* CompleteClass */
+      override def set(key: String, value: String, treeScope: String, nodeScope: String): Unit = js.native
+    }
     
     @JSGlobal("b3.COMPOSITE")
     @js.native
@@ -236,8 +466,93 @@ object global {
       * Creates an instance of Composite.
       */
     class Composite ()
-      extends typings.behavior3.b3.BaseNode {
+      extends StObject
+         with typings.behavior3.b3.BaseNode {
       def this(hasChildrenNameTitleProperties: Children) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -251,8 +566,93 @@ object global {
       * Creates an instance of Condition.
       */
     class Condition ()
-      extends typings.behavior3.b3.BaseNode {
+      extends StObject
+         with typings.behavior3.b3.BaseNode {
       def this(hasNameTitleProperties: Name) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     @JSGlobal("b3.DECORATOR")
@@ -301,8 +701,93 @@ object global {
       * Creates an instance of Decorator.
       */
     class Decorator ()
-      extends typings.behavior3.b3.BaseNode {
+      extends StObject
+         with typings.behavior3.b3.BaseNode {
       def this(hasChildNameTitleProperties: Child) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     @JSGlobal("b3.ERROR")
@@ -319,7 +804,93 @@ object global {
       * Creates an instance of Error.
       */
     class Error ()
-      extends typings.behavior3.b3.Error
+      extends StObject
+         with typings.behavior3.b3.Error {
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
+    }
     
     @JSGlobal("b3.FAILURE")
     @js.native
@@ -335,7 +906,93 @@ object global {
       * Creates an instance of Failer.
       */
     class Failer ()
-      extends typings.behavior3.b3.Failer
+      extends StObject
+         with typings.behavior3.b3.Failer {
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
+    }
     
     /**
       * The Inverter decorator inverts the result of the child, returning `SUCCESS`
@@ -348,8 +1005,93 @@ object global {
       * Creates an instance of Inverter.
       */
     class Inverter ()
-      extends typings.behavior3.b3.Inverter {
+      extends StObject
+         with typings.behavior3.b3.Inverter {
       def this(hasChild: `1`) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -370,8 +1112,93 @@ object global {
       *
       */
     class Limiter ()
-      extends typings.behavior3.b3.Limiter {
+      extends StObject
+         with typings.behavior3.b3.Limiter {
       def this(hasChildMaxLoop: MaxLoop) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -391,8 +1218,93 @@ object global {
       *
       */
     class MaxTime ()
-      extends typings.behavior3.b3.MaxTime {
+      extends StObject
+         with typings.behavior3.b3.MaxTime {
       def this(hasMaxTimeChild: typings.behavior3.anon.MaxTime) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -408,8 +1320,93 @@ object global {
       * Creates an instance of MemPriority.
       */
     class MemPriority ()
-      extends typings.behavior3.b3.MemPriority {
+      extends StObject
+         with typings.behavior3.b3.MemPriority {
       def this(hasChildren: `0`) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -425,8 +1422,93 @@ object global {
       * Creates an instance of MemSequence.
       */
     class MemSequence ()
-      extends typings.behavior3.b3.MemSequence {
+      extends StObject
+         with typings.behavior3.b3.MemSequence {
       def this(hasChildren: `0`) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -441,8 +1523,93 @@ object global {
       * Creates an instance of Priority.
       */
     class Priority ()
-      extends typings.behavior3.b3.Priority {
+      extends StObject
+         with typings.behavior3.b3.Priority {
       def this(hasChildren: `0`) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     @JSGlobal("b3.RUNNING")
@@ -465,8 +1632,93 @@ object global {
       *
       */
     class RepeatUntilFailure ()
-      extends typings.behavior3.b3.RepeatUntilFailure {
+      extends StObject
+         with typings.behavior3.b3.RepeatUntilFailure {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -485,8 +1737,93 @@ object global {
       *
       */
     class RepeatUntilSuccess ()
-      extends typings.behavior3.b3.RepeatUntilSuccess {
+      extends StObject
+         with typings.behavior3.b3.RepeatUntilSuccess {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -505,8 +1842,93 @@ object global {
       *
       */
     class Repeater ()
-      extends typings.behavior3.b3.Repeater {
+      extends StObject
+         with typings.behavior3.b3.Repeater {
       def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -519,7 +1941,93 @@ object global {
       * Creates an instance of Runner.
       */
     class Runner ()
-      extends typings.behavior3.b3.Runner
+      extends StObject
+         with typings.behavior3.b3.Runner {
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
+    }
     
     @JSGlobal("b3.SUCCESS")
     @js.native
@@ -537,8 +2045,93 @@ object global {
       * Creates an instance of Sequence.
       */
     class Sequence ()
-      extends typings.behavior3.b3.Sequence {
+      extends StObject
+         with typings.behavior3.b3.Sequence {
       def this(hasChildren: `0`) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -551,7 +2144,93 @@ object global {
       * Creates an instance of Succeeder.
       */
     class Succeeder ()
-      extends typings.behavior3.b3.Succeeder
+      extends StObject
+         with typings.behavior3.b3.Succeeder {
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
+    }
     
     /**
       * A new Tick object is instantiated every tick by BehaviorTree. It is passed
@@ -574,7 +2253,39 @@ object global {
       * Initialization method.
       */
     class Tick ()
-      extends typings.behavior3.b3.Tick
+      extends StObject
+         with typings.behavior3.b3.Tick {
+      
+      /**
+        * Callback when closing a node (called by BaseNode).
+        */
+      /* CompleteClass */
+      override def _closeNode(node: js.Any): Unit = js.native
+      
+      /**
+        * Called when entering a node (called by BaseNode).
+        */
+      /* CompleteClass */
+      override def _enterNode(node: js.Any): Unit = js.native
+      
+      /**
+        * Callback when exiting a node (called by BaseNode).
+        */
+      /* CompleteClass */
+      override def _exitNode(node: js.Any): Unit = js.native
+      
+      /**
+        * Callback when opening a node (called by BaseNode).
+        */
+      /* CompleteClass */
+      override def _openNode(node: js.Any): Unit = js.native
+      
+      /**
+        * Callback when ticking a node (called by BaseNode).
+        */
+      /* CompleteClass */
+      override def _tickNode(node: js.Any): Unit = js.native
+    }
     
     @JSGlobal("b3.VERSION")
     @js.native
@@ -590,8 +2301,93 @@ object global {
       * Creates an instance of Wait.
       */
     class Wait ()
-      extends typings.behavior3.b3.Wait {
+      extends StObject
+         with typings.behavior3.b3.Wait {
       def this(hasMilliseconds: Milliseconds) = this()
+      
+      /**
+        * Wrapper for close method.
+        */
+      /* CompleteClass */
+      override def _close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for enter method.
+        */
+      /* CompleteClass */
+      override def _enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * This is the main method to propagate the tick signal to this node. This
+        * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
+        * `exit`. It only opens a node if it is not already open. In the same
+        * way, this method only close a node if the node  returned a status
+        * different of `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def _execute(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Wrapper for exit method.
+        */
+      /* CompleteClass */
+      override def _exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for open method.
+        */
+      /* CompleteClass */
+      override def _open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Wrapper for tick method.
+        */
+      /* CompleteClass */
+      override def _tick(tick: typings.behavior3.b3.Tick): Double = js.native
+      
+      /**
+        * Close method, override this to use. This method is called after the tick
+        * callback, and only if the tick return a state different from
+        * `RUNNING`.
+        *
+        */
+      /* CompleteClass */
+      override def close(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Enter method, override this to use. It is called every time a node is
+        * asked to execute, before the tick itself.
+        */
+      /* CompleteClass */
+      override def enter(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Exit method, override this to use. Called every time in the end of the
+        * execution.
+        *
+        */
+      /* CompleteClass */
+      override def exit(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Open method, override this to use. It is called only before the tick
+        * callback and only if the not isn't closed.
+        *
+        * Note: a node will be closed if it returned `RUNNING` in the tick.
+        *
+        */
+      /* CompleteClass */
+      override def open(tick: typings.behavior3.b3.Tick): Unit = js.native
+      
+      /**
+        * Tick method, override this to use. This method must contain the real
+        * execution of node (perform a task, call children, etc.). It is called
+        * every time a node is asked to execute.
+        *
+        */
+      /* CompleteClass */
+      override def tick(tick: typings.behavior3.b3.Tick): Unit = js.native
     }
     
     /**
@@ -600,8 +2396,7 @@ object global {
       * (consult http://www.ietf.org/rfc/rfc4122.txt).
       *
       */
-    @JSGlobal("b3.createUUID")
-    @js.native
-    def createUUID(): String = js.native
+    @scala.inline
+    def createUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUUID")().asInstanceOf[String]
   }
 }

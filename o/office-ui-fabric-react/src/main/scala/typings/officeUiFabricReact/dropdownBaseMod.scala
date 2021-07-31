@@ -10,7 +10,6 @@ import typings.react.mod.FormEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownBaseMod {
@@ -205,8 +204,9 @@ object dropdownBaseMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.officeUiFabricReact.withResponsiveModeMod.IWithResponsiveModeState because var conflicts: responsiveMode. Inlined  */ @js.native
-  trait IDropdownInternalProps extends IDropdownProps
+  - typings.officeUiFabricReact.withResponsiveModeMod.IWithResponsiveModeState because var conflicts: responsiveMode. Inlined  */ trait IDropdownInternalProps
+    extends StObject
+       with IDropdownProps
   object IDropdownInternalProps {
     
     @scala.inline
@@ -216,17 +216,16 @@ object dropdownBaseMod {
     }
   }
   
-  @js.native
   trait IDropdownState extends StObject {
     
-    var calloutRenderEdge: js.UndefOr[RectangleEdge] = js.native
+    var calloutRenderEdge: js.UndefOr[RectangleEdge] = js.undefined
     
     /** Whether the root dropdown element has focus. */
-    var hasFocus: Boolean = js.native
+    var hasFocus: Boolean
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var selectedIndices: js.Array[Double] = js.native
+    var selectedIndices: js.Array[Double]
   }
   object IDropdownState {
     

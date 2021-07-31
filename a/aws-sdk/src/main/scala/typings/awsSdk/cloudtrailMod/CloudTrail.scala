@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait CloudTrail extends Service {
   ): Request[AddTagsResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_CloudTrail: ConfigBase with ClientConfiguration = js.native
+  var config_CloudTrail: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket. 

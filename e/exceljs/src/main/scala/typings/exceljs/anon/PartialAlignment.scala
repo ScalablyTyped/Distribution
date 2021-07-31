@@ -15,26 +15,24 @@ import typings.exceljs.exceljsStrings.top
 import typings.exceljs.exceljsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Alignment> */
-@js.native
 trait PartialAlignment extends StObject {
   
-  var horizontal: js.UndefOr[left | center | right | fill | justify | centerContinuous | distributed] = js.native
+  var horizontal: js.UndefOr[left | center | right | fill | justify | centerContinuous | distributed] = js.undefined
   
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
   
-  var readingOrder: js.UndefOr[rtl | ltr] = js.native
+  var readingOrder: js.UndefOr[rtl | ltr] = js.undefined
   
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
-  var textRotation: js.UndefOr[Double | vertical] = js.native
+  var textRotation: js.UndefOr[Double | vertical] = js.undefined
   
-  var vertical: js.UndefOr[top | middle | bottom | distributed | justify] = js.native
+  var vertical: js.UndefOr[top | middle | bottom | distributed | justify] = js.undefined
   
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object PartialAlignment {
   

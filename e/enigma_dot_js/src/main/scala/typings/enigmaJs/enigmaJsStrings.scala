@@ -3,23 +3,28 @@ package typings.enigmaJs
 import typings.enigmaJs.enigmaJS._MixinType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enigmaJsStrings {
   
   @js.native
-  sealed trait Doc extends _MixinType
+  sealed trait Doc
+    extends StObject
+       with _MixinType
   @scala.inline
   def Doc: Doc = "Doc".asInstanceOf[Doc]
   
   @js.native
-  sealed trait GenericBookmark extends _MixinType
+  sealed trait GenericBookmark
+    extends StObject
+       with _MixinType
   @scala.inline
   def GenericBookmark: GenericBookmark = "GenericBookmark".asInstanceOf[GenericBookmark]
   
   @js.native
-  sealed trait GenericObject extends _MixinType
+  sealed trait GenericObject
+    extends StObject
+       with _MixinType
   @scala.inline
   def GenericObject: GenericObject = "GenericObject".asInstanceOf[GenericObject]
   

@@ -3,31 +3,24 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.UPDATE_PROPERTY_VALUE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUpdatePropertyValueDelta
-  extends IElementDelta
+  extends StObject
+     with IElementDelta
      with Delta {
   
-  var deltaType: UPDATE_PROPERTY_VALUE = js.native
+  var deltaType: UPDATE_PROPERTY_VALUE
   
-  var mutator: Mutator = js.native
+  var mutator: Mutator
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object IUpdatePropertyValueDelta {
   
   @scala.inline
-  def apply(
-    deltaType: UPDATE_PROPERTY_VALUE,
-    elementId: String,
-    mutator: Mutator,
-    propertyName: String,
-    unitId: String
-  ): IUpdatePropertyValueDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def apply(elementId: String, mutator: Mutator, propertyName: String, unitId: String): IUpdatePropertyValueDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "UPDATE_PROPERTY_VALUE", elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdatePropertyValueDelta]
   }
   

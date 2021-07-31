@@ -2,131 +2,129 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofRegionAttachment extends StObject {
   
   /* static member */
-  var C1A: Double = js.native
+  var C1A: Double
   
   /* static member */
-  var C1B: Double = js.native
+  var C1B: Double
   
   /* static member */
-  var C1G: Double = js.native
+  var C1G: Double
   
   /* static member */
-  var C1R: Double = js.native
+  var C1R: Double
   
   /* static member */
-  var C2A: Double = js.native
+  var C2A: Double
   
   /* static member */
-  var C2B: Double = js.native
+  var C2B: Double
   
   /* static member */
-  var C2G: Double = js.native
+  var C2G: Double
   
   /* static member */
-  var C2R: Double = js.native
+  var C2R: Double
   
   /* static member */
-  var C3A: Double = js.native
+  var C3A: Double
   
   /* static member */
-  var C3B: Double = js.native
+  var C3B: Double
   
   /* static member */
-  var C3G: Double = js.native
+  var C3G: Double
   
   /* static member */
-  var C3R: Double = js.native
+  var C3R: Double
   
   /* static member */
-  var C4A: Double = js.native
+  var C4A: Double
   
   /* static member */
-  var C4B: Double = js.native
+  var C4B: Double
   
   /* static member */
-  var C4G: Double = js.native
+  var C4G: Double
   
   /* static member */
-  var C4R: Double = js.native
+  var C4R: Double
   
   /* static member */
-  var OX1: Double = js.native
+  var OX1: Double
   
   /* static member */
-  var OX2: Double = js.native
+  var OX2: Double
   
   /* static member */
-  var OX3: Double = js.native
+  var OX3: Double
   
   /* static member */
-  var OX4: Double = js.native
+  var OX4: Double
   
   /* static member */
-  var OY1: Double = js.native
+  var OY1: Double
   
   /* static member */
-  var OY2: Double = js.native
+  var OY2: Double
   
   /* static member */
-  var OY3: Double = js.native
+  var OY3: Double
   
   /* static member */
-  var OY4: Double = js.native
+  var OY4: Double
   
   /* static member */
-  var U1: Double = js.native
+  var U1: Double
   
   /* static member */
-  var U2: Double = js.native
+  var U2: Double
   
   /* static member */
-  var U3: Double = js.native
+  var U3: Double
   
   /* static member */
-  var U4: Double = js.native
+  var U4: Double
   
   /* static member */
-  var V1: Double = js.native
+  var V1: Double
   
   /* static member */
-  var V2: Double = js.native
+  var V2: Double
   
   /* static member */
-  var V3: Double = js.native
+  var V3: Double
   
   /* static member */
-  var V4: Double = js.native
+  var V4: Double
   
   /* static member */
-  var X1: Double = js.native
+  var X1: Double
   
   /* static member */
-  var X2: Double = js.native
+  var X2: Double
   
   /* static member */
-  var X3: Double = js.native
+  var X3: Double
   
   /* static member */
-  var X4: Double = js.native
+  var X4: Double
   
   /* static member */
-  var Y1: Double = js.native
+  var Y1: Double
   
   /* static member */
-  var Y2: Double = js.native
+  var Y2: Double
   
   /* static member */
-  var Y3: Double = js.native
+  var Y3: Double
   
   /* static member */
-  var Y4: Double = js.native
+  var Y4: Double
 }
 object TypeofRegionAttachment {
   

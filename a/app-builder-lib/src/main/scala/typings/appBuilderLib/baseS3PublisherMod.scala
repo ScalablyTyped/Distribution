@@ -5,7 +5,6 @@ import typings.electronPublish.mod.PublishContext
 import typings.electronPublish.mod.Publisher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseS3PublisherMod {

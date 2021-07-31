@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationSnapshotsResponse extends StObject {
   
   /**
     * The token for the next set of results, or null if there are no additional results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.NextToken] = js.undefined
   
   /**
     * A collection of objects containing information about the application snapshots.
     */
-  var SnapshotSummaries: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SnapshotSummaries] = js.native
+  var SnapshotSummaries: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SnapshotSummaries] = js.undefined
 }
 object ListApplicationSnapshotsResponse {
   

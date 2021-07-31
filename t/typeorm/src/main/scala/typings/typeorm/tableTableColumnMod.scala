@@ -8,7 +8,6 @@ import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableTableColumnMod {
@@ -46,7 +45,7 @@ object tableTableColumnMod {
     /**
       * Array of possible enumerated values.
       */
-    var enum: js.UndefOr[js.Array[String]] = js.native
+    var `enum`: js.UndefOr[js.Array[String]] = js.native
     
     /**
       * Exact name of enum

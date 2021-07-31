@@ -14,50 +14,48 @@ import typings.plotlyJs.plotlyJsStrings.rect
 import typings.plotlyJs.plotlyJsStrings.scaled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Shape> */
-@js.native
 trait PartialShape extends StObject {
   
-  var fillcolor: js.UndefOr[String] = js.native
+  var fillcolor: js.UndefOr[String] = js.undefined
   
-  var layer: js.UndefOr[below | above] = js.native
+  var layer: js.UndefOr[below | above] = js.undefined
   
-  var line: js.UndefOr[PartialShapeLine] = js.native
+  var line: js.UndefOr[PartialShapeLine] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var templateitemname: js.UndefOr[String] = js.native
+  var templateitemname: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[rect | circle | line | path] = js.native
+  var `type`: js.UndefOr[rect | circle | line | path] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var x0: js.UndefOr[Datum] = js.native
+  var x0: js.UndefOr[Datum] = js.undefined
   
-  var x1: js.UndefOr[Datum] = js.native
+  var x1: js.UndefOr[Datum] = js.undefined
   
-  var xanchor: js.UndefOr[Double | String] = js.native
+  var xanchor: js.UndefOr[Double | String] = js.undefined
   
-  var xref: js.UndefOr[paper | XAxisName] = js.native
+  var xref: js.UndefOr[paper | XAxisName] = js.undefined
   
-  var xsizemode: js.UndefOr[scaled | pixel] = js.native
+  var xsizemode: js.UndefOr[scaled | pixel] = js.undefined
   
-  var y0: js.UndefOr[Datum] = js.native
+  var y0: js.UndefOr[Datum] = js.undefined
   
-  var y1: js.UndefOr[Datum] = js.native
+  var y1: js.UndefOr[Datum] = js.undefined
   
-  var yanchor: js.UndefOr[Double | String] = js.native
+  var yanchor: js.UndefOr[Double | String] = js.undefined
   
-  var yref: js.UndefOr[paper | YAxisName] = js.native
+  var yref: js.UndefOr[paper | YAxisName] = js.undefined
   
-  var ysizemode: js.UndefOr[scaled | pixel] = js.native
+  var ysizemode: js.UndefOr[scaled | pixel] = js.undefined
 }
 object PartialShape {
   

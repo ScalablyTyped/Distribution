@@ -10,9 +10,9 @@ Pure javascript autocomplete input for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-autocomplete-input |
 | Keywords           | react-native, iOS, input, Android, autocomplete |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 455552 |
+| # releases         | 7 |
+| # dependents       | 8 |
+| # downloads        | 583378 |
 | # stars            | 4 |
 
 ## Links

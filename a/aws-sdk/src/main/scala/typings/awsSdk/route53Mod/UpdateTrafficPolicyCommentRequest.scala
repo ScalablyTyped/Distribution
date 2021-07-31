@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTrafficPolicyCommentRequest extends StObject {
   
   /**
     * The new comment for the specified traffic policy and version.
     */
-  var Comment: TrafficPolicyComment = js.native
+  var Comment: TrafficPolicyComment
   
   /**
     * The value of Id for the traffic policy that you want to update the comment for.
     */
-  var Id: TrafficPolicyId = js.native
+  var Id: TrafficPolicyId
   
   /**
     * The value of Version for the traffic policy that you want to update the comment for.
     */
-  var Version: TrafficPolicyVersion = js.native
+  var Version: TrafficPolicyVersion
 }
 object UpdateTrafficPolicyCommentRequest {
   

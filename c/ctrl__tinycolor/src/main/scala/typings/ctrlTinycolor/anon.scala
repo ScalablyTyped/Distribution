@@ -5,25 +5,23 @@ import typings.ctrlTinycolor.randomMod.RandomCountOptions
 import typings.ctrlTinycolor.randomMod.RandomOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var format: js.Any = js.native
+    var format: js.Any
     
-    var g: Double = js.native
+    var g: Double
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var r: Double = js.native
+    var r: Double
   }
   object A {
     
@@ -65,14 +63,13 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.HSL> */
-  @js.native
   trait NumberifyHSL extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object NumberifyHSL {
     
@@ -97,16 +94,15 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.HSLA> */
-  @js.native
   trait NumberifyHSLA extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object NumberifyHSLA {
     
@@ -134,14 +130,13 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.HSV> */
-  @js.native
   trait NumberifyHSV extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object NumberifyHSV {
     
@@ -166,16 +161,15 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.HSVA> */
-  @js.native
   trait NumberifyHSVA extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object NumberifyHSVA {
     
@@ -203,14 +197,13 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.RGB> */
-  @js.native
   trait NumberifyRGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object NumberifyRGB {
     
@@ -235,16 +228,15 @@ object anon {
   }
   
   /* Inlined @ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.Numberify<@ctrl/tinycolor.@ctrl/tinycolor/dist/interfaces.RGBA> */
-  @js.native
   trait NumberifyRGBA extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object NumberifyRGBA {
     
@@ -272,12 +264,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@ctrl/tinycolor.@ctrl/tinycolor/dist.TinyColorOptions> */
-  @js.native
   trait PartialTinyColorOptions extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gradientType: js.UndefOr[String] = js.native
+    var gradientType: js.UndefOr[String] = js.undefined
   }
   object PartialTinyColorOptions {
     

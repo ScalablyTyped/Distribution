@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShellItems extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Folders: IFolderDefs = js.native
+  val Folders: IFolderDefs
   
-  def GetObjectVersionsCount(): Double = js.native
+  def GetObjectVersionsCount(): Double
   
-  val ObjectFiles: IObjectFileAndObjVerOfMultipleFiles = js.native
+  val ObjectFiles: IObjectFileAndObjVerOfMultipleFiles
   
-  val ObjectVersions: IObjectVersions = js.native
+  val ObjectVersions: IObjectVersions
   
-  val ObjectVersionsAndProperties: IObjectVersionAndPropertiesOfMultipleObjects = js.native
+  val ObjectVersionsAndProperties: IObjectVersionAndPropertiesOfMultipleObjects
 }
 object IShellItems {
   

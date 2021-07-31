@@ -6,56 +6,86 @@ import typings.faviconsWebpackPlugin.optionsMod.FaviconWebpackPlugionInternalOpt
 import typings.faviconsWebpackPlugin.optionsMod.FaviconWebpackPlugionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("favicons-webpack-plugin/src", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FaviconsWebpackPlugin {
+  class ^ protected ()
+    extends StObject
+       with FaviconsWebpackPlugin {
     /**
       * @param {import('./options').FaviconWebpackPlugionOptions | string} args
       */
     def this(args: String) = this()
     def this(args: FaviconWebpackPlugionOptions) = this()
-  }
-  
-  @js.native
-  trait FaviconsWebpackPlugin extends StObject {
     
+    /* CompleteClass */
     @JSName("apply")
-    def apply(compiler: js.Any): Unit = js.native
+    override def apply(compiler: js.Any): Unit = js.native
     
     /**
       * The light mode will only add a favicon
       * this is very fast but also very limited
       * it is the default mode for development
       */
-    def generateFaviconsLight(compiler: js.Any, compilation: js.Any): js.Promise[_] = js.native
+    /* CompleteClass */
+    override def generateFaviconsLight(compiler: js.Any, compilation: js.Any): js.Promise[js.Any] = js.native
     
     /**
       *  The webapp mode will add a variety of icons
       * this is not as fast as the light mode but
       * supports all common browsers and devices
       */
-    def generateFaviconsWebapp(compiler: js.Any, compilation: js.Any): js.Promise[_] = js.native
+    /* CompleteClass */
+    override def generateFaviconsWebapp(compiler: js.Any, compilation: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Returns wether the plugin should generate a light version or a full webapp
       */
-    def getCurrentCompilationMode(compiler: js.Any): light | webapp = js.native
+    /* CompleteClass */
+    override def getCurrentCompilationMode(compiler: js.Any): light | webapp = js.native
     
     /** @type {import('./options').FaviconWebpackPlugionInternalOptions} */
+    /* CompleteClass */
     var options: FaviconWebpackPlugionInternalOptions = js.native
+  }
+  
+  trait FaviconsWebpackPlugin extends StObject {
+    
+    @JSName("apply")
+    def apply(compiler: js.Any): Unit
+    
+    /**
+      * The light mode will only add a favicon
+      * this is very fast but also very limited
+      * it is the default mode for development
+      */
+    def generateFaviconsLight(compiler: js.Any, compilation: js.Any): js.Promise[js.Any]
+    
+    /**
+      *  The webapp mode will add a variety of icons
+      * this is not as fast as the light mode but
+      * supports all common browsers and devices
+      */
+    def generateFaviconsWebapp(compiler: js.Any, compilation: js.Any): js.Promise[js.Any]
+    
+    /**
+      * Returns wether the plugin should generate a light version or a full webapp
+      */
+    def getCurrentCompilationMode(compiler: js.Any): light | webapp
+    
+    /** @type {import('./options').FaviconWebpackPlugionInternalOptions} */
+    var options: FaviconWebpackPlugionInternalOptions
   }
   object FaviconsWebpackPlugin {
     
     @scala.inline
     def apply(
       apply: js.Any => Unit,
-      generateFaviconsLight: (js.Any, js.Any) => js.Promise[_],
-      generateFaviconsWebapp: (js.Any, js.Any) => js.Promise[_],
+      generateFaviconsLight: (js.Any, js.Any) => js.Promise[js.Any],
+      generateFaviconsWebapp: (js.Any, js.Any) => js.Promise[js.Any],
       getCurrentCompilationMode: js.Any => light | webapp,
       options: FaviconWebpackPlugionInternalOptions
     ): FaviconsWebpackPlugin = {
@@ -70,10 +100,10 @@ object mod {
       def setApply(value: js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGenerateFaviconsLight(value: (js.Any, js.Any) => js.Promise[_]): Self = StObject.set(x, "generateFaviconsLight", js.Any.fromFunction2(value))
+      def setGenerateFaviconsLight(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsLight", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGenerateFaviconsWebapp(value: (js.Any, js.Any) => js.Promise[_]): Self = StObject.set(x, "generateFaviconsWebapp", js.Any.fromFunction2(value))
+      def setGenerateFaviconsWebapp(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsWebapp", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetCurrentCompilationMode(value: js.Any => light | webapp): Self = StObject.set(x, "getCurrentCompilationMode", js.Any.fromFunction1(value))

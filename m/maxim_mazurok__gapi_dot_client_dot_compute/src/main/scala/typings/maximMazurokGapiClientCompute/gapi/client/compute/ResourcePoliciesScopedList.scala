@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePoliciesScopedList extends StObject {
   
   /** A list of resourcePolicies contained in this scope. */
-  var resourcePolicies: js.UndefOr[js.Array[ResourcePolicy]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[ResourcePolicy]] = js.undefined
   
   /** Informational warning which replaces the list of resourcePolicies when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object ResourcePoliciesScopedList {
   

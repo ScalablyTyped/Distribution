@@ -6,7 +6,6 @@ import typings.chrome.chrome.storage.StorageChangedEvent
 import typings.chrome.chrome.storage.SyncStorageArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////

@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a user, suitable for scripting.
   */
-@js.native
 trait User extends StObject {
   
-  def getEmail(): String = js.native
+  def getEmail(): String
   
-  /** @deprecated DO NOT USE */ def getUserLoginId(): String = js.native
+  /** @deprecated DO NOT USE */ def getUserLoginId(): String
 }
 object User {
   

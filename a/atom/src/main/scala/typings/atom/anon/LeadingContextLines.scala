@@ -2,23 +2,21 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeadingContextLines extends StObject {
   
-  var leadingContextLines: js.Array[String] = js.native
+  var leadingContextLines: js.Array[String]
   
-  var lineText: String = js.native
+  var lineText: String
   
-  var lineTextOffset: Double = js.native
+  var lineTextOffset: Double
   
-  var matchText: String = js.native
+  var matchText: String
   
-  var range: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  var range: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]
   
-  var trailingContextLines: js.Array[String] = js.native
+  var trailingContextLines: js.Array[String]
 }
 object LeadingContextLines {
   

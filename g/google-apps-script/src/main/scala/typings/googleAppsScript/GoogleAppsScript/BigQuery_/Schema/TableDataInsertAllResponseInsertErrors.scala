@@ -2,15 +2,13 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableDataInsertAllResponseInsertErrors extends StObject {
   
-  var errors: js.UndefOr[js.Array[ErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorProto]] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object TableDataInsertAllResponseInsertErrors {
   

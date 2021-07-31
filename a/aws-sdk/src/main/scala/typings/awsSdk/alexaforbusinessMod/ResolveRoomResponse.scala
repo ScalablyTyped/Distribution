@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveRoomResponse extends StObject {
   
   /**
     * The ARN of the room from which the skill request was invoked.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the room from which the skill request was invoked.
     */
-  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.native
+  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.undefined
   
   /**
     * Response to get the room profile request. Required.
     */
-  var RoomSkillParameters: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomSkillParameters] = js.native
+  var RoomSkillParameters: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomSkillParameters] = js.undefined
 }
 object ResolveRoomResponse {
   

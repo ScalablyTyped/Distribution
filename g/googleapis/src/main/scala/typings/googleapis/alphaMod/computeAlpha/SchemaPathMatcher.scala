@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * longest-matched rule will serve the URL. If no rule was matched, the
   * default service will be used.
   */
-@js.native
 trait SchemaPathMatcher extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaPathMatcher extends StObject {
     * weightedBackendServices. Only one of defaultRouteAction or
     * defaultUrlRedirect must be set.
     */
-  var defaultRouteAction: js.UndefOr[SchemaHttpRouteAction] = js.native
+  var defaultRouteAction: js.UndefOr[SchemaHttpRouteAction] = js.undefined
   
   /**
     * The full or partial URL to the BackendService resource. This will be used
@@ -44,7 +42,7 @@ trait SchemaPathMatcher extends StObject {
     * specified resource default_service:   - compute.backendBuckets.use  -
     * compute.backendServices.use
     */
-  var defaultService: js.UndefOr[String] = js.native
+  var defaultService: js.UndefOr[String] = js.undefined
   
   /**
     * When when none of the specified pathRules or routeRules match, the
@@ -52,13 +50,13 @@ trait SchemaPathMatcher extends StObject {
     * defaultUrlRedirect is specified, defaultService or defaultRouteAction
     * must not be set.
     */
-  var defaultUrlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.native
+  var defaultUrlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take
@@ -66,12 +64,12 @@ trait SchemaPathMatcher extends StObject {
     * applied after the matching HttpRouteRule HeaderAction and before the
     * HeaderAction in the UrlMap
     */
-  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.undefined
   
   /**
     * The name to which this PathMatcher is referred by the HostRule.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of path rules. Use this list instead of routeRules when routing
@@ -82,7 +80,7 @@ trait SchemaPathMatcher extends StObject {
     * those paths appear in this list. Only one of pathRules or routeRules must
     * be set.
     */
-  var pathRules: js.UndefOr[js.Array[SchemaPathRule]] = js.native
+  var pathRules: js.UndefOr[js.Array[SchemaPathRule]] = js.undefined
   
   /**
     * The list of ordered HTTP route rules. Use this list instead of pathRules
@@ -91,7 +89,7 @@ trait SchemaPathMatcher extends StObject {
     * its specified routing action to take effect. Only one of pathRules or
     * routeRules must be set.
     */
-  var routeRules: js.UndefOr[js.Array[SchemaHttpRouteRule]] = js.native
+  var routeRules: js.UndefOr[js.Array[SchemaHttpRouteRule]] = js.undefined
 }
 object SchemaPathMatcher {
   

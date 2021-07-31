@@ -12,7 +12,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ddm
 import typings.arcgisJsApi.arcgisJsApiStrings.dms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -88,7 +87,7 @@ trait coordinateFormatter extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#load)
     */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /**
     * Returns formatted coordinates in latitude/longitude notation representing the given point's location.
@@ -116,63 +115,43 @@ trait coordinateFormatter extends StObject {
   @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic): String = js.native
   @JSName("toMgrs")
-  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: js.UndefOr[scala.Nothing], addSpaces: Boolean): String = js.native
-  @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`): String = js.native
+  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Unit, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_new180inzone01(
-    point: Point,
-    conversionMode: `new-180-in-zone-01`,
-    precision: js.UndefOr[scala.Nothing],
-    addSpaces: Boolean
-  ): String = js.native
+  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`): String = js.native
+  def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Unit, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_new180inzone60(
-    point: Point,
-    conversionMode: `new-180-in-zone-60`,
-    precision: js.UndefOr[scala.Nothing],
-    addSpaces: Boolean
-  ): String = js.native
+  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`): String = js.native
+  def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Unit, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_old180inzone01(
-    point: Point,
-    conversionMode: `old-180-in-zone-01`,
-    precision: js.UndefOr[scala.Nothing],
-    addSpaces: Boolean
-  ): String = js.native
+  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`): String = js.native
+  def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Unit, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
-  def toMgrs_old180inzone60(
-    point: Point,
-    conversionMode: `old-180-in-zone-60`,
-    precision: js.UndefOr[scala.Nothing],
-    addSpaces: Boolean
-  ): String = js.native
+  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Unit, addSpaces: Boolean): String = js.native
   
   /**
     * Returns formatted coordinates in United States National Grid (USNG) notation representing the given point's location.
@@ -180,9 +159,9 @@ trait coordinateFormatter extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html#toUsng)
     */
   def toUsng(point: Point): String = js.native
-  def toUsng(point: Point, precision: js.UndefOr[scala.Nothing], addSpaces: Boolean): String = js.native
   def toUsng(point: Point, precision: Double): String = js.native
   def toUsng(point: Point, precision: Double, addSpaces: Boolean): String = js.native
+  def toUsng(point: Point, precision: Unit, addSpaces: Boolean): String = js.native
   
   /**
     * Returns formatted coordinates in Universal Transverse Mercator (UTM) notation representing the given point's location.

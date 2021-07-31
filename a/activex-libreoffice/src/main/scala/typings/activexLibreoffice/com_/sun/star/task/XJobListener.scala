@@ -5,19 +5,19 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** listener on finish states of asynchronous job execution */
-@js.native
-trait XJobListener extends XEventListener {
+trait XJobListener
+  extends StObject
+     with XEventListener {
   
   /**
     * indicates that the job is done
     * @param Job identifies the asynchronous job so that {@link theJobExecutor} can differ between more than ones.
     * @param Result should be the same like for the synchronous mode on {@link XJob.execute()} . It provides information about success or failure of job execu
     */
-  def jobFinished(Job: XAsyncJob, Result: js.Any): Unit = js.native
+  def jobFinished(Job: XAsyncJob, Result: js.Any): Unit
 }
 object XJobListener {
   

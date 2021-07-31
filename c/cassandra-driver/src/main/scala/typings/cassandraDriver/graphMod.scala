@@ -7,48 +7,47 @@ import typings.std.Iterator
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphMod {
   
   object graph {
     
+    @JSImport("cassandra-driver/lib/datastax/graph", "graph")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("cassandra-driver/lib/datastax/graph", "graph.GraphResultSet")
     @js.native
     class GraphResultSet protected ()
-      extends Iterator[js.Any, js.Any, js.UndefOr[scala.Nothing]] {
+      extends StObject
+         with Iterator[js.Any, js.Any, Unit] {
       def this(rs: ResultSet) = this()
       
       def first(): js.Any = js.native
       
-      def next(): IteratorResult[_, _] = js.native
-      def next(value: js.Any): IteratorResult[_, _] = js.native
+      def next(): IteratorResult[js.Any, js.Any] = js.native
+      def next(value: js.Any): IteratorResult[js.Any, js.Any] = js.native
       
-      def toArray(): js.Array[_] = js.native
+      def toArray(): js.Array[js.Any] = js.native
       
-      def values(): Iterator[_, _, js.UndefOr[scala.Nothing]] = js.native
+      def values(): Iterator[js.Any, js.Any, Unit] = js.native
     }
     
-    @JSImport("cassandra-driver/lib/datastax/graph", "graph.asDouble")
-    @js.native
-    def asDouble(value: Double): js.Object = js.native
+    @scala.inline
+    def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver/lib/datastax/graph", "graph.asFloat")
-    @js.native
-    def asFloat(value: Double): js.Object = js.native
+    @scala.inline
+    def asFloat(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver/lib/datastax/graph", "graph.asInt")
-    @js.native
-    def asInt(value: Double): js.Object = js.native
+    @scala.inline
+    def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver/lib/datastax/graph", "graph.asTimestamp")
-    @js.native
-    def asTimestamp(value: Date): js.Object = js.native
+    @scala.inline
+    def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("cassandra-driver/lib/datastax/graph", "graph.asUdt")
-    @js.native
-    def asUdt(value: js.Object): js.Object = js.native
+    @scala.inline
+    def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     object direction {
       
@@ -85,18 +84,19 @@ object graphMod {
       val value: EnumValue = js.native
     }
     
-    @js.native
-    trait Edge extends Element {
+    trait Edge
+      extends StObject
+         with Element {
       
-      var inV: js.UndefOr[Vertex] = js.native
+      var inV: js.UndefOr[Vertex] = js.undefined
       
-      var inVLabel: js.UndefOr[String] = js.native
+      var inVLabel: js.UndefOr[String] = js.undefined
       
-      var outV: js.UndefOr[Vertex] = js.native
+      var outV: js.UndefOr[Vertex] = js.undefined
       
-      var outVLabel: js.UndefOr[String] = js.native
+      var outVLabel: js.UndefOr[String] = js.undefined
       
-      var properties: js.UndefOr[js.Object] = js.native
+      var properties: js.UndefOr[js.Object] = js.undefined
     }
     object Edge {
       
@@ -141,12 +141,11 @@ object graphMod {
       }
     }
     
-    @js.native
     trait Element extends StObject {
       
-      var id: js.Any = js.native
+      var id: js.Any
       
-      var label: String = js.native
+      var label: String
     }
     object Element {
       
@@ -167,20 +166,18 @@ object graphMod {
       }
     }
     
-    @js.native
     trait EnumValue extends StObject
     
-    @js.native
     trait Path extends StObject {
       
-      var labels: js.Array[_] = js.native
+      var labels: js.Array[js.Any]
       
-      var objects: js.Array[_] = js.native
+      var objects: js.Array[js.Any]
     }
     object Path {
       
       @scala.inline
-      def apply(labels: js.Array[_], objects: js.Array[_]): Path = {
+      def apply(labels: js.Array[js.Any], objects: js.Array[js.Any]): Path = {
         val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
         __obj.asInstanceOf[Path]
       }
@@ -189,25 +186,24 @@ object graphMod {
       implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setLabels(value: js.Array[_]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
         
         @scala.inline
-        def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+        def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
       }
     }
     
-    @js.native
     trait Property extends StObject {
       
-      var key: js.Any = js.native
+      var key: js.Any
       
-      var value: js.Any = js.native
+      var value: js.Any
     }
     object Property {
       
@@ -228,10 +224,11 @@ object graphMod {
       }
     }
     
-    @js.native
-    trait Vertex extends Element {
+    trait Vertex
+      extends StObject
+         with Element {
       
-      var properties: js.UndefOr[StringDictionary[js.Array[_]]] = js.native
+      var properties: js.UndefOr[StringDictionary[js.Array[js.Any]]] = js.undefined
     }
     object Vertex {
       
@@ -245,21 +242,22 @@ object graphMod {
       implicit class VertexMutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setProperties(value: StringDictionary[js.Array[_]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        def setProperties(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       }
     }
     
-    @js.native
-    trait VertexProperty extends Element {
+    trait VertexProperty
+      extends StObject
+         with Element {
       
-      var key: String = js.native
+      var key: String
       
-      var properties: js.UndefOr[js.Any] = js.native
+      var properties: js.UndefOr[js.Any] = js.undefined
       
-      var value: js.Any = js.native
+      var value: js.Any
     }
     object VertexProperty {
       

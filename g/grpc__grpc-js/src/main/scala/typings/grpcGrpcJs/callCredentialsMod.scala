@@ -5,7 +5,6 @@ import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callCredentialsMod {
@@ -39,18 +38,20 @@ object callCredentialsMod {
   /* static members */
   object CallCredentials {
     
-    @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials.createEmpty")
+    @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials")
     @js.native
-    def createEmpty(): CallCredentials = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createEmpty(): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[CallCredentials]
     
     /**
       * Create a gRPC credential from a Google credential object.
       * @param googleCredentials The authentication client to use.
       * @return The resulting CallCredentials object.
       */
-    @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials.createFromGoogleCredential")
-    @js.native
-    def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = js.native
+    @scala.inline
+    def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
     
     /**
       * Creates a new CallCredentials object from a given function that generates
@@ -59,9 +60,8 @@ object callCredentialsMod {
       * generates a Metadata object based on these options, which is passed back
       * to the caller via a supplied (err, metadata) callback.
       */
-    @JSImport("@grpc/grpc-js/build/src/call-credentials", "CallCredentials.createFromMetadataGenerator")
-    @js.native
-    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): CallCredentials = js.native
+    @scala.inline
+    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
   }
   
   type CallMetadataGenerator = js.Function2[
@@ -70,10 +70,9 @@ object callCredentialsMod {
     Unit
   ]
   
-  @js.native
   trait CallMetadataOptions extends StObject {
     
-    var service_url: String = js.native
+    var service_url: String
   }
   object CallMetadataOptions {
     
@@ -92,7 +91,9 @@ object callCredentialsMod {
   }
   
   @js.native
-  trait CurrentOAuth2Client extends OAuth2Client {
+  trait CurrentOAuth2Client
+    extends StObject
+       with OAuth2Client {
     
     def getRequestHeaders(): js.Promise[StringDictionary[String]] = js.native
     def getRequestHeaders(url: String): js.Promise[StringDictionary[String]] = js.native
@@ -104,13 +105,14 @@ object callCredentialsMod {
   */
   trait OAuth2Client extends StObject
   
-  @js.native
-  trait OldOAuth2Client extends OAuth2Client {
+  trait OldOAuth2Client
+    extends StObject
+       with OAuth2Client {
     
     def getRequestMetadata(
       url: String,
       callback: js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object OldOAuth2Client {
     

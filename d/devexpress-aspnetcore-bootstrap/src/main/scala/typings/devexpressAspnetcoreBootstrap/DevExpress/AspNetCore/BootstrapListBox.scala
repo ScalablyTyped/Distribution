@@ -12,11 +12,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectedIndexChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapListBox extends BootstrapClientEdit {
+trait BootstrapListBox
+  extends StObject
+     with BootstrapClientEdit {
   
   def addItem(text: String): Double = js.native
   // tslint:disable-line:unified-signatures
@@ -60,7 +61,7 @@ trait BootstrapListBox extends BootstrapClientEdit {
   
   def getSelectedItems(): js.Array[BootstrapListBoxItem] = js.native
   
-  def getSelectedValues(): js.Array[_] = js.native
+  def getSelectedValues(): js.Array[js.Any] = js.native
   
   def insertItem(index: Double, text: String): Unit = js.native
   // tslint:disable-line:unified-signatures
@@ -276,7 +277,7 @@ trait BootstrapListBox extends BootstrapClientEdit {
   
   def selectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
   
-  def selectValues(values: js.Array[_]): Unit = js.native
+  def selectValues(values: js.Array[js.Any]): Unit = js.native
   
   def setItemBadgeIconCssClass(index: Double, cssClass: String): Unit = js.native
   
@@ -300,5 +301,5 @@ trait BootstrapListBox extends BootstrapClientEdit {
   
   def unselectItems(items: js.Array[BootstrapListBoxItem]): Unit = js.native
   
-  def unselectValues(values: js.Array[_]): Unit = js.native
+  def unselectValues(values: js.Array[js.Any]): Unit = js.native
 }

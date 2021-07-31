@@ -2,19 +2,19 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpriteOptions extends DrawableOptions {
+trait SpriteOptions
+  extends StObject
+     with DrawableOptions {
   
-  var animations: js.UndefOr[Animations] = js.native
+  var animations: js.UndefOr[Animations] = js.undefined
   
-  var data: js.UndefOr[JSObject] = js.native
+  var data: js.UndefOr[JSObject] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var imageId: js.UndefOr[String] = js.native
+  var imageId: js.UndefOr[String] = js.undefined
 }
 object SpriteOptions {
   

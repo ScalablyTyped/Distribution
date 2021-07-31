@@ -3,28 +3,28 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationReplaceAction extends NavigationStackAction {
+trait NavigationReplaceAction
+  extends StObject
+     with NavigationStackAction {
   
-  var action: js.UndefOr[NavigationAction] = js.native
+  var action: js.UndefOr[NavigationAction] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var params: js.UndefOr[NavigationParams] = js.native
+  var params: js.UndefOr[NavigationParams] = js.undefined
   
-  var routeName: String = js.native
+  var routeName: String
   
-  var `type`: NavigationSlashREPLACE = js.native
+  var `type`: NavigationSlashREPLACE
 }
 object NavigationReplaceAction {
   
   @scala.inline
-  def apply(key: String, routeName: String, `type`: NavigationSlashREPLACE): NavigationReplaceAction = {
+  def apply(key: String, routeName: String): NavigationReplaceAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/REPLACE")
     __obj.asInstanceOf[NavigationReplaceAction]
   }
   

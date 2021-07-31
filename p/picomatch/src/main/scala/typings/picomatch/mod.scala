@@ -10,7 +10,6 @@ import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -44,30 +43,30 @@ object mod extends Shortcut {
       * @api public
       */
     def apply(glob: String): Matcher = js.native
-    def apply(glob: String, options: js.UndefOr[scala.Nothing], returnState: Boolean): Matcher = js.native
+    def apply(glob: String, options: Unit, returnState: Boolean): Matcher = js.native
     def apply(glob: String, options: PicomatchOptions): Matcher = js.native
     def apply(glob: String, options: PicomatchOptions, returnState: Boolean): Matcher = js.native
     def apply(glob: js.Array[String]): Matcher = js.native
-    def apply(glob: js.Array[String], options: js.UndefOr[scala.Nothing], returnState: Boolean): Matcher = js.native
+    def apply(glob: js.Array[String], options: Unit, returnState: Boolean): Matcher = js.native
     def apply(glob: js.Array[String], options: PicomatchOptions): Matcher = js.native
     def apply(glob: js.Array[String], options: PicomatchOptions, returnState: Boolean): Matcher = js.native
     
     def compileRe(state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]]): RegExp = js.native
     def compileRe(
       state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
-      options: js.UndefOr[scala.Nothing],
-      returnOutput: js.UndefOr[scala.Nothing],
-      returnState: Boolean
-    ): RegExp = js.native
-    def compileRe(
-      state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       returnOutput: Boolean
     ): RegExp = js.native
     def compileRe(
       state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       returnOutput: Boolean,
+      returnState: Boolean
+    ): RegExp = js.native
+    def compileRe(
+      state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+      options: Unit,
+      returnOutput: Unit,
       returnState: Boolean
     ): RegExp = js.native
     def compileRe(
@@ -77,18 +76,18 @@ object mod extends Shortcut {
     def compileRe(
       state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
       options: PicomatchOptions,
-      returnOutput: js.UndefOr[scala.Nothing],
-      returnState: Boolean
-    ): RegExp = js.native
-    def compileRe(
-      state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
-      options: PicomatchOptions,
       returnOutput: Boolean
     ): RegExp = js.native
     def compileRe(
       state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
       options: PicomatchOptions,
       returnOutput: Boolean,
+      returnState: Boolean
+    ): RegExp = js.native
+    def compileRe(
+      state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+      options: PicomatchOptions,
+      returnOutput: Unit,
       returnState: Boolean
     ): RegExp = js.native
     
@@ -110,26 +109,21 @@ object mod extends Shortcut {
         /* returnState */ js.UndefOr[Boolean], 
         RegExp
       ] = js.native
-    def makeRe(
-      input: String,
-      options: js.UndefOr[scala.Nothing],
-      returnOutput: js.UndefOr[scala.Nothing],
-      returnState: Boolean
-    ): js.Function4[
+    def makeRe(input: String, options: Unit, returnOutput: Boolean): js.Function4[
         /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
         /* options */ js.UndefOr[PicomatchOptions], 
         /* returnOutput */ js.UndefOr[Boolean], 
         /* returnState */ js.UndefOr[Boolean], 
         RegExp
       ] = js.native
-    def makeRe(input: String, options: js.UndefOr[scala.Nothing], returnOutput: Boolean): js.Function4[
+    def makeRe(input: String, options: Unit, returnOutput: Boolean, returnState: Boolean): js.Function4[
         /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
         /* options */ js.UndefOr[PicomatchOptions], 
         /* returnOutput */ js.UndefOr[Boolean], 
         /* returnState */ js.UndefOr[Boolean], 
         RegExp
       ] = js.native
-    def makeRe(input: String, options: js.UndefOr[scala.Nothing], returnOutput: Boolean, returnState: Boolean): js.Function4[
+    def makeRe(input: String, options: Unit, returnOutput: Unit, returnState: Boolean): js.Function4[
         /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
         /* options */ js.UndefOr[PicomatchOptions], 
         /* returnOutput */ js.UndefOr[Boolean], 
@@ -137,18 +131,6 @@ object mod extends Shortcut {
         RegExp
       ] = js.native
     def makeRe(input: String, options: PicomatchOptions): js.Function4[
-        /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
-        /* options */ js.UndefOr[PicomatchOptions], 
-        /* returnOutput */ js.UndefOr[Boolean], 
-        /* returnState */ js.UndefOr[Boolean], 
-        RegExp
-      ] = js.native
-    def makeRe(
-      input: String,
-      options: PicomatchOptions,
-      returnOutput: js.UndefOr[scala.Nothing],
-      returnState: Boolean
-    ): js.Function4[
         /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
         /* options */ js.UndefOr[PicomatchOptions], 
         /* returnOutput */ js.UndefOr[Boolean], 
@@ -169,6 +151,13 @@ object mod extends Shortcut {
         /* returnState */ js.UndefOr[Boolean], 
         RegExp
       ] = js.native
+    def makeRe(input: String, options: PicomatchOptions, returnOutput: Unit, returnState: Boolean): js.Function4[
+        /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
+        /* options */ js.UndefOr[PicomatchOptions], 
+        /* returnOutput */ js.UndefOr[Boolean], 
+        /* returnState */ js.UndefOr[Boolean], 
+        RegExp
+      ] = js.native
     
     def matchBase(input: String, glob: String, options: js.Object): Boolean = js.native
     def matchBase(input: String, glob: String, options: js.Object, posix: js.Any): Boolean = js.native
@@ -180,7 +169,7 @@ object mod extends Shortcut {
     def scan(input: String, options: js.Object): js.Object = js.native
     
     def test(input: String, regex: RegExp): IsMatch = js.native
-    def test(input: String, regex: RegExp, options: js.UndefOr[scala.Nothing], test: js.Object): IsMatch = js.native
+    def test(input: String, regex: RegExp, options: Unit, test: js.Object): IsMatch = js.native
     def test(input: String, regex: RegExp, options: PicomatchOptions): IsMatch = js.native
     def test(input: String, regex: RegExp, options: PicomatchOptions, test: js.Object): IsMatch = js.native
     
@@ -190,24 +179,23 @@ object mod extends Shortcut {
     def toRegex(source: RegExp, options: Debug): RegExp = js.native
   }
   
-  @js.native
   trait PicomatchOptions extends StObject {
     
-    var contains: js.UndefOr[Boolean] = js.native
+    var contains: js.UndefOr[Boolean] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[js.Function1[/* input */ String, String]] = js.native
+    var format: js.UndefOr[js.Function1[/* input */ String, String]] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
-    var onIgnore: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.native
+    var onIgnore: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.undefined
     
-    var onMatch: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.native
+    var onMatch: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.undefined
     
-    var onResult: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.native
+    var onResult: js.UndefOr[js.Function1[/* result */ Result, Unit]] = js.undefined
     
-    var windows: js.UndefOr[Boolean] = js.native
+    var windows: js.UndefOr[Boolean] = js.undefined
   }
   object PicomatchOptions {
     
@@ -270,24 +258,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var glob: String = js.native
+    var glob: String
     
-    var input: String = js.native
+    var input: String
     
-    var isMatch: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['isMatch'] */ js.Any = js.native
+    var isMatch: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['isMatch'] */ js.Any
     
-    var `match`: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['match'] */ js.Any = js.native
+    var `match`: /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(input : string, regex : std.RegExp, options : picomatch.picomatch.PicomatchOptions | undefined, test : {} | undefined): picomatch.anon.IsMatch>['match'] */ js.Any
     
-    var output: String = js.native
+    var output: String
     
-    var posix: Boolean = js.native
+    var posix: Boolean
     
-    var regex: RegExp = js.native
+    var regex: RegExp
     
-    var state: js.Any = js.native
+    var state: js.Any
   }
   object Result {
     

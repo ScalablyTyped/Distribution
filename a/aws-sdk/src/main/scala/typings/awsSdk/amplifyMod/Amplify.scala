@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Amplify extends Service {
   
   @JSName("config")
-  var config_Amplify: ConfigBase with ClientConfiguration = js.native
+  var config_Amplify: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Creates a new Amplify app. 

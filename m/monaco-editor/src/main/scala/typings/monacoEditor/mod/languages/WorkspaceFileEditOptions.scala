@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceFileEditOptions extends StObject {
   
-  var ignoreIfExists: js.UndefOr[Boolean] = js.native
+  var ignoreIfExists: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreIfNotExists: js.UndefOr[Boolean] = js.native
+  var ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined
   
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object WorkspaceFileEditOptions {
   

@@ -2,17 +2,15 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dots extends StObject {
   
-  var dots: Double = js.native
+  var dots: Double
   
-  var duration: String = js.native
+  var duration: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Dots {
   

@@ -2,19 +2,17 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INotebookContents extends StObject {
   
-  val cells: js.Array[ICellContents] = js.native
+  val cells: js.Array[ICellContents]
   
-  val metadata: INotebookMetadata = js.native
+  val metadata: INotebookMetadata
   
-  val nbformat: Double = js.native
+  val nbformat: Double
   
-  val nbformat_minor: Double = js.native
+  val nbformat_minor: Double
 }
 object INotebookContents {
   

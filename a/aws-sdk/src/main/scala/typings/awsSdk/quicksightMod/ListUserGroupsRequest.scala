@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserGroupsRequest extends StObject {
   
   /**
     * The AWS account ID that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The maximum number of results to return from this request.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.quicksightMod.MaxResults] = js.undefined
   
   /**
     * The namespace. Currently, you should set this to default.
     */
-  var Namespace: typings.awsSdk.quicksightMod.Namespace = js.native
+  var Namespace: typings.awsSdk.quicksightMod.Namespace
   
   /**
     * A pagination token that can be used in a subsequent request.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon QuickSight user name that you want to list group memberships for.
     */
-  var UserName: UserName_ = js.native
+  var UserName: UserName_
 }
 object ListUserGroupsRequest {
   

@@ -10,9 +10,9 @@ Cypress bindings for jest-image-snapshot.
 | ------------------ | :-------------: |
 | Full name          | cypress-image-snapshot |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 1936778 |
+| # downloads        | 2613222 |
 | # stars            | 0 |
 
 ## Links

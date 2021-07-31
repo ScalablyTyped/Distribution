@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerReplicationConfiguration extends StObject {
   
   /**
     * The ID of the server with which this replication configuration is associated.
     */
-  var server: js.UndefOr[Server] = js.native
+  var server: js.UndefOr[Server] = js.undefined
   
   /**
     * The parameters for replicating the server.
     */
-  var serverReplicationParameters: js.UndefOr[ServerReplicationParameters] = js.native
+  var serverReplicationParameters: js.UndefOr[ServerReplicationParameters] = js.undefined
 }
 object ServerReplicationConfiguration {
   

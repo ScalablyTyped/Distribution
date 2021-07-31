@@ -2,19 +2,17 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchCustomFieldParams extends StObject {
   
-  var applicableIssueTypes: js.UndefOr[js.Array[Double]] = js.native
+  var applicableIssueTypes: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object PatchCustomFieldParams {
   

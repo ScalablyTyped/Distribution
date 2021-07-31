@@ -3,17 +3,17 @@ package typings.babelPluginReactHtmlAttrs.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransitionEvent[T] extends BaseSyntheticEvent[NativeTransitionEvent, EventTarget with T, EventTarget] {
+trait TransitionEvent[T]
+  extends StObject
+     with BaseSyntheticEvent[NativeTransitionEvent, EventTarget & T, EventTarget] {
   
-  var elapsedTime: Double = js.native
+  var elapsedTime: Double
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var pseudoElement: String = js.native
+  var pseudoElement: String
 }
 object TransitionEvent {
   
@@ -21,7 +21,7 @@ object TransitionEvent {
   def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     elapsedTime: Double,
     eventPhase: Double,
@@ -44,7 +44,7 @@ object TransitionEvent {
   }
   
   @scala.inline
-  implicit class TransitionEventMutableBuilder[Self <: TransitionEvent[_], T] (val x: Self with TransitionEvent[T]) extends AnyVal {
+  implicit class TransitionEventMutableBuilder[Self <: TransitionEvent[?], T] (val x: Self & TransitionEvent[T]) extends AnyVal {
     
     @scala.inline
     def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])

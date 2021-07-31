@@ -7,17 +7,18 @@ import typings.storybookAddonActions.decoratorFunctionMod.DecoratorFunction
 import typings.storybookAddonActions.handlerFunctionMod.HandlerFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
   
-  @JSImport("@storybook/addon-actions/dist/preview", "action")
+  @JSImport("@storybook/addon-actions/dist/preview", JSImport.Namespace)
   @js.native
-  def action(name: String): HandlerFunction = js.native
-  @JSImport("@storybook/addon-actions/dist/preview", "action")
-  @js.native
-  def action(name: String, options: ActionOptions): HandlerFunction = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def action(name: String): HandlerFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("action")(name.asInstanceOf[js.Any]).asInstanceOf[HandlerFunction]
+  @scala.inline
+  def action(name: String, options: ActionOptions): HandlerFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("action")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlerFunction]
   
   @JSImport("@storybook/addon-actions/dist/preview", "actions")
   @js.native
@@ -27,24 +28,19 @@ object previewMod {
   @js.native
   val config: ActionOptions = js.native
   
-  @JSImport("@storybook/addon-actions/dist/preview", "configureActions")
-  @js.native
-  def configureActions(): Unit = js.native
-  @JSImport("@storybook/addon-actions/dist/preview", "configureActions")
-  @js.native
-  def configureActions(options: ActionOptions): Unit = js.native
+  @scala.inline
+  def configureActions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureActions")().asInstanceOf[Unit]
+  @scala.inline
+  def configureActions(options: ActionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureActions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-actions/dist/preview", "decorate")
-  @js.native
-  def decorate(_decorators: js.Array[DecoratorFunction]): js.Function0[Action] = js.native
+  @scala.inline
+  def decorate(_decorators: js.Array[DecoratorFunction]): js.Function0[Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(_decorators.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Action]]
   
-  @JSImport("@storybook/addon-actions/dist/preview", "decorateAction")
-  @js.native
-  def decorateAction(_decorators: js.Array[DecoratorFunction]): js.Function0[Unit] = js.native
+  @scala.inline
+  def decorateAction(_decorators: js.Array[DecoratorFunction]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateAction")(_decorators.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@storybook/addon-actions/dist/preview", "withActions")
-  @js.native
+  @scala.inline
   def withActions(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withActions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -2,24 +2,22 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A width and height.
   */
-@js.native
 trait SchemaSize extends StObject {
   
   /**
     * The height of the object.
     */
-  var height: js.UndefOr[SchemaDimension] = js.native
+  var height: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The width of the object.
     */
-  var width: js.UndefOr[SchemaDimension] = js.native
+  var width: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaSize {
   

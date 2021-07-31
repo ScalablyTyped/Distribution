@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Note: This struct is deprecated (not recommended to use).
   */
-@js.native
 trait INxStreamListEntry extends StObject {
   
   /**
     * Identifier of the stream
     */
-  var qId: String = js.native
+  var qId: String
   
   /**
     * Name of the stream
     */
-  var qName: String = js.native
+  var qName: String
 }
 object INxStreamListEntry {
   

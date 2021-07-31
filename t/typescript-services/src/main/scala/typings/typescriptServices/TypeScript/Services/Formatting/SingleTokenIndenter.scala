@@ -94,15 +94,15 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SingleTokenIndenter extends IndentationTrackingWalker {
+trait SingleTokenIndenter
+  extends StObject
+     with IndentationTrackingWalker {
   
-  var indentationAmount: js.Any = js.native
+  var indentationAmount: js.Any
   
-  var indentationPosition: js.Any = js.native
+  var indentationPosition: js.Any
 }
 object SingleTokenIndenter {
   

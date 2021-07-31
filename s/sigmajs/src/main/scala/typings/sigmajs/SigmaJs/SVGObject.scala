@@ -3,15 +3,13 @@ package typings.sigmajs.SigmaJs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGObject[T] extends StObject {
   
-  def create(`object`: T, a: js.Any*): Element = js.native
+  def create(`object`: T, a: js.Any*): Element
   
-  def update(`object`: T, a: js.Any*): Unit = js.native
+  def update(`object`: T, a: js.Any*): Unit
 }
 object SVGObject {
   
@@ -22,7 +20,7 @@ object SVGObject {
   }
   
   @scala.inline
-  implicit class SVGObjectMutableBuilder[Self <: SVGObject[_], T] (val x: Self with SVGObject[T]) extends AnyVal {
+  implicit class SVGObjectMutableBuilder[Self <: SVGObject[?], T] (val x: Self & SVGObject[T]) extends AnyVal {
     
     @scala.inline
     def setCreate(value: (T, /* repeated */ js.Any) => Element): Self = StObject.set(x, "create", js.Any.fromFunction2(value))

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentAndElementEventHandlersEventMap extends StObject {
   
-  var copy: ClipboardEvent = js.native
+  var copy: ClipboardEvent
   
-  var cut: ClipboardEvent = js.native
+  var cut: ClipboardEvent
   
-  var paste: ClipboardEvent = js.native
+  var paste: ClipboardEvent
 }
 object DocumentAndElementEventHandlersEventMap {
   

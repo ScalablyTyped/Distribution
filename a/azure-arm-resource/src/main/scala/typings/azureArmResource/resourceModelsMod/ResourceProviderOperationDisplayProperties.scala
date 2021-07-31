@@ -2,36 +2,34 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceProviderOperationDisplayProperties extends StObject {
   
   /**
     * Operation description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Resource provider operation.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * Operation provider.
     */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
   /**
     * Operation description.
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * Operation resource.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object ResourceProviderOperationDisplayProperties {
   

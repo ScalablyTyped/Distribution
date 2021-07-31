@@ -2,59 +2,57 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slot extends StObject {
   
-  var attachment: Attachment = js.native
+  var attachment: Attachment
   
-  var attachmentState: Double = js.native
+  var attachmentState: Double
   
-  var attachmentTime: js.Any = js.native
+  var attachmentTime: js.Any
   
-  var blendMode: Double = js.native
+  var blendMode: Double
   
-  var bone: Bone = js.native
+  var bone: Bone
   
-  var clippingContainer: js.Any = js.native
+  var clippingContainer: js.Any
   
-  var color: Color = js.native
+  var color: Color
   
-  var currentGraphics: js.Any = js.native
+  var currentGraphics: js.Any
   
-  var currentMesh: js.Any = js.native
+  var currentMesh: js.Any
   
-  var currentMeshName: String = js.native
+  var currentMeshName: String
   
-  var currentSprite: js.Any = js.native
+  var currentSprite: js.Any
   
-  var currentSpriteName: String = js.native
+  var currentSpriteName: String
   
-  var darkColor: Color = js.native
+  var darkColor: Color
   
-  var data: SlotData = js.native
+  var data: SlotData
   
-  var deform: js.Array[Double] = js.native
+  var deform: js.Array[Double]
   
-  def getAttachment(): Attachment = js.native
+  def getAttachment(): Attachment
   
-  def getAttachmentTime(): Double = js.native
+  def getAttachmentTime(): Double
   
-  var hackAttachment: Attachment = js.native
+  var hackAttachment: Attachment
   
-  var hackRegion: TextureRegion = js.native
+  var hackRegion: TextureRegion
   
-  var meshes: js.Any = js.native
+  var meshes: js.Any
   
-  def setAttachment(attachment: Attachment): Unit = js.native
+  def setAttachment(attachment: Attachment): Unit
   
-  def setAttachmentTime(time: Double): Unit = js.native
+  def setAttachmentTime(time: Double): Unit
   
-  def setToSetupPose(): Unit = js.native
+  def setToSetupPose(): Unit
   
-  var sprites: js.Any = js.native
+  var sprites: js.Any
 }
 object Slot {
   

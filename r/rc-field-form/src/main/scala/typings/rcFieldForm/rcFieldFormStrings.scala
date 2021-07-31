@@ -3,7 +3,6 @@ package typings.rcFieldForm
 import typings.rcFieldForm.interfaceMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcFieldFormStrings {
@@ -49,7 +48,9 @@ object rcFieldFormStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait boolean extends RuleType
+  sealed trait boolean
+    extends StObject
+       with RuleType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -64,7 +65,9 @@ object rcFieldFormStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait date extends RuleType
+  sealed trait date
+    extends StObject
+       with RuleType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
@@ -89,14 +92,18 @@ object rcFieldFormStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait email extends RuleType
+  sealed trait email
+    extends StObject
+       with RuleType
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait enum extends RuleType
+  sealed trait `enum`
+    extends StObject
+       with RuleType
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait execute extends StObject
@@ -109,7 +116,9 @@ object rcFieldFormStrings {
   def external: external = "external".asInstanceOf[external]
   
   @js.native
-  sealed trait float extends RuleType
+  sealed trait float
+    extends StObject
+       with RuleType
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
@@ -124,7 +133,9 @@ object rcFieldFormStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hex extends RuleType
+  sealed trait hex
+    extends StObject
+       with RuleType
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
@@ -144,7 +155,9 @@ object rcFieldFormStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait integer extends RuleType
+  sealed trait integer
+    extends StObject
+       with RuleType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
@@ -179,7 +192,9 @@ object rcFieldFormStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait method extends RuleType
+  sealed trait method
+    extends StObject
+       with RuleType
   @scala.inline
   def method: method = "method".asInstanceOf[method]
   
@@ -204,7 +219,9 @@ object rcFieldFormStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends RuleType
+  sealed trait number
+    extends StObject
+       with RuleType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -214,7 +231,9 @@ object rcFieldFormStrings {
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait `object` extends RuleType
+  sealed trait `object`
+    extends StObject
+       with RuleType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -254,7 +273,9 @@ object rcFieldFormStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait regexp extends RuleType
+  sealed trait regexp
+    extends StObject
+       with RuleType
   @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   
@@ -299,7 +320,9 @@ object rcFieldFormStrings {
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait string extends RuleType
+  sealed trait string
+    extends StObject
+       with RuleType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
@@ -339,7 +362,9 @@ object rcFieldFormStrings {
   def updateValue: updateValue = "updateValue".asInstanceOf[updateValue]
   
   @js.native
-  sealed trait url extends RuleType
+  sealed trait url
+    extends StObject
+       with RuleType
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   

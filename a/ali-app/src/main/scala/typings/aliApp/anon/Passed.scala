@@ -2,19 +2,17 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Passed extends StObject {
   
   // 认证标识
-  var passed: String = js.native
+  var passed: String
   
   // 认证是否通过
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
-  var token: String = js.native
+  var token: String
 }
 object Passed {
   

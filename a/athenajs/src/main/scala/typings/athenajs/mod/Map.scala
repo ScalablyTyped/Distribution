@@ -3,7 +3,6 @@ package typings.athenajs.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Map")
@@ -19,9 +18,9 @@ class Map protected () extends StObject {
   def checkMatrixForCollision(buffer: js.Array[Double], matrixWidth: Double, x: Double, y: Double, behavior: Double): Boolean = js.native
   
   def clear(): Unit = js.native
-  def clear(tileNum: js.UndefOr[scala.Nothing], behavior: Double): Unit = js.native
   def clear(tileNum: Double): Unit = js.native
   def clear(tileNum: Double, behavior: Double): Unit = js.native
+  def clear(tileNum: Unit, behavior: Double): Unit = js.native
   
   var duration: Double = js.native
   
@@ -50,9 +49,9 @@ class Map protected () extends StObject {
   var tileWidth: Double = js.native
   
   def updateTile(col: Double, row: Double): Unit = js.native
-  def updateTile(col: Double, row: Double, tileNum: js.UndefOr[scala.Nothing], behavior: Double): Unit = js.native
   def updateTile(col: Double, row: Double, tileNum: Double): Unit = js.native
   def updateTile(col: Double, row: Double, tileNum: Double, behavior: Double): Unit = js.native
+  def updateTile(col: Double, row: Double, tileNum: Unit, behavior: Double): Unit = js.native
   
   var width: Double = js.native
 }

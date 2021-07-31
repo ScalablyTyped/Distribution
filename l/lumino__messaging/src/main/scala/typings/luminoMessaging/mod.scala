@@ -3,7 +3,6 @@ package typings.luminoMessaging
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -104,6 +103,10 @@ object mod {
   
   object MessageLoop {
     
+    @JSImport("@lumino/messaging", "MessageLoop")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clear all message data associated with a message handler.
       *
@@ -112,9 +115,8 @@ object mod {
       * #### Notes
       * This will clear all posted messages and hooks for the handler.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.clearData")
-    @js.native
-    def clearData(handler: IMessageHandler): Unit = js.native
+    @scala.inline
+    def clearData(handler: IMessageHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Process the pending posted messages in the queue immediately.
@@ -128,9 +130,8 @@ object mod {
       *
       * Recursing into this function is a no-op.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.flush")
-    @js.native
-    def flush(): Unit = js.native
+    @scala.inline
+    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
     /**
       * Get the message loop exception handler.
@@ -140,9 +141,8 @@ object mod {
       * #### Notes
       * The default exception handler is `console.error`.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.getExceptionHandler")
-    @js.native
-    def getExceptionHandler(): ExceptionHandler = js.native
+    @scala.inline
+    def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
     
     /**
       * Install a message hook for a message handler.
@@ -160,9 +160,8 @@ object mod {
       *
       * If the hook is already installed, this is a no-op.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.installMessageHook")
-    @js.native
-    def installMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = js.native
+    @scala.inline
+    def installMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("installMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Post a message to a message handler to process in the future.
@@ -178,9 +177,8 @@ object mod {
       *
       * Exceptions in hooks and handlers will be caught and logged.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.postMessage")
-    @js.native
-    def postMessage(handler: IMessageHandler, msg: Message): Unit = js.native
+    @scala.inline
+    def postMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove an installed message hook for a message handler.
@@ -194,9 +192,8 @@ object mod {
       *
       * If the hook is not installed, this is a no-op.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.removeMessageHook")
-    @js.native
-    def removeMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = js.native
+    @scala.inline
+    def removeMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Send a message to a message handler to process immediately.
@@ -214,9 +211,8 @@ object mod {
       *
       * Exceptions in hooks and handlers will be caught and logged.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.sendMessage")
-    @js.native
-    def sendMessage(handler: IMessageHandler, msg: Message): Unit = js.native
+    @scala.inline
+    def sendMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the message loop exception handler.
@@ -229,9 +225,8 @@ object mod {
       * The exception handler is invoked when a message handler or a
       * message hook throws an exception.
       */
-    @JSImport("@lumino/messaging", "MessageLoop.setExceptionHandler")
-    @js.native
-    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = js.native
+    @scala.inline
+    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
     
     /**
       * A type alias for the exception handler function.
@@ -239,7 +234,6 @@ object mod {
     type ExceptionHandler = js.Function1[/* err */ Error, Unit]
   }
   
-  @js.native
   trait IMessageHandler extends StObject {
     
     /**
@@ -247,7 +241,7 @@ object mod {
       *
       * @param msg - The message to be processed.
       */
-    def processMessage(msg: Message): Unit = js.native
+    def processMessage(msg: Message): Unit
   }
   object IMessageHandler {
     
@@ -265,7 +259,6 @@ object mod {
     }
   }
   
-  @js.native
   trait IMessageHook extends StObject {
     
     /**
@@ -278,7 +271,7 @@ object mod {
       * @returns `true` if the message should continue to be processed
       *   as normal, or `false` if processing should cease immediately.
       */
-    def messageHook(handler: IMessageHandler, msg: Message): Boolean = js.native
+    def messageHook(handler: IMessageHandler, msg: Message): Boolean
   }
   object IMessageHook {
     

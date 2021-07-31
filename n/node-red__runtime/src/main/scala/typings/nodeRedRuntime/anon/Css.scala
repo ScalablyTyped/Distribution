@@ -2,31 +2,29 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Css extends StObject {
   
   /**
     * Absolute path to custom css file
     */
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
   /**
     * Absolute path to theme icon
     */
-  var favicon: js.UndefOr[String] = js.native
+  var favicon: js.UndefOr[String] = js.undefined
   
   /**
     * Absolute paths to custom script files
     */
-  var scripts: js.UndefOr[js.Array[String]] = js.native
+  var scripts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Page title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Css {
   

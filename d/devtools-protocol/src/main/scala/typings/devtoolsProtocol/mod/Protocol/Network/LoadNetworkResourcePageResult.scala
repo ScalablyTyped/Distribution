@@ -3,32 +3,30 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadNetworkResourcePageResult extends StObject {
   
   /**
     * Response headers.
     */
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
-  var httpStatusCode: js.UndefOr[Double] = js.native
+  var httpStatusCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional values used for error reporting.
     */
-  var netError: js.UndefOr[Double] = js.native
+  var netError: js.UndefOr[Double] = js.undefined
   
-  var netErrorName: js.UndefOr[String] = js.native
+  var netErrorName: js.UndefOr[String] = js.undefined
   
   /**
     * If successful, one of the following two fields holds the result.
     */
-  var stream: js.UndefOr[StreamHandle] = js.native
+  var stream: js.UndefOr[StreamHandle] = js.undefined
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object LoadNetworkResourcePageResult {
   

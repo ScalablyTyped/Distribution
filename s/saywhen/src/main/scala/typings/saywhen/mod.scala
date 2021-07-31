@@ -4,36 +4,33 @@ import typings.jasmine.jasmine.Spy
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: Func */](spy: T & Spy[typings.jasmine.jasmine.Func]): CallHandler[T] = ^.asInstanceOf[js.Dynamic].apply(spy.asInstanceOf[js.Any]).asInstanceOf[CallHandler[T]]
+  
   @JSImport("saywhen", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Func */](spy: T with Spy[typings.jasmine.jasmine.Func]): CallHandler[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("saywhen", "captor")
-  @js.native
-  def captor[T](): MatcherProxy[T] = js.native
-  @JSImport("saywhen", "captor")
-  @js.native
-  def captor[T](`val`: T): MatcherProxy[T] = js.native
+  @scala.inline
+  def captor[T](): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")().asInstanceOf[MatcherProxy[T]]
+  @scala.inline
+  def captor[T](`val`: T): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")(`val`.asInstanceOf[js.Any]).asInstanceOf[MatcherProxy[T]]
   
-  @JSImport("saywhen", "is")
-  @js.native
-  def is[T](`val`: T): Boolean = js.native
+  @scala.inline
+  def is[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("saywhen", "noConflict")
-  @js.native
-  def noConflict(): Unit = js.native
+  @scala.inline
+  def noConflict(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Unit]
   
-  @js.native
   trait CallHandler[T /* <: Func */] extends StObject {
     
-    val isCalled: Proxy[T] = js.native
+    val isCalled: Proxy[T]
     
-    def isCalledWith(args: js.Any*): Proxy[T] = js.native
+    def isCalledWith(args: js.Any*): Proxy[T]
   }
   object CallHandler {
     
@@ -44,7 +41,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CallHandlerMutableBuilder[Self <: CallHandler[_], T /* <: Func */] (val x: Self with CallHandler[T]) extends AnyVal {
+    implicit class CallHandlerMutableBuilder[Self <: CallHandler[?], T /* <: Func */] (val x: Self & CallHandler[T]) extends AnyVal {
       
       @scala.inline
       def setIsCalled(value: Proxy[T]): Self = StObject.set(x, "isCalled", value.asInstanceOf[js.Any])
@@ -54,7 +51,11 @@ object mod {
     }
   }
   
-  type Func = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait Func extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   @js.native
   trait MatcherProxy[T] extends StObject {
@@ -66,14 +67,13 @@ object mod {
     def values(): js.Array[T] = js.native
   }
   
-  @js.native
   trait Proxy[T /* <: Func */] extends StObject {
     
-    def `then`(fn: T): Proxy[T] = js.native
+    def `then`(fn: T): Proxy[T]
     
-    def thenReturn(`val`: js.Any): Proxy[T] = js.native
+    def thenReturn(`val`: js.Any): Proxy[T]
     
-    def thenThrow(err: Error): Proxy[T] = js.native
+    def thenThrow(err: Error): Proxy[T]
   }
   object Proxy {
     
@@ -85,7 +85,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy[_], T /* <: Func */] (val x: Self with Proxy[T]) extends AnyVal {
+    implicit class ProxyMutableBuilder[Self <: Proxy[?], T /* <: Func */] (val x: Self & Proxy[T]) extends AnyVal {
       
       @scala.inline
       def setThen(value: T => Proxy[T]): Self = StObject.set(x, "then", js.Any.fromFunction1(value))

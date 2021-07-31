@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticInputFailoverSettings extends StObject {
   
   /**
     * This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.
     */
-  var ErrorClearTimeMsec: js.UndefOr[integerMin1] = js.native
+  var ErrorClearTimeMsec: js.UndefOr[integerMin1] = js.undefined
   
   /**
     * A list of failover conditions. If any of these conditions occur, MediaLive will perform a failover to the other input.
     */
-  var FailoverConditions: js.UndefOr[listOfFailoverCondition] = js.native
+  var FailoverConditions: js.UndefOr[listOfFailoverCondition] = js.undefined
   
   /**
     * Input preference when deciding which input to make active when a previously failed input has recovered.
     */
-  var InputPreference: js.UndefOr[typings.awsSdk.medialiveMod.InputPreference] = js.native
+  var InputPreference: js.UndefOr[typings.awsSdk.medialiveMod.InputPreference] = js.undefined
   
   /**
     * The input ID of the secondary input in the automatic input failover pair.
     */
-  var SecondaryInputId: string = js.native
+  var SecondaryInputId: string
 }
 object AutomaticInputFailoverSettings {
   

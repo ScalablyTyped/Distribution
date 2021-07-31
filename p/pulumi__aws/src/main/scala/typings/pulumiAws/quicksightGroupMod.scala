@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quicksightGroupMod {
@@ -53,6 +52,10 @@ object quicksightGroupMod {
   /* static members */
   object Group {
     
+    @JSImport("@pulumi/aws/quicksight/group", "Group")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Group resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,50 +65,44 @@ object quicksightGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/quicksight/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Group = js.native
-    @JSImport("@pulumi/aws/quicksight/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Group = js.native
-    @JSImport("@pulumi/aws/quicksight/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState): Group = js.native
-    @JSImport("@pulumi/aws/quicksight/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/quicksight/group", "Group.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/group.Group */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/quicksight/group.Group */ Boolean]
   }
   
-  @js.native
   trait GroupArgs extends StObject {
     
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    val awsAccountId: js.UndefOr[Input[String]] = js.native
+    val awsAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description for the group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name for the group.
       */
-    val groupName: Input[String] = js.native
+    val groupName: Input[String]
     
     /**
       * The namespace. Currently, you should set this to `default`.
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
   }
   object GroupArgs {
     
@@ -141,33 +138,32 @@ object quicksightGroupMod {
     }
   }
   
-  @js.native
   trait GroupState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of group
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    val awsAccountId: js.UndefOr[Input[String]] = js.native
+    val awsAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description for the group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name for the group.
       */
-    val groupName: js.UndefOr[Input[String]] = js.native
+    val groupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The namespace. Currently, you should set this to `default`.
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
   }
   object GroupState {
     

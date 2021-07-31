@@ -2,39 +2,37 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPair extends StObject {
   
-  var activeContacts: js.Any = js.native
+  var activeContacts: js.Any
   
-  var bodyA: Body = js.native
+  var bodyA: Body
   
-  var bodyB: Body = js.native
+  var bodyB: Body
   
-  var contacts: js.Any = js.native
+  var contacts: js.Any
   
-  var friction: Double = js.native
+  var friction: Double
   
-  var frictionStatic: Double = js.native
+  var frictionStatic: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var inverseMass: Double = js.native
+  var inverseMass: Double
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var restitution: Double = js.native
+  var restitution: Double
   
-  var separation: Double = js.native
+  var separation: Double
   
-  var slop: Double = js.native
+  var slop: Double
   
-  var timeCreated: Double = js.native
+  var timeCreated: Double
   
-  var timeUpdated: Double = js.native
+  var timeUpdated: Double
 }
 object IPair {
   

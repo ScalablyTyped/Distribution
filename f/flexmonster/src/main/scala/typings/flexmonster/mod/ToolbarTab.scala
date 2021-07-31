@@ -2,29 +2,27 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarTab extends StObject {
   
-  var android: Boolean = js.native
+  var android: Boolean
   
-  var args: js.Any = js.native
+  var args: js.Any
   
-  var handler: js.Function0[Unit] | String = js.native
+  var handler: js.Function0[Unit] | String
   
-  var icon: String = js.native
+  var icon: String
   
-  var id: String = js.native
+  var id: String
   
-  var ios: Boolean = js.native
+  var ios: Boolean
   
-  var menu: js.Array[ToolbarTab] = js.native
+  var menu: js.Array[ToolbarTab]
   
-  var mobile: Boolean = js.native
+  var mobile: Boolean
   
-  var title: String = js.native
+  var title: String
 }
 object ToolbarTab {
   

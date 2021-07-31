@@ -2,20 +2,18 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputAccessoryViewProps extends StObject {
   
-  var backgroundColor: js.UndefOr[ColorValue] = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * An ID which is used to associate this InputAccessoryView to specified TextInput(s).
     */
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object InputAccessoryViewProps {
   

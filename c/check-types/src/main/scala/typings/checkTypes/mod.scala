@@ -8,7 +8,6 @@ import typings.std.Partial
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,12 +38,14 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait AssertFunction extends CheckType {
+  trait AssertFunction
+    extends StObject
+       with CheckType {
     
     def apply[T](possibleFalsy: T): T = js.native
-    def apply[T](possibleFalsy: T, message: js.UndefOr[scala.Nothing], errorType: Instantiable): T = js.native
     def apply[T](possibleFalsy: T, message: String): T = js.native
     def apply[T](possibleFalsy: T, message: String, errorType: Instantiable): T = js.native
+    def apply[T](possibleFalsy: T, message: Unit, errorType: Instantiable): T = js.native
   }
   
   @js.native
@@ -63,7 +64,7 @@ object mod extends Shortcut {
       * Example: apply([2, 3, "four"], check.number) => [true, true, false]
       */
     @JSName("apply")
-    def apply[T](arr: js.Array[_], predicate: js.Function1[/* repeated */ js.Any, T]): js.Array[T] = js.native
+    def apply[T](arr: js.Array[js.Any], predicate: js.Function1[/* repeated */ js.Any, T]): js.Array[T] = js.native
     
     /* Array predicates */
     def array(a: js.Any): /* is std.Array<any> */ Boolean = js.native
@@ -77,9 +78,9 @@ object mod extends Shortcut {
     var array_Original: ArrayFunction = js.native
     
     def assert[T](possibleFalsy: T): T = js.native
-    def assert[T](possibleFalsy: T, message: js.UndefOr[scala.Nothing], errorType: Instantiable): T = js.native
     def assert[T](possibleFalsy: T, message: String): T = js.native
     def assert[T](possibleFalsy: T, message: String, errorType: Instantiable): T = js.native
+    def assert[T](possibleFalsy: T, message: Unit, errorType: Instantiable): T = js.native
     @JSName("assert")
     var assert_Original: AssertFunction = js.native
     
@@ -98,7 +99,7 @@ object mod extends Shortcut {
     /* Date predicates */
     def date(a: js.Any): /* is std.Date */ Boolean = js.native
     
-    def emptyArray(a: js.Array[_]): Boolean = js.native
+    def emptyArray(a: js.Array[js.Any]): Boolean = js.native
     
     def emptyObject(a: js.Object): Boolean = js.native
     
@@ -123,7 +124,7 @@ object mod extends Shortcut {
       */
     def inRange(num: Double, a: Double, b: Double): Boolean = js.native
     
-    def includes(a: js.Array[_], value: js.Any): Boolean = js.native
+    def includes(a: js.Array[js.Any], value: js.Any): Boolean = js.native
     
     def infinity(a: js.Any): Boolean = js.native
     
@@ -159,23 +160,23 @@ object mod extends Shortcut {
       predicates: Partial[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: (args : ...any): boolean}
-      */ typings.checkTypes.checkTypesStrings.CheckType with TopLevel[js.Any]
+      */ typings.checkTypes.checkTypesStrings.CheckType & TopLevel[js.Any]
         ]
     ): Partial[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: any}
-      */ typings.checkTypes.checkTypesStrings.CheckType with TopLevel[js.Any]
+      */ typings.checkTypes.checkTypesStrings.CheckType & TopLevel[js.Any]
       ] = js.native
     
     def `match`(a: String, b: RegExp): Boolean = js.native
     
     def maybe[T](`val`: T): Boolean | T = js.native
     @JSName("maybe")
-    var maybe_Original: CheckType with MaybeFunction = js.native
+    var maybe_Original: CheckType & MaybeFunction = js.native
     
     def negative(num: Double): Boolean = js.native
     
-    def nonEmptyArray(a: js.Array[_]): Boolean = js.native
+    def nonEmptyArray(a: js.Array[js.Any]): Boolean = js.native
     
     def nonEmptyObject(a: js.Object): Boolean = js.native
     
@@ -185,7 +186,7 @@ object mod extends Shortcut {
     def not(`val`: js.Any): Boolean = js.native
     /* Modifiers (some of them in their respected sections) */
     @JSName("not")
-    var not_Original: CheckType with NegationFunction = js.native
+    var not_Original: CheckType & NegationFunction = js.native
     
     def `null`(a: js.Any): /* is null */ Boolean = js.native
     

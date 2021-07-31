@@ -3,41 +3,39 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableOptions extends StObject {
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var cursorOffset: js.UndefOr[js.Any] = js.native
+  var cursorOffset: js.UndefOr[js.Any] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
   
-  var dragcancel: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragcancel: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var hint: js.UndefOr[js.Function | JQuery] = js.native
+  var hint: js.UndefOr[js.Function | JQuery] = js.undefined
   
-  var hold: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var hold: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
   
-  var holdToDrag: js.UndefOr[Boolean] = js.native
+  var holdToDrag: js.UndefOr[Boolean] = js.undefined
   
-  var ignore: js.UndefOr[String] = js.native
+  var ignore: js.UndefOr[String] = js.undefined
 }
 object DraggableOptions {
   

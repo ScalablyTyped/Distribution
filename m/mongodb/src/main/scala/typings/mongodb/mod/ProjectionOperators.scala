@@ -2,22 +2,20 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectionOperators extends StObject {
   
   /** https://docs.mongodb.com/manual/reference/operator/projection/elemMatch/#proj._S_elemMatch */
   @JSName("$elemMatch")
-  var $elemMatch: js.UndefOr[js.Object] = js.native
+  var $elemMatch: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$meta")
-  var $meta: js.UndefOr[MetaProjectionOperators] = js.native
+  var $meta: js.UndefOr[MetaProjectionOperators] = js.undefined
   
   /** https://docs.mongodb.com/manual/reference/operator/projection/slice/#proj._S_slice */
   @JSName("$slice")
-  var $slice: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, scala.Double])] = js.native
+  var $slice: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, scala.Double])] = js.undefined
 }
 object ProjectionOperators {
   

@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarMod {
@@ -83,20 +82,21 @@ object tabBarMod {
     def renderTabBar(): Element = js.native
   }
   
-  @js.native
-  trait AntTabbarProps extends TabBarProps {
+  trait AntTabbarProps
+    extends StObject
+       with TabBarProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var noRenderContent: js.UndefOr[Boolean] = js.native
+    var noRenderContent: js.UndefOr[Boolean] = js.undefined
     
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var prerenderingSiblingsNumber: js.UndefOr[Double] = js.native
+    var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
   }
   object AntTabbarProps {
     

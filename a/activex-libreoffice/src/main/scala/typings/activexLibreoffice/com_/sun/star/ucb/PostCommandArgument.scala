@@ -4,21 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The argument for the command "post".
   * @see XCommandProcessor
   */
-@js.native
 trait PostCommandArgument extends StObject {
   
   /** The data sink receiving the returned contents (supporting either {@link com.sun.star.io.XActiveDataSink} or {@link com.sun.star.io.XOutputStream} ). */
-  var Sink: XInterface = js.native
+  var Sink: XInterface
   
   /** The data source containing the data to post. */
-  var Source: XInputStream = js.native
+  var Source: XInputStream
 }
 object PostCommandArgument {
   

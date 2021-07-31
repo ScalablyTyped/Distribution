@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverallVolume extends StObject {
   
   /**
     * An object that contains inbox and junk mail placement metrics for individual email providers.
     */
-  var DomainIspPlacements: js.UndefOr[typings.awsSdk.pinpointemailMod.DomainIspPlacements] = js.native
+  var DomainIspPlacements: js.UndefOr[typings.awsSdk.pinpointemailMod.DomainIspPlacements] = js.undefined
   
   /**
     * The percentage of emails that were sent from the domain that were read by their recipients.
     */
-  var ReadRatePercent: js.UndefOr[Percentage] = js.native
+  var ReadRatePercent: js.UndefOr[Percentage] = js.undefined
   
   /**
     * An object that contains information about the numbers of messages that arrived in recipients' inboxes and junk mail folders.
     */
-  var VolumeStatistics: js.UndefOr[typings.awsSdk.pinpointemailMod.VolumeStatistics] = js.native
+  var VolumeStatistics: js.UndefOr[typings.awsSdk.pinpointemailMod.VolumeStatistics] = js.undefined
 }
 object OverallVolume {
   

@@ -2,19 +2,17 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileTransferError extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var http_status: Double = js.native
+  var http_status: Double
   
-  var source: String = js.native
+  var source: String
   
-  var target: String = js.native
+  var target: String
 }
 object FileTransferError {
   

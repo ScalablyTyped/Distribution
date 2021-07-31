@@ -3,13 +3,11 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the selection and config of software inside the cluster.
   */
-@js.native
 trait SchemaSoftwareConfig extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaSoftwareConfig extends StObject {
     * &quot;preview&quot; version. If unspecified, it defaults to the latest
     * version.
     */
-  var imageVersion: js.UndefOr[String] = js.native
+  var imageVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The set of optional components to activate on the cluster.
     */
-  var optionalComponents: js.UndefOr[js.Array[String]] = js.native
+  var optionalComponents: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The properties to set on daemon config files.Property keys are
@@ -35,7 +33,7 @@ trait SchemaSoftwareConfig extends StObject {
     * pig.properties spark: spark-defaults.conf yarn: yarn-site.xmlFor more
     * information, see Cluster properties.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaSoftwareConfig {
   

@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactTruncate.reactTruncateBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,16 +19,17 @@ object mod {
   trait Truncate
     extends Component[TruncateProps, js.Object, js.Any]
   
-  @js.native
-  trait TruncateProps extends HTMLProps[Truncate] {
+  trait TruncateProps
+    extends StObject
+       with HTMLProps[Truncate] {
     
-    var ellipsis: js.UndefOr[ReactNode] = js.native
+    var ellipsis: js.UndefOr[ReactNode] = js.undefined
     
-    var lines: js.UndefOr[Double | `false`] = js.native
+    var lines: js.UndefOr[Double | `false`] = js.undefined
     
-    var onTruncate: js.UndefOr[js.Function1[/* isTruncated */ Boolean, Unit]] = js.native
+    var onTruncate: js.UndefOr[js.Function1[/* isTruncated */ Boolean, Unit]] = js.undefined
     
-    var trimWhitespace: js.UndefOr[Boolean] = js.native
+    var trimWhitespace: js.UndefOr[Boolean] = js.undefined
   }
   object TruncateProps {
     

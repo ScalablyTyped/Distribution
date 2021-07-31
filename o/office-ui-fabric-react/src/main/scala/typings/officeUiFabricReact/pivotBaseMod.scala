@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pivotBaseMod {
@@ -76,10 +75,9 @@ object pivotBaseMod {
     def focus(): Unit = js.native
   }
   
-  @js.native
   trait IPivotState extends StObject {
     
-    var selectedKey: js.UndefOr[String] = js.native
+    var selectedKey: js.UndefOr[String] = js.undefined
   }
   object IPivotState {
     

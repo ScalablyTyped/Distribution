@@ -2,10 +2,8 @@ package typings.gitana.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gitana extends StObject {
   
   def ajax(
@@ -16,39 +14,39 @@ trait Gitana extends StObject {
     headers: js.Any,
     successCallback: js.Any,
     failureCallback: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
-  def authenticate(settings: js.Any, authFailureHandler: js.Any): js.Any = js.native
+  def authenticate(settings: js.Any, authFailureHandler: js.Any): js.Any
   
-  def base(): Unit = js.native
+  def base(): Unit
   
-  def clearAuthentication(): Unit = js.native
+  def clearAuthentication(): Unit
   
-  def defaultFailureCallback(http: js.Any): Unit = js.native
+  def defaultFailureCallback(http: js.Any): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def getApplicationInfo(): js.Any = js.native
+  def getApplicationInfo(): js.Any
   
-  def getAuthInfo(): js.Any = js.native
+  def getAuthInfo(): js.Any
   
-  def getFactory(): js.Any = js.native
+  def getFactory(): js.Any
   
-  def getLocale(): js.Any = js.native
+  def getLocale(): js.Any
   
-  def getStackInfo(): js.Any = js.native
+  def getStackInfo(): js.Any
   
-  def gitanaDelete(url: js.Any, params: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaDelete(url: js.Any, params: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
-  def gitanaDownload(url: js.Any, params: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaDownload(url: js.Any, params: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
-  def gitanaGet(url: js.Any, params: js.Any, headers: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaGet(url: js.Any, params: js.Any, headers: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
-  def gitanaPatch(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaPatch(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
-  def gitanaPost(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaPost(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
-  def gitanaPut(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any = js.native
+  def gitanaPut(url: js.Any, params: js.Any, jsonData: js.Any, successCallback: js.Any, failureCallback: js.Any): js.Any
   
   def gitanaRequest(
     method: js.Any,
@@ -59,7 +57,7 @@ trait Gitana extends StObject {
     headers: js.Any,
     successCallback: js.Any,
     failureCallback: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
   def gitanaUpload(
     url: js.Any,
@@ -68,13 +66,13 @@ trait Gitana extends StObject {
     data: js.Any,
     successCallback: js.Any,
     failureCallback: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
-  def refreshAuthentication(callback: js.Any): Unit = js.native
+  def refreshAuthentication(callback: js.Any): Unit
   
-  def reloadAuthInfo(callback: js.Any): Unit = js.native
+  def reloadAuthInfo(callback: js.Any): Unit
   
-  def setLocale(locale: js.Any): Unit = js.native
+  def setLocale(locale: js.Any): Unit
 }
 object Gitana {
   

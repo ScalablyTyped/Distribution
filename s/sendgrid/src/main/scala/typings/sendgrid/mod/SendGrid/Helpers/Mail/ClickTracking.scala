@@ -3,21 +3,19 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Enable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickTracking extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getEnableText(): Boolean = js.native
+  def getEnableText(): Boolean
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setEnableText(enableText: Boolean): Unit = js.native
+  def setEnableText(enableText: Boolean): Unit
   
-  def toJSON(): Enable = js.native
+  def toJSON(): Enable
 }
 object ClickTracking {
   

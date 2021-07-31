@@ -27,10 +27,13 @@ import typings.tensorflowTfjsCore.mod.DataStorage
 import typings.tensorflowTfjsCore.mod.KernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendWebglMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "EPSILON_FLOAT16")
   @js.native
@@ -69,21 +72,21 @@ object backendWebglMod {
     def compileAndRun[K /* <: TensorInfo */](
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
-      outputDtype: js.UndefOr[scala.Nothing],
-      customSetup: js.UndefOr[scala.Nothing],
-      preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
-      program: GPGPUProgram,
-      inputs: js.Array[TensorInfo],
-      outputDtype: js.UndefOr[scala.Nothing],
+      outputDtype: Unit,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
     ): K = js.native
     def compileAndRun[K /* <: TensorInfo */](
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
-      outputDtype: js.UndefOr[scala.Nothing],
+      outputDtype: Unit,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      preventEagerUnpackingOfOutput: Boolean
+    ): K = js.native
+    def compileAndRun[K /* <: TensorInfo */](
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: Unit,
+      customSetup: Unit,
       preventEagerUnpackingOfOutput: Boolean
     ): K = js.native
     def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): K = js.native
@@ -91,13 +94,6 @@ object backendWebglMod {
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.UndefOr[scala.Nothing],
-      preventEagerUnpackingOfOutput: Boolean
-    ): K = js.native
-    def compileAndRun[K /* <: TensorInfo */](
-      program: GPGPUProgram,
-      inputs: js.Array[TensorInfo],
-      outputDtype: DataType,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
     ): K = js.native
     def compileAndRun[K /* <: TensorInfo */](
@@ -105,6 +101,13 @@ object backendWebglMod {
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      preventEagerUnpackingOfOutput: Boolean
+    ): K = js.native
+    def compileAndRun[K /* <: TensorInfo */](
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customSetup: Unit,
       preventEagerUnpackingOfOutput: Boolean
     ): K = js.native
     
@@ -222,13 +225,6 @@ object backendWebglMod {
       program: GPGPUProgram,
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
-      customSetup: js.UndefOr[scala.Nothing],
-      preventEagerUnpackingOfOutput: Boolean
-    ): TensorInfo = js.native
-    def runWebGLProgram(
-      program: GPGPUProgram,
-      inputs: js.Array[TensorInfo],
-      outputDtype: DataType,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
     ): TensorInfo = js.native
     def runWebGLProgram(
@@ -236,6 +232,13 @@ object backendWebglMod {
       inputs: js.Array[TensorInfo],
       outputDtype: DataType,
       customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+      preventEagerUnpackingOfOutput: Boolean
+    ): TensorInfo = js.native
+    def runWebGLProgram(
+      program: GPGPUProgram,
+      inputs: js.Array[TensorInfo],
+      outputDtype: DataType,
+      customSetup: Unit,
       preventEagerUnpackingOfOutput: Boolean
     ): TensorInfo = js.native
     
@@ -265,16 +268,14 @@ object backendWebglMod {
     var warnedAboutMemory: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "getBinaryCache")
-  @js.native
-  def getBinaryCache(webGLVersion: Double): StringDictionary[GPGPUBinary] = js.native
+  @scala.inline
+  def getBinaryCache(webGLVersion: Double): StringDictionary[GPGPUBinary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinaryCache")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[GPGPUBinary]]
   
-  @js.native
   trait CPUTimerQuery extends StObject {
     
-    var endMs: js.UndefOr[Double] = js.native
+    var endMs: js.UndefOr[Double] = js.undefined
     
-    var startMs: Double = js.native
+    var startMs: Double
   }
   object CPUTimerQuery {
     
@@ -298,12 +299,11 @@ object backendWebglMod {
     }
   }
   
-  @js.native
   trait KernelInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var query: js.Promise[Double] = js.native
+    var query: js.Promise[Double]
   }
   object KernelInfo {
     
@@ -326,17 +326,18 @@ object backendWebglMod {
   
   type TimerNode = RecursiveArray[KernelInfo] | KernelInfo
   
-  @js.native
-  trait WebGLMemoryInfo extends MemoryInfo {
+  trait WebGLMemoryInfo
+    extends StObject
+       with MemoryInfo {
     
-    var numBytesInGPU: Double = js.native
+    var numBytesInGPU: Double
     
-    var numBytesInGPUAllocated: Double = js.native
+    var numBytesInGPUAllocated: Double
     
-    var numBytesInGPUFree: Double = js.native
+    var numBytesInGPUFree: Double
     
     @JSName("unreliable")
-    var unreliable_WebGLMemoryInfo: Boolean = js.native
+    var unreliable_WebGLMemoryInfo: Boolean
   }
   object WebGLMemoryInfo {
     
@@ -372,12 +373,13 @@ object backendWebglMod {
     }
   }
   
-  @js.native
-  trait WebGLTimingInfo extends TimingInfo {
+  trait WebGLTimingInfo
+    extends StObject
+       with TimingInfo {
     
-    var downloadWaitMs: Double = js.native
+    var downloadWaitMs: Double
     
-    var uploadWaitMs: Double = js.native
+    var uploadWaitMs: Double
   }
   object WebGLTimingInfo {
     

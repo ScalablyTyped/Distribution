@@ -2,41 +2,41 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
+trait MediaHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean | String] = js.native
+  var autoplay: js.UndefOr[Boolean | String] = js.undefined
   
-  var controls: js.UndefOr[Boolean | String] = js.native
+  var controls: js.UndefOr[Boolean | String] = js.undefined
   
-  var controlsList: js.UndefOr[String] = js.native
+  var controlsList: js.UndefOr[String] = js.undefined
   
-  var controlslist: js.UndefOr[String] = js.native
+  var controlslist: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var crossorigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean | String] = js.native
+  var loop: js.UndefOr[Boolean | String] = js.undefined
   
-  var mediaGroup: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.undefined
   
-  var mediagroup: js.UndefOr[String] = js.native
+  var mediagroup: js.UndefOr[String] = js.undefined
   
-  var muted: js.UndefOr[Boolean | String] = js.native
+  var muted: js.UndefOr[Boolean | String] = js.undefined
   
-  var playsInline: js.UndefOr[Boolean] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean | String] = js.native
+  var playsinline: js.UndefOr[Boolean | String] = js.undefined
   
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
 }
 object MediaHTMLAttributes {
   
@@ -47,7 +47,7 @@ object MediaHTMLAttributes {
   }
   
   @scala.inline
-  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[_], T] (val x: Self with MediaHTMLAttributes[T]) extends AnyVal {
+  implicit class MediaHTMLAttributesMutableBuilder[Self <: MediaHTMLAttributes[?], T] (val x: Self & MediaHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])

@@ -10,19 +10,17 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollbarMod {
   
   type AddTransformableMomentumCallback = js.ThisFunction1[/* this */ Scrollbar, /* willScroll */ Boolean, Unit]
   
-  @js.native
   trait Metrics extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Metrics {
     
@@ -43,18 +41,17 @@ object scrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollIntoViewOptions extends StObject {
     
-    var alignToTop: Boolean = js.native
+    var alignToTop: Boolean
     
-    var offsetBottom: Double = js.native
+    var offsetBottom: Double
     
-    var offsetLeft: Double = js.native
+    var offsetLeft: Double
     
-    var offsetTop: Double = js.native
+    var offsetTop: Double
     
-    var onlyScrollIfNeeded: Boolean = js.native
+    var onlyScrollIfNeeded: Boolean
   }
   object ScrollIntoViewOptions {
     
@@ -92,12 +89,11 @@ object scrollbarMod {
   
   type ScrollListener = js.ThisFunction1[/* this */ Scrollbar, /* status */ ScrollStatus, Unit]
   
-  @js.native
   trait ScrollStatus extends StObject {
     
-    var limit: Data2d = js.native
+    var limit: Data2d
     
-    var offset: Data2d = js.native
+    var offset: Data2d
   }
   object ScrollStatus {
     
@@ -118,12 +114,11 @@ object scrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollToOptions extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    def easing(percent: Double): Double = js.native
+    def easing(percent: Double): Double
   }
   object ScrollToOptions {
     
@@ -182,54 +177,34 @@ object scrollbarMod {
     var scrollLeft: Double = js.native
     
     def scrollTo(): Unit = js.native
-    def scrollTo(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      options: PartialScrollToOptions
-    ): Unit = js.native
-    def scrollTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-    def scrollTo(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      duration: Double,
-      options: PartialScrollToOptions
-    ): Unit = js.native
-    def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    def scrollTo(
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      duration: js.UndefOr[scala.Nothing],
-      options: PartialScrollToOptions
-    ): Unit = js.native
-    def scrollTo(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): Unit = js.native
-    def scrollTo(x: js.UndefOr[scala.Nothing], y: Double, duration: Double, options: PartialScrollToOptions): Unit = js.native
     def scrollTo(x: Double): Unit = js.native
-    def scrollTo(
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      options: PartialScrollToOptions
-    ): Unit = js.native
-    def scrollTo(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
-    def scrollTo(x: Double, y: js.UndefOr[scala.Nothing], duration: Double, options: PartialScrollToOptions): Unit = js.native
     def scrollTo(x: Double, y: Double): Unit = js.native
-    def scrollTo(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], options: PartialScrollToOptions): Unit = js.native
     def scrollTo(x: Double, y: Double, duration: Double): Unit = js.native
     def scrollTo(x: Double, y: Double, duration: Double, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Double, y: Double, duration: Unit, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Double, y: Unit, duration: Double): Unit = js.native
+    def scrollTo(x: Double, y: Unit, duration: Double, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Double, y: Unit, duration: Unit, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Unit, y: Double): Unit = js.native
+    def scrollTo(x: Unit, y: Double, duration: Double): Unit = js.native
+    def scrollTo(x: Unit, y: Double, duration: Double, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Unit, y: Double, duration: Unit, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Unit, y: Unit, duration: Double): Unit = js.native
+    def scrollTo(x: Unit, y: Unit, duration: Double, options: PartialScrollToOptions): Unit = js.native
+    def scrollTo(x: Unit, y: Unit, duration: Unit, options: PartialScrollToOptions): Unit = js.native
     
     var scrollTop: Double = js.native
     
     def setMomentum(x: Double, y: Double): Unit = js.native
     
     def setPosition(): Unit = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], options: PartialSetPositionOptions): Unit = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    def setPosition(x: js.UndefOr[scala.Nothing], y: Double, options: PartialSetPositionOptions): Unit = js.native
     def setPosition(x: Double): Unit = js.native
-    def setPosition(x: Double, y: js.UndefOr[scala.Nothing], options: PartialSetPositionOptions): Unit = js.native
     def setPosition(x: Double, y: Double): Unit = js.native
     def setPosition(x: Double, y: Double, options: PartialSetPositionOptions): Unit = js.native
+    def setPosition(x: Double, y: Unit, options: PartialSetPositionOptions): Unit = js.native
+    def setPosition(x: Unit, y: Double): Unit = js.native
+    def setPosition(x: Unit, y: Double, options: PartialSetPositionOptions): Unit = js.native
+    def setPosition(x: Unit, y: Unit, options: PartialSetPositionOptions): Unit = js.native
     
     var size: ScrollbarSize = js.native
     
@@ -241,16 +216,15 @@ object scrollbarMod {
     def updatePluginOptions(pluginName: String, options: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ScrollbarBounding extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object ScrollbarBounding {
     
@@ -277,24 +251,23 @@ object scrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollbarOptions extends StObject {
     
-    var alwaysShowTracks: Boolean = js.native
+    var alwaysShowTracks: Boolean
     
-    var continuousScrolling: Boolean = js.native
+    var continuousScrolling: Boolean
     
-    var damping: Double = js.native
+    var damping: Double
     
-    var delegateTo: EventTarget | Null = js.native
+    var delegateTo: EventTarget | Null
     
-    var plugins: js.Any = js.native
+    var plugins: js.Any
     
-    var renderByPixels: Boolean = js.native
+    var renderByPixels: Boolean
     
-    var thumbMinSize: Double = js.native
+    var thumbMinSize: Double
     
-    var wheelEventTarget: EventTarget | Null = js.native
+    var wheelEventTarget: EventTarget | Null
   }
   object ScrollbarOptions {
     
@@ -307,7 +280,7 @@ object scrollbarMod {
       renderByPixels: Boolean,
       thumbMinSize: Double
     ): ScrollbarOptions = {
-      val __obj = js.Dynamic.literal(alwaysShowTracks = alwaysShowTracks.asInstanceOf[js.Any], continuousScrolling = continuousScrolling.asInstanceOf[js.Any], damping = damping.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], renderByPixels = renderByPixels.asInstanceOf[js.Any], thumbMinSize = thumbMinSize.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alwaysShowTracks = alwaysShowTracks.asInstanceOf[js.Any], continuousScrolling = continuousScrolling.asInstanceOf[js.Any], damping = damping.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], renderByPixels = renderByPixels.asInstanceOf[js.Any], thumbMinSize = thumbMinSize.asInstanceOf[js.Any], delegateTo = null, wheelEventTarget = null)
       __obj.asInstanceOf[ScrollbarOptions]
     }
     
@@ -346,12 +319,11 @@ object scrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollbarSize extends StObject {
     
-    var container: Metrics = js.native
+    var container: Metrics
     
-    var content: Metrics = js.native
+    var content: Metrics
   }
   object ScrollbarSize {
     
@@ -372,10 +344,9 @@ object scrollbarMod {
     }
   }
   
-  @js.native
   trait SetPositionOptions extends StObject {
     
-    var withoutCallbacks: Boolean = js.native
+    var withoutCallbacks: Boolean
   }
   object SetPositionOptions {
     

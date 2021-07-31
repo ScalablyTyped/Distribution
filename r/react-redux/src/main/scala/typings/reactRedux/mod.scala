@@ -18,14 +18,17 @@ import typings.std.InstanceType
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-redux", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-redux", "Provider")
   @js.native
-  class Provider[A /* <: Action[_] */] protected ()
+  class Provider[A /* <: Action[js.Any] */] protected ()
     extends Component[ProviderProps[A], js.Object, js.Any] {
     def this(props: ProviderProps[A]) = this()
     /**
@@ -39,87 +42,80 @@ object mod {
   @js.native
   val ReactReduxContext: Context[ReactReduxContextValue[js.Any, AnyAction]] = js.native
   
-  @JSImport("react-redux", "batch")
-  @js.native
-  def batch(cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def batch(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-redux", "connect")
   @js.native
   val connect: Connect_[DefaultRootState] = js.native
   
-  @JSImport("react-redux", "connectAdvanced")
-  @js.native
+  @scala.inline
   def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
     // tslint:disable-next-line no-unnecessary-generics
   selectorFactory: SelectorFactory[S, TProps, TOwnProps, TFactoryOptions]
-  ): AdvancedComponentDecorator[TProps, TOwnProps] = js.native
-  @JSImport("react-redux", "connectAdvanced")
-  @js.native
+  ): AdvancedComponentDecorator[TProps, TOwnProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAdvanced")(selectorFactory.asInstanceOf[js.Any]).asInstanceOf[AdvancedComponentDecorator[TProps, TOwnProps]]
+  @scala.inline
   def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
     // tslint:disable-next-line no-unnecessary-generics
   selectorFactory: SelectorFactory[S, TProps, TOwnProps, TFactoryOptions],
-    connectOptions: ConnectOptions with TFactoryOptions
-  ): AdvancedComponentDecorator[TProps, TOwnProps] = js.native
+    connectOptions: ConnectOptions & TFactoryOptions
+  ): AdvancedComponentDecorator[TProps, TOwnProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("connectAdvanced")(selectorFactory.asInstanceOf[js.Any], connectOptions.asInstanceOf[js.Any])).asInstanceOf[AdvancedComponentDecorator[TProps, TOwnProps]]
   
-  @JSImport("react-redux", "createDispatchHook")
-  @js.native
-  def createDispatchHook[S, A /* <: Action[_] */](): js.Function0[Dispatch[A]] = js.native
-  @JSImport("react-redux", "createDispatchHook")
-  @js.native
-  def createDispatchHook[S, A /* <: Action[_] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Dispatch[A]] = js.native
+  @scala.inline
+  def createDispatchHook[S, A /* <: Action[js.Any] */](): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")().asInstanceOf[js.Function0[Dispatch[A]]]
+  @scala.inline
+  def createDispatchHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Dispatch[A]]]
   
-  @JSImport("react-redux", "createSelectorHook")
-  @js.native
-  def createSelectorHook[S, A /* <: Action[_] */](): js.Function2[
-    /* selector */ js.Function1[/* state */ S, _], 
+  @scala.inline
+  def createSelectorHook[S, A /* <: Action[js.Any] */](): js.Function2[
+    /* selector */ js.Function1[/* state */ S, js.Any], 
     /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
-    _
-  ] = js.native
-  @JSImport("react-redux", "createSelectorHook")
-  @js.native
-  def createSelectorHook[S, A /* <: Action[_] */](context: Context[ReactReduxContextValue[S, A]]): js.Function2[
-    /* selector */ js.Function1[/* state */ S, _], 
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorHook")().asInstanceOf[js.Function2[
+    /* selector */ js.Function1[/* state */ S, js.Any], 
     /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
-    _
-  ] = js.native
+    js.Any
+  ]]
+  @scala.inline
+  def createSelectorHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function2[
+    /* selector */ js.Function1[/* state */ S, js.Any], 
+    /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* selector */ js.Function1[/* state */ S, js.Any], 
+    /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
+    js.Any
+  ]]
   
-  @JSImport("react-redux", "createStoreHook")
-  @js.native
-  def createStoreHook[S, A /* <: Action[_] */](): js.Function0[Store[S, A]] = js.native
-  @JSImport("react-redux", "createStoreHook")
-  @js.native
-  def createStoreHook[S, A /* <: Action[_] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Store[S, A]] = js.native
+  @scala.inline
+  def createStoreHook[S, A /* <: Action[js.Any] */](): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")().asInstanceOf[js.Function0[Store[S, A]]]
+  @scala.inline
+  def createStoreHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Store[S, A]]]
   
-  @JSImport("react-redux", "shallowEqual")
-  @js.native
-  def shallowEqual[T](left: T, right: js.Any): Boolean = js.native
+  @scala.inline
+  def shallowEqual[T](left: T, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-redux", "useDispatch")
-  @js.native
-  def useDispatch[A /* <: Action[_] */](): Dispatch[A] = js.native
-  @JSImport("react-redux", "useDispatch")
-  @js.native
-  def useDispatch_TDispatch_TDispatch[TDispatch](): TDispatch = js.native
+  @scala.inline
+  def useDispatch[A /* <: Action[js.Any] */](): Dispatch[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[Dispatch[A]]
   
-  @JSImport("react-redux", "useSelector")
-  @js.native
-  def useSelector[TState, TSelected](selector: js.Function1[/* state */ TState, TSelected]): TSelected = js.native
-  @JSImport("react-redux", "useSelector")
-  @js.native
+  @scala.inline
+  def useDispatch_TDispatch_TDispatch[TDispatch](): TDispatch = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[TDispatch]
+  
+  @scala.inline
+  def useSelector[TState, TSelected](selector: js.Function1[/* state */ TState, TSelected]): TSelected = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[TSelected]
+  @scala.inline
   def useSelector[TState, TSelected](
     selector: js.Function1[/* state */ TState, TSelected],
     equalityFn: js.Function2[/* left */ TSelected, /* right */ TSelected, Boolean]
-  ): TSelected = js.native
+  ): TSelected = (^.asInstanceOf[js.Dynamic].applyDynamic("useSelector")(selector.asInstanceOf[js.Any], equalityFn.asInstanceOf[js.Any])).asInstanceOf[TSelected]
   
-  @JSImport("react-redux", "useStore")
-  @js.native
-  def useStore[S, A /* <: Action[_] */](): Store[S, A] = js.native
+  @scala.inline
+  def useStore[S, A /* <: Action[js.Any] */](): Store[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStore")().asInstanceOf[Store[S, A]]
   
   type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], NamedExoticComponent[TOwnProps]]
   
   type AnyIfEmpty[T /* <: js.Object */] = T
   
-  @js.native
   trait ConnectOptions extends StObject {
     
     /**
@@ -127,7 +123,7 @@ object mod {
       *
       * @default ReactReduxContext
       */
-    var context: js.UndefOr[Context[ReactReduxContextValue[_, AnyAction]]] = js.native
+    var context: js.UndefOr[Context[ReactReduxContextValue[js.Any, AnyAction]]] = js.undefined
     
     /**
       * Computes the connector component's displayName property relative to that of the wrapped component. Usually
@@ -136,14 +132,14 @@ object mod {
       * @default name => 'ConnectAdvanced('+name+')'
       * @param componentName
       */
-    var getDisplayName: js.UndefOr[js.Function1[/* componentName */ String, String]] = js.native
+    var getDisplayName: js.UndefOr[js.Function1[/* componentName */ String, String]] = js.undefined
     
     /**
       * Shown in error messages. Usually overridden by wrapper functions.
       *
       * @default 'connectAdvanced'
       */
-    var methodName: js.UndefOr[String] = js.native
+    var methodName: js.UndefOr[String] = js.undefined
     
     /**
       * If defined, a property named this value will be added to the props passed to the wrapped component. Its value
@@ -152,7 +148,7 @@ object mod {
       *
       * @default undefined
       */
-    var renderCountProp: js.UndefOr[String] = js.native
+    var renderCountProp: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether the connector component subscribes to redux store state changes. If set to false, it will only
@@ -160,7 +156,7 @@ object mod {
       *
       * @default true
       */
-    var shouldHandleStateChanges: js.UndefOr[Boolean] = js.native
+    var shouldHandleStateChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key of props/context to get the store. You probably only need this if you are in the inadvisable position of
@@ -168,14 +164,14 @@ object mod {
       *
       * @default 'store'
       */
-    var storeKey: js.UndefOr[String] = js.native
+    var storeKey: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Use forwardRef
       *
       * @default false
       */
-    var withRef: js.UndefOr[Boolean] = js.native
+    var withRef: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectOptions {
     
@@ -189,7 +185,7 @@ object mod {
     implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setContext(value: Context[ReactReduxContextValue[_, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
@@ -237,71 +233,160 @@ object mod {
     
     // tslint:disable:no-unnecessary-generics
     def apply(): InferableComponentEnhancer[DispatchProp[AnyAction]] = js.native
-    def apply[no_state, TDispatchProps, TOwnProps](
-      mapStateToProps: js.UndefOr[scala.Nothing],
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps])
-    ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+    def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: Null, mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
     def apply[TStateProps, TDispatchProps, TOwnProps](
-      mapStateToProps: js.UndefOr[scala.Nothing],
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps]),
-      mergeProps: js.UndefOr[scala.Nothing],
-      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
-    ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
-    def apply[TStateProps, TDispatchProps, TOwnProps](
-      mapStateToProps: js.UndefOr[scala.Nothing],
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps]),
+      mapStateToProps: Null,
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
       mergeProps: Null,
       options: Options[js.Object, TStateProps, TOwnProps, js.Object]
     ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
-    def apply[no_state, TDispatchProps, TOwnProps](
-      mapStateToProps: Null,
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps])
-    ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
     def apply[TStateProps, TDispatchProps, TOwnProps](
       mapStateToProps: Null,
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps]),
-      mergeProps: js.UndefOr[scala.Nothing],
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
       options: Options[js.Object, TStateProps, TOwnProps, js.Object]
     ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+    def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: Null, mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
     def apply[TStateProps, TDispatchProps, TOwnProps](
       mapStateToProps: Null,
-      mapDispatchToProps: (MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]) | (MapDispatchToPropsParam[TDispatchProps, TOwnProps]),
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: Null,
+      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps](
+      mapStateToProps: Null,
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
+      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: Unit, mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
       mergeProps: Null,
       options: Options[js.Object, TStateProps, TOwnProps, js.Object]
     ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
-    def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
-      mapStateToProps: js.UndefOr[scala.Nothing],
-      mapDispatchToProps: Null,
-      mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
-    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-    def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
-      mapStateToProps: js.UndefOr[scala.Nothing],
+    def apply[TStateProps, TDispatchProps, TOwnProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
+      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+    def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: Unit, mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps](
+      mapStateToProps: Unit,
       mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
-      mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
-    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+      mergeProps: Null,
+      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
+      options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
     def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
       mapStateToProps: Null,
       mapDispatchToProps: Null,
-      mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
+      mergeProps: MergeProps[Unit, Unit, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
+      mapStateToProps: Null,
+      mapDispatchToProps: Unit,
+      mergeProps: MergeProps[Unit, Unit, TOwnProps, TMergedProps]
     ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
     def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
       mapStateToProps: Null,
       mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
-      mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
+      mergeProps: MergeProps[Unit, TDispatchProps, TOwnProps, TMergedProps]
     ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-    def apply[TStateProps, no_dispatch, TOwnProps, State](mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State]): InferableComponentEnhancerWithProps[TStateProps with DispatchProp[AnyAction], TOwnProps] = js.native
+    def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: Null,
+      mergeProps: MergeProps[Unit, Unit, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: Unit,
+      mergeProps: MergeProps[Unit, Unit, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
+      mapStateToProps: Unit,
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: MergeProps[Unit, TDispatchProps, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[TStateProps, no_dispatch, TOwnProps, State](mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State]): InferableComponentEnhancerWithProps[TStateProps & DispatchProp[AnyAction], TOwnProps] = js.native
     def apply[TStateProps, no_dispatch, TOwnProps, State](
       mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
       mapDispatchToProps: Null,
-      mergeProps: js.UndefOr[scala.Nothing],
+      mergeProps: Null,
       options: Options[State, TStateProps, TOwnProps, js.Object]
-    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] with TStateProps, TOwnProps] = js.native
+    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] & TStateProps, TOwnProps] = js.native
     def apply[TStateProps, no_dispatch, TOwnProps, State](
       mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
       mapDispatchToProps: Null,
+      mergeProps: Unit,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] & TStateProps, TOwnProps] = js.native
+    def apply[TStateProps, no_dispatch, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: Unit,
       mergeProps: Null,
       options: Options[State, TStateProps, TOwnProps, js.Object]
-    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] with TStateProps, TOwnProps] = js.native
+    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] & TStateProps, TOwnProps] = js.native
+    def apply[TStateProps, no_dispatch, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: Unit,
+      mergeProps: Unit,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[DispatchProp[AnyAction] & TStateProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]
+    ): InferableComponentEnhancerWithProps[TStateProps & TDispatchProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+      mergeProps: Null,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[TStateProps & TDispatchProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[TStateProps & TDispatchProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]
+    ): InferableComponentEnhancerWithProps[TStateProps & ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: Null,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[TStateProps & ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: Unit,
+      options: Options[State, TStateProps, TOwnProps, js.Object]
+    ): InferableComponentEnhancerWithProps[TStateProps & ResolveThunks[TDispatchProps], TOwnProps] = js.native
+    def apply[TStateProps, no_dispatch, TOwnProps, TMergedProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: Null,
+      mergeProps: MergeProps[TStateProps, Unit, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[TStateProps, no_dispatch, TOwnProps, TMergedProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: Unit,
+      mergeProps: MergeProps[TStateProps, Unit, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+    def apply[TStateProps, TDispatchProps, TOwnProps, TMergedProps, State](
+      mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
+      mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+      mergeProps: MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps]
+    ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
     def apply[TStateProps, TDispatchProps, TOwnProps, TMergedProps, State](
       mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State],
       mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
@@ -310,39 +395,37 @@ object mod {
     ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
   }
   
-  type ConnectedComponent[C /* <: ComponentType[_] */, P] = (NamedExoticComponent[LibraryManagedAttributes[C, P]]) with (NonReactStatics[C, js.Object]) with WrappedComponent[C]
+  type ConnectedComponent[C /* <: ComponentType[js.Any] */, P] = (NamedExoticComponent[LibraryManagedAttributes[C, P]]) & (NonReactStatics[C, js.Object]) & WrappedComponent[C]
   
   type ConnectedProps[TConnector] = js.Any
   
-  @js.native
   trait DefaultRootState extends StObject
   
-  @js.native
-  trait DispatchProp[A /* <: Action[_] */] extends StObject {
+  trait DispatchProp[A /* <: Action[js.Any] */] extends StObject {
     
-    var dispatch: Dispatch[A] = js.native
+    var dispatch: Dispatch[A]
   }
   object DispatchProp {
     
     @scala.inline
-    def apply[A /* <: Action[_] */](dispatch: A => A): DispatchProp[A] = {
+    def apply[A /* <: Action[js.Any] */](dispatch: A => A): DispatchProp[A] = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
       __obj.asInstanceOf[DispatchProp[A]]
     }
     
     @scala.inline
-    implicit class DispatchPropMutableBuilder[Self <: DispatchProp[_], A /* <: Action[_] */] (val x: Self with DispatchProp[A]) extends AnyVal {
+    implicit class DispatchPropMutableBuilder[Self <: DispatchProp[?], A /* <: Action[js.Any] */] (val x: Self & DispatchProp[A]) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     }
   }
   
-  type GetProps[C] = ClassAttributes[InstanceType[C]] with js.Any
+  type GetProps[C] = ClassAttributes[InstanceType[C]] & js.Any
   
   type HandleThunkActionCreator[TActionCreator] = TActionCreator | InferThunkActionCreatorType[TActionCreator]
   
-  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
+  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
   
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   
@@ -351,9 +434,9 @@ object mod {
     ConnectedComponent[
       js.Any, 
       (Omit[
-        GetProps[_], 
+        GetProps[js.Any], 
         /* keyof react-redux.react-redux.Shared<TInjectedProps, react-redux.react-redux.GetProps<any>> */ String
-      ]) with TNeedsProps
+      ]) & TNeedsProps
     ]
   ]
   
@@ -385,7 +468,7 @@ object mod {
   
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.reactRedux.reactReduxStrings.Matching with TopLevel[js.Any]
+    */ typings.reactRedux.reactReduxStrings.Matching & TopLevel[js.Any]
   
   type MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps] = js.Function3[
     /* stateProps */ TStateProps, 
@@ -396,8 +479,9 @@ object mod {
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
-  trait Options[State, TStateProps, TOwnProps, TMergedProps] extends ConnectOptions {
+  trait Options[State, TStateProps, TOwnProps, TMergedProps]
+    extends StObject
+       with ConnectOptions {
     
     /**
       * When pure, compares the result of mergeProps to its previous value.
@@ -405,7 +489,7 @@ object mod {
       */
     var areMergedPropsEqual: js.UndefOr[
         js.Function2[/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When pure, compares incoming props to its previous value.
@@ -413,7 +497,7 @@ object mod {
       */
     var areOwnPropsEqual: js.UndefOr[
         js.Function2[/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When pure, compares the result of mapStateToProps to its previous value.
@@ -421,20 +505,20 @@ object mod {
       */
     var areStatePropsEqual: js.UndefOr[
         js.Function2[/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When pure, compares incoming store state to its previous value.
       * @default strictEqual
       */
-    var areStatesEqual: js.UndefOr[js.Function2[/* nextState */ State, /* prevState */ State, Boolean]] = js.native
+    var areStatesEqual: js.UndefOr[js.Function2[/* nextState */ State, /* prevState */ State, Boolean]] = js.undefined
     
     /**
       * If true, use React's forwardRef to expose a ref of the wrapped component
       *
       * @default false
       */
-    var forwardRef: js.UndefOr[Boolean] = js.native
+    var forwardRef: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, implements shouldComponentUpdate and shallowly compares the result of mergeProps,
@@ -443,7 +527,7 @@ object mod {
       * Defaults to true.
       * @default true
       */
-    var pure: js.UndefOr[Boolean] = js.native
+    var pure: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -454,7 +538,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _, _, _], State, TStateProps, TOwnProps, TMergedProps] (val x: Self with (Options[State, TStateProps, TOwnProps, TMergedProps])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?, ?], State, TStateProps, TOwnProps, TMergedProps] (val x: Self & (Options[State, TStateProps, TOwnProps, TMergedProps])) extends AnyVal {
       
       @scala.inline
       def setAreMergedPropsEqual(value: (/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
@@ -494,60 +578,58 @@ object mod {
     }
   }
   
-  @js.native
-  trait ProviderProps[A /* <: Action[_] */] extends StObject {
+  trait ProviderProps[A /* <: Action[js.Any] */] extends StObject {
     
     /**
       * Optional context to be used internally in react-redux. Use React.createContext() to create a context to be used.
       * If this is used, generate own connect HOC by using connectAdvanced, supplying the same context provided to the
       * Provider. Initial value doesn't matter, as it is overwritten with the internal state of Provider.
       */
-    var context: js.UndefOr[Context[ReactReduxContextValue[_, AnyAction]]] = js.native
+    var context: js.UndefOr[Context[ReactReduxContextValue[js.Any, AnyAction]]] = js.undefined
     
     /**
       * The single Redux store in your application.
       */
-    var store: Store[_, A] = js.native
+    var store: Store[js.Any, A]
   }
   object ProviderProps {
     
     @scala.inline
-    def apply[A /* <: Action[_] */](store: Store[_, A]): ProviderProps[A] = {
+    def apply[A /* <: Action[js.Any] */](store: Store[js.Any, A]): ProviderProps[A] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps[A]]
     }
     
     @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[_], A /* <: Action[_] */] (val x: Self with ProviderProps[A]) extends AnyVal {
+    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], A /* <: Action[js.Any] */] (val x: Self & ProviderProps[A]) extends AnyVal {
       
       @scala.inline
-      def setContext(value: Context[ReactReduxContextValue[_, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       @scala.inline
-      def setStore(value: Store[_, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      def setStore(value: Store[js.Any, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ReactReduxContextValue[SS, A /* <: Action[_] */] extends StObject {
+  trait ReactReduxContextValue[SS, A /* <: Action[js.Any] */] extends StObject {
     
-    var store: Store[SS, A] = js.native
+    var store: Store[SS, A]
     
-    var storeState: SS = js.native
+    var storeState: SS
   }
   object ReactReduxContextValue {
     
     @scala.inline
-    def apply[SS, A /* <: Action[_] */](store: Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
+    def apply[SS, A /* <: Action[js.Any] */](store: Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], storeState = storeState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactReduxContextValue[SS, A]]
     }
     
     @scala.inline
-    implicit class ReactReduxContextValueMutableBuilder[Self <: ReactReduxContextValue[_, _], SS, A /* <: Action[_] */] (val x: Self with (ReactReduxContextValue[SS, A])) extends AnyVal {
+    implicit class ReactReduxContextValueMutableBuilder[Self <: ReactReduxContextValue[?, ?], SS, A /* <: Action[js.Any] */] (val x: Self & (ReactReduxContextValue[SS, A])) extends AnyVal {
       
       @scala.inline
       def setStore(value: Store[SS, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
@@ -557,7 +639,7 @@ object mod {
     }
   }
   
-  type ResolveArrayThunks[TDispatchProps /* <: js.Array[_] */] = js.Array[HandleThunkActionCreator[js.Any]] | (js.Tuple2[HandleThunkActionCreator[js.Any], HandleThunkActionCreator[js.Any]]) | (js.Tuple3[
+  type ResolveArrayThunks[TDispatchProps /* <: js.Array[js.Any] */] = js.Array[HandleThunkActionCreator[js.Any]] | (js.Tuple2[HandleThunkActionCreator[js.Any], HandleThunkActionCreator[js.Any]]) | (js.Tuple3[
     HandleThunkActionCreator[js.Any], 
     HandleThunkActionCreator[js.Any], 
     HandleThunkActionCreator[js.Any]
@@ -610,7 +692,7 @@ object mod {
   
   type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
-    */ typings.reactRedux.reactReduxStrings.ResolveThunks with TopLevel[TDispatchProps])
+    */ typings.reactRedux.reactReduxStrings.ResolveThunks & TopLevel[TDispatchProps])
   
   type RootStateOrAny = AnyIfEmpty[DefaultRootState]
   
@@ -624,7 +706,7 @@ object mod {
   
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.reactRedux.reactReduxStrings.Shared with TopLevel[js.Any]
+    */ typings.reactRedux.reactReduxStrings.Shared & TopLevel[js.Any]
   
   type TypedUseSelectorHook[TState] = js.Function2[
     /* selector */ js.Function1[/* state */ TState, js.Any], 

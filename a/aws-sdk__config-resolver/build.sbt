@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__config-resolver"
-version := "1.0.0-rc.7-8f1a22"
-scalaVersion := "2.13.3"
+version := "1.0.0-rc.7-dc5b99"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "1.0.0-rc.7-a74d21",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "1.0.0-rc.3-88e41e",
-  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-cfb321",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "1.0.0-rc.7-bef98f",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "1.0.0-rc.3-e9295b",
+  "org.scalablytyped" %%% "aws-sdk__types" % "1.0.0-rc.7-917262",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-814aa8",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

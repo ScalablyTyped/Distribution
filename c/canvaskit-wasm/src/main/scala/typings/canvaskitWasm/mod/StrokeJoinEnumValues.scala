@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StrokeJoinEnumValues extends EmbindEnum {
+trait StrokeJoinEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Bevel: StrokeJoin = js.native
+  var Bevel: StrokeJoin
   
-  var Miter: StrokeJoin = js.native
+  var Miter: StrokeJoin
   
-  var Round: StrokeJoin = js.native
+  var Round: StrokeJoin
 }
 object StrokeJoinEnumValues {
   

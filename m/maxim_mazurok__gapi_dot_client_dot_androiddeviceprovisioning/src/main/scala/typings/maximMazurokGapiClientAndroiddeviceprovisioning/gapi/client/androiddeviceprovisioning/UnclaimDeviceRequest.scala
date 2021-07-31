@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnclaimDeviceRequest extends StObject {
   
   /** Required. The device ID returned by `ClaimDevice`. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** Required. The device identifier you used when you claimed this device. */
-  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined
   
   /** Required. The section type of the device's provisioning record. */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
   
   /** The duration of the vacation unlock starting from when the request is processed. (1 day is treated as 24 hours) */
-  var vacationModeDays: js.UndefOr[Double] = js.native
+  var vacationModeDays: js.UndefOr[Double] = js.undefined
   
   /** The expiration time of the vacation unlock. */
-  var vacationModeExpireTime: js.UndefOr[String] = js.native
+  var vacationModeExpireTime: js.UndefOr[String] = js.undefined
 }
 object UnclaimDeviceRequest {
   

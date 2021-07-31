@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWorkspaceStatusResponse extends StObject {
   
   /** The merge conflict after sync. */
-  var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.native
+  var mergeConflict: js.UndefOr[js.Array[MergeConflict]] = js.undefined
   
   /** Entities that have been changed in the workspace. */
-  var workspaceChange: js.UndefOr[js.Array[Entity]] = js.native
+  var workspaceChange: js.UndefOr[js.Array[Entity]] = js.undefined
 }
 object GetWorkspaceStatusResponse {
   

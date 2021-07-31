@@ -5,39 +5,35 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("file-entry-cache", "create")
+  @JSImport("file-entry-cache", JSImport.Namespace)
   @js.native
-  def create(cacheName: String): FileEntryCache = js.native
-  @JSImport("file-entry-cache", "create")
-  @js.native
-  def create(cacheName: String, directory: js.UndefOr[scala.Nothing], usecheckSum: Boolean): FileEntryCache = js.native
-  @JSImport("file-entry-cache", "create")
-  @js.native
-  def create(cacheName: String, directory: String): FileEntryCache = js.native
-  @JSImport("file-entry-cache", "create")
-  @js.native
-  def create(cacheName: String, directory: String, usecheckSum: Boolean): FileEntryCache = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("file-entry-cache", "createFromFile")
-  @js.native
-  def createFromFile(pathToCache: String): FileEntryCache = js.native
-  @JSImport("file-entry-cache", "createFromFile")
-  @js.native
-  def createFromFile(pathToCache: String, useCheckSum: Boolean): FileEntryCache = js.native
+  @scala.inline
+  def create(cacheName: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
+  @scala.inline
+  def create(cacheName: String, directory: String): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  @scala.inline
+  def create(cacheName: String, directory: String, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  @scala.inline
+  def create(cacheName: String, directory: Unit, usecheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheName.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], usecheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
   
-  @js.native
+  @scala.inline
+  def createFromFile(pathToCache: String): FileEntryCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any]).asInstanceOf[FileEntryCache]
+  @scala.inline
+  def createFromFile(pathToCache: String, useCheckSum: Boolean): FileEntryCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(pathToCache.asInstanceOf[js.Any], useCheckSum.asInstanceOf[js.Any])).asInstanceOf[FileEntryCache]
+  
   trait AnalyzedFilesInfo extends StObject {
     
-    val changedFiles: js.Array[String] = js.native
+    val changedFiles: js.Array[String]
     
-    val notChangedFiles: js.Array[String] = js.native
+    val notChangedFiles: js.Array[String]
     
-    val notFoundFiles: js.Array[String] = js.native
+    val notFoundFiles: js.Array[String]
   }
   object AnalyzedFilesInfo {
     
@@ -70,18 +66,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FileDescriptor extends StObject {
     
-    val changed: js.UndefOr[Boolean] = js.native
+    val changed: js.UndefOr[Boolean] = js.undefined
     
-    val err: js.UndefOr[Error] = js.native
+    val err: js.UndefOr[Error] = js.undefined
     
-    val key: String = js.native
+    val key: String
     
-    val meta: js.UndefOr[Hash] = js.native
+    val meta: js.UndefOr[Hash] = js.undefined
     
-    val notFound: Boolean = js.native
+    val notFound: Boolean
   }
   object FileDescriptor {
     

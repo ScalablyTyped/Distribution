@@ -2,56 +2,54 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The email address of the user.
     */
-  var EmailAddress: js.UndefOr[EmailAddressType] = js.native
+  var EmailAddress: js.UndefOr[EmailAddressType] = js.undefined
   
   /**
     * The given name of the user.
     */
-  var GivenName: UserAttributeValueType = js.native
+  var GivenName: UserAttributeValueType
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.native
+  var OrganizationId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The password of the user.
     */
-  var Password: PasswordType = js.native
+  var Password: PasswordType
   
   /**
     * The amount of storage for the user.
     */
-  var StorageRule: js.UndefOr[StorageRuleType] = js.native
+  var StorageRule: js.UndefOr[StorageRuleType] = js.undefined
   
   /**
     * The surname of the user.
     */
-  var Surname: UserAttributeValueType = js.native
+  var Surname: UserAttributeValueType
   
   /**
     * The time zone ID of the user.
     */
-  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.native
+  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.undefined
   
   /**
     * The login name of the user.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object CreateUserRequest {
   

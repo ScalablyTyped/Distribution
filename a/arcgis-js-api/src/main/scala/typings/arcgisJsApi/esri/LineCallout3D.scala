@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineCallout3D extends Callout3D {
+trait LineCallout3D
+  extends StObject
+     with Callout3D {
   
   /**
     * The border settings of the callout line.

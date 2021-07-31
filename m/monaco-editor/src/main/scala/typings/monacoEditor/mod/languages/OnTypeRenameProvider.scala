@@ -7,18 +7,16 @@ import typings.monacoEditor.mod.editor.ITextModel
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnTypeRenameProvider extends StObject {
   
   /**
     * Provide a list of ranges that can be live-renamed together.
     */
-  def provideOnTypeRenameRanges(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Ranges] = js.native
+  def provideOnTypeRenameRanges(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Ranges]
   
-  var wordPattern: js.UndefOr[RegExp] = js.native
+  var wordPattern: js.UndefOr[RegExp] = js.undefined
 }
 object OnTypeRenameProvider {
   

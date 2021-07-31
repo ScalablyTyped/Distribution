@@ -2,43 +2,41 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalFile extends StObject {
   
   /**
     * The UTC date and time that the file or folder was last modified.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * The storage provider's id for the file or folder.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The file extension for a file.
     *
     * **Note**: If the item is a folder, this value is null.
     */
-  var img: js.UndefOr[String] = js.native
+  var img: js.UndefOr[String] = js.undefined
   
   /**
     * The full name of a file.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the file. The file size limit varies based on the cloud storage provider.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, DocuSign supports the file type for upload.
     */
-  var supported: js.UndefOr[String] = js.native
+  var supported: js.UndefOr[String] = js.undefined
   
   /**
     * The type of cloud storage item. Valid values are:
@@ -46,12 +44,12 @@ trait ExternalFile extends StObject {
     * - `file`
     * - `folder`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the file or folder.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object ExternalFile {
   

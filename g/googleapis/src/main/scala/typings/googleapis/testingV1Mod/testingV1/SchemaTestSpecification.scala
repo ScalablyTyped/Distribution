@@ -2,61 +2,59 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of how to run the test.
   */
-@js.native
 trait SchemaTestSpecification extends StObject {
   
   /**
     * An Android instrumentation test.
     */
-  var androidInstrumentationTest: js.UndefOr[SchemaAndroidInstrumentationTest] = js.native
+  var androidInstrumentationTest: js.UndefOr[SchemaAndroidInstrumentationTest] = js.undefined
   
   /**
     * An Android robo test.
     */
-  var androidRoboTest: js.UndefOr[SchemaAndroidRoboTest] = js.native
+  var androidRoboTest: js.UndefOr[SchemaAndroidRoboTest] = js.undefined
   
   /**
     * An Android Application with a Test Loop.
     */
-  var androidTestLoop: js.UndefOr[SchemaAndroidTestLoop] = js.native
+  var androidTestLoop: js.UndefOr[SchemaAndroidTestLoop] = js.undefined
   
   /**
     * Disables performance metrics recording; may reduce test latency.
     */
-  var disablePerformanceMetrics: js.UndefOr[Boolean] = js.native
+  var disablePerformanceMetrics: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disables video recording; may reduce test latency.
     */
-  var disableVideoRecording: js.UndefOr[Boolean] = js.native
+  var disableVideoRecording: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Test setup requirements for iOS.
     */
-  var iosTestSetup: js.UndefOr[SchemaIosTestSetup] = js.native
+  var iosTestSetup: js.UndefOr[SchemaIosTestSetup] = js.undefined
   
   /**
     * An iOS XCTest, via an .xctestrun file.
     */
-  var iosXcTest: js.UndefOr[SchemaIosXcTest] = js.native
+  var iosXcTest: js.UndefOr[SchemaIosXcTest] = js.undefined
   
   /**
     * Test setup requirements for Android e.g. files to install, bootstrap
     * scripts.
     */
-  var testSetup: js.UndefOr[SchemaTestSetup] = js.native
+  var testSetup: js.UndefOr[SchemaTestSetup] = js.undefined
   
   /**
     * Max time a test execution is allowed to run before it is automatically
     * cancelled. The default value is 5 min.
     */
-  var testTimeout: js.UndefOr[String] = js.native
+  var testTimeout: js.UndefOr[String] = js.undefined
 }
 object SchemaTestSpecification {
   

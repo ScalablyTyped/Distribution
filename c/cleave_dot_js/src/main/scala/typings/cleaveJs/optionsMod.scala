@@ -3,79 +3,77 @@ package typings.cleaveJs
 import typings.cleaveJs.creditCardMod.CreditCardTypeChangeHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait CleaveOptions extends StObject {
     
-    var blocks: js.UndefOr[js.Array[Double]] = js.native
+    var blocks: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var copyDelimiter: js.UndefOr[Boolean] = js.native
+    var copyDelimiter: js.UndefOr[Boolean] = js.undefined
     
-    var creditCard: js.UndefOr[Boolean] = js.native
+    var creditCard: js.UndefOr[Boolean] = js.undefined
     
-    var creditCardStrictMode: js.UndefOr[Boolean] = js.native
+    var creditCardStrictMode: js.UndefOr[Boolean] = js.undefined
     
-    var creditCardType: js.UndefOr[String] = js.native
+    var creditCardType: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Boolean] = js.native
+    var date: js.UndefOr[Boolean] = js.undefined
     
-    var dateMax: js.UndefOr[String] = js.native
+    var dateMax: js.UndefOr[String] = js.undefined
     
-    var dateMin: js.UndefOr[String] = js.native
+    var dateMin: js.UndefOr[String] = js.undefined
     
-    var datePattern: js.UndefOr[js.Array[String]] = js.native
+    var datePattern: js.UndefOr[js.Array[String]] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var delimiterLazyShow: js.UndefOr[Boolean] = js.native
+    var delimiterLazyShow: js.UndefOr[Boolean] = js.undefined
     
-    var delimiters: js.UndefOr[js.Array[String]] = js.native
+    var delimiters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initValue: js.UndefOr[js.Any] = js.native
+    var initValue: js.UndefOr[js.Any] = js.undefined
     
-    var lowercase: js.UndefOr[Boolean] = js.native
+    var lowercase: js.UndefOr[Boolean] = js.undefined
     
-    var noImmediatePrefix: js.UndefOr[Boolean] = js.native
+    var noImmediatePrefix: js.UndefOr[Boolean] = js.undefined
     
-    var numeral: js.UndefOr[Boolean] = js.native
+    var numeral: js.UndefOr[Boolean] = js.undefined
     
-    var numeralDecimalMark: js.UndefOr[String] = js.native
+    var numeralDecimalMark: js.UndefOr[String] = js.undefined
     
-    var numeralDecimalScale: js.UndefOr[Double] = js.native
+    var numeralDecimalScale: js.UndefOr[Double] = js.undefined
     
-    var numeralIntegerScale: js.UndefOr[Double] = js.native
+    var numeralIntegerScale: js.UndefOr[Double] = js.undefined
     
-    var numeralPositiveOnly: js.UndefOr[Boolean] = js.native
+    var numeralPositiveOnly: js.UndefOr[Boolean] = js.undefined
     
-    var numeralThousandsGroupStyle: js.UndefOr[NumeralThousandsGroupStyleType] = js.native
+    var numeralThousandsGroupStyle: js.UndefOr[NumeralThousandsGroupStyleType] = js.undefined
     
-    var numericOnly: js.UndefOr[Boolean] = js.native
+    var numericOnly: js.UndefOr[Boolean] = js.undefined
     
-    var onCreditCardTypeChanged: js.UndefOr[CreditCardTypeChangeHandler] = js.native
+    var onCreditCardTypeChanged: js.UndefOr[CreditCardTypeChangeHandler] = js.undefined
     
-    var onValueChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onValueChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var phone: js.UndefOr[Boolean] = js.native
+    var phone: js.UndefOr[Boolean] = js.undefined
     
-    var phoneRegionCode: js.UndefOr[String] = js.native
+    var phoneRegionCode: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var rawValueTrimPrefix: js.UndefOr[Boolean] = js.native
+    var rawValueTrimPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var stripLeadingZeroes: js.UndefOr[Boolean] = js.native
+    var stripLeadingZeroes: js.UndefOr[Boolean] = js.undefined
     
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
     
-    var timeFormat: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
-    var timePattern: js.UndefOr[js.Array[String]] = js.native
+    var timePattern: js.UndefOr[js.Array[String]] = js.undefined
     
-    var uppercase: js.UndefOr[Boolean] = js.native
+    var uppercase: js.UndefOr[Boolean] = js.undefined
   }
   object CleaveOptions {
     

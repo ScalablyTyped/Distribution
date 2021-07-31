@@ -3,23 +3,21 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrestoJob extends StObject {
   
   /** Optional. Presto client tags to attach to this query */
-  var clientTags: js.UndefOr[js.Array[String]] = js.native
+  var clientTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. The runtime log config for job execution. */
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   
   /** Optional. The format in which query output will be displayed. See the Presto documentation for supported output formats */
-  var outputFormat: js.UndefOr[String] = js.native
+  var outputFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A mapping of property names to values. Used to set Presto session properties (https://prestodb.io/docs/current/sql/set-session.html) Equivalent to using the --session flag
@@ -28,14 +26,14 @@ trait PrestoJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The HCFS URI of the script that contains SQL queries. */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /** A list of queries. */
-  var queryList: js.UndefOr[QueryList] = js.native
+  var queryList: js.UndefOr[QueryList] = js.undefined
 }
 object PrestoJob {
   
@@ -79,7 +77,7 @@ object PrestoJob {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline

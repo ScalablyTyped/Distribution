@@ -16,105 +16,86 @@ import typings.jju.jjuStrings.separator
 import typings.jju.jjuStrings.whitespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jju", "analyze")
+  @JSImport("jju", JSImport.Namespace)
   @js.native
-  def analyze(text: String): JsonStyle = js.native
-  @JSImport("jju", "analyze")
-  @js.native
-  def analyze(text: String, options: ParseOptions): JsonStyle = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jju", "parse")
-  @js.native
-  def parse(text: String): js.Any = js.native
-  @JSImport("jju", "parse")
-  @js.native
-  def parse(text: String, options: ParseOptions): js.Any = js.native
-  @JSImport("jju", "parse")
-  @js.native
-  def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
+  @scala.inline
+  def analyze(text: String): JsonStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any]).asInstanceOf[JsonStyle]
+  @scala.inline
+  def analyze(text: String, options: ParseOptions): JsonStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonStyle]
   
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, options: StringifyOptions): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: String): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: Double): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, space: String): String = js.native
-  @JSImport("jju", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, space: Double): String = js.native
+  @scala.inline
+  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(text: String, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jju", "tokenize")
-  @js.native
-  def tokenize(text: String): js.Array[Token] = js.native
-  @JSImport("jju", "tokenize")
-  @js.native
-  def tokenize(text: String, options: ParseOptions): js.Array[Token] = js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jju", "update")
-  @js.native
-  def update(text: String, new_value: js.Any): String = js.native
-  @JSImport("jju", "update")
-  @js.native
-  def update(text: String, new_value: js.Any, options: ParseOptions with StringifyOptions): String = js.native
+  @scala.inline
+  def tokenize(text: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def tokenize(text: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
-  @js.native
+  @scala.inline
+  def update(text: String, new_value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def update(text: String, new_value: js.Any, options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait JsonStyle extends StObject {
     
     /** True if input has a comment token. */
-    var has_comments: Boolean = js.native
+    var has_comments: Boolean
     
     /** True if input has a newline token. */
-    var has_newlines: Boolean = js.native
+    var has_newlines: Boolean
     
     /** True if input has at least one trailing comma. */
-    var has_trailing_comma: Boolean = js.native
+    var has_trailing_comma: Boolean
     
     /** True if input has a whitespace token. */
-    var has_whitespace: Boolean = js.native
+    var has_whitespace: Boolean
     
     /** Preferred indentation. */
-    var indent: String = js.native
+    var indent: String
     
     /** Preferred newline. */
-    var newline: String = js.native
+    var newline: String
     
     /** " or ' depending on which quote is preferred. */
-    var quote: String = js.native
+    var quote: String
     
     /** True if unquoted keys were used at least once. */
-    var quote_keys: Boolean = js.native
+    var quote_keys: Boolean
   }
   object JsonStyle {
     
@@ -162,13 +143,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * Operation mode (default 'json5'). Set to 'json' if you want to throw on non-strict json files.
       */
-    var mode: js.UndefOr[json5 | json | cjson] = js.native
+    var mode: js.UndefOr[json5 | json | cjson] = js.undefined
     
     /**
       * Create object as `Object.create(null)` instead of `{}`.
@@ -177,7 +157,7 @@ object mod {
       *
       * It is usually unsafe and not recommended to change this option to false in the last case.
       */
-    var null_prototype: js.UndefOr[Boolean] = js.native
+    var null_prototype: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What to do with reserved keys (default 'ignore').
@@ -185,13 +165,13 @@ object mod {
       * - "throw" - throw SyntaxError in case of reserved keys
       * - "replace" - replace reserved keys, this is the default JSON.parse behaviour, unsafe
       */
-    var reserved_keys: js.UndefOr[ignore | `throw` | replace] = js.native
+    var reserved_keys: js.UndefOr[ignore | `throw` | replace] = js.undefined
     
     /**
       * Reviver function (follows the JSON spec). This function is called for each member of the object.
       * If a member contains nested objects, the nested objects are transformed before the parent object is.
       */
-    var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, _]] = js.native
+    var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]] = js.undefined
   }
   object ParseOptions {
     
@@ -223,27 +203,26 @@ object mod {
       def setReserved_keysUndefined: Self = StObject.set(x, "reserved_keys", js.undefined)
       
       @scala.inline
-      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => _): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     }
   }
   
-  @js.native
   trait StringifyOptions extends StObject {
     
     /**
       * Output ascii only (default false).
       * If this option is enabled, output will not have any characters except 0x20-0x7f.
       */
-    var ascii: js.UndefOr[Boolean] = js.native
+    var ascii: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This option follows JSON specification.
       * @default '\t'
       */
-    var indent: js.UndefOr[String | Double | Boolean] = js.native
+    var indent: js.UndefOr[String | Double | Boolean] = js.undefined
     
     /**
       * Operation mode. Set it to 'json' if you want correct json in the output.
@@ -253,7 +232,7 @@ object mod {
       * - options.quote_keys = true
       * - '\x' literals are not used
       */
-    var mode: js.UndefOr[json | json5 | cjson] = js.native
+    var mode: js.UndefOr[json | json5 | cjson] = js.undefined
     
     /**
       * Don't output trailing comma. If this option is set, arrays like `[1,2,3,]` will never be generated.
@@ -261,14 +240,14 @@ object mod {
       * - If `mode` is JSON, default is true
       * - Otherwise, default is false
       */
-    var no_trailing_comma: js.UndefOr[Boolean] = js.native
+    var no_trailing_comma: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enquoting char.
       * - If `mode` is 'json', default is "
       * - Otherwise, default is '
       */
-    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.native
+    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.undefined
     
     /**
       * Whether keys quoting in objects is required or not.
@@ -276,7 +255,7 @@ object mod {
       * - If `mode` is 'json', default is true
       * - Otherwise, default is false
       */
-    var quote_keys: js.UndefOr[Boolean] = js.native
+    var quote_keys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Replacer function or array. This option follows JSON specification.
@@ -284,8 +263,8 @@ object mod {
       * If an array, acts as a approved list for selecting the object properties that will be stringified.
       */
     var replacer: js.UndefOr[
-        (js.Function2[/* key */ String, /* value */ js.Any, _]) | (js.Array[Double | String])
-      ] = js.native
+        (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])
+      ] = js.undefined
     
     /**
       * Sort all keys while stringifying.
@@ -294,7 +273,7 @@ object mod {
       * You can provide your own sorting function as well.
       * @default false
       */
-    var sort_keys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.native
+    var sort_keys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
   }
   object StringifyOptions {
     
@@ -344,10 +323,10 @@ object mod {
       def setQuote_keysUndefined: Self = StObject.set(x, "quote_keys", js.undefined)
       
       @scala.inline
-      def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, _]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
@@ -366,20 +345,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
     /** Raw text of this token. If you join all raws, you will get the original document. */
-    var raw: String = js.native
+    var raw: String
     
     /** Path to the current token in the syntax tree. */
-    var stack: js.Array[String] = js.native
+    var stack: js.Array[String]
     
     /** Type of the token. */
-    var `type`: whitespace | comment | key | literal | separator | newline = js.native
+    var `type`: whitespace | comment | key | literal | separator | newline
     
     /** Value of the token if token is a key or literal. */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object Token {
     

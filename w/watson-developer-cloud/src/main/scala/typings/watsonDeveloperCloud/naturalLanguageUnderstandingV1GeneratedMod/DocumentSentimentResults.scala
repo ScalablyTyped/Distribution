@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DocumentSentimentResults. */
-@js.native
 trait DocumentSentimentResults extends StObject {
   
   /** Indicates whether the sentiment is positive, neutral, or negative. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** Sentiment score from -1 (negative) to 1 (positive). */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object DocumentSentimentResults {
   

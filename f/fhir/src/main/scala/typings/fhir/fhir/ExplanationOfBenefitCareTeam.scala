@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Care Team members
   */
-@js.native
-trait ExplanationOfBenefitCareTeam extends BackboneElement {
+trait ExplanationOfBenefitCareTeam
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'responsible'.
     */
-  var _responsible: js.UndefOr[Element] = js.native
+  var _responsible: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Member of the Care Team
     */
-  var provider: Reference = js.native
+  var provider: Reference
   
   /**
     * Type, classification or Specialization
     */
-  var qualification: js.UndefOr[CodeableConcept] = js.native
+  var qualification: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Billing practitioner
     */
-  var responsible: js.UndefOr[Boolean] = js.native
+  var responsible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Role on the team
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Number to covey order of careteam
     */
-  var sequence: positiveInt = js.native
+  var sequence: positiveInt
 }
 object ExplanationOfBenefitCareTeam {
   

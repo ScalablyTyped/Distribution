@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggesterStatus extends StObject {
   
-  var Options: Suggester = js.native
+  var Options: Suggester
   
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object SuggesterStatus {
   

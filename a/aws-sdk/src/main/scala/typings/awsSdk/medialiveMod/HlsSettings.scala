@@ -2,17 +2,15 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsSettings extends StObject {
   
-  var AudioOnlyHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.AudioOnlyHlsSettings] = js.native
+  var AudioOnlyHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.AudioOnlyHlsSettings] = js.undefined
   
-  var Fmp4HlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.Fmp4HlsSettings] = js.native
+  var Fmp4HlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.Fmp4HlsSettings] = js.undefined
   
-  var StandardHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.StandardHlsSettings] = js.native
+  var StandardHlsSettings: js.UndefOr[typings.awsSdk.medialiveMod.StandardHlsSettings] = js.undefined
 }
 object HlsSettings {
   

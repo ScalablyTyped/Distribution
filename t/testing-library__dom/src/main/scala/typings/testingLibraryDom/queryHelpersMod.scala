@@ -7,22 +7,23 @@ import typings.testingLibraryDom.matchesMod.MatcherOptions
 import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryHelpersMod {
   
-  @JSImport("@testing-library/dom/types/query-helpers", "buildQueries")
+  @JSImport("@testing-library/dom/types/query-helpers", JSImport.Namespace)
   @js.native
-  def buildQueries[Arguments /* <: js.Array[_] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def buildQueries[Arguments /* <: js.Array[js.Any] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-  ): BuiltQueryMethods[Arguments] = js.native
+  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
-  @JSImport("@testing-library/dom/types/query-helpers", "getElementError")
-  @js.native
-  def getElementError(message: String, container: HTMLElement): Error = js.native
+  @scala.inline
+  def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   @JSImport("@testing-library/dom/types/query-helpers", "queryAllByAttribute")
   @js.native
@@ -40,7 +41,7 @@ object queryHelpersMod {
     js.Array[HTMLElement]
   ]
   
-  type BuiltQueryMethods[Arguments /* <: js.Array[_] */] = js.Tuple5[
+  type BuiltQueryMethods[Arguments /* <: js.Array[js.Any] */] = js.Tuple5[
     QueryBy[Arguments], 
     GetAllBy[Arguments], 
     GetBy[Arguments], 
@@ -48,7 +49,7 @@ object queryHelpersMod {
     FindBy[Arguments]
   ]
   
-  type FindAllBy[Arguments /* <: js.Array[_] */] = QueryMethod[
+  type FindAllBy[Arguments /* <: js.Array[js.Any] */] = QueryMethod[
     js.Tuple3[
       /* import warning: importer.ImportType#apply Failed type conversion: Arguments[0] */ js.Any, 
       js.UndefOr[
@@ -59,7 +60,7 @@ object queryHelpersMod {
     js.Promise[js.Array[HTMLElement]]
   ]
   
-  type FindBy[Arguments /* <: js.Array[_] */] = QueryMethod[
+  type FindBy[Arguments /* <: js.Array[js.Any] */] = QueryMethod[
     js.Tuple3[
       /* import warning: importer.ImportType#apply Failed type conversion: Arguments[0] */ js.Any, 
       js.UndefOr[
@@ -70,11 +71,11 @@ object queryHelpersMod {
     js.Promise[HTMLElement]
   ]
   
-  type GetAllBy[Arguments /* <: js.Array[_] */] = QueryMethod[Arguments, js.Array[HTMLElement]]
+  type GetAllBy[Arguments /* <: js.Array[js.Any] */] = QueryMethod[Arguments, js.Array[HTMLElement]]
   
-  type GetBy[Arguments /* <: js.Array[_] */] = QueryMethod[Arguments, HTMLElement]
+  type GetBy[Arguments /* <: js.Array[js.Any] */] = QueryMethod[Arguments, HTMLElement]
   
-  type QueryBy[Arguments /* <: js.Array[_] */] = QueryMethod[Arguments, HTMLElement | Null]
+  type QueryBy[Arguments /* <: js.Array[js.Any] */] = QueryMethod[Arguments, HTMLElement | Null]
   
   type QueryByAttribute_ = js.Function4[
     /* attribute */ String, 
@@ -84,12 +85,13 @@ object queryHelpersMod {
     HTMLElement | Null
   ]
   
-  type QueryMethod[Arguments /* <: js.Array[_] */, Return] = js.Function2[/* container */ HTMLElement, /* args */ Arguments, Return]
+  type QueryMethod[Arguments /* <: js.Array[js.Any] */, Return] = js.Function2[/* container */ HTMLElement, /* args */ Arguments, Return]
   
-  @js.native
-  trait SelectorMatcherOptions extends MatcherOptions {
+  trait SelectorMatcherOptions
+    extends StObject
+       with MatcherOptions {
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
   }
   object SelectorMatcherOptions {
     

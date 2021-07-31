@@ -3,7 +3,6 @@ package typings.nodemailer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cookiesMod {
@@ -11,26 +10,69 @@ object cookiesMod {
   /** Creates a biskviit cookie jar for managing cookie values in memory */
   @JSImport("nodemailer/lib/fetch/cookies", JSImport.Namespace)
   @js.native
-  class ^ () extends Cookies {
+  class ^ ()
+    extends StObject
+       with Cookies {
     def this(options: Options) = this()
+    
+    /** Adds (or updates/removes if needed) a cookie object to the cookie storage */
+    /* CompleteClass */
+    override def add(cookie: Cookie): Boolean = js.native
+    
+    /** Checks if two cookie objects are the same */
+    /* CompleteClass */
+    override def compare(a: Cookie, b: Cookie): Boolean = js.native
+    
+    /* CompleteClass */
+    var cookies: js.Array[Cookie] = js.native
+    
+    /** Returns cookie string for the 'Cookie:' header. */
+    /* CompleteClass */
+    override def get(url: String): String = js.native
+    
+    /** Returns normalized cookie path for an URL path argument */
+    /* CompleteClass */
+    override def getPath(pathname: String): String = js.native
+    
+    /** Checks if a cookie is expired */
+    /* CompleteClass */
+    override def isExpired(cookie: Cookie): Boolean = js.native
+    
+    /** Lists all valied cookie objects for the specified URL */
+    /* CompleteClass */
+    override def list(url: String): js.Array[Cookie] = js.native
+    
+    /** Checks if a cookie object is valid for a specified URL */
+    /* CompleteClass */
+    override def `match`(cookie: Cookie, url: String): Boolean = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
+    
+    /** Parses cookie string from the 'Set-Cookie:' header */
+    /* CompleteClass */
+    override def parse(cookieStr: String): Cookie = js.native
+    
+    /** Stores a cookie string to the cookie storage */
+    /* CompleteClass */
+    override def set(cookieStr: String, url: String): Boolean = js.native
   }
   
-  @js.native
   trait Cookie extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
-    var httponly: js.UndefOr[Boolean] = js.native
+    var httponly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Cookie {
     
@@ -85,39 +127,38 @@ object cookiesMod {
   }
   
   /** Creates a biskviit cookie jar for managing cookie values in memory */
-  @js.native
   trait Cookies extends StObject {
     
     /** Adds (or updates/removes if needed) a cookie object to the cookie storage */
-    def add(cookie: Cookie): Boolean = js.native
+    def add(cookie: Cookie): Boolean
     
     /** Checks if two cookie objects are the same */
-    def compare(a: Cookie, b: Cookie): Boolean = js.native
+    def compare(a: Cookie, b: Cookie): Boolean
     
-    var cookies: js.Array[Cookie] = js.native
+    var cookies: js.Array[Cookie]
     
     /** Returns cookie string for the 'Cookie:' header. */
-    def get(url: String): String = js.native
+    def get(url: String): String
     
     /** Returns normalized cookie path for an URL path argument */
-    def getPath(pathname: String): String = js.native
+    def getPath(pathname: String): String
     
     /** Checks if a cookie is expired */
-    def isExpired(cookie: Cookie): Boolean = js.native
+    def isExpired(cookie: Cookie): Boolean
     
     /** Lists all valied cookie objects for the specified URL */
-    def list(url: String): js.Array[Cookie] = js.native
+    def list(url: String): js.Array[Cookie]
     
     /** Checks if a cookie object is valid for a specified URL */
-    def `match`(cookie: Cookie, url: String): Boolean = js.native
+    def `match`(cookie: Cookie, url: String): Boolean
     
-    var options: Options = js.native
+    var options: Options
     
     /** Parses cookie string from the 'Set-Cookie:' header */
-    def parse(cookieStr: String): Cookie = js.native
+    def parse(cookieStr: String): Cookie
     
     /** Stores a cookie string to the cookie storage */
-    def set(cookieStr: String, url: String): Boolean = js.native
+    def set(cookieStr: String, url: String): Boolean
   }
   object Cookies {
     
@@ -181,10 +222,9 @@ object cookiesMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var sessionTimeout: js.UndefOr[s] = js.native
+    var sessionTimeout: js.UndefOr[s] = js.undefined
   }
   object Options {
     

@@ -2,10 +2,8 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Subscription extends StObject {
     * @param other Subscription object to check for equality.
     * @returns {Boolean} true if both objects are equal; false otherwise.
     */
-  def equals(other: Subscription): Boolean = js.native
+  def equals(other: Subscription): Boolean
 }
 object Subscription {
   

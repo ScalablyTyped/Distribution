@@ -2,7 +2,6 @@ package typings.requirejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,9 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("module", "config")
-  @js.native
-  def config(): js.Any = js.native
+  @scala.inline
+  def config(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.Any]
   
   @JSImport("module", "id")
   @js.native

@@ -2,18 +2,16 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.SearchBoxProvided> */
-@js.native
 trait PartialSearchBoxProvided extends StObject {
   
-  var currentRefinement: js.UndefOr[String] = js.native
+  var currentRefinement: js.UndefOr[String] = js.undefined
   
-  var isSearchStalled: js.UndefOr[Boolean] = js.native
+  var isSearchStalled: js.UndefOr[Boolean] = js.undefined
   
-  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object PartialSearchBoxProvided {
   
@@ -39,7 +37,7 @@ object PartialSearchBoxProvided {
     def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
     
     @scala.inline
-    def setRefine(value: /* repeated */ js.Any => _): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)

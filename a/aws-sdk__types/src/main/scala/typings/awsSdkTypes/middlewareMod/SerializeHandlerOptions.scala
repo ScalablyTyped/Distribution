@@ -3,20 +3,20 @@ package typings.awsSdkTypes.middlewareMod
 import typings.awsSdkTypes.awsSdkTypesStrings.serialize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SerializeHandlerOptions extends HandlerOptions {
+trait SerializeHandlerOptions
+  extends StObject
+     with HandlerOptions {
   
   @JSName("step")
-  var step_SerializeHandlerOptions: serialize = js.native
+  var step_SerializeHandlerOptions: serialize
 }
 object SerializeHandlerOptions {
   
   @scala.inline
-  def apply(step: serialize): SerializeHandlerOptions = {
-    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
+  def apply(): SerializeHandlerOptions = {
+    val __obj = js.Dynamic.literal(step = "serialize")
     __obj.asInstanceOf[SerializeHandlerOptions]
   }
   

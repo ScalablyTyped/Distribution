@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait Configuration extends StObject {
     The Amazon Resource Name (ARN) of the configuration.
     
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * 
     The time when the configuration was created.
     
     */
-  var CreationTime: timestampIso8601 = js.native
+  var CreationTime: timestampIso8601
   
   /**
     * 
     The description of the configuration.
     
     */
-  var Description: string = js.native
+  var Description: string
   
   /**
     * 
     An array of the versions of Apache Kafka with which you can use this MSK configuration. You can use this configuration for an MSK cluster only if the Apache Kafka version specified for the cluster appears in this array.
     
     */
-  var KafkaVersions: listOfString = js.native
+  var KafkaVersions: listOfString
   
   /**
     * 
     Latest revision of the configuration.
     
     */
-  var LatestRevision: ConfigurationRevision = js.native
+  var LatestRevision: ConfigurationRevision
   
   /**
     * 
     The name of the configuration.
     
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * 
     The state of the configuration. The possible states are ACTIVE, DELETING, and DELETE_FAILED. 
     
     */
-  var State: ConfigurationState = js.native
+  var State: ConfigurationState
 }
 object Configuration {
   

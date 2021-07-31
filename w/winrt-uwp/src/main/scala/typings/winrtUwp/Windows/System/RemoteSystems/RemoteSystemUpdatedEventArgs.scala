@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets information about a RemoteSystemUpdated event, namely the RemoteSystem that was updated. */
-@js.native
 trait RemoteSystemUpdatedEventArgs extends StObject {
   
   /** The RemoteSystem object representing the device in the set of discoverable devices whose properties were updated, causing the containing RemoteSystemUpdated event to be raised. */
-  var remoteSystem: RemoteSystem = js.native
+  var remoteSystem: RemoteSystem
 }
 object RemoteSystemUpdatedEventArgs {
   

@@ -3,20 +3,19 @@ package typings.got.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParseError
-  extends StdError
+  extends StObject
+     with StdError
      with GotError {
   
   @JSName("name")
-  var name_ParseError: typings.got.gotStrings.ParseError = js.native
+  var name_ParseError: typings.got.gotStrings.ParseError
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object ParseError {
   

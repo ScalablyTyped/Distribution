@@ -4,7 +4,6 @@ import typings.farbtastic.JQueryFarbtastic.Callback
 import typings.farbtastic.JQueryFarbtastic.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

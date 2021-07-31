@@ -13,7 +13,6 @@ import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,14 +23,13 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait AddFrameOptions extends StObject {
     
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var dispose: js.UndefOr[Double] = js.native
+    var dispose: js.UndefOr[Double] = js.undefined
   }
   object AddFrameOptions {
     
@@ -97,28 +95,27 @@ object mod {
     def render(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var dither: js.UndefOr[Boolean] = js.native
+    var dither: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | Null] = js.native
+    var height: js.UndefOr[Double | Null] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var repeat: js.UndefOr[Double] = js.native
+    var repeat: js.UndefOr[Double] = js.undefined
     
-    var transparent: js.UndefOr[String | Null] = js.native
+    var transparent: js.UndefOr[String | Null] = js.undefined
     
-    var width: js.UndefOr[Double | Null] = js.native
+    var width: js.UndefOr[Double | Null] = js.undefined
     
-    var workerScript: js.UndefOr[String] = js.native
+    var workerScript: js.UndefOr[String] = js.undefined
     
-    var workers: js.UndefOr[Double] = js.native
+    var workers: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

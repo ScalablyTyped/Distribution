@@ -4,34 +4,32 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenInfoDictionary extends StObject {
   
-  def addMapping(source: Double, target: Double): Unit = js.native
+  def addMapping(source: Double, target: Double): Unit
   
-  def buildDictionary(entries: js.Array[js.Array[_]]): NumberDictionary[String] = js.native
+  def buildDictionary(entries: js.Array[js.Array[js.Any]]): NumberDictionary[String]
   
-  def getFeatures(token_info_id_str: String): String = js.native
+  def getFeatures(token_info_id_str: String): String
   
-  def loadDictionary(array_buffer: Uint8Array): TokenInfoDictionary = js.native
+  def loadDictionary(array_buffer: Uint8Array): TokenInfoDictionary
   
-  def loadPosVector(array_buffer: Uint8Array): TokenInfoDictionary = js.native
+  def loadPosVector(array_buffer: Uint8Array): TokenInfoDictionary
   
-  def loadTargetMap(array_buffer: Uint8Array): TokenInfoDictionary = js.native
+  def loadTargetMap(array_buffer: Uint8Array): TokenInfoDictionary
   
-  def put(left_id: Double, right_id: Double, word_cost: Double, surface_form: String, feature: String): Double = js.native
+  def put(left_id: Double, right_id: Double, word_cost: Double, surface_form: String, feature: String): Double
   
-  def targetMapToBuffer(): Uint8Array = js.native
+  def targetMapToBuffer(): Uint8Array
 }
 object TokenInfoDictionary {
   
   @scala.inline
   def apply(
     addMapping: (Double, Double) => Unit,
-    buildDictionary: js.Array[js.Array[_]] => NumberDictionary[String],
+    buildDictionary: js.Array[js.Array[js.Any]] => NumberDictionary[String],
     getFeatures: String => String,
     loadDictionary: Uint8Array => TokenInfoDictionary,
     loadPosVector: Uint8Array => TokenInfoDictionary,
@@ -50,7 +48,7 @@ object TokenInfoDictionary {
     def setAddMapping(value: (Double, Double) => Unit): Self = StObject.set(x, "addMapping", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBuildDictionary(value: js.Array[js.Array[_]] => NumberDictionary[String]): Self = StObject.set(x, "buildDictionary", js.Any.fromFunction1(value))
+    def setBuildDictionary(value: js.Array[js.Array[js.Any]] => NumberDictionary[String]): Self = StObject.set(x, "buildDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetFeatures(value: String => String): Self = StObject.set(x, "getFeatures", js.Any.fromFunction1(value))

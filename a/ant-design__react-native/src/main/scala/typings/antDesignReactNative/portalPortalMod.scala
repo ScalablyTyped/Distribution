@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalPortalMod {
@@ -105,13 +104,12 @@ object portalPortalMod {
     type Host = typings.antDesignReactNative.portalHostMod.default
   }
   
-  @js.native
   trait PortalProps extends StObject {
     
     /**
       * Content of the `Portal`.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object PortalProps {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldLevelEncryptionProfileList extends StObject {
   
   /**
     * The field-level encryption profile items.
     */
-  var Items: js.UndefOr[FieldLevelEncryptionProfileSummaryList] = js.native
+  var Items: js.UndefOr[FieldLevelEncryptionProfileSummaryList] = js.undefined
   
   /**
     * The maximum number of field-level encryption profiles you want in the response body. 
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If there are more elements to be listed, this element is present and contains the value that you can use for the Marker request parameter to continue listing your profiles where you left off.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The number of field-level encryption profiles.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object FieldLevelEncryptionProfileList {
   

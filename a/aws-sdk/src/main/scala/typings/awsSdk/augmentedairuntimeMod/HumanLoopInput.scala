@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopInput extends StObject {
   
   /**
     * Serialized input from the human loop. The input must be a string representation of a file in JSON format.
     */
-  var InputContent: typings.awsSdk.augmentedairuntimeMod.InputContent = js.native
+  var InputContent: typings.awsSdk.augmentedairuntimeMod.InputContent
 }
 object HumanLoopInput {
   

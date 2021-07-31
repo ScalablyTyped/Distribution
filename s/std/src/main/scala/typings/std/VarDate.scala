@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Automation date (VT_DATE)
   */
-@js.native
 trait VarDate extends StObject {
   
-  var VarDate_typekey: VarDate = js.native
+  var VarDate_typekey: VarDate
 }
 object VarDate {
   

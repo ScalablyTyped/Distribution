@@ -6,78 +6,78 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** {@link FilePicker} that support the preview of various file formats should implement this interface. */
-@js.native
-trait XFilePreview extends XInterface {
+trait XFilePreview
+  extends StObject
+     with XInterface {
   
   /**
     * The method returns the available height of the preview window even if the window is invisible or could not be created. If a service implementation
     * doesn't support a file preview 0 will be returned.
     * @returns The height of the preview window in pixel.
     */
-  val AvailableHeight: Double = js.native
+  val AvailableHeight: Double
   
   /**
     * The method returns the available width of the preview window even if the window is invisible or could not be created. If a service implementation
     * doesn't support a file preview 0 will be returned.
     * @returns The width of the preview window in pixel.
     */
-  val AvailableWidth: Double = js.native
+  val AvailableWidth: Double
   
   /**
     * Returns the current show state of the preview.
     * @returns A value of `TRUE` if the preview window is visible. A value of `FALSE` if the preview window is invisible.
     */
-  var ShowState: Boolean = js.native
+  var ShowState: Boolean
   
   /**
     * The method returns all image formats that the preview supports.
     * @returns A sequence of all supported preview formats
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     */
-  val SupportedImageFormats: SafeArray[Double] = js.native
+  val SupportedImageFormats: SafeArray[Double]
   
   /**
     * The method returns the supported color depth of the target device.
     * @returns The color depth in bit, e.g. 8 bit, 16 bit, 32 bit.
     */
-  val TargetColorDepth: Color = js.native
+  val TargetColorDepth: Color
   
   /**
     * The method returns the available height of the preview window even if the window is invisible or could not be created. If a service implementation
     * doesn't support a file preview 0 will be returned.
     * @returns The height of the preview window in pixel.
     */
-  def getAvailableHeight(): Double = js.native
+  def getAvailableHeight(): Double
   
   /**
     * The method returns the available width of the preview window even if the window is invisible or could not be created. If a service implementation
     * doesn't support a file preview 0 will be returned.
     * @returns The width of the preview window in pixel.
     */
-  def getAvailableWidth(): Double = js.native
+  def getAvailableWidth(): Double
   
   /**
     * Returns the current show state of the preview.
     * @returns A value of `TRUE` if the preview window is visible. A value of `FALSE` if the preview window is invisible.
     */
-  def getShowState(): Boolean = js.native
+  def getShowState(): Boolean
   
   /**
     * The method returns all image formats that the preview supports.
     * @returns A sequence of all supported preview formats
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     */
-  def getSupportedImageFormats(): SafeArray[Double] = js.native
+  def getSupportedImageFormats(): SafeArray[Double]
   
   /**
     * The method returns the supported color depth of the target device.
     * @returns The color depth in bit, e.g. 8 bit, 16 bit, 32 bit.
     */
-  def getTargetColorDepth(): Color = js.native
+  def getTargetColorDepth(): Color
   
   /**
     * Sets a new image. If the preview is currently hidden the image will be ignored. An empty any will clear the preview window.
@@ -86,14 +86,14 @@ trait XFilePreview extends XInterface {
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     * @throws com::sun::star::lang::IllegalArgumentException If the specified image format is invalid or not supported by the preview implementation
     */
-  def setImage(aImageFormat: Double, aImage: js.Any): Unit = js.native
+  def setImage(aImageFormat: Double, aImage: js.Any): Unit
   
   /**
     * Optionally sets the current show state of the preview. It is possible that the preview implementation doesn't support hiding the preview.
     * @param bShowState A value of `TRUE` shows the preview window. A value of `FALSE` hides the preview window.
     * @returns A value of `TRUE` on success. A value of `FALSE` if the operation fails for any reason or the preview implementation doesn't support hiding the p
     */
-  def setShowState(bShowState: Boolean): Boolean = js.native
+  def setShowState(bShowState: Boolean): Boolean
 }
 object XFilePreview {
   

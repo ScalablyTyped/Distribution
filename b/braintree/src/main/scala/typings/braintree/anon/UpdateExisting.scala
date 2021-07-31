@@ -2,13 +2,11 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateExisting extends StObject {
   
-  var updateExisting: js.UndefOr[Boolean] = js.native
+  var updateExisting: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateExisting {
   

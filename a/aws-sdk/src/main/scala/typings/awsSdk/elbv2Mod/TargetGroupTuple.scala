@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetGroupTuple extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.native
+  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.undefined
   
   /**
     * The weight. The range is 0 to 999.
     */
-  var Weight: js.UndefOr[TargetGroupWeight] = js.native
+  var Weight: js.UndefOr[TargetGroupWeight] = js.undefined
 }
 object TargetGroupTuple {
   

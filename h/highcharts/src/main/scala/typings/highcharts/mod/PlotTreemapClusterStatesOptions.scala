@@ -2,13 +2,11 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotTreemapClusterStatesOptions extends StObject {
   
-  var hover: js.UndefOr[PlotTreemapClusterStatesHoverOptions] = js.native
+  var hover: js.UndefOr[PlotTreemapClusterStatesHoverOptions] = js.undefined
 }
 object PlotTreemapClusterStatesOptions {
   

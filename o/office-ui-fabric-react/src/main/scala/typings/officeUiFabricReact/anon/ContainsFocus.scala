@@ -4,17 +4,15 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainsFocus extends StObject {
   
-  var containsFocus: Boolean = js.native
+  var containsFocus: Boolean
   
-  var documentContainsFocus: Boolean = js.native
+  var documentContainsFocus: Boolean
   
-  var originalElement: js.UndefOr[HTMLElement | Window] = js.native
+  var originalElement: js.UndefOr[HTMLElement | Window] = js.undefined
 }
 object ContainsFocus {
   

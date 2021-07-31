@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with the same or similar meaning.
   * @see com.sun.star.linguistic2.XSupportedLocales
   */
-@js.native
-trait XThesaurus extends XSupportedLocales {
+trait XThesaurus
+  extends StObject
+     with XSupportedLocales {
   
   /**
     * @param aTerm the word to query for its meanings.
@@ -27,7 +27,7 @@ trait XThesaurus extends XSupportedLocales {
     * @see com.sun.star.lang.Locale
     * @see com.sun.star.linguistic2.XMeaning
     */
-  def queryMeanings(aTerm: String, aLocale: Locale, aProperties: PropertyValues): SafeArray[XMeaning] = js.native
+  def queryMeanings(aTerm: String, aLocale: Locale, aProperties: PropertyValues): SafeArray[XMeaning]
 }
 object XThesaurus {
   

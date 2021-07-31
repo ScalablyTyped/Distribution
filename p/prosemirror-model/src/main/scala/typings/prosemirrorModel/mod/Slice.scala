@@ -3,12 +3,11 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Slice")
 @js.native
-class Slice[S /* <: Schema[_, _] */] protected () extends StObject {
+class Slice[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
   /**
     * Create a slice. When specifying a non-zero open depth, you must
     * make sure that there are nodes of at least that depth at the
@@ -72,21 +71,17 @@ object Slice {
   /**
     * Deserialize a slice from its JSON representation.
     */
-  @JSImport("prosemirror-model", "Slice.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S): Slice[S] = js.native
-  @JSImport("prosemirror-model", "Slice.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Slice[S] = js.native
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S): Slice[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any]).asInstanceOf[Slice[S]]
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Slice[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Slice[S]]
   
   /**
     * Create a slice from a fragment by taking the maximum possible
     * open value on both side of the fragment.
     */
-  @JSImport("prosemirror-model", "Slice.maxOpen")
-  @js.native
-  def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S]): Slice[S] = js.native
-  @JSImport("prosemirror-model", "Slice.maxOpen")
-  @js.native
-  def maxOpen[S /* <: Schema[_, _] */](fragment: Fragment[S], openIsolating: Boolean): Slice[S] = js.native
+  @scala.inline
+  def maxOpen[S /* <: Schema[js.Any, js.Any] */](fragment: Fragment[S]): Slice[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("maxOpen")(fragment.asInstanceOf[js.Any]).asInstanceOf[Slice[S]]
+  @scala.inline
+  def maxOpen[S /* <: Schema[js.Any, js.Any] */](fragment: Fragment[S], openIsolating: Boolean): Slice[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxOpen")(fragment.asInstanceOf[js.Any], openIsolating.asInstanceOf[js.Any])).asInstanceOf[Slice[S]]
 }

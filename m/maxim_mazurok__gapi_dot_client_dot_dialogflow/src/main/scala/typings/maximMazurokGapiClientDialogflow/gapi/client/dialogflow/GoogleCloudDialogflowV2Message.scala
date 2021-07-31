@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2Message extends StObject {
   
   /** Required. The message content. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** Output only. The time when the message was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. The message language. This should be a [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag. Example: "en-US". */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Output only. The annotation for the message. */
-  var messageAnnotation: js.UndefOr[GoogleCloudDialogflowV2MessageAnnotation] = js.native
+  var messageAnnotation: js.UndefOr[GoogleCloudDialogflowV2MessageAnnotation] = js.undefined
   
   /** The unique identifier of the message. Format: `projects//conversations//messages/`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The participant that sends this message. */
-  var participant: js.UndefOr[String] = js.native
+  var participant: js.UndefOr[String] = js.undefined
   
   /** Output only. The role of the participant. */
-  var participantRole: js.UndefOr[String] = js.native
+  var participantRole: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2Message {
   

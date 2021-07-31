@@ -6,84 +6,80 @@ import typings.std.Record
 import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrixMod {
+  
+  @JSImport("matrix-js-sdk/lib/matrix", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("matrix-js-sdk/lib/matrix", "ContentHelpers")
   @js.native
   val ContentHelpers: js.Promise[js.Any] = js.native
   
-  @JSImport("matrix-js-sdk/lib/matrix", "createClient")
-  @js.native
-  def createClient(opts: String): js.Any = js.native
-  @JSImport("matrix-js-sdk/lib/matrix", "createClient")
-  @js.native
-  def createClient(opts: ICreateClientOpts): js.Any = js.native
+  @scala.inline
+  def createClient(opts: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createClient(opts: ICreateClientOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("matrix-js-sdk/lib/matrix", "getRequest")
-  @js.native
-  def getRequest(): js.Any = js.native
+  @scala.inline
+  def getRequest(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequest")().asInstanceOf[js.Any]
   
-  @JSImport("matrix-js-sdk/lib/matrix", "request")
-  @js.native
-  def request(r: js.Any): Unit = js.native
+  @scala.inline
+  def request(r: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(r.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/matrix", "setCryptoStoreFactory")
-  @js.native
-  def setCryptoStoreFactory(fac: js.Any): Unit = js.native
+  @scala.inline
+  def setCryptoStoreFactory(fac: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCryptoStoreFactory")(fac.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("matrix-js-sdk/lib/matrix", "wrapRequest")
-  @js.native
-  def wrapRequest(wrapper: js.Any): Unit = js.native
+  @scala.inline
+  def wrapRequest(wrapper: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequest")(wrapper.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type CryptoStore = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MemoryCryptoStore */ js.Any
   
-  @js.native
   trait ICreateClientOpts extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var cryptoCallbacks: js.UndefOr[CacheSecretStorageKey] = js.native
+    var cryptoCallbacks: js.UndefOr[CacheSecretStorageKey] = js.undefined
     
-    var cryptoStore: js.UndefOr[CryptoStore] = js.native
+    var cryptoStore: js.UndefOr[CryptoStore] = js.undefined
     
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
-    var deviceToImport: js.UndefOr[DeviceId] = js.native
+    var deviceToImport: js.UndefOr[DeviceId] = js.undefined
     
-    var fallbackICEServerAllowed: js.UndefOr[Boolean] = js.native
+    var fallbackICEServerAllowed: js.UndefOr[Boolean] = js.undefined
     
-    var forceTURN: js.UndefOr[Boolean] = js.native
+    var forceTURN: js.UndefOr[Boolean] = js.undefined
     
-    var idBaseUrl: js.UndefOr[String] = js.native
+    var idBaseUrl: js.UndefOr[String] = js.undefined
     
-    var identityServer: js.UndefOr[js.Any] = js.native
+    var identityServer: js.UndefOr[js.Any] = js.undefined
     
-    var localTimeoutMs: js.UndefOr[Double] = js.native
+    var localTimeoutMs: js.UndefOr[Double] = js.undefined
     
-    var queryParams: js.UndefOr[Record[String, _]] = js.native
+    var queryParams: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var request: js.UndefOr[Request] = js.native
+    var request: js.UndefOr[Request] = js.undefined
     
     var scheduler: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixScheduler */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var sessionStore: js.UndefOr[js.Any] = js.native
+    var sessionStore: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[Store] = js.native
+    var store: js.UndefOr[Store] = js.undefined
     
-    var unstableClientRelationAggregation: js.UndefOr[Boolean] = js.native
+    var unstableClientRelationAggregation: js.UndefOr[Boolean] = js.undefined
     
-    var useAuthorizationHeader: js.UndefOr[Boolean] = js.native
+    var useAuthorizationHeader: js.UndefOr[Boolean] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
     
-    var verificationMethods: js.UndefOr[js.Array[_]] = js.native
+    var verificationMethods: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ICreateClientOpts {
     
@@ -160,7 +156,7 @@ object matrixMod {
       def setLocalTimeoutMsUndefined: Self = StObject.set(x, "localTimeoutMs", js.undefined)
       
       @scala.inline
-      def setQueryParams(value: Record[String, _]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      def setQueryParams(value: Record[String, js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
@@ -210,7 +206,7 @@ object matrixMod {
       def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       
       @scala.inline
-      def setVerificationMethods(value: js.Array[_]): Self = StObject.set(x, "verificationMethods", value.asInstanceOf[js.Any])
+      def setVerificationMethods(value: js.Array[js.Any]): Self = StObject.set(x, "verificationMethods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVerificationMethodsUndefined: Self = StObject.set(x, "verificationMethods", js.undefined)

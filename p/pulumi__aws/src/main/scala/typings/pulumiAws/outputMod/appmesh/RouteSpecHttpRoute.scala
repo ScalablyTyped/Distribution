@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttpRoute extends StObject {
   
   /**
     * The action to take if a match is determined.
     */
-  var action: RouteSpecHttpRouteAction = js.native
+  var action: RouteSpecHttpRouteAction
   
   /**
     * The criteria for determining an HTTP request match.
     */
-  var `match`: RouteSpecHttpRouteMatch = js.native
+  var `match`: RouteSpecHttpRouteMatch
   
   /**
     * The retry policy.
     */
-  var retryPolicy: js.UndefOr[RouteSpecHttpRouteRetryPolicy] = js.native
+  var retryPolicy: js.UndefOr[RouteSpecHttpRouteRetryPolicy] = js.undefined
   
   /**
     * The types of timeouts.
     */
-  var timeout: js.UndefOr[RouteSpecHttpRouteTimeout] = js.native
+  var timeout: js.UndefOr[RouteSpecHttpRouteTimeout] = js.undefined
 }
 object RouteSpecHttpRoute {
   

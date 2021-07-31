@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportImageLicenseConfigurationResponse extends StObject {
   
   /**
     * The ARN of a license configuration.
     */
-  var LicenseConfigurationArn: js.UndefOr[String] = js.native
+  var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
 }
 object ImportImageLicenseConfigurationResponse {
   

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetKeyframeKeyResponse extends StObject {
   
-  var paramsType: js.Array[SetKeyframeKeyRequest] = js.native
+  var paramsType: js.Array[SetKeyframeKeyRequest]
   
-  var returnType: SetKeyframeKeyResponse = js.native
+  var returnType: SetKeyframeKeyResponse
 }
 object ReturnTypeSetKeyframeKeyResponse {
   

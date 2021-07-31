@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.INamespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax/build/src/fallback", "protobufMinimal.Root")
@@ -20,16 +19,18 @@ class Root ()
 /* static members */
 object Root {
   
+  @JSImport("google-gax/build/src/fallback", "protobufMinimal.Root")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Loads a namespace descriptor into a root namespace.
     * @param json Nameespace descriptor
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
-  @JSImport("google-gax/build/src/fallback", "protobufMinimal.Root.fromJSON")
-  @js.native
-  def fromJSON(json: INamespace): typings.protobufjs.mod.Root = js.native
-  @JSImport("google-gax/build/src/fallback", "protobufMinimal.Root.fromJSON")
-  @js.native
-  def fromJSON(json: INamespace, root: typings.protobufjs.mod.Root): typings.protobufjs.mod.Root = js.native
+  @scala.inline
+  def fromJSON(json: INamespace): typings.protobufjs.mod.Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Root]
+  @scala.inline
+  def fromJSON(json: INamespace, root: typings.protobufjs.mod.Root): typings.protobufjs.mod.Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Root]
 }

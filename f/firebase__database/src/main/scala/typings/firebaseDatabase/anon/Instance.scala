@@ -2,15 +2,13 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance[T] extends StObject {
   
-  var instance: typings.firebaseDatabaseTypes.mod.Database = js.native
+  var instance: typings.firebaseDatabaseTypes.mod.Database
   
-  var namespace: T = js.native
+  var namespace: T
 }
 object Instance {
   
@@ -21,7 +19,7 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance[_], T] (val x: Self with Instance[T]) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance[?], T] (val x: Self & Instance[T]) extends AnyVal {
     
     @scala.inline
     def setInstance(value: typings.firebaseDatabaseTypes.mod.Database): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])

@@ -9,9 +9,9 @@ The simplest crypto calculator out there. Convert between currencies with ease! 
 | ------------------ | :-------------: |
 | Full name          | calq |
 | Keywords           | crypto, cryptocurrency, calculator, cal, converter, conversion, cli, commandline, node, nodejs, ethereum, financial, ETH, BTC |
-| # releases         | 7 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 479 |
+| # downloads        | 758 |
 | # stars            | 0 |
 
 ## Links

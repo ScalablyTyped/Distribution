@@ -2,66 +2,64 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCustomDataIdentifierResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom data identifier.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the custom data identifier was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.native
+  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Specifies whether the custom data identifier was deleted. If you delete a custom data identifier, Amazon Macie doesn't delete it permanently. Instead, it soft deletes the identifier.
     */
-  var deleted: js.UndefOr[boolean] = js.native
+  var deleted: js.UndefOr[boolean] = js.undefined
   
   /**
     * The custom description of the custom data identifier.
     */
-  var description: js.UndefOr[string] = js.native
+  var description: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the custom data identifier.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
   
   /**
     * An array that lists specific character sequences (ignore words) to exclude from the results. If the text matched by the regular expression is the same as any string in this array, Amazon Macie ignores it. Ignore words are case sensitive.
     */
-  var ignoreWords: js.UndefOr[listOfString] = js.native
+  var ignoreWords: js.UndefOr[listOfString] = js.undefined
   
   /**
     * An array that lists specific character sequences (keywords), one of which must be within proximity (maximumMatchDistance) of the regular expression to match. Keywords aren't case sensitive.
     */
-  var keywords: js.UndefOr[listOfString] = js.native
+  var keywords: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The maximum number of characters that can exist between text that matches the regex pattern and the character sequences specified by the keywords array. Macie includes or excludes a result based on the proximity of a keyword to text that matches the regex pattern.
     */
-  var maximumMatchDistance: js.UndefOr[integer] = js.native
+  var maximumMatchDistance: js.UndefOr[integer] = js.undefined
   
   /**
     * The custom name of the custom data identifier.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
   
   /**
     * The regular expression (regex) that defines the pattern to match.
     */
-  var regex: js.UndefOr[string] = js.native
+  var regex: js.UndefOr[string] = js.undefined
   
   /**
     * A map of key-value pairs that identifies the tags (keys and values) that are associated with the custom data identifier.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object GetCustomDataIdentifierResponse {
   

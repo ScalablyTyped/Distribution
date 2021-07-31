@@ -7,25 +7,24 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListBucketsOutputMod {
   
-  @js.native
   trait ListBucketsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _Buckets shape
       */
-    var Buckets: js.UndefOr[js.Array[UnmarshalledBucket]] = js.native
+    var Buckets: js.UndefOr[js.Array[UnmarshalledBucket]] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner: js.UndefOr[UnmarshalledOwner] = js.undefined
   }
   object ListBucketsOutput {
     

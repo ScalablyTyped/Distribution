@@ -2,19 +2,17 @@ package typings.nextgenEvents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ack extends StObject {
     
-    var ack: Boolean = js.native
+    var ack: Boolean
     
-    var emit: Boolean = js.native
+    var emit: Boolean
     
-    var listen: Boolean = js.native
+    var listen: Boolean
   }
   object Ack {
     
@@ -38,22 +36,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Async extends StObject {
     
-    var async: js.Any = js.native
+    var async: js.Any
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var eventObject: js.Any = js.native
+    var eventObject: js.Any
     
-    var fn: js.Any = js.native
+    var fn: js.Any
     
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
-    var nice: js.UndefOr[Double] = js.native
+    var nice: js.UndefOr[Double] = js.undefined
     
-    var once: js.Any = js.native
+    var once: js.Any
   }
   object Async {
     

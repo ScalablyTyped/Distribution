@@ -15,7 +15,6 @@ import typings.urllib.mod.HttpClientResponse
 import typings.urllib.mod.RequestOptions2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("egg", "EggApplication")
@@ -155,7 +154,7 @@ class EggApplication () extends EggCoreBase[EggAppConfig] {
     */
   var router: Router = js.native
   
-  def runSchedule(schedulePath: String): js.Promise[_] = js.native
+  def runSchedule(schedulePath: String): js.Promise[js.Any] = js.native
   
   /**
     * Alias to Router#url

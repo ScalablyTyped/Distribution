@@ -7,19 +7,17 @@ import typings.qlik.qlikStrings.OOXML
 import typings.qlik.qlikStrings.P
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportDataOptions extends StObject {
   
-  var download: Boolean = js.native
+  var download: Boolean
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var format: OOXML | CSV_C | CSV_T = js.native
+  var format: OOXML | CSV_C | CSV_T
   
-  var state: A | P = js.native
+  var state: A | P
 }
 object ExportDataOptions {
   

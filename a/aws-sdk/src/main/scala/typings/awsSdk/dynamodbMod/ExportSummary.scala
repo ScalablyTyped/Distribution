@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export.
     */
-  var ExportArn: js.UndefOr[typings.awsSdk.dynamodbMod.ExportArn] = js.native
+  var ExportArn: js.UndefOr[typings.awsSdk.dynamodbMod.ExportArn] = js.undefined
   
   /**
     * Export can be in one of the following states: IN_PROGRESS, COMPLETED, or FAILED.
     */
-  var ExportStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ExportStatus] = js.native
+  var ExportStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ExportStatus] = js.undefined
 }
 object ExportSummary {
   

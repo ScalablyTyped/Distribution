@@ -8,23 +8,21 @@ import typings.hapiHapi.hapiHapiStrings.none_
 import typings.hapiHapi.mod.SameSitePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encoding extends StObject {
   
-  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.native
+  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.undefined
   
-  var ignoreErrors: js.UndefOr[Boolean] = js.native
+  var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   
-  var isHttpOnly: js.UndefOr[Boolean] = js.native
+  var isHttpOnly: js.UndefOr[Boolean] = js.undefined
   
-  var isSameSite: js.UndefOr[SameSitePolicy] = js.native
+  var isSameSite: js.UndefOr[SameSitePolicy] = js.undefined
   
-  var isSecure: js.UndefOr[Boolean] = js.native
+  var isSecure: js.UndefOr[Boolean] = js.undefined
   
-  var strictHeader: js.UndefOr[Boolean] = js.native
+  var strictHeader: js.UndefOr[Boolean] = js.undefined
 }
 object Encoding {
   

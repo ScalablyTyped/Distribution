@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait SortDataOption extends StObject
 object SortDataOption extends StObject {
   
   @js.native
-  sealed trait normal extends SortDataOption
+  sealed trait normal
+    extends StObject
+       with SortDataOption
   
   @js.native
-  sealed trait textAsNumber extends SortDataOption
+  sealed trait textAsNumber
+    extends StObject
+       with SortDataOption
 }

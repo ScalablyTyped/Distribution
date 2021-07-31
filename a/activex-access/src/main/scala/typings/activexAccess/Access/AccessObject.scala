@@ -3,45 +3,121 @@ package typings.activexAccess.Access
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessObject extends StObject {
   
   @JSName("Access.AccessObject_typekey")
-  var AccessDotAccessObject_typekey: AccessObject = js.native
+  var AccessDotAccessObject_typekey: AccessObject
   
-  val Attributes: Double = js.native
+  val Attributes: Double
   
-  val CurrentView: AcCurrentView = js.native
+  val CurrentView: AcCurrentView
   
-  val DateCreated: VarDate = js.native
+  val DateCreated: VarDate
   
-  val DateModified: VarDate = js.native
+  val DateModified: VarDate
   
-  var FullName: String = js.native
+  var FullName: String
   
-  def GetDependencyInfo(): DependencyInfo = js.native
+  def GetDependencyInfo(): DependencyInfo
   
-  def IsDependentUpon(ObjectType: AcObjectType, ObjectName: String): Boolean = js.native
+  def IsDependentUpon(ObjectType: AcObjectType, ObjectName: String): Boolean
   
-  val IsLoaded: Boolean = js.native
+  val IsLoaded: Boolean
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val IsWeb: Boolean = js.native
+  val IsWeb: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Properties(Index: String): AccessObjectProperty = js.native
-  def Properties(Index: Double): AccessObjectProperty = js.native
+  def Properties(Index: String): AccessObjectProperty
+  def Properties(Index: Double): AccessObjectProperty
   @JSName("Properties")
-  val Properties_Original: AccessObjectProperties = js.native
+  val Properties_Original: AccessObjectProperties
   
-  val Type: AcObjectType = js.native
+  val Type: AcObjectType
   
-  val _Name: String = js.native
+  val _Name: String
+}
+object AccessObject {
+  
+  @scala.inline
+  def apply(
+    AccessDotAccessObject_typekey: AccessObject,
+    Attributes: Double,
+    CurrentView: AcCurrentView,
+    DateCreated: VarDate,
+    DateModified: VarDate,
+    FullName: String,
+    GetDependencyInfo: () => DependencyInfo,
+    IsDependentUpon: (AcObjectType, String) => Boolean,
+    IsLoaded: Boolean,
+    IsMemberSafe: Double => Boolean,
+    IsWeb: Boolean,
+    Name: String,
+    Parent: js.Any,
+    Properties: AccessObjectProperties,
+    Type: AcObjectType,
+    _Name: String
+  ): AccessObject = {
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], CurrentView = CurrentView.asInstanceOf[js.Any], DateCreated = DateCreated.asInstanceOf[js.Any], DateModified = DateModified.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], GetDependencyInfo = js.Any.fromFunction0(GetDependencyInfo), IsDependentUpon = js.Any.fromFunction2(IsDependentUpon), IsLoaded = IsLoaded.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), IsWeb = IsWeb.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], _Name = _Name.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.AccessObject_typekey")(AccessDotAccessObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccessObject]
+  }
+  
+  @scala.inline
+  implicit class AccessObjectMutableBuilder[Self <: AccessObject] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccessDotAccessObject_typekey(value: AccessObject): Self = StObject.set(x, "Access.AccessObject_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCurrentView(value: AcCurrentView): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetDependencyInfo(value: () => DependencyInfo): Self = StObject.set(x, "GetDependencyInfo", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsDependentUpon(value: (AcObjectType, String) => Boolean): Self = StObject.set(x, "IsDependentUpon", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setIsLoaded(value: Boolean): Self = StObject.set(x, "IsLoaded", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setIsWeb(value: Boolean): Self = StObject.set(x, "IsWeb", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProperties(value: AccessObjectProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: AcObjectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
+  }
 }

@@ -2,27 +2,25 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing the metrics that are measured in number of
   * impressions.
   */
-@js.native
 trait SchemaListImpressionMetricsResponse extends StObject {
   
   /**
     * List of rows, each containing a set of impression metrics.
     */
-  var impressionMetricsRows: js.UndefOr[js.Array[SchemaImpressionMetricsRow]] = js.native
+  var impressionMetricsRows: js.UndefOr[js.Array[SchemaImpressionMetricsRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
     * ListImpressionMetricsRequest.pageToken field in the subsequent call to
     * the impressionMetrics.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListImpressionMetricsResponse {
   

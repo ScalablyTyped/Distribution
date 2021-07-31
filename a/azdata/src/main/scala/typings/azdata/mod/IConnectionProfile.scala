@@ -3,37 +3,37 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IConnectionProfile extends ConnectionInfo {
+trait IConnectionProfile
+  extends StObject
+     with ConnectionInfo {
   
-  var authenticationType: String = js.native
+  var authenticationType: String
   
-  var azureTenantId: js.UndefOr[String] = js.native
+  var azureTenantId: js.UndefOr[String] = js.undefined
   
-  var connectionName: String = js.native
+  var connectionName: String
   
-  var databaseName: String = js.native
+  var databaseName: String
   
-  var groupFullName: js.UndefOr[String] = js.native
+  var groupFullName: js.UndefOr[String] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var password: String = js.native
+  var password: String
   
-  var providerName: String = js.native
+  var providerName: String
   
-  var savePassword: Boolean = js.native
+  var savePassword: Boolean
   
-  var saveProfile: Boolean = js.native
+  var saveProfile: Boolean
   
-  var serverName: String = js.native
+  var serverName: String
   
-  var userName: String = js.native
+  var userName: String
 }
 object IConnectionProfile {
   

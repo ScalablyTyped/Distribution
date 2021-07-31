@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,8 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * d2 = new KJUR.asn1.DERTaggedObject({'obj': d1});
   * hex = d2.getEncodedHex();
   */
-@js.native
-trait DERTaggedObject extends ASN1Object {
+trait DERTaggedObject
+  extends StObject
+     with ASN1Object {
   
   /**
     * set value by an ASN1Object
@@ -35,7 +35,7 @@ trait DERTaggedObject extends ASN1Object {
     * @param tagNoHex hexadecimal string of ASN.1 tag
     * @param asn1Object ASN.1 to encapsulate
     */
-  def setASN1Object(isExplicitFlag: Boolean, tagNoHex: String, asn1Object: ASN1Object): Unit = js.native
+  def setASN1Object(isExplicitFlag: Boolean, tagNoHex: String, asn1Object: ASN1Object): Unit
 }
 object DERTaggedObject {
   

@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsDecimalOptions extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait IsDecimalOptions extends StObject {
     *
     * @default '1,'
     */
-  var decimal_digits: js.UndefOr[String] = js.native
+  var decimal_digits: js.UndefOr[String] = js.undefined
   
   /**
     * @default false
     */
-  var force_decimal: js.UndefOr[Boolean] = js.native
+  var force_decimal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * DecimalLocale
     *
     * @default 'en-US'
     */
-  var locale: js.UndefOr[DecimalLocale] = js.native
+  var locale: js.UndefOr[DecimalLocale] = js.undefined
 }
 object IsDecimalOptions {
   

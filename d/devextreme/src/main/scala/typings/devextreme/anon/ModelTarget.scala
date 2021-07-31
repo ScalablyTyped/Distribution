@@ -5,21 +5,19 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.viz.basePointObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelTarget[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[basePointObject] = js.native
+  var target: js.UndefOr[basePointObject] = js.undefined
 }
 object ModelTarget {
   
@@ -30,7 +28,7 @@ object ModelTarget {
   }
   
   @scala.inline
-  implicit class ModelTargetMutableBuilder[Self <: ModelTarget[_], T] (val x: Self with ModelTarget[T]) extends AnyVal {
+  implicit class ModelTargetMutableBuilder[Self <: ModelTarget[?], T] (val x: Self & ModelTarget[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

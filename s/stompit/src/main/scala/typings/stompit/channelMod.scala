@@ -10,7 +10,6 @@ import typings.stompit.clientMod.MessageCallback
 import typings.stompit.clientMod.SendOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
@@ -28,30 +27,30 @@ object channelMod {
   trait Channel extends EventEmitter {
     
     def ack(message: Message): Unit = js.native
-    def ack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def ack(message: Message, headers: js.UndefOr[scala.Nothing], sendOptions: SendOptions): Unit = js.native
-    def ack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def ack(message: Message, headers: js.Any): Unit = js.native
     def ack(
       message: Message,
       headers: js.Any,
-      sendOptions: js.UndefOr[scala.Nothing],
+      sendOptions: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     def ack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
     def ack(
       message: Message,
       headers: js.Any,
+      sendOptions: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def ack(
+      message: Message,
+      headers: Unit,
+      sendOptions: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def ack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
+    def ack(
+      message: Message,
+      headers: Unit,
       sendOptions: SendOptions,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
@@ -66,24 +65,11 @@ object channelMod {
     def lock(): Unit = js.native
     
     def nack(message: Message): Unit = js.native
-    def nack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
-    def nack(message: Message, headers: js.UndefOr[scala.Nothing], sendOptions: SendOptions): Unit = js.native
-    def nack(
-      message: Message,
-      headers: js.UndefOr[scala.Nothing],
-      sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def nack(message: Message, headers: js.Any): Unit = js.native
     def nack(
       message: Message,
       headers: js.Any,
-      sendOptions: js.UndefOr[scala.Nothing],
+      sendOptions: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     def nack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
@@ -93,12 +79,25 @@ object channelMod {
       sendOptions: SendOptions,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
+    def nack(
+      message: Message,
+      headers: Unit,
+      sendOptions: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
+    def nack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
+    def nack(
+      message: Message,
+      headers: Unit,
+      sendOptions: SendOptions,
+      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Unit = js.native
     
     def send(headers: js.Any, body: Body): this.type = js.native
     def send(headers: js.Any, body: Body, callback: js.Function1[/* err */ Error | Null, Unit]): this.type = js.native
     
     def setImplicitSubscription(id: Double): ChannelSubscription = js.native
-    def setImplicitSubscription(id: Double, ack: js.UndefOr[scala.Nothing], msgListener: MessageCallback): ChannelSubscription = js.native
+    def setImplicitSubscription(id: Double, ack: Unit, msgListener: MessageCallback): ChannelSubscription = js.native
     def setImplicitSubscription(id: Double, ack: Ack): ChannelSubscription = js.native
     def setImplicitSubscription(id: Double, ack: Ack, msgListener: MessageCallback): ChannelSubscription = js.native
     
@@ -115,12 +114,11 @@ object channelMod {
     def unlock(): Unit = js.native
   }
   
-  @js.native
   trait ChannelOptions extends StObject {
     
-    var alwaysConnected: js.UndefOr[Boolean] = js.native
+    var alwaysConnected: js.UndefOr[Boolean] = js.undefined
     
-    var recoverAfterApplicationError: js.UndefOr[Boolean] = js.native
+    var recoverAfterApplicationError: js.UndefOr[Boolean] = js.undefined
   }
   object ChannelOptions {
     
@@ -147,12 +145,11 @@ object channelMod {
     }
   }
   
-  @js.native
   trait ChannelSubscription extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object ChannelSubscription {
     

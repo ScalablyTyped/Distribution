@@ -5,16 +5,14 @@ import typings.highcharts.highchartsNumbers.`0`
 import typings.highcharts.highchartsNumbers.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotPpoOptions extends StObject {
   
   /**
     * (Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highstock) Allow this series' points to be selected by clicking on the
@@ -25,7 +23,7 @@ trait PlotPpoOptions extends StObject {
     *
     * And alternative way of selecting points is through dragging.
     */
-  var allowPointSelect: js.UndefOr[Boolean] = js.native
+  var allowPointSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Enable or disable the initial animation when a series is
@@ -45,7 +43,7 @@ trait PlotPpoOptions extends StObject {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotPpoAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PlotPpoAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highstock) For some series, there is a limit that shuts down initial
@@ -54,12 +52,12 @@ trait PlotPpoOptions extends StObject {
     * not run if there is more than 250 points totally. To disable this cap,
     * set `animationLimit` to `Infinity`.
     */
-  var animationLimit: js.UndefOr[Double] = js.native
+  var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.native
+  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
   
   /**
     * (Highstock) Set the point threshold for when a series should enter boost
@@ -76,7 +74,7 @@ trait PlotPpoOptions extends StObject {
     * rendered although outside the visible plot area, and the `boostThreshold`
     * won't take effect.
     */
-  var boostThreshold: js.UndefOr[Double] = js.native
+  var boostThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The border color of the map areas.
@@ -84,7 +82,7 @@ trait PlotPpoOptions extends StObject {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highmaps) The border width of each map area.
@@ -92,14 +90,14 @@ trait PlotPpoOptions extends StObject {
     * In styled mode, the border stroke width is given in the
     * `.highcharts-point` class.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Disable this option to allow series rendering in the whole
@@ -107,7 +105,7 @@ trait PlotPpoOptions extends StObject {
     *
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
-  var clip: js.UndefOr[Boolean] = js.native
+  var clip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) The main color of the series. In line type series it applies
@@ -121,14 +119,14 @@ trait PlotPpoOptions extends StObject {
     * `.highcharts-series-{n}` class, or individual classes given by the
     * `className` option.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Determines what data value should be
@@ -136,7 +134,7 @@ trait PlotPpoOptions extends StObject {
     * `min` and `max` if some custom point property is used or if approximation
     * for data grouping is set to `'sum'`.
     */
-  var colorKey: js.UndefOr[String] = js.native
+  var colorKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Compare the values of the series against the first non-null,
@@ -146,13 +144,13 @@ trait PlotPpoOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.native
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.native
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -163,32 +161,32 @@ trait PlotPpoOptions extends StObject {
     * range will have 0% (`compareStart=true`) or should have been already
     * calculated according to the previous point (`compareStart=false`).
     */
-  var compareStart: js.UndefOr[Boolean] = js.native
+  var compareStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether to compare indicator to the main series values or
     * indicator values.
     */
-  var compareToMain: js.UndefOr[Boolean] = js.native
+  var compareToMain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Polar charts only. Whether to connect the ends of a line
     * series plot across the extremes.
     */
-  var connectEnds: js.UndefOr[Boolean] = js.native
+  var connectEnds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to connect a graph line across null
     * points, or render a gap between the two points on either side of the
     * null.
     */
-  var connectNulls: js.UndefOr[Boolean] = js.native
+  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.native
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When true, each point or column edge is
@@ -198,7 +196,7 @@ trait PlotPpoOptions extends StObject {
     * cases, setting `crisp` to `false` may look better, even though each
     * column is rendered blurry.
     */
-  var crisp: js.UndefOr[Boolean] = js.native
+  var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When the series contains less points than the
@@ -210,7 +208,7 @@ trait PlotPpoOptions extends StObject {
     * fall within the plot area. The advantage of cropping away invisible
     * points is to increase performance on large series.
     */
-  var cropThreshold: js.UndefOr[Double] = js.native
+  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) You can set the cursor to "pointer" if you have click events
@@ -220,14 +218,14 @@ trait PlotPpoOptions extends StObject {
     * In styled mode, the series cursor can be set with the same classes as
     * listed under series.color.
     */
-  var cursor: js.UndefOr[String | CursorValue] = js.native
+  var cursor: js.UndefOr[String | CursorValue] = js.undefined
   
   /**
     * (Highstock) A reserved subspace to store options and values for
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Highstock) Name of the dash style to use for the graph, or for some
@@ -236,7 +234,7 @@ trait PlotPpoOptions extends StObject {
     * In styled mode, the stroke dash-array can be set with the same classes as
     * listed under series.color.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
@@ -252,7 +250,7 @@ trait PlotPpoOptions extends StObject {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.native
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
@@ -265,32 +263,32 @@ trait PlotPpoOptions extends StObject {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[PlotPpoDataLabelsOptions | js.Array[PlotPpoDataLabelsOptions]] = js.native
+  var dataLabels: js.UndefOr[PlotPpoDataLabelsOptions | js.Array[PlotPpoDataLabelsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotPpoDataSortingOptions] = js.native
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotPpoDataSortingOptions] = js.undefined
   
   /**
     * (Highstock) A description of the series to add to the screen reader
     * information about the series.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
     */
-  var enableMouseTracking: js.UndefOr[Boolean] = js.native
+  var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) General event handlers for the series items. These event
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[SeriesEventsOptionsObject] = js.native
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Determines whether the series should look for the nearest
@@ -302,7 +300,7 @@ trait PlotPpoOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.native
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -319,7 +317,7 @@ trait PlotPpoOptions extends StObject {
     * series. In a stock chart, intraday data is available for daytime hours,
     * while gaps will appear in nights and weekends.
     */
-  var gapSize: js.UndefOr[Double] = js.native
+  var gapSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Together with gapSize, this option defines where to draw gaps
@@ -333,7 +331,7 @@ trait PlotPpoOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.native
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -341,7 +339,7 @@ trait PlotPpoOptions extends StObject {
     * axis. By default, the Y axis adjusts to the min and max of the visible
     * data. Cartesian series only.
     */
-  var getExtremesFromAll: js.UndefOr[Boolean] = js.native
+  var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) When set to `false` will prevent the series data from being
@@ -350,7 +348,7 @@ trait PlotPpoOptions extends StObject {
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.native
+  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
@@ -361,35 +359,35 @@ trait PlotPpoOptions extends StObject {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[SeriesLabelOptionsObject] = js.native
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.native
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.native
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
     * `stroke-linejoin` of a line graph. Round means that lines are rounded in
     * the ends and bends.
     */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.native
+  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The main series ID that indicator will be
     * based on. Required for this indicator.
     */
-  var linkedTo: js.UndefOr[String] = js.native
+  var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Options for the point markers of line-like series. Properties
@@ -400,14 +398,14 @@ trait PlotPpoOptions extends StObject {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highstock) The name of the series as shown in the legend, tooltip etc.
     * If not set, it will be based on a technical indicator type and default
     * params.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) The color for the parts of the graph or points that are below
@@ -415,51 +413,51 @@ trait PlotPpoOptions extends StObject {
     * color. Using `negativeColor` is equivalent to applying a zone with value
     * of 0.
     */
-  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Paramters used in calculation of Percentage Price Oscillator
     * series points.
     */
-  var params: js.UndefOr[PlotPpoParamsOptions] = js.native
+  var params: js.UndefOr[PlotPpoParamsOptions] = js.undefined
   
   /**
     * (Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSeriesPointOptions] = js.native
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
     * (Highstock) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
     */
-  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.native
+  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highstock) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
     * for a selected series.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether to apply a drop shadow to the graph line. Since 2.3
     * the shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highstock) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
     */
-  var showCheckbox: js.UndefOr[Boolean] = js.native
+  var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether to display this particular series or series type in
@@ -467,13 +465,13 @@ trait PlotPpoOptions extends StObject {
     * series are not. Since v7.2.0 it is possible to show series that use
     * colorAxis by setting this option to `true`.
     */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) If set to `true`, the accessibility module will skip past the
     * points in this series for keyboard navigation.
     */
-  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.native
+  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When this is true, the series will not cause the
@@ -484,15 +482,15 @@ trait PlotPpoOptions extends StObject {
     * make the Y axis show negative values according to the `minPadding`
     * option. If `softThreshold` is `true`, the Y axis starts at 0.
     */
-  var softThreshold: js.UndefOr[Boolean] = js.native
+  var softThreshold: js.UndefOr[Boolean] = js.undefined
   
-  var states: js.UndefOr[SeriesStatesOptionsObject] = js.native
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[OptionsStepValue] = js.native
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highstock) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -507,21 +505,21 @@ trait PlotPpoOptions extends StObject {
     * **Note:** The boost module will force this option because of technical
     * limitations.
     */
-  var stickyTracking: js.UndefOr[Boolean] = js.native
+  var stickyTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The threshold, also called zero level or base
     * level. For line type series this is only used in conjunction with
     * negativeColor.
     */
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) A configuration object for the tooltip rendering of each
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.native
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
@@ -534,22 +532,22 @@ trait PlotPpoOptions extends StObject {
     * Note: In boost mode turbo threshold is forced. Only array of numbers or
     * two dimensional arrays are allowed.
     */
-  var turboThreshold: js.UndefOr[Double] = js.native
+  var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Set the initial visibility of the series.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Define the z index of the series.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Defines the Axis on which the zones are applied.
     */
-  var zoneAxis: js.UndefOr[String] = js.native
+  var zoneAxis: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
@@ -561,7 +559,7 @@ trait PlotPpoOptions extends StObject {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.native
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 object PlotPpoOptions {
   
@@ -713,7 +711,7 @@ object PlotPpoOptions {
     def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

@@ -2,38 +2,36 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransactionHeader extends StObject {
   
   /** TransactionHeader batcherPublicKey */
-  var batcherPublicKey: js.UndefOr[String | Null] = js.native
+  var batcherPublicKey: js.UndefOr[String | Null] = js.undefined
   
   /** TransactionHeader dependencies */
-  var dependencies: js.UndefOr[js.Array[String] | Null] = js.native
+  var dependencies: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TransactionHeader familyName */
-  var familyName: js.UndefOr[String | Null] = js.native
+  var familyName: js.UndefOr[String | Null] = js.undefined
   
   /** TransactionHeader familyVersion */
-  var familyVersion: js.UndefOr[String | Null] = js.native
+  var familyVersion: js.UndefOr[String | Null] = js.undefined
   
   /** TransactionHeader inputs */
-  var inputs: js.UndefOr[js.Array[String] | Null] = js.native
+  var inputs: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TransactionHeader nonce */
-  var nonce: js.UndefOr[String | Null] = js.native
+  var nonce: js.UndefOr[String | Null] = js.undefined
   
   /** TransactionHeader outputs */
-  var outputs: js.UndefOr[js.Array[String] | Null] = js.native
+  var outputs: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TransactionHeader payloadSha512 */
-  var payloadSha512: js.UndefOr[String | Null] = js.native
+  var payloadSha512: js.UndefOr[String | Null] = js.undefined
   
   /** TransactionHeader signerPublicKey */
-  var signerPublicKey: js.UndefOr[String | Null] = js.native
+  var signerPublicKey: js.UndefOr[String | Null] = js.undefined
 }
 object ITransactionHeader {
   

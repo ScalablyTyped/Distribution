@@ -3,13 +3,11 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchObject extends StObject {
   
-  val SearchObject: Search = js.native
+  val SearchObject: Search
 }
 object SearchObject {
   

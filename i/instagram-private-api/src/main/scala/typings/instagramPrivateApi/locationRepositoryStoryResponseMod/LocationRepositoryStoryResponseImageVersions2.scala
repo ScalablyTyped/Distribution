@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRepositoryStoryResponseImageVersions2 extends StObject {
   
-  var candidates: js.Array[LocationRepositoryStoryResponseCandidatesItem] = js.native
+  var candidates: js.Array[LocationRepositoryStoryResponseCandidatesItem]
 }
 object LocationRepositoryStoryResponseImageVersions2 {
   

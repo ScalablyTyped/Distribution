@@ -4,17 +4,15 @@ import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITileNotification extends StObject {
   
-  var content: XmlDocument = js.native
+  var content: XmlDocument
   
-  var expirationTime: Date = js.native
+  var expirationTime: Date
   
-  var tag: String = js.native
+  var tag: String
 }
 object ITileNotification {
   

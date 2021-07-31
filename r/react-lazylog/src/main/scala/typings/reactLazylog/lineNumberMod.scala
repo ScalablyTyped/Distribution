@@ -9,7 +9,6 @@ import typings.reactLazylog.anon.PartialLineNumberProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineNumberMod {
@@ -32,16 +31,15 @@ object lineNumberMod {
     def defaultProps_=(x: PartialLineNumberProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait LineNumberProps extends StObject {
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var number: Double = js.native
+    var number: Double
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object LineNumberProps {
     

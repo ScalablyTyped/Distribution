@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetProjectsOutput extends StObject {
   
   /**
     * Information about the requested build projects.
     */
-  var projects: js.UndefOr[Projects] = js.native
+  var projects: js.UndefOr[Projects] = js.undefined
   
   /**
     * The names of build projects for which information could not be found.
     */
-  var projectsNotFound: js.UndefOr[ProjectNames] = js.native
+  var projectsNotFound: js.UndefOr[ProjectNames] = js.undefined
 }
 object BatchGetProjectsOutput {
   

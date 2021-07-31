@@ -2,19 +2,17 @@ package typings.finch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandedCallback extends StObject {
   
-  var load: js.UndefOr[FinchCallback] = js.native
+  var load: js.UndefOr[FinchCallback] = js.undefined
   
-  var setup: js.UndefOr[FinchCallback] = js.native
+  var setup: js.UndefOr[FinchCallback] = js.undefined
   
-  var teardown: js.UndefOr[FinchCallback] = js.native
+  var teardown: js.UndefOr[FinchCallback] = js.undefined
   
-  var unload: js.UndefOr[FinchCallback] = js.native
+  var unload: js.UndefOr[FinchCallback] = js.undefined
 }
 object ExpandedCallback {
   

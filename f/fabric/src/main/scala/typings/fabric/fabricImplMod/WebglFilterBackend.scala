@@ -6,13 +6,13 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "WebglFilterBackend")
 @js.native
 class WebglFilterBackend ()
-  extends FilterBackend_
+  extends StObject
+     with FilterBackend_
      with WebglFilterBackendOptions {
   def this(options: WebglFilterBackendOptions) = this()
   
@@ -65,4 +65,7 @@ class WebglFilterBackend ()
   def glErrorToString(context: js.Any, errorCode: js.Any): String = js.native
   
   def setupGLContext(width: Double, height: Double): Unit = js.native
+  
+  /* CompleteClass */
+  var tileSize: Double = js.native
 }

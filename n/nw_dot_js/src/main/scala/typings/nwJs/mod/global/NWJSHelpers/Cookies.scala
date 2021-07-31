@@ -3,13 +3,11 @@ package typings.nwJs.mod.global.NWJSHelpers
 import typings.nwJs.anon.AddListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This includes multiple functions to manipulate the cookies.
   */
-@js.native
 trait Cookies extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Cookies extends StObject {
     * @param callback {function(cookie?)} The callback when cookie retrieved.
     * - (Optional) cookie {Cookie} Contains details about the cookie. This parameter is null if no such cookie was found.
     */
-  def get(details: CookiesGetDetails, callback: js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]): Unit = js.native
+  def get(details: CookiesGetDetails, callback: js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]): Unit
   
   /**
     * Retrieves all cookies from a single cookie store that match the given information.
@@ -31,12 +29,12 @@ trait Cookies extends StObject {
   def getAll(
     details: CookiesGetAllDetails,
     callback: js.Function1[/* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Fired when a cookie is set or removed.
     */
-  var onChanged: AddListener = js.native
+  var onChanged: AddListener
   
   /**
     * Deletes a cookie by name.
@@ -48,7 +46,7 @@ trait Cookies extends StObject {
   def remove(
     details: CookiesRemoveDetails,
     callback: js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
@@ -57,7 +55,7 @@ trait Cookies extends StObject {
     * @param callback {function(cookie?)} The callback when cookie has been set.
     * - (Optional) cookie {Cookie} Contains details about the cookie that's been set. If setting failed for any reason, this will be "null", and "chrome.runtime.lastError" will be set.
     */
-  def set(details: CookiesSetDetails, callback: js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]): Unit = js.native
+  def set(details: CookiesSetDetails, callback: js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]): Unit
 }
 object Cookies {
   

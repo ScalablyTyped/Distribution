@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolidationStrategy extends StObject {
   
   /** The individual activities are consolidated using the legacy strategy. */
-  var legacy: js.UndefOr[js.Any] = js.native
+  var legacy: js.UndefOr[js.Any] = js.undefined
   
   /** The individual activities are not consolidated. */
-  var none: js.UndefOr[js.Any] = js.native
+  var none: js.UndefOr[js.Any] = js.undefined
 }
 object ConsolidationStrategy {
   

@@ -19,7 +19,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -31,21 +30,21 @@ object anon {
     
     def act(callback: js.Function0[js.UndefOr[Unit]]): Unit = js.native
     @JSName("act")
-    def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = js.native
     
     def createRenderer(): ShallowRenderer = js.native
     
-    def findAllInRenderedTree(root: Component[_, js.Object, _], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = js.native
+    def findAllInRenderedTree(root: Component[js.Any, js.Object, js.Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = js.native
     
-    def findRenderedComponentWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](root: Component[_, js.Object, _], `type`: ClassType[_, T, C]): T = js.native
+    def findRenderedComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): T = js.native
     
-    def findRenderedDOMComponentWithClass(root: Component[_, js.Object, _], className: String): Element = js.native
+    def findRenderedDOMComponentWithClass(root: Component[js.Any, js.Object, js.Any], className: String): Element = js.native
     
-    def findRenderedDOMComponentWithTag(root: Component[_, js.Object, _], tagName: String): Element = js.native
+    def findRenderedDOMComponentWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): Element = js.native
     
     def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = js.native
     
-    def isCompositeComponentWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](instance: ReactInstance, `type`: ClassType[_, T, C]): Boolean = js.native
+    def isCompositeComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[js.Any, T, C]): Boolean = js.native
     
     def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = js.native
     
@@ -53,163 +52,162 @@ object anon {
     
     def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = js.native
     def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = js.native
-    def isElementOfType[P, T /* <: Component[P, js.Object, _] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
+    def isElementOfType[P, T /* <: Component[P, js.Object, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
     @JSName("isElementOfType")
     def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = js.native
     
     def mockComponent(mocked: MockedComponentClass): /* import warning: importer.ImportType#apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
     def mockComponent(mocked: MockedComponentClass, mockTagName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
     
-    def renderIntoDocument(element: SFCElement[_]): Unit = js.native
-    def renderIntoDocument[T /* <: Element */](element: DOMElement[_, T]): T = js.native
-    def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, _]) | Element | Unit = js.native
-    def renderIntoDocument[P, T /* <: Component[P, js.Object, _] */](element: CElement[P, T]): T = js.native
+    def renderIntoDocument(element: SFCElement[js.Any]): Unit = js.native
+    def renderIntoDocument[T /* <: Element */](element: DOMElement[js.Any, T]): T = js.native
+    def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, js.Any]) | Element | Unit = js.native
+    def renderIntoDocument[P, T /* <: Component[P, js.Object, js.Any] */](element: CElement[P, T]): T = js.native
     
-    def scryRenderedComponentsWithType[T /* <: Component[_, js.Object, _] */, C /* <: ComponentClass[_, ComponentState] */](root: Component[_, js.Object, _], `type`: ClassType[_, T, C]): js.Array[T] = js.native
+    def scryRenderedComponentsWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): js.Array[T] = js.native
     
-    def scryRenderedDOMComponentsWithClass(root: Component[_, js.Object, _], className: String): js.Array[Element] = js.native
+    def scryRenderedDOMComponentsWithClass(root: Component[js.Any, js.Object, js.Any], className: String): js.Array[Element] = js.native
     
-    def scryRenderedDOMComponentsWithTag(root: Component[_, js.Object, _], tagName: String): js.Array[Element] = js.native
+    def scryRenderedDOMComponentsWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): js.Array[Element] = js.native
   }
   
-  @js.native
   trait TypeofSimulate extends StObject {
     
-    val abort: EventSimulator = js.native
+    val abort: EventSimulator
     
-    val animationEnd: EventSimulator = js.native
+    val animationEnd: EventSimulator
     
-    val animationIteration: EventSimulator = js.native
+    val animationIteration: EventSimulator
     
-    val animationStart: EventSimulator = js.native
+    val animationStart: EventSimulator
     
-    val blur: EventSimulator = js.native
+    val blur: EventSimulator
     
-    val canPlay: EventSimulator = js.native
+    val canPlay: EventSimulator
     
-    val canPlayThrough: EventSimulator = js.native
+    val canPlayThrough: EventSimulator
     
-    val change: EventSimulator = js.native
+    val change: EventSimulator
     
-    val click: EventSimulator = js.native
+    val click: EventSimulator
     
-    val compositionEnd: EventSimulator = js.native
+    val compositionEnd: EventSimulator
     
-    val compositionStart: EventSimulator = js.native
+    val compositionStart: EventSimulator
     
-    val compositionUpdate: EventSimulator = js.native
+    val compositionUpdate: EventSimulator
     
-    val contextMenu: EventSimulator = js.native
+    val contextMenu: EventSimulator
     
-    val copy: EventSimulator = js.native
+    val copy: EventSimulator
     
-    val cut: EventSimulator = js.native
+    val cut: EventSimulator
     
-    val doubleClick: EventSimulator = js.native
+    val doubleClick: EventSimulator
     
-    val drag: EventSimulator = js.native
+    val drag: EventSimulator
     
-    val dragEnd: EventSimulator = js.native
+    val dragEnd: EventSimulator
     
-    val dragEnter: EventSimulator = js.native
+    val dragEnter: EventSimulator
     
-    val dragExit: EventSimulator = js.native
+    val dragExit: EventSimulator
     
-    val dragLeave: EventSimulator = js.native
+    val dragLeave: EventSimulator
     
-    val dragOver: EventSimulator = js.native
+    val dragOver: EventSimulator
     
-    val dragStart: EventSimulator = js.native
+    val dragStart: EventSimulator
     
-    val drop: EventSimulator = js.native
+    val drop: EventSimulator
     
-    val durationChange: EventSimulator = js.native
+    val durationChange: EventSimulator
     
-    val emptied: EventSimulator = js.native
+    val emptied: EventSimulator
     
-    val encrypted: EventSimulator = js.native
+    val encrypted: EventSimulator
     
-    val ended: EventSimulator = js.native
+    val ended: EventSimulator
     
-    val error: EventSimulator = js.native
+    val error: EventSimulator
     
-    val focus: EventSimulator = js.native
+    val focus: EventSimulator
     
-    val input: EventSimulator = js.native
+    val input: EventSimulator
     
-    val invalid: EventSimulator = js.native
+    val invalid: EventSimulator
     
-    val keyDown: EventSimulator = js.native
+    val keyDown: EventSimulator
     
-    val keyPress: EventSimulator = js.native
+    val keyPress: EventSimulator
     
-    val keyUp: EventSimulator = js.native
+    val keyUp: EventSimulator
     
-    val load: EventSimulator = js.native
+    val load: EventSimulator
     
-    val loadStart: EventSimulator = js.native
+    val loadStart: EventSimulator
     
-    val loadedData: EventSimulator = js.native
+    val loadedData: EventSimulator
     
-    val loadedMetadata: EventSimulator = js.native
+    val loadedMetadata: EventSimulator
     
-    val mouseDown: EventSimulator = js.native
+    val mouseDown: EventSimulator
     
-    val mouseEnter: EventSimulator = js.native
+    val mouseEnter: EventSimulator
     
-    val mouseLeave: EventSimulator = js.native
+    val mouseLeave: EventSimulator
     
-    val mouseMove: EventSimulator = js.native
+    val mouseMove: EventSimulator
     
-    val mouseOut: EventSimulator = js.native
+    val mouseOut: EventSimulator
     
-    val mouseOver: EventSimulator = js.native
+    val mouseOver: EventSimulator
     
-    val mouseUp: EventSimulator = js.native
+    val mouseUp: EventSimulator
     
-    val paste: EventSimulator = js.native
+    val paste: EventSimulator
     
-    val pause: EventSimulator = js.native
+    val pause: EventSimulator
     
-    val play: EventSimulator = js.native
+    val play: EventSimulator
     
-    val playing: EventSimulator = js.native
+    val playing: EventSimulator
     
-    val progress: EventSimulator = js.native
+    val progress: EventSimulator
     
-    val rateChange: EventSimulator = js.native
+    val rateChange: EventSimulator
     
-    val scroll: EventSimulator = js.native
+    val scroll: EventSimulator
     
-    val seeked: EventSimulator = js.native
+    val seeked: EventSimulator
     
-    val seeking: EventSimulator = js.native
+    val seeking: EventSimulator
     
-    val select: EventSimulator = js.native
+    val select: EventSimulator
     
-    val stalled: EventSimulator = js.native
+    val stalled: EventSimulator
     
-    val submit: EventSimulator = js.native
+    val submit: EventSimulator
     
-    val suspend: EventSimulator = js.native
+    val suspend: EventSimulator
     
-    val timeUpdate: EventSimulator = js.native
+    val timeUpdate: EventSimulator
     
-    val touchCancel: EventSimulator = js.native
+    val touchCancel: EventSimulator
     
-    val touchEnd: EventSimulator = js.native
+    val touchEnd: EventSimulator
     
-    val touchMove: EventSimulator = js.native
+    val touchMove: EventSimulator
     
-    val touchStart: EventSimulator = js.native
+    val touchStart: EventSimulator
     
-    val transitionEnd: EventSimulator = js.native
+    val transitionEnd: EventSimulator
     
-    val volumeChange: EventSimulator = js.native
+    val volumeChange: EventSimulator
     
-    val waiting: EventSimulator = js.native
+    val waiting: EventSimulator
     
-    val wheel: EventSimulator = js.native
+    val wheel: EventSimulator
   }
   object TypeofSimulate {
     

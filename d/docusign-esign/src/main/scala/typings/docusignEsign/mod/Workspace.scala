@@ -2,83 +2,81 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workspace extends StObject {
   
   /**
     * The id of the account to bill.
     */
-  var billableAccountId: js.UndefOr[String] = js.native
+  var billableAccountId: js.UndefOr[String] = js.undefined
   
   var callerInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The UTC DateTime when the workspace user authorization was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who created the workspace.
     */
   var createdByInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The UTC date and time that the comment was last updated.
     *
     * **Note**: This can only be done by the creator.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who last modified the workspace.
     */
   var lastModifiedByInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Information about the settings for the workspace.
     */
   var settings: js.UndefOr[
     /* This object provides information about the settings for the workspace. */ WorkspaceSettings
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The status of the item.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URL for accessing the workspace.
     */
-  var workspaceBaseUrl: js.UndefOr[String] = js.native
+  var workspaceBaseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Text describing the purpose of the workspace.
     */
-  var workspaceDescription: js.UndefOr[String] = js.native
+  var workspaceDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace.
     */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the workspace.
     */
-  var workspaceName: js.UndefOr[String] = js.native
+  var workspaceName: js.UndefOr[String] = js.undefined
   
   /**
     * The relative URI for accessing the workspace.
     */
-  var workspaceUri: js.UndefOr[String] = js.native
+  var workspaceUri: js.UndefOr[String] = js.undefined
 }
 object Workspace {
   

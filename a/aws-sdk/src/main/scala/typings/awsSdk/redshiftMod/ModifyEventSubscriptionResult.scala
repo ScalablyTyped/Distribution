@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyEventSubscriptionResult extends StObject {
   
-  var EventSubscription: js.UndefOr[typings.awsSdk.redshiftMod.EventSubscription] = js.native
+  var EventSubscription: js.UndefOr[typings.awsSdk.redshiftMod.EventSubscription] = js.undefined
 }
 object ModifyEventSubscriptionResult {
   

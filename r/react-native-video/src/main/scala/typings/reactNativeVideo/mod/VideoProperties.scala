@@ -17,171 +17,171 @@ import typings.reactNativeVideo.reactNativeVideoStrings.portrait
 import typings.reactNativeVideo.reactNativeVideoStrings.stretch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoProperties extends ViewProps {
+trait VideoProperties
+  extends StObject
+     with ViewProps {
   
-  var allowsExternalPlayback: js.UndefOr[Boolean] = js.native
+  var allowsExternalPlayback: js.UndefOr[Boolean] = js.undefined
   
-  var audioOnly: js.UndefOr[Boolean] = js.native
+  var audioOnly: js.UndefOr[Boolean] = js.undefined
   
-  var automaticallyWaitsToMinimizeStalling: js.UndefOr[Boolean] = js.native
+  var automaticallyWaitsToMinimizeStalling: js.UndefOr[Boolean] = js.undefined
   
-  var bufferConfig: js.UndefOr[BufferForPlaybackAfterRebufferMs] = js.native
+  var bufferConfig: js.UndefOr[BufferForPlaybackAfterRebufferMs] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var currentTime: js.UndefOr[Double] = js.native
+  var currentTime: js.UndefOr[Double] = js.undefined
   
-  var disableFocus: js.UndefOr[Boolean] = js.native
+  var disableFocus: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[FilterType] = js.native
+  var filter: js.UndefOr[FilterType] = js.undefined
   
-  var filterEnable: js.UndefOr[Boolean] = js.native
+  var filterEnable: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreenAutorotate: js.UndefOr[Boolean] = js.native
+  var fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreenOrientation: js.UndefOr[all | landscape | portrait] = js.native
+  var fullscreenOrientation: js.UndefOr[all | landscape | portrait] = js.undefined
   
-  var hideShutterView: js.UndefOr[Boolean] = js.native
+  var hideShutterView: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreSilentSwitch: js.UndefOr[ignore | obey] = js.native
+  var ignoreSilentSwitch: js.UndefOr[ignore | obey] = js.undefined
   
-  var maxBitRate: js.UndefOr[Double] = js.native
+  var maxBitRate: js.UndefOr[Double] = js.undefined
   
-  var minLoadRetryCount: js.UndefOr[Double] = js.native
+  var minLoadRetryCount: js.UndefOr[Double] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var onAudioBecomingNoisy: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAudioBecomingNoisy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onAudioFocusChanged: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAudioFocusChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBandwidthUpdate: js.UndefOr[js.Function1[/* data */ OnBandwidthUpdateData, Unit]] = js.native
+  var onBandwidthUpdate: js.UndefOr[js.Function1[/* data */ OnBandwidthUpdateData, Unit]] = js.undefined
   
-  var onBuffer: js.UndefOr[js.Function1[/* data */ OnBufferData, Unit]] = js.native
+  var onBuffer: js.UndefOr[js.Function1[/* data */ OnBufferData, Unit]] = js.undefined
   
-  var onEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ LoadError, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ LoadError, Unit]] = js.undefined
   
-  var onExternalPlaybackChange: js.UndefOr[js.Function1[/* data */ OnExternalPlaybackChangeData, Unit]] = js.native
+  var onExternalPlaybackChange: js.UndefOr[js.Function1[/* data */ OnExternalPlaybackChangeData, Unit]] = js.undefined
   
-  var onFullscreenPlayerDidDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFullscreenPlayerDidDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFullscreenPlayerDidPresent: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFullscreenPlayerDidPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFullscreenPlayerWillDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFullscreenPlayerWillDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFullscreenPlayerWillPresent: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFullscreenPlayerWillPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function1[/* data */ OnLoadData, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* data */ OnLoadData, Unit]] = js.undefined
   
-  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPictureInPictureStatusChanged: js.UndefOr[js.Function1[/* data */ OnPictureInPictureStatusData, Unit]] = js.native
+  var onPictureInPictureStatusChanged: js.UndefOr[js.Function1[/* data */ OnPictureInPictureStatusData, Unit]] = js.undefined
   
-  var onPlaybackRateChange: js.UndefOr[js.Function1[/* data */ OnPlaybackRateData, Unit]] = js.native
+  var onPlaybackRateChange: js.UndefOr[js.Function1[/* data */ OnPlaybackRateData, Unit]] = js.undefined
   
-  var onPlaybackResume: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPlaybackResume: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPlaybackStalled: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPlaybackStalled: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onProgress: js.UndefOr[js.Function1[/* data */ OnProgressData, Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* data */ OnProgressData, Unit]] = js.undefined
   
-  var onReadyForDisplay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onReadyForDisplay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onRestoreUserInterfaceForPictureInPictureStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRestoreUserInterfaceForPictureInPictureStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSeek: js.UndefOr[js.Function1[/* data */ OnSeekData, Unit]] = js.native
+  var onSeek: js.UndefOr[js.Function1[/* data */ OnSeekData, Unit]] = js.undefined
   
-  var onTimedMetadata: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTimedMetadata: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoBuffer: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoError: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoError: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoFullscreenPlayerDidDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoFullscreenPlayerDidDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoFullscreenPlayerDidPresent: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoFullscreenPlayerDidPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoFullscreenPlayerWillDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoFullscreenPlayerWillDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoFullscreenPlayerWillPresent: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoFullscreenPlayerWillPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoLoadStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoProgress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoProgress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVideoSeek: js.UndefOr[js.Function0[Unit]] = js.native
+  var onVideoSeek: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
-  var pictureInPicture: js.UndefOr[Boolean] = js.native
+  var pictureInPicture: js.UndefOr[Boolean] = js.undefined
   
-  var playInBackground: js.UndefOr[Boolean] = js.native
+  var playInBackground: js.UndefOr[Boolean] = js.undefined
   
-  var playWhenInactive: js.UndefOr[Boolean] = js.native
-  
-  // via Image#resizeMode
-  var poster: js.UndefOr[String] = js.native
+  var playWhenInactive: js.UndefOr[Boolean] = js.undefined
   
   // via Image#resizeMode
-  var posterResizeMode: js.UndefOr[stretch | contain | cover | none] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
-  var preventsDisplaySleepDuringVideoPlayback: js.UndefOr[Boolean] = js.native
+  // via Image#resizeMode
+  var posterResizeMode: js.UndefOr[stretch | contain | cover | none] = js.undefined
   
-  var progressUpdateInterval: js.UndefOr[Double] = js.native
+  var preventsDisplaySleepDuringVideoPlayback: js.UndefOr[Boolean] = js.undefined
   
-  var rate: js.UndefOr[Double] = js.native
+  var progressUpdateInterval: js.UndefOr[Double] = js.undefined
   
-  var repeat: js.UndefOr[Boolean] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
-  var reportBandwidth: js.UndefOr[Boolean] = js.native
+  var repeat: js.UndefOr[Boolean] = js.undefined
   
-  var resizeMode: js.UndefOr[stretch | contain | cover | none] = js.native
+  var reportBandwidth: js.UndefOr[Boolean] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var resizeMode: js.UndefOr[stretch | contain | cover | none] = js.undefined
+  
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /* Required by react-native */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
-  var seek: js.UndefOr[Double] = js.native
+  var seek: js.UndefOr[Double] = js.undefined
   
-  var selectedAudioTrack: js.UndefOr[Type] = js.native
+  var selectedAudioTrack: js.UndefOr[Type] = js.undefined
   
-  var selectedTextTrack: js.UndefOr[Type] = js.native
+  var selectedTextTrack: js.UndefOr[Type] = js.undefined
   
-  var selectedVideoTrack: js.UndefOr[Value] = js.native
+  var selectedVideoTrack: js.UndefOr[Value] = js.undefined
   
   /* Wrapper component */
   // Opaque type returned by require('./video.mp4')
-  var source: Headers | Double = js.native
+  var source: Headers | Double
   
   /* Native only */
-  var src: js.UndefOr[js.Any] = js.native
+  var src: js.UndefOr[js.Any] = js.undefined
   
-  var stereoPan: js.UndefOr[Double] = js.native
+  var stereoPan: js.UndefOr[Double] = js.undefined
   
-  var textTracks: js.UndefOr[js.Array[Language]] = js.native
+  var textTracks: js.UndefOr[js.Array[Language]] = js.undefined
   
-  var translateX: js.UndefOr[Double] = js.native
+  var translateX: js.UndefOr[Double] = js.undefined
   
-  var translateY: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.undefined
   
-  var useTextureView: js.UndefOr[Boolean] = js.native
+  var useTextureView: js.UndefOr[Boolean] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object VideoProperties {
   

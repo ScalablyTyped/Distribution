@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getIntentMod {
   
-  @JSImport("@pulumi/aws/lex/getIntent", "getIntent")
+  @JSImport("@pulumi/aws/lex/getIntent", JSImport.Namespace)
   @js.native
-  def getIntent(args: GetIntentArgs): js.Promise[GetIntentResult] = js.native
-  @JSImport("@pulumi/aws/lex/getIntent", "getIntent")
-  @js.native
-  def getIntent(args: GetIntentArgs, opts: InvokeOptions): js.Promise[GetIntentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getIntent(args: GetIntentArgs): js.Promise[GetIntentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIntentResult]]
+  @scala.inline
+  def getIntent(args: GetIntentArgs, opts: InvokeOptions): js.Promise[GetIntentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIntentResult]]
+  
   trait GetIntentArgs extends StObject {
     
     /**
       * The name of the intent. The name is case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The version of the intent.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetIntentArgs {
     
@@ -50,44 +50,43 @@ object getIntentMod {
     }
   }
   
-  @js.native
   trait GetIntentResult extends StObject {
     
     /**
       * The ARN of the Lex intent.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Checksum identifying the version of the intent that was created. The checksum is not
       * included as an argument because the resource will add it automatically when updating the intent.
       */
-    val checksum: String = js.native
+    val checksum: String
     
     /**
       * The date when the intent version was created.
       */
-    val createdDate: String = js.native
+    val createdDate: String
     
     /**
       * A description of the intent.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The date when the $LATEST version of this intent was updated.
       */
-    val lastUpdatedDate: String = js.native
+    val lastUpdatedDate: String
     
     /**
       * The name of the intent, not case sensitive.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A unique identifier for the built-in intent to base this
@@ -95,12 +94,12 @@ object getIntentMod {
       * [Standard Built-in Intents](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/standard-intents)
       * in the Alexa Skills Kit.
       */
-    val parentIntentSignature: String = js.native
+    val parentIntentSignature: String
     
     /**
       * The version of the bot.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetIntentResult {
     

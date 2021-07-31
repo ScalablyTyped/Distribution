@@ -2,19 +2,17 @@ package typings.nextAuth.providersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderEmailOptions extends StObject {
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var sendVerificationRequest: js.UndefOr[js.Function1[/* options */ VerificationRequestParams, js.Promise[Unit]]] = js.native
+  var sendVerificationRequest: js.UndefOr[js.Function1[/* options */ VerificationRequestParams, js.Promise[Unit]]] = js.undefined
   
-  var server: js.UndefOr[String | ProviderEmailServer] = js.native
+  var server: js.UndefOr[String | ProviderEmailServer] = js.undefined
 }
 object ProviderEmailOptions {
   

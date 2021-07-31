@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Devices.Midi
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a port used to send MIDI messages to a MIDI device. */
-@js.native
 trait MidiOutPort extends StObject {
   
   /** Closes the MidiOutPort . */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets the id of the device that was used to initialize the MidiOutPort . */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * Send the specified data buffer to the device associated with this MidiOutPort .
     * @param midiData The data to send to the device.
     */
-  def sendBuffer(midiData: IBuffer): Unit = js.native
+  def sendBuffer(midiData: IBuffer): Unit
   
   /**
     * Send the data in the specified MIDI message to the device associated with this MidiOutPort .
     * @param midiMessage The MIDI message to send to the device.
     */
-  def sendMessage(midiMessage: IMidiMessage): Unit = js.native
+  def sendMessage(midiMessage: IMidiMessage): Unit
 }
 object MidiOutPort {
   

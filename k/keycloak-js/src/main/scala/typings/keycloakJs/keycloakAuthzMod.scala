@@ -4,7 +4,6 @@ import typings.keycloakJs.anon.Rptendpoint
 import typings.keycloakJs.mod.KeycloakInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keycloakAuthzMod {
@@ -13,11 +12,13 @@ object keycloakAuthzMod {
     * Creates a new Keycloak client instance.
     * @param config Path to a JSON config file or a plain config object.
     */
+  @scala.inline
+  def apply(keycloak: KeycloakInstance): KeycloakAuthorizationInstance = ^.asInstanceOf[js.Dynamic].apply(keycloak.asInstanceOf[js.Any]).asInstanceOf[KeycloakAuthorizationInstance]
+  
   @JSImport("keycloak-js/dist/keycloak-authz", JSImport.Namespace)
   @js.native
-  def apply(keycloak: KeycloakInstance): KeycloakAuthorizationInstance = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AuthorizationRequest extends StObject {
     
     /**
@@ -25,30 +26,30 @@ object keycloakAuthzMod {
       * be sent and permissions in the current RPT will be included in the new RPT. Otherwise, only the permissions referenced in this
       * authorization request will be granted in the new RPT.
       */
-    var incrementalAuthorization: js.UndefOr[Boolean] = js.native
+    var incrementalAuthorization: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines additional information about this authorization request in order to specify how it should be processed
       * by the server.
       */
-    var metadata: js.UndefOr[AuthorizationRequestMetadata] = js.native
+    var metadata: js.UndefOr[AuthorizationRequestMetadata] = js.undefined
     
     /**
       * An array of objects representing the resource and scopes.
       */
-    var permissions: js.UndefOr[js.Array[ResourcePermission]] = js.native
+    var permissions: js.UndefOr[js.Array[ResourcePermission]] = js.undefined
     
     /**
       * A boolean value indicating whether the server should create permission requests to the resources
       * and scopes referenced by a permission ticket. This parameter will only take effect when used together
       * with the ticket parameter as part of a UMA authorization process.
       */
-    var submitRequest: js.UndefOr[Boolean] = js.native
+    var submitRequest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A permission ticket obtained from a resource server when using UMA authorization protocol.
       */
-    var ticket: js.UndefOr[String] = js.native
+    var ticket: js.UndefOr[String] = js.undefined
   }
   object AuthorizationRequest {
     
@@ -96,20 +97,19 @@ object keycloakAuthzMod {
     }
   }
   
-  @js.native
   trait AuthorizationRequestMetadata extends StObject {
     
     /**
       * A boolean value indicating to the server if resource names should be included in the RPT’s permissions.
       * If false, only the resource identifier is included.
       */
-    var responseIncludeResourceName: js.UndefOr[js.Any] = js.native
+    var responseIncludeResourceName: js.UndefOr[js.Any] = js.undefined
     
     /**
       * An integer N that defines a limit for the amount of permissions an RPT can have. When used together with
       * rpt parameter, only the last N requested permissions will be kept in the RPT.
       */
-    var response_permissions_limit: js.UndefOr[Double] = js.native
+    var response_permissions_limit: js.UndefOr[Double] = js.undefined
   }
   object AuthorizationRequestMetadata {
     
@@ -167,14 +167,13 @@ object keycloakAuthzMod {
     var rpt: js.Any = js.native
   }
   
-  @js.native
   trait KeycloakAuthorizationPromise extends StObject {
     
     def `then`(
       onGrant: js.Function1[/* rpt */ String, Unit],
       onDeny: js.Function0[Unit],
       onError: js.Function0[Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object KeycloakAuthorizationPromise {
     
@@ -193,18 +192,17 @@ object keycloakAuthzMod {
     }
   }
   
-  @js.native
   trait ResourcePermission extends StObject {
     
     /**
       * The id or name of a resource.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * An array of strings where each value is the name of a scope associated with the resource.
       */
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ResourcePermission {
     

@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "SurveyValidator")
@@ -36,16 +35,11 @@ class SurveyValidator () extends Base {
   var text: String = js.native
   
   def validate(value: js.Any): ValidatorResult = js.native
-  def validate(
-    value: js.Any,
-    name: js.UndefOr[scala.Nothing],
-    values: js.UndefOr[scala.Nothing],
-    properties: js.Any
-  ): ValidatorResult = js.native
-  def validate(value: js.Any, name: js.UndefOr[scala.Nothing], values: js.Any): ValidatorResult = js.native
-  def validate(value: js.Any, name: js.UndefOr[scala.Nothing], values: js.Any, properties: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String): ValidatorResult = js.native
-  def validate(value: js.Any, name: String, values: js.UndefOr[scala.Nothing], properties: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String, values: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String, values: js.Any, properties: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: String, values: Unit, properties: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: Unit, values: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: Unit, values: js.Any, properties: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: Unit, values: Unit, properties: js.Any): ValidatorResult = js.native
 }

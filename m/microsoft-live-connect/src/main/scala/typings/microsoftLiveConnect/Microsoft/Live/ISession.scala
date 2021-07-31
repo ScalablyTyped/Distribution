@@ -2,25 +2,23 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion API Properties Interfaces
 /**
   * Represents the user's session.
   */
-@js.native
 trait ISession extends StObject {
   
   /**
     * The user's access token.
     */
-  var access_token: String = js.native
+  var access_token: String
   
   /**
     * The authentication token.
     */
-  var authentication_token: String = js.native
+  var authentication_token: String
   
   /**
     * The exact time when the session will expire. This time is expressed
@@ -29,7 +27,7 @@ trait ISession extends StObject {
     * Note: This property is not available for Windows Store apps using
     * JavaScript.
     */
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of time remaining, in seconds, until the user's access
@@ -38,7 +36,7 @@ trait ISession extends StObject {
     * Note: This property is not available for Windows Store apps using
     * JavaScript.
     */
-  var expires_in: js.UndefOr[Double] = js.native
+  var expires_in: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of scopes that the app has requested and that the user has
@@ -47,7 +45,7 @@ trait ISession extends StObject {
     * Note: This property is not available for Windows Store apps using
     * JavaScript.
     */
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ISession {
   

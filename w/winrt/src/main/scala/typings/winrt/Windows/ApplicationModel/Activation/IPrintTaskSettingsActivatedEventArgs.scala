@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Devices.Printers.Extensions.PrintTaskConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPrintTaskSettingsActivatedEventArgs extends IActivatedEventArgs {
+trait IPrintTaskSettingsActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var configuration: PrintTaskConfiguration = js.native
+  var configuration: PrintTaskConfiguration
 }
 object IPrintTaskSettingsActivatedEventArgs {
   

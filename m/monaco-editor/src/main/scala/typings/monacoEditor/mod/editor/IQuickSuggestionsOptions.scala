@@ -2,17 +2,15 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQuickSuggestionsOptions extends StObject {
   
-  var comments: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean] = js.undefined
   
-  var other: js.UndefOr[Boolean] = js.native
+  var other: js.UndefOr[Boolean] = js.undefined
   
-  var strings: js.UndefOr[Boolean] = js.native
+  var strings: js.UndefOr[Boolean] = js.undefined
 }
 object IQuickSuggestionsOptions {
   

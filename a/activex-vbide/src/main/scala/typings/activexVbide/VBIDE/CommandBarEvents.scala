@@ -2,14 +2,12 @@ package typings.activexVbide.VBIDE
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandBarEvents extends StObject {
   
   @JSName("VBIDE.CommandBarEvents_typekey")
-  var VBIDEDotCommandBarEvents_typekey: CommandBarEvents = js.native
+  var VBIDEDotCommandBarEvents_typekey: CommandBarEvents
 }
 object CommandBarEvents {
   

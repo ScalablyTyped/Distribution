@@ -3,13 +3,14 @@ package typings.forceGraph
 import typings.forceGraph.mod.ForceGraph.DagMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forceGraphStrings {
   
   @js.native
-  sealed trait bu extends DagMode
+  sealed trait bu
+    extends StObject
+       with DagMode
   @scala.inline
   def bu: bu = "bu".asInstanceOf[bu]
   
@@ -29,27 +30,37 @@ object forceGraphStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait lr extends DagMode
+  sealed trait lr
+    extends StObject
+       with DagMode
   @scala.inline
   def lr: lr = "lr".asInstanceOf[lr]
   
   @js.native
-  sealed trait radialin extends DagMode
+  sealed trait radialin
+    extends StObject
+       with DagMode
   @scala.inline
   def radialin: radialin = "radialin".asInstanceOf[radialin]
   
   @js.native
-  sealed trait radialout extends DagMode
+  sealed trait radialout
+    extends StObject
+       with DagMode
   @scala.inline
   def radialout: radialout = "radialout".asInstanceOf[radialout]
   
   @js.native
-  sealed trait rl extends DagMode
+  sealed trait rl
+    extends StObject
+       with DagMode
   @scala.inline
   def rl: rl = "rl".asInstanceOf[rl]
   
   @js.native
-  sealed trait td extends DagMode
+  sealed trait td
+    extends StObject
+       with DagMode
   @scala.inline
   def td: td = "td".asInstanceOf[td]
 }

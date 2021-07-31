@@ -25,7 +25,6 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,57 +33,58 @@ object mod {
   @js.native
   class ^[T] () extends Enquirer[T] {
     def this(options: js.Object) = this()
-    def this(options: js.UndefOr[scala.Nothing], answers: T) = this()
     def this(options: js.Object, answers: T) = this()
+    def this(options: Unit, answers: T) = this()
   }
+  @JSImport("enquirer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("enquirer", "Prompt")
   @js.native
   class Prompt_ () extends BasePrompt
   
-  @JSImport("enquirer", "prompt")
-  @js.native
+  @scala.inline
   def prompt[T](
     questions: js.Array[
       PromptOptions | (js.ThisFunction0[/* this */ Enquirer[js.Object], PromptOptions])
     ]
-  ): js.Promise[T] = js.native
-  @JSImport("enquirer", "prompt")
-  @js.native
-  def prompt[T](questions: js.ThisFunction0[/* this */ Enquirer[js.Object], PromptOptions]): js.Promise[T] = js.native
-  @JSImport("enquirer", "prompt")
-  @js.native
-  def prompt[T](questions: PromptOptions): js.Promise[T] = js.native
+  ): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def prompt[T](questions: js.ThisFunction0[/* this */ Enquirer[js.Object], PromptOptions]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def prompt[T](questions: PromptOptions): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait ArrayPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait ArrayPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
-    var align: js.UndefOr[left | right] = js.native
+    var align: js.UndefOr[left | right] = js.undefined
     
-    var choices: js.Array[Choice | String] = js.native
+    var choices: js.Array[Choice | String]
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var edgeLength: js.UndefOr[Double] = js.native
+    var edgeLength: js.UndefOr[Double] = js.undefined
     
     @JSName("initial")
-    var initial_ArrayPromptOptions: js.UndefOr[Double] = js.native
+    var initial_ArrayPromptOptions: js.UndefOr[Double] = js.undefined
     
-    var linebreak: js.UndefOr[Boolean] = js.native
+    var linebreak: js.UndefOr[Boolean] = js.undefined
     
-    var maxChoices: js.UndefOr[Double] = js.native
+    var maxChoices: js.UndefOr[Double] = js.undefined
     
-    var muliple: js.UndefOr[Boolean] = js.native
+    var muliple: js.UndefOr[Boolean] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[Boolean] = js.native
+    var separator: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
     
     @JSName("type")
-    var type_ArrayPromptOptions: autocomplete | editable | form | multiselect | select | survey | list | scale = js.native
+    var type_ArrayPromptOptions: autocomplete | editable | form | multiselect | select | survey | list | scale
   }
   object ArrayPromptOptions {
     
@@ -179,19 +179,20 @@ object mod {
     
     def render(): Unit = js.native
     
-    def run(): js.Promise[_] = js.native
+    def run(): js.Promise[js.Any] = js.native
   }
   
-  @js.native
-  trait BasePromptOptions extends PromptOptions {
+  trait BasePromptOptions
+    extends StObject
+       with PromptOptions {
     
-    var format: js.UndefOr[js.Function1[/* value */ String, String | js.Promise[String]]] = js.native
+    var format: js.UndefOr[js.Function1[/* value */ String, String | js.Promise[String]]] = js.undefined
     
-    var initial: js.UndefOr[js.Any] = js.native
+    var initial: js.UndefOr[js.Any] = js.undefined
     
-    var message: String | (js.Function0[js.Promise[String] | String]) = js.native
+    var message: String | (js.Function0[js.Promise[String] | String])
     
-    var name: String | js.Function0[String] = js.native
+    var name: String | js.Function0[String]
     
     var onCancel: js.UndefOr[
         js.Function3[
@@ -200,7 +201,7 @@ object mod {
           /* prompt */ Prompt_, 
           Boolean | js.Promise[Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSubmit: js.UndefOr[
         js.Function3[
@@ -209,23 +210,23 @@ object mod {
           /* prompt */ Prompt_, 
           Boolean | js.Promise[Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var result: js.UndefOr[js.Function1[/* value */ String, String | js.Promise[String]]] = js.native
+    var result: js.UndefOr[js.Function1[/* value */ String, String | js.Promise[String]]] = js.undefined
     
-    var skip: js.UndefOr[(js.Function1[/* state */ js.Object, Boolean | js.Promise[Boolean]]) | Boolean] = js.native
+    var skip: js.UndefOr[(js.Function1[/* state */ js.Object, Boolean | js.Promise[Boolean]]) | Boolean] = js.undefined
     
-    var stdin: js.UndefOr[ReadStream] = js.native
+    var stdin: js.UndefOr[ReadStream] = js.undefined
     
-    var stdout: js.UndefOr[WriteStream] = js.native
+    var stdout: js.UndefOr[WriteStream] = js.undefined
     
-    var `type`: String | js.Function0[String] = js.native
+    var `type`: String | js.Function0[String]
     
     var validate: js.UndefOr[
         js.Function1[/* value */ String, Boolean | (js.Promise[Boolean | String]) | String]
-      ] = js.native
+      ] = js.undefined
   }
   object BasePromptOptions {
     
@@ -331,25 +332,22 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait BooleanPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait BooleanPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
     @JSName("initial")
-    var initial_BooleanPromptOptions: js.UndefOr[Boolean] = js.native
+    var initial_BooleanPromptOptions: js.UndefOr[Boolean] = js.undefined
     
     @JSName("type")
-    var type_BooleanPromptOptions: confirm = js.native
+    var type_BooleanPromptOptions: confirm
   }
   object BooleanPromptOptions {
     
     @scala.inline
-    def apply(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: confirm
-    ): BooleanPromptOptions = {
+    def apply(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): BooleanPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("confirm")
       __obj.asInstanceOf[BooleanPromptOptions]
     }
     
@@ -367,18 +365,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Choice extends StObject {
     
-    var disabled: js.UndefOr[Boolean | String] = js.native
+    var disabled: js.UndefOr[Boolean | String] = js.undefined
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Choice {
     
@@ -466,39 +463,36 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait NumberPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait NumberPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var float: js.UndefOr[Boolean] = js.native
+    var float: js.UndefOr[Boolean] = js.undefined
     
     @JSName("initial")
-    var initial_NumberPromptOptions: js.UndefOr[Double] = js.native
+    var initial_NumberPromptOptions: js.UndefOr[Double] = js.undefined
     
-    var major: js.UndefOr[Double] = js.native
+    var major: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var minor: js.UndefOr[Double] = js.native
+    var minor: js.UndefOr[Double] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
     @JSName("type")
-    var type_NumberPromptOptions: numeral = js.native
+    var type_NumberPromptOptions: numeral
   }
   object NumberPromptOptions {
     
     @scala.inline
-    def apply(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: numeral
-    ): NumberPromptOptions = {
+    def apply(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): NumberPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("numeral")
       __obj.asInstanceOf[NumberPromptOptions]
     }
     
@@ -594,46 +588,30 @@ object mod {
     }
     
     @scala.inline
-    def BooleanPromptOptions(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: confirm
-    ): typings.enquirer.mod.BooleanPromptOptions = {
+    def BooleanPromptOptions(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): typings.enquirer.mod.BooleanPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("confirm")
       __obj.asInstanceOf[typings.enquirer.mod.BooleanPromptOptions]
     }
     
     @scala.inline
-    def NumberPromptOptions(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: numeral
-    ): typings.enquirer.mod.NumberPromptOptions = {
+    def NumberPromptOptions(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): typings.enquirer.mod.NumberPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("numeral")
       __obj.asInstanceOf[typings.enquirer.mod.NumberPromptOptions]
     }
     
     @scala.inline
-    def SnippetPromptOptions(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: snippet
-    ): typings.enquirer.mod.SnippetPromptOptions = {
+    def SnippetPromptOptions(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): typings.enquirer.mod.SnippetPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("snippet")
       __obj.asInstanceOf[typings.enquirer.mod.SnippetPromptOptions]
     }
     
     @scala.inline
-    def SortPromptOptions(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: sort
-    ): typings.enquirer.mod.SortPromptOptions = {
+    def SortPromptOptions(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): typings.enquirer.mod.SortPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sort")
       __obj.asInstanceOf[typings.enquirer.mod.SortPromptOptions]
     }
     
@@ -650,26 +628,23 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait SnippetPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait SnippetPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     @JSName("type")
-    var type_SnippetPromptOptions: snippet = js.native
+    var type_SnippetPromptOptions: snippet
   }
   object SnippetPromptOptions {
     
     @scala.inline
-    def apply(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: snippet
-    ): SnippetPromptOptions = {
+    def apply(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): SnippetPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("snippet")
       __obj.asInstanceOf[SnippetPromptOptions]
     }
     
@@ -694,28 +669,25 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait SortPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait SortPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
-    var drag: js.UndefOr[Boolean] = js.native
+    var drag: js.UndefOr[Boolean] = js.undefined
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var numbered: js.UndefOr[Boolean] = js.native
+    var numbered: js.UndefOr[Boolean] = js.undefined
     
     @JSName("type")
-    var type_SortPromptOptions: sort = js.native
+    var type_SortPromptOptions: sort
   }
   object SortPromptOptions {
     
     @scala.inline
-    def apply(
-      message: String | (js.Function0[js.Promise[String] | String]),
-      name: String | js.Function0[String],
-      `type`: sort
-    ): SortPromptOptions = {
+    def apply(message: String | (js.Function0[js.Promise[String] | String]), name: String | js.Function0[String]): SortPromptOptions = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sort")
       __obj.asInstanceOf[SortPromptOptions]
     }
     
@@ -746,16 +718,17 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.enquirer.mod.PromptOptions because Already inherited */ @js.native
-  trait StringPromptOptions extends BasePromptOptions {
+  - typings.enquirer.mod.PromptOptions because Already inherited */ trait StringPromptOptions
+    extends StObject
+       with BasePromptOptions {
     
     @JSName("initial")
-    var initial_StringPromptOptions: js.UndefOr[String] = js.native
+    var initial_StringPromptOptions: js.UndefOr[String] = js.undefined
     
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     @JSName("type")
-    var type_StringPromptOptions: input | invisible | list | password | text = js.native
+    var type_StringPromptOptions: input | invisible | list | password | text
   }
   object StringPromptOptions {
     

@@ -3,7 +3,6 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.LocationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait LocationIdentifier extends StObject {
   
   /**
@@ -27,12 +25,12 @@ trait LocationIdentifier extends StObject {
     * 
     * For `Custom` type, it's the `displayName`.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The location's type.
     */
-  var `type`: LocationType | String = js.native
+  var `type`: LocationType | String
 }
 object LocationIdentifier {
   

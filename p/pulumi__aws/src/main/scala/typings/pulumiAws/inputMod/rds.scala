@@ -3,12 +3,10 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rds {
   
-  @js.native
   trait ClusterParameterGroupParameter extends StObject {
     
     /**
@@ -16,17 +14,17 @@ object rds {
       * engines can't apply some parameters without a reboot, and you will need to
       * specify "pending-reboot" here.
       */
-    var applyMethod: js.UndefOr[Input[String]] = js.native
+    var applyMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DB parameter.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value of the DB parameter.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object ClusterParameterGroupParameter {
     
@@ -53,29 +51,28 @@ object rds {
     }
   }
   
-  @js.native
   trait ClusterRestoreToPointInTime extends StObject {
     
     /**
       * Date and time in UTC format to restore the database cluster to. Conflicts with `useLatestRestorableTime`.
       */
-    var restoreToTime: js.UndefOr[Input[String]] = js.native
+    var restoreToTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of restore to be performed.
       * Valid options are `full-copy` (default) and `copy-on-write`.
       */
-    var restoreType: js.UndefOr[Input[String]] = js.native
+    var restoreType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the source database cluster from which to restore.
       */
-    var sourceClusterIdentifier: Input[String] = js.native
+    var sourceClusterIdentifier: Input[String]
     
     /**
       * Set to true to restore the database cluster to the latest restorable backup time. Defaults to false. Conflicts with `restoreToTime`.
       */
-    var useLatestRestorableTime: js.UndefOr[Input[Boolean]] = js.native
+    var useLatestRestorableTime: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ClusterRestoreToPointInTime {
     
@@ -111,33 +108,32 @@ object rds {
     }
   }
   
-  @js.native
   trait ClusterS3Import extends StObject {
     
     /**
       * The bucket name where your backup is stored
       */
-    var bucketName: Input[String] = js.native
+    var bucketName: Input[String]
     
     /**
       * Can be blank, but is the path to your backup
       */
-    var bucketPrefix: js.UndefOr[Input[String]] = js.native
+    var bucketPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Role applied to load the data.
       */
-    var ingestionRole: Input[String] = js.native
+    var ingestionRole: Input[String]
     
     /**
       * Source engine for the backup
       */
-    var sourceEngine: Input[String] = js.native
+    var sourceEngine: Input[String]
     
     /**
       * Version of the source engine used to make the backup
       */
-    var sourceEngineVersion: Input[String] = js.native
+    var sourceEngineVersion: Input[String]
   }
   object ClusterS3Import {
     
@@ -175,33 +171,32 @@ object rds {
     }
   }
   
-  @js.native
   trait ClusterScalingConfiguration extends StObject {
     
     /**
       * Whether to enable automatic pause. A DB cluster can be paused only when it's idle (it has no connections). If a DB cluster is paused for more than seven days, the DB cluster might be backed up with a snapshot. In this case, the DB cluster is restored when there is a request to connect to it. Defaults to `true`.
       */
-    var autoPause: js.UndefOr[Input[Boolean]] = js.native
+    var autoPause: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum capacity. The maximum capacity must be greater than or equal to the minimum capacity. Valid capacity values are `1`, `2`, `4`, `8`, `16`, `32`, `64`, `128`, and `256`. Defaults to `16`.
       */
-    var maxCapacity: js.UndefOr[Input[Double]] = js.native
+    var maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The minimum capacity. The minimum capacity must be lesser than or equal to the maximum capacity. Valid capacity values are `1`, `2`, `4`, `8`, `16`, `32`, `64`, `128`, and `256`. Defaults to `1`.
       */
-    var minCapacity: js.UndefOr[Input[Double]] = js.native
+    var minCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The time, in seconds, before an Aurora DB cluster in serverless mode is paused. Valid values are `300` through `86400`. Defaults to `300`.
       */
-    var secondsUntilAutoPause: js.UndefOr[Input[Double]] = js.native
+    var secondsUntilAutoPause: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The action to take when the timeout is reached. Valid values: `ForceApplyCapacityChange`, `RollbackCapacityChange`. Defaults to `RollbackCapacityChange`. See [documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.timeout-action).
       */
-    var timeoutAction: js.UndefOr[Input[String]] = js.native
+    var timeoutAction: js.UndefOr[Input[String]] = js.undefined
   }
   object ClusterScalingConfiguration {
     
@@ -246,18 +241,17 @@ object rds {
     }
   }
   
-  @js.native
   trait GlobalClusterGlobalClusterMember extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of member DB Cluster
       */
-    var dbClusterArn: js.UndefOr[Input[String]] = js.native
+    var dbClusterArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the member is the primary DB Cluster
       */
-    var isWriter: js.UndefOr[Input[Boolean]] = js.native
+    var isWriter: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GlobalClusterGlobalClusterMember {
     
@@ -284,28 +278,27 @@ object rds {
     }
   }
   
-  @js.native
   trait InstanceRestoreToPointInTime extends StObject {
     
     /**
       * The date and time to restore from. Value must be a time in Universal Coordinated Time (UTC) format and must be before the latest restorable time for the DB instance. Cannot be specified with `useLatestRestorableTime`.
       */
-    var restoreTime: js.UndefOr[Input[String]] = js.native
+    var restoreTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the source DB instance from which to restore. Must match the identifier of an existing DB instance. Required if `sourceDbiResourceId` is not specified.
       */
-    var sourceDbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
+    var sourceDbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource ID of the source DB instance from which to restore. Required if `sourceDbInstanceIdentifier` is not specified.
       */
-    var sourceDbiResourceId: js.UndefOr[Input[String]] = js.native
+    var sourceDbiResourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean value that indicates whether the DB instance is restored from the latest backup time. Defaults to `false`. Cannot be specified with `restoreTime`.
       */
-    var useLatestRestorableTime: js.UndefOr[Input[Boolean]] = js.native
+    var useLatestRestorableTime: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object InstanceRestoreToPointInTime {
     
@@ -344,33 +337,32 @@ object rds {
     }
   }
   
-  @js.native
   trait InstanceS3Import extends StObject {
     
     /**
       * The bucket name where your backup is stored
       */
-    var bucketName: Input[String] = js.native
+    var bucketName: Input[String]
     
     /**
       * Can be blank, but is the path to your backup
       */
-    var bucketPrefix: js.UndefOr[Input[String]] = js.native
+    var bucketPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Role applied to load the data.
       */
-    var ingestionRole: Input[String] = js.native
+    var ingestionRole: Input[String]
     
     /**
       * Source engine for the backup
       */
-    var sourceEngine: Input[String] = js.native
+    var sourceEngine: Input[String]
     
     /**
       * Version of the source engine used to make the backup
       */
-    var sourceEngineVersion: Input[String] = js.native
+    var sourceEngineVersion: Input[String]
   }
   object InstanceS3Import {
     
@@ -408,38 +400,37 @@ object rds {
     }
   }
   
-  @js.native
   trait OptionGroupOption extends StObject {
     
     /**
       * A list of DB Security Groups for which the option is enabled.
       */
-    var dbSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var dbSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Name of the Option (e.g. MEMCACHED).
       */
-    var optionName: Input[String] = js.native
+    var optionName: Input[String]
     
     /**
       * A list of option settings to apply.
       */
-    var optionSettings: js.UndefOr[Input[js.Array[Input[OptionGroupOptionOptionSetting]]]] = js.native
+    var optionSettings: js.UndefOr[Input[js.Array[Input[OptionGroupOptionOptionSetting]]]] = js.undefined
     
     /**
       * The Port number when connecting to the Option (e.g. 11211).
       */
-    var port: js.UndefOr[Input[Double]] = js.native
+    var port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The version of the option (e.g. 13.1.0.0).
       */
-    var version: js.UndefOr[Input[String]] = js.native
+    var version: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of VPC Security Groups for which the option is enabled.
       */
-    var vpcSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var vpcSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object OptionGroupOption {
     
@@ -496,18 +487,17 @@ object rds {
     }
   }
   
-  @js.native
   trait OptionGroupOptionOptionSetting extends StObject {
     
     /**
       * The Name of the setting.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The Value of the setting.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object OptionGroupOptionOptionSetting {
     
@@ -528,7 +518,6 @@ object rds {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
@@ -536,17 +525,17 @@ object rds {
       * engines can't apply some parameters without a reboot, and you will need to
       * specify "pending-reboot" here.
       */
-    var applyMethod: js.UndefOr[Input[String]] = js.native
+    var applyMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DB parameter.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The value of the DB parameter.
       */
-    var value: Input[String] = js.native
+    var value: Input[String]
   }
   object ParameterGroupParameter {
     
@@ -573,28 +562,27 @@ object rds {
     }
   }
   
-  @js.native
   trait ProxyAuth extends StObject {
     
     /**
       * The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of `SECRETS`.
       */
-    var authScheme: js.UndefOr[Input[String]] = js.native
+    var authScheme: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A user-specified description about the authentication used by a proxy to log in as a specific database user.
       */
-    var description: js.UndefOr[Input[String]] = js.native
+    var description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy. One of `DISABLED`, `REQUIRED`.
       */
-    var iamAuth: js.UndefOr[Input[String]] = js.native
+    var iamAuth: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
       */
-    var secretArn: js.UndefOr[Input[String]] = js.native
+    var secretArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ProxyAuth {
     
@@ -633,33 +621,32 @@ object rds {
     }
   }
   
-  @js.native
   trait ProxyDefaultTargetGroupConnectionPoolConfig extends StObject {
     
     /**
       * The number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.
       */
-    var connectionBorrowTimeout: js.UndefOr[Input[Double]] = js.native
+    var connectionBorrowTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * One or more SQL statements for the proxy to run when opening each new database connection. Typically used with `SET` statements to make sure that each connection has identical settings such as time zone and character set. This setting is empty by default. For multiple statements, use semicolons as the separator. You can also include multiple variables in a single `SET` statement, such as `SET x=1, y=2`.
       */
-    var initQuery: js.UndefOr[Input[String]] = js.native
+    var initQuery: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the maxConnections setting for the RDS DB instance or Aurora DB cluster used by the target group.
       */
-    var maxConnectionsPercent: js.UndefOr[Input[Double]] = js.native
+    var maxConnectionsPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Controls how actively the proxy closes idle database connections in the connection pool. A high value enables the proxy to leave a high percentage of idle connections open. A low value causes the proxy to close idle client connections and return the underlying database connections to the connection pool. For Aurora MySQL, it is expressed as a percentage of the maxConnections setting for the RDS DB instance or Aurora DB cluster used by the target group.
       */
-    var maxIdleConnectionsPercent: js.UndefOr[Input[Double]] = js.native
+    var maxIdleConnectionsPercent: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Each item in the list represents a class of SQL operations that normally cause all later statements in a session using a proxy to be pinned to the same underlying database connection. Including an item in the list exempts that class of SQL operations from the pinning behavior. Currently, the only allowed value is `EXCLUDE_VARIABLE_SETS`.
       */
-    var sessionPinningFilters: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var sessionPinningFilters: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ProxyDefaultTargetGroupConnectionPoolConfig {
     
@@ -707,29 +694,28 @@ object rds {
     }
   }
   
-  @js.native
   trait SecurityGroupIngress extends StObject {
     
     /**
       * The CIDR block to accept
       */
-    var cidr: js.UndefOr[Input[String]] = js.native
+    var cidr: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the security group to authorize
       */
-    var securityGroupId: js.UndefOr[Input[String]] = js.native
+    var securityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the security group to authorize
       */
-    var securityGroupName: js.UndefOr[Input[String]] = js.native
+    var securityGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The owner Id of the security group provided
       * by `securityGroupName`.
       */
-    var securityGroupOwnerId: js.UndefOr[Input[String]] = js.native
+    var securityGroupOwnerId: js.UndefOr[Input[String]] = js.undefined
   }
   object SecurityGroupIngress {
     

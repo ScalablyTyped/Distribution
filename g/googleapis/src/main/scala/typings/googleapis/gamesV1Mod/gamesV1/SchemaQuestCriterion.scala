@@ -2,20 +2,18 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a Quest Criterion resource.
   */
-@js.native
 trait SchemaQuestCriterion extends StObject {
   
   /**
     * The total number of times the associated event must be incremented for
     * the player to complete this quest.
     */
-  var completionContribution: js.UndefOr[SchemaQuestContribution] = js.native
+  var completionContribution: js.UndefOr[SchemaQuestContribution] = js.undefined
   
   /**
     * The number of increments the player has made toward the completion count
@@ -23,12 +21,12 @@ trait SchemaQuestCriterion extends StObject {
     * exceed the completion contribution. There will be no currentContribution
     * until the player has accepted the quest.
     */
-  var currentContribution: js.UndefOr[SchemaQuestContribution] = js.native
+  var currentContribution: js.UndefOr[SchemaQuestContribution] = js.undefined
   
   /**
     * The ID of the event the criterion corresponds to.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the event associated with this quest at the time that the
@@ -37,13 +35,13 @@ trait SchemaQuestCriterion extends StObject {
     * There will be no initialPlayerProgress until the player has accepted the
     * quest.
     */
-  var initialPlayerProgress: js.UndefOr[SchemaQuestContribution] = js.native
+  var initialPlayerProgress: js.UndefOr[SchemaQuestContribution] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#questCriterion.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaQuestCriterion {
   

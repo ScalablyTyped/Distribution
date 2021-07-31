@@ -5,62 +5,58 @@ import typings.which.whichBooleans.`false`
 import typings.which.whichBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", JSImport.Namespace)
-  @js.native
-  def apply(cmd: String): js.Promise[String] = js.native
+  @scala.inline
+  def apply(cmd: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", JSImport.Namespace)
-  @js.native
-  def apply(cmd: String, cb: js.Function2[/* err */ Error | Null, /* path */ js.UndefOr[String], Unit]): Unit = js.native
+  @scala.inline
+  def apply(cmd: String, cb: js.Function2[/* err */ Error | Null, /* path */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", JSImport.Namespace)
-  @js.native
-  def apply(cmd: String, options: AsyncOptions with OptionsAll with OptionsFirst): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def apply(cmd: String, options: AsyncOptions & OptionsAll & OptionsFirst): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     cmd: String,
-    options: (AsyncOptions with OptionsAll with OptionsFirst) | AsyncOptions,
+    options: (AsyncOptions & OptionsAll & OptionsFirst) | AsyncOptions,
     cb: js.Function2[Error | Null, js.UndefOr[js.Array[String] | String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("which", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", "sync")
-  @js.native
-  def sync(cmd: String): String = js.native
+  @scala.inline
+  def sync(cmd: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any]).asInstanceOf[String]
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", "sync")
-  @js.native
-  def sync(cmd: String, options: Options with OptionsFirst with OptionsThrow): String = js.native
+  @scala.inline
+  def sync(cmd: String, options: Options & OptionsFirst & OptionsThrow): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /** Finds all instances of a specified executable in the PATH environment variable */
-  @JSImport("which", "sync")
-  @js.native
-  def sync_Array(cmd: String, options: Options with OptionsAll with OptionsThrow): js.Array[String] = js.native
+  @scala.inline
+  def sync_Array(cmd: String, options: Options & OptionsAll & OptionsThrow): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   /** Finds all instances of a specified executable in the PATH environment variable */
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  @JSImport("which", "sync")
-  @js.native
-  def sync_Union(cmd: String, options: (Options with OptionsAll with OptionsNoThrow with OptionsFirst) | Options): js.Array[String] | Null = js.native
+  @scala.inline
+  def sync_Union(cmd: String, options: (Options & OptionsAll & OptionsNoThrow & OptionsFirst) | Options): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
   
   /** Options for which() async API */
-  @js.native
   trait AsyncOptions extends StObject {
     
     /** If true, return all matches, instead of just the first one. Note that this means the function returns an array of strings instead of a single string. */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /** Use instead of the PATH environment variable. */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Use instead of the PATHEXT environment variable. */
-    var pathExt: js.UndefOr[String] = js.native
+    var pathExt: js.UndefOr[String] = js.undefined
   }
   object AsyncOptions {
     
@@ -94,11 +90,12 @@ object mod {
   }
   
   /** Options for which() sync and async APIs */
-  @js.native
-  trait Options extends AsyncOptions {
+  trait Options
+    extends StObject
+       with AsyncOptions {
     
     /** If true, returns null when not found */
-    var nothrow: js.UndefOr[Boolean] = js.native
+    var nothrow: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -120,17 +117,18 @@ object mod {
   }
   
   /** Options that ask for all matches. */
-  @js.native
-  trait OptionsAll extends AsyncOptions {
+  trait OptionsAll
+    extends StObject
+       with AsyncOptions {
     
     @JSName("all")
-    var all_OptionsAll: `true` = js.native
+    var all_OptionsAll: `true`
   }
   object OptionsAll {
     
     @scala.inline
-    def apply(all: `true`): OptionsAll = {
-      val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
+    def apply(): OptionsAll = {
+      val __obj = js.Dynamic.literal(all = true)
       __obj.asInstanceOf[OptionsAll]
     }
     
@@ -143,11 +141,12 @@ object mod {
   }
   
   /** Options that ask for the first match (the default behavior) */
-  @js.native
-  trait OptionsFirst extends AsyncOptions {
+  trait OptionsFirst
+    extends StObject
+       with AsyncOptions {
     
     @JSName("all")
-    var all_OptionsFirst: js.UndefOr[`false`] = js.native
+    var all_OptionsFirst: js.UndefOr[`false`] = js.undefined
   }
   object OptionsFirst {
     
@@ -169,17 +168,18 @@ object mod {
   }
   
   /** Options that ask to receive null instead of a thrown error */
-  @js.native
-  trait OptionsNoThrow extends Options {
+  trait OptionsNoThrow
+    extends StObject
+       with Options {
     
     @JSName("nothrow")
-    var nothrow_OptionsNoThrow: `true` = js.native
+    var nothrow_OptionsNoThrow: `true`
   }
   object OptionsNoThrow {
     
     @scala.inline
-    def apply(nothrow: `true`): OptionsNoThrow = {
-      val __obj = js.Dynamic.literal(nothrow = nothrow.asInstanceOf[js.Any])
+    def apply(): OptionsNoThrow = {
+      val __obj = js.Dynamic.literal(nothrow = true)
       __obj.asInstanceOf[OptionsNoThrow]
     }
     
@@ -192,11 +192,12 @@ object mod {
   }
   
   /** Options that ask for a thrown error if executable is not found (the default behavior) */
-  @js.native
-  trait OptionsThrow extends Options {
+  trait OptionsThrow
+    extends StObject
+       with Options {
     
     @JSName("nothrow")
-    var nothrow_OptionsThrow: js.UndefOr[`false`] = js.native
+    var nothrow_OptionsThrow: js.UndefOr[`false`] = js.undefined
   }
   object OptionsThrow {
     

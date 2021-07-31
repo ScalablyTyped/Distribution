@@ -3,14 +3,12 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.webViewRequest.DeclarativeWebRequestActionsList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeDeclarativeWebRequestActionsList extends StObject {
   
   /** Action type */
-  var `type`: DeclarativeWebRequestActionsList = js.native
+  var `type`: DeclarativeWebRequestActionsList
 }
 object TypeDeclarativeWebRequestActionsList {
   

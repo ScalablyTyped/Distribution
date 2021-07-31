@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,41 +15,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * achieve a greater conformance with the other accessibility interfaces.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleRelationSet extends XInterface {
+trait XAccessibleRelationSet
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the number of relations in this relation set.
     * @returns Returns the number of relations or zero if there are none.
     */
-  val RelationCount: Double = js.native
+  val RelationCount: Double
   
   /**
     * Tests whether the relation set contains a relation matching the specified key.
     * @param aRelationType The type of relation to look for in this set of relations. This has to be one of the constants of {@link AccessibleRelationType} .
     * @returns Returns `TRUE` if there is a (at least one) relation of the given type and `FALSE` if there is no such relation in the set.
     */
-  def containsRelation(aRelationType: Double): Boolean = js.native
+  def containsRelation(aRelationType: Double): Boolean
   
   /**
     * Returns the relation of this relation set that is specified by the given index.
     * @param nIndex This index specifies the relation to return.
     * @returns For a valid index, i.e. inside the range 0 to the number of relations minus one, the returned value is the requested relation. If the index is in
     */
-  def getRelation(nIndex: Double): AccessibleRelation = js.native
+  def getRelation(nIndex: Double): AccessibleRelation
   
   /**
     * Retrieve and return the relation with the given relation type.
     * @param aRelationType The type of the relation to return. This has to be one of the constants of {@link AccessibleRelationType} .
     * @returns If a relation with the given type could be found than (a copy of) this relation is returned. Otherwise a relation with the type INVALID is returned.
     */
-  def getRelationByType(aRelationType: Double): AccessibleRelation = js.native
+  def getRelationByType(aRelationType: Double): AccessibleRelation
   
   /**
     * Returns the number of relations in this relation set.
     * @returns Returns the number of relations or zero if there are none.
     */
-  def getRelationCount(): Double = js.native
+  def getRelationCount(): Double
 }
 object XAccessibleRelationSet {
   

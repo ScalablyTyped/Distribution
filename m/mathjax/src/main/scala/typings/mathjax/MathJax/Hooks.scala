@@ -2,17 +2,15 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hooks extends StObject {
   
-  def Add(hook: js.Any, priority: Double): CallbackObject = js.native
+  def Add(hook: js.Any, priority: Double): CallbackObject
   
-  def Execute(): CallbackObject = js.native
+  def Execute(): CallbackObject
   
-  def Remove(hook: CallbackObject): Unit = js.native
+  def Remove(hook: CallbackObject): Unit
 }
 object Hooks {
   

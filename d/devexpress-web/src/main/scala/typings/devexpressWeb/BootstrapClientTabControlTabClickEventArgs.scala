@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to clicking on the control's tabs.
   */
-@js.native
-trait BootstrapClientTabControlTabClickEventArgs extends BootstrapClientTabControlTabCancelEventArgs {
+trait BootstrapClientTabControlTabClickEventArgs
+  extends StObject
+     with BootstrapClientTabControlTabCancelEventArgs {
   
   /**
     * Gets an HTML object that contains the processed tab.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object BootstrapClientTabControlTabClickEventArgs {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlayerSessionsOutput extends StObject {
   
   /**
     * A collection of player session objects created for the added players.
     */
-  var PlayerSessions: js.UndefOr[PlayerSessionList] = js.native
+  var PlayerSessions: js.UndefOr[PlayerSessionList] = js.undefined
 }
 object CreatePlayerSessionsOutput {
   

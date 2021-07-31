@@ -2,27 +2,25 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashEdge extends StObject {
   
-  var cubicSegmentIndex: Double = js.native
+  var cubicSegmentIndex: Double
   
-  def getControl(i: Double): FlashPoint = js.native
+  def getControl(i: Double): FlashPoint
   
-  def getHalfEdge(index: Double): FlashHalfEdge = js.native
+  def getHalfEdge(index: Double): FlashHalfEdge
   
-  var id: Double = js.native
+  var id: Double
   
-  var isLine: Boolean = js.native
+  var isLine: Boolean
   
-  def setControl(index: Double, x: Double, y: Double): Unit = js.native
+  def setControl(index: Double, x: Double, y: Double): Unit
   
-  def splitEdge(t: Double): Unit = js.native
+  def splitEdge(t: Double): Unit
   
-  var stroke: FlashStroke = js.native
+  var stroke: FlashStroke
 }
 object FlashEdge {
   

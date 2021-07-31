@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlashCommand extends StObject {
   
   /** The id of the slash command invoked. */
-  var commandId: js.UndefOr[String] = js.native
+  var commandId: js.UndefOr[String] = js.undefined
 }
 object SlashCommand {
   

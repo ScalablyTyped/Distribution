@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainPolicyMod {
@@ -39,6 +38,10 @@ object domainPolicyMod {
   /* static members */
   object DomainPolicy {
     
+    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object domainPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainPolicy = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainPolicy = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPolicyState): DomainPolicy = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPolicyState, opts: CustomResourceOptions): DomainPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPolicyState): DomainPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPolicyState, opts: CustomResourceOptions): DomainPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPolicy]
     
     /**
       * Returns true if the given object is an instance of DomainPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ Boolean]
   }
   
-  @js.native
   trait DomainPolicyArgs extends StObject {
     
     /**
       * IAM policy document specifying the access policies for the domain
       */
-    val accessPolicies: Input[String | PolicyDocument] = js.native
+    val accessPolicies: Input[String | PolicyDocument]
     
     /**
       * Name of the domain.
       */
-    val domainName: Input[String] = js.native
+    val domainName: Input[String]
   }
   object DomainPolicyArgs {
     
@@ -102,18 +99,17 @@ object domainPolicyMod {
     }
   }
   
-  @js.native
   trait DomainPolicyState extends StObject {
     
     /**
       * IAM policy document specifying the access policies for the domain
       */
-    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * Name of the domain.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainPolicyState {
     

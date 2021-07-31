@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindowOptions Maps JavaScript API}
   * @see {@link InfoWindow#setOptions}
   */
-@js.native
 trait InfoWindowOptions extends StObject {
   
   /**
@@ -22,14 +20,14 @@ trait InfoWindowOptions extends StObject {
     * @see {@link InfoWindow#getContent}
     * @see {@link InfoWindow#setContent}
     */
-  var content: js.UndefOr[String | Node] = js.native
+  var content: js.UndefOr[String | Node] = js.undefined
   
   /**
     * Disable auto-pan on open. By default, the {@link InfoWindow} will pan the map so that it is fully visible
     * when it opens.
     * @see {@link https://developers.google.com/maps/documetntation/javascript/reference/info-window#InfoWindowOptions.disableAutoPan Maps JavaScript API}
     */
-  var disableAutoPan: js.UndefOr[Boolean] = js.native
+  var disableAutoPan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum width of the {@link InfoWindow}, regardless of content's width. This value is only considered if it
@@ -37,7 +35,7 @@ trait InfoWindowOptions extends StObject {
     * {@link InfoWindow#setOptions setOptions}, and then open.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindowOptions.maxWidth Maps JavaScript API}
     */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The offset, in pixels, of the tip of the info window from the point on the map at whose geographical
@@ -46,7 +44,7 @@ trait InfoWindowOptions extends StObject {
     * property.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindowOptions.pixelOffset Maps JavaScript API}
     */
-  var pixelOffset: js.UndefOr[Size] = js.native
+  var pixelOffset: js.UndefOr[Size] = js.undefined
   
   /**
     * The {@link LatLng} at which to display this {@link InfoWindow}. If the {@link InfoWindow} is opened with an
@@ -55,7 +53,7 @@ trait InfoWindowOptions extends StObject {
     * @see {@link InfoWindow#getPosition}
     * @see {@link InfoWindow#setPosition}
     */
-  var position: js.UndefOr[LatLng | LatLngLiteral] = js.native
+  var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   
   /**
     * All {@link InfoWindow} are displayed on the map in order of their {@link zIndex}, with higher values
@@ -66,7 +64,7 @@ trait InfoWindowOptions extends StObject {
     * @see {@link InfoWindow#getZIndex}
     * @see {@link InfoWindow#setZIndex}
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object InfoWindowOptions {
   

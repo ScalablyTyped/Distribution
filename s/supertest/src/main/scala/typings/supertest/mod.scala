@@ -14,32 +14,29 @@ import typings.superagent.mod.SuperAgentRequest
 import typings.supertest.supertestStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
+  
   @JSImport("supertest", JSImport.Namespace)
   @js.native
-  def apply(app: js.Any): SuperTest[Test] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(): SuperAgentTest = js.native
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(app: js.UndefOr[scala.Nothing], options: AgentOptions): SuperAgentTest = js.native
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(app: js.Any): SuperAgentTest = js.native
-  @JSImport("supertest", "agent")
-  @js.native
-  def agent(app: js.Any, options: AgentOptions): SuperAgentTest = js.native
+  @scala.inline
+  def agent(): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperAgentTest]
+  @scala.inline
+  def agent(app: js.Any): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperAgentTest]
+  @scala.inline
+  def agent(app: js.Any, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
+  @scala.inline
+  def agent(app: Unit, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
   
-  @js.native
   trait AgentOptions extends StObject {
     
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
   }
   object AgentOptions {
     
@@ -295,8 +292,8 @@ object mod {
     def expect(body: js.Object, callback: CallbackHandler): this.type = js.native
     def expect(body: RegExp): this.type = js.native
     def expect(body: RegExp, callback: CallbackHandler): this.type = js.native
-    def expect(checker: js.Function1[/* res */ Response, _]): this.type = js.native
-    def expect(checker: js.Function1[/* res */ Response, _], callback: CallbackHandler): this.type = js.native
+    def expect(checker: js.Function1[/* res */ Response, js.Any]): this.type = js.native
+    def expect(checker: js.Function1[/* res */ Response, js.Any], callback: CallbackHandler): this.type = js.native
     def expect(field: String, `val`: String): this.type = js.native
     def expect(field: String, `val`: String, callback: CallbackHandler): this.type = js.native
     def expect(field: String, `val`: RegExp): this.type = js.native

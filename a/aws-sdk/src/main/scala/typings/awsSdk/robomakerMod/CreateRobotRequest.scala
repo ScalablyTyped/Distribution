@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRobotRequest extends StObject {
   
   /**
     * The target architecture of the robot.
     */
-  var architecture: Architecture = js.native
+  var architecture: Architecture
   
   /**
     * The Greengrass group id.
     */
-  var greengrassGroupId: Id = js.native
+  var greengrassGroupId: Id
   
   /**
     * The name for the robot.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * A map that contains tag keys and tag values that are attached to the robot.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateRobotRequest {
   

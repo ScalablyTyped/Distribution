@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attestation extends StObject {
   
-  var genericSignedAttestation: js.UndefOr[GenericSignedAttestation] = js.native
+  var genericSignedAttestation: js.UndefOr[GenericSignedAttestation] = js.undefined
   
   /** A PGP signed attestation. */
-  var pgpSignedAttestation: js.UndefOr[PgpSignedAttestation] = js.native
+  var pgpSignedAttestation: js.UndefOr[PgpSignedAttestation] = js.undefined
 }
 object Attestation {
   

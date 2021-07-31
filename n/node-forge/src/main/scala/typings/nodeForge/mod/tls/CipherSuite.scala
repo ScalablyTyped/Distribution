@@ -3,15 +3,13 @@ package typings.nodeForge.mod.tls
 import typings.nodeForge.mod.Byte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CipherSuite extends StObject {
   
-  var id: js.Tuple2[Byte, Byte] = js.native
+  var id: js.Tuple2[Byte, Byte]
   
-  var name: String = js.native
+  var name: String
 }
 object CipherSuite {
   

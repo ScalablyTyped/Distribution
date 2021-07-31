@@ -3,10 +3,13 @@ package typings.nodeAppleReceiptVerify
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-apple-receipt-verify", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ERROR_CODES extends StObject
@@ -15,92 +18,107 @@ object mod {
   object ERROR_CODES extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ERROR_CODES with Double] = js.native
+    def apply(value: Double): js.UndefOr[ERROR_CODES & Double] = js.native
     
     /** The receipt could not be authenticated. */
     @js.native
-    sealed trait COULD_NOT_AUTHENTICATE extends ERROR_CODES
-    /* 21003 */ val COULD_NOT_AUTHENTICATE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.COULD_NOT_AUTHENTICATE with Double = js.native
+    sealed trait COULD_NOT_AUTHENTICATE
+      extends StObject
+         with ERROR_CODES
+    /* 21003 */ val COULD_NOT_AUTHENTICATE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.COULD_NOT_AUTHENTICATE & Double = js.native
     
     /** This receipt could not be authorized. Treat this the same as if a purchase was never made. */
     @js.native
-    sealed trait COULD_NOT_AUTHORIZE extends ERROR_CODES
-    /* 21010 */ val COULD_NOT_AUTHORIZE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.COULD_NOT_AUTHORIZE with Double = js.native
+    sealed trait COULD_NOT_AUTHORIZE
+      extends StObject
+         with ERROR_CODES
+    /* 21010 */ val COULD_NOT_AUTHORIZE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.COULD_NOT_AUTHORIZE & Double = js.native
     
     /**
       * This receipt is valid but the subscription has expired. When this status code is returned to your server, the receipt data is also decoded and returned as part of the response.
       * Only returned for iOS 6 style transaction receipts for auto-renewable subscriptions.
       */
     @js.native
-    sealed trait EXPIRED_SUBSCRIPTION extends ERROR_CODES
-    /* 21006 */ val EXPIRED_SUBSCRIPTION: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.EXPIRED_SUBSCRIPTION with Double = js.native
+    sealed trait EXPIRED_SUBSCRIPTION
+      extends StObject
+         with ERROR_CODES
+    /* 21006 */ val EXPIRED_SUBSCRIPTION: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.EXPIRED_SUBSCRIPTION & Double = js.native
     
     /** The App Store could not read the JSON object you provided. */
     @js.native
-    sealed trait INVALID_JSON extends ERROR_CODES
-    /* 21000 */ val INVALID_JSON: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_JSON with Double = js.native
+    sealed trait INVALID_JSON
+      extends StObject
+         with ERROR_CODES
+    /* 21000 */ val INVALID_JSON: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_JSON & Double = js.native
     
     /** The data in the receipt-data property was malformed or missing. */
     @js.native
-    sealed trait INVALID_RECEIPT_DATA extends ERROR_CODES
-    /* 21002 */ val INVALID_RECEIPT_DATA: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_RECEIPT_DATA with Double = js.native
+    sealed trait INVALID_RECEIPT_DATA
+      extends StObject
+         with ERROR_CODES
+    /* 21002 */ val INVALID_RECEIPT_DATA: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_RECEIPT_DATA & Double = js.native
     
     /** The shared secret you provided does not match the shared secret on file for your account. */
     @js.native
-    sealed trait INVALID_SECRET extends ERROR_CODES
-    /* 21004 */ val INVALID_SECRET: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_SECRET with Double = js.native
+    sealed trait INVALID_SECRET
+      extends StObject
+         with ERROR_CODES
+    /* 21004 */ val INVALID_SECRET: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.INVALID_SECRET & Double = js.native
     
     /** This receipt is from the production environment, but it was sent to the test environment for verification. Send it to the production environment instead. */
     @js.native
-    sealed trait PROD_RECEIPT extends ERROR_CODES
-    /* 21008 */ val PROD_RECEIPT: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.PROD_RECEIPT with Double = js.native
+    sealed trait PROD_RECEIPT
+      extends StObject
+         with ERROR_CODES
+    /* 21008 */ val PROD_RECEIPT: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.PROD_RECEIPT & Double = js.native
     
     /** The receipt validated successfully. */
     @js.native
-    sealed trait SUCCESS extends ERROR_CODES
-    /* 0 */ val SUCCESS: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.SUCCESS with Double = js.native
+    sealed trait SUCCESS
+      extends StObject
+         with ERROR_CODES
+    /* 0 */ val SUCCESS: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.SUCCESS & Double = js.native
     
     /** This receipt is from the test environment, but it was sent to the production environment for verification. Send it to the test environment instead. */
     @js.native
-    sealed trait TEST_RECEIPT extends ERROR_CODES
-    /* 21007 */ val TEST_RECEIPT: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.TEST_RECEIPT with Double = js.native
+    sealed trait TEST_RECEIPT
+      extends StObject
+         with ERROR_CODES
+    /* 21007 */ val TEST_RECEIPT: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.TEST_RECEIPT & Double = js.native
     
     /** The receipt server is not currently available. */
     @js.native
-    sealed trait UNAVAILABLE extends ERROR_CODES
-    /* 21005 */ val UNAVAILABLE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.UNAVAILABLE with Double = js.native
+    sealed trait UNAVAILABLE
+      extends StObject
+         with ERROR_CODES
+    /* 21005 */ val UNAVAILABLE: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.UNAVAILABLE & Double = js.native
     
     /** The receipt is valid, but purchased nothing. */
     @js.native
-    sealed trait VALID_BUT_EMPTY extends ERROR_CODES
-    /* 2 */ val VALID_BUT_EMPTY: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.VALID_BUT_EMPTY with Double = js.native
+    sealed trait VALID_BUT_EMPTY
+      extends StObject
+         with ERROR_CODES
+    /* 2 */ val VALID_BUT_EMPTY: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.VALID_BUT_EMPTY & Double = js.native
   }
   
-  @JSImport("node-apple-receipt-verify", "EmptyError")
-  @js.native
-  def EmptyError(): Unit = js.native
+  @scala.inline
+  def EmptyError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EmptyError")().asInstanceOf[Unit]
   
-  @JSImport("node-apple-receipt-verify", "ServiceUnavailableError")
-  @js.native
-  def ServiceUnavailableError(): Unit = js.native
+  @scala.inline
+  def ServiceUnavailableError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ServiceUnavailableError")().asInstanceOf[Unit]
   
-  @JSImport("node-apple-receipt-verify", "config")
-  @js.native
-  def config(options: ConfigOptions): ConfigOptions = js.native
+  @scala.inline
+  def config(options: ConfigOptions): ConfigOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[ConfigOptions]
   
-  @JSImport("node-apple-receipt-verify", "extract")
-  @js.native
-  def extract(options: js.Object): js.Promise[js.Array[js.Object]] = js.native
+  @scala.inline
+  def extract(options: js.Object): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @JSImport("node-apple-receipt-verify", "resetConfig")
-  @js.native
-  def resetConfig(): Unit = js.native
+  @scala.inline
+  def resetConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfig")().asInstanceOf[Unit]
   
-  @JSImport("node-apple-receipt-verify", "validate")
-  @js.native
-  def validate(options: ValidateOptions): js.Promise[js.Array[PurchasedProducts]] = js.native
-  @JSImport("node-apple-receipt-verify", "validate")
-  @js.native
+  @scala.inline
+  def validate(options: ValidateOptions): js.Promise[js.Array[PurchasedProducts]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PurchasedProducts]]]
+  @scala.inline
   def validate(
     options: ValidateOptions,
     callback: js.Function2[
@@ -108,24 +126,23 @@ object mod {
       /* purchasedProducts */ js.Array[PurchasedProducts], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var environment: js.UndefOr[js.Array[String]] = js.native
+    var environment: js.UndefOr[js.Array[String]] = js.undefined
     
-    var excludeOldTransactions: js.UndefOr[Boolean] = js.native
+    var excludeOldTransactions: js.UndefOr[Boolean] = js.undefined
     
-    var extended: js.UndefOr[Boolean] = js.native
+    var extended: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreExpired: js.UndefOr[Boolean] = js.native
+    var ignoreExpired: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreExpiredError: js.UndefOr[Boolean] = js.native
+    var ignoreExpiredError: js.UndefOr[Boolean] = js.undefined
     
-    var secret: String = js.native
+    var secret: String
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigOptions {
     
@@ -182,37 +199,36 @@ object mod {
     }
   }
   
-  @js.native
   trait PurchasedProducts extends StObject {
     
     // only if extended = true
-    var applicationVersion: js.UndefOr[String] = js.native
+    var applicationVersion: js.UndefOr[String] = js.undefined
     
-    var bundleId: String = js.native
+    var bundleId: String
     
     // only for subscriptions and if extended = true; since v1.5.1
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
     // only for subscriptions and if extended = true
-    var isInIntroOfferPeriod: js.UndefOr[Boolean] = js.native
+    var isInIntroOfferPeriod: js.UndefOr[Boolean] = js.undefined
     
-    var isTrialPeriod: js.UndefOr[Boolean] = js.native
-    
-    // only if extended = true
-    var originalApplicationVersion: js.UndefOr[String] = js.native
+    var isTrialPeriod: js.UndefOr[Boolean] = js.undefined
     
     // only if extended = true
-    var originalPurchaseDate: js.UndefOr[Double] = js.native
+    var originalApplicationVersion: js.UndefOr[String] = js.undefined
     
-    var productId: String = js.native
+    // only if extended = true
+    var originalPurchaseDate: js.UndefOr[Double] = js.undefined
     
-    var purchaseDate: Double = js.native
+    var productId: String
     
-    var quantity: Double = js.native
+    var purchaseDate: Double
     
-    var transactionId: String = js.native
+    var quantity: Double
+    
+    var transactionId: String
   }
   object PurchasedProducts {
     
@@ -284,12 +300,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidateOptions extends StObject {
     
-    var device: js.UndefOr[String] = js.native
+    var device: js.UndefOr[String] = js.undefined
     
-    var receipt: String = js.native
+    var receipt: String
   }
   object ValidateOptions {
     
@@ -313,12 +328,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait ValidationError extends Error {
+  trait ValidationError
+    extends StObject
+       with Error {
     
-    var appleStatus: Double = js.native
+    var appleStatus: Double
     
-    var isRetryable: Boolean = js.native
+    var isRetryable: Boolean
   }
   object ValidationError {
     

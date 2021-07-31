@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasTextMetrics extends StObject {
   
   @JSName("MSHTML.CanvasTextMetrics_typekey")
-  var MSHTMLDotCanvasTextMetrics_typekey: CanvasTextMetrics = js.native
+  var MSHTMLDotCanvasTextMetrics_typekey: CanvasTextMetrics
   
-  val width: Double = js.native
+  val width: Double
 }
 object CanvasTextMetrics {
   

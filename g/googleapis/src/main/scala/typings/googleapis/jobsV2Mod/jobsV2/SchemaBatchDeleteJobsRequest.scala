@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Batch delete jobs request.
   */
-@js.native
 trait SchemaBatchDeleteJobsRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaBatchDeleteJobsRequest extends StObject {
     * (Required) * `requisitionId` (Required)  Sample Query: companyName =
     * &quot;companies/123&quot; AND requisitionId = &quot;req-1&quot;
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
 }
 object SchemaBatchDeleteJobsRequest {
   

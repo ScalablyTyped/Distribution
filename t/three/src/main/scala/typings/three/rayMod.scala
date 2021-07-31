@@ -7,7 +7,6 @@ import typings.three.sphereMod.Sphere
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rayMod {
@@ -16,7 +15,7 @@ object rayMod {
   @js.native
   class Ray () extends StObject {
     def this(origin: Vector3) = this()
-    def this(origin: js.UndefOr[scala.Nothing], direction: Vector3) = this()
+    def this(origin: Unit, direction: Vector3) = this()
     def this(origin: Vector3, direction: Vector3) = this()
     
     def applyMatrix4(matrix4: Matrix4): Ray = js.native
@@ -35,12 +34,7 @@ object rayMod {
     def distanceSqToPoint(point: Vector3): Double = js.native
     
     def distanceSqToSegment(v0: Vector3, v1: Vector3): Double = js.native
-    def distanceSqToSegment(
-      v0: Vector3,
-      v1: Vector3,
-      optionalPointOnRay: js.UndefOr[scala.Nothing],
-      optionalPointOnSegment: Vector3
-    ): Double = js.native
+    def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Unit, optionalPointOnSegment: Vector3): Double = js.native
     def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Vector3): Double = js.native
     def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Vector3, optionalPointOnSegment: Vector3): Double = js.native
     

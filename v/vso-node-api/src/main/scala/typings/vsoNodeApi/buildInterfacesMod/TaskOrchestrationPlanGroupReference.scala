@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOrchestrationPlanGroupReference extends StObject {
   
   /**
     * The name of the plan group.
     */
-  var planGroup: String = js.native
+  var planGroup: String
   
   /**
     * The project ID.
     */
-  var projectId: String = js.native
+  var projectId: String
 }
 object TaskOrchestrationPlanGroupReference {
   

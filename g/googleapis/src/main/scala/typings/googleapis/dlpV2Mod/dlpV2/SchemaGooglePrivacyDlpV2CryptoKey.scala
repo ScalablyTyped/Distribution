@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * appropriate IAM policy on the KMS CryptoKey (KEK) to ensure an attacker
   * cannot unwrap the data crypto key.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CryptoKey extends StObject {
   
-  var kmsWrapped: js.UndefOr[SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey] = js.native
+  var kmsWrapped: js.UndefOr[SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey] = js.undefined
   
-  var transient: js.UndefOr[SchemaGooglePrivacyDlpV2TransientCryptoKey] = js.native
+  var transient: js.UndefOr[SchemaGooglePrivacyDlpV2TransientCryptoKey] = js.undefined
   
-  var unwrapped: js.UndefOr[SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] = js.native
+  var unwrapped: js.UndefOr[SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CryptoKey {
   

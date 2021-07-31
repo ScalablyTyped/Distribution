@@ -2,7 +2,6 @@ package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectableOptionTypesMod {
@@ -14,78 +13,83 @@ object selectableOptionTypesMod {
   object SelectableOptionMenuItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType & Double] = js.native
     
     @js.native
-    sealed trait Divider extends SelectableOptionMenuItemType
-    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider with Double = js.native
+    sealed trait Divider
+      extends StObject
+         with SelectableOptionMenuItemType
+    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
     
     @js.native
-    sealed trait Header extends SelectableOptionMenuItemType
-    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header with Double = js.native
+    sealed trait Header
+      extends StObject
+         with SelectableOptionMenuItemType
+    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header & Double = js.native
     
     @js.native
-    sealed trait Normal extends SelectableOptionMenuItemType
-    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal with Double = js.native
+    sealed trait Normal
+      extends StObject
+         with SelectableOptionMenuItemType
+    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
-  @js.native
   trait ISelectableOption extends StObject {
     
     /**
       * The aria label for the dropdown option. If not present, the `text` will be used.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Data available to custom onRender functions.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Whether the option is disabled
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether the option is hidden or not.
       * @defaultvalue false
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ID attribute associated with this option
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Index for this option
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Text to render for this option
       */
-    var itemType: js.UndefOr[SelectableOptionMenuItemType] = js.native
+    var itemType: js.UndefOr[SelectableOptionMenuItemType] = js.undefined
     
     /**
       * Arbitrary string associated with this option.
       */
-    var key: String | Double = js.native
+    var key: String | Double
     
     /** If option is selected. */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text to render for this option
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * Title attribute (built in tooltip) for a given option.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ISelectableOption {
     

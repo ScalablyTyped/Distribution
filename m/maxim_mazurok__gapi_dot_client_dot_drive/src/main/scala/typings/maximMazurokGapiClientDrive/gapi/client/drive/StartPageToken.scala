@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPageToken extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#startPageToken". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The starting page token for listing changes. */
-  var startPageToken: js.UndefOr[String] = js.native
+  var startPageToken: js.UndefOr[String] = js.undefined
 }
 object StartPageToken {
   

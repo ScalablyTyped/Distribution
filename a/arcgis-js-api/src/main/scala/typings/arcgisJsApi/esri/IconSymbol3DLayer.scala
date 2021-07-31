@@ -13,12 +13,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IconSymbol3DLayer
-  extends Symbol3DLayer
+  extends StObject
+     with Symbol3DLayer
      with typings.arcgisJsApi.esri.symbols.Symbol3DLayer
      with symbolsSymbol3DLayer {
   

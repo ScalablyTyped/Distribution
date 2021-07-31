@@ -2,19 +2,19 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeometryEditorChildModel extends IGeometryEditorModel {
+trait IGeometryEditorChildModel
+  extends StObject
+     with IGeometryEditorModel {
   
-  var editor: IGeometryEditor = js.native
+  var editor: IGeometryEditor
   
-  var geometry: IBaseGeometry = js.native
+  var geometry: IBaseGeometry
   
-  def getParent(): IGeometryEditorModel = js.native
+  def getParent(): IGeometryEditorModel
   
-  def setPixels(pixels: js.Array[Double]): Unit = js.native
+  def setPixels(pixels: js.Array[Double]): Unit
 }
 object IGeometryEditorChildModel {
   

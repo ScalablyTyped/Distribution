@@ -12,7 +12,7 @@ Less code, more flow. Let's dance!
 | Keywords           | swagger, plumbing, pipes |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 665691 |
+| # downloads        | 639350 |
 | # stars            | 0 |
 
 ## Links

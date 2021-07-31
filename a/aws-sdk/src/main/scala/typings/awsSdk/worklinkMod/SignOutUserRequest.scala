@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignOutUserRequest extends StObject {
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
   
   /**
     * The name of the user.
     */
-  var Username: typings.awsSdk.worklinkMod.Username = js.native
+  var Username: typings.awsSdk.worklinkMod.Username
 }
 object SignOutUserRequest {
   

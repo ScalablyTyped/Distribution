@@ -4,16 +4,14 @@ import typings.next.libUtilsMod.DocumentProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderDocument extends StObject {
   
   def renderDocument(
     Document: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object,
     props: DocumentProps
-  ): ReactElement = js.native
+  ): ReactElement
 }
 object RenderDocument {
   

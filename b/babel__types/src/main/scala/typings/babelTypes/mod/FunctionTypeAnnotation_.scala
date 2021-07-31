@@ -3,33 +3,32 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.FunctionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait FunctionTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait FunctionTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
-  var params: js.Array[FunctionTypeParam_] = js.native
+  var params: js.Array[FunctionTypeParam_]
   
-  var rest: FunctionTypeParam_ | Null = js.native
+  var rest: FunctionTypeParam_ | Null
   
-  var returnType: FlowType = js.native
+  var returnType: FlowType
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_FunctionTypeAnnotation_ : FunctionTypeAnnotation = js.native
+  var type_FunctionTypeAnnotation_ : FunctionTypeAnnotation
 }
 object FunctionTypeAnnotation_ {
   
   @scala.inline
-  def apply(params: js.Array[FunctionTypeParam_], returnType: FlowType, `type`: FunctionTypeAnnotation): FunctionTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(params: js.Array[FunctionTypeParam_], returnType: FlowType): FunctionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, rest = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("FunctionTypeAnnotation")
     __obj.asInstanceOf[FunctionTypeAnnotation_]
   }
   

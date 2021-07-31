@@ -3,16 +3,14 @@ package typings.aframe.anon
 import typings.aframe.mod.Schema_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<aframe.aframe.Shader> */
-@js.native
 trait PartialShader extends StObject {
   
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
-  var fragmentShader: js.UndefOr[String] = js.native
+  var fragmentShader: js.UndefOr[String] = js.undefined
   
   var init: js.UndefOr[
     js.Function1[
@@ -21,28 +19,28 @@ trait PartialShader extends StObject {
       ], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var material: js.UndefOr[typings.three.mod.Material] = js.native
+  var material: js.UndefOr[typings.three.mod.Material] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   var schema: js.UndefOr[
     Schema_[
       /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tick: js.UndefOr[js.Function2[/* time */ Double, /* timeDelta */ Double, Unit]] = js.native
+  var tick: js.UndefOr[js.Function2[/* time */ Double, /* timeDelta */ Double, Unit]] = js.undefined
   
   var update: js.UndefOr[
     js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ /* oldData */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var vertexShader: js.UndefOr[String] = js.native
+  var vertexShader: js.UndefOr[String] = js.undefined
 }
 object PartialShader {
   

@@ -10,10 +10,13 @@ import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.transformMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataBinMod {
+  
+  @JSImport("vega-lite/build/src/compile/data/bin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/data/bin", "BinNode")
   @js.native
@@ -33,45 +36,44 @@ object dataBinMod {
   /* static members */
   object BinNode {
     
-    @JSImport("vega-lite/build/src/compile/data/bin", "BinNode.makeFromEncoding")
+    @JSImport("vega-lite/build/src/compile/data/bin", "BinNode")
     @js.native
-    def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): BinNode = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def makeFromEncoding(parent: DataFlowNode, model: ModelWithField): BinNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[BinNode]
     
     /**
       * Creates a bin node from BinTransform.
       * The optional parameter should provide
       */
-    @JSImport("vega-lite/build/src/compile/data/bin", "BinNode.makeFromTransform")
-    @js.native
-    def makeFromTransform(parent: DataFlowNode, t: BinTransform, model: Model): BinNode = js.native
+    @scala.inline
+    def makeFromTransform(parent: DataFlowNode, t: BinTransform, model: Model): BinNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[BinNode]
   }
   
-  @JSImport("vega-lite/build/src/compile/data/bin", "getBinSignalName")
-  @js.native
-  def getBinSignalName(model: Model, field: String, bin: Boolean): String = js.native
-  @JSImport("vega-lite/build/src/compile/data/bin", "getBinSignalName")
-  @js.native
-  def getBinSignalName(model: Model, field: String, bin: BinParams): String = js.native
+  @scala.inline
+  def getBinSignalName(model: Model, field: String, bin: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBinSignalName")(model.asInstanceOf[js.Any], field.asInstanceOf[js.Any], bin.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getBinSignalName(model: Model, field: String, bin: BinParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBinSignalName")(model.asInstanceOf[js.Any], field.asInstanceOf[js.Any], bin.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait BinComponent extends StObject {
     
     /** Pairs of strings of the names of start and end signals */
-    var as: js.Array[js.Tuple2[String, String]] = js.native
+    var as: js.Array[js.Tuple2[String, String]]
     
-    var bin: BinParams = js.native
+    var bin: BinParams
     
-    var extentSignal: js.UndefOr[String] = js.native
+    var extentSignal: js.UndefOr[String] = js.undefined
     
-    var field: FieldName = js.native
+    var field: FieldName
     
-    var formula: js.UndefOr[String] = js.native
+    var formula: js.UndefOr[String] = js.undefined
     
-    var formulaAs: js.UndefOr[String] = js.native
+    var formulaAs: js.UndefOr[String] = js.undefined
     
-    var signal: js.UndefOr[String] = js.native
+    var signal: js.UndefOr[String] = js.undefined
     
-    var span: js.UndefOr[String] = js.native
+    var span: js.UndefOr[String] = js.undefined
   }
   object BinComponent {
     

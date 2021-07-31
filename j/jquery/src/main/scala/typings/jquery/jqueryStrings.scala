@@ -7,13 +7,14 @@ import typings.jquery.JQuery._Duration
 import typings.jquery.JQuery._Falsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryStrings {
   
   @js.native
-  sealed trait _empty extends _Falsy
+  sealed trait _empty
+    extends StObject
+       with _Falsy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -29,7 +30,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait abort
-    extends ErrorTextStatus
+    extends StObject
+       with ErrorTextStatus
        with TextStatus
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
@@ -316,13 +318,16 @@ object jqueryStrings {
   
   @js.native
   sealed trait error
-    extends ErrorTextStatus
+    extends StObject
+       with ErrorTextStatus
        with TextStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fast extends _Duration
+  sealed trait fast
+    extends StObject
+       with _Duration
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
   
@@ -768,7 +773,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait nocontent
-    extends SuccessTextStatus
+    extends StObject
+       with SuccessTextStatus
        with TextStatus
   @scala.inline
   def nocontent: nocontent = "nocontent".asInstanceOf[nocontent]
@@ -780,7 +786,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait notmodified
-    extends SuccessTextStatus
+    extends StObject
+       with SuccessTextStatus
        with TextStatus
   @scala.inline
   def notmodified: notmodified = "notmodified".asInstanceOf[notmodified]
@@ -832,7 +839,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait parsererror
-    extends ErrorTextStatus
+    extends StObject
+       with ErrorTextStatus
        with TextStatus
   @scala.inline
   def parsererror: parsererror = "parsererror".asInstanceOf[parsererror]
@@ -968,7 +976,9 @@ object jqueryStrings {
   def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
-  sealed trait slow extends _Duration
+  sealed trait slow
+    extends StObject
+       with _Duration
   @scala.inline
   def slow: slow = "slow".asInstanceOf[slow]
   
@@ -1019,7 +1029,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait success
-    extends SuccessTextStatus
+    extends StObject
+       with SuccessTextStatus
        with TextStatus
   @scala.inline
   def success: success = "success".asInstanceOf[success]
@@ -1111,7 +1122,8 @@ object jqueryStrings {
   
   @js.native
   sealed trait timeout
-    extends ErrorTextStatus
+    extends StObject
+       with ErrorTextStatus
        with TextStatus
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]

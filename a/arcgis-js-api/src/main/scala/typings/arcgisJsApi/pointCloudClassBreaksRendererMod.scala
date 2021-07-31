@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PointCloudClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudClassBreaksRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointCloudClassBreaksRendererMod extends Shortcut {
   
   @JSImport("esri/renderers/PointCloudClassBreaksRenderer", JSImport.Namespace)
   @js.native
-  val ^ : PointCloudClassBreaksRendererConstructor = js.native
+  val ^ : js.Object & PointCloudClassBreaksRendererConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudClassBreaksRenderer", JSImport.Namespace)
@@ -23,12 +22,22 @@ object pointCloudClassBreaksRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html)
     */
-  class Class () extends PointCloudClassBreaksRenderer {
+  class Class ()
+    extends StObject
+       with PointCloudClassBreaksRenderer {
     def this(properties: PointCloudClassBreaksRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = PointCloudClassBreaksRendererConstructor
+  type _To = js.Object & PointCloudClassBreaksRendererConstructor
   
   /* This means you don't have to write `^`, but can instead just say `pointCloudClassBreaksRendererMod.foo` */
-  override def _to: PointCloudClassBreaksRendererConstructor = ^
+  override def _to: js.Object & PointCloudClassBreaksRendererConstructor = ^
 }

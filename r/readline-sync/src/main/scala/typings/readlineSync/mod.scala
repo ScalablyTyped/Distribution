@@ -4,309 +4,241 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("readline-sync", "getRawInput")
+  @JSImport("readline-sync", JSImport.Namespace)
   @js.native
-  def getRawInput(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("readline-sync", "keyIn")
-  @js.native
-  def keyIn(): String = js.native
-  @JSImport("readline-sync", "keyIn")
-  @js.native
-  def keyIn(query: js.UndefOr[scala.Nothing], options: BasicOptions): String = js.native
-  @JSImport("readline-sync", "keyIn")
-  @js.native
-  def keyIn(query: js.Any): String = js.native
-  @JSImport("readline-sync", "keyIn")
-  @js.native
-  def keyIn(query: js.Any, options: BasicOptions): String = js.native
+  @scala.inline
+  def getRawInput(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawInput")().asInstanceOf[String]
   
-  @JSImport("readline-sync", "keyInPause")
-  @js.native
-  def keyInPause(): Unit = js.native
-  @JSImport("readline-sync", "keyInPause")
-  @js.native
-  def keyInPause(query: js.UndefOr[scala.Nothing], options: BasicOptions): Unit = js.native
-  @JSImport("readline-sync", "keyInPause")
-  @js.native
-  def keyInPause(query: js.Any): Unit = js.native
-  @JSImport("readline-sync", "keyInPause")
-  @js.native
-  def keyInPause(query: js.Any, options: BasicOptions): Unit = js.native
+  @scala.inline
+  def keyIn(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyIn")().asInstanceOf[String]
+  @scala.inline
+  def keyIn(query: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyIn")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def keyIn(query: js.Any, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyIn")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def keyIn(query: Unit, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyIn")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("readline-sync", "keyInSelect")
-  @js.native
-  def keyInSelect(items: js.Array[String]): Double = js.native
-  @JSImport("readline-sync", "keyInSelect")
-  @js.native
-  def keyInSelect(items: js.Array[String], query: js.UndefOr[scala.Nothing], options: BasicOptions): Double = js.native
-  @JSImport("readline-sync", "keyInSelect")
-  @js.native
-  def keyInSelect(items: js.Array[String], query: js.Any): Double = js.native
-  @JSImport("readline-sync", "keyInSelect")
-  @js.native
-  def keyInSelect(items: js.Array[String], query: js.Any, options: BasicOptions): Double = js.native
+  @scala.inline
+  def keyInPause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInPause")().asInstanceOf[Unit]
+  @scala.inline
+  def keyInPause(query: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInPause")(query.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def keyInPause(query: js.Any, options: BasicOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInPause")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keyInPause(query: Unit, options: BasicOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInPause")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "keyInYN")
-  @js.native
-  def keyInYN(): Boolean | String = js.native
-  @JSImport("readline-sync", "keyInYN")
-  @js.native
-  def keyInYN(query: js.UndefOr[scala.Nothing], options: BasicOptions): Boolean | String = js.native
-  @JSImport("readline-sync", "keyInYN")
-  @js.native
-  def keyInYN(query: js.Any): Boolean | String = js.native
-  @JSImport("readline-sync", "keyInYN")
-  @js.native
-  def keyInYN(query: js.Any, options: BasicOptions): Boolean | String = js.native
+  @scala.inline
+  def keyInSelect(items: js.Array[String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInSelect")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def keyInSelect(items: js.Array[String], query: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInSelect")(items.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def keyInSelect(items: js.Array[String], query: js.Any, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInSelect")(items.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def keyInSelect(items: js.Array[String], query: Unit, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInSelect")(items.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("readline-sync", "keyInYNStrict")
-  @js.native
-  def keyInYNStrict(): Boolean = js.native
-  @JSImport("readline-sync", "keyInYNStrict")
-  @js.native
-  def keyInYNStrict(query: js.UndefOr[scala.Nothing], options: BasicOptions): Boolean = js.native
-  @JSImport("readline-sync", "keyInYNStrict")
-  @js.native
-  def keyInYNStrict(query: js.Any): Boolean = js.native
-  @JSImport("readline-sync", "keyInYNStrict")
-  @js.native
-  def keyInYNStrict(query: js.Any, options: BasicOptions): Boolean = js.native
+  @scala.inline
+  def keyInYN(): Boolean | String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInYN")().asInstanceOf[Boolean | String]
+  @scala.inline
+  def keyInYN(query: js.Any): Boolean | String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInYN")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean | String]
+  @scala.inline
+  def keyInYN(query: js.Any, options: BasicOptions): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInYN")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
+  @scala.inline
+  def keyInYN(query: Unit, options: BasicOptions): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInYN")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
   
-  @JSImport("readline-sync", "prompt")
-  @js.native
-  def prompt(): String = js.native
-  @JSImport("readline-sync", "prompt")
-  @js.native
-  def prompt(options: BasicOptions): String = js.native
+  @scala.inline
+  def keyInYNStrict(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInYNStrict")().asInstanceOf[Boolean]
+  @scala.inline
+  def keyInYNStrict(query: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyInYNStrict")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def keyInYNStrict(query: js.Any, options: BasicOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInYNStrict")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def keyInYNStrict(query: Unit, options: BasicOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("keyInYNStrict")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("readline-sync", "promptCL")
-  @js.native
-  def promptCL(): js.Array[String] = js.native
-  @JSImport("readline-sync", "promptCL")
-  @js.native
-  def promptCL(commandHandler: js.UndefOr[scala.Nothing], options: BasicOptions): js.Array[String] = js.native
-  @JSImport("readline-sync", "promptCL")
-  @js.native
-  def promptCL(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Unit]): js.Array[String] = js.native
-  @JSImport("readline-sync", "promptCL")
-  @js.native
+  @scala.inline
+  def prompt(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")().asInstanceOf[String]
+  @scala.inline
+  def prompt(options: BasicOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def promptCL(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def promptCL(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Unit]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")(commandHandler.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
   def promptCL(
     commandHandler: js.Function2[/* command */ String, /* repeated */ String, Unit],
     options: BasicOptions
-  ): js.Array[String] = js.native
-  @JSImport("readline-sync", "promptCL")
-  @js.native
-  def promptCL(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Unit]]): js.Array[String] = js.native
-  @JSImport("readline-sync", "promptCL")
-  @js.native
-  def promptCL(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Unit]], options: BasicOptions): js.Array[String] = js.native
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def promptCL(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Unit]]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")(commandHandler.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def promptCL(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Unit]], options: BasicOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def promptCL(commandHandler: Unit, options: BasicOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCL")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
-  def promptCLLoop(): Unit = js.native
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
-  def promptCLLoop(commandHandler: js.UndefOr[scala.Nothing], options: BasicOptions): Unit = js.native
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
-  def promptCLLoop(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Boolean | Unit]): Unit = js.native
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
+  @scala.inline
+  def promptCLLoop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")().asInstanceOf[Unit]
+  @scala.inline
+  def promptCLLoop(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Boolean | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")(commandHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def promptCLLoop(
     commandHandler: js.Function2[/* command */ String, /* repeated */ String, Boolean | Unit],
     options: BasicOptions
-  ): Unit = js.native
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
-  def promptCLLoop(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Boolean | Unit]]): Unit = js.native
-  @JSImport("readline-sync", "promptCLLoop")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def promptCLLoop(commandHandler: StringDictionary[js.Function1[/* repeated */ String, Boolean | Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")(commandHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def promptCLLoop(
     commandHandler: StringDictionary[js.Function1[/* repeated */ String, Boolean | Unit]],
     options: BasicOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def promptCLLoop(commandHandler: Unit, options: BasicOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promptCLLoop")(commandHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "promptLoop")
-  @js.native
-  def promptLoop(inputHandler: js.Function1[/* value */ String, Boolean]): Unit = js.native
-  @JSImport("readline-sync", "promptLoop")
-  @js.native
-  def promptLoop(inputHandler: js.Function1[/* value */ String, Boolean], options: BasicOptions): Unit = js.native
+  @scala.inline
+  def promptLoop(inputHandler: js.Function1[/* value */ String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptLoop")(inputHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def promptLoop(inputHandler: js.Function1[/* value */ String, Boolean], options: BasicOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promptLoop")(inputHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "promptSimShell")
-  @js.native
-  def promptSimShell(): String = js.native
-  @JSImport("readline-sync", "promptSimShell")
-  @js.native
-  def promptSimShell(options: BasicOptions): String = js.native
+  @scala.inline
+  def promptSimShell(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("promptSimShell")().asInstanceOf[String]
+  @scala.inline
+  def promptSimShell(options: BasicOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("promptSimShell")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("readline-sync", "question")
-  @js.native
-  def question(): String = js.native
-  @JSImport("readline-sync", "question")
-  @js.native
-  def question(query: js.UndefOr[scala.Nothing], options: BasicOptions): String = js.native
-  @JSImport("readline-sync", "question")
-  @js.native
-  def question(query: js.Any): String = js.native
-  @JSImport("readline-sync", "question")
-  @js.native
-  def question(query: js.Any, options: BasicOptions): String = js.native
+  @scala.inline
+  def question(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("question")().asInstanceOf[String]
+  @scala.inline
+  def question(query: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("question")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def question(query: js.Any, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("question")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def question(query: Unit, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("question")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("readline-sync", "questionEMail")
-  @js.native
-  def questionEMail(): String = js.native
-  @JSImport("readline-sync", "questionEMail")
-  @js.native
-  def questionEMail(query: js.UndefOr[scala.Nothing], options: BasicOptions): String = js.native
-  @JSImport("readline-sync", "questionEMail")
-  @js.native
-  def questionEMail(query: js.Any): String = js.native
-  @JSImport("readline-sync", "questionEMail")
-  @js.native
-  def questionEMail(query: js.Any, options: BasicOptions): String = js.native
+  @scala.inline
+  def questionEMail(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionEMail")().asInstanceOf[String]
+  @scala.inline
+  def questionEMail(query: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionEMail")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def questionEMail(query: js.Any, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionEMail")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def questionEMail(query: Unit, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionEMail")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("readline-sync", "questionFloat")
-  @js.native
-  def questionFloat(): Double = js.native
-  @JSImport("readline-sync", "questionFloat")
-  @js.native
-  def questionFloat(query: js.UndefOr[scala.Nothing], options: BasicOptions): Double = js.native
-  @JSImport("readline-sync", "questionFloat")
-  @js.native
-  def questionFloat(query: js.Any): Double = js.native
-  @JSImport("readline-sync", "questionFloat")
-  @js.native
-  def questionFloat(query: js.Any, options: BasicOptions): Double = js.native
+  @scala.inline
+  def questionFloat(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("questionFloat")().asInstanceOf[Double]
+  @scala.inline
+  def questionFloat(query: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("questionFloat")(query.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def questionFloat(query: js.Any, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("questionFloat")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def questionFloat(query: Unit, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("questionFloat")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("readline-sync", "questionInt")
-  @js.native
-  def questionInt(): Double = js.native
-  @JSImport("readline-sync", "questionInt")
-  @js.native
-  def questionInt(query: js.UndefOr[scala.Nothing], options: BasicOptions): Double = js.native
-  @JSImport("readline-sync", "questionInt")
-  @js.native
-  def questionInt(query: js.Any): Double = js.native
-  @JSImport("readline-sync", "questionInt")
-  @js.native
-  def questionInt(query: js.Any, options: BasicOptions): Double = js.native
+  @scala.inline
+  def questionInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("questionInt")().asInstanceOf[Double]
+  @scala.inline
+  def questionInt(query: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("questionInt")(query.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def questionInt(query: js.Any, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("questionInt")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def questionInt(query: Unit, options: BasicOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("questionInt")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("readline-sync", "questionNewPassword")
-  @js.native
-  def questionNewPassword(): String = js.native
-  @JSImport("readline-sync", "questionNewPassword")
-  @js.native
-  def questionNewPassword(query: js.UndefOr[scala.Nothing], options: BasicOptions): String = js.native
-  @JSImport("readline-sync", "questionNewPassword")
-  @js.native
-  def questionNewPassword(query: js.Any): String = js.native
-  @JSImport("readline-sync", "questionNewPassword")
-  @js.native
-  def questionNewPassword(query: js.Any, options: BasicOptions): String = js.native
+  @scala.inline
+  def questionNewPassword(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionNewPassword")().asInstanceOf[String]
+  @scala.inline
+  def questionNewPassword(query: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionNewPassword")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def questionNewPassword(query: js.Any, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionNewPassword")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def questionNewPassword(query: Unit, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionNewPassword")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("readline-sync", "questionPath")
-  @js.native
-  def questionPath(): String = js.native
-  @JSImport("readline-sync", "questionPath")
-  @js.native
-  def questionPath(query: js.UndefOr[scala.Nothing], options: BasicOptions): String = js.native
-  @JSImport("readline-sync", "questionPath")
-  @js.native
-  def questionPath(query: js.Any): String = js.native
-  @JSImport("readline-sync", "questionPath")
-  @js.native
-  def questionPath(query: js.Any, options: BasicOptions): String = js.native
+  @scala.inline
+  def questionPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionPath")().asInstanceOf[String]
+  @scala.inline
+  def questionPath(query: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("questionPath")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def questionPath(query: js.Any, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionPath")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def questionPath(query: Unit, options: BasicOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("questionPath")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("readline-sync", "setBufferSize")
-  @js.native
-  def setBufferSize(value: Double): Unit = js.native
+  @scala.inline
+  def setBufferSize(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBufferSize")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "setDefaultOptions")
-  @js.native
-  def setDefaultOptions(): BasicOptions = js.native
-  @JSImport("readline-sync", "setDefaultOptions")
-  @js.native
-  def setDefaultOptions(options: BasicOptions): BasicOptions = js.native
+  @scala.inline
+  def setDefaultOptions(): BasicOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")().asInstanceOf[BasicOptions]
+  @scala.inline
+  def setDefaultOptions(options: BasicOptions): BasicOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[BasicOptions]
   
-  @JSImport("readline-sync", "setEncoding")
-  @js.native
-  def setEncoding(value: String): Unit = js.native
+  @scala.inline
+  def setEncoding(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "setMask")
-  @js.native
-  def setMask(value: String): Unit = js.native
+  @scala.inline
+  def setMask(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMask")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "setPrint")
-  @js.native
-  def setPrint(value: js.Function2[/* display */ String, /* encoding */ String, Unit]): Unit = js.native
+  @scala.inline
+  def setPrint(value: js.Function2[/* display */ String, /* encoding */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrint")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("readline-sync", "setPrompt")
-  @js.native
-  def setPrompt(value: js.Any): Unit = js.native
+  @scala.inline
+  def setPrompt(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrompt")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait BasicOptions extends StObject {
     
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
-    var cancel: js.UndefOr[js.Any] = js.native
+    var cancel: js.UndefOr[js.Any] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var cd: js.UndefOr[Boolean] = js.native
+    var cd: js.UndefOr[Boolean] = js.undefined
     
-    var charlist: js.UndefOr[String] = js.native
+    var charlist: js.UndefOr[String] = js.undefined
     
-    var confirmMessage: js.UndefOr[js.Any] = js.native
+    var confirmMessage: js.UndefOr[js.Any] = js.undefined
     
-    var create: js.UndefOr[Boolean] = js.native
+    var create: js.UndefOr[Boolean] = js.undefined
     
-    var defaultInput: js.UndefOr[String] = js.native
+    var defaultInput: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var exists: js.UndefOr[js.Any] = js.native
+    var exists: js.UndefOr[js.Any] = js.undefined
     
-    var falseValue: js.UndefOr[OptionType | js.Array[OptionType]] = js.native
+    var falseValue: js.UndefOr[OptionType | js.Array[OptionType]] = js.undefined
     
-    var guide: js.UndefOr[Boolean] = js.native
+    var guide: js.UndefOr[Boolean] = js.undefined
     
-    var hideEchoBack: js.UndefOr[Boolean] = js.native
+    var hideEchoBack: js.UndefOr[Boolean] = js.undefined
     
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
-    var isDirectory: js.UndefOr[Boolean] = js.native
+    var isDirectory: js.UndefOr[Boolean] = js.undefined
     
-    var isFile: js.UndefOr[Boolean] = js.native
+    var isFile: js.UndefOr[Boolean] = js.undefined
     
-    var keepWhitespace: js.UndefOr[Boolean] = js.native
+    var keepWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[OptionType | js.Array[OptionType]] = js.native
+    var limit: js.UndefOr[OptionType | js.Array[OptionType]] = js.undefined
     
-    var limitMessage: js.UndefOr[String] = js.native
+    var limitMessage: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[js.Any] = js.native
+    var max: js.UndefOr[js.Any] = js.undefined
     
-    var min: js.UndefOr[js.Any] = js.native
+    var min: js.UndefOr[js.Any] = js.undefined
     
-    var print: js.UndefOr[js.Function2[/* display */ String, /* encoding */ String, Unit]] = js.native
+    var print: js.UndefOr[js.Function2[/* display */ String, /* encoding */ String, Unit]] = js.undefined
     
-    var prompt: js.UndefOr[js.Any] = js.native
+    var prompt: js.UndefOr[js.Any] = js.undefined
     
-    var trueValue: js.UndefOr[OptionType | js.Array[OptionType]] = js.native
+    var trueValue: js.UndefOr[OptionType | js.Array[OptionType]] = js.undefined
     
-    var unmatchMessage: js.UndefOr[js.Any] = js.native
+    var unmatchMessage: js.UndefOr[js.Any] = js.undefined
     
-    var validate: js.UndefOr[js.Function1[/* path */ String, Boolean | String]] = js.native
+    var validate: js.UndefOr[js.Function1[/* path */ String, Boolean | String]] = js.undefined
   }
   object BasicOptions {
     

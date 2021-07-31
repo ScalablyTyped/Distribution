@@ -3,24 +3,22 @@ package typings.nano.mod
 import typings.nano.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://docs.couchdb.org/en/stable/api/server/common.html#api-server-root
-@js.native
 trait InfoResponse extends StObject {
   
-  var couchdb: String = js.native
+  var couchdb: String
   
-  var features: js.Array[String] = js.native
+  var features: js.Array[String]
   
-  var git_sha: String = js.native
+  var git_sha: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var vendor: Name = js.native
+  var vendor: Name
   
-  var version: String = js.native
+  var version: String
 }
 object InfoResponse {
   

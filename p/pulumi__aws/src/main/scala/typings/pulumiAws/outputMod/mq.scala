@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mq {
   
-  @js.native
   trait BrokerConfiguration extends StObject {
     
     /**
       * The Configuration ID.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Revision of the Configuration.
       */
-    var revision: Double = js.native
+    var revision: Double
   }
   object BrokerConfiguration {
     
@@ -39,18 +37,17 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerEncryptionOptions extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Key Management Service (KMS) Customer Master Key (CMK) to use for encryption at rest. Requires setting `useAwsOwnedKey` to `false`. To perform drift detection when AWS managed CMKs or customer managed CMKs are in use, this value must be configured.
       */
-    var kmsKeyId: String = js.native
+    var kmsKeyId: String
     
     /**
       * Boolean to enable an AWS owned Key Management Service (KMS) Customer Master Key (CMK) that is not in your account. Defaults to `true`. Setting to `false` without configuring `kmsKeyId` will create an AWS managed Customer Master Key (CMK) aliased to `aws/mq` in your account.
       */
-    var useAwsOwnedKey: js.UndefOr[Boolean] = js.native
+    var useAwsOwnedKey: js.UndefOr[Boolean] = js.undefined
   }
   object BrokerEncryptionOptions {
     
@@ -74,14 +71,13 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerInstance extends StObject {
     
-    var consoleUrl: String = js.native
+    var consoleUrl: String
     
-    var endpoints: js.Array[String] = js.native
+    var endpoints: js.Array[String]
     
-    var ipAddress: String = js.native
+    var ipAddress: String
   }
   object BrokerInstance {
     
@@ -108,18 +104,17 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerLogs extends StObject {
     
     /**
       * Enables audit logging. User management action made using JMX or the ActiveMQ Web Console is logged. Defaults to `false`.
       */
-    var audit: js.UndefOr[Boolean] = js.native
+    var audit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables general logging via CloudWatch. Defaults to `false`.
       */
-    var general: js.UndefOr[Boolean] = js.native
+    var general: js.UndefOr[Boolean] = js.undefined
   }
   object BrokerLogs {
     
@@ -146,23 +141,22 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerMaintenanceWindowStartTime extends StObject {
     
     /**
       * The day of the week. e.g. `MONDAY`, `TUESDAY`, or `WEDNESDAY`
       */
-    var dayOfWeek: String = js.native
+    var dayOfWeek: String
     
     /**
       * The time, in 24-hour format. e.g. `02:00`
       */
-    var timeOfDay: String = js.native
+    var timeOfDay: String
     
     /**
       * The time zone, UTC by default, in either the Country/City format, or the UTC offset format. e.g. `CET`
       */
-    var timeZone: String = js.native
+    var timeZone: String
   }
   object BrokerMaintenanceWindowStartTime {
     
@@ -186,28 +180,27 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerUser extends StObject {
     
     /**
       * Whether to enable access to the [ActiveMQ Web Console](http://activemq.apache.org/web-console.html) for the user.
       */
-    var consoleAccess: js.UndefOr[Boolean] = js.native
+    var consoleAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of groups (20 maximum) to which the ActiveMQ user belongs.
       */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The password of the user. It must be 12 to 250 characters long, at least 4 unique characters, and must not contain commas.
       */
-    var password: String = js.native
+    var password: String
     
     /**
       * The username of the user.
       */
-    var username: String = js.native
+    var username: String
   }
   object BrokerUser {
     
@@ -243,12 +236,11 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerConfiguration extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var revision: Double = js.native
+    var revision: Double
   }
   object GetBrokerConfiguration {
     
@@ -269,12 +261,11 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerEncryptionOption extends StObject {
     
-    var kmsKeyId: String = js.native
+    var kmsKeyId: String
     
-    var useAwsOwnedKey: Boolean = js.native
+    var useAwsOwnedKey: Boolean
   }
   object GetBrokerEncryptionOption {
     
@@ -295,14 +286,13 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerInstance extends StObject {
     
-    var consoleUrl: String = js.native
+    var consoleUrl: String
     
-    var endpoints: js.Array[String] = js.native
+    var endpoints: js.Array[String]
     
-    var ipAddress: String = js.native
+    var ipAddress: String
   }
   object GetBrokerInstance {
     
@@ -329,12 +319,11 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerLogs extends StObject {
     
-    var audit: Boolean = js.native
+    var audit: Boolean
     
-    var general: Boolean = js.native
+    var general: Boolean
   }
   object GetBrokerLogs {
     
@@ -355,14 +344,13 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerMaintenanceWindowStartTime extends StObject {
     
-    var dayOfWeek: String = js.native
+    var dayOfWeek: String
     
-    var timeOfDay: String = js.native
+    var timeOfDay: String
     
-    var timeZone: String = js.native
+    var timeZone: String
   }
   object GetBrokerMaintenanceWindowStartTime {
     
@@ -386,14 +374,13 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerUser extends StObject {
     
-    var consoleAccess: Boolean = js.native
+    var consoleAccess: Boolean
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var username: String = js.native
+    var username: String
   }
   object GetBrokerUser {
     

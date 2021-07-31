@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainNameMod {
@@ -55,6 +54,10 @@ object domainNameMod {
   /* static members */
   object DomainName {
     
+    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainName resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,45 +67,39 @@ object domainNameMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainName = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainName = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainNameState): DomainName = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainNameState): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
     
     /**
       * Returns true if the given object is an instance of DomainName.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/domainName", "DomainName.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/domainName.DomainName */ Boolean]
   }
   
-  @js.native
   trait DomainNameArgs extends StObject {
     
     /**
       * The domain name. Must be between 1 and 512 characters in length.
       */
-    val domainName: Input[String] = js.native
+    val domainName: Input[String]
     
     /**
       * The domain name configuration.
       */
-    val domainNameConfiguration: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration] = js.native
+    val domainNameConfiguration: Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]
     
     /**
       * A map of tags to assign to the domain name.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainNameArgs {
     
@@ -132,33 +129,32 @@ object domainNameMod {
     }
   }
   
-  @js.native
   trait DomainNameState extends StObject {
     
     /**
       * The [API mapping selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-mapping-selection-expressions) for the domain name.
       */
-    val apiMappingSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val apiMappingSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the domain name.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain name. Must be between 1 and 512 characters in length.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain name configuration.
       */
-    val domainNameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]] = js.native
+    val domainNameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration]] = js.undefined
     
     /**
       * A map of tags to assign to the domain name.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainNameState {
     

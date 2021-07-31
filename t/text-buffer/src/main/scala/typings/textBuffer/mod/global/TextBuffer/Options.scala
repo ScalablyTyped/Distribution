@@ -7,7 +7,6 @@ import typings.textBuffer.textBufferStrings.surround
 import typings.textBuffer.textBufferStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Options {
   
-  @js.native
   trait BufferLoad extends StObject {
     
     /** The file's encoding. */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       *  A function that returns a boolean indicating whether the buffer should
       *  be destroyed if its file is deleted.
       */
-    var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   }
   object BufferLoad {
     
@@ -53,29 +51,28 @@ object Options {
     }
   }
   
-  @js.native
   trait CopyMarker extends StObject {
     
     /**
       *  Indicates whether insertions at the start or end of the marked range should
       *  be interpreted as happening outside the marker.
       */
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
     /** Determines the rules by which changes to the buffer invalidate the marker. */
-    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
     
     /**
       *  Custom properties to be associated with the marker.
       *  @deprecated
       */
-    var properties: js.UndefOr[js.Object] = js.native
+    var properties: js.UndefOr[js.Object] = js.undefined
     
     /** Creates the marker in a reversed orientation. */
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
     
     /** Whether or not the marker should be tailed. */
-    var tailed: js.UndefOr[Boolean] = js.native
+    var tailed: js.UndefOr[Boolean] = js.undefined
   }
   object CopyMarker {
     
@@ -120,74 +117,73 @@ object Options {
     }
   }
   
-  @js.native
   trait FindDisplayMarker extends StObject {
     
     /** Only include markers contained in this Range in buffer coordinates. */
-    var containedInBufferRange: js.UndefOr[RangeCompatible] = js.native
+    var containedInBufferRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers contained in this Range in screen coordinates. */
-    var containedInScreenRange: js.UndefOr[RangeCompatible] = js.native
+    var containedInScreenRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers containing this Point in buffer coordinates. */
-    var containsBufferPosition: js.UndefOr[PointCompatible] = js.native
+    var containsBufferPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers containing this Range in buffer coordinates. */
-    var containsBufferRange: js.UndefOr[RangeCompatible] = js.native
+    var containsBufferRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers ending at this Point in buffer coordinates. */
-    var endBufferPosition: js.UndefOr[PointCompatible] = js.native
+    var endBufferPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers ending at this row in buffer coordinates. */
-    var endBufferRow: js.UndefOr[Double] = js.native
+    var endBufferRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers ending at this Point in screen coordinates. */
-    var endScreenPosition: js.UndefOr[PointCompatible] = js.native
+    var endScreenPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers ending at this row in screen coordinates. */
-    var endScreenRow: js.UndefOr[Double] = js.native
+    var endScreenRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers ending inside this Range in buffer coordinates. */
-    var endsInBufferRange: js.UndefOr[RangeCompatible] = js.native
+    var endsInBufferRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers ending inside this Range in screen coordinates. */
-    var endsInScreenRange: js.UndefOr[RangeCompatible] = js.native
+    var endsInScreenRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers intersecting this Range in buffer coordinates. */
-    var intersectsBufferRange: js.UndefOr[RangeCompatible] = js.native
+    var intersectsBufferRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /**
       *  Only include markers intersecting this Array of [startRow, endRow] in
       *  buffer coordinates.
       */
-    var intersectsBufferRowRange: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var intersectsBufferRowRange: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /** Only include markers intersecting this Range in screen coordinates. */
-    var intersectsScreenRange: js.UndefOr[RangeCompatible] = js.native
+    var intersectsScreenRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /**
       *  Only include markers intersecting this Array of [startRow, endRow] in
       *  screen coordinates.
       */
-    var intersectsScreenRowRange: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var intersectsScreenRowRange: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /** Only include markers starting at this Point in buffer coordinates. */
-    var startBufferPosition: js.UndefOr[PointCompatible] = js.native
+    var startBufferPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers starting at this row in buffer coordinates. */
-    var startBufferRow: js.UndefOr[Double] = js.native
+    var startBufferRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers starting at this Point in screen coordinates. */
-    var startScreenPosition: js.UndefOr[PointCompatible] = js.native
+    var startScreenPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers starting at this row in screen coordinates. */
-    var startScreenRow: js.UndefOr[Double] = js.native
+    var startScreenRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers starting inside this Range in buffer coordinates. */
-    var startsInBufferRange: js.UndefOr[RangeCompatible] = js.native
+    var startsInBufferRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers starting inside this Range in screen coordinates. */
-    var startsInScreenRange: js.UndefOr[RangeCompatible] = js.native
+    var startsInScreenRange: js.UndefOr[RangeCompatible] = js.undefined
   }
   object FindDisplayMarker {
     
@@ -322,35 +318,34 @@ object Options {
     }
   }
   
-  @js.native
   trait FindMarker extends StObject {
     
     /** Only include markers that contain the given Point, inclusive. */
-    var containsPoint: js.UndefOr[PointCompatible] = js.native
+    var containsPoint: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers that contain the given Range, inclusive. */
-    var containsRange: js.UndefOr[RangeCompatible] = js.native
+    var containsRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers that end at the given Point. */
-    var endPosition: js.UndefOr[PointCompatible] = js.native
+    var endPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers that end at the given row number. */
-    var endRow: js.UndefOr[Double] = js.native
+    var endRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers that end inside the given Range. */
-    var endsInRange: js.UndefOr[RangeCompatible] = js.native
+    var endsInRange: js.UndefOr[RangeCompatible] = js.undefined
     
     /** Only include markers that intersect the given row number. */
-    var intersectsRow: js.UndefOr[Double] = js.native
+    var intersectsRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers that start at the given Point. */
-    var startPosition: js.UndefOr[PointCompatible] = js.native
+    var startPosition: js.UndefOr[PointCompatible] = js.undefined
     
     /** Only include markers that start at the given row number. */
-    var startRow: js.UndefOr[Double] = js.native
+    var startRow: js.UndefOr[Double] = js.undefined
     
     /** Only include markers that start inside the given Range. */
-    var startsInRange: js.UndefOr[RangeCompatible] = js.native
+    var startsInRange: js.UndefOr[RangeCompatible] = js.undefined
   }
   object FindMarker {
     
@@ -419,14 +414,13 @@ object Options {
     }
   }
   
-  @js.native
   trait ScanContext extends StObject {
     
     /** The number of lines before the matched line to include in the results object. */
-    var leadingContextLineCount: js.UndefOr[Double] = js.native
+    var leadingContextLineCount: js.UndefOr[Double] = js.undefined
     
     /** The number of lines after the matched line to include in the results object. */
-    var trailingContextLineCount: js.UndefOr[Double] = js.native
+    var trailingContextLineCount: js.UndefOr[Double] = js.undefined
   }
   object ScanContext {
     

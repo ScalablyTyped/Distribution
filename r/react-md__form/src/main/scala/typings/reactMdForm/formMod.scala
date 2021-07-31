@@ -6,24 +6,24 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod {
   
   @JSImport("@react-md/form/types/Form", "Form")
   @js.native
-  val Form: ForwardRefExoticComponent[FormProps with RefAttributes[HTMLFormElement]] = js.native
+  val Form: ForwardRefExoticComponent[FormProps & RefAttributes[HTMLFormElement]] = js.native
   
-  @js.native
-  trait FormProps extends FormHTMLAttributes[HTMLFormElement] {
+  trait FormProps
+    extends StObject
+       with FormHTMLAttributes[HTMLFormElement] {
     
     /**
       * Boolean if the form should no longer prevent default submit behavior. If
       * you enable this prop you should honestly just use a `<form>` element
       * instead
       */
-    var disablePreventDefault: js.UndefOr[Boolean] = js.native
+    var disablePreventDefault: js.UndefOr[Boolean] = js.undefined
   }
   object FormProps {
     

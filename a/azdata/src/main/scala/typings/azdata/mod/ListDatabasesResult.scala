@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatabasesResult extends StObject {
   
-  var databaseNames: js.Array[String] = js.native
+  var databaseNames: js.Array[String]
   
-  var databases: js.UndefOr[js.Array[DatabaseInfo]] = js.native
+  var databases: js.UndefOr[js.Array[DatabaseInfo]] = js.undefined
 }
 object ListDatabasesResult {
   

@@ -2,21 +2,19 @@ package typings.jqueryGalleria
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GalleriaJS {
   
-  @js.native
   trait GalleriaEntry extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var thumbnail: js.UndefOr[String] = js.native
+    var thumbnail: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object GalleriaEntry {
     
@@ -64,7 +62,7 @@ object GalleriaJS {
     
     def loadTheme(url: String): GalleriaFactory = js.native
     
-    def ready(method: js.Function0[_]): Unit = js.native
+    def ready(method: js.Function0[js.Any]): Unit = js.native
     
     def refreshImage(): GalleriaFactory = js.native
     
@@ -77,14 +75,13 @@ object GalleriaJS {
     def setOptions(options: GalleriaOptions): GalleriaFactory = js.native
   }
   
-  @js.native
   trait GalleriaOptions extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var dataSource: js.Array[GalleriaEntry] = js.native
+    var dataSource: js.Array[GalleriaEntry]
     
-    var lightbox: js.UndefOr[Boolean] = js.native
+    var lightbox: js.UndefOr[Boolean] = js.undefined
   }
   object GalleriaOptions {
     

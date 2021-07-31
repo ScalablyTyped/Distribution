@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsRegionsClustersPatch extends StandardParameters {
+trait ParamsResourceProjectsRegionsClustersPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The cluster name.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Timeout for graceful YARN decomissioning. Graceful
@@ -31,23 +31,23 @@ trait ParamsResourceProjectsRegionsClustersPatch extends StandardParameters {
     * decommission), and the maximum allowed timeout is 1 day.Only supported on
     * Dataproc image versions 1.2 and higher.
     */
-  var gracefulDecommissionTimeout: js.UndefOr[String] = js.native
+  var gracefulDecommissionTimeout: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The ID of the Google Cloud Platform project the cluster belongs
     * to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Cloud Dataproc region in which to handle the request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCluster] = js.native
+  var requestBody: js.UndefOr[SchemaCluster] = js.undefined
   
   /**
     * Optional. A unique id used to identify the request. If the server
@@ -59,7 +59,7 @@ trait ParamsResourceProjectsRegionsClustersPatch extends StandardParameters {
     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
     * hyphens (-). The maximum length is 40 characters.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Specifies the path, relative to Cluster, of the field to
@@ -81,7 +81,7 @@ trait ParamsResourceProjectsRegionsClustersPatch extends StandardParameters {
     * <td><strong><em>config.secondary_worker_config.num_instances</em></strong></td>
     * <td>Resize secondary worker group</td>  </tr>  </tbody>  </table>
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsRegionsClustersPatch {
   

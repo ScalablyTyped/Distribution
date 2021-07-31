@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,7 +58,7 @@ trait WorkLink extends Service {
   ): Request[AssociateWebsiteCertificateAuthorityResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_WorkLink: ConfigBase with ClientConfiguration = js.native
+  var config_WorkLink: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a fleet. A fleet consists of resources and the configuration that delivers associated websites to authorized users who download and set up the Amazon WorkLink app.

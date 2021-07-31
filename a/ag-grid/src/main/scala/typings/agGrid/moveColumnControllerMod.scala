@@ -8,14 +8,15 @@ import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moveColumnControllerMod {
   
   @JSImport("ag-grid/dist/lib/headerRendering/moveColumnController", "MoveColumnController")
   @js.native
-  class MoveColumnController protected () extends DropListener {
+  class MoveColumnController protected ()
+    extends StObject
+       with DropListener {
     def this(pinned: String, eContainer: HTMLElement) = this()
     
     /* private */ def attemptMoveColumns(
@@ -46,6 +47,9 @@ object moveColumnControllerMod {
     
     var failedMoveAttempts: js.Any = js.native
     
+    /* CompleteClass */
+    override def getIconName(): String = js.native
+    
     var gridOptionsWrapper: js.Any = js.native
     
     var gridPanel: js.Any = js.native
@@ -74,9 +78,19 @@ object moveColumnControllerMod {
     
     /* private */ def normaliseX(x: js.Any): js.Any = js.native
     
+    /* CompleteClass */
+    override def onDragEnter(params: DraggingEvent): Unit = js.native
+    
+    /* CompleteClass */
+    override def onDragLeave(params: DraggingEvent): Unit = js.native
+    
     def onDragStop(): Unit = js.native
+    /* CompleteClass */
+    override def onDragStop(params: DraggingEvent): Unit = js.native
     
     def onDragging(draggingEvent: DraggingEvent, fromEnter: Boolean): Unit = js.native
+    /* CompleteClass */
+    override def onDragging(params: DraggingEvent): Unit = js.native
     
     var pinned: js.Any = js.native
     

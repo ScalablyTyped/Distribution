@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the base class for all diagram classes, which have X and Y axes.
   */
-@js.native
-trait ASPxClientXYDiagramBase extends ASPxClientWebChartElement {
+trait ASPxClientXYDiagramBase
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the X-axis.
     */
-  var axisX: ASPxClientAxisBase = js.native
+  var axisX: ASPxClientAxisBase
   
   /**
     * Gets the Y-axis.
     */
-  var axisY: ASPxClientAxisBase = js.native
+  var axisY: ASPxClientAxisBase
 }
 object ASPxClientXYDiagramBase {
   

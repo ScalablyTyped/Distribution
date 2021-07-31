@@ -11,7 +11,6 @@ import typings.openfin.transportMod.Payload
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelChannelMod {
@@ -30,29 +29,25 @@ object channelChannelMod {
     def beforeAction(func: Action): Unit = js.native
     
     def defaultAction(): js.Any = js.native
-    def defaultAction(
-      action: js.UndefOr[scala.Nothing],
-      payload: js.UndefOr[scala.Nothing],
-      senderIdentity: ProviderIdentity
-    ): js.Any = js.native
-    def defaultAction(action: js.UndefOr[scala.Nothing], payload: js.Any): js.Any = js.native
-    def defaultAction(action: js.UndefOr[scala.Nothing], payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
     def defaultAction(action: String): js.Any = js.native
-    def defaultAction(action: String, payload: js.UndefOr[scala.Nothing], senderIdentity: ProviderIdentity): js.Any = js.native
     def defaultAction(action: String, payload: js.Any): js.Any = js.native
     def defaultAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
+    def defaultAction(action: String, payload: Unit, senderIdentity: ProviderIdentity): js.Any = js.native
+    def defaultAction(action: Unit, payload: js.Any): js.Any = js.native
+    def defaultAction(action: Unit, payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
+    def defaultAction(action: Unit, payload: Unit, senderIdentity: ProviderIdentity): js.Any = js.native
     
     var defaultSet: js.Any = js.native
     
     var errorMiddleware: js.Any = js.native
     
-    def onError(func: js.Function3[/* action */ String, /* error */ js.Any, /* id */ Identity, _]): Unit = js.native
+    def onError(func: js.Function3[/* action */ String, /* error */ js.Any, /* id */ Identity, js.Any]): Unit = js.native
     
     var postAction: js.Any = js.native
     
     var preAction: js.Any = js.native
     
-    def processAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Promise[_] = js.native
+    def processAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Promise[js.Any] = js.native
     
     def register(topic: String, listener: Action): Boolean = js.native
     
@@ -66,7 +61,7 @@ object channelChannelMod {
           /* action */ js.UndefOr[String], 
           /* payload */ js.UndefOr[js.Any], 
           /* senderIdentity */ js.UndefOr[ProviderIdentity], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
@@ -90,12 +85,13 @@ object channelChannelMod {
   
   type Action = js.Function0[js.Any] | (js.Function1[/* payload */ js.Any, js.Any]) | (js.Function2[/* payload */ js.Any, /* id */ ProviderIdentity, js.Any])
   
-  @js.native
-  trait ChannelMessagePayload extends Identity {
+  trait ChannelMessagePayload
+    extends StObject
+       with Identity {
     
-    var action: String = js.native
+    var action: String
     
-    var payload: js.Any = js.native
+    var payload: js.Any
   }
   object ChannelMessagePayload {
     

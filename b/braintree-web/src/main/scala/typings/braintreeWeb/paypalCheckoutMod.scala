@@ -11,7 +11,6 @@ import typings.paypalCheckoutComponents.callbackDataMod.LineItem
 import typings.paypalCheckoutComponents.callbackDataMod.ShippingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paypalCheckoutMod {
@@ -25,7 +24,7 @@ object paypalCheckoutMod {
     var VERSION: String = js.native
     
     def create(options: MerchantAccountId): Unit = js.native
-    def create(options: MerchantAccountId, callback: callback[_]): Unit = js.native
+    def create(options: MerchantAccountId, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Creates a PayPal payment ID or billing token using the given options. This is meant to be passed to PayPal's checkout.js library.
@@ -143,7 +142,7 @@ object paypalCheckoutMod {
       *
       */
     def createPayment(options: PayPalCheckoutCreatePaymentOptions): js.Promise[String] = js.native
-    def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback[_]): js.Promise[String] = js.native
+    def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback[js.Any]): js.Promise[String] = js.native
     
     /**
       * @description There are two ways to integrate the PayPal Checkout component.
@@ -205,7 +204,7 @@ object paypalCheckoutMod {
       *
       */
     def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop): js.Promise[Unit] = js.native
-    def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback[_]): Unit = js.native
+    def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback[js.Any]): Unit = js.native
     
     def teardown(): js.Promise[Unit] = js.native
     /**
@@ -220,7 +219,7 @@ object paypalCheckoutMod {
     def teardown(callback: js.Function0[Unit]): Unit = js.native
     
     def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions): Unit = js.native
-    def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback[_]): Unit = js.native
+    def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback[js.Any]): Unit = js.native
     /**
       * Tokenizes the authorize data from PayPal's checkout.js library when completing a buyer approval flow.
       * When a {@link callback} is defined, invokes the callback with {@link PayPalCheckout~tokenizePayload|tokenizePayload} and returns undefined.
@@ -247,38 +246,37 @@ object paypalCheckoutMod {
     def tokenizePayment_Promise(tokenizeOptions: PayPalCheckoutTokenizationOptions): js.Promise[AuthorizationResponse] = js.native
   }
   
-  @js.native
   trait PayPalCheckoutCreatePaymentOptions extends StObject {
     
-    var amount: js.UndefOr[String | Double] = js.native
+    var amount: js.UndefOr[String | Double] = js.undefined
     
-    var billingAgreementDescription: js.UndefOr[String] = js.native
+    var billingAgreementDescription: js.UndefOr[String] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var enableShippingAddress: js.UndefOr[Boolean] = js.native
+    var enableShippingAddress: js.UndefOr[Boolean] = js.undefined
     
-    var flow: FlowType = js.native
+    var flow: FlowType
     
-    var intent: js.UndefOr[Intent] = js.native
+    var intent: js.UndefOr[Intent] = js.undefined
     
-    var landingPageType: js.UndefOr[String] = js.native
+    var landingPageType: js.UndefOr[String] = js.undefined
     
-    var lineItems: js.UndefOr[js.Array[LineItem]] = js.native
+    var lineItems: js.UndefOr[js.Array[LineItem]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var offerCredit: js.UndefOr[Boolean] = js.native
+    var offerCredit: js.UndefOr[Boolean] = js.undefined
     
-    var shippingAddressEditable: js.UndefOr[Boolean] = js.native
+    var shippingAddressEditable: js.UndefOr[Boolean] = js.undefined
     
-    var shippingAddressOverride: js.UndefOr[Address] = js.native
+    var shippingAddressOverride: js.UndefOr[Address] = js.undefined
     
-    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.native
+    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.undefined
     
-    var vaultInitiatedCheckoutPaymentMethodToken: js.UndefOr[String] = js.native
+    var vaultInitiatedCheckoutPaymentMethodToken: js.UndefOr[String] = js.undefined
   }
   object PayPalCheckoutCreatePaymentOptions {
     
@@ -386,16 +384,15 @@ object paypalCheckoutMod {
     }
   }
   
-  @js.native
   trait PayPalCheckoutTokenizationOptions extends StObject {
     
-    var billingToken: js.UndefOr[String] = js.native
+    var billingToken: js.UndefOr[String] = js.undefined
     
-    var payerId: String = js.native
+    var payerId: String
     
-    var paymentId: js.UndefOr[String] = js.native
+    var paymentId: js.UndefOr[String] = js.undefined
     
-    var vault: js.UndefOr[Boolean] = js.native
+    var vault: js.UndefOr[Boolean] = js.undefined
   }
   object PayPalCheckoutTokenizationOptions {
     

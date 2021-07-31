@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.reactStackGrid.anon.Appear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,56 +24,55 @@ object mod {
   
   type StackGrid = Component[StackGridProps, js.Any, js.Any]
   
-  @js.native
   trait StackGridProps extends StObject {
     
-    var appear: js.UndefOr[js.Function0[Unit]] = js.native
+    var appear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var appearDelay: js.UndefOr[Double] = js.native
+    var appearDelay: js.UndefOr[Double] = js.undefined
     
-    var appeared: js.UndefOr[js.Function0[Unit]] = js.native
+    var appeared: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columnWidth: Double | String = js.native
+    var columnWidth: Double | String
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var enableSSR: js.UndefOr[Boolean] = js.native
+    var enableSSR: js.UndefOr[Boolean] = js.undefined
     
-    var enter: js.UndefOr[js.Function0[Unit]] = js.native
+    var enter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var entered: js.UndefOr[js.Function0[Unit]] = js.native
+    var entered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var gridRef: js.UndefOr[js.Function0[Unit]] = js.native
+    var gridRef: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var gutterHeight: js.UndefOr[Double] = js.native
+    var gutterHeight: js.UndefOr[Double] = js.undefined
     
-    var gutterWidth: js.UndefOr[Double] = js.native
+    var gutterWidth: js.UndefOr[Double] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var itemComponent: js.UndefOr[String] = js.native
+    var itemComponent: js.UndefOr[String] = js.undefined
     
-    var leaved: js.UndefOr[js.Function0[Unit]] = js.native
+    var leaved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var monitorImagesLoaded: js.UndefOr[Boolean] = js.native
+    var monitorImagesLoaded: js.UndefOr[Boolean] = js.undefined
     
-    var onLayout: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var units: js.UndefOr[Units] = js.native
+    var units: js.UndefOr[Units] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
-    var vendorPrefix: js.UndefOr[Boolean] = js.native
+    var vendorPrefix: js.UndefOr[Boolean] = js.undefined
   }
   object StackGridProps {
     
@@ -230,12 +228,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Units extends StObject {
     
-    var angle: String = js.native
+    var angle: String
     
-    var length: String = js.native
+    var length: String
   }
   object Units {
     
@@ -256,64 +253,63 @@ object mod {
     }
   }
   
-  @js.native
   trait easingProps extends StObject {
     
-    var backIn: String = js.native
+    var backIn: String
     
-    var backInOut: String = js.native
+    var backInOut: String
     
-    var backOut: String = js.native
+    var backOut: String
     
-    var circIn: String = js.native
+    var circIn: String
     
-    var circInOut: String = js.native
+    var circInOut: String
     
-    var circOut: String = js.native
+    var circOut: String
     
-    var cubicIn: String = js.native
+    var cubicIn: String
     
-    var cubicInOut: String = js.native
+    var cubicInOut: String
     
-    var cubicOut: String = js.native
+    var cubicOut: String
     
-    var easeIn: String = js.native
+    var easeIn: String
     
-    var easeInOut: String = js.native
+    var easeInOut: String
     
-    var easeOut: String = js.native
+    var easeOut: String
     
-    var expoIn: String = js.native
+    var expoIn: String
     
-    var expoInOut: String = js.native
+    var expoInOut: String
     
-    var expoOut: String = js.native
+    var expoOut: String
     
-    var linear: String = js.native
+    var linear: String
     
-    var quadIn: String = js.native
+    var quadIn: String
     
-    var quadInOut: String = js.native
+    var quadInOut: String
     
-    var quadOut: String = js.native
+    var quadOut: String
     
-    var quartIn: String = js.native
+    var quartIn: String
     
-    var quartInOut: String = js.native
+    var quartInOut: String
     
-    var quartOut: String = js.native
+    var quartOut: String
     
-    var quintIn: String = js.native
+    var quintIn: String
     
-    var quintInOut: String = js.native
+    var quintInOut: String
     
-    var quintOut: String = js.native
+    var quintOut: String
     
-    var sineIn: String = js.native
+    var sineIn: String
     
-    var sineInOut: String = js.native
+    var sineInOut: String
     
-    var sineOut: String = js.native
+    var sineOut: String
   }
   object easingProps {
     
@@ -441,22 +437,21 @@ object mod {
     }
   }
   
-  @js.native
   trait transitionsProps extends StObject {
     
-    var fade: Appear = js.native
+    var fade: Appear
     
-    var fadeDown: Appear = js.native
+    var fadeDown: Appear
     
-    var fadeUp: Appear = js.native
+    var fadeUp: Appear
     
-    var flip: Appear = js.native
+    var flip: Appear
     
-    var helix: Appear = js.native
+    var helix: Appear
     
-    var scaleDown: Appear = js.native
+    var scaleDown: Appear
     
-    var scaleUp: Appear = js.native
+    var scaleUp: Appear
   }
   object transitionsProps {
     

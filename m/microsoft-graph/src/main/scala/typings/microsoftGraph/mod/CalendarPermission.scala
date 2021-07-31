@@ -2,36 +2,36 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CalendarPermission extends Entity {
+trait CalendarPermission
+  extends StObject
+     with Entity {
   
   /**
     * List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead,
     * limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
     */
-  var allowedRoles: js.UndefOr[NullableOption[js.Array[CalendarRoleType]]] = js.native
+  var allowedRoles: js.UndefOr[NullableOption[js.Array[CalendarRoleType]]] = js.undefined
   
   /**
     * Represents a sharee or delegate who has access to the calendar. For the 'My Organization' sharee, the address property
     * is null. Read-only.
     */
-  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
   
   // True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-  var isInsideOrganization: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isInsideOrganization: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The
     * 'My organization' user determines the permissions other people within your organization have to the given calendar. You
     * cannot remove 'My organization' as a sharee to a calendar.
     */
-  var isRemovable: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isRemovable: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Current permission level of the calendar sharee or delegate.
-  var role: js.UndefOr[NullableOption[CalendarRoleType]] = js.native
+  var role: js.UndefOr[NullableOption[CalendarRoleType]] = js.undefined
 }
 object CalendarPermission {
   

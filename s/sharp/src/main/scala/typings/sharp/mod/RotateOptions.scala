@@ -2,14 +2,12 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotateOptions extends StObject {
   
   /** parsed by the color module to extract values for red, green, blue and alpha. (optional, default "#000000") */
-  var background: js.UndefOr[Color] = js.native
+  var background: js.UndefOr[Color] = js.undefined
 }
 object RotateOptions {
   

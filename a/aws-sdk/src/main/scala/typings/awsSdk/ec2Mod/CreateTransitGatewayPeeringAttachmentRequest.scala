@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTransitGatewayPeeringAttachmentRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The AWS account ID of the owner of the peer transit gateway.
     */
-  var PeerAccountId: String = js.native
+  var PeerAccountId: String
   
   /**
     * The Region where the peer transit gateway is located.
     */
-  var PeerRegion: String = js.native
+  var PeerRegion: String
   
   /**
     * The ID of the peer transit gateway with which to create the peering attachment.
     */
-  var PeerTransitGatewayId: TransitAssociationGatewayId = js.native
+  var PeerTransitGatewayId: TransitAssociationGatewayId
   
   /**
     * The tags to apply to the transit gateway peering attachment.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId = js.native
+  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId
 }
 object CreateTransitGatewayPeeringAttachmentRequest {
   

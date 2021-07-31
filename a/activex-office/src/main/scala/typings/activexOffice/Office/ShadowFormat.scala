@@ -2,46 +2,44 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Blur: Double = js.native
+  var Blur: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var ForeColor: ColorFormat = js.native
+  var ForeColor: ColorFormat
   
-  def IncrementOffsetX(Increment: Double): Unit = js.native
+  def IncrementOffsetX(Increment: Double): Unit
   
-  def IncrementOffsetY(Increment: Double): Unit = js.native
+  def IncrementOffsetY(Increment: Double): Unit
   
-  var Obscured: MsoTriState = js.native
+  var Obscured: MsoTriState
   
   @JSName("Office.ShadowFormat_typekey")
-  var OfficeDotShadowFormat_typekey: ShadowFormat = js.native
+  var OfficeDotShadowFormat_typekey: ShadowFormat
   
-  var OffsetX: Double = js.native
+  var OffsetX: Double
   
-  var OffsetY: Double = js.native
+  var OffsetY: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RotateWithShape: MsoTriState = js.native
+  var RotateWithShape: MsoTriState
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Style: MsoShadowStyle = js.native
+  var Style: MsoShadowStyle
   
-  var Transparency: Double = js.native
+  var Transparency: Double
   
-  var Type: MsoShadowType = js.native
+  var Type: MsoShadowType
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
 }
 object ShadowFormat {
   

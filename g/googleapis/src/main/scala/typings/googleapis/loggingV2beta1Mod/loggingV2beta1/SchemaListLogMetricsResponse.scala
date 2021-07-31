@@ -2,26 +2,24 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListLogMetrics.
   */
-@js.native
 trait SchemaListLogMetricsResponse extends StObject {
   
   /**
     * A list of logs-based metrics.
     */
-  var metrics: js.UndefOr[js.Array[SchemaLogMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaLogMetric]] = js.undefined
   
   /**
     * If there might be more results than appear in this response, then
     * nextPageToken is included. To get the next set of results, call this
     * method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLogMetricsResponse {
   

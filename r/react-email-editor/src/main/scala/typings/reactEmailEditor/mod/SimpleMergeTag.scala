@@ -2,15 +2,15 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleMergeTag extends MergeTag {
+trait SimpleMergeTag
+  extends StObject
+     with MergeTag {
   
-  val name: String = js.native
+  val name: String
   
-  val value: String = js.native
+  val value: String
 }
 object SimpleMergeTag {
   

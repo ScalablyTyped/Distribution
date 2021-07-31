@@ -4,21 +4,19 @@ import typings.emailAddresses.anon.Address
 import typings.emailAddresses.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emailAddresses {
   
-  @js.native
   trait ASTNode extends StObject {
     
-    var children: js.Array[ASTNode] = js.native
+    var children: js.Array[ASTNode]
     
-    var name: String = js.native
+    var name: String
     
-    var semantic: String = js.native
+    var semantic: String
     
-    var tokens: String = js.native
+    var tokens: String
   }
   object ASTNode {
     
@@ -48,24 +46,23 @@ object emailAddresses {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var input: String = js.native
+    var input: String
     
-    var oneResult: js.UndefOr[Boolean] = js.native
+    var oneResult: js.UndefOr[Boolean] = js.undefined
     
-    var partial: js.UndefOr[Boolean] = js.native
+    var partial: js.UndefOr[Boolean] = js.undefined
     
-    var rejectTLD: js.UndefOr[Boolean] = js.native
+    var rejectTLD: js.UndefOr[Boolean] = js.undefined
     
-    var rfc6532: js.UndefOr[Boolean] = js.native
+    var rfc6532: js.UndefOr[Boolean] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
-    var startAt: js.UndefOr[String] = js.native
+    var startAt: js.UndefOr[String] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -125,18 +122,17 @@ object emailAddresses {
     }
   }
   
-  @js.native
   trait ParsedGroup extends StObject {
     
-    var addresses: js.Array[ParsedMailbox] = js.native
+    var addresses: js.Array[ParsedMailbox]
     
-    var name: String = js.native
+    var name: String
     
-    var node: js.UndefOr[ASTNode] = js.native
+    var node: js.UndefOr[ASTNode] = js.undefined
     
-    var parts: Name = js.native
+    var parts: Name
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParsedGroup {
     
@@ -173,22 +169,21 @@ object emailAddresses {
     }
   }
   
-  @js.native
   trait ParsedMailbox extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var domain: String = js.native
+    var domain: String
     
-    var local: String = js.native
+    var local: String
     
-    var name: String = js.native
+    var name: String
     
-    var node: js.UndefOr[ASTNode] = js.native
+    var node: js.UndefOr[ASTNode] = js.undefined
     
-    var parts: Address = js.native
+    var parts: Address
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParsedMailbox {
     
@@ -228,12 +223,11 @@ object emailAddresses {
     }
   }
   
-  @js.native
   trait ParsedResult extends StObject {
     
-    var addresses: js.Array[ParsedMailbox | ParsedGroup] = js.native
+    var addresses: js.Array[ParsedMailbox | ParsedGroup]
     
-    var ast: ASTNode = js.native
+    var ast: ASTNode
   }
   object ParsedResult {
     

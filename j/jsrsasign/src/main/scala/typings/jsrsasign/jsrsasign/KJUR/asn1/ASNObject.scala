@@ -2,45 +2,43 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASNObject extends StObject {
   
-  var bitstr: DERBitString = js.native
+  var bitstr: DERBitString
   
-  var bool: DERBoolean = js.native
+  var bool: DERBoolean
   
-  var enum: DEREnumerated = js.native
+  var `enum`: DEREnumerated
   
-  var gentime: DERGeneralizedTime = js.native
+  var gentime: DERGeneralizedTime
   
-  var ia5str: DERIA5String = js.native
+  var ia5str: DERIA5String
   
-  var int: DERInteger = js.native
+  var int: DERInteger
   
-  var `null`: DERNull = js.native
+  var `null`: DERNull
   
-  var numstr: DERNumericString = js.native
+  var numstr: DERNumericString
   
-  var octstr: DEROctetString = js.native
+  var octstr: DEROctetString
   
-  var oid: DERObjectIdentifier = js.native
+  var oid: DERObjectIdentifier
   
-  var prnstr: DERPrintableString = js.native
+  var prnstr: DERPrintableString
   
-  var seq: DERSequence = js.native
+  var seq: DERSequence
   
-  var set: DERSet = js.native
+  var set: DERSet
   
-  var tag: DERTaggedObject = js.native
+  var tag: DERTaggedObject
   
-  var telstr: DERTeletexString = js.native
+  var telstr: DERTeletexString
   
-  var utctime: DERUTCTime = js.native
+  var utctime: DERUTCTime
   
-  var utf8str: DERUTF8String = js.native
+  var utf8str: DERUTF8String
 }
 object ASNObject {
   
@@ -48,7 +46,7 @@ object ASNObject {
   def apply(
     bitstr: DERBitString,
     bool: DERBoolean,
-    enum: DEREnumerated,
+    `enum`: DEREnumerated,
     gentime: DERGeneralizedTime,
     ia5str: DERIA5String,
     int: DERInteger,
@@ -64,7 +62,8 @@ object ASNObject {
     utctime: DERUTCTime,
     utf8str: DERUTF8String
   ): ASNObject = {
-    val __obj = js.Dynamic.literal(bitstr = bitstr.asInstanceOf[js.Any], bool = bool.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], gentime = gentime.asInstanceOf[js.Any], ia5str = ia5str.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], numstr = numstr.asInstanceOf[js.Any], octstr = octstr.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], prnstr = prnstr.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], telstr = telstr.asInstanceOf[js.Any], utctime = utctime.asInstanceOf[js.Any], utf8str = utf8str.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bitstr = bitstr.asInstanceOf[js.Any], bool = bool.asInstanceOf[js.Any], gentime = gentime.asInstanceOf[js.Any], ia5str = ia5str.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], numstr = numstr.asInstanceOf[js.Any], octstr = octstr.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], prnstr = prnstr.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], telstr = telstr.asInstanceOf[js.Any], utctime = utctime.asInstanceOf[js.Any], utf8str = utf8str.asInstanceOf[js.Any])
+    __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
     __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASNObject]
   }

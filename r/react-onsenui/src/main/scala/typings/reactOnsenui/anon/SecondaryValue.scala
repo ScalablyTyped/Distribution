@@ -2,19 +2,17 @@ package typings.reactOnsenui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecondaryValue extends StObject {
   
-  var indeterminate: js.UndefOr[Boolean] = js.native
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var secondaryValue: js.UndefOr[Boolean] = js.native
+  var secondaryValue: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SecondaryValue {
   

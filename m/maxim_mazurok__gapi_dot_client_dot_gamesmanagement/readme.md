@@ -10,9 +10,9 @@ TypeScript typings for Google Play Game Management v1management
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gamesmanagement |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 1033 |
+| # downloads        | 1119 |
 | # stars            | 0 |
 
 ## Links

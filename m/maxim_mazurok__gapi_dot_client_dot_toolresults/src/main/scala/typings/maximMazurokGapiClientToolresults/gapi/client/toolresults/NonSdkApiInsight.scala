@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonSdkApiInsight extends StObject {
   
   /** Optional sample stack traces, for which this insight applies (there should be at least one). */
-  var exampleTraceMessages: js.UndefOr[js.Array[String]] = js.native
+  var exampleTraceMessages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A unique ID, to be used for determining the effectiveness of this particular insight in the context of a matcher. (required) */
-  var matcherId: js.UndefOr[String] = js.native
+  var matcherId: js.UndefOr[String] = js.undefined
   
   /** An insight indicating that the hidden API usage originates from a Google-provided library. */
-  var pendingGoogleUpdateInsight: js.UndefOr[PendingGoogleUpdateInsight] = js.native
+  var pendingGoogleUpdateInsight: js.UndefOr[PendingGoogleUpdateInsight] = js.undefined
   
   /** An insight indicating that the hidden API usage originates from the use of a library that needs to be upgraded. */
-  var upgradeInsight: js.UndefOr[UpgradeInsight] = js.native
+  var upgradeInsight: js.UndefOr[UpgradeInsight] = js.undefined
 }
 object NonSdkApiInsight {
   

@@ -2,19 +2,17 @@ package typings.karmaSpecReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Failure extends StObject {
     
-    var failure: js.UndefOr[String] = js.native
+    var failure: js.UndefOr[String] = js.undefined
     
-    var skipped: js.UndefOr[String] = js.native
+    var skipped: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
   }
   object Failure {
     

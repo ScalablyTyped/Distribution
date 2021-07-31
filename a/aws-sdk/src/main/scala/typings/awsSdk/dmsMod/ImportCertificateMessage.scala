@@ -2,31 +2,29 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportCertificateMessage extends StObject {
   
   /**
     * A customer-assigned name for the certificate. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
-  var CertificateIdentifier: String = js.native
+  var CertificateIdentifier: String
   
   /**
     * The contents of a .pem file, which contains an X.509 certificate.
     */
-  var CertificatePem: js.UndefOr[String] = js.native
+  var CertificatePem: js.UndefOr[String] = js.undefined
   
   /**
     * The location of an imported Oracle Wallet certificate for use with SSL.
     */
-  var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.native
+  var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.undefined
   
   /**
     * The tags associated with the certificate.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ImportCertificateMessage {
   

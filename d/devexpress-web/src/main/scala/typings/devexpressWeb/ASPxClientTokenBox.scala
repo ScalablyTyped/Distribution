@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxTokenBox object.
   */
 @js.native
-trait ASPxClientTokenBox extends ASPxClientComboBox {
+trait ASPxClientTokenBox
+  extends StObject
+     with ASPxClientComboBox {
   
   /**
     * Adds a new token with the specified text to the end of the control's token collection.

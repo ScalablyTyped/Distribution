@@ -2,16 +2,14 @@ package typings.uuidApikey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<uuid-apikey.uuid-apikey.UUIDOptions> */
-  @js.native
   trait PartialUUIDOptions extends StObject {
     
-    var noDashes: js.UndefOr[Boolean] = js.native
+    var noDashes: js.UndefOr[Boolean] = js.undefined
   }
   object PartialUUIDOptions {
     

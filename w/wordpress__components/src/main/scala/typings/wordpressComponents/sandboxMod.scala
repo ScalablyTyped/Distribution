@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.wordpressComponents.sandboxMod.SandBox.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sandboxMod {
@@ -27,36 +26,35 @@ object sandboxMod {
   
   object SandBox {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * HTML for the document `<body>` of the sandbox.
         */
-      var html: js.UndefOr[String] = js.native
+      var html: js.UndefOr[String] = js.undefined
       
-      var onFocus: js.UndefOr[FocusEventHandler[Element]] = js.native
+      var onFocus: js.UndefOr[FocusEventHandler[Element]] = js.undefined
       
       /**
         * Inline JS to apply to the sandboxed document.
         */
-      var scripts: js.UndefOr[js.Array[String]] = js.native
+      var scripts: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Inline CSS to apply to the sandboxed document.
         */
-      var styles: js.UndefOr[js.Array[String]] = js.native
+      var styles: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Text for the document `<title>` of the sandbox.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
       /**
         * `className` that is applied to both the sandbox `<html>` element and
         * `<body>` element.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Props {
       

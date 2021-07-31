@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidAppConfig extends StObject {
   
   /** The contents of the JSON configuration file. */
-  var configFileContents: js.UndefOr[String] = js.native
+  var configFileContents: js.UndefOr[String] = js.undefined
   
   /** The filename that the configuration artifact for the `AndroidApp` is typically saved as. For example: `google-services.json` */
-  var configFilename: js.UndefOr[String] = js.native
+  var configFilename: js.UndefOr[String] = js.undefined
 }
 object AndroidAppConfig {
   

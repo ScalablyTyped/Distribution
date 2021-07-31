@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaVersionsDiffResponse extends StObject {
   
   /**
     * The difference between schemas as a string in JsonPatch format.
     */
-  var Diff: js.UndefOr[SchemaDefinitionDiff] = js.native
+  var Diff: js.UndefOr[SchemaDefinitionDiff] = js.undefined
 }
 object GetSchemaVersionsDiffResponse {
   

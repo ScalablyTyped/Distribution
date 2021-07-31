@@ -6,17 +6,15 @@ import typings.mailgunJs.mailgunJsStrings.true_
 import typings.mailgunJs.mailgunJsStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validation {
   
-  @js.native
   trait ParseResponse extends StObject {
     
-    var parsed: js.Array[String] = js.native
+    var parsed: js.Array[String]
     
-    var unparseable: js.Array[String] = js.native
+    var unparseable: js.Array[String]
   }
   object ParseResponse {
     
@@ -43,22 +41,21 @@ object validation {
     }
   }
   
-  @js.native
   trait ValidateResponse extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var did_you_mean: String | Null = js.native
+    var did_you_mean: String | Null
     
-    var is_disposable_address: Boolean = js.native
+    var is_disposable_address: Boolean
     
-    var is_role_address: Boolean = js.native
+    var is_role_address: Boolean
     
-    var is_valid: Boolean = js.native
+    var is_valid: Boolean
     
-    var mailbox_verification: true_ | false_ | unknown | Null = js.native
+    var mailbox_verification: true_ | false_ | unknown | Null
     
-    var parts: Displayname = js.native
+    var parts: Displayname
   }
   object ValidateResponse {
     
@@ -70,7 +67,7 @@ object validation {
       is_valid: Boolean,
       parts: Displayname
     ): ValidateResponse = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], is_disposable_address = is_disposable_address.asInstanceOf[js.Any], is_role_address = is_role_address.asInstanceOf[js.Any], is_valid = is_valid.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], is_disposable_address = is_disposable_address.asInstanceOf[js.Any], is_role_address = is_role_address.asInstanceOf[js.Any], is_valid = is_valid.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], did_you_mean = null, mailbox_verification = null)
       __obj.asInstanceOf[ValidateResponse]
     }
     
@@ -108,10 +105,9 @@ object validation {
   
   type ValidationCallback = js.Function2[/* error */ Error, /* body */ ValidateResponse, Unit]
   
-  @js.native
   trait ValidationOptionsPrivate extends StObject {
     
-    var mailbox_verification: js.UndefOr[Boolean] = js.native
+    var mailbox_verification: js.UndefOr[Boolean] = js.undefined
   }
   object ValidationOptionsPrivate {
     
@@ -132,12 +128,11 @@ object validation {
     }
   }
   
-  @js.native
   trait ValidationOptionsPublic extends StObject {
     
-    var api_key: js.UndefOr[String] = js.native
+    var api_key: js.UndefOr[String] = js.undefined
     
-    var mailbox_verification: js.UndefOr[Boolean] = js.native
+    var mailbox_verification: js.UndefOr[Boolean] = js.undefined
   }
   object ValidationOptionsPublic {
     

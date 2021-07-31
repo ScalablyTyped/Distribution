@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparedSourceImageFace extends StObject {
   
   /**
     * Bounding box of the face.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * Confidence level that the selected bounding box contains a face.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
 }
 object ComparedSourceImageFace {
   

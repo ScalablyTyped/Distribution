@@ -2,16 +2,14 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAccountSettingResponse extends StObject {
   
   /**
     * The account setting for the specified principal ARN.
     */
-  var setting: js.UndefOr[Setting] = js.native
+  var setting: js.UndefOr[Setting] = js.undefined
 }
 object DeleteAccountSettingResponse {
   

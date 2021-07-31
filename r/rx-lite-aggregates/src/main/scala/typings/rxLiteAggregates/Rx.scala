@@ -3,7 +3,6 @@ package typings.rxLiteAggregates
 import typings.rxCore.Rx.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
@@ -15,44 +14,44 @@ object Rx {
     def aggregate[TAcc](seed: TAcc, accumulator: js.Function2[/* acc */ TAcc, /* value */ T, TAcc]): Observable[TAcc] = js.native
     
     def all(): Observable[Boolean] = js.native
-    def all(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
     def all(predicate: js.Function1[/* value */ T, Boolean]): Observable[Boolean] = js.native
     def all(predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Observable[Boolean] = js.native
+    def all(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
     
     def any(): Observable[Boolean] = js.native
-    def any(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
     def any(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[Boolean] = js.native
     def any(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[Boolean] = js.native
+    def any(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
     
     def average(): Observable[Double] = js.native
-    def average(keySelector: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
     def average(keySelector: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Double]): Observable[Double] = js.native
     def average(
       keySelector: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Double],
       thisArg: js.Any
     ): Observable[Double] = js.native
+    def average(keySelector: Unit, thisArg: js.Any): Observable[Double] = js.native
     
     // alias for all
     def contains(value: T): Observable[Boolean] = js.native
     def contains[TOther](value: TOther, comparer: js.Function2[/* value1 */ T, /* value2 */ TOther, Boolean]): Observable[Boolean] = js.native
     
     def count(): Observable[Double] = js.native
-    def count(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
     def count(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[Double] = js.native
     def count(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[Double] = js.native
+    def count(predicate: Unit, thisArg: js.Any): Observable[Double] = js.native
     
     def elementAt(index: Double): Observable[T] = js.native
     
     def every(): Observable[Boolean] = js.native
-    def every(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
     def every(predicate: js.Function1[/* value */ T, Boolean]): Observable[Boolean] = js.native
     def every(predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Observable[Boolean] = js.native
+    def every(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
     
     def finalValue(): Observable[T] = js.native
     
@@ -69,23 +68,23 @@ object Rx {
     ): Observable[Double] = js.native
     
     def first(): Observable[T] = js.native
-    def first(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
     def first(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
     def first(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[T] = js.native
+    def first(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
     
     // alias for any
     def isEmpty(): Observable[Boolean] = js.native
     
     def last(): Observable[T] = js.native
-    def last(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
     def last(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
     def last(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[T] = js.native
+    def last(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
     
     def max(): Observable[Double] = js.native
     def max(comparer: js.Function2[/* value1 */ T, /* value2 */ T, Double]): Observable[Double] = js.native
@@ -116,27 +115,27 @@ object Rx {
     def sequenceEqual[TOther](second: Observable[TOther], comparer: js.Function2[/* value1 */ T, /* value2 */ TOther, Double]): Observable[Boolean] = js.native
     
     def single(): Observable[T] = js.native
-    def single(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[T] = js.native
     def single(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
     def single(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[T] = js.native
+    def single(predicate: Unit, thisArg: js.Any): Observable[T] = js.native
     
     def some(): Observable[Boolean] = js.native
-    def some(predicate: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Boolean] = js.native
     def some(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[Boolean] = js.native
     def some(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
       thisArg: js.Any
     ): Observable[Boolean] = js.native
+    def some(predicate: Unit, thisArg: js.Any): Observable[Boolean] = js.native
     
     def sum(): Observable[Double] = js.native
-    def sum(keySelector: js.UndefOr[scala.Nothing], thisArg: js.Any): Observable[Double] = js.native
     def sum(keySelector: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Double]): Observable[Double] = js.native
     def sum(
       keySelector: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Double],
       thisArg: js.Any
     ): Observable[Double] = js.native
+    def sum(keySelector: Unit, thisArg: js.Any): Observable[Double] = js.native
   }
 }

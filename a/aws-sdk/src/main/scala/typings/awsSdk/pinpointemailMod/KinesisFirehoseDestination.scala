@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisFirehoseDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Kinesis Data Firehose stream that Amazon Pinpoint sends email events to.
     */
-  var DeliveryStreamArn: AmazonResourceName = js.native
+  var DeliveryStreamArn: AmazonResourceName
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that Amazon Pinpoint uses when sending email events to the Amazon Kinesis Data Firehose stream.
     */
-  var IamRoleArn: AmazonResourceName = js.native
+  var IamRoleArn: AmazonResourceName
 }
 object KinesisFirehoseDestination {
   

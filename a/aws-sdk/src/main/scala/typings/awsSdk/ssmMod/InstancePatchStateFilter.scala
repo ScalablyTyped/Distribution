@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancePatchStateFilter extends StObject {
   
   /**
     * The key for the filter. Supported values are FailedCount, InstalledCount, InstalledOtherCount, MissingCount and NotApplicableCount.
     */
-  var Key: InstancePatchStateFilterKey = js.native
+  var Key: InstancePatchStateFilterKey
   
   /**
     * The type of comparison that should be performed for the value: Equal, NotEqual, LessThan or GreaterThan.
     */
-  var Type: InstancePatchStateOperatorType = js.native
+  var Type: InstancePatchStateOperatorType
   
   /**
     * The value for the filter, must be an integer greater than or equal to 0.
     */
-  var Values: InstancePatchStateFilterValues = js.native
+  var Values: InstancePatchStateFilterValues
 }
 object InstancePatchStateFilter {
   

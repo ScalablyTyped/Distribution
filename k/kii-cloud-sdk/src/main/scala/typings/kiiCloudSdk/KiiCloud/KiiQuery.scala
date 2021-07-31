@@ -2,20 +2,18 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiQuery object
   */
-@js.native
 trait KiiQuery extends StObject {
   
   /**
     * Get the limit of the current query
     *
     */
-  def getLimit(): Double = js.native
+  def getLimit(): Double
   
   /**
     * Set the limit of the given query
@@ -24,7 +22,7 @@ trait KiiQuery extends StObject {
     *
     * @throws InvalidLimitException
     */
-  def setLimit(value: Double): Unit = js.native
+  def setLimit(value: Double): Unit
   
   /**
     * Set the query to sort by a field in ascending order
@@ -33,7 +31,7 @@ trait KiiQuery extends StObject {
     *
     * @param field The key that should be used to sort
     */
-  def sortByAsc(field: String): Unit = js.native
+  def sortByAsc(field: String): Unit
   
   /**
     * Set the query to sort by a field in descending order
@@ -42,7 +40,7 @@ trait KiiQuery extends StObject {
     *
     * @param field The key that should be used to sort
     */
-  def sortByDesc(field: String): Unit = js.native
+  def sortByDesc(field: String): Unit
 }
 object KiiQuery {
   

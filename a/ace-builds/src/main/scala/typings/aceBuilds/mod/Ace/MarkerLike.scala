@@ -2,23 +2,21 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerLike extends StObject {
   
-  var clazz: String = js.native
+  var clazz: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var inFront: Boolean = js.native
+  var inFront: Boolean
   
-  var range: Range = js.native
+  var range: Range
   
-  var renderer: js.UndefOr[MarkerRenderer] = js.native
+  var renderer: js.UndefOr[MarkerRenderer] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
   var update: js.UndefOr[
     js.Function4[
@@ -28,7 +26,7 @@ trait MarkerLike extends StObject {
       /* config */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MarkerLike {
   

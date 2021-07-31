@@ -12,7 +12,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined signale.signale.Signale<signale.signale.DefaultMethods> & {  Signale :signale.signale.SignaleConstructor,   SignaleConfig :signale.signale.SignaleConfig,   SignaleOptions :signale.signale.SignaleOptions<signale.signale.DefaultMethods>,   DefaultMethods :signale.signale.DefaultMethods} */
@@ -99,40 +98,39 @@ object mod {
   @JSImport("signale", "Signale")
   @js.native
   def Signale: SignaleConstructor = js.native
-  type Signale[TTypes /* <: String */] = SignaleBase[TTypes] with (Record[TTypes, LoggerFunc]) with RecordDefaultMethodsLogge
+  type Signale[TTypes /* <: String */] = SignaleBase[TTypes] & (Record[TTypes, LoggerFunc]) & RecordDefaultMethodsLogge
   
-  @js.native
   trait SignaleConfig extends StObject {
     
     /** Display the badge of the logger. */
-    var displayBadge: js.UndefOr[Boolean] = js.native
+    var displayBadge: js.UndefOr[Boolean] = js.undefined
     
     /** Display the current local date in `YYYY-MM-DD` format. */
-    var displayDate: js.UndefOr[Boolean] = js.native
+    var displayDate: js.UndefOr[Boolean] = js.undefined
     
     /** Display the name of the file that the logger is reporting from. */
-    var displayFilename: js.UndefOr[Boolean] = js.native
+    var displayFilename: js.UndefOr[Boolean] = js.undefined
     
     /** Display the label of the logger. */
-    var displayLabel: js.UndefOr[Boolean] = js.native
+    var displayLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Display the scope name of the logger. */
-    var displayScope: js.UndefOr[Boolean] = js.native
+    var displayScope: js.UndefOr[Boolean] = js.undefined
     
     /** Display the current local time in `HH:MM:SS` format. */
-    var displayTimestamp: js.UndefOr[Boolean] = js.native
+    var displayTimestamp: js.UndefOr[Boolean] = js.undefined
     
     /** Underline the logger label. */
-    var underlineLabel: js.UndefOr[Boolean] = js.native
+    var underlineLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Underline the logger message. */
-    var underlineMessage: js.UndefOr[Boolean] = js.native
+    var underlineMessage: js.UndefOr[Boolean] = js.undefined
     
-    var underlinePrefix: js.UndefOr[Boolean] = js.native
+    var underlinePrefix: js.UndefOr[Boolean] = js.undefined
     
-    var underlineSuffix: js.UndefOr[Boolean] = js.native
+    var underlineSuffix: js.UndefOr[Boolean] = js.undefined
     
-    var uppercaseLabel: js.UndefOr[Boolean] = js.native
+    var uppercaseLabel: js.UndefOr[Boolean] = js.undefined
   }
   object SignaleConfig {
     
@@ -211,37 +209,36 @@ object mod {
     }
   }
   
-  @js.native
   trait SignaleOptions[TTypes /* <: String */] extends StObject {
     
     /** Sets the configuration of an instance overriding any existing global or local configuration. */
-    var config: js.UndefOr[SignaleConfig] = js.native
+    var config: js.UndefOr[SignaleConfig] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the scope.
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var secrets: js.UndefOr[js.Array[String | Double]] = js.native
+    var secrets: js.UndefOr[js.Array[String | Double]] = js.undefined
     
     /**
       * Destination to which the data is written, can be any valid
       * [Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams).
       */
-    var stream: js.UndefOr[WriteStream | js.Array[WriteStream]] = js.native
+    var stream: js.UndefOr[WriteStream | js.Array[WriteStream]] = js.undefined
     
-    var timers: js.UndefOr[Map[String, Date]] = js.native
+    var timers: js.UndefOr[Map[String, Date]] = js.undefined
     
     /**
       * Holds the configuration of the custom and default loggers.
       */
-    var types: js.UndefOr[Partial[Record[TTypes, CommandType]]] = js.native
+    var types: js.UndefOr[Partial[Record[TTypes, CommandType]]] = js.undefined
   }
   object SignaleOptions {
     
@@ -250,7 +247,7 @@ object mod {
     val ^ : SignaleOptions[DefaultMethods] = js.native
     
     @scala.inline
-    implicit class SignaleOptionsMutableBuilder[Self <: SignaleOptions[_], TTypes /* <: String */] (val x: Self with SignaleOptions[TTypes]) extends AnyVal {
+    implicit class SignaleOptionsMutableBuilder[Self <: SignaleOptions[?], TTypes /* <: String */] (val x: Self & SignaleOptions[TTypes]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: SignaleConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -322,38 +319,32 @@ object mod {
     *
     * @param secrets Array holding the secrets/sensitive-information to be filtered out.
     */
-  @JSImport("signale", "addSecrets")
-  @js.native
-  def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
+  @scala.inline
+  def addSecrets(secrets: js.Array[Double | String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSecrets")(secrets.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("signale", "await")
   @js.native
   def await: LoggerFunc = js.native
-  @JSImport("signale", "await")
-  @js.native
-  def await(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "await")
-  @js.native
-  def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def await(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("await")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def await(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("await")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def await_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("await")(x.asInstanceOf[js.Any])
   
   /**
     * Removes all secrets/sensitive-information from the targeted Signale instance.
     */
-  @JSImport("signale", "clearSecrets")
-  @js.native
-  def clearSecrets(): Unit = js.native
+  @scala.inline
+  def clearSecrets(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSecrets")().asInstanceOf[Unit]
   
   @JSImport("signale", "complete")
   @js.native
   def complete: LoggerFunc = js.native
-  @JSImport("signale", "complete")
-  @js.native
-  def complete(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "complete")
-  @js.native
-  def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def complete(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("complete")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def complete(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("complete")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def complete_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("complete")(x.asInstanceOf[js.Any])
   
@@ -362,81 +353,68 @@ object mod {
     *
     * @param configObj Can hold any of the documented options.
     */
-  @JSImport("signale", "config")
-  @js.native
-  def config(configObj: SignaleConfig): SignaleDefaultMethods = js.native
+  @scala.inline
+  def config(configObj: SignaleConfig): SignaleDefaultMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(configObj.asInstanceOf[js.Any]).asInstanceOf[SignaleDefaultMethods]
   
   @JSImport("signale", "debug")
   @js.native
   def debug: LoggerFunc = js.native
-  @JSImport("signale", "debug")
-  @js.native
-  def debug(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "debug")
-  @js.native
-  def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def debug(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def debug(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def debug_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
   
   /**
     * Disables the logging functionality of all loggers belonging to a specific instance.
     */
-  @JSImport("signale", "disable")
-  @js.native
-  def disable(): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
   /**
     * Enables the logging functionality of all loggers belonging to a specific instance.
     */
-  @JSImport("signale", "enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("signale", "error")
   @js.native
   def error: LoggerFunc = js.native
-  @JSImport("signale", "error")
-  @js.native
-  def error(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "error")
-  @js.native
-  def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def error(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def error(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def error_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "fatal")
   @js.native
   def fatal: LoggerFunc = js.native
-  @JSImport("signale", "fatal")
-  @js.native
-  def fatal(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "fatal")
-  @js.native
-  def fatal(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def fatal(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fatal(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def fatal_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fatal")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "fav")
   @js.native
   def fav: LoggerFunc = js.native
-  @JSImport("signale", "fav")
-  @js.native
-  def fav(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "fav")
-  @js.native
-  def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def fav(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fav")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fav(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fav")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def fav_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fav")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "info")
   @js.native
   def info: LoggerFunc = js.native
-  @JSImport("signale", "info")
-  @js.native
-  def info(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "info")
-  @js.native
-  def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def info(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def info(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def info_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
   
@@ -445,55 +423,46 @@ object mod {
     *
     * @returns a boolean that describes whether or not the logger is enabled.
     */
-  @JSImport("signale", "isEnabled")
-  @js.native
-  def isEnabled(): Boolean = js.native
+  @scala.inline
+  def isEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[Boolean]
   
   @JSImport("signale", "log")
   @js.native
   def log: LoggerFunc = js.native
-  @JSImport("signale", "log")
-  @js.native
-  def log(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "log")
-  @js.native
-  def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def log(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def log(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def log_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "note")
   @js.native
   def note: LoggerFunc = js.native
-  @JSImport("signale", "note")
-  @js.native
-  def note(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "note")
-  @js.native
-  def note(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def note(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("note")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def note(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("note")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def note_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("note")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "pause")
   @js.native
   def pause: LoggerFunc = js.native
-  @JSImport("signale", "pause")
-  @js.native
-  def pause(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "pause")
-  @js.native
-  def pause(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def pause(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def pause(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def pause_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pause")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "pending")
   @js.native
   def pending: LoggerFunc = js.native
-  @JSImport("signale", "pending")
-  @js.native
-  def pending(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "pending")
-  @js.native
-  def pending(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def pending(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pending")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def pending(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pending")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def pending_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pending")(x.asInstanceOf[js.Any])
   
@@ -502,43 +471,36 @@ object mod {
     *
     * @param name Can be one or more comma delimited strings.
     */
-  @JSImport("signale", "scope")
-  @js.native
-  def scope(name: String*): SignaleDefaultMethods = js.native
+  @scala.inline
+  def scope(name: String*): SignaleDefaultMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(name.asInstanceOf[js.Any]).asInstanceOf[SignaleDefaultMethods]
   
   @JSImport("signale", "star")
   @js.native
   def star: LoggerFunc = js.native
-  @JSImport("signale", "star")
-  @js.native
-  def star(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "star")
-  @js.native
-  def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def star(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("star")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def star(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("star")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def star_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("star")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "start")
   @js.native
   def start: LoggerFunc = js.native
-  @JSImport("signale", "start")
-  @js.native
-  def start(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "start")
-  @js.native
-  def start(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def start(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def start(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def start_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "success")
   @js.native
   def success: LoggerFunc = js.native
-  @JSImport("signale", "success")
-  @js.native
-  def success(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "success")
-  @js.native
-  def success(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def success(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def success(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def success_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
   
@@ -548,12 +510,10 @@ object mod {
     * @param label Label corresponding to the timer. Each timer must have its own unique label.
     * @returns a string corresponding to the timer label.
     */
-  @JSImport("signale", "time")
-  @js.native
-  def time(): String = js.native
-  @JSImport("signale", "time")
-  @js.native
-  def time(label: String): String = js.native
+  @scala.inline
+  def time(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[String]
+  @scala.inline
+  def time(label: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Deactivates the timer to which the given label corresponds. If no label
@@ -563,66 +523,56 @@ object mod {
     * @param label Label corresponding to the timer, each timer has its own unique label.
     * @param span Total running time.
     */
-  @JSImport("signale", "timeEnd")
-  @js.native
-  def timeEnd(): Label = js.native
-  @JSImport("signale", "timeEnd")
-  @js.native
-  def timeEnd(label: js.UndefOr[scala.Nothing], span: Double): Label = js.native
-  @JSImport("signale", "timeEnd")
-  @js.native
-  def timeEnd(label: String): Label = js.native
-  @JSImport("signale", "timeEnd")
-  @js.native
-  def timeEnd(label: String, span: Double): Label = js.native
+  @scala.inline
+  def timeEnd(): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")().asInstanceOf[Label]
+  @scala.inline
+  def timeEnd(label: String): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")(label.asInstanceOf[js.Any]).asInstanceOf[Label]
+  @scala.inline
+  def timeEnd(label: String, span: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")(label.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Label]
+  @scala.inline
+  def timeEnd(label: Unit, span: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("timeEnd")(label.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Label]
   
   /** Clears the scope name of the logger. */
-  @JSImport("signale", "unscope")
-  @js.native
-  def unscope(): Unit = js.native
+  @scala.inline
+  def unscope(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unscope")().asInstanceOf[Unit]
   
   @JSImport("signale", "warn")
   @js.native
   def warn: LoggerFunc = js.native
-  @JSImport("signale", "warn")
-  @js.native
-  def warn(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "warn")
-  @js.native
-  def warn(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def warn(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def warn(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def warn_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "watch")
   @js.native
   def watch: LoggerFunc = js.native
-  @JSImport("signale", "watch")
-  @js.native
-  def watch(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-  @JSImport("signale", "watch")
-  @js.native
-  def watch(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def watch(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def watch(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   @scala.inline
   def watch_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watch")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait CommandType extends StObject {
     
     /** The icon corresponding to the logger. */
-    var badge: String = js.native
+    var badge: String
     
     /**
       * The color of the label, can be any of the foreground colors supported by
       * [chalk](https://github.com/chalk/chalk#colors).
       */
-    var color: String = js.native
+    var color: String
     
     /** The label used to identify the type of the logger. */
-    var label: String = js.native
+    var label: String
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var stream: js.UndefOr[WriteStream | js.Array[WriteStream]] = js.native
+    var stream: js.UndefOr[WriteStream | js.Array[WriteStream]] = js.undefined
   }
   object CommandType {
     
@@ -661,7 +611,12 @@ object mod {
     }
   }
   
-  type LoggerFunc = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+  @js.native
+  trait LoggerFunc extends StObject {
+    
+    def apply(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def apply(message: Unit, optionalArgs: js.Any*): Unit = js.native
+  }
   
   @js.native
   trait SignaleBase[TTypes /* <: String */] extends StObject {
@@ -727,9 +682,9 @@ object mod {
       * @param span Total running time.
       */
     def timeEnd(): Label = js.native
-    def timeEnd(label: js.UndefOr[scala.Nothing], span: Double): Label = js.native
     def timeEnd(label: String): Label = js.native
     def timeEnd(label: String, span: Double): Label = js.native
+    def timeEnd(label: Unit, span: Double): Label = js.native
     
     /** Clears the scope name of the logger. */
     def unscope(): Unit = js.native
@@ -737,6 +692,7 @@ object mod {
   
   @js.native
   trait SignaleConstructor
-    extends Instantiable0[Signale[String]]
+    extends StObject
+       with Instantiable0[Signale[String]]
        with Instantiable1[/* options */ SignaleOptions[String], Signale[String]]
 }

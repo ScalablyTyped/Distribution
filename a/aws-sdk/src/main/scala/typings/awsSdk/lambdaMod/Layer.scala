@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layer extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the function layer.
     */
-  var Arn: js.UndefOr[LayerVersionArn] = js.native
+  var Arn: js.UndefOr[LayerVersionArn] = js.undefined
   
   /**
     * The size of the layer archive in bytes.
     */
-  var CodeSize: js.UndefOr[Long] = js.native
+  var CodeSize: js.UndefOr[Long] = js.undefined
 }
 object Layer {
   

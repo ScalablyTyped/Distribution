@@ -9,15 +9,13 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIVE extends StObject {
     
-    var ACTIVE: String = js.native
+    var ACTIVE: String
   }
   object ACTIVE {
     
@@ -35,14 +33,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CHANGEEVENT extends StObject {
     
-    var CHANGE_EVENT: String = js.native
+    var CHANGE_EVENT: String
     
-    var INDICATOR_SELECTOR: String = js.native
+    var INDICATOR_SELECTOR: String
     
-    var TAB_SELECTOR: String = js.native
+    var TAB_SELECTOR: String
   }
   object CHANGEEVENT {
     
@@ -66,18 +63,17 @@ object anon {
     }
   }
   
-  @js.native
   trait FRAMESELECTOR extends StObject {
     
-    var FRAME_SELECTOR: String = js.native
+    var FRAME_SELECTOR: String
     
-    var INDICATOR_BACK_SELECTOR: String = js.native
+    var INDICATOR_BACK_SELECTOR: String
     
-    var INDICATOR_FORWARD_SELECTOR: String = js.native
+    var INDICATOR_FORWARD_SELECTOR: String
     
-    var TABS_SELECTOR: String = js.native
+    var TABS_SELECTOR: String
     
-    var TAB_SELECTOR: String = js.native
+    var TAB_SELECTOR: String
   }
   object FRAMESELECTOR {
     
@@ -113,16 +109,15 @@ object anon {
     }
   }
   
-  @js.native
   trait INDICATORBACK extends StObject {
     
-    var INDICATOR_BACK: String = js.native
+    var INDICATOR_BACK: String
     
-    var INDICATOR_ENABLED: String = js.native
+    var INDICATOR_ENABLED: String
     
-    var INDICATOR_FORWARD: String = js.native
+    var INDICATOR_FORWARD: String
     
-    var TAB: String = js.native
+    var TAB: String
   }
   object INDICATORBACK {
     
@@ -150,26 +145,25 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tabs.@material/tabs/tab/adapter.MDCTabAdapter> */
-  @js.native
   trait PartialMDCTabAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
     var deregisterInteractionHandler: js.UndefOr[
         js.Function2[/* type */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var getOffsetLeft: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetLeft: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var notifySelected: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifySelected: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var registerInteractionHandler: js.UndefOr[
         js.Function2[/* type */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   }
   object PartialMDCTabAdapter {
     
@@ -227,44 +221,43 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tabs.@material/tabs/tab-bar/adapter.MDCTabBarAdapter> */
-  @js.native
   trait PartialMDCTabBarAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var bindOnMDCTabSelectedEvent: js.UndefOr[js.Function0[Unit]] = js.native
+    var bindOnMDCTabSelectedEvent: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var getComputedLeftForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getComputedLeftForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var getComputedWidthForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getComputedWidthForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var getNumberOfTabs: js.UndefOr[js.Function0[Double]] = js.native
+    var getNumberOfTabs: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidthForIndicator: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidthForIndicator: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var isDefaultPreventedOnClickForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var isDefaultPreventedOnClickForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var isTabActiveAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var isTabActiveAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var measureTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var measureTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCTabBarChangeEventDetail, Unit]] = js.native
+    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCTabBarChangeEventDetail, Unit]] = js.undefined
     
-    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setPreventDefaultOnClickForTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* preventDefaultOnClick */ Boolean, Unit]] = js.native
+    var setPreventDefaultOnClickForTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* preventDefaultOnClick */ Boolean, Unit]] = js.undefined
     
-    var setStyleForIndicator: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.native
+    var setStyleForIndicator: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
     
-    var setTabActiveAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* isActive */ Boolean, Unit]] = js.native
+    var setTabActiveAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* isActive */ Boolean, Unit]] = js.undefined
     
-    var unbindOnMDCTabSelectedEvent: js.UndefOr[js.Function0[Unit]] = js.native
+    var unbindOnMDCTabSelectedEvent: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PartialMDCTabBarAdapter {
     
@@ -388,64 +381,63 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tabs.@material/tabs/tab-bar-scroller/adapter.MDCTabBarScrollerAdapter> */
-  @js.native
   trait PartialMDCTabBarScrollerA extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addClassToBackIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClassToBackIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addClassToForwardIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClassToForwardIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var deregisterBackIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.native
+    var deregisterBackIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.undefined
     
     var deregisterCapturedInteractionHandler: js.UndefOr[
         js.Function2[/* evt */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var deregisterForwardIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.native
+    var deregisterForwardIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.undefined
     
-    var deregisterWindowResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var deregisterWindowResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var eventTargetHasClass: js.UndefOr[js.Function2[/* target */ Element, /* className */ String, Boolean]] = js.native
+    var eventTargetHasClass: js.UndefOr[js.Function2[/* target */ Element, /* className */ String, Boolean]] = js.undefined
     
-    var getComputedLeftForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getComputedLeftForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var getComputedWidthForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getComputedWidthForTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var getNumberOfTabs: js.UndefOr[js.Function0[Double]] = js.native
+    var getNumberOfTabs: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetLeftForEventTarget: js.UndefOr[js.Function1[/* target */ HTMLElement, Double]] = js.native
+    var getOffsetLeftForEventTarget: js.UndefOr[js.Function1[/* target */ HTMLElement, Double]] = js.undefined
     
-    var getOffsetWidthForEventTarget: js.UndefOr[js.Function1[/* target */ HTMLElement, Double]] = js.native
+    var getOffsetWidthForEventTarget: js.UndefOr[js.Function1[/* target */ HTMLElement, Double]] = js.undefined
     
-    var getOffsetWidthForScrollFrame: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidthForScrollFrame: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidthForTabBar: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidthForTabBar: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollLeftForScrollFrame: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollLeftForScrollFrame: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var registerBackIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.native
+    var registerBackIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.undefined
     
     var registerCapturedInteractionHandler: js.UndefOr[
         js.Function2[/* evt */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var registerForwardIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.native
+    var registerForwardIndicatorClickHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[click], Unit]] = js.undefined
     
-    var registerWindowResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var registerWindowResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClassFromBackIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClassFromBackIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClassFromForwardIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClassFromForwardIndicator: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setScrollLeftForScrollFrame: js.UndefOr[js.Function1[/* scrollLeftAmount */ Double, Unit]] = js.native
+    var setScrollLeftForScrollFrame: js.UndefOr[js.Function1[/* scrollLeftAmount */ Double, Unit]] = js.undefined
     
-    var setTransformStyleForTabBar: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var setTransformStyleForTabBar: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTabBarScrollerA {
     
@@ -616,10 +608,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SELECTEDEVENT extends StObject {
     
-    var SELECTED_EVENT: String = js.native
+    var SELECTED_EVENT: String
   }
   object SELECTEDEVENT {
     
@@ -637,10 +628,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UPGRADED extends StObject {
     
-    var UPGRADED: String = js.native
+    var UPGRADED: String
   }
   object UPGRADED {
     

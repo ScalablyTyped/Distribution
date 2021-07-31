@@ -2,39 +2,34 @@ package typings.sentryUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("@sentry/utils/dist/path", "basename")
+  @JSImport("@sentry/utils/dist/path", JSImport.Namespace)
   @js.native
-  def basename(path: String): String = js.native
-  @JSImport("@sentry/utils/dist/path", "basename")
-  @js.native
-  def basename(path: String, ext: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/utils/dist/path", "dirname")
-  @js.native
-  def dirname(path: String): String = js.native
+  @scala.inline
+  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/path", "isAbsolute")
-  @js.native
-  def isAbsolute(path: String): Boolean = js.native
+  @scala.inline
+  def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/path", "join")
-  @js.native
-  def join(args: String*): String = js.native
+  @scala.inline
+  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/path", "normalizePath")
-  @js.native
-  def normalizePath(path: String): String = js.native
+  @scala.inline
+  def join(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/path", "relative")
-  @js.native
-  def relative(from: String, to: String): String = js.native
+  @scala.inline
+  def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils/dist/path", "resolve")
-  @js.native
-  def resolve(args: String*): String = js.native
+  @scala.inline
+  def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def resolve(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[js.Any]).asInstanceOf[String]
 }

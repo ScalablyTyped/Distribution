@@ -2,26 +2,24 @@ package typings.amqp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApplicationName extends StObject {
     
-    var applicationName: js.UndefOr[String] = js.native
+    var applicationName: js.UndefOr[String] = js.undefined
     
-    var capabilities: js.UndefOr[Consumercancelnotify] = js.native
+    var capabilities: js.UndefOr[Consumercancelnotify] = js.undefined
     
     /** Default: 'node-' + process.version */
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /** Default: node-amqp */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
     /** Default: 'nodeAMQPVersion' */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ApplicationName {
     
@@ -66,18 +64,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CaFile extends StObject {
     
-    var caFile: js.UndefOr[String] = js.native
+    var caFile: js.UndefOr[String] = js.undefined
     
-    var certFile: js.UndefOr[String] = js.native
+    var certFile: js.UndefOr[String] = js.undefined
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object CaFile {
     
@@ -119,10 +116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Consumercancelnotify extends StObject {
     
-    var consumer_cancel_notify: js.UndefOr[Boolean] = js.native
+    var consumer_cancel_notify: js.UndefOr[Boolean] = js.undefined
   }
   object Consumercancelnotify {
     

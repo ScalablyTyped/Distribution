@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamingDistributionsResult extends StObject {
   
   /**
     * The StreamingDistributionList type. 
     */
-  var StreamingDistributionList: js.UndefOr[typings.awsSdk.cloudfrontMod.StreamingDistributionList] = js.native
+  var StreamingDistributionList: js.UndefOr[typings.awsSdk.cloudfrontMod.StreamingDistributionList] = js.undefined
 }
 object ListStreamingDistributionsResult {
   

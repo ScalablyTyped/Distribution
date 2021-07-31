@@ -15,22 +15,22 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the standard model of an {@link UnoControlImageControl} . */
-@js.native
-trait UnoControlImageControlModel extends UnoControlModel {
+trait UnoControlImageControlModel
+  extends StObject
+     with UnoControlModel {
   
   /** specifies the background color (RGB) of the control. */
-  var BackgroundColor: Color = js.native
+  var BackgroundColor: Color
   
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
-  var Border: Double = js.native
+  var Border: Double
   
   /**
     * specifies the color of the border, if present
@@ -38,10 +38,10 @@ trait UnoControlImageControlModel extends UnoControlModel {
     * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
     * @since OOo 2.0
     */
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
   /** determines whether the control is enabled or disabled. */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /**
     * specifies a graphic to be displayed on the control
@@ -51,25 +51,25 @@ trait UnoControlImageControlModel extends UnoControlModel {
     * ImageURL} will be reset to an empty string.
     * @since OOo 2.1
     */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** specifies the help text of the control. */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** specifies the help URL of the control. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * specifies an URL to an image to use for the control.
     * @see Graphic
     */
-  var ImageURL: String = js.native
+  var ImageURL: String
   
   /** specifies that the control will be printed with the document. */
-  var Printable: Boolean = js.native
+  var Printable: Boolean
   
   /** specifies if the image is automatically scaled to the size of the control. */
-  var ScaleImage: Boolean = js.native
+  var ScaleImage: Boolean
   
   /**
     * defines how to scale the image
@@ -79,13 +79,20 @@ trait UnoControlImageControlModel extends UnoControlModel {
     * The value of this property is one of the {@link ImageScaleMode} constants.
     * @since OOo 3.1
     */
-  var ScaleMode: Double = js.native
+  var ScaleMode: Double
   
   /**
     * specifies that the control can be reached with the TAB key.
     * @since OOo 1.1.2
     */
-  var Tabstop: Boolean = js.native
+  var Tabstop: Boolean
+  
+  /**
+    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+    * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+    */
+  /* InferMemberOverrides */
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object UnoControlImageControlModel {
   
@@ -124,7 +131,7 @@ object UnoControlImageControlModel {
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getServiceName: () => String,
     queryInterface: `type` => js.Any,
     read: XObjectInputStream => Unit,
@@ -134,7 +141,7 @@ object UnoControlImageControlModel {
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     write: XObjectOutputStream => Unit
   ): UnoControlImageControlModel = {
     val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Graphic = Graphic.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], ImageURL = ImageURL.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ScaleImage = ScaleImage.asInstanceOf[js.Any], ScaleMode = ScaleMode.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tabstop = Tabstop.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -155,6 +162,9 @@ object UnoControlImageControlModel {
     
     @scala.inline
     def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])

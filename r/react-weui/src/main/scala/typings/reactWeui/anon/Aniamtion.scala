@@ -2,27 +2,25 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aniamtion extends StObject {
   
-  var aniamtion: Boolean = js.native
+  var aniamtion: Boolean
   
-  var defaultIndex: Double = js.native
+  var defaultIndex: Double
   
-  var groupIndex: Double = js.native
+  var groupIndex: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var indicatorHeight: Double = js.native
+  var indicatorHeight: Double
   
-  var indicatorTop: Double = js.native
+  var indicatorTop: Double
   
-  var itemHeight: Double = js.native
+  var itemHeight: Double
   
-  var mapKeys: Label = js.native
+  var mapKeys: Label
 }
 object Aniamtion {
   

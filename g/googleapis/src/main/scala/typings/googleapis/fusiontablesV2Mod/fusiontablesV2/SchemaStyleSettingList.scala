@@ -2,36 +2,34 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of styles for a given table.
   */
-@js.native
 trait SchemaStyleSettingList extends StObject {
   
   /**
     * All requested style settings.
     */
-  var items: js.UndefOr[js.Array[SchemaStyleSetting]] = js.native
+  var items: js.UndefOr[js.Array[SchemaStyleSetting]] = js.undefined
   
   /**
     * The kind of item this is. For a style list, this is always
     * fusiontables#styleSettingList .
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. No token is displayed
     * if there are no more styles left.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of styles for the table.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaStyleSettingList {
   

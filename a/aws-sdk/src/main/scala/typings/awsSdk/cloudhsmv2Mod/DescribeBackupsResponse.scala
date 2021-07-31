@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBackupsResponse extends StObject {
   
   /**
     * A list of backups.
     */
-  var Backups: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backups] = js.native
+  var Backups: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backups] = js.undefined
   
   /**
     * An opaque string that indicates that the response contains only a subset of backups. Use this value in a subsequent DescribeBackups request to get more backups.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.NextToken] = js.undefined
 }
 object DescribeBackupsResponse {
   

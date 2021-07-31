@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringFilter extends StObject {
   
   /** If true, the string value is case sensitive. */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** The match type for this filter. */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /** The string value used for the matching. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object StringFilter {
   

@@ -2,20 +2,18 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph2dDrawPointsOption extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var onRender: js.UndefOr[js.Function0[Boolean]] = js.native
+  var onRender: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   // TODO
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: Graph2dDrawPointsStyle = js.native
+  var style: Graph2dDrawPointsStyle
 }
 object Graph2dDrawPointsOption {
   

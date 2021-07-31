@@ -3,7 +3,6 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [projects.models.versions.list](/ml-engine/reference/rest/v1/projects.models.versions/list).
   * Next ID: 30
   */
-@js.native
 trait SchemaGoogleCloudMlV1Version extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * ramp up traffic according to the model&#39;s ability to scale or you will
     * start seeing increases in latency and 429 response codes.
     */
-  var autoScaling: js.UndefOr[SchemaGoogleCloudMlV1AutoScaling] = js.native
+  var autoScaling: js.UndefOr[SchemaGoogleCloudMlV1AutoScaling] = js.undefined
   
   /**
     * Output only. The time the version was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Google Cloud Storage location of the trained model used to
@@ -41,17 +39,17 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * this location is useful only as a historical record. The total number of
     * model files can&#39;t exceed 1000.
     */
-  var deploymentUri: js.UndefOr[String] = js.native
+  var deploymentUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The description specified for the version when it was created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The details of a failure or a cancellation.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help
@@ -62,7 +60,7 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * systems are expected to put that etag in the request to `UpdateVersion`
     * to ensure that their change will be applied to the model as intended.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The machine learning framework Cloud ML Engine uses to train
@@ -72,7 +70,7 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * choose `SCIKIT_LEARN` or `XGBOOST`, you must also set the runtime version
     * of the model to 1.4 or greater.
     */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If true, this version will be used to handle prediction
@@ -80,7 +78,7 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * version by calling
     * [projects.methods.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. One or more labels that you can add, to organize your model
@@ -90,12 +88,12 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * href=&quot;/ml-engine/docs/tensorflow/resource-labels&quot;&gt;using
     * labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The time the version was last used for prediction.
     */
-  var lastUseTime: js.UndefOr[String] = js.native
+  var lastUseTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The type of machine on which to serve the model. Currently only
@@ -108,7 +106,7 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * deprecated name for this machine type is &quot;mls1-highcpu-4&quot;.
     * &lt;/dd&gt; &lt;/dl&gt;
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Manually select the number of nodes to use for serving the model. You
@@ -118,13 +116,13 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * exceeds that capability of the system to serve it based on the selected
     * number of nodes.
     */
-  var manualScaling: js.UndefOr[SchemaGoogleCloudMlV1ManualScaling] = js.native
+  var manualScaling: js.UndefOr[SchemaGoogleCloudMlV1ManualScaling] = js.undefined
   
   /**
     * Required.The name specified for the version when it was created.  The
     * version name must be unique within the model it is created in.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The version of Python used in prediction. If not set, the
@@ -132,7 +130,7 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * `runtime_version` is set to &#39;1.4&#39; and above. Python &#39;2.7&#39;
     * works with all supported runtime versions.
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Cloud ML Engine runtime version to use for this deployment.
@@ -141,12 +139,12 @@ trait SchemaGoogleCloudMlV1Version extends StObject {
     * list](/ml-engine/docs/runtime-version-list) and [how to manage runtime
     * versions](/ml-engine/docs/versioning).
     */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The state of a version.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1Version {
   

@@ -2,17 +2,16 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale
-  extends EventBindable
+  extends StObject
+     with EventBindable
      with MapControl {
   
-  var offset: Pixel = js.native
+  var offset: Pixel
   
-  var position: String = js.native
+  var position: String
 }
 object Scale {
   

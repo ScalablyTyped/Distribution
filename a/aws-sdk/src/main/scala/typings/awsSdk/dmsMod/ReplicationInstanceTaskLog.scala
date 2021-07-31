@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationInstanceTaskLog extends StObject {
   
   /**
     * The size, in bytes, of the replication task log.
     */
-  var ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.native
+  var ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication task.
     */
-  var ReplicationTaskArn: js.UndefOr[String] = js.native
+  var ReplicationTaskArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the replication task.
     */
-  var ReplicationTaskName: js.UndefOr[String] = js.native
+  var ReplicationTaskName: js.UndefOr[String] = js.undefined
 }
 object ReplicationInstanceTaskLog {
   

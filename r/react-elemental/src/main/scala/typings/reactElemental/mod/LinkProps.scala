@@ -4,18 +4,18 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+trait LinkProps
+  extends StObject
+     with AnchorHTMLAttributes[HTMLAnchorElement] {
   
-  val activeColor: js.UndefOr[String] = js.native
+  val activeColor: js.UndefOr[String] = js.undefined
   
-  val ref: js.UndefOr[String] = js.native
+  val ref: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  val type_LinkProps: js.UndefOr[LinkType] = js.native
+  val type_LinkProps: js.UndefOr[LinkType] = js.undefined
 }
 object LinkProps {
   

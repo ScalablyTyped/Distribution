@@ -9,30 +9,28 @@ import typings.csstype.mod.BackgroundRepeatProperty
 import typings.csstype.mod.BackgroundSizeProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Component definitions
   */
-@js.native
 trait CSSImageStyleBackgroundProps extends StObject {
   
-  var attachment: js.UndefOr[BackgroundAttachmentProperty] = js.native
+  var attachment: js.UndefOr[BackgroundAttachmentProperty] = js.undefined
   
-  var clip: js.UndefOr[BackgroundClipProperty] = js.native
+  var clip: js.UndefOr[BackgroundClipProperty] = js.undefined
   
-  var color: js.UndefOr[BackgroundColorProperty] = js.native
+  var color: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var image: Obj | Binary | String = js.native
+  var image: Obj | Binary | String
   
-  var origin: js.UndefOr[BackgroundOriginProperty] = js.native
+  var origin: js.UndefOr[BackgroundOriginProperty] = js.undefined
   
-  var position: js.UndefOr[BackgroundPositionProperty[String | Double]] = js.native
+  var position: js.UndefOr[BackgroundPositionProperty[String | Double]] = js.undefined
   
-  var repeat: js.UndefOr[BackgroundRepeatProperty] = js.native
+  var repeat: js.UndefOr[BackgroundRepeatProperty] = js.undefined
   
-  var size: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.native
+  var size: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
 }
 object CSSImageStyleBackgroundProps {
   

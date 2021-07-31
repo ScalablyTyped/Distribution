@@ -2,23 +2,20 @@ package typings.heremaps.H.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a UI element showing the current zoom scale.
   */
-@js.native
 trait ScaleBar extends StObject
 object ScaleBar {
   
   /**
     * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.BOTTOM_RIGHT
     */
-  @js.native
   trait Options extends StObject {
     
-    var alignment: js.UndefOr[LayoutAlignment] = js.native
+    var alignment: js.UndefOr[LayoutAlignment] = js.undefined
   }
   object Options {
     

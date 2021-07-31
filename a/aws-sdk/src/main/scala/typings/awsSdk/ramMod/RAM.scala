@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -57,7 +56,7 @@ trait RAM extends Service {
   ): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_RAM: ConfigBase with ClientConfiguration = js.native
+  var config_RAM: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a resource share.

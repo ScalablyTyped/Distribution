@@ -2,23 +2,21 @@ package typings.dateFns.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Day extends StObject {
   
-  def day(args: js.Any*): js.Any = js.native
+  def day(args: js.Any*): js.Any
   
-  def dayPeriod(args: js.Any*): js.Any = js.native
+  def dayPeriod(args: js.Any*): js.Any
   
-  def era(args: js.Any*): js.Any = js.native
+  def era(args: js.Any*): js.Any
   
-  def month(args: js.Any*): js.Any = js.native
+  def month(args: js.Any*): js.Any
   
-  def ordinalNumber(args: js.Any*): js.Any = js.native
+  def ordinalNumber(args: js.Any*): js.Any
   
-  def quarter(args: js.Any*): js.Any = js.native
+  def quarter(args: js.Any*): js.Any
 }
 object Day {
   

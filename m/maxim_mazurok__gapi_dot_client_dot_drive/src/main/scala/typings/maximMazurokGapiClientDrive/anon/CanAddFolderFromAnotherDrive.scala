@@ -2,137 +2,135 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAddFolderFromAnotherDrive extends StObject {
   
   /** Whether the current user can add children to this folder. This is always false when the item is not a folder. */
-  var canAddChildren: js.UndefOr[Boolean] = js.native
+  var canAddChildren: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can add a folder from another drive (different shared drive or My Drive) to this folder. This is false when the item is not a folder. Only populated for
     * items in shared drives.
     */
-  var canAddFolderFromAnotherDrive: js.UndefOr[Boolean] = js.native
+  var canAddFolderFromAnotherDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can add a parent for the item without removing an existing parent in the same request. Not populated for shared drive files. */
-  var canAddMyDriveParent: js.UndefOr[Boolean] = js.native
+  var canAddMyDriveParent: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the copyRequiresWriterPermission restriction of this file. */
-  var canChangeCopyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+  var canChangeCopyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated */
-  var canChangeViewersCanCopyContent: js.UndefOr[Boolean] = js.native
+  var canChangeViewersCanCopyContent: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can comment on this file. */
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can copy this file. For an item in a shared drive, whether the current user can copy non-folder descendants of this item, or this item itself if it is
     * not a folder.
     */
-  var canCopy: js.UndefOr[Boolean] = js.native
+  var canCopy: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete this file. */
-  var canDelete: js.UndefOr[Boolean] = js.native
+  var canDelete: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete children of this folder. This is false when the item is not a folder. Only populated for items in shared drives. */
-  var canDeleteChildren: js.UndefOr[Boolean] = js.native
+  var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can download this file. */
-  var canDownload: js.UndefOr[Boolean] = js.native
+  var canDownload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can edit this file. Other factors may limit the type of changes a user can make to a file. For example, see canChangeCopyRequiresWriterPermission or
     * canModifyContent.
     */
-  var canEdit: js.UndefOr[Boolean] = js.native
+  var canEdit: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can list the children of this folder. This is always false when the item is not a folder. */
-  var canListChildren: js.UndefOr[Boolean] = js.native
+  var canListChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can modify the content of this file. */
-  var canModifyContent: js.UndefOr[Boolean] = js.native
+  var canModifyContent: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can modify restrictions on content of this file. */
-  var canModifyContentRestriction: js.UndefOr[Boolean] = js.native
+  var canModifyContentRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can move children of this folder outside of the shared drive. This is false when the item is not a folder. Only populated for items in shared drives. */
-  var canMoveChildrenOutOfDrive: js.UndefOr[Boolean] = js.native
+  var canMoveChildrenOutOfDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveChildrenOutOfDrive instead. */
-  var canMoveChildrenOutOfTeamDrive: js.UndefOr[Boolean] = js.native
+  var canMoveChildrenOutOfTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can move children of this folder within this drive. This is false when the item is not a folder. Note that a request to move the child may still fail
     * depending on the current user's access to the child and to the destination folder.
     */
-  var canMoveChildrenWithinDrive: js.UndefOr[Boolean] = js.native
+  var canMoveChildrenWithinDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveChildrenWithinDrive instead. */
-  var canMoveChildrenWithinTeamDrive: js.UndefOr[Boolean] = js.native
+  var canMoveChildrenWithinTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveItemOutOfDrive instead. */
-  var canMoveItemIntoTeamDrive: js.UndefOr[Boolean] = js.native
+  var canMoveItemIntoTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can move this item outside of this drive by changing its parent. Note that a request to change the parent of the item may still fail depending on the
     * new parent that is being added.
     */
-  var canMoveItemOutOfDrive: js.UndefOr[Boolean] = js.native
+  var canMoveItemOutOfDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveItemOutOfDrive instead. */
-  var canMoveItemOutOfTeamDrive: js.UndefOr[Boolean] = js.native
+  var canMoveItemOutOfTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can move this item within this drive. Note that a request to change the parent of the item may still fail depending on the new parent that is being
     * added and the parent that is being removed.
     */
-  var canMoveItemWithinDrive: js.UndefOr[Boolean] = js.native
+  var canMoveItemWithinDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveItemWithinDrive instead. */
-  var canMoveItemWithinTeamDrive: js.UndefOr[Boolean] = js.native
+  var canMoveItemWithinTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canMoveItemWithinDrive or canMoveItemOutOfDrive instead. */
-  var canMoveTeamDriveItem: js.UndefOr[Boolean] = js.native
+  var canMoveTeamDriveItem: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can read the shared drive to which this file belongs. Only populated for items in shared drives. */
-  var canReadDrive: js.UndefOr[Boolean] = js.native
+  var canReadDrive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can read the revisions resource of this file. For a shared drive item, whether revisions of non-folder descendants of this item, or this item itself if
     * it is not a folder, can be read.
     */
-  var canReadRevisions: js.UndefOr[Boolean] = js.native
+  var canReadRevisions: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canReadDrive instead. */
-  var canReadTeamDrive: js.UndefOr[Boolean] = js.native
+  var canReadTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the current user can remove children from this folder. This is always false when the item is not a folder. For a folder in a shared drive, use canDeleteChildren or
     * canTrashChildren instead.
     */
-  var canRemoveChildren: js.UndefOr[Boolean] = js.native
+  var canRemoveChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can remove a parent from the item without adding another parent in the same request. Not populated for shared drive files. */
-  var canRemoveMyDriveParent: js.UndefOr[Boolean] = js.native
+  var canRemoveMyDriveParent: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can rename this file. */
-  var canRename: js.UndefOr[Boolean] = js.native
+  var canRename: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can modify the sharing settings for this file. */
-  var canShare: js.UndefOr[Boolean] = js.native
+  var canShare: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can move this file to trash. */
-  var canTrash: js.UndefOr[Boolean] = js.native
+  var canTrash: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can trash children of this folder. This is false when the item is not a folder. Only populated for items in shared drives. */
-  var canTrashChildren: js.UndefOr[Boolean] = js.native
+  var canTrashChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can restore this file from trash. */
-  var canUntrash: js.UndefOr[Boolean] = js.native
+  var canUntrash: js.UndefOr[Boolean] = js.undefined
 }
 object CanAddFolderFromAnotherDrive {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheEngineVersionMessage extends StObject {
   
   /**
     * A list of cache engine version details. Each element in the list contains detailed information about one cache engine version.
     */
-  var CacheEngineVersions: js.UndefOr[CacheEngineVersionList] = js.native
+  var CacheEngineVersions: js.UndefOr[CacheEngineVersionList] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object CacheEngineVersionMessage {
   

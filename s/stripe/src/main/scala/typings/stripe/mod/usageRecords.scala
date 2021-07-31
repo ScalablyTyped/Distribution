@@ -3,40 +3,33 @@ package typings.stripe.mod
 import typings.stripe.stripeStrings.usage_record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usageRecords {
   
-  @js.native
-  trait IUsageRecord extends IObject {
+  trait IUsageRecord
+    extends StObject
+       with IObject {
     
-    var id: String = js.native
+    var id: String
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     @JSName("object")
-    var object_IUsageRecord: usage_record = js.native
+    var object_IUsageRecord: usage_record
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var subscription_item: String = js.native
+    var subscription_item: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object IUsageRecord {
     
     @scala.inline
-    def apply(
-      id: String,
-      livemode: Boolean,
-      `object`: usage_record,
-      quantity: Double,
-      subscription_item: String,
-      timestamp: Double
-    ): IUsageRecord = {
+    def apply(id: String, livemode: Boolean, quantity: Double, subscription_item: String, timestamp: Double): IUsageRecord = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription_item = subscription_item.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("usage_record")
       __obj.asInstanceOf[IUsageRecord]
     }
     
@@ -77,24 +70,23 @@ object usageRecords {
     def set: typings.stripe.stripeStrings.set = "set".asInstanceOf[typings.stripe.stripeStrings.set]
   }
   
-  @js.native
   trait IUsageRecordCreationOptions extends StObject {
     
     /**
       * Valid values are increment (default) or set. When using increment the specified quantity will be added to the usage at the specified
       * timestamp. The set action will overwrite the usage quantity at that timestamp.
       */
-    var action: js.UndefOr[IUsageRecordAction] = js.native
+    var action: js.UndefOr[IUsageRecordAction] = js.undefined
     
     /**
       * The usage quantity for the specified timestamp
       */
-    var quantity: Double = js.native
+    var quantity: Double
     
     /**
       * The timestamp for the usage event. This timestamp must be within the current billing period of the subscription of the provided subscription_item
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object IUsageRecordCreationOptions {
     

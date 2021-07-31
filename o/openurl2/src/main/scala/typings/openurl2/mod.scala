@@ -4,38 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("openurl2", "mailto")
+  @JSImport("openurl2", JSImport.Namespace)
   @js.native
-  def mailto(recipients: js.Array[String], fields: StringDictionary[String]): Unit = js.native
-  @JSImport("openurl2", "mailto")
-  @js.native
-  def mailto(
-    recipients: js.Array[String],
-    fields: StringDictionary[String],
-    recipientsSeparator: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("openurl2", "mailto")
-  @js.native
-  def mailto(recipients: js.Array[String], fields: StringDictionary[String], recipientsSeparator: String): Unit = js.native
-  @JSImport("openurl2", "mailto")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def mailto(recipients: js.Array[String], fields: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mailto(recipients: js.Array[String], fields: StringDictionary[String], recipientsSeparator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def mailto(
     recipients: js.Array[String],
     fields: StringDictionary[String],
     recipientsSeparator: String,
     callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mailto(
+    recipients: js.Array[String],
+    fields: StringDictionary[String],
+    recipientsSeparator: Unit,
+    callback: js.Function1[/* err */ Error, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openurl2", "open")
-  @js.native
-  def open(url: String): Unit = js.native
-  @JSImport("openurl2", "open")
-  @js.native
-  def open(url: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def open(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def open(url: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

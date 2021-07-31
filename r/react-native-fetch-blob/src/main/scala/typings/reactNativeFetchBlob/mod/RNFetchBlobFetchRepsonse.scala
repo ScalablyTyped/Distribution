@@ -2,47 +2,45 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RNFetchBlobFetchRepsonse extends StObject {
   
-  def arrayBuffer(): js.Promise[js.Array[_]] = js.native
+  def arrayBuffer(): js.Promise[js.Array[js.Any]]
   
-  def blob(): js.Promise[PolyfillBlob] = js.native
+  def blob(): js.Promise[PolyfillBlob]
   
-  var bodyUsed: Boolean = js.native
+  var bodyUsed: Boolean
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  def json(): js.Promise[_] = js.native
+  def json(): js.Promise[js.Any]
   
-  var ok: Boolean = js.native
+  var ok: Boolean
   
-  def rawResp(): js.Promise[FetchBlobResponse] = js.native
+  def rawResp(): js.Promise[FetchBlobResponse]
   
-  var resp: FetchBlobResponse = js.native
+  var resp: FetchBlobResponse
   
-  var rnfbResp: FetchBlobResponse = js.native
+  var rnfbResp: FetchBlobResponse
   
-  var rnfbRespInfo: RNFetchBlobResponseInfo = js.native
+  var rnfbRespInfo: RNFetchBlobResponseInfo
   
-  var status: Double = js.native
+  var status: Double
   
-  def text(): js.Promise[String] = js.native
+  def text(): js.Promise[String]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object RNFetchBlobFetchRepsonse {
   
   @scala.inline
   def apply(
-    arrayBuffer: () => js.Promise[js.Array[_]],
+    arrayBuffer: () => js.Promise[js.Array[js.Any]],
     blob: () => js.Promise[PolyfillBlob],
     bodyUsed: Boolean,
     headers: js.Any,
-    json: () => js.Promise[_],
+    json: () => js.Promise[js.Any],
     ok: Boolean,
     rawResp: () => js.Promise[FetchBlobResponse],
     resp: FetchBlobResponse,
@@ -61,7 +59,7 @@ object RNFetchBlobFetchRepsonse {
   implicit class RNFetchBlobFetchRepsonseMutableBuilder[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArrayBuffer(value: () => js.Promise[js.Array[_]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    def setArrayBuffer(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBlob(value: () => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
@@ -73,7 +71,7 @@ object RNFetchBlobFetchRepsonse {
     def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])

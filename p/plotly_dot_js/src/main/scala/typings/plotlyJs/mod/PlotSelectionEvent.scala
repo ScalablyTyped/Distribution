@@ -2,17 +2,15 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSelectionEvent extends StObject {
   
-  var lassoPoints: js.UndefOr[SelectionRange] = js.native
+  var lassoPoints: js.UndefOr[SelectionRange] = js.undefined
   
-  var points: js.Array[PlotDatum] = js.native
+  var points: js.Array[PlotDatum]
   
-  var range: js.UndefOr[SelectionRange] = js.native
+  var range: js.UndefOr[SelectionRange] = js.undefined
 }
 object PlotSelectionEvent {
   

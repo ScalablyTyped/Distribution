@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchImportFindingsRequest extends StObject {
   
   /**
     * A list of findings to import. To successfully import a finding, it must follow the AWS Security Finding Format. Maximum of 100 findings per request.
     */
-  var Findings: AwsSecurityFindingList = js.native
+  var Findings: AwsSecurityFindingList
 }
 object BatchImportFindingsRequest {
   

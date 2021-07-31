@@ -17,19 +17,21 @@ import typings.youtube.YT.RelatedVideos
 import typings.youtube.YT.ShowInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeNumbers {
   
   @js.native
-  sealed trait `-1` extends PlayerState
+  sealed trait `-1`
+    extends StObject
+       with PlayerState
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `0`
-    extends AutoHide
+    extends StObject
+       with AutoHide
        with AutoPlay
        with ClosedCaptionsLoadPolicy
        with Controls
@@ -47,7 +49,8 @@ object youtubeNumbers {
   
   @js.native
   sealed trait `1`
-    extends AutoHide
+    extends StObject
+       with AutoHide
        with AutoPlay
        with ClosedCaptionsLoadPolicy
        with Controls
@@ -65,23 +68,30 @@ object youtubeNumbers {
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `100` extends PlayerError
+  sealed trait `100`
+    extends StObject
+       with PlayerError
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
-  sealed trait `101` extends PlayerError
+  sealed trait `101`
+    extends StObject
+       with PlayerError
   @scala.inline
   def `101`: `101` = 101.asInstanceOf[`101`]
   
   @js.native
-  sealed trait `150` extends PlayerError
+  sealed trait `150`
+    extends StObject
+       with PlayerError
   @scala.inline
   def `150`: `150` = 150.asInstanceOf[`150`]
   
   @js.native
   sealed trait `2`
-    extends AutoHide
+    extends StObject
+       with AutoHide
        with Controls
        with PlayerError
        with PlayerState
@@ -90,14 +100,16 @@ object youtubeNumbers {
   
   @js.native
   sealed trait `3`
-    extends IvLoadPolicy
+    extends StObject
+       with IvLoadPolicy
        with PlayerState
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `5`
-    extends PlayerError
+    extends StObject
+       with PlayerError
        with PlayerState
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]

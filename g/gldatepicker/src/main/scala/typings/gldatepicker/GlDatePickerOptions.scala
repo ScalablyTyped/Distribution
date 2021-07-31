@@ -3,65 +3,63 @@ package typings.gldatepicker
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlDatePickerOptions extends StObject {
   
-  var allowMonthSelect: js.UndefOr[Boolean] = js.native
+  var allowMonthSelect: js.UndefOr[Boolean] = js.undefined
   
-  var allowYearSelect: js.UndefOr[Boolean] = js.native
+  var allowYearSelect: js.UndefOr[Boolean] = js.undefined
   
-  var borderSize: js.UndefOr[Double] = js.native
+  var borderSize: js.UndefOr[Double] = js.undefined
   
-  var calendarOffset: js.UndefOr[GlDatePickerOffset] = js.native
+  var calendarOffset: js.UndefOr[GlDatePickerOffset] = js.undefined
   
-  var cssName: js.UndefOr[String] = js.native
+  var cssName: js.UndefOr[String] = js.undefined
   
-  var dowNames: js.UndefOr[js.Array[String]] = js.native
+  var dowNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dowOffset: js.UndefOr[Double] = js.native
+  var dowOffset: js.UndefOr[Double] = js.undefined
   
-  var hideOnClick: js.UndefOr[Boolean] = js.native
+  var hideOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var monthNames: js.UndefOr[js.Array[String]] = js.native
+  var monthNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var nextArrow: js.UndefOr[String] = js.native
+  var nextArrow: js.UndefOr[String] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onHide: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.native
+  var onHide: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.undefined
   
   var onHover: js.UndefOr[
     js.Function4[/* inputElement */ JQuery, /* cell */ JQuery, /* date */ Date, /* data */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onShow: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* calendar */ JQuery, Unit]] = js.undefined
   
-  var prevArrow: js.UndefOr[String] = js.native
+  var prevArrow: js.UndefOr[String] = js.undefined
   
-  var selectableDOW: js.UndefOr[js.Array[Double]] = js.native
+  var selectableDOW: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var selectableDateRange: js.UndefOr[js.Array[GlDatePickerDateRange]] = js.native
+  var selectableDateRange: js.UndefOr[js.Array[GlDatePickerDateRange]] = js.undefined
   
-  var selectableDates: js.UndefOr[js.Array[GlDatePickerDate]] = js.native
+  var selectableDates: js.UndefOr[js.Array[GlDatePickerDate]] = js.undefined
   
-  var selectableMonths: js.UndefOr[js.Array[Double]] = js.native
+  var selectableMonths: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var selectableYears: js.UndefOr[js.Array[Double]] = js.native
+  var selectableYears: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var selectedDate: js.UndefOr[Date] = js.native
+  var selectedDate: js.UndefOr[Date] = js.undefined
   
-  var showAlways: js.UndefOr[Boolean] = js.native
+  var showAlways: js.UndefOr[Boolean] = js.undefined
   
-  var specialDates: js.UndefOr[js.Array[GlDatePickerSpecialDate]] = js.native
+  var specialDates: js.UndefOr[js.Array[GlDatePickerSpecialDate]] = js.undefined
   
-  var todayDate: js.UndefOr[Date] = js.native
+  var todayDate: js.UndefOr[Date] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object GlDatePickerOptions {
   

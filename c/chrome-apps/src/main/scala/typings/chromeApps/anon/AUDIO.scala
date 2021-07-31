@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.tab_
 import typings.chromeApps.chromeAppsStrings.window_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUDIO extends StObject {
   
-  var AUDIO: audio_ = js.native
+  var AUDIO: audio_
   
-  var SCREEN: screen_ = js.native
+  var SCREEN: screen_
   
-  var TAB: tab_ = js.native
+  var TAB: tab_
   
-  var WINDOW: window_ = js.native
+  var WINDOW: window_
 }
 object AUDIO {
   
   @scala.inline
-  def apply(AUDIO: audio_, SCREEN: screen_, TAB: tab_, WINDOW: window_): AUDIO = {
-    val __obj = js.Dynamic.literal(AUDIO = AUDIO.asInstanceOf[js.Any], SCREEN = SCREEN.asInstanceOf[js.Any], TAB = TAB.asInstanceOf[js.Any], WINDOW = WINDOW.asInstanceOf[js.Any])
+  def apply(): AUDIO = {
+    val __obj = js.Dynamic.literal(AUDIO = "audio", SCREEN = "screen", TAB = "tab", WINDOW = "window")
     __obj.asInstanceOf[AUDIO]
   }
   

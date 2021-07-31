@@ -2,21 +2,19 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublicKeysResponse extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Contains an array of PublicKey objects.  The returned public keys may have validity time ranges that overlap. 
     */
-  var PublicKeyList: js.UndefOr[typings.awsSdk.cloudtrailMod.PublicKeyList] = js.native
+  var PublicKeyList: js.UndefOr[typings.awsSdk.cloudtrailMod.PublicKeyList] = js.undefined
 }
 object ListPublicKeysResponse {
   

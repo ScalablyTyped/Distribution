@@ -13,18 +13,17 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a tabbar page list.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleTabBarPageList
-  extends XAccessibleExtendedComponent
+  extends StObject
      with XAccessibleContext
      with XAccessibleEventBroadcaster
+     with XAccessibleExtendedComponent
      with XAccessibleSelection
 object AccessibleTabBarPageList {
   

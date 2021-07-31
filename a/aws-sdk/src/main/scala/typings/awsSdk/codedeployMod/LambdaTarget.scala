@@ -2,46 +2,44 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaTarget extends StObject {
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     *  A LambdaFunctionInfo object that describes a target Lambda function. 
     */
-  var lambdaFunctionInfo: js.UndefOr[LambdaFunctionInfo] = js.native
+  var lambdaFunctionInfo: js.UndefOr[LambdaFunctionInfo] = js.undefined
   
   /**
     *  The date and time when the target Lambda function was updated by a deployment. 
     */
-  var lastUpdatedAt: js.UndefOr[Time] = js.native
+  var lastUpdatedAt: js.UndefOr[Time] = js.undefined
   
   /**
     *  The lifecycle events of the deployment to this target Lambda function. 
     */
-  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.native
+  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.undefined
   
   /**
     *  The status an AWS Lambda deployment's target Lambda function. 
     */
-  var status: js.UndefOr[TargetStatus] = js.native
+  var status: js.UndefOr[TargetStatus] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the target. 
     */
-  var targetArn: js.UndefOr[TargetArn] = js.native
+  var targetArn: js.UndefOr[TargetArn] = js.undefined
   
   /**
     *  The unique ID of a deployment target that has a type of lambdaTarget. 
     */
-  var targetId: js.UndefOr[TargetId] = js.native
+  var targetId: js.UndefOr[TargetId] = js.undefined
 }
 object LambdaTarget {
   

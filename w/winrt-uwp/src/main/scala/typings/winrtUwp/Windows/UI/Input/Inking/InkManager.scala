@@ -12,7 +12,6 @@ import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import typings.winrtUwp.Windows.UI.Input.PointerPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties and methods to manage the input, manipulation, and processing (including handwriting recognition) of one or more InkStroke objects. */
@@ -110,14 +109,14 @@ trait InkManager extends StObject {
     * @param recognitionTarget One of the values from the InkRecognitionTarget enumeration.
     * @return The results of the recognition as a collection of InkRecognitionResult objects.
     */
-  def recognizeAsync(recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def recognizeAsync(recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Performs handwriting recognition on one or more InkStroke objects.
     * @param strokeCollection The set of strokes on which recognition is performed.
     * @param recognitionTarget One of the values from the InkRecognitionTarget enumeration.
     * @return The results of the recognition as a collection of InkRecognitionResult objects.
     */
-  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def recognizeAsync(strokeCollection: InkStrokeContainer, recognitionTarget: InkRecognitionTarget): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously saves all InkStroke objects in the InkStroke collection that is managed by the InkManager to the specified stream.

@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SerachMatchCombination...
   */
-@js.native
 trait ISerachMatchCombination extends StObject {
   
   /**
     * Information about the search matches.
     */
-  var qFieldMatches: js.Array[ISerachFieldMatch] = js.native
+  var qFieldMatches: js.Array[ISerachFieldMatch]
   
   /**
     * Index of the search result, starting from 0.
     */
-  var qId: Double = js.native
+  var qId: Double
 }
 object ISerachMatchCombination {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelImageCreationRequest extends StObject {
   
   /**
     * The idempotency token used to make this request idempotent.
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The Amazon Resource Name (ARN) of the image whose creation you want to cancel.
     */
-  var imageBuildVersionArn: ImageBuildVersionArn = js.native
+  var imageBuildVersionArn: ImageBuildVersionArn
 }
 object CancelImageCreationRequest {
   

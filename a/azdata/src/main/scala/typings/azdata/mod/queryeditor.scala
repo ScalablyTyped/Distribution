@@ -6,52 +6,47 @@ import typings.std.Map
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryeditor {
   
-  @JSImport("azdata", "queryeditor.connect")
+  @JSImport("azdata", "queryeditor")
   @js.native
-  def connect(fileUri: String, connectionId: String): Thenable[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azdata", "queryeditor.getQueryDocument")
-  @js.native
-  def getQueryDocument(fileUri: String): Thenable[QueryDocument] = js.native
+  @scala.inline
+  def connect(fileUri: String, connectionId: String): Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(fileUri.asInstanceOf[js.Any], connectionId.asInstanceOf[js.Any])).asInstanceOf[Thenable[Unit]]
   
-  @JSImport("azdata", "queryeditor.registerQueryEventListener")
-  @js.native
-  def registerQueryEventListener(listener: QueryEventListener): Unit = js.native
+  @scala.inline
+  def getQueryDocument(fileUri: String): Thenable[QueryDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryDocument")(fileUri.asInstanceOf[js.Any]).asInstanceOf[Thenable[QueryDocument]]
   
-  @JSImport("azdata", "queryeditor.runQuery")
-  @js.native
-  def runQuery(fileUri: String): Unit = js.native
-  @JSImport("azdata", "queryeditor.runQuery")
-  @js.native
-  def runQuery(fileUri: String, options: js.UndefOr[scala.Nothing], runCurrentQuery: Boolean): Unit = js.native
-  @JSImport("azdata", "queryeditor.runQuery")
-  @js.native
-  def runQuery(fileUri: String, options: Map[String, String]): Unit = js.native
-  @JSImport("azdata", "queryeditor.runQuery")
-  @js.native
-  def runQuery(fileUri: String, options: Map[String, String], runCurrentQuery: Boolean): Unit = js.native
+  @scala.inline
+  def registerQueryEventListener(listener: QueryEventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerQueryEventListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def runQuery(fileUri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runQuery")(fileUri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def runQuery(fileUri: String, options: Unit, runCurrentQuery: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runQuery")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], runCurrentQuery.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def runQuery(fileUri: String, options: Map[String, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runQuery")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def runQuery(fileUri: String, options: Map[String, String], runCurrentQuery: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runQuery")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], runCurrentQuery.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait QueryDocument extends StObject {
     
     // connect the query document using the given connection profile
-    def connect(connectionProfile: ConnectionProfile): Thenable[Unit] = js.native
+    def connect(connectionProfile: ConnectionProfile): Thenable[Unit]
     
     // tab content is build using the modelview UI builder APIs
     // probably should rename DialogTab class since it is useful outside dialogs
-    def createQueryTab(tab: DialogTab): Unit = js.native
+    def createQueryTab(tab: DialogTab): Unit
     
-    var providerId: String = js.native
+    var providerId: String
     
     // set the document's execution options
-    def setExecutionOptions(options: Map[String, _]): Thenable[Unit] = js.native
+    def setExecutionOptions(options: Map[String, js.Any]): Thenable[Unit]
     
-    var uri: String = js.native
+    var uri: String
   }
   object QueryDocument {
     
@@ -60,7 +55,7 @@ object queryeditor {
       connect: ConnectionProfile => Thenable[Unit],
       createQueryTab: DialogTab => Unit,
       providerId: String,
-      setExecutionOptions: Map[String, _] => Thenable[Unit],
+      setExecutionOptions: Map[String, js.Any] => Thenable[Unit],
       uri: String
     ): QueryDocument = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), createQueryTab = js.Any.fromFunction1(createQueryTab), providerId = providerId.asInstanceOf[js.Any], setExecutionOptions = js.Any.fromFunction1(setExecutionOptions), uri = uri.asInstanceOf[js.Any])
@@ -80,7 +75,7 @@ object queryeditor {
       def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetExecutionOptions(value: Map[String, _] => Thenable[Unit]): Self = StObject.set(x, "setExecutionOptions", js.Any.fromFunction1(value))
+      def setSetExecutionOptions(value: Map[String, js.Any] => Thenable[Unit]): Self = StObject.set(x, "setExecutionOptions", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])

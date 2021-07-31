@@ -2,98 +2,96 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearAnimationOptions extends StObject {
   
   /** 背景颜色，即 CSS background-color */
-  var backgroundColor: js.UndefOr[Boolean] = js.native
+  var backgroundColor: js.UndefOr[Boolean] = js.undefined
   
   /** 底边位置，即 CSS bottom */
-  var bottom: js.UndefOr[Boolean] = js.native
+  var bottom: js.UndefOr[Boolean] = js.undefined
   
   /** 高度，即 CSS height */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /** 左边位置，即 CSS left */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /** 变换矩阵，即 CSS transform matrix */
-  var matrix: js.UndefOr[Boolean] = js.native
+  var matrix: js.UndefOr[Boolean] = js.undefined
   
   /** 三维变换矩阵，即 CSS transform matrix3d */
-  var matrix3d: js.UndefOr[Boolean] = js.native
+  var matrix3d: js.UndefOr[Boolean] = js.undefined
   
   /** 不透明度，即 CSS opacity */
-  var opacity: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Boolean] = js.undefined
   
   /** 右边位置，即 CSS right */
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
   /** 旋转，即 CSS transform rotate */
-  var rotate: js.UndefOr[Boolean] = js.native
+  var rotate: js.UndefOr[Boolean] = js.undefined
   
   /** 三维旋转，即 CSS transform rotate3d */
-  var rotate3d: js.UndefOr[Boolean] = js.native
+  var rotate3d: js.UndefOr[Boolean] = js.undefined
   
   /** X 方向旋转，即 CSS transform rotateX */
-  var rotateX: js.UndefOr[Boolean] = js.native
+  var rotateX: js.UndefOr[Boolean] = js.undefined
   
   /** Y 方向旋转，即 CSS transform rotateY */
-  var rotateY: js.UndefOr[Boolean] = js.native
+  var rotateY: js.UndefOr[Boolean] = js.undefined
   
   /** Z 方向旋转，即 CSS transform rotateZ */
-  var rotateZ: js.UndefOr[Boolean] = js.native
+  var rotateZ: js.UndefOr[Boolean] = js.undefined
   
   /** 缩放，即 CSS transform scale */
-  var scale: js.UndefOr[Boolean] = js.native
+  var scale: js.UndefOr[Boolean] = js.undefined
   
   /** 三维缩放，即 CSS transform scale3d */
-  var scale3d: js.UndefOr[Boolean] = js.native
+  var scale3d: js.UndefOr[Boolean] = js.undefined
   
   /** X 方向缩放，即 CSS transform scaleX */
-  var scaleX: js.UndefOr[Boolean] = js.native
+  var scaleX: js.UndefOr[Boolean] = js.undefined
   
   /** Y 方向缩放，即 CSS transform scaleY */
-  var scaleY: js.UndefOr[Boolean] = js.native
+  var scaleY: js.UndefOr[Boolean] = js.undefined
   
   /** Z 方向缩放，即 CSS transform scaleZ */
-  var scaleZ: js.UndefOr[Boolean] = js.native
+  var scaleZ: js.UndefOr[Boolean] = js.undefined
   
   /** 倾斜，即 CSS transform skew */
-  var skew: js.UndefOr[Boolean] = js.native
+  var skew: js.UndefOr[Boolean] = js.undefined
   
   /** X 方向倾斜，即 CSS transform skewX */
-  var skewX: js.UndefOr[Boolean] = js.native
+  var skewX: js.UndefOr[Boolean] = js.undefined
   
   /** Y 方向倾斜，即 CSS transform skewY */
-  var skewY: js.UndefOr[Boolean] = js.native
+  var skewY: js.UndefOr[Boolean] = js.undefined
   
   /** 顶边位置，即 CSS top */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /** 基点位置，即 CSS transform-origin */
-  var transformOrigin: js.UndefOr[Boolean] = js.native
+  var transformOrigin: js.UndefOr[Boolean] = js.undefined
   
   /** 位移，即 CSS transform translate */
-  var translate: js.UndefOr[Boolean] = js.native
+  var translate: js.UndefOr[Boolean] = js.undefined
   
   /** 三维位移，即 CSS transform translate3d */
-  var translate3d: js.UndefOr[Boolean] = js.native
+  var translate3d: js.UndefOr[Boolean] = js.undefined
   
   /** X 方向位移，即 CSS transform translateX */
-  var translateX: js.UndefOr[Boolean] = js.native
+  var translateX: js.UndefOr[Boolean] = js.undefined
   
   /** Y 方向位移，即 CSS transform translateY */
-  var translateY: js.UndefOr[Boolean] = js.native
+  var translateY: js.UndefOr[Boolean] = js.undefined
   
   /** Z 方向位移，即 CSS transform translateZ */
-  var translateZ: js.UndefOr[Boolean] = js.native
+  var translateZ: js.UndefOr[Boolean] = js.undefined
   
   /** 宽度，即 CSS width */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object ClearAnimationOptions {
   

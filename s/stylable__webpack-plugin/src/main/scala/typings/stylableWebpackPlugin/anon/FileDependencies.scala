@@ -10,33 +10,31 @@ import typings.stylableWebpackPlugin.typesMod.StylableModule
 import typings.stylableWebpackPlugin.typesMod.WebpackAssetModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileDependencies extends StObject {
   
-  var fileDependencies: Set[String] = js.native
+  var fileDependencies: Set[String]
   
-  var isImportedByNonStylable: Boolean = js.native
+  var isImportedByNonStylable: Boolean
   
-  var optimize: ClassNameOptimizations = js.native
+  var optimize: ClassNameOptimizations
   
-  var runtimeInfo: CalcResult = js.native
+  var runtimeInfo: CalcResult
   
-  var stylableAssetReplacement: js.Array[WebpackAssetModule] = js.native
+  var stylableAssetReplacement: js.Array[WebpackAssetModule]
   
-  var stylableMeta: StylableMeta = js.native
+  var stylableMeta: StylableMeta
   
-  var stylableTransformed: Boolean = js.native
+  var stylableTransformed: Boolean
   
-  var stylableTransformedAst: Root_ = js.native
+  var stylableTransformedAst: Root_
   
-  var stylableTransformedExports: StylableExports = js.native
+  var stylableTransformedExports: StylableExports
   
-  var usageMapping: Record[String, Boolean] = js.native
+  var usageMapping: Record[String, Boolean]
   
-  var usedStylableModules: js.Array[StylableModule] = js.native
+  var usedStylableModules: js.Array[StylableModule]
 }
 object FileDependencies {
   

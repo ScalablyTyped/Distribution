@@ -2,19 +2,17 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationControllable extends StObject {
   
-  var annotation: Annotation = js.native
+  var annotation: Annotation
   
-  var chart: Chart_ = js.native
+  var chart: Chart_
   
-  var collection: String = js.native
+  var collection: String
   
-  var points: js.Array[Point] = js.native
+  var points: js.Array[Point]
 }
 object AnnotationControllable {
   

@@ -5,17 +5,18 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("saslmechanisms", JSImport.Namespace)
   @js.native
-  class ^ () extends Factory
+  class ^ ()
+    extends StObject
+       with Factory
   @JSImport("saslmechanisms", JSImport.Namespace)
   @js.native
-  val ^ : Instantiable0[Factory] = js.native
+  val ^ : js.Object & Instantiable0[Factory] = js.native
   
   @js.native
   trait Factory extends StObject {
@@ -33,19 +34,20 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("saslmechanisms", "Factory")
   @js.native
-  class FactoryCls () extends Factory
+  class FactoryCls ()
+    extends StObject
+       with Factory
   
   @scala.inline
   def Factory_=(x: Instantiable0[Factory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Mechanism extends StObject {
     
-    def challenge(chal: String): Unit = js.native
+    def challenge(chal: String): Unit
     
-    var name: String = js.native
+    var name: String
     
-    def response(cred: StringDictionary[js.Any]): String = js.native
+    def response(cred: StringDictionary[js.Any]): String
   }
   object Mechanism {
     
@@ -70,10 +72,12 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait MechanismStatic extends Instantiable0[Mechanism]
+  trait MechanismStatic
+    extends StObject
+       with Instantiable0[Mechanism]
   
-  type _To = Instantiable0[Factory]
+  type _To = js.Object & Instantiable0[Factory]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Instantiable0[Factory] = ^
+  override def _to: js.Object & Instantiable0[Factory] = ^
 }

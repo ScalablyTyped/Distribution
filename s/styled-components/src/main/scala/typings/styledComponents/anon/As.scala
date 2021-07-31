@@ -3,26 +3,24 @@ package typings.styledComponents.anon
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait As[C /* <: String | ComponentType[_] */] extends StObject {
+trait As[C /* <: String | ComponentType[js.Any] */] extends StObject {
   
-  var as: js.UndefOr[C] = js.native
+  var as: js.UndefOr[C] = js.undefined
   
-  var forwardedAs: js.UndefOr[C] = js.native
+  var forwardedAs: js.UndefOr[C] = js.undefined
 }
 object As {
   
   @scala.inline
-  def apply[C /* <: String | ComponentType[_] */](): As[C] = {
+  def apply[C /* <: String | ComponentType[js.Any] */](): As[C] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[As[C]]
   }
   
   @scala.inline
-  implicit class AsMutableBuilder[Self <: As[_], C /* <: String | ComponentType[_] */] (val x: Self with As[C]) extends AnyVal {
+  implicit class AsMutableBuilder[Self <: As[?], C /* <: String | ComponentType[js.Any] */] (val x: Self & As[C]) extends AnyVal {
     
     @scala.inline
     def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

@@ -2,36 +2,34 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildSummary extends StObject {
   
   /**
     * The batch build ARN.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the build group.  FAILED  The build group failed.  FAULT  The build group faulted.  IN_PROGRESS  The build group is still in progress.  STOPPED  The build group stopped.  SUCCEEDED  The build group succeeded.  TIMED_OUT  The build group timed out.  
     */
-  var buildStatus: js.UndefOr[StatusType] = js.native
+  var buildStatus: js.UndefOr[StatusType] = js.undefined
   
   /**
     * A ResolvedArtifact object that represents the primary build artifacts for the build group.
     */
-  var primaryArtifact: js.UndefOr[ResolvedArtifact] = js.native
+  var primaryArtifact: js.UndefOr[ResolvedArtifact] = js.undefined
   
   /**
     * When the build was started, expressed in Unix time format.
     */
-  var requestedOn: js.UndefOr[Timestamp] = js.native
+  var requestedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An array of ResolvedArtifact objects that represents the secondary build artifacts for the build group.
     */
-  var secondaryArtifacts: js.UndefOr[ResolvedSecondaryArtifacts] = js.native
+  var secondaryArtifacts: js.UndefOr[ResolvedSecondaryArtifacts] = js.undefined
 }
 object BuildSummary {
   

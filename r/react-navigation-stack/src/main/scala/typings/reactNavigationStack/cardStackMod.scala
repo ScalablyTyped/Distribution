@@ -16,7 +16,6 @@ import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardStackMod {
@@ -29,9 +28,12 @@ object cardStackMod {
   /* static members */
   object default {
     
-    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/CardStack", "default.getDerivedStateFromProps")
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/CardStack", JSImport.Default)
     @js.native
-    def getDerivedStateFromProps(props: Props, state: State): Gestures | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(props: Props, state: State): Gestures | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gestures | Null]
   }
   
   @js.native
@@ -49,56 +51,55 @@ object cardStackMod {
   
   type GestureValues = StringDictionary[Value]
   
-  @js.native
   trait Props extends StObject {
     
-    var closingRouteKeys: js.Array[String] = js.native
+    var closingRouteKeys: js.Array[String]
     
-    var descriptors: StackDescriptorMap = js.native
+    var descriptors: StackDescriptorMap
     
-    var detachInactiveScreens: js.UndefOr[Boolean] = js.native
+    var detachInactiveScreens: js.UndefOr[Boolean] = js.undefined
     
-    def getGesturesEnabled(props: Route): Boolean = js.native
+    def getGesturesEnabled(props: Route): Boolean
     
-    def getPreviousRoute(props: Route): js.UndefOr[typings.reactNavigationStack.vendorTypesMod.Route[String]] = js.native
+    def getPreviousRoute(props: Route): js.UndefOr[typings.reactNavigationStack.vendorTypesMod.Route[String]]
     
-    var headerMode: StackHeaderMode = js.native
+    var headerMode: StackHeaderMode
     
-    var insets: EdgeInsets = js.native
+    var insets: EdgeInsets
     
-    var isParentHeaderShown: Boolean = js.native
+    var isParentHeaderShown: Boolean
     
-    var mode: StackCardMode = js.native
+    var mode: StackCardMode
     
-    def onCloseRoute(props: Route): Unit = js.native
+    def onCloseRoute(props: Route): Unit
     
-    var onGestureCancel: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.native
+    var onGestureCancel: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.undefined
     
-    var onGestureEnd: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.native
+    var onGestureEnd: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.undefined
     
-    var onGestureStart: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.native
+    var onGestureStart: js.UndefOr[js.Function1[/* props */ Route, Unit]] = js.undefined
     
-    def onOpenRoute(props: Route): Unit = js.native
+    def onOpenRoute(props: Route): Unit
     
-    var onPageChangeCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPageChangeCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPageChangeConfirm: js.UndefOr[js.Function1[/* force */ Boolean, Unit]] = js.native
+    var onPageChangeConfirm: js.UndefOr[js.Function1[/* force */ Boolean, Unit]] = js.undefined
     
-    var onPageChangeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPageChangeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def onTransitionEnd(props: Route, closing: Boolean): Unit = js.native
+    def onTransitionEnd(props: Route, closing: Boolean): Unit
     
-    def onTransitionStart(props: Route, closing: Boolean): Unit = js.native
+    def onTransitionStart(props: Route, closing: Boolean): Unit
     
-    var openingRouteKeys: js.Array[String] = js.native
+    var openingRouteKeys: js.Array[String]
     
-    def renderHeader(props: typings.reactNavigationStack.headerContainerMod.Props): ReactNode = js.native
+    def renderHeader(props: typings.reactNavigationStack.headerContainerMod.Props): ReactNode
     
-    def renderScene(props: Route): ReactNode = js.native
+    def renderScene(props: Route): ReactNode
     
-    var routes: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]] = js.native
+    var routes: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]
     
-    var state: NavigationState = js.native
+    var state: NavigationState
   }
   object Props {
     
@@ -233,20 +234,19 @@ object cardStackMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var descriptors: StackDescriptorMap = js.native
+    var descriptors: StackDescriptorMap
     
-    var gestures: GestureValues = js.native
+    var gestures: GestureValues
     
-    var headerHeights: Record[String, Double] = js.native
+    var headerHeights: Record[String, Double]
     
-    var layout: Layout = js.native
+    var layout: Layout
     
-    var routes: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]] = js.native
+    var routes: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]
     
-    var scenes: js.Array[Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]] = js.native
+    var scenes: js.Array[Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]]
   }
   object State {
     

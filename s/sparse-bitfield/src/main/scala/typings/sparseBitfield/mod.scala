@@ -7,26 +7,66 @@ import typings.memoryPager.mod.PagerInstance
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("sparse-bitfield", JSImport.Namespace)
   @js.native
-  val ^ : BitField = js.native
+  val ^ : js.Object & BitField = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("sparse-bitfield", JSImport.Namespace)
   @js.native
-  class Class () extends BitFieldInstance {
+  class Class ()
+    extends StObject
+       with BitFieldInstance {
     def this(bufferOrOptions: Buffer) = this()
     def this(bufferOrOptions: Options) = this()
+    
+    /**
+      * Get the value of a bit.
+      */
+    /* CompleteClass */
+    override def get(index: Double): Boolean = js.native
+    
+    /**
+      * Get the value of a byte.
+      */
+    /* CompleteClass */
+    override def getByte(index: Double): Double = js.native
+    
+    /**
+      * A `memory-pager` instance that is managing the underlying memory.
+      * If you set `trackUpdates` to `true` in the constructor you can use `.lastUpdate()` on this instance
+      * to get the last updated memory page.
+      */
+    /* CompleteClass */
+    override val pages: PagerInstance = js.native
+    
+    /**
+      * Set a bit to true or false.
+      */
+    /* CompleteClass */
+    override def set(index: Double, value: Boolean): Boolean = js.native
+    
+    /**
+      * Set a byte to a new value.
+      */
+    /* CompleteClass */
+    override def setByte(index: Double, byte: Double): Boolean = js.native
+    
+    /**
+      * Get a single buffer representing the entire bitfield.
+      */
+    /* CompleteClass */
+    override def toBuffer(): Buffer = js.native
   }
   
   @js.native
   trait BitField
-    extends Instantiable0[BitFieldInstance]
+    extends StObject
+       with Instantiable0[BitFieldInstance]
        with Instantiable1[(/* bufferOrOptions */ Buffer) | (/* bufferOrOptions */ Options), BitFieldInstance] {
     
     def apply(): BitFieldInstance = js.native
@@ -34,40 +74,39 @@ object mod extends Shortcut {
     def apply(bufferOrOptions: Options): BitFieldInstance = js.native
   }
   
-  @js.native
   trait BitFieldInstance extends StObject {
     
     /**
       * Get the value of a bit.
       */
-    def get(index: Double): Boolean = js.native
+    def get(index: Double): Boolean
     
     /**
       * Get the value of a byte.
       */
-    def getByte(index: Double): Double = js.native
+    def getByte(index: Double): Double
     
     /**
       * A `memory-pager` instance that is managing the underlying memory.
       * If you set `trackUpdates` to `true` in the constructor you can use `.lastUpdate()` on this instance
       * to get the last updated memory page.
       */
-    val pages: PagerInstance = js.native
+    val pages: PagerInstance
     
     /**
       * Set a bit to true or false.
       */
-    def set(index: Double, value: Boolean): Boolean = js.native
+    def set(index: Double, value: Boolean): Boolean
     
     /**
       * Set a byte to a new value.
       */
-    def setByte(index: Double, byte: Double): Boolean = js.native
+    def setByte(index: Double, byte: Double): Boolean
     
     /**
       * Get a single buffer representing the entire bitfield.
       */
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
   }
   object BitFieldInstance {
     
@@ -107,35 +146,34 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * An existing bitfield.
       */
-    var buffer: js.UndefOr[Buffer] = js.native
+    var buffer: js.UndefOr[Buffer] = js.undefined
     
     /**
       * @default 0
       */
-    var pageOffset: js.UndefOr[Double] = js.native
+    var pageOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * How big should the partial buffers be.
       * @default 1024
       */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * A pre-configured Pager instance.
       */
-    var pages: js.UndefOr[PagerInstance] = js.native
+    var pages: js.UndefOr[PagerInstance] = js.undefined
     
     /**
       * Track when pages are being updated in the pager.
       * @default false
       */
-    var trackUpdates: js.UndefOr[Boolean] = js.native
+    var trackUpdates: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -180,8 +218,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = BitField
+  type _To = js.Object & BitField
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: BitField = ^
+  override def _to: js.Object & BitField = ^
 }

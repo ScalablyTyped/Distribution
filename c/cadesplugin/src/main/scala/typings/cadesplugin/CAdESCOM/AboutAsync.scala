@@ -5,18 +5,16 @@ import typings.cadesplugin.CADESCommon.PromisifiedFunction
 import typings.cadesplugin.CADESCommon.Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.About> */
-@js.native
 trait AboutAsync extends StObject {
   
   val BuildVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double] = js.native
+  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
   
   val CSPName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* ProviderType */ js.UndefOr[Double], String]]]) | (PromisifiedFunction[js.Function1[/* ProviderType */ js.UndefOr[Double], String]]) = js.native
+  js.Promise[Unpacked[js.Function1[/* ProviderType */ js.UndefOr[Double], String]]]) | (PromisifiedFunction[js.Function1[/* ProviderType */ js.UndefOr[Double], String]])
   
   val CSPVersion: (// tslint:disable-line ban-types
   js.Promise[
@@ -33,16 +31,16 @@ trait AboutAsync extends StObject {
       /* ProviderType */ js.UndefOr[Double], 
       typings.cadesplugin.CAdESCOM.Version
     ]
-  ]) = js.native
+  ])
   
   val MajorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double] = js.native
+  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
   
   val MinorVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double] = js.native
+  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
   
   val PluginVersion: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[typings.cadesplugin.CAdESCOM.Version]]) | PromisifiedFunction[typings.cadesplugin.CAdESCOM.Version] = js.native
+  js.Promise[Unpacked[typings.cadesplugin.CAdESCOM.Version]]) | PromisifiedFunction[typings.cadesplugin.CAdESCOM.Version]
   
   val ProviderVersion: (// tslint:disable-line ban-types
   js.Promise[
@@ -51,14 +49,14 @@ trait AboutAsync extends StObject {
     ]
   ]) | (PromisifiedFunction[
     js.Function2[/* ProviderName */ js.UndefOr[String], /* ProviderType */ js.UndefOr[Double], String]
-  ]) = js.native
+  ])
   
   val Version: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   @JSName("toString")
   val toString_FAboutAsync: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function0[String]]]) | PromisifiedFunction[js.Function0[String]] = js.native
+  js.Promise[Unpacked[js.Function0[String]]]) | PromisifiedFunction[js.Function0[String]]
 }
 object AboutAsync {
   
@@ -121,7 +119,7 @@ object AboutAsync {
     def setBuildVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "BuildVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -135,7 +133,7 @@ object AboutAsync {
       value: js.UndefOr[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any]) | Double
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | Double
         ] => js.Promise[Unpacked[js.Any]] | String
     ): Self = StObject.set(x, "CSPName", js.Any.fromFunction1(value))
     
@@ -163,7 +161,7 @@ object AboutAsync {
     def setCSPVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "CSPVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -179,7 +177,7 @@ object AboutAsync {
     def setMajorVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "MajorVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -192,7 +190,7 @@ object AboutAsync {
     def setMinorVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "MinorVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -205,7 +203,7 @@ object AboutAsync {
     def setPluginVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "PluginVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -224,7 +222,7 @@ object AboutAsync {
     def setProviderVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "ProviderVersion", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -243,7 +241,7 @@ object AboutAsync {
     def setToString_Function1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -256,7 +254,7 @@ object AboutAsync {
     def setVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Version", js.Any.fromFunction1(value))
   }
 }

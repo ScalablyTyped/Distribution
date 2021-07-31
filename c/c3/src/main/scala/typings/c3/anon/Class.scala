@@ -2,22 +2,20 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Class extends StObject {
   
   /** Class to apply to the line. */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var value_x1: js.UndefOr[Double] = js.native
+  var value_x1: js.UndefOr[Double] = js.undefined
   
-  var value_x2: js.UndefOr[Double] = js.native
+  var value_x2: js.UndefOr[Double] = js.undefined
   
-  var value_y1: js.UndefOr[Double] = js.native
+  var value_y1: js.UndefOr[Double] = js.undefined
   
-  var value_y2: js.UndefOr[Double] = js.native
+  var value_y2: js.UndefOr[Double] = js.undefined
 }
 object Class {
   

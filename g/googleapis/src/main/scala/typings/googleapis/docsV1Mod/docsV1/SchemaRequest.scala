@@ -2,94 +2,92 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single update to apply to a document.
   */
-@js.native
 trait SchemaRequest extends StObject {
   
   /**
     * Creates a named range.
     */
-  var createNamedRange: js.UndefOr[SchemaCreateNamedRangeRequest] = js.native
+  var createNamedRange: js.UndefOr[SchemaCreateNamedRangeRequest] = js.undefined
   
   /**
     * Creates bullets for paragraphs.
     */
-  var createParagraphBullets: js.UndefOr[SchemaCreateParagraphBulletsRequest] = js.native
+  var createParagraphBullets: js.UndefOr[SchemaCreateParagraphBulletsRequest] = js.undefined
   
   /**
     * Deletes content from the document.
     */
-  var deleteContentRange: js.UndefOr[SchemaDeleteContentRangeRequest] = js.native
+  var deleteContentRange: js.UndefOr[SchemaDeleteContentRangeRequest] = js.undefined
   
   /**
     * Deletes a named range.
     */
-  var deleteNamedRange: js.UndefOr[SchemaDeleteNamedRangeRequest] = js.native
+  var deleteNamedRange: js.UndefOr[SchemaDeleteNamedRangeRequest] = js.undefined
   
   /**
     * Deletes bullets from paragraphs.
     */
-  var deleteParagraphBullets: js.UndefOr[SchemaDeleteParagraphBulletsRequest] = js.native
+  var deleteParagraphBullets: js.UndefOr[SchemaDeleteParagraphBulletsRequest] = js.undefined
   
   /**
     * Deletes a positioned object from the document.
     */
-  var deletePositionedObject: js.UndefOr[SchemaDeletePositionedObjectRequest] = js.native
+  var deletePositionedObject: js.UndefOr[SchemaDeletePositionedObjectRequest] = js.undefined
   
   /**
     * Deletes a column from a table.
     */
-  var deleteTableColumn: js.UndefOr[SchemaDeleteTableColumnRequest] = js.native
+  var deleteTableColumn: js.UndefOr[SchemaDeleteTableColumnRequest] = js.undefined
   
   /**
     * Deletes a row from a table.
     */
-  var deleteTableRow: js.UndefOr[SchemaDeleteTableRowRequest] = js.native
+  var deleteTableRow: js.UndefOr[SchemaDeleteTableRowRequest] = js.undefined
   
   /**
     * Inserts an inline image at the specified location.
     */
-  var insertInlineImage: js.UndefOr[SchemaInsertInlineImageRequest] = js.native
+  var insertInlineImage: js.UndefOr[SchemaInsertInlineImageRequest] = js.undefined
   
   /**
     * Inserts a page break at the specified location.
     */
-  var insertPageBreak: js.UndefOr[SchemaInsertPageBreakRequest] = js.native
+  var insertPageBreak: js.UndefOr[SchemaInsertPageBreakRequest] = js.undefined
   
   /**
     * Inserts a table at the specified location.
     */
-  var insertTable: js.UndefOr[SchemaInsertTableRequest] = js.native
+  var insertTable: js.UndefOr[SchemaInsertTableRequest] = js.undefined
   
   /**
     * Inserts an empty row into a table.
     */
-  var insertTableRow: js.UndefOr[SchemaInsertTableRowRequest] = js.native
+  var insertTableRow: js.UndefOr[SchemaInsertTableRowRequest] = js.undefined
   
   /**
     * Inserts text at the specified location.
     */
-  var insertText: js.UndefOr[SchemaInsertTextRequest] = js.native
+  var insertText: js.UndefOr[SchemaInsertTextRequest] = js.undefined
   
   /**
     * Replaces all instances of the specified text.
     */
-  var replaceAllText: js.UndefOr[SchemaReplaceAllTextRequest] = js.native
+  var replaceAllText: js.UndefOr[SchemaReplaceAllTextRequest] = js.undefined
   
   /**
     * Updates the paragraph style at the specified range.
     */
-  var updateParagraphStyle: js.UndefOr[SchemaUpdateParagraphStyleRequest] = js.native
+  var updateParagraphStyle: js.UndefOr[SchemaUpdateParagraphStyleRequest] = js.undefined
   
   /**
     * Updates the text style at the specified range.
     */
-  var updateTextStyle: js.UndefOr[SchemaUpdateTextStyleRequest] = js.native
+  var updateTextStyle: js.UndefOr[SchemaUpdateTextStyleRequest] = js.undefined
 }
 object SchemaRequest {
   

@@ -8,14 +8,14 @@ import typings.atom.atomStrings.line
 import typings.atom.atomStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorationLayerOptions extends SharedDecorationOptions {
+trait DecorationLayerOptions
+  extends StObject
+     with SharedDecorationOptions {
   
   /** One of several supported decoration types. */
-  var `type`: js.UndefOr[line | `line-number` | text | highlight | block | cursor_] = js.native
+  var `type`: js.UndefOr[line | `line-number` | text | highlight | block | cursor_] = js.undefined
 }
 object DecorationLayerOptions {
   

@@ -11,8 +11,8 @@ fetch Headers polyfill
 | Full name          | fetch-headers |
 | Keywords           | w3c, header, headers, fetch |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 563830 |
+| # dependents       | 10 |
+| # downloads        | 599838 |
 | # stars            | 2 |
 
 ## Links

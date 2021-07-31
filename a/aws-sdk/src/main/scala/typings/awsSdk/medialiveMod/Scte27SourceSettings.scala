@@ -2,10 +2,8 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scte27SourceSettings extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Scte27SourceSettings extends StObject {
     - Omit PID and specify Language: Extracts the specified language, whichever PID that happens to be.
     - Omit PID and omit Language: Valid only if source is DVB-Sub that is being passed through; all languages will be passed through.
     */
-  var Pid: js.UndefOr[integerMin1] = js.native
+  var Pid: js.UndefOr[integerMin1] = js.undefined
 }
 object Scte27SourceSettings {
   

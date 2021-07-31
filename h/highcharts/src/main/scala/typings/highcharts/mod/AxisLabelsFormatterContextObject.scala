@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisLabelsFormatterContextObject[T] extends StObject {
   
-  var axis: Axis = js.native
+  var axis: Axis
   
-  var chart: Chart_ = js.native
+  var chart: Chart_
   
-  var isFirst: Boolean = js.native
+  var isFirst: Boolean
   
-  var isLast: Boolean = js.native
+  var isLast: Boolean
   
-  var pos: Double = js.native
+  var pos: Double
   
-  var value: T = js.native
+  var value: T
 }
 object AxisLabelsFormatterContextObject {
   
@@ -29,7 +27,7 @@ object AxisLabelsFormatterContextObject {
   }
   
   @scala.inline
-  implicit class AxisLabelsFormatterContextObjectMutableBuilder[Self <: AxisLabelsFormatterContextObject[_], T] (val x: Self with AxisLabelsFormatterContextObject[T]) extends AnyVal {
+  implicit class AxisLabelsFormatterContextObjectMutableBuilder[Self <: AxisLabelsFormatterContextObject[?], T] (val x: Self & AxisLabelsFormatterContextObject[T]) extends AnyVal {
     
     @scala.inline
     def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ Stream that converts plain text files into HTML document.
 | Keywords           | parse5, parser, stream, streaming, plain, text, plain text |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 655 |
+| # downloads        | 772 |
 | # stars            | 0 |
 
 ## Links

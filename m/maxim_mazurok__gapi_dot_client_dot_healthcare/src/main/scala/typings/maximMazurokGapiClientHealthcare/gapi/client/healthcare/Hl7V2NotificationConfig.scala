@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hl7V2NotificationConfig extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait Hl7V2NotificationConfig extends StObject {
     * `PatientId("123456", "MRN")`. * `labels.x`, a string value of the label with key `x` as set using the Message.labels map. For example, `labels."priority"="high"`. The operator `:*`
     * can be used to assert the existence of a label. For example, `labels."priority":*`.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The [Cloud Pub/Sub](https://cloud.google.com/pubsub/docs/) topic that notifications of changes are published on. Supplied by the client. The notification is a `PubsubMessage` with
@@ -29,7 +27,7 @@ trait Hl7V2NotificationConfig extends StObject {
     * send notifications to fail. If a notification cannot be published to Cloud Pub/Sub, errors are logged to Cloud Logging. For more information, see [Viewing error logs in Cloud
     * Logging](/healthcare/docs/how-tos/logging)).
     */
-  var pubsubTopic: js.UndefOr[String] = js.native
+  var pubsubTopic: js.UndefOr[String] = js.undefined
 }
 object Hl7V2NotificationConfig {
   

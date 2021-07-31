@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosDeviceType extends StObject {
   
   // Whether the app should run on iPads.
-  var iPad: js.UndefOr[Boolean] = js.native
+  var iPad: js.UndefOr[Boolean] = js.undefined
   
   // Whether the app should run on iPhones and iPods.
-  var iPhoneAndIPod: js.UndefOr[Boolean] = js.native
+  var iPhoneAndIPod: js.UndefOr[Boolean] = js.undefined
 }
 object IosDeviceType {
   

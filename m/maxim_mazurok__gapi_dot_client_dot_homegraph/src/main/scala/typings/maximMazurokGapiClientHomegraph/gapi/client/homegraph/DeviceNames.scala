@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceNames extends StObject {
   
   /** List of names provided by the manufacturer rather than the user, such as serial numbers, SKUs, etc. */
-  var defaultNames: js.UndefOr[js.Array[String]] = js.native
+  var defaultNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Primary name of the device, generally provided by the user. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Additional names provided by the user for the device. */
-  var nicknames: js.UndefOr[js.Array[String]] = js.native
+  var nicknames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DeviceNames {
   

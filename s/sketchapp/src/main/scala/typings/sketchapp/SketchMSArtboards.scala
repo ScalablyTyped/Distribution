@@ -2,15 +2,13 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSArtboards extends StObject {
   
-  var artboards: SketchMSArtboard = js.native
+  var artboards: SketchMSArtboard
   
-  var name: String = js.native
+  var name: String
 }
 object SketchMSArtboards {
   

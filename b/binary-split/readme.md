@@ -10,9 +10,9 @@ a fast newline (or any delimiter) splitter stream - like require('split') but fa
 | ------------------ | :-------------: |
 | Full name          | binary-split |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 52 |
-| # downloads        | 1349727 |
+| # downloads        | 962718 |
 | # stars            | 2 |
 
 ## Links

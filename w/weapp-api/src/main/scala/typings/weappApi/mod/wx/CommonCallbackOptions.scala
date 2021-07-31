@@ -2,23 +2,21 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 公共回调函数
   */
-@js.native
 trait CommonCallbackOptions extends StObject {
   
   //  接口调用结束的回调函数
-  var complete: js.UndefOr[ResponseCallback] = js.native
+  var complete: js.UndefOr[ResponseCallback] = js.undefined
   
   //  接口调用失败回调函数
-  var fail: js.UndefOr[ResponseCallback] = js.native
+  var fail: js.UndefOr[ResponseCallback] = js.undefined
   
   //  接口调用成功回调函数
-  var success: js.UndefOr[ResponseCallback] = js.native
+  var success: js.UndefOr[ResponseCallback] = js.undefined
 }
 object CommonCallbackOptions {
   

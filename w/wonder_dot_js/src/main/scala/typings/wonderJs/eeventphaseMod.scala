@@ -1,33 +1,30 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/object/EEventPhase", JSImport.Namespace)
-@js.native
-object eeventphaseMod extends js.Object {
-  @js.native
-  sealed trait EEventPhase extends js.Object
+object eeventphaseMod {
   
   @js.native
-  object EEventPhase extends js.Object {
-    @js.native
-    sealed trait BROADCAST extends EEventPhase
-    
-    @js.native
-    sealed trait EMIT extends EEventPhase
+  sealed trait EEventPhase extends StObject
+  @JSImport("wonder.js/dist/es2015/event/object/EEventPhase", "EEventPhase")
+  @js.native
+  object EEventPhase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EEventPhase with Double] = js.native
-    /* 0 */ @js.native
-    object BROADCAST extends TopLevel[BROADCAST with Double]
+    def apply(value: Double): js.UndefOr[EEventPhase & Double] = js.native
     
-    /* 1 */ @js.native
-    object EMIT extends TopLevel[EMIT with Double]
+    @js.native
+    sealed trait BROADCAST
+      extends StObject
+         with EEventPhase
+    /* 0 */ val BROADCAST: typings.wonderJs.eeventphaseMod.EEventPhase.BROADCAST & Double = js.native
     
+    @js.native
+    sealed trait EMIT
+      extends StObject
+         with EEventPhase
+    /* 1 */ val EMIT: typings.wonderJs.eeventphaseMod.EEventPhase.EMIT & Double = js.native
   }
-  
 }
-

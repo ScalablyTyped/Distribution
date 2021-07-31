@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var pipe: js.UndefOr[Pipe] = js.native
+  var pipe: js.UndefOr[Pipe] = js.undefined
   
-  var socketAddress: js.UndefOr[SocketAddress] = js.native
+  var socketAddress: js.UndefOr[SocketAddress] = js.undefined
 }
 object Address {
   

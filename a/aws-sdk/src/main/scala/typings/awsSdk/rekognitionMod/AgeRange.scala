@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgeRange extends StObject {
   
   /**
     * The highest estimated age.
     */
-  var High: js.UndefOr[UInteger] = js.native
+  var High: js.UndefOr[UInteger] = js.undefined
   
   /**
     * The lowest estimated age.
     */
-  var Low: js.UndefOr[UInteger] = js.native
+  var Low: js.UndefOr[UInteger] = js.undefined
 }
 object AgeRange {
   

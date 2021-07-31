@@ -22,7 +22,6 @@ import typings.ngTable.resultsMod.DataResults
 import typings.ngTable.resultsMod.GroupedDataResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableControllerMod {
@@ -35,7 +34,7 @@ object ngTableControllerMod {
       $timeout: ITimeoutService,
       $parse: IParseService,
       $compile: ICompileService,
-      $attrs: IAttributes with ITableInputAttributes,
+      $attrs: IAttributes & ITableInputAttributes,
       $element: IAugmentedJQuery,
       $document: IDocumentService,
       ngTableColumn: NgTableColumn[TCol],
@@ -105,7 +104,9 @@ object ngTableControllerMod {
   }
   
   @js.native
-  trait ITableScope[T] extends IRootScopeService {
+  trait ITableScope[T]
+    extends StObject
+       with IRootScopeService {
     
     @JSName("$columns")
     var $columns: js.Array[IColumnDef] = js.native

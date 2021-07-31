@@ -2,7 +2,6 @@ package typings.markdownTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,14 +39,15 @@ object mod {
     * // | foo  |  10106  | qrstuv |
     * // | bar  |    45   |   lmno |
     */
-  @JSImport("markdown-table", JSImport.Namespace)
-  @js.native
-  def apply(table: js.Array[js.Array[String]]): String = js.native
-  @JSImport("markdown-table", JSImport.Namespace)
-  @js.native
-  def apply(table: js.Array[js.Array[String]], options: Options): String = js.native
+  @scala.inline
+  def apply(table: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(table: js.Array[js.Array[String]], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("markdown-table", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -56,7 +56,7 @@ object mod {
       * Other values are treated as `''`, which doesn't place the colon in the alignment row but does align left.
       * Only the lowercased first character is used, so `'Right'` is fine.
       */
-    var align: js.UndefOr[String | js.Array[String]] = js.native
+    var align: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Whether to align the delimiters.
@@ -77,7 +77,7 @@ object mod {
       *
       * @default true
       */
-    var alignDelimiters: js.UndefOr[Boolean] = js.native
+    var alignDelimiters: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to end each row with the delimiter.
@@ -99,7 +99,7 @@ object mod {
       *
       * @default true
       */
-    var delimiterEnd: js.UndefOr[Boolean] = js.native
+    var delimiterEnd: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to begin each row with the delimiter.
@@ -121,7 +121,7 @@ object mod {
       *
       * @default true
       */
-    var delimiterStart: js.UndefOr[Boolean] = js.native
+    var delimiterStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to add a space of padding between delimiters and cells.
@@ -142,7 +142,7 @@ object mod {
       *
       * @default true
       */
-    var padding: js.UndefOr[Boolean] = js.native
+    var padding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Method to detect the length of a cell.
@@ -189,7 +189,7 @@ object mod {
       * ```
       * @default s => s.length
       */
-    var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.native
+    var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.undefined
   }
   object Options {
     

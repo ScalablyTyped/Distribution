@@ -4,7 +4,6 @@ import typings.axeCore.mod.TagValue
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagsMod {
@@ -13,10 +12,9 @@ object tagsMod {
   @js.native
   val Tags: FunctionComponent[TagsProps] = js.native
   
-  @js.native
   trait TagsProps extends StObject {
     
-    var tags: js.Array[TagValue] = js.native
+    var tags: js.Array[TagValue]
   }
   object TagsProps {
     

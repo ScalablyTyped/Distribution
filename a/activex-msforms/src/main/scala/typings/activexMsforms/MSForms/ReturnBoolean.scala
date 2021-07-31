@@ -2,16 +2,14 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnBoolean extends StObject {
   
   @JSName("MSForms.ReturnBoolean_typekey")
-  var MSFormsDotReturnBoolean_typekey: ReturnBoolean = js.native
+  var MSFormsDotReturnBoolean_typekey: ReturnBoolean
   
-  var Value: Boolean = js.native
+  var Value: Boolean
 }
 object ReturnBoolean {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDigestContextSupplier
   * @since OOo 3.4
   */
-@js.native
-trait XDigestContext extends XInterface {
+trait XDigestContext
+  extends StObject
+     with XInterface {
   
   /** finalizes digest and disposes context. */
-  def finalizeDigestAndDispose(): SafeArray[Double] = js.native
+  def finalizeDigestAndDispose(): SafeArray[Double]
   
   /**
     * update the digest with the given data.
     * @param aData data that should be used to update the digest
     */
-  def updateDigest(aData: SeqEquiv[Double]): Unit = js.native
+  def updateDigest(aData: SeqEquiv[Double]): Unit
 }
 object XDigestContext {
   

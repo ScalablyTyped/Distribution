@@ -17,7 +17,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -134,10 +133,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
 - typings.activexLibreoffice.com_.sun.star.configuration.HierarchyElement because Already inherited
 - typings.activexLibreoffice.com_.sun.star.configuration.GroupElement because var conflicts: Name, Parent. Inlined 
-- typings.activexLibreoffice.com_.sun.star.configuration.SetElement because var conflicts: Name, Parent. Inlined  */ @js.native
-trait ConfigurationAccess
-  extends GroupAccess
+- typings.activexLibreoffice.com_.sun.star.configuration.SetElement because var conflicts: Name, Parent. Inlined  */ trait ConfigurationAccess
+  extends StObject
      with SetAccess
+     with GroupAccess
      with AccessRootElement
      with XTemplateInstance {
   
@@ -147,14 +146,14 @@ trait ConfigurationAccess
     * @returns `NULL` if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XHierarchicalPropertySet
     */
   /* InferMemberOverrides */
-  override def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo = js.native
+  override def getHierarchicalPropertySetInfo(): XHierarchicalPropertySetInfo
   
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
     * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
     */
   /* InferMemberOverrides */
-  override def getPropertySetInfo(): XPropertySetInfo = js.native
+  override def getPropertySetInfo(): XPropertySetInfo
   
   /**
     * @param aPropertyName contains the sequence of property names.
@@ -162,7 +161,7 @@ trait ConfigurationAccess
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object ConfigurationAccess {
   
@@ -204,19 +203,19 @@ object ConfigurationAccess {
     getHierarchicalName: () => String,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
     getHierarchicalPropertyValue: String => js.Any,
-    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getLocale: () => Locale,
     getName: () => String,
     getParent: () => XInterface,
     getProperties: () => SafeArray[Property],
     getPropertyByName: String => Property,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getStateAsProperty: () => PropertyState,
     getTemplateName: () => String,
     hasByHierarchicalName: String => Boolean,
@@ -233,14 +232,14 @@ object ConfigurationAccess {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setAllPropertiesToDefault: () => Unit,
     setHierarchicalPropertyValue: (String, js.Any) => Unit,
-    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     setLocale: Locale => Unit,
     setName: String => Unit,
     setParent: XInterface => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
     setPropertyToDefault: String => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     setToDefaultAsProperty: () => Unit,
     unescapeString: String => String
   ): ConfigurationAccess = {

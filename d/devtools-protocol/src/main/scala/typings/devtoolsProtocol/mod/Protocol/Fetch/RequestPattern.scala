@@ -3,27 +3,25 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPattern extends StObject {
   
   /**
     * Stage at wich to begin intercepting requests. Default is Request.
     */
-  var requestStage: js.UndefOr[RequestStage] = js.native
+  var requestStage: js.UndefOr[RequestStage] = js.undefined
   
   /**
     * If set, only requests for matching resource types will be intercepted.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * Wildcards ('*' -> zero or more, '?' -> exactly one) are allowed. Escape character is
     * backslash. Omitting is equivalent to "*".
     */
-  var urlPattern: js.UndefOr[String] = js.native
+  var urlPattern: js.UndefOr[String] = js.undefined
 }
 object RequestPattern {
   

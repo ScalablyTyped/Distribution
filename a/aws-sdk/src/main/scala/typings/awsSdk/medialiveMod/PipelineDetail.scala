@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineDetail extends StObject {
   
   /**
     * The name of the active input attachment currently being ingested by this pipeline.
     */
-  var ActiveInputAttachmentName: js.UndefOr[string] = js.native
+  var ActiveInputAttachmentName: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the input switch schedule action that occurred most recently and that resulted in the switch to the current input attachment for this pipeline.
     */
-  var ActiveInputSwitchActionName: js.UndefOr[string] = js.native
+  var ActiveInputSwitchActionName: js.UndefOr[string] = js.undefined
   
   /**
     * Pipeline ID
     */
-  var PipelineId: js.UndefOr[string] = js.native
+  var PipelineId: js.UndefOr[string] = js.undefined
 }
 object PipelineDetail {
   

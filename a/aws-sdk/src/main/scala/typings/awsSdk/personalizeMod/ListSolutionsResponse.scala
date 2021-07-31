@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSolutionsResponse extends StObject {
   
   /**
     * A token for getting the next set of solutions (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of the current solutions.
     */
-  var solutions: js.UndefOr[Solutions] = js.native
+  var solutions: js.UndefOr[Solutions] = js.undefined
 }
 object ListSolutionsResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * Specifies the ARN of the Athena resource (workgroup or data catalog) to which tags are to be added.
     */
-  var ResourceARN: AmazonResourceName = js.native
+  var ResourceARN: AmazonResourceName
   
   /**
     * A collection of one or more tags, separated by commas, to be added to an Athena workgroup or data catalog resource.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceInput {
   

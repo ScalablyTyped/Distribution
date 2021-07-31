@@ -5,38 +5,36 @@ import typings.awsSdkClientDynamodbBrowser.typesAutoScalingPolicyDescriptionMod.
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAutoScalingSettingsDescriptionMod {
   
-  @js.native
   trait AutoScalingSettingsDescription extends StObject {
     
     /**
       * <p>Disabled autoscaling for this global table or global secondary index.</p>
       */
-    var AutoScalingDisabled: js.UndefOr[Boolean] = js.native
+    var AutoScalingDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>Role ARN used for configuring autoScaling policy.</p>
       */
-    var AutoScalingRoleArn: js.UndefOr[String] = js.native
+    var AutoScalingRoleArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The maximum capacity units that a global table or global secondary index should be scaled up to.</p>
       */
-    var MaximumUnits: js.UndefOr[Double] = js.native
+    var MaximumUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The minimum capacity units that a global table or global secondary index should be scaled down to.</p>
       */
-    var MinimumUnits: js.UndefOr[Double] = js.native
+    var MinimumUnits: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Information about the scaling policies.</p>
       */
-    var ScalingPolicies: js.UndefOr[js.Array[AutoScalingPolicyDescription] | Iterable[AutoScalingPolicyDescription]] = js.native
+    var ScalingPolicies: js.UndefOr[js.Array[AutoScalingPolicyDescription] | Iterable[AutoScalingPolicyDescription]] = js.undefined
   }
   object AutoScalingSettingsDescription {
     
@@ -84,14 +82,15 @@ object typesAutoScalingSettingsDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAutoScalingSettingsDescription extends AutoScalingSettingsDescription {
+  trait UnmarshalledAutoScalingSettingsDescription
+    extends StObject
+       with AutoScalingSettingsDescription {
     
     /**
       * <p>Information about the scaling policies.</p>
       */
     @JSName("ScalingPolicies")
-    var ScalingPolicies_UnmarshalledAutoScalingSettingsDescription: js.UndefOr[js.Array[UnmarshalledAutoScalingPolicyDescription]] = js.native
+    var ScalingPolicies_UnmarshalledAutoScalingSettingsDescription: js.UndefOr[js.Array[UnmarshalledAutoScalingPolicyDescription]] = js.undefined
   }
   object UnmarshalledAutoScalingSettingsDescription {
     

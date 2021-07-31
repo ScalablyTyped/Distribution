@@ -2,36 +2,34 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SampledHTTPRequest extends StObject {
   
   /**
     * The action for the Rule that the request matched: ALLOW, BLOCK, or COUNT.
     */
-  var Action: js.UndefOr[typings.awsSdk.wafv2Mod.Action] = js.native
+  var Action: js.UndefOr[typings.awsSdk.wafv2Mod.Action] = js.undefined
   
   /**
     * A complex type that contains detailed information about the request.
     */
-  var Request: HTTPRequest = js.native
+  var Request: HTTPRequest
   
   /**
     * The name of the Rule that the request matched. For managed rule groups, the format for this name is &lt;vendor name&gt;#&lt;managed rule group name&gt;#&lt;rule name&gt;. For your own rule groups, the format for this name is &lt;rule group name&gt;#&lt;rule name&gt;. If the rule is not in a rule group, this field is absent. 
     */
-  var RuleNameWithinRuleGroup: js.UndefOr[EntityName] = js.native
+  var RuleNameWithinRuleGroup: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The time at which AWS WAF received the request from your AWS resource, in Unix time format (in seconds).
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.wafv2Mod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.wafv2Mod.Timestamp] = js.undefined
   
   /**
     * A value that indicates how one result in the response relates proportionally to other results in the response. For example, a result that has a weight of 2 represents roughly twice as many web requests as a result that has a weight of 1.
     */
-  var Weight: SampleWeight = js.native
+  var Weight: SampleWeight
 }
 object SampledHTTPRequest {
   

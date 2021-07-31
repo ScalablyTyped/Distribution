@@ -2,15 +2,15 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocationChangedAction extends RouterActions {
+trait LocationChangedAction
+  extends StObject
+     with RouterActions {
   
-  var payload: Location = js.native
+  var payload: Location
   
-  var `type`: /* "ROUTER_LOCATION_CHANGED" */ String = js.native
+  var `type`: /* "ROUTER_LOCATION_CHANGED" */ String
 }
 object LocationChangedAction {
   

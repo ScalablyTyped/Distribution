@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcesAffected extends StObject {
   
   /**
     * An array of objects, one for each S3 bucket that the finding applies to. Each object provides a set of metadata about an affected S3 bucket.
     */
-  var s3Bucket: js.UndefOr[S3Bucket] = js.native
+  var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * An array of objects, one for each S3 object that the finding applies to. Each object provides a set of metadata about an affected S3 object.
     */
-  var s3Object: js.UndefOr[S3Object] = js.native
+  var s3Object: js.UndefOr[S3Object] = js.undefined
 }
 object ResourcesAffected {
   

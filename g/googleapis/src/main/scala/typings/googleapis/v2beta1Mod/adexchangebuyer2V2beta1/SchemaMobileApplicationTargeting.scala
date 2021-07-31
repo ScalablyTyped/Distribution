@@ -2,20 +2,18 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mobile application targeting settings.
   */
-@js.native
 trait SchemaMobileApplicationTargeting extends StObject {
   
   /**
     * Publisher owned apps to be targeted or excluded by the publisher to
     * display the ads in.
     */
-  var firstPartyTargeting: js.UndefOr[SchemaFirstPartyMobileApplicationTargeting] = js.native
+  var firstPartyTargeting: js.UndefOr[SchemaFirstPartyMobileApplicationTargeting] = js.undefined
 }
 object SchemaMobileApplicationTargeting {
   

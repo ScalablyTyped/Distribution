@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureDetails extends StObject {
   
   /**
     * The path to the log file where the step failure root cause was originally recorded.
     */
-  var LogFile: js.UndefOr[String] = js.native
+  var LogFile: js.UndefOr[String] = js.undefined
   
   /**
     * The descriptive message including the error the EMR service has identified as the cause of step failure. This is text from an error log that describes the root cause of the failure.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the step failure. In the case where the service cannot successfully determine the root cause of the failure, it returns "Unknown Error" as a reason.
     */
-  var Reason: js.UndefOr[String] = js.native
+  var Reason: js.UndefOr[String] = js.undefined
 }
 object FailureDetails {
   

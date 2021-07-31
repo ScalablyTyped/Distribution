@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestingData extends StObject {
   
   /**
     * The assets used for testing.
     */
-  var Assets: js.UndefOr[typings.awsSdk.rekognitionMod.Assets] = js.native
+  var Assets: js.UndefOr[typings.awsSdk.rekognitionMod.Assets] = js.undefined
   
   /**
     * If specified, Amazon Rekognition Custom Labels creates a testing dataset with an 80/20 split of the training dataset.
     */
-  var AutoCreate: js.UndefOr[Boolean] = js.native
+  var AutoCreate: js.UndefOr[Boolean] = js.undefined
 }
 object TestingData {
   

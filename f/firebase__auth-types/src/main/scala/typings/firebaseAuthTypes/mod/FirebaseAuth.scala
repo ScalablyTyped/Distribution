@@ -6,7 +6,6 @@ import typings.firebaseUtil.subscribeMod.Observer
 import typings.firebaseUtil.subscribeMod.Unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "FirebaseAuth")
@@ -33,39 +32,45 @@ class FirebaseAuth protected () extends StObject {
   
   var languageCode: String | Null = js.native
   
-  def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, js.Any]): Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: js.Function1[/* a */ User | Null, _],
-    error: js.UndefOr[scala.Nothing],
+    nextOrObserver: js.Function1[/* a */ User | Null, js.Any],
+    error: js.Function1[/* a */ Error, js.Any]
+  ): Unsubscribe = js.native
+  def onAuthStateChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, js.Any],
+    error: js.Function1[/* a */ Error, js.Any],
     completed: Unsubscribe
   ): Unsubscribe = js.native
-  def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, js.Any], error: Unit, completed: Unsubscribe): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: Observer[js.Any]): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: Observer[js.Any], error: js.Function1[/* a */ Error, js.Any]): Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: js.Function1[/* a */ User | Null, _],
-    error: js.Function1[/* a */ Error, _],
+    nextOrObserver: Observer[js.Any],
+    error: js.Function1[/* a */ Error, js.Any],
     completed: Unsubscribe
   ): Unsubscribe = js.native
-  def onAuthStateChanged(nextOrObserver: Observer[_]): Unsubscribe = js.native
-  def onAuthStateChanged(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: Unsubscribe): Unsubscribe = js.native
-  def onAuthStateChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
-  def onAuthStateChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _], completed: Unsubscribe): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: Observer[js.Any], error: Unit, completed: Unsubscribe): Unsubscribe = js.native
   
-  def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, js.Any]): Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: js.Function1[/* a */ User | Null, _],
-    error: js.UndefOr[scala.Nothing],
+    nextOrObserver: js.Function1[/* a */ User | Null, js.Any],
+    error: js.Function1[/* a */ Error, js.Any]
+  ): Unsubscribe = js.native
+  def onIdTokenChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, js.Any],
+    error: js.Function1[/* a */ Error, js.Any],
     completed: Unsubscribe
   ): Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, js.Any], error: Unit, completed: Unsubscribe): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: Observer[js.Any]): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: Observer[js.Any], error: js.Function1[/* a */ Error, js.Any]): Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: js.Function1[/* a */ User | Null, _],
-    error: js.Function1[/* a */ Error, _],
+    nextOrObserver: Observer[js.Any],
+    error: js.Function1[/* a */ Error, js.Any],
     completed: Unsubscribe
   ): Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: Observer[_]): Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: Unsubscribe): Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _], completed: Unsubscribe): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: Observer[js.Any], error: Unit, completed: Unsubscribe): Unsubscribe = js.native
   
   def sendPasswordResetEmail(email: String): js.Promise[Unit] = js.native
   def sendPasswordResetEmail(email: String, actionCodeSettings: ActionCodeSettings): js.Promise[Unit] = js.native

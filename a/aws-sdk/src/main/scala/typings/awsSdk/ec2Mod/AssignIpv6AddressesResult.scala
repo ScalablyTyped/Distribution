@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignIpv6AddressesResult extends StObject {
   
   /**
     * The IPv6 addresses assigned to the network interface.
     */
-  var AssignedIpv6Addresses: js.UndefOr[Ipv6AddressList] = js.native
+  var AssignedIpv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
 }
 object AssignIpv6AddressesResult {
   

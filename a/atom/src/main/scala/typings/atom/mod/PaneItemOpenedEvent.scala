@@ -2,13 +2,13 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaneItemOpenedEvent extends PaneItemObservedEvent {
+trait PaneItemOpenedEvent
+  extends StObject
+     with PaneItemObservedEvent {
   
-  var uri: String = js.native
+  var uri: String
 }
 object PaneItemOpenedEvent {
   

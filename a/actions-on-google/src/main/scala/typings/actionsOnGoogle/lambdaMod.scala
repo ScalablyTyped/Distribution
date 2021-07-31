@@ -2,20 +2,29 @@ package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.frameworkFrameworkMod.Framework
+import typings.actionsOnGoogle.frameworkFrameworkMod.StandardHandler
 import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaMod {
   
   @JSImport("actions-on-google/dist/framework/lambda", "Lambda")
   @js.native
-  class Lambda_ () extends Framework[LambdaHandler] {
+  class Lambda_ ()
+    extends StObject
+       with Framework[LambdaHandler] {
     
+    /** @public */
+    /* CompleteClass */
+    override def check(args: js.Any*): Boolean = js.native
     def check(first: js.Object, second: js.Object, third: js.Object): Boolean = js.native
+    
+    /** @public */
+    /* CompleteClass */
+    override def handle(base: StandardHandler): LambdaHandler = js.native
     
     def isCallback(third: js.Object): /* is aws-lambda.aws-lambda/handler.Callback<any> */ Boolean = js.native
     
@@ -33,14 +42,13 @@ object lambdaMod {
     js.Promise[Unit]
   ]
   
-  @js.native
   trait LambdaMetadata extends StObject {
     
     /** @public */
-    var context: Context = js.native
+    var context: Context
     
     /** @public */
-    var event: JsonObject = js.native
+    var event: JsonObject
   }
   object LambdaMetadata {
     

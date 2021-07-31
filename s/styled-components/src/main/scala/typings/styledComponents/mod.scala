@@ -5,13 +5,11 @@ import typings.styledComponents.styledComponentsMod.CSSProp
 import typings.styledComponents.styledComponentsMod.DefaultTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait Attributes extends StObject {
     
     // NOTE: unlike the plain javascript version, it is not possible to get access
@@ -25,7 +23,7 @@ object mod {
       * `babel-plugin-styled-components` into a styled component
       * with the given css as its styles.
       */
-    var css: js.UndefOr[CSSProp[AnyIfEmpty[DefaultTheme]]] = js.native
+    var css: js.UndefOr[CSSProp[AnyIfEmpty[DefaultTheme]]] = js.undefined
   }
   object Attributes {
     

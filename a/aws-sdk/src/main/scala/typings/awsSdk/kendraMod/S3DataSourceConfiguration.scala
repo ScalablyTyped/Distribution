@@ -2,38 +2,36 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DataSourceConfiguration extends StObject {
   
   /**
     * Provides the path to the S3 bucket that contains the user context filtering files for the data source.
     */
-  var AccessControlListConfiguration: js.UndefOr[typings.awsSdk.kendraMod.AccessControlListConfiguration] = js.native
+  var AccessControlListConfiguration: js.UndefOr[typings.awsSdk.kendraMod.AccessControlListConfiguration] = js.undefined
   
   /**
     * The name of the bucket that contains the documents.
     */
-  var BucketName: S3BucketName = js.native
+  var BucketName: S3BucketName
   
-  var DocumentsMetadataConfiguration: js.UndefOr[typings.awsSdk.kendraMod.DocumentsMetadataConfiguration] = js.native
+  var DocumentsMetadataConfiguration: js.UndefOr[typings.awsSdk.kendraMod.DocumentsMetadataConfiguration] = js.undefined
   
   /**
     * A list of glob patterns for documents that should not be indexed. If a document that matches an inclusion prefix or inclusion pattern also matches an exclusion pattern, the document is not indexed. For more information about glob patterns, see glob (programming) in Wikipedia.
     */
-  var ExclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
+  var ExclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
   
   /**
     * A list of glob patterns for documents that should be indexed. If a document that matches an inclusion pattern also matches an exclusion pattern, the document is not indexed. For more information about glob patterns, see glob (programming) in Wikipedia.
     */
-  var InclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
+  var InclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
   
   /**
     * A list of S3 prefixes for the documents that should be included in the index.
     */
-  var InclusionPrefixes: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
+  var InclusionPrefixes: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
 }
 object S3DataSourceConfiguration {
   

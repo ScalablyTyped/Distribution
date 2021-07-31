@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskListEntry extends StObject {
   
   /**
     * The name of the task.
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
     * The status of the task.
     */
-  var Status: js.UndefOr[TaskStatus] = js.native
+  var Status: js.UndefOr[TaskStatus] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the task.
     */
-  var TaskArn: js.UndefOr[typings.awsSdk.datasyncMod.TaskArn] = js.native
+  var TaskArn: js.UndefOr[typings.awsSdk.datasyncMod.TaskArn] = js.undefined
 }
 object TaskListEntry {
   

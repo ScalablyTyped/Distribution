@@ -9,7 +9,6 @@ import typings.googleGax.taskMod.TaskCallback
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bundleExecutorMod {
@@ -64,7 +63,7 @@ object bundleExecutorMod {
     
     var _timers: StringDictionary[
         ReturnType[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setTimeout */ _
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setTimeout */ js.Any
         ]
       ] = js.native
     
@@ -84,18 +83,17 @@ object bundleExecutorMod {
     ): GRPCCallResult = js.native
   }
   
-  @js.native
   trait BundleOptions extends StObject {
     
-    var delayThreshold: js.UndefOr[Double] = js.native
+    var delayThreshold: js.UndefOr[Double] = js.undefined
     
-    var elementCountLimit: js.UndefOr[Double] = js.native
+    var elementCountLimit: js.UndefOr[Double] = js.undefined
     
-    var elementCountThreshold: js.UndefOr[Double] = js.native
+    var elementCountThreshold: js.UndefOr[Double] = js.undefined
     
-    var requestByteLimit: js.UndefOr[Double] = js.native
+    var requestByteLimit: js.UndefOr[Double] = js.undefined
     
-    var requestByteThreshold: js.UndefOr[Double] = js.native
+    var requestByteThreshold: js.UndefOr[Double] = js.undefined
   }
   object BundleOptions {
     

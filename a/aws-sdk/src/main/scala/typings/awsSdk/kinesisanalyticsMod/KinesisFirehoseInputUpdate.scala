@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisFirehoseInputUpdate extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the input Amazon Kinesis Firehose delivery stream to read.
     */
-  var ResourceARNUpdate: js.UndefOr[ResourceARN] = js.native
+  var ResourceARNUpdate: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * ARN of the IAM role that Amazon Kinesis Analytics can assume to access the stream on your behalf. You need to grant the necessary permissions to this role.
     */
-  var RoleARNUpdate: js.UndefOr[RoleARN] = js.native
+  var RoleARNUpdate: js.UndefOr[RoleARN] = js.undefined
 }
 object KinesisFirehoseInputUpdate {
   

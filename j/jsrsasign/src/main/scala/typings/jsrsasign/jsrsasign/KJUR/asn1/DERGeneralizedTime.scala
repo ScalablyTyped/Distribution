@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NOTE2: 'withMillis' property is supported from asn1 1.0.6.
   */
 @js.native
-trait DERGeneralizedTime extends DERAbstractTime {
+trait DERGeneralizedTime
+  extends StObject
+     with DERAbstractTime {
   
   /**
     * set value by a Date object

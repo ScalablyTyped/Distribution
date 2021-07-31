@@ -2,7 +2,6 @@ package typings.aureliaDependencyInjection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "Parent")
@@ -15,7 +14,10 @@ class Parent_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] pro
 /* static members */
 object Parent_ {
   
-  @JSImport("aurelia-dependency-injection", "Parent.of")
+  @JSImport("aurelia-dependency-injection", "Parent")
   @js.native
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Parent_[TBase, TImpl, TArgs] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Parent_[TBase, TImpl, TArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any]).asInstanceOf[Parent_[TBase, TImpl, TArgs]]
 }

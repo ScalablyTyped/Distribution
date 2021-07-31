@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageContext extends StObject {
   
   /**
     * The name of the stage.
     */
-  var name: js.UndefOr[StageName] = js.native
+  var name: js.UndefOr[StageName] = js.undefined
 }
 object StageContext {
   

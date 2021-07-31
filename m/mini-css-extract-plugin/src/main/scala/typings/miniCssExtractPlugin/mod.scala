@@ -3,7 +3,6 @@ package typings.miniCssExtractPlugin
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.textSlashcss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,8 +14,19 @@ object mod {
     */
   @JSImport("mini-css-extract-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends MiniCssExtractPlugin {
+  class ^ ()
+    extends StObject
+       with MiniCssExtractPlugin {
     def this(options: PluginOptions) = this()
+    
+    /**
+      * Apply the plugin
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
   @JSImport("mini-css-extract-plugin", JSImport.Namespace)
   @js.native
@@ -37,7 +47,6 @@ object mod {
     * This plugin extract CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.
     * Configuration Detail: https://github.com/webpack-contrib/mini-css-extract-plugin#configuration
     */
-  @js.native
   trait MiniCssExtractPlugin extends StObject {
     
     /**
@@ -46,7 +55,7 @@ object mod {
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object MiniCssExtractPlugin {
     
@@ -68,10 +77,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PluginOptions extends StObject {
     
-    var chunkFilename: js.UndefOr[String] = js.native
+    var chunkFilename: js.UndefOr[String] = js.undefined
     
     /**
       * By default, `mini-css-extract-plugin` generates JS modules that use the ES modules syntax.
@@ -79,7 +87,7 @@ object mod {
       * like in the case of module concatenation and tree shaking.
       * @default true
       */
-    var esModule: js.UndefOr[Boolean] = js.native
+    var esModule: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Options similar to the same options in webpackOptions.output, both options are optional
@@ -90,21 +98,21 @@ object mod {
       */
     var filename: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Required</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration * / any>['output']['filename'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * For projects where CSS ordering has been mitigated through consistent
       * use of scoping or naming conventions, the CSS order warnings can be
       * disabled by setting this flag to true for the plugin.
       */
-    var ignoreOrder: js.UndefOr[Boolean] = js.native
+    var ignoreOrder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This option allows loading asynchronous chunks with a custom link type, such as <link type="text/css" ...>.
       * `false` disables the link `type` attribute
       * @default `text/css`
       */
-    var linkType: js.UndefOr[Boolean | textSlashcss] = js.native
+    var linkType: js.UndefOr[Boolean | textSlashcss] = js.undefined
   }
   object PluginOptions {
     

@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a CloseMatterRequest.
   */
-@js.native
 trait SchemaCloseMatterResponse extends StObject {
   
   /**
     * The updated matter, with state CLOSED.
     */
-  var matter: js.UndefOr[SchemaMatter] = js.native
+  var matter: js.UndefOr[SchemaMatter] = js.undefined
 }
 object SchemaCloseMatterResponse {
   

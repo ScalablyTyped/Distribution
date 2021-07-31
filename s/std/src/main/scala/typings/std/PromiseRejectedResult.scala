@@ -3,22 +3,21 @@ package typings.std
 import typings.std.stdStrings.rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromiseRejectedResult
-  extends PromiseSettledResult[js.Any] {
+  extends StObject
+     with PromiseSettledResult[js.Any] {
   
-  var reason: js.Any = js.native
+  var reason: js.Any
   
-  var status: rejected = js.native
+  var status: rejected
 }
 object PromiseRejectedResult {
   
   @scala.inline
-  def apply(reason: js.Any, status: rejected): PromiseRejectedResult = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  def apply(reason: js.Any): PromiseRejectedResult = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
     __obj.asInstanceOf[PromiseRejectedResult]
   }
   

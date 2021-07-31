@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableMetricsCollectionQuery extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * Specifies one or more of the following metrics:    GroupMinSize     GroupMaxSize     GroupDesiredCapacity     GroupInServiceInstances     GroupPendingInstances     GroupStandbyInstances     GroupTerminatingInstances     GroupTotalInstances     GroupInServiceCapacity     GroupPendingCapacity     GroupStandbyCapacity     GroupTerminatingCapacity     GroupTotalCapacity    If you omit this parameter, all metrics are disabled. 
     */
-  var Metrics: js.UndefOr[typings.awsSdk.autoscalingMod.Metrics] = js.native
+  var Metrics: js.UndefOr[typings.awsSdk.autoscalingMod.Metrics] = js.undefined
 }
 object DisableMetricsCollectionQuery {
   

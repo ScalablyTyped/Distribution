@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame extends StObject {
   
   /** The normalized bounding box location of this object track for the frame. */
-  var normalizedBoundingBox: js.UndefOr[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox] = js.native
+  var normalizedBoundingBox: js.UndefOr[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox] = js.undefined
   
   /** The timestamp of the frame in microseconds. */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame {
   

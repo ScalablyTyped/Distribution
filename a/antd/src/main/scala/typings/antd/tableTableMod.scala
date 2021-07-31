@@ -43,16 +43,15 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableTableMod {
   
   object default {
     
-    @JSImport("antd/lib/table/Table", JSImport.Default)
-    @js.native
-    def apply[RecordType /* <: js.Object */](props: TableProps[RecordType]): Element = js.native
+    @scala.inline
+    def apply[RecordType /* <: js.Object */](props: TableProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/table/Table", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -62,18 +61,16 @@ object tableTableMod {
       * So HOC will not work on this.
       */
     /* was `typeof imported_Column.default` */
-    @JSImport("antd/lib/table/Table", "default.Column")
-    @js.native
-    def Column[RecordType](_underscore: ColumnProps[RecordType]): Null = js.native
+    @scala.inline
+    def Column[RecordType](_underscore: ColumnProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_ColumnGroup.default` */
-    @JSImport("antd/lib/table/Table", "default.ColumnGroup")
-    @js.native
-    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = js.native
+    @scala.inline
+    def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     @JSImport("antd/lib/table/Table", "default.SELECTION_ALL")
     @js.native
@@ -121,56 +118,55 @@ object tableTableMod {
   }
   
   /* Inlined parent std.Omit<rc-table.rc-table/lib/Table.TableProps<RecordType>, 'transformColumns' | 'internalHooks' | 'internalRefs' | 'data' | 'columns' | 'scroll' | 'emptyText'> */
-  @js.native
   trait TableProps[RecordType] extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var childrenColumnName: js.UndefOr[String] = js.native
+    var childrenColumnName: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.UndefOr[ColumnsType[RecordType]] = js.native
+    var columns: js.UndefOr[ColumnsType[RecordType]] = js.undefined
     
-    var components: js.UndefOr[TableComponents[RecordType]] = js.native
+    var components: js.UndefOr[TableComponents[RecordType]] = js.undefined
     
-    var dataSource: js.UndefOr[js.Array[RecordType]] = js.native
+    var dataSource: js.UndefOr[js.Array[RecordType]] = js.undefined
     
-    var defaultExpandAllRows: js.UndefOr[Boolean] = js.native
+    var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
     
-    var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var dropdownPrefixCls: js.UndefOr[String] = js.native
+    var dropdownPrefixCls: js.UndefOr[String] = js.undefined
     
-    var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.native
+    var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
     
-    var expandIconColumnIndex: js.UndefOr[Double] = js.native
+    var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
     
-    var expandRowByClick: js.UndefOr[Boolean] = js.native
+    var expandRowByClick: js.UndefOr[Boolean] = js.undefined
     
-    var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.native
+    var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.undefined
     
-    var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.native
+    var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.undefined
     
-    var expandedRowKeys: js.UndefOr[js.Array[Key]] = js.native
+    var expandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.native
+    var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.undefined
     
-    var footer: js.UndefOr[PanelRender[RecordType]] = js.native
+    var footer: js.UndefOr[PanelRender[RecordType]] = js.undefined
     
-    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.native
+    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var indentSize: js.UndefOr[Double] = js.native
+    var indentSize: js.UndefOr[Double] = js.undefined
     
-    var loading: js.UndefOr[Boolean | SpinProps] = js.native
+    var loading: js.UndefOr[Boolean | SpinProps] = js.undefined
     
-    var locale: js.UndefOr[TableLocale] = js.native
+    var locale: js.UndefOr[TableLocale] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function4[
@@ -180,45 +176,45 @@ object tableTableMod {
           /* extra */ TableCurrentDataSource[RecordType], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.native
+    var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.undefined
     
-    var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.native
+    var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
     
-    var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.native
+    var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.undefined
     
-    var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.native
+    var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
     
-    var pagination: js.UndefOr[`false` | TablePaginationConfig] = js.native
+    var pagination: js.UndefOr[`false` | TablePaginationConfig] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.native
+    var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.undefined
     
-    var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.native
+    var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.undefined
     
-    var rowSelection: js.UndefOr[TableRowSelection[RecordType]] = js.native
+    var rowSelection: js.UndefOr[TableRowSelection[RecordType]] = js.undefined
     
-    var scroll: js.UndefOr[js.UndefOr[X] with ScrollToFirstRowOnChange] = js.native
+    var scroll: js.UndefOr[js.UndefOr[X] & ScrollToFirstRowOnChange] = js.undefined
     
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
-    var showSorterTooltip: js.UndefOr[Boolean] = js.native
+    var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.native
+    var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
     
-    var sticky: js.UndefOr[Boolean | TableSticky] = js.native
+    var sticky: js.UndefOr[Boolean | TableSticky] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var summary: js.UndefOr[js.Function1[/* data */ js.Array[RecordType], ReactNode]] = js.native
+    var summary: js.UndefOr[js.Function1[/* data */ js.Array[RecordType], ReactNode]] = js.undefined
     
-    var tableLayout: js.UndefOr[TableLayout] = js.native
+    var tableLayout: js.UndefOr[TableLayout] = js.undefined
     
-    var title: js.UndefOr[PanelRender[RecordType]] = js.native
+    var title: js.UndefOr[PanelRender[RecordType]] = js.undefined
   }
   object TableProps {
     
@@ -229,7 +225,7 @@ object tableTableMod {
     }
     
     @scala.inline
-    implicit class TablePropsMutableBuilder[Self <: TableProps[_], RecordType] (val x: Self with TableProps[RecordType]) extends AnyVal {
+    implicit class TablePropsMutableBuilder[Self <: TableProps[?], RecordType] (val x: Self & TableProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
@@ -458,7 +454,7 @@ object tableTableMod {
       def setRowSelectionUndefined: Self = StObject.set(x, "rowSelection", js.undefined)
       
       @scala.inline
-      def setScroll(value: js.UndefOr[X] with ScrollToFirstRowOnChange): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      def setScroll(value: js.UndefOr[X] & ScrollToFirstRowOnChange): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)

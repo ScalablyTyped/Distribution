@@ -3,19 +3,17 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.OlSyncState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description extends StObject {
   
-  val Description: String = js.native
+  val Description: String
   
-  val Max: Double = js.native
+  val Max: Double
   
-  val State: OlSyncState = js.native
+  val State: OlSyncState
   
-  val Value: Double = js.native
+  val Value: Double
 }
 object Description {
   

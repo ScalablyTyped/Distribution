@@ -8,7 +8,6 @@ import typings.konva.typesMod.GetSet
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textPathMod {
@@ -36,7 +35,7 @@ object textPathMod {
     def data(): String = js.native
     def data(v: String): this.type = js.native
     
-    var dataArray: js.Array[_] = js.native
+    var dataArray: js.Array[js.Any] = js.native
     
     @JSName("data")
     var data_Original: GetSet[String, this.type] = js.native
@@ -104,18 +103,19 @@ object textPathMod {
     var text_Original: GetSet[String, this.type] = js.native
   }
   
-  @js.native
-  trait TextPathConfig extends ShapeConfig {
+  trait TextPathConfig
+    extends StObject
+       with ShapeConfig {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object TextPathConfig {
     

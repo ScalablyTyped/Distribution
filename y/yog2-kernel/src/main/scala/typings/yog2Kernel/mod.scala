@@ -24,7 +24,6 @@ import typings.yogBigpipe.mod.BigPipe
 import typings.yogLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,41 +32,41 @@ object mod extends Shortcut {
   @js.native
   val ^ : Yog = js.native
   
-  @js.native
   trait ActionObject
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var copy: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var copy: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var del: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var del: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var delete: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var delete: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var get: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var get: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var head: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var head: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var link: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var link: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var lock: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var lock: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var options: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var options: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var patch: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var patch: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var post: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var post: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var propfind: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var propfind: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var purge: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var purge: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var put: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var put: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var unlick: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var unlick: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var unlock: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var unlock: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var view: js.UndefOr[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var view: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
   }
   object ActionObject {
     
@@ -82,7 +81,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setCopy(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "copy", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -90,7 +89,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setDel(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "del", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -98,7 +97,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setDelete(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -106,7 +105,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setGet(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -114,7 +113,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setHead(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "head", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -122,7 +121,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setLink(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "link", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -130,7 +129,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setLock(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "lock", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -138,7 +137,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setOptions(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "options", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -146,7 +145,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setPatch(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -154,7 +153,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setPost(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -162,7 +161,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setPropfind(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "propfind", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -170,7 +169,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setPurge(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "purge", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -178,7 +177,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setPut(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -186,7 +185,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setUnlick(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "unlick", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -194,7 +193,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setUnlock(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "unlock", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -202,7 +201,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setView(
-        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ typings.expressServeStaticCore.mod.Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "view", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -231,11 +230,16 @@ object mod extends Shortcut {
   @js.native
   trait Router extends IRouter {
     
-    def action(actionName: String): (RequestHandler[ParamsDictionary, _, _, Query]) | ActionObject = js.native
+    def action(actionName: String): (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | ActionObject = js.native
     
     def wrapAsync(
-      fn: js.Function3[/* req */ Request, /* resp */ Response, /* next */ typings.express.mod.NextFunction, _]
-    ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+      fn: js.Function3[
+          /* req */ Request, 
+          /* resp */ Response, 
+          /* next */ typings.express.mod.NextFunction, 
+          js.Any
+        ]
+    ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   @js.native
@@ -256,7 +260,7 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore(value: String): typings.lodash.mod.String = js.native
     @JSName("_")
-    def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+    def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
     @JSName("_")
     def _underscore[T](value: List[T]): Collection[T] = js.native
     @JSName("_")
@@ -264,9 +268,9 @@ object mod extends Shortcut {
     @JSName("_")
     def _underscore_T_Collection[T](): Collection[T] = js.native
     @JSName("_")
-    def _underscore_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-    @JSName("_")
     def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+    @JSName("_")
+    def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
     @JSName("_")
     def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
     @JSName("_")
@@ -340,21 +344,21 @@ object mod extends Shortcut {
       * upperFirst, value, and words.
       **/
     @JSName("_")
-    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with typings.lodash.mod.String = js.native
+    def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & typings.lodash.mod.String = js.native
     
     /**
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
     def app(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, ParsedQs],
-      res: typings.expressServeStaticCore.mod.Response[_, Double]
+      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
+      res: typings.expressServeStaticCore.mod.Response[js.Any, Double]
     ): js.Any = js.native
     def app(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, ParsedQs],
+      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
       res: ServerResponse
     ): js.Any = js.native
-    def app(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_, Double]): js.Any = js.native
+    def app(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[js.Any, Double]): js.Any = js.native
     def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("app")
     var app_Original: Express = js.native
@@ -387,20 +391,19 @@ object mod extends Shortcut {
     var view: CleanCache = js.native
   }
   
-  @js.native
   trait YogBootstrapOption extends StObject {
     
     // 设置app，未设置则直接使用express
-    var app: js.UndefOr[Express] = js.native
+    var app: js.UndefOr[Express] = js.undefined
     
     // 设置conf目录
-    var confPath: js.UndefOr[String] = js.native
+    var confPath: js.UndefOr[String] = js.undefined
     
     // 设置plugins目录
-    var pluginsPath: js.UndefOr[String] = js.native
+    var pluginsPath: js.UndefOr[String] = js.undefined
     
     // 设置yog根目录，默认使用启动文件的目录
-    var rootPath: js.UndefOr[String] = js.native
+    var rootPath: js.UndefOr[String] = js.undefined
   }
   object YogBootstrapOption {
     

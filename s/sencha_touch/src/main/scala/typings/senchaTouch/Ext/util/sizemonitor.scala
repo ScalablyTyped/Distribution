@@ -4,53 +4,53 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sizemonitor {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of args
       * @returns Array
       */
-    var getArgs: js.UndefOr[js.Function0[Array]] = js.native
+    var getArgs: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of callback
       * @returns Object
       */
-    var getCallback: js.UndefOr[js.Function0[_]] = js.native
+    var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of element
       * @returns Object
       */
-    var getElement: js.UndefOr[js.Function0[_]] = js.native
+    var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of scope
       * @returns Object
       */
-    var getScope: js.UndefOr[js.Function0[_]] = js.native
+    var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of args
       * @param args Array The new value.
       */
-    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Unit]] = js.native
+    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of callback
       * @param callback Object The new value.
       */
-    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.native
+    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of element
       * @param element Object The new value.
       */
-    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of scope
       * @param scope Object The new value.
       */
-    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -70,19 +70,19 @@ object sizemonitor {
       def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
       
       @scala.inline
-      def setGetCallback(value: () => _): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+      def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
       
       @scala.inline
-      def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
       @scala.inline
-      def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)

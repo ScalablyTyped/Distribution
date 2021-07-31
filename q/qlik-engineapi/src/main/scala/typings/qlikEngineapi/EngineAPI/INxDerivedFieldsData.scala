@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxDerivedFieldsData...
   */
-@js.native
 trait INxDerivedFieldsData extends StObject {
   
   /**
     * Name of the derived definition.
     */
-  var qDerivedDefinitionName: String = js.native
+  var qDerivedDefinitionName: String
   
   /**
     * List of the derived fields.
     */
-  var qFieldDefs: js.Array[INxDerivedField] = js.native
+  var qFieldDefs: js.Array[INxDerivedField]
   
   /**
     * List of the derived groups.
     */
-  var qGroupDefs: js.Array[INxDerivedGroup] = js.native
+  var qGroupDefs: js.Array[INxDerivedGroup]
   
   /**
     * List of tags on the derived fields.
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object INxDerivedFieldsData {
   

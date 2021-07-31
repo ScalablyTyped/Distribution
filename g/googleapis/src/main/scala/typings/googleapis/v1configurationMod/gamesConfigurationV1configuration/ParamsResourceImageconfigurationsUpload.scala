@@ -7,31 +7,31 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceImageconfigurationsUpload extends StandardParameters {
+trait ParamsResourceImageconfigurationsUpload
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Selects which image in a resource for this method.
     */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * The ID of the resource used by this method.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceImageconfigurationsUpload {
   

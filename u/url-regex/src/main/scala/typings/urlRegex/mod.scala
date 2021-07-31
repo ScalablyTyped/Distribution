@@ -3,7 +3,6 @@ package typings.urlRegex
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,27 +28,28 @@ object mod {
   //=> ['http://github.com', '//google.com']
   ```
   */
-  @JSImport("url-regex", JSImport.Namespace)
-  @js.native
-  def apply(): RegExp = js.native
-  @JSImport("url-regex", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RegExp = js.native
+  @scala.inline
+  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  @scala.inline
+  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
+  @JSImport("url-regex", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Only match an exact string. Useful with `RegExp#test` to check if a string is a URL.
     		@default false
     		*/
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Force URLs to start with a valid protocol or `www`. If set to `false` it'll match the TLD against a list of valid [TLDs](https://github.com/stephenmathieson/node-tlds).
     		@default true
     		*/
-    val strict: js.UndefOr[Boolean] = js.native
+    val strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

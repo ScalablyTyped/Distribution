@@ -9,7 +9,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -22,10 +21,9 @@ object anon {
   }
   
   /* Inlined std.Pick<{  parsers :@rdfjs/sink-map.@rdfjs/sink-map.SinkMap<node.events.EventEmitter, rdf-js.rdf-js.Stream<rdf-js.rdf-js.Quad>>,   serializers :@rdfjs/sink-map.@rdfjs/sink-map.SinkMap<rdf-js.rdf-js.Stream<rdf-js.rdf-js.Quad>, node.events.EventEmitter>}, 'parsers'> */
-  @js.native
   trait PickparsersSinkMapEventEm extends StObject {
     
-    var parsers: SinkMap[EventEmitter, Stream[Quad]] = js.native
+    var parsers: SinkMap[EventEmitter, Stream[Quad]]
   }
   object PickparsersSinkMapEventEm {
     

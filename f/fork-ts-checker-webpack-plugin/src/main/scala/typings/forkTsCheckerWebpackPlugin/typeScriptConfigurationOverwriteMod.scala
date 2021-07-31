@@ -3,25 +3,23 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptConfigurationOverwriteMod {
   
-  @js.native
   trait TypeScriptConfigurationOverwrite extends StObject {
     
-    var compilerOptions: js.UndefOr[js.Object] = js.native
+    var compilerOptions: js.UndefOr[js.Object] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `extends`: js.UndefOr[String] = js.native
+    var `extends`: js.UndefOr[String] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
-    var references: js.UndefOr[js.Array[Path]] = js.native
+    var references: js.UndefOr[js.Array[Path]] = js.undefined
   }
   object TypeScriptConfigurationOverwrite {
     

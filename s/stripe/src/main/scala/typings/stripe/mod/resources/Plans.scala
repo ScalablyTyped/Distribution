@@ -12,7 +12,6 @@ import typings.stripe.mod.plans.IPlanCreationOptions
 import typings.stripe.mod.plans.IPlanUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Plans")

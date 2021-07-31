@@ -2,20 +2,18 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to model.walk().
   */
-@js.native
 trait IWalkOptions extends StObject {
   
-  var afterChildWalk: js.UndefOr[IWalkModelCallback] = js.native
+  var afterChildWalk: js.UndefOr[IWalkModelCallback] = js.undefined
   
-  var beforeChildWalk: js.UndefOr[IWalkModelCancellableCallback] = js.native
+  var beforeChildWalk: js.UndefOr[IWalkModelCancellableCallback] = js.undefined
   
-  var onPath: js.UndefOr[IWalkPathCallback] = js.native
+  var onPath: js.UndefOr[IWalkPathCallback] = js.undefined
 }
 object IWalkOptions {
   

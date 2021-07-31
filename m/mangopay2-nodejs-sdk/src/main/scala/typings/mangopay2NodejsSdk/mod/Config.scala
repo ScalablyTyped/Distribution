@@ -2,17 +2,15 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
   /**
     * API Version
     * @default 'v2.01'
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * API Base URL.The fault base value points to sandbox.
@@ -20,47 +18,47 @@ trait Config extends StObject {
     *
     * @default "https://api.sandbox.mangopay.com"
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * API Client Api Key
     */
-  var clientApiKey: String = js.native
+  var clientApiKey: String
   
   /**
     * API Client Id
     */
-  var clientId: String = js.native
+  var clientId: String
   
   /**
     * Set the connection timeout limit(in milliseconds)
     * @default 30000
     */
-  var connectionTimeout: js.UndefOr[Double] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Active debugging
     * @default false
     */
-  var debugMode: js.UndefOr[Boolean] = js.native
+  var debugMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set a custom error handler
     * @default `console.error`
     */
-  var errorHandler: js.UndefOr[js.Function2[/* options */ js.Any, /* err */ js.Any, Unit]] = js.native
+  var errorHandler: js.UndefOr[js.Function2[/* options */ js.Any, /* err */ js.Any, Unit]] = js.undefined
   
   /**
     * Log function to be used for debug
     * @default `console.log`
     */
-  var logClass: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var logClass: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /**
     * Set the response timeout limit(in milliseconds)
     * @default 80000
     */
-  var responseTimeout: js.UndefOr[Double] = js.native
+  var responseTimeout: js.UndefOr[Double] = js.undefined
 }
 object Config {
   

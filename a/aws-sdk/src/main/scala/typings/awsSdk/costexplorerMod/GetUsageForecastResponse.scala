@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageForecastResponse extends StObject {
   
   /**
     * The forecasts for your query, in order. For DAILY forecasts, this is a list of days. For MONTHLY forecasts, this is a list of months.
     */
-  var ForecastResultsByTime: js.UndefOr[typings.awsSdk.costexplorerMod.ForecastResultsByTime] = js.native
+  var ForecastResultsByTime: js.UndefOr[typings.awsSdk.costexplorerMod.ForecastResultsByTime] = js.undefined
   
   /**
     * How much you're forecasted to use over the forecast period.
     */
-  var Total: js.UndefOr[MetricValue] = js.native
+  var Total: js.UndefOr[MetricValue] = js.undefined
 }
 object GetUsageForecastResponse {
   

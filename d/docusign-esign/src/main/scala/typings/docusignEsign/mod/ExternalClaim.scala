@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalClaim extends StObject {
   
   /**
     * The UNIX epoch time at which the claim was acquired from the external provider.
     */
-  var acquiredTime: js.UndefOr[String] = js.native
+  var acquiredTime: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the external claim being requested.
     */
-  var claimName: js.UndefOr[String] = js.native
+  var claimName: js.UndefOr[String] = js.undefined
   
   /**
     * The claim provider's client ID from which the claim is being requested.
     */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
   /**
     * The value provided for the external claim.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ExternalClaim {
   

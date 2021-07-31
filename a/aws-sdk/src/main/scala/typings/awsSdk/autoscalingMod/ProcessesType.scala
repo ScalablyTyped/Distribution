@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessesType extends StObject {
   
   /**
     * The names of the process types.
     */
-  var Processes: js.UndefOr[typings.awsSdk.autoscalingMod.Processes] = js.native
+  var Processes: js.UndefOr[typings.awsSdk.autoscalingMod.Processes] = js.undefined
 }
 object ProcessesType {
   

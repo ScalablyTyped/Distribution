@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Writes data to an output stream. */
@@ -47,7 +46,7 @@ trait DataWriter extends StObject {
     * Commits data in the buffer to a backing store.
     * @return The asynchronous store data operation.
     */
-  def storeAsync(): IPromiseWithOperation[_, DataWriterStoreOperation] = js.native
+  def storeAsync(): IPromiseWithOperation[js.Any, DataWriterStoreOperation] = js.native
   
   /** Gets or sets the Unicode character encoding for the output stream. */
   var unicodeEncoding: UnicodeEncoding = js.native

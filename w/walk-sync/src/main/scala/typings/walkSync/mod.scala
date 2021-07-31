@@ -9,20 +9,20 @@ import typings.walkSync.anon.OptionalizeOptionsfs
 import typings.walkSync.anon.TypeoffsNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(baseDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(baseDir: String, inputOptions: OptionalizeOptionsfs): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @JSImport("walk-sync", JSImport.Namespace)
   @js.native
-  def apply(baseDir: String): js.Array[String] = js.native
-  @JSImport("walk-sync", JSImport.Namespace)
-  @js.native
-  def apply(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[String] = js.native
-  @JSImport("walk-sync", JSImport.Namespace)
-  @js.native
-  def apply(baseDir: String, inputOptions: OptionalizeOptionsfs): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("walk-sync", "Entry")
   @js.native
@@ -44,32 +44,28 @@ object mod {
     var size: Double = js.native
   }
   
-  @JSImport("walk-sync", "entries")
-  @js.native
-  def entries(baseDir: String): js.Array[Entry] = js.native
-  @JSImport("walk-sync", "entries")
-  @js.native
-  def entries(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[Entry] = js.native
-  @JSImport("walk-sync", "entries")
-  @js.native
-  def entries(baseDir: String, inputOptions: Options): js.Array[Entry] = js.native
+  @scala.inline
+  def entries(baseDir: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
+  @scala.inline
+  def entries(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  @scala.inline
+  def entries(baseDir: String, inputOptions: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
-  type Optionalize[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) with (Partial[Pick[T, K]])
+  type Optionalize[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Partial[Pick[T, K]])
   
-  @js.native
   trait Options extends StObject {
     
-    var directories: js.UndefOr[Boolean] = js.native
+    var directories: js.UndefOr[Boolean] = js.undefined
     
-    var fs: TypeoffsNode = js.native
+    var fs: TypeoffsNode
     
-    var globOptions: js.UndefOr[IOptions] = js.native
+    var globOptions: js.UndefOr[IOptions] = js.undefined
     
-    var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.native
+    var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.native
+    var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
     
-    var includeBasePath: js.UndefOr[Boolean] = js.native
+    var includeBasePath: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,19 +2,17 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options specific to read / write transactions.
   */
-@js.native
 trait SchemaReadWrite extends StObject {
   
   /**
     * The transaction identifier of the transaction being retried.
     */
-  var previousTransaction: js.UndefOr[String] = js.native
+  var previousTransaction: js.UndefOr[String] = js.undefined
 }
 object SchemaReadWrite {
   

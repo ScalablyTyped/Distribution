@@ -3,7 +3,6 @@ package typings.awsSdkProtocolHttp
 import typings.awsSdkTypes.httpMod.HeaderBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpResponseMod {
@@ -11,26 +10,35 @@ object httpResponseMod {
   @JSImport("@aws-sdk/protocol-http/dist/cjs/httpResponse", "HttpResponse")
   @js.native
   class HttpResponse protected ()
-    extends typings.awsSdkTypes.httpMod.HttpResponse {
+    extends StObject
+       with typings.awsSdkTypes.httpMod.HttpResponse {
     def this(options: HttpResponseOptions) = this()
+    
+    /* CompleteClass */
+    var headers: HeaderBag = js.native
+    
+    /* CompleteClass */
+    var statusCode: Double = js.native
   }
   /* static members */
   object HttpResponse {
     
-    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpResponse", "HttpResponse.isInstance")
+    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpResponse", "HttpResponse")
     @js.native
-    def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean]
   }
   
   /* Inlined std.Partial<@aws-sdk/types.@aws-sdk/types.HttpMessage> & {  statusCode :number} */
-  @js.native
   trait HttpResponseOptions extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[HeaderBag] = js.native
+    var headers: js.UndefOr[HeaderBag] = js.undefined
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object HttpResponseOptions {
     

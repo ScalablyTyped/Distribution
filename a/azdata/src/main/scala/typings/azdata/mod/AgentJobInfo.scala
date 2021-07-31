@@ -2,65 +2,63 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentJobInfo extends StObject {
   
-  var alerts: js.Array[AgentAlertInfo] = js.native
+  var alerts: js.Array[AgentAlertInfo]
   
-  var category: String = js.native
+  var category: String
   
-  var categoryId: Double = js.native
+  var categoryId: Double
   
-  var categoryType: Double = js.native
+  var categoryType: Double
   
-  var currentExecutionStatus: Double = js.native
+  var currentExecutionStatus: Double
   
-  var currentExecutionStep: String = js.native
+  var currentExecutionStep: String
   
-  var deleteLevel: JobCompletionActionCondition = js.native
+  var deleteLevel: JobCompletionActionCondition
   
-  var description: String = js.native
+  var description: String
   
-  var emailLevel: JobCompletionActionCondition = js.native
+  var emailLevel: JobCompletionActionCondition
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var eventLogLevel: JobCompletionActionCondition = js.native
+  var eventLogLevel: JobCompletionActionCondition
   
-  var hasSchedule: Boolean = js.native
+  var hasSchedule: Boolean
   
-  var hasStep: Boolean = js.native
+  var hasStep: Boolean
   
-  var hasTarget: Boolean = js.native
+  var hasTarget: Boolean
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var jobSchedules: js.Array[AgentJobScheduleInfo] = js.native
+  var jobSchedules: js.Array[AgentJobScheduleInfo]
   
-  var jobSteps: js.Array[AgentJobStepInfo] = js.native
+  var jobSteps: js.Array[AgentJobStepInfo]
   
-  var lastRun: String = js.native
+  var lastRun: String
   
-  var lastRunOutcome: Double = js.native
+  var lastRunOutcome: Double
   
-  var name: String = js.native
+  var name: String
   
-  var nextRun: String = js.native
+  var nextRun: String
   
-  var operatorToEmail: String = js.native
+  var operatorToEmail: String
   
-  var operatorToPage: String = js.native
+  var operatorToPage: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var pageLevel: JobCompletionActionCondition = js.native
+  var pageLevel: JobCompletionActionCondition
   
-  var runnable: Boolean = js.native
+  var runnable: Boolean
   
-  var startStepId: Double = js.native
+  var startStepId: Double
 }
 object AgentJobInfo {
   

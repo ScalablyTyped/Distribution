@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewBatchEditRowValidatingEventArgs extends EventArgs {
+trait GridViewBatchEditRowValidatingEventArgs
+  extends StObject
+     with EventArgs {
   
-  val validationInfo: js.Any = js.native
+  val validationInfo: js.Any
   
-  val visibleIndex: Double = js.native
+  val visibleIndex: Double
 }
 object GridViewBatchEditRowValidatingEventArgs {
   

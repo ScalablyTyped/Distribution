@@ -5,17 +5,15 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.themeMod.BackgroundProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopBarContainerProps extends StObject {
   
-  var background: js.UndefOr[BackgroundProps] = js.native
+  var background: js.UndefOr[BackgroundProps] = js.undefined
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object TopBarContainerProps {
   

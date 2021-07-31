@@ -2,132 +2,130 @@ package typings.pgTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in pg-types.pg-types.builtinsTypes ]: pg-types.pg-types.TypeId} */
-@js.native
 trait TypesBuiltins extends StObject {
   
-  var ABSTIME: TypeId = js.native
+  var ABSTIME: TypeId
   
-  var ACLITEM: TypeId = js.native
+  var ACLITEM: TypeId
   
-  var BIT: TypeId = js.native
+  var BIT: TypeId
   
-  var BOOL: TypeId = js.native
+  var BOOL: TypeId
   
-  var BPCHAR: TypeId = js.native
+  var BPCHAR: TypeId
   
-  var BYTEA: TypeId = js.native
+  var BYTEA: TypeId
   
-  var CHAR: TypeId = js.native
+  var CHAR: TypeId
   
-  var CID: TypeId = js.native
+  var CID: TypeId
   
-  var CIDR: TypeId = js.native
+  var CIDR: TypeId
   
-  var CIRCLE: TypeId = js.native
+  var CIRCLE: TypeId
   
-  var DATE: TypeId = js.native
+  var DATE: TypeId
   
-  var FLOAT4: TypeId = js.native
+  var FLOAT4: TypeId
   
-  var FLOAT8: TypeId = js.native
+  var FLOAT8: TypeId
   
-  var GTSVECTOR: TypeId = js.native
+  var GTSVECTOR: TypeId
   
-  var INET: TypeId = js.native
+  var INET: TypeId
   
-  var INT2: TypeId = js.native
+  var INT2: TypeId
   
-  var INT4: TypeId = js.native
+  var INT4: TypeId
   
-  var INT8: TypeId = js.native
+  var INT8: TypeId
   
-  var INTERVAL: TypeId = js.native
+  var INTERVAL: TypeId
   
-  var JSON: TypeId = js.native
+  var JSON: TypeId
   
-  var JSONB: TypeId = js.native
+  var JSONB: TypeId
   
-  var MACADDR: TypeId = js.native
+  var MACADDR: TypeId
   
-  var MACADDR8: TypeId = js.native
+  var MACADDR8: TypeId
   
-  var MONEY: TypeId = js.native
+  var MONEY: TypeId
   
-  var NUMERIC: TypeId = js.native
+  var NUMERIC: TypeId
   
-  var OID: TypeId = js.native
+  var OID: TypeId
   
-  var PATH: TypeId = js.native
+  var PATH: TypeId
   
-  var PG_DEPENDENCIES: TypeId = js.native
+  var PG_DEPENDENCIES: TypeId
   
-  var PG_LSN: TypeId = js.native
+  var PG_LSN: TypeId
   
-  var PG_NDISTINCT: TypeId = js.native
+  var PG_NDISTINCT: TypeId
   
-  var PG_NODE_TREE: TypeId = js.native
+  var PG_NODE_TREE: TypeId
   
-  var POLYGON: TypeId = js.native
+  var POLYGON: TypeId
   
-  var REFCURSOR: TypeId = js.native
+  var REFCURSOR: TypeId
   
-  var REGCLASS: TypeId = js.native
+  var REGCLASS: TypeId
   
-  var REGCONFIG: TypeId = js.native
+  var REGCONFIG: TypeId
   
-  var REGDICTIONARY: TypeId = js.native
+  var REGDICTIONARY: TypeId
   
-  var REGNAMESPACE: TypeId = js.native
+  var REGNAMESPACE: TypeId
   
-  var REGOPER: TypeId = js.native
+  var REGOPER: TypeId
   
-  var REGOPERATOR: TypeId = js.native
+  var REGOPERATOR: TypeId
   
-  var REGPROC: TypeId = js.native
+  var REGPROC: TypeId
   
-  var REGPROCEDURE: TypeId = js.native
+  var REGPROCEDURE: TypeId
   
-  var REGROLE: TypeId = js.native
+  var REGROLE: TypeId
   
-  var REGTYPE: TypeId = js.native
+  var REGTYPE: TypeId
   
-  var RELTIME: TypeId = js.native
+  var RELTIME: TypeId
   
-  var SMGR: TypeId = js.native
+  var SMGR: TypeId
   
-  var TEXT: TypeId = js.native
+  var TEXT: TypeId
   
-  var TID: TypeId = js.native
+  var TID: TypeId
   
-  var TIME: TypeId = js.native
+  var TIME: TypeId
   
-  var TIMESTAMP: TypeId = js.native
+  var TIMESTAMP: TypeId
   
-  var TIMESTAMPTZ: TypeId = js.native
+  var TIMESTAMPTZ: TypeId
   
-  var TIMETZ: TypeId = js.native
+  var TIMETZ: TypeId
   
-  var TINTERVAL: TypeId = js.native
+  var TINTERVAL: TypeId
   
-  var TSQUERY: TypeId = js.native
+  var TSQUERY: TypeId
   
-  var TSVECTOR: TypeId = js.native
+  var TSVECTOR: TypeId
   
-  var TXID_SNAPSHOT: TypeId = js.native
+  var TXID_SNAPSHOT: TypeId
   
-  var UUID: TypeId = js.native
+  var UUID: TypeId
   
-  var VARBIT: TypeId = js.native
+  var VARBIT: TypeId
   
-  var VARCHAR: TypeId = js.native
+  var VARCHAR: TypeId
   
-  var XID: TypeId = js.native
+  var XID: TypeId
   
-  var XML: TypeId = js.native
+  var XML: TypeId
 }
 object TypesBuiltins {
   

@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A token authorizing an admin to access an iframe.
   */
-@js.native
 trait SchemaAdministratorWebToken extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#administratorWebToken&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An opaque token to be passed to the Play front-end to generate an iframe.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaAdministratorWebToken {
   

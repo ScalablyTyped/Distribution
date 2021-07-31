@@ -2,29 +2,27 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An image that is specified by a URL and can have an onclick action.
   */
-@js.native
 trait SchemaImage extends StObject {
   
   /**
     * The aspect ratio of this image (width/height).
     */
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the image.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The onclick action.
     */
-  var onClick: js.UndefOr[SchemaOnClick] = js.native
+  var onClick: js.UndefOr[SchemaOnClick] = js.undefined
 }
 object SchemaImage {
   

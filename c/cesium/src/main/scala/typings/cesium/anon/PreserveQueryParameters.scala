@@ -3,29 +3,27 @@ package typings.cesium.anon
 import typings.cesium.mod.DefaultProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreserveQueryParameters extends StObject {
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var preserveQueryParameters: js.UndefOr[Boolean] = js.native
+  var preserveQueryParameters: js.UndefOr[Boolean] = js.undefined
   
-  var proxy: js.UndefOr[DefaultProxy] = js.native
+  var proxy: js.UndefOr[DefaultProxy] = js.undefined
   
-  var queryParameters: js.UndefOr[js.Any] = js.native
+  var queryParameters: js.UndefOr[js.Any] = js.undefined
   
-  var request: js.UndefOr[typings.std.Request] = js.native
+  var request: js.UndefOr[typings.std.Request] = js.undefined
   
-  var retryAttempts: js.UndefOr[Double] = js.native
+  var retryAttempts: js.UndefOr[Double] = js.undefined
   
-  var retryCallback: js.UndefOr[js.Any] = js.native
+  var retryCallback: js.UndefOr[js.Any] = js.undefined
   
-  var templateValues: js.UndefOr[js.Any] = js.native
+  var templateValues: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PreserveQueryParameters {
   

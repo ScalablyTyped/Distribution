@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerTls extends StObject {
   
   /**
     * A reference to an object that represents a listener's TLS certificate.
     */
-  var certificate: ListenerTlsCertificate = js.native
+  var certificate: ListenerTlsCertificate
   
   /**
     * Specify one of the following modes.    STRICT – Listener only accepts connections with TLS enabled.     PERMISSIVE – Listener accepts connections with or without TLS enabled.    DISABLED – Listener only accepts connections without TLS.   
     */
-  var mode: ListenerTlsMode = js.native
+  var mode: ListenerTlsMode
 }
 object ListenerTls {
   

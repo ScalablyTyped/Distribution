@@ -2,12 +2,13 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/emitter/
 @js.native
-trait Emitter extends Disposable {
+trait Emitter
+  extends StObject
+     with Disposable {
   
   def clear(): Unit = js.native
   def clear(eventName: String): Unit = js.native

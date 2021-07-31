@@ -3,7 +3,6 @@ package typings.loopback.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,6 +18,10 @@ class Role protected () extends PersistedModel {
 }
 object Role {
   
+  @JSImport("loopback", "Role")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * List roles for a given principal.
     * @param {any} context The security context.
@@ -27,9 +30,8 @@ object Role {
     * @param {string[]} roles An Array of role IDs
     */
   /* static member */
-  @JSImport("loopback", "Role.getRoles")
-  @js.native
-  def getRoles(context: js.Any, callback: js.Function2[/* err */ Error, /* roles */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def getRoles(context: js.Any, callback: js.Function2[/* err */ Error, /* roles */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Check if the user ID is authenticated
@@ -38,9 +40,8 @@ object Role {
     * @param {boolean} isAuthenticated True if the user is authenticated.
     */
   /* static member */
-  @JSImport("loopback", "Role.isAuthenticated")
-  @js.native
-  def isAuthenticated(context: js.Any, callback: js.Function2[/* err */ Error, /* isAuthenticated */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isAuthenticated(context: js.Any, callback: js.Function2[/* err */ Error, /* isAuthenticated */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isAuthenticated")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Check if a given principal is in the specified role.
@@ -51,13 +52,12 @@ object Role {
     * @param {boolean} isInRole True if the principal is in the specified role.
     */
   /* static member */
-  @JSImport("loopback", "Role.isInRole")
-  @js.native
+  @scala.inline
   def isInRole(
     role: String,
     context: js.Any,
     callback: js.Function2[/* err */ Error, /* isInRole */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isInRole")(role.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Check if a given user ID is the owner the model instance.
@@ -67,9 +67,8 @@ object Role {
     * @param {() => void} callback Callback function
     */
   /* static member */
-  @JSImport("loopback", "Role.isOwner")
-  @js.native
-  def isOwner(modelClass: js.Function0[Unit], modelId: js.Any, userId: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def isOwner(modelClass: js.Function0[Unit], modelId: js.Any, userId: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isOwner")(modelClass.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Add custom handler for roles.
@@ -79,8 +78,7 @@ object Role {
     * Should provide a callback or return a promise.
     */
   /* static member */
-  @JSImport("loopback", "Role.registerResolver")
-  @js.native
+  @scala.inline
   def registerResolver(
     role: String,
     resolver: js.Function3[
@@ -89,5 +87,5 @@ object Role {
       /* callback */ js.UndefOr[js.Function2[/* err */ Error, /* resolved */ Boolean, Unit]], 
       js.Promise[Boolean] | Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(role.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

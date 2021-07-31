@@ -2,7 +2,6 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait QuerySortDirections extends StObject
 object QuerySortDirections extends StObject {
   
   @js.native
-  sealed trait QUERY_SORT_ASCENDING extends QuerySortDirections
+  sealed trait QUERY_SORT_ASCENDING
+    extends StObject
+       with QuerySortDirections
   
   @js.native
-  sealed trait QUERY_SORT_DESCENDING extends QuerySortDirections
+  sealed trait QUERY_SORT_DESCENDING
+    extends StObject
+       with QuerySortDirections
 }

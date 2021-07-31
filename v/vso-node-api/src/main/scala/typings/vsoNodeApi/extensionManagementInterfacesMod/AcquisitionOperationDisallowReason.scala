@@ -2,21 +2,19 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquisitionOperationDisallowReason extends StObject {
   
   /**
     * User-friendly message clarifying the reason for disallowance
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Type of reason for disallowance - AlreadyInstalled, UnresolvedDemand, etc.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object AcquisitionOperationDisallowReason {
   

@@ -2,61 +2,59 @@ package typings.xmlbuilder.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the settings used when converting the XML document to string.
   */
-@js.native
 trait XMLToStringOptions extends StObject {
   
   /**
     * Whether to output closing tags for empty element nodes
     */
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to pretty print text nodes
     */
-  var dontPrettyTextNodes: js.UndefOr[Boolean] = js.native
+  var dontPrettyTextNodes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indentation string for pretty printing
     */
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
   
   /**
     * Newline string for pretty printing
     */
-  var newline: js.UndefOr[String] = js.native
+  var newline: js.UndefOr[String] = js.undefined
   
   /**
     * A fixed number of indents to offset strings
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Pretty print the XML tree
     */
-  var pretty: js.UndefOr[Boolean] = js.native
+  var pretty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string to insert before closing slash character
     */
-  var spaceBeforeSlash: js.UndefOr[String | Boolean] = js.native
+  var spaceBeforeSlash: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Maximum column width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** 
     * The default XML writer to use for converting nodes to string. 
     * If the default writer is not set, the built-in `XMLStringWriter` 
     * will be used instead. 
     */
-  var writer: js.UndefOr[XMLWriter] = js.native
+  var writer: js.UndefOr[XMLWriter] = js.undefined
 }
 object XMLToStringOptions {
   

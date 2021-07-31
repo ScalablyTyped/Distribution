@@ -13,7 +13,6 @@ import typings.tensorflowTfjsLayers.poolingSerializationMod.PoolingLayerSerializ
 import typings.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerSerializationMod {

@@ -3,7 +3,6 @@ package typings.firebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repoInfoMod {
@@ -26,14 +25,6 @@ object repoInfoMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
-      persistenceKey: String
-    ) = this()
-    def this(
-      host: String,
-      secure: Boolean,
-      namespace: String,
-      webSocketOnly: Boolean,
       nodeAdmin: Boolean,
       persistenceKey: String
     ) = this()
@@ -42,16 +33,15 @@ object repoInfoMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
-      persistenceKey: js.UndefOr[scala.Nothing],
-      includeNamespaceInQueryParams: Boolean
+      nodeAdmin: Unit,
+      persistenceKey: String
     ) = this()
     def this(
       host: String,
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
+      nodeAdmin: Boolean,
       persistenceKey: String,
       includeNamespaceInQueryParams: Boolean
     ) = this()
@@ -61,7 +51,7 @@ object repoInfoMod {
       namespace: String,
       webSocketOnly: Boolean,
       nodeAdmin: Boolean,
-      persistenceKey: js.UndefOr[scala.Nothing],
+      persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
     def this(
@@ -69,8 +59,17 @@ object repoInfoMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: Boolean,
+      nodeAdmin: Unit,
       persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
     

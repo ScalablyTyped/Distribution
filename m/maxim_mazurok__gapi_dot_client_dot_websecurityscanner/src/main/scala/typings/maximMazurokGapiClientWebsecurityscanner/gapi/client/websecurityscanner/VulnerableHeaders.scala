@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VulnerableHeaders extends StObject {
   
   /** List of vulnerable headers. */
-  var headers: js.UndefOr[js.Array[Header]] = js.native
+  var headers: js.UndefOr[js.Array[Header]] = js.undefined
   
   /** List of missing headers. */
-  var missingHeaders: js.UndefOr[js.Array[Header]] = js.native
+  var missingHeaders: js.UndefOr[js.Array[Header]] = js.undefined
 }
 object VulnerableHeaders {
   

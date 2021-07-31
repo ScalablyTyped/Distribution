@@ -30,14 +30,25 @@ import typings.plotlyJs.plotlyJsStrings.plotly_sunburstclick
 import typings.plotlyJs.plotlyJsStrings.plotly_transitioning
 import typings.plotlyJs.plotlyJsStrings.plotly_transitioninterrupted
 import typings.plotlyJs.plotlyJsStrings.plotly_unhover
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotlyHTMLElement extends HTMLElement {
+trait PlotlyHTMLElement
+  extends StObject
+     with HTMLElement {
+  
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   @JSName("on")
   def on_plotlyafterexport(event: plotly_afterexport, callback: js.Function0[Unit]): Unit = js.native
@@ -101,4 +112,11 @@ trait PlotlyHTMLElement extends HTMLElement {
   def on_plotlyunhover(event: plotly_unhover, callback: js.Function1[/* event */ PlotMouseEvent, Unit]): Unit = js.native
   
   def removeAllListeners(handler: String): Unit = js.native
+  
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
 }

@@ -13,13 +13,14 @@ import typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error
 import typings.amapJsApiLineSearch.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait LineSearch extends EventEmitter {
+  trait LineSearch
+    extends StObject
+       with EventEmitter {
     
     /**
       * 根据给定公交线路名称进行公交线路详情查询
@@ -64,16 +65,15 @@ object AMap {
   }
   object LineSearch {
     
-    @js.native
     trait BusStop extends StObject {
       
-      var id: String = js.native
+      var id: String
       
-      var location: LngLat = js.native
+      var location: LngLat
       
-      var name: String = js.native
+      var name: String
       
-      var sequence: Double = js.native
+      var sequence: Double
     }
     object BusStop {
       
@@ -100,12 +100,11 @@ object AMap {
       }
     }
     
-    @js.native
     trait EventMap extends StObject {
       
-      var complete: Event_[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete, SearchResult] = js.native
+      var complete: Event_[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.complete, SearchResult]
       
-      var error: Event_[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiLineSearch.amapJsApiLineSearchStrings.error, Info]
     }
     object EventMap {
       
@@ -172,43 +171,44 @@ object AMap {
       }
     }
     
-    @js.native
-    trait LineInfoBase extends LineInfo {
+    trait LineInfoBase
+      extends StObject
+         with LineInfo {
       
       /**
         * 所在城市的城市编码
         */
-      var citycode: String = js.native
+      var citycode: String
       
       /**
         * 终点站
         */
-      var end_stop: String = js.native
+      var end_stop: String
       
       /**
         * 公交线路id，该id是唯一标识
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 线路名称
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * 线路经纬度
         */
-      var path: js.Array[LngLat] = js.native
+      var path: js.Array[LngLat]
       
       /**
         * 首发站
         */
-      var start_stop: String = js.native
+      var start_stop: String
       
       /**
         * 公交类型列表
         */
-      var `type`: String = js.native
+      var `type`: String
     }
     object LineInfoBase {
       
@@ -257,49 +257,50 @@ object AMap {
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.amapJsApiLineSearch.AMap.LineSearch.LineInfo because Already inherited */ @js.native
-    trait LineInfoExt extends LineInfoBase {
+    - typings.amapJsApiLineSearch.AMap.LineSearch.LineInfo because Already inherited */ trait LineInfoExt
+      extends StObject
+         with LineInfoBase {
       
       /**
         * 起步票价，单位：元
         */
-      var basic_price: String = js.native
+      var basic_price: String
       
       // is string actually
       /**
         * 全程距离，单位：千米
         */
-      var bounds: Bounds = js.native
+      var bounds: Bounds
       
       /**
         * 所属公交公司
         */
-      var company: String = js.native
+      var company: String
       
       /**
         * 全程距离，单位：千米
         */
-      var distance: String = js.native
+      var distance: String
       
       /**
         * 末班车时间
         */
-      var etime: String = js.native
+      var etime: String
       
       /**
         * 首班车时间
         */
-      var stime: String = js.native
+      var stime: String
       
       /**
         * 全程票价，单位：元
         */
-      var total_price: String = js.native
+      var total_price: String
       
       /**
         * 途径站，包括首发站和终点站
         */
-      var via_stops: js.Array[BusStop] = js.native
+      var via_stops: js.Array[BusStop]
     }
     object LineInfoExt {
       
@@ -358,7 +359,6 @@ object AMap {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -366,26 +366,26 @@ object AMap {
         * 默认值：“全国”
         * 可选值：cityname（中文或中文全拼）、citycode、adcode
         */
-      var city: js.UndefOr[String] = js.native
+      var city: js.UndefOr[String] = js.undefined
       
       /**
         * 此项仅公交路线查询时有效，默认值：base，返回公交路线基本信息，当取值为：all，返回公交路线基本信息+详细信息
         */
-      var extensions: js.UndefOr[base | all] = js.native
+      var extensions: js.UndefOr[base | all] = js.undefined
       
       /**
         * 页码
         * 默认值：1
         * 取值范围：1-100，超过取值范围按默认，超出实际页数按最大值返回
         */
-      var pageIndex: js.UndefOr[Double] = js.native
+      var pageIndex: js.UndefOr[Double] = js.undefined
       
       /**
         * 单页显示结果条数
         * 默认值：20
         * 取值范围：1-100，超过取值范围按默认
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -424,28 +424,27 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 查该城市无此公交站时，返回的建议城市列表
         */
-      var cityList: js.UndefOr[js.Array[_]] = js.native
+      var cityList: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * 成功状态文字描述
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 查无此公交站时，返回的建议关键字列表
         */
-      var keywordList: js.UndefOr[js.Array[_]] = js.native
+      var keywordList: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * 根据查询条件返回公交路线信息
         */
-      var lineInfo: js.Array[LineInfo] = js.native
+      var lineInfo: js.Array[LineInfo]
     }
     object SearchResult {
       
@@ -459,7 +458,7 @@ object AMap {
       implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setCityList(value: js.Array[_]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
+        def setCityList(value: js.Array[js.Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
@@ -471,7 +470,7 @@ object AMap {
         def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setKeywordList(value: js.Array[_]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
+        def setKeywordList(value: js.Array[js.Any]): Self = StObject.set(x, "keywordList", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)

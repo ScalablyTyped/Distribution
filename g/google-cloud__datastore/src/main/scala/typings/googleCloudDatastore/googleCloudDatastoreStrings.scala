@@ -3,33 +3,42 @@ package typings.googleCloudDatastore
 import typings.googleCloudDatastore.queryMod.QueryFilterOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleCloudDatastoreStrings {
   
   @js.native
-  sealed trait Equalssign extends QueryFilterOperator
+  sealed trait Equalssign
+    extends StObject
+       with QueryFilterOperator
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Greaterthansign extends QueryFilterOperator
+  sealed trait Greaterthansign
+    extends StObject
+       with QueryFilterOperator
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends QueryFilterOperator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with QueryFilterOperator
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait Lessthansign extends QueryFilterOperator
+  sealed trait Lessthansign
+    extends StObject
+       with QueryFilterOperator
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends QueryFilterOperator
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with QueryFilterOperator
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   

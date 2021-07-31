@@ -2,7 +2,6 @@ package typings.upath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,42 +16,31 @@ object mod {
   @scala.inline
   def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
-  @JSImport("upath", "addExt")
-  @js.native
-  def addExt(file: String, ext: String): String = js.native
+  @scala.inline
+  def addExt(file: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addExt")(file.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("upath", "basename")
-  @js.native
-  def basename(p: String): String = js.native
-  @JSImport("upath", "basename")
-  @js.native
-  def basename(p: String, ext: String): String = js.native
+  @scala.inline
+  def basename(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def basename(p: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("upath", "changeExt")
-  @js.native
-  def changeExt(filename: String, ext: String): String = js.native
-  @JSImport("upath", "changeExt")
-  @js.native
-  def changeExt(filename: String, ext: String, ignoreExts: js.UndefOr[scala.Nothing], maxSize: Double): String = js.native
-  @JSImport("upath", "changeExt")
-  @js.native
-  def changeExt(filename: String, ext: String, ignoreExts: js.Array[String]): String = js.native
-  @JSImport("upath", "changeExt")
-  @js.native
-  def changeExt(filename: String, ext: String, ignoreExts: js.Array[String], maxSize: Double): String = js.native
+  @scala.inline
+  def changeExt(filename: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def changeExt(filename: String, ext: String, ignoreExts: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def changeExt(filename: String, ext: String, ignoreExts: js.Array[String], maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def changeExt(filename: String, ext: String, ignoreExts: Unit, maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("upath", "defaultExt")
-  @js.native
-  def defaultExt(filename: String, ext: String): String = js.native
-  @JSImport("upath", "defaultExt")
-  @js.native
-  def defaultExt(filename: String, ext: String, ignoreExts: js.UndefOr[scala.Nothing], maxSize: Double): String = js.native
-  @JSImport("upath", "defaultExt")
-  @js.native
-  def defaultExt(filename: String, ext: String, ignoreExts: js.Array[String]): String = js.native
-  @JSImport("upath", "defaultExt")
-  @js.native
-  def defaultExt(filename: String, ext: String, ignoreExts: js.Array[String], maxSize: Double): String = js.native
+  @scala.inline
+  def defaultExt(filename: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def defaultExt(filename: String, ext: String, ignoreExts: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def defaultExt(filename: String, ext: String, ignoreExts: js.Array[String], maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def defaultExt(filename: String, ext: String, ignoreExts: Unit, maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("upath", "delimiter")
   @js.native
@@ -60,45 +48,35 @@ object mod {
   @scala.inline
   def delimiter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
   
-  @JSImport("upath", "dirname")
-  @js.native
-  def dirname(p: String): String = js.native
+  @scala.inline
+  def dirname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "extname")
-  @js.native
-  def extname(p: String): String = js.native
+  @scala.inline
+  def extname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "format")
-  @js.native
-  def format(pathObject: ParsedPath): String = js.native
+  @scala.inline
+  def format(pathObject: ParsedPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(pathObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "isAbsolute")
-  @js.native
-  def isAbsolute(path: String): Boolean = js.native
+  @scala.inline
+  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("upath", "join")
-  @js.native
-  def join(paths: (js.Any | String)*): String = js.native
+  @scala.inline
+  def join(paths: (js.Any | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "joinSafe")
-  @js.native
-  def joinSafe(p: js.Any*): String = js.native
+  @scala.inline
+  def joinSafe(p: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinSafe")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "normalize")
-  @js.native
-  def normalize(p: String): String = js.native
+  @scala.inline
+  def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "normalizeSafe")
-  @js.native
-  def normalizeSafe(p: String): String = js.native
+  @scala.inline
+  def normalizeSafe(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSafe")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "normalizeTrim")
-  @js.native
-  def normalizeTrim(p: String): String = js.native
+  @scala.inline
+  def normalizeTrim(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTrim")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "parse")
-  @js.native
-  def parse(pathString: String): ParsedPath = js.native
+  @scala.inline
+  def parse(pathString: String): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(pathString.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
   
   object posix {
     
@@ -106,12 +84,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("upath", "posix.basename")
-    @js.native
-    def basename(p: String): String = js.native
-    @JSImport("upath", "posix.basename")
-    @js.native
-    def basename(p: String, ext: String): String = js.native
+    @scala.inline
+    def basename(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def basename(p: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("upath", "posix.delimiter")
     @js.native
@@ -119,41 +95,32 @@ object mod {
     @scala.inline
     def delimiter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
     
-    @JSImport("upath", "posix.dirname")
-    @js.native
-    def dirname(p: String): String = js.native
+    @scala.inline
+    def dirname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "posix.extname")
-    @js.native
-    def extname(p: String): String = js.native
+    @scala.inline
+    def extname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "posix.format")
-    @js.native
-    def format(pP: ParsedPath): String = js.native
+    @scala.inline
+    def format(pP: ParsedPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(pP.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "posix.isAbsolute")
-    @js.native
-    def isAbsolute(p: String): Boolean = js.native
+    @scala.inline
+    def isAbsolute(p: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("upath", "posix.join")
-    @js.native
-    def join(paths: js.Any*): String = js.native
+    @scala.inline
+    def join(paths: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "posix.normalize")
-    @js.native
-    def normalize(p: String): String = js.native
+    @scala.inline
+    def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "posix.parse")
-    @js.native
-    def parse(p: String): ParsedPath = js.native
+    @scala.inline
+    def parse(p: String): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(p.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
     
-    @JSImport("upath", "posix.relative")
-    @js.native
-    def relative(from: String, to: String): String = js.native
+    @scala.inline
+    def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("upath", "posix.resolve")
-    @js.native
-    def resolve(pathSegments: js.Any*): String = js.native
+    @scala.inline
+    def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("upath", "posix.sep")
     @js.native
@@ -162,17 +129,14 @@ object mod {
     def sep_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sep")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("upath", "relative")
-  @js.native
-  def relative(from: String, to: String): String = js.native
+  @scala.inline
+  def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("upath", "removeExt")
-  @js.native
-  def removeExt(filename: String, ext: String): String = js.native
+  @scala.inline
+  def removeExt(filename: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("upath", "resolve")
-  @js.native
-  def resolve(pathSegments: js.Any*): String = js.native
+  @scala.inline
+  def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("upath", "sep")
   @js.native
@@ -180,22 +144,17 @@ object mod {
   @scala.inline
   def sep_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sep")(x.asInstanceOf[js.Any])
   
-  @JSImport("upath", "toUnix")
-  @js.native
-  def toUnix(p: String): String = js.native
+  @scala.inline
+  def toUnix(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnix")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("upath", "trimExt")
-  @js.native
-  def trimExt(filename: String): String = js.native
-  @JSImport("upath", "trimExt")
-  @js.native
-  def trimExt(filename: String, ignoreExts: js.UndefOr[scala.Nothing], maxSize: Double): String = js.native
-  @JSImport("upath", "trimExt")
-  @js.native
-  def trimExt(filename: String, ignoreExts: js.Array[String]): String = js.native
-  @JSImport("upath", "trimExt")
-  @js.native
-  def trimExt(filename: String, ignoreExts: js.Array[String], maxSize: Double): String = js.native
+  @scala.inline
+  def trimExt(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimExt")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def trimExt(filename: String, ignoreExts: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimExt")(filename.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def trimExt(filename: String, ignoreExts: js.Array[String], maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimExt")(filename.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def trimExt(filename: String, ignoreExts: Unit, maxSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimExt")(filename.asInstanceOf[js.Any], ignoreExts.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object win32 {
     
@@ -203,12 +162,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("upath", "win32.basename")
-    @js.native
-    def basename(p: String): String = js.native
-    @JSImport("upath", "win32.basename")
-    @js.native
-    def basename(p: String, ext: String): String = js.native
+    @scala.inline
+    def basename(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def basename(p: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(p.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("upath", "win32.delimiter")
     @js.native
@@ -216,41 +173,32 @@ object mod {
     @scala.inline
     def delimiter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
     
-    @JSImport("upath", "win32.dirname")
-    @js.native
-    def dirname(p: String): String = js.native
+    @scala.inline
+    def dirname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "win32.extname")
-    @js.native
-    def extname(p: String): String = js.native
+    @scala.inline
+    def extname(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "win32.format")
-    @js.native
-    def format(pP: ParsedPath): String = js.native
+    @scala.inline
+    def format(pP: ParsedPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(pP.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "win32.isAbsolute")
-    @js.native
-    def isAbsolute(p: String): Boolean = js.native
+    @scala.inline
+    def isAbsolute(p: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("upath", "win32.join")
-    @js.native
-    def join(paths: js.Any*): String = js.native
+    @scala.inline
+    def join(paths: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "win32.normalize")
-    @js.native
-    def normalize(p: String): String = js.native
+    @scala.inline
+    def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("upath", "win32.parse")
-    @js.native
-    def parse(p: String): ParsedPath = js.native
+    @scala.inline
+    def parse(p: String): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(p.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
     
-    @JSImport("upath", "win32.relative")
-    @js.native
-    def relative(from: String, to: String): String = js.native
+    @scala.inline
+    def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("upath", "win32.resolve")
-    @js.native
-    def resolve(pathSegments: js.Any*): String = js.native
+    @scala.inline
+    def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("upath", "win32.sep")
     @js.native
@@ -259,33 +207,32 @@ object mod {
     def sep_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sep")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ParsedPath extends StObject {
     
     /**
       * The file name including extension (if any) such as 'index.html'
       */
-    var base: String = js.native
+    var base: String
     
     /**
       * The full directory path such as '/home/user/dir' or 'c:\path\dir'
       */
-    var dir: String = js.native
+    var dir: String
     
     /**
       * The file extension (if any) such as '.html'
       */
-    var ext: String = js.native
+    var ext: String
     
     /**
       * The file name without extension (if any) such as 'index'
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The root of the path such as '/' or 'c:\'
       */
-    var root: String = js.native
+    var root: String
   }
   object ParsedPath {
     

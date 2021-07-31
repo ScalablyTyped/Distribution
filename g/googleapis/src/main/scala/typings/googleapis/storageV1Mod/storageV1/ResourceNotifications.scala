@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Notifications")
@@ -85,7 +84,7 @@ class ResourceNotifications protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceNotificationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceNotificationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -172,7 +171,7 @@ class ResourceNotifications protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaNotification] = js.native
   def get(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationsGet): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationsGet, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(
@@ -260,7 +259,7 @@ class ResourceNotifications protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaNotification] = js.native
   def insert(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def insert(params: ParamsResourceNotificationsInsert): GaxiosPromise[SchemaNotification] = js.native
   def insert(params: ParamsResourceNotificationsInsert, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def insert(
@@ -343,7 +342,7 @@ class ResourceNotifications protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaNotifications] = js.native
   def list(callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotifications] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotifications] = js.native
   def list(params: ParamsResourceNotificationsList): GaxiosPromise[SchemaNotifications] = js.native
   def list(params: ParamsResourceNotificationsList, callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
   def list(

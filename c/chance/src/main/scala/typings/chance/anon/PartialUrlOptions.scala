@@ -2,22 +2,20 @@ package typings.chance.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.UrlOptions> */
-@js.native
 trait PartialUrlOptions extends StObject {
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var domain_prefix: js.UndefOr[String] = js.native
+  var domain_prefix: js.UndefOr[String] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
 }
 object PartialUrlOptions {
   

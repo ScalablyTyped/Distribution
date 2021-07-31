@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait Weekday extends StObject
 object Weekday extends StObject {
   
   @js.native
-  sealed trait FRIDAY extends Weekday
+  sealed trait FRIDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait MONDAY extends Weekday
+  sealed trait MONDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait SATURDAY extends Weekday
+  sealed trait SATURDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait SUNDAY extends Weekday
+  sealed trait SUNDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait THURSDAY extends Weekday
+  sealed trait THURSDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait TUESDAY extends Weekday
+  sealed trait TUESDAY
+    extends StObject
+       with Weekday
   
   @js.native
-  sealed trait WEDNESDAY extends Weekday
+  sealed trait WEDNESDAY
+    extends StObject
+       with Weekday
 }

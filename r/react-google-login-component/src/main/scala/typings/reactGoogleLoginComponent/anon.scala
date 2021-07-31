@@ -2,15 +2,13 @@ package typings.reactGoogleLoginComponent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
   }
   object Accesstoken {
     

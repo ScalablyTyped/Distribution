@@ -12,7 +12,7 @@ Validate a package.json file
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6799 |
+| # downloads        | 33545 |
 | # stars            | 0 |
 
 ## Links

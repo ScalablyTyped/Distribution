@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnapshotResponse extends StObject {
   
   /**
     * Whitelisted ComputedStyle properties for each node in the layout tree.
     */
-  var computedStyles: js.Array[ComputedStyle] = js.native
+  var computedStyles: js.Array[ComputedStyle]
   
   /**
     * The nodes in the DOM tree. The DOMNode at index 0 corresponds to the root document.
     */
-  var domNodes: js.Array[DOMNode] = js.native
+  var domNodes: js.Array[DOMNode]
   
   /**
     * The nodes in the layout tree.
     */
-  var layoutTreeNodes: js.Array[LayoutTreeNode] = js.native
+  var layoutTreeNodes: js.Array[LayoutTreeNode]
 }
 object GetSnapshotResponse {
   

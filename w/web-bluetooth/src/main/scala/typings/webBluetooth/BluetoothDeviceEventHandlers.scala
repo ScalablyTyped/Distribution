@@ -3,15 +3,13 @@ package typings.webBluetooth
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothDeviceEventHandlers extends StObject {
   
-  def onadvertisementreceived(ev: Event): js.Any = js.native
+  def onadvertisementreceived(ev: Event): js.Any
   
-  def ongattserverdisconnected(ev: Event): js.Any = js.native
+  def ongattserverdisconnected(ev: Event): js.Any
 }
 object BluetoothDeviceEventHandlers {
   

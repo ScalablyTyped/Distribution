@@ -2,10 +2,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldPath extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait FieldPath extends StObject {
     * @param other The `FieldPath` to compare against.
     * @return true if this `FieldPath` is equal to the provided one.
     */
-  def isEqual(other: FieldPath): Boolean = js.native
+  def isEqual(other: FieldPath): Boolean
 }
 object FieldPath {
   

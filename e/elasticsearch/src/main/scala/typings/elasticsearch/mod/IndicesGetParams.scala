@@ -2,29 +2,29 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesGetParams extends GenericParams {
+trait IndicesGetParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var feature: js.UndefOr[NameList] = js.native
+  var feature: js.UndefOr[NameList] = js.undefined
   
-  var flatSettings: js.UndefOr[Boolean] = js.native
+  var flatSettings: js.UndefOr[Boolean] = js.undefined
   
-  var human: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var includeDefaults: js.UndefOr[Boolean] = js.native
+  var includeDefaults: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
 }
 object IndicesGetParams {
   

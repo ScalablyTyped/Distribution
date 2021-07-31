@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountPasswordPolicyMod {
@@ -24,7 +23,7 @@ object accountPasswordPolicyMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AccountPasswordPolicyArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AccountPasswordPolicyArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -80,6 +79,10 @@ object accountPasswordPolicyMod {
   /* static members */
   object AccountPasswordPolicy {
     
+    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccountPasswordPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,75 +92,69 @@ object accountPasswordPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AccountPasswordPolicy = js.native
-    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccountPasswordPolicy = js.native
-    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState): AccountPasswordPolicy = js.native
-    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState, opts: CustomResourceOptions): AccountPasswordPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
     
     /**
       * Returns true if the given object is an instance of AccountPasswordPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean]
   }
   
-  @js.native
   trait AccountPasswordPolicyArgs extends StObject {
     
     /**
       * Whether to allow users to change their own password
       */
-    val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.native
+    val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether users are prevented from setting a new password after their password has expired (i.e. require administrator reset)
       */
-    val hardExpiry: js.UndefOr[Input[Boolean]] = js.native
+    val hardExpiry: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of days that an user password is valid.
       */
-    val maxPasswordAge: js.UndefOr[Input[Double]] = js.native
+    val maxPasswordAge: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Minimum length to require for user passwords.
       */
-    val minimumPasswordLength: js.UndefOr[Input[Double]] = js.native
+    val minimumPasswordLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of previous passwords that users are prevented from reusing.
       */
-    val passwordReusePrevention: js.UndefOr[Input[Double]] = js.native
+    val passwordReusePrevention: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether to require lowercase characters for user passwords.
       */
-    val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
+    val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require numbers for user passwords.
       */
-    val requireNumbers: js.UndefOr[Input[Boolean]] = js.native
+    val requireNumbers: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require symbols for user passwords.
       */
-    val requireSymbols: js.UndefOr[Input[Boolean]] = js.native
+    val requireSymbols: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require uppercase characters for user passwords.
       */
-    val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
+    val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object AccountPasswordPolicyArgs {
     
@@ -226,58 +223,57 @@ object accountPasswordPolicyMod {
     }
   }
   
-  @js.native
   trait AccountPasswordPolicyState extends StObject {
     
     /**
       * Whether to allow users to change their own password
       */
-    val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.native
+    val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates whether passwords in the account expire. Returns `true` if `maxPasswordAge` contains a value greater than `0`. Returns `false` if it is `0` or _not present_.
       */
-    val expirePasswords: js.UndefOr[Input[Boolean]] = js.native
+    val expirePasswords: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether users are prevented from setting a new password after their password has expired (i.e. require administrator reset)
       */
-    val hardExpiry: js.UndefOr[Input[Boolean]] = js.native
+    val hardExpiry: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of days that an user password is valid.
       */
-    val maxPasswordAge: js.UndefOr[Input[Double]] = js.native
+    val maxPasswordAge: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Minimum length to require for user passwords.
       */
-    val minimumPasswordLength: js.UndefOr[Input[Double]] = js.native
+    val minimumPasswordLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of previous passwords that users are prevented from reusing.
       */
-    val passwordReusePrevention: js.UndefOr[Input[Double]] = js.native
+    val passwordReusePrevention: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether to require lowercase characters for user passwords.
       */
-    val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
+    val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require numbers for user passwords.
       */
-    val requireNumbers: js.UndefOr[Input[Boolean]] = js.native
+    val requireNumbers: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require symbols for user passwords.
       */
-    val requireSymbols: js.UndefOr[Input[Boolean]] = js.native
+    val requireSymbols: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether to require uppercase characters for user passwords.
       */
-    val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
+    val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object AccountPasswordPolicyState {
     

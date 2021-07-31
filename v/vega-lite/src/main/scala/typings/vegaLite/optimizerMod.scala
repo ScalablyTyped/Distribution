@@ -3,10 +3,13 @@ package typings.vegaLite
 import typings.vegaLite.dataflowMod.DataFlowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizerMod {
+  
+  @JSImport("vega-lite/build/src/compile/data/optimizer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/data/optimizer", "BottomUpOptimizer")
   @js.native
@@ -49,7 +52,6 @@ object optimizerMod {
     def run(node: DataFlowNode): Unit = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/data/optimizer", "isDataSourceNode")
-  @js.native
-  def isDataSourceNode(node: DataFlowNode): Boolean = js.native
+  @scala.inline
+  def isDataSourceNode(node: DataFlowNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSourceNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

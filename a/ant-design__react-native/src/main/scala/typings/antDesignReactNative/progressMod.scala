@@ -11,7 +11,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressMod {
@@ -54,22 +53,23 @@ object progressMod {
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
   
-  @js.native
-  trait ProgressProps extends WithThemeStyles[ProgressStyle] {
+  trait ProgressProps
+    extends StObject
+       with WithThemeStyles[ProgressStyle] {
     
-    var appearTransition: js.UndefOr[Boolean] = js.native
+    var appearTransition: js.UndefOr[Boolean] = js.undefined
     
-    var barStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var barStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[fixed | normal] = js.native
+    var position: js.UndefOr[fixed | normal] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var unfilled: js.UndefOr[Boolean] = js.native
+    var unfilled: js.UndefOr[Boolean] = js.undefined
     
-    var wrapWidth: js.UndefOr[Double] = js.native
+    var wrapWidth: js.UndefOr[Double] = js.undefined
   }
   object ProgressProps {
     

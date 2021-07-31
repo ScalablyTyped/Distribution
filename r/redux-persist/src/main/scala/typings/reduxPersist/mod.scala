@@ -26,12 +26,15 @@ import typings.reduxPersist.typesMod.TransformInbound
 import typings.reduxPersist.typesMod.TransformOutbound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This is not single module. There are many module included by reference directives.
 // tslint:disable-next-line: no-single-declare-module
 object mod {
+  
+  @JSImport("redux-persist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-persist", "DEFAULT_VERSION")
   @js.native
@@ -65,101 +68,71 @@ object mod {
   @js.native
   val REHYDRATE: persistSlashREHYDRATE = js.native
   
-  @JSImport("redux-persist", "createMigrate")
-  @js.native
-  def createMigrate(migrations: MigrationManifest): PersistMigrate = js.native
-  @JSImport("redux-persist", "createMigrate")
-  @js.native
-  def createMigrate(migrations: MigrationManifest, config: MigrationConfig): PersistMigrate = js.native
+  @scala.inline
+  def createMigrate(migrations: MigrationManifest): PersistMigrate = ^.asInstanceOf[js.Dynamic].applyDynamic("createMigrate")(migrations.asInstanceOf[js.Any]).asInstanceOf[PersistMigrate]
+  @scala.inline
+  def createMigrate(migrations: MigrationManifest, config: MigrationConfig): PersistMigrate = (^.asInstanceOf[js.Dynamic].applyDynamic("createMigrate")(migrations.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[PersistMigrate]
   
-  @JSImport("redux-persist", "createPersistoid")
-  @js.native
-  def createPersistoid(config: PersistConfig[_, _, _, _]): Persistoid = js.native
+  @scala.inline
+  def createPersistoid(config: PersistConfig[js.Any, js.Any, js.Any, js.Any]): Persistoid = ^.asInstanceOf[js.Dynamic].applyDynamic("createPersistoid")(config.asInstanceOf[js.Any]).asInstanceOf[Persistoid]
   
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: js.UndefOr[scala.Nothing], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](
-    inbound: js.UndefOr[scala.Nothing],
-    outbound: TransformOutbound[ESS, HSS, RS],
-    config: TransformConfig
-  ): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: js.UndefOr[scala.Nothing], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S]): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](
-    inbound: TransformInbound[HSS, ESS, S],
-    outbound: js.UndefOr[scala.Nothing],
-    config: TransformConfig
-  ): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
-  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
-  @JSImport("redux-persist", "createTransform")
-  @js.native
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](): Transform[HSS, ESS, S, RS] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")().asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: Unit, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS], config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Unit, outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Unit, outbound: Unit, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Unit, outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: Unit, outbound: TransformOutbound[ESS, HSS, RS], config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S]): Transform[HSS, ESS, S, RS] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any]).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: Unit, config: TransformConfig): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
+  def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
+  @scala.inline
   def createTransform[HSS, ESS, S, RS](
     inbound: TransformInbound[HSS, ESS, S],
     outbound: TransformOutbound[ESS, HSS, RS],
     config: TransformConfig
-  ): Transform[HSS, ESS, S, RS] = js.native
+  ): Transform[HSS, ESS, S, RS] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransform")(inbound.asInstanceOf[js.Any], outbound.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Transform[HSS, ESS, S, RS]]
   
-  @JSImport("redux-persist", "getStoredState")
-  @js.native
-  def getStoredState(config: PersistConfig[_, _, _, _]): js.Promise[js.UndefOr[js.Object]] = js.native
+  @scala.inline
+  def getStoredState(config: PersistConfig[js.Any, js.Any, js.Any, js.Any]): js.Promise[js.UndefOr[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoredState")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Object]]]
   
-  @JSImport("redux-persist", "persistCombineReducers")
-  @js.native
-  def persistCombineReducers[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], reducers: ReducersMapObject[S, A]): Reducer[S with PersistPartial, A] = js.native
+  @scala.inline
+  def persistCombineReducers[S, A /* <: Action[js.Any] */](config: PersistConfig[S, js.Any, js.Any, js.Any], reducers: ReducersMapObject[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("persistCombineReducers")(config.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
   
-  @JSImport("redux-persist", "persistReducer")
-  @js.native
-  def persistReducer[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], baseReducer: Reducer[S, A]): Reducer[S with PersistPartial, A] = js.native
+  @scala.inline
+  def persistReducer[S, A /* <: Action[js.Any] */](config: PersistConfig[S, js.Any, js.Any, js.Any], baseReducer: Reducer[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("persistReducer")(config.asInstanceOf[js.Any], baseReducer.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
   
-  @JSImport("redux-persist", "persistStore")
-  @js.native
-  def persistStore(store: Store[_, AnyAction]): Persistor = js.native
-  @JSImport("redux-persist", "persistStore")
-  @js.native
-  def persistStore(store: Store[_, AnyAction], persistorOptions: js.UndefOr[scala.Nothing], callback: js.Function0[_]): Persistor = js.native
-  @JSImport("redux-persist", "persistStore")
-  @js.native
-  def persistStore(store: Store[_, AnyAction], persistorOptions: Null, callback: js.Function0[_]): Persistor = js.native
-  @JSImport("redux-persist", "persistStore")
-  @js.native
-  def persistStore(store: Store[_, AnyAction], persistorOptions: PersistorOptions): Persistor = js.native
-  @JSImport("redux-persist", "persistStore")
-  @js.native
-  def persistStore(store: Store[_, AnyAction], persistorOptions: PersistorOptions, callback: js.Function0[_]): Persistor = js.native
+  @scala.inline
+  def persistStore(store: Store[js.Any, AnyAction]): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("persistStore")(store.asInstanceOf[js.Any]).asInstanceOf[Persistor]
+  @scala.inline
+  def persistStore(store: Store[js.Any, AnyAction], persistorOptions: Null, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("persistStore")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  @scala.inline
+  def persistStore(store: Store[js.Any, AnyAction], persistorOptions: Unit, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("persistStore")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  @scala.inline
+  def persistStore(store: Store[js.Any, AnyAction], persistorOptions: PersistorOptions): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("persistStore")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  @scala.inline
+  def persistStore(
+    store: Store[js.Any, AnyAction],
+    persistorOptions: PersistorOptions,
+    callback: js.Function0[js.Any]
+  ): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("persistStore")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
   
-  @JSImport("redux-persist", "purgeStoredState")
-  @js.native
-  def purgeStoredState[S](config: PersistConfig[S, _, _, _]): js.Any = js.native
+  @scala.inline
+  def purgeStoredState[S](config: PersistConfig[S, js.Any, js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeStoredState")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

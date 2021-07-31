@@ -11,126 +11,124 @@ import typings.webpack.webpackStrings.single
 import typings.webpack.webpackStrings.size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizationOptions extends StObject {
   
   /**
   	 * Check for incompatible wasm types when importing/exporting from/to ESM
   	 */
-  var checkWasmTypes: js.UndefOr[Boolean] = js.native
+  var checkWasmTypes: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Define the algorithm to choose chunk ids (named: readable ids for better debugging, size: numeric ids focused on minimal initial download size, total-size: numeric ids focused on minimal total download size, false: no algorithm used, as custom one can be provided via plugin)
   	 */
-  var chunkIds: js.UndefOr[natural | named | size | `total-size` | `false`] = js.native
+  var chunkIds: js.UndefOr[natural | named | size | `total-size` | `false`] = js.undefined
   
   /**
   	 * Concatenate modules when possible to generate less modules, more efficient code and enable more optimizations by the minimizer
   	 */
-  var concatenateModules: js.UndefOr[Boolean] = js.native
+  var concatenateModules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Also flag chunks as loaded which contain a subset of the modules
   	 */
-  var flagIncludedChunks: js.UndefOr[Boolean] = js.native
+  var flagIncludedChunks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Use hashed module id instead module identifiers for better long term caching (deprecated, used moduleIds: hashed instead)
   	 */
-  var hashedModuleIds: js.UndefOr[Boolean] = js.native
+  var hashedModuleIds: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Reduce size of WASM by changing imports to shorter strings.
   	 */
-  var mangleWasmImports: js.UndefOr[Boolean] = js.native
+  var mangleWasmImports: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Merge chunks which contain the same modules
   	 */
-  var mergeDuplicateChunks: js.UndefOr[Boolean] = js.native
+  var mergeDuplicateChunks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Enable minimizing the output. Uses optimization.minimizer.
   	 */
-  var minimize: js.UndefOr[Boolean] = js.native
+  var minimize: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Minimizer(s) to use for minimizing the output
   	 */
-  var minimizer: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.native
+  var minimizer: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.undefined
   
   /**
   	 * Define the algorithm to choose module ids (natural: numeric ids in order of usage, named: readable ids for better debugging, hashed: short hashes as ids for better long term caching, size: numeric ids focused on minimal initial download size, total-size: numeric ids focused on minimal total download size, false: no algorithm used, as custom one can be provided via plugin)
   	 */
-  var moduleIds: js.UndefOr[natural | named | hashed | size | `total-size` | `false`] = js.native
+  var moduleIds: js.UndefOr[natural | named | hashed | size | `total-size` | `false`] = js.undefined
   
   /**
   	 * Use readable chunk identifiers for better debugging (deprecated, used chunkIds: named instead)
   	 */
-  var namedChunks: js.UndefOr[Boolean] = js.native
+  var namedChunks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Use readable module identifiers for better debugging (deprecated, used moduleIds: named instead)
   	 */
-  var namedModules: js.UndefOr[Boolean] = js.native
+  var namedModules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Avoid emitting assets when errors occur
   	 */
-  var noEmitOnErrors: js.UndefOr[Boolean] = js.native
+  var noEmitOnErrors: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Set process.env.NODE_ENV to a specific value
   	 */
-  var nodeEnv: js.UndefOr[`false` | String] = js.native
+  var nodeEnv: js.UndefOr[`false` | String] = js.undefined
   
   /**
   	 * Figure out a order of modules which results in the smallest initial bundle
   	 */
-  var occurrenceOrder: js.UndefOr[Boolean] = js.native
+  var occurrenceOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Generate records with relative paths to be able to move the context folder
   	 */
-  var portableRecords: js.UndefOr[Boolean] = js.native
+  var portableRecords: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Figure out which exports are provided by modules to generate more efficient code
   	 */
-  var providedExports: js.UndefOr[Boolean] = js.native
+  var providedExports: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Removes modules from chunks when these modules are already included in all parents
   	 */
-  var removeAvailableModules: js.UndefOr[Boolean] = js.native
+  var removeAvailableModules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Remove chunks which are empty
   	 */
-  var removeEmptyChunks: js.UndefOr[Boolean] = js.native
+  var removeEmptyChunks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Create an additional chunk which contains only the webpack runtime and chunk hash maps
   	 */
-  var runtimeChunk: js.UndefOr[Boolean | single | multiple | Name] = js.native
+  var runtimeChunk: js.UndefOr[Boolean | single | multiple | Name] = js.undefined
   
   /**
   	 * Skip over modules which are flagged to contain no side effects when exports are not used
   	 */
-  var sideEffects: js.UndefOr[Boolean] = js.native
+  var sideEffects: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Optimize duplication and caching by splitting chunks by shared modules and cache group
   	 */
-  var splitChunks: js.UndefOr[`false` | OptimizationSplitChunksOptions] = js.native
+  var splitChunks: js.UndefOr[`false` | OptimizationSplitChunksOptions] = js.undefined
   
   /**
   	 * Figure out which exports are used by modules to mangle export names, omit unused exports and generate more efficient code
   	 */
-  var usedExports: js.UndefOr[Boolean] = js.native
+  var usedExports: js.UndefOr[Boolean] = js.undefined
 }
 object OptimizationOptions {
   

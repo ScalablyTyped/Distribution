@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainEndpointOptionsRequest extends StObject {
   
   /**
     * Whether to retrieve the latest configuration (which might be in a Processing state) or the current, active configuration. Defaults to false.
     */
-  var Deployed: js.UndefOr[Boolean] = js.native
+  var Deployed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string that represents the name of a domain.
     */
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
 }
 object DescribeDomainEndpointOptionsRequest {
   

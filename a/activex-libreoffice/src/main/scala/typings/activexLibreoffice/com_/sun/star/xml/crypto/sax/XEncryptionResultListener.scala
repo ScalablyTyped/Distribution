@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.crypto.SecurityOperationStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to receive the result information of an encryption operation.
   */
-@js.native
-trait XEncryptionResultListener extends XInterface {
+trait XEncryptionResultListener
+  extends StObject
+     with XInterface {
   
   /**
     * Notifies the encryption result.
     * @param securityId the security id of the encryption
     * @param encryptionResult the result information
     */
-  def encrypted(securityId: Double, encryptionResult: SecurityOperationStatus): Unit = js.native
+  def encrypted(securityId: Double, encryptionResult: SecurityOperationStatus): Unit
 }
 object XEncryptionResultListener {
   

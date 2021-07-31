@@ -2,22 +2,20 @@ package typings.libp2pGossipsub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-thresholds.PeerScoreThresholds> */
-@js.native
 trait PartialPeerScoreThreshold extends StObject {
   
-  var acceptPXThreshold: js.UndefOr[Double] = js.native
+  var acceptPXThreshold: js.UndefOr[Double] = js.undefined
   
-  var gossipThreshold: js.UndefOr[Double] = js.native
+  var gossipThreshold: js.UndefOr[Double] = js.undefined
   
-  var graylistThreshold: js.UndefOr[Double] = js.native
+  var graylistThreshold: js.UndefOr[Double] = js.undefined
   
-  var opportunisticGraftThreshold: js.UndefOr[Double] = js.native
+  var opportunisticGraftThreshold: js.UndefOr[Double] = js.undefined
   
-  var publishThreshold: js.UndefOr[Double] = js.native
+  var publishThreshold: js.UndefOr[Double] = js.undefined
 }
 object PartialPeerScoreThreshold {
   

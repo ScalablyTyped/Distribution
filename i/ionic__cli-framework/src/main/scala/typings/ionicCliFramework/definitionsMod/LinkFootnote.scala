@@ -2,17 +2,17 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkFootnote extends Footnote {
+trait LinkFootnote
+  extends StObject
+     with Footnote {
   
-  var id: String | Double = js.native
+  var id: String | Double
   
-  var shortUrl: js.UndefOr[String] = js.native
+  var shortUrl: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object LinkFootnote {
   

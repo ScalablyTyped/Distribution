@@ -4,18 +4,16 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyReturn extends StObject {
   
   @JSName("$ele")
-  var $ele: JQuery[HTMLElement] = js.native
+  var $ele: JQuery[HTMLElement]
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def update(command: String, update: js.Any): Unit = js.native
+  def update(command: String, update: js.Any): Unit
 }
 object NotifyReturn {
   

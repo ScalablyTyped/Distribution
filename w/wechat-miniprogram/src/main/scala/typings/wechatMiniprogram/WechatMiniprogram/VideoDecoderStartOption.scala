@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoDecoderStartOption extends StObject {
   
   /** 解码模式。0：按 pts 解码；1：以最快速度解码 */
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
   
   /** 需要解码的视频源文件。基础库 2.13.0 以下的版本只支持本地路径。 2.13.0 开始支持 http:// 和 https:// 协议的远程路径。 */
-  var source: String = js.native
+  var source: String
 }
 object VideoDecoderStartOption {
   

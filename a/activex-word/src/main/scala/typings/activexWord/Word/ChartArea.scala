@@ -2,54 +2,52 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartArea extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  def Clear(): js.Any = js.native
+  def Clear(): js.Any
   
-  def ClearContents(): js.Any = js.native
+  def ClearContents(): js.Any
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  def Copy(): js.Any = js.native
+  def Copy(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Font: ChartFont = js.native
+  val Font: ChartFont
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val Interior: typings.activexWord.Word.Interior = js.native
+  val Interior: typings.activexWord.Word.Interior
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Shadow: Boolean = js.native
+  var Shadow: Boolean
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
   @JSName("Word.ChartArea_typekey")
-  var WordDotChartArea_typekey: ChartArea = js.native
+  var WordDotChartArea_typekey: ChartArea
 }
 object ChartArea {
   

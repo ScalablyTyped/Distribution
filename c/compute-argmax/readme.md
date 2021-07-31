@@ -11,8 +11,8 @@ Computes the maximum value of a numeric array and returns the corresponding arra
 | Full name          | compute-argmax |
 | Keywords           | compute.io, compute, computation, mathematics, math, statistics, stats, array, max, maximum |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 38747 |
+| # dependents       | 2 |
+| # downloads        | 61559 |
 | # stars            | 0 |
 
 ## Links

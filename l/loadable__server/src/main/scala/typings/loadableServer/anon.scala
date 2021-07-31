@@ -3,15 +3,13 @@ package typings.loadableServer
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: ComponentType[js.Object] = js.native
+    var default: ComponentType[js.Object]
   }
   object Default {
     
@@ -29,33 +27,32 @@ object anon {
     }
   }
   
-  @js.native
   trait Entrypoints extends StObject {
     
     /**
       * Webpack entrypoints to load (default to `["main"]`)
       */
-    var entrypoints: js.UndefOr[String | js.Array[String]] = js.native
+    var entrypoints: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * File system used to read files (default to fs)
       */
-    var inputFileSystem: js.UndefOr[js.Object] = js.native
+    var inputFileSystem: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Optional namespace in case of multiple apps on same page
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * Optional output path (only for `requireEntrypoint`)
       */
-    var outputPath: js.UndefOr[String] = js.native
+    var outputPath: js.UndefOr[String] = js.undefined
     
     /**
       * Optional public path to override stats.publicPath at runtime
       */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
   }
   object Entrypoints {
     
@@ -103,13 +100,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
     /**
       * Stats generated using `@loadable/webpack-plugin`.
       */
-    var stats: js.Object = js.native
+    var stats: js.Object
   }
   object Stats {
     
@@ -127,13 +123,12 @@ object anon {
     }
   }
   
-  @js.native
   trait StatsFile extends StObject {
     
     /**
       * Stats file path generated using `@loadable/webpack-plugin`
       */
-    var statsFile: String = js.native
+    var statsFile: String
   }
   object StatsFile {
     

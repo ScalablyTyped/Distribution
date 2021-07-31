@@ -12,7 +12,7 @@ Creates an object composed of the picked object properties from a nested object 
 | Keywords           | obj, object, prop, property, dot, path, pick, deep, pickDeep, pick-deep, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 36281 |
+| # downloads        | 64213 |
 | # stars            | 0 |
 
 ## Links

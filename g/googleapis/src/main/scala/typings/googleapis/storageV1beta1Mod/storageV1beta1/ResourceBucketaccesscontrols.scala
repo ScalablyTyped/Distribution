@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta1", "storage_v1beta1.Resource$Bucketaccesscontrols")
@@ -32,7 +31,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceBucketaccesscontrolsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceBucketaccesscontrolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def get(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def get(params: ParamsResourceBucketaccesscontrolsGet): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def get(
     params: ParamsResourceBucketaccesscontrolsGet,
@@ -96,7 +95,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def insert(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def insert(params: ParamsResourceBucketaccesscontrolsInsert): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def insert(
     params: ParamsResourceBucketaccesscontrolsInsert,
@@ -128,7 +127,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBucketAccessControls] = js.native
   def list(callback: BodyResponseCallback[SchemaBucketAccessControls]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucketAccessControls] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControls] = js.native
   def list(params: ParamsResourceBucketaccesscontrolsList): GaxiosPromise[SchemaBucketAccessControls] = js.native
   def list(
     params: ParamsResourceBucketaccesscontrolsList,
@@ -163,7 +162,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def patch(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def patch(params: ParamsResourceBucketaccesscontrolsPatch): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def patch(
     params: ParamsResourceBucketaccesscontrolsPatch,
@@ -197,7 +196,7 @@ class ResourceBucketaccesscontrols protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def update(callback: BodyResponseCallback[SchemaBucketAccessControl]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def update(params: ParamsResourceBucketaccesscontrolsUpdate): GaxiosPromise[SchemaBucketAccessControl] = js.native
   def update(
     params: ParamsResourceBucketaccesscontrolsUpdate,

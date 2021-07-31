@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpnTunnelCertificateRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AWS Site-to-Site VPN connection.
     */
-  var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId = js.native
+  var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId
   
   /**
     * The external IP address of the VPN tunnel.
     */
-  var VpnTunnelOutsideIpAddress: String = js.native
+  var VpnTunnelOutsideIpAddress: String
 }
 object ModifyVpnTunnelCertificateRequest {
   

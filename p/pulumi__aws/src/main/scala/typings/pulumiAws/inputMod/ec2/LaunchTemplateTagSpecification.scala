@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateTagSpecification extends StObject {
   
   /**
     * The type of resource to tag. Valid values are `instance`, `volume`, `elastic-gpu` and `spot-instances-request`.
     */
-  var resourceType: js.UndefOr[Input[String]] = js.native
+  var resourceType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A map of tags to assign to the resource.
     */
-  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object LaunchTemplateTagSpecification {
   

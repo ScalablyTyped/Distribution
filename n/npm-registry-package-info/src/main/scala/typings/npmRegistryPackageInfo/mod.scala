@@ -6,27 +6,27 @@ import typings.npmRegistryPackageInfo.npmRegistryPackageInfoStrings.https
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("npm-registry-package-info", JSImport.Namespace)
   @js.native
-  def apply(opts: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("npm-registry-package-info", "factory")
-  @js.native
-  def factory(opts: Options, callback: Callback): js.Function0[Unit] = js.native
+  @scala.inline
+  def factory(opts: Options, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   type Callback = js.Function2[/* error */ Error | Null, /* data */ Data, Unit]
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var meta: Failure = js.native
+    var meta: Failure
   }
   object Data {
     
@@ -47,23 +47,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Boolean indicating whether to return only the latest package information from a registry. */
-    var latest: js.UndefOr[Boolean] = js.native
+    var latest: js.UndefOr[Boolean] = js.undefined
     
     /** Array of package names (required). */
-    var packages: js.Array[String] = js.native
+    var packages: js.Array[String]
     
     /** Registry port. Default: 443 (HTTPS) or 80 (HTTP). */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Registry protocol. Default: 'https'. */
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
     /** Registry. Default: 'registry.npmjs.org'. */
-    var registry: js.UndefOr[String] = js.native
+    var registry: js.UndefOr[String] = js.undefined
   }
   object Options {
     
